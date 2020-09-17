@@ -1,16 +1,16 @@
 # Decay Hastener
 
-## Importing the Package
-`mods.nuclearcraft.DecayHastener`
+## 导入软件包
+`nuclearcraft。衰变加速器`
 
-## Adding Recipes
+## 添加配方
 ```zenscript
-mods.nuclearcraft.DecayHastener.addRecipe(IIngredient itemInput, IIngredient itemOutput, @Optional double timeMultiplier, @Optional double powerMultiplier, @Optional double processRadiation);
+nuclearcraft。DecayHastener.addRecipe(IIngredient itemInput, IIngredient itemOutput, @Optional double timeMultiplier, @Optional double power Multiplier, @Optional double processRadiation);
 ```
 
-## Removing Recipes
+## 删除配方
 ```zenscript
-mods.nuclearcraft.DecayHastener.removeRecipeWithInput(IIngredient itemInput);
-mods.nuclearcraft.DecayHastener.removeRecipeWithOutput(IIngredient itemOutput);
-mods.nuclearcraft.DecayHastener.removeAllRecipes();
+nuclearcraft。DecayHastener.removeRecipeWidInput(IIngredient itemInput);
+mods.nuclearcraft.DecayHastener.removeRecipeWOutput(IIngredient itemOut);
+mods.nuclearcraft.a. DecayHastener.removeAllRecipes();
 ```

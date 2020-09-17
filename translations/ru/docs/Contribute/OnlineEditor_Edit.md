@@ -1,68 +1,68 @@
-# Edit Files using GitHub's online editor
+# Редактировать файлы с помощью онлайн-редактора GitHub
 
-## Requirements
+## Требования
 
-You will need to have created a GitHub account and [forked the wiki to your account](/Contribute/SetupGithub).
+Вам нужно будет создать учетную запись GitHub и [форкнул вики к вашему аккаунту](/Contribute/SetupGithub).
 
-## Introduction
+## Введение
 
-GitHub's online editor allows you to change and create files using nothing but your browser.  
-It may not be as versatile as [using a local copy](/Contribute/LocalClone/CreateCommit/) but you don't need to worry about [setting up git](/Contribute/LocalClone/InstallingGit/) and all.
+Онлайн-редактор GitHub позволяет изменять и создавать файлы, ничего не используя браузер.  
+Возможно, это не так универсально, как [с использованием локальной копии](/Contribute/LocalClone/CreateCommit/) , но вам не нужно беспокоиться о [настройке git](/Contribute/LocalClone/InstallingGit/) и всех.
 
-This guide will show you how to edit an already existing file using github's online editor.  
-You may want to edit the page because you have found a typo or want to include a better example, whatever the reason, feel free to commit changes and eventually [file a Pull Request](/Contribute/PullRequest).
+Это руководство покажет вам, как редактировать уже существующий файл с помощью онлайн редактора github.  
+Вы можете захотеть изменить страницу, потому что вы нашли опечатку или хотите включить лучший пример, любая причина, не стесняйтесь зафиксировать изменения и в конечном итоге [файл Pull Request](/Contribute/PullRequest).
 
-However, remember that you can only edit the English version, translations are handled via [CrowdIn](https://crowdin.com/project/crafttweaker-documentation/).
+Однако помните, что вы можете редактировать только английскую версию, переводы обрабатываются через [CrowdIn](https://crowdin.com/project/crafttweaker-documentation/).
 
-## Locate the file
+## Найти файл
 
-If you want to edit an existing file, you first need to locate it.
+Если вы хотите изменить существующий файл, то сначала необходимо найти его.
 
-In most cases you can find the file by checking its Wiki Url.
+В большинстве случаев вы можете найти этот файл, просмотрев его Wiki Url.
 
-Rule of thumb: The `#` is the docs folder, everything after that are nested folders and eventually the file.
+Правило большого пальца: `#` является папкой документации, все после этого вложенные папки и, в конечном итоге, файл.
 
-For example, the file creating  
+Например, файл создает  
 [https://docs.blamejared.com/en/#AdvancedFunctions/Arrays_and_Loops/](https://docs.blamejared.com/en/#AdvancedFunctions/Arrays_and_Loops/)  
-can be found in  
+можно найти в  
 `docs/AdvancedFunctions/Arrays_and_Loops.md`
 
-## Edit the file
+## Редактировать файл
 
-After you have successfully located the file, click on it to open it in the GitHub file view.  
-Here you can see how the wiki entry will roughly look like, though no navigation bar is present as this is only the entry content.
+После того, как вы успешно разместили файл, нажмите на него, чтобы открыть его в файле GitHub.  
+Здесь вы можете увидеть, как запись вики будет выглядеть грубо хотя панель навигации не присутствует, так как это только содержимое записи.
 
-Click on the little pen icon to open the editor: ![Edit Button](/Contribute/assets/OnlineEditor_EditButton.png)
+Нажмите на значок ручки для открытия редактора: ![Кнопка редактирования](/Contribute/assets/OnlineEditor_EditButton.png)
 
-The Editor allows you to change your file as you like, and also to directly view a preview with the compiled formatting. This preview will have colored bars on the lefthandside indicating that:
+Редактор позволяет изменять файл так, как вам нравится, а также непосредственно просматривать его с помощью компилированного форматирования. Этот предварительный просмотр будет иметь цветные полосы на левой стороне, указывающие, что:
 
-- Green: This Section was not present on this page before.
-- Yellow: This Section was present on this page before but was changed, e.g. a typo was corrected, or additional information was provided.
-- Red: This section was present on this page before but was removed.
-- None: This section was untouched.
+- Зелено: Этот раздел не присутствовал на этой странице раньше.
+- Желто: Эта секция присутствовала на этой странице до того, как была изменена, например, была исправлена опечатка или предоставлена дополнительная информация.
+- Red: Этот раздел присутствовал на этой странице раньше, но был удален.
+- Ничего не было: эта секция была нетронута.
 
-If the syntax of the files is new for you, the wiki uses MarkDown. There should be many tutorials to find using google (or you could add one right here to this wiki if you like).
+Если синтаксис файлов является для вас новым, в вики используется MarkDown. Там должно быть много уроков, чтобы найти с помощью Google (или вы могли бы добавить один прямо здесь, на этой вики, если хотите).
 
-## Save/Commit the changes
+## Сохранить/Зафиксировать изменения
 
-After you have changed the file you need to let GitHub know that you want to save your changes.
+После того, как вы изменили файл, вам нужно сообщить GitHub о том, что вы хотите сохранить изменения.
 
-That's what the commit box below your Editor is for:  
-You cannot simply save the file, you need to provide a summary of what you did (commit title) and optionally a short description where you can put additional information like why you did the changes or what exactly was changed.
+Это поле для коммита ниже вашего Редактора:  
+Вы не можете просто сохранить файл, вы должны предоставить краткую информацию о том, что вы делали (коммиты) и краткое описание, в котором вы можете добавить дополнительную информацию, например, почему вы делали изменения или что именно было изменено.
 
-By default it looks roughly like this:  
-![Commit Box Default](/Contribute/assets/OnlineEditor_CommitBox_Default.png)
+По умолчанию оно выглядит примерно так:  
+![Строка фиксации по умолчанию](/Contribute/assets/OnlineEditor_CommitBox_Default.png)
 
-In this example, the Commit title (or edit summary) is `Update Arrays_and_Loops.md`. GitHub cannot know what your actual changes were supposed to do, so it tries something as generic as this.
+В этом примере название коммита (или отредактируйте сводку) — `обновление Arrays_and_Loops.md`. GitHub не может знать, что должны были сделать ваши фактические изменения, поэтому он пытается что-то столь же универсальное.
 
-You might want to add an additional title or description, but it is not neccessary, though it makes reviewing your Pull request later on easier.
+Вы можете добавить дополнительное название или описание, но это не обязательно, хотя оно делает просмотр вашего Pull запроса позже на проще.
 
-If you have multiple e-mail addresses registered for your GitHub account, you can choose as which one you will create the commit. This will not have any real impact for contributing, though.  
-You can also decide whether you want to commit directly to your master branch or rather create a new branch for your commit. In most cases committing to your master branch works just fine.
+Если у вас есть несколько адресов электронной почты, зарегистрированных для вашей учетной записи GitHub, вы можете выбрать, какой из них вы создадите коммит. Однако это не окажет никакого реального влияния на внесение своего вклада.  
+Вы также можете решить, хотите ли вы совершить фиксацию напрямую в свою ветку или создать новую ветку для фиксации. В большинстве случаев принятие обязательств в вашу ветку работает хорошо.
 
-A filled out example might look like this: ![Commit Box Filled](/Contribute/assets/OnlineEditor_CommitBox_Filled.png)
+Заполненный пример может выглядеть так: ![Коробка фиксации заполнена](/Contribute/assets/OnlineEditor_CommitBox_Filled.png)
 
-## What to do next
+## Что делать дальше
 
-After you have committed your changes, you can go on and edit or [Create](/Contribute/OnlineEditor_Create) more files using the online editor.  
-After you have done all your changes, you can [file a Pull Request](/Contribute/PullRequest).
+После того, как вы зафиксировали изменения, вы можете продолжить редактирование или [создать еще](/Contribute/OnlineEditor_Create) файлов с помощью онлайн-редактора.  
+После того, как вы выполните все ваши изменения, вы можете [создать Pull Request](/Contribute/PullRequest).

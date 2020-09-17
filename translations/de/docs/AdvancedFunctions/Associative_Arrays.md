@@ -1,6 +1,6 @@
 # Assoziatives Array
 
-An Associative Array (sometimes also called a Map or a Dictionary) is like a normal [Array](/AdvancedFunctions/Arrays_and_Loops/) in the way that it is able to store multiple entries. Unlike [Arrays](/AdvancedFunctions/Arrays_and_Loops/) however, you can choose what type you want the index, or (as we call it in maps) key, to be!
+Ein assoziatives Array (manchmal auch als Karte oder Wörterbuch bezeichnet) ist wie ein normales [Array](/AdvancedFunctions/Arrays_and_Loops/) in der Weise, wie es mehrere Einträge speichern kann. Im Gegensatz zu [Arrays](/AdvancedFunctions/Arrays_and_Loops/) können Sie jedoch auswählen, welcher Typ der Index sein soll oder wie wir ihn in der Karten-Taste nennen!
 
 ## Ein Assoziatives Array deklarieren
 
@@ -30,12 +30,12 @@ Okay, und was sollte ich denn noch beachten?
 
 ## Auf Elemente innerhalb eines assoziativen Arrays zugreifen
 
-You refer to items inside an Associative Array the same way you refer to items inside a normal [Array](/AdvancedFunctions/Arrays_and_Loops/):  
+Sie verweisen auf Elemente innerhalb eines assoziativen Arrays genauso wie auf Elemente innerhalb eines normalen [Array](/AdvancedFunctions/Arrays_and_Loops/):  
 `Array[index]`  
-Only difference is this time, you don't necessarily need to use an Integer as index, but whatever type you declared your Array to be!
+Nur der Unterschied ist diese Zeit Sie müssen nicht unbedingt einen Integer als Index verwenden, aber was auch immer Sie Ihr Array für sein wollen!
 
 ```zenscript
-<br />val dirt = <minecraft:dirt>;
+<br /><br />val dirt = <minecraft:dirt>;
 val assocArray = {
     <minecraft:dirt> : "Das bin ich"
 } as string[IItemStack];
@@ -152,5 +152,6 @@ val myEntry = map.entrySet[0];
 
 
 myEntry.key;    //Gibt den Schlüssel des Eintrags aus
+myEntry.value;  //Gibt den Wert des Eintrags aus
 myEntry.value;  //Gibt den Wert des Eintrags aus
 ```

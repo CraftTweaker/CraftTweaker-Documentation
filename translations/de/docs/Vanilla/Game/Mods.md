@@ -1,12 +1,12 @@
 # LoadedMods
 
-You can use the [global keyword](/Vanilla/Global_Functions/) `loadedMods` to access all currently loaded mods.  
-If needed you can import the class using `import crafttweaker.mods.ILoadedMods;`
+Sie können das [globale Schlüsselwort](/Vanilla/Global_Functions/) `loadedMods` verwenden, um auf alle aktuell geladenen Mods zuzugreifen.  
+Falls nötig, können Sie die Klasse mit `importieren Crafttweaker.mods.ILoadedMods;`
 
-## Check if a mod is loaded
+## Überprüfe, ob ein Mod geladen ist
 
-Use the `in` function to check if a mod is loaded;  
-You can also use the `contains` method:
+Benutzen Sie die Funktion `in` um zu überprüfen, ob eine Mod geladen wurde;  
+Sie können auch die `enthält` Methode:
 
 ```zenscript
 //if MinecraftCoderPack is loaded
@@ -20,39 +20,39 @@ if(loadedMods.contains("mcp")){
 }
 ```
 
-## Retrieve a specific mod
+## Einen bestimmten Mod abrufen
 
-You can retrieve a specific mod as IMod as long as you have it's ID
+Du kannst eine bestimmte Mod als IMod abrufen, solange du die ID hast
 
 ```zenscript
-//retrieves the minecraftCoderPack mod
+//ruft die minecraftCoderPack Mod
 val mod = loadedMods["mcp"];
 ```
 
-## Iterate through the modList
+## Iterieren durch die ModList
 
-You can iterate through the list of loaded mods like this:
+Du kannst durch die Liste der geladenen Mods wie folgt iterieren:
 
 ```zenscript
-//prints all registred item definitions, not recommended in larger packs!
-//the mod variable will be an IMod type
-for mod in loadedMods {
-    print(mod.name ~ ":");
-    for item in mod.items {
-        print("\t\t" ~ item.displayName);
+//Gibt alle registrierten Artikeldefinitionen aus, die nicht in größeren Paketen empfohlen werden!
+//Die Mod-Variable wird ein IMod Typ
+für Mod in loadedMods {
+    print(mod. Name ~ ":");
+    für Artikel in Mod. tems {
+        print("\t\t" ~ item. isplayName);
     }
 }
 ```
 
 # IMod
 
-The IMod Interface provides you with some general information on a specific mod.  
-If needed, it can be imported using `import crafttweaker.mods.IMod;`
+Das IMod Interface bietet Ihnen einige allgemeine Informationen zu einem bestimmten Mod.  
+Falls nötig, kann es mit `import craftweaker.mods.IMod;` importiert werden
 
-| ZenGetter   | What does it do                    | Rückgabetyp                                | Usage             |
-| ----------- | ---------------------------------- | ------------------------------------------ | ----------------- |
-| id          | Returns the mod's id               | string                                     | `mod.id`          |
-| name        | Returns the mod's internal name    | string                                     | `mod.name`        |
-| version     | Returns the mod's version          | string                                     | `mod.version`     |
-| description | Returns the mod description        | string                                     | `mod.description` |
-| items       | Returns all items added by the mod | [IItemStack](/Vanilla/Items/IItemStack/)[] | `mod.items`       |
+| ZenGetter    | Was macht es                                              | Rückgabetyp                                | Auslastung        |
+| ------------ | --------------------------------------------------------- | ------------------------------------------ | ----------------- |
+| id           | Gibt die Mod-Id zurück                                    | string                                     | `mod.id`          |
+| name         | Gibt den internen Namen des Mods zurück                   | string                                     | `mod.name`        |
+| version      | Gibt die Version des Mods zurück                          | string                                     | `mod.version`     |
+| beschreibung | Gibt die Mod-Beschreibung zurück                          | string                                     | `mod.description` |
+| gegenstände  | Gibt alle Elemente zurück, die vom Mod hinzugefügt wurden | [IItemStack](/Vanilla/Items/IItemStack/)[] | `mod.items`       |

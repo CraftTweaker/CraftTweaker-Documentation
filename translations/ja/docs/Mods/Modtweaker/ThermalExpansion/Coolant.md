@@ -1,17 +1,17 @@
-# Coolant
+# 冷却剤
 
-The Coolant manager does not belong to any specific machine but manages coolant values for all other machines.  
-For example the Enervation Dynamo uses the coolant values, as does the Magmatic Dynamo with the Ientropic Reservoir augment provided.
+Coolant マネージャーは特定のマシンに属するのではなく、他のすべてのマシンの冷却値を管理します。  
+例えば、エネルギーダイナミクスは冷却値を使用します。
 
-## Import the package
+## パッケージをインポート
 
-To shorten method calls you can [import](/AdvancedFunctions/Import/) the package like so:
+メソッド呼び出しを短くするには、 [パッケージを](/AdvancedFunctions/Import/) インポートすることができます。
 
 ```zenscript
 import mods.thermalexpansion.Coolant;
 ```
 
-## Add Coolant
+## クーラントを追加
 
 Use this to register a new coolant to the manager.  
 CoolantRF needs to be non-negative, and the coolant factor needs to be between 1 and 100 (inclusive).  
@@ -27,9 +27,9 @@ mods.thermalexpansion.Coolant.addCoolant(<liquid:lava>, 0, 1);
 //mods.thermalexpansion.Coolant.addCoolant(<liquid:cryotheum>, 3000000, 60);
 ```
 
-## Remove Coolant
+## クーラントを削除
 
-Use this to deregister an existing coolant from the manager.
+これを使用して、マネージャーから既存のクーラントを削除します。
 
 ```zenscript
 //mods.thermalexpansion.Coolant.removeCoolant(ILiquidStack fluid);

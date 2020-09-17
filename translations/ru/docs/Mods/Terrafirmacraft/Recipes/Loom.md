@@ -1,22 +1,22 @@
-# Loom
+# Амулет
 
-## Package
+## Пакет
 ```zenscript
-import mods.terrafirmacraft.Loom;
+import mods.terrafirmacraft.Цикл;
 ```
 
-## Addition
+## Сложение
 
 ```zenscript
-Loom.addRecipe(String registryName, IIngredient input, IItemStack output, int steps, String loomTexture);
+Рецепт Loom.addRecipe(String registryName, IIngredient input, IItemStack, int steps, String loomTexture);
 ```
-- steps is the number of steps needed to complete the recipe. It's the number of times the player has to click the loom, each movement of the loop advances one step. Within TFC, this is the same as the number of items required for the recipe, but it is not required to be so.
-- loomTexture is a path (`ResourceLocation`) to a texture file, to be used to display on the loom in the world.(For example, "minecraft:textures/blocks/wool_colored_white.png" references the vanilla texture for white wool). If you are using custom textures you need some form of data/resource loading (read: a resource pack) for this to be able to reference your texture correctly.
+- — это количество шагов, необходимых для завершения рецепта. Это число раз, когда игрок должен нажать на станцию, каждое движение цикла продвигается на один шаг. В рамках TFC это то же самое, что и количество предметов, необходимых для рецепта, но это не требуется.
+- loomTexture - это путь к`ресурсам`к текстуре файла, который будет использоваться для отображения на станке в мире. Например, "minecraft:textures/blocks/wool_colored_white.png" ссылается на текстуру ванильной для белой шерсти). При использовании пользовательских текстур требуется какая-то загрузка данных/ресурсов (читать: набор ресурсов), чтобы она могла правильно ссылаться на вашу текстуру.
 
-## Removal
+## Удаление
 
 ```zenscript
-Loom.removeRecipe(IItemStack output);
+Loom.removeRecipe(IItemStack);
 Loom.removeRecipe(String registryName);
 ```
 

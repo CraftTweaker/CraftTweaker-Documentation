@@ -1,41 +1,41 @@
-# Use Loops to make your script look better
+# Verwende Schleifen, um dein Skript besser aussehen zu lassen
 
 ## Problem
 
-We all have seen it: Scripts with more than 500 lines where it says 500 times `recipes.remove(item1);recipes.remove(item2),...`  
-Not only is this a pain to write, but it is possible that you spend hours debugging a little typo when the only exception you get is `error in recipes.zs: null`
+Wir alle haben es gesehen: Skripte mit mehr als 500 Zeilen, wo es 500 mal `Rezepte sagt.remove(item1);recipes.remove(item2)...`  
+Es ist nicht nur ein Schmerz zu schreiben, aber es ist möglich, dass Sie Stunden verbringen, einen kleinen Tippfehler zu debuggen, wenn die einzige Ausnahme, die Sie bekommen ist `Fehler in den Rezepten. s: null`
 
-## Solution
+## Lösung
 
 My rule of thumb: When writing the exactly same command more than 10 times, with only 1 Parameter changing, I'll use a loop.
 
-So, instead of always typing out the functions, I declare one array containing all items and iterate through that one.
+Anstatt die Funktionen immer auszutippen, erkläre ich ein Array mit allen Elementen und iteriere durch diese.
 
 ```zenscript
-import crafttweaker.item.IIngredient;
+import crafttweaker.item.IZutat;
 
 val Array = [
     item1,
     item2,
     item3,
-    ...
-] as IIngredient[];
+...
+] als IIngredient[];
 
 
-for item in Array{
+für Artikel in Array{
     recipes.remove(item);
 }
 ```
 
-## Advantages
+## Vorteile
 
-- Your script becomes (in my opinion) easier to read
-- You know exactly where your script screws up
-- Last minute changes are really easy as all you need to do is adding or removing the item from the array.
+- Dein Skript wird (meiner Meinung nach einfacher) lesbar
+- Sie wissen genau, wo Ihr Skript verschraubt
+- Die Änderungen in letzter Minute sind sehr einfach, da Sie das Element einfach hinzufügen oder aus dem Array entfernen müssen.
 
-## Disadvantages
+## Nachteile
 
-- Only works when there's only a few parameters changing
-- You could screw up your script without knowing it, by say, casting the array wrong
-- One error in the array makes the whole array fail and nothing will be done at all.
-- You might receive cryptic error messages because of the array being created the wrong way.
+- Funktioniert nur, wenn nur wenige Parameter geändert werden
+- Du könntest dein Skript aufschrauben, ohne es zu wissen, indem du das Array falsch ausgibst
+- Ein Fehler im Array führt zu einem Fehlschlag des gesamten Arrays und es wird überhaupt nichts getan.
+- Möglicherweise erhalten Sie kryptische Fehlermeldungen, da das Array falsch erstellt wird.

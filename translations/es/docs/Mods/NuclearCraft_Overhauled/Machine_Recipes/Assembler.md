@@ -1,16 +1,17 @@
-# Assembler
+# Colmena
 
-## Importing the Package
-`mods.nuclearcraft.Assembler`
+## Importando el Paquete
+`mods.nuclearcraft.AssemblerColmena`
 
-## Adding Recipes
+## Añadiendo recetas
 ```zenscript
-mods.nuclearcraft.Assembler.addRecipe(IIngredient itemInput1, IIngredient itemInput2, IIngredient itemInput3, IIngredient itemInput4, IIngredient itemOutput, @Optional double timeMultiplier, @Optional double powerMultiplier, @Optional double processRadiation);
+mods.nuclearcraft.Supercoolermods.nuclearcraft.Assembler.addRecipe(IIngredient itemInput1, IIngredient itemInput2, IIngredient itemInput3, IIngredient itemInput4, IIngredient itemOutput, @Optional double timeMultiplier, @Optional double powerMultiplier, @Optional double processRadiation);
 ```
 
-## Removing Recipes
+## Eliminando recetas
 ```zenscript
-mods.nuclearcraft.Assembler.removeRecipeWithInput(IIngredient itemInput1, IIngredient itemInput2, IIngredient itemInput3, IIngredient itemInput4);
+mods.nuclearcraft.Supercoolermods.nuclearcraft.Assembler.removeRecipeWithInput(IIngredient itemInput1, IIngredient itemInput2, IIngredient itemInput3, IIngredient itemInput4);
 mods.nuclearcraft.Assembler.removeRecipeWithOutput(IIngredient itemOutput);
-mods.nuclearcraft.Assembler.removeAllRecipes();
+mods.nuclearcraft.Assembler.removeAllRecipes();Assembler.removeRecipeWithOutput(IIngredient itemOutput);
+mods.nuclearcraft.Montbler.removeAllRecipes();
 ```

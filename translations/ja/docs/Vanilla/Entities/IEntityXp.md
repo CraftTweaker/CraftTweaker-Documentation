@@ -1,18 +1,18 @@
 # IEntityXp
 
-Represents an XP Orb in the world.
+ワールドの XP オーブを表します。
 
-## Importing the package
+## パッケージのインポート
 
 It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
 `import crafttweaker.entity.IEntityXp;`
 
-## Extending [IEntity](/Vanilla/Entities/IEntity/)
+## 拡張する [IEntity](/Vanilla/Entities/IEntity/)
 
-IEntityXp extends [IEntity](/Vanilla/Entities/IEntity/). That means all functions available to [IEntities](/Vanilla/Entities/IEntity/) also are available to IEntityXp.
+IEntityXp extends [IEntity](/Vanilla/Entities/IEntity/). つまり、 [IEntities](/Vanilla/Entities/IEntity/) で利用可能なすべての関数が、IEntityXpで利用可能であるということです。
 
 ## ZenGetters
 
-| ZenGetter | Return Type |
-| --------- | ----------- |
-| xp        | float       |
+| ZenGetter | 戻り値    |
+| --------- | ------ |
+| xp        | float型 |

@@ -1,8 +1,8 @@
-# Chemical Injection Chamber
+# 化学喷射分庭
 
-As of Mekanism 9.7.0 it is now possible to view all recipe strings of the Chemical Injection Chamber through the command `/ct mekrecipes injection`
+截至Mekanism 9.7。 现在可以通过命令 `/ct mek配方注入` 查看化学注入室的所有配方字符串。
 
-## Addition
+## 加
 
 ```zenscript
 mods.mekanism.chemical.injection.addRecipe(IIngredient inputStack, IGasStack inputGas, IItemStack outputStack);
@@ -10,26 +10,26 @@ mods.mekanism.chemical.injection.addRecipe(IIngredient inputStack, IGasStack inp
 mods.mekanism.chemical.injection.addRecipe(<minecraft:hardened_clay:1>, <gas:water>, <minecraft:clay>);
 ```
 
-As of Mekanism 9.7.0 inputGas is no longer restricted to just sulfuric acid, water, or hydrogen chloride
+由于Mekanism 9.7.0 输入气体不再仅限于硫酸、水或氯化氢。
 
-Also as of Mekanism 9.7.0 it is possible to use IIngredients as the inputStack instead of only IItemStacks.
+另外，由于Mekanism 9.7.0，可以使用IIngredients 作为输入堆栈，而不仅仅是IItemStack。
 
-Note: Currently all this does is loop over the different possibilities in java while adding instead of you having to do it in ZenScript. Currently there is no built in support for compound ingredients or oredictionary in the machines themselves.
+注意：目前所有这一切都是在java的不同可能性上循环的，而不是在ZenScript中添加。 目前，机器本身没有用于支持复合成份或修复术。
 
-## Removal
+## 移除
 
 ```zenscript
-mods.mekanism.chemical.injection.removeRecipe(IIngredient outputStack, @Optional IIngredient inputStack, @Optional IIngredient inputGas);
+mods.mekanism.chemical.injectiveRecipe(IIngredient outputStack, @Optional IIngredient inputStack, @Ingredient inputGas);
 
 mods.mekanism.chemical.injection.removeRecipe(<mekanism:shard:2>, <mekanism:oreblock>, <gas:hydrogenchloride>);
-mods.mekanism.chemical.injection.removeRecipe(<mekanism:shard:1>);
+mods.mekanism.chemical.intraction.removeRecipe(<mekanism:shard:1>);
 ```
 
-Specifying an input parameter will only remove the specific recipe that uses said input. Omitting the input parameter will remove all recipes that produce the specified output.
+指定输入参数只会删除使用所述输入的特定配方。 忽略输入参数将删除所有生成指定输出的配方。
 
-## Removing all recipes
+## 删除所有配方
 
-As of Mekanism 9.7.0 it is now possible to remove all Chemical Injection Chamber recipes. (This excludes any recipes added via CraftTweaker)
+从Mekanism 9.7.0开始，现在可以移除化学品注射室的所有配方。 (这排除了任何通过 CraftTweaker 添加的配方
 
 ```zenscript
 mods.mekanism.chemical.injection.removeAllRecipes();

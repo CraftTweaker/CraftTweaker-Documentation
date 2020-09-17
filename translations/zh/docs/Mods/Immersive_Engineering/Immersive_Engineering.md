@@ -1,17 +1,17 @@
-# Immersive Engineering
+# 沉浸式工程
 
-## Information
+## 信息
 
-Immersive Engineering is a tech mod with a certain charm, based on the ideas and concepts, and with most assets created by Damien Hazard.
+沉浸式工程是一种技术型模组，根据各种想法和概念，具有某种特色，并且由Damien Hazard创造了大部分资产。
 
-Overall, it's about realism-inspired technology: Instead of glowing red tubes, it offers actual, hanging powerlines. Instead of one block that magically spits out dusts when ore is put in, it offers a crusher, a big multiblock (5x3x3) that features rotating wheels and spits out particles as it breaks the ore. Instead of a Laser that turns power into magical light and ores, it offers an Excavator, another massive, resource intensive, multiblock (3x7x8) which digs ores out of the ground with a big rotating bucketwheel.
+总的来说，它涉及到以现实主义为导向的技术： 它不再发光红管，而是提供实际的、挂着的电力。 它提供了一个碎块，而不是在矿石放入时神奇地喷出粉尘。 一个大的多块(5x3x3x3)，它的特点是轮转并在矿石破裂时喷出粒子。 它提供了一台挖掘机——另一台大型的挖土机，而不是把力量变成魔法光和矿石的激光。 资源密集型多块(3x7x8)，用一个大旋转的桶从地面挖掘矿石。
 
-IE is about making tech mods more balanced and more pretty, and adding its own twist by going for retro-futurism (think BioShock, Order 1886, SkyCaptain and the World of Tomorrow) rather than clinical white+grey future cubes. The mod features Power Generation in forms of waterwheels, windmills, biodiesel and more and many of its machines are multiblocks!
+IE 旨在使科技模组更加平衡和更加偏袒，并通过追求追溯性的未来主义来增加自己的扭曲风格(认为BioShock) 第1886号命令，SkyCaptain and the World of Tomorrow，而不是临床白色+灰色未来立方体。 模组以水轮、风机、生物柴油等形式生产电力，并且其许多机器都是多块机器！
 
-## CraftTweaker Related Information
+## CraftT弱化相关信息
 
-Most if not all of the machines as well as some of the non-machine related features are configurable through ZenScript.
+大多数甚至不是全部机器以及一些与机器无关的功能都可以通过 ZenScript 配置。
 
-## Bug Reports
+## Bug 反馈
 
 https://github.com/BluSunrize/ImmersiveEngineering/issues

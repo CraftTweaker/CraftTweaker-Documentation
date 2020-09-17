@@ -1,12 +1,12 @@
-# Advancements:
+# Erweiterungen:
 
-Advancements is one of the original requirement types supported in Skillable (Original Mod) and has now been improved in the code to be more reliable for gating. The Advancement Syntax is as follows:
+Erweiterungen sind einer der ursprünglichen Anforderungstypen, die in Skillable (Original Mod) unterstützt werden und wurde nun im Code verbessert, um zuverlässiger beim Gateway zu sein. Die Erweiterungs-Syntax lautet wie folgt:
 
-    Example:
+    Beispiel:
     adv|ResourceLocation
     
-    Working Example:
+    Arbeitsbeispiel:
     adv|minecraft:husbandry/plant_seed
     
 
-This works for any and all Advancements even those added by other mods than minecraft, however the correct Resource Location needs to be specified.
+Dies funktioniert für alle Erweiterungen, auch die von anderen Mods als minecraft, aber die richtige Ressourcenposition muss angegeben werden.

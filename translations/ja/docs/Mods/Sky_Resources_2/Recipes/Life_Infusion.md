@@ -1,19 +1,19 @@
-# Life Infusion
+# 生命の注入量
 
-The *infusion* package is used for adding or removing recipes to/from the Life Infusion process.
+*注入* パッケージは、Life Infusionプロセスにレシピを追加または削除するために使用されます。
 
-## Calling
+## 発信中
 
-You can call the *infusion* package using `mods.skyresources.infusion`
+*mods.skyresources.infusion* を使って `infusion` パッケージを呼び出すことができます
 
-## Recipe Addition
+## レシピの追加
 
 ```zenscript
-//mods.skyresources.infusion.addRecipe(IItemStack output, IItemStack inputStack, IItemStack inputBlock, int health);
+//mods.skyresources.infusion.addRecipe(IItemStack の出力, IItemStack inputStack, int health);
 mods.skyresources.infusion.addRecipe(<minecraft:diamond> * 8, <minecraft:nether_star>, <minecraft:dirt>, 14);
 ```
 
-## Recipe Removal
+## レシピの削除
 
 ```zenscript
 //mods.skyresources.infusion.removeRecipe(IItemStack output);

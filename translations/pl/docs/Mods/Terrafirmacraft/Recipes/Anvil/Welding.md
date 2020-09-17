@@ -1,20 +1,20 @@
-# Anvil Welding
+# Spawanie kowadła
 
-## Package
+## Pakiet
 ```zenscript
-import mods.terrafirmacraft.Welding;
+importuj mods.terrafirmacraft.Spawanie;
 ```
 
-## Addition
+## Dodanie
 
 ```zenscript
-Welding.addRecipe(String registryName, IIngredient input1, IIngredient input2, IItemStack output, int minTier);
+Welding.addRecipe(String registryName, IInput1, IIngredient input2, IItemStack output, int minTier);
 ```
 
-## Removal
+## Usuwanie
 
 ```zenscript
-Welding.removeRecipe(IItemStack output);
+Welding.removeRecipe(wyjście IItemStack);
 Welding.removeRecipe(String registryName);
 ```
-- As with anvil recipes, the same rules for input applies here. The input must be forgeable(see [ItemRegistry](/Mods/Terrafirmacraft/ItemRegistry) for registering forging capability to an item) and can't be stacked.
+- Tak jak w przypadku przepisów dotyczących kowadła, mają tutaj zastosowanie te same zasady wprowadzania danych. Podana wartość musi być kuteczna (zobacz [ItemRegistry](/Mods/Terrafirmacraft/ItemRegistry) aby zarejestrować zdolność kucia do przedmiotu) i nie może być ustawiona.

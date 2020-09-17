@@ -1,12 +1,12 @@
-# Recycler
+# Recyclage
 
-## Package
+## Paquet
 
-`import mods.ic2.Recycler;`
+`Importer mods.ic2.Recycler;`
 
-## Methods
+## Méthodes
 
-- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) ingredient** The item to be blacklisted from recycler (as source of scrap)
+- **[Ingrédient](/Vanilla/Variable_Types/IIngredient/) ingrédient** L'élément à mettre en liste noire à partir du recycleur (source de la ferraille)
 
 ## Add Blacklist
 

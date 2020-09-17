@@ -1,20 +1,20 @@
-# Excavator
+# 挖掘者
 
-## Calling The Package
+## 调用包
 
-You can call the Excavator package using `mods.immersiveengineering.Excavator`.
+您可以使用 `mods.immersiveengineering.Excavator` 来调用挖掘器包。
 
-## Add Mineral
+## 添加矿石
 
-| Required | 类型                  | Data Type |
-| -------- | ------------------- | --------- |
-| 必要       | Name                | string    |
-| 必要       | Mineral Weight      | int       |
-| Required | Fail Chance         | double    |
-| 必要       | Ores                | string[]  |
-| 必要       | Chances             | double[]  |
-| 可选       | Dimension Whitelist | int []    |
-| 可选       | Blacklist           | boolean   |
+| 必填 | 类型    | 数据类型     |
+| -- | ----- | -------- |
+| 必要 | 名称    | 字符串      |
+| 必要 | 矿物权重  | int      |
+| 必填 | 失败的机会 | 双精度      |
+| 必要 | Ores  | 字符串[……]  |
+| 必要 | 概率    | 加倍[……]   |
+| 可选 | 尺寸白名单 | 整数组 [……] |
+| 可选 | 黑名单   | boolean  |
 
 ### 例子
 
@@ -27,17 +27,17 @@ mods.immersiveengineering.Excavator.addMineral("Iron Ore", 50, 0.005, ["oreIron"
 mods.immersiveengineering.Excavator.addMineral("Iron Ore", 50, 0.005, ["oreIron", "oreDiamond"], [0.005, 0.01], [1, 0, -1], true);
 ```
 
-## Remove Mineral
+## 移除矿石
 
-| Required | 类型   | Data Type |
-| -------- | ---- | --------- |
-| Required | Name | String    |
+| 必填 | 类型 | 数据类型        |
+| -- | -- | ----------- |
+| 必填 | 名称 | 字符串[string] |
 
-### Example
+### 例子
 
 ```zenscript
-//Example:
+//例如：
 mods.immersiveengineering.Excavator.removeMineral(String name);
 
-mods.immersiveengineering.Excavator.removeMineral("Iron Ore");
+mods.immersiveengineering.Excavator.removeMineral(“铁矿石”);
 ```

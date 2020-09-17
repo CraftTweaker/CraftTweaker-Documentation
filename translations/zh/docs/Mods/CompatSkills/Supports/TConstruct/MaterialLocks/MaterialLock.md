@@ -1,20 +1,20 @@
-# Material Locks
+# 材料锁
 
-## Material-Lock
+## 材料锁
 
-With the implementation of TConstruct support in CompatSkills 1.5.0. You now have the ability to lock:
+在 CompatSkills 1.5.0中实现的 TConstruct 支持。 您现在有能力锁定：
 
-    - Tool Crafting
-    - Part Crafting
-    - Part Replacement
+    - 工具制作
+    - 部件制作
+    - 部件替换
     
 
-For specific Tinker Construct's Materials.
+用于特定的Tinker 构造材料。
 
-### Syntax:
+### 语法：
 
-    // Blank Example:
-    mods.compatskills.MaterialLock.addMaterialLock(String identifier, String... requirements);
+    // 空白示例：
+    mods.compatskills.MaterialLock.addMaterialLock(String identificer, String... 要求);
     
-    // Example:
+    // 示例:
     mods.compatskills.MaterialLock.addMaterialLock("wood", "reskillable:mining|5", "reskillable:magic|7");

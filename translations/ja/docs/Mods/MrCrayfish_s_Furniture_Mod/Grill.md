@@ -1,18 +1,18 @@
 # Grill
 
-The Grill cooks food over hot coals.
+グリルは熱い石炭の上で食べ物を調理します。
 
-It requires flipping food to cook both sides.
+それは両側を調理するために食べ物をひっくり返す必要があります。
 
-## Default Grill Recipes
+## デフォルトのグリルレシピ
 
-- Beef -> Cooked Beef
-- Sausage -> Cooked Sausage
-- Kebab -> Cooked Kebab
+- 牛肉->焼いた肉
+- ソーセージ->焼いたソーセージ。
+- ケバブ->焼いたケバブ。
 
-## Removing
+## 削除中
 
-## Remove matching grill recipes.
+## 一致するグリルのレシピを削除します
 
 ```zenscript
 mods.cfm.Grill.remove(@Optional final IIngredient output, @Optional final IIngredient input);
@@ -25,11 +25,11 @@ mods.cfm.Grill.remove(<cfm:item_sausage_cooked>);
 mods.cfm.Grill.remove();
 ```
 
-## Adding
+## 追加中
 
-Add a grill recipe.
+グリルレシピを追加します。
 
-## Only supports inputs of size 1.
+## サイズ1の入力のみをサポートします。
 
 ```zenscript
 mods.cfm.Grill.addRecipe(@Nonnull final IItemStack output, @Nonnull final IItemStack input);

@@ -1,7 +1,7 @@
 # IMachineSlot
 
-A Machine slot is a slot that either accepts Items or liquids.  
-You need them when creating a machine using the [IMachineRegistry](/Mods/ExtraUtilities2/CustomMachines/IMachineRegistry) later on.
+マシーンスロットは、アイテムまたは液体を受け入れるスロットです。  
+あとで [IMachineRegistry](/Mods/ExtraUtilities2/CustomMachines/IMachineRegistry) を使用してマシンを作成するときに必要です。
 
 ## パッケージのインポート
 
@@ -9,12 +9,12 @@ If you want to shorten method calls or encounter any issues you might need to [i
 You can do so using
 
 ```zenscript
-import extrautilities2.Tweaker.IMachineSlot;
+import extraautilities2.Tweaker.IMachineSlot;
 ```
 
-## Creating a new IMachineSlot
+## 新しい IMachineSlot の作成
 
-The IMachineSlot package offers methods to create new IMachineSlot objects:
+IMachineSlotパッケージは、新しいIMachineSlotオブジェクトを作成するメソッドを提供します。
 
 ```zenscript
 extrautilities2.Tweaker.IMachineSlot.newItemStackSlot(name);
@@ -31,35 +31,35 @@ newFluidSlot(name, stackCapacity, isOptional, filterLiquidStack);
 newFluidSlot(name, stackCapacity, color, isOptional, filterLiquidStack);
 ```
 
-All these methods will return the new Slot as IMachineSlot object.
+これらのメソッドはすべて、新しい Slot を IMachineSlot オブジェクトとして返します。
 
-The parameters are:
+パラメータは次のとおりです。
 
-| Name              | Type                                          |
+| 名称                | タイプ                                           |
 | ----------------- | --------------------------------------------- |
-| name              | string                                        |
+| name              | 文字列                                           |
 | isOptional        | bool                                          |
 | stackCapacity     | int                                           |
-| color             | int                                           |
-| backgroundTexture | string                                        |
+| 色                 | int                                           |
+| 背景テクスチャ           | 文字列                                           |
 | filterLiquidStack | [ILiquidStack](/Vanilla/Liquids/ILiquidStack) |
 
-What the parameters do:
+パラメータの動作:
 
-- `name`: The slot's name. Used for recipes later. Make sure that a machine has no 2 slots with the same name.
-- `isOptional`: Dictates whether or not this slot must be filled for recipe checks to commence.
-- `stackCapacity`: How many items/millibuckets can fit in this slot?
-- `color`: What color will the slot have?
-- `backgroundTexture`: A custom texture path for the background of this slot can be added here.
-- `filterLiquidStack`: If you provide this [ILiquidStack](/Vanilla/Liquids/ILiquidStack) object, then only this fluid will be allowed to enter the slot.
+- `name`: スロットの名前。 後でレシピに使用する。 マシンに同じ名前の2つのスロットがないことを確認してください。
+- `isOptional`: レシピチェックを開始するために、このスロットを埋める必要があるかどうかを指定します。
+- `stackCapacity`: このスロットに収まるアイテム/ミリバケットの数は？
+- `色`: スロットの色は何色ですか?
+- `backgroundTexture`: このスロットの背景のカスタムテクスチャパスをここに追加できます。
+- `filterLiquidStack`: この [ILiquidStack](/Vanilla/Liquids/ILiquidStack) オブジェクトを指定すると、この流体のみがスロットに入ることができます。
 
 ## Getters
 
-You can get basic information from an IMachineSlot as well.  
-Don't expect these getters to magically return something different from what you set the slot when creating it, though.
+IMachineSlotからも基本情報を取得できます。  
+これらのゲッターは、作成時にスロットを設定したものとは異なる何かを魔法のように返すことを期待しないでください。
 
-| Name          | Type   |
-| ------------- | ------ |
-| name          | string |
-| optional      | bool   |
-| stackCapacity | int    |
+| 名称            | タイプ  |
+| ------------- | ---- |
+| 名前            | 文字列  |
+| 省略可能          | bool |
+| stackCapacity | int  |

@@ -1,42 +1,42 @@
-# Stage-Unlockables
+# ステージのロック解除
 
-## Unlockables
+## ロック解除可能
 
-This part of the GameStages support will focus on the later form. Aka "Dummy Traits" for unlocking GameStages.
+GameStagesサポートのこの部分は、後のフォームに焦点を当てます。 ゲームステージをアンロックするためのAka "Dummy Traits"。
 
-## Resource Information:
+## リソース情報:
 
-When creating a new dummy trait you'll notice a few things are missing:
+新しいダミー特性を作成するとき、いくつかの不足していることに気づくでしょう:
 
-- Unlocalized Name
-- Unlocalized Description
-- No Icon is present
+- 非ローカライズ名
+- ローカライズされていない説明
+- アイコンがありません
 
-This is due to these things requiring Resources. At the current stage CompatSkills does not provide the ability to provide these natively. There are a few ways around this:
+これはリソースを必要とするものが原因です。 現在の段階では、コンパットスキルは、ネイティブにこれらを提供する能力を提供していません。 これにはいくつかの方法があります
 
-- Use BASE which comes with its own resource loader (Only works if ContentTweaker is present due to how BASE works).
-- Use ResourceLoader by Lumien.
+- 独自のリソース・ローダーが付属するBASEを使用してください(BASEの動作によりContentTweakerが存在する場合にのみ動作します)。
+- LumienがResourceLoader を使用します。
 
-Localization is pretty straight forward.
+ローカリゼーションはかなり簡単に進みます。
 
     assets/compatskills/lang/en_us.lang
     
-    en_us.lang = English Translation
+    en_us.lang = 英語の翻訳
     
 
-However the texture path for the trait icon is as follows:
+ただし、トレイトアイコンのテクスチャパスは以下の通りです。
 
     assets/compatskills/textures/unlockables/name.png
     
-    So if the name is "banana", The Path would be as follows:
+    もし名前が "banana" の場合、パスは次のようになります:
     
     assets/compatskills/textures/unlockables/banana.png
     
 
-### Syntax:
+### 構文
 
-    Blank Example:
-    mods.compatskills.GameStageUnlockable.addGameStageUnlockable(String gamestage, String name, int x, int y, String skillName, int cost, @Optional String... defaultRequirements);
+    空白の例:
+    mods.compatskills.GameStageUnlockable.addGameStageUnlockable(ゲームステーション、文字列名、int x、int y、文字列スキル名、int cost、@Optional String... defaultRequirements);
     
     Working Example(s):
     mods.compatskills.GameStageUnlockable.addGameStageUnlockable("a", "a", 0, 0, "reskillable:gathering", 3, "stage|test");

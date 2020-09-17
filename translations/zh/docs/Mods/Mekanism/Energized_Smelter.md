@@ -1,20 +1,20 @@
-# Energized Smelter
+# 能量化冶炼器
 
-As of Mekanism 9.7.0 it is now possible to view all recipe strings of the Energized Smelter through the command `/ct mekrecipes smelter`
+到Mekanism 9.7.0 现在可以通过命令 `/ct mek配方冶炼厂` 查看所有配方字符串。
 
-## Addition
+## 加
 
 ```zenscript
 mods.mekanism.smelter.addRecipe(IIngredient inputStack, IItemStack outputStack);
 
-mods.mekanism.smelter.addRecipe(<minecraft:tallgrass:1>, <minecraft:deadbush>);
+mods.mekanis.smelter.addRecipe(<minecraft:tallgrass:1>, <minecraft:deadbush>);
 ```
 
-As of Mekanism 9.7.0 it is possible to use IIngredients as the inputStack instead of only IItemStacks.
+由于Mekanism 9.7.0，可以使用IIngredients 作为输入堆栈，而不仅仅是IItemStack。
 
-Note: Currently all this does is loop over the different possibilities in java while adding instead of you having to do it in ZenScript. Currently there is no built in support for compound ingredients or oredictionary in the machines themselves.
+注意：目前所有这一切都是在java的不同可能性上循环的，而不是在ZenScript中添加。 目前，机器本身没有用于支持复合成份或修复术。
 
-## Removal
+## 移除
 
 ```zenscript
 mods.mekanism.smelter.removeRecipe(IIngredient inputStack, @Optional IIngredient outputStack);
@@ -23,11 +23,11 @@ mods.mekanism.smelter.removeRecipe(<minecraft:sand:*>, <minecraft:glass>);
 mods.mekanism.smelter.removeRecipe(<minecraft:cobblestone>);
 ```
 
-Specifying an output parameter will only remove the specific recipe that results in that output from that input. Omitting the output parameter will remove all recipes that the input item can produce.
+指定输出参数只会移除从该输入产生该输出的特定配方。 忽略输出参数将删除输入项能够生成的所有配方。
 
-## Removing all recipes
+## 删除所有配方
 
-As of Mekanism 9.7.0 it is now possible to remove all Energized Smelter recipes. (This excludes any recipes added via CraftTweaker)
+到Mekanism 9.7.0，现在可以移除所有加能冶炼厂配方。 (这排除了任何通过 CraftTweaker 添加的配方
 
 ```zenscript
 mods.mekanism.smelter.removeAllRecipes();

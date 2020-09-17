@@ -1,25 +1,25 @@
 # Setting up GitHub
 
-In order to start, you need a free Account for [Github](https://github.com).  
-Follow the registration steps if you have none already.
+Para empezar, necesita una cuenta gratuita para [GitHub](https://github.com).  
+Siga los pasos de registro si ya no tiene ninguno.
 
-## Locating the repository
+## Buscando el repositorio
 
-The wiki repository can be found at <https://github.com/CraftTweaker/CraftTweaker-Documentation>
+El repositorio wiki se puede encontrar en <https://github.com/CraftTweaker/CraftTweaker-Documentation>
 
-## Forking the wiki
+## Bifurcando el wiki
 
-In order for you to do any changes, you need to copy the whole CrT-Wiki Repository to your Github Account.  
-This action is called forking.  
-You can fork the repository by clicking on the "fork" button in the wiki's GH page: ![Inputs Order](/Contribute/assets/SetupGitHub_ForkButton.png)
+Para poder hacer cualquier cambio, necesita copiar el repositorio CrT-Wiki completo a su cuenta de Github.  
+Esta acción se llama bifurcación.  
+Puede bifurcar el repositorio haciendo clic en el botón "fork" de la página GH de la wiki: ![Orden de entradas](/Contribute/assets/SetupGitHub_ForkButton.png)
 
-In case you are in a Github organization you might need to specify where you want to fork the repository to.
+En caso de que esté en una organización de Github, puede que necesite especificar a dónde desea fork el repositorio.
 
-## Locating your fork
+## Localizando tu bifurcación
 
-You can now find a new repository called "CraftTweaker-Documentation" when checking your profile page/repositories.  
-Alternatively, you can go to `github.com/yourUserName/CraftTweaker-Documentation`.
+Ahora puede encontrar un nuevo repositorio llamado "CraftTweaker-Documentation" al revisar su página de perfil/repositorios.  
+Alternativamente, puede ir a `github.com/yourUserName/CraftTweaker-Documentation`.
 
-## How to continue
+## Cómo continuar
 
-Now that you have successfully forked the CraftTweaker-Documentation repository to your own GitHub account, you can [use the online Editor](/Contribute/OnlineEditor_Edit/) or [clone to your computer](/Contribute/LocalClone/Clone/) and edit locally.
+Ahora que ha bifurcado con éxito el repositorio de documentación de CraftTweaker en su propia cuenta de GitHub. puedes [usar el editor en línea](/Contribute/OnlineEditor_Edit/) o [clonar en tu computadora](/Contribute/LocalClone/Clone/) y editar localmente.

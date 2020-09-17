@@ -1,22 +1,23 @@
-# CropGrowPostEvent
+# クロップGrowPostEvent
 
-The CropGrowPost Event is fired once a crop block has **successfully** grown. It cannot be canceled, and merely serves as a notification of crop growth.
+クロップGrowPost イベントは、 **** が正常に成長すると発生します。 それはキャンセルすることはできず、単に作物の成長の通知として機能します。
 
-## Event Class
-You will need to cast the event in the function header as this class:  
-`crafttweaker.event.CropGrowPostEvent`  
-You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
+## イベントクラス
+関数ヘッダーのイベントをこのクラスとしてキャストする必要があります:  
+`crafttweaker.event. ropGrowPostEvent <br x-id="2" /> 
+ <code>`  
+もちろん、 [インポート](/AdvancedFunctions/Import/) 前にクラスをインポートして、その名前を使用することもできます。
 
-## Event interface extensions
-CropGrowPost Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+## イベントインターフェースの拡張
+CropGrowPost イベントは、以下のインターフェイスを実装し、すべてのメソッド/getters/setter を呼び出すことができます。
 
 - [IBlockEvent](/Vanilla/Events/Events/IBlockEvent/)
 
 
 ## ZenGetters
-The following information can be retrieved from the event:
+イベントから次の情報を取得できます。
 
-| ZenGetter            | ZenSetter | Type                                        |
+| ZenGetter            | ZenSetter | タイプ                                         |
 | -------------------- | --------- | ------------------------------------------- |
 | `originalBlockState` |           | [IBlockState](/Vanilla/Blocks/IBlockState/) |
 | `originalBlock`      |           | [IBlock](/Vanilla/Blocks/IBlock/)           |

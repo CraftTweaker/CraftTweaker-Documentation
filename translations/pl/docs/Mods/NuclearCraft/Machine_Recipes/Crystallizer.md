@@ -1,14 +1,14 @@
-# Crystallizer
+# Kryształowa
 
-## Importing the Package
-`mods.nuclearcraft.crystallizer`
+## Importowanie pakietu
+`Mods.nuclearcraft.krystalizator`
 
-## Adding Recipes
+## Dodawanie przepisów
 ```zenscript
-mods.nuclearcraft.crystallizer.addRecipe([fluidInput, itemOutput, @Optional double timeMultiplier, @Optional double powerMultiplier, @Optional double processRadiation]);
+mods.nuclearcraft.crystallizer.addRecipe([fluidInput, itemOutput, @Opcjonalny podwójny timeMultiplier, @Opcjonalny podwójny nośnik, @Opcjonalny podwójny przetwarzanie]);
 ```
 
-## Removing Recipes
+## Usuwanie przepisów
 ```zenscript
 mods.nuclearcraft.crystallizer.removeRecipeWithInput([fluidInput]);
 mods.nuclearcraft.crystallizer.removeRecipeWithOutput([itemOutput]);

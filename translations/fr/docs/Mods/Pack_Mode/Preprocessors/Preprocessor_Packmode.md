@@ -1,22 +1,22 @@
-# Packmode Preprocessor
+# Pré-processeur Packmode
 
-The Packmode Preprocessor will change the script to only be executed if a certain packmode is enabled in the packmode config file
+Le Preprocessor Packmode changera le script pour qu'il ne soit exécuté que si un certain packmode est activé dans le fichier de configuration du packmode
 
 ## Appel
 
-You call the Packmode Preprocessor by adding `#packmode mode(s)` to your script file, with `mode(s)` being the pack mode(s) you want the script to run in
+Vous appelez le préprocesseur Packmode en ajoutant `#packmode mode(s)` à votre fichier de script, avec `mode(s)` qui est le ou les mode(s) du pack dans lequel vous voulez que le script soit exécuté
 
-## Example
+## Exemple
 
-`#packmode normal expert` would enable the script in normal and expert mode
+`#packmode normal expert` activerait le script en mode normal et expert
 
 ```zenscript
 #packmode normal
-import crafttweaker.items.IItemStack;
+import crafttweaker.items.IItemStack ;
 
-print("If I appear on your CT-logs, packmode normal is enabled!");
+print("Si j'apparaît sur vos CT-logs, packmode normal est activé !");
 ```
 
-## What it does
+## Ce qu'il fait
 
-The Processor will only allow the script to be executed if a certain packmode is enabled.
+Le Processeur n'autorise l'exécution du script que si un certain mode de paquet est activé.

@@ -1,12 +1,12 @@
-# Charcoal Pile
+# Древесный уголь
 
-ModTweaker allows you to add or remove forestry Charcoal Wall Recipes
+ModTweaker позволяет добавлять или удалять рецепты древесного угля леса
 
-## Calling
+## Звонок
 
-You can call the package using `mods.forestry.CharcoalWall`
+Пакет можно позвонить через `mods.forestry.CharcoalWall`
 
-## Recipe Removal
+## Удаление рецепта
 
 ```zenscript
 //mods.forestry.CharcoalWall.removeWall(IBlock block);
@@ -17,25 +17,25 @@ mods.forestry.CharcoalWall.removeWall(<minecraft:bedrock>.asBlock());
 mods.forestry.CharcoalWall.removeWallState(<blockstate:minecraft:bedrock>);
 
 
-//Will fail if the stack cannot be converted to a block!
+//Если стек не может быть преобразован в блок!
 //mods.forestry.CharcoalWall.removeWallStack(IItemStack stack);
 mods.forestry.CharcoalWall.removeWallStack(<minecraft:bedrock>);
 ```
 
-## Reipe Addition
+## Прибавление Reipe
 
-`amount` states the amount of charcoal the wall will provide.
+`сумма` определяет количество древесного угля, которое будет предоставлено стеной.
 
 ```zenscript
 //mods.forestry.CharcoalWall.addWall(IBlock block, int amount);
 mods.forestry.CharcoalWall.addWall(<minecraft:bedrock>.asBlock(), 10);
 
 
-//mods.forestry.CharcoalWall.addWallState(IBlockState state, int amount);
+//mods.forestry.CharcoalWall. ddWallState(состояние IBlockState int amount);
 mods.forestry.CharcoalWall.addWallState(<blockstate:minecraft:bedrock>, 10);
 
 
-//Will fail if the stack cannot be converted to a block!
+//Не получится, если стек не может быть преобразован в блок!
 //mods.forestry.CharcoalWall.addWallStack(IItemStack stack, int amount);
 mods.forestry.CharcoalWall.addWallStack(<minecraft:bedrock>, 10);
 ```

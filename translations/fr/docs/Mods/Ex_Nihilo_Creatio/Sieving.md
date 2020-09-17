@@ -1,45 +1,49 @@
 # Sieving
 
-## Package
+## Paquet
 
-`mods.exnihilocreatio.Sieve`
-
-## Methods
-
-- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) block** The block that drops the output.
-- **[IItemStack](/Vanilla/Items/IItemStack/) output** The item that drops from the block..
-- **Float chance** The chance should be between 0-1.
-
-## String Mesh
+Pour accéder à `Sieve` sans préciser le chemin complet, vous pouvez importer le paquet en haut de votre script avec les éléments suivants :
 
 ```zenscript
-addStringMeshRecipe(IIngredient, IItemStack, Float chance);
-addStringMeshRecipe(<minecraft:gravel>, <minecraft:diamond>, 0.001);
+mods.exnihilocreatio.Sieve
 ```
 
-## Flint Mesh
+## Méthodes
+
+- **[Ingrédient](/Vanilla/Variable_Types/IIngredient/) bloc** Le bloc qui lâche la sortie.
+- **[IItemStack](/Vanilla/Items/IItemStack/) affiche** L'élément qui tombe du bloc..
+- **Chance flottante** La chance doit être entre 0 et 1.
+
+## Maillage de chaîne
 
 ```zenscript
 addFlintMeshRecipe(IIngredient, IItemStack, Float chance);
 addFlintMeshRecipe(<minecraft:gravel>, <minecraft:diamond>, 0.01);
 ```
 
-## Iron Mesh
+## Maillage de silex
 
 ```zenscript
 addIronMeshRecipe(IIngredient, IItemStack, Float chance);
 addIronMeshRecipe(<minecraft:gravel>, <minecraft:diamond>, 0.1);
 ```
 
-## Diamond Mesh
+## Maillage de fer
 
 ```zenscript
 addDiamondMeshRecipe(IIngredient, IItemStack, Float chance);
 addDiamondMeshRecipe(<minecraft:gravel>, <minecraft:diamond>, 1);
 ```
 
-## Removal
+## Maillage en Diamant
 
 ```zenscript
-mods.exnihilocreatio.Sieve.removeAll();
+addStringMeshRecipe(IIngredient, IItemStack, Float chance);
+addStringMeshRecipe(<minecraft:gravel>, <minecraft:diamond>, 0.001);
+```
+
+## Retirer
+
+```zenscript
+Sieve.removeAll();
 ```

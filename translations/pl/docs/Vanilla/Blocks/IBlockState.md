@@ -1,90 +1,90 @@
-# IBlockState
+# Stan IBlocka
 
-An IBlockState object represents a block's current state.
+Obiekt IBlockState reprezentuje aktualny stan bloku.
 
-## Importing the package
+## Importowanie pakietu
 
-It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
-`import crafttweaker.block.IBlockState;`
+Może być wymagane zaimportowanie pakietu, jeśli napotkasz jakieś problemy, więc lepiej być bezpiecznym niż przepraszamy i dodać import.  
+`zaimportuj crafttweaker.block.IBlockState`
 
-## Calling an IBlockState
+## Wywołanie IBlockState
 
-There are several methods that return an IBlockState
+Istnieje kilka metod, które zwracają IBlockState
 
-- Using the [Bracket Handler](/Vanilla/Brackets/Bracket_BlockState/) `<blockstate:minecraft:log:variant=spruce>`
-- Using the `IBlockState.getBlockState()` static method. (See below for more information)
-- Using the `getMatchingBlockStates()` method on an [IBlockStateMatcher](/Vanilla/Blocks/IBlockStateMatcher/) object to retrieve an array of IBlockStates.
-- Using the `withProperty()` method on another IBlockState object.
+- Używanie [Obsługi nawiasów](/Vanilla/Brackets/Bracket_BlockState/) `<blockstate:minecraft:log:variant=spruce>`
+- Używanie metody statycznej `IBlockState.getBlockState()`. (Więcej informacji znajduje się poniżej)
+- Używając metody `getMatchingBlockStates()` na obiekcie [IBlockStateMatcher](/Vanilla/Blocks/IBlockStateMatcher/) do pobrania tablicy stanów IBlockStates.
+- Używanie metody `withProperty()` na innym obiekcie IBlockState.
 
-## Resolving an IBlockState At Runtime
+## Rozwiązywanie stanu IBlockState przy uruchomieniu
 
-There may be times at which your script may rely on interaction with a block from a mod that has not been loaded yet, such as inside block events in ContentTweaker or another pre-init script loader. If you attempt to use a [Bracket Handler](/Vanilla/Brackets/Bracket_BlockState/) for a block that has not yet been registered, the handler will fail to resolve and your script will not work.
+Mogą istnieć czasy, w których twój skrypt może polegać na interakcji z blokiem z modyfikacji, która nie została jeszcze załadowana, takie jak wewnętrzne zdarzenia bloku w ContentTweaker lub inny preinit loader skryptu. Jeśli spróbujesz użyć [Handler nawiasów](/Vanilla/Brackets/Bracket_BlockState/) dla bloku, który nie został jeszcze zarejestrowany, obsługa nie rozwiąże się, a twój skrypt nie zadziała.
 
-To avoid this, you can use the static `IBlockState.getBlockState()` method to resolve an IBlockState at runtime.
+Aby tego uniknąć, możesz użyć metody statycznej `IBlockState.getBlockState()` , aby rozwiązać IBlockState w czasie uruchomienia.
 
-### static getBlockState
+### statyczny stan getBlockState
 
-`static IBlockState getBlockState(String blockname, String... properties)` Parameters:
+`statyczny status IBlockState (nazwa blokowania ciągu, string... Właściwości)` Parametry:
 
-- String blockname → A string in the format "modid:blockname" as it would appear in the [BlockState Bracket Handler](/Vanilla/Brackets/Bracket_BlockState/)
-- String... properties → Zero or more strings of `"name=value"` pairs of properties to apply to this blockstate. Any unspecified properties will use the same value as in the default blockstate for the specified block name.
+- Nazwa blokady ciągu → Ciąg znaków w formacie "modid:blockname", który pojawiłby się w [Handler blockState Bracket](/Vanilla/Brackets/Bracket_BlockState/)
+- Ciąg znaków... Właściwości → Zero lub więcej ciągów znaków `"name=value"` par właściwości do zastosowania do tego bloku. Jakiekolwiek nieokreślone właściwości będą używać tej samej wartości, co w domyślnym stanie blokady dla określonej nazwy bloku.
 
-Returns an IBlockState of the specified `blockname` with the specified `properties`, or the default blockstate if no properties are specified.
+Zwraca IBlockState o podanej `nazwie bloku` o określonych `właściwościach`lub domyślnym stanie blokowania, jeśli nie określono żadnych właściwości.
 
-## Extending IBlockProperties
+## Rozszerzenie właściwości IBlockProperties
 
-IBlockState extends [IBlockProperties](/Vanilla/Blocks/IBlockProperties/). That means that all methods that are available to [IBlockProperties](/Vanilla/Blocks/IBlockProperties/) objects are also available to IBlockState objects.
+IBlockState rozszerza [właściwości IBlockProperties](/Vanilla/Blocks/IBlockProperties/). Oznacza to, że wszystkie metody dostępne dla obiektów [IBlockProperties](/Vanilla/Blocks/IBlockProperties/) są również dostępne dla obiektów IBlockStatus.
 
-## Extending IBlockStateMatcher
+## Rozszerzenie IBlockStateMatcher
 
-IBlockState extends [IBlockStateMatcher](/Vanilla/Blocks/IBlockStateMatcher/). That means that all methods that are available to [IBlockStateMatcher](/Vanilla/Blocks/IBlockStateMatcher/) objects are also available to IBlockState objects.
+IBlockState rozszerza [IBlockStateMatcher](/Vanilla/Blocks/IBlockStateMatcher/). Oznacza to, że wszystkie metody dostępne dla obiektów [IBlockStateMatcher](/Vanilla/Blocks/IBlockStateMatcher/) są również dostępne dla obiektów IBlockState
 
-## ZenMethods and ZenGetters
+## ZenMethods i ZenGetters
 
-| ZenGetter     | Return Type                       | Description                                                                                |
-| ------------- | --------------------------------- | ------------------------------------------------------------------------------------------ |
-| block         | [IBlock](/Vanilla/Blocks/IBlock/) | Returns the refered block                                                                  |
-| meta          | int                               | Returns the refered block's metadata                                                       |
-| commandString | string                            | Returns a possible [Bracket Handler](/Vanilla/Brackets/Bracket_BlockState/) for this state |
+| ZenGetter | Typ zwrotu                        | Opis                                                                                    |
+| --------- | --------------------------------- | --------------------------------------------------------------------------------------- |
+| blok      | [IBlock](/Vanilla/Blocks/IBlock/) | Zwraca blok                                                                             |
+| meta      | odcień                            | Zwraca metadane bloku                                                                   |
+| polecenie | ciąg znaków                       | Zwraca możliwy [Obsługa nawiasów](/Vanilla/Brackets/Bracket_BlockState/) dla tego stanu |
 
-## ZenMethods
+## Metody ZenMethods
 
-### isReplacable
+### można wymienić
 
-`boolean isReplaceable(IWorld world, IBlockPos pos);`  
-Parameters:
+`boolean isReplaceable(IWorld Świat, IBlockPos pos);`  
+Parametry:
 
-- [IWorld](/Vanilla/World/IWorld/) world → The world to be checked in
-- [IBlockPos](/Vanilla/World/IBlockPos/) pos → The Block's position
+- [Świat](/Vanilla/World/IWorld/) - Świat → Świat do zaznaczenia w
+- [IBlockPos](/Vanilla/World/IBlockPos/) pop → Pozycja Block'a
 
-Returns a boolean that sais whether the block can be replaced or not.
+Zwraca wartość logiczną, która sais, czy blok może być zastąpiony czy nie.
 
-### Getting or changing Properties
+### Uzyskiwanie lub zmiana właściwości
 
-You can get a list of all registered properties, either as list with all property names or as map that maps the properties to their value.  
-You can also check which values are possible for a given property name.  
-You can also use `withProperty` to create a new IBlockState object with that property changed.
+Możesz uzyskać listę wszystkich zarejestrowanych właściwości, albo jako lista z wszystkimi nazwami właściwości albo jako mapa, która mapuje właściwości do ich wartości.  
+Możesz również sprawdzić, które wartości są możliwe dla danej nazwy właściwości.  
+Możesz również użyć `withProperty` , aby utworzyć nowy obiekt IBlockState z tą właściwością zmienioną.
 
 ```zenscript
-List<String> getPropertyNames();
-String getPropertyValue(String name);
-List<String> getAllowedValuesForProperty(String name);
+Lista<String> getPropertyNames();
+String getPropertyValue(nazwa ciągu);
+List<String> getAllowedValuesForProperty(nazwa ciągu);
 
-IBlockState withProperty(String name, String value);
+IBlockState withProperty(Nazwa ciągu, wartość ciągu);
 ```
 
-### Comparing two IBlockState objects
+### Porównywanie dwóch obiektów IBlockState
 
-You can either use `int compare(IBlockState other);` or the ZenCompare Tokens `==` `!=`.  
-The return different types though:
+Możesz użyć `int compare(IBlockState inne);` lub ZenCompare Tokens `==` `!=`.  
+Zwrot różnych typów:
 
-- `state.compare(other)` returns an int that is 0 if they are equal
-- `state == other` returns a bool that is true of they are equal
+- `state.compare(other)` zwraca int równy 0, jeśli są równe
+- `state == other` zwraca prawdziwy bool, który jest taki sam
 
-### Getting an explicit Blockstate Matcher
+### Uzyskanie wyraźnego dopasowania stanu bloków
 
-Returns an [IBlockStateMatcher](/Vanilla/Blocks/IBlockStateMatcher/) that matches the given block.
+Zwraca [IBlockStateMatcher](/Vanilla/Blocks/IBlockStateMatcher/) , który pasuje do danego bloku.
 
 ```zenscript
-IBlockStateMatcher matchBlock();
+BlockStateMatchBlock();
 ```

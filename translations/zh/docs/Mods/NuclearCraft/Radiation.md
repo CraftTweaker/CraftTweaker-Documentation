@@ -1,108 +1,108 @@
-# Radiation
-**Note: The double set of brackets `([...])` is not required here!**
+# 单独设立的信托基金
+**注意：此处不需要双方括号 `([...])`！**
 
-## Radiation
+## 单独设立的信托基金
 This method gets the radiation of an `IIngredient` in rads/tick.
 ```zenscript
 mods.nuclearcraft.radiation.getRadiationLevel(itemInput);
 ```
-## Block Mutations
-This method adds a block mutation. The Block will not mutate when the radiation is below `radiationThreshold`.
+## 阻止突变
+这个方法添加了一个方块突变。 当辐射低于 `辐射阈值` 时，方块将不会发生变化。
 ```zenscript
-mods.nuclearcraft.radiation.addBlockMutation(blockInput, blockOutput, double radiationThreshold);
+mods.nuclearcraft.radiation.addBlockMutation(nockInput, blockOutput, 双辐射阈值)；
 ```
 
-## Radiation Immunity
-This method gives the ability to control the immunity of players depending on the stage. `defaultImmunity` is a boolean specifiying the players' immunity without the specified stages. `stageNames` is an array of the names of all stages that can toggle the immunity of players.
+## 辐射豁免
+这种方法使得能够根据阶段控制行为者的豁免权。 `默认豁免` 是一个指定玩家豁免权的布尔值。 `舞台名称` 是可以切换玩家豁免权的所有阶段的数组名称。
 ```zenscript
-mods.nuclearcraft.radiation.setRadiationImmunityGameStages(boolean defaultImmunity, string[] stageNames);
+mods.nuclearcraft.radiation.setRadiationImmunityGameStages(boolian defaultImmunity, string[…]stageNames)；
 ```
 
-## Radiation Getters/Setters
+## 辐射采集器/设置器
 
-### Adding Radiation
-`amount` is the amount of radiation added to the `IEntityLivingBase`. `useImmunity` controls whether the function occurs even the `IEntityLivingBase` is immune.
+### 添加辐射量
+`金额` 是添加到 `IentityLivingBase` 的辐射量。 `使用 Immunity` 控制函数是否发生了 `IentityLivingBase` 是否是免责的。
 ```zenscript
-IEntityLivingBase.addRadiation(double amount, @Optional boolean useImmunity);
+IEntityLivingBase.addRadiation(双金额，@Optional bolie useImmunity)；
 ```
 
-### Setting Radiation
-`amount` is the level of radiation that is applied to the `IEntityLivingBase`. `useImmunity` controls whether the function occurs even the `IEntityLivingBase` is immune.
+### 设置辐射量
+`数量` 是适用于 `IentityLivingBase` 的辐射水平。 `使用 Immunity` 控制函数是否发生了 `IentityLivingBase` 是否是免责的。
 ```zenscript
-IEntityLivingBase.setRadiation(double amount, @Optional boolean useImmunity);
+IEntityLivingBase.setRadiation(双金额，@opulian useImmunity)；
 ```
 
-### Getting Radiation
-This method returns the level of radiation of the `IEntityLivingBase`.
+### 正在获取辐射量
+这个方法返回 `IentityLivingBase` 的辐射水平。
 ```zenscript
 IEntityLivingBase.getRadiation();
 ```
 
-## Radaway Buffer Getters/Setters
+## Radaway 缓冲区/设置
 
-### Adding Radaway Buffer
-`amount` is the amount of Radaway Buffer added to the `IEntityLivingBase`. `slowBuffer` decides if the Radaway Buffer added is a slow buffer.
+### 添加雷达缓冲器
+`金额` 是添加到 `IentityLivingBase` 的Radaway Buffer 的金额。 `减缓缓存` 决定是否添加了慢缓缓冲。
 ```zenscript
-IEntityLivingBase.addRadiationResistance(double amount, @Optional boolean slowBuffer);
+IEntityLivingBase.addRadiationResistance(双倍，@可选布尔型减速缓冲)；
 ```
-### Setting Radaway Buffer
-`amount` is the amount of Radaway Buffer that is applied to the `IEntityLivingBase`. `slowBuffer` decides if the Radaway Buffer added is a slow buffer.
+### 设置雷达缓冲器
+`金额` 是适用于 `IentityLivingBase` 的Radaway Buffer的金额。 `减缓缓存` 决定是否添加了慢缓缓冲。
 ```zenscript
-IEntityLivingBase.setRadiationResistance(double amount, @Optional boolean slowBuffer);
-```
-
-### Getting Radaway Buffer
-This method returns the Radaway Buffer of the `IEntityLivingBase`. `slowBuffer` determines whether slow buffer is included in the returned value.
-```zenscript
-IEntityLivingBase.getRadiationResistance(@Optional boolean slowBuffer);
+IEntityLivingBase.setRadiationResistance(双金额，@opulian lower Buffer)；
 ```
 
-## Poison Buffer Getters/Setters
-
-### Adding Poison Buffer
-`amount` is the amount of Poison Buffer added to the `IEntityLivingBase`.
+### 正在获取雷达缓存器
+这个方法返回 `IentityLivingBase` 的Radaway 缓存。 `减缓缓缓存` 决定是否包含在返回的值中。
 ```zenscript
-IEntityLivingBase.addPoisonBuffer(double amount);
-```
-### Setting Poison Buffer
-`amount` is the amount of Poison Buffer that is applied to the `IEntityLivingBase`.
-```zenscript
-IEntityLivingBase.setPoisonBuffer(double amount);
+IEntityLivingBase.getRadiationResistance(@Optional bolian lower Buffer);
 ```
 
-### Getting Poison Buffer
-This method returns the Poison Buffer of the `IEntityLivingBase`.
+## 毒素缓冲器/设置器
+
+### 添加毒素缓存
+`数量` 是添加到 `IentityLivingBase` 的 PoisonBuffer 数量。
+```zenscript
+IEntityLivingBase.addPoisonBuffer(双倍金额)；
+```
+### 设置毒药缓存
+`金额` 是用于 `IentityLivingBase` 的 Poison 缓存的数量。
+```zenscript
+IEntityLivingBase.setPoisonBuffer(双倍数量)；
+```
+
+### 正在获取毒素缓存
+这个方法返回 `IentityLivingBase` 的毒物缓存。
 ```zenscript
 IEntityLivingBase.getPoisonBuffer();
 ```
 
-## Radiation Resistance Getters/Setters
-### Adding Radiation Resistance
-`amount` is the amount of Radiation Resistance added to the `IEntityLivingBase`.
+## 辐射抗性采集器/设置器
+### 添加辐射抗性
+`数量` 是添加到 `IentityLivingBase` 的辐射抗性金额。
 ```zenscript
-IEntityLivingBase.addRadawayBuffer(double amount);
+IEntityLivingBase.addRadawayBuffer(双倍金额)；
 ```
-## Setting Radiation Resistance
-`amount` is the amount of Radiation Resistance that is applied to the `IEntityLivingBase`.
+## 设置辐射抗性
+`金额` 是适用于 `IentityLivingBase` 的辐射抗性金额。
 ```zenscript
-IEntityLivingBase.setRadawayBuffer(double amount);
+IEntityLivingBase.setRadawayBuffer(双倍数量)；
 ```
 
-## Getting Radiation Resistance
-This method returns the Radiation Resistance of the `IEntityLivingBase`.
+## 获取辐射抗性
+这个方法返回 `IentityLivingBase` 的辐射抗性。
 ```zenscript
 IEntityLivingBase.getRadawayBuffer();
 ```
-## Radiation Level Getters
+## 辐射等级收集器
 
-### Raw Radiation Level
-This method returns the radiation of the `IEntityLivingBase` in rads.
+### 原始辐射水平
+这个方法返回雷达中 `IentityLivingBase` 的辐射。
 ```zenscript
 IEntityLivingBase.getRawRadiationLevel();
 ```
 
-### Radiation Level
-This method returns the change in radiation level of the `IEntityLivingBase` in rads/tick.
+### 辐射水平
+这个方法返回雷达/秒内 `IentityLivingBase` 辐射水平的变化。
 ```zenscript
 IEntityLivingBase.getRadiationLevel();
 ```

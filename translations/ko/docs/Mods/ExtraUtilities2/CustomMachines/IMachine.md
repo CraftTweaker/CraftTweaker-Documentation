@@ -44,7 +44,7 @@ myMachine.addRecipe(inputs, outputs, energy, time);
 
 This method uses the following parameters:
 
-| Name    | Type                                                         |
+| 이름      | Type                                                         |
 | ------- | ------------------------------------------------------------ |
 | inputs  | [IIngredient](/Vanilla/Variable_Types/IIngredient)[string\] |
 | outputs | Object[string\]                                             |
@@ -63,7 +63,7 @@ There are two methods, one uses [IIngredient](/Vanilla/Variable_Types/IIngredien
 myMachine.removeRecipe(inputs);
 ```
 
-| Name   | Type                                                         |
+| 이름     | Type                                                         |
 | ------ | ------------------------------------------------------------ |
 | inputs | [IIngredient](/Vanilla/Variable_Types/IIngredient)[string\] |
 
@@ -73,7 +73,7 @@ myMachine.removeRecipe(inputs);
 myMachine.removeRecipe(items, liquids);
 ```
 
-| Name    | Type                                                    |
+| 이름      | Type                                                    |
 | ------- | ------------------------------------------------------- |
 | items   | [IItemStack](/Vanilla/Items/IItemStack)[string\]       |
 | liquids | [ILiquidStack](/Vanilla/Liquids/ILiquidStack)[string\] |

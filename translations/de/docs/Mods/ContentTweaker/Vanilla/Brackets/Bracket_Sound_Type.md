@@ -1,26 +1,26 @@
-# SoundType Bracket Handler
+# SoundType Klammerhandler
 
-The SoundType Bracket Handler gives you access to the SoundTypes in the game. Currently the only soundTypes supported are:
+Der SoundType Bracket Handler gibt Ihnen Zugriff auf die SoundTypen im Spiel. Derzeit werden nur Soundtypen unterstützt:
 
 <details>
-    <summary>Click to expand the type list</summary>
+    <summary>Klicken, um die Typenliste zu erweitern</summary>
     <ul>
-        <li>Wood</li>
-        <li>Ground</li>
-        <li>Plant</li>
-        <li>Stone</li>
-        <li>Metal</li>
-        <li>Glass</li>
-        <li>Cloth</li>
+        <li>Holz</li>
+        <li>Boden</li>
+        <li>Pflanze</li>
+        <li>Stein</li>
+        <li>Metall</li>
+        <li>Glas</li>
+        <li>Tuch</li>
         <li>Sand</li>
-        <li>Snow</li>
-        <li>Ladder</li>
-        <li>Anvil</li>
+        <li>Schnee</li>
+        <li>Leiter</li>
+        <li>Amboss</li>
         <li>Slime</li>
     </ul>
 </details>
 
-SoundTypes are referenced in the SoundType Bracket handler this way:
+Soundtypen werden auf diese Weise im SoundType Bracket Handler referenziert:
 
 ```zenscript
 <soundtype:name>
@@ -28,4 +28,4 @@ SoundTypes are referenced in the SoundType Bracket handler this way:
 <soundtype:wood>
 ```
 
-If the soundType is found, this will return an [ISoundTypeDefinition](/Mods/ContentTweaker/Vanilla/Types/Sound/ISoundTypeDefinition/) Object.
+Wenn der SoundType gefunden wurde, wird ein [ISoundTypeDefinition](/Mods/ContentTweaker/Vanilla/Types/Sound/ISoundTypeDefinition/) Objekt zurückgegeben.

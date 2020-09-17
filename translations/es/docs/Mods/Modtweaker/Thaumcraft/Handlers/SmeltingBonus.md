@@ -1,30 +1,30 @@
-# Smelting bonus
+# Bono de fundición
 
-This package allows you to add and remove items to/from the Smelting bonus list.  
-The Smelting Bonus list is queried whenever an infernal furnace cooks an item.
+Este paquete le permite añadir y quitar artículos de la lista de bonificación de Fundición.  
+La lista de Bonos de Fundición se consulta cada vez que un horno infernal cocina un artículo.
 
-## Importing the package
+## Importando el paquete
 
-You can [import](/AdvancedFunctions/Import/) the package and its methods to facilitate the retrival of the methods.
+Puede [importar](/AdvancedFunctions/Import/) el paquete y sus métodos para facilitar la recuperación de los métodos.
 
 ```zenscript
-import mods.thaumcraft.SmeltingBonus;
+importar mods.thaumcraft.SmeltingBonus;
 ```
 
-## Adding items
+## Agregando elementos
 
-Notice: Input needs to be either an IItemStack or an IOreDictEntry
+Aviso: La entrada debe ser una pila de ítems o una entrada de IOreDictEntry
 
 ```zenscript
-//mods.thaumcraft.SmeltingBonus.addSmeltingBonus(IIngredient input, WeightedItemStack stack)
-mods.thaumcraft.SmeltingBonus.addSmeltingBonus(<minecraft:cobblestone>, <minecraft:button> % 20);
+//mods.thaumcraft.SmeltingBonus.addSmeltingBonus(entrada IIngrediente, pila WeightedItemStack)
+mods.thaumcraft.EmpleltingBonus.addFuntingBonus(<minecraft:cobblestone>, <minecraft:button> % 20);
 ```
 
-## Removing items
+## Eliminando elementos
 
-Notice: Input needs to be either an IItemStack or an IOreDictEntry
+Aviso: La entrada debe ser una pila de ítems o una entrada de IOreDictEntry
 
 ```zenscript
-//mods.thaumcraft.SmeltingBonus.removeSmeltingBonus(IIngredient input, IItemStack stack);
-mods.thaumcraft.SmeltingBonus.removeSmeltingBonus(<minecraft:gold_ore>, <minecraft:gold_nugget>);
+//mods.thaumcraft.SmeltingBonus.removeSmeltingBonus(entrada IIngredient, pila ItemStack);
+mods.thaumcraft.Phone eltingBonus.removePhone eltingBonus(<minecraft:gold_ore>, <minecraft:gold_nugget>);
 ```

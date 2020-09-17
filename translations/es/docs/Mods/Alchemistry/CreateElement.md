@@ -1,30 +1,31 @@
-# Create Element
-Custom Element Creation for Alchemistry
+# Crear elemento
+Creación de elementos personalizados para la alquimia
 
-# Package
-`mods.alchemistry.Util.createElement`
-## Loader
-This needs to be loaded with `#loader alchemistry`
+# Paquete
+`mods.alchemistry.Util.createElementUtil.createElement`
+## Cargador
+Esto debe cargarse con `#loader alchemistry`
 
 ## Metodos
-- **int atomicNumber** ID for new Element
-- **String Name** New Elements Name
-- **String Abbrebiation** New Elements Abbrebiation
-- **int red** Element red shade, RGB
-- **int green** Element green shade, RGB
-- **int blue** Element blue shade, RGB
+- **int atomicNumber** ID para el nuevo elemento
+- **Nombre de cadena** Nuevo nombre de elementos
+- **Abrebiación de cadenas** Abrebiación de nuevos elementos
+- **** Elemento rojo sombreado, RGB
+- **int verde** Elemento sombreado verde, RGB
+- **int. azul** Elemento azul sombreado, RGB
 
-## Creation
+## Creación
 ```zenscript
-mods.alchemistry.Util.createElement(int atomicNumber, String name, String abbreviation, int red, int green, int blue);
+mods.alchemistry.Atomizermods.alchemistry.Util.createElement(int atomicNumber, String name, String abbreviation, int red, int green, int blue);
 
 mods.alchemistry.Util.createElement(150,"vibranium","Vrb", 70, 90, 250);
+mods.alchemistry.Util.createElement(151,"unobtanium","Uno",30,54,69);Util.createElement(150,"vibranio","Vrb", 70, 90, 250);
 mods.alchemistry.Util.createElement(151,"unobtanium","Uno",30,54,69);
 ```
 
-## Notes
+## Notas
 
-- Please use lowercase names
-- Pre-existing atomic numbers cannot be overwritten
-- The '#loader alchemistry' line is required at the top of the file. This file can only be used to create elements and compounds, other recipes must be put in other files.
-- NOTE: As of v1.0.2, The mod Resource Loader must be used to include the image and model json for custom elements. If you would like to auto-generate these resources I have created a command-line JAR program [here](https://github.com/al132mc/alchemistry-resource-creator/releases) to do so.
+- Por favor use nombres en minúsculas
+- Los números atómicos preexistentes no se pueden sobrescribir
+- La línea '#loader alchemistry' es necesaria en la parte superior del archivo. Este archivo sólo puede ser usado para crear elementos y compuestos, otras recetas deben ser puestas en otros archivos.
+- NOTA: A partir de la v1.0.2, El Mod Resource Loader debe ser utilizado para incluir la imagen y modelo json para elementos personalizados. Si desea generar estos recursos automáticamente, he creado un programa JAR de línea de comandos [aquí](https://github.com/al132mc/alchemistry-resource-creator/releases) para hacerlo.

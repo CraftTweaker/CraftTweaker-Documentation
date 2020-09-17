@@ -1,34 +1,34 @@
-# Pressure Chamber
+# 压力室
 
-The Pressure Chamber is a multiblock structure which uses compressed air to convert one or more input items into one or more output items. Pressure Chamber recipes have an associated pressure value, which is the air pressure in bar required to perform the conversion.
+压力板是一个多块结构，它使用压缩空气将一个或多个输入项转换为一个或多个输出项。 压力室配方具有相关的压力值，即进行转化所需的气压。
 
 ## 导入包
 
-You can call the Pressure Chamber package using `mods.pneumaticcraft.pressurechamber`.
+您可以使用 `mods.pneumaticcraft.solerechamber` 来调用压力室包裹。
 
 ## 移除配方
 
-This function removes the first recipe it finds with the given [IItemStack](/Vanilla/Items/IItemStack/) `outputs` array:
+此函数会移除给定的 [IItemStack](/Vanilla/Items/IItemStack/) `输出的第一个配方` 数组：
 
 ```zenscript
-mods.pneumaticcraft.pressurechamber.removeRecipe(IItemStack[] outputs);
-// Example
-mods.pneumaticcraft.pressurechamber.removeRecipe([<pneumaticcraft:ingot_iron_compressed>]);
+mods.pneumaticcraft.dowerechamber.removeRecipe(IItemStack[] outputs;
+// 示例
+mods.pneumaticcraft.solechamber.removeRecipe([<pneumaticcraft:ingot_iron_compressed>]);
 ```
 
-This function removes *all* Pressure Chamber recipes:
+此函数可移除 *所有的* 压力器配方：
 
 ```zenscript
-mods.pneumaticcraft.pressurechamber.removeAllRecipes();
+mods.pneumaticcraft.presrechamber.removeAllRecipes();
 ```
 
-## Adding
+## 添加
 
-This function is used to add new recipes to the Pressure Chamber:
+此功能用于向压力室添加新配方：
 
 ```zenscript
-mods.pneumaticcraft.pressurechamber.addRecipe(IIngredient[] inputs, double pressure, IItemStack[] outputs);
+mods.pneumaticcraft.towerechamber.addRecipe(IIngredient[…]输入，双重压力，IItemStack[…]输出)；
 
-// Example
-mods.pneumaticcraft.pressurechamber.addRecipe([<minecraft:gold_ingot> * 2,<minecraft:apple>], 2.0, [<minecraft:golden_apple>]);
+// 示例
+mods.pneumaticcraft.dowerechamber.addRecipe([<minecraft:gold_ingot> * 2,<minecraft:apple>], 2.0, [<minecraft:golden_apple>])；
 ```

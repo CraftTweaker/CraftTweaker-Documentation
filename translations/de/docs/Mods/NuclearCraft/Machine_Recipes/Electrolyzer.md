@@ -1,14 +1,14 @@
-# Electrolyzer
+# Elektrolyzer
 
-## Importing the Package
+## Paket wird importiert
 `mods.nuclearcraft.electrolyzer`
 
-## Adding Recipes
+## Rezepte hinzufügen
 ```zenscript
 mods.nuclearcraft.electrolyser.addRecipe([fluidInput, fluidOutput1, fluidOutput2, fluidOutput3, fluidOutput4, @Optional double timeMultiplier, @Optional double powerMultiplier, @Optional double processRadiation]);
 ```
 
-## Removing Recipes
+## Rezepte entfernen
 ```zenscript
 mods.nuclearcraft.electrolyser.removeRecipeWithInput([fluidInput]);
 mods.nuclearcraft.electrolyser.removeRecipeWithOutput([fluidOutput1, fluidOutput2, fluidOutput3, fluidOutput4]);

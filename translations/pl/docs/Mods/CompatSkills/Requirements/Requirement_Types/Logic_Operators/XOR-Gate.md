@@ -1,10 +1,10 @@
 # XOR Operator
 
-An **XOR** gate combines two inputs and returns `TRUE` only if one of the inputs is `TRUE` and the other is `FALSE`.
+Bramka **XOR** łączy dwa wejścia i zwraca `TRUE` tylko wtedy, gdy jedna z wejść wynosi `TRUE` , a druga `FALSE`.
 
-| Input 1 | Input 2 | Output |
-| ------- | ------- | ------:|
-| 0       | 0       |      0 |
-| 0       | 1       |      1 |
-| 1       | 0       |      1 |
-| 1       | 1       |      0 |
+| Input 1 | Input 2 | Wyjście |
+| ------- | ------- | -------:|
+| 0       | 0       |       0 |
+| 0       | 1       |       1 |
+| 1       | 0       |       1 |
+| 1       | 1       |       0 |

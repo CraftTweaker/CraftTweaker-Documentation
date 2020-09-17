@@ -1,28 +1,28 @@
-# PlayerVisibility
+# Widoczność gracza
 
-This event is fired to determine the visibility of a player, i.e., whether or not they are close enough to be noticed by an attacker. The result of this event is used to calculate (with modifiers from Vanilla Minecraft for sneaking, etc) the range a player can get to a creature before that creature sees them.
+To wydarzenie jest wystrzelone, aby określić widoczność gracza, tj. czy są one wystarczająco bliskie, aby być zauważonym przez atakującego. Wynik tego wydarzenia jest używany do obliczania (z modyfikatorami z Vanilla Minecraft do skradania, itp) zasięg, jaki gracz może dotrzeć do stworzenia, zanim to stworzenie je zobaczy.
 
-While this can be used to increase the visibility range (if it were decreased by Minecraft or another mod), it cannot be increased above its maximum value (the standard target distance).
+Podczas gdy może to być użyte do zwiększenia zasięgu widoczności (jeśli został zmniejszony o Minecraft lub inny mod), nie można go zwiększyć powyżej jej maksymalnej wartości (standardowa odległość docelowa).
 
-## Event Class
-You will need to cast the event in the function header as this class:  
-`crafttweaker.event.PlayerVisibilityEvent`  
-You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
+## Klasa wydarzenia
+Musisz aktywować wydarzenie w nagłówku funkcji jako klasa:  
+`crafttweaker.event. layerVisibilityEvent`  
+Możesz oczywiście również [zaimportować](/AdvancedFunctions/Import/) klasę przed i wtedy użyć tej nazwy.
 
-## Event interface extensions
-PlayerVisibilityEvent Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+## Rozszerzenia interfejsu zdarzenia
+Zdarzenia PlayerVisibilityEvent zaimplementują następujące interfejsy i są również w stanie wywołać wszystkie swoje metody/pobierające/ustawiające:
 
-- [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
+- [Wydarzenie IPlayer](/Vanilla/Events/Events/IPlayerEvent/)
 
 
 ## ZenGetters/ZenSetters
-The following information can be retrieved/set during the event:
+Następujące informacje mogą być pobierane/ustawione podczas wydarzenia:
 
-| ZenGetter    | ZenSetter          | Type      |
-| ------------ | ------------------ | --------- |
-| `visibility` |                    | double    |
-|              | `modifyVisibility` | See note. |
+| ZenGetter    | ZenSetter              | Typ         |
+| ------------ | ---------------------- | ----------- |
+| `widoczność` |                        | podwójne    |
+|              | `ModyfikacjWidoczność` | Zob. uwaga. |
 
-## Note
+## Uwaga
 
-This value cannot be directly set. Calling `modifyVisibility` with a double value will replace the modifier with the result of `modifiy * double value`.
+Ta wartość nie może być bezpośrednio ustawiona. Wywołanie `modifyVisibility` wartością podwójną zastąpi modyfikator wynikiem `modyfikacji * podwójnej wartości`.

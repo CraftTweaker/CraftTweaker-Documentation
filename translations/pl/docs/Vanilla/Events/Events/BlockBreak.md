@@ -1,27 +1,27 @@
-# BlockBreakEvent
+# Wydarzenie BlockBreakcji
 
-The BlockBreak Event is fired whenever a block is being broken.  
-You can cancel the event to prevent the block from being broken.
+Wydarzenie BlockBreak jest uruchamiane za każdym razem, gdy blok jest uszkodzony.  
+Możesz anulować wydarzenie, aby zapobiec jego uszkodzeniu.
 
-## Event Class
+## Klasa wydarzenia
 
-You will need to cast the event in the function header as this class:  
-`crafttweaker.event.BlockBreakEvent`  
-You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
+Musisz aktywować wydarzenie w nagłówku funkcji jako klasa:  
+`crafttweaker.event. lockBreakEvent`  
+Oczywiście możesz również [zaimportować](/AdvancedFunctions/Import/) klasę przed i wtedy użyć tej nazwy.
 
-## Event interface extensions
+## Rozszerzenia interfejsu zdarzenia
 
-BlockBreak Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+Zdarzenia BlockBreak implementują następujące interfejsy i są w stanie również wywołać wszystkie swoje metody/getters/setters:
 
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
-- [IBlockEvent](/Vanilla/Events/Events/IBlockEvent/)
+- [Wydarzenie IBlock'a](/Vanilla/Events/Events/IBlockEvent/)
 
 ## ZenGetters
 
-The following information can be retrieved from the event:
+Z wydarzenia można uzyskać następujące informacje:
 
-| ZenGetter    | ZenSetter    | Type                                 |
-| ------------ | ------------ | ------------------------------------ |
-| `player`     |              | [IPlayer](/Vanilla/Players/IPlayer/) |
-| `isPlayer`   |              | bool                                 |
-| `experience` | `experience` | int                                  |
+| ZenGetter       | ZenSetter       | Typ                                  |
+| --------------- | --------------- | ------------------------------------ |
+| `gracz`         |                 | [IPlayer](/Vanilla/Players/IPlayer/) |
+| `isPlayer`      |                 | bool                                 |
+| `doświadczenie` | `doświadczenie` | odcień                               |

@@ -16,6 +16,6 @@ IEntityDrop представляет дроп [сущности](/Vanilla/Entiti
 | chance     | Возвращает шанс дропа.                                                              | float                                    | `drop.chance`     |
 | max        | Возвращает максимальное количество выброшенного предмета.                           | int                                      | `drop.max`        |
 | min        | Возвращает минимальное количество выброшенного предмета.                            | int                                      | `drop.min`        |
-| playerOnly | Returns whether the drop is playerOnly.                                             | boolean                                  | `drop.playerOnly` |
+| playerOnly | Возвращает ли падение только игроку.                                                | boolean                                  | `drop.playerOnly` |
 | range      | Возвращает промежуток от минимального до максимального числа выброшенного предмета. | IntegerRange                             | `drop.range`      |
 | stack      | Возвращает выброшенный предмет.                                                     | [IItemStack](/Vanilla/Items/IItemStack/) | `drop.stack`      |

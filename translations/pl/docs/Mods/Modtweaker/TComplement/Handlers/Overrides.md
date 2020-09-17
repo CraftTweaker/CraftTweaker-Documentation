@@ -1,23 +1,23 @@
-# Overrides
+# Nadpisywanie
 
-The Overrides package is used for adding/removing recipes from/to the melter Overrides.
+Pakiet nadpisujący jest używany do dodawania/usuwania przepisów z/do nadpisywania stopni.
 
-## Calling
+## Dzwonienie
 
-You can call the Overrides package using `mods.tcomplement.Overrides`
+Możesz wywołać pakiet nadpisywania za pomocą `mods.tcomplement.Overrides`
 
-## Overrides entry addition
+## Nadpisuje dodanie wpisu
 
 ```zenscript
-//mods.tcomplement.Overrides.addRecipe(ILiquidStack output, IItemStack input, @Optional int temp);
+//mods.tcomplement.Overrides.addRecipe(ILiquidStack wyjście wejściowe, IItemStack, @Optional int temp);
 mods.tcomplement.Overrides.addRecipe(<liquid:gold> * 100, <minecraft:gold_ingot>);
 mods.tcomplement.Overrides.addRecipe(<liquid:gold> * 100, <minecraft:gold_ingot>, 1000);
 ```
 
-## Overrides entry removal
+## Nadpisuje usunięcie wpisu
 
 ```zenscript
-//mods.tcomplement.Overrides.removeRecipe(ILiquidStack output, @Optional IItemStack input);
+//mods.tcomplement.Overrides.removeRecipe(ILiquidStack, @Optional IItemStack input);
 mods.tcomplement.Overrides.removeRecipe(<liquid:gold>);
 mods.tcomplement.Overrides.removeRecipe(<liquid:gold>, <minecraft:gold_ore>);
 ```

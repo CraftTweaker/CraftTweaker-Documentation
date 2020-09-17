@@ -1,24 +1,24 @@
-# Use Loops to make your script look better
+# Usa bucles para hacer que tu script se vea mejor
 
-## Problem
+## Problema
 
-We all have seen it: Scripts with more than 500 lines where it says 500 times `recipes.remove(item1);recipes.remove(item2),...`  
-Not only is this a pain to write, but it is possible that you spend hours debugging a little typo when the only exception you get is `error in recipes.zs: null`
+Todos lo hemos visto: Scripts con más de 500 líneas donde dice 500 veces `recetas.remove(item1);recipes.remove(item2),...`  
+No sólo es un dolor para escribir, pero es posible que pases horas depurando un poco de error tipográfico cuando la única excepción que obtienes es `error en las recetas. : nulo`
 
-## Solution
+## Solución
 
 My rule of thumb: When writing the exactly same command more than 10 times, with only 1 Parameter changing, I'll use a loop.
 
-So, instead of always typing out the functions, I declare one array containing all items and iterate through that one.
+Así que, en lugar de teclear siempre las funciones, declaro una matriz que contiene todos los elementos y iterar a través de ésta.
 
 ```zenscript
-import crafttweaker.item.IIngredient;
+importar crafttweaker.item.IIngredient;
 
 val Array = [
     item1,
     item2,
     item3,
-    ...
+...
 ] as IIngredient[];
 
 
@@ -27,15 +27,15 @@ for item in Array{
 }
 ```
 
-## Advantages
+## Ventajas
 
-- Your script becomes (in my opinion) easier to read
-- You know exactly where your script screws up
-- Last minute changes are really easy as all you need to do is adding or removing the item from the array.
+- Tu script se hace (en mi opinión) más fácil de leer
+- Sabes exactamente dónde está tu script
+- Los cambios de último minuto son realmente fáciles ya que todo lo que necesitas hacer es añadir o quitar el elemento de la matriz.
 
-## Disadvantages
+## Desventajas
 
-- Only works when there's only a few parameters changing
-- You could screw up your script without knowing it, by say, casting the array wrong
-- One error in the array makes the whole array fail and nothing will be done at all.
-- You might receive cryptic error messages because of the array being created the wrong way.
+- Solo funciona cuando solo hay unos pocos parámetros cambiando
+- Podrías programar tu script sin saberlo, por ejemplo, emitiendo la matriz erróneamente
+- Un error en la matriz hace que toda la matriz falle y no se hará nada en absoluto.
+- Es posible que reciba mensajes de error crípticos debido a que la matriz ha sido creada de forma incorrecta.

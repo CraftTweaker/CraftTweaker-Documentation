@@ -1,16 +1,17 @@
 # Melter
 
-## Importing the Package
-`mods.nuclearcraft.Melter`
+## パッケージのインポート
+`mods.nuclearcraft.MelterMelter`
 
-## Adding Recipes
+## レシピを追加中
 ```zenscript
-mods.nuclearcraft.Melter.addRecipe(IIngredient itemInput, ILiquidStack fluidOutput, @Optional double timeMultiplier, @Optional double powerMultiplier, @Optional double processRadiation);
+mods.nuclearcraft.Supercoolermods.nuclearcraft.Melter.addRecipe(IIngredient itemInput, ILiquidStack fluidOutput, @Optional double timeMultiplier, @Optional double powerMultiplier, @Optional double processRadiation);
 ```
 
-## Removing Recipes
+## レシピを削除
 ```zenscript
-mods.nuclearcraft.Melter.removeRecipeWithInput(IIngredient itemInput);
+mods.nuclearcraft.SupercoolerMelter.removeRecipeWithInput(IInput);
+mods.nuclearcraft.mods.nuclearcraft.Melter.removeRecipeWithInput(IIngredient itemInput);
 mods.nuclearcraft.Melter.removeRecipeWithOutput(ILiquidStack fluidOutput);
-mods.nuclearcraft.Melter.removeAllRecipes();
+mods.nuclearcraft.Melter.removeAllRecipes();Melter.removeAllRecipes();
 ```

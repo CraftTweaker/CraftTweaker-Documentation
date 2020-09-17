@@ -1,16 +1,16 @@
 
-### Class
+### Classe
 
 ```zenscript
-import mods.roots.SummonCreatures;
+Importer mods.roots.Invoquer des créatures ;
 ```
 
-#### Methods
+#### Méthodes
 
 ```zenscript
 void addEntity(
-  IEntityDefinition entity, // the entity to be summoned
-  IIngredient[] ingredients // a list of ingredients used for the summoning
+  IEntityDefinition entity, // l'entité à invoquer
+  IIngredient[] ingredients // une liste d'ingrédients utilisés pour l'invocation
 );
 ```
 
@@ -20,7 +20,7 @@ void addEntity(
 
 ```zenscript
 void removeEntity(
-  IEntityDefinition entity // the entity to remove from summoning via recipe
+  IEntityDefinition entity // l'entité à supprimer de l'invocation via la recette
 );
 ```
 
@@ -30,7 +30,7 @@ void removeEntity(
 
 ```zenscript
 void removeLifeEssence(
-  IEntityDefinition entity // the entity to remove life essence for
+  IEntityDefinition entity // l'entité pour supprimer l'essence de vie pour
 );
 ```
 
@@ -40,7 +40,7 @@ void removeLifeEssence(
 
 ```zenscript
 void addLifeEssence(
-  IEntityDefinition entity // the entity to add life essence for
+  IEntityDefinition entity // l'entité pour ajouter de l'essence de vie pour
 );
 ```
 
@@ -56,7 +56,7 @@ void clearLifeEssence();
 ---
 
 
-### Examples
+### Exemples
 
 ```zenscript
 import mods.roots.SummonCreatures;

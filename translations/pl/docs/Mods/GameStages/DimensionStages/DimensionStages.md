@@ -1,8 +1,8 @@
-# Dimension Stages
+# Etapy Wymiaru
 
-This mod is an addon for the [GameStages API](https://minecraft.curseforge.com/projects/game-stages). Dimension Stages allows access to dimensions to be gated behind custom progression systems that are set in place by the modpack creator. If a player does not have access to a stage, they will not be able to enter that dimension. Their pets, and projectiles, mounts and dropped items will also be prevented from entering a restricted dimension. You can find more info about Dimension Stages [here](https://minecraft.curseforge.com/projects/dimension-stages)
+Ten mod jest dodatkiem dla [GameStages API](https://minecraft.curseforge.com/projects/game-stages). Etapy wymiaru umożliwiają dostęp do wymiarów za niestandardowymi systemami progresji ustawionymi przez twórcę paczki modów. Jeśli gracz nie ma dostępu do sceny, nie będzie mógł wejść w ten wymiar. Ich zwierzęta domowe oraz pociski, mocowania i upuszczone przedmioty nie będą również mogły wchodzić w ograniczony wymiar. Więcej informacji na temat Etapów Wymiaru [znajdziesz tutaj](https://minecraft.curseforge.com/projects/dimension-stages)
 
 ```zenscript
-//mods.DimensionStages.addDimensionStage(String stage, int dimensionId);
+//mods.DimensionStages.addDimensionStage(etap string, int dimensionId);
 mods.DimensionStages.addDimensionStage("nether", -1);
 ```

@@ -1,38 +1,38 @@
 # IBlockPos
 
-An IBlockPos object represents a position in the game.
+Ein IBlockPos Objekt repräsentiert eine Position im Spiel.
 
 ## Dieses Paket importieren
 
-It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
-`import mods.contenttweaker.BlockPos;`
+Es kann erforderlich sein, dass Sie das Paket importieren, wenn Sie irgendwelche Probleme haben. Seien Sie also besser sicher als entschuldigen und fügen Sie den Import hinzu.  
+`mods.contenttweaker.BlockPos;`
 
-## ZenMethods without parameters
+## ZenMethoden ohne Parameter
 
-| ZenMethod | ZenGetter | Rückgabetyp | Beschreibung                   |
-| --------- | --------- | ----------- | ------------------------------ |
-| getX()    | x         | int         | Returns the position's X value |
-| getY()    | y         | int         | Returns the position's Y value |
-| getZ()    | z         | int         | Returns the position's Z value |
+| ZenMethode | ZenGetter | Rückgabetyp | Beschreibung                        |
+| ---------- | --------- | ----------- | ----------------------------------- |
+| getX()     | x         | int         | Gibt den X-Wert der Position zurück |
+| getY()     | y         | int         | Gibt den Y-Wert der Position zurück |
+| getZ()     | z         | int         | Gibt den Z-Wert der Position zurück |
 
-## ZenMethods with parameters
+## ZenMethoden mit Parametern
 
-### Get Offset
+### Versatz holen
 
-Returns a new IBlockPos that is `offset` blocks into the `directionName` or `facing` direction.
+Gibt einen neuen IBlockPos zurück, der `Offset` Blöcke in die `Richtung` oder `in Richtung` zurück.
 
 `IBlockPos getOffset(String directionName, int offset);`
 
-`directionName` can take these values:
+`directionName` kann folgende Werte einnehmen:
 
-- "down"
-- "up"
-- "north"
-- "south"
-- "east"
-- "west"
+- "runter"
+- "Up"
+- "Nord"
+- "Süd"
+- "Osten"
+- "Westen"
 
 `IBlockPos getOffset(Facing facing, int offset)` Parameters:
 
-- [Facing](/Vanilla/World/IFacing/) facing → The direction
-- int offset → how many blocks in that direction?
+- [Angesicht](/Vanilla/World/IFacing/) nach → Richtung
+- int offset → Wie viele Blöcke in diese Richtung?

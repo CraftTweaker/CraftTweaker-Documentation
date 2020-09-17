@@ -4,7 +4,7 @@ A bracket handler is used to resolve [ZenTokens](/Dev_Area/ZenTokens/) inside `<
 In order to do that, ZS will add all tokens inside the brackets to a list and go through all registered bracket handlers to find one that does not return `null`.  
 The annotated class simply need to implement [IBracketHandler](https://github.com/jaredlll08/CraftTweaker/blob/1.12/CraftTweaker2-API/src/main/java/crafttweaker/zenscript/IBracketHandler.java).
 
-## Example:
+## 例
 
 [CraftTweaker Test Project Bracket Handler](https://github.com/jaredlll08/CraftTweaker/blob/1.12/CraftTweaker2-MC1120-Tests/src/main/java/crafttweaker/tests/wiki/BracketWiki.java)
 
@@ -42,9 +42,9 @@ public class BracketWiki implements IBracketHandler{
 }
 ```
 
-## What classes can be annotated || Additional Info
+## どのクラスに注釈を付けることができますか|| 追加情報
 
-- You can annotate all Java Classes that are an instance of [IBracketHandler](https://github.com/jaredlll08/CraftTweaker/blob/1.12/CraftTweaker2-API/src/main/java/crafttweaker/zenscript/IBracketHandler.java).
-- You can give the annotation a priority value (e.g. `priority = 100`). The higher the prio the earlier that specific bracket handler is checked: CrT Bracket Handlers normally have a priority of 100.
-- After declaring a class a ZenBracketHandler, you still need to register it. It is recommended that you use [`@ZenRegister`](/Dev_Area/ZenAnnotations/Annotation_ZenRegister/) for that.
-- If your bracket Handler cannot resolve the brackets or is not meant to resolve the bracket, you should return `null`
+- [IBracketHandler](https://github.com/jaredlll08/CraftTweaker/blob/1.12/CraftTweaker2-API/src/main/java/crafttweaker/zenscript/IBracketHandler.java) のインスタンスであるすべてのJavaクラスに注釈を付けることができます。
+- 注釈に優先度の値(例えば `priority = 100`)を与えることができます。 プリオが高いほど、特定のブラケットハンドラがチェックされます。CrTブラケットハンドラは通常100の優先順位を持ちます。
+- クラスに ZenBracketHandler を宣言した後でも登録する必要があります。 [`@ZenRegister`](/Dev_Area/ZenAnnotations/Annotation_ZenRegister/) を使用することをお勧めします。
+- ブラケットハンドラが括弧を解決できないか、括弧を解決するためのものではない場合は、 `null` を返す必要があります。

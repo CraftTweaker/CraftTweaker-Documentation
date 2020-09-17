@@ -1,24 +1,24 @@
-# Material Builder
+# 材料生成器
 
-Using this package you can create materials that you can then create tools with!
+使用这个包，你可以创建材料，然后用它来创建工具！
 
 ## 导入类
 
-It might be required for you to import the class if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
-`import mods.contenttweaker.tconstruct.MaterialBuilder;`
+如果您遇到任何问题，可能需要导入类 (例如铸造一个 [数组](/AdvancedFunctions/Arrays_and_Loops/)) 这样比抱歉更安全并添加导入。  
+`导入mods.contenttweiner.tconstruct.MaterialBuilder；`
 
-## Creating a Material
+## 创建材料
 
-First and foremost you will need to create a Material Builder.  
-This can be done using the static create method.
+首先，您需要创建材料生成器。  
+这可以使用静态创建方法。
 
 ```zenscript
-//mods.contenttweaker.tconstruct.MaterialBuilder.create(String identifier);
-val myMat = mods.contenttweaker.tconstruct.MaterialBuilder.create("kindlich_mat");
+//mods.contenttweeper.tconstruct.MaterialBuilder.create(String identier);
+val myMat = mods.contenttweiner.tconstruct.MaterialBuilder.create("kindlich_mat");
 ```
 
-Remember, that you will need to register the material after you've done your changes.  
-This can be done with the `register` method which will return a [Material Representation](/Mods/ContentTweaker/Tinkers_Construct/Material/) of the new Material.
+请记住，您需要在完成更改后注册材料。  
+这可以通过 `注册` 方法完成，这些方法将返回一个 [材料表示](/Mods/ContentTweaker/Tinkers_Construct/Material/) 的新材料。
 
 ```zenscript
 myMat.register();
@@ -26,86 +26,86 @@ myMat.register();
 
 ## 参数
 
-You can set and get these properties using `myMaterial.name`.
+您可以使用 `myMaterial.name` 设置和获取这些属性。
 
-| Property           | 类型                                               | Additional notes                                             |
-| ------------------ | ------------------------------------------------ | ------------------------------------------------------------ |
-| identifier         | string                                           | Unique name                                                  |
-| color              | int                                              |                                                              |
-| hidden             | bool                                             |                                                              |
-| liquid             | [ILiquidStack](/Vanilla/Liquids/ILiquidStack/)   | Smeltery output                                              |
-| craftable          | bool                                             | Can be created in the part builder                           |
-| castable           | bool                                             | Can be created using casts. Requires liquid to be set!       |
-| representativeItem | [IItemStack](/Vanilla/Items/IItemStack/)         | Shown item in the tinkers' manual                            |
-| representativeOre  | [IOreDictEntry](/Vanilla/OreDict/IOreDictEntry/) | Shown if representativeItem is null                          |
-| shard              | [IItemStack](/Vanilla/Items/IItemStack/)         | Used instead of the tinker's shard item in the part builder. |
-| localizedName      | string                                           | The shown name                                               |
+| 财产            | 类型                                               | 附加注释              |
+| ------------- | ------------------------------------------------ | ----------------- |
+| identifier    | string                                           | 唯一名称              |
+| 颜色            | int                                              |                   |
+| hidden        | 布尔值                                              |                   |
+| 液体            | [ILiquidStack](/Vanilla/Liquids/ILiquidStack/)   | 冶炼输出              |
+| 可合成的          | bool                                             | 可以在部件生成器中创建       |
+| 可写            | bool                                             | 可以使用连铸创建。 需要设置液体！ |
+| 代表性项目         | [IItemStack](/Vanilla/Items/IItemStack/)         | 在罐头手册中显示物品        |
+| 代表            | [IOREDictentre](/Vanilla/OreDict/IOreDictEntry/) | 如果代表项目无效则显示       |
+| 碎纸箱           | [IItemStack](/Vanilla/Items/IItemStack/)         | 使用而不是部件构造器中的罐头碎片。 |
+| localizedName | 字符串                                              | 显示的名称             |
 
-## Calculated Properties
+## 计算的属性
 
-### ItemLocalizer
+### 项目本地化
 
-You can use this function to calculate the material names if you need that to be the case.  
-Uses a [Material Representation](/Mods/ContentTweaker/Tinkers_Construct/Material/) of this material and the name of the tool that's being renamed (e.g. "Mattock")
+如果你需要使用此函数来计算材料名称。  
+使用 [材质代表](/Mods/ContentTweaker/Tinkers_Construct/Material/) 此材料和被重命名的工具名称 (例如"Mattock")
 
 ```zenscript
-myMAt.itemLocalizer = function(thisMaterial, itemName){return "Cool " + itemName;};
+myMAt.itemLocalizer = function(thisMaterial, itemName){return "酷" + itemName;};
 ```
 
-## Add Material Items
+## 添加材料项
 
-If you use the given item in the part builder, you can set how many materialpoints that will give, or how much the item will repair.
+如果您在部件构建器中使用给定的项目， 你可以设置将提供多少材料点或修复多少物品。
 
 ```zenscript
-//myMaterial.addItem(IIngredient item, @Optional(1) int amountNeeded, @Optional(144) int amountMatched));
+///myMaterial.addItem(Ingredient item, @Optional(1) int amountNeed, @Optional(144) int amountMatched));
 myMaterial.addItem(<item:minecraft:iron_pickaxe>);
 myMaterial.addItem(<item:minecraft:iron_block>, 4, 288);
 
-//myMaterial.removeItem(IItemStack item);
+///myMaterial.removeItem(ItemStack item);
 myMaterial.removeItem(<minecraft:iron_block>);
 ```
 
-- `item` is the item that is matched against. You can use [Item Conditions](/Vanilla/Items/Item_Conditions/) but no Transformers. 
-- `amountNeeded` is the amount of items that is matched against. You can split them over all the slots the toolforge provides, which also allows you to go above 64. In the second example above, you need 4 iron blocks per addition. Defaults to 1.
-- `amountMatched` is the amount of material points added per `amountNeeded`. In the second example above four iron blocks give two material points. Defaults to 144 (one ingot/one Material value).
-- If you use the `remove function`, it will remove all trait ingredients that match for the item.
+- `项目` 是匹配的物品。 您可以使用 [项目条件](/Vanilla/Items/Item_Conditions/) 但没有变压器。 
+- `数量` 是匹配的项目数量。 你可以将它们拆分到工具构造提供的所有位置，这也允许你超过64。 在上面的第二个例子中，你需要每个添加4个铁块。 默认值为 1。
+- `数量匹配` 是按 `数量添加的物质点数。需要`。 在上面的第二个例子中，铁块给出了两个重要点。 默认值为144(1个英寸/1个物料值)。
+- 如果您使用 `移除函数`，它将会移除与项目匹配的所有特性成分。
 
-## Material Traits
+## 材料特性
 
-You can add a trait to the material.  
-All items made from this material will then have this trait.  
-Uses a String with the identifier of the trait, and an optional `dependency` string which will tell you which itemTypes should be affected by the trait.  
-Alternatively, you can use a [Trait Representation](/Mods/ContentTweaker/Tinkers_Construct/Trait/), though that only works if the trait is already initialized by the time CoT runs (so most likely only for custom traits). Possible values for `dependency` are:
+您可以将特性添加到材料中。  
+此材料制作的所有项目都将具有此特性。  
+使用一个带有特性标识符的字符串 和可选的 `依赖于` 字符串将告诉您哪个项目类型应该受到特性的影响。  
+或者，您可以使用 [特性表示](/Mods/ContentTweaker/Tinkers_Construct/Trait/)但只有当特性在运行时间CoT时已经初始化(这很可能只适用于自定义特性)时，它才会起作用。 `依赖程度` 的可能值是：
 
-- `null` (default) → All items, unless that dep already has other traits.
+- `null` (默认) → 所有项目，除非该减速已经具有其他特性。
 - `"head"`
-- `"handle"`
-- `"extra"`
-- `"bow"`
-- `"bowstring"`
-- `"projectile"`
+- `"句柄"`
+- `“额外”`
+- `“bow”`
+- `“bowstring”`
+- `“投影”`
 - `"shaft"`
-- `"fletching"`
+- `“逃跑”`
 
 ```zenscript
 myMaterial.addMaterialTrait("fiery");
 myMaterial.addMaterialTrait("fiery", "bowstring");
 ```
 
-You can remove materialTraits as well (which is especially useful when doing batch materials).  
-You remove them using their identifier string and an optional dependency.  
-If you omit the dependency or use `null` all traits with that identifier will be removed.
+您也可以删除材料特性(在做批处理材料时特别有用)。  
+您使用他们的标识符字符串和可选的依赖关系移除他们。  
+如果您忽略依赖关系或使用 `null` 所有带该标识符的特性将被删除。
 
 ```zenscript
-//myMaterial.remove(String identifier, @Optional String dependency);
+///myMaterial.remove(String identificer, @Optional String Dependency);
 myMaterial.remove("cactus");
 myMaterial.remove("cactus", "bowstring");
 ```
 
-## Material Stats
+## 材料统计
 
-In order for TiCon to build your materials, it needs to know the material stats.  
-Only tooltypes whose stat has been added will be built!
+为了让TiCon能够构建您的材料，它需要知道材料统计信息。  
+只有添加了状态的工具类型才能建立！
 
 ```zenscript
 <br />myMat.addHeadMaterialStats(int durability, float miningSpeed, float attackDamage, int harvestLevel);
@@ -140,38 +140,38 @@ myMat.addProjectileMaterialStats();
 myMat.removeProjectileMaterialStats();
 ```
 
-## Example
+## 例子
 
 ```zenscript
-#loader contenttweaker
+#loader contenttnowl
 #modloaded tconstruct
 
-val testMat = mods.contenttweaker.tconstruct.MaterialBuilder.create("kindlich_mat");
-testMat.color = 0x8e661b;
-testMat.craftable = true;
-testMat.liquid = <liquid:lava>;
+valal testMat = mods.contenttweeper.tconstruct.MaterialBuilder.create(“kindlich_mat”)；
+testMat.color = 0x8e661b；
+testMat.craftable = true；
+testMat. iquid = <liquid:lava>;
 testMat.castable = true;
 testMat.addItem(<item:minecraft:comparator>);
-testMat.addItem(<item:minecraft:repeater>, 1, 2);
-testMat.addItem(<item:minecraft:red_flower:4>);
-testMat.representativeItem = <item:minecraft:red_flower:4>;
-testMat.addHeadMaterialStats(100, 1.5f, 5.5f, 5);
+testMat. ddItem(<item:minecraft:repeater>, 1, 2);
+testMat.additem(<item:minecraft:red_flower:4>);
+testMat.representativeitem = <item:minecraft:red_flower:4>;
+testMat. ddHeadMaterialStats(100, 1.5f, 5.5f, 5.5f, 5);
 testMat.addHandleMaterialStats(0.3, 500);
 testMat.addBowStringMaterialStats(0.5f);
-testMat.addMaterialTrait(<ticontrait:kindlich_test>, "bowstring");
-testMat.addMaterialTrait(<ticontrait:kindlich_test>, "head");
-testMat.addMaterialTrait("blasting", "bowstring");
-testMat.addMaterialTrait("blasting", "head");
+testMat.addMat.MaterialTrait(<ticontrait:kindlich_test>, "bowstring");
+testMat. ddMat.addMaterialTrait(<ticontrait:kindlich_test>, "head");
+testMat.addMaterialTrait("爆破", "bowstring");
+testMat. ddMaterialTrait("爆破", "head");
 
-//null (or not specifying that parameter at all) means that this is a default trait.
-//Default traits are only queried when no other traits are added to that material type.
-//In this case, the dense trait will only be on toolrods, because bowstrings and heads already have other traits.
+/null (或根本没有指定该参数) 表示这是一个默认特性。
+///默认特性仅在没有其他特性添加到该物质类型时才会被查询。
+///在这种情况下，密度特性只会在工具棒上，因为弓箭头和磁头已经有其他特性。
 testMat.addMaterialTrait("dense", null);
 
-//Faulty, should error, though only during init, as then the strings will be checked.
+//Faulty, 应该出错，尽管只是在输入过程中，当时将检查字符串。
 testMat.addMaterialTrait("dance", null);
 
-testMat.itemLocalizer = function(thisMaterial, itemName){return "Cool " + itemName;};
+testMat.itemLocalizer = function(thisMat, itemLocalizer = function(thisMat, itemName){return "酷" + itemName;};
 testMat.localizedName = "Wicked";
 testMat.register();
 ```

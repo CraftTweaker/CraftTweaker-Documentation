@@ -1,25 +1,25 @@
-# NOR Operator
+# Operator NOR
 
-A **NOR** gate is an inverted **OR** gate. This is the same as using the output of the **OR** gate as the input to the **NOT** gate. This means that the **NOR** gate returns `TRUE` only when both inputs are `FALSE`.
+Bramka **NOR** jest bramką **LUB**. To samo co na wyjściu bramki **OR** co na wejściu bramki **NOT**. Oznacza to, że bramka **NOR** zwraca `TRUE` tylko wtedy, gdy oba wejścia są `FALSE`.
 
-| Input 1 | Input 2 | Output |
-| ------- | ------- | ------:|
-| 0       | 0       |      1 |
-| 0       | 1       |      0 |
-| 1       | 0       |      0 |
-| 1       | 1       |      0 |
+| Input 1 | Input 2 | Wyjście |
+| ------- | ------- | -------:|
+| 0       | 0       |       1 |
+| 0       | 1       |       0 |
+| 1       | 0       |       0 |
+| 1       | 1       |       0 |
 
-    Empty Example:
+    Pusty przykład:
     nor|[]~[]
     
-    Filled-In Example:
-    nor|[reskillable:mining|5]~[reskillable:gathering|5]
+    Wypełniono przykład:
+    nor|[przekwalifikowalne :mining|5]~[przekwalifikowalne :gathering|5]
     
 
-## Use-Case
+## Przycisk
 
-Only allow using a wooden shovel until the player gets mining or gathering level 5:
+Zezwalaj tylko na używanie drewnianej łopaty, dopóki gracz nie wydobywa lub nie zbierze 5 poziomu:
 
 ```zenscript
-addRequirement(<minecraft:wooden_shovel:*>, "nor|[reskillable:mining|5]~[reskillable:gathering|5]");
+addRequirement(<minecraft:wooden_shovel:*>, "nor|[przekwalifikowalne:mining|5]~[przekwalifikowalne:gromadzenie|5]");
 ```

@@ -1,13 +1,13 @@
-# IMinecartEvent
+# Wydarzenie IMinecart
 
-This event is extended by all events involving Minecarts.
+To wydarzenie jest rozszerzone o wszystkie wydarzenia związane z Minecartami.
 
-## Importing the class
-It might be required to [import](/AdvancedFunctions/Import/) the class to avoid errors.  
+## Importowanie klasy
+Może być wymagane [importowanie](/AdvancedFunctions/Import/) klasy, aby uniknąć błędów.  
 `import crafttweaker.event.IMinecartEvent;`
 
-## What can be done with them?
+## Co można z nimi zrobić?
 
-| name     | type                                  |
+| Nazwa    | typ                                   |
 | -------- | ------------------------------------- |
 | minecart | [IEntity](/Vanilla/Entities/IEntity/) |

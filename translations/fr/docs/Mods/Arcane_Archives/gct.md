@@ -1,16 +1,16 @@
-### Class
+### Classe
 
 ```zenscript
-import mods.arcanearchives.GCT;
+Importer mods.arcanearchives.GCT ;
 ```
 
-#### Methods
+#### Méthodes
 
 ```zenscript
 void addRecipe(
-  string name,         // the recipe name
-  IItemStack output,   // the output as an itemstack
-  IIngredient[] inputs // the inputs as an array of ingredients
+  string name, // the recipe name
+  IItemStack output, // la sortie en tant que itemstack
+  Ingredient[] inputs // les entrées en tant que tableau d'ingrédients
 );
 ```
 
@@ -18,7 +18,7 @@ void addRecipe(
 
 ```zenscript
 void removeRecipe(
-  IItemStack output // the output itemstack to be removed (quantity must match)
+  IItemStack sortie // le itemstack de sortie à supprimer (la quantité doit correspondance)
 );
 ```
 
@@ -26,25 +26,25 @@ void removeRecipe(
 
 ```zenscript
 void replaceRecipe(
-  string name,         // the recipe name (must already exist)
-  IItemStack output,   // the output as an itemstack
-  IIngredient[] inputs // the inputs as an array of ingredients
+  string name, // le nom de la recette (doit déjà exister)
+  IItemStack sortie, // la sortie en tant que itemstack
+  Ingredient[] inputs // les entrées en tant que tableau d'ingrédients
 );
 ```
 
 * * *
 
-### Examples
+### Exemples
 
 ```zenscript
 import mods.arcanearchives.GCT;
 
-// Removes the recipe for radiant dust
+// Supprime la recette de poussière rayonnante
 GCT.removeRecipe(<arcanearchives:radiant_dust>*2);
 
-// Adds a new recipe for radiant dust
-GCT.addRecipe("radiant_dust", <arcanearchives:radiant_dust>*2, [<minecraft:flint>, <arcanearchives:raw_quartz>]);
+// Ajoute une nouvelle recette pour la poussière rayonnante
+GCT. ddRecipe("radiant_dust", <arcanearchives:radiant_dust>*2, [<minecraft:flint>, <arcanearchives:raw_quartz>]);
 
-// Replaces the shaped radiant quartz recipe without disordering the GCT screen
-GCT.replaceRecipe("shaped_quartz", <arcanearchives:shaped_quartz>, [<arcanearchives:raw_quartz>*10]);
+// Remplace la recette de quartz rayonnant sans déclasser l'écran GCT
+GCT. eplaceRecipe("shaped_quartz", <arcanearchives:shaped_quartz>, [<arcanearchives:raw_quartz>*10]);
 ```

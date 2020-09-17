@@ -1,26 +1,26 @@
 # CommandEvent
 
-The Command Event is fired whenever a command is executed. You can react to the command by providing a command handler. See [Crafttweaker examples](https://github.com/CraftTweaker/CraftTweaker-Examples/blob/master/crafttweaker/events/commandEvent/SendMessageOnSyntaxCommand/SendMessageOnSyntaxCommand.zs) for an example.
+Command Eventは、コマンドが実行されるたびに発生します。 コマンドハンドラを提供することで、コマンドに反応することができます。 例については [Crafttweaker examples](https://github.com/CraftTweaker/CraftTweaker-Examples/blob/master/crafttweaker/events/commandEvent/SendMessageOnSyntaxCommand/SendMessageOnSyntaxCommand.zs) を参照してください。
 
-## Event Class
+## イベントクラス
 
-You will need to cast the event in the function header as this class: `crafttweaker.event.CommandEvent`. It is advised to [import](/AdvancedFunctions/Import/) the class
+You will need to cast the event in the function header as this class: `crafttweaker.event.CommandEvent`. クラスを [インポート](/AdvancedFunctions/Import/) することをお勧めします
 
     import crafttweaker.event.CommandEvent;
     
 
-## Event interface extensions
+## イベントインターフェースの拡張
 
-Command event implements the following interfaces:
+Command イベントは、以下のインターフェイスを実装します。
 
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 
 ## ZenGetters/ZenSetters
 
-The following information ca be retrieved/set during the event:
+イベント中に取得/設定される以下の情報
 
-| ZenGetter       | ZenSetter    | Type                                                |
-| --------------- | ------------ | --------------------------------------------------- |
-| `commandSender` | no           | [ICommandSender](/Vanilla/Commands/ICommandSender/) |
-| `command`       | no           | [ICommand](/Vanilla/Commands/ICommand/)             |
-| `parameters`    | `parameters` | string array                                        |
+| ZenGetter       | ZenSetter | タイプ                                                 |
+| --------------- | --------- | --------------------------------------------------- |
+| `commandSender` | いいえ       | [ICommandSender](/Vanilla/Commands/ICommandSender/) |
+| `(Command)`     | いいえ       | [ICommand](/Vanilla/Commands/ICommand/)             |
+| `パラメータ`         | `パラメータ`   | 文字列配列                                               |

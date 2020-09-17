@@ -1,16 +1,16 @@
-# Alloy Furnace
+# 合金熔化
 
-## Importing the Package
-`mods.nuclearcraft.AlloyFurnace`
+## 导入软件包
+`nuclearcraft。合金熔化`
 
-## Adding Recipes
+## 添加配方
 ```zenscript
-mods.nuclearcraft.AlloyFurnace.addRecipe(IIngredient itemInput1, IIngredient itemInput2, IIngredient itemOutput, @Optional double timeMultiplier, @Optional double powerMultiplier, @Optional double processRadiation);
+nuclearcraft。AlloyFurnace.addRecipe(IIngredient itemInput1, IIngredient itemInput2, IIngredient itemOutput, @Optional double timeMultiplier, @Optional double poweraller, Multiplier, @Optional double processRadi);
 ```
 
-## Removing Recipes
+## 删除配方
 ```zenscript
-mods.nuclearcraft.AlloyFurnace.removeRecipeWithInput(IIngredient itemInput1, IIngredient itemInput2);
-mods.nuclearcraft.AlloyFurnace.removeRecipeWithOutput(IIngredient itemOutput);
-mods.nuclearcraft.AlloyFurnace.removeAllRecipes();
+nuclearcraft。AlloyFurnace.removeRecipeWidInput(IIngredient itemInput1, IIngredient itemInput2);
+mods.nuclearcraft.AlloyFurnace.removeRecipeWOutput(IIngredient itemOut)；
+mods.nuclearcraft。a. AlloyFurnace.removeAllRecipes();
 ```

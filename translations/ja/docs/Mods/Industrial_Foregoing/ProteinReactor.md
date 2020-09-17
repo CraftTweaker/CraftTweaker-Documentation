@@ -1,12 +1,12 @@
-# Protein Reactor
+# タンパク質リアクタ
 
-### Importing
+### インポート中
 
 ```zenscript
-import mods.industrialforegoing.ProteinReactor;
+import mods.industrialforgoing.ProteinReactor;
 ```
 
-### Adding
+### 追加中
 
 ```zenscript
 ProteinReactor.add(IItemStack input);
@@ -14,7 +14,7 @@ ProteinReactor.add(IItemStack input);
 ProteinReactor.add(<minecraft:diamond>);
 ```
 
-### Removing
+### 削除中
 
 ```zenscript
 ProteinReactor.remove(IItemStack input);

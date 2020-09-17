@@ -1,27 +1,27 @@
 # IItemRightClick
 
-The IItemRightClick function can be added to an [Item](/Mods/ContentTweaker/Vanilla/Creatable_Content/Item/) and will be triggered when a user does rightclick with the item selected in his primary hand.
+Funkcja IItemRightClick może zostać dodana do elementu [](/Mods/ContentTweaker/Vanilla/Creatable_Content/Item/) i zostanie uruchomiona, gdy użytkownik kliknie prawym przyciskiem myszy na element wybrany w jego podstawowej ręce.
 
-## Importing the package
+## Importowanie pakietu
 
-It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
-`import mods.contenttweaker.IItemRightClick;`
+Może być wymagane zaimportowanie pakietu, jeśli napotkasz jakieś problemy, więc lepiej być bezpiecznym niż przepraszamy i dodać import.  
+`zaimportuj mods.contenttweaker.IItemRightClick;`
 
-## Parameters
+## Parametry
 
-The IItemRightClick function is a function with the following parameters:
+Funkcja IItemRightClick jest funkcją o następujących parametrach:
 
-- [IMutableItemStack](/Mods/ContentTweaker/Vanilla/Types/Item/IMutableItemStack/) itemStack → The item that is right-clicked
-- [IWorld](/Mods/ContentTweaker/Vanilla/Types/World/IWorld/) world → The world the player is in
-- [ICTPlayer](/Mods/ContentTweaker/Vanilla/Types/Player/ICTPlayer/) player → The player doing the right-click
-- String hand → Either "OFF_HAND" or "MAIN_HAND"
+- [IMutableItemStack](/Mods/ContentTweaker/Vanilla/Types/Item/IMutableItemStack/) itemStack → Przedmiot, który jest kliknięty prawym przyciskiem myszy
+- [IWorld](/Mods/ContentTweaker/Vanilla/Types/World/IWorld/) Świat → Świat, w którym gracz jest
+- [ICTPlayer](/Mods/ContentTweaker/Vanilla/Types/Player/ICTPlayer/) gracz → Gracz wykonujący prawe kliknięcie
+- String ręka → "OFF_HAND" lub "MAIN_HAND"
 
-The function needs to return either `"SUCCESS"`, `"PASS"` or `"FAIL"`
+Funkcja musi zwrócić `"SUCCESS"`, `"PASA"` lub `"FAIL"`
 
-## Example
+## Przykład
 
 ```zenscript
-zsItem.itemRightClick = function(stack, world, player, hand) {
+zsItem.itemRightClick = function(stack, Świat, gracz, ręka) {
     Commands.call("scoreboard players set @p name 5", player, world);
     return "Pass";
 };

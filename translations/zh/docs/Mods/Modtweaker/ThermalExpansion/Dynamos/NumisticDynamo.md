@@ -1,37 +1,37 @@
 # Numistic Dynamo
 
-## Import the package
+## 导入软件包
 
 To shorten method calls you can [import](/AdvancedFunctions/Import/) the package like so:
 
 ```zenscript
-import mods.thermalexpansion.NumisticDynamo;
+导入mods.thermalext.NumisticDyname;
 ```
 
-## Add Fuel
+## 添加燃料
 
 ```zenscript
-//mods.thermalexpansion.NumisticDynamo.addFuel(ILiquidStack stack, int energy);
-mods.thermalexpansion.NumisticDynamo.addFuel(<liquid:water>, 13);
+//mods.thermalext.NumisticDynamo.addFuel(StemStack, int energy);
+mods.thermalext.NumisticDynamo.addFuel(<minecraft:stick>, 13);
 ```
 
-## Add Gem Fuel
+## 添加宝石燃料
 
 ```zenscript
-//mods.thermalexpansion.NumisticDynamo.addGemFuel(ILiquidStack stack, int energy);
-mods.thermalexpansion.NumisticDynamo.addGemFuel(<liquid:water>, 13);
+//mods.thermallipl.NumisticDynamo.addGemFuel(StemStack, int energy);
+mods.thermalext.NumististicDynamo.addGemFuel(<minecraft:stick>, 13);
 ```
 
-## Remove Fuel
+## 移除燃料
 
 ```zenscript
-//mods.thermalexpansion.NumisticDynamo.removeFuel(ILiquidStack stack);
-mods.thermalexpansion.NumisticDynamo.removeFuel(<liquid:water>);
+//mods.thermallipl.NumisticDynamo.removeFuel(StemStack stack);
+mods.thermalabov.NumisticDynamo.removeFuel(<minecraft:stick>);
 ```
 
-## Remove Gem Fuel
+## 移除宝石燃料
 
 ```zenscript
-//mods.thermalexpansion.NumisticDynamo.removeGemFuel(ILiquidStack stack);
-mods.thermalexpansion.NumisticDynamo.removeGemFuel(<liquid:water>);
+//mods.thermallipl.NumisticDynamo.removeGemFuel(StemStack stack);
+mods.thermalabov.NumisticDynamo.removeGemFuel(<minecraft:stick>);
 ```

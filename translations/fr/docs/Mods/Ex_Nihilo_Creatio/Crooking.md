@@ -1,17 +1,17 @@
-# Crooking
+# Courroux
 
-## Package
+## Paquet
 ```zenscirpt
-mods.exnihilocreatio.Crook
+format@@0 mods.exnihilocreatio.Crook
 ```
-## Methods
+## Méthodes
 
-- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input** The input.
-- **[IItemStack](/Vanilla/Items/IItemStack/) reward** the item that has a chance to drop.
-- **Float chance** chance between 0-1.
-- **Float fortune chance** chance between 0-1.
+- **[Ingrédient](/Vanilla/Variable_Types/IIngredient/) d'entrée** L'entrée.
+- **[IItemStack](/Vanilla/Items/IItemStack/) récompense** l'objet qui a une chance de lâcher.
+- **Chance flottante** entre 0 et 1.
+- **Chance de chance de chance** flottante entre 0 et 1.
 
-## Addition
+## Ajouter
 
 ```zenscript
 mods.exnihilocreatio.Crook.addRecipe(IIngredient, IItemStack, Float, Float);
@@ -19,7 +19,7 @@ mods.exnihilocreatio.Crook.addRecipe(IIngredient, IItemStack, Float, Float);
 mods.exnihilocreatio.Crook.addRecipe(<minecraft:log>, <minecraft:plank>, 0.25, 0.5);
 ```
 
-## Removal
+## Retirer
 
 ```zenscript
 mods.exnihilocreatio.Crook.removeAll();

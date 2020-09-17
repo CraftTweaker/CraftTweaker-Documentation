@@ -1,14 +1,14 @@
-# Electrolyzer
+# 电解器
 
 ## 所属包名
 
 ```zenscript
-import mods.ic2.ClassicElectrolyzer;
+导入 mods.ic2.ClassicElectrolyzer;
 ```
 
 ## 使用方式
 
-### Add Both Recipe
+### 添加两个配方
 
 ```zenscripts
 mods.ic2.ClassicElectrolyzer.addBothRecipe(IItemStack output, IItemStack input, int energy);
@@ -17,10 +17,10 @@ mods.ic2.ClassicElectrolyzer.addBothRecipe(<minecraft:diamond>, <minecraft:dirt>
 ```
 
 - **[IItemStack](/Vanilla/Items/IItemStack/) output**
-- **[IItemStack](/Vanilla/Items/IItemStack/) input** Has to be an ItemStack, no oredict or other stuff.
-- **int energy** Total eu received from discharge part and total energy used for charge part of the recipe.
+- **[IItemStack](/Vanilla/Items/IItemStack/) 输入** 必须是一个物品，不需要修复或其他物品。
+- **整洁能源** 从排放部件中获得总能量和该配方充电部分所使用的总能量。
 
-### Add Charge Recipe
+### 添加充电配方
 
 ```zenscripts
 mods.ic2.ClassicElectrolyzer.addChargeRecipe(IItemStack output, IItemStack input, int energy);
@@ -29,22 +29,22 @@ mods.ic2.ClassicElectrolyzer.addChargeRecipe(<minecraft:emerald>, <minecraft:sto
 ```
 
 - **[IItemStack](/Vanilla/Items/IItemStack/) output**
-- **[IItemStack](/Vanilla/Items/IItemStack/) input** Has to be an ItemStack, no oredict or other stuff.
-- **int energy** Total eu used in the recipe.
+- **[IItemStack](/Vanilla/Items/IItemStack/) 输入** 必须是一个物品，不需要修复或其他物品。
+- **int energy** Total eu used in the 配方中。
 
-### Add Discharge Recipe
+### 添加放电配方
 
 ```zenscripts
-mods.ic2.ClassicElectrolyzer.addDischargeRecipe(IItemStack output, IItemStack input, int energy);
+mods.ic2.ClassicElectrolyzer.addDischarge Recipe(StemStack output, IItemStack input, int energy);
 
-mods.ic2.ClassicElectrolyzer.addDischargeRecipe(<minecraft:cobblestone> * 64, <minecraft:bedrock>, 500);
+mods.ic2.ClassicElectrolyzer.addDischarge Recipe(<minecraft:cobblestone> * 64, <minecraft:bedrock>, 500);
 ```
 
 - **[IItemStack](/Vanilla/Items/IItemStack/) output**
-- **[IItemStack](/Vanilla/Items/IItemStack/) input** Has to be an ItemStack, no oredict or other stuff.
-- **int energy** Total eu received from the recipe.
+- **[IItemStack](/Vanilla/Items/IItemStack/) 输入** 必须是一个物品，不需要修复或其他物品。
+- **整洁能** 从该配方中获得了总计eu 。
 
 ### 删除配方
 
-Simply disable the corresponding recipe in `config/ic2/ic2machineRecipes.json`.
+只需在 `config/ic2/ic2machineRecipes.json` 中禁用相应的配方。
 

@@ -1,8 +1,8 @@
-# Creative Tab Bracket Handler
+# Kreativer Tab-Bracket-Handler
 
-The Creative Tab Bracket Handler gives you access to the Creative Tabs in the game.
+Der Creative Tab Bracket Handler gibt dir Zugriff auf die Creative Tabs im Spiel.
 
-Creative Tabs are referenced in the creative tabs handler this way:
+Creative Tabs werden auf diese Weise im kreativen Tabs Handler referenziert:
 
 Vanilla
 
@@ -12,4 +12,4 @@ Vanilla
 <creativetab:misc>
 ```
 
-If the creative tab is found, this will return a [creative tab](/Mods/ContentTweaker/Vanilla/Creatable_Content/Creative_Tab/) Object.
+Wenn der kreative Tab gefunden wird, wird ein [Kreativen Tab](/Mods/ContentTweaker/Vanilla/Creatable_Content/Creative_Tab/) Objekt zurückgegeben.

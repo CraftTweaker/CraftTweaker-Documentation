@@ -1,20 +1,20 @@
-# Anvil Welding
+# Ambossschweißen
 
-## Package
+## Paket
 ```zenscript
-import mods.terrafirmacraft.Welding;
+importieren Sie mods.terrafirmacraft.Schweißen;
 ```
 
 ## Addition
 
 ```zenscript
-Welding.addRecipe(String registryName, IIngredient input1, IIngredient input2, IItemStack output, int minTier);
+Schweißen.addRecipe(String RegistryName, IIngredient input1, IIngredient input2, IItemStack Output, int minTier);
 ```
 
-## Removal
+## Entfernen
 
 ```zenscript
-Welding.removeRecipe(IItemStack output);
-Welding.removeRecipe(String registryName);
+Schweißen.removeRecipe(IItemStack Ausgabe);
+Schweißen.removeRecipe(String RegistryName);
 ```
-- As with anvil recipes, the same rules for input applies here. The input must be forgeable(see [ItemRegistry](/Mods/Terrafirmacraft/ItemRegistry) for registering forging capability to an item) and can't be stacked.
+- Wie bei Ambossrezepten gelten hier die gleichen Regeln für den Eingang. Der Eingabewert muss unverständlich sein (siehe [ItemRegistry](/Mods/Terrafirmacraft/ItemRegistry) zum Registrieren der Schmiedefähigkeit zu einem Item) und kann nicht gestapelt werden.

@@ -1,89 +1,89 @@
 # IBlockProperties
 
-BlockProperties are what makes a block distinctive from other blocks. It mainly serves as superinterface to [IBlockState](/Vanilla/Blocks/IBlockState/), that means all these functions are also available to all [IBlockState](/Vanilla/Blocks/IBlockState/) objects.
+BlockPropertiesは、ブロックを他のブロックから独特にするものです。 これは主に [IBlockState](/Vanilla/Blocks/IBlockState/)のスーパーインターフェイスとして機能します。つまり、これらの関数はすべての [IBlockState](/Vanilla/Blocks/IBlockState/) オブジェクトでも使用できます。
 
 ## パッケージのインポート
 
-It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
+問題が発生した場合は、パッケージをインポートする必要があるかもしれませんので、申し訳ありませんし、インポートを追加してください。  
 `import crafttweaker.block.IBlockProperties;`
 
-| ZenGetter                 | 戻り値                                     | Description                                                           |
-| ------------------------- | --------------------------------------- | --------------------------------------------------------------------- |
-| canProvidePower           | bool                                    | Returns if the refered block can provide Redstone Power               |
-| mobilityFlag              | string                                  | Returns the [mobility flag](/Vanilla/Blocks/IMobilityFlag/) as string |
-| material                  | [IMaterial](/Vanilla/Blocks/IMaterial/) | Returns the block's [material](/Vanilla/Blocks/IMaterial/)            |
-| causesSuffocation         | bool                                    | Returns whether the block can choke you.                              |
-| hasCustomBreakingProgress | bool                                    |                                                                       |
-| blockNormalCube           | bool                                    |                                                                       |
-| fullBlock                 | bool                                    |                                                                       |
-| fullCube                  | bool                                    |                                                                       |
-| normalCube                | bool                                    |                                                                       |
-| opaqueCube                | bool                                    |                                                                       |
-| translucent               | bool                                    |                                                                       |
-| useNeighborBrightness     | bool                                    |                                                                       |
+| ZenGetter                 | 戻り値                                     | 説明                                                      |
+| ------------------------- | --------------------------------------- | ------------------------------------------------------- |
+| canProvidePower           | bool                                    | 参照されたブロックがレッドストーンパワーを与えられるかどうかを返します                     |
+| mobilityFlag              | 文字列                                     | [モビリティフラグ](/Vanilla/Blocks/IMobilityFlag/) を文字列として返します。 |
+| 材料                        | [IMaterial](/Vanilla/Blocks/IMaterial/) | ブロックの [マテリアル](/Vanilla/Blocks/IMaterial/)を返します。         |
+| 原因Suffocation             | bool                                    | ブロックがあなたを窒息させるかどうかを返します。                                |
+| hasCustomBreakingProgress | bool                                    |                                                         |
+| blockNormalCube           | bool                                    |                                                         |
+| fullBlock                 | bool                                    |                                                         |
+| fullCube                  | bool                                    |                                                         |
+| normalCube                | bool                                    |                                                         |
+| opaqueCube                | bool                                    |                                                         |
+| 半透明の                      | bool                                    |                                                         |
+| useNeighborBrightness     | bool                                    |                                                         |
 
 ## ZenMethods
 
 ### isReplacable
 
 `boolean isReplaceable(IWorld world, IBlockPos pos);`  
-Parameters:
+パラメータ:
 
-- [IWorld](/Vanilla/World/IWorld/) world → The world to be checked in
-- [IBlockPos](/Vanilla/World/IBlockPos/) pos → The Block's position
+- [IWorld](/Vanilla/World/IWorld/) ワールド → チェックインするワールド
+- [IBlockPos](/Vanilla/World/IBlockPos/) pos → ブロックの位置
 
-Returns a boolean that sais whether the block can be replaced or not.
+ブロックを置き換えられるかどうかを sais のブール値を返します。
 
 ### getLightValue
 
 `int getLightValue(IWorld world, IBlockPos blockPos);`  
-Parameters:
+パラメータ:
 
-- [IBlockAccess](/Vanilla/World/IBlockAccess/) world → The world to be checked in
-- [IBlockPos](/Vanilla/World/IBlockPos/) pos → The Block's position
+- [IBlockAccess](/Vanilla/World/IBlockAccess/) ワールド → チェックインするワールド
+- [IBlockPos](/Vanilla/World/IBlockPos/) pos → ブロックの位置
 
-Returns an int representing the current light value at the given location.
+指定された位置の現在の光の値を表す int を返します。
 
 ### getWeakPower/GetStrongPower
 
 `int getWeakPower(IBlockAccess world, IBlockPos blockPos, Facing facing);`  
 `int getStrongPower(IBlockAccess world, IBlockPos blockPos, Facing facing);`  
-Parameters:
+パラメータ:
 
-- [IBlockAccess](/Vanilla/World/IBlockAccess/) world → The world to be checked in
-- [IBlockPos](/Vanilla/World/IBlockPos/) pos → The Block's position
+- [IBlockAccess](/Vanilla/World/IBlockAccess/) ワールド → チェックインするワールド
+- [IBlockPos](/Vanilla/World/IBlockPos/) pos → ブロックの位置
 - [Facing](/Vanilla/World/IFacing/) facing → The side to be checked Returns an int representing the current redstone power on this side.
 
 ### getComparatorInputOverride
 
 `int getComparatorInputOverride(IWorld world, IBlockPos blockPos);`
 
-Parameters:
+パラメータ:
 
-- [IWorld](/Vanilla/World/IWorld/) world → The world to be checked in
-- [IBlockPos](/Vanilla/World/IBlockPos/) pos → The Block's position
+- [IWorld](/Vanilla/World/IWorld/) ワールド → チェックインするワールド
+- [IBlockPos](/Vanilla/World/IBlockPos/) pos → ブロックの位置
 
-Returns an int representing the block's redstone comparator input override type.
+ブロックのレッドストーンコンパレータ入力オーバーライド型を表す int を返します。
 
-### Check if an entity can spawn on the block
+### ブロックにエンティティがスポーンできるかどうかを確認します。
 
 Use an [IEntity](/Vanilla/Entities/IEntity/).  
 Returns a bool.
 
 ```zenscript
-blockProperties.canEntitySpawn(IEntity entity);
+blockProperties.canEntitySpawn(Entity entity);
 ```
 
-### Get the actual BlockState
+### 実際のBlockStateを入手
 
-Use an [IBlockAccess](/Vanilla/World/IBlockAccess/) and an [IBlockPos](/Vanilla/World/IBlockPos/).  
-Returns a new IBlockProperties object.
+[IBlockAccess](/Vanilla/World/IBlockAccess/) と [IBlockPos](/Vanilla/World/IBlockPos/)を使用します。  
+新しい IBlockProperties オブジェクトを返します。
 
 ```zenscript
 blockProperties.getActualState(IBlockAccess world, IBlockPos pos);
 ```
 
-### Get a block's hardness
+### ブロックの硬さを得る
 
 Use [IWorld](/Vanilla/World/IWorld/) and an [IBlockPos](/Vanilla/World/IBlockPos/).  
 Returns a float.
@@ -92,16 +92,16 @@ Returns a float.
 blockProperties.getBlockHardness(IWorld world, IBlockPos pos);
 ```
 
-### Get a block's light opacy
+### ブロックの明るいopacyを取得する
 
 Use [IWorld](/Vanilla/World/IWorld/) and an [IBlockPos](/Vanilla/World/IBlockPos/).  
-Returns an int.
+returns an int.
 
 ```zenscript
 blockProperties.getLightOpacy(IWorld world, IBlockPos pos);
 ```
 
-### Get a player's Relative Block Harness
+### プレイヤーの相対ブロックハーネスを入手
 
 Use an [IPlayer](/Vanilla/Players/IPlayer/), an [IWorld](/Vanilla/World/IWorld/) and an [IBlockPos](/Vanilla/World/IBlockPos/).  
 Returns a float.
@@ -110,10 +110,10 @@ Returns a float.
 blockProperties.getPlayerRelativeBlockHardness(IPlayer player, IWorld world, IBlockPos pos);
 ```
 
-### Check if a side of the block is solid
+### ブロックの辺がソリッドかどうかを確認する
 
-Use an [IBlockAccess](/Vanilla/World/IBlockAccess/), an [IBlockPos](/Vanilla/World/IBlockPos/) and an [IFacing](/Vanilla/World/IFacing/) object.  
-Returns a bool.
+[IBlockAccess](/Vanilla/World/IBlockAccess/)、 [IBlockPos](/Vanilla/World/IBlockPos/) 、および [IFacing](/Vanilla/World/IFacing/) オブジェクトを使用します。  
+ブールを返します。
 
 ```zenscript
 blockProperties.isSideSolid(IBlockAccess world, IBlockPos pos, IFacing facing);

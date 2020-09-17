@@ -1,18 +1,18 @@
 # MobGriefing
 
-This event is fired whenever potential mob griefing is about to occur. It has a **result** which determines whether the default behaviour occurs or not:
+每当可能发生暴民悲痛时，就会发生这种事件。 它有 **个结果** 决定是否发生默认行为：
 
-- **allow**: the griefing is allowed
-- **deny**: the griefing is prevented
-- **default**: the griefing occurs according to Vanilla logic.
+- **允许**: 悲痛是允许的
+- **拒绝**: 防止悲痛。
+- **默认**: 悲痛是根据Vanilla 逻辑发生的。
 
-## Event Class
+## 事件类
 You will need to cast the event in the function header as this class:  
 `crafttweaker.event.MobGriefingEvent`  
 You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
 
-## Event interface extensions
-MobGriefing Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+## 事件界面扩展
+MobGriefing Events 实现了以下接口，并且能够调用他们所有的方法/getter/setter：
 
 - [ILivingEvent](/Vanilla/Events/Events/ILivingEvent/)
 - [IEventHasResult](/Vanilla/Events/Events/IEventHasResult/)

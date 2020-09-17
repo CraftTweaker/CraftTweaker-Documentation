@@ -1,18 +1,18 @@
 # EntityLivingSpawnEvent
 
-The EntityLivingSpawn Event is fired whenever an entity tries to join or leave a world.  
-It has one subclass, the EntityLivingExtendedSpawnEvent that also contains an [IMobSpawnerBaseLogic](/Vanilla/TileEntity/IMobSpawnerBaseLogic) reference.
+Das EntityLivingSpawn Event wird gefeuert, wenn eine EntityLivingSpawn versucht, einer Welt beizutreten oder sie zu verlassen.  
+Es hat eine Unterklasse, die EntityLivingExtendedSpawnEvent die auch eine [IMobSpawnerBaseLogic](/Vanilla/TileEntity/IMobSpawnerBaseLogic) Referenz enthält.
 
 ## Event-Klasse
 
-You will need to cast the event in the function header as this class:  
-`crafttweaker.event.EntityLivingSpawnEvent`  
-`crafttweaker.event.EntityLivingExtendedSpawnEvent`  
-You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
+Du musst das Ereignis als diese Klasse in den Funktionskopf verschieben:  
+`crafttweaker. vent.EntityLivingSpawnEvent`  
+`crafttweaker. vent.EntityLivingExtendedSpawnEvent`  
+Sie können natürlich auch [die Klasse vor](/AdvancedFunctions/Import/) importieren und dann diesen Namen verwenden.
 
 ## Erweiterte Event-Schnittellen
 
-EntityLivingSpawn Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+EntityLivingSpawn Events implementieren die folgenden Schnittstellen und können auch alle ihre Methoden/Getters/Setter aufrufen:
 
 - [ILivingEvent](/Vanilla/Events/Events/ILivingEvent/)
 
@@ -22,19 +22,19 @@ Die folgenden Informationen lassen sich von diesem Event (Ereignis) abrufen:
 
 | ZenGetter                 | Type                                                             |
 | ------------------------- | ---------------------------------------------------------------- |
-| `world`                   | [IWorld](/Vanilla/World/IWorld/)                                 |
+| `Welt`                    | [IWorld](/Vanilla/World/IWorld/)                                 |
 | `x`                       | float                                                            |
 | `y`                       | float                                                            |
 | `z`                       | float                                                            |
 |                           |                                                                  |
-| `spawner` (Extended Only) | [IMobSpawnerBaseLogic](/Vanilla/TileEntity/IMobSpawnerBaseLogic) |
+| `Spawner` (nur erweitert) | [IMobSpawnerBaseLogic](/Vanilla/TileEntity/IMobSpawnerBaseLogic) |
 
 ## Event-Funktionen
 
-The despawn event also offers three functions to change the event outcome:
+Das Despawn-Event bietet auch drei Funktionen um das Ergebnis zu ändern:
 
-| ZenMethod | Beschreibung                               |
-| --------- | ------------------------------------------ |
-| `allow`   | Forces the entity to (de)spawn             |
-| `deny`    | Forces the entity not to (de)spawn         |
-| `pass`    | Sets the event result to the default state |
+| ZenMethode  | Beschreibung                                        |
+| ----------- | --------------------------------------------------- |
+| `zulassen`  | Erzwingt die Entität zum (de)spawnen                |
+| `verwerfen` | Erzwingt die Entität nicht zu (de)spawnen           |
+| `passieren` | Setzt das Ereignis-Ergebnis auf den Standardzustand |

@@ -1,24 +1,24 @@
-# Anvil
+# Enclume
 
-## Package
+## Paquet
 ```zenscript
-import mods.terrafirmacraft.Anvil;
+Importer mods.terrafirmacraft.Enclume;
 ```
 
-## Addition
+## Ajouter
 
 ```zenscript
-Anvil.addRecipe(String registryName, IIngredient input, IItemStack output, int minTier, String skillType, String... forgeRules);
+Anvil.addRecipe(String registryName, IIngredient input, IItemStack sortie, int minTier, String skillType, String... forgeRules);
 ```
-- Input can't be stacked. Anvils only accept one item per slot.
-- input must be forgeable (please refer to [ItemRegistry](/Mods/Terrafirmacraft/ItemRegistry) for registering forging capability to an item).
-- Tiers are 0 = Stone, 1 = Copper, 2 = Bronze, 3 = Wrought Iron, 4 = Steel, 5 = Black Steel and 6 = Red/Blue Steel.
-- Skill type is what category of skill the forging should contribute to. Valid entries are `general`, `tools`, `weapons`, `armor`, or null. If the skill type is `tools`, `weapons`, or `armor` then the result item will have a skill bonus applied to it.
-- A recipe must have 1, 2 or 3 rules. Rules consist of a type (`HIT`, `DRAW`, `PUNCH`, `BEND`, `UPSET`, or `SHRINK`), followed by an order (`ANY`, `NOT_LAST`, `LAST`, `SECOND_LAST`, `THIRD_LAST`), separated by an underscore. As example, `HIT_ANY`, `DRAW_SECOND_LAST`, and `UPSET_NOT_LAST` are valid rule names.
+- L'entrée ne peut pas être empilée. Les ancres n'acceptent qu'un seul objet par emplacement.
+- l'entrée doit être forgeable (veuillez vous référer à la [Liste d'éléments](/Mods/Terrafirmacraft/ItemRegistry) pour enregistrer la capacité de forgeage à un élément).
+- Les paliers sont 0 = Pierre, 1 = Cuivre, 2 = Bronze, 3 = Fer forgé, 4 = Acier, 5 = Acier noir et 6 = Acier rouge/bleu.
+- Le type de compétence est la catégorie de compétence à laquelle la forge doit contribuer. Les entrées valides sont `générales`, `outils`, `armes`, `armure`, ou nulles. Si le type de compétence est `outils`, `armes`, ou `armure` alors l'objet du résultat aura un bonus de compétence appliqué à lui.
+- Une recette doit avoir 1, 2 ou 3 règles. Les règles sont composées d'un type (`HIT`, `DRAW`, `PUNCH`, `BEND`, `UPSET`, ou `SHRINK`), suivi par une commande (`ANY`, `NOT_LAST`, `DAST`, `SECOND_DAST`, `THIRD_DAST`), séparés par un tiret bas. Par exemple, `HIT_ANY`, `DRAW_SECOND_LAST`, et `UPSET_NOT_LAST` sont des noms de règles valides.
 
-## Removal
+## Retirer
 
 ```zenscript
-Anvil.removeRecipe(IItemStack output);
+Envil.removeRecipe(IItemStack sortie);
 Anvil.removeRecipe(String registryName);
 ```

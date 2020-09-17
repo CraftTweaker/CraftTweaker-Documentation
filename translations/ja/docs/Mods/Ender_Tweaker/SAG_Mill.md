@@ -1,27 +1,27 @@
 # SAG Mill
 
-## Package
+## パッケージ
 
 `import mods.enderio.SagMill;`
 
-## Methods
+## メソッド
 
-- **[IItemStack](/Vanilla/Items/IItemStack/)[] output** The results of the recipe.
-- **float[] chances** The chance that this item appears. Must have the same length as output.
-- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input** The input.
-- **String bonusType** This impacts how Grinding Balls work. May be NONE (no bonus), MULTIPLY_OUTPUT (can increase chance > 1.0), and CHANCE_ONLY (caps chance at 1.0).
-- **int energyCost** How much FE the recipe uses. Defaults to 5000.
-- **float xp** The xp is granted from this recipe. May not be negative.
+- **[IItemStack](/Vanilla/Items/IItemStack/)[] output** レシピの結果。
+- **float[] chances** このアイテムが表示される確率。 出力と同じ長さでなければなりません。
+- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input** 入力。
+- **String bonusType** これは、Grinding Balls がどのように動作するかに影響します。 無し(ボーナスなし)、MULTIPLI_OUTPUT（チャンスが1.0より大きくなる可能性があります）、およびCHANCE_ONLY (チャンスが1.0になる可能性があります）。
+- **intenergyCost** レシピが使用するFEの量。 デフォルトは5000です。
+- **float xp** このレシピから xp が付与されます。 否定的ではないかもしれない。
 
-## Addition
+## 加算
 
 ```zenscript
-mods.enderio.SagMill.addRecipe(IItemStack[] output, float[] chances, IIngredient input, @Optional String bonusType, @Optional int energyCost, @Optional float[] xp);
+mods.enderio.SagMill.addRecipe(IItemStack[] chances, float[] chances, IIngredient input, @Optional String bonusType, @Optional int energyCost, @Optional float[] xp);
 
 mods.enderio.SagMill.addRecipe([<minecraft:planks>], [100], <minecraft:log>);
 ```
 
-## Removal
+## 削除
 
 ```zenscript
 mods.enderio.SagMill.removeRecipe(IItemStack input);

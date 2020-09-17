@@ -1,17 +1,17 @@
-## Scrap Box
+## Raspar caja
 
-## Package
+## Paquete
 
 ```zenscript
-import mods.ic2.ScrapBox;
+importar mods.ic2.ScrapBox;
 ```
 
-### Methods
+### Métodos
 
-- See [ScrapBox (From IC2 Tweaker)](/Mods/IC2Tweaker/Scrap_Box/) for info on other methods.
-- **[ItemStack](/Vanilla/Items/IItemStack/) item** The entry being removed from the scrap box drop pool. Will cause drop chances of all other tiems to be recalculated.
+- Consulte [ScrapBox (From IC2 Tweaker)](/Mods/IC2Tweaker/Scrap_Box/) para obtener información sobre otros métodos.
+- **[Pila de objetos](/Vanilla/Items/IItemStack/) ítem** La entrada se quita del pozo de la caja de la basura. Hará que se recalculen las posibilidades de todos los demás tiempos.
 
-## Remove Drop (IItemStack)
+## Eliminar soltar (ItemStack)
 
 ```zenscript
     ScrapBox.removeDrop(IItemStack item);

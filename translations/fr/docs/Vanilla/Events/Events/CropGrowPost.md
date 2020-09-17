@@ -1,22 +1,22 @@
-# CropGrowPostEvent
+# format@@0 CropGrowPostEvent
 
-The CropGrowPost Event is fired once a crop block has **successfully** grown. It cannot be canceled, and merely serves as a notification of crop growth.
+L'événement CropGrowPost est lancé une fois qu'un bloc de culture a **augmenté avec succès**. Elle ne peut être annulée et sert simplement de notification de la croissance des cultures.
 
-## Event Class
-You will need to cast the event in the function header as this class:  
-`crafttweaker.event.CropGrowPostEvent`  
-You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
+## Classe de l'événement
+Vous devrez lancer l'événement dans l'en-tête de la fonction comme cette classe:  
+`crafttweaker.event. ropGrowPostEvent`  
+Vous pouvez, bien sûr, également [importer](/AdvancedFunctions/Import/) la classe avant et utiliser ce nom alors.
 
-## Event interface extensions
-CropGrowPost Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+## Extensions d'interface de l'événement
+Les événements CropGrowPost implémentent les interfaces suivantes et peuvent également appeler toutes leurs méthodes/getters/setters :
 
-- [IBlockEvent](/Vanilla/Events/Events/IBlockEvent/)
+- [Évènement IBlock](/Vanilla/Events/Events/IBlockEvent/)
 
 
 ## ZenGetters
-The following information can be retrieved from the event:
+Les informations suivantes peuvent être récupérées à partir de l'événement :
 
-| ZenGetter            | ZenSetter | Type                                        |
-| -------------------- | --------- | ------------------------------------------- |
-| `originalBlockState` |           | [IBlockState](/Vanilla/Blocks/IBlockState/) |
-| `originalBlock`      |           | [IBlock](/Vanilla/Blocks/IBlock/)           |
+| ZenGetter                      | ZenSetter | Type de texte                                    |
+| ------------------------------ | --------- | ------------------------------------------------ |
+| `format@@0 originalBlockState` |           | [État de l'IBlock](/Vanilla/Blocks/IBlockState/) |
+| `Bloc original`                |           | [Verrouillage](/Vanilla/Blocks/IBlock/)          |

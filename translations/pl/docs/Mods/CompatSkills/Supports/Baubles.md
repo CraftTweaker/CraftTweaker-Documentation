@@ -1,5 +1,5 @@
-# Baubles
+# Bombki
 
-## Baubles Support
+## Obsługa bombowa
 
-Baubles-Support is part of the standard ItemStack-Requirement locks. This means that any Item you do not have the required requirements for in your Baubles Inventory will be automatically-ejected and a error message will be printed!
+Obsługa bombowa jest częścią standardowych bloków wymagań przedmiotu. Oznacza to, że żaden przedmiot nie ma wymaganych wymagań w ekwipunku Bombla zostanie automatycznie wyrzucony i zostanie wydrukowany komunikat o błędzie!

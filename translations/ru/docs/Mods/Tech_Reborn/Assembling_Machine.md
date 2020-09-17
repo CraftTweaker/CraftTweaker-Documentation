@@ -1,16 +1,16 @@
-# Assembling Machine
+# Сборочный автомат
 
-## Importing the Package
+## Импортирование пакета
 `mods.techreborn.assemblingMachine`
 
-## Adding Recipes
+## Добавление рецептов
 ```zenscript
-mods.techreborn.assemblingMachine.addRecipe(IItemStack output, IIngredient input1, IIngredient input2, int ticktime, int euTick);
+mods.techreborn.assemblingMachine.addRecipe(IItemStack, IIngredient input1, IIngredient input2, int ticktime, int euTick);
 ```
 
-## Removing Recipes
+## Удаление рецептов
 ```zenscript
 mods.techreborn.assemblingMachine.removeInputRecipe(IIngredient ingredientA, IIngredient ingredientB);
-mods.techreborn.assemblingMachine.removeRecipe(IItemStack output);
+mods.techreborn.assemblingMachine.removeRecipe(выход IItemStack);
 mods.techreborn.assemblingMachine.removeAll();
 ```

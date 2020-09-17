@@ -1,8 +1,8 @@
-# Crucible
+# Котел
 
-## Basic Recipe
+## Базовый рецепт
 
-* Adds a Unstoked Crucible Recipe 
+* Добавляет Рецепт Неукраденного Котла 
 
 ```zenscript
 mods.betterwithmods.Crucible.addUnstoked(IIngredient[] inputs, IItemStack[] outputs);
@@ -11,7 +11,7 @@ mods.betterwithmods.Crucible.addUnstoked([<ore:cobblestone>],[<minecraft:stone>]
 mods.betterwithmods.Crucible.addUnstoked([<minecraft:dirt>],[<minecraft:grass>]);
 ```
 
-* Adds a Stoked Crucible Recipe 
+* Добавляет запашенный Рецепт Котла 
 
 ```zenscript
 mods.betterwithmods.Crucible.addStoked(IIngredient[] inputs, IItemStack[] outputs);
@@ -20,49 +20,49 @@ mods.betterwithmods.Crucible.addStoked([<ore:cobblestone>],[<minecraft:stone>]);
 mods.betterwithmods.Crucible.addStoked([<minecraft:dirt>],[<minecraft:grass>]);
 ```
 
-## Removal
+## Удаление
 
-* Remove a Crucible recipe based on the output
+* Удалите рецепт распятия, основанный на выводе
 
 ```zenscript
-mods.betterwithmods.Crucible.remove(IItemStack[] outputs);
+mods.betterwithmods.Crucible.remove(IItemStack[]);
 ```
 
-* Remove all Crucible recipes
+* Удалить все крепежные рецепты
 
 ```zenscript
 mods.betterwithmods.Crucible.removeAll();
 ```
 
-## Builder
+## Строитель
 
-The Crucible has a recipe builder that allows more precise control over the recipes. All previous methods are simply short cuts to using the builder.
+У титана есть конструктор рецептов, который позволяет более точно контролировать рецепты. Все предыдущие методы являются просто короткими отрезками для использования конструктора.
 
-* To create a new Crucible builder. `mods.betterwithmods.Crucible.builder()`
+* Создавать новый строитель платья. `mods.betterwithmods.Crucible.builder()`
 
-* Crucible methods
+* Растущие методы
      
-     * Sets up the inputs and outputs of the recipe  
+     * Настраивает входы и выходные данные рецепта  
               zenscript
-              buildRecipe(IIngredient[] inputs, IItemStack[] outputs)
+              buildRecipe(IIngredient[] входов, IItemStack[] вывод)
      
-     * Sets the priority of the recipe, the lower the priority the sooner it will be crafted. Default=0.  
+     * Устанавливает приоритет рецепта, тем самым снижая приоритет чем скорее он будет создан. По умолчанию=0.  
               zenscript
-              setPriority(int priority)
+              setPriority(внутренний приоритет)
      
-     * Set the Heat requirements of the recipe. Heat is used to check if the recipe can be made in a stoked or unstoked Crucible. Unstoked heat = 1, Stoked heat = 2. You can add custom heat sources, and even custom heat levels using the [Heat Registry](/Mods/Modtweaker/BetterWithMods/HeatRegistry/).  
+     * Установите требования к отоплению рецепта. Тепло, используется, чтобы проверить, можно ли сделать рецепт в украденном или неукраденном Котле. Неукрашенное тепло = 1, Сохраненное тепло = 2. Вы можете добавить собственные источники тепла, а также даже пользовательские уровни тепла, используя [Реестр Тепловых](/Mods/Modtweaker/BetterWithMods/HeatRegistry/).  
               zenscript
-              setHeat(int heat)
+              setHeat(внутреннее тепла)
      
-     * Set the recipe to ignore the heat value and craft anyways  
+     * Установите рецепт, чтобы игнорировать значение тепла и создать всё равно  
               zenscript
-              setIgnoreHeat(boolean ignoreHeat)
+              setIgnoreHeat(логическое игнорирование)
      
-     * Finalize the recipe and add it to the game  
+     * Завершить рецепт и добавить его в игру  
               zenscript
               build()
 
-### Example builder usage
+### Пример использования конструктора
 
 ```zenscript
 mods.betterwithmods.Crucible.builder()

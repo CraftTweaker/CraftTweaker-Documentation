@@ -1,21 +1,21 @@
-# Cutting Knife
+# Couteau de coupe
 
-The *knife* package is used for adding or removing recipes to/from the Cutting Knife.
+Le paquet *couteau* est utilisé pour ajouter ou supprimer des recettes vers/de la Couteau.
 
-## Calling
+## Appel en cours
 
-You can call the *knife* package using `mods.skyresources.knife`
+Vous pouvez appeler le paquet *knife* en utilisant `mods.skyresources.knife`
 
-## Recipe Addition
+## Ajout de recette
 
 ```zenscript
-//mods.skyresources.knife.addRecipe(IItemStack output, IItemStack input);
+//mods.skyresources.knife.addRecipe(sortie IItemStack, entrée IItemStack);
 mods.skyresources.knife.addRecipe(<minecraft:diamond>, <minecraft:stone>);
 ```
 
-## Recipe Removal
+## Suppression de la recette
 
 ```zenscript
-//mods.skyresources.knife.removeRecipe(IItemStack output);
+//mods.skyresources.knife.removeRecipe(sortie IItemStack);
 mods.skyresources.knife.removeRecipe(<minecraft:melon>);
 ```

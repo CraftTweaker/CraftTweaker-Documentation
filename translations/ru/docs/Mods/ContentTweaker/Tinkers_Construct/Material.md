@@ -1,41 +1,41 @@
-# Material Representation
+# Представление материалов
 
-A Material representation represents a Tinkers' Construct Material.  
-You can get such an object either from the [Material Builder](/Mods/ContentTweaker/Tinkers_Construct/MaterialBuilder/) or from the [Material Bracket Handler](/Mods/ContentTweaker/Tinkers_Construct/Brackets/Bracket_Material/).
+Представление материалов представляет собой Материал конструкторов.  
+Такой объект можно получить либо из [Material Builder](/Mods/ContentTweaker/Tinkers_Construct/MaterialBuilder/) либо из [обработчика Material Bracket](/Mods/ContentTweaker/Tinkers_Construct/Brackets/Bracket_Material/).
 
 ## Импорт класса
 
-It might be required for you to import the class if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
+Возможно, вам потребуется импортировать класс, если вы столкнетесь с какими-либо проблемами (например, наложение [массива](/AdvancedFunctions/Arrays_and_Loops/)), так что лучше быть безопасным, чем извините и добавить импорт.  
 `import mods.contenttweaker.tconstruct.Material`
 
-## ZenGetter
+## Геттеры
 
-| Геттер        | Type   |
-| ------------- | ------ |
-| identifier    | string |
-| commandString | string |
+| Геттер           | Тип    |
+| ---------------- | ------ |
+| identifier       | string |
+| командная строка | string |
 
-## Adding material items
+## Добавление материалов
 
-If you use the given item in the part builder, you can set how many materialpoints that will give, or how much the item will repair.
+Если вы используете данный элемент в конструкторе части, вы можете установить количество точек материала, которые будут давать, или сколько предметов будет починить.
 
     //myMaterial.addItem(IIngredient item, @Optional(1) int amountNeeded, @Optional(144) int amountMatched));
     myMaterial.addItem(<item:minecraft:iron_pickaxe>);
     myMaterial.addItem(<item:minecraft:iron_block>, 4, 288);
     
 
-- `item` is the item that is matched against. You can use [Item Conditions](/Vanilla/Items/Item_Conditions/) but no Transformers. 
-- `amountNeeded` is the amount of items that is matched against. You can split them over all the slots the toolforge provides, which also allows you to go above 64. In the second example above, you need 4 iron blocks per addition. Defaults to 1.
-- `amountMatched` is the amount of material points added per `amountNeeded`. In the second example above four iron blocks give two material points. Defaults to 144 (one ingot/one Material value).
+- `элемент` - это предмет, который соответствует данному предмету. Вы можете использовать [Условия предмета](/Vanilla/Items/Item_Conditions/) , но не преобразователей. 
+- `Нужна сумма` — это совпадающее количество предметов. Вы можете разделить их на все ячейки, которые предоставляет ковка инструментов, что также позволяет вам идти выше 64. Во втором примере выше вам нужно 4 железных блока на добавку. По умолчанию 1.
+- `Соответствующее количество` - это количество бонусных очков за `количество` требуется. Во втором примере над четырьмя железными блоками дают две точки материала. По умолчанию используется 144 (один слитки/один материал значения).
 
-## Adding Material Traits
+## Добавление симптомов материала
 
-You can add a trait to the material.  
-All items made from this material will then have this trait.  
-Uses a [Trait Representation](/Mods/ContentTweaker/Tinkers_Construct/Trait/) or a String with the identifier (recommended), returns void.  
-You can also provide a dependency String, that will cause the trait to only be available for certain part types, like heads, for example. Omitting that parameter will inject null, which will cause the trait to only be on the part type when no other nonnull dependency modifiers are on that part already.
+Вы можете добавить симптом к материалу.  
+Все предметы из этого материала будут иметь этот симптом.  
+Использует [Представительство симптомов](/Mods/ContentTweaker/Tinkers_Construct/Trait/) или строку с идентификатором (рекомендуется), возвращает недействительным.  
+Вы также можете предоставить строку зависимостей, что приведёт к тому, что симптомы доступны только для определенных типов частей, например для голов. Имея этот параметр будет вводить null, , что приведёт к тому, что симптомы будут только на тип частей, когда на этой части уже нет никаких других модификаторов ненулевых зависимостей.
 
-The string varaint is recommended, since by the time CoT runs, most Traits aren't yet available, and even by the time CrT runs, not all of them have been initialized, but if you use the strings, the addition of the materials is postponed until they are available. Still it's not errorproof and there's no easy way of checking for typos, so beware the error messages telling you which traits haven't been findable.
+Строковый varaint рекомендуется, так как к времени CoT запускает большинство симптомов еще не доступно, и даже к времени работы CrT, не все из них были инициализированы, но если вы используете строки, добавление материалов отложено до тех пор, пока они не будут доступны. Тем не менее, это не является ошибочным и нет простого способа проверки опечатки, так что будьте внимательны сообщения об ошибках, которые говорят вам, какие черты не были найдены.
 
 ```zenscript
 myMaterial.addTrait("fiery", "head");

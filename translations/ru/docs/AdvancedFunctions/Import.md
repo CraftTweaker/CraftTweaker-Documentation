@@ -5,9 +5,9 @@
 ## Примечание об импорте до 1.12
 
 На 1.12 в CraftTweaker многое изменилось.  
-До этой версии все внутренние функции вызывались с помощью `minetweaker.<пакет>.<функция>`. Now, `minetweaker` has been replaced by `crafttweaker`, so now it sais `crafttweaker.name.function`!
+До этой версии все внутренние функции вызывались с помощью `minetweaker.<пакет>.<функция>`. Теперь, `minetweaker` был заменен на `crafttweaker`, так что теперь он sais `crafttweaker.name.function`!
 
-Should you ever experience any importing issues with scripts from this wiki, you may want to check if your MC version is below 1.12.
+Если у вас возникли проблемы с импортом скриптов из этой вики, вы можете проверить версию MC ниже 1.12.
 
 ## Простой импорт
 

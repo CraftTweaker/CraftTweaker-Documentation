@@ -1,19 +1,19 @@
 # Hammering
 
-## Package
+## Pakiet
 ```zenscirpt
-`mods.exnihilocreatio.Hammer`
+`mods.exnihilocreo.Hammer`
 ```
 
-## Methods
+## Metody
 
-- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input** The block that needs to be broken.
-- **[IItemStack](/Vanilla/Items/IItemStack/) output** The item the block drops when broken.
+- **[Składnik](/Vanilla/Variable_Types/IIngredient/) wejście** Blok, który musi być uszkodzony.
+- **[IItemStack](/Vanilla/Items/IItemStack/) wyjście** Element który blok upuszcza po uszkodzeniu.
 - **Int tool level** tool level for breaking the block.
-- **Float chance** chance between 0-1.
-- **Float fortune chance** chance between 0-1.
+- **Szansa na pływanie** szansa między 0-1.
+- **Szansa na przedłużenie** szansa między 0-1.
 
-## Addition
+## Dodanie
 
 ```zenscript
 mods.exnihilocreatio.Hammer.addRecipe(IIngredient, IItemStack, Int, Float, Float);
@@ -21,7 +21,7 @@ mods.exnihilocreatio.Hammer.addRecipe(IIngredient, IItemStack, Int, Float, Float
 mods.exnihilocreatio.Hammer.addRecipe(<minecraft:log>, <minecraft:plank>, 0, 0.25, 0.5);
 ```
 
-## Removal
+## Usuwanie
 
 ```zenscript
 mods.exnihilocreatio.Hammer.removeAll();

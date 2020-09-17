@@ -1,16 +1,16 @@
 
-### Class
+### Klasse
 
 ```zenscript
-import mods.roots.SummonCreatures;
+importiere mods.roots.SummonCreatures;
 ```
 
-#### Methods
+#### Methoden
 
 ```zenscript
-void addEntity(
-  IEntityDefinition entity, // the entity to be summoned
-  IIngredient[] ingredients // a list of ingredients used for the summoning
+Hinzufügen nichtig (
+  IEntityDefinition, Entität, // die Entität, die beschworen werden
+  IIngredient[] Zutaten // eine Liste von Zutaten, die für die Beschwörung verwendet werden
 );
 ```
 
@@ -19,8 +19,8 @@ void addEntity(
 
 
 ```zenscript
-void removeEntity(
-  IEntityDefinition entity // the entity to remove from summoning via recipe
+EntfernenEntität(
+  IEntityDefinition Entität // Entität zum Entfernen durch Beschwören mittels Rezept
 );
 ```
 
@@ -29,8 +29,8 @@ void removeEntity(
 
 
 ```zenscript
-void removeLifeEssence(
-  IEntityDefinition entity // the entity to remove life essence for
+removeLifeEssence(
+  IEntityDefinition Entität // Entität zum Entfernen der LebensEssenz für
 );
 ```
 
@@ -40,7 +40,7 @@ void removeLifeEssence(
 
 ```zenscript
 void addLifeEssence(
-  IEntityDefinition entity // the entity to add life essence for
+  IEntityDefinition Entität // Entität zum Hinzufügen von LebensEssenz für
 );
 ```
 
@@ -49,14 +49,14 @@ void addLifeEssence(
 
 
 ```zenscript
-void clearLifeEssence();
+clearLifeEssence(); ungültig
 ```
 
 
 ---
 
 
-### Examples
+### Beispiele
 
 ```zenscript
 import mods.roots.SummonCreatures;

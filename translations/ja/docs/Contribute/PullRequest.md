@@ -1,42 +1,42 @@
-# Filing a PullRequest
+# プルリクエストの送信
 
-## Prerequisites
+## 前提条件
 
-You need to have [created](/Contribute/OnlineEditor_Create) and/or [modified](/Contribute/OnlineEditor_Edit) files in your fork of the wiki.
+Wikiのフォークで [を作成したり、](/Contribute/OnlineEditor_Create) ファイルや [ファイルを](/Contribute/OnlineEditor_Edit) 変更したりする必要があります。
 
-## Introduction
+## 導入
 
-After you have created or modified whatever you were trying to do, you need to get the changes to the original repository.  
-This guide will show you how to create a PR to apply your changes to the actual wiki.
+何をしようとしているものを作成または変更した後、元のリポジトリに変更を取得する必要があります。  
+このガイドでは、実際のWikiに変更を適用するためのPRを作成する方法を説明します。
 
-A Pull Request (or PR for short) allows you to apply your commits to the original codebase.  
-In other words, it allows you to make your changes visible to everyone visiting the wiki.
+プルリクエスト(または略してPR)を使用すると、オリジナルのコードベースにコミットを適用できます。  
+言い換えれば、そのWikiを訪れる全員に変更を見えるようにすることができます。
 
-## Opening the Pull Request
+## プルリクエストを開く
 
-When you head back to your fork's GitHub page, you will notice the branch info bar.  
-This bar tells you how your fork version differs from the original one.
+フォークのGitHubページに戻ると、ブランチ情報バーが表示されます。  
+このバーでは、フォークのバージョンが元のバージョンと異なる方法を説明します。
 
-For example, the picture below has three commits that have not yet been applied to the CrT-wiki whereas three other commits have been created in the original one that have not been applied to the fork.
+例えば、 下の写真はまだCrT-wikiに適用されていない3つのコミットですが、他の3つのコミットはフォークに適用されていないオリジナルのコミットに作成されています。
 
-![Pull Request Button](/Contribute/assets/PullRequest_Compare_PullRequestButton.png)
+![プルリクエストボタン](/Contribute/assets/PullRequest_Compare_PullRequestButton.png)
 
-If you click on the "Pull Request" button a new view will open, the Compare View.  
-In most cases it is already properly defined to use the Original CraftTweaker/CraftTweaker-Documentation master branch as destination and your branch as the changes to be pulled.
+「Pull Request」ボタンをクリックすると、新しいビューが開き、比較ビューが表示されます。  
+ほとんどの場合、元の CraftTweaker/CraftTweaker-Documentation master ブランチを宛先として、プルする変更としてブランチを使用するようにすでに適切に定義されています。
 
-Github will also verify that there are no conflicts between your changes and what the current state of the wiki is.  
-In case it does find any misfits it will alert you, though you can still create the PR and ask for our help to resolve the conflicts.
+Githubはまた、変更内容とwikiの現在の状態との間に矛盾がないことを確認します。  
+不適合が見つかった場合、警告されます。 あなたはまだPRを作成し、紛争を解決するために我々の助けを求めることができますが。
 
-Now all you need is provide a descriptive title and a description that will tell us about the changes.
+今必要なのは、説明的なタイトルと変更について教えてくれる説明だけです。
 
-Also notice the `Allow edits from mainainers` checkbox.  
-This checkbox allows people with write-access to the CrT-Repo (e.g. Members of the CraftTweaker organization) to modify files of your PR in order to resolve merge conflicts, for example.
+`メインナーからの編集を許可する` チェックボックスにも注意してください。  
+このチェックボックスは、CrT-Repo への書き込みアクセスを持つ人々を許可します。 をクリックします。 CraftTweaker組織のメンバーなど) マージの競合を解決するために、PRファイルを変更します。
 
 ![New PR Tool](/Contribute/assets/PullRequest_Create.png)
 
-At the bottom you can verify that all your changes will be included in the PR.
+下部には、すべての変更がPRに含まれることを確認できます。
 
-## Next Steps
+## 次のステップ
 
 Next, someone from the CrT-Organization or any contributor can look over your PR and leave general feedback or suggestions.  
 If someone from the CrT-Organization does a PR Review, you will be notified of all comments and whether or not you need to change something before it will be merged.  

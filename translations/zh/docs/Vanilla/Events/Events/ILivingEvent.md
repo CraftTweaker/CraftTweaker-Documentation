@@ -1,18 +1,18 @@
 # ILivingEvent
 
-This interface is extended by all Events that can have a central living entity.
+此接口由所有能够有一个中央生活实体的事件扩展。
 
-## Importing the class
+## 导入相关包
 
-It might be required to [import](/AdvancedFunctions/Import/) the class to avoid errors.  
-`import crafttweaker.event.ILivingEvent;`
+可能需要 [导入](/AdvancedFunctions/Import/) 类以避免错误。  
+`导入craftmilower.event.ILivingEvent;`
 
-## Extending IEntityEvent
+## 扩展 IEntityEvent
 
-This interface extends [IEntityEvent](/Vanilla/Events/Events/IEntityEvent/), which means that all functionality that IEntityEvent offers is also present in ILivingEvent
+此接口扩展 [IEntityEvent](/Vanilla/Events/Events/IEntityEvent/), 这意味着IEntityEvent 提供的所有功能也都存在于ILivingEvent
 
 ## ZenGetters
 
-| name             | type                                                      |
+| 名称               | 类型                                                        |
 | ---------------- | --------------------------------------------------------- |
 | entityLivingBase | [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) |

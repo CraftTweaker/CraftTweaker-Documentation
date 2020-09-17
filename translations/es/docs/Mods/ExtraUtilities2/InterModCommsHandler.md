@@ -1,29 +1,29 @@
 # InterModCommsHandler
 
-InterModComms are small messages sent between mods to allow for additional content.  
-For example ModA sends a message to Tinkers' Construct to tell TiCon to create additional materials for the smeltery.
+InterModComms son pequeños mensajes enviados entre mods para permitir contenido adicional.  
+Por ejemplo ModA envía un mensaje a la Construcción de los Tinkers para decirle a TiCon que cree materiales adicionales para la fundición.
 
-## Importing the package
+## Importando el paquete
 
-If you want to shorten method calls or encounter any issues you might need to [import](/AdvancedFunctions/Import) the package.  
-You can do so using
+Si desea acortar las llamadas a métodos o encontrar cualquier problema, puede que necesite [importar](/AdvancedFunctions/Import) el paquete.  
+Puedes hacerlo usando
 
 ```zenscript
-import extrautilities2.Tweaker.InterModCommsHandler;
+importar extrauFirstties2.Tweaker.InterModCommsHandler;
 ```
 
-## Sending messages
+## Enviando mensajes
 
-You can either send the message right away or at runtime. You can either send NBT as [IData Map](/Vanilla/Data/IData), a simple string, an [IItemStack](/Vanilla/Items/IItemStack) or a resource location.
+Puede enviar el mensaje inmediatamente o en tiempo de ejecución. Puedes enviar NBT como [IData Map](/Vanilla/Data/IData), una cadena simple, un [ItemStack](/Vanilla/Items/IItemStack) o una ubicación de recurso.
 
 ```zenscript
-sendMessageNBT(String mod, String key, DataMap dataMap);
-sendMessageString(String mod, String key, String message);
+sendMessageNBT(String mod, String keyy, DataMap dataMap);
+sendMessageString(String mod, String keyy, String message);
 sendMessageItemStack(String mod, String key, IItemStack stack);
 sendMessageResourceLocation(String mod, String key, String resourceLocation);
 
 sendRuntimeMessageNBT(String mod, String key, DataMap dataMap);
-sendRuntimeMessageString(String mod, String key, String message);
-sendRuntimeMessageItemStack(String mod, String key, IItemStack stack);
+sendRuntimeMessageString(String mod, String keyy, String message);
+sendRuntimeMessageItemStack(String mod, String key, ItemStack stack);
 sendRuntimeMessageResourceLocation(String mod, String key, String resourceLocation);
 ```

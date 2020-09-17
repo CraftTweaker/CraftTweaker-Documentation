@@ -1,21 +1,21 @@
-# Restoration Chamber
+# Wiederherstellungskammer
 
-## Package
+## Paket
 ```zenscript
-import mods.calculator.restorationChamber;
+importieren mods.calculator.restorationChamber;
 ```
 
 ## Methoden
 
-- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input** The input.
-- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) output** The output.
+- **[Ingredient](/Vanilla/Variable_Types/IIngredient/) Input** Die Eingabe.
+- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) Ausgabe** Die Ausgabe.
 
 ## Addition
 ```zenscript
-restorationChamber.addRecipe(IIngredient input, IIngredient output);
+restorationChamber.addRecipe(IIngrediente Eingabe, IIngrediente Ausgabe);
 ```
 
-## Removal
+## Entfernen
 ```zenscript
-restorationChamber.removeRecipe(IIngredient output);
+restorationChamber.removeRecipe(IIngrediente Ausgabe);
 ```

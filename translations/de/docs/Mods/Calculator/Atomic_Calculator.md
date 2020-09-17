@@ -1,21 +1,21 @@
-# Atomic Calculator
+# Atomrechner
 
-## Package
+## Paket
 ```zenscript
-import mods.calculator.atomic;
+importieren mods.calculator.atomic;
 ```
 
 ## Methoden
 
-- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input[1-3]** The inputs.
-- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) output** The output.
+- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) Eingabe[1-3]** Die Eingänge.
+- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) Ausgabe** Die Ausgabe.
 
 ## Addition
 ```zenscript
-atomic.addRecipe(IIngredient input1, IIngredient input2, IIngredient input3, IIngredient output);
+atomic.addRecipe(IIngredient input1, IIngredient input2, IIngredient input3, IIngredient);
 ```
 
-## Removal
+## Entfernen
 ```zenscript
-atomic.removeRecipe(IIngredient output);
+atomic.removeRecipe(IIngrediente Ausgabe);
 ```

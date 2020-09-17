@@ -1,27 +1,28 @@
 # PlayerChangedDimension
 
-The PlayerChangedDimension Event is fired whenever a [player's](/Vanilla/Players/IPlayer/) [dimension/world](/Vanilla/World/IWorld/) changes, for example upon entering/leaving the nether.
+PlayerChangedDimension イベントは、たとえば、 [プレイヤーの](/Vanilla/Players/IPlayer/) [ディメンション/ワールド](/Vanilla/World/IWorld/) が変更されたときに発生します。
 
-## Event Class
+## イベントクラス
 
-You will need to cast the event in the function header as this class:  
-`crafttweaker.event.PlayerChangedDimensionEvent`  
-You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
+関数ヘッダーのイベントをこのクラスとしてキャストする必要があります:  
+`crafttweaker.event. layerChangedDimensionEvent <br /> 
+ <code>`  
+もちろん、 [前にクラスをインポート](/AdvancedFunctions/Import/) して、その名前を使用することもできます。
 
-## Event interface extensions
+## イベントインターフェースの拡張
 
-PlayerChandedDimension Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+PlayerChandedDimension Eventsは以下のインターフェイスを実装し、それらのメソッド/getter/settersをすべて呼び出すことができます。
 
 - [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
 
 ## ZenGetters
 
-The following information can be retrieved from the event:
+イベントから次の情報を取得できます。
 
-| ZenGetter   | Return Type                          |
-| ----------- | ------------------------------------ |
-| `player`    | [IPlayer](/Vanilla/Players/IPlayer/) |
-| `from`      | int                                  |
-| `fromWorld` | [IWorld](/Vanilla/World/IWorld/)     |
-| `to`        | int                                  |
-| `toWorld`   | [IWorld](/Vanilla/World/IWorld/)     |
+| ZenGetter | 戻り値                                  |
+| --------- | ------------------------------------ |
+| `プレイヤー`   | [IPlayer](/Vanilla/Players/IPlayer/) |
+| `from`    | int                                  |
+| `ワールドから`  | [IWorld](/Vanilla/World/IWorld/)     |
+| `to`      | int                                  |
+| `toWorld` | [IWorld](/Vanilla/World/IWorld/)     |

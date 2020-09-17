@@ -1,16 +1,16 @@
-# Fuel Reprocessor
+# Переработка топлива
 
-## Importing the Package
-`mods.nuclearcraft.FuelReprocessor`
+## Импортирование пакета
+`mods.nuclearcraft.Переработчик топлива`
 
-## Adding Recipes
+## Добавление рецептов
 ```zenscript
-mods.nuclearcraft.FuelReprocessor.addRecipe(IIngredient itemInput, IIngredient itemOutput1, IIngredient itemOutput2, IIngredient itemOutput3, IIngredient temOutput4, @Optional double timeMultiplier, @Optional double powerMultiplier, @Optional double processRadiation);
+mods.nuclearcraft.FuelReprocessor.addRecipe(IIngredient itemInput, IIngredient itemOutput1, IIngredient itemOutput2, IIngredient itemOutput3, IIngredient temOutput4, @Optional Double timeMultiplier, @Optional double powerMultiplier, @Optional double processRadiation);
 ```
 
-## Removing Recipes
+## Удаление рецептов
 ```zenscript
-mods.nuclearcraft.FuelReprocessor.removeRecipeWithInput(IIngredient itemInput);
-mods.nuclearcraft.FuelReprocessor.removeRecipeWithOutput(IIngredient itemOutput1, IIngredient itemOutput2, IIngredient itemOutput3, IIngredient itemOutput4);
+mods.nuclearcraft.FuelReprocessor.removeRecipeWithInput(IIngredient itemput);
+mods.nuclearcraft.FuelReprocessor.removeRecipeWithOutput(IIngredient itemput1, IIngredient itemput2, IIngredient itemput3, IIngredient itemOutput4);
 mods.nuclearcraft.FuelReprocessor.removeAllRecipes();
 ```

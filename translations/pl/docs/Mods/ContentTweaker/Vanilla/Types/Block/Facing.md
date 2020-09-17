@@ -1,23 +1,23 @@
-# Facing
+# W kierunku
 
-A CoT Facing is an enumeration of a [block's](/Mods/ContentTweaker/Vanilla/Creatable_Content/Block/) possible directions
+CoT Facing is a enumeration of a [block's](/Mods/ContentTweaker/Vanilla/Creatable_Content/Block/) possible direction
 
-## Importing the package
+## Importowanie pakietu
 
-It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
-`import mods.contenttweaker.Facing;`
+Może być wymagane zaimportowanie pakietu, jeśli napotkasz jakieś problemy, więc lepiej być bezpiecznym niż przepraszamy i dodać import.  
+`zaimportuj mods.contenttweaker.Facing;`
 
-## Enumerations
+## Liczby
 
-Facing can be of those six values:
+W odniesieniu do tych sześciu wartości można zmierzyć:
 
-- north
-- east
-- south
-- west
-- down
-- up
+- Północ
+- wschodni
+- na południe
+- na zachód
+- w dół
+- w górę
 
-## Uses
+## Zastosowania
 
-A Hand's main use is in a [IItemUse Function](/Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemUse/).
+Główna obsługa znajduje się w [IItemuse Function](/Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemUse/).

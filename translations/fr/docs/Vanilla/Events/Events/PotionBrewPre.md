@@ -1,15 +1,15 @@
-# PotionBrewPre
+# format@@0 PotionBrewPre
 
-This event is fired directly before vanilla brewing takes place, and, if **cancelled**, will prevent brewing from taking place. If cancelled but the items are modified, then the [PotionBrewPostEvent](/Vanilla/Events/Events/PotionBrewPost/) will be automatically fired. This allows for a simulacrum of "modded" brewing.
+Cet événement est déclenché juste avant la cuisson de la vanille, et, si **annulé**, empêchera la cuisson de se produire. En cas d'annulation mais de modification des éléments, alors [PotionBrewPostEvent](/Vanilla/Events/Events/PotionBrewPost/) sera automatiquement déclenché. Cela permet un simulacre de brassage "modded".
 
-**Note**: this event is fired right as the calculations for the recipe are taking place, when the "timer" reaches "maximum progress".
+**Note**: cet événement est déclenché à droite lorsque les calculs de la recette ont lieu, lorsque le "minuteur" atteint "progrès maximum".
 
-## Event Class
+## Classe de l'événement
 You will need to cast the event in the function header as this class:  
 `crafttweaker.event.PotionBrewPreEvent` You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
 
-## Event interface extensions
-PotionBrewPre Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+## Extensions d'interface de l'événement
+Les événements PotionBrewPre implémentent les interfaces suivantes et peuvent également appeler toutes leurs méthodes/getters/setters :
 
-- [IPotionBrewEvent](/Vanilla/Events/Events/IPotionBrewEvent/)
+- [format@@0 IPotionBrewEvent](/Vanilla/Events/Events/IPotionBrewEvent/)
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)

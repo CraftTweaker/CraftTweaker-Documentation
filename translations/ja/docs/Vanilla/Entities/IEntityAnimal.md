@@ -1,50 +1,50 @@
 # IEntityAnimal
 
-An Animal.
+動物。
 
 ## パッケージのインポート
 
 It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
 `import crafttweaker.entity.IEntityAnimal;`
 
-## Extending [IEntityAgeable](/Vanilla/Entities/IEntityAgeable/)
+## 拡張する [IEntityAgeable](/Vanilla/Entities/IEntityAgeable/)
 
-IEntityAnimal extends [IEntityAgeable](/Vanilla/Entities/IEntityAgeable/). That means all functions available to [IEntities](/Vanilla/Entities/IEntityAgeable/) also are available to IEntityAnimal.
+IEntityAnimal extends [IEntityAgeable](/Vanilla/Entities/IEntityAgeable/). つまり、 [IEntities](/Vanilla/Entities/IEntityAgeable/) で利用可能なすべての関数は、IEntityAnimalでも利用可能です。
 
-## Methods
+## メソッド
 
 ### ZenGetters/Setters
 
-| ZenGetter | Type                                                |
+| ZenGetter | タイプ                                                 |
 | --------- | --------------------------------------------------- |
-| loveCause | [IPlayer](/Vanilla/Players/IPlayer/) (Can be null!) |
+| love原因    | [IPlayer](/Vanilla/Players/IPlayer/) (Can be null!) |
 | isInLove  | bool                                                |
 
 ### ZenMethods
 
-#### check if an item can be used to breed the animal
+#### 動物の繁殖に使用できるかどうかを確認する
 
-Method expects an [IItemStack](/Vanilla/Items/IItemStack/).  
-Returns a bool.
+メソッドは [IItemStack](/Vanilla/Items/IItemStack/)を期待します。  
+ブールを返します。
 
 ```zenscript
 entAnObj.isBreedingItem(IItemStack itemStack);
 ```
 
-#### Set or Reset in love
+#### 恋に設定またはリセット
 
-First method expects an optional [IPlayer](/Vanilla/Players/IPlayer/) object, second nothing.  
-Returns nothing.
+最初のメソッドは省略可能な [IPlayer](/Vanilla/Players/IPlayer/) オブジェクトを期待します。  
+何も返しません。
 
 ```zenscript
 entAnObj.setInLove(@Optional IPlayer player);
 entAnObj.resetInLove();
 ```
 
-#### Check if another animal can mate with this one.
+#### 他の動物がこの動物と交尾できるかどうかを確認します。
 
-Method expects an IEntityAnimal object.  
-Returns a bool.
+メソッドはIEntityAnimal オブジェクトを期待します。  
+boolを返します。
 
 ```zenscript
 entAnObj.canMateWith(IEntityAnimal other);

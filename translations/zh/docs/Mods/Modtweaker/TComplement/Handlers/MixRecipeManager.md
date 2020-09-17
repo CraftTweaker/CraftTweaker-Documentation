@@ -1,57 +1,57 @@
 # MixRecipeManager
 
-A `MixRecipeManager` is used to modify existing high oven mix recipe, including those added by ModTweaker.
+`MixRecipeManager` 用于修改现有的高余混合方法，包括由ModTweaker添加的方法。
 
 ## 导入相关包
 
-Better be safe than sorry and import the package
+比抱歉更好的安全并导入软件包
 
 ```zenscript
-import mods.tcomplement.highoven.MixRecipeManager;
+导入mods.tcomplement.higoven.MixRecipeManager;
 ```
 
-## Getting a `MixRecipeManager`
+## 正在获取 `MixRecipeManager`
 
-The `HighOven` handler can give you a `MixRecipeManager`:
+`高炉` 处理程序可以给您 `MixRecipeManager`:
 
 ```zenscript
-// HighOven.manageMixRecipe(ILiquidStack output, ILiquidStack input);
-var manager = HighOven.manageMixRecipe(<liquid:steel>);
+// HighOven.managMixRecipe(ILiquidStack 输出, ILiquidStack 输入);
+var Manager = HighOven.management MixRecipe(<liquid:steel>);
 ```
 
-+ `output` is the output of the mix recipe to modify
-+ `input` (Optional) is the input of the mix recipe to modify. If `null` or unspecified, any mix recipe producing the output will be affected
++ `输出` 是要修改的混合配方的输出
++ `输入` (可选) 是要修改混合配方的输入。 如果 `null` 或未指定，产生输出的混合配方将受到影响
 
-## Removing additives
+## 移除添加剂
 
-You can use a `MixRecipeManager` to remove certain additives from the affected mix recipe. Be carefull, for removals are always enforced. This means whatever way to add an additive that would add an additive you remove, will be prevented.
+您可以使用 `MixRecipeManager` 从受影响的混合配方中删除某些添加剂。 小心谨慎，因为清除总是强制执行。 这意味着添加添加添加添加您删除的添加剂的任何方式都将被防止。
 
-This may have surprising results with oredict entries. Since oredict entries are added as-is to the mix recipe (it is not expanded to a list of `IItemStack` but looked for when checking the recipes), removing an item will block all oredict entries it belongs to.
+这可能会产生令人吃惊的结果。 既然oredict 条目是按原样添加到混合配方(它没有扩展到 `IItemStack` 列表，而是在检查配方时寻找)， 移除一个项目将会阻止它所属的所有修复项目。
 
-Generally speaking, if you remove something specific (say, an `IItemStack` with transformers) but an (single) additive addition would allow what you removed plus some other things (say, a more generic `IItemStack`), the whole addition will be cancelled, preventing said other things from being accepted by the High Oven.
+通常情况下，如果您移除某些特定内容(例如) `IItemStack` 带变压器，但一个(单身)添加添加将允许您删除的东西加上其他东西(例如) a 更通用 `IItemStack`)，整个添加将被取消，防止高奥文接受所说的其他内容。
 
-| Method                                 | Info                                                      |
-| -------------------------------------- | --------------------------------------------------------- |
-| `removeOxidizer(IIngredient oxidizer)` | Forefully remove the oxidizer from the affected MixRecipe |
-| `removeReducer(IIngredient reducer)`   | Forefully remove the reducer from the affected MixRecipe  |
-| `removePurifier(IIngredient reducer)`  | Forefully remove the purifier from the affected MixRecipe |
-
-
-All those methods return the same instance they were called one, allowing method chaining.
-
-## Adding additives to existing MixRecipe
-
-You can add additives to all mix recipe matched by the `MixRecipeManager`. Be careful, as removals have priority (see above).
-
-| Method                                                          | Info                                                            |
-| --------------------------------------------------------------- | --------------------------------------------------------------- |
-| `addOxidizer(@NotNull IIngredient oxidizer, int consumeChance)` | Add the oxidizer with the specified consume chance (in percent) |
-| `addReducer(@NotNull IIngredient reducer, int consumeChance)`   | Add the reducer with the specified consume chance (in percent)  |
-| `addPurifier(@NotNull IIngredient purifier, int consumeChance)` | Add the purifier with the specified consume chance (in percent) |
+| 方法              | 信息                       |
+| --------------- | ------------------------ |
+| `离子氧化物(I分子氧化物)` | 提前从受影响的 MixRecipe 中移除氧化器 |
+| `去除减少(I成分减少器)`  | 提前从受影响的混合配方中移除减速器        |
+| `去除紫外线(I成分还原器)` | 提前从受影响的混合配方中移除净化器        |
 
 
-All those methods return the same instance they were called one, allowing method chaining.
+所有这些方法都返回了它们被称为一个的同一个实例，从而允许了方法链。
 
-## Warning
+## 添加添加添加剂到现有的 MixRecipe
 
-Creating a `MixRecipeManager` that does not match any mix recipes will not trigger any warning, because there's no way to tell which mix recipes will be added (script parsing happens before mix recipe registration). If you're `MixRecipeManager` has no effect, first check it it actually matches a mix recipe
+您可以添加添加添加剂到所有匹配的 `MixRecipeManager` 的混合配方。 小心谨慎，因为清除有优先考虑(见上文)。
+
+| 方法                                                              | 信息                  |
+| --------------------------------------------------------------- | ------------------- |
+| `addOxidizer(@NotNull IIngredient oxidizer, int consumeChance)` | 用指定的消耗几率添加氧化器 (百分比) |
+| `addReducer(@NotNull IIngredient reducer, int consumeChance)`   | 将减少器添加到指定的消耗几率(百分比) |
+| `addPurifier(@NotNull IIngredient purifier, int consumeChance)` | 将净化器添加到指定的消耗几率(百分比) |
+
+
+所有这些方法都返回了它们被称为一个的同一个实例，从而允许了方法链。
+
+## 警告
+
+创建一个 `MixRecipeManager` 不匹配任何混合配方不会触发任何警告 因为无法知道将添加哪个混合配方(在混合配方注册之前发生脚本解析)。 如果您 `MixRecipeManager` 没有效果，请先检查它是否符合混合配方

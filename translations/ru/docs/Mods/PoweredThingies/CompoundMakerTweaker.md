@@ -1,33 +1,33 @@
-# Powered Thingies :: Compound Maker
+# Питающие вещи :: Компьютерный чайник
 
-### Importing
+### Импорт
 
 ```zenscript
 import mods.poweredthingies.Tweaker.compoundTweaker as ct;
 ```
 
-### Listing Keys, Removing Recipes by Key, Clearing
+### Список ключей, удаление рецептов по ключу, очистка
 
 ```zenscript
 ct().logKeys()
-ct().removeRecipe('minecraft:stone') // check <logKeys> output for valid keys
+ct().removeRecipe('minecraft:stone') // проверяем <logKeys> вывод допустимых ключей
 ct().clear()
 ```
 
-### Adding Recipe
+### Добавление рецепта
 
-##### Signature
+##### Подпись
 
 ```zenscript
-addRecipe(output: IItemStack, left: ILiquidStack?, top: Array<IItemStack>?, right: ILiquidStack?, bottom: Array<IItemStack>?)
+addRecipe(output: IItemStack, слева: ILiquidStack?, сверху: Array<IItemStack>?, справа: ILiquidStack?, снизу: Array<IItemStack>?)
 ```
 
-##### Example
+##### Пример
 
 ```zenscript
 ct().addRecipe(<minecraft:obsidian>, <liquid:lava> * 250, [<minecraft:cobblestone>, <minecraft:cobblestone>], null, [<minecraft:cobblestone>, <minecraft:cobblestone>]);
 ```
 
-### Notes
+### Примечания
 
-All of these actions will get cached and ran after the default registry for this machine has finished registering all recipes (including the ones from the custom jsons).
+Все эти действия будут кэшироваться и запускаться после завершения регистрации реестра по умолчанию (в том числе от пользовательских json).

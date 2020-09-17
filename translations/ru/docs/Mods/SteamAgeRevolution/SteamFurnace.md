@@ -1,27 +1,27 @@
-# Steam Furnace
+# Печь Пара
 
-The Steam Furnace is a machine that converts an input item into an output item using steam.
+Печь Steam - это машина, которая преобразует входной элемент в выходной предмет с помощью паровой установки.
 
-## Package
+## Пакет
 `mods.steamagerevolution.SteamFurnace`
 
-## Methods
+## Методы
 
-- **[IItemStack](/Vanilla/Items/IItemStack/) output** The result of the recipe.
-- **[IItemStack](/Vanilla/Items/IItemStack/) input** The input of the recipe.
-- **int craftTime** Crafting time for machine to process
-- **int steamCost** Cost of Steam for machine to process
+- **[IItemStack](/Vanilla/Items/IItemStack/) output** Результат рецепта.
+- **[IItemStack](/Vanilla/Items/IItemStack/) ввода** Ввод рецепта.
+- **int Time** время создания машины для обработки
+- **int SteamCost** Стоимость Пара на машине для обработки
 
-## Addition
+## Сложение
 
 ```zenscript
-mods.steamagerevolution.SteamFurnace.addRecipe(IIngredient input, IItemStack output, int craftTime, int steamCost);
+mods.steamagerevolution.SteamFurnace.addRecipe(IIngredient input, IItemStack, int craftTime, int steamCost);
 mods.steamagerevolution.SteamFurnace.addRecipe(<ore:cobblestone>, <minecraft:stone>, 200, 200);
 ```
 
 
-## Removal
+## Удаление
 
-```zenscript mods.steamagerevolution.SteamFurnace.removeRecipe(IItemStack output); mods.steamagerevolution.SteamFurnace.removeRecipe(<minecraft:glass>);
+```zenscript mods.steamagerevolution.SteamFurnace.removeRecipe(IItemStack); mods.steamagerevolution.SteamFurnace.removeRecipe(<minecraft:glass>);
 
 mods.steamagerevolution.SteamFurnace.removeAll(); ``

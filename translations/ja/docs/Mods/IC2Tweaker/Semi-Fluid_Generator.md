@@ -1,15 +1,15 @@
-# Semi-Fluid Generator
+# 半流体ジェネレーター
 
-## Package
+## パッケージ
 
 `import mods.ic2.SemiFluidGenerator;`
 
-## Methods
+## メソッド
 
-- **[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) liquid** The liquid which can be used as fuel in semi-fluid generator
+- **[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) 液体** 半流体発生器の燃料として使用可能な液体。
 - **double powerOutput** The power output, measured in EU/tick
 
-## Add Fluid
+## 流体を追加
 
 ```zenscript
 mods.ic2.SemiFluidGenerator.addFluid(ILiquidStack liquid, double powerOutput;

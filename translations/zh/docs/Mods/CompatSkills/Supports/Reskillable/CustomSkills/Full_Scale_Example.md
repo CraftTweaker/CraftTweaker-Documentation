@@ -1,8 +1,8 @@
-# Full Scale Example
+# 全缩放示例
 
-## Credit
+## 学分
 
-Credit goes out to Lead Developer pupnewfster for the below example!
+下面的例子向首席开发者小学生出去！
 
     #modloaded compatskills reskillable
     #priority 1000

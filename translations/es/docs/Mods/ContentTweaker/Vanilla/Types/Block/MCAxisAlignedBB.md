@@ -1,13 +1,13 @@
 # MCAxisAlignedBB
 
-A MineCraft Axis Aligned Boundary Box object allows you change a [Block's](/Mods/ContentTweaker/Vanilla/Creatable_Content/Block/) Boundary borders to a given cuboid shape.
+Un objeto de caja límite alineada del eje de minería le permite cambiar los bordes del límite de un [bloque](/Mods/ContentTweaker/Vanilla/Creatable_Content/Block/) a una forma de cuboide determinada.
 
-## Importing the package
+## Importando el paquete
 
-It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
-`import mods.contenttweaker.AxisAlignedBB;`
+Podría ser necesario que importes el paquete si encuentras algún problema, así que más vale estar seguro que lo sentimos y añadir la importación.  
+`importar mods.contenttweaker.AxisAlignedBB;`
 
-## Calling an MCAxisAlignedBB object
+## Llamar a un objeto MCAxisAlignedBB
 
 You can get such an object using a [Block's](/Mods/ContentTweaker/Vanilla/Creatable_Content/Block/) `axisAlignedBB` Property.  
 Alternatively, you can use this package to create a new MCAxisAlignedBB object:
@@ -16,17 +16,17 @@ Alternatively, you can use this package to create a new MCAxisAlignedBB object:
 AxisAlignedBB.create(double minX, double minY, double minZ, double maxX, double maxY, double maxZ);
 ```
 
-All parameters for this function are doubles between 0 and 1!
+¡Todos los parámetros para esta función son dobles entre 0 y 1!
 
-## ZenProperties
+## Propiedades de Zeng
 
-You can get and set each Property using `getProperty()` or `object.property`.
+Puede obtener y configurar cada propiedad usando `getProperty()` o `object.property`.
 
-| ZenProperty | Type   |
-| ----------- | ------ |
-| minX        | double |
-| minY        | double |
-| minZ        | double |
-| maxX        | double |
-| maxY        | double |
-| maxZ        | double |
+| Propiedad zenica | Tipo  |
+| ---------------- | ----- |
+| minX             | doble |
+| minY             | doble |
+| minZ             | doble |
+| maxX             | doble |
+| maxY             | doble |
+| maxZ             | doble |

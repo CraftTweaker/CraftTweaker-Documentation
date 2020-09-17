@@ -1,50 +1,50 @@
-### Class
+### Clase
 
 ```zenscript
-import mods.arcanearchives.GCT;
+importar mods.arcanearchives.GCT;
 ```
 
-#### Methods
+#### Métodos
 
 ```zenscript
 void addRecipe(
-  string name,         // the recipe name
-  IItemStack output,   // the output as an itemstack
-  IIngredient[] inputs // the inputs as an array of ingredients
+  nombre de cadena, // nombre de la receta
+  Salida de ItemStack, // la salida como una pila de item
+  entradas IIngredient[] // las entradas como una matriz de ingredientes
 );
 ```
 
 * * *
 
 ```zenscript
-void removeRecipe(
-  IItemStack output // the output itemstack to be removed (quantity must match)
+vacía removeRecipe(
+  Salida de ItemStack // la pila de elementos de salida a ser eliminada (la cantidad debe coincidir)
 );
 ```
 
 * * *
 
 ```zenscript
-void replaceRecipe(
-  string name,         // the recipe name (must already exist)
-  IItemStack output,   // the output as an itemstack
-  IIngredient[] inputs // the inputs as an array of ingredients
+anular receta de reemplazo(
+  nombre de cadena, // el nombre de la receta (debe existir ya)
+  Salida de ItemStack, // la salida como una pila de item
+  entradas IIngredient[] // las entradas como una matriz de ingredientes
 );
 ```
 
 * * *
 
-### Examples
+### Ejemplos
 
 ```zenscript
 import mods.arcanearchives.GCT;
 
-// Removes the recipe for radiant dust
+// Elimina la receta para el polvo radiante
 GCT.removeRecipe(<arcanearchives:radiant_dust>*2);
 
-// Adds a new recipe for radiant dust
-GCT.addRecipe("radiant_dust", <arcanearchives:radiant_dust>*2, [<minecraft:flint>, <arcanearchives:raw_quartz>]);
+// Añade una nueva receta para el polvo radiante
+GCT. ddRecipe("radiant_dust", <arcanearchives:radiant_dust>*2, [<minecraft:flint>, <arcanearchives:raw_quartz>]);
 
-// Replaces the shaped radiant quartz recipe without disordering the GCT screen
-GCT.replaceRecipe("shaped_quartz", <arcanearchives:shaped_quartz>, [<arcanearchives:raw_quartz>*10]);
+// Reemplaza la receta de cuarzo brillante en forma sin desordenar la pantalla GCT
+GCT. eplaceRecipe("shaped_quartz", <arcanearchives:shaped_quartz>, [<arcanearchives:raw_quartz>*10]);
 ```

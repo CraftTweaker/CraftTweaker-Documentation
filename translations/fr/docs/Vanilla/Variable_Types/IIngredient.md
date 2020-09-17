@@ -1,122 +1,122 @@
-# IIngredient
+# Ingrédient
 
-An IIngredient is an ingredient for recipes.  
-This could be [an item](/Vanilla/Items/IItemStack/), [an ore dictionary entry](/Vanilla/OreDict/IOreDictEntry/), [a liquid](/Vanilla/Liquids/ILiquidStack/) and much more.
+Un ingrédient est un ingrédient pour les recettes.  
+Ceci pourrait être [un élément](/Vanilla/Items/IItemStack/), [une entrée de dictionnaire de minerai](/Vanilla/OreDict/IOreDictEntry/), [un liquide](/Vanilla/Liquids/ILiquidStack/) et bien plus.
 
-## Importing the package
+## Importation du paquet
 
-It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
-`import crafttweaker.item.IIngredient;`
+Il pourrait vous être nécessaire d'importer le paquet si vous rencontrez des problèmes (comme lancer un [Tableau](/AdvancedFunctions/Arrays_and_Loops/)), alors mieux être sûr que désolé et ajouter l'importation.  
+`importer crafttweaker.item.IIngrédient ;`
 
-## Importing the IIngredient package
+## Importation du paquet Igredient
 
-Usually, you won't need this, but in some cases recipes won't work until you [import](/AdvancedFunctions/Import/) the IIngredient package.  
-You can do this using the following import:
+Habituellement, vous n'aurez pas besoin de cela, mais dans certains cas, les recettes ne fonctionneront pas tant que vous n'aurez pas [importé](/AdvancedFunctions/Import/) le paquet IIngredient.  
+Vous pouvez le faire en utilisant l'import suivant :
 
 ```zenscript
-import crafttweaker.item.IIngredient;
+Importer crafttweaker.item.IIngredient;
 ```
 
-## Functions
+## Fonctions
 
-So, what can we do with this?
+Alors, que pouvons-nous faire de cela?
 
-### Command String
+### Chaîne de commande
 
-The command string is how you would call this item in ZS.  
-This can be a bracket handler or something similar.
+La chaîne de commande est comment vous appelleriez cet élément en ZS.  
+Cela peut être un gestionnaire de parenthèses ou quelque chose de similaire.
 
 ```zenscript
 val item = <minecraft:iron_ingot>;
 
-//prints "<minecraft:iron_ingot>"
+//affiche "<minecraft:iron_ingot>"
 print(item.commandString);
 ```
 
-### Mark
+### Marquer
 
-You can mark an IIngredient so you can later use it in [crafting functions](/Vanilla/Recipes/Crafting/Recipe_Functions/). You can also retrieve the mark applied earlier.
+Vous pouvez marquer un ingrédient pour que vous puissiez l'utiliser plus tard dans [les fonctions de fabrication](/Vanilla/Recipes/Crafting/Recipe_Functions/). Vous pouvez également récupérer la marque appliquée plus tôt.
 
 ```zenscript
-//Marks the pick with the String Picky
-//item.marked(name) <-- Name is a string!
+//Marque le pick avec le String Picky
+//item.marked(nom) <-- Le nom est une chaîne !
 val markedPick = <minecraft:diamond_pickaxe>.marked("Picky");
 
-//prints "Picky"
+//affiche "Picky"
 print(markedPick.mark);
 ```
 
-### Amount
+### Montant
 
-If you want to use more than one of a given item, you can set an amount to an IIngredient.  
-This is as easy as multiplying the IIngredient with an Integer.  
-Retrieveing the amount is also possible.
+Si vous voulez utiliser plus d'un article donné, vous pouvez définir un montant à un ingrédient.  
+Ceci est aussi facile que de multiplier l'ingrédient avec un Integer.  
+Récupérer le montant est également possible.
 
 ```zenscript
 val multipleApples = <minecraft:apple> * 3;
 
-//prints 3
+//affiche 3
 print(multipleApples.amount);
 ```
 
-### OR-ing an IIngredient
+### OU-ing un Igredient
 
-Sometimes you want either IIngredient X or Y, but don't want to create a recipe for each possibility? That's why there's the OR Method for IIngredients:
+Parfois, vous voulez soit Igredient X ou Y, mais vous ne voulez pas créer une recette pour chaque possibilité? C'est pourquoi il y a la méthode OR pour les ingrédients :
 
 ```zenscript
 val item1 = <minecraft:apple>;
 val item2 = <minecraft:carrot>;
 
-val either = item1 | item2;
-val either2 = item1.or(item2);
+val soit = item1 | item2;
+val soit2 = item1.or(item2);
 ```
 
-### Get Possible Items or Liquids
+### Obtenir des objets possibles ou des liquides
 
-Sometimes an IIngredient represents more than one item, for example if you are using an [OreDictEntry](/Vanilla/OreDict/IOreDictEntry/) or if you OR-ed two Ingredients.  
-You can get all possible items for this IIngredient as a List<[IItemStack](/Vanilla/Items/IItemStack/)> List using the first function.  
-The second function does the same as the first function but returns a [IItemStack](/Vanilla/Items/IItemStack/)[] instead of a list. Same goes for liquids in the third function, only they return an [ILiquidStack](/Vanilla/Liquids/ILiquidStack/) List.
+Parfois, un ingrédient représente plus d'un élément, par exemple si vous utilisez un [OreDictEntry](/Vanilla/OreDict/IOreDictEntry/) ou si vous avez OR-ed deux Ingrédients.  
+Vous pouvez obtenir tous les éléments possibles pour cet IIngrédient en tant que List<[IItemStack](/Vanilla/Items/IItemStack/)> Liste en utilisant la première fonction.  
+La seconde fonction fait la même chose que la première fonction, mais retourne un [IItemStack](/Vanilla/Items/IItemStack/)[] au lieu d'une liste. Il en va de même pour les liquides dans la troisième fonction, seulement ils retournent une liste [ILiquidStack](/Vanilla/Liquids/ILiquidStack/).
 
 ```zenscript
-//Returns an IItemStack List
-//possible items: All iron ingots and the gold ingot from MC
-val itemsIngredient = <ore:ingotIron> | <minecraft:gold_ingot>;
+//Renvoie une IItemStack List
+//objets possibles : Tous les lingots de fer et le lingot d'or de MC
+objetsIngrédient val = <ore:ingotIron> | <minecraft:gold_ingot>;
 
 
-//Returns an ILiquidStack List|
-//possible liquids: Lava and Water
-val liquidsIngredient = <liquid:lava> | <liquid:water>;
+//Renvoie une liste ILiquidStack |
+//liquides possibles : Lava et Eau
+vale liquidsIngredient = <liquid:lava> | <liquid:water>;
 
 
-for item in itemsIngredient.items{
-    //Prints each possible item's Display name
-    print(item.displayName);
+pour l'article dans itemsIngrédient. tems{
+    //Affiche le nom d'affichage de chaque élément possible
+    print(item. isplayName);
 }
 
-for item in itemsIngredient.itemArray{
-    //Prints each possible item's Display name
-    print(item.displayName);
+pour l'élément dans itemsIngredient.itemArray{
+    //Affiche le nom d'affichage de chaque élément possible
+    print(item. isplayName);
 }
 
-for liquid in liquidsIngredient.liquids{
-    //Prints each possible liquid's Display name
-    print(liquid.displayName);
+pour le liquide dans liquidsIngredient. iquids{
+    //Affiche le nom d'affichage de chaque liquide possible
+    print(liquide. isplayName);
 }
 
-for liquid in <minecraft:water_bucket>.liquids {
-    //Prints the contained liquid, i.e. water.
-    //May not work for every item, though.
+pour le liquide dans <minecraft:water_bucket>.liquides {
+    //Imprime le liquide contenu, c'est-à-dire l'eau.
+    //Peut ne pas fonctionner pour chaque élément, cependant.
     print(liquid.displayName);
 }
 ```
 
-### Transform an IIngredient upon crafting
+### Transformez un ingrédient lors de la fabrication
 
-Sometimes you want an item not to be consumed upon crafting but instead receive damaged or give back a completely different item.  
-This is what item Transformers are there for.
+Parfois, vous voulez qu'un objet ne soit pas consommé lors de l'artisanat, mais qu'il reçoive des dégâts ou renvoie un objet complètement différent.  
+C'est à quoi servent les transformateurs d'élément.
 
 ```zenscript
-<br />val item = <minecraft:apple>;
+<br /><br />val item = <minecraft:apple>;
 
 //Item won't be consumed and will stay in the grid
 transformedItem = item.reuse();
@@ -124,76 +124,76 @@ transformedItem = item.reuse();
 //Item won't be consumed and the whole stack will be given back to you (does /give).
 transformedItem = item.giveBack();
 
-//item will be consumed but will give the specified stack to you (the crafting slot will be cleared!).
-transformedItem = item.giveBack(<minecraft:potato>);
+//objet sera consommé mais vous donnera la pile spécifiée (le slot de fabrication sera vidé!).
+transformedItem = élément. iveBack(<minecraft:potato>);
 
-//item will be replaced with the specified item, which will instead go to the crafting slot
-transformedItem = item.transformReplace(<minecraft:potato>);
+//l'objet sera remplacé par l'objet spécifié, qui ira à la place à l'emplacement de fabrication
+transforméObjet = objet. ransformReplace(<minecraft:potato>);
 
-//damages the item by 1
-transformedItem = item.transformDamage();
+//dommage l'élément par 1
+élément transformedItem = item. ransformDamage();
 
-//damages the item by the given value
+//dommage l'élément par la valeur donnée
 transformedItem = item.transformDamage(3);
 
-//item will be consumed, no matter what.
+//item sera consommé, quoi qu'il arrive.
 transformedItem = item.noReturn();
 
-//Causes multiple items to be consumed.
+//Fait consommer plusieurs éléments.
 transformedItem = item.transformConsume(3);
 ```
 
-### Ingredient Conditions
+### Conditions de l'ingrédient
 
-Sometimes you want your ingredient to have a specific tag or to only work if (not) damaged. These Conditions can be added to your Ingredients using the following:
+Parfois, vous voulez que votre ingrédient ait une étiquette spécifique ou ne fonctionne que si (non) endommagés. Ces conditions peuvent être ajoutées à vos ingrédients en utilisant les éléments suivants :
 
 ```zenscript
-val item = <minecraft:apple>;
+Article val = <minecraft:apple>;
 
-//Item will only be accepted with at least 1 point damage
-var conditionedItem = item.onlyDamaged();
+//Article ne sera accepté qu'avec au moins 1 point de dégât
+var conditionedItem = item. nlyDamaged();
 
-//Item will only be accepted with at least the specified damage points
-conditionedItem = item.onlyDamageAtLeast(10);
+//L'objet ne sera accepté qu'avec au moins les points de dégâts spécifiés
+conditionedItem = objet. nlyDamageAtLeast(10);
 
-//Item will only be accepted with at most the specified damage points
-conditionedItem = item.onlyDamageAtMost(100);
+//L'objet ne sera accepté qu'avec au maximum les points de dégâts spécifiés
+condiedItem = objet. nlyDamageAtMost(100);
 
-//Item will only be accepted with damage points greater or equal as the first and lesser or equal as the 2nd Integer.
+//L'objet ne sera accepté qu'avec des points de dégâts supérieurs ou égaux au premier et au second entier ou égaux.
 conditionedItem = item.onlyDamageBetween(10,100);
 
-//Item will only be accepted with the specified Tag. The item may have more/other tags than specified, those are ignored when checked.
-//If you want JEI to show the tag in the recipe screen, you'll need to add a tag using "withTag(tag)"
-conditionedItem = item.onlyWithTag({display: {Name: "Tomato"}});
+//L'élément ne sera accepté qu'avec le tag spécifié. L'élément peut avoir plus de balises / autres que celles spécifiées, elles sont ignorées lorsque cochées.
+//Si vous voulez que JEI affiche la balise dans l'écran de recette, vous devrez ajouter une balise en utilisant "withTag(tag)"
+conditionedItem = item. nlyWithTag({display: {Name: "Tomato"}});
 
-//Item will only be accepted with the specified Tag. The item may have more/other tags than specified, those are ignored when checked.
-//Note: This may not work with all ingredients, but it will work for Items. Pro side to using this is that JEI will show the tags in the recipe!
+//L'objet ne sera accepté qu'avec le tag spécifié. L'élément peut avoir plus de balises / autres que celles spécifiées, elles sont ignorées lorsque cochées.
+//Note : Cela peut ne pas fonctionner avec tous les ingrédients, mais cela fonctionnera pour les éléments. Pro côté à utiliser est que JEI affichera les tags dans la recette!
 conditionedItem = item.withTag({display: {Name: "Tomato"}});
 
-//Item will only be accepted if in a Stack of at least the specified amount. Mostly used in combination with the consume transformer.
-//Note that if you only add this, it will still consume only one item per craft.
+//L'objet ne sera accepté que si dans une pile d'au moins le montant spécifié. Principalement utilisé en combinaison avec le transformateur de consommation.
+//Notez que si vous ajoutez seulement ceci, il ne consommera toujours qu'un seul objet par métier.
 conditionedItem = item.onlyStack(32);
 ```
 
-### Matching
+### Correspondance
 
-If you want to check if an IItemStack matches your IIngredient you can use the match method. This will return a boolean. If the IIngredient represents a liquid, it will check if the item is a valid container for this liquid.
+Si vous voulez vérifier si un IItemStack correspond à votre IIngredient, vous pouvez utiliser la méthode de correspondance. Cela retournera un booléen. Si l'ingrédient représente un liquide, il vérifiera si l'article est un contenant valide pour ce liquide.
 
 ```zenscript
 print(<ore:ingotIron>.matches(<minecraft:iron_ingot>));
 print(<ore:ingotIron>.matchesExact(<minecraft:iron_ingot>));
 ```
 
-You can also match two IIngredient Objects, in which case you'd need to use the ```in``` operator:
+Vous pouvez également faire correspondre deux objets Igredient, auquel cas vous devrez utiliser le ```dans``` opérateur:
 
 ```zenscript
-val ingots = <minecraft:iron_ingot> | <minecraft:gold_ingot>;
-val oreIngot = <ore:ingotIron>;
-val ingotGold = <minecraft:gold_ingot>;
+lingots val = <minecraft:iron_ingot> | <minecraft:gold_ingot>;
+or val = <ore:ingotIron>;
+ingotGold = <minecraft:gold_ingot>;
 
-//true as the ingots Ingredient has <minecraft:gold_ingot>
-ingots has ingotGold;
+//vrai comme l'ingrédient des lingots a <minecraft:gold_ingot>
+lingots a ingotGold ;
 
-//false as <minecraft:iron_ingot> cannot be found in <ore:ingotGold>
-oreIngot has ingots;
+//false car <minecraft:iron_ingot> ne peut pas être trouvé dans <ore:ingotGold>
+oreIngot a des lingots;
 ```

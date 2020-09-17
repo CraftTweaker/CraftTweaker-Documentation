@@ -1,14 +1,14 @@
 # PotionBrewPost
 
-This event is fired immediately after a potion has been "brewed" by the brewing stand tile entity, when the output items have already been replaced. If the [PotionBrewPreEvent](/Vanilla/Events/Events/PotionBrewPre/) has been cancelled but the itemstacks within the brewing stand have been modified, this event will also be fired.
+このイベントは、出力アイテムがすでに交換されている場合、醸造スタンドタイルエンティティによってポーションが「醸造」された直後に発生します。 [PotionBrewPreEvent](/Vanilla/Events/Events/PotionBrewPre/) がキャンセルされたが、醸造スタンド内のアイテムスタックが変更された場合は、このイベントも発生します。
 
-If the pre-event is cancelled without modifying itemstacks, this event will **not** be fired.
+プリイベントがアイテムスタックを変更せずにキャンセルされた場合、このイベントは **ではなく** 発生します。
 
-## Event Class
+## イベントクラス
 You will need to cast the event in the function header as this class:  
 `crafttweaker.event.PotionBrewPostEvent` You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
 
-## Event interface extensions
-PotionBrewPost Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+## イベントインターフェースの拡張
+PotionBrewPost Events は以下のインターフェイスを実装しており、すべてのメソッド/ゲッター/セッターを呼び出すことができます。
 
-- [IPotionBrewEvent](/Vanilla/Events/Events/IPotionBrewEvent/)
+- [iPotionBrewEvent](/Vanilla/Events/Events/IPotionBrewEvent/)

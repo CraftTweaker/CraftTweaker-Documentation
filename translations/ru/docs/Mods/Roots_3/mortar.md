@@ -1,15 +1,15 @@
-### Class
+### Класс
 
 ```zenscript
-import mods.roots.Mortar;
+Импортировать mods.roots.Mortar;
 ```
 
-#### Methods
+#### Методы
 
 ```zenscript
 void addRecipe(
-  IItemStack output,   // the item output of this recipe
-  IIngredient[] inputs // an array of ingredients that is either 5 long or 1 long
+  IItemStack, // вывод элемента этого рецепта
+  IIngredient[] входов // массив ингредиентов, который либо 5 длинный, либо 1 длинный,
 );
 ```
 
@@ -17,8 +17,8 @@ void addRecipe(
 
 ```zenscript
 void changeSpell(
-  string spellName,    // the name of the spell as in the spell registry
-  IIngredient[] inputs // an array of 5 items that are the new ingredients for the recipe
+  string spellName, // название заклинания как в реестре заклинаний
+  входов IIngredient[] // массив 5 предметов, являющихся новыми ингредиентами для рецепта
 );
 ```
 
@@ -26,31 +26,31 @@ void changeSpell(
 
 ```zenscript
 void removeRecipe(
-  IItemStack output // the item stack produced by the recipe
+  IItemStack output // стек элементов, производимый рецептом
 );
 ```
 
 * * *
 
-### Examples
+### Примеры
 
 ```zenscript
-import mods.roots.Mortar;
+import mods.roots. ортар;
 
-// Adds a recipe that makes gunpowder out of flint
-// As the recipe only has one input, it will automatically
-// generate 5 recipes, increasing the number of inputs and
-// the quantity of the output respectively.
+// Добавляет рецепт, который выводит порох из кремня
+// Как рецепт имеет только один вход, он будет автоматически
+// генерировать 5 рецептов, увеличивая количество входов и
+// количество выходов соответственно.
 Mortar.addRecipe(<minecraft:gunpowder>, [<minecraft:flint>]);
 
-// This recipe uses five ingredients to create one bed.
-Mortar.addRecipe(<minecraft:bed>, [<minecraft:wool>, <minecraft:wool>, <minecraft:planks>, <minecraft:planks>, <minecraft:planks>]);
+// Этот рецепт использует пять ингредиентов для создания одной кровати.
+Mortar. ddRecipe(<minecraft:bed>, [<minecraft:wool>, <minecraft:wool>, <minecraft:planks>, <minecraft:planks>, <minecraft:planks>]);
 
-// This will remove all recipes that have Root's flour as an output
-// including any multi-ingredient recipes
-Mortar.removeRecipe(<roots:flour>);
+// Это удалит все рецепты, которые имеют корневую муку в выводе
+// включая любые мультиингредиентные рецепты
+Mortar. emoveRecipe(<roots:flour>);
 
-// This will change the recipe for the grove supplication spell to
-// simply require five pieces of sugar.
+// Это изменит рецепт заклинания для высадки рощи на
+// Просто требуем пять частей сахара.
 Mortar.changeSpell("spell_supplication", [<minecraft:sugar>, <minecraft:sugar>, <minecraft:sugar>, <minecraft:sugar>, <minecraft:sugar>]);
 ```

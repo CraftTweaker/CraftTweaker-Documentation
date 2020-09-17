@@ -1,23 +1,23 @@
 # Enervation Dynamo
 
-## Import the package
+## 导入软件包
 
 To shorten method calls you can [import](/AdvancedFunctions/Import/) the package like so:
 
 ```zenscript
-import mods.thermalexpansion.EnervationDynamo;
+导入 mods.thermalext.EnervationDynamo;
 ```
 
-## Add Fuel
+## 添加燃料
 
 ```zenscript
-//mods.thermalexpansion.EnervationDynamo.addFuel(ILiquidStack stack, int energy);
-mods.thermalexpansion.EnervationDynamo.addFuel(<liquid:water>, 13);
+//mods.thermalext.EnervationDynamo.addFuel(StemStack, int energy);
+mods.thermalext.EnervationDynamo.addFuel(<minecraft:stick>, 13);
 ```
 
-## Remove Fuel
+## 移除燃料
 
 ```zenscript
-//mods.thermalexpansion.EnervationDynamo.removeFuel(ILiquidStack stack);
-mods.thermalexpansion.EnervationDynamo.removeFuel(<liquid:water>);
+//mods.thermalext.EnervationDynamo.removeFuel(StemStack stack);
+mods.thermalext.EnervationDynamo.removeFuel(<minecraft:stick>);
 ```

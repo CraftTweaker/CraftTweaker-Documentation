@@ -1,26 +1,26 @@
-# Steam Furnace
+# Horno de vapor
 
-The Steam Furnace is a machine that converts an input item into an output item using steam.
+El horno de vapor es una máquina que convierte un objeto de entrada en un objeto de salida usando vapor.
 
-## Package
+## Paquete
 `mods.steamagerevolution.SteamFurnace`
 
-## Methods
+## Métodos
 
-- **[IItemStack](/Vanilla/Items/IItemStack/) output** The result of the recipe.
-- **[IItemStack](/Vanilla/Items/IItemStack/) input** The input of the recipe.
-- **int craftTime** Crafting time for machine to process
-- **int steamCost** Cost of Steam for machine to process
+- **[ItemStack](/Vanilla/Items/IItemStack/) muestra** El resultado de la receta.
+- **[ItemStack](/Vanilla/Items/IItemStack/) entrada** La entrada de la receta.
+- **tiempo de fabricación** tiempo de fabricación de la máquina para procesar
+- **Coste de SteamCost** de la máquina a procesar
 
-## Addition
+## Adicional
 
 ```zenscript
-mods.steamagerevolution.SteamFurnace.addRecipe(IIngredient input, IItemStack output, int craftTime, int steamCost);
+mods.steamagerevolution.SteamFurnace.addRecipe(entrada IIngredient, salida ItemStack, int craftTime, int steamCost);
 mods.steamagerevolution.SteamFurnace.addRecipe(<ore:cobblestone>, <minecraft:stone>, 200, 200);
 ```
 
 
-## Removal
+## Eliminar
 
 ```zenscript mods.steamagerevolution.SteamFurnace.removeRecipe(IItemStack output); mods.steamagerevolution.SteamFurnace.removeRecipe(<minecraft:glass>);
 

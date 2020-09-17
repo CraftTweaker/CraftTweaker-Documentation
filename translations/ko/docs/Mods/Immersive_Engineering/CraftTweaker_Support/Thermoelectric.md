@@ -11,7 +11,7 @@ You can call the Thermoelectric package using `mods.immersiveengineering.Thermoe
 | Required | Target Block    | [IIngredient](/Vanilla/Variable_Types/IIngredient/) |
 | Required | Temperature (K) | Integer                                             |
 
-### Example
+### 예제
 ```zenscript
 //Example:
 mods.immersiveengineering.Thermoelectric.addTemperatureSource(IIngredient source, int temperature);
@@ -26,7 +26,7 @@ mods.immersiveengineering.Thermoelectric.addTemperatureSource(<minecraft:obsidia
 | -------- | ------------ | --------------------------------------------------- |
 | Required | Target Block | [IIngredient](/Vanilla/Variable_Types/IIngredient/) |
 
-### Example
+### 예제
 ```zenscript
 //Example:
 mods.immersiveengineering.Thermoelectric.removeTemperatureSource(IIngredient source);

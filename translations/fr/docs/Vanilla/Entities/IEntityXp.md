@@ -1,18 +1,18 @@
 # IEntityXp
 
-Represents an XP Orb in the world.
+Représente une orbe d'XP dans le monde.
 
-## Importing the package
+## Importation du paquet
 
-It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
-`import crafttweaker.entity.IEntityXp;`
+Il pourrait vous être nécessaire d'importer le paquet si vous rencontrez des problèmes (comme lancer un [Tableau](/AdvancedFunctions/Arrays_and_Loops/)), alors mieux être sûr que désolé et ajouter l'importation.  
+`import crafttweaker.entity.IEntityXP ;`
 
-## Extending [IEntity](/Vanilla/Entities/IEntity/)
+## Étendre [IEntity](/Vanilla/Entities/IEntity/)
 
-IEntityXp extends [IEntity](/Vanilla/Entities/IEntity/). That means all functions available to [IEntities](/Vanilla/Entities/IEntity/) also are available to IEntityXp.
+IEntityXp étend [IEntity](/Vanilla/Entities/IEntity/). Cela signifie que toutes les fonctions disponibles pour [IEntities](/Vanilla/Entities/IEntity/) sont également disponibles pour IEntityXp.
 
 ## ZenGetters
 
-| ZenGetter | Return Type |
-| --------- | ----------- |
-| xp        | float       |
+| ZenGetter | Type de retour |
+| --------- | -------------- |
+| xp        | flottant       |

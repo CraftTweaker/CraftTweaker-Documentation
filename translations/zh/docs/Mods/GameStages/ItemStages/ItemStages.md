@@ -1,72 +1,72 @@
-# Item Stages
+# 项目阶段
 
-This mod is an addon for the [GameStages API](https://minecraft.curseforge.com/projects/game-stages). Item Stages allows access for items and blocks to be placed into a custom progression system set by the modpack creator. If a player does not have the required stage, the player will have trouble using the item. To learn more about how it does this, check out the mod page [here](https://minecraft.curseforge.com/projects/item-stages)
+这个模组是 [GameStages API](https://minecraft.curseforge.com/projects/game-stages) 的附加值。 项目阶段允许将项目和方块放入由modpack创建者设置的自定义进度系统。 如果玩家没有必要的阶段，则玩家在使用项目时会遇到麻烦。 要了解更多关于如何操作的信息，请在这里查看模组页面 [](https://minecraft.curseforge.com/projects/item-stages)
 
-## Staging an Item
+## 待发布物品
 
-For an item to be restricted with this mod, it needs to be associated with a stage. This can be done in a few different ways.
+要使用此模型限制某个项目，它需要与某个阶段相关联。 这样做可以采取几种不同的方式。
 
 ```zenscript
-// Stages a single block or item. 
+// 分阶段单个块或项目。 
 mods.ItemStages.addItemStage("stage_name", <minecraft:stone>);
 
-// Stages an item with partial NBT. For example this stage all LV 5 enchantment books.
-mods.ItemStages.addItemStage("stage_name", <minecraft:enchanted_book>.withTag({StoredEnchantments: [{lvl: 5 as short}]}));
+// 一个带部分NBT的项目。 例如，本阶段所有LV 5附魔书。
+mods.ItemStages.addItemStage("stage_name", <minecraft:enchanted_book>.withTag({StoredEnchants: [{lvl: 5 as short}]}));
 
-// Stages all items with an ore dictionary tag.
+// 带有矿石字典标签的所有项目阶段。
 mods.ItemStages.addItemStage("stage_name", <ore:dye>);
 
-// Stages all items that are added by a specific mod.
-mods.ItemStages.stageModItems("stage_name", "modid");
+// 阶段所有由特定模组添加的项目。
+mods.ItemStages.stageModits("stage_name", "moded");
 
-// Removes a stage from a specific item, useful when paired with stageModItems to reduce script size.
-mods.ItemStages.removeItemStage(<minecraft:stone>);
+// 删除某个特定项目的一个阶段, 当与stageMod项目配对时, 以减少脚本大小.
+mods.ItemStages.removeItemStage(<minecraft:stone>)；
 ```
 
-## Staging Liquids
+## 暂存液体：
 
-You may want to stage liquids, this is primarily done to hide them in JEI.
+您可能想要舞下液体，这主要是为了将它们隐藏在JEI中。
 
 ```zenscript
-// Stages a single fluid, like water.
+// 相位为单一液体，如水。
 mods.ItemStages.stageLiquid("stage_name", <liquid:water>);
 ```
 
-## Staging Enchantments
+## 暂存附魔方
 
-You can stage enchantments to prevent players from using items that have the enchantment on them.
+你可以舞台附魔，防止玩家使用有附魔的物品。
 
 ```zenscript
-// Stages a specific enchantment. In this case protection.
+// 阶段特定附魔。 在这种情况下提供保护。
 mods.ItemStages.stageEnchant("stage_name", <enchantment:minecraft:protection>);
 
-// Stages a specific enchantment, at a specific level. In this case Protection II.
+// 一个特定的附魔阶段，在特定级别上。 在本案中，第二项保护。
 mods.ItemStages.stageEnchantByLevel("stage_name", <enchantment:minecraft:protection>.makeEnchantment(2));
 ```
 
-## Changing the Unfamiliar Item Name.
+## 更改不熟悉的项目名称。
 
-You may want to give your restricted items a new name while they are hidden. This can be used to add jokes and subtle lore to your pack.
+您可能想要在隐藏受限制的项目时给它们一个新的名称。 这可以用来为你的包添加笑话和微妙的洞穴。
 
 ```zenscript
-// Sets all wool to be named "Clump of Fur" for players who don't have the right stage.
-mods.ItemStages.setUnfamiliarName("Clump of Fur", <minecraft:wool:*>);
+// 设置所有羊毛，为没有适当舞台的玩家命名为“熔炉”。
+mods.ItemStages.setUnfirmName("Clump of Fur", <minecraft:wool:*>);
 ```
 
-## Staging a tooltip
+## 发布工具提示
 
-You can stage parts of tooltips to hide information. This is especially useful when trying to stage mods like Project E which add an "EMC:" tooltip to most items.
+您可以分阶段隐藏信息的工具提示。 这在试图对大多数项目添加一个“EMC:”工具提示的 E项目等模组时特别有用。
 
 ```zenscript
-// Removes any line in a tooltip that starts with "EMC:"
+// 移除以“EMC”开头的工具提示中的任何行：
 mods.ItemStages.stageTooltip("stage_name", "EMC:");
 ```
 
-## Staging a Recipe Category
+## 预订配方类别
 
-You can stage access to an entire recipe category with JEI. For example if you stage the furnace category and a player does not have the stage, they will not be able to see furnace recipes.
+您可以使用 JEI 阶段访问整个配方类别。 例如，如果你舞台上的熔炉类别和玩家没有舞台，他们将无法看到熔炉配方。
 
 ```zenscript
-// Stages a specific recipe category. In this example we are staging the anvil category.
+// 阶段特定的配方类别。 在这个例子中，我们正在进行邪恶的类别。
 mods.ItemStages.stageRecipeCategory("stage_name", "minecraft.anvil");
 ```

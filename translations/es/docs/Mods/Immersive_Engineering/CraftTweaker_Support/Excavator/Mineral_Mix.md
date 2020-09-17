@@ -1,52 +1,52 @@
-# Mineral Mix
+# Mezcla Mineral
 
-## Importing the package
+## Importando el paquete
 
-It might be required for you to import the package if you encounter any issues (like casting an Array). So better be safe than sorry and add the import `import mods.immersiveengineering.MineralMix;`.
+Podría ser necesario que importes el paquete si encuentras algún problema (como casting un Array). Más vale estar seguro que lo sentimos y añadir la importación `de mods.immersiveengineering.MineralMix;`.
 
-## Fail Chance
+## Probabilidad de fallo
 
-You can get and set the failchance for the Mineralmix using the failChance [ZenSetter/Getter] on the object.
+Puede obtener y establecer la posibilidad de fallo para la mezcla de Mineralmix usando la posibilidad de fallar [ZenSetter/Getter] en el objeto.
 
-## Get Mineral
+## Obtener Mineral
 
-| Required | Type | Data Type |
-| -------- | ---- | --------- |
-| Required | Name | string    |
+| Requerido | Tipo   | Tipo de Datos |
+| --------- | ------ | ------------- |
+| Requerido | Nombre | cadena        |
 
 ```zenscript
-//Example:
+//Ejemplo:
 Excavator.getMineral(String Name);
 
 var Iron = Excavator.getMineral("Iron_Ore");
 ```
 
-## Add Ore
+## Añadir minero
 
-| Required | Type   | Data Type |
-| -------- | ------ | --------- |
-| Required | Ore    | string    |
-| Required | Chance | string    |
+| Requerido | Tipo        | Tipo de Datos |
+| --------- | ----------- | ------------- |
+| Requerido | Mena        | cadena        |
+| Requerido | Oportunidad | cadena        |
 
 ```zenscript
 mineralMixObject.addOre("oreIron", 0.5);
 ```
 
-You will need to use the oredict names.
+Necesitará usar los nombres de oredicto.
 
-## Remove Ore
+## Eliminar mineral
 
-| Required | Type | Data Type |
-| -------- | ---- | --------- |
-| Required | Ore  | string    |
+| Requerido | Tipo | Tipo de Datos |
+| --------- | ---- | ------------- |
+| Requerido | Mena | cadena        |
 
 ```zenscript
 mineralMixObject.removeOre("oreIron");
 ```
 
-## Fail Chance Getter/Setter
+## Probabilidad de Fallo Obtenido/Setter
 
-### Example
+### Ejemplo
 
 ```zenscript
 //Getter
@@ -56,28 +56,28 @@ mineralMixObject.failchance;
 mineralMixObject.failchance = 0.5;
 ```
 
-## Full Example
+## Ejemplo completo
 
 ```zenscript
-//Example:
+//Ejemplo:
 import mods.immersiveengineering.Excavator;
 import mods.immersiveengineering.MineralMix;
 
 //Get The Mineral Mix
-mods.immersiveengineering.Excavator.addMineral("Iron_Ore", 50, 0.005, ["oreIron", "oreDiamond"], [0.005, 0.01], [1, 0, -1]);
+mods.immersiveengineering. xcavator.addMineral("Iron_Ore", 50, 0.005, ["oreIron", "oreDiamond"], [0.005, 0.01], [1, 0, -1]);
 
 var Iron = Excavator.getMineral("Iron_Ore");
 
-Iron.addOre("oreIron", 0.5);
+Iron.addOre("oreIron", 0. );
 
 //Print Initial Fail Chance
 print(Iron.failChance);
 
 //Set The Fail Chance to 25%
-Iron.failChance = 0.25;
+Hierro. ailChance = 0.25;
 
-//Print Out The Fail Chance
-print(Iron.failChance);
+//Imprimir la Probabilidad de Falla
+impresión (Hierro. ailance);
 
 //Set The Fail Chance to 50%
 Iron.failChance = 0.5;

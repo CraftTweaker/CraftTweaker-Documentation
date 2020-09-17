@@ -1,19 +1,19 @@
-# Ore Dictionary Bracket Handler
+# Gestionnaire de tranches de dictionnaire d'Ore
 
-The Ore Dictionary Bracket Handler gives you access to the Ore Dictionaries in the game.
+Le gestionnaire de brackets Ore Dictionary vous donne accès aux dictionnaires Ore du jeu.
 
-Ore Dictionarys are referenced in the Ore Dictionary Bracket Handler by like so:
+Ore Dictionarys est référencé dans le gestionnaire de tranches de dictionnaire d'Ore :
 
 ```zenscript
 <ore:orename>
 <ore:ingotIron>
 ```
 
-Returns an [IOreDictEntry](/Vanilla/OreDict/IOreDictEntry/), as long as no `*` is in the call, otherwise returns a `List<IOreDictEntry>` If the oreDictionary is not yet in the game, will create a new and empty oreDictionary with the given name and return that. Please refer to the [Ore Dictionary](/Vanilla/OreDict/IOreDictEntry/) Entry for further information on what to do with them.
+Returns an [IOreDictEntry](/Vanilla/OreDict/IOreDictEntry/), as long as no `*` is in the call, otherwise returns a `List<IOreDictEntry>` If the oreDictionary is not yet in the game, will create a new and empty oreDictionary with the given name and return that. Veuillez vous référer à l'entrée [Dictionnaire de minerai](/Vanilla/OreDict/IOreDictEntry/) pour plus d'informations sur ce qu'il faut faire avec.
 
-# Getting all Registered ore Dictionaries
+# Obtenir tous les dictionnaires de minerais enregistrés
 
-You can use the following command to output all registered ore Dictionaries to the CraftTweaker log
+Vous pouvez utiliser la commande suivante pour afficher tous les dictionnaires de minerais enregistrés dans le journal CraftTweaker
 
     /ct oredict
     /crafttweaker oredict

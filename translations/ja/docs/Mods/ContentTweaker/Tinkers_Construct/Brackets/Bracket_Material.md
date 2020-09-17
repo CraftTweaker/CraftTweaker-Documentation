@@ -1,8 +1,8 @@
 # Material Bracket Handler
 
-The Material Bracket handler's sole purpose is providing you with [Material Representations](/Mods/ContentTweaker/Tinkers_Construct/Material/).
+Material Bracket ハンドラーの唯一の目的は、 [Material Representations](/Mods/ContentTweaker/Tinkers_Construct/Material/) を提供することです。
 
-You use the trait bracket handler like this:
+以下のようにトレイト括弧ハンドラを使用します。
 
 ```zenscript
 <ticonmaterial:identifier>
@@ -10,4 +10,4 @@ You use the trait bracket handler like this:
 <ticonmaterial:iron>
 ```
 
-If the Material is found, this will return an Material Representation Object. Please refer to the [respective Wiki entry](/Mods/ContentTweaker/Tinkers_Construct/Material/) for further information on what you can do with these.
+マテリアルが見つかった場合、マテリアル表現オブジェクトが返されます。 これらを使用して何ができるかについては、それぞれの [Wiki エントリ](/Mods/ContentTweaker/Tinkers_Construct/Material/) を参照してください。

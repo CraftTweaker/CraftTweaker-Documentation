@@ -1,16 +1,16 @@
-### Class
+### Clase
 
 ```zenscript
-import mods.roots.Fey;
+importar mods.roots.Fey;
 ```
 
-#### Methods
+#### Métodos
 
 ```zenscript
 void addRecipe(
-  string name,         // the name of the recipe; if replacing an existing recipe, be sure to use the same name to ensure Patchouli continuity
-  IItemStack output,   // the itemstack produced by this recipe
-  IIngredient[] inputs // an array of IIngredients that make up the recipe; must contain 5 items
+  nombre de cadena, // el nombre de la receta; si sustituye una receta existente, asegúrate de usar el mismo nombre para asegurar la continuidad de Patchouli
+  Salida de ItemStack, // la pila de artículos producida por esta receta
+  entradas IIngredient[] // una matriz de IIngredients que componen la receta; debe contener 5 elementos
 );
 ```
 
@@ -18,41 +18,41 @@ void addRecipe(
 
 ```zenscript
 void addRecipe(
-  string name,          // the name of the recipe; if replacing an existing recipe, be sure to use the same name to ensure Patchouli continuity
-  IItemStack output,    // the itemstack produced by this recipe
-  IIngredient[] inputs, // an array of IIngredients that make up the recipe; must contain 5 items
-  int xp                // the amount of xp (in levels) to reward the player for crafting this recipe
+  nombre de cadena, // el nombre de la receta; si sustituye una receta existente, asegúrate de usar el mismo nombre para asegurar la continuidad de Patchouli
+  Salida de ItemStack, // la pila de artículos producida por esta receta
+  entradas IIngredient[], // una matriz de IIngredients que componen la receta; debe contener 5 objetos
+  int xp // la cantidad de xp (en niveles) para recompensar al jugador por fabricar esta receta
 );
 ```
 
 * * *
 
 ```zenscript
-void removeRecipe(
-  IItemStack output // the item produced by the recipe you wish to remove
+vacía removeRecipe(
+  ItemStack output // el artículo producido por la receta que desea eliminar
 );
 ```
 
 * * *
 
-### Examples
+### Ejemplos
 
 ```zenscript
 import mods.roots.Fey;
 
-// Adds a recipe for TNT using 4 gunpowder and red wool
-Fey.addRecipe("tnt", <minecraft:tnt>, [<minecraft:gunpowder>, <minecraft:gunpowder>, <minecraft:gunpowder>, <minecraft:gunpowder>, <minecraft:wool:14>]);
+// Añade una receta para TNT usando 4 pólvora y lana roja
+Pierde. ddRecipe("tnt", <minecraft:tnt>, [<minecraft:gunpowder>, <minecraft:gunpowder>, <minecraft:gunpowder>, <minecraft:gunpowder>, <minecraft:wool:14>]);
 
-// Adds the above recipe but also grants the player 6 levels (from 0-6 relatively) every time it is crafted
-Fey.addRecipe("tnt", <minecraft:tnt>, [<minecraft:gunpowder>, <minecraft:gunpowder>, <minecraft:gunpowder>, <minecraft:gunpowder>, <minecraft:wool:14>], 6);
+// Añade la receta anterior pero también otorga al jugador 6 niveles (de 0-6 relativamente) cada vez que se fabrica
+Fey. ddReceta("tnt", <minecraft:tnt>, [<minecraft:gunpowder>, <minecraft:gunpowder>, <minecraft:gunpowder>, <minecraft:gunpowder> , <minecraft:gunpowder>, <minecraft:wool:14>], 6);
 
-// Removes the recipe for the living axe
-Fey.removeRecipe(<roots:living_axe>);
+// Elimina la receta del hacha viviente
+Pies. emoveRecipe(<roots:living_axe>);
 
-// Adds a different recipe for the living axe, using the same name, to ensure that it shows up in Patchouli. By default all Fey crafting recipe names are the same as the item's registry name.
+// Añade una receta diferente para el hacha viva, usando el mismo nombre, para asegurar que aparezca en Patchouli. Por defecto, todos los nombres de las recetas de Fabricación de Fey son los mismos que el nombre del registro del artículo.
 Fey.addRecipe("living_axe", <roots:living_axe>, [<minecraft:sand>, <minecraft:dirt>, <minecraft:stone>, <minecraft:glass>, <minecraft:stone_axe>]);
 ```
 
-### Notes
+### Notas
 
-It is important for Patchouli continuity that, if you remove a default recipe (say `living_axe`), that you replace it with another recipe and give that recipe the name `"living_axe"` if you wish Patchouli to properly display the new recipe.
+Es importante para la continuidad de Patchouli que, si eliminas una receta predeterminada (digamos `living_axe`), que lo reemplaces por otra receta y le das a esa receta el nombre `"living_axe"` si deseas que Patchouli muestre correctamente la nueva receta.

@@ -1,6 +1,6 @@
 # ICommand
 
-An ICommand Object represents a command ingame.
+ICommand オブジェクトはコマンドインガムを表します。
 
 ## パッケージのインポート
 
@@ -26,17 +26,17 @@ It might be required for you to import the package if you encounter any issues (
     </td>
     
     <td>
-      string
+      文字列
     </td>
   </tr>
   
   <tr>
     <td>
-      aliases
+      エイリアス
     </td>
     
     <td>
-      List<String\>
+      リスト<String\>
     </td>
   </tr>
 </table>
@@ -46,6 +46,6 @@ It might be required for you to import the package if you encounter any issues (
 - String getUsage([ICommandSender](/Vanilla/Commands/ICommandSender/) sender);
 - void execute([IServer](/Vanilla/Game/IServer/) server, [ICommandSender](/Vanilla/Commands/ICommandSender/) sender, String[] args);
 - boolean checkPermission([IServer](/Vanilla/Game/IServer/) server, [ICommandSender](/Vanilla/Commands/ICommandSender/) sender);
-- List<string> getTabCompletions([IServer](/Vanilla/Game/IServer/) server, [ICommandSender](/Vanilla/Commands/ICommandSender/) sender, String[] args, @Optional [IBlockPos](/Vanilla/World/IBlockPos/) targetPos);
+- リスト<string> getTabCompletions([IServer](/Vanilla/Game/IServer/) server, [ICommandSender](/Vanilla/Commands/ICommandSender/) sender, String[] args, @Optional [IBlockPos](/Vanilla/World/IBlockPos/) targetPos);
 - boolean isUsernameIndex(String[] args, int index);
-- command1 != command2; → You can compare them!
+- command1 != command2; → 比較できます。

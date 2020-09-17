@@ -1,22 +1,22 @@
-# LootingLevel
+# Poziom Lootinga
 
-This event is fired whenever a Living Entity creature is killed in order to calculate the looting level. The value can be increased or decreased or left as-is. The value may have already been modified by other events, but the original value is not included.
+To wydarzenie jest uruchamiane za każdym razem, gdy zabija się istotę jednostki żywej w celu obliczenia poziomu plonu. Wartość ta może być zwiększona lub zmniejszona lub pozostawiona w stosunku do siebie. Wartość mogła być już zmodyfikowana przez inne wydarzenia, ale wartość oryginalna nie jest uwzględniona.
 
-## Event Class
-You will need to cast the event in the function header as this class:  
-`crafttweaker.event.LootingLevelEvent`  
-You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
+## Klasa wydarzenia
+Musisz aktywować wydarzenie w nagłówku funkcji jako klasa:  
+`crafttweaker.event. ootingLevelEvent`  
+Oczywiście możesz również [zaimportować](/AdvancedFunctions/Import/) klasę przed i wtedy użyć tej nazwy.
 
-## Event interface extensions
-LootingLevel Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+## Rozszerzenia interfejsu zdarzenia
+Wydarzenia LootingLevel zaimplementują następujące interfejsy i są w stanie wywołać wszystkie swoje metody/pobierające/ustawiające:
 
 - [ILivingEvent](/Vanilla/Events/Events/ILivingEvent/)
 
 
 ## ZenGetters/ZenSetters
-The following information can be retrieved/set during the event:
+Następujące informacje mogą być pobierane/ustawione podczas wydarzenia:
 
-| ZenGetter      | ZenSetter      | Type                                            |
-| -------------- | -------------- | ----------------------------------------------- |
-| `lootingLevel` | `lootingLevel` | int                                             |
-| `damageSource` |                | [IDamageSource](/Vanilla/Damage/IDamageSource/) |
+| ZenGetter         | ZenSetter         | Typ                                         |
+| ----------------- | ----------------- | ------------------------------------------- |
+| `Poziom lootinga` | `Poziom lootinga` | odcień                                      |
+| `Źródło obrażeń`  |                   | [Źródło ID](/Vanilla/Damage/IDamageSource/) |

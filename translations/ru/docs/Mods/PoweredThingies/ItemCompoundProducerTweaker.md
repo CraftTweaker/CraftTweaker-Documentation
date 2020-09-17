@@ -1,33 +1,33 @@
-# Powered Thingies :: Item Compound Producer
+# Питающие вещи :: Продукт производитель
 
-### Importing
+### Импорт
 
 ```zenscript
 import mods.poweredthingies.Tweaker.itemCompoundProducerTweaker as icp;
 ```
 
-### Listing Keys, Removing Recipes by Key, Clearing
+### Список ключей, удаление рецептов по ключу, очистка
 
 ```zenscript
 icp().logKeys()
-icp().removeRecipe('minecraft:mossy_cobblestone') // check <logKeys> output for valid keys 
+icp().removeRecipe('minecraft:mossy_cobblestone') // проверьте <logKeys> вывод допустимых ключей 
 icp().clear()
 ```
 
-### Adding Recipe
+### Добавление рецепта
 
-##### Signature
+##### Подпись
 
 ```zenscript
 addRecipe(inputStack: IItemStack, inputFluid: ILiquidStack, result: IItemStack)
 ```
 
-##### Example
+##### Пример
 
 ```zenscript
 icp().addRecipe(<minecraft:cobblestone>, <liquid:water> * 125, <minecraft:mossy_cobblestone>);
 ```
 
-### Notes
+### Примечания
 
-All of these actions will get cached and ran after the default registry for this machine has finished registering all recipes (including the ones from the custom jsons).
+Все эти действия будут кэшироваться и запускаться после завершения регистрации реестра по умолчанию (в том числе от пользовательских json).

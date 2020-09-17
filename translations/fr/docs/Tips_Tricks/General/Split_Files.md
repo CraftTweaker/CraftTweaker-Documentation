@@ -1,24 +1,24 @@
-# Split your scripts into multiple files
+# Diviser vos scripts en plusieurs fichiers
 
-It is a good idea to split your script into multiple files
+C'est une bonne idée de diviser votre script en plusieurs fichiers
 
-## Problem
+## Problème
 
-- When writing scripts for bigger modpacks, your script might soon become pretty long and confusing.
-- Debugging a long script might take really long, especially if you have an error that doesn't point out a specific line in your script.
+- Lorsque vous écrivez des scripts pour des modpacks plus grands, votre script pourrait bientôt devenir assez long et confus.
+- Déboguer un script long peut prendre beaucoup de temps, surtout si vous avez une erreur qui ne signale pas une ligne spécifique dans votre script.
 
-## What we know/need to know
+## Ce que nous savons/avons besoin de savoir
 
-- CraftTweaker can load files from multiple script files.
-- CraftTweaker can even load files in subfolders.
-- Also, CraftTweaker can load .zip files that contain .zs scripts inside them, as long as the .zip file is not password protected.
+- CraftTweaker peut charger des fichiers à partir de plusieurs fichiers de scripts.
+- CraftTweaker peut même charger des fichiers dans des sous-dossiers.
+- De plus, CraftTweaker peut charger des fichiers .zip qui contiennent des scripts .zs à l'intérieur d'eux, tant que le fichier .zip n'est pas protégé par mot de passe.
 
 ## Solution
 
-- Split your large scripts into multiple smaller ones.
-- You could for example create one script for each mod, or each mod handler.
+- Divisez vos grands scripts en plusieurs plus petits.
+- Vous pouvez par exemple créer un script pour chaque mod, ou chaque gestionnaire de mod.
 
-## Example
+## Exemple
 
 ```zenscript
 scripts
@@ -26,7 +26,7 @@ scripts
         Compactor.zs
         Crucible.zs
     Vanilla
-        Recipes
+        Recettes
             Remove.zs
             Shaped.zs
             Shapeless.zs
@@ -34,13 +34,13 @@ scripts
     oreDict.zs
 ```
 
-## Advantages
+## Avantages
 
-- Your script files become easier to debug.
-- An error won't stop your whole script from working but instead only a small part of it.
-- People checking your script files can easier orient themselves
+- Vos fichiers de script deviennent plus faciles à déboger.
+- Une erreur n'empêchera pas tout votre script de fonctionner, mais seulement une petite partie de celui-ci.
+- Les personnes qui vérifient vos fichiers de script peuvent s'orienter plus facilement
 
-## Disadvantages
+## Inconvénients
 
-- You need to be careful with the loading order of the scripts (especially if one script removes a recipe and another one adds it). Check the [Priority Preprocessor](/AdvancedFunctions/Preprocessors/PriorityPreprocessor/) if your script loading order is a problem
-- There are many ways to categorize your scripts after and yours may be confusing for outsiders.
+- Vous devez être prudent avec l'ordre de chargement des scripts (surtout si un script supprime une recette et qu'un autre l'ajoute). Vérifiez le [Préprocesseur de priorité](/AdvancedFunctions/Preprocessors/PriorityPreprocessor/) si l'ordre de chargement de votre script est un problème
+- Il y a plusieurs façons de catégoriser vos scripts après et le vôtre peut être source de confusion pour les étrangers.

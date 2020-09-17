@@ -1,34 +1,34 @@
-# Reservoir
+# 貯水池:
 
 ## registerReservoir
 
-| Type            | Data Type                                    |
-| --------------- | -------------------------------------------- |
-| Name Identifier | 文字列型                                         |
-| Fluid           | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
-| Minimum Size    | Integer                                      |
-| Maximum Size    | Integer                                      |
-| Replenish Rate  | Integer                                      |
-| Weight          | Integer                                      |
+| タイプ   | データタイプ                                       |
+| ----- | -------------------------------------------- |
+| 名前識別子 | 文字列型                                         |
+| Fluid | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
+| 最小サイズ | 整数                                           |
+| 最大サイズ | 整数                                           |
+| 補充率   | 整数                                           |
+| 重量    | 整数                                           |
 
-### Weight
+### 重量
 
-Weight is the Weighted Chance of a chunk containing that specific fluid reservoir. The weight is counted as in X in Total.
+重量は、特定の流体貯水池を含むチャンクの重量チャンスです。 重量は、合計でXとしてカウントされます。
 
 So if you have 5 Reservoir values at: 5, 5, 6, 8, 10
 
-Then each respective entry will have a weighted chance of:
+それぞれのエントリには、以下の重み付きの可能性があります。
 
-    5  in 34
-    5  in 34
-    6  in 34
-    8  in 34
+    5 in 34
+    5 in 34
+    6 in 34
+    8 in 34
     10 in 34
     
 
-### Code Example:
+### コード例:
 
 ```zenscript
 mods.immersivepetroleum.Reservoir.registerReservoir(String name, ILiquidStack fluid, int minSize, int maxSize, int replenishRate, int weight);
-mods.immersivepetroleum.Reservoir.registerReservoir("WaterTest", <liquid:water>, 48000, 64000, 200, 5);
+mods.immursivetroleum.reservoir.registervoir("WaterTest", <liquid:water>, 48000, 64000, 200, 5);
 ```

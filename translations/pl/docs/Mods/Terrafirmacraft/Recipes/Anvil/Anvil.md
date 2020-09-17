@@ -1,24 +1,24 @@
-# Anvil
+# Kowadło
 
-## Package
+## Pakiet
 ```zenscript
-import mods.terrafirmacraft.Anvil;
+importuj mods.terrafirmacraft.Anvil;
 ```
 
-## Addition
+## Dodanie
 
 ```zenscript
-Anvil.addRecipe(String registryName, IIngredient input, IItemStack output, int minTier, String skillType, String... forgeRules);
+Anvil.addRecipe(String registryName, IIngredient Input, IItemStack output, int minTier, String umiejętności, String... forgeRules);
 ```
-- Input can't be stacked. Anvils only accept one item per slot.
-- input must be forgeable (please refer to [ItemRegistry](/Mods/Terrafirmacraft/ItemRegistry) for registering forging capability to an item).
-- Tiers are 0 = Stone, 1 = Copper, 2 = Bronze, 3 = Wrought Iron, 4 = Steel, 5 = Black Steel and 6 = Red/Blue Steel.
-- Skill type is what category of skill the forging should contribute to. Valid entries are `general`, `tools`, `weapons`, `armor`, or null. If the skill type is `tools`, `weapons`, or `armor` then the result item will have a skill bonus applied to it.
-- A recipe must have 1, 2 or 3 rules. Rules consist of a type (`HIT`, `DRAW`, `PUNCH`, `BEND`, `UPSET`, or `SHRINK`), followed by an order (`ANY`, `NOT_LAST`, `LAST`, `SECOND_LAST`, `THIRD_LAST`), separated by an underscore. As example, `HIT_ANY`, `DRAW_SECOND_LAST`, and `UPSET_NOT_LAST` are valid rule names.
+- Wejście nie może być ustawione. Kąty akceptują tylko jeden przedmiot na miejsce.
+- dane wejściowe muszą być wykute (zapoznaj się z [ItemRegistry](/Mods/Terrafirmacraft/ItemRegistry) , aby zarejestrować zdolność do wykuwania przedmiotu).
+- Poziomy dokładności to 0 = Kamień, 1 = Miedź, 2 = Brąz, 3 = stal nieobrobiona plastycznie, 4 = Stal, 5 = stal czarna i 6 = stal czerwona/niebieska.
+- Typ umiejętności jest kategorią umiejętności, do której wykuwanie powinno się przyczynić. Prawidłowe wpisy to: `generalne`, `narzędzia`, `broń`, `pancerz`lub null. Jeśli typ umiejętności to `narzędzia`, `broń`, lub `zbroi` , wtedy przedmiot wyniku będzie miał do niego zastosowany bonus umiejętności.
+- Przepis musi mieć 1, 2 lub 3 reguły. Reguły składają się z typu (`HIT`, `DRAW`, `PUNCH`, `POBIERZ`, `UPSET`lub `SHRINK`), po której następuje zamówienie (`JEJ`, `NOT_LAST`, `OSTATNIO` `SECOND_LAST`, `THIRD_LAST`), oddzielone podkreśleniem. Na przykład `HIT_ANY`, `DRAW_SECOND_LAST`, i `UPSET_NOT_LAST` są poprawnymi nazwami reguł.
 
-## Removal
+## Usuwanie
 
 ```zenscript
-Anvil.removeRecipe(IItemStack output);
-Anvil.removeRecipe(String registryName);
+Anvil.removeRecipe(wyjście IItemStack);
+Anvil.removeRecipe(string registryName);
 ```

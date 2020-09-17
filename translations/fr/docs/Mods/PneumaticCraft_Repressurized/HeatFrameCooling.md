@@ -1,30 +1,30 @@
-# Heat Frame Cooling
+# Refroidissement par cadre thermique
 
-Heat Frame Cooling can be used to transform one item into another by placing items in a chest or other inventory with a Heat Frame attached, and cooling it to below 0°C (commonly using a Vortex Tube).
+Le refroidissement de cadre thermique peut être utilisé pour transformer un objet en un autre en plaçant des objets dans un coffre ou un autre inventaire avec un cadre thermique, et le refroidir à moins de 0°C (communément à l'aide d'un tube Vortex).
 
-## Calling
+## Appel en cours
 
-You can call the Heat Frame Cooling package using `mods.pneumaticcraft.heatframecooling`
+Vous pouvez appeler le pack de refroidissement pour cadre thermique en utilisant `mods.pneumaticcraft.heatframeing`
 
-## Removing
+## Enlèvement
 
-This function removes the first recipe it finds with the given [IIngredient](/Vanilla/Variable_Types/IIngredient/) `output`:
+Cette fonction supprime la première recette qu'elle trouve avec la sortie [IIngrédient](/Vanilla/Variable_Types/IIngredient/) ``:
 
 ```zenscript
 mods.pneumaticcraft.heatframecooling.removeRecipe(IIngredient output);
-// Example
+// Exemple
 mods.pneumaticcraft.heatframecooling.removeRecipe(<minecraft:obsidian>);
 ```
 
-This function removes *all* Heat Frame Cooling recipes:
+Cette fonction supprime *toutes les recettes* de refroidissement de cadre thermique :
 
 ```zenscript
 mods.pneumaticcraft.heatframecooling.removeAllRecipes();
 ```
 
-## Adding
+## Ajout en cours
 
-These functions are used to add new recipes for the Heat Frame Cooling system:
+Ces fonctions sont utilisées pour ajouter de nouvelles recettes pour le système de refroidissement à cadre thermique :
 
 ```zenscript
 mods.pneumaticcraft.heatframecooling.addRecipe(IItemStack input, IItemStack output);

@@ -1,55 +1,55 @@
-# Mob Stages
+# Fases de criatura
 
-This mod is an addon for the [GameStages API](https://minecraft.curseforge.com/projects/game-stages). Mob Stages allows for mob spawning to be configured into a custom progression system. For more info on how the mod works, check out the mod page [here](https://minecraft.curseforge.com/projects/mob-stages)
+Este mod es un complemento para la [API de GameStages](https://minecraft.curseforge.com/projects/game-stages). Las etapas de criatura permiten que la generación de ratones sea configurada en un sistema de progresión personalizado. Para más información sobre cómo funciona el mod, revisa la página de mod [aquí](https://minecraft.curseforge.com/projects/mob-stages)
 
-## Global Options
+## Opciones globales
 
-Creates a new gloabl entry for the mob. Only one global entry can exist per mob.
+Crea una nueva entrada de gloabl para el Mob. Sólo puede existir una entrada global por mob.
 
 ```zenscript
 // mods.MobStages.addStage(String stage, String entityId);
 mods.MobStages.addStage("one", "minecraft:zombie");
 ```
 
-Adds a replacement for the mob. If the mob fails to spawn because there are no valid players nearby, the replacement mob will be spawned in it's place.
+Añade un reemplazo para el mob. Si el mob no aparece porque no hay jugadores válidos cerca, el mob de reemplazo aparecerá en su lugar.
 
 ```zenscript
 // mods.MobStages.addReplacement(String entityId, String replacementId);
 mods.MobStages.addReplacement("minecraft:zombie", "minecraft:slime");
 ```
 
-Sets the range to search for valid players. The default range is 512 blocks, so this is optional.
+Establece el rango para buscar jugadores válidos. El rango por defecto es de 512 bloques, así que esto es opcional.
 
 ```zenscript
 // mods.MobStages.addRange(String entityId, int range);
 mods.MobStages.addRange("minecraft:zombie", 32);
 ```
 
-Allows for spawners to override the stage check. The default is false. If set to true, spawners will work for this mob, even if there are no valid players.
+Permite a los generadores sobreescribir la comprobación de escena. El valor por defecto es falso. Si se establece en verdadero, los spawners trabajarán para este Mob, incluso si no hay jugadores válidos.
 
 ```zenscript
 // mods.MobStages.toggleSpawners(String entityId, boolean allow);
 mods.MobStages.toggleSpawners("minecraft:zombie", true);
 ```
 
-## Dimension Specific Options
+## Opciones específicas de la dimensión
 
-Dimension specific options are nearly the same as the global options, however they have another argument added to the end, which is the Integer dimension id. Dimension specific entries will override the global entry in that dimension. You can only have one entry per mob, per dimension.
+Las opciones específicas de la dimensión son casi las mismas que las opciones globales, sin embargo tienen otro argumento añadido al final, que es la dimensión Integer id. Las entradas específicas de la dimensión anularán la entrada global en esa dimensión. Sólo puedes tener una entrada por mob, por dimensión.
 
-## Example Script
+## Ejemplo de script
 
 ```zenscript
-// Creepers require stage one to spawn
+// Los creepers requieren la etapa uno para generar
 mods.MobStages.addStage("one", "minecraft:creeper");
 
-// Skeletons require stage two, or any spawner.
-mods.MobStages.addStage("two", "minecraft:skeleton");
+// Los esqueletos requieren la etapa dos, o cualquier spawner.
+mods.MobStages.addStage("dos", "minecraft:skeleton");
 mods.MobStages.toggleSpawner("minecraft:skeleton", true);
 
-// Spiders require stage three in the nether.
+// Las arañas requieren la etapa tres en el ninguno de los dos.
 mods.MobStages.addStage("three", "minecraft:spider", -1);
 
-// Zombies require stage 4 in the nether, and are replaced by bats if they can't.
+// Los zombies requieren el estadio 4 en el ninguno y son reemplazados por murciélagos si no pueden.
 mods.MobStages.addStage("four", "minecraft:zombie", -1);
 mods.MobStages.toggleSpawner("minecraft:zombie", true, -1);
 mods.MobStages.addStage("four", "minecraft:zombie", -1);

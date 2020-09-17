@@ -1,25 +1,25 @@
-# PlayerBrewedPotion
+# format@@0 PlayerBrewedPotion
 
-The PlayerBrewedPotion Event is fired whenever a player takes out a potion from the brewing stand.
+L'événement PlayerBrewedPotion est lancé chaque fois qu'un joueur sort une potion du stand de brassage.
 
-## Event Class
+## Classe de l'événement
 
-You will need to cast the event in the function header as this class:  
-`crafttweaker.event.PlayerBrewedPotionEvent`  
-You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
+Vous devrez lancer l'événement dans l'en-tête de la fonction comme cette classe:  
+`crafttweaker.event. layerBrewedPotionEvent`  
+Vous pouvez, bien sûr, également [importer](/AdvancedFunctions/Import/) la classe avant et utiliser ce nom alors.
 
-## Event interface extensions
+## Extensions d'interface de l'événement
 
-PlayerBrewedPotion Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+Les événements PlayerBrewedPotion implémentent les interfaces suivantes et peuvent également appeler toutes leurs méthodes/getters/setters :
 
-- [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
+- [Evénement IPlayer](/Vanilla/Events/Events/IPlayerEvent/)
 
 ## ZenGetters
 
-The following information can be retrieved from the event:
+Les informations suivantes peuvent être récupérées à partir de l'événement :
 
-| ZenGetter | Return Type                              |
+| ZenGetter | Type de retour                           |
 | --------- | ---------------------------------------- |
-| `player`  | [IPlayer](/Vanilla/Players/IPlayer/)     |
+| `Joueur`  | [IPlayer](/Vanilla/Players/IPlayer/)     |
 | `potion`  | [IItemStack](/Vanilla/Items/IItemStack/) |
-| `hand`    | string                                   |
+| `main`    | chaîne de caractères                     |

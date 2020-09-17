@@ -1,68 +1,73 @@
 # Crucible
 
-## Basic Recipe
+## Einfaches Rezept
 
-* Adds a Unstoked Crucible Recipe 
+* Fügt ein ungestürmtes Crucible Rezept hinzu 
 
 ```zenscript
-mods.betterwithmods.Crucible.addUnstoked(IIngredient[] inputs, IItemStack[] outputs);
-//Examples
+mods.betterwithmods.Crucible.addUnstoked(IIngredient[] Eingänge, IItemStack[] Ausgabe);
+//Beispiele
 mods.betterwithmods.Crucible.addUnstoked([<ore:cobblestone>],[<minecraft:stone>]);
 mods.betterwithmods.Crucible.addUnstoked([<minecraft:dirt>],[<minecraft:grass>]);
 ```
 
-* Adds a Stoked Crucible Recipe 
+* Fügt ein gestopftes Crucible Rezept hinzu 
 
 ```zenscript
-mods.betterwithmods.Crucible.addStoked(IIngredient[] inputs, IItemStack[] outputs);
-//Examples
+mods.betterwithmods.Crucible.addStoked(IIngredient[] Eingänge, IItemStack[] Ausgabe);
+//Beispiele
 mods.betterwithmods.Crucible.addStoked([<ore:cobblestone>],[<minecraft:stone>]);
 mods.betterwithmods.Crucible.addStoked([<minecraft:dirt>],[<minecraft:grass>]);
 ```
 
-## Removal
+## Entfernen
 
-* Remove a Crucible recipe based on the output
+* Entferne ein Crucible Rezept basierend auf der Ausgabe
 
 ```zenscript
-mods.betterwithmods.Crucible.remove(IItemStack[] outputs);
+mods.betterwithmods.Crucible.remove(IItemStack[] Ausgänge);
 ```
 
-* Remove all Crucible recipes
+* Entferne alle Crucible Rezepte
 
 ```zenscript
 mods.betterwithmods.Crucible.removeAll();
 ```
 
-## Builder
+## Erbauer
 
-The Crucible has a recipe builder that allows more precise control over the recipes. All previous methods are simply short cuts to using the builder.
+Der Crucible hat einen Rezeptbauer, der eine genauere Kontrolle über die Rezepte ermöglicht. Alle bisherigen Methoden sind einfach kurze Abschnitte zur Verwendung des Builders.
 
-* To create a new Crucible builder. `mods.betterwithmods.Crucible.builder()`
+* Einen neuen Crucible Builder erstellen. `mods.betterwithmods.Crucible.builder()`
 
-* Crucible methods
+* Schmelzbare Methoden
      
      * Sets up the inputs and outputs of the recipe  
+          zenscript buildRecipe(IIngredient[] inputs, IItemStack[] outputs)  
               zenscript
-              buildRecipe(IIngredient[] inputs, IItemStack[] outputs)
+              buildRecipe(IIngredient[] Eingänge, IItemStack[] Ausgaben)
      
-     * Sets the priority of the recipe, the lower the priority the sooner it will be crafted. Default=0.  
+     * Legt die Priorität des Rezepts fest, je niedriger die Priorität ist, desto schneller wird es hergestellt. Default=0.  
+          zenscript setPriority(int priority)  
               zenscript
               setPriority(int priority)
      
-     * Set the Heat requirements of the recipe. Heat is used to check if the recipe can be made in a stoked or unstoked Crucible. Unstoked heat = 1, Stoked heat = 2. You can add custom heat sources, and even custom heat levels using the [Heat Registry](/Mods/Modtweaker/BetterWithMods/HeatRegistry/).  
+     * Legen Sie die Wärmeanforderungen des Rezeptes fest. Die Hitze wird verwendet, um zu überprüfen, ob das Rezept in einem gestapelten oder ungestapelten Crucible hergestellt werden kann. Ungestürmte Hitze = 1, Stoked Hitze = 2. You can add custom heat sources, and even custom heat levels using the [Heat Registry](/Mods/Modtweaker/BetterWithMods/HeatRegistry/).  
+          zenscript setHeat(int heat)  
               zenscript
               setHeat(int heat)
      
      * Set the recipe to ignore the heat value and craft anyways  
+          zenscript setIgnoreHeat(boolean ignoreHeat)  
               zenscript
               setIgnoreHeat(boolean ignoreHeat)
      
      * Finalize the recipe and add it to the game  
+          zenscript build()  
               zenscript
               build()
 
-### Example builder usage
+### Beispiel-Builder-Nutzung
 
 ```zenscript
 mods.betterwithmods.Crucible.builder()

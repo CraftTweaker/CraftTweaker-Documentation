@@ -1,37 +1,37 @@
 # ICraftingRecipe
 
-An ICraftingRecipe is a crafting table recipe the way ZS sees it.
+ICraftingRecipeはZSがそれを見る方法をクラフトテーブルレシピです。
 
-## Importing the class
+## クラスのインポート
 
-It might be required to [import](/AdvancedFunctions/Import/) the class to avoid errors.  
+エラーを避けるためにクラスを [インポート](/AdvancedFunctions/Import/) する必要があるかもしれません。  
 `import crafttweaker.recipes.ICraftingRecipe`
 
 ## ZenMethods/Getters
 
-### Get Ingredients
+### 材料を入手
 
-Either returns an [IIngredient](/Vanilla/Variable_Types/IIngredient/)[] or an [IIngredient](/Vanilla/Variable_Types/IIngredient/)[][]
+[IIngredient](/Vanilla/Variable_Types/IIngredient/)[] または [IIngredient](/Vanilla/Variable_Types/IIngredient/) [][] を返します。
 
 ```zenscript
-rec.ingredients1D
-rec.ingredients2D
+rec.foodents1D
+rec.食材2D
 ```
 
 ### Get standart output
 
-Returns the ouptut as [IItemStack](/Vanilla/Items/IItemStack/). Careful, can be null!
+アウプトゥットを [IItemStack](/Vanilla/Items/IItemStack/) として返します。 注意してください、nullすることができます!
 
 ```zenscript
 rec.output
 ```
 
-### Check for conditions
+### 条件のチェック
 
-Each of these returns a boolean
+それぞれがブール値を返します。
 
 ```zenscript
-rec.hasTransformers;
+rec.hasTransformer;
 rec.hasRecipeAction;
 rec.hasRecipeFunction;
 rec.hidden;
@@ -40,25 +40,25 @@ rec.shaped;
 
 ### resourceDomain
 
-Basically, the modid of the mod that added the recipe.
+基本的には、レシピを追加したModのMODO。
 
 ```zenscript
 rec.resourceDomain;
 rec.fullResourceDomain;
 ```
 
-### Ingredients
+### 材料
 
-Returns the ingredients list as [IIngredient](/Vanilla/Variable_Types/IIngredient/)\[] or [IIngredient](/Vanilla/Variable_Types/IIngredient/)\[]\[] respectively.
+原材料リストを [IIngredient](/Vanilla/Variable_Types/IIngredient/)\[] または [IIngredient](/Vanilla/Variable_Types/IIngredient/)\[]\[] として返します。
 
 ```zenscript
-rec.ingredients1D;
-rec.ingredients2D;
+rec.食材1D;
+rec.食材2D;
 ```
 
-### Output
+### 出力
 
-The [IItemStack](/Vanilla/Items/IItemStack/) output of the recipe.
+レシピの [IItemStack](/Vanilla/Items/IItemStack/) 出力。
 
 ```zenscript
 rec.output;

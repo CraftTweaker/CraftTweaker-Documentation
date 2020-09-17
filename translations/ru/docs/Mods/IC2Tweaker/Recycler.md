@@ -1,17 +1,17 @@
-# Recycler
+# Переработчик
 
-## Package
+## Пакет
 
-`import mods.ic2.Recycler;`
+`импорт mods.ic2.Recycler;`
 
-## Methods
+## Методы
 
-- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) ingredient** The item to be blacklisted from recycler (as source of scrap)
+- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) ингредиент** Предмет, который будет зачеркнут из рециркулятора (в качестве источника металлолома)
 
 ## Add Blacklist
 
 ```zenscript
-mods.ic2.Recycler.addBlacklist(IIngredient ingredient);
+mods.ic2.Recycler.addBlacklist(IIngredient ингредиент);
 
 mods.ic2.Recycler.addBlacklist(<minecraft:dirt>);
 ```

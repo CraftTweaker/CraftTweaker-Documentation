@@ -1,14 +1,14 @@
 # RecipeBuilder
 
-The RecipeBuilder class only has one objective: Creating a new [RecipePrimer](/Mods/ModularMachinery/Recipes/RecipePrimer/) Object for you.
+Die RecipeBuilder-Klasse hat nur ein Ziel: Erstellen eines neuen [RecipePrimer](/Mods/ModularMachinery/Recipes/RecipePrimer/) Objekts für Sie.
 
-## Calling
+## Anruf
 
-You can call the Brew package using `mods.modularmachinery.RecipeBuilder`
+Sie können das Braupaket mit `mods.modularmachinery.RecipeBuilder` aufrufen
 
-## Creating a RecipePrimer.
+## Erstelle einen RecipePrimer.
 
-These are the only functions to be found in the class, they both return a new [RecipePrimer](/Mods/ModularMachinery/Recipes/RecipePrimer/) Object.
+Dies sind die einzigen Funktionen, die in der Klasse gefunden werden, beide geben ein neues [RecipePrimer](/Mods/ModularMachinery/Recipes/RecipePrimer/) Objekt zurück.
 
 ```zenscript
 //mods.modularmachinery.RecipeBuilder.newBuilder(String recipeRegistryName, String associatedMachineRegistryName, int processingTickTime);

@@ -1,16 +1,16 @@
-# PlayerChangedDimension
+# Spielergröße geändert
 
 The PlayerChangedDimension Event is fired whenever a [player's](/Vanilla/Players/IPlayer/) [dimension/world](/Vanilla/World/IWorld/) changes, for example upon entering/leaving the nether.
 
 ## Event-Klasse
 
-You will need to cast the event in the function header as this class:  
-`crafttweaker.event.PlayerChangedDimensionEvent`  
-You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
+Du musst das Ereignis als diese Klasse in den Funktionskopf verschieben:  
+`crafttweaker.event. layerChangedDimensionEvent`  
+Sie können natürlich auch [die Klasse vor](/AdvancedFunctions/Import/) importieren und dann diesen Namen verwenden.
 
 ## Erweiterte Event-Schnittellen
 
-PlayerChandedDimension Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+PlayerChandedDimension Events implementieren die folgenden Schnittstellen und können alle ihre Methoden/Getters/Setter auch aufrufen:
 
 - [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
 
@@ -18,10 +18,10 @@ PlayerChandedDimension Events implement the following interfaces and are able to
 
 Die folgenden Informationen lassen sich von diesem Event (Ereignis) abrufen:
 
-| ZenGetter   | Rückgabetyp                          |
-| ----------- | ------------------------------------ |
-| `player`    | [IPlayer](/Vanilla/Players/IPlayer/) |
-| `from`      | int                                  |
-| `fromWorld` | [IWorld](/Vanilla/World/IWorld/)     |
-| `to`        | int                                  |
-| `toWorld`   | [IWorld](/Vanilla/World/IWorld/)     |
+| ZenGetter  | Rückgabetyp                          |
+| ---------- | ------------------------------------ |
+| `player`   | [IPlayer](/Vanilla/Players/IPlayer/) |
+| `von`      | int                                  |
+| `von Welt` | [IWorld](/Vanilla/World/IWorld/)     |
+| `zu`       | int                                  |
+| `zur Welt` | [IWorld](/Vanilla/World/IWorld/)     |

@@ -1,31 +1,31 @@
-# Toaster
+# Toster
 
-The Toaster crips up food to start your day.
+Tłumacz pisze jedzenie aby zacząć Twój dzień.
 
-## Default Toaster Recipes
+## Domyślne przepisy dla tasterów
 
-- Beef -> Cooked Beef
-- Sausage -> Cooked Sausage
-- Kebab -> Cooked Kebab
+- Wołowina -> Gotowana Wołowina
+- Kiełbasa -> gotowana kiełbasa
+- Kebab -> Upieczony Kebab
 
-## Removing
+## Usuwanie
 
-## Remove matching toaster recipes.
+## Usuń pasujące przepisy tostera.
 
 ```zenscript
-mods.cfm.Toaster.remove(@Optional final IIngredient output, @Optional final IIngredient input);
+mods.cfm.Toaster.remove(@Opcjonalny końcowy wyjście IIngredient, @Opcjonalny końcowy wstęp IIngredient);
 
-// Remove recipes that make Toast from a Bread Slice
-mods.cfm.Toaster.remove(<cfm:item_toast>,<cfm:item_bread_slice>);
-// Remove all recipes
+// Usuń przepisy tworzące Toast z modów Cichy
+fm.Toaster.remove(<cfm:item_toast>,<cfm:item_bread_slice>);
+// Usuń wszystkie przepisy
 mods.cfm.Toaster.remove();
 ```
 
-## Adding
+## Dodawanie
 
-Add a toaster recipe.
+Dodaj przepis.
 
-## Only supports inputs of size 1.
+## Wspiera tylko dane wejściowe o rozmiarze 1.
 
 ```zenscript
 mods.cfm.Toaster.addRecipe(@Nonnull final IItemStack output, @Nonnull final IItemStack input);

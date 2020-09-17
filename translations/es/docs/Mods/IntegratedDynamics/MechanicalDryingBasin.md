@@ -1,30 +1,30 @@
-# MechanicalDryingBasin
+# Cuenca seca mecánica
 
-This package allows you to modify recipes for the Mechanical Drying Basin.
+Este paquete le permite modificar las recetas de la Cuenca de Secado Mecánico.
 
-## Importing the package
+## Importando el paquete
 
-If you want to import this package, here you go:
+Si quieres importar este paquete, aquí vas:
 
 ```zenscript
-import mods.integrateddynamics.MechanicalDryingBasin;
+importar mods.integrateddynamics.MechanicalDryingBasin;
 ```
 
-## Adding Recipes
+## Añadiendo recetas
 
 ```zenscript
-//MechanicalDryingBasin.addRecipe(@Optional IItemStack inputStack, @Optional ILiquidStack inputFluid, @Optional IItemStack outputStack, @Optional ILiquidStack outputFluid, @Optional(10) int duration);
+//MechanicalDryingBasin.addRecipe(@Optional ItemStack inputStack, @Optional ILiquidStack inputFluid, @Optional ItemStack outputStack, @Optional ILiquidStack outputFluid, @Optional(10) int duration);
 
-MechanicalDryingBasin.addRecipe(<minecraft:melon>, <liquid:lava> * 100, <minecraft:stick>, <liquid:water> * 100, 10);
+MechanicalDryingBasin. ddRecipe(<minecraft:melon>, <liquid:lava> * 100, <minecraft:stick>, <liquid:water> * 100, 10);
 ```
 
-## Removing Recipes
+## Eliminando recetas
 
 ```zenscript
-//MechanicalDryingBasin.removeRecipe(@Optional IItemStack inputStack, @Optional ILiquidStack inputFluid, @Optional IItemStack outputStack, @Optional ILiquidStack outputFluid, @Optional(10) int duration);
-MechanicalDryingBasin.removeRecipe(<minecraft:melon>, <liquid:lava> * 100, <minecraft:stick>, <liquid:water> * 100, 10);
+//MechanicalDryingBasin.removeRecipe(@Optional ItemStack inputStack, @Optional ILiquidStack inputFluid, @Optional ItemStack outputStack, @Optional ILiquidStack outputFluid, @Optional(10) int duration);
+MechanicalDryingBasin. emoveRecipe(<minecraft:melon>, <liquid:lava> * 100, <minecraft:stick>, <liquid:water> * 100, 10);
 
 
-//MechanicalDryingBasin.removeRecipesWithOutput(@Optional IItemStack outputStack, @Optional ILiquidStack outputFluid);
+//MechanicalDryingBasin. emoveRecipesWithOutput(@Optional ItemStack outputStack, @Optional ILiquidStack outputFluid);
 MechanicalDryingBasin.removeRecipesWithOutput(<minecraft:leather>, null);
 ```

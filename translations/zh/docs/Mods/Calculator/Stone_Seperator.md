@@ -1,23 +1,23 @@
-# Stone Separator
+# 石质分隔符
 
 ## 所属包名
 ```zenscript
-import mods.calculator.stoneSeparator;
+导入 mods.calculator.stoneSeparator;
 ```
 
 ## 使用方式
 
-- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input** The input.
-- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) output[1-2]** The outputs.
+- **[Ingredient](/Vanilla/Variable_Types/IIngredient/) 输入** 输入.
+- **[Ingredient](/Vanilla/Variable_Types/IIngredient/) 输出[1-2]** 输出.
 
 
-## Additon
+## 附加组件
 
 ```zenscript
-stoneSeparator.addRecipe(IIngredient input, IIngredient output1, IIngredient output2);
+stoneSeparator.addRecipe(IIngredient input, IIngredient output1, IIngredient output2)；
 ```
 
-## Removal
+## 移除
 ```zenscript
-stoneSeparator.removeRecipe(IIngredient output, IIngredient output2);
+stoneSeparator.removeRecipe(IIngredient output, IIngredient output)；
 ```

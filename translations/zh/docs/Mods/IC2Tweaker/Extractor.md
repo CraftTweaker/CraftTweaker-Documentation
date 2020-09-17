@@ -1,13 +1,13 @@
-# Extractor
+# 提取器
 
 ## 所属包名
 
-`import mods.ic2.Extractor;`
+`导入 mods.ic2.提取器;`
 
 ## 使用方式
 
 - **[IItemStack](/Vanilla/Items/IItemStack/) output**
-- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input**
+- **[Igredient](/Vanilla/Variable_Types/IIngredient/) 输入**
 
 ## 添加配方
 
@@ -17,7 +17,7 @@ mods.ic2.Extractor.addRecipe(IItemStack output, IIngredient input);
 mods.ic2.Extractor.addRecipe(<minecraft:diamond_block>, <minecraft:dirt> * 64);
 ```
 
-## Removal
+## 移除
 
-- If using Ic2 Experimental, to remove a recipe, simply remove the corresponding line in `config/ic2/extractor.ini`
-- If using Ic2 Classic, to remove a recipe, simply disable the corresponding recipe in `config/ic2/ic2machineRecipes.json`.
+- 如果使用 Ic2 Experimental, 若要删除配方，只需在 `config/ic2/extractor.ini` 中删除相应的行
+- 如果使用 Ic2 Classic，移除配方，只需在 `config/ic2/ic2machineRecipes.json` 中禁用相应的配方。

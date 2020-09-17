@@ -1,45 +1,49 @@
 # Sieving
 
-## Package
+## パッケージ
 
-`mods.exnihilocreatio.Sieve`
-
-## Methods
-
-- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) block** The block that drops the output.
-- **[IItemStack](/Vanilla/Items/IItemStack/) output** The item that drops from the block..
-- **Float chance** The chance should be between 0-1.
-
-## String Mesh
+フルパスを明確にせずに `ふるい` にアクセスするには、以下のようにスクリプトの最上部にあるパッケージをインポートできます。
 
 ```zenscript
-addStringMeshRecipe(IIngredient, IItemStack, Float chance);
-addStringMeshRecipe(<minecraft:gravel>, <minecraft:diamond>, 0.001);
+import mods.exnihilocreatioSieve;
 ```
 
-## Flint Mesh
+## メソッド
+
+- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) ブロック** 出力をドロップするブロック。
+- **[IItemStack](/Vanilla/Items/IItemStack/) 出力** ブロックからドロップするアイテム。
+- **浮動小数点数** 確率は0-1の間でなければなりません。
+
+## ストリングメッシュ
 
 ```zenscript
-addFlintMeshRecipe(IIngredient, IItemStack, Float chance);
-addFlintMeshRecipe(<minecraft:gravel>, <minecraft:diamond>, 0.01);
+Sieve.addStringMeshRecipe(IIngredient, IItemStack, Float chance);
+Sieve.addStringMeshRecipe(<minecraft:gravel>, <minecraft:diamond>, 0.001);
 ```
 
-## Iron Mesh
+## フリントメッシュ
 
 ```zenscript
-addIronMeshRecipe(IIngredient, IItemStack, Float chance);
-addIronMeshRecipe(<minecraft:gravel>, <minecraft:diamond>, 0.1);
+Sieve.addFlintMeshRecipe(IIngredient, IItemStack, Float chance);
+Sieve.addFlintMeshRecipe(<minecraft:gravel>, <minecraft:diamond>, 0.01);
 ```
 
-## Diamond Mesh
+## 鉄メッシュ
 
 ```zenscript
-addDiamondMeshRecipe(IIngredient, IItemStack, Float chance);
-addDiamondMeshRecipe(<minecraft:gravel>, <minecraft:diamond>, 1);
+Sieve.addIronMeshRecipe(IIngredient, IItemStack, Float chance);
+Sieve.addIronMeshRecipe(<minecraft:gravel>, <minecraft:diamond>, 0.1);
 ```
 
-## Removal
+## ダイヤモンドメッシュ
 
 ```zenscript
-mods.exnihilocreatio.Sieve.removeAll();
+Sieve.addDiamondMeshRecipe(IIngredient, IItemStack, Float chance);
+Sieve.addDiamondMeshRecipe(<minecraft:gravel>, <minecraft:diamond>, 1);
+```
+
+## 削除
+
+```zenscript
+Sieve.removeAll();
 ```

@@ -1,21 +1,21 @@
-# Reassembly Chamber
+# Umbaukammer
 
-## Package
+## Paket
 ```zenscript
-import mods.calculator.reassemblyChamber;
+importiere mods.calculator.reassemblyChamber;
 ```
 
 ## Methoden
 
-- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input** The input.
-- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) output** The output.
+- **[Ingredient](/Vanilla/Variable_Types/IIngredient/) Input** Die Eingabe.
+- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) Ausgabe** Die Ausgabe.
 
 ## Addition
 ```zenscript
-reassemblyChamber.addRecipe(IIngredient input, IIngredient output);
+reassemblyChamber.addRecipe(IIngrediente Eingabe, IIngrediente Ausgabe);
 ```
-## Removal
+## Entfernen
 ```zenscript
 
-reassemblyChamber.removeRecipe(IIngredient output);
+resemblyChamber.removeRecipe(IIngrediente Ausgabe);
 ```

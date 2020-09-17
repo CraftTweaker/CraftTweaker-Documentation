@@ -1,23 +1,23 @@
-# Rune Altar
+# ルーンアルタ
 
-The RuneAltar package is used for adding or removing recipes to/from the Botania Rune Altar.
+RuneAltarパッケージは、ボタニアルーン祭りへのレシピの追加や削除に使用されます。
 
-## Calling
+## 発信中
 
-You can call the RuneAltar package using `mods.botania.RuneAltar`
+`mods.botania.RuneAltar` を使用して RuneAltar パッケージを呼び出すことができます。
 
-## Find all registered Recipes
+## すべての登録済みのレシピを検索
 
-You can find all registered Rune Altar recipes using [`/ct botania altar`](/Mods/Modtweaker/Botania/Commands/).
+[`/ct botania 祭壇`](/Mods/Modtweaker/Botania/Commands/) を使用して登録されているすべてのRune Altarレシピを見つけることができます。
 
-## Recipe addition
+## レシピの追加
 
 ```zenscript
-//mods.botania.RuneAltar.addRecipe(IItemStack output, IIngredient[] input, int mana);
+//mods.botania.RuneAltar.addRecipe(IItemStack 出力, IIngredient[] input, int mana);
 mods.botania.RuneAltar.addRecipe(<minecraft:planks>,[<minecraft:grass>, <minecraft:dirt>], 200);
 ```
 
-## Recipe removal
+## レシピの削除
 
 ```zenscript
 //mods.botania.RuneAltar.removeRecipe(IIngredient output);

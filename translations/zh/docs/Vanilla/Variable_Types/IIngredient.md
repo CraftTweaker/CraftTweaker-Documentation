@@ -1,81 +1,81 @@
-# IIngredient
+# 材料（IIngredient）
 
-An IIngredient is an ingredient for recipes.  
-This could be [an item](/Vanilla/Items/IItemStack/), [an ore dictionary entry](/Vanilla/OreDict/IOreDictEntry/), [a liquid](/Vanilla/Liquids/ILiquidStack/) and much more.
+Iugrendient是配方的成分。  
+这可能是 [一个项目](/Vanilla/Items/IItemStack/), [矿石字典条目](/Vanilla/OreDict/IOreDictEntry/), [液体](/Vanilla/Liquids/ILiquidStack/) 及更多。
 
 ## 导入相关包
 
-It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
-`import crafttweaker.item.IIngredient;`
+如果您遇到任何问题，可能需要导入软件包(例如铸造一个 [数组](/AdvancedFunctions/Arrays_and_Loops/)), 这样比抱歉更安全并添加导入。  
+`导入craftweeper.item.Ingredient；`
 
-## Importing the IIngredient package
+## 正在导入 IIngredient 包
 
 Usually, you won't need this, but in some cases recipes won't work until you [import](/AdvancedFunctions/Import/) the IIngredient package.  
 You can do this using the following import:
 
 ```zenscript
-import crafttweaker.item.IIngredient;
+导入 craftweeper.item.IIngredial；
 ```
 
-## Functions
+## 职能
 
-So, what can we do with this?
+因此，我们可以如何处理这个问题？
 
-### Command String
+### 命令字符串
 
-The command string is how you would call this item in ZS.  
-This can be a bracket handler or something similar.
+命令字符串是你如何在 ZS 中调用此物品。  
+这可以是一个括号处理器或类似的东西。
 
 ```zenscript
-val item = <minecraft:iron_ingot>;
+valable item = <minecraft:iron_ingot>;
 
 //prints "<minecraft:iron_ingot>"
 print(item.commandString);
 ```
 
-### Mark
+### 标记
 
-You can mark an IIngredient so you can later use it in [crafting functions](/Vanilla/Recipes/Crafting/Recipe_Functions/). You can also retrieve the mark applied earlier.
+你可以标记一个 IIngradient, 以便你以后可以在 [制作函数](/Vanilla/Recipes/Crafting/Recipe_Functions/) 中使用它。 您也可以检索之前应用的标记。
 
 ```zenscript
-//Marks the pick with the String Picky
-//item.marked(name) <-- Name is a string!
-val markedPick = <minecraft:diamond_pickaxe>.marked("Picky");
+///标记带字符串皮卡
+//item.marked(name) <- 名称是字符串!
+valal markedPick = <minecraft:diamond_pickaxe>.marked("选取");
 
-//prints "Picky"
+//prints "选取"
 print(markedPick.mark);
 ```
 
-### Amount
+### 金额
 
-If you want to use more than one of a given item, you can set an amount to an IIngredient.  
-This is as easy as multiplying the IIngredient with an Integer.  
-Retrieveing the amount is also possible.
+如果您想要使用多个给定物品，您可以设置一个 IIngredient。  
+这很容易就像用整数乘法。  
+也可以检索数量。
 
 ```zenscript
 val multipleApples = <minecraft:apple> * 3;
 
 //prints 3
-print(multipleApples.amount);
+print(multipleApplices.amount);
 ```
 
-### OR-ing an IIngredient
+### 正在进行IIngredient
 
-Sometimes you want either IIngredient X or Y, but don't want to create a recipe for each possibility? That's why there's the OR Method for IIngredients:
+有时候你想要IIngredient X 或 Y，但不想为每个可能性创建一个配方？ 这就是为什么IIngredients有或方法：
 
 ```zenscript
 val item1 = <minecraft:apple>;
 val item2 = <minecraft:carrot>;
 
-val either = item1 | item2;
+val = item1 | item2;
 val either2 = item1.or(item2);
 ```
 
-### Get Possible Items or Liquids
+### 获取可能的物品或液体物品
 
-Sometimes an IIngredient represents more than one item, for example if you are using an [OreDictEntry](/Vanilla/OreDict/IOreDictEntry/) or if you OR-ed two Ingredients.  
-You can get all possible items for this IIngredient as a List<[IItemStack](/Vanilla/Items/IItemStack/)> List using the first function.  
-The second function does the same as the first function but returns a [IItemStack](/Vanilla/Items/IItemStack/)[] instead of a list. Same goes for liquids in the third function, only they return an [ILiquidStack](/Vanilla/Liquids/ILiquidStack/) List.
+偶尔，IIngredient 代表不止一个物品。 例如，如果您正在使用 [OreDictEnter](/Vanilla/OreDict/IOreDictEntry/) 或者如果您发现了两个成分。  
+您可以获取此物品的所有可能项目作为列表<[IItemStack](/Vanilla/Items/IItemStack/)> 列表使用第一个功能。  
+第二个函数与第一个函数相同，但返回 [IItemStack](/Vanilla/Items/IItemStack/)[] 而不是列表。 对于第三个函数中的液体，只有返回 [ILiquidStack](/Vanilla/Liquids/ILiquidStack/) 列表。
 
 ```zenscript
 //Returns an IItemStack List
@@ -105,95 +105,95 @@ for liquid in liquidsIngredient.liquids{
 
 for liquid in <minecraft:water_bucket>.liquids {
     //Prints the contained liquid, i.e. water.
-    //May not work for every item, though.
-    print(liquid.displayName);
+    / 5月份不适用于每个项目。
+    print(leid.displayname);
 }
 ```
 
-### Transform an IIngredient upon crafting
+### 制作时变换IIngredient
 
-Sometimes you want an item not to be consumed upon crafting but instead receive damaged or give back a completely different item.  
-This is what item Transformers are there for.
-
-```zenscript
-<br />val item = <minecraft:apple>;
-
-//Item won't be consumed and will stay in the grid
-transformedItem = item.reuse();
-
-//Item won't be consumed and the whole stack will be given back to you (does /give).
-transformedItem = item.giveBack();
-
-//item will be consumed but will give the specified stack to you (the crafting slot will be cleared!).
-transformedItem = item.giveBack(<minecraft:potato>);
-
-//item will be replaced with the specified item, which will instead go to the crafting slot
-transformedItem = item.transformReplace(<minecraft:potato>);
-
-//damages the item by 1
-transformedItem = item.transformDamage();
-
-//damages the item by the given value
-transformedItem = item.transformDamage(3);
-
-//item will be consumed, no matter what.
-transformedItem = item.noReturn();
-
-//Causes multiple items to be consumed.
-transformedItem = item.transformConsume(3);
-```
-
-### Ingredient Conditions
-
-Sometimes you want your ingredient to have a specific tag or to only work if (not) damaged. These Conditions can be added to your Ingredients using the following:
+有时你想不要在制造时消耗一个物品，而是收到损坏的物品或退回一个完全不同的物品。  
+这是变换器所要做的事情。
 
 ```zenscript
-val item = <minecraft:apple>;
+<br />valable item = <minecraft:apple>;
 
-//Item will only be accepted with at least 1 point damage
-var conditionedItem = item.onlyDamaged();
+//item 不会被消耗，将保持在网格
+变现item = item。 euse();
 
-//Item will only be accepted with at least the specified damage points
-conditionedItem = item.onlyDamageAtLeast(10);
+//item不会被消耗, 整个堆栈将被退回给你 (do /give).
+transformeditems = item.giveBack();
 
-//Item will only be accepted with at most the specified damage points
-conditionedItem = item.onlyDamageAtMost(100);
+///items 将被消耗，但会给您指定的堆栈(制作槽将被清除!)。
+转化物项=物品。 iveBack(<minecraft:potato>);
 
-//Item will only be accepted with damage points greater or equal as the first and lesser or equal as the 2nd Integer.
-conditionedItem = item.onlyDamageBetween(10,100);
+//item 将被指定项目替换，它将转到制作槽
+变换项= 项目。 赎金替换(<minecraft:potato>);
 
-//Item will only be accepted with the specified Tag. The item may have more/other tags than specified, those are ignored when checked.
-//If you want JEI to show the tag in the recipe screen, you'll need to add a tag using "withTag(tag)"
-conditionedItem = item.onlyWithTag({display: {Name: "Tomato"}});
+//damage the item by 1
+transformmeditem = item 赎金损害();
 
-//Item will only be accepted with the specified Tag. The item may have more/other tags than specified, those are ignored when checked.
-//Note: This may not work with all ingredients, but it will work for Items. Pro side to using this is that JEI will show the tags in the recipe!
-conditionedItem = item.withTag({display: {Name: "Tomato"}});
+//damage the item by 给定的值
+transformeditem = item.transformDamage(3);
 
-//Item will only be accepted if in a Stack of at least the specified amount. Mostly used in combination with the consume transformer.
-//Note that if you only add this, it will still consume only one item per craft.
-conditionedItem = item.onlyStack(32);
+///item will be consided, what.
+转换项= item.noReturn();
+
+//Causes 多个要消耗的项目。
+transformeditems = item.transformConsume(3)；
 ```
 
-### Matching
+### 成分条件
 
-If you want to check if an IItemStack matches your IIngredient you can use the match method. This will return a boolean. If the IIngredient represents a liquid, it will check if the item is a valid container for this liquid.
+有时候你想要你的成分有一个特定的标签，或者在(不) 损坏的情况下只能起作用。 这些条件可以通过以下方式添加到您的成分：
 
 ```zenscript
-print(<ore:ingotIron>.matches(<minecraft:iron_ingot>));
-print(<ore:ingotIron>.matchesExact(<minecraft:iron_ingot>));
+valable item = <minecraft:apple>;
+
+//item 只会在至少1点伤害
+var conditionitem = item 的情况下被接受。 nlyDamaged();
+
+//item只能在至少指定的伤害点
+条件项=物品的情况下被接受。 nlyDamageAtLeast(10)；
+
+//items 只能在指定的伤害点
+条件下才能被接受。 nlyDamageAtmost(100)；
+
+//items 只会被接受，伤害点数大于或等于第一个或第二个整数或等于第二个整数。
+条件项目 = item.only DamageBetween(10,100)；
+
+///items 只接受指定的标签。 项目可能有比指定的更多/更多的标签，选中时会忽略这些标签。
+///如果你想要JEI在配方屏幕上显示标签，你需要使用"withTag(标签)"
+conditionedite = item。 nlyWidTag({显示: {name: "Tomato"}});
+
+/items 只接受指定的标签。 项目可能有比指定的更多/更多的标签，选中时会忽略这些标签。
+/说明：这可能不适用于所有成分，但它将适用于项目。 专业版使用这个选项就是JEI会在该程序中显示标签！
+条件项目 = item.withTag({显示: {名称: "Tomato"}});
+
+///items 只会在至少一个指定数量的堆栈中被接受。 主要与消费变压器结合使用。
+// 请注意，如果您只添加这个，它仍然只能消耗一件工艺品。
+条件项目 = item.onlystack(32)；
 ```
 
-You can also match two IIngredient Objects, in which case you'd need to use the ```in``` operator:
+### 匹配
+
+如果您想要检查一个 IItemStack 是否匹配您的 Ingredient ，您可以使用匹配的方法。 这将返回布尔值。 如果IIngredient 表示液体，它将检查该物品是否是该液体的有效容器。
+
+```zenscript
+打印(<ore:ingotIron>.matches(<minecraft:iron_ingot>));
+打印(<ore:ingotIron>.matchesExact(<minecraft:iron_ingot>);
+```
+
+你也可以匹配两个IIngredient Objects，在这种情况下你需要使用 ```in``` 操作符：
 
 ```zenscript
 val ingots = <minecraft:iron_ingot> | <minecraft:gold_ingot>;
-val oreIngot = <ore:ingotIron>;
-val ingotGold = <minecraft:gold_ingot>;
+oreIngot = <ore:ingotIron>;
+val innotGold = <minecraft:gold_ingot>;
 
-//true as the ingots Ingredient has <minecraft:gold_ingot>
-ingots has ingotGold;
+/true 作为创作者的创作品 <minecraft:gold_ingot>
+inots 有创作金矿；
 
-//false as <minecraft:iron_ingot> cannot be found in <ore:ingotGold>
-oreIngot has ingots;
+/false as <minecraft:iron_ingot> 无法在 <ore:ingotGold>
+oreIntogoto;
 ```

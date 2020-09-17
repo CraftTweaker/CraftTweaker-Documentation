@@ -1,28 +1,28 @@
-# Alloy Forge
+# Forja de Aleación
 
-The Alloy Forge is a machine that converts two input fluids into one output fluid.
+La Forja de Aleación es una máquina que convierte dos fluidos de entrada en un fluido de salida.
 
-## Package
+## Paquete
 `mods.steamagerevolution.AlloyForge`
 
-## Methods
+## Métodos
 
-- **[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) output** The result of the recipe.
-- **[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) input** The input of the recipe.
-- **int craftTime** Crafting time for machine to process
+- **[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) tiene salida** El resultado de la receta.
+- **[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) entrada** La entrada de la receta.
+- **tiempo de fabricación** tiempo de fabricación de la máquina para procesar
 
-## Addition
+## Adicional
 
 ```zenscript
-mods.steamagerevolution.AlloyForge.addRecipe(ILiquidStack input, ILiquidStack input, ILiquidStack output, int craftTime);
+mods.steamagerevolution.AlloyForge.addRecipe(entrada ILiquidStack, entrada ILiquidStack, salida ILiquidStack, salida int craftTime);
 mods.steamagerevolution.AlloyForge.addRecipe(<liquid:water>*100, <liquid:lava>*100, <liquid:obsidian>*200, 200);
 ```
 
 
-## Removal
+## Eliminar
 
 ```zenscript
-mods.steamagerevolution.AlloyForge.removeRecipe(ILiquidStack output);
+mods.steamagerevolution.AlloyForge.removeRecipe(salida ILiquidStack);
 mods.steamagerevolution.AlloyForge.removeRecipe(<liquid:bronze>);
 
 mods.steamagerevolution.AlloyForge.removeAll();

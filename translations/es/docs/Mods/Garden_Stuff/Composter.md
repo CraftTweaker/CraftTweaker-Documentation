@@ -1,22 +1,24 @@
-# Composter
-## Package
-`import mods.gardenstuff.CompostBin;`
+# Compositor
+## Paquete
+`import mods.gardenstuff.CompostBin;CompostBin;`
 
 ## Metodos
-- **[IItemStack](/Vanilla/Liquids/IItemStack/) item** The item to be composted.
-- **int processTime** Amount of energy created per tick in a base-line machine.
-- **[IOreDictEntry](/Vanilla/OreDict/IOreDictEntry) oredictKey** An oreDictionary entry.
+- **[ItemStack](/Vanilla/Liquids/IItemStack/) elemento** El elemento a componer.
+- **int processTime** Cantidad de energía creada por tick en una máquina de línea base.
+- **[IOreDictEntry](/Vanilla/OreDict/IOreDictEntry) OredictKey** Una entrada en oreDiccionario.
 
-## Add Compostable Item
+## Añadir ítem compuesto
 ```zenscript
 mods.gardenstuff.CompostBin.add(IItemStack item, int processTime);
+
+mods.gardenstuff.mods.gardenstuff.CompostBin.add(IItemStack item, int processTime);
 
 mods.gardenstuff.CompostBin.add(<minecraft:carrot>, 150);
 ```
 
-## Add Compostable oreDictionary Entry
+## Añadir entrada oreDictionary compostable
 ```zenscript
-mods.gardenstuff.CompostBin.add(oredictKey, int processTime);
+mods.gardenstuff.mods.gardenstuff.CompostBin.add(oredictKey, int processTime);
 
-mods.gardenstuff.CompostBin.add(<ore:cropCarrot>, 150);
+mods.gardenstuff.CompostBin.add(<ore:cropCarrot>, 150);CompostBin.add(<ore:cropCarrot>, 150);
 ```

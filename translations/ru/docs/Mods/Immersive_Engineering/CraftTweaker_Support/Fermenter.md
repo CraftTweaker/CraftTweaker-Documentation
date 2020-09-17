@@ -1,62 +1,62 @@
-# Fermenter
+# Ферментер
 
-The Fermenter package can be used to add/remove recipes to/from the Immersive Engineering Fermenter.
+Пакет Ферментера может быть использован для добавления/удаления рецептов в Императорский Инжиниринг Ферментера.
 
-## Calling The Package
+## Вызов пакета
 
-You can call the Fermenter package using `mods.immersiveengineering.Fermenter`.
+Вы можете вызвать пакет Ферментер, используя `mods.immersiveengineering.Fermenter`.
 
-## Add Recipe
+## Добавить рецепт
 
-| Required | Type   | Data Type                                           |
-| -------- | ------ | --------------------------------------------------- |
-| Required | Output | [IItemStack](/Vanilla/Items/IItemStack/)            |
-| Required | Fluid  | [Fluidstack](/Vanilla/Liquids/ILiquidStack/)        |
-| Required | Input  | [IIngredient](/Vanilla/Variable_Types/IIngredient/) |
-| Required | Energy | Integer                                             |
+| Требуется | Тип      | Тип данных                                          |
+| --------- | -------- | --------------------------------------------------- |
+| Требуется | Вывод    | [IItemStack](/Vanilla/Items/IItemStack/)            |
+| Требуется | Жидкость | [Fluidstack](/Vanilla/Liquids/ILiquidStack/)        |
+| Требуется | Input    | [Иингредиент](/Vanilla/Variable_Types/IIngredient/) |
+| Требуется | Энергия  | Целое                                               |
 
-### Example
+### Пример
 
 ```zenscript
-mods.immersiveengineering.Fermenter.addRecipe(IItemStack output, ILiquidStack fluid, IIngredient input, int energy);
+mods.immersiveengineering.Fermenter.addRecipe(IItemStack, ILiquidStack fluid, IIngredient input, int energy);
 mods.immersiveengineering.Fermenter.addRecipe(<minecraft:diamond>, <liquid:water>, <ore:logWood>, 2048);
 ```
 
-## Remove Fluid Recipe
+## Удалить Рецепт жидкости
 
-| Type   | Data Type                                    |
-| ------ | -------------------------------------------- |
-| Output | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
+| Тип   | Тип данных                                   |
+| ----- | -------------------------------------------- |
+| Вывод | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
 
-### Example
+### Пример
 
 ```zenscript
-mods.immersiveengineering.Fermenter.removeFluidRecipe(ILiquidStack fluid);
+mods.immersiveengineering.Fermenter.removeFluidRecipe(ILiquidStack);
 mods.immersiveengineering.Fermenter.removeFluidRecipe(<liquid:water>);
 ```
 
-## Remove Item Recipe
+## Удалить рецепт предмета
 
-| Type   | Data Type                                |
-| ------ | ---------------------------------------- |
-| Output | [IItemstack](/Vanilla/Items/IItemStack/) |
+| Тип   | Тип данных                               |
+| ----- | ---------------------------------------- |
+| Вывод | [IItemstack](/Vanilla/Items/IItemStack/) |
 
-### Example
+### Пример
 
 ```zenscript
-mods.immersiveengineering.Fermenter.removeItemRecipe(IItemstack output);
+mods.immersiveengineering.Fermenter.removeItemRecipe(выход IItemstack);
 mods.immersiveengineering.Fermenter.removeItemRecipe(<minecraft:diamond>);
 ```
 
-## Remove By Input
+## Удалить по вводу
 
-| Type   | Data Type                                |
-| ------ | ---------------------------------------- |
-| Output | [IItemstack](/Vanilla/Items/IItemStack/) |
+| Тип   | Тип данных                               |
+| ----- | ---------------------------------------- |
+| Вывод | [IItemstack](/Vanilla/Items/IItemStack/) |
 
-### Example
+### Пример
 
 ```zenscript
-mods.immersiveengineering.Fermenter.removeByInput(IItemstack input);
+mods.immersiveengineering.Fermenter.removeByInput(IItemstack);
 mods.immersiveengineering.Fermenter.removeByInput(<minecraft:diamond>);
 ```

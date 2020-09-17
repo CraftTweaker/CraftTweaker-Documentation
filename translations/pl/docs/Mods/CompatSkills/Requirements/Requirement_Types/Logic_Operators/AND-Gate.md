@@ -1,15 +1,15 @@
-# AND Operator
+# I Operator
 
-An **AND** gate combines two inputs and returns `TRUE` only if both inputs are also `TRUE`.
+Bramka **AND** łączy dwa wejścia i zwraca `TRUE` tylko wtedy, gdy oba wejścia są również `TRUE`.
 
-| Input 1 | Input 2 | Output |
-| ------- | ------- | ------:|
-| 0       | 0       |      0 |
-| 0       | 1       |      0 |
-| 1       | 0       |      0 |
-| 1       | 1       |      1 |
+| Input 1 | Input 2 | Wyjście |
+| ------- | ------- | -------:|
+| 0       | 0       |       0 |
+| 0       | 1       |       0 |
+| 1       | 0       |       0 |
+| 1       | 1       |       1 |
 
-The AND requirement unlike the other logic requirements is mainly useful for nested logic requirements, as locking an item or other object with multiple requirements requires all of the given requirements to be met. This is the same as the AND functionality, so should be used when possible, as it will make the tooltip be formatted in an easier to read manner.
+Wymóg AND w odróżnieniu od innych wymogów logicznych jest przede wszystkim przydatny dla zagnieżdżonych wymogów logicznych. jako blokowanie elementu lub innego obiektu o wielu wymaganiach wymaga spełnienia wszystkich określonych wymagań. Jest to takie samo jak funkcja ANE, a w miarę możliwości powinna być stosowana. ponieważ sprawi, że podpowiedź zostanie sformatowana w sposób łatwiejszy do odczytania.
 
-    Empty Example:
+    Pusty przykład:
     AND|[]~[]

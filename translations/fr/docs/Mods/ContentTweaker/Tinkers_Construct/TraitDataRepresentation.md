@@ -1,32 +1,32 @@
-# Trait Data Representation
+# Représentation des données de la Caractéristique
 
-A Trait data representation represents a Tinkers' Construct Trait's Data and is ItemBound.  
-You can get such an object from an existing [Trait](/Mods/ContentTweaker/Tinkers_Construct/Trait/) object by supplying an IItemStack to the `getData` method.
+Une représentation de données Trait représente des données de Traits de Construction de Tinkers et est ItemBound.  
+Vous pouvez obtenir un tel objet à partir d'un objet [Trait](/Mods/ContentTweaker/Tinkers_Construct/Trait/) existant en fournissant une IItemStack à la méthode `getData`.
 
-## Importing the class
+## Importation de la classe
 
-It might be required for you to import the class if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
-`import mods.contenttweaker.tconstruct.TraitDataRepresentation`
+Il peut être nécessaire d'importer la classe si vous rencontrez des problèmes (comme lancer un [Tableau](/AdvancedFunctions/Arrays_and_Loops/)), alors mieux être sûr que désolé et ajouter l'importation.  
+`import mods.contenttweaker.tconstruct.TraitDataRepresent`
 
-## ZenGetter and ZenSetter
+## ZenGetter et ZenSetter
 
-| Name        | ZenGetter | ZenSetter | Type   |
-| ----------- | --------- | --------- | ------ |
-| color       | ✔         | ✔         | int    |
-| current     | ✔         | ✔         | int    |
-| extraInfo   | ✔         | ✔         | string |
-| identifier  | ✔         | ✔         | string |
-| level       | ✔         | ✔         | int    |
-| max         | ✔         | ✔         | int    |
-| info        | ✔         |           | string |
-| colorString | ✔         |           | string |
+| Nom                   | ZenGetter | ZenSetter | Type de texte        |
+| --------------------- | --------- | --------- | -------------------- |
+| couleur               | ✔         | ✔         | Indice               |
+| en cours              | ✔         | ✔         | Indice               |
+| Infos supplémentaires | ✔         | ✔         | chaîne de caractères |
+| identifier            | ✔         | ✔         | chaîne de caractères |
+| niveau                | ✔         | ✔         | Indice               |
+| max                   | ✔         | ✔         | Indice               |
+| Infos                 | ✔         |           | chaîne de caractères |
+| Chaîne de couleurs    | ✔         |           | chaîne de caractères |
 
-## ZenMethods
+## Méthodes Zen
 
 ```zenscript
-//Does the same as myTraitData.info;
+//Fait la même chose que myTraitData.info;
 myTraitData.calcInfo();
 
-//Does the same as myTraitData.colorString;
+//Fait la même chose que myTraitData.colorString;
 myTraitData.getColorString();
 ```

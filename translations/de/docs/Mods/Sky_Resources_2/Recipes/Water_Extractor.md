@@ -1,22 +1,22 @@
-# Water Extractor
+# Wasserextraktor
 
-The *waterextractor* package is used for adding or removing recipes to/from the Water Extractor Insert and Extract process.
+Das *Wasserextraktor* Paket wird zum Hinzufügen oder Entfernen von Rezepten für/zum Wasserextraktor-Prozess verwendet.
 
-## Calling
+## Anruf
 
-You can call the *waterextractor* package using `mods.skyresources.waterextractor`
+Sie können das *Wasserextraktor* Paket aufrufen, indem Sie `mods.skyresources.waterextractor` verwenden
 
-## Recipe Addition
+## Rezeptzusatz
 
 ```zenscript
 //mods.skyresources.waterextractor.extract.addRecipe(int waterOut, IItemStack output, IIngredient input);
 mods.skyresources.waterextractor.extract.addRecipe(500, <minecraft:dirt>, <minecraft:leaves>);
 
-//mods.skyresources.waterextractor.insert.addRecipe(IItemStack output, IIngredient input, int waterIn);
+//mods. kyresources.waterextractor.insert.addRecipe(IItemStack Output, IIngredient Input, int waterIn);
 mods.skyresources.waterextractor.insert.addRecipe(<minecraft:dirt>, <minecraft:cobblestone>, 100);
 ```
 
-## Recipe Removal
+## Rezept entfernen
 
 ```zenscript
 //mods.skyresources.waterextractor.extract.removeRecipe(int waterOut, IItemStack output, IIngredient input);

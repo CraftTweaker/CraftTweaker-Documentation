@@ -1,18 +1,18 @@
-# Pulverizer
+# Pulverizador
 
-## Package
+## Paquete
 
 `mods.thermalexpansion.Pulverizer`
 
-## Addition
+## Adicional
 
 ```zenscript
-mods.thermalexpansion.Pulverizer.addRecipe(IItemStack output, IItemStack input, int energy, @Optional IItemStack secondaryOutput, @Optional int secondaryChance);
+mods.thermalexpansion.Pulverizer.addRecipe(salida IItemStack, entrada ItemStack, energía int, @Optional ItemStack secondaryOutput, @Optional int secondaryChance);
 
 mods.thermalexpansion.Pulverizer.addRecipe(<minecraft:diamond>, <minecraft:stick>, 1500, <minecraft:stone>, 20);
 ```
 
-## Removal
+## Eliminar
 
 ```zenscript
 mods.thermalexpansion.Pulverizer.removeRecipe(IItemStack input);

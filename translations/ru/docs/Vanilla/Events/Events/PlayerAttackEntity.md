@@ -1,30 +1,30 @@
-# PlayerAttackEntity
+# Атака Игрока
 
-The PlayerAttackEntity Event is fired whenever a player attacks an Entity.
+Событие Атака Игрока запускается каждый раз, когда игрок атакует сущность.
 
-## Event Class
+## Класс события
 
 You will need to cast the event in the function header as this class:  
 `crafttweaker.event.PlayerAttackEntityEvent`  
 You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
 
-## Event interface extensions
+## Наследование от интерфейсов событий
 
-PlayerAttackEntity Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+PlayerAttackEntity События реализуют следующие интерфейсы и также могут вызвать все их методы/getters/setters:
 
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 - [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
 
 ## ZenGetters
 
-The following information can be retrieved from the event:
+Следующая информация может быть получена от события:
 
-| ZenGetter  | Return Type                           |
+| Геттеры    | Возвращаемый тип                      |
 | ---------- | ------------------------------------- |
-| `canceled` | boolean                               |
+| `отменено` | boolean                               |
 | `player`   | [IPlayer](/Vanilla/Players/IPlayer/)  |
-| `entity`   | [IEntity](/Vanilla/Entities/IEntity/) |
+| `сущность` | [IEntity](/Vanilla/Entities/IEntity/) |
 
 ## ZenMethods
 
-- `event.cancel()` sets the event as cancelled.
+- `event.cancel()` устанавливает событие как отменено.

@@ -1,53 +1,53 @@
-# Part
+# パート
 
-A Part is the form an item is in, for example a gear or an ore.
+部品とは、例えばギアや鉱石など、アイテムが入っている形のことです。
 
 ## パッケージのインポート
 
-It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
+問題が発生した場合は、パッケージをインポートする必要があるかもしれませんので、申し訳ありませんし、インポートを追加してください。  
 `import mods.contenttweaker.Part;`
 
-## Retrieving such an object
+## そのようなオブジェクトを取得しています
 
-You can either retrieve an existing Part using the [MaterialSystem](/Mods/ContentTweaker/Materials/MaterialSystem/) or create an entirely new one using the [Part Builder](/Mods/ContentTweaker/Materials/Parts/Part_Builder/)
+[MaterialSystem](/Mods/ContentTweaker/Materials/MaterialSystem/) を使用して既存の部品を取得するか、 [部品ビルダー](/Mods/ContentTweaker/Materials/Parts/Part_Builder/) を使用して全く新しい部品を作成することができます。
 
 <details>
-    <summary>Following types are pre-registered (Headlines are the <a href="../PartType">Part types</a>):</summary>
-    <h4>Items:</h4>
+    <summary>以下のタイプが事前に登録されています (見出しは <a href="../PartType">部品タイプ</a> です):</summary>
+    <h4>アイテム:</h4>
         <ul>
-            <li>Beam<img src="../Assets/beam.png" alt="icon"></li>
-            <li>Bolt<img src="../Assets/bolt.png" alt="icon"></li>
-            <li>Casing<img src="../Assets/casing.png" alt="icon"></li>
-            <li>Clump<img src="../Assets/clump.png" alt="icon"></li>
-            <li>Crystal Crystal<img src="../Assets/crystal.png" alt="icon"></li>
-            <li>Crushed Ore (crushed_ore)<img src="../Assets/crushed_ore.png" alt="icon"></li>
-            <li>Dense Plate (dense_plate)<img src="../Assets/dense_plate.png" alt="icon"></li>
-            <li>Dirty Dust (dirty_dust)<img src="../Assets/dirty_dust.png" alt="icon"></li>
-            <li>Dust<img src="../Assets/dust.png" alt="icon"></li>
-            <li>Gear<img src="../Assets/gear.png" alt="icon"></li>
-            <li>Ingot<img src="../Assets/ingot.png" alt="icon"></li>
-            <li>Nugget<img src="../Assets/nugget.png" alt="icon"></li>
-            <li>Plate<img src="../Assets/plate.png" alt="icon"></li>
-            <li>Rod<img src="../Assets/rod.png" alt="icon"></li>
-            <li>Shard<img src="../Assets/shard.png" alt="icon"></li>
+            <li>ビーム<img src="../Assets/beam.png" alt="アイコン"></li>
+            <li>ボルト<img src="../Assets/bolt.png" alt="アイコン"></li>
+            <li>Casing<img src="../Assets/casing.png" alt="アイコン"></li>
+            <li>クランプします。<img src="../Assets/clump.png" alt="アイコン"></li>
+            <li>クリスタル<img src="../Assets/crystal.png" alt="アイコン"></li>
+            <li>粉砕した鉱石<img src="../Assets/crushed_ore.png" alt="アイコン"></li>
+            <li>高密度の板（高密度の板）<img src="../Assets/dense_plate.png" alt="アイコン"></li>
+            <li>Dirty Dust (dirty_dust)<img src="../Assets/dirty_dust.png" alt="アイコン"></li>
+            <li>粉末<img src="../Assets/dust.png" alt="アイコン"></li>
+            <li>装備<img src="../Assets/gear.png" alt="アイコン"></li>
+            <li>Ingot<img src="../Assets/ingot.png" alt="アイコン"></li>
+            <li>ナゲット<img src="../Assets/nugget.png" alt="アイコン"></li>
+            <li>プレート<img src="../Assets/plate.png" alt="アイコン"></li>
+            <li>Rod<img src="../Assets/rod.png" alt="アイコン"></li>
+            <li>シャード<img src="../Assets/shard.png" alt="アイコン"></li>
         </ul>
-    <h4>Blocks:</h4>
+    <h4>ブロック:</h4>
         <ul>
-            <li>Block<img src="../Assets/block.png" alt="icon"></li>
+            <li>ブロック<img src="../Assets/block.png" alt="アイコン"></li>
         </ul>
     <h4>Ores:</h4>
         <ul>
-            <li>Ore</li>
+            <li>鉱石</li>
             <li>Dense Ore (dense_ore)</li>
-            <li>Poor Ore(poor_ore)</li>
+            <li>貧弱な鉱石(貧乏)</li>
         </ul>
-    <h4>Fluids:</h4>
+    <h4>流体:</h4>
         <ul>
             <li>Molten</li>
         </ul><br />
     <h4>Armor:</h4>
         <ul>
-            <li>Armor <img src="../Assets/armor_head.png" alt="head icon"><img src="../Assets/armor_chest.png" alt="chest icon"><img src="../Assets/armor_legs.png" alt="legs icon"><img src="../Assets/armor_feet.png" alt="feet icon"></li>
+            <li>よろいかぶと <img src="../Assets/armor_head.png" alt="ヘッドアイコン"><img src="../Assets/armor_chest.png" alt="チェストアイコン"><img src="../Assets/armor_legs.png" alt="レッグアイコン"><img src="../Assets/armor_feet.png" alt="足のアイコン"></li>
         </ul>
     <h4>Minecart</h4>
         <ul>
@@ -55,28 +55,28 @@ You can either retrieve an existing Part using the [MaterialSystem](/Mods/Conten
         </ul>
 </details>
 
-## Fields
+## フィールド
 
-You can retrieve the following information from a Part:
+部品から次の情報を取得できます:
 
-| ZenMethod                 | 戻り値                                                                           |
-| ------------------------- | ----------------------------------------------------------------------------- |
-| hasOverlay()              | boolean                                                                       |
-| getName()                 | string                                                                        |
-| getUnlocalizedName()      | string                                                                        |
-| getShortUnlocalizedName() | string                                                                        |
-| getPartType()             | [PartType](/Mods/ContentTweaker/Materials/Parts/PartType/)                    |
-| getPartTypeName()         | string                                                                        |
-| getOreDictPrefix()        | string                                                                        |
-| getData()                 | List<[IPartDataPiece](/Mods/ContentTweaker/Materials/Parts/PartDataPiece/)\> |
+| ZenMethod                 | 戻り値                                                                         |
+| ------------------------- | --------------------------------------------------------------------------- |
+| hasOverlay()              | boolean型                                                                    |
+| getName()                 | 文字列                                                                         |
+| getUnlocalizedName()      | 文字列                                                                         |
+| getShortUnlocalizedName() | 文字列                                                                         |
+| getPartType()             | [部品タイプ](/Mods/ContentTweaker/Materials/Parts/PartType/)                     |
+| getPartTypeName()         | 文字列                                                                         |
+| getOreDictPrefix()        | 文字列                                                                         |
+| getData()                 | List<[IPartDataPie](/Mods/ContentTweaker/Materials/Parts/PartDataPiece/)\> |
 
-## Register to Material(s)
+## 材料に登録する
 
-You can use this to register one or several Materials to this part
+この部品に1つまたは複数の材料を登録するために使用することができます
 
 ```zenscript
 part.registerToMaterial(Material material);
 part.registerToMaterials(Material[] materials);
 ```
 
-The function will either return a single [MaterialPart](/Mods/ContentTweaker/Materials/Materials/MaterialPart/) object or a List of them, depending on whether you registered one or multiple materials at once.
+関数は単一の [MaterialPart](/Mods/ContentTweaker/Materials/Materials/MaterialPart/) オブジェクトまたはリストを返します。 一度に1つまたは複数の資料を登録するかどうかによって異なります

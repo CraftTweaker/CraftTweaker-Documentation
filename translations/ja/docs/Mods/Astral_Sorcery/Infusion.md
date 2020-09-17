@@ -1,12 +1,12 @@
-# Starlight Infusion Recipes
+# スターライト注入レシピ
 
-You can add and remove crafting infusions.
+クラフト中の輸液を追加・削除できます。
 
-## Calling
+## 発信中
 
-You can call the InfusionRecipe package using `mods.astralsorcery.StarlightInfusion`.
+`mods.astalsorcery.StarlightInfusion` を使ってInfusionRecipeパッケージを呼び出すことができます。
 
-## Removing
+## 削除中
 
 This will remove the first infusion it finds that creates the provided [IItemStack](/Vanilla/Items/IItemStack/) `output`.  
 If there are multiple recipes that return the provided output, you need to call this method multiple times!
@@ -16,7 +16,7 @@ If there are multiple recipes that return the provided output, you need to call 
 mods.astralsorcery.StarlightInfusion.removeInfusion(<minecraft:ice>);
 ```
 
-## Addition
+## 加算
 
 ```zenscript
 //mods.astralsorcery.StarlightInfusion.addInfusion(IItemStack input, IItemStack output, boolean consumeMultiple, float consumptionChance, int craftingTickTime);

@@ -1,16 +1,16 @@
-# PlayerUseHoe
+# 玩家UseHoe
 
-The PlayerUseHoe Event is fired whenever a player uses his hoe... If you know what I mean.
+每当玩家使用他的钩子时，玩家都会遭到射击... 如果你知道我的意思。
 
-## Event Class
+## 事件类
 
 You will need to cast the event in the function header as this class:  
 `crafttweaker.event.PlayerUseHoeEvent`  
 You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
 
-## Event interface extensions
+## 事件界面扩展
 
-PlayerUseHoe Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+PlayerUseHoe 事件实现了以下接口，并且能够调用他们所有的方法/getter/setter：
 
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 - [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
@@ -19,23 +19,23 @@ PlayerUseHoe Events implement the following interfaces and are able to call all 
 
 ## ZenGetters
 
-The following information can be retrieved from the event:
+以下信息可以从事件中检索：
 
-| ZenGetter    | 返回值类型                                       |
-| ------------ | ------------------------------------------- |
-| `canceled`   | boolean                                     |
-| `processed`  | boolean                                     |
-| `x`          | int                                         |
-| `y`          | int                                         |
-| `z`          | int                                         |
-| `player`     | [IPlayer](/Vanilla/Players/IPlayer/)        |
-| `world`      | [IWorld](/Vanilla/World/IWorld/)            |
-| `block`      | [IBlock](/Vanilla/Blocks/IBlock/)           |
-| `blockState` | [IBlockState](/Vanilla/Blocks/IBlockState/) |
-| `dimension`  | int                                         |
-| `item`       | [IItemStack](/Vanilla/Items/IItemStack/)    |
+| ZenGetter | 返回值类型                                       |
+| --------- | ------------------------------------------- |
+| `已取消`     | boolean                                     |
+| `已处理`     | boolean                                     |
+| `x`       | 整数                                          |
+| `年`       | 整数                                          |
+| `z`       | int                                         |
+| `播放器`     | [IPlayer](/Vanilla/Players/IPlayer/)        |
+| `世界`      | [IWorld](/Vanilla/World/IWorld/)            |
+| `封禁`      | [IBlock](/Vanilla/Blocks/IBlock/)           |
+| `封禁状态`    | [IBlockState](/Vanilla/Blocks/IBlockState/) |
+| `尺寸`      | 整数                                          |
+| `项目`      | [IItemStack](/Vanilla/Items/IItemStack/)    |
 
 ## ZenMethods
 
-- `event.cancel()` sets the event as cancelled
-- `event.process()` sets the event as processed
+- `event.cancel()` 将事件设置为取消
+- `event.process()` 将事件设置为已处理

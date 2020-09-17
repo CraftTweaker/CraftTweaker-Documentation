@@ -1,25 +1,25 @@
 # IOreDict
 
-The Forge OreDictionary is like a huge Lexicon in the way that it features many different entries and each entry is described by fitting Items.  
-When talking about ore Dictionarys, people mostly refer to [IOreDictEntries](/Vanilla/OreDict/IOreDictEntry/) not the whole ore Dictionary.
+Forge OreDictionaryは、多くの異なるエントリを備えた巨大なLexiconのようなもので、各エントリはアイテムを取り付けることで記述されています。  
+鉱石辞書について話すとき、人々は主に鉱石辞書全体ではなく、 [IOreDictEntities](/Vanilla/OreDict/IOreDictEntry/) を参照する。
 
-## Importing the package
+## パッケージのインポート
 
 It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
 `import crafttweaker.oredict.IOreDict;`
 
-## How to retrieve the oreDictionary
+## ReDictionaryを取得する方法
 
-You can retrieve the OreDictionary using the [`oreDict` global keyword](/Vanilla/Global_Functions/).
+[`oreDict` global キーワード](/Vanilla/Global_Functions/) を使用して、OreDictionary を取得できます。
 
-## Methods
+## メソッド
 
-So what can be done with the oreDict?
+オレディックで何ができるでしょう？
 
-### Getting an [IOreDictEntry](/Vanilla/OreDict/IOreDictEntry/)
+### [IOreDictEntry](/Vanilla/OreDict/IOreDictEntry/) を取得する
 
-You can use either of the three ways below to refer to an OreDictEntry, no matter if it already exists or not.  
-If the oreDictEntry does not yet exist, it will be created.
+OreDictEntryは、すでに存在しているかどうかに関係なく、以下の3つの方法のいずれかを使用できます。  
+oreDictEntry がまだ存在しない場合、作成されます。
 
 ```zenscript
 oreDict.ingotIron;
@@ -27,10 +27,10 @@ oreDict.get("ingotIron");
 oreDict["ingotIron"];
 ```
 
-### Iterating through all registered [IOreDictEntries](/Vanilla/OreDict/IOreDictEntry/)
+### 登録済みのすべての [IOreDictEntities](/Vanilla/OreDict/IOreDictEntry/) を繰り返しています
 
 ```zenscript
-//the entries member is for retrieving all registered oreDictionary entries!
+//The entries member is for retrieving all reDictionary entries!
 val allEntries = oreDict.entries;
 
 for oreDictEntry in allEntries{
@@ -44,9 +44,9 @@ for entry in oreDict {
 
 ```
 
-## How to check if an ore Dictionary entry exists
+## 鉱石辞書が存在するかどうかを確認する方法
 
-You can use the `in` or `has` operator to check if an [IOreDictEntry](/Vanilla/OreDict/IOreDictEntry/) already exists:
+`の` または `の` 演算子を使用して、 [IOreDictEntry](/Vanilla/OreDict/IOreDictEntry/) が既に存在するかどうかを確認できます:
 
 ```zenscript
 if (oreDict in "ingotIron") {

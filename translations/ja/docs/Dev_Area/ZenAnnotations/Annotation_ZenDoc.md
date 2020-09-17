@@ -5,7 +5,7 @@ More specifically, it will look like this:
 
 ![img](assets/zenDoc.png)
 
-## Example
+## 例
 
 [CraftTweaker Test Project ZenDoc](https://github.com/jaredlll08/CraftTweaker/tree/1.12/CraftTweaker2-MC1120-Tests/src/main/java/crafttweaker/tests/wiki/ZenDocWiki.java)
 
@@ -21,8 +21,8 @@ public class ZenDocWiki {
 }
 ```
 
-## What methods can be annotated || Additional Info
+## どのようなメソッドに注釈を付けることができますか|| 追加情報
 
-- You can annotate all methods, static and nonstatic.
-- Currently, this will only affect the generated HTML file when running [`/ct dumpzs`](/Vanilla/Commands/).
-- This annotation takes one String as value that is the additional information that should be printed.
+- 静的および非静的のすべてのメソッドに注釈を付けることができます。
+- 現在のところ、 [`/ct dumpzs`](/Vanilla/Commands/) を実行すると、生成された HTML ファイルにのみ影響します。
+- このアノテーションは、出力されるべき付加的な情報である値として 1 つの String を取ります。

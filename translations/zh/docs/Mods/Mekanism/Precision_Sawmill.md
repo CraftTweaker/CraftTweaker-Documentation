@@ -1,34 +1,34 @@
 # Precision Sawmill
 
-As of Mekanism 9.7.0 it is now possible to view all recipe strings of the Precision Sawmill through the command `/ct mekrecipes sawmill`
+到Mekanism 9.7.0 现在可以通过命令 `/ct mektedes sawmill` 查看精致剑的所有配方字符串。
 
-## Addition
+## 加
 
 ```zenscript
 mods.mekanism.sawmill.addRecipe(IIngredient inputStack, IItemStack outputStack, @Optional IItemStack bonusOutput, @Optional double bonusChance);
 
-mods.mekanism.sawmill.addRecipe(<minecraft:bow>, <minecraft:stick> * 3, <minecraft:string> * 3, 0.5);
+mods. ekanism.sawmill.addRecipe(<minecraft:bow>, <minecraft:stick> * 3, <minecraft:string> * 3, 0.5);
 mods.mekanism.sawmill.addRecipe(<minecraft:torch>, <minecraft:stick>);
 ```
 
-As of Mekanism 9.7.0 it is possible to use IIngredients as the inputStack instead of only IItemStacks.
+由于Mekanism 9.7.0，可以使用IIngredients 作为输入堆栈，而不仅仅是IItemStack。
 
-Note: Currently all this does is loop over the different possibilities in java while adding instead of you having to do it in ZenScript. Currently there is no built in support for compound ingredients or oredictionary in the machines themselves.
+注意：目前所有这一切都是在java的不同可能性上循环的，而不是在ZenScript中添加。 目前，机器本身没有用于支持复合成份或修复术。
 
-## Removal
+## 移除
 
 ```zenscript
 mods.mekanism.sawmill.removeRecipe(IIngredient inputStack, @Optional IIngredient outputStack, @Optional IIngredient bonusOutput);
 
-mods.mekanism.sawmill.removeRecipe(<minecraft:bed>, <minecraft:planks>, <minecraft:wool>);
-mods.mekanism.sawmill.removeRecipe(<minecraft:planks:*>);
+mods.mekanis.sawmill.removeRecipe(<minecraft:bed>, <minecraft:planks>, <minecraft:planks> , <minecraft:wool>);
+mods.mekanis.sawmill.removeRecipe(<minecraft:planks:*>);
 ```
 
-Specifying an output parameter will only remove the specific recipe that results in that output from that input. Omitting the output parameter will remove all recipes that the input item can produce.
+指定输出参数只会移除从该输入产生该输出的特定配方。 忽略输出参数将删除输入项能够生成的所有配方。
 
-## Removing all recipes
+## 删除所有配方
 
-As of Mekanism 9.7.0 it is now possible to remove all Precision Sawmill recipes. (This excludes any recipes added via CraftTweaker)
+由于Mekanisis 9.7.0，现在有可能去掉所有精准锯齿的配方。 (这排除了任何通过 CraftTweaker 添加的配方
 
 ```zenscript
 mods.mekanism.sawmill.removeAllRecipes();

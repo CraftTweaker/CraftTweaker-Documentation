@@ -1,20 +1,20 @@
-# Bracket Handlers
+# Bracket-Handler
 
-## Bracket Handlers
+## Bracket-Handler
 
-### Skill Bracket Handler:
+### Fähigkeitsklasse-Handler:
 
-    ## Example:
+    ## Beispiel:
     <skill:resourcelocation>
     
-    ## Working Example:
+    ## Beispiel:
     <skill:reskillable:agility>
     
 
-### Trait Bracket Handler:
+### Merkmals-Klammerhandler:
 
-    ## Example:
+    ## Beispiel:
     <trait:resourcelocation>
     
-    ## Working Example:
+    ## Beispiel:
     <trait:reskillable:sidestep>

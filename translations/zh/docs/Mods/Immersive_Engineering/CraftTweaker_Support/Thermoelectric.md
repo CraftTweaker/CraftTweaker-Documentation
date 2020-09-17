@@ -1,35 +1,35 @@
-# Thermoelectric
-The Thermoelectric package can be used to register or unregister temperatures for blocks to allow them to power the Immersive Engineering Thermoelectric Generator. Liquids inherently have a temperature, so they do not and cannot be registered. Temperatures are in Kelvin.
+# 热电器
+热电包可以用来注册或取消区块的温度，以使它们能够为沉浸式工程热电发电机供电。 液体本来就有温度，所以不会也不能注册。 温度在克尔文岛。
 
-## Calling The Package
-You can call the Thermoelectric package using `mods.immersiveengineering.Thermoelectric`.
+## 调用包
+你可以使用 `mods.immersiveengineering.Thermoway` 来调用热电包.
 
-## Add Temperature Source
+## 添加温度源
 
-| Required | 类型              | Data Type                                           |
-| -------- | --------------- | --------------------------------------------------- |
-| 必要       | Target Block    | [IIngredient](/Vanilla/Variable_Types/IIngredient/) |
-| 必要       | Temperature (K) | Integer                                             |
+| 必填 | 类型     | 数据类型                                                    |
+| -- | ------ | ------------------------------------------------------- |
+| 必要 | 目标块    | [材料（IIngredient）](/Vanilla/Variable_Types/IIngredient/) |
+| 必要 | 温度 (K) | 整型                                                      |
 
 ### 例子
 ```zenscript
-//Example:
-mods.immersiveengineering.Thermoelectric.addTemperatureSource(IIngredient source, int temperature);
+//示例：
+mods.immersiveengineering.Thermoely.addTemperatureSource(IIngredient source,int temperaturesource);
 
-mods.immersiveengineering.Thermoelectric.addTemperatureSource(<minecraft:obsidian>, 1272);
+mods.immersiveengineering.Thermoely.addTemperatureSource(<minecraft:obsidian>, 1272);
 ```
 
 
-## Remove Temperature Source
+## 删除温度源
 
-| Required | 类型           | Data Type                                           |
-| -------- | ------------ | --------------------------------------------------- |
-| Required | Target Block | [IIngredient](/Vanilla/Variable_Types/IIngredient/) |
+| 必填 | 类型  | 数据类型                                                    |
+| -- | --- | ------------------------------------------------------- |
+| 必填 | 目标块 | [材料（IIngredient）](/Vanilla/Variable_Types/IIngredient/) |
 
-### Example
+### 例子
 ```zenscript
-//Example:
-mods.immersiveengineering.Thermoelectric.removeTemperatureSource(IIngredient source);
+//示例：
+mods.immersiveengineering.Thermoely.removeTemperatureSource(IIngredient source);
 
-mods.immersiveengineering.Thermoelectric.removeTemperatureSource(<minecraft:obsidian>);
+mods.immersiveengineering.Thermoely.removeTemperatureSource(<minecraft:obsidian>);
 ```

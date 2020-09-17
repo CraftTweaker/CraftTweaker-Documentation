@@ -1,77 +1,77 @@
 # Tree Tweaker
 
-Tree Tweaker is a CraftTweaker addon that allows you to add custom trees to world generation. The shape, height, leaves, logs, frequency, biome, and more can all be customized through zenscript. Trees can use modded blocks and be set to generate in modded biomes.
+树木更弱是一种CraftTin弱化插件，它允许您将自定义树添加到世界代。 形状，高度，叶片，日志，频率，生物群落，都可以通过zenscript自定义更多。 树可以使用moded的方块，然后设置为在moddated biomes中生成。
 
-## CraftTweaker Integration
+## CraftTinfirst集成
 
-Tree Tweaker issues should be discussed at the [Tree Tweaker issue tracker](https://github.com/superfluke/treetweaker/issues).
+应该在 [树木树较弱的问题跟踪器](https://github.com/superfluke/treetweaker/issues) 中讨论树木较弱的问题。
 
-## Package
+## 所属包名
 
-`import mods.treetweaker.TreeFactory;`
+`导入 mods.treetweeper.TreeFactory;`
 
-## Script Requirements
+## 脚本要求
 
 #### var **newtree = TreeFatory.createTree("newtree");**
 
-create a new tree called `newtree`, using the variable`newtree`
+创建一个叫做 `newtree`的新树，使用变量`newtree`
 
 `var newtree = TreeFactory.createTree("newtree");`
 
-#### newtree.setTreeType("TREE_TYPE");
+#### newtree.setTreeType("TREE_TYPE")；
 
-set which type of tree shape to generate as. Accepts OAK, SPRUCE, JUNGLE, BIRCH, ACACIA, and DARK_OAK. `newtree.setTreeType("SPRUCE");`
+设置要生成的树形状的类型。 接受OAK, SPRUCE, JUNGLE, BIRCH, ACACIA和DARK_OAK。 `newtree.setTreeType("SPRUCE");`
 
-#### newtree.register();
+#### a. 登记器();
 
-register tree to add to worldgen. Make sure to call this method last. `newtree.register();`
+注册树以添加到世界格子。 请确保此方法被调用。 `newtree.register();`
 
-## Optional Syntaxes
+## 可选的语法
 
-#### newtree.setLog("modid:itemid");
+#### newtree.setLog("moded:itemid");
 
-set what log to use  
-`newtree.setLog("minecraft:wool:3");`
+设置要使用的日志  
+`newtree.setLog("minecraft:wool:3")；`
 
-#### newtree.setLeaf("modid:itemid");
+#### newtree.setLeaf("moded:itemid");
 
-set what leaf to use  
-`newtree.setLeaf("minecraft:melon_block");`
+设置皮革使用  
+`newtree.setLeaf(“minecraft:melon_block”)；`
 
-#### newtree.setMinHeight(INT);
+#### newtree.setMinHight(INT)；
 
-set the minimum height of the tree. `newtree.setMinHeight(5);`
+设置树的最小高度 `newtree.setMinHeight(5);`
 
-#### newtree.setExtraHeight(INT);
+#### 设置域外(INT)；
 
-Extra height randomly added when tree generates `treename.setExtraHeight(5);`
+当树生出 `treename.setExtraight(5);`
 
-#### newtree.setGenFrequency(INT);
+#### newtre.setGenFrequency(INT)；
 
-Used to control how often a tree generates, successfully spawning at a rate of 1 in N attempts `newtree.setGenFrequency(5)`
+用于控制树的生成频率，成功生成率为 1 的 N 尝试 `newtree.setGenFrequency(5)`
 
-#### newtree.setGenAttempts(INT);
+#### nettre.setGenatts(INT)；
 
-How many trees should try to spawn during a successful generation attempt. Can be used to make clusters of trees `newtree.setGenAttempts(1)`
+在成功的一代尝试中应尝试生成多少棵树。 可以用来制作树群 `newtree.setGenatts(1)`
 
 #### newtree.extraThick=boolean;
 
-Makes tree trunk generate as 2x2 thick. Only valid on LARGE_OAK, PINE, CANOPY, and SPRUCE trees `newtree.extraThick=true;`
+将树干生成为 2x2 厚。 仅在 LARGE_OAK、PINE、CANOPY和SPRUCE 树上有效 `newtree.extraxThick=true;`
 
-#### newtree.setGenBiome("string:string");
+#### newtree.setGenome("string:string");
 
-Set the biome of spawning, ignoring typical biome rules.  
-If not set, the tree will generate in all biomes that normally contain trees.  
-`newtree.setGenBiome("minecraft:plains")`
+设置生成生物群落，忽略典型的生物群落规则。  
+如果未设置，树将在所有通常包含树的生物群落中生成。  
+`newtree.setGenbiome("minecraft:plins")`
 
-#### newtree.setGenBiomeByTag("STRING");
+#### newtree.setGenomeByTag("STRING");
 
-Biome tag tree can generate in (HOT, SWAMP, SNOWY...), ignoring typical biome tree rules . Will not function unless spawnBiome is null. `newtree.setGenBiomeByTag("HOT");`
+生物群落标签树可以在 (HOT, SWAMP, SNOWY...) 中生成，忽略典型的生物群落树规则。 除非出生生物群落为空，否则不会起作用。 `newtree.setGenomeByTag("HOT");`
 
-#### newtree.setBaseBlock("modid:itemid")
+#### 设置BaseBlock("修改:itemid")
 
-What block the tree should generate on top of. If not set, will default to blocks valid for vanilla trees (grass, dirt, farmland) `newtree.setBaseBlock("minecraft:dirt");`
+这棵树应该生成什么块。 如果未设置，默认情况下会阻止原生树(草、土、农田) `newtree.setBaseBlock("minecraft:dirt");`
 
-#### newtree.setDimWhitelist(INT);
+#### newtree.setDimWhitelist(INT)；
 
-Either single int or array of ints listing dimension IDs the tree may generate in. If null, may generate in any dimension `newtree.setDimWhitelist(0);`
+要么是单一整数组，要么是该树可能生成的块列有尺寸ID。 如果为 null，可以生成任何尺寸 `newtree.setDimWhitelist(0)；`

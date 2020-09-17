@@ -1,24 +1,24 @@
 # AnimalTame
 
-This event is fired to determine if an animal is going to be tamed. If canceled, **the tame does not succeed**. Otherwise, it simply serves as a notification of the tame taking place.
+Cet événement est tiré pour déterminer si un animal va être apprivoisé. Si annulé, **l'apprivoisement ne réussit pas**. Dans le cas contraire, il sert simplement de notification des apprivoisements qui ont lieu.
 
-## Event Class
-You will need to cast the event in the function header as this class:  
-`crafttweaker.event.AnimalTameEvent`  
-You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
+## Classe de l'événement
+Vous devrez lancer l'événement dans l'en-tête de la fonction comme cette classe:  
+`crafttweaker.event. nimalTameEvent`  
+Vous pouvez, bien sûr, également [importer](/AdvancedFunctions/Import/) la classe avant et utiliser ce nom alors.
 
-## Event interface extensions
-AnimalTame Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+## Extensions d'interface de l'événement
+AnimalTame Events implémente les interfaces suivantes et peut également appeler toutes leurs méthodes/getters/setters :
 
-- [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
+- [Evénement IPlayer](/Vanilla/Events/Events/IPlayerEvent/)
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 
 
 ## ZenGetters/ZenSetters
-The following information can be retrieved/set during the event:
+Les informations suivantes peuvent être récupérées/définies pendant l'événement :
 
-| ZenGetter | ZenSetter | Type                                              |
+| ZenGetter | ZenSetter | Type de texte                                     |
 | --------- | --------- | ------------------------------------------------- |
 | `animal`  |           | [IEntityAnimal](/Vanilla/Entities/IEntityAnimal/) |
 | `animal`  |           | [IEntityAnimal](/Vanilla/Entities/IEntityAnimal/) |
-| `player`  |           | [IPlayer](/Vanilla/Players/IPlayer/)              |
+| `Joueur`  |           | [IPlayer](/Vanilla/Players/IPlayer/)              |

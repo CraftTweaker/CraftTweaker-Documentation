@@ -1,33 +1,33 @@
-# Powered Thingies :: Powder Maker
+# Zasilane rzeczy :: Wytwórca proszków
 
-### Importing
+### Importowanie
 
 ```zenscript
-import mods.poweredthingies.Tweaker.powderMakerTweaker as pmt;
+importuj mods.poweredthingies.Tweaker.powderMakerTweaker w pmt;
 ```
 
-### Listing Keys, Removing Recipes by Key, Clearing
+### Lista kluczy, usuwanie przepisów przez klucz, czyszczenie
 
 ```zenscript
 pmt().logKeys()
-pmt().removeRecipe('minecraft:gravel') // check <logKeys> output for valid keys
+pmt().removeRecipe('minecraft:gravel') // sprawdź wyjście <logKeys> dla prawidłowych kluczy
 pmt().clear()
 ```
 
-### Adding Recipe
+### Dodawanie przepisu
 
-##### Signature
+##### Podpis
 
 ```zenscript
 addRecipe(input: IItemStack, outputs: Array<WeightedItemStack>)
 ```
 
-##### Example
+##### Przykład
 
 ```zenscript
 pmt().addRecipe(<minecraft:bucket>, [<minecraft:iron_ingot> % 100, <minecraft:iron_ingot> % 12, <minecraft:iron_ingot> % 12]);
 ```
 
-### Notes
+### Uwagi
 
-All of these actions will get cached and ran after the default registry for this machine has finished registering all recipes (including the ones from the custom jsons).
+Wszystkie te działania zostaną zapisane w pamięci podręcznej i uruchomione po zakończeniu rejestracji domyślnego rejestru dla tego komputera (w tym tych z niestandardowych jsonów).

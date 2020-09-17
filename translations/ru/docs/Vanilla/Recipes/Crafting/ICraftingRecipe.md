@@ -1,34 +1,34 @@
-# ICraftingRecipe
+# Рецепт ICrafting
 
-An ICraftingRecipe is a crafting table recipe the way ZS sees it.
+ICraftingRecipe-это рецепт крафта так, как его видит ZS.
 
-## Importing the class
+## Импортирование класса
 
-It might be required to [import](/AdvancedFunctions/Import/) the class to avoid errors.  
+Может понадобиться [импортировать](/AdvancedFunctions/Import/) класс для избежания ошибок:  
 `import crafttweaker.recipes.ICraftingRecipe`
 
-## ZenMethods/Getters
+## ZenMethods/Геттеры
 
-### Get Ingredients
+### Получить ингредиенты
 
-Either returns an [IIngredient](/Vanilla/Variable_Types/IIngredient/)[] or an [IIngredient](/Vanilla/Variable_Types/IIngredient/)[][]
+Вернет либо [IIngredient](/Vanilla/Variable_Types/IIngredient/)[], либо [IIngredient](/Vanilla/Variable_Types/IIngredient/)[]
 
 ```zenscript
 rec.ingredients1D
 rec.ingredients2D
 ```
 
-### Get standart output
+### Получить стандартный вывод
 
-Returns the ouptut as [IItemStack](/Vanilla/Items/IItemStack/). Careful, can be null!
+Возвращает вывод в виде [IItemStack](/Vanilla/Items/IItemStack/). Осторожно, может быть пустым!
 
 ```zenscript
 rec.output
 ```
 
-### Check for conditions
+### Проверить условия
 
-Each of these returns a boolean
+Все нижеперечисленное возвращает boolean
 
 ```zenscript
 rec.hasTransformers;
@@ -40,31 +40,31 @@ rec.shaped;
 
 ### resourceDomain
 
-Basically, the modid of the mod that added the recipe.
+Это просто modid мода, который добавил рецепт.
 
 ```zenscript
 rec.resourceDomain;
 rec.fullResourceDomain;
 ```
 
-### Ingredients
+### Ингредиенты
 
-Returns the ingredients list as [IIngredient](/Vanilla/Variable_Types/IIngredient/)\[] or [IIngredient](/Vanilla/Variable_Types/IIngredient/)\[]\[] respectively.
+Возвращает список ингредиентов как [IIngredient](/Vanilla/Variable_Types/IIngredient/)\[] или [IIngredient](/Vanilla/Variable_Types/IIngredient/)\[]\[] соответственно.
 
 ```zenscript
 rec.ingredients1D;
 rec.ingredients2D;
 ```
 
-### Output
+### Вывод
 
-The [IItemStack](/Vanilla/Items/IItemStack/) output of the recipe.
+Вывод рецепта от [IItemStack](/Vanilla/Items/IItemStack/).
 
 ```zenscript
 rec.output;
 ```
 
-### To String
+### Преобразование в строку
 
 ```zenscript
 rec.commandString;

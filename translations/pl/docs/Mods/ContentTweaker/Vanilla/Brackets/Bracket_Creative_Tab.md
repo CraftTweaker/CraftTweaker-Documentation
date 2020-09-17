@@ -1,8 +1,8 @@
-# Creative Tab Bracket Handler
+# Kreatywny uchwyt kartek
 
-The Creative Tab Bracket Handler gives you access to the Creative Tabs in the game.
+Obsługa kartek kreatywnych daje Ci dostęp do kreatywnych zakładek w grze.
 
-Creative Tabs are referenced in the creative tabs handler this way:
+Zakładki kreatywne są przywoływane w programie obsługi kart kreatywnych w ten sposób:
 
 Vanilla
 
@@ -12,4 +12,4 @@ Vanilla
 <creativetab:misc>
 ```
 
-If the creative tab is found, this will return a [creative tab](/Mods/ContentTweaker/Vanilla/Creatable_Content/Creative_Tab/) Object.
+Jeśli karta kreatywna zostanie znaleziona, zwróci ona [kreatywną kartę](/Mods/ContentTweaker/Vanilla/Creatable_Content/Creative_Tab/) Obiekt.

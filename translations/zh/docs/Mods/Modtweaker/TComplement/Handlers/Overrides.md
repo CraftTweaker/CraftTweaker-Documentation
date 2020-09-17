@@ -1,23 +1,23 @@
-# Overrides
+# 覆盖
 
-The Overrides package is used for adding/removing recipes from/to the melter Overrides.
+Overrides packages 用于添加/移除熔融覆盖的配方。
 
 ## 导入包
 
-You can call the Overrides package using `mods.tcomplement.Overrides`
+您可以使用 `mods.tcomplety。覆盖`
 
-## Overrides entry addition
+## 覆盖条目添加
 
 ```zenscript
-//mods.tcomplement.Overrides.addRecipe(ILiquidStack output, IItemStack input, @Optional int temp);
-mods.tcomplement.Overrides.addRecipe(<liquid:gold> * 100, <minecraft:gold_ingot>);
-mods.tcomplement.Overrides.addRecipe(<liquid:gold> * 100, <minecraft:gold_ingot>, 1000);
+//mods.tcomplement.overrides.addRecipe(ILiquidStack output, IItemStack input, @Opinion tempet);
+mods.tcomplus.Overrides.addRecipe(<liquid:gold> * 100, <minecraft:gold_ingot>);
+mods.tcomplus.Overrides.addRecipe(<liquid:gold> * 100, <minecraft:gold_ingot>, 1000);
 ```
 
-## Overrides entry removal
+## 覆盖条目移除
 
 ```zenscript
-//mods.tcomplement.Overrides.removeRecipe(ILiquidStack output, @Optional IItemStack input);
-mods.tcomplement.Overrides.removeRecipe(<liquid:gold>);
-mods.tcomplement.Overrides.removeRecipe(<liquid:gold>, <minecraft:gold_ore>);
+//mods.tcomplement.Overrides.removeRecipe(ILiquidStack output, @Optional IItemStack 输入);
+mods.tcomplus.Overrides.removeRecipe(<liquid:gold>);
+mods.tcomplus.Overrides.removeRecipe(<liquid:gold>, <minecraft:gold_ore>);
 ```

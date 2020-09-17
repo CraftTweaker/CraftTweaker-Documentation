@@ -1,23 +1,23 @@
-# Block Cutter
+# Cortador de bloques
 
-## Package
+## Paquete
 
-`import mods.ic2.BlockCutter;`
+`importar mods.ic2.BlockCutter;`
 
-## Methods
+## Métodos
 
 - **[IItemStack](/Vanilla/Items/IItemStack/) output**
-- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input**
-- **@Optional int hardness** Minimum hardness requirement for blade.
+- **[entrada IIngrediente](/Vanilla/Variable_Types/IIngredient/)**
+- **@Dureza opcional de los int** Requisitos mínimos de dureza para la hoja.
 
-## Addition
+## Adicional
 
 ```zenscript
-mods.ic2.BlockCutter.addRecipe(IItemStack output, IIngredient input, @Optional int hardness default 0);
+mods.ic2.BlockCutter.addRecipe(salida IItemStack, entrada IIngrediente, @Dulidad opcional int por defecto 0);
 
 mods.ic2.BlockCutter.addRecipe(<minecraft:diamond>, <minecraft:dirt>);
 ```
 
-## Removal
+## Eliminar
 
-For now simply remove the corresponding line in `config/ic2/block_cutter.ini`.
+Por ahora, simplemente elimine la línea correspondiente en `config/ic2/block_cutter.ini`.

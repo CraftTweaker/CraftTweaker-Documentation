@@ -1,26 +1,26 @@
-# Recipes
+# レシピ
 
-## Recipe Types
+## レシピタイプ
 
-There are several types of recipes:
+レシピにはいくつかのタイプがあります:
 
-### Shaped Recipes
+### 形状のレシピ
 
-Shaped Recipes are recipes, where it matters, which item goes into which slot. For example, you can't just arrange 7 iron ingots in any order to create iron leggings. The shape matters, thus it is a shaped recipe.
+形をしたレシピはレシピで、どのアイテムがどのスロットに入るかが重要です。 例えば、鉄のレギンスを作るために7つのインゴットを配置することはできません。 形状が重要なので、形状のレシピです。
 
-### Mirrored Recipe
+### 鏡像レシピ
 
-Mirrored Recipes are shaped recipes. Only difference is that the recipe can be mirrored along the horizontal or vertical axes.
+ミラーレシピは形状のレシピです。 唯一の違いは、レシピが水平または垂直軸に沿ってミラーリングすることができることです。
 
-### Shapeless Recipes
+### 形のないレシピ
 
-Shapeless Recipes are recipes, where only the items you put in the crafting grid matter, whereas the shape is of no importance. For example, blue and yellow dye create green dye. This recipe doesn't care about where you put which item.
+シェイプレスレシピはレシピであり、クラフトグリッドに入れたアイテムだけがレシピであり、形状は重要ではありません。 例えば、青と黄色の染料は緑色の染料を作ります。 このレシピは、どのアイテムをどこに置くかは気にしません。
 
-## Remove Recipes
+## レシピを削除
 
-There are several ways of removing recipes.
+レシピを削除する方法はいくつかあります。
 
-### remove
+### 削除
 
 ```zenscript
 recipes.remove(output, NBTMatch);
@@ -32,21 +32,21 @@ If `NBTMatch` is true, it will only remove recipes that result in items with the
 `Output` is an [IIngredient](/Vanilla/Variable_Types/IIngredient/).  
 `NBTMatch` is a boolan and optional (Will be the same as false if not specified).
 
-### removeShaped
+### RemoveShaped
 
 ```zenscript
 recipes.removeShaped(output, inputs);
 ```
 
-This one is more strict on which recipes to remove and will only remove shaped recipes that craft `output` with `input`.
+`入力` を `入力`で出力する形状のレシピのみを削除します。
 
-`output` is an [IIngredient](/Vanilla/Variable_Types/IIngredient/)  
-`inputs` is an [IIngredient](/Vanilla/Variable_Types/IIngredient/)\[][\] (e.g.[[iron,iron,iron],[iron,null,iron],[iron,null,iron]])
+`出力` は [IIngredient](/Vanilla/Variable_Types/IIngredient/)  
+`入力` は [IIngredient](/Vanilla/Variable_Types/IIngredient/)\[][\] (例：[[iron,iron,null,iron],[iron,null,iron],[iron]),[iron,null,iron]])
 
-Furthermore, `inputs` is optional. If omitted, the function will do the same as `recipe.remove`, though it will only remove shaped Recipes.  
+さらに、 `入力` は任意です。 If omitted, the function will do the same as `recipe.remove`, though it will only remove shaped Recipes.  
 `inputs` can contain wildcard characters: `[[<*>,<*>,<*>],[<*>,<*>,<*>],[<*>,<*>,<*>]]` would refer a recipe whose items, as long as each slot is filled, don't matter.
 
-### removeShapeless
+### RemoveShapeless
 
 ```zenscript
 recipes.removeShapeless(output, inputs, wildcard);
@@ -59,53 +59,53 @@ If `wildcard` is true, it will remove shapeless recipes that craft `output` with
 `inputs` is an [IIngredient](/Vanilla/Variable_Types/IIngredient/)[]  
 `wildcard` is a boolan and optional (Will be the same as false if not specified)
 
-Furthermore, `inputs` is optional. If omitted, the function will do the same as `recipe.remove`, though it will only remove shapeless Recipes.
+さらに、 `入力` は任意です。 省略すると、関数は `recipe.remove`と同じ操作を行いますが、シェイプレスレシピは削除されます。
 
-### removeAll
+### すべて削除
 
-Removes all crafting recipes in the game.  
-A bit overkill, don't you think?
+ゲーム内のレシピをすべて削除します。  
+少しやり過ぎだと思いませんか？
 
 ```zenscript
 recipes.removeAll();
 ```
 
-### Remove by name
+### 名前で削除
 
-As 1.12 introduces naming recipes, you can also remove recipes once you know their name. You can also use regex to remove multiple recipes at once. And no, if you don't know what regular expressions are, I won't explain it here!
+1.12 では命名レシピが導入されているため、名前がわかったらレシピを削除することもできます。 Regexを使用して、複数のレシピを一度に削除することもできます。 そして、あなたが正規表現が何であるかを知らなければ、私はここでそれを説明しません!
 
 ```zenscript
 recipes.removeByRegex("name[1-9]");
 recipes.removeByRecipeName("modid:recipename");
 ```
 
-### Remove by mod
+### Modで削除
 
-You can also remove all recipes that were added by the mod specified.  
-You need to provide the mod's modid as string.
+また、指定したModで追加されたレシピをすべて削除することもできます。  
+modのmodiを文字列として指定する必要があります。
 
 ```zenscript
-recipes.removeByMod("modularmachinery");
+recipes.removeByMod("modulearmachinery");
 ```
 
-## Add Recipes
+## レシピを追加
 
-### Notes On 1.12
+### ノート 1.12
 
 On 1.12, each added recipe requires a UNIQUE identifier, because the forge dev team wanted it that way.  
 This means, all add functions now require an additional parameter `name` at the start (which cannot be omitted).  
 This means `recipe.addShaped(output,input);` now is `recipe.addShaped(name,output,input);`  
-All other functionality stay the same. Remember that `name` needs to be unique!  
-`name` is a string.
+All other functionality stay the same. `名` は一意である必要があることを覚えておいてください!  
+`名前` は文字列です。
 
 ### addShaped
 
 ```zenscript
 //pre-1.12
-recipes.addShaped(output,inputs,function,action);
+recipes.addShaped(output,input,function,action);
 
 //1.12
-recipes.addShaped(name,output,inputs,function,action);
+recipes.addShaped(name,output,input,function,action);
 ```
 
 This creates a shaped recipe for `output` using `inputs` as Ingredients.  
@@ -114,8 +114,8 @@ If an `action` function is added as forth parameter, you can also determine, wha
 
 `name` is a string and needs to be unique but is also optional `output` is an [IItemStack](/Vanilla/Items/IItemStack/)  
 `inputs` is an [IIngredient](/Vanilla/Variable_Types/IIngredient/)\[][\] (see below)  
-`function` is a IRecipeFunction. Please refer to the [respecting wiki entry](/Vanilla/Recipes/Crafting/Recipe_Functions/#irecipefunction) for more information on functions.  
-`action` is a IRecipeAction. Please refer to the [respecting wiki entry](/Vanilla/Recipes/Crafting/Recipe_Functions/#irecipeaction) for more information on actions.
+`function` is a IRecipeFunction. 関数の詳細については、 [Wikiエントリを尊重する](/Vanilla/Recipes/Crafting/Recipe_Functions/#irecipefunction) を参照してください。  
+`アクション` は IRecipeAction です。 アクションの詳細については、 [Wikiのエントリを尊重する](/Vanilla/Recipes/Crafting/Recipe_Functions/#irecipeaction) を参照してください。
 
 `inputs` is a 2 Dimensional [IIngredient](/Vanilla/Variable_Types/IIngredient/) Array.  
 So the recipe for Iron Leggings would be written as `[[iron,iron,iron],[iron,null,iron],[iron,null,iron]]`  
@@ -128,45 +128,45 @@ val leggings = <minecraft:iron_leggings>;
 recipes.addShaped("CTLeggings", leggings,
  [[iron,iron,iron],
   [iron,null,iron],
-  [iron,null,iron]]);
+  [iron,null,iron]);
 ```
 
 ### addShapedMirrored
 
 ```zenscript
 //Normal pre 1.12 syntax
-recipes.addShapedMirrored(output,inputs,function,action);
+recipes.addShapedMirrored(output,input,function,action);
 
 //Recommended 1.12 syntax
-recipes.addShapedMirrored(name,output,inputs,function,action);
+recipes.addShapedMirrored(name,output,input,function,action);
 ```
 
-Same as `addShaped`, only that the recipe created this way is a mirrored recipe.
+`addShaped`と同様に、この方法で作成されたレシピだけがミラーレシピである。
 
 ### addShapeless
 
 ```zenscript
 //Normal pre 1.12 syntax
-recipes.addShapeless(output,inputs,function,action)
+recipes.addShapeless(output,input,function,action)
 
 //Recommended 1.12 syntax
-recipes.addShapeless(name,output,inputs,function,action)
+recipes.addShapeless(name,output,function,action)
 ```
 
 This creates a shapeless recipe for `output` using `inputs` as Ingredients.  
 If a `function` is added as third parameter, you can also use a function to determinate the output.  
 If an `action` function is added as forth parameter, you can also determine, what will happen, if the item is crafted.
 
-`name` is a string and needs to be unique `output` is an [IItemStack](/Vanilla/Items/IItemStack/)  
-`inputs` is an [IIngredient](/Vanilla/Variable_Types/IIngredient/)[] (e.g. [<minecraft:dye:1>,<minecraft:dye:2>])  
-`function` is a IRecipeFunction. Please refer to the [respecting wiki entry](/Vanilla/Recipes/Crafting/Recipe_Functions/#irecipefunction) for more information on functions. This is optional.  
-`action` is a IRecipeAction. Please refer to the [respecting wiki entry](/Vanilla/Recipes/Crafting/Recipe_Functions/#irecipeaction) for more information on actions. This is optional.
+`名前` は文字列で、ユニークな `の出力` は [IItemStack](/Vanilla/Items/IItemStack/) である  
+`inputs` は、 [IIngredient](/Vanilla/Variable_Types/IIngredient/)である (例: [<minecraft:dye:1>,<minecraft:dye:2>])  
+`関数` はIRecipeFunctionです。 関数の詳細については、 [wiki の項目](/Vanilla/Recipes/Crafting/Recipe_Functions/#irecipefunction) を参照してください。 これは任意です。  
+`アクション` IRecipeActionです。 アクションの詳細については、 [Wikiのエントリを尊重する](/Vanilla/Recipes/Crafting/Recipe_Functions/#irecipeaction) を参照してください。 これは任意です。
 
 ### addHidden
 
 ```zenscript
-addHiddenShapeless(String name, IItemStack output, IIngredient[] ingredients, @Optional IRecipeFunction function, @Optional IRecipeAction action);
-addHiddenShaped(String name, IItemStack output, IIngredient[][] ingredients, @Optional IRecipeFunction function, @Optional IRecipeAction action, @Optional boolean mirrored);
+addHiddenShapeless(名前の文字列、IItemStack 出力、IIngredient[] 食材、@Optional IRecipeFunction 関数、@Optional IRecipeAction action);
+addHiddenShaped(String name, IItemStack output, IIngredient[][] factions, @Optional IRecipeFunction 関数, @Optional IRecipeAction action, @Optional boolean mirrored);
 ```
 
 This creates a shapeless recipe for `output` using `inputs` as Ingredients that is named `name`.  
@@ -174,26 +174,26 @@ If a `function` is added as third parameter, you can also use a function to dete
 If an `action` function is added as forth parameter, you can also determine, what will happen, if the item is crafted.  
 For the shapeless variant you can also set if the recipe is `mirrored`, if omitted, it will not.
 
-## Other Functionality
+## その他の機能
 
-### Get all registered Crafting recipes.
+### 登録済みのクラフトレシピを全て入手しましょう。
 
-You can use this to get a [`List<ICraftingRecipe>`](/Vanilla/Recipes/Crafting/ICraftingRecipe/) that contains ALL registered crafting recipes.
+[`リスト<ICraftingRecipe>`](/Vanilla/Recipes/Crafting/ICraftingRecipe/) には、登録されているすべてのクラフトレシピが含まれています。
 
-    recipes.all;
+    レシピ。すべて;
     
 
-### Get all recipes for a given IIngredient
+### 特定のIIngredientのすべてのレシピを入手する
 
 You can use this to get a [`List<ICraftingRecipe>`](/Vanilla/Recipes/Crafting/ICraftingRecipe/) that contains ALL registered crafting recipes for the given [IIngredient](/Vanilla/Variable_Types/IIngredient/).
 
-    //recipes.getRecipesFor(IIngredient ingredient);
+    //recipes.getRecipesFor(IIngredient 食材);
     recipes.getRecipesFor(<minecraft:iron_ingot>);
     
 
-### Replace all item ingredients with another one
+### すべてのアイテムの成分を別の成分に置き換える
 
-You can use this to replace all [ingredients](/Vanilla/Variable_Types/IIngredient/) in a recipe with another one, for example all sticks with stones. It also accepts an optional third parameter that matches agains the recipe outputs. If the recipe
+これは、レシピ内のすべての [成分](/Vanilla/Variable_Types/IIngredient/) を別のものに置き換えることができます。例えば、すべてのスティックが石に付いています。 また、レシピ出力に再びマッチするオプションの 3 番目のパラメータも受け付けます。 レシピの場合
 
     //recipes.replaceAllOccurences(IIngredient toReplace, IIngredient replaceWith, @Optional IIngredient forOutput);
     
@@ -214,9 +214,9 @@ You can use this to replace all [ingredients](/Vanilla/Variable_Types/IIngredien
     }));
     
 
-### Craft
+### クラフト
 
-You can even craft from inside `recipes`! The function will return an [IItemStack](/Vanilla/Items/IItemStack/) or `null` depending if a recipe is found or not.
+`レシピ` の中からクラフトすることもできます！ この関数は、レシピが見つかるかどうかに応じて [IItemStack](/Vanilla/Items/IItemStack/) または `null` を返します。
 
     //recipes.craft(IItemStack[][]content);
     recipes.craft([[<minecraft:iron_ingot>]]);

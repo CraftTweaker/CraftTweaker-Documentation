@@ -7,10 +7,10 @@ ZenClass 是暴露给 ZenScript 的 Java 类。
 [CraftTweaker's IItemStack](https://github.com/jaredlll08/CraftTweaker/blob/1.12/CraftTweaker2-API/src/main/java/crafttweaker/api/item/IItemStack.java)
 
 ```java
-@ZenClass("crafttweaker.item.IItemStack")
-@ZenRegister
-public interface IItemStack extends IIngredient {
-    //Cut out to keep the page short
+@ZenClass("craftminstrer.item.IItemStack")
+@Zenregister
+公共接口IItemStack extensive IIngredient format@@
+    //Cut out 以保持页面的简短
 }
 ```
 

@@ -2,30 +2,30 @@
 
 ## 需求
 
-You need to know how to [create Commits](/Contribute/LocalClone/CreateCommit/) and you need to have created at least one of them.
+您需要知道如何 [创建提交](/Contribute/LocalClone/CreateCommit/) 并且您需要至少创建其中一个。
 
-## What will we do
+## 我们将做什么
 
-We will use the commit(s) we have created (e.g. the example in [create Commits](/Contribute/LocalClone/CreateCommit/)) and push the changes to GitHub.
+我们将使用我们创建的承诺(例如 [创建提交](/Contribute/LocalClone/CreateCommit/)中的示例)，并将更改推送到GitHub
 
-## Check the current status
+## 检查当前状态
 
-If you run `git status` you can see how many commits your local clone is ahead/behind your fork.
+如果你运行了 `git 状态` ，你可以看到有多少次提交你的本地克隆在前面/在你的叉后面。
 
-In this case we are ahead by 1 commit:  
-![git status call](/Contribute/LocalClone/assets/Example1_Bash_GitStatus3.png)
+在这种情况下，我们将提前1次提交：  
+![git 状态调用](/Contribute/LocalClone/assets/Example1_Bash_GitStatus3.png)
 
-## Git push
+## Git 推送
 
-Now we run `git push` to push our changes to the remote branch.  
-You might be asked for your GH username and password.  
-**Careful:** When you use TwoFactor Authorization (2FA) you need to create and use a *Personal Access Token* instead of your GH password!
+现在我们运行 `git 推送` 来将我们的更改推送到远程分支。  
+您可能需要您的 GH 用户名和密码。  
+**小心：** 当您使用双因素授权 (2FA) 时，您需要创建和使用 *个人访问令牌* 而不是您的 GH 密码！
 
-![Credentials dialog](/Contribute/LocalClone/assets/Example1_Bash_GitPush_Credentials.png)
+![凭据对话框](/Contribute/LocalClone/assets/Example1_Bash_GitPush_Credentials.png)
 
-To verify that the commit is actually on the fork, you can check the commit list that should now have the commit in there: ![Commit List with commit](/Contribute/LocalClone/assets/Example1_CommitList.png)
+要验证提交是否真正处于叉中，您可以检查现在应该有承诺的提交列表： ![提交列表](/Contribute/LocalClone/assets/Example1_CommitList.png)
 
-## How to continue
+## 下一步该做什么
 
-Now that you have pushed your changes to your fork, you can use GH to [create a Pull request](/Contribute/PullRequest/).  
-This is the same procedure as if you were using the online editor to edit files.
+既然你已经将你的更改推到了叉中，你可以使用 GH 来 [创建一个拉取请求](/Contribute/PullRequest/)。  
+这与您使用在线编辑器编辑文件的程序相同。

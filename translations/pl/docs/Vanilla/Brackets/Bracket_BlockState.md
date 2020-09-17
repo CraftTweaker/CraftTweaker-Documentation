@@ -1,39 +1,39 @@
-# BlockState Bracket Handler
+# Obsługa nawiasów BlockState
 
-The BlockState Bracket Handler gives you access to the BlockStates in the game. It is only possible to get BlockStates registered in the game, so adding or removing mods may cause issues if you reference the mod's blockstates in a BlockState Bracket Handler.
+Obsługa nawiasów BlockState daje Ci dostęp do bloków w grze. Możliwe jest tylko zarejestrowanie BlockStates w grze, więc dodawanie lub usuwanie modów może powodować problemy, jeśli odwołujesz się do blokowania moda w uchwycie nawiasów BlockState
 
-BlockStates are referenced in the BlockState Bracket Handler like so:
+BlockStates są przywoływane w obsłudze nawiasów BlockState jak tak:
 
 ```zenscript
 <blockstate:modid:blockname>
 ```
 
-With the `modid` being the modid of the mod that the block is defined in, and `blockname` being the name of the block. This will return the default BlockState for the specified block.
+`modid` jest modidem modelu, w którym blok jest zdefiniowany, i `nazwa bloku` jest nazwą bloku. Spowoduje to zwrócenie domyślnego BlockState dla określonego bloku.
 
-To get a specific blockstate with the BlockState Bracket Handler, you can optionally specify its properties like so:
+Aby uzyskać konkretny stan blokowania z obsługą nawiasów BlockState możesz opcjonalnie określić jego właściwości, takie jak:
 
 ```zenscript
 <blockstate:modid:blockname:properties>
 ```
 
-Where `properties` is a comma-separated set of `name=value` pairs for any properties that you want to specify on the blockstate. Any properties that are not specified are given the same values as in the default blockstate.
+Gdzie `właściwości` są oddzielone przecinkami zestawem `name=value` dla dowolnych właściwości, które chcesz określić w stanie bloku. Wszystkie właściwości, które nie są określone, mają te same wartości, co w domyślnym stanie blokowania.
 
-This will return an IBlockState Object. Please refer to [the respective wiki entry](/Vanilla/Blocks/IBlockState/) for further information.
+Spowoduje to zwrócenie obiektu IBlockState Please refer to [the respective wiki entry](/Vanilla/Blocks/IBlockState/) for further information.
 
-Note that this bracket handler will create a reference to one specific blockstate. If you would like to be able to match against multiple blockstates, please refer to [the IBlockStateMatcher wiki entry](/Vanilla/Blocks/IBlockStateMatcher).
+Pamiętaj, że ten uchwyt nawiasów stworzy odniesienie do jednego konkretnego blokady. Jeśli chcesz być w stanie dopasować się do wielu bloków, zapoznaj się z [wpisem wiki IBlockStateMatchera](/Vanilla/Blocks/IBlockStateMatcher).
 
-## Examples
+## Przykłady
 
-An example of the BlockState Bracket Handler would be:
+Przykładem podmiotu zajmującego się nawiasem BlockState jest:
 
 ```zenscript
-//block of dirt
+//blok brudu
 <blockstate:minecraft:dirt>
 
-//oak log, vertical
+//kłód dębowy,
 <blockstate:minecraft:log>
 <blockstate:minecraft:log:variant=oak,axis=y>
 
-//spruce log, horizontal along the x-axis
+//świerk poziomy, wzdłuż osi x
 <blockstate:minecraft:log:variant=spruce,axis=x>
 ```

@@ -1,14 +1,14 @@
-# Chemical Reactor
+# Chemischer Reaktor
 
-## Importing the Package
+## Paket wird importiert
 `mods.nuclearcraft.chemical_reactor`
 
-## Adding Recipes
+## Rezepte hinzufügen
 ```zenscript
 mods.nuclearcraft.chemical_reactor.addRecipe([fluidInput1, fluidInput2, fluidOutput1, fluidOutput2, @Optional double timeMultiplier, @Optional double powerMultiplier, @Optional double processRadiation]);
 ```
 
-## Removing Recipes
+## Rezepte entfernen
 ```zenscript
 mods.nuclearcraft.chemical_reactor.removeRecipeWithInput([fluidInput1, fluidInput2]);
 mods.nuclearcraft.chemical_reactor.removeRecipeWithOutput([fluidOutput1, fluidOutput2]);

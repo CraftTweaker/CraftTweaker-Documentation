@@ -1,46 +1,46 @@
-# Freezer
+# Морозильник
 
-The Freezer is the bottom compartment of the Fridge.
+Морозильная машина - это нижний отсек Фриджера.
 
-It can be used to freeze items, but requires Ice to operate.
+Может быть использовано для замораживания предметов, но для работы требуется лед.
 
-## Default Freezer Recipes
+## Рецепты морозильника по умолчанию
 
-- Water Bucket -> Ice
-- Ice -> Packed Ice
-- Lava Bucket -> Obsidian
+- Ведро воды -> Лед
+- Лед -> Упакованный лёд
+- Ведро лавы -> Обсидиан
 - Slimeball -> Snowball
-- Poisonous Potato -> Potato
-- Rotten Flesh -> Flesh
+- Ядовитый картофель -> Картофель
+- Гнилая плоть -> плоть
 
-## Removing
+## Удаление
 
-## Remove matching freezer recipes.
+## Удалите подходящие рецепты морозильника.
 
 ```zenscript
 mods.cfm.Freezer.remove(@Optional final IIngredient output, @Optional final IIngredient input);
 
-// Remove recipes that result in Ice
-mods.cfm.Freezer.remove(<minecraft:ice>);
-// Remove recipes that require a Lava Bucket
+// Удаляем рецепты, которые приводят к ледовому
+mods.cfm.Freezer. emove(<minecraft:ice>);
+// Удаление рецептов, требующих Bucket Lava
 mods.cfm.Freezer.remove(null,<minecraft:lava_bucket>);
-// Remove all recipes
+// Удаление всех рецептов
 mods.cfm.Freezer.remove();
 ```
 
-## Adding
+## Добавление
 
-Add a freezer recipe.
+Добавьте рецепт морозильника.
 
-## Only supports inputs of size 1.
+## Поддерживает только входы размера 1.
 
 ```zenscript
-mods.cfm.Freezer.addRecipe(@Nonnull final IItemStack output, @Nonnull final IItemStack input);
+mods.cfm.Freezer.addRecipe(@Nonnull final IItemStack, @Nonnull final IItemStack);
 
-// Add a recipe that makes 16 Ice from a Lava Bucket
-mods.cfm.Freezer.addRecipe(<minecraft:ice>.withAmount(16),<minecraft:lava_bucket>);
-// Adds a recipe that makes 16 Obsidian from a Water Bucket
-mods.cfm.Freezer.addRecipe(<minecraft:obsidian>.withAmount(16),<minecraft:water_bucket>);
-// Adds a recipe that makes a Water Bucket from a Bucket
+// Добавить рецепт, который делает 16 Ледяных из Lava Bucket
+mods.cfm.Freezer.addRecipe(<minecraft:ice>. ithAmount(16),<minecraft:lava_bucket>);
+// Добавляет рецепт, который делает 16 обсидианов из ведра воды
+mods.cfm.Freezer.addRecipe(<minecraft:obsidian>. ithAmount(16),<minecraft:water_bucket>);
+// Добавляет рецепт, делающий ведро воды из ведра
 mods.cfm.Freezer.addRecipe(<minecraft:water_bucket>,<minecraft:bucket>);
 ```

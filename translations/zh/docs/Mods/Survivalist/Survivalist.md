@@ -1,55 +1,55 @@
-# Survivalist
+# 生存者
 
-## Chopping Block
+## 切换块
 
 ### InputStack, OutputStack, {outputMultiplier}, {hitCountMultiplier}
 
 ```zenscript
-gigaherz.survivalist.Choppable.addRecipe(IIngredient input,  IItemStack output, outputMultiplier, hitCountMultiplier);
+gigaherz.sivalist.Choppable.addRecipe(IIngredient input, IItemStack output, outputMultiplier, hitCountMultiplier);
 ```
 
-##### Example
+##### 例子
 
 ```zenscript
-gigaherz.survivalist.Choppable.addRecipe(<minecraft:bone>,<minecraft:dye:15>, 1.0, 1.0);
+gigaherz.survivalist.Choppable.addRecipe(<minecraft:bone>,<minecraft:dye:15>, 1.0);
 ```
 
-### OutputStack, {InputStack}
+### 输出堆栈， {InputStack}
 
 ```zenscript
-gigaherz.survivalist.Choppable.removeRecipe(IIngredient output, IIngredient input);
+gigaherz.sivalist.Choppable.removeRecipe(IIngredient output, IIngredient input);
 ```
 
-##### Example
+##### 例子
 
 ```zenscript
-gigaherz.survivalist.Choppable.removeRecipe(<minecraft:stick>);
+gigaherz.sivalist.Choppable.removeRecipe(<minecraft:stick>)；
 ```
 
-## Drying Rack
+## 干燥机架
 
-### InputStack, OutputStack, Time in Ticks
+### 输入Stack, 输出Stack, 工单中的时间
 
 ```zenscript
-gigaherz.survivalist.Dryable.addRecipe(IIngredient input, IItemStack output, int time);
+gigaherz.survivalist.Dryable.addRecipe(IIngredient input, IItemStack output, int time)；
 ```
 
-##### Example
+##### 例子
 
 ```zenscript
-gigaherz.survivalist.Dryable.addRecipe(<minecraft:rotten_flesh>, <minecraft:leather>, 300);
+gigaherz.sivalist.Dryable.addRecipe(<minecraft:rotten_flesh>, <minecraft:leather>, 300)；
 ```
 
-### OutputStack, {InputStack}
+### 输出堆栈， {InputStack}
 
 ```zenscript
 gigaherz.survivalist.Dryable.removeRecipe(IIngredient output, IIngredient input);
 ```
 
-##### Example
+##### 例子
 
 ```zenscript
-gigaherz.survivalist.Dryable.removeRecipe(<minecraft:leather>, <minecraft:rotten_flesh>);
+gigaherz.sivalist.Dryable.removeRecipe(<minecraft:leather>, <minecraft:rotten_flesh>);
 ```
 
-#### InputStack can be ore dictionary and anything surrounded by {} is optional
+#### InputStack 可以是矿石字典，任何被{} 包围的东西都是可选的

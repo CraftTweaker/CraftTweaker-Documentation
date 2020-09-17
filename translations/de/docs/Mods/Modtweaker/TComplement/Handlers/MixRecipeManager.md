@@ -1,57 +1,57 @@
 # MixRecipeManager
 
-A `MixRecipeManager` is used to modify existing high oven mix recipe, including those added by ModTweaker.
+Ein `MixRecipeManager` wird verwendet, um das vorhandene Hochofen-Mischrezept zu ändern, einschließlich derjenigen, die von ModTweaker hinzugefügt wurden.
 
 ## Dieses Paket importieren
 
-Better be safe than sorry and import the package
+Besser sicher sein als entschuldigen und das Paket importieren
 
 ```zenscript
 import mods.tcomplement.highoven.MixRecipeManager;
 ```
 
-## Getting a `MixRecipeManager`
+## Erhalte `MixRecipeManager`
 
-The `HighOven` handler can give you a `MixRecipeManager`:
+Der `HighOven` Handler kann Ihnen einen `MixRecipeManager` geben:
 
 ```zenscript
-// HighOven.manageMixRecipe(ILiquidStack output, ILiquidStack input);
+// HighOven.manageMixRecipe(ILiquidStack-Ausgabe, ILiquidStack-Eingang);
 var manager = HighOven.manageMixRecipe(<liquid:steel>);
 ```
 
-+ `output` is the output of the mix recipe to modify
-+ `input` (Optional) is the input of the mix recipe to modify. If `null` or unspecified, any mix recipe producing the output will be affected
++ `Ausgabe` ist die Ausgabe des Mixrezepts zum Ändern
++ `Eingabe` (Optional) ist die Eingabe des zu ändernden Mixrezepts. Wenn `null` oder nicht angegeben, wird jedes Mischrezept, das die Ausgabe erzeugt, beeinflusst sein
 
-## Removing additives
+## Additive entfernen
 
-You can use a `MixRecipeManager` to remove certain additives from the affected mix recipe. Be carefull, for removals are always enforced. This means whatever way to add an additive that would add an additive you remove, will be prevented.
+Sie können einen `MixRecipeManager` verwenden, um bestimmte Additive aus dem betroffenen Mixrezept zu entfernen. Seien Sie vorsichtig, denn Umzüge werden immer erzwungen. Das bedeutet, dass jegliches Hinzufügen eines Zusatzstoffs, der Sie entfernen würde, verhindert wird.
 
-This may have surprising results with oredict entries. Since oredict entries are added as-is to the mix recipe (it is not expanded to a list of `IItemStack` but looked for when checking the recipes), removing an item will block all oredict entries it belongs to.
+Dies kann überraschende Ergebnisse mit oredict Einträgen haben. Since oredict entries are added as-is to the mix recipe (it is not expanded to a list of `IItemStack` but looked for when checking the recipes), removing an item will block all oredict entries it belongs to.
 
-Generally speaking, if you remove something specific (say, an `IItemStack` with transformers) but an (single) additive addition would allow what you removed plus some other things (say, a more generic `IItemStack`), the whole addition will be cancelled, preventing said other things from being accepted by the High Oven.
+Allgemein gesagt, wenn Sie etwas Konkretes entfernen (sagen wir, ein `IItemStack` mit Transformatoren), aber ein (einzigartiges) additiver Zusatz würde es erlauben, was du entfernt hast plus einige andere Dinge (sagen wir, eine generischere `IItemStack`), wird der gesamte Zusatz abgebrochen, so dass andere Dinge nicht vom Hochöfen akzeptiert werden.
 
-| Method                                 | Info                                                      |
-| -------------------------------------- | --------------------------------------------------------- |
-| `removeOxidizer(IIngredient oxidizer)` | Forefully remove the oxidizer from the affected MixRecipe |
-| `removeReducer(IIngredient reducer)`   | Forefully remove the reducer from the affected MixRecipe  |
-| `removePurifier(IIngredient reducer)`  | Forefully remove the purifier from the affected MixRecipe |
-
-
-All those methods return the same instance they were called one, allowing method chaining.
-
-## Adding additives to existing MixRecipe
-
-You can add additives to all mix recipe matched by the `MixRecipeManager`. Be careful, as removals have priority (see above).
-
-| Method                                                          | Info                                                            |
-| --------------------------------------------------------------- | --------------------------------------------------------------- |
-| `addOxidizer(@NotNull IIngredient oxidizer, int consumeChance)` | Add the oxidizer with the specified consume chance (in percent) |
-| `addReducer(@NotNull IIngredient reducer, int consumeChance)`   | Add the reducer with the specified consume chance (in percent)  |
-| `addPurifier(@NotNull IIngredient purifier, int consumeChance)` | Add the purifier with the specified consume chance (in percent) |
+| Methode                                      | Info                                                               |
+| -------------------------------------------- | ------------------------------------------------------------------ |
+| `entfernen-Oxidizer(Igredientoxidierer)`     | Oxidizer vorausschauend aus dem betroffenen Mixrezept entfernen    |
+| `entfernenReduzierung(IZutrittsreduzierung)` | Entferne den Reduzierer vorab aus dem betroffenen Mixrezept        |
+| `removePurifier(IZutrittsreduzierer)`        | Entfernt den Reiniger vorausschauend aus dem betroffenen Mixrezept |
 
 
-All those methods return the same instance they were called one, allowing method chaining.
+Alle diese Methoden geben die gleiche Instanz zurück, in der sie als eine genannt wurden, was Methodenketten erlaubt.
 
-## Warning
+## Hinzufügen von Zusatzstoffen zum bestehenden Mixrezept
 
-Creating a `MixRecipeManager` that does not match any mix recipes will not trigger any warning, because there's no way to tell which mix recipes will be added (script parsing happens before mix recipe registration). If you're `MixRecipeManager` has no effect, first check it it actually matches a mix recipe
+Sie können Additive zu allen Mixrezepten hinzufügen, die vom `MixRecipeManager` abgespielt wurden. Seien Sie vorsichtig, da Umzüge Priorität haben (siehe oben).
+
+| Methode                                                            | Info                                                                    |
+| ------------------------------------------------------------------ | ----------------------------------------------------------------------- |
+| `addOxidizer(@NotNull IIngredientoxidizer, IntrusteChance)`        | Füge den Oxidizer mit der angegebenen Konsumchance hinzu (in Prozent)   |
+| `addReducer(@NotNull IIngredienten-Reduzierer, Int-KonsumeChance)` | Füge den Reduzierer mit der angegebenen Konsumchance hinzu (in Prozent) |
+| `addPurifier(@NotNull IIngredient purifier, int consummeChance)`   | Füge den Reiniger mit der angegebenen Konsumchance hinzu (in Prozent)   |
+
+
+Alle diese Methoden geben die gleiche Instanz zurück, in der sie als eine genannt wurden, was Methodenketten erlaubt.
+
+## Warnung
+
+Erstelle einen `MixRecipeManager` der keine Rezepte entspricht, wird keine Warnung auslösen, da es keine Möglichkeit gibt zu sagen, welche Mischrezepte hinzugefügt werden (Skript-Parsing passiert vor der Mix-Rezept-Registrierung). Wenn Sie `MixRecipeManager` sind hat keinen Effekt, überprüfen Sie zuerst, ob es einem Mixrezept entspricht

@@ -1,14 +1,14 @@
-# Salt Mixer
+# Salzwischen-Mixer
 
-## Importing the Package
+## Paket wird importiert
 `mods.nuclearcraft.salt_mixer`
 
-## Adding Recipes
+## Rezepte hinzufügen
 ```zenscript
 mods.nuclearcraft.salt_mixer.addRecipe([fluidInput1, fluidInput2, fluidOutput, @Optional double timeMultiplier, @Optional double powerMultiplier, @Optional double processRadiation]);
 ```
 
-## Removing Recipes
+## Rezepte entfernen
 ```zenscript
 mods.nuclearcraft.salt_mixer.removeRecipeWithInput([fluidInput1, fluidInput2]);
 mods.nuclearcraft.salt_mixer.removeRecipeWithOutput([fluidOutput]);

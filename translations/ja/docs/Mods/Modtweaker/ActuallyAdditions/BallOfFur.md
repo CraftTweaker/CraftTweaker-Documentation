@@ -1,19 +1,19 @@
-# Ball of Fur
+# 毛皮のボール
 
-## Package
+## パッケージ
 
 `mods.actuallyadditions.BallOfFur`
 
-## Addition
+## 加算
 
 ```zenscript
-//mods.actuallyadditions.BallOfFur.addReturn(IItemStack output, int chance);
-mods.actuallyadditions.BallOfFur.addReturn(<minecraft:string>, 5);
+//mods.actuallyadditions.BallOfur.addReturn(IItemStack 出力, int chance);
+mods.actuallyadditions.BallOfur.addReturn(<minecraft:string>, 5);
 ```
 
-## Removal
+## 削除
 
 ```zenscript
-//mods.actuallyadditions.BallOfFur.removeReturn(IItemStack output);
-mods.actuallyadditions.BallOfFur.removeReturn(<minecraft:coal>);
+//mods.actuallyadditions.BallOfur.removeReturn(IItemStack output);
+mods.actuallyadditions.BallOfur.removeReturn(<minecraft:coal>);
 ```

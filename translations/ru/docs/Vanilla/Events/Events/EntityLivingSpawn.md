@@ -1,40 +1,40 @@
 # EntityLivingSpawnEvent
 
-The EntityLivingSpawn Event is fired whenever an entity tries to join or leave a world.  
-It has one subclass, the EntityLivingExtendedSpawnEvent that also contains an [IMobSpawnerBaseLogic](/Vanilla/TileEntity/IMobSpawnerBaseLogic) reference.
+Событие EntityLivingSpawn запускается, когда сущность пытается вступить в мир или покинуть его.  
+У него есть один субкласс, EntityLivingExtendedSpawnEvent который также содержит ссылку [IMobSpawnerBaseLogic](/Vanilla/TileEntity/IMobSpawnerBaseLogic).
 
-## Event Class
+## Класс события
 
-You will need to cast the event in the function header as this class:  
-`crafttweaker.event.EntityLivingSpawnEvent`  
-`crafttweaker.event.EntityLivingExtendedSpawnEvent`  
-You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
+Вам нужно будет использовать событие в заголовке функции как этот класс:  
+`crafttweaker. vent.EntityLivingSpawnEvent`  
+`Создание. vent.EntityLivingExtendedSpawnEvent`  
+Вы можете, конечно, также [импортировать](/AdvancedFunctions/Import/) класс раньше и затем использовать это имя.
 
-## Event interface extensions
+## Наследование от интерфейсов событий
 
-EntityLivingSpawn Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+EntityLivingSpawn События реализуют следующие интерфейсы и также могут вызвать все их методы/getters/setters:
 
 - [ILivingEvent](/Vanilla/Events/Events/ILivingEvent/)
 
 ## ZenGetters
 
-The following information can be retrieved from the event:
+Следующая информация может быть получена от события:
 
-| ZenGetter                 | Type                                                             |
-| ------------------------- | ---------------------------------------------------------------- |
-| `world`                   | [IWorld](/Vanilla/World/IWorld/)                                 |
-| `x`                       | float                                                            |
-| `y`                       | float                                                            |
-| `z`                       | float                                                            |
-|                           |                                                                  |
-| `spawner` (Extended Only) | [IMobSpawnerBaseLogic](/Vanilla/TileEntity/IMobSpawnerBaseLogic) |
+| Геттеры                             | Тип                                                         |
+| ----------------------------------- | ----------------------------------------------------------- |
+| `world`                             | [IWorld](/Vanilla/World/IWorld/)                            |
+| `х`                                 | float                                                       |
+| `у`                                 | float                                                       |
+| `z`                                 | float                                                       |
+|                                     |                                                             |
+| `спаунер` (только для расширенного) | [Логика ИМобокса](/Vanilla/TileEntity/IMobSpawnerBaseLogic) |
 
-## Event functions
+## Функции события
 
-The despawn event also offers three functions to change the event outcome:
+В случае исчезновения также предлагаются три функции для изменения результата события:
 
-| ZenMethod | Description                                |
-| --------- | ------------------------------------------ |
-| `allow`   | Forces the entity to (de)spawn             |
-| `deny`    | Forces the entity not to (de)spawn         |
-| `pass`    | Sets the event result to the default state |
+| ZenMethod   | Описание                                     |
+| ----------- | -------------------------------------------- |
+| `разрешать` | Принудительно спавнить сущность              |
+| `запретить` | Принуждает к (de) появлению                  |
+| `проход`    | Устанавливает результат события по умолчанию |

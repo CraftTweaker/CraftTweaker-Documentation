@@ -1,30 +1,30 @@
 # IBlockPos
 
-An IBlockPos object represents a position in the game.
+Obiekt IBlockPos reprezentuje pozycję w grze.
 
-## Importing the package
+## Importowanie pakietu
 
-It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
-`import crafttweaker.world.IBlockPos;`
+Może być wymagane zaimportowanie pakietu, jeśli napotkasz jakieś problemy, więc lepiej być bezpiecznym niż przepraszamy i dodać import.  
+`zaimportuj crafttweaker.world.IBlockPos;`
 
-## ZenMethods without parameters
+## Metody ZenMethods bez parametrów
 
-| ZenMethod    | ZenGetter/Caster | Return Type                               | Description                                |
-| ------------ | ---------------- | ----------------------------------------- | ------------------------------------------ |
-| getX()       | x                | int                                       | Returns the position's X value             |
-| getY()       | y                | int                                       | Returns the position's Y value             |
-| getZ()       | z                | int                                       | Returns the position's Z value             |
-| asPosition3f | as IPosition3f   | [IPosition3f](/Vanilla/Utils/Position3f/) | Returns the position as Position3f Object. |
+| Metoda ZenMethod | ZenGetter/Mistrz | Typ zwrotu                                | Opis                                   |
+| ---------------- | ---------------- | ----------------------------------------- | -------------------------------------- |
+| getX()           | x                | odcień                                    | Zwraca wartość X pozycji               |
+| getY()           | y                | odcień                                    | Zwraca wartość Y pozycji               |
+| getZ()           | z                | odcień                                    | Zwraca wartość Z pozycji               |
+| asPosition3f     | jako IPosition3f | [IPosition3f](/Vanilla/Utils/Position3f/) | Zwraca pozycję jako obiekt Position3f. |
 
-## ZenMethods with parameters
+## Metody ZenMethods z parametrami
 
-### Get Offset
+### Pobierz przesunięcie
 
-Returns a new IBlockPos that is `offset` blocks into the `direction` direction.
+Zwraca nowy IBlockPos, który jest `przesunięciem` bloków w `kierunek`.
 
-`IBlockPos getOffset(IFacing direction, int offset);`
+`IBlockPos getOffset(kierunek IFacing, przesunięcie);`
 
-Alternatively you can directly get the [IFacing](/Vanilla/World/IFacing/) objects using the static methods provided there.
+Alternatywnie możesz bezpośrednio uzyskać obiekty [IFacing](/Vanilla/World/IFacing/) za pomocą podanych tam metod statycznych.
 
-- [IFacing](/Vanilla/World/IFacing/) direction → The direction
-- int offset → how many blocks in that direction?
+- [Kierunek IFacing](/Vanilla/World/IFacing/) → Kierunek
+- int offset → ile bloków w tym kierunku?

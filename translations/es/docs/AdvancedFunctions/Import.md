@@ -1,42 +1,42 @@
-# Import Function
+# Importar función
 
-Instead of typing the whole function name all the time, you can just import a function to serve your needs. Useful when using mod functions.
+En lugar de escribir todo el nombre de la función, puede importar una función para satisfacer sus necesidades. Útil cuando se usan funciones de mod.
 
-## Note on pre 1.12 imports
+## Nota sobre importaciones anteriores a 1.12
 
-With CraftTweaker 1.12, a lot of code has changed.  
-Before, all internal functions were called using `minetweaker.package.function`. Now, `minetweaker` has been replaced by `crafttweaker`, so now it sais `crafttweaker.name.function`!
+Con CraftTweaker 1.12, un montón de código ha cambiado.  
+Antes bien, todas las funciones internas fueron llamadas usando `minetweaker.package.function`. Ahora, `minetweaker` ha sido reemplazado por `crafttweaker`, así que ahora sais `crafttweaker.name.function`!
 
-Should you ever experience any importing issues with scripts from this wiki, you may want to check if your MC version is below 1.12.
+Si alguna vez experimenta algún problema importando scripts de esta wiki, puede que desee comprobar si su versión de MC está por debajo de 1.12.
 
-## Basic Import
+## Importación básica
 
-Imports have to be declared at the top of a Script. You will have to declare imports for each scripts separately. Be careful not to import two functions with the same name, use the AS function for that
+Las importaciones deben ser declaradas en la parte superior de un Script. Tendrá que declarar las importaciones para cada script por separado. Ten cuidado de no importar dos funciones con el mismo nombre, usa la función AS para eso
 
 ```zenscript
-//This will import the hide function from JEI
+//Esto importará la función de ocultar de JEI
 import mods.jei.JEI.removeAndHide;
 
-//And this will import the JEI package
-import mods.jei.JEI;
+//Y esto importará el paquete JEI
+importar mods.jei. EI;
 
-//removeAndHide is a function, so we can just use it
+//removeAndHide es una función, así que podemos usarla
 removeAndHide(<minecraft:dirt>);
 
-//JEI is a package, so we need to specify what function of it we want to use
-JEI.hide(<minecraft:diamond>);
+//JEI es un paquete, así que necesitamos especificar qué función queremos usar
+JEI. ide(<minecraft:diamond>);
 ```
 
-## Import as
+## Importar como
 
-Sometimes you want to import two functions with the same name or just want to keep your scripts look better by using custom names. When adding the AS statement at the end of the import, you can specify the name that the import should listen to.
+A veces quiere importar dos funciones con el mismo nombre o simplemente quiere mantener el aspecto de sus scripts usando nombres personalizados. Al añadir la sentencia AS al final de la importación, puede especificar el nombre al que la importación debe escuchar.
 
 ```zenscript
-//This will import the hide function from JEI and make it available under the name "h"
-import mods.jei.JEI.hide as h;
+//Esto importará la función de oculto de JEI y la hará disponible bajo el nombre "h"
+import mods.jei.JEI. además de h;
 
-//And this will import the removeAndHide function from JEI and make it available under the name "rh"
-import mods.jei.JEI.removeAndHide as rh;
+//Y esto importará la función removeAndHide de JEI y lo hará disponible bajo el nombre "rh"
+mods de importación. ei.JEI.removeAndHide as rh;
 
 h(<minecraft:dirt>);
 rh(<minecraft:diamond>);

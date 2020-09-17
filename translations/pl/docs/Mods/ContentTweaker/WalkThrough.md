@@ -1,27 +1,27 @@
-# Walk-Through
+# Idź przez
 
-## After Install
+## Po instalacji
 
-First things first, before starting to create Blocks and such, it is suggested you run Minecraft at least once with ContentTweaker installed. This will allow ContentTweaker to create the resource folder that it needs.
+Najpierw przed rozpoczęciem tworzenia bloków i tym samym sugeruje się uruchomienie Minecraft co najmniej raz z zainstalowanym ContentTweaker. Pozwoli to ContentTweaker na stworzenie folderu zasobów, którego potrzebuje.
 
-## Important Folders
+## Ważne foldery
 
-ContentTweaker should create an extra folder in your minecraft directory: "resources". The resources folder will be where all models, textures, and language files will be found. More on this folder will be explained later. The "scripts" folder added by CraftTweaker is where you should put all ContentTweaker scripts, however ContentTweaker scripts should begin with ```#loader contenttweaker``` at the top of the file.
+ContentTweaker powinien utworzyć dodatkowy folder w twoim katalogu minecraft: "resources". Folder zasobów będzie w którym znajdziesz wszystkie modele, tekstury i pliki językowe. Więcej na ten folder zostanie wyjaśnione później. Folder "scripts" dodany przez CraftTweaker to miejsce, w którym należy umieścić wszystkie skrypty ContentTweaker, jednak skrypty ContentTweaker powinny zaczynać się od ```#loader contenttweaker``` na górze pliku.
 
-## First Block
+## Pierwszy blok
 
-So for the best example of how ContentTweaker's content works, I'll be showing you one of the basic content pieces you will be creating, a block. There is other content that can be created, but I won't be including them in this walk-through. So first up, here is the script for the block I will using as example. Explanation of these methods can be found at the Blocks Page.
+Dla najlepszego przykładu działania treści ContentTweaker, Pokażę ci jeden z podstawowych elementów, które stworzysz, blok. Istnieje inna treść, która może zostać utworzona, ale nie będę wliczać jej do tego przejść. Po pierwsze, oto skrypt bloku, którego użyję jako przykładu. Wyjaśnienie tych metod można znaleźć na stronie Blocks.
 
 ```zenscript
 #loader contenttweaker
 
-import mods.contenttweaker.VanillaFactory;
+importuje mods.contenttweaker.VanillaFactory;
 import mods.contenttweaker.Block;
 
 var antiIceBlock = VanillaFactory.createBlock("anti_ice", <blockmaterial:ice>);
 antiIceBlock.setLightOpacity(3);
 antiIceBlock.setLightValue(0);
-antiIceBlock.setBlockHardness(5.0);
+antiIceBlock. etBlockHardness (5.0);
 antiIceBlock.setBlockResistance(5.0);
 antiIceBlock.setToolClass("pickaxe");
 antiIceBlock.setToolLevel(0);
@@ -30,10 +30,10 @@ antiIceBlock.setSlipperiness(0.3);
 antiIceBlock.register();
 ```
 
-This will create a Block that looks and acts slightly like Minecraft's Ice Block. You will want to put this script in the 'scripts' folder, following the same rules as in CraftTweaker's scripts.
+Spowoduje to utworzenie bloku, który wygląda i działa nieco jak Lodowy Blok Minecrafta. Chcesz umieścić ten skrypt w folderze , zgodnie z tymi samymi zasadami, co w skryptach CraftTweaker.
 
-## Resources
+## Zasoby
 
-You will also need to take a .png file and put it into 'resources/contenttweaker/textures/blocks' (This folder should be created for you, if you have run ContentTweaker already) The name of the file should match the name you put into createBlock, which in this case is 'anti_ice'. If you are planning on using a default cube shape with the block, ContentTweaker will generate the model jsons needed for it to function correctly.
+Pacjent będzie również musiał wziąć . ng plik i umieść go w 'resources/contenttweaker/textures/blocks' (ten folder powinien być stworzony dla Ciebie, jeśli uruchomiłeś już ContentTweaker) Nazwa pliku powinna odpowiadać nazwie, którą umieściłeś w createBlock, która w tym przypadku jest „anty_lodowa”. Jeśli planujesz użyć domyślnego kształtu kostki z blokiem, ContentTweaker wygeneruje formaty potrzebne do prawidłowego działania.
 
-The other part for this will be the language file. ContentTweaker will have already generated the en_us.lang file you will need to a line that will look like `tile.contenttweaker.<block_name>.name=Block name` or in our case with the AntiIce it will be `tile.contenttweaker.anti_ice.name=Anti Ice`. With both lang and texture filed in, you should be able to load up the game and see your block which will have a model, texture, and name.
+Druga część dla tego będzie plikiem językowym. ContentTweaker wygenerował już plik en_us.lang , który będzie musiał wyglądać jak `tile.contenttweaker.<block_name>.name=Block name` lub w naszym przypadku z Antylodem będzie `tile.contenttweaker.anti_ice.name=Anti Lce`. Z zarówno lang, jak i teksturą, powinieneś być w stanie załadować grę i zobaczyć swój blok, który będzie miał model, teksturę i nazwę.

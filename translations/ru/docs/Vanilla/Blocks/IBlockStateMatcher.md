@@ -1,89 +1,89 @@
 # IBlockStateMatcher
 
-An IBlockStateMatcher object can be used to match an [IBlockState](/Vanilla/Blocks/IBlockState/) object against a set of requirements or a set of matching blockstates.
+Объект IBlockStateMatcher может использоваться для сопоставления объекта [IBlockState](/Vanilla/Blocks/IBlockState/) с набором требований или набором соответствующих blockstates.
 
-## Importing the package
+## Импорт пакета
 
-It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/) or using the static `.create()` method), so better be safe than sorry and add the import.  
-`import crafttweaker.block.IBlockStateMatcher;`
+Возможно, вам потребуется импортировать пакет, если вы столкнетесь с какими-либо проблемами (например, накладывая [массив](/AdvancedFunctions/Arrays_and_Loops/) или используя статический `. reate()` метод), так что лучше быть безопасным, чем извините и добавьте импорт.  
+`импортировать crafttweaker.block.IBlockStateMatcher;`
 
-## Matching a Specific IBlockState
+## Соответствие специфическому IBlockState
 
-Every [IBlockState](/Vanilla/Blocks/IBlockState/) is also an IBlockStateMatcher which matches only to itself.
+Каждый [IBlockState](/Vanilla/Blocks/IBlockState/) также является IBlockStateMatcher и соответствует только себе.
 
-## Matching Any Block State for a Specific Block
+## Сопоставление любого состояния блока для определенного блока
 
-You can use [IBlockState](/Vanilla/Blocks/IBlockState/)'s `matchBlock()` method to create an IBlockStateMatcher that matches any possible blockstate for that block.
+Вы можете использовать метод [IBlockState](/Vanilla/Blocks/IBlockState/)в `matchBlock()` для создания IBlockStateMatcher, который соответствует любому возможному blockstate для этого блока.
 
 ## Calling an IBlockStateMatcher
 
-There are several methods that return an IBlockStateMatcher
+Есть несколько методов, которые возвращают IBlockStateMatcher
 
-- Using `IBlockStateMatcher.create()`.
-- Using the `withMatchedValuesForProperty()` method on another IBlockStateMatcher.
-- OR two IBlockStateMatchers together to get a compound matcher.
-- Creating an [IBlockState](/Vanilla/Blocks/IBlockState/), as all IBlockState objects are IBlockStateMatchers.
+- Использование `IBlockStateMatcher.create()`.
+- Используя метод `withMatchedValuesForProperty()` на другом IBlockStateMatcher.
+- ИЛИ два IBlockStateMatchers вместе, чтобы получить сложный матч.
+- Создание [IBlockState](/Vanilla/Blocks/IBlockState/), так как все объекты IBlockState являются IBlockStateMatchers.
 
-## Compound Matchers
+## Составные игроки
 
-When using OR (`|`) to combine IBlockStateMatchers, the resulting IBlockStateMatcher is no longer tied to one specific underlying block, as it would be with an [IBlockState](/Vanilla/Blocks/IBlockState/) or an IBlockStateMatcher created using the `IBlockStateMatcher.create()` method. Instead, the matcher matches any blockstate which would have been matched by any of the combined matchers.
+При использовании ИЛИ (`|`) для комбинирования IBlockStateMatcher, полученный в результате IBlockStateMatcher больше не привязан к одному конкретному базовому блоку, , так как это будет с [IBlockState](/Vanilla/Blocks/IBlockState/) или IBlockStateMatcher создан с помощью `IBlockStateMatcher. reate()` метод. Вместо этого сопоставление соответствует любому блокадному состоянию, которое соответствовало бы одному из комбинированных матчей.
 
-Because this blockstate is not tied to a specific block, it is not possible to use the `withMatchedValuesForProperty()` method to retrieve another IBlockStateMatcher.
+Поскольку это blockstate не привязано к определенному блоку, невозможно использовать метод `withMatchedValuesForProperty()` для получения другого IBlockStateMatcher.
 
-### static create
+### статическое создание
 
-`static IBlockStateMatcher create(IBlockState... blockStates);` Parameters:
+`создание статического IBlockStateMatcher (IBlockStateState... blockStates);` параметры:
 
-- [IBlockState](/Vanilla/Blocks/IBlockState/)... blockStates → Zero or more blockstates to match with this matcher. 
+- [IBlockState](/Vanilla/Blocks/IBlockState/)... blockStates → 0 или более blockstates для сопоставления с этим матчем. 
 
-Returns an IBlockStateMatcher to match the specified blockstate(s).
+Возвращает IBlockStateMatcher в соответствии с указанным блокстатусом(ами).
 
-- If zero `blockStates` are supplied, this matcher will never match any blockstates. 
-- If only one blockstate is supplied in `blockStates`, the resulting IBlockStateMatcher will match *any* blockstate of the provided IBlockState's underlying block with any property values accepted as matching. The `withMatchedValuesForProperty` method can be used to add more specific requirements for the properties. 
-- If multiple `blockStates` are supplied, the resulting IBlockStateMatcher is the same as using the OR (`|`) operator with each of the IBlockStates provided.
+- Если указан ноль `blockStates` , этот матч никогда не будет соответствовать ни одному из блоков. 
+- Если только одно blockstate поставляется в `blockStates`, результирующее IBlockStateMatcher совпадает с *любым* блоковым блоком предоставленного IBlockState с любыми значениями свойств, принятыми как совпадающие. Метод `с совпадением значений` может быть использован для добавления более специфичных требований к свойствам. 
+- Если поставлено несколько `blockStates` , результирующий IBlockStateMatcher - это то же самое, что и использование оператора OR (`|`) с каждым из предоставленных IBlockStates .
 
 ## Методы
 
 ### matches
 
 `boolean matches(IBlockState blockState);`  
-Parameters:
+Параметры:
 
-- [IBlockState](/Vanilla/Blocks/IBlockState/) blockState → The blockstate object to match against
+- [IBlockState](/Vanilla/Blocks/IBlockState/) blockState → Объект blockstate совпадает с
 
-Returns a boolean that represents whether the blockstate matched this matcher's requirements.  
-You can also use `A has B` that represents `A.matches(B)`.
+Возвращает логическое значение, представляющее соответствие блокстати требованиям этого матча.  
+Вы также можете использовать `A имеет B` , который представляет `A.matches(B)`.
 
-### Get or add allowed properties
+### Получить или добавить разрешенные свойства
 
-*(These methods are only allowed on non-compound IBlockStateMatcher instances)*
+*(Эти методы допускаются только в несоставных экземплярах IBlockStateMatcher)*
 
-    IBlockStateMatcher withMatchedValuesForProperty(String name, String... values);
-    List<String> getMatchedValuesForProperty(String name);
-    Map<String, List<String>> getMatchedProperties();
+    IBlockStateMatcher с совпадениемForProperty(String name, String... значение);
+    Список<String> getMatchedValuesForProperty(String name);
+    Карта<String, List<String>> getMatchedProperties();
     
 
-Parameters:
+Параметры:
 
-- String name → The name of the property
-- String... values → One or more values that the property of a matching IBlockState may have.
+- Название строки → Имя свойства
+- Строка... Значения → Одно или несколько значений, которые может иметь свойство соответствующего IBlockState .
 
-Returns a new IBlockStateMatcher with the same property requirements as this IBlockStateMatcher with the exception of the specified property `name`, which will now allow any of the specified `values` as a matching input.
+Возвращает IBlockStateMatcher с теми же требованиями к свойствам что и IBlockStateMatcher за исключением указанного свойства `имени`, , который теперь позволяет использовать любое из указанных `значений` в качестве подходящего ввода.
 
 ### getMatchingBlockStates
 
-`Collection<IBlockState> getMatchingBlockStates();` Returns a collection of every [IBlockState](/Vanilla/Blocks/IBlockState/) with any combination of properties that match this IBlockStateMatcher. This list may contain blockstates that are not possible to get through normal gameplay means. (Ex: `IBlockStateMatcher.create(<blockstate:minecraft:log>)` will return an IBlockStateMatcher that matches to logs with property `axis=none`, having bark textures on all 6 sides.)
+`Коллекция<IBlockState> getMatchingBlockStates();` Возвращает коллекцию каждого [IBlockState](/Vanilla/Blocks/IBlockState/) с любым сочетанием свойств, которые соответствуют этому IBlockStateMatcher. Этот список может содержать блоки, которые невозможно получить через обычные игровые средства. (Пример: `IBlockStateMatcher. reate(<blockstate:minecraft:log>)` вернёт IBlockStateMatcher который совпадает со свойством `axis=none`, наличие текстуры коры со всех 6 сторон.)
 
-### Check if a BlockState is a compound State
+### Проверьте, является ли BlockState составным состоянием
 
 `boolean isCompound()`
 
-Does what you'd expect.
+Что вы ожидаете.
 
-### Get a commandString representation
+### Получить командСтроковое представление
 
-`ZenGetter commandString`
+`Командная строка ZenGetter`
 
-Returns a Bracket Handler expression string, if needed paired with `withMatchedValueForProperty()` calls.  
-Keep in mind though, that the returned method calls do not have `""` around the parameters.  
-So if you wanted to copy that result, you'd need to manually add them to the arguments!
+Возвращает строку выражения обработчик скобок, если это необходимо, в паре с вызовом `withMatchedValueForProperty()` . Хотя,  
+Имейте в виду, что у возвращаемых вызовов метода нет `""` вокруг параметров.  
+Таким образом, если вы хотите скопировать результат, вам нужно вручную добавить их в аргументы!

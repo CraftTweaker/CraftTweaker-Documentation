@@ -1,29 +1,29 @@
-# Crucible
+# Tygiel
 
-This package allows you to add and remove recipes to/from the Crucible.
+Ten pakiet pozwala na dodawanie i usuwanie przepisów do/z tygielu.
 
-## Importing the package
+## Importowanie pakietu
 
-You can [import](/AdvancedFunctions/Import/) the package and its methods to facilitate the retrival of the methods.
+Możesz [zaimportować](/AdvancedFunctions/Import/) paczkę i jej metody, aby ułatwić ponowne triwalowanie metod.
 
 ```zenscript
-import mods.thaumcraft.Crucible;
+importuj mods.thaumcraft.Crucible;
 ```
 
-## Adding recipes
+## Dodawanie przepisów
 
 ```zenscript
-//mods.thaumcraft.Crucible.registerRecipe(String name, String researchKey, IItemStack output, IIngredient input, CTAspectStack[] aspects);
+//mods.thaumcraft.Crucible.registerRecipe(Nazwa ciągu, Klucz Badań Stringu, wyjście IItemStack, Wejście IIngredient, CTAspectStack[] aspekty);
 mods.thaumcraft.Crucible.registerRecipe("crucibleTest", "", <minecraft:diamond>, <minecraft:stick>, [<aspect:aer>]);
 ```
 
-## Removing recipes
+## Usuwanie przepisów
 
 ```zenscript
-//mods.thaumcraft.Crucible.removeRecipe(String name);
+//mods.thaumcraft.Crucible.removeRecipe(nazwa ciągu);
 mods.thaumcraft.Crucible.removeRecipe("recipeName");
 
 
-//mods.thaumcraft.Crucible.removeRecipe(IItemStack output);
+//mods.thaumcraft.Crucible.removeRecipe(wyjście IItemStack);
 mods.thaumcraft.Crucible.removeRecipe(<minecraft:leather>);
 ```

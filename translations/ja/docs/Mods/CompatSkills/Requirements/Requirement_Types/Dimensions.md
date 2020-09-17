@@ -1,12 +1,9 @@
-# Dimensions:
+# 寸法:
 
-Dimensions is a Requirement introduced by CompatSkills and allows you to gate things behind either:
+DimensionsはCompatSkillsによって導入された要件であり、あなたが背後にあるものをゲートすることができます:
 
-- Being in a **Specific** dimension.
-- Being in **any** dimension **other than** the one specified.
+- **固有の** 次元にいること。
+- **指定された** 以外のディメンション **に** あります。
 
-    Example:
-    dim|integer
-    
     Working Example:
     dim|0

@@ -1,13 +1,13 @@
-# Heating Temperatures
+# 加热温度
 
-- Warming starts at 1, ends at 80
-- Hot starts at 80, ends at 210
-- Very Hot starts at 210, ends at 480
-- Faint Red starts at 480, ends at 580
-- Dark Red starts at 580, ends at 730
-- Bright Red starts at 730, ends at 930
-- Orange starts at 930, ends at 1100
-- Yellow starts at 1100, ends at 1300
-- Yellow White starts at 1300, ends at 1400
-- White starts at 1400, ends at 1500
-- Brilliant White starts at 1500
+- 暖化始于1，终于80
+- 热开始于80，结束于210
+- 热点开始于 210, 结束于 480
+- 最暗的红开始于480，结束于580页
+- 暗红色开始于 580, 结束于 730
+- 亮红色开始于 730, 结束于 930
+- 橙色开始于 930, 结束于 11100
+- 黄色从1100开始，到1300时
+- 黄白于1300年开始，于1400年结束
+- 白色于1400年开始，于1500年结束
+- 漂亮白色开始于15:00

@@ -1,21 +1,21 @@
-# Blast Furnace
+# ブラスト炉
 
-The Blast Furnace package can be used to add/remove recipes/fuels to/from the Immersive Engineering Blast Furnace.
+Blast Furnaceパッケージは、没入型エンジニアリングブラスト炉からレシピ/燃料を追加/削除するために使用できます。
 
-## Calling The Package
+## パッケージの呼び出し
 
-You can call the BlastFurnace package using `mods.immersiveengineering.BlastFurnace`.
+`mods.immysiveengineering.BlastFurnace` を使って BlastFurnace パッケージを呼び出すことができます。
 
-## Add Recipe:
+## レシピを追加:
 
-| Required | Type   | Data Type                                           |
-| -------- | ------ | --------------------------------------------------- |
-| Required | Output | [IItemstack](/Vanilla/Items/IItemStack/)            |
-| Required | Input  | [IIngredient](/Vanilla/Variable_Types/IIngredient/) |
-| Required | Time   | Integer                                             |
-| Optional | Slag   | [IItemstack](/Vanilla/Items/IItemStack/)            |
+| 必須   | タイプ   | データタイプ                                              |
+| ---- | ----- | --------------------------------------------------- |
+| 必須   | 出力    | [IItemstack](/Vanilla/Items/IItemStack/)            |
+| 必須   | Input | [IIngredient](/Vanilla/Variable_Types/IIngredient/) |
+| 必須   | 時刻    | 整数                                                  |
+| 省略可能 | Slag  | [IItemstack](/Vanilla/Items/IItemStack/)            |
 
-### Example
+### 例
 
 ```zenscript
 //Example:
@@ -24,45 +24,45 @@ mods.immersiveengineering.BlastFurnace.addRecipe(<minecraft:diamond>, <ore:logWo
 mods.immersiveengineering.BlastFurnace.addRecipe(<minecraft:diamond>, <ore:logWood>, 2000, <minecraft:dirt>);
 ```
 
-## Remove Recipe
+## レシピを削除
 
-| Type   | Data Type                                |
-| ------ | ---------------------------------------- |
-| Output | [IItemstack](/Vanilla/Items/IItemStack/) |
+| タイプ | データタイプ                                   |
+| --- | ---------------------------------------- |
+| 出力  | [IItemstack](/Vanilla/Items/IItemStack/) |
 
-### Example:
+### 例
 
 ```zenscript
-//Example:
+//例:
 mods.immersiveengineering.BlastFurnace.removeRecipe(IItemStack output);
 mods.immersiveengineering.BlastFurnace.removeRecipe(<minecraft:diamond>;
 ```
 
-## Add Fuel
+## 燃料を追加
 
-| Required | Type  | Data Type                                           |
-| -------- | ----- | --------------------------------------------------- |
-| Required | Input | [IIngredient](/Vanilla/Variable_Types/IIngredient/) |
-| Required | Time  | Integer                                             |
+| 必須 | タイプ   | データタイプ                                              |
+| -- | ----- | --------------------------------------------------- |
+| 必須 | Input | [IIngredient](/Vanilla/Variable_Types/IIngredient/) |
+| 必須 | 時刻    | 整数                                                  |
 
-### Example
+### 例
 
 ```zenscript
-//Example:
+//例:
 mods.immersiveengineering.BlastFurnace.addFuel(IIngredient input, int time);
-mods.immersiveengineering.BlastFurnace.addFuel(<ore:plankWood>, 2000);
+mods.immysiveengineering.BlastFurnace.addFuel(<ore:plankWood>, 2000);
 ```
 
-## Remove Fuel
+## 燃料を取り除く
 
-| Required | Type   | Data Type                                |
-| -------- | ------ | ---------------------------------------- |
-| Required | Output | [IItemstack](/Vanilla/Items/IItemStack/) |
+| 必須 | タイプ | データタイプ                                   |
+| -- | --- | ---------------------------------------- |
+| 必須 | 出力  | [IItemstack](/Vanilla/Items/IItemStack/) |
 
-### Example
+### 例
 
 ```zenscript
-//Example:
+//例:
 mods.immersiveengineering.BlastFurnace.removeFuel(IItemStack output);
 mods.immersiveengineering.BlastFurnace.removeFuel(<minecraft:planks>);
 ```

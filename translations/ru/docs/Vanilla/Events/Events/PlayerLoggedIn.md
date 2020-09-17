@@ -1,23 +1,23 @@
-# PlayerLoggedIn
+# Войти в игру
 
-The PlayerLoggedIn Event is fired whenever a player logs in.
+Событие PlayerLoggedIn запускается при входе игрока.
 
-## Event Class
+## Класс события
 
 You will need to cast the event in the function header as this class:  
 `crafttweaker.event.PlayerLoggedInEvent`  
 You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
 
-## Event interface extensions
+## Наследование от интерфейсов событий
 
-PlayerLoggedIn Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+PlayerLoggedIn События реализуют следующие интерфейсы и также могут вызвать все их методы/getters/setters:
 
 - [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
 
 ## ZenGetters
 
-The following information can be retrieved from the event:
+Следующая информация может быть получена от события:
 
-| ZenGetter | Return Type                          |
-| --------- | ------------------------------------ |
-| `player`  | [IPlayer](/Vanilla/Players/IPlayer/) |
+| Геттеры  | Возвращаемый тип                     |
+| -------- | ------------------------------------ |
+| `player` | [IPlayer](/Vanilla/Players/IPlayer/) |

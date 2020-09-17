@@ -1,16 +1,16 @@
-# Rolling_Machine
+# Rolkowanie_Maszyna
 
-## Importing the Package
+## Importowanie pakietu
 `mods.techreborn.rollingMachine`
 
-## Adding Recipes
+## Dodawanie przepisów
 ```zenscript
-mods.techreborn.rollingMachine.addShaped(IItemStack output, IIngredient[][] ingredients);
-mods.techreborn.rollingMachine.addShapeless(IItemStack output, IIngredient[] ingredients);
+mods.techreborn.rollingMachine.addShaped(wyjście IItemStack, IIngredient[][] składników);
+mods.techreborn.rollingMachine.addShapeless(wyjście IItemStack, IIngredient[] składników);
 ```
 
-## Removing Recipes
+## Usuwanie przepisów
 ```zenscript
-mods.techreborn.rollingMachine.removeRecipe(IItemStack output);
+mods.techreborn.rollingMachine.removeRecipe(wyjście IItemStack);
 mods.techreborn.rollingMachine.removeAll();
 ```

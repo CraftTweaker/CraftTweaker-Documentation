@@ -1,8 +1,8 @@
-# Saw
+# <unk>
 
-## Basic Recipe
+## 基本的なレシピ
 
-* Adds Saw Recipe - inputs *MUST* have a block associated with them.
+* ソーレシピを追加する - 入力 ** は、ソーレシピに関連付けられたブロックを持たなければなりません。
 
 ```zenscript
 mods.betterwithmods.Saw.add(IIngredient input, IItemStack[] output);
@@ -10,47 +10,49 @@ mods.betterwithmods.Saw.add(IIngredient input, IItemStack[] output);
 mods.betterwithmods.Saw.add(<minecraft:fence>,[<minecraft:stick>,<minecraft:stick>]);
 ```
 
-## Removal by input
+## 入力による削除
 
-* Remove a recipe based on the input ingredient
+* 入力材料に基づいてレシピを削除
 
 ```zenscript
 mods.betterwithmods.Saw.remove(IIngredient input);
 ```
 
-## Removal by output
+## 出力による削除
 
-* Remove a recipe based on the output
+* 出力に基づいてレシピを削除
 
 ```zenscript
 mods.betterwithmods.Saw.remove(IItemStack[] outputs);
 ```
 
-## Remove all
+## すべて削除
 
-* Remove all recipes
+* すべてのレシピを削除
 
 ```zenscript
 mods.betterwithmods.Saw.removeAll();
 ```
 
-## Builder
+## ビルダー
 
-The Saw has a recipe builder. Due to the nature of the saw it currently has no special builder methods, I will document it none-the-less.
+こぎりにはレシピビルダーがあります。 ノコギリの性質上、現在は特別なビルダーのメソッドを持っていないので、私はそれをノンゼロで文書化します。
 
-* To create a new Saw builder. `mods.betterwithmods.Saw.builder()`
+* 新しいソウビルダーを作成します。 `mods.betterwithmods.Saw.builder()`
 
-* Saw methods
+* ソーの方法
      
      * Sets up the inputs and outputs of the recipe  
+          zenscript buildRecipe(IIngredient[] inputs, IItemStack[] outputs)  
               zenscript
               buildRecipe(IIngredient[] inputs, IItemStack[] outputs)
      
      * Finalize the recipe and add it to the game  
+          zenscript build()  
               zenscript
               build()
 
-### Example builder usage
+### ビルダーの使用例
 
     mods.betterwithmods.Saw.builder()
     .buildRecipe([<minecraft:oak_fence>], [<minecraft:stick>*6])

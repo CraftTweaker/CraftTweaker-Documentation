@@ -1,9 +1,9 @@
-# PneumaticCraft: Repressurized
+# PneumaticCraft: Represurizado
 
-PneumaticCraft: Repressurized is a port of MineMaarten's PneumaticCraft mod to Minecraft 1.12.2. It's a tech mod using the concept of pressurized air as a power system, and adds some cool gadgets including a fully-programmable drone automation system.
+PneumaticCraft: Represurizado es un puerto del mod PneumaticCrcraft de MineMaarten a Minecraft 1.12.2. Es un mod de tecnología utilizando el concepto de aire presurizado como sistema de alimentación y añade algunos gadgets frescos incluyendo un sistema de automatización drone completamente programable.
 
-## CraftTweaker Support
+## Soporte de CraftTweaker
 
-PneumaticCraft: Repressurized comes with its own native CraftTweaker support. Therefore, please raise any CraftTweaker-related issues at the [PneumaticCraft: Repressurized issue tracker](https://github.com/TeamPneumatic/pnc-repressurized/issues).
+PneumaticCraft: Represurizado viene con su propio soporte nativo CraftTweaker. Por lo tanto, por favor plantea cualquier problema relacionado con CraftTweaker en el [gestor de problemas PneumaticCraft: Represurized issue tracker](https://github.com/TeamPneumatic/pnc-repressurized/issues).
 
-Note that the support documented here is for PneumaticCraft: Repressurized *only*; none of this applies to the original PneumaticCraft mod found in MC1.8.9 and earlier.
+Tenga en cuenta que el soporte documentado aquí es para PneumaticCraft: Represurizado *sólo*; nada de esto se aplica al mod PneumaticCrcraft original encontrado en MC1. .9 y anteriores.

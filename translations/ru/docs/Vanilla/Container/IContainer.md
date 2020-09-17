@@ -5,11 +5,11 @@ IContainer представляет контейнер предметов, ко�
 ## Геттеры/сеттеры
 
 - `container.containerSize` возвращает размер контейнера типа int.
-- `container.getStack(int index)` returns the [IItemStack](/Vanilla/Items/IItemStack/) at the given index.
-- `container.setStack(int index, IItemStack stack)` sets the [IItemStack](/Vanilla/Items/IItemStack/) at the given index.
-- `container.asString()` `container as string` executes `toString` on the container object.
+- `container.getStack(int index)` возвращает [IItemStack](/Vanilla/Items/IItemStack/) по заданному индексу.
+- `container.setStack(int index, IItemStack)` устанавливает [IItemStack](/Vanilla/Items/IItemStack/) по заданному индексу.
+- `container.asString()` `контейнер как строка` выполняет `toString` в объекте контейнера.
 
 ## Перебор<IItemStack\>
 
-An IContainer is an [`Iterable<IItemStack>`](/Vanilla/Items/IItemStack/).  
-This means that you can use a for-loop on the container to iterate over its [IItemStacks](/Vanilla/Items/IItemStack/).
+IContainer — это [`Iterable<IItemStack>`](/Vanilla/Items/IItemStack/).  
+Это означает, что вы можете использовать цикл в контейнере для итерации над его [IItemStacks](/Vanilla/Items/IItemStack/).

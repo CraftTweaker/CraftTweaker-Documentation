@@ -1,12 +1,12 @@
-# Oil Generator
+# Ölgenerator
 
-## Package
+## Paket
 
 `mods.actuallyadditions.OilGen`
 
 ## Addition
 
-`genTime` defaults to 100 if omitted
+`genTime` ist standardmäßig 100, wenn weggelassen
 
 ```zenscript
 //mods.actuallyadditions.OilGen.addRecipe(ILiquidStack fluid, int genAmount);
@@ -16,7 +16,7 @@ mods.actuallyadditions.OilGen.addRecipe(<liquid:water>, 100);
 mods.actuallyadditions.OilGen.addRecipe(<liquid:lava>, 1000, 10);
 ```
 
-## Removal
+## Entfernen
 
 ```zenscript
 //mods.actuallyadditions.OilGen.removeRecipe(ILiquidStack output);

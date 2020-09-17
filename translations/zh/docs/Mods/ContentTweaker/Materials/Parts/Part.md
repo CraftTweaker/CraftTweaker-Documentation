@@ -1,53 +1,53 @@
-# Part
+# 部分
 
-A Part is the form an item is in, for example a gear or an ore.
+零件是物品所含的形式，例如用具或矿石。
 
 ## 导入相关包
 
-It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
-`import mods.contenttweaker.Part;`
+如果您遇到任何问题，可能需要导入软件包，所以比抱歉更安全并添加导入。  
+`导入 mods.contenttweaker.Part；`
 
-## Retrieving such an object
+## 正在获取此对象
 
-You can either retrieve an existing Part using the [MaterialSystem](/Mods/ContentTweaker/Materials/MaterialSystem/) or create an entirely new one using the [Part Builder](/Mods/ContentTweaker/Materials/Parts/Part_Builder/)
+您可以使用 [材料系统](/Mods/ContentTweaker/Materials/MaterialSystem/) 检索一个现有的零件或使用 [部件生成器](/Mods/ContentTweaker/Materials/Parts/Part_Builder/) 创建一个全新的零件。
 
 <details>
-    <summary>Following types are pre-registered (Headlines are the <a href="../PartType">Part types</a>):</summary>
-    <h4>Items:</h4>
+    <summary>以下类型是预先注册的 (标题是 <a href="../PartType">部件类型</a>)：</summary>
+    <h4>项目：</h4>
         <ul>
-            <li>Beam<img src="../Assets/beam.png" alt="icon"></li>
-            <li>Bolt<img src="../Assets/bolt.png" alt="icon"></li>
-            <li>Casing<img src="../Assets/casing.png" alt="icon"></li>
-            <li>Clump<img src="../Assets/clump.png" alt="icon"></li>
-            <li>Crystal Crystal<img src="../Assets/crystal.png" alt="icon"></li>
-            <li>Crushed Ore (crushed_ore)<img src="../Assets/crushed_ore.png" alt="icon"></li>
-            <li>Dense Plate (dense_plate)<img src="../Assets/dense_plate.png" alt="icon"></li>
-            <li>Dirty Dust (dirty_dust)<img src="../Assets/dirty_dust.png" alt="icon"></li>
-            <li>Dust<img src="../Assets/dust.png" alt="icon"></li>
-            <li>Gear<img src="../Assets/gear.png" alt="icon"></li>
-            <li>Ingot<img src="../Assets/ingot.png" alt="icon"></li>
-            <li>Nugget<img src="../Assets/nugget.png" alt="icon"></li>
-            <li>Plate<img src="../Assets/plate.png" alt="icon"></li>
-            <li>Rod<img src="../Assets/rod.png" alt="icon"></li>
-            <li>Shard<img src="../Assets/shard.png" alt="icon"></li>
+            <li>贝姆<img src="../Assets/beam.png" alt="图标"></li>
+            <li>箭头<img src="../Assets/bolt.png" alt="图标"></li>
+            <li>正在保存<img src="../Assets/casing.png" alt="图标"></li>
+            <li>树形图<img src="../Assets/clump.png" alt="图标"></li>
+            <li>水晶体<img src="../Assets/crystal.png" alt="图标"></li>
+            <li>粉碎矿石 (粉碎矿)<img src="../Assets/crushed_ore.png" alt="图标"></li>
+            <li>密封板(dense_plate)<img src="../Assets/dense_plate.png" alt="图标"></li>
+            <li>脏粉尘(dirty_dust)<img src="../Assets/dirty_dust.png" alt="图标"></li>
+            <li>灰度<img src="../Assets/dust.png" alt="图标"></li>
+            <li>齿轮制作<img src="../Assets/gear.png" alt="图标"></li>
+            <li>Ingot<img src="../Assets/ingot.png" alt="图标"></li>
+            <li>Nugget<img src="../Assets/nugget.png" alt="图标"></li>
+            <li>板块<img src="../Assets/plate.png" alt="图标"></li>
+            <li>罗德<img src="../Assets/rod.png" alt="图标"></li>
+            <li>小写<img src="../Assets/shard.png" alt="图标"></li>
         </ul>
-    <h4>Blocks:</h4>
+    <h4>块：</h4>
         <ul>
-            <li>Block<img src="../Assets/block.png" alt="icon"></li>
+            <li>封禁<img src="../Assets/block.png" alt="图标"></li>
         </ul>
     <h4>Ores:</h4>
         <ul>
-            <li>Ore</li>
-            <li>Dense Ore (dense_ore)</li>
-            <li>Poor Ore(poor_ore)</li>
+            <li>矿石</li>
+            <li>密封矿石 (dense_ore)</li>
+            <li>贫瘠的矿石(poor_ore)</li>
         </ul>
-    <h4>Fluids:</h4>
+    <h4>流体：</h4>
         <ul>
             <li>Molten</li>
         </ul><br />
     <h4>Armor:</h4>
         <ul>
-            <li>Armor <img src="../Assets/armor_head.png" alt="head icon"><img src="../Assets/armor_chest.png" alt="chest icon"><img src="../Assets/armor_legs.png" alt="legs icon"><img src="../Assets/armor_feet.png" alt="feet icon"></li>
+            <li>盔甲 <img src="../Assets/armor_head.png" alt="头部图标"><img src="../Assets/armor_chest.png" alt="箱子图标"><img src="../Assets/armor_legs.png" alt="腿图标"><img src="../Assets/armor_feet.png" alt="英尺图标"></li>
         </ul>
     <h4>Minecart</h4>
         <ul>
@@ -55,28 +55,28 @@ You can either retrieve an existing Part using the [MaterialSystem](/Mods/Conten
         </ul>
 </details>
 
-## Fields
+## 字段
 
-You can retrieve the following information from a Part:
+您可以从零件中检索以下信息：
 
-| ZenMethod                 | 返回值类型                                                                         |
-| ------------------------- | ----------------------------------------------------------------------------- |
-| hasOverlay()              | boolean                                                                       |
-| getName()                 | string                                                                        |
-| getUnlocalizedName()      | string                                                                        |
-| getShortUnlocalizedName() | string                                                                        |
-| getPartType()             | [PartType](/Mods/ContentTweaker/Materials/Parts/PartType/)                    |
-| getPartTypeName()         | string                                                                        |
-| getOreDictPrefix()        | string                                                                        |
-| getData()                 | List<[IPartDataPiece](/Mods/ContentTweaker/Materials/Parts/PartDataPiece/)\> |
+| ZenMethod（ZenMethod）      | 返回值类型                                                                       |
+| ------------------------- | --------------------------------------------------------------------------- |
+| hasOverlay()              | boolean                                                                     |
+| getName()                 | string                                                                      |
+| getUnlocalizedName()      | 字符串                                                                         |
+| getShortUnlocalizedName() | 字符串                                                                         |
+| getPartType()             | [组别类型](/Mods/ContentTweaker/Materials/Parts/PartType/)                      |
+| getPartTypeName()         | 字符串                                                                         |
+| getOreDictPrefix()        | string                                                                      |
+| getData()                 | 列表<[IPartDataPiece](/Mods/ContentTweaker/Materials/Parts/PartDataPiece/)\> |
 
-## Register to Material(s)
+## 登记材料：
 
-You can use this to register one or several Materials to this part
+您可以用它来注册这个部分的一个或多个材料
 
 ```zenscript
-part.registerToMaterial(Material material);
-part.registerToMaterials(Material[] materials);
+part .registerToMaterial(Material material);
+part.registerToMaterials(Material[…]材料)；
 ```
 
-The function will either return a single [MaterialPart](/Mods/ContentTweaker/Materials/Materials/MaterialPart/) object or a List of them, depending on whether you registered one or multiple materials at once.
+函数将返回单个的 [MaterialPart](/Mods/ContentTweaker/Materials/Materials/MaterialPart/) 对象或他们的列表， 取决于您一次注册一个或多个材料。

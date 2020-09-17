@@ -1,14 +1,14 @@
-# Electrolyzer
+# エレクトロライザー
 
-## Package
+## パッケージ
 
 ```zenscript
 import mods.ic2.ClassicElectrolyzer;
 ```
 
-## Methods
+## メソッド
 
-### Add Both Recipe
+### 両方のレシピを追加
 
 ```zenscripts
 mods.ic2.ClassicElectrolyzer.addBothRecipe(IItemStack output, IItemStack input, int energy);
@@ -17,10 +17,10 @@ mods.ic2.ClassicElectrolyzer.addBothRecipe(<minecraft:diamond>, <minecraft:dirt>
 ```
 
 - **[IItemStack](/Vanilla/Items/IItemStack/) output**
-- **[IItemStack](/Vanilla/Items/IItemStack/) input** Has to be an ItemStack, no oredict or other stuff.
-- **int energy** Total eu received from discharge part and total energy used for charge part of the recipe.
+- **[IItemStack](/Vanilla/Items/IItemStack/) 入力** は、ItemStackでなければならず、鉱石やその他のものではありません。
+- **int energy** 排出部とレシピの充電部に使用される総エネルギーから得られる総eu。
 
-### Add Charge Recipe
+### 課税レシピを追加
 
 ```zenscripts
 mods.ic2.ClassicElectrolyzer.addChargeRecipe(IItemStack output, IItemStack input, int energy);
@@ -29,10 +29,10 @@ mods.ic2.ClassicElectrolyzer.addChargeRecipe(<minecraft:emerald>, <minecraft:sto
 ```
 
 - **[IItemStack](/Vanilla/Items/IItemStack/) output**
-- **[IItemStack](/Vanilla/Items/IItemStack/) input** Has to be an ItemStack, no oredict or other stuff.
-- **int energy** Total eu used in the recipe.
+- **[IItemStack](/Vanilla/Items/IItemStack/) 入力** は、ItemStackでなければならず、鉱石やその他のものではありません。
+- **int energy** レシピに使用されるEu合計。
 
-### Add Discharge Recipe
+### 排出レシピを追加
 
 ```zenscripts
 mods.ic2.ClassicElectrolyzer.addDischargeRecipe(IItemStack output, IItemStack input, int energy);
@@ -41,10 +41,10 @@ mods.ic2.ClassicElectrolyzer.addDischargeRecipe(<minecraft:cobblestone> * 64, <m
 ```
 
 - **[IItemStack](/Vanilla/Items/IItemStack/) output**
-- **[IItemStack](/Vanilla/Items/IItemStack/) input** Has to be an ItemStack, no oredict or other stuff.
-- **int energy** Total eu received from the recipe.
+- **[IItemStack](/Vanilla/Items/IItemStack/) 入力** は、ItemStackでなければならず、鉱石やその他のものではありません。
+- **int energy** レシピから受け取った総eu.
 
-### Removal
+### 削除
 
-Simply disable the corresponding recipe in `config/ic2/ic2machineRecipes.json`.
+`config/ic2/ic2machineRecipes.json` で対応するレシピを無効にするだけです。
 

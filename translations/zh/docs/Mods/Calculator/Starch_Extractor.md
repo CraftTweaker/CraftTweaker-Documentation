@@ -1,22 +1,22 @@
-# Starch Extractor
+# 开始提取器
 
 ## 所属包名
 ```zenscript
-import mods.calculator.starch;
+导入 mods.calculator.starch;
 ```
 
 ## 使用方式
 
-- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input** The input.
-- **int value** The amount of input adds to that machine.
+- **[Ingredient](/Vanilla/Variable_Types/IIngredient/) 输入** 输入.
+- **整数值** 输入数量添加到该机上。
 
 
-## Additon
+## 附加组件
 ```zenscript
-starch.addRecipe(IIngredient input, int value);
+starch.addRecipe(IIngredient input, int value)；
 ```
 
-## Removal
+## 移除
 ```zenscript
-starch.removeRecipe(IIngredient input);
+starch.removeRecipe(I成分输入)；
 ```

@@ -1,21 +1,21 @@
-# Crucible
+# Crisol
 
-The *crucible* package is used for adding or removing recipes to/from the Crucible.
+El paquete *crucible* se utiliza para añadir o quitar recetas para/de la Crucible.
 
-## Calling
+## Llamando
 
-You can call the *crucible* package using `mods.skyresources.crucible`
+Puedes llamar al paquete *crucible* usando `mods.skyresources.crucible`
 
-## Recipe Addition
+## Adición de receta
 
 ```zenscript
-//mods.skyresources.crucible.addRecipe(ILiquidStack output, IItemStack input);
+//mods.skyresources.crucible.addRecipe(salida ILiquidStack, entrada ItemStack);
 mods.skyresources.crucible.addRecipe(<liquid:lava> * 500, <minecraft:cobblestone>);
 ```
 
-## Recipe Removal
+## Receta eliminada
 
 ```zenscript
-//mods.skyresources.crucible.removeRecipe(ILiquidStack output);
+//mods.skyresources.crucible.removeRecipe(salida ILiquidStack);
 mods.skyresources.crucible.removeRecipe(<liquid:lava>);
 ```

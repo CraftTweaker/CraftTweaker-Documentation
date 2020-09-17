@@ -1,25 +1,25 @@
-# Electrolyzer
+# Électrolyseur
 
-# Package
+# Paquet
 ```zenscript
-`mods.alchemistry.Electrolyzer`
+`mods.alchemistry.Électrolyseur
 ```
 
-## Methods
-- **[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) input** - The liquid input of the recipe.
-- **[IItemStack](/Vanilla/Items/IItemStack/) input** - The electrolyte input of the recipe.
-- **int electrolyteConsumptionChance** - Chance of Electrolye being consumed
-- **[IItemStack](/Vanilla/Items/IItemStack/) output** - Output for the recipe
+## Méthodes
+- **[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) entrée** - L'entrée liquide de la recette.
+- **[IItemStack](/Vanilla/Items/IItemStack/) entrée** - L'entrée électrolyte de la recette.
+- **int electrolyteConsumptionChance** - Chance de consommer de l'électrolye
+- **[IItemStack](/Vanilla/Items/IItemStack/) sortie** - Sortie pour la recette
 
-## Addition
+## Ajouter
 ```zenscript
-mods.alchemistry.Electrolyzer.addRecipe(ILiquidStack input, IItemStack input, int electrolyteConsumptionChance, IItemStack output, IItemStack output2, @Nullable IItemStack output3, @Nullable int output3Chance, @Nullable IItemStack output4, @Nullable int output4Chance);
+mods.alchimie.Electrolyzer.addRecipe(ILiquidStack input, IItemStack input, int electrolyteConsumptionChance, IItemStack, IItemStack output2, @Nullable IItemStack output3, @Nullable int output3Chance, @Nullable IItemStack output4, @Nullable int output4Chance);
 mods.alchemistry.Electrolyzer.addRecipe(<liquid:water>*400,<minecraft:stone>,10,<minecraft:ender_pearl>*2,<minecraft:sand>,null,0,null,0);
 ```
 
-## Removal
+## Retirer
 ```zenscript
-mods.alchemistry.Electrolyzer.removeRecipe(ILiquidStack input, IItemStack input);
+mods.alchimie.Electrolyzer.removeRecipe(ILiquidStack entrée, IItemStack entrée);
 mods.alchemistry.Electrolyzer.removeRecipe(<liquid:water>*125,<alchemistry:compound:13>);
 
 mods.alchemistry.Electrolyzer.removeAllRecipes();

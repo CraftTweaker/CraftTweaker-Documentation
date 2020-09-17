@@ -1,27 +1,27 @@
-# CropGrowPreEvent
+# Recortar Preevento
 
-The CropGrowPre Event is fired when crops attempt to grow. It has a **result** which determines whether the default behaviour occurs or not:
+El Evento de los Cultivos Pre se dispara cuando los cultivos intentan crecer. Tiene un **resultado** que determina si el comportamiento predeterminado ocurre o no:
 
-- **allow**: the crop is forced to grow.
-- **deny**: the crop is prevented from growing.
-- **default**: the attack uses default Vanilla behaviour.
+- **permitir**: el cultivo se ve forzado a crecer.
+- **denegar**: se evita que el cultivo crezca.
+- **por defecto**: el ataque usa el comportamiento predeterminado de Vanilla.
 
-## Event Class
-You will need to cast the event in the function header as this class:  
-`crafttweaker.event.CropGrowPreEvent`  
-You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
+## Clase de evento
+Necesitarás lanzar el evento en la cabecera de la función como esta clase:  
+`crafttweaker.event. preevento de ropo`  
+Puede, por supuesto, también [importar](/AdvancedFunctions/Import/) la clase antes y usar ese nombre entonces.
 
-## Event interface extensions
-CropGrowPost Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+## Extensiones de la interfaz de eventos
+Los eventos de Crop Post implementan las siguientes interfaces y son capaces de llamar a todos sus métodos/getters/setters también:
 
-- [IBlockEvent](/Vanilla/Events/Events/IBlockEvent/)
+- [Evento IBlock](/Vanilla/Events/Events/IBlockEvent/)
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 
 
 ## ZenGetters
-The following information can be retrieved from the event:
+La siguiente información puede ser recuperada del evento:
 
-| ZenGetter            | ZenSetter | Type                                        |
-| -------------------- | --------- | ------------------------------------------- |
-| `originalBlockState` |           | [IBlockState](/Vanilla/Blocks/IBlockState/) |
-| `originalBlock`      |           | [IBlock](/Vanilla/Blocks/IBlock/)           |
+| ZenGetter                    | Ajuste | Tipo                                             |
+| ---------------------------- | ------ | ------------------------------------------------ |
+| `Estado de bloqueo original` |        | [Estado de IBlock](/Vanilla/Blocks/IBlockState/) |
+| `bloque original`            |        | [IBlock](/Vanilla/Blocks/IBlock/)                |

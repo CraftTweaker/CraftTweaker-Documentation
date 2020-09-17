@@ -1,41 +1,41 @@
-# Grill
+# 研磨机
 
-The Grill cooks food over hot coals.
+草料可通过热煤取食物。
 
-It requires flipping food to cook both sides.
+双方都需要食粮。
 
-## Default Grill Recipes
+## 默认研磨配方
 
-- Beef -> Cooked Beef
-- Sausage -> Cooked Sausage
-- Kebab -> Cooked Kebab
+- 蜜蜂-> 熟牛肉
+- 萨荷尔斯-> 熟锯子
+- Kebab -> 熟了Kebab
 
 ## 移除配方
 
-## Remove matching grill recipes.
+## 删除匹配的网格配方。
 
 ```zenscript
-mods.cfm.Grill.remove(@Optional final IIngredient output, @Optional final IIngredient input);
+mods.cfm.Grill.remove(@Opinion final IIngredient output, @Opinion final IIngredient input);
 
-// Remove recipes that require Beef
-mods.cfm.Grill.remove(null,<minecraft:beef>);
-// Remove recipes that result in a Cooked Sausage
+// 移除需要 Beef
+mods.cfm.Grill. emove(null,<minecraft:beef>);
+// 删除导致熟锯齿的配方
 mods.cfm.Grill.remove(<cfm:item_sausage_cooked>);
-// Remove all recipes
+// 删除所有配方
 mods.cfm.Grill.remove();
 ```
 
-## Adding
+## 添加
 
-Add a grill recipe.
+添加研磨机配方。
 
-## Only supports inputs of size 1.
+## 仅支持1大小的输入
 
 ```zenscript
-mods.cfm.Grill.addRecipe(@Nonnull final IItemStack output, @Nonnull final IItemStack input);
+mods.cfm.Grill.addRecipe(@Nonnull final IItemStack output, @Nonnull final IItemStack 输入);
 
-// Add a recipe that makes a Stick from a Sausage
-mods.cfm.Grill.addRecipe(<minecraft:stick>,<cfm:item_sausage>);
-// Add a recipe that makes a Torch from a Stick
+// 添加一个能够从Saus
+mod中提取粘贴的配方。 fm.Grill.addRecipe(<minecraft:stick>,<cfm:item_sausage>);
+// 添加一个从Stick制造火炬的配方
 mods.cfm.Grill.addRecipe(<minecraft:torch>,<minecraft:stick>);
 ```

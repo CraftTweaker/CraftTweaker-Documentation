@@ -1,63 +1,63 @@
-# P2P Attunement
+# Ataque P2P
 
-### Importing
+### Importando
 
 ```zenscript
-import mods.appliedenergistics2.Attunement;
+importar mods.appliedenergistics2.Attunement;
 ```
 
-### Attuning Item
+### Atacando objeto
 
-Attune an IItemStack or ModID to a specific P2P-Tunnel type. ModID's are used as fallback when no IItemStack was found.
+Ataca un ItemStack o un ModID a un tipo específico de túnel P2P. ModID se utilizan como reserva cuando no se encontró ItemStack.
 
 ### ME P2P
 
 ```zenscript
-Attunement.attuneME(IItemStack IItemStack);
+Attunement.attuneME(IItemStack ItemStack);
 Attunement.attuneME(String modID);
 
 Attunement.attuneME(<appliedenergistics2:controller>);
-Attunement.attuneME("actuallyadditions");
+Attunement.attuneME("realyadditions");
 ```
 
-### Item P2P
+### Artículo P2P
 
 ```zenscript
-Attunement.attuneItem(IItemStack IItemStack);
+Attunement.attuneItem(ItemStack ItemStack);
 Attunement.attuneItem(String modID);
 ```
 
-### Fluid P2P
+### P2P fluido
 
 ```zenscript
-Attunement.attuneFluid(IItemStack IItemStack);
+Attunement.attuneFluid(ItemStack ItemStack);
 Attunement.attuneFluid(String modID);
 ```
 
-### Redstone P2P
+### P2P de Redstone
 
 ```zenscript
-Attunement.attuneRedstone(IItemStack IItemStack);
+Attunement.attuneRedstone(ItemStack ItemStack);
 Attunement.attuneRedstone(String modID);
 ```
 
-### RF P2P
+### P2P RF
 
 ```zenscript
-Attunement.attuneRF(IItemStack IItemStack);
+Attunement.attuneRF(ItemStack ItemStack);
 Attunement.attuneRF(String modID);
 ```
 
 ### EU P2P
 
 ```zenscript
-Attunement.attuneIC2(IItemStack IItemStack);
+Attunement.attuneIC2(ItemStack ItemStack);
 Attunement.attuneIC2(String modID);
 ```
 
-### Light P2P
+### P2P claro
 
 ```zenscript
-Attunement.attuneLight(IItemStack IItemStack);
+Attunement.attuneLight(ItemStack ItemStack);
 Attunement.attuneLight(String modID);
 ```

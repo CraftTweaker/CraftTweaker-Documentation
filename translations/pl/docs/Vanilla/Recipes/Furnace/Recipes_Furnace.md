@@ -1,118 +1,118 @@
-# Furnace
+# Piec
 
-CraftTweaker allows you to `Add` and `Remove` Furnace recipes and change the fuel value of items.
+CraftTweaker pozwala `Dodać` i `Usunąć` receptury pieca i zmienić wartość paliwa dla przedmiotów.
 
-## Recipes
+## Przepisy
 
-### Removal
+### Usuwanie
 
-There are 2 ways to remove Furnace recipes, being:
-
-```zenscript
-furnace.remove(IIngredient output)
-```
-
-And
+Istnieją 2 sposoby na usunięcie przepisów dotyczących pieców, mianowicie:
 
 ```zenscript
-furnace.remove(IIngredient output, IIngredient input);
+[PLACEHOLDER] furnace.remove(Ingredient output)
 ```
 
-The first syntax is more flexible with the recipes that are removed and will remove all Furnace recipes that output the `output` given.  
-The second syntax is more strict with the recipes that are removed and will remove all Furnace recipes that output the `output` given and has an input of `input`.
-
-There also is a third way of removing furnace recipes, though this one will remove ALL furnace recipes registered in the game.
+Oraz
 
 ```zenscript
-furnace.removeAll();
+piec.remove(wyjście typu „składnik odpadowy”, wejście typu „składnik odpadowy”);
 ```
 
-### Addition
+Pierwsza składnia jest bardziej elastyczna z usuniętymi przepisami i usunie wszystkie receptury pieca, które wygenerują podaną `wyjścia` .  
+Druga składnia jest bardziej rygorystyczna z przepisami, które są usuwane i usunie wszystkie przepisy pieca, które wygenerują `dane wyjście` i mają dane wejściowe ``.
 
-There are 2 commands for adding furnace recipes:
+Istnieje również trzeci sposób usuwania przepisów dotyczących pieców, chociaż ten usunie WSZYSTKIE przepisy dotyczące pieców zarejestrowane w grze.
 
 ```zenscript
-furnace.addRecipe(IItemStack output, IIngredient input);
+piec.removeAll();
 ```
 
-And
+### Dodanie
+
+Istnieją 2 polecenia do dodawania przepisów o piecach:
 
 ```zenscript
-furnace.addRecipe(IItemStack output, IIngredient input, double xp);
+piec.addRecipe(wyjście IItemStack, wejście IIngredienta);
 ```
 
-The first syntax will add a Furnace recipe that will give 0 xp on smelt.
-
-The second syntax will add a Furnace recipe that will give `xp` xp on smelt.
-
-## Fuel
-
-### Set
-
-The command for setting fuel values is:
+Oraz
 
 ```zenscript
-furnace.setFuel(IIngredient input, int burnTime);
+piec.addRecipe(wyjście IItemStack, wejście IIngredient, podwójne xp);
 ```
 
-This will set the burn value of `input` to `burnTime` in ticks. Minecraft coal burns for 1600 ticks, 80 seconds, 8 items. 1 item in a minecraft furnace takes 200 ticks to complete.
+Pierwsza składnia doda przepis na piec, który da 0 xp przy przetapianiu.
 
-Setting the `burnTime` to `0` will stop the `input` from being a fuel item.
+Druga składnia doda przepis na piec, który da `xp` xp przy przetapianiu.
 
-### Get
+## Paliwo
 
-The command for retrieving an item's fuel value is:
+### Ustaw
+
+Polecenie ustawiania wartości paliwa jest:
+
+```zenscript
+piec.setFuel(wsad do składników, czas spalania);
+```
+
+Spowoduje to ustawienie wartości oparzenia `wejścia` na `spali` w tickach. Węgiel Minecraft pali na 1600 ticków, 80 sekund, 8 przedmiotów. 1 przedmiot w piecu minecraftowym wymaga 200 ticków do ukończenia.
+
+Ustawienie `czasu spalania` na `0` powstrzyma `wejście` przed byciem elementem paliwowym.
+
+### Pobierz
+
+Polecenie pobierania wartości paliwa towaru to:
 
 ```zenscript
 furnace.getFuel(IItemStack item); 
 ```
 
-This will return the burn value as an Integer
+To zwróci wartość oparzenia jako liczbę całkowitą
 
-## Examples
+## Przykłady
 
-### Removal
+### Usuwanie
 
-This will remove all Furnace recipes that outputs `<minecraft:glass>`.
-
-```zenscript
-furnace.remove(<minecraft:glass>);
-```
-
-This will remove all Furnace recipes `<minecraft:quartz>` that use `<minecraft:quartz_ore>` as an input.
+Spowoduje to usunięcie wszystkich przepisów dotyczących pieców, które wychodzą `<minecraft:glass>`.
 
 ```zenscript
-furnace.remove(<minecraft:quartz>, <minecraft:quartz_ore>);
+piec.remove(<minecraft:glass>);
 ```
 
-### Addition
-
-This will add a Furnace recipe that will output a `<minecraft:golden_apple>` when a `<minecraft:apple>` is smelted.
+Spowoduje to usunięcie wszystkich przepisów pieca `<minecraft:quartz>` , które używają `<minecraft:quartz_ore>` jako danych wejściowych.
 
 ```zenscript
-furnace.addRecipe(<minecraft:golden_apple>, <minecraft:apple>);
+piec.remove(<minecraft:quartz>, <minecraft:quartz_ore>);
 ```
 
-This will add a Furnace recipe that will output a `<minecraft:speckled_melon>` when a `<minecraft:melon>` is smelted and will give the player 1500 xp points.
+### Dodanie
+
+Spowoduje to dodanie przepisu na piec, który wyśle `<minecraft:golden_apple>` kiedy `<minecraft:apple>` zostanie przetapiany.
 
 ```zenscript
-furnace.addRecipe(<minecraft:speckled_melon>, <minecraft:melon>, 1500);
+piec.addRecipe(<minecraft:golden_apple>, <minecraft:apple>);
 ```
 
-### Fuel
+To doda przepis na piec, który wyniesie `<minecraft:speckled_melon>` kiedy `<minecraft:melon>` zostanie przetapiony i da graczowi 1500 punktów xp.
 
-This will set the Fuel value of `<minecraft:rotten_flesh>` to `100`.
+```zenscript
+piec.addRecipe(<minecraft:speckled_melon>, <minecraft:melon>, 1500);
+```
+
+### Paliwo
+
+To ustawi wartość paliwa `<minecraft:rotten_flesh>` na `100`.
 
 ```zenscript
 furnace.setFuel(<minecraft:rotten_flesh>, 100);
 ```
 
-## Other Functionality
+## Inne funkcje
 
-### Getting all registered Furnace Recipes
+### Uzyskiwanie wszystkich zarejestrowanych przepisów pieca
 
 ```zenscript
-furnace.all;
+Cały piec;
 ```
 
-Returns a [`List<IFurnaceRecipe>`](/Vanilla/Recipes/Furnace/IFurnaceRecipe/).
+Zwraca [`Listę<IFurnaceRecipe>`](/Vanilla/Recipes/Furnace/IFurnaceRecipe/).

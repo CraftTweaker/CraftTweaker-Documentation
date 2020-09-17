@@ -1,20 +1,20 @@
-# Composting
+# 编译
 
 ## 所属包名
 ```zenscript
-mods.exnihilocreatio.Compost
+德语词组
 ```
 
 ## 使用方式
 
-- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input** The input.
-- **Float chance** The chance should be between 0-1.
-- **String color** The color is hex.
-- **[IItemStack](/Vanilla/Items/IItemStack/) output** The result of the recipe.
+- **[Ingredient](/Vanilla/Variable_Types/IIngredient/) 输入** 输入.
+- **浮动几率** 应在0-1之间。
+- **字符串颜色** 颜色是十六进制的。
+- **[IItemStack](/Vanilla/Items/IItemStack/) 输出** 该配方的结果。
 
 ## 添加配方
 
-Does not take arrays in for IIngredient.
+不为 IIngredient 使用数组。
 
 ```zenscript
 mods.exnihilocreatio.Compost.addRecipe(IIngredient, Float chance, String color, IItemStack);
@@ -22,8 +22,8 @@ mods.exnihilocreatio.Compost.addRecipe(IIngredient, Float chance, String color, 
 mods.exnihilocreatio.Compost.addRecipe(<ore:woodPlank>, 0.25, "63452D", <minecraft:log>);
 ```
 
-## Removal
+## 移除
 
 ```zenscript
-Compost.removeAll();
+compos.removeAll();
 ```

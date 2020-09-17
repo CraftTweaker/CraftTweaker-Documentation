@@ -1,30 +1,30 @@
 # IBiome
 
-The IBiome interface allows you to retrieve information on a registered Biome.
+L'interface IBiome vous permet de récupérer des informations sur un Biome enregistré.
 
-## Importing the package
+## Importation du paquet
 
-It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
-`import crafttweaker.world.IBiome;`
+Il pourrait vous être nécessaire d'importer le paquet si vous rencontrez des problèmes (comme lancer un [Tableau](/AdvancedFunctions/Arrays_and_Loops/)), alors mieux être sûr que désolé et ajouter l'importation.  
+`importer crafttweaker.world.IBiome;`
 
-## Calling an IBiome
+## Appeler un IBiome
 
 You can get a list of all registered Biomes using `game.biomes` from [IGame](/Vanilla/Game/IGame/) That is currently the only way
 
 ## ZenGetters
 
-Atm, all you can do with an IBiome object is retrieving some information out of it:
+Atm, tout ce que vous pouvez faire avec un objet IBiome est de récupérer des informations :
 
-| ZenGetter                    | Return Type |
-| ---------------------------- | ----------- |
-| name                         | string      |
-| canRain                      | boolean     |
-| isSnowyBiome                 | boolean     |
-| highHumidity                 | boolean     |
-| spawningChance               | float       |
-| baseHeight                   | float       |
-| heightVariation              | float       |
-| rainfall                     | float       |
-| waterColorMultiplier         | int         |
-| ignorePlayerSpawnSuitability | boolean     |
-| temperature                  | float       |
+| ZenGetter                      | Type de retour       |
+| ------------------------------ | -------------------- |
+| Nom                            | chaîne de caractères |
+| canRain                        | boolean              |
+| isSnowyBiome                   | boolean              |
+| haute humidité                 | boolean              |
+| Chance d'apparition            | flottant             |
+| Hauteur de base                | flottant             |
+| format@@0 heightVariation      | flottant             |
+| précipitations                 | flottant             |
+| format@@0 waterColorMultiplier | Indice               |
+| ignorePlayerSpawnSuitability   | boolean              |
+| température                    | flottant             |

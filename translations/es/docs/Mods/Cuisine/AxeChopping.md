@@ -1,55 +1,55 @@
-# Axe Chopping
+# Cortar hacha
 
-## Availability
+## Disponibilidad
 
-Before doing anything, you should check whether axe-chopping is enabled or not:
+Antes de hacer nada, debes comprobar si la tala de hachas está habilitada o no:
 
 ```zenscript
 import mods.cuisine.AxeChopping;
 
 if (AxeChopping.isEnabled()) {
-    // do stuff
+    // hacer cosas
 } else {
     print("Axe Chopping is disabled, skipping");
 }
 ```
 
-## Addition
+## Adicional
 
 ```zenscript
 import mods.cuisine.AxeChopping;
 
-AxeChopping.add(IItemStack input, IItemStack output);
+AxeChopping.add(IItemStack entrada, IItemStack salida);
 
 AxeChopping.add(<item:minecraft:dirt>, <item:minecraft:diamond>);
 
-// If necessary, it is also possible to use ore dictionary.
-AxeChopping.add(IOreEntry input, IItemStack output);
+// Si es necesario, también es posible utilizar el diccionario de minerales.
+AxeChopping.add(entrada IOreEntry, salida IItemStack);
 
 AxeChopping.add(<ore:cobblestone>, <item:minecraft:diamond>);
 ```
 
-## Removal
+## Eliminar
 
 ```zenscript
 import mods.cuisine.AxeChopping;
 
-// Remove by input.
+// Quitar por entrada.
 AxeChopping.remove(IItemStack input);
 
 AxeChopping.remove(<item:minecraft:log>);
 
-// Remove by output.
-AxeChopping.removeByOutput(IItemStack output);
+// Eliminar por salida.
+AxeChopping.removeByOutput(salida IIItemStack);
 
 AxeChopping.removeByOutput(<item:minecraft:plank>);
 
-// Remove by identifier.
+// Elimina mediante identificador.
 AxeChopping.remove(String id);
 
 AxeChopping.remove("recipe_name");
 
-// Remove everything!
+// ¡Elimina todo!
 AxeChopping.removeAll();
 ```
 
@@ -60,5 +60,5 @@ import mods.cuisine.AxeChopping;
 
 val defaultPlanksOutput as int = AxeChopping.getDefaultPlanksOutput();
 
-val defaultStickOutput as int = AxeChopping.getDefaultStickOutput();
+val defaultStickOutput as int = AxeChoppping.getDefaultStickOutput();
 ```

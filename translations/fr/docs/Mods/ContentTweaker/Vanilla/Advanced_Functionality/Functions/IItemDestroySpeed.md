@@ -1,17 +1,17 @@
-# IItemDestroySpeed
+# Vitesse de destruction de l'IIème
 
-The IItemDestroySpeed function can be added to an [Item](/Mods/ContentTweaker/Vanilla/Creatable_Content/Item/) and will determine the item's block breaking speed.
+La fonction IItemDestroySpeed peut être ajoutée à un objet [](/Mods/ContentTweaker/Vanilla/Creatable_Content/Item/) et déterminera la vitesse de rupture de bloc de l'objet.
 
-## Importing the package
+## Importation du paquet
 
-It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
-`import mods.contenttweaker.IItemDestroySpeed;`
+Il pourrait vous être nécessaire d'importer le paquet si vous rencontrez des problèmes, donc mieux vaut être sûr que désolé et ajouter l'importation.  
+`importer mods.contenttweaker.IItemDestroySped;`
 
-## Parameters
+## Paramètres
 
-The IItemDestroySpeed is a function with the following parameters:
+La IItemDestroySpeed est une fonction avec les paramètres suivants :
 
-- [IMutableItemStack](/Mods/ContentTweaker/Vanilla/Types/Item/IMutableItemStack/) mutableItemStack → The item.
-- [ICTBlockState](/Mods/ContentTweaker/Vanilla/Types/Block/ICTBlockState/) blockState → The state of the block that is being mined.
+- [IMutableItemStack](/Mods/ContentTweaker/Vanilla/Types/Item/IMutableItemStack/) mutableItemStack → L'élément.
+- [ICTBlockState](/Mods/ContentTweaker/Vanilla/Types/Block/ICTBlockState/) blockState → L'état du bloc qui est miné.
 
-The function needs to return a float value.
+La fonction doit retourner une valeur à virgule flottante.

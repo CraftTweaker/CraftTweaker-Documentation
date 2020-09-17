@@ -1,11 +1,11 @@
-# Ore Dictionary
+# Erz Wörterbuch
 
-Ore Dictionary Requirements are fairly new and requires the player to be holding either in their main-hand or in their off-hand an item with the matching ore-dictionary value.
+Die Anforderungen an das Erz Wörterbuch sind recht neu und erfordern es dem Spieler, entweder in der Haupthand oder in der Off-Hand einen Gegenstand mit dem entsprechenden Erz-Wörterbuchwert zu halten.
 
-    Example:
+    Beispiel:
     ore|string
     
-    Working Example:
+    Arbeitsbeispiel:
     ore|nuggetIron
     ore|ingotIron
     ore|oreIron

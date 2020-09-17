@@ -1,54 +1,54 @@
-# Mill
+# Мельница
 
-## Basic Recipe
+## Базовый рецепт
 
-* Adds a Mill Recipe 
+* Добавляет рецепт Мельницы 
 
 ```zenscript
-mods.betterwithmods.Mill.addRecipe(IIngredient[] inputs, IItemStack[] outputs);
-//Examples
+mods.betterwithmods.Mill.addRecipe(IIngredient[] входов, IItemStack[] вывод);
+//Примеры
 mods.betterwithmods.Mill.addRecipe([<minecraft:dirt>],[<minecraft:stone>]);
 ```
 
-## Removal
+## Удаление
 
-* Remove a Mill recipe based on the output
+* Удалить рецепт Mill на основе вывода
 
 ```zenscript
-mods.betterwithmods.Mill.remove(IItemStack[] outputs);
+mods.betterwithmods.Mill.remove(IItemStack[] выводы);
 ```
 
-* Remove all Mill recipes
+* Удалить все рецепты Mill
 
 ```zenscript
 mods.betterwithmods.Mill.removeAll();
 ```
 
-## Builder
+## Строитель
 
-The Mill has a recipe builder that allows more precise control over the recipes. All previous methods are simply short cuts to using the builder.
+В Мельнице есть коллектор рецептов, который позволяет более точно контролировать рецепты. Все предыдущие методы являются просто короткими отрезками для использования конструктора.
 
-* To create a new Mill builder. `mods.betterwithmods.Mill.builder()`
+* Чтобы создать новый конструктор Mill. `mods.betterwithmods.Mill.builder()`
 
-* Mill builder methods
+* Методы Мельничного строителя
      
-     * Sets up the inputs and outputs of the recipe  
+     * Настраивает входы и выходные данные рецепта  
               zenscript
-              buildRecipe(IIngredient[] inputs, IItemStack[] outputs)
+              buildRecipe(IIngredient[] входов, IItemStack[] вывод)
      
-     * Sets the priority of the recipe, the lower the priority the sooner it will be crafted. Default=0.  
+     * Устанавливает приоритет рецепта, тем самым снижая приоритет чем скорее он будет создан. По умолчанию=0.  
               zenscript
-              setPriority(int priority)
+              setPriority(внутренний приоритет)
      
-     * Set the sound of a Mill Recipe.  
+     * Установить звук рецепта Мельницы.  
               zenscript
-              setSound(String soundLocation)
+              setSound(String звуковое место)
      
-     * Finalize the recipe and add it to the game  
+     * Завершить рецепт и добавить его в игру  
               zenscript
               build()
 
-### Example builder usage
+### Пример использования конструктора
 
 ```zenscript
 mods.betterwithmods.Mill.builder()

@@ -1,19 +1,19 @@
 # Removal Tweaker
 
-## ZenMethod List:
+## Lista de ZenMethod:
 
-    // Removes the Entry corresponding to the Starting State from the specified Reagent
-    mods.compatskills.transmutations.removals.removeStartStateFromReagent(IItemStack reagent, IItemStack startState)
-    mods.compatskills.transmutations.removals.removeStartStateFromReagent(IItemStack reagent, crafttweaker.api.block.IBlockState state)
+    // Elimina la entrada correspondiente al Estado de inicio del Reactor especificado
+    mods.compatskills.transmutations.removals.removeStartStateFromReagent(IItemStack reagent, ItemStack startState)
+    mods. ompatskills.transmutations.removals.removeStartStateFromReagent(ItemStack reagent, crafttweaker.api.block.IBlockState state)
     
-    // Removes the Entry corresponding to the Starting State from ALL Reagents!
+    // Elimina la entrada correspondiente al estado inicial de TODOS los Reagentes!
     mods.compatskills.transmutations.removals.removeStartStateReagentAgnostic(IItemStack state)
     mods.compatskills.transmutations.removals.removeStartStateReagentAgnostic(crafttweaker.api.block.IBlockState state)
     
-    // Removes the Entry corresponding to the End State from the specified Reagent.
-    mods.compatskills.transmutations.removals.removeEndStateFromReagent(IItemStack reagent, IItemStack state)
-    mods.compatskills.transmutations.removals.removeEndStateFromReagent(IItemStack reagent, crafttweaker.api.block.IBlockState state)
+    // Elimina la Entrada correspondiente al Estado Final del Reagente especificado.
+    mods.compatskills.transmutations.removals.removeEndStateFromReagent(ItemStack reagent, ItemStack state)
+    mods.compatskills.transmutations.removals.removeEndStateFromReagent(ItemStack reagent, crafttweaker.api.block.IBlockState state)
     
-    // Removes the Entry corresponding to the End State from ALL Reagents!
-    mods.compatskills.transmutations.removals.removeEndStateReagentAgnostic(IItemStack state)
+    // Elimina la Entrada correspondiente al Estado Final de TODOS los Reagentos!
+    mods.compatskills.transmutations.removals.removeEndStateReagentAgnostic(ItemStack state)
     mods.compatskills.transmutations.removals.removeEndStateReagentAgnostic(crafttweaker.api.block.IBlockState state)

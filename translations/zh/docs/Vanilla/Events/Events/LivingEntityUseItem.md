@@ -1,7 +1,7 @@
 # LivingEntityUseItem
 
-The LivingEntityUseItem event is fired whenever an entity starts using an item, stops doing so, after the player finishes using an item and each tick they use the item.  
-Since that would be called far too often, there are 4 subEvents that are only called in their specific case.
+每当一个实体开始使用物品时，即发射LivingEntityUseItem 事件， 在玩家使用一件物品完成并使用每个物品后，停止这么做。  
+由于这种情况常常被调用，有4个子事件只在它们的具体情况下被调用。
 
 ## 导入类
 
@@ -18,24 +18,24 @@ import crafttweaker.event.EntityLivingUseItemEvent.Stop;
 import crafttweaker.event.EntityLivingUseItemEvent.Finish;
 ```
 
-## Event interface extensions
+## 事件界面扩展
 
-LivingEntityUseItem Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+LivingEntityUseItems 事件实现了以下接口，并且能够同时调用他们的所有方法/getter/setter：
 
 - [ILivingEvent](/Vanilla/Events/Events/ILivingEvent/)
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 
 ## ZenGetters/ZenSetters
 
-The following information can be retrieved/set during the event:
+以下信息可以在事件中检索/设置：
 
 | ZenGetter  | 返回值类型                                         |
 | ---------- | --------------------------------------------- |
-| `player`   | [IPlayer](/Vanilla/Players/IPlayer/)          |
-| `isPlayer` | bool                                          |
-| `item`     | [物品堆（IItemstack）](/Vanilla/Items/IItemStack/) |
-| `duration` | int                                           |
+| `播放器`      | [IPlayer](/Vanilla/Players/IPlayer/)          |
+| `isPlayer` | 布尔值                                           |
+| `项目`       | [物品堆（IItemstack）](/Vanilla/Items/IItemStack/) |
+| `持续时间`     | 整数                                            |
 
-| ZenSetter  | Parameter Type |
-| ---------- | -------------- |
-| `duration` | int            |
+| ZenSetter | 参数类型 |
+| --------- | ---- |
+| `持续时间`    | 整数   |

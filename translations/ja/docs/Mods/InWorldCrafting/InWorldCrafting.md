@@ -1,11 +1,11 @@
-# Examples
+# 使用例
 
-Creates lava by dropping 4x of any logWood into cryotheum.  
+すべてのlogWoodの4倍をクライオテウムに落として溶岩を作ります。  
 `mods.inworldcrafting.FluidToFluid.transform(<liquid:lava>, <liquid:cryotheum>, [<ore:logWood> * 4]);`
 
 * * *
 
-Creates Treated Wood by dropping some Birch Planks in Creosote. `mods.inworldcrafting.FluidToItem.transform(<immersiveengineering:treated_wood>, <liquid:creosote>, [<minecraft:planks:2>]);`
+Creosoteにシラカバの木を落として、治療された木材を作成します。 `mods.inworldcrafting.FluidToItem.transform(<immersiveengineering:treated_wood>, <liquid:creosote>, [<minecraft:planks:2>]);`
 
 * * *
 
@@ -19,18 +19,18 @@ Create Steel 15% of the time when ingotIron dropped in the world is hit by an Ex
 
 * * *
 
-Create 8 sticks 75% of the time when Acacia Planks placed in the world is hit by an Explosion. `mods.inworldcrafting.ExplosionCrafting.explodeBlockRecipe(<minecraft:stick> * 8, <minecraft:planks:4>, 75);`
+世界に置かれたアカシアの木材が爆発で打たれた時間の75%を作りましょう。 `mods.inworldcrafting.ExplosionCrafting.explodeBlockRecipe(<minecraft:stick> * 8, <minecraft:planks:4>, 75);`
 
 * * *
 
-Create a Block of Charcoal when 4 pieces of logWood has burned for 60 ticks. `mods.inworldcrafting.FireCrafting.addRecipe(<thermalfoundation:storage_resource>, <ore:logWood> * 4, 60);`
+木炭のブロックを4つ作成します。木材が60ティックで焼かれたとき。 `mods.inworldcrafting.FireCrafting.addRecipe(<thermalfoundation:storage_resource>, <ore:logWood> * 4, 60);`
 
-# Documentation
+# ドキュメント
 
-## Note on fluidcrafting
+## 流体作製に関する注意
 
-**Don't add the same ingredient multiple times, use `<ingredient> * count`. It's there for a reason.**  
-The game merges nearby items into stacks so finding multiple ingredients of the same type in one BlockSpace only happens when the first EntityItem gets a full stack of items, so the craft won't happen like you would expect.
+**同じ成分を複数回追加しないで、 `<ingredient> * count` を使用してください。 それは理由があるからです。**  
+ゲームは近くのアイテムをスタックにマージするので、1つのBlockSpaceで同じタイプの複数の成分を見つけることは、最初のEntityItemがアイテムの完全なスタックを取得するときにのみ起こります。 あなたが期待するようなことは起こらないのです
 
 ### BAAD!
 
@@ -40,7 +40,7 @@ The game merges nearby items into stacks so finding multiple ingredients of the 
 
 `FluidToItem.transform(<minecraft:diamond>, <liquid:blueslime>, [<ore:ingotSteel> * 2, <ore:dustCobalt>, <ore:nuggetEnderpearl>], true);`
 
-## Fluid to Item Transformation
+## 流体からアイテム変換へ
 
 import should be `mods.inworldcrafting.FluidToItem`
 
@@ -49,38 +49,38 @@ import should be `mods.inworldcrafting.FluidToItem`
 
 The default consume value for this method is `true`, so if you don't want the `inputItem` to be consumed when transforming the liquid you have to pass `false` as the 4th paramater to the method.
 
-## Fluid to Fluid Transformation
+## 流体変換への流体変換
 
 import should be `mods.inworldcrafting.FluidToFluid`
 
 **Usage**  
-`FluidToFluid.transform(ILiquidStack output, ILiquidStack inputFluid, IIngredient[] inputItems, @Optional boolean consume);`
+`FluidToFluid.transform(ILiquidStack出力, ILiquidStack inputFluid, IIngredient[] inputItems, @Optional boolean consume);`
 
 The default consume value for this method is `true`, so if you don't want the `inputItem` to be consumed when transforming the liquid you have to pass `false` as the 4th paramater to the method.
 
-## Burning Items
+## 燃焼アイテム
 
-import should be `mods.inworldcrafting.FireCrafting`
+import should be `mods.inworldcrafting.FireCrafting.`
 
 **Usage**  
 `FireCrafting.addRecipe(IItemStack output, IIngredient inputItem, @Optional int ticks);`
 
-The default number of ticks to create the output is `40` (2 seconds)
+出力を作成するデフォルトのティック数は `40` (2 秒)
 
-## Exploding Items/Blocks
+## アイテム/ブロックの爆発
 
-import should be `mods.inworldcrafting.ExplosionCrafting`
+import should be `mods.inworldcrafting.ExplosionCrafting.`
 
-### Exploding items
+### アイテムを分解中
 
 **Usage**  
 `ExplosionCrafting.explodeItemRecipe(IItemStack output, IIngredient inputItem, @Optional int survicechance);`
 
-Survivechance sets the chance for how likely the recipe is to be successful. Default value is `100`%
+Survivechanceはレシピが成功する可能性が高いというチャンスを設定します。 デフォルト値は `100`%
 
-### Exploding Blocks
+### 分解ブロック
 
 **Usage**  
 `ExplosionCrafting.explodeBlockRecipe(IItemStack output, IItemStack blockStack, @Optional int itemSpawnChance);`
 
-`blockStack` should be a `Block` in its stackform. It will compare against metadata. `itemSpawnChance` sets the chance for how likely the block is to spawn the output when the block is destroyed by an explosion. Default value is `100`%
+`blockStack` は、スタック形式で `Block` でなければなりません。 それはメタデータと比較します。 `itemSpawnChance` は、ブロックが爆発で破壊されたときに、ブロックが出力される確率を設定します。 デフォルト値は `100`%

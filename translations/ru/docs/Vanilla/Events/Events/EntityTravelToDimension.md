@@ -1,24 +1,24 @@
-# EntityTravelToDimension
+# Путешествие сущности измерений
 
-The EntityTravelToDimension event is fired whenever an entity is about to travel to another dimension. If canceled, the entity is prevented from travel.
+Событие EntityTravelToDimension запускается всякий раз, когда сущность собирается отправиться в другое измерение. В случае отмены сущности не разрешается путешествовать.
 
-## Notes
+## Примечания
 
-`event.dimension` contains the dimension the entity is about to travel to.
+`event.dimension` содержит измерение, в которое собирается переместиться.
 
-## Event Class
+## Класс события
 You will need to cast the event in the function header as this class:  
 `crafttweaker.event.EntityTravelToDimensionEvent` You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
 
-## Event interface extensions
-EntityTravelToDimension Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+## Наследование от интерфейсов событий
+События EntityTravelToDimension реализуют следующие интерфейсы и также могут вызвать все их методы/getters/setters:
 
 - [ILivingEvent](/Vanilla/Events/Events/ILivingEvent/)
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 
 ## Геттеры/сеттеры
-The following information can be retrieved/set during the event:
+Во время события можно извлечь/задать следующую информацию:
 
 | ZenGetter   | Возвращаемый тип |
 | ----------- | ---------------- |
-| `dimension` | int              |
+| `измерение` | int              |

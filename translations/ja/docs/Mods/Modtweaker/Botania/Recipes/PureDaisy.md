@@ -1,18 +1,18 @@
 # Pure Daisy
 
-The PureDaisy package is used for adding or removing recipes to/from the Botania Pure Daisy.
+PureDaisyパッケージは、Botania Pure Daisyにレシピを追加または削除するために使用されます。
 
-## Calling
+## 発信中
 
-You can call the PureDaisy package using `mods.botania.PureDaisy`
+`mods.botania.PureDaisy` を使用して PureDaisy パッケージを呼び出すことができます。
 
-## Find all registered Recipes
+## すべての登録済みのレシピを検索
 
-You can find all registered Pure Daisy recipes using [`/ct botania daisy`](/Mods/Modtweaker/Botania/Commands/).
+[`/ct botania daisy`](/Mods/Modtweaker/Botania/Commands/) を使用して登録されているすべてのPure Daisy レシピを見つけることができます。
 
-## Recipe addition
+## レシピの追加
 
-The time defaults to 150 ticks
+時間の既定値は 150 ティックです
 
 ```zenscript
 //mods.botania.PureDaisy.addRecipe(IIngredient blockInput, IItemStack blockOutput, @Optional int time);
@@ -20,9 +20,9 @@ mods.botania.PureDaisy.addRecipe(<minecraft:dirt>,<minecraft:grass>);
 mods.botania.PureDaisy.addRecipe(<minecraft:planks>,<minecraft:grass>, 200);
 ```
 
-## Recipe removal
+## レシピの削除
 
 ```zenscript
-//mods.botania.PureDaisy.removeRecipe(IIngredient output);
+//mods.botania.PureDaisy.removeRecipe(IIngredient出力);
 mods.botania.PureDaisy.removeRecipe(<minecraft:obsidian>);
 ```

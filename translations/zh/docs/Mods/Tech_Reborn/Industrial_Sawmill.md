@@ -1,19 +1,19 @@
-# Industrial Sawmill
+# 工业锯木厂
 
-## Importing the Package
+## 导入软件包
 `mods.techreborn.industrialSawmill`
 
-## Adding Recipes
+## 添加配方
 ```zenscript
-mods.techreborn.industrialSawmill.addRecipe(IItemStack output1, IItemStack output2, IItemStack output3, IIngredient input1, ILiquidStack fluid, int ticktime, int euTick);
-mods.techreborn.industrialSawmill.addRecipe(IItemStack output1, IItemStack output2, IItemStack output3, IIngredient input1, int ticktime, int euTick);
-mods.techreborn.industrialSawmill.addRecipe(IItemStack output1, IItemStack output2, IItemStack output3, IIngredient input1, int ticktime, int euTick, boolean useOreDic);
-mods.techreborn.industrialSawmill.addRecipe(IItemStack output1, IItemStack output2, IItemStack output3, IIngredient input1, ILiquidStack fluid, int ticktime, int euTick, boolean useOreDic);
+mods.techreborn.industrialSawmill.addRecipe(IItemStack outputl, IItemStack output2, IItemStack output3, Ingredient input1, ILiquidStack fluid, int ticktime, int euTick);
+mods. echreborn.industrialSawmill.addRecipe(IItemStack outputt1，IItemStack output2，IItemStack output3，Ingredient input1，int ticktime，int euTick)；
+mods.techreborn。 ndustrialSawmill.addRecipe(IItemStack output1，IItemStack output2，IItemStack output3，Ingredient input1，int ticktime，int euTick，boolian useOreDic)；
+mods.techreborn。 ndustrialSawmill.addRecipe(IItemStack output1,IItemStack output2,IItemStack output3,Ingredient input1,ILiquidStack fluid, int ticktime,int euTickly, boolan useOreDic);
 ```
 
-## Removing Recipes
+## 删除配方
 ```zenscript
-mods.techreborn.industrialSawmill.removeInputRecipe(IIngredient ingredient);
+mods.techreborn.industrialSawmill.removeInputRecipe(IIngredient component);
 mods.techreborn.industrialSawmill.removeRecipe(IItemStack output);
 mods.techreborn.industrialSawmill.removeAll();
 ```

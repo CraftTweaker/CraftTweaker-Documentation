@@ -1,14 +1,14 @@
 # Decay Hastener
 
-## Importing the Package
+## Импортирование пакета
 `mods.nuclearcraft.decay_hastener`
 
-## Adding Recipes
+## Добавление рецептов
 ```zenscript
 mods.nuclearcraft.decay_hastener.addRecipe([itemInput, itemOutput, @Optional double timeMultiplier, @Optional double powerMultiplier, @Optional double processRadiation]);
 ```
 
-## Removing Recipes
+## Удаление рецептов
 ```zenscript
 mods.nuclearcraft.decay_hastener.removeRecipeWithInput([itemInput]);
 mods.nuclearcraft.decay_hastener.removeRecipeWithOutput([itemOutput]);

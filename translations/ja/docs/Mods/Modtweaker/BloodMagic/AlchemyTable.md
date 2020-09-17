@@ -1,10 +1,10 @@
-# Alchemy Table
+# 錬金術テーブル
 
-## Package
+## パッケージ
 
 `mods.bloodmagic.AlchemyTable`
 
-## Addition
+## 加算
 
 ```zenscript
 inputs has a max size of 6
@@ -12,7 +12,7 @@ inputs has a max size of 6
 mods.bloodmagic.AlchemyTable.addRecipe(<minecraft:diamond>, [<minecraft:dirt>, <minecraft:dirt>, <minecraft:dirt>, <minecraft:dirt>, <minecraft:dirt>, <minecraft:dirt>], 20,10,0);
 ```
 
-## Potion addition
+## ポーションの追加
 
 ```zenscript
 inputs has a max size of 5 to account for catalysts (any potion container object is discarded)
@@ -21,7 +21,7 @@ var pot = <potion:minecraft:strength>.makePotionEffect(6000, 1);
 mods.bloodmagic.AlchemyTable.addPotionRecipe([<bloodmagic:potion_flask>, <minecraft:carrot>,<minecraft:potato>], pot, 20, 10, 0);
 ```
 
-## Removal
+## 削除
 
 ```zenscript
 inputs has a max size of 6
@@ -29,9 +29,9 @@ inputs has a max size of 6
 mods.bloodmagic.AlchemyTable.removeRecipe([<minecraft:carrot>,<minecraft:carrot>,<minecraft:carrot>,<minecraft:dye:15>]);
 ```
 
-## Potion removal
+## ポーション除去
 
-Any removal is considered as a potential potion if it does not match a recipe in the API's registry.
+APIレジストリのレシピと一致しない場合、削除は可能性があります。
 
 ```zenscript
 //mods.bloodMagic.AlchemyTable.removeRecipe(IItemStack[] inputs);

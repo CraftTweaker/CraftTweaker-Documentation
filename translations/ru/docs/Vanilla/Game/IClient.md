@@ -14,5 +14,5 @@
 
 ## Что с ним делать?
 
-`client.player` returns the player running the client as an [IPlayer](/Vanilla/Players/IPlayer/) Object.  
-`client.language` returns the language the client runs on as string.
+`client.player` возвращает плеер с запущенным клиентом как объект [IPlayer](/Vanilla/Players/IPlayer/) .  
+`client.language` возвращает язык, на котором работает клиент как строка.

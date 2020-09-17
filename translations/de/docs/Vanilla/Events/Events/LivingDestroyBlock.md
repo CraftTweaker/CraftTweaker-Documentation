@@ -1,14 +1,14 @@
 # LivingDestroyBlock
 
-This event is fired whenever a Wither or Ender Dragon attempts to destroy blocks, or when a zombie attempts to break a door. This event is **cancelable**, and if canceled, the block will not be broken.
+Dieses Ereignis wird abgefeuert, wenn ein Wither- oder Enderdrache versucht, Blöcke zu zerstören, oder wenn ein Zombie versucht, eine Tür zu brechen. Dieses Ereignis ist **abbrechbar**und wenn abgebrochen, wird der Block nicht beschädigt.
 
 ## Event-Klasse
-You will need to cast the event in the function header as this class:  
-`crafttweaker.event.LivingDestroyBlockEvent`  
-You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
+Du musst das Ereignis als diese Klasse in den Funktionskopf verschieben:  
+`crafttweaker.event. ivingDestroyBlockEvent`  
+Sie können natürlich auch [die Klasse vor](/AdvancedFunctions/Import/) importieren und dann diesen Namen verwenden.
 
 ## Erweiterte Event-Schnittellen
-LivingDestroyBlock Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+LivingDestroyBlock Events implementieren die folgenden Schnittstellen und können alle ihre Methoden/Getters/Setter auch aufrufen:
 
 - [IEventPositionable](/Vanilla/Events/Events/IEventPositionable/)
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
@@ -16,9 +16,9 @@ LivingDestroyBlock Events implement the following interfaces and are able to cal
 
 
 ## ZenGetter/ZenSetter
-The following information can be retrieved/set during the event:
+Folgende Informationen können während der Veranstaltung abgerufen bzw. eingestellt werden:
 
 | ZenGetter | ZenSetter | Type                                        |
 | --------- | --------- | ------------------------------------------- |
-| `state`   |           | [IBlockState](/Vanilla/Blocks/IBlockState/) |
+| `status`  |           | [IBlockState](/Vanilla/Blocks/IBlockState/) |
 

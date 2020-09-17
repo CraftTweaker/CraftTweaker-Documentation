@@ -1,19 +1,19 @@
-# Cutting Knife
+# Schneidmesser
 
-The *knife* package is used for adding or removing recipes to/from the Cutting Knife.
+Das Paket *Messer* wird zum Hinzufügen oder Entfernen von Rezepten zum Schneidmesser verwendet.
 
-## Calling
+## Anruf
 
-You can call the *knife* package using `mods.skyresources.knife`
+Sie können das *Messer* Paket mit `mods.skyresources.knife` aufrufen
 
-## Recipe Addition
+## Rezeptzusatz
 
 ```zenscript
 //mods.skyresources.knife.addRecipe(IItemStack output, IItemStack input);
 mods.skyresources.knife.addRecipe(<minecraft:diamond>, <minecraft:stone>);
 ```
 
-## Recipe Removal
+## Rezept entfernen
 
 ```zenscript
 //mods.skyresources.knife.removeRecipe(IItemStack output);

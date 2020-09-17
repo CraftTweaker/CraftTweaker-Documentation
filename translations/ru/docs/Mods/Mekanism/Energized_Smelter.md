@@ -1,20 +1,20 @@
-# Energized Smelter
+# Энергетический Металл
 
-As of Mekanism 9.7.0 it is now possible to view all recipe strings of the Energized Smelter through the command `/ct mekrecipes smelter`
+В соответствии с Меканизмом 9.7.0 теперь можно просматривать все рецептные струны Энергетированного Металла, используя команду `/ct мекрецептов`
 
-## Addition
+## Сложение
 
 ```zenscript
-mods.mekanism.smelter.addRecipe(IIngredient inputStack, IItemStack outputStack);
+mods.mekanism.smelter.addRecipe(IIngredient inputStack, IItemStack);
 
 mods.mekanism.smelter.addRecipe(<minecraft:tallgrass:1>, <minecraft:deadbush>);
 ```
 
-As of Mekanism 9.7.0 it is possible to use IIngredients as the inputStack instead of only IItemStacks.
+В соответствии с Mekanism 9.7.0 можно использовать IIngredients как inputStack, а не только IItemStacks.
 
-Note: Currently all this does is loop over the different possibilities in java while adding instead of you having to do it in ZenScript. Currently there is no built in support for compound ingredients or oredictionary in the machines themselves.
+Замечание: В настоящее время все это повторяет различные возможности в java при добавлении вместо того, чтобы делать это в ZenScript. В настоящее время в машинах нет встроенной поддержки комбинированных ингредиентов или oredictionary .
 
-## Removal
+## Удаление
 
 ```zenscript
 mods.mekanism.smelter.removeRecipe(IIngredient inputStack, @Optional IIngredient outputStack);
@@ -23,11 +23,11 @@ mods.mekanism.smelter.removeRecipe(<minecraft:sand:*>, <minecraft:glass>);
 mods.mekanism.smelter.removeRecipe(<minecraft:cobblestone>);
 ```
 
-Specifying an output parameter will only remove the specific recipe that results in that output from that input. Omitting the output parameter will remove all recipes that the input item can produce.
+Указание выходного параметра только удалит конкретный рецепт, который приводит к этому выводу. Пропуск выходного параметра удалит все рецепты, которые может генерировать входной элемент.
 
-## Removing all recipes
+## Удаление всех рецептов
 
-As of Mekanism 9.7.0 it is now possible to remove all Energized Smelter recipes. (This excludes any recipes added via CraftTweaker)
+По данным Меканизма 9.7.0, теперь можно удалить все энергетические рецепты Металлургического Завода. (Это исключает любые рецепты, добавленные через CraftTweaker)
 
 ```zenscript
 mods.mekanism.smelter.removeAllRecipes();

@@ -1,17 +1,17 @@
-# IEntityDropFunction
+# Ientity投放功能
 
-An IEntityDropFunction is called whenever the associated entity is killed. Leave it up to your imagination what you can do with this:
+每当关联实体被杀时，都会调用IEntityDropfunction。 将它留给你想像到你可以做的事：
 
-## Importing the pacakge
+## 导入数据包
 
-It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
-`import crafttweaker.entity.IEntityDropFunction;`
+如果您遇到任何问题，可能需要导入软件包，所以比抱歉更安全并添加导入。  
+`导入 craftweaker.entity.entity. EntityDropfunction;`
 
-## Parameters
+## 参数
 
-The IEntityDropFunction is a function with the following parameters:
+IEntityDropfunction 是一个具有以下参数的函数：
 
-- [IEntity](/Vanilla/Entities/IEntity/) entity → The entity that just died.
-- [IDamageSource](/Vanilla/Damage/IDamageSource/) dmgSourve → The source of the entitie's death.
+- [IEntity](/Vanilla/Entities/IEntity/) 实体 → 刚刚死亡的实体。
+- [IDamageSource](/Vanilla/Damage/IDamageSource/) dmgSourve → 实体死亡源。
 
-The Function needs to return an [IItemStack](/Vanilla/Items/IItemStack/), or `null`.
+函数需要返回 [IItemStack](/Vanilla/Items/IItemStack/), 或 `null`。

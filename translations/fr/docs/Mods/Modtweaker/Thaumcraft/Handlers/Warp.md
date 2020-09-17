@@ -1,16 +1,16 @@
 # Warp
 
-This package allows you to set items' Warp.
+Ce paquet vous permet de définir le warp des objets.
 
-## Importing the package
+## Importation du paquet
 
-You can [import](/AdvancedFunctions/Import/) the package and its methods to facilitate the retrival of the methods.
+Vous pouvez [importer](/AdvancedFunctions/Import/) le paquet et ses méthodes pour faciliter la récupération des méthodes.
 
 ```zenscript
-import mods.thaumcraft.Warp;
+Importer mods.thaumcraft.Warp ;
 ```
 
-## Setting Warp
+## Paramétrage du warp
 
 ```zenscript
 //mods.thaumcraft.Warp.setWarp(IItemStack stack, int amount);

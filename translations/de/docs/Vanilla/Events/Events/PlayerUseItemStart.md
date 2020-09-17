@@ -1,16 +1,16 @@
 # PlayerUseItemStart
 
-The PlayerUseItemStart Event is fired whenever a player starts using an item.
+Das PlayerUseItemStart Event wird gefeuert, wenn ein Spieler anfängt, einen Gegenstand zu verwenden.
 
 ## Event-Klasse
 
-You will need to cast the event in the function header as this class:  
-`crafttweaker.event.PlayerUseItemStartEvent`  
-You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
+Du musst das Ereignis als diese Klasse in den Funktionskopf verschieben:  
+`crafttweaker.event. layerUseItemStartEvent`  
+Sie können natürlich auch [die Klasse vor](/AdvancedFunctions/Import/) importieren und dann diesen Namen verwenden.
 
 ## Erweiterte Event-Schnittellen
 
-PlayerUseItemStart Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+PlayerUseItemStart Events implementieren die folgenden Schnittstellen und können alle ihre Methoden/Getters/Setter auch aufrufen:
 
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 - [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
@@ -19,12 +19,12 @@ PlayerUseItemStart Events implement the following interfaces and are able to cal
 
 Die folgenden Informationen lassen sich von diesem Event (Ereignis) abrufen:
 
-| ZenGetter  | Rückgabetyp                              |
-| ---------- | ---------------------------------------- |
-| `canceled` | boolean                                  |
-| `player`   | [IPlayer](/Vanilla/Players/IPlayer/)     |
-| `item`     | [IItemStack](/Vanilla/Items/IItemStack/) |
+| ZenGetter     | Rückgabetyp                              |
+| ------------- | ---------------------------------------- |
+| `abgebrochen` | boolean                                  |
+| `player`      | [IPlayer](/Vanilla/Players/IPlayer/)     |
+| `eintrag`     | [IItemStack](/Vanilla/Items/IItemStack/) |
 
-## ZenMethods
+## ZenMethoden
 
-- `event.cancel()` sets the event as cancelled
+- `event.cancel()` setzt das Ereignis als abgebrochen

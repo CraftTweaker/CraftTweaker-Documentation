@@ -1,33 +1,35 @@
-# Create Compound
-Custom Alchemistry Compound Generation
+# 複合を作成
+カスタムAlchemistry化合物生成
 
-# Package
+# パッケージ
 ```zenscript
-mods.alchemistry.Util.createCompound
+mods.alchemistry.Util.createCompoundUtil.createCompound
 ```
 
 ## Loader
-This needs to be loaded with `#loader alchemistry`
+これは `#loader alchemistry` でロードする必要があります。
 
-## Methods
+## メソッド
 - **int meta** meta for new Compund
-- **String Name** Name for New Compund
+- **文字列名** 新しいコンパウンドの名前
 - **int red** compound red shade, RGB
-- **int green** compound green shade, RGB
+- **int グリーン** 化合物グリーンシェーディング, RGB
 - **int blue** compound blue shade, RGB
-- **Object[][]** Each Bracket holds a different element followed by a comma and the amount to use in your Compound
+- **Object[][]** 各ブラケットには、コンマとコンパウンドでの使用量が異なる要素が格納されています。
 
-## Creation
+## 作成
 ```zenscript
-mods.alchemistry.Util.createCompound(int meta, String name, int red, int green, int blue, Object[][] components);
+mods.alchemistry.Atomizermods.alchemistry.Util.createCompound(int meta, String name, int red, int green, int blue, Object[][] components);
 
 mods.alchemistry.Util.createCompound(1000, "vibranium sufide", 20, 69, 185,
+[["vibranium", 1],
+ ["sulfur", 3]]);Util.createCompound(1000, "vibranium sofide", 20, 69, 185,
 [["vibranium", 1],
  ["sulfur", 3]]);
 ```
 
-## Notes
-- Please use lowercase names
-- The '#loader alchemistry' line is required at the top of the file. This file can only be used to create elements and compounds, other recipes must be put in other files.
-- The components field requires each entry to be an array like so ["cellulose", 5], indicating the element/compound and it's quantity. String arguments are used here rather than itemstacks as a way to ensure that only elements/compounds are used.
-- The meta field is required to ensure that your new compounds have an unchangeable identifier even when other compounds are created or removed. Each compound must have a unique meta value. At the time of this writing, the mod only uses the meta values from about 0 to 35, but I would start numbering your meta at 1000 (like seen above) or higher to ensure that your custom compounds never clash with Alchemistry's internal recipes
+## メモ
+- 小文字の名前を使用してください
+- ファイルの先頭に '#loader alchemistry' 行が必要です。 このファイルは要素や化合物を作成するためにのみ使用でき、他のレシピは他のファイルに入れる必要があります。
+- componentsフィールドには、要素/化合物とそれが数量であることを示すような["セルロース"、5]のような配列を必要とします。 要素/化合物のみが使用されるようにするための方法として、アイテムスタックではなく、ここで文字列引数を使用します。
+- メタフィールドは、他の化合物が作成または削除された場合でも、新しい化合物に変更不可能な識別子があることを確認するために必要です。 各コンパウンドには一意のメタ値が必要です。 この執筆時点で、Modは0から35のメタ値のみを使用します。 しかし、私はあなたのカスタム化合物がAlchemistryの内部レシピと決して衝突しないことを保証するために、1000以上であなたのメタに番号を付け始めるでしょう(上記のように)。

@@ -1,40 +1,40 @@
 # EntityLivingSpawnEvent
 
-The EntityLivingSpawn Event is fired whenever an entity tries to join or leave a world.  
-It has one subclass, the EntityLivingExtendedSpawnEvent that also contains an [IMobSpawnerBaseLogic](/Vanilla/TileEntity/IMobSpawnerBaseLogic) reference.
+L'événement EntityLivingSpawn est lancé chaque fois qu'une entité tente de rejoindre ou de quitter un monde.  
+Il y a une sous-classe, l'EntityLivingExtendedSpawnEvent qui contient également une référence [IMobSpawnerBaseLogic](/Vanilla/TileEntity/IMobSpawnerBaseLogic).
 
-## Event Class
+## Classe de l'événement
 
-You will need to cast the event in the function header as this class:  
-`crafttweaker.event.EntityLivingSpawnEvent`  
-`crafttweaker.event.EntityLivingExtendedSpawnEvent`  
-You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
+Vous aurez besoin de lancer l'événement dans l'en-tête de la fonction comme cette classe:  
+`fabricant. vent.EntityLivingSpawnEvent`  
+`artisan. vent.EntityLivingExtendedSpawnEvent`  
+Vous pouvez, bien sûr, également [importer](/AdvancedFunctions/Import/) la classe avant et utiliser ce nom alors.
 
-## Event interface extensions
+## Extensions d'interface de l'événement
 
-EntityLivingSpawn Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+Les événements EntityLivingSpawn implémentent les interfaces suivantes et peuvent également appeler toutes leurs méthodes/getters/setters :
 
 - [ILivingEvent](/Vanilla/Events/Events/ILivingEvent/)
 
 ## ZenGetters
 
-The following information can be retrieved from the event:
+Les informations suivantes peuvent être récupérées à partir de l'événement :
 
-| ZenGetter                 | Type                                                             |
-| ------------------------- | ---------------------------------------------------------------- |
-| `world`                   | [IWorld](/Vanilla/World/IWorld/)                                 |
-| `x`                       | float                                                            |
-| `y`                       | float                                                            |
-| `z`                       | float                                                            |
-|                           |                                                                  |
-| `spawner` (Extended Only) | [IMobSpawnerBaseLogic](/Vanilla/TileEntity/IMobSpawnerBaseLogic) |
+| ZenGetter                    | Type de texte                                                              |
+| ---------------------------- | -------------------------------------------------------------------------- |
+| `monde`                      | [IWorld](/Vanilla/World/IWorld/)                                           |
+| `x`                          | flottant                                                                   |
+| `y`                          | flottant                                                                   |
+| `Z`                          | flottant                                                                   |
+|                              |                                                                            |
+| `spawner` (étendu seulement) | [format@@0 IMobSpawnerBaseLogic](/Vanilla/TileEntity/IMobSpawnerBaseLogic) |
 
-## Event functions
+## Fonctions de l'événement
 
-The despawn event also offers three functions to change the event outcome:
+L'événement de désespoir offre également trois fonctions pour changer le résultat de l'événement:
 
-| ZenMethod | Description                                |
-| --------- | ------------------------------------------ |
-| `allow`   | Forces the entity to (de)spawn             |
-| `deny`    | Forces the entity not to (de)spawn         |
-| `pass`    | Sets the event result to the default state |
+| Méthode Zen | Libellé                                                |
+| ----------- | ------------------------------------------------------ |
+| `autoriser` | Forcer l'entité à (dé)spawn                            |
+| `Refuser`   | Forcer l'entité à ne pas (dé)spawn                     |
+| `passer`    | Définit le résultat de l'événement à l'état par défaut |

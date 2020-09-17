@@ -1,41 +1,41 @@
 # 材料
 
-A Material is what an item is made of, for example Platinum.
+一种材料是一种物件，例如白金制造。
 
 ## 导入相关包
 
-It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
-`import mods.contenttweaker.Material;`
+如果您遇到任何问题，可能需要导入软件包，所以比抱歉更安全并添加导入。  
+`导入 mods.contenttweaker.Material;`
 
-## Retrieving such an object
+## 正在获取此对象
 
-You can either retrieve an existing Material using the [MaterialSystem](/Mods/ContentTweaker/Materials/MaterialSystem/) or create an entirely new one using the [Material Builder](/Mods/ContentTweaker/Materials/Materials/Material_Builder/)
+您可以使用 [材料系统](/Mods/ContentTweaker/Materials/MaterialSystem/) 检索现有材料，或者使用 [材料生成器](/Mods/ContentTweaker/Materials/Materials/Material_Builder/) 创建一个全新的材料
 
-## Fields
+## 字段
 
-You can retrieve the following information from a Material:
+您可以从材料中检索以下信息：
 
-| ZenMethod            | 返回值类型   | 描述                                             |
-| -------------------- | ------- | ---------------------------------------------- |
-| getName()            | string  | Returns the Material's name                    |
-| getColor()           | int     | Returns the Material's color                   |
-| isHasEffect()        | boolean | Returns if the material has the glowing effect |
-| getUnlocalizedName() | string  | Returns the Material's unlocalized name        |
+| ZenMethod（ZenMethod） | 返回值类型   | 描述             |
+| -------------------- | ------- | -------------- |
+| getName()            | string  | 返回材料的名称        |
+| getColor()           | int     | 返回材料的颜色        |
+| isHasEffect()        | boolean | 如果材料带有发光效果，则返回 |
+| getUnlocalizedName() | 字符串     | 返回材料的非本地化名称    |
 
-## Register [Material Parts](/Mods/ContentTweaker/Materials/Materials/MaterialPart/)
+## 注册 [材料元件](/Mods/ContentTweaker/Materials/Materials/MaterialPart/)
 
-You can either register parts using the [part object](/Mods/ContentTweaker/Materials/Parts/Part/) or it's name string.  
-You can also either register a single part or multiple at once.  
-So you got 4 options in total:
+您可以使用 [部件对象](/Mods/ContentTweaker/Materials/Parts/Part/) 或它的名称字符串注册部件。  
+您也可以一次注册一个或多个部分。  
+因此您总共获得4个选项：
 
 ```zenscript
-registerParts(String[] partNames);
-registerParts(IPart[] parts);
+registerParts(String[…]部分)；
+registerParts(IPart[…]部分)；
 
 
-registerPart(String partName);
-registerPart(IPart part);
+registerPart(String part名称)；
+registerPart(IPart part)；
 ```
 
-The registerPart Methods return a single [MaterialPart](/Mods/ContentTweaker/Materials/Materials/MaterialPart/) object.  
-The registerParts Methods return a [MaterialPart](/Mods/ContentTweaker/Materials/Materials/MaterialPart/) list.
+注册配件方法返回单个的 [MaterialPart](/Mods/ContentTweaker/Materials/Materials/MaterialPart/) 对象。  
+注册配件方法返回一个 [材料配件](/Mods/ContentTweaker/Materials/Materials/MaterialPart/) 列表。

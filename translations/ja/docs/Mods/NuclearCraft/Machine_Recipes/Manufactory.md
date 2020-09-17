@@ -1,16 +1,16 @@
-# Manufactory
+# 製造
 
-## Importing the Package
-`mods.nuclearcraft.manufactory`
+## パッケージのインポート
+`mods.原子力機器.manufactory`
 
-## Adding Recipes
+## レシピを追加中
 ```zenscript
-mods.nuclearcraft.manufactory.addRecipe([itemInput, itemOutput, @Optional double timeMultiplier, @Optional double powerMultiplier, @Optional double processRadiation]);
+mods.nuclearcraft.manufactory.addRecipe([itemInput, itemOutput, @Optional double timeMultiplier, @Optional dow processRadiation]);
 ```
 
-## Removing Recipes
+## レシピを削除
 ```zenscript
-mods.nuclearcraft.manufactory.removeRecipeWithInput([itemInput]);
-mods.nuclearcraft.manufactory.removeRecipeWithOutput([itemOutput]);
-mods.nuclearcraft.manufactory.removeAllRecipes();
+mods.nuclecraft.manufactory.removeRecipeWithInput([itemInput]);
+mods.nuclecraft.manufactury.removeRecipeWithOutput([itemOutput]);
+mods.nuclecraft.manufactury.removeAllRecipes();
 ```

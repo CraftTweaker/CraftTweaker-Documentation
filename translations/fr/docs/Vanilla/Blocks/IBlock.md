@@ -1,34 +1,34 @@
-# IBlock
+# Verrouillage
 
-An IBlock Object consists of a [IBlockDefinition](/Vanilla/Blocks/IBlockDefinition/), a metadata and a TileData.  
-It refers to a block in the game.
+Un IBlock Object se compose d'un [IBlockDefinition](/Vanilla/Blocks/IBlockDefinition/), d'une métadonnée et d'une TileData.  
+Il fait référence à un bloc dans le jeu.
 
-## Importing the package
+## Importation du paquet
 
-It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
-`import crafttweaker.block.IBlock;`
+Il pourrait vous être nécessaire d'importer le paquet si vous rencontrez des problèmes (comme lancer un [Tableau](/AdvancedFunctions/Arrays_and_Loops/)), alors mieux être sûr que désolé et ajouter l'importation.  
+`importer crafttweaker.block.IBlock ;`
 
-## Calling an IBlock Object
+## Appel d'un IBlock Object
 
-There are multiple ways thet return an IBlock object:
+Il y a plusieurs façons de renvoyer un IBlock objet :
 
-* Casting a [IItemStack](/Vanilla/Items/IItemStack/) as IBlock (using the `AS` keyword, or the `asBlock()` method)
-* Using the getBlock(x,y,z) on an [IWorld](/Vanilla/World/IWorld/).
-* Using getBlock() on ContentTweaker's [ICTBlockState](/Mods/ContentTweaker/Vanilla/Types/Block/ICTBlockState/)
+* Casting d'un [IItemStack](/Vanilla/Items/IItemStack/) en tant qu'IBlock (en utilisant le mot-clé `AS` ou la méthode `asBlock()`)
+* Utiliser getBlock(x,y,z) sur un [IWorld](/Vanilla/World/IWorld/).
+* Utiliser la fonction getBlock() sur le [ICTBlockState](/Mods/ContentTweaker/Vanilla/Types/Block/ICTBlockState/) de ContentTweaker
 
 ## Zengetters
 
-| Getter     | What does it do                | Return Type                                           |
-| ---------- | ------------------------------ | ----------------------------------------------------- |
-| definition | Returns the Block's definition | [IBlockDefinition](/Vanilla/Blocks/IBlockDefinition/) |
-| meta       | Returns the Block's metadata   | int                                                   |
-| data       | Returns the Block's tileData   | [IData](/Vanilla/Data/IData/)                         |
+| Récupération | Que fait-il                              | Type de retour                                         |
+| ------------ | ---------------------------------------- | ------------------------------------------------------ |
+| Définition   | Renvoie la définition du bloc            | [Définition IBlock](/Vanilla/Blocks/IBlockDefinition/) |
+| meta         | Renvoie les métadonnées du bloc          | Indice                                                 |
+| données      | Retourne les données de la tuile du bloc | [IData](/Vanilla/Data/IData/)                          |
 
-# IBlockPattern
+# Schéma de verrouillage
 
-IBlocks extend [IBlockPattern](/Vanilla/Blocks/IBlockPattern/) Objects. That means, all functions that are available to IBlockPattern objects can also be used for IBlock objects:
+Les IBlocks étendent [objets IBlockPattern](/Vanilla/Blocks/IBlockPattern/). Cela signifie que toutes les fonctions disponibles pour les objets IBlockPattern peuvent également être utilisées pour les objets IBlock :
 
-* Use the `blocks` ZenGetter
+* Utilise les `blocs` ZenGetter
 * OR'ing
-* Matching using the `in` keyword
-* Use the `displayName` ZenGetter
+* Correspondance en utilisant le mot-clé `dans`
+* Utilisez le `displayName` ZenGetter

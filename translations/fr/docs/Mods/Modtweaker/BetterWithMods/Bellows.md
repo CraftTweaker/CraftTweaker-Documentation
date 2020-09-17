@@ -1,10 +1,10 @@
-# Bellows
+# Soufflements
 
-The Bellows registry allows adding items to a weight class for whether it can be blown when in front of a Bellows
+Le registre des soufflets permet d'ajouter des éléments à une classe de poids pour savoir s'ils peuvent être soufflés en face d'un soufflet
 
-Value can be a decimal between (0, 128]. In which the number dictates how many blocks away from the bellows the item will be blown until it does not move anymore.
+La valeur peut être une décimale entre 0 et 128]. Dans lequel le nombre dicte le nombre de blocs à l'écart des soufflets, l'objet sera soufflé jusqu'à ce qu'il ne bouge plus.
 
 ```zenscript
-mods.betterwithmods.Bellows.set(IItemStack stack, float value);
+mods.betterwithmods.Bellows.set(IItemStack stack, valeur flottante);
 
 ```

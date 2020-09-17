@@ -1,7 +1,7 @@
 # Настройка GitHub
 
-In order to start, you need a free Account for [Github](https://github.com).  
-Follow the registration steps if you have none already.
+Чтобы начать, вам нужна бесплатная учетная запись для [Github](https://github.com).  
+Следуйте шагам регистрации, если у вас уже нет ни одного аккаунта.
 
 ## Репозиторий вики
 
@@ -9,17 +9,17 @@ Follow the registration steps if you have none already.
 
 ## Создание ответвления проекта
 
-In order for you to do any changes, you need to copy the whole CrT-Wiki Repository to your Github Account.  
-This action is called forking.  
-You can fork the repository by clicking on the "fork" button in the wiki's GH page: ![Inputs Order](/Contribute/assets/SetupGitHub_ForkButton.png)
+Чтобы сделать любые изменения, необходимо скопировать весь репозиторий CrT-Wiki в свой аккаунт Github.  
+Это действие называется форки.  
+Вы можете форкнуть репозиторий нажав на кнопку "Форк" в GH странице вики: ![Порядок ввода](/Contribute/assets/SetupGitHub_ForkButton.png)
 
-In case you are in a Github organization you might need to specify where you want to fork the repository to.
+В случае, если вы находитесь в организации Github, вам может потребоваться указать, куда вы хотите форкнуть репозиторий.
 
-## Locating your fork
+## Расположение вашего форка
 
-You can now find a new repository called "CraftTweaker-Documentation" when checking your profile page/repositories.  
-Alternatively, you can go to `github.com/yourUserName/CraftTweaker-Documentation`.
+Теперь вы можете найти новый репозиторий под названием "CraftTweaker-Documentation" при проверке вашего профиля страницы/репозиториев.  
+Или же вы можете перейти к `github.com/yourUserName/CraftTweaker-Documentation`.
 
-## How to continue
+## Как продолжить
 
-Now that you have successfully forked the CraftTweaker-Documentation repository to your own GitHub account, you can [use the online Editor](/Contribute/OnlineEditor_Edit/) or [clone to your computer](/Contribute/LocalClone/Clone/) and edit locally.
+Теперь, когда вы успешно форсировали репозиторий Документации CraftTweaker-Documentation в свою учетную запись GitHub, вы можете [использовать онлайн редактор](/Contribute/OnlineEditor_Edit/) или [клонировать на ваш компьютер](/Contribute/LocalClone/Clone/) и редактировать локально.

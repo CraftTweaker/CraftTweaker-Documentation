@@ -1,10 +1,10 @@
-### Class
+### クラス
 
 ```zenscript
 import mods.roots.Fey;
 ```
 
-#### Methods
+#### メソッド
 
 ```zenscript
 void addRecipe(
@@ -29,13 +29,13 @@ void addRecipe(
 
 ```zenscript
 void removeRecipe(
-  IItemStack output // the item produced by the recipe you wish to remove
+  IItemStack 出力// 削除したいレシピによって生成されたアイテム
 );
 ```
 
 * * *
 
-### Examples
+### 使用例
 
 ```zenscript
 import mods.roots.Fey;
@@ -49,10 +49,10 @@ Fey.addRecipe("tnt", <minecraft:tnt>, [<minecraft:gunpowder>, <minecraft:gunpowd
 // Removes the recipe for the living axe
 Fey.removeRecipe(<roots:living_axe>);
 
-// Adds a different recipe for the living axe, using the same name, to ensure that it shows up in Patchouli. By default all Fey crafting recipe names are the same as the item's registry name.
+// Adds a different recipe for the living axe, using the same name, to ensure that it shows up in Patchouli. デフォルトでは、すべてのFeyクラフトレシピ名はアイテムのレジストリ名と同じです。
 Fey.addRecipe("living_axe", <roots:living_axe>, [<minecraft:sand>, <minecraft:dirt>, <minecraft:stone>, <minecraft:glass>, <minecraft:stone_axe>]);
 ```
 
-### Notes
+### メモ
 
 It is important for Patchouli continuity that, if you remove a default recipe (say `living_axe`), that you replace it with another recipe and give that recipe the name `"living_axe"` if you wish Patchouli to properly display the new recipe.

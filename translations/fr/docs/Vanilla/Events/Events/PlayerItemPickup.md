@@ -1,26 +1,26 @@
-# PlayerItemPickup
+# Ramassage des objets du joueur
 
-The PlayerItemPickup Event is fired after a player has interacted with an entity item and an item or amount of an item has been picked up. This event takes place after [PlayerPickupItem](/Vanilla/Events/Events/PlayerPickupItem/) has been fired.
+L'événement de collecte d'objets de joueur est lancé après qu'un joueur a interagi avec un objet d'entité et qu'un objet ou un montant d'objet a été ramassé. Cet événement se déroule après que [PlayerPickupItem](/Vanilla/Events/Events/PlayerPickupItem/) a été déclenché.
 
-## Event Class
-You will need to cast the event in the function header as this class:  
-`crafttweaker.event.PlayerItemPickupEvent`  
-You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
+## Classe de l'événement
+Vous devrez lancer l'événement dans l'en-tête de la fonction comme cette classe:  
+`crafttweaker.event. layerItemPickupEvent`  
+Vous pouvez, bien sûr, également [importer](/AdvancedFunctions/Import/) la classe avant et utiliser ce nom alors.
 
-## Event interface extensions
-PlayerItemPickup Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+## Extensions d'interface de l'événement
+Les événements PlayerItemPickup implémentent les interfaces suivantes et peuvent également appeler toutes leurs méthodes/getters/setters :
 
-- [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
+- [Evénement IPlayer](/Vanilla/Events/Events/IPlayerEvent/)
 
 
 ## ZenGetters
-The following information can be retrieved from the event:
+Les informations suivantes peuvent être récupérées à partir de l'événement :
 
-| ZenGetter        | Return Type                                   |
-| ---------------- | --------------------------------------------- |
-| `stackCopy`      | [IItemStack](/Vanilla/Items/IItemStack/)      |
-| `originalEntity` | [IEntityItem](/Vanilla/Entities/IEntityItem/) |
+| ZenGetter          | Type de retour                                |
+| ------------------ | --------------------------------------------- |
+| `Copie de pile`    | [IItemStack](/Vanilla/Items/IItemStack/)      |
+| `Entité originale` | [IEntityItem](/Vanilla/Entities/IEntityItem/) |
 
 ## Notes
 
-`stackCopy` is a copy of the item contained inside of the original entity item, representing what was picked up and placed into the player's inventory. `originalEntity` is the item entity with any remaining amount of the item stack (if the player didn't pick up the full amount).
+`stackCopy` est une copie de l'élément contenu dans l'élément original de l'entité, représentant ce qui a été ramassé et placé dans l'inventaire du joueur. `originalEntity` est l'entité d'objet avec n'importe quelle quantité restante de la pile d'objets (si le joueur n'a pas ramassé le montant plein).

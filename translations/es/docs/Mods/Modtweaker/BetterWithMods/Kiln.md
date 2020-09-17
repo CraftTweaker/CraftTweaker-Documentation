@@ -1,64 +1,71 @@
-# Kiln
+# Horno
 
-## Basic Recipe
+## Receta básica
 
-* Adds Kiln Recipe - inputs *MUST* have a block associated with them.
+* Añade una receta de horno - entradas *DEBES* tener un bloque asociado con ellas.
 
 ```zenscript
-mods.betterwithmods.Kiln.add(IIngredient input, IItemStack[] output);
-//Examples
+mods.betterwithmods.Kiln.add(entrada IIngredient, salida ItemStack[]);
+//Ejemplos
 mods.betterwithmods.Kiln.add(<minecraft:fence>,[<minecraft:stick>,<minecraft:stick>]);
 ```
 
-## Removal by input
+## Eliminar por entrada
 
-* Remove a recipe based on the input ingredient
+* Elimina una receta basada en el ingrediente de entrada
 
 ```zenscript
-mods.betterwithmods.Kiln.remove(IIngredient input);
+mods.betterwithmods.Kiln.remove(entrada IIngredient);
 ```
 
-## Removal by output
+## Eliminar por salida
 
-* Remove a recipe based on the output
+* Elimina una receta basada en la salida
 
 ```zenscript
 mods.betterwithmods.Kiln.remove(IItemStack[] outputs);
 ```
 
-## Remove all
+## Eliminar todo
 
-* Remove all recipes
+* Eliminar todas las recetas
 
 ```zenscript
 mods.betterwithmods.Kiln.removeAll();
 ```
 
-## Builder
+## Constructor
 
-The Kiln has a recipe builder that allows more precise control over the recipes. All previous methods are simply short cuts to using the builder.
+El horno tiene un constructor de recetas que permite un control más preciso de las recetas. Todos los métodos anteriores son simplemente atajos al uso del constructor.
 
-* To create a new Kiln builder. `mods.betterwithmods.Kiln.builder()`
+* Crear un nuevo constructor de Hornos. `mods.betterwithmods.Kiln.builder()`
 
-* Kiln methods
+* Métodos Kiln
      
      * Sets up the inputs and outputs of the recipe  
-              zenscript
-              buildRecipe(IIngredient[] inputs, IItemStack[] outputs)
+          zenscript buildRecipe(IIngredient[] inputs, IItemStack[] outputs)  
+              Sets up the inputs and outputs of the recipe<br />
+                    zenscript
+                    buildRecipe(IIngredient[] inputs, IItemStack[] outputs)
      
-     * Set the Heat requirements of the recipe. Heat is used to check if the recipe can be made in a stoked or unstoked cauldron. Unstoked heat = 1, Stoked heat = 2. You can add custom heat sources, and even custom heat levels using the [Heat Registry](/Mods/Modtweaker/BetterWithMods/HeatRegistry/).  
+     * Establecer los requisitos de calor de la receta. El calor se utiliza para comprobar si la receta se puede hacer en un calderón horneado o sin horno. Calor no ahumado = 1, Calor almacenado = 2. You can add custom heat sources, and even custom heat levels using the [Heat Registry](/Mods/Modtweaker/BetterWithMods/HeatRegistry/).  
+          zenscript setHeat(int heat)  
               zenscript
               setHeat(int heat)
      
      * Set the recipe to ignore the heat value and craft anyways  
-              zenscript
-              setIgnoreHeat(boolean ignoreHeat)
+          zenscript setIgnoreHeat(boolean ignoreHeat)  
+              Set the recipe to ignore the heat value and craft anyways<br />
+                    zenscript
+                    setIgnoreHeat(boolean ignoreHeat)
      
      * Finalize the recipe and add it to the game  
-              zenscript
-              build()
+          zenscript build()  
+              Finalize the recipe and add it to the game<br />
+                    zenscript
+                    build()
 
-### Example builder usage
+### Ejemplo de uso del constructor
 
 ```zenscript
 mods.betterwithmods.Kiln.builder()
@@ -67,14 +74,14 @@ mods.betterwithmods.Kiln.builder()
 .build();
 ```
 
-## Structure Block
+## Bloque de estructura
 
-The Kiln is a multiblock based on the block it is made of; This allows registering a block that can be used to create the structure.
+El horno es un multibloque basado en el bloque que está hecho de; Esto permite registrar un bloque que puede ser usado para crear la estructura.
 
-Input MUST be a *Block*
+La entrada DEBE ser un bloque **
 
 ```zenscript
-   mods.betterwithmods.Kiln.registerBlock(IItemStack input);
+   mods.betterwithmods.Kiln.registerBlock(entrada IItemStack);
 
    mods.betterwithmods.Kiln.registerBlock(<minecraft:stonebrick>);
 ```

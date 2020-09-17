@@ -1,49 +1,49 @@
 # IPlayer
 
-The IPlayer interface allows you to view certain information on a specific player and interact with said one. Mostly used in Event Handlers and Recipe Functions.
+IPlayer 接口允许您查看特定玩家的某些信息并与指定玩家交互。 大多用于事件处理器和配方函数。
 
 ## 导入相关包
 
-It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
-`import crafttweaker.player.IPlayer;`
+如果您遇到任何问题，可能需要导入软件包(例如铸造一个 [数组](/AdvancedFunctions/Arrays_and_Loops/)), 这样比抱歉更安全并添加导入。  
+`导入craftweaper.player.IPlayer；`
 
-## Extending IEntityLivingBase and IUser
+## 扩展IEntityLivingBase和IUser
 
-IPlayer extends [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/). That means all functions available to [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) Objects also are available to IPlayer Objects.  
-IPlayer also extends [IUser](/Vanilla/Players/IUser/). That means all functions available to [IUser](/Vanilla/Players/IUser/) Objects also are available to IPlayer Objects.
+IPlayer extension [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/). 这意味着 [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) 对象也可用于 IPlayer Object。  
+IPlayer 也扩展 [IUser](/Vanilla/Players/IUser/) 这意味着 [IUser](/Vanilla/Players/IUser/) 对象所有可用的函数也可供IPlayer Object使用。
 
 ## Zengetters
 
-Zengetters are for retrieving information. Usually either assigned to a variable or used in a method/function.
+Zengetters用于检索信息。 通常要么分配给一个变量，要么在方法/函数中使用。
 
-| Zengetter     | 功能                                                                                         | 返回值类型                                      | Usage                  |
-| ------------- | ------------------------------------------------------------------------------------------ | ------------------------------------------ | ---------------------- |
-| id            | returns the player's id                                                                    | string                                     | `player.id`            |
-| name          | returns the player's name                                                                  | string                                     | `player.name`          |
-| data          | returns the player's data                                                                  | [IData](/Vanilla/Data/IData/)              | `player.data`          |
-| xp (经验值)      | returns the player's experience level. Can also be used to set a player's experience level | int                                        | `player.xp`            |
-| hotbarSize    | returns the player's hotbar size                                                           | int                                        | `player.hotbarSize`    |
-| inventorySize | returns the player's inventory size                                                        | int                                        | `player.inventorySize` |
-| currentItem   | returns the item the player is currently holding                                           | [IItemStack](/Vanilla/Items/IItemStack/)   | `player.currentItem`   |
-| creative      | returns if the player is currently in creative mode (a.k.a gamemode 1)                     | bool                                       | `player.creative`      |
-| adventure     | returns if the player is currently in adventure mode (a.k.a gamemode 2)                    | bool                                       | `player.adventure`     |
-| x             | returns the player's current X position in the world                                       | double                                     | `player.x`             |
-| y             | returns the player's current y position in the world                                       | double                                     | `player.y`             |
-| z             | returns the player's current z position in the world                                       | double                                     | `player.z`             |
-| position      | returns the player's current position. Can also be used to set a player's position         | [Position3f](/Vanilla/Utils/Position3f/)   | `player.position`      |
-| foodStats     | returns the player's foodstats.                                                            | [IFoodStats](/Vanilla/Players/IFoodStats/) | `player.foodStats`     |
+| Zengetter   | 功能                               | 返回值类型                                      | 用法      |
+| ----------- | -------------------------------- | ------------------------------------------ | ------- |
+| id          | 返回玩家ID                           | 字符串                                        | `ID`    |
+| 名称          | 返回玩家姓名                           | string                                     | `玩家名称`  |
+| data        | 返回玩家的数据                          | [IData](/Vanilla/Data/IData/)              | `游戏数据`  |
+| xp (经验值)    | 返回玩家的体验级别。 也可以用来设置玩家体验级别         | 整数                                         | `xp`    |
+| 快捷栏大小       | 返回玩家的快捷栏大小                       | 整数                                         | `热栏大小`  |
+| 背包大小        | 返回玩家的物品栏大小                       | 整数                                         | `背包大小`  |
+| currentItem | 返回当前玩家正在持有的项目                    | [IItemStack](/Vanilla/Items/IItemStack/)   | `当前项目`  |
+| 创造性的        | 返回如果玩家当前处于创造模式(a.k.a gamemode 1) | bool                                       | `有创意的`  |
+| 冒险模式        | 返回如果玩家目前处于探险模式(a.k.a gamemode 2) | bool                                       | `冒险游戏`  |
+| x           | 返回当前玩家在世界中的 X 位置                 | 双精度                                        | `x`     |
+| 年           | 返回玩家在世界中当前的 y 位置                 | 双精度                                        | `y`     |
+| z           | 返回当前玩家在世界中的 z 位置                 | 双精度                                        | `z 播放器` |
+| 位置          | 返回玩家当前的位置。 也可以用来设置玩家的位置          | [位置3f](/Vanilla/Utils/Position3f/)         | `播放器位置` |
+| foodStats   | 返回玩家的食物统计信息。                     | [IFoodStats](/Vanilla/Players/IFoodStats/) | `食物统计`  |
 
 ## ZenMethods
 
-Zenmethods are for doing things with other things, in this case with a player.
+Zenmethods 是为了与其他东西打交道，在这种情况下是与玩家打交道。
 
-| ZenMethod                | Parameter Type(s)                        | What does it do                                                     | Example                                     |
-| ------------------------ | ---------------------------------------- | ------------------------------------------------------------------- | ------------------------------------------- |
-| removeXP(XPtoRemove)     | int #整型                                  | Removes the given experience levels from the player.                | `player.removeXP(1)`                        |
-| update(IData)            | [IData](/Vanilla/Data/IData/)            | Updates the playerdata to the provided IData.                       |                                             |
-| sendChat(Message)        | string OR IChatMessage                   | Sends the player a Chat Message.                                    | `player.sendChat("Hello my old friend")`    |
-| getHotbarStack(index)    | int                                      | Returns the item at the given index within the player's hotbar.     | `player.getHotbarStack(3)`                  |
-| getInventoryStack(index) | int                                      | Returns the item at the given index within the player's inventory.  | `player.getInventoryStack(3)`               |
-| give(item)               | [IItemStack](/Vanilla/Items/IItemStack/) | Give the player the provided item. Item is an IItemStack.           | `player.give(<minecraft:gold_ingot>)` |
-| teleport(position)       | [Position3f](/Vanilla/Utils/Position3f/) | Teleports the player to the provided position in the same dimension | `player.teleport(position)`                 |
-| executeCommand(raw)      | string                                   | Executes the command as the player                                  | `player.executeCommand("kill")`             |
+| ZenMethod（ZenMethod）  | 参数类型(s)                                  | 功能                         | 例子                                      |
+| --------------------- | ---------------------------------------- | -------------------------- | --------------------------------------- |
+| 移除XP(XPtoRemove)      | int #整型                                  | 从玩家中移除给定的体验等级。             | `移除播放器 (1)`                             |
+| 更新(IData)             | [IData](/Vanilla/Data/IData/)            | 更新玩家数据到提供的 IData。          |                                         |
+| 发送聊天(Message)         | 字符串或 IChatMessage                        | 给玩家发送一条聊天消息。               | `播放器.SendChat("您好，我的老朋友")`              |
+| getHotbarStack(索引)    | 整数                                       | 在玩家热键中返回给定索引处的项目。          | `播放器.getHotbarStack(3)`                 |
+| getInventoryStack(索引) | 整数                                       | 返回玩家背包中给定索引处的项目。           | `player.getInventoryStack(3)`           |
+| 赠送(项目)                | [IItemStack](/Vanilla/Items/IItemStack/) | 给玩家提供物品。 物品是一个 IItemStack。 | `玩家.give(<minecraft:gold_ingot>)` |
+| 传送(位置)                | [位置3f](/Vanilla/Utils/Position3f/)       | 将玩家传送到同一维度中提供的位置           | `Player.telport(位置)`                    |
+| 执行命令(下级)              | 字符串                                      | 以玩家身份执行命令                  | `player.executeCommand("杀")`            |

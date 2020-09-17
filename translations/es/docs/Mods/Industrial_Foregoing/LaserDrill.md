@@ -1,23 +1,23 @@
-# Laser Drill
+# Perforación láser
 
-### Importing
+### Importando
 
 ```zenscript
-import mods.industrialforegoing.LaserDrill;
+importar mods.industrialforegoing.LaserDrill;
 ```
 
-### Adding
+### Agregando
 
 ```zenscript
-LaserDrill.add(int itemLensMetaColor, IItemStack output, int ItemWeight);
+LaserDrill.add(int itemLensMetaColor, salida ItemStack, int ItemWeight);
 
 LaserDrill.add(1, <minecraft:stone>, 10);
 ```
 
-### Removing
+### Eliminando
 
 ```zenscript
-LaserDrill.remove(IItemStack output);
+LaserDrill.remove(Salida IItemStack);
 
 LaserDrill.remove(<minecraft:stone>);
 ```

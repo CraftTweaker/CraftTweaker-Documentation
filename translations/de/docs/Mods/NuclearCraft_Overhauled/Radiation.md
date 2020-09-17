@@ -1,113 +1,113 @@
-# Radiation
+# Strahlung
 
-## Radiation Scrubber
+## Strahlungsbrecher
 
-### Importing the Package
+### Paket wird importiert
 `mods.nuclearcraft.RadiationScrubber`
 
-### Adding Recipes
+### Rezepte hinzufügen
 ```zenscript
 mods.nuclearcraft.RadiationScrubber.addRecipe(IIngredient itemInput, ILiquidStack fluidInput, IIngredient itemOutput, ILiquidStack fluidOutput, int processTime, int processPower, double processEfficiency);
 ```
 
-### Removing Recipes
+### Rezepte entfernen
 ```zenscript
 mods.nuclearcraft.RadiationScrubber.removeRecipeWithInput(IIngredient itemInput, ILiquidStack fluidInput);
 mods.nuclearcraft.RadiationScrubber.removeRecipeWithOutput(IIngredient itemOutput, ILiquidStack fluidOutput);
-mods.nuclearcraft.RadiationScrubber.removeAllRecipes();
+mods.nuclearcraft.RadiationScrubber.removeAllRezept();
 ```
 
-## Block Mutation
+## Blockmutation
 
-### Importing the Package
+### Paket wird importiert
 `mods.nuclearcraft.RadiationBlockMutation`
 
-### Adding Recipes
+### Rezepte hinzufügen
 ```zenscript
-mods.nuclearcraft.RadiationBlockMutation.addRecipe(IIngredient blockInput, IIngredient blockOutput, double radiationThreshold);
+mods.nuclearcraft.RadiationBlockMutation.addRecipe(IIngredient-BlockInput, IIngredient-BlockOutput, doppelter Strahlungsgrenzwert);
 ```
 
-### Removing Recipes
+### Rezepte entfernen
 ```zenscript
 mods.nuclearcraft.RadiationBlockMutation.removeRecipeWithInput(IIngredient blockInput);
 mods.nuclearcraft.RadiationBlockMutation.removeRecipeWithOutput(IIngredient blockOutput);
-mods.nuclearcraft.RadiationBlockMutation.removeAllRecipes();
+mods.nuclearcraft.RadiationBlockMutation.removeAllRezept();
 ```
 
-## Block Purification
+## Reinigung blockieren
 
-### Importing the Package
-`mods.nuclearcraft.RadiationBlockPurification`
+### Paket wird importiert
+`mods.nuclearcraft.RadiationBlockPurifizierung`
 
-### Adding Recipes
+### Rezepte hinzufügen
 ```zenscript
-mods.nuclearcraft.RadiationBlockPurification.addRecipe(IIngredient blockInput, IIngredient blockOutput, double radiationThreshold);
+mods.nuclearcraft.RadiationBlockPurification.addRecipe(IIngredient-BlockInput, IIngredient-BlockOutput, doppelter StrahlungGrenzwert);
 ```
 
-### Removing Recipes
+### Rezepte entfernen
 ```zenscript
-mods.nuclearcraft.RadiationBlockPurification.removeRecipeWithInput(IIngredient blockInput);
-mods.nuclearcraft.RadiationBlockPurification.removeRecipeWithOutput(IIngredient blockOutput);
-mods.nuclearcraft.RadiationBlockPurification.removeAllRecipes();
+mods.nuclearcraft.RadiationBlockPurification.removeRecipeWithInput(IIngredient BlockInput);
+mods.nuclearcraft.RadiationBlockPurification.removeRecipeWithOutput(IIngredient BlockOutput);
+mods.nuclearcraft.RadiationBlockPurification.removeAllRezept();
 ```
 
-## Entity Radiation
+## Entitäts-Strahlung
 
-### Radiation
-`amount` is the amount of radiation added to the `IEntityLivingBase`. `useImmunity` controls whether the function occurs even the `IEntityLivingBase` is immune.
+### Strahlung
+`Betrag` ist die Menge an Strahlung, die der `IEntityLivingBase` hinzugefügt wurde. `useImmunity` kontrolliert, ob die Funktion auch die `IEntityLivingBase` Immunität auftritt.
 ```zenscript
-IEntityLivingBase::addRadiation(double amount, @Optional boolean useImmunity);
-IEntityLivingBase::setRadiation(double amount, @Optional boolean useImmunity);
+IEntityLivingBase::addRadiation(doppelter Betrag, @Optional boolsche Verwendung);
+IEntityLivingBase::setRadiation(doppelter Betrag, @Optional boolsche Verwendung);
 IEntityLivingBase::getRadiation();
 ```
 
-### Radaway Buffer
-`amount` is the amount of Radaway Buffer added to the `IEntityLivingBase`. `slowBuffer` decides if the Radaway Buffer added is a slow buffer.
+### Radawaypuffer
+`Betrag` ist der Betrag des Radaway Puffers zur `IEntityLivingBase` hinzugefügt. `slowBuffer` entscheidet, ob der Radaway Puffer ein langsamer Puffer ist.
 ```zenscript
-IEntityLivingBase::addRadawayBuffer(double amount, @Optional boolean slowBuffer);
-IEntityLivingBase::setRadawayBuffer(double amount, @Optional boolean slowBuffer);
+IEntityLivingBase::addRadawayBuffer(doppelter Betrag, @Optional Boolean slowBuffer);
+IEntityLivingBase::setRadawayBuffer(doppelter Betrag, @Optional boolean slowBuffer);
 IEntityLivingBase::getRadawayBuffer(boolean slowBuffer);
 ```
-**Note: If `slowBuffer` is `true`, `getRadawayBuffer()` will return the slow-acting radiation removal buffer instead of the normal one.**
+**Hinweis: Wenn `slowBuffer` `true`ist, wird `getRadawayBuffer()` den langsam wirkenden Strahlenentferungs-Puffer anstelle des normalen zurückgeben.**
 
-### Poison
-`amount` is the amount of Poison Buffer added to the `IEntityLivingBase`.
+### Gift
+`Betrag` ist die Menge an Giftpuffer, der der `IEntityLivingBase` hinzugefügt wurde.
 ```zenscript
 IEntityLivingBase::addPoisonBuffer(double amount);
 IEntityLivingBase::setPoisonBuffer(double amount);
 IEntityLivingBase::getPoisonBuffer();
 ```
 
-### Radiation Resistance
-`amount` is the amount of Radiation Resistance added to the `IEntityLivingBase`.
+### Strahlungswiderstand
+`Betrag` ist die Menge an Strahlungswiderstand, die der `IEntityLivingBase` hinzugefügt wurde.
 ```zenscript
-IEntityLivingBase::addRadiationResistance(double amount);
-IEntityLivingBase::setRadiationResistance(double amount);
+IEntityLivingBase::addRadiationResistance(doppelte Anzahl);
+IEntityLivingBase::setRadiationResistance(doppelte Anzahl);
 IEntityLivingBase::getRadiationResistance();
 ```
 
-### Radiation Level Getters
+### Strahlungspegel Getter
 
-#### Raw Radiation Level
-This method returns the radiation of the `IEntityLivingBase` in rads.
+#### Rohe Strahlungsstufe
+Diese Methode gibt die Strahlung der `IEntityLivingBase` in Runden zurück.
 ```zenscript
 IEntityLivingBase::getRawRadiationLevel();
 ```
 
-### Radiation Level
-This method returns the change in radiation level of the `IEntityLivingBase` in rads/tick.
+### Strahlungsstufe
+Diese Methode gibt die Änderung des Strahlenspiegels von `IEntityLivingBase` in Rads/Tick zurück.
 ```zenscript
 IEntityLivingBase::getRadiationLevel();
 ```
 
-## Radiation
-This method gets the radiation of an `IIngredient` in rads/tick.
+## Strahlung
+Diese Methode erhält die Strahlung eines `IIngredient` in Rads/Tick.
 ```zenscript
-mods.nuclearcraft.Radiation.getRadiationLevel(IIngredient itemInput);
+mods.nuclearcraft.Radiation.getRadiationLevel (IIngredient itemInput);
 ```
 
-## Radiation Immunity
-This method gives the ability to control the immunity of players depending on the stage. `defaultImmunity` is a boolean specifiying the players' immunity without the specified stages. `stageNames` is an array of the names of all stages that can toggle the immunity of players.
+## Straffreiheit
+Diese Methode gibt die Möglichkeit, die Immunität der Spieler je nach Bühne zu kontrollieren. `defaultImmunity` ist eine boolesche Spezifikation, die die Immunität der Spieler ohne die angegebenen Stufen angibt. `stageNames` ist ein Array mit den Namen aller Stufen, die die Immunität von Spielern umschalten können.
 ```zenscript
 mods.nuclearcraft.Radiation.setRadiationImmunityGameStages(boolean defaultImmunity, String[] stageNames);
 ```

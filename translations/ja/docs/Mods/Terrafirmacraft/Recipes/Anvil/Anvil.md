@@ -1,20 +1,20 @@
-# Anvil
+# 金床
 
-## Package
+## パッケージ
 ```zenscript
-import mods.terrafirmacraft.Anvil;
+import mods.terrafirmacraft.Anvil;金床;
 ```
 
 ## 追加
 
 ```zenscript
-Anvil.addRecipe(String registryName, IIngredient input, IItemStack output, int minTier, String skillType, String... forgeRules);
+Anvil.addRecipe(レジストリ名の文字列、IIngredient入力、IItemStack出力、int minTier、String skillType、String...forgeRules);
 ```
-- Input can't be stacked. Anvils only accept one item per slot.
-- input must be forgeable (please refer to [ItemRegistry](/Mods/Terrafirmacraft/ItemRegistry) for registering forging capability to an item).
-- Tiers are 0 = Stone, 1 = Copper, 2 = Bronze, 3 = Wrought Iron, 4 = Steel, 5 = Black Steel and 6 = Red/Blue Steel.
-- Skill type is what category of skill the forging should contribute to. Valid entries are `general`, `tools`, `weapons`, `armor`, or null. If the skill type is `tools`, `weapons`, or `armor` then the result item will have a skill bonus applied to it.
-- A recipe must have 1, 2 or 3 rules. Rules consist of a type (`HIT`, `DRAW`, `PUNCH`, `BEND`, `UPSET`, or `SHRINK`), followed by an order (`ANY`, `NOT_LAST`, `LAST`, `SECOND_LAST`, `THIRD_LAST`), separated by an underscore. As example, `HIT_ANY`, `DRAW_SECOND_LAST`, and `UPSET_NOT_LAST` are valid rule names.
+- 入力を積み重ねることはできません。 アンビルはスロットごとに1つのアイテムのみ受け付けます。
+- 入力は鍛造可能でなければなりません(鍛造機能をアイテムに登録するには、 [ItemRegistry](/Mods/Terrafirmacraft/ItemRegistry) を参照してください)。
+- 階層は0=石、1=銅、2=ブロンズ、3=鉄製。 4 = 鋼、5 = 黒鋼、6 = 赤/青鋼。
+- スキルタイプは、鍛造がどのようなスキルに貢献する必要があります。 有効なエントリは、 `general`、 `tools`、 `weapon`、 `arm`、または null です。 If the skill type is `tools`, `weapons`, or `armor` then the result item will have a skill bonus applied to it.
+- レシピには1、2、3つのルールが必要です。 Rules consist of a type (`HIT`, `DRAW`, `PUNCH`, `BEND`, `UPSET`, or `SHRINK`), followed by an order (`ANY`, `NOT_LAST`, `LAST`, `SECOND_LAST`, `THIRD_LAST`), separated by an underscore. 例えば、 `HIT_ANY`, `DRAW_SECOND_LAST`, および `UPSET_NOT_LAST` は有効なルール名です。
 
 ## 削除
 

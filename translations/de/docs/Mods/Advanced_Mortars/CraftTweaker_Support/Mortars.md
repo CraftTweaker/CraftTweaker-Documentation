@@ -2,7 +2,7 @@
 
 ## Dieses Paket importieren
 
-You can call the Mortar package using `mods.advancedmortars.Mortar`.
+Sie können das Mörser-Paket mit `mods.advancedmortars.Mortar` aufrufen.
 
 ## Rezept hinzufügen
 
@@ -17,13 +17,13 @@ You can call the Mortar package using `mods.advancedmortars.Mortar`.
     </th>
     
     <th>
-      Examples
+      Beispiele
     </th>
   </tr>
   
   <tr>
     <td>
-      Mortar Types
+      Mörsertypen
     </td>
     
     <td>
@@ -31,13 +31,13 @@ You can call the Mortar package using `mods.advancedmortars.Mortar`.
     </td>
     
     <td>
-      ["wooden", "stone", "iron", "diamond"]
+      ["Holz", "Stein", "Eisen", "Diamanten"]
     </td>
   </tr>
   
   <tr>
     <td>
-      Output
+      Ausgang
     </td>
     
     <td>
@@ -51,11 +51,11 @@ You can call the Mortar package using `mods.advancedmortars.Mortar`.
   
   <tr>
     <td>
-      Duration
+      Dauer
     </td>
     
     <td>
-      Integer
+      Ganzzahl
     </td>
     
     <td>

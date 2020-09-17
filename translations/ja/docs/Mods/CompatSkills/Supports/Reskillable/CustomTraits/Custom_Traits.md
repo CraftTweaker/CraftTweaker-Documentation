@@ -1,23 +1,23 @@
-# Custom Skills & Traits
+# カスタムスキル & 特性
 
-## Credits:
+## クレジット:
 
-Credits goes out to Kindlich for writing most of the Custom Content implementation!
+クレジットは、カスタムコンテンツの実装のほとんどを書くためにKindlichに出ています!
 
-## Custom Traits:
+## カスタム形質:
 
-### Implementation Syntax:
+### 実装構文:
 
-    Examples:
-    mods.compatskills.TraitCreator.createTrait(String traitName, int x, int y, String skillLocation, int cost, @Optional String... requirements)
-    mods.compatskills.TraitCreator.createTrait(String traitName, int x, int y, CrTSkill parentSkill, int cost, @Optional String... requirements)
-    mods.compatskills.TraitCreator.createNewTrait(String traitLocation, int x, int y, String skillLocation, int cost, @Optional String... requirements)
-    mods.compatskills.TraitCreator.createNewTrait(String traitLocation, int x, int y, CrTSkill parentSkill, int cost, @Optional String... requirements)
+    例:
+    mods.compatskills.TraitCreator.createTrait(String traitName, int x, int y, String skillLocation, int cost, @Optional String... 要件)
+    mods.compatskills.TraitCreator.createTrait(String traitName, int x, int y, CrTskill parentSkill, int cost, @Optional String... 要件)
+    mods.compatskills.TraitCreator.createNewTrait(String traitLocation, int x, int y, String skillLocation, int cost, @Optional String... 要件)
+    mods.compatskills.TraitCreator.createNewTrait(String traitLocation, int x, int y, CrTskill parentSkill, int cost, @Optional String... 要件)
     
     
-    "traitName" VS "traitLocation" is the same as in Skills.
+    "traitName" VS "traitLocation" はスキルと同じです。
     
-    "CrTSkill parentSkill" is the Skill Bracket Handler.
+    「Crtskill parentSkill」はスキルブラケットハンドラーです。
     
     
     So a functional Example would be:
@@ -29,37 +29,38 @@ Credits goes out to Kindlich for writing most of the Custom Content implementati
 
 ### ZenProperties
 
-| Reference | Property Name | Implementation |
-|:--------- |:------------- | -------------- |
-| CrTTrait  | name          | See Below      |
-| CrTTrait  | description   | See Below      |
+| 参照       | プロパティ名 | 実装        |
+|:-------- |:------ | --------- |
+| CrTTrait | 名前     | 以下をご覧ください |
+| CrTTrait | 説明     | 以下をご覧ください |
 
     // Creates the trait as a variable
-    var trait = mods.compatskills.TraitCreator.createTrait("test", 2, 3, "compatskills:banana", 1, "compatskills:banana|5");
+    var trait = mods.compatskills.TraitCreator. reateTrait("test", 2, 3, "compatskills:banana", 1, "compatskills:banana|5"); 
+     // Hard-Sets the name to "Test"
     
     // Hard-Sets the name to "Test"
-    // Be aware this makes localization through .lang files not possible!
+    // 注意してください。
     trait.name = "Test"
     
-    // Hard-Sets the description to "Hello, I'm a Description"
+    // Hard-sets the description to "Hello, Im a Description"
     // Be aware this makes localization through .lang files not possible!
     trait.description = "Hello, I'm a Description"
     
 
 ### ZenSetters/ZenGetters
 
-| Method Type | Method Name    | Values                                                |
-|:----------- |:-------------- | ----------------------------------------------------- |
-| Setter      | setEnabled     | Takes a Boolean                                       |
-| Getter      | getEnabled     | Returns a Boolean                                     |
-| Getter      | getName        | Returns the localized String Name of the Trait        |
-| Getter      | getDescription | Returns the localized String Description of the Trait |
-| Getter      | retrieveIcon   | Returns an Resource Location                          |
-| Setter      | changeIcon     | Takes an Resource Location String                     |
+| メソッドタイプ | メソッド名          | 値                          |
+|:------- |:-------------- | -------------------------- |
+| Setter  | setEnabled     | ブール値を取る                    |
+| Getter  | getEnabled     | ブール値を返す                    |
+| Getter  | getName        | トレイトのローカライズされた文字列名を返します。   |
+| Getter  | getDescription | トレイトのローカライズされた文字列の説明を返します。 |
+| Getter  | retrieveIcon   | リソースの場所を返します               |
+| Setter  | 変更アイコン         | リソースの位置文字列を取得します。          |
 
-### Localization & Resource Location References:
+### 地域化 & リソース場所の参照:
 
-    Trait Icons:
+    トレイトアイコン:
     
     Either:
     
@@ -79,4 +80,4 @@ Credits goes out to Kindlich for writing most of the Custom Content implementati
     - customResourceLocation:lang/localeCode.lang
     
 
-Go to this link to see all possible Locale-Codes! [Gamepedia's Minecraft Language Page](https://minecraft.gamepedia.com/Language "Gamepedia's Minecraft Language Page")
+このリンクに移動して、可能なすべてのLocale-Codeを表示します！ [GamepediaのMinecraft言語ページ](https://minecraft.gamepedia.com/Language "Gamepedia's Minecraft Language Page")

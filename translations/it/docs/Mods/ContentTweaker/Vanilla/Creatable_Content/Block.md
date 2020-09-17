@@ -1,0 +1,65 @@
+# Blocca
+
+## Campi
+
+I campi obbligatori non avranno mai un valore predefinito, vuoto predefinito significa nullo.
+
+Tutti i campi possono essere impostati tramite set`Name` e.g. `block.setUnlocalizedName("name");` e ottenuti tramite get`Name`;
+
+| Nome                | Tipo                                                                                                      | Richiesto | Valore Predefinito                                                                                           | Note                                                                                                                   |
+| ------------------- | --------------------------------------------------------------------------------------------------------- | --------- | ------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------- |
+| axisAlignedBB       | [MCAxisAlignedBB](/Mods/ContentTweaker/Vanilla/Types/Block/MCAxisAlignedBB/)                              | No        | Blocco Completo                                                                                              | Permette di impostare la casella di delimitazione del blocco                                                           |
+| beaconBase          | boolean                                                                                                   | No        | falso                                                                                                        | Questo blocco può essere usato come parte della base di un beacon?                                                     |
+| blockColorSupplier  | [IBlockColorSupplier](/Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IBlockColorSupplier/) | No        | -1 come colore                                                                                               | Colore del blocco                                                                                                      |
+| blockHardness       | galleggiante                                                                                              | No        | 5.0                                                                                                          | Quanto tempo ci vuole per rompere                                                                                      |
+| blockLayer          | Stringa                                                                                                   | No        | "SOLIDO"                                                                                                     | "SOLIDO", "CUTOUT_MIPPED", "CUTOUT", "TRANSLUCENT"                                                                     |
+| blockMaterial       | [IMaterialDefinizione](/Mods/ContentTweaker/Vanilla/Types/Block/IMaterialDefinition/)                     | No        | Ferro                                                                                                        | Il materiale di base del Blocco                                                                                        |
+| blockResistance     | galleggiante                                                                                              | No        | 5.0                                                                                                          | Resistenza alle esplosioni                                                                                             |
+| blockSoundType      | [SoundType](/Mods/ContentTweaker/Vanilla/Types/Sound/ISoundTypeDefinition/)                               | No        | Metallo                                                                                                      | Il tipo di suono del Blocco (determina cose come il suono di rottura)                                                  |
+| creativeTab         | [CreativeTab](/Mods/ContentTweaker/Vanilla/Creatable_Content/Creative_Tab/)                               | No        | Varie                                                                                                        | La scheda Creativa in cui apparirà l'elemento                                                                          |
+| dropHandler         | [IBlockDropHandler](/Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IBlockDropHandler/)     | No        |                                                                                                              | La scheda Creativa in cui apparirà l'elemento                                                                          |
+| entitySpawnable     | boolean                                                                                                   | No        | vero                                                                                                         | Può essere usato per impedire che qualsiasi entità riproduca su questo blocco                                          |
+| enumBlockRenderType | Stringa                                                                                                   | No        | "MODELLo"                                                                                                    | "INVISIBLE", "LIQUIDO", "ENTITYBLOCK_ANIMATED", "MODEL" → Imposta come viene reso il blocco                            |
+| fullBlock           | boolean                                                                                                   | No        | Vero                                                                                                         | Utilizzato per il rendering e il calcolo della luce                                                                    |
+| gravità             | boolean                                                                                                   | No        | falso                                                                                                        | Questo blocco è influenzato dalla gravità                                                                              |
+| itemColorSupplier   | [IItemColorSupplier](/Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemColorSupplier/)   | No        | -1 come colore                                                                                               | Colore del blocco quando è in forma di oggetto                                                                         |
+| lightOpacity        | int                                                                                                       | No        | 255 se fullBlock è vero o 0                                                                                  | La Luce passa attraverso                                                                                               |
+| lightValue          | int                                                                                                       | No        | 0                                                                                                            | Il livello di luce del blocco, varia da 0-1. Questo valore viene moltiplicato per 15 per determinare il valore finale. |
+| onBlockBreak        | [IBlockAction](/Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IBlockAction/)               | No        |                                                                                                              | Chiamato quando Blocco è rotto.                                                                                        |
+| onBlockPlace        | [IBlockAction](/Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IBlockAction/)               | No        |                                                                                                              | Chiamato quando il blocco è posizionato.                                                                               |
+| onRandomTick        | [IBlockAction](/Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IBlockAction/)               | No        |                                                                                                              | Chiamato ad un evento casuale di tick.                                                                                 |
+| onUpdateTick        | [IBlockAction](/Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IBlockAction/)               | No        |                                                                                                              | Chiamato quando Blocco riceve un aggiornamento di blocco.                                                              |
+| passable            | boolean                                                                                                   | No        | A seconda della [IMaterialDefinition](/Mods/ContentTweaker/Vanilla/Types/Block/IMaterialDefinition/) fornita | I giocatori possono passare attraverso questo blocco?                                                                  |
+| sostituibile        | boolean                                                                                                   | No        | A seconda della [IMaterialDefinition](/Mods/ContentTweaker/Vanilla/Types/Block/IMaterialDefinition/) fornita | Questo blocco può essere sostituito da un altro blocco?                                                                |
+| scivolosità         | galleggiante                                                                                              | No        | 0,6f                                                                                                         | I blocchi di ghiaccio sono 0.98f                                                                                       |
+| textureLocation     | [CTResourceLocation](/Mods/ContentTweaker/Vanilla/Types/Resources/CTResourceLocation/)                    | No        | null                                                                                                         | La posizione delle risorse del blocco, usata per le texture, ecc.                                                      |
+| toolClass           | Stringa                                                                                                   | No        | piccone                                                                                                      | Strumento richiesto per rompere il blocco                                                                              |
+| toolLevel           | int                                                                                                       | No        | 2                                                                                                            | Livello strumento richiesto per rompere il blocco                                                                      |
+| traslucido          | boolean                                                                                                   | No        | falso                                                                                                        | È vedere attraverso                                                                                                    |
+| unlocalizedName     | Stringa                                                                                                   | Sì        |                                                                                                              | Nome, dovrebbe essere tutto minuscolo                                                                                  |
+| witherProof         | boolean                                                                                                   | No        | falso                                                                                                        | Può Wither's distruggere questo blocco                                                                                 |
+
+## Esempi
+
+```zenscript
+#loader contenttweaker
+
+import mods.contenttweaker.VanillaFactory;
+import mods.contenttweaker.Block;
+
+var antiIceBlock = VanillaFactory.createBlock("anti_ice", <blockmaterial:ice>);
+antiIceBlock.setLightOpacity(3);
+antiIceBlock.setLightValue(0);
+antiIceBlock. etBlockHardness(5.0);
+antiIceBlock.setBlockResistance(5.0);
+antiIceBlock.setToolClass("pickaxe");
+antiIceBlock.setToolLevel(0);
+antiIceBlock.setBlockSoundType(<soundtype:snow>);
+antiIceBlock.setSlipperiness(0.3);
+antiIceBlock.register();
+```
+
+## Localizzazione del blocco
+
+È necessario aggiungere `tile.contenttweaker.blockName = Nome localizzato` ai file di lingua rispondente.  
+In alternativa, è possibile utilizzare la funzione di localizzazione [di CraftTweaker](/Vanilla/Game/IGame/), anche se è consigliabile utilizzare i file di lingua!

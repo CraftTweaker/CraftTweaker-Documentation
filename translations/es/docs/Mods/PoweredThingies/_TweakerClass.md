@@ -1,27 +1,28 @@
-# Powered Thingies :: Tweaker Class
+# Cosas Energizadas :: Clase Tweaker
 
-This is the entry point used to get instances of the individual `Tweaker` classes for each machine.
+Este es el punto de entrada utilizado para obtener instancias de las clases individuales de `Tweaker` para cada máquina.
 
-### Importing
+### Importando
 
 ```zenscript
-import mods.poweredthingies.Tweaker;
+importar mods.poweredthingies.Tweaker;
 ```
 
-### Getting Machine Specific Tweakers
+### Obtener Tweakers Específicos de Máquinas
 
 ```zenscript
 var compoundMaker = Tweaker.compoundTweaker();
 var fluidCompound = Tweaker.fluidCompoundTweaker();
 var fluidBurnerFuel = Tweaker.fluidBurnerFuelTweaker();
 var fluidBurnerCoolant = Tweaker.fluidBurnerCoolantTweaker();
-var itemCompoundProducer = Tweaker.itemCompoundProducerTweaker();
+var itemCompounder = Tweaker. temCompoundProducerTweaker();
 var incinerator = Tweaker.incineratorTweaker();
 var itemLiquefier = Tweaker.itemLiquefierTweaker();
 var poweredKiln = Tweaker.poweredKilnTweaker();
-var powderMaker = Tweaker.powderMakerTweaker();
+var powerderMaker = Tweaker.powerderMakerTweaker(); 
+ var powerderMaker();
 ```
 
-### Reasons why this class even exists
+### Razones por las que existe esta clase
 
-Mainly because I love using base classes and Kotlin and both those things don't import well in CT. Or I'm too retarded to make it work. So... you are stuck with using this instead of having direct access to individual classes for each machine.
+Principalmente porque me encanta usar clases base y Kotlin y ambas cosas no importan bien en CT. O estoy demasiado retrasado para que funcione. Así que... usted está atascado con esto en lugar de tener acceso directo a clases individuales para cada máquina.

@@ -1,26 +1,26 @@
-# FarmlandTrampleEvent
+# format@@0 FarmlandTrampleEvent
 
-The FarmlandTrample Event is fired whenever a farmland is about to be trampled. Canceling the event will prevent the block from being trampled.
+L'événement FarmlandTrample est tiré chaque fois qu'une terre agricole est sur le point d'être piétinée. L'annulation de l'événement empêchera le bloc d'être piétiné.
 
 ## Notes
 
-`event.fallDistance` contains the distance fallen before hitting the farmland.
+`event.fallDistance` contient la distance tombée avant de toucher les terres agricoles.
 
-## Event Class
-You will need to cast the event in the function header as this class:  
-`crafttweaker.event.FarmlandTrampleEvent`  
-You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
+## Classe de l'événement
+Vous devrez lancer l'événement dans l'en-tête de la fonction comme cette classe:  
+`crafttweaker.event. armlandTrampleEvent`  
+Vous pouvez, bien sûr, également [importer](/AdvancedFunctions/Import/) la classe avant et utiliser ce nom alors.
 
-## Event interface extensions
-FarmlandTrample Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+## Extensions d'interface de l'événement
+Les événements FarmlandTrample implémentent les interfaces suivantes et sont capables d'appeler toutes leurs méthodes/getters/setters aussi:
 
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
-- [IBlockEvent](/Vanilla/Events/Events/IBlockEvent/)
+- [Évènement IBlock](/Vanilla/Events/Events/IBlockEvent/)
 
 ## ZenGetters
-The following information can be retrieved from the event:
+Les informations suivantes peuvent être récupérées à partir de l'événement :
 
-| ZenGetter      | ZenSetter | Type                                  |
-| -------------- | --------- | ------------------------------------- |
-| `entity`       |           | [IEntity](/Vanilla/Entities/IEntity/) |
-| `fallDistance` |           | float                                 |
+| ZenGetter             | ZenSetter | Type de texte                         |
+| --------------------- | --------- | ------------------------------------- |
+| `Entité`              |           | [IEntity](/Vanilla/Entities/IEntity/) |
+| `Distance de secours` |           | flottant                              |

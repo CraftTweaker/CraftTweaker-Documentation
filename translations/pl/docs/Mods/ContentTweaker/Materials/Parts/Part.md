@@ -1,53 +1,53 @@
-# Part
+# Część
 
-A Part is the form an item is in, for example a gear or an ore.
+Część jest formą przedmiotu, na przykład narzędzia lub rudy.
 
-## Importing the package
+## Importowanie pakietu
 
-It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
-`import mods.contenttweaker.Part;`
+Może być wymagane zaimportowanie pakietu, jeśli napotkasz jakieś problemy, więc lepiej być bezpiecznym niż przepraszamy i dodać import.  
+`zaimportuj mods.contenttweaker.Part;`
 
-## Retrieving such an object
+## Pobieranie takiego obiektu
 
-You can either retrieve an existing Part using the [MaterialSystem](/Mods/ContentTweaker/Materials/MaterialSystem/) or create an entirely new one using the [Part Builder](/Mods/ContentTweaker/Materials/Parts/Part_Builder/)
+Możesz pobrać istniejącą część za pomocą [MaterialSystem](/Mods/ContentTweaker/Materials/MaterialSystem/) lub utworzyć całkowicie nową za pomocą [Part Builder](/Mods/ContentTweaker/Materials/Parts/Part_Builder/)
 
 <details>
-    <summary>Following types are pre-registered (Headlines are the <a href="../PartType">Part types</a>):</summary>
-    <h4>Items:</h4>
+    <summary>Następujące typy są wstępnie zarejestrowane (nagłówki to <a href="../PartType">typy części</a>):</summary>
+    <h4>Elementy:</h4>
         <ul>
-            <li>Beam<img src="../Assets/beam.png" alt="icon"></li>
-            <li>Bolt<img src="../Assets/bolt.png" alt="icon"></li>
-            <li>Casing<img src="../Assets/casing.png" alt="icon"></li>
-            <li>Clump<img src="../Assets/clump.png" alt="icon"></li>
-            <li>Crystal Crystal<img src="../Assets/crystal.png" alt="icon"></li>
-            <li>Crushed Ore (crushed_ore)<img src="../Assets/crushed_ore.png" alt="icon"></li>
-            <li>Dense Plate (dense_plate)<img src="../Assets/dense_plate.png" alt="icon"></li>
-            <li>Dirty Dust (dirty_dust)<img src="../Assets/dirty_dust.png" alt="icon"></li>
-            <li>Dust<img src="../Assets/dust.png" alt="icon"></li>
-            <li>Gear<img src="../Assets/gear.png" alt="icon"></li>
-            <li>Ingot<img src="../Assets/ingot.png" alt="icon"></li>
-            <li>Nugget<img src="../Assets/nugget.png" alt="icon"></li>
-            <li>Plate<img src="../Assets/plate.png" alt="icon"></li>
-            <li>Rod<img src="../Assets/rod.png" alt="icon"></li>
-            <li>Shard<img src="../Assets/shard.png" alt="icon"></li>
+            <li>Belka<img src="../Assets/beam.png" alt="ikona"></li>
+            <li>Bolt<img src="../Assets/bolt.png" alt="ikona"></li>
+            <li>Okładziny<img src="../Assets/casing.png" alt="ikona"></li>
+            <li>Kawałek<img src="../Assets/clump.png" alt="ikona"></li>
+            <li>Kryształowy Kryształ<img src="../Assets/crystal.png" alt="ikona"></li>
+            <li>Kruszona ruda (rozgniatana_rudy)<img src="../Assets/crushed_ore.png" alt="ikona"></li>
+            <li>Gęsta płyta (dense_blate)<img src="../Assets/dense_plate.png" alt="ikona"></li>
+            <li>Brudny pył (brudny_pył)<img src="../Assets/dirty_dust.png" alt="ikona"></li>
+            <li>Pył<img src="../Assets/dust.png" alt="ikona"></li>
+            <li>Narzędzia połowowe<img src="../Assets/gear.png" alt="ikona"></li>
+            <li>Ingot<img src="../Assets/ingot.png" alt="ikona"></li>
+            <li>Nugget<img src="../Assets/nugget.png" alt="ikona"></li>
+            <li>Płyta<img src="../Assets/plate.png" alt="ikona"></li>
+            <li>Pręt<img src="../Assets/rod.png" alt="ikona"></li>
+            <li>Odłamek<img src="../Assets/shard.png" alt="ikona"></li>
         </ul>
-    <h4>Blocks:</h4>
+    <h4>Bloki:</h4>
         <ul>
-            <li>Block<img src="../Assets/block.png" alt="icon"></li>
+            <li>Blok<img src="../Assets/block.png" alt="ikona"></li>
         </ul>
     <h4>Ores:</h4>
         <ul>
-            <li>Ore</li>
-            <li>Dense Ore (dense_ore)</li>
-            <li>Poor Ore(poor_ore)</li>
+            <li>Ruda</li>
+            <li>Gęsta ruda (dense_ore)</li>
+            <li>Słaba Ore(biedna_ore)</li>
         </ul>
-    <h4>Fluids:</h4>
+    <h4>Płyty:</h4>
         <ul>
             <li>Molten</li>
         </ul><br />
     <h4>Armor:</h4>
         <ul>
-            <li>Armor <img src="../Assets/armor_head.png" alt="head icon"><img src="../Assets/armor_chest.png" alt="chest icon"><img src="../Assets/armor_legs.png" alt="legs icon"><img src="../Assets/armor_feet.png" alt="feet icon"></li>
+            <li>Zbroja <img src="../Assets/armor_head.png" alt="ikona głowy"><img src="../Assets/armor_chest.png" alt="ikona skrzyni"><img src="../Assets/armor_legs.png" alt="ikona nóg"><img src="../Assets/armor_feet.png" alt="ikona stóp"></li>
         </ul>
     <h4>Minecart</h4>
         <ul>
@@ -55,28 +55,28 @@ You can either retrieve an existing Part using the [MaterialSystem](/Mods/Conten
         </ul>
 </details>
 
-## Fields
+## Pola dodatkowe
 
-You can retrieve the following information from a Part:
+Możesz pobrać następujące informacje z części:
 
-| ZenMethod                 | Return Type                                                                   |
+| Metoda ZenMethod          | Typ zwrotu                                                                    |
 | ------------------------- | ----------------------------------------------------------------------------- |
 | hasOverlay()              | boolean                                                                       |
-| getName()                 | string                                                                        |
-| getUnlocalizedName()      | string                                                                        |
-| getShortUnlocalizedName() | string                                                                        |
-| getPartType()             | [PartType](/Mods/ContentTweaker/Materials/Parts/PartType/)                    |
-| getPartTypeName()         | string                                                                        |
-| getOreDictPrefix()        | string                                                                        |
+| getName()                 | ciąg znaków                                                                   |
+| getUnlocalizedName()      | ciąg znaków                                                                   |
+| getShortUnlocalizedName() | ciąg znaków                                                                   |
+| getPartType()             | [Typ części](/Mods/ContentTweaker/Materials/Parts/PartType/)                  |
+| getPartTypeName()         | ciąg znaków                                                                   |
+| getOreDictPrefix()        | ciąg znaków                                                                   |
 | getData()                 | List<[IPartDataPiece](/Mods/ContentTweaker/Materials/Parts/PartDataPiece/)\> |
 
-## Register to Material(s)
+## Zarejestruj się do materiału(ów)
 
-You can use this to register one or several Materials to this part
+Możesz użyć tego aby zarejestrować jeden lub kilka materiałów w tej części
 
 ```zenscript
-part.registerToMaterial(Material material);
-part.registerToMaterials(Material[] materials);
+part.registerToMaterial(Materiał Material);
+część registerToMaterials(Materiał Material[]);
 ```
 
-The function will either return a single [MaterialPart](/Mods/ContentTweaker/Materials/Materials/MaterialPart/) object or a List of them, depending on whether you registered one or multiple materials at once.
+Funkcja zwróci pojedynczy obiekt [MaterialPart](/Mods/ContentTweaker/Materials/Materials/MaterialPart/) lub ich listę, w zależności od tego, czy zarejestrowałeś jeden lub wiele materiałów jednocześnie.

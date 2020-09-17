@@ -1,29 +1,29 @@
-# Fluid_Transposer
+# Прозрачный флюс
 
-## Package
+## Пакет
 
-`mods.thermalexpansion.Transposer`
+`mods.thermalexpansion.Прозрачный`
 
-## Addition
+## Сложение
 
 ```zenscript
-//mods.thermalexpansion.Transposer.addExtractRecipe(ILiquidStack output, IItemStack input, int energy);
-//mods.thermalexpansion.Transposer.addExtractRecipe(ILiquidStack output, IItemStack input, int energy, WeightedItemStack itemOut);
+//mods.thermalexpansion.Transposer.addExtractRecipe(ILiquidStack, IItemStack input, int energy);
+//mods.thermalexpansion.Transposer. ddExtractRecipe(ILiquidStack), ввод IItemStack, внутренняя энергия, весомый элемент ItemStack);
 mods.thermalexpansion.Transposer.addExtractRecipe(<liquid:water> * 250, <minecraft:leaves:0>, 360);
-mods.thermalexpansion.Transposer.addExtractRecipe(<liquid:water> * 250, <minecraft:leaves:1>, 360, <minecraft:leaves:0> % 30);
+модов. hermalexpansion.Transposer.addExtractRecipe(<liquid:water> * 250, <minecraft:leaves:1>, 360, <minecraft:leaves:0> % 30);
 
 
 
-//mods.thermalexpansion.Transposer.addFillRecipe(IItemStack output, IItemStack input, ILiquidStack fluid, int energy);
+//mods.thermalexpansion.Transposer. ddFillRecipe(выход IItemStack, ввод IItemStack, жидкость ILiquidStack, внутренняя энергия);
 mods.thermalexpansion.Transposer.addFillRecipe(<minecraft:leaves:1>, <minecraft:leaves:0>, <liquid:water> * 200, 20);
 
 
 ```
 
-## Removal
+## Удаление
 
 ```zenscript
-//mods.thermalexpansion.Transposer.removeExtractRecipe(IItemStack input);
+//mods.thermalexpansion.Transposer.removeExtractRecipe(IItemStack);
 mods.thermalexpansion.Transposer.removeExtractRecipe(<minecraft:gold_ore>);
 
 

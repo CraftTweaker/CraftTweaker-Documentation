@@ -1,30 +1,30 @@
-# Basin Throwing
+# Lanzamiento de cuencas
 
-## Addition
+## Adicional
 
 ```zenscript
-import mods.cuisine.BasinThrowing;
+importar mods.cuisine.BasinThrowing;
 
-BasinThrowing.add(IIngredient input, ILiquidStack inputFluid, IItemStack output);
+BasinThrowing.add(entrada IIngredient, ILiquidStack inputFluid, salida IItemStack);
 
 BasinThrowing.add(<ore:cobblestone> * 2, <liquid:lava> * 1000, <item:minecraft:diamond>);
 ```
 
-## Removal
+## Eliminar
 
 ```zenscript
-import mods.cuisine.BasinThrowing;
+importar mods.cuisine.BasinThrowing;
 
-// Remove by inputs.
-BasinThrowing.remove(IItemStack input, ILiquidStack inputFluid);
+// Quitar por las entradas.
+BasinThrowing.remove(IItemStack entrada, ILiquidStack inputFluid);
 
 BasinThrowing.remove(<item:minecraft:dirt>, <liquid:water> * 1000);
 
-// Remove by identifier.
+// Elimina por identificador.
 BasinThrowing.remove(String id);
 
 BasinThrowing.remove("recipe_name");
 
-// Remove everything!
+// ¡Elimina todo!
 BasinThrowing.removeAll();
 ```

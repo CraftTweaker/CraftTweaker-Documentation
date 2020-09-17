@@ -1,29 +1,29 @@
-# Soul Binder
+# Seelenbinder
 
-## Package
+## Paket
 
-`import mods.enderio.SoulBinder;`
+`importiere mods.enderio.SoulBinder;`
 
 ## Methode
 
-- **[IItemStack](/Vanilla/Items/IItemStack/) output** The result of the recipe.
-- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input** The main (non-soul vial) ingredient.
-- **String[] entities** Allowed entities that must be present in a soul vial for this recipe to work.
-- **int xp** The Experience cost for this recipe
-- **int energyCost** How much FE the recipe uses. Defaults to 5000.
+- **[IItemStack](/Vanilla/Items/IItemStack/) Ausgabe** Das Ergebnis des Rezeptes.
+- **[Ingredient](/Vanilla/Variable_Types/IIngredient/) Input** Die Hauptzutat (nicht-Seele vial) Wirkung.
+- **String[] Entitäten** Erlaubte Entitäten, die in einer Seele lebendig sein müssen, damit dieses Rezept funktioniert.
+- **int xp** Die Erfahrungskosten für dieses Rezept
+- **int Energiekosten** Wie viel FE das Rezept verwendet. Standard ist 5000.
 
 ## Addition
 
 ```zenscript
-mods.enderio.SoulBinder.addRecipe(IItemStack output, IIngredient input, String[] entities, int xp, int energyCost);
+mods.enderio.SoulBinder.addRecipe(IItemStack Output, IIngredient Input, String[] Entities, int xp, int energyCost);
 
 mods.enderio.SoulBinder.addRecipe(<minecraft:nether_star>, <minecraft:bone>, ["minecraft:skeleton"], 50000);
 ```
 
-## Removal
+## Entfernen
 
 ```zenscript
-mods.enderio.SoulBinder.removeRecipe(IItemStack output);
+mods.enderio.SoulBinder.removeRecipe(IItemStack Ausgabe);
 
 mods.enderio.SoulBinder.removeRecipe(<enderio:item_material:19>);
 ```

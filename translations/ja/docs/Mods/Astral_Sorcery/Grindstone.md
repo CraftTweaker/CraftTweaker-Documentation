@@ -1,12 +1,12 @@
 # Grindstone
 
-You can use CrT to add or remove recipes form the AS grindstone.
+CrTを使用して、AS研削石からレシピを追加または削除できます。
 
-## Calling
+## 発信中
 
-You can call the InfusionRecipe package using `mods.astralsorcery.Grindstone`.
+`mods.astalsorcery.Grindstone` を使って InfusionRecipe パッケージを呼び出すことができます。
 
-## Removing
+## 削除中
 
 This will remove the first grinding recipe it finds that creates the provided [IItemStack](/Vanilla/Items/IItemStack/) `output`.  
 If there are multiple recipes that return the provided output, you need to call this method multiple times!
@@ -16,7 +16,7 @@ If there are multiple recipes that return the provided output, you need to call 
 mods.astralsorcery.Grindstone.removeRecipe(<minecraft:redstone>);
 ```
 
-## Addition
+## 加算
 
 ```zenscript
 //mods.astralsorcery.Grindstone.addRecipe(IItemStack input, IItemStack output);

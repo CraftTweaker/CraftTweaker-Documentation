@@ -1,16 +1,16 @@
-# Electrolyzer
+# エレクトロライザー
 
-## Importing the Package
-`mods.nuclearcraft.electrolyzer`
+## パッケージのインポート
+`mods.nuclearcraft.電解液は`
 
-## Adding Recipes
+## レシピを追加中
 ```zenscript
-mods.nuclearcraft.electrolyser.addRecipe([fluidInput, fluidOutput1, fluidOutput2, fluidOutput3, fluidOutput4, @Optional double timeMultiplier, @Optional double powerMultiplier, @Optional double processRadiation]);
+mods.nuclearcraft.電解液.addRecipe([fluidInput, fluidOutput1, fluidOutput2, fluidOutput3, fluidOutput4, @Optional double powerMultiplier, @Optional processRadiation]);
 ```
 
-## Removing Recipes
+## レシピを削除
 ```zenscript
-mods.nuclearcraft.electrolyser.removeRecipeWithInput([fluidInput]);
-mods.nuclearcraft.electrolyser.removeRecipeWithOutput([fluidOutput1, fluidOutput2, fluidOutput3, fluidOutput4]);
-mods.nuclearcraft.electrolyser.removeAllRecipes();
+mods.numeric.removeRecipeWithInput([fluidInput]);
+mods.nuclearcraft.電解液.removeRecipeWithOutput([fluidOutput1, fluidOutput2, fluidOutput3, fluidOutput4]);
+mods.nuclecraft.電解質.removeAllRecipes();
 ```

@@ -1,26 +1,26 @@
 
-# BlockPlaceEvent
+# format@@0 BlockPlaceEvent
 
-The BlockBreak Event is fired whenever a block is being placed. You can cancel the event to prevent the block from being placed.
+L'événement BlockBreak est lancé chaque fois qu'un bloc est placé. Vous pouvez annuler l'événement pour empêcher le bloc d'être placé.
 
-## Event Class
-You will need to cast the event in the function header as this class:  
-`crafttweaker.event.BlockPlaceEvent`  
-You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
+## Classe de l'événement
+Vous devrez lancer l'événement dans l'en-tête de la fonction comme cette classe:  
+`crafttweaker.event. lockPlaceEvent`  
+Vous pouvez, bien sûr, également [importer](/AdvancedFunctions/Import/) la classe avant et utiliser ce nom alors.
 
-## Event interface extensions
-BlockPlace Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+## Extensions d'interface de l'événement
+Les événements BlockPlace implémentent les interfaces suivantes et peuvent également appeler toutes leurs méthodes/getters/setters :
 
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
-- [IBlockEvent](/Vanilla/Events/Events/IBlockEvent/)
+- [Évènement IBlock](/Vanilla/Events/Events/IBlockEvent/)
 
 
 ## ZenGetters
-The following information can be retrieved from the event:
+Les informations suivantes peuvent être récupérées à partir de l'événement :
 
-| ZenGetter       | ZenSetter | Type                                        |
-| --------------- | --------- | ------------------------------------------- |
-| `player`        |           | [IPlayer](/Vanilla/Players/IPlayer/)        |
-| `current`       |           | [IBlockState](/Vanilla/Blocks/IBlockState/) |
-| `placedAgainst` |           | [IBlockState](/Vanilla/Blocks/IBlockState/) |
-| `hand`          |           | String                                      |
+| ZenGetter     | ZenSetter | Type de texte                                    |
+| ------------- | --------- | ------------------------------------------------ |
+| `Joueur`      |           | [IPlayer](/Vanilla/Players/IPlayer/)             |
+| `en cours`    |           | [État de l'IBlock](/Vanilla/Blocks/IBlockState/) |
+| `placéContre` |           | [État de l'IBlock](/Vanilla/Blocks/IBlockState/) |
+| `main`        |           | Chaîne de caractères                             |

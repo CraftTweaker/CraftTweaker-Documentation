@@ -1,8 +1,8 @@
 # Chemical Infuser
 
-As of Mekanism 9.7.0 it is now possible to view all recipe strings of the Chemical Infuser through the command `/ct mekrecipes chemicalInfuser`
+Mekanism 9.7.0 以降、 `/ct mekrecipes chemyalInfuser` コマンドでChemical Infuserのすべてのレシピ文字列を表示できるようになりました。
 
-## Addition
+## 加算
 
 ```zenscript
 mods.mekanism.chemical.infuser.addRecipe(IGasStack inputGas1, IGasStack inputGas2, IGasStack outputGas);
@@ -10,7 +10,7 @@ mods.mekanism.chemical.infuser.addRecipe(IGasStack inputGas1, IGasStack inputGas
 mods.mekanism.chemical.infuser.addRecipe(<gas:water>, <gas:deuterium>, <gas:tritium>);
 ```
 
-## Removal
+## 削除
 
 ```zenscript
 mods.mekanism.chemical.infuser.removeRecipe(IIngredient outputGas, @Optional IIngredient inputGas1, @Optional IIngredient inputGas2);
@@ -19,11 +19,11 @@ mods.mekanism.chemical.infuser.removeRecipe(<gas:hydrogenchloride>, <gas:hydroge
 mods.mekanism.chemical.infuser.removeRecipe(<gas:fusionfuel>);
 ```
 
-Specifying an input parameter will only remove the specific recipe that uses said input. Omitting the input parameter will remove all recipes that produce the specified output.
+input パラメータを指定すると、その入力を使用する特定のレシピのみが削除されます。 入力パラメータを省略すると、指定した出力を生成するすべてのレシピが削除されます。
 
-## Removing all recipes
+## すべてのレシピを削除する
 
-As of Mekanism 9.7.0 it is now possible to remove all Chemical Infuser recipes. (This excludes any recipes added via CraftTweaker)
+Mekanism 9.7.0 以降、Chemical Infuserのすべてのレシピを削除できるようになりました。 （CraftTweaker経由で追加されたレシピは除外されます）
 
 ```zenscript
 mods.mekanism.chemical.infuser.removeAllRecipes();

@@ -1,31 +1,31 @@
-# ICraftingInventory
+# ICrafting库存
 
-The ICraftingInventory contains all kinds of information on the inventory a crafting process is performed in.
+ICraftingInventory includes all various information on the listing a prodrafting process.
 
-## Importing the class
+## 导入相关包
 
-It might be required to [import](/AdvancedFunctions/Import/) the class to avoid errors.  
-`import crafttweaker.recipes.ICraftingInventory`
+可能需要 [导入](/AdvancedFunctions/Import/) 类以避免错误。  
+`导入craftminstruer.配方。ICraftingInventory`
 
 ## ZenGetters
 
-| ZenGetter    | Return type                                  | Description                                          |
-| ------------ | -------------------------------------------- | ---------------------------------------------------- |
-| `player`     | [IPlayer](/Vanilla/Players/IPlayer/)         | the player owning this inventory                     |
-| `size`       | int                                          | the inventory's size                                 |
-| `width`      | int                                          | the inventory's width                                |
-| `height`     | int                                          | the inventory's height                               |
-| `stackCount` | int                                          | the the number of stacks that are actually filled in |
-| `items`      | [IItemStack[][]](/Vanilla/Items/IItemStack/) | The items that present in the crafting table         |
-| `itemArray`  | [IItemStack[]](/Vanilla/Items/IItemStack/)   | The items that present in the crafting table         |
+| ZenGetter | 退货类型                                         | 描述        |
+| --------- | -------------------------------------------- | --------- |
+| `播放器`     | [IPlayer](/Vanilla/Players/IPlayer/)         | 拥有这个物品的玩家 |
+| `大小`      | 整数                                           | 库存大小      |
+| `width`   | 整数                                           | 背包宽度      |
+| `高度`      | 整数                                           | 物品栏高度     |
+| `堆栈计数`    | 整数                                           | 实际填写的堆栈数量 |
+| `项目`      | [IItemStack[][]](/Vanilla/Items/IItemStack/) | 制造桌上存在的物品 |
+| `条目数组`    | [IItemStack[]](/Vanilla/Items/IItemStack/)   | 制造桌上存在的物品 |
 
 ## ZenMethods
 
-Following Methods are available:
+以下方法可用：
 
-`inventory.getStack(index)` returns the [IItemStack](/Vanilla/Items/IItemStack/) at the given index or null if no item present. Index is an int.  
-`inventory.setStack(index, item)` sets the Stack at the given index to the provided item. Index is an int, item is an IItemStack. Use null if you want to clear the stack at that index.
+`inventory.getStack(index)` 返回给定索引的 [IItemStack](/Vanilla/Items/IItemStack/) 如果没有项目，则为空。 索引是一个整数。  
+`inventory.setStack(index, item)` 将堆栈设在给定的索引中提供的条目。 索引是一个 int，条目是一个 IItemStack。 如果您想要清除该索引的堆栈，请使用 null
 
-The top left stack is position (0, 0), row and column are ints.  
-`inventory.getStack(row, column)` returns the [IItemStack](/Vanilla/Items/IItemStack/) at the given position or null if no item present.  
-`inventory.setStack(row, column, item)` sets the stack at the given position to the provided item. Item is an IItemStack. Use null if you want to clear the stack at that position.
+左上角的堆栈是位置 (0, 0), 行和列是英寸。  
+`库存。 etStack(row, column)` 返回给定位置的 [IItemStack](/Vanilla/Items/IItemStack/) 如果没有项目存在，则为空  
+`inventory.setStack(行, 列, 项目)` 将堆栈设定在给定的位置到提供的项目。 物品是一个 IItemStack。 如果您想要清除堆栈在那个位置，请使用 null

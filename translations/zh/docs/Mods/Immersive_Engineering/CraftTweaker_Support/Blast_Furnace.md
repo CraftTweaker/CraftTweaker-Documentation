@@ -1,68 +1,68 @@
-# Blast Furnace
+# 高炉高炉子
 
-The Blast Furnace package can be used to add/remove recipes/fuels to/from the Immersive Engineering Blast Furnace.
+爆破熔炉包件可以用来添加/移除配方/燃料到沉浸式工程爆破炉。
 
-## Calling The Package
+## 调用包
 
-You can call the BlastFurnace package using `mods.immersiveengineering.BlastFurnace`.
+您可以使用 `mods.immersiveengineering.BlastFurnace` 调用BlastFurnace 软件包。
 
-## Add Recipe:
+## 添加食谱：
 
-| Required | 类型     | Data Type                                           |
-| -------- | ------ | --------------------------------------------------- |
-| 必要       | Output | [IItemstack](/Vanilla/Items/IItemStack/)            |
-| 必要       | Input  | [IIngredient](/Vanilla/Variable_Types/IIngredient/) |
-| Required | Time   | Integer                                             |
-| Optional | Slag   | [IItemstack](/Vanilla/Items/IItemStack/)            |
+| 必填 | 类型   | 数据类型                                                    |
+| -- | ---- | ------------------------------------------------------- |
+| 必要 | 输出   | [物品堆（IItemstack）](/Vanilla/Items/IItemStack/)           |
+| 必要 | 输入   | [材料（IIngredient）](/Vanilla/Variable_Types/IIngredient/) |
+| 必填 | 时间   | 整型                                                      |
+| 可选 | Slag | [物品堆（IItemstack）](/Vanilla/Items/IItemStack/)           |
 
 ### 例子
 
 ```zenscript
-//Example:
+//示例：
 mods.immersiveengineering.BlastFurnace.addRecipe(IItemStack output, IIngredient input, int time, @Optional IItemStack slag);
-mods.immersiveengineering.BlastFurnace.addRecipe(<minecraft:diamond>, <ore:logWood>, 2000);
+mods.immersiveengineering. lastFurnace.addRecipe(<minecraft:diamond>, <ore:logWood>, 2000);
 mods.immersiveengineering.BlastFurnace.addRecipe(<minecraft:diamond>, <ore:logWood>, 2000, <minecraft:dirt>);
 ```
 
-## Remove Recipe
+## 删除配方
 
-| Type   | Data Type                                |
-| ------ | ---------------------------------------- |
-| Output | [IItemstack](/Vanilla/Items/IItemStack/) |
+| 类型 | 数据类型                                          |
+| -- | --------------------------------------------- |
+| 输出 | [物品堆（IItemstack）](/Vanilla/Items/IItemStack/) |
 
-### Example:
+### 比如：
 
 ```zenscript
-//Example:
-mods.immersiveengineering.BlastFurnace.removeRecipe(IItemStack output);
+//示例：
+mods.immersiveengineering.BlastFurnace.removeRecipe(IItemStack 输出)；
 mods.immersiveengineering.BlastFurnace.removeRecipe(<minecraft:diamond>;
 ```
 
-## Add Fuel
+## 添加燃料
 
-| Required | 返回值类型 | Data Type                                           |
-| -------- | ----- | --------------------------------------------------- |
-| Required | Input | [IIngredient](/Vanilla/Variable_Types/IIngredient/) |
-| Required | Time  | Integer                                             |
+| 必填 | 返回值类型 | 数据类型                                                    |
+| -- | ----- | ------------------------------------------------------- |
+| 必填 | 输入    | [材料（IIngredient）](/Vanilla/Variable_Types/IIngredient/) |
+| 必填 | 时间    | 整型                                                      |
 
-### Example
+### 例子
 
 ```zenscript
-//Example:
-mods.immersiveengineering.BlastFurnace.addFuel(IIngredient input, int time);
-mods.immersiveengineering.BlastFurnace.addFuel(<ore:plankWood>, 2000);
+//示例：
+mods.immersiveengineering.BlastFurnace.addFuel(IIngredient input, int time)；
+mods.immersiveengineering.BlastFurnace.addFuel(<ore:plankWood>, 2000年)；
 ```
 
-## Remove Fuel
+## 移除燃料
 
-| Required | 返回值类型  | Data Type                                |
-| -------- | ------ | ---------------------------------------- |
-| Required | Output | [IItemstack](/Vanilla/Items/IItemStack/) |
+| 必填 | 返回值类型 | 数据类型                                          |
+| -- | ----- | --------------------------------------------- |
+| 必填 | 输出    | [物品堆（IItemstack）](/Vanilla/Items/IItemStack/) |
 
-### Example
+### 例子
 
 ```zenscript
-//Example:
-mods.immersiveengineering.BlastFurnace.removeFuel(IItemStack output);
-mods.immersiveengineering.BlastFurnace.removeFuel(<minecraft:planks>);
+//示例：
+mods.immersiveengineering.BlastFurnace.removeFuel(IItemStack 输出)；
+mods.immersiveengineering.BlastFurnace.removeFuel(<minecraft:planks>)；
 ```

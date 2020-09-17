@@ -1,9 +1,9 @@
-# Dynamic Sword Skills
+# Compétences d'épée dynamiques
 
-## Syntax
+## Syntaxe
 
 ```zenscript
-dss|skillname|level
+dss|nom de la compétence|niveau
 
 dss|
 ```

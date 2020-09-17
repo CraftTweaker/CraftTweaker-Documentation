@@ -1,20 +1,20 @@
 # InterModCommsHandler
 
-InterModComms are small messages sent between mods to allow for additional content.  
-For example ModA sends a message to Tinkers' Construct to tell TiCon to create additional materials for the smeltery.
+InterModComms est un petit message envoyé entre les mods pour permettre un contenu supplémentaire.  
+Par exemple, ModA envoie un message à Construction de Tinkers pour dire à TiCon de créer des matériaux supplémentaires pour la fonderie.
 
-## Importing the package
+## Importation du paquet
 
-If you want to shorten method calls or encounter any issues you might need to [import](/AdvancedFunctions/Import) the package.  
-You can do so using
+Si vous voulez raccourcir les appels de méthodes ou rencontrer des problèmes, vous pourriez devoir [importer](/AdvancedFunctions/Import) le paquet.  
+Vous pouvez le faire en utilisant
 
 ```zenscript
-import extrautilities2.Tweaker.InterModCommsHandler;
+Importer extrautilities2.Tweaker.InterModCommsHandler;
 ```
 
-## Sending messages
+## Envoi des messages
 
-You can either send the message right away or at runtime. You can either send NBT as [IData Map](/Vanilla/Data/IData), a simple string, an [IItemStack](/Vanilla/Items/IItemStack) or a resource location.
+Vous pouvez envoyer le message immédiatement ou à l'exécution. Vous pouvez soit envoyer des NBT en tant que [IData Map](/Vanilla/Data/IData), une simple chaîne, un [IItemStack](/Vanilla/Items/IItemStack) ou un emplacement de ressource.
 
 ```zenscript
 sendMessageNBT(String mod, String key, DataMap dataMap);
@@ -24,6 +24,6 @@ sendMessageResourceLocation(String mod, String key, String resourceLocation);
 
 sendRuntimeMessageNBT(String mod, String key, DataMap dataMap);
 sendRuntimeMessageString(String mod, String key, String message);
-sendRuntimeMessageItemStack(String mod, String key, IItemStack stack);
+sendRuntimeMessageItemStack(String mod, String key, IItemStack stack) ;
 sendRuntimeMessageResourceLocation(String mod, String key, String resourceLocation);
 ```

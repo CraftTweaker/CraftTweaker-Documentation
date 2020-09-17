@@ -1,30 +1,30 @@
-# Basin Throwing
+# Becken Werfen
 
 ## Addition
 
 ```zenscript
 import mods.cuisine.BasinThrowing;
 
-BasinThrowing.add(IIngredient input, ILiquidStack inputFluid, IItemStack output);
+BasinThrowing.add(IIngredient Eingabe, ILiquidStack inputFluid, IItemStack output);
 
 BasinThrowing.add(<ore:cobblestone> * 2, <liquid:lava> * 1000, <item:minecraft:diamond>);
 ```
 
-## Removal
+## Entfernen
 
 ```zenscript
 import mods.cuisine.BasinThrowing;
 
-// Remove by inputs.
-BasinThrowing.remove(IItemStack input, ILiquidStack inputFluid);
+// Von Eingaben entfernen.
+BasinThrowing.remove(IItemStack Eingabe, ILiquidStack InputFluid);
 
 BasinThrowing.remove(<item:minecraft:dirt>, <liquid:water> * 1000);
 
-// Remove by identifier.
+// Entfernen durch Identifikator.
 BasinThrowing.remove(String id);
 
 BasinThrowing.remove("recipe_name");
 
-// Remove everything!
+// Alles entfernen!
 BasinThrowing.removeAll();
 ```

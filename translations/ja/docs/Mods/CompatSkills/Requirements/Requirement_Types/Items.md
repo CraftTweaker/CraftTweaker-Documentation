@@ -1,9 +1,9 @@
-# Items:
+# アイテム:
 
-Items is a Requirement-Type introduced by CompatSkills and allows you to gate things behind holding a specific Item/NBT-Value/Mod-Item in either your Main or Off-Hand. The Item Syntax is as follows:
+アイテムはCompatSkillsによって導入された要件タイプであり、メインまたはオフハンドの特定のアイテム/NBT値/モッドアイテムを保持する背後にあるものをゲートすることができます。 項目構文は以下のとおりです:
 
-    Example:
-    // Adds the requirement of you holding ANY item from the specified mod.
+    例:
+    // 指定された Mod から ANY アイテムを保持する要件を追加します。
     stack|modid
     
     // Adds the requirement of you holding the specified item with Meta 0

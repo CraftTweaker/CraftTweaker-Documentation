@@ -1,24 +1,24 @@
 # EntityLivingFall
 
-The EntityLivingFall Event is fired whenever an entity is set to be falling.  
-It can be canceled to preven the entity from falling.
+El evento EntityLivingFall se dispara cada vez que una entidad está programada para caer.  
+Se puede cancelar para evitar que la entidad caiga.
 
-## Event Class
+## Clase de evento
 
-You will need to cast the event in the function header as this class:  
-`crafttweaker.event.EntityLivingFallEvent`  
-You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
+Necesitarás lanzar el evento en la cabecera de la función como esta clase:  
+`crafttweaker.event. ntityLivingFallEvent`  
+Puede, por supuesto, también [importar la clase](/AdvancedFunctions/Import/) antes y usar ese nombre entonces.
 
-## Event interface extensions
+## Extensiones de la interfaz de eventos
 
-PlayerDeathDrops Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+PlayerDeathDrops Events implementan las siguientes interfaces y son capaces de llamar a todos sus métodos/getters/setters también:
 
 - [ILivingEvent](/Vanilla/Events/Events/ILivingEvent/)
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 
 ## ZenGetter/ZenSetter
 
-| ZenGetter        | ZenSetter        | Type  |
-| ---------------- | ---------------- | ----- |
-| disance          | disance          | float |
-| damageMultiplier | damageMultiplier | float |
+| ZenGetter              | Ajuste                 | Tipo     |
+| ---------------------- | ---------------------- | -------- |
+| rechazo                | rechazo                | flotante |
+| multiplicador de daños | multiplicador de daños | flotante |

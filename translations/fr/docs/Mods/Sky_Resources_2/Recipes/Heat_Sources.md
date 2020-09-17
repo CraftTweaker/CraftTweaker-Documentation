@@ -1,21 +1,21 @@
-# Heat Sources
+# Sources de chaleur
 
-The *heatsources* package is used for adding or removing Heat Sources for certain machines/processes.
+Le paquet *sources de chaleur* est utilisé pour ajouter ou retirer des sources de chaleur pour certains machines/processus.
 
-**Note: These functions only work for items that have a block form!**
+**Note: Ces fonctions ne fonctionnent que pour les éléments qui ont un formulaire de bloc!**
 
-## Calling
+## Appel en cours
 
-You can call the *heatsources* package using `mods.skyresources.heatsources`
+Vous pouvez appeler le paquet *heatsources* en utilisant `mods.skyresources.heatsources`
 
-## Heat Source Addition
+## Ajout de source de chaleur
 
 ```zenscript
 //mods.skyresources.heatsources.add(IItemStack stack, int heatValue);
 mods.skyresources.heatsources.add(<minecraft:ice>, 3);
 ```
 
-## Heat Source Removal
+## Enlèvement de la source de chaleur
 
 ```zenscript
 //mods.skyresources.heatsources.remove(IItemStack output);

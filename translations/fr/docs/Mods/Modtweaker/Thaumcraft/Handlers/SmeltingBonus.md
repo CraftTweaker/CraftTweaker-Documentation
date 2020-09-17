@@ -1,28 +1,28 @@
-# Smelting bonus
+# Bonus de fusion
 
-This package allows you to add and remove items to/from the Smelting bonus list.  
-The Smelting Bonus list is queried whenever an infernal furnace cooks an item.
+Ce pack vous permet d'ajouter et de supprimer des objets de la liste bonus de Fonderie.  
+La liste des bonus de fusion est interrogée chaque fois qu'un four infernal prépare un objet.
 
-## Importing the package
+## Importation du paquet
 
-You can [import](/AdvancedFunctions/Import/) the package and its methods to facilitate the retrival of the methods.
+Vous pouvez [importer](/AdvancedFunctions/Import/) le paquet et ses méthodes pour faciliter la récupération des méthodes.
 
 ```zenscript
-import mods.thaumcraft.SmeltingBonus;
+Importer mods.thaumcraft.SmeltingBonus;
 ```
 
-## Adding items
+## Ajout d'éléments
 
-Notice: Input needs to be either an IItemStack or an IOreDictEntry
+Notice: L'entrée doit être soit un IItemStack soit un IOreDictEntry
 
 ```zenscript
-//mods.thaumcraft.SmeltingBonus.addSmeltingBonus(IIngredient input, WeightedItemStack stack)
+//mods.thaumcraft.Smeltingbonus.addSmeltingBonus(IIngredient input, WeightedItemStack stack)
 mods.thaumcraft.SmeltingBonus.addSmeltingBonus(<minecraft:cobblestone>, <minecraft:button> % 20);
 ```
 
-## Removing items
+## Suppression des éléments
 
-Notice: Input needs to be either an IItemStack or an IOreDictEntry
+Notice: L'entrée doit être soit un IItemStack soit un IOreDictEntry
 
 ```zenscript
 //mods.thaumcraft.SmeltingBonus.removeSmeltingBonus(IIngredient input, IItemStack stack);

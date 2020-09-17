@@ -1,40 +1,40 @@
 # ITICMaterial
 
-A Tinkers' Construct IMaterial (not to be confused with [ContentTweaker's IMaterial](/Mods/ContentTweaker/Materials/Materials/Material/)) is what a Tinker's construct tool can be made of.
+Построение IMaterial Тинкеров (не путать с [IMaterial ContentTweaker](/Mods/ContentTweaker/Materials/Materials/Material/)) - это то, что можно сделать из инструмента конструирования Тинкера.
 
 ## Импорт пакета
 
-It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
-`import modtweaker.tconstruct.ITICMaterial;`
+Возможно, вам потребуется импортировать пакет, если вы столкнетесь с какими-либо проблемами, так что лучше быть безопасным чем извините и добавьте импорт.  
+`импортировать modtweaker.tconstruct.ITICMaterial;`
 
-## Retrieving such an object
+## Получение такого объекта
 
-You can retrieve an ITICMaterial object using the [ITICMaterial Bracket Handler](/Mods/Modtweaker/TConstruct/Brackets/Bracket_Material/):
+Вы можете получить объект ITICMaterial с помощью [обработчика ITICMaterial Bracket](/Mods/Modtweaker/TConstruct/Brackets/Bracket_Material/):
 
 ```zenscript
 val stone = <ticmat:stone>;
 ```
 
-## Fields
+## Поля
 
-You can get/set the following fields:
+Вы можете получить/установить следующие поля:
 
-| Геттер            | ZenSetter         | Return/Setter Type                                                                   | Description                                                       |
-| ----------------- | ----------------- | ------------------------------------------------------------------------------------ | ----------------------------------------------------------------- |
-| getName           |                   | string                                                                               | The Material's Name                                               |
-| definition        |                   | [IMaterialDefinition](/Mods/Modtweaker/TConstruct/Materials/ITICMaterialDefinition/) | The Material's Definition                                         |
-| durabilityHead    | durabilityHead    | int                                                                                  | A Toolhead made from this material has this durability            |
-| miningSpeedHead   | miningSpeedHead   | float                                                                                | A Toolhead made from this material has this mining speed          |
-| attackHead        | attackHead        | float                                                                                | A Toolhead made from this material has this attack Damage         |
-| harvestLevelHead  | harvestLevelHead  | int                                                                                  | A Toolhead made from this material has this harvest level         |
-| durabilityHandle  | durabilityHandle  | int                                                                                  | A Toolhandle made from this material has this durability          |
-| modifierHandle    | modifierHandle    | float                                                                                | A Toolhandle made from this material has this durability modifier |
-| durabilityExtra   | durabilityExtra   | int                                                                                  | Extra toolparts made from this material have this base durability |
-| arrowModifier     | arrowModifier     | float                                                                                | Arrows made from this material have this durability modifier      |
-| arrowBonusAmmo    | arrowBonusAmmo    | int                                                                                  | Arrow made from this material have this addiotional ammonition    |
-| fletchingModifier | fletchingModifier | float                                                                                | Fletchungs made from this material have this durability modifier  |
-| fletchingAccuracy | fletchingAccuracy | float                                                                                | Fletchungs made from this material provide this accuracy          |
+| Геттер            | ZenSetter         | Тип возврата/установки                                                                     | Описание                                                                       |
+| ----------------- | ----------------- | ------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------ |
+| getName           |                   | string                                                                                     | Название материала                                                             |
+| definition        |                   | [Определение IMaterialThis](/Mods/Modtweaker/TConstruct/Materials/ITICMaterialDefinition/) | Определение материала                                                          |
+| Голова прочности  | Голова прочности  | int                                                                                        | Панель, сделанная из этого материала, имеет эту прочность                      |
+| miningSpeedHead   | miningSpeedHead   | float                                                                                      | Панель, сделанная из этого материала, имеет скорость добычи                    |
+| атакующий голова  | атакующий голова  | float                                                                                      | Панель, сделанная из этого материала, имеет такой урон от атаки                |
+| harvestLevelHead  | harvestLevelHead  | int                                                                                        | Этот уровень урожая, сделанный из этого материала, снижен                      |
+| ручка прочности   | ручка прочности   | int                                                                                        | Инструмент, изготовленный из этого материала, имеет эту прочность              |
+| модификатор       | модификатор       | float                                                                                      | Инструмент, сделанный из этого материала, имеет этот модификатор долговечности |
+| надёжность        | надёжность        | int                                                                                        | Дополнительные инструменты из этого материала имеют эту базовую прочность      |
+| Модификатор стрел | Модификатор стрел | float                                                                                      | Стрелы из этого материала имеют этот модификатор прочности                     |
+| бонус стрелы      | бонус стрелы      | int                                                                                        | Стрела, сделанная из этого материала, имеет этот дополнительный аммониум       |
+| fletchingModifier | fletchingModifier | float                                                                                      | Модификатор прочности, изготовленный из этого материала                        |
+| точность флетчика | точность флетчика | float                                                                                      | Fletchungs, изготовленные из этого материала обеспечивают эту точность         |
 
-## Methods
+## Методы
 
-- boolean matches(ITICMaterial other); → returns if the given material is equal to `other`
+- boolean matches(ITICMaterial other); → возвращает если данный материал равен `другим`

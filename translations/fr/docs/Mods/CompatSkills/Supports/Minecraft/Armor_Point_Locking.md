@@ -1,11 +1,11 @@
-# Armor-Value Locking
+# Verrouillage de la valeur de l'armure
 
-## Feature:
+## Caractéristique:
 
-This type of lock, locks the ability to use armor that provides a certain amount of Armor Points behind a set of requirements. This means that if an armor provides 0.75 armor point, as in the example below, you can lock it behind only being useable in the End (Aka Dim 1)!
+Ce type de serrure, permet d'utiliser une armure qui fournit un certain nombre de points d'armure derrière un ensemble d'exigences. Cela signifie que si une armure fournit 0. 5 points d'armure, comme dans l'exemple ci-dessous, vous pouvez le verrouiller derrière seulement être utilisable dans la Fin (Aka Dim 1) !
 
-## Syntax:
+## Syntaxe :
 
-    mods.compatskills.ArmorLock.addArmorLock(double armor, String... requirements);
+    mods.compatskills.ArmorLock.addArmorLock(double armure, chaîne de caractères... exigences);
     
     mods.compatskills.ArmorLock.addArmorLock(0.75, "dim|1");

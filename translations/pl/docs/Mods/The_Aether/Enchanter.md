@@ -1,15 +1,15 @@
-# Enchanter
+# Zaklęcie
 
-## Package
+## Pakiet
 
 ```zenscript
-import mods.aether_legacy.Enchanter;
+importuj mods.aether_legacy.Zaklęcie;
 ```
-## Usage
+## Użycie
 
 ```zenscript
-Enchanter.registerEnchantment(IItemStack input, IItemStack output, int timeRequired);
-// repairing tools and stuff
+Enchanter.registerEnchantment(IItemStack inputt, IItemStack output, int timeRequired);
+// narzędzia naprawy i rzeczy
 Enchanter.registerEnchantment(IItemStack repair, int timeRequired);
 Enchanter.registerEnchanterFuel(IItemStack input, int timeGiven);
 ```

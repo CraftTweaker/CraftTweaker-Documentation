@@ -1,24 +1,24 @@
-# Casting Block
+# Bloc de lancement
 
-The Casting Block is a machine that converts an input fluid into an output item.
+Le Bloc de Casting est une machine qui convertit un fluide d'entrée en un élément de sortie.
 
-## Package
-`mods.steamagerevolution.CastingBlock`
+## Paquet
+`CastingBlock`
 
-## Methods
+## Méthodes
 
-- **[IItemStack](/Vanilla/Items/IItemStack/) output** The result of the recipe.
-- **[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) input** The input of the recipe.
-- **int craftTime** Crafting time for machine to process
+- **[IItemStack](/Vanilla/Items/IItemStack/) sortie** Le résultat de la recette.
+- **[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) entrée** L'entrée de la recette.
+- **int craftTime** Temps d'artisanat pour la machine à traiter
 
-## Addition
+## Ajouter
 
 ```zenscript
-mods.steamagerevolution.CastingBlock.addRecipe(ILiquidStack input, IItemStack output, int craftTime);
+mods.steamagerevolution.CastingBlock.addRecipe(ILiquidStack entrée, sortie IItemStack, int craftTime);
 mods.steamagerevolution.CastingBlock.addRecipe(<liquid:lava>*1000, <minecraft:obsidian>, 200);
 ```
 
-## Removal
+## Retirer
 
 ```zenscript
 mods.steamagerevolution.CastingBlock.removeRecipe(IItemStack output);

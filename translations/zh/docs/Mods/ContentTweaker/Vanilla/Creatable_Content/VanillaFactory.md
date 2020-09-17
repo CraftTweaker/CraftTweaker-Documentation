@@ -1,78 +1,78 @@
-# Vanilla Factory
+# Vanilla 工厂公司
 
-The Vanilla Factory allows you to create [Blocks](/Mods/ContentTweaker/Vanilla/Creatable_Content/Block/), [Items](/Mods/ContentTweaker/Vanilla/Creatable_Content/Item/) and [Creative Tabs](/Mods/ContentTweaker/Vanilla/Creatable_Content/Creative_Tab/) that you can then add to the game.
+Vanilla 工厂允许您创建 [块](/Mods/ContentTweaker/Vanilla/Creatable_Content/Block/) [然后您可以添加到游戏中的项目](/Mods/ContentTweaker/Vanilla/Creatable_Content/Item/) 和 [创意标签](/Mods/ContentTweaker/Vanilla/Creatable_Content/Creative_Tab/)
 
 ## 导入包
 
-You can find the package at `mods.contenttweaker.VanillaFactory`
+您可以在 `mods.contenttweiner.Vanilla工厂` 找到这个软件包
 
-## Creating Content
+## 创建内容
 
-### Create Blocks
+### 创建块
 
 ```zenscript
-mods.contenttweaker.VanillaFactory.createBlock(String unlocalizedName, IMaterialDefinition material);
+mods.contenttweeper.VanillaFactory.createBlock(String unlocalizedName, IMaterialDefinition material);
 ```
 
-Parameters:
+参数：
 
-- String unlocalizedName: The Block's unlocalized name.
-- [IMaterialDefinition](/Mods/ContentTweaker/Vanilla/Types/Block/IMaterialDefinition/) material: The base material the block is made of.
+- 字符串解锁名称：块的未本地化名称。
+- [IMaterialDefinition](/Mods/ContentTweaker/Vanilla/Types/Block/IMaterialDefinition/) material：块形成的基础材料。
 
-Returns a [BlockRepresentation](/Mods/ContentTweaker/Vanilla/Creatable_Content/Block/) object. Check the [Block page](/Mods/ContentTweaker/Vanilla/Creatable_Content/Block/) for further information and an example script!
+返回 [BlockRepresentation](/Mods/ContentTweaker/Vanilla/Creatable_Content/Block/) 对象。 检查 [块页面](/Mods/ContentTweaker/Vanilla/Creatable_Content/Block/) 获取更多信息和示例脚本！
 
-### Create Items
+### 创建项目
 
 ```zenscript
 mods.contenttweaker.VanillaFactory.createItem(String unlocalizedName);
 ```
 
-Parameters:
+参数：
 
-- String unlocalizedName: The item's unlocalized name.
+- 字符串解锁名称：项目未本地化名称。
 
-Returns an [ItemRepresentation](/Mods/ContentTweaker/Vanilla/Creatable_Content/Item/) object. Check the [Item page](/Mods/ContentTweaker/Vanilla/Creatable_Content/Item/) for further information and an example script!
+返回 [ItemRepresentation](/Mods/ContentTweaker/Vanilla/Creatable_Content/Item/) 对象。 查看 [条目页面](/Mods/ContentTweaker/Vanilla/Creatable_Content/Item/) 获取更多信息和示例脚本！
 
-### Create Creative Tabs
-
-```zenscript
-mods.contenttweaker.VanillaFactory.createCreativeTab(String unlocalizedName, IItemStack iItemStack);
-mods.contenttweaker.VanillaFactory.createCreativeTab(String unlocalizedName, ItemRepresentation iItem);
-mods.contenttweaker.VanillaFactory.createCreativeTab(String unlocalizedName, BlockRepresentation iBlock);
-mods.contenttweaker.VanillaFactory.createCreativeTab(String unlocalizedName, IItemStackSupplier supplier);
-```
-
-Parameters:
-
-- String unlocalizedName: The Tab's unlocalized Name.
-- Item or Block representation: The Item/Block to be displayed as the Tab's symbol. Alternatively you can use an [IItemStackSupplier function](/Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemStackSupplier/).
-
-Returns a [ICreativeTab](/Mods/ContentTweaker/Vanilla/Creatable_Content/Creative_Tab/) object. Check the [Creative Tab page](/Mods/ContentTweaker/Vanilla/Creatable_Content/Creative_Tab/) for further information and an example script!
-
-### Create Fluids
+### 创建创意标签
 
 ```zenscript
-mods.contenttweaker.VanillaFactory.createFluid(String unlocalizedName, int color);
-mods.contenttweaker.VanillaFactory.createFluid(String unlocalizedName, CTColor color);
+mods.contenttweeper.VanillaFactory.createCreatativeTab(String unlocalizedName, IItemStack iItemStack);
+mods.contenttweiner.VanillaFactory.createCreatativeTab(String unlocalizedName, ItemRepresentative iItem);
+mods.contenttweepender.VanillaFactory.createCreatativeTab(String unlocalizedName, BlockRepresentation iBlock);
+mods.contentbuiler.VanillaFactory.createCreativeTab(String unlocalizedName, IItemStackSupplier supplier);
 ```
 
 参数：
 
-- String unlocalizedName: The Fluid's unlocalized name.
-- int color: The fluid's color-code.
-- [CTColor](/Mods/ContentTweaker/Vanilla/Types/Color/Color/) color: The fluid's color as color-Object.
+- 字符串解锁名称：标签未本地化的名称。
+- 项目或方块表示：项目/方块将显示为标签的符号。 或者，您可以使用 [IItemStackSupplier 函数](/Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemStackSupplier/)。
 
-Returns a [FluidRepresentation](/Mods/ContentTweaker/Vanilla/Creatable_Content/Fluid/) object. Check the [Fluid page](/Mods/ContentTweaker/Vanilla/Creatable_Content/Fluid/) for further information and an example script.
+返回 [ICreativeTab](/Mods/ContentTweaker/Vanilla/Creatable_Content/Creative_Tab/) 对象。 查看 [Creative Tab 页面](/Mods/ContentTweaker/Vanilla/Creatable_Content/Creative_Tab/) 了解更多信息和示例脚本！
 
-### Create Food Items
+### 创建流体
 
 ```zenscript
-mods.contenttweaker.VanillaFactory.createItemFood(String unlocalizedName, int healAmount);
+mods.contenttweeper.VanillaFactory.createFluid(String unlocalizedName, int color);
+mods.contenttweeper.VanillaFactory.createFluid(String unlocalizedName, CTColor 颜色);
 ```
 
-Parameters:
+参数：
 
-- String unlocalizedName: The item's unlocalized Name.
-- int healAmount: The Food Value
+- 字符串解锁名称：流体未本地化名称。
+- 整数型变量颜色：流量的颜色代码。
+- [CTColor](/Mods/ContentTweaker/Vanilla/Types/Color/Color/) 颜色：流体的颜色为颜色对象。
 
-Returns an [ItemFoodRepresentation](/Mods/ContentTweaker/Vanilla/Creatable_Content/ItemFood/) object. Check out the [Food page](/Mods/ContentTweaker/Vanilla/Creatable_Content/ItemFood/) for further information and an example script.
+返回 [FluidRepresentation](/Mods/ContentTweaker/Vanilla/Creatable_Content/Fluid/) 对象。 检查 [流体页面](/Mods/ContentTweaker/Vanilla/Creatable_Content/Fluid/) 获取更多信息和示例脚本。
+
+### 创建食物项
+
+```zenscript
+mods.contenttweeper.VanillaFactory.createItemFood(String unlocalizedName, int healAmount);
+```
+
+参数：
+
+- 字符串解锁名称：项目未本地化名称。
+- 整数治疗量：食物值
+
+返回 [个物品代表](/Mods/ContentTweaker/Vanilla/Creatable_Content/ItemFood/) 个对象。 查看 [食品页面](/Mods/ContentTweaker/Vanilla/Creatable_Content/ItemFood/) 获取更多信息和示例脚本。

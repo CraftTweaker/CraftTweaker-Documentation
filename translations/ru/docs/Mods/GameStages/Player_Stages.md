@@ -1,46 +1,46 @@
-# Player Stages
+# Этапы игрока
 
-The GameStages API expands CraftTweaker's [IPlayer](/Vanilla/Players/IPlayer/) functionality to allow you to check and modify a player's stages.
+API GameStages расширяет функциональность CraftTweaker [IPlayer](/Vanilla/Players/IPlayer/) для проверки и изменения стадий игрока.
 
-## Calling the methods
+## Вызов методов
 
-As this is a [ZenExpansion](/Dev_Area/ZenAnnotations/Annotation_ZenExpansion/), you can simply call the methods on any [IPlayer](/Vanilla/Players/IPlayer/) object, or any of it's subtypes.
+Поскольку это [ZenExpansion](/Dev_Area/ZenAnnotations/Annotation_ZenExpansion/), вы можете просто вызвать методы на любом объекте [IPlayer](/Vanilla/Players/IPlayer/) или любом из его подтипов.
 
-## Methods
+## Методы
 
-### Check for gamestages
+### Проверить игровые вещи
 
-The methods return booleans.
+Методы возврата булев.
 
 ```zenscript
-// Checks if the player has the passed stage.
+// Проверяет, имеет ли игрок пройденную стадию.
 //player.hasGameStage(String stage);
 player.hasGameStage("one");
 
 
 
-// Checks if the player has any of the passed stages. They only need one.
+// Проверяет, имеет ли игрок какой-либо из прошедших стадий. Им только нужно.
 //player.hasAnyGameStages(String... stages);
 player.hasAnyGameStages("one", "two");
 
 
 
-// Checks if the player has all of the passed stages.
+// Проверяет, есть ли у игрока все пройденные стадии.
 //player.hasAllGameStages (String... stages);
-player.hasAllGameStages ("one", "two");
+player.hasAllGameStages ("один", "два");
 ```
 
-### Add or remove a gamestage
+### Добавить или удалить игру
 
-The methods return void (nothing).
+Методы возвращают недействительный (ничего).
 
 ```zenscript
-// Unlocks a stage for a player.
+// Открывает стадию для игрока.
 //addGameStage(String stage);
 addGameStage(String stage);
 
 
-// Locks a stage for a player.
+// Заблокирует этап для игрока.
 //removeGameStage(String stage);
 removeGameStage(String stage);
 ```

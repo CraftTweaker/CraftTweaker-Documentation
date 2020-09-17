@@ -1,3 +1,3 @@
-# BuildCraft
+# 建筑合成物
 
-To use crafttwaeker with BuildCraft, make sure to install the full [BuildCraft Package](https://www.curseforge.com/minecraft/mc-mods/buildcraft) or the [BuildCraft Compat Module](https://www.curseforge.com/minecraft/mc-mods/buildcraft-compat)
+要使用 BuildCraft, 请确保安装满的 [BuildCraft 包](https://www.curseforge.com/minecraft/mc-mods/buildcraft) 或 [BuildCraft Compat 模块](https://www.curseforge.com/minecraft/mc-mods/buildcraft-compat)

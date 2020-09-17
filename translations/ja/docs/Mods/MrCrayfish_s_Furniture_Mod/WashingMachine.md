@@ -1,12 +1,12 @@
-# Washing Machine
+# 洗濯機
 
-The Washing Machine allows you to clean dirty clothes.
+洗濯機は汚れた服をきれいにすることができます。
 
-By default repairs durability of vanilla armour, including the Elytra.
+デフォルトではエリトラを含むバニラアーマーの耐久性を修理します。
 
-## Removing
+## 削除中
 
-## Remove matching washable items.
+## 一致する洗濯可能な項目を削除します。
 
 ```zenscript
 mods.cfm.WashingMachine.remove(@Optional final IIngredient item);
@@ -20,9 +20,9 @@ mods.cfm.WashingMachine.remove(<minecraft:chainmail_boots>);
 mods.cfm.WashingMachine.remove();
 ```
 
-## Adding
+## 追加中
 
-## Add a washable item.
+## 洗えるアイテムを追加します。
 
 ```zenscript
 mods.cfm.WashingMachine.add(@Nonnull final IItemStack item);

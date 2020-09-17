@@ -1,5 +1,5 @@
-# TComplement
+# Внедрение
 
-The Tinkers' Complement Package is used solely for altering the TComplement melter.
+Пакет "Заполнение" используется только для изменения пламмы "Заполнение".
 
-You can either alter its [overrides](/Mods/Modtweaker/TComplement/Handlers/Overrides) or its [Blacklist](/Mods/Modtweaker/TComplement/Handlers/Blacklist).
+Вы можете изменить его [переопределения](/Mods/Modtweaker/TComplement/Handlers/Overrides) или его [черный список](/Mods/Modtweaker/TComplement/Handlers/Blacklist).

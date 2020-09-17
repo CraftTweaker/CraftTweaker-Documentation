@@ -1,25 +1,25 @@
-# ItemExpire
+# Wygasa element
 
-The ItemExpire Event is fired whenever an Item expires (reaches its macimum lifespan).  
-It can be canceled to prevent the item from being flagged as dead.  
-If canceled it will add `extralife` to the item's lifetime.
+Wydarzenie Wygaśnięcia Przedmiotu jest uruchamiane za każdym razem, gdy przedmiot wygasa (osiąga makimum żywotność).  
+Można go anulować, aby zapobiec oznaczeniu przedmiotu jako martwy.  
+Jeśli anulowane doda `ekstralife` do żywotności przedmiotu.
 
-## Event Class
+## Klasa wydarzenia
 
-You will need to cast the event in the function header as this class:  
-`crafttweaker.event.ItemExpireEvent`  
-You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
+Musisz aktywować wydarzenie w nagłówku funkcji jako klasa:  
+`crafttweaker.event. temExpireEvent`  
+Oczywiście możesz również [zaimportować](/AdvancedFunctions/Import/) klasę przed i wtedy użyć tej nazwy.
 
-## Event interface extensions
+## Rozszerzenia interfejsu zdarzenia
 
-PlayerDeathDrops Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+Zdarzenia PlayerDeathDrops zaimplementują następujące interfejsy i są również w stanie wywołać wszystkie swoje metody/getters/setters:
 
-- [IEntityEvent](/Vanilla/Events/Events/IEntityEvent/)
+- [Wydarzenie IEntityEvent](/Vanilla/Events/Events/IEntityEvent/)
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 
 ## ZenGetter/ZenSetter
 
-| ZenGetter | ZenSetter | Type                                          |
+| ZenGetter | ZenSetter | Typ                                           |
 | --------- | --------- | --------------------------------------------- |
-| item      |           | [IEntityItem](/Vanilla/Entities/IEntityItem/) |
-| extraLife | extraLife | int                                           |
+| element   |           | [IEntityItem](/Vanilla/Entities/IEntityItem/) |
+| extraLife | extraLife | odcień                                        |

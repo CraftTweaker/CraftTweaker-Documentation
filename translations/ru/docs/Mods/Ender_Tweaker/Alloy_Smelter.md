@@ -1,28 +1,28 @@
-# Alloy Smelter
+# Металлургический сплав
 
-## Package
+## Пакет
 
-`import mods.enderio.AlloySmelter;`
+`импортировать mods.enderio.AlloySmelter;`
 
-## Methods
+## Методы
 
-- **[IItemStack](/Vanilla/Items/IItemStack/) output** The result of the recipe.
-- **[IIngredient](/Vanilla/Variable_Types/IIngredient/)[] input** The ingredients. Must be between 1 and 3 ingredients.
-- **int energyCost** How much FE the recipe uses. Defaults to 5000.
-- **float xp** The xp is granted from this recipe. May not be negative.
+- **[IItemStack](/Vanilla/Items/IItemStack/) output** Результат рецепта.
+- **[IIngredient](/Vanilla/Variable_Types/IIngredient/)[] input** Ингредиенты. Должно быть от 1 до 3 компонентов.
+- **int energyCost** Сколько FE использует рецепт. По умолчанию 5000.
+- **float xp** xp дается из этого рецепта. Не может быть отрицательным.
 
-## Addition
+## Сложение
 
 ```zenscript
-mods.enderio.AlloySmelter.addRecipe(IItemStack output, IIngredient[] input, @Optional int energyCost, @Optional float xp);
+mods.enderio.AlloySmelter.addRecipe(IItemStack, IIngredient[] input, @Optional int energyCost, @Optional float xp);
 
 mods.enderio.AlloySmelter.addRecipe(<minecraft:iron_ingot>, [<minecraft:sand>, <minecraft:gravel>, <minecraft:brick>]);
 ```
 
-## Removal
+## Удаление
 
 ```zenscript
-mods.enderio.AlloySmelter.removeRecipe(IItemStack output);
+mods.enderio.AlloySmelter.removeRecipe(IItemStack);
 
 mods.enderio.AlloySmelter.removeRecipe(<enderio:item_alloy_ingot:7>);
 ```

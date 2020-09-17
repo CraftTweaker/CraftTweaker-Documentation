@@ -1,54 +1,54 @@
-# World Transmutation
+# Transmutation du monde
 
-## add
+## Ajouter
 
-Adds a Philosopher Stone world transmutation, with an optional sneak click transmutation.
-
-### [IItemStack](/Vanilla/Items/IItemStack/)
-
-```zenscript
-// If the IItemStack's do not have a coresponding block, air is used instead.
-mods.projecte.WorldTransmutation.add(IItemStack output, IItemStack input, @Optional IItemStack sneakOutput);
-
-// Turn gold blocks into diamond blocks by right clicking, or into iron blocks by sneak right clicking 
-mods.projecte.WorldTransmutation.add(<minecraft:diamond_block>, <minecraft:gold_block>, <minecraft:iron_block>);
-```
-
-### [IBlockState](/Vanilla/Blocks/IBlockState/)
-
-```zenscript
-mods.projecte.WorldTransmutation.add(IBlockState output, IBlockState input, @Optional IBlockState sneakOutput);
-
-// Turn gold blocks into diamond blocks by right clicking, or into iron blocks by sneak right clicking
-mods.projecte.WorldTransmutation.add(<blockstate:minecraft:diamond_block>, <blockstate:minecraft:gold_block>, <blockstate:minecraft:iron_block>);
-```
-
-## remove
-
-Removes the Philosopher Stone world transmutations that have the same input, output, and sneakOutput.
+Ajoute une transmutation de monde de Philosopher Stone avec une transmutation de clic sournois optionnelle.
 
 ### [IItemStack](/Vanilla/Items/IItemStack/)
 
 ```zenscript
-// If the IItemStack's do not have a coresponding block, air is used instead.
-mods.projecte.WorldTransmutation.remove(IItemStack output, IItemStack input, @Optional IItemStack sneakOutput);
+// Si les IItemStack n'ont pas de bloc corespondant, l'air est utilisé à la place.
+mods.projecte.WorldTransmutation. dd(sortie IItemStack, entrée IItemStack, @Optional IItemStack sneakOutput);
 
-// Removes the recipe allowing cobblestone to be changed into stone/grass
-mods.projecte.WorldTransmutation.remove(<minecraft:stone>, <minecraft:cobblestone>, <minecraft:grass>);
+// Transforme les blocs d'or en blocs de diamant par clic droit, ou en blocs de fer par un clic droit 
+mod. rojecte.WorldTransmutation.add(<minecraft:diamond_block>, <minecraft:gold_block>, <minecraft:iron_block>);
 ```
 
-### [IBlockState](/Vanilla/Blocks/IBlockState/)
+### [État de l'IBlock](/Vanilla/Blocks/IBlockState/)
 
 ```zenscript
-mods.projecte.WorldTransmutation.remove(IBlockState output, IBlockState input, @Optional IBlockState sneakOutput);
+mods.projecte.WorldTransmutation. dd(sortie IBlockStatet, entrée IBlockStatet, @Optional IBlockState sneakOutput);
 
-// Removes the recipe allowing cobblestone to be changed into stone/grass
-mods.projecte.WorldTransmutation.remove(<blockstate:minecraft:stone>, <blockstate:minecraft:cobblestone>, <blockstate:minecraft:grass>); 
+// Transforme les blocs d'or en blocs de diamant par clic droit, ou en blocs de fer par un clic droit
+mod. rojecte.WorldTransmutation.add(<blockstate:minecraft:diamond_block>, <blockstate:minecraft:gold_block>, <blockstate:minecraft:iron_block>);
 ```
 
-## removeAll
+## Enlever
 
-Removes all Philosopher Stone world transmutations, including any added by the user before the call to this method.
+Supprime les transmutations du monde Philosopher Stone qui ont la même entrée, sortie et sneakOutput.
+
+### [IItemStack](/Vanilla/Items/IItemStack/)
+
+```zenscript
+// Si les IItemStack n'ont pas de bloc corespondant, l'air est utilisé à la place.
+mods.projecte.WorldTransmutation.remove(sortie IItemStack, entrée IItemStack, @Optional IItemStack sneakOutput);
+
+// Supprime la recette qui permet de changer la pierre de taille en mods
+d'herbe. rojecte.WorldTransmutation.remove(<minecraft:stone>, <minecraft:cobblestone>, <minecraft:grass>);
+```
+
+### [État de l'IBlock](/Vanilla/Blocks/IBlockState/)
+
+```zenscript
+mods.projecte.WorldTransmutation.remove(sortie IBlockStatet, entrée IBlockStatet, @Optional IBlockState sneakOutput);
+
+// Supprime la recette permettant de changer la pierre de taille en mod
+en mod. rojecte.WorldTransmutation.remove(<blockstate:minecraft:stone>, <blockstate:minecraft:cobblestone>, <blockstate:minecraft:grass>); 
+```
+
+## Retirer tout
+
+Supprime toutes les transmutations du monde Philosopher Stone, y compris celles ajoutées par l'utilisateur avant l'appel à cette méthode.
 
 ```zenscript
 mods.projecte.PhiloStone.removeAllWorldTransmutation();

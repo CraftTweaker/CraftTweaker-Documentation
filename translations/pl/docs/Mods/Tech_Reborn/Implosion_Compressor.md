@@ -1,16 +1,16 @@
-# Implosion Compressor
+# Kompresor implozji
 
-## Importing the Package
+## Importowanie pakietu
 `mods.techreborn.implosionCompressor`
 
-## Adding Recipes
+## Dodawanie przepisów
 ```zenscript
 mods.techreborn.implosionCompressor.addRecipe(IItemStack output1, IItemStack output2, IIngredient input1, IIngredient input2, int ticktime, int euTick);
 ```
 
-## Removing Recipes
+## Usuwanie przepisów
 ```zenscript
-mods.techreborn.implosionCompressor.removeInputRecipe(IIngredient ingredient);
-mods.techreborn.implosionCompressor.removeRecipe(IItemStack output);
+mods.techreborn.implosionCompressor.removeInputRecipe(składnik składnika);
+mods.techreborn.implosionCompressor.removeRecipe(wyjście IItemStack);
 mods.techreborn.implosionCompressor.removeAll();
 ```

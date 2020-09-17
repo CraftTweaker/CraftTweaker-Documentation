@@ -1,33 +1,33 @@
-# Chopping Board
+# Gehacktes Brett
 
-The Chopping Board allows you to chop up an item into many pieces of another item.
+Das Schachbrett erlaubt es dir, ein Item in viele Stücke eines anderen Gegenstands zu schneiden.
 
-By default only cuts bread into 6 bread slices.
+Standardmäßig schneidet nur Brot in 6 Brotscheiben.
 
-## Removing Chopping Recipes
+## Gehackte Rezepte entfernen
 
-## Remove matching chopping recipes.
+## Entferne passende Schnittrezepte.
 
 ```zenscript
-mods.cfm.ChoppingBoard.remove(@Optional final IIngredient output, @Optional final IIngredient input);
+mods.cfm.ChoppingBoard.remove(@Optional final IIngredient Output, @Optional final IIngredient Input);
 
-// Remove recipe with bread as the input item
-mods.cfm.ChoppingBoard.remove(null,<minecraft:bread>);
-// Remove recipes that result in 6 bread slices (same match as above recipe, so will have no effect if used after)
-mods.cfm.ChoppingBoard.remove(<cfm:item_bread_slice>.withAmount(6));
+// Rezept mit Brot entfernen als Input Element
+mods.cfm.ChoppingBoard. emove(null,<minecraft:bread>);
+// Entfernen von Rezepten, die zu 6 Brotscheiben führen (gleiche Übereinstimmung wie obiges Rezept, wird also keine Wirkung haben, wenn danach verwendet)
+Modi. fm.ChoppingBoard.remove(<cfm:item_bread_slice>.withAmount(6));
 ```
 
-## Adding Chopping Recipes
+## Füge Hacking-Rezepte hinzu
 
-Add a chopping recipe.
+Füge ein Hackrezept hinzu.
 
-## Input requires stack size of 1.
+## Eingabe erfordert Stapelgröße von 1.
 
 ```zenscript
-mods.cfm.ChoppingBoard.addRecipe(@Nonnull final IItemStack output, @Nonnull final IItemStack input);
+mods.cfm.ChoppingBoard.addRecipe(@Nonnull final IItemStack Output, @Nonnull final IItemStack input);
 
-// Add a recipe to chop wheat into 2 sticks
-mods.cfm.ChoppingBoard.addRecipe(<minecraft:stick>.withAmount(2),<minecraft:wheat>);
-// Add a recipe to chop bread into 3 wheat
+// Ein Rezept zum Abhacken von Weizen in 2 Sticks
+mods.cfm.ChoppingBoard hinzufügen. ddRecipe(<minecraft:stick>.withAmount(2),<minecraft:wheat>);
+// Füge ein Rezept hinzu, um Brot in 3 Weizen zu fällen
 mods.cfm.ChoppingBoard.addRecipe(<minecraft:wheat>.withAmount(3),<minecraft:bread>);
 ```

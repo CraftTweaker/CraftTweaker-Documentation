@@ -1,40 +1,40 @@
-# Items:
+# Éléments :
 
-Items is a Requirement-Type introduced by CompatSkills and allows you to gate things behind holding a specific Item/NBT-Value/Mod-Item in either your Main or Off-Hand. The Item Syntax is as follows:
+Les objets sont des types d'exigences introduits par CompatSkills et vous permettent de porter des objets derrière la mainmise d'un objet spécifique/NBT-Valeur/Mod-Item dans votre Main ou Off-Hand. La syntaxe de l'objet est la suivante:
 
-    Example:
-    // Adds the requirement of you holding ANY item from the specified mod.
+    Exemple:
+    // Ajoute l'exigence que vous déteniez N'IMPORTE QUEL élément du mod spécifié.
     stack|modid
     
-    // Adds the requirement of you holding the specified item with Meta 0
+    // Ajoute l'exigence que vous mainteniez l'élément spécifié avec la pile Meta 0
     stack|modid:item
     
-    // Adds the requirement of you holding the specified item with the specified Meta (* = Wildcard Metadata)
+    // Ajoute l'exigence que vous déteniez l'élément spécifié avec la Meta (* = Meta Metadata Wildcard)
     stack|modid:item:meta
     
-    // Adds the requirement of you holding ANY item with the specified NBT-data
-    stack||NBT as JSON
+    // Ajoute l'exigence que vous déteniez un élément avec la pile de données NBT-
+    spécifiée||NBT en JSON
     
-    // Adds the requirement of you holding ANY item from the specified mod with the specified NBT-data.
+    // Ajoute l'exigence que vous déteniez n'importe quel élément du mod spécifié avec les données NBT spécifiées.
     stack|modid|NBT as JSON
     
-    // Adds the requirement of you holding the specified item with meta 0 and the specified NBT-data
+    // Ajoute l'obligation de détenir l'élément spécifié avec meta 0 et les données NBT spécifiées
     stack|modid:item|NBT as JSON
     
-    // Adds the requirement of you holding the specified item with the specified Meta and the specified NBT-data
+    // Ajoute l'obligation de détenir l'élément spécifié avec meta 0 et les données NBT spécifiées
     stack|modid:item:meta|NBT as JSON
     
     
     
-    // Working Examples:
+    // Exemples de réalisation:
     stack|minecraft
     stack|minecraft:iron_pickaxe
     stack|minecraft:iron_pickaxe:*
     
-    //Needs a silk touch item
+    //Besoin d'un item de toucher de soie
     stack||{ench:[{id: 33s}]} 
     
-    //fortune tinkers tool
+    //outil de tinkers fortune
     stack|tconstruct|{ench:[{id: 35s}]} 
     
     stack|minecraft:iron_sword|{ench:[{id: 17s}]}

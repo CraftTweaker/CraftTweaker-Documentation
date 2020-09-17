@@ -1,9 +1,9 @@
-# Industrial Sawmill
+# 工業用製材所
 
-## Importing the Package
+## パッケージのインポート
 `mods.techreborn.industrialSawmill`
 
-## Adding Recipes
+## レシピを追加中
 ```zenscript
 mods.techreborn.industrialSawmill.addRecipe(IItemStack output1, IItemStack output2, IItemStack output3, IIngredient input1, ILiquidStack fluid, int ticktime, int euTick);
 mods.techreborn.industrialSawmill.addRecipe(IItemStack output1, IItemStack output2, IItemStack output3, IIngredient input1, int ticktime, int euTick);
@@ -11,9 +11,9 @@ mods.techreborn.industrialSawmill.addRecipe(IItemStack output1, IItemStack outpu
 mods.techreborn.industrialSawmill.addRecipe(IItemStack output1, IItemStack output2, IItemStack output3, IIngredient input1, ILiquidStack fluid, int ticktime, int euTick, boolean useOreDic);
 ```
 
-## Removing Recipes
+## レシピを削除
 ```zenscript
-mods.techreborn.industrialSawmill.removeInputRecipe(IIngredient ingredient);
+mods.techreborn.industrialSawmill.removeInputRecipe(IIngredient 食材);
 mods.techreborn.industrialSawmill.removeRecipe(IItemStack output);
-mods.techreborn.industrialSawmill.removeAll();
+mods.techreborn.industrialSawm.removeAll();
 ```

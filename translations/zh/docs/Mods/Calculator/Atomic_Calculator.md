@@ -1,21 +1,21 @@
-# Atomic Calculator
+# 原子计算器
 
 ## 所属包名
 ```zenscript
-import mods.calculator.atomic;
+导入 mods.calculator.atomic;
 ```
 
 ## 使用方式
 
-- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input[1-3]** The inputs.
-- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) output** The output.
+- **[Ingredient](/Vanilla/Variable_Types/IIngredient/) 输入[1-3]** 输入.
+- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) 输出** 输出.
 
 ## 添加配方
 ```zenscript
-atomic.addRecipe(IIngredient input1, IIngredient input2, IIngredient input3, IIngredient output);
+atomic.addRecipe(IIngredient input1, IIngredient input2, IIngredient input3, IIngredient output)；
 ```
 
-## Removal
+## 移除
 ```zenscript
-atomic.removeRecipe(IIngredient output);
+原子.移除Recipe(IIngredient 输出)；
 ```

@@ -1,16 +1,16 @@
 # Isotope Separator
 
-## Importing the Package
-`mods.nuclearcraft.isotope_separator`
+## 导入软件包
+`nuclearcraft.isotope_separator`
 
-## Adding Recipes
+## 添加配方
 ```zenscript
-mods.nuclearcraft.isotope_separator.addRecipe([itemInput, itemOutput1, itemOutput2, @Optional double timeMultiplier, @Optional double powerMultiplier, @Optional double processRadiation]);
+mods.nuclearcraft.isotope_separator.addRecipe([itemInject, itemOutt1, itemOutt2,itemOutuput2, @Optional double time Multiplier, @Optional double power Multiplier, @Optional double processRadiation]);
 ```
 
-## Removing Recipes
+## 删除配方
 ```zenscript
-mods.nuclearcraft.isotope_separator.removeRecipeWithInput([itemInput]);
-mods.nuclearcraft.isotope_separator.removeRecipeWithOutput([itemOutput1, itemOutput2]);
+mods.nuclearcraft.isotope_separator.removeRecipewot([itemInput]);
+mods.nuclearcraft.isotope_separator.removeRecipeWOutput([itemOutput1, itemOut2]);
 mods.nuclearcraft.isotope_separator.removeAllRecipes();
 ```

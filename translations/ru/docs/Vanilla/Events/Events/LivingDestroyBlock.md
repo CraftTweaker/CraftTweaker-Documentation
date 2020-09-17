@@ -1,6 +1,6 @@
-# LivingDestroyBlock
+# Уничтожить Блок LivingDestroyBlock
 
-This event is fired whenever a Wither or Ender Dragon attempts to destroy blocks, or when a zombie attempts to break a door. This event is **cancelable**, and if canceled, the block will not be broken.
+Событие запускается, когда иссушитель или Эндер-Дракон пытается уничтожить блоки или когда зомби пытается сломать дверь. Это событие **отменено**, и, если отмена, блок не будет нарушен.
 
 ## Класс события
 You will need to cast the event in the function header as this class:  
@@ -8,17 +8,17 @@ You will need to cast the event in the function header as this class:
 You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
 
 ## Наследование от интерфейсов событий
-LivingDestroyBlock Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+События LivingDestroyBlock реализуют следующие интерфейсы и также могут вызвать все их методы/getters/setters:
 
-- [IEventPositionable](/Vanilla/Events/Events/IEventPositionable/)
+- [Событие доступно](/Vanilla/Events/Events/IEventPositionable/)
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 - [ILivingEvent](/Vanilla/Events/Events/ILivingEvent/)
 
 
 ## Геттеры/сеттеры
-The following information can be retrieved/set during the event:
+Во время события можно извлечь/задать следующую информацию:
 
 | ZenGetter | ZenSetter | Тип                                         |
 | --------- | --------- | ------------------------------------------- |
-| `state`   |           | [IBlockState](/Vanilla/Blocks/IBlockState/) |
+| `штат`    |           | [IBlockState](/Vanilla/Blocks/IBlockState/) |
 

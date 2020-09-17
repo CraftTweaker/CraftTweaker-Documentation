@@ -1,9 +1,9 @@
-# Industrial Sawmill
+# Tartak przemysłowy
 
-## Importing the Package
-`mods.techreborn.industrialSawmill`
+## Importowanie pakietu
+`[PLACEHOLDER] mods.techreborn.industrialTawmll`
 
-## Adding Recipes
+## Dodawanie przepisów
 ```zenscript
 mods.techreborn.industrialSawmill.addRecipe(IItemStack output1, IItemStack output2, IItemStack output3, IIngredient input1, ILiquidStack fluid, int ticktime, int euTick);
 mods.techreborn.industrialSawmill.addRecipe(IItemStack output1, IItemStack output2, IItemStack output3, IIngredient input1, int ticktime, int euTick);
@@ -11,9 +11,9 @@ mods.techreborn.industrialSawmill.addRecipe(IItemStack output1, IItemStack outpu
 mods.techreborn.industrialSawmill.addRecipe(IItemStack output1, IItemStack output2, IItemStack output3, IIngredient input1, ILiquidStack fluid, int ticktime, int euTick, boolean useOreDic);
 ```
 
-## Removing Recipes
+## Usuwanie przepisów
 ```zenscript
-mods.techreborn.industrialSawmill.removeInputRecipe(IIngredient ingredient);
-mods.techreborn.industrialSawmill.removeRecipe(IItemStack output);
+mods.techreborn.industrialSawmill.removeInputRecipe(składnik składnika);
+mods.techreborn.industrialSawmill.removeRecipe(wyjście IItemStack);
 mods.techreborn.industrialSawmill.removeAll();
 ```

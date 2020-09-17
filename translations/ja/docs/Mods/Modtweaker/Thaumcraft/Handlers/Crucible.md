@@ -1,23 +1,23 @@
-# Crucible
+# るつぼ可能
 
-This package allows you to add and remove recipes to/from the Crucible.
+このパッケージでは、レシピをCrucibleに追加および削除できます。
 
 ## パッケージのインポート
 
-You can [import](/AdvancedFunctions/Import/) the package and its methods to facilitate the retrival of the methods.
+[パッケージとそのメソッドを](/AdvancedFunctions/Import/) インポートして、メソッドの再取得を促進できます。
 
 ```zenscript
 import mods.thaumcraft.Crucible;
 ```
 
-## Adding recipes
+## レシピの追加
 
 ```zenscript
-//mods.thaumcraft.Crucible.registerRecipe(String name, String researchKey, IItemStack output, IIngredient input, CTAspectStack[] aspects);
-mods.thaumcraft.Crucible.registerRecipe("crucibleTest", "", <minecraft:diamond>, <minecraft:stick>, [<aspect:aer>]);
+//mods.thaumcraft.Crucible.registerRecipe(String研究キー, IItemStack出力, IIngredient入力, CTAspectStack[] aspects);
+mods.thaumcraft.Crucible.registerRecipe("crumbleTest", "", <minecraft:diamond>, <minecraft:stick>, [<aspect:aer>]);
 ```
 
-## Removing recipes
+## レシピを削除
 
 ```zenscript
 //mods.thaumcraft.Crucible.removeRecipe(String name);

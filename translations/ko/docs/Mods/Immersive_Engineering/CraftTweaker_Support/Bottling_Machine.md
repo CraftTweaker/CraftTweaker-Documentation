@@ -12,7 +12,7 @@ You can call the BottlingMachine package using `mods.immersiveengineering.Bottli
 | Required | Input  | [IIngredient](/Vanilla/Variable_Types/IIngredient/) |
 | Required | Fluid  | [Fluidstack](/Vanilla/Liquids/ILiquidStack/)        |
 
-### Example
+### 예제
 
 ```zenscript
 //Example:
@@ -26,7 +26,7 @@ mods.immersiveengineering.BottlingMachine.addRecipe(<minecraft:diamond>, <ore:lo
 | ------ | ---------------------------------------- |
 | Output | [IItemstack](/Vanilla/Items/IItemStack/) |
 
-### Example
+### 예제
 
 ```zenscript
 //Example:

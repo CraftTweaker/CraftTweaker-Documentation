@@ -1,26 +1,26 @@
-# Natural Altar
+# 自然のアルタ
 
-## Package
+## パッケージ
 ```zenscript
-mods.naturesaura.Altar
+mods.naturesaura.Altarアルタ
 ```
 
-## Methods
-- **String Name**
-- **[IIngredient](/Vanilla/Variable_Types/IIngredient) input** The altars input.
-- **[IItemStack](/Vanilla/Items/IItemStack) output** The altars output.
-- **[IIngredient](/Vanilla/Variable_Types/IIngredient) catalyst** The catalyst block that is placed on one of the four corner blocks, can be null
-- **int aura** The amount of Aura required for the completion of the recipe
-- **int time** The time processes take in ticks
+## メソッド
+- **文字列名**
+- **[IIngredient](/Vanilla/Variable_Types/IIngredient) input** 祭壇の入力。
+- **[IItemStack](/Vanilla/Items/IItemStack) 出力** 祭壇の出力。
+- **[IIngredient](/Vanilla/Variable_Types/IIngredient) 触媒** 4つのコーナーブロックのいずれかに配置される触媒ブロックは、null にすることができます
+- **int aura** レシピの完成に必要なオーラの量
+- **int time** プロセスに要するティック数
 
-## Addition
+## 加算
 
 ```zenscript
-mods.naturesaura.Altar.addRecipe(String name, IIngredient input, IItemStack output, IIngredient catalyst, int aura, int time)
+mods.naturesaura.AnimalSpawnermods.naturesaura.Altar.addRecipe(String name, IIngredient input, IItemStack output, IIngredient catalyst, int aura, int time)
 ```
 
-## Removal
+## 削除
 
 ```zenscript
-mods.naturesaura.Altar.removeRecipe(IItemStack output)
+mods.naturesaura.AnimalSpawnermods.naturesaura.Altar.removeRecipe(IItemStack output)
 ```

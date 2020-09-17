@@ -1,28 +1,28 @@
-# Blood Magic
+# Кровавая Магия
 
-**This Support is WIP** **If Something Breaks, please open an issue on the issue tracker!** [Issue-Tracker Link](https://github.com/Coders-After-Dark/CompatSkills/issues)
+**Эта поддержка является WIP** **Если что-то нарушается, пожалуйста, откройте проблему на трекере проблем!** [Ссылка на проблему](https://github.com/Coders-After-Dark/CompatSkills/issues)
 
-## Binding:
+## Привязка:
 
-This will cancel the Item Binding in Blood Magic for said specific item if the player doesn't meet the requirements.
+Это действие отменит привязку предмета в Кровавой магии для указанного предмета, если игрок не соответствует требованиям.
 
-### Syntax:
+### Синтаксис:
 
-    Blank Example:
-    mods.compatskills.BindHandler.addBindLock(String failureMessage, IItemStack stack, String... requirements);
+    Пример пусто:
+    mods.compatskills.BindHandler.addBindLock(String failureMessage, IItemStack, String... requirements);
     
-    Test Example:
-    mods.compatskills.BindHandler.addBindLock("Untold Dark Energies swirl around you and then subside", <bloodmagic:blood_orb>.withTag({orb: "bloodmagic:weak"}), "reskillable:building|15", "reskillable:magic|7", "stage|test", "adv|minecraft:husbandry/plant_seed");
+    Тестовые примеры:
+    mods.compatskills.BindHandler.addBindLock("Неизведанная черная Энергия вокруг, а затем суббота", <bloodmagic:blood_orb>.withTag({orb: "bloodmagic:weak"}), "reskillable:building|15", "reskillable:magic|7", "stage|test", "adv|minecraft:husbandry/plant_seed");
     
 
-## Rituals:
+## Ритуалы:
 
-This will cancel the activation of a ritual if the player doesn't meet the requirements.
+Это отменит активацию ритуала, если игрок не соответствует требованиям.
 
-### Syntax:
+### Синтаксис:
 
-    Blank Example:
+    Пример пусто:
     mods.compatskills.RitualHandler.addRitualLock(String failureMessage, String ritual, String... requirements)
     
     Test Example:
-    mods.compatskills.RitualHandler.addRitualLock("As the ritual activates, you don't achieve the expected result", "ritualCrushing", "reskillable:building|15", "reskillable:magic|7", "stage|test", "adv|minecraft:husbandry/plant_seed")
+    mods.compatskills.RitualHandler.addRitualLock("Когда ритуал активирует, вы не достигаете ожидаемого результата", "ritualCrushing", "reskillable:building|15", "reskillable:magic|7", "stage|test", "adv|minecraft:husbandry/plant_seed")

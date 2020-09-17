@@ -1,32 +1,32 @@
 # MCAxisAlignedBB
 
-A MineCraft Axis Aligned Boundary Box object allows you change a [Block's](/Mods/ContentTweaker/Vanilla/Creatable_Content/Block/) Boundary borders to a given cuboid shape.
+Объект MineCraft Aligned Boundary Box позволяет изменить границы [блока](/Mods/ContentTweaker/Vanilla/Creatable_Content/Block/) Границы до данной фигуры.
 
 ## Импорт пакета
 
-It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
-`import mods.contenttweaker.AxisAlignedBB;`
+Возможно, вам потребуется импортировать пакет, если вы столкнетесь с какими-либо проблемами, так что лучше быть безопасным чем извините и добавьте импорт.  
+`импортировать mods.contenttweaker.AxisAlignedBB;`
 
-## Calling an MCAxisAlignedBB object
+## Вызов MCAxisAlignedBB объекта
 
-You can get such an object using a [Block's](/Mods/ContentTweaker/Vanilla/Creatable_Content/Block/) `axisAlignedBB` Property.  
-Alternatively, you can use this package to create a new MCAxisAlignedBB object:
+Такой объект можно получить используя свойство [Block's](/Mods/ContentTweaker/Vanilla/Creatable_Content/Block/) `axisAlignedBB` Свойства.  
+Или вы можете использовать этот пакет для создания нового объекта MCAxisAlignedBBB:
 
 ```zenscript
-AxisAlignedBB.create(double minX, double minY, double minZ, double maxX, double maxY, double maxZ);
+AxisAlignedBB.create(двойная минута, двойная минута, двойной минута, двойной макс. макс. макс. двойной maxZ);
 ```
 
-All parameters for this function are doubles between 0 and 1!
+Все параметры этой функции удваиваются между 0 и 1!
 
-## ZenProperties
+## Свойства ZenProperties
 
-You can get and set each Property using `getProperty()` or `object.property`.
+Вы можете получить и установить каждое свойство, используя `getProperty()` или `object.property`.
 
-| ZenProperty | Type   |
-| ----------- | ------ |
-| minX        | double |
-| minY        | double |
-| minZ        | double |
-| maxX        | double |
-| maxY        | double |
-| maxZ        | double |
+| ЗенСобственность | Тип    |
+| ---------------- | ------ |
+| минХ             | double |
+| minY             | double |
+| minZ             | double |
+| maxX             | double |
+| макс. Y          | double |
+| maxZ             | double |

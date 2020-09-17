@@ -1,40 +1,40 @@
-# Refinery
+# 製鋼所
 
-The Refinery is a multiblock structure which uses heat to convert an input fluid to two or more output fluids. The multiblock consists of two to four (inclusive) refinery blocks, and the number of possible output fluids is limited by the number of refinery blocks in the structure.
+Refineryは、熱を使用して入力流体を2つ以上の出力流体に変換するマルチブロック構造です。 マルチブロックは2~4個の精製ブロックで構成されています 可能な出力流体の数は構造内の精製ブロックの数によって制限されます
 
-Prior to PneumaticCraft: Repressurized v0.9.0, the minimum temperature for any Refinery recipe (i.e. the temperature at which procesing starts) was always 373K, or 100°C. However, in v0.9.0 and later, it is possible to specify a minimum temperature when adding a Refinery recipe.
+空圧クラフトより前: すべての精製レシピの最小温度(すなわち、プロセス開始時の温度)は常に373K、または100°Cでした。 しかし、v0.9.0以降では、精製レシピを追加する際の最低気温を指定することができます。
 
-The Refinery will start processing fluids at the recipe's minimum temperature, and will work faster as the temperature rises.
+精製所は、レシピの最低温度で液体の処理を開始し、温度が上昇するとより速く動作します。
 
-Note that it's possible to have two or more recipes with the same input, as long as the number of outputs is different. In this case, the recipe producing the most possible outputs (given the number of refinery blocks in the multiblock) will be used.
+出力数が異なる限り、同じ入力を持つレシピを 2 つ以上持つことが可能であることに注意してください。 この場合、最も可能な出力を生成するレシピ(マルチブロック内の精製ブロックの数を考える)が使用されます。
 
-## Calling
+## 発信中
 
-You can call the Refinery package using `mods.pneumaticcraft.refinery`.
+`mods.empaticcraft.refinery` を使って、製錬所パッケージを呼び出すことができます。
 
-## Removing
+## 削除中
 
-This function removes the first recipe it finds which matches all of the given [IIngredient](/Vanilla/Variable_Types/IIngredient/) `outputs`:
-
-```zenscript
-mods.pneumaticcraft.refinery.removeRecipe(IIngredient[] outputs);
-```
-
-This function removes the first recipe it finds which matches the given [IIngredient](/Vanilla/Variable_Types/IIngredient/) `input`:
+この関数は、与えられた [IIngredient](/Vanilla/Variable_Types/IIngredient/) `出力` のすべてに一致する最初のレシピを削除します。
 
 ```zenscript
-mods.pneumaticcraft.refinery.removeRecipes(IIngredient input);
+mods.emeraticcraft.finery.removeRecipe(IIngredient[] outputs);
 ```
 
-This function will remove *all* Refinery recipes:
+この関数は、与えられた [IIngredient](/Vanilla/Variable_Types/IIngredient/) `入力` に一致する最初のレシピを削除します。
 
 ```zenscript
-mods.pneumaticcraft.refinery.removeAllRecipes();
+mods.emeraticcraft.finery.removeRecipes(IIngredient input);
 ```
 
-## Adding
+この機能は *製鋼所のレシピを* 削除します。
 
-These functions add a new recipe to the Refinery:
+```zenscript
+mods.emeraticraft.finery.removeAllRecipes();
+```
+
+## 追加中
+
+これらの機能は合金鉱山に新しいレシピを追加します。
 
 ```zenscript
 // Add a recipe with the default minimum temperature of 373K (100°C)

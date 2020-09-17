@@ -1,35 +1,35 @@
-# Steelworks
+# Стальные работы
 
-The Steelworks is a machine that converts an input item and fluid into an output item using steam.
+Стальные работы - это машина, которая преобразует входной элемент и жидкость в выходной элемент с помощью пара.
 
-## Calling
+## Звонок
 
-You can call the Steelworks package using `mods.steamagerevolution.Steelworks`.
+Вы можете вызвать пакет Steelworks с помощью `mods.steamagerevolution.Steelworks`.
 
-## Removing
+## Удаление
 
-This function removes the first recipe they find with the given [IItemStack](/Vanilla/Items/IItemStack/) `output`:
+Эта функция удаляет первый рецепт, который он находит с данным [IItemStack](/Vanilla/Items/IItemStack/) `вывод`:
 
 ```java
-mods.steamagerevolution.Steelworks.removeRecipe(IItemStack output);
+mods.steamagerevolution.Steelworks.removeRecipe(IItemStack);
 
-// Examples
+// Примеры
 mods.steamagerevolution.Steelworks.removeRecipe(<ore:ingotSteel>.firstItem);
 ```
 
-This function removes *all* recipes currently defined for the Steelworks:
+Эта функция удаляет *все* рецепты, определенные в настоящее время для стальных работ:
 
 ```java
 mods.steamagerevolution.Steelworks.removeAll();
 ```
 
-## Adding
+## Добавление
 
-This function is used to add new recipes for the Steelworks:
+Эта функция используется для добавления новых рецептов для сталеплавильных работ:
 
 ```java
 mods.steamagerevolution.Steelworks.addRecipe(ILiquidStack input, IIngredient input2, IItemStack output, int craftTime, int steamCost);
 
-// Examples
-mods.steamagerevolution.Steelworks.addRecipe(<liquid:iron>, <ore:coal>, <ore:ingotSteel>.firstItem, 200, 200);
+// Примеры
+mods.steamagerevolution.Steelworks.addRecipe(<liquid:iron>, <ore:coal>, <ore:ingotSteel>.firstItem, 200;
 ```

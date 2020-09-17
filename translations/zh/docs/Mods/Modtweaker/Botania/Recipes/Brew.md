@@ -1,26 +1,26 @@
-# Botania Brewing
+# 博塔尼亚酿造公司
 
-The Brew package is used for adding or removing recipes to/from the Botania Brewing Stand.
+Brew 软件包用于添加或从Botania Brewing Stande中移除配方。
 
 ## 导入包
 
 You can call the Brew package using `mods.botania.Brew`
 
-## Brew Names
+## 酿造名称
 
-To use this Package, you need to know botania's registered Brew Names.  
-You can find them using [`/ct botbrews`](/Mods/Modtweaker/Botania/Commands/).
+要使用这个包，您需要知道机器人注册的Brew 名称。  
+您可以使用 [`/ct botbrews`](/Mods/Modtweaker/Botania/Commands/) 找到他们。
 
 ## 添加配方
 
 ```zenscript
-//mods.botania.Brew.addRecipe(IIngredient[] input, String brewName);
-mods.botania.Brew.addRecipe([<minecraft:nether_wart>, <minecraft:reeds>, <minecraft:redstone>], "speed");
+//mods.botania.Brew.addRecipe(IIngredient[……]input, String brewName);
+mods.botania.Brew.addRecipe(for [<minecraft:nether_wart>, <minecraft:reeds>, <minecraft:redstone>], "speed");
 ```
 
-## Recipe removal
+## 删除配方
 
 ```zenscript
 //mods.botania.Brew.removeRecipe(String brewName);
-mods.botania.Brew.removeRecipe("absorption");
+mods.botania.Brew.removeRecipe("吸收");
 ```

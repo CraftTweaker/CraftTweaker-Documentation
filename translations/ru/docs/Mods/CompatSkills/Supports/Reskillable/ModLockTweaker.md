@@ -1,17 +1,17 @@
-# Mod-Lock Tweaker
+# Твикер Блокировки Мода
 
-## Mod-Locking
+## Блокировка модов
 
-This was added as a capability for configs in 1.2.0 and now has a CrT ZenMethod implemented to support it. This can also be accomplished through the configs as previously mentioned.
+Это было добавлено как возможность конфигурации в 1.2.0 и теперь реализован CrT ZenMethod для его поддержки. Это также может быть сделано с помощью конфигурации, как уже упоминалось ранее.
 
-Mod-Locks allow you to lock all ItemStacks from a specific mod behind a specific lock.
+Блокировки модов позволяют вам блокировать все стеки ItemStacks из определенного мода за определенным блоком.
 
-### Syntax:
+### Синтаксис:
 
-    // Blank Example
-    mods.compatskills.ModLock.addModLock(String modId, String... locked);
+    // Пустой пример
+    mods.compatskills.ModLock.addModLock(String modId, String... заблокирован);
     
-    // Working Example:
+    // Пример работы:
     mods.compatskills.ModLock.addModLock("minecraft", "reskillable:building|4");
     
-    The above lock will lock everything from the mod "minecraft" behind a lock of "building 4"
+    Замок заблокирует всё от мода "minecraft" за замком "building 4"

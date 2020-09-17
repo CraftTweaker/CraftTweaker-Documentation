@@ -1,16 +1,16 @@
-# Grinder
+# グラインダー
 
-## Importing the Package
+## パッケージのインポート
 `mods.techreborn.grinder`
 
-## Adding Recipes
+## レシピを追加中
 ```zenscript
-mods.techreborn.grinder.addRecipe(IItemStack output, IIngredient input1, int ticktime, int euTick);
+mods.techreborn.grinder.addRecipe(IItemStack 出力, IIngredient input1, int ticktime, int euTick);
 ```
 
-## Removing Recipes
+## レシピを削除
 ```zenscript
-mods.techreborn.grinder.removeInputRecipe(IIngredient ingredient);
+mods.techreborn.grinder.removeInputRecipe(IInputRecipe));
 mods.techreborn.grinder.removeRecipe(IItemStack output);
 mods.techreborn.grinder.removeAll();
 ```

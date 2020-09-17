@@ -1,45 +1,45 @@
-# Death Chest Defense
+# Defensa del Cofre de la Muerte
 
-## Importing the package
+## Importando el paquete
 
-`import mods.vanilladeathchest.DeathChestDefense;`
+`importar mods.vanilladeathchest.DeathChestDefense;`
 
-## Unlocker item
+## Objeto de desbloqueo
 
 ```zenscript
-//DeathChestDefense.setUnlocker(string stage, IItemStack unlocker);
+//DeathChestDefense.setUnlocker(etapa de cadena, desbloqueo de IIItemStack);
 DeathChestDefense.setUnlocker("example_stage", <minecraft:diamond_axe> * 1000);
 ```
 
-A consumption/damage amount can be set by specifying a stack size like above.
+Una cantidad de consumo/daño puede establecerse especificando un tamaño de pila como arriba.
 
-## Damage the unlocker item rather than consuming it
+## Dañar el objeto de desbloqueador en lugar de consumirlo
 
 ```zenscript
-//DeathChestDefense.setDamageUnlockerInsteadOfConsume(string stage, bool flag);
+//DeathChestDefense.setDamageUnlockerInsteadOfConsume(etapa de cadena, bandera del bool);
 DeathChestDefense.setDamageUnlockerInsteadOfConsume("example_stage", true);
 ```
 
-## Unlock failed chat message
+## Desbloquear mensaje de chat fallido
 
 ```zenscript
-//DeathChestDefense.setUnlockFailedChatMessage(string stage, string message);
-DeathChestDefense.setUnlockFailedChatMessage("example_stage", "You need to get a %2$s to unlock your chest!");
+//DeathChestDefense.setUnlockFailedChatMessage(etapa de cadena, mensaje de cadena);
+DeathChestDefense.setUnlockFailedChatMessage("example_stage", "¡Necesitas obtener un %2$s para desbloquear tu cofre!");
 ```
 
-The string takes two arguments: the amount and display name of the required items.
+La cadena toma dos argumentos: la cantidad y el nombre a mostrar de los elementos requeridos.
 
-## Defense entity
+## Entidad de defensa
 
 ```zenscript
-//DeathChestDefense.setDefenseEntity(string stage, IEntityDefinition defenseEntity);
+//DeathChestDefense.setDefenseEntity(etapa de cadena, IEntityDefinition defenseEntity);
 DeathChestDefense.setDefenseEntity("example_stage", <entity:minecraft:zombie_pigman>);
 ```
 
-## Defense entity NBT
+## Entidad de defensa NBT
 
 ```zenscript
-//DeathChestDefense.setDefenseEntityNBT(string stage, IData nbt);
+//DeathChestDefense.setDefenseEntityNBT(etapa de cadena);
 DeathChestDefense.setDefenseEntityNBT("example_stage", {
     HandItems: [
         {
@@ -50,9 +50,9 @@ DeathChestDefense.setDefenseEntityNBT("example_stage", {
 });
 ```
 
-`nbt` should be a [DataMap](/Vanilla/Data/DataMap/).
+`Espíritu` debe ser un [DataMap](/Vanilla/Data/DataMap/).
 
-## Defense entity spawn count
+## Conteo de generación de entidades de defensa
 
 ```zenscript
 //DeathChestDefense.setDefenseEntitySpawnCount(string stage, int count);

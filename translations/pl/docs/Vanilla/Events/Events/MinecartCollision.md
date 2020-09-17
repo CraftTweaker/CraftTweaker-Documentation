@@ -1,19 +1,19 @@
 # MinecartCollision
 
-MinecartCollisionEvent is fired whenever a minecart collides with an entity.
+Zdarzenie MinecartCollisionEvent jest uruchamiane za każdym razem, gdy wagonik koliduje z jednostką.
 
-## Event Class
-You will need to cast the event in the function header as this class:  
-`crafttweaker.event.MinecartCollisionEvent`  
-You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
+## Klasa wydarzenia
+Musisz aktywować wydarzenie w nagłówku funkcji jako klasa:  
+`crafttweaker.event. Wydarzenie inecartCollision`  
+Oczywiście możesz również [zaimportować](/AdvancedFunctions/Import/) klasę przed i wtedy użyć tej nazwy.
 
-## Event interface extensions
-MinecartCollision Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+## Rozszerzenia interfejsu zdarzenia
+Zdarzenia MinecartCollision implementują następujące interfejsy i są również w stanie wywołać wszystkie swoje metody/getters/setters:
 
-- [IMinecartEvent](/Vanilla/Events/Events/IMinecartEvent/)
+- [Wydarzenie IMinecart](/Vanilla/Events/Events/IMinecartEvent/)
 
 ## ZenGetters
 
-| ZenGetter  | Type                                  |
-| ---------- | ------------------------------------- |
-| `collider` | [IEntity](/Vanilla/Entities/IEntity/) |
+| ZenGetter | Typ                                   |
+| --------- | ------------------------------------- |
+| `zderz`   | [IEntity](/Vanilla/Entities/IEntity/) |

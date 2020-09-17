@@ -1,63 +1,63 @@
 # JAOPCA
 
-[JAOPCA](https://minecraft.curseforge.com/projects/jaopca) (Just A Ore Processing Compatibility Attempt) is a mod that aims to add ore processing compatibilty to many mods.
+[JAOPCA](https://minecraft.curseforge.com/projects/jaopca) (只需一个矿石处理兼容性尝试) 是一个旨在将矿石处理兼容性添加到许多模式的模组。
 
 ## 导入相关包
 
-If you want to shorten your method calls, you can import the package.  
-You can do so using
+如果你想要缩短你的方法调用，你可以导入包。  
+你可以这样做。
 
 ```zenscript
-import mods.jaopca.JAOPCA;
+导入 mods.jaopca.JAOPCA;
 ```
 
-## Methods
+## 方法
 
-This package is your entry point for JAOPCA. It provides a means of checking for and getting [OreEntry](/Mods/JAOPCA/OreEntry/) objects. Check the respective page for further information, but in short they are material names (e.g. "Gold") that can then have entries, like chunks, dusts and all.
+此软件包是您的 JAOPCA 的切入点。 它提供了检查和获取 [Oreentry](/Mods/JAOPCA/OreEntry/) 对象的手段。 检查相应页面以获取更多信息，但简而言之，它们是材料名称(e)。 。"金") 然后可以有条目，例如块、粉尘和所有。
 
-- Entry: e.g. "nugget", "dust", "molten", ... (check [here](/Mods/JAOPCA/RegisteredEntries/) for a list of them all)
-- [OreEntry](/Mods/JAOPCA/OreEntry/): e.g. "Diamond", "Coal", "Redstone", ...
-- OreType: e.g. "INGOT", "GEM", "DUST"
+- 条目：例如，"nugget", "dust", "molten", ... (check [here](/Mods/JAOPCA/RegisteredEntries/) for a list of them all)
+- [深入](/Mods/JAOPCA/OreEntry/): 例如："钻石", "Coal", "Redstone", ...
+- OreType: e.g. "InGOT", "GEM", "DUST"
 
-### Check if an entry exists
+### 检查条目是否存在
 
-Returns `true` if an entry with the given name exists
+如果存在具有给定名称的条目则返回 `true`
 
 ```zenscript
-//mods.jaopca.JAOPCA.containsEntry(entryName);
+//mods.jaopca.JAOPCA.containsEntry(入口名称);
 mods.jaopca.JAOPCA.containsEntry("nugget");
 ```
 
-### Get an OreEntry
+### 获取一个 Oreentre
 
-Returns the given [OreEntry](/Mods/JAOPCA/OreEntry/) for the given name, or `null` if it does not exist. *Careful: Most materials are Capitalized, and yes, casing matters!*
+返回给定名称的 [Oreentre](/Mods/JAOPCA/OreEntry/) 或 `null ，如果它不存在，则返回`。 *小心：大多数材料都是资本化的，是的，套装很重要！*
 
 ```zenscript
 //mods.jaopca.JAOPCA.getOre(oreName);
 mods.jaopca.JAOPCA.getOre("Coal");
 ```
 
-### Get all OreEntries for an entry
+### 获取所有的 Oreentres 条目以获取一个条目
 
-Returns a list of all [OreEntry](/Mods/JAOPCA/OreEntry/) objects that have the given entry registered.
+返回所有 [Oreentry](/Mods/JAOPCA/OreEntry/) 对象的列表，这些对象已经注册了给定条目。
 
 ```zenscript
-//mods.jaopca.JAOPCA.getOresForEntry(entryName);
+//mods.jaopca.JAOPCA.getOresForEntry(入口名称);
 mods.jaopca.JAOPCA.getOresForEntry("nugget");
 ```
 
-### Get all OreEntries for an entry
+### 获取所有的 Oreentres 条目以获取一个条目
 
-Returns a list of all [OreEntry](/Mods/JAOPCA/OreEntry/) objects that are of the given oreType.
+返回给定类型的所有 [Oreentry](/Mods/JAOPCA/OreEntry/) 对象的列表。
 
 ```zenscript
 //mods.jaopca.JAOPCA.getOresForType(oreType);
 mods.jaopca.JAOPCA.getOresForType("GEM");
 ```
 
-### Get all registered OreEntries
+### 获取所有注册的 Oreentes
 
-Returns a list of all registered [OreEntry](/Mods/JAOPCA/OreEntry/) objects.
+返回所有注册的 [Oreentry](/Mods/JAOPCA/OreEntry/) 对象的列表。
 
 ```zenscript
 mods.jaopca.JAOPCA.getAllOres();

@@ -1,26 +1,26 @@
-# Natural Altar
+# Altar natural
 
-## Package
+## Paquete
 ```zenscript
-mods.naturesaura.Altar
+mods.naturesaura.AltarAltar
 ```
 
 ## Metodos
-- **String Name**
-- **[IIngredient](/Vanilla/Variable_Types/IIngredient) input** The altars input.
-- **[IItemStack](/Vanilla/Items/IItemStack) output** The altars output.
-- **[IIngredient](/Vanilla/Variable_Types/IIngredient) catalyst** The catalyst block that is placed on one of the four corner blocks, can be null
-- **int aura** The amount of Aura required for the completion of the recipe
-- **int time** The time processes take in ticks
+- **Nombre de cadena**
+- **[IIngrediente](/Vanilla/Variable_Types/IIngredient) entrada** La entrada de los altares.
+- **[ItemStack](/Vanilla/Items/IItemStack) salida** Los altares.
+- **[Catalizador IIngrediente](/Vanilla/Variable_Types/IIngredient)** El bloque de catalizador que se coloca en uno de los cuatro bloques de esquina, puede ser nulo
+- **int aura** La cantidad de Aura necesaria para completar la receta
+- **int time** El proceso de tiempo toma ticks
 
-## Addition
+## Adicional
 
 ```zenscript
-mods.naturesaura.Altar.addRecipe(String name, IIngredient input, IItemStack output, IIngredient catalyst, int aura, int time)
+mods.naturesaura.AnimalSpawnermods.naturesaura.Altar.addRecipe(String name, IIngredient input, IItemStack output, IIngredient catalyst, int aura, int time)
 ```
 
-## Removal
+## Eliminar
 
 ```zenscript
-mods.naturesaura.Altar.removeRecipe(IItemStack output)
+mods.naturesaura.AnimalSpawnermods.naturesaura.Altar.removeRecipe(IItemStack output)
 ```

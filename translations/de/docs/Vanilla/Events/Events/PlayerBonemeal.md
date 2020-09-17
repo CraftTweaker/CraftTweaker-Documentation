@@ -1,16 +1,16 @@
-# PlayerBonemeal
+# Spieler-Knochenmehl
 
-The PlayerBonemeal Event is fired whenever a player uses bonemeal on a block.
+Das SpielerBonemeal Event wird abgefeuert, wenn ein Spieler Knochenmehl auf einen Block setzt.
 
 ## Event-Klasse
 
-You will need to cast the event in the function header as this class:  
-`crafttweaker.event.PlayerBonemealEvent`  
-You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
+Du musst das Ereignis als diese Klasse in den Funktionskopf verschieben:  
+`crafttweaker.event. layerBonemealEvent`  
+Sie können natürlich auch [die Klasse vor](/AdvancedFunctions/Import/) importieren und dann diesen Namen verwenden.
 
 ## Erweiterte Event-Schnittellen
 
-PlayerBonemeal Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+PlayerBonemeal Events implementieren die folgenden Schnittstellen und können alle ihre Methoden/Getter/Setter auch aufrufen:
 
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 - [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
@@ -21,22 +21,22 @@ PlayerBonemeal Events implement the following interfaces and are able to call al
 
 Die folgenden Informationen lassen sich von diesem Event (Ereignis) abrufen:
 
-| ZenGetter    | Rückgabetyp                                 |
-| ------------ | ------------------------------------------- |
-| `canceled`   | boolean                                     |
-| `processed`  | boolean                                     |
-| `x`          | int                                         |
-| `y`          | int                                         |
-| `z`          | int                                         |
-| `player`     | [IPlayer](/Vanilla/Players/IPlayer/)        |
-| `world`      | [IWorld](/Vanilla/World/IWorld/)            |
-| `block`      | [IBlock](/Vanilla/Blocks/IBlock/)           |
-| `blockState` | [IBlockState](/Vanilla/Blocks/IBlockState/) |
-| `blockPos`   | [IBlockPos](/Vanilla/World/IBlockPos/)      |
-| `dimension`  | int                                         |
-| `item`       | [IItemStack](/Vanilla/Items/IItemStack/)    |
+| ZenGetter     | Rückgabetyp                                 |
+| ------------- | ------------------------------------------- |
+| `abgebrochen` | boolean                                     |
+| `bearbeitet`  | boolean                                     |
+| `x`           | int                                         |
+| `y`           | int                                         |
+| `z`           | int                                         |
+| `player`      | [IPlayer](/Vanilla/Players/IPlayer/)        |
+| `Welt`        | [IWorld](/Vanilla/World/IWorld/)            |
+| `blockieren`  | [IBlock](/Vanilla/Blocks/IBlock/)           |
+| `blockstatus` | [IBlockState](/Vanilla/Blocks/IBlockState/) |
+| `blockPos`    | [IBlockPos](/Vanilla/World/IBlockPos/)      |
+| `maße`        | int                                         |
+| `eintrag`     | [IItemStack](/Vanilla/Items/IItemStack/)    |
 
-## ZenMethods
+## ZenMethoden
 
-- `event.cancel()` sets the event as cancelled
-- `event.process()` sets the event as processed
+- `event.cancel()` setzt das Ereignis als abgebrochen
+- `event.process()` setzt das Ereignis wie bearbeitet

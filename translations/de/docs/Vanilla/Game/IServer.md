@@ -2,29 +2,29 @@
 
 ## Dieses Paket importieren
 
-It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
-`import crafttweaker.server.IServer;`
+Möglicherweise ist es erforderlich, dass Sie das Paket importieren, wenn Sie irgendwelche Probleme haben (z.B. [Array](/AdvancedFunctions/Arrays_and_Loops/)), also besser sicher sein als bedauern und fügen Sie den Import.  
+`importiere crafttweaker.server.IServer;`
 
-## Extending ICommandSender
+## ICommandSender erweitern
 
-IServer extends [ICommandSender](/Vanilla/Commands/ICommandSender), so all methods that are available for an [ICommandSender](/Vanilla/Commands/ICommandSender) object are also available for an IServer object.
+IServer erweitert [ICommandSender](/Vanilla/Commands/ICommandSender), so dass alle Methoden, die für ein [ICommandSender](/Vanilla/Commands/ICommandSender) Objekt verfügbar sind, auch für ein IServer Objekt verfügbar sind.
 
-## Access the Server Handler
+## Zugriff auf den Server-Handler
 
-You can access the Server Handler using the `server` [global keyword](/Vanilla/Global_Functions/).  
-Alternatively you can get the server from any [ICommandSender](/Vanilla/Commands/ICommandSender/).
+Sie können auf den Server-Handler mit dem `-Server` [globalen Schlüsselwort](/Vanilla/Global_Functions/)zugreifen.  
+Alternativ können Sie den Server von jedem [ICommandSender](/Vanilla/Commands/ICommandSender/) herunterladen.
 
-## Check if a [player](/Vanilla/Players/IPlayer/) is OP
+## Prüft, ob ein [Spieler](/Vanilla/Players/IPlayer/) OP ist
 
-You can use this to check if an [IPlayer](/Vanilla/Players/IPlayer/) has the OP permission:
+Sie können dies verwenden, um zu überprüfen, ob ein [IPlayer](/Vanilla/Players/IPlayer/) die OP Berechtigung hat:
 
 ```zenscript
-server.isOP(player);
+server.isOP(Spieler);
 ```
 
-## Get the command manager
+## Den Befehlsmanager abrufen
 
-You can use this to get the [ICommandManager](/Vanilla/Commands/ICommandManager/)
+Sie können dies verwenden, um den [ICommandManager](/Vanilla/Commands/ICommandManager/) zu erhalten
 
 ```zenscript
 server.commandManager;

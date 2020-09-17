@@ -1,28 +1,28 @@
-# Grinder
+# Schleifer
 
-The Grinder is a machine that converts an input item into an output item using steam.
+Der Schleifer ist eine Maschine, die einen Eingangsgegenstand mit Dampf in ein Ausgangselement umwandelt.
 
-## Package
-`mods.steamagerevolution.Grinder`
+## Paket
+`mods.steamagerevolution.Schleifer`
 
 ## Methoden
 
-- **[IItemStack](/Vanilla/Items/IItemStack/) output** The result of the recipe.
-- **[IItemStack](/Vanilla/Items/IItemStack/) input** The input of the recipe.
-- **int craftTime** Crafting time for machine to process
-- **int steamCost** Cost of Steam for machine to process
+- **[IItemStack](/Vanilla/Items/IItemStack/) Ausgabe** Das Ergebnis des Rezeptes.
+- **[IItemStack](/Vanilla/Items/IItemStack/) Eingabe** Die Eingabe des Rezeptes.
+- **int CraftTime** Herstellungszeit für Maschine zum Verarbeiten
+- **Int Dampfkosten** Dampfkosten für Maschine zum Verarbeiten
 
 ## Addition
 
 ```zenscript
-mods.steamagerevolution.Grinder.addRecipe(IIngredient input, IItemStack output, int craftTime, int steamCost);
+mods.steamagerevolution.Grinder.addRecipe(IIngredient Input, IItemStack Output, int craftTime, int steamCost);
 mods.steamagerevolution.Grinder.addRecipe(<ore:cobblestone>, <minecraft:gravel>, 200, 200);
 ```
 
-## Removing
+## Entfernen
 
 ```zenscript
-mods.steamagerevolution.Grinder.removeRecipe(IItemStack output);
+mods.steamagerevolution.Grinder.removeRecipe(IItemStack Ausgabe);
 mods.steamagerevolution.Grinder.removeRecipe(<minecraft:sand>);
 
 mods.steamagerevolution.Grinder.removeAll();

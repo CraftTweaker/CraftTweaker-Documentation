@@ -1,54 +1,54 @@
-# World Transmutation
+# 世界变换
 
-## add
+## 添加
 
-Adds a Philosopher Stone world transmutation, with an optional sneak click transmutation.
+添加一个Philosopher Stone世界的传输，可选的潜水点击传播。
 
 ### [IItemStack](/Vanilla/Items/IItemStack/)
 
 ```zenscript
-// If the IItemStack's do not have a coresponding block, air is used instead.
-mods.projecte.WorldTransmutation.add(IItemStack output, IItemStack input, @Optional IItemStack sneakOutput);
+/ 如果IItemStack没有焦炭块，则使用空气。
+mods.projecte.WorldTransmutation. d(StemStack 输出, IItemStack 输入, @Optional IItemStack sneakOutput);
 
-// Turn gold blocks into diamond blocks by right clicking, or into iron blocks by sneak right clicking 
-mods.projecte.WorldTransmutation.add(<minecraft:diamond_block>, <minecraft:gold_block>, <minecraft:iron_block>);
+// 通过右键将金块变成钻石块，或通过右键点击 
+模式变成铁块。 rojecte.WorldTransmutation.add(<minecraft:diamond_block>, <minecraft:gold_block>, <minecraft:iron_block>);
 ```
 
 ### [IBlockState](/Vanilla/Blocks/IBlockState/)
 
 ```zenscript
-mods.projecte.WorldTransmutation.add(IBlockState output, IBlockState input, @Optional IBlockState sneakOutput);
+mods.projecte.WorldTransmutation. dd(IBlockState output, IBlockState input, @Optional IBlockState sneakOut)；
 
-// Turn gold blocks into diamond blocks by right clicking, or into iron blocks by sneak right clicking
-mods.projecte.WorldTransmutation.add(<blockstate:minecraft:diamond_block>, <blockstate:minecraft:gold_block>, <blockstate:minecraft:iron_block>);
+// 通过右键将金块变成钻石块，或通过右键点击
+模式变成铁块。 rojecte.WorldTransmutation.add(<blockstate:minecraft:diamond_block>, <blockstate:minecraft:gold_block>, <blockstate:minecraft:iron_block>);
 ```
 
-## remove
+## remove #移除
 
-Removes the Philosopher Stone world transmutations that have the same input, output, and sneakOutput.
+移除具有相同输入、输出和sneakOutput的Philosopher Stone世界转换器。
 
 ### [IItemStack](/Vanilla/Items/IItemStack/)
 
 ```zenscript
-// If the IItemStack's do not have a coresponding block, air is used instead.
-mods.projecte.WorldTransmutation.remove(IItemStack output, IItemStack input, @Optional IItemStack sneakOutput);
+/ 如果IItemStack没有焦炭块，则使用空气。
+mods.projecte.WorldTranstransverve(IItemStack output, IItemStack input, @Optional IItemStack sneakOutput);
 
-// Removes the recipe allowing cobblestone to be changed into stone/grass
-mods.projecte.WorldTransmutation.remove(<minecraft:stone>, <minecraft:cobblestone>, <minecraft:grass>);
+// 移除允许cobblestone 更改为stone/grass
+mods的配方。 rojecte.WorldTransmutation.remove(<minecraft:stone>, <minecraft:cobblestone>, <minecraft:grass>);
 ```
 
 ### [IBlockState](/Vanilla/Blocks/IBlockState/)
 
 ```zenscript
-mods.projecte.WorldTransmutation.remove(IBlockState output, IBlockState input, @Optional IBlockState sneakOutput);
+mods.projecte.WorldTransmutation.remutation.remove(IBlockState output, IBlockState input, @Optional IBlockState sneakOutput);
 
-// Removes the recipe allowing cobblestone to be changed into stone/grass
-mods.projecte.WorldTransmutation.remove(<blockstate:minecraft:stone>, <blockstate:minecraft:cobblestone>, <blockstate:minecraft:grass>); 
+// 移除允许cobblestone 更改为stone/grass
+mods的配方。 rojecte.WorldTransmutation.remove(<blockstate:minecraft:stone>, <blockstate:minecraft:cobblestone>, <blockstate:minecraft:grass>); 
 ```
 
-## removeAll
+## 全部移除
 
-Removes all Philosopher Stone world transmutations, including any added by the user before the call to this method.
+移除所有Philosopher Stone世界的传输，包括用户在通话之前添加的传输。
 
 ```zenscript
 mods.projecte.PhiloStone.removeAllWorldTransmutation();

@@ -1,26 +1,26 @@
-# Steam Furnace
+# Dampföfen
 
-The Steam Furnace is a machine that converts an input item into an output item using steam.
+Der Dampföfen ist eine Maschine, die einen Eingangsgegenstand mit Dampf in einen Ausgangsgegenstand umwandelt.
 
-## Package
-`mods.steamagerevolution.SteamFurnace`
+## Paket
+`mods.steamagerevolution.Dampföfen`
 
 ## Methoden
 
-- **[IItemStack](/Vanilla/Items/IItemStack/) output** The result of the recipe.
-- **[IItemStack](/Vanilla/Items/IItemStack/) input** The input of the recipe.
-- **int craftTime** Crafting time for machine to process
-- **int steamCost** Cost of Steam for machine to process
+- **[IItemStack](/Vanilla/Items/IItemStack/) Ausgabe** Das Ergebnis des Rezeptes.
+- **[IItemStack](/Vanilla/Items/IItemStack/) Eingabe** Die Eingabe des Rezeptes.
+- **int CraftTime** Herstellungszeit für Maschine zum Verarbeiten
+- **Int Dampfkosten** Dampfkosten für Maschine zum Verarbeiten
 
 ## Addition
 
 ```zenscript
-mods.steamagerevolution.SteamFurnace.addRecipe(IIngredient input, IItemStack output, int craftTime, int steamCost);
+mods.steamagerevolution.SteamFurnace.addRecipe(IIngredient Input, IItemStack Output, int craftTime, int steamCost);
 mods.steamagerevolution.SteamFurnace.addRecipe(<ore:cobblestone>, <minecraft:stone>, 200, 200);
 ```
 
 
-## Removal
+## Entfernen
 
 ```zenscript mods.steamagerevolution.SteamFurnace.removeRecipe(IItemStack output); mods.steamagerevolution.SteamFurnace.removeRecipe(<minecraft:glass>);
 

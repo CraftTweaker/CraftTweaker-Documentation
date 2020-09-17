@@ -1,25 +1,25 @@
-# Crucible
+# るつぼ可能
 
-The Crucible is a machine that converts an input item into an output fluid using steam.
+るつぼは、蒸気を用いて入力項目を出力流体に変換する機械です。
 
-## Package
-`mods.steamagerevolution.Crucible`
+## パッケージ
+`mods.steamagerevolution.Crucable`
 
-## Methods
+## メソッド
 
-- **[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) output** The result of the recipe.
-- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input** The input of the recipe.
-- **int craftTime** Crafting time for machine to process
-- **int steamCost** Cost of Steam for machine to process
+- **[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) 出力** レシピの結果。
+- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input** レシピの入力。
+- **int craftTime** マシンの加工時間
+- **int steamCost** 機械が処理する蒸気のコスト
 
-## Addition
+## 加算
 
 ```zenscript
 mods.steamagerevolution.Crucible.addRecipe(IIngredient input, ILiquidStack output, int craftTime, int steamCost);
 mods.steamagerevolution.Crucible.addRecipe(<minecraft:obsidian>, <liquid:lava>*1000, 200, 200);
 ```
 
-## Removal
+## 削除
 
 ```zenscript
 mods.steamagerevolution.Crucible.removeRecipe(ILiquidStack);

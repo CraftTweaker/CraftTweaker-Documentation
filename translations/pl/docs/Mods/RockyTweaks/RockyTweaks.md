@@ -1,13 +1,13 @@
 # RockyTweaks
 
-## Information
+## Informacje
 
-Rocky Tweaks (formerly known as Rocky Core) adds the ability to tweak the Vanilla Anvil and Merchant (Villager) trades using CraftTweaker.
+Skamieniałe Ulepszenia (dawniej znane jako Rocky Core) zwiększają zdolność do ulepszania wymian Kowadła Wanili i Handlarza (Wioski) za pomocą CraftTweakera.
 
-### For More Information
+### Więcej informacji
 
-Project Page: [https://minecraft.curseforge.com/projects/rocky-tweaks](https://minecraft.curseforge.com/projects/rocky-tweaks)
+Strona projektu: [https://minecraft.curseforge.com/projects/rocky-tweaks](https://minecraft.curseforge.com/projects/rocky-tweaks)
 
-### Bug Reports
+### Raporty błędów
 
-Issue Tracker: [https://github.com/DevOnTheRocks/RockyTweaks/issues](https://github.com/DevOnTheRocks/RockyTweaks/issues)
+Śledzenie błędów: [https://github.com/DevOnTheRocks/RockyTweaks/issues](https://github.com/DevOnTheRocks/RockyTweaks/issues)

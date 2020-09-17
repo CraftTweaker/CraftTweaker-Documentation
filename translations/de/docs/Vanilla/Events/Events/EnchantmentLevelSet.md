@@ -1,30 +1,30 @@
-# EnchantmentLevelSetEvent
+# VerzauberungLevelSetEvent
 
-The EnchantmentLevelSet Event is fired when the levels for the three potential enchantments are generated in the Enchantment Table.
+Das Verzauberungslevel Event wird abgefeuert, wenn die Level für die drei möglichen Verzauberungen in der Verzauberungstabelle erzeugt werden.
 
-## Notes
+## Notizen
 
-`event.enchantRow` lists the row (1-3) of the Enchantment Table, while `event.originalLevel` represents the original level of the row. `event.power` is the cumulative value of bookshelves surrounding the Enchantment Table, while `event.item` is the item that is being enchanted.
+`event.enchantRow` listet die Zeile (1-3) der Verzauberungstabelle auf, während `event.originalLevel` die ursprüngliche Ebene der Zeile repräsentiert. `Event.power` ist der kumulative Wert von Bücherregalen rund um den Zaubertisch während `Event stattfindet.Item` ist der Gegenstand der verzaubert wird.
 
-`event.level` can be arbitrarily modified to a value between 0 & 30.
+`event.level` kann willkürlich auf einen Wert zwischen 0 & 30 geändert werden.
 
-## Event Class
-You will need to cast the event in the function header as this class:  
-`crafttweaker.event.EnchantmentLevelSetEvent`  
-You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
+## Event-Klasse
+Du musst das Ereignis als diese Klasse in den Funktionskopf verschieben:  
+`crafttweaker.event. nchantmentLevelSetEvent`  
+Sie können natürlich auch [die Klasse vor](/AdvancedFunctions/Import/) importieren und dann diesen Namen verwenden.
 
-## Event interface extensions
-EnchantmentLevelSet Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+## Erweiterte Event-Schnittellen
+VerchantLevelSet Events implementieren die folgenden Schnittstellen und können alle ihre Methoden/Getters/Setter auch aufrufen:
 
 - [IEventPositionable](/Vanilla/Events/Events/IEventPositionable/)
 
-## ZenGetters
+## ZenGetter
 
-| ZenGetter       | ZenSetter | Rückgabetyp                              |
-| --------------- | --------- | ---------------------------------------- |
-| `world`         |           | [IWorld](/Vanilla/World/IWorld/)         |
-| `enchantRow`    |           | int                                      |
-| `power`         |           | int                                      |
-| `item`          |           | [IItemStack](/Vanilla/Items/IItemStack/) |
-| `originalLevel` |           | int                                      |
-| `level`         | `level`   | int                                      |
+| ZenGetter          | ZenSetter | Rückgabetyp                              |
+| ------------------ | --------- | ---------------------------------------- |
+| `Welt`             |           | [IWorld](/Vanilla/World/IWorld/)         |
+| `verzaubern Zeile` |           | int                                      |
+| `power`            |           | int                                      |
+| `eintrag`          |           | [IItemStack](/Vanilla/Items/IItemStack/) |
+| `originalstufe`    |           | int                                      |
+| `Level`            | `Level`   | int                                      |

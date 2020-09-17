@@ -1,31 +1,31 @@
-# Dishwasher
+# Lavavajillas
 
-The Dishwasher allows you to clean dirty tools.
+La lavavajillas le permite limpiar las herramientas sucias.
 
-By default repairs durability of vanilla tools and weapons only.
+Por defecto repara la durabilidad de las herramientas de vainilla y las armas solamente.
 
-## Removing
+## Eliminando
 
-## Remove matching washable items.
+## Eliminar elementos lavables coincidentes.
 
 ```zenscript
 mods.cfm.Dishwasher.remove(@Optional final IIngredient item);
 
 mods.cfm.Dishwasher.remove(<minecraft:flint_and_steel>);
-// Remove all washable items.
+// Elimina todos los elementos lavables.
 mods.cfm.Dishwasher.remove();
 ```
 
-## Adding
+## Agregando
 
-## Add a washable item.
+## Añadir un elemento lavable.
 
 ```zenscript
-mods.cfm.Dishwasher.add(@Nonnull final IItemStack item);
+mods.cfm.Dishwasher.add(@Nonnull final ItemStack item);
 
 mods.cfm.Dishwasher.add(<minecraft:wooden_shovel>);
 mods.cfm.Dishwasher.add(<minecraft:stone_shovel>);
-mods.cfm.Dishwasher.add(<minecraft:iron_shovel>);
+mods.cfm. ishwasher.add(<minecraft:iron_shovel>);
 mods.cfm.Dishwasher.add(<minecraft:diamond_shovel>);
 mods.cfm.Dishwasher.add(<minecraft:shield>);
 mods.cfm.Dishwasher.add(<minecraft:bow>);

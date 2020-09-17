@@ -1,166 +1,167 @@
-# Recipes
+# Recettes
 
-## Recipe Types
+## Types de recettes
 
-There are several types of recipes:
+Il y a plusieurs types de recettes :
 
-### Shaped Recipes
+### Recettes formées
 
-Shaped Recipes are recipes, where it matters, which item goes into which slot. For example, you can't just arrange 7 iron ingots in any order to create iron leggings. The shape matters, thus it is a shaped recipe.
+Les recettes formées sont des recettes, là où elles sont importantes, dans quel emplacement. Par exemple, vous ne pouvez pas simplement arranger 7 lingots de fer pour créer des jambières de fer. La forme importe, donc c'est une recette formée.
 
-### Mirrored Recipe
+### Recette en miroir
 
-Mirrored Recipes are shaped recipes. Only difference is that the recipe can be mirrored along the horizontal or vertical axes.
+Les recettes miroir sont des recettes en forme. La seule différence est que la recette peut être reflétée le long des axes horizontaux ou verticaux.
 
-### Shapeless Recipes
+### Recettes sans forme
 
-Shapeless Recipes are recipes, where only the items you put in the crafting grid matter, whereas the shape is of no importance. For example, blue and yellow dye create green dye. This recipe doesn't care about where you put which item.
+Les recettes sans forme sont des recettes, où seuls les objets que vous mettez dans la matière de la grille d'artisanat, alors que la forme n'est pas importante. Par exemple, le bleu et le jaune créent une teinture verte. Cette recette ne se soucie pas de l'endroit où vous avez mis quel objet.
 
-## Remove Recipes
+## Supprimer les recettes
 
-There are several ways of removing recipes.
+Il y a plusieurs façons de retirer des recettes.
 
-### remove
+### Enlever
 
 ```zenscript
-recipes.remove(output, NBTMatch);
+recettes.remove(output, NBTMatch);
 ```
 
 This will crafting table recipes for the given `output`.  
 If `NBTMatch` is true, it will only remove recipes that result in items with the same NTB-Data as provided
 
-`Output` is an [IIngredient](/Vanilla/Variable_Types/IIngredient/).  
-`NBTMatch` is a boolan and optional (Will be the same as false if not specified).
+`La sortie` est un [ingrédient](/Vanilla/Variable_Types/IIngredient/).  
+`NBTMatch` est un boolan et facultatif (sera le même que false s'il n'est pas spécifié).
 
-### removeShaped
+### Enlever la forme
 
 ```zenscript
-recipes.removeShaped(output, inputs);
+recettes.removeShaped(sortie, entrées) ;
 ```
 
-This one is more strict on which recipes to remove and will only remove shaped recipes that craft `output` with `input`.
+Celle-ci est plus stricte sur laquelle les recettes à supprimer et ne supprimera que les recettes formées qui fabriquent `sortie` avec `entrée`.
 
 `output` is an [IIngredient](/Vanilla/Variable_Types/IIngredient/)  
-`inputs` is an [IIngredient](/Vanilla/Variable_Types/IIngredient/)\[][\] (e.g.[[iron,iron,iron],[iron,null,iron],[iron,null,iron]])
+`inputs` is an [IIngredient](/Vanilla/Variable_Types/IIngredient/)\[]\[\\] (e.g.[[iron,iron,iron],[iron,null,iron],[iron,null,iron]])
 
-Furthermore, `inputs` is optional. If omitted, the function will do the same as `recipe.remove`, though it will only remove shaped Recipes.  
-`inputs` can contain wildcard characters: `[[<*>,<*>,<*>],[<*>,<*>,<*>],[<*>,<*>,<*>]]` would refer a recipe whose items, as long as each slot is filled, don't matter.
+De plus, `entrées` est facultatif. Si elle est omise, la fonction fera la même chose que `recipe.remove`, bien qu'elle ne supprimera que les recettes formées.  
+`les entrées` peuvent contenir des caractères génériques : `[[<*>,<*>,<*>],[<*>,<*>,<*>],[<*>,<*>,<*>]]` recommanderait une recette dont les objets, tant que chaque emplacement est rempli, n'ont pas d'importance.
 
-### removeShapeless
-
-```zenscript
-recipes.removeShapeless(output, inputs, wildcard);
-```
-
-This one is more strict on which recipes to remove and will only remove shapeless recipes that craft `output` with `input`.  
-If `wildcard` is true, it will remove shapeless recipes that craft `output` with `input` and other, non-specified items (for example you could disable all shapeless recipe that contain, among others, Lapis as ingredient).
-
-`output` is an [IIngredient](/Vanilla/Variable_Types/IIngredient/)  
-`inputs` is an [IIngredient](/Vanilla/Variable_Types/IIngredient/)[]  
-`wildcard` is a boolan and optional (Will be the same as false if not specified)
-
-Furthermore, `inputs` is optional. If omitted, the function will do the same as `recipe.remove`, though it will only remove shapeless Recipes.
-
-### removeAll
-
-Removes all crafting recipes in the game.  
-A bit overkill, don't you think?
+### Supprimer sans forme
 
 ```zenscript
-recipes.removeAll();
+recettes.removeShapeless(sortie, entrées, joker) ;
 ```
 
-### Remove by name
+Celle-ci est plus stricte sur laquelle les recettes à supprimer et ne supprimera que les recettes informe qui fabriquent `sortie` avec `entrée`.  
+Si `le joker` est vrai, il retirera les recettes sans forme qui fabriquent `la sortie` avec `d'entrée` et autres, éléments non spécifiés (par exemple, vous pouvez désactiver toutes les recettes sans forme qui contiennent, entre autres, Lapis comme ingrédient).
 
-As 1.12 introduces naming recipes, you can also remove recipes once you know their name. You can also use regex to remove multiple recipes at once. And no, if you don't know what regular expressions are, I won't explain it here!
+`la sortie` est un [IIngrédient](/Vanilla/Variable_Types/IIngredient/)  
+`entrées` est un [Ingrédient](/Vanilla/Variable_Types/IIngredient/)[]  
+`joker` est un boolan et facultatif (sera le même que faux si non spécifié)
+
+De plus, `entrées` est facultatif. Si elle est omise, la fonction fera la même chose que `recipe.remove`, bien qu'elle ne supprimera que des recettes sans forme.
+
+### Retirer tout
+
+Supprime toutes les recettes d'artisanat dans le jeu.  
+Un peu trop tué, n'est-ce pas?
+
+```zenscript
+recettes.removeAll();
+```
+
+### Supprimer par nom
+
+Comme 1.12 introduit des recettes de nommage, vous pouvez également supprimer des recettes une fois que vous connaissez leur nom. Vous pouvez également utiliser regex pour supprimer plusieurs recettes à la fois. Et non, si vous ne savez pas ce que sont les expressions régulières, je ne vais pas l'expliquer ici !
 
 ```zenscript
 recipes.removeByRegex("name[1-9]");
 recipes.removeByRecipeName("modid:recipename");
 ```
 
-### Remove by mod
+### Supprimer par mod
 
-You can also remove all recipes that were added by the mod specified.  
-You need to provide the mod's modid as string.
+Vous pouvez également supprimer toutes les recettes qui ont été ajoutées par le mod spécifié.  
+Vous devez fournir la modification du mod en tant que chaîne.
 
 ```zenscript
 recipes.removeByMod("modularmachinery");
 ```
 
-## Add Recipes
+## Ajouter des recettes
 
-### Notes On 1.12
+### Notes sur 1.12
 
-On 1.12, each added recipe requires a UNIQUE identifier, because the forge dev team wanted it that way.  
-This means, all add functions now require an additional parameter `name` at the start (which cannot be omitted).  
-This means `recipe.addShaped(output,input);` now is `recipe.addShaped(name,output,input);`  
-All other functionality stay the same. Remember that `name` needs to be unique!  
-`name` is a string.
+Le 1.12, chaque recette ajoutée nécessite un identifiant UNIQUE, car l'équipe de développement forge le voulait ainsi.  
+Cela signifie que toutes les fonctions ajoutées nécessitent maintenant un nom `de paramètre supplémentaire` au début (qui ne peut pas être omis).  
+Cela signifie `recette.addShaped(sortie,entrée));` est maintenant `recette. ddShaped(name,output,input);`  
+Toutes les autres fonctionnalités restent les mêmes. Rappelez-vous que `name` doit être unique !  
+`name` est une chaîne.
 
-### addShaped
+### Ajouté à Shaped
 
 ```zenscript
 //pre-1.12
-recipes.addShaped(output,inputs,function,action);
+recettes.addShaped(output,inputs,function,action);
 
 //1.12
 recipes.addShaped(name,output,inputs,function,action);
 ```
 
-This creates a shaped recipe for `output` using `inputs` as Ingredients.  
-If a `function` is added as third parameter, you can also use a function to determinate the output.  
-If an `action` function is added as forth parameter, you can also determine, what will happen, if the item is crafted.
+Cela crée une recette formée pour la sortie `` en utilisant `entrées` en tant qu'Ingrédients.  
+Si une fonction `` est ajoutée en tant que troisième paramètre, vous pouvez également utiliser une fonction pour déterminer la sortie.  
+Si une fonction `` est ajoutée comme paramètre avant, vous pouvez également déterminer, ce qui se passera si l'objet est fabriqué.
 
 `name` is a string and needs to be unique but is also optional `output` is an [IItemStack](/Vanilla/Items/IItemStack/)  
-`inputs` is an [IIngredient](/Vanilla/Variable_Types/IIngredient/)\[][\] (see below)  
-`function` is a IRecipeFunction. Please refer to the [respecting wiki entry](/Vanilla/Recipes/Crafting/Recipe_Functions/#irecipefunction) for more information on functions.  
-`action` is a IRecipeAction. Please refer to the [respecting wiki entry](/Vanilla/Recipes/Crafting/Recipe_Functions/#irecipeaction) for more information on actions.
+`inputs` is an [IIngredient](/Vanilla/Variable_Types/IIngredient/)\[]\[\\] (see below)  
+`function` is a IRecipeFunction. Veuillez vous référer à la [entrée wiki respectueuse](/Vanilla/Recipes/Crafting/Recipe_Functions/#irecipefunction) pour plus d'informations sur les fonctions.  
+`action` est une IRecipeAction. Veuillez vous référer à [l'entrée wiki respectueuse](/Vanilla/Recipes/Crafting/Recipe_Functions/#irecipeaction) pour plus d'informations sur les actions.
 
-`inputs` is a 2 Dimensional [IIngredient](/Vanilla/Variable_Types/IIngredient/) Array.  
-So the recipe for Iron Leggings would be written as `[[iron,iron,iron],[iron,null,iron],[iron,null,iron]]`  
-If that looks to confusing, try splitting the arrays up into one array per line
+`les entrées` sont un Ingrédient [dimensionnel](/Vanilla/Variable_Types/IIngredient/) 2 tableaux.  
+Donc la recette des Jambières de Fer serait écrite sous la forme de `[[fer,fer,fer],[fer,fer,fer,fer,] ull, fer]]`  
+Si cela semble confus, essayez de scinder les tableaux en un tableau par ligne
 
 ```zenscript
-val iron = <minecraft:iron_ingot>;
-val leggings = <minecraft:iron_leggings>;
+fer val = <minecraft:iron_ingot>;
+jambières val = <minecraft:iron_leggings>;
 
-recipes.addShaped("CTLeggings", leggings,
- [[iron,iron,iron],
-  [iron,null,iron],
-  [iron,null,iron]]);
+recettes.addShaped("CTLeggings", jambières,
+ [[fer,fer,
+  [fer,fer,fer], 
+ [fer,fer,fer],
+  [fer,null,fer,fer,] [fer,null,fer]]);
 ```
 
-### addShapedMirrored
+### Ajouter ShapedMirrored
 
 ```zenscript
-//Normal pre 1.12 syntax
+//Normale syntaxe pré 1.12
 recipes.addShapedMirrored(output,inputs,function,action);
 
-//Recommended 1.12 syntax
+//Syntaxe recommandée 1.12
 recipes.addShapedMirrored(name,output,inputs,function,action);
 ```
 
-Same as `addShaped`, only that the recipe created this way is a mirrored recipe.
+Identique à `addShaped`, seulement que la recette créée de cette façon est une recette miroir .
 
 ### addShapeless
 
 ```zenscript
-//Normal pre 1.12 syntax
+//Normale prre 1.12 syntaxe
 recipes.addShapeless(output,inputs,function,action)
 
-//Recommended 1.12 syntax
+//Syntaxe recommandée 1.12
 recipes.addShapeless(name,output,inputs,function,action)
 ```
 
-This creates a shapeless recipe for `output` using `inputs` as Ingredients.  
-If a `function` is added as third parameter, you can also use a function to determinate the output.  
-If an `action` function is added as forth parameter, you can also determine, what will happen, if the item is crafted.
+Cela crée une recette sans forme pour la sortie `` en utilisant `entrées` en tant qu'Ingrédients.  
+Si une fonction `` est ajoutée en tant que troisième paramètre, vous pouvez également utiliser une fonction pour déterminer la sortie.  
+Si une fonction `` est ajoutée comme paramètre avant, vous pouvez également déterminer, ce qui se passera si l'objet est fabriqué.
 
-`name` is a string and needs to be unique `output` is an [IItemStack](/Vanilla/Items/IItemStack/)  
+`Nom` is a string and needs to be unique `output` is an [IItemStack](/Vanilla/Items/IItemStack/)  
 `inputs` is an [IIngredient](/Vanilla/Variable_Types/IIngredient/)[] (e.g. [<minecraft:dye:1>,<minecraft:dye:2>])  
-`function` is a IRecipeFunction. Please refer to the [respecting wiki entry](/Vanilla/Recipes/Crafting/Recipe_Functions/#irecipefunction) for more information on functions. This is optional.  
-`action` is a IRecipeAction. Please refer to the [respecting wiki entry](/Vanilla/Recipes/Crafting/Recipe_Functions/#irecipeaction) for more information on actions. This is optional.
+`fonction` est une fonction IRecipeFunction. Veuillez vous référer à [l'entrée wiki respectueuse](/Vanilla/Recipes/Crafting/Recipe_Functions/#irecipefunction) pour plus d'informations sur les fonctions. C'est facultatif.  
+`Action` est une IRecipeAction. Veuillez vous référer à [l'entrée wiki respectueuse](/Vanilla/Recipes/Crafting/Recipe_Functions/#irecipeaction) pour plus d'informations sur les actions. C'est facultatif.
 
 ### addHidden
 
@@ -169,54 +170,54 @@ addHiddenShapeless(String name, IItemStack output, IIngredient[] ingredients, @O
 addHiddenShaped(String name, IItemStack output, IIngredient[][] ingredients, @Optional IRecipeFunction function, @Optional IRecipeAction action, @Optional boolean mirrored);
 ```
 
-This creates a shapeless recipe for `output` using `inputs` as Ingredients that is named `name`.  
-If a `function` is added as third parameter, you can also use a function to determinate the output.  
-If an `action` function is added as forth parameter, you can also determine, what will happen, if the item is crafted.  
-For the shapeless variant you can also set if the recipe is `mirrored`, if omitted, it will not.
+Cela crée une recette sans forme pour la sortie `` en utilisant `entrées` comme Ingrédients qui est nommé `nom`.  
+Si une fonction `` est ajoutée en tant que troisième paramètre, vous pouvez également utiliser une fonction pour déterminer la sortie.  
+Si une fonction `action` est ajoutée comme paramètre avant, vous pouvez également déterminer, ce qui se passera si l'objet est fabriqué.  
+Pour la variante sans forme, vous pouvez également définir si la recette est `miroir`, si elle est omise, elle ne le sera pas.
 
-## Other Functionality
+## Autres fonctionnalités
 
-### Get all registered Crafting recipes.
+### Obtenez toutes les recettes d'artisanat enregistrées.
 
-You can use this to get a [`List<ICraftingRecipe>`](/Vanilla/Recipes/Crafting/ICraftingRecipe/) that contains ALL registered crafting recipes.
+Vous pouvez l'utiliser pour obtenir une liste [`<ICraftingRecipe>`](/Vanilla/Recipes/Crafting/ICraftingRecipe/) qui contient TOUTES les recettes d'artisanat enregistrées.
 
-    recipes.all;
+    recettes.toutes;
     
 
-### Get all recipes for a given IIngredient
+### Obtenez toutes les recettes pour un ingrédient donné
 
 You can use this to get a [`List<ICraftingRecipe>`](/Vanilla/Recipes/Crafting/ICraftingRecipe/) that contains ALL registered crafting recipes for the given [IIngredient](/Vanilla/Variable_Types/IIngredient/).
 
-    //recipes.getRecipesFor(IIngredient ingredient);
+    //recettes.getRecipesFor(IIngredient ingredient);
     recipes.getRecipesFor(<minecraft:iron_ingot>);
     
 
-### Replace all item ingredients with another one
+### Remplacer tous les ingrédients de l'objet par un autre
 
-You can use this to replace all [ingredients](/Vanilla/Variable_Types/IIngredient/) in a recipe with another one, for example all sticks with stones. It also accepts an optional third parameter that matches agains the recipe outputs. If the recipe
+Vous pouvez l'utiliser pour remplacer tous les [ingrédients](/Vanilla/Variable_Types/IIngredient/) dans une recette par une autre, par exemple toutes les bâtons avec des pierres. Il accepte également un troisième paramètre optionnel qui correspond à nouveau aux sorties de recettes. Si la recette
 
-    //recipes.replaceAllOccurences(IIngredient toReplace, IIngredient replaceWith, @Optional IIngredient forOutput);
+    //recettes.replaceAllOccurences(IIngrédient de remplacer, IIngrédient remplaceWith, @Optional Igredient forOutput);
     
-    //replaces every stick with stone
-    recipes.replaceAllOccurences(<minecraft:stick>, <minecraft:stone>);
+    //remplace chaque bâton par des recettes de pierre
+    . eplaceAllOccurences(<minecraft:stick>, <minecraft:stone>);
     
-    //Explicitly uses any output, replaces gold ingots with gold blocks
-    recipes.replaceAllOccurences(<ore:ingotGold>, <ore:blockGold>, <*>);
-    
-    
-    //Only replaces in recipes with a diamond_sword as output
-    recipes.replaceAllOccurences(<ore:gemDiamond>, <ore:blockDiamond>, <minecraft:diamond_sword>);
+    //Utilise explicitement n'importe quelle sortie, remplace les lingots d'or par des blocs d'or
+    recettes. eplaceAllOccurences(<ore:ingotGold>, <ore:blockGold>, <*>);
     
     
-    //conditions work as well -> replaces in recipes for any recipe output except tnt
-    recipes.replaceAllOccurences(<ore:gunpowder>, <minecraft:tnt>, <*>.only(function(item) {
+    //Remplace seulement dans les recettes avec une épée en diamant comme résultat
+    recettes. eplaceAllOccurences(<ore:gemDiamond>, <ore:blockDiamond>, <minecraft:diamond_sword>);
+    
+    
+    //conditions de travail aussi -> remplace dans les recettes pour n'importe quelle sortie de recette sauf tnt
+    recettes. eplaceAllOccurences(<ore:gunpowder>, <minecraft:tnt>, <*>. nly(function(item) {
         return !isNull(item) & !<minecraft:tnt>.matches(item);
     }));
     
 
-### Craft
+### Fabrication
 
-You can even craft from inside `recipes`! The function will return an [IItemStack](/Vanilla/Items/IItemStack/) or `null` depending if a recipe is found or not.
+Vous pouvez même fabriquer à partir de `recettes`! La fonction retournera un [IItemStack](/Vanilla/Items/IItemStack/) ou `null` selon qu'une recette est trouvée ou non.
 
-    //recipes.craft(IItemStack[][]content);
-    recipes.craft([[<minecraft:iron_ingot>]]);
+    //recettes.craft(IItemStack[][]contenu);
+    recettes.craft([[<minecraft:iron_ingot>]]);

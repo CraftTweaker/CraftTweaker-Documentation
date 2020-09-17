@@ -1,40 +1,40 @@
 # ITICMaterial
 
-A Tinkers' Construct IMaterial (not to be confused with [ContentTweaker's IMaterial](/Mods/ContentTweaker/Materials/Materials/Material/)) is what a Tinker's construct tool can be made of.
+Tinkers构造的镜像(不要与 [ContentTweaker的镜像](/Mods/ContentTweaker/Materials/Materials/Material/)混淆)是一个Tinker构造工具可以制造的。
 
 ## 导入相关包
 
-It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
-`import modtweaker.tconstruct.ITICMaterial;`
+如果您遇到任何问题，可能需要导入软件包，所以比抱歉更安全并添加导入。  
+`导入 modweeper.tconstruct.ITICMaterial。`
 
-## Retrieving such an object
+## 正在获取此对象
 
-You can retrieve an ITICMaterial object using the [ITICMaterial Bracket Handler](/Mods/Modtweaker/TConstruct/Brackets/Bracket_Material/):
+您可以使用 [ITICMaterial Backet Handler](/Mods/Modtweaker/TConstruct/Brackets/Bracket_Material/) 检索ITICMaterial Objects :
 
 ```zenscript
 val stone = <ticmat:stone>;
 ```
 
-## Fields
+## 字段
 
-You can get/set the following fields:
+您可以获取/设置以下字段：
 
-| ZenGetter         | ZenSetter         | Return/Setter Type                                                                   | Description                                                       |
-| ----------------- | ----------------- | ------------------------------------------------------------------------------------ | ----------------------------------------------------------------- |
-| getName           |                   | string                                                                               | The Material's Name                                               |
-| definition        |                   | [IMaterialDefinition](/Mods/Modtweaker/TConstruct/Materials/ITICMaterialDefinition/) | The Material's Definition                                         |
-| durabilityHead    | durabilityHead    | int                                                                                  | A Toolhead made from this material has this durability            |
-| miningSpeedHead   | miningSpeedHead   | float                                                                                | A Toolhead made from this material has this mining speed          |
-| attackHead        | attackHead        | float                                                                                | A Toolhead made from this material has this attack Damage         |
-| harvestLevelHead  | harvestLevelHead  | int                                                                                  | A Toolhead made from this material has this harvest level         |
-| durabilityHandle  | durabilityHandle  | int                                                                                  | A Toolhandle made from this material has this durability          |
-| modifierHandle    | modifierHandle    | float                                                                                | A Toolhandle made from this material has this durability modifier |
-| durabilityExtra   | durabilityExtra   | int                                                                                  | Extra toolparts made from this material have this base durability |
-| arrowModifier     | arrowModifier     | float                                                                                | Arrows made from this material have this durability modifier      |
-| arrowBonusAmmo    | arrowBonusAmmo    | int                                                                                  | Arrow made from this material have this addiotional ammonition    |
-| fletchingModifier | fletchingModifier | float                                                                                | Fletchungs made from this material have this durability modifier  |
-| fletchingAccuracy | fletchingAccuracy | float                                                                                | Fletchungs made from this material provide this accuracy          |
+| ZenGetter         | ZenSetter         | 返回/设置类型                                                                      | 描述                   |
+| ----------------- | ----------------- | ---------------------------------------------------------------------------- | -------------------- |
+| getName           |                   | 字符串                                                                          | 材料名称                 |
+| definition        |                   | [IMaterial定义](/Mods/Modtweaker/TConstruct/Materials/ITICMaterialDefinition/) | 材料的定义                |
+| 耐久头               | 耐久头               | 整数                                                                           | 由此材料制作的工具头具有这种耐久性    |
+| miningSpeedHead   | miningSpeedHead   | 浮点数                                                                          | 此材料制作的工具头具有这种开采速度    |
+| 攻击头               | 攻击头               | 浮点数                                                                          | 由这种材料制成的工具头具有这种攻击伤害  |
+| harvestLevelHead  | harvestLevelHead  | 整数                                                                           | 此材料制作的工具头有这个收获水平     |
+| 耐久处理器             | 耐久处理器             | 整数                                                                           | 此材料制作的工具句柄具有这种耐久性    |
+| 修改手势              | 修改手势              | 浮点数                                                                          | 此材料制作的工具句柄具有此耐久性修饰符  |
+| 耐久加成              | 耐久加成              | 整数                                                                           | 此材料制造的额外工具部件具有此基础耐久性 |
+| 箭头修改器             | 箭头修改器             | 浮点数                                                                          | 此材料制成的箭头具有此耐久性修饰符    |
+| 箭头Bonusammo       | 箭头Bonusammo       | 整数                                                                           | 从这个材料制成的箭有这个额外的弹药    |
+| fletchingModifier | fletchingModifier | 浮点数                                                                          | 这种材料制作的真菌具有这种耐久性修饰符  |
+| 逃跑精度              | 逃跑精度              | 浮点数                                                                          | 这种材料制作的真菌提供了这种精度     |
 
-## Methods
+## 方法
 
-- boolean matches(ITICMaterial other); → returns if the given material is equal to `other`
+- 布尔运算法 (ITICMaterial other); -> 返回给定材料等于 `其他`

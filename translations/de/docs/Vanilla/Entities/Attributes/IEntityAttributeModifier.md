@@ -2,14 +2,14 @@
 
 ## Dieses Paket importieren
 
-It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
+Möglicherweise ist es erforderlich, dass Sie das Paket importieren, wenn Sie irgendwelche Probleme haben (z.B. [Array](/AdvancedFunctions/Arrays_and_Loops/)), also besser sicher sein als bedauern und fügen Sie den Import.  
 `import crafttweaker.entity.AttributeModifier;`
 
 ## ZenGetter
 
-| ZenGetter | GetterMethod   | Rückgabetyp |
+| ZenGetter | GetterMethode  | Rückgabetyp |
 | --------- | -------------- | ----------- |
-| uuid      | getUUID()      | string      |
+| uuuid     | getUUID()      | string      |
 | name      | getName()      | string      |
-| operation | getOperation() | int         |
-| amount    | getAmount()    | double      |
+| operieren | getOperation() | int         |
+| beträge   | getAmount()    | double      |

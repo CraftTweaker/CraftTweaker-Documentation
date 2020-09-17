@@ -3,32 +3,32 @@
 In order for you to [clone your forked repository](/Contribute/LocalClone/Clone/) you will need to install git.  
 Git is a distributed version control system (basically, it's what GitHub, BitBucket and other version control services use).
 
-## Getting Git
+## Hole Git
 
-You can check if you have git installed by opening the Command Prompt and executing the command `git`.  
-If you get the usage page, then you have it installed and can skip this page.  
-If you do not get the usage page then you either have it not installed or you have not added it to your PATH (see below). In a case like this you will need to install git or add it to your path:  
-![CMD Prompt issuing git command without git being installed](/Contribute/LocalClone/assets/CMD_noGit.png)
+Sie können überprüfen, ob Git installiert ist, indem Sie die Befehlsaufforderung öffnen und den Befehl `git`ausführen.  
+Wenn Sie die Benutzungsseite erhalten, dann haben Sie sie installiert und können diese Seite überspringen.  
+Wenn Sie die Benutzungsseite nicht erhalten, dann haben Sie sie entweder nicht installiert oder Sie haben sie nicht Ihrem PATH hinzugefügt (siehe unten). In einem solchen Fall müssen Sie git installieren oder zu Ihrem Pfad hinzufügen:  
+![CMD-Eingabeaufforderung, der Git-Befehl ausstellt, ohne dass Git installiert wird](/Contribute/LocalClone/assets/CMD_noGit.png)
 
-### Downloading and installing Git
+### Git wird heruntergeladen und installiert
 
-If you do not have git installed, then you can download the installer from [their official page](https://git-scm.com/downloads/).  
-Choose your Operation System, download the installer, run it and follow the instructions.  
-If you are not sure on which options to check, leave them as default.  
-If you cannot proceed after setting your preferred text editor, go back one page and then go forward to the page again, in some cases this will make the `next` button appear.
+Wenn Sie Git nicht installiert haben, können Sie den Installer von [deren offizielle Seite](https://git-scm.com/downloads/)herunterladen.  
+Wählen Sie Ihr Operationssystem aus, laden Sie das Installationsprogramm herunter, führen Sie es aus und folgen Sie den Anweisungen.  
+Wenn Sie sich nicht sicher sind, welche Optionen Sie überprüfen sollen, lassen Sie diese als Standard ein.  
+Wenn Sie nach der Einstellung Ihres bevorzugten Texteditors nicht fortfahren können, gehen Sie eine Seite zurück und gehen Sie dann wieder zur Seite in einigen Fällen wird dadurch der `nächste` Button angezeigt.
 
-### Adding Git to your PATH
+### Füge Git Ihrem PATH hinzu
 
-After you have installed Git, it should be added to your PATH. If not, first try to close and open your command prompt.  
-If it still tells you it doesn't know git, restart your computer.  
-If it still tells you it doesn't know git, you may need to add it to your path.
+Nachdem Sie Git installiert haben, sollte es Ihrem PATH hinzugefügt werden. Falls nicht, versuchen Sie zuerst, die Eingabeaufforderung zu schließen und zu öffnen.  
+Wenn es Ihnen immer noch sagt, dass es nicht git ist, starten Sie Ihren Computer neu.  
+Wenn es Ihnen immer noch mitteilt, dass es nicht git ist, müssen Sie es möglicherweise zu Ihrem Pfad hinzufügen.
 
-I won't cover how to add it in detail, all you need to do is add the directory where you installed git to as path.  
-If you for example installed Git to `C:\Program Files\Git` you will need to add `C:\Program Files\Git\cmd` to your path.  
-Afterwards restart your command prompt or your computer.
+Ich werde nicht abdecken, wie man es im Detail hinzuzufügen, alles, was Sie tun müssen, ist das Verzeichnis hinzuzufügen, in dem Sie git als Pfad installiert haben.  
+Wenn Sie zum Beispiel Git zu `C:\Programme\Git` installiert haben, müssen Sie `C:\Programme\Git\cmd` zu Ihrem Pfad hinzufügen.  
+Starten Sie danach die Eingabeaufforderung oder den Computer neu.
 
-Technically, this is not required but it makes some commands easier.
+Technisch ist dies nicht erforderlich, aber es macht einige Befehle einfacher.
 
-## How to continue
+## Wie man fortfährt
 
-Now that you have installed git you can [clone your forked repository](/Contribute/LocalClone/Clone/).
+Nachdem Sie git installiert haben, können Sie [Ihr geforktes Projektarchiv klonen](/Contribute/LocalClone/Clone/).

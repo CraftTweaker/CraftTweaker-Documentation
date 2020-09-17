@@ -1,20 +1,20 @@
 # Carpenter
 
-ModTweaker allows you to add or remove forestry Carpenter Recipes
+ModTweakerを使用すると、森林伐採レシピを追加または削除できます
 
-## Calling
+## 発信中
 
 You can call the package using `mods.forestry.Carpenter`
 
-## Recipe Removal
+## レシピの削除
 
 ```zenscript
-//mods.forestry.Carpenter.removeRecipe(IItemStack output, @Optional ILiquidStack fluidInput);
+//mods.forestry.Carpenter.removeRecipe(IItemStack 出力, @Optional ILiquidStack fluidInput);
 mods.forestry.Carpenter.removeRecipe(<forestry:portable_alyzer>);
 mods.forestry.Carpenter.removeRecipe(<forestry:wood_pulp>, <liquid:water>);
 ```
 
-## Recipe Addition
+## レシピの追加
 
 ```zenscript
 //mods.forestry.Carpenter.addRecipe(IItemStack output, IIngredient[][] ingredients, int packagingTime, @Optional ILiquidStack fluidInput, @Optional IItemStack box)

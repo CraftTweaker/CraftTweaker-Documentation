@@ -1,46 +1,46 @@
-# Player Stages
+# Etapas del jugador
 
-The GameStages API expands CraftTweaker's [IPlayer](/Vanilla/Players/IPlayer/) functionality to allow you to check and modify a player's stages.
+La API de GameStages expande la funcionalidad [IPlayer](/Vanilla/Players/IPlayer/) de CraftTweaker para permitirte revisar y modificar las etapas de un jugador.
 
-## Calling the methods
+## Llamar a los métodos
 
-As this is a [ZenExpansion](/Dev_Area/ZenAnnotations/Annotation_ZenExpansion/), you can simply call the methods on any [IPlayer](/Vanilla/Players/IPlayer/) object, or any of it's subtypes.
+Como este es un [ZenExpansion](/Dev_Area/ZenAnnotations/Annotation_ZenExpansion/), puede simplemente llamar a los métodos en cualquier objeto [IPlayer](/Vanilla/Players/IPlayer/) o cualquiera de sus subtipos.
 
-## Methods
+## Métodos
 
-### Check for gamestages
+### Buscar gamestages
 
-The methods return booleans.
+Los métodos devuelven booleanos.
 
 ```zenscript
-// Checks if the player has the passed stage.
+// Comprueba si el reproductor tiene la etapa pasada.
 //player.hasGameStage(String stage);
-player.hasGameStage("one");
+player.hasGameStage("uno");
 
 
 
-// Checks if the player has any of the passed stages. They only need one.
+// Comprueba si el jugador tiene alguna de las etapas pasadas. Sólo lo necesitan.
 //player.hasAnyGameStages(String... stages);
-player.hasAnyGameStages("one", "two");
+player.hasAnyGameStages("one", "dos");
 
 
 
-// Checks if the player has all of the passed stages.
-//player.hasAllGameStages (String... stages);
-player.hasAllGameStages ("one", "two");
+// Comprueba si el jugador tiene todas las etapas pasadas.
+//player.hasAllGameStages (String... niveles);
+player.hasAllGameStages ("uno", "dos");
 ```
 
-### Add or remove a gamestage
+### Añadir o quitar un juego
 
-The methods return void (nothing).
+Los métodos retornan vacío (nada).
 
 ```zenscript
-// Unlocks a stage for a player.
+// Desbloquea una etapa para un jugador.
 //addGameStage(String stage);
 addGameStage(String stage);
 
 
-// Locks a stage for a player.
+// Bloquea una etapa para un jugador.
 //removeGameStage(String stage);
 removeGameStage(String stage);
 ```

@@ -1,30 +1,30 @@
-# FireClay Knapping
+# FeuerTon Knacken
 
-## Package
+## Paket
 ```zenscript
-import mods.terrafirmacraft.FireClayKnapping;
+importieren Sie mods.terrafirmacraft.Feuer-Klayknapping,
 ```
 
 ## Addition
 
 ```zenscript
-FireClayKnapping.addRecipe(String registryName, IItemStack output, String... pattern)
+FireClayKnapping.addRecipe(String RegistryName, IItemStack Ausgabe, String... Muster)
 ```
 
-## Removal
+## Entfernen
 
 ```zenscript
-FireClayKnapping.removeRecipe(IItemStack output);
-FireClayKnapping.removeRecipe(String registryName);
+FireClayKnapping.removeRecipe(IItemStack Ausgabe);
+FireClayKnapping.removeRecipe(String RegistryName);
 ```
 
 ## Beispiel
 ```zenscript
-// add fireClay knapping recipe for enderio conduit binder
-FireClayKnapping.addRecipe("enderio/item_conduit_binder", <enderio:item_material:22>*2, 
-"    X",
-"   XX",
-"  XXX",
-" XXXX",
+// Füge ein FireClayknapp-Rezept für den Enderio-Schlauchbinder
+FireClayKnapping. ddRecipe("enderio/item_conduit_binder", <enderio:item_material:22>*2, 
+" X",
+" XX",
+" XXX",
+" XXXXXX",
 "XXXXX");
 ```

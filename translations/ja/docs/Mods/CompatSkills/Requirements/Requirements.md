@@ -1,29 +1,29 @@
-# Requirements:
+# 条件:
 
-Requirements is a concept introduced with Reskillable and is essentially Player-Bound properties to bind items behind.
+要件はReskillableで導入された概念であり、基本的には背後にあるアイテムをバインドするためのPlayer-Boundプロパティです。
 
-For example by default, Reskillable has Requirement support for the following:
+たとえば、Reskillableはデフォルトで以下の要件をサポートしています。
 
-- Advancements
-- Skills
-- Traits
+- 詳細設定
+- スキル
+- 形質:
 
-This list can be further expanded upon by addons. In-fact CompatSkills adds support for GameStages as a valid Requirement.
+このリストはアドオンによってさらに拡大することができます。 事実上コンパットスキルは、有効な要件としてGameStagesのサポートを追加します。
 
-The requirement syntax varies from Property to Property on how it's implemented by the addon. Under Requirement Types, you'll be able to see the syntax for all Requirements added by Reskillable and CompatSkills.
+要件構文は、addonによってどのように実装されているかについて、プロパティからプロパティへと変化します。 Requirement Typesでは、ReskillableとCompatSkillsによって追加されたすべての要件の構文を見ることができます。
 
-See below for a quick list of links to each requirement type.
+各要件タイプへのリンクのクイックリストについては、以下を参照してください。
 
-| Links                                                                                                 |
-| ----------------------------------------------------------------------------------------------------- |
-| [Advancements](/Mods/CompatSkills/Requirements/Requirement_Types/Advancements/)                       |
-| [Dimensions](/Mods/CompatSkills/Requirements/Requirement_Types/Dimensions/)                           |
-| [Dynamic Sword Skills](/Mods/CompatSkills/Requirements/Requirement_Types/Dynamic_Sword_Skills/)       |
-| [GameStages](/Mods/CompatSkills/Requirements/Requirement_Types/GameStages/)                           |
-| [Inverted Requirements](/Mods/CompatSkills/Requirements/Requirement_Types/Inverted_Requirements/)     |
-| [Items](/Mods/CompatSkills/Requirements/Requirement_Types/Items/)                                     |
-| [Logic Operators](/Mods/CompatSkills/Requirements/Requirement_Types/Logic_Operators/1_READ_ME_FIRST/) |
-| [Ore Dictionary](/Mods/CompatSkills/Requirements/Requirement_Types/Ore_Dictionary/)                   |
-| [Skills](/Mods/CompatSkills/Requirements/Requirement_Types/Skills/)                                   |
-| [Tool Harvest-Level](/Mods/CompatSkills/Requirements/Requirement_Types/Tool_Harvest-Level/)           |
-| [Traits](/Mods/CompatSkills/Requirements/Requirement_Types/Traits/)                                   |
+| リンク                                                                                           |
+| --------------------------------------------------------------------------------------------- |
+| [詳細設定](/Mods/CompatSkills/Requirements/Requirement_Types/Advancements/)                       |
+| [寸法](/Mods/CompatSkills/Requirements/Requirement_Types/Dimensions/)                           |
+| [ダイナミックソードスキル](/Mods/CompatSkills/Requirements/Requirement_Types/Dynamic_Sword_Skills/)       |
+| [GameStages](/Mods/CompatSkills/Requirements/Requirement_Types/GameStages/)                   |
+| [反転要件](/Mods/CompatSkills/Requirements/Requirement_Types/Inverted_Requirements/)              |
+| [アイテム](/Mods/CompatSkills/Requirements/Requirement_Types/Items/)                              |
+| [ロジック演算子](/Mods/CompatSkills/Requirements/Requirement_Types/Logic_Operators/1_READ_ME_FIRST/) |
+| [鉱石辞書](/Mods/CompatSkills/Requirements/Requirement_Types/Ore_Dictionary/)                     |
+| [スキル](/Mods/CompatSkills/Requirements/Requirement_Types/Skills/)                              |
+| [ツール収穫-レベル](/Mods/CompatSkills/Requirements/Requirement_Types/Tool_Harvest-Level/)            |
+| [形質:](/Mods/CompatSkills/Requirements/Requirement_Types/Traits/)                              |

@@ -1,10 +1,10 @@
-# Alloy Smelter
+# Legierungsschmelzer
 
-The Alloy Smelter package can be used to add/remove recipes to/from the Immersive Engineering Alloy Smelter.
+Das Silberschmelzpaket kann verwendet werden, um Rezepte zum Immersive Ingenieurschmelzer hinzuzufügen/zu entfernen.
 
 ## Hinzufügen des Packages
 
-You can call the AlloySmelter package using `mods.immersiveengineering.AlloySmelter`
+Sie können das AlloySmelter-Paket mit `mods.immersiveengineering.AlloySmelter` aufrufen.
 
 ## Rezept hinzufügen
 
@@ -18,8 +18,8 @@ You can call the AlloySmelter package using `mods.immersiveengineering.AlloySmel
 ### Beispiel
 
 ```zenscript
-//Example:
-mods.immersiveengineering.AlloySmelter.addRecipe(IItemStack output, IIngredient first, IIngredient second, int time);
+//Beispiel:
+mods.immersiveengineering.AlloySmelter.addRecipe(IItemStack output, IIngredient first IIngredient second, int time);
 mods.immersiveengineering.AlloySmelter.addRecipe(<minecraft:diamond>, <ore:ingotIron>, <minecraft:dirt>, 2000);
 ```
 
@@ -32,7 +32,7 @@ mods.immersiveengineering.AlloySmelter.addRecipe(<minecraft:diamond>, <ore:ingot
 ### Beispiel
 
 ```zenscript
-//Example:
+//Beispiel:
 mods.immersiveengineering.AlloySmelter.removeRecipe(IItemstack output);
 mods.immersiveengineering.AlloySmelter.removeRecipe(<minecraft:diamond>);
 ```

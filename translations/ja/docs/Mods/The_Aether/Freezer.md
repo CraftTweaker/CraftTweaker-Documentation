@@ -1,11 +1,11 @@
-# Freezer
+# フリーザー
 
-## Package
+## パッケージ
 
 ```zenscript
-import mods.aether_legacy.Freezer;
+import mods.aether_legacy.Freezer;フリーザ;
 ```
-## Usage
+## 使用法
 
 ```zenscript
 Freezer.registerFreezable(IItemStack input, IItemStack output, int timeRequired);

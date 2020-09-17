@@ -1,18 +1,18 @@
 # Orechid
 
-The Orechid package is used for adding or removing generated ores to/from the Botania Orechid Flowers.
+Das Orechid-Paket wird zum Hinzufügen oder Entfernen von generierten Erzen zu den Botania Orechid Blumen verwendet.
 
-## Calling
+## Anruf
 
-You can call the Orechid package using `mods.botania.Orechid`
+Sie können das Orechid-Paket mit `mods.botania.Orechid` aufrufen
 
-## Find all registered Recipes
+## Alle registrierten Rezepte finden
 
-You can find all registered Orechid recipes using [`/ct botorechid`](/Mods/Modtweaker/Botania/Commands/).
+Sie finden alle registrierten Orechid-Rezepte mit [`/ct botorechid`](/Mods/Modtweaker/Botania/Commands/).
 
-## Recipe addition
+## Rezeptzusatz
 
-You can either add recipes using the returned [IOreDictEntry](/Vanilla/OreDict/IOreDictEntry/) as output parameter, or the name of said oreDictEntry as string.
+Sie können entweder Rezepte mit dem zurückgegebenen [IOreDictEntry](/Vanilla/OreDict/IOreDictEntry/) als Ausgabeparameter hinzufügen oder den Namen des besagten oreDictEntry als String.
 
 ```zenscript
 //mods.botania.Orechid.addOre(IOreDictEntry oreDict, int weight);
@@ -22,9 +22,9 @@ mods.botania.Orechid.addOre(<ore:logWood>, 500);
 mods.botania.Orechid.addOre("logWood", 500);
 ```
 
-## Recipe removal
+## Rezept-Entfernung
 
-You can either remove recipes using the returned [IOreDictEntry](/Vanilla/OreDict/IOreDictEntry/) as output parameter, or the name of said oreDictEntry as string.
+Sie können entweder Rezepte mit dem zurückgegebenen [IOreDictEntry](/Vanilla/OreDict/IOreDictEntry/) als Ausgabeparameter entfernen oder den Namen des genannten oreDictEntry als String.
 
 ```zenscript
 //mods.botania.Orechid.removeOre(IOreDictEntry oreDict);

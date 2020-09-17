@@ -1,17 +1,17 @@
 # IEntityDropFunction
 
-An IEntityDropFunction is called whenever the associated entity is killed. Leave it up to your imagination what you can do with this:
+Eine IEntityDropFunktion wird aufgerufen, wenn die zugehörige Entität getötet wird. Lassen Sie es Ihrer Phantasie überlassen, was Sie damit tun können:
 
 ## Dieses Paket importieren
 
-It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
-`import crafttweaker.entity.IEntityDropFunction;`
+Es kann erforderlich sein, dass Sie das Paket importieren, wenn Sie irgendwelche Probleme haben. Seien Sie also besser sicher als entschuldigen und fügen Sie den Import hinzu.  
+`importiere craftweaker.entity.IEntityDropFunction;`
 
-## Parameters
+## Parameter
 
-The IEntityDropFunction is a function with the following parameters:
+Die IEntityDropFunktion ist eine Funktion mit den folgenden Parametern:
 
-- [IEntity](/Vanilla/Entities/IEntity/) entity → The entity that just died.
-- [IDamageSource](/Vanilla/Damage/IDamageSource/) dmgSourve → The source of the entitie's death.
+- [IEntität](/Vanilla/Entities/IEntity/) → Die Entität, die gerade gestorben ist.
+- [IDamageSource](/Vanilla/Damage/IDamageSource/) dmgSourve → Die Quelle des Todes des Entitäts.
 
-The Function needs to return an [IItemStack](/Vanilla/Items/IItemStack/), or `null`.
+Die Funktion muss einen [IItemStack](/Vanilla/Items/IItemStack/)oder `null` zurückgeben.

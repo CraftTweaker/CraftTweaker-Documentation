@@ -1,26 +1,26 @@
-# CommandEvent
+# Командное событие
 
-The Command Event is fired whenever a command is executed. You can react to the command by providing a command handler. See [Crafttweaker examples](https://github.com/CraftTweaker/CraftTweaker-Examples/blob/master/crafttweaker/events/commandEvent/SendMessageOnSyntaxCommand/SendMessageOnSyntaxCommand.zs) for an example.
+При выполнении команды запускается командное событие. Вы можете реагировать на команду с помощью обработчика команд. Смотрите примеры [Crafttweaker](https://github.com/CraftTweaker/CraftTweaker-Examples/blob/master/crafttweaker/events/commandEvent/SendMessageOnSyntaxCommand/SendMessageOnSyntaxCommand.zs) для примера.
 
 ## Класс события
 
-You will need to cast the event in the function header as this class: `crafttweaker.event.CommandEvent`. It is advised to [import](/AdvancedFunctions/Import/) the class
+Вам нужно будет использовать событие в заголовке функции как этот класс: `crafttweaker.event.CommandEvent`. Рекомендуется [импортировать](/AdvancedFunctions/Import/) класс
 
     import crafttweaker.event.CommandEvent;
     
 
 ## Наследование от интерфейсов событий
 
-Command event implements the following interfaces:
+Командное событие реализует следующие интерфейсы:
 
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 
-## ZenGetters/ZenSetters
+## Геттеры/сеттеры
 
-The following information ca be retrieved/set during the event:
+Во время события необходимо извлечь/задать следующую информацию:
 
-| Геттер          | ZenSetter    | Тип                                                 |
-| --------------- | ------------ | --------------------------------------------------- |
-| `commandSender` | no           | [ICommandSender](/Vanilla/Commands/ICommandSender/) |
-| `command`       | no           | [ICommand](/Vanilla/Commands/ICommand/)             |
-| `parameters`    | `parameters` | string array                                        |
+| Геттер        | ZenSetter   | Тип                                                 |
+| ------------- | ----------- | --------------------------------------------------- |
+| `отправитель` | нет         | [ICommandSender](/Vanilla/Commands/ICommandSender/) |
+| `команда`     | нет         | [ICommand](/Vanilla/Commands/ICommand/)             |
+| `параметры`   | `параметры` | строковый массив                                    |

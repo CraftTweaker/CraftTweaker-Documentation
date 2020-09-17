@@ -1,20 +1,20 @@
-# Combustion Engine
+# Двигатель сгорания
 
-*Requires BuildCraft Energy*
+*Требуется Энергия BuildCraft*
 
-Class path: `mods.buildcraft.CombustionEngine`
+Путь к классу: `mods.buildcraft.CombustionEngine`
 
-## Use
+## Использовано
 
-To use, import the class with `import mods.buildcraft.CombustionEngine;` at the beginning of your script.
+Чтобы использовать, импортируйте класс с `импортируйте mods.buildcraft.CombustionEngine;` в начале вашего скрипта.
 
-## Adding a Clean Fuel
+## Добавление чистого топлива
 
-`CombustionEngine.addCleanFuel(liquid, powerPerTick, timePerBucket);`
+`CombustionEngine.addCleanFuel(жидкость, powerPerTick, timePerBucket);`
 
-- `liquid` <[ILiquidStack](/vanilla/api/liquids/ILiquidStack)> The liquid to be used as fuel
-- `powerPerTick` &lt;double> Power output in MJ per tick
-- `timePerBucket` &lt;int> Amount of ticks that 1,000 mB (1 bucket) should run for
+- `жидкость` <[ILiquidStack](/Vanilla/Liquids/ILiquidStack)> жидкость для использования в качестве топлива
+- `powerPerTick` &lt;двойной> Вывод энергии в MJ на такт
+- `timePerBucket` &lt;int> Количество тиков, которое 1000 mB (1 bucket) должно быть запущено для
 
 ```zenscript
 import mods.buildcraft.CombustionEngine;
@@ -22,14 +22,14 @@ import mods.buildcraft.CombustionEngine;
 CombustionEngine.addCleanFuel(<liquid:iron>, 32.0, 1200);
 ```
 
-## Adding a Dirty Fuel
+## Добавление Грязного топлива
 
 `CombustionEngine.addDirtyFuel(lFuel, powerPerTick, timePerBucket, lResidue);`
 
-- `lFuel` <[ILiquidStack](/vanilla/api/liquids/ILiquidStack)> The liquid to be used as fuel
-- `powerPerTick` &lt;double> Power output in MJ per tick
-- `timePerBucket` &lt;int> Amount of ticks that 1,000 mB (1 bucket) should run for
-- `lResidue` <[ILiquidStack](/vanilla/api/liquids/ILiquidStack)> The residue fluid, per bucket of the original fuel
+- `lFuel` <[ILiquidStack](/Vanilla/Liquids/ILiquidStack)> жидкость, используемая в качестве топлива
+- `powerPerTick` &lt;двойной> Вывод энергии в MJ на такт
+- `timePerBucket` &lt;int> Количество тиков, которое 1000 mB (1 bucket) должно быть запущено для
+- `lОстаток` <[ILiquidStack](/Vanilla/Liquids/ILiquidStack)> Остаточная жидкость, на единицу топлива
 
 ```zenscript
 import mods.buildcraft.CombustionEngine;

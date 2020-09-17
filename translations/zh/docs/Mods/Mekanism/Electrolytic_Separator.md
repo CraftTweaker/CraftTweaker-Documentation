@@ -1,8 +1,8 @@
-# Electrolytic Separator
+# 电解分隔符
 
-As of Mekanism 9.7.0 it is now possible to view all recipe strings of the Electrolytic Separator through the command `/ct mekrecipes separator`
+到Mekanism 9.7.0 现在可以通过命令 `/ct mek配方分隔符` 查看电解分离器的所有配方字符串。
 
-## Addition
+## 加
 
 ```zenscript
 mods.mekanism.separator.addRecipe(ILiquidStack inputFluid, double inputRF, IGasStack outputGas1, IGasStack outputGas2);
@@ -10,20 +10,20 @@ mods.mekanism.separator.addRecipe(ILiquidStack inputFluid, double inputRF, IGasS
 mods.mekanism.separator.addRecipe(<liquid:liquidfusionfuel>, 5000, <gas:deuterium>, <gas:tritium>);
 ```
 
-## Removal
+## 移除
 
 ```zenscript
 mods.mekanism.separator.removeRecipe(IIngredient inputFluid, @Optional IIngredient outputGas1, @Optional IIngredient outputGas2);
 
 mods.mekanism.separator.removeRecipe(<liquid:heavywater>, <gas:deuterium>, <gas:oxygen>);
-mods.mekanism.separator.removeRecipe(<liquid:water>);
+mods.mekanis.separator.removeRecipe(<liquid:water>);
 ```
 
-Specifying an output parameter will only remove the specific recipe that results in that output from that input. Omitting the output parameter will remove all recipes that the input item can produce.
+指定输出参数只会移除从该输入产生该输出的特定配方。 忽略输出参数将删除输入项能够生成的所有配方。
 
-## Removing all recipes
+## 删除所有配方
 
-As of Mekanism 9.7.0 it is now possible to remove all Electrolytic Separator recipes. (This excludes any recipes added via CraftTweaker)
+由于Mekanism 9.7.0，现在可以移除所有电解分离器配方。 (这排除了任何通过 CraftTweaker 添加的配方
 
 ```zenscript
 mods.mekanism.separator.removeAllRecipes();

@@ -1,42 +1,42 @@
-# PlayerBonemeal
+# Bonemal Gracza
 
-The PlayerBonemeal Event is fired whenever a player uses bonemeal on a block.
+Wydarzenie PlayerBonemeal jest strzelane za każdym razem, gdy gracz używa premii na bloku.
 
-## Event Class
+## Klasa wydarzenia
 
-You will need to cast the event in the function header as this class:  
-`crafttweaker.event.PlayerBonemealEvent`  
-You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
+Musisz aktywować wydarzenie w nagłówku funkcji jako klasa:  
+`crafttweaker.event. layerBonemealEvent`  
+Możesz oczywiście również [zaimportować](/AdvancedFunctions/Import/) klasę przed i wtedy użyć tej nazwy.
 
-## Event interface extensions
+## Rozszerzenia interfejsu zdarzenia
 
-PlayerBonemeal Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+PlayerBonemeal Events implementuje następujące interfejsy i są w stanie wywołać wszystkie swoje metody/getters/setters:
 
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
-- [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
+- [Wydarzenie IPlayer](/Vanilla/Events/Events/IPlayerEvent/)
 - [IProcessableEvent](/Vanilla/Events/Events/IProcessableEvent/)
-- [IEventPositionable](/Vanilla/Events/Events/IEventPositionable/)
+- [Pozycjonowalne](/Vanilla/Events/Events/IEventPositionable/)
 
 ## ZenGetters
 
-The following information can be retrieved from the event:
+Z wydarzenia można uzyskać następujące informacje:
 
-| ZenGetter    | Return Type                                 |
-| ------------ | ------------------------------------------- |
-| `canceled`   | boolean                                     |
-| `processed`  | boolean                                     |
-| `x`          | int                                         |
-| `y`          | int                                         |
-| `z`          | int                                         |
-| `player`     | [IPlayer](/Vanilla/Players/IPlayer/)        |
-| `world`      | [IWorld](/Vanilla/World/IWorld/)            |
-| `block`      | [IBlock](/Vanilla/Blocks/IBlock/)           |
-| `blockState` | [IBlockState](/Vanilla/Blocks/IBlockState/) |
-| `blockPos`   | [IBlockPos](/Vanilla/World/IBlockPos/)      |
-| `dimension`  | int                                         |
-| `item`       | [IItemStack](/Vanilla/Items/IItemStack/)    |
+| ZenGetter      | Typ zwrotu                                   |
+| -------------- | -------------------------------------------- |
+| `anulowane`    | boolean                                      |
+| `przetworzone` | boolean                                      |
+| `x`            | odcień                                       |
+| `y`            | odcień                                       |
+| `z`            | odcień                                       |
+| `gracz`        | [IPlayer](/Vanilla/Players/IPlayer/)         |
+| `świat`        | [IWorld](/Vanilla/World/IWorld/)             |
+| `blok`         | [IBlock](/Vanilla/Blocks/IBlock/)            |
+| `Blokada`      | [Stan IBlocka](/Vanilla/Blocks/IBlockState/) |
+| `bloki`        | [IBlockPos](/Vanilla/World/IBlockPos/)       |
+| `wymiary`      | odcień                                       |
+| `element`      | [IItemStack](/Vanilla/Items/IItemStack/)     |
 
-## ZenMethods
+## Metody ZenMethods
 
-- `event.cancel()` sets the event as cancelled
-- `event.process()` sets the event as processed
+- `event.cancel()` ustawia wydarzenie jako anulowane
+- `event.process()` ustawia wydarzenie jako przetworzone

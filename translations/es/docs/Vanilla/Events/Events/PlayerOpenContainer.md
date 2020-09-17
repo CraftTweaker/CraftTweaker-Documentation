@@ -1,30 +1,30 @@
 # PlayerOpenContainer
 
-The PlayerOpenContainer Event is fired whenever a player opens a container.
+El Evento PlayerOpenContainer se activa cada vez que un jugador abre un contenedor.
 
-## Event Class
+## Clase de evento
 
-You will need to cast the event in the function header as this class:  
-`crafttweaker.event.PlayerOpenContainerEvent`  
-You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
+Necesitarás lanzar el evento en la cabecera de la función como esta clase:  
+`crafttweaker.event. layerOpenContainerEvent`  
+Puede, por supuesto, también [importar](/AdvancedFunctions/Import/) la clase anterior y utilizar ese nombre entonces.
 
-## Event interface extensions
+## Extensiones de la interfaz de eventos
 
-PlayerOpenContainer Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+PlayerOpenContainer Events implementan las siguientes interfaces y son capaces de llamar a todos sus métodos/getters/setters también:
 
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
-- [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
+- [Evento IJugador](/Vanilla/Events/Events/IPlayerEvent/)
 
 ## ZenGetters
 
-The following information can be retrieved from the event:
+La siguiente información puede ser recuperada del evento:
 
-| ZenGetter   | Return Type                                  |
-| ----------- | -------------------------------------------- |
-| `canceled`  | boolean                                      |
-| `player`    | [IPlayer](/Vanilla/Players/IPlayer/)         |
-| `container` | [IContainer](/Vanilla/Container/IContainer/) |
+| ZenGetter    | Tipo de devolución                           |
+| ------------ | -------------------------------------------- |
+| `cancelado`  | boolean                                      |
+| `jugador`    | [IPlayer](/Vanilla/Players/IPlayer/)         |
+| `contenedor` | [Contenedor](/Vanilla/Container/IContainer/) |
 
-## ZenMethods
+## Métodos
 
-- `event.cancel()` sets the event as cancelled.
+- `event.cancel()` establece el evento como cancelado.

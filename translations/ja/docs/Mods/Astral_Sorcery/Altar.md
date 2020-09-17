@@ -1,12 +1,12 @@
-# Altar Crafting
+# 祭壇の作成
 
-You can add and remove crafting recipes from the AS Altar.
+AS 祭壇からクラフトレシピを追加したり削除したりできます。
 
-## Calling
+## 発信中
 
-You can call the AltarRecipe package using `mods.astralsorcery.Altar`.
+`mods.astalsorcery.Altar` を使用して、AltarRecipeパッケージを呼び出すことができます。
 
-## Remove Altar Recipes
+## 祭壇のレシピを削除
 
 This function removes the recipe with the given resource location.  
 You can get those locations by hovering over the recipe output in JEI or the Astral tome while the F3 screen is active.  
@@ -14,7 +14,7 @@ Prints a warning if the recipe does not exist.
 
 ```zenscript
 //mods.astralsorcery.Altar.removeAltarRecipe(string recipeLocation);
-mods.astralsorcery.Altar.removeAltarRecipe("astralsorcery:shaped/internal/altar/lightwell");
+mods.astralsorcery.Altar.removeAltarRecipe("aststrsorcery:shaped/internal/altar/lightwell');
 ```
 
 <details><summary>Pre v1.10 handler</summary>
@@ -23,24 +23,24 @@ This function removes the first recipe it finds that returns provided [IItemStac
 If there are multiple recipes that return the provided output, you need to call this method multiple times!
 
 <table>
-    <tr><th>Altar Level</th><th>Level name</th></tr>
-    <tr><td>0</td><td>Luminous Crafting Table</td></tr>
-    <tr><td>1</td><td>Starlight Crafting Altar</td></tr>
-    <tr><td>2</td><td>Celestial Altar</td></tr>
+    <tr><th>祭壇レベル</th><th>レベル名</th></tr>
+    <tr><td>0</td><td>光沢のある作業台</td></tr>
+    <tr><td>1</td><td>スターライトで祭壇をクラフトする</td></tr>
+    <tr><td>2</td><td>天祭壇（天）</td></tr>
 </table>
 
 ```zenscript
-//mods.astralsorcery.Altar.removeAltarRecipe(IItemStack output, int altarLevel);
-mods.astralsorcery.Altar.removeAltarRecipe(<astralsorcery:blockblackmarble>, 0);
+//mods.astralsorcery.Altar.removeAltarRecipe(IItemStack output, int altLevel);
+mods.astalsorcery.Altar.removeAltarRecipe(<astralsorcery:blockblackmarble>, 0);
 ```
 
 </details>
 
-## Add Altar Recipes
+## 祭壇のレシピを追加
 
-Since v1.10 all recipes require a resource location as first parameter.  
-Unlike vanilla recipe names, they are not optional and you will encounter errors if you do not provide it. If you want to override an existing recipe, you can just add a new recipe with the same location.  
-You can get those locations by hovering over the recipe output in JEI or the Astral tome while the F3 screen is active.
+v1.10以降、すべてのレシピは最初のパラメータとしてリソースの場所を必要とします。  
+バニラレシピ名とは異なり、オプションではなく、指定しないとエラーが発生します。 既存のレシピを上書きしたい場合は、同じ場所で新しいレシピを追加できます。  
+F3画面がアクティブな状態で、JEIやアストラル大冊のレシピ出力にカーソルを合わせることで、これらの場所を得ることができます。
 
 All recipe addition methods require these parameters:  
 string `recipeLocation`,  
@@ -52,27 +52,27 @@ int `craftingTickTime`,
 The `inputs` parameter is, unlike in Crafting Table recipes only a 1 Dimensional Array.  
 You can use [IItemStacks](/Vanilla/Items/IItemStack/), [ILiquidStacks](/Vanilla/Liquids/ILiquidStack/), [IOreDictEntries](/Vanilla/OreDict/IOreDictEntry/) or `null` as the array's members
 
-These recipes cannot be shapeless!
+これらのレシピは形を変えられません！
 
-### Discovery
+### 発見
 
-`inputs` length *has to be* 9
+`入力` の長さ *は* 9 でなければなりません
 
 `inputs` Order:  
 ![Inputs Order](/Mods/Astral_Sorcery/Assets/guialtar1.png)
 
 ```zenscript
 mods.astralsorcery.Altar.addDiscoveryAltarRecipe("mypackname:shaped/internal/altar/dirtfromstuff", <minecraft:dirt>, 200, 200, [
-            <minecraft:grass>, null, <ore:treeLeaves>,
+            , null,            <minecraft:grass>, null, <ore:treeLeaves>,
             null, <minecraft:grass>, null,
             <liquid:astralsorcery.liquidstarlight>, null, <ore:treeLeaves>]);
 ```
 
 ### Attunement
 
-Adds a recipe to the Starlight Crafting Table (T2)
+スターライトの作業台（T2）にレシピを追加
 
-`inputs` length *has to be* 13
+`入力` の長さ *は* 13 でなければなりません
 
 `inputs` Order:  
 ![Inputs Order](/Mods/Astral_Sorcery/Assets/guialtar2.png)
@@ -87,9 +87,9 @@ mods.astralsorcery.Altar.addAttunementAltarRecipe("mypackname:shaped/internal/al
 
 ### Constellation
 
-Adds a recipe to the Celestial Altar (T3)
+天体祭壇にレシピを追加 (T3)
 
-`inputs` length *has to be* 21
+`入力` の長さ *は* 21 でなければなりません
 
 `inputs` Order:  
 ![Inputs Order](/Mods/Astral_Sorcery/Assets/guialtar3.png)
@@ -106,13 +106,13 @@ mods.astralsorcery.Altar.addConstellationAltarRecipe("mypackname:shaped/internal
             <ore:blockMarble>, <ore:blockMarble>]);
 ```
 
-### Trait
+### 形質（形質）
 
-Adds a recipe to the Trait Altar (T4)
+トレイト祭壇にレシピを追加します (T4)
 
-`Constellation` the Constellation as an unlocalized String. This is an optional parameter.
+`Constellation` を非ローカライズされた文字列としてコンステレーションとします。 これはオプションのパラメータです。
 
-`inputs` length *has to be* 25 or higher. Items at index 25 or higher will be considered as "outer items" that need to be put on relays around the altar.
+`入力` の長さ *は* 25 以上でなければなりません。 インデックス25以上の項目は、祭壇の周りにリレーを配置する必要がある「外側項目」と見なされます。
 
 `inputs` Order:  
 ![Inputs Order](/Mods/Astral_Sorcery/Assets/guialtar4.png)

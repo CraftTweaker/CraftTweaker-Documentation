@@ -1,30 +1,30 @@
-# Create Element
-Custom Element Creation for Alchemistry
+# Создать элемент
+Создание пользовательского элемента для алхимии
 
-# Package
+# Пакет
 `mods.alchemistry.Util.createElement`
-## Loader
-This needs to be loaded with `#loader alchemistry`
+## Погрузчик
+Это должно быть загружено с `#alchemistry`
 
 ## Методы
-- **int atomicNumber** ID for new Element
-- **String Name** New Elements Name
-- **String Abbrebiation** New Elements Abbrebiation
-- **int red** Element red shade, RGB
-- **int green** Element green shade, RGB
-- **int blue** Element blue shade, RGB
+- **int atomicNumber** ID для нового элемента
+- **Имя строки** Имя новых элементов
+- **Аббревиатура строк** Аббревиатура новых элементов
+- **красный оттенок красного элемента** RGB
+- **int green** Элемент зеленый тень, RGB
+- **int синий** Элемент синий тень, RGB
 
-## Creation
+## Создание
 ```zenscript
 mods.alchemistry.Util.createElement(int atomicNumber, String name, String abbreviation, int red, int green, int blue);
 
-mods.alchemistry.Util.createElement(150,"vibranium","Vrb", 70, 90, 250);
+mods.alchemistry.Util.createElement(150,"вибрация","Врб", 70, 90, 250);
 mods.alchemistry.Util.createElement(151,"unobtanium","Uno",30,54,69);
 ```
 
-## Notes
+## Примечания
 
-- Please use lowercase names
-- Pre-existing atomic numbers cannot be overwritten
-- The '#loader alchemistry' line is required at the top of the file. This file can only be used to create elements and compounds, other recipes must be put in other files.
-- NOTE: As of v1.0.2, The mod Resource Loader must be used to include the image and model json for custom elements. If you would like to auto-generate these resources I have created a command-line JAR program [here](https://github.com/al132mc/alchemistry-resource-creator/releases) to do so.
+- Пожалуйста, используйте имена строчных регистров
+- Пре-существующие атомарные числа не могут быть перезаписаны
+- Строка алхимии '#loader ' требуется в верхней части файла. Этот файл может быть использован только для создания элементов и соединений, другие рецепты должны быть помещены в другие файлы.
+- ПРИМЕЧАНИЕ: Начиная с версии 1.0.2 для пользовательских элементов должен использоваться загрузчик ресурсов мода. Если вы хотите автоматически сгенерировать эти ресурсы, то я создал программу JAR в командной строке [здесь](https://github.com/al132mc/alchemistry-resource-creator/releases) , чтобы это сделать.

@@ -1,14 +1,15 @@
 # LivingDestroyBlock
 
-This event is fired whenever a Wither or Ender Dragon attempts to destroy blocks, or when a zombie attempts to break a door. This event is **cancelable**, and if canceled, the block will not be broken.
+このイベントは、ウィザーやエンダードラゴンがブロックを破壊しようとしたとき、またはゾンビがドアを壊そうとしたときに発生します。 このイベントは **キャンセル可能**で、キャンセルされた場合、ブロックは壊れません。
 
-## Event Class
-You will need to cast the event in the function header as this class:  
-`crafttweaker.event.LivingDestroyBlockEvent`  
-You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
+## イベントクラス
+関数ヘッダーのイベントをこのクラスとしてキャストする必要があります:  
+`crafttweaker.event. ivingDestroyBlockEvent <br x-id="2" /> 
+ <code>`  
+もちろん、 [インポート](/AdvancedFunctions/Import/) 前にクラスをインポートし、その名前を使用することもできます。
 
-## Event interface extensions
-LivingDestroyBlock Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+## イベントインターフェースの拡張
+LivingDestroyBlock Eventsは、以下のインターフェースを実装し、それらのメソッド/ゲッター/セッターをすべて呼び出すことができます。
 
 - [IEventPositionable](/Vanilla/Events/Events/IEventPositionable/)
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
@@ -16,9 +17,9 @@ LivingDestroyBlock Events implement the following interfaces and are able to cal
 
 
 ## ZenGetters/ZenSetters
-The following information can be retrieved/set during the event:
+イベント中に以下の情報を取得/設定できます:
 
-| ZenGetter | ZenSetter | Type                                        |
+| ZenGetter | ZenSetter | タイプ                                         |
 | --------- | --------- | ------------------------------------------- |
-| `state`   |           | [IBlockState](/Vanilla/Blocks/IBlockState/) |
+| `状態`      |           | [IBlockState](/Vanilla/Blocks/IBlockState/) |
 

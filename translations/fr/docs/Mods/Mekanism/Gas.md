@@ -1,63 +1,63 @@
-# Mekanism
+# Mékanisme
 
-Mekanism CraftTweaker support has been integrated directly into Mekanism now ([link](https://github.com/aidancbrady/Mekanism/tree/master/src/main/java/mekanism/common/integration/crafttweaker))
+Le support du Mékanism CraftTweaker a été intégré directement au Mékanisme maintenant ([link](https://github.com/aidancbrady/Mekanism/tree/master/src/main/java/mekanism/common/integration/crafttweaker))
 
-Mekanism adds bracket-handler support to define **gas** -- a special material state differing from forge [**liquids**](/Vanilla/Liquids/ILiquidStack/)
+Le mékanisme ajoute le support du bracket-handler pour définir **gaz** -- un état de matériau spécial différent de la forge [**liquides**](/Vanilla/Liquids/ILiquidStack/)
 
 ```zenscript
 <gas:oxygen>
 <gas:water> *
 ```
 
-*Noting that `<gas:water>` is different from `<liquid:water>`*
+*Notant que `<gas:water>` est différent de `<liquid:water>`*
 
-As of Mekanism 9.7.0 it is now possible to view all registered gases (including those from other mods) via the command `/ct gases`
+Depuis le Mékanisme 9.7.0, il est maintenant possible de voir tous les gaz enregistrés (y compris ceux provenant d'autres mods) via la commande `/ct gases`
 
-It is also possible as of Mekanism 9.7.1 to get a gas stack/bracket handler by string. Use `mods.mekanism.MekanismHelper.getGas(string);`
+Il est également possible à partir du Mékanism 9.7.1 d'obtenir un gestionnaire de piles de gaz/brackets par chaîne. Utiliser `mods.mekanism.MekanismHelper.getGas(string);`
 
-## Example
+## Exemple
 
 ```zenscript
-import mod.mekanism.gas.IGasStack;
+import mod.mekanism.gas.IGasStack ;
 
-var oxygen = <gas:oxygen>.withAmount(500) as IGasStack;
-var oxygen2 = <gas:oxygen> * 500;
+var oxygen = <gas:oxygen>.withAmount(500) en IGasStack ;
+var oxygen2 = <gas:oxygen> * 500 ;
 ```
 
 ## ZenGetters
 
-Like LiquidStacks, IGasStacks also support some special ZenGetters.  
-You call the ZenGetters using `gas.Getter` (E.g. `<gas:water>.name`)
+Comme LiquidStacks, IGasStacks supporte également certains ZenGetters spéciaux.  
+Vous appelez les ZenGetters en utilisant `gas.Getter` (par exemple. `<gas:water>.name`)
 
-| ZenGetter   | Description                             | Return Type    |
-| ----------- | --------------------------------------- | -------------- |
-| definition  | Returns the gas' definition             | IGasDefinition |
-| NAME        | Returns the gas' name                   | string         |
-| displayName | Returns the gas' displayName            | string         |
-| amount      | Returns the gas' amount in millibuckets | int            |
+| ZenGetter      | Libellé                                 | Type de retour           |
+| -------------- | --------------------------------------- | ------------------------ |
+| Définition     | Renvoie la définition du gaz            | Définition IGasformat@@0 |
+| NOM            | Renvoie le nom du gaz                   | chaîne de caractères     |
+| nomdeaffichage | Renvoie le nom d'affichage du gaz       | chaîne de caractères     |
+| montant        | Renvoie le montant du gaz en milliseaux | Indice                   |
 
-## Setting the Object's Amount
+## Définition du montant de l'objet
 
-You can set the Object's amount (gas volume in Millibuckets) in two ways, which both do exactly the same:
+Vous pouvez définir la quantité de l'objet (volume de gaz dans Millibuckets) de deux manières, qui font tous les deux exactement la même chose :
 
 ```zenscript
-var gas_amount_multiply = <gas:water> * 500;
+var gas_amount_multiply = <gas:water> * 500 ;
 var gas_amount_zenMethod = <gas:water>.withAmount(500);
 ```
 
-## IGasDefinition
+## Définition IGasformat@@0
 
-An IGasDefinition object contains information on a gas.  
-You can get such an object using `gasStack.definition` (check the table above)
+Un objet IGasDefinition contient des informations sur un gaz.  
+Vous pouvez obtenir un tel objet en utilisant `gasStack.definition` (vérifiez le tableau ci-dessus)
 
-| ZenGetter   | Description                            | Return Type |
-| ----------- | -------------------------------------- | ----------- |
-| NAME        | Returns the referred gas' name         | string      |
-| displayName | Returns the referred gas' display name | string      |
+| ZenGetter      | Libellé                                     | Type de retour       |
+| -------------- | ------------------------------------------- | -------------------- |
+| NOM            | Renvoie le nom du gaz référencé             | chaîne de caractères |
+| nomdeaffichage | Renvoie le nom d'affichage du gaz référencé | chaîne de caractères |
 
-You can multiply a gasDefinition to return a new IGasStack with the given amount in millibuckets:
+Vous pouvez multiplier une définition de gaz pour retourner une nouvelle IGasStack avec le montant donné en millions:
 
 ```zenscript
-var gas_definition = <gas:water>.definition;
-var gas_bucket = gas_definition * 1000;
+var gas_definition = <gas:water>.definition ;
+var gas_bucket = gas_definition * 1000 ;
 ```

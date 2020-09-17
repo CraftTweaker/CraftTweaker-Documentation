@@ -1,17 +1,17 @@
-### Class
+### Класс
 
 ```zenscript
 import mods.roots.Fey;
 ```
 
-#### Methods
+#### Методы
 
 ```zenscript
 void addRecipe(
-  string name,         // the name of the recipe; if replacing an existing recipe, be sure to use the same name to ensure Patchouli continuity
-  IItemStack output,   // the itemstack produced by this recipe
-  IIngredient[] inputs // an array of IIngredients that make up the recipe; must contain 5 items
-);
+  string name, // название рецепта; если заменить существующий рецепт, обязательно используйте одно и то же имя, чтобы обеспечить преемственность Patchouli
+  выход IItemStack, // предметный стек, созданный входом этого рецепта
+  IIngredient[] // массив IIngredients, составляющий рецепт; должен содержать 5 элементов
+
 ```
 
 * * *
@@ -29,30 +29,30 @@ void addRecipe(
 
 ```zenscript
 void removeRecipe(
-  IItemStack output // the item produced by the recipe you wish to remove
+  IItemStack output // элемент, производимый по рецепту, который вы хотите удалить
 );
 ```
 
 * * *
 
-### Examples
+### Примеры
 
 ```zenscript
 import mods.roots.Fey;
 
-// Adds a recipe for TNT using 4 gunpowder and red wool
-Fey.addRecipe("tnt", <minecraft:tnt>, [<minecraft:gunpowder>, <minecraft:gunpowder>, <minecraft:gunpowder>, <minecraft:gunpowder>, <minecraft:wool:14>]);
+// Добавляет рецепт для TNT с помощью 4 пороха и красной шерсти
+Fey. ddRecipe("tnt", <minecraft:tnt>, [<minecraft:gunpowder>, <minecraft:gunpowder>, <minecraft:gunpowder>, <minecraft:gunpowder>, <minecraft:wool:14>]);
 
-// Adds the above recipe but also grants the player 6 levels (from 0-6 relatively) every time it is crafted
-Fey.addRecipe("tnt", <minecraft:tnt>, [<minecraft:gunpowder>, <minecraft:gunpowder>, <minecraft:gunpowder>, <minecraft:gunpowder>, <minecraft:wool:14>], 6);
+// Добавляет приведенный выше рецепт, но также даёт игроку 6 уровней (от 0-6 относительно) каждый раз, когда он создаётся
+Fey. ddRecipe("tnt", <minecraft:tnt>, [<minecraft:gunpowder>, <minecraft:gunpowder>, <minecraft:gunpowder>, <minecraft:gunpowder>, <minecraft:wool:14>], 6);
 
-// Removes the recipe for the living axe
-Fey.removeRecipe(<roots:living_axe>);
+// Удаляет рецепт живого топора
+Fey. emoveRecipe(<roots:living_axe>);
 
-// Adds a different recipe for the living axe, using the same name, to ensure that it shows up in Patchouli. By default all Fey crafting recipe names are the same as the item's registry name.
+// Добавляет другой рецепт для живого топора, используя одно и то же имя, чтобы убедиться, что он появился в Patchouli. По умолчанию все имена рецептов создания Fey совпадают с именем реестра.
 Fey.addRecipe("living_axe", <roots:living_axe>, [<minecraft:sand>, <minecraft:dirt>, <minecraft:stone>, <minecraft:glass>, <minecraft:stone_axe>]);
 ```
 
-### Notes
+### Примечания
 
-It is important for Patchouli continuity that, if you remove a default recipe (say `living_axe`), that you replace it with another recipe and give that recipe the name `"living_axe"` if you wish Patchouli to properly display the new recipe.
+Важно для Patchouli непрерывности, если вы удалите рецепт по умолчанию (например `living_axe`), заменить его другим рецептом и дать этому рецепту имя `"living_axe"` если вы хотите, чтобы Patchouli правильно отображал новый рецепт.

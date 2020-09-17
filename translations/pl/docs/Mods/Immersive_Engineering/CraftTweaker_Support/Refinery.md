@@ -1,21 +1,21 @@
-# Refinery
+# Rafineria
 
-The Refinery package can be used to add/remove recipes to/from the Immersive Engineering Refinery.
+Pakiet rafinerii może być użyty do dodawania/usuwania przepisów do/z rafinerii Inżynierii Immersive Engineering Refinery.
 
-## Calling The Package
+## Wezwanie do pakietu
 
-You can call the Refinery package using `mods.immersiveengineering.Refinery`.
+Możesz wywołać pakiet Rafinerii, używając `mods.immersiveengineering.Refinery`.
 
-## Add Recipe
+## Dodaj przepis
 
-| Required | Type    | Data Type                                    |
+| Wymagane | Typ     | Typ danych                                   |
 | -------- | ------- | -------------------------------------------- |
-| Required | Output  | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
-| Required | Input 1 | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
-| Required | Input 2 | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
-| Required | Energy  | Integer                                      |
+| Wymagane | Wyjście | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
+| Wymagane | Input 1 | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
+| Wymagane | Input 2 | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
+| Wymagane | Energia | Liczba całkowita                             |
 
-### Example
+### Przykład
 
 ```zenscript
 //Example
@@ -24,17 +24,17 @@ mods.immersiveengineering.Refinery.addRecipe(ILiquidStack output, ILiquidStack i
 mods.immersiveengineering.Refinery.addRecipe(<liquid:iron>, <liquid:water>, <liquid:lava>, 2048);
 ```
 
-## Remove Recipe
+## Usuń przepis
 
-| Type   | Data Type                                    |
-| ------ | -------------------------------------------- |
-| Output | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
+| Typ     | Typ danych                                   |
+| ------- | -------------------------------------------- |
+| Wyjście | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
 
-### Example
+### Przykład
 
 ```zenscript
 //Example
-mods.immersiveengineering.Refinery.removeRecipe(ILiquidStack output);
+mods.immersiveengineering.Refinery.removeRecipe(ILiquidStack);
 
 mods.immersiveengineering.Refinery.removeRecipe(<liquid:iron>);
 ```

@@ -1,56 +1,60 @@
-# Saw
+# Avisado
 
-## Basic Recipe
+## Receta básica
 
-* Adds Saw Recipe - inputs *MUST* have a block associated with them.
+* Añade una receta de Saw - las entradas *DEBEN* tener un bloque asociado con ellas.
 
 ```zenscript
-mods.betterwithmods.Saw.add(IIngredient input, IItemStack[] output);
-//Examples
+mods.betterwithmods.Saw.add(entrada IIngredient, salida ItemStack[]);
+//Ejemplos
 mods.betterwithmods.Saw.add(<minecraft:fence>,[<minecraft:stick>,<minecraft:stick>]);
 ```
 
-## Removal by input
+## Eliminar por entrada
 
-* Remove a recipe based on the input ingredient
+* Elimina una receta basada en el ingrediente de entrada
 
 ```zenscript
 mods.betterwithmods.Saw.remove(IIngredient input);
 ```
 
-## Removal by output
+## Eliminar por salida
 
-* Remove a recipe based on the output
+* Elimina una receta basada en la salida
 
 ```zenscript
-mods.betterwithmods.Saw.remove(IItemStack[] outputs);
+mods.betterwithmods.Saw.remove(ItemStack[] salidas);
 ```
 
-## Remove all
+## Eliminar todo
 
-* Remove all recipes
+* Eliminar todas las recetas
 
 ```zenscript
 mods.betterwithmods.Saw.removeAll();
 ```
 
-## Builder
+## Constructor
 
-The Saw has a recipe builder. Due to the nature of the saw it currently has no special builder methods, I will document it none-the-less.
+La Saw tiene un constructor de recetas. Debido a la naturaleza de la sierra que actualmente no tiene métodos especiales de construcción, voy a documentarlo de ninguna manera.
 
-* To create a new Saw builder. `mods.betterwithmods.Saw.builder()`
+* Crear un nuevo constructor de Saw. `mods.betterwithmods.Saw.builder()`
 
-* Saw methods
+* Métodos de borrado
      
      * Sets up the inputs and outputs of the recipe  
-              zenscript
-              buildRecipe(IIngredient[] inputs, IItemStack[] outputs)
+          zenscript buildRecipe(IIngredient[] inputs, IItemStack[] outputs)  
+              Sets up the inputs and outputs of the recipe<br />
+                    zenscript
+                    buildRecipe(IIngredient[] inputs, IItemStack[] outputs)
      
      * Finalize the recipe and add it to the game  
-              zenscript
-              build()
+          zenscript build()  
+              Finalize the recipe and add it to the game<br />
+                    zenscript
+                    build()
 
-### Example builder usage
+### Ejemplo de uso del constructor
 
     mods.betterwithmods.Saw.builder()
     .buildRecipe([<minecraft:oak_fence>], [<minecraft:stick>*6])

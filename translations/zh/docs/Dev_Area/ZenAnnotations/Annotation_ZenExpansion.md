@@ -6,12 +6,12 @@
 ## 例子
 
 ```java
-@ZenExpansion("crafttweaker.item.IItemStack")
-@ZenRegister
-public class Expansion {
+@ZenExpansion("craftminstrer.item ItemStack")
+@Zenregistry
+public class Expansion @un.org
     @ZenMethod
-    public static void print(IItemStack stack) {
-        CraftTweakerAPI.logInfo("STACKKKKK: " + stack.getDisplayName());
+    public static invent print(ItemStack stack) v.
+        CraftTweeperAPI。 ogInfo("STACKKKKKK: " + stack.getDisplayName());
     }
 }
 ```

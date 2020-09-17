@@ -1,23 +1,23 @@
-# IRayTraceResult
+# IRayTraceResultado
 
-When a player is looking or clicking at something he fires a ray that goes until it hits what it needs to hit, or misses.  
-The result of such a hit is an IRayTraceResult object.
+Cuando un jugador está mirando o haciendo clic en algo que lanza un rayo que va hasta que llega a lo que necesita para golpear, o se pierde.  
+El resultado de este golpe es un objeto IRayTraceResult.
 
-## Importing the class
+## Importar la clase
 
-It might be required to [import](/AdvancedFunctions/Import/) the class to avoid errors.  
-`import crafttweaker.world.IRayTraceResult`
+Podría ser necesario [importar](/AdvancedFunctions/Import/) la clase para evitar errores.  
+`importar crafttweaker.world.IRayTraceResult`
 
 ## ZenGetters
 
-All you can do is retrieve information from these objects, here's which:  
-Be careful though, since all getters that do not return a bool can return `null`!
+Todo lo que puedes hacer es recuperar información de estos objetos, aquí es que:  
+Ten cuidado, ya que todos los getters que no devuelvan un bool pueden devolver `nulo`!
 
-| name     | type                                   |
-| -------- | -------------------------------------- |
-| isMiss   | bool                                   |
-| isEntity | bool                                   |
-| isBlock  | bool                                   |
-| entity   | [IEntity](/Vanilla/Entities/IEntity/)  |
-| blockPos | [IBlockPos](/Vanilla/World/IBlockPos/) |
-| sideHit  | [IFacing](/Vanilla/World/IFacing/)     |
+| nombre       | tipo                                   |
+| ------------ | -------------------------------------- |
+| isMiss       | pluma                                  |
+| es entidad   | pluma                                  |
+| es Bloque    | pluma                                  |
+| entidad      | [IEntity](/Vanilla/Entities/IEntity/)  |
+| bloquear Pos | [IBlockPos](/Vanilla/World/IBlockPos/) |
+| sideHit      | [Enfrentar](/Vanilla/World/IFacing/)   |

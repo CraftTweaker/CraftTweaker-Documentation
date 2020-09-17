@@ -1,15 +1,15 @@
-# Electrolyzer
+# 电解器
 
 ## 所属包名
 
-`import mods.ic2.Electrolyzer;`
+`导入 mods.ic2.Electrolyzer;`
 
-## Methods
+## 方法
 
-- **[ILiquidStack](/Vanilla/Liquids/ILiquidStack/)[] outputs** Array of all outputs. Each slot corresponds to Down-Up-North-South-West-East direction. Trailing null may be omitted.
+- **[ILiquidStack](/Vanilla/Liquids/ILiquidStack/)[]输出** 输出全部输出。 每个栏位对应于西南向下方向。 尾随空可能被省略。
 - **[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) input** The input
-- **int power** Power consumption, measured in EU/tick
-- **@Optional int time** Time cost. Default to 200 if not given.
+- **整流功率** 耗电量，以欧盟/刻度
+- **@可选时间** 时间成本 如果没有给出，默认为200。
 
 ## 添加配方
 

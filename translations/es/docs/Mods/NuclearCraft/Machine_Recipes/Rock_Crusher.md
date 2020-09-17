@@ -1,14 +1,14 @@
-# Rock Crusher
+# Triturador de roca
 
-## Importing the Package
-`mods.nuclearcraft.rock_crusher`
+## Importando el Paquete
+`mods.nuclearcraft.rock_triturador`
 
-## Adding Recipes
+## Añadiendo recetas
 ```zenscript
 mods.nuclearcraft.rock_crusher.addRecipe([itemInput, itemOutput1, itemOutput2, itemOutput3, @Optional double timeMultiplier, @Optional double powerMultiplier, @Optional double processRadiation]);
 ```
 
-## Removing Recipes
+## Eliminando recetas
 ```zenscript
 mods.nuclearcraft.rock_crusher.removeRecipeWithInput([itemInput]);
 mods.nuclearcraft.rock_crusher.removeRecipeWithOutput([itemOutput1, itemOutput2, itemOutput3]);

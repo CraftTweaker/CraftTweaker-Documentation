@@ -1,42 +1,42 @@
 # ProjectileImpactArrow
 
-This event is fired whenever an arrow projectile impacts an entity but before damage, etc, is calculated. It is **cancelable**, and if canceled, the impact will not be processed.
+每当箭射弹撞击一个实体但在损伤之前等被计算出来时，这个事件都会被发射。 它是 **可取消**，如果取消，将不会处理影响。
 
-Various values from the arrow entity are available through zengetters, and can be modified in order to adjust damage, knockback strength, pickup status, and determine (or force) a critical hit.
+来自箭头实体的各种数值可以通过zengetter获得，并且可以被修改以调整伤害。 击退强度、拾取状态并确定（或强制）一个关键击中。
 
 ## 导入类
-It might be required to [import](/AdvancedFunctions/Import/) the class to avoid errors.  
-`import crafttweaker.event.ProjectileImpactArrowEvent;`
+可能需要 [导入](/AdvancedFunctions/Import/) 类以避免错误。  
+`导入craftmilower.event.ProjecttileImpactArrow事件；`
 
-## Extending IEntityEvent
-ProjectileImpactArrow Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+## 扩展 IEntityEvent
+ProjectileImpactArrow Events 实现了以下接口，并且能够调用他们所有的方法/getter/setters：
 
 - [IProjectileEvent](/Vanilla/Events/Events/IProjectileEvent/)
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 
-## ZenGetters and ZenSetters
+## ZenGetters 和 ZenSettters
 
-The following information can be retrieved from the event:
+以下信息可以从事件中检索：
 
-| ZenGetter      | ZenSetter           | Type                                  |
-| -------------- | ------------------- | ------------------------------------- |
-| `arrow`        |                     | [IEntity](/Vanilla/Entities/IEntity/) |
-| `shooter`      |                     | [IEntity](/Vanilla/Entities/IEntity/) |
-| `damage`       | `damage`            | double                                |
-|                | `knockbackStrength` | int (setter only, no getter)          |
-| `isCritical`   | `isCritical`        | boolean                               |
-| `pickupStatus` |                     | String                                |
+| ZenGetter | ZenSetter | 类型                                    |
+| --------- | --------- | ------------------------------------- |
+| `箭头`      |           | [IEntity](/Vanilla/Entities/IEntity/) |
+| `射手`      |           | [IEntity](/Vanilla/Entities/IEntity/) |
+| `伤害`      | `伤害`      | 双精度                                   |
+|           | `击退强度`    | 整数型变量(仅限设置，无getter)                   |
+| `关键字`     | `关键字`     | boolean                               |
+| `拾取状态`    |           | 字符串[string]                           |
 
-## Additional methods
+## 其他方法
 
-- `setPickupDisallowed()`
+- `setPickupDisalled()`
 
-Prevents the arrow from being picked up under any circumstances.
+不允许在任何情况下拿起箭头。
 
-- `setPickupAllowed()`
+- `setPickupalled()`
 
-Allows the arrow to be picked up from where the entity landed.
+允许箭头从实体的位置上移。
 
 - `setPickupCreative()`
 
-Only allows the arrow to be picked up if the player is in creative mode.
+只有当玩家处于创造性模式时才允许拿起箭头。

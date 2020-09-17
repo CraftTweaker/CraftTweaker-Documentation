@@ -1,17 +1,17 @@
-# Fusion Reactor
+# Слиятельный Реактор
 
-## Importing the Package
+## Импортирование пакета
 `mods.techreborn.fusionReactor`
 
-## Adding Recipes
+## Добавление рецептов
 ```zenscript
-mods.techreborn.fusionReactor.addRecipe(IIngredient topInput, IIngredient bottomInput, IItemStack output, int startEU, int euTick, int tickTime);
+mods.techreborn.fusionReactor.addRecipe(IIngredient topInput, IIngredient bottomInput, IItemStack, int startEU, int euTick, int tickTime);
 ```
 
-## Removing Recipes
+## Удаление рецептов
 ```zenscript
 mods.techreborn.fusionReactor.removeTopInputRecipe(IIngredient iIngredient);
 mods.techreborn.fusionReactor.removeBottomInputRecipe(IIngredient iIngredient);
-mods.techreborn.fusionReactor.removeRecipe(IItemStack output);
+mods.techreborn.fusionReactor.removeRecipe(IItemStack);
 mods.techreborn.fusionReactor.removeAll();
 ```

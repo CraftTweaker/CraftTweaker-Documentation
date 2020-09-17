@@ -1,23 +1,23 @@
-# Cross-Script Reference
+# Referencia entre scripts
 
-All scripts that have [static variables](/AdvancedFunctions/Global_Static_Variables/) or [custom functions](/AdvancedFunctions/Custom_Functions/) are registered to the cross-script reference.  
-This allows you to access these fields/functions using the dot-notation.
+Todos los scripts que tienen [variables estáticas](/AdvancedFunctions/Global_Static_Variables/) o [funciones personalizadas](/AdvancedFunctions/Custom_Functions/) están registrados en la referencia de scripts cruzados.  
+Esto le permite acceder a estos campos/funciones usando la notación de puntos.
 
-## Specifications
+## Especificaciones
 
-- Cross-script references start with `scripts.`
-- You specify the path relative from the scripts folder (e.g. `scripts.mySubfolder.a.zs`)
-- You can use the dot-notation in an [import statement](/AdvancedFunctions/Import/) should you choose to do so.
-- ZS first checks for matching directories then for matching files or values.
+- Las referencias del script cruzado comienzan con `scripts.`
+- Especifica la ruta relativa a la carpeta de scripts (por ejemplo, `scripts.mySubfolder.a.zs`)
+- Puedes usar la notación de puntos en una [declaración de importación](/AdvancedFunctions/Import/) si eliges hacerlo.
+- ZS comprueba primero los directorios coincidentes y luego los archivos o valores coincidentes.
 
-## Example
+## Ejemplo
 
-Let's say we have two scripts: `a.zs` and `b.zs`.
+Digamos que tenemos dos scripts: `a.zs` y `b.zs`.
 
 a.zs:
 
 ```zenscript
-static myVal as string = "myVal";
+static myVal como cadena = "myVal";
 
 function makeLine() {
     print("---------------");

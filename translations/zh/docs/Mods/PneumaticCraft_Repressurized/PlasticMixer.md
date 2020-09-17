@@ -1,17 +1,17 @@
-# Plastic Mixer
+# 塑料混合器
 
-The Plastic Mixer is a machine with two functions:
+塑料混合器是具有两个函数的机器：
 
-* To solidify Liquid Plastic fluid to solid Plastic sheets, using red, green and blue dyes to colour the sheets.
-* To melt solid Plastic sheets into Liquid Plastic. This requires a minimum temperature of 150°C (423K).
+* 用红色、绿色和蓝色染料来将液体塑料薄板固化为固体塑料板材。
+* 将固体塑料板熔化为液体塑料板。 这要求最低温度为150℃(423K)。
 
-CraftTweaker support adds the ability to specify any item and liquid combination for melting and/or solidifying purposes. It is possible to specify that items should only be melted, fluids should only be solidified, or to allow a two-way process.
+CraftT弱化支持增加了指定用于熔化和/或固化目的的任何项目和液体组合的能力。 可以具体规定物项只能熔化，液体只能固化，或允许双向处理。
 
-While the solidification target item can be any item, it makes most sense to use colourable items here, since dyes are always used, regardless of whether or not the output item is colourable.
+固化目标物品可以是任何物品，但在这里使用彩色物品是非常有意义的。 因为总是使用染料，而不论输出项是否可彩色
 
 ## 导入
 
-You can call the Plastic Mixer package using `mods.pneumaticcraft.plasticmixer`.
+您可以使用 `mods.pneumaticcraft.plasticmixer` 来调用塑料混合器。
 
 ## 移除配方
 
@@ -19,36 +19,36 @@ This function removes the first recipe it finds with the given [ILiquidStack](/V
 
 ```zenscript
 mods.pneumaticcraft.plasticmixer.removeRecipe(ILiquidStack fluid);
-// Example
-mods.pneumaticcraft.plasticmixer.removeRecipe(<liquid:plastic>);
+// 示例
+mods.pneumaticraft.plasticmixer.removeRecipe(<liquid:plastic>);
 ```
 
-This function removes *all* Plastic Mixer recipes:
+此函数将删除 *所有* 个塑料混合器配方：
 
 ```zenscript
 mods.pneumaticcraft.plasticmixer.removeAllRecipes();
 ```
 
-## Adding
+## 添加
 
-The following functions can be used to add recipes to the TPP:
+以下函数可以用来向TP添加配方：
 
 ```zenscript
-// Add a two-way recipe (temperature in Kelvin)
-mods.pneumaticcraft.plasticmixer.addRecipe(ILiquidStack liquid, IItemStack stack, int temperature);
+// 添加双向配方(Kelvin中的温度)
+mods.pneumaticcraft.plasticmixer.addRecipe(ILiquidStack 液体，IItemStack stack，int tyature);
 
-// Add a recipe allowing solidification only
-mods.pneumaticcraft.plasticmixer.addSolidifyOnlyRecipe(ILiquidStack liquidInput, IItemStack itemOutput);
+// 添加允许溶化的配方仅
+mods.pneumaticcraft.plasticmixer。 ddSolidifyOnlyRecipe(ILiquidStack 液体输入，IItemStack itemOutput)；
 
-// Add a recipe allowing melting only (temperature in Kelvin)
-mods.pneumaticcraft.plasticmixer.addMeltOnlyRecipe(IItemStack itemInput, ILiquidStack fluidOutput, int temperature);
+// 添加一个只允许熔化的配方(Kelvin温度)
+mods.pneumaticraft.plasticmixer。 ddMeltOnlyRecipe(IItemStack itemInput, ILiquidStack fluidOutput, int temperature);
 
-// Example: convert 100mB Lava to/from Concrete (melt at 573K)
-mods.pneumaticcraft.plasticmixer.addRecipe(<liquid:lava> * 100, <minecraft:concrete>, 573);
+// 示例: 将100mB Lava 转换成/从混凝土(于573K时熔化)
+mods. neumaticraft.plasticmixer.addRecipe(<liquid:lava> * 100, <minecraft:concrete>, 573);
 
-// Example: convert 2000mB Oil to Plastic (but don't allow melting back)
-mods.pneumaticcraft.plasticmixer.addSolidifyOnlyRecipe(<liquid:oil> * 2000, <pneumaticcraft:plastic>);
+// 示例: 将2000mB Oil 转换成塑料(但不允许熔化)
+mods.pneumaticcraft.plasticmixer。 ddSolidifyOnlyRecipe(<liquid:oil> * 2000, <pneumaticcraft:plastic>);
 
-// Example: convert Plastic to 100mB Oil at 473K (but don't allow solidifying)
-mods.pneumaticcraft.plasticmixer.addMeltOnlyRecipe(<pneumaticcraft:plastic>, <liquid:oil> * 100, 473);
+// 示例: 将塑料转换为 100mB Oil at 473K (但不允许固化)
+mods. neumaticraft.plasticmixer.addMeltOnlyRecipe(<pneumaticcraft:plastic>, <liquid:oil> * 100, 473)；
 ```

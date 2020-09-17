@@ -1,20 +1,20 @@
 # IEventHasResult
 
-This interface is extended by all Events that has a result that is used by the event. An event's result can be one of three values:
+Cette interface est étendue par tous les événements qui ont un résultat qui est utilisé par l'événement. Le résultat d'un événement peut être l'une des trois valeurs suivantes :
 
-- allow
-- deny
-- default
+- autoriser
+- Refuser
+- par défaut
 
-The meaning of these is dependent on context. Generally, denying an event prevents a specific event-related action from taking place (even if it wasn't guaranteed to take place). Likewise, allowing an event will force a behaviour to take place (even if it wasn't guaranteed). Default simply causes the event to continue with its normal logic. Not all events use every result.
+Leur signification dépend du contexte. Généralement, refuser un événement empêche une action spécifique en rapport avec un événement (même si cela n'a pas été garanti d'avoir lieu). De même, permettre un événement forcera un comportement (même si cela n'est pas garanti). La valeur par défaut permet simplement à l'évènement de continuer avec sa logique normale. Tous les événements n'utilisent pas tous les résultats.
 
-## Importing the class
-It might be required to [import](/AdvancedFunctions/Import/) the class to avoid errors.  
-`import crafttweaker.event.IEventHasResult;`
+## Importation de la classe
+Il peut être nécessaire de [importer](/AdvancedFunctions/Import/) la classe pour éviter les erreurs.  
+`importer crafttweaker.event.IEventHasResult;`
 
-## What can be done with them?
+## Que peut-on faire d'eux?
 
-- `event.result` Getter, returns a string value of `default`, `deny` or `allow`
-- `event.deny()` Method, sets the event's result to `deny`
-- `event.allow()` Method, sets the event's result to `allow`
-- `event.default()` Method, sets the event's result to `default`
+- `event.result` Getter, renvoie une valeur de chaîne de `valeur par défaut`, `nier` ou `autoriser`
+- `event.deny()` Méthode, définit le résultat de l'événement à `refuser`
+- `event.allow()` Méthode, définit le résultat de l'événement à `autoriser`
+- `event.default()` Méthode, définit le résultat de l'événement à `par défaut`

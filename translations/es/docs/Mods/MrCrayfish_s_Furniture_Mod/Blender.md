@@ -1,38 +1,38 @@
 # Blender
 
-The Blender combines items together, resulting in a drink that restores food and saturation.
+El Blender combina objetos juntos, dando lugar a una bebida que restaura comida y saturación.
 
-## Vanilla Drinks
+## Bebidas de Vanilla
 
-- Fruit Crush (2x Apple, 4x Melon) for 4 food.
-- Veggie Juice (4x Carrot, 1x Potato, 2x Pumpkin Pie) for 6 food.
-- Cookies and Cream Milkshake (2x Cookie, 1x Milk Bucket) for 4 food.
-- Energy Drink (8x Redstone, 1x Fire Charge, 16x Sugar) for 8 food.
+- Fruit Crush (2 Manzanas, 4 x Melon) para 4 comida.
+- Jugo de Veggie (Zanahoria 4x, Potato 1x, Tarta de Calabaza 2x) para 6 comida.
+- Batido de crema y galletas (2x galletas, 1x cubo de leche) para 4 alimentos.
+- Bebida Energética (8x Redstone, 1x Fire Carga, 16x Sugar) para 8 comida.
 
-## Removing Drinks
+## Eliminando Bebidas
 
-## Remove matching blended drinks.
+## Quite las bebidas mezcladas correspondientes.
 
 ```zenscript
-mods.cfm.Blender.remove(@Optional final String name, @Optional final IItemStack[] ingredients, @Optional final Integer food, @Optional final int[] colour);
+mods.cfm.Blender.remove(@Nombre de cadena final opcional, @Optional final ItemStack[] ingredientes, @Optional final Integer food, @Optional final int[] colour);
 
-// Remove drink named "Fruit Crush"
-mods.cfm.Blender.remove("Fruit Crush");
-// Remove drinks that require one carrot, one potato and one pumpkin pie to create
-mods.cfm.Blender.remove(null, [<minecraft:carrot>,<minecraft:potato>,<minecraft:pumpkin_pie>]);
-// Remove all drinks
+// Quitar bebida llamada "Fruit Crush"
+mods.cfm.Blender. emove("Fruit Crush");
+// Elimina las bebidas que requieren una zanahoria, una papa y una tarta de calabaza para crear
+mods. fm.Blender.remove(null, [<minecraft:carrot>,<minecraft:potato>,<minecraft:pumpkin_pie>]);
+// Eliminar todas las bebidas
 mods.cfm.Blender.remove();
 ```
 
-## Adding Drinks
+## Agregando Bebidas
 
-Add a blended drink.
+Añadir una bebida mezclada.
 
-## Currently, saturation and food value cannot be set independently.
+## Actualmente, la saturación y el valor de los alimentos no pueden establecerse independientemente.
 
 ```zenscript
-mods.cfm.Blender.addDrink(@Nonnull final String name, @Nonnull final IItemStack[] ingredients, final int food, @Nonnull final int[] colour);
+mods.cfm.Blender. ddDrink(@Nonnull final String name, @Nonnull final ItemStack[] ingredientes, final int food, @Nonnull final int[] color);
 
-// Add a drink named "Watermelon Snow" that is coloured pink and restores 20 food and 20 saturation requiring 8 melon slices and 4 snowballs to craft
-mods.cfm.Blender.addDrink("Watermelon Snow", [<minecraft:melon>.withAmount(8),<minecraft:snowball>.withAmount(4)], 20, [255,182,193]);
+// Agrega una bebida llamada "Nieve de agua" que es de color rosa y restaura 20 alimentos y 20 saturaciones que requieren 8 rebanadas de melon y 4 bolas de nieve para fabricar
+mods. fm.Blender.addDrink("Watermelon Snow", [<minecraft:melon>.withAmount(8),<minecraft:snowball>.withAmount(4)], 20, [255,182,193]);
 ```

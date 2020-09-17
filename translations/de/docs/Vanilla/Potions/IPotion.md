@@ -1,15 +1,15 @@
 # IPotion
 
-An IPotion object refers a potion in the game.
+Ein ITrank Objekt bezieht sich auf einen Trank im Spiel.
 
 ## Dieses Paket importieren
 
-It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
-`import crafttweaker.potions.IPotion;`
+Möglicherweise ist es erforderlich, dass Sie das Paket importieren, wenn Sie irgendwelche Probleme haben (z.B. [Array](/AdvancedFunctions/Arrays_and_Loops/)), also besser sicher sein als bedauern und fügen Sie den Import.  
+`importiere craftweaker.potions.IPotion;`
 
-## Getting an IPotion object
+## Hole ein ITrank Objekt
 
-You can get such an object through the use of the [Potion Bracket handler](/Vanilla/Brackets/Bracket_Potion/)
+Du kannst ein solches Objekt durch den [Trank Bracket-Handler erhalten](/Vanilla/Brackets/Bracket_Potion/)
 
 ```zenscript
 <potion:minecraft:strength>;
@@ -17,28 +17,28 @@ You can get such an object through the use of the [Potion Bracket handler](/Vani
 
 ## ZenGetter
 
-Currently, all you can do with potions is retrieving some information on them.  
-Example `<potion:minecraft:strength>.name`
+Zurzeit können Sie mit Tränken nur einige Informationen abrufen.  
+Beispiel `<potion:minecraft:strength>.name`
 
-| ZenGetter     | What does it do                                     | Rückgabetyp                                    |
-| ------------- | --------------------------------------------------- | ---------------------------------------------- |
-| name          | Returns the potion's internal name                  | string                                         |
-| badEffect     | Returns if the potion effect is bad                 | bool                                           |
-| liquidColor   | Returns the potion's color                          | int                                            |
-| liquidColour  | Returns the potion's colour                         | int                                            |
-| curativeItems | Returns a list of all curative Items for the potion | List<[IItemStack](/Vanilla/Items/IItemStack/)> |
-| hasStatusIcon | Returns whether the potion has a status icon        | bool                                           |
-| isBeneficial  | Returns whether the potion is beneficial            | bool                                           |
-| isInstant     | Returns whether the potion is instant               | bool                                           |
+| ZenGetter       | Was macht es                                            | Rückgabetyp                                      |
+| --------------- | ------------------------------------------------------- | ------------------------------------------------ |
+| name            | Gibt den internen Namen des Tranks zurück               | string                                           |
+| badEffect       | Gibt zurück, wenn der Trank Effekt schlecht ist         | bool                                             |
+| flüssige Farbe  | Gibt die Farbe des Tranks zurück                        | int                                              |
+| flüssige Farbe  | Gibt die Farbe des Tranks zurück                        | int                                              |
+| kurativeItems   | Gibt eine Liste aller heilenden Items für den Trank aus | Liste <[IItemStack](/Vanilla/Items/IItemStack/)> |
+| hasStatussymbol | Gibt zurück, ob der Trank ein Statussymbol hat          | bool                                             |
+| isBeneficial    | Gibt zurück, ob der Trank nützlich ist                  | bool                                             |
+| isInstant       | Gibt zurück, ob der Trank sofort ist                    | bool                                             |
 
-## ZenMethods
+## ZenMethoden
 
-### Make PotionEffect
+### Erstelle PotionEffect
 
-An [IPotionEffect](/Vanilla/Potions/IPotionEffect/) is a Potion that has a duration and amplifier. You can use these two methods to get one from an IPotion:  
-As one might guess, both return an [IPotionEffect](/Vanilla/Potions/IPotionEffect/) object.
+Ein [IPotionEffect](/Vanilla/Potions/IPotionEffect/) ist ein Trank, der eine Dauer und Verstärker hat. Sie können diese beiden Methoden verwenden, um eine von einem IPot zu erhalten:  
+Wie man vermuten könnte, geben beide ein [IPotionEffect](/Vanilla/Potions/IPotionEffect/) Objekt zurück.
 
 ```zenscript
-pot.makePotionEffect(int duration, int amplifier);
-pot.makePotionEffect(int duration, int amplifier, boolean ambientEffect, boolean particlesShown);
+pot.makePotionEffect(int Dauer, int Verstärker);
+pot.makePotionEffect(int Dauer, int Verstärker, boolean ambientEffect, boolean particlesShown);
 ```

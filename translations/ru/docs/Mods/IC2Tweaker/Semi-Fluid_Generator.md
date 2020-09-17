@@ -1,18 +1,18 @@
-# Semi-Fluid Generator
+# Полужидкий генератор
 
-## Package
+## Пакет
 
-`import mods.ic2.SemiFluidGenerator;`
+`импорт mods.ic2.SemiFluidGenerator;`
 
-## Methods
+## Методы
 
-- **[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) liquid** The liquid which can be used as fuel in semi-fluid generator
-- **double powerOutput** The power output, measured in EU/tick
+- **[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) жидкость** жидкость, которая может использоваться в качестве топлива в полужидком генераторе
+- **двойной выход питания** Выход энергии, измеряемый в ЕС/такте
 
-## Add Fluid
+## Добавить жидкость
 
 ```zenscript
-mods.ic2.SemiFluidGenerator.addFluid(ILiquidStack liquid, double powerOutput;
+mods.ic2.SemiFluidGenerator.addFluid(ILiquidStack), двойной powerOutput;
 
 mods.ic2.SemiFluidGenerator.addFluid(<liquid:water>, 2333.0D);
 ```

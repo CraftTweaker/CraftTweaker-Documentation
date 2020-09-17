@@ -1,31 +1,31 @@
-# Basin Squeezing
+# Сжатие бассейна
 
-## Addition
+## Сложение
 
 ```zenscript
-import mods.cuisine.BasinSqueezing;
+импортируйте mods.cuisine.BasinSqueezing;
 
 BasinSqueezing.add(IIngredient input, ILiquidStack output, @Optional IItemStack extraOutput);
 
-BasinSqueezing.add(<item:minecraft:dirt>, <liquid:water> * 1000);
+BasinSqueezing. dd(<item:minecraft:dirt>, <liquid:water> * 1000);
 BasinSqueezing.add(<ore:cobblestone> * 2, <liquid:lava> * 1000, <item:minecraft:diamond>);
 ```
 
-## Removal
+## Удаление
 
 ```zenscript
-import mods.cuisine.BasinSqueezing;
+импорт mods.cuisine.BasinSqueezing;
 
-// Remove by inputs.
+// Удаляем по входам.
 BasinSqueezing.remove(IItemStack input, ILiquidStack inputFluid);
 
 BasinSqueezing.remove(<item:minecraft:dirt>, <liquid:water> * 1000);
 
-// Remove by identifier.
-BasinSqueezing.remove(String id);
+// Удаляем по идентификатору.
+BasinSqueezing.remove(tring id);
 
 BasinSqueezing.remove("recipe_name");
 
-// Remove everything!
-BasinSqueezing.removeAll();
+// Удаляем все!
+Басинкающий.removeAll();
 ```

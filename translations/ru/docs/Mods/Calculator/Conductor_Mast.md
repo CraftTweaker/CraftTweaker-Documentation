@@ -1,6 +1,6 @@
-# Conductor Mast
+# Мать проводника
 
-## Package
+## Пакет
 ```zenscript
 import mods.calculator.conductorMast;
 ```
@@ -8,15 +8,15 @@ import mods.calculator.conductorMast;
 ## Методы
 
 - **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input** The input.
-- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) output** The output.
-- **Int powercost** The cost of power per process.
+- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) output** Выход.
+- **Int powercost** Стоимость энергии за процесс.
 
-## Additon
+## Добавить
 ```zenscript
-conductorMast.addRecipe(IIngredient input, int powercost, IIngredient output);
+conductorMast.addRecipe(IIngredient input, Ingredient powercost, IIngredient output);
 ```
 
-## Removal
+## Удаление
 ```zenscript
 conductorMast.removeRecipe(IIngredient output);
 ```

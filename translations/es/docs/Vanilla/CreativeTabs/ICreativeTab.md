@@ -1,31 +1,31 @@
-# ICreativeTab
+# Pestaña ICreativa
 
-An ICreativeTabObject represents a creative inventory tab.
+Un objeto ICreativeTabObject representa una pestaña de inventario creativo.
 
-## Importing the package
+## Importando el paquete
 
-It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
-`import crafttweaker.creativetabs.ICreativeTab;`
+Podría ser necesario que importes el paquete si encuentras algún problema, así que más vale estar seguro que lo sentimos y añadir la importación.  
+`importar crafttweaker.creativetabs.ICreativeTab;`
 
-## Getting such an Object
+## Obteniendo tal objeto
 
-You can retrieve an ICreativeTab from the [Creative tab Bracket Handler](/Vanilla/Brackets/Bracket_CreativeTab/).
+Puedes recuperar una pestaña creativa de la pestaña [Creative tab Bracket Handler](/Vanilla/Brackets/Bracket_CreativeTab/).
 
-## ZenGetters and ZenMethods without parameters
+## ZenGetters y ZenMethods sin parámetros
 
-| ZenGetter/ZenMethod | Return Type    |
-| ------------------- | -------------- |
-| searchBarWidth      | int            |
-| tabLabel            | string         |
-| setNoScrollBar()    | void (nothing) |
-| setNoTitle()        | void (nothing) |
+| ZenGetter/ZenMethod | Tipo de devolución |
+| ------------------- | ------------------ |
+| searchBarWidth      | int                |
+| etiqueta            | cadena             |
+| setNoScrollBar()    | vacío (nada)       |
+| setNoTitle()        | vacío (nada)       |
 
-## ZenMethod
+## Método
 
-#### Set Background image Name
+#### Establecer nombre de imagen de fondo
 
-Uses a string (e.g. `"item_search.png"`).  
-Returns void (nothing).
+Utiliza una cadena (por ejemplo, `"item_search.png"`).  
+Devuelve vacío (nada).
 
 ```zenscript
 tab.setBackgroundImageName(String backgroundImage);

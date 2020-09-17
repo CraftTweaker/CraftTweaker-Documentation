@@ -1,30 +1,30 @@
 # PlayerUseItemStart
 
-The PlayerUseItemStart Event is fired whenever a player starts using an item.
+当玩家开始使用某个项目时，玩家开始活动即被开除。
 
-## Event Class
+## 事件类
 
 You will need to cast the event in the function header as this class:  
 `crafttweaker.event.PlayerUseItemStartEvent`  
 You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
 
-## Event interface extensions
+## 事件界面扩展
 
-PlayerUseItemStart Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+PlayerUseItemStart 事件实现了以下接口，并且能够调用他们的所有方法/getter/setter：
 
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 - [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
 
 ## ZenGetters
 
-The following information can be retrieved from the event:
+以下信息可以从事件中检索：
 
-| ZenGetter  | Return Type                              |
-| ---------- | ---------------------------------------- |
-| `canceled` | boolean                                  |
-| `player`   | [IPlayer](/Vanilla/Players/IPlayer/)     |
-| `item`     | [IItemStack](/Vanilla/Items/IItemStack/) |
+| ZenGetter | 返回值类型                                    |
+| --------- | ---------------------------------------- |
+| `已取消`     | boolean                                  |
+| `播放器`     | [IPlayer](/Vanilla/Players/IPlayer/)     |
+| `项目`      | [IItemStack](/Vanilla/Items/IItemStack/) |
 
 ## ZenMethods
 
-- `event.cancel()` sets the event as cancelled
+- `event.cancel()` 将事件设置为取消

@@ -1,32 +1,32 @@
-# Fuel Registration
+# 燃料注册
 
-## Motorboat
+## 摩托船
 
 ### registerMotorboatFuel
 
-| 类型    | 数据类型                                         |
-| ----- | -------------------------------------------- |
-| Input | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
-| mB/t  | Integer                                      |
+| 类型   | 数据类型                                         |
+| ---- | -------------------------------------------- |
+| 输入   | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
+| mB/t | 整型                                           |
 
-#### Code Example:
+#### 代码示例：
 
 ```zenscript
-mods.immersivepetroleum.Motorboat.registerMotorboatFuel(ILiquidStack fuelEntry, int mbPerTick);
-mods.immersivepetroleum.Motorboat.registerMotorboatFuel(<liquid:water>, 5);
+mods.immersivepetolleum.Motorboat.registerMotorboatFuel(ILiquidStack fuel Entry,int mbPerTick)；
+mods.immersivepetroleum.Motorboat.registerMotorboatFuel(<liquid:water>,5)；
 ```
 
-## Portable Generator
+## 便携式生成器
 
 ### registerPortableGenFuel
 
-| Type   | Data Type                                    |
+| 类型     | 数据类型                                         |
 | ------ | -------------------------------------------- |
-| Input  | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
-| Flux/t | Integer                                      |
-| mB/t   | Integer                                      |
+| 输入     | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
+| Flux/t | 整型                                           |
+| mB/t   | 整型                                           |
 
-#### Code Example:
+#### 代码示例：
 
 ```zenscript
 mods.immersivepetroleum.PortableGenerator.registerPortableGenFuel(ILiquidStack fuelEntry, int fluxPerTick, int mbPerTick);

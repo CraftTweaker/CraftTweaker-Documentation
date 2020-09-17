@@ -1,87 +1,87 @@
-# NuclearCraft: Overhauled
+# 核合成: 过高的
 
-All recipes involve five sets of information - item inputs, fluid inputs, item outputs, fluid outputs and extra info. The first four are clearly the ingredients and products involved in the recipe, and the extra info contains data such as processing time and power for machines, the base depletion time, heat gen, efficiency, criticality, and radiation level of solid fission fuels, etc.
+所有配方都涉及五套信息――项目投入、流动投入、项目产出、液体输出和额外信息。 头四显然是该配方所涉及的成分和产品。 和额外信息包含数据，例如 处理时间和机能， 固体裂变燃料的基础耗竭时间、热基因、效率、临界性和辐射水平 等。
 
-All parts of the recipe are simply listed in the method - the internal NC code will deal with splitting it up into those five categories and packaging the information up into a recipe.
+配方的所有部分只是在方法中列出——内部的 NC 代码将处理将其拆分成 五个类别，并将信息包装成一个配方。
 
 
-## Chance Ingredients
+## 概率属性
 
-Item and fluid outputs can have additional info attached to them - specifically, info that can randomise the output stack size somewhat. This additional info is given using NC's 'chance ingredients'.
+物品和液体输出可以附加附加信息，具体而言，可以随时随机输出堆栈 的大小的信息。 这个附加信息是使用 NC 的“几率成分”提供的。
 
-The size of the stack produced on each process is randomly assigned from a binomial distribution specified by the chance info. The percentage and ingredient stack size play the roles of the probability and number of trials, respectively. A minimum stack size can also be specified - without this, the minimum stack size is simply 0.
+每个过程中生成的堆栈的大小是从几率 信息指定的二项式分布中随机分配的。 成份堆栈的百分比和大小分别起着试验概率和次数的作用。 还可以指定 最小堆栈大小 - 否则最小堆栈大小为 0。
 
-For ChanceFluidIngredients, a 'stack difference' must also be specified, which determines the difference in size between the possible stacks (for ChanceItemIngredients, this is effectively 1). For example, a ChanceFluidIngredient for an ingredient of size 500, with a stack difference of 150 and minimum stack size of 50, will produce 50, 200, 350 or 500 millibuckets of the fluid.
+对于ChanceFluidIngrediers，还必须指明“堆栈差异”。 它决定了 个可能的堆栈之间的大小差异(对于ChanceItemIngredients, 这实际上是 1)。 例如，一个 大小500的商机液体成分。 堆栈相差150个和最小堆栈尺寸50个，将产生液体50、200、350或500 毫桶。
 
-**Note: `ChanceItemIngredient` and `ChanceFluidIngredient` count as `IIngredient` for the purpose of recipes in NuclearCraft: Overhauled**
+**注意： `ChanceItemIngredient` and `ChanceFluidIngredient` 计数为 `IIngredient` 用于核工艺中的配方：过高的**
 
-### ChanceItemIngredient
+### 可能的物品
 
-#### Creation
+#### 设定
 
 ```zenscript
-mods.nuclearcraft.ChanceItemIngredient.create(IIngredient ingredient, int chancePercent, @Optional int minStackSize);
+nuclearcraft。ChanceItemIngredient.create(I成分、int chancePercent、@Optional int minStackSize)；
 ```
 
-#### Examples
+#### 例子
 
 ```zenscript
 ChanceItemIngredient.create(<minecraft:coal>*2, 25);
 ChanceItemIngredient.create(<ore:dustGlowstone>*3, 60, 2);
 ```
 
-#### Extra Methods
+#### 额外方法
 
 ```zenscript
-IIngredient getInternalIngredient();
+Ingredient getInternalIngredient();
 int getChancePercent();
 int getMinStackSize();
 ```
 
-### ChanceFluidIngredient
-These can be used anywhere where regular `ILiquidStack` is used.
+### 切换流体元素
+这些可以在任何正常使用 `ILiquidStack` 的地方使用。
 
-#### Creation
+#### 设定
 ```zenscript
-mods.nuclearcraft.ChanceFluidIngredient.create(IIngredient ingredient, int chancePercent, int stackDiff, @Optional int minStackSize);
+nuclearcraft。ChanceFluidIngredient.create(I成分、int chancePercent、int stackDiff、@Opinion minStackSize)；
 ```
 
-#### Examples
+#### 例子
 ```zenscript
 ChanceFluidIngredient.create(<liquid:water>*1500, 35, 300);
 ChanceFluidIngredient.create(<liquid:oil>*1000, 80, 200, 400);
 ```
 
-#### Extra Methods
+#### 额外方法
 ```zenscript
-IIngredient getInternalIngredient();
+Ingredient getInternalIngredient();
 int getChancePercent();
 int getStackDiff();
 int getMinStackSize();
 ```
 
-## Recipe Additions
-Recipe Methods will specify `itemInput` for Item Inputs. <br/> Recipe Methods will specify `itemOutput` for Item Outputs. <br/> Recipe Methods will specify `fluidInput` for Fluid Inputs. <br/> Recipe Methods will specify `fluidOutput` for Fluid Outputs. <br/> Recipe Methods will specify `blockInput` for Block Inputs. <br/> Recipe Methods will specify `blockOutput` for Block Outputs. <br/> **Note: `blockInput` and `blockOutput` must be the `IItemStack`/`IIngredient` versions of blocks**
+## 配方添加
+配方方法将为项目输入指定 `项输入`。 <br/> 配方方法将为项目输出指定 `项输出`。 <br/> 配方方法将为流体输入指定 `流体输入`。 <br/> 配方方法将为液体输出指定 `液体输出`。 <br/> 配方方法将为方块输入指定 `块输入`。 <br/> 配方方法将为块输出指定 `块输出`。 <br/> **注意： `blockInput` 和 `blockoutput` 必须是 `IItemStack`/`Ingredient` 版本的块**
 
 ### Item Inputs
-`IItemStack`: `<minecraft:gunpowder>` * 4 <br/> `IOreDictEntry`: `<ore:ingotIron>` * 2 <br/> `null`: null
+`IItemStack`: `<minecraft:gunpowder>` * 4 <br/> `IOreedictEnterprise`: `<ore:ingotIron>` * 2 <br/> `null`: null
 
 ### Item Outputs
-`IItemStack`: `<minecraft:gunpowder>` * 4 <br/> `IOreDictEntry`: `<ore:ingotIron>` * 2 <br/> `ChanceItemIngredient`: `<ore:gemDiamond>` * 5, 75 <br/> `null`: null
+`IItemStack`: `<minecraft:gunpowder>` * 4 <br/> `IOreedictEnterprise`: `<ore:ingotIron>` * 2 <br/> `ChanceItemIngredient`: `<ore:gemDiamond>` * 5, 75 <br/> `null`: null
 
-### Fluid Inputs
+### 液体输入
 `ILiquidStack`: `<liquid:lava>` * 1500 <br/> `null`: null
 
 ### Fluid Outputs
 `ILiquidStack`: `<liquid:lava>` * 1500 <br/> `ChanceLiquidStack` : `<liquid:water>` * 2000, 40, 250, 500 <br/> `null`: null
 
-### Block Inputs
-`IItemStack`: `<minecraft:dirt>` * 4 <br/> `IOreDictEntry`: `<ore:blockIron>` * 2 <br/> `null`: null
+### 方块输入
+`IItemStack`: `<minecraft:dirt>` * 4 <br/> `IOreedictEnterprise`: `<ore:blockIron>` * 2 <br/> `null`: null
 
-### Block Outputs
-`IItemStack`: `<minecraft:dirt>` * 4 <br/> `IOreDictEntry`: `<ore:blockIron>` * 2 <br/> `null`: null
+### 块输出
+`IItemStack`: `<minecraft:dirt>` * 4 <br/> `IOreedictEnterprise`: `<ore:blockIron>` * 2 <br/> `null`: null
 
-## Recipe Removals
-When specifying a recipe to remove, all that is required is for either all input or output ingredients to be specified. Ingredient chance data is not required. Again, the items must come first, followed by the fluids.
+## 配方删除
+当指定要删除的配方时，所需的全部内容都是指定所有输入或输出成分。 不需要成分几率数据。 同样，项目必须首先进行，然后是液体。
 
-You may also want to remove all of a certain type of recipe - to do this, simply use the `removeAllRecipes()` method.
+您也可能想要移除所有特定类型的配方 - 为了做到这一点，只需使用 `removeAllRecipes()` 方法。

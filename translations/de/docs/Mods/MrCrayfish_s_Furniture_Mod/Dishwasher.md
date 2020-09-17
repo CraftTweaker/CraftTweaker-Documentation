@@ -1,31 +1,31 @@
-# Dishwasher
+# Spüler
 
-The Dishwasher allows you to clean dirty tools.
+Der Dishwasher ermöglicht es Ihnen, schmutzige Werkzeuge zu reinigen.
 
-By default repairs durability of vanilla tools and weapons only.
+Standardmäßig repariert die Haltbarkeit von Vanillewerkzeugen und Waffen nur.
 
-## Removing
+## Entfernen
 
-## Remove matching washable items.
+## Entfernen Sie passende waschbare Gegenstände.
 
 ```zenscript
 mods.cfm.Dishwasher.remove(@Optional final IIngredient item);
 
 mods.cfm.Dishwasher.remove(<minecraft:flint_and_steel>);
-// Remove all washable items.
+// Entferne alle waschbaren Items.
 mods.cfm.Dishwasher.remove();
 ```
 
-## Adding
+## Hinzufügen
 
-## Add a washable item.
+## Füge einen waschbaren Gegenstand hinzu.
 
 ```zenscript
 mods.cfm.Dishwasher.add(@Nonnull final IItemStack item);
 
 mods.cfm.Dishwasher.add(<minecraft:wooden_shovel>);
 mods.cfm.Dishwasher.add(<minecraft:stone_shovel>);
-mods.cfm.Dishwasher.add(<minecraft:iron_shovel>);
+mods.cfm. ishwasher.add(<minecraft:iron_shovel>);
 mods.cfm.Dishwasher.add(<minecraft:diamond_shovel>);
 mods.cfm.Dishwasher.add(<minecraft:shield>);
 mods.cfm.Dishwasher.add(<minecraft:bow>);

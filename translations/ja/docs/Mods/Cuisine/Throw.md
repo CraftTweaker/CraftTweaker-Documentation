@@ -1,6 +1,6 @@
-# Basin Throwing
+# 盆地投げ
 
-## Addition
+## 加算
 
 ```zenscript
 import mods.cuisine.BasinThrowing;
@@ -10,7 +10,7 @@ BasinThrowing.add(IIngredient input, ILiquidStack inputFluid, IItemStack output)
 BasinThrowing.add(<ore:cobblestone> * 2, <liquid:lava> * 1000, <item:minecraft:diamond>);
 ```
 
-## Removal
+## 削除
 
 ```zenscript
 import mods.cuisine.BasinThrowing;
@@ -25,6 +25,6 @@ BasinThrowing.remove(String id);
 
 BasinThrowing.remove("recipe_name");
 
-// Remove everything!
+// すべてを削除!
 BasinThrowing.removeAll();
 ```

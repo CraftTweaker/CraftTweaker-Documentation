@@ -1,53 +1,53 @@
 # ILiquidStack
 
-A LiquidStack consists of a [Liquid Definition](/Vanilla/Liquids/ILiquidDefinition/) as well as an optional tag and an optional amount value.
+LiquidStack包含一个 [液体定义](/Vanilla/Liquids/ILiquidDefinition/) 以及一个可选的标签和一个可选的数量值。
 
 ## 导入相关包
 
-It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
-`import crafttweaker.liquid.ILiquidStack;`
+如果您遇到任何问题，可能需要导入软件包(例如铸造一个 [数组](/AdvancedFunctions/Arrays_and_Loops/)), 这样比抱歉更安全并添加导入。  
+`导入craftweaker.liquidStack；`
 
-## Creating an ILiquidStack
+## 创建 ILiquidStack
 
-An ILiquidStack can be created by using the [Liquid Bracket Handler](/Vanilla/Brackets/Bracket_Liquid/)
+可以通过使用 [液体碎片处理程序](/Vanilla/Brackets/Bracket_Liquid/) 来创建 ILiquidStack
 
 ```zenscript
-//see The liquid bracket Handler for further information
+//查看液体括号处理程序以获取更多信息
 val lava = <liquid:lava>;
 
-//liquid.withTag(Tag as IData)
-val lavaWithTag = <liquid:lava>.withTag(DATA);
+/液体。 ithTag(标记为 IData)
+val lavaWidtag = <liquid:lava>ithTag(DATA)；
 
-//liquid * amount in millibuckets (-> 1000 = 1 Bucket)
-val lavaWithAmount = <liquid:lava> * 1000;
+//液体* 毫巴克中的含量(-> 1000 = 1 桶)
+val lavaWamount = <liquid:lava> * 1000;
 ```
 
-## Get fluid properties
+## 获取流体属性
 
-As an ILiquidStack represents a liquid, there surely must also be a way of retrieving the fluid's properties.  
-Check the table to see what you can retrieve from the ILiquidStack Object using ZenGetters.
+由于ILiquidStack是一种液体，肯定还有一种回收液体特性的方法。  
+查看表格以查看您可以使用 ZenGetters 从 ILiquidStack 对象中获取什么。
 
-| Zengetter   | What is this?                                             | 返回值类型                                                     | 例子                                        |
-| ----------- | --------------------------------------------------------- | --------------------------------------------------------- | ----------------------------------------- |
-| name（名称）    | This returns the unlocalized liquid name                  | string                                                    | `test = <liquid:lava>.name;`        |
-| displayName | This returns the localized liquid name                    | string                                                    | `test = <liquid:lava>.displayName;` |
-| amount      | This returns the amount of the ILiquidObject              | int                                                       | `test = <liquid:lava>.amount;`      |
-| luminosity  | This returns the luminosity of the referred liquid        | int                                                       | `test = <liquid:lava>.luminosity;`  |
-| density     | This returns the density of the referred liquid           | int                                                       | `test = <liquid:lava>.density;`     |
-| temperature | This returns the temperature of the referred liquid       | int                                                       | `test = <liquid:lava>.temperature;` |
-| viscosity   | This returns the viscosity of the referred liquid         | int                                                       | `test = <liquid:lava>.viscosity;`   |
-| gaseous     | This returns whether the referred liquid is gaseous       | boolean                                                   | `test = <liquid:lava>.gaseous;`     |
-| tag         | This returns the ILiquidObject's tag                      | [IData](/Vanilla/Data/IData/)                             | `test = <liquid:lava>.tag;`         |
-| definition  | This returns the referred liquid's definition (see below) | [ILiquid Definition](/Vanilla/Liquids/ILiquidDefinition/) | `test = <liquid:lava>.definition;`  |
+| Zengetter   | 这是什么？                  | 返回值类型                                             | 例子                                      |
+| ----------- | ---------------------- | ------------------------------------------------- | --------------------------------------- |
+| name（名称）    | 这返回未本地化的液体名称           | 字符串                                               | `测试 = <liquid:lava>.name;`        |
+| displayName | 这返回本地化的液体名称            | string                                            | `测试 = <liquid:lava>.displayname;` |
+| 金额          | 这返回ILiquidObject 的金额   | 整数                                                | `test = <liquid:lava>.amount;`    |
+| 亮度          | 这将返回所指液体的亮度            | 整数                                                | `测试= <liquid:lava>.luminosity;`   |
+| 密度：         | 此函数返回所指液体的强度           | 整数                                                | `test = <liquid:lava>.density;`   |
+| 温度          | 这将返回所指液体的温度            | 整数                                                | `测试 = <liquid:lava>.温度；`          |
+| 视觉性         | 这将返回所指液体的粘性值           | 整数                                                | `测试 = <liquid:lava>.viscosity;`   |
+| 气压          | 这将返回所指液体是否气体？          | boolean                                           | `test = <liquid:lava>.gaseous;`   |
+| 标签          | 这返回 ILiquidObject's 标签 | [IData](/Vanilla/Data/IData/)                     | `测试 = <liquid:lava>.tag;`         |
+| definition  | 这将返回所指的液体定义(见下文)       | [ILiquid 定义](/Vanilla/Liquids/ILiquidDefinition/) | `测试 = <liquid:lava>.definition;`  |
 
-# IIngredient Implementaion
+# Ingredient 实现
 
-Java Jargon: ILiquidStack implements IIngredient. In other words, all methods that can be used in [IIngredients](/Vanilla/Variable_Types/IIngredient/) can also be used for ILiquidStacks Refer to the IIngredient entry for further information on this. Here are some special cases, as liquids just aren't items
+Java Jargon: ILiquidStack 实现IIngredient。 换言之， 所有可以在 [IIngredients](/Vanilla/Variable_Types/IIngredient/) 中使用的方法也可以用于 ILiquidStacks 请参阅IIngredient 条目以了解更多关于这个问题的信息。 这里有一些特殊情况，因为液体不是物品
 
-* You can't mark ILiquidStacks, and you get null of you try to retrieve an ILiquidStack's mark
-* .items returns an empty List
-* .itemArray returns an empty Array
-* .liquids returns this liquid as ILiquidStack (so, exactly this object)
-* LiquidStacks can't have Transformers and asking for transformers always returns false
-* LiquidStacks can't have Conditions (.only doesn't work)
-* Matching with items always returns false
+* 您不能标记ILiquidStack，您可以尝试检索ILiquidStack的标记
+* .item返回空列表
+* .itemArray 返回一个空数组
+* .液体返回液体为 ILiquidStack (所以正是这个对象)
+* LiquidStacks 不能有变换器，要求变压器总是返回 false
+* LiquidStack不能有条件 (.only 不可用)
+* 匹配项目总是返回 false

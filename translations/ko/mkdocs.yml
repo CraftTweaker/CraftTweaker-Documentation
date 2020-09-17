@@ -270,6 +270,34 @@ nav:
         - Starlight Infusion: 'Mods/Astral_Sorcery/Infusion.md'
         - Starlight Transmutation: 'Mods/Astral_Sorcery/Transmutation.md'
         - Util: 'Mods/Astral_Sorcery/Util.md'
+    - Boson:
+      - About Boson: 'Mods/Boson/About.md'
+      - Names in Boson: 'Mods/Boson/Names.md'
+      - The ZenScriptX Project: 'Mods/Boson/ZenScriptX.md'
+      - Loaders:
+        - Tags: 'Mods/Boson/Loaders/Tags.md'
+      - Preprocessor Directives:
+        - Experimental Flags: 'Mods/Boson/Preprocessor/Exp.md'
+      - Tags:
+        - The Concept: 'Mods/Boson/Tags/Concept.md'
+        - The Bracket Handler: 'Mods/Boson/Tags/BracketHandler.md'
+        - Tag: 'Mods/Boson/Tags/Tag.md'
+        - TagType: 'Mods/Boson/Tags/TagType.md'
+        - TagIngredient: 'Mods/Boson/Tags/TagIngredient.md'
+      - Functional Interfaces:
+        - A Primer on Functional Interfaces: 'Mods/Boson/Functions/Concept.md'
+        - Available Interfaces: 'Mods/Boson/Functions/List.md'
+      - Math Functions:
+        - The Concept: 'Mods/Boson/Math/Concept.md'
+        - Math: 'Mods/Boson/Math/Math.md'
+      - Sequences:
+        - The Concept: 'Mods/Boson/Sequences/Concept.md'
+        - Obtaining Sequences: 'Mods/Boson/Sequences/Obtaining.md'
+        - Class Documentation: 'Mods/Boson/Sequences/Docs.md'
+      - Reflection:
+        - The Concept: 'Mods/Boson/Reflection/Concept.md'
+        - Class: 'Mods/Boson/Reflection/Class.md'
+        - NativeClass: 'Mods/Boson/Reflection/NativeClass.md'
     - BuildCraft:
       - Home: 'Mods/BuildCraft/index.md'
       - Crafting:

@@ -1,27 +1,27 @@
-# PlayerSetSpawn
+# format@@0 PlayerSetSpawn
 
-The PlayerSetSpawn Event is fired whenever a player's spawn location changes.  
-It can be canceled to prevent further processing.
+L'Evénement Apparition de Joueur est lancé chaque fois que le lieu d'apparition d'un joueur change.  
+Il peut être annulé pour empêcher le traitement ultérieur.
 
-## Event Class
+## Classe de l'événement
 
-You will need to cast the event in the function header as this class:  
-`crafttweaker.event.PlayerSetSpawnEvent`  
-You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
+Vous devrez lancer l'événement dans l'en-tête de la fonction comme cette classe:  
+`crafttweaker.event. layerSetSpawnEvent`  
+Vous pouvez, bien sûr, également [importer](/AdvancedFunctions/Import/) la classe avant et utiliser ce nom alors.
 
-## Event interface extensions
+## Extensions d'interface de l'événement
 
-PlayerSetSpawn Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+Les événements PlayerSetSpawn implémentent les interfaces suivantes et peuvent également appeler toutes leurs méthodes/getters/setters :
 
-- [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
+- [Evénement IPlayer](/Vanilla/Events/Events/IPlayerEvent/)
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 
 ## ZenGetters
 
-The following information can be retrieved from the event:
+Les informations suivantes peuvent être récupérées à partir de l'événement :
 
-| ZenGetter  | Return Type                            |
-| ---------- | -------------------------------------- |
-| `player`   | [IPlayer](/Vanilla/Players/IPlayer/)   |
-| `isForced` | bool                                   |
-| `newSpawn` | [IBlockPos](/Vanilla/World/IBlockPos/) |
+| ZenGetter                    | Type de retour                          |
+| ---------------------------- | --------------------------------------- |
+| `Joueur`                     | [IPlayer](/Vanilla/Players/IPlayer/)    |
+| `isForcé`                    | booléen                                 |
+| `nouveau point d'apparition` | [Pos IBlock](/Vanilla/World/IBlockPos/) |

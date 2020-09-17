@@ -1,13 +1,13 @@
-# IProjectileImpactEvent
+# IProjectileImpact事件
 
-This interface is extended by all Events that relate to projectiles (suchs as fireballs, arrows and throwable items).
+这个接口由所有与射弹有关的事件(例如火球、箭头和可投掷物品)扩展。
 
 ## 导入类
-It might be required to [import](/AdvancedFunctions/Import/) the class to avoid errors.  
-`import crafttweaker.event.IProjectileImpactEvent;`
+可能需要 [导入](/AdvancedFunctions/Import/) 类以避免错误。  
+`导入craftweaper.eventIProjectileImpact事件；`
 
-## Extending IEntityEvent
-This interface extends [IEntityEvent](/Vanilla/Events/Events/IEntityEvent/), which means that all functionality that IEntityEvent offers is also present in IProjectileImpactEvent.
+## 扩展 IEntityEvent
+此接口扩展 [IEntityEvent](/Vanilla/Events/Events/IEntityEvent/), 这意味着IEntityEvent 提供的所有功能也都存在于IProjectileImpactEvent中。
 
 ## ZenGetters
 

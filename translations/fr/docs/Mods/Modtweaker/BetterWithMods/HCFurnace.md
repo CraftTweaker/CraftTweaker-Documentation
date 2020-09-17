@@ -1,12 +1,12 @@
 # HCFurnace
 
-The HCFurnace feature makes it so that furnace recipes can take varied amount of time depending on the item that is smelting. This does not effect how fuel works, meaning some recipes will take more or less fuel.
+Grâce à la fonction HCFurnace, les recettes de fours peuvent prendre un temps varié en fonction de l'objet en fonte. Cela n'affecte pas le fonctionnement du carburant, ce qui signifie que certaines recettes prendront plus ou moins de carburant.
 
-Allows setting the time, in ticks, that it takes a specific furnace recipe to smelt based on its input item
+Permet de définir le temps, en ticks, qu'il faut une recette de four spécifique pour fondre en fonction de son élément d'entrée
 
 ```zenscript
   mods.betterwithmods.Misc.setFurnaceSmeltingTime(IIngredient ingredient, int time)
 
-  //Make a potato take about 83 minutes to smelt, because why not
+  //Faire une pomme de terre prendre environ 83 minutes pour fondre car pourquoi pas
   mods.betterwithmods.Misc.setFurnaceSmeltingTime(<minecraft:potato>,100000); 
 ```

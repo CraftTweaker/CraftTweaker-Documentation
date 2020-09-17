@@ -1,13 +1,13 @@
-# Tool Harvest-Level Locking
+# Werkzeug Harvest-Level Sperren
 
-## Feature:
+## Merkmal:
 
-This lock adds the ability for pack authors to lock Tools in general or specific tool "types" behind their harvest level. This means that you can lock down all pickaxes with a harvest level of "3" behind a set of requirements. Or in general all tools with a harvest level of 3 behind a set of requirements!
+Diese Sperre fügt die Fähigkeit für Paketautoren hinzu, Werkzeuge im Allgemeinen oder bestimmte Werkzeuge "Typen" hinter ihrem Erntewert zu sperren. Das bedeutet, dass du alle Spitzhacken mit einem Erntewert von "3" hinter einer Reihe von Anforderungen sperren kannst. Oder im Allgemeinen alle Werkzeuge mit einem Erntegrad von 3 hinter einer Reihe von Anforderungen!
 
 ## Syntax:
 
-    mods.compatskills.HarvestLock.addToolLevelLock(int level, String... requirements);
-    mods.compatskills.HarvestLock.addToolLevelLock(String type, int level, String... requirements);
+    mods.compatskills.HarvestLock.addToolLock(int level, String... erforderlich);
+    mods.compatskills.HarvestLock.addToolLevelLock(String Typ, Int, String... erforderlich);
     
     mods.compatskills.HarvestLock.addToolLevelLock(3, "dim|1");
-    mods.compatskills.HarvestLock.addToolLevelLock("pickaxe", 3, "dim|1");
+    mods.compatskills.HarvestLock.addToolLock("pickaxe", 3, "dim|1");

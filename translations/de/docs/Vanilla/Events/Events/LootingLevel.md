@@ -1,22 +1,22 @@
-# LootingLevel
+# Plünderungsebene
 
-This event is fired whenever a Living Entity creature is killed in order to calculate the looting level. The value can be increased or decreased or left as-is. The value may have already been modified by other events, but the original value is not included.
+Dieses Ereignis wird abgefeuert, wenn eine lebende Entitätskreatur getötet wird, um die Plünderungsstufe zu berechnen. Der Wert kann erhöht oder verringert werden oder wie er ist. Der Wert wurde möglicherweise bereits durch andere Ereignisse geändert, aber der ursprüngliche Wert ist nicht enthalten.
 
 ## Event-Klasse
-You will need to cast the event in the function header as this class:  
-`crafttweaker.event.LootingLevelEvent`  
-You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
+Du musst das Ereignis als diese Klasse in den Funktionskopf verschieben:  
+`crafttweaker.event. ootingLevelEvent`  
+Sie können natürlich auch [die Klasse vor](/AdvancedFunctions/Import/) importieren und dann diesen Namen verwenden.
 
 ## Erweiterte Event-Schnittellen
-LootingLevel Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+LootingLevel Events implementieren die folgenden Schnittstellen und können alle ihre Methoden/Getter/Setter auch aufrufen:
 
 - [ILivingEvent](/Vanilla/Events/Events/ILivingEvent/)
 
 
 ## ZenGetter/ZenSetter
-The following information can be retrieved/set during the event:
+Folgende Informationen können während der Veranstaltung abgerufen bzw. eingestellt werden:
 
-| ZenGetter      | ZenSetter      | Type                                            |
-| -------------- | -------------- | ----------------------------------------------- |
-| `lootingLevel` | `lootingLevel` | int                                             |
-| `damageSource` |                | [IDamageSource](/Vanilla/Damage/IDamageSource/) |
+| ZenGetter          | ZenSetter          | Type                                            |
+| ------------------ | ------------------ | ----------------------------------------------- |
+| `plündernde Stufe` | `plündernde Stufe` | int                                             |
+| `Schadensquelle`   |                    | [IDamageSource](/Vanilla/Damage/IDamageSource/) |

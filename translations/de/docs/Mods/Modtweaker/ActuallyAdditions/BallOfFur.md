@@ -1,6 +1,6 @@
-# Ball of Fur
+# Fellball
 
-## Package
+## Paket
 
 `mods.actuallyadditions.BallOfFur`
 
@@ -11,7 +11,7 @@
 mods.actuallyadditions.BallOfFur.addReturn(<minecraft:string>, 5);
 ```
 
-## Removal
+## Entfernen
 
 ```zenscript
 //mods.actuallyadditions.BallOfFur.removeReturn(IItemStack output);

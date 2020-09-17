@@ -1,18 +1,18 @@
 # IEntityItem
 
-Represents an item stack in the world.
+ワールドのアイテムスタックを表します。
 
-## Importing the package
+## パッケージのインポート
 
 It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
 `import crafttweaker.entity.IEntityItem;`
 
-## Extending [IEntity](/Vanilla/Entities/IEntity/)
+## 拡張する [IEntity](/Vanilla/Entities/IEntity/)
 
-IEntityItem extends [IEntity](/Vanilla/Entities/IEntity/). That means all functions available to [IEntities](/Vanilla/Entities/IEntity/) also are available to IEntityItem.
+IEntityItem extends [IEntity](/Vanilla/Entities/IEntity/). つまり、 [IEntities](/Vanilla/Entities/IEntity/) で利用可能なすべての関数は、IEntityItemでも利用可能です。
 
 ## ZenGetters
 
-| ZenGetter | Return Type                              |
+| ZenGetter | 戻り値                                      |
 | --------- | ---------------------------------------- |
-| item      | [IItemStack](/Vanilla/Items/IItemStack/) |
+| 項目        | [IItemStack](/Vanilla/Items/IItemStack/) |

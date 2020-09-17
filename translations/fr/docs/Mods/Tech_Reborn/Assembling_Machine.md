@@ -1,14 +1,14 @@
-# Assembling Machine
+# Machine d'assemblage
 
-## Importing the Package
-`mods.techreborn.assemblingMachine`
+## Importation du paquet en cours
+`Machine d'assemblage mods.techreborn.`
 
-## Adding Recipes
+## Ajout de recettes
 ```zenscript
-mods.techreborn.assemblingMachine.addRecipe(IItemStack output, IIngredient input1, IIngredient input2, int ticktime, int euTick);
+mods.techreborn.assemblingMachine.addRecipe(sortie IItemStack, IIngredient input1, IIngredient input2, int euTick) ;
 ```
 
-## Removing Recipes
+## Suppression des recettes
 ```zenscript
 mods.techreborn.assemblingMachine.removeInputRecipe(IIngredient ingredientA, IIngredient ingredientB);
 mods.techreborn.assemblingMachine.removeRecipe(IItemStack output);

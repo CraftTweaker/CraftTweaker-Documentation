@@ -1,43 +1,43 @@
 # Salis Mundus
 
-This package allows you to add conversion handlers for thaumcraft's salis mundus handler.  
-These handlers are invoked when you click a block in the world with Thaumcraft's salis mundus to change them to something else.
+这个软件包允许您添加转化处理器来处理甲草胺的销售。  
+这些处理程序会被调用，当你点击世界上与Thaumcraft的沙龙混合体中的一个方块时被调用。
 
-If that result is a block, it will be placed in the world, if not it will be dropped as item.
+如果该结果是一个区块，它将放在世界上，如果不是放在项目上。
 
-## Import the package
+## 导入软件包
 
 To shorten method calls you can [import](/AdvancedFunctions/Import/) the package like so:
 
 ```zenscript
-import mods.thaumcraft.SalisMundus;
+导入 mods.thaumcraft.SalisMundus;
 ```
 
-## Add Recipes
+## 添加配方
 
-You can either specify an [IBlock](/Vanilla/Blocks/IBlock/) or an [IOreDictEntry](/Vanilla/OreDict/IOreDictEntry/).  
-If you don't specify a research, this recipe will always be possible, if you do decide to specify a research string, you need to have the research unlocked in order for the conversion to work.
+您可以指定一个 [IBlock](/Vanilla/Blocks/IBlock/) 或 [IOreDictEnter](/Vanilla/OreDict/IOreDictEntry/)。  
+如果您没有指定研究，这个配方始终是可能的 如果您确实决定指定一个研究字符串，您需要解锁研究才能转换为工作。
 
 ```zenscript
-//mods.thaumcraft.SalisMundus.addSingleConversion(IBlock in, IItemStack out, @Optional String research);
-SalisMundus.addSingleConversion(<blockstate:minecraft:dirt>.block, <minecraft:bedrock>);
+//mods.thaumcraft.SalisMundus.addSingleConversion(IBlock in , IItemStack out, @Optional String research);
+SalisMundus.addleSingleConversion(<blockstate:minecraft:dirt>.block, <minecraft:bedrock>);
 
-//mods.thaumcraft.SalisMundus.addSingleConversion(IOreDictEntry in, IItemStack out, @Optional String research);
-mods.thaumcraft.SalisMundus.addSingleConversion(IOreDictEntry in, IItemStack out, @Optional String research);
-SalisMundus.addSingleConversion(<ore:blockIron>, <minecraft:bedrock>);
+//mods.thaumcraft.SalisMundus. ddSingleConversion(IoreDictEnterprise in IItemStack out, @Optional String research);
+mods.thaumcraft.SalisMundus.addsingleConversion(IoreDictEntry in, IItemStackout, @Optional String research);
+SalisMundus.addleConversion(<ore:blockIron>, <minecraft:bedrock>);
 ```
 
-## Remove Recipes
+## 删除配方
 
-You can also remove all recipes that return a matching item.  
-This handler checks if the parameter provided matches with the output itemStack, so you could also remove all recipes using the wildcard ingredient `<*>`.
+您也可以删除所有返回匹配项的配方。  
+此处理程序检查提供的参数是否与输出项目堆栈匹配， 这样你也可以删除所有配方使用通配符 `<*>`
 
 ```zenscript
 mods.thaumcraft.SalisMundus.removeSingleConversion(IIngredient output);
 
-//Removes ALL registered handlers
+///removes all all registed managlers
 mods.thaumcraft.SalisMundus.removeSingleConversion(<*>);
 
-//Only removes the crucible handler
+// Only removes cruble handler
 mods.thaumcraft.SalisMundus.removeSingleConversion(<thaumcraft:crucible>);
 ```

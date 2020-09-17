@@ -1,39 +1,39 @@
-# DropTableBuilder
+# Outil DropTableBuilder
 
-DropTableBuilder is used to create 'drops' strings for ores and samples that support dropping multiple item stacks at once, item stacks that contain more than one item, and weighted drops.
+DropTableBuilder est utilisé pour créer des chaînes de "drops" pour les minerais et les échantillons qui prennent en charge le dépôt de plusieurs piles d'objets à la fois, les piles qui contiennent plus d'un élément, et les gouttes pondérées.
 
-## Importing the package
+## Importation du paquet
 
-It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
-`import mods.contenttweaker.DropTableBuilder;`
+Il pourrait vous être nécessaire d'importer le paquet si vous rencontrez des problèmes, donc mieux vaut être sûr que désolé et ajouter l'importation.  
+`importer mods.contenttweaker.DropTableBuilder ;`
 
-## Methods
+## Méthodes
 
-These methods allow for creation and modification of a drop table. All builder methods return the builder they were run on, allowing for chaining methods.
+Ces méthodes permettent la création et la modification d'une table drop . Toutes les méthodes du constructeur retournent le constructeur sur lequel elles ont été exécutées, permettant de chaîner les méthodes.
 
-| Method Name     | Description                                                                      |
-| --------------- | -------------------------------------------------------------------------------- |
-| newSlot()       | Creates a new drop table if run statically or adds a new slot to the drop table. |
-| addItem()       | Adds the specified item to the current slot of the drop table.                   |
-| enableFortune() | Enables the current slot to benefit from the fortune enchant.                    |
+| Nom de la méthode | Libellé                                                                                                                 |
+| ----------------- | ----------------------------------------------------------------------------------------------------------------------- |
+| nouvelleSlot()    | Crée une nouvelle table de dépôt si elle est exécutée statiquement ou ajoute un nouvel emplacement à la table de dépôt. |
+| addItem()         | Ajoute l'élément spécifié à l'emplacement actuel de la table de dépôt.                                                  |
+| enableFortune()   | Permet à la fente actuelle de bénéficier de l'enchantement de fortune.                                                  |
 
-### Usage:
+### Utilisation:
 
-#### `newSlot()`
+#### `nouvelleSlot()`
 
-DropTableBuilder.newSlot() will create a new builder. \<builder\>.newSlot() will finalize the current slot and start a new one.
+DropTableBuilder.newSlot() créera un nouveau constructeur. \<builder\>.newSlot() finalisera le créneau actuel et en démarrera un nouveau.
 
 #### `addItem(String itemStr[, int weight[, int count]])`
 
-`itemStr` can be an item's name like \<mod\>:\<item\>:\<meta\>, an ore dictionary entry like oredict:\<entry\>, or the word empty. `weight` controls how likely the item is to drop using the formula \<item weight\>/\<sum of item weights within slot\>. Defaults to 1 if omitted. `count` is how many of the item drop if selected. Defaults to 1 if omitted.
+`itemStr` peut être un nom d'élément comme \<mod\>:\<item\>:\<meta\>, une entrée de dictionnaire de minerai comme oredict:\<entry\>, ou le mot vide. `poids` contrôle la probabilité que l'élément soit abandonné en utilisant la formule \<item weight\>/\<sum of item weights within slot\>. Valeur par défaut à 1 si omise. `count` est le nombre de points qui tombent si sélectionné. Valeur par défaut à 1 si omise.
 
 #### `enableFortune()`
 
-Slots that have fortune enabled will select a number of additional items from the slot up to the level of fortune used. Matches vanilla fortune behavior on slots that have only 1 item.
+Les emplacements qui ont une fortune activée sélectionneront un certain nombre d'objets supplémentaires de l'emplacement jusqu'au niveau de fortune utilisé. Correspond au comportement de la fortune vanilla sur les emplacements qui n'ont qu'un seul élément.
 
-## Examples using the Builder
+## Exemples utilisant le constructeur
 
-### Creating a drop table
+### Création d'une table de dépôt
 
 ```zenscript
 var complextable = DropTableBuilder.newSlot()
@@ -47,7 +47,7 @@ var complextable = DropTableBuilder.newSlot()
                     .addItem("empty");
 ```
 
-This drop table would drop 2 diamonds (10%) or 1 coal (90%) benefiting from fortune, 1 stone (100%), and 1 cobblestone (50%).
+Cette table tomberait 2 diamants (10 %) ou 1 charbon (90 %) bénéficiant de fortune, 1 pierre (100 %), et 1 pierre (50 %).
 
 ```zenscript
 var lapistable = DropTableBuilder.newSlot()
@@ -59,11 +59,11 @@ var lapistable = DropTableBuilder.newSlot()
                    .enableFortune();
 ```
 
-This drop table mimics vanilla lapis, dropping 4-8 lapis and benefiting from fortune.
+Cette table à gouttes imite les lapis à la vanille, en lâchant 4-8 lapis et en profitant de fortune.
 
-### Using a drop table
+### Utiliser une table de dépôt
 
-Builders are used by assigning them as a "drops" data value. Since data values only accept strings, the builder will be cast as a string using its toString method.
+Les constructeurs sont utilisés en les assignant comme valeur de données "drops". Puisque les valeurs de données n'acceptent que des chaînes, le constructeur sera converti en chaîne de caractères en utilisant sa méthode toString.
 
 ```zenscript
 var lapisData = MaterialSystem.getMaterialBuilder()
@@ -76,4 +76,4 @@ lapisData.addDataValue("drops",lapistable);
 complexData.addDataValue("drops",complextable+lapistable);
 ```
 
-When 2 builders are added together, a new table is created with the slots from both tables.
+Lorsque 2 constructeurs sont ajoutés ensemble, une nouvelle table est créée avec les slots des deux tables.

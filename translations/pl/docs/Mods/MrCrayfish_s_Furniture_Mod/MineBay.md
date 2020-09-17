@@ -1,46 +1,46 @@
-# Mine Bay
+# Zatoka Kopania
 
-You can trade for items on minebay.
+Możesz handlować przedmiotami w minebay.
 
-## Default Trades
+## Domyślne transakcje
 
-- Hardened Clay for 1x Emerald
-- Skull for 8x Emerald
-- Saddle for 4x Emerald
-- Spawn Egg (meta 100, does nothing) for 8x Emerald
-- Diamond Horse Armor for 8x Diamond
-- Bottle o' Enchanting for 1x Iron Ingot
-- 4x Fireworks for 1x Iron Ingot
-- Silk Touch Enchanted Book for 8x Emerald
-- 2x Night Vision Potion (3:00) for 1x Emerald
-- Recipe Book given 1x Emerald
+- Utwardzona Glina dla 1x Szmaragdu
+- Czaszka dla 8 x Szmaragdu
+- Siodło dla 4x Szmaragdu
+- Zespawnuj Jajko (meta 100, nic nie robi) dla 8x Szmaragdu
+- Diamentowa zbroja dla konia na 8 x Diament
+- Butelka zaklęcia do 1x Żelaza
+- 4x fajerwerki dla 1x Sztabki Żelaza
+- Jedwabna Zaklęta Książka dla 8x Szmaragdu
+- 2 x Mikstura widzenia w ciemności (3:00) dla 1x Szmaragdu
+- Książka z przepisu na 1x Szmaragd
 
-## Removing
+## Usuwanie
 
-## Remove matching trades.
+## Usuń pasujące transakcji.
 
 ```zenscript
 mods.cfm.MineBay.remove(@Optional IIngredient item);
 
-// Remove trade resulting in the nightvision potion (with any amount)
-mods.cfm.MineBay.remove(<minecraft:potion>.withTag({Potion: "night_vision"}));
-// Remove all trades
+// Usuń handel powodujący miksturę nocy (z dowolną ilość)
+mody. fm.MineBay.remove(<minecraft:potion>.withTag({Mikstacja: "night_vision"}));
+// Usuń wszystkie transakcje
 mods.cfm.MineBay.remove();
 ```
 
-Currently only supports removing by trade result.
+Obecnie wspiera jedynie usuwanie przez wynik handlu.
 
-## Adding
+## Dodawanie
 
-## Add a trade.
+## Dodaj transakcję.
 
 ```zenscript
-mods.cfm.MineBay.addTrade(@Nonnull IItemStack item, @Nonnull IItemStack currency);
+mods.cfm.MineBay.addTrade(@Nonnull IItemStack, @Nonnull IItemStack currency);
 
-// Add a trade for 42 sticks given 13 diamonds
-mods.cfm.MineBay.addTrade(<minecraft:stick>.withAmount(42),<minecraft:diamond>.withAmount(13));
-// Add a trade for 16 apples given 3 emeralds
-mods.cfm.MineBay.addTrade(<minecraft:apple>.withAmount(16),<minecraft:emerald>.withAmount(3));
-// Add a trade for 1 carrot given 1 emerald
+// Dodaj handel dla 42 kibicków z 13 diamentami
+mods.cfm.MineBay.addTrade(<minecraft:stick>.withAmount(42),<minecraft:diamond>. ithAmount(13));
+// Dodaj handel dla 16 jabłek z 3 szmaragdami
+mods.cfm.MineBay.addTrade(<minecraft:apple>.withAmount(16),<minecraft:emerald>. ithAmount(3));
+// Dodaj handel dla 1 marchewki z 1 szmarchewką
 mods.cfm.MineBay.addTrade(<minecraft:carrot>,<minecraft:emerald>);
 ```

@@ -1,45 +1,45 @@
-# PlayerFillBucket
+# Ведро игрока
 
-The PlayerFillBucket Event is fired whenever a player fills a bucket.
+Событие "FillBucket" запускается, когда игрок заполняет корзину.
 
-## Event Class
+## Класс события
 
 You will need to cast the event in the function header as this class:  
 `crafttweaker.event.PlayerFillBucketEvent`  
 You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
 
-## Event interface extensions
+## Наследование от интерфейсов событий
 
-PlayerFillBucket Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+PlayerFillBucket События реализуют следующие интерфейсы и также могут вызвать все их методы/getters/setters:
 
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 - [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
 - [IProcessableEvent](/Vanilla/Events/Events/IProcessableEvent/)
-- [IEventPositionable](/Vanilla/Events/Events/IEventPositionable/)
+- [Событие доступно](/Vanilla/Events/Events/IEventPositionable/)
 
 ## ZenGetters
 
-The following information can be retrieved from the event:
+Следующая информация может быть получена от события:
 
-| ZenGetter        | Return Type                                        |
-| ---------------- | -------------------------------------------------- |
-| `canceled`       | boolean                                            |
-| `player`         | [IPlayer](/Vanilla/Players/IPlayer/)               |
-| `result`         | [IItemStack](/Vanilla/Items/IItemStack/)           |
-| `emptyBucket`    | [IItemStack](/Vanilla/Items/IItemStack/)           |
-| `x`              | int                                                |
-| `y`              | int                                                |
-| `z`              | int                                                |
-| `world`          | [IWorld](/Vanilla/World/IWorld/)                   |
-| `blockState`     | [IBlockState](/Vanilla/Blocks/IBlockState/)        |
-| `block`          | [IBlock](/Vanilla/Blocks/IBlock/)                  |
-| `dimension`      | int                                                |
-| `rayTraceResult` | [IRayTraceResult](/Vanilla/World/IRayTraceResult/) |
+| Геттеры               | Возвращаемый тип                                          |
+| --------------------- | --------------------------------------------------------- |
+| `отменено`            | boolean                                                   |
+| `player`              | [IPlayer](/Vanilla/Players/IPlayer/)                      |
+| `результат`           | [IItemStack](/Vanilla/Items/IItemStack/)                  |
+| `пустой ведро`        | [IItemStack](/Vanilla/Items/IItemStack/)                  |
+| `х`                   | int                                                       |
+| `у`                   | int                                                       |
+| `z`                   | int                                                       |
+| `world`               | [IWorld](/Vanilla/World/IWorld/)                          |
+| `blockState`          | [IBlockState](/Vanilla/Blocks/IBlockState/)               |
+| `блок`                | [БИБлок](/Vanilla/Blocks/IBlock/)                         |
+| `измерение`           | int                                                       |
+| `Результат rayTrace™` | [Результат IRayTraceult](/Vanilla/World/IRayTraceResult/) |
 
 ## ZenMethods
 
-- `event.cancel()` sets the event as cancelled.
+- `event.cancel()` устанавливает событие как отменено.
 
-## Setters
+## Сеттеры
 
-- `event.result = <minecraft:ender_pearl>` This will also process the event!
+- `event.result = <minecraft:ender_pearl>` Также будет обрабатывать событие!

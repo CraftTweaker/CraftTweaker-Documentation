@@ -1,16 +1,16 @@
-# Electrolyzer
+# Elektrolizator
 
-## Importing the Package
-`mods.nuclearcraft.Electrolyzer`
+## Importowanie pakietu
+`mods.nuclearcraft.Elektrolizator`
 
-## Adding Recipes
+## Dodawanie przepisów
 ```zenscript
-mods.nuclearcraft.Electrolyser.addRecipe(ILiquidStack fluidInput, ILiquidStack fluidOutput1, ILiquidStack fluidOutput2, ILiquidStack fluidOutput3, ILiquidStack fluidOutput4, @Optional double timeMultiplier, @Optional double powerMultiplier, @Optional double processRadiation);
+mods.nuclearcraft.Electrolyser.addRecipe(ILiquidStack fluidInput, ILiquidStack fluidOutput1, ILiquidStack fluidOutput2, ILiquidStack fluidOutput3, ILiquidStack fluidOutput4, @Opcjonalny podwójny timeMultiplier, @Opcjonalny podwójny nośnik, @Opcjonalny proces promieniowania);
 ```
 
-## Removing Recipes
+## Usuwanie przepisów
 ```zenscript
 mods.nuclearcraft.Electrolyser.removeRecipeWithInput(ILiquidStack fluidInput);
 mods.nuclearcraft.Electrolyser.removeRecipeWithOutput(ILiquidStack fluidOutput1, ILiquidStack fluidOutput2, ILiquidStack fluidOutput3, ILiquidStack fluidOutput4);
-mods.nuclearcraft.Electrolyser.removeAllRecipes();
+mods.nuclearcraft.a. „oprogramowanie” specjalnie zaprojektowane lub zmodyfikowane do „rozwoju”, „produkcji” lub „użytkowania” sprzętu wyszczególnionego w pozycjach 2B004, 2B005, 2B006.a, 2B006.b, 2B006.b, 2B006.c, 2B006.c, 2B006.c, 2B006.c, 2B006.c, 2B006.c, 2B006.c, 2B006.c, 2B006.c, 2B006.c, 2B006.c, 2B006.c, 2B006.c, 2B006.c, 2B006.c, 2B006.c, 2B006.c, 2B006.c, 2B006.c, 2B006.c, 2B006.c, 2B006.c, 2B006.c, 2B006.c, 2B006.c, 2B006.c, 2B006.c, 2B006.c, 2B006.c, 2B006.c, 2B006.c, 2B006.c, 2B006.c, 2B006.c, 2B006.c, 2B006.c, 2B006.c, 2B006.c, 2B006.d,
 ```

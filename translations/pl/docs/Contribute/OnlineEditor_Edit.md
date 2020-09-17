@@ -1,68 +1,68 @@
-# Edit Files using GitHub's online editor
+# Edytuj pliki za pomocą edytora online GitHuba
 
-## Requirements
+## Wymagania
 
-You will need to have created a GitHub account and [forked the wiki to your account](/Contribute/SetupGithub).
+Będziesz musiał utworzyć konto GitHub i [forkujesz wiki na Twoje konto](/Contribute/SetupGithub).
 
-## Introduction
+## Wprowadzanie
 
-GitHub's online editor allows you to change and create files using nothing but your browser.  
-It may not be as versatile as [using a local copy](/Contribute/LocalClone/CreateCommit/) but you don't need to worry about [setting up git](/Contribute/LocalClone/InstallingGit/) and all.
+Edytor online GitHub pozwala na zmianę i tworzenie plików przy użyciu tylko przeglądarki.  
+Może nie być tak wszechstronny jak [przy użyciu lokalnej kopii](/Contribute/LocalClone/CreateCommit/) , ale nie musisz się martwić o [konfigurację git](/Contribute/LocalClone/InstallingGit/) i wszystkie.
 
-This guide will show you how to edit an already existing file using github's online editor.  
-You may want to edit the page because you have found a typo or want to include a better example, whatever the reason, feel free to commit changes and eventually [file a Pull Request](/Contribute/PullRequest).
+Ten przewodnik pokaże jak edytować już istniejący plik za pomocą edytora online githuba.  
+Możesz chcieć edytować stronę, ponieważ znalazłeś literaturę lub chcesz dołączyć lepszy przykład. bez względu na powód, możesz zatwierdzić zmiany i ostatecznie [złożyć Pull Request](/Contribute/PullRequest).
 
-However, remember that you can only edit the English version, translations are handled via [CrowdIn](https://crowdin.com/project/crafttweaker-documentation/).
+Pamiętaj, że możesz edytować tylko angielską wersję, tłumaczenie jest obsługiwane przez [CrowdIn](https://crowdin.com/project/crafttweaker-documentation/).
 
-## Locate the file
+## Zlokalizuj plik
 
-If you want to edit an existing file, you first need to locate it.
+Jeśli chcesz edytować istniejący plik, najpierw musisz go zlokalizować.
 
-In most cases you can find the file by checking its Wiki Url.
+W większości przypadków możesz znaleźć plik, sprawdzając jego adres URL Wiki.
 
-Rule of thumb: The `#` is the docs folder, everything after that are nested folders and eventually the file.
+Reguła kciuków: `#` jest folderem dokumentacji, wszystko po tym jest zagnieżdżone foldery i ostatecznie plikiem.
 
-For example, the file creating  
+Na przykład, plik tworzący  
 [https://docs.blamejared.com/en/#AdvancedFunctions/Arrays_and_Loops/](https://docs.blamejared.com/en/#AdvancedFunctions/Arrays_and_Loops/)  
-can be found in  
+można znaleźć w  
 `docs/AdvancedFunctions/Arrays_and_Loops.md`
 
-## Edit the file
+## Edytuj plik
 
-After you have successfully located the file, click on it to open it in the GitHub file view.  
-Here you can see how the wiki entry will roughly look like, though no navigation bar is present as this is only the entry content.
+Po pomyślnym zlokalizowaniu pliku, kliknij na nią, aby otworzyć go w widoku pliku GitHub.  
+Tutaj możesz zobaczyć, jak wpis wiki będzie wyglądał w przybliżeniu chociaż nie ma paska nawigacyjnego, ponieważ jest to tylko zawartość wpisu.
 
-Click on the little pen icon to open the editor: ![Edit Button](/Contribute/assets/OnlineEditor_EditButton.png)
+Kliknij ikonę małego pióra, aby otworzyć edytor: ![Przycisk edycji](/Contribute/assets/OnlineEditor_EditButton.png)
 
-The Editor allows you to change your file as you like, and also to directly view a preview with the compiled formatting. This preview will have colored bars on the lefthandside indicating that:
+Edytor pozwala na zmianę pliku zgodnie z twoim życzeniem, a także bezpośrednio wyświetlić podgląd z skompilowanym formatowaniem. Ten podgląd będzie miał kolorowe paski po lewej stronie, wskazujące, że:
 
-- Green: This Section was not present on this page before.
-- Yellow: This Section was present on this page before but was changed, e.g. a typo was corrected, or additional information was provided.
-- Red: This section was present on this page before but was removed.
-- None: This section was untouched.
+- Zielony: Ta sekcja nie była obecna na tej stronie wcześniej.
+- Żółta: Ta sekcja była obecna na tej stronie zanim została zmieniona, np. poprawiono literaturę lub podano dodatkowe informacje.
+- Czerwona: Ta sekcja była obecna na tej stronie przed usunięciem, ale została usunięta.
+- Brak: Ta sekcja była nienaruszona.
 
-If the syntax of the files is new for you, the wiki uses MarkDown. There should be many tutorials to find using google (or you could add one right here to this wiki if you like).
+Jeśli składnia plików jest dla Ciebie nowa, wiki używa MarkDown. Powinien być wiele samouczków, które można znaleźć za pomocą google (lub możesz dodać jedną prostą tutaj do tej wiki jeśli chcesz).
 
-## Save/Commit the changes
+## Zapisz/Zatwierdź zmiany
 
-After you have changed the file you need to let GitHub know that you want to save your changes.
+Po zmianie pliku musisz poinformować GitHub, że chcesz zapisać zmiany.
 
-That's what the commit box below your Editor is for:  
-You cannot simply save the file, you need to provide a summary of what you did (commit title) and optionally a short description where you can put additional information like why you did the changes or what exactly was changed.
+To właśnie pole commitów poniżej edytora jest dla:  
+Nie możesz po prostu zapisać pliku, musisz podać podsumowanie tego, co zrobiłeś (tytuł zatwierdzenia) i opcjonalnie krótki opis, w którym można podać dodatkowe informacje, takie jak dlaczego dokonałeś zmian lub co zostało dokładnie zmienione.
 
-By default it looks roughly like this:  
-![Commit Box Default](/Contribute/assets/OnlineEditor_CommitBox_Default.png)
+Domyślnie wygląda w przybliżeniu tak:  
+![Domyślne pole commitów](/Contribute/assets/OnlineEditor_CommitBox_Default.png)
 
-In this example, the Commit title (or edit summary) is `Update Arrays_and_Loops.md`. GitHub cannot know what your actual changes were supposed to do, so it tries something as generic as this.
+W tym przykładzie tytuł Komitu (lub podsumowanie edycji) jest `Aktualizuj Arrays_and_Loops.md`. GitHub nie może wiedzieć, co mają zrobić Twoje rzeczywiste zmiany, więc próbuje coś tak ogólnego, jak to.
 
-You might want to add an additional title or description, but it is not neccessary, though it makes reviewing your Pull request later on easier.
+Możesz dodać dodatkowy tytuł lub opis, ale nie jest to potrzebne, choć sprawia, że sprawdzenie Twojego Pull request później jest łatwiejsze.
 
-If you have multiple e-mail addresses registered for your GitHub account, you can choose as which one you will create the commit. This will not have any real impact for contributing, though.  
-You can also decide whether you want to commit directly to your master branch or rather create a new branch for your commit. In most cases committing to your master branch works just fine.
+Jeśli masz wiele adresów e-mail zarejestrowanych dla Twojego konta GitHub, możesz wybrać, który z nich utworzysz zatwierdzenie. Nie będzie to jednak miało realnego wpływu na wniesienie wkładu.  
+Możesz również zdecydować, czy chcesz przenieść bezpośrednio do swojej głównej gałęzi czy raczej utworzyć nową gałąź dla swojego commita. W większości przypadków zlecenie do głównej gałęzi działa w porządku.
 
-A filled out example might look like this: ![Commit Box Filled](/Contribute/assets/OnlineEditor_CommitBox_Filled.png)
+Wypełniony przykład może wyglądać tak: ![Wypełnione pole commitów](/Contribute/assets/OnlineEditor_CommitBox_Filled.png)
 
-## What to do next
+## Co zrobić dalej
 
-After you have committed your changes, you can go on and edit or [Create](/Contribute/OnlineEditor_Create) more files using the online editor.  
-After you have done all your changes, you can [file a Pull Request](/Contribute/PullRequest).
+Po zaangażowaniu zmian, możesz przejść i edytować lub [Utwórz](/Contribute/OnlineEditor_Create) więcej plików za pomocą edytora online.  
+Po wykonaniu wszystkich zmian, możesz [wysłać Pull Request](/Contribute/PullRequest).

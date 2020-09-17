@@ -1,14 +1,14 @@
-# Rock Crusher
+# Ecraseur de Roche
 
-## Importing the Package
-`mods.nuclearcraft.RockCrusher`
+## Importation du paquet en cours
+`mods.nuclearcraft.Broyeur de roche`
 
-## Adding Recipes
+## Ajout de recettes
 ```zenscript
 mods.nuclearcraft.RockCrusher.addRecipe(IIngredient itemInput, IIngredient itemOutput1, IIngredient itemOutput2, IIngredient itemOutput3, @Optional double timeMultiplier, @Optional double powerMultiplier, @Optional double processRadiation);
 ```
 
-## Removing Recipes
+## Suppression des recettes
 ```zenscript
 mods.nuclearcraft.RockCrusher.removeRecipeWithInput(IIngredient itemInput);
 mods.nuclearcraft.RockCrusher.removeRecipeWithOutput(IIngredient itemOutput1, IIngredient itemOutput2, IIngredient itemOutput3);

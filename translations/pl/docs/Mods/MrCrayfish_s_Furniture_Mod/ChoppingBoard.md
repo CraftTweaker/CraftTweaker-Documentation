@@ -1,33 +1,33 @@
-# Chopping Board
+# Tablica do krojenia
 
-The Chopping Board allows you to chop up an item into many pieces of another item.
+Tablica Chopping pozwala na wrzucenie przedmiotu do wielu części innego przedmiotu.
 
-By default only cuts bread into 6 bread slices.
+Domyślnie cięto chleb tylko na 6 kawałków.
 
-## Removing Chopping Recipes
+## Usuwanie przepisów o kropkach
 
-## Remove matching chopping recipes.
+## Usuń pasujące przepisy.
 
 ```zenscript
 mods.cfm.ChoppingBoard.remove(@Optional final IIngredient output, @Optional final IIngredient input);
 
-// Remove recipe with bread as the input item
-mods.cfm.ChoppingBoard.remove(null,<minecraft:bread>);
-// Remove recipes that result in 6 bread slices (same match as above recipe, so will have no effect if used after)
-mods.cfm.ChoppingBoard.remove(<cfm:item_bread_slice>.withAmount(6));
+// Usuń przepis z chleba jako element wejściowy
+mods.cfm.ChoppingBoard. emove(null,<minecraft:bread>);
+// Usuń przepisy, które dają 6 kawałków chleba (takie same jak powyżej receptury, więc nie będą miały żadnego efektu, jeśli zostaną użyte po)
+modów. fm.ChoppingBoard.remove(<cfm:item_bread_slice>.withKwot(6));
 ```
 
-## Adding Chopping Recipes
+## Dodawanie przepisów o kropce
 
-Add a chopping recipe.
+Dodaj przepis na kropkę.
 
-## Input requires stack size of 1.
+## Wejście wymaga rozmiaru stosu 1.
 
 ```zenscript
-mods.cfm.ChoppingBoard.addRecipe(@Nonnull final IItemStack output, @Nonnull final IItemStack input);
+mods.cfm.ChoppingBoard.addRecipe(@Nonnull final wyjście IItemStack, @Nonnull final IItemStack);
 
-// Add a recipe to chop wheat into 2 sticks
-mods.cfm.ChoppingBoard.addRecipe(<minecraft:stick>.withAmount(2),<minecraft:wheat>);
-// Add a recipe to chop bread into 3 wheat
+// Dodaj przepis aby wyciąć pszenicę na 2 kijki
+mods.cfm.ChoppingBoard. ddRecipe(<minecraft:stick>.withAmount(2),<minecraft:wheat>);
+// Dodaj przepis na chleb do 3 pszenicy
 mods.cfm.ChoppingBoard.addRecipe(<minecraft:wheat>.withAmount(3),<minecraft:bread>);
 ```

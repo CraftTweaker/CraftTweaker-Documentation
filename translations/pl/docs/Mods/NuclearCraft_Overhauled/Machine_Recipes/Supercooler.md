@@ -1,16 +1,16 @@
-# Supercooler
+# Superchłodnica
 
-## Importing the Package
-`mods.nuclearcraft.Supercooler`
+## Importowanie pakietu
+`mods.nuclearcraft.Superchłodnica`
 
-## Adding Recipes
+## Dodawanie przepisów
 ```zenscript
-mods.nuclearcraft.Supercooler.addRecipe(ILiquidStack fluidInput, ILiquidStack fluidOutput, @Optional double timeMultiplier, @Optional double powerMultiplier, @Optional double processRadiation);
+mods.nuclearcraft.Supercooler.addRecipe(ILiquidStack fluidInput, ILiquidStack fluidOutput, @Opcjonalny podwójny timeMultiplier, @Opcjonalny podwójny nośnik, @Opcjonalny podwójny proces);
 ```
 
-## Removing Recipes
+## Usuwanie przepisów
 ```zenscript
 mods.nuclearcraft.Supercooler.removeRecipeWithInput(ILiquidStack fluidInput);
 mods.nuclearcraft.Supercooler.removeRecipeWithOutput(ILiquidStack fluidOutput);
-mods.nuclearcraft.Supercooler.removeAllRecipes();
+mods.nuclearcraft.»Technologia«, zgodnie z uwagą ogólną do technologii, służąca do »rozwoju«, »produkcji« lub »użytkowania« sprzętu lub »oprogramowania«.
 ```

@@ -1,16 +1,16 @@
 # PlayerOpenContainer
 
-The PlayerOpenContainer Event is fired whenever a player opens a container.
+Das PlayerOpenContainer Event wird gefeuert, wenn ein Spieler einen Container öffnet.
 
 ## Event-Klasse
 
-You will need to cast the event in the function header as this class:  
-`crafttweaker.event.PlayerOpenContainerEvent`  
-You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
+Du musst das Ereignis als diese Klasse in den Funktionskopf verschieben:  
+`crafttweaker.event. layerOpenContainerEvent`  
+Sie können natürlich auch [die Klasse vor](/AdvancedFunctions/Import/) importieren und dann diesen Namen verwenden.
 
 ## Erweiterte Event-Schnittellen
 
-PlayerOpenContainer Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+PlayerOpenContainer Events implementieren die folgenden Schnittstellen und können auch alle ihre Methoden/Getters/Setter aufrufen:
 
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 - [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
@@ -19,12 +19,12 @@ PlayerOpenContainer Events implement the following interfaces and are able to ca
 
 Die folgenden Informationen lassen sich von diesem Event (Ereignis) abrufen:
 
-| ZenGetter   | Rückgabetyp                                  |
-| ----------- | -------------------------------------------- |
-| `canceled`  | boolean                                      |
-| `player`    | [IPlayer](/Vanilla/Players/IPlayer/)         |
-| `container` | [IContainer](/Vanilla/Container/IContainer/) |
+| ZenGetter     | Rückgabetyp                                  |
+| ------------- | -------------------------------------------- |
+| `abgebrochen` | boolean                                      |
+| `player`      | [IPlayer](/Vanilla/Players/IPlayer/)         |
+| `behälter`    | [IContainer](/Vanilla/Container/IContainer/) |
 
-## ZenMethods
+## ZenMethoden
 
-- `event.cancel()` sets the event as cancelled.
+- `event.cancel()` setzt das Ereignis als abgebrochen.

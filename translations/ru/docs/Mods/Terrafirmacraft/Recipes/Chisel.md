@@ -1,18 +1,18 @@
-# Chisel
+# Кизель
 
-## Package
+## Пакет
 ```zenscript
-import mods.terrafirmacraft.Chisel;
+import mods.terrafirmacraft.Кизел;
 ```
 
-## Addition
+## Сложение
 ```zenscript
 Chisel.addRecipe(String registryName, IItemStack input, IItemStack output);
 ```
 
-## Removal
+## Удаление
 
 ```zenscript
-Chisel.removeRecipe(IItemStack output);
+Chisel.removeRecipe(IItemStack);
 Chisel.removeRecipe(String registryName);
 ```

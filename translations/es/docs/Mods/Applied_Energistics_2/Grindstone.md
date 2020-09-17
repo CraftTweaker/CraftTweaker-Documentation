@@ -1,20 +1,20 @@
 # Grindstone
 
-### Importing
+### Importando
 
 ```zenscript
-import mods.appliedenergistics2.Grinder;
+importar mods.appliedenergistics2.Grinder;
 ```
 
-### Adding
+### Agregando
 
 ```zenscript
-Grinder.addRecipe(IItemStack output, IItemStack input, int turns, @Optional IItemStack secondary1Output, @Optional float secondary1Chance, @Optional IItemStack secondary2Output, @Optional float secondary2Chance);
+Grinder.addRecipe(salida de ItemStack, entrada de ItemStack ItemStack, turnos de intención, @Pila de Items opcional secondary1Output, @Número opcional de decimales, @Pila opcional secundaria2Output, @Segundo floto opcional2Canción);
 
-Grinder.addRecipe(<minecraft:sapling>, <minecraft:leaves>, 4, <minecraft:sapling:5>, 0.3);
+Mueve. ddReceta(<minecraft:sapling>, <minecraft:leaves>, 4, <minecraft:sapling:5>, 0.3);
 ```
 
-### Removing
+### Eliminando
 
 ```zenscript
 Grinder.removeRecipe(IItemStack input);

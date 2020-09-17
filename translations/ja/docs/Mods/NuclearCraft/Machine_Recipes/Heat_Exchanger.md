@@ -1,16 +1,16 @@
-# Heat Exchanger
+# 熱交換
 
-## Importing the Package
-`mods.nuclearcraft.heat_exchanger`
+## パッケージのインポート
+`mods.nuclecraft.heat_exchanger`
 
-## Adding Recipes
+## レシピを追加中
 ```zenscript
-mods.nuclearcraft.heat_exchanger.addRecipe([fluidInput, fluidOutput, double heatRequired, int temperatureIn, int temperatureOut]);
+mods.nuthcraft.heater_exchanger.addRecipe([fluidInput, fluidOutput, double heat Required, int temperatureIn, int temperatureOut]);
 ```
 
-## Removing Recipes
+## レシピを削除
 ```zenscript
-mods.nuclearcraft.heat_exchanger.removeRecipeWithInput([fluidInput]);
-mods.nuclearcraft.heat_exchanger.removeRecipeWithOutput([fluidOutput]);
-mods.nuclearcraft.heat_exchanger.removeAllRecipes();
+mods.nuclecraft.heat_exchanger.removeRecipeWithInput([fluidInput]);
+mods.nuclecraft.heat_exchanger.removeRecipeWithOutput([fluidOutput]);
+mods.nuclecraft.heat_exchanger.removeAllRecipes();
 ```

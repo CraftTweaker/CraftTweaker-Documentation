@@ -1,9 +1,9 @@
-# Fluid Generators
-**Note: The Fluid Generators are Thermal, Gas, Plasma, Semi and Diesel**
-## Importing the Package
+# Generatory płynów
+**Uwaga: Generatory cieczy to termiczne, gazowe, plazmowe, pół-i i olej napędowy**
+## Importowanie pakietu
 `mods.techreborn.fluidGen`
 
-## Adding Fuels
+## Dodawanie paliw
 ```zenscript
 mods.techreborn.fluidGen.addThermalFluid(ILiquidStack fluid, int energyPerMb);
 mods.techreborn.fluidGen.addGasFluid(ILiquidStack fluid, int energyPerMb);
@@ -12,11 +12,11 @@ mods.techreborn.fluidGen.addDieselFluid(ILiquidStack fluid, int energyPerMb);
 mods.techreborn.fluidGen.addPlasmaFluid(ILiquidStack fluid, int energyPerMb);
 ```
 
-## Removing Fuel
+## Usuwanie paliwa
 ```zenscript
-mods.techreborn.fluidGen.removeThermalFluid(ILiquidStack fluid);
-mods.techreborn.fluidGen.removeGasFluid(ILiquidStack fluid);
-mods.techreborn.fluidGen.removeSemiFluid(ILiquidStack fluid);
-mods.techreborn.fluidGen.removeDieselFluid(ILiquidStack fluid);
-mods.techreborn.fluidGen.removePlasmaFluid(ILiquidStack fluid);
+mods.techreborn.fluidGen.removeThermalFluid(ILiquidStack);
+mods.techreborn.fluidGen.removeGasFluid(ILiquidStack);
+mods.techreborn.fluid.removeSemiFluid(ILiquidStack);
+mods.techreborn.fluidGen.removeDieselFluid;
+mods.techreborn.fluid.fluid.fluid.techreborn.fluidGen.removePlasmaFluid;
 ```

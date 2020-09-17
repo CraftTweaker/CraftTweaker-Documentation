@@ -1,49 +1,49 @@
-# Material Builder
+# Материал строитель
 
-If you want to build a [material](/Mods/ContentTweaker/Materials/Materials/Material/), you will need a Material Builder!  
-Doesn't sound that hard, does it?
+Если вы хотите построить [материал](/Mods/ContentTweaker/Materials/Materials/Material/), вам нужен строитель материала!  
+Это не сложно, не правда ли?
 
 ## Импорт пакета
 
-It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
-`import mods.contenttweaker.MaterialBuilder;`
+Возможно, вам потребуется импортировать пакет, если вы столкнетесь с какими-либо проблемами, так что лучше быть безопасным чем извините и добавьте импорт.  
+`импорт mods.contenttweaker.MaterialBuilder;`
 
-## Retrieving such an object
+## Получение такого объекта
 
-You can retrieve a new, clear Builder using the [MaterialSystem Package](/Mods/ContentTweaker/Materials/MaterialSystem/):
+Вы можете получить новый, чистый строитель с помощью [пакета MaterialSystem](/Mods/ContentTweaker/Materials/MaterialSystem/):
 
 ```zenscript
 var mBuilder = mods.contenttweaker.MaterialSystem.getMaterialBuilder();
 ```
 
-## Set the Material's Properties
+## Установить свойства материала
 
-You can set these Properties
+Вы можете установить эти свойства
 
-| ZenMethod               | Parameter                                                        |
+| ZenMethod               | Параметр                                                         |
 | ----------------------- | ---------------------------------------------------------------- |
-| setName(name)           | string name                                                      |
-| setColor(color)         | int color                                                        |
+| setName(имя)            | название строки                                                  |
+| setColor(color)         | int цвет                                                         |
 | setColor(color)         | [CTColor](/Mods/ContentTweaker/Vanilla/Types/Color/Color/) color |
-| setHasEffect(hasEffect) | boolean hasEffect                                                |
+| setHasEffect(hasEffect) | булевый эффект                                                   |
 
-All these Methods do 2 things: Firstly, they change the builder's Property, secondly they return the modified builder.  
-You can see in the example scripts below what this means.
+Все эти методы делают 2 вещи: во-первых, они меняют свойство конструктора, во-вторых, они возвращают модифицированный конструктор.  
+Вы можете увидеть в примере сценарии ниже, что это означает.
 
-## Actually build the Material
+## На самом деле построить Материал
 
-Before you can build your material, you need to build it:
+Прежде чем создавать материал, необходимо его создать:
 
 ```zenscript
 mBuilder.build();
 ```
 
-This returns an [IMaterial](/Mods/ContentTweaker/Materials/Materials/Material/) Object.
+Это возвращает объект [IMaterial](/Mods/ContentTweaker/Materials/Materials/Material/).
 
-## Example Script
+## Пример скрипта
 
 ```zenscript
-import mods.contentTweaker.MaterialSystem;
+импорт mods.contentTweaker.MaterialSystem;
 
 var builder = MaterialSystem.getMaterialBuilder();
 builder.setName("Urubuntu");

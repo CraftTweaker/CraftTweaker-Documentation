@@ -1,23 +1,23 @@
-# Trait Representation
+# Merkmalsrepräsentation
 
-A Trait representation represents a Tinkers' Construct Trait.  
-You can get such an object either from the [Trait Builder](/Mods/ContentTweaker/Tinkers_Construct/TraitBuilder/) or from the [Trait Bracket Handler](/Mods/ContentTweaker/Tinkers_Construct/Brackets/Bracket_Trait/).
+Eine Merkmalsdarstellung stellt einen Tinkers' Construct Trait dar.  
+Sie können ein solches Objekt entweder vom [Merkmalsbauer](/Mods/ContentTweaker/Tinkers_Construct/TraitBuilder/) oder vom [Trait-Klammerhandler](/Mods/ContentTweaker/Tinkers_Construct/Brackets/Bracket_Trait/) erhalten.
 
 ## Diese Klasse importieren
 
-It might be required for you to import the class if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
-`import mods.contenttweaker.tconstruct.Trait`
+Möglicherweise ist es erforderlich, dass Sie die Klasse importieren, wenn Sie Probleme haben (z.B. [Array](/AdvancedFunctions/Arrays_and_Loops/)zu bearbeiten), also besser sicher sein als bedauern und fügen Sie den Import.  
+`importiere mods.contenttweaker.tconstruct.Merkmal`
 
 ## ZenGetter
 
 | ZenGetter     | Type   |
 | ------------- | ------ |
 | identifier    | string |
-| commandString | string |
+| Kommandozeile | string |
 
-## Adding trait items
+## Merkmalsartikel hinzufügen
 
-If you combine the given ingredient together with a tool in a tinker's tool forge, you can apply the trait as modifier.
+Kombiniert man die angegebene Zutat mit einem Werkzeug in der Werkzeugschmiede, kann man das Merkmal als Modifikator anwenden.
 
 ```zenscript
 //myTrait.addModifierItem(IIngredient item, @Optional(1) int amountNeeded, @Optional(1) int amountMatched));
@@ -25,12 +25,12 @@ myTrait.addModifierItem(<item:minecraft:iron_pickaxe>);
 myTrait.addModifierItem(<item:minecraft:iron_block>, 4, 2);
 ```
 
-- `item` is the item that is matched against. You can use [Item Conditions](/Vanilla/Items/Item_Conditions/) but no Transformers. 
-- `amountNeeded` is the amount of items that is matched against. You can split them over all the slots the toolforge provides, which also allows you to go above 64. In the example above, you need 4 iron blocks per addition. Defaults to 1.
-- `amountMatched` is the amount of trait points added per `amountNeeded`. In the example above four iron blocks give two trait points. Defaults to 1.
+- `Gegenstand` ist der Gegenstand, auf den man zutrifft. Sie können [Artikelbedingungen](/Vanilla/Items/Item_Conditions/) verwenden, aber keine Transformatoren. 
+- `Der benötigte Betrag` ist die Anzahl der Gegenstände, gegen die abgestimmt wird. Sie können sie über alle Slots der Toolforge aufteilen, so dass Sie auch über 64 hinausgehen können. Im obigen Beispiel benötigen Sie 4 Eisenblöcke pro Zuschlag. Standard ist 1.
+- `Betrag übereinstimmend` ist die Menge an Merkmalspunkten pro `Betrag. Benötigt`. Im obigen Beispiel geben vier Eisenblöcke zwei Merkmalspunkte. Standard ist 1.
 
-## Accessing Trait Data
+## Zugriff auf Merkmalsdaten
 
-Trait data is the data that belongs to a trait and is itemBound. As such, you can provide the [IItemStack](/Vanilla/Items/IItemStack/) and retrieve the [TraitDataRepresentation](/Mods/ContentTweaker/Tinkers_Construct/TraitDataRepresentation/) object.
+Merkmalsdaten sind Daten, die zu einem Merkmal gehören und ItemBound sind. Sie können daher den [IItemStack](/Vanilla/Items/IItemStack/) zur Verfügung stellen und das [TraitDataRepresentation](/Mods/ContentTweaker/Tinkers_Construct/TraitDataRepresentation/) Objekt abrufen.
 
     val myTraitData = myTrait.getData(itemWithTrait);

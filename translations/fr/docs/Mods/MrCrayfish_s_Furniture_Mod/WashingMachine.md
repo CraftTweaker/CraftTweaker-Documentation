@@ -1,28 +1,28 @@
-# Washing Machine
+# Machine à laver
 
-The Washing Machine allows you to clean dirty clothes.
+La machine à laver vous permet de nettoyer les vêtements sales.
 
-By default repairs durability of vanilla armour, including the Elytra.
+Par défaut, répare la durabilité de l'armure vanille, y compris l'Elytra.
 
-## Removing
+## Enlèvement
 
-## Remove matching washable items.
+## Retirer les objets lavables assortis.
 
 ```zenscript
 mods.cfm.WashingMachine.remove(@Optional final IIngredient item);
 
 mods.cfm.WashingMachine.add(<minecraft:elytra>);
 mods.cfm.WashingMachine.remove(<minecraft:chainmail_helmet>);
-mods.cfm.WashingMachine.remove(<minecraft:chainmail_chestplate>);
+mods. fm.WashingMachine.remove(<minecraft:chainmail_chestplate>);
 mods.cfm.WashingMachine.remove(<minecraft:chainmail_leggings>);
 mods.cfm.WashingMachine.remove(<minecraft:chainmail_boots>);
-// Remove all washable items.
+// Supprime tous les objets lavables.
 mods.cfm.WashingMachine.remove();
 ```
 
-## Adding
+## Ajout en cours
 
-## Add a washable item.
+## Ajouter un article lavable.
 
 ```zenscript
 mods.cfm.WashingMachine.add(@Nonnull final IItemStack item);
@@ -31,5 +31,6 @@ mods.cfm.WashingMachine.add(<minecraft:elytra>);
 mods.cfm.WashingMachine.add(<minecraft:leather_helmet>);
 mods.cfm.WashingMachine.add(<minecraft:leather_chestplate>);
 mods.cfm.WashingMachine.add(<minecraft:leather_leggings>);
-mods.cfm.WashingMachine.add(<minecraft:leather_boots>);
+mods.cfm.WashingMachine.add(<minecraft:leather_boots> ); 
+ mods.cfm.WashingMachine.add( <minecraft:leather_boots> );
 ```

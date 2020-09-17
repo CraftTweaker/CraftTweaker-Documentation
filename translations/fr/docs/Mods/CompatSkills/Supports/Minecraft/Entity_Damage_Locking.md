@@ -1,15 +1,15 @@
-# Entity Damage Locking
+# Verrouillage des dégâts d'entité
 
-## Entity-Damage Lock
+## Verrouillage des dégâts d'entité
 
-This feature allows you to lock the ability to attack/damage specific entities.
+Cette fonction vous permet de verrouiller la capacité d'attaquer/endommager des entités spécifiques.
 
-### Syntax:
+### Syntaxe :
 
-[Link to IEntityDefinition](/Vanilla/Entities/IEntityDefinition/)
+[Lien vers IEntityDefinition](/Vanilla/Entities/IEntityDefinition/)
 
-    # Blank Example:
+    # Exemple:
     mods.compatskills.EntityDamageLock.addEntityLock(IEntityDefinition definition, String... defaultRequirements);
     
-    # Working Example:
+    # Exemple de Travail :
     mods.compatskills.EntityDamageLock.addEntityLock(<entity:minecraft:zombie>, "reskillable:mining|5", "reskillable:magic|7");

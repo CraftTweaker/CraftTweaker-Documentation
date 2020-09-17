@@ -1,25 +1,25 @@
 # Vat
 
-The Vat is a machine that converts input items and fluids into an output fluid.
+La tôle est une machine qui convertit les éléments d'entrée et les fluides en un fluide de sortie.
 
-## Package
-`mods.steamagerevolution.Vat`
+## Paquet
+`VTC`
 
-## Methods
+## Méthodes
 
-- **[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) output** The result of the recipe.
-- **[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) input** Fluid input of the recipe.
-- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) inputItems** Items to input of the recipe.
-- **int craftTime** Crafting time for machine to process
+- **[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) sortie** Le résultat de la recette.
+- **[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) entrer** Entrée fluide de la recette.
+- **[Ingrédient](/Vanilla/Variable_Types/IIngredient/) inputItems** Éléments à saisir de la recette.
+- **int craftTime** Temps d'artisanat pour la machine à traiter
 
-## Adding
+## Ajout en cours
 
 ```zenscript
 mods.steamagerevolution.Vat.addRecipe(ILiquidStack[] input, IIngredient[] inputItems, ILiquidStack output, int craftTime);
-mods.steamagerevolution.Vat.addRecipe([<liquid:tin>*144, <liquid:copper>*144], [<ore:coal>, <ore:cobblestone>], <liquid:steel>*288, 200, 200);
+mods.steamagerevolution.Vat.addRecipe([<liquid:tin>*144, <liquid:copper>*144], [<ore:coal>, <ore:cobblestone> <liquid:steel>*288, 200, 200);
 ```
 
-## Removing
+## Enlèvement
 
 ```zenscript
 mods.steamagerevolution.Vat.removeRecipe(ILiquidStack output);

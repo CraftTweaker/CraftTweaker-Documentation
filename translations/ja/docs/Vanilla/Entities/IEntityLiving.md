@@ -1,22 +1,22 @@
 # IEntityLiving
 
-A living Entity is one that has health and that can die.  
-Unlike [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) however, players don't are IEnitiyLiving objects!
+  
+[IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) とは異なり、プレイヤーはIEnitiyLivingオブジェクトではありません！
 
 ## パッケージのインポート
 
 It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
 `import crafttweaker.entity.IEntityLiving;`
 
-## Extending [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/)
+## [IEntityLivingBase を拡張する](/Vanilla/Entities/IEntityLivingBase/)
 
-IEntityLiving extends [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/). That means all functions available to [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) objects also are available to IEntityLiving objects.
+IEntityLiving extends [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/). つまり、 [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) オブジェクトで使用可能なすべての関数は、IEntityLiving オブジェクトでも使用できます。
 
-## Methods
+## メソッド
 
 ### ZenGetters/ZenSetters
 
-| ZenGetter           | ZenSetter     | Type                                                      |
+| ZenGetter           | ZenSetter     | タイプ                                                       |
 | ------------------- | ------------- | --------------------------------------------------------- |
 | attackInterval      |               | int型                                                      |
 | attackTarget        | attackTarget  | [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) |
@@ -24,63 +24,63 @@ IEntityLiving extends [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/).
 | canPickUpLoot       | canPickUpLoot | bool                                                      |
 | canSpawnHere        |               | bool                                                      |
 | getLeashedToEntity  |               | [IEntity](/Vanilla/Entities/IEntity/)                     |
-| isAIDisabled        | isAIDisabled  | bool                                                      |
-| isAIDisabled        | isAIDisabled  | bool                                                      |
+| isAidisabled!       | isAidisabled! | bool                                                      |
+| isAidisabled!       | isAidisabled! | bool                                                      |
 | isColliding         |               | bool                                                      |
 | isLeashed           |               | bool                                                      |
 | isLeftHanded        | isLeftHanded  | bool                                                      |
 | isNoDespawnRequired |               | bool                                                      |
 | maxSpawnedInChunk   |               | int                                                       |
-|                     | moveForward   | float                                                     |
-|                     | moveStrafing  | float                                                     |
-|                     | moveVertival  | float                                                     |
-| renderSizeModifier  |               | float                                                     |
+|                     | 前進する          | float型                                                    |
+|                     | moveStrafing  | float型                                                    |
+|                     | 垂直方向          | float型                                                    |
+| renderSizeModifier  |               | float型                                                    |
 
 ### ZenMethods
 
-#### Play living sound
+#### ライブサウンドを再生
 
-Requires no parameters.  
-Returns nothing.
+パラメータは必要ありません。  
+何も返しません。
 
 ```zenscript
 ebtLiv.playLivingSound();
 ```
 
-#### Spawn explosion particles
+#### 爆発粒子を出現させる
 
-Requires no parameters.  
-Returns nothing.
+パラメータは必要ありません。  
+何も返しません。
 
 ```zenscript
 ebtLiv.spawnExplosionParticle();
 ```
 
-#### Set the drop chance for an Equipment Slot
+#### 装備スロットのドロップ確率を設定する
 
-Requires an [IEntityEquipmentSlot](/Vanilla/Entities/IEntityEquipmentSlot/) object and a float.  
-Returns nothing.
+[IEntityEquipmentSlot](/Vanilla/Entities/IEntityEquipmentSlot/) オブジェクトとfloatが必要です。  
+何も返しません。
 
 ```zenscript
 ebtLiv.setDropChance(IEntityEquipmentSlot slot, float chance);
 ```
 
-#### Enable Persistence
+#### 永続化を有効にする
 
-Requires no parameters.  
-Returns nothing.
+パラメータは必要ありません。  
+何も返しません。
 
 ```zenscript
 ebtLiv.enablePersistence();
 ```
 
-#### Lashes
+#### ラッシュ
 
-First method requires an [IEntity](/Vanilla/Entities/IEntity/) object, a boolean and returns nothing. Second method requires two booleans and returns nothing.  
-Third method requires an [IPlayer](/Vanilla/Players/IPlayer/) object and returns a bool.
+最初のメソッドは、 [IEntity](/Vanilla/Entities/IEntity/) オブジェクトを必要とし、真偽値を返します。 2番目のメソッドは2つの真偽値を必要とし、何も返しません。  
+3番目のメソッドは [IPlayer](/Vanilla/Players/IPlayer/) オブジェクトを必要とし、boolを返します。
 
 ```zenscript
-ebtLiv.setLeashedToEntity(IEntity enttiy, boolean sendAttachNotification);
+ebtLiv.setLeashedToEntity(IEntity enttiy, boolean AttachNotification);
 ebtLiv.clearLeashed(boolean sendPacket, boolean dropLead);
-ebtLiv.canBeLeashedTo(IPlayer player);
+ebtLiv.canBeLeashedTo(Player);
 ```

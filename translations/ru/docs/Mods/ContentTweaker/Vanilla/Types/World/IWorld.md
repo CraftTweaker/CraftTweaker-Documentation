@@ -1,28 +1,28 @@
 # IWorld
 
-An IWorld object represents the world the player is currently in.
+IWorld объект представляет мир, в котором находится игрок.
 
-## Importing the package
+## Импорт пакета
 
-It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
-`import mods.contenttweaker.World;`
+Возможно, вам потребуется импортировать пакет, если вы столкнетесь с какими-либо проблемами, так что лучше быть безопасным чем извините и добавьте импорт.  
+`импорт mods.contenttweaker.World;`
 
-## ZenMethods without parameters and ZenGetters
+## Методы без параметров и геттеры
 
-| ZenMethod          | ZenGetter     | Return type                                                    | Description                                                                                                                                                                             |
-| ------------------ | ------------- | -------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| isRemote()         | remote        | boolean                                                        | True if the world is a "slave" client; changes will not be saved or propagated from this world. For example, server worlds have this set to false, client worlds have this set to true. |
-| isRaining()        | raining       | boolean                                                        | Returns true if it is currently raining                                                                                                                                                 |
-| isThundering()     | thundering    | boolean                                                        | Returns true if it is currently thundering                                                                                                                                              |
-| getMoonPhase()     | moonPhase     | int                                                            | Returns the current moon phase                                                                                                                                                          |
-| isDayTime()        | dayTime       | boolean                                                        | Checks if it is daytime                                                                                                                                                                 |
-| getWorldTime()     | time          | long                                                           | Returns the world's time                                                                                                                                                                |
-| getDimension()     | dimension     | int                                                            | Returns the world's dimension                                                                                                                                                           |
-| isSurfaceWorld()   | surfaceWorld  | boolean                                                        | Returns whether you are in a surface world or not                                                                                                                                       |
-| getDimensionType() | dimensionType | String                                                         | Returns the dimension's type name                                                                                                                                                       |
-| getRandom()        | random        | [CTRandom](/Mods/ContentTweaker/Vanilla/Types/World/CTRandom/) | Returns the world's random number generator                                                                                                                                             |
+| ZenMethod          | Геттеры           | Возвращаемый тип                                               | Описание                                                                                                                                                                                            |
+| ------------------ | ----------------- | -------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Удалить()          | удаленный         | boolean                                                        | Правда, если мир является "рабородным" клиентом, изменения не будут сохранены или распространены из этого мира. Например, серверные миры имеют значение false, клиентские миры имеют значение true. |
+| isRaining()        | дождь             | boolean                                                        | Возвращает значение true, если дождь сейчас идёт                                                                                                                                                    |
+| isThundering()     | грабеж            | boolean                                                        | Возвращает значение true, если оно в данный момент грозит                                                                                                                                           |
+| getMoonPhase()     | Лунная Фаза       | int                                                            | Возвращает текущую фазу луны                                                                                                                                                                        |
+| isDayTime()        | dayTime           | boolean                                                        | Проверяет, есть ли дневное время                                                                                                                                                                    |
+| getWorldTime()     | время             | long                                                           | Возвращает время мира                                                                                                                                                                               |
+| getDimension()     | измерение         | int                                                            | Возвращает измерение мира                                                                                                                                                                           |
+| isSurfaceWorld()   | поверхностный мир | boolean                                                        | Возвращает ли вы в мире поверхности                                                                                                                                                                 |
+| getDimensionType() | тип измерения     | String                                                         | Возвращает имя типа размера                                                                                                                                                                         |
+| getRandom()        | случайный         | [CTRandom](/Mods/ContentTweaker/Vanilla/Types/World/CTRandom/) | Возвращает генератор случайных чисел мира                                                                                                                                                           |
 
-## ZenMethods with parameters
+## Методы с параметрами
 
 - [IBiome](/Vanilla/Biomes/IBiome/) getBiome([IBlockPos](/Mods/ContentTweaker/Vanilla/Types/Block/IBlockPos/) blockPos);
 - boolean setBlockState([ICTBlockState](/Mods/ContentTweaker/Vanilla/Types/Block/ICTBlockState/) blockState, [IBlockPos](/Mods/ContentTweaker/Vanilla/Types/Block/IBlockPos/) blockPos);

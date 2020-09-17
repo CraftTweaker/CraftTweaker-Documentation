@@ -1,14 +1,14 @@
 # IEntityEvent
 
-This interface is extended by all Events that can have a central entity.
+Diese Schnittstelle wird um alle Events erweitert, die eine zentrale Einheit haben können.
 
 ## Diese Klasse importieren
 
-It might be required to [import](/AdvancedFunctions/Import/) the class to avoid errors.  
-`import crafttweaker.event.IEntityEvent;`
+Möglicherweise muss [](/AdvancedFunctions/Import/) die Klasse importieren, um Fehler zu vermeiden.  
+`Crafttweaker.event.IEntityEvent importieren;`
 
-## What can be done with them?
+## Was kann mit ihnen geschehen?
 
-| name   | type                                  |
+| name   | typ                                   |
 | ------ | ------------------------------------- |
-| entity | [IEntity](/Vanilla/Entities/IEntity/) |
+| objekt | [IEntity](/Vanilla/Entities/IEntity/) |

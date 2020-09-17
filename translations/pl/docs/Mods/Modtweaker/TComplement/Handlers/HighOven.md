@@ -1,123 +1,123 @@
-# HighOven
+# Wysoki piec
 
-The HighOven package allows to add/remove fuels, heat recipes and mix recipes to the high oven.
+Pakiet HighOven pozwala dodawać/usuwać paliwa, receptury cieplne i mieszać receptury z piecem wysokim.
 
-## Importing the package
+## Importowanie pakietu
 
-Import the package using
+Importuj paczkę używając
 
 ```zenscript
-import mods.tcomplement.highoven.HighOven;
+importuj mods.tcomplement.highoven.HighOven;
 ```
 
-## Fuels
+## Paliwa
 
-You can add and remove fuels accepted by the high oven.
+Możesz dodawać i usuwać paliwa zaakceptowane przez piekarnik.
 
-### Removing fuels
+### Usuwanie paliw
 
 ```zenscript
-// HighOven.removeFuel(IIngredient fuel);
+// HighOven.removeFuel(ISkładnik paliwa);
 HighOven.removeFuel(<minecraft:coal:1>);
 ```
 
-### Adding fuels
+### Dodawanie paliw
 
 ```zenscript
-// HighOven.addFuel(IIngredient fuel, int time, int rate);
+// HighOven.addFuel(ISkładnik paliwa, czas int, szybkość int);
 HighOven.addFuel(<minecraft:hay_block>, 3600, 5);
 ```
 
-+ `fuel` is the fuel to add (supports transformers, NBT and fluid containers)
-+ `time` is how long the fuel lasts, in seconds
-+ `rate` is the temperature increase of the high oven when that fuel is used, in degrees per second
++ `paliwo` to paliwo do dodania (obsługuje transformatory, NBT i zbiorniki cieczy)
++ `czas` to czas trwania paliwa, w sekundach
++ `szybkość` oznacza wzrost temperatury w piecu przy użyciu tego paliwa, w stopniach na sekundę
 
-## Melting Overrides
+## Nadpisywanie topnienia
 
-You can add and remove melting overrides for the High Oven. Melting overrides, well, override the default melting behavior in the High Oven. Items normally behave the same as in the smeltery, overrides can redefine output fluid and melting temperature (only for the High Oven).
+Możesz dodawać i usuwać nadpisywanie stopni pieca. Wytapianie nadpisów, cóż, nadpisuje domyślne zachowanie topnienia w piecu High Oven. Przedmioty zwykle zachowują się tak samo, jak w hutnictwie, nadpisywanie może przedefiniować płyn wyjściowy i temperaturę topienia (tylko dla wysokiej pieca).
 
-### Removing overrides
+### Usuwanie nadpisanych
 
 ```zenscript
-// HighOven.removeMeltingOverride(ILiquidStack output, @Optional IItemStack input)
+// HighOven.removeMeltingOverride(ILiquidStack, @Optional IItemStack input)
 HighOven.removeMeltingOverride(<liquid:iron>);
 ```
 
-### Adding overrides
+### Dodawanie nadpisanych
 
-This is more interesting. Overrides specify a new behavior for items in the High Oven
+Jest to bardziej interesujące. Nadpisuje nowe zachowanie dla przedmiotów w Wysokim Piecu
 
 ```zenscript
-// HighOven.addMeltingOverride(ILiquidStack output, IIngredient input, @Optional int temp)
+// HighOven.addMeltingOverride(ILiquidStack Output, IIngredient input, @Optional int temp)
 HighOven.addMeltingOverride(<liquid:steel> * 144, <ore:ingotIron>, 2567);
 ```
 
-+ `output` the liquid and amount to produce
-+ `input` the IIngredient to smelt. Supports transformers, oredict etc.
-+ `temp` (Optional) the minimum temperature for the item to start melting in the High Oven, in Kelvin. If undefined, leave the calculation to the High Oven
++ `wyjście` płynność i ilość do wytworzenia
++ `wprowadź` IIngredient do przetapiania. Obsługuje transformatory, oredykt itp.
++ `temp` (Opcjonalnie) minimalna temperatura przedmiotu, aby rozpocząć topnienie w piecu High Oven, w Kelvin. Jeśli nie zdefiniowano, należy pozostawić obliczenia do wysokosprawnego pieca
 
-## Heat recipes
+## Przepisy na ciepło
 
-Heat recipes transform a fluid into another in the high oven tank, provided the temperature of the high oven is high enough.
+Przetwory cieplne przekształcają płyn w inny w wysokociśnieniowy zbiornik pieca, pod warunkiem że temperatura wysokociśnieniowego pieca jest wystarczająco wysoka.
 
-### Removing heat recipes
+### Usuwanie przepisów na ciepło
 
 ```zenscript
-// HighOven.removeHeatRecipe(ILiquidStack output, @Optional ILiquidStack input);
+// HighOven.removeHeatRecipe(ILiquidStack output, @Optional ILiquidStack);
 HighOven.removeHeatRecipe(<liquid:steam>);
 ```
 
-+ `output` is the output for which recipes should be disabled
-+ `input` is optionally the inputs to filter recipes with. If unspecified (or `null`), all recipes producing the supplied output will be disabled. Otherwise, only the recipe with the given input is disabled.
++ `wyjście` to wyjście którego przepisy powinny być wyłączone
++ `wejście` to opcjonalnie dane wejściowe do filtrowania receptur. Jeśli nie określono (lub `null`), wszystkie przepisy produkujące dostarczone dane wyjściowe zostaną wyłączone. W przeciwnym razie tylko przepis z danym wejściem jest wyłączony.
 
-*NOTE*: this method does **not** disable heat recipes added by ModTweaker using the next method.
+*UWAGA*: ta metoda **nie** wyłącza receptur cieplnych dodanych przez ModTweaker przy użyciu następnej metody.
 
-### Adding heat recipes
+### Dodawanie przepisów na ciepło
 
 ```zenscript
 // HighOven.addHeatRecipe(ILiquidStack output, ILiquidStack input, int temp);
 HighOven.addHeatRecipe(<liquid:iron> * 144, <liquid:lava> * 1000, 1450);
 ```
 
-+ `output` the liquid to pruduce, and in which quantity
-+ `input` the liquid to consume, and in which quantity, to produce the output quantity
-+ `temp` the minimum high oven's temperature, in Kelvin.
++ `wyjście` ciecz do upuszczenia i w jakiej ilości
++ `wejście` ciecz do zużycia i w jakiej ilości do wyprodukowania ilości wyjściowej
++ `temp` minimalna wysoka temperatura pieca w Kelvin.
 
-*Note*: the actual rate of the heat recipes scales with excess temperature
+*Uwaga*: rzeczywista szybkość przegrzania się z nadmierną temperaturą
 
-## Mix recipes
+## Mieszanie przepisów
 
-Mix recipes allow to do a kind of alchemy or alloying. When a stack melts in the high oven, if it produces the right fluid *and* the proper oxidizers, reducers and purifiers are in their dedicated slots, then a different fluid is produced.
+Wymieszane przepisy umożliwiają wykonywanie pewnego rodzaju alchemii lub stopu. Kiedy stos topnie się w wysokim piecu, jeśli wytwarza odpowiedni płyn *i* odpowiedni utleniacz, reduktory i oczyszczacze znajdują się w przeznaczonych do tego celu szczelinach, a następnie wytwarza się inny płyn.
 
-Since those recipes are complicated, adding or tweaking existing ones uses a special zen class.
+Ponieważ te przepisy są skomplikowane, dodawanie lub ulepszanie istniejących, używa specjalnej klasy zen
 
-### Removing mix recipes
+### Usuwanie przepisów dotyczących mieszania
 
-This is the easy part for mix recipes
-
-```zenscript
-// HighOven.removeMixRecipe(ILiquidStack output, @Optional ILiquidStack input);
-HighOven.removeMixRecipe(<liquid:steel>); // disable any steel-producing mix recipe
-```
-
-The arguments are the same as `removeHeatRecipe()` and the matching works the same way. Similarly to `removeHeatRecipe()`, this method will not remove recipes added by ModTweaker.
-
-### Adding mix recipes
-
-To add a mix recipe, you have to use a `MixRecipeBuilder`. You can get one using
+To jest łatwa część do mieszania przepisów
 
 ```zenscript
-import mods.tcomplements.highoven.MixRecipeBuilder;
-
-// HighOven.newMixRecipe(ILiquidStack output, ILiquidStack input, int temp);
-var builder = HighOven.newMixRecipe(<liquid:steel> * 72, <liquid:iron> * 144, 1350);
+// HighOven.removeMixRecipe(ILiquidStack output, @Optional ILiquidStack);
+HighOven.removeMixRecipe(<liquid:steel>); // wyłącz przepis na mieszankę wytwarzającą stal
 ```
 
-+ `output` is the fluid and quantity to produce
-+ `input` is the fluid and quantity to consume
-+ `temp` is the minimal temperature of the high oven for the recipe to work, in Kelvin
+Argumenty są takie same jak `removeHeatRecipe()` , a dopasowanie działa w ten sam sposób. Podobnie do `removeHeatRecipe()`, ta metoda nie usunie przepisów dodanych przez ModTweaker.
 
-Once you have a `MixRecipeBuilder`, you should add oxidizers, reducers and purifiers to it, and then register it.
+### Dodawanie przepisów dotyczących mieszanek
+
+Aby dodać przepis na mieszankę, musisz użyć `MixRecipeBuilder`. Możesz użyć jednego
+
+```zenscript
+importuj mods.tcomplements.highoven.MixRecipeBuilder;
+
+// HighOven.newMixRecipe(ILiquidStack output, ILiquidStack, temp);
+var Builder = HighOven.newMixRecipe(<liquid:steel> * 72, <liquid:iron> * 144, 1350);
+```
+
++ `wyjście` jest płynem i ilością do wytworzenia
++ `wejście` jest płynem i ilością do konsumpcji
++ `temp` to minimalna temperatura pieca do pracy w komorze Kelvin
+
+Gdy masz `MixRecipeBuilder`, powinieneś dodać do niego utleniaczy, reduktory, a następnie zarejestrować go.
 
 ```zenscript
 builder.addOxidizer(<minecraft:redstone>, 95);
@@ -127,34 +127,34 @@ builder.addPurifier(<minecraft:nether_star>, 0);
 builder.register();
 ```
 
-For a detailed documentation of what you can do with a `MixRecipeBuilder`, see its documentation.
+Aby uzyskać szczegółową dokumentację co możesz zrobić z `MixRecipeBuilder`, zobacz jego dokumentację.
 
-NOTE*: Once you have used a `MixRecipeBuilder`, you can keep modifying it and re-using it. It allows for recipe variations to be easily added.
+UWAGA*: Po użyciu `MixRecipeBuilder`możesz nadal modyfikować go i ponownie go używać. Pozwala na łatwe dodawanie wariantów receptur.
 
-**WARNING**: If no item produces the input fluid when it melts in the smeltery, then the recipe won't be visible in JEI.
+**OSTRZEŻENIE**: Jeśli żaden element nie wytwarza płynu wejściowego podczas topienia w hutni, wówczas przepis nie będzie widoczny w JEI.
 
-### Tweaking mix recipe
+### Przepis na mieszanie ulepszeń
 
-To change existing mix recipes (**including** those added by ModTweaker), you can use a `MixRecipeManager`:
+Aby zmienić istniejące przepisy mieszania (**w tym** dodane przez ModTweaker), możesz użyć `MixRecipeManager`:
 
 ```zenscript
 import mods.tcomplement.highoven.MixRecipeManager;
 
-// HighOven.manageMixRecipe(ILiquidStack output, ILiquidStack input);
+// HighOven.manageMixRecipe(ILiquidStack output, ILiquidStack);
 var manager = HighOven.manageMixRecipe(<liquid:steel>);
 ```
 
-As usual, not specifying the input (or providing `null`) result in a wildcard behavior where all input will be accepted.
+Jak zwykle, nieokreślenie danych wejściowych (lub podanie `null`skutkuje wieloznacznym zachowaniem, w którym wszystkie dane wejściowe zostaną zaakceptowane.
 
-Once you have a `MixRecipeManager` representing a particular set of mix recipe, you can prevent certain oxidizer/reducers/purifiers from being added to those recipes, *or* try to add new additives. Removals have priority on additions.
+Gdy masz `MixRecipeManager` reprezentujący konkretny zestaw przepisów dotyczących mieszania, można zapobiec dodaniu do tych przepisów niektórych utleniających/reduktorów/oczyszczarek, *lub* spróbuj dodać nowe dodatki. Usunięcia mają pierwszeństwo przed uzupełnieniami.
 
 ```zenscript
 manager.removeOxidizer(<minecraft:redstone>);
 manager.addPurifier(<minecraft:dirt>, 25);
 ```
 
-The behavior might be a little surpring at times. When you disable an additive, any additive addition that would allow what you disable will be canceled. For instance, if you add a bunch of items using a single `OreDictEntry`, then try to remove a specific `IItemStack`, it will prevent the entry from being added.
+Zachowanie może być czasami nieco surfujące. Po wyłączeniu dodatku, wszelkie dodatki pozwalające na to, co wyłączysz, zostaną anulowane. Na przykład, jeśli dodasz kilka przedmiotów za pomocą pojedynczego `OreDictEntry`, następnie spróbuj usunąć określony `IItemStack`, zapobiegnie dodaniu wpisu.
 
-This is because iternally, `OreDictEntry` are added as-is and are not converted to individual items. The only way to disable the `ItemStack` you want to forbid is to prevent the whole entry from being registered, otherwise the entry would allow the item.
+Dzieje się tak dlatego, że iteracyjnie `OreDictEntry` są dodawane w formie i nie są przekonwertowane do poszczególnych elementów. Jedynym sposobem na wyłączenie `ItemStack` , który chcesz zabronić, jest uniemożliwienie rejestracji całego wpisu, w przeciwnym razie wpis pozwalałby na pozycję.
 
 If you actually want to do add an oredict entry except some items, you'll have to do it manually by iterating on the `OreDictEntry` content and then removing the specific items (or by not adding them in the first place).

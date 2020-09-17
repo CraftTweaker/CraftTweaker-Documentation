@@ -1,83 +1,83 @@
-# Recipe Stages
+# Étapes de la recette
 
-This mod is an addon for the [GameStages API](https://minecraft.curseforge.com/projects/game-stages). Recipe Stages allows for Crafting Table Recipes to be restricted by a custom progression system. For more info, check out the mod page [here](https://minecraft.curseforge.com/projects/recipe-stages)
+Ce mod est un addon pour l'API [GameStages](https://minecraft.curseforge.com/projects/game-stages). Les étapes de recettes permettent aux recettes de tables d'artisanat d'être limitées par un système de progression personnalisé. Pour plus d'informations, consultez la page des mods [ici](https://minecraft.curseforge.com/projects/recipe-stages)
 
-## Methods
+## Méthodes
 
-Adds a shaped recipe that is locked behind a stage.
+Ajoute une recette en forme qui est verrouillée derrière une étape.
 
 ```zenscript
 //mods.recipestages.Recipes.addShaped(String stage, IItemStack output, IIngredient[][] ingredients, @Optional IRecipeFunction function, @Optional IRecipeAction action);
-//mods.recipestages.Recipes.addShaped(String name, String stage, IItemStack output, IIngredient[][] ingredients, @Optional IRecipeFunction function, @Optional IRecipeAction action);
+//mods. ecipestages.Recipes.addShaped(String name, String stage, IItemStack output, IIngredient[][] ingredients, @Optional IRecipeFunction function, @Optional IRecipeAction action);
 
-mods.recipestages.Recipes.addShaped("two", <minecraft:iron_leggings>,[[<minecraft:gold_ingot>, <minecraft:gold_ingot>, <minecraft:iron_ingot>],[<minecraft:iron_ingot>, null, <minecraft:iron_ingot>],[<minecraft:iron_ingot>, null, <minecraft:iron_ingot>]]);
-mods.recipestages.Recipes.addShaped("test", "one", <minecraft:iron_leggings>,[[<minecraft:gold_ingot>, <minecraft:iron_ingot>, <minecraft:iron_ingot>],[<minecraft:iron_ingot>, null, <minecraft:iron_ingot>],[<minecraft:iron_ingot>, null, <minecraft:iron_ingot>]]);
+mods. Recettes ddShaped("deux", <minecraft:iron_leggings>,[[<minecraft:gold_ingot>, <minecraft:gold_ingot>, <minecraft:iron_ingot>],[<minecraft:iron_ingot>, null, <minecraft:iron_ingot>],[<minecraft:iron_ingot>, null, <minecraft:iron_ingot>]]);
+mods ecipestages.Recipes.addShaped("test", "une", <minecraft:iron_leggings>,[<minecraft:gold_ingot>, <minecraft:iron_ingot>, <minecraft:iron_ingot>],[<minecraft:iron_ingot>, null, <minecraft:iron_ingot>],[<minecraft:iron_ingot>, null, <minecraft:iron_ingot>]]);
 ```
 
-Adds a mirrored shaped recipe that is locked behind a stage.
+Ajoute une recette en forme de miroir qui est verrouillée derrière une étape.
 
 ```zenscript
 //mods.recipestages.Recipes.addShapedMirrored(String stage, IItemStack output, IIngredient[][] ingredients, @Optional IRecipeFunction function, @Optional IRecipeAction action);
-//mods.recipestages.Recipes.addShapedMirrored(String name, String stage, IItemStack output, IIngredient[][] ingredients, @Optional IRecipeFunction function, @Optional IRecipeAction action);
+//mods. ecipestages.Recipes.addShapedMirrored(String name, String stage, IItemStack output, IIngredient[][] ingredients, @Optional IRecipeFunction function, @Optional IRecipeAction action);
 
-mods.recipestages.Recipes.addShapedMirrored("two", <minecraft:iron_leggings>,[[<minecraft:gold_ingot>, <minecraft:gold_ingot>, <minecraft:iron_ingot>],[<minecraft:iron_ingot>, null, <minecraft:iron_ingot>],[<minecraft:iron_ingot>, null, <minecraft:iron_ingot>]]);
-mods.recipestages.Recipes.addShapedMirrored("test_mirrored", "one", <minecraft:iron_leggings>,[[<minecraft:gold_ingot>, <minecraft:iron_ingot>, <minecraft:iron_ingot>],[<minecraft:iron_ingot>, null, <minecraft:iron_ingot>],[<minecraft:iron_ingot>, null, <minecraft:iron_ingot>]]);
+mods. Recettes ddShapedMirrored("deux", <minecraft:iron_leggings>,[[<minecraft:gold_ingot>, <minecraft:gold_ingot>, <minecraft:iron_ingot>],[<minecraft:iron_ingot>, null, <minecraft:iron_ingot>],[<minecraft:iron_ingot>, null, <minecraft:iron_ingot>]]);
+mods ecipestages.Recipes.addShapedMirrored("test_mirrored", "un", <minecraft:iron_leggings>,[<minecraft:gold_ingot>, <minecraft:iron_ingot>, <minecraft:iron_ingot>],[<minecraft:iron_ingot>, null, <minecraft:iron_ingot>],[<minecraft:iron_ingot>, null, <minecraft:iron_ingot>]]);
 
 ```
 
-Adds a shapeless recipe that is locked behind a stage.
+Ajoute une recette informe qui est verrouillée derrière une étape.
 
 ```zenscript
 //mods.recipestages.Recipes.addShapeless(String stage, IItemStack output, IIngredient[] ingredients, @Optional IRecipeFunction function, @Optional IRecipeAction action);
-//mods.recipestages.Recipes.addShapeless(String name, String stage, IItemStack output, IIngredient[] ingredients, @Optional IRecipeFunction function, @Optional IRecipeAction action);
+//mods.recipestages.Recipes. ddShapeless(String name, String stage, IItemStack output, IIngredient[] ingredients, @Optional IRecipeFunction function, @Optional IRecipeAction action);
 
-mods.recipestages.Recipes.addShapeless("one", <minecraft:diamond>, [<ore:sand>, <ore:sand>, <ore:ingotIron>, <minecraft:gold_ingot>]);
-mods.recipestages.Recipes.addShapeless("shapeless_test". "one", <minecraft:diamond>, [<ore:sand>, <ore:sand>, <ore:ingotIron>, <minecraft:gold_ingot>]);
+mods. ecipestages.Recipes.addShapeless("une", <minecraft:diamond>, [<ore:sand>, <ore:sand>, <ore:ingotIron>, <minecraft:gold_ingot>]);
+mods.recipestages.Recipes.addShapeless("shapeless_test". "un", <minecraft:diamond>, [<ore:sand>, <ore:sand>, <ore:ingotIron>, <minecraft:gold_ingot>]);
 ```
 
-Sets the stage of a non staged recipe.
+Définit l'étape d'une recette non échelonnée.
 
 ```zenscript
 //mods.recipestages.Recipes.setRecipeStage(String name, IItemStack output);
 //mods.recipestages.Recipes.setRecipeStage(String name, String recipeName);
 
 mods.recipestages.Recipes.setRecipeStage("one", <minecraft:stone_hoe>);
-mods.recipestages.Recipes.setRecipeStage("one", "minecraft:boat");
+mods.recipestages.Recipes.setRecipeStage("une", "minecraft:boat");
 ```
 
-Sets the stage of all recipes that make items from a certain mod.  
-More specifically, stages all recipes that have the given modid as resource domain.  
-Does NOT work with regex expressions, so using `.*` as argument would do nothing!
+Définit la phase de toutes les recettes qui fabriquent des objets à partir d'un certain mod.  
+Plus spécifiquement, met en scène toutes les recettes qui ont la modification donnée comme domaine de ressource.  
+Ne fonctionne PAS avec les expressions rationnelles, donc utiliser `.*` comme argument ne ferait rien !
 
 ```zenscript
 //mods.recipestages.Recipes.setRecipeStage(String name, String recipeName);
-mods.recipestages.Recipes.setRecipeStageByMod("one", "minecraft");
+mods.recipestages.Recipes.setRecipeStageByMod("une", "minecraft");
 ```
 
-Sets the stage of all recipes based on a regex check against their name.
+Définit la phase de toutes les recettes en se basant sur une vérification de regex par rapport à leur nom.
 
 ```zenscript
 //mods.recipestages.Recipes.setRecipeStageByRegex(String name, String modid);
-//This sets the stage of all recipes who's name only contains numbers to stage "one"
+//Ceci définit le stade de toutes les recettes qui ne contiennent que des nombres pour mettre en scène "un"
 
-mods.recipestages.Recipes.setRecipeStageByRegex("one", "^[0-9]*$");
+mods.recipestages.Recipes.setRecipeStageByRegex("un", "^[0-9]*$");
 ```
 
-Tells RecipeStages to print Container names to chat
+Indique à RecipeStages d'imprimer les noms de conteneur pour discuter
 
 ```zenscript
 //mods.recipestages.Recipes.setPrintContainers(boolean printContainers);
 mods.recipestages.Recipes.setPrintContainers(true);
 ```
 
-"Stages" a container, allowing it to craft recipes from certain stages
+"Étape" un contenant, lui permettant de fabriquer des recettes à partir de certaines étapes
 
 ```zenscript
-//mods.recipestages.Recipes.setContainerStage(String containerPath, String[] stages);
+//mods.recipestages.Recipes.setContainerStage(String containerPath, String[] étapes);
 mods.recipestages.Recipes.setContainerStage("primal_tech.inventory.ContainerWorkStump", "one");
 ```
 
-"Stages" a package, allowing all containers in the package to craft recipes from certain stages
+"Stages" un paquet, permettant à tous les conteneurs de l'emballage de fabriquer des recettes à partir de certaines étapes
 
 ```zenscript
 //mods.recipestages.Recipes.setPackageStage(String packageName, String[] stages);

@@ -1,13 +1,13 @@
-# Freezer
+# Zamrażarka
 
-## Package
+## Pakiet
 
 ```zenscript
-import mods.aether_legacy.Freezer;
+importuj mods.aether_legacy.Zamrażarka;
 ```
-## Usage
+## Użycie
 
 ```zenscript
-Freezer.registerFreezable(IItemStack input, IItemStack output, int timeRequired);
-Freezer.registerFreezerFuel(IItemStack input, int timeGiven);
+Freezer.registerFreezable(IItemStack Input, IItemStack output, int timeRequired);
+Freezer.registerFreezerFuel(IItemStack Input, int timeGiven);
 ```

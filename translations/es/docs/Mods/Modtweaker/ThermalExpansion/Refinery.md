@@ -1,47 +1,47 @@
-# Refinery
+# Refinería
 
-## Package
+## Paquete
 
 `mods.thermalexpansion.Refinery`
 
-## Adding a Recipe
+## Añadir una receta
 
 `Refinery.addRecipe(output, outputItem, input, energy);`
 
-- `output` <[ILiquidStack](/Vanilla/Liquids/ILiquidStack)>
+- `salida` <[ILiquidStack](/Vanilla/Liquids/ILiquidStack)>
 - `outputItem` <[WeightedItemStack](/Vanilla/Items/WeightedItemStack)>
 - `input` <[ILiquidStack](/Vanilla/Liquids/ILiquidStack)>
 - `energy` &lt;int> The total energy cost
 
 ```zenscript
-import mods.thermalexpansion.Refinery;
+importar mods.thermalexpansion.Refinery;
 
-// Adds a recipe that outputs 1mB of lava and a diamond (at a 100% chance) per 1mB of water
-Refinery.addRecipe(<liquid:lava>, <minecraft:diamond>, <liquid:water>, 50);
+// Agrega una receta que produce 1mB de lava y un diamante (con una probabilidad del 100%) por 1mB de agua
+Refinería. ddReceta(<liquid:lava>, <minecraft:diamond>, <liquid:water>, 50);
 
-// Adds a recipe that outputs 5mB of lava and a diamond (at a 1% chance) per 100mB of water
-Refinery.addRecipe(<liquid:lava> * 5, <minecraft:diamond> % 1, <liquid:water> * 100, 50);
+// Añade una receta que produce 5mB de lava y un diamante (en una oportunidad del 1%) por 100mB de agua
+Refinería. ddReceta(<liquid:lava> * 5, <minecraft:diamond> % 1, <liquid:water> * 100, 50);
 ```
 
-### Adding a Potion Recipe
+### Añadir una receta de poción
 
-Adds a recipe to be used with the Alchemical Retort Augmentation
+Añade una receta para ser usada con la Aumentación de Retorno Alquímico
 
-`Refinery.addRecipePotion(output, input, energy);`
+`Refinery.addRecipePotion(salida, entrada, energía);`
 
-- `output` <[ILiquidStack](/Vanilla/Liquids/ILiquidStack)>
+- `salida` <[ILiquidStack](/Vanilla/Liquids/ILiquidStack)>
 - `input` <[ILiquidStack](/Vanilla/Liquids/ILiquidStack)>
 - `energy` &lt;int> The total energy cost
 
 ```zenscript
 import mods.thermalexpansion.Refinery;
 
-Refinery.addRecipePotion(<liquid:potion>.withTag({Potion: "minecraft:mundane"}) * 500, <liquid:potion>.withTag({Potion: "cofhcore:leaping4"}) * 100, 100);
+Refinery.addRecipePotion(<liquid:potion>.withTag({Potion: "minecraft:mundane"}) * 500, <liquid:potion>.withTag({Potion: "cofhcore:baping4"}) * 100, 100);
 ```
 
-## Removing a Recipe
+## Eliminando una receta
 
-`Refinery.removeRecipe(input);`
+`Refinery.removeRecipe(entrada);`
 
 - `input` <[ILiquidStack](/Vanilla/Liquids/ILiquidStack)>
 
@@ -51,7 +51,7 @@ import mods.thermalexpansion.Refinery;
 Refinery.removeRecipe(<liquid:resin>);
 ```
 
-### Removing a Potion Recipe
+### Eliminar una receta de poción
 
 `Refinery.removeRecipePotion(input);`
 

@@ -1,25 +1,25 @@
-# Alloy Forge
+# 合金Forge
 
-The Alloy Forge is a machine that converts two input fluids into one output fluid.
+合金Forge是一台将两种输入液体转换成一种输出液体的机器。
 
 ## 所属包名
-`mods.steamagerevolution.AlloyForge`
+`Steamagerevolution.AlloyForge`
 
-## Methods
+## 方法
 
-- **[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) output** The result of the recipe.
-- **[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) input** The input of the recipe.
-- **int craftTime** Crafting time for machine to process
+- **[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) 输出** 该配方的结果。
+- **[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) 输入** 该配方的输入.
+- **整理时间** 机器处理的制造时间
 
 ## 添加配方
 
 ```zenscript
 mods.steamagerevolution.AlloyForge.addRecipe(ILiquidStack input, ILiquidStack input, ILiquidStack output, int craftTime);
-mods.steamagerevolution.AlloyForge.addRecipe(<liquid:water>*100, <liquid:lava>*100, <liquid:obsidian>*200, 200);
+mods.steamagerevolution.AlloyForge.addRecipe(<liquid:water>*100, <liquid:lava>*100, <liquid:obsidian>*200;
 ```
 
 
-## Removal
+## 移除
 
 ```zenscript
 mods.steamagerevolution.AlloyForge.removeRecipe(ILiquidStack output);

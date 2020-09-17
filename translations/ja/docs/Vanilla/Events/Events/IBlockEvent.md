@@ -1,20 +1,20 @@
 # IBlockEvent
 
-This interface is extended by all Events that can deal with blocks in the world.
+このインターフェイスは、世界中のブロックを扱うことができるすべてのイベントによって拡張されます。
 
-## Importing the class
+## クラスのインポート
 
-It might be required to [import](/AdvancedFunctions/Import/) the class to avoid errors.  
+エラーを避けるために、クラスを [インポート](/AdvancedFunctions/Import/) する必要があるかもしれません。  
 `import crafttweaker.event.IBlockEvent;`
 
-## Extending IEventPositionable
+## IEVPositionable の拡張
 
-This interface extends [IEventPositionable](/Vanilla/Events/Events/IEventPositionable/), which means that all functionality that IEventPositionable offers is also present in IBlockEvent
+このインターフェイスは [IEventPositionable](/Vanilla/Events/Events/IEventPositionable/)を拡張します。つまり、IEventPositionable が提供するすべての機能が IBlockEvent にも存在することを意味します。
 
 ## ZenGetters
 
-| name       | type                                        |
+| 名前         | タイプ                                         |
 | ---------- | ------------------------------------------- |
-| world      | [IWorld](/Vanilla/World/IWorld/)            |
+| 世界         | [IWorld](/Vanilla/World/IWorld/)            |
 | blockState | [IBlockState](/Vanilla/Blocks/IBlockState/) |
-| block      | [IBlock](/Vanilla/Blocks/IBlock/)           |
+| ブロック       | [IBlock](/Vanilla/Blocks/IBlock/)           |

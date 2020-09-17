@@ -1,13 +1,13 @@
-# Commands
+# Befehle
 
-ModTweaker's Thaumcraft integration extends the command palette provided by CraftTweaker.  
-To access these commands you do the same as you do for CraftTweaker commands, you use the `/crafttweaker` prefix
+Die Thaumcraft-Integration von ModTweaker erweitert die Kommandopalette von CraftTweaker.  
+Um auf diese Befehle zuzugreifen, tun Sie dasselbe wie bei CraftTweaker-Befehlen, du das `/crafttweaker` Präfix benutzt
 
-# List of Thaumcraft's Commands
+# Liste der Befehle von Thaumcraft
 
 ## thaumcraftDump
 
-Usage:
+Verwendung:
 
 `/crafttweaker thaumcraftDump`
 

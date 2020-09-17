@@ -1,25 +1,25 @@
-# IFurnaceRecipe
+# Przepis IFurnaceRecepta
 
-An ICraftingRecipe is a furnace table recipe the way ZS sees it.
+Przepis ICraftingReceptura jest recepturą na stole piecowym w sposób, w jaki ZS go widzi.
 
-## Importing the class
+## Importowanie klasy
 
-It might be required to [import](/AdvancedFunctions/Import/) the class to avoid errors.  
+Może być wymagane [importowanie](/AdvancedFunctions/Import/) klasy, aby uniknąć błędów.  
 `import crafttweaker.recipes.IFurnaceRecipe`
 
 ## ZenMethods/Getters
 
-### To String
+### Do ciągu
 
 ```zenscript
 rec.commandString;
 rec.toCommandString();
 ```
 
-### Other getters
+### Inne podmioty pobierające
 
 ```zenscript
-rec.input;
+rec.inputt;
 rec.output;
 rec.xp;
 ```

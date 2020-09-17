@@ -1,65 +1,65 @@
 # IMachineSlot
 
-A Machine slot is a slot that either accepts Items or liquids.  
-You need them when creating a machine using the [IMachineRegistry](/Mods/ExtraUtilities2/CustomMachines/IMachineRegistry) later on.
+机器栏位是一个接受物品或液体的栏位。  
+你在使用 [IMachineRegistration](/Mods/ExtraUtilities2/CustomMachines/IMachineRegistry) 稍后创建机器时需要他们。
 
 ## 导入相关包
 
-If you want to shorten method calls or encounter any issues you might need to [import](/AdvancedFunctions/Import) the package.  
-You can do so using
+如果你想要缩短方法调用或遇到任何问题，你可能需要 [导入包](/AdvancedFunctions/Import)  
+您可以使用
 
 ```zenscript
-import extrautilities2.Tweaker.IMachineSlot;
+导入 exautilities2.微弱.IMachineSlot;
 ```
 
-## Creating a new IMachineSlot
+## 创建一个新的 IMachineSlot
 
-The IMachineSlot package offers methods to create new IMachineSlot objects:
+IMachineSlot软件包提供了创建新IMachineSlot对象的方法：
 
 ```zenscript
-extrautilities2.Tweaker.IMachineSlot.newItemStackSlot(name);
-extrautilities2.Tweaker.IMachineSlot.newItemStackSlot(name, isOptional);
-extrautilities2.Tweaker.IMachineSlot.newItemStackSlot(name, stackCapacity);
-extrautilities2.Tweaker.IMachineSlot.newItemStackSlot(name, isOptional, stackCapacity);
-extrautilities2.Tweaker.IMachineSlot.newItemStackSlot(name, color, isOptional, backgroundTexture, stackCapacity);
+extrautilities2.Tweeper.IMachinet.newItemStackSlot(name);
+extrautilities2.Tweeper.IMachineSlot.newItemStackSlot(name, isOptional);
+extrautilities2.Tweeper.IMachinet.newItemStackSlot(name, stackCapacity);
+extrautilities2.Tweeker.IMachineSlot.newItemStackSlot(name, isOpal, stackCapacity);
+extrautilities2.Tiner.IMachineSlot. ewItemStackSlot(名字，颜色，非可选，背景，stackCapacity)；
 
 
-newFluidSlot(name);
-newFluidSlot(name, stackCapacity);
-newFluidSlot(name, stackCapacity, filterLiquidStack);
-newFluidSlot(name, stackCapacity, isOptional, filterLiquidStack);
-newFluidSlot(name, stackCapacity, color, isOptional, filterLiquidStack);
+newFluidSlot(名称)，
+newFluidSlot(名字，stackCapacity)；
+newFluidSlot(名字，stackCapacity，filterLiquidStack)；
+newFluidSlot(名字，stackCapacity，isOpal, filterLiquidStack)；
+newFluidSlot(名字，stackCapacity，彩色，isopic，filterLiquidStack)；
 ```
 
-All these methods will return the new Slot as IMachineSlot object.
+所有这些方法都会返回作为IMachineSlot对象的新槽。
 
-The parameters are:
+这些参数是：
 
 | 名称                | 类型                                            |
 | ----------------- | --------------------------------------------- |
 | name（名称）          | string                                        |
-| isOptional        | bool                                          |
-| stackCapacity     | int                                           |
-| color             | int                                           |
-| backgroundTexture | string                                        |
+| 是可选的              | 布尔值                                           |
+| 堆栈能力              | 整数                                            |
+| 颜色                | 整数                                            |
+| 背景纹理              | 字符串                                           |
 | filterLiquidStack | [ILiquidStack](/Vanilla/Liquids/ILiquidStack) |
 
-What the parameters do:
+参数做什么：
 
-- `name`: The slot's name. Used for recipes later. Make sure that a machine has no 2 slots with the same name.
-- `isOptional`: Dictates whether or not this slot must be filled for recipe checks to commence.
-- `stackCapacity`: How many items/millibuckets can fit in this slot?
-- `color`: What color will the slot have?
-- `backgroundTexture`: A custom texture path for the background of this slot can be added here.
-- `filterLiquidStack`: If you provide this [ILiquidStack](/Vanilla/Liquids/ILiquidStack) object, then only this fluid will be allowed to enter the slot.
+- `name`: The slot name. 用于稍后配方。 请确保机器没有具有相同名称的两个槽位。
+- `是可选的`: 是否必须填充此栏位才能启动配方检查。
+- `堆栈能力`: 在这个槽位里可以放多少个物品/毫巴克？
+- `颜色`: 插槽将有什么颜色？
+- `背景纹理`: 可以在此处添加此槽背景的自定义纹理路径。
+- `filterLiquidStack`: 如果您提供了 [ILiquidStack](/Vanilla/Liquids/ILiquidStack) 对象，那么只允许这个液体进入槽位。
 
-## Getters
+## 获取器
 
-You can get basic information from an IMachineSlot as well.  
-Don't expect these getters to magically return something different from what you set the slot when creating it, though.
+您也可以从IMachineSlot获取基本信息。  
+请不要期望这些getter们在创建插槽时返回与你设置的位置不同的魔法。
 
-| 名称            | 类型     |
-| ------------- | ------ |
-| name          | string |
-| optional      | bool   |
-| stackCapacity | int    |
+| 名称   | 类型  |
+| ---- | --- |
+| 名称   | 字符串 |
+| 可选的  | 布尔值 |
+| 堆栈能力 | 整数  |

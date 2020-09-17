@@ -1,31 +1,31 @@
-# PlayerLeftClickBlock
+# Clic izquierdo del jugador
 
-The PlayerLeftClickBlock Event is fired whenever a player left clicks a block.  
-It can be canceled to prevent any other events from taking place. If the player holds down the left click, the event will fire again even if it has been canceled. Canceling this event will prevent the left click from being registered, preventing block breaking (although not in creative mode). If the event is canceled, a specific result of success, fail or pass can be provided. By default, the result is pass.
+El Evento PlayerLeftClickBlock se activa cada vez que un jugador izquierdo hace clic en un bloque.  
+Se puede cancelar para evitar que se produzcan otros eventos. Si el jugador mantiene pulsado el botón izquierdo, el evento se disparará de nuevo incluso si ha sido cancelado. Cancelar este evento evitará que el clic izquierdo se registre, evitando la ruptura de bloques (aunque no en modo creativo). Si el evento es cancelado, se puede proporcionar un resultado específico de éxito, fallar o pasar. Por defecto, el resultado es pasado.
 
-## Event Class
-You will need to cast the event in the function header as this class:  
-`crafttweaker.event.PlayerLeftClickBlockEvent`  
-You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
+## Clase de evento
+Necesitarás lanzar el evento en la cabecera de la función como esta clase:  
+`crafttweaker.event. layerLeftClickBlockEvent`  
+Puede, por supuesto, también [importar](/AdvancedFunctions/Import/) la clase antes y utilizar ese nombre entonces.
 
-## Event interface extensions
-PlayerLeftClickBlock Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+## Extensiones de la interfaz de eventos
+Los eventos PlayerLeftClickBlock implementan las siguientes interfaces y son capaces de llamar a todos sus métodos/getters/setters también:
 
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
-- [PlayerInteract](/Vanilla/Events/Events/PlayerInteract/)
-- [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
+- [Interacto del jugador](/Vanilla/Events/Events/PlayerInteract/)
+- [Evento IJugador](/Vanilla/Events/Events/IPlayerEvent/)
 
 
 ## ZenGetters & ZenSetters
-The following information can be retrieved from the event:
+La siguiente información puede ser recuperada del evento:
 
-| ZenGetter            | ZenSetter            | type                                   |
-| -------------------- | -------------------- | -------------------------------------- |
-| `hitvector`          |                      | [ivector3d](/vanilla/world/ivector3d/) |
-| `useblock`           | `useblock`           | string ("allow" / "deny" / "default")  |
-| `useitem`            | `useitem`            | string ("allow" / "deny" / "default")  |
-| `cancellationResult` | `cancellationResult` | string ("success" / "pass" / "fail")   |
+| ZenGetter                   | Ajuste                      | tipo                                   |
+| --------------------------- | --------------------------- | -------------------------------------- |
+| `hitvector`                 |                             | [ivector3d](/vanilla/world/ivector3d/) |
+| `useblock`                  | `useblock`                  | cadena ("allow" / "deny" / "default")  |
+| `useitem`                   | `useitem`                   | cadena ("allow" / "deny" / "default")  |
+| `resultados de cancelación` | `resultados de cancelación` | string ("success" / "pass" / "fail")   |
 
-## ZenMethods
+## Métodos
 
-- `event.cancel()` sets the event as cancelled.
+- `event.cancel()` establece el evento como cancelado.

@@ -1,75 +1,75 @@
 # IWorld
 
-The IWorld object contains information on a Dimension within the game.
+Das IWorld-Objekt enthält Informationen über eine Dimension innerhalb des Spiels.
 
 ## Diese Klasse importieren
 
-It might be required to [import](/AdvancedFunctions/Import/) the class to avoid errors.  
-`import crafttweaker.world.IWorld`
+Es könnte erforderlich sein, [die Klasse](/AdvancedFunctions/Import/) zu importieren, um Fehler zu vermeiden.  
+`Crafttweaker.world.IWorld`
 
-## Extending IBlockProperties
+## Erweiterte IBlockeigenschaften
 
-IBlockState extends [IBlockAccess](/Vanilla/World/IBlockAccess/). That means that all methods that are available to [IBlockAccess](/Vanilla/World/IBlockAccess/) objects are also available to IBlockState objects.
+IBlockState erweitert [IBlockAccess](/Vanilla/World/IBlockAccess/). Das bedeutet, dass alle Methoden, die [IBlockAccess](/Vanilla/World/IBlockAccess/) Objekten zur Verfügung stehen, auch für IBlockState Objekte verfügbar sind.
 
-## Creating an IWorld object
+## Erstellen eines IWorld-Objekts
 
-Normally, you can derive this object from entities or other functions. If you need to create it yourself though, this is the way to go:  
-Note that this method should only be called inside functions that are meant to be run inside minecraft, not during the loading circle.
+Normalerweise können Sie dieses Objekt von Entitäten oder anderen Funktionen ableiten. Wenn Sie es jedoch selbst erstellen müssen dies ist der Weg, um zu gehen:  
+Beachten Sie, dass diese Methode nur innerhalb von Funktionen aufgerufen werden sollte, die in Minecraft ausgeführt werden sollen, nicht während des Laderaums.
 
 ```zenscript
 crafttweaker.world.IWorld.getFromID(int id);
 ```
 
-## ZenMethods without parameters and ZenGetters
+## ZenMethoden ohne Parameter und ZenGetters
 
-| ZenMethod          | ZenGetter     | Rückgabetyp                                      | Beschreibung                                                                                                                                                                            |
-| ------------------ | ------------- | ------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| isRemote()         | remote        | boolean                                          | True if the world is a "slave" client; changes will not be saved or propagated from this world. For example, server worlds have this set to false, client worlds have this set to true. |
-| isRaining()        | raining       | boolean                                          | Returns true if it is currently raining.                                                                                                                                                |
-| isThundering()     | thundering    | boolean                                          | Returns true if it is currently thundering.                                                                                                                                             |
-| getMoonPhase()     | moonPhase     | int                                              | Returns the current moon phase.                                                                                                                                                         |
-| isDayTime()        | dayTime       | boolean                                          | Checks if it is daytime.                                                                                                                                                                |
-| getWorldTime()     | time          | long                                             | Returns the world's time.                                                                                                                                                               |
-| getDimension()     | dimension     | int                                              | Returns the world's dimension.                                                                                                                                                          |
-| isSurfaceWorld()   | surfaceWorld  | boolean                                          | Returns whether you are in a surface world or not.                                                                                                                                      |
-| getDimensionType() | dimensionType | String                                           | Returns the dimension's type name.                                                                                                                                                      |
-| getWorldType()     | worldType     | String                                           | Returns the world's type name.                                                                                                                                                          |
-| getWorldInfo()     | worldInfo     | [IWorldInfo](/Vanilla/World/IWorldInfo/)         | Returns the world's information. Can be used to retrieve even more info on the world.                                                                                                   |
-| getProvider()      | provider      | [IWorldProvider](/Vanilla/World/IWorldProvider/) | Returns the world's provider. Can be used to retrieve even more info on the world.                                                                                                      |
+| ZenMethode         | ZenGetter       | Rückgabetyp                                      | Beschreibung                                                                                                                                                                                              |
+| ------------------ | --------------- | ------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| isRemote()         | fernbedienung   | boolean                                          | Wahr, wenn die Welt ein "Slave"-Client ist; Änderungen werden nicht aus dieser Welt gespeichert oder verbreitet. Zum Beispiel haben Server-Welten diesen Wert auf falsch, Client-Welten auf true gesetzt. |
+| isRaining()        | regnet          | boolean                                          | Gibt wahr aus, wenn es derzeit regnet.                                                                                                                                                                    |
+| isThundering()     | donnernd        | boolean                                          | Gibt wahr zurück, wenn es momentan donnernd ist.                                                                                                                                                          |
+| getMoonPhase()     | mondphase       | int                                              | Gibt die aktuelle Mondphase zurück.                                                                                                                                                                       |
+| isDayTime()        | dayTime         | boolean                                          | Prüft, ob es tagsüber ist.                                                                                                                                                                                |
+| getWorldTime()     | Zeit            | long                                             | Gibt die Zeit der Welt zurück.                                                                                                                                                                            |
+| getDimension()     | maße            | int                                              | Gibt die Dimension der Welt zurück.                                                                                                                                                                       |
+| isSurfaceWorld()   | oberflächenwelt | boolean                                          | Gibt zurück, ob Sie sich in einer Oberflächenwelt befinden oder nicht.                                                                                                                                    |
+| getDimensionType() | dimensiontyp    | String                                           | Gibt den Namen des Formattyps zurück.                                                                                                                                                                     |
+| getWorldType()     | worldType       | String                                           | Gibt den Namen des Welttyps zurück.                                                                                                                                                                       |
+| getWorldInfo()     | WorldInfo       | [IWorldInfo](/Vanilla/World/IWorldInfo/)         | Gibt die Informationen der Welt zurück. Kann verwendet werden, um noch mehr Informationen über die Welt abzurufen.                                                                                        |
+| getProvider()      | anbieter        | [IWorldProvider](/Vanilla/World/IWorldProvider/) | Gibt den weltweiten Anbieter zurück. Kann verwendet werden, um noch mehr Informationen über die Welt abzurufen.                                                                                           |
 
-## ZenMethods with parameters
+## ZenMethoden mit Parametern
 
-### Get Biome at specific Position
+### Biom an bestimmter Position abrufen
 
-Use either an [IPosition3f](/Vanilla/Utils/Position3f/) or an [IBlockPos](/Vanilla/World/IBlockPos/) object.  
-Returns an [IBiome](/Vanilla/Biomes/IBiome/) Object.
+Verwende entweder ein [IPosition3f](/Vanilla/Utils/Position3f/) oder ein [IBlockPos](/Vanilla/World/IBlockPos/) Objekt.  
+Gibt ein [IBiome](/Vanilla/Biomes/IBiome/) Objekt zurück.
 
 ```zenscript
-worldObj.getBiome(IPosition3f position);
-worldObj.getBiome(IBlockPos position);
+worldObj.getBiome(IPosition3f Position);
+worldObj.getBiome(IBlockPos Position);
 ```
 
-### Get Brightness at specific Position
+### Helligkeit an einer bestimmten Position erhalten
 
-Use either three ints or an [IBlockPos](/Vanilla/World/IBlockPos/) object. Returns an int.
+Verwende entweder drei Ints oder ein [IBlockPos](/Vanilla/World/IBlockPos/) Objekt. Gibt eine Int zurück.
 
 ```zenscript
 worldObj.getBrightness(int x, int y, int z);
-worldObj.getBrightness(IBlockPos position);
+worldObj.getBrightness(IBlockPos Position);
 ```
 
-### Get Block at specific Position
+### Block an einer bestimmten Position erhalten
 
-Use either three ints or an [IBlockPos](/Vanilla/World/IBlockPos/) object. Returns an [IBlock](/Vanilla/Blocks/IBlock/) Object.
+Verwende entweder drei Ints oder ein [IBlockPos](/Vanilla/World/IBlockPos/) Objekt. Gibt ein [IBlock](/Vanilla/Blocks/IBlock/) Objekt zurück.
 
 ```zenscript
 worldObj.getBlock(int x, int y, int z);
-worldObj.getBlock(IBlockPos position);
+worldObj.getBlock(IBlockPos Position);
 ```
 
-### Get or Set a blockState at a specific Position
+### Erhalte oder setze einen Blockstatus an einer bestimmten Position
 
-Use an [IBlockPos](/Vanilla/World/IBlockPos/) Object and for the setter also an [IBlockState](/Vanilla/Blocks/IBlockState/) Object. Optionally an [IData](/Vanilla/Data/IData/) object can be specified to define NBT data for the blockstate's TileEntity when it is set. Getter Returns an [IBlockState](/Vanilla/Blocks/IBlockState/), setter a bool.
+Verwende ein [IBlockPos](/Vanilla/World/IBlockPos/) Objekt und für den Setter auch ein [IBlockState](/Vanilla/Blocks/IBlockState/) Objekt. Optional kann ein [IData](/Vanilla/Data/IData/) Objekt angegeben werden, um NBT Daten für die TileEntity des Blockzustands zu definieren, wenn es gesetzt ist. Getter gibt einen [IBlockState](/Vanilla/Blocks/IBlockState/)zurück, setze ein Bool.
 
 ```zenscript
 worldObj.getBlockState(IBlockPos pos);
@@ -77,23 +77,35 @@ worldObj.setBlockState(IBlockState state, IBlockPos pos);
 worldObj.setBlockState(IBlockState state, IData tileEntityData, IBlockPos pos);
 ```
 
-### Spawn entity
+### Entität spawnen
 
-Use an [IEntity](/Vanilla/Entities/IEntity/) object.  
-Returns a bool that states if the spawn was successful.
+Verwende ein [IEntity](/Vanilla/Entities/IEntity/) Objekt.  
+Gibt einen Bool zurück, der angibt, ob der Spawn erfolgreich war.
 
 ```zenscript
-worldObj.spawnEntity(IEntity entity);
+worldObj.spawnEntity(IEntity);
 ```
 
 ### Get a raytrace result
 
-Use two [IVector3d](/Vanilla/World/IVector3d/) objects, and three booleans to get an [IRayTraceResult](/Vanilla/World/IRayTraceResult/).  
-**Can be null**
+Verwende zwei [IVector3d](/Vanilla/World/IVector3d/) Objekte und drei Booleans um ein [IRayTraceResult](/Vanilla/World/IRayTraceResult/)zu erhalten.  
+**Kann null sein**
 
-The first vector describes the starting point, the 2nd vector the direction and length we are searching in.  
-Only the last parameter is true by default.
+Der erste Vektor beschreibt den Ausgangspunkt, den zweiten Vektor die Richtung und die Länge, in der wir suchen.  
+Standardmäßig ist nur der letzte Parameter wahr.
 
 ```zenscript
-worldObj.rayTraceBlocks(IVector3d begin, IVector3d ray, @Optional boolean stopOnLiquid, @Optional boolean ignoreBlockWithoutBoundingBox, @Optional(true) boolean returnLastUncollidableBlock)
+worldObj.rayTraceBlocks(IVector3d beginnt, IVector3d Strahl, @Optional boolean stopOnLiquid, @Optional boolean ignoreBlockWithoutBoundingBox, @Optional(true) boolean returnLastUncollidableBlock)
+```
+
+### Hole dir den ausgewählten Block
+
+Verwenden Sie einen [IBlockPos](/Vanilla/World/IBlockPos/), ein [IRayTraceResult](/Vanilla/World/IRayTraceResult/) und einen [IPlayer](/Vanilla/Players/IPlayer/).  
+Gibt [IItemStack](/Vanilla/Items/IItemStack/)zurück.  
+**Kann ungültig sein**
+
+Ruft den IItemStack ab, der durch die Auswahl des Blocks an der Position erhalten würde.
+
+```zenscript
+worldObj.getPickedBlock(IBlockPos pos, IRayTraceResult rayTraceResult, IPlayer Player);
 ```

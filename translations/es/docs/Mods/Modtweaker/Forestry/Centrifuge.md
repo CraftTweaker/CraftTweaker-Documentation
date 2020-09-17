@@ -1,12 +1,12 @@
 # Centrifuge
 
-ModTweaker allows you to add or remove forestry Centrifuge Recipes
+ModTweaker te permite añadir o eliminar recetas forestales de Centrifuge
 
-## Calling
+## Llamando
 
 You can call the package using `mods.forestry.Centrifuge`
 
-## Recipe Removal
+## Receta eliminada
 
 ```zenscript
 //mods.forestry.Centrifuge.removeRecipe(IIngredient input);
@@ -14,9 +14,9 @@ mods.forestry.Centrifuge.removeRecipe(<forestry:bee_combs:*>);
 
 ```
 
-## Reipe Addition
+## Adición de Reipe
 
 ```zenscript
-//mods.forestry.Centrifuge.addRecipe(WeightedItemStack[] output, IItemStack ingredients, int packagingTime);
+//mods.forestry.Centrifuge.addRecipe(Salida WeightedItemStack[], ingredientes ItemStack, int packagingTime);
 mods.forestry.Centrifuge.addRecipe([(<minecraft:redstone> * 9) % 80, <minecraft:gold_ingot> % 12], <minecraft:redstone_block>, 100);
 ```

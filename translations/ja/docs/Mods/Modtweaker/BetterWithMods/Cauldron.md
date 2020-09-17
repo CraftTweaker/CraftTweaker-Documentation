@@ -1,55 +1,60 @@
-# Cauldron
+# 大釜（大釜）
 
-## Basic Recipe
+## 基本的なレシピ
 
-* Adds a Unstoked Cauldron Recipe 
+* アンステッド大釜レシピを追加する 
 
 ```zenscript
 mods.betterwithmods.Cauldron.addUnstoked(IIngredient[] inputs, IItemStack[] outputs);
-//Examples
+//例
 mods.betterwithmods.Cauldron.addUnstoked([<ore:cobblestone>],[<minecraft:stone>]);
 mods.betterwithmods.Cauldron.addUnstoked([<minecraft:dirt>],[<minecraft:grass>]);
 ```
 
-* Adds a Stoked Cauldron Recipe 
+* 貯蔵大釜レシピを追加する 
 
 ```zenscript
 mods.betterwithmods.Cauldron.addStoked(IIngredient[] inputs, IItemStack[] outputs);
-//Examples
-mods.betterwithmods.Cauldron.addStoked([<ore:cobblestone>],[<minecraft:stone>]);
+//Examps.betterwithmods.Cauldron.addStoked([
+],[<ore:cobblestone>],[<minecraft:stone>]);
 mods.betterwithmods.Cauldron.addStoked([<minecraft:dirt>],[<minecraft:grass>]);
 ```
 
-## Removal
+## 削除
 
-* Remove a Cauldron recipe based on the output ```mods.betterwithmods.Cauldron.remove(IItemStack[] outputs);```
+* 出力に基づいて大釜レシピを削除 ```mods.betterwithmods.Cauldron.remove(IItemStack[] outputs);```
 
-* Remove all Cauldron recipes ```mods.betterwithmods.Cauldron.removeAll();```
+* 全ての大釜レシピを削除 ```mods.betterwithmods.Cauldron.removeAll();```
 
-## Builder
+## ビルダー
 
-The Cauldron has a recipe builder that allows more precise control over the recipes. All previous methods are simply short cuts to using the builder.
+大釜にはレシピビルダーがあり、より正確にレシピを制御できます。 以前のすべてのメソッドはビルダーの使用に単純に短縮されます。
 
-* To create a new Cauldron builder. `mods.betterwithmods.Cauldron.builder()`
+* 新しい大釜ビルダーを作成する。 `mods.betterwithmods.Cauldron.builder()`
 
-* Cauldron methods
+* 大釜法
     
     * Sets up the inputs and outputs of the recipe  
+        buildRecipe(IIngredient[] inputs, IItemStack[] outputs)  
             buildRecipe(IIngredient[] inputs, IItemStack[] outputs)
     
-    * Sets the priority of the recipe, the lower the priority the sooner it will be crafted. Default=0.  
+    * レシピの優先度を設定すると、作成される優先度が低いほど早くなります。 Default=0.  
+        setPriority(int priority)  
             setPriority(int priority)
     
-    * Set the Heat requirements of the recipe. Heat is used to check if the recipe can be made in a stoked or unstoked cauldron. Unstoked heat = 1, Stoked heat = 2. You can add custom heat sources, and even custom heat levels using the [Heat Registry](/Mods/Modtweaker/BetterWithMods/HeatRegistry/).  
+    * レシピの熱要件を設定します。 熱を使用して、レシピがストオードロンまたはunstoked大釜で作ることができるかどうかを確認します。 Unstoked heat = 1, Stoked heat = 2. You can add custom heat sources, and even custom heat levels using the [Heat Registry](/Mods/Modtweaker/BetterWithMods/HeatRegistry/).  
+        setHeat(int heat)  
             setHeat(int heat)
     
     * Set the recipe to ignore the heat value and craft anyways  
+        setIgnoreHeat(boolean ignoreHeat)  
             setIgnoreHeat(boolean ignoreHeat)
     
     * Finalize the recipe and add it to the game  
+        build()  
             build()
 
-### Example builder usage
+### ビルダーの使用例
 
 ```zenscript
 mods.betterwithmods.Cauldron.builder()

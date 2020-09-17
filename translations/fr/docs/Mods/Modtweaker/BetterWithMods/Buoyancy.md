@@ -1,10 +1,10 @@
-# Buoyancy
+# Chantier
 
-Buoyancy effects the ability for an Item to float on water when HCBuoy is enabled in BWM.
+La flottabilité affecte la capacité d'un objet à flotter sur l'eau lorsque HCBuoy est activé en BWM.
 
-Value can be a decimal between -1 and 1 where -1 sinks directly to the bottom, 0 reaches equilibrium, 1 floats on top.
+La valeur peut être une décimale entre -1 et 1 où -1 s'épuise directement vers le bas, 0 atteint l'équilibre, 1 flottant en haut.
 
 ```zenscript
-mods.betterwithmods.Buoyancy.set(IItemStack stack, float value);
+mods.betterwithmods.Buoyancy.set(IItemStack stack, valeur flottante);
 
 ```

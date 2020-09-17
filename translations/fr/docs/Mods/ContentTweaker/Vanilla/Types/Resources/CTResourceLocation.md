@@ -1,18 +1,18 @@
-# CTResourceLocation
+# format@@0 CTResourceLocation
 
-A resource location object is used for telling minecraft where to find something. It consists of a domain and a path.
+Un objet de localisation de ressource est utilisé pour dire à minecraft où trouver quelque chose. Il se compose d'un domaine et d'un chemin.
 
-## Calling/Importing the package
+## Appel/Importation du paquet
 
-If you don't want to type out the package's whole name every time you use a static method or if you are encountering any issues with the class in general it might be required for you to [import](/AdvancedFunctions/Import/) the class:  
-`import mods.contenttweaker.ResourceLocation`
+Si vous ne voulez pas taper le nom entier du paquet à chaque fois que vous utilisez une méthode statique ou si vous rencontrez un quelconque problème avec la classe en général, il peut être nécessaire pour vous de [importer](/AdvancedFunctions/Import/) la classe :  
+`importer des mods. ontenttweaker.ResourceLocation`
 
-## ZenMethods
+## Méthodes Zen
 
-### Static methods: Create
+### Méthodes statiques : Créer
 
-Static methods are those that are called on the package itself, not on any specific object of this instance.  
-You can use this method to create a new CTResourceLocation instance:
+Les méthodes statiques sont celles qui sont appelées sur le paquet lui-même, et non sur aucun objet spécifique de cette instance.  
+Vous pouvez utiliser cette méthode pour créer une nouvelle instance CTResourceLocation :
 
 ```zenscript
 var instance = mods.contenttweaker.ResourceLocation.create("contenttweaker:item/myItem");
@@ -20,13 +20,13 @@ var instance = mods.contenttweaker.ResourceLocation.create("contenttweaker:item/
 
 ### ZenGetters
 
-ZenGetters are called on an object, not on the package itself
+ZenGetters sont appelés sur un objet, pas sur le paquet lui-même
 
 ```zenscript
-print(myLocation.domain);
+print(monemplacement) ;
 ```
 
-| ZenGetter | Type   |
-| --------- | ------ |
-| domain    | string |
-| path      | string |
+| ZenGetter      | Type de texte        |
+| -------------- | -------------------- |
+| domaine        | chaîne de caractères |
+| chemin d'accès | chaîne de caractères |

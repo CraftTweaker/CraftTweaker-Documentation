@@ -1,12 +1,12 @@
-# Chopping Board
+# チョッピングボード
 
-The Chopping Board allows you to chop up an item into many pieces of another item.
+チョッピングボードでは、他のアイテムの多くの部分にアイテムを切り分けることができます。
 
-By default only cuts bread into 6 bread slices.
+デフォルトでは、パンを 6 つのパンスライスにのみカットします。
 
-## Removing Chopping Recipes
+## チョッピングレシピの削除
 
-## Remove matching chopping recipes.
+## 一致するチョッピングレシピを削除します。
 
 ```zenscript
 mods.cfm.ChoppingBoard.remove(@Optional final IIngredient output, @Optional final IIngredient input);
@@ -17,11 +17,11 @@ mods.cfm.ChoppingBoard.remove(null,<minecraft:bread>);
 mods.cfm.ChoppingBoard.remove(<cfm:item_bread_slice>.withAmount(6));
 ```
 
-## Adding Chopping Recipes
+## チョッピングレシピの追加
 
-Add a chopping recipe.
+チョッピングレシピを追加します。
 
-## Input requires stack size of 1.
+## 入力にはスタックサイズが 1 である必要があります。
 
 ```zenscript
 mods.cfm.ChoppingBoard.addRecipe(@Nonnull final IItemStack output, @Nonnull final IItemStack input);

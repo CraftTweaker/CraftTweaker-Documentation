@@ -1,21 +1,21 @@
-# Chemical Combiner
+# 化学组合
 
-# Package
+# 所属包名
 ```zenscript
-mods.alchemistry.Combiner
+mods.alchemistry.合并器
 ```
 
 ## 方法
-- **[IItemStack](/Vanilla/Items/IItemStack/) output** - The output of the recipe.
+- **[IItemStack](/Vanilla/Items/IItemStack/) 输出** - 该配方的输出。
 
-- **[IItemStack](/Vanilla/Items/IItemStack/)[] input** - The inputs of the recipe.
+- **[IItemStack](/Vanilla/Items/IItemStack/)输入** - 该配方的输入。
 
 
 ## 添加配方
 ```zenscript
 mods.alchemistry.Combiner.addRecipe(IItemStack output, IItemstack[] input);
 mods.alchemistry.Combiner.addRecipe(<minecraft:redstone>,
-    [<alchemistry:element:5>,<alchemistry:element:5>,null,
+    [<alchemistry:element:5>,<alchemistry:element:5>, null,
      <alchemistry:element:5>]);
 ```
 
@@ -28,14 +28,14 @@ mods.alchemistry.Combiner.removeAllRecipes();
 ```
 
 
-# Game Stages Integration
+# 游戏阶段集成
 
-## New Recipes
+## 新配方
 ```zenscript
 mods.alchemistry.Combiner.addStagedRecipe(IItemStack output, IItemstack[] input, String stage);
 ```
 
-## Existing Recipe
+## 现有配方
 
 ```zenscript
 mods.alchemistry.Combiner.setAsStaged(IItemStack output, String stage);

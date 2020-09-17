@@ -1,36 +1,36 @@
-# Trait Representation
+# 特性代表
 
-A Trait representation represents a Tinkers' Construct Trait.  
-You can get such an object either from the [Trait Builder](/Mods/ContentTweaker/Tinkers_Construct/TraitBuilder/) or from the [Trait Bracket Handler](/Mods/ContentTweaker/Tinkers_Construct/Brackets/Bracket_Trait/).
+特性代表着Tinkers的构造特性。  
+您可以从 [特性生成器](/Mods/ContentTweaker/Tinkers_Construct/TraitBuilder/) 或 [特性处理器](/Mods/ContentTweaker/Tinkers_Construct/Brackets/Bracket_Trait/) 获取这样一个对象。
 
 ## 导入类
 
-It might be required for you to import the class if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
-`import mods.contenttweaker.tconstruct.Trait`
+如果您遇到任何问题，可能需要导入类 (例如铸造一个 [数组](/AdvancedFunctions/Arrays_and_Loops/)) 这样比抱歉更安全并添加导入。  
+`导入mods.contenttweaker.tconstruct.Trait`
 
 ## ZenGetter
 
-| ZenGetter     | 类型     |
-| ------------- | ------ |
-| identifier    | string |
-| commandString | string |
+| ZenGetter            | 类型     |
+| -------------------- | ------ |
+| identifier           | string |
+| commandString #命令字符串 | string |
 
-## Adding trait items
+## 添加特性项目
 
-If you combine the given ingredient together with a tool in a tinker's tool forge, you can apply the trait as modifier.
+如果你将给定的成分与工具一起编织在一只修饰工具中，你可以将特性应用为修饰器。
 
 ```zenscript
-//myTrait.addModifierItem(IIngredient item, @Optional(1) int amountNeeded, @Optional(1) int amountMatched));
+//myTrait.addModifierItem(Iongredient item, @Optional(1) int amountNeed, @Optional(1) int amountMatched));
 myTrait.addModifierItem(<item:minecraft:iron_pickaxe>);
-myTrait.addModifierItem(<item:minecraft:iron_block>, 4, 2);
+myTrait.addModifierItem(<item:minecraft:iron_block>, 4, 2)
 ```
 
-- `item` is the item that is matched against. You can use [Item Conditions](/Vanilla/Items/Item_Conditions/) but no Transformers. 
-- `amountNeeded` is the amount of items that is matched against. You can split them over all the slots the toolforge provides, which also allows you to go above 64. In the example above, you need 4 iron blocks per addition. Defaults to 1.
-- `amountMatched` is the amount of trait points added per `amountNeeded`. In the example above four iron blocks give two trait points. Defaults to 1.
+- `项目` 是匹配的物品。 您可以使用 [项目条件](/Vanilla/Items/Item_Conditions/) 但没有变压器。 
+- `数量` 是匹配的项目数量。 你可以将它们拆分到工具构造提供的所有位置，这也允许你超过64。 在上面的示例中，你需要每个添加4个铁块。 默认值为 1。
+- `数量匹配` 是按 `数量添加的特性点数量`。 在上面的例子中，四个铁块给出了两个特性点。 默认值为 1。
 
-## Accessing Trait Data
+## 访问特性数据
 
-Trait data is the data that belongs to a trait and is itemBound. As such, you can provide the [IItemStack](/Vanilla/Items/IItemStack/) and retrieve the [TraitDataRepresentation](/Mods/ContentTweaker/Tinkers_Construct/TraitDataRepresentation/) object.
+特性数据是属于特性且是物品绑定的数据。 因此，您可以提供 [IItemStack](/Vanilla/Items/IItemStack/) 并检索 [TraitDataRepresentation](/Mods/ContentTweaker/Tinkers_Construct/TraitDataRepresentation/) 对象。
 
-    val myTraitData = myTrait.getData(itemWithTrait);
+    val myTraitData = myTrait.getData(itemWtrait)；

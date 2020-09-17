@@ -7,10 +7,10 @@ import mods.roots.Ritual;
 #### 方法
 
 ```zenscript
-void modifyRitual(
-  string name,         // the name of the ritual whose ingredients you wish to modify
-  IIngredient[] inputs // a list of five ingredients (no more, no less)
-);
+无效的修饰符(
+  字符串名称 // 您希望修改其成分的
+  IIngredient[输入// 五个成分的列表(不再多于) 不少
+)；
 ```
 
 * * *

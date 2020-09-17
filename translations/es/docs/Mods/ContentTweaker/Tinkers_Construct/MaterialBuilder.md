@@ -1,60 +1,60 @@
-# Material Builder
+# Constructor de material
 
-Using this package you can create materials that you can then create tools with!
+¡Usando este paquete puedes crear materiales con los que puedes crear herramientas!
 
 ## Importar la clase
 
-It might be required for you to import the class if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
-`import mods.contenttweaker.tconstruct.MaterialBuilder;`
+Podría ser necesario que importes la clase si encuentras algún problema (como lanzar un [array](/AdvancedFunctions/Arrays_and_Loops/)), más vale estar seguro que lo siento y añadir la importación.  
+`importar mods.contenttweaker.tconstruct.MaterialBuilder;`
 
-## Creating a Material
+## Creando un Material
 
-First and foremost you will need to create a Material Builder.  
-This can be done using the static create method.
+En primer lugar, necesitará crear un Constructor de Material  
+Esto puede hacerse utilizando el método de creación estática.
 
 ```zenscript
 //mods.contenttweaker.tconstruct.MaterialBuilder.create(String identifier);
 val myMat = mods.contenttweaker.tconstruct.MaterialBuilder.create("kindlich_mat");
 ```
 
-Remember, that you will need to register the material after you've done your changes.  
-This can be done with the `register` method which will return a [Material Representation](/Mods/ContentTweaker/Tinkers_Construct/Material/) of the new Material.
+Recuerda que necesitarás registrar el material después de que hayas realizado tus cambios.  
+Esto puede hacerse con el método `register` que devolverá una [Representación de Material](/Mods/ContentTweaker/Tinkers_Construct/Material/) del nuevo Material.
 
 ```zenscript
-myMat.register();
+miMat.register();
 ```
 
-## Properties
+## Propiedades
 
-You can set and get these properties using `myMaterial.name`.
+Puede configurar y obtener estas propiedades usando `myMaterial.name`.
 
-| Property           | Type                                             | Additional notes                                             |
-| ------------------ | ------------------------------------------------ | ------------------------------------------------------------ |
-| identifier         | string                                           | Unique name                                                  |
-| color              | int                                              |                                                              |
-| hidden             | bool                                             |                                                              |
-| liquid             | [ILiquidStack](/Vanilla/Liquids/ILiquidStack/)   | Smeltery output                                              |
-| craftable          | bool                                             | Can be created in the part builder                           |
-| castable           | bool                                             | Can be created using casts. Requires liquid to be set!       |
-| representativeItem | [IItemStack](/Vanilla/Items/IItemStack/)         | Shown item in the tinkers' manual                            |
-| representativeOre  | [IOreDictEntry](/Vanilla/OreDict/IOreDictEntry/) | Shown if representativeItem is null                          |
-| shard              | [IItemStack](/Vanilla/Items/IItemStack/)         | Used instead of the tinker's shard item in the part builder. |
-| localizedName      | string                                           | The shown name                                               |
+| Propiedad               | Tipo                                                  | Notas adicionales                                                           |
+| ----------------------- | ----------------------------------------------------- | --------------------------------------------------------------------------- |
+| identifier              | cadena                                                | Nombre único                                                                |
+| color                   | int                                                   |                                                                             |
+| hidden                  | pluma                                                 |                                                                             |
+| líquido                 | [ILiquidStack](/Vanilla/Liquids/ILiquidStack/)        | Salida de Fundición                                                         |
+| mesa de trabajo         | pluma                                                 | Se puede crear en el constructor de piezas                                  |
+| castable                | pluma                                                 | Se puede crear usando lanzamientos. ¡Requiere que se establezca el líquido! |
+| elemento representativo | [IItemStack](/Vanilla/Items/IItemStack/)              | Mostrar elemento en el manual de los tiradores                              |
+| minero representativo   | [Entrada IreDictada](/Vanilla/OreDict/IOreDictEntry/) | Mostrar si representativeItem es nulo                                       |
+| fragmento               | [IItemStack](/Vanilla/Items/IItemStack/)              | Usado en lugar del fragmento del tinker en el constructor de piezas.        |
+| localizedName           | cadena                                                | El nombre mostrado                                                          |
 
-## Calculated Properties
+## Propiedades calculadas
 
-### ItemLocalizer
+### ItemLocalizador
 
-You can use this function to calculate the material names if you need that to be the case.  
-Uses a [Material Representation](/Mods/ContentTweaker/Tinkers_Construct/Material/) of this material and the name of the tool that's being renamed (e.g. "Mattock")
+Puede utilizar esta función para calcular los nombres de los materiales si necesita que sea el caso.  
+Utiliza una [Representación de Material](/Mods/ContentTweaker/Tinkers_Construct/Material/) de este material y el nombre de la herramienta que está siendo renombrada (por ejemplo, "Mattock")
 
 ```zenscript
 myMAt.itemLocalizer = function(thisMaterial, itemName){return "Cool " + itemName;};
 ```
 
-## Add Material Items
+## Añadir elementos de material
 
-If you use the given item in the part builder, you can set how many materialpoints that will give, or how much the item will repair.
+Si utiliza el elemento dado en el constructor de piezas, puedes establecer cuántos puntos materiales darán o cuánto reparará el objeto.
 
 ```zenscript
 //myMaterial.addItem(IIngredient item, @Optional(1) int amountNeeded, @Optional(144) int amountMatched));
@@ -65,26 +65,26 @@ myMaterial.addItem(<item:minecraft:iron_block>, 4, 288);
 myMaterial.removeItem(<minecraft:iron_block>);
 ```
 
-- `item` is the item that is matched against. You can use [Item Conditions](/Vanilla/Items/Item_Conditions/) but no Transformers. 
-- `amountNeeded` is the amount of items that is matched against. You can split them over all the slots the toolforge provides, which also allows you to go above 64. In the second example above, you need 4 iron blocks per addition. Defaults to 1.
-- `amountMatched` is the amount of material points added per `amountNeeded`. In the second example above four iron blocks give two material points. Defaults to 144 (one ingot/one Material value).
-- If you use the `remove function`, it will remove all trait ingredients that match for the item.
+- `elemento` es el elemento que coincide en su lugar. Puede utilizar [Condiciones del artículo](/Vanilla/Items/Item_Conditions/) pero sin Transformadores. 
+- `la cantidad requerida` es la cantidad de artículos que coinciden en contra. Puede dividirlos entre todas las ranuras que proporciona la forja de herramientas, lo que también le permite ir por encima de 64. En el segundo ejemplo anterior, se necesitan 4 bloques de hierro por adición. Por defecto es 1.
+- `monto coincidente` es la cantidad de puntos materiales añadidos por `cantidad necesaria`. En el segundo ejemplo de arriba cuatro bloques de hierro dan dos puntos materiales. Por defecto es 144 (un valor de ingot/un material).
+- Si usas la función `remover`, se eliminarán todos los ingredientes característicos que coincidan con el objeto.
 
-## Material Traits
+## Rasgos del material
 
-You can add a trait to the material.  
-All items made from this material will then have this trait.  
-Uses a String with the identifier of the trait, and an optional `dependency` string which will tell you which itemTypes should be affected by the trait.  
-Alternatively, you can use a [Trait Representation](/Mods/ContentTweaker/Tinkers_Construct/Trait/), though that only works if the trait is already initialized by the time CoT runs (so most likely only for custom traits). Possible values for `dependency` are:
+Puedes añadir un rasgo al material.  
+Todos los artículos fabricados con este material tendrán este rasgo.  
+Usa una Cadena con el identificador del rasgo, y una cadena de `dependencia` opcional que te dirá qué tipo de elemento debe ser afectado por el rasgo.  
+Alternativamente, puedes usar una [Representación de rasgos](/Mods/ContentTweaker/Tinkers_Construct/Trait/), , que sólo funciona si el rasgo ya está inicializado por el tiempo en que se ejecuta CoT (lo más probable es que sólo para rasgos personalizados). Los valores posibles para la dependencia `` son:
 
-- `null` (default) → All items, unless that dep already has other traits.
-- `"head"`
+- `null` (por defecto) → Todos los elementos, a menos que ese dep ya tenga otros rasgos.
+- `"cabeza"`
 - `"handle"`
 - `"extra"`
-- `"bow"`
+- `"arco"`
 - `"bowstring"`
-- `"projectile"`
-- `"shaft"`
+- `"proyectil"`
+- `"Shaft"`
 - `"fletching"`
 
 ```zenscript
@@ -92,9 +92,9 @@ myMaterial.addMaterialTrait("fiery");
 myMaterial.addMaterialTrait("fiery", "bowstring");
 ```
 
-You can remove materialTraits as well (which is especially useful when doing batch materials).  
-You remove them using their identifier string and an optional dependency.  
-If you omit the dependency or use `null` all traits with that identifier will be removed.
+También puedes eliminar los rasgos materiales (que es especialmente útil al realizar los materiales por lotes).  
+Los quita usando su cadena de identificador y una dependencia opcional.  
+Si omites la dependencia o utilizas `null` todos los rasgos con ese identificador serán removidos.
 
 ```zenscript
 //myMaterial.remove(String identifier, @Optional String dependency);
@@ -102,13 +102,13 @@ myMaterial.remove("cactus");
 myMaterial.remove("cactus", "bowstring");
 ```
 
-## Material Stats
+## Estadísticas del material
 
-In order for TiCon to build your materials, it needs to know the material stats.  
-Only tooltypes whose stat has been added will be built!
+Para que TiCon construya sus materiales, necesita conocer las estadísticas del material.  
+¡Solo se construirán los tipos de herramientas cuya estadística ha sido añadida!
 
 ```zenscript
-<br />myMat.addHeadMaterialStats(int durability, float miningSpeed, float attackDamage, int harvestLevel);
+<br /><br />myMat.addHeadMaterialStats(int durability, float miningSpeed, float attackDamage, int harvestLevel);
 myMat.removeHeadMaterialStats();
 
 
@@ -140,7 +140,7 @@ myMat.addProjectileMaterialStats();
 myMat.removeProjectileMaterialStats();
 ```
 
-## Example
+## Ejemplo
 
 ```zenscript
 #loader contenttweaker
@@ -149,26 +149,26 @@ myMat.removeProjectileMaterialStats();
 val testMat = mods.contenttweaker.tconstruct.MaterialBuilder.create("kindlich_mat");
 testMat.color = 0x8e661b;
 testMat.craftable = true;
-testMat.liquid = <liquid:lava>;
+testMat. iquid = <liquid:lava>;
 testMat.castable = true;
 testMat.addItem(<item:minecraft:comparator>);
-testMat.addItem(<item:minecraft:repeater>, 1, 2);
+testMat. ddItem(<item:minecraft:repeater>, 1, 2);
 testMat.addItem(<item:minecraft:red_flower:4>);
 testMat.representativeItem = <item:minecraft:red_flower:4>;
-testMat.addHeadMaterialStats(100, 1.5f, 5.5f, 5);
+testMat. ddHeadMaterialStats(100, 1.5f, 5.5f, 5);
 testMat.addHandleMaterialStats(0.3, 500);
 testMat.addBowStringMaterialStats(0.5f);
 testMat.addMaterialTrait(<ticontrait:kindlich_test>, "bowstring");
-testMat.addMaterialTrait(<ticontrait:kindlich_test>, "head");
-testMat.addMaterialTrait("blasting", "bowstring");
-testMat.addMaterialTrait("blasting", "head");
+testMat. ddMaterialTrait(<ticontrait:kindlich_test>, "cabeza");
+testMat.addMaterialTrait("explasting", "bowstring");
+testMat. ddMaterialTrait("blasting", "head");
 
-//null (or not specifying that parameter at all) means that this is a default trait.
-//Default traits are only queried when no other traits are added to that material type.
-//In this case, the dense trait will only be on toolrods, because bowstrings and heads already have other traits.
+//null (o no especificar ese parámetro) significa que este es un rasgo predeterminado.
+//Los rasgos por defecto sólo se consultan cuando no se añaden otros rasgos a ese tipo de material.
+//En este caso, el rasgo denso sólo estará en las barras de herramientas, porque las cuerdas de arco y las cabezas ya tienen otras características.
 testMat.addMaterialTrait("dense", null);
 
-//Faulty, should error, though only during init, as then the strings will be checked.
+//Faulty, debería error, aunque solo durante init, ya que entonces las cadenas serán verificadas.
 testMat.addMaterialTrait("dance", null);
 
 testMat.itemLocalizer = function(thisMaterial, itemName){return "Cool " + itemName;};

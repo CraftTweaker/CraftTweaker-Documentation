@@ -1,34 +1,34 @@
-# Thermoelectric
-The Thermoelectric package can be used to register or unregister temperatures for blocks to allow them to power the Immersive Engineering Thermoelectric Generator. Liquids inherently have a temperature, so they do not and cannot be registered. Temperatures are in Kelvin.
+# Termoeléctrico
+El paquete Thermoeléctrico puede utilizarse para registrar o anular temperaturas para bloques que les permitan alimentar el Generador Termoeléctrico Inmersivo de Ingeniería. Los líquidos inherentemente tienen una temperatura, por lo que no se pueden y no se pueden registrar. Las temperaturas están en Kelvin.
 
-## Calling The Package
-You can call the Thermoelectric package using `mods.immersiveengineering.Thermoelectric`.
+## Llamar al paquete
+Puede llamar al paquete Thermoelectric usando `mods.immersiveengineering.Thermoelectric`.
 
-## Add Temperature Source
+## Añadir fuente de temperatura
 
-| Required | Type            | Data Type                                           |
-| -------- | --------------- | --------------------------------------------------- |
-| Required | Target Block    | [IIngredient](/Vanilla/Variable_Types/IIngredient/) |
-| Required | Temperature (K) | Integer                                             |
+| Requerido | Tipo              | Tipo de Datos                                         |
+| --------- | ----------------- | ----------------------------------------------------- |
+| Requerido | Bloque de destino | [IIngredientes](/Vanilla/Variable_Types/IIngredient/) |
+| Requerido | Temperatura (K)   | Entero                                                |
 
-### Example
+### Ejemplo
 ```zenscript
-//Example:
-mods.immersiveengineering.Thermoelectric.addTemperatureSource(IIngredient source, int temperature);
+//Ejemplo:
+mods.immersiveengineering.Thermoelectric.addTemperatureSource(fuente IIngredient, int temperature);
 
 mods.immersiveengineering.Thermoelectric.addTemperatureSource(<minecraft:obsidian>, 1272);
 ```
 
 
-## Remove Temperature Source
+## Eliminar fuente de temperatura
 
-| Required | Type         | Data Type                                           |
-| -------- | ------------ | --------------------------------------------------- |
-| Required | Target Block | [IIngredient](/Vanilla/Variable_Types/IIngredient/) |
+| Requerido | Tipo              | Tipo de Datos                                         |
+| --------- | ----------------- | ----------------------------------------------------- |
+| Requerido | Bloque de destino | [IIngredientes](/Vanilla/Variable_Types/IIngredient/) |
 
-### Example
+### Ejemplo
 ```zenscript
-//Example:
+//Ejemplo:
 mods.immersiveengineering.Thermoelectric.removeTemperatureSource(IIngredient source);
 
 mods.immersiveengineering.Thermoelectric.removeTemperatureSource(<minecraft:obsidian>);

@@ -1,6 +1,6 @@
-# Reassembly Chamber
+# Патронник Ремонта
 
-## Package
+## Пакет
 ```zenscript
 import mods.calculator.reassemblyChamber;
 ```
@@ -8,13 +8,13 @@ import mods.calculator.reassemblyChamber;
 ## Методы
 
 - **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input** The input.
-- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) output** The output.
+- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) output** Выход.
 
-## Addition
+## Сложение
 ```zenscript
 reassemblyChamber.addRecipe(IIngredient input, IIngredient output);
 ```
-## Removal
+## Удаление
 ```zenscript
 
 reassemblyChamber.removeRecipe(IIngredient output);

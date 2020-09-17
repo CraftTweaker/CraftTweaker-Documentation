@@ -57,8 +57,8 @@ defObj.getTickRate(IWorld world);
 
 ### canPlaceBlockAt, canPlaceBlockOnSide
 
-Uses an [IWorld](/Vanilla/World/IWorld/) object, an [IBlockPos](/Vanilla/World/IBlockPos/) object and, depending on the method used, also an [IFacing](/Vanilla/World/IFacing/) object.  
-Returns a bool.
+Использует объект [IWorld](/Vanilla/World/IWorld/) , объект [IBlockPos](/Vanilla/World/IBlockPos/) и в зависимости от используемого метода также объект [IFacing](/Vanilla/World/IFacing/) .  
+Возвращает бул.
 
 ```zenscript
 defObj.canPlaceBlockOnSide(IWorld world, IBlockPos pos, IFacing facing);
@@ -81,4 +81,13 @@ defObj.getSlipperiness(IBlockState state, IBlockAccess access, IBlockPos pos, @O
 
 ```zenscript
 defObj.setHarvestLevel(string toolclass, int level);
+```
+
+### Получить состояние блока метаданными
+
+Использует int.  
+возвращает [IBlockState](/Vanilla/Blocks/IBlockState/)
+
+```zenscript
+defObj.getStateFromMeta(int meta);
 ```

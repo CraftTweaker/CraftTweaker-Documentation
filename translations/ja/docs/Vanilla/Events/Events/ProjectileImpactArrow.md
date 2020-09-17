@@ -1,42 +1,42 @@
 # ProjectileImpactArrow
 
-This event is fired whenever an arrow projectile impacts an entity but before damage, etc, is calculated. It is **cancelable**, and if canceled, the impact will not be processed.
+このイベントは、矢印発射体がエンティティに影響を与えてもダメージ前などが計算されるたびに発生します。 **キャンセル可能**であり、キャンセルされた場合、影響は処理されません。
 
-Various values from the arrow entity are available through zengetters, and can be modified in order to adjust damage, knockback strength, pickup status, and determine (or force) a critical hit.
+矢印エンティティの様々な値はzengettersを介して利用可能で、損傷を調整するために変更することができます。 ノックバック・強さ、ピックアップ・ステータス、決定(または強制)クリティカルヒット。
 
-## Importing the class
-It might be required to [import](/AdvancedFunctions/Import/) the class to avoid errors.  
+## クラスのインポート
+エラーを避けるには、クラスを [インポート](/AdvancedFunctions/Import/) する必要があります。  
 `import crafttweaker.event.ProjectileImpactArrowEvent;`
 
-## Extending IEntityEvent
-ProjectileImpactArrow Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+## IEntityEvent の拡張
+ProjectileImpactArrow Events 以下のインターフェイスを実装し、それらのメソッド/getters/setters/settersも同様に呼び出すことができます。
 
 - [IProjectileEvent](/Vanilla/Events/Events/IProjectileEvent/)
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 
-## ZenGetters and ZenSetters
+## ZenGettersとZenSetters
 
-The following information can be retrieved from the event:
+イベントから次の情報を取得できます。
 
-| ZenGetter      | ZenSetter           | Type                                  |
-| -------------- | ------------------- | ------------------------------------- |
-| `arrow`        |                     | [IEntity](/Vanilla/Entities/IEntity/) |
-| `shooter`      |                     | [IEntity](/Vanilla/Entities/IEntity/) |
-| `damage`       | `damage`            | double型                               |
-|                | `knockbackStrength` | int (setter only, no getter)          |
-| `isCritical`   | `isCritical`        | boolean                               |
-| `pickupStatus` |                     | String                                |
+| ZenGetter      | ZenSetter    | タイプ                                   |
+| -------------- | ------------ | ------------------------------------- |
+| `矢印`           |              | [IEntity](/Vanilla/Entities/IEntity/) |
+| `シューティング`      |              | [IEntity](/Vanilla/Entities/IEntity/) |
+| `ダメージ`         | `ダメージ`       | double型                               |
+|                | `ノックバックの力`   | int (setter only, no getter)          |
+| `isCritical`   | `isCritical` | boolean型                              |
+| `pickupStatus` |              | 文字列型                                  |
 
-## Additional methods
+## 追加の方法
 
 - `setPickupDisallowed()`
 
-Prevents the arrow from being picked up under any circumstances.
+どんな状況下でも矢が拾われないようにします。
 
 - `setPickupAllowed()`
 
-Allows the arrow to be picked up from where the entity landed.
+エンティティが着陸した場所から矢印を拾うことができます。
 
 - `setPickupCreative()`
 
-Only allows the arrow to be picked up if the player is in creative mode.
+プレイヤーがクリエイティブモードの場合にのみ矢印を取得できます。

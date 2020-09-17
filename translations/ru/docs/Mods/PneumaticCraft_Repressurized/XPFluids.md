@@ -1,43 +1,43 @@
 # XP Fluids
 
-XP Fluids are used in PneumaticCraft: Repressurized by the Aerial Interface, a powerful block which can remotely interface with a linked player. XP Fluids pumped into the Aerial Interface are converted to player experience levels, and XP Fluids pumped out are drawn from the player's experience.
+Испытательные флюиды используются в PneumaticCraft: Repressurized by the Aerial Interface, a powerful block which can remotely interface with the linked player. Опыт жидкостей, перекатываемых в аэроинтерфейс, преобразуется в уровни опыта игроков, а XP Fluids выкатываются из опыта игрока.
 
-By default, the following fluids are recognized by the Aerial Interface:
+По умолчанию следующие жидкости распознаются Аэровым интерфейсом:
 
 * XP Juice (EnderIO, Cyclic, Openblocks)
-* Essence of Knowledge (Thermal Expansion)
-* Mob Essence (Industrial Foregoing)
+* Эссенция знаний (тепловое расширение)
+* Эссенция моба (Промышленное прогнозирование)
 
-This package allows arbitrary other fluids to be used by the Aerial Interface as XP fluids, or for existing XP fluids to be deregistered.
+Этот пакет позволяет использовать другие произвольные жидкости в Aerial Interface в качестве XP жидкостей, или дерегистрацию существующих XP жидкостей.
 
-## Calling
+## Звонок
 
-You can call the XP Fluids package using `mods.pneumaticcraft.xpfluid`.
+Вы можете вызвать пакет Fluids с помощью `mods.pneumaticcraft.xpfluid`.
 
-## Removing
+## Удаление
 
-This function deregisters the [ILiquidStack](/Vanilla/Liquids/ILiquidStack/) `fluid`:
+Эта функция дерегистрирует [ILiquidStack](/Vanilla/Liquids/ILiquidStack/) `fluid`:
 
 ```zenscript
 mods.pneumaticcraft.xpfluid.removeXPFluid(ILiquidStack fluid);
-// Example
+// Пример
 mods.pneumaticcraft.xpfluid.removeXPFluid(<liquid:xpjuice>);
 ```
 
-This function deregisters *all* known XP fluids:
+Эта функция дерегистрирует *все* известные XP жидкости:
 
 ```zenscript
 mods.pneumaticcraft.xpfluid.removeAllXPFluids();
 ```
 
-## Adding
+## Добавление
 
-This function can be used to register fluids as XP fluids:
+Эта функция может использоваться для регистрации жидкостей в качестве XP жидкости:
 
 ```zenscript
-// Register a liquid as an XP fluid. xpRatio defines the amount of player XP per millibucket of fluid.
+// Регистрируем жидкость в виде XP . xpRatio определяет количество XP игрока на миллиметр жидкости.
 mods.pneumaticcraft.xpfluid.addXPFluid(ILiquidStack fluid, double ratio);
 
-// Example: register LPG as an XP fluid worth 10 XP per mB
+// Пример: зарегистрировать LPG как XP жидкости стоимостью 10 XP за мБ
 mods.pneumaticcraft.xpfluid.addXPFluid(<liquid:lpg>, 10);
 ```

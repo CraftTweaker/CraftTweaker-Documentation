@@ -1,36 +1,36 @@
 # IOreDictEntry
 
-When the [IOreDict](/Vanilla/OreDict/IOreDict/) is the lexicon, the IOreDictEntries are the lexicon's entries.  
-They consist of a name (OreDictionary name) and an explanation (all matching items).
+Когда [IOreDict](/Vanilla/OreDict/IOreDict/) является лексиконом, IOreDictEntries являются записями лексикона.  
+Они состоят из имени (названия словаря) и объяснения (все соответствующие элементы).
 
-## Importing the package
+## Импорт пакета
 
-It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
+Возможно, вам потребуется импортировать пакет, если вы столкнетесь с какими-либо проблемами (например, наложение [массива](/AdvancedFunctions/Arrays_and_Loops/)), так что лучше быть безопасным, чем извините и добавить импорт.  
 `import crafttweaker.oredict.IOreDictEntry;`
 
-## Retrieving such an Object.
+## Получение такого объекта.
 
-There are multiple ways of getting an IOreDictEntry Object: If you refer to an oreDict that does not yet exist, it will be created.
+Существует множество способов получения IOreDictEntry объекта: Если вы ссылаетесь на oreDict, который еще не существует, он будет создан.
 
-- Using the [IOreDict](/Vanilla/OreDict/IOreDict/) class.
-- Using the [ore Bracket Handler](/Vanilla/Brackets/Bracket_Ore/).
-- Using an [IItemDefinition's `ores` getter](/Vanilla/Items/IItemDefinition/).
+- Используя класс [IOreDict](/Vanilla/OreDict/IOreDict/).
+- Использование обработчика руд [](/Vanilla/Brackets/Bracket_Ore/).
+- Используя [IItemDefinition `получил` руды](/Vanilla/Items/IItemDefinition/).
 
 ## ZenGetters
 
-You can use these getters to retrieve some information on the oredict:
+Вы можете использовать эти устройства для получения некоторой информации на oredict:
 
-| name      | Description                              | Return type                              |
-| --------- | ---------------------------------------- | ---------------------------------------- |
-| name      | Returns the oreDict's name               | string                                   |
-| empty     | Returns if the oreDict is empty          | bool                                     |
-| firstItem | Returns the first of the oreDict's items | [IItemStack](/Vanilla/Items/IItemStack/) |
+| имя          | Описание                                    | Возвращаемый тип                         |
+| ------------ | ------------------------------------------- | ---------------------------------------- |
+| имя          | Возвращает имя oreDict                      | string                                   |
+| пустой       | Возвращает если oreDict пуст                | bool                                     |
+| первый пункт | Возвращает первый элемент программы oreDict | [IItemStack](/Vanilla/Items/IItemStack/) |
 
 ## ZenMethods
 
-You can use these methos on an IOreDictEntry Object:
+Вы можете использовать эти методы на IOreDictEntry объекте:
 
-### Add/Remove items
+### Добавить/Удалить элементы
 
 ```zenscript
 val oreDictEnt = <ore:ingotIron>;
@@ -55,52 +55,52 @@ oreDictEnt.remove(<minecraft:iron_ore>, <minecraft:dirt>);
 oreDictEnt.removeItems([<minecraft:redstone>, <minecraft:gold_ore>]);
 ```
 
-### Check if an IOreDictEntry contains an item
+### Отметьте, если IOreDictEntry содержит элемент
 
-You can check if an IOreDictEntry contains an item using either the `in` or `has` keywords:
+Вы можете проверить, содержит ли IOreDictEntry товар, используя `в` или `имеет` ключевые слова:
 
 ```zenscript
 val oreDictEnt = <ore:ingotIron>;
 
-//While using in is possible
+//При использовании
 if(oreDictEnt in <minecraft:iron_ingot>){
-    print("Iron is in the oreDict!");
+    print("Iron is in oreDict! );
 }
 
-//many prefer using has as it might make more sense grammar-wise
+//Многие предпочитают иметь так как это может иметь больше смысла в грамматике
 if(oreDictEnt has <minecraft:iron_ingot>){
-    print("Iron still is in the oreDict!");
+    print("Iron всё ещё находится в oreDict! );
 }
 ```
 
-### Mirror an IOreDictEntry
+### Отражать IOreDictEntry
 
-Mirroring an IOreDictEntry means that all items in the other oreDictEntry will be replaced by the items in the oreDictEntry the method was executed on:
+Отражение IOreDictEntry означает, что все элементы в другом oreDictEntry будут заменены элементами в oreDictEntry метод:
 
 ```zenscript
-//make iron and copper equivalent
-val iron = <ore:ingotIron>;
-val copper = <ore:ingotCopper>;
+//изготовить чугун и медь эквивалент
+утюга = <ore:ingotIron>;
+меди валы = <ore:ingotCopper>;
 
-//adds all entries from iron to copper so that Copper contains both, the iron and copper oreDic entries
-iron.addAll(copper); 
+//добавляет все записи из железа в медь, чтобы в медь содержались как железные, так и медные записи
+железа. ddAll(медь); 
 
 
-//mirrors copper to iron, so all items in iron will be replaced by all the ones in copper.
-//In this case that means by all iron and copper oreDictEntries
-copper.mirror(iron);
+//зеркала меди на железо, так что все элементы железа будут заменены всеми из меди.
+//В этом случае это означает все железные и медные oreDictEntries
+copper.mirror(железо);
 ```
 
-## IIngredient implementation
+## Реализация Иингредиента
 
-IOreDictEntry extends [IIngredient](/Vanilla/Variable_Types/IIngredient/). This means that all methods available to [IIngredient](/Vanilla/Variable_Types/IIngredient/) are also available to IOreDictEntries. It also means that you can put IOreDictEntries into IIngredient Arrays (such as the ones in crafting recipe methods).
+IOreDictEntry расширяет [Ingredient](/Vanilla/Variable_Types/IIngredient/). Это означает, что все методы, доступные [IIngredient](/Vanilla/Variable_Types/IIngredient/) , также доступны для IOreDictEntries. Это также означает, что вы можете поместить IOreDictEntries в IIngredient Arrays (например, в методы создания рецептов).
 
-### Iterating through an oreDictEntry's items
+### Итерация через элементы oreDictEntry,
 
 ```zenscript
 val iron = <ore:ingotIron>;
 
-for item in iron.items{
+для предмета iron.items{
     recipe.remove(item);
 }
 ```

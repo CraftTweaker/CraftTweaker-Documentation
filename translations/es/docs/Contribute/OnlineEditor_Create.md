@@ -1,84 +1,84 @@
-# Create Files using GitHub's online editor
+# Crear archivos usando el editor online de GitHub
 
-## Requirements
+## Requisitos
 
-You will need to have created a GitHub account and [forked the wiki to your account](/Contribute/SetupGithub).
+Necesitarás crear una cuenta de GitHub y [bifurcó el wiki a tu cuenta](/Contribute/SetupGithub).
 
-## Introduction
+## Introducción
 
-GitHub's online editor allows you to change and create files using nothing but your browser.  
-It may not be as versatile as [using a local copy](/Contribute/LocalClone/CreateCommit/) but you don't need to worry about [setting up git](/Contribute/LocalClone/InstallingGit/) and all.
+El editor en línea de GitHub le permite cambiar y crear archivos sin más que su navegador.  
+Puede que no sea tan versátil como [usando una copia local](/Contribute/LocalClone/CreateCommit/) pero no necesitas preocuparte por [configurar git](/Contribute/LocalClone/InstallingGit/) y todo.
 
-This guide will show you how to create a new wiki file using github's online editor.  
-Your main reason for adding new pages is most likely to fill in missing information, but maybe you also want to add an example wiki entry for a given mod handler, whatever the reason, feel free to commit changes and eventually [file a Pull Request](/Contribute/PullRequest).
+Esta guía le mostrará cómo crear un nuevo archivo wiki usando el editor en línea de github.  
+La razón principal para añadir nuevas páginas es más probable que rellene la información faltante, pero tal vez también quieras añadir una entrada de ejemplo de wiki para un manejador de mods determinado, sea cual sea la razón, siéntete libre de confirmar cambios y eventualmente [archivar una Pull Request](/Contribute/PullRequest).
 
-However, remember that you need to create the English version, translations are then handled via [CrowdIn](https://crowdin.com/project/crafttweaker-documentation/) (but only after the PR has been merged).
+Sin embargo, recuerda que necesitas crear la versión en inglés, las traducciones son luego manejadas a través de [CrowdIn](https://crowdin.com/project/crafttweaker-documentation/) (pero solo después de que las relaciones públicas hayan sido fusionadas).
 
-## Where to create the file
+## Dónde crear el archivo
 
-Theoretically, it doesn't matter where you put your file, but please try to fit the current scheme:
+Teóricamente, no importa dónde ponga su archivo, pero por favor intente encajar el esquema actual:
 
-- All files need to be in the `docs` folder.
-- The File structure should match the navigation bar crumbs. Example: When using the navigation bar in the wiki, `ICraftingRecipe` can be found in `Vanilla/Recipes/Crafting Table Recipes/ICraftingRecipe`. The file for ICraftingRecipe can be found at `docs/Vanilla/Recipes/Crafting/ICraftingRecipe.md`. As you can see, the paths don't exactly match but they are sufficient to find the file.
-- All information for one mod should remain in one group/folder.
+- Todos los archivos deben estar en la carpeta `docs`.
+- La estructura del archivo debe coincidir con las migajas de la barra de navegación. Ejemplo: Cuando se utiliza la barra de navegación en la wiki, `ICraftingRecipe` se puede encontrar en `Vanilla/Recetas / Recetas de la Mesa de Fabricación/Receta ICrafting`. El archivo para ICraftingRecipe se puede encontrar en `docs/Vanilla/Recipes/Crafting/ICraftingRecipe.md`. Como puede ver, las rutas no coinciden exactamente, pero son suficientes para encontrar el archivo.
+- Toda la información de un mod debe permanecer en un grupo/carpeta.
 
-## Create the file
+## Crear el archivo
 
-After you have successfully located your future file's path, navigate to the folder that will contain the file in GitHub, if it exists.  
-Don't worry if it does not exist, you can still create the file.
+Después de haber encontrado con éxito la ruta de su archivo futuro, vaya a la carpeta que contendrá el archivo en GitHub, si existe.  
+No te preocupes si no existe, puedes crear el archivo.
 
-Say you want to create a file called `Secret_Information.md` in `docs/AdvancedFunctions`:  
-Find the path in GitHub and click `Create new file` ![Create File Button](/Contribute/assets/OnlineEditor_CreateFileButton.png)
+Diga que desea crear un archivo llamado `Chan_Information. d` en `docs/AdvancedFunctions`:  
+Encuentra la ruta en GitHub y haz clic en `Crear nuevo archivo` ![Crear Botón Archivo](/Contribute/assets/OnlineEditor_CreateFileButton.png)
 
-You are now presented with the new File editor page.  
-First, on the top you can see the path of the file that will be created. If we want the file to be created in exactly the directory that is shown in the path, we only need to provide a file title and extension. Remember, all wiki entry files should have the `.md` extension, since this wiki uses markdown.
+Ahora te presentamos la nueva página del editor de archivos.  
+Primero, en la parte superior puedes ver la ruta del archivo que se creará. Si queremos que el archivo se cree exactamente en el directorio que se muestra en la ruta, sólo necesitamos proporcionar un título y extensión de archivo. Recuerda, todos los archivos de entrada de wiki deben tener la extensión `.md` , ya que esta wiki utiliza markdown.
 
-If you want the file to be created in a (possibly nonexisting) subfolder, or even multiple folders down the path, you can use `/` to separate folder names (like you can already see in the given path).
+Si desea que el archivo sea creado en una subcarpeta (posiblemente no existente) o incluso varias carpetas por la ruta, puedes usar `/` para separar nombres de carpetas (como ya puedes ver en la ruta dada).
 
-The Editor allows you to create the file as you like, and also to directly view a preview of the compiled formatting.
+El editor le permite crear el archivo a su gusto, y también ver directamente una vista previa del formato compilado.
 
-If the syntax of the files is new for you, the wiki uses MarkDown. There should be many tutorials to find using google (or you could add one right here to this wiki if you like).
+Si la sintaxis de los archivos es nueva para usted, el wiki utiliza MarkDown. Debería haber muchos tutoriales para encontrar usando google (o podría añadir uno aquí a este wiki si quiere).
 
-## Add the file to the index
+## Añadir el archivo al índice
 
-After you have created the file and commited the creation (see below) you will need to add the file to the index as well, so that it can be shown in the navigation bar later.
+Después de haber creado el archivo y haber confirmado la creación (ver abajo) también necesitará agregar el archivo al índice para que se pueda mostrar en la barra de navegación más tarde.
 
-This index is the `mkdocs.yml` file.
+Este índice es el archivo `mkdocs.yml`.
 
-This file contains everything that is needed to create the wiki, and you need to make sure not to break it (though we will tell you if your PR breaks a build should it come to that)!
+Este archivo contiene todo lo necesario para crear la wiki, y usted necesita asegurarse de no romperlo (aunque le diremos si su PR rompe una construcción si llega a eso)!
 
-All you need to do is add your file and categories to the `pages` list.  
-The format is pretty straight-forward:
+Todo lo que necesitas hacer es añadir tu archivo y categorías a la lista de `páginas` .  
+El formato es bastante directo:
 
-- Entries start with a `-`
-- Then comes the (shown, English) name for the group or entry, followed by a `:`
-- If you are creating a grouping (e.g. `Vanilla` or `Mods`) proceed on the next line, with two spaces inlined.
-- If you are creating an actual reference to a page file, add it on the same line, after the `:` and a space. Make sure to wrap it in single quotes `'` to ensure that the build works as expected. The path is relative to the `docs` folder, so `docs/Vanilla/Commands.md` becomes `Vanilla/Commands.md`.
+- Entradas empiezan con un `-`
+- Then comes the (shown, Spanish) name for the group or entry, followed by a `:`
+- Si está creando un grupo (por ejemplo, `Vanilla` o `Mods`) proceda en la siguiente línea, con dos espacios en línea.
+- Si está creando una referencia real a un archivo de página, añádela en la misma línea, después de la `:` y un espacio. Asegúrese de envolver en comillas simples `'` para asegurarse de que la compilación funciona como se esperaba. La ruta es relativa a la carpeta `docs` , así que `docs/Vanilla/Commands.md` se convierte en `Vanilla/Commands.md`.
 
-For examples check the [current mkdocs.yml file on github](https://github.com/CraftTweaker/CraftTweaker-Documentation/blob/master/mkdocs.yml). Alternatively, edit this file and add your own example here.
+Para ver ejemplos consulte el archivo [actual mkdocs.yml en github](https://github.com/CraftTweaker/CraftTweaker-Documentation/blob/master/mkdocs.yml). Alternativamente, edite este archivo y añada su propio ejemplo aquí.
 
-## Save/Commit the changes
+## Guardar/Confirmar los cambios
 
-*Note: This description originates from the edit files guide but the same principles apply, feel free to substitute with your own version if needed*
+*Nota: Esta descripción se origina a partir de la guía de archivos de edición pero se aplican los mismos principios, siéntase libre de sustituir por su propia versión si es necesario*
 
-After you have created the file content you need to let GitHub know that you want to save your changes.
+Después de haber creado el contenido del archivo necesita dejar saber a GitHub que desea guardar sus cambios.
 
-That's what the commit box below your editor is for:  
-You cannot simply save the file, you need to provide a summary of what you did (commit title) and optionally a short description where you can put additional information like why you did the changes or what exactly was changed.
+Para eso es para lo que está debajo de tu editor:  
+No puedes simplemente guardar el archivo, necesita proporcionar un resumen de lo que hizo (título de confirmación) y opcionalmente una descripción corta donde puede poner información adicional como por qué hizo los cambios o qué exactamente fue cambiado.
 
-By default it looks roughly like this:  
-![Commit Box Default](/Contribute/assets/OnlineEditor_CommitBox_Default.png)
+Por defecto se ve más o menos así:  
+![Caja de cambios por defecto](/Contribute/assets/OnlineEditor_CommitBox_Default.png)
 
-In this example, the Commit title (or edit summary) is `Update Arrays_and_Loops.md`. GitHub cannot know what your actual changes were supposed to do, so it tries something as generic as this.
+En este ejemplo, el título de Commit (o el resumen de edición) es `Actualizar Arrays_and_Loops.md`. GitHub no puede saber qué se supone que deben hacer sus cambios reales, así que intenta algo tan genérico como esto.
 
-You might want to add an additional title or description, but it is not neccessary, though it makes reviewing your Pull request later on easier.
+Puede que quieras añadir un título o descripción adicional, pero no es necesaria, aunque hace que revisar tu solicitud Pull sea más fácil.
 
-If you have multiple e-mail addresses registered for your GitHub account, you can choose as which one you will create the commit. This will not have any real impact for contributing, though.  
-You can also decide whether you want to commit directly to your master branch or rather create a new branch for your commit. In most cases committing to your master branch works just fine.
+Si tiene varias direcciones de correo electrónico registradas para su cuenta de GitHub, puede elegir la que creará el commit. Sin embargo, esto no tendrá ningún efecto real para contribuir.  
+También puedes decidir si quieres comprometerte directamente a tu rama maestra o crear una nueva rama para tu commit. En la mayoría de los casos, comprometerse con su rama maestra funciona bien.
 
-A filled out example might look like this: ![Commit box Filled](/Contribute/assets/OnlineEditor_CommitBox_Filled.png)
+A filled out example might look like this: ![Caja de cambios llenada](/Contribute/assets/OnlineEditor_CommitBox_Filled.png)
 
-## What to do next
+## Qué hacer a continuación
 
-After you have committed your changes, you can go on and [edit](/Contribute/OnlineEditor_Edit) or create more files using the online editor.  
-After you have done all your changes, you can [file a Pull Request](/Contribute/PullRequest).
+Después de que hayas cometido tus cambios, puedes seguir y [editar](/Contribute/OnlineEditor_Edit) o crear más archivos usando el editor en línea.  
+Después de haber realizado todos los cambios, puede [presentar una Pull Request](/Contribute/PullRequest).

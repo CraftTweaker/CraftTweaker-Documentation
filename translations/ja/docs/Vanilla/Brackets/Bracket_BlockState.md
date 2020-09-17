@@ -1,30 +1,30 @@
 # BlockState Bracket Handler
 
-The BlockState Bracket Handler gives you access to the BlockStates in the game. It is only possible to get BlockStates registered in the game, so adding or removing mods may cause issues if you reference the mod's blockstates in a BlockState Bracket Handler.
+BlockStateブラケットハンドラを使用すると、ゲーム内のBlockStatesにアクセスできます。 BlockStatesをゲームに登録することは可能です。 そのため、Modを追加または削除すると、BlockStateブラケットハンドラでModのブロック状態を参照すると問題が発生する可能性があります。
 
-BlockStates are referenced in the BlockState Bracket Handler like so:
+BlockStatesは、BlockStateブラケットハンドラで次のように参照されます。
 
 ```zenscript
 <blockstate:modid:blockname>
 ```
 
-With the `modid` being the modid of the mod that the block is defined in, and `blockname` being the name of the block. This will return the default BlockState for the specified block.
+With the `modid` being the modid of the mod that the block is defined in, and `blockname` being the name of the block. 指定したブロックのデフォルトのBlockStateが返されます。
 
-To get a specific blockstate with the BlockState Bracket Handler, you can optionally specify its properties like so:
+BlockState Bracket Handlerを使って特定のblockstateを取得するには、必要に応じて次のようにプロパティを指定できます。
 
 ```zenscript
 <blockstate:modid:blockname:properties>
 ```
 
-Where `properties` is a comma-separated set of `name=value` pairs for any properties that you want to specify on the blockstate. Any properties that are not specified are given the same values as in the default blockstate.
+`プロパティ` は `name=value` のコンマで区切られたセットで、blockstate で指定したいすべてのプロパティを指定します。 指定されていないプロパティは、デフォルトの blockstate と同じ値が与えられます。
 
-This will return an IBlockState Object. Please refer to [the respective wiki entry](/Vanilla/Blocks/IBlockState/) for further information.
+IBlockState オブジェクトを返します。 詳細については、それぞれの [wiki 項目](/Vanilla/Blocks/IBlockState/) を参照してください。
 
-Note that this bracket handler will create a reference to one specific blockstate. If you would like to be able to match against multiple blockstates, please refer to [the IBlockStateMatcher wiki entry](/Vanilla/Blocks/IBlockStateMatcher).
+この括弧ハンドラは、特定の blockstate への参照を生成することに注意してください。 複数のブロックとマッチさせたい場合は、 [IBlockStateMatcher wiki エントリ](/Vanilla/Blocks/IBlockStateMatcher) を参照してください。
 
-## Examples
+## 使用例
 
-An example of the BlockState Bracket Handler would be:
+BlockStateブラケットハンドラの例は次のとおりです。
 
 ```zenscript
 //block of dirt

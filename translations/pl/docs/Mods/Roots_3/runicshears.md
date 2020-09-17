@@ -1,58 +1,58 @@
-### Class
+### Klasa
 
 ```zenscript
-import mods.roots.RunicShears;
+importuj mods.roots.RunicShears;
 ```
 
-#### Methods
+#### Metody
 
 ```zenscript
-void addRecipe(
-  string name,                 // the name of the recipe being created
-  IItemStack outputDrop,       // the item output obtained by performing the shearing
-  IItemStack replacementBlock, // the block (as an itemstack) that replaces the block being interacted with upon shearing
-  IItemStack inputBlock,       // the block that is to be sheared
-  IItemStack jeiDisplayItem    // the item that should be displayed in JEI for this recipe
+Unieważnij przepis(
+  nazwy ciągu, // nazwa receptury tworzonej
+  IItemStack outputDrop, // dane wyjściowe pozycji uzyskane przez przetarcie
+  wymiany IItemStack, // blok (jako itemstack), który zastępuje blok wchodzącej w interakcję po ścinaniu
+  IItemStack inputBlock, // blok, który ma być strzyżony
+  IItemStack jeiDisplayItem // element, który powinien być wyświetlony w JEI dla tego przepisu
 );
 ```
 
 * * *
 
 ```zenscript
-void addEntityRecipe(
-  string name,              // the name of the recipe for the shearing
-  IItemStack outputDrop,    // the item that is dropped upon shearing the specified entity
-  IEntityDefinition entity, // the entity that is to be sheared to obtain the drop
-  int cooldown              // the number of ticks (seconds multiplied by 20) it takes until the entity can be sheared again
+unieważnienie addEntityRecipe(
+  nazwa ciągu, // nazwa receptury na ścinanie
+  IItemStack outputDrop, // element, który zostaje zrzucony po ściśnięciu określonej jednostki
+  IEntityDefinition podmiot, // jednostka, która ma zostać pokryta w celu uzyskania spadku
+  czasu odnowienia // liczba ticków (sekund pomnożona przez 20) zajmuje do momentu, gdy jednostka może zostać ponownie pokryta
 );
 ```
 
 * * *
 
 ```zenscript
-void removeRecipe(
-  IItemStack output // the itemstack output that you wish to remove
+usuń przepis(
+  IItemStack wyjście // wyjście stosu elementów, które chcesz usunąć
 );
 ```
 
 * * *
 
-### Examples
+### Przykłady
 
 ```zenscript
-import mods.roots.RunicShears;
+importuj mods.roots. Nożyce mechaniczne;
 
-// Creates a recipe that obtains nether wart from red nether bricks
-// and then converts the bricks into normal nether bricks
-RunicShears.addRecipe("nether_wart_block", <minecraft:nether_wart>*2, <minecraft:nether_brick>, <minecraft:red_nether_brick>, <minecraft:red_nether_brick>);
+// Tworzy przepis, który uzyskuje netherową brodę z czerwonych cegieł netherowych
+// a następnie przekształca cegły w normalne cegły netheryczne
+Skórki. ddRecipe("nether_wart_block", <minecraft:nether_wart>*2, <minecraft:nether_brick>, <minecraft:red_nether_brick>, <minecraft:red_nether_brick>);
 
-// Creates a recipe that obtains eggs from chickens with a 2 minute cooldown
-RunicShears.addEntityRecipe("egg_from_chicken", <minecraft:egg>*2, <entity:minecraft:chicken>, 120*20);
+// Tworzy przepis, który otrzymuje jajka od kurcząt z 2-minutowym odnowieniem
+RunicShears. ddEntityRecipe("egg_from_chicken", <minecraft:egg>*2, <entity:minecraft:chicken>, 120*20);
 
-// Removes all recipes (both entity & block) that give fey leather
-RunicShears.removeRecipe(<roots:fey_leather>);
+// Usuwa wszystkie przepisy (oba bloki & ) dające fejną skórę
+RunicShears. emoveRecipe(<roots:fey_leather>);
 ```
 
-### Notes
+### Uwagi
 
-Note that the `removeRecipe` function will attempt to remove any recipe (both runic shearing of blocks and of entities) that matches the desired output.
+Zauważ, że funkcja `removeReceppe` spróbuje usunąć dowolną recepturę (zarówno runiczne ścinanie bloków jak i obiektów), która odpowiada pożądanym wynikom.

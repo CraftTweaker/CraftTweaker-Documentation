@@ -1,41 +1,41 @@
-# Clone
+# Klonuj
 
 ## Summary
 
-This page shows you how to clone your forked repository to your local computer.
+Ta strona pokazuje jak sklonować forkowane repozytorium do komputera lokalnego.
 
-## Prerequisites
+## Wymagania wstępne
 
-You should have [Forked the CrT-wiki repository](/Contribute/SetupGithub/) and you need to have [Git installed](/Contribute/LocalClone/InstallingGit/).
+Powinieneś [rozwikłać repozytorium CrT-wiki](/Contribute/SetupGithub/) i zainstalować [Git](/Contribute/LocalClone/InstallingGit/).
 
-## First steps
+## Pierwsze kroki
 
-First you need to create a folder on your local computer where you want the wiki to be cloned to.  
-Then you need to open either your command prompt or git bash in that folder.  
-I'm going to use git Bash but the same procedure should work for the CMD as well.
+Najpierw musisz utworzyć folder na lokalnym komputerze, do którego chcesz sklonować wiki.  
+Następnie musisz otworzyć w tym folderze wiersz polecenia lub Bash git.  
+zamierzam użyć git Bash, ale ta sama procedura powinna działać również dla CMD.
 
-To open git bash just navigate to the folder and click with the right mouse key:  
-![Explorer context menu with gitBash option selected](/Contribute/LocalClone/assets/ExplorerContextMenu_GitBash.png)
+Aby otworzyć git bash po prostu przejdź do folderu i kliknij prawym przyciskiem myszy:  
+![Menu kontekstowe eksploratora z wybraną opcją gitBash](/Contribute/LocalClone/assets/ExplorerContextMenu_GitBash.png)
 
-## Cloning your fork
+## Klonowanie Twojego widelca
 
-After you have opened git Bash in the folder, you need to get the repo url.  
-You can find this url when checking your fork on GitHub:
+Po otwarciu git Bash w folderze, musisz pobrać adres URL repozytorium.  
+Możesz znaleźć ten adres URL podczas sprawdzania forka na GitHub:
 
-![Locating the repo url](/Contribute/LocalClone/assets/GitHub_CloneLink.png)
+![Lokalizacja adresu URL repozytorium](/Contribute/LocalClone/assets/GitHub_CloneLink.png)
 
-You need to use that URL. We will be using HTTPS for the cloning, if you know how to set up SSH you probably don't need this guide.  
-You can also click on the button to copy the string to your clipboard.
+Musisz użyć tego adresu URL. Będziemy używać HTTPS do klonowania, jeśli wiesz jak skonfigurować SSH prawdopodobnie nie potrzebujesz tego przewodnika.  
+Możesz również kliknąć na przycisk, aby skopiować ciąg do schowka.
 
-Now you need to run the command `git clone <repo-Url>`:
+Teraz musisz uruchomić polecenie `git clone <repo-Url>`:
 
-![Clone command](/Contribute/LocalClone/assets/GitBash_CloneCommand.png) ![Clone command success](/Contribute/LocalClone/assets/GitBash_CloneCommandSuccess.png)
+![Klonuj polecenie](/Contribute/LocalClone/assets/GitBash_CloneCommand.png) ![Klonowanie polecenia zakończone sukcesem](/Contribute/LocalClone/assets/GitBash_CloneCommandSuccess.png)
 
-Now you should have a new folder named `CraftTweaker-Documentation` in your directory.  
-Let's navigate to it and issue a `git status`:
+Teraz powinieneś mieć nowy folder o nazwie `CraftTweaker-Documentation` w swoim katalogu.  
+Przejdź do niego i nadajmy `git status`:
 
-![Change directory and issue git status](/Contribute/LocalClone/assets/GitBash_Clone_GitStatus.png)
+![Zmień katalog i status git](/Contribute/LocalClone/assets/GitBash_Clone_GitStatus.png)
 
-## How to continue
+## Jak kontynuować
 
-Now that you have a local clone of the wiki you can start creating and editing files and eventually [create a commit](/Contribute/LocalClone/CreateCommit/).
+Teraz, gdy masz lokalny klon wiki, możesz zacząć tworzyć i edytować pliki i ostatecznie [utworzyć commit](/Contribute/LocalClone/CreateCommit/).

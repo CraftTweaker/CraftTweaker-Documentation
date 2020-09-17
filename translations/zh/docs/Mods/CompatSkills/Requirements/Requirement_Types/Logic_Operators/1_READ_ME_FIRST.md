@@ -29,13 +29,13 @@ Reskillable支持的最简单的逻辑条件语句具有反转一个条件的能
 
 ## 例子
 
-下面所有的例子都将使用 CompatSkill's CraftTweaker 帮助中的语句以方便阅读。 The logic requirements work just fine from the config as well.
+下面所有的例子都将使用 CompatSkill's CraftTweaker 帮助中的语句以方便阅读。 逻辑要求在配置中也很细。
 
-All the example script CrT script entries below use the import statement: `import mods.compatskills.Requirement.addRequirement;` this is mainly to reduce the lengths of the other lines and make them more readable. (So if you are copying any of the examples you will need to include it at the top of your script file.) A couple of the examples below that directly start with `mods.compatskills.` are locks that are specific to CompatSkills and that I came up with decent logic requirement examples for.
+下面的示例脚本脚本条目使用导入声明： `导入mods.compatskills.Requirement。 dddrequirement;` 这主要是为了缩短其他行的长度，使其更易读。 (如果您正在复制任何示例你需要将它包含在脚本文件顶部。) 下面的一些示例直接以 `模式开始。 忽略技能。` 是专用于Compatskill的锁，我提出了体面的逻辑要求示例。
 
 * * *
 
-Only allow attacking zombie pigmen outside of the nether: `mods.compatskills.EntityDamageLock.addEntityLock(<entity:minecraft:zombie_pigman>, "not|dim|-1");`
+只允许攻击内外的僵尸猪人： `mods.compatsk技能.EntityDamageLock.addEntityLock(<entity:minecraft:zombie_pigman>, "not|dim|-1");`
 
 * * *
 
@@ -46,35 +46,35 @@ Allow entering the nether if a player has an attack or defense level of at least
 当一个玩家的防御等级和灵巧等级都到达了24级后，不允许他们使用皮革护甲
 
     addRequirement(<minecraft:leather_helmet:*>, "nand|[reskillable:defense|24]~[reskillable:agility|24]");
-    addRequirement(<minecraft:leather_chestplate:*>, "nand|[reskillable:defense|24]~[reskillable:agility|24]");
-    addRequirement(<minecraft:leather_leggings:*>, "nand|[reskillable:defense|24]~[reskillable:agility|24]");
-    addRequirement(<minecraft:leather_boots:*>, "nand|[reskillable:defense|24]~[reskillable:agility|24]");
+    addRequirement(<minecraft:leather_chestplate:*>, "nand|[reskillable:defense|24]");
+    addRequirement(<minecraft:leather_leggings:*>, "nand|[reskillable:defense|24]");
+    addRequirement(<minecraft:leather_boots:*>, "nand|[reskillable:defense|24]";
     
 
 * * *
 
-Only allow using a wooden shovel until the player gets mining or gathering level 5: `addRequirement(<minecraft:wooden_shovel:*>, "nor|[reskillable:mining|5]~[reskillable:gathering|5]");`
+只允许使用木制铲，直到玩家采矿或收集等级 5： `添加需求(<minecraft:wooden_shovel:*>, "nor|[reskillable:mining|5]~[reskillable:greating|5]"。`
 
 * * *
 
-Only allow a player to use ender pearls if they have magic 32 or if they have agility 32. Do not however let them use it if they have both skills at level 32: `addRequirement(<minecraft:ender_pearl>, "xor|[reskillable:magic|32]~[reskillable:agility|32]");`. This can be useful if you want to have multiple progression trees and ensure that they have to follow one if they want to keep being able to use specific items.
+只允许玩家使用末影珍珠，如果它们有32个魔法或敏捷的话。 但是，如果他们在32级上具有两种技能，不要让他们使用它： `addRequirement(<minecraft:ender_pearl>, "xor|[reskillable:magic|32]~[reskillable:agility|32])；` 如果你想要有多个进化树并确保它们必须跟随一棵，如果他们想要继续使用特定的物品，这可能是有用的。
 
 * * *
 
-It was hard to come up with an example for **XNOR**, however this is an example of how it can work.
+很难为 **XNOR**找到一个示例，但这是一个如何工作的例子。
 
-Only allow a player to level defense to level 5 if they have not put any points into attack yet or if they are at attack level 32: `mods.compatskills.SkillLocks.addLevelLock(<skill:reskillable:defense>, 5, "xnor|[reskillable:attack|2]~[reskillable:attack|32]");`
+只允许玩家将防御等级升到5级，如果他们还没有将任何点放在攻击中或者他们处于攻击级32级： `Mod。 ompatskillables.Skillaks.addLevelLock(<skill:reskillable:defense>, 5, "xnor|[reskillable:attack|2]~[reskillable:attack|32]");`
 
 ### 嵌套逻辑请求
 
-Nested logic requirements are when you are using a logic requirement as one of the `requirement` parameters in another logic requirement. Pay special attention to bracket placement in nested requirements.
+嵌套逻辑要求是当你在另一个逻辑要求中使用逻辑要求作为 `要求中的一个` 参数。 特别注意嵌套要求中的括号。
 
 * * *
 
-Only allow diamond ore to be broken if the player has mining level 20 or if the player has both gathering level 25 and mining level 15: `addRequirement(<minecraft:diamond_ore>, "or|[reskillable:mining|20]~[and|[reskillable:gathering|25]~[reskillable:mining|15]]");` *Note*: This also has the side effect of not allowing players to place diamond ore unless they meet the requirement as well.
+只有当玩家拥有开采等级20或拥有采集等级25和开采等级15时才允许破坏钻石矿石： `添加要求(<minecraft:diamond_ore>, "或|[reskillable:mining|20]~[and|[reskillable:greating|25]~[reskillable:mining|15]]";` *注*: 这也会产生副作用，不允许玩家放置钻石矿石，除非他们也符合要求。
 
 * * *
 
-Only allow using the elytra with agility 15 in the end or having agility and magic levels 25 while not being in the end: `addRequirement(<minecraft:elytra:*>, "xor|[and|[dim|1]~[reskillable:agility|15]]~[and|[reskillable:agility|25]~[reskillable:magic|25]]");` *Note*: Once you reach agility and magic 25 you are unable to use the elytra in the end. This is in part just as an example and not necessarily what someone wants.
+只允许在末尾使用灵活度15或灵活度及魔法等级25的精灵： `附加要求(<minecraft:elytra:*>) "xor|[and|[dim|1]~[reskillable:agility|15]]~[and|[reskillable:agility|25]]";` *备注* 这在一定程度上只是一个例子，而不一定是有人想要的。
 
-Another way that the above requirement could be written is: `addRequirement(<minecraft:elytra:*>, "reskillable:agility|15", "xor|[dim|1]~[and|[reskillable:agility|25]~[reskillable:magic|25]]");` because both sides require at least agility 15.
+可以写入上述要求的另一种方式是： `addRequirement(<minecraft:elytra:*>, "reskillable:agility|15", "xor|[dim|1]~[and|[reskillable:agility|25]" ~[reskillable:magic|25]";` 因为双方至少需要15的敏捷性。

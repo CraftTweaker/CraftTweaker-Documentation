@@ -1,35 +1,35 @@
-# Bottling Machine
+# 装瓶机
 
-## Calling The Package
+## 调用包
 
-You can call the BottlingMachine package using `mods.immersiveengineering.BottlingMachine`.
+您可以使用 `mods.immersiveengineering.BottlingMachine` 来调用 BottlingMachine 包。
 
 ## 添加配方
 
-| Required | 类型     | Data Type                                           |
-| -------- | ------ | --------------------------------------------------- |
-| 必要       | Output | [IItemstack](/Vanilla/Items/IItemStack/)            |
-| 必要       | Input  | [IIngredient](/Vanilla/Variable_Types/IIngredient/) |
-| Required | Fluid  | [Fluidstack](/Vanilla/Liquids/ILiquidStack/)        |
+| 必填 | 类型 | 数据类型                                                    |
+| -- | -- | ------------------------------------------------------- |
+| 必要 | 输出 | [物品堆（IItemstack）](/Vanilla/Items/IItemStack/)           |
+| 必要 | 输入 | [材料（IIngredient）](/Vanilla/Variable_Types/IIngredient/) |
+| 必填 | 流体 | [Fluidstack](/Vanilla/Liquids/ILiquidStack/)            |
 
 ### 例子
 
 ```zenscript
-//Example:
-mods.immersiveengineering.BottlingMachine.addRecipe(IItemStack output, IIngredient input, ILiquidStack fluid);
+//示例：
+mods.immersiveengineering.BottlingMachine.addRecipe(IItemStack output, IIngredient input, ILiquidStack fluid)；
 mods.immersiveengineering.BottlingMachine.addRecipe(<minecraft:diamond>, <ore:logWood>, <liquid:water>);
 ```
 
-## Remove Recipe
+## 删除配方
 
-| Type   | Data Type                                |
-| ------ | ---------------------------------------- |
-| Output | [IItemstack](/Vanilla/Items/IItemStack/) |
+| 类型 | 数据类型                                          |
+| -- | --------------------------------------------- |
+| 输出 | [物品堆（IItemstack）](/Vanilla/Items/IItemStack/) |
 
-### Example
+### 例子
 
 ```zenscript
-//Example:
-mods.immersiveengineering.BottlingMachine.removeRecipe(IItemStack output);
+//示例：
+mods.immersiveengineering.BottlingMachine.removeRecipe(IItemStack 输出);
 mods.immersiveengineering.BottlingMachine.removeRecipe(<minecraft:diamond>);
 ```

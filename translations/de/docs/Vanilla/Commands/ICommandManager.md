@@ -1,11 +1,11 @@
 # ICommandManager
 
-The ICommandManager interface is managing commands. So you can use it to get and execute commands.  
-You can get this from an [IServer](/Vanilla/Game/IServer/) object.
+Die ICommandManager-Schnittstelle verwaltet Befehle. So können Sie es verwenden, um Befehle zu erhalten und auszuführen.  
+Sie können dies von einem [IServer](/Vanilla/Game/IServer/) Objekt erhalten.
 
 ## Dieses Paket importieren
 
-It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
+Möglicherweise ist es erforderlich, dass Sie das Paket importieren, wenn Sie irgendwelche Probleme haben (z.B. [Array](/AdvancedFunctions/Arrays_and_Loops/)), also besser sicher sein als bedauern und fügen Sie den Import.  
 `import crafttweaker.command.ICommandManager;`
 
 ## ZenGetter
@@ -23,21 +23,21 @@ It might be required for you to import the package if you encounter any issues (
   
   <tr>
     <td>
-      commands
+      Befehle
     </td>
     
     <td>
-      Map<String, <a href="/Vanilla/Commands/ICommand/">ICommand</a>\>
+      Karte<String, <a href="/Vanilla/Commands/ICommand/">ICommand</a>\>
     </td>
   </tr>
 </table>
 
-## ZenMethods
+## ZenMethoden
 
 - int executeCommand([ICommandSender](/Vanilla/Commands/ICommandSender/) sender, String rawCommand);
-- List<String\> getTabCompletions([ICommandSender](/Vanilla/Commands/ICommandSender/) sender, String input, @Optional [IBlockPos](/Vanilla/World/IBlockPos/) pos);
-- List<[ICommand](/Vanilla/Commands/ICommand/)\> getPossibleCommands([ICommandSender](/Vanilla/Commands/ICommandSender/) sender);
+- Liste<String\> getTabCompletions([ICommandSender](/Vanilla/Commands/ICommandSender/) Absender, Zeicheneingabe, @Optional [IBlockPos](/Vanilla/World/IBlockPos/) pos);
+- Liste <[ICommand](/Vanilla/Commands/ICommand/)\> getPossibleCommands([ICommandSender](/Vanilla/Commands/ICommandSender/) Absender);
 
-## Additional Info
+## Zusätzliche Info
 
-To add your own command, look at [CommandEvent](/Vanilla/Events/Events/CommandEvent/)
+Um Ihren eigenen Befehl hinzuzufügen, schauen Sie sich [CommandEvent](/Vanilla/Events/Events/CommandEvent/) an

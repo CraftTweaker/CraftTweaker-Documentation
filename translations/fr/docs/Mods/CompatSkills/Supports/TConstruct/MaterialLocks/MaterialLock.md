@@ -1,20 +1,20 @@
-# Material Locks
+# Verrou matériel
 
-## Material-Lock
+## Verrouillage du Matériel
 
 With the implementation of TConstruct support in CompatSkills 1.5.0. You now have the ability to lock:
 
-    - Tool Crafting
-    - Part Crafting
-    - Part Replacement
+    - Fabrication d'outil
+    - Fabrication de pièces
+    - Remplacement de pièce
     
 
-For specific Tinker Construct's Materials.
+Pour des matériaux spécifiques de construction de Tinker.
 
-### Syntax:
+### Syntaxe :
 
-    // Blank Example:
+    // Exemple:
     mods.compatskills.MaterialLock.addMaterialLock(String identifier, String... requirements);
     
-    // Example:
-    mods.compatskills.MaterialLock.addMaterialLock("wood", "reskillable:mining|5", "reskillable:magic|7");
+    // Exemple:
+    mods.compatskills.MaterialLock.addMaterialLock("bois", "reskillable:mining|5", "reskillable:magic|7");

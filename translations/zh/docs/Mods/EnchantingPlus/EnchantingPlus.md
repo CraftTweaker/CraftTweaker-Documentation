@@ -1,19 +1,19 @@
-# Enchanting Plus
+# 附魔加成
 
-The [Enchanting Plus](https://minecraft.curseforge.com/projects/enchanting-plus) allows players to have more control over the enchanting experience. CraftTweaker can be used to apply certain restrictions to this mod.
+[附魔加插](https://minecraft.curseforge.com/projects/enchanting-plus) 允许玩家更多地控制附魔体验。 CraftTinventer 可以用来对此mot 施加某些限制。
 
-# Blacklisting Items
+# 黑名单项目
 
-Prevents a specific item from entering the advanced enchanting table.
+阻止特定项目进入高级附魔台。
 
 ```zenscript
-// mods.eplus.Eplus.blacklistItem(IItemStack item);
-mods.eplus.Eplus.blacklistItem(<minecraft:chainmail_helmet>);
+// mods.eplus.Eplus.blacklistItem(ItemStack item);
+mods.epplus.Eplus.blacklistItem(<minecraft:chainmail_helmet>);
 ```
 
-# Blacklisting Enchantments
+# 黑名单附件
 
-Prevents a specific enchantment from being applied at the advanced enchanting table.
+阻止特定的附魔在高级附魔桌上应用。
 
 ```zenscript
 // mods.eplus.Eplus.blacklistEnchantment(IEnchantmentDefinition enchantment);

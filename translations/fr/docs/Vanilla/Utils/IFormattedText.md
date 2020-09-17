@@ -1,16 +1,16 @@
-# IFormattedText
+# format@@0 IFormattedText
 
-## Importing the package
+## Importation du paquet
 
-It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
-`import crafttweaker.formatting.IFormattedText;`
+Il pourrait vous être nécessaire d'importer le paquet si vous rencontrez des problèmes (comme lancer un [Tableau](/AdvancedFunctions/Arrays_and_Loops/)), alors mieux être sûr que désolé et ajouter l'importation.  
+`importer crafttweaker.formatting.IFormattedText ;`
 
-## Creating an IFormattedText Object
+## Création d'un objet IFormattedText
 
-You can always defer an IFormatted Text from a String (the conversion is automatic).
+Vous pouvez toujours reporter un texte IFormatted d'une chaîne (la conversion est automatique).
 
-## Using an IFormattedText Object
+## Utiliser un objet IFormattedText
 
-You can add or concatenate two IFormattedText together using the respecting Operators: `+ ~`
+Vous pouvez ajouter ou concaténer deux IFormattedText ensemble en utilisant les opérateurs respectueux : `+ ~`
 
-Besides that you can use the [IFormatter](/Vanilla/Utils/IFormatter/) to format an IFormattedText Object.
+En plus de cela, vous pouvez utiliser [IFormatter](/Vanilla/Utils/IFormatter/) pour formater un objet IFormattedText .

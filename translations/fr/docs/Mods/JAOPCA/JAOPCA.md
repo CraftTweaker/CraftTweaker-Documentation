@@ -1,63 +1,63 @@
 # JAOPCA
 
-[JAOPCA](https://minecraft.curseforge.com/projects/jaopca) (Just A Ore Processing Compatibility Attempt) is a mod that aims to add ore processing compatibilty to many mods.
+[JAOPCA](https://minecraft.curseforge.com/projects/jaopca) (Juste une tentative de compatibilité de traitement de minerais) est un mod qui vise à ajouter la compatibilité du traitement du minerai à de nombreux mods.
 
-## Importing the package
+## Importation du paquet
 
-If you want to shorten your method calls, you can import the package.  
-You can do so using
+Si vous voulez raccourcir vos appels de méthode, vous pouvez importer le package.  
+Vous pouvez le faire en utilisant
 
 ```zenscript
-import mods.jaopca.JAOPCA;
+Importer mods.jaopca.JAOPCA;
 ```
 
-## Methods
+## Méthodes
 
-This package is your entry point for JAOPCA. It provides a means of checking for and getting [OreEntry](/Mods/JAOPCA/OreEntry/) objects. Check the respective page for further information, but in short they are material names (e.g. "Gold") that can then have entries, like chunks, dusts and all.
+Ce paquet est votre point d'entrée pour JAOPCA. Il fournit un moyen de vérifier et d'obtenir des objets [OreEntry](/Mods/JAOPCA/OreEntry/). Consultez la page correspondante pour plus d'informations, mais en bref, ce sont des noms matériels (e. "Or") qui peut alors avoir des entrées, comme des chunks, des poussières et tout.
 
-- Entry: e.g. "nugget", "dust", "molten", ... (check [here](/Mods/JAOPCA/RegisteredEntries/) for a list of them all)
-- [OreEntry](/Mods/JAOPCA/OreEntry/): e.g. "Diamond", "Coal", "Redstone", ...
-- OreType: e.g. "INGOT", "GEM", "DUST"
+- Entrée : par exemple "nugget", "poussière", "fondu", ... (regardez [ici](/Mods/JAOPCA/RegisteredEntries/) pour une liste de toutes)
+- [OreEntry](/Mods/JAOPCA/OreEntry/): par exemple "Diamant", "Charbon", "Redstone", ...
+- OreType: par exemple "INGOT", "GEM", "DUST"
 
-### Check if an entry exists
+### Vérifier si une entrée existe
 
-Returns `true` if an entry with the given name exists
+Retourne `true` si une entrée avec le nom donné existe
 
 ```zenscript
 //mods.jaopca.JAOPCA.containsEntry(entryName);
 mods.jaopca.JAOPCA.containsEntry("nugget");
 ```
 
-### Get an OreEntry
+### Obtenir une entrée OreEntry
 
-Returns the given [OreEntry](/Mods/JAOPCA/OreEntry/) for the given name, or `null` if it does not exist. *Careful: Most materials are Capitalized, and yes, casing matters!*
+Renvoie le [OreEntry donné](/Mods/JAOPCA/OreEntry/) pour le nom donné, ou `null` s'il n'existe pas. *Attention : La plupart des matériaux sont en majuscule et oui, les matières de caissage !*
 
 ```zenscript
 //mods.jaopca.JAOPCA.getOre(oreName);
-mods.jaopca.JAOPCA.getOre("Coal");
+mods.jaopca.JAOPCA.getOre("Charbon");
 ```
 
-### Get all OreEntries for an entry
+### Obtenir toutes les OreIntries pour une entrée
 
-Returns a list of all [OreEntry](/Mods/JAOPCA/OreEntry/) objects that have the given entry registered.
+Retourne une liste de tous les objets [OreEntry](/Mods/JAOPCA/OreEntry/) qui ont l'enregistrement de l'entrée donnée.
 
 ```zenscript
 //mods.jaopca.JAOPCA.getOresForEntry(entryName);
 mods.jaopca.JAOPCA.getOresForEntry("nugget");
 ```
 
-### Get all OreEntries for an entry
+### Obtenir toutes les OreIntries pour une entrée
 
-Returns a list of all [OreEntry](/Mods/JAOPCA/OreEntry/) objects that are of the given oreType.
+Renvoie une liste de tous les objets [OreEntry](/Mods/JAOPCA/OreEntry/) qui sont du type d'oreType donné.
 
 ```zenscript
 //mods.jaopca.JAOPCA.getOresForType(oreType);
 mods.jaopca.JAOPCA.getOresForType("GEM");
 ```
 
-### Get all registered OreEntries
+### Obtenir toutes les OreEntrées enregistrées
 
-Returns a list of all registered [OreEntry](/Mods/JAOPCA/OreEntry/) objects.
+Retourne une liste de tous les objets enregistrés [OreEntry](/Mods/JAOPCA/OreEntry/).
 
 ```zenscript
 mods.jaopca.JAOPCA.getAllOres();

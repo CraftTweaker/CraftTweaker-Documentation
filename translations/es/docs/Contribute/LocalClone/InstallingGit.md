@@ -1,34 +1,34 @@
 # Installing Git
 
-In order for you to [clone your forked repository](/Contribute/LocalClone/Clone/) you will need to install git.  
-Git is a distributed version control system (basically, it's what GitHub, BitBucket and other version control services use).
+Para que [clone su repositorio bifurcado](/Contribute/LocalClone/Clone/) necesitará instalar git.  
+Git es un sistema distribuido de control de versiones (básicamente, es lo que utilizan GitHub, BitBucket y otros servicios de control de versiones).
 
-## Getting Git
+## Obteniendo Git
 
-You can check if you have git installed by opening the Command Prompt and executing the command `git`.  
-If you get the usage page, then you have it installed and can skip this page.  
-If you do not get the usage page then you either have it not installed or you have not added it to your PATH (see below). In a case like this you will need to install git or add it to your path:  
-![CMD Prompt issuing git command without git being installed](/Contribute/LocalClone/assets/CMD_noGit.png)
+Puedes comprobar si tienes instalado git abriendo el comando Prompt y ejecutando el comando `git`.  
+Si obtiene la página de uso, entonces la tiene instalada y puede saltarse esta página.  
+Si no recibe la página de uso entonces no la tiene instalada o no la ha añadido a su PATH (ver abajo). En un caso como este, necesitará instalar git o añadirlo a su ruta:  
+![CMD Prompt ejecutando comando git sin que se instale git](/Contribute/LocalClone/assets/CMD_noGit.png)
 
-### Downloading and installing Git
+### Descargando e instalando Git
 
-If you do not have git installed, then you can download the installer from [their official page](https://git-scm.com/downloads/).  
-Choose your Operation System, download the installer, run it and follow the instructions.  
-If you are not sure on which options to check, leave them as default.  
-If you cannot proceed after setting your preferred text editor, go back one page and then go forward to the page again, in some cases this will make the `next` button appear.
+Si no tiene instalado git, puede descargar el instalador desde [su página oficial](https://git-scm.com/downloads/).  
+Elija su Sistema de Operación, descargue el instalador, ejecútelo y siga las instrucciones.  
+Si no está seguro de las opciones a comprobar, déjelas por defecto.  
+Si no puede continuar después de configurar su editor de texto preferido, volver a una página e ir a la página otra vez en algunos casos esto hará que el botón `siguiente` aparezca.
 
-### Adding Git to your PATH
+### Añadiendo Git a tu PATH
 
-After you have installed Git, it should be added to your PATH. If not, first try to close and open your command prompt.  
-If it still tells you it doesn't know git, restart your computer.  
-If it still tells you it doesn't know git, you may need to add it to your path.
+Después de haber instalado Git, debe ser añadido a tu PATH. Si no, primero trate de cerrar y abrir su línea de comandos.  
+Si todavía le dice que no sabe git, reinicie su computadora.  
+Si todavía te dice que no sabe git, puede que necesites añadirlo a tu ruta.
 
-I won't cover how to add it in detail, all you need to do is add the directory where you installed git to as path.  
-If you for example installed Git to `C:\Program Files\Git` you will need to add `C:\Program Files\Git\cmd` to your path.  
-Afterwards restart your command prompt or your computer.
+No cubro cómo añadirlo en detalle, todo lo que necesitas hacer es añadir el directorio al que has instalado git como ruta.  
+Si por ejemplo instaló Git a `C:\Program Files\Git` necesitará añadir `C:\Program Files\Git\cmd` a su ruta.  
+Después, reinicie el intérprete de comandos o su ordenador.
 
-Technically, this is not required but it makes some commands easier.
+Técnicamente, esto no es necesario pero hace que algunos comandos sean más fáciles.
 
-## How to continue
+## Cómo continuar
 
-Now that you have installed git you can [clone your forked repository](/Contribute/LocalClone/Clone/).
+Ahora que ha instalado git puede [clonar su repositorio bifurcado](/Contribute/LocalClone/Clone/).

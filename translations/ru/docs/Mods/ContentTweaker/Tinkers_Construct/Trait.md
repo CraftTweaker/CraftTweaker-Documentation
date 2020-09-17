@@ -1,36 +1,36 @@
-# Trait Representation
+# Представление симптомов
 
-A Trait representation represents a Tinkers' Construct Trait.  
-You can get such an object either from the [Trait Builder](/Mods/ContentTweaker/Tinkers_Construct/TraitBuilder/) or from the [Trait Bracket Handler](/Mods/ContentTweaker/Tinkers_Construct/Brackets/Bracket_Trait/).
+Представление симптомов представляет собой симптом конструирования Тинкеров.  
+Такой объект можно получить из [Создателя симптомов](/Mods/ContentTweaker/Tinkers_Construct/TraitBuilder/) или [Обработчика симптомов](/Mods/ContentTweaker/Tinkers_Construct/Brackets/Bracket_Trait/).
 
 ## Импорт класса
 
-It might be required for you to import the class if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
+Возможно, вам потребуется импортировать класс, если вы столкнетесь с какими-либо проблемами (например, наложение [массива](/AdvancedFunctions/Arrays_and_Loops/)), так что лучше быть безопасным, чем извините и добавить импорт.  
 `import mods.contenttweaker.tconstruct.Trait`
 
-## ZenGetter
+## Геттеры
 
-| Геттер        | Type   |
-| ------------- | ------ |
-| identifier    | string |
-| commandString | string |
+| Геттер           | Тип    |
+| ---------------- | ------ |
+| identifier       | string |
+| командная строка | string |
 
-## Adding trait items
+## Добавление симптомов
 
-If you combine the given ingredient together with a tool in a tinker's tool forge, you can apply the trait as modifier.
+Если вы комбинируете данный ингредиент вместе с инструментом в поддоне инструмента, вы можете применить симптомы в качестве модификатора.
 
 ```zenscript
-//myTrait.addModifierItem(IIngredient item, @Optional(1) int amountNeeded, @Optional(1) int amountMatched));
+//myTrait.addModifierItem(IIngredient item, @Optional(1) int amountMatched));
 myTrait.addModifierItem(<item:minecraft:iron_pickaxe>);
 myTrait.addModifierItem(<item:minecraft:iron_block>, 4, 2);
 ```
 
-- `item` is the item that is matched against. You can use [Item Conditions](/Vanilla/Items/Item_Conditions/) but no Transformers. 
-- `amountNeeded` is the amount of items that is matched against. You can split them over all the slots the toolforge provides, which also allows you to go above 64. In the example above, you need 4 iron blocks per addition. Defaults to 1.
-- `amountMatched` is the amount of trait points added per `amountNeeded`. In the example above four iron blocks give two trait points. Defaults to 1.
+- `элемент` - это предмет, который соответствует данному предмету. Вы можете использовать [Условия предмета](/Vanilla/Items/Item_Conditions/) , но не преобразователей. 
+- `Нужна сумма` — это совпадающее количество предметов. Вы можете разделить их на все ячейки, которые предоставляет ковка инструментов, что также позволяет вам идти выше 64. В приведенном выше примере тебе нужно 4 железных блока на добавку. По умолчанию 1.
+- `Соответствующая сумма` - количество бонусных очков за `требуемое количество`. В примере выше четырех железных блоков задают две точки симптомов. По умолчанию 1.
 
-## Accessing Trait Data
+## Доступ к данным о симптомах
 
-Trait data is the data that belongs to a trait and is itemBound. As such, you can provide the [IItemStack](/Vanilla/Items/IItemStack/) and retrieve the [TraitDataRepresentation](/Mods/ContentTweaker/Tinkers_Construct/TraitDataRepresentation/) object.
+Данные симптомов — это данные, которые принадлежат симптому и являются элементами. В этом случае вы можете предоставить [IItemStack](/Vanilla/Items/IItemStack/) и получить объект [TraitDataRepresentation](/Mods/ContentTweaker/Tinkers_Construct/TraitDataRepresentation/).
 
     val myTraitData = myTrait.getData(itemWithTrait);

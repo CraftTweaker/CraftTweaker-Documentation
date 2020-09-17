@@ -1,52 +1,52 @@
-# ILiquidDefinition
+# ILiquidОпределение
 
-The ILiquidDefinition defines the liquid an [ILiquidStack](/Vanilla/Liquids/ILiquidStack/) consists of. Unlike the ILiquidStack, this interface allows you to change fluid properties.
+ILiquidDefinition определяет жидкость [ILiquidStack](/Vanilla/Liquids/ILiquidStack/). В отличие от ILiquidStack, этот интерфейс позволяет изменять свойства жидкости.
 
 ## Импорт пакета
 
-It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
-`import crafttweaker.liquid.ILiquidDefinition;`
+Возможно, вам потребуется импортировать пакет, если вы столкнетесь с какими-либо проблемами (например, наложение [массива](/AdvancedFunctions/Arrays_and_Loops/)), так что лучше быть безопасным, чем извините и добавить импорт.  
+`импорт crafttweaker.liquid.ILiquidDefinition;`
 
-## Methods
+## Методы
 
-So, what can we do with it?
+Что мы можем с этим сделать?
 
-### Multiplication
+### Умножение
 
-Multiplying a ILiquidDefinition results in a new [ILiquidStack](/Vanilla/Liquids/ILiquidStack/) with the specified amount in millibuckets
+Умножение результатов ILiquidDefinition в новом [ILiquidStack](/Vanilla/Liquids/ILiquidStack/) с указанным количеством в миллиблоках
 
 ```zenscript
 val def = <liquid:lava>.definition;
 
-//essentially the same
+//по существу тот же
 val bucketOfLava = def * 1000;
 val bucketOfLava1 = <liquid:lava> * 1000;
 ```
 
-## Get and Set fluid properties
+## Получить и задать свойства жидкости
 
-As an ILiquidDefinition represents a liquid, you can get, but also set it's properties. Check the table below for further information.
+Так как ILiquidDefinition представляет собой жидкость, вы можете получить, но также установить его свойства. Проверьте таблицу ниже для получения дополнительной информации.
 
-Like in the table above, you set the Zengetter/Setter at the end of the ILiquidDefinition. Some ZenGetters have no according ZenSetter, you will need to rely on other means to alter these properties.
+Как и в вышеприведенной таблице, вы устанавливаете Zengetter/Setter в конце ILiquidDefinition. Некоторые ZenGetters не имеют в соответствии с ZenSetter, вам придется полагаться на другие средства для изменения этих свойств.
 
-Be careful with Zensetters though, they only alter the fluid registry and have no effect on fluids in the world. You will probably only need the temperature setter when messing with [Tinkers' Construct Smeltery fuels](/Mods/Modtweaker/TConstruct/Fuel/).
+Будьте осторожны с Zensetters, они изменяют только регистр жидкости и не влияют на жидкости в мире. Вероятно, вам понадобится только установка температуры при общении с [станками типа "Конструкция Металлического топлива"](/Mods/Modtweaker/TConstruct/Fuel/).
 
 ```zenscript
 val definition = <liquid:lava>.definition;
 
-//Zengetter: luminosity
+//Zengetter: Светость
 val lavaL = definition.luminosity;
 
-//Zensetter: luminosity
+//Zensetter: Светость
 definition.luminosity = 0;
 ```
 
-| Геттер      | Zensetter   | What is this?                                            | Return/Set Type |
-| ----------- | ----------- | -------------------------------------------------------- | --------------- |
-| name        |             | This returns the unlocalized liquid name                 | string          |
-| displayName |             | This returns the localized liquid name                   | string          |
-| luminosity  | luminosity  | This returns/sets the luminosity of the referred liquid  | int             |
-| density     | density     | This returns/sets the density of the referred liquid     | int             |
-| temperature | temperature | This returns/sets the temperature of the referred liquid | int             |
-| viscosity   | viscosity   | This returns/sets the viscosity of the referred liquid   | int             |
-| gaseous     | gaseous     | This returns/sets whether the referred liquid is gaseous | boolean         |
+| Геттер       | Зенсеттер    | Что это?                                                          | Тип возврата/набора |
+| ------------ | ------------ | ----------------------------------------------------------------- | ------------------- |
+| name         |              | Это возвращает нелокализованное имя жидкости                      | string              |
+| displayName  |              | Это возвращает локализованное имя жидкости                        | string              |
+| яркость      | яркость      | Этот возврат/устанавливает яркость упомянутой жидкости            | int                 |
+| плотность    | плотность    | Этот возврат/устанавливает плотность упомянутой жидкости          | int                 |
+| температура  | температура  | Это возвраты/устанавливает температуру указанной жидкости         | int                 |
+| вязкость     | вязкость     | Этот возврат/устанавливает вязкость упомянутой жидкости           | int                 |
+| газообразный | газообразный | Это возвращает / устанавливает ли указанная жидкость газообразной | boolean             |

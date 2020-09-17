@@ -1,27 +1,27 @@
-# Water Extractor
+# Extracteur d'eau
 
-The *waterextractor* package is used for adding or removing recipes to/from the Water Extractor Insert and Extract process.
+L'ensemble *d'extracteur d'eau* est utilisé pour ajouter ou supprimer des recettes vers/depuis le processus d'insertion et d'extraction d'eau.
 
-## Calling
+## Appel en cours
 
-You can call the *waterextractor* package using `mods.skyresources.waterextractor`
+Vous pouvez appeler le paquet *waterextractor* en utilisant `mods.skyresources.waterextractor`
 
-## Recipe Addition
+## Ajout de recette
 
 ```zenscript
-//mods.skyresources.waterextractor.extract.addRecipe(int waterOut, IItemStack output, IIngredient input);
+//mods.skyresources.waterextractor.extract.addRecipe(int waterout, sortie IItemStack, entrée Igredient);
 mods.skyresources.waterextractor.extract.addRecipe(500, <minecraft:dirt>, <minecraft:leaves>);
 
-//mods.skyresources.waterextractor.insert.addRecipe(IItemStack output, IIngredient input, int waterIn);
+//mods. kyresources.waterextractor.insert.addRecipe(sortie IItemStack, entrée IIngredient, int waterIn));
 mods.skyresources.waterextractor.insert.addRecipe(<minecraft:dirt>, <minecraft:cobblestone>, 100);
 ```
 
-## Recipe Removal
+## Suppression de la recette
 
 ```zenscript
-//mods.skyresources.waterextractor.extract.removeRecipe(int waterOut, IItemStack output, IIngredient input);
-mods.skyresources.waterextractor.extract.removeRecipe(50, null, <minecraft:snow>);
+//mods.skyresources.waterextractor.extract.removeRecipe(int waterout, sortie IItemStack, entrée Igredient);
+mods.skyresources.waterextractor.extract.extract.removeRecipe(50, null, <minecraft:snow>);
 
-//mods.skyresources.waterextractor.insert.removeRecipe(IItemStack output);
+//mods.skyresources.waterextractor.insert.removeRecipe(sortie IItemStack);
 mods.skyresources.waterextractor.insert.removeRecipe(<minecraft:clay>);
 ```

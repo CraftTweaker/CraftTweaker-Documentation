@@ -1,13 +1,13 @@
-# Tile-Entity Locking
+# Verrouillage des tuiles
 
-## Tile-Entity Locks
+## Verrouillage de la tuile
 
-This features allows you to lock the ability for players to interact with specific Tile-Entities.
+Cette fonctionnalité vous permet de verrouiller la possibilité pour les joueurs d'interagir avec des Tile-Entités spécifiques.
 
-### Syntax:
+### Syntaxe :
 
-    // Blank Example
-    mods.compatskills.TileEntityLock.addTileEntityLock(String tileName, String... locked);
+    // Exemple vide
+    mods.compatskills.TileEntityLock.addTileEntityLock(String tileName, String... verrouillé);
     
-    // Working Example
+    // Exemple de travail
     mods.compatskills.TileEntityLock.addTileEntityLock("minecraft:furnace", "reskillable:defense|5");

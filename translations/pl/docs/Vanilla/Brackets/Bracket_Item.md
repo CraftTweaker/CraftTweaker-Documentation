@@ -1,51 +1,51 @@
-# Item Bracket Handler
+# Obsługa nawiasów Produktu
 
-The Item Bracket Handler gives you access to the Items in the game. It is only possible to get items registered in the game, so adding or removing mods may cause issues if you reference the mod's items in an ITem Bracket Handler.
+Obsługa wspornika przedmiotów daje Ci dostęp do przedmiotów w grze. Możliwe jest tylko zarejestrowanie przedmiotów w grze, więc dodawanie lub usuwanie modów może powodować problemy, jeśli odwołujesz się do elementów moda w uchwycie nawiasów ITem.
 
-Items are referenced in the Item Bracket Handler by like so:
+Przedmioty są przywoływane w uchwycie przedmiotów przez tak:
 
 ```zenscript
 <modid:itemname>
 ```
 
-With the `modid` being the modid of the mod that the Item belongs to, and `itemname` being the name of the item, It is recommended to use `/ct hand` to get the correct name of the item.
+`modid` jest modidem modelu, do którego należy przedmiot, i `nazwę przedmiotu` będącą nazwą przedmiotu, Zalecane jest użycie `/ct ręki` aby uzyskać poprawną nazwę przedmiotu.
 
-Generally it is like this though:
+Ogólnie rzecz biorąc, tak się dzieje:
 
 ```zenscript
 <item:modid:itemname:meta>
 ```
 
-With `item` as first entry, it specifically says "This has to be an item!" to CT.  
-As you've seen above: Optional.  
-Usually you will never need this, unless dealing with several custom bracket handlers.  
-`modid` is the modid of the mod that the Item belongs to.  
-`itemname` is the name of the item, use /ct hand to get the correct name.  
-`meta` is the meta value of the item (e.g. Damage value, types, etc.). This is an Integer.  
-You can also use a wildcard `*` to address all meta values.  
-Also optional: If left out it will be 0.
+`element` jako pierwszy wpis, wyraźnie mówi "To musi być element!" do CT.  
+Jak widziałeś wyżej: Opcjonalne.  
+Zazwyczaj nie będziesz tego potrzebować, chyba że zajmie się kilkoma niestandardowymi uchwytami nawiasów.  
+`modid` to modid modelu, do którego należy przedmiot.  
+`nazwa przedmiotu` jest nazwą przedmiotu, użyj /ct ręce, aby uzyskać poprawną nazwę.  
+`meta` to meta wartość przedmiotu (np. wartość obrażeń, typy itp.). To jest liczba całkowita.  
+Możesz również użyć wieloznacznika `*` aby odnieść się do wszystkich wartości meta.  
+Opcjonalnie: Jeśli zostawisz to 0.
 
 Normally, this will return an IItemStack Object.  
 Please refer to [the respective wiki entry](/Vanilla/Items/IItemStack/) for further information.
 
-## Examples
+## Przykłady
 
-An example of the Item Bracket Handler would be:
+Przykładem uchwytu przedmiotów byłoby:
 
 ```zenscript
-//apple
+//jaw
 <minecraft:apple>
 
-//coal
+//węgiel
 <minecraft:coal>
 <minecraft:coal:0>
 
-//charcoal
+//węgiel drzewny
 <minecraft:coal:1>
 
-//both, coal and charcoal
+//zarówno węgiel i węgiel drzewny
 <minecraft:coal:*>
 <item:minecraft:coal:*>
 ```
 
-This will give you access to the `Apple` item.
+To da Ci dostęp do elementu `Apple`.

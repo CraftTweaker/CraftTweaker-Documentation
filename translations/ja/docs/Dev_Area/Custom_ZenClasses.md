@@ -1,46 +1,46 @@
 # ZenClasses
 
-I am putting this here so only those who want to know at least some things on ZS will find it.
+私はこれをここに置いているので、少なくともZS上のいくつかのことを知りたい人だけがそれを見つけるでしょう。
 
 A ZenClass is essentially a java class but you can define it from within ZS.  
 If you think 'That does not really fit the theme of a scripting language' you are right.  
 That's why only those who are able to mess with it should ever find this.
 
-## Keywords
+## キーワード
 
-These are keywords that can be found in the class' body and they will initiate a certain action, like adding a member to the class.
+これらはクラスの本文で見つけることができるキーワードであり、クラスにメンバーを追加するなど、特定のアクションを開始します。
 
-| Name           | 説明                                                                                                                                     |
-| -------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
-| zenClass       | Starts a new class, needs to be followed by the name.                                                                                  |
-| var/val        | Creates an instance variable, final of the val keyword was used.                                                                       |
-| static         | Creates a class (static) variable. They can't be final.                                                                                |
-| zenConstructor | Creates a constructor for the class.                                                                                                   |
-| function       | Creates an instance method. There's no way of creating static methods, as you can do that outside the class as well.                   |
-| this           | Reference to the object we are currently in. Only useable in methods and constructors. Used if a parameter hides a field, for example. |
+| 名称             | 説明                                                                     |
+| -------------- | ---------------------------------------------------------------------- |
+| zenClass       | 新しいクラスを開始します。名前に続ける必要があります。                                            |
+| var/val        | valキーワードの最後に使用されたインスタンス変数を作成します。                                       |
+| static         | クラス（静的）変数を作成します。 彼らは最終的であることができない。                                     |
+| zenConstructor | クラスのコンストラクタを作成します。                                                     |
+| 関数             | インスタンスメソッドを作成します。 静的メソッドを作成する方法はありません。クラス以外でも実行できます。                   |
+| これは            | 現在のオブジェクトへの参照。 メソッドとコンストラクタでのみ使用できます。 たとえば、パラメータがフィールドを非表示にする場合に使用します。 |
 
-## Example
+## 例
 
-A commented example:
+コメントされた例:
 
 ```zenscript
-<br />//Creates a class named 'name', you can also access it using scripts.scriptPath.name
+<br /><br />//Creates a class named 'name', you can also access it using scripts.scriptPath.name
 
 
 zenClass name {
 
     //Each variable needs a type set. 
-    //Variables don't need to be initialized, but if you do, initialization is as in Java.
+    //変数を初期化する必要はありませんが、その場合は Java のように初期化されます。
 
 
-    //Statics are initialized in <clinit>, i.e. when the class is first defined.
+    //Statics は <clinit>で初期化されます。すなわち、クラスが最初に定義されたときです。
     static myStatic as string = "value";
     static otherStatic as string = "value";
 
     //If an instance varaible has an initializer, it will be initialized after before the first constructor call.
     val nonStatic as string = "123";
 
-    //If an instance variable has no initializer, you can initialize it in the constructor if necessary, even if final.
+    //インスタンス変数に初期化子がない場合は、最終的な場合でも、必要に応じてコンストラクタで初期化できます。
     val nonStaticTwo as string;
 
 
@@ -60,7 +60,7 @@ zenClass name {
     }
 
 
-    //It is recommended that you explicitly state method's return types as well.
+    //明示的にステートメソッドの戻り値の型も推奨します。
     function myMethod(arg as string, arg1 as string) as string {
         return "value" + arg ~ arg1;
     }

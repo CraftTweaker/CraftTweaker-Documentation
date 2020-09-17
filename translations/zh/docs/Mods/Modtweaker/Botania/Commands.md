@@ -1,154 +1,154 @@
 # 命令
 
-ModTweaker's Botania Integration extends the command palette provided by CraftTweaker.  
-To access these commands you do the same as you do for CraftTweaker commands, you use the `/crafttweaker` prefix
+ModTweil's Botania Integration 扩展了 CraftTweaker 提供的调色板命令。  
+要访问这些命令，您的行为与您对CraftTinventer 命令的行为相同， 您使用 `/craftbinter` 前缀
 
-# List of Botania Mod Tweaker Commands
+# Botania Mod Tinventer 命令列表
 
-## Recipes
+## 配方
 
 ### botbrews
 
-Usage:
+用法：
 
 `/crafttweaker botbrews`
 
-`/ct botbrews`
+`/ctbrews`
 
-Description:
+描述：
 
-Outputs a list of all registered Botania Brews to the crafttweaker.log file.
+输出所有注册的Botania Brews到craftbiner.log 文件的列表。
 
 ### botorechid
 
-Usage:
+用法：
 
 `/crafttweaker botorechid`
 
 `/ct botorechid`
 
-Description:
+描述：
 
-Outputs a list of all registered Orechid ores as well as their generation chances to the crafttweaker.log file.
+输出所有注册的 Orechid 矿石清单以及它们生成的 crafttweaker.log 文件的机会。
 
 ### botania apothecary
 
-Usage:
+用法：
 
 `/crafttweaker botania apothecary`
 
-`/ct botania apothecary`
+`/ctbotania apothecary`
 
 描述：
 
-Outputs a list of all registerd apothecary recipes to the crafttweaker.log file.
+输出所有注册的 apothecary 配方的列表到 crafttweeper.log 文件。
 
-### botania brews
+### 牛面包
 
-Usage:
+用法：
 
-`/crafttweaker botania brews`
+`/手工艺较弱的面包`
 
-`/ct botania brews`
+`/ctbotania butania brews`
 
-Description:
+描述：
 
-Outputs a list of all registerd brewing recipes to the crafttweaker.log file.
+输出所有注册正在酿造的配方的列表到 craftminstruer.log 文件。
 
 ### botania trades
 
-Usage:
+用法：
 
 `/crafttweaker botania trades`
 
-`/ct botania trades`
+`/ct botania 交易`
 
-Description:
+描述：
 
-Outputs a list of all registerd elven trade recipes to the crafttweaker.log file.
+输出所有注册的 elven 贸易配方的列表到 craftminstrer.log 文件。
 
 ### botania infusions
 
-Usage:
+用法：
 
 `/crafttweaker botania infusions`
 
-`/ct botania infusions`
+`/ctbotania 引入次数`
 
-Description:
+描述：
 
-Outputs a list of all registerd mana infusion recipes to the crafttweaker.log file.
+输出所有注册的 mana 注入配方的列表到 craftminstruer.log 文件。
 
 ### botania daisy
 
-Usage:
+用法：
 
 `/crafttweaker botania daisy`
 
 `/ct botania daisy`
 
-Description:
+描述：
 
-Outputs a list of all registerd pure daisy recipes to the crafttweaker.log file.
+输出所有注册的纯乳制品配方到craftminstruer.log 文件的列表。
 
 ### botania altar
 
-Usage:
+用法：
 
 `/crafttweaker botania altar`
 
 `/ct botania altar`
 
-Description:
+描述：
 
-Outputs a list of all registerd botania altar recipes to the crafttweaker.log file.
+输出所有注册botania altar 配方到craftbiner.log 文件的列表。
 
 ## Lexica Botania
 
 ### botlexcats
 
-Usage:
+用法：
 
 `/crafttweaker botlexcats`
 
 `/ct botlexcats`
 
-Description:
+描述：
 
-Outputs a list of all registerd botania lexicon categories to the crafttweaker.log file.
+输出所有注册botania 词汇类别到craftbiner.log 文件的列表。
 
-### botlexentries
+### botlexentres
 
-Usage:
+用法：
 
-`/crafttweaker botlexentries`
+`/craftbinforce botlexentres`
 
-`/ct botlexentries`
+`/ct botlexentres`
 
-Description:
+描述：
 
-Outputs a list of all registerd botania lexicon entries to the crafttweaker.log file.
+输出所有注册botania词汇条目到craftbiner.log 文件的列表。
 
-### botlextypes
+### 博特列类型
 
-Usage:
+用法：
 
 `/crafttweaker botlextypes`
 
-`/ct botlextypes`
+`/ct 机器人类型`
 
-Description:
+描述：
 
-Outputs a list of all registerd botania lexicon knowledge types to the crafttweaker.log file.
+将所有注册botania 词汇知识类型的列表输出到craftbiner.log 文件。
 
 ### botlexpages
 
-Usage:
+用法：
 
-`/crafttweaker botlexpages`
+`/craftbinglexpages`
 
 `/ct botlexpages`
 
-Description:
+描述：
 
-Outputs a list of all registerd botania lexicon pages to the crafttweaker.log file.
+将所有注册botania词汇页面列表导出到 craftbiner.log 文件。

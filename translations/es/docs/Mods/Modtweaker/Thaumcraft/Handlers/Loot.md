@@ -1,36 +1,36 @@
-# Loot Bags
+# Bolsas de Loot
 
-This package allows you to add and remove items to/from the Loot Bags.
+Este paquete le permite añadir y quitar elementos para/de las bolsas de bote.
 
-## Importing the package
+## Importando el paquete
 
-You can [import](/AdvancedFunctions/Import/) the package and its methods to facilitate the retrival of the methods.
+Puede [importar](/AdvancedFunctions/Import/) el paquete y sus métodos para facilitar la recuperación de los métodos.
 
 ```zenscript
-import mods.thaumcraft.LootBag;
+importar mods.thaumcraft.LootBag;
 ```
 
-## Loot types
+## Tipos de botes
 
-You need to provide an array of one or multiple numbers from 0 to 2 (inclusive) to the functions.  
-Those determine the type of lootbag to be affected.
+Necesitas proporcionar una matriz de uno o varios números de 0 a 2 (inclusive) a las funciones.  
+Estos determinan el tipo de bolsa a ser afectada.
 
-- 0: Common
-- 1: Uncommon
-- 2: Rare
+- 0: Común
+- 1: Poco común
+- 2: Raro
 
-## Adding items
+## Agregando elementos
 
-Notice: Gold coins have a value of 2000, diamonds are 50.
+Aviso: Las monedas de oro tienen un valor de 2000, los diamantes son 50.
 
 ```zenscript
 //mods.thaumcraft.LootBag.addLoot(WeightedItemStack stack, int[] bagTypes)
 mods.thaumcraft.LootBag.addLoot(<minecraft:dirt>%20000, [0,1,2]);
 ```
 
-## Removing items
+## Eliminando elementos
 
 ```zenscript
-//mods.thaumcraft.LootBag.removeLoot(IItemStack stack, int[] bagTypes);
+//mods.thaumcraft.LootBag.removeLoot(ItemStack stack, int[] bagTypes);
 mods.thaumcraft.LootBag.removeLoot(<minecraft:gold_nugget>, [1,2]);
 ```

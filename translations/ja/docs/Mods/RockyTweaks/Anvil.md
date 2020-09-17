@@ -1,23 +1,23 @@
-# Anvil
+# 金床
 
-## Package
+## パッケージ
 
-`mods.rockytweaks.Anvil`
+`Mods.rockytweaks.Anvil`
 
-## Addition
+## 加算
 
 ### Single
 
-Creates individual anvil recipes that a displayed separately in JEI.
+JEIで個別に表示されるアンビルレシピを個別に作成します。
 
 ```zenscript
 // addRecipe(IItemstack input1, IItemstack input2, IItemstack output, int exp-cost);
-mods.rockytweaks.Anvil.addRecipe(<minecraft:book>, <minecraft:quartz> * 8, <minecraft:enchanted_book>.withTag({StoredEnchantments: [{lvl: 1 as short, id: 16 as short}]}), 5);
+mods.rockyweaks.Anvil.addRecipe(<minecraft:book>, <minecraft:quartz> * 8, <minecraft:enchanted_book>.withTag({StoredEnchantments: [{lvl: 1 as short, id: 16 as short}]}), 5);
 ```
 
-### Recipe Set
+### レシピセット
 
-Creates multiple anvil recipes that JEI cycles through the possible options.
+JEIが選択可能なオプションを通して循環させる複数のアンビルレシピを作成します。
 
 ```zenscript
 // addRecipe(IItemstack input1, IItemstack[] input2, IItemstack[] output, int[] exp-cost);
@@ -40,9 +40,9 @@ mods.rockytweaks.Anvil.addRecipe(<minecraft:book>,
 );
 ```
 
-## Removal
+## 削除
 
-The anvil does not use recipes in the normal sense but you are still able to remove/blacklist specific inputs or outputs.
+アンビルは、通常の意味でレシピを使用しませんが、特定の入力または出力を削除/ブラックリストにすることができます。
 
 ```zenscript
 // remove(IIngredient[] inputs)

@@ -1,37 +1,37 @@
-# Coolant
+# 冷却器
 
-The Coolant manager does not belong to any specific machine but manages coolant values for all other machines.  
-For example the Enervation Dynamo uses the coolant values, as does the Magmatic Dynamo with the Ientropic Reservoir augment provided.
+冷却器管理器不属于任何特定机器，而是管理所有其他机器的冷却值。  
+例如，Enervation Dynamo使用冷却值，就像Magmatic Dynamo提供的 Ientropic Reservoir 扩充一样。
 
-## Import the package
+## 导入软件包
 
 To shorten method calls you can [import](/AdvancedFunctions/Import/) the package like so:
 
 ```zenscript
-import mods.thermalexpansion.Coolant;
+导入 mods.thermalext.Coolant;
 ```
 
-## Add Coolant
+## 添加冷却器
 
-Use this to register a new coolant to the manager.  
-CoolantRF needs to be non-negative, and the coolant factor needs to be between 1 and 100 (inclusive).  
-If those ranges are not met, the coolant will not be registered!
+用它来注册一个新的冷却器。  
+冷却频率必须是非负的，冷却系数必须介于1-100之间(包括在内)。  
+如果不符合这些范围，冷却器将不会注册！
 
 ```zenscript
-//mods.thermalexpansion.Coolant.addCoolant(ILiquidStack fluid, int coolantRf, int coolantFactor);
-mods.thermalexpansion.Coolant.addCoolant(<liquid:lava>, 0, 1);
+//mods.thermalreplos.Coolant.addCoolant(ILiquidStack fluid, int colantRf, int colantFactor);
+mods.thermalex.Coolant.addCoolant(<liquid:lava>, 0, 1);
 
 
-//These are two of the values TE uses by default:
-//mods.thermalexpansion.Coolant.addCoolant(<liquid:water>, 250000, 20);
-//mods.thermalexpansion.Coolant.addCoolant(<liquid:cryotheum>, 3000000, 60);
+///These are two of the value TE uses by default:
+/mods. hermalext.Coolant.addCoolant(<liquid:water>, 250000, 20);
+//mods.thermalext.Coolant.addCoolant(<liquid:cryotheum>, 30000, 60);
 ```
 
-## Remove Coolant
+## 移除冷却器
 
-Use this to deregister an existing coolant from the manager.
+用它来取消管理器中现有的冷却器。
 
 ```zenscript
-//mods.thermalexpansion.Coolant.removeCoolant(ILiquidStack fluid);
-mods.thermalexpansion.Coolant.removeCoolant(<liquid:water>);
+//mods.thermalext.Coolant.removeCoolant(ILiquidStack fluid);
+mods.thermalext.Coolant.removeCoolant(<liquid:water>);
 ```

@@ -1,68 +1,68 @@
-# Diesel Helper
+# Dieselhilfe
 
-The Diesel Handler package can be used to change IE fuels.
+Mit dem Diesel-Handler-Paket können IE-Kraftstoffe gewechselt werden.
 
 ## Hinzufügen des Packages
 
-You can call the DieselHandler package using `mods.immersiveengineering.DieselHandler`.
+Sie können das DieselHandler-Paket mit `mods.immersiveengineering.DieselHandler` anrufen.
 
-## Add Fuel
+## Brennstoff hinzufügen
 
 | Benötigt | Type   | Datentyp                                     |
 | -------- | ------ | -------------------------------------------- |
 | Benötigt | Output | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
-| Benötigt | Input  | Integer                                      |
+| Benötigt | Input  | Ganzzahl                                     |
 
 ### Beispiel
 
 ```zenscript
-//Example:
-mods.immersiveengineering.DieselHandler.addFuel(ILiquidStack fuel, int time);
+//Beispiel:
+mods.immersiveengineering.DieselHandler.addFuel(ILiquidStack fuel time);
 
 mods.immersiveengineering.DieselHandler.addFuel(<liquid:water>, 2000);
 ```
 
-## Remove Fuel
+## Treibstoff entfernen
 
-| Required | Type   | Datentyp                                     |
-| -------- | ------ | -------------------------------------------- |
-| Required | Output | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
+| Benötigt | Type    | Datentyp                                     |
+| -------- | ------- | -------------------------------------------- |
+| Benötigt | Ausgang | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
 
 ### Beispiel
 
 ```zenscript
-//Example:
-mods.immersiveengineering.DieselHandler.removeFuel(ILiquidStack fuel);
+//Beispiel:
+mods.immersiveengineering.DieselHandler.removeFuel(ILiquidStack fuel );
 
 mods.immersiveengineering.DieselHandler.removeFuel(<liquid:water>);
 ```
 
-## Add Drill Fuel
+## Bohrstoff hinzufügen
 
-| Required | Type   | Datentyp                                     |
-| -------- | ------ | -------------------------------------------- |
-| Required | Output | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
+| Benötigt | Type    | Datentyp                                     |
+| -------- | ------- | -------------------------------------------- |
+| Benötigt | Ausgang | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
 
 ### Beispiel
 
 ```zenscript
-//Example:
-mods.immersiveengineering.DieselHandler.addDrillFuel(ILiquidStack fuel);
+//Beispiel:
+mods.immersiveengineering.DieselHandler.addDrillFuel(ILiquidStack fuel );
 
 mods.immersiveengineering.DieselHandler.addDrillFuel(<liquid:water>);
 ```
 
-## Remove Drill Fuel
+## Bohrstoff entfernen
 
-| Required | Type   | Datentyp                                     |
-| -------- | ------ | -------------------------------------------- |
-| Required | Output | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
+| Benötigt | Type    | Datentyp                                     |
+| -------- | ------- | -------------------------------------------- |
+| Benötigt | Ausgang | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
 
 ### Beispiel
 
 ```zenscript
-//Example:
-mods.immersiveengineering.DieselHandler.removeDrillFuel(ILiquidStack fuel);
+//Beispiel:
+mods.immersiveengineering.DieselHandler.removeDrillFuel(ILiquidStack fuel );
 
 mods.immersiveengineering.DieselHandler.removeDrillFuel(<liquid:water>);
 ```

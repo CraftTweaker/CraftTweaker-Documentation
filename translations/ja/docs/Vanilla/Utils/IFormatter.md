@@ -1,38 +1,38 @@
 # IFormatter
 
-## Accessing the text formatting Handler
+## テキスト書式設定ハンドラへのアクセス
 
-You can access the Formatting Handler using the `format` [global keyword](/Vanilla/Global_Functions/).
+`` [global キーワード](/Vanilla/Global_Functions/) を使用して、書式設定ハンドラにアクセスできます。
 
-## Formatting a text
+## テキストの書式設定
 
-### Color
+### 色
 
-You can give an IFormattedText a color using one of the following Colors:
+以下のいずれかの色を使用して、IFormattedText に色を付けることができます。
 
-- black
+- ブラック
 - darkBlue
-- darkGreen
+- ダークグリーン
 - darkAqua
 - darkRed
-- darkPurple
-- gold
-- gray
+- ダークパープル
+- ゴールド
+- グレー
 - darkGray
-- blue
-- green
-- aqua
-- red
+- 青
+- 緑
+- アクア
+- 赤
 - lightPurple
-- yellow
-- white
+- 黄色
+- 白
 
-### Style
+### スタイル
 
-You can give an IFormattedText one (or more) of the following formatting styles:
+以下の書式スタイルの IFormattedText を提供することができます:
 
-- obfuscated
+- 難読化
 - bold
-- strikethrough
+- 取り消し線
 - underline
 - italic

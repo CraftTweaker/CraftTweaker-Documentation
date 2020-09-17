@@ -1,29 +1,29 @@
-# WeightedLiquidStack
+# 重量LiquidStack
 
-A Weighted Liquid Stack is like a normal [ILiquidStack](/Vanilla/Liquids/ILiquidStack/) but has a percentage added to it.  
-You normally use them when dealing with percentage based actions like drops or secondary outputs.
+重量液体堆栈就像普通的 [ILiquidStack](/Vanilla/Liquids/ILiquidStack/) ，但是有一个百分比添加到它。  
+您通常在处理基于百分比的动作时使用它们，如掉落或次要输出。
 
 ## 导入相关包
 
-It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
-`import crafttweaker.item.WeightedLiquidStack;`
+如果您遇到任何问题，可能需要导入软件包(例如铸造一个 [数组](/AdvancedFunctions/Arrays_and_Loops/)), 这样比抱歉更安全并添加导入。  
+`导入craftminstruer.item.weightedLiquidStack；`
 
-## Calling a weightedLiquidStack
+## 调用一个重量的LiquidStack
 
-You can derive a weightedLiquidStack from an [ILiquidStack](/Vanilla/Liquids/ILiquidStack/) by either using the modulo operator or the weight function on it.
+您可以通过使用模块操作员或其重量函数从 [ILiquidStack](/Vanilla/Liquids/ILiquidStack/) 中得出一个重量LiquidStack 。
 
 ```zenscript
 val liquidStack = <liquid:lava>;
 
-//both create a weightedLiquidstack object with a chance of 20%
-val wLiquidStack = liquidStack % 20;
-val wLiquidStack2 = liquidStack.weight(0.2);
+///bot均创建一个重量液体堆栈对象，几率为20%
+val wLiquidStack = 液体堆栈% 20；
+val wLiquidStack2 = 液体堆栈。 8t(0.2)；
 ```
 
 ## ZenGetters
 
-| ZenGetter | 功能                                                   | 返回值类型                                          |
-| --------- | ---------------------------------------------------- | ---------------------------------------------- |
-| stack     | Returns the associated LiquidStack                   | [ILiquidStack](/Vanilla/Liquids/ILiquidStack/) |
-| chance    | Returns the stack's chance as decimal (e.g. 0.2)     | float                                          |
-| percent   | Returns the stack's chance as percentage (e.g. 20.0) | float                                          |
+| ZenGetter | 功能                     | 返回值类型                                          |
+| --------- | ---------------------- | ---------------------------------------------- |
+| 堆栈...     | 返回关联的 LiquidStack      | [ILiquidStack](/Vanilla/Liquids/ILiquidStack/) |
+| 几率：       | 返回堆栈的机会为小数 (例如0.2)     | 浮点数                                            |
+| 百分比       | 返回堆栈的几率为百分比 (例如, 20.0) | float                                          |

@@ -1,11 +1,11 @@
-# Tool Harvest-Level
+# Niveau de récolte des outils
 
-This requires the player to be holding an itemTool whose harvest level is equal or higher than the level specified.
+Cela nécessite que le joueur possède un outil de récolte dont le niveau de récolte est égal ou supérieur au niveau spécifié.
 
-    Example:
-    harvest|integer
+    Exemple:
+    récolte|entier
     
-    Working Example:
-    harvest|1
-    harvest|2
-    harvest|3
+    Exemple de travail :
+    récolte|1
+    récolte|2
+    récolte|3

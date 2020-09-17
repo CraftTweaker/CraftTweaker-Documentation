@@ -1,30 +1,30 @@
 # IMaterial
 
-An IMaterial object represents the material a block is made of.
+IMaterial オブジェクトは、ブロックで作られている材料を表します。
 
 ## パッケージのインポート
 
-It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
+問題が発生した場合は、パッケージをインポートする必要があるかもしれませんので、申し訳ありませんし、インポートを追加してください。  
 `import crafttweaker.block.IMaterial;`
 
-## ZenGetters/ZenMethods without parameters
+## パラメータのない ZenGetters/ZenMethods
 
 | ZenGetter       | ZenMethod           | Return Type |
 | --------------- | ------------------- | ----------- |
 | blocksLight     | blocksLight()       | bool        |
 | blocksMovement  | blocksMovement()    | bool        |
 | canBurn         | getCanBurn()        | bool        |
-| mobilityFlag    | getMobilityFlag()   | string      |
-| liquid          | isLiquid()          | bool        |
-| opaque          | isOpaque()          | bool        |
-| replaceable     | isReplaceable()     | bool        |
+| mobilityFlag    | getMobilityFlag()   | 文字列         |
+| 液体|<unk>        | isLiquid()          | bool        |
+| 不透明な            | isOpaque()          | bool        |
+| 交換可能            | isReplaceable()     | bool        |
 | solid           | isSolid()           | bool        |
 | toolNotRequired | isToolNotRequired() | bool        |
 |                 | setReplaceable()    | IMaterial   |
 
-## ZenMethods with parameters
+## パラメータ付きのZenMethods
 
-### Check if two IMaterials match
+### 2つのIMaterialsが一致するかどうかを確認します。
 
 Uses an IMaterial.  
 Returns a bool.
@@ -33,9 +33,9 @@ Returns a bool.
 materialObj.matches(IMaterial other);
 ```
 
-## Getting Vanilla Minecraft Materials
+## バニラのマインクラフト素材の取得
 
-You can use these methods to get the vanilla minecraft materials
+これらの方法でバニラのMinecraft素材を手に入れることができます
 
 ```zenscript
 crafttweaker.blocks.IMaterial.air();

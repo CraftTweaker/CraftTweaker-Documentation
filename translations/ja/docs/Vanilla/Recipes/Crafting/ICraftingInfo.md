@@ -1,16 +1,16 @@
 # ICraftingInfo
 
-The IcraftingInfo object contains all kinds of information on the crafting process itself:
+IcraftingInfo オブジェクトには、製作プロセス自体に関するあらゆる種類の情報が含まれています:
 
-## Importing the class
+## クラスのインポート
 
-It might be required to [import](/AdvancedFunctions/Import/) the class to avoid errors.  
+エラーを避けるためにクラスを [インポート](/AdvancedFunctions/Import/) する必要があるかもしれません。  
 `import crafttweaker.recipes.ICraftingInventory`
 
 ## ZenGetters
 
-| ZenGetter   |                                                                     |                                                    |
-| ----------- | ------------------------------------------------------------------- | -------------------------------------------------- |
-| `inventory` | [ICraftingInventory](/Vanilla/Recipes/Crafting/ICraftingInventory/) | The inventory the crafting is performed in         |
-| `player`    | [IPlayer](/Vanilla/Players/IPlayer/)                                | The player conducting the crafting                 |
-| `dimension` | int                                                                 | The dimension the crafting process is performed in |
+| ZenGetter   |                                                                     |                       |
+| ----------- | ------------------------------------------------------------------- | --------------------- |
+| `inventory` | [ICraftingInventory](/Vanilla/Recipes/Crafting/ICraftingInventory/) | インベントリは以下で行われます       |
+| `プレイヤー`     | [IPlayer](/Vanilla/Players/IPlayer/)                                | 製作を行うプレイヤー            |
+| `寸法`        | int                                                                 | 製作プロセスの寸法は次の場所で行われます。 |

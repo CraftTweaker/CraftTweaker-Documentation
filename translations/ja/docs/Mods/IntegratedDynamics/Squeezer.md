@@ -1,16 +1,16 @@
-# Squeezer
+# スクイーザー
 
-This package allows you to modify recipes for the Squeezer.
+このパッケージでは、スクイーザーのレシピを変更できます。
 
 ## パッケージのインポート
 
-If you want to import this package, here you go:
+このパッケージをインポートしたい場合は、次のようにします。
 
 ```zenscript
-import mods.integrateddynamics.Squeezer;
+import mods.integrateddynamics.Sceezer;
 ```
 
-## Adding Recipes
+## レシピを追加中
 
 ```zenscript
 //Squeezer.addRecipe(IItemStack inputStack, @Optional IItemStack outputStack, @Optional ILiquidStack outputFluid);
@@ -32,7 +32,7 @@ Squeezer.addRecipe(<minecraft:pumpkin>,
     <liquid:water> * 100);
 ```
 
-## Removing Recipes
+## レシピを削除
 
 ```zenscript
 //Squeezer.removeRecipe(IItemStack inputStack, @Optional IItemStack outputStack, @Optional ILiquidStack outputFluid);

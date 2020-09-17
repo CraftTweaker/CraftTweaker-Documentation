@@ -1,19 +1,19 @@
-# Blacklist
+# Liste noire
 
-The Blacklist package is used for adding/removing recipes from/to the melter Blacklist.
+Le paquet de liste noire est utilisé pour ajouter/supprimer des recettes de/à la liste noire de fondus.
 
-## Calling
+## Appel en cours
 
-You can call the Blacklist package using `mods.tcomplement.Blacklist`
+Vous pouvez appeler le package de la liste noire en utilisant `mods.tcomplement.Blacklist`
 
-## Blacklist entry addition
+## Ajout d'une entrée sur la liste noire
 
 ```zenscript
-//mods.tcomplement.Blacklist.addRecipe(ILiquidStack output, IItemStack input);
+//mods.tcomplement.Blacklist.addRecipe(ILiquidStack sortie, IItemStack input);
 mods.tcomplement.Blacklist.addRecipe(<liquid:seared_stone>, <minecraft:stone>);
 ```
 
-## Blacklist entry removal
+## Supprimer l'entrée de la liste noire
 
 ```zenscript
 //mods.tcomplement.Blacklist.removeRecipe(IItemStack input);

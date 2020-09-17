@@ -1,8 +1,8 @@
-# Purification Chamber
+# Chambre de purification
 
-As of Mekanism 9.7.0 it is now possible to view all recipe strings of the Purification Chamber through the command `/ct mekrecipes purification`
+Depuis le Mékanisme 9.7.0, il est maintenant possible de voir toutes les chaînes de recettes de la Chambre de Purification par la commande `purification /ct mekrecipes`
 
-## Addition
+## Ajouter
 
 ```zenscript
 mods.mekanism.purification.addRecipe(IIngredient itemInput, @Optional IGasStack gasInput, IItemStack itemOutput);
@@ -11,27 +11,27 @@ mods.mekanism.purification.addRecipe(<minecraft:wool:1>, <gas:hydrogenchloride>,
 mods.mekanism.purification.addRecipe(<minecraft:coal:1>, <minecraft:coal>);
 ```
 
-As of Mekanism 9.7.0 inputGas is no longer restricted to only oxygen
+Depuis le Mékanisme 9.7.0 l'entrée de gaz n'est plus limitée à l'oxygène
 
-Also as of Mekanism 9.7.0 it is possible to use IIngredients as the itemInput instead of only IItemStacks.
+Aussi depuis le Mékanism 9.7.0, il est possible d'utiliser IIngredients comme itemInput au lieu de IItemStacks.
 
-Note: Currently all this does is loop over the different possibilities in java while adding instead of you having to do it in ZenScript. Currently there is no built in support for compound ingredients or oredictionary in the machines themselves.
+Note: Actuellement tout cela fait une boucle sur les différentes possibilités de java tout en ajoutant au lieu de vous avoir à le faire dans ZenScript. Actuellement, il n'y a pas de support pour les composants composés ou oredictionnaire dans les machines elles-mêmes.
 
-## Removal
+## Retirer
 
 ```zenscript
-mods.mekanism.purification.removeRecipe(IIngredient itemOutput, @Optional IIngredient itemInput, @Optional IIngredient gasInput);
+mods.mekanism.purification.removeRecipe(IIngredient itemOutput, @Optional IIngredient itemInput, @Optional Ingredient gasInput);
 
 mods.mekanism.purification.removeRecipe(<mekanism:clump:2>, <mekanism:shard:2>, <gas:oxygen>);
 mods.mekanism.purification.removeRecipe(<mekanism:clump:1>);
 ```
 
-Specifying an input parameter will only remove the specific recipe that uses said input. Omitting the input parameter will remove all recipes that produce the specified output.
+Spécifier un paramètre d'entrée ne supprimera que la recette spécifique qui utilise cette entrée. L'omission du paramètre d'entrée supprimera toutes les recettes qui produisent la sortie spécifiée.
 
-## Removing all recipes
+## Suppression de toutes les recettes
 
-As of Mekanism 9.7.0 it is now possible to remove all Purification Chamber recipes. (This excludes any recipes added via CraftTweaker)
+Depuis le Mékanisme 9.7.0 il est maintenant possible de supprimer toutes les recettes de la Chambre de Purification. (Ceci exclut toutes les recettes ajoutées via CraftTweaker)
 
 ```zenscript
-mods.mekanism.purification.removeAllRecipes();
+mods mekanism.purification.removeAllRecipes();
 ```

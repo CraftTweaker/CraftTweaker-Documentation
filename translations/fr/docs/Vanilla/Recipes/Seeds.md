@@ -1,12 +1,12 @@
-# Seeds
+# Graines
 
-Seeds are things you get from punching tall grass.
+Les graines sont des choses que vous obtenez en frappant l'herbe haute.
 
-## Print all seeds to the log
+## Imprimer toutes les graines dans le journal
 
-This command will print all registered seeds to the log.
+Cette commande affichera toutes les sources enregistrées dans le journal.
 
-Needs to be performed by a player or console, cannot be written in a zs-file.
+Doit être effectué par un joueur ou une console, ne peut pas être écrit dans un fichier zs.
 
     1.12
     /ct seeds
@@ -15,40 +15,40 @@ Needs to be performed by a player or console, cannot be written in a zs-file.
     /mt seeds
     
 
-## Add a seed drop
+## Ajouter une graine
 
-Adds `item` as seed drop.  
-**Weights are relative to grass seed, which has a weight of 10 (≙ 10%)!**
+Ajoute `élément` en tant que goutte.  
+**Les poids sont relatifs à la graine d'herbe, qui a un poids de 10 (<unk> 10 %)!**
 
 ```zenscript
 vanilla.seeds.addSeed(item);
 ```
 
-`item` is a [weightedItemStack](/Vanilla/Items/WeightedItemStack/). What does that mean? It simply means that you need to give it a percentage like this:
+`item` est un [weightedItemStack](/Vanilla/Items/WeightedItemStack/). Qu'est-ce que cela veut dire? Cela signifie simplement que vous devez lui donner un pourcentage comme ceci:
 
 ```zenscript
-//adds carrots with a weight of 1
+//ajoute des carottes avec un poids de 1
 vanilla.seeds.addSeed(<minecraft:carrot> % 1);
 ```
 
-## Remove a seed drop
+## Supprimer une graine
 
-Stops `item` from being a seed drop.
+Empêche `élément` d'être un dépôt de graine.
 
 ```zenscript
 vanilla.seeds.removeSeed(item);
 ```
 
-`item` is an [IIngredient](/Vanilla/Variable_Types/IIngredient/).
+`item` est un [Ingrédient](/Vanilla/Variable_Types/IIngredient/).
 
-## Retrieve all registered Seeds
+## Récupérer toutes les graines enregistrées
 
-Returns all items as a [weightedItemStack](/Vanilla/Items/WeightedItemStack/) List.
+Renvoie tous les éléments en tant que liste [weightedItemStack](/Vanilla/Items/WeightedItemStack/).
 
 ```zenscript
-val seedList = vanilla.seeds.seeds;
+val seedList = vanilla.seeds.seeds.seeds;
 
 for item in seedList {
-    print("Item: " ~ item.stack.displayName ~ " || Chance: " ~ item.percent ~ "%");
+    print("Item: " ~ item. tack.displayName ~ " || Chance: " ~ item.percent ~ "%");
 }
 ```

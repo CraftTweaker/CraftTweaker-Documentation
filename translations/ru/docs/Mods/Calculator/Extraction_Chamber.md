@@ -1,6 +1,6 @@
-# Extraction Chamber
+# Патронник извлечения
 
-## Package
+## Пакет
 ```zenscript
 import mods.calculator.extractionChamber;
 ```
@@ -8,14 +8,14 @@ import mods.calculator.extractionChamber;
 ## Методы
 
 - **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input** The input.
-- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) output[1-2]** The outputs.
+- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) output[1-2]** Выходы.
 
-## Addition
+## Сложение
 ```zenscript
 extractionChamber.addRecipe(IIngredient input, IIngredient output1, IIngredient output2);
 ```
 
-## Removal
+## Удаление
 ```zenscript
-extractionChamber.removeRecipe(IIngredient output, IIngredient output2);
+extractionChamber.removeRecipe(IIngredient output IIngredient output);
 ```

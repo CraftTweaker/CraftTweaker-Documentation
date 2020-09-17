@@ -1,8 +1,8 @@
-# Creative Tab Bracket Handler
+# 创建标签栏处理程序
 
-The Creative Tab Bracket Handler gives you access to the creative Tabs in the game.
+Creative Tab Backet Handler 让您在游戏中访问创造性的标签。
 
-They are referenced in the Creative Tab handler this way:
+他们在创建标签处理程序中被引用：
 
 ```zenscript
 <creativetab:name>
@@ -10,4 +10,4 @@ They are referenced in the Creative Tab handler this way:
 <creativetab:misc>
 ```
 
-If the Creative Tab is found, this will return an ICreativeTab Object. Please refer to the [respective Wiki entry](/Vanilla/CreativeTabs/ICreativeTab/) for further information on what you can do with these.
+如果找到Creative Tab ，这将返回一个 ICreativeTab 对象。 请参考 [相应的 Wiki 条目](/Vanilla/CreativeTabs/ICreativeTab/) 了解您可以对这些条目做些什么。

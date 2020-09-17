@@ -1,33 +1,33 @@
-# PlayerInteractBlock
+# Spieler-Interaktblock
 
-The PlayerInteractBlock Event is fired whenever a player right clicks a block.  
-It can be canceled to prevent any other events from taking place. If the event is canceled, a specific result of success, fail or pass can be provided. By default, the result is pass.
+Das PlayerInteractBlock Event wird gefeuert, wenn ein Spieler mit der rechten Maustaste auf einen Block klickt.  
+Es kann abgebrochen werden, um zu verhindern, dass andere Ereignisse stattfinden. Wird die Veranstaltung abgebrochen, kann ein bestimmtes Erfolgsergebnis angegeben werden. Standardmäßig wird das Ergebnis übergeben.
 
 ## Event-Klasse
 
-You will need to cast the event in the function header as this class:  
-`crafttweaker.event.PlayerInteractBlockEvent`  
-You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
+Du musst das Ereignis als diese Klasse in den Funktionskopf verschieben:  
+`crafttweaker.event. layerInteractBlockEvent`  
+Sie können natürlich auch [die Klasse vor](/AdvancedFunctions/Import/) importieren und dann diesen Namen verwenden.
 
 ## Erweiterte Event-Schnittellen
 
-PlayerInteractBlock Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+PlayerInteractBlock Events implementieren die folgenden Schnittstellen und können auch alle ihre Methoden/Getters/Setter aufrufen:
 
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
-- [PlayerInteract](/Vanilla/Events/Events/PlayerInteract/)
+- [Spieler-Interact](/Vanilla/Events/Events/PlayerInteract/)
 - [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
 
 ## ZenGetter
 
 Die folgenden Informationen lassen sich von diesem Event (Ereignis) abrufen:
 
-| zengetter            | zengetter            | type                                   |
-| -------------------- | -------------------- | -------------------------------------- |
-| `hitvector`          |                      | [ivector3d](/vanilla/world/ivector3d/) |
-| `useblock`           | `useblock`           | string ("allow" / "deny" / "default")  |
-| `useitem`            | `useitem`            | string ("allow" / "deny" / "default")  |
-| `cancellationResult` | `cancellationResult` | string ("success" / "pass" / "fail")   |
+| zengetter              | zengetter              | typ                                            |
+| ---------------------- | ---------------------- | ---------------------------------------------- |
+| `hitvector`            |                        | [ivector3d](/vanilla/world/ivector3d/)         |
+| `useblock`             | `useblock`             | string ("erlaubt" / "verweigern" / "Standard") |
+| `useitem`              | `useitem`              | string ("erlaubt" / "verweigern" / "Standard") |
+| `Stornierungsresultat` | `Stornierungsresultat` | string ("success" / "pass" / "fail")           |
 
-## ZenMethods
+## ZenMethoden
 
-- `event.cancel()` sets the event as cancelled.
+- `event.cancel()` setzt das Ereignis als abgebrochen.

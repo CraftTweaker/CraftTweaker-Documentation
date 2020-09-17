@@ -1,13 +1,13 @@
-# Dimension Locking
+# Bemaßungssperre
 
-## Dimension Locking
+## Bemaßungssperre
 
-This feature allows for locking the ability to travel to specific dimensions unless requirements are met!
+Diese Funktion ermöglicht es, die Möglichkeit zu sperren, bestimmte Dimensionen zu erreichen, sofern die Anforderungen nicht erfüllt sind!
 
 ### Syntax
 
-    Blank Example:
+    Leeres Beispiel:
     mods.compatskills.DimensionLock.addDimensionLock(int dimension, String... defaultRequirements);
     
-    Working Example:
+    Arbeitsbeispiel:
     mods.compatskills.DimensionLock.addDimensionLock(-1, "reskillable:mining|5", "reskillable:magic|7");

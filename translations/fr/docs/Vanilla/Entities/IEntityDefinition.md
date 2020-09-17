@@ -1,63 +1,63 @@
-# IEntityDefinition
+# Définition IEntity
 
-This sounds scary, so what does it mean? Basically, it is a reference to an entity registered in the game, so it is a reference to, say a mob in the game.
+Cela semble effrayant, alors que cela signifie-t-il? Fondamentalement, c'est une référence à une entité enregistrée dans le jeu, donc c'est une référence, disons un mob dans le jeu.
 
-## Importing the package
+## Importation du paquet
 
-It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
-`import crafttweaker.entity.IEntityDefinition;`
+Il pourrait vous être nécessaire d'importer le paquet si vous rencontrez des problèmes (comme lancer un [Tableau](/AdvancedFunctions/Arrays_and_Loops/)), alors mieux être sûr que désolé et ajouter l'importation.  
+`importer crafttweaker.entity.IEntityDefinition;`
 
-## Calling an IEntityDefinition Object
+## Appel d'un objet IEntityDefinition
 
 ```zenscript
-//These return an IEntityDefinition Object
-val test = <entity:minecraft:sheep>;
+//Ces retournent un IEntityDefinition Object
+test val = <entity:minecraft:sheep>;
 val test2 = game.getEntity("sheep");
 
 ```
 
-## Functions
+## Fonctions
 
 So, this is where it gets interesting: What can we do with it, now that we created that thing?
 
 ### id
 
-Returns the ID as string
+Retourne l'ID en tant que chaîne de caractères
 
 ```zenscript
-//returns "net.minecraft.entity.passive.EntitySheep"
+//renvoie "net.minecraft.entity.passive.EntitySheep"
 <entity:minecraft:sheep>.id;
 ```
 
-### name
+### Nom
 
-Returns the name as string
+Retourne le nom en tant que chaîne de caractères
 
 ```zenscript
-//returns "Sheep"
+//renvoie "Sheep"
 <entity:minecraft:sheep>.name;
 ```
 
-### create entity
+### créer une entité
 
-The first method only creates an entity on the given location.  
-The second one also spawns it.
+La première méthode ne crée qu'une entité à l'emplacement donné.  
+La seconde l'appelle aussi.
 
 ```zenscript
-<entity:minecraft:sheep>.createEntity(world);
-<entity:minecraft:sheep>.spawnEntity(world, blockPos);
+<entity:minecraft:sheep>.createEntity(monde);
+<entity:minecraft:sheep>.spawnEntity(monde, blockPos);
 ```
 
-`world` is an [IWorld](/Vanilla/World/IWorld/) object.  
-`blockPos` is an [IBlockPos](/Vanilla/World/IBlockPos/) object.
+`world` est un objet [IWorld](/Vanilla/World/IWorld/) .  
+`blockPos` est un objet [IBlockPos](/Vanilla/World/IBlockPos/).
 
-## Drops
+## Largues
 
-We can even add and/or remove mob drops, isn't that great?
+Nous pouvons même ajouter et/ou supprimer des gouttes de mob, n'est-ce pas génial ?
 
-### Add normal Drop
+### Ajouter un Drop normal
 
-This adds a normal drop, a drop that can occur whenever the mob is killed by whatever means.
+Cela ajoute un drop normal, un drop qui peut se produire chaque fois que le mob est tué par quelque moyen que ce soit.
 
 ```zenscript
 val entity = <entity:minecraft:sheep>;
@@ -69,14 +69,14 @@ entity.addDrop(<minecraft:apple>);
 entity.addDrop(<minecraft:stone> % 20);
 ```
 
-`item` is the item to be added as drop and an [IItemStack](/Vanilla/Items/IItemStack/) or a [WeightedItemStack](/Vanilla/Items/WeightedItemStack/).  
-`min` is the minimum amount that is dropped and an Integer. This is optional.  
-`max` is the maximum amount that is dropped and an Integer. This is optional.  
-`chance` is the drop chance. This is optional. Not needed if you use a [weightedItemStack](/Vanilla/Items/WeightedItemStack/) instead as `item`
+`élément` est l'élément à ajouter en tant que drop et un [IItemStack](/Vanilla/Items/IItemStack/) ou un [WeightedItemStack](/Vanilla/Items/WeightedItemStack/).  
+`min` est le montant minimum qui est abandonné et un Integer. Ceci est optionnel.  
+`max` est le montant maximum qui est supprimé et un nombre entier. Ceci est optionnel.  
+`chance` est la chance d'abandonner. C'est facultatif. Pas nécessaire si vous utilisez un élément [weightedItemStack](/Vanilla/Items/WeightedItemStack/) à la place comme élément ``
 
-### Add playeronly drop
+### Ajouter une liste de joueurs uniquement
 
-Same as normal drops, but only if the entity was killed by a player.
+Identique aux chutes normales, mais seulement si l'entité a été tuée par un joueur.
 
 ```zenscript
 //addPlayerOnlyDrop(item,min,max,chance);
@@ -86,20 +86,20 @@ entity.addPlayerOnlyDrop(<minecraft:gold_ingot>, 10,64);
 entity.addPlayerOnlyDrop(<minecraft:iron_ingot> % 20, 1, 3);
 ```
 
-### Add drop Function
+### Ajouter une fonction de drop
 
-A drop function is called whenever the associated Entity is killed. You can use this if you need to check requirements for before you drop something, like only dropping in a certain biome and stuff.  
-You will need an [IEntityDropFunction](/Vanilla/Entities/IEntityDropFunction/):
+Une fonction drop est appelée chaque fois que l'entité associée est tuée. Vous pouvez l'utiliser si vous avez besoin de vérifier les conditions avant de lâcher quelque chose, comme si vous ne pouviez que dans un certain biome et quelque chose.  
+Vous aurez besoin d'une [fonction IEntityDropFunction](/Vanilla/Entities/IEntityDropFunction/):
 
 ```zenscript
-<entity:minecraft:sheep>.addDropFunction(function(entity, dmgSource) {
-    return <minecraft:iron_ingot> * 10;
-    });
+<entity:minecraft:sheep>.addDropFunction(function(function(entity, dmgSource) {
+    return <minecraft:iron_ingot> * 10 ;
+});
 ```
 
-### Remove
+### Retirer
 
-This removes a drop.
+Cela supprime un drop.
 
 ```zenscript
 val entity = <entity:minecraft:sheep>;
@@ -108,11 +108,11 @@ val entity = <entity:minecraft:sheep>;
 entity.removeDrop(<minecraft:wool>);
 ```
 
-`item` is the item to be removed from being a drop and an [IItemStack](/Vanilla/Items/IItemStack/).
+`item` est l'élément à supprimer d'être un drop et un [IItemStack](/Vanilla/Items/IItemStack/).
 
-### Clear Drops
+### Vider les gouttes
 
-This removes all drops.
+Cela supprime toutes les gouttes.
 
 ```zenscript
 val entity = <entity:minecraft:sheep>;
@@ -121,9 +121,9 @@ val entity = <entity:minecraft:sheep>;
 entity.clearDrops();
 ```
 
-### Get
+### Obtenir
 
-This returns all drops that were added via CT as list of [IEntityDrop](/Vanilla/Entities/IEntityDrop/) Objects.
+Cela retourne tous les drops qui ont été ajoutés via CT en tant que liste des objets [IEntityDrop](/Vanilla/Entities/IEntityDrop/).
 
 ```zenscript
 val entity = <entity:minecraft:sheep>;

@@ -1,11 +1,11 @@
 # VanillaDeathChest
 
-## Information
+## Дополнительная информация
 
-[VanillaDeathChest](https://www.curseforge.com/minecraft/mc-mods/vanilladeathchest) places chests (or shulker boxes) where players die containing all of their items.VanillaDeathChest is completely server-sided; it can be installed on the client for use on singleplayer worlds, but clients without this mod can connect to servers with this mod installed without losing functionality.
+[VanillaDeathChest](https://www.curseforge.com/minecraft/mc-mods/vanilladeathchest) помещает сундуки (или коробки шалков), где игроки умирают со всеми предметами. anillaDeathChest полностью сервер-сервер; он может быть установлен на клиенте для использования в одиночных мирах, но клиенты без этого мода могут подключаться к серверам с этим модом, установленным без потери возможности .
 
-VanillaDeathChest can be paired with [Game Stages](https://www.curseforge.com/minecraft/mc-mods/game-stages) and CraftTweaker to make accessing death chests more difficult for players as they progress.
+Сундук VanillaDeathChest можно связать с [стадиями](https://www.curseforge.com/minecraft/mc-mods/game-stages) и CraftTweaker, чтобы затруднить доступ к сундукам смерти.
 
-If any properties are not set via CraftTweaker, the values set in the global configuration are used. Game stages should be defined in order. Calling any of the VanillaDeathChest functions causes the specified stage to be defined if it has not been already.
+If any properties are not set via CraftTweaker, the values set in the global configuration are used. Этапы игры должны быть определены в порядке. Вызов любого из функций Chest VanillaDeathDeath приводит к тому, что указанный этап определен если он еще не был установлен.
 
-Any messages that take arguments, such as the unlock failed chat message, follow [this](https://dzone.com/articles/java-string-format-examples) format. For example, `%2$s` refers to the second argument.
+Любые сообщения, которые принимают аргументы, такие как неудачное сообщение об разблокировке чата, следуйте [этому](https://dzone.com/articles/java-string-format-examples) формату. Например, `%2$s` относится к второму аргументу.

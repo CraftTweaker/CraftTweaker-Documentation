@@ -1,17 +1,17 @@
-# ItemToss
+# Artikel Toss
 
-The ItemToss Event is fired whenever an Item is being tossed from a player's inventory.  
-Canceling this event will prevent the item from entering the world, thus causing the item to be deleted.
+Das Item Toss Event wird abgefeuert, wenn ein Gegenstand aus dem Inventar eines Spielers geworfen wird.  
+Das Abbrechen dieses Ereignisses verhindert, dass der Gegenstand in die Welt gelangt, wodurch der Gegenstand gelöscht wird.
 
 ## Event-Klasse
 
-You will need to cast the event in the function header as this class:  
-`crafttweaker.event.ItemTossEvent`  
-You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
+Du musst das Ereignis als diese Klasse in den Funktionskopf verschieben:  
+`crafttweaker.event. temTossEvent`  
+Sie können natürlich auch [die Klasse vor](/AdvancedFunctions/Import/) importieren und dann diesen Namen verwenden.
 
 ## Erweiterte Event-Schnittellen
 
-PlayerDeathDrops Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+PlayerDeathDrops Events implementieren die folgenden Schnittstellen und können alle ihre Methoden/Getters/Setter auch aufrufen:
 
 - [IEntityEvent](/Vanilla/Events/Events/IEntityEvent/)
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
@@ -20,5 +20,5 @@ PlayerDeathDrops Events implement the following interfaces and are able to call 
 
 | ZenGetter | Type                                          |
 | --------- | --------------------------------------------- |
-| item      | [IEntityItem](/Vanilla/Entities/IEntityItem/) |
+| eintrag   | [IEntityItem](/Vanilla/Entities/IEntityItem/) |
 | player    | [IPlayer](/Vanilla/Players/IPlayer/)          |

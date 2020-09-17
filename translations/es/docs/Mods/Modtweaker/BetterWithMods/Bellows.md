@@ -1,10 +1,10 @@
-# Bellows
+# Leyendas
 
-The Bellows registry allows adding items to a weight class for whether it can be blown when in front of a Bellows
+El registro de Bellows permite añadir elementos a una clase de peso para si puede ser explotado frente a un Bellows
 
-Value can be a decimal between (0, 128]. In which the number dictates how many blocks away from the bellows the item will be blown until it does not move anymore.
+El valor puede ser un punto decimal entre (0, 128]. En el que el número dicta cuántos bloques se alejarán de los fuegos se explotará el objeto hasta que no se mueva.
 
 ```zenscript
-mods.betterwithmods.Bellows.set(IItemStack stack, float value);
+mods.betterwithmods.Bellows.set(ItemStack stack, valor flotante);
 
 ```

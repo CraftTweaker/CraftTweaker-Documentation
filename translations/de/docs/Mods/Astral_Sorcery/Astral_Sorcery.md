@@ -1,12 +1,12 @@
-# Astral Sorcery
+# Astral-Hexerei
 
-Astral Sorcery is a magic mod focused around harnessing the powers of starlight and the constellations. Explore and discover the world and the sky above you; focus starlight to your will, strengthening yourself or enhancing the world around you.
+Astral Hexerei ist eine magische Mode, die sich um die Kraft des Sternenhimmels und der Sternbilder dreht. Erkunden und entdecken Sie die Welt und den Himmel über Ihnen; konzentrieren Sie das Sternlicht nach Ihrem Willen, stärken Sie sich selbst oder erweitern Sie die Welt um Sie herum.
 
-## CraftTweaker integration
+## CraftTweaker Integration
 
-Astral Sorcery comes with NATIVE crafttweaker integration.  
-This means that issues with the added methods should be discussed at the [Astral sorcery issue tracker](https://github.com/HellFirePvP/AstralSorcery/issues).
+Astral Hexerei kommt mit der handwerklichen Integration der NATIV.  
+Dies bedeutet, dass Probleme mit den hinzugefügten Methoden im [Astral Hexerei Issue Tracker](https://github.com/HellFirePvP/AstralSorcery/issues) diskutiert werden sollten.
 
-## Removed CraftTweaker methods
+## Entfernte CraftTweaker-Methoden
 
-- Astral Sorcery's CraftTweaker integration once featured a Mineralis Ritual. This is now handled by a config option!
+- Die Integration von Astral Hexerei CraftTweaker enthielt einmal ein Mineralis Ritual. Dies wird nun durch eine Konfigurationsoption bewirkt!

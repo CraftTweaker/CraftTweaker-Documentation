@@ -1,16 +1,16 @@
-# IFacing
+# Enfrentar
 
-The IFacing Interface allows you to get an [IBlockPos's](/Vanilla/World/IBlockPos/) possible directions.
+La interfaz Ifroning te permite obtener las instrucciones de [IBlockPos](/Vanilla/World/IBlockPos/) posibles.
 
-## Importing the package
+## Importando el paquete
 
-It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
-`import crafttweaker.world.IFacing;`
+Podría ser necesario que importes el paquete si encuentras algún problema, así que más vale estar seguro que lo sentimos y añadir la importación.  
+`importar crafttweaker.world.IFacing;`
 
-## Enumerations
+## Enumeraciones
 
-The facing Interface has 7 static Methods, each returning the said direction.  
-The last one takes the direction as String input (e.g. `"NORTH"`)
+La interfaz frontal tiene 7 métodos estáticos, cada uno devolviendo la dirección mencionada.  
+El último toma la dirección como entrada de cadena (por ejemplo, `"NORTH"`)
 
 ```zenscript
 crafttweaker.world.Facing.north()
@@ -24,25 +24,25 @@ crafttweaker.world.Facing.up()
 crafttweaker.world.Facing.fromString(String name);
 ```
 
-## ZenGetters/ZenMethods without parameters
+## ZenGetters/ZenMethods sin parámetros
 
-| ZenGetter | ZenMethod  | Return Type |
-| --------- | ---------- | ----------- |
-| name      | getName()  | string      |
-| rotateY   | rotateY()  | IFacing     |
-| opposite  | opposite() | IFacing     |
+| ZenGetter | Método     | Tipo de devolución |
+| --------- | ---------- | ------------------ |
+| nombre    | getName()  | cadena             |
+| rotateY   | rotateY()  | Enfrentar          |
+| opuesto   | opuesto () | Enfrentar          |
 
-## Other methods
+## Otros métodos
 
-### Comparing two Facings
+### Comparando dos caras
 
-You can compare two facings using the standart comparing Operators `== != < > <= >=`  
-Alternatively, you can use the function, though the function returns an int that is 0 if they are equal.
+¡Puedes comparar dos caras usando el estándar comparando a los Operadores `== ! < > <= >=`  
+Alternativamente, puede usar la función, aunque la función devuelve un int que es 0 si son iguales.
 
 ```zenscript
-//Returns true or false
+//Devuelve verdadero o falso
 facingOne == facingTwo;
 
-//Returns 0 if they are equal
+//Devuelve 0 si son iguales
 facingOne.compare(facingTwo);
 ```

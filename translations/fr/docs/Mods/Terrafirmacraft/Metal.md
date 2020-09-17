@@ -1,31 +1,31 @@
-# Metals
+# Métaux
 
 - BISMUTH
-- BISMUTH_BRONZE
-- BLACK_BRONZE
+- BRONZE
+- Brassage
 - BRASS
 - BRONZE
-- COPPER
-- GOLD
-- LEAD
+- CUISINE
+- OR
+- PRINCIPAL
 - NICKEL
-- ROSE_GOLD
-- SILVER
-- TIN
+- Rose_OR
+- SILVEUR
+- NAS
 - ZINC
 - STERLING_SILVER
-- WROUGHT_IRON
-- PIG_IRON
-- STEEL
+- Rotation de l'IRON
+- IRON
+- ACIER
 - PLATINUM
-- BLACK_STEEL
-- BLUE_STEEL
-- RED_STEEL
-- WEAK_STEEL
-- WEAK_BLUE_STEEL
-- WEAK_RED_STEEL
-- HIGH_CARBON_STEEL
-- HIGH_CARBON_BLUE_STEEL
-- HIGH_CARBON_RED_STEEL
-- HIGH_CARBON_BLACK_STEEL
-- UNKNOWN
+- Piquage
+- Pied de contour
+- Morceau rouge
+- STEEL_WEAK_TITLE
+- Epaisseur de la surface
+- STEEL ROUG_TITLE
+- COUP_TITLE
+- Eléments de base
+- Morceau rouge haché
+- Diamètre de l'angle de la face bleue
+- INCONNU

@@ -1,30 +1,30 @@
 # PlayerAttackEntity
 
-The PlayerAttackEntity Event is fired whenever a player attacks an Entity.
+Wydarzenie PlayerAttackEntity jest uruchamiane za każdym razem, gdy gracz atakuje obiekt.
 
-## Event Class
+## Klasa wydarzenia
 
-You will need to cast the event in the function header as this class:  
-`crafttweaker.event.PlayerAttackEntityEvent`  
-You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
+Musisz aktywować wydarzenie w nagłówku funkcji jako klasa:  
+`crafttweaker.event. layerAttackEntityEvent`  
+Możesz oczywiście również [zaimportować](/AdvancedFunctions/Import/) klasę przed i wtedy użyć tej nazwy.
 
-## Event interface extensions
+## Rozszerzenia interfejsu zdarzenia
 
-PlayerAttackEntity Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+Zdarzenia PlayerAttackEntity implementują następujące interfejsy i są również w stanie wywołać wszystkie swoje metody/getter/settery:
 
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
-- [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
+- [Wydarzenie IPlayer](/Vanilla/Events/Events/IPlayerEvent/)
 
 ## ZenGetters
 
-The following information can be retrieved from the event:
+Z wydarzenia można uzyskać następujące informacje:
 
-| ZenGetter  | Return Type                           |
-| ---------- | ------------------------------------- |
-| `canceled` | boolean                               |
-| `player`   | [IPlayer](/Vanilla/Players/IPlayer/)  |
-| `entity`   | [IEntity](/Vanilla/Entities/IEntity/) |
+| ZenGetter   | Typ zwrotu                            |
+| ----------- | ------------------------------------- |
+| `anulowane` | boolean                               |
+| `gracz`     | [IPlayer](/Vanilla/Players/IPlayer/)  |
+| `podmiot`   | [IEntity](/Vanilla/Entities/IEntity/) |
 
-## ZenMethods
+## Metody ZenMethods
 
-- `event.cancel()` sets the event as cancelled.
+- `event.cancel()` ustawia wydarzenie jako anulowane.

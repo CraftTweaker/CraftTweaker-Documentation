@@ -1,24 +1,24 @@
 # EntityMountEvent
 
-The EntityMount event is fired whenever an entity is mounted or dismounted from. If canceled, the entity is prevented from mounting (or dismounting).
+El evento EntityMount es disparado cada vez que una entidad es montada o desmontada. Si se cancela, la entidad no podrá montar (o desmontar).
 
-## Event Class
+## Clase de evento
 You will need to cast the event in the function header as this class:  
 `crafttweaker.event.EntityMountEvent` You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
 
-## Event interface extensions
-EntityMountEvent Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+## Extensiones de la interfaz de eventos
+EntityMountEvent Events implementan las siguientes interfaces y pueden llamar a todos sus métodos/getters/setters también:
 
 - [ILivingEvent](/Vanilla/Events/Events/ILivingEvent/)
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 
 ## ZenGetters/ZenSetters
-The following information can be retrieved/set during the event:
+La siguiente información se puede recuperar/establecer durante el evento:
 
-| ZenGetter        | Return Type                           |
-| ---------------- | ------------------------------------- |
-| `world`          | [IWorld](/Vanilla/World/IWorld/)      |
-| `mountingEntity` | [IEntity](/Vanilla/Entities/IEntity/) |
-| `mountedEntity`  | [IEntity](/Vanilla/Entities/IEntity/) |
-| `isMounting`     | boolean                               |
-| `isDismounting`  | boolean                               |
+| ZenGetter            | Tipo de devolución                    |
+| -------------------- | ------------------------------------- |
+| `mundo`              | [IWorld](/Vanilla/World/IWorld/)      |
+| `entidad de montaje` | [IEntity](/Vanilla/Entities/IEntity/) |
+| `entidad montada`    | [IEntity](/Vanilla/Entities/IEntity/) |
+| `isMounting`         | boolean                               |
+| `está desmontando`   | boolean                               |

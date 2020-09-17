@@ -1,67 +1,67 @@
-# Custom Skills & Traits
+# Eigene Fähigkeiten & Merkmale
 
 ## Credits:
 
-Credits goes out to Kindlich for writing most of the Custom Content implementation!
+Das Credits geht an Kindlich für das Schreiben der meisten Custom-Content-Implementierung!
 
-## Custom Traits:
+## Eigene Merkmale:
 
-### Implementation Syntax:
+### Implementierungs-Syntax:
 
-    Examples:
-    mods.compatskills.TraitCreator.createTrait(String traitName, int x, int y, String skillLocation, int cost, @Optional String... requirements)
+    Beispiele:
+    mods.compatskills.TraitCreator.createTrait(String traitName, int x, int y, String skillLocation, int cost, @Optional String... erforderlich)
     mods.compatskills.TraitCreator.createTrait(String traitName, int x, int y, CrTSkill parentSkill, int cost, @Optional String... requirements)
-    mods.compatskills.TraitCreator.createNewTrait(String traitLocation, int x, int y, String skillLocation, int cost, @Optional String... requirements)
+    mods.compatskills.TraitCreator.createNewTrait(String traitLocation, int x, int y, String skillLocation, int cost @Optional String... erforderlich)
     mods.compatskills.TraitCreator.createNewTrait(String traitLocation, int x, int y, CrTSkill parentSkill, int cost, @Optional String... requirements)
     
     
-    "traitName" VS "traitLocation" is the same as in Skills.
+    "traitName" VS "traitLocation" ist dasselbe wie in den Fähigkeiten.
     
-    "CrTSkill parentSkill" is the Skill Bracket Handler.
+    "CrTSkill parentSkill" ist der Skill Bracket Handler.
     
     
-    So a functional Example would be:
+    So wäre ein funktionales Beispiel:
     var test = mods.compatskills.TraitCreator.createTrait("test", 2, 3, "compatskills:banana", 1, "compatskills:banana|5");
-    var test1 = mods.compatskills.TraitCreator.createTrait("test", 2, 3, "<skill:compatskills:banana>", 1, "compatskills:banana|5");
-    var test2 = mods.compatskills.TraitCreator.createTrait("broken:test", 2, 3, "compatskills:banana", 1, "compatskills:banana|5");
+    var test1 = mods. ompatskills.TraitCreator.createTrait("test", 2, 3, "<skill:compatskills:banana>", 1, "compatskills:banana|5");
+    var test2 = mods. ompatskills.TraitCreator.createTrait("broken:test", 2, 3, "compatskills:banana", 1, "compatskills:banana|5");
     var test3 = mods.compatskills.TraitCreator.createTrait("broken:test", 2, 3, "<skill:compatskills:banana>", 1, "compatskills:banana|5");
     
 
-### ZenProperties
+### Zeneigenschaften
 
-| Reference | Property Name | Implementation |
-|:--------- |:------------- | -------------- |
-| CrTTrait  | name          | See Below      |
-| CrTTrait  | description   | See Below      |
+| Referenz | Eigenschaftsname | Implementierung |
+|:-------- |:---------------- | --------------- |
+| CrTTrait | name             | Siehe unten     |
+| CrTTrait | beschreibung     | Siehe unten     |
 
-    // Creates the trait as a variable
-    var trait = mods.compatskills.TraitCreator.createTrait("test", 2, 3, "compatskills:banana", 1, "compatskills:banana|5");
+    // Erstellt das Merkmal als Variable
+    var trait = mods.compatskills.TraitCreator. reateTrait("test", 2, 3, "compatskills:banana", 1, "compatskills:banana|5");
     
-    // Hard-Sets the name to "Test"
-    // Be aware this makes localization through .lang files not possible!
+    // Hard-Sets des Namens "Test"
+    // Dies macht Lokalisierung durch .lang Dateien nicht möglich!
     trait.name = "Test"
     
-    // Hard-Sets the description to "Hello, I'm a Description"
-    // Be aware this makes localization through .lang files not possible!
-    trait.description = "Hello, I'm a Description"
+    // Beschreibung "Hallo, ich bin eine Beschreibung"
+    // Seien Sie sich bewusst, dass dies Lokalisierung durch .lang Dateien unmöglich macht!
+    trait.description = "Hallo, ich bin eine Beschreibung"
     
 
 ### ZenSetters/ZenGetters
 
-| Methodentyp | Methodenname   | Values                                                |
-|:----------- |:-------------- | ----------------------------------------------------- |
-| Setter      | setEnabled     | Takes a Boolean                                       |
-| Getter      | getEnabled     | Returns a Boolean                                     |
-| Getter      | getName        | Returns the localized String Name of the Trait        |
-| Getter      | getDescription | Returns the localized String Description of the Trait |
-| Getter      | retrieveIcon   | Returns an Resource Location                          |
-| Setter      | changeIcon     | Takes an Resource Location String                     |
+| Methodentyp | Methodenname   | Werte                                                               |
+|:----------- |:-------------- | ------------------------------------------------------------------- |
+| Setter      | gesetzt        | Nimmt eine Boolesche                                                |
+| Getriebe    | getEnabled     | Gibt einen Booleschen zurück                                        |
+| Getriebe    | getName        | Gibt den lokalisierten Zeichenkettennamen des Merkmals zurück       |
+| Getriebe    | getDescription | Gibt die lokalisierte Zeichenkettenbeschreibung des Merkmals zurück |
+| Getriebe    | retrieveIcon   | Gibt einen Ressourcenstandort zurück                                |
+| Setter      | ändere Icon    | Nimmt einen Ressourcen-Standort-String                              |
 
-### Localization & Resource Location References:
+### Lokalisierung & Ressourcen-Standortreferenzen:
 
-    Trait Icons:
+    Merkmal Icons:
     
-    Either:
+    Entweder
     
     - mods.compatskills.TraitCreator.createTrait(String traitName, int x, int y, String skillLocation, int cost, @Optional String... requirements);
         - compatskills:textures/unlockables/traitname.png
@@ -70,13 +70,13 @@ Credits goes out to Kindlich for writing most of the Custom Content implementati
         - customResourceLocation:/textures/unlockables/traitname.png
     
     
-    Localizations are placed in:
+    Lokalisierungen werden in
     
     - compatskills:lang/localeCode.lang
     
-    or
+    oder
     
     - customResourceLocation:lang/localeCode.lang
     
 
-Go to this link to see all possible Locale-Codes! [Gamepedia's Minecraft Language Page](https://minecraft.gamepedia.com/Language "Gamepedia's Minecraft Language Page")
+Gehen Sie zu diesem Link, um alle möglichen Locale-Codes zu sehen! [Minecraft-Sprachseite von Gamepedia's](https://minecraft.gamepedia.com/Language "Gamepedia's Minecraft Language Page")

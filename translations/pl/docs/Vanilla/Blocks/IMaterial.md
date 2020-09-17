@@ -1,41 +1,41 @@
-# IMaterial
+# IMateriał
 
-An IMaterial object represents the material a block is made of.
+Obiekt IMaterial reprezentuje materiał, z którego blok jest wykonany.
 
-## Importing the package
+## Importowanie pakietu
 
-It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
-`import crafttweaker.block.IMaterial;`
+Może być wymagane zaimportowanie pakietu, jeśli napotkasz jakieś problemy, więc lepiej być bezpiecznym niż przepraszamy i dodać import.  
+`zaimportuj crafttweaker.block.IMaterial;`
 
-## ZenGetters/ZenMethods without parameters
+## ZenGetters/ZenMethods bez parametrów
 
-| ZenGetter       | ZenMethod           | Return Type |
-| --------------- | ------------------- | ----------- |
-| blocksLight     | blocksLight()       | bool        |
-| blocksMovement  | blocksMovement()    | bool        |
-| canBurn         | getCanBurn()        | bool        |
-| mobilityFlag    | getMobilityFlag()   | string      |
-| liquid          | isLiquid()          | bool        |
-| opaque          | isOpaque()          | bool        |
-| replaceable     | isReplaceable()     | bool        |
-| solid           | isSolid()           | bool        |
-| toolNotRequired | isToolNotRequired() | bool        |
-|                 | setReplaceable()    | IMaterial   |
+| ZenGetter              | Metoda ZenMethod    | Typ zwrotu  |
+| ---------------------- | ------------------- | ----------- |
+| jasny blok             | blocksLight()       | bool        |
+| blocksMovement         | blocksMovement()    | bool        |
+| płonąca                | getCanBurn()        | bool        |
+| mobilityFlag           | getMobilityFlag()   | ciąg znaków |
+| ciecz                  | isLiquid()          | bool        |
+| nieprzezroczysty       | izOpaque()          | bool        |
+| wymienne               | można wymienić()    | bool        |
+| solid                  | isSolid()           | bool        |
+| Narzędzie Nie Wymagane | isToolNotRequired() | bool        |
+|                        | setReplaceable()    | IMateriał   |
 
-## ZenMethods with parameters
+## Metody ZenMethods z parametrami
 
-### Check if two IMaterials match
+### Sprawdź, czy dwa IMateriały pasują
 
-Uses an IMaterial.  
-Returns a bool.
+Używa IMateriału.  
+Zwraca bool.
 
 ```zenscript
-materialObj.matches(IMaterial other);
+materiały dopasowane (inne) (IMateriał);
 ```
 
-## Getting Vanilla Minecraft Materials
+## Pobieranie materiałów Minecraft Vanilla
 
-You can use these methods to get the vanilla minecraft materials
+Możesz użyć tych metod, aby uzyskać materiały Vanilla minecraft
 
 ```zenscript
 crafttweaker.blocks.IMaterial.air();
@@ -47,24 +47,24 @@ crafttweaker.blocks.IMaterial.carpet();
 crafttweaker.blocks.IMaterial.circuits();
 crafttweaker.blocks.IMaterial.clay();
 crafttweaker.blocks.IMaterial.cloth();
-crafttweaker.blocks.IMaterial.coral();
+crafttweaker. locks.IMaterial.coral();
 crafttweaker.blocks.IMaterial.craftedSnow();
 crafttweaker.blocks.IMaterial.dragonEgg();
 crafttweaker.blocks.IMaterial.fire();
 crafttweaker.blocks.IMaterial.glass();
 crafttweaker.blocks.IMaterial.gourd();
-crafttweaker.blocks.IMaterial.grass();
+crafttweaker.blocks.IMaterial.traw();
 crafttweaker.blocks.IMaterial.ground();
 crafttweaker.blocks.IMaterial.ice();
-crafttweaker.blocks.IMaterial.iron();
+crafttweaker. locks.IMaterial.iron();
 crafttweaker.blocks.IMaterial.lava();
-crafttweaker.blocks.IMaterial.leaves();
+crafttweaker.blocks.IMaterial.lea();
 crafttweaker.blocks.IMaterial.packedIce();
 crafttweaker.blocks.IMaterial.piston();
 crafttweaker.blocks.IMaterial.plants();
 crafttweaker.blocks.IMaterial.portal();
 crafttweaker.blocks.IMaterial.redstoneLight();
-crafttweaker.blocks.IMaterial.rock();
+crafweaker.blocks.IMaterial. ock();
 crafttweaker.blocks.IMaterial.sand();
 crafttweaker.blocks.IMaterial.snow();
 crafttweaker.blocks.IMaterial.sponge();
@@ -73,5 +73,5 @@ crafttweaker.blocks.IMaterial.tnt();
 crafttweaker.blocks.IMaterial.vine();
 crafttweaker.blocks.IMaterial.water();
 crafttweaker.blocks.IMaterial.web();
-crafttweaker.blocks.IMaterial.wood();
+crafttweaker.blocks.IMaterial.IMaterial.wood();
 ```

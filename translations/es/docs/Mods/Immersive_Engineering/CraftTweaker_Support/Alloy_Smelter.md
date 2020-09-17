@@ -1,38 +1,38 @@
-# Alloy Smelter
+# Fundición de Aleación
 
-The Alloy Smelter package can be used to add/remove recipes to/from the Immersive Engineering Alloy Smelter.
+El paquete de Fundición de Aleación se puede utilizar para añadir/quitar recetas para/de la Fundición Inmersiva de Aleación de Ingeniería.
 
-## Calling The Package
+## Llamar al paquete
 
-You can call the AlloySmelter package using `mods.immersiveengineering.AlloySmelter`
+Puedes llamar al paquete de AleyFundición usando `mods.immersiveengineering.AlloyPhone`
 
-## Add Recipe
+## Añadir Receta
 
-| Required | Type    | Data Type                                           |
-| -------- | ------- | --------------------------------------------------- |
-| Required | Output  | [IItemstack](/Vanilla/Items/IItemStack/)            |
-| Required | Input 1 | [IIngredient](/Vanilla/Variable_Types/IIngredient/) |
-| Required | Input 2 | [IIngredient](/Vanilla/Variable_Types/IIngredient/) |
-| Required | Time    | Integer                                             |
+| Requerido | Tipo    | Tipo de Datos                                         |
+| --------- | ------- | ----------------------------------------------------- |
+| Requerido | Salida  | [IItemstack](/Vanilla/Items/IItemStack/)              |
+| Requerido | Input 1 | [IIngredientes](/Vanilla/Variable_Types/IIngredient/) |
+| Requerido | Input 2 | [IIngredientes](/Vanilla/Variable_Types/IIngredient/) |
+| Requerido | Hora    | Entero                                                |
 
-### Example
+### Ejemplo
 
 ```zenscript
-//Example:
-mods.immersiveengineering.AlloySmelter.addRecipe(IItemStack output, IIngredient first, IIngredient second, int time);
+//Ejemplo:
+mods.immersiveengineering.Alloyterielter.addRecipe(salida ItemStack, IIngredient primero, IIngredient segundo, tiempo de intención);
 mods.immersiveengineering.AlloySmelter.addRecipe(<minecraft:diamond>, <ore:ingotIron>, <minecraft:dirt>, 2000);
 ```
 
-## Remove Recipe
+## Eliminar receta
 
-| Type   | Data Type                                |
+| Tipo   | Tipo de Datos                            |
 | ------ | ---------------------------------------- |
-| Output | [IItemstack](/Vanilla/Items/IItemStack/) |
+| Salida | [IItemstack](/Vanilla/Items/IItemStack/) |
 
-### Example
+### Ejemplo
 
 ```zenscript
-//Example:
+//Ejemplo:
 mods.immersiveengineering.AlloySmelter.removeRecipe(IItemstack output);
-mods.immersiveengineering.AlloySmelter.removeRecipe(<minecraft:diamond>);
+mods.immersiveengineering.Alloyworthelter.removeRecipe(<minecraft:diamond>);
 ```

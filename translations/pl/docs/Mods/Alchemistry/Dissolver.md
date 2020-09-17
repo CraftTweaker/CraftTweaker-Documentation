@@ -1,34 +1,34 @@
-# Dissolver
+# Rozpuszczalnik
 
-## Package
-`mods.alchemistry.Dissolver`
+## Pakiet
+`mods.alchemistry.Rozpuszczalnik`
 
-## Methods
-- **[IItemStack](/Vanilla/Items/IItemStack/) input** - The input of the recipe.
-- **boolean relativeProbability** - Probability Calculation Boolean
-- **int rolls** -  Possibilty of Roles
-- **probabilityGroups** - An array of arrays with an double followed by any # of [IItemStack](/Vanilla/Items/IItemStack/)s. The double refers to the probability for its group.
+## Metody
+- **[IItemStack](/Vanilla/Items/IItemStack/) wejście** - Wprowadzenie przepisu.
+- **wartość logiczna Prawdopodobieństwa** - Wartość logiczna obliczeń prawdopodobieństwa
+- **int rolls** - Możliwość ról
+- **probabilityGroups** - tablica tablic z podwójnym podwójnym, a następnie # z [IItemStack](/Vanilla/Items/IItemStack/)s. Podwójne odnosi się do prawdopodobieństwa jego grupy.
 
-## Addition
+## Dodanie
 ```zenscript
-mods.alchemistry.Dissolver.addRecipe(IIngredient input, boolean relativeProbability, int rolls, Object[][] probabilityGroups);
+mods.alchemistry.Dissolver.addRecipe(dane wejściowe składników boolean relativeProbability, rolki do intów, Object[][] probabilityGroups);
 mods.alchemistry.Dissolver.addRecipe(<minecraft:dye:9>, false, 5,
 [[10, <minecraft:stone>], 
  [20, <minecraft:sand>,<minecraft:iron_ore>]]);
 ```
 
-## Removal
+## Usuwanie
 ```zenscript
-mods.alchemistry.Dissolver.removeRecipe(IIngredient input);
+mods.alchemistry.Dissolver.removeRecipe(Input);
 mods.alchemistry.Dissolver.removeRecipe(<minecraft:ender_pearl>);
 
-mods.alchemistry.Dissolver.removeAllRecipes();
+mods.alchemistry.b. „oprogramowanie” specjalnie zaprojektowane lub zmodyfikowane do „rozwoju”, „produkcji” lub „użytkowania” sprzętu wyszczególnionego w pozycjach 2B001, 2B006, 2B009, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109,
 ```
 
-# Notes
-To ease in the development of modifying existing dissolver recipes there is a command, simply /dissolver that will fetch the crafttweaker recipe for the item that you are holding and copy it into your clipboard
+# Uwagi
+Aby ułatwić rozwój istniejących przepisów dotyczących rozpuszczania, istnieje polecenie, po prostu /dissolver, który pobierze przepis na słabsze rzemieślniki na trzymany przedmiot i skopiuje go do schowka
 
-If relative probability is true, then each probability will be calculated based on the sum of all of the probabilities. In the example above that would mean there is a 33.3% chance of outputting stone each roll and a 66.6% chance of outputting a sand and an iron ore each roll.
+Jeśli względne prawdopodobieństwo jest prawdziwe, każde prawdopodobieństwo będzie obliczane na podstawie sumy wszystkich prawdopodobieństw. W powyższym przykładzie oznaczałoby to powstanie 33,3 % szans na wyjście z każdej rolki i 66. % szans na wyjście piasku i rudy żelaza na każdą rolkę.
 
-If relative probability is false, then these numbers are absolute percentages i.e. a 10% chance of outputting stone and a 20% chance of outputting sand and iron ore (regardless of whether or not stone was outputted). Floating-point probabilities are supported, so 4.5 would mean 4.5%
+Jeżeli względne prawdopodobieństwo jest fałszywe, wówczas liczby te są bezwzględnymi procentami, tj. 10% szans na wydobycie kamienia i 20% szans na wydobycie piasku i rudy żelaza (niezależnie od tego, czy kamień został wyprodukowany czy nie). Obsługiwane są prawdopodobieństwa zmiennoprzecinkowe, więc 4,5 oznaczałoby to 4,5%
 

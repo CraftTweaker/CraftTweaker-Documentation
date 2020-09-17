@@ -1,16 +1,17 @@
-# Ingot Former
+# インゴットの元
 
-## Importing the Package
-`mods.nuclearcraft.IngotFormer`
+## パッケージのインポート
+`mods.nuclearcraft.IngotFormerIngotFormer`
 
-## Adding Recipes
+## レシピを追加中
 ```zenscript
-mods.nuclearcraft.IngotFormer.addRecipe(ILiquidStack fluidInput, IIngredient itemOutput, @Optional double timeMultiplier, @Optional double powerMultiplier, @Optional double processRadiation);
+mods.nuclearcraft.Supercoolermods.nuclearcraft.IngotFormer.addRecipe(ILiquidStack fluidInput, IIngredient itemOutput, @Optional double timeMultiplier, @Optional double powerMultiplier, @Optional double processRadiation);
 ```
 
-## Removing Recipes
+## レシピを削除
 ```zenscript
-mods.nuclearcraft.IngotFormer.removeRecipeWithInput(ILiquidStack fluidInput);
+mods.nuclearcraft.Supercoolermods.nuclearcraft.IngotFormer.removeRecipeWithInput(ILiquidStack fluidInput);
 mods.nuclearcraft.IngotFormer.removeRecipeWithOutput(IIngredient itemOutput);
-mods.nuclearcraft.IngotFormer.removeAllRecipes();
+mods.nuclearcraft.IngotFormer.removeAllRecipes();IngotFormer.removeRecipeWithOutput(IIngredient itemOutput);
+mods.nurcraft.IngotFormer.removeAllRecipes();
 ```

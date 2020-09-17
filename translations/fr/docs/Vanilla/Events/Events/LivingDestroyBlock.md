@@ -1,24 +1,24 @@
-# LivingDestroyBlock
+# format@@0 LivingDestroyBlock
 
-This event is fired whenever a Wither or Ender Dragon attempts to destroy blocks, or when a zombie attempts to break a door. This event is **cancelable**, and if canceled, the block will not be broken.
+Cet événement est lancé chaque fois qu'un Wither ou l'Ender Dragon tente de détruire des blocs, ou quand un zombie tente de briser une porte. Cet événement est **annulable**, et s'il est annulé, le bloc ne sera pas cassé.
 
-## Event Class
-You will need to cast the event in the function header as this class:  
-`crafttweaker.event.LivingDestroyBlockEvent`  
-You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
+## Classe de l'événement
+Vous devrez lancer l'événement dans l'en-tête de la fonction comme cette classe:  
+`crafttweaker.event. ivingDestroyBlockEvent`  
+Vous pouvez, bien sûr, également [importer](/AdvancedFunctions/Import/) la classe avant et utiliser ce nom alors.
 
-## Event interface extensions
-LivingDestroyBlock Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+## Extensions d'interface de l'événement
+Les événements LivingDestroyBlock implémentent les interfaces suivantes et peuvent également appeler toutes leurs méthodes/getters/setters :
 
-- [IEventPositionable](/Vanilla/Events/Events/IEventPositionable/)
+- [IEventPositionnable](/Vanilla/Events/Events/IEventPositionable/)
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 - [ILivingEvent](/Vanilla/Events/Events/ILivingEvent/)
 
 
 ## ZenGetters/ZenSetters
-The following information can be retrieved/set during the event:
+Les informations suivantes peuvent être récupérées/définies pendant l'événement :
 
-| ZenGetter | ZenSetter | Type                                        |
-| --------- | --------- | ------------------------------------------- |
-| `state`   |           | [IBlockState](/Vanilla/Blocks/IBlockState/) |
+| ZenGetter | ZenSetter | Type de texte                                    |
+| --------- | --------- | ------------------------------------------------ |
+| `Etat`    |           | [État de l'IBlock](/Vanilla/Blocks/IBlockState/) |
 

@@ -1,14 +1,14 @@
-# Fission
+# Фейбер
 
-## Importing the Package
+## Импортирование пакета
 `mods.nuclearcraft.fission`
 
-## Adding Recipes
+## Добавление рецептов
 ```zenscript
 mods.nuclearcraft.fission.addRecipe([itemInput, itemOutput, double baseTime, double basePower, double baseHeat, String guiName, @Optional double processRadiation]);
 ```
 
-## Removing Recipes
+## Удаление рецептов
 ```zenscript
 mods.nuclearcraft.fission.removeRecipeWithInput([itemInput]);
 mods.nuclearcraft.fission.removeRecipeWithOutput([itemOutput]);

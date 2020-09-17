@@ -1,7 +1,7 @@
-# Item Transformers
+# アイテム変換
 
-Item Transformers transform your crafting inputs upon crafting.  
-This can range from damaging the item up to returning a completely different item.
+アイテムトランスフォーマーはクラフト時にクラフトインプットを変身させます。  
+アイテムにダメージを与えることから、全く別のアイテムを返すことまでの範囲があります。
 
 ## パッケージのインポート
 
@@ -17,7 +17,7 @@ transformedItem = item.reuse();
 //Item won't be consumed and the whole stack will be given back to you (does /give).
 transformedItem = item.giveBack();
 
-//item will be consumed but will give the specified stack to you (the crafting slot will be cleared!).
+//アイテムは消費されますが、指定されたスタックはあなたに与えられます (クラフトスロットはクリアされます)。
 transformedItem = item.giveBack(<minecraft:potato>);
 
 //item will be replaced with the specified item, which will instead go to the crafting slot
@@ -32,27 +32,27 @@ transformedItem = item.transformDamage(3);
 //item will be consumed, no matter what.
 transformedItem = item.noReturn();
 
-//Causes multiple items to be consumed.
+///複数のアイテムを消費します。
 transformedItem = item.transformConsume(3);
 ```
 
-## Registering own item Transformers
+## 独自のアイテム変換器を登録
 
-### Transform
+### 変換
 
-The old itemTransformer that might cease to exist in 1.13.  
-Thisis a special function that accepts two parameters: The [item](/Vanilla/Items/IItemStack/) itself and the [player](/Vanilla/Players/IPlayer/) performing the crafting.
+1.13には存在しなくなる可能性がある古いitemTransformer。  
+これは、2つのパラメータを受け入れる特別な関数です。 [アイテム](/Vanilla/Items/IItemStack/) 自体と、 [プレイヤー](/Vanilla/Players/IPlayer/) がクラフトを行います。
 
 ```zenscript
 transformedItem = item.transform(function(item, player) {return item;});
 ```
 
-The function needs to return an [IItemStack](/Vanilla/Items/IItemStack/).  
-This stack will replace what's in the crafting slot afterwards. Use `null` to clear that slot.
+関数は [IItemStack](/Vanilla/Items/IItemStack/)を返す必要があります。  
+このスタックはその後、クラフトスロットにあるものを置き換えます。 スロットをクリアするには、 `null` を使用します。
 
-### TransformNew
+### 新しい変換
 
-With the new internal recipe system there was a need for a new ItemTransformer. This one only accepts one parameter, that is the item in the slot.
+新しい内部レシピシステムでは、新しいItemTransformerが必要でした。 これは、スロット内の項目である、一つのパラメータのみを受け付けます。
 
 ```zenscript
 transformedItem = item.transformNew(function(item){return item;});

@@ -1,20 +1,20 @@
-# Electrolyzer
+# Électrolyseur
 
-## Package
+## Paquet
 
-`import mods.ic2.Electrolyzer;`
+`Importer mods.ic2. Electrolyzer ;`
 
-## Methods
+## Méthodes
 
-- **[ILiquidStack](/Vanilla/Liquids/ILiquidStack/)[] outputs** Array of all outputs. Each slot corresponds to Down-Up-North-South-West-East direction. Trailing null may be omitted.
+- **[ILiquidStack](/Vanilla/Liquids/ILiquidStack/)[] sorte** tableau de toutes les sorties. Chaque créneau correspond à la direction Down-Up-Nord-Sud-Ouest-Est. La null de la trace peut être omise.
 - **[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) input** The input
 - **int power** Power consumption, measured in EU/tick
-- **@Optional int time** Time cost. Default to 200 if not given.
+- **@Optional int time** Time cost. Valeur par défaut à 200 si non fournie.
 
-## Addition
+## Ajouter
 
 ```zenscript
-mods.ic2.Electrolyzer.addRecipe(ILiquidStack[] outputs, ILiquidStack input, int power, @Optional int time);
+mods.ic2.Electrolyzer.addRecipe(ILiquidStack[] sorte, entrée ILiquidStack, puissance d'ints, @temps d'int optionnel);
 
 mods.ic2.Electrolyzer.addRecipe([<liquid:lava> * 1000, <liquid:water> * 500, null, null, null, null], <liquid:water> * 1000, 30);
 ```

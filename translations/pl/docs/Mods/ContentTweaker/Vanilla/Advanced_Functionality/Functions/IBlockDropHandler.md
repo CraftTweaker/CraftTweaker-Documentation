@@ -1,32 +1,32 @@
 # IBlockDropHandler
 
-The IBlockDropHandler function is used to allow for advanced block drop handling for [Blocks](/Mods/ContentTweaker/Vanilla/Creatable_Content/Block/) created with the [Vanilla Factory](/Mods/ContentTweaker/Vanilla/Creatable_Content/VanillaFactory/).
+Funkcja IBlockDropHandler jest używana, aby umożliwić zaawansowaną obsługę bloków [bloków](/Mods/ContentTweaker/Vanilla/Creatable_Content/Block/) utworzonych w fabryce [Vanilla](/Mods/ContentTweaker/Vanilla/Creatable_Content/VanillaFactory/).
 
-## Importing the class
+## Importowanie klasy
 
-You want to import the class? Here you go:
+Czy chcesz zaimportować klasę? Tutaj idziesz:
 
 ```zenscript
-import mods.contenttweaker.DropHandler;
+import mods.contenttweaker.DropHandler,
 ```
 
-## Function structure
+## Struktura funkcji
 
-The function is a void function that takes the following parameters:
+Funkcja jest funkcją unieważniającą, która przyjmuje następujące parametry:
 
-- [ICTItemList](/Mods/ContentTweaker/Vanilla/Types/Drops/ICTItemList/) drops.
-- [IBlockAccess](/Vanilla/World/IBlockAccess/) world -> the world we are in, possible an [IWorld](/Mods/ContentTweaker/Vanilla/Types/World/IWorld/), you might want to instanceof and downcast
-- [IBlockPos](/Vanilla/World/IBlockPos/) position -> the position of the block
-- [ICTBlockState](/Mods/ContentTweaker/Vanilla/Types/Block/ICTBlockState/) state -> the blockstate of the block
-- int fortune -> the fortune level of the tool used
+- [ICTItemList](/Mods/ContentTweaker/Vanilla/Types/Drops/ICTItemList/) zrzuty.
+- [IBlockAccess](/Vanilla/World/IBlockAccess/) świat -> świat w którym się znajdujemy, możliwy [IWorld](/Mods/ContentTweaker/Vanilla/Types/World/IWorld/), możesz chcieć być na przykład i w dół
+- [IBlockPos](/Vanilla/World/IBlockPos/) pozycja -> pozycja bloku
+- [ICTBlockState](/Mods/ContentTweaker/Vanilla/Types/Block/ICTBlockState/) stan -> stan blokady bloku
+- int fortune -> poziom szczęścia użytego narzędzia
 
-As this method does not return anything, all drops need to be added to the `drops` list using the exposed methods.  
-Read about them [here](/Mods/ContentTweaker/Vanilla/Types/Drops/ICTItemList/).
+Ponieważ ta metoda niczego nie zwraca - wszystkie krople muszą być dodane do listy `kropki` przy użyciu metod ekspozycji.  
+Przeczytaj o nich [tutaj](/Mods/ContentTweaker/Vanilla/Types/Drops/ICTItemList/).
 
-## Example
+## Przykład
 
 ```zenscript
-block.setDropHandler(function(drops, world, position, state, fortune) {
+block.setDropHandler(function(drops, world, position position state, fortune) {
 
     drops.add(<item:minecraft:bedrock>);
     drops.add(<item:minecraft:carrot> % 50);

@@ -12,44 +12,44 @@
 [CraftTweaker 的 IOreDict](https://github.com/jaredlll08/CraftTweaker/blob/1.12/CraftTweaker2-API/src/main/java/crafttweaker/api/oredict/IOreDict.java)
 
 ```java
-@ZenClass("crafttweaker.oredict.IOreDict")
-@IterableSimple("crafttweaker.oredict.IOreDictEntry")
-@ZenRegister
-public interface IOreDict extends Iterable<IOreDictEntry> {
+@ZenClass("crafttweeper.oredict.IORDict")
+@IterableSimple("craftmiliner.oredict. OreDictEntry")
+@ZenRegistry
+公共接口IOreDict extensive Iterable<IOreDictEntry> ~
 
 
     @ZenMemberGetter
-    @ZenOperator(OperatorType.INDEXGET)
+    @ZenOperator(OperatorType) NDEXGET
     @ZenMethod
     IOreDictEntry get(String name);
 
-    @ZenGetter("entries")
+    @ZenGetter("条目")
     List<IOreDictEntry> getEntries();
 
-    @ZenOperator(OperatorType.CONTAINS)
+    @ZenOperator(运营商类型) ONTAINS
     @ZenMethod
-    boolean contains(String name);
+    boolian contains(String name);
 }
 ```
 
 [MCOreDict (实现)](https://github.com/jaredlll08/CraftTweaker/blob/1.12/CraftTweaker2-MC1120-Main/src/main/java/crafttweaker/mc1120/oredict/MCOreDict.java)
 
 ```java
-    @Override
-    public Iterator<IOreDictEntry> iterator() {
+    @override
+    public Iterator<IOreDictEntry> iterator() format@@
         return Arrays.asList(OreDictionary.getOreNames())
                 .stream()
-                .map(CraftTweakerMC::getOreDict)
+                .map(CraftTweeperMC:::getOreDict)
                 .iterator();
 
-    }
+}
 ```
 
 ## 在 ZS 中如何使用？
 
 ```zenscript
-for oreDictEntry in oreDict {
-    print(oreDictEntry.name);
+为oreDictEntry in oreDict 然后再打印
+    (oreDictEntry.name);
 }
 ```
 

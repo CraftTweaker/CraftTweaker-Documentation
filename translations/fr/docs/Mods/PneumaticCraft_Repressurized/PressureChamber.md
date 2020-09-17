@@ -1,34 +1,34 @@
-# Pressure Chamber
+# Chambre de Pression
 
-The Pressure Chamber is a multiblock structure which uses compressed air to convert one or more input items into one or more output items. Pressure Chamber recipes have an associated pressure value, which is the air pressure in bar required to perform the conversion.
+La Chambre de pression est une structure multibloc qui utilise de l'air comprimé pour convertir un ou plusieurs éléments d'entrée en un ou plusieurs éléments de sortie. Les recettes de chambre de pression ont une valeur de pression associée, qui est la pression d'air dans la barre requise pour effectuer la conversion.
 
-## Calling
+## Appel en cours
 
-You can call the Pressure Chamber package using `mods.pneumaticcraft.pressurechamber`.
+Vous pouvez appeler le package de la Chambre de Pression en utilisant `mods.pneumaticcraft.pressurechamber`.
 
-## Removing
+## Enlèvement
 
-This function removes the first recipe it finds with the given [IItemStack](/Vanilla/Items/IItemStack/) `outputs` array:
+Cette fonction supprime la première recette qu'elle trouve avec le tableau [IItemStack](/Vanilla/Items/IItemStack/) `fournit`:
 
 ```zenscript
-mods.pneumaticcraft.pressurechamber.removeRecipe(IItemStack[] outputs);
-// Example
+mods.pneumaticcraft.pressurechamber.removeRecipe(IItemStack[] sorties);
+// Exemple
 mods.pneumaticcraft.pressurechamber.removeRecipe([<pneumaticcraft:ingot_iron_compressed>]);
 ```
 
-This function removes *all* Pressure Chamber recipes:
+Cette fonction supprime *toutes les recettes* de la chambre de pression :
 
 ```zenscript
 mods.pneumaticcraft.pressurechamber.removeAllRecipes();
 ```
 
-## Adding
+## Ajout en cours
 
-This function is used to add new recipes to the Pressure Chamber:
+Cette fonction est utilisée pour ajouter de nouvelles recettes à la chambre de pression :
 
 ```zenscript
-mods.pneumaticcraft.pressurechamber.addRecipe(IIngredient[] inputs, double pressure, IItemStack[] outputs);
+mods.pneumaticcraft.pressurechamber.addRecipe(IIngredient[] entrées, pression double, IItemStack[] sorties);
 
-// Example
+// Exemple
 mods.pneumaticcraft.pressurechamber.addRecipe([<minecraft:gold_ingot> * 2,<minecraft:apple>], 2.0, [<minecraft:golden_apple>]);
 ```

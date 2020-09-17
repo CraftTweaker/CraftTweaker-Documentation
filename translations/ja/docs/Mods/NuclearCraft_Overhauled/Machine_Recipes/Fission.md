@@ -1,102 +1,106 @@
-# Fission
+# <unk>
 
-## Fission Moderator
+## 核弾頭モデレーター
 
-### Importing the Package
-`mods.nuclearcraft.FissionModerator`
+### パッケージのインポート
+`mods.nuclearcraft.Supercoolermods.nuclearcraft.FissionModerator`
 
-### Adding Recipes
+### レシピを追加中
 ```zenscript
-mods.nuclearcraft.FissionModerator.add(IIngredient block, int fluxFactor, double efficiency);
+mods.nuclearcraft.Supercoolermods.nuclearcraft.FissionModerator.add(IIngredient block, int fluxFactor, double efficiency);
 ```
 
-### Removing Recipes
+### レシピを削除
 ```zenscript
-mods.nuclearcraft.FissionModerator.remove(IIngredient block);
-mods.nuclearcraft.FissionModerator.removeAll();
+mods.nuclearcraft.Supercoolermods.nuclearcraft.FissionModerator.remove(IIngredient block);
+mods.nuclearcraft.FissionModerator.removeAll();FissionModerator.removeAll();
 ```
 
-## Fission Reflector
+## フィッションリフレクター
 
-### Importing the Package
-`mods.nuclearcraft.FissionReflector`
+### パッケージのインポート
+`mods.nuclearcraft.SupercoolerFissionReflector`
 
-### Adding Recipes
+### レシピを追加中
 ```zenscript
-mods.nuclearcraft.FissionReflector.add(IIngredient block, double efficiency, double reflectivity);
+mods.nuclearcraft.SolidFissionmods.nuclearcraft.FissionReflector.add(IIngredient block, double efficiency, double reflectivity);
 ```
 
-### Removing Recipes
+### レシピを削除
 ```zenscript
-mods.nuclearcraft.FissionReflector.remove(IIngredient block);
-mods.nuclearcraft.FissionReflector.removeAll();
+mods.nuclearcraft.Supercoolermods.nuclearcraft.FissionReflector.remove(IIngredient block);
+mods.nuclearcraft.FissionReflector.removeAll();FissionReflector.removeAll();
 ```
 
-## Fission Irradiator
+## <unk> <unk> <unk> <unk>
 
-### Importing the Package
-`mods.nuclearcraft.FissionIrradiator`
+### パッケージのインポート
+`mods.nuclearcraft.SupercoolerFissionIradiator`
 
-### Adding Recipes
+### レシピを追加中
 ```zenscript
-mods.nuclearcraft.FissionIrradiator.add(IIngredient itemInput, IIngredient itemOutput, int fluxRequired, double heatPerFlux, double efficiency, double radiation);
+mods.nuclearcraft.Supercoolermods.nuclearcraft.FissionIrradiator.add(IIngredient itemInput, IIngredient itemOutput, int fluxRequired, double heatPerFlux, double efficiency, double radiation);
 ```
 
-### Removing Recipes
+### レシピを削除
 ```zenscript
-mods.nuclearcraft.FissionIrradiator.removeRecipeWithInput(IIngredient itemInput);
+mods.nuclearcraft.SupercoolerFissionIrradiator.removeRecipeWithInput(IInput));
+mods.nuclearcraft.mods.nuclearcraft.FissionIrradiator.removeRecipeWithInput(IIngredient itemInput);
 mods.nuclearcraft.FissionIrradiator.removeRecipeWithOutput(IIngredient itemOutput);
-mods.nuclearcraft.FissionIrradiator.removeAllRecipes();
+mods.nuclearcraft.FissionIrradiator.removeAllRecipes();FissionIrradiator.removeAllRecipes();
 ```
 
-## Pebble Bed Fission
+## ペブルベッドの<unk>
 
-### Importing the Package
-`mods.nuclearcraft.PebbleFission`
+### パッケージのインポート
+`mods.nuclearcraft.FissionHeatingPebbleFission`
 
-### Adding Recipes
+### レシピを追加中
 ```zenscript
-mods.nuclearcraft.PebbleFission.addRecipe(IIngredient itemInput, IIngredient itemOutput, int time, int heat, double efficiency, int criticality, boolean selfPriming, double radiation);
+mods.nuclearcraft.Supercoolermods.nuclearcraft.PebbleFission.addRecipe(IIngredient itemInput, IIngredient itemOutput, int time, int heat, double efficiency, int criticality, boolean selfPriming, double radiation);
 ```
 
-### Removing Recipes
+### レシピを削除
 ```zenscript
-mods.nuclearcraft.PebbleFission.removeRecipeWithInput(IIngredient itemInput);
+mods.nuclearcraft.SupercoolerPebbleFission.removeRecipeWithInput(IInput));
+mods.nuclearcraft.mods.nuclearcraft.PebbleFission.removeRecipeWithInput(IIngredient itemInput);
 mods.nuclearcraft.PebbleFission.removeRecipeWithOutput(IIngredient itemOutput);
-mods.nuclearcraft.PebbleFission.removeAllRecipes();
+mods.nuclearcraft.PebbleFission.removeAllRecipes();PebbleFission.removeAllRecipes();
 ```
 
-## Solid Fuel Fission
+## 固体燃料の<unk>
 
-### Importing the Package
-`mods.nuclearcraft.SolidFission`
+### パッケージのインポート
+`mods.nuclearcraft.SupercoolerSolidFission`
 
-### Adding Recipes
+### レシピを追加中
 ```zenscript
-mods.nuclearcraft.SolidFission.addRecipe(IIngredient itemInput, IIngredient itemOutput, int time, int heat, double efficiency, int criticality, boolean selfPriming, double radiation);
+mods.nuclearcraft.Supercoolermods.nuclearcraft.SolidFission.addRecipe(IIngredient itemInput, IIngredient itemOutput, int time, int heat, double efficiency, int criticality, boolean selfPriming, double radiation);
 
 ```
 
-### Removing Recipes
+### レシピを削除
 ```zenscript
-mods.nuclearcraft.SolidFission.removeRecipeWithInput(IIngredient itemInput);
+mods.nuclearcraft.Supercoolermods.nuclearcraft.SolidFission.removeRecipeWithInput(IIngredient itemInput);
 mods.nuclearcraft.SolidFission.removeRecipeWithOutput(IIngredient itemOutput);
-mods.nuclearcraft.SolidFission.removeAllRecipes();
+mods.nuclearcraft.SolidFission.removeAllRecipes();SolidFission.removeRecipeWithOutput(IIngredient itemOutput);
+mods.nurcraft.SolidFission.removeAllRecipes();
 ```
 
 ## Fission Heating
 
-### Importing the Package
-`mods.nuclearcraft.FissionHeating`
+### パッケージのインポート
+`mods.nuclearcraft.Supercooler<unk>`
 
-### Adding Recipes
+### レシピを追加中
 ```zenscript
-mods.nuclearcraft.FissionHeating.addRecipe(ILiquidStack fluidInput, ILiquidStack fluidOutput, int heatPerInputMB);
+mods.nuclearcraft.FissionIrradiatormods.nuclearcraft.FissionHeating.addRecipe(ILiquidStack fluidInput, ILiquidStack fluidOutput, int heatPerInputMB);
 ```
 
-### Removing Recipes
+### レシピを削除
 ```zenscript
-mods.nuclearcraft.FissionHeating.removeRecipeWithInput(ILiquidStack fluidInput);
+mods.nuclearcraft.SupercoolerFissionHeating.removeRecipeWithInput(ILiquidStack fluidInput);
+mods.nuclearcraft.mods.nuclearcraft.FissionHeating.removeRecipeWithInput(ILiquidStack fluidInput);
 mods.nuclearcraft.FissionHeating.removeRecipeWithOutput(ILiquidStack fluidOutput);
-mods.nuclearcraft.FissionHeating.removeAllRecipes();
+mods.nuclearcraft.FissionHeating.removeAllRecipes();FissionHeating.removeAllRecipes();
 ```

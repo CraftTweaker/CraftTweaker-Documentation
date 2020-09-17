@@ -1,39 +1,39 @@
-# Microwave
+# 微波模式
 
-The Microwave heats up food items.
+微波为食品加热。
 
-## Default Microwave Recipes
+## 默认微波配方
 
-- Beef -> Cooked Beef
-- Porkchop -> Cooked Porkchop
-- Potato -> Baked Potato
-- Chicken -> Cooked Chicken
-- Fish -> Cooked Fish
-- Salmon -> Cooked Salmon
-- Flesh -> Cooked Flesh
+- 蜜蜂-> 熟牛肉
+- Pokchop -> 煮熟的波克chop
+- 马铃薯-> 巴克土豆
+- 鸡-> 熟鸡肉
+- 鱼类-> 熟鱼
+- Salmon -> 熟鲑鱼
+- Flesh -> 煮熟的Flesh
 
 ## 移除配方
 
-## Remove matching oven recipes.
+## 删除匹配的配方。
 
 ```zenscript
-mods.cfm.Oven.remove(@Optional final IIngredient output, @Optional final IIngredient input);
+mods.cfm.Oven.remove(@Opinion final IIngredient output, @Opinion final IIngredient input);
 
-// Remove recipes that result in Cooked Flesh
-mods.cfm.Oven.remove(<cfm:item_flesh_cooked>);
-// Remove recipes that require a Potato
+// 删除导致熟Flesh
+mods.cfm.Oven的配方。 emove(<cfm:item_flesh_cooked>);
+// 删除需要 Poato
 mods.cfm.Oven.remove(null,<minecraft:potato>);
-// Remove all recipes
+// 删除所有配方
 mods.cfm.Oven.remove();
 ```
 
-## Adding
+## 添加
 
-## Add an oven recipe.
+## 添加一个 oven 配方。
 
 ```zenscript
-mods.cfm.Oven.addRecipe(@Nonnull final IItemStack output, @Nonnull final IItemStack input);
+mods.cfm.Oven.addRecipe(@Nonnull final IItemStack output, @Nonnull final IItemStack 输入);
 
-// Add a recipe that makes two apples from one stick
-mods.cfm.Oven.addRecipe(<minecraft:apple>.withAmount(2),<minecraft:stick>);
+// 添加一个从一根棍子
+mod中制作两个苹果的配方。 fm.Oven.addRecipe(<minecraft:apple>.withamount(2),<minecraft:stick>);
 ```

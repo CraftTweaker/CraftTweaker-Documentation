@@ -1,15 +1,15 @@
-# Plate Bending Machine
+# Maszyna do zginania płyt
 
-## Importing the Package
+## Importowanie pakietu
 `mods.techreborn.plateBendingMachine`
 
-## Adding Recipes
+## Dodawanie przepisów
 ```zenscript
-mods.techreborn.plateBendingMachine.addRecipe(IItemStack output1, IIngredient input1, int ticktime, int euTick);
+mods.techreborn.plateBendingMachine.addRecipe(wyjście IItemStack1, IIngredient input1, int ticktime, int euTick);
 ```
 
-## Removing Recipes
+## Usuwanie przepisów
 ```zenscript
-mods.techreborn.plateBendingMachine.removeRecipe(IItemStack output);
+mods.techreborn.plateBendingMachine.removeRecipe(wyjście IItemStack);
 mods.techreborn.plateBendingMachine.removeAll();
 ```

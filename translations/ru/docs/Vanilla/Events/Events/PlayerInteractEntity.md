@@ -1,6 +1,6 @@
 # PlayerInteractEntity
 
-The PlayerInteractEntity Event is fired whenever a player interacts with an Entity. It can be canceled to prevent the interaction from taking place. If the event is canceled, a specific result of success, fail or pass can be provided. By default, the result is pass.
+Событие "Игрок InteractEntity" запускается, когда игрок взаимодействует с сущностью. Это может быть отменено, чтобы предотвратить взаимодействие происходящего. Если событие отменено, может быть предоставлен конкретный результат успеха, неудачи или прохождения. По умолчанию, результат выгружается.
 
 ## Класс события
 
@@ -10,22 +10,22 @@ You can, of course, also [import](/AdvancedFunctions/Import/) the class before a
 
 ## Наследование от интерфейсов событий
 
-PlayerInteractEntity Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+PlayerInteractEntity Events реализуют следующие интерфейсы и также могут вызвать все методы/getters/setters:
 
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
-- [PlayerInteract](/Vanilla/Events/Events/PlayerInteract/)
+- [Взаимодействие игрока](/Vanilla/Events/Events/PlayerInteract/)
 - [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
 
 ## ZenGetters & ZenSetters
 
 Следующая информация может быть получена от события:
 
-| ZenGetter            | ZenSetters           | Возвращаемый тип                      |
-| -------------------- | -------------------- | ------------------------------------- |
-| `player`             |                      | [IPlayer](/Vanilla/Players/IPlayer/)  |
-| `target`             |                      | [IEntity](/Vanilla/Entities/IEntity/) |
-| `cancellationResult` | `cancellationResult` | string ("success" / "pass" / "fail")  |
+| ZenGetter          | ZenSetters         | Возвращаемый тип                      |
+| ------------------ | ------------------ | ------------------------------------- |
+| `player`           |                    | [IPlayer](/Vanilla/Players/IPlayer/)  |
+| `target`           |                    | [IEntity](/Vanilla/Entities/IEntity/) |
+| `Результат отмены` | `Результат отмены` | строка ("успеха" / "pass" / "fail")   |
 
 ## Методы
 
-- `event.cancel()` sets the event as cancelled.
+- `event.cancel()` устанавливает событие как отменено.

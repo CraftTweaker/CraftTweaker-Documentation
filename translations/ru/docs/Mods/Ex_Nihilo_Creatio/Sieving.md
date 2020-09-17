@@ -1,45 +1,49 @@
 # Sieving
 
-## Package
+## Пакет
 
-`mods.exnihilocreatio.Sieve`
+Чтобы получить доступ к `Sieve` , не уточнив полный путь, вы можете импортировать пакет в верхней части скрипта следующим образом:
+
+```zenscript
+import mods.exnihilocreatio.Sieve;
+```
 
 ## Методы
 
-- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) block** The block that drops the output.
-- **[IItemStack](/Vanilla/Items/IItemStack/) output** The item that drops from the block..
-- **Float chance** The chance should be between 0-1.
+- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) блок** блок, который выводит вывод.
+- **[IItemStack](/Vanilla/Items/IItemStack/) output** Элемент, который падает из блока..
+- **Шанс плавающего** Шанс должен быть от 0 до 1.
 
-## String Mesh
+## Строковая сетка
 
 ```zenscript
-addStringMeshRecipe(IIngredient, IItemStack, Float chance);
-addStringMeshRecipe(<minecraft:gravel>, <minecraft:diamond>, 0.001);
+Sieve.addStringMeshRecipe(IIngredient, IItemStack, плавающий шанс);
+Sieve.addStringMeshRecipe(<minecraft:gravel>, <minecraft:diamond>, 0.001);
 ```
 
-## Flint Mesh
+## Кремневая сетка
 
 ```zenscript
-addFlintMeshRecipe(IIngredient, IItemStack, Float chance);
-addFlintMeshRecipe(<minecraft:gravel>, <minecraft:diamond>, 0.01);
+Sieve.addFlintMeshRecipe(IIngredient, IItemStack, Float chance);
+Sieve.addFlintMeshRecipe(<minecraft:gravel>, <minecraft:diamond>, 0.01);
 ```
 
-## Iron Mesh
+## Железная сетка
 
 ```zenscript
-addIronMeshRecipe(IIngredient, IItemStack, Float chance);
-addIronMeshRecipe(<minecraft:gravel>, <minecraft:diamond>, 0.1);
+Sieve.addIronMeshRecipe(IIngredient, IItemStack, плавающий шанс);
+Sieve.addIronMeshRecipe(<minecraft:gravel>, <minecraft:diamond>, 0.1);
 ```
 
-## Diamond Mesh
+## Алмазная сетка
 
 ```zenscript
-addDiamondMeshRecipe(IIngredient, IItemStack, Float chance);
-addDiamondMeshRecipe(<minecraft:gravel>, <minecraft:diamond>, 1);
+Sieve.addDiamondMeshRecipe(IIngredient, IItemStack, плавающий шанс);
+Sieve.addDiamondMeshRecipe(<minecraft:gravel>, <minecraft:diamond>, 1);
 ```
 
-## Removal
+## Удаление
 
 ```zenscript
-mods.exnihilocreatio.Sieve.removeAll();
+Sieve.removeAll();
 ```

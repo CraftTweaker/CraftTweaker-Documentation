@@ -1,31 +1,31 @@
-# Scrap Box
+# 废纸箱
 
 ## 所属包名
 
-`import mods.ic2.ScrapBox;`
+`导入 mods.ic2.ScrappBox;`
 
 ## 使用方式
 
-- **[WeightedItemStack](/Vanilla/Items/WeightedItemStack/) weightedItem** The new entry of scrap box drop pool. Percentage weight will be divided by 100.
-- **float weight** The weight of this new entry
+- **[重量物品](/Vanilla/Items/WeightedItemStack/) 重量物品** 废箱投放池的新条目。 百分比重量将除以100。
+- **浮点数** 此新条目的权重
 
-### Add Drop (WeightedItemStack)
+### 添加拖放(重量项目)
 
 ```zenscript
-mods.ic2.ScrapBox.addDrop(WeightedItemStack weightedItem);
+mods.ic2.Scrappox.addDrop(权重物品，权重物品)；
 
-mods.ic2.ScrapBox.addDrop(<minecraft:diamond_ore>.weight(0.1));
-mods.ic2.ScrapBox.addDrop(<minecraft:diamond_ore> % 10);
+mods.ic2.Scrappox.addDrop(<minecraft:diamond_ore>.权重(0.1))；
+mods.ic2.Scrappox.addDrop(<minecraft:diamond_ore> % 10);
 ```
 
-### Add Drop (IItemStack, float)
+### 添加 (StemStack, 浮动)
 
 ```zenscript
-mods.ic2.ScrapBox.addDrop(IItemStack item, float weight);
-mods.ic2.ScrapBox.addDrop(<minecraft:diamond_ore>, 0.1F);
+mods.ic2.Scrappox.addDrop(StemStack 项目，浮点重量)；
+mods.ic2.Scrappox.addDrop(<minecraft:diamond_ore>, 0.1F)；
 ```
 
 ## 删除配方
 
-- If IC2 Classic Tweaker is installed and Ic2 Classic is being used instead of Ic2 Experimental, scrap box drops can be removed. See [here](/Mods/IC2ClassicTweaker/Scrap_Box) for doc.
-- If using Ic2 Experimental, then removal is not possible.
+- 如果安装了 IC2 经典调节器并且正在使用Ic2 经典而不是Ic2 实验设备，碎片箱可以移除。 See [here](/Mods/IC2ClassicTweaker/Scrap_Box) for doc.
+- 如果使用 Ic2 实验，则无法移除。

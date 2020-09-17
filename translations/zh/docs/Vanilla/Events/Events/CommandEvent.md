@@ -1,26 +1,26 @@
-# CommandEvent
+# 命令事件
 
-The Command Event is fired whenever a command is executed. You can react to the command by providing a command handler. See [Crafttweaker examples](https://github.com/CraftTweaker/CraftTweaker-Examples/blob/master/crafttweaker/events/commandEvent/SendMessageOnSyntaxCommand/SendMessageOnSyntaxCommand.zs) for an example.
+每当执行命令时都会触发命令事件。 您可以通过提供一个命令处理器来对该命令作出反应。 请参阅 [Crafttbelown 示例](https://github.com/CraftTweaker/CraftTweaker-Examples/blob/master/crafttweaker/events/commandEvent/SendMessageOnSyntaxCommand/SendMessageOnSyntaxCommand.zs)。
 
-## Event Class
+## 事件类
 
-You will need to cast the event in the function header as this class: `crafttweaker.event.CommandEvent`. It is advised to [import](/AdvancedFunctions/Import/) the class
+你需要将事件投射到函数头中作为这个类: `craftminstruer.event.CommandEvent` 建议 [导入类](/AdvancedFunctions/Import/)
 
-    import crafttweaker.event.CommandEvent;
+    导入 craftweeker.event.CommandEvent;
     
 
-## Event interface extensions
+## 事件界面扩展
 
-Command event implements the following interfaces:
+命令事件实现了以下接口：
 
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 
 ## ZenGetters/ZenSetters
 
-The following information ca be retrieved/set during the event:
+在事件中获取/设置以下信息：
 
-| ZenGetter       | ZenSetter    | Type                                                |
-| --------------- | ------------ | --------------------------------------------------- |
-| `commandSender` | no           | [ICommandSender](/Vanilla/Commands/ICommandSender/) |
-| `command`       | no           | [ICommand](/Vanilla/Commands/ICommand/)             |
-| `parameters`    | `parameters` | string array                                        |
+| ZenGetter | ZenSetter | 类型                                              |
+| --------- | --------- | ----------------------------------------------- |
+| `命令发送者`   | 否         | [ICommander](/Vanilla/Commands/ICommandSender/) |
+| `命令`      | 否         | [ICommand](/Vanilla/Commands/ICommand/)         |
+| `参数`      | `参数`      | 字符串数组                                           |

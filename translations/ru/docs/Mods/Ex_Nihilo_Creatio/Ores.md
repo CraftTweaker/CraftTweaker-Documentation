@@ -1,40 +1,40 @@
 # Ores
 
-**Needs to be in the `#loader preinit` or `#loader contenttweaker`**
+**Должен быть в `#loader preinit` или `#loader contenttweaker`**
 
 
-## Package
+## Пакет
 ```zenscript
 `mods.exnihilocreatio.Ore`
 ```
 
 ## Методы
 
-- **String name** Name the ore chunks/piece/dust/ingot
-- **String color** Color of material in hex.
-- **[IItemStack](/Vanilla/Items/IItemStack/) output** requires an oredict.firstItem or errors out.
+- **Название строки** Название куска руды / кусочка/пыль/слитка
+- **Цвет строки** Цвет материала в шестнадцатеричном виде.
+- **[IItemStack](/Vanilla/Items/IItemStack/) output** требует oredict.firstItem или ошибки.
 - **Map string[string]** Language code then translation.
-- **String oreDict** The name of the oreDict you want.
+- **String oreDict** имя oreDict вы хотите.
 
-## Addition
+## Сложение
 
 ```zenscript
-mods.exnihilocreatio.Ore.addRecipe(String,
+mods.exnihilocreatio.Ore. ddRecipe(tring,
     String,
     @Optional IItemStack,
     @Optional Map<string, String>,
     @Optional String);
 
-mods.exnihilocreatio.Ore.addRecipe("Stone",
+моды. xnihilocreatio.Ore.addRecipe("Каменный",
     "63452D",
-    <ore:stone>.firstItem,
+    <ore:stone>. irstItem,
     {
-    "en_au": "StoneDownUnder"
+    "en_au": "Каменное DownUnder"
     },
-    "Stone");
+    "Камень");
 ```
 
-## Removal
+## Удаление
 
 ```zenscript
 mods.exnihilocreatio.Ore.removeAll();

@@ -1,90 +1,90 @@
-# IMachineRegistry
+# IMachineRegistration
 
-You use the IMachineRegistry to register a new [IMachine](/Mods/ExtraUtilities2/CustomMachines/IMachine) to the game, or to retrieve a previously registered machine afterwards.
+您使用IMachineRegistration来注册一个新的 [IMachine](/Mods/ExtraUtilities2/CustomMachines/IMachine) 到游戏中，或者在事后检索一个先前注册的机器。
 
 ## 导入相关包
 
-If you want to shorten method calls or encounter any issues you might need to [import](/AdvancedFunctions/Import) the package.  
-You can do so using
+如果你想要缩短方法调用或遇到任何问题，你可能需要 [导入包](/AdvancedFunctions/Import)  
+您可以使用
 
 ```zenscript
-import extrautilities2.Tweaker.IMachineRegistry;
+导入 exautilities2.微弱.IMachineRegistry;
 ```
 
-## Create the machine
+## 创建机
 
-There are two types of machines:
+有两种机器：
 
-- Machines
-- Generators
+- 机器
+- 生成器
 
-Machines consume energy, generators emit energy, otherwise they behave almost identically.
+机器消耗能源，发电机排放能源，否则其行为几乎完全相同。
 
 ```zenscript
-extrautilities2.Tweaker.IMachineRegistry.createNewMachine(
+exautilities2.Tweeper.IMachineRegistry. ReateNewMachine(
     name, 
     energyBufferSize, 
-    energyTransferLimit, 
-    inputSlots, 
-    outputSlots, 
-    frontTexture, 
+    能量传输限度， 
+    输入槽， 
+    输出插槽， 
+    前置纹理， 
     frontTextureActive, 
-    color
-);
+    颜色
+;
 
 
-extrautilities2.Tweaker.IMachineRegistry.createNewGenerator(
+校外信息 弱化的 IMachineRegistry。 ReateNewGenerator(
     name,
     energyBufferSize,
     energyTransferLimit,
     inputSlots,
-    outputSlots,
-    frontTexture,
+    输出插槽，
+    前置纹理，
     frontTextureActive,
-    color
-);
+    颜色
+;
 ```
 
-As you can see, both methods accept the same parameters, the only difference is if they require or produce energy.  
-The parameters are:
+正如你可以看到的那样，两个方法都接受相同的参数，唯一的差异是如果它们需要或生产能量。  
+参数是：
 
 | 名称                  | 类型                                                                  |
 | ------------------- | ------------------------------------------------------------------- |
 | name（名称）            | string                                                              |
-| energyBufferSize    | int                                                                 |
-| energyTransferLimit | int                                                                 |
+| 能量缓存大小              | int                                                                 |
+| energyTransferLimit | 整数                                                                  |
 | inputSlots          | [[IMachineSlot](/Mods/ExtraUtilities2/CustomMachines/IMachineSlot)] |
 | outputSlots         | [[IMachineSlot](/Mods/ExtraUtilities2/CustomMachines/IMachineSlot)] |
-| frontTexture        | string                                                              |
-| frontTextureActive  | string                                                              |
-| color (optional)    | int (defaults to `0xffffff` (black))                                |
+| frontTexture        | 字符串                                                                 |
+| 前置纹理激活              | string                                                              |
+| 颜色(可选)              | 整数型变量(默认为 `0xffff` (黑色))                                            |
 
-The slots accept a list of [IMachineSlot](/Mods/ExtraUtilities2/CustomMachines/IMachineSlot). Lists can be created the same way as Arrays, by using [] around the slots. Both methods return an [IMachine](/Mods/ExtraUtilities2/CustomMachines/IMachine) object that represents the created machine.  
-Keep this in mind, as you need that object to create recipes later on!
+位置接受 [IMachineSlot](/Mods/ExtraUtilities2/CustomMachines/IMachineSlot) 的列表。 可以通过在位置周围使用[…]来创建与Arrays相同的列表。 这两种方法都返回了表示已创建机器的 [IMachine](/Mods/ExtraUtilities2/CustomMachines/IMachine) 对象。  
+记住这一点，因为你需要该对象来稍后创建配方！
 
-## Get existing machines
+## 获取现有的机
 
-### Get machine by name
+### 按名称获取机床。
 
-You can get already generated machines using the Registry as well:
-
-```zenscript
-extrautilities2.Tweaker.IMachineRegistry.getMachine(String name);
-```
-
-This method will return the machine with the given name as [IMachine](/Mods/ExtraUtilities2/CustomMachines/IMachine) or `null`
-
-### Get all registered machines
-
-This will return all registered machines as list of [IMachine](/Mods/ExtraUtilities2/CustomMachines/IMachine).
+您也可以使用注册表获取已经生成的机器：
 
 ```zenscript
-extrautilities2.Tweaker.IMachineRegistry.getRegisterdMachineNames();
+extrautilities2.调节.IMachineRegistry.getMachine(String name);
 ```
 
-### Get XU2 machines
+此方法将返回给定名称的机器为 [IMachine](/Mods/ExtraUtilities2/CustomMachines/IMachine) 或 `null`
 
-You can also use these getters to get machines from the XU2 mod as [IMachine](/Mods/ExtraUtilities2/CustomMachines/IMachine) object:
+### 获取所有注册机
+
+这将作为 [IMachine](/Mods/ExtraUtilities2/CustomMachines/IMachine) 列表返回所有注册的机器.
+
+```zenscript
+extrautilities2.Tweeper.IMachineRegistry.getRegisterdMachineNames();
+```
+
+### 获取 XU2 机
+
+您也可以使用这些getter来从 XU2 模组中获取机器作为 [IMachine](/Mods/ExtraUtilities2/CustomMachines/IMachine) 对象：
 
     extrautilities2.Tweaker.IMachineRegistry.crusher;
     extrautilities2.Tweaker.IMachineRegistry.enchanter;

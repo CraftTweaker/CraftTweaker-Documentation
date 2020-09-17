@@ -1,16 +1,16 @@
-# Manufactory
+# Fabrik
 
-## Importing the Package
-`mods.nuclearcraft.manufactory`
+## Paket wird importiert
+`mods.nuclearcraft.manufacturtory`
 
-## Adding Recipes
+## Rezepte hinzufügen
 ```zenscript
-mods.nuclearcraft.manufactory.addRecipe([itemInput, itemOutput, @Optional double timeMultiplier, @Optional double powerMultiplier, @Optional double processRadiation]);
+mods.nuclearcraft.Manutory.addRecipe([itemInput, itemOutput, @Optional double timeMultiplier, @Optional double powerMultiplier, @Optional double processRadiation]);
 ```
 
-## Removing Recipes
+## Rezepte entfernen
 ```zenscript
-mods.nuclearcraft.manufactory.removeRecipeWithInput([itemInput]);
-mods.nuclearcraft.manufactory.removeRecipeWithOutput([itemOutput]);
+mods.nuclearcraft.Manufactury.removeRecipeWithInput([itemInput]);
+mods.nuclearcraft.Manufactory.removeRecipeWithOutput([itemOutput]);
 mods.nuclearcraft.manufactory.removeAllRecipes();
 ```

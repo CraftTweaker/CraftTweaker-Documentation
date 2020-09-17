@@ -2,44 +2,48 @@
 
 ## 所属包名
 
-`mods.exnihilocreatio.Sieve`
+要访问 `Sieve` 而不澄清整个路径，您可以以下列方式导入您脚本顶部的包：
+
+```zenscript
+导入 mods.exnihilocreatio。Sieve;
+```
 
 ## 使用方式
 
-- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) block** The block that drops the output.
-- **[IItemStack](/Vanilla/Items/IItemStack/) output** The item that drops from the block..
-- **Float chance** The chance should be between 0-1.
+- **[Ingredient](/Vanilla/Variable_Types/IIngredient/) 块** 减去输出的块。
+- **[IItemStack](/Vanilla/Items/IItemStack/) 输出** 从方块中掉落的物品...
+- **浮动几率** 应在0-1之间。
 
-## String Mesh
+## 字符串网格
 
 ```zenscript
-addStringMeshRecipe(IIngredient, IItemStack, Float chance);
-addStringMeshRecipe(<minecraft:gravel>, <minecraft:diamond>, 0.001);
+Sieve.addStringMeshRecipe(IIngredient, IItemStack, Float chance);
+Sieve.addStringMeshRecipe(<minecraft:gravel>, <minecraft:diamond>, 0.001);
 ```
 
-## Flint Mesh
+## Flint 网格h
 
 ```zenscript
-addFlintMeshRecipe(IIngredient, IItemStack, Float chance);
-addFlintMeshRecipe(<minecraft:gravel>, <minecraft:diamond>, 0.01);
+Sieve.addFlintMeshRecipe(IIngredient, IItemStack, Float chance);
+Sieve.addFlintMeshRecipe(<minecraft:gravel>, <minecraft:diamond>, 0.01);
 ```
 
-## Iron Mesh
+## 铁网格
 
 ```zenscript
-addIronMeshRecipe(IIngredient, IItemStack, Float chance);
-addIronMeshRecipe(<minecraft:gravel>, <minecraft:diamond>, 0.1);
+Sieve.addIronMeshRecipe(IIngredient, IItemStack, Float chance);
+Sieve.addIRonMeshRecipe(<minecraft:gravel>, <minecraft:diamond>, 0.1);
 ```
 
-## Diamond Mesh
+## 钻石网格
 
 ```zenscript
-addDiamondMeshRecipe(IIngredient, IItemStack, Float chance);
-addDiamondMeshRecipe(<minecraft:gravel>, <minecraft:diamond>, 1);
+Sieve.addDiamondMeshRecipe(IIngredient, IItemStack, Float chance);
+Sieve.addDiamondMeshRecipe(<minecraft:gravel>, <minecraft:diamond>, 1, );
 ```
 
-## Removal
+## 移除
 
 ```zenscript
-mods.exnihilocreatio.Sieve.removeAll();
+Sieve.removeAll();
 ```

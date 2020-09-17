@@ -1,25 +1,25 @@
-# Cross-Script Reference
+# Odniesienie do Skryptu
 
-All scripts that have [static variables](/AdvancedFunctions/Global_Static_Variables/) or [custom functions](/AdvancedFunctions/Custom_Functions/) are registered to the cross-script reference.  
-This allows you to access these fields/functions using the dot-notation.
+Wszystkie skrypty, które mają [zmienne statyczne](/AdvancedFunctions/Global_Static_Variables/) lub [niestandardowe funkcje](/AdvancedFunctions/Custom_Functions/) są zarejestrowane do odwołania międzyskryptowego.  
+To pozwala na dostęp do tych pól/funkcji za pomocą notacji kropkowej.
 
-## Specifications
+## Specyfikacje
 
-- Cross-script references start with `scripts.`
-- You specify the path relative from the scripts folder (e.g. `scripts.mySubfolder.a.zs`)
-- You can use the dot-notation in an [import statement](/AdvancedFunctions/Import/) should you choose to do so.
-- ZS first checks for matching directories then for matching files or values.
+- Odniesienia do skryptów krzyżowych zaczynają się od `skryptów.`
+- Określisz ścieżkę względną z folderu skryptów (np. `scripts.mySubfolder.a.zs`
+- Możesz użyć notacji kropkowej w [instrukcji importu](/AdvancedFunctions/Import/) , jeśli to zdecydujesz.
+- Najpierw sprawdza czy katalogi pasują do plików lub wartości.
 
-## Example
+## Przykład
 
-Let's say we have two scripts: `a.zs` and `b.zs`.
+Powiedzmy, że mamy dwa skrypty: `a.zs` i `b.zs`.
 
 a.zs:
 
 ```zenscript
-static myVal as string = "myVal";
+statyczny myVal jako ciąg znaków = "myVal";
 
-function makeLine() {
+funkcja makeLine() {
     print("---------------");
 }
 ```

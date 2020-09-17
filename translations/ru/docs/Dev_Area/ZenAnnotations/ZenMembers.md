@@ -1,48 +1,48 @@
-# ZenMembers and ZenProperties
+# ZenMembers и ZenProperties
 
-ZenMembers are a ZenObject's members.  
-They can be accesses using `object.member`. Members can be settable, gettable or both.
+Члены ZenMembers являются членами ZenObject.  
+Они могут быть доступны с помощью `объектов.Member`. Участники могут быть установлены, gettable или и то и другое.
 
-## Getters and Setters
+## Геттеры и Сеттеры
 
-There are two Types of ZenGetters: ZenGetters and ZenMemberGetters.  
-So what's the difference?
+Есть два типа ZenGetters: ZenGetters и ZenMemberGetters.  
+Так что разница?
 
-Normally you use `@ZenGetter(value)`, unless you have something which has either many members that return the same type or if you don't know the exact members yourself.  
-In that case you can use `@ZenMemberGetter`.  
-So what's the difference?
+Обычно вы используете `@ZenGetter(значение)`, если у вас есть что-то, которое имеет много участников, которые возвращают один и тот же тип или если вы не знаете точного участника самостоятельно.  
+В этом случае вы можете использовать `@ZenMemberGetter`.  
+Так что в чем разница?
 
-- A Method annotated with a `@ZenGetter(value)` does not need any parameters, while a Method annotated with `@ZenMemberGetter` needs a String argument that is the member's name.
-- MemberGetters are only executed if no other getter is found.
-- If you only need one small Property, you should use `@ZenGetter(value)`
+- Метод с аннотированным `@ZenGetter(value)` не требует никаких параметров, в то время как метод, аннотированный с помощью `@ZenMemberGetter` нуждается в String аргументе, который является именем участника.
+- MemberGetters выполняются только в том случае, если другой получатель не найден.
+- Если вам нужна только одна небольшая собственность, вы должны использовать `@ZenGetter(value)`
 
-The same applies for ZenSetters/ZenMemberSetters.
+То же самое относится и к ZenSetters/ZenMemberSetters.
 
-## ZenProperty
+## ЗенСобственность
 
-The `@ZenProperty` combines both, `@ZenGetter(value)` and `@ZenSetter` in one annotation.  
-This annotation can only be applied to public fields (e.g. `public String name`).
+`@ZenProperty` сочетает в одном аннотации `@ZenGetter(value)` и `@ZenSetter` .  
+Эта аннотация может быть применена только к публичным полям (например, `публичное название строки`).
 
-This Annotation can have these arguments:
+В этой аннотации могут быть эти аргументы:
 
-- `String value`: the property name (in ZS you call object.value). If omitted, the field name is used.
-- `String getter`: the name of the corresponding Getter Method (which may not have a ZenGetter Annotation). 
-    - If not set or `""`, it will use use 
-        - `get + value` if the annotated field is not a boolean
-        - `is + value` if annotated field is boolean or Boolean
-    - if `null`, it will not register a ZenSetter
-- `String setter`: the name of the corresponding Setter Method (which may not have a ZenSetter Annotation). 
-    - If not set or `""`, it will use `set + value`
-    - If `null`, it will not register a ZenSetter
+- `Строковое значение`: имя свойства (в ZS вы вызываете object.value). В случае неуказания имя поля используется.
+- `Получатель строк`: название соответствующего метода Getter (который может не иметь аннотации ZenGetter). 
+    - Если не задано, или `""`, он будет использовать 
+        - `получить + значение` , если аннотированное поле не является логическим
+        - `+ значение` если аннотированное поле логическое или логическое значение
+    - если `null`, он не будет зарегистрировать ZenSetter
+- `String setter`: название соответствующего метода установки (который не может иметь аннотации ZenSetter). 
+    - Если не задано, или `""`, будет использоваться `набор + значение`
+    - Если `null`, он не будет зарегистрировать ZenSetter
 
-You can even omit the getter/setter method alltogether if you use `@ZenProperty`.  
-If you do use those methods, however, you will need to add `@ZenMethod` should you want this functionality, if you omit the methods, they will be generated automatically.
+Вы даже не можете использовать метод getter/setter всегда, если вы используете `@ZenProperty`.  
+Если вы используете эти методы, то вам нужно добавить `@ZenMethod` , если вы хотите эту функциональность, если вы пропустите методы, они будут сгенерированы автоматически.
 
-## Examples
+## Примеры
 
-### ZenGetters Example
+### Пример ZenGetters
 
-[CraftTweaker's IOreDict](https://github.com/jaredlll08/CraftTweaker/blob/1.12/CraftTweaker2-API/src/main/java/crafttweaker/api/oredict/IOreDict.java)
+[IOreDict из CraftTweaker](https://github.com/jaredlll08/CraftTweaker/blob/1.12/CraftTweaker2-API/src/main/java/crafttweaker/api/oredict/IOreDict.java)
 
     @ZenClass("crafttweaker.oredict.IOreDict")
     @IterableSimple("crafttweaker.oredict.IOreDictEntry")
@@ -64,17 +64,17 @@ If you do use those methods, however, you will need to add `@ZenMethod` should y
     }
     
 
-### ZenProperties Example
+### Пример ZenProperties
 
-[ContentTweaker's MCAxisAlignedBB](https://github.com/The-Acronym-Coders/ContentTweaker/blob/develop/1.12/src/main/java/com/teamacronymcoders/contenttweaker/api/ctobjects/aabb/MCAxisAlignedBB.java)
+[Контент-Tweaker MCAxAlignedBB](https://github.com/The-Acronym-Coders/ContentTweaker/blob/develop/1.12/src/main/java/com/teamacronymcoders/contenttweaker/api/ctobjects/aabb/MCAxisAlignedBB.java)
 
     @ZenRegister
     @ZenClass("mods.contenttweaker.AxisAlignedBB")
-    public class MCAxisAlignedBB implements ICTObject<AxisAlignedBB> {
+    публичный класс MCAxisAlignedBB реализует ICTObject<AxisAlignedBB> {
         @ZenProperty
         public double minX = 0.0;
     
-        ...
+    ...
     
         @ZenMethod
         public double getMinX() {
@@ -83,9 +83,9 @@ If you do use those methods, however, you will need to add `@ZenMethod` should y
     
         @ZenMethod
         public void setMinX(double minX) {
-            this.minX = minX;
+            this. inX = minX;
         }
     
-        ...
+    ...
     
     }

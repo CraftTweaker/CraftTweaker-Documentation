@@ -1,44 +1,44 @@
-# Filtered Hopper
+# Tentonnoir filtré
 
-The Filtered Hopper is a block that can allow or disallow certain items based on the item currently in its Filter Slot. Additionally it can perform recipes on the items that are attempting to enter the Hopper.
+Le bloc entonnoir filtré est un bloc qui peut autoriser ou interdire certains objets en fonction de l'objet actuellement dans son emplacement de filtrage. De plus, il peut réaliser des recettes sur les objets qui tentent d'entrer dans la Tentonnière.
 
-# Filters
+# Filtres
 
-* Addition
+* Ajouter
     
-    * Add a new Filter by a name and assign the items which will be used in the Filter Slot.
+    * Ajouter un nouveau filtre par un nom et assigner les éléments qui seront utilisés dans l'emplacement de filtre.
     ```zenscript
         mods.betterwithmods.FilteredHopper.addFilter(String name, IIngredient item)
     
         mods.betterwithmods.FilteredHopper.addFilter("modtweaker:myFilter", <minecraft:planks>);   
     ```
     
-    * Add an allowed item to a Filter by its name.
+    * Ajouter un élément autorisé à un filtre par son nom.
     ```zenscript
         mods.betterwithmods.FilteredHopper.addFilteredItem(String name, IIngredient item)
     
         mods.betterwithmods.FilteredHopper.addFilteredItem("modtweaker:myFilter",<minecraft:dirt>);
-        mods.betterwithmods.FilteredHopper.addFilteredItem("modtweaker:myFilter",<ore:ingotIron>);
+        mods.betterwithmods.FilteredHopper.addFilterItem("modtweaker:myFilter",<ore:ingotIron>);
     ```
     
-    * Filtered Recipes - The hopper can process the item attempting to input into specific item outputs, it can either
+    * Recettes filtrées - La trémie peut traiter l'objet en tentant d'entrer dans des sorties spécifiques d'objets, elle peut soit
         
-        * Put into the hopper's inventory (as long as the current filter allows it).
-        * Eject the items into the world above the hopper 
+        * Mettre dans l'inventaire de la trémie (à condition que le filtre actuel le permette).
+        * Éjectez les objets dans le monde au-dessus de la trémie 
         ```zenscript
-        mods.betterwithmods.FilteredHopper.addFilterRecipe(String name, IIngredient input, IIngredient[] insideOutput , IIngredient[] outsideOutput);
+        FilteredHopper ddFilterRecipe(String name, IIngredient input, IIngredient[] insideOutput , Igredient[] outsideOutput);
         
-        //Will convert a grass block into a flint side the inventory and 9 diamonds outside the inventory
-        mods.betterwithmods.FilteredHopper.addFilterRecipe("modtweaker:myFilter",<minecraft:grass>,[<minecraft:flint>],[<minecraft:diamond>*9]);
+        //convertira un bloc d'herbe en un côté de silex l'inventaire et 9 diamants en dehors des mods
+        d'inventaire. etterwithmods.FilteredHopper.addFilterRecipe("modtweaker:myFilter",<minecraft:grass>,[<minecraft:flint>],[<minecraft:diamond>*9]);
         
-        //Will only eject 9 diamonds into the world
-        mods.betterwithmods.FilteredHopper.addFilterRecipe("modtweaker:myFilter2",<minecraft:gravel>, [], [<minecraft:diamond>*9]);
+        //N'éjectera que 9 diamants dans le monde
+        mods. FilteredHopper ddFilterRecipe("modtweaker:myFilter2",<minecraft:gravel>, [], [<minecraft:diamond>*9]);
         
-        //Will only put 9 diamonds into the inventory, **only if you allow diamonds into the specific filter**
-        mods.betterwithmods.FilteredHopper.addFilterRecipe("modtweaker:myFilter3",<minecraft:sand>, [<minecraft:diamond>*9], []);
+        //Ne mettra 9 diamants dans l'inventaire, **que si vous autorisez les diamants dans le filtre spécifique**
+        mods. etterwithmods.FilteredHopper.addFilterRecipe("modtweaker:myFilter3",<minecraft:sand>, [<minecraft:diamond>*9], []);
         ```
         
-        Additionally, you can add special recipes to the Filtered Hopper that will create Souls Urns from Urns.
+        De plus, vous pouvez ajouter des recettes spéciales aux entonnoirs filtrés qui créeront des Urnes d’âmes à partir d’urnes.
         
         ```zenscript
            mods.betterwithmods.FilteredHopper.addSoulUrnRecipe(IIngredient input, IItemStack[] outputs, IItemStack[] secondary)
@@ -46,16 +46,16 @@ The Filtered Hopper is a block that can allow or disallow certain items based on
            mods.betterwithmods.FilteredHopper.addSoulUrnRecipe(<minecraft:stone>,[],[<minecraft:diamond>*9]);
         ```
 
-* Removal
+* Retirer
     
-    * Remove the allowed items from the specified filter
+    * Retirer les éléments autorisés du filtre spécifié
     ```zenscript
         mods.betterwithmods.FilteredHopper.clearFilter(String name);
     
         mods.betterwithmods.FilteredHopper.clearFilter("betterwithmods:wicker");
     ```
     
-    * Remove a Filtered Recipe by input or output
+    * Supprimer une recette filtrée par entrée ou sortie
     ```zenscript
         mods.betterwithmods.FilteredHopper.removeRecipe(IIngredient[] insideOutput, IIngredient[] outsideOutput);
     

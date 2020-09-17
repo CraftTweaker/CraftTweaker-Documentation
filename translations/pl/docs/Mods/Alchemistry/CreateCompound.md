@@ -1,33 +1,33 @@
-# Create Compound
-Custom Alchemistry Compound Generation
+# Utwórz związek
+Niestandardowe wytwarzanie związków chemicznych
 
-# Package
+# Pakiet
 ```zenscript
 mods.alchemistry.Util.createCompound
 ```
 
-## Loader
-This needs to be loaded with `#loader alchemistry`
+## Ładowarka
+To musi być załadowane `#loader alchemistry`
 
-## Methods
-- **int meta** meta for new Compund
-- **String Name** Name for New Compund
-- **int red** compound red shade, RGB
-- **int green** compound green shade, RGB
-- **int blue** compound blue shade, RGB
-- **Object[][]** Each Bracket holds a different element followed by a comma and the amount to use in your Compound
+## Metody
+- **int meta** meta dla nowego Compund
+- **Nazwa ciągu** Nazwa dla New Compund
+- **czerwony** czerwony cień złożony, RGB
+- **int green** compound green shad, RGB
+- **niebieski** złożony niebieski odcień, RGB
+- **Obiekt [][]** Każdy wspornik zawiera inny element, a następnie przecinek i ilość do użycia w twoim Związku
 
-## Creation
+## Tworzenie
 ```zenscript
-mods.alchemistry.Util.createCompound(int meta, String name, int red, int green, int blue, Object[][] components);
+mods.alchemistry.Util.createCompound(int meta, nazwa ciągu, int czerwone, int green, int blue, Object[][] składniki);
 
-mods.alchemistry.Util.createCompound(1000, "vibranium sufide", 20, 69, 185,
+mods.alchemistry.Util.createCompound(1000, "sufid wibracyjny", 20, 69, 185,
 [["vibranium", 1],
  ["sulfur", 3]]);
 ```
 
-## Notes
-- Please use lowercase names
-- The '#loader alchemistry' line is required at the top of the file. This file can only be used to create elements and compounds, other recipes must be put in other files.
-- The components field requires each entry to be an array like so ["cellulose", 5], indicating the element/compound and it's quantity. String arguments are used here rather than itemstacks as a way to ensure that only elements/compounds are used.
-- The meta field is required to ensure that your new compounds have an unchangeable identifier even when other compounds are created or removed. Each compound must have a unique meta value. At the time of this writing, the mod only uses the meta values from about 0 to 35, but I would start numbering your meta at 1000 (like seen above) or higher to ensure that your custom compounds never clash with Alchemistry's internal recipes
+## Uwagi
+- Proszę użyć małych liter
+- Linia '#loader alchemistry' jest wymagana u góry pliku. Ten plik może być użyty tylko do tworzenia elementów i związków, inne przepisy muszą być umieszczane w innych plikach.
+- Pole składników wymaga, aby każdy wpis był tablicą taką jak ["celuloza", 5], wskazując element/związek i jego ilość. Argumenty tekstowe są używane tutaj, a nie itemstacks jako sposób zapewnienia, że używane są tylko pierwiastki/związki.
+- Pole meta jest wymagane, aby Twoje nowe związki miały niezmienny identyfikator, nawet gdy inne związki są tworzone lub usuwane. Każdy związek musi mieć unikalną wartość meta. W chwili pisania mod używa tylko wartości meta od 0 do 35, ale zaczynam numerować meta na 1000 (jak widzę powyżej) lub więcej, aby zapewnić, że twoje niestandardowe związki nigdy nie będą sprzeczne z wewnętrznymi recepturami Alchemii

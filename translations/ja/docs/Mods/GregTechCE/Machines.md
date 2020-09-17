@@ -1,66 +1,66 @@
-# Machines
+# マシン
 
-GTCE stores all recipes in a `RecipeMap`. To get them, you need import `mods.gregtech.recipe.RecipeMap` to your code.
+GTCE はすべてのレシピを `RecipeMap` に格納します。 これを取得するには、 `mods.gregtech.recipe.RecipeMap` をコードにインポートする必要があります。
 
-Recipes are categorized into their machines, call `RecipeMap.getByName(machineName)` to get specific recipes and builder.
+レシピはマシンに分類されます。特定のレシピとビルダーを取得するには、 `RecipeMap.getByName(machineName)` を呼びます。
 
-## List of available machines
+## 利用可能なマシンの一覧
 
-- Compressor: `compressor`
-- Extractor: `extractor`
+- コンプレッサー: `コンプレッサー`
+- 抽出: `抽出器`
 - Macerator: `macerator`
-- Ore washing plant: `orewasher`
-- Thermal centrifuge: `thermal_centrifuge`
-- Furnace: `furnace`
-- Microwave: `microwave`
-- Assembling machine: `assembler`
-- Forming press: `forming_press`
-- Fluid canner: `fluid_canner`
-- Plasma arc furnace: `plasma_arc_furnace`
-- Arc furnace: `arc_furnace`
-- Sifting machine: `sifter`
+- 鉱石洗浄プラント: `オレッシャー`
+- 熱遠心分離: `thermal_centrifuge`
+- 炉: `炉`
+- マイクロ波: `マイクロ波`
+- 組立機: `組立機`
+- フォーミングプレス: `forming_press`
+- 流体缶: `fluid_canner`
+- プラズマアーク炉: `plasma_arc_furnace`
+- アーク炉: `アーク炉`
+- シフティングマシン: `ふるい`
 - Precision laser engraver: `laser_engraver`
-- Mixing machine: `mixer`
+- 混合機: `ミキサー`
 - Autoclave: `autoclave`
-- Electromagnetic separator: `electromagnetic_separator`
+- 電磁セパレータ: `電磁セパレータ`
 - Polarizer: `polarizer`
-- Chemi bath: `chemical_bath`
-- Brewing machine: `brewer`
-- Fluid heater: `fluid_heater`
-- Distillery: `distillery`
-- Fermenter: `fermenter`
-- Fluid solidifier: `fluid_solidifier`
-- Fluid extractor: `fluid_extractor`
-- Centrifuge: `centrifuge`
-- Electrolyzer: `electrolyzer`
-- Blast furnace: `blast_furnace`
-- Implo compressor: `implosion_compressor`
+- 化学風呂: `化学風呂`
+- 醸造機械： `醸造業者`
+- 流体ヒーター: `fluid_heater`
+- 蒸留所： `蒸留所`
+- 発酵機： `発酵機`
+- 流体固体: `fluid_solifier`
+- 流体抽出器: `fluid_extractor`
+- 遠心分離: `遠心分離機`
+- 電解槽: `電解槽`
+- ブラスト炉: `blast_furnace`
+- コンプレッサーの実装: `implosion_compressor`
 - Vac freezer: `vacuum_freezer`
-- Chemical reactor: `chemical_reactor`
-- Disti tower: `distillation_tower`
-- Cracker unit: `cracker`
-- Pyrolyse oven: `pyro`
-- Wiremill: `wiremill`
-- Metal bender: `metal_bender`
-- Alloy smelter: `alloy_smelter`
-- Canning machine: `canner`
+- 化学リアクター: `chemical_reactor`
+- ディスティタワー: `distillation_tower`
+- クラッカーユニット: `クラッカー`
+- Pyrolyseオーブン: `pyro`
+- ワイヤーミル: `wiremill`
+- メタルベンダー: `metal_bender`
+- 合金製錬所: `alloy_smelter`
+- Canning Machine: `canner`
 - Lathe: `lathe`
-- Block cutting machine: `cutting_saw`
-- Extruder: `extruder`
-- Forge hammer: `forge_hammer`
-- Packaging machine: `packer`
-- Unpackaging machine: `unpacker`
+- ブロック切断機: `cuting_saw`
+- 押し出し: `押し出し装置`
+- 鍛造ハンマー: `forge_hammer`
+- 包装機: `パッカー`
+- 包装解除マシン: `unpacker`
 - Diesel gen: `diesel_generator`
-- Gas turbine: `gas_turbine`
-- Steam turbine: `steam_turbine`
-- Plasma generator: `plasma_generator`
+- ガスタービン: `ガスタービン`
+- 蒸気タービン: `蒸気タービン`
+- プラズマ発生器: `plasma_generator`
 
-**Not yet implemented:**
+**まだ実装されていません**
 
-- Uu-mater producer: `uuamplifier`
-- Thermal generator: `thermal_generator`
-- Semi-fluid generator: `semi_fluid_generator`
-- Fusion reactor: `fusion_reactor`
+- UU-materプロデューサー: `uuamp;`
+- 熱発生器: `thermal_generator`
+- 半流体発生器: `semi_fluid_generator`
+- 核融合炉: `核融合反応炉`
 
 **Primitive Blast Furnace** *uses different syntax from normal recipes.* For example:
 
@@ -82,19 +82,19 @@ for recipe in RecipeMaps.getPrimitiveBlastFurnaceRecipes() {
     recipe.remove();
 ```
 
-## Builder information
+## ビルダー情報
 
-After getting a instance of `RecipeMap`, you can define recipes by using their builder.
+`RecipeMap`のインスタンスを取得すると、ビルダーを使用してレシピを定義できます。
 
-Builder method calling:
+ビルダーメソッドの呼び出し:
 
 ```zenscript
 recipeMap.recipeBuilder()
 ```
 
-It is a bit like `Stream<T>` in Java, with fully functionally to control your recipe's behaviour.
+Java では `ストリーム<T>` のようなビットで、レシピの挙動を完全に機能的に制御できます。
 
-Example for EBF:
+EBF の例:
 
 ```zenscript
 // Electric Blast Furnace
@@ -109,29 +109,29 @@ blast_furnace.recipeBuilder()
     .buildAndRegister();
 ```
 
-Some of properties assignable to `.property()` method:
+`.property()` メソッドに割り当てられるいくつかのプロパティ:
 
-| Name        | 説明                                                                 |
-| ----------- | ------------------------------------------------------------------ |
-| explosives  | Implosion Compressor, amount of explosives                         |
-| circuit     | Integrated Circuit-configurable machines. Configuration of circuit |
-| temperature | Blast Furnace. Minimum temperature requirement.                    |
+| 名称 | 説明                  |
+| -- | ------------------- |
+| 爆薬 | 爆破コンプレッサー、爆発物の量     |
+| 回路 | 集積回路構成可能なマシン。 回路の構成 |
+| 温度 | ブラストかまど。 最低気温要件。    |
 
-These ones are **NOT IMPLEMENTED YET:**
+これらは **未実装 :**
 
-| Name          | Description                                     |
-| ------------- | ----------------------------------------------- |
-| amplifier     | UU Amplifier. Amount of UU Amplifier outputted. |
-| eu_to_start | Fusion Reactor, EU to start fusion              |
+| 名称            | 説明                   |
+| ------------- | -------------------- |
+| アンプ           | UUアンプ。 出力されるUUアンプの量。 |
+| eu_to_start | 核融合反応器、EUで核融合を開始     |
 
-You use it just like the "temperature":
+「温度」と同じように使用します：
 
 ```zenscript
-.property("circuit", X)//, where X is the integrated circuit configuration
-.property("explosives", Y)//, where Y is the amount of explosives required to make a recipe work
+.property("circuit", X)//(ここでXは集積回路構成
+.property("爆発物", Y)//, ここでYはレシピを動作させるのに必要な爆発物の量
 ```
 
-More useful methods:
+より便利なメソッド:
 
 ```zenscript
 .inputs()
@@ -142,19 +142,19 @@ More useful methods:
 .duration() // in ticks
 .notConsumable(X) // where X is a CT id. Works as .inputs, but the item doesn't get consumed
 .hidden() // if the recipe is hidden from the JEI
-.chancedOutput(<itemstack>, 0-10000, 0-10000) (10000 is 100%) // not valid for every machine. some of them use that method. The most notable one is macerator
-.EUt() // EU per tick
+.chancedOutput(<itemstack>, 0-10000, 0-10000) (10000 is 100%) // not valid for every machine. その方法を使う人もいます 最も注目すべきは、macerator
+.EUt() // EU/tick
 ```
 
-## Removing
+## 削除中
 
-Removing a recipe is done by recipe instance itself, so you have to find a recipe first.
+レシピの削除は、レシピインスタンス自体で行われるため、まずレシピを見つける必要があります。
 
-Example:
+例
 
 ```zenscript
 val compressor as RecipeMap = RecipeMap.getByName("compressor");
 
-// findRecipe(long voltage, IItemHandlerModifiable inputs, IMultipleTankHandler/List<FluidStack> fluidInputs)
+// findRecipe(long voltage, IItemHandlerModifiable inputs, IMmultipleTankHandler/List<FluidStack> fluidInputs)
 compressor.findRecipe(2, [<minecraft:redstone>], null).remove();
 ```

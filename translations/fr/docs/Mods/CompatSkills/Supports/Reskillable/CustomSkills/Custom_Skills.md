@@ -1,73 +1,73 @@
-# Custom Skills
+# Compétences personnalisées
 
-## Credits:
+## Crédits :
 
-Credits goes out to Kindlich for writing most of the Custom Content implementation!
+Les crédits sont distribués à Kindlich pour la rédaction de la plupart de l'implémentation de Contenu Personnalisé !
 
-## Custom Skills:
+## Compétences personnalisées :
 
-### Implementation Syntax:
+### Syntaxe d'implémentation :
 
-    Examples:
+    Exemples:
     mods.compatskills.SkillCreator.createSkill(String name, String backGroundLocation)
     mods.compatskills.SkillCreator.createNewSkill(String nameLocation, String backGroundLocation)
     
-    "createSkill" auto-assigns the CompatSkills ModID to the Name Resource Location.
-    So for example:
-    mods.compatskills.SkillCreator.createSkill("banana", "textures/blocks/stonebrick.png");
+    "createSkill" assigne automatiquement le ModID CompatSkills à l'emplacement de la ressource.
+    Donc par exemple :
+    mods.compatskills.SkillCreator.createSkill("banane", "textures/blocks/stonebrick.png");
     
-    Would internally return:
-    "compatskills:banana" as the resource location name for the skill.
+    reviendrait en interne :
+    "compatskills:banana" comme le nom de la ressource pour la compétence.
     
-    The second one has no assigned ModID meaning you can insert your own.
+    Le second n'a pas de ModID assigné, ce qui signifie que vous pouvez insérer le vôtre.
     mods.compatskills.SkillCreator.createNewSkill("pokemon:throwing", "textures/blocks/stonebrick.png")
     
 
-### ZenProperties
+### Propriétés Zen
 
-| Reference | Property Name | Implementation |
-|:--------- |:------------- | -------------- |
-| CrTSkill  | name          | See Below      |
+| Référence | Nom de la propriété | Implémentation  |
+|:--------- |:------------------- | --------------- |
+| CrTSkill  | Nom                 | Voir ci-dessous |
 
-    // Creates the skill as a variable
-    var banana = mods.compatskills.SkillCreator.createSkill("banana", "textures/blocks/stonebrick.png");
+    // Crée la compétence en tant que variable
+    var banana = mods.compatskills.SkillCreator.createSkill("banane", "textures/blocks/stonebrick. ng");
     
-    // Hard-Sets the name to "Banana"
-    // Be aware this makes localization through .lang files not possible!
+    // Hard-Sets le nom à "Banana"
+    // Soyez conscient que cela rend la localisation via des fichiers .lang impossible !
     banana.name = "Banana"
     
 
 ### ZenSetters/ZenGetters
 
-| Method Type | Method Name           | Values                                   |
-|:----------- |:--------------------- | ---------------------------------------- |
-| Setter      | setLevelCap           | Takes an Integer                         |
-| Getter      | getLevelCap           | Returns an Integer                       |
-| Setter      | setEnabled            | Takes an Boolean                         |
-| Getter      | getEnabled            | Returns an Boolean                       |
-| Setter      | setSkillPointInterval | Takes an Integer                         |
-| Setter      | setBaseLevelCost      | Takes an Integer                         |
-| Getter      | getBaseLevelCost      | Returns an Integer                       |
-| Getter      | getName               | Returns the localized String Name        |
-| Setter      | setLevelStaggering    | Takes a String[], See Config for Example |
-| Getter      | getLevelStaggering    | Returns a String[]                       |
-| Setter      | setHidden             | Takes a Boolean                          |
-| Getter      | isHidden              | Returns a Boolean                        |
+| Type de méthode | Nom de la méthode          | Valeurs                                         |
+|:--------------- |:-------------------------- | ----------------------------------------------- |
+| Setter          | setLevelCap                | Prend un nombre entier                          |
+| Récupération    | getLevelCap                | Renvoie un entier                               |
+| Setter          | Activé                     | Prend un booléen                                |
+| Récupération    | Activé                     | Renvoie un booléen                              |
+| Setter          | setSkillPointInterval      | Prend un nombre entier                          |
+| Setter          | setBaseLevelCost           | Prend un nombre entier                          |
+| Récupération    | getBaseLevelCost           | Renvoie un entier                               |
+| Récupération    | getName                    | Retourne le nom de la chaîne localisée          |
+| Setter          | setLevelStaggering         | Prend une chaîne[], Voir Config pour un exemple |
+| Récupération    | format@@0 getLevelStagging | Renvoie une chaîne[]                            |
+| Setter          | setHidden                  | Prend un booléen                                |
+| Récupération    | isHidden                   | Renvoie un booléen                              |
 
-### Localization & Resource Location References:
+### Localisation & Références d'emplacement de ressource :
 
-    Skill Icons:
+    Icônes de compétences :
     
-    Either:
+    Soit :
     
     - mods.compatskills.SkillCreator.createSkill(String name, String backGroundLocation);
         - compatskills:textures/skills/skillname.png
     
-    - mods.compatskills.SkillCreator.createNewSkill(String nameLocation, String backGroundLocation);
-        - customResourceLocation:/textures/skills/skillname.png
+    - mods.compatskills.SkillCreator. reateNewSkill(String nameLocation, String backGroundLocation);
+        - customResourceLocation:/textures/skillname.png
     
     
-    Localizations are placed in:
+    Localizations sont placées dans:
     
     - compatskills:lang/localeCode.lang
     
@@ -76,4 +76,4 @@ Credits goes out to Kindlich for writing most of the Custom Content implementati
     - customResourceLocation:lang/localeCode.lang
     
 
-Go to this link to see all possible Locale-Codes! [Gamepedia's Minecraft Language Page](https://minecraft.gamepedia.com/Language "Gamepedia's Minecraft Language Page")
+Allez à ce lien pour voir tous les codes locaux possibles! [Page de langue Minecraft de Gamepedia](https://minecraft.gamepedia.com/Language "Gamepedia's Minecraft Language Page")

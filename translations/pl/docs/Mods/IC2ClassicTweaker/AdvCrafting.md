@@ -1,59 +1,59 @@
-# Advanced Recipes
+# Zaawansowane przepisy
 
-## Package
+## Pakiet
 
 ```zenscript
-import mods.ic2.AdvRecipes;
+importuj mods.ic2.AdvRecipes;
 ```
 
-## Recipe Types
-There are several types of recipes:
+## Typy przepisów
+Istnieje kilka rodzajów przepisów:
 
-### Shaped Recipes
-Shaped Recipes are recipes, where it matters, which item goes into which slot. For example, you can't just arrange 7 different sized stacks of iron ingots in any order to create iron leggings. The shape matters, thus it is a shaped recipe.
+### Kształtowane przepisy
+Kształtowane przepisy są przepisami, gdzie ma to znaczenie, do których elementów dołącza się miejsce. Na przykład, nie możesz tylko zorganizować 7 różnych rozmiarów stosów żelaznych sztabek w celu stworzenia żelaznych nogów. Kształt ma znaczenie, a więc jest to przepis.
 
-### Shapeless Recipes
-Shapeless Recipes are recipes, where only the items you put in the crafting grid matter, whereas the shape is of no importance. For example, blue and yellow dye create green dye. This recipe doesn't care about where you put which item.
+### Bezkształtne przepisy
+Bezkształtne przepisy są przepisami, w których tylko przedmioty umieszczane w siatki wytwarzania, podczas gdy kształt nie ma znaczenia. Na przykład barwnik niebieski i żółty tworzą barwnik zielony. Ten przepis nie troszczy się o to, gdzie umieścisz dany przedmiot.
 
-## Add Recipes
+## Dodaj przepisy
 
-### addShaped
+### dodany
 ```zenscript
-mods.ic2.AdvRecipes.addShaped(output,inputs);
+mods.ic2.AdvRecipes.addShaped(wyjście,wejście);
 ```
 
-This creates a shaped recipe for `output` using `inputs` as Ingredients.
+Tworzy to kształt receptury dla `wyjścia` , używając `wejść` jako składników.
 
-`output` is an [IItemStack](/Vanilla/Items/IItemStack/)  
-`inputs` is an [IIngredient](/Vanilla/Variable_Types/IIngredient/)\[][\] (see below)
+`wyjście` jest [IItemStack](/Vanilla/Items/IItemStack/)  
+`wejścia` jest [IIngredient](/Vanilla/Variable_Types/IIngredient/)\[][\] (patrz poniżej)
 
-`inputs` is a 2 Dimensional [IIngredient](/Vanilla/Variable_Types/IIngredient/) Array.  
-So the recipe for Iron Leggings would be written as `[[iron,iron,iron],[iron,null,iron],[iron,null,iron]]`  
-If that looks to confusing, try splitting the arrays up into one array per line
+`wejścia` to dwuwymiarowy [ISkładnik](/Vanilla/Variable_Types/IIngredient/) Tablica.  
+Więc przepis na żelazne nogawice zostałby napisany jako `[[żelazo,żelazo,żelazo],[żelazo,null,żelazo],[żelazo, ull,iron]]`  
+Jeśli szło to mylić, spróbuj rozdzielić tablice na jedną tablicę na linię
 ```zenscript
-val iron = <minecraft:iron_ingot>;
-val leggings = <minecraft:iron_leggings>;
+żelazo walna = <minecraft:iron_ingot>;
+walcze nogawice = <minecraft:iron_leggings>;
 
-AdvRecipes.addShaped(leggings,
- [[iron * 5,iron * 7,iron * 5],
-  [iron * 3,null,iron * 3],
-  [iron,null,iron]]);
+Zaawansowane przepisy. ddShaped(nogy,
+ [[żelaza * 5,żelaza * 7,żelaza * 5],
+  [żelazo * 3,null, żelazo * 3],
+  [żelazo, null, żelazo]]]);
 ```
 
 ### addShapeless
 ```zenscript
-mods.ic2.AdvRecipes.addShapeless(output,inputs)
+mods.ic2.AdvRecipes.addShapeless(wyjście,wejścia)
 ```
 
-This creates a shapeless stacked recipe for `output` using `inputs` as Ingredients.
+Tworzy to bezkształtny przepis na `wyjście` , używając `wejść` jako składników.
 
-`output` is an [IItemStack](/Vanilla/Items/IItemStack/)  
-`inputs` is an [IIngredient](/Vanilla/Variable_Types/IIngredient/)[]  (e.g. [<minecraft:dye:1>,<minecraft:dye:2>])
+`wyjście` jest [IItemStack](/Vanilla/Items/IItemStack/)  
+`wejścia` są [Składnikiem](/Vanilla/Variable_Types/IIngredient/)[] (np. [<minecraft:dye:1>,<minecraft:dye:2>])
 
 ### addHidden
 ```zenscript
-mods.ic2.AdvRecipes.addHiddenShapeless(IItemStack output, IIngredient[] ingredients);
-mods.ic2.AdvRecipes.addHiddenShaped(IItemStack output, IIngredient[][] ingredients);
+mods.ic2.AdvRecipes.addHiddenShapeless(wyjście IItemStack, składniki IIngredient[]);
+mods.ic2.AdvRecipes.addHiddenShaped(wyjście IItemStack, IIngredient[][] składniki);
 ```
 
-This creates a shaped or shapeless stacked recipe for `output` using `inputs` as Ingredients that is hidden. 
+Tworzy to kształtowy lub bezkształtny przepis na `wyjście` , używając `wejść` jako ukrytych składników. 

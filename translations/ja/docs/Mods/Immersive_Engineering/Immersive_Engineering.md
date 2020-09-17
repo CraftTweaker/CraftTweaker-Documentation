@@ -1,17 +1,17 @@
-# Immersive Engineering
+# 没入型エンジニアリング
 
-## Information
+## 情報
 
-Immersive Engineering is a tech mod with a certain charm, based on the ideas and concepts, and with most assets created by Damien Hazard.
+没入型エンジニアリングは、アイデアや概念に基づいて、そしてダミアン・ハザードによって作成されたほとんどの資産と、特定の魅力を持つ技術Modです。
 
-Overall, it's about realism-inspired technology: Instead of glowing red tubes, it offers actual, hanging powerlines. Instead of one block that magically spits out dusts when ore is put in, it offers a crusher, a big multiblock (5x3x3) that features rotating wheels and spits out particles as it breaks the ore. Instead of a Laser that turns power into magical light and ores, it offers an Excavator, another massive, resource intensive, multiblock (3x7x8) which digs ores out of the ground with a big rotating bucketwheel.
+Overall, it's about realism-inspired technology: Instead of glowing red tubes, it offers actual, hanging powerlines. 鉱石を入れたときに魔法のようにほこりを吐き出すブロックの代わりに、粉砕機を提供します。 大きなマルチブロック(5x3x3)は、回転する車輪を特徴とし、鉱石を破壊する際に粒子を出す。 パワーを魔法の光と鉱石に変えるレーザーの代わりに、それは別の巨大な掘削機を提供しています 資源集約型のマルチブロック(3x7x8)は、大きな回転バケツホイールで地面から鉱石を掘り出す。
 
-IE is about making tech mods more balanced and more pretty, and adding its own twist by going for retro-futurism (think BioShock, Order 1886, SkyCaptain and the World of Tomorrow) rather than clinical white+grey future cubes. The mod features Power Generation in forms of waterwheels, windmills, biodiesel and more and many of its machines are multiblocks!
+IEは、テクノロジーモッドをよりバランスのとれた、よりきれいにすることについてであり、レトロ未来主義に行くことによって独自のねじれを追加します(バイオショックを考えます)。 注文1886, スカイキャプテンと明日の世界) むしろ臨床ホワイト+グレー未来キューブではなく. このモジュールは、水車、風車、バイオディーゼルおよびそのマシンの多くはマルチブロックである形で発電を備えています!
 
-## CraftTweaker Related Information
+## CraftTweaker 関連情報
 
-Most if not all of the machines as well as some of the non-machine related features are configurable through ZenScript.
+ほとんどの場合、すべてのマシンと非マシン関連の機能の一部は、ZenScriptによって設定可能です。
 
-## Bug Reports
+## バグレポート
 
 https://github.com/BluSunrize/ImmersiveEngineering/issues

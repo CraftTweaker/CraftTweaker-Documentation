@@ -15,7 +15,7 @@ You can call the Squeezer package using `mods.immersiveengineering.Squeezer`.
 | Required | Input  | [IIngredient](/Vanilla/Variable_Types/IIngredient/) |
 | Required | Energy | Integer                                             |
 
-### Example
+### 예제
 
 ```zenscript
 //Example:
@@ -30,7 +30,7 @@ mods.immersiveengineering.Squeezer.addRecipe(<minecraft:diamond>, <liquid:water>
 | ------ | -------------------------------------------- |
 | Output | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
 
-### Example
+### 예제
 
 ```zenscript
 //Example:
@@ -45,7 +45,7 @@ mods.immersiveengineering.Squeezer.removeFluidRecipe(<liquid:water>);
 | ------ | ---------------------------------------- |
 | Output | [IItemstack](/Vanilla/Items/IItemStack/) |
 
-### Example
+### 예제
 
 ```zenscript
 //Example:
@@ -60,7 +60,7 @@ mods.immersiveengineering.Squeezer.removeItemRecipe(<minecraft:diamond>);
 | ------ | ---------------------------------------- |
 | Output | [IItemstack](/Vanilla/Items/IItemStack/) |
 
-### Example
+### 예제
 
 ```zenscript
 //Example:

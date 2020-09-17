@@ -1,30 +1,30 @@
-# IBiome
+# Ibiom
 
-The IBiome interface allows you to retrieve information on a registered Biome.
+Interfejs IBiome pozwala na pobranie informacji o zarejestrowanym Biome.
 
-## Importing the package
+## Importowanie pakietu
 
-It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
-`import crafttweaker.world.IBiome;`
+Może być wymagane zaimportowanie pakietu, jeśli napotkasz jakiekolwiek problemy (takie jak przesyłanie [Array](/AdvancedFunctions/Arrays_and_Loops/)), tak aby były bezpieczne niż przepraszamy i dodaj import.  
+`zaimportuj crafttweaker.world.IBiome;`
 
-## Calling an IBiome
+## Wywołanie Ibiomu
 
-You can get a list of all registered Biomes using `game.biomes` from [IGame](/Vanilla/Game/IGame/) That is currently the only way
+Możesz uzyskać listę wszystkich zarejestrowanych biomów używając `game.biomes` z [IGame](/Vanilla/Game/IGame/) Jest to obecnie jedyny sposób
 
 ## ZenGetters
 
-Atm, all you can do with an IBiome object is retrieving some information out of it:
+Atm, wszystko, co możesz zrobić z obiektem IBiome to pobieranie z niego informacji:
 
-| ZenGetter                    | Return Type |
-| ---------------------------- | ----------- |
-| name                         | string      |
-| canRain                      | boolean     |
-| isSnowyBiome                 | boolean     |
-| highHumidity                 | boolean     |
-| spawningChance               | float       |
-| baseHeight                   | float       |
-| heightVariation              | float       |
-| rainfall                     | float       |
-| waterColorMultiplier         | int         |
-| ignorePlayerSpawnSuitability | boolean     |
-| temperature                  | float       |
+| ZenGetter                     | Typ zwrotu         |
+| ----------------------------- | ------------------ |
+| Nazwa                         | ciąg znaków        |
+| canRain                       | boolean            |
+| isSnowyBiome                  | boolean            |
+| wysoka wilgotność             | boolean            |
+| Szansa odrodzenia             | zmiennoprzecinkowe |
+| wysokość podstawy             | zmiennoprzecinkowe |
+| zmienność wysokości           | zmiennoprzecinkowe |
+| opady deszczu                 | zmiennoprzecinkowe |
+| Mnożnik kolorów wody          | odcień             |
+| zignorePlayerSpawnSuitability | boolean            |
+| temperatura                   | zmiennoprzecinkowe |

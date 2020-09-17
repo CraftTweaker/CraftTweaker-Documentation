@@ -1,12 +1,12 @@
 # NoRun Preprocessor
 
-The NoRun Preprocessor disables the script from being loaded COMPLETELY.
+Le préprocesseur NoRun empêche le script d'être chargé COMPLETEMENT.
 
-## Call
+## Appel
 
-You call the NoRun Preprocessor by adding `#norun` to your script file.
+Vous appelez le préprocesseur NoRun en ajoutant `#norun` à votre fichier de script.
 
-## What it does
+## Ce qu'il fait
 
-It completely disables the script it's added to from being loaded into the game.  
-Though `/ct syntax` will still show script issues in that file!
+Il désactive complètement le script auquel il est ajouté d'être chargé dans le jeu.  
+Bien que la syntaxe `/ct` affiche toujours les problèmes de script dans ce fichier !

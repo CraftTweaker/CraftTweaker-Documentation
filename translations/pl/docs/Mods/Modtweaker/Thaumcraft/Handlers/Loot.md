@@ -1,36 +1,36 @@
-# Loot Bags
+# Torby z łupem
 
-This package allows you to add and remove items to/from the Loot Bags.
+Ten pakiet pozwala na dodawanie i usuwanie elementów do/z Loot Bags.
 
-## Importing the package
+## Importowanie pakietu
 
-You can [import](/AdvancedFunctions/Import/) the package and its methods to facilitate the retrival of the methods.
+Możesz [zaimportować](/AdvancedFunctions/Import/) paczkę i jej metody, aby ułatwić ponowne triwalowanie metod.
 
 ```zenscript
 import mods.thaumcraft.LootBag;
 ```
 
-## Loot types
+## Typy Loot
 
-You need to provide an array of one or multiple numbers from 0 to 2 (inclusive) to the functions.  
-Those determine the type of lootbag to be affected.
+Musisz podać tablicę jednej lub wielu liczb od 0 do 2 (włącznie) do funkcji.  
+Określają one rodzaj loottoru, który ma być dotknięty.
 
-- 0: Common
-- 1: Uncommon
-- 2: Rare
+- 0: Często
+- 1: Niezbyt często
+- 2: Rzadko
 
-## Adding items
+## Dodawanie elementów
 
-Notice: Gold coins have a value of 2000, diamonds are 50.
+Uwaga: Złote monety mają wartość w 2000 r., diamenty to 50.
 
 ```zenscript
-//mods.thaumcraft.LootBag.addLoot(WeightedItemStack stack, int[] bagTypes)
-mods.thaumcraft.LootBag.addLoot(<minecraft:dirt>%20000, [0,1,2]);
+//mods.thaumcraft.LootBag.addLoot(Stack, int[] bagTypes)
+mods.thaumcraft.Loot.addLoot(<minecraft:dirt>%20000, [0,1,2]);
 ```
 
-## Removing items
+## Usuwanie elementów
 
 ```zenscript
-//mods.thaumcraft.LootBag.removeLoot(IItemStack stack, int[] bagTypes);
+//mods.thaumcraft.LootBag.removeLoot(IItemStack stack, int[] workTypes);
 mods.thaumcraft.LootBag.removeLoot(<minecraft:gold_nugget>, [1,2]);
 ```

@@ -1,22 +1,22 @@
 # Ores
 
-**Needs to be in the `#loader preinit` or `#loader contenttweaker`**
+**`#loader preinit` または `#loader contentTweaker` に必要です**
 
 
-## Package
+## パッケージ
 ```zenscript
 `mods.exnihilocreatio.Ore`
 ```
 
-## Methods
+## メソッド
 
-- **String name** Name the ore chunks/piece/dust/ingot
-- **String color** Color of material in hex.
-- **[IItemStack](/Vanilla/Items/IItemStack/) output** requires an oredict.firstItem or errors out.
-- **Map string[string]** Language code then translation.
-- **String oreDict** The name of the oreDict you want.
+- **String name** ore chunks/piece/dust/ingot に名前を付けます。
+- **文字列の色** 六面体のマテリアルの色。
+- **[IItemStack](/Vanilla/Items/IItemStack/) の出力** には、oredict.firstItem またはエラー出力が必要です。
+- **文字列[string]** 言語コードを割り当てて翻訳する。
+- **String oreDict** 必要な oreDict の名前。
 
-## Addition
+## 加算
 
 ```zenscript
 mods.exnihilocreatio.Ore.addRecipe(String,
@@ -34,7 +34,7 @@ mods.exnihilocreatio.Ore.addRecipe("Stone",
     "Stone");
 ```
 
-## Removal
+## 削除
 
 ```zenscript
 mods.exnihilocreatio.Ore.removeAll();

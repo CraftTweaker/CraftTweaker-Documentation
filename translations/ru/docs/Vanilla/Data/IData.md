@@ -26,50 +26,739 @@
 | DataShort                         | ✔   | ✔   | ✔   | ✔   | ✔   | ✔       | ✔   | ✔   | ✔    | ✔    | ✔                          |
 | DataString                        | ✔   | ✘   | ✘   | ✘   | ✘   | ✘       | ✘   | ✘   | ✔    | ✔    | ✔                          |
 
-| Одиночные операторы               | `-` negate | `!` not |
-| --------------------------------- | ---------- | ------- |
-| DataBool                          | ✘          | ✔       |
-| DataByte                          | ✔          | ✔       |
-| DataByte[]                        | ✘          | ✘       |
-| DataDouble                        | ✔          | ✘       |
-| DataFloat                         | ✔          | ✘       |
-| DataInt                           | ✔          | ✔       |
-| DataInt[]                         | ✘          | ✘       |
-| DataList                          | ✘          | ✘       |
-| DataLong                          | ✔          | ✔       |
-| [DataMap](/Vanilla/Data/DataMap/) | ✘          | ✘       |
-| DataShort                         | ✔          | ✔       |
-| DataString                        | ✘          | ✘       |
+| Одиночные операторы               | `-` отрицать | `!` не |
+| --------------------------------- | ------------ | ------ |
+| DataBool                          | ✘            | ✔      |
+| DataByte                          | ✔            | ✔      |
+| DataByte[]                        | ✘            | ✘      |
+| DataDouble                        | ✔            | ✘      |
+| DataFloat                         | ✔            | ✘      |
+| DataInt                           | ✔            | ✔      |
+| DataInt[]                         | ✘            | ✘      |
+| DataList                          | ✘            | ✘      |
+| DataLong                          | ✔            | ✔      |
+| [DataMap](/Vanilla/Data/DataMap/) | ✘            | ✘      |
+| DataShort                         | ✔            | ✔      |
+| DataString                        | ✘            | ✘      |
 
-| Index and Members                 | `[i]` | `[i]=v` | `.member` | `.member=v` | `.length`   | `.immutable` | `.update(v)` |
-| --------------------------------- | ----- | ------- | --------- | ----------- | ----------- | ------------ | ------------ |
-| DataBool                          | ✘     | ✘       | ✘         | ✘           | returns `0` | ✔            | ✔            |
-| DataByte                          | ✘     | ✘       | ✘         | ✘           | returns `0` | ✔            | ✔            |
-| DataByte[]                        | ✔     | ✔       | ✘         | ✘           | ✔           | ✔            | ✔            |
-| DataDouble                        | ✘     | ✘       | ✘         | ✘           | returns `0` | ✔            | ✔            |
-| DataFloat                         | ✘     | ✘       | ✘         | ✘           | returns `0` | ✔            | ✔            |
-| DataInt                           | ✘     | ✘       | ✘         | ✘           | returns `0` | ✔            | ✔            |
-| DataInt[]                         | ✔     | ✔       | ✘         | ✘           | ✔           | ✔            | ✔            |
-| DataList                          | ✔     | ✔       | ✘         | ✘           | ✔           | ✔            | ✔            |
-| DataLong                          | ✘     | ✘       | ✘         | ✘           | returns `0` | ✔            | ✔            |
-| [DataMap](/Vanilla/Data/DataMap/) | ✘     | ✘       | ✔         | ✔           | ✔           | ✔            | ✔            |
-| DataShort                         | ✘     | ✘       | ✘         | ✘           | returns `0` | ✔            | ✔            |
-| DataString                        | ✔     | ✘       | ✘         | ✘           | ✔           | ✔            | ✔            |
+| Индекс и участники                | `[i]` | `[i]=v` | `.member` | `.member=v` | `.длина`       | `.immutable` | `.update` |
+| --------------------------------- | ----- | ------- | --------- | ----------- | -------------- | ------------ | --------- |
+| DataBool                          | ✘     | ✘       | ✘         | ✘           | возвращает `0` | ✔            | ✔         |
+| DataByte                          | ✘     | ✘       | ✘         | ✘           | возвращает `0` | ✔            | ✔         |
+| DataByte[]                        | ✔     | ✔       | ✘         | ✘           | ✔              | ✔            | ✔         |
+| DataDouble                        | ✘     | ✘       | ✘         | ✘           | возвращает `0` | ✔            | ✔         |
+| DataFloat                         | ✘     | ✘       | ✘         | ✘           | возвращает `0` | ✔            | ✔         |
+| DataInt                           | ✘     | ✘       | ✘         | ✘           | возвращает `0` | ✔            | ✔         |
+| DataInt[]                         | ✔     | ✔       | ✘         | ✘           | ✔              | ✔            | ✔         |
+| DataList                          | ✔     | ✔       | ✘         | ✘           | ✔              | ✔            | ✔         |
+| DataLong                          | ✘     | ✘       | ✘         | ✘           | возвращает `0` | ✔            | ✔         |
+| [DataMap](/Vanilla/Data/DataMap/) | ✘     | ✘       | ✔         | ✔           | ✔              | ✔            | ✔         |
+| DataShort                         | ✘     | ✘       | ✘         | ✘           | возвращает `0` | ✔            | ✔         |
+| DataString                        | ✔     | ✘       | ✘         | ✘           | ✔              | ✔            | ✔         |
 
-You can cast IData to a specific type using `data.asType()` → `data.asInt();`  
-You can also use the IData Interface to convert types: `("1" as IData).asInt();`
+Вы можете передать IData конкретному типу с помощью `data.asType()` → `данных. sInt();`  
+Также вы можете использовать интерфейс IData для преобразования типов: `("1" как IData).asInt();`
 
-| Casts from ↓ to →                 | bool | byte | byte[] | double | float | int | int[]  | list   | long | [Map](/AdvancedFunctions/Associative_Arrays/) | short | string |
-| --------------------------------- | ---- | ---- | ------ | ------ | ----- | --- | ------ | ------ | ---- | --------------------------------------------- | ----- | ------ |
-| DataBool                          | `≡`  | ✔    | `null` | ✔      | ✔     | ✔   | `null` | `null` | ✔    | `null`                                        | ✔     | ✔      |
-| DataByte                          | ✘    | `≡`  | `null` | ✔      | ✔     | ✔   | `null` | `null` | ✔    | `null`                                        | ✔     | ✔      |
-| DataByte[]                        | ✘    | ✘    | `≡`    | ✘      | ✘     | ✘   | ✔      | ✔      | ✘    | `null`                                        | ✘     | ✔      |
-| DataDouble                        | ✘    | ✔    | `null` | `≡`    | ✔     | ✔   | `null` | `null` | ✔    | `null`                                        | ✔     | ✔      |
-| DataFloat                         | ✘    | ✔    | `null` | ✔      | `≡`   | ✔   | `null` | `null` | ✔    | `null`                                        | ✔     | ✔      |
-| DataInt                           | ✘    | ✔    | `null` | ✔      | ✔     | `≡` | `null` | `null` | ✔    | `null`                                        | ✔     | ✔      |
-| DataInt[]                         | ✘    | ✘    | ✔      | ✘      | ✘     | ✘   | `≡`    | ✔      | ✘    | `null`                                        | ✘     | ✔      |
-| DataList                          | ✘    | ✘    | ✔      | ✘      | ✘     | ✘   | ✔      | `≡`    | ✘    | `null`                                        | ✘     | ✔      |
-| DataLong                          | ✘    | ✔    | `null` | ✔      | ✔     | ✔   | `null` | `null` | `≡`  | `null`                                        | ✔     | ✔      |
-| [DataMap](/Vanilla/Data/DataMap/) | ✘    | ✘    | `null` | ✘      | ✘     | ✘   | `null` | `null` | ✘    | `≡`                                           | ✘     | ✔      |
-| DataShort                         | ✘    | ✔    | `null` | ✔      | ✔     | ✔   | `null` | `null` | ✔    | `null`                                        | `≡`   | ✔      |
-| DataString                        | ✘    | ✔    | `null` | ✔      | ✔     | ✔   | `null` | `null` | ✔    | `null`                                        | ✔     | `≡`    |
+<table>
+  <tr>
+    <th>
+      Заказы от <unk> to →
+    </th>
+    
+    <th>
+      bool
+    </th>
+    
+    <th>
+      byte
+    </th>
+    
+    <th>
+      байт[]
+    </th>
+    
+    <th>
+      double
+    </th>
+    
+    <th>
+      float
+    </th>
+    
+    <th>
+      int
+    </th>
+    
+    <th>
+      int[]
+    </th>
+    
+    <th>
+      список
+    </th>
+    
+    <th>
+      long
+    </th>
+    
+    <th>
+      <a href="/AdvancedFunctions/Associative_Arrays/">Карта</a>
+    </th>
+    
+    <th>
+      short
+    </th>
+    
+    <th>
+      string
+    </th>
+  </tr>
+  
+  <tr>
+    <td>
+      DataBool
+    </td>
+    
+    <td>
+      <code>≡</code>
+    </td>
+    
+    <td>
+      ✔
+    </td>
+    
+    <td>
+      <code>null</code>
+    </td>
+    
+    <td>
+      ✔
+    </td>
+    
+    <td>
+      ✔
+    </td>
+    
+    <td>
+      ✔
+    </td>
+    
+    <td>
+      <code>null</code>
+    </td>
+    
+    <td>
+      <code>null</code>
+    </td>
+    
+    <td>
+      ✔
+    </td>
+    
+    <td>
+      <code>null</code>
+    </td>
+    
+    <td>
+      ✔
+    </td>
+    
+    <td>
+      ✔
+    </td>
+  </tr>
+  
+  <tr>
+    <td>
+      DataByte
+    </td>
+    
+    <td>
+      ✘
+    </td>
+    
+    <td>
+      <code>≡</code>
+    </td>
+    
+    <td>
+      <code>null</code>
+    </td>
+    
+    <td>
+      ✔
+    </td>
+    
+    <td>
+      ✔
+    </td>
+    
+    <td>
+      ✔
+    </td>
+    
+    <td>
+      <code>null</code>
+    </td>
+    
+    <td>
+      <code>null</code>
+    </td>
+    
+    <td>
+      ✔
+    </td>
+    
+    <td>
+      <code>null</code>
+    </td>
+    
+    <td>
+      ✔
+    </td>
+    
+    <td>
+      ✔
+    </td>
+  </tr>
+  
+  <tr>
+    <td>
+      DataByte[]
+    </td>
+    
+    <td>
+      ✘
+    </td>
+    
+    <td>
+      ✘
+    </td>
+    
+    <td>
+      <code>≡</code>
+    </td>
+    
+    <td>
+      ✘
+    </td>
+    
+    <td>
+      ✘
+    </td>
+    
+    <td>
+      ✘
+    </td>
+    
+    <td>
+      ✔
+    </td>
+    
+    <td>
+      ✔
+    </td>
+    
+    <td>
+      ✘
+    </td>
+    
+    <td>
+      <code>null</code>
+    </td>
+    
+    <td>
+      ✘
+    </td>
+    
+    <td>
+      ✔
+    </td>
+  </tr>
+  
+  <tr>
+    <td>
+      DataDouble
+    </td>
+    
+    <td>
+      ✘
+    </td>
+    
+    <td>
+      ✔
+    </td>
+    
+    <td>
+      <code>null</code>
+    </td>
+    
+    <td>
+      <code>≡</code>
+    </td>
+    
+    <td>
+      ✔
+    </td>
+    
+    <td>
+      ✔
+    </td>
+    
+    <td>
+      <code>null</code>
+    </td>
+    
+    <td>
+      <code>null</code>
+    </td>
+    
+    <td>
+      ✔
+    </td>
+    
+    <td>
+      <code>null</code>
+    </td>
+    
+    <td>
+      ✔
+    </td>
+    
+    <td>
+      ✔
+    </td>
+  </tr>
+  
+  <tr>
+    <td>
+      DataFloat
+    </td>
+    
+    <td>
+      ✘
+    </td>
+    
+    <td>
+      ✔
+    </td>
+    
+    <td>
+      <code>null</code>
+    </td>
+    
+    <td>
+      ✔
+    </td>
+    
+    <td>
+      <code>≡</code>
+    </td>
+    
+    <td>
+      ✔
+    </td>
+    
+    <td>
+      <code>null</code>
+    </td>
+    
+    <td>
+      <code>null</code>
+    </td>
+    
+    <td>
+      ✔
+    </td>
+    
+    <td>
+      <code>null</code>
+    </td>
+    
+    <td>
+      ✔
+    </td>
+    
+    <td>
+      ✔
+    </td>
+  </tr>
+  
+  <tr>
+    <td>
+      DataInt
+    </td>
+    
+    <td>
+      ✘
+    </td>
+    
+    <td>
+      ✔
+    </td>
+    
+    <td>
+      <code>null</code>
+    </td>
+    
+    <td>
+      ✔
+    </td>
+    
+    <td>
+      ✔
+    </td>
+    
+    <td>
+      <code>≡</code>
+    </td>
+    
+    <td>
+      <code>null</code>
+    </td>
+    
+    <td>
+      <code>null</code>
+    </td>
+    
+    <td>
+      ✔
+    </td>
+    
+    <td>
+      <code>null</code>
+    </td>
+    
+    <td>
+      ✔
+    </td>
+    
+    <td>
+      ✔
+    </td>
+  </tr>
+  
+  <tr>
+    <td>
+      DataInt[]
+    </td>
+    
+    <td>
+      ✘
+    </td>
+    
+    <td>
+      ✘
+    </td>
+    
+    <td>
+      ✔
+    </td>
+    
+    <td>
+      ✘
+    </td>
+    
+    <td>
+      ✘
+    </td>
+    
+    <td>
+      ✘
+    </td>
+    
+    <td>
+      <code>≡</code>
+    </td>
+    
+    <td>
+      ✔
+    </td>
+    
+    <td>
+      ✘
+    </td>
+    
+    <td>
+      <code>null</code>
+    </td>
+    
+    <td>
+      ✘
+    </td>
+    
+    <td>
+      ✔
+    </td>
+  </tr>
+  
+  <tr>
+    <td>
+      DataList
+    </td>
+    
+    <td>
+      ✘
+    </td>
+    
+    <td>
+      ✘
+    </td>
+    
+    <td>
+      ✔
+    </td>
+    
+    <td>
+      ✘
+    </td>
+    
+    <td>
+      ✘
+    </td>
+    
+    <td>
+      ✘
+    </td>
+    
+    <td>
+      ✔
+    </td>
+    
+    <td>
+      <code>≡</code>
+    </td>
+    
+    <td>
+      ✘
+    </td>
+    
+    <td>
+      <code>null</code>
+    </td>
+    
+    <td>
+      ✘
+    </td>
+    
+    <td>
+      ✔
+    </td>
+  </tr>
+  
+  <tr>
+    <td>
+      DataLong
+    </td>
+    
+    <td>
+      ✘
+    </td>
+    
+    <td>
+      ✔
+    </td>
+    
+    <td>
+      <code>null</code>
+    </td>
+    
+    <td>
+      ✔
+    </td>
+    
+    <td>
+      ✔
+    </td>
+    
+    <td>
+      ✔
+    </td>
+    
+    <td>
+      <code>null</code>
+    </td>
+    
+    <td>
+      <code>null</code>
+    </td>
+    
+    <td>
+      <code>≡</code>
+    </td>
+    
+    <td>
+      <code>null</code>
+    </td>
+    
+    <td>
+      ✔
+    </td>
+    
+    <td>
+      ✔
+    </td>
+  </tr>
+  
+  <tr>
+    <td>
+      <a href="/Vanilla/Data/DataMap/">DataMap</a>
+    </td>
+    
+    <td>
+      ✘
+    </td>
+    
+    <td>
+      ✘
+    </td>
+    
+    <td>
+      <code>null</code>
+    </td>
+    
+    <td>
+      ✘
+    </td>
+    
+    <td>
+      ✘
+    </td>
+    
+    <td>
+      ✘
+    </td>
+    
+    <td>
+      <code>null</code>
+    </td>
+    
+    <td>
+      <code>null</code>
+    </td>
+    
+    <td>
+      ✘
+    </td>
+    
+    <td>
+      <code>≡</code>
+    </td>
+    
+    <td>
+      ✘
+    </td>
+    
+    <td>
+      ✔
+    </td>
+  </tr>
+  
+  <tr>
+    <td>
+      DataShort
+    </td>
+    
+    <td>
+      ✘
+    </td>
+    
+    <td>
+      ✔
+    </td>
+    
+    <td>
+      <code>null</code>
+    </td>
+    
+    <td>
+      ✔
+    </td>
+    
+    <td>
+      ✔
+    </td>
+    
+    <td>
+      ✔
+    </td>
+    
+    <td>
+      <code>null</code>
+    </td>
+    
+    <td>
+      <code>null</code>
+    </td>
+    
+    <td>
+      ✔
+    </td>
+    
+    <td>
+      <code>null</code>
+    </td>
+    
+    <td>
+      <code>≡</code>
+    </td>
+    
+    <td>
+      ✔
+    </td>
+  </tr>
+  
+  <tr>
+    <td>
+      DataString
+    </td>
+    
+    <td>
+      ✘
+    </td>
+    
+    <td>
+      ✔
+    </td>
+    
+    <td>
+      <code>null</code>
+    </td>
+    
+    <td>
+      ✔
+    </td>
+    
+    <td>
+      ✔
+    </td>
+    
+    <td>
+      ✔
+    </td>
+    
+    <td>
+      <code>null</code>
+    </td>
+    
+    <td>
+      <code>null</code>
+    </td>
+    
+    <td>
+      ✔
+    </td>
+    
+    <td>
+      <code>null</code>
+    </td>
+    
+    <td>
+      ✔
+    </td>
+    
+    <td>
+      <code>≡</code>
+    </td>
+  </tr>
+</table>

@@ -1,6 +1,6 @@
 # PotionBrewPost
 
-This event is fired immediately after a potion has been "brewed" by the brewing stand tile entity, when the output items have already been replaced. If the [PotionBrewPreEvent](/Vanilla/Events/Events/PotionBrewPre/) has been cancelled but the itemstacks within the brewing stand have been modified, this event will also be fired.
+Событие запускается сразу же после того, как зелье было "бридкой" породой пивоваренной плитки, когда выходные предметы уже были заменены. Если [PotionBrewPreEvent](/Vanilla/Events/Events/PotionBrewPre/) был отменен, но предметы были изменены, то это событие также будет запущено.
 
 If the pre-event is cancelled without modifying itemstacks, this event will **not** be fired.
 
@@ -9,6 +9,6 @@ You will need to cast the event in the function header as this class:
 `crafttweaker.event.PotionBrewPostEvent` You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
 
 ## Наследование от интерфейсов событий
-PotionBrewPost Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+PotionBrewPost Events реализуют следующие интерфейсы и также могут вызвать все их методы/getters/setters:
 
 - [IPotionBrewEvent](/Vanilla/Events/Events/IPotionBrewEvent/)

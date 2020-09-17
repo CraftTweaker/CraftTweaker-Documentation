@@ -1,17 +1,17 @@
-# PlayerBreakSpeed
+# SpielerBreakSpeed
 
-The PlayerBreakSpeed Event is fired whenever a player tries to break a block.  
-It can be canceled to stop theplayer from being able to break that block.
+Das PlayerBreakSpeed Event wird abgefeuert, wenn ein Spieler versucht, einen Block zu zerstören.  
+Es kann abgebrochen werden, um zu verhindern, dass der Spieler diesen Block zerstören kann.
 
 ## Event-Klasse
 
-You will need to cast the event in the function header as this class:  
-`crafttweaker.event.PlayerBreakSpeedEvent`  
-You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
+Du musst das Ereignis als diese Klasse in den Funktionskopf verschieben:  
+`crafttweaker.event. layerBreakSpeedEvent`  
+Sie können natürlich auch [die Klasse vor](/AdvancedFunctions/Import/) importieren und dann diesen Namen verwenden.
 
 ## Erweiterte Event-Schnittellen
 
-PlayerBreakSpeed Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+PlayerBreakSpeed Events implementieren die folgenden Schnittstellen und können auch alle ihre Methoden/Getters/Setter aufrufen:
 
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 - [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
@@ -21,7 +21,7 @@ PlayerBreakSpeed Events implement the following interfaces and are able to call 
 
 | ZenGetter     | ZenSetter | Type                                        |
 | ------------- | --------- | ------------------------------------------- |
-| blockState    |           | [IBlockState](/Vanilla/Blocks/IBlockState/) |
-| block         |           | [IBlock](/Vanilla/Blocks/IBlock/)           |
+| blockstatus   |           | [IBlockState](/Vanilla/Blocks/IBlockState/) |
+| blockieren    |           | [IBlock](/Vanilla/Blocks/IBlock/)           |
 | originalSpeed |           | float                                       |
 | newSpeed      | newSpeed  | float                                       |

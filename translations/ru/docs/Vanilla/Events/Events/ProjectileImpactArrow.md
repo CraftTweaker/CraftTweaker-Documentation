@@ -1,42 +1,42 @@
-# ProjectileImpactArrow
+# Стрелка влияния снаряда
 
-This event is fired whenever an arrow projectile impacts an entity but before damage, etc, is calculated. It is **cancelable**, and if canceled, the impact will not be processed.
+Это событие запускается всякий раз, когда стрелка затрагивает сущность, но перед повреждением и т.д., рассчитывается. Это **отменимый**, и в случае отмены влияние не будет обработано.
 
-Various values from the arrow entity are available through zengetters, and can be modified in order to adjust damage, knockback strength, pickup status, and determine (or force) a critical hit.
+Различные значения от стрелок сущности доступны через зонджеры, и их можно изменить, чтобы скорректировать повреждение, сила отталкивания, статус пикапа и определение (или сила) критического удара.
 
 ## Импорт класса
-It might be required to [import](/AdvancedFunctions/Import/) the class to avoid errors.  
-`import crafttweaker.event.ProjectileImpactArrowEvent;`
+Может потребоваться [импортировать](/AdvancedFunctions/Import/) класс, чтобы избежать ошибок.  
+`импортировать crafttweaker.event.ProjectileImpactArrowEvent;`
 
-## Extending IEntityEvent
-ProjectileImpactArrow Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+## Расширение IEntityEvent
+События ProjectileImpactArrow реализуют следующие интерфейсы и также могут назвать все их методы/getters/setters:
 
-- [IProjectileEvent](/Vanilla/Events/Events/IProjectileEvent/)
+- [Событие снаряда](/Vanilla/Events/Events/IProjectileEvent/)
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 
-## ZenGetters and ZenSetters
+## ZenGetters и ZenSetters
 
-The following information can be retrieved from the event:
+Следующая информация может быть получена от события:
 
-| ZenGetter      | ZenSetter           | Тип                                   |
-| -------------- | ------------------- | ------------------------------------- |
-| `arrow`        |                     | [IEntity](/Vanilla/Entities/IEntity/) |
-| `shooter`      |                     | [IEntity](/Vanilla/Entities/IEntity/) |
-| `damage`       | `damage`            | double                                |
-|                | `knockbackStrength` | int (setter only, no getter)          |
-| `isCritical`   | `isCritical`        | boolean                               |
-| `pickupStatus` |                     | String                                |
+| ZenGetter        | ZenSetter           | Тип                                     |
+| ---------------- | ------------------- | --------------------------------------- |
+| `стрелка`        |                     | [IEntity](/Vanilla/Entities/IEntity/)   |
+| `стрелок`        |                     | [IEntity](/Vanilla/Entities/IEntity/)   |
+| `damage`         | `damage`            | double                                  |
+|                  | `сила отталкивания` | int (установить только, нет получателя) |
+| `критический`    | `критический`       | boolean                                 |
+| `Статус посадки` |                     | String                                  |
 
-## Additional methods
+## Дополнительные методы
 
 - `setPickupDisallowed()`
 
-Prevents the arrow from being picked up under any circumstances.
+Предотвращает подбор стрелок при любых обстоятельствах.
 
 - `setPickupAllowed()`
 
-Allows the arrow to be picked up from where the entity landed.
+Позволяет стрелке быть поднятым с места приземления.
 
 - `setPickupCreative()`
 
-Only allows the arrow to be picked up if the player is in creative mode.
+Только стрелка может быть выбрана, если игрок находится в творческом режиме.

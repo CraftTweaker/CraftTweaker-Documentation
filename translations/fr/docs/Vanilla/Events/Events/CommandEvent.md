@@ -1,26 +1,26 @@
-# CommandEvent
+# Événement de la commande
 
-The Command Event is fired whenever a command is executed. You can react to the command by providing a command handler. See [Crafttweaker examples](https://github.com/CraftTweaker/CraftTweaker-Examples/blob/master/crafttweaker/events/commandEvent/SendMessageOnSyntaxCommand/SendMessageOnSyntaxCommand.zs) for an example.
+L'événement de commande est déclenché chaque fois qu'une commande est exécutée. Vous pouvez réagir à la commande en fournissant un gestionnaire de commande. Voir [exemples d'artisanat](https://github.com/CraftTweaker/CraftTweaker-Examples/blob/master/crafttweaker/events/commandEvent/SendMessageOnSyntaxCommand/SendMessageOnSyntaxCommand.zs) pour un exemple.
 
-## Event Class
+## Classe de l'événement
 
-You will need to cast the event in the function header as this class: `crafttweaker.event.CommandEvent`. It is advised to [import](/AdvancedFunctions/Import/) the class
+You will need to cast the event in the function header as this class: `crafttweaker.event.CommandEvent`. Il est conseillé de [importer](/AdvancedFunctions/Import/) la classe
 
-    import crafttweaker.event.CommandEvent;
+    Importer crafttweaker.event.CommandEvent;
     
 
-## Event interface extensions
+## Extensions d'interface de l'événement
 
-Command event implements the following interfaces:
+L'événement de commande implémente les interfaces suivantes :
 
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 
 ## ZenGetters/ZenSetters
 
-The following information ca be retrieved/set during the event:
+Les informations suivantes seront récupérées/définies pendant l'événement :
 
-| ZenGetter       | ZenSetter    | Type                                                |
-| --------------- | ------------ | --------------------------------------------------- |
-| `commandSender` | no           | [ICommandSender](/Vanilla/Commands/ICommandSender/) |
-| `command`       | no           | [ICommand](/Vanilla/Commands/ICommand/)             |
-| `parameters`    | `parameters` | string array                                        |
+| ZenGetter                | ZenSetter    | Type de texte                                              |
+| ------------------------ | ------------ | ---------------------------------------------------------- |
+| `expéditeur de commande` | non          | [Je suis un expéditeur](/Vanilla/Commands/ICommandSender/) |
+| `commande`               | non          | [ICommand](/Vanilla/Commands/ICommand/)                    |
+| `paramètres`             | `paramètres` | tableau de chaînes                                         |

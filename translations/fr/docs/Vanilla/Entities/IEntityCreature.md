@@ -1,55 +1,55 @@
-# IEntityCreature
+# Créature IEntity
 
-A Creature.
+Une créature.
 
-## Importing the package
+## Importation du paquet
 
-It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
-`import crafttweaker.entity.IEntityCreature;`
+Il pourrait vous être nécessaire d'importer le paquet si vous rencontrez des problèmes (comme lancer un [Tableau](/AdvancedFunctions/Arrays_and_Loops/)), alors mieux être sûr que désolé et ajouter l'importation.  
+`importer crafttweaker.entity.IEntityCreature ;`
 
-## Extending [IEntityLiving](/Vanilla/Entities/IEntityLiving/)
+## Extension de [IEntityLiving](/Vanilla/Entities/IEntityLiving/)
 
-IEntityCreature extends [IEntityLiving](/Vanilla/Entities/IEntityLiving/). That means all functions available to [IEntityLiving](/Vanilla/Entities/IEntityLiving/) objects also are available to IEntityCreature.
+IEntityCreature étend [IEntityLiving](/Vanilla/Entities/IEntityLiving/). Cela signifie que toutes les fonctions disponibles pour les objets [IEntityLiving](/Vanilla/Entities/IEntityLiving/) sont également disponibles pour IEntityCreature.
 
-## Methods
+## Méthodes
 
 ### ZenGetters/Setters
 
-| ZenGetter            | Type                                   |
-| -------------------- | -------------------------------------- |
-| hasPath              | bool                                   |
-| isWithinHomeDistance | bool                                   |
-| homePosition         | [IBlockPos](/Vanilla/World/IBlockPos/) |
-| maximumHomeDistance  | float                                  |
-| hasHome              | bool                                   |
+| ZenGetter                                   | Type de texte                           |
+| ------------------------------------------- | --------------------------------------- |
+| a le chemin d'accès                         | booléen                                 |
+| La distance de la page d'accueil est grande | booléen                                 |
+| Position de la maison                       | [Pos IBlock](/Vanilla/World/IBlockPos/) |
+| maximumHomeDistance                         | flottant                                |
+| hasHome                                     | booléen                                 |
 
-### ZenMethods
+### Méthodes Zen
 
-#### play living sound
+#### jouer un son vivant
 
-Method expects nothing.  
-Returns nothing.
+La méthode n'attend rien.  
+Ne retourne rien.
 
 ```zenscript
 entCreObj.playLivingSound();
 ```
 
-#### Set or detach home
+#### Définir ou détacher la maison
 
-First method expects an [IBlockPos](/Vanilla/World/IBlockPos/) object and an int.  
-Second method expects nothing.  
-Both methods return nothing.
+Première méthode attend un objet [IBlockPos](/Vanilla/World/IBlockPos/) et un int.  
+La seconde méthode ne attend rien.  
+Les deux méthodes ne retournent rien.
 
 ```zenscript
 entAnObj.setHomePositionAndDistance(IBlockPos pos, int distance);
 entAnObj.detachHome();
 ```
 
-#### Check if a position is within the home distance
+#### Vérifier si une position est dans la distance de la maison
 
-Method expects an [IBlockPos](/Vanilla/World/IBlockPos/) object.  
-Returns a bool.
+La méthode attend un objet [IBlockPos](/Vanilla/World/IBlockPos/) .  
+Renvoie un bool.
 
 ```zenscript
-entAnObj.isPositionWithinHomeDistance
+format@@0 entAnObj.isPositionWithinHomeDistance
 ```

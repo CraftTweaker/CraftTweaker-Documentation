@@ -1,28 +1,28 @@
-# PlayerAnvilRepair
+# format@@0 PlayerAnvilRepair
 
-The PlayerAnvilRepair Event is fired whenever a player crafts something in the anvil.  
-You can change the chance that the anvil is damaged.
+L'événement PlayerAnvilRepair est lancé chaque fois qu'un joueur fabrique quelque chose dans l'enclume.  
+Vous pouvez changer les chances que l'enclume soit endommagée.
 
-## Event Class
+## Classe de l'événement
 
-You will need to cast the event in the function header as this class:  
-`crafttweaker.event.PlayerAnvilRepairEvent`  
-You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
+Vous devrez lancer l'événement dans l'en-tête de la fonction comme cette classe:  
+`crafttweaker.event. layerAnvilRepairEvent`  
+Vous pouvez, bien sûr, également [importer](/AdvancedFunctions/Import/) la classe avant et utiliser ce nom alors.
 
-## Event interface extensions
+## Extensions d'interface de l'événement
 
-PlayerAnvilRepair Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+Les événements PlayerAnvilRepair implémentent les interfaces suivantes et peuvent également appeler toutes leurs méthodes/getters/setters :
 
-- [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
+- [Evénement IPlayer](/Vanilla/Events/Events/IPlayerEvent/)
 
 ## ZenGetters
 
-The following information can be retrieved from the event:
+Les informations suivantes peuvent être récupérées à partir de l'événement :
 
-| ZenGetter        | ZenSetter     | Return Type                              |
-| ---------------- | ------------- | ---------------------------------------- |
-| `player`         |               | [IPlayer](/Vanilla/Players/IPlayer/)     |
-| `itemInput`      |               | [IItemStack](/Vanilla/Items/IItemStack/) |
-| `itemIngredient` |               | [IItemStack](/Vanilla/Items/IItemStack/) |
-| `itenResult`     |               | [IItemStack](/Vanilla/Items/IItemStack/) |
-| `breakChance`    | `breakChance` | float                                    |
+| ZenGetter           | ZenSetter           | Type de retour                           |
+| ------------------- | ------------------- | ---------------------------------------- |
+| `Joueur`            |                     | [IPlayer](/Vanilla/Players/IPlayer/)     |
+| `itemInput`         |                     | [IItemStack](/Vanilla/Items/IItemStack/) |
+| `Ingrédient`        |                     | [IItemStack](/Vanilla/Items/IItemStack/) |
+| `itenResult`        |                     | [IItemStack](/Vanilla/Items/IItemStack/) |
+| `Chance de rupture` | `Chance de rupture` | flottant                                 |

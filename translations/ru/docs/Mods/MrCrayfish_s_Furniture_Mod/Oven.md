@@ -1,39 +1,39 @@
-# Microwave
+# Микроволновая
 
-The Microwave heats up food items.
+Микроволновая вода нагревает продукты питания.
 
-## Default Microwave Recipes
+## Микроволновые Рецепты
 
-- Beef -> Cooked Beef
-- Porkchop -> Cooked Porkchop
-- Potato -> Baked Potato
-- Chicken -> Cooked Chicken
-- Fish -> Cooked Fish
-- Salmon -> Cooked Salmon
-- Flesh -> Cooked Flesh
+- Жареная говядина
+- Свинины-> Жареная свинина
+- Картофель -> Печёный картофель
+- Курица -> Жареная курица
+- Рыба -> Приготовленная рыба
+- Лосось -> Приготовленный лосось
+- Плоть -> Приготовленная плоть
 
-## Removing
+## Удаление
 
-## Remove matching oven recipes.
+## Удалить соответствующие рецепты духовки.
 
 ```zenscript
 mods.cfm.Oven.remove(@Optional final IIngredient output, @Optional final IIngredient input);
 
-// Remove recipes that result in Cooked Flesh
-mods.cfm.Oven.remove(<cfm:item_flesh_cooked>);
-// Remove recipes that require a Potato
+// Удаляем рецепты, которые приводят к приготовленным Flesh
+mods.cfm.Oven. emove(<cfm:item_flesh_cooked>);
+// Удаляем рецепты, требующие картофеля
 mods.cfm.Oven.remove(null,<minecraft:potato>);
-// Remove all recipes
+// Удаляем все рецепты
 mods.cfm.Oven.remove();
 ```
 
-## Adding
+## Добавление
 
-## Add an oven recipe.
+## Добавить рецепт в духовку.
 
 ```zenscript
-mods.cfm.Oven.addRecipe(@Nonnull final IItemStack output, @Nonnull final IItemStack input);
+mods.cfm.Oven.addRecipe(@Nonnull final IItemStack, @Nonnull final IItemStack);
 
-// Add a recipe that makes two apples from one stick
-mods.cfm.Oven.addRecipe(<minecraft:apple>.withAmount(2),<minecraft:stick>);
+// Добавляем рецепт, который делает два яблока из одного палки
+модов. fm.Oven.addRecipe(<minecraft:apple>.withAmount(2),<minecraft:stick>);
 ```

@@ -1,25 +1,25 @@
 # IOreDict
 
-The Forge OreDictionary is like a huge Lexicon in the way that it features many different entries and each entry is described by fitting Items.  
-When talking about ore Dictionarys, people mostly refer to [IOreDictEntries](/Vanilla/OreDict/IOreDictEntry/) not the whole ore Dictionary.
+L'OreDictionary de Forge est comme un énorme lexique dans la façon dont il comporte de nombreuses entrées différentes et chaque entrée est décrite par l'ajustement des objets.  
+Lorsque vous parlez de dictionnaires de minerai, les gens se réfèrent principalement à [IOreDictEntries](/Vanilla/OreDict/IOreDictEntry/) pas à tout le dictionnaire de minerai.
 
-## Importing the package
+## Importation du paquet
 
-It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
-`import crafttweaker.oredict.IOreDict;`
+Il pourrait vous être nécessaire d'importer le paquet si vous rencontrez des problèmes (comme lancer un [Tableau](/AdvancedFunctions/Arrays_and_Loops/)), alors mieux être sûr que désolé et ajouter l'importation.  
+`importer crafttweaker.oredict.IOreDict.`
 
-## How to retrieve the oreDictionary
+## Comment récupérer l'oreDictionary
 
-You can retrieve the OreDictionary using the [`oreDict` global keyword](/Vanilla/Global_Functions/).
+Vous pouvez récupérer l'OreDictionary en utilisant le mot-clé global [`oreDict`](/Vanilla/Global_Functions/).
 
-## Methods
+## Méthodes
 
-So what can be done with the oreDict?
+Que peut-on donc faire avec le oreDict?
 
-### Getting an [IOreDictEntry](/Vanilla/OreDict/IOreDictEntry/)
+### Obtenir une [IOreDictEntry](/Vanilla/OreDict/IOreDictEntry/)
 
-You can use either of the three ways below to refer to an OreDictEntry, no matter if it already exists or not.  
-If the oreDictEntry does not yet exist, it will be created.
+Vous pouvez utiliser l'un des trois moyens ci-dessous pour vous référer à un OreDictEntry, même s'il existe déjà ou pas.  
+Si l'oreDictEntry n'existe pas encore, il sera créé.
 
 ```zenscript
 oreDict.ingotIron;
@@ -27,39 +27,39 @@ oreDict.get("ingotIron");
 oreDict["ingotIron"];
 ```
 
-### Iterating through all registered [IOreDictEntries](/Vanilla/OreDict/IOreDictEntry/)
+### Itération à travers toutes les [IOreDictEntries enregistrées](/Vanilla/OreDict/IOreDictEntry/)
 
 ```zenscript
-//the entries member is for retrieving all registered oreDictionary entries!
+//le membre des entrées est pour récupérer toutes les entrées enregistrées de oreDictionary !
 val allEntries = oreDict.entries;
 
-for oreDictEntry in allEntries{
-    print(oreDictEntry.name);
+pour oreDictEntry dans allEntries{
+    print(oreDictEntry. ame);
 }
 
-//Alternatively, you can just iterate through oreDict
-for entry in oreDict {
+//Alternativement, vous pouvez simplement itérer via oreDict
+pour l'entrée dans oreDict {
     print(entry.name);
 }
 
 ```
 
-## How to check if an ore Dictionary entry exists
+## Comment vérifier si une entrée de dictionnaire de minerais existe
 
-You can use the `in` or `has` operator to check if an [IOreDictEntry](/Vanilla/OreDict/IOreDictEntry/) already exists:
+Vous pouvez utiliser l'opérateur `dans` ou `a` pour vérifier si un [IOreDictEntry](/Vanilla/OreDict/IOreDictEntry/) existe déjà:
 
 ```zenscript
-if (oreDict in "ingotIron") {
-    print("ingotIron exists!");
+if (oreDict dans "ingotIron") {
+    print("ingotIron existe! );
 }
 
-if (oreDict has "ingotIron") {
-    print("ingotIron exists!");
+if (oreDict a "ingotIron") {
+    print("ingotIron existe! );
 }
 
 
-//Alternatively use the contains function:
-if(oreDict.contains "ingotIron") {
-    print("ingotIron exists!"); 
+//Utiliser alternativement la fonction contenue :
+if(oreDict. ontains "ingotIron") {
+    print("ingotIron existe!"); 
 }
 ```

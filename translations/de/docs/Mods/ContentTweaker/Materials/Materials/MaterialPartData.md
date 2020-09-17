@@ -1,19 +1,19 @@
-# MaterialPartData
+# Materialbestandsdaten
 
-Material Part Data is data that can be added to a [MaterialPart](/Mods/ContentTweaker/Materials/Materials/MaterialPart/) to give it some more properties.
+Materialbestandsdaten sind Daten, die zu einem [Materialteil](/Mods/ContentTweaker/Materials/Materials/MaterialPart/) hinzugefügt werden können, um ihm mehr Eigenschaften zu geben.
 
 ## Dieses Paket importieren
 
-It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
-`import mods.contenttweaker.MaterialPartData;`
+Es kann erforderlich sein, dass Sie das Paket importieren, wenn Sie irgendwelche Probleme haben. Seien Sie also besser sicher als entschuldigen und fügen Sie den Import hinzu.  
+`importiere mods.contenttweaker.MaterialPartData;`
 
-## Retrieving such an object
+## Ein solches Objekt wird abgerufen
 
-You can get a MaterialPartData object by using the `getData()` Method on a [MaterialPart](/Mods/ContentTweaker/Materials/Materials/MaterialPart/) object.
+Sie können ein MaterialPartData Objekt mit der `getData()` Methode auf einem [MaterialPart](/Mods/ContentTweaker/Materials/Materials/MaterialPart/) Objekt erhalten.
 
 ## Methoden
 
-All you can do with MaterialPartData is add more Data and retrieve stored data! You do that like so:
+Alles was Sie mit MaterialPartData tun können, ist mehr Daten hinzuzufügen und gespeicherte Daten abzurufen! Das gefällt Ihnen:
 
 ```zenscript
 MPD.addDataValue(String name, String value);
@@ -21,11 +21,11 @@ MPD.getIntValue(String name, int defaultValue);
 MPD.getStringValue(String name, String defaultValue);
 ```
 
-Now, what to put in as name or value?  
-Well, that depends on the parttype of the tool you are using.  
-Below you will find a list for CoT's basic Part Types:
+Nun, was soll als Name oder Wert eingegeben werden?  
+Nun, das hängt vom Typ des Werkzeugs ab, das du verwendest.  
+Unten finden Sie eine Liste für CoT's Basisteiltypen:
 
-<details><summary>Items</summary> 
+<details><summary>Artikel</summary> 
 
 <table>
   <th>
@@ -33,29 +33,29 @@ Below you will find a list for CoT's basic Part Types:
   </th>
   
   <th>
-    Value
+    Wert
   </th>
   
   <th>
-    Required?
+    Erforderlich?
   </th></tr> 
   
   <tr>
     <td>
-      burn
+      brennen
     </td>
     
     <td>
-      An "Integer" (e.g. "100")
+      Ein "Ganzzahl" (z.B. "100")
     </td>
     
     <td>
-      No
+      Nein
     </td>
   </tr>
 </table></details>
 
-<details><summary>Armor</summary> 
+<details><summary>Rüstung</summary> 
 
 <table>
   <th>
@@ -63,44 +63,44 @@ Below you will find a list for CoT's basic Part Types:
   </th>
   
   <th>
-    Value
+    Wert
   </th>
   
   <th>
-    Required?
+    Erforderlich?
   </th></tr> 
   
   <tr>
     <td>
-      durability
+      Haltbarkeit
     </td>
     
     <td>
-      An "Integer" (e.g. "10")
+      Ein "Ganzzahl" (z.B. "10")
     </td>
     
     <td>
-      No
+      Nein
     </td>
   </tr>
   
   <tr>
     <td>
-      enchantability
+      verzaubern
     </td>
     
     <td>
-      An "Integer" (e.g. "10")
+      Ein "Ganzzahl" (z.B. "10")
     </td>
     
     <td>
-      No
+      Nein
     </td>
   </tr>
   
   <tr>
     <td>
-      reduction
+      reduzieren
     </td>
     
     <td>
@@ -108,62 +108,62 @@ Below you will find a list for CoT's basic Part Types:
     </td>
     
     <td>
-      No
+      Nein
     </td>
   </tr>
   
   <tr>
     <td>
-      toughness
+      Widerstandskraft
     </td>
     
     <td>
-      A "float" (e.g. "2.4")
+      Ein "Float" (z.B. "2.4")
     </td>
     
     <td>
-      No
+      Nein
     </td>
   </tr>
 </table></details>
 
-<details><summary>Block</summary> 
+<details><summary>Blockieren</summary> 
 
-| Name         | Value                     | Required? |
-| ------------ | ------------------------- | --------- |
-| hardness     | An "Integer" (e.g. "3")   | No        |
-| resistance   | An "Integer" (e.g. "15")  | No        |
-| harvestLevel | An "Integer" (e.g. "1")   | No        |
-| harvestTool  | A "tool" (e.g. "pickaxe") | No        |</details>
+| Name        | Wert                           | Erforderlich? |
+| ----------- | ------------------------------ | ------------- |
+| Härte       | Ein "Ganzzahl" (z.B. "3")      | Nein          |
+| widerstand  | Ein "Ganzzahl" (z.B. "15")     | Nein          |
+| abruf Level | Ein "Ganzzahl" (z.B. "1")      | Nein          |
+| harvestTool | Ein "Tool" (z.B. "Spitzhacke") | Nein          |</details>
 
-<details><summary>Fluid</summary> 
+<details><summary>Flüssigkeit</summary> 
 
-| Name        | Value                      | Required? |
-| ----------- | -------------------------- | --------- |
-| temperature | An "Integer" (e.g. "300")  | No        |
-| density     | An "Integer" (e.g. "1000") | No        |
-| luminosity  | An "Integer" (e.g. "0")    | No        |
-| viscosity   | An "Integer" (e.g. "100")  | No        |
-| vaporize    | A "boolean" (e.g. "true")  | No        |</details>
+| Name        | Wert                         | Erforderlich? |
+| ----------- | ---------------------------- | ------------- |
+| Temperatur  | Eine "Ganzzahl" (z.B. "300") | Nein          |
+| dichte      | Ein "Ganzzahl" (z.B. "1000") | Nein          |
+| Leuchtkraft | Ein "Ganzzahl" (z.B. "0")    | Nein          |
+| viskosität  | Ein "Ganzzahl" (z.B. "100")  | Nein          |
+| verdampfen  | A "boolean" (e.g. "true")    | Nein          |</details>
 
-<details><summary>Ore</summary> 
+<details><summary>Erz</summary> 
 
-| Name         | Value                                                          | Required? |
-| ------------ | -------------------------------------------------------------- | --------- |
-| drops        | An "itemList" (e.g. "minecraft:redstone,minecraft:gold_ingot") | No        |
-| variants     | A "Block List" (e.g. "minecraft:stone,minecraft:end_stone")    | No        |
-| hardness     | An "Integer list" (e.g. "3,3")                                 | No        |
-| resistance   | An "Integer list" (e.g. "15,15")                               | No        |
-| harvestLevel | An "Integer list" (e.g. "1,1")                                 | No        |
-| harvestTool  | A "toolList" (e.g. "pickaxe,pickaxe")                          | No        |</details>
+| Name        | Wert                                                             | Erforderlich? |
+| ----------- | ---------------------------------------------------------------- | ------------- |
+| drops       | Eine "itemList" (z.B. "minecraft:redstone,minecraft:gold_ingot") | Nein          |
+| varianten   | Eine "Blockliste" (z.B. "minecraft:stone,minecraft:end_stone")   | Nein          |
+| Härte       | Eine "Ganzzahlliste" (z.B. "3,3")                                | Nein          |
+| widerstand  | Eine "Ganzzahlliste" (z.B. "15,15")                              | Nein          |
+| abruf Level | Eine "Ganzzahlliste" (z.B. "1,1")                                | Nein          |
+| harvestTool | Eine "Werkzeugliste" (z.B. "Spitzhacke, Spitzhacke")             | Nein          |</details>
 
 <details><summary>Minecart</summary> 
 
-| Name       | Value                  | Required? |
-| ---------- | ---------------------- | --------- |
-| maxSpeed   | A "float" (e.g. "1.0") | No        |
-| drag       | A "float" (e.g. "1.0") | No        |
-| riddenDrag | A "float" (e.g. "1.0") | No        |</details>
+| Name       | Wert                     | Erforderlich? |
+| ---------- | ------------------------ | ------------- |
+| maxSpeed   | Ein "Float" (z.B. "1.0") | Nein          |
+| ziehen     | Ein "Float" (z.B. "1.0") | Nein          |
+| riddenDrag | Ein "Float" (z.B. "1.0") | Nein          |</details>
 
 ## Beispiel
 
@@ -173,7 +173,7 @@ import mods.contenttweaker.MaterialSystem;
 val oreData = MaterialSystem.getMaterialBuilder().setName("Lawrencium").setColor(15426660).build().registerPart("ore").getData();
 oreData.addDataValue("drops", "minecraft:redstone,minecraft:gold_ingot");
 oreData.addDataValue("variants", "minecraft:stone,minecraft:end_stone");
-oreData.addDataValue("hardness", "3,3");
+oreData. ddDataValue("hardness", "3,3");
 oreData.addDataValue("resistance", "15,15");
 oreData.addDataValue("harvestLevel", "1,1");
 oreData.addDataValue("harvestTool", "pickaxe,shovel");

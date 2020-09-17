@@ -1,14 +1,14 @@
-# Starch Extractor
+# スターク抽出器
 
-## Package
+## パッケージ
 ```zenscript
 import mods.calculator.starch;
 ```
 
-## Methods
+## メソッド
 
-- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input** The input.
-- **int value** The amount of input adds to that machine.
+- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input** 入力。
+- **int value** 入力の量がそのマシンに追加されます。
 
 
 ## Additon
@@ -16,7 +16,7 @@ import mods.calculator.starch;
 starch.addRecipe(IIngredient input, int value);
 ```
 
-## Removal
+## 削除
 ```zenscript
-starch.removeRecipe(IIngredient input);
+starch.removeRecipe(IIngredient入力);
 ```

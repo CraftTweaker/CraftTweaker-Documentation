@@ -1,89 +1,89 @@
 # IBlockStateMatcher
 
-An IBlockStateMatcher object can be used to match an [IBlockState](/Vanilla/Blocks/IBlockState/) object against a set of requirements or a set of matching blockstates.
+一个 IBlockStateMatcher 对象可以用于匹配一个 [IBlockState](/Vanilla/Blocks/IBlockState/) 对象与一组要求或一组匹配的区块状态匹配。
 
 ## 导入相关包
 
-It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/) or using the static `.create()` method), so better be safe than sorry and add the import.  
-`import crafttweaker.block.IBlockStateMatcher;`
+如果遇到任何问题 (例如铸造一个 [数组](/AdvancedFunctions/Arrays_and_Loops/) 或使用静态 `可能需要导入包裹。 reate()` 方法)，比抱歉更安全并添加导入。  
+`导入craftminstruer.blockIBlockStateMatcher；`
 
-## Matching a Specific IBlockState
+## 匹配一个特定的IBlockState
 
-Every [IBlockState](/Vanilla/Blocks/IBlockState/) is also an IBlockStateMatcher which matches only to itself.
+每 [IBlockState](/Vanilla/Blocks/IBlockState/) 也是一个 IBlockStateMatcher，只匹配自己。
 
-## Matching Any Block State for a Specific Block
+## 匹配任何方块状态的特定方块。
 
-You can use [IBlockState](/Vanilla/Blocks/IBlockState/)'s `matchBlock()` method to create an IBlockStateMatcher that matches any possible blockstate for that block.
+您可以使用 [IBlockState](/Vanilla/Blocks/IBlockState/)'s `matchBlock()` 方法创建一个 IBlockStateMatcher，它与该块的任何可能的区块状态相匹配。
 
 ## Calling an IBlockStateMatcher
 
-There are several methods that return an IBlockStateMatcher
+有几种方法返回一个 IBlockStateMatcher
 
-- Using `IBlockStateMatcher.create()`.
-- Using the `withMatchedValuesForProperty()` method on another IBlockStateMatcher.
-- OR two IBlockStateMatchers together to get a compound matcher.
-- Creating an [IBlockState](/Vanilla/Blocks/IBlockState/), as all IBlockState objects are IBlockStateMatchers.
+- 使用 `IBlockStateMatcher.create()`。
+- 在另一个 IBlockStateMatcher上使用 `withMatchedValuesForty()` 方法。
+- 或两辆IBlockStateMatcher一起获得一个复合匹配器。
+- 创建一个 [IBlockState](/Vanilla/Blocks/IBlockState/)，因为所有IBlockState对象都是 IBlockState匹配器。
 
-## Compound Matchers
+## 复合匹配器
 
-When using OR (`|`) to combine IBlockStateMatchers, the resulting IBlockStateMatcher is no longer tied to one specific underlying block, as it would be with an [IBlockState](/Vanilla/Blocks/IBlockState/) or an IBlockStateMatcher created using the `IBlockStateMatcher.create()` method. Instead, the matcher matches any blockstate which would have been matched by any of the combined matchers.
+当使用 OR (`|`合并IBlockStateMatchers时，由此产生的IBlockStateMatcher不再绑定到一个特定的基础块， 和一个 [IBlockState](/Vanilla/Blocks/IBlockState/) 或一个使用 `IBlockStateMatcher 创建的IBlockStateMatcher一样。 reate()` 方法。 相反，这场比赛匹配任何块状态，这些块状态本会被任何一个合并匹配器匹配。
 
-Because this blockstate is not tied to a specific block, it is not possible to use the `withMatchedValuesForProperty()` method to retrieve another IBlockStateMatcher.
+由于这个区块状态没有绑定到一个特定的区块，无法使用 `withMatchedValuesForperty()` 方法检索另一个 IBlockStateMatcher。
 
-### static create
+### 静态创建
 
-`static IBlockStateMatcher create(IBlockState... blockStates);` Parameters:
+`创建静态IBlockState匹配器(IBlockState... blockStates);` 参数
 
-- [IBlockState](/Vanilla/Blocks/IBlockState/)... blockStates → Zero or more blockstates to match with this matcher. 
+- [IBlockState](/Vanilla/Blocks/IBlockState/)... blockStates-> 零或更多块状态与这个匹配器匹配。 
 
-Returns an IBlockStateMatcher to match the specified blockstate(s).
+返回一个 IBlockStateMatcher 以匹配指定的blockstate(s)。
 
-- If zero `blockStates` are supplied, this matcher will never match any blockstates. 
-- If only one blockstate is supplied in `blockStates`, the resulting IBlockStateMatcher will match *any* blockstate of the provided IBlockState's underlying block with any property values accepted as matching. The `withMatchedValuesForProperty` method can be used to add more specific requirements for the properties. 
+- 如果提供了0 `块国家` ，这个匹配器将永远不会匹配任何块状态。 
+- If only one blockstate is supplied in `blockStates`, the resulting IBlockStateMatcher will match *any* blockstate of the provided IBlockState's underlying block with any property values accepted as matching. `withMatchedValuesForProperty` 方法可以用于为属性添加更多的具体要求。 
 - If multiple `blockStates` are supplied, the resulting IBlockStateMatcher is the same as using the OR (`|`) operator with each of the IBlockStates provided.
 
 ## ZenMethods
 
-### matches
+### 匹配
 
-`boolean matches(IBlockState blockState);`  
-Parameters:
+`布尔匹配项 (IBlockState) ;`  
+参数：
 
-- [IBlockState](/Vanilla/Blocks/IBlockState/) blockState → The blockstate object to match against
+- [IBlockState](/Vanilla/Blocks/IBlockState/) blockstate状态 → 要匹配的 blockstate对象
 
-Returns a boolean that represents whether the blockstate matched this matcher's requirements.  
-You can also use `A has B` that represents `A.matches(B)`.
+返回一个布尔值，表示区块状态是否符合匹配器的要求。  
+您也可以使用 `A 有 B` 表示 `A.matches(B)`。
 
-### Get or add allowed properties
+### 获取或添加允许的属性
 
-*(These methods are only allowed on non-compound IBlockStateMatcher instances)*
+*(这些方法只允许在非复合的 IBlockStateMatcher 实例中使用)*
 
-    IBlockStateMatcher withMatchedValuesForProperty(String name, String... values);
-    List<String> getMatchedValuesForProperty(String name);
+    IBlockState匹配器与 MatchedValuesForty(名称, 字符串... 值；
+    列表<String> getMatchedValuesForperty(名称)；
     Map<String, List<String>> getMatchedProperties();
     
 
-Parameters:
+参数：
 
-- String name → The name of the property
-- String... values → One or more values that the property of a matching IBlockState may have.
+- 字符串名称 -> 属性的名称
+- String... 值 → 匹配的 IBlockState 的属性可能具有的一个或多个值。
 
-Returns a new IBlockStateMatcher with the same property requirements as this IBlockStateMatcher with the exception of the specified property `name`, which will now allow any of the specified `values` as a matching input.
+返回一个新的 IBlockStateMatcher 与此 IBlockStateMatcher 具有相同的属性要求，但指定的属性 `名称`除外， 现在允许任何指定的 `值` 作为匹配的输入。
 
 ### getMatchingBlockStates
 
-`Collection<IBlockState> getMatchingBlockStates();` Returns a collection of every [IBlockState](/Vanilla/Blocks/IBlockState/) with any combination of properties that match this IBlockStateMatcher. This list may contain blockstates that are not possible to get through normal gameplay means. (Ex: `IBlockStateMatcher.create(<blockstate:minecraft:log>)` will return an IBlockStateMatcher that matches to logs with property `axis=none`, having bark textures on all 6 sides.)
+`Collection<IBlockState> getMatchingBlockStates();` 返回每一个 [IBlockState](/Vanilla/Blocks/IBlockState/) 的集合与此 IBlockStateMatcher 匹配的属性的组合。 此列表可能包含无法通过普通游戏方式的区块状态。 (例如： `IBlockStateMatcher) Reate(<blockstate:minecraft:log>)` 将返回一个 IBlockStateMatcher，它匹配到与属性相关的日志 `axis=no`在所有6边都有树皮材质。)
 
-### Check if a BlockState is a compound State
+### 检查区块状态是否是复合状态
 
-`boolean isCompound()`
+`布尔值 isCompound()`
 
-Does what you'd expect.
+您的期望是什么。
 
-### Get a commandString representation
+### 获取一个命令字符串表达式
 
-`ZenGetter commandString`
+`ZenGetter 命令字符串`
 
-Returns a Bracket Handler expression string, if needed paired with `withMatchedValueForProperty()` calls.  
-Keep in mind though, that the returned method calls do not have `""` around the parameters.  
-So if you wanted to copy that result, you'd need to manually add them to the arguments!
+返回一个Backet Handler 表达式字符串，如果需要与 `与 MatchedValueForProperty()` 调用配对。  
+请记住，返回的方法调用并没有围绕参数的 `""` 。  
+所以，如果你想要复制该结果，你需要手动添加它们到参数中！

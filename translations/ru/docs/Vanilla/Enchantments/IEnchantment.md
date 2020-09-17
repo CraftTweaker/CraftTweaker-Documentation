@@ -1,11 +1,11 @@
 # IEnchantment
 
-An IEnchantment essentially is an [IEnchantmentDefinition](/Vanilla/Enchantments/IEnchantmentDefinition/) and an enchantment level.
+Суть заклинаний - это [IEnchantmentDefinition](/Vanilla/Enchantments/IEnchantmentDefinition/) и уровень зачарования.
 
 ## Импорт пакета
 
-It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
-`import crafttweaker.enchantments.IEnchantment;`
+Возможно, вам потребуется импортировать пакет, если вы столкнетесь с какими-либо проблемами (например, наложение [массива](/AdvancedFunctions/Arrays_and_Loops/)), так что лучше быть безопасным, чем извините и добавить импорт.  
+`импорт crafttweaker.enchantments.IEnchantment;`
 
 ## Геттеры/сеттеры
 
@@ -19,8 +19,8 @@ It might be required for you to import the package if you encounter any issues (
 
 ### Получить чары в формате NBT
 
-You might want to get the Enchantment's NBT-Tag.  
-You can either cast it as [IData](/Vanilla/Data/IData/) or use the method:
+Вы можете получить NBT-тег Зачара.  
+Вы можете использовать его как [IData](/Vanilla/Data/IData/) или использовать метод:
 
 ```zenscript
 ench.makeTag();

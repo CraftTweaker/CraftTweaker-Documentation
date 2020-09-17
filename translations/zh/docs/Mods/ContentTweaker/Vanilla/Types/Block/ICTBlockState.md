@@ -1,26 +1,26 @@
 # ICTBlockState
 
-An ICTBlockState object represents a block's current state.
+一个ICTBlockState对象代表一个方块的当前状态。
 
-## Importing the package
+## 导入相关包
 
-It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
-`import mods.contenttweaker.BlockState;`
+如果您遇到任何问题，可能需要导入软件包，所以比抱歉更安全并添加导入。  
+`导入 mods.contenttweaker.BlockState；`
 
-## Calling an ICTBlockState
+## 调用 ICTBlockState
 
-You can get an ICTBlockState either as a parameter in an [IBlockAction function](/Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IBlockAction/) or from the [Block Bracket Handler](/Mods/ContentTweaker/Vanilla/Brackets/Bracket_Blocks/)
+您可以在 [IBlockAction 函数](/Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IBlockAction/) 中获得一个 ICTBlockState 作为参数，也可以从 [Blocket 处理器](/Mods/ContentTweaker/Vanilla/Brackets/Bracket_Blocks/) 中获得一个 ICTBlockState
 
 `<block:minecraft:dirt>`
 
-## ZenMethods and ZenGetters
+## ZenMethods 和 ZenGetters
 
-| ZenMethod         | ZenGetter | Return Type                                                            | Description                                             |
-| ----------------- | --------- | ---------------------------------------------------------------------- | ------------------------------------------------------- |
-| getBlock()        | block     | [IBlock](/Vanilla/Blocks/IBlock/)                                      | Returns the refered block                               |
-| getMeta()         | meta      | int                                                                    | Returns the refered block's metadata                    |
-| canProvidePower() |           | boolean                                                                | Returns if the refered block can provide Redstone Power |
-| getMobilityFlag() |           | [PushReaction](/Mods/ContentTweaker/Vanilla/Types/Block/PushReaction/) | Returns the push reaction flag                          |
+| ZenMethod（ZenMethod） | ZenGetter | 返回值类型                                                          | 描述                     |
+| -------------------- | --------- | -------------------------------------------------------------- | ---------------------- |
+| getBlock()           | 封禁        | [IBlock](/Vanilla/Blocks/IBlock/)                              | 返回被审查的块                |
+| getMeta()            | meta      | 整数                                                             | 返回被审查区块的元数据            |
+| canProvidePower()    |           | boolean                                                        | 如果修饰方块能够提供 Redstone 功率 |
+| getMobilityFlag()    |           | [推送反应](/Mods/ContentTweaker/Vanilla/Types/Block/PushReaction/) | 返回推送反应标志               |
 
 ## ZenMethods
 
@@ -29,47 +29,47 @@ You can get an ICTBlockState either as a parameter in an [IBlockAction function]
 `boolean isReplaceable(IWorld world, IBlockPos pos);`  
 Parameters:
 
-- [IWorld](/Mods/ContentTweaker/Vanilla/Types/World/IWorld/) world → The world to be checked in
-- [IBlockPos](/Mods/ContentTweaker/Vanilla/Types/Block/IBlockPos/) pos → The Block's position
+- [IWorld](/Mods/ContentTweaker/Vanilla/Types/World/IWorld/) world → 要检查的世界
+- [IBlockPos](/Mods/ContentTweaker/Vanilla/Types/Block/IBlockPos/) pos -> Block的位置
 
-Returns a boolean that sais whether the block can be replaced or not.
+返回一个布尔值，那就是该方块是否可以被替换。
 
 ### getLightValue
 
-`int getLightValue(IWorld world, IBlockPos blockPos);`  
-Parameters:
+`int getLightValue(IWorld world, IBlockPos blockpos)；`  
+参数：
 
-- [IWorld](/Mods/ContentTweaker/Vanilla/Types/World/IWorld/) world → The world to be checked in
-- [IBlockPos](/Mods/ContentTweaker/Vanilla/Types/Block/IBlockPos/) pos → The Block's position
+- [IWorld](/Mods/ContentTweaker/Vanilla/Types/World/IWorld/) world → 要检查的世界
+- [IBlockPos](/Mods/ContentTweaker/Vanilla/Types/Block/IBlockPos/) pos -> Block的位置
 
-Returns an int representing the current light value at the given location.
+返回一个表示给定位置当前光值的整数。
 
 ### getWeakPower
 
-`int getWeakPower(IWorld world, IBlockPos blockPos, Facing facing);`  
-Parameters:
+`int getWeakPower(IWorld world, IBlockPos blockPos, 面对面)；`  
+参数：
 
-- [IWorld](/Mods/ContentTweaker/Vanilla/Types/World/IWorld/) world → The world to be checked in
-- [IBlockPos](/Mods/ContentTweaker/Vanilla/Types/Block/IBlockPos/) pos → The Block's position
-- [Facing](/Mods/ContentTweaker/Vanilla/Types/Block/Facing/) facing → The side to be checked
+- [IWorld](/Mods/ContentTweaker/Vanilla/Types/World/IWorld/) world → 要检查的世界
+- [IBlockPos](/Mods/ContentTweaker/Vanilla/Types/Block/IBlockPos/) pos -> Block的位置
+- [正面](/Mods/ContentTweaker/Vanilla/Types/Block/Facing/) expressing → 正在检查的侧面
 
-Returns an int representing the current redstone power on this side.
+返回一个代表该边当前红石力量的整数。
 
 ### getComparatorInputOverride
 
-`int getComparatorInputOverride(IWorld world, IBlockPos blockPos);`
+`int getComparatorInputOverride(IWorld world, IBlockPos blockpos)；`
 
-Parameters:
+参数：
 
-- [IWorld](/Mods/ContentTweaker/Vanilla/Types/World/IWorld/) world → The world to be checked in
-- [IBlockPos](/Mods/ContentTweaker/Vanilla/Types/Block/IBlockPos/) pos → The Block's position
+- [IWorld](/Mods/ContentTweaker/Vanilla/Types/World/IWorld/) world → 要检查的世界
+- [IBlockPos](/Mods/ContentTweaker/Vanilla/Types/Block/IBlockPos/) pos -> Block的位置
 
-Returns an int representing the block's redstone comparator input override type.
+返回代表方块的红石比较器输入覆盖类型的整数。
 
-### Comparing two ICTBlockState objects
+### 比较两个ICTBlockState对象
 
-You can either use `int compare(ICTBlockState other);` or the ZenCompare Tokens `==` `!=`.  
-The return different types though:
+您可以使用 `int compare(ICTBlockState等);` 或 ZenCompare Tokens `==` `!=`。  
+返回不同类型：
 
-- `state.compare(other)` returns an int that is 0 if they are equal
-- `state == other` returns a bool that is true of they are equal
+- `state.compare(other)` 返回一个 0 如果它们是等价的
+- `state == other` 返回一个真的布尔值，它们是等于的

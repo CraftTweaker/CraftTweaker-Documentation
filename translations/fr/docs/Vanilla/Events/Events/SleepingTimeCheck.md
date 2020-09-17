@@ -1,22 +1,22 @@
-# SleepingTimeCheck
+# Temps de mise en veille
 
-This event is fired when checking if a sleeping player can continue to sleep at a specified time. If has a **result** which determines the action.
+Cet événement est déclenché lors de la vérification si un joueur de sommeil peut continuer à dormir à un moment donné. Si a un résultat **** qui détermine l'action.
 
-Result:
-- **Default**, causes the Vanilla logic of `World::isDaytime` to be consulted.
-- **Allow**, allows the player to continue sleeping regardless
-- **Deny** is specifically ***ignored*** in this instance and does nothing.
+Résultat:
+- **Par défaut**, la logique Vanilla de `World::isDaytime` est consultée.
+- **Autoriser**, permet au joueur de continuer à dormir indépendamment
+- **Refuser** est spécifiquement ***ignoré*** dans cette instance et ne fait rien.
 
-Thus, this event allows you to keep the player sleeping, but it does not allow you to specifically stop them from sleeping.
+Ainsi, cet événement vous permet de garder le joueur endormi, mais il ne vous permet pas de l’empêcher spécifiquement de dormir.
 
-## Event Class
-You will need to cast the event in the function header as this class:  
-`crafttweaker.event.SleepingTimeCheck`  
-You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
+## Classe de l'événement
+Vous devrez lancer l'événement dans l'en-tête de la fonction comme cette classe:  
+`crafttweaker.event. leepingTimeCheck`  
+Vous pouvez, bien sûr, également [importer](/AdvancedFunctions/Import/) la classe avant et utiliser ce nom alors.
 
-## Event interface extensions
-SleepingTimeCheck Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+## Extensions d'interface de l'événement
+SleepingTimeCheck Events implémente les interfaces suivantes et peut aussi appeler toutes leurs méthodes/getters/setters :
 
-- [IEventPositionable](/Vanilla/Events/Events/IEventPositionable/)
-- [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
+- [IEventPositionnable](/Vanilla/Events/Events/IEventPositionable/)
+- [Evénement IPlayer](/Vanilla/Events/Events/IPlayerEvent/)
 - [IEventHasResult](/Vanilla/Events/Events/IEventHasResult/)

@@ -1,38 +1,38 @@
 # EntityLivingDeathDrops
 
-The EntityLivingDeathDrops Event is fired whenver an Entity's death causes dropped items to appear.  
-It can be canceled to stop the entity from dropping anything.
+EntityLivingDeathDropsイベントは、エンティティの死によってドロップされたアイテムが表示されたときに発生します。  
+エンティティが何かをドロップするのを止めるためにキャンセルすることができます。
 
-## Event Class
+## イベントクラス
 
 You will need to cast the event in the function header as this class:  
 `crafttweaker.event.EntityLivingDeathDropsEvent`  
 You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
 
-## Event interface extensions
+## イベントインターフェースの拡張
 
-PlayerDeathDrops Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+PlayerDeathDrops イベントは以下のインターフェイスを実装しており、それらのメソッド/getters/settersもすべてコールできます。
 
 - [ILivingEvent](/Vanilla/Events/Events/ILivingEvent/)
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 
 ## ZenGetters
 
-The following information can be retrieved from the event:
+イベントから次の情報を取得できます。
 
-| ZenGetter       | 戻り値                                                         |
-| --------------- | ----------------------------------------------------------- |
-| `drops`         | [`List<IEntityItem>`](/Vanilla/Entities/IEntityItem/) |
-| `damageSource`  | [IDamageSource](/Vanilla/Damage/IDamageSource/)             |
-| `isRecentlyHit` | bool                                                        |
-| `lootingLevel`  | int                                                         |
+| ZenGetter       | 戻り値                                                        |
+| --------------- | ---------------------------------------------------------- |
+| `ドロップ`          | [`リスト<IEntityItem>`](/Vanilla/Entities/IEntityItem/) |
+| `damageSource`  | [IDamageSource](/Vanilla/Damage/IDamageSource/)            |
+| `isRecentlyHit` | bool                                                       |
+| `略奪レベル`         | int                                                        |
 
-## Modifying the item drops
+## アイテムドロップの変更
 
-You can either add to the droplist or completely substitute it with a new one:
+ドロップリストに追加するか、完全に新しいものに置き換えることができます:
 
 ```zenscript
-event.drops = //reference to IEntityItem list.
+event.drops = //IEntityItem リストへの参照。
 
 //event.addItem(IItemStack item);
 event.addItem(<minecraft:iron_ingot>);

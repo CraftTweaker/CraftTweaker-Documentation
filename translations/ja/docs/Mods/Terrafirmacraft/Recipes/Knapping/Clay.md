@@ -1,24 +1,24 @@
-# Clay Knapping
+# 粘土ナイフ
 
-## Package
+## パッケージ
 ```zenscript
-import mods.terrafirmacraft.ClayKnapping;
+import mods.terrafirmacraft.ClayKnapping;ClayKnapping;
 ```
 
 ## 追加
 
 ```zenscript
-ClayKnapping.addRecipe(String registryName, IItemStack output, String... pattern);
+ClayKnapping.addRecipe(レジストリ名の文字列、IItemStack output, String... pattern);
 ```
 
 ## 削除
 
 ```zenscript
-ClayKnapping.removeRecipe(IItemStack output);
-ClayKnapping.removeRecipe(String registryName);
+ClayNnapping.removeRecipe(IItemStack output);
+ClayNnapping.removeRecipe(String registryName);
 ```
 
-## Example
+## 例
 ```zenscript
 ClayKnapping.addRecipe("unfired_vessel", <tfc:ceramics/unfired/vessel>, " XXX ", "XXXXX", "XXXXX", "XXXXX", " XXX ");
 ```

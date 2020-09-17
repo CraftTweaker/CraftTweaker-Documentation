@@ -1,33 +1,33 @@
-# Powered Thingies :: Fluid Compound Producer
+# パワードThingies :: 流体化合物プロデューサー
 
-### Importing
+### インポート中
 
 ```zenscript
 import mods.poweredthingies.Tweaker.fluidCompoundTweaker as fct;
 ```
 
-### Listing Keys, Removing Recipes by Key, Clearing
+### キーによるレシピの削除、キーのリスト化、クリア
 
 ```zenscript
 fct().logKeys()
-fct().removeRecipe('liquid:fluid_tf-molten_tesla') // check <logKeys> output for valid keys
+fct().removeRecipe('liquid:fluid_tf-molten_tesla') // <logKeys> の有効なキーの出力をチェック
 fct().clear()
 ```
 
-### Adding Recipe
+### レシピを追加中
 
-##### Signature
+##### 署名
 
 ```zenscript
 addRecipe(output: ILiquidStack, inputA: ILiquidStack, inputB: ILiquidStack)
 ```
 
-##### Example
+##### 例
 
 ```zenscript
 fct().addRecipe(<liquid:tf-sewage> * 150, <liquid:water> * 300, <liquid:lava> * 100);
 ```
 
-### Notes
+### メモ
 
-All of these actions will get cached and ran after the default registry for this machine has finished registering all recipes (including the ones from the custom jsons).
+これらのアクションはすべてキャッシュされ、このマシンのデフォルトレジストリがすべてのレシピを登録し終えた後に実行されます (カスタム json からのものを含む)。

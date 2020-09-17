@@ -1,68 +1,68 @@
-# Edit Files using GitHub's online editor
+# Modifier les fichiers en utilisant l'éditeur en ligne de GitHub
 
-## Requirements
+## Exigences
 
-You will need to have created a GitHub account and [forked the wiki to your account](/Contribute/SetupGithub).
+Vous aurez besoin de créer un compte GitHub et [avez forcé le wiki sur votre compte](/Contribute/SetupGithub).
 
 ## Introduction
 
-GitHub's online editor allows you to change and create files using nothing but your browser.  
-It may not be as versatile as [using a local copy](/Contribute/LocalClone/CreateCommit/) but you don't need to worry about [setting up git](/Contribute/LocalClone/InstallingGit/) and all.
+L'éditeur en ligne de GitHub vous permet de modifier et de créer des fichiers en utilisant uniquement votre navigateur.  
+Il ne peut pas être aussi polyvalent que [en utilisant une copie locale](/Contribute/LocalClone/CreateCommit/) mais vous n'avez pas besoin de vous inquiéter de la mise en place de [git](/Contribute/LocalClone/InstallingGit/) et tout.
 
-This guide will show you how to edit an already existing file using github's online editor.  
-You may want to edit the page because you have found a typo or want to include a better example, whatever the reason, feel free to commit changes and eventually [file a Pull Request](/Contribute/PullRequest).
+Ce guide vous montrera comment éditer un fichier déjà existant en utilisant l'éditeur en ligne de github.  
+Vous pouvez modifier la page parce que vous avez trouvé une faute de frappe ou que vous voulez inclure un meilleur exemple, quelle que soit la raison, n'hésitez pas à livrer les changements et éventuellement [à déposer une Pull Request](/Contribute/PullRequest).
 
-However, remember that you can only edit the English version, translations are handled via [CrowdIn](https://crowdin.com/project/crafttweaker-documentation/).
+Cependant, n'oubliez pas que vous ne pouvez modifier que la version anglaise, les traductions sont gérées via [CrowdIn](https://crowdin.com/project/crafttweaker-documentation/).
 
-## Locate the file
+## Localiser le fichier
 
-If you want to edit an existing file, you first need to locate it.
+Si vous voulez éditer un fichier existant, vous devez d'abord le localiser.
 
-In most cases you can find the file by checking its Wiki Url.
+Dans la plupart des cas, vous pouvez trouver le fichier en vérifiant son URL Wiki.
 
-Rule of thumb: The `#` is the docs folder, everything after that are nested folders and eventually the file.
+Règle de pouce : Le `#` est le dossier de documentation, tout ce qui suit sont des dossiers imbriqués et éventuellement le fichier.
 
-For example, the file creating  
-[https://docs.blamejared.com/en/#AdvancedFunctions/Arrays_and_Loops/](https://docs.blamejared.com/en/#AdvancedFunctions/Arrays_and_Loops/)  
-can be found in  
+Par exemple, le fichier créant  
+[https://docs.blamejared.com/fr/#AdvancedFunctions/Arrays_and_Loops/](https://docs.blamejared.com/en/#AdvancedFunctions/Arrays_and_Loops/)  
+se trouve dans  
 `docs/AdvancedFunctions/Arrays_and_Loops.md`
 
-## Edit the file
+## Modifier le fichier
 
-After you have successfully located the file, click on it to open it in the GitHub file view.  
-Here you can see how the wiki entry will roughly look like, though no navigation bar is present as this is only the entry content.
+Après avoir localisé le fichier avec succès, cliquez dessus pour l'ouvrir dans la vue de fichier GitHub.  
+Ici vous pouvez voir à quoi ressemblera l'entrée du wiki. mais aucune barre de navigation n'est présente car il ne s'agit que du contenu de l'entrée.
 
-Click on the little pen icon to open the editor: ![Edit Button](/Contribute/assets/OnlineEditor_EditButton.png)
+Click on the little pen icon to open the editor: ![Bouton d'édition](/Contribute/assets/OnlineEditor_EditButton.png)
 
-The Editor allows you to change your file as you like, and also to directly view a preview with the compiled formatting. This preview will have colored bars on the lefthandside indicating that:
+L'éditeur vous permet de modifier votre fichier comme vous le souhaitez, et aussi de voir directement un aperçu avec le formatage compilé. Cet aperçu aura des barres de couleur sur le côté gauche indiquant que:
 
-- Green: This Section was not present on this page before.
-- Yellow: This Section was present on this page before but was changed, e.g. a typo was corrected, or additional information was provided.
-- Red: This section was present on this page before but was removed.
-- None: This section was untouched.
+- Vert : Cette section n'était pas présente sur cette page auparavant.
+- Jaune : Cette section était présente sur cette page mais a été modifiée, par exemple une faute de frappe, ou des informations supplémentaires ont été fournies.
+- Rouge: Cette section était présente sur cette page avant mais a été supprimée.
+- Aucune: Cette section n'a pas été touchée.
 
-If the syntax of the files is new for you, the wiki uses MarkDown. There should be many tutorials to find using google (or you could add one right here to this wiki if you like).
+Si la syntaxe des fichiers est nouvelle pour vous, le wiki utilise MarkDown. Il devrait y avoir beaucoup de tutoriels à trouver en utilisant Google (ou vous pourriez en ajouter un directement ici à ce wiki si vous le souhaitez).
 
-## Save/Commit the changes
+## Enregistrer/Valider les modifications
 
-After you have changed the file you need to let GitHub know that you want to save your changes.
+Après avoir modifié le fichier, vous devez informer GitHub que vous souhaitez enregistrer vos modifications.
 
-That's what the commit box below your Editor is for:  
-You cannot simply save the file, you need to provide a summary of what you did (commit title) and optionally a short description where you can put additional information like why you did the changes or what exactly was changed.
+C'est pour cela que la case commit sous votre éditeur est pour:  
+Vous ne pouvez pas simplement enregistrer le fichier, vous devez fournir un résumé de ce que vous avez fait (titre de livraison) et éventuellement une courte description où vous pouvez ajouter des informations supplémentaires comme la raison pour laquelle vous avez fait les modifications ou ce qui a été exactement changé.
 
-By default it looks roughly like this:  
-![Commit Box Default](/Contribute/assets/OnlineEditor_CommitBox_Default.png)
+Par défaut, cela ressemble à peu près à ceci :  
+![Boîte de validation par défaut](/Contribute/assets/OnlineEditor_CommitBox_Default.png)
 
-In this example, the Commit title (or edit summary) is `Update Arrays_and_Loops.md`. GitHub cannot know what your actual changes were supposed to do, so it tries something as generic as this.
+Dans cet exemple, le titre du commit (ou récapitulatif d'édition) est `Mettre à jour Arrays_and_Loops.md`. GitHub ne peut pas savoir ce que vos changements étaient censés faire, donc il essaie quelque chose d'aussi générique que cela.
 
-You might want to add an additional title or description, but it is not neccessary, though it makes reviewing your Pull request later on easier.
+Vous pouvez ajouter un titre ou une description supplémentaire, mais ce n'est pas nécessaire, mais cela rend plus facile l'examen de votre demande d'ajout plus tard.
 
-If you have multiple e-mail addresses registered for your GitHub account, you can choose as which one you will create the commit. This will not have any real impact for contributing, though.  
-You can also decide whether you want to commit directly to your master branch or rather create a new branch for your commit. In most cases committing to your master branch works just fine.
+Si vous avez plusieurs adresses e-mail enregistrées pour votre compte GitHub, vous pouvez choisir celle dont vous allez créer la livraison. Cela n'aura cependant aucun impact réel sur la contribution.  
+Vous pouvez également décider si vous voulez valider directement votre branche principale ou plutôt créer une nouvelle branche pour votre livraison. Dans la plupart des cas, la validation de votre branche principale fonctionne très bien.
 
-A filled out example might look like this: ![Commit Box Filled](/Contribute/assets/OnlineEditor_CommitBox_Filled.png)
+A filled out example might look like this: ![Boîte de validation remplie](/Contribute/assets/OnlineEditor_CommitBox_Filled.png)
 
-## What to do next
+## Que faire ensuite
 
-After you have committed your changes, you can go on and edit or [Create](/Contribute/OnlineEditor_Create) more files using the online editor.  
-After you have done all your changes, you can [file a Pull Request](/Contribute/PullRequest).
+Une fois que vous avez validé vos modifications, vous pouvez continuer et éditer ou [Créer](/Contribute/OnlineEditor_Create) plus de fichiers en utilisant l'éditeur en ligne.  
+Après avoir fait toutes vos modifications, vous pouvez [déposer une Pull Request](/Contribute/PullRequest).

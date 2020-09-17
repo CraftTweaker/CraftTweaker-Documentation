@@ -1,26 +1,26 @@
-# Fluid_Transposer
+# Transposer un fluide
 
-## Package
+## Paquet
 
-`mods.thermalexpansion.Transposer`
+`Transposer`
 
-## Addition
+## Ajouter
 
 ```zenscript
-//mods.thermalexpansion.Transposer.addExtractRecipe(ILiquidStack output, IItemStack input, int energy);
-//mods.thermalexpansion.Transposer.addExtractRecipe(ILiquidStack output, IItemStack input, int energy, WeightedItemStack itemOut);
+//mods.thermalexpansion.Transposer.addExtractRecipe(ILiquidStack, IItemStack input, int energy);
+//mods.thermalexpansion.Transposer. ddExtractRecipe(ILiquidStack sortie, IItemStack entrée, int energy, WeightedItemStack itemOut);
 mods.thermalexpansion.Transposer.addExtractRecipe(<liquid:water> * 250, <minecraft:leaves:0>, 360);
-mods.thermalexpansion.Transposer.addExtractRecipe(<liquid:water> * 250, <minecraft:leaves:1>, 360, <minecraft:leaves:0> % 30);
+mods. hermalexpansion.Transposer.addExtractRecipe(<liquid:water> * 250, <minecraft:leaves:1>, 360, <minecraft:leaves:0> % 30 );
 
 
 
-//mods.thermalexpansion.Transposer.addFillRecipe(IItemStack output, IItemStack input, ILiquidStack fluid, int energy);
+//mods.thermalexpansion.Transposer. ddFillRecipe(sortie IItemStack, entrée IItemStack, fluide ILiquidStack, int energy);
 mods.thermalexpansion.Transposer.addFillRecipe(<minecraft:leaves:1>, <minecraft:leaves:0>, <liquid:water> * 200, 20);
 
 
 ```
 
-## Removal
+## Retirer
 
 ```zenscript
 //mods.thermalexpansion.Transposer.removeExtractRecipe(IItemStack input);

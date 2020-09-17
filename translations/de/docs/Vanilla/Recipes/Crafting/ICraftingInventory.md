@@ -1,31 +1,31 @@
 # ICraftingInventory
 
-The ICraftingInventory contains all kinds of information on the inventory a crafting process is performed in.
+Das ICraftingInventar enthält alle Arten von Informationen über das Inventar, in dem ein Herstellungsprozess durchgeführt wird.
 
 ## Diese Klasse importieren
 
-It might be required to [import](/AdvancedFunctions/Import/) the class to avoid errors.  
-`import crafttweaker.recipes.ICraftingInventory`
+Es könnte erforderlich sein, [die Klasse](/AdvancedFunctions/Import/) zu importieren, um Fehler zu vermeiden.  
+`Crafttweaker.recipes.ICraftingInventory`
 
 ## ZenGetter
 
-| ZenGetter    | Rückgabetyp                                  | Beschreibung                                         |
-| ------------ | -------------------------------------------- | ---------------------------------------------------- |
-| `player`     | [IPlayer](/Vanilla/Players/IPlayer/)         | the player owning this inventory                     |
-| `size`       | int                                          | the inventory's size                                 |
-| `width`      | int                                          | the inventory's width                                |
-| `height`     | int                                          | the inventory's height                               |
-| `stackCount` | int                                          | the the number of stacks that are actually filled in |
-| `items`      | [IItemStack[][]](/Vanilla/Items/IItemStack/) | The items that present in the crafting table         |
-| `itemArray`  | [IItemStack[]](/Vanilla/Items/IItemStack/)   | The items that present in the crafting table         |
+| ZenGetter      | Rückgabetyp                                  | Beschreibung                                             |
+| -------------- | -------------------------------------------- | -------------------------------------------------------- |
+| `player`       | [IPlayer](/Vanilla/Players/IPlayer/)         | der Spieler, der dieses Inventar besitzt                 |
+| `grösse`       | int                                          | die Größe des Inventars                                  |
+| `width`        | int                                          | die Breite des Inventars                                 |
+| `Höhe`         | int                                          | die Höhe des Inventars                                   |
+| `Stapelanzahl` | int                                          | die Anzahl der Stacks, die tatsächlich ausgefüllt werden |
+| `gegenstände`  | [IItemStack[][]](/Vanilla/Items/IItemStack/) | Die Gegenstände, die im Handwerkstisch vorhanden sind    |
+| `itemArray`    | [IItemStack[]](/Vanilla/Items/IItemStack/)   | Die Gegenstände, die im Handwerkstisch vorhanden sind    |
 
-## ZenMethods
+## ZenMethoden
 
-Following Methods are available:
+Folgende Methoden sind verfügbar:
 
-`inventory.getStack(index)` returns the [IItemStack](/Vanilla/Items/IItemStack/) at the given index or null if no item present. Index is an int.  
-`inventory.setStack(index, item)` sets the Stack at the given index to the provided item. Index is an int, item is an IItemStack. Use null if you want to clear the stack at that index.
+`inventory.getStack(index)` gibt den [IItemStack](/Vanilla/Items/IItemStack/) an dem angegebenen Index oder Null zurück, wenn kein Artikel vorhanden ist. Index ist ein int.  
+`inventory.setStack(Index, Artikel)` setzt den Stapel am angegebenen Index auf das angegebene Element. Index ist eine Int, Element ist ein IItemStack. Verwenden Sie Null, wenn Sie den Stack an diesem Index löschen möchten.
 
-The top left stack is position (0, 0), row and column are ints.  
-`inventory.getStack(row, column)` returns the [IItemStack](/Vanilla/Items/IItemStack/) at the given position or null if no item present.  
-`inventory.setStack(row, column, item)` sets the stack at the given position to the provided item. Item is an IItemStack. Use null if you want to clear the stack at that position.
+Der obere linke Stapel ist Position (0, 0), Zeile und Spalte sind Ints.  
+`Inventar. etStack(Zeile, Spalte)` gibt den [IItemStack](/Vanilla/Items/IItemStack/) an der angegebenen Stelle oder Null zurück, wenn kein Element vorhanden ist.  
+`inventory.setStack(Zeile, Spalte, Artikel)` setzt den Stapel an der angegebenen Position auf das angegebene Element. Artikel ist ein IItemStack. Verwenden Sie Null, wenn Sie den Stapel an dieser Stelle löschen möchten.

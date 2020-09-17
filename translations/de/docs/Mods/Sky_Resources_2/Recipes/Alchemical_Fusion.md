@@ -1,19 +1,19 @@
-# Alchemical Fusion
+# Alchemistische Fusion
 
-The *fusion* package is used for adding or removing recipes to/from the Alchemical Fusion process.
+Das *Fusion* Paket wird zum Hinzufügen oder Entfernen von Rezepten zum Alchemistischen Fusion-Prozess verwendet.
 
-## Calling
+## Anruf
 
-You can call the *fusion* package using `mods.skyresources.fusion`
+Sie können das *Fusion* Paket mit `mods.skyresources.fusion` aufrufen
 
-## Recipe Addition
+## Rezeptzusatz
 
 ```zenscript
-//mods.skyresources.fusion.addRecipe(IItemStack output, IItemStack[] input, float catalystUsedPerCraft);
+//mods.skyresources.fusion.addRecipe(IItemStack Output, IItemStack[] Input, float catalystUsedPerCraft);
 mods.skyresources.fusion.addRecipe(<minecraft:diamond> * 6, [<minecraft:dirt>, <minecraft:emerald> * 2], 0.00420);
 ```
 
-## Recipe Removal
+## Rezept entfernen
 
 ```zenscript
 //mods.skyresources.fusion.removeRecipe(IItemStack output);

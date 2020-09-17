@@ -1,42 +1,42 @@
-# IPotionEffect
+# Эффект IPotionEffect
 
-An IPotionEffect is an [IPotion](/Vanilla/Potions/IPotion/) that also has a duration and an amplifier (strength) parameter.  
-You can get them from an [IPotion](/Vanilla/Potions/IPotion/) object.
+IPotionEffect - это [IPotion](/Vanilla/Potions/IPotion/) , который также имеет длительность и параметр усилителя (прочности).  
+Вы можете получить их с объекта [IPotion](/Vanilla/Potions/IPotion/).
 
 ## Импорт пакета
 
-It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
-`import crafttweaker.potions.IPotionEffect;`
+Возможно, вам потребуется импортировать пакет, если вы столкнетесь с какими-либо проблемами (например, наложение [массива](/AdvancedFunctions/Arrays_and_Loops/)), так что лучше быть безопасным, чем извините и добавить импорт.  
+`импортируйте crafttweaker.potions.IPotionEffect;`
 
 ## Геттеры
 
-| ZenGetter                              | Тип                                            |
-| -------------------------------------- | ---------------------------------------------- |
-| duration                               | int                                            |
-| potion                                 | [IPotion](/Vanilla/Potions/IPotion/)           |
-| doesShowParticles                      | bool                                           |
-| amplifier                              | int                                            |
-| curativeItems                          | List<[IItemStack](/Vanilla/Items/IItemStack/)> |
-| effectName                             | bool                                           |
-| isAmbient                              | bool                                           |
-| isPotionDurationMax (also a ZenSetter) | bool                                           |
+| ZenGetter                             | Тип                                              |
+| ------------------------------------- | ------------------------------------------------ |
+| длительность                          | int                                              |
+| зелье                                 | [Зелье](/Vanilla/Potions/IPotion/)               |
+| не Показать частицы                   | bool                                             |
+| усилитель                             | int                                              |
+| целительные элементы                  | Список<[IItemStack](/Vanilla/Items/IItemStack/)> |
+| effectName                            | bool                                             |
+| isAmbient                             | bool                                             |
+| isPotionDurationMax (также ZenSetter) | bool                                             |
 
 ## Методы
 
-### Is an item a curative item
+### Элемент лечебного элемента
 
-Uses an [IItemStack](/Vanilla/Items/IItemStack/).  
-Returns a bool
+Использует [IItemStack](/Vanilla/Items/IItemStack/).  
+возвращает бул
 
 ```zenscript
 isCurativeItem(IItemStack item);
 ```
 
-### Perform Effect on an Entity
+### Выполнить эффект на сущность
 
-Uses an [IEntity](/Vanilla/Entities/IEntity/) or any of its subclasses (e.g. [IPlayer](/Vanilla/Players/IPlayer/)).  
-Returns void (nothing).
+Использует [IEntity](/Vanilla/Entities/IEntity/) или любой из своих подклассов (например, [IPlayer](/Vanilla/Players/IPlayer/)).  
+Возвращает недействительный (ничего).
 
 ```zenscript
-performEffect(IEntity Entity);
+performtEffect(IEntity Entity);
 ```

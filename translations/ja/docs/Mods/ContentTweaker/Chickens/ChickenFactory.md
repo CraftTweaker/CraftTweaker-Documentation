@@ -9,21 +9,21 @@ Note that this module is a feature addition to the [Chickens mod by setycz](http
 import mods.contenttweaker.ChickenFactory;
 ```
 
-## Creating chickens
+## ニワトリを作る
 
 First of all, you will need to create a [Chicken Representation](/Mods/ContentTweaker/Chickens/ChickenRepresentation/).  
 This is essentially an empty template of what your chicken will become.  
 This method returns such a [Chicken Representation](/Mods/ContentTweaker/Chickens/ChickenRepresentation/) object, by taking the following parameters:
 
-- String name: the entity name of the chicken, used for models and the entity registry.
-- [CTColor](/Mods/ContentTweaker/Vanilla/Types/Color/Color/) color: The color, the chicken will have.
-- [IItemStack](/Vanilla/Items/IItemStack/) layedItem: The item the chicken will lay later on.
+- 文字列名: モデルとエンティティレジストリに使用されるチキンのエンティティ名。
+- [CTColor](/Mods/ContentTweaker/Vanilla/Types/Color/Color/) color: 色, ニワトリは持っています.
+- [IItemStack](/Vanilla/Items/IItemStack/) layedItem: 鶏が後に置くアイテム。
 
 ```zenscript
 ChickenFactory.createChicken(String name, CTColor color, IItemStack item);
 ```
 
-## Example Script
+## スクリプト例
 
 ```zenscript
 #loader contenttweaker

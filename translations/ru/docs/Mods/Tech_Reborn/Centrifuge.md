@@ -1,16 +1,16 @@
-# Centrifuge
+# Центрифуга
 
-## Importing the Package
+## Импортирование пакета
 `mods.techreborn.centrifuge`
 
-## Adding Recipes
+## Добавление рецептов
 ```zenscript
-mods.techreborn.centrifuge.addRecipe(IItemStack output1, IItemStack output2, IItemStack output3, IItemStack output4, IIngredient input1, IIngredient input2, int ticktime, int euTick);
+mods.techreborn.centri<unk> .addRecipe(IItemStack output1, IItemStack output2, IItemStack output3, IItemStack output4, Igredient input1, IIngredient input2, int ticktime, int euTick);
 ```
 
-## Removing Recipes
+## Удаление рецептов
 ```zenscript
-mods.techreborn.centrifuge.removeInputRecipe(IIngredient iIngredient);
-mods.techreborn.centrifuge.removeRecipe(IItemStack output);
-mods.techreborn.centrifuge.removeAll();
+mods.techreborn.centri<unk> .removeInputRecipe(IIngredient iIngredient);
+mods.techreborn.centri<unk> .removeRecipe(выход IItemStack);
+mods.techreborn.centri<unk> .removeAll();
 ```

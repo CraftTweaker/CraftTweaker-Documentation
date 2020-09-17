@@ -1,12 +1,12 @@
 # Skill_Change Tweaker
 
-## Feature:
+## 機能:
 
-This feature will allow you as the player to set a group of commands you want to run upon a player unlocking/locking a trait or reaching a specific Skill Level.
+この機能を使用すると、プレイヤーがトレイトのロックを解除/ロックを解除したり、特定のレベルに達する際に実行したいコマンドのグループを設定できます。
 
-## Syntax:
+## 構文
 
-    Blank Examples:
+    空白の例:
     mods.compatskills.SkillChange.addLevelUpCommands(CTSkill skill, int level, String... commands);
     mods.compatskills.SkillChange.addUnlockableUnlockCommands(CTUnlockable unlockable, String... commands);
     mods.compatskills.SkillChange.addUnlockableLockCommands(CTUnlockable unlockable, String... commands);

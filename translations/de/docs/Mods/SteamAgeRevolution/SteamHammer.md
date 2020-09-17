@@ -1,29 +1,29 @@
-# Steam Hammer
+# Dampfhammer
 
-The Steam Hammer is a machine that converts two input items into an output item using steam.
+Der Dampfhammer ist eine Maschine, die zwei Eingangsgegenstände mit Dampf in einen Ausgangsgegenstand umwandelt.
 
-## Package
+## Paket
 `mods.steamagerevolution.SteamHammer`.
 
 ## Methoden
 
-- **[IItemStack](/Vanilla/Items/IItemStack/) output** The result of the recipe.
-- **[IItemStack](/Vanilla/Items/IItemStack/) input** The input of the recipe.
-- **int craftTime** Crafting time for machine to process
-- **int steamCost** Cost of Steam for machine to process
+- **[IItemStack](/Vanilla/Items/IItemStack/) Ausgabe** Das Ergebnis des Rezeptes.
+- **[IItemStack](/Vanilla/Items/IItemStack/) Eingabe** Die Eingabe des Rezeptes.
+- **int CraftTime** Herstellungszeit für Maschine zum Verarbeiten
+- **Int Dampfkosten** Dampfkosten für Maschine zum Verarbeiten
 
 ## Addition
 
 ```zenscript
-mods.steamagerevolution.SteamHammer.addRecipe(IIngredient input, IIngredient input, IItemStack output, int craftTime, int steamCost);
+mods.steamagerevolution.SteamHammer.addRecipe(IIngredient Eingabe, IIngredient Eingabe, IItemStack Ausgabe, int craftTime, int steamCost);
 mods.steamagerevolution.SteamHammer.addRecipe(<ore:ingotIron>, <ore:ingotIron>, <ore:plateIron>.firstItem, 200, 200);
 ```
 
 
-## Removal
+## Entfernen
 
 ```zenscript
-mods.steamagerevolution.SteamHammer.removeRecipe(IItemStack output);
+mods.steamagerevolution.SteamHammer.removeRecipe(IItemStack Ausgabe);
 mods.steamagerevolution.SteamHammer.removeRecipe(<ore:plateIron>.firstItem);
 
 mods.steamagerevolution.SteamHammer.removeAll();

@@ -1,18 +1,18 @@
-# Energetic Infuser
+# Invoquant énergique
 
-## Package
+## Paquet
 
-`mods.thermalexpansion.Infuser`
+`Infuser`
 
-## Addition
+## Ajouter
 
 ```zenscript
-//mods.thermalexpansion.Infuser.addRecipe(IItemStack output, IItemStack input, int energy);
+//mods.thermalexpansion.Infuser.addRecipe(sortie IItemStack, entrée IItemStack, int energy);
 mods.thermalexpansion.Infuser.addRecipe(<minecraft:gold_ingot>, <minecraft:iron_ingot>, 1000);
 
 ```
 
-## Removal
+## Retirer
 
 ```zenscript
 //mods.thermalexpansion.Infuser.removeRecipe(IItemStack input);

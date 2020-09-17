@@ -1,16 +1,16 @@
-# Supercooler
+# スーパークーラーです
 
-## Importing the Package
-`mods.nuclearcraft.supercooler`
+## パッケージのインポート
+`mods.naturcraft.supercool`
 
-## Adding Recipes
+## レシピを追加中
 ```zenscript
-mods.nuclearcraft.supercooler.addRecipe([fluidInput, fluidOutput, @Optional double timeMultiplier, @Optional double powerMultiplier, @Optional double processRadiation]);
+mods.nuclearcraft.supercooler.addRecipe([fluidInput, fluidOutput, @Optional double timeMultiplier, @Optional door processRadiation]);
 ```
 
-## Removing Recipes
+## レシピを削除
 ```zenscript
-mods.nuclearcraft.supercooler.removeRecipeWithInput([fluidInput]);
-mods.nuclearcraft.supercooler.removeRecipeWithOutput([fluidOutput]);
-mods.nuclearcraft.supercooler.removeAllRecipes();
+mods.nucleer.supercraft.supercooler.removeRecipeWithInput([fluidInput]);
+mods.nuclear.supercraft.removeRecipeWithOutput([fluidOutput]);
+mods.nuclearcraft.supercoolercooler.removeAllRecipes();
 ```

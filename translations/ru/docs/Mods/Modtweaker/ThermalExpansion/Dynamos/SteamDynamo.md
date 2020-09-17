@@ -1,23 +1,23 @@
-# Steam Dynamo
+# Динамика Steam
 
-## Import the package
+## Импортировать пакет
 
-To shorten method calls you can [import](/AdvancedFunctions/Import/) the package like so:
+Чтобы сократить вызовы методов, вы можете [импортировать](/AdvancedFunctions/Import/) пакет так:
 
 ```zenscript
 import mods.thermalexpansion.SteamDynamo;
 ```
 
-## Add Fuel
+## Добавить топливо
 
 ```zenscript
-//mods.thermalexpansion.SteamDynamo.addFuel(ILiquidStack stack, int energy);
-mods.thermalexpansion.SteamDynamo.addFuel(<liquid:water>, 13);
+//mods.thermalexpansion.SteamDynamo.addFuel(IItemStack, int energy);
+mods.thermalexpansion.SteamDynamo.addFuel(<minecraft:stick>, 13);
 ```
 
-## Remove Fuel
+## Снимите топливо
 
 ```zenscript
-//mods.thermalexpansion.SteamDynamo.removeFuel(ILiquidStack stack);
-mods.thermalexpansion.SteamDynamo.removeFuel(<liquid:water>);
+//mods.thermalexpansion.SteamDynamo.removeFuel(IItemStack);
+mods.thermalexpansion.SteamDynamo.removeFuel(<minecraft:stick>);
 ```

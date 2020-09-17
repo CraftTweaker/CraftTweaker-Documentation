@@ -1,84 +1,84 @@
-# Create Files using GitHub's online editor
+# Создать файлы с помощью онлайн-редактора GitHub
 
-## Requirements
+## Требования
 
-You will need to have created a GitHub account and [forked the wiki to your account](/Contribute/SetupGithub).
+Вам нужно будет создать учетную запись GitHub и [форкнул вики к вашему аккаунту](/Contribute/SetupGithub).
 
-## Introduction
+## Введение
 
-GitHub's online editor allows you to change and create files using nothing but your browser.  
-It may not be as versatile as [using a local copy](/Contribute/LocalClone/CreateCommit/) but you don't need to worry about [setting up git](/Contribute/LocalClone/InstallingGit/) and all.
+Онлайн-редактор GitHub позволяет изменять и создавать файлы, ничего не используя браузер.  
+Возможно, это не так универсально, как [с использованием локальной копии](/Contribute/LocalClone/CreateCommit/) , но вам не нужно беспокоиться о [настройке git](/Contribute/LocalClone/InstallingGit/) и всех.
 
-This guide will show you how to create a new wiki file using github's online editor.  
-Your main reason for adding new pages is most likely to fill in missing information, but maybe you also want to add an example wiki entry for a given mod handler, whatever the reason, feel free to commit changes and eventually [file a Pull Request](/Contribute/PullRequest).
+Это руководство покажет вам, как создать новый файл вики с помощью онлайн редактора github.  
+Ваша основная причина добавления новых страниц скорее всего заполнит недостающую информацию, но, возможно, вы также хотите добавить пример записи вики для определенного обработчика модов, любая причина, не стесняйтесь зафиксировать изменения и в конечном итоге [файл Pull Request](/Contribute/PullRequest).
 
-However, remember that you need to create the English version, translations are then handled via [CrowdIn](https://crowdin.com/project/crafttweaker-documentation/) (but only after the PR has been merged).
+Однако помните, что вам нужно создать английскую версию, Затем переводы обрабатываются через [CrowdIn](https://crowdin.com/project/crafttweaker-documentation/) (но только после слияния PR).
 
-## Where to create the file
+## Где создать файл
 
-Theoretically, it doesn't matter where you put your file, but please try to fit the current scheme:
+Теоретически это не имеет значения, где вы поставили свой файл, но попробуйте подобрать текущую схему:
 
-- All files need to be in the `docs` folder.
-- The File structure should match the navigation bar crumbs. Example: When using the navigation bar in the wiki, `ICraftingRecipe` can be found in `Vanilla/Recipes/Crafting Table Recipes/ICraftingRecipe`. The file for ICraftingRecipe can be found at `docs/Vanilla/Recipes/Crafting/ICraftingRecipe.md`. As you can see, the paths don't exactly match but they are sufficient to find the file.
-- All information for one mod should remain in one group/folder.
+- Все файлы должны находиться в папке `с` документацией.
+- Структура файла должна совпадать с цепочками панели навигации. Пример: При использовании навигационной панели в вики, `ICraftingRecipe` можно найти в `Vanilla/Recipes/Crafting Table Recipes/ICraftingRecipe` Файл рецепта ICraftingRecipe можно найти на `docs/Vanilla/Recipes/Crafting/ICraftingRecipe.md`. Как вы можете видеть, пути не точно совпадают, но они достаточны, чтобы найти файл.
+- Вся информация для одного мода должна оставаться в одной группе/папке.
 
-## Create the file
+## Создать файл
 
-After you have successfully located your future file's path, navigate to the folder that will contain the file in GitHub, if it exists.  
-Don't worry if it does not exist, you can still create the file.
+После того, как вы успешно разместили путь к файлу в будущем, перейдите в папку, которая будет содержать файл в GitHub, если он существует.  
+Не беспокойтесь, если он не существует, вы можете создать файл.
 
-Say you want to create a file called `Secret_Information.md` in `docs/AdvancedFunctions`:  
-Find the path in GitHub and click `Create new file` ![Create File Button](/Contribute/assets/OnlineEditor_CreateFileButton.png)
+Скажите что вы хотите создать файл с именем `Secret_Information. d` в `документа/AdvancedFunctions`:  
+Найти путь в GitHub и нажмите `Создать новый файл` ![Создать кнопку Файла](/Contribute/assets/OnlineEditor_CreateFileButton.png)
 
-You are now presented with the new File editor page.  
-First, on the top you can see the path of the file that will be created. If we want the file to be created in exactly the directory that is shown in the path, we only need to provide a file title and extension. Remember, all wiki entry files should have the `.md` extension, since this wiki uses markdown.
+Теперь вы можете просмотреть новую страницу редактора файлов.  
+Вначале вы увидите путь к файлу, который будет создан. Если мы хотим, чтобы файл был создан в точно каталоге, который отображается в пути, нам нужно предоставить только название файла и расширение. Помните, что все файлы wiki должны иметь расширение `.md` , так как эта вики использует markdown.
 
-If you want the file to be created in a (possibly nonexisting) subfolder, or even multiple folders down the path, you can use `/` to separate folder names (like you can already see in the given path).
+Если вы хотите, чтобы файл был создан в (возможно не существующих) подпапке, или даже несколько папок вниз по пути, вы можете использовать `/` для разделения имен папок (как вы уже можете видеть в данном пути).
 
-The Editor allows you to create the file as you like, and also to directly view a preview of the compiled formatting.
+Редактор позволяет создать файл так, как вам нравится, а также непосредственно просмотреть скомпилированное форматирование.
 
-If the syntax of the files is new for you, the wiki uses MarkDown. There should be many tutorials to find using google (or you could add one right here to this wiki if you like).
+Если синтаксис файлов является для вас новым, в вики используется MarkDown. Там должно быть много уроков, чтобы найти с помощью Google (или вы могли бы добавить один прямо здесь, на этой вики, если хотите).
 
-## Add the file to the index
+## Добавить файл к индексу
 
-After you have created the file and commited the creation (see below) you will need to add the file to the index as well, so that it can be shown in the navigation bar later.
+После того, как вы создали файл и закомментировали создание (см. ниже), вам также нужно будет добавить файл в индекс, , чтобы позже его можно было отобразить на панели навигации.
 
-This index is the `mkdocs.yml` file.
+Этот индекс является файлом `mkdocs.yml`.
 
-This file contains everything that is needed to create the wiki, and you need to make sure not to break it (though we will tell you if your PR breaks a build should it come to that)!
+Этот файл содержит все, что необходимо для создания wiki, и вам нужно убедиться, что это не ломается (хотя мы расскажем вам, что ваш PR ломает сборку, которая должна прийти к этому)!
 
-All you need to do is add your file and categories to the `pages` list.  
-The format is pretty straight-forward:
+Все, что вам нужно сделать, это добавить свой файл и категории в `список` страниц.  
+Формат довольно прост вперед:
 
-- Entries start with a `-`
-- Then comes the (shown, English) name for the group or entry, followed by a `:`
-- If you are creating a grouping (e.g. `Vanilla` or `Mods`) proceed on the next line, with two spaces inlined.
-- If you are creating an actual reference to a page file, add it on the same line, after the `:` and a space. Make sure to wrap it in single quotes `'` to ensure that the build works as expected. The path is relative to the `docs` folder, so `docs/Vanilla/Commands.md` becomes `Vanilla/Commands.md`.
+- Записи начинаются с `-`
+- Затем приходит (показано, английский) имя для группы или записи, затем `:`
+- Если вы создаете группировку (например, `Vanilla` или `моды`) переходите к следующей строке, пробелы в строке.
+- Если вы создаете фактическую ссылку на файл страницы, добавьте его на ту же строку, после `:` и пробел. Обязательно оберните его в одинарные кавычки `'` , чтобы убедиться, что сборка работает, как ожидалось. Путь относительно папки `docs` , поэтому `docs/Vanilla/Commands.md` становится `Vanilla/Commands.md`.
 
-For examples check the [current mkdocs.yml file on github](https://github.com/CraftTweaker/CraftTweaker-Documentation/blob/master/mkdocs.yml). Alternatively, edit this file and add your own example here.
+Для примеров смотрите [текущий mkdocs.yml файл на github](https://github.com/CraftTweaker/CraftTweaker-Documentation/blob/master/mkdocs.yml). Кроме того, отредактируйте этот файл и добавьте свой собственный пример здесь.
 
-## Save/Commit the changes
+## Сохранить/Зафиксировать изменения
 
-*Note: This description originates from the edit files guide but the same principles apply, feel free to substitute with your own version if needed*
+*Замечание: Это описание происходит из руководства по редактированию, но те же принципы применяются, если это необходимо, подменяют вашу собственную версию*
 
-After you have created the file content you need to let GitHub know that you want to save your changes.
+После того, как вы создали содержимое файла, вам нужно сообщить GitHub о том, что вы хотите сохранить изменения.
 
-That's what the commit box below your editor is for:  
-You cannot simply save the file, you need to provide a summary of what you did (commit title) and optionally a short description where you can put additional information like why you did the changes or what exactly was changed.
+Это поле коммитов ниже вашего редактора:  
+Вы не можете просто сохранить файл, вы должны предоставить краткую информацию о том, что вы делали (коммиты) и краткое описание, в котором вы можете добавить дополнительную информацию, например, почему вы делали изменения или что именно было изменено.
 
-By default it looks roughly like this:  
-![Commit Box Default](/Contribute/assets/OnlineEditor_CommitBox_Default.png)
+По умолчанию оно выглядит примерно так:  
+![Строка фиксации по умолчанию](/Contribute/assets/OnlineEditor_CommitBox_Default.png)
 
-In this example, the Commit title (or edit summary) is `Update Arrays_and_Loops.md`. GitHub cannot know what your actual changes were supposed to do, so it tries something as generic as this.
+В этом примере название коммита (или отредактируйте сводку) — `обновление Arrays_and_Loops.md`. GitHub не может знать, что должны были сделать ваши фактические изменения, поэтому он пытается что-то столь же универсальное.
 
-You might want to add an additional title or description, but it is not neccessary, though it makes reviewing your Pull request later on easier.
+Вы можете добавить дополнительное название или описание, но это не обязательно, хотя оно делает просмотр вашего Pull запроса позже на проще.
 
-If you have multiple e-mail addresses registered for your GitHub account, you can choose as which one you will create the commit. This will not have any real impact for contributing, though.  
-You can also decide whether you want to commit directly to your master branch or rather create a new branch for your commit. In most cases committing to your master branch works just fine.
+Если у вас есть несколько адресов электронной почты, зарегистрированных для вашей учетной записи GitHub, вы можете выбрать, какой из них вы создадите коммит. Однако это не окажет никакого реального влияния на внесение своего вклада.  
+Вы также можете решить, хотите ли вы совершить фиксацию напрямую в свою ветку или создать новую ветку для фиксации. В большинстве случаев принятие обязательств в вашу ветку работает хорошо.
 
-A filled out example might look like this: ![Commit box Filled](/Contribute/assets/OnlineEditor_CommitBox_Filled.png)
+Заполненный пример может выглядеть так: ![Блок коммитов заполнён](/Contribute/assets/OnlineEditor_CommitBox_Filled.png)
 
-## What to do next
+## Что делать дальше
 
-After you have committed your changes, you can go on and [edit](/Contribute/OnlineEditor_Edit) or create more files using the online editor.  
-After you have done all your changes, you can [file a Pull Request](/Contribute/PullRequest).
+После того, как вы зафиксировали изменения, вы можете продолжить и [изменить](/Contribute/OnlineEditor_Edit) или создать больше файлов с помощью онлайн-редактора.  
+После того, как вы выполните все ваши изменения, вы можете [создать Pull Request](/Contribute/PullRequest).

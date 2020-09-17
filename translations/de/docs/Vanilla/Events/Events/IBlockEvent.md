@@ -1,20 +1,20 @@
 # IBlockEvent
 
-This interface is extended by all Events that can deal with blocks in the world.
+Diese Schnittstelle wird um alle Ereignisse erweitert, die mit Blöcken in der Welt umgehen können.
 
 ## Diese Klasse importieren
 
-It might be required to [import](/AdvancedFunctions/Import/) the class to avoid errors.  
-`import crafttweaker.event.IBlockEvent;`
+Es könnte erforderlich sein, [die Klasse](/AdvancedFunctions/Import/) zu importieren, um Fehler zu vermeiden.  
+`Crafttweaker.event.IBlockEvent;`
 
-## Extending IEventPositionable
+## Erweiterung IEventPositionierbar
 
-This interface extends [IEventPositionable](/Vanilla/Events/Events/IEventPositionable/), which means that all functionality that IEventPositionable offers is also present in IBlockEvent
+Diese Schnittstelle erweitert [IEventPositionierbar](/Vanilla/Events/Events/IEventPositionable/), was bedeutet, dass alle Funktionen, die IEventPositionierbare Angebote haben, auch im IBlockEvent vorhanden sind
 
 ## ZenGetter
 
-| name       | type                                        |
-| ---------- | ------------------------------------------- |
-| world      | [IWorld](/Vanilla/World/IWorld/)            |
-| blockState | [IBlockState](/Vanilla/Blocks/IBlockState/) |
-| block      | [IBlock](/Vanilla/Blocks/IBlock/)           |
+| name        | typ                                         |
+| ----------- | ------------------------------------------- |
+| Welt        | [IWorld](/Vanilla/World/IWorld/)            |
+| blockstatus | [IBlockState](/Vanilla/Blocks/IBlockState/) |
+| blockieren  | [IBlock](/Vanilla/Blocks/IBlock/)           |

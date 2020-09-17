@@ -1,25 +1,25 @@
-# Crucible
+# Crisol
 
-The Crucible is a machine that converts an input item into an output fluid using steam.
+El Crucible es una máquina que convierte un objeto de entrada en un líquido de salida usando vapor.
 
-## Package
+## Paquete
 `mods.steamagerevolution.Crucible`
 
-## Methods
+## Métodos
 
-- **[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) output** The result of the recipe.
-- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input** The input of the recipe.
-- **int craftTime** Crafting time for machine to process
-- **int steamCost** Cost of Steam for machine to process
+- **[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) tiene salida** El resultado de la receta.
+- **[IIngrediente](/Vanilla/Variable_Types/IIngredient/) entrada** La entrada de la receta.
+- **tiempo de fabricación** tiempo de fabricación de la máquina para procesar
+- **Coste de SteamCost** de la máquina a procesar
 
-## Addition
+## Adicional
 
 ```zenscript
-mods.steamagerevolution.Crucible.addRecipe(IIngredient input, ILiquidStack output, int craftTime, int steamCost);
+mods.steamagerevolution.Crucible.addRecipe(entrada IIngredient, salida ILiquidStack, int craftTime, int steamCost);
 mods.steamagerevolution.Crucible.addRecipe(<minecraft:obsidian>, <liquid:lava>*1000, 200, 200);
 ```
 
-## Removal
+## Eliminar
 
 ```zenscript
 mods.steamagerevolution.Crucible.removeRecipe(ILiquidStack);

@@ -1,16 +1,17 @@
-# Fluid Enricher
+# 流体エンリチャー
 
-## Importing the Package
-`mods.nuclearcraft.Enricher`
+## パッケージのインポート
+`mods.nuclearcraft.EnricherEnricher`
 
-## Adding Recipes
+## レシピを追加中
 ```zenscript
-mods.nuclearcraft.Enricher.addRecipe(IIngredient itemInput, ILiquidStack fluidInput, ILiquidStack fluidOutput, @Optional double timeMultiplier, @Optional double powerMultiplier, @Optional double processRadiation);
+mods.nuclearcraft.Supercoolermods.nuclearcraft.Enricher.addRecipe(IIngredient itemInput, ILiquidStack fluidInput, ILiquidStack fluidOutput, @Optional double timeMultiplier, @Optional double powerMultiplier, @Optional double processRadiation);
 ```
 
-## Removing Recipes
+## レシピを削除
 ```zenscript
-mods.nuclearcraft.Enricher.removeRecipeWithInput(IIngredient itemInput, ILiquidStack fluidInput);
+mods.nuclearcraft.SupercoolerEnricher.removeRecipeWithInput(IInput, ILiquidStack fluidInput);
+mods.nurcraft.mods.nuclearcraft.Enricher.removeRecipeWithInput(IIngredient itemInput, ILiquidStack fluidInput);
 mods.nuclearcraft.Enricher.removeRecipeWithOutput(ILiquidStack fluidOutput);
-mods.nuclearcraft.Enricher.removeAllRecipes();
+mods.nuclearcraft.Enricher.removeAllRecipes();Enricher.removeAllRecipes();
 ```

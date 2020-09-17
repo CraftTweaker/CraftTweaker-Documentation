@@ -1,8 +1,8 @@
-# Creative Tab Bracket Handler
+# 创建标签栏处理程序
 
-The Creative Tab Bracket Handler gives you access to the Creative Tabs in the game.
+Creative Tab Backet Handler 让您在游戏中访问创意标签。
 
-Creative Tabs are referenced in the creative tabs handler this way:
+创造性标签页处理器以此方式引用了创意标签：
 
 Vanilla
 
@@ -12,4 +12,4 @@ Vanilla
 <creativetab:misc>
 ```
 
-If the creative tab is found, this will return a [creative tab](/Mods/ContentTweaker/Vanilla/Creatable_Content/Creative_Tab/) Object.
+如果找到创造性标签，将返回一个 [创造性标签](/Mods/ContentTweaker/Vanilla/Creatable_Content/Creative_Tab/) 对象。

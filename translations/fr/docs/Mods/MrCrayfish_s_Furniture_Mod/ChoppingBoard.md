@@ -1,33 +1,33 @@
-# Chopping Board
+# Planche à découper
 
-The Chopping Board allows you to chop up an item into many pieces of another item.
+La planche à découper vous permet de couper un objet en plusieurs morceaux d'un autre objet.
 
-By default only cuts bread into 6 bread slices.
+Par défaut, il suffit de couper le pain en 6 tranches de pain.
 
-## Removing Chopping Recipes
+## Suppression des recettes hachées
 
-## Remove matching chopping recipes.
+## Retirer les recettes de hachage correspondantes.
 
 ```zenscript
-mods.cfm.ChoppingBoard.remove(@Optional final IIngredient output, @Optional final IIngredient input);
+mods.cfm.ChoppingBoard.remove(@Optional final Igredient output, @Optional final IIngredient input);
 
-// Remove recipe with bread as the input item
-mods.cfm.ChoppingBoard.remove(null,<minecraft:bread>);
-// Remove recipes that result in 6 bread slices (same match as above recipe, so will have no effect if used after)
-mods.cfm.ChoppingBoard.remove(<cfm:item_bread_slice>.withAmount(6));
+// Supprime la recette avec du pain comme élément d'entrée
+mods.cfm.ChoppingBoard. emove(null,<minecraft:bread>);
+// Supprime les recettes qui aboutissent à 6 tranches de pain (même correspondance que la recette ci-dessus, donc n'aura aucun effet si utilisé après)
+mods. fm.ChoppingBoard.remove(<cfm:item_bread_slice>.withAmount(6));
 ```
 
-## Adding Chopping Recipes
+## Ajout de recettes hachées
 
-Add a chopping recipe.
+Ajouter une recette de hachage.
 
-## Input requires stack size of 1.
+## L'entrée nécessite une taille de pile de 1.
 
 ```zenscript
 mods.cfm.ChoppingBoard.addRecipe(@Nonnull final IItemStack output, @Nonnull final IItemStack input);
 
-// Add a recipe to chop wheat into 2 sticks
-mods.cfm.ChoppingBoard.addRecipe(<minecraft:stick>.withAmount(2),<minecraft:wheat>);
-// Add a recipe to chop bread into 3 wheat
+// Ajoute une recette pour couper le blé en 2 sticks
+mods.cfm.ChoppingBoard. ddRecipe(<minecraft:stick>.withAmount(2),<minecraft:wheat>);
+// Ajoute une recette pour couper du pain dans 3 wheat
 mods.cfm.ChoppingBoard.addRecipe(<minecraft:wheat>.withAmount(3),<minecraft:bread>);
 ```

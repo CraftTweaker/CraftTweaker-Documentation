@@ -1,27 +1,27 @@
-# Vessel
+# Schiff
 
 ## Addition
 
 ```zenscript
 import mods.cuisine.Vessel;
 
-// All parameter named 'extra' refers to the extra input.
-Vessel.add(IItemStack input, ILiquidStack inputFluid, IItemStack output, ILiquidStack outputFluid, IItemStack extra);
-Vessel.add(IItemStack input, ILiquidStack inputFluid, IItemStack output, ILiquidStack outputFluid, IOreDictEntry extra);
-Vessel.add(IOreDictEntry input, ILiquidStack inputFluid, IItemStack output, ILiquidStack outputFluid, IItemStack extra);
-Vessel.add(IOreDictEntry input, ILiquidStack inputFluid, IItemStack output, ILiquidStack outputFluid, IOreEntry extra);
-Vessel.add(IItemStack input, ILiquidStack inputFluid, IItemStack output, ILiquidStack outputFluid);
-Vessel.add(IOreEntry input, ILiquidStack inputFluid, IItemStack output, ILiquidStack outputFluid);
+// Alle Parameter mit dem Namen 'extra' beziehen sich auf die zusätzliche Eingabe.
+Vessel.add(IItemStack Eingabe, ILiquidStack inputFluid, IItemStack Ausgabe, ILiquidStack outputFluid, IItemStack extra);
+Vessel. dd(IItemStack Input, ILiquidStack inputFluid, IItemStack Output, ILiquidStack outputFluid, IOreDictEntry extra);
+Vessel.add(IOreDictEntry Input, ILiquidStack inputFluid, IItemStack Output, ILiquidStack outputFluid, IItemStack extra);
+Vessel. dd(IOreDictEntry Input, ILiquidStack inputFluid, IItemStack Output, ILiquidStack outputFluid, IOreEntry extra);
+Vessel.add(IItemStack Input, ILiquidStack inputFluid, IItemStack Output, ILiquidStack OutputFluid);
+Vessel. dd(IOreEntry Input, ILiquidStack inputFluid, IItemStack Output, ILiquidStack OutputFluid);
 
 Vessel.add(<item:minecraft:dirt>, <liquid:water> * 1000, <item:minecraft:diamond>, null);
 ```
 
-## Removal
+## Entfernen
 
 ```zenscript
 import mods.cuisine.Vessel;
 
-// Remove by inputs.
+// Von Eingaben entfernen.
 Vessel.remove(IItemStack input, ILiquidStack inputFluid, IItemStack extra);
 Vessel.remove(IItemStack input, ILiquidStack inputFluid, IOreDictEntry extra);
 Vessel.remove(IOreDictEntry input, ILiquidStack inputFluid, IItemStack extra);
@@ -34,6 +34,6 @@ Vessel.remove();
 
 Vessel.remove("recipe_name");
 
-// Remove everything!
+// Alles entfernen!
 Vessel.removeAll();
 ```

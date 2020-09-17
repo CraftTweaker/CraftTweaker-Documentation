@@ -1,16 +1,16 @@
-# PlayerAttackEntity
+# Spieler-AngriffEntität
 
-The PlayerAttackEntity Event is fired whenever a player attacks an Entity.
+Das PlayerAttackEntity Event wird gefeuert, wenn ein Spieler eine Entität angreift.
 
 ## Event-Klasse
 
-You will need to cast the event in the function header as this class:  
-`crafttweaker.event.PlayerAttackEntityEvent`  
-You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
+Du musst das Ereignis als diese Klasse in den Funktionskopf verschieben:  
+`crafttweaker.event. layerAttackEntityEvent`  
+Sie können natürlich auch [die Klasse vor](/AdvancedFunctions/Import/) importieren und dann diesen Namen verwenden.
 
 ## Erweiterte Event-Schnittellen
 
-PlayerAttackEntity Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+PlayerAttackEntity Events implementieren die folgenden Schnittstellen und können alle ihre Methoden/Getters/Setter auch aufrufen:
 
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 - [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
@@ -19,12 +19,12 @@ PlayerAttackEntity Events implement the following interfaces and are able to cal
 
 Die folgenden Informationen lassen sich von diesem Event (Ereignis) abrufen:
 
-| ZenGetter  | Rückgabetyp                           |
-| ---------- | ------------------------------------- |
-| `canceled` | boolean                               |
-| `player`   | [IPlayer](/Vanilla/Players/IPlayer/)  |
-| `entity`   | [IEntity](/Vanilla/Entities/IEntity/) |
+| ZenGetter     | Rückgabetyp                           |
+| ------------- | ------------------------------------- |
+| `abgebrochen` | boolean                               |
+| `player`      | [IPlayer](/Vanilla/Players/IPlayer/)  |
+| `objekt`      | [IEntity](/Vanilla/Entities/IEntity/) |
 
-## ZenMethods
+## ZenMethoden
 
-- `event.cancel()` sets the event as cancelled.
+- `event.cancel()` setzt das Ereignis als abgebrochen.

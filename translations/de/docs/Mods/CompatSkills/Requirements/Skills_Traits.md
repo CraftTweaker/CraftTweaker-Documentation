@@ -1,35 +1,35 @@
-# Skills & Traits
+# Fertigkeiten & Eigenschaften
 
-## Skills List:
+## Fähigkeitsliste:
 
-| Skills    | ResourceLocation      |
-|:--------- |:--------------------- |
-| Agility   | reskillable:agility   |
-| Attack    | reskillable:attack    |
-| Building  | reskillable:building  |
-| Defense   | reskillable:defense   |
-| Farming   | reskillable:farming   |
-| Gathering | reskillable:gathering |
-| Magic     | reskillable:magic     |
-| Mining    | reskillable:mining    |
+| Fertigkeiten   | Ressourcen-Standort        |
+|:-------------- |:-------------------------- |
+| Beweglichkeit  | reskillable:agility        |
+| Angriff        | reskillbar:attack          |
+| Bauen          | reskillbar:building        |
+| Abwehr         | reskillbar:Verteidigung    |
+| Landwirtschaft | reskillable:Landwirtschaft |
+| Sammeln        | reskillable:Sammeln        |
+| Magie          | reskillbar:magic           |
+| Bergbau        | reskillbar:Mining          |
 
-## Traits List:
+## Merkmalsliste:
 
-| Parent Skill |        Trait         | ResourceLocation             |
-|:------------:|:--------------------:|:---------------------------- |
-|   Agility    |      Road Walk       | reskillable:roadwalk         |
-|   Agility    |       Sidestep       | reskillable:sidestep         |
-|    Attack    |    Battle Spirit     | reskillable:battle_spirit    |
-|    Attack    |     Neutralissse     | reskillable:neutralissse     |
-|   Building   | Chorus Transmutation | reskillable:chorus_transmute |
-|   Building   |   Perfect Recovery   | reskillable:perfect_recover  |
-|   Defense    |     Effect Twist     | reskillable:effect_twist     |
-|   Defense    |      Undershirt      | reskillable:undershirt       |
-|   Farming    |     Green Thumb      | reskillable:green_thumb      |
-|   Farming    |      More Wheat      | reskillable:more_wheat       |
-|  Gathering   |    Drop Guarantee    | reskillable:drop_guarantee   |
-|  Gathering   |   Lucky Fisherman    | reskillable:lucky_fisherman  |
-|    Magic     |    Golden Osmosis    | reskillable:golden_osmosis   |
-|    Magic     |      Safe Port       | reskillable:safe_port        |
-|    Mining    |    Fossil Digger     | reskillable:fossil_digger    |
-|    Mining    |   Obsidian Smasher   | reskillable:obsidian_smasher |
+| Eltern-Fertigkeit |       Merkmal        | Ressourcen-Standort          |
+|:-----------------:|:--------------------:|:---------------------------- |
+|   Beweglichkeit   |     Straße gehen     | reskillable:Roadwalk         |
+|   Beweglichkeit   |       Sidestep       | reskillable:sidestep         |
+|      Angriff      |      Kampfgeist      | reskillbar:battle_spirit     |
+|      Angriff      |     Neutralissse     | reskillable:neutralissse     |
+|       Bauen       | Chorus-Transmutation | reskillable:chorus_transmute |
+|       Bauen       |  Perfekte Erholung   | reskillbar:perfect_recovery  |
+|      Abwehr       |     Effekt Twist     | reskillable:effect_twist     |
+|      Abwehr       |      Unterhemd       | reskillable:undershirt       |
+|  Landwirtschaft   |    Grüner Daumen     | reskillable:green_thumb      |
+|  Landwirtschaft   |     Mehr Weizen      | reskillbar:more_wheat        |
+|      Sammeln      |   Garantie ablegen   | reskillbar:drop_guarantee    |
+|      Sammeln      |  Glückliche Fischer  | reskillable:lucky_fisherman  |
+|       Magie       |    Goldene Osmose    | reskillbar:golden_osmose     |
+|       Magie       |    Sicherer Port     | reskillbar:safe_port         |
+|      Bergbau      |   Fossiler Gräber    | reskillable:fossil_digger    |
+|      Bergbau      |   Obsidian Smasher   | reskillable:obsidian_smasher |

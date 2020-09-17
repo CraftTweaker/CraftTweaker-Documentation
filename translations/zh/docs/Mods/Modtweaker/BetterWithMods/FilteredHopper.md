@@ -1,61 +1,61 @@
-# Filtered Hopper
+# 滤过的漏斗者
 
-The Filtered Hopper is a block that can allow or disallow certain items based on the item currently in its Filter Slot. Additionally it can perform recipes on the items that are attempting to enter the Hopper.
+过滤后的 Hopper是一个方块，可以允许或不允许某些基于其当前筛选槽中的项目的项目。 此外，它可以对试图进入漏斗的项目执行配方。
 
-# Filters
+# 筛选器
 
-* Addition
+* 加
     
-    * Add a new Filter by a name and assign the items which will be used in the Filter Slot.
+    * 通过名称添加一个新过滤器并分配将用于过滤器插件的项目。
     ```zenscript
         mods.betterwithmods.FilteredHopper.addFilter(String name, IIngredient item)
     
-        mods.betterwithmods.FilteredHopper.addFilter("modtweaker:myFilter", <minecraft:planks>);   
+        mods.betterwithmods.FiltereredHopper.addFilter("modtweiner:myFilter", <minecraft:planks>);   
     ```
     
-    * Add an allowed item to a Filter by its name.
+    * 将允许的项目添加到筛选器名称中。
     ```zenscript
-        mods.betterwithmods.FilteredHopper.addFilteredItem(String name, IIngredient item)
+        mods.betterwithmods.FiltereredHopper.addFilteredItem(String name, Ingredient item)
     
-        mods.betterwithmods.FilteredHopper.addFilteredItem("modtweaker:myFilter",<minecraft:dirt>);
-        mods.betterwithmods.FilteredHopper.addFilteredItem("modtweaker:myFilter",<ore:ingotIron>);
+        mods.betterwithmods.FiltereredHopper.addFilteredItem("modtiner:myFilter",<minecraft:dirt>);
+        mods.betterwithmods.FiltereredHopper.addFilteredItem("modtinstrer:myFilter",<ore:ingotIron>);
     ```
     
-    * Filtered Recipes - The hopper can process the item attempting to input into specific item outputs, it can either
+    * 筛选的配方 - 跳转器可以处理试图输入特定项目输出的项目，它可以使用
         
-        * Put into the hopper's inventory (as long as the current filter allows it).
-        * Eject the items into the world above the hopper 
+        * 放入跳转手的背包(只要当前过滤器允许的话)。
+        * 将项目投放到世界上超过希望者 
         ```zenscript
-        mods.betterwithmods.FilteredHopper.addFilterRecipe(String name, IIngredient input, IIngredient[] insideOutput , IIngredient[] outsideOutput);
+        mods.betterwithmods.FilteredHopper。 ddFilterRecipe(名称, IIngredient input, IIngredient[……]inside输出 , IIngredient[……]outsideOutpu)；
         
-        //Will convert a grass block into a flint side the inventory and 9 diamonds outside the inventory
-        mods.betterwithmods.FilteredHopper.addFilterRecipe("modtweaker:myFilter",<minecraft:grass>,[<minecraft:flint>],[<minecraft:diamond>*9]);
+        /Will将一个草块转换成物品栏的一侧，还有9个钻石在物品栏
+        模式之外。 etterwithmods.FilteredHopper.addFilterRecipe("modtweeper:myFilter",<minecraft:grass>,[<minecraft:flint>],[<minecraft:diamond>*9]);
         
-        //Will only eject 9 diamonds into the world
-        mods.betterwithmods.FilteredHopper.addFilterRecipe("modtweaker:myFilter2",<minecraft:gravel>, [], [<minecraft:diamond>*9]);
+        //Will only 弹出9 钻石到世界
+        mods. etterwithmods.FilteredHoper。 ddFilterRecipe("modtweeper:myFilter2",<minecraft:gravel>, [, [<minecraft:diamond>*9]);
         
-        //Will only put 9 diamonds into the inventory, **only if you allow diamonds into the specific filter**
-        mods.betterwithmods.FilteredHopper.addFilterRecipe("modtweaker:myFilter3",<minecraft:sand>, [<minecraft:diamond>*9], []);
+        / Will只能将9个钻石放入库存中，**只允许钻石进入指定的过滤器**
+        模组。 etterwithmods.FilteredHopper.addFilterRecipe("modtweeper:myFilter3",<minecraft:sand>, [<minecraft:diamond>*9], []);
         ```
         
-        Additionally, you can add special recipes to the Filtered Hopper that will create Souls Urns from Urns.
+        此外，您可以向过滤后的漏斗添加特殊配方，这将从Urns创建灵魂Urns。
         
         ```zenscript
-           mods.betterwithmods.FilteredHopper.addSoulUrnRecipe(IIngredient input, IItemStack[] outputs, IItemStack[] secondary)
+           mods.betterwithmods.FilteredHopper.addSoulUrnRecipe(IIngredient input, IItemStack[…]secondary)
         
-           mods.betterwithmods.FilteredHopper.addSoulUrnRecipe(<minecraft:stone>,[],[<minecraft:diamond>*9]);
+           mods.betterwithmods.FilteredHopper.addSoulUrnRecipe(<minecraft:stone>[],[<minecraft:diamond>*9]);
         ```
 
-* Removal
+* 移除
     
-    * Remove the allowed items from the specified filter
+    * 从指定的过滤器中删除允许的项目
     ```zenscript
-        mods.betterwithmods.FilteredHopper.clearFilter(String name);
+        mods.betterwithmods.FilteredHopper.clear过滤(String name);
     
-        mods.betterwithmods.FilteredHopper.clearFilter("betterwithmods:wicker");
+        mods.betterwithmods.FiltereredHopper.clearFilter("betterwithmods:wicker");
     ```
     
-    * Remove a Filtered Recipe by input or output
+    * 通过输入或输出移除筛选的配方
     ```zenscript
         mods.betterwithmods.FilteredHopper.removeRecipe(IIngredient[] insideOutput, IIngredient[] outsideOutput);
     

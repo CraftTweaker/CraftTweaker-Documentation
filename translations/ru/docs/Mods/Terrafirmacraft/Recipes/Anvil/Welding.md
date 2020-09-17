@@ -1,20 +1,20 @@
-# Anvil Welding
+# Злобная сварка
 
-## Package
+## Пакет
 ```zenscript
-import mods.terrafirmacraft.Welding;
+import mods.terrafirmacraft.Сварка;
 ```
 
-## Addition
+## Сложение
 
 ```zenscript
-Welding.addRecipe(String registryName, IIngredient input1, IIngredient input2, IItemStack output, int minTier);
+Welding.addRecipe(String registryName, IIngredient input1, IIngredient input2, IItemStack, int minTier);
 ```
 
-## Removal
+## Удаление
 
 ```zenscript
-Welding.removeRecipe(IItemStack output);
+Welding.removeRecipe(IItemStack);
 Welding.removeRecipe(String registryName);
 ```
-- As with anvil recipes, the same rules for input applies here. The input must be forgeable(see [ItemRegistry](/Mods/Terrafirmacraft/ItemRegistry) for registering forging capability to an item) and can't be stacked.
+- Как и с злыми рецептами, здесь применяются те же правила для ввода. Ввод должен быть подделан (см. [ItemRegistry](/Mods/Terrafirmacraft/ItemRegistry) для регистрации способности ковки к предмету) и не может быть скоплён.

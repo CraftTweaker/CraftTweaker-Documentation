@@ -1,14 +1,14 @@
-# Survivalist
+# サバイバリスト
 
-## Chopping Block
+## チョッピングブロック
 
 ### InputStack, OutputStack, {outputMultiplier}, {hitCountMultiplier}
 
 ```zenscript
-gigaherz.survivalist.Choppable.addRecipe(IIngredient input,  IItemStack output, outputMultiplier, hitCountMultiplier);
+gigaherz.survivalist.Choppable.addRecipe(IIngredient入力, IItemStack出力, outputMultiplier, hitCountMultiplier);
 ```
 
-##### Example
+##### 例
 
 ```zenscript
 gigaherz.survivalist.Choppable.addRecipe(<minecraft:bone>,<minecraft:dye:15>, 1.0, 1.0);
@@ -17,24 +17,24 @@ gigaherz.survivalist.Choppable.addRecipe(<minecraft:bone>,<minecraft:dye:15>, 1.
 ### OutputStack, {InputStack}
 
 ```zenscript
-gigaherz.survivalist.Choppable.removeRecipe(IIngredient output, IIngredient input);
+gigaherz.survivalist.Choppable.removeRecipe(IIngredient出力, IIngredient入力);
 ```
 
-##### Example
+##### 例
 
 ```zenscript
 gigaherz.survivalist.Choppable.removeRecipe(<minecraft:stick>);
 ```
 
-## Drying Rack
+## ドライラック
 
-### InputStack, OutputStack, Time in Ticks
+### InputStack, OutputStack, Time in Tick
 
 ```zenscript
 gigaherz.survivalist.Dryable.addRecipe(IIngredient input, IItemStack output, int time);
 ```
 
-##### Example
+##### 例
 
 ```zenscript
 gigaherz.survivalist.Dryable.addRecipe(<minecraft:rotten_flesh>, <minecraft:leather>, 300);
@@ -43,13 +43,13 @@ gigaherz.survivalist.Dryable.addRecipe(<minecraft:rotten_flesh>, <minecraft:leat
 ### OutputStack, {InputStack}
 
 ```zenscript
-gigaherz.survivalist.Dryable.removeRecipe(IIngredient output, IIngredient input);
+gigaherz.survivalist.Dryable.removeRecipe(IIngredient出力, IIngredient入力);
 ```
 
-##### Example
+##### 例
 
 ```zenscript
 gigaherz.survivalist.Dryable.removeRecipe(<minecraft:leather>, <minecraft:rotten_flesh>);
 ```
 
-#### InputStack can be ore dictionary and anything surrounded by {} is optional
+#### InputStack は鉱石辞書にすることができ、{} に囲まれたものは任意です

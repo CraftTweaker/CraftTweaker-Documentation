@@ -1,22 +1,22 @@
-# Starch Extractor
+# Stachelextraktor
 
-## Package
+## Paket
 ```zenscript
-import mods.calculator.starch;
+importieren mods.calculator.starch;
 ```
 
 ## Methoden
 
-- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input** The input.
-- **int value** The amount of input adds to that machine.
+- **[Ingredient](/Vanilla/Variable_Types/IIngredient/) Input** Die Eingabe.
+- **int Wert** Der Eingabewert fügt dieser Maschine hinzu.
 
 
 ## Additon
 ```zenscript
-starch.addRecipe(IIngredient input, int value);
+starch.addRecipe(IZutateneingabe, Int Wert);
 ```
 
-## Removal
+## Entfernen
 ```zenscript
-starch.removeRecipe(IIngredient input);
+starch.removeRecipe(IZutaten-Eingabe);
 ```

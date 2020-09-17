@@ -1,24 +1,24 @@
-# PlayerSmelted
+# Плавка игрока
 
-The PlayerSmelted Event is fired whenever a player takes something out of a furnace.
+Событие PlayerSmelted запускается, когда игрок выводит что-нибудь из печи.
 
-## Event Class
+## Класс события
 
 You will need to cast the event in the function header as this class:  
 `crafttweaker.event.PlayerSmeltedEvent`  
 You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
 
-## Event interface extensions
+## Наследование от интерфейсов событий
 
-PlayerSmelted Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+PlayerSmelted События реализуют следующие интерфейсы и также могут вызвать все их методы/getters/setters:
 
 - [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
 
 ## ZenGetters
 
-The following information can be retrieved from the event:
+Следующая информация может быть получена от события:
 
-| ZenGetter | Return Type                              |
-| --------- | ---------------------------------------- |
-| `player`  | [IPlayer](/Vanilla/Players/IPlayer/)     |
-| `output`  | [IItemStack](/Vanilla/Items/IItemStack/) |
+| Геттеры  | Возвращаемый тип                         |
+| -------- | ---------------------------------------- |
+| `player` | [IPlayer](/Vanilla/Players/IPlayer/)     |
+| `вывод`  | [IItemStack](/Vanilla/Items/IItemStack/) |

@@ -1,33 +1,33 @@
-# Ritual Support
+# Ритуальная поддержка
 
-## Rituals:
+## Ритуалы:
 
-This will cancel the activation of a ritual if the specific requirements aren't met for the rituals activation.
+Это отменяет активацию ритуала, если особые требования к активации ритуалов не выполняются.
 
-### Command:
+### Команда:
 
-There is currently an in-game command for dumping all of the Ritual Strings for use by the Ritual Handler. The command is: /ct ritualDump and it'll output all of the ritual strings to the "CraftTweaker.log".
+На данный момент существует команда для сброса всех ритуальных строк для использования ритуальным Handler. Команда команды: /ct ritualDump и выведет все ритуальные строки в "CraftTweaker.log".
 
-### Pre-1.4.0:
+### Пред-1.4.0:
 
-#### Syntax:
+#### Синтаксис:
 
-    Blank Example:
+    Пример пусто:
     mods.compatskills.RitualHandler.addRitualLock(String failureMessage, String ritual, String... requirements)
     
     Test Example:
-    mods.compatskills.RitualHandler.addRitualLock("As the ritual activates, you don't achieve the expected result", "ritualCrushing", "reskillable:building|15", "reskillable:magic|7", "stage|test", "adv|minecraft:husbandry/plant_seed")
+    mods.compatskills.RitualHandler.addRitualLock("Когда ритуал активирует, вы не достигаете ожидаемого результата", "ritualCrushing", "reskillable:building|15", "reskillable:magic|7", "stage|test", "adv|minecraft:husbandry/plant_seed")
     
 
-### Post-1.4.0:
+### Пост-1.4.0:
 
-As of CompatSkills 1.4.0 a few new ZenMethods have been added as well as some changes has been done to the existing syntax. We've also fixed an issue that made Ritual Support and Binding Support not work properly!
+Начиная с CompatSkills 1.4.0 были добавлены несколько новых ZenMethods, а также внесены некоторые изменения в существующий синтаксис. Мы также исправили проблему, которая сделала некорректной поддержку ритуала и привязки поддержки!
 
-#### Syntax:
+#### Синтаксис:
 
-    Blank Example:
-    mods.compatskills.RitualHandler.addRitualLock(String ritual, String... requirements);
-    mods.compatskills.RitualHandler.addRitualCostLock(int activationCost, String... requirements);
+    Пример пусто:
+    mods.compatskills.RitualHandler.addRitualLock(String ritual, строка... Требования);
+    mods.compatskills.RitualHandler.addRitualCostLock(int activationCost, String... Требования);
     mods.compatskills.RitualHandler.addRitualCrystalLock(int crystalLevel, String... requirements);
     
     Test Example:
@@ -36,11 +36,11 @@ As of CompatSkills 1.4.0 a few new ZenMethods have been added as well as some ch
     mods.compatskills.RitualHandler.addRitualCrystalLock(1, "reskillable:magic|7");
     
 
-#### Error Message
+#### Сообщение об ошибке
 
-As with the binding support, the error message has been moved over to a localizable string instead of a string set in the CrT Method. This will make it so resource pack authors can localize and change the strings as they'd like much easier.
+Как и при поддержке привязки, сообщение об ошибке было перемещено в локализуемую строку вместо строки, установленной в методе CrT. Это сделает так, чтобы авторы ресурсного пакета могли локализовать и изменить строки, как они хотели бы гораздо проще.
 
-    compatskills.bloodmagic.ritualError=As the ritual activates, you don't achieve the expected result
+    compatskills.bloodmagic.ritualError=По мере активации ритуала вы не достигаете ожидаемого результата
     
 
-Some other changes are for example that the default error message now displays as part of a status chat message to the player. This means that the message is only shown to the player and not printed in chat for everyone to see. This also means that it will now display alongside requirements in the chat. Which makes it easier for the player to identify what they are missing from the lock.
+Некоторые другие изменения, например, что сообщение об ошибке теперь отображается как часть сообщения о состоянии чата для игрока. Это означает, что сообщение показывается только игроку, а не игроку в чате, чтобы каждый видел. Это также означает, что теперь он будет отображаться наряду с требованиями в чате. Это облегчает игроку выяснить, что у него отсутствует в замке.

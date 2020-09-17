@@ -1,22 +1,22 @@
 # Grindstone
 
-You can use CrT to add or remove recipes form the AS grindstone.
+Vous pouvez utiliser CrT pour ajouter ou retirer des recettes de la meule AS.
 
-## Calling
+## Appel en cours
 
-You can call the InfusionRecipe package using `mods.astralsorcery.Grindstone`.
+Vous pouvez appeler le package InfusionRecipe en utilisant `mods.astralsorcery.Grindstone`.
 
-## Removing
+## Enlèvement
 
-This will remove the first grinding recipe it finds that creates the provided [IItemStack](/Vanilla/Items/IItemStack/) `output`.  
-If there are multiple recipes that return the provided output, you need to call this method multiple times!
+Cela supprimera la première recette de broyage qu'elle trouve qui crée la sortie [IItemStack](/Vanilla/Items/IItemStack/) ``fournie.  
+S'il y a plusieurs recettes qui retournent la sortie fournie, vous devez appeler cette méthode plusieurs fois !
 
 ```zenscript
 //mods.astralsorcery.Grindstone.removeRecipe(IItemStack output);
 mods.astralsorcery.Grindstone.removeRecipe(<minecraft:redstone>);
 ```
 
-## Addition
+## Ajouter
 
 ```zenscript
 //mods.astralsorcery.Grindstone.addRecipe(IItemStack input, IItemStack output);

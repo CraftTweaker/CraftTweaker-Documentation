@@ -1,8 +1,8 @@
-# Trait Bracket Handler
+# Merkmals-Klammerhandler
 
-The Trait Bracket handler's sole purpose is providing you with [Trait Representations](/Mods/ContentTweaker/Tinkers_Construct/Trait/).
+Der einzige Zweck des Trait-Bracket-Handlers ist die Bereitstellung von [Merkmalsrepräsentationen](/Mods/ContentTweaker/Tinkers_Construct/Trait/).
 
-You use the trait bracket handler like this:
+Sie verwenden den Trait-Klammer-Handler folgendermaßen:
 
 ```zenscript
 <ticontrait:identifier>
@@ -10,4 +10,4 @@ You use the trait bracket handler like this:
 <ticontrait:cactus>
 ```
 
-If the Trait is found, this will return an Trait Representation Object. Please refer to the [respective Wiki entry](/Mods/ContentTweaker/Tinkers_Construct/Trait/) for further information on what you can do with these.
+Wird das Merkmal gefunden, wird ein Merkmalsdarstellungsobjekt zurückgegeben. Weitere Informationen dazu finden Sie im [entsprechenden Wiki-Eintrag](/Mods/ContentTweaker/Tinkers_Construct/Trait/).

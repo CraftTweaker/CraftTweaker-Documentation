@@ -1,37 +1,37 @@
-# RecipePrimer
+# Рецепт Прайм
 
-A RecipePrimer Object is the actual recipe. You can get such an object from the [RecipeBuilder](/Mods/ModularMachinery/Recipes/RecipeBuilder/) and use its methods to actually give the recipe ins and outs and stuff.
+Рецепт Primer - это настоящий рецепт. Такой объект можно получить из [Рецепт](/Mods/ModularMachinery/Recipes/RecipeBuilder/) и использовать его методы, чтобы дать рецепты и выходы и предметы.
 
 ## Импорт пакета
 
-It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
-`import mods.modularmachinery.RecipePrimer;`
+Возможно, вам потребуется импортировать пакет, если вы столкнетесь с какими-либо проблемами (например, наложение [массива](/AdvancedFunctions/Arrays_and_Loops/)), так что лучше быть безопасным, чем извините и добавить импорт.  
+`импорт mods.modularmachinery.RecipePrimer;`
 
 ## ZenMethods
 
-Each of these methods does two things: First, it modifies the object, then it returns the object itself (as another RecipePrimer).  
-This means you can either call each method on its own, or make one call where you append each pieces of code (example below).
+Каждый из этих методов делает две вещи: во-первых, он изменяет объект, затем возвращает объект как другой RecipePrimer).  
+Это означает, что вы можете либо вызвать каждый метод самостоятельно, или сделайте один звонок, где вы добавляете все части кода (пример ниже).
 
-### Setting the chance
+### Установка шанса
 
 ```zenscript
-setChance(float chance);
+setChance(плавающий шанс);
 ```
 
-### Adding Energy and fuel requirements
+### Добавление требований в отношении энергии и топлива
 
 ```zenscript
 addEnergyPerTickInput(int perTick);
 addEnergyPerTickOutput(int perTick);
 
 
-//Typo? This is what the sourcecode sais, if it doesn't work try Input
+//Типо? Вот что говорит исходный код, если он не работает, попробуйте ввод
 addFuelItemInout(int requiredTotalBurnTime);
 ```
 
-### Adding inputs
+### Добавление входов
 
-You can add [IItemStacks](/Vanilla/Items/IItemStack/), [IOreDictEntries](/Vanilla/OreDict/IOreDictEntry/) or [ILiquidStacks](/Vanilla/Liquids/ILiquidStack/) as input.
+Вы можете добавить [IItemStacks](/Vanilla/Items/IItemStack/), [IOreDictEntries](/Vanilla/OreDict/IOreDictEntry/) или [ILiquidStacks](/Vanilla/Liquids/ILiquidStack/) в качестве входа.
 
 ```zenscript
 addItemInput(IItemStack stack);
@@ -40,12 +40,12 @@ addItemInput(IOreDictEntry oreDict);
 addItemInput(IOreDictEntry oreDict, int amount);
 
 
-addFluidInput(ILiquidStack stack);
+addFluidInput(ILiquidStack);
 ```
 
 ### Adding outputs
 
-You can add [IItemStacks](/Vanilla/Items/IItemStack/), [IOreDictEntries](/Vanilla/OreDict/IOreDictEntry/) or [ILiquidStacks](/Vanilla/Liquids/ILiquidStack/) as output.
+Вы можете добавить [IItemStacks](/Vanilla/Items/IItemStack/), [IOreDictEntries](/Vanilla/OreDict/IOreDictEntry/) или [ILiquidStacks](/Vanilla/Liquids/ILiquidStack/) в качестве выхода.
 
 ```zenscript
 addItemOutput(IItemStack stack);
@@ -54,20 +54,20 @@ addItemOutput(IOreDictEntry oreDict);
 addItemOutput(IOreDictEntry oreDict, int amount);
 
 
-addFluidOutput(ILiquidStack stack);
+addFluidOutput(ILiquidStack);
 ```
 
-### Building the recipe
+### Построение рецепта
 
-After you have done your changes above, you need to build the recipe so that it will actually do something.
+После того, как вы сделали изменения выше, вам нужно создать рецепт, чтобы он действительно что-то сделал.
 
 ```zenscript
-build();
+строение();
 ```
 
-## Example
+## Пример
 
-You can either call each method on its own, or play codegolf:
+Вы можете вызвать каждый метод самостоятельно, или играть в кодовые гольф:
 
 ```zenscript
 val reci = mods.modularmachinery.RecipeBuilder.newBuilder("recipeRegistryName", "associatedMachineRegistryName", 1000, 0);
@@ -75,10 +75,10 @@ val reci = mods.modularmachinery.RecipeBuilder.newBuilder("recipeRegistryName", 
 reci.addEnergyPerTickInput(100);
 reci.addItemInput(<ore:ingotIron>);
 reci.addItemOutput(<minecraft:gold_ingot>);
-reci.build();
+reci. uild();
 
 
 
-val rec = mods.modularmachinery.RecipeBuilder.newBuilder("anotherRecipeRegistryName", "associatedMachineRegistryName", 1000, 0);
+val rec = mods.modularmachinery.RecipeBuilder.newBuilder("anotherRecipeRegistryName", "associated MachineRegistry", 1000, 0);
 rec.addEnergyPerTickInput(100).addFluidInput(<liquid:water> * 1000).addFluidInput(<liquid:lava> * 1000).addItemOutput(<minecraft:obsidian> * 2).build();
 ```

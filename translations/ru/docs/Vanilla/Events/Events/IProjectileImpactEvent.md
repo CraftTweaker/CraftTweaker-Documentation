@@ -1,16 +1,16 @@
-# IProjectileImpactEvent
+# Событие действия снаряда
 
-This interface is extended by all Events that relate to projectiles (suchs as fireballs, arrows and throwable items).
+Этот интерфейс расширен всеми событиями, относящимися к снарядам (таким, как огненные шары, стрелы и бросаемые предметы).
 
 ## Импорт класса
-It might be required to [import](/AdvancedFunctions/Import/) the class to avoid errors.  
-`import crafttweaker.event.IProjectileImpactEvent;`
+Может потребоваться [импортировать](/AdvancedFunctions/Import/) класс, чтобы избежать ошибок.  
+`импорт crafttweaker.event.IProjectileImpactEvent;`
 
-## Extending IEntityEvent
-This interface extends [IEntityEvent](/Vanilla/Events/Events/IEntityEvent/), which means that all functionality that IEntityEvent offers is also present in IProjectileImpactEvent.
+## Расширение IEntityEvent
+Этот интерфейс расширяет [IEntityEvent](/Vanilla/Events/Events/IEntityEvent/), что означает, что вся функциональность, которую предлагает IEntityEvent также присутствует в IProjectileImpactEvent.
 
 ## Геттеры
 
-| name       | type                                               |
-| ---------- | -------------------------------------------------- |
-| `rayTrace` | [IRayTraceResult](/Vanilla/World/IRayTraceResult/) |
+| name       | type                                                      |
+| ---------- | --------------------------------------------------------- |
+| `rayTrace` | [Результат IRayTraceult](/Vanilla/World/IRayTraceResult/) |

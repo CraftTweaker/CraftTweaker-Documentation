@@ -1,6 +1,6 @@
-# MinecartInteract
+# Взаимодействие с Minecartact
 
-MinecartInteractEvent is fired whenever a player begins to interact with a minecart. The event is **cancelable**, and doing so will prevent the container from being opened.
+MinecartInteractEvent стреляется, когда игрок начинает взаимодействовать с minecart. Событие **отменено**, и это предотвратит открытие контейнера.
 
 ## Класс события
 You will need to cast the event in the function header as this class:  
@@ -8,7 +8,7 @@ You will need to cast the event in the function header as this class:
 You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
 
 ## Наследование от интерфейсов событий
-MinecartInteract Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+MinecartInteract Events реализуют следующие интерфейсы и могут вызвать все их методы/getters/setters:
 
 - [IMinecartEvent](/Vanilla/Events/Events/IMinecartEvent/)
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
@@ -19,5 +19,5 @@ MinecartInteract Events implement the following interfaces and are able to call 
 | ZenGetter | Тип                                      |
 | --------- | ---------------------------------------- |
 | `player`  | [IPlayer](/Vanilla/Players/IPlayer/)     |
-| `item`    | [IItemStack](/Vanilla/Items/IItemStack/) |
-| `hand`    | String                                   |
+| `элемент` | [IItemStack](/Vanilla/Items/IItemStack/) |
+| `рука`    | String                                   |

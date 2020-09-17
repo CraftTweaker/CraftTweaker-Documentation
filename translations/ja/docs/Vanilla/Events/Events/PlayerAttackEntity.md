@@ -1,30 +1,30 @@
 # PlayerAttackEntity
 
-The PlayerAttackEntity Event is fired whenever a player attacks an Entity.
+プレイヤーがエンティティを攻撃するたびにPlayerAttackEntityイベントが発生します。
 
-## Event Class
+## イベントクラス
 
 You will need to cast the event in the function header as this class:  
 `crafttweaker.event.PlayerAttackEntityEvent`  
 You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
 
-## Event interface extensions
+## イベントインターフェースの拡張
 
-PlayerAttackEntity Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+PlayerAttackEntity Eventsは以下のインターフェイスを実装しており、それらのメソッド/getters/settersもすべて呼び出すことができます。
 
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 - [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
 
 ## ZenGetters
 
-The following information can be retrieved from the event:
+イベントから次の情報を取得できます。
 
-| ZenGetter  | Return Type                           |
-| ---------- | ------------------------------------- |
-| `canceled` | boolean                               |
-| `player`   | [IPlayer](/Vanilla/Players/IPlayer/)  |
-| `entity`   | [IEntity](/Vanilla/Entities/IEntity/) |
+| ZenGetter | 戻り値                                   |
+| --------- | ------------------------------------- |
+| `キャンセル済み` | boolean型                              |
+| `プレイヤー`   | [IPlayer](/Vanilla/Players/IPlayer/)  |
+| `エンティティ`  | [IEntity](/Vanilla/Entities/IEntity/) |
 
 ## ZenMethods
 
-- `event.cancel()` sets the event as cancelled.
+- `event.cancel()` はイベントをキャンセルとして設定します。

@@ -1,35 +1,35 @@
 # Orechid
 
-The Orechid package is used for adding or removing generated ores to/from the Botania Orechid Flowers.
+Orechid パッケージは、Botania Orechid Flowers に生成された鉱石を追加または削除するために使用されます。
 
-## Calling
+## 発信中
 
-You can call the Orechid package using `mods.botania.Orechid`
+`mods.botania.Orechid` を使って Orechid パッケージを呼び出すことができます。
 
-## Find all registered Recipes
+## すべての登録済みのレシピを検索
 
-You can find all registered Orechid recipes using [`/ct botorechid`](/Mods/Modtweaker/Botania/Commands/).
+[`/ct botorechid`](/Mods/Modtweaker/Botania/Commands/) を使用して登録されているすべてのOrechid レシピを見つけることができます。
 
-## Recipe addition
+## レシピの追加
 
-You can either add recipes using the returned [IOreDictEntry](/Vanilla/OreDict/IOreDictEntry/) as output parameter, or the name of said oreDictEntry as string.
+出力パラメータとして [IOreDictEntry](/Vanilla/OreDict/IOreDictEntry/) を使用してレシピを追加するか、または oreDictEntry の名前を文字列として追加できます。
 
 ```zenscript
 //mods.botania.Orechid.addOre(IOreDictEntry oreDict, int weight);
 mods.botania.Orechid.addOre(<ore:logWood>, 500);
 
-//mods.botania.Orechid.addOre(String oreDict, int weight);
+//mods.botania.Orechid.addOre(String oreDict, int weiDict);
 mods.botania.Orechid.addOre("logWood", 500);
 ```
 
-## Recipe removal
+## レシピの削除
 
-You can either remove recipes using the returned [IOreDictEntry](/Vanilla/OreDict/IOreDictEntry/) as output parameter, or the name of said oreDictEntry as string.
+出力パラメータとして [IOreDictEntry](/Vanilla/OreDict/IOreDictEntry/) を使用してレシピを削除するか、文字列として oreDictEntry の名前を使用します。
 
 ```zenscript
 //mods.botania.Orechid.removeOre(IOreDictEntry oreDict);
 mods.botania.Orechid.removeOre(<ore:oreGold>);
 
-//mods.botania.Orechid.removeOre(String oreDict);
-mods.botania.Orechid.removeOre("oreGold");
+//mods.botania.OremoveOre(String oreDict);
+mods.botania.OremoveOre("oreGold");
 ```

@@ -1,64 +1,64 @@
-# Item Transformers
+# Transformatory przedmiotów
 
-Item Transformers transform your crafting inputs upon crafting.  
-This can range from damaging the item up to returning a completely different item.
+Transformatory przedmiotów przekształcają twoje wejścia przy wytwarzaniu.  
+Może to obejmować zarówno uszkodzenie przedmiotu, jak i zwrot zupełnie innego przedmiotu.
 
-## Importing the package
+## Importowanie pakietu
 
-It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
-`import crafttweaker.item.IItemTransformer;`
+Może być wymagane zaimportowanie pakietu, jeśli napotkasz jakiekolwiek problemy (takie jak przesyłanie [Array](/AdvancedFunctions/Arrays_and_Loops/)), tak aby były bezpieczne niż przepraszamy i dodaj import.  
+`zaimportuj crafttweaker.item.IItemTransformer;`
 
 ```zenscript
-<br />val item = <minecraft:apple>;
+<br />Towar walny = <minecraft:apple>;
 
-//Item won't be consumed and will stay in the grid
-transformedItem = item.reuse();
+//Przedmiot nie zostanie zużyty i pozostanie w siatki
+przekształceniePrzedmiot = przedmiot. euse();
 
-//Item won't be consumed and the whole stack will be given back to you (does /give).
+//Przedmiot nie zostanie zużyty, a cały stos zostanie Ci odesłany (robi /give).
 transformedItem = item.giveBack();
 
-//item will be consumed but will give the specified stack to you (the crafting slot will be cleared!).
-transformedItem = item.giveBack(<minecraft:potato>);
+//element zostanie zużyty, ale poda ci określony stos (gniazdo rzemieślnicze zostanie wyczyszczony!).
+element transformacji = element. iveBack(<minecraft:potato>);
 
-//item will be replaced with the specified item, which will instead go to the crafting slot
-transformedItem = item.transformReplace(<minecraft:potato>);
+//przedmiot zostanie zastąpiony określonym przedmiotem, który zamiast tego przejdzie do transformacji
+przedmiot = przedmiot. ransformReplace(<minecraft:potato>);
 
-//damages the item by 1
-transformedItem = item.transformDamage();
+//uszkodza przedmiot przez 1
+transformedItem = element. ransformDamage();
 
-//damages the item by the given value
+//uszkodza element o podanej wartości
 transformedItem = item.transformDamage(3);
 
-//item will be consumed, no matter what.
+//element zostanie zużyty, bez względu na to co się stanie.
 transformedItem = item.noReturn();
 
-//Causes multiple items to be consumed.
-transformedItem = item.transformConsume(3);
+//Powoduje zużycie wielu elementów.
+Element transformedItem = item.transformConsume(3);
 ```
 
-## Registering own item Transformers
+## Rejestrowanie transformatorów własnych produktów
 
-### Transform
+### Przekształć
 
-The old itemTransformer that might cease to exist in 1.13.  
-Thisis a special function that accepts two parameters: The [item](/Vanilla/Items/IItemStack/) itself and the [player](/Vanilla/Players/IPlayer/) performing the crafting.
+Stary Transformator przedmiotów, który może przestać istnieć w 1.13.  
+Strzela specjalną funkcją, która akceptuje dwa parametry: [przedmiot](/Vanilla/Items/IItemStack/) sam w sobie i [gracz](/Vanilla/Players/IPlayer/) wykonujący tworzenie.
 
 ```zenscript
-transformedItem = item.transform(function(item, player) {return item;});
+transformedItem = item.transform(function(element, gracz) {return item;});
 ```
 
-The function needs to return an [IItemStack](/Vanilla/Items/IItemStack/).  
-This stack will replace what's in the crafting slot afterwards. Use `null` to clear that slot.
+Funkcja musi zwrócić [IItemStack](/Vanilla/Items/IItemStack/).  
+Ten stos zastąpi później to, co jest w gniazdzie rzemieślniczym. Użyj `null` , aby wyczyścić to miejsce.
 
-### TransformNew
+### Nowa transformacja
 
-With the new internal recipe system there was a need for a new ItemTransformer. This one only accepts one parameter, that is the item in the slot.
+W nowym wewnętrznym systemie receptur istniała potrzeba nowego Transformatora. Ta jedna akceptuje tylko jeden parametr, to jest pozycję w slocie.
 
 ```zenscript
 transformedItem = item.transformNew(function(item){return item;});
 ```
 
-The function needs to return an [IItemStack](/Vanilla/Items/IItemStack/).  
-Unlike the other transformer however, this will not be the itemstach that replaces the one in the crafting slot, but the one that is returned for that crafting slot.  
-In other words if you return `null` here, one item will be consumed, any other item that is returned will either be placed in the crafting slot, if possible, or given back to you, same as when dealing with buckets.  
-If you don't really need the player variable, this is the transformer to go for!
+Funkcja musi zwrócić [IItemStack](/Vanilla/Items/IItemStack/).  
+W przeciwieństwie do innego transformatora nie będzie to przedmiot zastępujący ten w polu rzemieślniczym, ale ten, który jest zwracany dla tego pola rzemieślniczego.  
+Innymi słowy, jeśli zwrócisz `null` tutaj, jeden przedmiot zostanie zużyty, każdy inny przedmiot, który zostanie zwrócony, zostanie umieszczony w polu rzemieślniczym, jeśli to możliwe, lub odesłać do pacjenta, tak samo jak w przypadku postępowania z wiaderkami.  
+Jeśli naprawdę nie potrzebujesz zmiennej gracza, to jest transformator, na który chcesz iść!

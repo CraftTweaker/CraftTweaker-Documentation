@@ -1,46 +1,46 @@
 # Material Builder
 
-If you want to build a [material](/Mods/ContentTweaker/Materials/Materials/Material/), you will need a Material Builder!  
-Doesn't sound that hard, does it?
+[材料](/Mods/ContentTweaker/Materials/Materials/Material/)を作るには、Material Builderが必要です。  
+難しく聞こえないでしょうか？
 
 ## パッケージのインポート
 
-It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
+問題が発生した場合は、パッケージをインポートする必要があるかもしれませんので、申し訳ありませんし、インポートを追加してください。  
 `import mods.contenttweaker.MaterialBuilder;`
 
-## Retrieving such an object
+## そのようなオブジェクトを取得しています
 
-You can retrieve a new, clear Builder using the [MaterialSystem Package](/Mods/ContentTweaker/Materials/MaterialSystem/):
+[MaterialSystem Package](/Mods/ContentTweaker/Materials/MaterialSystem/) を使用して、新しい明確なビルダーを取得できます。
 
 ```zenscript
 var mBuilder = mods.contenttweaker.MaterialSystem.getMaterialBuilder();
 ```
 
-## Set the Material's Properties
+## 材料のプロパティを設定
 
-You can set these Properties
+これらのプロパティを設定できます。
 
-| ZenMethod               | Parameter                                                        |
+| ZenMethod               | パラメータ                                                            |
 | ----------------------- | ---------------------------------------------------------------- |
-| setName(name)           | string name                                                      |
+| setName(name)           | 文字列名                                                             |
 | setColor(color)         | int color                                                        |
 | setColor(color)         | [CTColor](/Mods/ContentTweaker/Vanilla/Types/Color/Color/) color |
 | setHasEffect(hasEffect) | boolean hasEffect                                                |
 
-All these Methods do 2 things: Firstly, they change the builder's Property, secondly they return the modified builder.  
-You can see in the example scripts below what this means.
+すべてのこれらのメソッドは2つのことを行います: まず、ビルダーのプロパティを変更し、次に修正されたビルダーを返します。  
+この意味を以下に示す例のスクリプトで確認できます。
 
-## Actually build the Material
+## 実際に材料を作る
 
-Before you can build your material, you need to build it:
+材料を作るには、それを作る必要があります。
 
 ```zenscript
 mBuilder.build();
 ```
 
-This returns an [IMaterial](/Mods/ContentTweaker/Materials/Materials/Material/) Object.
+これは [IMaterial](/Mods/ContentTweaker/Materials/Materials/Material/) オブジェクトを返します。
 
-## Example Script
+## スクリプト例
 
 ```zenscript
 import mods.contentTweaker.MaterialSystem;

@@ -1,41 +1,41 @@
-# IMaterial
+# Important
 
-An IMaterial object represents the material a block is made of.
+Un objet IMaterial représente le matériau dont un bloc est composé.
 
-## Importing the package
+## Importation du paquet
 
-It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
-`import crafttweaker.block.IMaterial;`
+Il pourrait vous être nécessaire d'importer le paquet si vous rencontrez des problèmes, donc mieux vaut être sûr que désolé et ajouter l'importation.  
+`importer crafttweaker.block.IMaterial;`
 
-## ZenGetters/ZenMethods without parameters
+## ZenGetters/ZenMethods sans paramètres
 
-| ZenGetter       | ZenMethod           | Return Type |
-| --------------- | ------------------- | ----------- |
-| blocksLight     | blocksLight()       | bool        |
-| blocksMovement  | blocksMovement()    | bool        |
-| canBurn         | getCanBurn()        | bool        |
-| mobilityFlag    | getMobilityFlag()   | string      |
-| liquid          | isLiquid()          | bool        |
-| opaque          | isOpaque()          | bool        |
-| replaceable     | isReplaceable()     | bool        |
-| solid           | isSolid()           | bool        |
-| toolNotRequired | isToolNotRequired() | bool        |
-|                 | setReplaceable()    | IMaterial   |
+| ZenGetter             | Méthode Zen         | Type de retour       |
+| --------------------- | ------------------- | -------------------- |
+| format@@0 blocksLight | blocksLight()       | booléen              |
+| mouvements de blocs   | blocksMovement()    | booléen              |
+| Brûlure               | getCanBurn()        | booléen              |
+| mobilityFlag          | getMobilityFlag()   | chaîne de caractères |
+| liquide               | isLiquid()          | booléen              |
+| opaque                | isOpaque()          | booléen              |
+| remplaçable           | isReplaceable()     | booléen              |
+| solid                 | isSolid()           | booléen              |
+| toolNotRequired       | isToolNotRequired() | booléen              |
+|                       | setReplaceable()    | Important            |
 
-## ZenMethods with parameters
+## Méthodes Zen avec les paramètres
 
-### Check if two IMaterials match
+### Vérifier si deux IMatériaux correspondent
 
-Uses an IMaterial.  
-Returns a bool.
+Utilise un IMatérial.  
+Renvoie un bool.
 
 ```zenscript
-materialObj.matches(IMaterial other);
+materialObj.matches(IMaterial autre) ;
 ```
 
-## Getting Vanilla Minecraft Materials
+## Obtention de matériaux Minecraft Vanilla
 
-You can use these methods to get the vanilla minecraft materials
+Vous pouvez utiliser ces méthodes pour obtenir le minecraft de vanille
 
 ```zenscript
 crafttweaker.blocks.IMaterial.air();
@@ -47,7 +47,7 @@ crafttweaker.blocks.IMaterial.carpet();
 crafttweaker.blocks.IMaterial.circuits();
 crafttweaker.blocks.IMaterial.clay();
 crafttweaker.blocks.IMaterial.cloth();
-crafttweaker.blocks.IMaterial.coral();
+crafttweaker. locks.IMaterial.coral();
 crafttweaker.blocks.IMaterial.craftedSnow();
 crafttweaker.blocks.IMaterial.dragonEgg();
 crafttweaker.blocks.IMaterial.fire();
@@ -56,7 +56,7 @@ crafttweaker.blocks.IMaterial.gourd();
 crafttweaker.blocks.IMaterial.grass();
 crafttweaker.blocks.IMaterial.ground();
 crafttweaker.blocks.IMaterial.ice();
-crafttweaker.blocks.IMaterial.iron();
+crafttweaker. locks.IMaterial.iron();
 crafttweaker.blocks.IMaterial.lava();
 crafttweaker.blocks.IMaterial.leaves();
 crafttweaker.blocks.IMaterial.packedIce();
@@ -64,7 +64,7 @@ crafttweaker.blocks.IMaterial.piston();
 crafttweaker.blocks.IMaterial.plants();
 crafttweaker.blocks.IMaterial.portal();
 crafttweaker.blocks.IMaterial.redstoneLight();
-crafttweaker.blocks.IMaterial.rock();
+crafttweaker.blocks.IMaterial. ock();
 crafttweaker.blocks.IMaterial.sand();
 crafttweaker.blocks.IMaterial.snow();
 crafttweaker.blocks.IMaterial.sponge();

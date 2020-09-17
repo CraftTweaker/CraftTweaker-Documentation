@@ -1,27 +1,27 @@
 # IItemRightClick
 
-The IItemRightClick function can be added to an [Item](/Mods/ContentTweaker/Vanilla/Creatable_Content/Item/) and will be triggered when a user does rightclick with the item selected in his primary hand.
+Die IItemRightClick Funktion kann zu einem [Element](/Mods/ContentTweaker/Vanilla/Creatable_Content/Item/) hinzugefügt werden und wird ausgelöst, wenn ein Benutzer mit dem ausgewählten Element in seiner primären Hand rechtsklickt.
 
 ## Dieses Paket importieren
 
-It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
-`import mods.contenttweaker.IItemRightClick;`
+Es kann erforderlich sein, dass Sie das Paket importieren, wenn Sie irgendwelche Probleme haben. Seien Sie also besser sicher als entschuldigen und fügen Sie den Import hinzu.  
+`importieren mods.contenttweaker.IItemRightClick;`
 
-## Parameters
+## Parameter
 
-The IItemRightClick function is a function with the following parameters:
+Die IItemRightClick Funktion ist eine Funktion mit den folgenden Parametern:
 
-- [IMutableItemStack](/Mods/ContentTweaker/Vanilla/Types/Item/IMutableItemStack/) itemStack → The item that is right-clicked
-- [IWorld](/Mods/ContentTweaker/Vanilla/Types/World/IWorld/) world → The world the player is in
-- [ICTPlayer](/Mods/ContentTweaker/Vanilla/Types/Player/ICTPlayer/) player → The player doing the right-click
-- String hand → Either "OFF_HAND" or "MAIN_HAND"
+- [IMutableItemStack](/Mods/ContentTweaker/Vanilla/Types/Item/IMutableItemStack/) itemStack → Das Element, das mit der rechten Maustaste geklickt wird
+- [IWorld](/Mods/ContentTweaker/Vanilla/Types/World/IWorld/) Welt → Die Welt, in der der Spieler ist
+- [ICTPlayer](/Mods/ContentTweaker/Vanilla/Types/Player/ICTPlayer/) Spieler → Der Spieler, der den Rechtsklick macht
+- String Hand → Entweder "OFF_HAND" oder "MAIN_HAND"
 
-The function needs to return either `"SUCCESS"`, `"PASS"` or `"FAIL"`
+Die Funktion muss entweder `"SUCCESS"`, `"PASS"` oder `"FEHLER"` zurückgeben
 
 ## Beispiel
 
 ```zenscript
-zsItem.itemRightClick = function(stack, world, player, hand) {
+zsItem.itemRightClick = function(stack, world player, player, hand) {
     Commands.call("scoreboard players set @p name 5", player, world);
     return "Pass";
 };

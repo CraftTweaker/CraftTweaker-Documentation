@@ -1,44 +1,44 @@
-# Centrifugal Seperator
+# Центрифужный сепаратор
 
-## Package
+## Пакет
 
 `mods.thermalexpansion.Centrifuge`
 
-## Addition
+## Сложение
 
 ```zenscript
-//mods.thermalexpansion.Centrifuge.addRecipe(WeightedItemStack[] outputs, IItemStack input, ILiquidStack fluid, int energy);
-mods.thermalexpansion.Centrifuge.addRecipe([(<minecraft:gold_ingot> * 5) % 10, <minecraft:iron_ingot> % 50], <minecraft:gold_ore>, <liquid:lava>, 2000);
+//mods.thermalexpansion.Centri<unk> .addRecipe(WeightedItemStack[] outputs, IItemStack input, ILiquidStack fluid, int energy);
+mods.thermalexpansion.Centri<unk> .addRecipe([(<minecraft:gold_ingot> * 5) % 10, <minecraft:iron_ingot> % 50], <minecraft:gold_ore>, <liquid:lava>;
 
 ```
 
-## Mob addition
+## Добавление мобов
 
-`fluid` can be null, in which case the default Thermal Expansion experience liquid will be used, the amount calculated from the `xp` field using the default `XP_TO_MB` constant from Thermal Expansion. When using a custom liquid, the `xp` field is ignored.
+`жидкость` может быть нулевым, в этом случае будет использовано терморасширение по умолчанию, сумма, рассчитанная на основе поля `xp` с использованием константы по умолчанию `XP_TO_MB` из термоExpansion. При использовании пользовательской жидкости поле `xp` игнорируется.
 
-**No custom fluid**:
+**Нет пользовательской жидкости**:
 
 ```zenscript
-//mods.thermalexpansion.Centrifuge.addRecipeMob(IEntityDefinition entity, WeightedItemStack[] outputs, @Nullable ILiquidStack fluid, int energy, int xp);
-mods.thermalexpansion.Centrifuge.addRecipeMob(<entity:minecraft:slime>, [<minecraft:clay_ball>%50, <minecraft:ghast_tear>%10], null, 2000, 5);
+//mods.thermalexpansion.Centri<unk> .addRecipeMob(IEntityDefinition entity, WeightedItemStack[] выводит следующие данные: @Nullable ILiquidStack fluid, int energy, int xp);
+mods.thermalexpansion.Centri<unk> .addRecipeMob(<entity:minecraft:slime>, [<minecraft:clay_ball>%50, <minecraft:ghast_tear>%10], null, 2000, 5);
 ```
 
-**Custom fluid**:
+**Пользовательская жидкость**:
 
 ```zenscript
-mods.thermalexpansion.Centrifuge.addRecipeMob(<entity:minecraft:slime>, [<minecraft:gunpowder>%100], <liquid:lava>*20, 2000, 0);
+mods.thermalexpansion.Centri<unk> .addRecipeMob(<entity:minecraft:slime>, [<minecraft:gunpowder>%100], <liquid:lava>*20, 2000, 0);
 ```
 
-## Removal
+## Удаление
 
 ```zenscript
-//mods.thermalexpansion.Centrifuge.removeRecipe(IItemStack input);
-mods.thermalexpansion.Centrifuge.removeRecipe(<minecraft:gold_ore>);
+//mods.thermalexpansion.Centri<unk> .removeRecipe(IItemStack);
+mods.thermalexpansion.Centri<unk> .removeRecipe(<minecraft:gold_ore>);
 ```
 
-## Mob removal
+## Удаление мобов
 
 ```zenscript
-//mods.thermalexpansion.Centrifuge.removeRecipeMob(IEntityDefinition entity);
-mods.thermalexpansion.Centrifuge.removeRecipeMob(<entity:minecraft:slime>);
+//mods.thermalexpansion.Centri<unk> .removeRecipeMob(IEntityDefinition entity);
+mods.thermalexpansion.Centri<unk> .removeRecipeMob(<entity:minecraft:slime>);
 ```

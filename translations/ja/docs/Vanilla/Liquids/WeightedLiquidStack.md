@@ -8,9 +8,9 @@ You normally use them when dealing with percentage based actions like drops or s
 It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
 `import crafttweaker.item.WeightedLiquidStack;`
 
-## Calling a weightedLiquidStack
+## weitedLiquidStackの呼び出し
 
-You can derive a weightedLiquidStack from an [ILiquidStack](/Vanilla/Liquids/ILiquidStack/) by either using the modulo operator or the weight function on it.
+weightedLiquidStack を [ILiquidStack](/Vanilla/Liquids/ILiquidStack/) から派生するには、モジュロ演算子またはその上に重み関数を使用します。
 
 ```zenscript
 val liquidStack = <liquid:lava>;
@@ -22,8 +22,8 @@ val wLiquidStack2 = liquidStack.weight(0.2);
 
 ## ZenGetters
 
-| ZenGetter | What does it do                                      | Return Type                                    |
-| --------- | ---------------------------------------------------- | ---------------------------------------------- |
-| stack     | Returns the associated LiquidStack                   | [ILiquidStack](/Vanilla/Liquids/ILiquidStack/) |
-| chance    | Returns the stack's chance as decimal (e.g. 0.2)     | float                                          |
-| percent   | Returns the stack's chance as percentage (e.g. 20.0) | float型                                         |
+| ZenGetter | 何をするか                      | Return Type                                    |
+| --------- | -------------------------- | ---------------------------------------------- |
+| スタック      | 関連する LiquidStack を返します。    | [ILiquidStack](/Vanilla/Liquids/ILiquidStack/) |
+| チャンス      | スタックの確率を小数で返します(例: 0.2)    | float型                                         |
+| パーセント     | スタックの確率をパーセントで返します（例：20.0） | float型                                         |

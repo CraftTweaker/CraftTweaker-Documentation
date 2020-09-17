@@ -1,13 +1,13 @@
-# Attack Damage Locking
+# 攻撃ダメージロック
 
-## Feature:
+## 機能:
 
-This feature locks the ability for the player to use a weapon/tool with an attack damage value equal to or greater than the set amount. This means like in the example below, any weapon with Attack Damage 0.75 or greater will only be useable in the end.
+この機能は、プレイヤーが一定量以上の攻撃ダメージを与える武器/ツールを使用する能力をロックします。 これは以下の例のように、攻撃ダメージ0.75以上の武器は最終的にのみ使用できます。
 
 For reference: 1 Damage = 0.5 Hearts You can see a quick reference guide to damage under [This Link](https://minecraft.gamepedia.com/Damage#Dealing_damage)
 
-## Syntax:
+## 構文
 
-    mods.compatskills.DamageLock.addDamageLock(double damage, String... requirements);
+    mods.compatskills.DamageLock.addDamageLock(二重ダメージ, 文字列... 要件);
     
     mods.compatskills.DamageLock.addDamageLock(0.75, "dim|1");

@@ -1,10 +1,10 @@
-# Packmode Command
+# Команда пакетного режима
 
-## Calling
+## Звонок
 
-You call the Command using `/packmode newMode` with `newMode` being the name of the new packMode
+Вы вызываете команду, используя `/packmode newMode` при помощи `newMode` как имя нового packMode
 
-## Usage
+## Использование
 
-You use the command to set your game's packmode.  
-Please note that you will need to restart your game in order for the changes to occur!
+Вы используете команду, чтобы установить пакет игры.  
+Обратите внимание, что вам нужно будет перезапустить игру, чтобы изменения вступили в силу!

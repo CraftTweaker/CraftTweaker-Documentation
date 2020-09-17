@@ -1,18 +1,18 @@
-# Semi-Fluid Generator
+# 半流体生成器
 
 ## 所属包名
 
-`import mods.ic2.SemiFluidGenerator;`
+`导入 mods.ic2.SemiFluidGenerator;`
 
-## Methods
+## 方法
 
-- **[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) liquid** The liquid which can be used as fuel in semi-fluid generator
-- **double powerOutput** The power output, measured in EU/tick
+- **[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) 液体** 液体可以用作半液体发电机燃料的
+- **双电源输出** 电源输出，以欧盟/刻度
 
-## Add Fluid
+## 添加流体
 
 ```zenscript
-mods.ic2.SemiFluidGenerator.addFluid(ILiquidStack liquid, double powerOutput;
+mods.ic2.SemiFluidGenerator.addFluid(ILiquidStack 液体，双能输出；
 
 mods.ic2.SemiFluidGenerator.addFluid(<liquid:water>, 2333.0D);
 ```

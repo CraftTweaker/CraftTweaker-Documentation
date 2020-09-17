@@ -28,8 +28,11 @@ mods.MobStages.addRange("minecraft:zombie", 32);
 Allows for spawners to override the stage check. The default is false. If set to true, spawners will work for this mob, even if there are no valid players.
 
 ```zenscript
-// mods.MobStages.toggleSpawners(String entityId, boolean allow);
-mods.MobStages.toggleSpawners("minecraft:zombie", true);
+// mods.MobStages.toggleSpawner(String entityId, boolean allow);
+mods.MobStages.toggleSpawner("minecraft:zombie", true);
+
+// mods.MobStages.toggleSpawner(String entityId, boolean allow, int dimension);
+mods.MobStages.toggleSpawner("minecraft:zombie", true, -1);
 ```
 
 ## Dimension Specific Options

@@ -1,53 +1,53 @@
-# Creative Tab
+# Karta Kreatywna
 
-This allows you to add Creative Tabs to the game!
+Pozwala to na dodawanie kreatywnych kart do gry!
 
-## Creating the ICreativeTab object
+## Tworzenie obiektu ICreativeTab
 
-Before you can add the tab, you need to create a representation which will allow you to set the properties of the tab you want to add.  
-This is where the [VanillaFactory](/Mods/ContentTweaker/Vanilla/Creatable_Content/VanillaFactory/) comes in:
+Zanim będziesz mógł dodać kartę, musisz utworzyć reprezentację, która pozwoli ustawić właściwości zakładki, którą chcesz dodać.  
+To gdzie znajduje się [VanillaFactory](/Mods/ContentTweaker/Vanilla/Creatable_Content/VanillaFactory/) w:
 
 ```zenscript
 mods.contenttweaker.VanillaFactory.createCreativeTab(String unlocalizedName, IItemStack iItemStack);
-mods.contenttweaker.VanillaFactory.createCreativeTab(String unlocalizedName, ItemRepresentation iItem);
+mods.contenttweaker.VanillaFactory.createCreativeTab(String unlocalizedName, Item)
 mods.contenttweaker.VanillaFactory.createCreativeTab(String unlocalizedName, BlockRepresentation iBlock);
 mods.contenttweaker.VanillaFactory.createCreativeTab(String unlocalizedName, IItemStackSupplier supplier);
 ```
 
-The String is in each of the three methods the same: It's the unlocalized name the Tab will later have.  
-The second parameter is the symbol your tab will carry later on (e.g. a lava bucket for "misc").  
-You can decide wheter you want to use an itemRepresentation, an itemStack, a blockrepresentation or an itemStackSupplier function.
+Ciąg znaków jest w każdej z trzech metod identyczny: jest to niezlokalizowana nazwa, którą będzie później miała zakładka.  
+Drugim parametrem jest symbol, na którym karta będzie się znajdować później (e. . wiadro lawy dla "miski").  
+Możesz zdecydować, kogo chcesz użyć reprezentacji przedmiotu, stołu elementów, prezentacji blokowej lub funkcji itemStackSupplier.
 
-## Calling an existing ICreativeTab object
+## Wywołanie istniejącego obiektu ICreativeTab
 
-You can also call an [existing creative](/Mods/ContentTweaker/Vanilla/Brackets/Bracket_Creative_Tab/) tab, though you cannot change any of it's properties.  
-Why would you need this, you ask?  
-You will need this if you want to add a newly created block or item to an existing tab!
+Możesz również wywołać [istniejącą kartę kreatywną](/Mods/ContentTweaker/Vanilla/Brackets/Bracket_Creative_Tab/) , chociaż nie możesz zmienić żadnej z jej właściwości.  
+Dlaczego to potrzebujesz, pytasz?  
+Będziesz tego potrzebował jeśli chcesz dodać nowo utworzony blok lub element do istniejącej karty!
 
-## Properties
+## Właściwości
 
-You can call and set all these properties using the normal ZenGetters and ZenSetters  
-`tab.unlocalizedName = "hh";`  
-Note that you will probably hardly ever need the Setters as these Properties are already initialized to your wanted values when you create the ICreativeTab object.  
-Also, you can neither set nor get properties from an existing ICreativeTab(one that you retrieved using the [Bracket handler](/Mods/ContentTweaker/Vanilla/Brackets/Bracket_Creative_Tab/))!
+Możesz dzwonić i ustawić wszystkie te właściwości za pomocą zwykłej karty ZenGetters i ZenSetters  
+`. nlocalizedName = "hh";`  
+Zauważ, że prawdopodobnie nie będziesz potrzebował Ustawień, ponieważ te właściwości są już inicjowane do twoich pożądanych wartości podczas tworzenia obiektu ICreativeTab.  
+Także nie możesz ustawić ani uzyskać właściwości z istniejącej ICreativeTab(takich, które pobrałeś za pomocą [Bracket handler](/Mods/ContentTweaker/Vanilla/Brackets/Bracket_Creative_Tab/))!
 
-| Property Name     | Type                                                                                                    | Required | Default Value | Description/Notes       |
-| ----------------- | ------------------------------------------------------------------------------------------------------- | -------- | ------------- | ----------------------- |
-| unlocalizedName   | string                                                                                                  | YES      |               | The Creative Tab's name |
-| iconStack         | [IItemStack](/Vanilla/Items/IItemStack/)                                                                | YES/NO   |               | The Creative Tab's icon |
-| iconStackSupplier | [IItemStackSupplier](/Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemStackSupplier/) | NO/YES   | null          | Determines something?   |
+| Nazwa Właściwości | Typ                                                                                                     | Wymagane | Wartość domyślna | Opis/Uwagi                    |
+| ----------------- | ------------------------------------------------------------------------------------------------------- | -------- | ---------------- | ----------------------------- |
+| unlocalizedName   | ciąg znaków                                                                                             | TAK      |                  | Nazwa karty „Kreatywna karta” |
+| stos ikon         | [IItemStack](/Vanilla/Items/IItemStack/)                                                                | TAK/NIE  |                  | Ikona karty Creative          |
+| iconStackSupplier | [IItemStackSupplier](/Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemStackSupplier/) | NIE/TAK  | null             | Określa coś?                  |
 
-## Registering the creative tab
+## Rejestrowanie kreatywnej karty
 
-You need to call this method to register the creative Tab in the game!  
-Otherwise nothing will happen!  
-After you have called this function, you cannot un-register the tab or change any of it's properties!
+Musisz wywołać tę metodę, aby zarejestrować kreatywną kartę w grze!  
+W przeciwnym razie nic się nie stanie!  
+Po wywołaniu tej funkcji nie możesz wyrejestrować karty ani zmieniać jej właściwości!
 
 ```zenscript
 tab.register();
 ```
 
-## Example Script
+## Przykładowy skrypt
 
 ```zenscript
 #loader contenttweaker

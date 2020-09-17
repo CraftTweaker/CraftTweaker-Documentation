@@ -1,6 +1,6 @@
-# PlayerRightClickItem
+# Элемент правого клика игрока
 
-The PlayerRightClickItem Event is fired shortly before an item's functionality is fired. It is not fired if the player is targetting a block or entity. It can be canceled to prevent any other events from taking place. If the event is canceled, a specific result of allow, deny, or pass can be provided. By default, the result is pass.
+Событие Элемент Игрока запускается незадолго до запуска предмета. Не увольняется, если игрок затухает блок или сущность. Это может быть отменено, чтобы предотвратить любые другие события. Если событие отменено, может быть предоставлен конкретный результат разрешения, запретить или пропустить событие. По умолчанию, результат выгружается.
 
 ## Класс события
 You will need to cast the event in the function header as this class:  
@@ -8,14 +8,14 @@ You will need to cast the event in the function header as this class:
 You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
 
 ## Наследование от интерфейсов событий
-PlayerRightClickItem Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+События PlayerRightClickItem реализуют следующие интерфейсы и также могут вызвать все методы/getters/setters:
 
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
-- [PlayerInteract](/Vanilla/Events/Events/PlayerInteract/)
+- [Взаимодействие игрока](/Vanilla/Events/Events/PlayerInteract/)
 
 ## ZenGetters & ZenSetters
-The following information can be adjusted in the event.
+На мероприятии можно скорректировать следующую информацию.
 
-| ZenGetter            | ZenSetter            | type                                  |
-| -------------------- | -------------------- | ------------------------------------- |
-| `cancellationResult` | `cancellationResult` | string ("allow" / "deny" / "default") |
+| ZenGetter          | ZenSetter          | type                                  |
+| ------------------ | ------------------ | ------------------------------------- |
+| `Результат отмены` | `Результат отмены` | строка ("allow" / "deny" / "default") |

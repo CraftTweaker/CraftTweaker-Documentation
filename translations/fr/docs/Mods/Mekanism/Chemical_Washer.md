@@ -1,8 +1,8 @@
-# Chemical Washer
+# Décasseur chimique
 
-As of Mekanism 9.7.0 it is now possible to view all recipe strings of the Chemical Washer through the command `/ct mekrecipes washer`
+Depuis le Mékanisme 9.7.0, il est maintenant possible de voir toutes les chaînes de recettes du Détergent Chimique à travers la commande `/ct mekrecipes washer`
 
-## Addition
+## Ajouter
 
 ```zenscript
 mods.mekanism.chemical.washer.addRecipe(IGasStack inputGas, IGasStack outputGas);
@@ -10,20 +10,20 @@ mods.mekanism.chemical.washer.addRecipe(IGasStack inputGas, IGasStack outputGas)
 mods.mekanism.chemical.washer.addRecipe(<gas:deuterium>, <gas:tritium>);
 ```
 
-## Removal
+## Retirer
 
 ```zenscript
-mods.mekanism.chemical.washer.removeRecipe(IIngredient outputGas, @Optional IIngredient inputGas);
+mods.mekanism.chemical.washer.removeRecipe(IIngredient outputGas, @Optional Igredient inputGas);
 
 mods.mekanism.chemical.washer.removeRecipe(<gas:cleanLead>, <gas:lead>);
 mods.mekanism.chemical.washer.removeRecipe(<gas:cleanOsmium>);
 ```
 
-Specifying an input parameter will only remove the specific recipe that uses said input. Omitting the input parameter will remove all recipes that produce the specified output.
+Spécifier un paramètre d'entrée ne supprimera que la recette spécifique qui utilise cette entrée. L'omission du paramètre d'entrée supprimera toutes les recettes qui produisent la sortie spécifiée.
 
-## Removing all recipes
+## Suppression de toutes les recettes
 
-As of Mekanism 9.7.0 it is now possible to remove all Chemical Washer recipes. (This excludes any recipes added via CraftTweaker)
+Depuis le Mékanisme 9.7.0, il est maintenant possible de supprimer toutes les recettes de Washer chimiques. (Ceci exclut toutes les recettes ajoutées via CraftTweaker)
 
 ```zenscript
 mods.mekanism.chemical.washer.removeAllRecipes();

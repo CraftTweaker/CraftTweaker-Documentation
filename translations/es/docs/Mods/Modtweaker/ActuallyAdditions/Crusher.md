@@ -1,19 +1,19 @@
-# Crusher
+# Triturador
 
-## Package
+## Paquete
 
-`mods.actuallyadditions.Crusher`
+`mods.actuallyadditions.Trusher`
 
-## Addition
+## Adicional
 
 ```zenscript
-//mods.actuallyadditions.Crusher.addRecipe(IItemStack output, IItemStack input, @Optional IItemStack outputSecondary, @Optional int outputSecondaryChance);
+//mods.actuallyadditions.Crusher.addRecipe(Salida de ItemStack, entrada de ItemStack ItemStack, @Optional ItemStack outputSegundary, @Optional int outputseconddaryChance);
 mods.actuallyadditions.Crusher.addRecipe(<minecraft:iron_ingot>, <minecraft:iron_ore>, <minecraft:stone>, 50);
 ```
 
-## Removal
+## Eliminar
 
 ```zenscript
-//mods.actuallyadditions.Crusher.removeRecipe(IItemStack output);
+//mods.actuallyadditions.Crusher.removeRecipe(salida ItemStack);
 mods.actuallyadditions.Crusher.removeRecipe(<minecraft:gold_ore>);
 ```

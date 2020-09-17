@@ -1,16 +1,16 @@
-# Chemical Reactor
+# 化学リアクタ
 
-## Importing the Package
-`mods.nuclearcraft.chemical_reactor`
+## パッケージのインポート
+`mods.nuclecraft.chemical_reactor`
 
-## Adding Recipes
+## レシピを追加中
 ```zenscript
-mods.nuclearcraft.chemical_reactor.addRecipe([fluidInput1, fluidInput2, fluidOutput1, fluidOutput2, @Optional double timeMultiplier, @Optional double powerMultiplier, @Optional double processRadiation]);
+mods.nuclearcraft.chemical_reactor.addRecipe([fluidInput1, fluidInput2, fluidOutput1, fluidOutput2, @Optional double timeMultiplier, @Optional door processRadiation]);
 ```
 
-## Removing Recipes
+## レシピを削除
 ```zenscript
-mods.nuclearcraft.chemical_reactor.removeRecipeWithInput([fluidInput1, fluidInput2]);
-mods.nuclearcraft.chemical_reactor.removeRecipeWithOutput([fluidOutput1, fluidOutput2]);
-mods.nuclearcraft.chemical_reactor.removeAllRecipes();
+mods.nuclearcraft.chemical_removeRecipeWithInput([fluidInput1, fluidInput2]);
+mods.nuclecraft.chemical_removeRecipeWithOutput([fluidOutput1, fluidOutput2]);
+mods.nuclecraft.chemical_reactor.removeAllRecipes();
 ```

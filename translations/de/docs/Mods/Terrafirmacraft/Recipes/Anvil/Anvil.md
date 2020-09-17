@@ -1,24 +1,24 @@
-# Anvil
+# Amboss
 
-## Package
+## Paket
 ```zenscript
-import mods.terrafirmacraft.Anvil;
+importieren Sie mods.terrafirmacraft.Amboss;
 ```
 
 ## Addition
 
 ```zenscript
-Anvil.addRecipe(String registryName, IIngredient input, IItemStack output, int minTier, String skillType, String... forgeRules);
+Anvil.addRecipe(String RegistryName, IIngredient Input, IItemStack Output, int minTier, String skillType, String... forgeRules);
 ```
-- Input can't be stacked. Anvils only accept one item per slot.
-- input must be forgeable (please refer to [ItemRegistry](/Mods/Terrafirmacraft/ItemRegistry) for registering forging capability to an item).
-- Tiers are 0 = Stone, 1 = Copper, 2 = Bronze, 3 = Wrought Iron, 4 = Steel, 5 = Black Steel and 6 = Red/Blue Steel.
-- Skill type is what category of skill the forging should contribute to. Valid entries are `general`, `tools`, `weapons`, `armor`, or null. If the skill type is `tools`, `weapons`, or `armor` then the result item will have a skill bonus applied to it.
-- A recipe must have 1, 2 or 3 rules. Rules consist of a type (`HIT`, `DRAW`, `PUNCH`, `BEND`, `UPSET`, or `SHRINK`), followed by an order (`ANY`, `NOT_LAST`, `LAST`, `SECOND_LAST`, `THIRD_LAST`), separated by an underscore. As example, `HIT_ANY`, `DRAW_SECOND_LAST`, and `UPSET_NOT_LAST` are valid rule names.
+- Eingabe kann nicht gestapelt werden. Anhänge akzeptieren nur einen Artikel pro Slot.
+- die Eingabe muss vergessen sein (bitte lesen Sie [ItemRegistry](/Mods/Terrafirmacraft/ItemRegistry) um die Schmiedefähigkeit zu einem Element zu registrieren).
+- Stufen sind 0 = Stein, 1 = Kupfer, 2 = Bronze, 3 = Schmiedeeisen, 4 = Stahl, 5 = Schwarzer Stahl und 6 = Roter /Blauer Stahl.
+- Fähigkeitstyp ist die Kategorie der Fähigkeiten, zu der die Schmiede beitragen sollte. Gültige Einträge sind `General`, `Werkzeuge`, `Waffen`, `Rüstung`oder null. Wenn der Fertigkeitstyp `Werkzeuge ist`, `Waffen`, oder `Rüstung` dann wird der Fertigkeitsbonus auf das Item angewendet.
+- Ein Rezept muss 1, 2 oder 3 Regeln haben. Regeln bestehen aus einem Typ (`HIT`, `DRAW`, `PUNCH`, `BENDEN`, `UPSET`, oder `SHRINK`), gefolgt von einer Bestellung (`JEDE`, `NOT_LAST`, `LAST`, `SECOND_LAST`, `THIRD_LAST`), getrennt durch einen Unterstrich. Zum Beispiel `HIT_ANY`, `DRAW_SECOND_LAST`und `UPSET_NOT_LAST` sind gültige Regelnamen.
 
-## Removal
+## Entfernen
 
 ```zenscript
-Anvil.removeRecipe(IItemStack output);
-Anvil.removeRecipe(String registryName);
+Anvil.removeRecipe(IItemStack Ausgabe);
+Anvil.removeRecipe(String RegistryName);
 ```

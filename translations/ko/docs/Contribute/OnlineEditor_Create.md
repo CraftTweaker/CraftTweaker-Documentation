@@ -4,7 +4,7 @@
 
 You will need to have created a GitHub account and [forked the wiki to your account](/Contribute/SetupGithub).
 
-## Introduction
+## 소개
 
 GitHub's online editor allows you to change and create files using nothing but your browser.  
 It may not be as versatile as [using a local copy](/Contribute/LocalClone/CreateCommit/) but you don't need to worry about [setting up git](/Contribute/LocalClone/InstallingGit/) and all.

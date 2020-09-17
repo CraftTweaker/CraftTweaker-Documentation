@@ -1,19 +1,19 @@
 # ISoundEventDefinition
 
-An ISoundEventDefinition object represents a sound event in the game. A sound event is triggered when a sound is about to be played.
+一个 ISoundEventDefine 对象代表游戏中的一个声音事件。 声音将在播放时触发。
 
-## Importing the package
+## 导入相关包
 
-It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
-`import mods.contenttweaker.SoundEvent;`
+如果您遇到任何问题，可能需要导入软件包，所以比抱歉更安全并添加导入。  
+`导入 mods.contenttweaker.SoundEvent;`
 
-## Calling an ISoundEventDefinition object
+## 调用 ISoundEventDefinition 对象
 
-You can get such an object using the [Sound Event Bracket Handler](/Mods/ContentTweaker/Vanilla/Brackets/Bracket_Sound_Event/):  
+您可以使用 [声音事件处理器](/Mods/ContentTweaker/Vanilla/Brackets/Bracket_Sound_Event/)获取这样一个对象：  
 `<soundevent:ambient.cave>`
 
-## ZenMethods without parameters
+## ZenMethods 没有参数
 
-| ZenMethod      | Return type | Definition                       |
-| -------------- | ----------- | -------------------------------- |
-| getSoundName() | String      | Returns the event's sound's name |
+| ZenMethod（ZenMethod） | 退货类型        | 定 义       |
+| -------------------- | ----------- | --------- |
+| getSoundName()       | 字符串[string] | 返回事件声音的名称 |

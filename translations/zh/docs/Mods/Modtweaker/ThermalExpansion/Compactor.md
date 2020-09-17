@@ -2,100 +2,100 @@
 
 ## 所属包名
 
-`mods.thermalexpansion.Compactor`
+`模组.thermalext.Compactor`
 
-The compactor supports 4 types of modifiers:
+协约支持4种类型的修饰符：
 
     Mint
-    Press
-    Storage
+    按
+    存储
     Gear
     
 
 ## 货币铸造
 
-The Mint modifier changes the recipes registered in the `COIN` recipe map in Thermal Expansion.
+Mint 修饰器更改了在 `COIN` 配方图中注册的配方。
 
-Note that these recipes require the Numismatic Press Augment.
+请注意，这些配方需要数字新闻增强功能。
 
 ### 添加配方
 
 ```zenscript
-mods.thermalexpansion.Compactor.addMintRecipe(IItemStack output, IItemStack input, int energy);
+mods.thermallipl.Compactor.addMintRecipe(IItemStack output, IItemStack input, int energy);
 
-mods.thermalexpansion.Compactor.addMintRecipe(<minecraft:sand>, <minecraft:stick>, 1500);
+mods.thermalex.Compactor.addMintRecipe(<minecraft:sand>, <minecraft:stick>, 1500);
 ```
 
 ### 删除配方
 
 ```zenscript
-mods.thermalexpansion.Compactor.removeMintRecipe(IItemStack input);
+mods.thermalext.Compactor.removeMintRecipe(IItemStack 输入);
 
-mods.thermalexpansion.Compactor.removeMintRecipe(<thermalfoundation:material:167>);
+mods.thermalabove.Compactor.removeMintRecipe(<thermalfoundation:material:167>);
 ```
 
-## Press
+## 新闻社
 
-The Press modifier changes the recipes not registered in the `PLATE`, `COIN`, or `GEAR` recipe maps in Thermal Expansion.
+按键修饰器更改了未在 `PLATE`中注册的配方 `COIN`, 或 `GEAR` 配方地图，热扩展。
 
-These recipes do not require a specific Augment.
+这些配方不需要特定的增值。
 
 ### 添加配方
 
 ```zenscript
-mods.thermalexpansion.Compactor.addPressRecipe(IItemStack output, IItemStack input, int energy);
+mods.thermalext.Compactor.Compactor.addPressRecipe(IItemStack output, IItemStack input, int energy);
 
-mods.thermalexpansion.Compactor.addPressRecipe(<minecraft:sand>, <minecraft:apple>, 1500);
+mods.thermalex.Compactor.addPressRecipe(<minecraft:sand>, <minecraft:apple>, 1500);
 ```
 
 ### 删除配方
 
 ```zenscript
-mods.thermalexpansion.Compactor.removePressRecipe(IItemStack input);
+mods.thermalext.Compactor.removePressRecipe(IItemStack input);
 
-mods.thermalexpansion.Compactor.removePressRecipe(<thermalfoundation:material:167>);
+mods.thermalexplan.Compactor.removePressRecipe(<thermalfoundation:material:167>);
 ```
 
-## Storage
+## 存储
 
-The Storage modifier changes the recipes registered in the `PLATE` recipe map in Thermal Expansion.
+存储修饰器更改了在 `PLATE` 配方图中注册的配方。
 
-These recipes do not require a specific Augment, and seemingly are used only for plates.
+这些配方不需要特定的增强，似乎只用于车牌。
 
 ### 添加配方
 
 ```zenscript
-mods.thermalexpansion.Compactor.addStorageRecipe(IItemStack output, IItemStack input, int energy);
+mods.thermalext.Compactor.Compactor.addStorageRecipe(IItemStack output, IItemStack input, int energy);
 
-mods.thermalexpansion.Compactor.addStorageRecipe(<minecraft:sand>, <minecraft:arrow>, 1500);
+mods.thermalex.Compactor.addStorageRecipe(<minecraft:sand>, <minecraft:arrow>, 1500);
 ```
 
 ### 删除配方
 
 ```zenscript
-mods.thermalexpansion.Compactor.removeStorageRecipe(IItemStack input);
+mods.thermallipl.Compactor.removeStorageRecipe(IItemStack 输入);
 
-mods.thermalexpansion.Compactor.removeStorageRecipe(<thermalfoundation:material:167>);
+mods.thermalabove.Compactor.removeStorageRecipe(<thermalfoundation:material:167>);
 ```
 
 ## 齿轮制作
 
-The Gear modifier changes the recipes registered in the `GEAR` recipe map in Thermal Expansion.
+Gear 修饰器更改了在 `GEAR` 配方图中注册的配方。
 
-Note that these recipes require the Gearworking Die Augment.
+请注意，这些配方需要Gearworking Die August。
 
 ### 添加配方
 
 ```zenscript
-mods.thermalexpansion.Compactor.addGearRecipe(IItemStack output, IItemStack input, int energy);
+mods.thermallipl.Compactor.addGearRecipe(IItemStack output, IItemStack input, int energy);
 
-mods.thermalexpansion.Compactor.addGearRecipe(<minecraft:sand>, <minecraft:arrow>, 1500);
+mods.thermalext.Compactor.addGearRecipe(<minecraft:sand>, <minecraft:arrow>, 1500);
 ```
 
 ### 删除配方
 
 ```zenscript
-mods.thermalexpansion.Compactor.removeGearRecipe(IItemStack input);
+mods.thermallipl.Compactor.removeGearRecipe(IItemStack 输入);
 
-mods.thermalexpansion.Compactor.removeGearRecipe(<thermalfoundation:material:167>);
+mods.thermalabove.Compactor.removeGearRecipe(<thermalfoundation:material:167>);
 ```

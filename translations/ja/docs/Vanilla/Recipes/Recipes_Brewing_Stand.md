@@ -1,18 +1,18 @@
 # Brewing Recipe Handler
 
-## Access the Brewing Handler
+## 醸造所のハンドラーにアクセス
 
-You can access the Brewing Handler using the `brewing` [global keyword](/Vanilla/Global_Functions/).
+`brewing` [global キーワード](/Vanilla/Global_Functions/) を使用して、醸造用ハンドラーにアクセスできます。
 
-## Recipe Methods
+## レシピメソッド
 
-A Brewing Recipe consists of 3 Parts:
+醸造レシピは3つのパートから構成されています:
 
-1. An Input (What is in the 3 "Bottle Slots")
-2. One or more possible Ingredients (What can go into the upper slot where netherwart goes)
-3. The output (What the recipe returns)
+1. 入力（3つの「ボトルスロット」にあるもの）
+2. 1 つ以上の可能な材料 (ネザーワートが行く上部のスロットに入るもの)
+3. 出力 (レシピが何を返すか)
 
-### Add Brewing Recipes
+### 醸造レシピを追加
 
 ```zenscript
 //brewing.addBrew(IIngredient input, IIngredient ingredient, IItemStack output, @Optional boolean hidden);
@@ -25,11 +25,11 @@ brewing.addBrew(<minecraft:bedrock>, [<minecraft:lapis_ore>], <minecraft:sponge:
 brewing.addBrew(<minecraft:gold_block>, [<minecraft:iron_block>, <minecraft:lapis_block>], <minecraft:sponge:1>, true);
 ```
 
-### Remove Brewing Recipes
+### 醸造レシピを削除
 
-Only works with JEI version 4.15.0.275 or higher.
+JEIバージョン4.15.0.275以降でのみ動作します。
 
 ```zenscript
-//brewing.removeRecipe(IItemStack input, IItemStack ingredient);
+//brewing.removeRecipe(IItemStack input, IItemStack input);
 brewing.removeRecipe(<minecraft:potion>.withTag({Potion: "minecraft:water"}), <minecraft:gunpowder>);
 ```

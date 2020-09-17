@@ -1,17 +1,17 @@
-# Magneticraft
+# 磁力合成器
 
-## Explaination:
+## 解释：
 
-Magneticraft Support currently consists of:
+磁力学支持目前包括：
 
-- A Command for dumping the string name of all Magneticraft Multiblocks. 
-    - Command is: /ct magMultiBlocks
-- Multiblock Gating using a Crt-based Syntax.
+- 一个用于倾倒所有磁头多块字符串名称的命令。 
+    - 命令为：/ct magMultiBlocks
+- 使用基于Crtax的语法多块通关。
 
-### Syntax:
+### 语法：
 
-    Blank Example:
-    mods.compatskills.MagMultiBlockGates.addGate(String multiBlockName, String failureMessage, String... defaultRequirements);
+    空白示例：
+    mods.compatskills.MagMultiBlockGates.addGate(String multiBlockName, String failureMessage, String... 默认要求)；
     
-    Working Example:
-    mods.compatskills.MagMultiBlockGates.addGate("solar_mirror", "I'm afraid this is just too complex for an idiot like you!", "reskillable:building|15", "reskillable:magic|7", "adv|minecraft:husbandry/plant_seed", "stage|test");
+    工作示例：
+    mods.compatskills.MagMultiBlockGates.addGate("solar_mirror", "我害怕这太复杂对于像你这样的idiot来说！", "reskillable:building|15", "reskillable:magic|7", "adv|minecraft:harmry/plant_seed", "stage|test");

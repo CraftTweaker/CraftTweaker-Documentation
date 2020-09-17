@@ -1,33 +1,33 @@
-# LivingKnockBack
+# Retroceder
 
-This event is fired whenever an entity is knocked back. The event is **cancelable** and doing so will prevent the entity from being knocked back. Alternately, the strength of the knockback in addition to the X and Z ratios can be adjusted.
+Este evento se dispara cuando una entidad es devuelta. El evento es **cancelable** y hacerlo evitará que la entidad sea rechazada. También se puede ajustar la fuerza del retorno, además de la relación X y Z.
 
-## Event Class
-You will need to cast the event in the function header as this class:  
-`crafttweaker.event.LivingKnockBackEvent`  
-You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
+## Clase de evento
+Necesitarás lanzar el evento en la cabecera de la función como esta clase:  
+`crafttweaker.event. ivingKnockBackEvent`  
+Puede, por supuesto, también [importar](/AdvancedFunctions/Import/) la clase antes y usar ese nombre entonces.
 
-## Event interface extensions
-LivingKnockBack Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+## Extensiones de la interfaz de eventos
+LivingKnockBack Events implementa las siguientes interfaces y son capaces de llamar a todos sus métodos/getters/setters también:
 
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 - [ILivingEvent](/Vanilla/Events/Events/ILivingEvent/)
 
 
 ## ZenGetters/ZenSetters
-The following information can be retrieved/set during the event:
+La siguiente información se puede recuperar/establecer durante el evento:
 
-| ZenGetter          | ZenSetter  | Type                                  |
-| ------------------ | ---------- | ------------------------------------- |
-| `attacker`         | `attacker` | [IEntity](/Vanilla/Entities/IEntity/) |
-| `originalAttacker` |            | [IEntity](/Vanilla/Entities/IEntity/) |
-| `strength`         | `strength` | float                                 |
-| `originalStrength` |            | float                                 |
-| `ratioX`           | `ratioX`   | double                                |
-| `ratioZ`           | `ratioZ`   | double                                |
-| `originalRatioX`   |            | double                                |
-| `originalRatioZ`   |            | double                                |
+| ZenGetter             | Ajuste     | Tipo                                  |
+| --------------------- | ---------- | ------------------------------------- |
+| `atacante`            | `atacante` | [IEntity](/Vanilla/Entities/IEntity/) |
+| `atacante original`   |            | [IEntity](/Vanilla/Entities/IEntity/) |
+| `fuerza`              | `fuerza`   | flotante                              |
+| `fuerza original`     |            | flotante                              |
+| `ratioX`              | `ratioX`   | doble                                 |
+| `ratioZ`              | `ratioZ`   | doble                                 |
+| `ratio original %s`   |            | doble                                 |
+| `relación original Z` |            | doble                                 |
 
-## Notes
+## Notas
 
-When the event arrives, it's possible that the `attacker`, `strength`, or the various `ratio`s have already been modified. You can find these values in the `original*` variables.
+Cuando llegue el evento, es posible que el atacante ``, `fuerza`, o la variable `ratio`ya han sido modificadas. Puedes encontrar estos valores en las variables `original*`.

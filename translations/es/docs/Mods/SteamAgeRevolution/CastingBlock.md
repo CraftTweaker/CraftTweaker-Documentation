@@ -1,27 +1,27 @@
-# Casting Block
+# Bloque de lanzamiento
 
-The Casting Block is a machine that converts an input fluid into an output item.
+El Bloque de Fundición es una máquina que convierte un fluido de entrada en un elemento de salida.
 
-## Package
+## Paquete
 `mods.steamagerevolution.CastingBlock`
 
-## Methods
+## Métodos
 
-- **[IItemStack](/Vanilla/Items/IItemStack/) output** The result of the recipe.
-- **[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) input** The input of the recipe.
-- **int craftTime** Crafting time for machine to process
+- **[ItemStack](/Vanilla/Items/IItemStack/) muestra** El resultado de la receta.
+- **[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) entrada** La entrada de la receta.
+- **tiempo de fabricación** tiempo de fabricación de la máquina para procesar
 
-## Addition
+## Adicional
 
 ```zenscript
-mods.steamagerevolution.CastingBlock.addRecipe(ILiquidStack input, IItemStack output, int craftTime);
+mods.steamagerevolution.CastingBlock.addRecipe(entrada ILiquidStack, salida ItemStack, int craftTime);
 mods.steamagerevolution.CastingBlock.addRecipe(<liquid:lava>*1000, <minecraft:obsidian>, 200);
 ```
 
-## Removal
+## Eliminar
 
 ```zenscript
-mods.steamagerevolution.CastingBlock.removeRecipe(IItemStack output);
+mods.steamagerevolution.CastingBlock.removeRecipe(salida ItemStack);
 mods.steamagerevolution.CastingBlock.removeRecipe(<minecraft:iron_block>);
 
 mods.steamagerevolution.CastingBlock.removeAll();

@@ -1,16 +1,16 @@
-# Robotic Assembly System
+# Sistema de ensamblado robótico
 
-The Robotic Assembly System is a multiblock consisting of the Assembly Controller, Assembly I/O Units, Assembly Platform, Assembly Laser and Assembly Drill. It converts input items to output items using the laser and/or drill.
+El Sistema de Colmena Robótica es un bloque múltiple compuesto por el Controlador de Colmena, Unidades de E/S de Colmena, Plataforma de Colmena, Láser de Colmena y Taller de Colmena. Convierte elementos de entrada en elementos de salida usando el láser y/o el taladro.
 
-There are several functions for adding and removing recipes, depending on whether the recipe requires use of the laser, the drill, or both.
+Existen varias funciones para añadir y eliminar recetas, dependiendo de si la receta requiere el uso del láser, el taladro o ambas.
 
-## Calling
+## Llamando
 
-You can call the Assembly package using `mods.pneumaticcraft.assembly`.
+Puedes llamar al paquete de Colmena usando `mods.pneumaticcraft.assembly`.
 
-## Removing
+## Eliminando
 
-These functions remove the first recipe they find with the given [IItemStack](/Vanilla/Items/IItemStack/) `output`:
+Estas funciones eliminan la primera receta que encuentran con la salida [ItemStack](/Vanilla/Items/IItemStack/) `dada`:
 
 ```zenscript
 mods.pneumaticcraft.assembly.removeLaserRecipe(IItemStack output);
@@ -22,17 +22,17 @@ mods.pneumaticcraft.assembly.removeLaserRecipe(<pneumaticcraft:aphorism_tile>);
 mods.pneumaticcraft.assembly.removeDrillRecipe(<pneumaticcraft:pressure_chamber_valve>);
 ```
 
-These functions remove *all* recipes currently defined for the Assembly System:
+Estas funciones eliminan *todas las recetas* actualmente definidas para el Sistema de Colmena:
 
 ```zenscript
-mods.pneumaticcraft.assembly.removeAllLaserRecipes();
-mods.pneumaticcraft.assembly.removeAllDrillRecipes();
-mods.pneumaticcraft.assembly.removeAllDrillLaserRecipes();
+mods.pneumaticcraft.ensambly.removeAllLaserRecipes();
+mods.pneumaticcraft.assemblbly.removeAllDrillRecipes();
+mods.pneumaticcraft.assemblbly.removeAllDrillLaserRecipes();
 ```
 
-## Adding
+## Agregando
 
-These functions are used to add new recipes for the assembly system:
+Estas funciones se utilizan para añadir nuevas recetas para el sistema de ensamblado:
 
 ```zenscript
 mods.pneumaticcraft.assembly.addLaserRecipe(IItemStack input, IItemStack output)

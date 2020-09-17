@@ -10,7 +10,7 @@
 
 ## Создание нового объекта IVector3d
 
-If you ever find yourself in the need of creating a new IVector3d object, you can use this method:
+Если вы когда-нибудь обнаружили необходимость создания нового объекта IVector3d, вы можете воспользоваться этим методом:
 
 ```zenscript
 //crafttweaker.world.IVector3d.create(double x, double y, double z);

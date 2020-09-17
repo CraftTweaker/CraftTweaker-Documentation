@@ -1,16 +1,16 @@
-# Inverted Requirements:
+# 反転条件:
 
 ## [NOTICE]
 
-Inverted Requirements are Deprecated and is replaced internally by the NOT-Logical Operator. This means that the inverted requirements are automatically converted in-code into a NOT-Operator. Please refrain from using this requirement type, they are still included for **Legacy Support!**
+反転要件は廃止され、NOT-Logical Operatorによって内部的に置き換えられます。 これは、反転された要件が自動的にNOT-Operatorに変換されることを意味します。 この要件タイプの使用はご遠慮ください。 **レガシーサポート**
 
-## Inverted-Requirements
+## Inverted-requirements
 
-Inverted requirements are a 1.4.0+ CompatSkills feature only! Inverted requirements are unlocked as long as you do not have the required component. An Inverted Skill Requirement is unlocked as long as you do not have the specified level of the skill or higher.
+反転された要件は1.4.0+コンパットスキル機能のみです! 必要なコンポーネントがない限り、反転要件はロック解除されます。 指定されたレベル以上のスキルがない限り、反転スキル要件が解除されます。
 
-The Inverted-Syntaxes are as follows:
+Inverted-Syntaxは以下の通りです:
 
-    Example:
+    例:
     !adv|
     !dim|
     !stage|
@@ -18,9 +18,9 @@ The Inverted-Syntaxes are as follows:
     !trait|
     
     
-    Working Example:
-    !adv|minecraft:husbandry/plant_seed
+    作業例:
+    !adv|minecraft:fusrry/plant_seed
     !dim|0
     !stage|test
     !skill|reskillable:building|15
-    !trait|reskillable:battle_spirit
+    !trait|reskillable:battribuild|

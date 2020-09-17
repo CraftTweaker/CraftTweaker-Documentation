@@ -1,21 +1,21 @@
-# Extraction Chamber
+# 采掘分庭
 
 ## 所属包名
 ```zenscript
-import mods.calculator.extractionChamber;
+导入 mods.calculator.extractionChamber;
 ```
 
 ## 使用方式
 
-- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input** The input.
-- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) output[1-2]** The outputs.
+- **[Ingredient](/Vanilla/Variable_Types/IIngredient/) 输入** 输入.
+- **[Ingredient](/Vanilla/Variable_Types/IIngredient/) 输出[1-2]** 输出.
 
 ## 添加配方
 ```zenscript
-extractionChamber.addRecipe(IIngredient input, IIngredient output1, IIngredient output2);
+extractionChamber.addRecipe(IIngredient input, IIngredient output1, IIngredient output2)；
 ```
 
-## Removal
+## 移除
 ```zenscript
-extractionChamber.removeRecipe(IIngredient output, IIngredient output2);
+extractionChamber.removeRecipe(IIngredient output, IIngredient output2)；
 ```

@@ -1,39 +1,39 @@
-# BlockState Bracket Handler
+# Обработчик скобков BlockState
 
-The BlockState Bracket Handler gives you access to the BlockStates in the game. It is only possible to get BlockStates registered in the game, so adding or removing mods may cause issues if you reference the mod's blockstates in a BlockState Bracket Handler.
+Обработчик браслета «BlockState Bracket Handler» предоставляет вам доступ к «BlockState» в игре. Можно получить только BlockStates зарегистрированные в игре, , так что добавление или удаление модов могут вызвать проблемы, если вы ссылаетесь на блоки мода в обработчике Bracket BlockState .
 
-BlockStates are referenced in the BlockState Bracket Handler like so:
+BlockStates упоминаются в обработчике скобков BlockState следующим образом:
 
 ```zenscript
 <blockstate:modid:blockname>
 ```
 
-With the `modid` being the modid of the mod that the block is defined in, and `blockname` being the name of the block. This will return the default BlockState for the specified block.
+С модом `` , будучи модом мода, который определяется блоком, и `blockname` являются именем блока. Это вернёт BlockState по умолчанию для указанного блока.
 
-To get a specific blockstate with the BlockState Bracket Handler, you can optionally specify its properties like so:
+Чтобы получить конкретное состояние блокстата с обработчиком браслера BlockState можно задать следующие свойства:
 
 ```zenscript
 <blockstate:modid:blockname:properties>
 ```
 
-Where `properties` is a comma-separated set of `name=value` pairs for any properties that you want to specify on the blockstate. Any properties that are not specified are given the same values as in the default blockstate.
+Где свойства `` это пары `имя=значение` разделенные запятыми для всех свойств, которые вы хотите указывать в blockstate. Любые свойства, которые не указаны, даются те же значения, что и в стандартном блочном состоянии.
 
-This will return an IBlockState Object. Please refer to [the respective wiki entry](/Vanilla/Blocks/IBlockState/) for further information.
+Возврат объекта IBlockState Пожалуйста, обратитесь к [соответствующей вики-записи](/Vanilla/Blocks/IBlockState/) для получения дополнительной информации.
 
-Note that this bracket handler will create a reference to one specific blockstate. If you would like to be able to match against multiple blockstates, please refer to [the IBlockStateMatcher wiki entry](/Vanilla/Blocks/IBlockStateMatcher).
+Обратите внимание, что этот обработчик скобок создаст ссылку на конкретное состояние блока. Если вы хотите иметь возможность отвечать против нескольких блокштанов, пожалуйста, обратитесь к [вики-записи IBlockStateMatcher](/Vanilla/Blocks/IBlockStateMatcher).
 
-## Examples
+## Примеры
 
-An example of the BlockState Bracket Handler would be:
+Примером обработчика брекетов «BlockState Bracket Handler» являются:
 
 ```zenscript
-//block of dirt
+//блок земли
 <blockstate:minecraft:dirt>
 
-//oak log, vertical
+//дубовый журнал, вертикальный
 <blockstate:minecraft:log>
 <blockstate:minecraft:log:variant=oak,axis=y>
 
-//spruce log, horizontal along the x-axis
+//свиной журнал, горизонтально по оси x-
 <blockstate:minecraft:log:variant=spruce,axis=x>
 ```

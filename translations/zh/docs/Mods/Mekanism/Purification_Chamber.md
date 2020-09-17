@@ -1,8 +1,8 @@
-# Purification Chamber
+# 净化分庭
 
-As of Mekanism 9.7.0 it is now possible to view all recipe strings of the Purification Chamber through the command `/ct mekrecipes purification`
+到Mekanism 9.7.0，现在可以通过命令 `/ct mek配方净化` 查看净化分庭的所有配方字符串。
 
-## Addition
+## 加
 
 ```zenscript
 mods.mekanism.purification.addRecipe(IIngredient itemInput, @Optional IGasStack gasInput, IItemStack itemOutput);
@@ -11,26 +11,26 @@ mods.mekanism.purification.addRecipe(<minecraft:wool:1>, <gas:hydrogenchloride>,
 mods.mekanism.purification.addRecipe(<minecraft:coal:1>, <minecraft:coal>);
 ```
 
-As of Mekanism 9.7.0 inputGas is no longer restricted to only oxygen
+由于Mekanism 9.7.0 输入气体不再仅限于氧气，
 
-Also as of Mekanism 9.7.0 it is possible to use IIngredients as the itemInput instead of only IItemStacks.
+另外，由于Mekanism 9.7.0，可以使用IIngredients 作为项目输入，而不仅仅是IItemStacks。
 
-Note: Currently all this does is loop over the different possibilities in java while adding instead of you having to do it in ZenScript. Currently there is no built in support for compound ingredients or oredictionary in the machines themselves.
+注意：目前所有这一切都是在java的不同可能性上循环的，而不是在ZenScript中添加。 目前，机器本身没有用于支持复合成份或修复术。
 
-## Removal
+## 移除
 
 ```zenscript
-mods.mekanism.purification.removeRecipe(IIngredient itemOutput, @Optional IIngredient itemInput, @Optional IIngredient gasInput);
+mods.mekanism.purification.removeRecipe(IIngredient itemOutput, @Optional IIngredient itemInput);
 
-mods.mekanism.purification.removeRecipe(<mekanism:clump:2>, <mekanism:shard:2>, <gas:oxygen>);
+mods.mekanis.purification.removeRecipe(<mekanism:clump:2>, <mekanism:shard:2>, <gas:oxygen>);
 mods.mekanism.purification.removeRecipe(<mekanism:clump:1>);
 ```
 
-Specifying an input parameter will only remove the specific recipe that uses said input. Omitting the input parameter will remove all recipes that produce the specified output.
+指定输入参数只会删除使用所述输入的特定配方。 忽略输入参数将删除所有生成指定输出的配方。
 
-## Removing all recipes
+## 删除所有配方
 
-As of Mekanism 9.7.0 it is now possible to remove all Purification Chamber recipes. (This excludes any recipes added via CraftTweaker)
+由于Mekanisis 9.7.0，现在可以移除所有净化室配方。 (这排除了任何通过 CraftTweaker 添加的配方
 
 ```zenscript
 mods.mekanism.purification.removeAllRecipes();

@@ -1,27 +1,27 @@
-# CropGrowPreEvent
+# format@@0 CropGrowPreEvent
 
-The CropGrowPre Event is fired when crops attempt to grow. It has a **result** which determines whether the default behaviour occurs or not:
+L'événement CropGrowPre est lancé lorsque les cultures tentent de grandir. Il a un **résultat** qui détermine si le comportement par défaut se produit ou non :
 
-- **allow**: the crop is forced to grow.
-- **deny**: the crop is prevented from growing.
-- **default**: the attack uses default Vanilla behaviour.
+- **autoriser**: la culture est forcée de grandir.
+- **nier**: la culture est empêchée de grandir.
+- **défaut**: l'attaque utilise le comportement par défaut de Vanilla.
 
-## Event Class
-You will need to cast the event in the function header as this class:  
-`crafttweaker.event.CropGrowPreEvent`  
-You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
+## Classe de l'événement
+Vous devrez lancer l'événement dans l'en-tête de la fonction comme cette classe:  
+`crafttweaker.event. ropGrowPreEvent`  
+Vous pouvez, bien sûr, également [importer](/AdvancedFunctions/Import/) la classe avant et utiliser ce nom alors.
 
-## Event interface extensions
-CropGrowPost Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+## Extensions d'interface de l'événement
+Les événements CropGrowPost implémentent les interfaces suivantes et peuvent également appeler toutes leurs méthodes/getters/setters :
 
-- [IBlockEvent](/Vanilla/Events/Events/IBlockEvent/)
+- [Évènement IBlock](/Vanilla/Events/Events/IBlockEvent/)
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 
 
 ## ZenGetters
-The following information can be retrieved from the event:
+Les informations suivantes peuvent être récupérées à partir de l'événement :
 
-| ZenGetter            | ZenSetter | Type                                        |
-| -------------------- | --------- | ------------------------------------------- |
-| `originalBlockState` |           | [IBlockState](/Vanilla/Blocks/IBlockState/) |
-| `originalBlock`      |           | [IBlock](/Vanilla/Blocks/IBlock/)           |
+| ZenGetter                      | ZenSetter | Type de texte                                    |
+| ------------------------------ | --------- | ------------------------------------------------ |
+| `format@@0 originalBlockState` |           | [État de l'IBlock](/Vanilla/Blocks/IBlockState/) |
+| `Bloc original`                |           | [Verrouillage](/Vanilla/Blocks/IBlock/)          |

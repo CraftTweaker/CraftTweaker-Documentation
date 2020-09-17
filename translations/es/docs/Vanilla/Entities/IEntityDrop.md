@@ -1,21 +1,21 @@
 # IEntityDrop
 
-An IEntityDrop refers to a drop from an [Entity](/Vanilla/Entities/IEntityDefinition/).
+Una EntityDrop se refiere a una gota de una [Entidad](/Vanilla/Entities/IEntityDefinition/).
 
-## Importing the package
+## Importando el paquete
 
-It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
-`import crafttweaker.entity.IEntityDrop;`
+Podría ser necesario que importes el paquete si encuentras algún problema (como lanzar un [array](/AdvancedFunctions/Arrays_and_Loops/)), más vale estar seguro que lo siento y añadir la importación.  
+`importar crafttweaker.entity.IEntityDrop;`
 
 ## ZenGetters
 
-You can retrieve this information out of them.
+Usted puede recuperar esta información de ellos.
 
-| ZenGetter  | What does it do                                          | Return type                              | Usage             |
-| ---------- | -------------------------------------------------------- | ---------------------------------------- | ----------------- |
-| chance     | Returns the chance of the drop.                          | float                                    | `drop.chance`     |
-| max        | Returns the maximum Amount of the drop.                  | int                                      | `drop.max`        |
-| min        | Returns the minimum Amount of the drop.                  | int                                      | `drop.min`        |
-| playerOnly | Returns whether the drop is playerOnly.                  | boolean                                  | `drop.playerOnly` |
-| range      | Returns the minimum to maximum Amount range of the drop. | IntegerRange                             | `drop.range`      |
-| stack      | Returns the dropped Item.                                | [IItemStack](/Vanilla/Items/IItemStack/) | `drop.stack`      |
+| ZenGetter    | ¿Qué hace                                                  | Tipo de devolución                       | Uso                  |
+| ------------ | ---------------------------------------------------------- | ---------------------------------------- | -------------------- |
+| oportunidad  | Devuelve la oportunidad de la gota.                        | flotante                                 | `soltar.oportunidad` |
+| máx          | Devuelve la cantidad máxima de la gota.                    | int                                      | `drop.max`           |
+| min          | Devuelve la cantidad mínima de la gota.                    | int                                      | `drop.min`           |
+| solo jugador | Devuelve si la gota es sólo de jugador.                    | boolean                                  | `drop.playerOnly`    |
+| range        | Devuelve el rango mínimo al máximo de cantidad de la gota. | Rango entero                             | `soltar.rango`       |
+| pila         | Devuelve el elemento soltado.                              | [IItemStack](/Vanilla/Items/IItemStack/) | `soltar.stack`       |

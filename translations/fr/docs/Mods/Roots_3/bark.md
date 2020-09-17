@@ -1,16 +1,16 @@
-### Class
+### Classe
 
 ```zenscript
-import mods.roots.Bark;
+Importer mods.roots.Bark;
 ```
 
-#### Methods
+#### Méthodes
 
 ```zenscript
 void addRecipe(
-  string name,        // the name of the recipe
-  IItemStack woodLog, // the itemstack equivalent of the wood log being broken
-  IItemStack bark     // the itemstack of the type of bark this log produces (including stack count)
+  string name, // le nom de la recette
+  IItemStack woodLog, // l'équivalent de itemstack du log de bois cassé
+  IItemStack écork // le itemstack du type d'écorce que ce log produit (y compris le nombre de pile)
 );
 ```
 
@@ -18,20 +18,20 @@ void addRecipe(
 
 ```zenscript
 void removeRecipe(
-  IItemStack bark // the itemstack of the type of bark to remove (excluding stack size)
+  IItemStack écork // le itemstack du type d'écorce à supprimer (excluant la taille de la pile)
 );
 ```
 
 * * *
 
-### Examples
+### Exemples
 
 ```zenscript
 import mods.roots.Bark;
 
-// Will produce 2 sand from a melon block broken by a knife.
+// produira 2 sables à partir d'un bloc de melon cassé par un couteau.
 Bark.addRecipe("melon", <minecraft:melon_block>, <minecraft:sand>*2);
 
-// Removes wildwood bark from the default list
+// Supprime l'écorce de bois de la liste par défaut
 Bark.removeRecipe(<roots:bark_wildwood>);
 ```

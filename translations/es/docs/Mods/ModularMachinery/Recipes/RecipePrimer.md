@@ -1,37 +1,37 @@
-# RecipePrimer
+# Primer receta
 
-A RecipePrimer Object is the actual recipe. You can get such an object from the [RecipeBuilder](/Mods/ModularMachinery/Recipes/RecipeBuilder/) and use its methods to actually give the recipe ins and outs and stuff.
+Un objeto de receta es la receta actual. Puedes obtener tal objeto del [RecipeBuilder](/Mods/ModularMachinery/Recipes/RecipeBuilder/) y usar sus métodos para dar realmente las recetas y cosas a la receta.
 
-## Importing the package
+## Importando el paquete
 
-It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
-`import mods.modularmachinery.RecipePrimer;`
+Podría ser necesario que importes el paquete si encuentras algún problema (como lanzar un [array](/AdvancedFunctions/Arrays_and_Loops/)), más vale estar seguro que lo siento y añadir la importación.  
+`importar mods.modularmachinery.RecipePrimer;`
 
-## ZenMethods
+## Métodos
 
-Each of these methods does two things: First, it modifies the object, then it returns the object itself (as another RecipePrimer).  
-This means you can either call each method on its own, or make one call where you append each pieces of code (example below).
+Cada uno de estos métodos hace dos cosas: en primer lugar, modifica el objeto, luego devuelve el objeto en sí mismo (como otra receta Primer).  
+Esto significa que puede llamar a cada método por sí mismo o haga una llamada donde añada cada pieza de código (ejemplo a continuación).
 
-### Setting the chance
+### Establecer la oportunidad
 
 ```zenscript
-setChance(float chance);
+setChance(oportunidad flotante);
 ```
 
-### Adding Energy and fuel requirements
+### Añadiendo requisitos de energía y combustible
 
 ```zenscript
 addEnergyPerTickInput(int perTick);
 addEnergyPerTickOutput(int perTick);
 
 
-//Typo? This is what the sourcecode sais, if it doesn't work try Input
+//Typo? Esto es lo que el código fuente sais, si no funciona prueba Entrada
 addFuelItemInout(int requiredTotalBurnTime);
 ```
 
-### Adding inputs
+### Agregando entradas
 
-You can add [IItemStacks](/Vanilla/Items/IItemStack/), [IOreDictEntries](/Vanilla/OreDict/IOreDictEntry/) or [ILiquidStacks](/Vanilla/Liquids/ILiquidStack/) as input.
+Puedes añadir [ItemStacks](/Vanilla/Items/IItemStack/), [IOreDictEntries](/Vanilla/OreDict/IOreDictEntry/) o [ILiquidStacks](/Vanilla/Liquids/ILiquidStack/) como entrada.
 
 ```zenscript
 addItemInput(IItemStack stack);
@@ -45,10 +45,10 @@ addFluidInput(ILiquidStack stack);
 
 ### Adding outputs
 
-You can add [IItemStacks](/Vanilla/Items/IItemStack/), [IOreDictEntries](/Vanilla/OreDict/IOreDictEntry/) or [ILiquidStacks](/Vanilla/Liquids/ILiquidStack/) as output.
+Puedes añadir [ItemStacks](/Vanilla/Items/IItemStack/), [IOreDictEntries](/Vanilla/OreDict/IOreDictEntry/) o [ILiquidStacks](/Vanilla/Liquids/ILiquidStack/) como salida.
 
 ```zenscript
-addItemOutput(IItemStack stack);
+addItemOutput(ItemStack stack);
 
 addItemOutput(IOreDictEntry oreDict);
 addItemOutput(IOreDictEntry oreDict, int amount);
@@ -57,17 +57,17 @@ addItemOutput(IOreDictEntry oreDict, int amount);
 addFluidOutput(ILiquidStack stack);
 ```
 
-### Building the recipe
+### Construyendo la receta
 
-After you have done your changes above, you need to build the recipe so that it will actually do something.
+Después de haber hecho los cambios anteriores, necesitas construir la receta para que realmente haga algo.
 
 ```zenscript
 build();
 ```
 
-## Example
+## Ejemplo
 
-You can either call each method on its own, or play codegolf:
+Puedes llamar a cada método por sí solo, o jugar al codegolf:
 
 ```zenscript
 val reci = mods.modularmachinery.RecipeBuilder.newBuilder("recipeRegistryName", "associatedMachineRegistryName", 1000, 0);
@@ -75,7 +75,7 @@ val reci = mods.modularmachinery.RecipeBuilder.newBuilder("recipeRegistryName", 
 reci.addEnergyPerTickInput(100);
 reci.addItemInput(<ore:ingotIron>);
 reci.addItemOutput(<minecraft:gold_ingot>);
-reci.build();
+reci. uild();
 
 
 

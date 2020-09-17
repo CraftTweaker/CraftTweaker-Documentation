@@ -1,27 +1,27 @@
 # ProjectileImpactFireball
 
-This event is fired whenever a fireball impacts an entity but before damage, etc, is calculated. It is **cancelable**, and if canceled, the impact will not be processed.
+このイベントは、ファイアーボールがエンティティに影響を与えてもダメージの前などが計算されるたびに発生します。 **キャンセル可能**であり、キャンセルされた場合、影響は処理されません。
 
-Acceleration values from the fireball entity are available through zengetters.
+ファイヤーボールエンティティからの加速値はzengettersを通じて利用できます。
 
-## Importing the class
-It might be required to [import](/AdvancedFunctions/Import/) the class to avoid errors.  
+## クラスのインポート
+エラーを避けるには、クラスを [インポート](/AdvancedFunctions/Import/) する必要があります。  
 `import crafttweaker.event.ProjectileImpactFireballEvent;`
 
-## Extending IEntityEvent
-ProjectileImpactFireball Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+## IEntityEvent の拡張
+ProjectileImpactFireball イベントは以下のインターフェイスを実装し、それらのメソッド/getters/setters/settersも同様に呼び出すことができます。
 
 - [IProjectileEvent](/Vanilla/Events/Events/IProjectileEvent/)
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 
-## ZenGetters and ZenSetters
+## ZenGettersとZenSetters
 
-The following information can be retrieved from the event:
+イベントから次の情報を取得できます。
 
-| ZenGetter       | ZenSetter       | Type                                                      |
+| ZenGetter       | ZenSetter       | タイプ                                                       |
 | --------------- | --------------- | --------------------------------------------------------- |
-| `fireball`      |                 | [IEntity](/Vanilla/Entities/IEntity/)                     |
-| `shooter`       |                 | [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) |
-| `accelerationX` | `accelerationX` | double型                                                   |
-| `accelerationY` | `accelerationY` | double型                                                   |
+| `ファイアーボール`      |                 | [IEntity](/Vanilla/Entities/IEntity/)                     |
+| `シューティング`       |                 | [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) |
+| `アクセラレーションX`    | `アクセラレーションX`    | double型                                                   |
+| `アクセラレーションY`    | `アクセラレーションY`    | double型                                                   |
 | `accelerationZ` | `accelerationZ` | double型                                                   |

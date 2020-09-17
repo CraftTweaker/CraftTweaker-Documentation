@@ -1,23 +1,23 @@
 # Loom
 
-## Package
+## Paket
 ```zenscript
-import mods.terrafirmacraft.Loom;
+importieren Sie mods.terrafirmacraft.Tief;
 ```
 
 ## Addition
 
 ```zenscript
-Loom.addRecipe(String registryName, IIngredient input, IItemStack output, int steps, String loomTexture);
+Loom.addRecipe(String RegistryName, IIngredient Eingabe, IItemStack Ausgabe, Int Schritte, String loomTexture);
 ```
-- steps is the number of steps needed to complete the recipe. It's the number of times the player has to click the loom, each movement of the loop advances one step. Within TFC, this is the same as the number of items required for the recipe, but it is not required to be so.
-- loomTexture is a path (`ResourceLocation`) to a texture file, to be used to display on the loom in the world.(For example, "minecraft:textures/blocks/wool_colored_white.png" references the vanilla texture for white wool). If you are using custom textures you need some form of data/resource loading (read: a resource pack) for this to be able to reference your texture correctly.
+- ist die Anzahl der Schritte, die benötigt werden, um das Rezept zu vervollständigen. Es ist die Häufigkeit, in der der Spieler auf den Webstuhl klicken muss, wobei jede Bewegung der Schleife einen Schritt voranschreitet. Innerhalb von TFC ist dies dieselbe wie die Anzahl der Artikel, die für das Rezept benötigt werden, aber es ist nicht erforderlich, dies zu sein.
+- loomTexture ist ein Pfad (`Ressourcenposition`) zu einer Texturdatei zur Anzeige auf dem Webstuhl der Welt. Zum Beispiel bezieht "minecraft:textures/blocks/wool_colored_white.png" die Vanilletextur für weiße Wolle). Wenn Sie benutzerdefinierte Texturen verwenden, benötigen Sie eine Art Daten/Ressourcen-Laden (sprich: Ressourcen-Paket), damit diese Ihre Textur korrekt referenzieren können.
 
-## Removal
+## Entfernen
 
 ```zenscript
-Loom.removeRecipe(IItemStack output);
-Loom.removeRecipe(String registryName);
+Loom.removeRecipe(IItemStack Ausgabe);
+Loom.removeRecipe(String RegistryName);
 ```
 
 ## Beispiel

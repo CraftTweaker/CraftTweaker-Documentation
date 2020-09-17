@@ -1,22 +1,22 @@
 # Логгер
 
-If the print-function is not enough for you, then you can use the logger Object to log Commands, information warnings and more.
+Если Вам не хватает функции print, тогда Вы можете использовать объект логгера для логирования команд, предупреждений и так далее.
 
-## Accessing the Logging Handler
+## Доступ к обработчику логирования
 
-You can access the Formatting Handler using the `logger` [global keyword](/Vanilla/Global_Functions/).
+Вы можете получить доступ к обработчику форматирования, используя [глобальное ключеваое слово](/Vanilla/Global_Functions/) `логгера`.
 
-## Logging
+## Логирование
 
-- logCommand(String message);
-- logInfo(String message);
-- logWarning(String message);
-- logError(String message);
+- logCommand(String сообщение);
+- logInfo(String сообщение);
+- logWarning(String сообщение);
+- logError(String сообщение);
 
-## Accessible, but useless Methods
+## Доступные, но бесполезные методы
 
-- logError(String message, Throwable exception);
-- logPlayer([IPlayer](/Vanilla/Players/IPlayer/) player);
+- ошибка logError(tring сообщение, Throwable exception);
+- logPlayer([IPlayer](/Vanilla/Players/IPlayer/) игрок);
 
-You can not use Java's throwables so the first Method is useless.  
-The second Method does absolutely nothing. Literally, the implementation is empty!
+Вы не можете использовать металы Java, так что первый метод бесполезен.  
+Второй метод ничего не делает. В буквальном смысле реализация пуста!

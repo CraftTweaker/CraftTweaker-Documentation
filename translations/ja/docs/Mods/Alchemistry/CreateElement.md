@@ -1,30 +1,31 @@
-# Create Element
-Custom Element Creation for Alchemistry
+# 要素を作成
+Alchemistryのカスタム要素の作成
 
-# Package
-`mods.alchemistry.Util.createElement`
+# パッケージ
+`mods.alchemistry.Util.createElementUtil.createElement`
 ## Loader
-This needs to be loaded with `#loader alchemistry`
+これは `#loader alchemistry` でロードする必要があります。
 
-## Methods
+## メソッド
 - **int atomicNumber** ID for new Element
-- **String Name** New Elements Name
-- **String Abbrebiation** New Elements Abbrebiation
+- **文字列名** 新しい要素名
+- **文字列 Abbrebiation** 新しい要素 Abbrebiation
 - **int red** Element red shade, RGB
-- **int green** Element green shade, RGB
+- **int 緑** 緑色のシェーディング, RGB
 - **int blue** Element blue shade, RGB
 
-## Creation
+## 作成
 ```zenscript
-mods.alchemistry.Util.createElement(int atomicNumber, String name, String abbreviation, int red, int green, int blue);
+mods.alchemistry.Atomizermods.alchemistry.Util.createElement(int atomicNumber, String name, String abbreviation, int red, int green, int blue);
 
 mods.alchemistry.Util.createElement(150,"vibranium","Vrb", 70, 90, 250);
+mods.alchemistry.Util.createElement(151,"unobtanium","Uno",30,54,69);Util.createElement(150,"vibranium","Vrb", 70, 90, 250);
 mods.alchemistry.Util.createElement(151,"unobtanium","Uno",30,54,69);
 ```
 
-## Notes
+## メモ
 
-- Please use lowercase names
-- Pre-existing atomic numbers cannot be overwritten
-- The '#loader alchemistry' line is required at the top of the file. This file can only be used to create elements and compounds, other recipes must be put in other files.
-- NOTE: As of v1.0.2, The mod Resource Loader must be used to include the image and model json for custom elements. If you would like to auto-generate these resources I have created a command-line JAR program [here](https://github.com/al132mc/alchemistry-resource-creator/releases) to do so.
+- 小文字の名前を使用してください
+- 既存の原子番号は上書きできません
+- ファイルの先頭に '#loader alchemistry' 行が必要です。 このファイルは要素や化合物を作成するためにのみ使用でき、他のレシピは他のファイルに入れる必要があります。
+- 注: v1.0.2 以降では、カスタム要素の model json と画像を含めるには、mod のリソースローダーを使用する必要があります。 これらのリソースを自動生成したい場合は、ここでコマンドラインJARプログラム [を作成しました](https://github.com/al132mc/alchemistry-resource-creator/releases)。

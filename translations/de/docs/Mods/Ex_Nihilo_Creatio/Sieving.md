@@ -1,45 +1,49 @@
 # Sieving
 
-## Package
+## Paket
 
-`mods.exnihilocreatio.Sieve`
+Um auf `Sieve` zuzugreifen, ohne den vollständigen Pfad zu klären, können Sie das Paket oben an Ihrem Script mit folgendem importieren:
+
+```zenscript
+importieren mods.exnihilocreatio.Sieve;
+```
 
 ## Methoden
 
-- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) block** The block that drops the output.
-- **[IItemStack](/Vanilla/Items/IItemStack/) output** The item that drops from the block..
-- **Float chance** The chance should be between 0-1.
+- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) Block** Der Block, der die Ausgabe fallen lässt.
+- **[IItemStack](/Vanilla/Items/IItemStack/) Ausgabe** Das Item das aus dem Block fällt.
+- **Schwebende Chance** Die Chance sollte zwischen 0-1 liegen.
 
 ## String Mesh
 
 ```zenscript
-addStringMeshRecipe(IIngredient, IItemStack, Float chance);
-addStringMeshRecipe(<minecraft:gravel>, <minecraft:diamond>, 0.001);
+Sieve.addStringMeshRecipe(IZutat, IItemStack, Float Chance);
+Sieve.addStringMeshRecipe(<minecraft:gravel>, <minecraft:diamond>, 0.001);
 ```
 
-## Flint Mesh
+## Feuernetz
 
 ```zenscript
-addFlintMeshRecipe(IIngredient, IItemStack, Float chance);
-addFlintMeshRecipe(<minecraft:gravel>, <minecraft:diamond>, 0.01);
+Sieve.addFlintMeshRecipe(IZutat, IItemStack, Float Chance);
+Sieve.addFlintMeshRecipe(<minecraft:gravel>, <minecraft:diamond>, 0.01);
 ```
 
-## Iron Mesh
+## Eisengitter
 
 ```zenscript
-addIronMeshRecipe(IIngredient, IItemStack, Float chance);
-addIronMeshRecipe(<minecraft:gravel>, <minecraft:diamond>, 0.1);
+Sieve.addIronMeshRecipe(Igredient, IItemStack, Float Chance);
+Sieve.addIronMeshRecipe(<minecraft:gravel>, <minecraft:diamond>, 0.1);
 ```
 
-## Diamond Mesh
+## Diamantnetzwerk
 
 ```zenscript
-addDiamondMeshRecipe(IIngredient, IItemStack, Float chance);
-addDiamondMeshRecipe(<minecraft:gravel>, <minecraft:diamond>, 1);
+Sieve.addDiamondMeshRecipe(IZutat, IItemStack, Float Chance);
+Sieve.addDiamondMeshRecipe(<minecraft:gravel>, <minecraft:diamond>, 1);
 ```
 
-## Removal
+## Entfernen
 
 ```zenscript
-mods.exnihilocreatio.Sieve.removeAll();
+Sieve.removeAll();
 ```

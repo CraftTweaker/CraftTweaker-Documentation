@@ -1,33 +1,33 @@
 # Mortars
 
-## Importing The Package
+## パッケージのインポート
 
-You can call the Mortar package using `mods.advancedmortars.Mortar`.
+`mods.advancedmortars.Mortar` を使ってMortarパッケージを呼び出すことができます。
 
-## Add Recipe
+## レシピを追加
 
 <table>
   <tr>
     <th>
-      Type
+      タイプ
     </th>
     
     <th>
-      Data Type
+      データタイプ
     </th>
     
     <th>
-      Examples
+      使用例
     </th>
   </tr>
   
   <tr>
     <td>
-      Mortar Types
+      迫撃砲の種類
     </td>
     
     <td>
-      String[]
+      ストリング[]
     </td>
     
     <td>
@@ -37,7 +37,7 @@ You can call the Mortar package using `mods.advancedmortars.Mortar`.
   
   <tr>
     <td>
-      Output
+      出力
     </td>
     
     <td>
@@ -51,11 +51,11 @@ You can call the Mortar package using `mods.advancedmortars.Mortar`.
   
   <tr>
     <td>
-      Duration
+      期間
     </td>
     
     <td>
-      Integer
+      整数
     </td>
     
     <td>
@@ -78,7 +78,7 @@ You can call the Mortar package using `mods.advancedmortars.Mortar`.
   </tr>
 </table>
 
-### Example
+### 例
 
 ```zenscript
 ///// "Crushing"

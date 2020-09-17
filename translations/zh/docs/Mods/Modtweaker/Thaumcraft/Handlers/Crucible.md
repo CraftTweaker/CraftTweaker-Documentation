@@ -1,29 +1,29 @@
-# Crucible
+# 关键的
 
-This package allows you to add and remove recipes to/from the Crucible.
+此软件包允许您将配方添加到/从巡洋舰中移除。
 
 ## 导入相关包
 
-You can [import](/AdvancedFunctions/Import/) the package and its methods to facilitate the retrival of the methods.
+您可以 [导入](/AdvancedFunctions/Import/) 个软件包及其方法来方便检索这些方法。
 
 ```zenscript
-import mods.thaumcraft.Crucible;
+导入mods.thaumcraft.crucib;
 ```
 
-## Adding recipes
+## 添加配方
 
 ```zenscript
-//mods.thaumcraft.Crucible.registerRecipe(String name, String researchKey, IItemStack output, IIngredient input, CTAspectStack[] aspects);
-mods.thaumcraft.Crucible.registerRecipe("crucibleTest", "", <minecraft:diamond>, <minecraft:stick>, [<aspect:aer>]);
+//mods.thaumcraft.Crucible.registerRecipe(String name, String researchKey, IItemStack output, IIngredient input, CTapertStack[] aspects;
+mods.thaumcraft.crucible.registerRecipe("crypleTest", "", <minecraft:diamond>, <minecraft:stick>, [<aspect:aer>]);
 ```
 
-## Removing recipes
+## 删除配方
 
 ```zenscript
-//mods.thaumcraft.Crucible.removeRecipe(String name);
-mods.thaumcraft.Crucible.removeRecipe("recipeName");
+//mods.thaumcraft.crucible.removeRecipe(String name);
+mods.thaumcraft.crucible.removeRecipe("recipeName");
 
 
-//mods.thaumcraft.Crucible.removeRecipe(IItemStack output);
-mods.thaumcraft.Crucible.removeRecipe(<minecraft:leather>);
+///mods.thaumcraft.crucible.removeRecipe(IItemStack output);
+mods.thaumcraft.crucible.removeRecipe(<minecraft:leather>);
 ```

@@ -1,13 +1,13 @@
-# Heating Temperatures
+# Temperatury ogrzewania
 
-- Warming starts at 1, ends at 80
-- Hot starts at 80, ends at 210
-- Very Hot starts at 210, ends at 480
-- Faint Red starts at 480, ends at 580
-- Dark Red starts at 580, ends at 730
-- Bright Red starts at 730, ends at 930
-- Orange starts at 930, ends at 1100
-- Yellow starts at 1100, ends at 1300
-- Yellow White starts at 1300, ends at 1400
-- White starts at 1400, ends at 1500
-- Brilliant White starts at 1500
+- Rozgrzewanie zaczyna się o 1, kończy o 80
+- Początek gorącego rozruchu od 80 do 210
+- Bardzo gorący zaczyna się o 210, kończy o 480
+- Faint Red zaczyna się od 480, kończy od 580
+- Ciemny czerwony zaczyna się o 580, kończy o 730
+- Jasny czerwony zaczyna się o 730, kończy o 930
+- Pomarańczowy zaczyna się od 930, kończy od 1100
+- Żółty zaczyna się od 1100, kończy od 1300
+- Żółta biała zaczyna się o 1300, kończy o godz. 1400
+- Biała zaczyna się o 1400, kończy o 1500
+- Błyskawiczny biały zaczyna się o 1500

@@ -1,6 +1,6 @@
-# Restoration Chamber
+# Патронник восстановления
 
-## Package
+## Пакет
 ```zenscript
 import mods.calculator.restorationChamber;
 ```
@@ -8,14 +8,14 @@ import mods.calculator.restorationChamber;
 ## Методы
 
 - **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input** The input.
-- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) output** The output.
+- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) output** Выход.
 
-## Addition
+## Сложение
 ```zenscript
-restorationChamber.addRecipe(IIngredient input, IIngredient output);
+restorationChamber.addRecipe(IIngredient input, Ingredient output);
 ```
 
-## Removal
+## Удаление
 ```zenscript
 restorationChamber.removeRecipe(IIngredient output);
 ```

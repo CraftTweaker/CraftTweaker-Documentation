@@ -1,8 +1,8 @@
-# Chemical Oxidizer
+# Tlenek chemiczny
 
-As of Mekanism 9.7.0 it is now possible to view all recipe strings of the Chemical Oxidizer through the command `/ct mekrecipes oxidizer`
+Od Mekanism 9.7.0 można teraz zobaczyć wszystkie ciągi receptur chemicznych Oxidizer poprzez polecenie `/ct mekrecipes oxidizer`
 
-## Addition
+## Dodanie
 
 ```zenscript
 mods.mekanism.chemical.oxidizer.addRecipe(IIngredient inputStack, IGasStack outputGas);
@@ -10,11 +10,11 @@ mods.mekanism.chemical.oxidizer.addRecipe(IIngredient inputStack, IGasStack outp
 mods.mekanism.chemical.oxidizer.addRecipe(<mekanism:dust:2>, <gas:cleanOsmium>);
 ```
 
-As of Mekanism 9.7.0 it is possible to use IIngredients as the inputStack instead of only IItemStacks.
+Od Mekanism 9.7.0 możliwe jest stosowanie IIngredients jako inputStack zamiast tylko IItemStacks.
 
-Note: Currently all this does is loop over the different possibilities in java while adding instead of you having to do it in ZenScript. Currently there is no built in support for compound ingredients or oredictionary in the machines themselves.
+Uwaga: Obecnie wszystko to jest w pętli nad różnymi możliwościami w java podczas dodawania zamiast tego musisz to zrobić w ZenScript. Obecnie w samych maszynach nie ma wbudowanego wsparcia dla składników składowych składowych czy też słownika.
 
-## Removal
+## Usuwanie
 
 ```zenscript
 mods.mekanism.chemical.oxidizer.removeRecipe(IIngredient outputGas, @Optional IIngredient inputStack);
@@ -23,11 +23,11 @@ mods.mekanism.chemical.oxidizer.removeRecipe(<gas:brine>, <mekanism:salt>);
 mods.mekanism.chemical.oxidizer.removeRecipe(<gas:lithium>);
 ```
 
-Specifying an input parameter will only remove the specific recipe that uses said input. Omitting the input parameter will remove all recipes that produce the specified output.
+Określenie parametru wejściowego usunie tylko konkretny przepis, który wykorzystuje dane wejściowe. Odrzucenie parametru wejściowego usunie wszystkie receptury, które wytwarzają dane wyjściowe.
 
-## Removing all recipes
+## Usuwanie wszystkich przepisów
 
-As of Mekanism 9.7.0 it is now possible to remove all Chemical Oxidizer recipes. (This excludes any recipes added via CraftTweaker)
+Począwszy od Mekanism 9.7.0 możliwe jest obecnie usunięcie wszystkich przepisów chemicznych. (Wyłącza wszelkie przepisy dodane przez CraftTweaker)
 
 ```zenscript
 mods.mekanism.chemical.oxidizer.removeAllRecipes();

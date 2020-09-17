@@ -1,75 +1,75 @@
 # IWorld
 
-The IWorld object contains information on a Dimension within the game.
+IWorld 对象包含游戏中一个维度的信息。
 
 ## 导入类
 
-It might be required to [import](/AdvancedFunctions/Import/) the class to avoid errors.  
-`import crafttweaker.world.IWorld`
+可能需要 [导入](/AdvancedFunctions/Import/) 类以避免错误。  
+`导入craftminstruer.world.IWorld`
 
 ## 继承自 IBlockProperties
 
-IBlockState extends [IBlockAccess](/Vanilla/World/IBlockAccess/). That means that all methods that are available to [IBlockAccess](/Vanilla/World/IBlockAccess/) objects are also available to IBlockState objects.
+IBlockState扩展 [IBlockAccess](/Vanilla/World/IBlockAccess/)。 这意味着 [IBlockAccess](/Vanilla/World/IBlockAccess/) 对象可以使用的所有方法也适用于IBlockState物体。
 
-## Creating an IWorld object
+## 创建 IWorld 对象
 
-Normally, you can derive this object from entities or other functions. If you need to create it yourself though, this is the way to go:  
-Note that this method should only be called inside functions that are meant to be run inside minecraft, not during the loading circle.
-
-```zenscript
-crafttweaker.world.IWorld.getFromID(int id);
-```
-
-## ZenMethods without parameters and ZenGetters
-
-| ZenMethod          | ZenGetter     | Return type                                      | Description                                                                                                                                                                             |
-| ------------------ | ------------- | ------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| isRemote()         | remote        | boolean                                          | True if the world is a "slave" client; changes will not be saved or propagated from this world. For example, server worlds have this set to false, client worlds have this set to true. |
-| isRaining()        | raining       | boolean                                          | Returns true if it is currently raining.                                                                                                                                                |
-| isThundering()     | thundering    | boolean                                          | Returns true if it is currently thundering.                                                                                                                                             |
-| getMoonPhase()     | moonPhase     | int                                              | Returns the current moon phase.                                                                                                                                                         |
-| isDayTime()        | dayTime       | boolean                                          | Checks if it is daytime.                                                                                                                                                                |
-| getWorldTime()     | time          | long                                             | Returns the world's time.                                                                                                                                                               |
-| getDimension()     | dimension     | int                                              | Returns the world's dimension.                                                                                                                                                          |
-| isSurfaceWorld()   | surfaceWorld  | boolean                                          | Returns whether you are in a surface world or not.                                                                                                                                      |
-| getDimensionType() | dimensionType | String                                           | Returns the dimension's type name.                                                                                                                                                      |
-| getWorldType()     | worldType     | String                                           | Returns the world's type name.                                                                                                                                                          |
-| getWorldInfo()     | worldInfo     | [IWorldInfo](/Vanilla/World/IWorldInfo/)         | Returns the world's information. Can be used to retrieve even more info on the world.                                                                                                   |
-| getProvider()      | provider      | [IWorldProvider](/Vanilla/World/IWorldProvider/) | Returns the world's provider. Can be used to retrieve even more info on the world.                                                                                                      |
-
-## ZenMethods with parameters
-
-### Get Biome at specific Position
-
-Use either an [IPosition3f](/Vanilla/Utils/Position3f/) or an [IBlockPos](/Vanilla/World/IBlockPos/) object.  
-Returns an [IBiome](/Vanilla/Biomes/IBiome/) Object.
+通常，您可以从实体或其他函数获取此对象。 如果您需要自己创建它， 这是前进的方式：  
+注意，此方法只能调用在需要在Minecraft中运行的函数内， 不在加载圆圈中。
 
 ```zenscript
-worldObj.getBiome(IPosition3f position);
-worldObj.getBiome(IBlockPos position);
+craftminvest.world.IWorld.getFromID(int id)；
 ```
 
-### Get Brightness at specific Position
+## 无参数的 ZenMethods 和 ZenGetters
 
-Use either three ints or an [IBlockPos](/Vanilla/World/IBlockPos/) object. Returns an int.
+| ZenMethod（ZenMethod） | ZenGetter | 退货类型                                             | 描述                                                                 |
+| -------------------- | --------- | ------------------------------------------------ | ------------------------------------------------------------------ |
+| isRemote()           | 远程        | boolean                                          | 如果世界是一个“奴隶”客户端，则为真；更改将不会从这个世界上保存或传播。 例如，服务器世界有这个设置为假，客户端世界有这个设置为真。 |
+| isRaining()          | 正在下雨      | boolean                                          | 如果它目前正在降雨，则返回 true。                                                |
+| isThundering()       | 雷阵雨       | boolean                                          | 如果它目前正在缩小，则返回 true。                                                |
+| getMoonPhase()       | 月经阶段      | 整数                                               | 返回当前月亮阶段。                                                          |
+| isDayTime()          | dayTime   | boolean                                          | 检查它是否是白天。                                                          |
+| getWorldTime()       | 时间        | 长                                                | 返回世界时间。                                                            |
+| getDimension()       | 尺寸        | 整数                                               | 返回世界层面。                                                            |
+| isSurfaceWorld()     | 表面世界      | boolean                                          | 返回您是否在表面世界中。                                                       |
+| getDimensionType()   | 尺寸类型      | 字符串[string]                                      | 返回维度的类型名称。                                                         |
+| getWorldType()       | worldType | 字符串[string]                                      | 返回世界类型名称。                                                          |
+| getWorldInfo()       | 世界信息      | [IWorldInfo](/Vanilla/World/IWorldInfo/)         | 返回世界信息。 可以用来检索更多关于世界的信息。                                           |
+| getProvider()        | 提供商       | [IWorldProvider](/Vanilla/World/IWorldProvider/) | 返回世界提供者。 可以用来检索更多关于世界的信息。                                          |
+
+## 带参数的 ZenMethods
+
+### 在指定位置获取生物组
+
+使用 [IPosition3f](/Vanilla/Utils/Position3f/) 或 [IBlockPos](/Vanilla/World/IBlockPos/) 对象。  
+返回一个 [IBiome](/Vanilla/Biomes/IBiome/) 对象。
 
 ```zenscript
-worldObj.getBrightness(int x, int y, int z);
-worldObj.getBrightness(IBlockPos position);
+worldObj.getBiome(IPosition3f 位置)；
+worldObj.getBiome(IBlockPos 位置)；
 ```
 
-### Get Block at specific Position
+### 在指定位置获得亮度
 
-Use either three ints or an [IBlockPos](/Vanilla/World/IBlockPos/) object. Returns an [IBlock](/Vanilla/Blocks/IBlock/) Object.
+使用三块粉丝或 [IBlockPos](/Vanilla/World/IBlockPos/) 对象。 返回整数。
 
 ```zenscript
-worldObj.getBlock(int x, int y, int z);
-worldObj.getBlock(IBlockPos position);
+worldObj.getBrightness(int x, int y, int z)；
+worldObj.getBrightness(IBlockPos 位置)；
 ```
 
-### Get or Set a blockState at a specific Position
+### 在指定位置获取块
 
-Use an [IBlockPos](/Vanilla/World/IBlockPos/) Object and for the setter also an [IBlockState](/Vanilla/Blocks/IBlockState/) Object. Optionally an [IData](/Vanilla/Data/IData/) object can be specified to define NBT data for the blockstate's TileEntity when it is set. Getter Returns an [IBlockState](/Vanilla/Blocks/IBlockState/), setter a bool.
+使用三块粉丝或 [IBlockPos](/Vanilla/World/IBlockPos/) 对象。 返回 [IBlock](/Vanilla/Blocks/IBlock/) 对象。
+
+```zenscript
+worldObj.getBlock(int x, int y, int z)；
+worldObj.getBlock(IBlockPos 位置)；
+```
+
+### 在指定位置获取或设置方块状态
+
+使用 [IBlockPos](/Vanilla/World/IBlockPos/) 对象，同时也使用 [IBlockState](/Vanilla/Blocks/IBlockState/) 对象。 可选的 [IData](/Vanilla/Data/IData/) 对象在设置时可以定义区块状态的 TileEntity 的 NBT 数据。 获取返回一个 [IBlockState](/Vanilla/Blocks/IBlockState/), 设置一个布尔值。
 
 ```zenscript
 worldObj.getBlockState(IBlockPos pos);
@@ -77,23 +77,35 @@ worldObj.setBlockState(IBlockState state, IBlockPos pos);
 worldObj.setBlockState(IBlockState state, IData tileEntityData, IBlockPos pos);
 ```
 
-### Spawn entity
+### 生成实体
 
-Use an [IEntity](/Vanilla/Entities/IEntity/) object.  
-Returns a bool that states if the spawn was successful.
+使用 [IEnty](/Vanilla/Entities/IEntity/) 对象。  
+返回一个如果生成成功状态的布尔值。
 
 ```zenscript
-worldObj.spawnEntity(IEntity entity);
+worldObj.spawnEntity(Ientity entity);
 ```
 
 ### Get a raytrace result
 
-Use two [IVector3d](/Vanilla/World/IVector3d/) objects, and three booleans to get an [IRayTraceResult](/Vanilla/World/IRayTraceResult/).  
-**Can be null**
+使用 [IVector3d](/Vanilla/World/IVector3d/) 对象和三个布尔值获得 [IRayTraceResult](/Vanilla/World/IRayTraceResult/)。  
+**可以为空**
 
-The first vector describes the starting point, the 2nd vector the direction and length we are searching in.  
-Only the last parameter is true by default.
+第一个矢量描述了起点，第二个矢量描述了我们正在搜索的方向和长度。  
+默认只有最后一个参数为 true。
 
 ```zenscript
-worldObj.rayTraceBlocks(IVector3d begin, IVector3d ray, @Optional boolean stopOnLiquid, @Optional boolean ignoreBlockWithoutBoundingBox, @Optional(true) boolean returnLastUncollidableBlock)
+worldObj.rayTraceBlocks(IVector3d begin, IVector3d ray, @Optional boolian stopOnLiquid, @Optional boolian ignoreBlockwithout BoundingBox, @Optional(true) 布尔返回 LastUncollidableBlock)
+```
+
+### 获取选中的块
+
+使用 [IBlockPos](/Vanilla/World/IBlockPos/), [IRayTraceResults 结果](/Vanilla/World/IRayTraceResult/) 和 [IPlayer](/Vanilla/Players/IPlayer/).  
+返回 [ItemStack](/Vanilla/Items/IItemStack/)。  
+**可以为空**
+
+获取可以通过在位置选择方块获取的IItemStack。
+
+```zenscript
+worldObj.getPickedBlock(IBlockPos pos，IRayTraceResult RayTraceResult，IPlayer player player)；
 ```

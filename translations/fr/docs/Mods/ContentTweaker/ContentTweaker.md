@@ -1,3 +1,3 @@
 # ContentTweaker
 
-ContentTweaker allows for the Creation of Blocks, Items, Fluids, and other Content through ZenScript!
+ContentTweaker permet la création de blocs, éléments, fluides et autres contenus via ZenScript!

@@ -1,15 +1,15 @@
-# Scrapbox
+# Raspado
 
-## Importing the Package
+## Importando el Paquete
 `mods.techreborn.scrapbox`
 
-## Adding Drops
+## Añadiendo Srops
 ```zenscript
-mods.techreborn.scrapbox.addScrapboxDrop(IIngredient input);
+mods.techreborn.scrapbox.addScrapboxDrop (entrada IIngredient);
 ```
 
-## Removing Drops
+## Eliminando gotas
 ```zenscript
-mods.techreborn.scrapbox.removeRecipe(IItemStack output);
+mods.techreborn.scrapbox.removeRecipe(Salida IItemStack);
 mods.techreborn.scrapbox.removeAll();
 ```

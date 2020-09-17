@@ -1,27 +1,27 @@
-# Vessel
+# Statek
 
-## Addition
+## Dodanie
 
 ```zenscript
 import mods.cuisine.Vessel;
 
-// All parameter named 'extra' refers to the extra input.
-Vessel.add(IItemStack input, ILiquidStack inputFluid, IItemStack output, ILiquidStack outputFluid, IItemStack extra);
-Vessel.add(IItemStack input, ILiquidStack inputFluid, IItemStack output, ILiquidStack outputFluid, IOreDictEntry extra);
-Vessel.add(IOreDictEntry input, ILiquidStack inputFluid, IItemStack output, ILiquidStack outputFluid, IItemStack extra);
-Vessel.add(IOreDictEntry input, ILiquidStack inputFluid, IItemStack output, ILiquidStack outputFluid, IOreEntry extra);
-Vessel.add(IItemStack input, ILiquidStack inputFluid, IItemStack output, ILiquidStack outputFluid);
-Vessel.add(IOreEntry input, ILiquidStack inputFluid, IItemStack output, ILiquidStack outputFluid);
+// Wszystkie parametry o nazwie 'extra' odnoszą się do dodatkowego wejścia.
+Vessel.add(IItemStack inputFluid, ILiquidStack inputFluid, IItemStack output, ILiquidStack outputFluid, IItemStack extra);
+statek. dd(IItemStack inputFluid, ILiquidStack inputFluid, IItemStack output, ILiquidStack outputFluid, IOreDictEntry extra);
+Statek.add(IOreDictentry inputFluid, ILiquidStack inputFluid, IItemStack output, ILiquidStack outputFluid, IItemStack extra);
+statki. dd(IOreDictEnt, ILiquidStack inputFluid, IItemStack output, ILiquidStack outputFluid, IOreentry extra);
+statek.add(IItemStack inputFluid, ILiquidStack inputFluid, IItemStack output, ILiquidStack outputFluidStack);
+Vessel. dd(IOreentry inputFluid, ILiquidStack inputFluid, IItemStack output, ILiquidStack outputFluid);
 
-Vessel.add(<item:minecraft:dirt>, <liquid:water> * 1000, <item:minecraft:diamond>, null);
+statek.add(<item:minecraft:dirt>, <liquid:water> * 1000, <item:minecraft:diamond>, null);
 ```
 
-## Removal
+## Usuwanie
 
 ```zenscript
-import mods.cuisine.Vessel;
+importuj mods.cuisine.Vessel;
 
-// Remove by inputs.
+// Usuń danymi wejściowymi.
 Vessel.remove(IItemStack input, ILiquidStack inputFluid, IItemStack extra);
 Vessel.remove(IItemStack input, ILiquidStack inputFluid, IOreDictEntry extra);
 Vessel.remove(IOreDictEntry input, ILiquidStack inputFluid, IItemStack extra);
@@ -34,6 +34,6 @@ Vessel.remove();
 
 Vessel.remove("recipe_name");
 
-// Remove everything!
-Vessel.removeAll();
+// Usuń wszystko!
+Zbiornik.removeAll();
 ```

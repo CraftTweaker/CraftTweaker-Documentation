@@ -1,16 +1,16 @@
-# Fluid Enricher
+# 流体离心机
 
-## Importing the Package
-`mods.nuclearcraft.Enricher`
+## 导入软件包
+`nuclearcraft。Enricher`
 
-## Adding Recipes
+## 添加配方
 ```zenscript
-mods.nuclearcraft.Enricher.addRecipe(IIngredient itemInput, ILiquidStack fluidInput, ILiquidStack fluidOutput, @Optional double timeMultiplier, @Optional double powerMultiplier, @Optional double processRadiation);
+nuclearcraft。Enricher.addRecipe(IIngredient itemInput, ILiquidStack fluidInput, ILiquidStack fluidOutput, @Optional double timeMultipleer, @Optional double powerMultiplier, @Optional double processRadiation)；
 ```
 
-## Removing Recipes
+## 删除配方
 ```zenscript
-mods.nuclearcraft.Enricher.removeRecipeWithInput(IIngredient itemInput, ILiquidStack fluidInput);
-mods.nuclearcraft.Enricher.removeRecipeWithOutput(ILiquidStack fluidOutput);
+nuclearcraft。Enricher.removeRecipeWidInput(IIngradient itemInput, ILiquidStack fluidInput);
+mods.nuclearcraft.Enricher.removeRecipeWidOutput(ILiquidStack fluidOut);
 mods.nuclearcraft.Enricher.removeAllRecipes();
 ```

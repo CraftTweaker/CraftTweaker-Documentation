@@ -1,14 +1,14 @@
-# Salt Fission
+# Rozszczepienie solą
 
-## Importing the Package
-`mods.nuclearcraft.salt_fission`
+## Importowanie pakietu
+`[PLACEHOLDER] mods.nuclearcraft.salt_fission`
 
-## Adding Recipes
+## Dodawanie przepisów
 ```zenscript
-mods.nuclearcraft.salt_fission.addRecipe([fluidInput, fluidOutput, double baseTime, double basePower, @Optional double processRadiation]);
+mods.nuclearcraft.salt_fission.addRecipe([fluidInput, fluidOutput, double baseTime, double basePower, @Opcjonalny podwójny proces Promieniowania]);
 ```
 
-## Removing Recipes
+## Usuwanie przepisów
 ```zenscript
 mods.nuclearcraft.salt_fission.removeRecipeWithInput([fluidInput]);
 mods.nuclearcraft.salt_fission.removeRecipeWithOutput([fluidOutput]);

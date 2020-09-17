@@ -1,21 +1,21 @@
-# Steam Dynamo
+# Steam ダイナモ
 
-## Import the package
+## パッケージをインポート
 
-To shorten method calls you can [import](/AdvancedFunctions/Import/) the package like so:
+メソッド呼び出しを短くするには、 [パッケージを](/AdvancedFunctions/Import/) インポートすることができます。
 
 ```zenscript
 import mods.thermalexpansion.SteamDynamo;
 ```
 
-## Add Fuel
+## 燃料を追加
 
 ```zenscript
 //mods.thermalexpansion.SteamDynamo.addFuel(ILiquidStack stack, int energy);
 mods.thermalexpansion.SteamDynamo.addFuel(<liquid:water>, 13);
 ```
 
-## Remove Fuel
+## 燃料を取り除く
 
 ```zenscript
 //mods.thermalexpansion.SteamDynamo.removeFuel(ILiquidStack stack);

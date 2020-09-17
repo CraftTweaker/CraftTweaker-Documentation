@@ -1,7 +1,7 @@
-# Sky Resources 2
+# 天井資源2
 
-[Sky Resources 2](https://minecraft.curseforge.com/projects/sky-resources) is a skyblock companion mod providing access to all the basic resources needed for vanilla and other mods using machines including combustion heaters, condensers, water extractors, and much more!
+[スカイリソース 2](https://minecraft.curseforge.com/projects/sky-resources) は、燃焼ヒーターを含む機械を使用して、バニラやその他のモッドに必要なすべての基本リソースへのアクセスを提供するスカイブロックコンパニオンモジュールです。 コンデンサー水抽出機などいろいろ!
 
-## Source and Issues
+## ソースと課題
 
-The [github page](https://github.com/Bartz24/SkyResources) for Sky Resources 2 where you can post issues or view the source code for the mod.
+スカイリソース2の [githubページ](https://github.com/Bartz24/SkyResources) で、問題を投稿したり、MODのソースコードを表示したりできます。

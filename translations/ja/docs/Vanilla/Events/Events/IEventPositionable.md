@@ -1,18 +1,18 @@
 # IEventPositionable
 
-This interface is extended by all events whose position matters.  
-That means you can use the getters below to access the position details.
+このインターフェイスは、位置が重要なすべてのイベントによって拡張されます。  
+つまり、位置の詳細にアクセスするために以下のゲッターを使用することができます。
 
-## Importing the class
+## クラスのインポート
 
-It might be required to [import](/AdvancedFunctions/Import/) the class to avoid errors.  
+エラーを避けるためにクラスを [インポート](/AdvancedFunctions/Import/) する必要があるかもしれません。  
 `import crafttweaker.event.IEventPositionable;`
 
 ## ZenGetters
 
-| name     | type                                   |
-| -------- | -------------------------------------- |
-| position | [IBlockPos](/Vanilla/World/IBlockPos/) |
-| x        | int                                    |
-| y        | int                                    |
-| z        | int                                    |
+| 名前 | タイプ                                    |
+| -- | -------------------------------------- |
+| 位置 | [IBlockPos](/Vanilla/World/IBlockPos/) |
+| x  | int                                    |
+| y  | int                                    |
+| z  | int                                    |

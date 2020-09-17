@@ -1,32 +1,32 @@
-# PlayerAdvancement
+# Rozwijanie gracza
 
-The PlayerAdvancement Event is fired whenever a player is awarded an Advancement.
+Wydarzenie Advancement jest uruchamiane za każdym razem, gdy gracz otrzyma Advancement.
 
-## Event Class
+## Klasa wydarzenia
 
-You will need to cast the event in the function header as this class:  
-`crafttweaker.event.PlayerAdvancementEvent`  
-You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
+Musisz aktywować wydarzenie w nagłówku funkcji jako klasa:  
+`crafttweaker.event. layerAdvancementEvent`  
+Możesz oczywiście również [zaimportować](/AdvancedFunctions/Import/) klasę przed i wtedy użyć tej nazwy.
 
-## Event interface extensions
+## Rozszerzenia interfejsu zdarzenia
 
-PlayerAdvancement Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+Zdarzenia PlayerAdvancement zaimplementują następujące interfejsy i są w stanie wywołać wszystkie swoje metody/pobierające/ustawiające:
 
-- [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
+- [Wydarzenie IPlayer](/Vanilla/Events/Events/IPlayerEvent/)
 
 ## ZenGetters
 
-The following information can be retrieved from the event:
+Z wydarzenia można uzyskać następujące informacje:
 
-| ZenGetter | Return Type |
+| ZenGetter | Typ zwrotu  |
 | --------- | ----------- |
-| `id`      | string      |
+| `id`      | ciąg znaków |
 
 ## Id
 
-Apart from the functionality the PlayerEvent exposes you can get the advancement's ID as string.
+Oprócz funkcjonalności, którą gracz może otrzymać identyfikator zaawansowania jako ciąg znaków.
 
-This can for example be a string like
+Może to być na przykład ciąg znaków
 
 ```zenscript
 "minecraft:story/mine_diamond"

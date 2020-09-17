@@ -1,28 +1,28 @@
 # PlayerAnvilRepair
 
-The PlayerAnvilRepair Event is fired whenever a player crafts something in the anvil.  
-You can change the chance that the anvil is damaged.
+Wydarzenie Gracza AnvilRepair jest strzelane za każdym razem, gdy gracz wytwarza coś w kowadle.  
+Możesz zmienić szansę na uszkodzenie kowadła.
 
-## Event Class
+## Klasa wydarzenia
 
-You will need to cast the event in the function header as this class:  
-`crafttweaker.event.PlayerAnvilRepairEvent`  
-You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
+Musisz aktywować wydarzenie w nagłówku funkcji jako klasa:  
+`crafttweaker.event. layerAnvilRepairEvent`  
+Możesz oczywiście również [zaimportować](/AdvancedFunctions/Import/) klasę przed i wtedy użyć tej nazwy.
 
-## Event interface extensions
+## Rozszerzenia interfejsu zdarzenia
 
-PlayerAnvilRepair Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+Zdarzenia PlayerAnvilRepair zaimplementują następujące interfejsy i są również w stanie wywołać wszystkie swoje metody/getters/setters:
 
-- [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
+- [Wydarzenie IPlayer](/Vanilla/Events/Events/IPlayerEvent/)
 
 ## ZenGetters
 
-The following information can be retrieved from the event:
+Z wydarzenia można uzyskać następujące informacje:
 
-| ZenGetter        | ZenSetter     | Return Type                              |
-| ---------------- | ------------- | ---------------------------------------- |
-| `player`         |               | [IPlayer](/Vanilla/Players/IPlayer/)     |
-| `itemInput`      |               | [IItemStack](/Vanilla/Items/IItemStack/) |
-| `itemIngredient` |               | [IItemStack](/Vanilla/Items/IItemStack/) |
-| `itenResult`     |               | [IItemStack](/Vanilla/Items/IItemStack/) |
-| `breakChance`    | `breakChance` | float                                    |
+| ZenGetter           | ZenSetter           | Typ zwrotu                               |
+| ------------------- | ------------------- | ---------------------------------------- |
+| `gracz`             |                     | [IPlayer](/Vanilla/Players/IPlayer/)     |
+| `itemInput`         |                     | [IItemStack](/Vanilla/Items/IItemStack/) |
+| `Składnik produktu` |                     | [IItemStack](/Vanilla/Items/IItemStack/) |
+| `itenResult`        |                     | [IItemStack](/Vanilla/Items/IItemStack/) |
+| `szansa na łamanie` | `szansa na łamanie` | zmiennoprzecinkowe                       |

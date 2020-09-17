@@ -1,18 +1,18 @@
-# IEventPositionable
+# Событие доступно
 
-This interface is extended by all events whose position matters.  
-That means you can use the getters below to access the position details.
+Этот интерфейс расширяет все события, чьи позиции позиции.  
+Это означает, что вы можете использовать получатели ниже для доступа к информации о позиции.
 
-## Importing the class
+## Импорт класса
 
-It might be required to [import](/AdvancedFunctions/Import/) the class to avoid errors.  
-`import crafttweaker.event.IEventPositionable;`
+Может потребоваться [импортировать](/AdvancedFunctions/Import/) класс, чтобы избежать ошибок.  
+`импорт crafttweaker.event.IEventPositionable;`
 
 ## ZenGetters
 
-| name     | type                                   |
+| имя      | type                                   |
 | -------- | -------------------------------------- |
 | position | [IBlockPos](/Vanilla/World/IBlockPos/) |
-| x        | int                                    |
-| y        | int                                    |
+| х        | int                                    |
+| у        | int                                    |
 | z        | int                                    |

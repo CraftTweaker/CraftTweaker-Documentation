@@ -1,79 +1,79 @@
-# Create a Commit
+# Utwórz polecenie
 
-## Prerequisites
+## Wymagania wstępne
 
-You need to have [Cloned the repo to your local disk](/Contribute/LocalClone/Clone).  
-You also need to already have changed something within your local clone.
+Musisz mieć [Klonowanie repozytorium na twój lokalny dysk](/Contribute/LocalClone/Clone).  
+Musisz również zmienić coś w lokalnym klonie.
 
-## What will we do
+## Co zrobimy
 
-For the sake of learning, we will create a file named `Test.md` which will be available in `AdvancedFunctions/Secret/Test` and add it to mkdocs.yml.
+W celu uczenia się utworzymy plik o nazwie `Test. d` , który będzie dostępny w `AdvancedFunctions/Secret/Test` i dodaj go do mkdocs.yml.
 
-The screenshots are taken from a Sublime Text 3 Editor (unregistered because on a VM), but you can use whatever editor you want to create/modify the files.  
-That's one of the advantages of working locally ^^.
+Zrzuty ekranu są pobierane z edytora Sublime Text 3 (niezarejestrowane z powodu VM), ale możesz użyć dowolnego edytora do tworzenia/modyfikowania plików.  
+To jedna z zalet pracy lokalnie ^^.
 
-Screenshots of the example files: ![Test.md](/Contribute/LocalClone/assets/Example1_TestMD.png) ![mkdocs.yml](/Contribute/LocalClone/assets/Example1_mkdocsYML.png)
+Zrzuty ekranu przykładowych plików: ![Test.md](/Contribute/LocalClone/assets/Example1_TestMD.png) ![mkdocs.yml](/Contribute/LocalClone/assets/Example1_mkdocsYML.png)
 
-## Git status and Git add/stage
+## Status Git i Dodaj/etap Git
 
-The `git status` command tells you which files have been changed.  
-In our example it shows us this:
+Polecenie `git status` wskazuje, które pliki zostały zmienione.  
+W naszym przykładzie pokazuje nam:
 
-![Git status call](/Contribute/LocalClone/assets/Example1_Bash_GitStatus.png)
+![Status połączenia Git](/Contribute/LocalClone/assets/Example1_Bash_GitStatus.png)
 
-As you can see, we have two sections, modified files and untracked files. Modified files are files whose content differ from the index (git knows another version of them than you currently have on your computer).  
-Untracked files are files that don't yet exist in the index (git doesn't know them yet).
+Jak widzisz, mamy dwie sekcje, zmodyfikowane pliki i nieśledzone pliki. Zmodyfikowane pliki to pliki, których zawartość różni się od indeksu (git zna ich inną wersję niż ta, którą aktualnie posiadasz na komputerze).  
+Pliki nieśledzone to pliki, które jeszcze nie istnieją w indeksie (git jeszcze ich nie zna).
 
-In both cases you can tell git to *stage* the files using either `git add` or `git stage`: ![Git status call](/Contribute/LocalClone/assets/Example1_Bash_GitStatus2.png)
+W obu przypadkach możesz powiedzieć git do *etapu* pliki używając `git add` lub `git stage`: ![Status połączenia Git](/Contribute/LocalClone/assets/Example1_Bash_GitStatus2.png)
 
-Now the files are staged to be committed and therefore printed in green. Notice, that if you were to modify either of those files now you would need to issue the add command again as it only adds the current state to the staging area.
+Teraz pliki te mają być rozłożone na etapy i w związku z tym drukowane na zielono. Zawiadomienie, gdybyś miał zmodyfikować jeden z tych plików, musisz wydać polecenie dodawania ponownie, ponieważ dodaje tylko bieżący stan do obszaru testowania.
 
-## Git commit
+## Zatwierdzenie Git
 
-Now that you have added the files you need to create a commit.  
-This can be done using the `git commit` command.
+Teraz, gdy dodałeś pliki, musisz utworzyć commit.  
+Można to zrobić używając komendy `git commit`.
 
-When you issue that command, all file states that are currently staged will be combined and added to the index.  
-That means that you can create one commit that changes more than one file (something GH's online editor is not capable of).  
-Usually you will want to create one commit per logical sector, so if you were to create a PR that adds documentation for ModA, ModB and ModC, you may want to create one commit that adds ModA, one that adds ModB and one that adds ModC.
+Gdy wydasz to polecenie, wszystkie stany plików, które są obecnie rozmieszczone, zostaną połączone i dodane do indeksu.  
+Oznacza to, że możesz utworzyć jeden commit, który zmienia więcej niż jeden plik (edytor online GHS nie jest w stanie tego zrobić).  
+Zazwyczaj chcesz utworzyć jeden commit dla każdego sektora logicznego, więc gdybyś miał utworzyć PR dodający dokumentację dla ModA, ModB i ModC, możesz utworzyć jeden commit dodający ModA, taki, który dodaje ModB i taki, który dodaje ModC.
 
-### Setting git Credentials
+### Ustawianie danych git
 
-If this is the first time you create a commit using git you will see this message: ![Git status call](/Contribute/LocalClone/assets/Example1_Bash_GitCommit_CredentialError.png)
+Jeśli po raz pierwszy utworzysz commit, używając git zobaczysz tę wiadomość: ![Status połączenia Git](/Contribute/LocalClone/assets/Example1_Bash_GitCommit_CredentialError.png)
 
-This means that git does not know who you are, so it does not know who the commit author is supposed to be. So let's run the commands stated in the error message:
+Oznacza to, że git nie wie, kim jesteście, a więc nie wie, kto ma być autorem zobowiązania. A więc uruchom polecenia podane w komunikacie o błędzie:
 
     git config --global user.email "yourEmail"
     git config --global user.name "yourName"
     
 
-For the email, use one that has been added to your GH account.  
-For the name you can use anything but try to use your GH account name.
+Dla wiadomości e-mail, użyj tego, który został dodany do Twojego konta GH.  
+Dla nazwy możesz użyć wszystkiego, ale spróbuj użyć nazwy konta GH.
 
-### Setting the commit title/message
+### Ustawianie tytułu/wiadomości commitu
 
-If your credentials are set correctly, you will get a screen like this: ![Git commit message window](/Contribute/LocalClone/assets/Example1_Bash_GitCommit_Message1.png)
+Jeśli twoje dane logowania są poprawnie ustawione, otrzymasz ekran w następujący sposób: ![Okno wiadomości zatwierdzenia Git](/Contribute/LocalClone/assets/Example1_Bash_GitCommit_Message1.png)
 
-This is from the text editor GitBash uses for that.  
-To enter insert mode (so that you can write something), press the INSERT key.  
-Now you can write your commit title (first line) and the commit message (everything below that).  
-You can use the ENTER key to create a new line and everything starting with a `#` will be ignored.
+To jest z edytora tekstu do tego używa GitBash.  
+Aby przejść do trybu wstawiania (aby można było coś zapisać), naciśnij klawisz INSERT.  
+Teraz możesz napisać tytuł zatwierdzenia (pierwszy wiersz) i wiadomość zatwierdzenia (wszystko poniżej tego).  
+Możesz użyć klawisza ENTER do utworzenia nowej linii, a wszystko zaczynające się od `#` zostanie zignorowane.
 
-Don't mind the coloring, that's not your concern right now.  
-To exit the INSERT mode, press ESC.
+Nie myślisz o barwieniu, to nie jest teraz twoja obawa.  
+Aby wyjść z trybu INSERT, naciśnij ESC.
 
-Now you need to tell the editor that you are finished.  
-You can do that by typing pressing `:x` and pressing ENTER.
+Teraz musisz powiedzieć edytorowi, że jesteś gotowy.  
+Możesz to zrobić, wpisując `:x` i naciskając ENTER.
 
-Here's a screen of what this may look like just before pressing enter to leave the editor: ![Git commit message window](/Contribute/LocalClone/assets/Example1_Bash_GitCommit_Message2.png)
+Oto ekran tego, jak to może wyglądać tuż przed naciśnięciem klawisza Enter, aby opuścić edytor: ![Okno wiadomości zatwierdzenia Git](/Contribute/LocalClone/assets/Example1_Bash_GitCommit_Message2.png)
 
-### Setting the commit message/title using -m
+### Ustawianie wiadomości/tytułu zatwierdzenia za pomocą -m
 
-If you don't like the bash editor or find it hard to remember what keys to press, you can also use the `-m "message"` parameter. You can open the `"` and leave it unmatched to be able to create line breaks. Finish by typing the maching `"`.  
-Like in the editor, everything below the first line is considered part of the commit message.
+Jeśli nie lubisz edytora bash lub trudno zapamiętać jakie klucze do naciśnięcia, możesz również użyć parametru `-m "message"`. Możesz otworzyć `"` i zostawić go niedopasowanego, aby móc tworzyć przerwy liniowe. Zakończ wpisując obróbkę `"`.  
+Podobnie jak w edytorze, wszystko poniżej pierwszego wiersza jest uważane za część wiadomości zatwierdzenia.
 
-The same commit message as above could be achieved by doing: ![Git commit using -m](/Contribute/LocalClone/assets/Example1_Bash_GitCommit_MessageParameter.png)
+Ta sama wiadomość zatwierdzenia, co powyżej, może zostać osiągnięta przez wykonanie: ![Zatwierdzenie Git przy użyciu -m](/Contribute/LocalClone/assets/Example1_Bash_GitCommit_MessageParameter.png)
 
-## How to continue
+## Jak kontynuować
 
-Now that you know how to create commits, you can [push them to your fork](/Contribute/LocalClone/Push/).
+Teraz, gdy wiesz jak tworzyć commity, możesz [nacisnąć je na swój fork](/Contribute/LocalClone/Push/).

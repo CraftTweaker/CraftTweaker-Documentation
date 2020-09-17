@@ -1,17 +1,17 @@
-# Foreword
+# 前文
 
-This section will contain Tips and Tricks from experienced Tweakers.  
-Remember that these are really individual and some can also hinder you from achieving your aims instead of facilitating it.
+このセクションには、経験豊富なTweakersからのヒントとトリックが含まれます。  
+これらは本当に個人的なものであり、また、目的を達成することを妨げるものもあります。
 
-## What this section is for
+## このセクションの対象
 
-- Show you strategies on how to minimize your scripts.
-- Show you strategies on how to save time writing the scripts.
-- Show you strategies on how to make your scripts easier to read.
-- Show you strategies on how to make your scripts easier to debug.
-- Show you some often occuring mistakes, so you can spot them more easily in your scripts.
+- スクリプトを最小化する方法についての戦略を表示します。
+- スクリプトを書く時間を節約する方法についての戦略を表示します。
+- スクリプトを読みやすくするための戦略を表示します。
+- スクリプトをデバッグしやすくするための戦略を示します。
+- いくつかの間違いを頻繁に表示するので、スクリプトでそれらをより簡単に見つけることができます。
 
-## What this section is NOT for
+## このセクションが対象ではないもの
 
-- This section is not to be understood as kind of Tutorial for the novice Tweaker.
-- These tips are just tips, you don't need to implement them in your scripts and some might even be inappropriate for what you are trying to achieve.
+- このセクションは初心者のTweakerの一種として理解されるべきではありません。
+- これらのヒントは、単なるヒントです スクリプトに実装する必要はありませんし達成しようとしていることに不適切なものもあります

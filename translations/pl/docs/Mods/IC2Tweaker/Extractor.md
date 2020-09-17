@@ -1,23 +1,23 @@
-# Extractor
+# Wyciągający
 
-## Package
+## Pakiet
 
-`import mods.ic2.Extractor;`
+`importuj mods.ic2.Extractor;`
 
-## Methods
+## Metody
 
 - **[IItemStack](/Vanilla/Items/IItemStack/) output**
-- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input**
+- **[Składnik](/Vanilla/Variable_Types/IIngredient/) wejście**
 
-## Addition
+## Dodanie
 
 ```zenscript
-mods.ic2.Extractor.addRecipe(IItemStack output, IIngredient input);
+mods.ic2.Extractor.addRecipe(wyjście IItemStack, Wejście IIngredienta);
 
 mods.ic2.Extractor.addRecipe(<minecraft:diamond_block>, <minecraft:dirt> * 64);
 ```
 
-## Removal
+## Usuwanie
 
-- If using Ic2 Experimental, to remove a recipe, simply remove the corresponding line in `config/ic2/extractor.ini`
-- If using Ic2 Classic, to remove a recipe, simply disable the corresponding recipe in `config/ic2/ic2machineRecipes.json`.
+- Jeśli używasz eksperymentalnego Ic2, aby usunąć przepis, po prostu usuń odpowiedni wiersz w `config/ic2/extractor.ini`
+- Jeśli używasz Ic2 Classic, aby usunąć przepis, po prostu wyłącz odpowiedni przepis w `config/ic2/ic2machineRecipes.json`.

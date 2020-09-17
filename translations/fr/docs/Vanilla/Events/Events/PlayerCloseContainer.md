@@ -1,21 +1,21 @@
-# PlayerCloseContainer
+# Conteneur de Joueur
 
-The PlayerCloseContainer Event is fired whenever a player closes a container.
+L'événement PlayerCloseContainer est lancé chaque fois qu'un joueur ferme un conteneur.
 
-## Event Class
-You will need to cast the event in the function header as this class:  
-`crafttweaker.event.PlayerCloseContainerEvent`  
-You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
+## Classe de l'événement
+Vous devrez lancer l'événement dans l'en-tête de la fonction comme cette classe:  
+`crafttweaker.event. layerCloseContainerEvent`  
+Vous pouvez, bien sûr, également [importer](/AdvancedFunctions/Import/) la classe avant et utiliser ce nom alors.
 
-## Event interface extensions
-PlayerCloseContainer Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+## Extensions d'interface de l'événement
+Les événements PlayerCloseContainer implémentent les interfaces suivantes et peuvent également appeler toutes leurs méthodes/getters/setters :
 
-- [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
+- [Evénement IPlayer](/Vanilla/Events/Events/IPlayerEvent/)
 
 
 ## ZenGetters
-The following information can be retrieved from the event:
+Les informations suivantes peuvent être récupérées à partir de l'événement :
 
-| ZenGetter   | Return Type                                  |
+| ZenGetter   | Type de retour                               |
 | ----------- | -------------------------------------------- |
-| `container` | [IContainer](/Vanilla/Container/IContainer/) |
+| `conteneur` | [IConteneur](/Vanilla/Container/IContainer/) |

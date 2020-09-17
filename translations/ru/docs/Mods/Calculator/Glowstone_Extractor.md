@@ -1,6 +1,6 @@
-# Glowstone Extractor
+# Светящийся Экстрактор
 
-## Package
+## Пакет
 ```zenscript
 import mods.calculator.glowstone;
 ```
@@ -8,15 +8,15 @@ import mods.calculator.glowstone;
 ## Методы
 
 - **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input** The input.
-- **Int value** The amount of input adds to that machine.
+- **Int значение** количество входных данных добавляет к этой машине.
 
 
-## Additon
+## Добавить
 ```zenscript
-glowstone.addRecipe(IIngredient input, int value);
+glowstone.addRecipe(IIngredient input, int value)
 ```
 
-## Removal
+## Удаление
 ```zenscript
 glowstone.removeRecipe(IIngredient input);
 ```

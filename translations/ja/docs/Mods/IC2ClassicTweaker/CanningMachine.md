@@ -1,22 +1,22 @@
-# Canning Machine
+# 缶詰機
 
-## Package
+## パッケージ
 
 ```zenscript
 import mods.ic2.CanningMachine;
 ```
 
-### List of effect ids
-* 1: Hunger (Rotten Flesh) (80% chance)
-* 2: Poison (Spider Eye)
-* 3: Hunger (Raw Chicken) (30% chance)
-* 4: Golden Apple
-* 5: Notch Apple
-* 6: Corus Fruit
+### エフェクトIDのリスト
+* 1:空腹(ロッテン・フレッシュ)(80%)
+* 2：毒（クモの目）
+* 3：飢餓（鶏ガラ）（30%）
+* 4: 金のリンゴ（金）
+* 5: ノッチのリンゴ（リンゴ）
+* 6: コーラスフルーツ
 
-## Methods
+## メソッド
 
-### Register Items For Effect (int id, IItemstack... inputs)
+### エフェクトのアイテムを登録する (int id, IItemstack... inputs)
 
 
 ```zenscript
@@ -25,8 +25,8 @@ mods.ic2.CanningMachine.registerItemsForEffect(int id, IItemstack... inputs);
 mods.ic2.CanningMachine.registerItemsForEffect(4, <minecraft:fish>);
 ```
 
-- **[IItemStack](/Vanilla/Items/IItemStack/)... inputs** The inputs getting the food can effect.
-- **int id** The effectID you want to apply to the specified items. Valid effect ids are as follows:
+- **[IItemStack](/Vanilla/Items/IItemStack/)... 入力** 食物を得る入力が効果を発揮する。
+- **int id** 指定した項目に適用するエフェクトID。 有効なエフェクトIDは次のとおりです。
 
 ### Delete Effect Id (int id, boolean deleteItems)
 ```zenscript    
@@ -35,49 +35,49 @@ mods.ic2.CanningMachine.deleteEffectId(int id, boolean deleteItems);
 mods.ic2.CanningMachine.deleteEffectId(5, false);
 ```
 
-- **int id** The effectID you want to remove from filled can. Refer to above for valid effect ids.
-- **boolean deleteItems** Whether to remove items with that effect from filed cans too. Currently this boolean may not work.
+- **int id** 塗りつぶされた缶から削除するエフェクトID。 有効なエフェクトIDについては上記を参照してください。
+- **boolean deleteItems** その効果を持つアイテムをファイルされた缶からも削除するかどうか。 現在このブール値は動作しない可能性があります。
 
-### Register Fuel Value (int fuelValue, IItemStack input)
+### 燃料値の登録 (int fuelValue, IItemStack input)
 ```zenscript
 mods.ic2.CanningMachine.registerFuelValue(int fuelValue, IItemStack input);
 
 mods.ic2.CanningMachine.registerFuelValue(10, <minecraft:diamond_block>);
 
-mods.ic2.CanningMachine.registerFuelValue(1274, <ic2:itemmisc:102>); //Formerly had a value of 2548.
+mods.ic2.CanningMachine.registerFuelValue(1274, <ic2:itemmisc:102>); //Formerly has value of 2548
 ```
 
-- **int fuelValue** How much fuel the specified item is worth.
-- **[IItemStack](/Vanilla/Items/IItemStack/) input** The item to register that fuel value for. It can even be items with existing values, in which case the previously specified value will be overwritten. Note: must be an itemstack, no oredicts allowed.
+- **int fuelValue** 指定されたアイテムの燃料量。
+- **[IItemStack](/Vanilla/Items/IItemStack/) input** その燃料値を登録する項目。 既存の値を持つアイテムにすることもできます。この場合、以前に指定した値が上書きされます。 注: アイテムスタックでなければなりません。鉱石は許可されていません。
 
-### Register Fuel Multiplier (float fuelMultiplier, IItemStack input)
+### 燃料乗算器を登録 (fuelMultiplier, IItemStack input)
 ```zenscript
 mods.ic2.CanningMachine.registerFuelMultiplier(float fuelMultiplier, IItemStack input);
 
 mods.ic2.CanningMachine.registerFuelMultiplier(0.5f, <minecraft:diamond>);
 ```
 
-- **float fuelMultiplier** What percentage the previously input value is increased by. for example 1 = 100%, 0.5 = 50%, 0 = 0%, ect.
-- **[IItemStack](/Vanilla/Items/IItemStack/) input** The item to register that fuel multiplier for. It can even be items with existing multipliers, in which case the previously specified multiplier will be overwritten. Note: must be an itemstack, no oredicts allowed.
+- **float型のfuelMultiplier** 以前の入力値がどの程度増加するか。 例えば、1 = 100%、0.5 = 50%、0 = 0%、ect。
+- **[IItemStack](/Vanilla/Items/IItemStack/) 入力** 燃料乗算器を登録する項目。 既存の乗数を持つアイテムであってもかまいません。この場合、以前に指定した乗数は上書きされます。 注: アイテムスタックでなければなりません。鉱石は許可されていません。
 
-### Delete Item Fuel (IItemStack input)
+### アイテム燃料を削除 (IItemStack input)
 ```zenscript
 mods.ic2.CanningMachine.deleteItemFuel(IItemStack input);
 
 mods.ic2.CanningMachine.deleteItemFuel(<ic2:itemmisc:102>);
 ```
 
-- **[IItemStack](/Vanilla/Items/IItemStack/) input** The item to be removed from being an input for the fuel can.
+- **[IItemStack](/Vanilla/Items/IItemStack/) 入力** 燃料缶の入力から取り除かれるアイテム。
 
-See [here](https://github.com/TinyModularThings/IC2Classic/wiki/Fuel-Cans) for info on how fuel cans work.
+燃料缶の仕組みについては、こちら [](https://github.com/TinyModularThings/IC2Classic/wiki/Fuel-Cans) をご覧ください。
 
-### Add Canning Recipe (IItemStack output, IIngredient filler, IItemStack container)
+### キャンニングレシピの追加 (IItemStack 出力, IIngredient filler, IItemStack container)
 ```zenscript
 mods.ic2.CanningMachine.addCanningRecipe(IItemStack output, IIngredient filler, IItemStack container);  
 
 mods.ic2.CanningMachine.addCanningRecipe(<minecraft:emerald>, <minecraft:diamond>, <minecraft:bucket>);
 ```
-- **[IItemStack](/Vanilla/Items/IItemStack/) output** The product
-- **[IItemStack](/Vanilla/Items/IItemStack/) container** The itemstack to be "filled"
-- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) filler** The ingredient with which is filled into the container
+- **[IItemStack](/Vanilla/Items/IItemStack/) 出力** 製品
+- **[IItemStack](/Vanilla/Items/IItemStack/) コンテナ** "塗りつぶされるアイテムスタック。
+- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) フィラー** 容器に埋め込まれた成分。
 

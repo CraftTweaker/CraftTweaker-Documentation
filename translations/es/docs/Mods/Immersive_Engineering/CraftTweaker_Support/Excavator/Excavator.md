@@ -1,43 +1,43 @@
-# Excavator
+# Excavador
 
-## Calling The Package
+## Llamar al paquete
 
-You can call the Excavator package using `mods.immersiveengineering.Excavator`.
+Puedes llamar al paquete Excavator usando `mods.immersiveengineering.Excavator`.
 
-## Add Mineral
+## Añadir Mineral
 
-| Required | Type                | Data Type |
-| -------- | ------------------- | --------- |
-| Required | Name                | string    |
-| Required | Mineral Weight      | int       |
-| Required | Fail Chance         | double    |
-| Required | Ores                | string[]  |
-| Required | Chances             | double[]  |
-| Optional | Dimension Whitelist | int []    |
-| Optional | Blacklist           | boolean   |
+| Requerido | Tipo                      | Tipo de Datos |
+| --------- | ------------------------- | ------------- |
+| Requerido | Nombre                    | cadena        |
+| Requerido | Peso Mineral              | int           |
+| Requerido | Probabilidad de fallo     | doble         |
+| Requerido | Ores                      | cadena[]      |
+| Requerido | Oportunidades             | doble[]       |
+| Opcional  | Dimensión de lista blanca | int []        |
+| Opcional  | Lista negra               | boolean       |
 
-### Example
+### Ejemplo
 
 ```zenscript
-//Example:
+//Ejemplo:
 mods.immersiveengineering.Excavator.addMineral(String name, int mineralWeight, double failChance, String[] ores, double[] chances, @Optional int[] dimensionWhitelist, @Optional boolean blacklist);
 
-mods.immersiveengineering.Excavator.addMineral("Iron Ore", 50, 0.005, ["oreIron", "oreDiamond"], [0.005, 0.01]);
-mods.immersiveengineering.Excavator.addMineral("Iron Ore", 50, 0.005, ["oreIron", "oreDiamond"], [0.005, 0.01], [1, 0, -1]);
-mods.immersiveengineering.Excavator.addMineral("Iron Ore", 50, 0.005, ["oreIron", "oreDiamond"], [0.005, 0.01], [1, 0, -1], true);
+mods.immersiveengineering.Excavator.addMineral("Iron Ore", 50, 0. 05, ["oreIron", "oreDiamond"], [0.005, 0.01]);
+mods.immersiveengineering.Excavator.addMineral("Iron Ore", 50, 0.005, ["oreIron", "oreDiamond"], [0.005, 0. 1], [1, 0, -1]);
+mods.immersiveengineering.Excavator.addMineral("Iron Ore", 50, 0.005, ["oreIron", "oreDiamond"], [0.005, 0.01], [1, 0, -1], verdadero);
 ```
 
-## Remove Mineral
+## Quitar Mineral
 
-| Required | Type | Data Type |
-| -------- | ---- | --------- |
-| Required | Name | String    |
+| Requerido | Tipo   | Tipo de Datos |
+| --------- | ------ | ------------- |
+| Requerido | Nombre | Cadena        |
 
-### Example
+### Ejemplo
 
 ```zenscript
-//Example:
+//Ejemplo:
 mods.immersiveengineering.Excavator.removeMineral(String name);
 
-mods.immersiveengineering.Excavator.removeMineral("Iron Ore");
+mods.immersiveengineering.Excavator.removeMineral("Hierro");
 ```

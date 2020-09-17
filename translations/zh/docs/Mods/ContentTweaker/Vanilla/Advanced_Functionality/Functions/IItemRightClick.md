@@ -1,28 +1,28 @@
 # IItemRightClick
 
-The IItemRightClick function can be added to an [Item](/Mods/ContentTweaker/Vanilla/Creatable_Content/Item/) and will be triggered when a user does rightclick with the item selected in his primary hand.
+ItemRightClick 函数可以添加到 [项目](/Mods/ContentTweaker/Vanilla/Creatable_Content/Item/) 中，当用户正确点击他的主手中选定的项目时，将会触发它。
 
 ## 导入相关包
 
-It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
-`import mods.contenttweaker.IItemRightClick;`
+如果您遇到任何问题，可能需要导入软件包，所以比抱歉更安全并添加导入。  
+`导入 mods.contenttweaker.IItemRightClick；`
 
-## Parameters
+## 参数
 
-The IItemRightClick function is a function with the following parameters:
+IItemRightClick 函数是具有以下参数的函数：
 
-- [IMutableItemStack](/Mods/ContentTweaker/Vanilla/Types/Item/IMutableItemStack/) itemStack → The item that is right-clicked
-- [IWorld](/Mods/ContentTweaker/Vanilla/Types/World/IWorld/) world → The world the player is in
-- [ICTPlayer](/Mods/ContentTweaker/Vanilla/Types/Player/ICTPlayer/) player → The player doing the right-click
-- String hand → Either "OFF_HAND" or "MAIN_HAND"
+- [IMutableItemStack](/Mods/ContentTweaker/Vanilla/Types/Item/IMutableItemStack/) itemStack → 右键点击的物品
+- [IWorld](/Mods/ContentTweaker/Vanilla/Types/World/IWorld/) world → 玩家所在的世界
+- [ICTPlayer](/Mods/ContentTweaker/Vanilla/Types/Player/ICTPlayer/) 播放器 → 执行右键的播放器
+- string hand → "OFF_HAND" 或 "MAIN_HAND"
 
-The function needs to return either `"SUCCESS"`, `"PASS"` or `"FAIL"`
+函数需要返回 `"SUCCSS"`, `"PASS"` 或 `"错误"`
 
-## Example
+## 例子
 
 ```zenscript
-zsItem.itemRightClick = function(stack, world, player, hand) {
-    Commands.call("scoreboard players set @p name 5", player, world);
+zsItem.itemRightClick = function(stack, world, player, hand) Group
+    Commands.call("scoreard players set @p name 5", player, world);
     return "Pass";
 };
 ```

@@ -1,15 +1,15 @@
 # Compactor
 
-## Package
+## パッケージ
 
 `mods.thermalexpansion.Compactor`
 
 Compactorでは、4種類の修飾子をサポートしています。
 
-    Mint
-    Press
-    Storage
-    Gear
+    ミント
+    
+    のストレージ
+    を押す
     
 
 ## Mint(造幣)
@@ -18,7 +18,7 @@ Mint修飾子は、Thermal Expansionのレシピマップにおける、`COIN`�
 
 これらのレシピ使うには、Numismatic Press Augmentが必要なことに注意してください。
 
-### Addition
+### 加算
 
 ```zenscript
 mods.thermalexpansion.Compactor.addMintRecipe(IItemStack output, IItemStack input, int energy);
@@ -26,7 +26,7 @@ mods.thermalexpansion.Compactor.addMintRecipe(IItemStack output, IItemStack inpu
 mods.thermalexpansion.Compactor.addMintRecipe(<minecraft:sand>, <minecraft:stick>, 1500);
 ```
 
-### Removal
+### 削除
 
 ```zenscript
 mods.thermalexpansion.Compactor.removeMintRecipe(IItemStack input);
@@ -34,13 +34,13 @@ mods.thermalexpansion.Compactor.removeMintRecipe(IItemStack input);
 mods.thermalexpansion.Compactor.removeMintRecipe(<thermalfoundation:material:167>);
 ```
 
-## Press
+## プレス
 
 Press修飾子は、Thermal Expansionのレシピマップにおける、`PLATE`, `COIN`, または`GEAR`に登録されていないレシピを変更させます。
 
 これらのレシピは、特定のAugmentを必要としません。
 
-### Addition
+### 加算
 
 ```zenscript
 mods.thermalexpansion.Compactor.addPressRecipe(IItemStack output, IItemStack input, int energy);
@@ -48,7 +48,7 @@ mods.thermalexpansion.Compactor.addPressRecipe(IItemStack output, IItemStack inp
 mods.thermalexpansion.Compactor.addPressRecipe(<minecraft:sand>, <minecraft:apple>, 1500);
 ```
 
-### Removal
+### 削除
 
 ```zenscript
 mods.thermalexpansion.Compactor.removePressRecipe(IItemStack input);
@@ -56,13 +56,13 @@ mods.thermalexpansion.Compactor.removePressRecipe(IItemStack input);
 mods.thermalexpansion.Compactor.removePressRecipe(<thermalfoundation:material:167>);
 ```
 
-## Storage
+## ストレージ
 
-Storage修飾子は、Thermal Expansionのレシピマップにおける、`PLATE `に登録されているレシピを変更します。
+Storage修飾子は、Thermal Expansionのレシピマップにおける、`PLATE`に登録されているレシピを変更します。
 
 これらのレシピは特定のAugmentを必要とせず、どうやらプレート専用として使われているようです。
 
-### Addition
+### 加算
 
 ```zenscript
 mods.thermalexpansion.Compactor.addStorageRecipe(IItemStack output, IItemStack input, int energy);
@@ -70,7 +70,7 @@ mods.thermalexpansion.Compactor.addStorageRecipe(IItemStack output, IItemStack i
 mods.thermalexpansion.Compactor.addStorageRecipe(<minecraft:sand>, <minecraft:arrow>, 1500);
 ```
 
-### Removal
+### 削除
 
 ```zenscript
 mods.thermalexpansion.Compactor.removeStorageRecipe(IItemStack input);
@@ -78,13 +78,13 @@ mods.thermalexpansion.Compactor.removeStorageRecipe(IItemStack input);
 mods.thermalexpansion.Compactor.removeStorageRecipe(<thermalfoundation:material:167>);
 ```
 
-## Gear
+## 装備
 
 Gear修飾子は、Thermal Expansionのレシピマップにおける、`GEAR`に登録されているレシピを変更します。
 
 これらのレシピ使うには、Gearworking Die Augmentが必要なことに注意してください。
 
-### Addition
+### 加算
 
 ```zenscript
 mods.thermalexpansion.Compactor.addGearRecipe(IItemStack output, IItemStack input, int energy);
@@ -92,7 +92,7 @@ mods.thermalexpansion.Compactor.addGearRecipe(IItemStack output, IItemStack inpu
 mods.thermalexpansion.Compactor.addGearRecipe(<minecraft:sand>, <minecraft:arrow>, 1500);
 ```
 
-### Removal
+### 削除
 
 ```zenscript
 mods.thermalexpansion.Compactor.removeGearRecipe(IItemStack input);

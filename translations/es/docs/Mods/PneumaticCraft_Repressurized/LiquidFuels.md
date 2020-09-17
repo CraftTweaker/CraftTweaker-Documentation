@@ -1,35 +1,35 @@
-# Liquid Fuels
+# Combustibles líquidos
 
-Liquid Fuels are used in PneumaticCraft: Repressurized in the (Advanced) Liquid Compressor to create compressed air, and (optionally) in the Kerosene Lamp to produce light. By default the liquids produced in the Refinery are defined as fuel, as well as any liquid above a temperature of 305 degrees Kelvin.
+Los combustibles líquidos se utilizan en PneumaticCraft: Represurizado en el compresor líquido (avanzado) para crear aire comprimido y (opcionalmente) en la Lámpara Keroseno para producir luz. Por defecto, los líquidos producidos en la Refinería se definen como combustible, así como cualquier líquido por encima de una temperatura de 305 grados Kelvin.
 
-## Calling
+## Llamando
 
-You can call the Liquid Fuels package using `mods.pneumaticcraft.liquidfuel`.
+Puede llamar al paquete de combustibles líquidos usando `mods.pneumaticcraft.liquidfuel`.
 
-## Removing
+## Eliminando
 
-This function deregisters the [ILiquidStack](/Vanilla/Liquids/ILiquidStack/) `fluid` as a fuel:
+Esta función deshace el [ILiquidStack](/Vanilla/Liquids/ILiquidStack/) `fluido` como combustible:
 
 ```zenscript
-mods.pneumaticcraft.liquidfuel.removeFuel(ILiquidStack fluid);
-// Example
+mods.pneumaticcraft.liquidfuel.removeFuel(ILiquidStack fluido);
+// Ejemplo
 mods.pneumaticcraft.liquidfuel.removeFuel(<liquid:lpg>);
 ```
 
-This function deregisters *all* registered fuels:
+Esta función desactiva *todos los* combustibles registrados:
 
 ```zenscript
 mods.pneumaticcraft.liquidfuel.removeAllFuels();
 ```
 
-## Adding
+## Agregando
 
-The following functions can be used to add fluids to the fuel registry:
+Las siguientes funciones se pueden utilizar para añadir fluidos al registro de combustible:
 
 ```zenscript
-// Register a certain liquid as a fuel. mlPerBucket defines the amount of compressed air produced per bucket of fuel. For reference, 16000mL of air is produced from a piece of Coal in an Air Compressor.
-mods.pneumaticcraft.liquidfuel.addFuel(ILiquidStack fluid, double mlPerBucket);
+// Registrar un cierto líquido como combustible. mlPerBucket define la cantidad de aire comprimido producido por cada cubo de combustible. Para referencia, 16000mL de aire se produce a partir de una pieza de carbón en un compresor de aire.
+mods.pneumaticcraft.liquidfuel.addFuel(fluido ILiquidStack, doble mlPerBucket);
 
-// Example: register water as a fuel which produces 16000mL air per bucket.
+// Ejemplo: registrar agua como combustible que produce 16000mL de aire por cubeta.
 mods.pneumaticcraft.liquidfuel.addFuel(<liquid:water>, 16000);
 ```

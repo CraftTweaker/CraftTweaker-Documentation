@@ -1,50 +1,50 @@
-# Using this wiki
+# Utiliser ce wiki
 
-This wiki is meant to provide you an outline on which Types exist in crafttweaker and what their uses are.  
-There also are some examples in certain entries to provide further clarity.
+Ce wiki est destiné à vous fournir un aperçu des types qui existent dans crafttweaker et de leurs usages.  
+Il y a aussi quelques exemples dans certaines entrées pour fournir plus de clarté.
 
-# Terms
+# Conditions générales de vente
 
-Before we start, there are some terms you might want to get used to:
+Avant de commencer, il y a des termes que vous pouvez utiliser pour :
 
 ## ZenGetter
 
-A ZenGetter is a way of retrieving information from a certain object. For example [IItemStack](/Vanilla/Items/IItemStack/) has a ZenGetter called "displayName".  
-We use the ZenGetter like this:
+Un ZenGetter est un moyen de récupérer des informations à partir d'un certain objet. Par exemple [IItemStack](/Vanilla/Items/IItemStack/) a un ZenGetter appelé "displayName".  
+Nous utilisons le ZenGetter comme ceci :
 
 ```zenscript
 //object.zenGetter;
 <minecraft:iron_ingot>.displayName;
 ```
 
-A ZenGetter will always return something, in this case a string representing the item's name ("Iron Ingot").
+Un ZenGetter retournera toujours quelque chose, dans ce cas, une chaîne représentant le nom de l'objet ("Iron Ingot").
 
 ## ZenSetter
 
-A ZenSetter works almost the same way as a ZenGetter does, the only difference is that a ZenSetter sets, a ZenGetter gets.  
-Let's stay with our [IItemStack](/Vanilla/Items/IItemStack/), since it also has a ZenSetter called "displayName". We know from the entry that it is of type string.
+Un ZenSetter fonctionne à peu près de la même manière qu'un ZenGetter, la seule différence est qu'un ZenSetter s'applique, un ZenGetter obtient.  
+Restons avec notre [IItemStack](/Vanilla/Items/IItemStack/), car il a aussi un ZenSetter appelé "displayName". Nous savons par l'entrée qu'elle est de type string.
 
-We use the ZenSetter like this:
+Nous utilisons le ZenSetter comme ceci :
 
 ```zenscript
 //object.zenSetter = newValue;
-<minecraft:iron_ingot>.displayName = "Unsuspecting Ingot";
+<minecraft:iron_ingot>.displayName = "Lingot sans méfiance";
 ```
 
-A ZenSetter will never return something, since it is meant to set, not to get.
+Un ZenSetter ne retournera jamais quelque chose, car il est censé se mettre en place, ne pas obtenir.
 
-## Assign operators
+## Assigner des opérateurs
 
-If an item has both, a ZenGetter and a ZenSetter with the same name (e.g. [IItemStack's](/Vanilla/Items/IItemStack/) "displayName"), you can use the assign operators other than `=`:
+Si un objet a les deux, un ZenGetter et un ZenSetter avec le même nom (par ex. [IItemStack](/Vanilla/Items/IItemStack/) "displayName"), vous pouvez utiliser les opérateurs d'assignation autres que `=`:
 
-Depending on the type you can use these: `&=`, `|=`, `+=`, `-=`, `*=`, `/=`, `%=`, `~=`.  
-Let's see what they do:
+Selon le type que vous pouvez utiliser : `&=`, `|=`, `+=`, `-=`, `*=`, `/=`, `%=`, `~=`.  
+Voyons voir ce qu'ils font :
 
 ```zenscript
-//Since we have a ZenGetter and a ZenSetter with the same name, the first does the same as the second:
-//object.zenSetter += value;
-//object.zenSetter = object.zenGetter + value;
+//Puisque nous avons un ZenGetter et un ZenSetter avec le même nom, le premier fait le même que le second:
+//object. enSetter += value;
+//object. enSetter = object.zenGetter + valeur;
 
-<minecraft:iron_ingot>.displayName += " of Doom";
-<minecraft:iron_ingot>.displayName = <minecraft:iron_ingot>.displayName + " of Doom";
+<minecraft:iron_ingot>.displayName += " de Doom";
+<minecraft:iron_ingot>.displayName = <minecraft:iron_ingot>.displayName + " de Doom";
 ```

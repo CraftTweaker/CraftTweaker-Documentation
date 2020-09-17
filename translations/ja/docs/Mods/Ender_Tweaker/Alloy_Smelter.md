@@ -1,25 +1,25 @@
-# Alloy Smelter
+# 合金精錬機
 
-## Package
+## パッケージ
 
 `import mods.enderio.AlloySmelter;`
 
-## Methods
+## メソッド
 
-- **[IItemStack](/Vanilla/Items/IItemStack/) output** The result of the recipe.
-- **[IIngredient](/Vanilla/Variable_Types/IIngredient/)[] input** The ingredients. Must be between 1 and 3 ingredients.
-- **int energyCost** How much FE the recipe uses. Defaults to 5000.
-- **float xp** The xp is granted from this recipe. May not be negative.
+- **[IItemStack](/Vanilla/Items/IItemStack/) 出力** レシピの結果。
+- **[IIngredient](/Vanilla/Variable_Types/IIngredient/)[] input** 材料. 1から3の材料の間でなければなりません。
+- **intenergyCost** レシピが使用するFEの量。 デフォルトは5000です。
+- **float xp** このレシピから xp が付与されます。 否定的ではないかもしれない。
 
-## Addition
+## 加算
 
 ```zenscript
-mods.enderio.AlloySmelter.addRecipe(IItemStack output, IIngredient[] input, @Optional int energyCost, @Optional float xp);
+mods.enderio.AlloySmelter.addRecipe(IItemStack 出力, IIngredient[] input, @Optional int energyCost, @Optional float xp);
 
 mods.enderio.AlloySmelter.addRecipe(<minecraft:iron_ingot>, [<minecraft:sand>, <minecraft:gravel>, <minecraft:brick>]);
 ```
 
-## Removal
+## 削除
 
 ```zenscript
 mods.enderio.AlloySmelter.removeRecipe(IItemStack output);

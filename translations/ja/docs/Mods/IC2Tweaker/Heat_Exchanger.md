@@ -1,18 +1,18 @@
-# Heat Exchanger
+# 熱交換
 
-## Package
+## パッケージ
 
 `import mods.ic2.HeatExchanger;`
 
-## Methods
+## メソッド
 
-- **[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) output** The liquid after it's been heated up/cooled down
-- **[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) input** The liquid before it's been heated up/cooled down
-- **int heat** The heat required to heat the fluid or gained by cooling it down
+- **[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) 出力** 加熱/冷却後の液体。
+- **[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) 入力** 液体が加熱/冷却される前の液体。
+- **int heat** 液体を加熱するために必要な熱または冷却することによって得られる熱。
 
-Alternatively you can use [ILiquidDefinition](/Vanilla/Liquids/ILiquidDefinition) objects instead of the [ILiquidStack](/Vanilla/Liquids/ILiquidStack/) objects.
+あるいは、 [ILiquidStack](/Vanilla/Liquids/ILiquidDefinition) オブジェクトの代わりに [ILiquidDefinition](/Vanilla/Liquids/ILiquidStack/) オブジェクトを使用することもできます。
 
-## Add Fluid Cool Down
+## 流体冷却を追加
 
 ```zenscript
 mods.ic2.HeatExchanger.addFluidCoolDown(ILiquidStack output, ILiquidStack input, int heat);
@@ -22,7 +22,7 @@ mods.ic2.HeatExchanger.addFluidCoolDown(<liquid:lava>, <liquid:water>, 10);
 mods.ic2.HeatExchanger.addFluidCoolDown(<liquid:lava>.definition, <liquid:water>.definition, 10);
 ```
 
-## Add Fluid Heat Up
+## 流体熱を上に追加
 
 ```zenscript
 mods.ic2.HeatExchanger.addFluidHeatUp(ILiquidStack output, ILiquidStack input, int heat);

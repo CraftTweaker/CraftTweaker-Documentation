@@ -95,10 +95,10 @@ val vInt = switchy ? 1 : 2;
 print(vInt);
 
 //Gibt "Hallo" aus, wenn switchy true ist, ansonsten "Tschüss"
-print(switchy ? "Hallo" : "Tschüss");
+print(switchy ? print("Tschüss") : print("Hallo"); "Hallo" : "Tschüss");
 
 //Gibt "Tschüss" aus, wenn switchy true ergibt, ansonsten "Hallo"
-switchy ? print("Tschüss") : print("Hallo");
+switchy ?
 
 ```
 
@@ -106,18 +106,18 @@ switchy ? print("Tschüss") : print("Hallo");
 
 Du kannst folgende Operatoren verwenden. Alle gegebenen Beispiele ergeben true.
 
-| Name                | Zeichen  | Erklärung                                                                                                | Beispiel      |
-| ------------------- | -------- | -------------------------------------------------------------------------------------------------------- | ------------- |
-| Nicht               | `!`      | Invertiert ein Boolean (true/false)                                                                      | !false        |
-| Nicht gleich        | `!=`     | Prüft, ob der Wert davor und danach nicht gleich ist                                                     | 1 != 2        |
-| Gleich              | `==`     | Prüft, ob der Wert davor und danach gleich ist                                                           | 1 == 1        |
-| Größer als          | `>`   | Prüft, ob der Wert davor größer ist als der Wert danach                                                  | 2 > 1         |
-| Größer oder gleich  | `>=`  | Prüft, ob der Wert davor größer oder gleich groß wie der Wert danach ist                                 | 1 >= 1        |
-| Kleiner als         | `<`   | Prüft, ob der Wert davor kleiner ist als der Wert danach                                                 | 1 < 2         |
-| Kleiner oder gleich | `<=`  | Prüft, ob der Wert davor kleiner oder gleich klein wie der Wert danach ist                               | 1 <= 1        |
-| AND (UND)           | `&`  | Prüft, ob der Wert davor und danach gleich ist                                                           | true & true   |
-| OR (ODER)           | `&#124;` | Prüft, ob mindestens einer der beiden Werte wahr ist. Ergibt true, wenn beide wahr sind                  | true \| true |
-| XOR (Exklusiv-ODER) | `^`      | Prüft, ob genau einer der beiden Werte wahr ist. Wenn keiner oder beide Werte wahr sind, ergibt es false | true ^ false  |
+| Name                | Zeichen      | Erklärung                                                                                                | Beispiel      |
+| ------------------- | ------------ | -------------------------------------------------------------------------------------------------------- | ------------- |
+| Nicht               | `!`          | Invertiert ein Boolean (true/false)                                                                      | !false        |
+| Nicht gleich        | `!=`         | Prüft, ob der Wert davor und danach nicht gleich ist                                                     | 1 != 2        |
+| Gleich              | `==`         | Prüft, ob der Wert davor und danach gleich ist                                                           | 1 == 1        |
+| Größer als          | `>`       | Prüft, ob der Wert davor größer ist als der Wert danach                                                  | 2 > 1         |
+| Größer oder gleich  | `>=`      | Prüft, ob der Wert davor größer oder gleich groß wie der Wert danach ist                                 | 1 >= 1        |
+| Kleiner als         | `<`       | Prüft, ob der Wert davor kleiner ist als der Wert danach                                                 | 1 < 2         |
+| Kleiner oder gleich | `<=`      | Prüft, ob der Wert davor kleiner oder gleich klein wie der Wert danach ist                               | 1 <= 1        |
+| AND (UND)           | `&`      | Prüft, ob der Wert davor und danach gleich ist                                                           | true & true   |
+| OR (ODER)           | `&#124;` | Prüft, ob mindestens einer der beiden Werte wahr ist. Ergibt true, wenn beide wahr sind                  | wahr \| wahr |
+| XOR (Exklusiv-ODER) | `^`          | Prüft, ob genau einer der beiden Werte wahr ist. Wenn keiner oder beide Werte wahr sind, ergibt es false | true ^ false  |
 
 ## Der in/has-Operator
 

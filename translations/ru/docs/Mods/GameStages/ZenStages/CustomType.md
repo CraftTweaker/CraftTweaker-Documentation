@@ -1,20 +1,20 @@
-# Custom Types
+# Пользовательские типы
 
-Custom Types are a new powerful way for you to create your own *custom* things to stage. Essentially what this allows you to do is, say for example stage an Event from Minecraft or Stage a list of Blocks to prevent a player from interacting or breaking. Using the [Events](/Vanilla/Events/IEventManager/) CraftTweaker provides. This gives you the ability to lock more things down. Creating a complete custom experience in the game without the need for additional mods. As all you need is ZenStages and CraftTweaker sounds pretty cool, huh?
+Пользовательские Типы - это новый мощный способ для вас создать свои *пользовательские* вещи на сцене. В основном это то, что вы можете сделать, скажем, например, событие из Minecraft или этап списка блоков, чтобы не допустить взаимодействия или поломки игрока. Использование [событий](/Vanilla/Events/IEventManager/) предоставляет Craftweaker. Это дает вам возможность заблокировать больше вещей. Создание полного пользовательского опыта в игре без необходимости дополнительных модов. Как все, что вам нужно, ZenStages и CraftTweaker звучит довольно круто, да?
 
-This is a still a fairly new system and *may* have some bugs. If you notice any please report them to [Our Repo](https://github.com/DarkPacks/ZenStages/issues) so we can look into it!
+Это еще довольно новая система, и *может содержать ошибки*. Если вы заметите что-нибудь, сообщите о них [нашему репозиторию](https://github.com/DarkPacks/ZenStages/issues) , чтобы мы могли посмотреть на нее!
 
-Note: This is a complete custom type nothing will check against this internally. You'll need to create and listen to the [Events](/Vanilla/Events/IEventManager/) to then call the provided methods in [ZenStager](/Mods/GameStages/ZenStages/ZenStager/) to perform the checks. So the *slug/name* name you use for the type you'll need to note down somewhere so you know what does what.
+Замечание: This is a complete custom type nothing will check against this internally. Вам нужно создать и прослушать [События](/Vanilla/Events/IEventManager/) , а затем вызвать предложенные методы в [ZenStager](/Mods/GameStages/ZenStages/ZenStager/) для выполнения проверки. Итак, *slug/name* , которое вы используете для типа, вам нужно отметить где-то внизу, чтобы узнать, что делает.
 
-Note: It is also a recomended standard that you use unique names for **all** your Custom Types.
+Примечание: Это также рекомендуемый стандарт, который вы используете для **всех** пользовательских типов.
 
 ## Импорт пакета
 
 `import mods.zenstages.type.CustomStageType;`
 
-## How to create them
+## Как их создать
 
-Custom Types are created via [ZenStager](/Mods/GameStages/ZenStages/ZenStager/) using the following method.
+Пользовательские типы создаются через [ZenStager](/Mods/GameStages/ZenStages/ZenStager/) , используя следующий метод.
 
 ```zenscript
 // initCustomType(string name, string value);
@@ -23,20 +23,20 @@ Custom Types are created via [ZenStager](/Mods/GameStages/ZenStages/ZenStager/) 
 // initCustomType(string name, int[] values);
 // initCustomType(string name, IIngredient value);
 // initCustomType(string name, IIngredient[] values);
-var MyCustomType as CustomStageType = ZenStager.initCustomType("blockBreak", [<minecraft:stone>]);
-ZenStager.initCustomType("disallowedDimension", 14);
+var MyCustomType as CustomStageType = ZenStager. nitCustomType("blockBreak", [<minecraft:stone>]);
+ZenStager.initCustomType("Запрещенный размер", 14);
 ```
 
-Once you have created the Custom Type you can now assign that Type to a [Stage](/Mods/GameStages/ZenStages/Stage/). By calling the following.
+После создания пользовательского типа вы можете назначить этот тип на [этап](/Mods/GameStages/ZenStages/Stage/). Звонив следующее.
 
 ```zenscript
 // setStage(Stage stage);
 MyCustomType.setStage(TestStage);
 ```
 
-## How to perform a check to a Custom Type
+## Как выполнить проверку на пользовательский тип
 
-This method requires that you have set a stage to a type. Using the above method. Otherwise it returns null.
+Этот метод требует установки этапа на тип. Используя приведенный выше метод. В противном случае он возвращает null.
 
 ```zenscript
 // getCustomStage(string name, string value);
@@ -45,7 +45,7 @@ This method requires that you have set a stage to a type. Using the above method
 ZenStager.getCustomStage("blockBreak", [<minecraft:stone>]);
 ```
 
-This method does not require a Custom Type to be *Staged* to a stage.
+Этот метод не требует установки пользовательского типа *на сцену*
 
 ```zenscript
 // getCustomType(String name);

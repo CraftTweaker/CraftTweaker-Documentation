@@ -1,16 +1,16 @@
-# Melter
+# Schmelze
 
-## Importing the Package
-`mods.nuclearcraft.Melter`
+## Paket wird importiert
+`mods.nuclearcraft.Schmelze`
 
-## Adding Recipes
+## Rezepte hinzufügen
 ```zenscript
 mods.nuclearcraft.Melter.addRecipe(IIngredient itemInput, ILiquidStack fluidOutput, @Optional double timeMultiplier, @Optional double powerMultiplier, @Optional double processRadiation);
 ```
 
-## Removing Recipes
+## Rezepte entfernen
 ```zenscript
 mods.nuclearcraft.Melter.removeRecipeWithInput(IIngredient itemInput);
 mods.nuclearcraft.Melter.removeRecipeWithOutput(ILiquidStack fluidOutput);
-mods.nuclearcraft.Melter.removeAllRecipes();
+mods.nuclearcraft.Melter.removeAllRezept();
 ```

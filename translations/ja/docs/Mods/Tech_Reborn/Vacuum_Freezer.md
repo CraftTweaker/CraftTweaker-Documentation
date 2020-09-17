@@ -1,16 +1,16 @@
-# Vacuum Freezer
+# 真空冷凍機
 
-## Importing the Package
+## パッケージのインポート
 `mods.techreborn.vacuumFreezer`
 
-## Adding Recipes
+## レシピを追加中
 ```zenscript
-mods.techreborn.vacuumFreezer.addRecipe(IItemStack output, IIngredient input, int ticktime, int euTick);
+mods.techreborn.vacuumFreezer.addRecipe(IItemStack 出力, IIngredient input, int ticktime, int euTick);
 ```
 
-## Removing Recipes
+## レシピを削除
 ```zenscript
-mods.techreborn.vacuumFreezer.removeInputRecipe(IIngredient ingredient);
+mods.techreborn.vacuumFreezer.removeInputRecipe(IIngredient 食材);
 mods.techreborn.vacuumFreezer.removeRecipe(IItemStack output);
 mods.techreborn.vacuumFreezer.removeAll();
 ```

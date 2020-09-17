@@ -1,14 +1,14 @@
-# Atomizer
+# 分光器
 
-# Package
+# 所属包名
 ```zenscript
-mods.alchemistry.Atomizer
+mods.alchemistry.分光器
 ```
 
 ## 方法
-**[IItemStack](/Vanilla/Items/IItemStack/) output** - The output of the recipe.
+**[IItemStack](/Vanilla/Items/IItemStack/) 输出** - 该配方的输出。
 
-**[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) input** - The input of the recipe.
+**[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) 输入** - 该配方的输入.
 
 
 ## 添加配方
@@ -19,7 +19,7 @@ mods.alchemistry.Atomizer.addRecipe(<minecraft:redstone>,<liquid:beryllium>*500)
 
 ## 删除配方
 ```zenscript
-mods.alchemistry.Atomizer.removeRecipe(ILiquidStack input); //Will work regardless of quantity
+mods.alchemistry.Atomizer.removeRecipe(ILiquidStack 输入)；//Will 工作，而不论数量
 
 mods.alchemistry.Atomizer.removeRecipe(<liquid:iron>);
 mods.alchemistry.Atomizer.removeAllRecipes();

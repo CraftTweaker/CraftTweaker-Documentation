@@ -1,44 +1,44 @@
-# Stage-Unlockables
+# Desbloqueables por etapa
 
-## Unlockables
+## Desbloqueables
 
-This part of the GameStages support will focus on the later form. Aka "Dummy Traits" for unlocking GameStages.
+Esta parte del soporte de GameStages se centrará en la forma posterior. Aka "Dummy Traits" para desbloquear GameStages.
 
-## Resource Information:
+## Información del recurso:
 
-When creating a new dummy trait you'll notice a few things are missing:
+Cuando creas un nuevo rasgo tonto te darás cuenta de que faltan algunas cosas:
 
-- Unlocalized Name
-- Unlocalized Description
-- No Icon is present
+- Nombre no localizado
+- Descripción sin localizar
+- Ningún icono está presente
 
-This is due to these things requiring Resources. At the current stage CompatSkills does not provide the ability to provide these natively. There are a few ways around this:
+Esto se debe a que se necesitan recursos. En la fase actual CompatSkills no proporciona la capacidad de proporcionar estos nativamente. Hay algunas maneras en torno a esto:
 
-- Use BASE which comes with its own resource loader (Only works if ContentTweaker is present due to how BASE works).
-- Use ResourceLoader by Lumien.
+- Utilice BASE que viene con su propio cargador de recursos (sólo funciona si ContentTweaker está presente debido a cómo funciona BASE).
+- Usar Resource Loader por Lumien.
 
-Localization is pretty straight forward.
+La localización es bastante sencilla.
 
-    assets/compatskills/lang/en_us.lang
+    assets/compatskills/lang/es_us.lang
     
-    en_us.lang = English Translation
+    es_us.lang = Traducción en inglés
     
 
-However the texture path for the trait icon is as follows:
+Sin embargo, la ruta de textura para el icono de rasgo es la siguiente:
 
     assets/compatskills/textures/unlockables/name.png
     
-    So if the name is "banana", The Path would be as follows:
+    Así que si el nombre es "banana", la ruta sería la siguiente:
     
     assets/compatskills/textures/unlockables/banana.png
     
 
-### Syntax:
+### Sintaxis:
 
-    Blank Example:
-    mods.compatskills.GameStageUnlockable.addGameStageUnlockable(String gamestage, String name, int x, int y, String skillName, int cost, @Optional String... defaultRequirements);
+    Ejemplo en blanco:
+    mods.compatskills.GameStageUnlockable.addGameStageUnlockable(String gamestage, String name, int x, int y, String SkillName, int cost, @Optional String... defaultRequirements);
     
-    Working Example(s):
-    mods.compatskills.GameStageUnlockable.addGameStageUnlockable("a", "a", 0, 0, "reskillable:gathering", 3, "stage|test");
-    mods.compatskills.GameStageUnlockable.addGameStageUnlockable("b", "b", 0, 1, "reskillable:gathering", 3, "adv|minecraft:husbandry/plant_seed");
-    mods.compatskills.GameStageUnlockable.addGameStageUnlockable("c", "c", 0, 2, "reskillable:gathering", 3, "trait|compatskills:b");
+    Ejemplo(s) de trabajo(s):
+    mods.compatskills.GameStageUnlockable.addGameStageUnlockable("a", "a", 0, "reskillable:Builing", 3, "stage|test");
+    mods.compatskills.GameStageUnlockable. ddGameStageUnlockable("b", "b", 0, 1, "reskillable:Kingdoming", 3, "adv|minecraft:husbandry/plant_seed");
+    mods.compatskills.GameStageUnlockable.addGameStageUnlockable("c", "c", 0, 2, "reskillable:Builing", 3, "trait|compatskills:b");

@@ -1,15 +1,15 @@
-# IPotion
+# format@@0 IPotion
 
-An IPotion object refers a potion in the game.
+Un objet IPotion fait référence à une potion dans le jeu.
 
-## Importing the package
+## Importation du paquet
 
-It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
-`import crafttweaker.potions.IPotion;`
+Il pourrait vous être nécessaire d'importer le paquet si vous rencontrez des problèmes (comme lancer un [Tableau](/AdvancedFunctions/Arrays_and_Loops/)), alors mieux être sûr que désolé et ajouter l'importation.  
+`importer crafttweaker.potions.IPotion ;`
 
-## Getting an IPotion object
+## Obtention d'un objet IPotion
 
-You can get such an object through the use of the [Potion Bracket handler](/Vanilla/Brackets/Bracket_Potion/)
+Vous pouvez obtenir un tel objet en utilisant le gestionnaire de potions [](/Vanilla/Brackets/Bracket_Potion/)
 
 ```zenscript
 <potion:minecraft:strength>;
@@ -17,26 +17,26 @@ You can get such an object through the use of the [Potion Bracket handler](/Vani
 
 ## Zengetters
 
-Currently, all you can do with potions is retrieving some information on them.  
-Example `<potion:minecraft:strength>.name`
+Actuellement, tout ce que vous pouvez faire avec les potions est de récupérer des informations sur elles.  
+Exemple `<potion:minecraft:strength>.name`
 
-| Zengetter     | What does it do                                     | Return Type                                    |
-| ------------- | --------------------------------------------------- | ---------------------------------------------- |
-| name          | Returns the potion's internal name                  | string                                         |
-| badEffect     | Returns if the potion effect is bad                 | bool                                           |
-| liquidColor   | Returns the potion's color                          | int                                            |
-| liquidColour  | Returns the potion's colour                         | int                                            |
-| curativeItems | Returns a list of all curative Items for the potion | List<[IItemStack](/Vanilla/Items/IItemStack/)> |
-| hasStatusIcon | Returns whether the potion has a status icon        | bool                                           |
-| isBeneficial  | Returns whether the potion is beneficial            | bool                                           |
-| isInstant     | Returns whether the potion is instant               | bool                                           |
+| Zengetter                  | Que fait-il                                                    | Type de retour                                   |
+| -------------------------- | -------------------------------------------------------------- | ------------------------------------------------ |
+| Nom                        | Retourne le nom interne de la potion                           | chaîne de caractères                             |
+| badEffect                  | Retourne si l'effet de potion est mauvais                      | booléen                                          |
+| Couleur du liquide         | Retourne la couleur de la potion                               | Indice                                           |
+| Couleur de liquidité       | Renvoie la couleur de la potion                                | Indice                                           |
+| Éléments curatifs          | Renvoie une liste de tous les éléments curatifs pour la potion | Liste <[IItemStack](/Vanilla/Items/IItemStack/)> |
+| Il y a une icône de statut | Retourne si la potion a une icône de statut                    | booléen                                          |
+| bénéficiaire               | Renvoie si la potion est bénéfique                             | booléen                                          |
+| est instantané             | Retourne si la potion est instantanée                          | booléen                                          |
 
-## ZenMethods
+## Méthodes Zen
 
-### Make PotionEffect
+### Rendre l'effet de potion
 
-An [IPotionEffect](/Vanilla/Potions/IPotionEffect/) is a Potion that has a duration and amplifier. You can use these two methods to get one from an IPotion:  
-As one might guess, both return an [IPotionEffect](/Vanilla/Potions/IPotionEffect/) object.
+Un [IPotionEffect](/Vanilla/Potions/IPotionEffect/) est une Potion qui a une durée et un amplificateur. Vous pouvez utiliser ces deux méthodes pour en obtenir une à partir d'une IPotion :  
+Comme on pourrait le deviner, les deux retournent un objet [IPotionEffect](/Vanilla/Potions/IPotionEffect/).
 
 ```zenscript
 pot.makePotionEffect(int duration, int amplifier);

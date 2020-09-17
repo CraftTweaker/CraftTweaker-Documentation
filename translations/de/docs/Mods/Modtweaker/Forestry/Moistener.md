@@ -1,26 +1,26 @@
-# Moistener
+# Feuchter
 
-ModTweaker allows you to add or remove forestry Moistener Recipes
+ModTweaker ermöglicht das Hinzufügen oder Entfernen von forstwirtschaftlichen Moistener-Rezepten
 
-## Calling
+## Anruf
 
 You can call the package using `mods.forestry.Moistener`
 
-## Recipe Removal
+## Rezept entfernen
 
 ```zenscript
-//mods.forestry.Moistener.removeRecipe(IIngredient output);
+//mods.forestry.Moistener.removeRecipe(IIngrediente Ausgabe);
 mods.forestry.Moistener.removeRecipe(<minecraft:stonebrick:1>);
 ```
 
 ## Addition
 
 ```zenscript
-//mods.forestry.Moistener.addRecipe(IItemStack output, IItemStack input, int packagingTime); 
+//mods.forestry.Moistener.addRecipe(IItemStack Output, IItemStack Input, int packagingTime); 
 mods.forestry.Moistener.addRecipe(<minecraft:mycelium>, <minecraft:grass>, 60); 
 ```
 
-## Fuel Removal
+## Brennstoffentnahme
 
 ```zenscript
 //mods.forestry.Moistener.removeFuel(IIngredient moistenerItem);
@@ -28,16 +28,16 @@ mods.forestry.Moistener.removeFuel(<minecraft:wheat>);
 
 ```
 
-## Fuel Addition
+## Kraftstoffzusatz
 
 ```zenscript
 //mods.forestry.Moistener.addFuel(IItemStack item, IItemStack product, int moistenerValue, int stage);
 mods.forestry.Moistener.addFuel(<minecraft:gold_ingot>, <minecraft:iron_ingot>, 20, 2);
 ```
 
-| Parameter      | Type                                     | Beschreibung                                                                                 |
-| -------------- | ---------------------------------------- | -------------------------------------------------------------------------------------------- |
-| item           | [IItemStack](/Vanilla/Items/IItemStack/) | Item to become a valid fuel for the Moistener                                                |
-| product        | [IItemStack](/Vanilla/Items/IItemStack/) | Item that will leave the moistener's working slot (e.g. mouldy wheat or mulch).              |
-| MoistenerValue | int                                      | How much this item contributes to the final product of the moistener.                        |
-| stage          | int                                      | What stage this product represents. Resources with lower stage value will be consumed first. |
+| Parameter         | Type                                     | Beschreibung                                                                                            |
+| ----------------- | ---------------------------------------- | ------------------------------------------------------------------------------------------------------- |
+| eintrag           | [IItemStack](/Vanilla/Items/IItemStack/) | Gegenstand, um ein gültiger Brennstoff für den Feistener zu werden                                      |
+| produkt           | [IItemStack](/Vanilla/Items/IItemStack/) | Gegenstand, der den Arbeitsschlitz des Feuchtemittels verlässt (z.B. Schimmelweizen oder Mulch).        |
+| Feuchtigkeitswert | int                                      | Wie viel dieser Artikel zum Endprodukt des Feuchtigers beiträgt.                                        |
+| stadium           | int                                      | Welche Phase dieses Produkts darstellt. Ressourcen mit niedrigerem Stufenwert werden zuerst verbraucht. |

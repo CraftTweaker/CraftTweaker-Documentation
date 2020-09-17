@@ -1,40 +1,40 @@
-# Custom Traits
+# Настраиваемые симптомы
 
-Using this package you can create trait that you can then put on your tools!
+С помощью этого пакета вы можете создать симптом, который вы можете поместить на свои инструменты!
 
 ## Импорт класса
 
-It might be required for you to import the class if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
+Возможно, вам потребуется импортировать класс, если вы столкнетесь с какими-либо проблемами (например, наложение [массива](/AdvancedFunctions/Arrays_and_Loops/)), так что лучше быть безопасным, чем извините и добавить импорт.  
 `import mods.contenttweaker.tconstruct.TraitBuilder;`
 
-## Creating a trait
+## Создание симптома
 
-First and foremost, you will need to create a trait builder.  
-This can be done using the static function:
+Прежде всего, вам нужно будет создать конструктор симптомов.  
+Это можно сделать, используя статическую функцию:
 
 ```zenscript
 //create(String identifier, int color, @Optional int maxLevel, @Optional int countPerLevel)
 val myTrait = mods.contenttweaker.tconstruct.TraitBuilder.create("kindlich_test", 0xffaadd, 100, 20);
 ```
 
-The `identifier` has to be unique!  
-For the `color`, it is suggested that you use the hexadecimal notation as shown above.  
-`maxLevel` is the maximum level the trait can become, and will default to 0.  
-`countPerLevel` is how many sublevels the trait can have (like Redstone which has 50).
+`идентификатор` должен быть уникальным!  
+Для `цвета`предлагается использовать шестнадцатеричную нотацию, как показано выше.  
+`Максимальный уровень` является максимальным уровнем, который может стать симптомом, и по умолчанию 0.  
+`countPerLevel` - сколько уровней может иметь симптом (например, редстоун, у которого есть 50).
 
-After you've finished all modifications below, you will need to register your trait.  
-This can be done using the `register` method, which will return a [Representation](/Mods/ContentTweaker/Tinkers_Construct/Trait/) of the new trait.
+После того, как вы закончите все изменения ниже, вам нужно зарегистрировать симптом.  
+Это можно сделать с помощью `регистра` метода, , который вернёт [представление](/Mods/ContentTweaker/Tinkers_Construct/Trait/) нового симптома.
 
 ```zenscript
 myTrait.register();
 ```
 
-After registering, you can still modify the builder, the trait itself can no longer be modified.  
-That way you can create multiple similar traits easily.
+После регистрации, вы все еще можете изменить конструктор, сам симптом не может быть изменен.  
+Таким образом можно легко создать несколько похожих симптомов.
 
-## Modifier Items
+## Элементы модификатора
 
-If you combine the given ingredient together with a tool in a tinker's tool forge, you can apply the trait as modifier.
+Если вы комбинируете данный ингредиент вместе с инструментом в поддоне инструмента, вы можете применить симптомы в качестве модификатора.
 
 ```zenscript
 //myTrait.addItem(IIngredient item, @Optional(1) int amountNeeded, @Optional(1) int amountMatched));
@@ -45,92 +45,92 @@ myTrait.addItem(<item:minecraft:iron_block>, 4, 2);
 myTrait.removeItem(<item:minecraft:iron_pickaxe>);
 ```
 
-- `item` is the item that is matched against. You can use [Item Conditions](/Vanilla/Items/Item_Conditions/) but no Transformers. 
-- `amountNeeded` is the amount of items that is matched against. You can split them over all the slots the toolforge provides, which also allows you to go above 64. In the example above, you need 4 iron blocks per addition. Defaults to 1.
-- `amountMatched` is the amount of trait points added per `amountNeeded`. In the example above four iron blocks give two trait points. Defaults to 1.
+- `элемент` - это предмет, который соответствует данному предмету. Вы можете использовать [Условия предмета](/Vanilla/Items/Item_Conditions/) , но не преобразователей. 
+- `Нужна сумма` — это совпадающее количество предметов. Вы можете разделить их на все ячейки, которые предоставляет ковка инструментов, что также позволяет вам идти выше 64. В приведенном выше примере тебе нужно 4 железных блока на добавку. По умолчанию 1.
+- `Соответствующая сумма` - количество бонусных очков за `требуемое количество`. В примере выше четырех железных блоков задают две точки симптомов. По умолчанию 1.
 - If you use the `remove function`, it will remove all trait ingredients that match for the item.
 
-## Properties
+## Свойства
 
-You can set and get these properties using the names given:
+Вы можете задать и получить эти свойства, используя указанные имена:
 
 | Название             | Тип    |
 | -------------------- | ------ |
-| color                | int    |
+| цвет                 | int    |
 | countPerLevel        | int    |
 | hidden               | bool   |
 | identifier           | string |
-| localizedDescription | string |
+| описание локализации | string |
 | localizedName        | string |
-| maxLevel             | int    |
+| максимальный уровень | int    |
 
-## Calculated Properties
+## Вычисляемые свойства
 
-Some properties will need to be calculated.  
-You can set the given property functions:
+Необходимо вычислить некоторые свойства.  
+Вы можете задать определенные функции свойства:
 
-### CanApplyTogether
+### Капплинт вместе
 
-Check if a trait can be added to a tool that already has another trait or [enchantment](/Vanilla/Enchantments/IEnchantmentDefinition/).
+Проверьте, можно ли добавить симптом к инструменту, который уже имеет другой симптом или [зачарование](/Vanilla/Enchantments/IEnchantmentDefinition/).
 
 ```zenscript
 myTrait.canApplyTogetherTrait = function(TraitRepresentation thisTrait, String otherTrait){....};
-myTrait.canApplyTogetherEnchantment = function(TraitRepresentation thisTrait, IEnchantmentDefinition enchant){....};
+myTrait.canApplyTogetherEnchantment = function(TraitRepresentation thisTrait, IEnchantDefinition enchant){....};
 ```
 
 ### Extra info
 
-The returned String[] will be displayed as extra information in the tool station.
+Возвращенная строка[] будет отображаться в качестве дополнительной информации на станции инструмента.
 
 ```zenscript
 myTrait.extraInfo = function(TraitRepresentation thisTrait, IItemStack item, IData tag){....};
 ```
 
-## Adding Functionality
+## Добавление функциональности
 
-Now that you have created a trait you need to make it modify something, don't you?  
-That's what the trait event handlers are for:  
-They are called whenever a user does something with the tool containing the trait.
+Теперь, когда вы создали симптом, вам нужно что-то модифицировать, не так ли?  
+Это для обработчиков событий симптомов:  
+Они вызываются всякий раз, когда пользователь что-то делает с инструментом, содержащим симптомы.
 
-Below you will see all possible handlers, together with information on what they return and how to write the function for them. Remember that you will have to replace `myTrait` with your own variable name.  
-Also, you only have to use the handlers that you need, you don't need empty handlers only so that you have filled everything.
+Ниже вы увидите все возможные обработчики, а также информацию о том, что они возвращаются, и как написать функцию для них. Помните, что вам придется заменить `myTrait` собственным именем переменных.  
+Кроме того, вам нужно использовать только необходимые обработчики, пустые обработчики не нужны только для того, чтобы вы заполнили все.
 
 <details>
-    <summary>All Handlers in a nutshell</summary>
+    <summary>Все обработчики в оболочке</summary>
     <ul>
         <li><a href="#onupdate">onUpdate</a></li>
         <li><a href="#getminingspeed">getMiningSpeed</a></li>
         <li><a href="#beforeblockbreak">beforeBlockBreak</a></li>
-        <li><a href="#afterblockbreak">afterBlockBreak</a></li>
+        <li><a href="#afterblockbreak">после блокировки</a></li>
         <li><a href="#onblockharvestdrops">onBlockHarvestDrops</a></li>
-        <li><a href="#calccrit">calcCrit</a></li>
-        <li><a href="#calcdamage">calcDamage</a></li>
+        <li><a href="#calccrit">Кальккритит</a></li>
+        <li><a href="#calcdamage">калькулятор</a></li>
         <li><a href="#onhit">onHit</a></li>
         <li><a href="#calcknockback">calcKnockBack</a></li>
-        <li><a href="#afterhit">afterHit</a></li>
-        <li><a href="#onblock">onBlock</a></li>
-        <li><a href="#onplayerhurt">onPlayerHurt</a></li>
+        <li><a href="#afterhit">после попадания</a></li>
+        <li><a href="#onblock">onБлок</a></li>
+        <li><a href="#onplayerhurt">истребление игрока</a></li>
         <li><a href="#ontooldamage">onToolDamage</a></li>
         <li><a href="#ontoolheal">onToolHeal</a></li>
-        <li><a href="#ontoolrepair">onToolRepair</a></li>
+        <li><a href="#ontoolrepair">ремонт инструментов</a></li>
     </ul>
 </details>
 
 ### onUpdate
 
-Called each tick by the tool is loaded (that means in the player's inventory).  
-Parameters:
+Вызывается каждый тик инструмента загружается (это означает в инвентаре игрока).  
+Параметры:
 
-- A [Trait Representation](/Mods/ContentTweaker/Tinkers_Construct/Trait/) representing the currently used `trait`.
-- An [IItemStack](/Vanilla/Items/IItemStack/) representing the used `tool`
-- An [IWorld](/Vanilla/World/IWorld/) representing the `world`
-- An [IEntity](/Vanilla/Entities/IEntity/) representing the `owner`
-- An int representing the `itemSlot`
-- A boolean that describes if the tool currently `isSelected`
+- [Представление симптомов](/Mods/ContentTweaker/Tinkers_Construct/Trait/) , представляющее используемый в настоящее время `симптом`.
+- [IItemStack](/Vanilla/Items/IItemStack/) представляющий используемый инструмент ``
+- [IWorld](/Vanilla/World/IWorld/) представляет `мир`
+- [IEntity](/Vanilla/Entities/IEntity/) , представляющий владельца ``
+- Подсказка, представляющая `слот элемента`
+- Логическое значение, которое описывает, является ли инструмент `выбранным`
 
-**Returns nothing.**
+**Ничего не возвращает.**
 
-Created using:
+Создано:
 
 ```zenscript
 myTrait.getMiningSpeed = function(trait, tool, world, owner, itemSlot, isSelected) {
@@ -140,17 +140,17 @@ myTrait.getMiningSpeed = function(trait, tool, world, owner, itemSlot, isSelecte
 
 ### getMiningSpeed
 
-Called when a block is mined.  
-Be careful as this event is also be caught by vanilla blockBreak handlers.  
-Parameters:
+Вызывается, когда блок добыт.  
+Будьте осторожны, так как это событие также попадает под ванильные обработчики blockBreak.  
+Параметры:
 
-- A [Trait Representation](/Mods/ContentTweaker/Tinkers_Construct/Trait/) representing the currently used `trait`.
-- An [IItemStack](/Vanilla/Items/IItemStack/) representing the used `tool`
-- A [PlayerBreakSpeedEvent](/Vanilla/Events/Events/PlayerBreakSpeed/)
+- [Представление симптомов](/Mods/ContentTweaker/Tinkers_Construct/Trait/) , представляющее используемый в настоящее время `симптом`.
+- [IItemStack](/Vanilla/Items/IItemStack/) представляющий используемый инструмент ``
+- [Игровой Режим Скорости](/Vanilla/Events/Events/PlayerBreakSpeed/)
 
-**Returns nothing.**
+**Ничего не возвращает.**
 
-Created using:
+Создано:
 
 ```zenscript
 myTrait.getMiningSpeed = function(trait, tool, event) {
@@ -160,17 +160,17 @@ myTrait.getMiningSpeed = function(trait, tool, event) {
 
 ### beforeBlockBreak
 
-Called just before a block is broken.  
-Be careful as this event is also be caught by vanilla blockBreak handlers.  
-Parameters:
+Вызывается перед разрушением блока.  
+Будьте осторожны, так как это событие также поймано ванильными обработчиками blockBreak.  
+Параметры:
 
-- A [Trait Representation](/Mods/ContentTweaker/Tinkers_Construct/Trait/) representing the currently used `trait`.
-- An [IItemStack](/Vanilla/Items/IItemStack/) representing the used `tool`
-- A [BlockBreakEvent](/Vanilla/Events/Events/BlockBreak/)
+- [Представление симптомов](/Mods/ContentTweaker/Tinkers_Construct/Trait/) , представляющее используемый в настоящее время `симптом`.
+- [IItemStack](/Vanilla/Items/IItemStack/) представляющий используемый инструмент ``
+- [BlockBreakEvent](/Vanilla/Events/Events/BlockBreak/)
 
-**Returns nothing.**
+**Ничего не возвращает.**
 
-Created using:
+Создано:
 
 ```zenscript
 myTrait.beforeBlockBreak = function(trait, tool, event) {
@@ -178,21 +178,21 @@ myTrait.beforeBlockBreak = function(trait, tool, event) {
 };
 ```
 
-### afterBlockBreak
+### после блокировки
 
-Called after the block has been destroyed.  
-Parameters:
+Вызывается после уничтожения блока.  
+параметров:
 
-- A [Trait Representation](/Mods/ContentTweaker/Tinkers_Construct/Trait/) representing the currently used `trait`.
-- An [IItemStack](/Vanilla/Items/IItemStack/) representing the used `tool`
-- An [IWorld](/Vanilla/World/IWorld/) representing the `world`
-- An [IBlockState](/Vanilla/Blocks/IBlockState/) representing the broken `block`
-- An [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) representing the `miner`
-- A bool representing if the mining `wasEffective`
+- [Представление симптомов](/Mods/ContentTweaker/Tinkers_Construct/Trait/) , представляющее используемый в настоящее время `симптом`.
+- [IItemStack](/Vanilla/Items/IItemStack/) представляющий используемый инструмент ``
+- [IWorld](/Vanilla/World/IWorld/) представляет `мир`
+- [IBlockState](/Vanilla/Blocks/IBlockState/) , представляющий сломанный `блок`
+- [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) , представляющий `шахтера`
+- Бул, представляющий если добыча `была эффективной`
 
-**Returns nothing.**
+**Ничего не возвращает.**
 
-Created using:
+Создано:
 
 ```zenscript
 myTrait.afterBlockBreak = function(trait, tool, world, blockstate, miner, wasEffective) {
@@ -202,18 +202,18 @@ myTrait.afterBlockBreak = function(trait, tool, world, blockstate, miner, wasEff
 
 ### onBlockHarvestDrops
 
-Called whenever a block has been broken.  
-Be careful as this event is also called by vanilla onBlockHarvestBreak handlers.  
-Unlike the vanilla handler however, this handler will only be executed when a player broke the block.  
-Parameters:
+Вызывается всякий раз, когда блок сломался.  
+Будьте осторожны, так как это событие вызывается обработчиками onBlockHarvestBreak.  
+Однако, в отличие от обработчика ванили, этот обработчик будет выполняться только когда игрок сломал блок.  
+Параметры:
 
-- A [Trait Representation](/Mods/ContentTweaker/Tinkers_Construct/Trait/) representing the currently used `trait`.
-- An [IItemStack](/Vanilla/Items/IItemStack/) representing the used `tool`
-- A [BlockHarvestDropsEvent](/Vanilla/Events/Events/BlockHarvestDrops/)
+- [Представление симптомов](/Mods/ContentTweaker/Tinkers_Construct/Trait/) , представляющее используемый в настоящее время `симптом`.
+- [IItemStack](/Vanilla/Items/IItemStack/) представляющий используемый инструмент ``
+- [BlockHarvestDropsEvent](/Vanilla/Events/Events/BlockHarvestDrops/)
 
-**Returns nothing**
+**Ничего не возвращает**
 
-Created using:
+Создано:
 
 ```zenscript
 myTrait.onBlockHarvestDrops = function(trait, tool, event) {
@@ -221,20 +221,20 @@ myTrait.onBlockHarvestDrops = function(trait, tool, event) {
 };
 ```
 
-### calcCrit
+### Кальккритит
 
-Called before the damage done to the entity is calculated to determine whether it will be a crit or not.  
-Returning `false` will not stop a hit that is already a crit from being so.  
-Parameters:
+Вызывается перед повреждением объекта, рассчитывается для определения того, будет ли он критик или нет.  
+Возвращение `false` не остановит попадание, которое уже является критом.  
+параметры:
 
-- A [Trait Representation](/Mods/ContentTweaker/Tinkers_Construct/Trait/) representing the currently used `trait`.
-- An [IItemStack](/Vanilla/Items/IItemStack/) representing the used `tool`
-- An [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) representing the `attacker`
-- An [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) representing the `target`
+- [Представление симптомов](/Mods/ContentTweaker/Tinkers_Construct/Trait/) , представляющее используемый в настоящее время `симптом`.
+- [IItemStack](/Vanilla/Items/IItemStack/) представляющий используемый инструмент ``
+- [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) , представляющий `атакующий`
+- [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) , представляющий `цель`
 
-**Returns a bool** that is `true` if the hit should crit, false whenever else.
+**возвращает бул** , который является `истины` , если попадание должно crit, false всякий раз, когда еще.
 
-Created using:
+Создано:
 
 ```zenscript
 myTrait.calcCrit = function(trait, tool, attacker, target) {
@@ -243,47 +243,47 @@ myTrait.calcCrit = function(trait, tool, attacker, target) {
 };
 ```
 
-### calcDamage
+### калькулятор
 
-Called when an entity is hit, but still before the damage is dealt and before the crit damage is added.  
-The crit damage will be calculated off the result of this.  
-Parameters:
+Вызывается при попадании предмета, но до нанесения урона и до того, как наносится критический урон.  
+Результатом будет подсчитан критический урон.  
+Параметры:
 
-- A [Trait Representation](/Mods/ContentTweaker/Tinkers_Construct/Trait/) representing the currently used `trait`.
-- An [IItemStack](/Vanilla/Items/IItemStack/) representing the used `tool`
-- An [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) representing the `attacker`
-- An [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) representing the `target`
-- A float representing the tool's `originalDamage` (unmodified tool damage)
-- A float representing the tool's `newDamage` (the damage the tool will do up until this point, can be originalDamage, or already be modified by other traits).
-- A boolean that represents if the hit `isCritical`
+- [Представление симптомов](/Mods/ContentTweaker/Tinkers_Construct/Trait/) , представляющее используемый в настоящее время `симптом`.
+- [IItemStack](/Vanilla/Items/IItemStack/) представляющий используемый инструмент ``
+- [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) , представляющий `атакующий`
+- [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) , представляющий `цель`
+- Поплавка, представляющая исходный урон инструмента `` (бессменный урон инструмента)
+- Поплавка, представляющая инструмент `newdamage` (урон инструмента будет наноситься до тех пор, пока он не достигнет этой точки, может быть оригинальным повреждением или уже изменен другими симптомами).
+- Логическое значение, которое показывает попадание `isCritical`
 
-**Returns a float** representing the new damage. Otherwise return `newDamage`
+**Возвращает плавающий** новый урон. Иначе верните `новый урон`
 
-Created using
+Создано
 
 ```zenscript
 myTrait.calcDamage = function(trait, tool, attacker, target, originalDamage, newDamage, isCritical) {
     //CODE
-    return newDamage; //Or your modified value
+    возвращает newDamage; //Или измененное значение
 };
 ```
 
 ### onHit
 
-Called when an entity is hit, just before the damage is dealt.  
-All damage calculation has already been done at this point.  
-Parameters:
+Вызывается при попадании сущности, перед нанесением урона.  
+Расчет всего повреждения уже выполнен.  
+Параметры:
 
-- A [Trait Representation](/Mods/ContentTweaker/Tinkers_Construct/Trait/) representing the currently used `trait`.
-- An [IItemStack](/Vanilla/Items/IItemStack/) representing the used `tool`
-- An [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) representing the `attacker`
-- An [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) representing the `target`
-- A float representing the tool's `damage` (includung critdamage)
-- A boolean that represents if the hit `isCritical`
+- [Представление симптомов](/Mods/ContentTweaker/Tinkers_Construct/Trait/) , представляющее используемый в настоящее время `симптом`.
+- [IItemStack](/Vanilla/Items/IItemStack/) представляющий используемый инструмент ``
+- [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) , представляющий `атакующий`
+- [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) , представляющий `цель`
+- Поплавка, представляющая `урона от инструмента` (включая Critdamage)
+- Логическое значение, которое показывает попадание `isCritical`
 
-**Returns nothing**
+**Ничего не возвращает**
 
-Created using
+Создано
 
 ```zenscript
 myTrait.onHit = function(trait, tool, attacker, target, damage, isCritical) {
@@ -293,45 +293,45 @@ myTrait.onHit = function(trait, tool, attacker, target, damage, isCritical) {
 
 ### calcKnockBack
 
-Called after an entity is hit to modify the applied knockback.  
-Parameters:
+Вызывается после попадания сущности, чтобы изменить применяемую обратную связь.  
+Параметры:
 
-- A [Trait Representation](/Mods/ContentTweaker/Tinkers_Construct/Trait/) representing the currently used `trait`.
-- An [IItemStack](/Vanilla/Items/IItemStack/) representing the used `tool`
-- An [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) representing the `attacker`
-- An [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) representing the `target`
-- A float representing the tool's `damage` (including crit)
-- A float representing the tool's `originalKnockback` (unmodified tool knockback)
-- A float representing the tool's `newKnockback` (the knockBack the tool will do up until this point, can be originalKnockback, or already be modified by other traits).
-- A boolean that represents if the hit `isCritical`
+- [Представление симптомов](/Mods/ContentTweaker/Tinkers_Construct/Trait/) , представляющее используемый в настоящее время `симптом`.
+- [IItemStack](/Vanilla/Items/IItemStack/) представляющий используемый инструмент ``
+- [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) , представляющий `атакующий`
+- [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) , представляющий `цель`
+- Поплавка, представляющая `повреждения инструмента` (включая крит)
+- float представляющий `оригинальный откидываемый` (неизмененный откидывающийся инструмент)
+- float representing the tool's `newKnockback` (nockBack the tool will do up until this point, может быть originalKnockback или уже модифицирован другими симптомами).
+- Логическое значение, которое показывает попадание `isCritical`
 
-**Returns a float** representing the new knockback. Otherwise return `newKnockback`
+**Возвращает float** , представляющий новый откидывающий ответ. В противном случае верните `newKnockback`
 
-Created using
+Создано
 
 ```zenscript
 myTrait.calcDamage = function(trait, tool, attacker, target, damage, originalKnockBack, newKnockBack, isCritical) {
     //CODE
-    return newDamage; //Or your modified value
+    возвращает newDamage; //Или измененное значение
 };
 ```
 
-### afterHit
+### после попадания
 
-Called after an entity is hit and after the damage is dealt.  
-Parameters:
+Вызывается после попадания объекта и после нанесения урона.  
+Параметры:
 
-- A [Trait Representation](/Mods/ContentTweaker/Tinkers_Construct/Trait/) representing the currently used `trait`.
-- An [IItemStack](/Vanilla/Items/IItemStack/) representing the used `tool`
-- An [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) representing the `attacker`
-- An [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) representing the `target`
-- A float representing the tool's `dealtDamage`
-- A bool representing if the hit `wasCritical`
-- A bool representing if the entity `wasHit`. Can be false if the entity was invulnerable or had some other ways of exacing the damage.
+- [Представление симптомов](/Mods/ContentTweaker/Tinkers_Construct/Trait/) , представляющее используемый в настоящее время `симптом`.
+- [IItemStack](/Vanilla/Items/IItemStack/) представляющий используемый инструмент ``
+- [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) , представляющий `атакующий`
+- [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) , представляющий `цель`
+- Поглощение с символом `урона по инструменту`
+- Бул, представляющий если удар `wasCritical`
+- Бул представляет, если сущность `попала`. Может быть ложным, если сущность была неуязвимой или имела некоторые другие способы причинения вреда.
 
-**Returns nothing**
+**Ничего не возвращает**
 
-Created using
+Создано
 
 ```zenscript
 mytrait.afterHit = function(trait, tool, attacker, target, damageDealt, wasCritical, wasHit) {
@@ -339,20 +339,20 @@ mytrait.afterHit = function(trait, tool, attacker, target, damageDealt, wasCriti
 };
 ```
 
-### onBlock
+### onБлок
 
-Called when the player holding the tool blocks the attack.  
-Otherwise `onHit` will be called.  
-Parameters:
+Вызывается, когда игрок, удерживающий инструмент, блокирует атаку.  
+Иначе `onHit` будет вызван.  
+Параметры:
 
-- A [Trait Representation](/Mods/ContentTweaker/Tinkers_Construct/Trait/) representing the currently used `trait`.
-- An [IItemStack](/Vanilla/Items/IItemStack/) representing the used `tool`
-- An [IPlayer](/Vanilla/Players/IPlayer/) representing the `player`
-- An [EntityLivingHurtEvent](/Vanilla/Events/Events/EntityLivingHurt/)
+- [Представление симптомов](/Mods/ContentTweaker/Tinkers_Construct/Trait/) , представляющее используемый в настоящее время `симптом`.
+- [IItemStack](/Vanilla/Items/IItemStack/) представляющий используемый инструмент ``
+- [IPlayer](/Vanilla/Players/IPlayer/) представляет игрока ``
+- [Событие LivingHurtEvent](/Vanilla/Events/Events/EntityLivingHurt/)
 
-**Returns nothing**
+**Ничего не возвращает**
 
-Created using
+Создано
 
 ```zenscript
 myTrait.onBlock = function(trait, tool, player, event) {
@@ -360,21 +360,21 @@ myTrait.onBlock = function(trait, tool, player, event) {
 };
 ```
 
-### onPlayerHurt
+### истребление игрока
 
-Called when the player holding the tool DID NOT BLOCK the attack.  
-Otherwise `onBlock` will be called.  
-Parameters:
+Вызывается, когда игрок, держащий инструмент НЕ БЛОКИРОВАТЬ.  
+В противном случае `onBlock` будет вызван.  
+Параметры:
 
-- A [Trait Representation](/Mods/ContentTweaker/Tinkers_Construct/Trait/) representing the currently used `trait`.
-- An [IItemStack](/Vanilla/Items/IItemStack/) representing the used `tool`
-- An [IPlayer](/Vanilla/Players/IPlayer/) representing the `player`
-- An [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) representing the `attacker`
-- An [EntityLivingHurtEvent](/Vanilla/Events/Events/EntityLivingHurt/)
+- [Представление симптомов](/Mods/ContentTweaker/Tinkers_Construct/Trait/) , представляющее используемый в настоящее время `симптом`.
+- [IItemStack](/Vanilla/Items/IItemStack/) представляющий используемый инструмент ``
+- [IPlayer](/Vanilla/Players/IPlayer/) представляет игрока ``
+- [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) , представляющий `атакующий`
+- [Событие LivingHurtEvent](/Vanilla/Events/Events/EntityLivingHurt/)
 
-**Returns nothing**
+**Ничего не возвращает**
 
-Created using
+Создано
 
 ```zenscript
 myTrait.onPlayerHurt = function(trait, tool, player, event) {
@@ -384,62 +384,62 @@ myTrait.onPlayerHurt = function(trait, tool, player, event) {
 
 ### onToolDamage
 
-Called before the tools durability is getting decreased.  
-Parameters:
+Вызывается до уменьшения прочности инструментов.  
+параметров:
 
-- A [Trait Representation](/Mods/ContentTweaker/Tinkers_Construct/Trait/) representing the currently used `trait`.
-- An [IItemStack](/Vanilla/Items/IItemStack/) representing the used `tool`
-- An int representing the `unmodifiedAmount` of durability to be reduced.
-- An int representing the `newAmount` of durability to be reduced, which can already be modified by other traits.
-- An [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) representing the current tool `holder`
+- [Представление симптомов](/Mods/ContentTweaker/Tinkers_Construct/Trait/) , представляющее используемый в настоящее время `симптом`.
+- [IItemStack](/Vanilla/Items/IItemStack/) представляющий используемый инструмент ``
+- Подсказка, представляющая `бесмодифицированное количество` долговечности, которая должна быть уменьшена.
+- Подсказка, содержащая `новое кол-во` прочности, которая должна быть уменьшена, которая уже может быть изменена другими характеристиками.
+- [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) , представляющий текущий инструмент `держатель`
 
-**Returns an int** representing the new amount. Otherwise return `newAmount`
+**Возвращает int** , представляющую новую сумму. В противном случае верните `новую сумму`
 
-Created using
+Создано
 
 ```zenscript
 myTrait.onToolDamage = function(trait, tool, unmodifiedAmount, newAmount, holder) {
     //CODE
-    return newAmount; //Or your modified value
+    возвращает newAmount; //Или ваше измененное значение
 };
 ```
 
-### calcToolHeal
+### CalcToolHeal
 
-Called before the tools durability is getting increased.  
-Parameters:
+Вызывается до увеличения прочности инструментов.  
+параметров:
 
-- A [Trait Representation](/Mods/ContentTweaker/Tinkers_Construct/Trait/) representing the currently used `trait`.
-- An [IItemStack](/Vanilla/Items/IItemStack/) representing the used `tool`
-- An int representing the `unmodifiedAmount` of durability to be increased.
-- An int representing the `newAmount` of durability to be increased, which can already be modified by other traits.
-- An [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) representing the current tool `holder`
+- [Представление симптомов](/Mods/ContentTweaker/Tinkers_Construct/Trait/) , представляющее используемый в настоящее время `симптом`.
+- [IItemStack](/Vanilla/Items/IItemStack/) представляющий используемый инструмент ``
+- Подсказка, содержащая `бесмодифицированное количество` прочности, которая будет увеличена.
+- Подсказка, содержащая `новое кол-во` прочности, которая должна быть увеличена, которая уже может быть изменена другими характеристиками.
+- [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) , представляющий текущий инструмент `держатель`
 
-**Returns an int** representing the new amount. Otherwise return `newAmount`
+**Возвращает int** , представляющую новую сумму. В противном случае верните `новую сумму`
 
-Created using
+Создано
 
 ```zenscript
 myTrait.calcToolHeal = function(trait, tool, unmodifiedAmount, newAmount, holder) {
     //CODE
-    return newAmount; //Or your modified value
+    возвращает newAmount; //Или ваше измененное значение
 };
 ```
 
-### onToolRepair
+### ремонт инструментов
 
-Called before the tool is getting repaired with tis repair material.  
-Not to be confused with `onToolHeal` which is called afterwards.  
-Will be called multiple times if multiple items are used at once.  
-Parameters:
+Вызывается перед инструментом ремонт и ремонт чугуна.  
+Не следует путать с `onToolHeal` , который называется позднее.  
+Будет вызвано несколько раз, если используется несколько предметов одновременно.  
+Параметры:
 
-- A [Trait Representation](/Mods/ContentTweaker/Tinkers_Construct/Trait/) representing the currently used `trait`.
-- An [IItemStack](/Vanilla/Items/IItemStack/) representing the `tool` to be repaired
-- An int representing the `amount` of durability to be increased.
+- [Представление симптомов](/Mods/ContentTweaker/Tinkers_Construct/Trait/) , представляющее используемый в настоящее время `симптом`.
+- [IItemStack](/Vanilla/Items/IItemStack/) , представляющий инструмент `` , который будет отремонтирован
+- Подсказка, представляющая `количество` прочности, которая будет увеличена.
 
-**Returns nothing**
+**Ничего не возвращает**
 
-Created using
+Создано
 
 ```zenscript
 myTrait.onToolRepair = function(trait, tool, amount) {
@@ -447,7 +447,7 @@ myTrait.onToolRepair = function(trait, tool, amount) {
 };
 ```
 
-## Example
+## Пример
 
 ```zenscript
 #loader contenttweaker
@@ -456,11 +456,11 @@ myTrait.onToolRepair = function(trait, tool, amount) {
 val testTrait = mods.contenttweaker.tconstruct.TraitBuilder.create("kindlich_test");
 testTrait.color = 0xffaadd;
 testTrait.maxLevel = 100;
-testTrait.countPerLevel = 20;
+testTrait. ountPerLevel = 20;
 testTrait.addItem(<item:minecraft:iron_pickaxe>);
 testTrait.addItem(<item:minecraft:iron_block>, 4, 2);
 testTrait.localizedName = "Whooooooooo";
-testTrait.localizedDescription = "This is fun! Sadly, it doesn't do anything... \u2639";
+testTrait.localizedDescription = "Это весело! К сожалению, это ничего не делает... \u2639";
 testTrait.afterHit = function(thisTrait, tool, attacker, target, damageDealt, wasCrit, wasHit) {
     attacker.heal(damageDealt);
 };

@@ -1,25 +1,25 @@
-# Crooking
+# Torneos
 
-## Package
+## Paquete
 ```zenscirpt
 mods.exnihilocreatio.Crook
 ```
 ## Metodos
 
-- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input** The input.
-- **[IItemStack](/Vanilla/Items/IItemStack/) reward** the item that has a chance to drop.
-- **Float chance** chance between 0-1.
-- **Float fortune chance** chance between 0-1.
+- **[IIngrediente](/Vanilla/Variable_Types/IIngredient/) entrada** La entrada.
+- **[ItemStack](/Vanilla/Items/IItemStack/) recompensa** el objeto que tiene la oportunidad de soltar.
+- **Probabilidad flotante** de probabilidad entre 0-1.
+- **Probabilidad fortune flota** de probabilidad entre 0-1.
 
-## Addition
+## Adicional
 
 ```zenscript
-mods.exnihilocreatio.Crook.addRecipe(IIngredient, IItemStack, Float, Float);
+mods.exnihilocreatio.Crook.addRecipe(IIngrediente, ItemStack, Float, Float);
 
 mods.exnihilocreatio.Crook.addRecipe(<minecraft:log>, <minecraft:plank>, 0.25, 0.5);
 ```
 
-## Removal
+## Eliminar
 
 ```zenscript
 mods.exnihilocreatio.Crook.removeAll();

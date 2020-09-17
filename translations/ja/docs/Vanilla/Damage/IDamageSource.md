@@ -1,44 +1,44 @@
 # IDamageSource
 
-An IDamageSource object is the source of damage to an entity.
+IDamageSource オブジェクトは、エンティティに損害を与える原因です。
 
-## Importing the class
+## クラスのインポート
 
-It might be required to [import](/AdvancedFunctions/Import/) the class to avoid errors.  
+エラーを避けるには、 [クラスを](/AdvancedFunctions/Import/) インポートする必要があります。  
 `import crafttweaker.damage.IDamageSource`
 
-## Zengetters and ZenMethods without parameters
+## パラメータのないZengettersとZenMethods
 
-| ZenGetter        | ZenMethod                         | Return Type                           |
-| ---------------- | --------------------------------- | ------------------------------------- |
-| harmInCreative   | canHarmInCreative();              | bool型                                 |
-| damageType       | getDamageType();                  | string                                |
-| hunderDamage     | getHungerDamage();                | float型                                |
-| immediateSource  | getImmediateSource();             | [IEntity](/Vanilla/Entities/IEntity/) |
-| trueSource       | getTrueSource();                  | [IEntity](/Vanilla/Entities/IEntity/) |
-| creativePlayer   | isCreativePlayer();               | bool                                  |
-| damageAbsolute   | isDamageAbsolute();               | bool                                  |
-| difficultyScaled | isDifficultyScaled();             | bool                                  |
-| explosion        | isExplosion();                    | bool                                  |
-| fireDamage       | isFireDamage();                   | bool                                  |
-| magicDamage      | isMagicDamage();                  | bool                                  |
-| projectile       | isProjectile();                   | bool                                  |
-|                  | setDamageAllowedInCreativeMode(); | IDamageSource                         |
-|                  | setDamageBypassesArmor();         | IDamageSource                         |
-|                  | setDamageIsAbsolute();            | IDamageSource                         |
-|                  | setDifficultyScaled();            | IDamageSource                         |
-|                  | setExplosion();                   | IDamageSource                         |
-|                  | setFireDamage();                  | IDamageSource                         |
-|                  | setMagicDamage();                 | IDamageSource                         |
-|                  | setProjectile();                  | IDamageSource                         |
+| ZenGetter       | ZenMethod                         | Return Type                           |
+| --------------- | --------------------------------- | ------------------------------------- |
+| harmInCreative  | canHarmInCreative();              | bool型                                 |
+| ダメージタイプ         | getDamageType();                  | 文字列                                   |
+| hunderDamage    | getHungerDamage();                | float型                                |
+| immediateSource | getImmediateSource();             | [IEntity](/Vanilla/Entities/IEntity/) |
+| trueSource      | getTrueSource();                  | [IEntity](/Vanilla/Entities/IEntity/) |
+| creativePlayer  | isCreativePlayer();               | bool                                  |
+| damageAbsolute  | isDamageAbsolute();               | bool                                  |
+| 難易度スケール         | isDifficultyScaled();             | bool                                  |
+| 爆発              | isExplosion();                    | bool                                  |
+| 火災ダメージ          | isFireDamage();                   | bool                                  |
+| magicDamage     | isMagicDamage();                  | bool                                  |
+| 発射物             | isProjectile();                   | bool                                  |
+|                 | setDamageAllowedInCreativeMode(); | IDamageSource                         |
+|                 | setDamageBypassesArmor();         | IDamageSource                         |
+|                 | setDamageIsAbsolute();            | IDamageSource                         |
+|                 | setDifficultyScaled();            | IDamageSource                         |
+|                 | setExplosion();                   | IDamageSource                         |
+|                 | setFireDamage();                  | IDamageSource                         |
+|                 | setMagicDamage();                 | IDamageSource                         |
+|                 | setProjectile();                  | IDamageSource                         |
 
 ## ZenMethod with Parameters
 
-- getDeathMessage([IEntity](/Vanilla/Entities/IEntity/) entity); → Returns a string containing the death message for the entity if it dies by this damageSource
+- getDeathMessage([IEntity](/Vanilla/Entities/IEntity/) entity); → このダメージソースによって死亡した場合、エンティティのデッセージメッセージを含む文字列を返します。
 
-## Getting an IDamageSource Object
+## IDamageSource オブジェクトの取得
 
-You can either use these methods or the [Damage Source Bracket Handler](/Vanilla/Brackets/Bracket_DamageSource/).
+これらの方法または [ダメージ元ブラケットハンドラ](/Vanilla/Brackets/Bracket_DamageSource/)を使用できます。
 
 ```zenscript
 crafttweaker.damage.IDamageSource.createMobDamage(IEntityLivingBase mob)

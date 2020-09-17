@@ -1,22 +1,22 @@
-# Glowstone Extractor
+# Glowstone 提取器
 
 ## 所属包名
 ```zenscript
-import mods.calculator.glowstone;
+导入 mods.calculator.glowstone;
 ```
 
 ## 使用方式
 
-- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input** The input.
-- **Int value** The amount of input adds to that machine.
+- **[Ingredient](/Vanilla/Variable_Types/IIngredient/) 输入** 输入.
+- **整数** 输入数量添加到该机上。
 
 
-## Additon
+## 附加组件
 ```zenscript
-glowstone.addRecipe(IIngredient input, int value);
+glowstone.addRecipe(I成分输入，int value)；
 ```
 
-## Removal
+## 移除
 ```zenscript
-glowstone.removeRecipe(IIngredient input);
+glowstone.removeRecipe(I成分输入)；
 ```

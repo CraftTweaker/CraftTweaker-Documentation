@@ -1,34 +1,34 @@
-# Microwave
+# Mikrofala
 
-The Microwave heats up food items.
+Mikrofala rozgrza jedzenie.
 
-## Default Microwave Recipes
+## Domyślne przepisy mikrofalowe
 
-- Beef -> Cooked Beef
-- Potato -> Baked Potato
+- Wołowina -> Gotowana Wołowina
+- Ziemniak -> Pieczony ziemniak
 
-## Removing
+## Usuwanie
 
-## Remove matching microwave recipes.
+## Usuń pasujące przepisy mikrofalowe.
 
 ```zenscript
-mods.cfm.Microwave.remove(@Optional final IIngredient output, @Optional final IIngredient input);
+mods.cfm.Microwave.remove(@Optional final IIngredient output, @Optional final IIngredient Input);
 
-// Remove recipes that require a Potato
-mods.cfm.Microwave.remove(null,<minecraft:potato>);
-// Remove recipes that result in Cooked Beef
+// Usuń receptury, które wymagają
+mods.cfm.Microwave. emove(null,<minecraft:potato>);
+// Usuń receptury, które skutkują gotowaniem wołowiny
 mods.cfm.Microwave.remove(<minecraft:cooked_beef>);
-// Remove all recipes
+// Usuń wszystkie przepisy
 mods.cfm.Microwave.remove();
 ```
 
-## Adding
+## Dodawanie
 
-## Add a microwave recipe.
+## Dodaj przepis mikrofalowy.
 
 ```zenscript
-mods.cfm.Microwave.addRecipe(@Nonnull final IItemStack output, @Nonnull final IItemStack input);
+mods.cfm.Microwave.addRecipe(@Nonnull final wyjście IItemStack, @Nonnull final IItemStack);
 
-// Add a recipe that makes a 4 sticks from one sugar cane
-mods.cfm.Microwave.addRecipe(<minecraft:stick>.withAmount(4),<minecraft:reeds>);
+// Dodaj przepis, który robi 4 kijki z jednego modu z trzciny cukrowej
+. fm.Microwave.addRecipe(<minecraft:stick>.withAmount(4),<minecraft:reeds>);
 ```

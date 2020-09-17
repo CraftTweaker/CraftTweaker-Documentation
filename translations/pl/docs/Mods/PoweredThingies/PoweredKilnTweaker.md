@@ -1,33 +1,33 @@
-# Powered Thingies :: Powered Kiln
+# Zasilane rzeczy :: Piec napędzany
 
-### Importing
+### Importowanie
 
 ```zenscript
-import mods.poweredthingies.Tweaker.poweredKilnTweaker as pkt;
+importuj mods.poweredthingies.Tweaker.poweredKilnTweaker jako pkt;
 ```
 
-### Listing Keys, Removing Recipes by Key, Clearing
+### Lista kluczy, usuwanie przepisów przez klucz, czyszczenie
 
 ```zenscript
 pkt().logKeys()
-pkt().removeRecipe('minecraft:planks') // check <logKeys> output for valid keys
+pkt().removeRecipe('minecraft:planks') // sprawdź <logKeys> wyjście dla prawidłowych kluczy
 pkt().clear()
 ```
 
-### Adding Recipe
+### Dodawanie przepisu
 
-##### Signature
+##### Podpis
 
 ```zenscript
 addRecipe(input: IItemStack, output: IItemStack)
 ```
 
-##### Example
+##### Przykład
 
 ```zenscript
 pkt().addRecipe(<minecraft:bucket>, <minecraft:iron_ingot>);
 ```
 
-### Notes
+### Uwagi
 
-All of these actions will get cached and ran after the default registry for this machine has finished registering all recipes (including the ones from the custom jsons).
+Wszystkie te działania zostaną zapisane w pamięci podręcznej i uruchomione po zakończeniu rejestracji domyślnego rejestru dla tego komputera (w tym tych z niestandardowych jsonów).

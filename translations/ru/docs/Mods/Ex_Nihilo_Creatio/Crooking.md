@@ -1,17 +1,17 @@
-# Crooking
+# Крюинг
 
-## Package
+## Пакет
 ```zenscirpt
-mods.exnihilocreatio.Crook
+mods.exnihilocreatio.Крук
 ```
 ## Методы
 
 - **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input** The input.
-- **[IItemStack](/Vanilla/Items/IItemStack/) reward** the item that has a chance to drop.
-- **Float chance** chance between 0-1.
-- **Float fortune chance** chance between 0-1.
+- **[IItemStack](/Vanilla/Items/IItemStack/) награда** предмет, который может выпасть.
+- **Ледяной шанс** в диапазоне от 0 до 1.
+- **Ледяной шанс** в промежутке от 0 до 1.
 
-## Addition
+## Сложение
 
 ```zenscript
 mods.exnihilocreatio.Crook.addRecipe(IIngredient, IItemStack, Float, Float);
@@ -19,7 +19,7 @@ mods.exnihilocreatio.Crook.addRecipe(IIngredient, IItemStack, Float, Float);
 mods.exnihilocreatio.Crook.addRecipe(<minecraft:log>, <minecraft:plank>, 0.25, 0.5);
 ```
 
-## Removal
+## Удаление
 
 ```zenscript
 mods.exnihilocreatio.Crook.removeAll();

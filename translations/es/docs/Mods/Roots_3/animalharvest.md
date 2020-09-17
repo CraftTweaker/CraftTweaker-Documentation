@@ -1,14 +1,14 @@
-### Class
+### Clase
 
 ```zenscript
-import mods.roots.AnimalHarvest;
+importar mods.roots.AnimalHarvest;
 ```
 
-#### Methods
+#### Métodos
 
 ```zenscript
 void addEntity(
-  IEntityDefinition entity // the entity to generate drops for
+  IEntityDefinition entity // la entidad para generar gotas para
 );
 ```
 
@@ -16,7 +16,7 @@ void addEntity(
 
 ```zenscript
 void removeEntity(
-  IEntityDefinition entity // the entity to stop generating drops for
+  entidad IEntityDefinition // la entidad para dejar de generar gotas para
 );
 ```
 
@@ -24,38 +24,38 @@ void removeEntity(
 
 ```zenscript
 void addFish(
-  string name,     // the name of the type of fish
-  IItemStack fish, // the type of fish as an item stack
-  int weight       // the weight of the fish as an integer
+  nombre de cadena, // el nombre del tipo de pez
+  ItemStack fish, // el tipo de pescado como una pila de artículo
+  de peso int // el peso del pez como un entero
 );
 ```
 
 * * *
 
 ```zenscript
-void removeFish(
-  IItemStack fish // the type of fish to remove as an item stack
+vacíe removeFish(
+  ItemStack fish // el tipo de pez a eliminar como pila de artículos
 );
 ```
 
 * * *
 
-### Examples
+### Ejemplos
 
 ```zenscript
-import mods.roots.AnimalHarvest;
+importar mods.roots.AnimalHarvest;
 
-// Adds an enderman as a target for the Animal Harvest ritual.
-// Generally it would be better to use animals.
+// Añade un enderman como objetivo para el ritual de la Cosecha de Animales.
+// En general, sería mejor utilizar animales.
 AnimalHarvest.addEntity(<entity:minecraft:enderman>);
 
-// Prevents the entity from giving drops during the ritual
-AnimalHarvest.removeEntity(<entity:minecraft:cow>);
+// Evita que la entidad dé gotas durante el ritual
+AnimalCosvest. emoveEntity(<entity:minecraft:cow>);
 
-// Adds magma cream as a type of fish with a weight of 20 (all weights based on 
-// the standard fishing.json loot table)
+// Añade la crema de magma como un tipo de pescado con un peso de 20 (todos los pesos basados en 
+// la pesca estándar. tabla de botes de hijos)
 AnimalHarvest.addFish("magma_cream", <minecraft:magma_cream>, 20);
 
-// Removes pufferfish from the Animal Harvest ritual
+// Elimina el ritual de Pez Calabaza de la Cosecha de Animal
 AnimalHarvest.removeFish(<minecraft:fish:3>);
 ```

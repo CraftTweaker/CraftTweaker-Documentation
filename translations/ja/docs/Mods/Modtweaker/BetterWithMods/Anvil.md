@@ -1,10 +1,10 @@
-# Anvil
+# 金床
 
-The Anvil is a simple 4x4 Crafting Table with the same options.
+金床は、同じオプションを備えたシンプルな4×4の作業台です。
 
-## Shaped
+## 形状
 
-### Addition
+### 加算
 
 ```zenscript
 mods.betterwithmods.Anvil.addShaped(IItemStack output, IIngredient[][] inputs);
@@ -17,20 +17,20 @@ mods.betterwithmods.Anvil.addShaped(<minecraft:dirt>, [
 ]);
 ```
 
-### Removal
+### 削除
 
 ```zenscript
-mods.betterwithmods.Anvil.removeShaped(IItemStack output, @Optional IIngredient[][] inputs);
+mods.betterwithmods.Anvil.removeShaped(IItemStack 出力, @Optional IIngredient[][] inputs);
 
-mods.betterwithmods.Anvil.removeShaped(<minecraft:dirt>);
+mods.betterwithmods.Anvil.removeShaped()<minecraft:dirt>);
 
-mods.betterwithmods.Anvil.removeShaped(<minecraft:dirt>,[[<minecraft:stone>]]);
+mods.betterwithmods.Anvil.removeShaped(<minecraft:dirt>,[<minecraft:stone>]);
 
 ```
 
 ## Shapeless
 
-### Addition
+### 加算
 
 ```zenscript
 mods.betterwithmods.Anvil.addShapeless(IItemStack output, IIngredient[] inputs);
@@ -43,7 +43,7 @@ mods.betterwithmods.Anvil.addShapeless(<minecraft:dirt>, [
 ]);
 ```
 
-### Removal
+### 削除
 
 ```zenscript
 mods.betterwithmods.Anvil.removeShapeless(IItemStack output, @Optional IIngredient[] inputs);

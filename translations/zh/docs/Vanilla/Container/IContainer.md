@@ -1,15 +1,15 @@
 # IContainer
 
-An IContainer is an item container that is able to hold several itemStacks such as a chest.
+IContainer 是一个能够持有几个物品如箱子的物品的容器。
 
 ## ZenGetter/Setter
 
-- `container.containerSize` returns the container size as int
-- `container.getStack(int index)` returns the [IItemStack](/Vanilla/Items/IItemStack/) at the given index.
-- `container.setStack(int index, IItemStack stack)` sets the [IItemStack](/Vanilla/Items/IItemStack/) at the given index.
+- `container.containersize` 返回容器大小为 int
+- `container.getStack(int index)` 返回给定索引的 [IItemStack](/Vanilla/Items/IItemStack/)
+- `container.setStack(整数索引，IItemStack)` 在给定的索引中设置 [IItemStack](/Vanilla/Items/IItemStack/)
 - `container.asString()` `container as string` executes `toString` on the container object.
 
-## Iterable<IItemStack\>
+## 遍历<IItemStack\>
 
-An IContainer is an [`Iterable<IItemStack>`](/Vanilla/Items/IItemStack/).  
-This means that you can use a for-loop on the container to iterate over its [IItemStacks](/Vanilla/Items/IItemStack/).
+IContainer 是 [`Iterable<IItemStack>`](/Vanilla/Items/IItemStack/)。  
+这意味着您可以在容器上使用循环来迭代 [IItemStacks](/Vanilla/Items/IItemStack/)

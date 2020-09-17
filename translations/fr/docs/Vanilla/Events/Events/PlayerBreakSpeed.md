@@ -1,27 +1,27 @@
-# PlayerBreakSpeed
+# format@@0 PlayerBreakSpeed
 
-The PlayerBreakSpeed Event is fired whenever a player tries to break a block.  
-It can be canceled to stop theplayer from being able to break that block.
+L'événement PlayerBreakSpeed est lancé chaque fois qu'un joueur tente de briser un bloc.  
+Il peut être annulé pour empêcher le joueur de pouvoir casser ce bloc.
 
-## Event Class
+## Classe de l'événement
 
-You will need to cast the event in the function header as this class:  
-`crafttweaker.event.PlayerBreakSpeedEvent`  
-You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
+Vous devrez lancer l'événement dans l'en-tête de la fonction comme cette classe:  
+`crafttweaker.event. layerBreakSpeedEvent`  
+Vous pouvez, bien sûr, également [importer](/AdvancedFunctions/Import/) la classe avant et utiliser ce nom alors.
 
-## Event interface extensions
+## Extensions d'interface de l'événement
 
-PlayerBreakSpeed Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+Les événements PlayerBreakSpeed implémentent les interfaces suivantes et peuvent également appeler toutes leurs méthodes/getters/setters :
 
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
-- [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
-- [IEventPositionable](/Vanilla/Events/Events/IEventPositionable/)
+- [Evénement IPlayer](/Vanilla/Events/Events/IPlayerEvent/)
+- [IEventPositionnable](/Vanilla/Events/Events/IEventPositionable/)
 
 ## ZenGetter/Setter
 
-| ZenGetter     | ZenSetter | Type                                        |
-| ------------- | --------- | ------------------------------------------- |
-| blockState    |           | [IBlockState](/Vanilla/Blocks/IBlockState/) |
-| block         |           | [IBlock](/Vanilla/Blocks/IBlock/)           |
-| originalSpeed |           | float                                       |
-| newSpeed      | newSpeed  | float                                       |
+| ZenGetter        | ZenSetter        | Type de texte                                    |
+| ---------------- | ---------------- | ------------------------------------------------ |
+| blockState       |                  | [État de l'IBlock](/Vanilla/Blocks/IBlockState/) |
+| Bloquer          |                  | [Verrouillage](/Vanilla/Blocks/IBlock/)          |
+| Vitesseoriginale |                  | flottant                                         |
+| Nouvelle Vitesse | Nouvelle Vitesse | flottant                                         |

@@ -1,29 +1,29 @@
-# Thermal Evaporation
+# Тепловое испарение
 
-As of Mekanism 9.7.0 it is now possible to view all recipe strings of the Thermal Evaporation through the command `/ct mekrecipes thermalevaporation`
+В соответствии с Меканизмом 9.7.0 теперь можно просматривать все рецептные строки термального испарения через команду `/ct mekrecipes термоиспарения`
 
-## Addition
+## Сложение
 
 ```zenscript
-mods.mekanism.thermalevaporation.addRecipe(ILiquidStack liquidInput, ILiquidStack liquidOutput);
+mods.mekanism.thermalevaporation.addRecipe(ILiquidStack liquidInput, ILiquidStack);
 
 mods.mekanism.thermalevaporation.addRecipe(<liquid:liquidfusionfuel>, <liquid:lava>);
 ```
 
-## Removal
+## Удаление
 
 ```zenscript
 mods.mekanism.thermalevaporation.removeRecipe(IIngredient liquidInput, @Optional IIngredient liquidOutput);
 
 mods.mekanism.thermalevaporation.removeRecipe(<liquid:water>, <liquid:brine>);
-mods.mekanism.thermalevaporation.removeRecipe(<liquid:brine>);
+mods.mekanism.thermalevaporation.removeRecipe(<liquid:brine>
 ```
 
-Specifying an output parameter will only remove the specific recipe that results in that output from that input. Omitting the output parameter will remove all recipes that the input item can produce.
+Указание выходного параметра только удалит конкретный рецепт, который приводит к этому выводу. Пропуск выходного параметра удалит все рецепты, которые может генерировать входной элемент.
 
-## Removing all recipes
+## Удаление всех рецептов
 
-As of Mekanism 9.7.0 it is now possible to remove all Thermal Evaporation Plant recipes. (This excludes any recipes added via CraftTweaker)
+По данным Меканизма 9.7.0, теперь можно удалить все рецепты Термального завода по испарению. (Это исключает любые рецепты, добавленные через CraftTweaker)
 
 ```zenscript
 mods.mekanism.thermalevaporation.removeAllRecipes();

@@ -1,7 +1,7 @@
 # ICommandSender
 
-The ICommandSender interface is used the base of each Entity and also some other types in CraftTweaker.  
-Each [IEntity](/Vanilla/Entities/IEntity/) and [IPlayer](/Vanilla/Players/IPlayer/) implements this!
+ICommandSenderインターフェイスは、各エンティティのベースと、CraftTweakerの他のいくつかのタイプを使用しています。  
+各 [IEntity](/Vanilla/Entities/IEntity/) と [IPlayer](/Vanilla/Players/IPlayer/) はこれを実装します！
 
 ## パッケージのインポート
 
@@ -12,16 +12,16 @@ It might be required for you to import the package if you encounter any issues (
 
 | ZenGetter   | 戻り値                                    |
 | ----------- | -------------------------------------- |
-| displayName | string                                 |
-| position    | [IBlockPos](/Vanilla/World/IBlockPos/) |
-| world       | [IWorld](/Vanilla/World/IWorld/)       |
-| server      | [IServer](/Vanilla/Game/IServer/)      |
+| displayName | 文字列                                    |
+| 位置          | [IBlockPos](/Vanilla/World/IBlockPos/) |
+| 世界          | [IWorld](/Vanilla/World/IWorld/)       |
+| サーバー        | [IServer](/Vanilla/Game/IServer/)      |
 
 ## ZenMethods
 
-#### Send Message
+#### メッセージを送信
 
-Takes a String. Returns void (nothing).
+文字列を取得する 無効（なし）を返します。
 
 ```zenscript
 sender.sendMessage(String text);

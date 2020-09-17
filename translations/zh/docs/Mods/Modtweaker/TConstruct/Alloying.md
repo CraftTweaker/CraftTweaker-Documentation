@@ -1,19 +1,19 @@
-# Alloying
+# 合金
 
-The `Alloy` package allows you to add or remove Alloy recipes.
+`Alloy`包允许您添加或删除合金配方。
 
 ## 导入包
 
-You can call the Alloy package using `mods.tconstruct.Alloy`
+你可以通过`mods.tconstruct.Alloy`调用这个包
 
-## Add Alloy Recipes
+## 添加合金配方
 
 ```zenscript
 //mods.tconstruct.Alloy.addRecipe(ILiquidStack output, ILiquidStack[] inputs);
 mods.tconstruct.Alloy.addRecipe(<liquid:water> * 10, [<liquid:lava> * 10, <liquid:molten_iron> * 5]);
 ```
 
-## Removing Alloy Recipes
+## 移除合金配方
 
 ```zenscript
 //mods.tconstruct.Alloy.removeRecipe(ILiquidStack output);

@@ -1,33 +1,35 @@
-# Create Compound
-Custom Alchemistry Compound Generation
+# Crear compuesto
+Generación de compuestos de alquimia personalizada
 
-# Package
+# Paquete
 ```zenscript
-mods.alchemistry.Util.createCompound
+mods.alchemistry.Util.createCompoundUtiliza.crearCompuesto
 ```
 
-## Loader
-This needs to be loaded with `#loader alchemistry`
+## Cargador
+Esto debe cargarse con `#loader alchemistry`
 
 ## Metodos
-- **int meta** meta for new Compund
-- **String Name** Name for New Compund
-- **int red** compound red shade, RGB
-- **int green** compound green shade, RGB
-- **int blue** compound blue shade, RGB
-- **Object[][]** Each Bracket holds a different element followed by a comma and the amount to use in your Compound
+- **int meta** meta para nuevo Compund
+- **Nombre de la cadena** Nombre para el nuevo Compund
+- **intar rojo** sombra roja, RGB
+- **int verde** compuesto sombreado verde, RGB
+- **int azul** compuesto por sombra azul, RGB
+- **Object[][]** Cada Bracket contiene un elemento diferente seguido por una coma y la cantidad a usar en su Compuesto
 
-## Creation
+## Creación
 ```zenscript
-mods.alchemistry.Util.createCompound(int meta, String name, int red, int green, int blue, Object[][] components);
+mods.alchemistry.Atomizermods.alchemistry.Util.createCompound(int meta, String name, int red, int green, int blue, Object[][] components);
 
 mods.alchemistry.Util.createCompound(1000, "vibranium sufide", 20, 69, 185,
+[["vibranium", 1],
+ ["sulfur", 3]]);Util.createCompound(1000, "sufide vibranio", 20, 69, 185,
 [["vibranium", 1],
  ["sulfur", 3]]);
 ```
 
-## Notes
-- Please use lowercase names
-- The '#loader alchemistry' line is required at the top of the file. This file can only be used to create elements and compounds, other recipes must be put in other files.
-- The components field requires each entry to be an array like so ["cellulose", 5], indicating the element/compound and it's quantity. String arguments are used here rather than itemstacks as a way to ensure that only elements/compounds are used.
-- The meta field is required to ensure that your new compounds have an unchangeable identifier even when other compounds are created or removed. Each compound must have a unique meta value. At the time of this writing, the mod only uses the meta values from about 0 to 35, but I would start numbering your meta at 1000 (like seen above) or higher to ensure that your custom compounds never clash with Alchemistry's internal recipes
+## Notas
+- Por favor use nombres en minúsculas
+- La línea '#loader alchemistry' es necesaria en la parte superior del archivo. Este archivo sólo puede ser usado para crear elementos y compuestos, otras recetas deben ser puestas en otros archivos.
+- El campo componentes requiere que cada entrada sea una matriz como ["celulose", 5], indicando el elemento/compuesto y su cantidad. Los argumentos de cadena se utilizan aquí en lugar de las pilas de elementos como una forma de asegurar que sólo se usen elementos/compuestos.
+- El campo meta es requerido para asegurarse de que sus nuevos compuestos tienen un identificador inalterable incluso cuando se crean o eliminan otros compuestos. Cada compuesto debe tener un valor meta único. En el momento de escribir esto, el mod sólo utiliza los valores meta de aproximadamente 0 a 35, pero empiezo a numerar tu meta a 1000 (como visto arriba) o superior para asegurar que tus combinaciones personalizadas nunca chocan con las recetas internas de Alchemistry

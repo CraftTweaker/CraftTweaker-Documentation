@@ -1,8 +1,8 @@
-# Chemical Infuser
+# 化学感染用户
 
-As of Mekanism 9.7.0 it is now possible to view all recipe strings of the Chemical Infuser through the command `/ct mekrecipes chemicalInfuser`
+从Mekanism 9.7.0 现在可以通过命令 `/ct mek配方的化学Infuser` 查看所有配方字符串。
 
-## Addition
+## 加
 
 ```zenscript
 mods.mekanism.chemical.infuser.addRecipe(IGasStack inputGas1, IGasStack inputGas2, IGasStack outputGas);
@@ -10,7 +10,7 @@ mods.mekanism.chemical.infuser.addRecipe(IGasStack inputGas1, IGasStack inputGas
 mods.mekanism.chemical.infuser.addRecipe(<gas:water>, <gas:deuterium>, <gas:tritium>);
 ```
 
-## Removal
+## 移除
 
 ```zenscript
 mods.mekanism.chemical.infuser.removeRecipe(IIngredient outputGas, @Optional IIngredient inputGas1, @Optional IIngredient inputGas2);
@@ -19,11 +19,11 @@ mods.mekanism.chemical.infuser.removeRecipe(<gas:hydrogenchloride>, <gas:hydroge
 mods.mekanism.chemical.infuser.removeRecipe(<gas:fusionfuel>);
 ```
 
-Specifying an input parameter will only remove the specific recipe that uses said input. Omitting the input parameter will remove all recipes that produce the specified output.
+指定输入参数只会删除使用所述输入的特定配方。 忽略输入参数将删除所有生成指定输出的配方。
 
-## Removing all recipes
+## 删除所有配方
 
-As of Mekanism 9.7.0 it is now possible to remove all Chemical Infuser recipes. (This excludes any recipes added via CraftTweaker)
+由于Mekanism 9.7.0，现在可以移除所有化学感染者配方。 (这排除了任何通过 CraftTweaker 添加的配方
 
 ```zenscript
 mods.mekanism.chemical.infuser.removeAllRecipes();

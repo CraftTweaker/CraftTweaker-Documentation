@@ -1,181 +1,184 @@
 # IItemStack
 
-An IItemStack Object consists of an [item definition](/Vanilla/Items/IItemDefinition/), a meta/damage value and NBT data.  
-In other words, it refers to an item or to a block.
+Obiekt IItemStack składa się z [definicji przedmiotu](/Vanilla/Items/IItemDefinition/), wartości meta/obrażeń oraz danych NBT.  
+Innymi słowy, odnosi się do przedmiotu lub bloku.
 
-## Importing the package
+## Importowanie pakietu
 
-It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
-`import crafttweaker.item.IItemStack;`
+Może być wymagane zaimportowanie pakietu, jeśli napotkasz jakiekolwiek problemy (takie jak przesyłanie [Array](/AdvancedFunctions/Arrays_and_Loops/)), tak aby były bezpieczne niż przepraszamy i dodaj import.  
+`zaimportuj crafttweaker.item.IItemStack;`
 
 ## Calling an IItemStack
 
-There are several methods that return an IItemStack
+Istnieje kilka metod, które zwracają IItemStack
 
-* Using the [bracket Handler](/Vanilla/Brackets/Bracket_Item/) `<minecraft:apple>`
-* Using the `makeStack()` method on a [IItemDefinition](/Vanilla/Items/IItemDefinition/) object `<minecraft:stone>.definition.makeStack(0)`
-* Using the `stack` getter on a [IEntityDrop](/Vanilla/Entities/IEntityDrop/) object
-* Using the `firstItem` getter on a [IOreDictEntry](/Vanilla/OreDict/IOreDictEntry/)
+* Używanie [uchwytu nawiasów](/Vanilla/Brackets/Bracket_Item/) `<minecraft:apple>`
+* Używając metody `makeStack()` na obiekcie [IItemDefinition](/Vanilla/Items/IItemDefinition/) `<minecraft:stone>.definition.makeStack(0)`
+* Używanie `stosu` getter na obiekcie [IEntityDrop](/Vanilla/Entities/IEntityDrop/)
+* Używanie `firstItem` getter na [IOreDictEntry](/Vanilla/OreDict/IOreDictEntry/)
 
 ## Calling an IItemStack[] or a IItemStack List
 
-If you call these functions, you will most likely do so to iterate through the resulting lists/Arrays
+Jeśli zadzwonisz na te funkcje, najprawdopodobniej zrobisz to aby powtórzyć je przez otrzymane listy/tablice
 
-* Using the `items` method on an [IIngredient](/Vanilla/Variable_Types/IIngredient/) returns a IItemStack List: `<ore:ingotGold>.items`
-* Using the `itemArray` method on an [IIngredient](/Vanilla/Variable_Types/IIngredient/) returns a IItemStack[]: `<ore:ingotGold>.itemArray`
-* Using the `items` method on a [IMod](/Vanilla/Game/Mods/#imod) object returns a IItemStack[]: `loadedMods["minecraft"].items`
+* Używanie `elementów` metody [ISkładnik](/Vanilla/Variable_Types/IIngredient/) zwraca listę IItemStack: `<ore:ingotGold>.item`
+* Używanie metody `itemArray` na [IIngredient](/Vanilla/Variable_Types/IIngredient/) zwraca IItemStack[]: `<ore:ingotGold>.itemArray`
+* Używanie `item` method on a [IMod](/Vanilla/Game/Mods/#imod) obiekt zwraca IItemStack[]: `załadowane Mods["minecraft"].item`
 
-## Functions
+## Funkcje
 
-So what can we do with that now?
+Co zatem możemy teraz zrobić?
 
-### Extending IIngredient
+### Rozszerzenie IIngredient
 
-IItemStack extends [IIngredient](/Vanilla/Variable_Types/IIngredient/).  
-That means all functionality that is available to [IIngredient](/Vanilla/Variable_Types/IIngredient/) objects also is applicable to IItemStacks. <details><summary>Derived Methods</summary> 
+IItemStack rozszerza [IIngredient](/Vanilla/Variable_Types/IIngredient/).  
+Oznacza to, że wszystkie funkcje dostępne dla obiektów [IIngredient](/Vanilla/Variable_Types/IIngredient/) mają również zastosowanie do IItemStacks. <details><summary>Pochodne metody</summary> 
 
-* stack.mark
-* stack.amount
-* stack.items
-* stack.itemArray
-* stack.liquids
-* stack.commandString
-* stack | otherIngredient
-* stack.or(otherIngredient)
-* stack.transform([transformer](/Vanilla/Items/Item_Transformers/))
-* stack.transformNew([transformer](/Vanilla/Items/Item_Transformers/))
-* stack.only([condition](/Vanilla/Items/Item_Conditions/))
+* znak
+* kwota
+* elementy
+* Tablica elementów
+* ciecze
+* Dowiedz się więcej
+* stos | inne składniki
+* stack.or(inny składnik)
+* stack.transform([transformator](/Vanilla/Items/Item_Transformers/))
+* stack.transformNew([transformator](/Vanilla/Items/Item_Transformers/)
+* stack.only([warunek](/Vanilla/Items/Item_Conditions/))
 * stack.marked(mark)
-* stack.matches(item)
-* stack.matchesExact(item)
-* stack.matches(liquid)
-* stack has ingredient
-* stack.applyTransform(stack,player)
-* stack.hasTransformers()</details>
+* [PLACEHOLDER] stack.matches(item
+* [PLACEHOLDER] stack.matchesExact(item)
+* [PLACEHOLDER] stack.matches(liquid)
+* stos ma składnik
+* [PLACEHOLDER] stack.applyTransform(stack,player)
+* stack.hasTransformatory()</details>
 
 ### ZenGetters/ZenSetters
 
-Read how to use them [here](/UsingThisWiki/). Also, check out the examples below.
+Przeczytaj jak używać ich [tutaj](/UsingThisWiki/). Sprawdź również poniższe przykłady.
 
-| ZenGetter/ZenMethod | ZenSetter/ZenMethod | Type                                                        |
-| ------------------- | ------------------- | ----------------------------------------------------------- |
-| definition          |                     | [IItemDefinition](/Vanilla/Items/IItemDefinition/)          |
-| name                |                     | string                                                      |
-| displayName         | displayName         | string                                                      |
-| maxStackSize        | maxStackSize        | int                                                         |
-| hardness            | hardness            | float                                                       |
-| damage              |                     | int                                                         |
-| maxDamage           | maxDamage           | int                                                         |
-| hasTag              |                     | bool                                                        |
-| tag                 | withTag(tag)        | [IData](/Vanilla/Data/IData/)                               |
-| ores                |                     | List<[IOreDictEntry](/Vanilla/OreDict/IOreDictEntry/)\>    |
-| toolClasses         |                     | List<string\>                                              |
-| itemEnchantability  |                     | int                                                         |
-| containerItem       |                     | IItemStack                                                  |
-| hasContainerItem    |                     | bool                                                        |
-| repairCost          | repairCost          | int                                                         |
-| canEditBlocks       |                     | bool                                                        |
-| isOnItemFrame       |                     | bool                                                        |
-| isEnchantable       |                     | bool                                                        |
-| isEnchanted         |                     | bool                                                        |
-| isDamaged           |                     | bool                                                        |
-| isDamageable        |                     | bool                                                        |
-| isItemBlock         |                     | bool (if contained item is an itemblock)                    |
-| isStackable         |                     | bool                                                        |
-| isBeaconPayment     |                     | bool                                                        |
-| hasEffect           |                     | bool                                                        |
-| hasDisplayName      |                     | bool                                                        |
-| metadata            |                     | int                                                         |
-| hasSubtypes         |                     | bool                                                        |
-| isEmpty             |                     | bool                                                        |
-| burnTime            |                     | int                                                         |
-| showsDurabilityBar  |                     | bool                                                        |
-| hasCustomEntity     |                     | bool                                                        |
-| enchantments        |                     | List<[IEnchantment](/Vanilla/Enchantments/IEnchantment/)\> |
+| ZenGetter/ZenMethod      | ZenSetter/ZenMethod | Typ                                                             |
+| ------------------------ | ------------------- | --------------------------------------------------------------- |
+| definicja                |                     | [IItemDefinition](/Vanilla/Items/IItemDefinition/)              |
+| Nazwa                    |                     | ciąg znaków                                                     |
+| nazwa wyświetlacza       | nazwa wyświetlacza  | ciąg znaków                                                     |
+| maxStackSize             | maxStackSize        | odcień                                                          |
+| twardość                 | twardość            | zmiennoprzecinkowe                                              |
+| obrażenia                |                     | odcień                                                          |
+| maxDamage                | maxDamage           | odcień                                                          |
+| Tag hasa                 |                     | bool                                                            |
+| znacznik                 | withTag(tag)        | [IData](/Vanilla/Data/IData/)                                   |
+| ores                     |                     | List<[IOreDictEntry](/Vanilla/OreDict/IOreDictEntry/)\>        |
+| Klasy narzędzi           |                     | Lista<string\>                                                 |
+| itemEnchantability       |                     | odcień                                                          |
+| Element kontenera        |                     | IItemStack                                                      |
+| Element hasContainerItem |                     | bool                                                            |
+| koszt napraw             | koszt napraw        | odcień                                                          |
+| Bloki canEditBlocków     |                     | bool                                                            |
+| isOnItemFrame            |                     | bool                                                            |
+| możliwe do zaklęcia      |                     | bool                                                            |
+| zaczarowana              |                     | bool                                                            |
+| uszkodzony               |                     | bool                                                            |
+| zadające obrażenia       |                     | bool                                                            |
+| blok izitemBlock         |                     | bool (jeśli zawarty przedmiot jest uchwytem)                    |
+| możliwe do odczytania    |                     | bool                                                            |
+| isBeaconPayment          |                     | bool                                                            |
+| Efekt                    |                     | bool                                                            |
+| hasDisplayName           |                     | bool                                                            |
+| metadane                 |                     | odcień                                                          |
+| podtypy                  |                     | bool                                                            |
+| isEmpty                  |                     | bool                                                            |
+| spalony Czas             |                     | odcień                                                          |
+| pokaż Pasek Trwałości    |                     | bool                                                            |
+| hasCustomEntity          |                     | bool                                                            |
+| zaklęcia                 |                     | List<[Zaklęcie Ichantu](/Vanilla/Enchantments/IEnchantment/)\> |
+| matchTagExact            |                     | bool                                                            |
 
-#### Amount
+#### Kwota
 
-| Method call                    | Returns                                                        | ParameterTypes |
-| ------------------------------ | -------------------------------------------------------------- | -------------- |
-| `stack.anyAmount()`            | A new IItemStack with the changed property                     |                |
-| `stack.amount(int amount)`     | A new IItemStack with the changed property                     | int            |
-| `stack.withAmount(int amount)` | A new IItemStack with the changed property                     | int            |
-| `stack *  amount`              | A new IItemStack with the changed property                     | int            |
-| `stack.splitStack(int amount)` | The split IItemStack. The old one will be reduced accordingly. | int            |
+| Metoda połączenia                          | Zwroty                                                      | Typy parametrów |
+| ------------------------------------------ | ----------------------------------------------------------- | --------------- |
+| `Stack.anyKwota()`                         | Nowy IItemStack ze zmienioną właściwością                   |                 |
+| `[PLACEHOLDER] stack.amount(int amount`    | Nowy IItemStack ze zmienioną właściwością                   | odcień          |
+| `[PLACEHOLDER] stack.withKwot(int amount)` | Nowy IItemStack ze zmienioną właściwością                   | odcień          |
+| `stos * kwota`                             | Nowy IItemStack ze zmienioną właściwością                   | odcień          |
+| `stack.splitStack(int amount)`             | Podział IItemStack. Stary zostanie odpowiednio zmniejszony. | odcień          |
 
-#### Weight
+#### Waga
 
-| Method call                   | Returns                                                  | ParameterTypes     |
-| ----------------------------- | -------------------------------------------------------- | ------------------ |
-| `stack.percent(float chance)` | A [WeightedItemStack](/Vanilla/Items/WeightedItemStack/) | float (100 = 100%) |
-| `stack.weight(float chance)`  | A [WeightedItemStack](/Vanilla/Items/WeightedItemStack/) | float (1 = 100%)   |
+| Metoda połączenia                          | Zwroty                                                | Typy parametrów                 |
+| ------------------------------------------ | ----------------------------------------------------- | ------------------------------- |
+| `stack.percent(szansa zmiennoprzecinkowa)` | [Ważone ItemStack](/Vanilla/Items/WeightedItemStack/) | zmiennoprzecinkowe (100 = 100%) |
+| `waga (szansa na pływanie)`                | [Ważone ItemStack](/Vanilla/Items/WeightedItemStack/) | float (1 = 100%)                |
 
-#### Damage
+#### Obrażenia
 
-| Method call                                    | Returns                                    | ParameterTypes                             |
-| ---------------------------------------------- | ------------------------------------------ | ------------------------------------------ |
-| `stack.anyDamage()`                            | A new IItemStack with the changed property |                                            |
-| `stack.withDamage(int damage)`                 | A new IItemStack with the changed property | int                                        |
-| `stack.damageItem(int amount, IEntity entity)` | void (nothing)                             | int, [IEntity](/Vanilla/Entities/IEntity/) |
+| Metoda połączenia                                           | Zwroty                                    | Typy parametrów                            |
+| ----------------------------------------------------------- | ----------------------------------------- | ------------------------------------------ |
+| `[PLACEHOLDER] stack.anyObage()`                            | Nowy IItemStack ze zmienioną właściwością |                                            |
+| `[PLACEHOLDER] stack.withDamage(int damage)`                | Nowy IItemStack ze zmienioną właściwością | odcień                                     |
+| `[PLACEHOLDER] stack.damageItem(int amount, IEntity entity` | Unieważnij (nic)                          | int, [IEntity](/Vanilla/Entities/IEntity/) |
 
-#### Tags
+#### Tagi
 
-| Method call                    | Returns                                    | ParameterTypes                |
-| ------------------------------ | ------------------------------------------ | ----------------------------- |
-| `stack.withEmtpyTag()`         | A new IItemStack with the changed property |                               |
-| `stack.withTag(IData tag)`     | A new IItemStack with the changed property | [IData](/Vanilla/Data/IData/) |
-| `stack.removeTag(String name)` | A new IItemStack with the changed property | string                        |
-| `stack.updateTag(IData tag)`   | A new IItemStack with the changed property | [IData](/Vanilla/Data/IData/) |
+| Metoda połączenia                            | Zwroty                                    | Typy parametrów                     |
+| -------------------------------------------- | ----------------------------------------- | ----------------------------------- |
+| `stack.withEmtpyTag()`                       | Nowy IItemStack ze zmienioną właściwością |                                     |
+| `stack.withTag(tag I)`                       | Nowy IItemStack ze zmienioną właściwością | [IData](/Vanilla/Data/IData/)       |
+| `stack.withTag(tag IDI, bool matchTagExact)` | Nowy IItemStack ze zmienioną właściwością | [IData](/Vanilla/Data/IData/), bool |
+| `stack.removeTag(nazwa ciągu)`               | Nowy IItemStack ze zmienioną właściwością | ciąg znaków                         |
+| `stack.updateTag(tag I)`                     | Nowy IItemStack ze zmienioną właściwością | [IData](/Vanilla/Data/IData/)       |
+| `stack.updateTag(IData, bool matchTagExact)` | Nowy IItemStack ze zmienioną właściwością | [IData](/Vanilla/Data/IData/), bool |
 
-#### Block Casting
+#### Blok przesyłania
 
-| Method call       | Returns                                         |
-| ----------------- | ----------------------------------------------- |
-| `stack.asBlock()` | A new [IBlock](/Vanilla/Blocks/IBlock/) object. |
-| `stack as IBlock` | A new [IBlock](/Vanilla/Blocks/IBlock/) object. |
+| Metoda połączenia   | Zwroty                                         |
+| ------------------- | ---------------------------------------------- |
+| `stack.asBlock()`   | Nowy obiekt [IBlock](/Vanilla/Blocks/IBlock/). |
+| `stosu jako IBlock` | Nowy obiekt [IBlock](/Vanilla/Blocks/IBlock/). |
 
 #### Lore/DisplayName
 
-| Method call                          | Returns                                                                                                           | ParameterTypes                           |
-| ------------------------------------ | ----------------------------------------------------------------------------------------------------------------- | ---------------------------------------- |
-| `stack.withDisplayName(String name)` | A new IItemStack with the changed property. Unlike the displayName setter, this only applies to this single item. | string (supports color codes with "§")   |
-| `stack.withLore(String[] lore)`      | A new IItemStack with the changed property.                                                                       | string[] (supports color codes with "§") |
-| `stack.clearCustomName()`            | void (nothing)                                                                                                    |                                          |
+| Metoda połączenia                    | Zwroty                                                                                                                                    | Typy parametrów                              |
+| ------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------- |
+| `stack.withDisplayName(nazwa ciągu)` | Nowy IItemStack ze zmienioną właściwością. W przeciwieństwie do wyświetlacza Separator Nazw, dotyczy to tylko tego pojedynczego elementu. | ciąg (obsługuje kody kolorów z "§")          |
+| `stack.withLore(String[] lore)`      | Nowy IItemStack ze zmienioną właściwością.                                                                                                | ciąg znaków[] (obsługuje kody kolorów z "§") |
+| `stack.clearCustomName()`            | Unieważnij (nic)                                                                                                                          |                                              |
 
-#### Enchantments
+#### Zaklęcia
 
-| Method call                                                         | Returns        | ParameterTypes                                                          |
-| ------------------------------------------------------------------- | -------------- | ----------------------------------------------------------------------- |
-| `stack.canApplyAtCraftingTable(IEnchantmentDefinition enchantment)` | A bool.        | [IEnchantmentDefinition](/Vanilla/Enchantments/IEnchantmentDefinition/) |
-| `stack.addEnchantment(IEnchantment enchantment)`                    | void (nothing) | [IEnchantment](/Vanilla/Enchantments/IEnchantment/)                     |
+| Metoda połączenia                                              | Zwroty           | Typy parametrów                                                        |
+| -------------------------------------------------------------- | ---------------- | ---------------------------------------------------------------------- |
+| `stack.canApplyAtCraftingTable(IenchantmentDefinicje)`         | Bolu.            | [IEnchantmentDefinicja](/Vanilla/Enchantments/IEnchantmentDefinition/) |
+| `[PLACEHOLDER] stack.addenchantment(IEnchantment enchantment)` | Unieważnij (nic) | [Zaklęcie](/Vanilla/Enchantments/IEnchantment/)                        |
 
 #### canItem...
 
-| Method call                                        | Returns                                                        | ParameterTypes                                        |
-| -------------------------------------------------- | -------------------------------------------------------------- | ----------------------------------------------------- |
-| `stack.canPlaceOn(IBlockDefinition block)`         | A bool that tells if the item can be placed on the block.      | [IBlockDefinition](/Vanilla/Blocks/IBlockDefinition/) |
-| `stack.canDestroy(IBlockDefinition block)`         | A bool that tells if the item can destroy the block.           | [IBlockDefinition](/Vanilla/Blocks/IBlockDefinition/) |
-| `stack.canHarvestBlock(IBlockState block)`         | A bool that tells if the item can harvest the block.           | [IBlockState](/Vanilla/Blocks/IBlockState/)           |
-| `stack.getStrengthAgainstBlock(IBlockState block)` | A float that represents the item's strength against the block. | [IBlockState](/Vanilla/Blocks/IBlockState/)           |
+| Metoda połączenia                            | Zwroty                                                         | Typy parametrów                                         |
+| -------------------------------------------- | -------------------------------------------------------------- | ------------------------------------------------------- |
+| `stack.canPlaceOn(BlockDefinition block)`    | Bolet informujący czy przedmiot może być umieszczony na bloku. | [Definicja IBlock'a](/Vanilla/Blocks/IBlockDefinition/) |
+| `stack.candestroroy(IBlockDefinition block)` | Bolet informujący czy przedmiot może zniszczyć blok.           | [Definicja IBlock'a](/Vanilla/Blocks/IBlockDefinition/) |
+| `stack.canHarvestBlock. (BlockState block)`  | Bolet informujący czy przedmiot może zebrać blok.              | [Stan IBlocka](/Vanilla/Blocks/IBlockState/)            |
+| `stack.getStrengthAgainstBlock.`             | Zmienna reprezentująca siłę przedmiotu w stosunku do bloku.    | [Stan IBlocka](/Vanilla/Blocks/IBlockState/)            |
 
 #### create IEntityItem
 
-| Method call                                                  | Returns                                                                                                     | Parameter Types                                                          |
-| ------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------ |
-| `stack.createEntityItem(IWorld world, int x, int y, int z);` | A new [IEntityItem](/Vanilla/Entities/IEntityItem/) that corresponds to the newly created item in the world | [IWorld](/Vanilla/World/IWorld/), int, int, int                          |
-| `stack.createEntityItem(IWorld world, IBlockPos pos);`       | A new [IEntityItem](/Vanilla/Entities/IEntityItem/) that corresponds to the newly created item in the world | [IWorld](/Vanilla/World/IWorld/), [IBlockPos](/Vanilla/World/IBlockPos/) |
+| Metoda połączenia                                            | Zwroty                                                                                                                | Typy parametrów                                                          |
+| ------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------ |
+| `stack.createEntityItem(IWorld Świat, int x, int y, int z);` | Nowy [Element IEntityItem](/Vanilla/Entities/IEntityItem/) , który odpowiada nowo utworzonemu przedmiotowi na świecie | [IWorld](/Vanilla/World/IWorld/), int, int, int                          |
+| `stack.createEntityItem(IWorld world, IBlockPos pos);`       | Nowy [Element IEntityItem](/Vanilla/Entities/IEntityItem/) , który odpowiada nowo utworzonemu przedmiotowi na świecie | [IWorld](/Vanilla/World/IWorld/), [IBlockPos](/Vanilla/World/IBlockPos/) |
 
-## ItemTransformers and ItemConditions
+## Transformatory przedmiotów i Warunki Przedmiotów
 
-You can find how to use these either in the [IIngredient](/Vanilla/Variable_Types/IIngredient/) page or in their respecive entries:  
-[Item Conditions](/Vanilla/Items/Item_Conditions/)  
-[Item Transformers](/Vanilla/Items/Item_Transformers/)
+Możesz znaleźć sposób korzystania z nich na stronie [IIngredient](/Vanilla/Variable_Types/IIngredient/) lub w ich wartościach wpisów:  
+[Warunki Produktu](/Vanilla/Items/Item_Conditions/)  
+[Transformatory Przedmiotów](/Vanilla/Items/Item_Transformers/)
 
-## Examples
+## Przykłady
 
-#### DisplayName
+#### Wyświetlana nazwa
 
-Globally (translates the item to the new name).
+Globalnie (przekłada przedmiot na nową nazwę).
 
 ```zenscript
 val apple = <minecraft:apple>;
@@ -190,171 +193,171 @@ apple.displayName = "Tomato";
 print(apple.displayName);
 ```
 
-Locally (only this single item).
+Lokalnie (tylko ten pojedynczy element).
 
 ```zenscript
-<minecraft:coal>.withDisplayName("Black Gold");
+<minecraft:coal>.withDisplayName("Czarne Złoto");
 ```
 
-#### Lore
+#### Pożyczka
 
-`<minecraft:coal>.withLore(["This function","requires a","string[]"]);`
+`<minecraft:coal>.withLore(["Ta funkcja","requires a","string[]"]);`
 
-#### Maximum Stack Size
+#### Maksymalny rozmiar stosu
 
-The maximum Stack Size is how many items fit in one Stack, for example, wool’s Stack size is 64 and Buckets’ only 16.
+Maksymalny rozmiar stoiska to ilu przedmiotów mieści się w jednym stoisku, na przykład rozmiar stoiska wełny wynosi 64 a wiadra 16.
 
 ```zenscript
-val apple = <minecraft:apple>;
-val bucket = <minecraft:bucket>;
+owalne jabłko = <minecraft:apple>;
+owalne wiadro = <minecraft:bucket>;
 
-//prints 64
-print(apple.maxStackSize);
+//druk 64
+(jabłko. axStackSize);
 
-//sets apples Max Stack size to 32
-apple.maxStackSize = 32;
+//ustawia Max Stack rozmiar do 32
+jabłek.maxStackSize = 32;
 
-//prints 32
-print(apple.maxStackSize);
+//printts 32
+print(jabłko. axStackSize);
 
-//sets apples Max Stack size to Bucket's Max Stack size
-apple.maxStackSize = bucket.maxStackSize;
+//ustawia Maksymalny rozmiar stosu dla Wiadra
+jabłka.maxStackSize = bucket.maxStackSize;
 
-//prints 16
-print(apple.maxStackSize);
+//printts 16
+print(jabłko.maxStackSize);
 ```
 
-#### Hardness
+#### Twardość
 
-The Hardness is how long it takes to break the referred block. Only works if the object refers to a block.
+Trudność polega na tym, jak długo trwa złamanie bloku. Działa tylko wtedy, gdy obiekt odnosi się do bloku.
 
 ```zenscript
-val grass = <minecraft:grass>;
+owalna trawa = <minecraft:grass>;
 
-//prints 1.0
-print(grass.hardness);
+//drukuje 1.0
+print(twardość trawa);
 
-//sets grass Hardness to 10.0
-grass.hardness = 10.0;
+//ustawia twardość trawy na 10,0
+trawa.twardość = 10.0;
 
-//prints 10.0
-print(grass.hardness);
+//druk 10.0
+druk (twardość trawy);
 ```
 
-#### Damage
+#### Obrażenia
 
-The damage for items that cannot be damaged is 0.
+Obrażenia dla przedmiotów, które nie mogą zostać uszkodzone, wynoszą 0.
 
 ```zenscript
-val pick = <minecraft:diamond_pickaxe>;
+Wal selek = <minecraft:diamond_pickaxe>;
 
-//prints 1561
-print(pick.maxDamage);
+//wydruk 1561
+(ilość). axDamage);
 
-//sets the max damage of the Diamond Pickaxe to 256
+//ustawia maksymalne obrażenia Diamentowego Kilof na 256
 pick.maxDamage = 256;
 
-//prints 256
-print(pick.maxDamage);
+//drukuje 256
+(pick. obrażenia osiowe);
 
 
 
-//Damage doesn't matter, used in recipes
+//Obrażenia nie czynne, użyte w recepturach
 <minecraft:iron_pickaxe>.anyDamage();
 
-//With the given damage
+//With zadane obrażenia
 <minecraft:iron_pickaxe>.withDamage(122);
 ```
 
-#### Tag
+#### Znacznik
 
-The tag is an [IData](/Vanilla/Data/IData/) object.  
-If the item does not contain a tag, it will return an empty tag, never null.
+Tag jest obiektem [IData](/Vanilla/Data/IData/) .  
+Jeśli produkt nie zawiera znacznika, zwróci pusty znacznik, nigdy nie null.
 
 ```zenscript
-//creates apple with the given tag
-//Removes existing tags
-<minecraft:apple>.withTag({Unbreakable: 1});
+//tworzy jabłko z podanym tagiem
+//Usuwa istniejące tagi
+<minecraft:apple>. ithTag({Unbreakable: 1});
 
-//creates apple with an emtpy tag
-<minecraft:apple>.withEmptyTag();
+//tworzy jabłko z imponującym tagiem
+<minecraft:apple>. ithEmptyTag();
 
-//removes a tag by its name
-item.removeTag("tagName");
+//usuwa tag przez jego nazwę
+. emoveTag("tagName");
 
-//update the existing tag
-//If the tag doesn't override an existing tag, they will stay constant.
+//zaktualizuj istniejący tag
+//Jeśli tag nie nadpisuje istniejącego tagu, pozostanie stały.
 item.updateTag({Unbreakable: 1});
 ```
 
-#### Liquid
+#### Płynne
 
-Returns the liquid contained in a single item (if multiple) or null if the item is no container.  
-Returns an [ILiquidStack](/Vanilla/Liquids/ILiquidStack/) Object or null.
+Zwraca ciecz znajdującą się w pojedynczym elemencie (jeśli jest wielowarstwowa) lub zerowa, jeśli przedmiot nie jest pojemnikiem.  
+Zwraca obiekt [ILiquidStack](/Vanilla/Liquids/ILiquidStack/) lub null.
 
 ```zenscript
-val lav = <minecraft:lava_bucket>;
+Val lav = <minecraft:lava_bucket>;
 print(lav.liquid.name);
 ```
 
-#### Amount
+#### Kwota
 
-How many apples are there?
+Ile jest jabłek?
 
 ```zenscript
-<minecraft:apple>.anyAmount();
+<minecraft:apple>. nyAmount();
 
-//1 Apple
-val apple = <minecraft:apple>;
+//1 jabłko
+jabłko = <minecraft:apple>;
 
-//2 Apples
-val moreApples = apple * 2;
+//2 jabłka
+jabłka = jabłko * 2;
 
-//3 Apples
+//3 Jabłka
 val evenMoreApples = <minecraft:apple> * 3;
 ```
 
-#### Weight
+#### Waga
 
-Returns a [weightedItemStack](/Vanilla/Items/WeightedItemStack/) with the provided percentage.
+Zwraca [WażonyItemStack](/Vanilla/Items/WeightedItemStack/) z podaną procentą.
 
 ```zenscript
-val apple = <minecraft:apple>;
+jabłko owalne = <minecraft:apple>;
 
-//Creates a weightedItemStack with 100 percent chance
-var applePercentage = apple % 100;
+//Tworzy ważony Stack z 100 procentami szansy
+var Procent = jabłko % 100;
 
-//Does the same as the above
-applePercentage = apple.weight(1.0);
+//To samo co powyższy
+jabłko Procent = jabłko. ośmioro (1,0);
 ```
 
 #### Ores
 
-Returns a List of [IOreDictEntries](/Vanilla/OreDict/IOreDictEntry/) referring to this item.
+Zwraca listę [IOreDictEnordów](/Vanilla/OreDict/IOreDictEntry/) odnoszącą się do tego elementu.
 
 ```zenscript
 <minecraft:apple>.ores;
 ```
 
-#### Casting to IBlock
+#### Przesyłanie do IBlock
 
-You can cast an IItemStack to an [IBlock](/Vanilla/Blocks/IBlock/), as long as you are referring to a block, otherwise the cast will throw an exception.
+Możesz rzucić IItemStack na [IBlock](/Vanilla/Blocks/IBlock/), tak długo, jak odnosisz się do bloku, w przeciwnym razie rzut wyrzuci wyjątek.
 
 ```zenscript
 <minecraft:dirt>.asBlock();
-<minecraft:dirt> as crafttweaker.block.IBlock;
+<minecraft:dirt> jako crafttweaker.block.IBlock;
 ```
 
-You can also test if an IItemStack contains an ItemBlock and can thus be converted:
+Możesz również przetestować, czy IItemStack zawiera ItemBlock i może być przekształcony:
 
 <pre><code class="zenscript:">&lt;minecraft:dirt&gt;.isItemBlock; // true
 &lt;minecraft:stick&gt;.isItemBlock; // false
 </code></pre>
 
-#### Food Properties
+#### Właściwości Żywności
 
-You can check if an IItemStack is a food item and what food properties it has.  
-May not work for every modded food item!
+Możesz sprawdzić, czy IItemStack jest artykułem żywnościowym i jakie właściwości żywnościowe posiada.  
+Może nie działać dla każdego zmodyfikowanego jedzenia!
 
 ```zenscript
 <minecraft:apple>.isFood; //true

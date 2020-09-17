@@ -1,8 +1,8 @@
-# Mill
+# ミル
 
-## Basic Recipe
+## 基本的なレシピ
 
-* Adds a Mill Recipe 
+* ミルレシピを追加 
 
 ```zenscript
 mods.betterwithmods.Mill.addRecipe(IIngredient[] inputs, IItemStack[] outputs);
@@ -10,45 +10,49 @@ mods.betterwithmods.Mill.addRecipe(IIngredient[] inputs, IItemStack[] outputs);
 mods.betterwithmods.Mill.addRecipe([<minecraft:dirt>],[<minecraft:stone>]);
 ```
 
-## Removal
+## 削除
 
-* Remove a Mill recipe based on the output
+* 出力に基づいてミルレシピを削除
 
 ```zenscript
 mods.betterwithmods.Mill.remove(IItemStack[] outputs);
 ```
 
-* Remove all Mill recipes
+* すべてのミルレシピを削除
 
 ```zenscript
 mods.betterwithmods.Mill.removeAll();
 ```
 
-## Builder
+## ビルダー
 
-The Mill has a recipe builder that allows more precise control over the recipes. All previous methods are simply short cuts to using the builder.
+ミルにはレシピビルダーがあり、レシピをより正確に制御することができます。 以前のすべてのメソッドはビルダーの使用に単純に短縮されます。
 
-* To create a new Mill builder. `mods.betterwithmods.Mill.builder()`
+* 新しいミルビルダーを作成します。 `mods.betterwithmods.Mill.builder()`
 
-* Mill builder methods
+* ミルビルダーのメソッド
      
      * Sets up the inputs and outputs of the recipe  
+          zenscript buildRecipe(IIngredient[] inputs, IItemStack[] outputs)  
               zenscript
               buildRecipe(IIngredient[] inputs, IItemStack[] outputs)
      
-     * Sets the priority of the recipe, the lower the priority the sooner it will be crafted. Default=0.  
+     * レシピの優先度を設定すると、作成される優先度が低いほど早くなります。 Default=0.  
+          zenscript setPriority(int priority)  
               zenscript
               setPriority(int priority)
      
      * Set the sound of a Mill Recipe.  
+          zenscript setSound(String soundLocation)  
               zenscript
               setSound(String soundLocation)
      
      * Finalize the recipe and add it to the game  
+          zenscript build()  
               zenscript
               build()
 
-### Example builder usage
+### ビルダーの使用例
 
 ```zenscript
 mods.betterwithmods.Mill.builder()

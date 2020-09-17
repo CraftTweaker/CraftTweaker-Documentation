@@ -1,28 +1,28 @@
-# ItemFishedEvent
+# Evento ÍtemPescado
 
-This event is fired to when a player is about to fish up an item. Cancelling the event will prevent the player from receiving an item, but the rod will still take damage.
+Este evento se dispara cuando un jugador está a punto de pescar un objeto. Cancelar el evento evitará que el jugador reciba un objeto, pero la vara seguirá recibiendo daños.
 
-## Notes
+## Notas
 
-Additional damage can be done to the rod by setting `event.additionalDamage`. A list of IItemStacks (which is **not modifiable**) that are going to be fished up is contained within `event.drops`.
+Se puede causar daño adicional a la varilla estableciendo `event.additionalDamage`. Una lista de ItemStacks (que es **no modificable**) que se van a pescar está contenida dentro de `event.drops`.
 
-## Event Class
-You will need to cast the event in the function header as this class:  
-`crafttweaker.event.ItemFishedEvent`  
-You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
+## Clase de evento
+Necesitarás lanzar el evento en la cabecera de la función como esta clase:  
+`crafttweaker.event. temFishedEvent`  
+Puede, por supuesto, también [importar la clase](/AdvancedFunctions/Import/) antes y usar ese nombre entonces.
 
-## Event interface extensions
-ItemFished Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+## Extensiones de la interfaz de eventos
+ItemFished Events implementan las siguientes interfaces y son capaces de llamar a todos sus métodos/getters/setters también:
 
-- [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
+- [Evento IJugador](/Vanilla/Events/Events/IPlayerEvent/)
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 
 
 ## ZenGetters/ZenSetters
-The following information can be retrieved/set during the event:
+La siguiente información se puede recuperar/establecer durante el evento:
 
-| ZenGetter | ZenSetter          | Type                                       |
-| --------- | ------------------ | ------------------------------------------ |
-| `damage`  |                    | int                                        |
-|           | `additionalDamage` | int                                        |
-| `drops`   |                    | [IItemStack](/Vanilla/Items/IItemStack/)[] |
+| ZenGetter | Ajuste           | Tipo                                       |
+| --------- | ---------------- | ------------------------------------------ |
+| `daño`    |                  | int                                        |
+|           | `daño adicional` | int                                        |
+| `gotas`   |                  | [IItemStack](/Vanilla/Items/IItemStack/)[] |

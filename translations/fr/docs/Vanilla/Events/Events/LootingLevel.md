@@ -1,22 +1,22 @@
-# LootingLevel
+# Niveau de pillage
 
-This event is fired whenever a Living Entity creature is killed in order to calculate the looting level. The value can be increased or decreased or left as-is. The value may have already been modified by other events, but the original value is not included.
+Cet événement est lancé chaque fois qu'une créature vivante est tuée afin de calculer le niveau de pillage. La valeur peut être augmentée ou diminuée ou laissée telle quelle. La valeur peut déjà avoir été modifiée par d'autres événements, mais la valeur d'origine n'est pas incluse.
 
-## Event Class
-You will need to cast the event in the function header as this class:  
-`crafttweaker.event.LootingLevelEvent`  
-You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
+## Classe de l'événement
+Vous devrez lancer l'événement dans l'en-tête de la fonction comme cette classe:  
+`crafttweaker.event. ootingLevelEvent`  
+Vous pouvez, bien sûr, également [importer](/AdvancedFunctions/Import/) la classe avant et utiliser ce nom alors.
 
-## Event interface extensions
-LootingLevel Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+## Extensions d'interface de l'événement
+Les événements LootingLevel implémentent les interfaces suivantes et peuvent également appeler toutes leurs méthodes/getters/setters :
 
 - [ILivingEvent](/Vanilla/Events/Events/ILivingEvent/)
 
 
 ## ZenGetters/ZenSetters
-The following information can be retrieved/set during the event:
+Les informations suivantes peuvent être récupérées/définies pendant l'événement :
 
-| ZenGetter      | ZenSetter      | Type                                            |
-| -------------- | -------------- | ----------------------------------------------- |
-| `lootingLevel` | `lootingLevel` | int                                             |
-| `damageSource` |                | [IDamageSource](/Vanilla/Damage/IDamageSource/) |
+| ZenGetter           | ZenSetter           | Type de texte                                   |
+| ------------------- | ------------------- | ----------------------------------------------- |
+| `niveau de pillage` | `niveau de pillage` | Indice                                          |
+| `Source de dommage` |                     | [IDamageSource](/Vanilla/Damage/IDamageSource/) |

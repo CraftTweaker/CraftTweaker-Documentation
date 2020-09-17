@@ -1,8 +1,8 @@
-# Full Scale Example
+# フルスケールの例
 
-## Credit
+## クレジット
 
-Credit goes out to Lead Developer pupnewfster for the below example!
+クレジットは以下の例のために開発者の生徒をリードするために出かけます!
 
     #modloaded compatskills reskillable
     #priority 1000

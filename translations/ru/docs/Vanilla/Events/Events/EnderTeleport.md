@@ -1,7 +1,7 @@
-# EnderTeleport
+# ЭндерТелепорт
 
-The EnderTeleport event is fired whenever an enderman or shulker teleport.  
-It is also fired whenever a player teleports using an enderpearl (it is possible that other mods fire this event as well.)
+Событие EnderTeleport запускается всякий раз, когда эндерман или шалкер телепорт.  
+Также стреляется, когда игрок телепортируется с помощью enderpearl (возможно, что другие моды тоже огоняются.)
 
 ## Класс события
 
@@ -9,20 +9,20 @@ You will need to cast the event in the function header as this class:
 `crafttweaker.event.EnderTeleportEvent`  
 You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
 
-## Event interface extensions
+## Наследование от интерфейсов событий
 
-LivingEntityUseItem Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+События LivingEntityUseItem реализуют следующие интерфейсы и также могут вызвать все их методы/getters/setters:
 
 - [ILivingEvent](/Vanilla/Events/Events/ILivingEvent/)
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 
-## ZenGetters/ZenSetters
+## Геттеры/сеттеры
 
-The following information can be retrieved/set during the event:
+Во время события можно извлечь/задать следующую информацию:
 
-| ZenGetter      | ZenSetter      | Type   |
-| -------------- | -------------- | ------ |
-| `targetX`      | `targetX`      | double |
-| `targetY`      | `targetY`      | double |
-| `targetZ`      | `targetZ`      | double |
-| `attackDamage` | `attackDamage` | float  |
+| Геттеры      | ZenSetter    | Тип    |
+| ------------ | ------------ | ------ |
+| `targetX`    | `targetX`    | double |
+| `targetY`    | `targetY`    | double |
+| `целевой Z`  | `целевой Z`  | double |
+| `Урон атаки` | `Урон атаки` | float  |

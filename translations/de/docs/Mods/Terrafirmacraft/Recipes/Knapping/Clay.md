@@ -1,21 +1,21 @@
-# Clay Knapping
+# Lehmknabe
 
-## Package
+## Paket
 ```zenscript
-import mods.terrafirmacraft.ClayKnapping;
+importieren Sie mods.terrafirmacraft.ClayKnapping;
 ```
 
 ## Addition
 
 ```zenscript
-ClayKnapping.addRecipe(String registryName, IItemStack output, String... pattern);
+ClayKnapping.addRecipe(String RegistryName, IItemStack Ausgabe, String... Muster);
 ```
 
-## Removal
+## Entfernen
 
 ```zenscript
-ClayKnapping.removeRecipe(IItemStack output);
-ClayKnapping.removeRecipe(String registryName);
+ClayKnapping.removeRecipe(IItemStack Ausgabe);
+ClayKnapping.removeRecipe(String RegistryName);
 ```
 
 ## Beispiel

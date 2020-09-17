@@ -1,19 +1,19 @@
-# IItemGetContainerItem
+# ItemGetContainerItem
 
-The IItemGetContainerItem function can be added to an [Item](/Mods/ContentTweaker/Vanilla/Creatable_Content/Item/) and will run whenever the item is used as ingredient.  
-It is used to determine, what will be left in the crafting slot, when the item is used as such.  
-Think of buckets, for example: Each filled bucket has the empty bucket as containerItem, and when a filled bucket is crafted, you will end up with an empty one.  
-This function can be used to calculate the containerItem, so you can go crazy with stuff like NBT-Tags or more.
+La función ItemGetContainerItem se puede añadir a un artículo [](/Mods/ContentTweaker/Vanilla/Creatable_Content/Item/) y se ejecutará siempre que el artículo se utilice como ingrediente.  
+Se utiliza para determinar, qué quedará en la ranura de fabricación, cuando el objeto se utiliza como tal.  
+Piensa en los cubos, por ejemplo: Cada cubo lleno tiene el cubo vacío como contenedor, y cuando se fabrica un cubo lleno, acabarás con uno vacío.  
+Esta función se puede utilizar para calcular el containerItem, por lo que puedes ir loco con cosas como NBT-Tags o más.
 
-## Importing the package
+## Importando el paquete
 
-It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
-`import mods.contenttweaker.IItemGetContainerItem;`
+Podría ser necesario que importes el paquete si encuentras algún problema, así que más vale estar seguro que lo sentimos y añadir la importación.  
+`importar mods.contenttweaker.ItemGetContainerItem;`
 
-## Parameters
+## Parámetros
 
-The IItemGetContainerItem is a function with the following parameters:
+ItemGetContainerItem es una función con los siguientes parámetros:
 
-- [IItemStack](/Vanilla/Items/IItemStack/) stack → The item.
+- [ItemStack](/Vanilla/Items/IItemStack/) pila → El artículo.
 
-The Function needs to return a new [IItemStack](/Vanilla/Items/IItemStack/) object, or null, if the item should not leave anything behind.
+La función necesita devolver un nuevo objeto [ItemStack](/Vanilla/Items/IItemStack/) , o nulo, si el elemento no debe dejar nada atrás.

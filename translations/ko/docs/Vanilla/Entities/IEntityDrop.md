@@ -2,7 +2,7 @@
 
 An IEntityDrop refers to a drop from an [Entity](/Vanilla/Entities/IEntityDefinition/).
 
-## Importing the package
+## 패키지 임포트하기
 
 It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
 `import crafttweaker.entity.IEntityDrop;`
@@ -11,7 +11,7 @@ It might be required for you to import the package if you encounter any issues (
 
 You can retrieve this information out of them.
 
-| ZenGetter  | What does it do                                          | Return type                              | Usage             |
+| ZenGetter  | 역할                                                       | Return type                              | Usage             |
 | ---------- | -------------------------------------------------------- | ---------------------------------------- | ----------------- |
 | chance     | Returns the chance of the drop.                          | float                                    | `drop.chance`     |
 | max        | Returns the maximum Amount of the drop.                  | int                                      | `drop.max`        |

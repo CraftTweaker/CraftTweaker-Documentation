@@ -1,42 +1,42 @@
 # IPotionEffect
 
-An IPotionEffect is an [IPotion](/Vanilla/Potions/IPotion/) that also has a duration and an amplifier (strength) parameter.  
-You can get them from an [IPotion](/Vanilla/Potions/IPotion/) object.
+IPotionEffect 是一个 [IPotion](/Vanilla/Potions/IPotion/) 也有一个持续时间和放大器(强度)参数。  
+您可以从 [IPotion](/Vanilla/Potions/IPotion/) 对象获取它们。
 
 ## 导入相关包
 
-It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
-`import crafttweaker.potions.IPotionEffect;`
+如果您遇到任何问题，可能需要导入软件包(例如铸造一个 [数组](/AdvancedFunctions/Arrays_and_Loops/)), 这样比抱歉更安全并添加导入。  
+`导入craftweeper.potions.IPOtionEffect;`
 
 ## ZenGetter
 
-| ZenGetter                              | 返回值类型                                          |
-| -------------------------------------- | ---------------------------------------------- |
-| duration                               | 整型                                             |
-| potion                                 | [IPotion](/Vanilla/Potions/IPotion/)           |
-| doesShowParticles                      | bool                                           |
-| amplifier                              | int                                            |
-| curativeItems                          | List<[IItemStack](/Vanilla/Items/IItemStack/)> |
-| effectName                             | bool                                           |
-| isAmbient                              | bool                                           |
-| isPotionDurationMax (also a ZenSetter) | bool                                           |
+| ZenGetter                            | 返回值类型                                        |
+| ------------------------------------ | -------------------------------------------- |
+| 持续时间                                 | 整型                                           |
+| 药水                                   | [IPotion](/Vanilla/Potions/IPotion/)         |
+| 不显示粒子                                | 布尔值                                          |
+| 放大器                                  | int                                          |
+| 治疗项目                                 | 列表<[IItemStack](/Vanilla/Items/IItemStack/)> |
+| effectName                           | bool                                         |
+| isAmbient                            | bool                                         |
+| isPotionDurationMax (as a ZenSetter) | bool                                         |
 
 ## ZenMethods
 
-### Is an item a curative item
+### 是一个治疗项目
 
-Uses an [IItemStack](/Vanilla/Items/IItemStack/).  
-Returns a bool
+使用 [IItemStack](/Vanilla/Items/IItemStack/)。  
+返回一个布尔值
 
 ```zenscript
 isCurativeItem(IItemStack item);
 ```
 
-### Perform Effect on an Entity
+### 对实体执行特效
 
-Uses an [IEntity](/Vanilla/Entities/IEntity/) or any of its subclasses (e.g. [IPlayer](/Vanilla/Players/IPlayer/)).  
-Returns void (nothing).
+使用 [IEntity](/Vanilla/Entities/IEntity/) 或其任何子类 (例如 [IPlayer](/Vanilla/Players/IPlayer/))。  
+返回 nouvelle (无)。
 
 ```zenscript
-performEffect(IEntity Entity);
+性能效果(实体实体)；
 ```

@@ -1,26 +1,26 @@
-# Steam Furnace
+# 蒸気炉
 
-The Steam Furnace is a machine that converts an input item into an output item using steam.
+蒸気炉は、蒸気を用いて入力項目を出力項目に変換する機械です。
 
-## Package
+## パッケージ
 `mods.steamagerevolution.SteamFurnace`
 
-## Methods
+## メソッド
 
-- **[IItemStack](/Vanilla/Items/IItemStack/) output** The result of the recipe.
-- **[IItemStack](/Vanilla/Items/IItemStack/) input** The input of the recipe.
-- **int craftTime** Crafting time for machine to process
-- **int steamCost** Cost of Steam for machine to process
+- **[IItemStack](/Vanilla/Items/IItemStack/) 出力** レシピの結果。
+- **[IItemStack](/Vanilla/Items/IItemStack/) input** レシピの入力。
+- **int craftTime** マシンの加工時間
+- **int steamCost** 機械が処理する蒸気のコスト
 
-## Addition
+## 加算
 
 ```zenscript
 mods.steamagerevolution.SteamFurnace.addRecipe(IIngredient input, IItemStack output, int craftTime, int steamCost);
-mods.steamagerevolution.SteamFurnace.addRecipe(<ore:cobblestone>, <minecraft:stone>, 200, 200);
+mods.steamagerevolution.StamFurnace.addRecipe(<ore:cobblestone>, <minecraft:stone>, 200, 200);
 ```
 
 
-## Removal
+## 削除
 
 ```zenscript mods.steamagerevolution.SteamFurnace.removeRecipe(IItemStack output); mods.steamagerevolution.SteamFurnace.removeRecipe(<minecraft:glass>);
 

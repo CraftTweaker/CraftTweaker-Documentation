@@ -1,8 +1,8 @@
-# Entity Bracket Handler
+# 实体套装处理器
 
-The Entity Bracket Handler gives you access to the Entities (e.g. Mobs, tile ents etc.) in the game. It is only possible to get entities registered in the game, so adding or removing mods may cause issues if you reference the mod's mobs in an Entity Bracket Handler.
+实体约束处理程序允许您在游戏中访问实体(例如Mobs, 瓦片等)。 只能让实体在游戏中注册， 这样添加或移除模组可能会导致问题，因为你会在实体布局处理器中引用模组的怪物。
 
-Entities are referenced in the Entity handler this way:
+实体在实体处理程序中以此方式引用：
 
 ```zenscript
 <entity:modID:entityName>
@@ -10,11 +10,11 @@ Entities are referenced in the Entity handler this way:
 <entity:minecraft:sheep>
 ```
 
-If the mob/entity is found, this will return an IEntityDefinition Object. Please refer to the [respective Wiki entry](/Vanilla/Entities/IEntityDefinition/) for further information on what you can do with these.
+如果发现生物/实体，这将返回一个 IEntityDefinition 对象。 请参考 [相应的 Wiki 条目](/Vanilla/Entities/IEntityDefinition/) 了解您可以对这些条目做些什么。
 
-# Getting all Registered Entities
+# 获取所有注册实体
 
-You can use the following command to output all registered entities to the CraftTweaker log
+您可以使用下面的命令将所有注册实体输出到 CraftTinlower 日志
 
-    /ct entities
-    /crafttweaker entities
+    /ctt 实体
+    /craftbinding 实体

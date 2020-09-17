@@ -1,15 +1,15 @@
-# Lubricant Registration
+# Rejestracja smaru
 
-## registerLubricant
+## smak rejestracyjny
 
-| Type     | Data Type                                    |
+| Typ      | Typ danych                                   |
 | -------- | -------------------------------------------- |
 | Input    | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
-| mB/4tick | Integer                                      |
+| mB/4tick | Liczba całkowita                             |
 
-### Code Example:
+### Przykład kodu:
 
 ```zenscript
-mods.immersivepetroleum.Lubricant.registerLubricant(ILiquidStack lubricantEntry, int amount);
-mods.immersivepetroleum.Lubricant.registerLubricant(<liquid:lava>, 500);
+mods.immersiveoilum.Lubricant.registerLubricant(ILiquidStack LubricantEntry, int amount);
+mods.immersivepetroleum um.Lubricant.registerLubricant(<liquid:lava>, 500);
 ```

@@ -1,15 +1,15 @@
-# Protein Reactor
+# 蛋白质反应器
 
 ### 导入
 
 ```zenscript
-import mods.industrialforegoing.ProteinReactor;
+1. 进口模式.工业化;
 ```
 
 ### 添加配方
 
 ```zenscript
-ProteinReactor.add(IItemStack input);
+ProteinReactor.add(IItemStack 输入);
 
 ProteinReactor.add(<minecraft:diamond>);
 ```
@@ -17,7 +17,7 @@ ProteinReactor.add(<minecraft:diamond>);
 ### 移除配方
 
 ```zenscript
-ProteinReactor.remove(IItemStack input);
+ProteinReactor.remove(IItemStack 输入);
 
 ProteinReactor.remove(<minecraft:diamond>);
 ```

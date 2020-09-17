@@ -1,16 +1,16 @@
 # PlayerPickupXp
 
-The PlayerPickupXp Event is fired whenever a player picks up experience orbs.
+Das PlayerPickupXp Event wird abgefeuert, wenn ein Spieler Erfahrungsorbs erfährt.
 
 ## Event-Klasse
 
-You will need to cast the event in the function header as this class:  
-`crafttweaker.event.PlayerPickupXpEvent`  
-You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
+Du musst das Ereignis als diese Klasse in den Funktionskopf verschieben:  
+`crafttweaker.event. layerPickupXpEvent`  
+Sie können natürlich auch [die Klasse vor](/AdvancedFunctions/Import/) importieren und dann diesen Namen verwenden.
 
 ## Erweiterte Event-Schnittellen
 
-PlayerPickupXp Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+PlayerPickupXp Events implementieren die folgenden Schnittstellen und können alle ihre Methoden/Getter/Setter auch aufrufen:
 
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 - [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
@@ -19,13 +19,13 @@ PlayerPickupXp Events implement the following interfaces and are able to call al
 
 Die folgenden Informationen lassen sich von diesem Event (Ereignis) abrufen:
 
-| ZenGetter  | Rückgabetyp                               |
-| ---------- | ----------------------------------------- |
-| `canceled` | boolean                                   |
-| `player`   | [IPlayer](/Vanilla/Players/IPlayer/)      |
-| `entityXp` | [IEntityXp](/Vanilla/Entities/IEntityXp/) |
-| `xp`       | float                                     |
+| ZenGetter     | Rückgabetyp                               |
+| ------------- | ----------------------------------------- |
+| `abgebrochen` | boolean                                   |
+| `player`      | [IPlayer](/Vanilla/Players/IPlayer/)      |
+| `entityXp`    | [IEntityXp](/Vanilla/Entities/IEntityXp/) |
+| `xp`          | float                                     |
 
-## ZenMethods
+## ZenMethoden
 
-- `event.cancel()` sets the event as cancelled.
+- `event.cancel()` setzt das Ereignis als abgebrochen.

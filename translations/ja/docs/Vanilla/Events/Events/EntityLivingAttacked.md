@@ -1,24 +1,24 @@
 # EntityLivingAttacked
 
-The EntityLivingAttacked Event is fired whenever an entity is being attacked.  
-It can be canceled to stop the entity from taking damage.
+EntityLivingAttacked Eventは、エンティティが攻撃されるたびに発生します。  
+エンティティがダメージを受けるのを阻止するためにキャンセルすることができます。
 
-## Event Class
+## イベントクラス
 
 You will need to cast the event in the function header as this class:  
 `crafttweaker.event.EntityLivingAttackedEvent`  
 You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
 
-## Event interface extensions
+## イベントインターフェースの拡張
 
-PlayerDeathDrops Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+PlayerDeathDrops イベントは以下のインターフェイスを実装しており、それらのメソッド/getters/settersもすべてコールできます。
 
 - [ILivingEvent](/Vanilla/Events/Events/ILivingEvent/)
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 
 ## ZenGetters
 
-| ZenGetter    | Type                                            |
+| ZenGetter    | タイプ                                             |
 | ------------ | ----------------------------------------------- |
 | damageSource | [IDamageSource](/Vanilla/Damage/IDamageSource/) |
-| amount       | float                                           |
+| 金額           | float型                                          |

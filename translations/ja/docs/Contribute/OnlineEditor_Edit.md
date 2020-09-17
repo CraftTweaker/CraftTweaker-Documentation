@@ -1,68 +1,68 @@
-# Edit Files using GitHub's online editor
+# GitHub のオンライン エディタを使用してファイルを編集
 
-## Requirements
+## 要件
 
-You will need to have created a GitHub account and [forked the wiki to your account](/Contribute/SetupGithub).
+GitHubアカウントを作成し、 [アカウントにWikiをフォーク](/Contribute/SetupGithub)する必要があります。
 
-## Introduction
+## 導入
 
-GitHub's online editor allows you to change and create files using nothing but your browser.  
-It may not be as versatile as [using a local copy](/Contribute/LocalClone/CreateCommit/) but you don't need to worry about [setting up git](/Contribute/LocalClone/InstallingGit/) and all.
+GitHubのオンラインエディタでは、ブラウザ以外を使用してファイルを変更して作成することができます。  
+ローカルコピーを使用する [ほど汎用性はないかもしれません](/Contribute/LocalClone/CreateCommit/) が、 [git](/Contribute/LocalClone/InstallingGit/) の設定を心配する必要はありません。
 
 This guide will show you how to edit an already existing file using github's online editor.  
 You may want to edit the page because you have found a typo or want to include a better example, whatever the reason, feel free to commit changes and eventually [file a Pull Request](/Contribute/PullRequest).
 
-However, remember that you can only edit the English version, translations are handled via [CrowdIn](https://crowdin.com/project/crafttweaker-documentation/).
+ただし、英語版のみ編集できることを覚えておいてください。翻訳は [Crowdin](https://crowdin.com/project/crafttweaker-documentation/) で処理されます。
 
-## Locate the file
+## ファイルを見つけます
 
-If you want to edit an existing file, you first need to locate it.
+既存のファイルを編集する場合は、まずファイルを見つける必要があります。
 
-In most cases you can find the file by checking its Wiki Url.
+ほとんどの場合、Wiki URLをチェックすることでファイルを見つけることができます。
 
-Rule of thumb: The `#` is the docs folder, everything after that are nested folders and eventually the file.
+親指のルール: `#` は docs フォルダで、その後はすべてネストされたフォルダであり、最終的にはファイルです。
 
-For example, the file creating  
-[https://docs.blamejared.com/en/#AdvancedFunctions/Arrays_and_Loops/](https://docs.blamejared.com/en/#AdvancedFunctions/Arrays_and_Loops/)  
-can be found in  
-`docs/AdvancedFunctions/Arrays_and_Loops.md`
+例えば、ファイルの作成  
+[https://docs.blamejared.com/ja/#AdvancedFunctions/Arrays_and_Loops/](https://docs.blamejared.com/en/#AdvancedFunctions/Arrays_and_Loops/)  
+は  
+`docs/AdvancedFunctions/Arrays_and_Loops.md にあります。`
 
-## Edit the file
+## ファイルを編集
 
-After you have successfully located the file, click on it to open it in the GitHub file view.  
-Here you can see how the wiki entry will roughly look like, though no navigation bar is present as this is only the entry content.
+ファイルが正常に見つかったら、それをクリックしてGitHubファイルビューで開きます。  
+wikiのエントリがどのように見えるかをご覧ください。 これがエントリーコンテンツだけなのでナビゲーションバーは存在しませんが
 
-Click on the little pen icon to open the editor: ![Edit Button](/Contribute/assets/OnlineEditor_EditButton.png)
+Click on the little pen icon to open the editor: ![編集ボタン](/Contribute/assets/OnlineEditor_EditButton.png)
 
-The Editor allows you to change your file as you like, and also to directly view a preview with the compiled formatting. This preview will have colored bars on the lefthandside indicating that:
+エディタを使用すると、ファイルを好きなように変更したり、コンパイルされた書式設定でプレビューを直接表示したりできます。 このプレビューには、左側に色付きのバーが表示されます。
 
-- Green: This Section was not present on this page before.
-- Yellow: This Section was present on this page before but was changed, e.g. a typo was corrected, or additional information was provided.
-- Red: This section was present on this page before but was removed.
-- None: This section was untouched.
+- グリーン:このセクションは以前はこのページにはありませんでした。
+- Yellow: このセクションは前にこのページに存在していましたが、変更されました。例えば、タイプミスが修正されたり、追加情報が提供されたりしました。
+- 赤: このセクションは以前にこのページに存在していましたが、削除されました。
+- なし：このセクションは触れられていない。
 
-If the syntax of the files is new for you, the wiki uses MarkDown. There should be many tutorials to find using google (or you could add one right here to this wiki if you like).
+ファイルの構文が新しくなった場合、wikiはMarkDownを使用します。 googleを使って見つけるべきチュートリアルはたくさんあるはずです(もしくは、こちらに追加することもできます)。
 
-## Save/Commit the changes
+## 変更を保存/コミット
 
-After you have changed the file you need to let GitHub know that you want to save your changes.
+ファイルを変更したら、変更を保存したいことを GitHub に知らせる必要があります。
 
-That's what the commit box below your Editor is for:  
-You cannot simply save the file, you need to provide a summary of what you did (commit title) and optionally a short description where you can put additional information like why you did the changes or what exactly was changed.
+エディタの下のコミットボックスは次のようなものです:  
+ファイルを保存することはできません。 あなたが何をしたか(コミットタイトル)の概要と、必要に応じて簡単な説明を提供する必要があります。ここでは、変更の理由や変更内容などの追加情報を入力できます。
 
-By default it looks roughly like this:  
-![Commit Box Default](/Contribute/assets/OnlineEditor_CommitBox_Default.png)
+デフォルトでは以下のようになります。  
+![デフォルトのコミット](/Contribute/assets/OnlineEditor_CommitBox_Default.png)
 
-In this example, the Commit title (or edit summary) is `Update Arrays_and_Loops.md`. GitHub cannot know what your actual changes were supposed to do, so it tries something as generic as this.
+この例では、コミット タイトル (または要約を編集) は `Update Array_and_Loops.md` です。 GitHub は実際の変更が何をすべきかを知ることができないため、これと同じようにジェネリックなものを試行します。
 
-You might want to add an additional title or description, but it is not neccessary, though it makes reviewing your Pull request later on easier.
+追加のタイトルや説明を追加したいと思うかもしれませんが、後でプルリクエストを簡単に確認できますが、必須ではありません。
 
-If you have multiple e-mail addresses registered for your GitHub account, you can choose as which one you will create the commit. This will not have any real impact for contributing, though.  
-You can also decide whether you want to commit directly to your master branch or rather create a new branch for your commit. In most cases committing to your master branch works just fine.
+GitHub アカウントに複数のメールアドレスを登録している場合は、コミットを作成するメールアドレスを選択できます。 しかし、これは貢献するための実質的な影響を与えることはありません。  
+マスターブランチに直接コミットするか、またはコミット用に新しいブランチを作成するかを決定することもできます。 ほとんどの場合、マスターブランチにコミットすることはうまく機能します。
 
-A filled out example might look like this: ![Commit Box Filled](/Contribute/assets/OnlineEditor_CommitBox_Filled.png)
+A filled out example might look like this: ![コミットボックス塗りつぶし](/Contribute/assets/OnlineEditor_CommitBox_Filled.png)
 
-## What to do next
+## 次の操作方法
 
 After you have committed your changes, you can go on and edit or [Create](/Contribute/OnlineEditor_Create) more files using the online editor.  
 After you have done all your changes, you can [file a Pull Request](/Contribute/PullRequest).

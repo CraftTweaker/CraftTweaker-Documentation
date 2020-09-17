@@ -1,38 +1,38 @@
 # IBlockPos
 
-An IBlockPos object represents a position in the game.
+IBlockPos 对象代表着游戏中的一个位置。
 
-## Importing the package
+## 导入相关包
 
-It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
-`import mods.contenttweaker.BlockPos;`
+如果您遇到任何问题，可能需要导入软件包，所以比抱歉更安全并添加导入。  
+`导入 mods.contenttweaker.BlockPos;`
 
-## ZenMethods without parameters
+## ZenMethods 没有参数
 
-| ZenMethod | ZenGetter | Return Type | Description                    |
-| --------- | --------- | ----------- | ------------------------------ |
-| getX()    | x         | int         | Returns the position's X value |
-| getY()    | y         | int         | Returns the position's Y value |
-| getZ()    | z         | int         | Returns the position's Z value |
+| ZenMethod（ZenMethod） | ZenGetter | 返回值类型 | 描述        |
+| -------------------- | --------- | ----- | --------- |
+| getX()               | x         | 整数    | 返回位置的 X 值 |
+| getY()               | 年         | 整数    | 返回位置的 Y 值 |
+| getZ()               | z         | 整数    | 返回位置的 Z 值 |
 
-## ZenMethods with parameters
+## 带参数的 ZenMethods
 
-### Get Offset
+### 获取偏移
 
-Returns a new IBlockPos that is `offset` blocks into the `directionName` or `facing` direction.
+返回一个新的 IBlockPos ，它是 `偏移` 个方块到 `方向名称` 或 `正面` 方向。
 
 `IBlockPos getOffset(String directionName, int offset);`
 
-`directionName` can take these values:
+`方向名称` 可以采集这些值：
 
-- "down"
-- "up"
-- "north"
-- "south"
-- "east"
-- "west"
+- "下拉"
+- "上"
+- “北”
+- “南部”
+- “东”
+- “西”
 
-`IBlockPos getOffset(Facing facing, int offset)` Parameters:
+`IBlockPos getOffset(正面脸，整数偏移)` 参数：
 
-- [Facing](/Vanilla/World/IFacing/) facing → The direction
-- int offset → how many blocks in that direction?
+- [正在脸上](/Vanilla/World/IFacing/) expressing → The direction
+- 整条偏移 -> 该方向有多少块？

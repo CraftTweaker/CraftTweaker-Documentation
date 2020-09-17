@@ -1,29 +1,29 @@
 # InterModCommsHandler
 
-InterModComms are small messages sent between mods to allow for additional content.  
-For example ModA sends a message to Tinkers' Construct to tell TiCon to create additional materials for the smeltery.
+InterModComms sind kleine Nachrichten, die zwischen Mods gesendet werden, um zusätzliche Inhalte zu ermöglichen.  
+Zum Beispiel sendet ModA eine Nachricht an Tinkers' Construct um TiCon zu sagen, dass er zusätzliche Materialien für die Schmelze erstellen soll.
 
 ## Dieses Paket importieren
 
-If you want to shorten method calls or encounter any issues you might need to [import](/AdvancedFunctions/Import) the package.  
-You can do so using
+Wenn Sie Methodenaufrufe verkürzen oder Probleme auftreten möchten, müssen Sie [das Paket importieren](/AdvancedFunctions/Import) importieren.  
+Sie können dies tun mit
 
 ```zenscript
-import extrautilities2.Tweaker.InterModCommsHandler;
+extrautilities2.Tweaker.InterModCommsHandler;
 ```
 
-## Sending messages
+## Nachrichten senden
 
-You can either send the message right away or at runtime. You can either send NBT as [IData Map](/Vanilla/Data/IData), a simple string, an [IItemStack](/Vanilla/Items/IItemStack) or a resource location.
+Sie können die Nachricht entweder sofort oder zur Laufzeit senden. Sie können entweder NBT als [IData Map](/Vanilla/Data/IData)senden, einen einfachen String, einen [IItemStack](/Vanilla/Items/IItemStack) oder einen Ressourcenstandort.
 
 ```zenscript
-sendMessageNBT(String mod, String key, DataMap dataMap);
-sendMessageString(String mod, String key, String message);
+sendMessageNBT(String Mod, String Key, DataMap dataMap);
+sendMessageString(String Mod, String Key, String MessageString);
 sendMessageItemStack(String mod, String key, IItemStack stack);
 sendMessageResourceLocation(String mod, String key, String resourceLocation);
 
-sendRuntimeMessageNBT(String mod, String key, DataMap dataMap);
-sendRuntimeMessageString(String mod, String key, String message);
-sendRuntimeMessageItemStack(String mod, String key, IItemStack stack);
-sendRuntimeMessageResourceLocation(String mod, String key, String resourceLocation);
+sendRuntimeMessageNBT(String Mod, String Key, DataMap dataMap);
+sendRuntimeMessageString(String Mod, String Key, String MessageString);
+sendRuntimeMessageItemStack(String mod, String Key, IItemStack);
+sendRuntimeMessageResourceLocation(String mod, String Key, String Resource Location);
 ```

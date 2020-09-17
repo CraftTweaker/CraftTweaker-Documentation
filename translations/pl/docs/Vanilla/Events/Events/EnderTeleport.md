@@ -1,28 +1,28 @@
-# EnderTeleport
+# Teleport Kresu
 
-The EnderTeleport event is fired whenever an enderman or shulker teleport.  
-It is also fired whenever a player teleports using an enderpearl (it is possible that other mods fire this event as well.)
+Wydarzenie EnderTeleport jest strzelane za każdym razem, gdy kłopot lub teleport kuriera.  
+Jest on również uruchamiany za każdym razem, gdy gracz teleportuje się za pomocą perły kresowej (możliwe jest, że inne mody również wystrzeliwują to wydarzenie).
 
-## Event Class
+## Klasa wydarzenia
 
-You will need to cast the event in the function header as this class:  
-`crafttweaker.event.EnderTeleportEvent`  
-You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
+Musisz aktywować wydarzenie w nagłówku funkcji jako klasa:  
+`crafttweaker.event. nderTeleportEvent`  
+Oczywiście możesz również [zaimportować](/AdvancedFunctions/Import/) klasę przed i wtedy użyć tej nazwy.
 
-## Event interface extensions
+## Rozszerzenia interfejsu zdarzenia
 
-LivingEntityUseItem Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+Wydarzenia LivingEntityUseItem implementują następujące interfejsy i są również w stanie wywołać wszystkie swoje metody/getters/setters:
 
 - [ILivingEvent](/Vanilla/Events/Events/ILivingEvent/)
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 
 ## ZenGetters/ZenSetters
 
-The following information can be retrieved/set during the event:
+Następujące informacje mogą być pobierane/ustawione podczas wydarzenia:
 
-| ZenGetter      | ZenSetter      | Type   |
-| -------------- | -------------- | ------ |
-| `targetX`      | `targetX`      | double |
-| `targetY`      | `targetY`      | double |
-| `targetZ`      | `targetZ`      | double |
-| `attackDamage` | `attackDamage` | float  |
+| ZenGetter         | ZenSetter         | Typ                |
+| ----------------- | ----------------- | ------------------ |
+| `targetX`         | `targetX`         | podwójne           |
+| `targetY`         | `targetY`         | podwójne           |
+| `docelowy`        | `docelowy`        | podwójne           |
+| `Obrażenia ataku` | `Obrażenia ataku` | zmiennoprzecinkowe |

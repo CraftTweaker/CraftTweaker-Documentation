@@ -1,23 +1,23 @@
-# Stone Separator
+# Steintrenner
 
-## Package
+## Paket
 ```zenscript
-import mods.calculator.stoneSeparator;
+mods.calculator.stoneSeparator importieren;
 ```
 
 ## Methoden
 
-- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input** The input.
-- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) output[1-2]** The outputs.
+- **[Ingredient](/Vanilla/Variable_Types/IIngredient/) Input** Die Eingabe.
+- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) Ausgabe[1-2]** Die Ausgänge.
 
 
 ## Additon
 
 ```zenscript
-stoneSeparator.addRecipe(IIngredient input, IIngredient output1, IIngredient output2);
+stoneSeparator.addRecipe(IIngredienteneingabe, IIngredientenausgabe, IIngredientenausgabe2);
 ```
 
-## Removal
+## Entfernen
 ```zenscript
-stoneSeparator.removeRecipe(IIngredient output, IIngredient output2);
+stoneSeparator.removeRecipe(IIngrediente Ausgabe, IIngredient2);
 ```

@@ -1,33 +1,33 @@
-# Assembly Table
+# Таблица сборки
 
-*Requires BuildCraft Silicon*
+*Требуется BuildCraft Silicon*
 
-Class path: `mods.buildcraft.AssemblyTable`
+Путь к классу: `mods.buildcraft.AssemblyTable`
 
-## Use
+## Использовано
 
-To use, import the class with `import mods.buildcraft.AssemblyTable;` at the beginning of your script.
+Чтобы использовать, импортируйте класс с `импортируйте mods.buildcraft.Таблица сборки;` в начале вашего скрипта.
 
-## Adding a Recipe
+## Добавление рецепта
 
-`AssemblyTable.addRecipe(recipeName, output, power, inputs);`
+`Сборка Table.addRecipe(рецепт, выход, мощность, вход);`
 
-- `recipeName` (Optional) &lt;string> The name of the recipe. *Must be unique!*
-- `output` <[IItemStack](/vanilla/api/items/IItemStack)>
-- `power` &lt;int> Total power cost in MJ
-- `inputs` <[IIngredient](/vanilla/api/items/IIngredient)[]>
+- `рецепт` (необязательно) &lt;строка> Название рецепта. *Должно быть уникальным!*
+- `вывести` <[IItemStack](/Vanilla/Items/IItemStack)>
+- `мощность` &lt;int> Общая мощность в MJ
+- `входов` <[Ингредиент](/Vanilla/Variable_Types/IIngredient)[]>
 
 ```zenscript
-import mods.buildcraft.AssemblyTable;
+import mods.buildcraft.Таблица сборки;
 
 AssemblyTable.addRecipe("example_recipe_for_diamonds", <minecraft:diamond>, 1000, [<minecraft:coal_block>, <minecraft:redstone>]);
 ```
 
-## Removing a Recipe
+## Удаление рецепта
 
 `AssemblyTable.removeByName(name);`
 
-- `recipeName` &lt;string> The name of the recipe.
+- `рецепт` &lt;строка> Название рецепта.
 
 ```zenscript
 import mods.buildcraft.AssemblyTable;
@@ -35,9 +35,9 @@ import mods.buildcraft.AssemblyTable;
 AssemblyTable.removeByName("buildcraftsilicon:redstone_chipset");
 ```
 
-## Existing Recipes
+## Существующие Рецепты
 
-### Chipsets:
+### Набор фишек:
 
 - `buildcraftsilicon:redstone_chipset`
 - `buildcraftsilicon:iron_chipset`
@@ -45,34 +45,34 @@ AssemblyTable.removeByName("buildcraftsilicon:redstone_chipset");
 - `buildcraftsilicon:quartz_chipset`
 - `buildcraftsilicon:diamond_chipset`
 
-### Pluggables:
+### Плюсы:
 
 - `buildcraftsilicon:plug_pulsar`
-- `buildcraftsilicon:light-sensor`
+- `buildcraftsilicon: световой датчик`
 - `buildcrafttransport:facaderecipes`
 
-### Lenses:
+### Расценки:
 
 - `buildcraftsilicon:lens-regular`
 - `buildcraftsilicon:lens-filter`
 - `buildcraftsilicon:lens-regular-<color>`
 - `buildcraftsilicon:lens-filter-<color>`
 
-*Replace `<color>` with any of the following: `white`, `orange`, `magenta`, `lightblue`, `yellow`, `lime`, `pink`, `gray`, `silver`, `cyan`, `purple`, `blue`, `brown`, `green`, `red`, `black`*
+*Заменить `<color>` любым из следующих: `белый`, `оранжевый`, `пурпурная`, `Светло-синий`, `желтый`, `лайма`, `розовый`, `Серый`, `серебро`, `голубой`, `фиолетовый`, `синий`, `коричневый`, `зелёный`, `красный`, `черный`*
 
-### Wires:
+### Проводки:
 
 - `buildcrafttransport:wire-<color>`
 
-*Replace `<color>` with any of the following: `white`, `orange`, `magenta`, `lightblue`, `yellow`, `lime`, `pink`, `gray`, `silver`, `cyan`, `purple`, `blue`, `brown`, `green`, `red`, `black`*
+*Заменить `<color>` любым из следующих: `белый`, `оранжевый`, `пурпурная`, `Светло-синий`, `желтый`, `лайма`, `розовый`, `Серый`, `серебро`, `голубой`, `фиолетовый`, `синий`, `коричневый`, `зелёный`, `красный`, `черный`*
 
-### Gates:
+### Шлюзы:
 
 - `buildcraftsilicon:gate-<operation>-<material>-no_modifier`
 - `buildcraftsilicon:gate-modifier-<operation>-<material>-<modifier>`
 
-Parameters:
+Параметры:
 
-- `<operation>`: `and` or `or`
-- `<material>`: `iron`, `nether_brick`, or `gold`
-- `<modifier>`: `lapis`, `quartz`, or `diamond`
+- `<operation>`: `и` или `или`
+- `<material>`: `железо`, `nether_brick`, или `золота`
+- `<modifier>`: `lapis`, `quartz`, или `diamond`

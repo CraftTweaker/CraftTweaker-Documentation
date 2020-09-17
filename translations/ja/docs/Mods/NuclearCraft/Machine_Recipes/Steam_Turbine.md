@@ -1,16 +1,16 @@
-# Steam Turbine
+# 蒸気タービン。
 
-## Importing the Package
-`mods.nuclearcraft.turbine`
+## パッケージのインポート
+`mods.nuturcraft.turrine`
 
-## Adding Recipes
+## レシピを追加中
 ```zenscript
-mods.nuclearcraft.turbine.addRecipe([fluidInput, fluidOutput, double powerPerMB, double expansionLevel]);
+mods.nuturbine.addRecipe([fluidInput, fluidOutput, double powerPerMB, double expansionLevel]);
 ```
 
-## Removing Recipes
+## レシピを削除
 ```zenscript
-mods.nuclearcraft.turbine.removeRecipeWithInput([fluidInput]);
-mods.nuclearcraft.turbine.removeRecipeWithOutput([fluidOutput]);
-mods.nuclearcraft.turbine.removeAllRecipes();
+mods.nuturcraft.turbine.removeRecipeWithInput([fluidInput]);
+mods.nuclecraft.turbine.removeRecipeWithOutput([fluidOutput]);
+mods.nuclecraft.turbine.removeAllRecipes();
 ```

@@ -1,16 +1,16 @@
-# Vacuum Freezer
+# 真空冻机
 
-## Importing the Package
-`mods.techreborn.vacuumFreezer`
+## 导入软件包
+`mods.techreborn.degreum冻结器`
 
-## Adding Recipes
+## 添加配方
 ```zenscript
-mods.techreborn.vacuumFreezer.addRecipe(IItemStack output, IIngredient input, int ticktime, int euTick);
+mods.techreborn.trainumFreezer.addRecipe(ItemStack output, Ingredient input, int ticktime, int euTick)；
 ```
 
-## Removing Recipes
+## 删除配方
 ```zenscript
-mods.techreborn.vacuumFreezer.removeInputRecipe(IIngredient ingredient);
-mods.techreborn.vacuumFreezer.removeRecipe(IItemStack output);
-mods.techreborn.vacuumFreezer.removeAll();
+mods.techreborn.trainumFreetzer.removeInputRecipe(IIngredient component);
+mods.techreborn.remFreezer.removeRecipe(IItemStack output);
+mods.techreborn.remetzer.removeAll();
 ```

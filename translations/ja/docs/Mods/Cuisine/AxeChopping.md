@@ -1,20 +1,20 @@
-# Axe Chopping
+# 斧チョッピング
 
-## Availability
+## 在庫状況
 
-Before doing anything, you should check whether axe-chopping is enabled or not:
+何かをする前に、アックスチョッピングが有効かどうかを確認する必要があります。
 
 ```zenscript
 import mods.cuisine.AxeChopping;
 
-if (AxeChopping.isEnabled()) {
-    // do stuff
+if (AXeChopping.isEnabled()) {
+    // do stop
 } else {
-    print("Axe Chopping is disabled, skipping");
+    print("Axe Chopping is disabled, skipping');
 }
 ```
 
-## Addition
+## 加算
 
 ```zenscript
 import mods.cuisine.AxeChopping;
@@ -23,13 +23,13 @@ AxeChopping.add(IItemStack input, IItemStack output);
 
 AxeChopping.add(<item:minecraft:dirt>, <item:minecraft:diamond>);
 
-// If necessary, it is also possible to use ore dictionary.
+// 必要に応じて、鉱石辞書を使用することも可能です。
 AxeChopping.add(IOreEntry input, IItemStack output);
 
 AxeChopping.add(<ore:cobblestone>, <item:minecraft:diamond>);
 ```
 
-## Removal
+## 削除
 
 ```zenscript
 import mods.cuisine.AxeChopping;
@@ -39,17 +39,17 @@ AxeChopping.remove(IItemStack input);
 
 AxeChopping.remove(<item:minecraft:log>);
 
-// Remove by output.
+// 出力による削除。
 AxeChopping.removeByOutput(IItemStack output);
 
 AxeChopping.removeByOutput(<item:minecraft:plank>);
 
-// Remove by identifier.
+// 識別子で削除します。
 AxeChopping.remove(String id);
 
 AxeChopping.remove("recipe_name");
 
-// Remove everything!
+// すべてを削除!
 AxeChopping.removeAll();
 ```
 

@@ -1,16 +1,16 @@
-# Extractor
+# Wyciągający
 
-## Importing the Package
+## Importowanie pakietu
 `mods.techreborn.extractor`
 
-## Adding Recipes
+## Dodawanie przepisów
 ```zenscript
-mods.techreborn.extractor.addRecipe(IItemStack output, IIngredient input1, int ticktime, int euTick);
+mods.techreborn.extractor.addRecipe(wyjście IItemStack input1, int ticktime, int euTick);
 ```
 
-## Removing Recipes
+## Usuwanie przepisów
 ```zenscript
-mods.techreborn.extractor.removeInputRecipe(IIngredient ingredient);
-mods.techreborn.extractor.removeRecipe(IItemStack output);
+mods.techreborn.extractor.removeInputRecipe(Składnik składnika);
+mods.techreborn.extractor.removeRecipe(wyjście IItemStack);
 mods.techreborn.extractor.removeAll();
 ```

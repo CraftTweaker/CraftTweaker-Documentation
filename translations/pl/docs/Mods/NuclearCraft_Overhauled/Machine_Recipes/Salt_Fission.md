@@ -1,17 +1,17 @@
-# Salt Fission
-**Note: Partially Broken**
+# Rozszczepienie solą
+**Uwaga: Częściowo uszkodzone**
 
-## Importing the Package
-`mods.nuclearcraft.SaltFission`
+## Importowanie pakietu
+`mods.nuclearcraft.Rozszczepienie solą`
 
-## Adding Recipes
+## Dodawanie przepisów
 ```zenscript
-mods.nuclearcraft.SaltFission.addRecipe(ILiquidStack fluidInput, ILiquidStack fluidOutput, double baseTime, double basePower, @Optional double processRadiation);
+mods.nuclearcraft.SoltFission.addRecipe(ILiquidStack fluidInput, ILiquidStack FluidStack Output, podwójna bazaCzas, podwójna bazaPower, @Opcjonalne podwójne Promieniowanie);
 ```
 
-## Removing Recipes
+## Usuwanie przepisów
 ```zenscript
-mods.nuclearcraft.SaltFission.removeRecipeWithInput(ILiquidStack fluidInput);
-mods.nuclearcraft.SaltFission.removeRecipeWithOutput(ILiquidStack fluidOutput);
-mods.nuclearcraft.SaltFission.removeAllRecipes();
+mods.nuclearcraft.SoltFission.removeRecipeWithInput(ILiquidStack fluidInput);
+mods.nuclearcraft.SoltFission.removeRecipeWithOutput(ILiquidStack fluidOutput);
+mods.nuclearcraft.SoltFission.removeAllRecipes();
 ```

@@ -1,24 +1,24 @@
-# PlayerPickupItem
+# Elemento de recogida
 
-The PlayerPickupItem Event is fired whenever a player interacts with an Entity.
+El evento PlayerPickupItem se activa cada vez que un jugador interactúa con una entidad.
 
-## Event Class
+## Clase de evento
 
-You will need to cast the event in the function header as this class:  
-`crafttweaker.event.PlayerPickupItemEvent`  
-You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
+Necesitarás lanzar el evento en la cabecera de la función como esta clase:  
+`crafttweaker.event. layerPickupItemEvent`  
+Puede, por supuesto, también [importar](/AdvancedFunctions/Import/) la clase antes y utilizar ese nombre entonces.
 
-## Event interface extensions
+## Extensiones de la interfaz de eventos
 
-PlayerPickupItem Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+Los eventos PlayerPickupItem implementan las siguientes interfaces y son capaces de llamar a todos sus métodos/getters/setters también:
 
-- [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
+- [Evento IJugador](/Vanilla/Events/Events/IPlayerEvent/)
 
 ## ZenGetters
 
-The following information can be retrieved from the event:
+La siguiente información puede ser recuperada del evento:
 
-| ZenGetter | Return Type                                   |
+| ZenGetter | Tipo de devolución                            |
 | --------- | --------------------------------------------- |
-| `item`    | [IEntityItem](/Vanilla/Entities/IEntityItem/) |
-| `player`  | [IPlayer](/Vanilla/Players/IPlayer/)          |
+| `objeto`  | [IEntityItem](/Vanilla/Entities/IEntityItem/) |
+| `jugador` | [IPlayer](/Vanilla/Players/IPlayer/)          |

@@ -1,14 +1,14 @@
-# Fluid Extractor
+# Extracteur de liquide
 
-## Importing the Package
-`mods.nuclearcraft.extractor`
+## Importation du paquet en cours
+`extractor`
 
-## Adding Recipes
+## Ajout de recettes
 ```zenscript
 mods.nuclearcraft.extractor.addRecipe([itemInput, itemOutput, fluidOutput, @Optional double timeMultiplier, @Optional double powerMultiplier, @Optional double processRadiation]);
 ```
 
-## Removing Recipes
+## Suppression des recettes
 ```zenscript
 mods.nuclearcraft.extractor.removeRecipeWithInput([itemInput]);
 mods.nuclearcraft.extractor.removeRecipeWithOutput([itemOutput, fluidOutput]);

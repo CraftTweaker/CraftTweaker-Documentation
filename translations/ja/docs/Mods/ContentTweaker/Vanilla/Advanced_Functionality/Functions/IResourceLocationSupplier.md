@@ -1,13 +1,13 @@
-# IResourceLocationSupplier
+# IResourceLocationサプライヤー
 
-The IResourceLocationSupplier function can be used to provide the [Resource Location](/Mods/ContentTweaker/Vanilla/Types/Resources/CTResourceLocation/) to be used for whatever.
+IResourceLocationSupplier 関数は、 [リソースの場所](/Mods/ContentTweaker/Vanilla/Types/Resources/CTResourceLocation/) を提供するために使用できます。
 
-## Importing the package
+## パッケージのインポート
 
-It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
+問題が発生した場合は、パッケージをインポートする必要があるかもしれませんので、申し訳ありませんし、インポートを追加してください。  
 `import mods.contenttweaker.IResourceLocationSupplier;`
 
-## Parameters
+## パラメータ
 
-The IResourceLocationSupplier Function is a function with no parameters.  
-The function needs to return an [Resource Location](/Mods/ContentTweaker/Vanilla/Types/Resources/CTResourceLocation/).
+IResourceLocationSupplier 関数はパラメータを持たない関数です。  
+関数は [リソース場所](/Mods/ContentTweaker/Vanilla/Types/Resources/CTResourceLocation/) を返す必要があります。

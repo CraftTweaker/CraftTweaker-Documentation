@@ -1,28 +1,28 @@
 # ItemFishedEvent
 
-This event is fired to when a player is about to fish up an item. Cancelling the event will prevent the player from receiving an item, but the rod will still take damage.
+このイベントはプレイヤーがアイテムを釣り上げようとしているときに発生します。 イベントをキャンセルすると、プレイヤーがアイテムを受け取れなくなりますが、ロッドはまだダメージを受けます。
 
-## Notes
+## メモ
 
-Additional damage can be done to the rod by setting `event.additionalDamage`. A list of IItemStacks (which is **not modifiable**) that are going to be fished up is contained within `event.drops`.
+`event.additionalDamage` を設定することで、ロッドに追加のダメージを与えることができます。 フィッシュアップするIItemStacks( **変更不可能な**)のリストは、 `event.drops`内に含まれます。
 
-## Event Class
+## イベントクラス
 You will need to cast the event in the function header as this class:  
 `crafttweaker.event.ItemFishedEvent`  
 You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
 
-## Event interface extensions
-ItemFished Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+## イベントインターフェースの拡張
+ItemFished Eventsは以下のインターフェイスを実装し、それらのメソッド/getters/settersをすべて呼び出すことができます。
 
 - [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 
 
 ## ZenGetters/ZenSetters
-The following information can be retrieved/set during the event:
+イベント中に以下の情報を取得/設定できます:
 
-| ZenGetter | ZenSetter          | Type                                       |
+| ZenGetter | ZenSetter          | タイプ                                        |
 | --------- | ------------------ | ------------------------------------------ |
-| `damage`  |                    | int型                                       |
+| `ダメージ`    |                    | int型                                       |
 |           | `additionalDamage` | int型                                       |
-| `drops`   |                    | [IItemStack](/Vanilla/Items/IItemStack/)[] |
+| `ドロップ`    |                    | [IItemStack](/Vanilla/Items/IItemStack/)[] |

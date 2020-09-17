@@ -45,7 +45,7 @@ IBlockState 继承自 [IBlockStateMatcher](/Vanilla/Blocks/IBlockStateMatcher/)�
 | ------------- | --------------------------------- | ----------------------------------------------------------------------- |
 | block         | [IBlock](/Vanilla/Blocks/IBlock/) | 返回引用的方块                                                                 |
 | meta          | int                               | 返回引用的方块的元数据                                                             |
-| commandString | string                            | 返回这个方块状态的一个可能的 [Bracket Handler](/Vanilla/Brackets/Bracket_BlockState/) |
+| commandString | 字符串                               | 返回这个方块状态的一个可能的 [Bracket Handler](/Vanilla/Brackets/Bracket_BlockState/) |
 
 ## ZenMethods
 
@@ -81,10 +81,10 @@ IBlockState withProperty(String name, String value);
 - `state.compare(other)` 返回 int 值，0 代表他们相等
 - `state == other` 返回 bool 值，true代表他们相等
 
-### Getting an explicit Blockstate Matcher
+### 获取一个明确的Blockstate匹配器
 
-Returns an [IBlockStateMatcher](/Vanilla/Blocks/IBlockStateMatcher/) that matches the given block.
+返回一个匹配给定方块的 [IBlockStateMatcher](/Vanilla/Blocks/IBlockStateMatcher/)
 
 ```zenscript
-IBlockStateMatcher matchBlock();
+IBlockState匹配块();
 ```

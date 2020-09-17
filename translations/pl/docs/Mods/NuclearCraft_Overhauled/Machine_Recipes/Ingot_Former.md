@@ -1,14 +1,14 @@
-# Ingot Former
+# Sztabka przeszła
 
-## Importing the Package
+## Importowanie pakietu
 `mods.nuclearcraft.IngotFormer`
 
-## Adding Recipes
+## Dodawanie przepisów
 ```zenscript
-mods.nuclearcraft.IngotFormer.addRecipe(ILiquidStack fluidInput, IIngredient itemOutput, @Optional double timeMultiplier, @Optional double powerMultiplier, @Optional double processRadiation);
+mods.nuclearcraft.IngotFormer.addRecipe(ILiquidStack fluidInput, IIngredient itemOutput, @Opcjonalny podwójny timeMultiplier, @Opcjonalny podwójny nośnik, @Opcjonalny podwójny proces);
 ```
 
-## Removing Recipes
+## Usuwanie przepisów
 ```zenscript
 mods.nuclearcraft.IngotFormer.removeRecipeWithInput(ILiquidStack fluidInput);
 mods.nuclearcraft.IngotFormer.removeRecipeWithOutput(IIngredient itemOutput);

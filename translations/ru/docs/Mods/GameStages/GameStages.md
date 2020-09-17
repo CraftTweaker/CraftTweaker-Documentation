@@ -1,11 +1,11 @@
-# GameStages
+# Стадии игры
 
-This mod adds a stage API. This stage API allows for players to unlock stages, and for other mods to hook in to these stages. This mod also handles save data, packets, networking and other systems required. The main way for players and modpack authors to interact with this mod is through the commands that are added.
+Этот мод добавляет API стадии. Этот этап API позволяет игрокам разблокировать этапы, и для других модов перехватывать эти этапы. Этот мод также обрабатывает требуемые данные, пакеты, сети и другие системы. Основным способом взаимодействия между игроками и авторами мода является добавление команд.
 
-- /gamestage add player stage - Unlocks a stage for the player.
-- /gamestage remove player stage - Removes an unlocked stage stage from the player.
-- /gamestage clear player - Removes all unlocked stages from the player.
-- /gamestage check player stage - Checks if a player has a stage or not. 
-- /gamestage info - Shows all stages you have unlocked. 
+- /gamestage добавляет игрока - Разблокирует этап для игрока.
+- /gamestage удалил стадию игрока - удаляет из игрока незаблокированный этап игры.
+- /gamestage clear player - удаляет все открытые этапы от игрока.
+- /gamestage check player - проверяет, имеет ли игрок стадию или нет. 
+- /gamestage - показывает все этапы, которые вы разблокировали. 
 
-Many addons for GameStages will hook into CraftTweaker for customization. You can learn more about said addons in this section of the docs. For more information, support and file downloads, check [here](https://minecraft.curseforge.com/projects/game-stages)
+Множество аддонов для GameStages придет в CraftTweaker для настройки. Вы можете узнать больше об этих аддонах в этом разделе документации. Для получения дополнительной информации, поддержки и загрузки файлов смотрите [здесь](https://minecraft.curseforge.com/projects/game-stages)

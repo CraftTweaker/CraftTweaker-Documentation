@@ -1,25 +1,25 @@
-# Crucible
+# Котел
 
-The Crucible is a machine that converts an input item into an output fluid using steam.
+Котёл - это машина, которая преобразует входной элемент в выходную жидкость с помощью пара.
 
-## Package
+## Пакет
 `mods.steamagerevolution.Crucible`
 
-## Methods
+## Методы
 
-- **[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) output** The result of the recipe.
-- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input** The input of the recipe.
-- **int craftTime** Crafting time for machine to process
-- **int steamCost** Cost of Steam for machine to process
+- **[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) output** Результат рецепта.
+- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) ввода** Ввод рецепта.
+- **int Time** время создания машины для обработки
+- **int SteamCost** Стоимость Пара на машине для обработки
 
-## Addition
+## Сложение
 
 ```zenscript
-mods.steamagerevolution.Crucible.addRecipe(IIngredient input, ILiquidStack output, int craftTime, int steamCost);
+mods.steamagerevolution.Crucible.addRecipe(IIngredient input, ILiquidStack, int craftTime, int steamCost);
 mods.steamagerevolution.Crucible.addRecipe(<minecraft:obsidian>, <liquid:lava>*1000, 200, 200);
 ```
 
-## Removal
+## Удаление
 
 ```zenscript
 mods.steamagerevolution.Crucible.removeRecipe(ILiquidStack);

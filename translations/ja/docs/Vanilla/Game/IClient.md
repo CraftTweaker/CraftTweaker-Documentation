@@ -1,18 +1,18 @@
 # IClient
 
-The Client Interface is for providing general information on a Client.  
-This is only available for clients, these won't work on a sever!
+クライアントインターフェイスはクライアントに関する一般的な情報を提供するためのものです。  
+これはクライアントのみで利用できます。これらは複数のクライアントでは動作しません！
 
-## Importing the package
+## パッケージのインポート
 
 It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
 `import crafttweaker.api.IClient;`
 
-## Where to find the client class?
+## クライアント・クラスはどこにありますか?
 
-The Client class is a globally registered Symbol, so you won't need to import anything, you can just use the keyword `client`
+Clientクラスはグローバルに登録されたSymbolですので、何もインポートする必要はありません。キーワード `client` を使用するだけです。
 
-## What to do with it?
+## それで何をすべきか?
 
 `client.player` returns the player running the client as an [IPlayer](/Vanilla/Players/IPlayer/) Object.  
 `client.language` returns the language the client runs on as string.

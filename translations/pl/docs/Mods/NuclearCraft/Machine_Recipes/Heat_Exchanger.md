@@ -1,14 +1,14 @@
-# Heat Exchanger
+# Wymiennik ciepła
 
-## Importing the Package
-`mods.nuclearcraft.heat_exchanger`
+## Importowanie pakietu
+`Mods.nuclearcraft.heat_exchange`
 
-## Adding Recipes
+## Dodawanie przepisów
 ```zenscript
-mods.nuclearcraft.heat_exchanger.addRecipe([fluidInput, fluidOutput, double heatRequired, int temperatureIn, int temperatureOut]);
+mods.nuclearcraft.heat_exchanger.addRecipe([fluidInput, fluidOutput, podwójne ogrzewanie wymagane, temperatura int In, temperatura int Out]);
 ```
 
-## Removing Recipes
+## Usuwanie przepisów
 ```zenscript
 mods.nuclearcraft.heat_exchanger.removeRecipeWithInput([fluidInput]);
 mods.nuclearcraft.heat_exchanger.removeRecipeWithOutput([fluidOutput]);

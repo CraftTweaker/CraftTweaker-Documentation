@@ -1,18 +1,18 @@
-### Class
+### Classe
 
 ```zenscript
-import mods.roots.RunicShears;
+Importer mods.roots.RunicShears ;
 ```
 
-#### Methods
+#### Méthodes
 
 ```zenscript
 void addRecipe(
-  string name,                 // the name of the recipe being created
-  IItemStack outputDrop,       // the item output obtained by performing the shearing
-  IItemStack replacementBlock, // the block (as an itemstack) that replaces the block being interacted with upon shearing
-  IItemStack inputBlock,       // the block that is to be sheared
-  IItemStack jeiDisplayItem    // the item that should be displayed in JEI for this recipe
+  string name, // le nom de la recette en cours de création
+  IItemStack outputDrop, // la sortie de l'élément obtenue en effectuant le cisaillement
+  IItemStack replacementBlock, // le bloc (en tant qu'itemstack) qui remplace le bloc avec lequel on interagit lors du fractionnement
+  IItemStack inputBlock, // le bloc qui doit être cisé
+  IItemStack jeiDisplayItem // l'élément qui devrait être affiché dans JEI pour cette recette
 );
 ```
 
@@ -20,10 +20,10 @@ void addRecipe(
 
 ```zenscript
 void addEntityRecipe(
-  string name,              // the name of the recipe for the shearing
-  IItemStack outputDrop,    // the item that is dropped upon shearing the specified entity
-  IEntityDefinition entity, // the entity that is to be sheared to obtain the drop
-  int cooldown              // the number of ticks (seconds multiplied by 20) it takes until the entity can be sheared again
+  string name, // le nom de la recette pour le fractionnement
+  IItemStack outputDrop, // l'élément qui est déposé lors du cisaillement de l'entité spécifiée
+  IEntityDefinition, // l'entité qui doit être taillée pour obtenir le temps de recharge d'indice
+  drop // le nombre de ticks (secondes multipliées par 20) il faut attendre que l'entité puisse être recadrée
 );
 ```
 
@@ -31,13 +31,13 @@ void addEntityRecipe(
 
 ```zenscript
 void removeRecipe(
-  IItemStack output // the itemstack output that you wish to remove
+  IItemStack output // la sortie de itemstack que vous souhaitez supprimer
 );
 ```
 
 * * *
 
-### Examples
+### Exemples
 
 ```zenscript
 import mods.roots.RunicShears;
@@ -55,4 +55,4 @@ RunicShears.removeRecipe(<roots:fey_leather>);
 
 ### Notes
 
-Note that the `removeRecipe` function will attempt to remove any recipe (both runic shearing of blocks and of entities) that matches the desired output.
+Notez que la fonction `removeRecipe` tentera de supprimer toute recette (cisaillement runique de blocs et d'entités) qui correspond à la sortie souhaitée.

@@ -1,42 +1,42 @@
 # OreEntry
 
-An OreEntry is a material like Gold, Diamond, Coal, Redstone and so on.  
-You can use this to get several [OreDictEntries](/Vanilla/OreDict/IOreDictEntry/), [IItemStacks](/Vanilla/Items/IItemStack/), [ILiquidStacks](/Vanilla/Liquids/ILiquidStack/).
+OreEntry - это материал из золота, алмазов, угля, красного камня и так далее.  
+Вы можете использовать это для получения нескольких [OreDictEntries](/Vanilla/OreDict/IOreDictEntry/), [IItemStacks](/Vanilla/Items/IItemStack/), [ILiquidStacks](/Vanilla/Liquids/ILiquidStack/).
 
-## Methods
+## Методы
 
-In general, the methods take a string parameter that is a prefix to be used.  
-For example, an OreEntry for `"Gold"`, called with the prefix `"dust"` will return Gold Dust.  
-For these examples, we will assume this was declared:  
-The comments after the example calls will state what the method call can return (unless in the extra category).
-
-```zenscript
-val oreEntry = mods.jaopca.JAOPCA.getOre("Gold");
-```
-
-### Get entry properties
-
-You can get these properties:
+В общем, методы используют строковый параметр, который является префиксом.  
+Например, OreEntry для `"Золото"`, вызов с префиксом `"пыль"` вернёт Золотой Пыль.  
+На этих примерах мы предполагаем, что это было объявлено:  
+В комментариях после примера вызовы будут указывать, какой метод может возвращаться (за исключением случаев, когда в дополнительной категории).
 
 ```zenscript
-oreEntry.energyModifier; //1.0 as double
-oreEntry.rarity; //1.0 as double
-oreEntry.oreType; //"INGOT" as string
+val oreEntry = mods.jaopca.JAOPCA.getOre("Золото").
 ```
 
-### Get OreName or OreNameSynonyms
+### Получить свойства записи
 
-The ore name is essentialy how it is registered and what you use in a getOre to retrieve it.  
-The ore name synonyms are synonyms that mods or pack authors can register to combine two or more oreEntries (e.g. "Aluminum" and "Aluminium"). Most oreEntries will probably have nothing registered, though. The synonyms getter will return a list containing all the synonyms as strings.
+Вы можете получить эти свойства:
 
 ```zenscript
-oreEntry.oreName; //"Gold"
-oreEntry.oreNameSynonyms; //[]
+oreEntry.energyModifier; //1.0 двойной
+oreEntry.rarity; //1.0 двойной
+oreEntry.oreType; //"INGOT" как строка
 ```
 
-### Get IOreDictEntry
+### Получить OreName или OreName Synonyms
 
-Returns a new [IOreDictEntry](/Vanilla/OreDict/IOreDictEntry/) with the given prefix.
+Название руды является необходимым условием ее регистрации и того, что вы используете в getOre для ее получения.  
+Название руды синонимы - это синонимы, которые моды или наборы авторов могут зарегистрироваться, чтобы объединить две или более записей руд (e. - "Алюминиевые" и "Алюминиевые"). Однако, большинство рудных записей, вероятно, не будет зарегистрированы. Получатель синонимов возвращает список, содержащий все синонимы, как строки.
+
+```zenscript
+oreEntry.oreName; //"Золото"
+Синонимы oreEntry.oreName; //[]
+```
+
+### Получить IOreDictEntry
+
+Возвращает новый [IOreDictEntry](/Vanilla/OreDict/IOreDictEntry/) с указанным префиксом.
 
 ```zenscript
 oreEntry.getOreDictEntry("dust"); //<ore:dustGold>
@@ -44,10 +44,10 @@ oreEntry.getOreDictEntry("dust"); //<ore:dustGold>
 
 ### Get IItemStack
 
-Returns a new [IItemStacks](/Vanilla/Items/IItemStack/) that matches the given prefix.  
-You can provide an alternate fallback prefix to be used if no matching Item is found.
+Возвращает новый [IItemStacks](/Vanilla/Items/IItemStack/) , который соответствует заданному префиксу.  
+Вы можете предоставить альтернативный резервный префикс для использования, если соответствующий предмет не найден.
 
-If no matching item is found and no matching item is found using the fallback prefix (if provided), it will return `null`.
+Если соответствующий элемент не найден и соответствующий элемент не найден с использованием резервного префикса (если он установлен), он вернёт `null`.
 
 ```zenscript
 //oreEntry.getItemStack(prefix);
@@ -61,10 +61,10 @@ oreEntry.getItemStack("invalid", "faulty"); //null
 
 ### Get ILiquidStack
 
-Returns a new [ILiquidStacks](/Vanilla/Liquids/ILiquidStack/) that matches the given prefix.  
-You can provide an alternate fallback prefix to be used if no matching Liquid is found.
+Возвращает новый [ILiquidStacks](/Vanilla/Liquids/ILiquidStack/) , соответствующий заданному префиксу.  
+Вы можете предоставить альтернативный резервный префикс для использования если не найден соответствующий Liquid.
 
-If no matching liquid is found and no matching liquid is found using the fallback prefix (if provided), it will return `null`.
+Если соответствующая жидкость не найдена и соответствующая жидкость не найдена с использованием резервного префикса (если указано), она возвращает `null`.
 
 ```zenscript
 //oreEntry.getLiquidStack(prefix);
@@ -76,50 +76,50 @@ oreEntry.getLiquidStack("invalid", "molten"); //<liquid:gold>
 oreEntry.getLiquidStack("invalid", "faulty"); //null
 ```
 
-### Get Extra
+### Скачать дополнительные
 
-An Entry can have an extra registered. An extra can for example be a secondary output when pulverizing a matching ore.
+Запись может иметь дополнительную регистрацию. Дополнительно, например, может быть вторичным выходом при пульсации соответствующей руды.
 
-You can either check if an entry has an extra, get the extra (or `null` if not present) or the extraName.  
-You can also use the same methods as above (`getOreDictEntry`, `getLiquidStack` and `getItemStack`).
+Вы можете либо проверить, имеет ли запись дополнительные дополнения, получить дополнительные (или `null` , если они отсутствуют) или extraName.  
+Вы также можете использовать те же методы, что и выше (`getOreDictEntry`, `getLiquidStack` и `getItemStack`).
 
-There are up to 3 extras that can be registered. For the sake of simplicity there won't be examples for the equivalent methods, they will only be stated
+Существует до 3 дополнительных компонентов, которые могут быть зарегистрированы. Для упрощения нет примеров для эквивалентных методов, они будут приведены только
 
 ```zenscript
-//First extra
-oreEntry.hasExtra; //true or false
-oreEntry.extra; //matching oreEntry or null
-oreEntry.extraName; //the name or null
+//Первое дополнительное
+oreEntry.hasExtra; //true или false
+oreEntry.extra; //matching oretry or null
+Entry. xtraName; //имя или null
 
-//Methods for first extra
-oreEntry.getOreDictEntryExtra(prefix);
+//Методы для дополнительной
+записи. etOreDictEntryExtra(prefix);
 oreEntry.getItemStackExtra(prefix);
 oreEntry.getItemStackExtra(prefix, fallback);
-oreEntry.getLiquidStackExtra(prefix);
+oreEntry. etLiquidStackExtra(префикс);
 oreEntry.getLiquidStackExtra(prefix, fallback);
 
 
 
-//Second extra
-oreEntry.hasSecondExtra; //true or false
-oreEntry.secondExtra; //matching oreEntry or null
-oreEntry.secondExtraName; //the name or null
+//Дополнительные
+oreEntry.hasSecondExtra; //true или false
+oreEntry. econdExtra; //подходящий oreEntry или null
+oreEntry.secondExtraName; //имя или null
 
-//Methods for second extra
-oreEntry.getOreDictEntrySecondExtra(prefix);
-oreEntry.getItemStackSecondExtra(prefix);
+//Методы дополнительно
+oreEntry.getOreDictEntrySecondExtra(префикс);
+EntrySecondExtra. etItemStackSecondExtra(prefix);
 oreEntry.getItemStackSecondExtra(prefix, fallback);
 oreEntry.getLiquidStackSecondExtra(prefix);
 oreEntry.getLiquidStackSecondExtra(prefix, fallback);
 
 
 
-//Third extra
-oreEntry.hasThirdExtra; //true or false
-oreEntry.thirdExtra; //matching oreEntry or null
-oreEntry.thirdExtraName; //the name or null
+//Третья дополнительная
+oreEntry.hasThirdExtra; //true или false
+oreEntry.thirdExtra; //вычисление oreEntry или null
+oreEntry. hirdExtraName; //имя или null
 
-//Methods for third extra
+//Методы для третьей дополнительной
 oreEntry.getOreDictEntryThirdExtra(prefix);
 oreEntry.getItemStackThirdExtra(prefix);
 oreEntry.getItemStackThirdExtra(prefix, fallback);

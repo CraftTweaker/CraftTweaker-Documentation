@@ -1,19 +1,19 @@
-# Level-Lock Support
+# Support de verrouillage par niveau
 
-## PSA:
+## PSA :
 
-This feature works off cancelling the Level-Up event in Reskillable. Some mods that call the levelUp(); method directly will bypass the locks! This includes mods like Scavenge: Reskillable and TogetherForever!
+Cette fonctionnalité fonctionne sur l'annulation de l'événement Level-Up dans Reskillable. Quelques mods qui appellent le levelUp(); la méthode contourne directement les verrous ! Cela inclut des mods comme le charognard : Reskillable et TogetherForever!
 
-## Level-Lock Support
+## Support de verrouillage par niveau
 
-Level-Lock Support is a weird feature that came from a joke that Skysom made in a DM one day. This feature is entirely for those sadistic enough to implement it! This gates the progression to the set level not the "going from" that level!
+Le support du verrouillage par niveaux est une fonctionnalité étrange qui provient d'une blague que Skysom a faite un jour dans un DM. Cette fonctionnalité est entièrement destinée à ceux qui sont assez sadiques pour l'implémenter ! Cela porte la progression vers le niveau défini et non pas le "à partir de" ce niveau!
 
-CTSkill = [Skill-Bracket Handler](/Mods/CompatSkills/Supports/Reskillable/BracketHandlers/)
+CTSkill = [Gestionnaire de compétences](/Mods/CompatSkills/Supports/Reskillable/BracketHandlers/)
 
-### Syntax:
+### Syntaxe :
 
-    // Blank Example:
+    // Exemple:
     mods.compatskills.SkillLocks.addLevelLock(CTSkill skill, int level, String... defaultRequirements);
     
-    // Test Example:
+    // Test Exemple:
     mods.compatskills.SkillLocks.addLevelLock(<skill:reskillable:agility>, 11, "reskillable:gathering", 3, "adv|minecraft:husbandry/plant_seed");

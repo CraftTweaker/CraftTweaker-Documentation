@@ -1,4 +1,4 @@
-# Packmode
+# 软件包模式
 
-The Packmode mod is a CraftTweaker addon that lets you create different pack modes using a custom preprocessor.  
-To achieve this, you will need to change a config file and then *fully restart your game*
+软件包模式模组是一个 CraftTinfinder 插件，让您能够使用自定义预处理器创建不同的包模式。  
+要实现这一点，您需要更改配置文件，然后 *完全重新启动您的游戏*

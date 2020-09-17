@@ -1,25 +1,25 @@
-# Offering to the Gods
+# 赠送神器
 
 ## 所属包名
 ```zenscript
-mods.naturesaura.Offering
+naturesaura。提供
 ```
 
 ## 使用方式
-- **String Name**
-- **[IIngredient](/Vanilla/Variable_Types/IIngredient) input** The offering
-- **int ininputAmount** The amount of items required for the input. Note that this means that the amount of the input variable is ignored
-- **[IIngredient](/Vanilla/Variable_Types/IIngredient) startItem** the item required to start the offering
-- **[IItemStack](/Vanilla/Items/IItemStack) output** The gift of the Offering
+- **字符串名称**
+- **[IIngredient](/Vanilla/Variable_Types/IIngredient) 输入** 的报价
+- **intininputAmount** 输入所需的项目数量。 请注意，这意味着输入变量的数量被忽略
+- **[Ingredient](/Vanilla/Variable_Types/IIngredient) 启动项目** 启动优惠所需项目
+- **[IItemStack](/Vanilla/Items/IItemStack) 输出** 礼物
 
 ## 添加配方
 
 ```zenscript
-mods.naturesaura.Offering.addRecipe(String name, IIngredient input, int inputAmount, IIngredient startItem, IItemStack output)
+naturesaura。offering.addRecipe(名称, IIngredient input, int inputQuant, IIngredient startItem, IItemStack 输出)
 ```
 
-## Removal
+## 移除
 
 ```zenscript
-mods.naturesaura.Offering.removeRecipe(IItemStack output)
+naturesaura。移除Recipe(StemStack 输出)
 ```

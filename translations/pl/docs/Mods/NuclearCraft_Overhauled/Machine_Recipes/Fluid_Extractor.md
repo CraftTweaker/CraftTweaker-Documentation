@@ -1,16 +1,16 @@
-# Fluid Extractor
+# Ekstraktor płynny
 
-## Importing the Package
-`mods.nuclearcraft.Extractor`
+## Importowanie pakietu
+`mods.nuclearcraft.Wyciągający`
 
-## Adding Recipes
+## Dodawanie przepisów
 ```zenscript
-mods.nuclearcraft.Extractor.addRecipe(IIngredient itemInput, IIngredient itemOutput, ILiquidStack fluidOutput, @Optional double timeMultiplier, @Optional double powerMultiplier, @Optional double processRadiation);
+mods.nuclearcraft.Extractor.addRecipe(IIngredient itemInput, IIngredient itemOutput, ILiquidStack fluidOutput, @Opcjonalny podwójny timeMultiplier, @Opcjonalny podwójny nośnik, @Opcjonalny podwójny Promieniowanie);
 ```
 
-## Removing Recipes
+## Usuwanie przepisów
 ```zenscript
-mods.nuclearcraft.Extractor.removeRecipeWithInput(IIngredient itemInput);
+mods.nuclearcraft.Extractor.removeRecipeWithInput(IInputIInput);
 mods.nuclearcraft.Extractor.removeRecipeWithOutput(IIngredient itemOutput, ILiquidStack fluidOutput);
-mods.nuclearcraft.Extractor.removeAllRecipes();
+mods.nuclearcraft.Ekstraktor.removeAllRecipes();
 ```

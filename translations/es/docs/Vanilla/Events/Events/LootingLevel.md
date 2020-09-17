@@ -1,22 +1,22 @@
-# LootingLevel
+# Nivel de saqueo
 
-This event is fired whenever a Living Entity creature is killed in order to calculate the looting level. The value can be increased or decreased or left as-is. The value may have already been modified by other events, but the original value is not included.
+Este evento se dispara cuando una criatura de la Entidad Viviente es matada para calcular el nivel de saqueo. El valor puede incrementarse o disminuirse o dejarse como está. El valor puede haber sido modificado por otros eventos, pero el valor original no está incluido.
 
-## Event Class
-You will need to cast the event in the function header as this class:  
-`crafttweaker.event.LootingLevelEvent`  
-You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
+## Clase de evento
+Necesitarás lanzar el evento en la cabecera de la función como esta clase:  
+`crafttweaker.event. ootingLevelEvent`  
+Puede, por supuesto, también [importar la clase](/AdvancedFunctions/Import/) antes y usar ese nombre entonces.
 
-## Event interface extensions
-LootingLevel Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+## Extensiones de la interfaz de eventos
+LootingLevel Events implementan las siguientes interfaces y son capaces de llamar a todos sus métodos/getters/setters también:
 
 - [ILivingEvent](/Vanilla/Events/Events/ILivingEvent/)
 
 
 ## ZenGetters/ZenSetters
-The following information can be retrieved/set during the event:
+La siguiente información se puede recuperar/establecer durante el evento:
 
-| ZenGetter      | ZenSetter      | Type                                            |
-| -------------- | -------------- | ----------------------------------------------- |
-| `lootingLevel` | `lootingLevel` | int                                             |
-| `damageSource` |                | [IDamageSource](/Vanilla/Damage/IDamageSource/) |
+| ZenGetter        | Ajuste         | Tipo                                            |
+| ---------------- | -------------- | ----------------------------------------------- |
+| `lootingLevel`   | `lootingLevel` | int                                             |
+| `fuente de daño` |                | [Fuente del ID](/Vanilla/Damage/IDamageSource/) |

@@ -1,39 +1,39 @@
-# BlockState Bracket Handler
+# 区块处理器
 
-The BlockState Bracket Handler gives you access to the BlockStates in the game. It is only possible to get BlockStates registered in the game, so adding or removing mods may cause issues if you reference the mod's blockstates in a BlockState Bracket Handler.
+BlockState区块处理程序允许你访问游戏中的区块。 只能在游戏中注册BlockStates， 这样添加或移除模组可能会导致问题，因为你会在模块状态区块处理器中引用模组的模块。
 
-BlockStates are referenced in the BlockState Bracket Handler like so:
+BlockState区块处理程序像这样引用：
 
 ```zenscript
 <blockstate:modid:blockname>
 ```
 
-With the `modid` being the modid of the mod that the block is defined in, and `blockname` being the name of the block. This will return the default BlockState for the specified block.
+使用 `模拟器` 是方块定义的模组的模组摩托手。 和 `方块名称` 为方块名称。 这将返回指定方块的默认方块模块。
 
-To get a specific blockstate with the BlockState Bracket Handler, you can optionally specify its properties like so:
+要使用BlockState区块处理器获得一个特定的块状态，您可以选择性地指定它的属性，就像这样：
 
 ```zenscript
 <blockstate:modid:blockname:properties>
 ```
 
-Where `properties` is a comma-separated set of `name=value` pairs for any properties that you want to specify on the blockstate. Any properties that are not specified are given the same values as in the default blockstate.
+`属性` 是一个逗号分隔的组。 `name=value` 对应你想要在拦截状态中指定的任何属性。 未指定的任何属性都具有与默认区块状态相同的值。
 
-This will return an IBlockState Object. Please refer to [the respective wiki entry](/Vanilla/Blocks/IBlockState/) for further information.
+这将返回IBlockState物体。 更多信息请参考 [相应的 wiki 条目](/Vanilla/Blocks/IBlockState/)。
 
-Note that this bracket handler will create a reference to one specific blockstate. If you would like to be able to match against multiple blockstates, please refer to [the IBlockStateMatcher wiki entry](/Vanilla/Blocks/IBlockStateMatcher).
+请注意，这个括号处理程序将创建一个特定的块状态的参考。 如果您想要与多个块状态匹配，请参阅 [IBlockStateMatcher wiki条目](/Vanilla/Blocks/IBlockStateMatcher)。
 
-## Examples
+## 例子
 
-An example of the BlockState Bracket Handler would be:
+一个区块处理程序的例子是：
 
 ```zenscript
 //block of dirt
 <blockstate:minecraft:dirt>
 
-//oak log, vertical
+/oak log, 垂直
 <blockstate:minecraft:log>
 <blockstate:minecraft:log:variant=oak,axis=y>
 
-//spruce log, horizontal along the x-axis
+/spruck log, 水平沿x-轴
 <blockstate:minecraft:log:variant=spruce,axis=x>
 ```

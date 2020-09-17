@@ -1,28 +1,28 @@
-# Alloy Smelter
+# 合金冶炼器
 
 ## 所属包名
 
-`import mods.enderio.AlloySmelter;`
+`导入 mods.enderio.AlloySmelter;`
 
-## Methods
+## 方法
 
-- **[IItemStack](/Vanilla/Items/IItemStack/) output** The result of the recipe.
-- **[IIngredient](/Vanilla/Variable_Types/IIngredient/)[] input** The ingredients. Must be between 1 and 3 ingredients.
-- **int energyCost** How much FE the recipe uses. Defaults to 5000.
-- **float xp** The xp is granted from this recipe. May not be negative.
+- **[IItemStack](/Vanilla/Items/IItemStack/) 输出** 该配方的结果。
+- **[IIngredient](/Vanilla/Variable_Types/IIngredient/)[] 输入** 成分. 必须介于 1 到 3 种成分。
+- **英寸能量成本** 配方使用量有多大。 默认值为 5000。
+- **float xp** 是从这个配方获得的 xp 。 也许不是消极的。
 
 ## 添加配方
 
 ```zenscript
-mods.enderio.AlloySmelter.addRecipe(IItemStack output, IIngredient[] input, @Optional int energyCost, @Optional float xp);
+mods.enderio.AlloySmelter.addRecipe(IItemStack output, IIngredient[] input, @Opidint energyCost, @Optional float xp);
 
 mods.enderio.AlloySmelter.addRecipe(<minecraft:iron_ingot>, [<minecraft:sand>, <minecraft:gravel>, <minecraft:brick>]);
 ```
 
-## Removal
+## 移除
 
 ```zenscript
-mods.enderio.AlloySmelter.removeRecipe(IItemStack output);
+mods.enderio.AlloySmelter.removeRecipe(IItemStack 输出);
 
 mods.enderio.AlloySmelter.removeRecipe(<enderio:item_alloy_ingot:7>);
 ```

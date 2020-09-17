@@ -1,20 +1,20 @@
 # IEventHasResult
 
-This interface is extended by all Events that has a result that is used by the event. An event's result can be one of three values:
+このインターフェースは、イベントによって使用される結果を持つすべてのイベントによって拡張されます。 イベントの結果は 3 つの値のいずれかになります。
 
-- allow
-- deny
-- default
+- 許可する
+- 拒否する
+- デフォルト
 
-The meaning of these is dependent on context. Generally, denying an event prevents a specific event-related action from taking place (even if it wasn't guaranteed to take place). Likewise, allowing an event will force a behaviour to take place (even if it wasn't guaranteed). Default simply causes the event to continue with its normal logic. Not all events use every result.
+これらの意味は文脈に依存する。 通常、イベントを拒否することで、特定のイベントに関連するアクションが発生することを防ぎます(たとえイベントが行われることが保証されていなくても)。 同様に、イベントを許可すると、(保証されていなくても)行動が強制されます。 デフォルトでは、イベントが通常のロジックで継続されます。 すべてのイベントがすべての結果を使用するわけではありません。
 
-## Importing the class
-It might be required to [import](/AdvancedFunctions/Import/) the class to avoid errors.  
+## クラスのインポート
+エラーを避けるために、クラスを [import](/AdvancedFunctions/Import/) する必要があるかもしれません。  
 `import crafttweaker.event.IEventHasResult;`
 
-## What can be done with them?
+## 何が彼らを使って行うことができますか?
 
-- `event.result` Getter, returns a string value of `default`, `deny` or `allow`
-- `event.deny()` Method, sets the event's result to `deny`
-- `event.allow()` Method, sets the event's result to `allow`
-- `event.default()` Method, sets the event's result to `default`
+- `event.result` Getter, `default`, `deny` または `allow`
+- `event.deny()` メソッドでは、イベントの結果を `拒否` に設定します。
+- `event.allow()` メソッド, イベントの結果を `allow` に設定します
+- `event.default()` メソッド, イベントの結果を `デフォルト` に設定します。

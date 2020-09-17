@@ -1,34 +1,34 @@
-# Combiner
+# 合并器
 
-As of Mekanism 9.7.0 it is now possible to view all recipe strings of the Combiner through the command `/ct mekrecipes combiner`
+到Mekanism 9.7.0 现在可以通过命令 `/ct mek配方组合器` 查看组合器的所有配方字符串。
 
-## Addition
+## 加
 
 ```zenscript
-mods.mekanism.combiner.addRecipe(IIngredient itemInput, @Optional IIngredient extraInput, IItemStack itemOutput);
+mods.mekanism.combiner.addRecipe(IIngredient itemInput, @Optional IIngredient extrajudiciInput, IItemStack itemOutput);
 
 mods.mekanism.combiner.addRecipe(<minecraft:stone> * 4, <minecraft:cobblestone>, <minecraft:stonebrick>);
 mods.mekanism.combiner.addRecipe(<minecraft:torch> * 4, <minecraft:stick>);
 ```
 
-As of Mekanism 9.7.0 it is possible to use IIngredients as the itemInput and extraInput instead of only IItemStacks.
+到Mekanism 9.7.0, 可以使用IIngredients 作为物品输入和额外输入，而不仅仅是IItemStack。
 
-Note: Currently all this does is loop over the different possibilities in java while adding instead of you having to do it in ZenScript. Currently there is no built in support for compound ingredients or oredictionary in the machines themselves.
+注意：目前所有这一切都是在java的不同可能性上循环的，而不是在ZenScript中添加。 目前，机器本身没有用于支持复合成份或修复术。
 
-## Removal
+## 移除
 
 ```zenscript
-mods.mekanism.combiner.removeRecipe(IIngredient outputStack, @Optional IIngredient inputStack, @Optional IIngredient extraInput);
+mods.mekanism.combiner.removeRecipe(IIngredient outputStack, @Optional IIngredient inputStack, @Optional IIngredient extrant Input);
 
-mods.mekanism.combiner.removeRecipe(<minecraft:gravel>, <minecraft:flint>, <minecraft:cobblestone>);
-mods.mekanism.combiner.removeRecipe(<minecraft:iron_ore>);
+mods.mekanism.componer.removeRecipe(<minecraft:gravel>, <minecraft:flint>, <minecraft:cobblestone>);
+mods.mekanism.comborer.removeRecipe(<minecraft:iron_ore>);
 ```
 
-Specifying an input parameter will only remove the specific recipe that uses said input. Omitting the input parameter will remove all recipes that produce the specified output.
+指定输入参数只会删除使用所述输入的特定配方。 忽略输入参数将删除所有生成指定输出的配方。
 
-## Removing all recipes
+## 删除所有配方
 
-As of Mekanism 9.7.0 it is now possible to remove all Combiner recipes. (This excludes any recipes added via CraftTweaker)
+到Mekanism 9.7.0，现在可以移除所有混合配方。 (这排除了任何通过 CraftTweaker 添加的配方
 
 ```zenscript
 mods.mekanism.combiner.removeAllRecipes();

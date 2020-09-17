@@ -1,21 +1,21 @@
-# Extraction Chamber
+# Absaugkammer
 
-## Package
+## Paket
 ```zenscript
-import mods.calculator.extractionChamber;
+importieren mods.calculator.extractionChamber;
 ```
 
 ## Methoden
 
-- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input** The input.
-- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) output[1-2]** The outputs.
+- **[Ingredient](/Vanilla/Variable_Types/IIngredient/) Input** Die Eingabe.
+- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) Ausgabe[1-2]** Die Ausgänge.
 
 ## Addition
 ```zenscript
-extractionChamber.addRecipe(IIngredient input, IIngredient output1, IIngredient output2);
+extractionChamber.addRecipe(IIngrediente Eingabe, IIngrediente Output1, IIngrediente Output2);
 ```
 
-## Removal
+## Entfernen
 ```zenscript
-extractionChamber.removeRecipe(IIngredient output, IIngredient output2);
+extractionChamber.removeRecipe(IIngrediente Ausgabe, IIngredient2);
 ```

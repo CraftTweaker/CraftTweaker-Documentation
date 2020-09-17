@@ -1,24 +1,24 @@
-# Mekanism
+# 梅卡尼什语
 
-Mekanism CraftTweaker support has been integrated directly into Mekanism now ([link](https://github.com/aidancbrady/Mekanism/tree/master/src/main/java/mekanism/common/integration/crafttweaker))
+Mekanism CraftTinventer 支持已经直接并入Mekanism ([link](https://github.com/aidancbrady/Mekanism/tree/master/src/main/java/mekanism/common/integration/crafttweaker))
 
-Mekanism adds bracket-handler support to define **gas** -- a special material state differing from forge [**liquids**](/Vanilla/Liquids/ILiquidStack/)
+Mekanism 添加了方括号处理器支持来定义 **气体** - 特殊的材料状态不同于锻造 [**液体**](/Vanilla/Liquids/ILiquidStack/)
 
 ```zenscript
 <gas:oxygen>
 <gas:water> *
 ```
 
-*Noting that `<gas:water>` is different from `<liquid:water>`*
+*注意到 `<gas:water>` 不同于 `<liquid:water>`*
 
-As of Mekanism 9.7.0 it is now possible to view all registered gases (including those from other mods) via the command `/ct gases`
+到Mekanism 9.7.0 现在可以通过命令 `/ct气体查看所有注册气体(包括来自其他模式的气体)`
 
-It is also possible as of Mekanism 9.7.1 to get a gas stack/bracket handler by string. Use `mods.mekanism.MekanismHelper.getGas(string);`
+从Mekanis9.7.1的情况来看，也可以用字符串获得一个气体堆栈/括号处理器。 使用 `mods.mekanism.MekanismHelper.getGas(string);`
 
 ## 例子
 
 ```zenscript
-import mod.mekanism.gas.IGasStack;
+导入mod.mekanism.gas.IGasStack;
 
 var oxygen = <gas:oxygen>.withAmount(500) as IGasStack;
 var oxygen2 = <gas:oxygen> * 500;
@@ -26,38 +26,38 @@ var oxygen2 = <gas:oxygen> * 500;
 
 ## ZenGetters
 
-Like LiquidStacks, IGasStacks also support some special ZenGetters.  
-You call the ZenGetters using `gas.Getter` (E.g. `<gas:water>.name`)
+像LiquidStacks一样，IGasStacks也支持一些特殊的 ZenGetters。  
+你使用 `gas.Getter` (例如。 `<gas:water>.name`)
 
-| ZenGetter   | 说明                                      | 返回值类型          |
-| ----------- | --------------------------------------- | -------------- |
-| definition  | Returns the gas' definition             | IGasDefinition |
-| NAME        | Returns the gas' name                   | string         |
-| displayName | Returns the gas' displayName            | string         |
-| amount      | Returns the gas' amount in millibuckets | int            |
+| ZenGetter  | 说明           | 返回值类型  |
+| ---------- | ------------ | ------ |
+| definition | 返回气体定义       | IGas定义 |
+| 名称         | 返回气体名称       | string |
+| 显示名称       | 返回气体显示名称     | 字符串    |
+| 金额         | 返回以毫巴克计的气体数量 | 整数     |
 
-## Setting the Object's Amount
+## 设置对象的金额
 
-You can set the Object's amount (gas volume in Millibuckets) in two ways, which both do exactly the same:
+您可以用两种方式设置对象的数量 (Millibuckets中的音量)，这两种方式都做到完全相同：
 
 ```zenscript
-var gas_amount_multiply = <gas:water> * 500;
-var gas_amount_zenMethod = <gas:water>.withAmount(500);
+var gas_amount_mult = <gas:water> * 500;
+var gas_amount_zenMethod= <gas:water>.withamount(500)；
 ```
 
-## IGasDefinition
+## IGas定义
 
-An IGasDefinition object contains information on a gas.  
-You can get such an object using `gasStack.definition` (check the table above)
+IGasDefine 对象包含关于气体的信息。  
+您可以使用 `gasStack.definition` 获取此对象(请选中上面的表格)
 
-| ZenGetter   | 说明                                     | Return Type |
-| ----------- | -------------------------------------- | ----------- |
-| NAME        | Returns the referred gas' name         | string      |
-| displayName | Returns the referred gas' display name | string      |
+| ZenGetter | 说明           | 返回值类型 |
+| --------- | ------------ | ----- |
+| 名称        | 返回所引用的气体名称   | 字符串   |
+| 显示名称      | 返回所引用的气体显示名称 | 字符串   |
 
-You can multiply a gasDefinition to return a new IGasStack with the given amount in millibuckets:
+您可以乘积一个气体定义返回一个新的 IGasStack 与给定数量的毫巴克：
 
 ```zenscript
-var gas_definition = <gas:water>.definition;
+var gas_definition = <gas:water>.defination;
 var gas_bucket = gas_definition * 1000;
 ```

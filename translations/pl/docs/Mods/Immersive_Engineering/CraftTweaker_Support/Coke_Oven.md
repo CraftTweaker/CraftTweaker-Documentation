@@ -1,33 +1,33 @@
-# Coke Oven
+# Piec koksowy
 
-## Calling The Package
+## Wezwanie do pakietu
 
-You can call the CokeOven package using `mods.immersiveengineering.CokeOven`.
+Możesz wywołać pakiet CokeOven używając `mods.immersiveengineering.CokeOven`.
 
-## Add Recipe
+## Dodaj przepis
 
-| Required | Type        | Data Type                                           |
-| -------- | ----------- | --------------------------------------------------- |
-| Required | Output      | [IItemstack](/Vanilla/Items/IItemStack/)            |
-| Required | Fuel Output | Integer                                             |
-| Required | Input       | [IIngredient](/Vanilla/Variable_Types/IIngredient/) |
-| Required | Time        | Integer                                             |
+| Wymagane | Typ              | Typ danych                                       |
+| -------- | ---------------- | ------------------------------------------------ |
+| Wymagane | Wyjście          | [IItemstack](/Vanilla/Items/IItemStack/)         |
+| Wymagane | Produkcja paliwa | Liczba całkowita                                 |
+| Wymagane | Input            | [Składnik](/Vanilla/Variable_Types/IIngredient/) |
+| Wymagane | Czas             | Liczba całkowita                                 |
 
-### Example
+### Przykład
 
 ```zenscript
 //Example:
-mods.immersiveengineering.CokeOven.addRecipe(IItemStack output, int fuelOutput, IIngredient input, int time);
+mods.immersiveengineering.CokeOven.addRecipe(IItemStack output, int fuelOutput, IIngredient Input , int time);
 mods.immersiveengineering.CokeOven.addRecipe(<minecraft:coal>, 2, <ore:logWood>, 2000);
 ```
 
-## Remove Recipe
+## Usuń przepis
 
-| Type   | Data Type                                |
-| ------ | ---------------------------------------- |
-| Output | [IItemstack](/Vanilla/Items/IItemStack/) |
+| Typ     | Typ danych                               |
+| ------- | ---------------------------------------- |
+| Wyjście | [IItemstack](/Vanilla/Items/IItemStack/) |
 
-### Example:
+### Przykład:
 
 ```zenscript
 //Example:

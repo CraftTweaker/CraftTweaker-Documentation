@@ -1,26 +1,26 @@
-# CommandEvent
+# Polecenie Zdarzenia
 
-The Command Event is fired whenever a command is executed. You can react to the command by providing a command handler. See [Crafttweaker examples](https://github.com/CraftTweaker/CraftTweaker-Examples/blob/master/crafttweaker/events/commandEvent/SendMessageOnSyntaxCommand/SendMessageOnSyntaxCommand.zs) for an example.
+Wydarzenie poleceń jest uruchamiane za każdym razem, gdy polecenie jest wykonywane. Możesz zareagować na polecenie podając polecenie. Zobacz [Krafttsłabsze przykłady](https://github.com/CraftTweaker/CraftTweaker-Examples/blob/master/crafttweaker/events/commandEvent/SendMessageOnSyntaxCommand/SendMessageOnSyntaxCommand.zs) na przykład.
 
-## Event Class
+## Klasa wydarzenia
 
-You will need to cast the event in the function header as this class: `crafttweaker.event.CommandEvent`. It is advised to [import](/AdvancedFunctions/Import/) the class
+Musisz aktywować zdarzenie w nagłówku funkcji jako klasa: `crafttweaker.event.CommandEvent`. Zaleca się [zaimportować](/AdvancedFunctions/Import/) klasę
 
-    import crafttweaker.event.CommandEvent;
+    importuj crafttweaker.event.CommandEvent;
     
 
-## Event interface extensions
+## Rozszerzenia interfejsu zdarzenia
 
-Command event implements the following interfaces:
+Zdarzenie poleceń implementuje następujące interfejsy:
 
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 
 ## ZenGetters/ZenSetters
 
-The following information ca be retrieved/set during the event:
+Poniższe informacje są pobierane/ustawiane podczas wydarzenia:
 
-| ZenGetter       | ZenSetter    | Type                                                |
-| --------------- | ------------ | --------------------------------------------------- |
-| `commandSender` | no           | [ICommandSender](/Vanilla/Commands/ICommandSender/) |
-| `command`       | no           | [ICommand](/Vanilla/Commands/ICommand/)             |
-| `parameters`    | `parameters` | string array                                        |
+| ZenGetter           | ZenSetter   | Typ                                                 |
+| ------------------- | ----------- | --------------------------------------------------- |
+| `polecenie-nadawca` | nie         | [ICommandSender](/Vanilla/Commands/ICommandSender/) |
+| `polecenie`         | nie         | [Polecenie ICommand](/Vanilla/Commands/ICommand/)   |
+| `parametry`         | `parametry` | tablica ciągów                                      |

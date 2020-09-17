@@ -1,37 +1,37 @@
-# Coolant
+# Chłodzenie
 
-The Coolant manager does not belong to any specific machine but manages coolant values for all other machines.  
-For example the Enervation Dynamo uses the coolant values, as does the Magmatic Dynamo with the Ientropic Reservoir augment provided.
+Kierownik chłodni nie należy do żadnej konkretnej maszyny, ale zarządza wartościami chłodziwa dla wszystkich pozostałych maszyn.  
+Na przykład Dynamo Energetyki wykorzystuje wartości chłodnicze, podobnie jak Dynamo Magmatyczne z dostarczonym wzmocnieniem zbiornika Ientropowego.
 
-## Import the package
+## Importuj pakiet
 
-To shorten method calls you can [import](/AdvancedFunctions/Import/) the package like so:
+Aby skrócić połączenia metodą, możesz [zaimportować](/AdvancedFunctions/Import/) pakiet taki jak tak:
 
 ```zenscript
-import mods.thermalexpansion.Coolant;
+importuj mods.thermalexpansion.Coolant;
 ```
 
-## Add Coolant
+## Dodaj Chłodzenie
 
-Use this to register a new coolant to the manager.  
-CoolantRF needs to be non-negative, and the coolant factor needs to be between 1 and 100 (inclusive).  
-If those ranges are not met, the coolant will not be registered!
+Użyj tego, aby zarejestrować nowy chłodziwo do menedżera.  
+CoolantRF musi być nieujemny, a współczynnik chłodzący musi wynosić od 1 do 100 (włącznie).  
+Jeśli te zakresy nie zostaną spełnione, chłodziwo nie zostanie zarejestrowane!
 
 ```zenscript
-//mods.thermalexpansion.Coolant.addCoolant(ILiquidStack fluid, int coolantRf, int coolantFactor);
+//mods.thermalexpansion.Coolant.addCoolant(ILiquidStack płyn chłodzącyRf, int coolantFactor);
 mods.thermalexpansion.Coolant.addCoolant(<liquid:lava>, 0, 1);
 
 
-//These are two of the values TE uses by default:
-//mods.thermalexpansion.Coolant.addCoolant(<liquid:water>, 250000, 20);
+//Te są dwiema z wartości:
+//mods. hermalexpansion.Coolant.addCoolant(<liquid:water>, 250000, 20);
 //mods.thermalexpansion.Coolant.addCoolant(<liquid:cryotheum>, 3000000, 60);
 ```
 
-## Remove Coolant
+## Usuń Chłodzenie
 
-Use this to deregister an existing coolant from the manager.
+Użyj tego, aby usunąć istniejący chłodziwo z menedżera.
 
 ```zenscript
-//mods.thermalexpansion.Coolant.removeCoolant(ILiquidStack fluid);
+//mods.thermalexpansion.Coolant.removeCoolant(ILiquidStack);
 mods.thermalexpansion.Coolant.removeCoolant(<liquid:water>);
 ```

@@ -1,27 +1,27 @@
-# PlayerBreakSpeed
+# Velocidad de descanso del jugador
 
-The PlayerBreakSpeed Event is fired whenever a player tries to break a block.  
-It can be canceled to stop theplayer from being able to break that block.
+El Evento PlayerBreakSpeed se activa cada vez que un jugador intenta romper un bloque.  
+Se puede cancelar para evitar que el jugador pueda romper ese bloque.
 
-## Event Class
+## Clase de evento
 
-You will need to cast the event in the function header as this class:  
-`crafttweaker.event.PlayerBreakSpeedEvent`  
-You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
+Necesitarás lanzar el evento en la cabecera de la función como esta clase:  
+`crafttweaker.event. layerBreakSpeedEvent`  
+Puede, por supuesto, también [importar](/AdvancedFunctions/Import/) la clase antes y usar ese nombre entonces.
 
-## Event interface extensions
+## Extensiones de la interfaz de eventos
 
-PlayerBreakSpeed Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+PlayerBreakSpeed Events implementa las siguientes interfaces y son capaces de llamar a todos sus métodos/getters/setters también:
 
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
-- [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
-- [IEventPositionable](/Vanilla/Events/Events/IEventPositionable/)
+- [Evento IJugador](/Vanilla/Events/Events/IPlayerEvent/)
+- [Evento Posicionable](/Vanilla/Events/Events/IEventPositionable/)
 
 ## ZenGetter/Setter
 
-| ZenGetter     | ZenSetter | Type                                        |
-| ------------- | --------- | ------------------------------------------- |
-| blockState    |           | [IBlockState](/Vanilla/Blocks/IBlockState/) |
-| block         |           | [IBlock](/Vanilla/Blocks/IBlock/)           |
-| originalSpeed |           | float                                       |
-| newSpeed      | newSpeed  | float                                       |
+| ZenGetter          | Ajuste          | Tipo                                             |
+| ------------------ | --------------- | ------------------------------------------------ |
+| estado de bloqueo  |                 | [Estado de IBlock](/Vanilla/Blocks/IBlockState/) |
+| bloque             |                 | [IBlock](/Vanilla/Blocks/IBlock/)                |
+| velocidad original |                 | flotante                                         |
+| nueva velocidad    | nueva velocidad | flotante                                         |

@@ -1,24 +1,24 @@
 # IItemRightClick
 
-The IItemRightClick function can be added to an [Item](/Mods/ContentTweaker/Vanilla/Creatable_Content/Item/) and will be triggered when a user does rightclick with the item selected in his primary hand.
+Функция IItemRightClick может быть добавлена к [элементу](/Mods/ContentTweaker/Vanilla/Creatable_Content/Item/) и будет вызвана, когда пользователь делает правую кнопку с предметом, выбранным в его основной руке.
 
 ## Импорт пакета
 
-It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
-`import mods.contenttweaker.IItemRightClick;`
+Возможно, вам потребуется импортировать пакет, если вы столкнетесь с какими-либо проблемами, так что лучше быть безопасным чем извините и добавьте импорт.  
+`импорт mods.contenttweaker.IItemRightClick;`
 
-## Parameters
+## Параметры
 
-The IItemRightClick function is a function with the following parameters:
+Функция IItemRightClick - это функция со следующими параметрами:
 
-- [IMutableItemStack](/Mods/ContentTweaker/Vanilla/Types/Item/IMutableItemStack/) itemStack → The item that is right-clicked
-- [IWorld](/Mods/ContentTweaker/Vanilla/Types/World/IWorld/) world → The world the player is in
-- [ICTPlayer](/Mods/ContentTweaker/Vanilla/Types/Player/ICTPlayer/) player → The player doing the right-click
-- String hand → Either "OFF_HAND" or "MAIN_HAND"
+- [IMutableItemStack](/Mods/ContentTweaker/Vanilla/Types/Item/IMutableItemStack/) itemStack → Предмет, который кликнул правой кнопкой
+- [IWorld](/Mods/ContentTweaker/Vanilla/Types/World/IWorld/) мир → мир, в котором находится игрок
+- [ICTPlayer](/Mods/ContentTweaker/Vanilla/Types/Player/ICTPlayer/) игрок → Игрок делает правый клик
+- Строка → Или "OFF_HAND" или "MAIN_HAND"
 
-The function needs to return either `"SUCCESS"`, `"PASS"` or `"FAIL"`
+Функция должна возвращать `"SUCCESS"`, `"PASS"` или `"FAIL"`
 
-## Example
+## Пример
 
 ```zenscript
 zsItem.itemRightClick = function(stack, world, player, hand) {

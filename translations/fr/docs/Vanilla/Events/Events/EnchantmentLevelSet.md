@@ -1,30 +1,30 @@
-# EnchantmentLevelSetEvent
+# Evénement de niveau d'enchantement
 
-The EnchantmentLevelSet Event is fired when the levels for the three potential enchantments are generated in the Enchantment Table.
+L'événement EnchantmentLevelSet est lancé lorsque les niveaux des trois enchantements potentiels sont générés dans la table d'enchantement.
 
 ## Notes
 
-`event.enchantRow` lists the row (1-3) of the Enchantment Table, while `event.originalLevel` represents the original level of the row. `event.power` is the cumulative value of bookshelves surrounding the Enchantment Table, while `event.item` is the item that is being enchanted.
+`event.enchantRow` liste la ligne (1-3) de la table d'enchantement, tandis que `event.originalLevel` représente le niveau original de la ligne. `event.power` est la valeur cumulative des étagères entourant la table d'enchantement, tandis que `event.item` est l'objet enchanté.
 
-`event.level` can be arbitrarily modified to a value between 0 & 30.
+`event.level` peut être modifié arbitrairement pour une valeur comprise entre 0 & 30.
 
-## Event Class
-You will need to cast the event in the function header as this class:  
-`crafttweaker.event.EnchantmentLevelSetEvent`  
-You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
+## Classe de l'événement
+Vous devrez lancer l'événement dans l'en-tête de la fonction comme cette classe:  
+`crafttweaker.event. nchantmentLevelSetEvent`  
+Vous pouvez, bien sûr, également [importer](/AdvancedFunctions/Import/) la classe avant et utiliser ce nom alors.
 
-## Event interface extensions
-EnchantmentLevelSet Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+## Extensions d'interface de l'événement
+Les événements EnchantmentLevelSet implémentent les interfaces suivantes et peuvent également appeler toutes leurs méthodes/getters/setters :
 
-- [IEventPositionable](/Vanilla/Events/Events/IEventPositionable/)
+- [IEventPositionnable](/Vanilla/Events/Events/IEventPositionable/)
 
 ## ZenGetters
 
-| ZenGetter       | ZenSetter | Return Type                              |
-| --------------- | --------- | ---------------------------------------- |
-| `world`         |           | [IWorld](/Vanilla/World/IWorld/)         |
-| `enchantRow`    |           | int                                      |
-| `power`         |           | int                                      |
-| `item`          |           | [IItemStack](/Vanilla/Items/IItemStack/) |
-| `originalLevel` |           | int                                      |
-| `level`         | `level`   | int                                      |
+| ZenGetter              | ZenSetter | Type de retour                           |
+| ---------------------- | --------- | ---------------------------------------- |
+| `monde`                |           | [IWorld](/Vanilla/World/IWorld/)         |
+| `Ligne d'enchantement` |           | Indice                                   |
+| `Électricité`          |           | Indice                                   |
+| `Élément`              |           | [IItemStack](/Vanilla/Items/IItemStack/) |
+| `niveau initial`       |           | Indice                                   |
+| `niveau`               | `niveau`  | Indice                                   |

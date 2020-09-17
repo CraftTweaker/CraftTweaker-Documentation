@@ -1,22 +1,22 @@
 # ExplosionDetonate
 
-The ExplosionDetonate Event is fired shortly before an explosion starts. It cannot be canceled.
+ExplosionDetonate イベントは、爆発が始まる直前に発生します。 キャンセルできません。
 
-## Event Class
+## イベントクラス
 You will need to cast the event in the function header as this class:  
 `crafttweaker.event.ExplosionDetonateEvent`  
 You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
 
-## Event interface extensions
-ExplosionDetonate Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+## イベントインターフェースの拡張
+ExplosionDetonate Eventsは以下のインターフェイスを実装し、それらのメソッド/getters/settersをすべて呼び出すことができます。
 
-- [IExplosionEvent](/Vanilla/Events/Events/IExplosionEvent/)
+- [爆発イベント](/Vanilla/Events/Events/IExplosionEvent/)
 
 
 ## ZenGetters
-The following information can be retrieved from the event:
+イベントから次の情報を取得できます。
 
-| ZenGetter           | ZenSetter | Type                                           |
+| ZenGetter           | ZenSetter | タイプ                                            |
 | ------------------- | --------- | ---------------------------------------------- |
 | `affectedEntities`  |           | [IEntity](/Vanilla/Entities/IEntity/)[]        |
 | `affectedPositions` |           | [IBlockPos](/Vanilla/Blocks/IBlockPosition/)[] |

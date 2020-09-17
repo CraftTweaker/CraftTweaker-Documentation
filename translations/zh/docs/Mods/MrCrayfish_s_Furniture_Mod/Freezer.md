@@ -1,46 +1,46 @@
 # 冰箱(Freezer)
 
-The Freezer is the bottom compartment of the Fridge.
+冻结器是星期五的底部。
 
-It can be used to freeze items, but requires Ice to operate.
+它可以用来冻结物品，但需要冰箱运作。
 
-## Default Freezer Recipes
+## 默认冻结器配方
 
-- Water Bucket -> Ice
-- Ice -> Packed Ice
-- Lava Bucket -> Obsidian
-- Slimeball -> Snowball
-- Poisonous Potato -> Potato
-- Rotten Flesh -> Flesh
+- 水箱 -> Ice
+- Ice -> 包装冰块
+- 岩浆桶-> 黑暗区
+- Slimeball -> 雪球
+- 有毒马铃薯-> 马铃声
+- 旋转的Flesh -> Flesh
 
 ## 移除配方
 
-## Remove matching freezer recipes.
+## 删除匹配的冻结器配方。
 
 ```zenscript
-mods.cfm.Freezer.remove(@Optional final IIngredient output, @Optional final IIngredient input);
+mods.cfm.Freezer.remove(@Opinion final IIngredient output, @Opinion final IIngredient input);
 
-// Remove recipes that result in Ice
-mods.cfm.Freezer.remove(<minecraft:ice>);
-// Remove recipes that require a Lava Bucket
+// 移除导致冰
+mods.cfm.Freelzer的配方。 emove(<minecraft:ice>);
+// 删除需要Lava 桶的配方
 mods.cfm.Freezer.remove(null,<minecraft:lava_bucket>);
-// Remove all recipes
+// 删除所有配方
 mods.cfm.Freezer.remove();
 ```
 
-## Adding
+## 添加
 
-Add a freezer recipe.
+添加冷冻配方。
 
-## Only supports inputs of size 1.
+## 仅支持1大小的输入
 
 ```zenscript
-mods.cfm.Freezer.addRecipe(@Nonnull final IItemStack output, @Nonnull final IItemStack input);
+mods.cfm.Freezer.addRecipe(@Nonnull final IItemStack output, @Nonnull final IItemStack 输入);
 
-// Add a recipe that makes 16 Ice from a Lava Bucket
-mods.cfm.Freezer.addRecipe(<minecraft:ice>.withAmount(16),<minecraft:lava_bucket>);
-// Adds a recipe that makes 16 Obsidian from a Water Bucket
-mods.cfm.Freezer.addRecipe(<minecraft:obsidian>.withAmount(16),<minecraft:water_bucket>);
-// Adds a recipe that makes a Water Bucket from a Bucket
+// 添加一个能够从Lava Bucket
+mods.cfm.Freelzer.addRecipe(<minecraft:ice>) ithamount(16),<minecraft:lava_bucket>);
+// 添加一个使得16个水桶被来自水桶的配方
+mods.cfm.Freezer.addRecipe(<minecraft:obsidian>. ithamount(16),<minecraft:water_bucket>);
+// 添加一个使水桶从桶中制成的配方
 mods.cfm.Freezer.addRecipe(<minecraft:water_bucket>,<minecraft:bucket>);
 ```

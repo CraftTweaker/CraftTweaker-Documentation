@@ -1,16 +1,16 @@
 
-### Class
+### Klasa
 
 ```zenscript
 import mods.roots.SummonCreatures;
 ```
 
-#### Methods
+#### Metody
 
 ```zenscript
-void addEntity(
-  IEntityDefinition entity, // the entity to be summoned
-  IIngredient[] ingredients // a list of ingredients used for the summoning
+Unieważnij addEntity(
+  IEntityDefinition entity // the entity to be applied
+  IIngredient[] składniki // / lista składników używanych do wezwania
 );
 ```
 
@@ -19,8 +19,8 @@ void addEntity(
 
 
 ```zenscript
-void removeEntity(
-  IEntityDefinition entity // the entity to remove from summoning via recipe
+Unieważnij removeEntity(
+  IEntityDefinition entity // element do usunięcia z przywołania za pomocą receptury
 );
 ```
 
@@ -30,7 +30,7 @@ void removeEntity(
 
 ```zenscript
 void removeLifeEssence(
-  IEntityDefinition entity // the entity to remove life essence for
+  IEntityDefinition entity // the entity to remove life esence for
 );
 ```
 
@@ -49,32 +49,32 @@ void addLifeEssence(
 
 
 ```zenscript
-void clearLifeEssence();
+Unikać clearLifeEssence();
 ```
 
 
 ---
 
 
-### Examples
+### Przykłady
 
 ```zenscript
-import mods.roots.SummonCreatures;
+importuj mods.roots.SummonCreatures;
 
-// Clear all automatically generated Life Essences added by
-// the Animal Harvest map
-SummonCreatures.clearLifeEssence();
+// Wyczyść wszystkie automatycznie generowane Essences dodane przez
+// Mapę zbiorów Zwierzętów
+Przywołania. learLifeEssence();
 
-// Add a recipe to summon a Chicken using 3 items
-SummonCreatures.addEntity(<entity:minecraft:chicken>, [<minecraft:wheat_seeds>, <minecraft:wheat>, <ore:ingotIron>]);
+// Dodaj przepis, aby przywołać kurczaka używając 3 przedmiotów
+Przywołania Twórców. ddEntity(<entity:minecraft:chicken>, [<minecraft:wheat_seeds>, <minecraft:wheat>, <ore:ingotIron>]);
 
-// Remove the enderman added by the Animal Harvest example
-// from the Life Essence list (presuming it hasn't been cleared)
-SummonCreatures.removeLifeEssence(<entity:minecraft:enderman>);
+// Usuń kciuka dodanego przez przykład zbiorów zwierzęcia
+// z listy Esencji Życia (przypuszczając, że nie został wyczyszczony)
+Przywołania. emoveLifeEssence(<entity:minecraft:enderman>);
 
-// Manually add a life-essence drop capability for an ender dragon
-SummonCreatures.addLifeEssence(<entity:minecraft:ender_dragon>);
+// Ręcznie dodaj zdolność spadania esencji dla smoka płci
+Przywołania. ddLifeEssence(<entity:minecraft:ender_dragon>);
 
-// Remove the default recipe for cows
+// Usuń domyślny przepis dla krów
 SummonCreatures.removeEntity(<entity:minecraft:cow>);
 ```

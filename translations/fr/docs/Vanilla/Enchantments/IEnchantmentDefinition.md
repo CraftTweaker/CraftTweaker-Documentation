@@ -1,98 +1,98 @@
-# IEnchantmentDefinition
+# Définition de l'enchantement
 
-An IEnchantmentDefinition is the actual Enchantment, it does not posess a level, but you can use this to retrieve information on the Enchantment.
+Un IEnchantmentDefinition est l'enchantement réel, il ne possède pas de niveau, mais vous pouvez l'utiliser pour récupérer des informations sur l'enchantement.
 
-## Importing the package
+## Importation du paquet
 
-It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
-`import crafttweaker.enchantments.IEnchantmentDefinition;`
+Il pourrait vous être nécessaire d'importer le paquet si vous rencontrez des problèmes (comme lancer un [Tableau](/AdvancedFunctions/Arrays_and_Loops/)), alors mieux être sûr que désolé et ajouter l'importation.  
+`importer crafttweaker.enchantments.IEnchantmentDefinition;`
 
-## Retrieving such an object
+## Récupération d'un tel objet
 
-You can retrieve such an object from the [Enchantment Bracket handler](/Vanilla/Brackets/Bracket_Enchantment/) or from an [IEnchantment](/Vanilla/Enchantments/IEnchantment/) object.
+Vous pouvez récupérer un tel objet dans le gestionnaire de l'éventail d'enchantement [](/Vanilla/Brackets/Bracket_Enchantment/) ou dans un objet [IEnchantment](/Vanilla/Enchantments/IEnchantment/).
 
 ## ZenGetters/ZenSetters
 
-| ZenGetter             | ZenSetter | Type    |
-| --------------------- | --------- | ------- |
-| id                    |           | int     |
-| name                  | name      | string  |
-| maxLevel              |           | int     |
-| minLevel              |           | int     |
-| isAllowedOnBooks      |           | boolean |
-| isTreasureEnchantment |           | boolean |
-| isCurse               |           | boolean |
-| registryName          |           | string  |
+| ZenGetter                   | ZenSetter | Type de texte        |
+| --------------------------- | --------- | -------------------- |
+| id                          |           | Indice               |
+| Nom                         | Nom       | chaîne de caractères |
+| Niveaumax                   |           | Indice               |
+| minLevel                    |           | Indice               |
+| est autorisé sur les livres |           | boolean              |
+| Enchantement de trésors     |           | boolean              |
+| isCurse                     |           | boolean              |
+| registryName                |           | chaîne de caractères |
 
-## ZenMethods
+## Méthodes Zen
 
-### CanApply
+### Canapé
 
-Checks if the enchantment can be put on the item.  
-First method checks in general, second checks if the item can be enchanted to this enchantment using the enchantment Table.  
-Both return a bool and require an [IItemStack](/Vanilla/Items/IItemStack/) as input parameter.
+Vérifie si l'enchantement peut être placé sur l'objet.  
+La première méthode vérifie en général, la seconde vérifie si l'objet peut être enchanté à cet enchantement en utilisant la table d'enchantement.  
+Les deux retournent un bool et nécessitent une [IItemStack](/Vanilla/Items/IItemStack/) comme paramètre d'entrée.
 
 ```zenscript
 ench.canApply(IItemStack item);
 ench.canApplyAtEnchantmentTable(IItemStack item);
 ```
 
-### getEnchantability
+### devenez enchantable
 
-Checks what enchantability the item must have for the Enchantment at the given level.  
-Both methods return an int and take the level of the enchantment as int parameter.
+Vérifie quel enchantement l'objet doit avoir pour l'enchantement au niveau donné.  
+Les deux méthodes retournent une int et prennent le niveau de l'enchantement comme paramètre intre.
 
 ```zenscript
 ench.getMinEnchantability(int level);
 ench.getMaxEnchantability(int level);
 ```
 
-### TranslatedName
+### Nom traduit
 
-Returns the translated name (e.g. "smite IV").  
-Returns a string and requires the level of the enchantment as int parameter.  
-Does the same as [IEnchantment's](/Vanilla/Enchantments/IEnchantment/) `.displayName` ZenGetter!
+Retourne le nom traduit (par exemple "smite IV").  
+Renvoie une chaîne de caractères et nécessite le niveau de l'enchantement en tant que paramètre int.  
+La même chose que [IEnchantment's](/Vanilla/Enchantments/IEnchantment/) `.displayName` ZenGetter !
 
 ```objectzenscriptivec
 ench.getTranslatedName(int level);
 ```
 
-### make Enchantment
+### faire de l'enchantement
 
-By giving an EnchantmentDefinition a level you can make an [IEnchantment](/Vanilla/Enchantments/IEnchantment/) out of it:
+En donnant un niveau EnchantmentDefinition, vous pouvez en faire un [IEnchantment](/Vanilla/Enchantments/IEnchantment/):
 
 ```zenscript
 ench.makeEnchantment(int level);
 ench * level;
 ```
 
-### Compare with other IEnchantmentDefinition objects
+### Comparer avec d'autres objets IEnchantmentDefinition
 
-You can use the `==` operator to check if two enchantments are the same.  
-This means if they have the same id.
+Vous pouvez utiliser l'opérateur `==` pour vérifier si deux enchantements sont identiques.  
+Cela signifie qu'ils ont le même identifiant.
 
 ```zenscript
 if(enchA == enchB)
-    print("Same!");
+    print("Même !");
 ```
 
-## Example
+## Exemple
 
 ```zenscript
-import crafttweaker.enchantments.IEnchantmentDefinition;
-import crafttweaker.data.IData;
+importez crafttweaker.enchantments.IEnchantmentDefinition;
+importez crafttweaker.data. Données :
 
-val array as IEnchantmentDefinition[] = [<enchantment:minecraft:protection>,<enchantment:minecraft:fire_protection>,<enchantment:minecraft:feather_falling>,<enchantment:minecraft:blast_protection>,<enchantment:minecraft:projectile_protection>,<enchantment:minecraft:respiration>,<enchantment:minecraft:aqua_affinity>];
+tableau val comme IEnchantmentDefinition[] = [<enchantment:minecraft:protection>,<enchantment:minecraft:fire_protection>,<enchantment:minecraft:feather_falling>,<enchantment:minecraft:blast_protection>,<enchantment:minecraft:projectile_protection>,<enchantment:minecraft:respiration>,<enchantment:minecraft:aqua_affinity>];
 
 var map as IData = {};
 
 for ench in array {
-    map += ench.makeEnchantment(3).makeTag();
+    map += ench. akeEnchantment(3).makeTag();
 }
 
 print(map.asString());
 
 
-recipes.addShapeless("Supo", <minecraft:golden_sword>.withTag(map), [<minecraft:iron_sword>, <minecraft:golden_sword>]);
+recettes.addShapeless("Supo", <minecraft:golden_sword>.withTag(map), [<minecraft:iron_sword>, <minecraft:golden_sword>]);
 
 ```

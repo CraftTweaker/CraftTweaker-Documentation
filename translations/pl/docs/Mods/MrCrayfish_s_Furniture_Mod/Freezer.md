@@ -1,21 +1,21 @@
-# Freezer
+# Zamrażarka
 
-The Freezer is the bottom compartment of the Fridge.
+Zamrażarka jest dolną komorą Fridge.
 
-It can be used to freeze items, but requires Ice to operate.
+Może być użyty do zamrażania przedmiotów, ale wymaga Lodu.
 
-## Default Freezer Recipes
+## Domyślne przepisy zamrażarki
 
-- Water Bucket -> Ice
-- Ice -> Packed Ice
-- Lava Bucket -> Obsidian
-- Slimeball -> Snowball
-- Poisonous Potato -> Potato
-- Rotten Flesh -> Flesh
+- Wiadro wody -> Lód
+- Lód -> Zpakowany Lód
+- Wiadro Lawy -> Obsydian
+- Slimekula -> Śnieżka
+- Zatruty ziemniak -> Ziemniak
+- Zgniłe mięso -> Mięso
 
-## Removing
+## Usuwanie
 
-## Remove matching freezer recipes.
+## Usuń pasujące przepisy zamrażalni.
 
 ```zenscript
 mods.cfm.Freezer.remove(@Optional final IIngredient output, @Optional final IIngredient input);
@@ -28,19 +28,19 @@ mods.cfm.Freezer.remove(null,<minecraft:lava_bucket>);
 mods.cfm.Freezer.remove();
 ```
 
-## Adding
+## Dodawanie
 
-Add a freezer recipe.
+Dodaj przepis zamrażarki.
 
-## Only supports inputs of size 1.
+## Wspiera tylko dane wejściowe o rozmiarze 1.
 
 ```zenscript
-mods.cfm.Freezer.addRecipe(@Nonnull final IItemStack output, @Nonnull final IItemStack input);
+mods.cfm.Freezer.addRecipe(@Nonnull final wyjściowy IItemStack, @Nonnull final IItemStack);
 
-// Add a recipe that makes 16 Ice from a Lava Bucket
-mods.cfm.Freezer.addRecipe(<minecraft:ice>.withAmount(16),<minecraft:lava_bucket>);
-// Adds a recipe that makes 16 Obsidian from a Water Bucket
-mods.cfm.Freezer.addRecipe(<minecraft:obsidian>.withAmount(16),<minecraft:water_bucket>);
-// Adds a recipe that makes a Water Bucket from a Bucket
+// Dodaj przepis, który sprawia, że 16 Lodów z Wiadera
+mods.cfm.Freezer.addRecipe(<minecraft:ice>. ithAmount(16),<minecraft:lava_bucket>);
+// Dodaje przepis, który sprawia, że 16 Obsydianów z wiadra Wodnego
+mods.cfm.Freezer.addRecipe(<minecraft:obsidian>. ithAmount(16),<minecraft:water_bucket>);
+// Dodaje przepis, który tworzy wiadro wodne z wiadra
 mods.cfm.Freezer.addRecipe(<minecraft:water_bucket>,<minecraft:bucket>);
 ```

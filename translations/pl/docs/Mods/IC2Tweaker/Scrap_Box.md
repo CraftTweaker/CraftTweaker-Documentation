@@ -1,15 +1,15 @@
-# Scrap Box
+# Złom
 
-## Package
+## Pakiet
 
-`import mods.ic2.ScrapBox;`
+`importuj mods.ic2.ScrapBox;`
 
-## Methods
+## Metody
 
-- **[WeightedItemStack](/Vanilla/Items/WeightedItemStack/) weightedItem** The new entry of scrap box drop pool. Percentage weight will be divided by 100.
-- **float weight** The weight of this new entry
+- **[WażonyItemStack](/Vanilla/Items/WeightedItemStack/) ważony** Nowy wpis puli złomu. Procent wagi zostanie podzielony przez 100.
+- **masa zmiennoprzecinkowa** Waga tego nowego wpisu
 
-### Add Drop (WeightedItemStack)
+### Dodaj upuść (ósmy ItemStack)
 
 ```zenscript
 mods.ic2.ScrapBox.addDrop(WeightedItemStack weightedItem);
@@ -18,14 +18,14 @@ mods.ic2.ScrapBox.addDrop(<minecraft:diamond_ore>.weight(0.1));
 mods.ic2.ScrapBox.addDrop(<minecraft:diamond_ore> % 10);
 ```
 
-### Add Drop (IItemStack, float)
+### Dodaj upuść (IItemStack, float)
 
 ```zenscript
-mods.ic2.ScrapBox.addDrop(IItemStack item, float weight);
+mods.ic2.ScrapBox.addDrop(element IItemStack, ciężar zmienny);
 mods.ic2.ScrapBox.addDrop(<minecraft:diamond_ore>, 0.1F);
 ```
 
-## Removal
+## Usuwanie
 
-- If IC2 Classic Tweaker is installed and Ic2 Classic is being used instead of Ic2 Experimental, scrap box drops can be removed. See [here](/Mods/IC2ClassicTweaker/Scrap_Box) for doc.
-- If using Ic2 Experimental, then removal is not possible.
+- Jeśli IC2 Classic Tweaker jest zainstalowany i używa się Ic2 Classic zamiast eksperymentalnego Ic2, można usunąć krople do skrzynki złomowej. Zobacz [tutaj](/Mods/IC2ClassicTweaker/Scrap_Box) aby uzyskać dokument.
+- W przypadku stosowania eksperymentalnego Ic2, usunięcie nie jest możliwe.

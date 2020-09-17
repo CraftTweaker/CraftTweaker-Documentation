@@ -1,26 +1,26 @@
 # Color
 
-If you are uncertain on how to create the colour int object, you can use the Color Object instead.
+Si no está seguro de cómo crear el objeto int de color, puede usar el objeto Color en su lugar.
 
-## Importing the package
+## Importando el paquete
 
-It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
-`import mods.contenttweaker.Color;`
+Podría ser necesario que importes el paquete si encuentras algún problema, así que más vale estar seguro que lo sentimos y añadir la importación.  
+`importar mods.contenttweaker.Color;`
 
-## Static Methods
+## Métodos estáticos
 
-Static Methods are called on the package name and not on the Object itself.  
-All these Methods return a Color Object.
+Los métodos estáticos se llaman en el nombre del paquete y no en el propio objeto.  
+Todos estos métodos devuelven un objeto de color.
 
-| ZenMethod      | Parameter Type |
-| -------------- | -------------- |
-| fromInt(color) | int            |
-| fromHex(color) | string         |
+| Método         | Tipo de parámetro |
+| -------------- | ----------------- |
+| de Int(color)  | int               |
+| fromHex(color) | cadena            |
 
-## Nonstatic Methods
+## Métodos no estáticos
 
-Nonstatic Methods are not called on the package name but on the Object itself.
+Los métodos no estáticos no se llaman en el nombre del paquete, sino en el propio objeto.
 
-| ZenMethod     | Return Type |
-| ------------- | ----------- |
-| getIntColor() | int         |
+| Método        | Tipo de devolución |
+| ------------- | ------------------ |
+| getIntColor() | int                |

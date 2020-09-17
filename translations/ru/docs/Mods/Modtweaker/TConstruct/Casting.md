@@ -1,31 +1,31 @@
-# Casting
+# Разливка
 
-The `Casting` package allows you to add or remove Casting recipes.
+Пакет `Разливка` позволяет добавлять или удалять рецепты Кастинга.
 
-## Calling
+## Звонок
 
-You can call the Casting package using `mods.tconstruct.Casting`
+Вы можете вызвать пакет Кастинга через `mods.tconstruct.Casting`
 
-## Add Casting Recipes
+## Добавить Рецепты Разливки
 
-You can add recipes for both, casting tables and basins: The methods are equal in their parameters, varying only in their names.
+Вы можете добавить рецепты для обоев, литья столов и бассейнов: Методы равны их параметрам, изменяя только их имена.
 
 ```zenscript
-//mods.tconstruct.Casting.addTableRecipe(IItemStack output, IIngredient cast, ILiquidStack fluid, int amount, @Optional boolean consumeCast, @Optional int time);
-mods.tconstruct.Casting.addTableRecipe(<minecraft:gold_ingot>, <minecraft:gold_ingot>, <liquid:molten_gold>, 140);
-mods.tconstruct.Casting.addTableRecipe(<minecraft:gold_ingot>, <minecraft:iron_ingot>, <liquid:molten_gold>, 30, true);
-mods.tconstruct.Casting.addTableRecipe(<minecraft:gold_ingot>, <minecraft:iron_ingot>, <liquid:molten_gold>, 30, true, 200);
+//mods.tconstruct.Casting.addTableRecipe(IItemStack, IIngredient cast, fluid ILiquidStack, int amount, @Optional boolean consumeCast, @Optional int time);
+mods. construct.Casting.addTableRecipe(<minecraft:gold_ingot>, <minecraft:gold_ingot>, <liquid:molten_gold>, 140);
+моды. construct.Casting.addTableRecipe(<minecraft:gold_ingot>, <minecraft:iron_ingot>, <liquid:molten_gold>, 30, true);
+mods.tconstruct. asting.addTableRecipe(<minecraft:gold_ingot>, <minecraft:iron_ingot>, <liquid:molten_gold>, 30, true, 200);
 
 
-//mods.tconstruct.Casting.addBasinRecipe(IItemStack output, IIngredient cast, ILiquidStack fluid, int amount, @Optional boolean consumeCast, @Optional int time);
-mods.tconstruct.Casting.addBasinRecipe(<minecraft:gold_ingot>, <minecraft:gold_ingot>, <liquid:molten_gold>, 140);
-mods.tconstruct.Casting.addBasinRecipe(<minecraft:gold_ingot>, <minecraft:iron_ingot>, <liquid:molten_gold>, 30, true);
+//моды. construct.Casting.addBasinRecipe(IItemStack, IIngredient cast, ILiquidStack fluid, int amount, @Optional boolean consumeCast, @Optional int time);
+mods. construct.Casting.addBasinRecipe(<minecraft:gold_ingot>, <minecraft:gold_ingot>, <liquid:molten_gold>, 140);
+модов. construct.Casting.addBasinRecipe(<minecraft:gold_ingot>, <minecraft:iron_ingot>, <liquid:molten_gold>, 30, true);
 mods.tconstruct.Casting.addBasinRecipe(<minecraft:gold_ingot>, <minecraft:iron_ingot>, <liquid:molten_gold>, 30, true, 200);
 ```
 
-## Removing Casting Recipes
+## Удаление рецептов Заказчика
 
-Removing Recipes is also possible for Casting Tables and Basins:
+Удаление рецептов возможно также для литья таблиц и бассейнов:
 
 ```zenscript
 //mods.tconstruct.Casting.removeTableRecipe(IItemStack output);

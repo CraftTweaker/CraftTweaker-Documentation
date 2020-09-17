@@ -1,16 +1,16 @@
-# Manufactory
+# 制造商
 
-## Importing the Package
-`mods.nuclearcraft.manufactory`
+## 导入软件包
+`nuclearchraft.生产`
 
-## Adding Recipes
+## 添加配方
 ```zenscript
-mods.nuclearcraft.manufactory.addRecipe([itemInput, itemOutput, @Optional double timeMultiplier, @Optional double powerMultiplier, @Optional double processRadiation]);
+mods.nuclearcraft.manufactury.addRecipe([itemInput, itemOutput, @Optional double time Multiplier, @Optional double powerMultiplier, @Optional double processRadiation]);
 ```
 
-## Removing Recipes
+## 删除配方
 ```zenscript
-mods.nuclearcraft.manufactory.removeRecipeWithInput([itemInput]);
-mods.nuclearcraft.manufactory.removeRecipeWithOutput([itemOutput]);
-mods.nuclearcraft.manufactory.removeAllRecipes();
+mods.nuclearcraft.motory.removeRecipeWidInput([itemInput]);
+mods.nuclearcraft.motory.removeRecipeWOutput([itemOutput]);
+mods.nuclearcraft.motory.removeAllRecipes();
 ```

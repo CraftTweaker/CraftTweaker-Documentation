@@ -1,18 +1,18 @@
-# Crucible
+# るつぼ可能
 
-## Package
+## パッケージ
 
 `mods.thermalexpansion.Crucible`
 
-## Addition
+## 加算
 
 ```zenscript
-mods.thermalexpansion.Crucible.addRecipe(ILiquidStack output, IItemStack input, int energy);
+mods.thermalexpansion.Crucible.addRecipe(ILiquidStack出力, IItemStack input, int energy);
 
-mods.thermalexpansion.Crucible.addRecipe(<liquid:refined_oil>, <minecraft:diamond>, 50);
+mods.thermallexpansion.Crucible.addRecipe(<liquid:refined_oil>, <minecraft:diamond>, 50);
 ```
 
-## Removal
+## 削除
 
 ```zenscript
 mods.thermalexpansion.Crucible.removeRecipe(IItemStack input);

@@ -1,25 +1,25 @@
-# PlayerBrewedPotion
+# Mikstura gracza
 
-The PlayerBrewedPotion Event is fired whenever a player takes out a potion from the brewing stand.
+Wydarzenie Diabelskiej Mikstury jest strzelane za każdym razem, gdy gracz wyciągnie miksturę z piwowarstwa.
 
-## Event Class
+## Klasa wydarzenia
 
-You will need to cast the event in the function header as this class:  
-`crafttweaker.event.PlayerBrewedPotionEvent`  
-You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
+Musisz aktywować wydarzenie w nagłówku funkcji jako klasa:  
+`crafttweaker.event. layerBrewedPotionEvent`  
+Możesz oczywiście również [zaimportować](/AdvancedFunctions/Import/) klasę przed i wtedy użyć tej nazwy.
 
-## Event interface extensions
+## Rozszerzenia interfejsu zdarzenia
 
-PlayerBrewedPotion Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+Wydarzenia PlayerBrewedPoniecki zaimplementują następujące interfejsy i są również w stanie wywołać wszystkie swoje metody/getters/setters:
 
-- [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
+- [Wydarzenie IPlayer](/Vanilla/Events/Events/IPlayerEvent/)
 
 ## ZenGetters
 
-The following information can be retrieved from the event:
+Z wydarzenia można uzyskać następujące informacje:
 
-| ZenGetter | Return Type                              |
-| --------- | ---------------------------------------- |
-| `player`  | [IPlayer](/Vanilla/Players/IPlayer/)     |
-| `potion`  | [IItemStack](/Vanilla/Items/IItemStack/) |
-| `hand`    | string                                   |
+| ZenGetter  | Typ zwrotu                               |
+| ---------- | ---------------------------------------- |
+| `gracz`    | [IPlayer](/Vanilla/Players/IPlayer/)     |
+| `mikstura` | [IItemStack](/Vanilla/Items/IItemStack/) |
+| `dłoń`     | ciąg znaków                              |

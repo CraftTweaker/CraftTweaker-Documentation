@@ -1,34 +1,34 @@
 # IEntityAgeable
 
-An Ageable Entity is one that grows over time, like a cow.
+Eine alterbare Einheit wächst im Laufe der Zeit wie eine Kuh.
 
 ## Dieses Paket importieren
 
-It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
-`import crafttweaker.entity.IEntityAgeable;`
+Möglicherweise ist es erforderlich, dass Sie das Paket importieren, wenn Sie irgendwelche Probleme haben (z.B. [Array](/AdvancedFunctions/Arrays_and_Loops/)), also besser sicher sein als bedauern und fügen Sie den Import.  
+`importiere crafttweaker.entity.IEntityAgeable;`
 
-## Extending [IEntityCreature](/Vanilla/Entities/IEntityCreature/)
+## [IEntityKreatur wird erweitert](/Vanilla/Entities/IEntityCreature/)
 
-IEntityAgeable extends [IEntityCreature](/Vanilla/Entities/IEntityCreature/). That means all functions available to [IEntities](/Vanilla/Entities/IEntityCreature/) also are available to IEntityAgeable.
+IEntityAgeable erweitert [IEntityKreature](/Vanilla/Entities/IEntityCreature/). Das bedeutet, dass alle Funktionen, die [IEntities](/Vanilla/Entities/IEntityCreature/) zur Verfügung stehen, auch für IEntityAgeable verfügbar sind.
 
 ## Methoden
 
 ### ZenGetters/Setters
 
-| ZenGetter  | ZenSetter   | Type |
-| ---------- | ----------- | ---- |
-| growingAge | growingAge  | int  |
-|            | scaleForAge | bool |
+| ZenGetter        | ZenSetter        | Type |
+| ---------------- | ---------------- | ---- |
+| wachsendes Alter | wachsendes Alter | int  |
+|                  | scaleForAge      | bool |
 
-### ZenMethods
+### ZenMethoden
 
-#### add age
+#### füge Alter hinzu
 
-Methods expect an int and the second method an optional bool.  
-Both methods return nothing.  
-Normally, the second method does the same as the first with false as forced argument, that may differ for mod implementations, though.
+Methoden erwarten eine Inte und die zweite Methode ein optionales Bool.  
+Beide Methoden geben nichts zurück.  
+Normalerweise macht die zweite Methode das Gleiche wie die erste mit falscher als erzwungenes Argument, die jedoch bei mod-Implementierungen unterschiedlich sein kann.
 
 ```zenscript
-entAgObj.ageUp(int seconds, @Optional boolean forced);
+entAgObj.ageUp(int seconds, @Optional boolesche erzwungen);
 entAgObj.addGrowth(int seconds);
 ```

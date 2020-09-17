@@ -1,16 +1,16 @@
 # IFacing
 
-The IFacing Interface allows you to get an [IBlockPos's](/Vanilla/World/IBlockPos/) possible directions.
+Interfejs IFacing pozwala na uzyskanie możliwych kierunków [IBlockPos'a](/Vanilla/World/IBlockPos/).
 
-## Importing the package
+## Importowanie pakietu
 
-It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
-`import crafttweaker.world.IFacing;`
+Może być wymagane zaimportowanie pakietu, jeśli napotkasz jakieś problemy, więc lepiej być bezpiecznym niż przepraszamy i dodać import.  
+`zaimportuj crafttweaker.world.IFacing;`
 
-## Enumerations
+## Liczby
 
-The facing Interface has 7 static Methods, each returning the said direction.  
-The last one takes the direction as String input (e.g. `"NORTH"`)
+Interfejs stojący na czoła składa się z 7 metod statycznych, z których każdy wraca ten kierunek.  
+Ostatnia przyjmuje kierunek jako dane wejściowe ciągu (np. `"NORTH"`)
 
 ```zenscript
 crafttweaker.world.Facing.north()
@@ -21,28 +21,28 @@ crafttweaker.world.Facing.down()
 crafttweaker.world.Facing.up()
 
 
-crafttweaker.world.Facing.fromString(String name);
+crafttweaker.world.Facing.fromString(nazwa string);
 ```
 
-## ZenGetters/ZenMethods without parameters
+## ZenGetters/ZenMethods bez parametrów
 
-| ZenGetter | ZenMethod  | Return Type |
-| --------- | ---------- | ----------- |
-| name      | getName()  | string      |
-| rotateY   | rotateY()  | IFacing     |
-| opposite  | opposite() | IFacing     |
+| ZenGetter  | Metoda ZenMethod | Typ zwrotu  |
+| ---------- | ---------------- | ----------- |
+| Nazwa      | getName()        | ciąg znaków |
+| rotateY    | rotateY()        | IFacing     |
+| przeciwnie | odwrotna()       | IFacing     |
 
-## Other methods
+## Inne metody
 
-### Comparing two Facings
+### Porównanie dwóch kierunków
 
-You can compare two facings using the standart comparing Operators `== != < > <= >=`  
-Alternatively, you can use the function, though the function returns an int that is 0 if they are equal.
+Możesz porównać dwa kierunki za pomocą standaryzowanego porównywania Operatorów `== ! < > <= >=`  
+Alternatywnie, możesz użyć funkcji, chociaż funkcja zwraca odcisk równy 0, jeśli jest równy.
 
 ```zenscript
-//Returns true or false
-facingOne == facingTwo;
+//Zwraca true lub false
+facingOne == facingDwa;
 
-//Returns 0 if they are equal
-facingOne.compare(facingTwo);
+//Zwraca 0 jeśli są równe
+facingOne.compare(facingDwa);
 ```

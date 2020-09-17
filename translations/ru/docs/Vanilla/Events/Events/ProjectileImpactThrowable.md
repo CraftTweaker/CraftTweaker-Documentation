@@ -1,22 +1,22 @@
-# ProjectileImpactThrowable
+# Влияние снаряда
 
-This event is fired whenever a throwable projectile impacts an entity but before damage, etc, is calculated. It is **cancelable**, and if canceled, the impact will not be processed.
+Это событие запускается всякий раз, когда бросаемый снаряд влияет на сущность, но до нанесения урона и т. д. рассчитывается. Это **отменимый**, и в случае отмены влияние не будет обработано.
 
 ## Импорт класса
-It might be required to [import](/AdvancedFunctions/Import/) the class to avoid errors.  
-`import crafttweaker.event.ProjectileImpactThrowableEvent;`
+Может потребоваться [импортировать](/AdvancedFunctions/Import/) класс, чтобы избежать ошибок.  
+`импортировать crafttweaker.event.ProjectileImpactThrowableEvent;`
 
-## Extending IEntityEvent
-ProjectileImpactThrowable Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+## Расширение IEntityEvent
+ProjectileImpactThrowable Events реализуют следующие интерфейсы и также могут назвать все их методы/getters/setters:
 
-- [IProjectileEvent](/Vanilla/Events/Events/IProjectileEvent/)
+- [Событие снаряда](/Vanilla/Events/Events/IProjectileEvent/)
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 
-## ZenGetters and ZenSetters
+## ZenGetters и ZenSetters
 
 Следующая информация может быть получена от события:
 
-| ZenGetter  | ZenSetter | Тип                                                       |
-| ---------- | --------- | --------------------------------------------------------- |
-| `fireball` |           | [IEntity](/Vanilla/Entities/IEntity/)                     |
-| `shooter`  |           | [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) |
+| ZenGetter      | ZenSetter | Тип                                                       |
+| -------------- | --------- | --------------------------------------------------------- |
+| `Огненный шар` |           | [IEntity](/Vanilla/Entities/IEntity/)                     |
+| `стрелок`      |           | [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) |

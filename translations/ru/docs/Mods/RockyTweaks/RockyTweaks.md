@@ -1,13 +1,13 @@
 # RockyTweaks
 
-## Information
+## Дополнительная информация
 
-Rocky Tweaks (formerly known as Rocky Core) adds the ability to tweak the Vanilla Anvil and Merchant (Villager) trades using CraftTweaker.
+Rocky Tweaks (ранее известный как Rocky Core) добавляет возможность изменять сделки Vanilla Anvil и Merchant (Villager) с помощью CraftTweaker.
 
-### For More Information
+### Для дополнительной информации
 
-Project Page: [https://minecraft.curseforge.com/projects/rocky-tweaks](https://minecraft.curseforge.com/projects/rocky-tweaks)
+Страница проекта: [https://minecraft.curseforge.com/projects/rocky-tweaks](https://minecraft.curseforge.com/projects/rocky-tweaks)
 
-### Bug Reports
+### Отчеты об ошибках
 
-Issue Tracker: [https://github.com/DevOnTheRocks/RockyTweaks/issues](https://github.com/DevOnTheRocks/RockyTweaks/issues)
+Трекер проблем: [https://github.com/DevOnTheRocks/RockyTweaks/issues](https://github.com/DevOnTheRocks/RockyTweaks/issues)

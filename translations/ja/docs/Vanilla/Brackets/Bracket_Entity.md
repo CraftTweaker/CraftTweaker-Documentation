@@ -1,8 +1,8 @@
 # Entity Bracket Handler
 
-The Entity Bracket Handler gives you access to the Entities (e.g. Mobs, tile ents etc.) in the game. It is only possible to get entities registered in the game, so adding or removing mods may cause issues if you reference the mod's mobs in an Entity Bracket Handler.
+エンティティブラケットハンドラーは、ゲーム内のエンティティ(たとえばモブ、タイルなど)にアクセスできます。 エンティティをゲームに登録することは可能です。 そのため、Modの追加や削除は、Entity Bracket HandlerでModのモブを参照すると問題が発生する可能性があります。
 
-Entities are referenced in the Entity handler this way:
+エンティティはこのようにしてエンティティハンドラで参照されます:
 
 ```zenscript
 <entity:modID:entityName>
@@ -10,11 +10,11 @@ Entities are referenced in the Entity handler this way:
 <entity:minecraft:sheep>
 ```
 
-If the mob/entity is found, this will return an IEntityDefinition Object. Please refer to the [respective Wiki entry](/Vanilla/Entities/IEntityDefinition/) for further information on what you can do with these.
+mob/entity が見つかった場合、IEntityDefinition Object を返します。 これらを使用して何ができるかについては、それぞれの [Wiki エントリ](/Vanilla/Entities/IEntityDefinition/) を参照してください。
 
-# Getting all Registered Entities
+# すべての登録エンティティの取得
 
-You can use the following command to output all registered entities to the CraftTweaker log
+以下のコマンドを使用して、登録された全てのエンティティをCraftTweakerログに出力できます。
 
     /ct entities
     /crafttweaker entities

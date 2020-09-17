@@ -1,25 +1,25 @@
-# Offering to the Gods
+# 神々に捧げること
 
-## Package
+## パッケージ
 ```zenscript
-mods.naturesaura.Offering
+mods.naturesaura.Offeringオファー中
 ```
 
-## Methods
-- **String Name**
-- **[IIngredient](/Vanilla/Variable_Types/IIngredient) input** The offering
-- **int ininputAmount** The amount of items required for the input. Note that this means that the amount of the input variable is ignored
-- **[IIngredient](/Vanilla/Variable_Types/IIngredient) startItem** the item required to start the offering
-- **[IItemStack](/Vanilla/Items/IItemStack) output** The gift of the Offering
+## メソッド
+- **文字列名**
+- **[IIngredient](/Vanilla/Variable_Types/IIngredient) input** 提供
+- **int ininputAmount** 入力に必要な項目の量。 これは入力変数の量が無視されることを意味することに注意してください
+- **[IIngredient](/Vanilla/Variable_Types/IIngredient) startItem** 提供を開始するために必要なアイテム
+- **[IItemStack](/Vanilla/Items/IItemStack) 出力** オファーのギフト
 
-## Addition
+## 加算
 
 ```zenscript
-mods.naturesaura.Offering.addRecipe(String name, IIngredient input, int inputAmount, IIngredient startItem, IItemStack output)
+mods.naturesaura.AnimalSpawnermods.naturesaura.Offering.addRecipe(String name, IIngredient input, int inputAmount, IIngredient startItem, IItemStack output)
 ```
 
-## Removal
+## 削除
 
 ```zenscript
-mods.naturesaura.Offering.removeRecipe(IItemStack output)
+mods.naturesaura.AnimalSpawnermods.naturesaura.Offering.removeRecipe(IItemStack output)
 ```

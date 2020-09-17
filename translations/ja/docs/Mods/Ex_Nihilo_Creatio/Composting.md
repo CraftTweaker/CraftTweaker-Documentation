@@ -1,28 +1,28 @@
-# Composting
+# コンポスト化
 
-## Package
+## パッケージ
 ```zenscript
 mods.exnihilocreatio.Compost
 ```
 
-## Methods
+## メソッド
 
-- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input** The input.
-- **Float chance** The chance should be between 0-1.
-- **String color** The color is hex.
-- **[IItemStack](/Vanilla/Items/IItemStack/) output** The result of the recipe.
+- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input** 入力。
+- **浮動小数点数** 確率は0-1の間でなければなりません。
+- **文字列の色** 色は hex.
+- **[IItemStack](/Vanilla/Items/IItemStack/) 出力** レシピの結果。
 
-## Addition
+## 加算
 
-Does not take arrays in for IIngredient.
+IIngredientの配列は取らない。
 
 ```zenscript
-mods.exnihilocreatio.Compost.addRecipe(IIngredient, Float chance, String color, IItemStack);
+mods.exnihilocreatio.Compost.addRecipe(IIngredient, Float偶然, String color, IItemStack);
 
 mods.exnihilocreatio.Compost.addRecipe(<ore:woodPlank>, 0.25, "63452D", <minecraft:log>);
 ```
 
-## Removal
+## 削除
 
 ```zenscript
 Compost.removeAll();

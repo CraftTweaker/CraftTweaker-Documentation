@@ -1,21 +1,21 @@
-# Insolator
+# Soldado
 
-## Package
+## Paquete
 
 `mods.thermalexpansion.Insolator`
 
-## Addition
+## Adicional
 
 ```zenscript
-//mods.thermalexpansion.Insolator.addRecipe(IItemStack primaryOutput, IItemStack primaryInput, IItemStack secondaryInput, int energy, @Optional IItemStack secondaryOutput, @Optional int secondaryChance);
+//mods.thermalexpansion.Insolator.addRecipe(ItemStack primaryOutput, ItemStack primaryInput, ItemStack secondaryInput, int energy, @Optional ItemStack secondaryOutput, @Optional ItemStack secondaryChance);
 
-mods.thermalexpansion.Insolator.addRecipe(<minecraft:diamond>, <minecraft:stick>, <minecraft:iron_ore>, 1500, <minecraft:stone>, 20);
+mods. hermalexpansion.Insolator.addRecipe(<minecraft:diamond>, <minecraft:stick>, <minecraft:iron_ore>, 1500, <minecraft:stone>, 20);
 ```
 
-## Removal
+## Eliminar
 
 ```zenscript
-//mods.thermalexpansion.Insolator.removeRecipe(IItemStack primaryInput, IItemStack secondaryInput);
+//mods.thermalexpansion.Insolator.removeRecipe(ItemStack primaryInput, ItemStack secondaryInput);
 
 mods.thermalexpansion.Insolator.removeRecipe(<minecraft:melon_seeds>, <thermalfoundation:fertilizer:1>);
 ```

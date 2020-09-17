@@ -1,17 +1,17 @@
-# BlockBreakEvent
+# BreakEvent blockieren
 
-The BlockBreak Event is fired whenever a block is being broken.  
-You can cancel the event to prevent the block from being broken.
+Das BlockBreak Event wird abgefeuert, wenn ein Block gebrochen wird.  
+Du kannst das Ereignis abbrechen, um zu verhindern, dass der Block unterbrochen wird.
 
 ## Event-Klasse
 
-You will need to cast the event in the function header as this class:  
-`crafttweaker.event.BlockBreakEvent`  
-You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
+Du musst das Ereignis als diese Klasse in den Funktionskopf verschieben:  
+`crafttweaker.event. lockBreakEvent`  
+Sie können natürlich auch [die Klasse vor](/AdvancedFunctions/Import/) importieren und dann diesen Namen verwenden.
 
 ## Erweiterte Event-Schnittellen
 
-BlockBreak Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+BlockBreak Events implementieren die folgenden Schnittstellen und können auch alle ihre Methoden/Getters/Setter aufrufen:
 
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 - [IBlockEvent](/Vanilla/Events/Events/IBlockEvent/)
@@ -20,8 +20,8 @@ BlockBreak Events implement the following interfaces and are able to call all of
 
 Die folgenden Informationen lassen sich von diesem Event (Ereignis) abrufen:
 
-| ZenGetter    | ZenSetter    | Type                                 |
-| ------------ | ------------ | ------------------------------------ |
-| `player`     |              | [IPlayer](/Vanilla/Players/IPlayer/) |
-| `isPlayer`   |              | bool                                 |
-| `experience` | `experience` | int                                  |
+| ZenGetter   | ZenSetter   | Type                                 |
+| ----------- | ----------- | ------------------------------------ |
+| `player`    |             | [IPlayer](/Vanilla/Players/IPlayer/) |
+| `isPlayer`  |             | bool                                 |
+| `erfahrung` | `erfahrung` | int                                  |

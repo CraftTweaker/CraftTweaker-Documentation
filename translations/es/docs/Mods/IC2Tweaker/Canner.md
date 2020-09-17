@@ -1,27 +1,27 @@
 # Canner
 
-## Package
+## Paquete
 
-`import mods.ic2.Canner;`
+`importar mods.ic2.Canner;`
 
-## Methods
+## Métodos
 
-- **[IItemStack](/Vanilla/Items/IItemStack/) output** The product
-- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) container** The ingredient to be "filled"
-- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) filler** The ingredient with which is filled into the container
+- **[ItemStack](/Vanilla/Items/IItemStack/) salida** El producto
+- **[Contenedor](/Vanilla/Variable_Types/IIngredient/) IIngrediente** El ingrediente a ser "llenado"
+- **[rellenador](/Vanilla/Variable_Types/IIngredient/) IIngrediente** El ingrediente con el que se llena en el contenedor
 
-## Add Bottle Recipe
+## Añadir Receta de Botella
 
 ```zenscript
-mods.ic2.Canner.addBottleRecipe(IItemStack output, IIngredient container, IIngredient filler);
+mods.ic2.Canner.addBottleRecipe(Salida ItemStack, contenedor IIngrediente, relleno IIngredient);
 
 mods.ic2.Canner.addBottleRecipe(<minecraft:water_bucket>, <minecraft:bucket>, <minecraft:ice>);
 ```
 
-## Add Enrich Recipe
+## Añadir receta enriquecida
 
 ```zenscript
-mods.ic2.Canner.addEnrichRecipe(ILiquidStack output, ILiquidStack input, IIngredient additive);
+mods.ic2.Canner.addEnrichRecipe(salida ILiquidStack, entrada ILiquidStack, aditiva IIngredient);
 
 mods.ic2.Canner.addEnrichRecipe(<liquid:lava> * 1000, <liquid:water> * 1000, <minecraft:redstone>);
 ```

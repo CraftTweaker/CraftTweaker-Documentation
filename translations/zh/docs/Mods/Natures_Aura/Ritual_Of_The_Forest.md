@@ -1,25 +1,25 @@
-# Ritual of the Forest
+# 森林仪式：
 
 ## 所属包名
 ```zenscript
-mods.naturesaura.TreeRitual
+naturesaura。TreeRitual
 ```
 
 ## 使用方式
-- **String Name**
-- **[IIngredient](/Vanilla/Variable_Types/IIngredient) saplingType** The item representation of the sapling that needs to be placed and grown into a tree
-- **[IItemStack](/Vanilla/Items/IItemStack) output** The rituals result
-- **init time** The time the process takes in ticks
-- **[IIngredient[]](/Vanilla/Variable_Types/IIngredient) items** The required items for the ritual
+- **字符串名称**
+- **[IIngredient](/Vanilla/Variable_Types/IIngredient) 锯齿类型** 需要放置和生长为树木的树苗的项目代表
+- **[IItemStack](/Vanilla/Items/IItemStack) 输出** 仪式结果
+- **入场时间** 进程花费在刻录中的时间
+- **[IIngredient[](/Vanilla/Variable_Types/IIngredient) 项目** 仪式所需的项目
 
 ## 添加配方
 
 ```zenscript
-mods.naturesaura.TreeRitual.addRecipe(String name, IIngredient saplingType, IItemStack output, int time, IIngredient[] items)
+naturesaura。TreeRitual.addRecipe(名称, IIngredient saplingType, IItemStack 输出, int time, IIngredient[…]项目)
 ```
 
-## Removal
+## 移除
 
 ```zenscript
-mods.naturesaura.TreeRitual.removeRecipe(IItemStack output)
+naturesaura。TreeRitual.removeRecipe(IItemStack output)
 ```

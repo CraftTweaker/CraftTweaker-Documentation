@@ -1,118 +1,118 @@
-# Furnace
+# かまど
 
 CraftTweaker allows you to `Add` and `Remove` Furnace recipes and change the fuel value of items.
 
-## Recipes
+## レシピ
 
-### Removal
+### 削除
 
-There are 2 ways to remove Furnace recipes, being:
+かまどのレシピを削除するには2つの方法があります。
 
 ```zenscript
-furnace.remove(IIngredient output)
+furnace.remove(IIngredient出力)
 ```
 
-And
+そして、
 
 ```zenscript
-furnace.remove(IIngredient output, IIngredient input);
+furnace.remove(IIngredient出力, IIngredient入力);
 ```
 
 The first syntax is more flexible with the recipes that are removed and will remove all Furnace recipes that output the `output` given.  
 The second syntax is more strict with the recipes that are removed and will remove all Furnace recipes that output the `output` given and has an input of `input`.
 
-There also is a third way of removing furnace recipes, though this one will remove ALL furnace recipes registered in the game.
+これはゲームに登録されているすべての炉のレシピを削除しますが、炉のレシピを削除する3番目の方法もあります。
 
 ```zenscript
 furnace.removeAll();
 ```
 
-### Addition
+### 加算
 
-There are 2 commands for adding furnace recipes:
+炉のレシピを追加するには2つのコマンドがあります。
 
 ```zenscript
 furnace.addRecipe(IItemStack output, IIngredient input);
 ```
 
-And
+そして、
 
 ```zenscript
-furnace.addRecipe(IItemStack output, IIngredient input, double xp);
+furnace.addRecipe(IItemStack 出力, IIngredient input, double xp);
 ```
 
-The first syntax will add a Furnace recipe that will give 0 xp on smelt.
+最初の構文は、製錬時に0xpを与えるかまどのレシピを追加します。
 
-The second syntax will add a Furnace recipe that will give `xp` xp on smelt.
+2つ目の構文は、精錬時に `xp` のxpを与えるかまどのレシピを追加します。
 
-## Fuel
+## 燃料
 
-### Set
+### 設定
 
-The command for setting fuel values is:
+燃料値を設定するためのコマンドは次のとおりです。
 
 ```zenscript
 furnace.setFuel(IIngredient input, int burnTime);
 ```
 
-This will set the burn value of `input` to `burnTime` in ticks. Minecraft coal burns for 1600 ticks, 80 seconds, 8 items. 1 item in a minecraft furnace takes 200 ticks to complete.
+これは `入力` の書き込み値を `burnTime` にティック単位で設定します。 1600ティック、80秒、8つのアイテムのためのMinecraftの石炭燃焼。 Minecraft炉の中の1つのアイテムは200ティックで完成します。
 
-Setting the `burnTime` to `0` will stop the `input` from being a fuel item.
+`burnTime` を `0` に設定すると、 `入力` が燃料項目であることを停止します。
 
-### Get
+### 取得
 
-The command for retrieving an item's fuel value is:
+アイテムの燃料値を取得するコマンドは次のとおりです。
 
 ```zenscript
 furnace.getFuel(IItemStack item); 
 ```
 
-This will return the burn value as an Integer
+書き込み値を整数として返します
 
-## Examples
+## 使用例
 
-### Removal
+### 削除
 
-This will remove all Furnace recipes that outputs `<minecraft:glass>`.
+`<minecraft:glass>` を出力するすべてのかまどレシピが削除されます。
 
 ```zenscript
 furnace.remove(<minecraft:glass>);
 ```
 
-This will remove all Furnace recipes `<minecraft:quartz>` that use `<minecraft:quartz_ore>` as an input.
+`<minecraft:quartz>` `<minecraft:quartz_ore>` を入力として使用するすべてのかまどレシピを削除します。
 
 ```zenscript
 furnace.remove(<minecraft:quartz>, <minecraft:quartz_ore>);
 ```
 
-### Addition
+### 加算
 
-This will add a Furnace recipe that will output a `<minecraft:golden_apple>` when a `<minecraft:apple>` is smelted.
+`<minecraft:golden_apple>` `<minecraft:apple>` が精錬されたときに出力されるかまどのレシピが追加されます。
 
 ```zenscript
 furnace.addRecipe(<minecraft:golden_apple>, <minecraft:apple>);
 ```
 
-This will add a Furnace recipe that will output a `<minecraft:speckled_melon>` when a `<minecraft:melon>` is smelted and will give the player 1500 xp points.
+`<minecraft:speckled_melon>` `<minecraft:melon>` が精錬されると出力されるかまどのレシピが追加され、プレイヤーに1500xpポイントが与えられます。
 
 ```zenscript
 furnace.addRecipe(<minecraft:speckled_melon>, <minecraft:melon>, 1500);
 ```
 
-### Fuel
+### 燃料
 
-This will set the Fuel value of `<minecraft:rotten_flesh>` to `100`.
+`<minecraft:rotten_flesh>` の燃料値を `100` に設定します。
 
 ```zenscript
 furnace.setFuel(<minecraft:rotten_flesh>, 100);
 ```
 
-## Other Functionality
+## その他の機能
 
-### Getting all registered Furnace Recipes
+### 登録済みのかまどレシピをすべて入手する
 
 ```zenscript
 furnace.all;
 ```
 
-Returns a [`List<IFurnaceRecipe>`](/Vanilla/Recipes/Furnace/IFurnaceRecipe/).
+[`List<IFurnaceRecipe>`](/Vanilla/Recipes/Furnace/IFurnaceRecipe/) を返します。

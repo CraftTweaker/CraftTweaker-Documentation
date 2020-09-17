@@ -1,16 +1,16 @@
-# Ingot Former
+# Слиток Превышен
 
-## Importing the Package
+## Импортирование пакета
 `mods.nuclearcraft.IngotFormer`
 
-## Adding Recipes
+## Добавление рецептов
 ```zenscript
 mods.nuclearcraft.IngotFormer.addRecipe(ILiquidStack fluidInput, IIngredient itemOutput, @Optional double timeMultiplier, @Optional double powerMultiplier, @Optional double processRadiation);
 ```
 
-## Removing Recipes
+## Удаление рецептов
 ```zenscript
 mods.nuclearcraft.IngotFormer.removeRecipeWithInput(ILiquidStack fluidInput);
-mods.nuclearcraft.IngotFormer.removeRecipeWithOutput(IIngredient itemOutput);
+mods.nuclearcraft.IngotFormer.removeRecipeWithOutput(IIngredient itemput);
 mods.nuclearcraft.IngotFormer.removeAllRecipes();
 ```

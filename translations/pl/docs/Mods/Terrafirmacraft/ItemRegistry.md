@@ -1,48 +1,48 @@
-# Item Registry
+# Rejestr przedmiotów
 
-## Package
+## Pakiet
 ```zenscript
-// Imports ItemRegistry methods into your script
-import mods.terrafirmacraft.ItemRegistry;
+// Importuje metody ItemRejestry do twojego skryptu
+importuje mods.terrafirmacraft.Rejestr produktów;
 ```
 
-## Register Item Size
-- Register item size and weight. This changes how much a stack can hold.
-- Sizes [TINY, VERY_SMALL, SMALL, NORMAL, LARGE, VERY_LARGE , HUGE]
-- Weights [VERY_LIGHT, LIGHT, MEDIUM, HEAVY, VERY_HEAVY]
+## Zarejestruj rozmiar elementu
+- Zarejestruj rozmiar i wagę pozycji. Zmienia to ile stos może zatrzymać.
+- Rozmiary [TINY, VERY_SMALL, SMALL, NORMAL, LARGE, VERY_LARGE , HUGE]
+- Wagi [VERY_LIGHT, ŚWIATŁO, ŚWIATŁO, HEAVY, VERY_HEAVY]
 ```zenscript
-ItemRegistry.registerItemSize(IIngredient input, String size, String weight);
+ItemRegistry.registerItemSize(IIngredient Input, String, Waga ciągu);
 ```
 
-## Register Item Heat
-- Register item heat capability and if this item is forgeable (eg: can be used in anvil).
-- Heat capacity determines how fast an item cools down/heat up. Wrought Iron is 0.35.
-- Melt temperature is at which temperature the item is melt. Wrought Iron is 1535 Brilliant White while Bronze is 950 Orange. For a complete reference, check [Heating Temperatures](/Mods/Terrafirmacraft/HeatingTemperatures)
+## Zarejestruj ciepło
+- Zarejestruj ciepło i jeśli ten przedmiot jest forgeable (np. może być użyty w anvil).
+- Moc cieplna określa, jak szybko produkt schładza się na dół/ciepło. Wyposażone żelazo wynosi 0,35.
+- Temperatura topnienia to temperatura, w której produkt jest stopiony. Wyposażone żelazo ma 1535 brylantów białych, podczas gdy Brąz ma 950 Pomarańczy. Aby uzyskać pełne odniesienie, sprawdź [Temperatury ogrzewania](/Mods/Terrafirmacraft/HeatingTemperatures)
 ```zenscript
-ItemRegistry.registerItemHeat(IIngredient input, float heatCapacity, float meltTemp, bool forgeable);
+ItemRegistry.registerItemHeat(IIngredient Input (wkład, pływająca pojemność grzewcza, float meltTemp, forgeable);
 ```
 
-## Register Item Metal
-- Register item as a metal item. Note that this automatically adds heating and forging capability. If canMelt is false this item won't bear the output directly (like iron ore needs bloomery/blast furnace)
-- Registered metal ingot items aren't automatically registered as a valid input for tools (eg: Steel ingot from other mods registered by registerMetalItem method won't be automatically workable to TFC steel pickaxe head)
+## Zarejestruj Metal Produktu
+- Zarejestruj pozycję jako element metalowy. Pamiętaj, że automatycznie dodaje możliwość ogrzewania i wykuwania. Jeśli canMelt jest false ten przedmiot nie będzie miał bezpośrednio wyjścia (jak ruda żelaza potrzebuje kwitnienia/wielkich pieców)
+- Zarejestrowane metalowe elementy nie są automatycznie rejestrowane jako prawidłowe dane wejściowe dla narzędzi (np. sztaby stalowe z innych modów zarejestrowanych przez registerMetalItem metoda nie będzie automatycznie działała dla stalowej głowicy kilofów)
 ```zenscript
-ItemRegistry.registerItemMetal(IIngredient input, String metal, int units, bool canMelt);
+»ItemRegistry.registerItemMetal« (Input input, String metal, int units, bool canMelt);
 ```
 
-## Register Food
-- Register item food stats (Does not work on TFC Foods), This takes priority over existing values. Setting Decay to 0 stops decay from happening.
+## Zarejestruj żywność
+- Zarejestruj dane statystyczne dotyczące żywności (Does nie działa na TFC Foods), co ma pierwszeństwo przed istniejącymi wartościami. Ustawienie rozkładu na 0 zapobiega rozkładowi.
 ```zenscript
-ItemRegistry.registerFood(IIngredient input, int hunger, float water, float saturation, float decay, float grain, float veg, float fruit, float meat, float dairy);
+»ItemRegistry.registerFood(Input input (Ingredient Input, int faster, float water, float saturation, float decay, float Ziarno float, float veg, float fruit, float meat i float dairy«);
 ```
 
-## Register Armor
-- Register armor stats
+## Zarejestruj zbroję
+- Zarejestruj statystyki zbroi
 ```zenscript
-ItemRegistry.registerArmor(IIngredient input, float crushingModifier, float piercingModifier, float slashingModifier);
+ItemRegistry.registerArmor(IIngredient enting, float crushingModifier, float piercingModifier, float slashingModifier);
 ```
 
-## Register Fuel
-- Register item as a fuel for fire pit, forge or bloomery
+## Zarejestruj paliwo
+- Zarejestruj przedmiot jako paliwo do strumienia, wykuwania lub kwitnienia
 ```zenscript
-ItemRegistry.registerFuel(IItemStack itemStack, int burnTicks, float temperature, bool forgeFuel, bool bloomeryFuel);
+ItemRegistry.registerFuel(IItemStack itemStack, int burnTicks, temperatura pływaka, forgeFuel bool, bloomeryFuel);
 ```

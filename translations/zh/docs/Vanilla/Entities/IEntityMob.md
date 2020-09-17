@@ -4,22 +4,22 @@ A Mod.
 
 ## 导入相关包
 
-It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
-`import crafttweaker.entity.IEntityMob;`
+如果您遇到任何问题，可能需要导入软件包(例如铸造一个 [数组](/AdvancedFunctions/Arrays_and_Loops/)), 这样比抱歉更安全并添加导入。  
+`导入craftweaker.entity. EntityMob;`
 
-## Extending [IEntityCreature](/Vanilla/Entities/IEntityCreature/)
+## 扩展 [IEntityCreathure](/Vanilla/Entities/IEntityCreature/)
 
-IEntityMob extends [IEntityCreature](/Vanilla/Entities/IEntityCreature/). That means all functions available to [IEntityCreature](/Vanilla/Entities/IEntityCreature/) objects also are available to IEntityMob.
+IEntityMob extends [IEntityCreature](/Vanilla/Entities/IEntityCreature/). 这意味着 [IEntityCreathure](/Vanilla/Entities/IEntityCreature/) 对象的所有可用函数也可供IEntityMob使用。
 
-## Methods
+## 方法
 
 ### ZenMethods
 
-#### Check if the mob is preventing a player's sleep
+#### 检查生物是否阻止玩家睡眠
 
-The Method requires an [IPlayer](/Vanilla/Players/IPlayer/) object.  
-Returns a bool.
+该方法需要 [IPlayer](/Vanilla/Players/IPlayer/) 对象。  
+返回一个布尔值。
 
 ```zenscript
-entMobObj.isPreventingPlayerRest(IPlayer player);
+entMobObj.isPreventingPlayerRest(IPlayer player玩家)；
 ```

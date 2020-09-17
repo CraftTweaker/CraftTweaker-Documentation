@@ -1,27 +1,27 @@
-# BlockBreakEvent
+# Evento BlockBreaks
 
-The BlockBreak Event is fired whenever a block is being broken.  
-You can cancel the event to prevent the block from being broken.
+El evento BlockBreak se dispara cada vez que un bloque está siendo roto.  
+Puedes cancelar el evento para evitar que el bloque se rompe.
 
-## Event Class
+## Clase de evento
 
-You will need to cast the event in the function header as this class:  
-`crafttweaker.event.BlockBreakEvent`  
-You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
+Necesitarás lanzar el evento en la cabecera de la función como esta clase:  
+`crafttweaker.event. lockBreakEvent`  
+Por supuesto, también puede [importar](/AdvancedFunctions/Import/) la clase antes y usar ese nombre.
 
-## Event interface extensions
+## Extensiones de la interfaz de eventos
 
-BlockBreak Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+BlockBreak Events implementa las siguientes interfaces y son capaces de llamar a todos sus métodos/getters/setters también:
 
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
-- [IBlockEvent](/Vanilla/Events/Events/IBlockEvent/)
+- [Evento IBlock](/Vanilla/Events/Events/IBlockEvent/)
 
 ## ZenGetters
 
-The following information can be retrieved from the event:
+La siguiente información puede ser recuperada del evento:
 
-| ZenGetter    | ZenSetter    | Type                                 |
-| ------------ | ------------ | ------------------------------------ |
-| `player`     |              | [IPlayer](/Vanilla/Players/IPlayer/) |
-| `isPlayer`   |              | bool                                 |
-| `experience` | `experience` | int                                  |
+| ZenGetter     | Ajuste        | Tipo                                 |
+| ------------- | ------------- | ------------------------------------ |
+| `jugador`     |               | [IPlayer](/Vanilla/Players/IPlayer/) |
+| `es Jugador`  |               | pluma                                |
+| `experiencia` | `experiencia` | int                                  |

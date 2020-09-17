@@ -1,12 +1,12 @@
-# Laser Drill
+# Лазерный бур
 
-### Importing
+### Импорт
 
 ```zenscript
-import mods.industrialforegoing.LaserDrill;
+• импорт mods.industrialforegoing.LaserDrill;
 ```
 
-### Adding
+### Добавление
 
 ```zenscript
 LaserDrill.add(int itemLensMetaColor, IItemStack output, int ItemWeight);
@@ -14,10 +14,10 @@ LaserDrill.add(int itemLensMetaColor, IItemStack output, int ItemWeight);
 LaserDrill.add(1, <minecraft:stone>, 10);
 ```
 
-### Removing
+### Удаление
 
 ```zenscript
-LaserDrill.remove(IItemStack output);
+LaserDrill.remove(выход IItemStack);
 
 LaserDrill.remove(<minecraft:stone>);
 ```

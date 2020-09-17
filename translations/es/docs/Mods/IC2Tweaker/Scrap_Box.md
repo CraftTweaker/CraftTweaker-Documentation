@@ -1,15 +1,15 @@
-# Scrap Box
+# Raspar caja
 
-## Package
+## Paquete
 
-`import mods.ic2.ScrapBox;`
+`importar mods.ic2.ScrapBox;`
 
-## Methods
+## Métodos
 
-- **[WeightedItemStack](/Vanilla/Items/WeightedItemStack/) weightedItem** The new entry of scrap box drop pool. Percentage weight will be divided by 100.
-- **float weight** The weight of this new entry
+- **[WeightedItemStack](/Vanilla/Items/WeightedItemStack/) weightedItem** La nueva entrada del grupo de soltar caja de basura. El peso porcentual se dividirá entre 100.
+- **peso decimal** El peso de esta nueva entrada
 
-### Add Drop (WeightedItemStack)
+### Añadir soltar (PesadodeItemStack)
 
 ```zenscript
 mods.ic2.ScrapBox.addDrop(WeightedItemStack weightedItem);
@@ -18,14 +18,14 @@ mods.ic2.ScrapBox.addDrop(<minecraft:diamond_ore>.weight(0.1));
 mods.ic2.ScrapBox.addDrop(<minecraft:diamond_ore> % 10);
 ```
 
-### Add Drop (IItemStack, float)
+### Añadir soltar (ItemStack, flotante)
 
 ```zenscript
-mods.ic2.ScrapBox.addDrop(IItemStack item, float weight);
+mods.ic2.ScrapBox.addDrop(elemento IItemStack, peso flotante);
 mods.ic2.ScrapBox.addDrop(<minecraft:diamond_ore>, 0.1F);
 ```
 
-## Removal
+## Eliminar
 
-- If IC2 Classic Tweaker is installed and Ic2 Classic is being used instead of Ic2 Experimental, scrap box drops can be removed. See [here](/Mods/IC2ClassicTweaker/Scrap_Box) for doc.
-- If using Ic2 Experimental, then removal is not possible.
+- Si se instala IC2 Classic Tweaker y se utiliza Ic2 Classic en lugar de Ic2 Experimental, se pueden eliminar las gotas de la caja de desguace. Ver [aquí](/Mods/IC2ClassicTweaker/Scrap_Box) para documentación.
+- Si se utiliza Ic2 Experimental, entonces la eliminación no es posible.

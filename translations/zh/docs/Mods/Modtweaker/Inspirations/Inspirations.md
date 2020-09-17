@@ -1,5 +1,5 @@
-# Inspirations
+# 灵感的
 
-The Inspirations Package is used solely for altering the Inspirations extended Cauldron.
+灵感包仅用于改变扩展Cauldron的灵感。
 
-All recipes are added using the [cauldron](/Mods/Modtweaker/Inspirations/Handlers/Cauldron) handler.
+所有配方都会使用 [蛋糕龙](/Mods/Modtweaker/Inspirations/Handlers/Cauldron) 处理器添加。

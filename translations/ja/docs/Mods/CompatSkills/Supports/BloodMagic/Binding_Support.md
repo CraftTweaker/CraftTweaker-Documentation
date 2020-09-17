@@ -1,30 +1,30 @@
-# Binding Support
+# バインディングのサポート
 
-## Binding:
+## バインディング:
 
-This will cancel Item Binding for said specific item if the player doesn't meet the requirements.
+プレイヤーが条件を満たしていない場合、アイテムバインドはキャンセルされます。
 
-### Pre-1.4.0:
+### 1.4.0より前:
 
-#### Syntax:
+#### 構文
 
-    Blank Example:
-    mods.compatskills.BindHandler.addBindLock(String failureMessage, IItemStack stack, String... requirements);
+    空白の例:
+    mods.compatskills.BindHandler.addBindLock(失敗メッセージの文字列、IItemStack スタック、文字列... requirements);
     
-    Test Example:
-    mods.compatskills.BindHandler.addBindLock("Untold Dark Energies swirl around you and then subside", <bloodmagic:blood_orb>.withTag({orb: "bloodmagic:weak"}), "reskillable:building|15", "reskillable:magic|7", "stage|test", "adv|minec
+    テスト例:
+    mods.compatskills.BindHandler.addBindLock("隠されていないダークエネルギーの渦巻きをあなたの周りとその下に置く", <bloodmagic:blood_orb>.withTag({orb: "bloodmagic:weak"}), "reskillable:building|15", "reskillable:magic|7", "stage|test", "adv|minec
     
 
 ### Post-1.4.0
 
-As of CompatSkills 1.4.0 the binding locking has now been rolled in as a part of ItemStack-Locking. This means there is no longer a dedicated script syntax for adding a binding lock to an item.
+CompatSkills 1.4.0の時点で、ItemStack-Lockingの一部としてバインドロックが導入されました。 つまり、バインディングロックをアイテムに追加するための専用のスクリプト構文がなくなりました。
 
-This change has also come with a few other changes. For example the default error message displayed has been changed in some regards:
+この変更はまた、いくつかの他の変更が付属しています。 例えば、表示されるデフォルトのエラーメッセージはいくつかの点で変更されています:
 
-- It now displays alongside requirements in the chat as a player-only status message
-- The error message is now a Localizable string: 
+- チャットに要件とともにプレイヤー専用のステータス・メッセージとして表示されるようになりました
+- エラーメッセージがローカライズ可能な文字列になりました: 
 
-    compatskills.bloodmagic.bindingError=Untold Dark Energies swirl around you and then subside
+    compatskills.bloodmagic.bindingError=Untarded Dark Energysの渦を回り、その後、下へ
     
 
-This means that resource pack authors can now localize the error message into whatever language they want. This also means you can use mods like ResourceLoader or Base (With ContentTweaker present) to change the error string.
+つまり、リソースパックの作成者は、エラーメッセージを任意の言語にローカライズできるようになりました。 これは、ResourceLoader や Base (ContentTweaker と共に) のような Mod を使用してエラー文字列を変更することもできます。

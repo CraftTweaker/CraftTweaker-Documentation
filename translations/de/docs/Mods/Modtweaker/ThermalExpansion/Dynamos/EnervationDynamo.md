@@ -1,21 +1,21 @@
-# Enervation Dynamo
+# Energetische Dynamik
 
 ## Dieses Paket importieren
 
 To shorten method calls you can [import](/AdvancedFunctions/Import/) the package like so:
 
 ```zenscript
-import mods.thermalexpansion.EnervationDynamo;
+importieren mods.thermalexpansion.EnervationDynamo;
 ```
 
-## Add Fuel
+## Brennstoff hinzufügen
 
 ```zenscript
 //mods.thermalexpansion.EnervationDynamo.addFuel(ILiquidStack stack, int energy);
 mods.thermalexpansion.EnervationDynamo.addFuel(<liquid:water>, 13);
 ```
 
-## Remove Fuel
+## Treibstoff entfernen
 
 ```zenscript
 //mods.thermalexpansion.EnervationDynamo.removeFuel(ILiquidStack stack);

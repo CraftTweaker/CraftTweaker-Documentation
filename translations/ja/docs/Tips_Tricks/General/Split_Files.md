@@ -1,24 +1,24 @@
-# Split your scripts into multiple files
+# スクリプトを複数のファイルに分割します
 
-It is a good idea to split your script into multiple files
+スクリプトを複数のファイルに分割することをお勧めします
 
 ## 問題
 
-- When writing scripts for bigger modpacks, your script might soon become pretty long and confusing.
-- Debugging a long script might take really long, especially if you have an error that doesn't point out a specific line in your script.
+- より大きなmodpackのためのスクリプトを書くとき、あなたのスクリプトはすぐにかなり長く、混乱するかもしれません。
+- 長いスクリプトのデバッグには、特に特定の行を指していないエラーがある場合は、非常に長い時間がかかることがあります。
 
-## What we know/need to know
+## 私たちが知っていること/知る必要があること
 
-- CraftTweaker can load files from multiple script files.
-- CraftTweaker can even load files in subfolders.
-- Also, CraftTweaker can load .zip files that contain .zs scripts inside them, as long as the .zip file is not password protected.
+- CraftTweakerは複数のスクリプトファイルからファイルを読み込むことができます。
+- CraftTweakerはサブフォルダにファイルを読み込むこともできます。
+- また、.zipファイルがパスワードで保護されていない限り、CraftTweakerは.zsスクリプトを含む.zsファイルを読み込むことができます。
 
-## Solution
+## 対応
 
-- Split your large scripts into multiple smaller ones.
-- You could for example create one script for each mod, or each mod handler.
+- 大きなスクリプトを複数の小さいスクリプトに分割します。
+- 例えば、modまたは各modハンドラに対して1つのスクリプトを作成することができます。
 
-## Example
+## 例
 
 ```zenscript
 scripts
@@ -26,7 +26,7 @@ scripts
         Compactor.zs
         Crucible.zs
     Vanilla
-        Recipes
+        レシピ
             Remove.zs
             Shaped.zs
             Shapeless.zs
@@ -34,13 +34,13 @@ scripts
     oreDict.zs
 ```
 
-## Advantages
+## 利点
 
-- Your script files become easier to debug.
-- An error won't stop your whole script from working but instead only a small part of it.
-- People checking your script files can easier orient themselves
+- スクリプトファイルのデバッグが簡単になります。
+- エラーが発生した場合、スクリプト全体が動作するのを止めることはなく、その代わりに、スクリプトのほんの一部だけが動作します。
+- スクリプトファイルをチェックしている人は、自分自身をより簡単に向けることができます。
 
-## Disadvantages
+## 欠点
 
-- You need to be careful with the loading order of the scripts (especially if one script removes a recipe and another one adds it). Check the [Priority Preprocessor](/AdvancedFunctions/Preprocessors/PriorityPreprocessor/) if your script loading order is a problem
-- There are many ways to categorize your scripts after and yours may be confusing for outsiders.
+- スクリプトの読み込み順に注意する必要があります(特に1つのスクリプトがレシピを削除し、別のスクリプトが追加された場合)。 スクリプトの読み込み順序に問題がある場合は、 [優先プリプロセッサ](/AdvancedFunctions/Preprocessors/PriorityPreprocessor/) を確認してください。
+- スクリプトを後に分類する方法はたくさんありますが、外部者にとっては混乱している可能性があります。

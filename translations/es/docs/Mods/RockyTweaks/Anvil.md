@@ -1,36 +1,36 @@
-# Anvil
+# Yunque
 
-## Package
+## Paquete
 
-`mods.rockytweaks.Anvil`
+`mods.rockytweaks.Yunque`
 
-## Addition
+## Adicional
 
-### Single
+### Único
 
-Creates individual anvil recipes that a displayed separately in JEI.
+Crea recetas individuales de yunque que se muestran por separado en JEI.
 
 ```zenscript
-// addRecipe(IItemstack input1, IItemstack input2, IItemstack output, int exp-cost);
+// addRecipe(Itemstack input1, Itemstack input2, Itemstack output, int exp-cost);
 mods.rockytweaks.Anvil.addRecipe(<minecraft:book>, <minecraft:quartz> * 8, <minecraft:enchanted_book>.withTag({StoredEnchantments: [{lvl: 1 as short, id: 16 as short}]}), 5);
 ```
 
-### Recipe Set
+### Conjunto de recetas
 
-Creates multiple anvil recipes that JEI cycles through the possible options.
+Crea múltiples recetas de yunque que JEI cicla a través de las opciones posibles.
 
 ```zenscript
-// addRecipe(IItemstack input1, IItemstack[] input2, IItemstack[] output, int[] exp-cost);
-mods.rockytweaks.Anvil.addRecipe(<minecraft:book>,
+// addRecipe(Itemstack input1, Itemstack[] input2, Itemstack[] salida, int[] exp-cost);
+mods.rockytweaks.Yvil. ddReceta(<minecraft:book>,
   [
     <minecraft:quartz> * 8,
     <minecraft:quartz> * 16,
     <minecraft:quartz> * 32
   ],
   [
-    <minecraft:enchanted_book>.withTag({StoredEnchantments: [{lvl: 1 as short, id: 16 as short}]}),
+    <minecraft:enchanted_book>. ithTag({StoredEnchantments: [{lvl: 1 as short, id: 16 as short}]}),
     <minecraft:enchanted_book>.withTag({StoredEnchantments: [{lvl: 2 as short, id: 16 as short}]}),
-    <minecraft:enchanted_book>.withTag({StoredEnchantments: [{lvl: 3 as short, id: 16 as short}]})
+    <minecraft:enchanted_book>. ithTag({StoredEnchantments: [{lvl: 3 as short, id: 16 as short}]})
   ],
   [
     5,
@@ -40,20 +40,20 @@ mods.rockytweaks.Anvil.addRecipe(<minecraft:book>,
 );
 ```
 
-## Removal
+## Eliminar
 
-The anvil does not use recipes in the normal sense but you are still able to remove/blacklist specific inputs or outputs.
+El yunque no utiliza recetas en el sentido normal, pero todavía puede eliminar/negar entradas o salidas específicas.
 
 ```zenscript
-// remove(IIngredient[] inputs)
+// remove(IIngredient[] entradas)
 // remove(IIngredient output) - Remove an output
 
 // Blacklist Mending Enchant (input)
-Anvil.remove([<minecraft:enchanted_book>.withTag({StoredEnchantments: [{lvl: 1 as short, id: 70 as short}]})]);
+Yvil. emove([<minecraft:enchanted_book>.withTag({StoredEnchantments: [{lvl: 1 as short, id: 70 as short}]})]);
 
-// Blacklist Sharpness V on a Diamond Sword (inputs)
-mods.rockytweaks.Anvil.remove([<minecraft:diamond_sword>, <minecraft:enchanted_book>.withTag({StoredEnchantments: [{lvl: 5 as short, id: 16 as short}]})]);
+// Lista negra Afiladura V en una espada de Diamante (entradas)
+mods. ockytweaks.Anvil.remove([<minecraft:diamond_sword>, <minecraft:enchanted_book>.withTag({StoredEnchantments: [{lvl: 5 as short, id: 16 as short}]})]);
 
-// Blacklist Enchanted Books (output)
+// Lista negra de libros encantados (salida)
 mods.rockytweaks.Anvil.remove(<minecraft:enchanted_book>);
 ```

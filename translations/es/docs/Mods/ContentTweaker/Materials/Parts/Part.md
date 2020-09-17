@@ -1,53 +1,53 @@
-# Part
+# Parte
 
-A Part is the form an item is in, for example a gear or an ore.
+Una parte es el formulario en el que se encuentra un objeto, por ejemplo un engranaje o un oro.
 
-## Importing the package
+## Importando el paquete
 
-It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
-`import mods.contenttweaker.Part;`
+Podría ser necesario que importes el paquete si encuentras algún problema, así que más vale estar seguro que lo sentimos y añadir la importación.  
+`importar mods.contenttweaker.Part;`
 
-## Retrieving such an object
+## Recuperando tal objeto
 
-You can either retrieve an existing Part using the [MaterialSystem](/Mods/ContentTweaker/Materials/MaterialSystem/) or create an entirely new one using the [Part Builder](/Mods/ContentTweaker/Materials/Parts/Part_Builder/)
+Puedes recuperar una pieza existente usando el [MaterialSystem](/Mods/ContentTweaker/Materials/MaterialSystem/) o crear una completamente nueva usando el [Constructor de partes](/Mods/ContentTweaker/Materials/Parts/Part_Builder/)
 
 <details>
-    <summary>Following types are pre-registered (Headlines are the <a href="../PartType">Part types</a>):</summary>
-    <h4>Items:</h4>
+    <summary>Los siguientes tipos están pre-registrados (Los encabezados son los <a href="../PartType">tipos de partes</a>):</summary>
+    <h4>Elementos:</h4>
         <ul>
-            <li>Beam<img src="../Assets/beam.png" alt="icon"></li>
-            <li>Bolt<img src="../Assets/bolt.png" alt="icon"></li>
-            <li>Casing<img src="../Assets/casing.png" alt="icon"></li>
-            <li>Clump<img src="../Assets/clump.png" alt="icon"></li>
-            <li>Crystal Crystal<img src="../Assets/crystal.png" alt="icon"></li>
-            <li>Crushed Ore (crushed_ore)<img src="../Assets/crushed_ore.png" alt="icon"></li>
-            <li>Dense Plate (dense_plate)<img src="../Assets/dense_plate.png" alt="icon"></li>
-            <li>Dirty Dust (dirty_dust)<img src="../Assets/dirty_dust.png" alt="icon"></li>
-            <li>Dust<img src="../Assets/dust.png" alt="icon"></li>
-            <li>Gear<img src="../Assets/gear.png" alt="icon"></li>
-            <li>Ingot<img src="../Assets/ingot.png" alt="icon"></li>
-            <li>Nugget<img src="../Assets/nugget.png" alt="icon"></li>
-            <li>Plate<img src="../Assets/plate.png" alt="icon"></li>
-            <li>Rod<img src="../Assets/rod.png" alt="icon"></li>
-            <li>Shard<img src="../Assets/shard.png" alt="icon"></li>
+            <li>Rayo<img src="../Assets/beam.png" alt="icono"></li>
+            <li>Rayo<img src="../Assets/bolt.png" alt="icono"></li>
+            <li>Cajero<img src="../Assets/casing.png" alt="icono"></li>
+            <li>Bomba<img src="../Assets/clump.png" alt="icono"></li>
+            <li>Cristal de Cristal<img src="../Assets/crystal.png" alt="icono"></li>
+            <li>Mineral triturado (triturado_oro)<img src="../Assets/crushed_ore.png" alt="icono"></li>
+            <li>Placa densa (plataforma_densa)<img src="../Assets/dense_plate.png" alt="icono"></li>
+            <li>Polvo sucio (sucio_polvo)<img src="../Assets/dirty_dust.png" alt="icono"></li>
+            <li>Polvo<img src="../Assets/dust.png" alt="icono"></li>
+            <li>Equipo<img src="../Assets/gear.png" alt="icono"></li>
+            <li>Ingot<img src="../Assets/ingot.png" alt="icono"></li>
+            <li>Nugget<img src="../Assets/nugget.png" alt="icono"></li>
+            <li>Placa<img src="../Assets/plate.png" alt="icono"></li>
+            <li>Barra<img src="../Assets/rod.png" alt="icono"></li>
+            <li>Fragmento<img src="../Assets/shard.png" alt="icono"></li>
         </ul>
-    <h4>Blocks:</h4>
+    <h4>Bloques:</h4>
         <ul>
-            <li>Block<img src="../Assets/block.png" alt="icon"></li>
+            <li>Bloque<img src="../Assets/block.png" alt="icono"></li>
         </ul>
     <h4>Ores:</h4>
         <ul>
-            <li>Ore</li>
-            <li>Dense Ore (dense_ore)</li>
-            <li>Poor Ore(poor_ore)</li>
+            <li>Mena</li>
+            <li>Mineral denso (dense_ore)</li>
+            <li>Peor olor (pobre_ore)</li>
         </ul>
-    <h4>Fluids:</h4>
+    <h4>Fluidos:</h4>
         <ul>
             <li>Molten</li>
         </ul><br />
     <h4>Armor:</h4>
         <ul>
-            <li>Armor <img src="../Assets/armor_head.png" alt="head icon"><img src="../Assets/armor_chest.png" alt="chest icon"><img src="../Assets/armor_legs.png" alt="legs icon"><img src="../Assets/armor_feet.png" alt="feet icon"></li>
+            <li>Armadura <img src="../Assets/armor_head.png" alt="icono de cabeza"><img src="../Assets/armor_chest.png" alt="icono del cofre"><img src="../Assets/armor_legs.png" alt="icono de piernas"><img src="../Assets/armor_feet.png" alt="icono de pies"></li>
         </ul>
     <h4>Minecart</h4>
         <ul>
@@ -55,28 +55,28 @@ You can either retrieve an existing Part using the [MaterialSystem](/Mods/Conten
         </ul>
 </details>
 
-## Fields
+## Campos
 
-You can retrieve the following information from a Part:
+Puedes recuperar la siguiente información de una Parte:
 
-| ZenMethod                 | Return Type                                                                   |
-| ------------------------- | ----------------------------------------------------------------------------- |
-| hasOverlay()              | boolean                                                                       |
-| getName()                 | string                                                                        |
-| getUnlocalizedName()      | string                                                                        |
-| getShortUnlocalizedName() | string                                                                        |
-| getPartType()             | [PartType](/Mods/ContentTweaker/Materials/Parts/PartType/)                    |
-| getPartTypeName()         | string                                                                        |
-| getOreDictPrefix()        | string                                                                        |
-| getData()                 | List<[IPartDataPiece](/Mods/ContentTweaker/Materials/Parts/PartDataPiece/)\> |
+| Método                    | Tipo de devolución                                                              |
+| ------------------------- | ------------------------------------------------------------------------------- |
+| hasOverlay()              | boolean                                                                         |
+| getName()                 | cadena                                                                          |
+| getUnlocalizedName()      | cadena                                                                          |
+| getShortUnlocalizedName() | cadena                                                                          |
+| getPartType()             | [Tipo de pieza](/Mods/ContentTweaker/Materials/Parts/PartType/)                 |
+| getPartTypeName()         | cadena                                                                          |
+| getOreDictPrefix()        | cadena                                                                          |
+| getData()                 | Lista <[IPartDataPiece](/Mods/ContentTweaker/Materials/Parts/PartDataPiece/)\> |
 
-## Register to Material(s)
+## Regístrate en Material(s)
 
-You can use this to register one or several Materials to this part
+Puedes usar esto para registrar uno o varios materiales en esta parte
 
 ```zenscript
 part.registerToMaterial(Material material);
-part.registerToMaterials(Material[] materials);
+part.registerToMaterials(Material[] materiales);
 ```
 
-The function will either return a single [MaterialPart](/Mods/ContentTweaker/Materials/Materials/MaterialPart/) object or a List of them, depending on whether you registered one or multiple materials at once.
+La función devolverá un solo objeto [MaterialPart](/Mods/ContentTweaker/Materials/Materials/MaterialPart/) o una Lista de ellos. dependiendo de si usted registró uno o varios materiales a la vez.

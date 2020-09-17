@@ -1,118 +1,118 @@
-# Furnace
+# Печь
 
-CraftTweaker allows you to `Add` and `Remove` Furnace recipes and change the fuel value of items.
+CraftTweaker позволяет `Добавить` и `Удалить` рецепты печи и изменить топливо для предметов.
 
-## Recipes
+## Рецепты
 
-### Removal
+### Удаление
 
-There are 2 ways to remove Furnace recipes, being:
+Есть 2 способа удалить рецепты печки, чтобы:
 
 ```zenscript
-furnace.remove(IIngredient output)
+furnace.remove(IIngredient выход)
 ```
 
-And
+И
 
 ```zenscript
 furnace.remove(IIngredient output, IIngredient input);
 ```
 
-The first syntax is more flexible with the recipes that are removed and will remove all Furnace recipes that output the `output` given.  
-The second syntax is more strict with the recipes that are removed and will remove all Furnace recipes that output the `output` given and has an input of `input`.
+Первый синтаксис более гибкий с удаленными рецептами и удалит все рецепты печи, которые выведут итог `` данного рецепта.  
+Второй синтаксис более строгий с удаленными рецептами и удалит все рецепты печи, которые выведут вывод `` , и имеет ввод `ввод`.
 
-There also is a third way of removing furnace recipes, though this one will remove ALL furnace recipes registered in the game.
+Существует также третий способ удаления рецептов печей, хотя это удалит все рецепты печи, зарегистрированные в игре.
 
 ```zenscript
 furnace.removeAll();
 ```
 
-### Addition
+### Сложение
 
-There are 2 commands for adding furnace recipes:
-
-```zenscript
-furnace.addRecipe(IItemStack output, IIngredient input);
-```
-
-And
+2 команды для добавления рецептов печи:
 
 ```zenscript
-furnace.addRecipe(IItemStack output, IIngredient input, double xp);
+furnace.addRecipe(IItemStack, ввод IIngredient);
 ```
 
-The first syntax will add a Furnace recipe that will give 0 xp on smelt.
-
-The second syntax will add a Furnace recipe that will give `xp` xp on smelt.
-
-## Fuel
-
-### Set
-
-The command for setting fuel values is:
+И
 
 ```zenscript
-furnace.setFuel(IIngredient input, int burnTime);
+furnace.addRecipe(IItemStack, Ingredient input, double xp);
 ```
 
-This will set the burn value of `input` to `burnTime` in ticks. Minecraft coal burns for 1600 ticks, 80 seconds, 8 items. 1 item in a minecraft furnace takes 200 ticks to complete.
+Первый синтаксис добавит рецепт печки, который даст 0xp на плавку.
 
-Setting the `burnTime` to `0` will stop the `input` from being a fuel item.
+Второй синтаксис добавит рецепт печки, который даст `xp` xp на плавке.
 
-### Get
+## Топливо
 
-The command for retrieving an item's fuel value is:
+### Задать
+
+Команда по установке значений топлива:
+
+```zenscript
+печ.setFuel(IIngredient input, int burnTime);
+```
+
+Это установит значение записи `входных данных` на `burnTime` в тиках. Майнкрафт горит за 1600 тиков, 80 секунд, 8 предметов. 1 единица в шахтной печи занимает 200 тиков.
+
+Установка `времени горения` на `0` остановит `вход` от качестве топливного предмета.
+
+### getDrops
+
+Команда извлечения топливного значения предмета:
 
 ```zenscript
 furnace.getFuel(IItemStack item); 
 ```
 
-This will return the burn value as an Integer
+Это возвращает ожог значение как целое число
 
-## Examples
+## Примеры
 
-### Removal
+### Удаление
 
-This will remove all Furnace recipes that outputs `<minecraft:glass>`.
+Это приведет к удалению всех рецептов печки, выходящих `<minecraft:glass>`
 
 ```zenscript
 furnace.remove(<minecraft:glass>);
 ```
 
-This will remove all Furnace recipes `<minecraft:quartz>` that use `<minecraft:quartz_ore>` as an input.
+Это удалит все рецепты печи `<minecraft:quartz>` , которые используют `<minecraft:quartz_ore>` в качестве входа.
 
 ```zenscript
 furnace.remove(<minecraft:quartz>, <minecraft:quartz_ore>);
 ```
 
-### Addition
+### Сложение
 
-This will add a Furnace recipe that will output a `<minecraft:golden_apple>` when a `<minecraft:apple>` is smelted.
+Это добавит рецепт печки, который даст `<minecraft:golden_apple>` после переплавки `<minecraft:apple>`.
 
 ```zenscript
 furnace.addRecipe(<minecraft:golden_apple>, <minecraft:apple>);
 ```
 
-This will add a Furnace recipe that will output a `<minecraft:speckled_melon>` when a `<minecraft:melon>` is smelted and will give the player 1500 xp points.
+Это добавит рецепт печки, который даст `<minecraft:speckled_melon>` когда будет переплавлено `<minecraft:melon>` , и даст игроку 1500 xp очков.
 
 ```zenscript
 furnace.addRecipe(<minecraft:speckled_melon>, <minecraft:melon>, 1500);
 ```
 
-### Fuel
+### Топливо
 
-This will set the Fuel value of `<minecraft:rotten_flesh>` to `100`.
+Это установит топливо `<minecraft:rotten_flesh>` на `100`.
 
 ```zenscript
 furnace.setFuel(<minecraft:rotten_flesh>, 100);
 ```
 
-## Other Functionality
+## Прочая функциональность
 
-### Getting all registered Furnace Recipes
+### Получение всех зарегистрированных рецептов печи
 
 ```zenscript
 furnace.all;
 ```
 
-Returns a [`List<IFurnaceRecipe>`](/Vanilla/Recipes/Furnace/IFurnaceRecipe/).
+Возвращает [`Список<IFurnaceRecipe>`](/Vanilla/Recipes/Furnace/IFurnaceRecipe/).

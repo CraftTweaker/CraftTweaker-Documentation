@@ -1,30 +1,30 @@
-# FireClay Knapping
+# Привязка к FireClay
 
-## Package
+## Пакет
 ```zenscript
-import mods.terrafirmacraft.FireClayKnapping;
+import mods.terrafirmacraft.Огненный Клейкинг;
 ```
 
-## Addition
+## Сложение
 
 ```zenscript
-FireClayKnapping.addRecipe(String registryName, IItemStack output, String... pattern)
+Рецепт FireClayKnapping.addRecipe(tring registryName, IItemStack, String... pattern)
 ```
 
-## Removal
+## Удаление
 
 ```zenscript
-FireClayKnapping.removeRecipe(IItemStack output);
+FireClayKnapping.removeRecipe(выход IItemStack);
 FireClayKnapping.removeRecipe(String registryName);
 ```
 
 ## Пример
 ```zenscript
-// add fireClay knapping recipe for enderio conduit binder
-FireClayKnapping.addRecipe("enderio/item_conduit_binder", <enderio:item_material:22>*2, 
-"    X",
-"   XX",
-"  XXX",
+// добавляем рецепт межсетевого связывания fireClay для enderio канала
+FireClayKnapping. ddRecipe("enderio/item_conduit_binder", <enderio:item_material:22>*2, 
+" X",
+" XX",
+" XXX",
 " XXXX",
 "XXXXX");
 ```

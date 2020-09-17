@@ -1,52 +1,52 @@
-# ILiquidDefinition
+# Liquid定义
 
-The ILiquidDefinition defines the liquid an [ILiquidStack](/Vanilla/Liquids/ILiquidStack/) consists of. Unlike the ILiquidStack, this interface allows you to change fluid properties.
+ILiquidDefine 定义了液体 [IliquidStack](/Vanilla/Liquids/ILiquidStack/) 所包含的液体。 与ILiquidStack不同，这个接口允许您更改液体属性。
 
 ## 导入相关包
 
-It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
-`import crafttweaker.liquid.ILiquidDefinition;`
+如果您遇到任何问题，可能需要导入软件包(例如铸造一个 [数组](/AdvancedFunctions/Arrays_and_Loops/)), 这样比抱歉更安全并添加导入。  
+`导入craftweaker.liquidDefinities;`
 
-## Methods
+## 方法
 
-So, what can we do with it?
+那么，我们可以对此做些什么？
 
-### Multiplication
+### 乘
 
-Multiplying a ILiquidDefinition results in a new [ILiquidStack](/Vanilla/Liquids/ILiquidStack/) with the specified amount in millibuckets
+乘用ILiquid定义生成一个新的 [ILiquidStack](/Vanilla/Liquids/ILiquidStack/) 和指定数量的毫巴克
 
 ```zenscript
 val def = <liquid:lava>.definition;
 
-//essentially the same
+/基本相同
 val bucketOfLava = def * 1000;
-val bucketOfLava1 = <liquid:lava> * 1000;
+val bucketOfLava 1 = <liquid:lava> * 1000;
 ```
 
-## Get and Set fluid properties
+## 获取并设置流体属性
 
-As an ILiquidDefinition represents a liquid, you can get, but also set it's properties. Check the table below for further information.
+ILiquidDefine 表示一个液体，你可以获取，但也可以设置它的属性。 查看下表以了解更多信息。
 
-Like in the table above, you set the Zengetter/Setter at the end of the ILiquidDefinition. Some ZenGetters have no according ZenSetter, you will need to rely on other means to alter these properties.
+与上面的表格一样，您在ILiquidDefinition末尾设置Zengetter/setter 。 根据ZenSetter，一些ZenGetter没有，您需要依靠其他手段来更改这些属性。
 
-Be careful with Zensetters though, they only alter the fluid registry and have no effect on fluids in the world. You will probably only need the temperature setter when messing with [Tinkers' Construct Smeltery fuels](/Mods/Modtweaker/TConstruct/Fuel/).
+但要小心Zensetters，不过，它们只会改变液体注册，不会对世界上的液体产生任何影响。 您可能只需要在使用 [Tinkers 构造冶炼炉燃料](/Mods/Modtweaker/TConstruct/Fuel/) 时才需要温度设置。
 
 ```zenscript
 val definition = <liquid:lava>.definition;
 
-//Zengetter: luminosity
-val lavaL = definition.luminosity;
+//Zengetter: luminity
+val lavAL = definition.luminosity;
 
 //Zensetter: luminosity
-definition.luminosity = 0;
+definition.luminacity = 0;
 ```
 
-| Zengetter   | Zensetter   | What is this?                                            | Return/Set Type |
-| ----------- | ----------- | -------------------------------------------------------- | --------------- |
-| name（名称）    |             | This returns the unlocalized liquid name                 | string          |
-| displayName |             | This returns the localized liquid name                   | string          |
-| luminosity  | luminosity  | This returns/sets the luminosity of the referred liquid  | int             |
-| density     | density     | This returns/sets the density of the referred liquid     | int             |
-| temperature | temperature | This returns/sets the temperature of the referred liquid | int             |
-| viscosity   | viscosity   | This returns/sets the viscosity of the referred liquid   | int             |
-| gaseous     | gaseous     | This returns/sets whether the referred liquid is gaseous | boolean         |
+| Zengetter   | Zensetter | 这是什么？             | 返回/设置类型 |
+| ----------- | --------- | ----------------- | ------- |
+| name（名称）    |           | 这返回未本地化的液体名称      | 字符串     |
+| displayName |           | 这返回本地化的液体名称       | 字符串     |
+| 亮度          | 亮度        | 这个返回/设置所指液体的亮度    | 整数      |
+| 密度：         | 密度：       | 这个返回/设置所指液体的强度    | 整数      |
+| 温度          | 温度        | 这个返回/设置所指液体的温度    | 整数      |
+| 视觉性         | 视觉性       | 这个返回/设置所指液体的粘度    | 整数      |
+| 气压          | 气压        | 这个返回/设置所指的液体是否气体？ | boolean |

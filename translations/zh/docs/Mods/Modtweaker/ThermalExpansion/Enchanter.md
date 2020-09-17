@@ -1,21 +1,21 @@
-# Arcane Ensorcellator (a.k.a Enchanter)
+# 奥术附魔器 (a.k.a 附魔器)
 
 ## 所属包名
 
-`mods.thermalexpansion.Enchanter`
+`thermalext.Enchanger`
 
 ## 添加配方
 
 ```zenscript
-mods.thermalexpansion.Enchanter.addRecipe(IItemStack output, IItemStack input, IItemStack secondInput, int energy, int experience, boolean empowered);
+mods.thermalext.Enchanter.addRecipe(IItemStack 输出, IItemStack 输入, IItemStack 秒输入, int energy, int experience, booly empowered);
 
-mods.thermalexpansion.Enchanter.addRecipe(<minecraft:enchanted_book>.withTag({StoredEnchantments: [{id: 35}]}), <minecraft:book>, <minecraft:diamond>, 12000, 3000, false);
+mods. hermalext.Enchanter.addRecipe(<minecraft:enchanted_book>.withTag({StoredEnchants: [{id: 35}]}), <minecraft:book>, <minecraft:diamond>, 1, 2000, 3000, false);
 ```
 
 ## 删除配方
 
 ```zenscript
-mods.thermalexpansion.Enchanter.removeRecipe(IItemStack input, IItemStack secondInput);
+mods.thermallipl.Enchanter.removeRecipe(IItemStack input, IItemStack secondInput);
 
-mods.thermalexpansion.Enchanter.removeRecipe(<minecraft:book>, <minecraft:diamond>);
+mods.thermalext.Enchanter.removeRecipe(<minecraft:book>, <minecraft:diamond>);
 ```

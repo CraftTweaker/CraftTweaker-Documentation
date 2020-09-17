@@ -1,17 +1,17 @@
-# Condenser
-**Note: Partially Broken**
+# Kondensator
+**Uwaga: Częściowo uszkodzone**
 
-## Importing the Package
-`mods.nuclearcraft.Condenser`
+## Importowanie pakietu
+`mods.nuclearcraft.Kondensator`
 
-## Adding Recipes
+## Dodawanie przepisów
 ```zenscript
-mods.nuclearcraft.Condenser.addRecipe(ILiquidStack fluidInput, ILiquidStack fluidOutput, @Optional double coolingRequired, @Optional int condensingTemperature);
+mods.nuclearcraft.Condenser.addRecipe(ILiquidStack fluidInput, ILiquidStack fluidOutput, @Opcjonalne podwójne chłodzenieWymagane, @Opcjonalne chłodzenieTemperatature);
 ```
 
-## Removing Recipes
+## Usuwanie przepisów
 ```zenscript
 mods.nuclearcraft.Condenser.removeRecipeWithInput(ILiquidStack fluidInput);
 mods.nuclearcraft.Condenser.removeRecipeWithOutput(ILiquidStack fluidOutput);
-mods.nuclearcraft.Condenser.removeAllRecipes();
+mods.nuclearcraft.„Technologia”, zgodnie z uwagą ogólną do technologii, służąca do „rozwoju”, „produkcji” lub „użytkowania” sprzętu lub „oprogramowania” wyszczególnionych w pozycji 3A001, 3A001, 3A002, 3A002, 3A003, 3A003, 3A003, 3A003, 3A003, 3A003, 3A003, 3A003, 3A003, 3A003, 3A003, 3A003, 3A003, 3A003, 3A003, 3A003, 3A003, 3A003, 3A003, 3A004, 3A005, 3A003, 3A005, 3A005, 3A005, 3A005, 3A005, 3A005, 3A005, 3A005, 3A005, 3A005, 3A005, 3A005, 3A005, 3A005, 3A005, 3A005, 3A005, 3A005, 3A003, 3A003, 3A003, 3A003, 3A003, 3A003, 3A003, 3A005, 3A005, 3A005, 3A003, 3A003,
 ```

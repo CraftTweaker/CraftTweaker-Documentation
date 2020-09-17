@@ -1,16 +1,17 @@
-# Fluid Extractor
+# 流体抽出器
 
-## Importing the Package
-`mods.nuclearcraft.Extractor`
+## パッケージのインポート
+`mods.nuclearcraft.Extractor抽出ツール`
 
-## Adding Recipes
+## レシピを追加中
 ```zenscript
-mods.nuclearcraft.Extractor.addRecipe(IIngredient itemInput, IIngredient itemOutput, ILiquidStack fluidOutput, @Optional double timeMultiplier, @Optional double powerMultiplier, @Optional double processRadiation);
+mods.nuclearcraft.Supercoolermods.nuclearcraft.Extractor.addRecipe(IIngredient itemInput, IIngredient itemOutput, ILiquidStack fluidOutput, @Optional double timeMultiplier, @Optional double powerMultiplier, @Optional double processRadiation);
 ```
 
-## Removing Recipes
+## レシピを削除
 ```zenscript
-mods.nuclearcraft.Extractor.removeRecipeWithInput(IIngredient itemInput);
+mods.nuclearcraft.SupercoolerExtractor.removeRecipeWithInput(IInput));
+mods.nuclearcraft.mods.nuclearcraft.Extractor.removeRecipeWithInput(IIngredient itemInput);
 mods.nuclearcraft.Extractor.removeRecipeWithOutput(IIngredient itemOutput, ILiquidStack fluidOutput);
-mods.nuclearcraft.Extractor.removeAllRecipes();
+mods.nuclearcraft.Extractor.removeAllRecipes();Extractor.removeAllRecipes();
 ```

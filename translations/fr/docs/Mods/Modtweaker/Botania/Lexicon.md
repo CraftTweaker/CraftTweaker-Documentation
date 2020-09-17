@@ -1,71 +1,71 @@
 # Lexica Botania
 
-The Lexicon package is used for adding or removing pages, entries or whole categories to/from the Lexica Botania.
+Le paquet Lexicon est utilisé pour ajouter ou supprimer des pages, des entrées ou des catégories entières vers/depuis la Botanie Lexica.
 
-## Calling
+## Appel en cours
 
-You can call the Lexicon package using `mods.botania.Lexicon`
+Vous pouvez appeler le package du lexique en utilisant `mods.botania.Lexicon`
 
 ## Pages
 
-### Addition
+### Ajouter
 
 ```zenscript
 mods.botania.Lexicon.addBrewPage(String name, String entry, int page_number, String brew, IIngredient[] recipe, String bottomText);
 mods.botania.Lexicon.addCraftingPage(String name, String entry, int page_number, String... recipeNames);
 mods.botania.Lexicon.addElvenPage(String name, String entry, int page_number, IItemStack[] outputs, IIngredient[][] inputs);
 mods.botania.Lexicon.addEntityPage(String name, String entry, int page_number, String entity, int size);
-mods.botania.Lexicon.addImagePage(String name, String entry, int page_number, String resource);
+mods.botania.Lexicon. ddImagePage(String name, String entry, int page_number, String resource);
 mods.botania.Lexicon.addLorePage(String name, String entry, int page_number);
-mods.botania.Lexicon.addInfusionPage(String name, String entry, int page_number, IItemStack[] outputs, IIngredient[] inputs, int[] mana);
-mods.botania.Lexicon.addAlchemyPage(String name, String entry, int page_number, IItemStack[] outputs, IIngredient[] inputs, int[] mana);
-mods.botania.Lexicon.addConjurationPage(String name, String entry, int page_number, IItemStack[] outputs, IIngredient[] inputs, int[] mana);
-mods.botania.Lexicon.addPetalPage(String name, String entry, int page_number, IItemStack[] outputs, IIngredient[][] inputs);
-mods.botania.Lexicon.addRunePage(String name, String entry, int page_number, IItemStack[] outputs, IIngredient[][] inputs, int[] mana);
+mods. otania.Lexicon.addInfusionPage(String name, String entry, int page_number, IItemStack[] sorties, Igredient[] inputs, int[] mana);
+mods.botania.Lexicon. ddAlchemyPage(String name, String entry, int page_number, IItemStack[] outputs, IIngredient[] inputs, int[] mana);
+mods.botania.Lexicon. ddConjurationPage(String name, String entry, int page_number, IItemStack[] sorties, IIngredient[] inputs, int[] mana);
+mods.botania.Lexicon. ddPetalPage(String name, String entry, int page_number, IItemStack[] sorties, IIngredient[][] inputs);
+mods.botania.Lexicon. ddRunePage(String name, String entry, int page_number, IItemStack[] sorties, IIngredient[][] inputs, int[] mana);
 mods.botania.Lexicon.addTextPage(String name, String entry, int page_number);
 ```
 
-### Removal
+### Retirer
 
 ```zenscript
 mods.botania.Lexicon.removePage(String entry, int page_number);
 ```
 
-## Entries
+## Entrées
 
-### Addition
+### Ajouter
 
 ```zenscript
 mods.botania.Lexicon.addEntry(String entry, String catagory, IItemStack stack);
 ```
 
-### Removal
+### Retirer
 
 ```zenscript
-mods.botania.Lexicon.removeEntry(String entry);
+mods.botania.Lexicon.removeEntry(String entrée);
 ```
 
-## Categories
+## Catégories
 
-### Addition
+### Ajouter
 
 ```zenscript
 mods.botania.Lexicon.addCategory(String name);
 ```
 
-### Removal
+### Retirer
 
 ```zenscript
 mods.botania.Lexicon.removeCategory(String name);
 ```
 
-### Set
+### Régler
 
 ```zenscript
 mods.botania.Lexicon.setCategoryIcon(String name, String icon);
 ```
 
-## Recipe Mapping
+## Mappage des recettes
 
 ```zenscript
 mods.botania.Lexicon.addRecipeMapping(IItemStack stack, String Entry, int page);

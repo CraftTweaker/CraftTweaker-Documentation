@@ -1,15 +1,15 @@
-# Enchanter
+# Чародей
 
-## Package
+## Пакет
 
 ```zenscript
-import mods.aether_legacy.Enchanter;
+import mods.aether_legacy.зачарование;
 ```
-## Usage
+## Использование
 
 ```zenscript
 Enchanter.registerEnchantment(IItemStack input, IItemStack output, int timeRequired);
-// repairing tools and stuff
+// repair tools and stuff
 Enchanter.registerEnchantment(IItemStack repair, int timeRequired);
 Enchanter.registerEnchanterFuel(IItemStack input, int timeGiven);
 ```

@@ -1,20 +1,20 @@
 # Meta Get
-Get is an convenient alternative to looking up the meta value for all elements and compounds, but the conventional way i.e. <alchemistry:compound:17> still works fine
+Get ist eine bequeme Alternative zur Suche nach dem Metawert für alle Elemente und Verbindungen, aber die konventionelle Art und Weise z. <alchemistry:compound:17> immer noch gut funktioniert
 
-## Package
+## Paket
 ```zenscript
 mods.alchemistry.Util.get`
 ```
 
 ## Methoden
 
-- **String Name** Element Name
+- **Stringname** Elementname
 
 ## Syntax
 
 ```zenscript
 mods.alchemistry.Util.get(String name);
 
-val strontiumCarbonate = mods.alchemistry.Util.get("strontium_carbonate");
+strontiumCarbonate = mods.alchemistry.Util.get("strontium_carbonate");
 val carbon = mods.alchemistry.Util.get("carbon");
 ```

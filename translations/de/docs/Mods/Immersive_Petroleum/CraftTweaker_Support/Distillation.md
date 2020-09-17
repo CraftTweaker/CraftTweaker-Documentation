@@ -7,13 +7,13 @@ Die Distillation "addRecipe" Methode besteht aus:
 | Type          | Datentyp                                             |
 | ------------- | ---------------------------------------------------- |
 | Output        | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) Array[] |
-| Output        | [ItemStack](/Vanilla/Items/IItemStack/) Array[]      |
+| Ausgang       | [Artikel-Stack](/Vanilla/Items/IItemStack/) Array[]  |
 | Input         | [Fluidstack](/Vanilla/Liquids/ILiquidStack/)         |
-| Flux/t        | Integer                                              |
-| Time in Ticks | Integer                                              |
-| Chance        | Float Array []                                       |
+| Flux/t        | Ganzzahl                                             |
+| Zeit in Ticks | Ganzzahl                                             |
+| Hannes        | Schwebendes Array []                                 |
 
-### Preface:
+### Präface:
 
 Jeder ItemStack Eintrag ist mit dem entsprechenden Array-Eintrag "Chance" verknüpft.
 
@@ -24,7 +24,7 @@ Beispiel:
 [1, 1]
 ```
 
-Der Float Wert des Typs Chance sollte zwischen 0 und 1 liegen. Da es sich von einen Float-Wert in einen Prozent Wert umrechnet. Das Bedeutet:
+Der Float Wert des Typs Chance sollte zwischen 0 und 1 liegen. Da es sich von einen Float-Wert in einen Prozent Wert umrechnet.
 
 ```zenscript
 0.5     = 50%

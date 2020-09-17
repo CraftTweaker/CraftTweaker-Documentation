@@ -1,11 +1,11 @@
-# PlayerExpansion
+# Расширение Игрока
 
 ## getSkillData
 
-getSkillData is a ZenGetter that is not directly used. But rather you access it by doing:
+getSkillData - это ZenGetter, который не используется напрямую. Но если вы имеете к нему доступ, выполните:
 
-    Example:
+    Пример:
     event.player.skillData
     
 
-This provides you with the "CTPlayerData" which is used to progress deeper into the Skill Data.
+Это дает вам "CTPlayerData", которая используется для углубления в данные о навыках.

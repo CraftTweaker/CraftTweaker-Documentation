@@ -1,41 +1,41 @@
-# Charcoal Pile
+# Ciasto węgla drzewnego
 
-ModTweaker allows you to add or remove forestry Charcoal Wall Recipes
+ModTweaker pozwala na dodanie lub usunięcie przepisów dotyczących ściany drzewnej
 
-## Calling
+## Dzwonienie
 
-You can call the package using `mods.forestry.CharcoalWall`
+Możesz wywołać pakiet używając `mods.forestry.CharcoalWall`
 
-## Recipe Removal
+## Usuwanie przepisów
 
 ```zenscript
-//mods.forestry.CharcoalWall.removeWall(IBlock block);
+//mods.forestry.CharcoalWall.removeWall(Blok IBlock);
 mods.forestry.CharcoalWall.removeWall(<minecraft:bedrock>.asBlock());
 
 
-//mods.forestry.CharcoalWall.removeWallState(IBlockState state);
-mods.forestry.CharcoalWall.removeWallState(<blockstate:minecraft:bedrock>);
+//mods.forestry.CharcoalWall.removeWallState(stan IBlockStatus);
+mods.forestry.CharcoalWall.removeWall.removeWall(<blockstate:minecraft:bedrock>);
 
 
-//Will fail if the stack cannot be converted to a block!
+//Wnie uda się, jeśli stack nie może zostać przekonwertowany do bloku!
 //mods.forestry.CharcoalWall.removeWallStack(IItemStack stack);
 mods.forestry.CharcoalWall.removeWallStack(<minecraft:bedrock>);
 ```
 
-## Reipe Addition
+## Dodanie podglądu
 
-`amount` states the amount of charcoal the wall will provide.
+`ilość` określa ilość węgla drzewnego jaką ściana będzie dostarczać.
 
 ```zenscript
-//mods.forestry.CharcoalWall.addWall(IBlock block, int amount);
+//mods.forestry.CharcoalWall.addWall(Blok IBlock, int amount);
 mods.forestry.CharcoalWall.addWall(<minecraft:bedrock>.asBlock(), 10);
 
 
-//mods.forestry.CharcoalWall.addWallState(IBlockState state, int amount);
-mods.forestry.CharcoalWall.addWallState(<blockstate:minecraft:bedrock>, 10);
+//mods.forestry.CharcoalWall. ddWallState(stan IBlockState (stan int amount);
+mods.forestry.CharcoalWall.addWall.State(<blockstate:minecraft:bedrock>, 10);
 
 
-//Will fail if the stack cannot be converted to a block!
+//Will się nie powiedzie, jeśli stos nie może być przekonwertowany do bloku!
 //mods.forestry.CharcoalWall.addWallStack(IItemStack stack, int amount);
 mods.forestry.CharcoalWall.addWallStack(<minecraft:bedrock>, 10);
 ```

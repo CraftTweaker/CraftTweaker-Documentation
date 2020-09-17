@@ -1,19 +1,19 @@
-# Freezer
+# Tiefkühler
 
-The *freezer* package is used for adding or removing recipes to/from the Freezer.
+Das *Gefrierschrank* Paket wird verwendet, um Rezepte für/vom Gefrierschrank hinzuzufügen oder zu entfernen.
 
-## Calling
+## Anruf
 
-You can call the *freezer* package using `mods.skyresources.freezer`
+Sie können das *Freezer* Paket mit `mods.skyresources.freezer` aufrufen
 
-## Recipe Addition
+## Rezeptzusatz
 
 ```zenscript
-//mods.skyresources.freezer.addRecipe(IItemStack output, IItemStack input, int ticks);
+//mods.skyresources.freezer.addRecipe(IItemStack Output, IItemStack Input, int Ticks);
 mods.skyresources.freezer.addRecipe(<minecraft:ice>, <minecraft:dirt>, 900);
 ```
 
-## Recipe Removal
+## Rezept entfernen
 
 ```zenscript
 //mods.skyresources.freezer.removeRecipe(IItemStack output);

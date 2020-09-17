@@ -1,59 +1,59 @@
-# Advanced Recipes
+# Recetas avanzadas
 
-## Package
+## Paquete
 
 ```zenscript
-import mods.ic2.AdvRecipes;
+importar mods.ic2.AdvRecipes;
 ```
 
-## Recipe Types
-There are several types of recipes:
+## Tipos de receta
+Hay varios tipos de recetas:
 
-### Shaped Recipes
-Shaped Recipes are recipes, where it matters, which item goes into which slot. For example, you can't just arrange 7 different sized stacks of iron ingots in any order to create iron leggings. The shape matters, thus it is a shaped recipe.
+### Recetas moldeadas
+Las recetas moldeadas son recetas, donde importa, qué objeto entra en qué ranura. Por ejemplo, no puedes organizar 7 pilas de lingotes de hierro diferentes en cualquier orden para crear piernas de hierro. La forma importa, por lo tanto es una receta en forma.
 
-### Shapeless Recipes
-Shapeless Recipes are recipes, where only the items you put in the crafting grid matter, whereas the shape is of no importance. For example, blue and yellow dye create green dye. This recipe doesn't care about where you put which item.
+### Recetas sin Forma
+Las recetas sin forma son recetas, donde sólo los objetos que pones en la cuadrícula de fabricación importan, mientras que la forma no tiene importancia. Por ejemplo, los tintes azules y amarillos crean tinte verde. A esta receta no le importa dónde pones el objeto.
 
-## Add Recipes
+## Añadir recetas
 
 ### addShaped
 ```zenscript
 mods.ic2.AdvRecipes.addShaped(output,inputs);
 ```
 
-This creates a shaped recipe for `output` using `inputs` as Ingredients.
+Esto crea una receta en forma para `salida` usando `entradas` como Ingredientes.
 
 `output` is an [IItemStack](/Vanilla/Items/IItemStack/)  
-`inputs` is an [IIngredient](/Vanilla/Variable_Types/IIngredient/)\[][\] (see below)
+`inputs` is an [IIngredient](/Vanilla/Variable_Types/IIngredient/)\[]\[\\] (see below)
 
-`inputs` is a 2 Dimensional [IIngredient](/Vanilla/Variable_Types/IIngredient/) Array.  
-So the recipe for Iron Leggings would be written as `[[iron,iron,iron],[iron,null,iron],[iron,null,iron]]`  
-If that looks to confusing, try splitting the arrays up into one array per line
+`entradas` es un 2 Dimensional [IIngrediente](/Vanilla/Variable_Types/IIngredient/) Array.  
+Así que la receta para Pantalones de Hierro sería escrita como `[[hierro,hierro],[hierro,hierro,hierro,[hierro],[hierro],[hierro, ull,iron]]`  
+Si se trata de confundir, intente dividir los arreglos en una matriz por línea
 ```zenscript
-val iron = <minecraft:iron_ingot>;
-val leggings = <minecraft:iron_leggings>;
+hierro val = <minecraft:iron_ingot>;
+piernas vales = <minecraft:iron_leggings>;
 
-AdvRecipes.addShaped(leggings,
- [[iron * 5,iron * 7,iron * 5],
-  [iron * 3,null,iron * 3],
-  [iron,null,iron]]);
+recetas avanzadas. ddShaped(piernas,
+ [[hierro * 5,hierro * 7,hierro * 5],
+  [hierro * 3,null,hierro * 3],
+  [hierro,nulo]]);
 ```
 
 ### addShapeless
 ```zenscript
-mods.ic2.AdvRecipes.addShapeless(output,inputs)
+mods.ic2.AdvRecipes.addShapeless(salida,entradas)
 ```
 
-This creates a shapeless stacked recipe for `output` using `inputs` as Ingredients.
+Esto crea una receta apilada sin forma para `salida` usando `entradas` como ingredientes.
 
-`output` is an [IItemStack](/Vanilla/Items/IItemStack/)  
-`inputs` is an [IIngredient](/Vanilla/Variable_Types/IIngredient/)[]  (e.g. [<minecraft:dye:1>,<minecraft:dye:2>])
+`salida` es un [ItemStack](/Vanilla/Items/IItemStack/)  
+`entradas` es un [IIngrediente](/Vanilla/Variable_Types/IIngredient/)[] (e.g. [<minecraft:dye:1>,<minecraft:dye:2>])
 
 ### addHidden
 ```zenscript
-mods.ic2.AdvRecipes.addHiddenShapeless(IItemStack output, IIngredient[] ingredients);
-mods.ic2.AdvRecipes.addHiddenShaped(IItemStack output, IIngredient[][] ingredients);
+mods.ic2.AdvRecipes.addHiddenShapeless(IItemStack de ingredientes, IIngredient[]);
+mods.ic2.AdvRecipes.addHiddenShaped(ItemStack de salida, IIngredient[][] ingredientes);
 ```
 
-This creates a shaped or shapeless stacked recipe for `output` using `inputs` as Ingredients that is hidden. 
+Esto crea una receta apilada en forma o sin forma para `salida` usando `entradas` como ingredientes ocultos. 

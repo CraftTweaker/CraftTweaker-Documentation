@@ -1,15 +1,15 @@
-# GameStages
+# Rozgrywki
 
-## Special Thanks
+## Specjalne podziękowania
 
-Special Thanks goes out to Darkhax for the wonderful changes done in GameStages 2.0.0 !
+Specjalne podziękowania dla Darkhax za wspaniałe zmiany dokonane w GameStages 2.0.0!
 
-## Explanation:
+## Wyjaśnienie:
 
-- So the GameStage Support exists in three form:
-- Using GameStages as requirements 
-    - To see information about the GameStage requirement
-    - Please visit the Requirement-Type Page: 
+- Tak więc wsparcie GameStage istnieje w trzech formach:
+- Użycie GameStages jako wymagań 
+    - Aby zapoznać się z wymogiem GameStage
+    - Proszę odwiedzić stronę typu wymagania: 
         - [Link](/Mods/CompatSkills/Requirements/Requirements/) 
-- Creating "Dummy Traits" that once unlocked, unlock a GameStage.
-- GameStage Locking which cancels the addition of a GameStage if the player's don't have the requirements set for that stage.
+- Tworzenie "Dummy Cech", które po odblokowaniu, odblokuj GameStage.
+- Blokada GameStage która anuluje dodanie GameStage, jeśli gracz nie ma ustawionych wymagań dla tego etapu.

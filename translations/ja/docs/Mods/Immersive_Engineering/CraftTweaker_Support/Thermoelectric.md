@@ -1,35 +1,35 @@
-# Thermoelectric
-The Thermoelectric package can be used to register or unregister temperatures for blocks to allow them to power the Immersive Engineering Thermoelectric Generator. Liquids inherently have a temperature, so they do not and cannot be registered. Temperatures are in Kelvin.
+# 熱電性
+熱電パッケージを使用して、ブロックの温度を登録または登録解除して、イマーシブエンジニアリング熱電発電機に電力を供給することができます。 液体は本質的に温度を持っているので、それらはありませんし、登録することはできません。 気温はケルビンです。
 
-## Calling The Package
-You can call the Thermoelectric package using `mods.immersiveengineering.Thermoelectric`.
+## パッケージの呼び出し
+`mods.immysiveengineering.Thermoelectric` を使って、Thermoelectric パッケージを呼び出すことができます。
 
-## Add Temperature Source
+## 温度源の追加
 
-| Required | Type            | Data Type                                           |
-| -------- | --------------- | --------------------------------------------------- |
-| Required | Target Block    | [IIngredient](/Vanilla/Variable_Types/IIngredient/) |
-| Required | Temperature (K) | Integer                                             |
+| 必須 | タイプ       | データタイプ                                              |
+| -- | --------- | --------------------------------------------------- |
+| 必須 | ターゲットブロック | [IIngredient](/Vanilla/Variable_Types/IIngredient/) |
+| 必須 | 温度 (K)    | 整数                                                  |
 
-### Example
+### 例
 ```zenscript
-//Example:
-mods.immersiveengineering.Thermoelectric.addTemperatureSource(IIngredient source, int temperature);
+//例:
+mods.immsiveengineering.Thermoelectric.addTemperatureSource(IIngredient source, int temperature);
 
-mods.immersiveengineering.Thermoelectric.addTemperatureSource(<minecraft:obsidian>, 1272);
+mods.immsiveengineering.Thermoelectric.addTemperatureSource(<minecraft:obsidian>, 1272);
 ```
 
 
-## Remove Temperature Source
+## 温度源を削除
 
-| Required | Type         | Data Type                                           |
-| -------- | ------------ | --------------------------------------------------- |
-| Required | Target Block | [IIngredient](/Vanilla/Variable_Types/IIngredient/) |
+| 必須 | タイプ       | データタイプ                                              |
+| -- | --------- | --------------------------------------------------- |
+| 必須 | ターゲットブロック | [IIngredient](/Vanilla/Variable_Types/IIngredient/) |
 
-### Example
+### 例
 ```zenscript
-//Example:
-mods.immersiveengineering.Thermoelectric.removeTemperatureSource(IIngredient source);
+//例:
+mods.immsiveengineering.Thermoelectric.removeTemperatureSource(IIngredient source);
 
-mods.immersiveengineering.Thermoelectric.removeTemperatureSource(<minecraft:obsidian>);
+mods.immsiveengineering.Thermoelectric.removeTemperatureSource(<minecraft:obsidian>);
 ```

@@ -1,8 +1,8 @@
-# Axe Chopping
+# Axt hacken
 
-## Availability
+## Verfügbarkeit
 
-Before doing anything, you should check whether axe-chopping is enabled or not:
+Bevor du etwas tust, solltest du überprüfen, ob Achsschnitten aktiviert ist oder nicht:
 
 ```zenscript
 import mods.cuisine.AxeChopping;
@@ -10,7 +10,7 @@ import mods.cuisine.AxeChopping;
 if (AxeChopping.isEnabled()) {
     // do stuff
 } else {
-    print("Axe Chopping is disabled, skipping");
+    print("Axe Kopping ist deaktiviert, überspringt");
 }
 ```
 
@@ -19,37 +19,37 @@ if (AxeChopping.isEnabled()) {
 ```zenscript
 import mods.cuisine.AxeChopping;
 
-AxeChopping.add(IItemStack input, IItemStack output);
+AxeChopping.add(IItemStack-Eingabe, IItemStack-Ausgabe);
 
 AxeChopping.add(<item:minecraft:dirt>, <item:minecraft:diamond>);
 
-// If necessary, it is also possible to use ore dictionary.
-AxeChopping.add(IOreEntry input, IItemStack output);
+// Bei Bedarf ist es auch möglich, Erzwörterbuch zu verwenden.
+AxeChopping.add(IOreEntry Eingabe, IItemStack Ausgabe);
 
 AxeChopping.add(<ore:cobblestone>, <item:minecraft:diamond>);
 ```
 
-## Removal
+## Entfernen
 
 ```zenscript
 import mods.cuisine.AxeChopping;
 
-// Remove by input.
-AxeChopping.remove(IItemStack input);
+// Nach Eingabe entfernen.
+AxeChopping.remove(IItemStack Eingabe);
 
 AxeChopping.remove(<item:minecraft:log>);
 
-// Remove by output.
+// Von Ausgabe entfernen.
 AxeChopping.removeByOutput(IItemStack output);
 
 AxeChopping.removeByOutput(<item:minecraft:plank>);
 
-// Remove by identifier.
+// Vom Identifikator entfernen.
 AxeChopping.remove(String id);
 
 AxeChopping.remove("recipe_name");
 
-// Remove everything!
+// Alles entfernen!
 AxeChopping.removeAll();
 ```
 

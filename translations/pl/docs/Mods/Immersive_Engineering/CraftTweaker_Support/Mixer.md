@@ -1,21 +1,21 @@
-# Mixer
+# Mieszacz
 
-The Mixer package can be used to add/remove recipes to/from the Immersive Engineering Mixer.
+Pakiet Mixer może być użyty do dodawania/usuwania przepisów do/z Miksera Inżynierii Immersive Engineering Mixer.
 
-## Calling The Package
+## Wezwanie do pakietu
 
-You can call the Mixer package using `mods.immersiveengineering.Mixer`.
+Możesz wywołać pakiet Mixer używając `mods.immersiveengineering.Mixer`.
 
-## Add Recipe
+## Dodaj przepis
 
-| Required | Type         | Data Type                                                    |
-| -------- | ------------ | ------------------------------------------------------------ |
-| Required | Fluid Output | [Fluidstack](/Vanilla/Liquids/ILiquidStack/)                 |
-| Required | Fluid Input  | [Fluidstack](/Vanilla/Liquids/ILiquidStack/)                 |
-| Required | Item Inputs  | [IIngredient](/Vanilla/Variable_Types/IIngredient/) as Array |
-| Required | Energy       | Integer                                                      |
+| Wymagane | Typ           | Typ danych                                                    |
+| -------- | ------------- | ------------------------------------------------------------- |
+| Wymagane | Wydanie płynu | [Fluidstack](/Vanilla/Liquids/ILiquidStack/)                  |
+| Wymagane | Fluid Input   | [Fluidstack](/Vanilla/Liquids/ILiquidStack/)                  |
+| Wymagane | Item Inputs   | [Składnik](/Vanilla/Variable_Types/IIngredient/) jako tablica |
+| Wymagane | Energia       | Liczba całkowita                                              |
 
-### Example
+### Przykład
 
 ```zenscript
 //Example:
@@ -24,13 +24,13 @@ mods.immersiveengineering.Mixer.addRecipe(ILiquidStack output, ILiquidStack flui
 mods.immersiveengineering.Mixer.addRecipe(<liquid:lava>, <liquid:water>, [<ore:logWood>, <minecraft:dirt>], 2048);
 ```
 
-## Remove Recipe
+## Usuń przepis
 
-| Type   | Data Type                                    |
-| ------ | -------------------------------------------- |
-| Output | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
+| Typ     | Typ danych                                   |
+| ------- | -------------------------------------------- |
+| Wyjście | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
 
-### Example
+### Przykład
 
 ```zenscript
 //Example:

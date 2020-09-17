@@ -1,26 +1,26 @@
-# IBlockAction
+# format@@0 IBlockAction
 
-The IBlockAction function can be added to a [Block](/Mods/ContentTweaker/Vanilla/Creatable_Content/Block/) and, depending on where you added it, will be triggered when the block is placed or broken.
+La fonction IBlockAction peut être ajoutée à un bloc [](/Mods/ContentTweaker/Vanilla/Creatable_Content/Block/) et, Selon l'endroit où vous l'avez ajouté, sera déclenché lorsque le bloc sera placé ou cassé.
 
-## Importing the package
+## Importation du paquet
 
-It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
-`import mods.contenttweaker.IBlockAction;`
+Il pourrait vous être nécessaire d'importer le paquet si vous rencontrez des problèmes, donc mieux vaut être sûr que désolé et ajouter l'importation.  
+`importer mods.contenttweaker.IBlockAction ;`
 
-## Parameters
+## Paramètres
 
-The IBlockAction is a function with the following parameters:
+IBlockAction est une fonction avec les paramètres suivants :
 
-- [IWorld](/Mods/ContentTweaker/Vanilla/Types/World/IWorld/) world → The world the block is in
-- [IBlockPos](/Mods/ContentTweaker/Vanilla/Types/Block/IBlockPos/) position → The Block's position
-- [ICTBlockState](/Mods/ContentTweaker/Vanilla/Types/Block/ICTBlockState/) state → Contains information on the block, such as the Block itself and its metadata
+- [IWorld](/Mods/ContentTweaker/Vanilla/Types/World/IWorld/) monde → Le monde dans lequel le bloc se trouve
+- [IBlockPos](/Mods/ContentTweaker/Vanilla/Types/Block/IBlockPos/) position → La position du bloc
+- [Etat ICTBlockState](/Mods/ContentTweaker/Vanilla/Types/Block/ICTBlockState/) → Contient des informations sur le bloc, comme le Bloc lui-même et ses métadonnées
 
-The function doesn't have a return value!
+La fonction n'a pas de valeur de retour!
 
-## Example
+## Exemple
 
 ```zenscript
 zsBlock.onBlockBreak = function(world, blockPos, blockState){
-    print("I WAS PLACED!!!");
+    print("J'ai ÉTÉ PLACÉ!!!");
 }
 ```

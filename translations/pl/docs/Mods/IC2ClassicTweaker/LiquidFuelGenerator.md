@@ -1,18 +1,18 @@
-# Liquid Fuel Generator
+# Generator paliwa ciekłego
 
-## Package
+## Pakiet
 
 ```zemscript
 import mods.ic2.LiquidFuelGenerator;
 ```
 
-## Methods
+## Metody
 
-- **[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) liquid** The liquid which can be used as fuel in liquid fuel generators. The amount of fluid specified will make no difference; it uses 100 mb.
-- **int ticks** The time in ticks the liquid will burn for.
-- **int powerOutput** EU/tick produced by the liquid.
+- **[Ciecz ILiquidStack](/Vanilla/Liquids/ILiquidStack/)** Ciecz, która może być użyta jako paliwo w generatorach paliwa ciekłego. Ilość określonego płynu nie zmieni się; używa 100 mb.
+- **ticki** Czas w tickach spali płyn.
+- **int powerOutput** EU/tick wytwarzany przez ciecz.
 
-### Add Fluid
+### Dodaj płyn
 
 ```zenscript
 mods.ic2.LiquidFuelGenerator.addFluid(ILiquidStack liquid, int ticks, int powerOutput);

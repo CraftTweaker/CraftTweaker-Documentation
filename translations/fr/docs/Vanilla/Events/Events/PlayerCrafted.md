@@ -1,25 +1,25 @@
-# PlayerCrafted
+# format@@0 PlayerCrafted
 
-The PlayerCrafted Event is fired whenever a player crafts something.
+L'événement PlayerCrafted est lancé chaque fois qu'un joueur fabrique quelque chose.
 
-## Event Class
+## Classe de l'événement
 
-You will need to cast the event in the function header as this class:  
-`crafttweaker.event.PlayerCraftedEvent`  
-You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
+Vous devrez lancer l'événement dans l'en-tête de la fonction comme cette classe:  
+`crafttweaker.event. layerCraftedEvent`  
+Vous pouvez, bien sûr, également [importer](/AdvancedFunctions/Import/) la classe avant et utiliser ce nom alors.
 
-## Event interface extensions
+## Extensions d'interface de l'événement
 
-PlayerCrafted Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+Les événements PlayerCrafted implémentent les interfaces suivantes et sont en mesure d'appeler toutes leurs méthodes/getters/setters aussi:
 
-- [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
+- [Evénement IPlayer](/Vanilla/Events/Events/IPlayerEvent/)
 
 ## ZenGetters
 
-The following information can be retrieved from the event:
+Les informations suivantes peuvent être récupérées à partir de l'événement :
 
-| ZenGetter   | Return Type                                                         |
-| ----------- | ------------------------------------------------------------------- |
-| `player`    | [IPlayer](/Vanilla/Players/IPlayer/)                                |
-| `output`    | [IItemStack](/Vanilla/Items/IItemStack/)                            |
-| `inventory` | [ICraftingInventory](/Vanilla/Recipes/Crafting/ICraftingInventory/) |
+| ZenGetter    | Type de retour                                                        |
+| ------------ | --------------------------------------------------------------------- |
+| `Joueur`     | [IPlayer](/Vanilla/Players/IPlayer/)                                  |
+| `Sortie`     | [IItemStack](/Vanilla/Items/IItemStack/)                              |
+| `inventaire` | [Inventaire ICrafting](/Vanilla/Recipes/Crafting/ICraftingInventory/) |

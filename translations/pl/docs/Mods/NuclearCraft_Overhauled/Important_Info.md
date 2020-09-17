@@ -1,36 +1,36 @@
-# NuclearCraft: Overhauled
+# NuclearCraft: Przetworzony
 
-All recipes involve five sets of information - item inputs, fluid inputs, item outputs, fluid outputs and extra info. The first four are clearly the ingredients and products involved in the recipe, and the extra info contains data such as processing time and power for machines, the base depletion time, heat gen, efficiency, criticality, and radiation level of solid fission fuels, etc.
+Wszystkie przepisy obejmują pięć zestawów informacji - dane wejściowe elementów, dane wejściowe płynów, wyjścia elementów, wyjścia płynów i dodatkowe informacje. pierwsze cztery to wyraźnie składniki i produkty zawarte w przepisie, a dodatkowe informacje zawierają takie dane, jak czas i moc dla maszyn, czas zubożenia bazowego, rodzaj ciepła, wydajność, krytyczny i poziom promieniowania stałych paliw rozszczepialnych itp.
 
-All parts of the recipe are simply listed in the method - the internal NC code will deal with splitting it up into those five categories and packaging the information up into a recipe.
+Wszystkie części przepisu są po prostu wymienione w metodzie - wewnętrzny kod NC zajmie się rozdzieleniem go na pięć kategorii i zapakowaniem informacji na przepis.
 
 
-## Chance Ingredients
+## Szanse Składniki
 
-Item and fluid outputs can have additional info attached to them - specifically, info that can randomise the output stack size somewhat. This additional info is given using NC's 'chance ingredients'.
+Wyjścia przedmiotów i płynów mogą mieć do nich dołączone dodatkowe informacje - konkretnie informacje, które mogą być losowo dopasowane do rozmiaru stołu wyjściowego . Te dodatkowe informacje są podane przy użyciu "składników szansowych".
 
-The size of the stack produced on each process is randomly assigned from a binomial distribution specified by the chance info. The percentage and ingredient stack size play the roles of the probability and number of trials, respectively. A minimum stack size can also be specified - without this, the minimum stack size is simply 0.
+Wielkość stosu wytworzonego w każdym procesie jest losowo przypisywana z rozkładu dwumianowego określonego przez szansę informacji. Procent wielkości stosu składników odpowiada rolom prawdopodobieństwa i liczby prób. Można również określić minimalny rozmiar stosu - bez tego minimalny rozmiar stosu wynosi po prostu 0.
 
-For ChanceFluidIngredients, a 'stack difference' must also be specified, which determines the difference in size between the possible stacks (for ChanceItemIngredients, this is effectively 1). For example, a ChanceFluidIngredient for an ingredient of size 500, with a stack difference of 150 and minimum stack size of 50, will produce 50, 200, 350 or 500 millibuckets of the fluid.
+W przypadku ChanceFluidIngredients należy również określić „różnicę stosu”, która określa różnicę w rozmiarze między możliwymi stosami (dla ChanceItemIngredients, jest to skuteczne 1). Na przykład ChanceFluidIngredient dla składnika o wielkości 500, o różnicy stosu 150 i minimalnym rozmiarze stosu 50, przyniesie 50, 200, 350 lub 500 miliwiader płynu.
 
-**Note: `ChanceItemIngredient` and `ChanceFluidIngredient` count as `IIngredient` for the purpose of recipes in NuclearCraft: Overhauled**
+**Uwaga: `ChanceItemSkładnik` i `ChanceFluidSkładnik` liczy się jako `Składnik` do celów receptur w NuclearCraft: Przegląd**
 
-### ChanceItemIngredient
+### Składnik ChanceItemu
 
-#### Creation
+#### Tworzenie
 
 ```zenscript
-mods.nuclearcraft.ChanceItemIngredient.create(IIngredient ingredient, int chancePercent, @Optional int minStackSize);
+mods.nuclearcraft.ChanceItemIngredient.create(ISkładnik Składnika, zamiana chancePercent, @Opcjonalny int minStackSize);
 ```
 
-#### Examples
+#### Przykłady
 
 ```zenscript
 ChanceItemIngredient.create(<minecraft:coal>*2, 25);
 ChanceItemIngredient.create(<ore:dustGlowstone>*3, 60, 2);
 ```
 
-#### Extra Methods
+#### Dodatkowe metody
 
 ```zenscript
 IIngredient getInternalIngredient();
@@ -38,21 +38,21 @@ int getChancePercent();
 int getMinStackSize();
 ```
 
-### ChanceFluidIngredient
-These can be used anywhere where regular `ILiquidStack` is used.
+### ChanceFluidSkładnik
+Mogą one być używane wszędzie gdzie używany jest zwykły `ILiquidStack`.
 
-#### Creation
+#### Tworzenie
 ```zenscript
-mods.nuclearcraft.ChanceFluidIngredient.create(IIngredient ingredient, int chancePercent, int stackDiff, @Optional int minStackSize);
+mods.nuclearcraft.[PLACEHOLDER] ChanceFluidIngredient.create(Ingredient ingredient, int chancePercent, int stackDiff, @Optional int minStackSize);
 ```
 
-#### Examples
+#### Przykłady
 ```zenscript
 ChanceFluidIngredient.create(<liquid:water>*1500, 35, 300);
 ChanceFluidIngredient.create(<liquid:oil>*1000, 80, 200, 400);
 ```
 
-#### Extra Methods
+#### Dodatkowe metody
 ```zenscript
 IIngredient getInternalIngredient();
 int getChancePercent();
@@ -60,8 +60,8 @@ int getStackDiff();
 int getMinStackSize();
 ```
 
-## Recipe Additions
-Recipe Methods will specify `itemInput` for Item Inputs. <br/> Recipe Methods will specify `itemOutput` for Item Outputs. <br/> Recipe Methods will specify `fluidInput` for Fluid Inputs. <br/> Recipe Methods will specify `fluidOutput` for Fluid Outputs. <br/> Recipe Methods will specify `blockInput` for Block Inputs. <br/> Recipe Methods will specify `blockOutput` for Block Outputs. <br/> **Note: `blockInput` and `blockOutput` must be the `IItemStack`/`IIngredient` versions of blocks**
+## Dodatki przepisów
+Metody receptury określą `itemInput` dla danych wejściowych produktu. <br/> Metody przepisu określą `wyjść produktu` dla wyjść produktu. <br/> Metody przepisu określą `płynne Wejście` dla płynnych wejść. <br/> Metody przepisu określą `płynne wyjście` dla wyrzutni płynów. <br/> Metody przepisu określą `blokWejście` dla danych wejściowych bloku. <br/> Metody przepisu określą `blockOutput` dla danych wyjściowych bloku. <br/> **Uwaga: `blockInput` i `blockOutput` musi być `IItemStack`/`IIngredient` wersji bloków**
 
 ### Item Inputs
 `IItemStack`: `<minecraft:gunpowder>` * 4 <br/> `IOreDictEntry`: `<ore:ingotIron>` * 2 <br/> `null`: null
@@ -69,19 +69,19 @@ Recipe Methods will specify `itemInput` for Item Inputs. <br/> Recipe Methods wi
 ### Item Outputs
 `IItemStack`: `<minecraft:gunpowder>` * 4 <br/> `IOreDictEntry`: `<ore:ingotIron>` * 2 <br/> `ChanceItemIngredient`: `<ore:gemDiamond>` * 5, 75 <br/> `null`: null
 
-### Fluid Inputs
+### Wprowadzanie płynów
 `ILiquidStack`: `<liquid:lava>` * 1500 <br/> `null`: null
 
 ### Fluid Outputs
 `ILiquidStack`: `<liquid:lava>` * 1500 <br/> `ChanceLiquidStack` : `<liquid:water>` * 2000, 40, 250, 500 <br/> `null`: null
 
-### Block Inputs
+### Blokuj wejścia
 `IItemStack`: `<minecraft:dirt>` * 4 <br/> `IOreDictEntry`: `<ore:blockIron>` * 2 <br/> `null`: null
 
-### Block Outputs
+### Blokuj wyjścia
 `IItemStack`: `<minecraft:dirt>` * 4 <br/> `IOreDictEntry`: `<ore:blockIron>` * 2 <br/> `null`: null
 
-## Recipe Removals
-When specifying a recipe to remove, all that is required is for either all input or output ingredients to be specified. Ingredient chance data is not required. Again, the items must come first, followed by the fluids.
+## Usuwanie przepisów
+Określając przepis do usunięcia, wszystko, co jest wymagane dla wszystkich składników wejściowych lub wyjściowych. Dane o szansach składników nie są wymagane. Również w tym przypadku przedmioty muszą stać się na pierwszym miejscu, a następnie płyny.
 
-You may also want to remove all of a certain type of recipe - to do this, simply use the `removeAllRecipes()` method.
+Możesz również usunąć cały rodzaj receptury - aby to zrobić, użyj metody `removeAllRecipes()`.

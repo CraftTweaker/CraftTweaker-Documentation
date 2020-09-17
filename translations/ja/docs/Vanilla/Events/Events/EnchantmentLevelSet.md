@@ -1,30 +1,30 @@
 # EnchantmentLevelSetEvent
 
-The EnchantmentLevelSet Event is fired when the levels for the three potential enchantments are generated in the Enchantment Table.
+EnchantmentLevelSet イベントは、3 つの潜在エンチャントのレベルがエンチャントテーブルで生成されたときに発生します。
 
-## Notes
+## メモ
 
-`event.enchantRow` lists the row (1-3) of the Enchantment Table, while `event.originalLevel` represents the original level of the row. `event.power` is the cumulative value of bookshelves surrounding the Enchantment Table, while `event.item` is the item that is being enchanted.
+`event.enchantRow` はエンチャントテーブルの行 (1-3) を、 `event.originalLevel` は行の元のレベルを表します。 `event.power` はエンチャント表を囲む本棚の累積値で、 `event.item` はエンチャントされているアイテムです。
 
-`event.level` can be arbitrarily modified to a value between 0 & 30.
+`event.level` は任意で 0 & 30 の値に変更できます。
 
-## Event Class
+## イベントクラス
 You will need to cast the event in the function header as this class:  
 `crafttweaker.event.EnchantmentLevelSetEvent`  
 You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
 
-## Event interface extensions
-EnchantmentLevelSet Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+## イベントインターフェースの拡張
+EnchantmentLevelSet Events は以下のインターフェイスを実装しており、それらのメソッド/getters/settersもすべて呼び出すことができます。
 
 - [IEventPositionable](/Vanilla/Events/Events/IEventPositionable/)
 
 ## ZenGetters
 
-| ZenGetter       | ZenSetter | 戻り値の型                                    |
-| --------------- | --------- | ---------------------------------------- |
-| `world`         |           | [IWorld](/Vanilla/World/IWorld/)         |
-| `enchantRow`    |           | int型                                     |
-| `power`         |           | int                                      |
-| `item`          |           | [IItemStack](/Vanilla/Items/IItemStack/) |
-| `originalLevel` |           | int型                                     |
-| `level`         | `level`   | int型                                     |
+| ZenGetter    | ZenSetter | 戻り値の型                                    |
+| ------------ | --------- | ---------------------------------------- |
+| `世界`         |           | [IWorld](/Vanilla/World/IWorld/)         |
+| `enchantRow` |           | int型                                     |
+| `パワー`        |           | int                                      |
+| `項目`         |           | [IItemStack](/Vanilla/Items/IItemStack/) |
+| `オリジナルレベル`   |           | int型                                     |
+| `レベル`        | `レベル`     | int型                                     |

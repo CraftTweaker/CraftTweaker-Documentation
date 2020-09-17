@@ -1,24 +1,24 @@
-# Alloying
+# Stopień
 
-The `Alloy` package allows you to add or remove Alloy recipes.
+Pakiet `Stop` pozwala na dodanie lub usunięcie przepisów stopu.
 
-## Calling
+## Dzwonienie
 
-You can call the Alloy package using `mods.tconstruct.Alloy`
+Możesz wywołać pakiet stopu używając `mods.tconstruct.Alloy`
 
-## Add Alloy Recipes
+## Dodaj receptury stopu
 
 ```zenscript
-//mods.tconstruct.Alloy.addRecipe(ILiquidStack output, ILiquidStack[] inputs);
+//mods.tconstruct.Alloy.addRecipe(ILiquidStack, ILiquidStack[] wejścia);
 mods.tconstruct.Alloy.addRecipe(<liquid:water> * 10, [<liquid:lava> * 10, <liquid:molten_iron> * 5]);
 ```
 
-## Removing Alloy Recipes
+## Usuwanie przepisów stopu
 
 ```zenscript
-//mods.tconstruct.Alloy.removeRecipe(ILiquidStack output);
+//mods.tconstruct.Alloy.removeRecipe(ILiquidStack);
 mods.tconstruct.Alloy.removeRecipe(<liquid:water>);
 
-//mods.tconstruct.Alloy.removeRecipe(ILiquidStack output, ILiquidStack[] inputs);
+//mods.tconstruct.Alloy.removeRecipe(ILiquidStack output, ILiquidStack[] wejścia);
 mods.tconstruct.Alloy.removeRecipe(<liquid:water>, [<liquid:lava>, <liquid:molten_iron>]);
 ```

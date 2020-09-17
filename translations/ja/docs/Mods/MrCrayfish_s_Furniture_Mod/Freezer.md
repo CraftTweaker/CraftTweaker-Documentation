@@ -1,21 +1,21 @@
-# Freezer
+# フリーザー
 
-The Freezer is the bottom compartment of the Fridge.
+冷凍庫は冷蔵庫の下部コンパートメントです。
 
-It can be used to freeze items, but requires Ice to operate.
+アイテムの凍結に使用できますが、動作にはアイスが必要です。
 
-## Default Freezer Recipes
+## 既定の冷凍庫のレシピ
 
-- Water Bucket -> Ice
-- Ice -> Packed Ice
-- Lava Bucket -> Obsidian
-- Slimeball -> Snowball
-- Poisonous Potato -> Potato
-- Rotten Flesh -> Flesh
+- 水入りのバケツ->氷
+- 氷->パックドアイス
+- 溶岩入り->黒曜石
+- スライムボール -> スノーボール
+- 毒じゃがいも→じゃがいも
+- 腐った肉 -> 肉
 
-## Removing
+## 削除中
 
-## Remove matching freezer recipes.
+## 一致する冷凍庫のレシピを削除します。
 
 ```zenscript
 mods.cfm.Freezer.remove(@Optional final IIngredient output, @Optional final IIngredient input);
@@ -28,11 +28,11 @@ mods.cfm.Freezer.remove(null,<minecraft:lava_bucket>);
 mods.cfm.Freezer.remove();
 ```
 
-## Adding
+## 追加中
 
-Add a freezer recipe.
+冷凍庫のレシピを追加します。
 
-## Only supports inputs of size 1.
+## サイズ1の入力のみをサポートします。
 
 ```zenscript
 mods.cfm.Freezer.addRecipe(@Nonnull final IItemStack output, @Nonnull final IItemStack input);

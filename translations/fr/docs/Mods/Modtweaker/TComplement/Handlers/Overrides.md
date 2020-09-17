@@ -1,23 +1,23 @@
-# Overrides
+# Substitutions
 
-The Overrides package is used for adding/removing recipes from/to the melter Overrides.
+Le paquet Overrides est utilisé pour ajouter/retirer des recettes de/vers les surcharges de fonte.
 
-## Calling
+## Appel en cours
 
-You can call the Overrides package using `mods.tcomplement.Overrides`
+Vous pouvez appeler le package Overrides en utilisant `mods.tcomplement.Overrides`
 
-## Overrides entry addition
+## Remplace l'ajout de l'entrée
 
 ```zenscript
-//mods.tcomplement.Overrides.addRecipe(ILiquidStack output, IItemStack input, @Optional int temp);
+//mods.tcomplement.Overrides.addRecipe(ILiquidStack sortie, IItemStack input, @Optional int temp);
 mods.tcomplement.Overrides.addRecipe(<liquid:gold> * 100, <minecraft:gold_ingot>);
 mods.tcomplement.Overrides.addRecipe(<liquid:gold> * 100, <minecraft:gold_ingot>, 1000);
 ```
 
-## Overrides entry removal
+## Remplace la suppression de l'entrée
 
 ```zenscript
-//mods.tcomplement.Overrides.removeRecipe(ILiquidStack output, @Optional IItemStack input);
+//mods.tcomplement.Overrides.removeRecipe(ILiquidStack sortie, @Optional IItemStack input);
 mods.tcomplement.Overrides.removeRecipe(<liquid:gold>);
 mods.tcomplement.Overrides.removeRecipe(<liquid:gold>, <minecraft:gold_ore>);
 ```

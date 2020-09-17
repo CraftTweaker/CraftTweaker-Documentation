@@ -1,24 +1,24 @@
 # EntityMountEvent
 
-The EntityMount event is fired whenever an entity is mounted or dismounted from. If canceled, the entity is prevented from mounting (or dismounting).
+L'événement EntityMount est déclenché chaque fois qu'une entité est montée ou démontée. Si annulée, l'entité est empêchée de monter (ou de démonter).
 
-## Event Class
+## Classe de l'événement
 You will need to cast the event in the function header as this class:  
 `crafttweaker.event.EntityMountEvent` You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
 
-## Event interface extensions
-EntityMountEvent Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+## Extensions d'interface de l'événement
+Les événements EntityMountEvent implémentent les interfaces suivantes et peuvent également appeler toutes leurs méthodes/getters/setters :
 
 - [ILivingEvent](/Vanilla/Events/Events/ILivingEvent/)
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 
 ## ZenGetters/ZenSetters
-The following information can be retrieved/set during the event:
+Les informations suivantes peuvent être récupérées/définies pendant l'événement :
 
-| ZenGetter        | Return Type                           |
+| ZenGetter        | Type de retour                        |
 | ---------------- | ------------------------------------- |
-| `world`          | [IWorld](/Vanilla/World/IWorld/)      |
+| `monde`          | [IWorld](/Vanilla/World/IWorld/)      |
 | `mountingEntity` | [IEntity](/Vanilla/Entities/IEntity/) |
-| `mountedEntity`  | [IEntity](/Vanilla/Entities/IEntity/) |
+| `Entité montée`  | [IEntity](/Vanilla/Entities/IEntity/) |
 | `isMounting`     | boolean                               |
-| `isDismounting`  | boolean                               |
+| `Démontage`      | boolean                               |

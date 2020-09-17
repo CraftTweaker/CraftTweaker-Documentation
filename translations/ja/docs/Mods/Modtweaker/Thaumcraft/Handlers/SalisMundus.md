@@ -1,19 +1,19 @@
 # Salis Mundus
 
-This package allows you to add conversion handlers for thaumcraft's salis mundus handler.  
-These handlers are invoked when you click a block in the world with Thaumcraft's salis mundus to change them to something else.
+このパッケージでは、thaumcraft の salis mundus ハンドラの変換ハンドラを追加できます。  
+Thaumcraft の salis mundus で世界のブロックをクリックすると、これらのハンドラーが呼び出されます。
 
-If that result is a block, it will be placed in the world, if not it will be dropped as item.
+その結果がブロックの場合、ワールドに配置されます。そうでない場合はアイテムとしてドロップされます。
 
-## Import the package
+## パッケージをインポート
 
-To shorten method calls you can [import](/AdvancedFunctions/Import/) the package like so:
+メソッド呼び出しを短くするには、 [パッケージを](/AdvancedFunctions/Import/) インポートすることができます。
 
 ```zenscript
 import mods.thaumcraft.SalisMundus;
 ```
 
-## Add Recipes
+## レシピを追加
 
 You can either specify an [IBlock](/Vanilla/Blocks/IBlock/) or an [IOreDictEntry](/Vanilla/OreDict/IOreDictEntry/).  
 If you don't specify a research, this recipe will always be possible, if you do decide to specify a research string, you need to have the research unlocked in order for the conversion to work.
@@ -27,7 +27,7 @@ mods.thaumcraft.SalisMundus.addSingleConversion(IOreDictEntry in, IItemStack out
 SalisMundus.addSingleConversion(<ore:blockIron>, <minecraft:bedrock>);
 ```
 
-## Remove Recipes
+## レシピを削除
 
 You can also remove all recipes that return a matching item.  
 This handler checks if the parameter provided matches with the output itemStack, so you could also remove all recipes using the wildcard ingredient `<*>`.
@@ -35,9 +35,9 @@ This handler checks if the parameter provided matches with the output itemStack,
 ```zenscript
 mods.thaumcraft.SalisMundus.removeSingleConversion(IIngredient output);
 
-//Removes ALL registered handlers
+//登録されたすべてのハンドラを削除します。
 mods.thaumcraft.SalisMundus.removeSingleConversion(<*>);
 
-//Only removes the crucible handler
+//るつぼのハンドラを削除します。
 mods.thaumcraft.SalisMundus.removeSingleConversion(<thaumcraft:crucible>);
 ```

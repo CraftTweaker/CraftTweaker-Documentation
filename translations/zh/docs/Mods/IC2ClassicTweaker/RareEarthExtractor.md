@@ -1,20 +1,20 @@
-# Rare Earth Extractor
+# 稀有地球提取器
 
 ## 所属包名
 
 ```zenscript
-import mods.ic2.RareEarthExtractor;
+导入 mods.ic2.RareEarthExtrator;
 ```
 
-## Method
+## 方法
 
-- **float value**
-- **[IItemStack](/Vanilla/Items/IItemStack/)... inputs** Can have more then one specified for the input. If so all the specified items give the same specified value.
+- **浮点数**
+- **[IItemStack](/Vanilla/Items/IItemStack/)... 输入** 可以为输入指定多于一个。 如果是，所有指定项目都给出相同的指定值。
 
-### Add Rare Earth Entries
+### 添加稀土条目
 
 ```zenscript
-mods.ic2.RareEarthExtractor.addRareEarthEntries(float value, IItemStack... input);
+mods.ic2.RareEarthExtractor.addRareEarthEntries(float值, IItemStack... 输入);
 
 mods.ic2.RareEarthExtractor.addRareEarthEntries(1.0F, <minecraft:bedrock>, <minecraft:iron_block>);
 ```

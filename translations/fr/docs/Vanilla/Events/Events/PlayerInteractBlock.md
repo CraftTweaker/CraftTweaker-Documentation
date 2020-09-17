@@ -1,33 +1,33 @@
-# PlayerInteractBlock
+# format@@0 PlayerInteractBlock
 
-The PlayerInteractBlock Event is fired whenever a player right clicks a block.  
-It can be canceled to prevent any other events from taking place. If the event is canceled, a specific result of success, fail or pass can be provided. By default, the result is pass.
+L'événement PlayerInteractBlock est lancé chaque fois qu'un joueur fait un clic droit sur un bloc.  
+Il peut être annulé pour empêcher tout autre événement de se produire. Si l'événement est annulé, un résultat spécifique de succès, d'échec ou de passe peut être fourni. Par défaut, le résultat est passé.
 
-## Event Class
+## Classe de l'événement
 
-You will need to cast the event in the function header as this class:  
-`crafttweaker.event.PlayerInteractBlockEvent`  
-You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
+Vous devrez lancer l'événement dans l'en-tête de la fonction comme cette classe:  
+`crafttweaker.event. layerInteractBlockEvent`  
+Vous pouvez, bien sûr, également [importer](/AdvancedFunctions/Import/) la classe avant et utiliser ce nom alors.
 
-## Event interface extensions
+## Extensions d'interface de l'événement
 
-PlayerInteractBlock Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+Les événements PlayerInteractBlock implémentent les interfaces suivantes et peuvent également appeler toutes leurs méthodes/getters/setters :
 
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
-- [PlayerInteract](/Vanilla/Events/Events/PlayerInteract/)
-- [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
+- [Interagir avec le joueur](/Vanilla/Events/Events/PlayerInteract/)
+- [Evénement IPlayer](/Vanilla/Events/Events/IPlayerEvent/)
 
 ## ZenGetters
 
-The following information can be retrieved from the event:
+Les informations suivantes peuvent être récupérées à partir de l'événement :
 
-| zengetter            | zengetter            | type                                   |
-| -------------------- | -------------------- | -------------------------------------- |
-| `hitvector`          |                      | [ivector3d](/vanilla/world/ivector3d/) |
-| `useblock`           | `useblock`           | string ("allow" / "deny" / "default")  |
-| `useitem`            | `useitem`            | string ("allow" / "deny" / "default")  |
-| `cancellationResult` | `cancellationResult` | string ("success" / "pass" / "fail")   |
+| zengetter                  | zengetter                  | Type de type                           |
+| -------------------------- | -------------------------- | -------------------------------------- |
+| `hitvector`                |                            | [ivector3d](/vanilla/world/ivector3d/) |
+| `Bloc d'utilisation`       | `Bloc d'utilisation`       | chaîne ("allow" / "deny" / "default")  |
+| `useitem`                  | `useitem`                  | chaîne ("allow" / "deny" / "default")  |
+| `Résultat de l'annulation` | `Résultat de l'annulation` | chaîne ("success" / "pass" / "fail")   |
 
-## ZenMethods
+## Méthodes Zen
 
-- `event.cancel()` sets the event as cancelled.
+- `event.cancel()` définit l'événement comme annulé.

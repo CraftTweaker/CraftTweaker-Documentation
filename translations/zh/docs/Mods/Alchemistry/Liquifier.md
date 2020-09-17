@@ -1,14 +1,14 @@
 # Liquifier
 
-# Package
+# 所属包名
 ```zenscript
 mods.alchemistry.Liquifier
 ```
 
 ## 方法
-**[IItemStack](/Vanilla/Liquids/ILiquidStack/) output** - The output of the recipe.
+**[IItemStack](/Vanilla/Liquids/ILiquidStack/) 输出** - 该配方的输出。
 
-**[IItemStack](/Vanilla/Items/IItemStack/) input** - The input of the recipe.
+**[IItemStack](/Vanilla/Items/IItemStack/) 输入** - 该配方的输入.
 
 ## 添加配方
 ```zenscript

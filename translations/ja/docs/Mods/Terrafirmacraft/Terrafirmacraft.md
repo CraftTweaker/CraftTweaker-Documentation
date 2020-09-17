@@ -1,9 +1,9 @@
 # Terrafirmacraft
 
-## Information
-Terrafirmacraft The Next Generation(or TFC TNG for short) is a vanilla overhaul mod. The goal of TFC is to make things more believable, and to give the player a sense of accomplishment. Mastering skills, and searching far and wide to gather materials before you can build amazing castles, homes, fortresses, towns, cities, etc. The overhauled terrain generation also creates a beautiful, varied background as a canvas to start your builds.
+## 情報
+Terrafirmacraft 次世代(略して TFC TNG)は、バニラオーバーホールの Mod です。 TFCの目標は、物事をより信じられるようにすることであり、プレーヤーに達成感を与えることです。 スキルを習得し、材料を収集するために遠くから広く探して、素晴らしい城、家、要塞、町、都市などを建設することができます。 オーバーホールされた地形の生成は、あなたのビルドを開始するためのキャンバスとして美しく、多様な背景を作成します。
 
-## For More Information
-https://www.curseforge.com/minecraft/mc-mods/tfcraft
-## Bug Reports
+## 詳細はこちら
+https://www.cursseforge.com/minecraft/mc-mods/tfcraft
+## バグレポート
 https://github.com/TerraFirmaCraft/TerraFirmaCraft/issues/new?assignees=&labels=unconfirmed+bug&template=bug_report.md&title=

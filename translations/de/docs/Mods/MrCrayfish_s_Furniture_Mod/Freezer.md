@@ -1,46 +1,46 @@
-# Freezer
+# Tiefkühler
 
-The Freezer is the bottom compartment of the Fridge.
+Der Gefrierschrank ist das untere Fach des Kühlschranks.
 
-It can be used to freeze items, but requires Ice to operate.
+Es kann zum Einfrieren von Gegenständen verwendet werden, benötigt aber Eis zum Betreiben.
 
-## Default Freezer Recipes
+## Standard Freezer-Rezepte
 
-- Water Bucket -> Ice
-- Ice -> Packed Ice
-- Lava Bucket -> Obsidian
-- Slimeball -> Snowball
-- Poisonous Potato -> Potato
-- Rotten Flesh -> Flesh
+- Wassereimer -> Eis
+- Eis -> Gepacktes Eis
+- Lava Eimer -> Obsidian
+- Schleimball -> Schneeball
+- Giftige Kartoffel -> Kartoffel
+- Verfaultes Fleisch -> Fleisch
 
-## Removing
+## Entfernen
 
-## Remove matching freezer recipes.
+## Entfernen Sie passende Gefrierrezepte.
 
 ```zenscript
-mods.cfm.Freezer.remove(@Optional final IIngredient output, @Optional final IIngredient input);
+mods.cfm.Freezer.remove(@Optionale endgültige IIngredient-Ausgabe, @Optionale endgültige IIngredienteneingabe);
 
-// Remove recipes that result in Ice
-mods.cfm.Freezer.remove(<minecraft:ice>);
-// Remove recipes that require a Lava Bucket
+// Rezepte entfernen, die in Ice
+mods.cfm.Freezer resultieren. emove(<minecraft:ice>);
+// Rezepte entfernen, die einen Lava-Eimer erfordern
 mods.cfm.Freezer.remove(null,<minecraft:lava_bucket>);
-// Remove all recipes
+// Rezepte entfernen
 mods.cfm.Freezer.remove();
 ```
 
-## Adding
+## Hinzufügen
 
-Add a freezer recipe.
+Fügen Sie ein Gefrierrezept hinzu.
 
-## Only supports inputs of size 1.
+## Unterstützt nur Eingaben der Größe 1.
 
 ```zenscript
-mods.cfm.Freezer.addRecipe(@Nonnull final IItemStack output, @Nonnull final IItemStack input);
+mods.cfm.Freezer.addRecipe(@Nonnull letzte IItemStack-Ausgabe, @Nonnull endgültige IItemStack-Eingabe);
 
-// Add a recipe that makes 16 Ice from a Lava Bucket
-mods.cfm.Freezer.addRecipe(<minecraft:ice>.withAmount(16),<minecraft:lava_bucket>);
-// Adds a recipe that makes 16 Obsidian from a Water Bucket
-mods.cfm.Freezer.addRecipe(<minecraft:obsidian>.withAmount(16),<minecraft:water_bucket>);
-// Adds a recipe that makes a Water Bucket from a Bucket
+// Füge ein Rezept hinzu, das 16 Eis aus einem Lava-Eimer macht
+mods.cfm.Freezer.addRecipe(<minecraft:ice>. ithAmount(16),<minecraft:lava_bucket>);
+// Fügt ein Rezept hinzu, das 16 Obsidian aus einem Wassereimer macht:
+mods.cfm.Freezer.addRecipe(<minecraft:obsidian>. ithAmount(16),<minecraft:water_bucket>);
+// Fügt ein Rezept hinzu, das einen Wassereimer aus einem Eimer macht
 mods.cfm.Freezer.addRecipe(<minecraft:water_bucket>,<minecraft:bucket>);
 ```

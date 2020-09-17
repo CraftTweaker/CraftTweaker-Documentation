@@ -1,22 +1,22 @@
-# ProjectileImpactThrowable
+# ProyectileImpactable
 
-This event is fired whenever a throwable projectile impacts an entity but before damage, etc, is calculated. It is **cancelable**, and if canceled, the impact will not be processed.
+Este evento se dispara cada vez que un proyectil arrojable afecta a una entidad pero antes de daño, etc, se calcula. Es **cancelable**y, si se cancela, el impacto no será procesado.
 
-## Importing the class
-It might be required to [import](/AdvancedFunctions/Import/) the class to avoid errors.  
-`import crafttweaker.event.ProjectileImpactThrowableEvent;`
+## Importar la clase
+Podría ser necesario [importar](/AdvancedFunctions/Import/) la clase para evitar errores.  
+`importar crafttweaker.event.ProjectileImpactThrowableEvent;`
 
-## Extending IEntityEvent
-ProjectileImpactThrowable Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+## Extendiendo IEntityEvent
+ProjectileImpactThrowable Events implementan las siguientes interfaces y son capaces de llamar a todos sus métodos/getters/setters también:
 
-- [IProjectileEvent](/Vanilla/Events/Events/IProjectileEvent/)
+- [Evento Iproyectil](/Vanilla/Events/Events/IProjectileEvent/)
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 
-## ZenGetters and ZenSetters
+## ZenGetters y ZenSetters
 
-The following information can be retrieved from the event:
+La siguiente información puede ser recuperada del evento:
 
-| ZenGetter  | ZenSetter | Type                                                      |
-| ---------- | --------- | --------------------------------------------------------- |
-| `fireball` |           | [IEntity](/Vanilla/Entities/IEntity/)                     |
-| `shooter`  |           | [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) |
+| ZenGetter       | Ajuste | Tipo                                                      |
+| --------------- | ------ | --------------------------------------------------------- |
+| `bola de fuego` |        | [IEntity](/Vanilla/Entities/IEntity/)                     |
+| `tirador`       |        | [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) |

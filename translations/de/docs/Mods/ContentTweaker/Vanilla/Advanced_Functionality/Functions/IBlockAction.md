@@ -1,21 +1,21 @@
 # IBlockAction
 
-The IBlockAction function can be added to a [Block](/Mods/ContentTweaker/Vanilla/Creatable_Content/Block/) and, depending on where you added it, will be triggered when the block is placed or broken.
+Die IBlockAction Funktion kann einem [Block](/Mods/ContentTweaker/Vanilla/Creatable_Content/Block/) hinzugefügt werden und je nachdem, wo Sie es hinzugefügt haben, wird ausgelöst, wenn der Block platziert oder kaputt ist.
 
 ## Dieses Paket importieren
 
-It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
-`import mods.contenttweaker.IBlockAction;`
+Es kann erforderlich sein, dass Sie das Paket importieren, wenn Sie irgendwelche Probleme haben. Seien Sie also besser sicher als entschuldigen und fügen Sie den Import hinzu.  
+`mods.contenttweaker.IBlockAction;`
 
-## Parameters
+## Parameter
 
-The IBlockAction is a function with the following parameters:
+Die IBlockAction ist eine Funktion mit den folgenden Parametern:
 
-- [IWorld](/Mods/ContentTweaker/Vanilla/Types/World/IWorld/) world → The world the block is in
-- [IBlockPos](/Mods/ContentTweaker/Vanilla/Types/Block/IBlockPos/) position → The Block's position
-- [ICTBlockState](/Mods/ContentTweaker/Vanilla/Types/Block/ICTBlockState/) state → Contains information on the block, such as the Block itself and its metadata
+- [IWelt](/Mods/ContentTweaker/Vanilla/Types/World/IWorld/) → Die Welt, in der der Block ist
+- [IBlockPos](/Mods/ContentTweaker/Vanilla/Types/Block/IBlockPos/) Position → Position des Blocks
+- [ICTBlockState](/Mods/ContentTweaker/Vanilla/Types/Block/ICTBlockState/) Status → Enthält Informationen über den Block, wie den Block selbst und seine Metadaten
 
-The function doesn't have a return value!
+Die Funktion hat keinen Rückgabewert!
 
 ## Beispiel
 

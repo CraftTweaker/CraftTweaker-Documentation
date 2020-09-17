@@ -1,53 +1,53 @@
-# Refinery
+# Raffinerie
 
-The Refinery is a multiblock structure which uses heat to convert an input fluid to two or more output fluids. The multiblock consists of two to four (inclusive) refinery blocks, and the number of possible output fluids is limited by the number of refinery blocks in the structure.
+La Refinery est une structure multibloc qui utilise la chaleur pour convertir un fluide d'entrée en deux ou plusieurs fluides de sortie. Le multibloc se compose de deux à quatre blocs de raffinerie (inclus) et le nombre de fluides de production possibles est limité par le nombre de blocs de raffinerie dans la structure.
 
-Prior to PneumaticCraft: Repressurized v0.9.0, the minimum temperature for any Refinery recipe (i.e. the temperature at which procesing starts) was always 373K, or 100°C. However, in v0.9.0 and later, it is possible to specify a minimum temperature when adding a Refinery recipe.
+Avant le PneumaticCraft: Repressurisé v0.9.0, la température minimale de toute recette de Refinerie (c'est-à-dire la température à laquelle commence le traitement) était toujours de 373K, ou de 100°C. Cependant, en v0.9.0 et plus tard, il est possible de spécifier une température minimale lors de l'ajout d'une recette Refinery .
 
-The Refinery will start processing fluids at the recipe's minimum temperature, and will work faster as the temperature rises.
+La raffinerie commencera à traiter les liquides à la température minimale de la recette, et fonctionnera plus rapidement à mesure que la température augmente.
 
-Note that it's possible to have two or more recipes with the same input, as long as the number of outputs is different. In this case, the recipe producing the most possible outputs (given the number of refinery blocks in the multiblock) will be used.
+Notez qu'il est possible d'avoir deux recettes ou plus avec la même entrée, à condition que le nombre de sorties soit différent. Dans ce cas, la recette produisant les sorties les plus possibles (compte tenu du nombre de blocs de raffinerie dans le multibloc) sera utilisée.
 
-## Calling
+## Appel en cours
 
-You can call the Refinery package using `mods.pneumaticcraft.refinery`.
+Vous pouvez appeler le package Refinery en utilisant `mods.pneumaticcraft.refinery`.
 
-## Removing
+## Enlèvement
 
-This function removes the first recipe it finds which matches all of the given [IIngredient](/Vanilla/Variable_Types/IIngredient/) `outputs`:
+Cette fonction supprime la première recette qu'elle trouve qui correspond à tous les [ingrédients](/Vanilla/Variable_Types/IIngredient/) `envoyés`:
 
 ```zenscript
-mods.pneumaticcraft.refinery.removeRecipe(IIngredient[] outputs);
+mods.pneumaticcraft.refinery.removeRecipe(IIngredient[] sorties);
 ```
 
-This function removes the first recipe it finds which matches the given [IIngredient](/Vanilla/Variable_Types/IIngredient/) `input`:
+Cette fonction supprime la première recette qu'elle trouve qui correspond à l'entrée [Ingrédient](/Vanilla/Variable_Types/IIngredient/) ``:
 
 ```zenscript
 mods.pneumaticcraft.refinery.removeRecipes(IIngredient input);
 ```
 
-This function will remove *all* Refinery recipes:
+Cette fonction supprimera *toutes les recettes* de Raffinerie :
 
 ```zenscript
 mods.pneumaticcraft.refinery.removeAllRecipes();
 ```
 
-## Adding
+## Ajout en cours
 
-These functions add a new recipe to the Refinery:
+Ces fonctions ajoutent une nouvelle recette à la raffinerie:
 
 ```zenscript
-// Add a recipe with the default minimum temperature of 373K (100°C)
-mods.pneumaticcraft.refinery.addRecipe(ILiquidStack input, ILiquidStack[] outputs);
+// Ajoute une recette avec la température minimale par défaut de 373K (100°C)
+mods.pneumaticcraft.refinery. ddRecipe(ILiquidStack entrée, ILiquidStack[] sorties);
 
-// (v0.9.0+ required) Add a recipe with a given minimum temperature
-mods.pneumaticcraft.refinery.addRecipe(int minimumTemperature, ILiquidStack input, ILiquidStack[] outputs);
+// (v0.9.0+ requis) Ajoute une recette avec une température minimale donnée
+mods . neumaticcraft.raffinerie. ddRecipe(int minimumTemperature, ILiquidStack entrée, ILiquidStack[] sorties);
 
 
-// Example: both recipes use water as input
-// First recipe will be used in a 2-block refinery
-mods.pneumaticcraft.refinery.addRecipe(<liquid:water> * 10, [<liquid:lava> * 2, <liquid:oil> * 5]);
-// Second recipe will be used in a 3- or 4-block refinery,
-// and also requires a minimum temperature of 473K, or 200°C
-mods.pneumaticcraft.refinery.addRecipe(473, <liquid:water> * 10, [<liquid:lava> * 2, <liquid:oil> * 5, <liquid:lpg> * 2]);
+// Exemple: les deux recettes utilisent l'eau comme entrée
+// La première recette sera utilisée dans une raffinerie de 2 blocs
+mods. neumaticcraft.raffinerie. ddRecipe(<liquid:water> * 10, [<liquid:lava> * 2, <liquid:oil> * 5]);
+// La seconde recette sera utilisée dans une raffinerie de 3 ou 4 blocs,
+// et nécessite également une température minimale de 473K, ou 200°C
+mods. neumaticcraft.refinery.addRecipe(473, <liquid:water> * 10, [<liquid:lava> * 2, <liquid:oil> * 5, <liquid:lpg> * 2]);
 ```

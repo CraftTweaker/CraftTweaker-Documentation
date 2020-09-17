@@ -1,17 +1,18 @@
-# Heat Exchanger
-**Note: Partially Broken**
+# 熱交換
+**注意：部分的に壊れている**
 
-## Importing the Package
-`mods.nuclearcraft.HeatExchanger`
+## パッケージのインポート
+`mods.nuclearcraft.HeatExchangerHeatExchanger`
 
-## Adding Recipes
+## レシピを追加中
 ```zenscript
-mods.nuclearcraft.HeatExchanger.addRecipe(ILiquidStack fluidInput, ILiquidStack fluidOutput, double heatRequired, int temperatureIn, int temperatureOut);
+mods.nuclearcraft.Supercoolermods.nuclearcraft.HeatExchanger.addRecipe(ILiquidStack fluidInput, ILiquidStack fluidOutput, double heatRequired, int temperatureIn, int temperatureOut);
 ```
 
-## Removing Recipes
+## レシピを削除
 ```zenscript
-mods.nuclearcraft.HeatExchanger.removeRecipeWithInput(ILiquidStack fluidInput);
+mods.nuclearcraft.SupercoolerHeatExchanger.removeRecipeWithInput(ILiquidStack fluidInput);
+mods.nuclearcraft.mods.nuclearcraft.HeatExchanger.removeRecipeWithInput(ILiquidStack fluidInput);
 mods.nuclearcraft.HeatExchanger.removeRecipeWithOutput(ILiquidStack fluidOutput);
-mods.nuclearcraft.HeatExchanger.removeAllRecipes();
+mods.nuclearcraft.HeatExchanger.removeAllRecipes();HeatExchanger.removeAllRecipes();
 ```

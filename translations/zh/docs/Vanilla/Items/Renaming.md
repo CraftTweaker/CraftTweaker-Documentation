@@ -1,33 +1,33 @@
-# Renaming
+# 重命名中
 
-Always reading 'chest' is annoying, isn't it?
+总是阅读“胸部”令人烦恼，难道不是吗？
 
-That's why there's the possibility to rename stuff.
+这就是为什么可以重命名物品。
 
-## Changing the display name
+## 更改显示名称
 
-This is probably the easiest way to achieve a different item or block name. You rename `item` to `newName`:
+这也许是实现不同项目或方块名称的最简单方法。 您将 `项目` 重命名为 `新名称`：
 
 ```zenscript
-item.displayName = newName;
+item.displayname = newname;
 
-//Example
+/示例
 <minecraft:chest>.displayName = "Storage Box Deluxe";
 ```
 
-`item` is an [IItemStack](/Vanilla/Items/IItemStack/).  
-`newName` is a String.
+`项目` 是 [IItemStack](/Vanilla/Items/IItemStack/)。  
+`新名称` 是一个字符串。
 
-## Changing the localization
+## 更改本地化
 
-If some modded inventories still show the item's old name instead of the new one, you need to change the localization. You can read what that means on the `game` entry.
+如果某些moded的库存仍然显示项目的旧名称而不是新的名称, 你需要更改本地化。 您可以阅读 `游戏` 条条目上的意思。
 
 ```zenscript
-game.setLocalization(languageCode,unlocalizedName,newName);
+game.setLocalization(languageCode,unlocalizedName,newname);
 
 game.setLocalization("tile.chest.name","StorageBox Deluxe")
 ```
 
-`languageCode` is a string and optional. If you omit it, it will apply the localization regardless of the client's set language.  
-`unlocaLizedName` is a string.  
-`newName` is a string.
+`语言代码` 是一个字符串和可选的。 如果您省略它，它将应用本地化，而不论客户端的设置语言。  
+`解锁的名称` 是一个字符串。  
+`新名称` 是一个字符串。

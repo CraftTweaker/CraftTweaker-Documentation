@@ -1,22 +1,22 @@
-# IMobSpawnerBaseLogic
+# format@@0 IMobSpawnerBaseLogic
 
-The IMobSpawnerBaseLogic object contains all kinds of information on how and where to spawn something.
+L'objet IMobSpawnerBaseLogic contient toutes sortes d'informations sur comment et où faire apparaître quelque chose.
 
-## Importing the class
+## Importation de la classe
 
-It might be required to [import](/AdvancedFunctions/Import/) the class to avoid errors.  
-`import crafttweaker.tileentity.IMobSpawnerBaseLogic;`
+Il pourrait être nécessaire de [importer](/AdvancedFunctions/Import/) la classe pour éviter les erreurs.  
+`importer crafttweaker.tileentity.IMobSpawnerBaseLogic;`
 
 ## ZenGetters
 
-| ZenGetter  | ZenSetter          |                                       |
-| ---------- | ------------------ | ------------------------------------- |
-| `nbtData`  | `nbtData`          | [IData](/Vanilla/Data/IData/)         |
-|            | `entityDefinition` | [IPlayer](/Vanilla/Players/IPlayer/)  |
-| `world`    |                    | [IWorld](/Vanilla/World/IWorld)       |
-| `blockPos` |                    | [IBlockPos](/Vanilla/World/IBlockPos) |
+| ZenGetter      | ZenSetter                |                                        |
+| -------------- | ------------------------ | -------------------------------------- |
+| `Données nbt`  | `Données nbt`            | [IData](/Vanilla/Data/IData/)          |
+|                | `Définition de l'entité` | [IPlayer](/Vanilla/Players/IPlayer/)   |
+| `monde`        |                          | [IWorld](/Vanilla/World/IWorld)        |
+| `Pos de blocs` |                          | [Pos IBlock](/Vanilla/World/IBlockPos) |
 
-## ZenMethods
+## Méthodes Zen
 
 ```zenscript
 void updateSpawner();

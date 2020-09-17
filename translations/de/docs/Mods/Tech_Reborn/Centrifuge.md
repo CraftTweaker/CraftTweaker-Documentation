@@ -1,14 +1,14 @@
-# Centrifuge
+# Zentrifuge
 
-## Importing the Package
+## Paket wird importiert
 `mods.techreborn.centrifuge`
 
-## Adding Recipes
+## Rezepte hinzufügen
 ```zenscript
 mods.techreborn.centrifuge.addRecipe(IItemStack output1, IItemStack output2, IItemStack output3, IItemStack output4, IIngredient input1, IIngredient input2, int ticktime, int euTick);
 ```
 
-## Removing Recipes
+## Rezepte entfernen
 ```zenscript
 mods.techreborn.centrifuge.removeInputRecipe(IIngredient iIngredient);
 mods.techreborn.centrifuge.removeRecipe(IItemStack output);

@@ -1,6 +1,6 @@
-# Loot Bags
+# Beute Taschen
 
-This package allows you to add and remove items to/from the Loot Bags.
+Dieses Paket erlaubt das Hinzufügen und Entfernen von Elementen in die Beutetaschen oder aus dem Beutebeutel.
 
 ## Dieses Paket importieren
 
@@ -10,27 +10,27 @@ You can [import](/AdvancedFunctions/Import/) the package and its methods to faci
 import mods.thaumcraft.LootBag;
 ```
 
-## Loot types
+## Beute Typen
 
-You need to provide an array of one or multiple numbers from 0 to 2 (inclusive) to the functions.  
-Those determine the type of lootbag to be affected.
+Sie müssen den Funktionen ein Array mit einer oder mehreren Zahlen von 0 bis 2 (inklusive) zur Verfügung stellen.  
+Diejenigen, die die Art der Beutetasche bestimmen, die betroffen sein soll.
 
-- 0: Common
-- 1: Uncommon
-- 2: Rare
+- 0: Häufig
+- 1: Selten
+- 2: Selten
 
-## Adding items
+## Hinzufügen von Elementen
 
-Notice: Gold coins have a value of 2000, diamonds are 50.
+Hinweis: Gold Münzen haben einen Wert von 2000, Diamanten sind 50.
 
 ```zenscript
-//mods.thaumcraft.LootBag.addLoot(WeightedItemStack stack, int[] bagTypes)
+//mods.thaumcraft.LootBag.addLoot(WeightedItemStack stack, int[] bagTypen)
 mods.thaumcraft.LootBag.addLoot(<minecraft:dirt>%20000, [0,1,2]);
 ```
 
-## Removing items
+## Entferne Elemente
 
 ```zenscript
-//mods.thaumcraft.LootBag.removeLoot(IItemStack stack, int[] bagTypes);
+//mods.thaumcraft.LootBag.removeLoot(IItemStack Stack, int[] bagTypen);
 mods.thaumcraft.LootBag.removeLoot(<minecraft:gold_nugget>, [1,2]);
 ```

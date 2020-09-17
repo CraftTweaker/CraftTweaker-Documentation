@@ -1,15 +1,15 @@
 # Iterable
 
-The IterableAnnotation can be applied to a class to allow ZS Iterating over it.  
-There are three kinds of IterableAnnotations:
+IterableAnnotationは、クラスに適用して、ZS上でのイテレーティングを可能にすることができます。  
+IterableAnnotationには3種類あります。
 
-- `@IterableSimple` (needs to implement `Iterable`)
-- `@IterableList` (needs to implement `List`)
-- `@IterableMap` (needs to implement `Map`)
+- `@IterableSimple` ( `Iterable` を実装する必要がある )
+- `@IterableList` ( `List` を実装する必要があります)
+- `@IterableMap` ( `Map` を実装する必要があります )
 
-## Example
+## 例
 
-[CraftTweaker's IOreDict](https://github.com/jaredlll08/CraftTweaker/blob/1.12/CraftTweaker2-API/src/main/java/crafttweaker/api/oredict/IOreDict.java)
+[CraftTweakerのIOreDict](https://github.com/jaredlll08/CraftTweaker/blob/1.12/CraftTweaker2-API/src/main/java/crafttweaker/api/oredict/IOreDict.java)
 
 ```java
 @ZenClass("crafttweaker.oredict.IOreDict")
@@ -42,10 +42,10 @@ public interface IOreDict extends Iterable<IOreDictEntry> {
                 .map(CraftTweakerMC::getOreDict)
                 .iterator();
 
-    }
+}
 ```
 
-## How would that be useable in ZS?
+## それはZSでどのように使えるでしょうか?
 
 ```zenscript
 for oreDictEntry in oreDict {
@@ -53,7 +53,7 @@ for oreDictEntry in oreDict {
 }
 ```
 
-## What Classes can be annotated || Additional Info
+## クラスに注釈を付けることができるもの || 追加情報
 
-You can annotate all classes that implement the required interface.  
-You need to provide a String value that refers to the Iterated [ZenScript's class name](/Dev_Area/ZenAnnotations/Annotation_ZenClass/).
+必要なインターフェイスを実装するすべてのクラスに注釈を付けることができます。  
+Iterated [ZenScriptのクラス名](/Dev_Area/ZenAnnotations/Annotation_ZenClass/) を参照する文字列値を指定する必要があります。

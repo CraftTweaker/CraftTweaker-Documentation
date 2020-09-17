@@ -1,16 +1,16 @@
-# Alloy Furnace
+# Horno de Aleación
 
-## Importing the Package
-`mods.nuclearcraft.alloy_furnace`
+## Importando el Paquete
+`mods.nuclearcraft.alloy_horno`
 
-## Adding Recipes
+## Añadiendo recetas
 ```zenscript
 mods.nuclearcraft.alloy_furnace.addRecipe([itemInput1, itemInput2, itemOutput, @Optional double timeMultiplier, @Optional double powerMultiplier, @Optional double processRadiation]);
 ```
 
-## Removing Recipes
+## Eliminando recetas
 ```zenscript
 mods.nuclearcraft.alloy_furnace.removeRecipeWithInput([itemInput1, itemInput2]);
-mods.nuclearcraft.alloy_furnace.removeRecipeWithOutput([itemOutput1]);
+mods.nuclearcraft.alloy_furnace.removeRecipeWithSalput([itemOutput1]);
 mods.nuclearcraft.alloy_furnace.removeAllRecipes();
 ```

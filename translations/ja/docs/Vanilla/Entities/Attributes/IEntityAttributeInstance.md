@@ -1,28 +1,28 @@
 # IEntityAttributeInstance
 
-## Importing the package
+## パッケージのインポート
 
 It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
 `import crafttweaker.entity.AttributeInstance;`
 
 ## ZenGetters
 
-| ZenGetter      | GetterMethod        | Return Type                                                        |
+| ZenGetter      | GetterMethod        | 戻り値                                                                |
 | -------------- | ------------------- | ------------------------------------------------------------------ |
-| attribute      | getAttribute()      | [IEntityAttribute](/Vanilla/Entities/Attributes/IEntityAttribute/) |
+| 属性             | getAttribute()      | [IEntityAttribute](/Vanilla/Entities/Attributes/IEntityAttribute/) |
 | baseValue      | getBaseValue()      | double                                                             |
-| modifiers      | getModifiers()      | `List<IEntityAttrubuteModifier>`                             |
+| 修飾子            | getModifiers()      | `リスト<IEntityAttrubuteModifier>`                              |
 | attributeValue | getAttributeValue() | double                                                             |
 
 ## ZenSetters
 
-| ZenSetter | SetterMethod        | Parameter Type |
-| --------- | ------------------- | -------------- |
-| baseValue | setBaseValue(value) | double         |
+| ZenSetter | SetterMethod         | パラメータタイプ |
+| --------- | -------------------- | -------- |
+| baseValue | setBaseValue (value) | double   |
 
-## Modifier Methods
+## Modifierメソッド
 
-- `List<IEntityAttrubuteModifier>` getModifiersByOperation(int operation)
+- `リスト<IEntityAttrubuteModifier>` getModifiersByOperation(int operation)
 - boolean hasModifier([IEntityAttributeModifier](/Vanilla/Entities/Attributes/IEntityAttributeModifier/) modifier)
 - [IEntityAttributeModifier](/Vanilla/Entities/Attributes/IEntityAttributeModifier/) getModifier(String uuid);
 - void applyModifier([IEntityAttributeModifier](/Vanilla/Entities/Attributes/IEntityAttributeModifier/) modifier);

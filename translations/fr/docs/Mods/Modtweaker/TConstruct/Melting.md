@@ -1,26 +1,26 @@
-# Melting
+# Fonte
 
-The `Melting` package allows you to add or remove Melting recipes (item->liquid in the smeltery).
+Le pack `Melting` vous permet d'ajouter ou de supprimer des recettes de fusion (objet->liquide dans la fonderie).
 
-## Calling
+## Appel en cours
 
-You can call the Melting package using `mods.tconstruct.Melting`
+Vous pouvez appeler le pack Melting en utilisant `mods.tconstruct.Melting`
 
-## Add Melting Recipes
+## Ajouter des recettes de fusion
 
 ```zenscript
-//mods.tconstruct.Melting.addRecipe(ILiquidStack output, IIngredient input, @Optional int temp);
+//mods.tconstruct.Melting.addRecipe(ILiquidStack sortie, IIngredient input, @Optional int temp);
 mods.tconstruct.Melting.addRecipe(<liquid:molten_gold> * 144,<minecraft:gold_ingot>);
-mods.tconstruct.Melting.addRecipe(<liquid:molten_iron> * 144,<minecraft:iron_ingot>, 500);
+mods.tconstruct.Melting. ddRecipe(<liquid:molten_iron> * 144,<minecraft:iron_ingot>, 500);
 
 //addEntityMelting(IEntityDefinition entity, ILiquidStack stack);
-//You can just override an existing recipe, you don't need to remove it first!
+//Vous pouvez juste remplacer une recette existante, vous n'avez pas besoin de la supprimer d'abord!
 mods.tconstruct.Melting.addEntityMelting(<entity:minecraft:sheep>, <liquid:cryotheum>);
 mods.tconstruct.Melting.addEntityMelting(<entity:minecraft:villager>, <liquid:cryotheum>);
 
 ```
 
-## Removing Melting Recipes
+## Suppression des recettes de fusion
 
 ```zenscript
 //mods.tconstruct.Melting.removeRecipe(ILiquidStack output);

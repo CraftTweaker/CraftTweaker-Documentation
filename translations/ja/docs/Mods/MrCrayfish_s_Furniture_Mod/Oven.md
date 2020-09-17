@@ -1,20 +1,20 @@
 # Microwave
 
-The Microwave heats up food items.
+マイクロ波は食料品を加熱します
 
-## Default Microwave Recipes
+## 既定のマイクロ波レシピ
 
-- Beef -> Cooked Beef
-- Porkchop -> Cooked Porkchop
-- Potato -> Baked Potato
-- Chicken -> Cooked Chicken
-- Fish -> Cooked Fish
-- Salmon -> Cooked Salmon
-- Flesh -> Cooked Flesh
+- 牛肉->焼いた肉
+- ポークチョップ->ポークチョップ
+- ポテト->ベイクドポテト
+- ニワトリ->焼き鳥
+- 魚 -> 焼いた魚
+- サーモン->サーモンを焼いた
+- 肉 -> 焼いた肉
 
-## Removing
+## 削除中
 
-## Remove matching oven recipes.
+## 一致するオーブンレシピを削除します。
 
 ```zenscript
 mods.cfm.Oven.remove(@Optional final IIngredient output, @Optional final IIngredient input);
@@ -27,9 +27,9 @@ mods.cfm.Oven.remove(null,<minecraft:potato>);
 mods.cfm.Oven.remove();
 ```
 
-## Adding
+## 追加中
 
-## Add an oven recipe.
+## オーブンレシピを追加します。
 
 ```zenscript
 mods.cfm.Oven.addRecipe(@Nonnull final IItemStack output, @Nonnull final IItemStack input);

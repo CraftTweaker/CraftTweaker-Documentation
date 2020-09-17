@@ -1,35 +1,35 @@
-# Liquid Fuels
+# Flüssige Brennstoffe
 
-Liquid Fuels are used in PneumaticCraft: Repressurized in the (Advanced) Liquid Compressor to create compressed air, and (optionally) in the Kerosene Lamp to produce light. By default the liquids produced in the Refinery are defined as fuel, as well as any liquid above a temperature of 305 degrees Kelvin.
+Flüssige Brennstoffe werden in PneumaticCraft: Repressurized in the (Advanced) Liquid Compressor, um Druckluft zu erzeugen, und (optional) in der Kerosenlampe, um Licht zu erzeugen. Standardmäßig werden die in der Raffinerie produzierten Flüssigkeiten als Kraftstoff sowie Flüssigkeiten über einer Temperatur von 305 Grad Kelvin definiert.
 
-## Calling
+## Anruf
 
-You can call the Liquid Fuels package using `mods.pneumaticcraft.liquidfuel`.
+Sie können das Liquid Fuels Paket mit `mods.pneumaticcraft.liquidfuel` aufrufen.
 
-## Removing
+## Entfernen
 
-This function deregisters the [ILiquidStack](/Vanilla/Liquids/ILiquidStack/) `fluid` as a fuel:
+Diese Funktion dereguliert den [ILiquidStack](/Vanilla/Liquids/ILiquidStack/) `Flüssigkeit` als Brennstoff:
 
 ```zenscript
-mods.pneumaticcraft.liquidfuel.removeFuel(ILiquidStack fluid);
-// Example
+mods.pneumaticcraft.liquidfuel.removeFuel(ILiquidStack Fluid);
+// Beispiel
 mods.pneumaticcraft.liquidfuel.removeFuel(<liquid:lpg>);
 ```
 
-This function deregisters *all* registered fuels:
+Diese Funktion Dereguliert *alle* registrierten Brennstoffe:
 
 ```zenscript
 mods.pneumaticcraft.liquidfuel.removeAllFuels();
 ```
 
-## Adding
+## Hinzufügen
 
-The following functions can be used to add fluids to the fuel registry:
+Die folgenden Funktionen können verwendet werden, um Flüssigkeiten zur Kraftstoffregistry hinzuzufügen:
 
 ```zenscript
-// Register a certain liquid as a fuel. mlPerBucket defines the amount of compressed air produced per bucket of fuel. For reference, 16000mL of air is produced from a piece of Coal in an Air Compressor.
+// Registrieren Sie eine bestimmte Flüssigkeit als Kraftstoff. mlPerBucket definiert die Menge der Druckluft pro Eimer. 16000 mL Luft wird aus einem Stück Kohle in einem Kompressor.
 mods.pneumaticcraft.liquidfuel.addFuel(ILiquidStack fluid, double mlPerBucket);
 
-// Example: register water as a fuel which produces 16000mL air per bucket.
+// Beispiel: Register Wasser als Brennstoff, der 16000mL Luft pro Eimer erzeugt.
 mods.pneumaticcraft.liquidfuel.addFuel(<liquid:water>, 16000);
 ```

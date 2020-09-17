@@ -1,9 +1,9 @@
 # MrCrayfish's Furniture Mod
 
-MrCrayfish's Furniture Mod adds unique pieces of furniture that you can use to decorate your builds, some of them are useable appliances and implements.
+MrCrayfish's Furniture Mod 添加了独特的家具，你可以用来装饰你的建筑，其中一些是可用的器具和器具。
 
-Although the documentation includes default recipes, please refer to the mod recipe book for the up to date recipes.
+虽然文档包含默认配方，但请参考最新配方的模组配方簿。
 
-# Important Note
+# 重要笔记
 
-Inputs are matched only on item id and metadata, nbt is ignored.
+只在项目 id 和元数据上匹配到输入，此操作将被忽略。

@@ -1,11 +1,11 @@
-# Ore Dictionary
+# Словарь руды
 
-Ore Dictionary Requirements are fairly new and requires the player to be holding either in their main-hand or in their off-hand an item with the matching ore-dictionary value.
+Требования к словарю руд достаточно новые и требуют, чтобы игрок держался либо в основной руке, либо вне рук с соответствующим значением словаря руды.
 
-    Example:
-    ore|string
+    Пример:
+    руда|строка
     
-    Working Example:
-    ore|nuggetIron
-    ore|ingotIron
-    ore|oreIron
+    рабочий пример:
+    руда|nuggetIron
+    руда|ingotIron
+    руда|oreIron

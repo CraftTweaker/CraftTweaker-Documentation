@@ -1,8 +1,8 @@
-# Anvil Welding
+# 金床溶接機
 
-## Package
+## パッケージ
 ```zenscript
-import mods.terrafirmacraft.Welding;
+import mods.terrafirmacraft.Welding;溶接;
 ```
 
 ## 追加
@@ -17,4 +17,4 @@ Welding.addRecipe(String registryName, IIngredient input1, IIngredient input2, I
 Welding.removeRecipe(IItemStack output);
 Welding.removeRecipe(String registryName);
 ```
-- As with anvil recipes, the same rules for input applies here. The input must be forgeable(see [ItemRegistry](/Mods/Terrafirmacraft/ItemRegistry) for registering forging capability to an item) and can't be stacked.
+- アンビルのレシピと同様に、ここでも同じ入力ルールが適用されます。 入力は偽造可能であり(鍛造機能をアイテムに登録するには [ItemRegistry](/Mods/Terrafirmacraft/ItemRegistry) を参照)、スタックすることはできません。

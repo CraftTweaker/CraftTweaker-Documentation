@@ -1,25 +1,25 @@
-### Class
+### Класс
 
 ```zenscript
-import mods.roots.Ritual;
+импортировать mods.roots.Ritual;
 ```
 
-#### Methods
+#### Методы
 
 ```zenscript
 void modifyRitual(
-  string name,         // the name of the ritual whose ingredients you wish to modify
-  IIngredient[] inputs // a list of five ingredients (no more, no less)
+  string name, // название ритуала, чьи ингредиенты вы хотите изменить
+  входы IIngredient[] // список пяти ингредиентов (не более, не меньше)
 );
 ```
 
 * * *
 
-### Examples
+### Примеры
 
 ```zenscript
-import mods.roots.Ritual;
+импортируем mods.roots.Ritual;
 
-// Changes the ingredients required to perform the windwall ritual
-Ritual.modifyRitual("ritual_windwall", [<minecraft:feather>, <minecraft:glass>, <roots:cloud_berry>, <roots:cloud_berry>, <minecraft:web>]);
+// Изменяем ингредиенты, необходимые для выполнения ритуала windwall
+ритуала. odifyRitual("ritual_windwall", [<minecraft:feather>, <minecraft:glass>, <roots:cloud_berry>, <roots:cloud_berry>, <minecraft:web>]);
 ```

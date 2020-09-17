@@ -1,8 +1,8 @@
 # Trait Bracket Handler
 
-The Trait Bracket handler's sole purpose is providing you with [Trait Representations](/Mods/ContentTweaker/Tinkers_Construct/Trait/).
+トレイトブラケットハンドラーの唯一の目的は、 [トレイト表現](/Mods/ContentTweaker/Tinkers_Construct/Trait/)を提供することです。
 
-You use the trait bracket handler like this:
+以下のようにトレイト括弧ハンドラを使用します。
 
 ```zenscript
 <ticontrait:identifier>
@@ -10,4 +10,4 @@ You use the trait bracket handler like this:
 <ticontrait:cactus>
 ```
 
-If the Trait is found, this will return an Trait Representation Object. Please refer to the [respective Wiki entry](/Mods/ContentTweaker/Tinkers_Construct/Trait/) for further information on what you can do with these.
+Traitが見つかれば、Trait表現オブジェクトを返します。 これらを使用して何ができるかについては、それぞれの [Wiki エントリ](/Mods/ContentTweaker/Tinkers_Construct/Trait/) を参照してください。

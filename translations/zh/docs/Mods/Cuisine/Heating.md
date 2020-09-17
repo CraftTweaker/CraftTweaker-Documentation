@@ -1,32 +1,32 @@
-# Basin Heating
+# 流域供暖中
 
-## Addition
+## 加
 
 ```zenscript
-import mods.cuisine.BasinHeating;
+导入 mods.cuisine.Basinheating;
 
-BasinHeating.add(ILiquidStack input, IItemStack output); // Use 1 as heat value
-BasinHeating.add(ILiquidStack input, IItemStack output, int heatValue);
+Basinheating.add(ILiquidStack 输入, IItemStack 输出); // 使用 1 作为热值
+Basinheating。 dd(ILiquidStack 输入, IItemStack 输出, int heatValue);
 
-BasinHeating.add(<liquid:lava> * 1000, <item:minecraft:diamond>);
-BasinHeating.add(<liquid:water> * 1000, <item:minecraft:diamond>, 100);
+Basinheating.add(<liquid:lava> * 1000, <item:minecraft:diamond>);
+Basinheating.add(<liquid:water> * 1000, <item:minecraft:diamond>, 100);
 ```
 
-## Removal
+## 移除
 
 ```zenscript
-import mods.cuisine.BasinHeating;
+导入 mods.cuisine.Basinheating;
 
-// Remove by input.
-BasinHeating.remove(ILiquidStack input);
+// 通过输入删除。
+Basinheating.remove(ILiquidStack 输入);
 
-BasinHeating.remove(<liquid:lava> * 1000);
+Basinheating.remove(<liquid:lava> * 1000);
 
-// Remove by identifier.
-BasinHeating.remove(String id);
+// 通过标识符删除。
+Basinheating.remove(String id);
 
-BasinHeating.remove("recipe_name");
+Basinheating.remove("recipe_name");
 
-// Remove everything!
-BasinHeating.removeAll();
+// 移除所有东西！
+a. Basinheating.removeAll();
 ```

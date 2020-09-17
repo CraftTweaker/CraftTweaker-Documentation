@@ -1,27 +1,27 @@
-# PlayerSleepInBed
+# 玩家睡眠
 
-The PlayerSleepInBed Event is fired whenever a player sleeps.
+当玩家睡觉时，玩家会被发射。
 
-## Event Class
+## 事件类
 
 You will need to cast the event in the function header as this class:  
 `crafttweaker.event.PlayerSleepInBedEvent`  
 You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
 
-## Event interface extensions
+## 事件界面扩展
 
-PlayerSleepInBed Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+PlayerSleepInBed 事件实现了以下接口，并且能够调用他们所有的方法/getter/setter：
 
 - [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
 - [IEventPositionable](/Vanilla/Events/Events/IEventPositionable/)
 
 ## ZenGetters
 
-The following information can be retrieved from the event:
+以下信息可以从事件中检索：
 
-| ZenGetter | Return Type                          |
+| ZenGetter | 返回值类型                                |
 | --------- | ------------------------------------ |
-| `x`       | int                                  |
-| `y`       | int                                  |
-| `z`       | int                                  |
-| `player`  | [IPlayer](/Vanilla/Players/IPlayer/) |
+| `x`       | 整数                                   |
+| `年`       | 整数                                   |
+| `z`       | 整数                                   |
+| `播放器`     | [IPlayer](/Vanilla/Players/IPlayer/) |

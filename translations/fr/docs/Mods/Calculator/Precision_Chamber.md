@@ -1,21 +1,21 @@
-# Precision Chamber
+# Chambre de précision
 
-## Package
+## Paquet
 ```zenscript
-import mods.calculator.precisionChamber;
+Importer mods.calculator.precisionChamber;
 ```
 
-## Methods
+## Méthodes
 
-- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input** The input.
-- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) output[1-2]** The outputs.
+- **[Ingrédient](/Vanilla/Variable_Types/IIngredient/) d'entrée** L'entrée.
+- **[Ingrédient](/Vanilla/Variable_Types/IIngredient/) sortie[1-2]** Les sorties.
 
-## Addition
+## Ajouter
 ```zenscript
-precisionChamber.addRecipe(IIngredient input, IIngredient output1, IIngredient output2);
+precisionChamber.addRecipe(IIngrédient, sortie IIngrédient1, sortie IIngrédient2);
 ```
 
-## Removal
+## Retirer
 ```zenscript
-precisionChamber.removeRecipe(IIngredient output1, IIngredient output2);
+precisionChamber.removeRecipe(IIngredient output1, IIngredient output2) ;
 ```

@@ -1,113 +1,114 @@
-# Radiation
+# <unk>
 
-## Radiation Scrubber
+## 放射線スクラバー
 
-### Importing the Package
-`mods.nuclearcraft.RadiationScrubber`
+### パッケージのインポート
+`mods.nuclearcraft.SupercoolerRadiationScrubber`
 
-### Adding Recipes
+### レシピを追加中
 ```zenscript
-mods.nuclearcraft.RadiationScrubber.addRecipe(IIngredient itemInput, ILiquidStack fluidInput, IIngredient itemOutput, ILiquidStack fluidOutput, int processTime, int processPower, double processEfficiency);
+mods.nuclearcraft.Supercoolermods.nuclearcraft.RadiationScrubber.addRecipe(IIngredient itemInput, ILiquidStack fluidInput, IIngredient itemOutput, ILiquidStack fluidOutput, int processTime, int processPower, double processEfficiency);
 ```
 
-### Removing Recipes
+### レシピを削除
 ```zenscript
-mods.nuclearcraft.RadiationScrubber.removeRecipeWithInput(IIngredient itemInput, ILiquidStack fluidInput);
+mods.nuclearcraft.SupercoolerRadiationScrubber.removeRecipeWithInput(IInput, ILiquidStack fluidInput);
+mods.nuclearcraft.mods.nuclearcraft.RadiationScrubber.removeRecipeWithInput(IIngredient itemInput, ILiquidStack fluidInput);
 mods.nuclearcraft.RadiationScrubber.removeRecipeWithOutput(IIngredient itemOutput, ILiquidStack fluidOutput);
-mods.nuclearcraft.RadiationScrubber.removeAllRecipes();
+mods.nuclearcraft.RadiationScrubber.removeAllRecipes();RadiationScrubber.removeAllRecipes();
 ```
 
-## Block Mutation
+## 変異をブロック
 
-### Importing the Package
-`mods.nuclearcraft.RadiationBlockMutation`
+### パッケージのインポート
+`mods.nuclearcraft.SupercoolerRadiationBlockMutation`
 
-### Adding Recipes
+### レシピを追加中
 ```zenscript
-mods.nuclearcraft.RadiationBlockMutation.addRecipe(IIngredient blockInput, IIngredient blockOutput, double radiationThreshold);
+mods.nuclearcraft.Supercoolermods.nuclearcraft.RadiationBlockMutation.addRecipe(IIngredient blockInput, IIngredient blockOutput, double radiationThreshold);
 ```
 
-### Removing Recipes
+### レシピを削除
 ```zenscript
-mods.nuclearcraft.RadiationBlockMutation.removeRecipeWithInput(IIngredient blockInput);
-mods.nuclearcraft.RadiationBlockMutation.removeRecipeWithOutput(IIngredient blockOutput);
-mods.nuclearcraft.RadiationBlockMutation.removeAllRecipes();
+mods.nuclearcraft.SupercoolerRadiationBlockMutation.removeRecipeWithInput(IInput));
+mods.nukraft.RadiationBlockMutation.removeRecipeWithOutput(IIngredient blockOutput);
+mods.nuclecraft.RadiationBlockMutation.removeAllRecipes();
 ```
 
-## Block Purification
+## ブロックの精製を行う
 
-### Importing the Package
-`mods.nuclearcraft.RadiationBlockPurification`
+### パッケージのインポート
+`mods.nuclearcraft.Supercoolermods.nuclearcraft.RadiationBlockPurification`
 
-### Adding Recipes
+### レシピを追加中
 ```zenscript
-mods.nuclearcraft.RadiationBlockPurification.addRecipe(IIngredient blockInput, IIngredient blockOutput, double radiationThreshold);
+mods.nuclearcraft.Supercoolermods.nuclearcraft.RadiationBlockPurification.addRecipe(IIngredient blockInput, IIngredient blockOutput, double radiationThreshold);
 ```
 
-### Removing Recipes
+### レシピを削除
 ```zenscript
-mods.nuclearcraft.RadiationBlockPurification.removeRecipeWithInput(IIngredient blockInput);
+mods.nuclearcraft.RadiationScrubberRadiationBlockPurification.removeRecipeWithInput(IInput));
 mods.nuclearcraft.RadiationBlockPurification.removeRecipeWithOutput(IIngredient blockOutput);
-mods.nuclearcraft.RadiationBlockPurification.removeAllRecipes();
+mods.nukraft.RadiationBlockPurification.removeAllRecipes();
 ```
 
-## Entity Radiation
+## エンティティの被<unk>
 
-### Radiation
-`amount` is the amount of radiation added to the `IEntityLivingBase`. `useImmunity` controls whether the function occurs even the `IEntityLivingBase` is immune.
+### <unk>
+`amount` is the amount of radiation added to the `IEntityLivingBase`. `useImmunity` は関数が `IEntityLivingBase` であっても免疫があるかどうかを制御します。
 ```zenscript
 IEntityLivingBase::addRadiation(double amount, @Optional boolean useImmunity);
-IEntityLivingBase::setRadiation(double amount, @Optional boolean useImmunity);
-IEntityLivingBase::getRadiation();
+IEntityLivingBase:::setRadiation(double amount, @Optional boolean useImmunity);
+IEntityLivingBase:::getRadiation();
 ```
 
 ### Radaway Buffer
-`amount` is the amount of Radaway Buffer added to the `IEntityLivingBase`. `slowBuffer` decides if the Radaway Buffer added is a slow buffer.
+`amount` is the amount of Radaway Buffer added to the `IEntityLivingBase`. `slowBuffer` は、追加されたRadaway Bufferが遅いバッファであるかどうかを決定します。
 ```zenscript
-IEntityLivingBase::addRadawayBuffer(double amount, @Optional boolean slowBuffer);
-IEntityLivingBase::setRadawayBuffer(double amount, @Optional boolean slowBuffer);
-IEntityLivingBase::getRadawayBuffer(boolean slowBuffer);
+IEntityLivingBase:::addRadawayBuffer(double amount, @Optional boolean slowBuffer);
+IEntityLivingBase:::setRadawayBuffer(double amount, @Optional boolean slowBuffer);
+IEntityLivingBase:::getRadawayBuffer(boolean slowBuffer);
 ```
-**Note: If `slowBuffer` is `true`, `getRadawayBuffer()` will return the slow-acting radiation removal buffer instead of the normal one.**
+**注意: `slowBuffer` が `true`である場合、 `getRadawayBuffer()` は通常のものではなく、スロー動作の放射除去バッファを返します。**
 
-### Poison
-`amount` is the amount of Poison Buffer added to the `IEntityLivingBase`.
+### ポイズン
+`amount` は、 `IEntityLivingBase` に追加された毒バッファーの量です。
 ```zenscript
-IEntityLivingBase::addPoisonBuffer(double amount);
+IEntityLivingBase:::addPoisonBuffer(double amount);
 IEntityLivingBase::setPoisonBuffer(double amount);
-IEntityLivingBase::getPoisonBuffer();
+IEntityLivingBase:::getPoisonBuffer();
 ```
 
-### Radiation Resistance
-`amount` is the amount of Radiation Resistance added to the `IEntityLivingBase`.
+### 放射線耐性
+`amount` は、 `IEntityLivingBase` に加えられる放射線耐性の量である。
 ```zenscript
 IEntityLivingBase::addRadiationResistance(double amount);
 IEntityLivingBase::setRadiationResistance(double amount);
-IEntityLivingBase::getRadiationResistance();
+IEntityLivingBase:::getRadiationResistance();
 ```
 
-### Radiation Level Getters
+### 放射能レベルゲッター
 
-#### Raw Radiation Level
-This method returns the radiation of the `IEntityLivingBase` in rads.
+#### 未加工の放射線レベル
+このメソッドは、ラード内の `IEntityLivingBase` の放射を返します。
 ```zenscript
 IEntityLivingBase::getRawRadiationLevel();
 ```
 
-### Radiation Level
-This method returns the change in radiation level of the `IEntityLivingBase` in rads/tick.
+### 放射能レベル
+このメソッドは、rads/tick の `IEntityLivingBase` の放射線レベルの変化を返します。
 ```zenscript
 IEntityLivingBase::getRadiationLevel();
 ```
 
-## Radiation
-This method gets the radiation of an `IIngredient` in rads/tick.
+## <unk>
+このメソッドは、ラド/ティックの `IIngredient` の放射を取得します。
 ```zenscript
-mods.nuclearcraft.Radiation.getRadiationLevel(IIngredient itemInput);
+mods.nuclearcraft.Supercoolermods.nuclearcraft.Radiation.getRadiationLevel(IIngredient itemInput);
 ```
 
-## Radiation Immunity
-This method gives the ability to control the immunity of players depending on the stage. `defaultImmunity` is a boolean specifiying the players' immunity without the specified stages. `stageNames` is an array of the names of all stages that can toggle the immunity of players.
+## 放射線イミュニティ
+この方法は、ステージに応じてプレイヤーの免疫を制御する能力を与えます。 `defaultImunity` は、指定されたステージなしでプレイヤーの免疫を指定する真偽値です。 `stageNames` は、プレイヤーの免疫を切り替えることができるすべてのステージの名前の配列です。
 ```zenscript
-mods.nuclearcraft.Radiation.setRadiationImmunityGameStages(boolean defaultImmunity, String[] stageNames);
+mods.nuclearcraft.Supercoolermods.nuclearcraft.Radiation.setRadiationImmunityGameStages(boolean defaultImmunity, String[] stageNames);
 ```

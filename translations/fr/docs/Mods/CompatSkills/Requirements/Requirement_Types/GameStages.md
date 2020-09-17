@@ -1,9 +1,9 @@
-# GameStages:
+# format@@0 GameStages:
 
-GameStages is a Requirement introduced by CompatSkills and allows you to gate items behind GameStages. The GameStage Syntax is as follows:
+GameStages est une condition introduite par CompatSkills et vous permet de porter des objets derrière GameStages. La syntaxe GameStage est la suivante:
 
-    Example:
+    Exemple:
     stage|stageName
     
-    Working Example:
+    Exemple:
     stage|test

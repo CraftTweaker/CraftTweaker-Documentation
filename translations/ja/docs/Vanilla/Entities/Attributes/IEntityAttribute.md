@@ -7,13 +7,13 @@ It might be required for you to import the package if you encounter any issues (
 
 ## ZenGetters
 
-| ZenGetter    | GetterMethod      | Return Type      |
-| ------------ | ----------------- | ---------------- |
-| name         | getName()         | string           |
-| defaultValue | getDefaultValue() | double           |
-| shouldWatch  | getShouldWatch()  | boolean          |
-| parent       | getParent()       | IEntityAttribute |
+| ZenGetter     | GetterMethod      | Return Type      |
+| ------------- | ----------------- | ---------------- |
+| name          | getName()         | 文字列              |
+| defaultValue  | getDefaultValue() | double           |
+| ウォッチする必要があります | getShouldWatch()  | boolean型         |
+| 親             | getParent()       | IEntityAttribute |
 
-## More ZenMethods
+## その他のZenMethods
 
-- double clampValue(double Value) → Does something...
+- double clampValue(double Value) → 何らかの操作...

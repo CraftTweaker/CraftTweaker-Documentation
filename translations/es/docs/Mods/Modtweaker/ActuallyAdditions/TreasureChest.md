@@ -1,19 +1,19 @@
-# Treasure Chest
+# Cofre del tesoro
 
-## Package
+## Paquete
 
 `mods.actuallyadditions.TreasureChest`
 
-## Addition
+## Adicional
 
 ```zenscript
-//mods.actuallyadditions.TreasureChest.addLoot(IItemStack returnItem, int chance, int minAmount, int maxAmount);
+//mods.actuallyadditions.TreasureChest.addLoot(ItemStack returnItem, int chance, int minAmount, int maxAmount);
 mods.actuallyadditions.TreasureChest.addLoot(<minecraft:dirt>, 50, 1, 64);
 ```
 
-## Removal
+## Eliminar
 
 ```zenscript
-//mods.actuallyadditions.TreasureChest.removeLoot(IItemStack returnItem);
+//mods.actuallyadditions.TreasureChest.removeLoot(ItemStack returnItem);
 mods.actuallyadditions.TreasureChest.removeLoot(<minecraft:gold_nugget>);
 ```

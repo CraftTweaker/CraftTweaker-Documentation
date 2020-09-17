@@ -1,16 +1,16 @@
-### Class
+### Classe
 
 ```zenscript
-import mods.roots.Pyre;
+Importer mods.roots.Pyre ;
 ```
 
-#### Methods
+#### Méthodes
 
 ```zenscript
 void addRecipe(
-  string name,         // the name of the recipe being added; if replacing an existing game recipe, ensure the correct name is used
-  IItemStack output,   // the output of this recipe
-  IIngredient[] inputs // a list of five ingredients (no more, no less)
+  string name, // le nom de la recette à ajouter; si vous remplacez une recette de jeu existante, assurez-vous que le nom correct est utilisé
+  sortie IItemStack, // la sortie de cette recette
+  IIngredient[] entrées // une liste de cinq ingrédients (ni plus, ni moins)
 );
 ```
 
@@ -18,10 +18,10 @@ void addRecipe(
 
 ```zenscript
 void addRecipe(
-  string name,          // the name of the recipe being added; if replacing an existing game recipe, ensure the correct name is used
-  IItemStack output,    // the output of this recipe
-  IIngredient[] inputs, // a list of five ingredients
-  int xp                // the amount of xp in levels that is granted after crafting
+  string name, // le nom de la recette à ajouter; si vous remplacez une recette de jeu existante, assurez-vous que le nom correct est utilisé
+  sortie IItemStack, // la sortie de cette recette
+  IIngrédient[] entrées, // une liste de cinq ingrédients
+  int xp // la quantité de xp dans les niveaux qui sont accordés après la fabrication
 );
 ```
 
@@ -29,31 +29,31 @@ void addRecipe(
 
 ```zenscript
 void removeRecipe(
-  IItemStack output // the output of the recipe to remove
+  IItemStack output // la sortie de la recette à supprimer
 );
 ```
 
 * * *
 
-### Examples
+### Exemples
 
 ```zenscript
 import mods.roots.Pyre;
 
-// Removes the recipe for stalicripe; note that the quantity is not considered
-// when checking if the recipe matches.
+// Supprime la recette de stalicripe; note que la quantité n'est pas considérée
+// lors de la vérification si la recette correspond.
 Pyre.removeRecipe(<roots:stalicripe>);
 
-// Re-adds the stalicripe using an addition recipe that grants no XP,
-// but with considerably greater output
-Pyre.addRecipe("stalicripe", <roots:stalicripe>*64, [<minecraft:diamond_block>, <minecraft:gold_block>, <minecraft:iron_block>, <minecraft:emerald_block>, <minecraft:deadbush>]);
+// Ré-ajoute la stalicripe en utilisant une recette supplémentaire qui n'accorde aucune XP,
+// mais avec une sortie considérablement plus grande
+Pyre. ddRecipe("stalicripe", <roots:stalicripe>*64, [<minecraft:diamond_block>, <minecraft:gold_block>, <minecraft:iron_block>, <minecraft:emerald_block>, <minecraft:deadbush>]);
 
-// As above, but rewarding 30 levels of experience (calculated from level 0)
-Pyre.addRecipe("stalicripe", <roots:stalicripe>*64, [<minecraft:diamond_block>, <minecraft:gold_block>, <minecraft:iron_block>, <minecraft:emerald_block>, <minecraft:deadbush>], 30);
+// Comme ci-dessus, mais récompensant 30 niveaux d'expérience (calculé à partir du niveau 0)
+Pyre. ddRecipe("stalicripe", <roots:stalicripe>*64, [<minecraft:diamond_block>, <minecraft:gold_block>, <minecraft:iron_block>, <minecraft:emerald_block>, <minecraft:deadbush>], 30);
 ```
 
 ### Notes
 
-It's extremely important when replacing recipes to ensure that the recipe name is the same to make certain that Patchouli correctly reports the correct recipe for crafting base items.
+Il est extrêmement important lors du remplacement des recettes pour s'assurer que le nom de la recette est le même pour s'assurer que Patchouli rapporte correctement la bonne recette pour fabriquer des objets de base.
 
-For all other items, please use a name descriptive of what your recipe does.
+Pour tous les autres éléments, veuillez utiliser un nom descriptif de ce que votre recette fait.

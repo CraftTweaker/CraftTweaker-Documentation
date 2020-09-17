@@ -1,17 +1,17 @@
-# Immersive Engineering
+# Inżynieria masowa
 
-## Information
+## Informacje
 
-Immersive Engineering is a tech mod with a certain charm, based on the ideas and concepts, and with most assets created by Damien Hazard.
+Inżynieria immersyjna jest modem technicznym o określonym charakterze, opartym na pomysłach i koncepcjach oraz o większości atutów stworzonych przez Damien Hazard.
 
-Overall, it's about realism-inspired technology: Instead of glowing red tubes, it offers actual, hanging powerlines. Instead of one block that magically spits out dusts when ore is put in, it offers a crusher, a big multiblock (5x3x3) that features rotating wheels and spits out particles as it breaks the ore. Instead of a Laser that turns power into magical light and ores, it offers an Excavator, another massive, resource intensive, multiblock (3x7x8) which digs ores out of the ground with a big rotating bucketwheel.
+Ogólnie rzecz biorąc, chodzi o technologię inspirowaną: Zamiast świecących czerwonych rur, oferuje rzeczywiste, wiszące linie mocy. Zamiast jednego bloku, który magicznie wydziela pyły po umieszczeniu rudy, oferuje miażdżący, duży multiblok (5x3x3), który posiada obracające się koła i wydziela cząstki, gdy pęknie rudę. Zamiast lasera, który zamienia moc w magiczne światło i rudy, oferuje Egkawator, kolejny, ogromny, zasobochłonny, wieloblokowy (3x7x8), który odciąga rudy poza ziemię z dużym obracającym się kołem wiadrem.
 
-IE is about making tech mods more balanced and more pretty, and adding its own twist by going for retro-futurism (think BioShock, Order 1886, SkyCaptain and the World of Tomorrow) rather than clinical white+grey future cubes. The mod features Power Generation in forms of waterwheels, windmills, biodiesel and more and many of its machines are multiblocks!
+IE ma na celu uczynienie modów technologicznych bardziej zrównoważonymi i ładniejszymi, a także dodanie własnej wichury poprzez retrofuturyzm (pomyśl o BioShock, Zamów 1886, SkyCaptain i Świat jutra) zamiast klinicznych białych i szarych kostek przyszłości. Modyfikacja oferuje wytwarzanie energii w postaci kół wodnych, wiatraków, biodiesla i wielu jego maszyn to wiele bloków!
 
-## CraftTweaker Related Information
+## Informacje o pokrewnych rzemieślnikach
 
-Most if not all of the machines as well as some of the non-machine related features are configurable through ZenScript.
+Większość – jeśli nie wszystkie maszyny oraz niektóre funkcje niezwiązane z maszyną – można konfigurować za pomocą ZenScript.
 
-## Bug Reports
+## Raporty błędów
 
 https://github.com/BluSunrize/ImmersiveEngineering/issues

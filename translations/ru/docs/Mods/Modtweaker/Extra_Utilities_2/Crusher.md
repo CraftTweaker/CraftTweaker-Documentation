@@ -1,22 +1,22 @@
-# Crusher
+# Дробитель
 
-ModTweaker allows you to add or remove Extra Utilities 2 Crusher Recipes
+ModTweaker позволяет добавлять или удалять дополнительные утилиты 2 Дробителя Рецептов
 
-## Calling
+## Звонок
 
-You can call the Crusher package using `mods.extrautils2.Crusher`
+Вы можете вызвать пакет дробилки с помощью `mods.extrautils2.Crusher`
 
-## Removing
+## Удаление
 
 ```zenscript
-//mods.extrautils2.Crusher.remove(IItemStack outout);
+//mods.extrautils2.Crusher.remove(outoutout;
 mods.extrautils2.Crusher.remove(<minecraft:redstone>);
 ```
 
-## Addition
+## Сложение
 
 ```zenscript
 //mods.extrautils2.Crusher.add(IItemStack output, IItemStack input, @Optional IItemStack secondaryOutput, @Optional float secondaryChance);
-mods.extrautils2.Crusher.add(<minecraft:gold_ingot> * 9, <minecraft:gold_block>, <minecraft:iron_ingot>, 0.1f);
+mods. xtrautils2.Crusher.add(<minecraft:gold_ingot> * 9, <minecraft:gold_block>, <minecraft:iron_ingot>, 0.1f);
 mods.extrautils2.Crusher.add(<minecraft:iron_ingot> * 9, <minecraft:iron_block>);
 ```

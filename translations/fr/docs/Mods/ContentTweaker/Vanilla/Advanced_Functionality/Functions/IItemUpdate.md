@@ -1,28 +1,28 @@
 # IItemUpdate
 
-The IItemUpdateFunction can be added to an [Item](/Mods/ContentTweaker/Vanilla/Creatable_Content/Item/) to allow code to be executed whenever the item updates.
+La fonction IItemUpdateFunction peut être ajoutée à un élément [](/Mods/ContentTweaker/Vanilla/Creatable_Content/Item/) pour permettre l'exécution du code à chaque mise à jour de l'élément.
 
-## Importing the package
+## Importation du paquet
 
-If you ever feel the need to import this function's class, here you go:
+Si vous sentez un jour le besoin d'importer la classe de cette fonction, c'est parti:
 
 ```zenscript
 import mods.contenttweaker.IItemUpdate;
 ```
 
-## Syntax
+## Syntaxe
 
-We have a void function that takes the following parameters (in order)
+Nous avons une fonction vide qui prend les paramètres suivants (dans l'ordre)
 
-- An [IMutableItemStack](/Mods/ContentTweaker/Vanilla/Types/Item/IMutableItemStack/) representing the item stack itself.
-- An [IWorld object](/Mods/ContentTweaker/Vanilla/Types/World/IWorld/) representing the world the action takes place in.
-- An [IEntity object](/Vanilla/Entities/IEntity/) downcast as far as possible, so you can instanceOf up until [ICTPlayer](/Mods/ContentTweaker/Vanilla/Types/Player/ICTPlayer/).
-- An int representing the slot the item currently is in
-- A boolean stating whether or not the item is currently selected.
+- Une [IMutableItemStack](/Mods/ContentTweaker/Vanilla/Types/Item/IMutableItemStack/) représentant la pile d'objet elle-même.
+- Un objet [IWorld](/Mods/ContentTweaker/Vanilla/Types/World/IWorld/) représentant le monde dans lequel l'action a lieu.
+- Un [objet IEntity](/Vanilla/Entities/IEntity/) downcast autant que possible, afin que vous puissiez instanceOf jusqu'à [ICTPlayer](/Mods/ContentTweaker/Vanilla/Types/Player/ICTPlayer/).
+- Un entier représentant l'emplacement dans lequel se trouve l'objet actuellement
+- Un booléen indiquant si l'élément est sélectionné ou non.
 
 ```zenscript
 item.onItemUpdate = function(itemStack, world, owner, slot, isSelected) {
-    //CODE GOES HERE!!
-    return;
+    //CODE GOES ICI!!
+    retourner;
 }
 ```

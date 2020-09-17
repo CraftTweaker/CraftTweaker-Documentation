@@ -1,35 +1,35 @@
-# Powered Thingies :: Fluid Burner :: Fuel
+# Cosas de energía :: Cortador de fluidos :: Petróleo :: Petróleo
 
-### Importing
+### Importando
 
 ```zenscript
-import mods.poweredthingies.Tweaker.fluidBurnerFuelTweaker as fuel;
+importar mods.poweredthingies.Tweaker.fluidBurnerFuelTweaker como combustible;
 ```
 
-### Listing Keys, Removing Recipes by Key, Clearing
+### Lista de llaves, eliminación de recetas por llave, limpieza
 
 ```zenscript
 fuel().logKeys()
-fuel().removeRecipe('liquid:fluid_lava') // check <logKeys> output for valid keys
+fuel().removeRecipe('liquid:fluid_lava') // comprueba <logKeys> salida para claves válidas
 fuel().clear()
 ```
 
-### Adding Recipe
+### Añadiendo receta
 
-##### Signature
+##### Firma
 
 ```zenscript
-addFuel(fluid: ILiquidStack, ticks: Int)
+addFuel(fluido: ILiquidStack, ticks: Int)
 ```
 
-`ticks` represents the number of ticks the specified fuel will burn for.
+`ticks` representa el número de ticks para los que se quemará el combustible especificado.
 
-##### Example
+##### Ejemplo
 
 ```zenscript
 fuel().addFuel(<liquid:tf-sewage> * 50, 100);
 ```
 
-### Notes
+### Notas
 
-All of these actions will get cached and ran after the default registry for this machine has finished registering all recipes (including the ones from the custom jsons).
+Todas estas acciones se almacenarán en caché y se ejecutarán después de que el registro por defecto de esta máquina haya terminado de registrar todas las recetas (incluyendo las de los json personalizados).

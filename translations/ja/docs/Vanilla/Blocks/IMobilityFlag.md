@@ -1,26 +1,26 @@
 # IMobilityFlag
 
-The IMobilityFlag Interface allows you to get an [IBlockState's](/Vanilla/Blocks/IBlockState/) possible mobilityFlags.
+IMobilityFlag インターフェースを使用すると、 [IBlockStateの](/Vanilla/Blocks/IBlockState/) 可能なモビリティフラグを取得できます。
 
 ## パッケージのインポート
 
-It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
+問題が発生した場合は、パッケージをインポートする必要があるかもしれませんので、申し訳ありませんし、インポートを追加してください。  
 `import crafttweaker.block.IMobilityFlag;`
 
 ## ZenMethods
 
-#### Matches
+#### 一致
 
-You can check if two IMobilityFlag objects are equal:  
-Returns a bool.
+2つの IMobilityFlag オブジェクトが等しいかどうかを確認できます:  
+bool を返します。
 
 ```zenscript
 flagOne.matches(other);
 ```
 
-## Enumerations
+## 列挙型
 
-The MobilityFlag Interface has 5 static Methods, each returning the given IMobilityFlag object.
+MobilityFlagインターフェースには5つの静的メソッドがあり、それぞれが与えられたIMobilityFlagオブジェクトを返します。
 
 ```zenscript
 crafttweaker.block.MobilityFlag.normal()

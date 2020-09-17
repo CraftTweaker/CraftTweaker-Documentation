@@ -6,11 +6,11 @@
 
 Они объявляются с помощью ```[``` и ```]```.
 
-**Imortant**: you *must* initialize arrays to something, even if it's an empty array.
+**Важно**: вы *должны* инициализировать массивы любыми значениями, даже если это пустой массив.
 
-`var floatArray as float [];` won't give syntax errors, but upon reloading your game, you will get an error and your script won't work.
+`var floatArray as float [];` не вызовет синтаксические ошибки, но после перезагрузки игры вы получите ошибку и ваш скрипт не будет работать.
 
-Instead, initialize empty arrays like this `var floatArray as float [] = [];`
+Вместо этого, инициализируйте пустые массивы вот так `var floatArray as float [] = [];`
 
 ```zenscript
 //Массив, содержащий "Hello" и "World"
@@ -20,14 +20,14 @@ val stringArray = ["Hello", "World"] as string[];
 val intArray = [1,2,3] as int[];
 ```
 
-If you now think "wait, haven't I seen these brackets before?", you have. Remember ```recipes.add(out,[[],[],[]]);```? This uses three arrays with each containing up to three entries to define a crafting table recipe.
+Если вы сейчас подумали "подождите, разве я не видел эти скобки раньше?", то "да", вы их видели. Запомните ```recipes.add(out,[[],[],[]]);```? Здесь используются три массива, где каждый содержит по три объекта, чтобы определить рецепт крафта в верстаке.
 
 ## Приведение к типу массива
 
-You surely have noticed that all arrays here have the `as` statement appended.  
-Why you ask? This is because ZenScript sometimes cannot predict what type the items in the array are. This can be the cause of strange conversion error logs!  
-Better be safe than sorry and cast the Arrays to their correct types!  
-Also, if you cast to non-primitive types (everything except strings, ints and the same) be sure to [import](/AdvancedFunctions/Import/) the corresponding package and be sure to do so at the TOP of the script:
+Вы наверняка заметили, что все эти массивы в конце имеют указание `as` .  
+Почему, спросите вы? Это потому, что ZenScript иногда не может предсказать тип элементов массива. Это может быть причиной странного преобразования журналов ошибок!  
+Лучше быть безопасным, чем извините, и разыграйте массивы на их правильные типы!  
+Также, если вы используете непримитивные типы (все, кроме строк, ints и тем же) убедитесь в том, что [импортирует](/AdvancedFunctions/Import/) соответствующий пакет и убедитесь в этом в ТОП скрипта:
 
 ```zenscript
 import crafttweaker.item.IItemStack;
@@ -36,7 +36,7 @@ val IArray = [<minecraft:gold_ingot>, <minecraft:iron_ingot>] as IItemStack[];
 
 ## Вложенные массивы
 
-You can place Arrays in Arrays.
+Вы можете размещать массивы в массивах.
 
 ```zenscript
 val stringArray1 = ["Привет", "мир"] as string[];
@@ -47,98 +47,98 @@ val stringArrayAll = [stringArray1,stringArray2,stringArray3,["бабочка","
 
 ## Обращение к элементам массива
 
-You can refer to an element within an array by using it's place in the list. The first item in an Array is No. 0, the 2nd No.1 and so on.
+Вы можете ссылаться на элемент внутри массива, используя его место в списке. Первый элемент массива - №. 0, 2 No.1 и так далее.
 
-If you want to refer to an item in a nested Array, you need two or more referers, as each removes one layer of the lists.
+Если вы хотите обратиться к элементу в вложенный массив, вам нужно два или более рефереров, поскольку каждый из них удаляет один слой списков.
 
 ```zenscript
 /*
-stringArray[0] is "Hello"
-stringArray[1] is "World"
-stringArray[2] is "I"
-stringArray[3] is "am"
+stringArray[0] является "Привет"
+stringArray[1] является "Мир"
+stringArray[2] является "Я"
+stringArray[3] "Я"
 */
-val stringArray = ["Hello","World","I","am"] as string[];
+val stringArray = ["Привет", Мир","Я","am"] как строка[];
 
-//prints "Hello"
+//Выводит "Привет"
 print(stringArray[0]);
 
 
-//Nested Arrays
-val stringArray1 = ["Hello","World"] as string[];
-val stringArray2 = ["I","am"] as string[];
-val stringArray3 = ["a","beautiful"] as string[];
-val stringArrayAll = [stringArray1,stringArray2,stringArray3,["Butterfly","!"]] as string[][];
+//Вложенные массивы
+val stringArray1 = ["Hello","World"] как строка[];
+val stringArray2 = ["Я","am"] как строка[];
+val stringArray3 = ["а","красиво"] как строка[];
+val stringArrayAll = [stringArray1,stringArray2,stringArray3,["Бабочка","! ]] в виде строки[];
 
 /*
-stringArrayAll[0] is ["Hello","World"]
-stringArrayAll[1] is ["I","am"]
-stringArrayAll[2] is ["a","beautiful"]
-stringArrayAll[3] is ["Butterfly","!"]
+stringArrayAll[0] ["Привет","Мир"]
+stringArrayAll[1] это ["Я", am"]
+stringArrayAll[2] это ["a","красиво"]
+stringArrayAll[3] это ["Бабочка","! ]
 
-stringArrayAll[0][0] is "Hello"
-stringArrayAll[0][1] is "World"
-etc.
+stringArrayAll[0][0] является "Привет"
+stringArrayAll[0][1] это "Мир"
+и т.д.
 */
 
-//prints "World"
-print(stringArrayAll[0][1]);
+//печатает "Мир"
+(stringArrayAll[0][1]);
 ```
 
 # Циклы
 
-A loop is a function that repeats itself. You can use loops to apply an action to all elements in an Array
+Цикл — это функция, которая повторяет себя. Можно использовать циклы для применения действия ко всем элементам массива
 
 ## Цикл for
 
-The main use of the for-loop is iterating through an array. Iterating means doing an action to all elements of an array.  
-You can use the `break` keyword to break the loop prematurely.
+Основное использование цикла — итерация по массиву. Итерация означает выполнение действий по всем элементам массива.  
+Вы можете использовать ключевое слово `break` для преждевременного нарушения цикла.
 
 ```zenscript
-import crafttweaker.item.IItemStack;
+импорт crafttweaker.item ItemStack;
 
-val IArray = [<minecraft:dirt>,<minecraft:planks>,<minecraft:diamond>] as IItemStack[];
-val JArray = [<minecraft:grass>,<minecraft:log>,<minecraft:gold_ingot>] as IItemStack[];
-val KArray = [<minecraft:wooden_axe>,<minecraft:golden_shovel>,<minecraft:emerald>] as IItemStack[];
+val IArray = [<minecraft:dirt>,<minecraft:planks>,<minecraft:diamond>] как IItemStack[];
+val JArray = [<minecraft:grass>,<minecraft:log>,<minecraft:gold_ingot>] как IItemStack[];
+val KArray = [<minecraft:wooden_axe>,<minecraft:golden_shovel>,<minecraft:emerald>] как IItemStack[];
 
 
-//for [IntegerName, ] elementName in IArray {code}
+//для [IntegerName, ] elementName в IArray {code}
 
-for item in IArray {
-    //defines the variable "item" with each element of IArray (i.e. <minecraft:dirt>,<minecraft:planks>,<minecraft:diamond>)
-    //Just use this variable now!
-    recipes.remove(item);
+для элемента в IArray {
+    //определяет переменную "item" с каждым элементом IArray (i. . <minecraft:dirt>,<minecraft:planks>,<minecraft:diamond>)
+    //Просто используйте эту переменную сейчас!
+    рецепты. emove(item);
 }
 
 for i, item in IArray {
-    //defines the variable "i" with each element Number of IArray (i.e. 0,1,2,...)
-    //defines the variable "item" with each element of IArray (i.e. <minecraft:dirt>,<minecraft:planks>,<minecraft:diamond>)
-    //Just use these variables now!
+    //определяет переменную "i" с каждым элементом Number of IArray (i. . 0,1,2,...
+    //определяет переменную "item" с каждым элементом IArray (т.е. <minecraft:dirt>,<minecraft:planks>,<minecraft:diamond>)
+    //Просто используйте эти переменные сейчас!
 
-    //Crafts Item of IArray using item of JArray and KArray (i.e. Dirt with grass and wooden axe, planks with wood and golden shovel, diamond with gold ingot and emerald)
-    recipes.addShapeless(item,[JArray[i],KArray[i]]);
+    //Ремесло IArray с использованием JArray and KArray (т.е. Грязь с травой и деревянной топой, доски с деревянной и золотой лопатой, алмазом с золотым слитком и изумрудом)
+    рецептов. ddShapeless(item,[JArray[i],KArray[i]]);
 }
 
 for i in 0 to 10 {
-    //defines the variable "i" with each number from 0 to 9 (i.e. 0,1,2,...,8,9)
-    print(i);
+    //определяет переменную "i" с каждым числом от 0 до 9 (i. . 0,1,2,...,8,9)
+    print();
 }
 
 for i in 10 .. 20 {
-    //defines the variable "i" with each number from 10 to 19 (i.e. 10,11,12,...,18,19)
+    //определяет переменную "i" с каждым числом от 10 до 19 (т.е. 10,11,12,. .,18,19)
     print(i);
 }
 
-for item in loadedMods["minecraft"].items {
-    //defines the variable "item" with each item added by the mod with the modID "minecraft" and removes its crafting recipe
-    recipes.remove(item);
+для элемента в загруженных Mods["minecraft"]. tems {
+    //определяет переменную "item" с каждым элементом, добавленным модом с помощью мода "minecraft" и удаляет его рецепт создания
+    . emove(вещь);
 }
 ```
 
 ## Цикл while
 
-The while loop executes the given code as long as the given condition evaluates to `true`.  
-Alternatively, you can stop it using the `break` keyword.
+Цикл во время выполнения заданного кода до тех пор, пока данное условие вычисляет `true`.  
+Или вы можете остановить его, используя `break` ключевое слово.
 
 ```zenscript
 var i = 0; 
@@ -172,9 +172,9 @@ for k in 1 .. 10 {
 
 # Добавление элементов к массиву
 
-While it is not recommended to do so, it is possible to add some Objects to Arrays.  
-You can only add single Objects to an array, you cannot add two arrays.  
-You use the `+` operator for array Addition:
+Хотя не рекомендуется делать это, можно добавить некоторые объекты в массивы.  
+Вы можете добавить только один объект в массив, вы не можете добавить два массива.  
+Вы используете оператор `+` для добавления массива:
 
 ```zenscript
 import crafttweaker.item.IItemStack;

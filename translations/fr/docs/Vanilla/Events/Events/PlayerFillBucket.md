@@ -1,45 +1,45 @@
-# PlayerFillBucket
+# format@@0 PlayerFillBucket
 
-The PlayerFillBucket Event is fired whenever a player fills a bucket.
+Chaque fois qu'un joueur remplit un seau, l'évènement PlayerFillket est lancé.
 
-## Event Class
+## Classe de l'événement
 
-You will need to cast the event in the function header as this class:  
-`crafttweaker.event.PlayerFillBucketEvent`  
-You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
+Vous devrez lancer l'événement dans l'en-tête de la fonction comme cette classe:  
+`crafttweaker.event. layerFillBucketEvent`  
+Vous pouvez, bien sûr, également [importer](/AdvancedFunctions/Import/) la classe avant et utiliser ce nom alors.
 
-## Event interface extensions
+## Extensions d'interface de l'événement
 
-PlayerFillBucket Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+PlayerFillBucket Events implémente les interfaces suivantes et peut également appeler toutes leurs méthodes/getters/setters :
 
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
-- [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
+- [Evénement IPlayer](/Vanilla/Events/Events/IPlayerEvent/)
 - [IProcessableEvent](/Vanilla/Events/Events/IProcessableEvent/)
-- [IEventPositionable](/Vanilla/Events/Events/IEventPositionable/)
+- [IEventPositionnable](/Vanilla/Events/Events/IEventPositionable/)
 
 ## ZenGetters
 
-The following information can be retrieved from the event:
+Les informations suivantes peuvent être récupérées à partir de l'événement :
 
-| ZenGetter        | Return Type                                        |
-| ---------------- | -------------------------------------------------- |
-| `canceled`       | boolean                                            |
-| `player`         | [IPlayer](/Vanilla/Players/IPlayer/)               |
-| `result`         | [IItemStack](/Vanilla/Items/IItemStack/)           |
-| `emptyBucket`    | [IItemStack](/Vanilla/Items/IItemStack/)           |
-| `x`              | int                                                |
-| `y`              | int                                                |
-| `z`              | int                                                |
-| `world`          | [IWorld](/Vanilla/World/IWorld/)                   |
-| `blockState`     | [IBlockState](/Vanilla/Blocks/IBlockState/)        |
-| `block`          | [IBlock](/Vanilla/Blocks/IBlock/)                  |
-| `dimension`      | int                                                |
-| `rayTraceResult` | [IRayTraceResult](/Vanilla/World/IRayTraceResult/) |
+| ZenGetter                  | Type de retour                                             |
+| -------------------------- | ---------------------------------------------------------- |
+| `annulé`                   | boolean                                                    |
+| `Joueur`                   | [IPlayer](/Vanilla/Players/IPlayer/)                       |
+| `résultat`                 | [IItemStack](/Vanilla/Items/IItemStack/)                   |
+| `vider le seau`            | [IItemStack](/Vanilla/Items/IItemStack/)                   |
+| `x`                        | Indice                                                     |
+| `y`                        | Indice                                                     |
+| `Z`                        | Indice                                                     |
+| `monde`                    | [IWorld](/Vanilla/World/IWorld/)                           |
+| `blockState`               | [État de l'IBlock](/Vanilla/Blocks/IBlockState/)           |
+| `Bloquer`                  | [Verrouillage](/Vanilla/Blocks/IBlock/)                    |
+| `cote`                     | Indice                                                     |
+| `format@@0 rayTraceResult` | [Résultat de l'IRayTrace](/Vanilla/World/IRayTraceResult/) |
 
-## ZenMethods
+## Méthodes Zen
 
-- `event.cancel()` sets the event as cancelled.
+- `event.cancel()` définit l'événement comme annulé.
 
-## Setters
+## Réglages
 
-- `event.result = <minecraft:ender_pearl>` This will also process the event!
+- `event.result = <minecraft:ender_pearl>` Cela va aussi traiter l'événement !

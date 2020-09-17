@@ -1,16 +1,16 @@
-# Salt Fission
+# 塩の<unk>
 
-## Importing the Package
-`mods.nuclearcraft.salt_fission`
+## パッケージのインポート
+`mods.nuclecraft.salt_fission`
 
-## Adding Recipes
+## レシピを追加中
 ```zenscript
-mods.nuclearcraft.salt_fission.addRecipe([fluidInput, fluidOutput, double baseTime, double basePower, @Optional double processRadiation]);
+mods.nukraft.salt_fision.addRecipe([fluidInput, fluidOutput, double baseTime, @Optional double processRadiation]);
 ```
 
-## Removing Recipes
+## レシピを削除
 ```zenscript
-mods.nuclearcraft.salt_fission.removeRecipeWithInput([fluidInput]);
-mods.nuclearcraft.salt_fission.removeRecipeWithOutput([fluidOutput]);
-mods.nuclearcraft.salt_fission.removeAllRecipes();
+mods.nukraft.salt_fision.removeRecipeWithInput([fluidInput]);
+mods.nuclecraft.salt_fision.removeRecipeWithOutput([fluidOutput]);
+mods.nuclecraft.salt_fision.removeAllRecipes();
 ```

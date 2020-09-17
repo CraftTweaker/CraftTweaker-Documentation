@@ -1,37 +1,37 @@
-# Mortar
+# Moździerz
 
-## Addition
+## Dodanie
 
 ```zenscript
-import mods.cuisine.Mortar;
+importuj mods.cuisine.Mortar;
 
-// The third parameter 'step' means "how many times you need to push down the pestle"
-Mortar.add(IItemStack[] inputs, IItemStack output, int step);
+// Trzeci parametr 'step' oznacza "ile razy musisz wypchnąć szkodnika"
+Moździerz. dd(IItemStack[] dane wejściowe, wyjściowe IItemStack, int step);
 
 Mortar.add([<item:minecraft:dirt>, <item:minecraft:cobblestone>], <item:minecraft:diamond>, 3);
 ```
 
-## Removal
+## Usuwanie
 
 ```zenscript
-import mods.cuisine.Mortar;
+importuj mods.cuisine.Mortar;
 
-// Remove by input.
-Mortar.remove(IItemStack[] input);
+// Usuń przez wejście.
+Mortar.remove(IItemStack[] wejścia);
 
 Mortar.remove([<item:minecraft:dirt>, <item:minecraft:cobblestone>]);
 
-// Remove by output.
+// Usuń przez wyjście.
 Mortar.removeByOutput(IIngredient output);
 
 Mortar.removeByOutput(<item:minecraft:diamond>);
 Mortar.removeByOutput(<ore:gemDiamond>);
 
-// Remove by identifier.
+// Usuń przez identyfikator.
 Mortar.remove(String id);
 
 Mortar.remove("recipe_name");
 
-// Remove everything!
+// Usuń wszystko!
 Mortar.removeAll();
 ```

@@ -1,10 +1,10 @@
-# XNOR Operator
+# Оператор XNOR
 
-An **XNOR** gate is an inverted **XOR** gate. This is the same as using the output of the **XOR** gate as the input to the **NOT** gate. This means that the **XNOR** gate returns `TRUE` only when both inputs are the same state. Either both are `TRUE` or both are `FALSE`.
+**XNOR** ворота являются обратными **XOR** воротами. Это то же самое, что и использование вывода **XOR** ворот в качестве входного элемента **НЕ** ворот. Это означает, что ворота **XNOR** возвращает `TRUE` только тогда, когда обе входы находятся в одном состоянии. Обе они являются `TRUE` или `FALSE`.
 
-| Input 1 | Input 2 | Output |
-| ------- | ------- | ------:|
-| 0       | 0       |      1 |
-| 0       | 1       |      0 |
-| 1       | 0       |      0 |
-| 1       | 1       |      1 |
+| Input 1 | Input 2 | Вывод |
+| ------- | ------- | -----:|
+| 0       | 0       |     1 |
+| 0       | 1       |     0 |
+| 1       | 0       |     0 |
+| 1       | 1       |     1 |

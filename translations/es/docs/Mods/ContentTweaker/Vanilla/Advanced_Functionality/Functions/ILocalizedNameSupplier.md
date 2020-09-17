@@ -1,18 +1,18 @@
-# ILocalizedNameSupplier
+# Proveedor de ILocalización
 
-The ILocalizedNameSupplier function is used to programmatically determine an [Item's](/Mods/ContentTweaker/Vanilla/Creatable_Content/Item/) display name.
+La función ILocalizedNameSupplier se utiliza para determinar programáticamente el nombre de un [elemento](/Mods/ContentTweaker/Vanilla/Creatable_Content/Item/) para mostrar.
 
-## importing the class
+## importando la clase
 
-If you want to import the function's class, here you go:
+Si quieres importar la clase de la función, aquí vas:
 
 ```zenscript
-import mods.contenttweaker.LocalizedNameSupplier;
+importar mods.contenttweaker.LocalizedNameSupplier;
 ```
 
-## The function setup
+## Configuración de la función
 
-The function returns a string and takes an [IItemStack](/Vanilla/Items/IItemStack/) as single input parameter.
+La función devuelve una cadena y toma un [ItemStack](/Vanilla/Items/IItemStack/) como parámetro de entrada simple.
 
 ```zenscript
 item.setLocalizedNameSupplier(function(itemStack) {

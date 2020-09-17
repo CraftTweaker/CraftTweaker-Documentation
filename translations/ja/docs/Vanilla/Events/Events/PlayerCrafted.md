@@ -1,25 +1,26 @@
 # PlayerCrafted
 
-The PlayerCrafted Event is fired whenever a player crafts something.
+PlayerCrafted Eventはプレイヤーが何かをクラフトするたびに発生します。
 
-## Event Class
+## イベントクラス
 
-You will need to cast the event in the function header as this class:  
-`crafttweaker.event.PlayerCraftedEvent`  
-You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
+関数ヘッダーのイベントをこのクラスとしてキャストする必要があります:  
+`crafttweaker.event. layerCraftedEvent <br /> 
+ <code>`  
+もちろん、 [インポート](/AdvancedFunctions/Import/) 前にそのクラスをインポートして、その名前を使用することもできます。
 
-## Event interface extensions
+## イベントインターフェースの拡張
 
-PlayerCrafted Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+PlayerCrafted Eventsは以下のインターフェイスを実装しており、すべてのメソッド/getters/settersを呼び出すことができます。
 
 - [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
 
 ## ZenGetters
 
-The following information can be retrieved from the event:
+イベントから次の情報を取得できます。
 
-| ZenGetter   | Return Type                                                         |
+| ZenGetter   | 戻り値                                                                 |
 | ----------- | ------------------------------------------------------------------- |
-| `player`    | [IPlayer](/Vanilla/Players/IPlayer/)                                |
-| `output`    | [IItemStack](/Vanilla/Items/IItemStack/)                            |
+| `プレイヤー`     | [IPlayer](/Vanilla/Players/IPlayer/)                                |
+| `出力`        | [IItemStack](/Vanilla/Items/IItemStack/)                            |
 | `inventory` | [ICraftingInventory](/Vanilla/Recipes/Crafting/ICraftingInventory/) |

@@ -1,34 +1,34 @@
-# Pressure Chamber
+# Cámara de presión
 
-The Pressure Chamber is a multiblock structure which uses compressed air to convert one or more input items into one or more output items. Pressure Chamber recipes have an associated pressure value, which is the air pressure in bar required to perform the conversion.
+La Cámara de Presión es una estructura de múltiples bloques que utiliza aire comprimido para convertir uno o más elementos de entrada en uno o más elementos de salida. Las recetas de cámara de presión tienen un valor de presión asociado, que es la presión del aire en bar necesaria para realizar la conversión.
 
-## Calling
+## Llamando
 
-You can call the Pressure Chamber package using `mods.pneumaticcraft.pressurechamber`.
+Puede llamar al paquete Cámara de Presión usando `mods.pneumaticcraft.pressurechamber`.
 
-## Removing
+## Eliminando
 
-This function removes the first recipe it finds with the given [IItemStack](/Vanilla/Items/IItemStack/) `outputs` array:
+Esta función elimina la primera receta que encuentra con el [ItemStack](/Vanilla/Items/IItemStack/) `dado salida` array:
 
 ```zenscript
-mods.pneumaticcraft.pressurechamber.removeRecipe(IItemStack[] outputs);
-// Example
+mods.pneumaticcraft.pressurechamber.removeRecipe(ItemStack[] salidas);
+// Ejemplo
 mods.pneumaticcraft.pressurechamber.removeRecipe([<pneumaticcraft:ingot_iron_compressed>]);
 ```
 
-This function removes *all* Pressure Chamber recipes:
+Esta función elimina *todas las* recetas de Cámara de Presión:
 
 ```zenscript
 mods.pneumaticcraft.pressurechamber.removeAllRecipes();
 ```
 
-## Adding
+## Agregando
 
-This function is used to add new recipes to the Pressure Chamber:
+Esta función se utiliza para añadir nuevas recetas a la Cámara de Presión:
 
 ```zenscript
-mods.pneumaticcraft.pressurechamber.addRecipe(IIngredient[] inputs, double pressure, IItemStack[] outputs);
+mods.pneumaticcraft.pressurechamber.addRecipe(IIngredient[] entradas, doble presión, ItemStack[] salidas);
 
-// Example
+// Ejemplo
 mods.pneumaticcraft.pressurechamber.addRecipe([<minecraft:gold_ingot> * 2,<minecraft:apple>], 2.0, [<minecraft:golden_apple>]);
 ```

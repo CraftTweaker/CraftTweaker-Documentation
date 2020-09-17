@@ -1,16 +1,16 @@
-# Distillation Tower
+# 蒸馏塔
 
-## Importing the Package
+## 导入软件包
 `mods.techreborn.distillationTower`
 
-## Adding Recipes
+## 添加配方
 ```zenscript
-mods.techreborn.distillationTower.addRecipe(IItemStack output1, IItemStack output2, IItemStack output3, IItemStack output4, IIngredient input1, IIngredient input2, int ticktime, int euTick);
+mods.techreborn.stillationTower.addRecipe(IItemStack output1、 IItemStack output2、 IItemStack output3、 IItemStack output4、 IIngredient input1、 IIngredient input2、 int ticktime、 int euTick)；
 ```
 
-## Removing Recipes
+## 删除配方
 ```zenscript
-mods.techreborn.distillationTower.removeInputRecipe(IIngredient ingredient);
-mods.techreborn.distillationTower.removeRecipe(IItemStack output);
+mods.techreborn.distillationTower.removeInputRecipe(IIngredient component);
+mods.techreborn.stillationTower.removeRecipe(IItemStack output);
 mods.techreborn.distillationTower.removeAll();
 ```

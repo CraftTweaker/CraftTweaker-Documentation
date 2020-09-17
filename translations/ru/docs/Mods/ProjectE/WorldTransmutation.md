@@ -1,40 +1,40 @@
-# World Transmutation
+# Трансмутация мира
 
-## add
+## Добавить
 
-Adds a Philosopher Stone world transmutation, with an optional sneak click transmutation.
+Добавляет трансмутацию мира Philosopher Stone, с последующим перемутацией клика.
 
 ### [IItemStack](/Vanilla/Items/IItemStack/)
 
 ```zenscript
-// If the IItemStack's do not have a coresponding block, air is used instead.
-mods.projecte.WorldTransmutation.add(IItemStack output, IItemStack input, @Optional IItemStack sneakOutput);
+// Если IItemStack's не имеет котировочного блока, используется воздух.
+mods.projecte.WorldTransmutation. dd(IItemStack output, IItemStack input, @Optional IItemStack sneakOutput);
 
-// Turn gold blocks into diamond blocks by right clicking, or into iron blocks by sneak right clicking 
-mods.projecte.WorldTransmutation.add(<minecraft:diamond_block>, <minecraft:gold_block>, <minecraft:iron_block>);
+// Превращение золотых блоков в алмазные блоки, щелкнув правой кнопкой мыши или щелкнув правой кнопкой мыши по 
+модам. rojecte.WorldTransmutation.add(<minecraft:diamond_block>, <minecraft:gold_block>, <minecraft:iron_block>);
 ```
 
 ### [IBlockState](/Vanilla/Blocks/IBlockState/)
 
 ```zenscript
-mods.projecte.WorldTransmutation.add(IBlockState output, IBlockState input, @Optional IBlockState sneakOutput);
+mods.projecte.WorldTransmutation. dd(IBlockState output, IBlockState input, @Optional IBlockState sneakOutput);
 
-// Turn gold blocks into diamond blocks by right clicking, or into iron blocks by sneak right clicking
-mods.projecte.WorldTransmutation.add(<blockstate:minecraft:diamond_block>, <blockstate:minecraft:gold_block>, <blockstate:minecraft:iron_block>);
+// Превращение золотых блоков в алмазные блоки, щелкнув правой кнопкой мыши или щелкнув правой кнопкой мыши по
+модам. rojecte.WorldTransmutation.add(<blockstate:minecraft:diamond_block>, <blockstate:minecraft:gold_block>, <blockstate:minecraft:iron_block>);
 ```
 
-## remove
+## удалить
 
-Removes the Philosopher Stone world transmutations that have the same input, output, and sneakOutput.
+Удаляет трансмутации мира из камня Философа, которые имеют одинаковые входные, выходные и sneakOutput.
 
 ### [IItemStack](/Vanilla/Items/IItemStack/)
 
 ```zenscript
-// If the IItemStack's do not have a coresponding block, air is used instead.
+// Если IItemStack's не имеет котировочного блока, используется воздух.
 mods.projecte.WorldTransmutation.remove(IItemStack output, IItemStack input, @Optional IItemStack sneakOutput);
 
-// Removes the recipe allowing cobblestone to be changed into stone/grass
-mods.projecte.WorldTransmutation.remove(<minecraft:stone>, <minecraft:cobblestone>, <minecraft:grass>);
+// Удаляет рецепт, позволяющий перевести булыжник в камень/траву
+модов. rojecte.WorldTransmutation.remove(<minecraft:stone>, <minecraft:cobblestone>, <minecraft:grass>);
 ```
 
 ### [IBlockState](/Vanilla/Blocks/IBlockState/)
@@ -42,13 +42,13 @@ mods.projecte.WorldTransmutation.remove(<minecraft:stone>, <minecraft:cobbleston
 ```zenscript
 mods.projecte.WorldTransmutation.remove(IBlockState output, IBlockState input, @Optional IBlockState sneakOutput);
 
-// Removes the recipe allowing cobblestone to be changed into stone/grass
-mods.projecte.WorldTransmutation.remove(<blockstate:minecraft:stone>, <blockstate:minecraft:cobblestone>, <blockstate:minecraft:grass>); 
+// Удаляем рецепт, позволяющий булыжникам быть заменены на каменные/травы
+моды. rojecte.WorldTransmutation.remove(<blockstate:minecraft:stone>, <blockstate:minecraft:cobblestone>, <blockstate:minecraft:grass>); 
 ```
 
-## removeAll
+## удалить все
 
-Removes all Philosopher Stone world transmutations, including any added by the user before the call to this method.
+Удаляет все трансмутации мира Philosopher Stone, в том числе все добавленные пользователем перед вызовом к этому методу.
 
 ```zenscript
 mods.projecte.PhiloStone.removeAllWorldTransmutation();

@@ -1,30 +1,30 @@
-# PlayerOpenContainer
+# Conteneur ouvert du joueur
 
-The PlayerOpenContainer Event is fired whenever a player opens a container.
+L'événement PlayerOpenContainer est lancé chaque fois qu'un joueur ouvre un conteneur.
 
-## Event Class
+## Classe de l'événement
 
-You will need to cast the event in the function header as this class:  
-`crafttweaker.event.PlayerOpenContainerEvent`  
-You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
+Vous devrez lancer l'événement dans l'en-tête de la fonction comme cette classe:  
+`crafttweaker.event. layerOpenContainerEvent`  
+Vous pouvez, bien sûr, également [importer](/AdvancedFunctions/Import/) la classe avant et utiliser ce nom alors.
 
-## Event interface extensions
+## Extensions d'interface de l'événement
 
-PlayerOpenContainer Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+Les événements PlayerOpenContainer implémentent les interfaces suivantes et peuvent également appeler toutes leurs méthodes/getters/setters :
 
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
-- [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
+- [Evénement IPlayer](/Vanilla/Events/Events/IPlayerEvent/)
 
 ## ZenGetters
 
-The following information can be retrieved from the event:
+Les informations suivantes peuvent être récupérées à partir de l'événement :
 
-| ZenGetter   | Return Type                                  |
+| ZenGetter   | Type de retour                               |
 | ----------- | -------------------------------------------- |
-| `canceled`  | boolean                                      |
-| `player`    | [IPlayer](/Vanilla/Players/IPlayer/)         |
-| `container` | [IContainer](/Vanilla/Container/IContainer/) |
+| `annulé`    | boolean                                      |
+| `Joueur`    | [IPlayer](/Vanilla/Players/IPlayer/)         |
+| `conteneur` | [IConteneur](/Vanilla/Container/IContainer/) |
 
-## ZenMethods
+## Méthodes Zen
 
-- `event.cancel()` sets the event as cancelled.
+- `event.cancel()` définit l'événement comme annulé.

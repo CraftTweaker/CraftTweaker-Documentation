@@ -1,16 +1,16 @@
-# Rock Crusher
+# 摇滚龙胸甲
 
-## Importing the Package
-`mods.nuclearcraft.rock_crusher`
+## 导入软件包
+`核手工龙头`
 
-## Adding Recipes
+## 添加配方
 ```zenscript
-mods.nuclearcraft.rock_crusher.addRecipe([itemInput, itemOutput1, itemOutput2, itemOutput3, @Optional double timeMultiplier, @Optional double powerMultiplier, @Optional double processRadiation]);
+mods.nuclearcraft.rock_critecher.addRecipe([itemInject, itemOutput1, itemOutput2, itemOutput3, @Optional double timeMultiplier, @Optional double powerMultiplier, @Optional double processRadiation]);
 ```
 
-## Removing Recipes
+## 删除配方
 ```zenscript
-mods.nuclearcraft.rock_crusher.removeRecipeWithInput([itemInput]);
-mods.nuclearcraft.rock_crusher.removeRecipeWithOutput([itemOutput1, itemOutput2, itemOutput3]);
-mods.nuclearcraft.rock_crusher.removeAllRecipes();
+mods.nuclearcraft.rock_crisher.removeRecipeWidInput([itemInput]);
+mods.nuclearcraft.rocraft.rocrafk_crasher.removeRecipewOutput([itemOutput1, itemOut2,itemOutput3]);
+mods.nuclearcraft.rocraft.rocher.rocher.removeAllRecipes();
 ```

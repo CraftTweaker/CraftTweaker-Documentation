@@ -8,27 +8,27 @@
 [CraftTweaker 的 IFurnaceManager](https://github.com/jaredlll08/CraftTweaker/blob/1.12/CraftTweaker2-API/src/main/java/crafttweaker/api/recipes/IFurnaceManager.java):
 
 ```java
-    @ZenMethod
-    void remove(IIngredient output, @Optional IIngredient input);
+    @ZenMethody
+    无效移除(IIngredient output, @Optional IIngredient 输入);
 ```
 
 [MCFurnaceManager (实现)](https://github.com/jaredlll08/CraftTweaker/blob/1.12/CraftTweaker2-MC1120-Main/src/main/java/crafttweaker/mc1120/furnace/MCFurnaceManager.java)
 
 ```java
-    @Override
-    public void remove(IIngredient output, @Optional IIngredient input) {
+    @override
+    公开无效移除(IIngredient 输出, @Optional IIngredient inputt) v.
         if(output == null)
-            throw new IllegalArgumentException("output cannot be null");
+            抛弃新的 IllegalArgumentException("output not be null");
 
-        recipesToRemove.add(new ActionFurnaceRemoveRecipe(output, input));
-    }
+        食谱图删除 dd(新 ActionFurnaceRemoveRecipe(output, input));
+}
 ```
 
 技术上，在实现中你不需要 `@Optional`，但如果你确定的话你也可以加上它。 你现在可以使用以下任意方式调用这个方法：
 
 ```java
-furnace.remove(output); //Input will be set to null
-furnace.remove(output, input);
+failace.remove(输出); ///Input 将设置为 null
+furnace.remove(输出, 输入);
 ```
 
 ## 省略的参数被插入了什么值？
@@ -42,11 +42,11 @@ furnace.remove(output, input);
 
 ### 使用注解成员
 
-| 成员          | 类型              | 默认值              |
-| ----------- | --------------- | ---------------- |
-| value       | string          | `""`             |
-| methodClass | java.lang.Class | `Optional.class` |
-| methodName  | string          | `"getValue"`     |
+| 成员    | 类型              | 默认值              |
+| ----- | --------------- | ---------------- |
+| value | string          | `""`             |
+| 方法类   | java.lang.Class | `Optional.class` |
+| 方法名称  | 字符串             | `"getValue"`     |
 
 可选参数也支持默认值。  
 如果你想提供默认值，你可以通过传入 `value` 成员代表参数的字符串来实现这一点。

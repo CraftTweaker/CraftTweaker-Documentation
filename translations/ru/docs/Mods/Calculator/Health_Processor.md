@@ -1,6 +1,6 @@
-# Health Processor
+# Процессор Здравоохранения
 
-## Package
+## Пакет
 ```zenscript
 import mods.calculator.health;
 ```
@@ -8,14 +8,14 @@ import mods.calculator.health;
 ## Методы
 
 - **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input** The input.
-- **Int value** The amount of input adds to that machine.
+- **Int значение** количество входных данных добавляет к этой машине.
 
-## Additon
+## Добавить
 ```zenscript
 health.addRecipe(IIngredient input, int value);
 ```
 
-## Removal
+## Удаление
 ```zenscript
 health.removeRecipe(IIngredient input);
 ```

@@ -1,46 +1,46 @@
-# Player Stages
+# Spielerstadien
 
-The GameStages API expands CraftTweaker's [IPlayer](/Vanilla/Players/IPlayer/) functionality to allow you to check and modify a player's stages.
+Die GameStages API erweitert die [IPlayer](/Vanilla/Players/IPlayer/) von CraftTweaker, um die Stages eines Spielers zu überprüfen und zu ändern.
 
-## Calling the methods
+## Aufrufen der Methoden
 
-As this is a [ZenExpansion](/Dev_Area/ZenAnnotations/Annotation_ZenExpansion/), you can simply call the methods on any [IPlayer](/Vanilla/Players/IPlayer/) object, or any of it's subtypes.
+Da dies eine [ZenExpansion](/Dev_Area/ZenAnnotations/Annotation_ZenExpansion/)ist, können Sie die Methoden einfach auf einem [IPlayer](/Vanilla/Players/IPlayer/) Objekt oder einer seiner Untertypen aufrufen.
 
 ## Methoden
 
-### Check for gamestages
+### Auf Spielstände prüfen
 
-The methods return booleans.
+Die Methoden geben Booleans zurück.
 
 ```zenscript
-// Checks if the player has the passed stage.
-//player.hasGameStage(String stage);
+// Prüft, ob der Spieler die Bühne überstanden hat.
+//player.hasGameStage(String);
 player.hasGameStage("one");
 
 
 
-// Checks if the player has any of the passed stages. They only need one.
-//player.hasAnyGameStages(String... stages);
-player.hasAnyGameStages("one", "two");
+// Prüft, ob der Spieler eine der übergebenen Stages hat. Sie brauchen nur einen.
+//player.hasAnyGameStages(String... Bühnen);
+player.hasAnyGameStages("ein", "zwei");
 
 
 
-// Checks if the player has all of the passed stages.
-//player.hasAllGameStages (String... stages);
-player.hasAllGameStages ("one", "two");
+// Prüft, ob der Spieler alle übergebenen Stadien hat.
+//player.hasAllGameStages (String... Ins);
+player.hasAllGameStages ("ein", "zwei");
 ```
 
-### Add or remove a gamestage
+### Eine Gamestage hinzufügen oder entfernen
 
-The methods return void (nothing).
+Die Methoden geben ungültig zurück (nichts).
 
 ```zenscript
-// Unlocks a stage for a player.
-//addGameStage(String stage);
-addGameStage(String stage);
+// Schaltet eine Bühne für einen Spieler frei.
+//addGameStage(String Stage);
+addGameStage(String Stage);
 
 
-// Locks a stage for a player.
+// Blockiert eine Bühne für einen Spieler.
 //removeGameStage(String stage);
 removeGameStage(String stage);
 ```

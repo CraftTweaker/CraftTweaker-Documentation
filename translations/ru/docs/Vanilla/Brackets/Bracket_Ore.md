@@ -1,19 +1,19 @@
-# Ore Dictionary Bracket Handler
+# Обработчик руд
 
-The Ore Dictionary Bracket Handler gives you access to the Ore Dictionaries in the game.
+The Ore Dictionary Bracket Handler provides you access to the Ore Dictionaries in the game.
 
-Ore Dictionarys are referenced in the Ore Dictionary Bracket Handler by like so:
+Словарь Ore упоминаются в Ore Dictionary Bracket Handler следующим образом:
 
 ```zenscript
 <ore:orename>
 <ore:ingotIron>
 ```
 
-Returns an [IOreDictEntry](/Vanilla/OreDict/IOreDictEntry/), as long as no `*` is in the call, otherwise returns a `List<IOreDictEntry>` If the oreDictionary is not yet in the game, will create a new and empty oreDictionary with the given name and return that. Please refer to the [Ore Dictionary](/Vanilla/OreDict/IOreDictEntry/) Entry for further information on what to do with them.
+Возвращает [IOreDictEntry](/Vanilla/OreDict/IOreDictEntry/), если `*` в вызове, иначе возвращает список `<IOreDictEntry>` Если oreDictionary еще не в игре, создаст новый и пустой словарь с заданным именем и верните его. Пожалуйста, обратитесь к словарю [руды](/Vanilla/OreDict/IOreDictEntry/) Entry для получения дополнительной информации о том, что делать с ними.
 
-# Getting all Registered ore Dictionaries
+# Получение всех зарегистрированных словарей
 
-You can use the following command to output all registered ore Dictionaries to the CraftTweaker log
+Вы можете использовать следующую команду для вывода всех зарегистрированных руд словарей в журнале CraftTweaker
 
     /ct oredict
     /crafttweaker oredict

@@ -1,17 +1,17 @@
 # Lexica Botania
 
-The Lexicon package is used for adding or removing pages, entries or whole categories to/from the Lexica Botania.
+Lexicon パッケージは、ページを追加または削除するために使用されます, エントリまたは全体のカテゴリを Lexica Botaniaに/に.
 
-## Calling
+## 発信中
 
-You can call the Lexicon package using `mods.botania.Lexicon`
+`mods.botania.Lexicon` を使って Lexicon パッケージを呼び出すことができます。
 
-## Pages
+## ページ
 
-### Addition
+### 加算
 
 ```zenscript
-mods.botania.Lexicon.addBrewPage(String name, String entry, int page_number, String brew, IIngredient[] recipe, String bottomText);
+mods.botiania.Lexicon.addBrewPage(String name, String entry, int page_number, String brew, IIngredient[] recipe, String bottomText);
 mods.botania.Lexicon.addCraftingPage(String name, String entry, int page_number, String... recipeNames);
 mods.botania.Lexicon.addElvenPage(String name, String entry, int page_number, IItemStack[] outputs, IIngredient[][] inputs);
 mods.botania.Lexicon.addEntityPage(String name, String entry, int page_number, String entity, int size);
@@ -25,47 +25,47 @@ mods.botania.Lexicon.addRunePage(String name, String entry, int page_number, IIt
 mods.botania.Lexicon.addTextPage(String name, String entry, int page_number);
 ```
 
-### Removal
+### 削除
 
 ```zenscript
 mods.botania.Lexicon.removePage(String entry, int page_number);
 ```
 
-## Entries
+## 項目
 
-### Addition
-
-```zenscript
-mods.botania.Lexicon.addEntry(String entry, String catagory, IItemStack stack);
-```
-
-### Removal
+### 加算
 
 ```zenscript
-mods.botania.Lexicon.removeEntry(String entry);
+mods.botiania.Lexicon.addEntry(String entry, String catagory, IItemStack stack);
 ```
 
-## Categories
+### 削除
 
-### Addition
+```zenscript
+mods.botiania.Lexicon.removeEntry(String entry);
+```
+
+## カテゴリ
+
+### 加算
 
 ```zenscript
 mods.botania.Lexicon.addCategory(String name);
 ```
 
-### Removal
+### 削除
 
 ```zenscript
 mods.botania.Lexicon.removeCategory(String name);
 ```
 
-### Set
+### 設定
 
 ```zenscript
 mods.botania.Lexicon.setCategoryIcon(String name, String icon);
 ```
 
-## Recipe Mapping
+## レシピマッピング
 
 ```zenscript
 mods.botania.Lexicon.addRecipeMapping(IItemStack stack, String Entry, int page);

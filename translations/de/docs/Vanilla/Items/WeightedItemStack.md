@@ -1,29 +1,29 @@
-# WeightedItemStack
+# Gewichteter Gegenstandstapel
 
-A Weighted Item Stack is like a normal [IItemStack](/Vanilla/Items/IItemStack/) but has a percentage added to it.  
-You normally use them when dealing with percentage based actions like drops or secondary outputs.
+Ein Gewichteter Gegenstandsstapel ist wie ein gewöhnlicher [IItemStack](/Vanilla/Items/IItemStack/) hat aber einen Prozentsatz hinzugefügt.  
+Sie verwenden diese normalerweise bei prozentualen Aktionen wie Drops oder sekundären Ausgängen.
 
 ## Dieses Paket importieren
 
-It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
-`import crafttweaker.item.WeightedItemStack;`
+Möglicherweise ist es erforderlich, dass Sie das Paket importieren, wenn Sie irgendwelche Probleme haben (z.B. [Array](/AdvancedFunctions/Arrays_and_Loops/)), also besser sicher sein als bedauern und fügen Sie den Import.  
+`import craftweaker.item.Gewichteter ArtikelStack;`
 
-## Calling a weightedItemStack
+## Aufrufen eines gewichteten Gegenstands
 
-You can derive a weightedItemStack from an [IItemStack](/Vanilla/Items/IItemStack/) by either using the modulo operator or the weight function on it.
+Sie können einen gewichteten Artikel von einem [IItemStack](/Vanilla/Items/IItemStack/) ableiten, indem Sie entweder den Modul-Operator oder die Gewichtsfunktion darauf verwenden.
 
 ```zenscript
 val itemStack = <minecraft:dirt>;
 
-//both create a weightedItemstack object with a chance of 20%
+//beide erstellen ein gewichtetes Itemstack Objekt mit einer Chance auf 20%
 val wItemStack = itemStack % 20;
-val wItemStack2 = itemStack.weight(0.2);
+val wItemStack2 = itemStack. acht(0.2);
 ```
 
 ## ZenGetter
 
-| ZenGetter | What does it do                                      | Rückgabetyp                              |
-| --------- | ---------------------------------------------------- | ---------------------------------------- |
-| stack     | Returns the associated itemStack                     | [IItemStack](/Vanilla/Items/IItemStack/) |
-| chance    | Returns the stack's chance as decimal (e.g. 0.2)     | float                                    |
-| percent   | Returns the stack's chance as percentage (e.g. 20.0) | float                                    |
+| ZenGetter | Was macht es                                                   | Rückgabetyp                              |
+| --------- | -------------------------------------------------------------- | ---------------------------------------- |
+| stapeln   | Gibt den zugehörigen Item Stack zurück                         | [IItemStack](/Vanilla/Items/IItemStack/) |
+| zufällig  | Gibt die Chance des Stapels als Dezimalzahl zurück (z.B. 0.2)  | float                                    |
+| Prozent   | Gibt die Chance des Stapels als Prozentsatz zurück (z.B. 20.0) | float                                    |

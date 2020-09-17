@@ -1,30 +1,30 @@
-# Heat Frame Cooling
+# Chłodzenie ramki grzewczej
 
-Heat Frame Cooling can be used to transform one item into another by placing items in a chest or other inventory with a Heat Frame attached, and cooling it to below 0°C (commonly using a Vortex Tube).
+Chłodzenie ramek grzewczych może być wykorzystane do przekształcenia jednego przedmiotu w inny poprzez umieszczenie przedmiotów w klatce piersiowej lub innym ekwipunku z dołączoną ramką grzewczą, i chłodzenia do temperatury poniżej 0°C (zwykle przy użyciu tuby Vortex).
 
-## Calling
+## Dzwonienie
 
-You can call the Heat Frame Cooling package using `mods.pneumaticcraft.heatframecooling`
+Możesz wywołać pakiet chłodzenia Ramki ciepła za pomocą `mods.pneumaticcraft.heatframecooling`
 
-## Removing
+## Usuwanie
 
-This function removes the first recipe it finds with the given [IIngredient](/Vanilla/Variable_Types/IIngredient/) `output`:
-
-```zenscript
-mods.pneumaticcraft.heatframecooling.removeRecipe(IIngredient output);
-// Example
-mods.pneumaticcraft.heatframecooling.removeRecipe(<minecraft:obsidian>);
-```
-
-This function removes *all* Heat Frame Cooling recipes:
+Ta funkcja usuwa pierwszy przepis, który znajduje z podanym [IIngredient](/Vanilla/Variable_Types/IIngredient/) `wyjście`:
 
 ```zenscript
-mods.pneumaticcraft.heatframecooling.removeAllRecipes();
+mods.pneumaticcraft.heatframechłoding.removeRecipe(moc wyjściowa);
+// Przykład
+mods.pneumaticcraft.heatframechłoding.removeRecipe(<minecraft:obsidian>);
 ```
 
-## Adding
+Ta funkcja usuwa *wszystkie* przepisy chłodzenia ramek ciepła:
 
-These functions are used to add new recipes for the Heat Frame Cooling system:
+```zenscript
+mods.pneumaticcraft.heatframechłoding.removeAllRecipes();
+```
+
+## Dodawanie
+
+Te funkcje są używane do dodawania nowych przepisów dla systemu chłodzenia ramek ciepła:
 
 ```zenscript
 mods.pneumaticcraft.heatframecooling.addRecipe(IItemStack input, IItemStack output);

@@ -1,16 +1,16 @@
-# PlayerBrewedPotion
+# Spieler BrewedTrank
 
-The PlayerBrewedPotion Event is fired whenever a player takes out a potion from the brewing stand.
+Das PlayerBrewedPotion Event wird gefeuert, wenn ein Spieler einen Trank vom Brauständer abholt.
 
 ## Event-Klasse
 
-You will need to cast the event in the function header as this class:  
-`crafttweaker.event.PlayerBrewedPotionEvent`  
-You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
+Du musst das Ereignis als diese Klasse in den Funktionskopf verschieben:  
+`crafttweaker.event. layerBrewedPotionEvent`  
+Sie können natürlich auch [die Klasse vor](/AdvancedFunctions/Import/) importieren und dann diesen Namen verwenden.
 
 ## Erweiterte Event-Schnittellen
 
-PlayerBrewedPotion Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+PlayerBrewedPotion Events implementieren die folgenden Schnittstellen und können alle ihre Methoden/Getter/Setter auch aufrufen:
 
 - [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
 
@@ -21,5 +21,5 @@ Die folgenden Informationen lassen sich von diesem Event (Ereignis) abrufen:
 | ZenGetter | Rückgabetyp                              |
 | --------- | ---------------------------------------- |
 | `player`  | [IPlayer](/Vanilla/Players/IPlayer/)     |
-| `potion`  | [IItemStack](/Vanilla/Items/IItemStack/) |
-| `hand`    | string                                   |
+| `trank`   | [IItemStack](/Vanilla/Items/IItemStack/) |
+| `Hand`    | string                                   |

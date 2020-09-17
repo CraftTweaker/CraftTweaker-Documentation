@@ -23,6 +23,6 @@ public interface IData {
 
 ## Какие методы могут быть аннотированы || Дополнительная информация
 
-- You can annotate all nonstatic methods. You should only annotate one method per [Operator Type](/Dev_Area/ZenOperators/).
-- Annotated methods, at least those which have an associated Assign token, should return the same type. (Don't do Item + Item = fluid!)
-- You should give the annotation a [ZenOperator value](/Dev_Area/ZenOperators/) (e.g. `OperatorType.ADD`). You can find a list of all possible OperatorTypes [here](/Dev_Area/ZenOperators/).
+- Вы можете нотировать все нестатические методы. Вы должны аннотировать только один метод в [Тип оператора](/Dev_Area/ZenOperators/).
+- Аннотированные методы, по крайней мере те, которые имеют связанный токен назначения, должны возвращать тот же тип. (Не используйте предмет + предмет = жидкость!)
+- Вы должны дать аннотацию [ZenOperator значение](/Dev_Area/ZenOperators/) (например, `OperatorType.ADD`). Вы можете найти список всех возможных типов операторов [здесь](/Dev_Area/ZenOperators/).

@@ -1,18 +1,18 @@
-# MaterialPartColorSupplier
+# Цветной материал
 
-You can create a MaterialPartColorSupplier form a [MaterialPart](/Mods/ContentTweaker/Materials/Materials/MaterialPart/) object, which will then be used whenever requested.
+Вы можете создать в форме MaterialPartColorSupplier объект [MaterialPart](/Mods/ContentTweaker/Materials/Materials/MaterialPart/) , который будет использоваться по запросу.</p> 
 
 ## Импорт класса
 
-Should you need to import he class, here you go:
+Если вам нужно импортировать его класс, то здесь вы следуете:
 
 ```zenscript
 import mods.contenttweaker.MaterialPartColorSupplier;
 ```
 
-## Static methods
+## Статические методы
 
-Static methods can be called upon the package, not upon instances of the class.
+Статические методы можно вызвать на пакет, а не на экземпляры класса.
 
 ```zenscript
 //mods.contenttweaker.MaterialPartColorSupplier.create(IMaterialPart materialPart);

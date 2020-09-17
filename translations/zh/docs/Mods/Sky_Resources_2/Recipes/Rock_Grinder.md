@@ -1,10 +1,10 @@
-# Rock Grinder
+# 岩石研磨机
 
-The *rockgrinder* package is used for adding or removing recipes to/from the Rock Grinder.
+*rockgrinder* 软件包用于添加或删除配方到/从Rock Grinder.
 
 ## 导入包
 
-You can call the *rockgrinder* package using `mods.skyresources.rockgrinder`
+您可以使用 `mods.skyresources.rockgrinder` 调用 *rockgrinder* 软件包
 
 ## 配方添加
 
@@ -12,13 +12,13 @@ You can call the *rockgrinder* package using `mods.skyresources.rockgrinder`
 //mods.skyresources.rockgrinder.addRecipe(IItemStack output, IItemStack input);
 mods.skyresources.rockgrinder.addRecipe(<minecraft:diamond>, <minecraft:stone>);
 
-//mods.skyresources.rockgrinder.addRecipe(IItemStack output, IItemStack input, float chance);
-mods.skyresources.rockgrinder.addRecipe(<minecraft:emerald>, <minecraft:stone>, 0.50);
+///mods.skyresources.rockgrinder.addRecipe.addRecipe(IItemStack output, IItemStack input, float che);
+mods.skyresources.rokgrinder.addRecipe(<minecraft:emerald>, <minecraft:stone>, 0.50);
 ```
 
 ## 删除配方
 
 ```zenscript
-//mods.skyresources.rockgrinder.removeRecipe(IItemStack output);
+//mods.skyresources.rockgrinder.removeRecipe(StemStack 输出);
 mods.skyresources.rockgrinder.removeRecipe(<minecraft:gravel>);
 ```

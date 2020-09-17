@@ -1,41 +1,41 @@
-# Charcoal Pile
+# 木炭宝箱
 
-ModTweaker allows you to add or remove forestry Charcoal Wall Recipes
+ModTinflow允许您添加或移除森林木炭墙配方
 
 ## 导入
 
-You can call the package using `mods.forestry.CharcoalWall`
+您可以使用 `mods.forestry.CharcoalWall 来调用包`
 
-## Recipe Removal
+## 删除配方
 
 ```zenscript
 //mods.forestry.CharcoalWall.removeWall(IBlock block);
 mods.forestry.CharcoalWall.removeWall(<minecraft:bedrock>.asBlock());
 
 
-//mods.forestry.CharcoalWall.removeWallState(IBlockState state);
+//mods.forestry.CharcoalWall.removeWallState;
 mods.forestry.CharcoalWall.removeWallState(<blockstate:minecraft:bedrock>);
 
 
-//Will fail if the stack cannot be converted to a block!
+//Will 失败，如果堆栈不能转换为一个块!
 //mods.forestry.CharcoalWall.removeWallStack(IItemStack stack);
 mods.forestry.CharcoalWall.removeWallStack(<minecraft:bedrock>);
 ```
 
-## Reipe Addition
+## Reipe 添加
 
-`amount` states the amount of charcoal the wall will provide.
+`amount` 表示墙壁将提供的木炭数量。
 
 ```zenscript
 //mods.forestry.CharcoalWall.addWall(IBlock block, int amount);
 mods.forestry.CharcoalWall.addWall(<minecraft:bedrock>.asBlock(), 10);
 
 
-//mods.forestry.CharcoalWall.addWallState(IBlockState state, int amount);
+/mods.forestry.CharcoalWall. ddWallState(IBlockState状态, int amount);
 mods.forestry.CharcoalWall.addWallState(<blockstate:minecraft:bedrock>, 10);
 
 
-//Will fail if the stack cannot be converted to a block!
+//Will失败，如果堆栈不能转换为块!
 //mods.forestry.CharcoalWall.addWallStack(IItemStack stack, int amount);
 mods.forestry.CharcoalWall.addWallStack(<minecraft:bedrock>, 10);
 ```

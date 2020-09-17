@@ -1,11 +1,11 @@
 # LivingEntityUseItem
 
-The LivingEntityUseItem event is fired whenever an entity starts using an item, stops doing so, after the player finishes using an item and each tick they use the item.  
-Since that would be called far too often, there are 4 subEvents that are only called in their specific case.
+LivingEntityUseItem イベントは、エンティティがアイテムを使用し始めるたびに発生します。 プレイヤーがアイテムを使用して終了し、アイテムを使用する各ティックが終了すると、それを停止します。  
+それはあまりにも頻繁に呼ばれるので、特定の場合にのみ呼ばれる4つのサブイベントがある。
 
-## Importing the class
+## クラスのインポート
 
-It might be required to [import](/AdvancedFunctions/Import/) the class to avoid errors.
+エラーを避けるためにクラスを [インポート](/AdvancedFunctions/Import/) する必要があるかもしれません。
 
 ```zenscript
 //Base Event
@@ -14,28 +14,28 @@ import crafttweaker.event.EntityLivingUseItemEvent.All;
 //Specific Events
 import crafttweaker.event.EntityLivingUseItemEvent.Start;
 import crafttweaker.event.EntityLivingUseItemEvent.Tick;
-import crafttweaker.event.EntityLivingUseItemEvent.Stop;
+import crafttweaker.event.EntityLivingItemEvent.Stop;
 import crafttweaker.event.EntityLivingUseItemEvent.Finish;
 ```
 
-## Event interface extensions
+## イベントインターフェースの拡張
 
-LivingEntityUseItem Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+LivingEntityUseItem Eventsは、以下のインターフェースを実装し、それらのメソッド/getters/setters/settersをすべて呼び出すことができます。
 
 - [ILivingEvent](/Vanilla/Events/Events/ILivingEvent/)
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 
 ## ZenGetters/ZenSetters
 
-The following information can be retrieved/set during the event:
+イベント中に以下の情報を取得/設定できます:
 
 | ZenGetter  | 戻り値                                      |
 | ---------- | ---------------------------------------- |
-| `player`   | [IPlayer](/Vanilla/Players/IPlayer/)     |
+| `プレイヤー`    | [IPlayer](/Vanilla/Players/IPlayer/)     |
 | `isPlayer` | bool                                     |
-| `item`     | [IItemStack](/Vanilla/Items/IItemStack/) |
-| `duration` | int                                      |
+| `項目`       | [IItemStack](/Vanilla/Items/IItemStack/) |
+| `期間`       | int                                      |
 
-| ZenSetter  | Parameter Type |
-| ---------- | -------------- |
-| `duration` | int            |
+| ZenSetter | パラメータタイプ |
+| --------- | -------- |
+| `期間`      | int      |

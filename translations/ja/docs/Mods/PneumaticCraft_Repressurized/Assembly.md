@@ -1,16 +1,16 @@
-# Robotic Assembly System
+# ロボット組立システム
 
-The Robotic Assembly System is a multiblock consisting of the Assembly Controller, Assembly I/O Units, Assembly Platform, Assembly Laser and Assembly Drill. It converts input items to output items using the laser and/or drill.
+ロボット組立システムは、組立コントローラ、組立I/Oユニット、組立プラットフォーム、組立レーザー、組立ドリルで構成されるマルチブロックです。 入力項目をレーザーおよび/またはドリルを使用して出力項目に変換します。
 
-There are several functions for adding and removing recipes, depending on whether the recipe requires use of the laser, the drill, or both.
+レシピの追加と削除のためのいくつかの機能があります, レシピは、レーザーの使用を必要とするかどうかに応じて、, ドリル, またはその両方.
 
-## Calling
+## 発信中
 
-You can call the Assembly package using `mods.pneumaticcraft.assembly`.
+`mods.emeraticcraft.assembly` を使ってアセンブリパッケージに電話をかけることができます。
 
-## Removing
+## 削除中
 
-These functions remove the first recipe they find with the given [IItemStack](/Vanilla/Items/IItemStack/) `output`:
+これらの関数は、与えられた [IItemStack](/Vanilla/Items/IItemStack/) `出力` で見つけた最初のレシピを削除します:
 
 ```zenscript
 mods.pneumaticcraft.assembly.removeLaserRecipe(IItemStack output);
@@ -22,17 +22,17 @@ mods.pneumaticcraft.assembly.removeLaserRecipe(<pneumaticcraft:aphorism_tile>);
 mods.pneumaticcraft.assembly.removeDrillRecipe(<pneumaticcraft:pressure_chamber_valve>);
 ```
 
-These functions remove *all* recipes currently defined for the Assembly System:
+これらの関数は、アセンブリシステムに現在定義されている ** すべてのレシピを削除します。
 
 ```zenscript
-mods.pneumaticcraft.assembly.removeAllLaserRecipes();
-mods.pneumaticcraft.assembly.removeAllDrillRecipes();
-mods.pneumaticcraft.assembly.removeAllDrillLaserRecipes();
+mods.emeraticcraft.assembly.removeAllLaserRecipes();
+mods.emeraticcraft.assembly.removeAllDrillRecipes();
+mods.emeraticcraft.assembly.removeAllDrillLaserRecipes();
 ```
 
-## Adding
+## 追加中
 
-These functions are used to add new recipes for the assembly system:
+これらの機能は、アセンブリシステムの新しいレシピを追加するために使用されます。
 
 ```zenscript
 mods.pneumaticcraft.assembly.addLaserRecipe(IItemStack input, IItemStack output)

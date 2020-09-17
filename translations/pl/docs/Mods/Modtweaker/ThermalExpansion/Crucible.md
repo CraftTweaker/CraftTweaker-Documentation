@@ -1,18 +1,18 @@
-# Crucible
+# Tygiel
 
-## Package
+## Pakiet
 
-`mods.thermalexpansion.Crucible`
+`[PLACEHOLDER] mods.thermalexpansion.Procible`
 
-## Addition
+## Dodanie
 
 ```zenscript
-mods.thermalexpansion.Crucible.addRecipe(ILiquidStack output, IItemStack input, int energy);
+mods.thermalexpansion.Crucible.addRecipe(ILiquidStack, IItemStack input, int energy);
 
 mods.thermalexpansion.Crucible.addRecipe(<liquid:refined_oil>, <minecraft:diamond>, 50);
 ```
 
-## Removal
+## Usuwanie
 
 ```zenscript
 mods.thermalexpansion.Crucible.removeRecipe(IItemStack input);

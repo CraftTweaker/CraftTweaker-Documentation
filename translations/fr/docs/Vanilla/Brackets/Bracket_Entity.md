@@ -1,8 +1,8 @@
-# Entity Bracket Handler
+# Gestionnaire de tranches d'entité
 
-The Entity Bracket Handler gives you access to the Entities (e.g. Mobs, tile ents etc.) in the game. It is only possible to get entities registered in the game, so adding or removing mods may cause issues if you reference the mod's mobs in an Entity Bracket Handler.
+Le gestionnaire de bracket d'entités vous donne accès aux entités (par exemple, les mots, les tuiles etc.) dans le jeu. Il est uniquement possible de faire enregistrer des entités dans le jeu, ainsi l'ajout ou la suppression de mods peuvent causer des problèmes si vous référencez les mobs du mod dans un gestionnaire de tranches d'entités.
 
-Entities are referenced in the Entity handler this way:
+Les entités sont référencées dans le gestionnaire d'entités de cette façon :
 
 ```zenscript
 <entity:modID:entityName>
@@ -10,11 +10,11 @@ Entities are referenced in the Entity handler this way:
 <entity:minecraft:sheep>
 ```
 
-If the mob/entity is found, this will return an IEntityDefinition Object. Please refer to the [respective Wiki entry](/Vanilla/Entities/IEntityDefinition/) for further information on what you can do with these.
+Si la mob/entité est trouvée, cela retournera un objet IEntityDefinition. Veuillez vous référer à la [entrée Wiki respective](/Vanilla/Entities/IEntityDefinition/) pour plus d'informations sur ce que vous pouvez faire avec celles-ci.
 
-# Getting all Registered Entities
+# Récupération de toutes les entités enregistrées
 
-You can use the following command to output all registered entities to the CraftTweaker log
+Vous pouvez utiliser la commande suivante pour afficher toutes les entités enregistrées dans le journal CraftTweaker
 
-    /ct entities
-    /crafttweaker entities
+    /ct entitées
+    /crafttweaker

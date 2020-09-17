@@ -1,16 +1,16 @@
-# Grinder
+# Мельница
 
-## Importing the Package
+## Импортирование пакета
 `mods.techreborn.grinder`
 
-## Adding Recipes
+## Добавление рецептов
 ```zenscript
-mods.techreborn.grinder.addRecipe(IItemStack output, IIngredient input1, int ticktime, int euTick);
+mods.techreborn.grinder.addRecipe(IItemStack, IIngredient input1, int ticktime, int euTick);
 ```
 
-## Removing Recipes
+## Удаление рецептов
 ```zenscript
 mods.techreborn.grinder.removeInputRecipe(IIngredient ingredient);
-mods.techreborn.grinder.removeRecipe(IItemStack output);
+mods.techreborn.grinder.removeRecipe(выход IItemStack);
 mods.techreborn.grinder.removeAll();
 ```

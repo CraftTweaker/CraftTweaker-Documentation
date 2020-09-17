@@ -1,23 +1,23 @@
 # ITeam
 
-If you don't know what a team is then you are a horrible person.
+Si vous ne savez pas ce qu'est une équipe, alors vous êtes une personne horrible.
 
-## Importing the package
+## Importation du paquet
 
-It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
-`import crafttweaker.game.ITeam;`
+Il pourrait vous être nécessaire d'importer le paquet si vous rencontrez des problèmes (comme lancer un [Tableau](/AdvancedFunctions/Arrays_and_Loops/)), alors mieux être sûr que désolé et ajouter l'importation.  
+`importer crafttweaker.game.ITeam ;`
 
 ## ZenGetters
 
-| Getter name            | Type           |
-| ---------------------- | -------------- |
-| name                   | string         |
-| allowFriendlyFire      | bool           |
-| colorPrefix            | string         |
-| membershipCollection   | List<string\> |
-| deathMessageVisibility | string         |
-| collisionRule          | string         |
+| Nom du Getter                 | Type de texte        |
+| ----------------------------- | -------------------- |
+| Nom                           | chaîne de caractères |
+| Permettre au feu allié        | booléen              |
+| Préfixe de couleur            | chaîne de caractères |
+| collection(s) d'adhésion(s)   | Liste<string\>      |
+| Visibilité du message de mort | chaîne de caractères |
+| Règle de collision            | chaîne de caractères |
 
-## ZenMethods
+## Méthodes Zen
 
-- `formatString(string input);` → Formats the input string for the team. Returns the formatted string.
+- `formatString(entrée de la chaîne de caractères);` → Formate la chaîne d'entrée de l'équipe. Retourne la chaîne formatée.

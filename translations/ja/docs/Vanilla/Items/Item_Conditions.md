@@ -1,61 +1,61 @@
-# Item Conditions
+# アイテム条件
 
-Sometimes normal items won't cut it:
+通常のアイテムがカットされない場合があります。
 
-Sometimes we want to be able to specify recipes that only work when the input item fulfills some conditions.
+時々、入力項目が条件を満たすときにのみ機能するレシピを指定したいと思うことがあります。
 
-Sometimes we want to be able to specify recipes that will produce a special item, be it with NBT-Tag or Damage value or otherwise.
+NBT-Tagやダメージ値などの特殊なアイテムを作るレシピを指定したい場合もあります。
 
-## Importing the package
+## パッケージのインポート
 
 It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
 `import crafttweaker.item.IItemCondition;`
 
-## Input Conditions
+## 入力条件
 
-These will affect the items that you can use to craft the resulting item. Remember, you can mix modifiers, to mix Damage and NBT-Tag, for example
+これらは、結果として得られるアイテムを作成するために使用できるアイテムに影響します。 修飾キーを組み合わせてダメージとNBTタグを組み合わせることができます
 
 ```zenscript
-<minecraft:iron_pickaxe>.onlyDamaged().withTag({display: {Lore: "Aren't we all butterflies?"}});
+<minecraft:iron_pickaxe>.onlyDamaged().withTag({display: {Lore: "We all butterflies?"}});
 ```
 
-### Damage
+### ダメージ
 
 #### anyDamage
 
-The input item's damage value does not matter for the recipe
+入力アイテムのダメージ値はレシピには関係ありません
 
 ```zenscript
 item.anyDamage()
 ```
 
-#### onlyDamaged
+#### のみ破損しました
 
-The input item needs to be damaged
+入力アイテムが破損している必要があります
 
 ```zenscript
 item.onlyDamaged();
 ```
 
-#### Damaged at least
+#### 少なくとも破損しています
 
-Input item's damage value needs to be at least the specified `value`  
-`Value` is an int
+入力項目のダメージ値は、指定された `値`  
+`値` は int である必要があります
 
 ```zenscript
 item.onlyDamageAtLeast(value);
 ```
 
-#### Damage at most
+#### 最大ダメージ
 
-Input item's damage value needs to be at max the specified `value`  
-`Value` is an int
+入力項目のダメージ値は、指定された `値`  
+`値` は、int である必要があります
 
 ```zenscript
 item.onlyDamageAtMost(value);
 ```
 
-#### Damage between
+#### ダメージ間隔
 
 Input item's damage value needs to be between the speciefied `value1` and `value2`  
 `Value1` is an int  
@@ -65,10 +65,10 @@ Input item's damage value needs to be between the speciefied `value1` and `value
 item.onlyDamageBetween(value1, value2);
 ```
 
-### Get Items back or explicitly forbid an item's reusability
+### アイテムを取り戻す、またはアイテムの再利用を明示的に禁止する
 
-Sometimes you need a recipe where you get some of your input items back.  
-By applying `transformDamage(int)` you can create such recipes.
+時々、入力項目の一部を取り戻すレシピが必要になることがあります。  
+`transformDamage(int)` を適用することで、そのようなレシピを作成できます。
 
 #### transformDamage
 
@@ -79,13 +79,13 @@ The input item will receive `value` damage points and you will get it back, unle
 item.transformDamage(value);
 ```
 
-### NBT-Tags
+### NBTタグ
 
-Sometimes you want your ingredients to need a specific NBT-Tag. The recipe doesn't care if your item has NBT-Tags other than the ones specified, So a pickaxe with a specific lore may also be enchanted!
+時には、特定のNBTタグが必要になることがあります。 レシピは指定されたもの以外のNBTタグがあるかどうかは気にしません だから、特定の伝承を持つつるはしも魅了されるかもしれません!
 
-If you use `withTag` jei will display it properly, if you use `onlyWithTag`, jei will only display a tagless item!
+`withTag` jei を使用すると、 `onlyWithTag`を使用すると、jei はタグなしのアイテムのみを表示します!
 
-Here's how you do it: `NBTTag` is your NBT Data
+`NBTTag` は NBT データです。
 
 ```zenscript
 item.withTag(NBTData);
@@ -95,23 +95,23 @@ item.onlyWithTag(NBTTag);
 <minecraft.iron_pickaxe>.withTag({display: {Name: "Pickle the Pickleberry"}});
 ```
 
-## Output modifiers
+## 出力の変更
 
-If you can specify input conditions, it's not so hard to also define output conditions, or rather, output modifiers.
+入力条件を指定できる場合、出力条件を定義したり、出力修飾子を定義したりすることはそれほど難しくありません。
 
-### Damage
+### ダメージ
 
-Your output item will have `value` damage points.  
-`Value` is an int.
+出力アイテムには `値の` ダメージポイントがあります。  
+値の`値の` はintです。
 
 ```zenscript
 item.withDamage(value);
 ```
 
-### NBT-Tags
+### NBTタグ
 
-Your output item will have `NBTTag` as NBT-Tag.  
-`NBTTag` is your NBT Data
+あなたの出力アイテムは `NBTTag` を NBT-Tag.  
+`NBTTag` は NBT データです。
 
 ```zenscript
 item.withTag(NBTTag);
@@ -119,12 +119,12 @@ item.withTag(NBTTag);
 <minecraft:iron_pickaxe>.withTag({display: {Name: "Pickle the Pickleberry"}})
 ```
 
-## Registering own item Conditions
+## 自分のアイテム条件を登録
 
-You can also add your own itemConditions. These are special functions that accept the [item](/Vanilla/Items/IItemStack/) itself as single parameter.
+独自のアイテム条件を追加することもできます。 これらは、 [項目](/Vanilla/Items/IItemStack/) 自体を単一のパラメータとして受け入れる特別な関数です。
 
 ```zenscript
 conditionedItem = item.only(function(item) {return true;});
 ```
 
-The function needs to return a bool that is true if the item matches the condition.
+この関数は、項目が条件に一致した場合、true の bool を返す必要があります。

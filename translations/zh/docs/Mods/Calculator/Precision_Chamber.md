@@ -1,21 +1,21 @@
-# Precision Chamber
+# 精准分庭
 
 ## 所属包名
 ```zenscript
-import mods.calculator.precisionChamber;
+导入 mods.calculator.quentiionChamber;
 ```
 
 ## 使用方式
 
-- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input** The input.
-- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) output[1-2]** The outputs.
+- **[Ingredient](/Vanilla/Variable_Types/IIngredient/) 输入** 输入.
+- **[Ingredient](/Vanilla/Variable_Types/IIngredient/) 输出[1-2]** 输出.
 
 ## 添加配方
 ```zenscript
-precisionChamber.addRecipe(IIngredient input, IIngredient output1, IIngredient output2);
+centricionChamber.addRecipe(IIngredient input, IIngredient output1, IIngredient output2)；
 ```
 
-## Removal
+## 移除
 ```zenscript
-precisionChamber.removeRecipe(IIngredient output1, IIngredient output2);
+centricionChamber.removeRecipe(IIngredient output1，IIngredient output2)；
 ```

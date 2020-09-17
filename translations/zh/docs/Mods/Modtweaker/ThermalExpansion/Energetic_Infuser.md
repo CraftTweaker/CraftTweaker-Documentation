@@ -1,20 +1,20 @@
-# Energetic Infuser
+# 能量感染用户
 
 ## 所属包名
 
-`mods.thermalexpansion.Infuser`
+`本站扩展。Infuser`
 
 ## 添加配方
 
 ```zenscript
-//mods.thermalexpansion.Infuser.addRecipe(IItemStack output, IItemStack input, int energy);
-mods.thermalexpansion.Infuser.addRecipe(<minecraft:gold_ingot>, <minecraft:iron_ingot>, 1000);
+//mods.thermalext.Infuser.addRecipe(IItemStack output, IItemStack input, int energy);
+mods.thermalext.Infuser.addRecipe(<minecraft:gold_ingot>, <minecraft:iron_ingot>, 1000);
 
 ```
 
 ## 删除配方
 
 ```zenscript
-//mods.thermalexpansion.Infuser.removeRecipe(IItemStack input);
-mods.thermalexpansion.Infuser.removeRecipe(<minecraft:gold_ore>);
+//mods.thermalext.Infuser.removeRecipe(IItemStack 输入);
+mods.thermalext.Infuser.removeRecipe(<minecraft:gold_ore>);
 ```

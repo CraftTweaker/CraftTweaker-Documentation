@@ -1,18 +1,18 @@
-# Crucible
+# Crisol
 
-## Package
+## Paquete
 
 `mods.thermalexpansion.Crucible`
 
-## Addition
+## Adicional
 
 ```zenscript
-mods.thermalexpansion.Crucible.addRecipe(ILiquidStack output, IItemStack input, int energy);
+mods.thermalexpansion.Crucible.addRecipe(salida de ILiquidStack, entrada de ItemStack, energía de int);
 
 mods.thermalexpansion.Crucible.addRecipe(<liquid:refined_oil>, <minecraft:diamond>, 50);
 ```
 
-## Removal
+## Eliminar
 
 ```zenscript
 mods.thermalexpansion.Crucible.removeRecipe(IItemStack input);

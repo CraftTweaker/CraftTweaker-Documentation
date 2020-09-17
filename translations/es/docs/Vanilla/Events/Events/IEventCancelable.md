@@ -1,18 +1,18 @@
 # IEventCancelable
 
-This interface is extended by all Events that can be cancelled.  
-That means you can cancel them using CrT or check if they have been canceled.
+Esta interfaz es extendida por todos los eventos que pueden ser cancelados.  
+Esto significa que puedes cancelarlos usando CrT o comprobar si han sido cancelados.
 
-Note that events that have been canceled before CrT receives them will not be checked by the handlers.  
-Also, if you register multiple handlers, and one of them cancels the event, the other CrT handlers will still receive it!
+Tenga en cuenta que los eventos que hayan sido cancelados antes de que CrT los reciba no serán verificados por los controladores.  
+Además, si registras múltiples manejadores, y uno de ellos cancela el evento, ¡los otros manejadores CrT seguirán recibiendo!
 
-## Importing the class
+## Importar la clase
 
-It might be required to [import](/AdvancedFunctions/Import/) the class to avoid errors.  
-`import crafttweaker.event.IEventCancelable;`
+Podría ser necesario [importar](/AdvancedFunctions/Import/) la clase para evitar errores.  
+`importar crafttweaker.event.IEventCancelable;`
 
-## What can be done with them?
+## ¿Qué se puede hacer con ellos?
 
-- `event.cancel();` Method, returns void (nothing).
-- `event.canceled;` Getter, returns a bool.
+- `event.cancel();` método, devuelve vacío (nada).
+- `event.canceled;` Obtiene, devuelve un bool.
 - `event.canceled = true;` Setter

@@ -1,115 +1,115 @@
-# Material
+# Материал
 
-## Calling the package
+## Вызов пакета
 
-The `mods.gregtech.material` package contains all classes you will need to deal with materials.
+Пакет `mods.gregtech.material` содержит все классы, необходимые для работы с материалами.
 
-## Material Object
+## Объект Material
 
-An object of `mods.gregtech.material.Material` represents a material in GregTech, with some useful members you can deal with.
+Объект `mods.gregtech.material.Materal.` представляет собой материал в GregTech, с некоторыми полезными членами, с которыми вы можете справиться.
 
-Properties:
+Свойства:
 
-| Название           | Type                         | Description                                      |
-| ------------------ | ---------------------------- | ------------------------------------------------ |
-| color              | int                          | Color of material in RGB format                  |
-| chemicalFormula    | string                       | Chemical formula of this material                |
-| iconSet            | MaterialIconSet              | Icon set for this material meta-items generation |
-| components         | ImmutableList<materialstack> | List of this material component                  |
-| generationFlagsRaw | long                         | Generation flags of this material (See MatFlags) |
-| element            | Element                      | Element of this material consist of              |
+| Название             | Тип                                | Описание                                        |
+| -------------------- | ---------------------------------- | ----------------------------------------------- |
+| цвет                 | int                                | Цвет материала в формате RGB                    |
+| chemicalFormula      | string                             | Химическая формула этого материала              |
+| набор иконок         | Набор иконок материала             | Набор иконок для этого создания мета-предметов  |
+| компоненты           | Неизменяемый список<materialstack> | Список этого материала                          |
+| генерация Флаг Сырья | long                               | Генерация флагов этого материала (см. MatFlags) |
+| элемент              | Элемент                            | Элемент этого материала состоит из              |
 
-Getters:
+Получатели:
 
-| Name            | Type   | Description                          |
-| --------------- | ------ | ------------------------------------ |
-| radioactive     | bool   | True if this material is radioactive |
-| protons         | long   |                                      |
-| neutrons        | long   |                                      |
-| mass            | long   |                                      |
-| density         | long   |                                      |
-| camelCaseString | string |                                      |
-| unlocalizedName | string |                                      |
-| localizedName   | string | Client-side only                     |
-| name            | string | Name in the Material registry        |
+| Название         | Тип    | Описание                                          |
+| ---------------- | ------ | ------------------------------------------------- |
+| radioactive      | bool   | Правда, если этот материал является радиоактивным |
+| protons          | long   |                                                   |
+| нейтроны         | long   |                                                   |
+| масса            | long   |                                                   |
+| плотность        | long   |                                                   |
+| строка верблюдов | string |                                                   |
+| unlocalizedName  | string |                                                   |
+| localizedName    | string | Только на стороне клиента                         |
+| имя              | string | Название в реестре материалов                     |
 
-Methods:
+Методы:
 
-| Name (Parameters)             | Description           |
-| ----------------------------- | --------------------- |
-| addFlags(String... flagNames) | Add generation flags  |
-| hasFlag(String flagName)      | Has a generation flag |
+| Имя (параметры)            | Описание                 |
+| -------------------------- | ------------------------ |
+| addFlags(String... флагов) | Добавить флаги генерации |
+| hasFlag(String flagName)   | Имеет флаг генерации     |
 
-`MaterialStack` can be created by `material * number`, same as [Amount of Ingredient](/Vanilla/Variable_Types/IIngredient.md) or FluidStack.
+`MaterialStack` может быть создан `материалом * числом`, таким же как и [количество ингредиентов](/Vanilla/Variable_Types/IIngredient.md) или FluidStack.
 
 ### FluidMaterial
 
-`FluidMaterial` is a material which contains fluid features. Its superclass is `Material` so all members in `Material` is still available.
+`FluidMaterial` - это материал, содержащий жидкие свойства. Его суперкласс `Материал` , чтобы все участники из `Material` все еще доступны.
 
-Properties:
+Свойства:
 
-| Name             | Type | Description |
-| ---------------- | ---- | ----------- |
-| fluidTemperature | int  |             |
+| Название             | Тип | Описание |
+| -------------------- | --- | -------- |
+| температура жидкости | int |          |
 
-Getters:
+Получатели:
 
-| Name      | Type                                                       | Description           |
-| --------- | ---------------------------------------------------------- | --------------------- |
-| hasFluid  | bool                                                       |                       |
-| hasPlasma | bool                                                       |                       |
-| isGaseous | bool                                                       |                       |
-| fluid     | [ILiquidDefinition](/Vanilla/Liquids/ILiquidDefinition.md) | material fluid        |
-| plasma    | [ILiquidDefinition](/Vanilla/Liquids/ILiquidDefinition.md) | material plasma fluid |
+| Название  | Тип                                                         | Описание                     |
+| --------- | ----------------------------------------------------------- | ---------------------------- |
+| hasFluid  | bool                                                        |                              |
+| хасплазма | bool                                                        |                              |
+| isGaseous | bool                                                        |                              |
+| жидкость  | [ILiquidОпределение](/Vanilla/Liquids/ILiquidDefinition.md) | жидкость материала           |
+| плазма    | [ILiquidОпределение](/Vanilla/Liquids/ILiquidDefinition.md) | материал плазменной жидкости |
 
-### DustMaterial
+### Пыльный материал
 
-`DustMaterial` is a material which contains dust features. Its superclass is `FluidMaterial` so all members in `FluidMaterial` is still available.
+`DustMaterial` - это материал, содержащий пыль. Его суперкласс `FluidMaterial` , поэтому все члены в `FluidMaterial` все еще доступны.
 
-Properties:
+Свойства:
 
-| Name                | Type          | Description                                                                                                                                  |
-| ------------------- | ------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
-| oreMultiplier       | int           | Crushed ore output amount multiplier during maceration                                                                                       |
-| byProductMultiplier | int           | Byproducts output amount multiplier during pulverization                                                                                     |
-| smeltingMultiplier  | int           | Smelting item amount multiplier during vanilla item smelting                                                                                 |
-| directSmelting      | SolidMaterial | Material to which smelting of this material ore will result                                                                                  |
-| washedIn            | FluidMaterial | Material in which this material's ore should be washed to give additional output                                                             |
-| separatedInto       | DustMaterial  | During electromagnetic separation, this material ore will be separated onto this material and material specified by this field               |
-| burnTime            | int           | Burn time of this material when used as fuel in furnace smelting, Zero or negative value indicates that this material cannot be used as fuel |
+| Название              | Тип              | Описание                                                                                                                                                                                 |
+| --------------------- | ---------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| oreMultiplier         | int              | Множитель выходного количества разбитой руды в процессе мацерации                                                                                                                        |
+| Множитель продукта    | int              | Множитель объема вывода поплавок при пульверизации                                                                                                                                       |
+| мультипликатор плавки | int              | Множитель количества плавильного предмета во время плавки ванильных предметов                                                                                                            |
+| прямая Плавка         | SolidMaterial    | Материал, на который будет произведена плавка этой материальной руды                                                                                                                     |
+| вымыто                | FluidMaterial    | Материал, в котором руду этого материала следует промывать, чтобы дать дополнительный выход                                                                                              |
+| separatedInto         | Пыльный материал | Во время электромагнитного разделения руда будет разделена на этот материал и материал, указанный этим полем                                                                             |
+| время сгорания        | int              | Время сжигания этого материала в качестве топлива в плавильном топливе, нулевом или отрицательном значении указывает на то, что этот материал не может использоваться в качестве топлива |
 
-Getters:
+Получатели:
 
-| Name          | Type                | Description                                         |
-| ------------- | ------------------- | --------------------------------------------------- |
-| oreByProducts | List<fluidmaterial> | List of ore by products                             |
-| harvestLevel  | int                 | Tool level needed to harvest block of this material |
+| Название             | Тип                 | Описание                                                      |
+| -------------------- | ------------------- | ------------------------------------------------------------- |
+| oreByProducts        | List<fluidmaterial> | Список руд по товарам                                         |
+| Уровень сбора урожая | int                 | Уровень инструмента необходим для сбора блока этого материала |
 
 ### SolidMaterial
 
-`SolidMaterial` is a material which contains solid features. Its superclass is `DustMaterial` so all members in `DustMaterial` is still available.
+`Солидный материал` - это материал, содержащий твердые свойства. Его суперкласс `DustMaterial` , поэтому все члены в `DustMaterial` все еще доступны.
 
-Properties:
+Свойства:
 
-| Name           | Type          | Description                                                                                          |
-| -------------- | ------------- | ---------------------------------------------------------------------------------------------------- |
-| handleMaterial | SolidMaterial | Material specified here will be required as handle to make tool from this material                   |
-| macerateInto   | DustMaterial  | Macerating any item of this material will result material specified in this field, default to itself |
+| Название       | Тип              | Описание                                                                                                    |
+| -------------- | ---------------- | ----------------------------------------------------------------------------------------------------------- |
+| handleMaterial | SolidMaterial    | Материалы, указанные здесь, будут необходимы в качестве ручки для создания инструмента из этого материала   |
+| macerateInto   | Пыльный материал | Макерирование любого элемента этого материала приведет к материалу, заданному в этом поле, по умолчанию сам |
 
-Getters:
+Получатели:
 
 <table>
   <tr>
     <th>
-      Name
+      Название
     </th>
     
     <th>
-      Type
+      Тип
     </th>
     
     <th>
-      Description
+      Описание
     </th>
   </tr>
   
@@ -123,13 +123,13 @@ Getters:
     </td>
     
     <td>
-      Speed of tools made from this material, default 1.0f
+      Скорость инструментов из этого материала, по умолчанию 1.0f
     </td>
   </tr>
   
   <tr>
     <td>
-      toolDurability
+      инструмент Прочность
     </td>
     
     <td>
@@ -137,13 +137,13 @@ Getters:
     </td>
     
     <td>
-      Durability of tools made from this material, 0 for materials that can't be used for tools
+      Прочность инструментов, сделанных из этого материала, 0 для материалов, которые не могут быть использованы для инструментов
     </td>
   </tr>
   
   <tr>
     <td>
-      toolEnchantments
+      зачарования инструментов
     </td>
     
     <td>
@@ -151,153 +151,153 @@ Getters:
     </td>
     
     <td>
-      Enchantment to be applied to tools made from this material
+      Накладывать чары на инструменты, сделанные из этого материала
     </td>
   </tr>
 </table>
 
 ### IngotMaterial
 
-`IngotMaterial` is a mterial which contains ingot features. Its superclass is `SolidMaterial` so all members in `SolidMaterial` is still available.
+`IngotMaterial` - это мтерия, содержащая функции ingot . Его суперкласс - `SolidMaterial` , так что все члены в `SolidMaterial` все еще доступны.
 
-Ingot materials can be used as wire, cable and fluid pipe. Those properties can be set by `setCableProperties(long voltage, int baseAmperage, int lossPerBlock)` and `setFluidPipeProperties(int throughput, int maxTemperature, boolean gasProof)`.
+Слитованные материалы могут использоваться как проволока, кабель и жидкая труба. Эти свойства могут быть установлены `setCableProperties(длинное напряжение, int baseAmperage, int lossPerBlock)` и `setFluidPipeProperties(int throughput, int maxTemperature, boolean gasProof)`.
 
-For example:
+Например:
 
 ```zenscript
 var ingotMaterial = MaterialRegistry.createIngotMaterial(2052, "test", 0x1a2f3e, "ingot", 1);
 ingotMaterial.setCableProperties(128, 4, 1); // 128EU/t 4A 1 loss/block
 ```
 
-## Enchantment data
+## Данные зачарования
 
-`gregtech.mods.EnchantmentData` can be found in `SolidMaterial#toolEnchantments`, they are an internal storage of a enchantment with levels.
+`gregtech.mods.EnchantmentData` можно найти в `SolidMaterial#toolEnchantments`, они являются внутренним хранилищем зачарования с уровнями.
 
-They can be casted into `crafttweaker.enchantments.IEnchantmentDefinition` by calling `enchantment` getter, and level is available with `level` getter.
+Они могут быть применены к `crafttweaker.enchantments.IEnchantmentDefinition` , вызвав `зачарование` получателя, и уровень доступен с `уровнем` получателя.
 
-To add a enchantment for tools in `SolidMaterial`, simply calling `addToolEnchantment(IEnchantment enchantment)`, to add a CraftTweaker enchantment data type.
+Чтобы добавить чары для инструментов в `SolidMaterial`, просто вызовите `addToolEnchantment(IEnchantment enchantment)`, чтобы добавить тип данных чар.
 
-Example for a Fortune I material:
+Пример материала Fortune I:
 
 ```zenscript
-var material = MaterialRegistry.get("iron"); // Modify iron material
-material.addToolEnchantment(<enchantment:minecraft:fortune> * 1); // Create a enchantment object and add it
+var material = MaterialRegistry.get("iron"); // Измените железный материал
+материал.addToolEnchant(<enchantment:minecraft:fortune> * 1); // создадим объект чарования и добавьте его
 ```
 
-## Material generation flags
+## Флаги генерации материала
 
-These flags are applicable to materials.
+Эти флаги применимы к материалам.
 
-| Name (case-insensitive)           | Description                                                                                                                                                                                                                                         |
-| --------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DECOMPOSITION_BY_ELECTROLYZING  | Enables electrolyzer decomposition recipe generation                                                                                                                                                                                                |
-| DECOMPOSITION_BY_CENTRIFUGING   | Enables centrifuge decomposition recipe generation                                                                                                                                                                                                  |
-| BURNING                           | Add to material if it has constantly burning aura                                                                                                                                                                                                   |
-| FLAMMABLE                         | Add to material if it is some kind of flammable                                                                                                                                                                                                     |
-| EXPLOSIVE                         | Add to material if it is some kind of explosive                                                                                                                                                                                                     |
-| NO_UNIFICATION                    | Add to material to disable it's unification fully                                                                                                                                                                                                   |
-| NO_RECYCLING                      | Add to material if any of it's items cannot be recycled to get scrub                                                                                                                                                                                |
-| DISABLE_DECOMPOSITION             | Disables decomposition recipe generation for this material and all materials that has it as component                                                                                                                                               |
-| DECOMPOSITION_REQUIRES_HYDROGEN | Decomposition recipe requires hydrogen as additional input. Amount is equal to input amount                                                                                                                                                         |
-| GENERATE_PLATE                    | Generate a plate for this material, If it's dust material, dust compressor recipe into plate will be generated, If it's metal material, bending machine recipes will be generated, If block is found, cutting machine recipe will be also generated |
-| GENERATE_DENSE                    | Generate a dense plate.                                                                                                                                                                                                                             |
-| NO_WORKING                        | Add to material if it cannot be worked by any other means, than smashing or smelting. This is used for coated Materials.                                                                                                                            |
-| NO_SMASHING                       | Add to material if it cannot be used for regular Metal working techniques since it is not possible to bend it.                                                                                                                                      |
-| NO_SMELTING                       | Add to material if it's impossible to smelt it                                                                                                                                                                                                      |
-| INDUCTION_SMELTING_LOW_OUTPUT   | Add to material if it is outputting less in an Induction Smelter.                                                                                                                                                                                   |
-| SMELT_INTO_FLUID                | Add to material if it melts into fluid (and it will also generate fluid for this material)                                                                                                                                                          |
-| EXCLUDE_BLOCK_CRAFTING_RECIPES  |                                                                                                                                                                                                                                                     |
-| EXCLUDE_PLATE_COMPRESSOR_RECIPE |                                                                                                                                                                                                                                                     |
-| CRYSTALLISABLE                    | If this material is crystallisable                                                                                                                                                                                                                  |
-| GENERATE_LENSE                    |                                                                                                                                                                                                                                                     |
-| HIGH_SIFTER_OUTPUT              |                                                                                                                                                                                                                                                     |
-| GENERATE_FLUID_BLOCK            | Whenever system should generate fluid block for this fluid material                                                                                                                                                                                 |
-| GENERATE_PLASMA                   | Add this flag to enable plasma generation for this material                                                                                                                                                                                         |
-| STATE_GAS                         | Marks material state as gas                                                                                                                                                                                                                         |
-| GENERATE_ROD                      |                                                                                                                                                                                                                                                     |
-| GENERATE_GEAR                     |                                                                                                                                                                                                                                                     |
-| GENERATE_LONG_ROD               |                                                                                                                                                                                                                                                     |
-| MORTAR_GRINDABLE                  | If this Material is grindable with a simple Mortar                                                                                                                                                                                                  |
+| Имя (без учета регистра)                  | Описание                                                                                                                                                                                                                                                                                  |
+| ----------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Указанная скидка по элевизировке          | Включает генерацию рецепта электролизера                                                                                                                                                                                                                                                  |
+| Отчёт по цене, по центру,                 | Включает генерацию рецепта декомпозиции центрифуги                                                                                                                                                                                                                                        |
+| ПОКУПКА                                   | Добавляйте в материал, если у него постоянно горит аура                                                                                                                                                                                                                                   |
+| ФЛЕМЯЯ                                    | Добавьте в материал, если он является легковоспламеняющимся                                                                                                                                                                                                                               |
+| ИССЛЕДОВАНИЕ                              | Добавить к материалу, если это какой-то взрывчатый материал                                                                                                                                                                                                                               |
+| NO_UNIFICATION                            | Добавьте в материал, чтобы полностью отключить его унификацию                                                                                                                                                                                                                             |
+| НЕТ_МЕТАЛЛОСОДЕРЖАНИЕ                     | Добавляйте в материал, если любой из его предметов не может быть переработан, чтобы получить скраб                                                                                                                                                                                        |
+| ОТКЛЮЧИТЬ УДАЛЕНИЕ                        | Отключает генерацию рецепта декомпозиции для этого материала и всех материалов в качестве компонента                                                                                                                                                                                      |
+| Необходимые реквизиты для открытия сделки | Рецепт декомпозиции требует дополнительного ввода водорода. Сумма равна сумме ввода                                                                                                                                                                                                       |
+| УСТАНОВИТЬ                                | Генерировать пластину для этого материала, если он является пыльным материалом, будет сгенерирован рецепт пылевых компрессоров в пластину, Если материал металлический, то будут создаваться рецепты машинной гидравлики, если будет найден блок, режущий рецепт также будет сгенерирован |
+| Начисление                                | Сгенерировать плотную пластину.                                                                                                                                                                                                                                                           |
+| НЕОБХОДИМО                                | Добавляйте в материал, если он не может быть отработан каким-либо другим способом, кроме расплавки или плавки. Используется для покрытых материалов.                                                                                                                                      |
+| NO_SMASHING                               | Добавьте к материалу, если он не может быть использован для обычных методов работы с металлом, поскольку его невозможно изгибать.                                                                                                                                                         |
+| NO_SMELTING                               | Добавьте в материал, если его невозможно плавить                                                                                                                                                                                                                                          |
+| INDUCTION_SMELTING_POPUP_TITLE          | Добавляйте в материал, если он выходит меньше на индукционный завод.                                                                                                                                                                                                                      |
+| SMELT_INTO_FLUID                        | Добавьте к материалу, если он расплавится в жидкости (а также вырабатывает жидкость для этого материала)                                                                                                                                                                                  |
+| EXCLUDE_BLOCK_TITLE                     |                                                                                                                                                                                                                                                                                           |
+| EXCLUDE_PLATE_COMPRESSOR_RECIPE         |                                                                                                                                                                                                                                                                                           |
+| КРИСТАЛИСЬ                                | Если этот материал является кристаллическим                                                                                                                                                                                                                                               |
+| GENERATE_LENSE                            |                                                                                                                                                                                                                                                                                           |
+| HIGH_SIFTER_OUTTON                      |                                                                                                                                                                                                                                                                                           |
+| GENERATE_BLOCK                            | Всякий раз, когда система должна генерировать жидкий блок для этого жидкого материала                                                                                                                                                                                                     |
+| ОБЩИЙ УСТАНОВЛЕННЫЙ                       | Добавьте этот флаг, чтобы включить плазменное поколение для этого материала                                                                                                                                                                                                               |
+| STATE_GAS                                 | Отметить состояние материала как газ                                                                                                                                                                                                                                                      |
+| Перенесенный род                          |                                                                                                                                                                                                                                                                                           |
+| GENERAT                                   |                                                                                                                                                                                                                                                                                           |
+| GENERATE_LONG_ROD                       |                                                                                                                                                                                                                                                                                           |
+| MORTAR_GRINDABLE                          | Если этот материал измельчен с помощью простого Mortar                                                                                                                                                                                                                                    |
 
-## Material icon set
+## Набор иконок в стиле Material
 
-Icon sets are available in `mods.gregtech.material.MaterialIconSet`.
+Набор иконок доступен в `mods.gregtech.material.MaterialIconSet`.
 
-- NONE
-- METALLIC
-- DULL
-- MAGNETIC
-- QUARTZ
-- DIAMOND
-- EMERALD
+- НЕТ
+- МЕТАЛЛИК
+- ДУЛЬ
+- МАГНЕТИК
+- КВАРТ
+- ДИАМОН
+- ЭЛЕРАЛА
 - SHINY
-- SHARDS
-- ROUGH
-- FINE
+- РАСХОДЫ
+- РОУГ
+- ОТПРАВИТЬ
 - SAND
-- FLINT
-- RUBY
+- ВРЕМЯ
+- РУБА
 - LAPIS
-- POWDER
-- FLUID
-- GAS
+- ПОВЕДЕНИЕ
+- ФЛЮИД
+- ГАЗ
 - LIGNITE
-- OPAL
-- GLASS
-- WOOD
-- LEAF
-- GEM_HORIZONTAL
-- GEM_VERTICAL
-- PAPER
+- ОПАЛ
+- ГЛАСС
+- ОЖИДАЕТ
+- ЛЕАФ
+- HEM_HORIZTAL
+- Подтверждено
+- ПАРАМЕР
 - NETHERSTAR
 
-Getters are `name`.
+Геттеры `имя`.
 
-Methods are `toString()`, and static method `getByName(String name)`.
+Методы `toString()`, и статический метод `getByName(String name)`.
 
-## Material Registry
+## Реестр материалов
 
-Material registry is a helper to get, list and create materials in the unification system.
+Реестр материалов является помощником по получению, составлению списка и созданию материалов в системе унификации.
 
-You may import the class `mods.gregtech.material.MaterialRegistry`.
+Вы можете импортировать класс `mods.gregtech.material.MaterialRegistry`.
 
-### Usage
+### Использование
 
 ```zenscript
 #loader gregtech
 import mods.gregtech.material.MaterialRegistry;
 
-// Note that return type can be null if nothing was found
-var material = MaterialRegistry.get(materialName);
+// Заметьте, что возвращаемый тип может быть null если ничего не найдено
+var material = MaterialRegistry. et(название материала);
 
-// List all materials registered
-var materialList = MaterialRegistry.getAllMaterials();
+// Список всех зарегистрированных материалов
+вар материала = Материалы Реестра. etAllMaterials();
 
-// Set toolDurability to 0 if ingot cannot be used as tool
-// Note that an @Optional parameter can be left out, and it's replaced by default 0.
-// Means Gem and Ingot material cannot be used as tool by default.
+// Установка инструмента Прочность 0 если слиток не может использоваться как инструмент
+// Обратите внимание, что можно оставить @Optional параметр, и он заменен на значение по умолчанию 0.
+// Средства самоцвета и слитка по умолчанию не могут использоваться в качестве инструмента.
 MaterialRegistry.createFluidMaterial(int metaItemSubId, String name, int color, String iconSet, @Optional MaterialStack[] materialComponents);
 
-MaterialRegistry.createDustMaterial(int metaItemSubId, String name, int color, String iconSet, int harvestLevel, @Optional MaterialStack[] materialComponents);
+MaterialRegistry. reateDustMaterial(int metaItemSubId, String name, int color, String iconSet, int harvestLevel, @Optional MaterialStack[] materialComponents);
 
-MaterialRegistry.createGemMaterial(int metaItemSubId, String name, int color, String iconSet, int harvestLevel, @Optional MaterialStack[] materialComponents, @Optional float toolSpeed, @Optional int toolDurability);
+MaterialRegistry. reateGemMaterial(int metaItemSubId, String name, int color, String iconSet, int harvestLevel, @Optional MaterialStack[] materialComponents, @Optional float toolSpeed, @Optional int tooltoolDurability);
 
-MaterialRegistry.createIngotMaterial(int metaItemSubId, String name, int color, String iconSet, int harvestLevel, @Optional MaterialStack[] materialComponents, @Optional float toolSpeed, @Optional int toolDurability, @Optional int blastFurnaceTemperature);
+MaterialRegistry. reateIngotMaterial(int metaItemSubId, String name, int color, String iconSet, int harvestLevel, @Optional MaterialStack[] materialComponents, @Optional float toolSpeed, @Optional int toolDurability, @Optional int blastFurnaceTemperature);
 ```
 
-### Example
+### Пример
 
 ```zenscript
 #loader gregtech
 import mods.gregtech.material.MaterialRegistry;
 
-val dustMaterial = MaterialRegistry.createDustMaterial(700, "test", 0xFFAA33, "dull", 2);
-dustMaterial.addFlags(["GENERATE_ORE", "GENERATE_PLATE"]);
+val dustMaterial = Material(700, "test", 0xFFAA33, "dull", 2);
+dustMaterial. ddFlags(["GENERATE_ORE", "GENERATE_PLATE"]);
 
-//Creates a gem-material with a tooltip showing the chemical formula
-//This automatically generates an electrolyzer recipe to split this material into its constituent parts.
-val gemFancy = MaterialRegistry.createGemMaterial(701, "some_fancy_gemstone", 0x0F3E4E2, "gem_horizontal", 1, [<material:beryllium>*4, <material:silicon>*2, <material:oxygen>*9, <material:hydrogen>*2], 1.0, 0);
+//Создает драгоценный материал с помощью подсказки с указанием химической формулы
+//Это автоматически генерирует рецепт электролизатора для разделения этого материала на его составные части.
+val gemFancy = MaterialRegistry.createGemMaterial(701, "some_fancy_gemstone", 0x0F3E4E2, "gem_horizontal", 1, [<material:beryllium>*4, <material:silicon>*2, <material:oxygen>*9, <material:hydrogen>*2], 1. , 0);
 
-//Any previouly registered material can be used- including custom ones.
-val ingotComplex = MaterialRegistry.createIngotMaterial(702, "complex_alloy", 0xF6872E, "shiny", 1, [<material:copper>*3, <material:electrum>*1, <material:redstone>*9, <material:some_fancy_gemstone>*2], 3.5, 0);
+//Любые ранее зарегистрированные материалы могут быть использованы, в том числе и обычные.
+val ingotComplex = MaterialRegistry.createIngotMaterial(702, "complex_alloy", 0xF6872E, "блестящий", 1, [<material:copper>*3, <material:electrum>*1, <material:redstone>*9, <material:some_fancy_gemstone>*2], 3.5, 0);
 ```

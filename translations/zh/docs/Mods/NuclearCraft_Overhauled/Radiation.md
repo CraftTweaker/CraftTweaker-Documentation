@@ -1,113 +1,113 @@
-# Radiation
+# 单独设立的信托基金
 
-## Radiation Scrubber
+## 辐射剪裁器
 
-### Importing the Package
-`mods.nuclearcraft.RadiationScrubber`
+### 导入软件包
+`nuclearcraft。RadiationScrubber`
 
-### Adding Recipes
+### 添加配方
 ```zenscript
-mods.nuclearcraft.RadiationScrubber.addRecipe(IIngredient itemInput, ILiquidStack fluidInput, IIngredient itemOutput, ILiquidStack fluidOutput, int processTime, int processPower, double processEfficiency);
+nuclearcraft。RadiationScrubber.addRecipe(IIngredient itemInput, ILiquidStack fluidInput, IIngredient itemOutput, ILiquidStack fluidOutput, int processTime, int processPower, double process效率)；
 ```
 
-### Removing Recipes
+### 删除配方
 ```zenscript
-mods.nuclearcraft.RadiationScrubber.removeRecipeWithInput(IIngredient itemInput, ILiquidStack fluidInput);
-mods.nuclearcraft.RadiationScrubber.removeRecipeWithOutput(IIngredient itemOutput, ILiquidStack fluidOutput);
+nuclearcraft。RadiationScrubber.removeRecipeWidInput(IIngredient itemInput, ILiquidStack fluidInput);
+mods.nuclearcraft.RadiationScrubber.removeRecipeWOutput(IIngredient itemOutput, ILiquidStack fluidOut);
 mods.nuclearcraft.RadiationScrubber.removeAllRecipes();
 ```
 
-## Block Mutation
+## 方块突变
 
-### Importing the Package
-`mods.nuclearcraft.RadiationBlockMutation`
+### 导入软件包
+`nuclearcraft。辐射区段`
 
-### Adding Recipes
+### 添加配方
 ```zenscript
-mods.nuclearcraft.RadiationBlockMutation.addRecipe(IIngredient blockInput, IIngredient blockOutput, double radiationThreshold);
+nuclearcraft。RadiationBlockMutation.addRecipe(IIngredient blockInput, IIngredient blockOutput, 双辐射阈值)；
 ```
 
-### Removing Recipes
+### 删除配方
 ```zenscript
-mods.nuclearcraft.RadiationBlockMutation.removeRecipeWithInput(IIngredient blockInput);
-mods.nuclearcraft.RadiationBlockMutation.removeRecipeWithOutput(IIngredient blockOutput);
-mods.nuclearcraft.RadiationBlockMutation.removeAllRecipes();
+nuclearcraft。RadiationBlockMutation.removeRecipeWidInput(IIngredient blockInput);
+mods.nuclearcraft.RadiationBlockMutation.removeRecipeWOutput(IIngredient blockOut)；
+mods.nuclearcraft。RadiationBlockMutation.removeAllRecipes();
 ```
 
-## Block Purification
+## 区块净化
 
-### Importing the Package
-`mods.nuclearcraft.RadiationBlockPurification`
+### 导入软件包
+`nuclearcraft。辐射屏蔽净化`
 
-### Adding Recipes
+### 添加配方
 ```zenscript
-mods.nuclearcraft.RadiationBlockPurification.addRecipe(IIngredient blockInput, IIngredient blockOutput, double radiationThreshold);
+nuclearcraft。RadiationBlockPurification.addRecipe(IIngredient blockInput, IIngredient blockOutput, 双辐射阈值)；
 ```
 
-### Removing Recipes
+### 删除配方
 ```zenscript
-mods.nuclearcraft.RadiationBlockPurification.removeRecipeWithInput(IIngredient blockInput);
-mods.nuclearcraft.RadiationBlockPurification.removeRecipeWithOutput(IIngredient blockOutput);
-mods.nuclearcraft.RadiationBlockPurification.removeAllRecipes();
+nuclearcraft。RadiationBlockPurification.removeRecipeWidInput(IIngredient blockInput);
+mods.nuclearcraft.RadiationBlockPurification.removeRecipeWOutput(IIngredient blockOut)；
+mods.nuclearcraft。RadiationBlockPurification.removeAllRecipes();
 ```
 
-## Entity Radiation
+## 实体辐射量
 
-### Radiation
-`amount` is the amount of radiation added to the `IEntityLivingBase`. `useImmunity` controls whether the function occurs even the `IEntityLivingBase` is immune.
+### 单独设立的信托基金
+`金额` 是添加到 `IentityLivingBase` 的辐射量。 `使用 Immunity` 控制函数是否发生了 `IentityLivingBase` 是否是免责的。
 ```zenscript
-IEntityLivingBase::addRadiation(double amount, @Optional boolean useImmunity);
-IEntityLivingBase::setRadiation(double amount, @Optional boolean useImmunity);
-IEntityLivingBase::getRadiation();
+IEntityLivingBase::addRadiation(双金额, @Optional bolie useImmunity);
+IEntityLivingBase::setRadiation(双金额, @Optional booly useImmunity);
+IEntityLivingBase::gettRadiation();
 ```
 
-### Radaway Buffer
-`amount` is the amount of Radaway Buffer added to the `IEntityLivingBase`. `slowBuffer` decides if the Radaway Buffer added is a slow buffer.
+### 雷达缓冲器
+`金额` 是添加到 `IentityLivingBase` 的Radaway Buffer 的金额。 `减缓缓存` 决定是否添加了慢缓缓冲。
 ```zenscript
-IEntityLivingBase::addRadawayBuffer(double amount, @Optional boolean slowBuffer);
-IEntityLivingBase::setRadawayBuffer(double amount, @Optional boolean slowBuffer);
-IEntityLivingBase::getRadawayBuffer(boolean slowBuffer);
+IEntityLivingBase::addRadawayBuffer(双金额, @Opinion bloffer);
+IEntityLivingBase::setRadawayBuffer(双金额, @opulie blow Buffer);
+IEntityLivingBase::getRadawayBuffer(Boolie bloffer);
 ```
-**Note: If `slowBuffer` is `true`, `getRadawayBuffer()` will return the slow-acting radiation removal buffer instead of the normal one.**
+**注意：如果 `放慢缓缓冲器` 是 `true`, `getRadawayBuffer()` 将返回慢动作的辐射清除缓冲区而不是正常缓冲区。**
 
-### Poison
-`amount` is the amount of Poison Buffer added to the `IEntityLivingBase`.
+### 毒剂
+`数量` 是添加到 `IentityLivingBase` 的 PoisonBuffer 数量。
 ```zenscript
-IEntityLivingBase::addPoisonBuffer(double amount);
-IEntityLivingBase::setPoisonBuffer(double amount);
+IEntityLivingBase::addPoisonBuffer(双倍数量)；
+IEntityLivingBase::setPoisonBuffer(双倍数量)；
 IEntityLivingBase::getPoisonBuffer();
 ```
 
-### Radiation Resistance
-`amount` is the amount of Radiation Resistance added to the `IEntityLivingBase`.
+### 辐射抗性
+`数量` 是添加到 `IentityLivingBase` 的辐射抗性金额。
 ```zenscript
-IEntityLivingBase::addRadiationResistance(double amount);
-IEntityLivingBase::setRadiationResistance(double amount);
+IEntityLivingBase::addRadiationResistance(双倍数量)；
+IEntityLivingBase::setRadiationResistance(双倍数量)；
 IEntityLivingBase::getRadiationResistance();
 ```
 
-### Radiation Level Getters
+### 辐射等级收集器
 
-#### Raw Radiation Level
-This method returns the radiation of the `IEntityLivingBase` in rads.
+#### 原始辐射水平
+这个方法返回雷达中 `IentityLivingBase` 的辐射。
 ```zenscript
 IEntityLivingBase::getRawRadiationLevel();
 ```
 
-### Radiation Level
-This method returns the change in radiation level of the `IEntityLivingBase` in rads/tick.
+### 辐射水平
+这个方法返回雷达/秒内 `IentityLivingBase` 辐射水平的变化。
 ```zenscript
 IEntityLivingBase::getRadiationLevel();
 ```
 
-## Radiation
+## 单独设立的信托基金
 This method gets the radiation of an `IIngredient` in rads/tick.
 ```zenscript
-mods.nuclearcraft.Radiation.getRadiationLevel(IIngredient itemInput);
+nuclearcraft。getRadiation Level(Ingredient itemput)；
 ```
 
-## Radiation Immunity
-This method gives the ability to control the immunity of players depending on the stage. `defaultImmunity` is a boolean specifiying the players' immunity without the specified stages. `stageNames` is an array of the names of all stages that can toggle the immunity of players.
+## 辐射豁免
+这种方法使得能够根据阶段控制行为者的豁免权。 `默认豁免` 是一个指定玩家豁免权的布尔值。 `舞台名称` 是可以切换玩家豁免权的所有阶段的数组名称。
 ```zenscript
-mods.nuclearcraft.Radiation.setRadiationImmunityGameStages(boolean defaultImmunity, String[] stageNames);
+nuclearcraft。Radiation.setRadiationImmunityGameStages(布尔默认豁免，String[…]级地名)；
 ```

@@ -1,41 +1,41 @@
-# Material Representation
+# マテリアルの表現
 
-A Material representation represents a Tinkers' Construct Material.  
-You can get such an object either from the [Material Builder](/Mods/ContentTweaker/Tinkers_Construct/MaterialBuilder/) or from the [Material Bracket Handler](/Mods/ContentTweaker/Tinkers_Construct/Brackets/Bracket_Material/).
+材料表現は、ティンカーの建設資材を表します。  
+このようなオブジェクトは、 [Material Builder](/Mods/ContentTweaker/Tinkers_Construct/MaterialBuilder/) または [Material Bracket Handler](/Mods/ContentTweaker/Tinkers_Construct/Brackets/Bracket_Material/) から取得できます。
 
-## Importing the class
+## クラスのインポート
 
 It might be required for you to import the class if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
 `import mods.contenttweaker.tconstruct.Material`
 
 ## ZenGetter
 
-| ZenGetter     | Type   |
-| ------------- | ------ |
-| identifier    | string |
-| commandString | string |
+| ZenGetter     | タイプ |
+| ------------- | --- |
+| identifier    | 文字列 |
+| commandString | 文字列 |
 
-## Adding material items
+## 材料アイテムの追加
 
-If you use the given item in the part builder, you can set how many materialpoints that will give, or how much the item will repair.
+部品ビルダーで指定されたアイテムを使用する場合 材料ポイントの数や修理の量を決めることができます
 
-    //myMaterial.addItem(IIngredient item, @Optional(1) int amountNeeded, @Optional(144) int amountMatched));
+    //myMaterial.addItem(IIngredient項目, @Optional(1) int amountNeed, @Optional(144) int amountMatched));
     myMaterial.addItem(<item:minecraft:iron_pickaxe>);
     myMaterial.addItem(<item:minecraft:iron_block>, 4, 288);
     
 
-- `item` is the item that is matched against. You can use [Item Conditions](/Vanilla/Items/Item_Conditions/) but no Transformers. 
-- `amountNeeded` is the amount of items that is matched against. You can split them over all the slots the toolforge provides, which also allows you to go above 64. In the second example above, you need 4 iron blocks per addition. Defaults to 1.
-- `amountMatched` is the amount of material points added per `amountNeeded`. In the second example above four iron blocks give two material points. Defaults to 144 (one ingot/one Material value).
+- `アイテム` はマッチングされたアイテムです。 [アイテム条件](/Vanilla/Items/Item_Conditions/) は使用できますが、トランスフォーマーは使用できません。 
+- `amountNeeded` は一致するアイテムの量です。 toolforgeが提供するすべてのスロットでそれらを分割することができ、64を超えることもできます。 上記の2つ目の例では、鉄ブロックを4つ追加する必要があります。 デフォルトは 1 です。
+- `amountMatched` は、 `amountNeeded` あたりの材料ポイントの量です。 2番目の例では、4つの鉄のブロックは2つの材料ポイントを与えます。 デフォルトは 144 (1 インゴット/1 つのマテリアル値) です。
 
-## Adding Material Traits
+## 材料特性の追加
 
 You can add a trait to the material.  
 All items made from this material will then have this trait.  
 Uses a [Trait Representation](/Mods/ContentTweaker/Tinkers_Construct/Trait/) or a String with the identifier (recommended), returns void.  
-You can also provide a dependency String, that will cause the trait to only be available for certain part types, like heads, for example. Omitting that parameter will inject null, which will cause the trait to only be on the part type when no other nonnull dependency modifiers are on that part already.
+You can also provide a dependency String, that will cause the trait to only be available for certain part types, like heads, for example. そのパラメータを省略すると、null を注入します。 これは、他のnull以外の依存関係修飾子が既にその部品に存在しない場合にのみ、形質が部品タイプになります。
 
-The string varaint is recommended, since by the time CoT runs, most Traits aren't yet available, and even by the time CrT runs, not all of them have been initialized, but if you use the strings, the addition of the materials is postponed until they are available. Still it's not errorproof and there's no easy way of checking for typos, so beware the error messages telling you which traits haven't been findable.
+CoTが実行されるまでには、ほとんどのトレイトはまだ利用できず、CRTが実行されるまでには文字列バリアントが推奨されます。 全てが初期化されたわけではありませんが 文字列を使うと 材料の追加が延期されます それでもそれは誤りではなく、タイポをチェックする簡単な方法はありませんので、どの形質が見つからなかったかを示すエラーメッセージに注意してください。
 
 ```zenscript
 myMaterial.addTrait("fiery", "head");

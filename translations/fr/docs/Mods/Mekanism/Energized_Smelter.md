@@ -1,8 +1,8 @@
-# Energized Smelter
+# Fonderie Energie
 
-As of Mekanism 9.7.0 it is now possible to view all recipe strings of the Energized Smelter through the command `/ct mekrecipes smelter`
+Depuis le Mékanisme 9.7.0, il est maintenant possible de voir toutes les chaînes de recettes de la Fonderie Energie à travers la commande `fonderie /ct mekrecipes`
 
-## Addition
+## Ajouter
 
 ```zenscript
 mods.mekanism.smelter.addRecipe(IIngredient inputStack, IItemStack outputStack);
@@ -10,11 +10,11 @@ mods.mekanism.smelter.addRecipe(IIngredient inputStack, IItemStack outputStack);
 mods.mekanism.smelter.addRecipe(<minecraft:tallgrass:1>, <minecraft:deadbush>);
 ```
 
-As of Mekanism 9.7.0 it is possible to use IIngredients as the inputStack instead of only IItemStacks.
+Depuis Mekanism 9.7.0 il est possible d'utiliser IIngredients comme la stack d'entrée au lieu de IItemStacks.
 
-Note: Currently all this does is loop over the different possibilities in java while adding instead of you having to do it in ZenScript. Currently there is no built in support for compound ingredients or oredictionary in the machines themselves.
+Note: Actuellement tout cela fait une boucle sur les différentes possibilités de java tout en ajoutant au lieu de vous avoir à le faire dans ZenScript. Actuellement, il n'y a pas de support pour les composants composés ou oredictionnaire dans les machines elles-mêmes.
 
-## Removal
+## Retirer
 
 ```zenscript
 mods.mekanism.smelter.removeRecipe(IIngredient inputStack, @Optional IIngredient outputStack);
@@ -23,12 +23,12 @@ mods.mekanism.smelter.removeRecipe(<minecraft:sand:*>, <minecraft:glass>);
 mods.mekanism.smelter.removeRecipe(<minecraft:cobblestone>);
 ```
 
-Specifying an output parameter will only remove the specific recipe that results in that output from that input. Omitting the output parameter will remove all recipes that the input item can produce.
+Spécifier un paramètre de sortie ne supprimera que la recette spécifique qui résulte de cette sortie. En omettant le paramètre de sortie, vous supprimerez toutes les recettes que l'élément d'entrée peut produire.
 
-## Removing all recipes
+## Suppression de toutes les recettes
 
-As of Mekanism 9.7.0 it is now possible to remove all Energized Smelter recipes. (This excludes any recipes added via CraftTweaker)
+Depuis le Mékanisme 9.7.0 il est maintenant possible de supprimer toutes les recettes de Fonderie Energied. (Ceci exclut toutes les recettes ajoutées via CraftTweaker)
 
 ```zenscript
-mods.mekanism.smelter.removeAllRecipes();
+mods mekanism.smelter.removeAllRecipes();
 ```

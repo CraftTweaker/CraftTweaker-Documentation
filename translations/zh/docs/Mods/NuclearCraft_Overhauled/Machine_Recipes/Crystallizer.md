@@ -1,16 +1,16 @@
-# Crystallizer
+# 水晶体
 
-## Importing the Package
-`mods.nuclearcraft.Crystallizer`
+## 导入软件包
+`nuclearcraft。水晶体`
 
-## Adding Recipes
+## 添加配方
 ```zenscript
-mods.nuclearcraft.Crystallizer.addRecipe(ILiquidStack fluidInput, IIngredient itemOutput, @Optional double timeMultiplier, @Optional double powerMultiplier, @Optional double processRadiation);
+nuclearcraft。Crystallizer.addRecipe(ILiquidStack fluidInput, IIngredient itemOutput, @Optional double timeMultiplier, @Optional double powerMultiplier, @Optional double processRadiation);
 ```
 
-## Removing Recipes
+## 删除配方
 ```zenscript
-mods.nuclearcraft.Crystallizer.removeRecipeWithInput(ILiquidStack fluidInput);
-mods.nuclearcraft.Crystallizer.removeRecipeWithOutput(IIngredient itemOutput);
-mods.nuclearcraft.Crystallizer.removeAllRecipes();
+nuclearcraft。Crystalizer.removeRecipeWidInput(ILiquidStack fluidInput);
+mods.nuclearcraft.Crystalizer.removeRecipeWOutput(IIngredient itemOut)；
+mods.nuclearcraft。a. Crystallizer.removeAllRecipes();
 ```

@@ -1,54 +1,54 @@
-# Seeds
+# Samen
 
-Seeds are things you get from punching tall grass.
+Samen sind Dinge, die du aus dem Stanzen hohen Grases bekommst.
 
-## Print all seeds to the log
+## Alle Seeds im Log drucken
 
-This command will print all registered seeds to the log.
+Dieser Befehl wird alle registrierten Seeds in das Log ausgeben.
 
-Needs to be performed by a player or console, cannot be written in a zs-file.
+Muss von einem Spieler oder einer Konsole ausgeführt werden, kann nicht in einer zs-Datei geschrieben werden.
 
     1.12
-    /ct seeds
+    /ct Seeds
     
-    pre-1.12
-    /mt seeds
+    vor 1.12
+    /mt Seeds
     
 
-## Add a seed drop
+## Seed Drop hinzufügen
 
-Adds `item` as seed drop.  
-**Weights are relative to grass seed, which has a weight of 10 (≙ 10%)!**
+Fügt `Element` als Seed Drop hinzu.  
+**Gewichte sind relativ zum Rasensaatgut, der ein Gewicht von 10 (<unk> 10%)!**
 
 ```zenscript
 vanilla.seeds.addSeed(item);
 ```
 
-`item` is a [weightedItemStack](/Vanilla/Items/WeightedItemStack/). What does that mean? It simply means that you need to give it a percentage like this:
+`Gegenstand` ist ein [gewichtetes Gegenstandstapel](/Vanilla/Items/WeightedItemStack/). Was bedeutet das? Es bedeutet lediglich, dass Sie ihm einen Prozentsatz wie folgt geben müssen:
 
 ```zenscript
-//adds carrots with a weight of 1
+//fügt Karotten mit einem Gewicht von 1
 vanilla.seeds.addSeed(<minecraft:carrot> % 1);
 ```
 
-## Remove a seed drop
+## Einen Seed Drop entfernen
 
-Stops `item` from being a seed drop.
+Stoppt `Element` als Seed Drop.
 
 ```zenscript
 vanilla.seeds.removeSeed(item);
 ```
 
-`item` is an [IIngredient](/Vanilla/Variable_Types/IIngredient/).
+`Element` ist ein [Igredient](/Vanilla/Variable_Types/IIngredient/).
 
-## Retrieve all registered Seeds
+## Alle registrierten Seeds abrufen
 
-Returns all items as a [weightedItemStack](/Vanilla/Items/WeightedItemStack/) List.
+Gibt alle Gegenstände als [gewichteten Gegenstandstapel](/Vanilla/Items/WeightedItemStack/) Liste zurück.
 
 ```zenscript
 val seedList = vanilla.seeds.seeds;
 
-for item in seedList {
-    print("Item: " ~ item.stack.displayName ~ " || Chance: " ~ item.percent ~ "%");
+für Artikel in seedList {
+    print("Item: " ~ item. tack.displayName ~ " || Chance: " ~ item.percent ~ "%");
 }
 ```

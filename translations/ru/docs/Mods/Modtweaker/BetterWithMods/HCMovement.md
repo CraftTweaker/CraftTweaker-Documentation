@@ -1,12 +1,12 @@
-# HCMovement
+# Перемещение ГХД
 
-HCMovement effects the speed at which the Player can move while on or inside certain blocks. For example by default you walk slower on grass but faster on stone.
+Перемещение HCMovement влияет на скорость, при которой игрок может двигаться во время включения или внутри определенных блоков. Например, по умолчанию вы ходите медленнее на траве, но быстрее на камне.
 
-Value is a decimal number between 0 and 2, where 1 is the normal speed without HCMovement, less than 1 is slower, greater than 1 is faster.
+Значение - десятичное число между 0 и 2, где 1 - нормальная скорость без HCMovement, менее 1 медленнее, чем 1.
 
-HCMovement ONLY accepts Blocks as inputs.
+HCMovement принимает блоки только в качестве входных данных.
 
 ```zenscript
-mods.betterwithmods.Movement.set(IItemStack stack, float value);
+mods.betterwithmods.Movement.set(IItemStack, значение float);
 
 ```

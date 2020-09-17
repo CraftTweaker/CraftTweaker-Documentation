@@ -1,8 +1,8 @@
-# Potion Bracket Handler
+# Trank Klammer Handler
 
-The Potion Bracket Handler gives you access to the Potions in the game. It is only possible to get Potions registered in the game, so adding or removing mods may cause issues if you reference the mod's Potions in a Potion Bracket Handler.
+Der Trank Bracket-Handler gibt dir Zugriff auf die Tränke im Spiel. Es ist nur möglich Tränke im Spiel zu registrieren so dass das Hinzufügen oder Entfernen von Mods Probleme verursachen kann, wenn du die Mods Tränke in einem Trank Klammerhandler referenzierst.
 
-Potions are referenced in the Potion Bracket Handler like so:
+Tränke werden im Trank Klammerhandler wie folgt referenziert:
 
 ```zenscript
 <potion:modname:potionname>
@@ -10,11 +10,11 @@ Potions are referenced in the Potion Bracket Handler like so:
 <potion:minecraft:strength>
 ```
 
-If the Potion is found, this will return an IPotion Object. Please refer to the [respective Wiki entry](/Vanilla/Potions/IPotion/) for further information on what you can do with these.
+Wenn der Trank gefunden wird, wird ein ITrank Objekt zurückgegeben. Weitere Informationen dazu finden Sie im [entsprechenden Wiki-Eintrag](/Vanilla/Potions/IPotion/).
 
-# Getting all Registered Potions
+# Alle registrierten Tränke erhalten
 
-You can use the following command to output all registered Potions to the CraftTweaker log
+Du kannst den folgenden Befehl verwenden, um alle registrierten Tränke im CraftTweaker Log auszugeben
 
-    /ct potions
-    /crafttweaker potions
+    /ct Tränke
+    /crafttweaker Tränke

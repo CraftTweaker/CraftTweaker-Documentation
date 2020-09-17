@@ -1,45 +1,49 @@
 # Sieving
 
-## Package
+## Pakiet
 
-`mods.exnihilocreatio.Sieve`
-
-## Methods
-
-- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) block** The block that drops the output.
-- **[IItemStack](/Vanilla/Items/IItemStack/) output** The item that drops from the block..
-- **Float chance** The chance should be between 0-1.
-
-## String Mesh
+Aby uzyskać dostęp do `Sieve` bez wyjaśnienia pełnej ścieżki, możesz zaimportować pakiet u góry swojego skryptu z następującymi danymi:
 
 ```zenscript
-addStringMeshRecipe(IIngredient, IItemStack, Float chance);
-addStringMeshRecipe(<minecraft:gravel>, <minecraft:diamond>, 0.001);
+importuj mods.exnihilocreatio.Sieve;
 ```
 
-## Flint Mesh
+## Metody
+
+- **[Blok Igredient](/Vanilla/Variable_Types/IIngredient/)** Blok, który upuszcza wyjście.
+- **[IItemStack](/Vanilla/Items/IItemStack/) wyjście** element, który usuwa się z bloku..
+- **Szansa na pływanie** Szansa powinna wynosić od 0 do 1.
+
+## Siatka String
 
 ```zenscript
-addFlintMeshRecipe(IIngredient, IItemStack, Float chance);
-addFlintMeshRecipe(<minecraft:gravel>, <minecraft:diamond>, 0.01);
+Sieve.addStringMeshRecipe(IIngredient, IItemStack, Szansa Pływania);
+Sieve.addStringMeshRecipe(<minecraft:gravel>, <minecraft:diamond>, 0.001);
 ```
 
-## Iron Mesh
+## Siatka Krzemienia
 
 ```zenscript
-addIronMeshRecipe(IIngredient, IItemStack, Float chance);
-addIronMeshRecipe(<minecraft:gravel>, <minecraft:diamond>, 0.1);
+Sieve.addFlintMeshRecipe(IIngredient, IItemStack, Szansa Pływania);
+Sieve.addFlintMeshRecipe(<minecraft:gravel>, <minecraft:diamond>, 0.01);
 ```
 
-## Diamond Mesh
+## Żelazna siatka
 
 ```zenscript
-addDiamondMeshRecipe(IIngredient, IItemStack, Float chance);
-addDiamondMeshRecipe(<minecraft:gravel>, <minecraft:diamond>, 1);
+Sieve.addIronMeshRecipe(IIngredient, IItemStack, Szansa Pływania);
+Sieve.addIronMeshRecipe(<minecraft:gravel>, <minecraft:diamond>, 0.1);
 ```
 
-## Removal
+## Siatka diamentowa
 
 ```zenscript
-mods.exnihilocreatio.Sieve.removeAll();
+Sieve.addDiamondMeshRecipe(Ingredient, IItemStack, Szansa Pływania);
+Sieve.addDiamondMeshRecipe(<minecraft:gravel>, <minecraft:diamond>, 1;
+```
+
+## Usuwanie
+
+```zenscript
+Sieve.removeAll();
 ```

@@ -1,16 +1,16 @@
-# Skill_Change Tweaker
+# Affaiblissement de la compétence
 
-## Feature:
+## Caractéristique:
 
-This feature will allow you as the player to set a group of commands you want to run upon a player unlocking/locking a trait or reaching a specific Skill Level.
+Cette fonction vous permettra en tant que joueur de définir un groupe de commandes que vous voulez exécuter à un joueur pour déverrouiller/verrouiller un trait ou atteindre un niveau de compétence spécifique.
 
-## Syntax:
+## Syntaxe :
 
-    Blank Examples:
-    mods.compatskills.SkillChange.addLevelUpCommands(CTSkill skill, int level, String... commands);
+    Exemples vierges :
+    mods.compatskills.SkillChange.addLevelUpCommands(CTSkill, niveau d'unité, chaîne... commands);
     mods.compatskills.SkillChange.addUnlockableUnlockCommands(CTUnlockable unlockable, String... commands);
     mods.compatskills.SkillChange.addUnlockableLockCommands(CTUnlockable unlockable, String... commands);
     
     mods.compatskills.SkillChange.addLevelUpCommands(<skill:reskillable:attack>, 5, "/give @e minecraft:stone 1");
-    mods.compatskills.SkillChange.addUnlockableUnlockCommands(<trait:reskillable:battle_spirit>, "/give @e minecraft:stone 1", "/give @e minecraft:stone 2");
-    mods.compatskills.SkillChange.addUnlockableLockCommands(<trait:reskillable:battle_spirit>, "/give @e minecraft:stone 1", "/give @e minecraft:stone 2", "/give @e minecraft:stone 3");
+    mods.compatskills.SkillChange. ddUnlockableUnlockCommands(<trait:reskillable:battle_spirit>, "/give @e minecraft:stone 1", "/give @e minecraft:stone 2");
+    mods.compatskills.SkillChange. ddUnlockableLockCommands(<trait:reskillable:battle_spirit>, "/give @e minecraft:stone 1", "/give @e minecraft:stone 2", "/give @e minecraft:stone 3");

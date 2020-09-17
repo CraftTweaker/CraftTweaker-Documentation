@@ -1,33 +1,33 @@
-# Heat Exchanger
+# Теплообменник
 
-## Package
+## Пакет
 
-`import mods.ic2.HeatExchanger;`
+`импорт mods.ic2.HeatExchanger;`
 
-## Methods
+## Методы
 
-- **[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) output** The liquid after it's been heated up/cooled down
-- **[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) input** The liquid before it's been heated up/cooled down
-- **int heat** The heat required to heat the fluid or gained by cooling it down
+- **[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) вывод** жидкость после нагревания/охлаждения
+- **[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) ввод** жидкость перед нагреванием/охлаждением
+- **int heat** Тепла, необходимое для нагрева жидкости или получения охлаждения
 
-Alternatively you can use [ILiquidDefinition](/Vanilla/Liquids/ILiquidDefinition) objects instead of the [ILiquidStack](/Vanilla/Liquids/ILiquidStack/) objects.
+Кроме того, вы можете использовать объекты [ILiquidDefinition](/Vanilla/Liquids/ILiquidDefinition) вместо объектов [ILiquidStack](/Vanilla/Liquids/ILiquidStack/).
 
-## Add Fluid Cool Down
+## Добавить охлаждение жидкости
 
 ```zenscript
 mods.ic2.HeatExchanger.addFluidCoolDown(ILiquidStack output, ILiquidStack input, int heat);
 mods.ic2.HeatExchanger.addFluidCoolDown(ILiquidDefinition output, ILiquidDefinition input, int heat);
 
-mods.ic2.HeatExchanger.addFluidCoolDown(<liquid:lava>, <liquid:water>, 10);
+mods. c2.HeatExchanger.addFluidCoolDown(<liquid:lava>, <liquid:water>, 10);
 mods.ic2.HeatExchanger.addFluidCoolDown(<liquid:lava>.definition, <liquid:water>.definition, 10);
 ```
 
-## Add Fluid Heat Up
+## Добавить нагрев жидкости
 
 ```zenscript
 mods.ic2.HeatExchanger.addFluidHeatUp(ILiquidStack output, ILiquidStack input, int heat);
 mods.ic2.HeatExchanger.addFluidHeatUp(ILiquidDefinition output, ILiquidDefinition input, int heat);
 
-mods.ic2.HeatExchanger.addFluidHeatUp(<liquid:lava>, <liquid:water>, 10);
+mods. c2.HeatExchanger.addFluidHeatUp(<liquid:lava>, <liquid:water>, 10);
 mods.ic2.HeatExchanger.addFluidHeatUp(<liquid:lava>.definition, <liquid:water>.definition, 10);
 ```

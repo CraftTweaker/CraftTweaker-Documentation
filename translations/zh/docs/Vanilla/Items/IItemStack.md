@@ -1,363 +1,366 @@
 # IItemStack
 
-An IItemStack Object consists of an [item definition](/Vanilla/Items/IItemDefinition/), a meta/damage value and NBT data.  
-In other words, it refers to an item or to a block.
+一个 IItemStack 对象由一个 [项目定义](/Vanilla/Items/IItemDefinition/)、 元/损坏值和 NBT 数据组成。  
+换言之，它指的是一个项目或一个块。
 
 ## 导入相关包
 
-It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
-`import crafttweaker.item.IItemStack;`
+如果您遇到任何问题，可能需要导入软件包(例如铸造一个 [数组](/AdvancedFunctions/Arrays_and_Loops/)), 这样比抱歉更安全并添加导入。  
+`导入craftweeper.item.IItemStack；`
 
 ## Calling an IItemStack
 
-There are several methods that return an IItemStack
+有几种方法返回一个 IItemStack
 
-* Using the [bracket Handler](/Vanilla/Brackets/Bracket_Item/) `<minecraft:apple>`
-* Using the `makeStack()` method on a [IItemDefinition](/Vanilla/Items/IItemDefinition/) object `<minecraft:stone>.definition.makeStack(0)`
-* Using the `stack` getter on a [IEntityDrop](/Vanilla/Entities/IEntityDrop/) object
-* Using the `firstItem` getter on a [IOreDictEntry](/Vanilla/OreDict/IOreDictEntry/)
+* 使用 [括号处理器](/Vanilla/Brackets/Bracket_Item/) `<minecraft:apple>`
+* 在 [IItemDefinition](/Vanilla/Items/IItemDefinition/) 对象 `<minecraft:stone>.definition.makeStack(0)` 上使用 `makeStack()` 方法
+* 在 [IEntityDrop](/Vanilla/Entities/IEntityDrop/) 对象上使用 `堆栈` 获取
+* 使用 `firstitem` 在一个 [IOreeDictentre](/Vanilla/OreDict/IOreDictEntry/) 上获取
 
 ## Calling an IItemStack[] or a IItemStack List
 
-If you call these functions, you will most likely do so to iterate through the resulting lists/Arrays
+如果你调用这些函数, 你很可能会通过生成的列表/数组进行迭代。
 
-* Using the `items` method on an [IIngredient](/Vanilla/Variable_Types/IIngredient/) returns a IItemStack List: `<ore:ingotGold>.items`
-* Using the `itemArray` method on an [IIngredient](/Vanilla/Variable_Types/IIngredient/) returns a IItemStack[]: `<ore:ingotGold>.itemArray`
-* Using the `items` method on a [IMod](/Vanilla/Game/Mods/#imod) object returns a IItemStack[]: `loadedMods["minecraft"].items`
+* 在一个 [元素上使用 `项目` 方法](/Vanilla/Variable_Types/IIngredient/) 返回一个 IItemStack 列表： `<ore:ingotGold>.item`
+* 使用 `itemArray` 方法在 [IIngredient](/Vanilla/Variable_Types/IIngredient/) 返回一个 IItemStack[] `<ore:ingotGold>.itemArray`
+* 在 [IMod 上使用 `个项目` 个方法](/Vanilla/Game/Mods/#imod) 对象返回 IItemStack[]： `加载Mods["minecraft"].items`
 
-## Functions
+## 职能
 
-So what can we do with that now?
+那么，我们现在能够做些什么呢？
 
-### Extending IIngredient
+### 扩展IIngredient
 
-IItemStack extends [IIngredient](/Vanilla/Variable_Types/IIngredient/).  
-That means all functionality that is available to [IIngredient](/Vanilla/Variable_Types/IIngredient/) objects also is applicable to IItemStacks. <details><summary>Derived Methods</summary> 
+IItemStack 扩展 [个元素](/Vanilla/Variable_Types/IIngredient/)。  
+这意味着 [IIngredient](/Vanilla/Variable_Types/IIngredient/) 对象也适用于IItemStack。 <details><summary>派生方法</summary> 
 
-* stack.mark
-* stack.amount
-* stack.items
-* stack.itemArray
-* stack.liquids
-* stack.commandString
-* stack | otherIngredient
-* stack.or(otherIngredient)
-* stack.transform([transformer](/Vanilla/Items/Item_Transformers/))
-* stack.transformNew([transformer](/Vanilla/Items/Item_Transformers/))
-* stack.only([condition](/Vanilla/Items/Item_Conditions/))
-* stack.marked(mark)
-* stack.matches(item)
+* 标记
+* 堆栈数量
+* 项目
+* 条目数组
+* 液体
+* 命令字符串
+* 堆栈|其他属性
+* stack.or(其他成分)
+* stack.transform([变压器](/Vanilla/Items/Item_Transformers/))
+* stack.transformNew([变压器](/Vanilla/Items/Item_Transformers/))
+* 仅供stack.([条件](/Vanilla/Items/Item_Conditions/))
+* 已标记(mark)
+* stack.match(项目)
 * stack.matchesExact(item)
-* stack.matches(liquid)
-* stack has ingredient
-* stack.applyTransform(stack,player)
+* 堆栈匹配(液体)
+* 堆栈具有成分：
+* 应用转换(堆栈，播放器)
 * stack.hasTransformers()</details>
 
 ### ZenGetters/ZenSetters
 
-Read how to use them [here](/UsingThisWiki/). Also, check out the examples below.
+Read how to use them [here](/UsingThisWiki/). 并查看下面的示例。
 
-| ZenGetter/ZenMethod | ZenSetter/ZenMethod | Type                                                        |
-| ------------------- | ------------------- | ----------------------------------------------------------- |
-| definition          |                     | [IItemDefinition](/Vanilla/Items/IItemDefinition/)          |
-| name                |                     | string                                                      |
-| displayName         | displayName         | string                                                      |
-| maxStackSize        | maxStackSize        | int                                                         |
-| hardness            | hardness            | float                                                       |
-| damage              |                     | int                                                         |
-| maxDamage           | maxDamage           | int                                                         |
-| hasTag              |                     | bool                                                        |
-| tag                 | withTag(tag)        | [IData](/Vanilla/Data/IData/)                               |
-| ores                |                     | List<[IOreDictEntry](/Vanilla/OreDict/IOreDictEntry/)\>    |
-| toolClasses         |                     | List<string\>                                              |
-| itemEnchantability  |                     | int                                                         |
-| containerItem       |                     | IItemStack                                                  |
-| hasContainerItem    |                     | bool                                                        |
-| repairCost          | repairCost          | int                                                         |
-| canEditBlocks       |                     | bool                                                        |
-| isOnItemFrame       |                     | bool                                                        |
-| isEnchantable       |                     | bool                                                        |
-| isEnchanted         |                     | bool                                                        |
-| isDamaged           |                     | bool                                                        |
-| isDamageable        |                     | bool                                                        |
-| isItemBlock         |                     | bool (if contained item is an itemblock)                    |
-| isStackable         |                     | bool                                                        |
-| isBeaconPayment     |                     | bool                                                        |
-| hasEffect           |                     | bool                                                        |
-| hasDisplayName      |                     | bool                                                        |
-| metadata            |                     | int                                                         |
-| hasSubtypes         |                     | bool                                                        |
-| isEmpty             |                     | bool                                                        |
-| burnTime            |                     | int                                                         |
-| showsDurabilityBar  |                     | bool                                                        |
-| hasCustomEntity     |                     | bool                                                        |
-| enchantments        |                     | List<[IEnchantment](/Vanilla/Enchantments/IEnchantment/)\> |
+| ZenGetter/ZenMethod（ZenMethod） | ZenSetter/ZenMethods | 类型                                                       |
+| ------------------------------ | -------------------- | -------------------------------------------------------- |
+| definition                     |                      | [IItem定义](/Vanilla/Items/IItemDefinition/)               |
+| 名称                             |                      | string                                                   |
+| 显示名称                           | 显示名称                 | 字符串                                                      |
+| maxStackSize                   | maxStackSize         | 整数                                                       |
+| 硬度                             | 硬度                   | 浮点数                                                      |
+| 伤害                             |                      | 整数                                                       |
+| maxDamage                      | maxDamage            | 整数                                                       |
+| 哈斯塔克                           |                      | bool                                                     |
+| 标签                             | withTag(标签)          | [IData](/Vanilla/Data/IData/)                            |
+| ores                           |                      | 列表<[IOreDictEnter](/Vanilla/OreDict/IOreDictEntry/)\>   |
+| 工具类                            |                      | 列表<string\>                                             |
+| itemEnchantability             |                      | 整数                                                       |
+| 容器物品                           |                      | IItemStack                                               |
+| 急性容器物品                         |                      | 布尔值                                                      |
+| 修理成本                           | 修理成本                 | 整数                                                       |
+| canEditBlocks                  |                      | 布尔值                                                      |
+| isOnItemFrame                  |                      | 布尔值                                                      |
+| isEnchangable                  |                      | 布尔值                                                      |
+| 有附魔的                           |                      | 布尔值                                                      |
+| isdamaged                      |                      | 布尔值                                                      |
+| isdamageable                   |                      | 布尔值                                                      |
+| isItemBlock                    |                      | 布尔(如果包含项目是一个项目块)                                         |
+| 可叠加层                           |                      | 布尔值                                                      |
+| isBeacon支付                     |                      | 布尔值                                                      |
+| 哈斯特效                           |                      | 布尔值                                                      |
+| hasDisplayName                 |                      | 布尔值                                                      |
+| 元数据                            |                      | 整数                                                       |
+| hassubtypes                    |                      | 布尔值                                                      |
+| isEmpty                        |                      | 布尔值                                                      |
+| 烧焦时间                           |                      | 整数                                                       |
+| 显示耐久条                          |                      | 布尔值                                                      |
+| 哈斯定制实体                         |                      | 布尔值                                                      |
+| 附属机构                           |                      | 列表<[IEnchantage](/Vanilla/Enchantments/IEnchantment/)\> |
+| 匹配标签精度                         |                      | 布尔值                                                      |
 
-#### Amount
+#### 金额
 
-| Method call                    | Returns                                                        | ParameterTypes |
-| ------------------------------ | -------------------------------------------------------------- | -------------- |
-| `stack.anyAmount()`            | A new IItemStack with the changed property                     |                |
-| `stack.amount(int amount)`     | A new IItemStack with the changed property                     | int            |
-| `stack.withAmount(int amount)` | A new IItemStack with the changed property                     | int            |
-| `stack *  amount`              | A new IItemStack with the changed property                     | int            |
-| `stack.splitStack(int amount)` | The split IItemStack. The old one will be reduced accordingly. | int            |
+| 方法调用                   | 返回                      | 参数类型 |
+| ---------------------- | ----------------------- | ---- |
+| `任何金额()`               | 一个带有更改属性的新的 IItemStack  |      |
+| `stack.amount(整数)`     | 一个带有更改属性的新的 IItemStack  | 整数   |
+| `包含金额(整数)`             | 一个带有更改属性的新的 IItemStack  | 整数   |
+| `堆栈* 金额`               | 一个带有更改属性的新的 IItemStack  | 整数   |
+| `stack.splitStack(整数)` | 拆分的IItemStack。 旧的将相应减少。 | 整数   |
 
-#### Weight
+#### 权重
 
-| Method call                   | Returns                                                  | ParameterTypes     |
-| ----------------------------- | -------------------------------------------------------- | ------------------ |
-| `stack.percent(float chance)` | A [WeightedItemStack](/Vanilla/Items/WeightedItemStack/) | float (100 = 100%) |
-| `stack.weight(float chance)`  | A [WeightedItemStack](/Vanilla/Items/WeightedItemStack/) | float (1 = 100%)   |
+| 方法调用                  | 返回                                            | 参数类型             |
+| --------------------- | --------------------------------------------- | ---------------- |
+| `stack.percent(浮动概率)` | 一个 [重量物品栈](/Vanilla/Items/WeightedItemStack/) | 浮点数 (100 = 100%) |
+| `stack.digit(浮动概率)`   | 一个 [重量物品栈](/Vanilla/Items/WeightedItemStack/) | 浮点数 (1 = 100%)   |
 
-#### Damage
+#### 伤害
 
-| Method call                                    | Returns                                    | ParameterTypes                             |
-| ---------------------------------------------- | ------------------------------------------ | ------------------------------------------ |
-| `stack.anyDamage()`                            | A new IItemStack with the changed property |                                            |
-| `stack.withDamage(int damage)`                 | A new IItemStack with the changed property | int                                        |
-| `stack.damageItem(int amount, IEntity entity)` | void (nothing)                             | int, [IEntity](/Vanilla/Entities/IEntity/) |
+| 方法调用                      | 返回                     | 参数类型                                         |
+| ------------------------- | ---------------------- | -------------------------------------------- |
+| `stack.anyDamage()`       | 一个带有更改属性的新的 IItemStack |                                              |
+| `含有伤害(int damage)`        | 一个带有更改属性的新的 IItemStack | 整数                                           |
+| `stack.damageItem(英寸，实体)` | 空(无)                   | 整数型变量， [Ientity](/Vanilla/Entities/IEntity/) |
 
-#### Tags
+#### 标签
 
-| Method call                    | Returns                                    | ParameterTypes                |
-| ------------------------------ | ------------------------------------------ | ----------------------------- |
-| `stack.withEmtpyTag()`         | A new IItemStack with the changed property |                               |
-| `stack.withTag(IData tag)`     | A new IItemStack with the changed property | [IData](/Vanilla/Data/IData/) |
-| `stack.removeTag(String name)` | A new IItemStack with the changed property | string                        |
-| `stack.updateTag(IData tag)`   | A new IItemStack with the changed property | [IData](/Vanilla/Data/IData/) |
+| 方法调用                                             | 返回                     | 参数类型                                |
+| ------------------------------------------------ | ---------------------- | ----------------------------------- |
+| `stack.withEmtpyTag()`                           | 一个带有更改属性的新的 IItemStack |                                     |
+| `stack.withTag(IData标签)`                         | 一个带有更改属性的新的 IItemStack | [IData](/Vanilla/Data/IData/)       |
+| `stack.withTag(IData tag, bool matchTagExact)`   | 一个带有更改属性的新的 IItemStack | [IData](/Vanilla/Data/IData/), bool |
+| `移除标签(名称)`                                       | 一个带有更改属性的新的 IItemStack | 字符串                                 |
+| `更新标签(IData标签)`                                  | 一个带有更改属性的新的 IItemStack | [IData](/Vanilla/Data/IData/)       |
+| `stack.updateTag(IData tag, bool matchTagExact)` | 一个带有更改属性的新的 IItemStack | [IData](/Vanilla/Data/IData/), bool |
 
-#### Block Casting
+#### 屏蔽连铸中
 
-| Method call       | Returns                                         |
-| ----------------- | ----------------------------------------------- |
-| `stack.asBlock()` | A new [IBlock](/Vanilla/Blocks/IBlock/) object. |
-| `stack as IBlock` | A new [IBlock](/Vanilla/Blocks/IBlock/) object. |
+| 方法调用              | 返回                                       |
+| ----------------- | ---------------------------------------- |
+| `stack.asBlock()` | 新的 [IBlock](/Vanilla/Blocks/IBlock/) 对象。 |
+| `打包为 IBlock`      | 新的 [IBlock](/Vanilla/Blocks/IBlock/) 对象。 |
 
-#### Lore/DisplayName
+#### Lore/显示名称
 
-| Method call                          | Returns                                                                                                           | ParameterTypes                           |
-| ------------------------------------ | ----------------------------------------------------------------------------------------------------------------- | ---------------------------------------- |
-| `stack.withDisplayName(String name)` | A new IItemStack with the changed property. Unlike the displayName setter, this only applies to this single item. | string (supports color codes with "§")   |
-| `stack.withLore(String[] lore)`      | A new IItemStack with the changed property.                                                                       | string[] (supports color codes with "§") |
-| `stack.clearCustomName()`            | void (nothing)                                                                                                    |                                          |
+| 方法调用                           | 返回                                                        | 参数类型                |
+| ------------------------------ | --------------------------------------------------------- | ------------------- |
+| `用显示名称(名字)`                    | 一个新的 IItemStack 带有已更改的属性。 不同于 displayName 设置，这只适用于这个单个项目。 | 字符串 (支持 "§") 的颜色代码  |
+| `stack.withLore(String]loare)` | 一个新的 IItemStack 带有已更改的属性。                                 | string\[…\](支持带"§") |
+| `stack.clearCustomName()`      | 空(无)                                                      |                     |
 
-#### Enchantments
+#### 附属机构
 
-| Method call                                                         | Returns        | ParameterTypes                                                          |
-| ------------------------------------------------------------------- | -------------- | ----------------------------------------------------------------------- |
-| `stack.canApplyAtCraftingTable(IEnchantmentDefinition enchantment)` | A bool.        | [IEnchantmentDefinition](/Vanilla/Enchantments/IEnchantmentDefinition/) |
-| `stack.addEnchantment(IEnchantment enchantment)`                    | void (nothing) | [IEnchantment](/Vanilla/Enchantments/IEnchantment/)                     |
+| 方法调用                                                               | 返回   | 参数类型                                                            |
+| ------------------------------------------------------------------ | ---- | --------------------------------------------------------------- |
+| `stack.canApplyAtCraftingTable(IEnchantmentDefinition Annotation)` | 布尔值。 | [IEnchantment定义](/Vanilla/Enchantments/IEnchantmentDefinition/) |
+| `stack.addEnchantment(I附魔附魔)`                                      | 空(无) | [IEnchantage](/Vanilla/Enchantments/IEnchantment/)              |
 
 #### canItem...
 
-| Method call                                        | Returns                                                        | ParameterTypes                                        |
-| -------------------------------------------------- | -------------------------------------------------------------- | ----------------------------------------------------- |
-| `stack.canPlaceOn(IBlockDefinition block)`         | A bool that tells if the item can be placed on the block.      | [IBlockDefinition](/Vanilla/Blocks/IBlockDefinition/) |
-| `stack.canDestroy(IBlockDefinition block)`         | A bool that tells if the item can destroy the block.           | [IBlockDefinition](/Vanilla/Blocks/IBlockDefinition/) |
-| `stack.canHarvestBlock(IBlockState block)`         | A bool that tells if the item can harvest the block.           | [IBlockState](/Vanilla/Blocks/IBlockState/)           |
-| `stack.getStrengthAgainstBlock(IBlockState block)` | A float that represents the item's strength against the block. | [IBlockState](/Vanilla/Blocks/IBlockState/)           |
+| 方法调用                                         | 返回                   | 参数类型                                                  |
+| -------------------------------------------- | -------------------- | ----------------------------------------------------- |
+| `stack.canPlaceOn(IBlock定义块)`                | 提示物品是否可以放置在方块上的布尔值。  | [IBlockDefinition](/Vanilla/Blocks/IBlockDefinition/) |
+| `stack.can Destroy(IBlock定义块)`               | 一个能告诉物品是否可以摧毁方块的布尔值。 | [IBlockDefinition](/Vanilla/Blocks/IBlockDefinition/) |
+| `stack.canHarvestBlock(IBlockState块)`        | 一个能告诉物品是否可以收获方块的布尔值。 | [IBlockState](/Vanilla/Blocks/IBlockState/)           |
+| `stack.getStrengthAginstBlock(IBlockState块)` | 一个代表物件与方块的强度的浮点数。    | [IBlockState](/Vanilla/Blocks/IBlockState/)           |
 
 #### create IEntityItem
 
-| Method call                                                  | Returns                                                                                                     | Parameter Types                                                          |
-| ------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------ |
-| `stack.createEntityItem(IWorld world, int x, int y, int z);` | A new [IEntityItem](/Vanilla/Entities/IEntityItem/) that corresponds to the newly created item in the world | [IWorld](/Vanilla/World/IWorld/), int, int, int                          |
-| `stack.createEntityItem(IWorld world, IBlockPos pos);`       | A new [IEntityItem](/Vanilla/Entities/IEntityItem/) that corresponds to the newly created item in the world | [IWorld](/Vanilla/World/IWorld/), [IBlockPos](/Vanilla/World/IBlockPos/) |
+| 方法调用                                                         | 返回                                                               | 参数类型                                                                     |
+| ------------------------------------------------------------ | ---------------------------------------------------------------- | ------------------------------------------------------------------------ |
+| `stack.createEntityItem(IWorld world, int x, int y, int z)；` | 一个新的 [IEntityItem](/Vanilla/Entities/IEntityItem/) 个对应于世界上新创建的项目 | [IWorld](/Vanilla/World/IWorld/), int, int, int                          |
+| `stack.createEntityItem(IWorld world, IBlockPos pos);`       | 一个新的 [IEntityItem](/Vanilla/Entities/IEntityItem/) 个对应于世界上新创建的项目 | [IWorld](/Vanilla/World/IWorld/), [IBlockPos](/Vanilla/World/IBlockPos/) |
 
-## ItemTransformers and ItemConditions
+## 物品变换器和物品条件
 
-You can find how to use these either in the [IIngredient](/Vanilla/Variable_Types/IIngredient/) page or in their respecive entries:  
-[Item Conditions](/Vanilla/Items/Item_Conditions/)  
-[Item Transformers](/Vanilla/Items/Item_Transformers/)
+您可以在 [Iugrendient](/Vanilla/Variable_Types/IIngredient/) 页面或在他们的respective条目中找到如何使用这些选项：  
+[项目条件](/Vanilla/Items/Item_Conditions/)  
+[项目变换](/Vanilla/Items/Item_Transformers/)
 
-## Examples
+## 例子
 
-#### DisplayName
+#### 显示名称
 
-Globally (translates the item to the new name).
+全局（将物品翻译成新名称）。
 
 ```zenscript
-val apple = <minecraft:apple>;
+val appe = <minecraft:apple>;
 
 //prints "Apple"
-print(apple.displayName);
+print(apple.displayname);
 
-//Sets apples Display Name to "Tomato"
-apple.displayName = "Tomato";
+// Sets Appes Display name to "Tomato"
+apple. isplayname = "Tomato";
 
 //prints "Tomato"
-print(apple.displayName);
+print(apple.displayname);
 ```
 
-Locally (only this single item).
+本地(仅此单项)。
 
 ```zenscript
-<minecraft:coal>.withDisplayName("Black Gold");
+<minecraft:coal>.withDisplayName("黑金")；
 ```
 
-#### Lore
+#### 洛尔
 
-`<minecraft:coal>.withLore(["This function","requires a","string[]"]);`
+`<minecraft:coal>withLore(["此函数","request a","string[]"]);`
 
-#### Maximum Stack Size
+#### 最大堆栈大小
 
-The maximum Stack Size is how many items fit in one Stack, for example, wool’s Stack size is 64 and Buckets’ only 16.
+最大堆栈大小是一个堆栈中适合的物品数量，比如羊毛堆栈大小是64个，而布克茨只是16个。
 
 ```zenscript
-val apple = <minecraft:apple>;
+val Appe = <minecraft:apple>;
 val bucket = <minecraft:bucket>;
 
 //prints 64
-print(apple.maxStackSize);
+print(aplle). 轴StackSize);
 
-//sets apples Max Stack size to 32
+/set appes Max Stack size to 32
 apple.maxStackSize = 32;
 
 //prints 32
-print(apple.maxStackSize);
+print(aplle). 轴StackSize);
 
-//sets apples Max Stack size to Bucket's Max Stack size
+/set appes Max Stack size to Bucket 的最大堆栈大小
 apple.maxStackSize = bucket.maxStackSize;
 
 //prints 16
 print(apple.maxStackSize);
 ```
 
-#### Hardness
+#### 硬度
 
-The Hardness is how long it takes to break the referred block. Only works if the object refers to a block.
+硬度是打破上述方块需要多长时间。 仅当对象指向一个方块时有效。
 
 ```zenscript
-val grass = <minecraft:grass>;
+val grasss = <minecraft:grass>;
 
 //prints 1.0
 print(grass.hardness);
 
-//sets grass Hardness to 10.0
-grass.hardness = 10.0;
+//set grasss Hardness to 10.0
+grav.hardness = 10.0;
 
 //prints 10.0
 print(grass.hardness);
 ```
 
-#### Damage
+#### 伤害
 
-The damage for items that cannot be damaged is 0.
+不能损坏的物品的损坏为0。
 
 ```zenscript
-val pick = <minecraft:diamond_pickaxe>;
+val cets = <minecraft:diamond_pickaxe>;
 
 //prints 1561
-print(pick.maxDamage);
+print(pick). 轴损伤)；
 
-//sets the max damage of the Diamond Pickaxe to 256
-pick.maxDamage = 256;
+//将钻石饼干最大损伤设置为256
+皮卡最大损伤=256；
 
 //prints 256
-print(pick.maxDamage);
+打印(pick)。 轴损伤)；
 
 
 
-//Damage doesn't matter, used in recipes
-<minecraft:iron_pickaxe>.anyDamage();
+//damage 不重要，用于配方
+<minecraft:iron_pickaxe>.anydamage();
 
-//With the given damage
-<minecraft:iron_pickaxe>.withDamage(122);
+//with 给定的损伤
+<minecraft:iron_pickaxe>.withdamage(122)；
 ```
 
-#### Tag
+#### 标签
 
-The tag is an [IData](/Vanilla/Data/IData/) object.  
-If the item does not contain a tag, it will return an empty tag, never null.
+标签是 [IData](/Vanilla/Data/IData/) 对象。  
+如果项目没有包含标签，它将返回一个空标签，不能为空
 
 ```zenscript
-//creates apple with the given tag
-//Removes existing tags
-<minecraft:apple>.withTag({Unbreakable: 1});
+//creating 苹果给定标签
+////删除现有标签
+<minecraft:apple>ithTag({Unbreakable: 1});
 
-//creates apple with an emtpy tag
-<minecraft:apple>.withEmptyTag();
+//creating appe with an emtpy tag
+<minecraft:apple>ithEmptyTag();
 
-//removes a tag by its name
-item.removeTag("tagName");
+//over a tag by its name
+items 表情标签("标签名称")；
 
-//update the existing tag
-//If the tag doesn't override an existing tag, they will stay constant.
-item.updateTag({Unbreakable: 1});
+//更新现有标签
+///如果标签不覆盖现有标签，它们将保持常数。
+更新标签({Unbreakable: 1});
 ```
 
-#### Liquid
+#### 液体
 
-Returns the liquid contained in a single item (if multiple) or null if the item is no container.  
-Returns an [ILiquidStack](/Vanilla/Liquids/ILiquidStack/) Object or null.
+返回一个物品中含有的液体(如果是多项)，如果物品不是容器，则返回零。  
+返回一个 [ILiquidStack](/Vanilla/Liquids/ILiquidStack/) 对象或空。
 
 ```zenscript
 val lav = <minecraft:lava_bucket>;
-print(lav.liquid.name);
+print(lav.like.name);
 ```
 
-#### Amount
+#### 金额
 
-How many apples are there?
+有多少苹果？
 
 ```zenscript
-<minecraft:apple>.anyAmount();
+<minecraft:apple>. nyamount();
 
 //1 Apple
-val apple = <minecraft:apple>;
+valal appe = <minecraft:apple>;
 
 //2 Apples
-val moreApples = apple * 2;
+val more Apples = appe * 2;
 
-//3 Apples
-val evenMoreApples = <minecraft:apple> * 3;
+//3 苹果
+val eveneApples = <minecraft:apple> * 3;
 ```
 
-#### Weight
+#### 权重
 
-Returns a [weightedItemStack](/Vanilla/Items/WeightedItemStack/) with the provided percentage.
+返回一个 [重量物品堆栈](/Vanilla/Items/WeightedItemStack/) 并提供百分比。
 
 ```zenscript
-val apple = <minecraft:apple>;
+val 苹果 = <minecraft:apple>;
 
-//Creates a weightedItemStack with 100 percent chance
-var applePercentage = apple % 100;
+//Create 一个重量物品堆栈, 拥有100%的几率
+var Apple百分比= 苹果 % 100;
 
-//Does the same as the above
-applePercentage = apple.weight(1.0);
+//does 等于上述
+小程序百分比=苹果。 八(1.0)；
 ```
 
 #### Ores
 
-Returns a List of [IOreDictEntries](/Vanilla/OreDict/IOreDictEntry/) referring to this item.
+返回 [IOreDictEntres](/Vanilla/OreDict/IOreDictEntry/) 的列表提及此项目。
 
 ```zenscript
 <minecraft:apple>.ores;
 ```
 
-#### Casting to IBlock
+#### 投射到 IBlock
 
-You can cast an IItemStack to an [IBlock](/Vanilla/Blocks/IBlock/), as long as you are referring to a block, otherwise the cast will throw an exception.
+您可以将 IItemStack 投射到 [IBlock](/Vanilla/Blocks/IBlock/)， 只要你指的是一个方块，否则投影将会抛出一个例外。
 
 ```zenscript
 <minecraft:dirt>.asBlock();
-<minecraft:dirt> as crafttweaker.block.IBlock;
+<minecraft:dirt> 为 crafttminstrer.block.IBlock;
 ```
 
-You can also test if an IItemStack contains an ItemBlock and can thus be converted:
+您也可以测试如果一个 IItemStack 包含一个项目块，因此可以转换：
 
-<pre><code class="zenscript:">&lt;minecraft:dirt&gt;.isItemBlock; // true
-&lt;minecraft:stick&gt;.isItemBlock; // false
+<pre><code class="zenscript:">&lt;minecraft:dirt&gt;.istemBlock; // true
+&lt;minecraft:stick&gt;.istemBlock; // false
 </code></pre>
 
-#### Food Properties
+#### 食物属性
 
-You can check if an IItemStack is a food item and what food properties it has.  
-May not work for every modded food item!
+您可以检查 IItemStack 是否为食物，以及它具有什么样的食物属性。  
+可能无法适用于每个模式下的食物！
 
 ```zenscript
-<minecraft:apple>.isFood; //true
+<minecraft:apple>.isFood; /true
 <minecraft:apple>.saturation; //0.3
 <minecraft:apple>.healAmount; //4
 ```

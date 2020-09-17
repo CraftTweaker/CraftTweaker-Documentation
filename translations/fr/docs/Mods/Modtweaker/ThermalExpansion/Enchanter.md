@@ -1,21 +1,21 @@
-# Arcane Ensorcellator (a.k.a Enchanter)
+# Ensorcellateur des arcanes (Enchanteur enchanteur)
 
-## Package
+## Paquet
 
-`mods.thermalexpansion.Enchanter`
+`format@@0 mods.thermalexpansion.Enchanter`
 
-## Addition
+## Ajouter
 
 ```zenscript
-mods.thermalexpansion.Enchanter.addRecipe(IItemStack output, IItemStack input, IItemStack secondInput, int energy, int experience, boolean empowered);
+mods.thermalexpansion.Enchanter.addRecipe(sortie IItemStack, entrée IItemStack, IItemStack secondInput, int energy, int experience, boolean empowered);
 
-mods.thermalexpansion.Enchanter.addRecipe(<minecraft:enchanted_book>.withTag({StoredEnchantments: [{id: 35}]}), <minecraft:book>, <minecraft:diamond>, 12000, 3000, false);
+mods. hermalexpansion.Enchanter.addRecipe(<minecraft:enchanted_book>.withTag({StoredEnchantments: [{id: 35}]}), <minecraft:book>, <minecraft:diamond>, 12000, 3000, false);
 ```
 
-## Removal
+## Retirer
 
 ```zenscript
-mods.thermalexpansion.Enchanter.removeRecipe(IItemStack input, IItemStack secondInput);
+mods.thermalexpansion.Enchanter.removeRecipe(entrée IItemStack, IItemStack secondInput);
 
 mods.thermalexpansion.Enchanter.removeRecipe(<minecraft:book>, <minecraft:diamond>);
 ```

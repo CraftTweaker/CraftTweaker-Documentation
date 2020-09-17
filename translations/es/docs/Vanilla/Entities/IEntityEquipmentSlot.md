@@ -1,32 +1,32 @@
-# IEntityEquipmentSlot
+# Máquina de equipamiento
 
-An IEntityEquipmentSlot is a slot in a player's inventory. That could for example be the mainHand or one of the armor slots.
+Una Ranura IEntityEquipmentSlot es una ranura en el inventario de un jugador. Eso podría ser, por ejemplo, el manto o uno de los huecos de armadura.
 
-## Importing the package
+## Importando el paquete
 
-It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
-`import crafttweaker.entity.IEntityEquipmentSlot;`
+Podría ser necesario que importes el paquete si encuentras algún problema, así que más vale estar seguro que lo sentimos y añadir la importación.  
+`importar crafttweaker.entity.IEntityEquipmentSlot;`
 
 ## ZenGetters/ZenMethods
 
-| Getter    | Type   |
+| Obtén     | Tipo   |
 | --------- | ------ |
-| index     | int    |
+| índice    | int    |
 | slotIndex | int    |
-| name      | string |
+| nombre    | cadena |
 
-### Compare
+### Comparar
 
-You can check if two IEntityEquipmentSlot objects are equal:  
-Returns a bool.
+Puedes comprobar si dos objetos IEntityEquipmentSlot son iguales:  
+Devuelve un bool.
 
 ```zenscript
 slotOne == slotTwo;
 ```
 
-## Enumerations
+## Enumeraciones
 
-The EntityEquipmentSlot Interface has 6 static Methods, each returning the given IEntityEquipmentSlot object.
+La interfaz EntityEquipmentSlot tiene 6 métodos estáticos, cada uno devolviendo el objeto IEntityEquipmentSlot dado.
 
 ```zenscript
 crafttweaker.entity.IEntityEquipmentSlot.mainHand();

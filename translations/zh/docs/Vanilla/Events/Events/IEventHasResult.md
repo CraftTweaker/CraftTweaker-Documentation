@@ -1,20 +1,20 @@
 # IEventHasResult
 
-This interface is extended by all Events that has a result that is used by the event. An event's result can be one of three values:
+此接口由所有具有事件使用的结果的事件扩展。 一个事件的结果可以是三个值之一：
 
-- allow
-- deny
-- default
+- 允许
+- 拒绝
+- 默认
 
-The meaning of these is dependent on context. Generally, denying an event prevents a specific event-related action from taking place (even if it wasn't guaranteed to take place). Likewise, allowing an event will force a behaviour to take place (even if it wasn't guaranteed). Default simply causes the event to continue with its normal logic. Not all events use every result.
+它们的含义取决于背景。 一般情况下，拒绝某一事件不会发生与事件有关的具体行动(即使没有保证发生)。 同样，允许活动将迫使行为发生(即使没有得到保证)。 默认只会导致事件继续其正常逻辑。 并非所有事件都使用每个结果。
 
 ## 导入类
-It might be required to [import](/AdvancedFunctions/Import/) the class to avoid errors.  
-`import crafttweaker.event.IEventHasResult;`
+可能需要 [导入](/AdvancedFunctions/Import/) 类以避免错误。  
+`导入craftweaper.eventIEventHasResult；`
 
-## What can be done with them?
+## 他们能够做些什么？
 
-- `event.result` Getter, returns a string value of `default`, `deny` or `allow`
-- `event.deny()` Method, sets the event's result to `deny`
-- `event.allow()` Method, sets the event's result to `allow`
-- `event.default()` Method, sets the event's result to `default`
+- `event.result` Getter, 返回一个字符串值 `默认`, `down` 或 `允许`
+- `event.deny()` 方法, 将事件的结果设置为 `否定`
+- `event.allow()` Method, 设置事件的结果为 `允许`
+- `event.default()` 方法, 将事件的结果设置为 `默认`

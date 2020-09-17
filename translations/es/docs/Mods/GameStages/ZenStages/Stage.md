@@ -1,24 +1,24 @@
-# Stage
+# Etapa
 
-Stage is the class you are given when you create a new "Stage" the class contains all the main method you need to stage an entry to that *Stage*. It's as simple as that! Once you have added all the entries you need. Don't forget to build the stage!
+La etapa es la clase que se le da cuando crea una nueva "Stage" que la clase contiene todo el método principal que necesita para montar una entrada a esa *Stage*. ¡Es así de sencillo! Una vez que haya añadido todas las entradas que necesita. ¡No te olvides de construir la etapa!
 
-## Importing the package
+## Importando el paquete
 
-`import mods.zenstages.Stage;`
+`importar mods.zenstages.Stage;`
 
-## What to do with it
+## Qué hacer con él
 
-### ZenGetters and parameterless ZenMethods
+### ZenGetters y ZenMethods sin parámetros
 
-| ZenGetter | What does it do        | Return Type |
-| --------- | ---------------------- | ----------- |
-| stage     | Returns the stage name | string      |
+| ZenGetter | ¿Qué hace                        | Tipo de devolución |
+| --------- | -------------------------------- | ------------------ |
+| etapa     | Devuelve el nombre del escenario | cadena             |
 
-### Staging Methods
+### Métodos de Staging
 
-**Note: All these methods will only work with the Stage class given when you create a Stage using [ZenStager](/Mods/GameStages/ZenStages/ZenStager/) so save these to a static so you can reference from other classes if need be.**
+**Nota: Todos estos métodos solo funcionarán con la clase Escenal dada cuando crees un Escenario usando [ZenStager](/Mods/GameStages/ZenStages/ZenStager/) para guardarlos en una estática así que puedes hacer referencia de otras clases si es necesario.**
 
-Check to see if a [Custom Type](/Mods/GameStages/ZenStages/CustomType/) has been Staged to this Stage.
+Compruebe si un [tipo personalizado](/Mods/GameStages/ZenStages/CustomType/) ha sido escenario de esta etapa.
 
 ```zenscript
 // isCustomStaged(String slug, String value);
@@ -27,28 +27,28 @@ Check to see if a [Custom Type](/Mods/GameStages/ZenStages/CustomType/) has been
 // isCustomStaged(String slug, int[] values);
 // isCustomStaged(String slug, IIngredient value);
 // isCustomStaged(String slug, IIngredient[] values);
-TestStage.isCustomStaged("blockBreak", <minecraft:stone>);
+TestStage. sCustomStaged("blockBreak", <minecraft:stone>);
 TestStage.isCustomStaged("container", "com.test");
 ```
 
-Add an Ingredient to a stage. Defaulted to true the optional parameter to stage the recipe for said Ingredient.
+Añadir un ingrediente a una etapa. Por defecto es verdadero el parámetro opcional para escalar la receta de dicho Ingrediente.
 
 ```zenscript
 // addIngredient(IIngredient ingredient, @Optional(valueBoolean = true) boolean recipeStage);
-// addIngredients(IIngredient[] ingredients, @Optional(valueBoolean = true) boolean recipeStage);
-TestStage.addIngredient(<minecraft:stick>);
+// addIngredients(IIngredient[] ingredientes, @Optional(valueBoolean = true) boolean recipeStage);
+TestStage. ddIngredient(<minecraft:stick>);
 TestStage.addIngredient(<ore:wool>);
 TestStage.addIngredients([<minecraft:boat>, <minecraft:string>], false);
 ```
 
-Add an Ingredient Override. This is used when you're Staging an entire mod via the ModId but you need to re-stage some items from the mod to another [Stage](/Mods/GameStages/ZenStages/Stage/), so this allows you to re-stage items.
+Agrega un Soberano Ingrediente. Esto se utiliza cuando escenas un mod entero a través del ModId pero necesitas re-stage algunos elementos del mod a otro [Stage](/Mods/GameStages/ZenStages/Stage/), por lo que esto le permite re-stage de elementos.
 
 ```zenscript
-// addIngredientOverride(IIngredient ingredient, @Optional(valueBoolean = true) boolean recipeStage);
+// añadir IngredientOverride(ingrediente IIngrediente, @Optional(valueBoolean = true) boolean recipeStage);
 TestStage.addIngredientOverride(<myawesomemod:generator>, true);
 ```
 
-Add a ModId to a stage. This will stage all the items found which are registered by the modId provided to the Stage. You can also provide an array of IIngredients which the provided items won't be staged.
+Añadir un ModId a una etapa. Esto pasará todos los elementos encontrados que están registrados por el modId proporcionado a la etapa. También puede proporcionar una matriz de IIngredients que los elementos proporcionados no se establecerán.
 
 ```zenscript
 // addModId(String modId);
@@ -58,7 +58,7 @@ TestStage.addModId("bloodmagic");
 TestStage.addModId("bloodmagic", [<bloodmagic:someitem>]);
 ```
 
-Add an ILiquidStack to a stage.
+Añadir un ILiquidStack a una etapa.
 
 ```zenscript
 // addLiquid(ILiquidStack liquidStack);
@@ -67,28 +67,28 @@ TestStage.addLiquid(<liquid:water>);
 TestStage.addLiquids([<minecraft:water>, <minecraft:lava>]);
 ```
 
-Add a dimension to a stage. Requires [DimStages](/Mods/GameStages/DimensionStages/DimensionStages/) to be installed.
+Añadir una dimensión a una etapa. Requiere [DimStages](/Mods/GameStages/DimensionStages/DimensionStages/) para ser instalado.
 
 ```zenscript
 // addDimension(int dimId);
 TestStage.addDimension(-1);
 ```
 
-Add a recipe name to a stage. Requires [RecipeStages](/Mods/GameStages/RecipeStages/RecipeStages/) to be installed.
+Añade un nombre de receta a una etapa. Requiere [RecipeStages](/Mods/GameStages/RecipeStages/RecipeStages/) para ser instalado.
 
 ```zenscript
 // addRecipeName(string recipeName);
 TestStage.addRecipeName("minecraft:boat");
 ```
 
-Add a recipe name to a stage. Requires [RecipeStages](/Mods/GameStages/RecipeStages/RecipeStages/) to be installed.
+Añade un nombre de receta a una etapa. Requiere [RecipeStages](/Mods/GameStages/RecipeStages/RecipeStages/) para ser instalado.
 
 ```zenscript
 // addRecipeName(string recipeName);
 TestStage.addRecipeRegex("crafttweaker:test_.*");
 ```
 
-Add a mob to a stage. Requires [MobStages](/Mods/GameStages/MobStages/MobStages/) to be installed.
+Añade un mob a una etapa. Requiere [Móviles](/Mods/GameStages/MobStages/MobStages/) para ser instalado.
 
 ```zenscript
 // addMob(string mobName);
@@ -96,12 +96,12 @@ Add a mob to a stage. Requires [MobStages](/Mods/GameStages/MobStages/MobStages/
 // addMob(string mobName, int dimId);
 // addMobs(string[] mobNames, int dimId);
 TestStage.addMob("minecraft:skeleton");
-TestStage.addMobs(["minecraft:skeleton", "minecraft:skeleton_horse"]);
+TestStage. ddMobs(["minecraft:skeleton", "minecraft:skeleton_horse"]);
 TestStage.addMob("minecraft:skeleton", 0);
 TestStage.addMobs(["minecraft:skeleton", "minecraft:skeleton_horse"], 9);
 ```
 
-Add a TiC material name to a stage. Requires [TinkerStages](/Mods/GameStages/TinkerStages/TinkerStages/) to be installed.
+Añadir un nombre de material TiC a una etapa. Requiere que [TinkerStages](/Mods/GameStages/TinkerStages/TinkerStages/) esté instalado.
 
 ```zenscript
 // addTiCMaterial(string materialName);
@@ -110,14 +110,14 @@ TestStage.addTiCMaterial("iron");
 TestStage.addTiCMaterials(["bronze", "iron"]);
 ```
 
-Add a TiC modifier to a stage. Requires [TinkerStages](/Mods/GameStages/TinkerStages/TinkerStages/) to be installed.
+Agrega un modificador TiC a una etapa. Requiere que [TinkerStages](/Mods/GameStages/TinkerStages/TinkerStages/) esté instalado.
 
 ```zenscript
-// addTiCModifier(string modifierName);
+// añadirTiCModifier(string modifierName);
 TestStage.addTiCModifier("mending_moss");
 ```
 
-Add a IE Multiblock to a stage. Requires [Multi Block Stages](https://github.com/The-Acronym-Coders/MultiBlock-Stages/) to be installed.
+Añadir un Multiblock IE a una etapa. Requiere [Fase de bloques múltiples](https://github.com/The-Acronym-Coders/MultiBlock-Stages/) para ser instalada.
 
 ```zenscript
 // addIEMultiBlock(string multiblock);
@@ -126,13 +126,13 @@ TestStage.addIEMultiBlock("IE:ArcFurnace");
 TestStage.addIEMultiBlocks(["IE:Mixer", "IE:SheetmetalTank"]);
 ```
 
-Add an Ore Replacment to a stage. Requires [OreStages](https://github.com/Darkhax-Minecraft/Ore-Stages/#crafttweaker-methods) to be installed.
+Añadir un reemplazo de mineral a una etapa. Requiere [OreStages](https://github.com/Darkhax-Minecraft/Ore-Stages/#crafttweaker-methods) para ser instalado.
 
 ```zenscript
-// addOreReplacement(IIngredient blockToHide, @Optional(valueBoolean = false) boolean isNonDefaulting);
-// addOreReplacement(IIngredient blockToHide, IItemStack blockToShow, @Optional(valueBoolean = false) boolean isNonDefaulting);
-TestStage.addOreReplacement(<minecraft:iron_bars:*>);
+// addOreplacement(IIngredient blockToHide, @Optional(valueBoolean = false) boolean isNonDefaulting);
+// addOreplacement(IIngredient blockToHide, ItemStack blockToShow, @Optional(valueBoolean = false) boolean isNonDefaulting);
+TestStage. ddOreReplacement(<minecraft:iron_bars:*>);
 TestStage.addOreReplacement(<minecraft:iron_bars:*>, true);
 TestStage.addOreReplacement(<chisel:redstone>, <chisel:granite>);
-TestStage.addOreReplacement(<chisel:redstone>, <chisel:granite>, true);
+TestStage.addOreplacement(<chisel:redstone>, <chisel:granite>, true);
 ```

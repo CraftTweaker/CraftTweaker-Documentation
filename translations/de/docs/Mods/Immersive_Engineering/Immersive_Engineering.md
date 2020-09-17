@@ -1,17 +1,17 @@
 # Immersive Engineering
 
-## Information
+## Informationen
 
-Immersive Engineering is a tech mod with a certain charm, based on the ideas and concepts, and with most assets created by Damien Hazard.
+Immersive Engineering ist ein Technologie-Mod mit einem gewissen Charme, basierend auf den Ideen und Konzepten, und mit den meisten von Damien Hazard geschaffenen Aktivitäten.
 
-Overall, it's about realism-inspired technology: Instead of glowing red tubes, it offers actual, hanging powerlines. Instead of one block that magically spits out dusts when ore is put in, it offers a crusher, a big multiblock (5x3x3) that features rotating wheels and spits out particles as it breaks the ore. Instead of a Laser that turns power into magical light and ores, it offers an Excavator, another massive, resource intensive, multiblock (3x7x8) which digs ores out of the ground with a big rotating bucketwheel.
+Overall, it's about realism-inspired technology: Instead of glowing red tubes, it offers actual, hanging powerlines. Anstelle eines Blocks, der beim Einlegen von Erz magisch Staub ausspuckt, bietet er einen Brecher, ein großer Multiblock (5x3x3x3) mit rotierenden Rädern und Teilchen ausspuckt, wenn es das Erz zerbricht. Anstelle eines Lasers, der Kraft in magisches Licht und Erz verwandelt, bietet er einen Excavator, einen weiteren massiven, -Ressource intensiv, Multiblock (3x7x8) der mit einem großen drehbaren Eimerrad erzt.
 
-IE is about making tech mods more balanced and more pretty, and adding its own twist by going for retro-futurism (think BioShock, Order 1886, SkyCaptain and the World of Tomorrow) rather than clinical white+grey future cubes. The mod features Power Generation in forms of waterwheels, windmills, biodiesel and more and many of its machines are multiblocks!
+IE geht es darum, Technologie-Mods ausgewogener und hübscher zu machen und ihre eigene Wendung durch Retrofuturismus (man denke an BioShock, Bestellen Sie 1886, SkyCaptain und die Welt von morgen) und nicht klinisch weiß+graue zukünftige Würfel. Der Mod bietet Power Generation in Form von Wasserrädern, Windrädern, Biodiesel und vieles mehr und viele seiner Maschinen sind Multiblöcke!
 
-## CraftTweaker Related Information
+## CraftTweaker Verwandte Informationen
 
-Most if not all of the machines as well as some of the non-machine related features are configurable through ZenScript.
+Die meisten, wenn nicht alle Maschinen sowie einige der nicht-maschinenbezogenen Funktionen sind über ZenScript konfigurierbar.
 
-## Bug Reports
+## Fehlerberichte
 
 https://github.com/BluSunrize/ImmersiveEngineering/issues

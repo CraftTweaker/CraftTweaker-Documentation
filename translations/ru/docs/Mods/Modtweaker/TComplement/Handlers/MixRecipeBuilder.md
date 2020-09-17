@@ -1,63 +1,63 @@
 # MixRecipeBuilder
 
-A `MixRecipeBuilder` is used to build and add High Oven's Mix Recipe to the game.
+`MixRecipeBuilder` используется для создания и добавления Рецепта Высшего Овена в игру.
 
 ## Импорт пакета
 
-Better be safe than sorry and import the package
+Лучше быть безопасным, чем извините и импортируйте пакет
 
 ```zenscript
-import mods.tcomplement.highoven.MixRecipeBuilder;
+импорт mods.tcomplement.highoven.MixRecipeBuilder;
 ```
 
-## Getting a `MixRecipeBuilder`
+## Получение `MixRecipeBuilder`
 
-The `mods.tcomplement.highoven.HighOven` handler can give you a `MixRecipeBuilder`
+`mods.tcomplement.highoven.HighOven` обработчик может дать вам `MixRecipeBuilder`
 
 ```zenscript
-// HighOven.newMixRecipe(ILiquidStack output, ILiquidStack input, int temp);
+// HighOven.newMixRecipe(ILiquidStack output, ILiquidStack, int temp);
 var builder = HighOven.newMixRecipe(<liquid:steel> * 72, <liquid:iron> * 144, 1350);
 ```
 
-+ `output` is the fluid and quantity to produce
-+ `input` is the fluid and quantity to consume
-+ `temp` is the minimal temperature of the high oven for the recipe to work, in Kelvin
++ `вывести` - это жидкость и количество для производства
++ `ввод` является жидкостью и количеством для потребления.
++ `темп` - минимальная температура в печи для работы рецепта в Кельвине
 
-## Attributes
+## Атрибуты
 
-| Attribute   | ZenGetter   | ZenSetter            | Type                      | Info                                                                     |
-| ----------- | ----------- | -------------------- | ------------------------- | ------------------------------------------------------------------------ |
-| output      | `output`    | :heavy_check_mark: | `ILiquidStack`            | the output produced by the MixRecipe                                     |
-| input       | `input`     | :heavy_check_mark: | `ILiquidStack`            | the input of the MixRecipe                                               |
-| temperature | `temp`      | :heavy_check_mark: | `int`                     | the minimum temperature, in Kelvin                                       |
-| oxidizers   | `oxidizers` | :x:                  | `List<IIngredient>` | the valid oxidizers for the recipe at the time the attribute is accessed |
-| reducers    | `reducers`  | :x:                  | `List<IIngredient>` | the valid reducers for the recipe at the time the attribute is accessed  |
-| purifiers   | `purifiers` | :x:                  | `List<IIngredient>` | the valid purifiers for the recipe at the time the attribute is accessed |
-
-
-## Methods
-
-| Method                                                 | Return type        | Info                                                                                      |
-| ------------------------------------------------------ | ------------------ | ----------------------------------------------------------------------------------------- |
-| `getOxidizerChance(IIngredient oxidizer)`              | `int`              | The chance in percent that the oxidizer is consumed, or `-1` if the oxidizer is not valid |
-| `getReducerChance(IIngredient reducer)`                | `int`              | The chance in percent that the reducer is consumed, or `-1` if the reducer is not valid   |
-| `getOxidizerChance(IIngredient purifier)`              | `int`              | The chance in percent that the purifier is consumed, or `-1` if the oxidizer is not valid |
-| `addOxidizer(IIngredient oxidizer, int consumeChance)` | `MixRecipeBuilder` | Add the oxidizer with the given consume chance (in percent)                               |
-| `addReducer(IIngredient reducer, int consumeChance)`   | `MixRecipeBuilder` | Add the reducer with the given consume chance (in percent)                                |
-| `addPurifier(IIngredient purifier, int consumeChance)` | `MixRecipeBuilder` | Add the purifier with the given consume chance (in percent)                               |
-| `removeOxidizer(IIngredient oxidizer)`                 | `MixRecipeBuilder` | Remove the oxidizer if it had been added                                                  |
-| `removeReducer(IIngredient reducer)`                   | `MixRecipeBuilder` | Remove the reducer if it had been added                                                   |
-| `removePurifier(IIngredient purifier)`                 | `MixRecipeBuilder` | Remove the purifier if it had been added                                                  |
-| `removeAllOxidizer()`                                  | `MixRecipeBuilder` | Remove all oxidizers                                                                      |
-| `removeAllReducer()`                                   | `MixRecipeBuilder` | Remove all reducers                                                                       |
-| `removeAllPurifier()`                                  | `MixRecipeBuilder` | Remove all purifiers                                                                      |
-| `register()`                                           |                    | Add a new MixRecipe with the data currently added in the MixRecipeBuilder                 |
+| Атрибут     | Геттеры      | ZenSetter            | Тип                         | Инфо                                                      |
+| ----------- | ------------ | -------------------- | --------------------------- | --------------------------------------------------------- |
+| вывод       | `вывод`      | :heavy_check_mark: | `ILiquidStack`              | выход, произведенный MixRecipe                            |
+| input       | `input`      | :heavy_check_mark: | `ILiquidStack`              | ввод MixRecipe                                            |
+| температура | `темп`       | :heavy_check_mark: | `int`                       | минимальная температура в Кельвине                        |
+| окислители  | `окислители` | :x:                  | `Список<IIngredient>` | валидный окислитель рецепта во время доступа к атрибуту   |
+| редукторы   | `редукторы`  | :x:                  | `Список<IIngredient>` | допустимые редукторы рецепта во время доступа к атрибуту  |
+| очистители  | `очистители` | :x:                  | `Список<IIngredient>` | допустимые очистители рецепта во время доступа к атрибуту |
 
 
-All methods that return a `MixRecipeBuilder` return the same instance they were called on, allowing method chaining.
+## Методы
 
-## How to use Once you have a `MixRecipeBuilder`, add the oxidizers, reducers and purifiers for your new recipe to the builder, then `register()` a recipe. A `MixRecipeBuilder` can be used to register as many recipes as you want: each time you call `register()`, it adds a new recipe with the infos it has at the time you call the function. This makes it easy to add recipes variant or recipes tier by incrementally adding new additives and/or increasing yield etc.
+| Метод                                                  | Возвращаемый тип   | Инфо                                                                                     |
+| ------------------------------------------------------ | ------------------ | ---------------------------------------------------------------------------------------- |
+| `getOxidizerChance(IIngredient oxidizer)`              | `int`              | Вероятность того, что окисление потребляется или `-1` , если окисление недействительно   |
+| `getReducerChance(IIngredient reducer)`                | `int`              | Вероятность того, что редуктор потребляется, или `-1` , если редуктор недействителен     |
+| `getOxidizerChance(IIngredient purifier)`              | `int`              | Вероятность того, что очиститель потребляется, или `-1` , если окисление недействительно |
+| `addOxidizer(IIngredient oxidizer, int consumeChance)` | `MixRecipeBuilder` | Добавить окисление с заданной вероятностью потребления (в процентах)                     |
+| `addReducer(IIngredient reducer, int consumeChance)`   | `MixRecipeBuilder` | Добавить редуктор с заданной вероятностью потребления (в процентах)                      |
+| `addPurifier(IIngredient purifier, int consumeChance)` | `MixRecipeBuilder` | Добавить очиститель с заданной вероятностью потребления (в процентах)                    |
+| `удалить оксидизель (IIngredient oxidizer)`            | `MixRecipeBuilder` | Снимите окисление, если он был добавлен                                                  |
+| `removeReducer(IIngredient reducer)`                   | `MixRecipeBuilder` | Удалите редуктор, если он был добавлен                                                   |
+| `удалить очиститель (IIngredient purifier)`            | `MixRecipeBuilder` | Удалите очиститель, если он был добавлен                                                 |
+| `removeAllOxidizer()`                                  | `MixRecipeBuilder` | Удалить все окисления                                                                    |
+| `удалить AllReducer()`                                 | `MixRecipeBuilder` | Удалить все редуктора                                                                    |
+| `removeAllPurifier()`                                  | `MixRecipeBuilder` | Удалить все очистители                                                                   |
+| `register()`                                           |                    | Добавьте новый MixRecipe с данными, добавленными в MixRecipeBuilder                      |
 
-The additives supports all kind of `IIngredient`: `IOreDictEntry`, `IItemStack` and their transformations, liquid containers etc.
 
-## Warning Don't forget to **register** your recipe, the `MixRecipeBuilder` is just a builder to specify all the parts of the recipe !
+Все методы, которые возвращают `MixRecipeBuilder` возвращают ту же экземпляра, к которому они были вызваны, позволяя цепочку методов.
+
+## Как использовать когда у вас есть `MixRecipeBuilder`, добавьте окислители, редукторы и очистители для вашего нового рецепта к конструктору, затем `register()` рецепт. `MixRecipeBuilder` можно использовать для регистрации столько рецептов, сколько захотите: каждый раз при вызове `register()`, добавляет новый рецепт с информацией о том, что он имеет в момент вызова функции. Это упрощает добавление вариантов рецептов или уровня рецептов путем постепенного добавления новых добавок и/или увеличения урожайности и т.д.
+
+Добавки поддерживают все виды `IIngredient`: `IOreDictEntry`, `IItemStack` и их преобразования, жидкие контейнеры и т.д.
+
+## Предупреждение Не забудьте **зарегистрироваться** свой рецепт, `MixRecipeBuilder` это всего лишь конструктор для указания всех частей рецепта!

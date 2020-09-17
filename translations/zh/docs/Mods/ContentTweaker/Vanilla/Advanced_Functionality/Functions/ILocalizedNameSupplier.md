@@ -1,21 +1,21 @@
-# ILocalizedNameSupplier
+# 本地化名称提供商
 
-The ILocalizedNameSupplier function is used to programmatically determine an [Item's](/Mods/ContentTweaker/Vanilla/Creatable_Content/Item/) display name.
+IlocedNameSupplier 函数用于编程确定 [项目的](/Mods/ContentTweaker/Vanilla/Creatable_Content/Item/) 显示名称。
 
-## importing the class
+## 导入类
 
-If you want to import the function's class, here you go:
+如果您想导入函数类，您可以在这里：
 
 ```zenscript
-import mods.contenttweaker.LocalizedNameSupplier;
+导入mods.contenttweeper.本地化名称供应商；
 ```
 
-## The function setup
+## 功能设置
 
-The function returns a string and takes an [IItemStack](/Vanilla/Items/IItemStack/) as single input parameter.
+函数返回一个字符串并使用 [IItemStack](/Vanilla/Items/IItemStack/) 作为单个输入参数。
 
 ```zenscript
-item.setLocalizedNameSupplier(function(itemStack) {
-    return "mySuperItem";
+etem.setLocalizedNameSupplier(function(itemStack) PDF
+    返回 "mySuperItem";
 });
 ```

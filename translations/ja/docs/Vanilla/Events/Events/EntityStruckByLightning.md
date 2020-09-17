@@ -1,24 +1,24 @@
 # EntityStruckByLightning
 
-The EntityStruckByLightning event is fired whenever a lightning bolt is about to hit an entity.
+ライトニングボルトがエンティティに当たろうとすると、EntityStruckByLightning イベントが発生します。
 
-## Event Class
+## イベントクラス
 
 You will need to cast the event in the function header as this class:  
 `crafttweaker.event.EntityStruckByLightningEvent`  
 You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
 
-## Event interface extensions
+## イベントインターフェースの拡張
 
-LivingEntityUseItem Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+LivingEntityUseItem Eventsは、以下のインターフェースを実装し、それらのメソッド/getters/setters/settersをすべて呼び出すことができます。
 
 - [ILivingEvent](/Vanilla/Events/Events/ILivingEvent/)
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 
 ## ZenGetters/ZenSetters
 
-The following information can be retrieved/set during the event:
+イベント中に以下の情報を取得/設定できます:
 
-| ZenGetter   | Return Type                           |
-| ----------- | ------------------------------------- |
-| `lightning` | [IEntity](/Vanilla/Entities/IEntity/) |
+| ZenGetter | 戻り値                                   |
+| --------- | ------------------------------------- |
+| `稲妻...`   | [IEntity](/Vanilla/Entities/IEntity/) |

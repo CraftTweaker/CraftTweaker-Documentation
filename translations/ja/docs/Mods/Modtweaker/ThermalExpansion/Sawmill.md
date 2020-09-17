@@ -1,21 +1,21 @@
-# Sawmill
+# 製材所
 
-## Package
+## パッケージ
 
 `mods.thermalexpansion.Sawmill`
 
-## Addition
+## 加算
 
 ```zenscript
-mods.thermalexpansion.Sawmill.addRecipe(IItemStack output, IItemStack input, int energy, @Optional IItemStack secondaryOutput, @Optional int secondaryChance);
+mods.thermalexpansion.Sawmill.addRecipe(IItemStack 出力, IItemStack 入力, int エネルギー, @Optional IItemStack secondaryOutput, @Optional int secondaryChance);
 
-mods.thermalexpansion.Sawmill.addRecipe(<minecraft:diamond>, <minecraft:stick>, 1500, <minecraft:stone>, 20);
+mods.thermalexpansion.Sowmill.addRecipe(<minecraft:diamond>, <minecraft:stick>, 1500, <minecraft:stone>, 20);
 ```
 
-## Removal
+## 削除
 
 ```zenscript
 mods.thermalexpansion.Sawmill.removeRecipe(IItemStack input);
 
-mods.thermalexpansion.Sawmill.removeRecipe(<minecraft:painting>);
+mods.thermalexpansion.Somill.removeRecipe(<minecraft:painting>);
 ```

@@ -7,30 +7,30 @@ import mods.roots.Pyre;
 #### 方法
 
 ```zenscript
-void addRecipe(
-  string name,         // the name of the recipe being added; if replacing an existing game recipe, ensure the correct name is used
-  IItemStack output,   // the output of this recipe
-  IIngredient[] inputs // a list of five ingredients (no more, no less)
-);
+无效addRecipe(
+  字符串名称, // 添加的配方名称; 如果替换现有的游戏方式，确保正确的名称被使用
+  IItemStack 输出， // 此配方的输出
+  Igredient[…]输入// 五种成分的列表(不只是多余的，不少)
+；
 ```
 
 * * *
 
 ```zenscript
-void addRecipe(
-  string name,          // the name of the recipe being added; if replacing an existing game recipe, ensure the correct name is used
-  IItemStack output,    // the output of this recipe
-  IIngredient[] inputs, // a list of five ingredients
-  int xp                // the amount of xp in levels that is granted after crafting
-);
+无效addRecipe(
+  字符串名称, // 添加的配方名称; 如果替换现有的游戏方式，确保正确的名称被使用
+  IItemStack 输出， / 此配方
+  Igredient[……]输入输出. // 五种成分的列表
+  int xp // 制造后给予等级的 xp 数量
+;
 ```
 
 * * *
 
 ```zenscript
-void removeRecipe(
-  IItemStack output // the output of the recipe to remove
-);
+无效的 removeRecipe(
+  IItemStack 输出 // 要删除的
+ 的输出);
 ```
 
 * * *

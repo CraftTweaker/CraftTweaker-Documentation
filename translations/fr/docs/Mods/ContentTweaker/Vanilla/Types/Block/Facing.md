@@ -1,23 +1,23 @@
-# Facing
+# En face
 
-A CoT Facing is an enumeration of a [block's](/Mods/ContentTweaker/Vanilla/Creatable_Content/Block/) possible directions
+Une face CoT est une énumération des directions possibles d'un bloc [](/Mods/ContentTweaker/Vanilla/Creatable_Content/Block/)
 
-## Importing the package
+## Importation du paquet
 
-It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
-`import mods.contenttweaker.Facing;`
+Il pourrait vous être nécessaire d'importer le paquet si vous rencontrez des problèmes, donc mieux vaut être sûr que désolé et ajouter l'importation.  
+`importer mods.contenttweaker.Face ;`
 
-## Enumerations
+## Énumérations
 
-Facing can be of those six values:
+Faire face peut être de ces six valeurs :
 
-- north
-- east
-- south
-- west
-- down
-- up
+- Nord
+- est
+- Sud
+- à l'ouest
+- bas
+- plus haut
 
-## Uses
+## Utilisations
 
-A Hand's main use is in a [IItemUse Function](/Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemUse/).
+L'utilisation principale d'une main est dans une [Fonction IItemUse](/Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemUse/).

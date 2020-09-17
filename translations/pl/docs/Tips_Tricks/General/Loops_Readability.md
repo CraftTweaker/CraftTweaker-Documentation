@@ -1,41 +1,41 @@
-# Use Loops to make your script look better
+# Użyj pętli, aby Twój skrypt wyglądał lepiej
 
 ## Problem
 
-We all have seen it: Scripts with more than 500 lines where it says 500 times `recipes.remove(item1);recipes.remove(item2),...`  
-Not only is this a pain to write, but it is possible that you spend hours debugging a little typo when the only exception you get is `error in recipes.zs: null`
+Wszyscy to widzieliśmy: Skrypty z ponad 500 wierszy, gdzie mówi 500 razy `recipes.remove(item1);recipes.remove(item2),...`  
+Nie tylko jest to ból do pisania, ale jest możliwe, że spędzasz godziny debugowania małej literatury, gdy jedynym wyjątkiem, który otrzymasz, jest `błąd w przepisach. : null`
 
-## Solution
+## Rozwiązanie
 
-My rule of thumb: When writing the exactly same command more than 10 times, with only 1 Parameter changing, I'll use a loop.
+Moja reguła kciuka: Podczas pisania dokładnie tej samej komendy więcej niż 10 razy, z tylko jedną zmianą parametru, użyję pętli.
 
-So, instead of always typing out the functions, I declare one array containing all items and iterate through that one.
+Tak więc, zamiast zawsze pisać funkcje, zadeklarowałem, że jedna tablica zawiera wszystkie elementy i powtarza się za nią.
 
 ```zenscript
-import crafttweaker.item.IIngredient;
+importuj crafttweaker.item.IIngredient;
 
 val Array = [
     item1,
     item2,
     item3,
-    ...
-] as IIngredient[];
+...
+] jako IIngredient[];
 
 
-for item in Array{
+dla produktu w Array{
     recipes.remove(item);
 }
 ```
 
-## Advantages
+## Korzyści
 
-- Your script becomes (in my opinion) easier to read
-- You know exactly where your script screws up
-- Last minute changes are really easy as all you need to do is adding or removing the item from the array.
+- Twój skrypt staje się (w mojej opinii) łatwiejszy do przeczytania
+- Wiesz, gdzie dokładnie śruby twojego skryptu
+- Zmiany w ostatniej chwili są naprawdę łatwe, ponieważ wszystko, co musisz zrobić, to dodanie lub usunięcie elementu z tablicy.
 
-## Disadvantages
+## Wady
 
-- Only works when there's only a few parameters changing
-- You could screw up your script without knowing it, by say, casting the array wrong
-- One error in the array makes the whole array fail and nothing will be done at all.
-- You might receive cryptic error messages because of the array being created the wrong way.
+- Działa tylko wtedy, gdy zmienia się tylko kilka parametrów
+- Możesz przekręcić swój skrypt nie znając go, powiedząc, rzucając tablicę źle
+- Jeden błąd w tablicy powoduje, że cała tablica nie powiedzie się i nic nie zostanie zrobione.
+- Możesz otrzymywać komunikaty o błędach kryptograficznych z powodu tworzenia tablicy w niewłaściwy sposób.

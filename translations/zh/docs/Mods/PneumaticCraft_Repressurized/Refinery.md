@@ -1,53 +1,53 @@
-# Refinery
+# 精炼厂
 
-The Refinery is a multiblock structure which uses heat to convert an input fluid to two or more output fluids. The multiblock consists of two to four (inclusive) refinery blocks, and the number of possible output fluids is limited by the number of refinery blocks in the structure.
+精炼厂是一个使用热量将一个输入流体转换为两个或多个输出流体的多方块结果。 该多方块结构包含 2 （包含）至 4 （包含）个精炼厂方块，而可能的输出数量有精炼厂方块的数量限制。
 
-Prior to PneumaticCraft: Repressurized v0.9.0, the minimum temperature for any Refinery recipe (i.e. the temperature at which procesing starts) was always 373K, or 100°C. However, in v0.9.0 and later, it is possible to specify a minimum temperature when adding a Refinery recipe.
+在版本 v0.9.0 以前，任何精炼厂配方的所需最小温度（即加工开始的温度）一直是 373K，即 100℃。 但是，在版本 v0.9.0 及以后，可以在添加配方时指定一个最小温度。
 
-The Refinery will start processing fluids at the recipe's minimum temperature, and will work faster as the temperature rises.
+精炼厂将在到达最低温度时开始工作，温度越高，工作速度越快。
 
-Note that it's possible to have two or more recipes with the same input, as long as the number of outputs is different. In this case, the recipe producing the most possible outputs (given the number of refinery blocks in the multiblock) will be used.
+注：可以有输入相同的配方，只要输出的个数不同。 这时，产出流体个数最多的配方（在精炼厂方块数量允许的情况下）将被使用。
 
 ## 导入
 
-You can call the Refinery package using `mods.pneumaticcraft.refinery`.
+你可以通过`mods.pneumaticcraft.refinery`调用这个包。
 
 ## 移除配方
 
-This function removes the first recipe it finds which matches all of the given [IIngredient](/Vanilla/Variable_Types/IIngredient/) `outputs`:
+该方法移除其找到的第一个以指定的[IIngredient](/Vanilla/Variable_Types/IIngredient/)作为`输出`的合成配方：
 
 ```zenscript
 mods.pneumaticcraft.refinery.removeRecipe(IIngredient[] outputs);
 ```
 
-This function removes the first recipe it finds which matches the given [IIngredient](/Vanilla/Variable_Types/IIngredient/) `input`:
+该方法移除其找到的第一个以指定的[IIngredient](/Vanilla/Variable_Types/IIngredient/)作为`输入`的合成配方：
 
 ```zenscript
-mods.pneumaticcraft.refinery.removeRecipes(IIngredient input);
+mods.pneumaticcraft.elinery.removeRecipes(IIngredient input)；
 ```
 
-This function will remove *all* Refinery recipes:
+该方法移除*所有*精炼厂配方：
 
 ```zenscript
-mods.pneumaticcraft.refinery.removeAllRecipes();
+mods.pneumaticcraft.reformery.removeAllRecipes();
 ```
 
-## Adding
+## 添加配方
 
-These functions add a new recipe to the Refinery:
+这些方法添加新的精炼厂配方：
 
 ```zenscript
-// Add a recipe with the default minimum temperature of 373K (100°C)
+// 添加一个最小温度为默认（373K，100℃）的配方
 mods.pneumaticcraft.refinery.addRecipe(ILiquidStack input, ILiquidStack[] outputs);
 
-// (v0.9.0+ required) Add a recipe with a given minimum temperature
+// （需要版本大于 等于 v0.9.0）添加一个具有给定的最小温度的配方
 mods.pneumaticcraft.refinery.addRecipe(int minimumTemperature, ILiquidStack input, ILiquidStack[] outputs);
 
 
-// Example: both recipes use water as input
-// First recipe will be used in a 2-block refinery
+// 例子：下列两个配方都使用水作为输入
+// 第一个配方将会在高度为 2 的精炼厂内使用
 mods.pneumaticcraft.refinery.addRecipe(<liquid:water> * 10, [<liquid:lava> * 2, <liquid:oil> * 5]);
-// Second recipe will be used in a 3- or 4-block refinery,
-// and also requires a minimum temperature of 473K, or 200°C
+// 第二个配方将会在高度为 3 或 4 的精炼厂内使用，
+// 并且需要最小温度为 473K，200℃
 mods.pneumaticcraft.refinery.addRecipe(473, <liquid:water> * 10, [<liquid:lava> * 2, <liquid:oil> * 5, <liquid:lpg> * 2]);
 ```

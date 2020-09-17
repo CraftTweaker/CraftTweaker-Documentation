@@ -1,8 +1,8 @@
-# Crusher
+# クラッシャー
 
-As of Mekanism 9.7.0 it is now possible to view all recipe strings of the Crusher through the command `/ct mekrecipes crusher`
+Mekanism 9.7.0 以降、コマンド `/ct mekrecipes crusher` を使用してクラッシャーのすべてのレシピ文字列を表示できるようになりました。
 
-## Addition
+## 加算
 
 ```zenscript
 mods.mekanism.crusher.addRecipe(IIngredient inputStack, IItemStack outputStack);
@@ -10,11 +10,11 @@ mods.mekanism.crusher.addRecipe(IIngredient inputStack, IItemStack outputStack);
 mods.mekanism.crusher.addRecipe(<minecraft:double_plant:4>, <minecraft:dye:1> * 5);
 ```
 
-As of Mekanism 9.7.0 it is possible to use IIngredients as the inputStack instead of only IItemStacks.
+Mekanism9.7.0では、IIngredientsをIItemStackの代わりにinputStackとして使用することができます。
 
-Note: Currently all this does is loop over the different possibilities in java while adding instead of you having to do it in ZenScript. Currently there is no built in support for compound ingredients or oredictionary in the machines themselves.
+注意: 現在、これらはすべて、ZenScriptで行うのではなく、Javaのさまざまな可能性をループしながら追加しています。 現在、機械自体に複合成分や鉱石辞書をサポートする構築はありません。
 
-## Removal
+## 削除
 
 ```zenscript
 mods.mekanism.crusher.removeRecipe(IIngredient outputStack, @Optional IIngredient inputStack);
@@ -23,11 +23,11 @@ mods.mekanism.crusher.removeRecipe(<minecraft:sand>, <minecraft:gravel>);
 mods.mekanism.crusher.removeRecipe(<minecraft:gravel>);
 ```
 
-Specifying an input parameter will only remove the specific recipe that uses said input. Omitting the input parameter will remove all recipes that produce the specified output.
+input パラメータを指定すると、その入力を使用する特定のレシピのみが削除されます。 入力パラメータを省略すると、指定した出力を生成するすべてのレシピが削除されます。
 
-## Removing all recipes
+## すべてのレシピを削除する
 
-As of Mekanism 9.7.0 it is now possible to remove all Crusher recipes. (This excludes any recipes added via CraftTweaker)
+Mekanism 9.7.0 以降、クラッシャーレシピをすべて削除できるようになりました。 （CraftTweaker経由で追加されたレシピは除外されます）
 
 ```zenscript
 mods.mekanism.crusher.removeAllRecipes();

@@ -1,30 +1,30 @@
 # PlayerUseItemStart
 
-The PlayerUseItemStart Event is fired whenever a player starts using an item.
+L'événement PlayerUseItemStart est lancé chaque fois qu'un joueur commence à utiliser un objet.
 
-## Event Class
+## Classe de l'événement
 
-You will need to cast the event in the function header as this class:  
-`crafttweaker.event.PlayerUseItemStartEvent`  
-You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
+Vous devrez lancer l'événement dans l'en-tête de la fonction comme cette classe:  
+`crafttweaker.event. layerUseItemStartEvent`  
+Vous pouvez, bien sûr, également [importer](/AdvancedFunctions/Import/) la classe avant et utiliser ce nom alors.
 
-## Event interface extensions
+## Extensions d'interface de l'événement
 
-PlayerUseItemStart Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+Les événements PlayerUseItemStart implémentent les interfaces suivantes et peuvent également appeler toutes leurs méthodes/getters/setters :
 
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
-- [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
+- [Evénement IPlayer](/Vanilla/Events/Events/IPlayerEvent/)
 
 ## ZenGetters
 
-The following information can be retrieved from the event:
+Les informations suivantes peuvent être récupérées à partir de l'événement :
 
-| ZenGetter  | Return Type                              |
-| ---------- | ---------------------------------------- |
-| `canceled` | boolean                                  |
-| `player`   | [IPlayer](/Vanilla/Players/IPlayer/)     |
-| `item`     | [IItemStack](/Vanilla/Items/IItemStack/) |
+| ZenGetter | Type de retour                           |
+| --------- | ---------------------------------------- |
+| `annulé`  | boolean                                  |
+| `Joueur`  | [IPlayer](/Vanilla/Players/IPlayer/)     |
+| `Élément` | [IItemStack](/Vanilla/Items/IItemStack/) |
 
-## ZenMethods
+## Méthodes Zen
 
-- `event.cancel()` sets the event as cancelled
+- `event.cancel()` définit l'événement comme annulé

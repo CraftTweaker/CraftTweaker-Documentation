@@ -1,26 +1,26 @@
 # Moistener
 
-ModTweaker allows you to add or remove forestry Moistener Recipes
+ModTweakerを使用すると、森林保湿レシピを追加または削除できます。
 
-## Calling
+## 発信中
 
 You can call the package using `mods.forestry.Moistener`
 
-## Recipe Removal
+## レシピの削除
 
 ```zenscript
 //mods.forestry.Moistener.removeRecipe(IIngredient output);
 mods.forestry.Moistener.removeRecipe(<minecraft:stonebrick:1>);
 ```
 
-## Addition
+## 加算
 
 ```zenscript
-//mods.forestry.Moistener.addRecipe(IItemStack output, IItemStack input, int packagingTime); 
+//mods.forestry.Moistener.addRecipe(IItemStack 出力, IItemStack input, int packagingTime); 
 mods.forestry.Moistener.addRecipe(<minecraft:mycelium>, <minecraft:grass>, 60); 
 ```
 
-## Fuel Removal
+## 燃料除去
 
 ```zenscript
 //mods.forestry.Moistener.removeFuel(IIngredient moistenerItem);
@@ -28,16 +28,16 @@ mods.forestry.Moistener.removeFuel(<minecraft:wheat>);
 
 ```
 
-## Fuel Addition
+## 燃料の追加
 
 ```zenscript
 //mods.forestry.Moistener.addFuel(IItemStack item, IItemStack product, int moistenerValue, int stage);
 mods.forestry.Moistener.addFuel(<minecraft:gold_ingot>, <minecraft:iron_ingot>, 20, 2);
 ```
 
-| Parameter      | Type                                     | Description                                                                                  |
-| -------------- | ---------------------------------------- | -------------------------------------------------------------------------------------------- |
-| item           | [IItemStack](/Vanilla/Items/IItemStack/) | Item to become a valid fuel for the Moistener                                                |
-| product        | [IItemStack](/Vanilla/Items/IItemStack/) | Item that will leave the moistener's working slot (e.g. mouldy wheat or mulch).              |
-| MoistenerValue | int                                      | How much this item contributes to the final product of the moistener.                        |
-| stage          | int                                      | What stage this product represents. Resources with lower stage value will be consumed first. |
+| パラメータ          | タイプ                                      | 説明                                 |
+| -------------- | ---------------------------------------- | ---------------------------------- |
+| 項目             | [IItemStack](/Vanilla/Items/IItemStack/) | アイテムがモイステナーに有効な燃料になる               |
+| 商品             | [IItemStack](/Vanilla/Items/IItemStack/) | 保湿者の作業スロットを残すアイテム(例えば、成形小麦やマルチ)。   |
+| MoistenerValue | int                                      | このアイテムが保湿剤の最終製品にどれだけ貢献するか。         |
+| ステージ           | int                                      | この製品が表すステージ。 ステージ値が低い資源は最初に消費されます。 |

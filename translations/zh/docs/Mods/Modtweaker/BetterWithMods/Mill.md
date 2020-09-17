@@ -1,54 +1,54 @@
-# Mill
+# 磨机
 
-## Basic Recipe
+## 基本配方
 
-* Adds a Mill Recipe 
+* 添加一个磨料配方 
 
 ```zenscript
-mods.betterwithmods.Mill.addRecipe(IIngredient[] inputs, IItemStack[] outputs);
-//Examples
+mods.betterwithmods.Mill.addRecipe(IIngredient[…]输入, IItemStack[…]输出);
+/examps
 mods.betterwithmods.Mill.addRecipe([<minecraft:dirt>],[<minecraft:stone>]);
 ```
 
-## Removal
+## 移除
 
-* Remove a Mill recipe based on the output
+* 移除基于输出的 Mill 配方
 
 ```zenscript
-mods.betterwithmods.Mill.remove(IItemStack[] outputs);
+mods.betterwithmods.Mill.remove(IItemStack[…]输出);
 ```
 
-* Remove all Mill recipes
+* 移除所有磨料配方
 
 ```zenscript
 mods.betterwithmods.Mill.removeAll();
 ```
 
-## Builder
+## 构建器
 
-The Mill has a recipe builder that allows more precise control over the recipes. All previous methods are simply short cuts to using the builder.
+制造厂有一个配方生成器，可以更准确地控制配方。 所有以前的方法都是使用构建器的简单捷径。
 
-* To create a new Mill builder. `mods.betterwithmods.Mill.builder()`
+* 创建一个新的制造厂商。 `mods.betterwithmods.Mill.builder()`
 
-* Mill builder methods
+* 制造商方法
      
-     * Sets up the inputs and outputs of the recipe  
+     * 设置配方的输入和输出  
               zenscript
-              buildRecipe(IIngredient[] inputs, IItemStack[] outputs)
+              buildRecipe(IIngredient[…]输入, IItemStack[…]输出)
      
-     * Sets the priority of the recipe, the lower the priority the sooner it will be crafted. Default=0.  
+     * 设定配方的优先级，优先级越早确定。 默认=0。  
               zenscript
               setPriority(int priority)
      
-     * Set the sound of a Mill Recipe.  
+     * 设置磨机配方的声音.  
               zenscript
-              setSound(String soundLocation)
+              setSound(声音位置)
      
-     * Finalize the recipe and add it to the game  
+     * 完成配方并将其添加到游戏  
               zenscript
               build()
 
-### Example builder usage
+### 示例生成器使用情况
 
 ```zenscript
 mods.betterwithmods.Mill.builder()

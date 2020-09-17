@@ -1,51 +1,51 @@
-# Item Bracket Handler
+# Artikel Klammerhandler
 
-The Item Bracket Handler gives you access to the Items in the game. It is only possible to get items registered in the game, so adding or removing mods may cause issues if you reference the mod's items in an ITem Bracket Handler.
+Der Gegenstandsklasse-Handler gibt dir Zugang zu den Gegenständen im Spiel. Es ist nur möglich, im Spiel registrierte Gegenstände zu erhalten so dass das Hinzufügen oder Entfernen von Mods Probleme verursachen kann, wenn Sie die Elemente des Mods in einem ITem Klammerhandler referenzieren.
 
-Items are referenced in the Item Bracket Handler by like so:
+Artikel werden im Klammerhandler wie folgt referenziert:
 
 ```zenscript
 <modid:itemname>
 ```
 
-With the `modid` being the modid of the mod that the Item belongs to, and `itemname` being the name of the item, It is recommended to use `/ct hand` to get the correct name of the item.
+Mit dem `-Modid` ist das Modid der Mod, zu der das Objekt gehört und `Elementname` ist der Name des Elements, Es wird empfohlen, `/ct hand` zu verwenden, um den korrekten Namen des Elements zu erhalten.
 
-Generally it is like this though:
+Im Allgemeinen ist es wie dies:
 
 ```zenscript
 <item:modid:itemname:meta>
 ```
 
-With `item` as first entry, it specifically says "This has to be an item!" to CT.  
-As you've seen above: Optional.  
-Usually you will never need this, unless dealing with several custom bracket handlers.  
-`modid` is the modid of the mod that the Item belongs to.  
-`itemname` is the name of the item, use /ct hand to get the correct name.  
-`meta` is the meta value of the item (e.g. Damage value, types, etc.). This is an Integer.  
-You can also use a wildcard `*` to address all meta values.  
-Also optional: If left out it will be 0.
+Mit `Element` als erster Eintrag, heißt es explizit "Dies muss ein Element sein!" zu CT.  
+Wie Sie oben gesehen haben: Optional.  
+Normalerweise werden Sie dies nie benötigen, außer wenn Sie sich mit mehreren benutzerdefinierten Klammerhandlern befassen.  
+`Modid` ist das Modid der Mod, zu der der Gegenstand gehört.  
+`Elementname` ist der Name des Elements, benutzen Sie /ct hand, um den korrekten Namen zu erhalten.  
+`meta` ist der Metawert des Elements (z.B. Schadenwert, Typen, etc.). Dies ist eine Ganzzahl.  
+Sie können auch einen Platzhalter verwenden `*` , um alle Meta-Werte zu adressieren.  
+Auch optional: Wenn es ausgelassen wird, ist es 0.
 
-Normally, this will return an IItemStack Object.  
-Please refer to [the respective wiki entry](/Vanilla/Items/IItemStack/) for further information.
+Normalerweise wird hierdurch ein IItemStack Objekt zurückgegeben.  
+Bitte lesen Sie [den entsprechenden Wiki-Eintrag](/Vanilla/Items/IItemStack/) für weitere Informationen.
 
-## Examples
+## Beispiele
 
-An example of the Item Bracket Handler would be:
+Ein Beispiel für den Artikel Klammerhandler wäre:
 
 ```zenscript
-//apple
+//aple
 <minecraft:apple>
 
-//coal
+//Kohle
 <minecraft:coal>
 <minecraft:coal:0>
 
-//charcoal
+//Kohle
 <minecraft:coal:1>
 
-//both, coal and charcoal
+//Kohle und Kohle
 <minecraft:coal:*>
 <item:minecraft:coal:*>
 ```
 
-This will give you access to the `Apple` item.
+Dadurch erhalten Sie Zugriff auf das `Apple` Element.

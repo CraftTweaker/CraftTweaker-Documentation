@@ -1,8 +1,8 @@
-# Thermal Evaporation
+# Évaporation thermique
 
-As of Mekanism 9.7.0 it is now possible to view all recipe strings of the Thermal Evaporation through the command `/ct mekrecipes thermalevaporation`
+Depuis le Mékanisme 9.7.0, il est maintenant possible de voir toutes les chaînes de recettes de l'évaporation thermique via la commande `/ct mekrecipes thermalevaporation`
 
-## Addition
+## Ajouter
 
 ```zenscript
 mods.mekanism.thermalevaporation.addRecipe(ILiquidStack liquidInput, ILiquidStack liquidOutput);
@@ -10,7 +10,7 @@ mods.mekanism.thermalevaporation.addRecipe(ILiquidStack liquidInput, ILiquidStac
 mods.mekanism.thermalevaporation.addRecipe(<liquid:liquidfusionfuel>, <liquid:lava>);
 ```
 
-## Removal
+## Retirer
 
 ```zenscript
 mods.mekanism.thermalevaporation.removeRecipe(IIngredient liquidInput, @Optional IIngredient liquidOutput);
@@ -19,12 +19,12 @@ mods.mekanism.thermalevaporation.removeRecipe(<liquid:water>, <liquid:brine>);
 mods.mekanism.thermalevaporation.removeRecipe(<liquid:brine>);
 ```
 
-Specifying an output parameter will only remove the specific recipe that results in that output from that input. Omitting the output parameter will remove all recipes that the input item can produce.
+Spécifier un paramètre de sortie ne supprimera que la recette spécifique qui résulte de cette sortie. En omettant le paramètre de sortie, vous supprimerez toutes les recettes que l'élément d'entrée peut produire.
 
-## Removing all recipes
+## Suppression de toutes les recettes
 
-As of Mekanism 9.7.0 it is now possible to remove all Thermal Evaporation Plant recipes. (This excludes any recipes added via CraftTweaker)
+Depuis le Mékanisme 9.7.0, il est maintenant possible de supprimer toutes les recettes de plantes d’évaporation thermiques. (Ceci exclut toutes les recettes ajoutées via CraftTweaker)
 
 ```zenscript
-mods.mekanism.thermalevaporation.removeAllRecipes();
+Supprimer toutes les recettes ();
 ```

@@ -1,26 +1,26 @@
 # FarmlandTrampleEvent
 
-The FarmlandTrample Event is fired whenever a farmland is about to be trampled. Canceling the event will prevent the block from being trampled.
+每当一块农田即将被困时，都会发射法尔特姆普尔事件。 取消该事件将防止方块被陷阱。
 
-## Notes
+## 注
 
-`event.fallDistance` contains the distance fallen before hitting the farmland.
+`event.fallDistance` 含有在击中农田之前降落的距离。
 
-## Event Class
+## 事件类
 You will need to cast the event in the function header as this class:  
 `crafttweaker.event.FarmlandTrampleEvent`  
 You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
 
-## Event interface extensions
-FarmlandTrample Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+## 事件界面扩展
+FarmlandTrample Events 实现了以下接口，并且能够调用他们所有的方法/getter/setters：
 
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 - [IBlockEvent](/Vanilla/Events/Events/IBlockEvent/)
 
 ## ZenGetters
-The following information can be retrieved from the event:
+以下信息可以从事件中检索：
 
-| ZenGetter      | ZenSetter | Type                                  |
-| -------------- | --------- | ------------------------------------- |
-| `entity`       |           | [IEntity](/Vanilla/Entities/IEntity/) |
-| `fallDistance` |           | float                                 |
+| ZenGetter | ZenSetter | 类型                                    |
+| --------- | --------- | ------------------------------------- |
+| `实体`      |           | [IEntity](/Vanilla/Entities/IEntity/) |
+| `下落距离`    |           | 浮点数                                   |

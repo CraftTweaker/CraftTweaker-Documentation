@@ -1,8 +1,8 @@
 # Kiln
 
-## Basic Recipe
+## 基本的なレシピ
 
-* Adds Kiln Recipe - inputs *MUST* have a block associated with them.
+* Kilnレシピを追加する - 入力 ** は、それらと関連付けられているブロックを持たなければなりません。
 
 ```zenscript
 mods.betterwithmods.Kiln.add(IIngredient input, IItemStack[] output);
@@ -10,55 +10,59 @@ mods.betterwithmods.Kiln.add(IIngredient input, IItemStack[] output);
 mods.betterwithmods.Kiln.add(<minecraft:fence>,[<minecraft:stick>,<minecraft:stick>]);
 ```
 
-## Removal by input
+## 入力による削除
 
-* Remove a recipe based on the input ingredient
+* 入力材料に基づいてレシピを削除
 
 ```zenscript
 mods.betterwithmods.Kiln.remove(IIngredient input);
 ```
 
-## Removal by output
+## 出力による削除
 
-* Remove a recipe based on the output
+* 出力に基づいてレシピを削除
 
 ```zenscript
 mods.betterwithmods.Kiln.remove(IItemStack[] outputs);
 ```
 
-## Remove all
+## すべて削除
 
-* Remove all recipes
+* すべてのレシピを削除
 
 ```zenscript
 mods.betterwithmods.Kiln.removeAll();
 ```
 
-## Builder
+## ビルダー
 
-The Kiln has a recipe builder that allows more precise control over the recipes. All previous methods are simply short cuts to using the builder.
+Kilnにはレシピビルダーがあり、レシピをより正確に制御することができます。 以前のすべてのメソッドはビルダーの使用に単純に短縮されます。
 
-* To create a new Kiln builder. `mods.betterwithmods.Kiln.builder()`
+* 新しい Kiln ビルダーを作成する。 `mods.betterwithmods.Kiln.builder()`
 
-* Kiln methods
+* Kilnメソッド
      
      * Sets up the inputs and outputs of the recipe  
+          zenscript buildRecipe(IIngredient[] inputs, IItemStack[] outputs)  
               zenscript
               buildRecipe(IIngredient[] inputs, IItemStack[] outputs)
      
-     * Set the Heat requirements of the recipe. Heat is used to check if the recipe can be made in a stoked or unstoked cauldron. Unstoked heat = 1, Stoked heat = 2. You can add custom heat sources, and even custom heat levels using the [Heat Registry](/Mods/Modtweaker/BetterWithMods/HeatRegistry/).  
+     * レシピの熱要件を設定します。 熱を使用して、レシピがストオードロンまたはunstoked大釜で作ることができるかどうかを確認します。 Unstoked heat = 1, Stoked heat = 2. You can add custom heat sources, and even custom heat levels using the [Heat Registry](/Mods/Modtweaker/BetterWithMods/HeatRegistry/).  
+          zenscript setHeat(int heat)  
               zenscript
               setHeat(int heat)
      
      * Set the recipe to ignore the heat value and craft anyways  
+          zenscript setIgnoreHeat(boolean ignoreHeat)  
               zenscript
               setIgnoreHeat(boolean ignoreHeat)
      
      * Finalize the recipe and add it to the game  
+          zenscript build()  
               zenscript
               build()
 
-### Example builder usage
+### ビルダーの使用例
 
 ```zenscript
 mods.betterwithmods.Kiln.builder()
@@ -67,11 +71,11 @@ mods.betterwithmods.Kiln.builder()
 .build();
 ```
 
-## Structure Block
+## ストラクチャーブロック
 
-The Kiln is a multiblock based on the block it is made of; This allows registering a block that can be used to create the structure.
+Kilnは、それが作られているブロックに基づいてマルチブロックです。 これにより、構造を作成するために使用できるブロックを登録することができます。
 
-Input MUST be a *Block*
+入力は *ブロック*でなければなりません
 
 ```zenscript
    mods.betterwithmods.Kiln.registerBlock(IItemStack input);

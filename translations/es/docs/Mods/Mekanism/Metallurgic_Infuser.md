@@ -1,39 +1,39 @@
-# Metallurgic Infuser
+# Infusor metalúrgico
 
-As of Mekanism 9.7.0 it is now possible to view all recipe strings of the Metallurgic Infuser through the command `/ct mekrecipes metallurgicInfuser`
+A partir del Mekanism 9.7.0 ahora es posible ver todas las cadenas de recetas del Infuso Metalúrgico a través del comando `/ct mekrecipes metallurgicInfuser`
 
-## Infusion Type String
+## Tipo de cadena de infusión
 
-Both addition and removal of recipes require an "infusion type" string. Default examples from Mekanism are:
+Tanto la adición como la eliminación de recetas requieren una cadena de "tipo de infusión". Ejemplos predeterminados del Mekanism son:
 
-| Infuse Type | Added by |
-| ----------- | -------- |
-| "CARBON"    | Mekanism |
-| "TIN"       | Mekanism |
-| "DIAMOND"   | Mekanism |
-| "REDSTONE"  | Mekanism |
-| "FUNGI"     | Mekanism |
-| "BIO"       | Mekanism |
-| "OBSIDIAN"  | Mekanism |
+| Tipo de Infusor | Añadido por |
+| --------------- | ----------- |
+| "CARBON"        | Mekanismo   |
+| "TIN"           | Mekanismo   |
+| "DIAMOND"       | Mekanismo   |
+| "REDSTONA"      | Mekanismo   |
+| "FUNGI"         | Mekanismo   |
+| "BIO"           | Mekanismo   |
+| "OBSIDIAN"      | Mekanismo   |
 
-If any other mod registers a new infusion type, that type can be used in CraftTweaker as well as long as the registered type's name is specified exactly. NOTE: It is *not* possible to define **new** infusion *types* with CraftTweaker
+Si cualquier otro mod registra un nuevo tipo de infusión, ese tipo puede ser utilizado en CraftTweaker y siempre y cuando el nombre del tipo registrado se especifique exactamente. NOTA: *no es posible* definir **nueva** infusión *tipos* con CraftTweaker
 
-As of Mekanism 9.7.0 it is now possible to view all registered infusions (including those from other mods) via the command `/ct infuseTypes`
+A partir del Mekanism 9.7.0 ahora es posible ver todas las infusiones registradas (incluyendo las de otros mods) mediante el comando `/ct infuseTypes`
 
-## Addition
+## Adicional
 
 ```zenscript
-mods.mekanism.infuser.addRecipe(String infusionType, int infusionConsumed, IIngredient inputStack, IItemStack outputStack);
+mods.mekanism.infuser.addRecipe(String infusionType, int infusionConsumed, IIngredient inputStack, ItemStack outputStack);
 
 mods.mekanism.infuser.addRecipe("OBSIDIAN", 20, <minecraft:coal_block>, <minecraft:obsidian>);
 mods.mekanism.infuser.addRecipe("DIAMOND", 80, <minecraft:glowstone>, <minecraft:nether_star>);
 ```
 
-As of Mekanism 9.7.0 it is possible to use IIngredients as the inputStack instead of only IItemStacks.
+A partir de Mekanism 9.7.0 es posible utilizar IIngredients como la inputStack en lugar de sólo ItemStacks.
 
-Note: Currently all this does is loop over the different possibilities in java while adding instead of you having to do it in ZenScript. Currently there is no built in support for compound ingredients or oredictionary in the machines themselves.
+Nota: Actualmente todo esto es bucle sobre las diferentes posibilidades en java mientras se añade en lugar de tener que hacerlo en ZenScript. Actualmente no hay soporte para ingredientes compuestos o orediccionarios en las propias máquinas.
 
-## Removal
+## Eliminar
 
 ```zenscript
 mods.mekanism.infuser.removeRecipe(IIngredient outputStack, @Optional IIngredient inputStack, @Optional String infusionType);
@@ -42,11 +42,11 @@ mods.mekanism.infuser.removeRecipe(<mekanism:enrichedalloy>, <minecraft:iron_ing
 mods.mekanism.infuser.removeRecipe(<minecraft:mycelium>);
 ```
 
-Specifying an input parameter will only remove the specific recipe that uses said input. Omitting the input parameter will remove all recipes that produce the specified output.
+Especificar un parámetro de entrada sólo eliminará la receta específica que usa dicha entrada. Omitir el parámetro de entrada eliminará todas las recetas que producen la salida especificada.
 
-## Removing all recipes
+## Eliminando todas las recetas
 
-As of Mekanism 9.7.0 it is now possible to remove all Metallurgic Infuser recipes. (This excludes any recipes added via CraftTweaker)
+A partir del Mekanism 9.7.0 ahora es posible eliminar todas las recetas de Infusor Metalúrgico. (Esto excluye cualquier receta añadida mediante CraftTweaker)
 
 ```zenscript
 mods.mekanism.infuser.removeAllRecipes();

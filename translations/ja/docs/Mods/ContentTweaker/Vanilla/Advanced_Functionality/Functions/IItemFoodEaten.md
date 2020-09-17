@@ -1,21 +1,21 @@
 # IItemFoodEaten
 
-The IItemFoodEaten function is called whenever the associated [food item](/Mods/ContentTweaker/Vanilla/Creatable_Content/ItemFood/) is eaten. Note that this event *will not fire* if the item already has a provided [IItemUseFinish](/Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemUseFinish/).
+IItemFoodEaten関数は、関連する [食品](/Mods/ContentTweaker/Vanilla/Creatable_Content/ItemFood/) が食べられるたびに呼び出されます。 このイベント *は、すでに与えられた* IItemUseFinish [を持っている場合、](/Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemUseFinish/) は発生しないことに注意してください。
 
 ## パッケージのインポート
 
-It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
+問題が発生した場合は、パッケージをインポートする必要があるかもしれませんので、申し訳ありませんし、インポートを追加してください。  
 `import mods.contenttweaker.IItemFoodEaten;`
 
-## Parameters
+## パラメータ
 
-The IItemFoodEaten is a function with the following parameters (In this order):
+IItemFoodEatenは、以下のパラメータを持つ関数です(この順序で)。
 
-- [IMutableItemStack](/Mods/ContentTweaker/Vanilla/Types/Item/IMutableItemStack/) mutableItemStack → The food item being eaten.
-- [IWorld](/Mods/ContentTweaker/Vanilla/Types/World/IWorld/) world → The world the player is in
-- [CTPlayer](/Mods/ContentTweaker/Vanilla/Types/Player/ICTPlayer/) player → The player eating the food.
+- [IMutableItemStack](/Mods/ContentTweaker/Vanilla/Types/Item/IMutableItemStack/) mutableItemStack → 食べられる食品アイテム。
+- [IWorld](/Mods/ContentTweaker/Vanilla/Types/World/IWorld/) ワールド → プレイヤーがいる世界
+- [CTPlayer](/Mods/ContentTweaker/Vanilla/Types/Player/ICTPlayer/) プレイヤー → 食べ物を食べるプレイヤー
 
-## Examples
+## 使用例
 
 ```zenscript
 #loader contenttweaker

@@ -1,18 +1,18 @@
 # MobGriefing
 
-This event is fired whenever potential mob griefing is about to occur. It has a **result** which determines whether the default behaviour occurs or not:
+Dieses Ereignis wird gefeuert, wann immer es zu einer möglichen Mob-Trauer kommt. It has a **result** which determines whether the default behaviour occurs or not:
 
-- **allow**: the griefing is allowed
-- **deny**: the griefing is prevented
-- **default**: the griefing occurs according to Vanilla logic.
+- **Erlaube**: die Trauer ist erlaubt
+- **lehne**ab: das Trauern wird verhindert
+- **Standard**: das Trauern erfolgt nach Vanilla-Logik.
 
 ## Event-Klasse
-You will need to cast the event in the function header as this class:  
-`crafttweaker.event.MobGriefingEvent`  
-You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
+Du musst das Ereignis als diese Klasse in den Funktionskopf verschieben:  
+`crafttweaker.event. obGriefingEvent`  
+Sie können natürlich auch [die Klasse vor](/AdvancedFunctions/Import/) importieren und dann diesen Namen verwenden.
 
 ## Erweiterte Event-Schnittellen
-MobGriefing Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+MobGriefing Events implementieren die folgenden Schnittstellen und können auch alle ihre Methoden/Getters/Setter aufrufen:
 
 - [ILivingEvent](/Vanilla/Events/Events/ILivingEvent/)
 - [IEventHasResult](/Vanilla/Events/Events/IEventHasResult/)

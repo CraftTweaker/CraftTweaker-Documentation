@@ -1,15 +1,15 @@
 # IEntityAnimal
 
-An Animal.
+Ein Tier.
 
 ## Dieses Paket importieren
 
-It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
-`import crafttweaker.entity.IEntityAnimal;`
+Möglicherweise ist es erforderlich, dass Sie das Paket importieren, wenn Sie irgendwelche Probleme haben (z.B. [Array](/AdvancedFunctions/Arrays_and_Loops/)), also besser sicher sein als bedauern und fügen Sie den Import.  
+`importiere craftweaker.entity.IEntityAnimal;`
 
-## Extending [IEntityAgeable](/Vanilla/Entities/IEntityAgeable/)
+## [IEntityAgeable wird erweitert](/Vanilla/Entities/IEntityAgeable/)
 
-IEntityAnimal extends [IEntityAgeable](/Vanilla/Entities/IEntityAgeable/). That means all functions available to [IEntities](/Vanilla/Entities/IEntityAgeable/) also are available to IEntityAnimal.
+IEntityAnimal erweitert [IEntityAgeable](/Vanilla/Entities/IEntityAgeable/). Das bedeutet, dass alle Funktionen, die [IEntities](/Vanilla/Entities/IEntityAgeable/) zur Verfügung stehen, auch für IEntityAnimal verfügbar sind.
 
 ## Methoden
 
@@ -17,34 +17,34 @@ IEntityAnimal extends [IEntityAgeable](/Vanilla/Entities/IEntityAgeable/). That 
 
 | ZenGetter | Type                                                |
 | --------- | --------------------------------------------------- |
-| loveCause | [IPlayer](/Vanilla/Players/IPlayer/) (Can be null!) |
+| loveGrund | [IPlayer](/Vanilla/Players/IPlayer/) (Can be null!) |
 | isInLove  | bool                                                |
 
-### ZenMethods
+### ZenMethoden
 
-#### check if an item can be used to breed the animal
+#### überprüfe, ob ein Gegenstand verwendet werden kann, um das Tier zu züchten
 
-Method expects an [IItemStack](/Vanilla/Items/IItemStack/).  
-Returns a bool.
+Methode erwartet einen [IItemStack](/Vanilla/Items/IItemStack/).  
+Gibt einen Bool zurück.
 
 ```zenscript
 entAnObj.isBreedingItem(IItemStack itemStack);
 ```
 
-#### Set or Reset in love
+#### In Liebe setzen oder zurücksetzen
 
-First method expects an optional [IPlayer](/Vanilla/Players/IPlayer/) object, second nothing.  
-Returns nothing.
+Die erste Methode erwartet ein optionales [IPlayer](/Vanilla/Players/IPlayer/) Objekt, zweite nichts.  
+Gibt nichts zurück.
 
 ```zenscript
-entAnObj.setInLove(@Optional IPlayer player);
+entAnObj.setInLove(@Optional IPlayer Player);
 entAnObj.resetInLove();
 ```
 
-#### Check if another animal can mate with this one.
+#### Überprüfen Sie, ob ein anderes Tier mit diesem paaren kann.
 
-Method expects an IEntityAnimal object.  
-Returns a bool.
+Methode erwartet ein IEntityAnimal Objekt.  
+Gibt einen Bool zurück.
 
 ```zenscript
 entAnObj.canMateWith(IEntityAnimal other);

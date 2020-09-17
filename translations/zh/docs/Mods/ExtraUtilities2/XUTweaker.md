@@ -1,53 +1,53 @@
 # XUTweaker
 
-The XUTweaker package adds several static utility methods.
+XUT弱化包增加了几种静态实用方法。
 
 ## 导入相关包
 
-If you want to shorten method calls or encounter any issues you might need to import the package.  
-You can do so using
+如果您想要缩短方法调用或遇到您可能需要导入软件包的任何问题。  
+您可以这样做。
 
 ```zenscript
-import extrautilities2.Tweaker.XUTweaker;
+导入exautilities2.调节器.XUTinstrer;
 ```
 
-## Methods
+## 方法
 
-### Allow survival flight
+### 允许生存的飞行方式
 
-Allows Flight for all players, permanently.
+允许所有玩家永久飞行.
 
 ```zenscript
-extrautilities2.Tweaker.XUTweaker.allowSurvivalFlight();
+extrautilities2.Tweeper.XUTweeper.allowSurvivalFlight();
 ```
 
-### Disable Nether Portals
+### 禁用地狱门户网站
 
-Prevents Nether portals (and all portals that use the PortalSpawnEvent) from spawning, permanently.
+永久防止地狱下界门户(以及使用PortalSpawnEvent的所有门户)生成产卵。
 
 ```zenscript
-extrautilities2.Tweaker.XUTweaker.disableNetherPortals();
+extrautilities2.调整.XUTweeper.disableNetherlandPortals();
 ```
 
-### Check if a player is a fake Player
+### 检查玩家是否是一个假玩家
 
-Returns a boolean stating if the player is a fake Player.
+返回一个布尔值，表示玩家是否是一个假玩家。
 
-Requires an [IPlayer](/Vanilla/Players/IPlayer) argument.
+需要 [IPlayer](/Vanilla/Players/IPlayer) 参数。
 
 ```zenscript
-extrautilities2.Tweaker.XUTweaker.isPlayerFake(player);
+extrautilities2.调整.XUTweeper.isPlayerFake(玩家)；
 ```
 
-### Open a books screen for the player
+### 为玩家打开书籍屏幕
 
-Tries to open the written book screen to the given player.
+尝试向给定的玩家打开书签屏幕。
 
-Returns a boolean stating if the command was executed correctly.  
-Requires an [IPlayer](/Vanilla/Players/IPlayer) argument.  
-Also requires a string[] argument that will be the pages.
+返回一个布尔值，说明命令是否正确执行。  
+需要一个 [IPlayer](/Vanilla/Players/IPlayer) 参数。  
+还需要一个字符串的 []参数作为页面。
 
 ```zenscript
-extrautilities2.Tweaker.XUTweaker.openBookScreen(player, pages);
-extrautilities2.Tweaker.XUTweaker.openBookScreen(player, ["Page 1", "Page 2"]);
+extrautilities2.调整。XUTweeper.openBookScreen(播放器，页面)；
+extrautilities2.调整。XUTweeper.openBookScreen(播放器，["Page 1", "Page 2"])；
 ```

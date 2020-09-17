@@ -1,54 +1,54 @@
-# Mill
+# Młyn
 
-## Basic Recipe
+## Podstawowy przepis
 
-* Adds a Mill Recipe 
+* Dodaje przepis na Młyn 
 
 ```zenscript
-mods.betterwithmods.Mill.addRecipe(IIngredient[] inputs, IItemStack[] outputs);
+mods.betterwithmods.Mill.addRecipe(IIngredient[] wejść, IItemStack[] wyjście);
 //Examples
 mods.betterwithmods.Mill.addRecipe([<minecraft:dirt>],[<minecraft:stone>]);
 ```
 
-## Removal
+## Usuwanie
 
-* Remove a Mill recipe based on the output
+* Usuń przepis Młyna na podstawie wyjścia
 
 ```zenscript
-mods.betterwithmods.Mill.remove(IItemStack[] outputs);
+mods.betterwithmods.Mill.remove(wyjścia IItemStack[]);
 ```
 
-* Remove all Mill recipes
+* Usuń wszystkie przepisy Mill
 
 ```zenscript
 mods.betterwithmods.Mill.removeAll();
 ```
 
-## Builder
+## Konstruktor
 
-The Mill has a recipe builder that allows more precise control over the recipes. All previous methods are simply short cuts to using the builder.
+Młyn ma konstruktor receptury, który pozwala na dokładniejszą kontrolę nad przepisami. Wszystkie poprzednie metody są po prostu krótkimi cięciami w używaniu konstruktora.
 
-* To create a new Mill builder. `mods.betterwithmods.Mill.builder()`
+* Aby utworzyć nowego budowniczego Milla. `mods.betterwithmods.Mill.builder()`
 
-* Mill builder methods
+* Metody konstruktora Mill
      
-     * Sets up the inputs and outputs of the recipe  
+     * Ustawia wejścia i wyjścia przepisu  
               zenscript
-              buildRecipe(IIngredient[] inputs, IItemStack[] outputs)
+              buildRecipe(IIngredient[] wejścia IItemStack[] wyjścia
      
-     * Sets the priority of the recipe, the lower the priority the sooner it will be crafted. Default=0.  
+     * Ustawia priorytet przepisu, im niższy priorytet zostanie wytworzony. Domyślnie=0.  
               zenscript
               setPriority(int priority)
      
-     * Set the sound of a Mill Recipe.  
+     * Ustaw dźwięk przepisu Młyna.  
               zenscript
               setSound(String soundLocation)
      
-     * Finalize the recipe and add it to the game  
+     * Sfinalizuj przepis i dodaj go do gry  
               zenscript
               build()
 
-### Example builder usage
+### Przykładowe użycie konstruktora
 
 ```zenscript
 mods.betterwithmods.Mill.builder()

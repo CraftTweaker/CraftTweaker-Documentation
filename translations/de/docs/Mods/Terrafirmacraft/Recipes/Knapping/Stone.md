@@ -1,32 +1,32 @@
-# Stone Knapping
+# Steinknappern
 
-## Package
+## Paket
 ```zenscript
-import mods.terrafirmacraft.StoneKnapping;
+importieren Sie mods.terrafirmacraft.Steinknappung;
 ```
 
 ## Addition
 
 ```zenscript
-StoneKnapping.addRecipe(String registryName, IItemStack[] output, String[] rocks, String... pattern)
+SteoneKnapping.addRecipe(String RegistryName, IItemStack[] Ausgabe, String[] Felsen, String... Muster)
 ```
 
-## Removal
+## Entfernen
 
 ```zenscript
-StoneKnapping.removeRecipe(IItemStack output);
-StoneKnapping.removeRecipe(String registryName);
+SteoneKnapping.removeRecipe(IItemStack Ausgabe);
+StoneKnapping.removeRecipe(String RegistryName);
 ```
 
-## Examples
+## Beispiele
 
 ```zenscript
-// Gives a stone hoe in all rocks.
-StoneKnapping.addRecipe("testrecipe", [<minecraft:stone_hoe>], ["all"], "     ", "XXXX ");
-// Gives a stone hoe only in shale, claystone, rocksalt, limestone.
-StoneKnapping.addRecipe("testrecipe2", [<minecraft:stone_hoe>], ["shale", "claystone", "rocksalt", "limestone"], "     ", "XXXX ");
-// Gives a stone hoe in claystone, and a pickaxe in limestone.
-StoneKnapping.addRecipe("testrecipe3", [<minecraft:stone_hoe>, <minecraft:stone_pickaxe>], ["claystone", "limestone"], "     ", "XXXX ");
-// Gives a stone hoe only in basalt and chert.
-StoneKnapping.addRecipe("testrecipe4", [<minecraft:stone_hoe>, <minecraft:stone_hoe>], ["basalt", "chert"], "     ", "XXXX ");
+// Gibt eine Steinhacke in allen Felsen.
+SteoneKnapping.addRecipe("testrecipe", [<minecraft:stone_hoe>], ["all"], " ", "XXXX");
+// Gibt eine Steinhacke nur in Schiefer, Lehmstein, Steinsalz, Kalkgestein.
+StoneKnapping.addRecipe("testrecipe2", [<minecraft:stone_hoe>], ["shale", "Claystone", "Rocksalt", "Kalkstein"], " ", "XXXX ");
+// Gibt eine Steinhacke in Tonstein und eine Spitzhacke in Kalkstein.
+StoneKnapping.addRecipe("testrecipe3", [<minecraft:stone_hoe>, <minecraft:stone_pickaxe>], ["claystone", "limestone"], " ", "XXXX ");
+// Gibt eine Steinhacke nur in Basalt und Kirche.
+StoneKnapping.addRecipe("testrecipe4", [<minecraft:stone_hoe>, <minecraft:stone_hoe>], ["basalt", "chert"], " ", "XXXX ");
 ```

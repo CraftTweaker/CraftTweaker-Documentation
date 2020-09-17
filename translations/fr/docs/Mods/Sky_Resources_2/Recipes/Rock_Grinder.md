@@ -1,22 +1,22 @@
-# Rock Grinder
+# Broyeur de roche
 
-The *rockgrinder* package is used for adding or removing recipes to/from the Rock Grinder.
+Le pack *broyeur de roquettes* est utilisé pour ajouter ou supprimer des recettes de/vers le broyeur de roches.
 
-## Calling
+## Appel en cours
 
-You can call the *rockgrinder* package using `mods.skyresources.rockgrinder`
+Vous pouvez appeler le package *rockgrinder* en utilisant `mods.skyresources.rockgrinder`
 
-## Recipe Addition
+## Ajout de recette
 
 ```zenscript
-//mods.skyresources.rockgrinder.addRecipe(IItemStack output, IItemStack input);
+//mods.skyresources.rockgrinder.addRecipe(sortie IItemStack, entrée IItemStack);
 mods.skyresources.rockgrinder.addRecipe(<minecraft:diamond>, <minecraft:stone>);
 
-//mods.skyresources.rockgrinder.addRecipe(IItemStack output, IItemStack input, float chance);
+//mods.skyresources.rockgrinder.addRecipe(sortie IItemStack, entrée IItemStack, chance flottante);
 mods.skyresources.rockgrinder.addRecipe(<minecraft:emerald>, <minecraft:stone>, 0.50);
 ```
 
-## Recipe Removal
+## Suppression de la recette
 
 ```zenscript
 //mods.skyresources.rockgrinder.removeRecipe(IItemStack output);

@@ -1,80 +1,80 @@
-# ZenMembers and ZenProperties
+# ZenMembers und ZenProperties
 
-ZenMembers are a ZenObject's members.  
-They can be accesses using `object.member`. Members can be settable, gettable or both.
+ZenMembers sind Mitglieder eines ZenObjects.  
+Sie können Zugriff haben mit `object.member`. Mitglieder können feststellbar sein oder beides.
 
-## Getters and Setters
+## Getter und Setter
 
-There are two Types of ZenGetters: ZenGetters and ZenMemberGetters.  
-So what's the difference?
+Es gibt zwei Arten von ZenGetters: ZenGetters und ZenMemberGetters.  
+Was ist der Unterschied?
 
-Normally you use `@ZenGetter(value)`, unless you have something which has either many members that return the same type or if you don't know the exact members yourself.  
-In that case you can use `@ZenMemberGetter`.  
-So what's the difference?
+Normalerweise benutzst du `@ZenGetter(Wert)`, es sei denn, Sie haben etwas, das entweder viele Mitglieder hat, die den gleichen Typ zurückgeben, oder wenn Sie die genauen Mitglieder nicht selbst kennen.  
+In diesem Fall können Sie `@ZenMemberGetter`verwenden.  
+Was ist der Unterschied?
 
-- A Method annotated with a `@ZenGetter(value)` does not need any parameters, while a Method annotated with `@ZenMemberGetter` needs a String argument that is the member's name.
-- MemberGetters are only executed if no other getter is found.
-- If you only need one small Property, you should use `@ZenGetter(value)`
+- Eine Methode, die mit einem `@ZenGetter(Wert)` kommentiert wird, benötigt keine Parameter, während eine Methode mit `@ZenMemberGetter` ein String-Argument benötigt, das der Name des Mitglieds ist.
+- MemberGetters werden nur ausgeführt, wenn kein anderer Getter gefunden wird.
+- Wenn Sie nur eine kleine Eigenschaft benötigen, sollten Sie `@ZenGetter(Wert)` verwenden
 
-The same applies for ZenSetters/ZenMemberSetters.
+Dasselbe gilt für ZenSetters/ZenMemberSetters.
 
-## ZenProperty
+## ZenEigenschaft
 
-The `@ZenProperty` combines both, `@ZenGetter(value)` and `@ZenSetter` in one annotation.  
-This annotation can only be applied to public fields (e.g. `public String name`).
+Das `@ZenProperty` kombiniert beides, `@ZenGetter(Wert)` und `@ZenSetter` in einer Anmerkung.  
+Diese Anmerkung kann nur auf öffentliche Felder angewendet werden (z.B. `öffentlicher String Name`).
 
-This Annotation can have these arguments:
+Diese Anmerkung kann folgende Argumente enthalten:
 
-- `String value`: the property name (in ZS you call object.value). If omitted, the field name is used.
-- `String getter`: the name of the corresponding Getter Method (which may not have a ZenGetter Annotation). 
-    - If not set or `""`, it will use use 
-        - `get + value` if the annotated field is not a boolean
-        - `is + value` if annotated field is boolean or Boolean
-    - if `null`, it will not register a ZenSetter
-- `String setter`: the name of the corresponding Setter Method (which may not have a ZenSetter Annotation). 
-    - If not set or `""`, it will use `set + value`
-    - If `null`, it will not register a ZenSetter
+- `String Wert`: der Eigenschaftsname (in ZS nennen Sie object.value). Wenn nicht angegeben wird, wird der Feldname verwendet.
+- `String Getter`: der Name der entsprechenden Getter-Methode (die möglicherweise keine ZenGetter-Annotation hat). 
+    - Wenn nicht gesetzt oder `""`, wird verwendet 
+        - `erhalte + Wert` wenn das kommentierte Feld kein boolesche Feld ist
+        - `ist + Wert` wenn das kommentierte Feld boolesch oder boolesch ist
+    - wenn `null`, wird es keinen ZenSetter registrieren
+- `String setter`: der Name der zugehörigen Setter-Methode (die möglicherweise keine ZenSetter-Annotation hat). 
+    - Wenn nicht gesetzt oder `""`, wird `gesetzt + Wert` verwendet
+    - Wenn `null`, wird kein ZenSetter registriert
 
-You can even omit the getter/setter method alltogether if you use `@ZenProperty`.  
-If you do use those methods, however, you will need to add `@ZenMethod` should you want this functionality, if you omit the methods, they will be generated automatically.
+Sie können sogar die Getter/Setter-Methode komplett weglassen, wenn Sie `@ZenProperty`verwenden.  
+Wenn Sie diese Methoden verwenden, müssen Sie `@ZenMethod` hinzufügen, wenn Sie diese Funktion haben möchten wenn Sie die Methoden weglassen, werden sie automatisch generiert.
 
-## Examples
+## Beispiele
 
-### ZenGetters Example
+### ZenGetters Beispiel
 
-[CraftTweaker's IOreDict](https://github.com/jaredlll08/CraftTweaker/blob/1.12/CraftTweaker2-API/src/main/java/crafttweaker/api/oredict/IOreDict.java)
+[CraftTweakers IOreDict](https://github.com/jaredlll08/CraftTweaker/blob/1.12/CraftTweaker2-API/src/main/java/crafttweaker/api/oredict/IOreDict.java)
 
     @ZenClass("crafttweaker.oredict.IOreDict")
-    @IterableSimple("crafttweaker.oredict.IOreDictEntry")
+    @IterableSimple("crafttweaker.oredict. OreDictEntry")
     @ZenRegister
     public interface IOreDict extends Iterable<IOreDictEntry> {
     
     
         @ZenMemberGetter
-        @ZenOperator(OperatorType.INDEXGET)
+        @ZenOperator(OperatorType. NDEXGET)
         @ZenMethod
         IOreDictEntry get(String name);
     
-        @ZenGetter("entries")
-        List<IOreDictEntry> getEntries();
+        @ZenGetter("Einträge")
+        Liste<IOreDictEntry> getEntries();
     
-        @ZenOperator(OperatorType.CONTAINS)
+        @ZenOperator(OperatorType. ONTAINS)
         @ZenMethod
-        boolean contains(String name);
+        boolesche enthalten(Stringname);
     }
     
 
-### ZenProperties Example
+### ZenProperties Beispiel
 
-[ContentTweaker's MCAxisAlignedBB](https://github.com/The-Acronym-Coders/ContentTweaker/blob/develop/1.12/src/main/java/com/teamacronymcoders/contenttweaker/api/ctobjects/aabb/MCAxisAlignedBB.java)
+[ContentTweakers MCAxisAusrichten BB](https://github.com/The-Acronym-Coders/ContentTweaker/blob/develop/1.12/src/main/java/com/teamacronymcoders/contenttweaker/api/ctobjects/aabb/MCAxisAlignedBB.java)
 
     @ZenRegister
     @ZenClass("mods.contenttweaker.AxisAlignedBB")
-    public class MCAxisAlignedBB implements ICTObject<AxisAlignedBB> {
+    public class MCAxisAlignedBB implementiert ICTObject<AxisAlignedBB> {
         @ZenProperty
         public double minX = 0.0;
     
-        ...
+    ...
     
         @ZenMethod
         public double getMinX() {
@@ -83,9 +83,9 @@ If you do use those methods, however, you will need to add `@ZenMethod` should y
     
         @ZenMethod
         public void setMinX(double minX) {
-            this.minX = minX;
+            dies. inX = minX;
         }
     
-        ...
+    ...
     
     }

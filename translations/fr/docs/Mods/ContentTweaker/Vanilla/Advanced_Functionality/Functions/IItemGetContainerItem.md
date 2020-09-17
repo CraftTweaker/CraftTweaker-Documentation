@@ -1,19 +1,19 @@
 # IItemGetContainerItem
 
-The IItemGetContainerItem function can be added to an [Item](/Mods/ContentTweaker/Vanilla/Creatable_Content/Item/) and will run whenever the item is used as ingredient.  
-It is used to determine, what will be left in the crafting slot, when the item is used as such.  
-Think of buckets, for example: Each filled bucket has the empty bucket as containerItem, and when a filled bucket is crafted, you will end up with an empty one.  
-This function can be used to calculate the containerItem, so you can go crazy with stuff like NBT-Tags or more.
+La fonction IItemGetContainerItem peut être ajoutée à un élément [](/Mods/ContentTweaker/Vanilla/Creatable_Content/Item/) et s'exécutera chaque fois que l'objet est utilisé comme ingrédient.  
+Il est utilisé pour déterminer, ce qui restera dans l'emplacement de fabrication, quand l'objet sera utilisé en tant que tel.  
+Pensez aux compartiments, par exemple : chaque compartiment rempli a le compartiment vide en tant qu'élément de conteneur, et quand un seau rempli est fabriqué, vous finirez avec un seau.  
+Cette fonction peut être utilisée pour calculer l'élément conteneur, donc vous pouvez être fou avec des trucs comme des NBT-Tags ou plus.
 
-## Importing the package
+## Importation du paquet
 
-It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
-`import mods.contenttweaker.IItemGetContainerItem;`
+Il pourrait vous être nécessaire d'importer le paquet si vous rencontrez des problèmes, donc mieux vaut être sûr que désolé et ajouter l'importation.  
+`importer mods.contenttweaker.IItemGetContainerItem;`
 
-## Parameters
+## Paramètres
 
-The IItemGetContainerItem is a function with the following parameters:
+L'IItemGetContainerItem est une fonction avec les paramètres suivants :
 
-- [IItemStack](/Vanilla/Items/IItemStack/) stack → The item.
+- [IItemStack](/Vanilla/Items/IItemStack/) pile → L'élément.
 
-The Function needs to return a new [IItemStack](/Vanilla/Items/IItemStack/) object, or null, if the item should not leave anything behind.
+La fonction doit retourner un nouvel objet [IItemStack](/Vanilla/Items/IItemStack/) , ou nul, si l'élément ne doit rien laisser derrière.

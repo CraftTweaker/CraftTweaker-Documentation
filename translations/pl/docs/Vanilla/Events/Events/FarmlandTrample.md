@@ -1,26 +1,26 @@
 # FarmlandTrampleEvent
 
-The FarmlandTrample Event is fired whenever a farmland is about to be trampled. Canceling the event will prevent the block from being trampled.
+Wydarzenie FarmlandTrample jest wystrzelane za każdym razem, gdy ziemia rolna ma zostać zrzucona. Anulowanie wydarzenia zapobiegnie deptaniu bloku.
 
-## Notes
+## Uwagi
 
-`event.fallDistance` contains the distance fallen before hitting the farmland.
+`event.fallDistance` zawiera odległość pokonaną przed uderzeniem w ziemię rolną.
 
-## Event Class
-You will need to cast the event in the function header as this class:  
-`crafttweaker.event.FarmlandTrampleEvent`  
-You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
+## Klasa wydarzenia
+Musisz aktywować wydarzenie w nagłówku funkcji jako klasa:  
+`crafttweaker.event. armlandTrampleEvent`  
+Oczywiście możesz również [zaimportować](/AdvancedFunctions/Import/) klasę przed i wtedy użyć tej nazwy.
 
-## Event interface extensions
-FarmlandTrample Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+## Rozszerzenia interfejsu zdarzenia
+Wydarzenia FarmlandTrample zaimplementują następujące interfejsy i są również w stanie wywołać wszystkie swoje metody/pobierające/ustawiające:
 
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
-- [IBlockEvent](/Vanilla/Events/Events/IBlockEvent/)
+- [Wydarzenie IBlock'a](/Vanilla/Events/Events/IBlockEvent/)
 
 ## ZenGetters
-The following information can be retrieved from the event:
+Z wydarzenia można uzyskać następujące informacje:
 
-| ZenGetter      | ZenSetter | Type                                  |
-| -------------- | --------- | ------------------------------------- |
-| `entity`       |           | [IEntity](/Vanilla/Entities/IEntity/) |
-| `fallDistance` |           | float                                 |
+| ZenGetter   | ZenSetter | Typ                                   |
+| ----------- | --------- | ------------------------------------- |
+| `podmiot`   |           | [IEntity](/Vanilla/Entities/IEntity/) |
+| `Odległość` |           | zmiennoprzecinkowe                    |

@@ -3,34 +3,34 @@
 When the [IOreDict](/Vanilla/OreDict/IOreDict/) is the lexicon, the IOreDictEntries are the lexicon's entries.  
 They consist of a name (OreDictionary name) and an explanation (all matching items).
 
-## Importing the package
+## パッケージのインポート
 
 It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
 `import crafttweaker.oredict.IOreDictEntry;`
 
-## Retrieving such an Object.
+## そのようなオブジェクトを取得しています。
 
-There are multiple ways of getting an IOreDictEntry Object: If you refer to an oreDict that does not yet exist, it will be created.
+IOreDictEntry オブジェクトを取得するには複数の方法があります: まだ存在しないoreDictを参照すると、作成されます。
 
-- Using the [IOreDict](/Vanilla/OreDict/IOreDict/) class.
-- Using the [ore Bracket Handler](/Vanilla/Brackets/Bracket_Ore/).
-- Using an [IItemDefinition's `ores` getter](/Vanilla/Items/IItemDefinition/).
+- [IOreDict](/Vanilla/OreDict/IOreDict/) クラスを使用する。
+- [鉱石ブラケットハンドラ](/Vanilla/Brackets/Bracket_Ore/)を使用する。
+- [IItemDefinitionの `は` ゲッター](/Vanilla/Items/IItemDefinition/)を使用します。
 
 ## ZenGetters
 
-You can use these getters to retrieve some information on the oredict:
+これらのゲッターを使用して、オレディクの情報を取得できます:
 
-| name      | Description                              | Return type                              |
-| --------- | ---------------------------------------- | ---------------------------------------- |
-| name      | Returns the oreDict's name               | string                                   |
-| empty     | Returns if the oreDict is empty          | bool                                     |
-| firstItem | Returns the first of the oreDict's items | [IItemStack](/Vanilla/Items/IItemStack/) |
+| 名前        | 説明                    | 戻り値の種類                                   |
+| --------- | --------------------- | ---------------------------------------- |
+| 名前        | オレディクトの名前を返します        | 文字列                                      |
+| 空         | oreDict が空の場合に返します。   | bool                                     |
+| firstItem | オレディクトの項目の最初の項目を返します。 | [IItemStack](/Vanilla/Items/IItemStack/) |
 
 ## ZenMethods
 
-You can use these methos on an IOreDictEntry Object:
+IOreDictEntry オブジェクトでこれらのメソッドを使用できます。
 
-### Add/Remove items
+### アイテムの追加/削除
 
 ```zenscript
 val oreDictEnt = <ore:ingotIron>;
@@ -55,9 +55,9 @@ oreDictEnt.remove(<minecraft:iron_ore>, <minecraft:dirt>);
 oreDictEnt.removeItems([<minecraft:redstone>, <minecraft:gold_ore>]);
 ```
 
-### Check if an IOreDictEntry contains an item
+### IOreDictEntry に項目が含まれているかどうかを確認します。
 
-You can check if an IOreDictEntry contains an item using either the `in` or `has` keywords:
+IOreDictEntry に `の` または `に` キーワードがあるかを確認できます:
 
 ```zenscript
 val oreDictEnt = <ore:ingotIron>;
@@ -73,9 +73,9 @@ if(oreDictEnt has <minecraft:iron_ingot>){
 }
 ```
 
-### Mirror an IOreDictEntry
+### IOreDictEntry をミラーする
 
-Mirroring an IOreDictEntry means that all items in the other oreDictEntry will be replaced by the items in the oreDictEntry the method was executed on:
+IOreDictEntry をミラーリングすることは、他の oreDictEntry 内のすべての項目が oreDictEntry 内の項目に置き換えられることを意味します。
 
 ```zenscript
 //make iron and copper equivalent
@@ -87,15 +87,15 @@ iron.addAll(copper);
 
 
 //mirrors copper to iron, so all items in iron will be replaced by all the ones in copper.
-//In this case that means by all iron and copper oreDictEntries
+//この場合は、すべての鉄と銅の oreDictEntries
 copper.mirror(iron);
 ```
 
-## IIngredient implementation
+## IIngredient実装
 
-IOreDictEntry extends [IIngredient](/Vanilla/Variable_Types/IIngredient/). This means that all methods available to [IIngredient](/Vanilla/Variable_Types/IIngredient/) are also available to IOreDictEntries. It also means that you can put IOreDictEntries into IIngredient Arrays (such as the ones in crafting recipe methods).
+IOreDictEntry extends [IIngredient](/Vanilla/Variable_Types/IIngredient/). これは、 [IIngredient](/Vanilla/Variable_Types/IIngredient/) で利用可能なすべてのメソッドが、IOreDictEntries でも利用できることを意味します。 IIngredient配列(レシピメソッドの作成時など)にIOreDictEntryを入れることもできます。
 
-### Iterating through an oreDictEntry's items
+### oreDictEntryのアイテムを繰り返しています
 
 ```zenscript
 val iron = <ore:ingotIron>;

@@ -1,64 +1,64 @@
-# Refinery
+# 精炼厂
 
 ## 所属包名
 
-`mods.thermalexpansion.Refinery`
+`thermalext.Refinery`
 
-## Adding a Recipe
+## 添加配方
 
 `Refinery.addRecipe(output, outputItem, input, energy);`
 
-- `output` <[ILiquidStack](/Vanilla/Liquids/ILiquidStack)>
+- `输出` <[ILiquidStack](/Vanilla/Liquids/ILiquidStack)>
 - `outputItem` <[WeightedItemStack](/Vanilla/Items/WeightedItemStack)>
 - `input` <[ILiquidStack](/Vanilla/Liquids/ILiquidStack)>
-- `energy` &lt;int> The total energy cost
+- `能源` &lt;int> 能源总成本
 
 ```zenscript
-import mods.thermalexpansion.Refinery;
+导入mods.thermalreas.Refinery；
 
-// Adds a recipe that outputs 1mB of lava and a diamond (at a 100% chance) per 1mB of water
-Refinery.addRecipe(<liquid:lava>, <minecraft:diamond>, <liquid:water>, 50);
+// 添加一个输出1mB 的熔岩和每1mB 水下的钻石
+精炼厂的配方。 ddRecipe(<liquid:lava>, <minecraft:diamond>, <liquid:water>, 50)；
 
-// Adds a recipe that outputs 5mB of lava and a diamond (at a 1% chance) per 100mB of water
-Refinery.addRecipe(<liquid:lava> * 5, <minecraft:diamond> % 1, <liquid:water> * 100, 50);
+// 添加一种食谱，输出5mB的岩浆和每100mB水中的一颗钻石（机会为1%）
+精炼。 ddRecipe(<liquid:lava> * 5, <minecraft:diamond> % 1, <liquid:water> * 100, 50)；
 ```
 
-### Adding a Potion Recipe
+### 添加药水配方
 
-Adds a recipe to be used with the Alchemical Retort Augmentation
+添加一种配方与Alchemical Retort 增强一起使用
 
-`Refinery.addRecipePotion(output, input, energy);`
+`Refinery.addRecipepPotion(output, input, energy)；`
 
-- `output` <[ILiquidStack](/Vanilla/Liquids/ILiquidStack)>
+- `输出` <[ILiquidStack](/Vanilla/Liquids/ILiquidStack)>
 - `input` <[ILiquidStack](/Vanilla/Liquids/ILiquidStack)>
-- `energy` &lt;int> The total energy cost
+- `能源` &lt;int> 能源总成本
 
 ```zenscript
-import mods.thermalexpansion.Refinery;
+导入 mods.thermalext.Refinery;
 
-Refinery.addRecipePotion(<liquid:potion>.withTag({Potion: "minecraft:mundane"}) * 500, <liquid:potion>.withTag({Potion: "cofhcore:leaping4"}) * 100, 100);
+Refinery.addRecipepPotion(<liquid:potion>.withTag({Potion: "minecraft:mundane"}) * 500, <liquid:potion>.withTag({Potion: "cofhcore:leaping4"}) * 100, 100);
 ```
 
-## Removing a Recipe
+## 删除配方
 
-`Refinery.removeRecipe(input);`
+`Refinery.removeRecipe(input)；`
 
 - `input` <[ILiquidStack](/Vanilla/Liquids/ILiquidStack)>
 
 ```zenscript
-import mods.thermalexpansion.Refinery;
+导入 mods.thermalext.Refinery;
 
 Refinery.removeRecipe(<liquid:resin>);
 ```
 
-### Removing a Potion Recipe
+### 移除药水配方
 
-`Refinery.removeRecipePotion(input);`
+`Refinery.removeRecipepPotion(input)；`
 
 - `input` <[ILiquidStack](/Vanilla/Liquids/ILiquidStack)>
 
 ```zenscript
-import mods.thermalexpansion.Refinery;
+导入 mods.thermalext.Refinery;
 
-Refinery.removeRecipePotion(<liquid:potion_lingering>.withTag({Potion: "cofhcore:healing3"}));
+Refinery.removeRecipepPotion(<liquid:potion_lingering>.withTag({Potion: "cofhcore:healing3"});
 ```

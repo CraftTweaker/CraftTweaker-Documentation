@@ -1,48 +1,48 @@
-# Item Registry
+# アイテムレジストリ
 
-## Package
+## パッケージ
 ```zenscript
 // Imports ItemRegistry methods into your script
-import mods.terrafirmacraft.ItemRegistry;
+import mods.terrafirmacraft.ItemRegistry;アイテムレジストリ;
 ```
 
-## Register Item Size
-- Register item size and weight. This changes how much a stack can hold.
-- Sizes [TINY, VERY_SMALL, SMALL, NORMAL, LARGE, VERY_LARGE , HUGE]
-- Weights [VERY_LIGHT, LIGHT, MEDIUM, HEAVY, VERY_HEAVY]
+## アイテムサイズを登録
+- アイテムのサイズと重量を登録する これはスタックの保持量を変更します。
+- サイズ [TINY, VERY_SMALL, SMALL, NORMAL, LARGE, VERY_LARGE , HUGE]
+- ウエイト[VERY_LIGHT, LIGHT, MEDIUM, HEAVY, VERY_HEAVY]
 ```zenscript
 ItemRegistry.registerItemSize(IIngredient input, String size, String weight);
 ```
 
-## Register Item Heat
-- Register item heat capability and if this item is forgeable (eg: can be used in anvil).
-- Heat capacity determines how fast an item cools down/heat up. Wrought Iron is 0.35.
-- Melt temperature is at which temperature the item is melt. Wrought Iron is 1535 Brilliant White while Bronze is 950 Orange. For a complete reference, check [Heating Temperatures](/Mods/Terrafirmacraft/HeatingTemperatures)
+## アイテム熱を登録
+- アイテムの熱能力を登録し、このアイテムが鍛造可能な場合（例：anvilで使用可能）。
+- 熱容量は、アイテムがどの程度の速さで冷却/加熱するかを決定します。 鍛錬鉄は0.35です。
+- 溶けた温度は、アイテムが溶けている温度です。 鍛錬鉄は1535ブリリアントホワイト、ブロンズは950オレンジです。 完全な参照については、 [加熱温度](/Mods/Terrafirmacraft/HeatingTemperatures) を参照してください。
 ```zenscript
-ItemRegistry.registerItemHeat(IIngredient input, float heatCapacity, float meltTemp, bool forgeable);
+ItemRegistry.registerItemHeat(IIngredient入力, float heat Capacity, float meltTemp, bool forgeable);
 ```
 
-## Register Item Metal
-- Register item as a metal item. Note that this automatically adds heating and forging capability. If canMelt is false this item won't bear the output directly (like iron ore needs bloomery/blast furnace)
-- Registered metal ingot items aren't automatically registered as a valid input for tools (eg: Steel ingot from other mods registered by registerMetalItem method won't be automatically workable to TFC steel pickaxe head)
+## アイテムメタルを登録する
+- アイテムをメタルアイテムとして登録します。 これは自動的に加熱と鍛造機能を追加することに注意してください。 canMeltがfalseの場合、このアイテムは直接出力を負いません（鉄鉱石にはブルーメリー/溶鉱炉が必要です）
+- 登録済みの金属インゴットアイテムは、ツールの有効な入力として自動的に登録されていません（例：registeredによって登録された他のMODからのスチールインゴット）MetalItemメソッドはTFC鋼ツルハシ頭に自動的には実行できません）
 ```zenscript
-ItemRegistry.registerItemMetal(IIngredient input, String metal, int units, bool canMelt);
+ItemRegistry.registerItemMetal(IIngredient input, String metal, int unit, bool canMelt);
 ```
 
-## Register Food
-- Register item food stats (Does not work on TFC Foods), This takes priority over existing values. Setting Decay to 0 stops decay from happening.
+## 食料を登録する
+- 食品統計の登録 (TFC食品では動作しません) これは、既存の値よりも優先されます。 ディケイを0に設定すると、崩壊が止まります。
 ```zenscript
-ItemRegistry.registerFood(IIngredient input, int hunger, float water, float saturation, float decay, float grain, float veg, float fruit, float meat, float dairy);
+ItemRegistry.registerFood(IIngredient input, int hunger, float water, float saturation, float decay, float grain, float vegeline, float fruit, float meit, float dairy);
 ```
 
-## Register Armor
-- Register armor stats
+## アーマーを登録する
+- アーマー統計を登録する
 ```zenscript
-ItemRegistry.registerArmor(IIngredient input, float crushingModifier, float piercingModifier, float slashingModifier);
+ItemRegistry.registerArmor(IIngredient入力, float crushingModifier, float parisingModifier, float slashingModifier);
 ```
 
-## Register Fuel
-- Register item as a fuel for fire pit, forge or bloomery
+## 燃料を登録する
+- アイテムを火ピット、鍛造、咲くための燃料として登録する
 ```zenscript
-ItemRegistry.registerFuel(IItemStack itemStack, int burnTicks, float temperature, bool forgeFuel, bool bloomeryFuel);
+ItemRegistry.registerFuel(IItemStack itemStack, int burnTicks, float 温度, bool forgeFuel, bool bloomeryFuel);
 ```

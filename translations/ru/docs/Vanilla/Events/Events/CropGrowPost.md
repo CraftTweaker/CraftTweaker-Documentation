@@ -1,6 +1,6 @@
-# CropGrowPostEvent
+# Пост-событие роста
 
-The CropGrowPost Event is fired once a crop block has **successfully** grown. It cannot be canceled, and merely serves as a notification of crop growth.
+The CropGrowPost Event is fired once a crop block has **successfully** grown. Она не может быть отменена и лишь служит уведомлением о росте культуры.
 
 ## Класс события
 You will need to cast the event in the function header as this class:  
@@ -8,7 +8,7 @@ You will need to cast the event in the function header as this class:
 You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
 
 ## Наследование от интерфейсов событий
-CropGrowPost Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+CropGrowPost События реализуют следующие интерфейсы и также могут вызвать все их методы/getters/setters:
 
 - [IBlockEvent](/Vanilla/Events/Events/IBlockEvent/)
 
@@ -19,4 +19,4 @@ CropGrowPost Events implement the following interfaces and are able to call all 
 | ZenGetter            | ZenSetter | Тип                                         |
 | -------------------- | --------- | ------------------------------------------- |
 | `originalBlockState` |           | [IBlockState](/Vanilla/Blocks/IBlockState/) |
-| `originalBlock`      |           | [IBlock](/Vanilla/Blocks/IBlock/)           |
+| `оригинальный блок`  |           | [БИБлок](/Vanilla/Blocks/IBlock/)           |

@@ -1,6 +1,6 @@
-# PlayerDeathDrops
+# ПлеерСмертельная Смерть
 
-The PlayerDeathDrops Event is fired whenever a player's items fall to the ground due to the player's death.
+Событие PlayerDeathDrops запускается, когда предметы игрока попадут на землю из-за смерти игрока.
 
 ## Класс события
 
@@ -10,7 +10,7 @@ You can, of course, also [import](/AdvancedFunctions/Import/) the class before a
 
 ## Наследование от интерфейсов событий
 
-PlayerDeathDrops Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+PlayerDeathDrops реализует следующие интерфейсы и способно вызвать все их методы/геттеры/сеттеры:
 
 - [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
 
@@ -18,18 +18,18 @@ PlayerDeathDrops Events implement the following interfaces and are able to call 
 
 Следующая информация может быть получена от события:
 
-| Геттер         | Возвращаемый тип                                            |
-| -------------- | ----------------------------------------------------------- |
-| `player`       | [IPlayer](/Vanilla/Players/IPlayer/)                        |
-| `items`        | [`List<IEntityItem>`](/Vanilla/Entities/IEntityItem/) |
-| `damageSource` | [IDamageSource](/Vanilla/Damage/IDamageSource/)             |
+| Геттер                 | Возвращаемый тип                                              |
+| ---------------------- | ------------------------------------------------------------- |
+| `player`               | [IPlayer](/Vanilla/Players/IPlayer/)                          |
+| `элементы`             | [`Список<IEntityItem>`](/Vanilla/Entities/IEntityItem/) |
+| `источник повреждения` | [IDamageSource](/Vanilla/Damage/IDamageSource/)               |
 
-## Modifying the item drops
+## Изменение выпадения предмета
 
-You can either add to the droplist or completely substitute it with a new one:
+Вы можете либо добавить в дроплист, либо полностью заменить его новым:
 
 ```zenscript
-event.items = //reference to IEntityItem list.
+event.items = //ссылка на список IEntityItem .
 
 //event.addItem(IItemStack item);
 event.addItem(<minecraft:iron_ingot>);

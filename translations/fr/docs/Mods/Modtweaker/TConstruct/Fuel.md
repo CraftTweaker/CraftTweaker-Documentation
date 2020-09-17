@@ -1,25 +1,25 @@
-# Fuel
+# Carburant
 
-The `Fuel` package allows you to add Smeltery fuel fluids.
+Le pack `Carburant` vous permet d'ajouter des fluides combustibles de la fonderie.
 
-## Calling
+## Appel en cours
 
-You can call the Alloy package using `mods.tconstruct.Fuel`
+Vous pouvez appeler le package Alliage en utilisant `mods.tconstruct.Fuel`
 
-## Add Fuel Recipes
+## Ajouter des recettes de carburant
 
 ```zenscript
-//mods.tconstruct.Fuel.registerFuel(ILiquidStack fuel, int duration);
+//mods.tconstruct.Fuel.registerFuel(ILiquidStack carburant, durée int );
 mods.tconstruct.Fuel.registerFuel(<liquid:water> * 2, 300);
 ```
 
-Parameters:
+Paramètres:
 
-- [ILiquidStack](/Vanilla/Liquids/ILiquidStack/) fuel → The fluid. Amount is the minimal increment that is consumed at once.
-- int duration → How many ticks the consumtpion of the fluidStack lasts.
+- [ILiquidStack](/Vanilla/Liquids/ILiquidStack/) combustible → Le fluide. La quantité est l'incrément minimal qui est consommé en même temps.
+- int duration → Combien de ticks dure le consumtpion de la fluidStack.
 
-### Consider this:
+### Considérez ceci:
 
-- The [ILiquidStack's](/Vanilla/Liquids/ILiquidStack/) amount is the minimal increment that is consumed at once (e.g. the smeltery only consumes 2 mB at once).
-- The duration is how many ticks one fluid stack lasts.
-- You cannot set the temperature the fluid is going to have in the smeltery. Use an [ILiquidDefinition's](/Vanilla/Liquids/ILiquidDefinition/) ZenSetter to change the fluid's temperature beforehand!
+- La quantité de [ILiquidStack](/Vanilla/Liquids/ILiquidStack/) est l'incrément minimal qui est consommé en même temps (par exemple, la fonderie ne consomme que 2 mB à la fois).
+- La durée est combien de ticks dure une pile de fluides.
+- Vous ne pouvez pas régler la température que le liquide va avoir dans la fonderie. Utilisez un [ZenSetter](/Vanilla/Liquids/ILiquidDefinition/) d'ILiquidDefinition pour changer la température du fluide avant !

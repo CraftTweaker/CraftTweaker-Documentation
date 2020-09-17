@@ -1,102 +1,102 @@
-# Fission
+# Rozszczepienie
 
-## Fission Moderator
+## Moderator rozszczepienia
 
-### Importing the Package
+### Importowanie pakietu
 `mods.nuclearcraft.FissionModerator`
 
-### Adding Recipes
+### Dodawanie przepisów
 ```zenscript
-mods.nuclearcraft.FissionModerator.add(IIngredient block, int fluxFactor, double efficiency);
+mods.nuclearcraft.FissionModerator.add(Blok składników (int fluxFactor, podwójna wydajność);
 ```
 
-### Removing Recipes
+### Usuwanie przepisów
 ```zenscript
-mods.nuclearcraft.FissionModerator.remove(IIngredient block);
+mods.nuclearcraft.FissionModerator.remove(Blok Składników);
 mods.nuclearcraft.FissionModerator.removeAll();
 ```
 
-## Fission Reflector
+## Reflektor rozrywki
 
-### Importing the Package
-`mods.nuclearcraft.FissionReflector`
+### Importowanie pakietu
+`mods.nuclearcraft.Reflektor rozgrywek`
 
-### Adding Recipes
+### Dodawanie przepisów
 ```zenscript
-mods.nuclearcraft.FissionReflector.add(IIngredient block, double efficiency, double reflectivity);
+mods.nuclearcraft.Rozszczep rozszczepienia.add(blok składnika, podwójna wydajność, podwójna odbijanie);
 ```
 
-### Removing Recipes
+### Usuwanie przepisów
 ```zenscript
-mods.nuclearcraft.FissionReflector.remove(IIngredient block);
-mods.nuclearcraft.FissionReflector.removeAll();
+mods.nuclearcraft.FissionReflector.remove(Blok Składników);
+mods.nuclearcraft.»Technologia«, zgodnie z uwagą ogólną do technologii, służąca do »rozwoju«, »produkcji« lub »użytkowania« sprzętu lub »oprogramowania«.
 ```
 
-## Fission Irradiator
+## Irgrzejnik rozszczepienia
 
-### Importing the Package
-`mods.nuclearcraft.FissionIrradiator`
+### Importowanie pakietu
+`mods.nuclearcraft.Podgrzewacznik rozruchu`
 
-### Adding Recipes
+### Dodawanie przepisów
 ```zenscript
-mods.nuclearcraft.FissionIrradiator.add(IIngredient itemInput, IIngredient itemOutput, int fluxRequired, double heatPerFlux, double efficiency, double radiation);
+mods.nuclearcraft.Podgrzewacza FissionIrradiator.add(ISkładnik itemInput, ISkładnik wytworzony, fluxRequired, podwójny przepływ ciepła, podwójna sprawność, podwójne promieniowanie);
 ```
 
-### Removing Recipes
+### Usuwanie przepisów
 ```zenscript
-mods.nuclearcraft.FissionIrradiator.removeRecipeWithInput(IIngredient itemInput);
+mods.nuclearcraft.FissionIrradiator.removeRecipeWithInput(ISkładnik itemInput);
 mods.nuclearcraft.FissionIrradiator.removeRecipeWithOutput(IIngredient itemOutput);
-mods.nuclearcraft.FissionIrradiator.removeAllRecipes();
+mods.nuclearcraft.a. „oprogramowanie” specjalnie zaprojektowane lub zmodyfikowane do „rozwoju”, „produkcji” lub „użytkowania” sprzętu wyszczególnionego w pozycjach 2B001, 2B006, 2B009, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109,
 ```
 
-## Pebble Bed Fission
+## Rozszczepienie Pebble Łóżka
 
-### Importing the Package
-`mods.nuclearcraft.PebbleFission`
+### Importowanie pakietu
+`mods.nuclearcraft.Rozszczepienie Pebblesa`
 
-### Adding Recipes
+### Dodawanie przepisów
 ```zenscript
-mods.nuclearcraft.PebbleFission.addRecipe(IIngredient itemInput, IIngredient itemOutput, int time, int heat, double efficiency, int criticality, boolean selfPriming, double radiation);
+mods.nuclearcraft.[PLACEHOLDER] PebbleFission.addRecipe(Ingredient itemInput, IIngredient itemOutput, time int Heat, double efficiency, int criticity, boolean self-Priming, podwójne promieniowanie);
 ```
 
-### Removing Recipes
+### Usuwanie przepisów
 ```zenscript
-mods.nuclearcraft.PebbleFission.removeRecipeWithInput(IIngredient itemInput);
+mods.nuclearcraft.PebbleFission.removeRecipeWithInput(ISkładnik itemInput);
 mods.nuclearcraft.PebbleFission.removeRecipeWithOutput(IIngredient itemOutput);
 mods.nuclearcraft.PebbleFission.removeAllRecipes();
 ```
 
-## Solid Fuel Fission
+## Rozszczepienie na paliwo stałe
 
-### Importing the Package
-`mods.nuclearcraft.SolidFission`
+### Importowanie pakietu
+`mods.nuclearcraft.Rozszczepienie na stałe`
 
-### Adding Recipes
+### Dodawanie przepisów
 ```zenscript
-mods.nuclearcraft.SolidFission.addRecipe(IIngredient itemInput, IIngredient itemOutput, int time, int heat, double efficiency, int criticality, boolean selfPriming, double radiation);
+mods.nuclearcraft.SolidFission.addRecipe(Przedmiot Składnikowy, ISkładnik Produkt, Czas Gotowości, Ciepło, Podwójna wydajność, utylizacja krytyczna, samodzielne podgrzewanie, podwójne promieniowanie);
 
 ```
 
-### Removing Recipes
+### Usuwanie przepisów
 ```zenscript
-mods.nuclearcraft.SolidFission.removeRecipeWithInput(IIngredient itemInput);
+mods.nuclearcraft.SolidFission.removeRecipeWithInput(ISkładnik itemInput);
 mods.nuclearcraft.SolidFission.removeRecipeWithOutput(IIngredient itemOutput);
 mods.nuclearcraft.SolidFission.removeAllRecipes();
 ```
 
-## Fission Heating
+## Podgrzewanie rozrywki
 
-### Importing the Package
-`mods.nuclearcraft.FissionHeating`
+### Importowanie pakietu
+`mods.nuclearcraft.Ogrzewanie rozruchowe`
 
-### Adding Recipes
+### Dodawanie przepisów
 ```zenscript
-mods.nuclearcraft.FissionHeating.addRecipe(ILiquidStack fluidInput, ILiquidStack fluidOutput, int heatPerInputMB);
+mods.nuclearcraft.[PLACEHOLDER] FissionHeating.addRecipe(ILiquidStack fluidInput, ILiquidStack LiquidStack fluidOutput, int heatPerInputMB);
 ```
 
-### Removing Recipes
+### Usuwanie przepisów
 ```zenscript
 mods.nuclearcraft.FissionHeating.removeRecipeWithInput(ILiquidStack fluidInput);
-mods.nuclearcraft.FissionHeating.removeRecipeWithOutput(ILiquidStack fluidOutput);
-mods.nuclearcraft.FissionHeating.removeAllRecipes();
+mods.nuclearcraft.[PLACEHOLDER] FissionHeating.removeRecipeWithOutput(ILiquidStack fluidOutput);
+mods.nuclearcraft.Podgrzewanie biologiczne.removeAllRecipes();
 ```

@@ -1,25 +1,25 @@
-# Using IItemDefinitions to save a lot of time when referring meta-items
+# Использование IItemDefinitions для экономии времени при обращении к мета-элементам
 
 ## Problem
 
-Let's say we want to remove the recipes of some specific colors of wool.  
-White wool has the metadata 0, all colors range from meta 1 to meta 15, so there are 16 in total.
+Допустим, мы хотим удалить рецепты некоторых конкретных цветов шерсти.  
+Белая шерсть имеет метаданные 0, все цветовые диапазоны от мета 1 до мета 15, поэтому в общей сложности существует 16.
 
-We want to remove the wools with meta 3 to 12. What do we do?  
-We can't just remove all of them (in other words, use `<minecraft:wool:*>`), but we also don't want to write 10 times the same thing.  
-While in this example this would totally work, in large scale this becomes pretty annoying!
+Мы хотим удалить шерсти с мета 3 до 12. Что мы делаем?  
+Мы не можем просто удалить все из них (иными словами, используйте `<minecraft:wool:*>`), но мы также не хотим 10 раз писать то же самое.  
+В этом примере это полностью работает, в большом масштабе это становится довольно раздражающим!
 
 ## Что мы знаем/должны знать
 
-- recipes.remove requires an [IIngredient](/Vanilla/Variable_Types/IIngredient/) Object
-- An [IItemStack](/Vanilla/Items/IItemStack/) can be used as [IIngredient](/Vanilla/Variable_Types/IIngredient/) as [IItemstack](/Vanilla/Items/IItemStack/) extends [IIngredient](/Vanilla/Variable_Types/IIngredient/)
-- We can use [IItemDefinitions](/Vanilla/Items/IItemDefinition/) to create [IItemStacks](/Vanilla/Items/IItemStack/)
+- recipes.remove требует [IIngredient](/Vanilla/Variable_Types/IIngredient/) объект
+- [IItemStack](/Vanilla/Items/IItemStack/) может использоваться как [Ingredient](/Vanilla/Variable_Types/IIngredient/) как [IItemstack](/Vanilla/Items/IItemStack/) расширяет [ингредиенты](/Vanilla/Variable_Types/IIngredient/)
+- Мы можем использовать [IItemDefinitions](/Vanilla/Items/IItemDefinition/) для создания [IItemStacks](/Vanilla/Items/IItemStack/)
 
 ## Решение
 
-We use [IItemDefinitions](/Vanilla/Items/IItemDefinition/) and an Integer Range and iterate through latter.  
-If we can't use an int range we can also use a number array, but that would require you to type in all required numbers.  
-You can also use this to Except some items from being used.
+Мы используем [IItemDefinitions](/Vanilla/Items/IItemDefinition/) и целочисленный диапазон и итерацию через последний.  
+Если мы не можем использовать int диапазон, мы также можем использовать массив чисел, но это потребует от вас ввести все необходимые цифры.  
+Вы также можете использовать это для исключения использования некоторых предметов.
 
 ```zenscript
 val itemDef = <minecraft:wool>.definition;

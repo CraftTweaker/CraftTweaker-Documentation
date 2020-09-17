@@ -1,17 +1,17 @@
-# Industrial Grinder
+# 工业研磨机
 
-## Importing the Package
+## 导入软件包
 `mods.techreborn.industrialGrinder`
 
-## Adding Recipes
+## 添加配方
 ```zenscript
-mods.techreborn.industrialGrinder.addRecipe(IItemStack output1, IItemStack output2, IItemStack output3, IItemStack output4, IIngredient input1, IIngredient input2, int ticktime, int euTick);
-mods.techreborn.industrialGrinder.addRecipe(IItemStack output1, IItemStack output2, IItemStack output3, IItemStack output4, IIngredient input1, IIngredient input2, ILiquidStack fluid, int ticktime, int euTick);
+mods.techreborn.inder.addRecipe(IItemStack output1，IItemStack output2，IItemStack output3，IItemStack output4，IIngredient input1，Ingredient input2，int ticktime，int euTick)；
+mods. echreborn.inder.addRecipe(IItemStack outputt1，IItemStack output2，IItemStack output3，IItemStack output4，IIngredient input1，Igredient input2，ILiquidStack fluid，int ticktime，int euTick)；
 ```
 
-## Removing Recipes
+## 删除配方
 ```zenscript
-mods.techreborn.industrialGrinder.removeInputRecipe(IIngredient ingredient);
-mods.techreborn.industrialGrinder.removeRecipe(IItemStack output);
+mods.techreborn.industrialGrinder.removeInputRecipe(IIngredient 成分)；
+mods.techreborn.inder.removeRecipe(IItemStack 输出)；
 mods.techreborn.industrialGrinder.removeAll();
 ```

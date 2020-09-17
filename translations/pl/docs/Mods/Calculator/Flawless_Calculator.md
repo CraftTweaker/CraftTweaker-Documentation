@@ -1,20 +1,20 @@
-# Flawless Calculator
+# Kalkulator bez usterek
 
-## Package
+## Pakiet
 ```zenscript
-import mods.calculator.flawless;
+importuj mods.calculator.wlawless;
 ```
 
-## Methods
+## Metody
 
-- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input[1-4]** The inputs.
-- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) output** The output.
-## Addition
+- **[Składnik](/Vanilla/Variable_Types/IIngredient/) dane wejściowe[1-4]**
+- **[Składnik](/Vanilla/Variable_Types/IIngredient/) wyjście** Wyjście </strong>
+## Dodanie
 ```zenscript
-flawless.addRecipe(IIngredient input1, IIngredient input2, IIngredient input3, IIngredient input4, IIngredient output);
+bezbłędne.addRecipe(Input1, ISkładniki2, ISkładniki3, ISkładniki4, ISkładniki4, ISkładniki);
 ```
 
-## Removal
+## Usuwanie
 ```zenscript
-flawless.removeRecipe(IIngredient output);
+bezbłędne.removeRecipe(dane wyjściowe składników);
 ```

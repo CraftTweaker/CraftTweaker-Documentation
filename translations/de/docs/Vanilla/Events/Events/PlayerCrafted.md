@@ -1,16 +1,16 @@
-# PlayerCrafted
+# Spieler hergestellt
 
-The PlayerCrafted Event is fired whenever a player crafts something.
+Das SpielerCrafted Event wird abgefeuert, wenn ein Spieler etwas herstellt.
 
 ## Event-Klasse
 
-You will need to cast the event in the function header as this class:  
-`crafttweaker.event.PlayerCraftedEvent`  
-You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
+Du musst das Ereignis als diese Klasse in den Funktionskopf verschieben:  
+`crafttweaker.event. layerCraftedEvent`  
+Sie können natürlich auch [die Klasse vor](/AdvancedFunctions/Import/) importieren und dann diesen Namen verwenden.
 
 ## Erweiterte Event-Schnittellen
 
-PlayerCrafted Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+PlayerCrafted Events implementieren die folgenden Schnittstellen und können auch alle ihre Methoden/Getters/Setter aufrufen:
 
 - [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
 
@@ -18,8 +18,8 @@ PlayerCrafted Events implement the following interfaces and are able to call all
 
 Die folgenden Informationen lassen sich von diesem Event (Ereignis) abrufen:
 
-| ZenGetter   | Rückgabetyp                                                         |
-| ----------- | ------------------------------------------------------------------- |
-| `player`    | [IPlayer](/Vanilla/Players/IPlayer/)                                |
-| `output`    | [IItemStack](/Vanilla/Items/IItemStack/)                            |
-| `inventory` | [ICraftingInventory](/Vanilla/Recipes/Crafting/ICraftingInventory/) |
+| ZenGetter  | Rückgabetyp                                                         |
+| ---------- | ------------------------------------------------------------------- |
+| `player`   | [IPlayer](/Vanilla/Players/IPlayer/)                                |
+| `ausgeben` | [IItemStack](/Vanilla/Items/IItemStack/)                            |
+| `inventar` | [ICraftingInventory](/Vanilla/Recipes/Crafting/ICraftingInventory/) |

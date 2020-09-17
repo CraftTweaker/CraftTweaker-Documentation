@@ -1,27 +1,27 @@
-# PlayerSleepInBed
+# SleepInBed
 
-The PlayerSleepInBed Event is fired whenever a player sleeps.
+Событие SleepInBed запускается, когда игрок спит.
 
-## Event Class
+## Класс события
 
 You will need to cast the event in the function header as this class:  
 `crafttweaker.event.PlayerSleepInBedEvent`  
 You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
 
-## Event interface extensions
+## Наследование от интерфейсов событий
 
-PlayerSleepInBed Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+PlayerSleepInBed Events реализуют следующие интерфейсы и также могут вызвать все методы/getters/setters:
 
 - [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
-- [IEventPositionable](/Vanilla/Events/Events/IEventPositionable/)
+- [Событие доступно](/Vanilla/Events/Events/IEventPositionable/)
 
 ## ZenGetters
 
-The following information can be retrieved from the event:
+Следующая информация может быть получена от события:
 
-| ZenGetter | Return Type                          |
-| --------- | ------------------------------------ |
-| `x`       | int                                  |
-| `y`       | int                                  |
-| `z`       | int                                  |
-| `player`  | [IPlayer](/Vanilla/Players/IPlayer/) |
+| Геттеры  | Возвращаемый тип                     |
+| -------- | ------------------------------------ |
+| `х`      | int                                  |
+| `у`      | int                                  |
+| `z`      | int                                  |
+| `player` | [IPlayer](/Vanilla/Players/IPlayer/) |

@@ -1,19 +1,19 @@
-# Tiered Tooltips
+# Gepunktete Tooltips
 
-This mod is a vanity addon to [ItemStages](https://minecraft.curseforge.com/projects/item-stages). Tiered Tooltips uses the new RenderTooltipEvent in Forge along with some clever logic to allow the end-user to change the tooltip colour of an item, based on which stage said item is restricted to. More info on the mod can be found [here](https://minecraft.curseforge.com/projects/tiered-tooltips).
+Dieser Mod ist ein Vanity-Addon für [Artikel](https://minecraft.curseforge.com/projects/item-stages). Tiered Tooltips verwenden das neue RenderTooltipEvent in Schmiede zusammen mit einer cleveren Logik, um es dem Endbenutzer zu ermöglichen, die Farbe des Tooltips eines Gegenstands zu ändern, basierend darauf, auf welcher Etappe der Artikel beschränkt ist. Weitere Informationen zum Mod findest du [hier](https://minecraft.curseforge.com/projects/tiered-tooltips).
 
-### 1.0.4 and later
+### 1.0.4 und höher
 
 ```zenscript
 //mods.tieredtooltips.colorStage(String stageName, String background, String borderStart, String borderEnd);
-mods.tieredtooltips.colorStage("one", "2969d1", "cccccc", "000000"); // RGB Hex Values
-mods.tieredtooltips.colorStage("two", "7fbf8200", "7fc43700", "32752202"); // ARGB Hex Values
+mods.tieredtooltips. olorStage("one", "2969d1", "cccccc", "0000"); // RGB Hex Werte
+mods.tieredtooltips.colorStage("two", "7fbf8200", "7fc43700", "32752202"); // ARGB Hex Werte
 ```
 
-### 1.0.2 and earlier
+### 1.0.2 und früher
 
 ```zenscript
 //mods.TieredTooltips.colourStage(String stageName, String background, String borderStart, String borderEnd);
-mods.TieredTooltips.colourStage("one", "2969d1", "cccccc", "000000"); // RGB Hex Values
-mods.TieredTooltips.colourStage("two", "7fbf8200", "7fc43700", "32752202"); // ARGB Hex Values
+mods.TieredTooltips. olourStage("one", "2969d1", "cccccc", "0000"); // RGB Hex Werte
+mods.TieredTooltips.colourStage("two", "7fbf8200", "7fc43700", "32752202"); // ARGB Hex Werte
 ```

@@ -1,16 +1,16 @@
-# PlayerSleepInBed
+# Spieler SleepInBett
 
-The PlayerSleepInBed Event is fired whenever a player sleeps.
+Das Spieler-SleepInBed Event wird gefeuert, wenn ein Spieler schläft.
 
 ## Event-Klasse
 
-You will need to cast the event in the function header as this class:  
-`crafttweaker.event.PlayerSleepInBedEvent`  
-You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
+Du musst das Ereignis als diese Klasse in den Funktionskopf verschieben:  
+`crafttweaker.event. layerSleepInBedEvent`  
+Sie können natürlich auch [die Klasse vor](/AdvancedFunctions/Import/) importieren und dann diesen Namen verwenden.
 
 ## Erweiterte Event-Schnittellen
 
-PlayerSleepInBed Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+Spieler SleepInBed Events implementieren die folgenden Schnittstellen und können alle ihre Methoden/Getter/Setter auch aufrufen:
 
 - [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
 - [IEventPositionable](/Vanilla/Events/Events/IEventPositionable/)

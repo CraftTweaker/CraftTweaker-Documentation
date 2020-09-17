@@ -1,18 +1,18 @@
 # IEntityItem
 
-Represents an item stack in the world.
+Stellt einen Gegenstandsstapel in der Welt dar.
 
 ## Dieses Paket importieren
 
-It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
-`import crafttweaker.entity.IEntityItem;`
+Möglicherweise ist es erforderlich, dass Sie das Paket importieren, wenn Sie irgendwelche Probleme haben (z.B. [Array](/AdvancedFunctions/Arrays_and_Loops/)), also besser sicher sein als bedauern und fügen Sie den Import.  
+`importiere crafttweaker.entity.IEntityItem;`
 
-## Extending [IEntity](/Vanilla/Entities/IEntity/)
+## [IEntität wird erweitert](/Vanilla/Entities/IEntity/)
 
-IEntityItem extends [IEntity](/Vanilla/Entities/IEntity/). That means all functions available to [IEntities](/Vanilla/Entities/IEntity/) also are available to IEntityItem.
+IEntityItem extends [IEntity](/Vanilla/Entities/IEntity/). Das bedeutet, dass alle Funktionen, die [IEntities](/Vanilla/Entities/IEntity/) zur Verfügung stehen, auch für IEntityItem verfügbar sind.
 
 ## ZenGetter
 
 | ZenGetter | Rückgabetyp                              |
 | --------- | ---------------------------------------- |
-| item      | [IItemStack](/Vanilla/Items/IItemStack/) |
+| eintrag   | [IItemStack](/Vanilla/Items/IItemStack/) |

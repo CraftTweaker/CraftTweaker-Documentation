@@ -2,20 +2,20 @@
 
 ## 所属包名
 ```zenscript
-import mods.calculator.algorithmSeparator;
+导入 mods.calgorithmSeparator;
 ```
 
 ## 使用方式
 
-- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input** The input.
-- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) output[1-2]** The outputs.
+- **[Ingredient](/Vanilla/Variable_Types/IIngredient/) 输入** 输入.
+- **[Ingredient](/Vanilla/Variable_Types/IIngredient/) 输出[1-2]** 输出.
 
 ## 添加配方
 ```zenscript
-algorithmSeparator.addRecipe(IIngredient input, IIngredient output1, IIngredient output2);
+算法分隔符.addRecipe(IIngredient input, IIngredient output1, IIngredient output2)；
 ```
 
 ## 删除配方
 ```zenscript
-algorithmSeparator.removeRecipe(IIngredient output1, IIngredient output2);
+算法分隔符.removeRecipe(IIngredient output1, IIngredient output2)；
 ```

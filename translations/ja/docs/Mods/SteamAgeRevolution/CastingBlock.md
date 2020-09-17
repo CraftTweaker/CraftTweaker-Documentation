@@ -1,24 +1,24 @@
-# Casting Block
+# キャストブロック
 
-The Casting Block is a machine that converts an input fluid into an output item.
+鋳造ブロックは、入力流体を出力項目に変換する機械です。
 
-## Package
+## パッケージ
 `mods.steamagerevolution.CastingBlock`
 
-## Methods
+## メソッド
 
-- **[IItemStack](/Vanilla/Items/IItemStack/) output** The result of the recipe.
-- **[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) input** The input of the recipe.
-- **int craftTime** Crafting time for machine to process
+- **[IItemStack](/Vanilla/Items/IItemStack/) 出力** レシピの結果。
+- **[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) input** レシピの入力。
+- **int craftTime** マシンの加工時間
 
-## Addition
+## 加算
 
 ```zenscript
 mods.steamagerevolution.CastingBlock.addRecipe(ILiquidStack input, IItemStack output, int craftTime);
 mods.steamagerevolution.CastingBlock.addRecipe(<liquid:lava>*1000, <minecraft:obsidian>, 200);
 ```
 
-## Removal
+## 削除
 
 ```zenscript
 mods.steamagerevolution.CastingBlock.removeRecipe(IItemStack output);

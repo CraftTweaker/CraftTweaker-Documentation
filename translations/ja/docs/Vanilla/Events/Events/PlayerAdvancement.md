@@ -1,32 +1,33 @@
 # PlayerAdvancement
 
-The PlayerAdvancement Event is fired whenever a player is awarded an Advancement.
+プレイヤーがアドバンスを獲得するたびに、PlayerAdvancement イベントが発生します。
 
-## Event Class
+## イベントクラス
 
-You will need to cast the event in the function header as this class:  
-`crafttweaker.event.PlayerAdvancementEvent`  
-You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
+関数ヘッダーのイベントをこのクラスとしてキャストする必要があります:  
+`crafttweaker.event. layerAdvancementEvent <br /> 
+ <code>`  
+もちろん、 [インポート](/AdvancedFunctions/Import/) 前にそのクラスをインポートして、その名前を使用することもできます。
 
-## Event interface extensions
+## イベントインターフェースの拡張
 
-PlayerAdvancement Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+PlayerAdvancement Eventsは以下のインターフェイスを実装し、それらのメソッド/getters/setters/settersをすべて呼び出すことができます。
 
 - [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
 
 ## ZenGetters
 
-The following information can be retrieved from the event:
+イベントから次の情報を取得できます。
 
-| ZenGetter | 戻り値    |
-| --------- | ------ |
-| `id`      | string |
+| ZenGetter | 戻り値 |
+| --------- | --- |
+| `id`      | 文字列 |
 
 ## Id
 
-Apart from the functionality the PlayerEvent exposes you can get the advancement's ID as string.
+PlayerEvent の機能とは別に、進歩した ID を文字列として取得することができます。
 
-This can for example be a string like
+例えば、次のような文字列を指定できます
 
 ```zenscript
 "minecraft:story/mine_diamond"

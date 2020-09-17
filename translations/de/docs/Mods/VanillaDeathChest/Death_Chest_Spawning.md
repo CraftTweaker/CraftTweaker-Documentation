@@ -1,33 +1,33 @@
-# Death Chest Spawning
+# Todestruhe Spawnen
 
 ## Dieses Paket importieren
 
 `import mods.vanilladeathchest.DeathChestSpawning;`
 
-## Chat message
+## Chat-Nachricht
 
 ```zenscript
 //DeathChestSpawning.setChatMessage(string stage, string message);
-DeathChestSpawning.setChatMessage("example_stage", "A chest appears at [%s, %s, %s]!");
+DeathChestSpawning.setChatMessage("example_stage", "Eine Truhe erscheint bei [%s, %s, %s]!");
 ```
 
-The string takes three arguments: the X, Y and Z coordinates of the death chest.
+Die Zeichenkette enthält drei Argumente: die Koordinaten X, Y und Z der Todeskiste.
 
-## Container display name
+## Container-Anzeigename
 
 ```zenscript
 //DeathChestSpawning.setContainerDisplayName(string stage, string name);
 DeathChestSpawning.setContainerDisplayName("example_stage", "Your Items");
 ```
 
-## Registry name regex
+## Registry-Name regex
 
 ```zenscript
 //DeathChestSpawning.setRegistryNameRegex(string stage, string regex);
 DeathChestSpawning.setRegistryNameRegex("example_stage", ".*dirt.*");
 ```
 
-## Use container in inventory
+## Container im Inventar verwenden
 
 ```zenscript
 //DeathChestSpawning.setUseContainerInInventory(string stage, bool flag);

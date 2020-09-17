@@ -1,21 +1,21 @@
-# Processing Chamber
+# 处理分庭
 
 ## 所属包名
 ```zenscript
-import mods.calculator.processingChamber;
+导入 mods.calculator.processingChamber;
 ```
 
 ## 使用方式
 
-- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input** The input.
-- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) output** The output.
+- **[Ingredient](/Vanilla/Variable_Types/IIngredient/) 输入** 输入.
+- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) 输出** 输出.
 
 ## 添加配方
 ```zenscript
-processingChamber.addRecipe(IIngredient input, IIngredient output);
+正在处理 Chamber.addRecipe(IIngredient 输入, IIngredient 输出);
 ```
 
-## Removal
+## 移除
 ```zenscript
-processingChamber.removeRecipe(IIngredient output);
+正在处理 Chamber.removeRecipe(IIngredient 输出)；
 ```

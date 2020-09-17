@@ -1,21 +1,21 @@
-# Crucible
+# 关键的
 
 ## 所属包名
 
-`mods.thermalexpansion.Crucible`
+`热插图卢布`
 
 ## 添加配方
 
 ```zenscript
-mods.thermalexpansion.Crucible.addRecipe(ILiquidStack output, IItemStack input, int energy);
+mods.thermalext.Crucible.addRecipe(ILiquidStack output, IItemStack input, int energy);
 
-mods.thermalexpansion.Crucible.addRecipe(<liquid:refined_oil>, <minecraft:diamond>, 50);
+mods.thermalext.Crucible.addRecipe(<liquid:refined_oil>, <minecraft:diamond>, 50);
 ```
 
 ## 删除配方
 
 ```zenscript
-mods.thermalexpansion.Crucible.removeRecipe(IItemStack input);
+mods.thermalext.crucible.removeRecipe(IItemStack 输入);
 
-mods.thermalexpansion.Crucible.removeRecipe(<minecraft:glowstone>);
+mods.thermalproplacement.crucible.removeRecipe(<minecraft:glowstone>);
 ```

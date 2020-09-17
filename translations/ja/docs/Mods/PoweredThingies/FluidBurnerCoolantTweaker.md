@@ -1,35 +1,35 @@
-# Powered Thingies :: Fluid Burner :: Coolant
+# パワードThingies :: Fluid Burner :: Coolant
 
-### Importing
+### インポート中
 
 ```zenscript
 import mods.poweredthingies.Tweaker.fluidBurnerCoolantTweaker as coolant;
 ```
 
-### Listing Keys, Removing Recipes by Key, Clearing
+### キーによるレシピの削除、キーのリスト化、クリア
 
 ```zenscript
 coolant().logKeys()
-coolant().removeRecipe('teslathingies:fluid_tf-molten_tesla') // check <logKeys> output for valid keys
+coolant().removeRecipe('teslathingies:fluid_tf-molten_tesla') // <logKeys> の出力で有効なキー
 coolant().clear()
 ```
 
-### Adding Recipe
+### レシピを追加中
 
-##### Signature
+##### 署名
 
 ```zenscript
 addCoolant(fluid: ILiquidStack, timeMultiplier: Float)
 ```
 
-`timeMultiplier` is the value that will be used to increase (or decrease) the number ticks a fuel will burn for.
+`timeMultiplier` は、燃料が燃焼するティック数を増減するために使用される値です。
 
-##### Example
+##### 例
 
 ```zenscript
 coolant().addCoolant(<liquid:tf-sewage> * 50, 1.1);
 ```
 
-### Notes
+### メモ
 
-All of these actions will get cached and ran after the default registry for this machine has finished registering all recipes (including the ones from the custom jsons).
+これらのアクションはすべてキャッシュされ、このマシンのデフォルトレジストリがすべてのレシピを登録し終えた後に実行されます (カスタム json からのものを含む)。

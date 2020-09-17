@@ -1,6 +1,6 @@
 # IBlockEvent
 
-This interface is extended by all Events that can deal with blocks in the world.
+Этот интерфейс расширен всеми событиями, которые могут иметь дело с блоками в мире.
 
 ## Импорт класса
 

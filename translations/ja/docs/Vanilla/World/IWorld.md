@@ -1,75 +1,75 @@
 # IWorld
 
-The IWorld object contains information on a Dimension within the game.
+IWorld オブジェクトには、ゲーム内の寸法に関する情報が含まれています。
 
-## Importing the class
+## クラスのインポート
 
-It might be required to [import](/AdvancedFunctions/Import/) the class to avoid errors.  
+エラーを避けるためにクラスを [インポート](/AdvancedFunctions/Import/) する必要があるかもしれません。  
 `import crafttweaker.world.IWorld`
 
-## Extending IBlockProperties
+## IBlockPropertiesを拡張
 
-IBlockState extends [IBlockAccess](/Vanilla/World/IBlockAccess/). That means that all methods that are available to [IBlockAccess](/Vanilla/World/IBlockAccess/) objects are also available to IBlockState objects.
+IBlockState extends [IBlockAccess](/Vanilla/World/IBlockAccess/). つまり、 [IBlockAccess](/Vanilla/World/IBlockAccess/) オブジェクトで使用可能なすべてのメソッドは、IBlockState オブジェクトでも使用できます。
 
-## Creating an IWorld object
+## IWorld オブジェクトの作成
 
-Normally, you can derive this object from entities or other functions. If you need to create it yourself though, this is the way to go:  
-Note that this method should only be called inside functions that are meant to be run inside minecraft, not during the loading circle.
+通常、エンティティや他の関数からこのオブジェクトを派生することができます。 自分で作成する必要がある場合でも、 これは以下の方法です:  
+このメソッドは、Minecraft 内で実行される関数の中でのみ呼び出すべきであることに注意してください。 ローディング・サークル中じゃないわ
 
 ```zenscript
 crafttweaker.world.IWorld.getFromID(int id);
 ```
 
-## ZenMethods without parameters and ZenGetters
+## パラメータなしのZenMethodsとZenGetters
 
-| ZenMethod          | ZenGetter     | Return type                                      | Description                                                                                                                                                                             |
-| ------------------ | ------------- | ------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| isRemote()         | remote        | boolean                                          | True if the world is a "slave" client; changes will not be saved or propagated from this world. For example, server worlds have this set to false, client worlds have this set to true. |
-| isRaining()        | raining       | boolean                                          | Returns true if it is currently raining.                                                                                                                                                |
-| isThundering()     | thundering    | boolean                                          | Returns true if it is currently thundering.                                                                                                                                             |
-| getMoonPhase()     | moonPhase     | int                                              | Returns the current moon phase.                                                                                                                                                         |
-| isDayTime()        | dayTime       | boolean                                          | Checks if it is daytime.                                                                                                                                                                |
-| getWorldTime()     | time          | long                                             | Returns the world's time.                                                                                                                                                               |
-| getDimension()     | dimension     | int型                                             | Returns the world's dimension.                                                                                                                                                          |
-| isSurfaceWorld()   | surfaceWorld  | boolean                                          | Returns whether you are in a surface world or not.                                                                                                                                      |
-| getDimensionType() | dimensionType | String                                           | Returns the dimension's type name.                                                                                                                                                      |
-| getWorldType()     | worldType     | String                                           | Returns the world's type name.                                                                                                                                                          |
-| getWorldInfo()     | worldInfo     | [IWorldInfo](/Vanilla/World/IWorldInfo/)         | Returns the world's information. Can be used to retrieve even more info on the world.                                                                                                   |
-| getProvider()      | provider      | [IWorldProvider](/Vanilla/World/IWorldProvider/) | Returns the world's provider. Can be used to retrieve even more info on the world.                                                                                                      |
+| ZenMethod          | ZenGetter     | 戻り値の種類                                           | 説明                                                                                                            |
+| ------------------ | ------------- | ------------------------------------------------ | ------------------------------------------------------------------------------------------------------------- |
+| isRemote()         | リモート          | boolean型                                         | 世界が「スレーブ」クライアントである場合、真です。変更はこの世界から保存または伝播されません。 例えば、サーバーのワールドでは false に設定されています。クライアントのワールドでは true に設定されています。 |
+| isRaining()        | 雨             | boolean型                                         | 雨が降っている場合はtrueを返します。                                                                                          |
+| isThundering()     | 雷鳴も           | boolean型                                         | 雷鳴の場合は true を返します。                                                                                            |
+| getMoonPhase()     | moonPhase     | int                                              | 現在のムーンフェイズを返します。                                                                                              |
+| isDayTime()        | dayTime       | boolean型                                         | 昼間かどうかをチェックします。                                                                                               |
+| getWorldTime()     | 時間            | long                                             | 世界の時刻を返します。                                                                                                   |
+| getDimension()     | 寸法            | int型                                             | ワールドの寸法を返します。                                                                                                 |
+| isSurfaceWorld()   | surfaceWorld  | boolean型                                         | あなたが表面の世界にいるかどうかを返します。                                                                                        |
+| getDimensionType() | dimensionType | 文字列型                                             | 寸法のタイプ名を返します。                                                                                                 |
+| getWorldType()     | worldType     | 文字列型                                             | ワールドのタイプ名を返します。                                                                                               |
+| getWorldInfo()     | worldInfo     | [IWorldInfo](/Vanilla/World/IWorldInfo/)         | 世界の情報を返します。 世界のさらに多くの情報を取得するために使用できます。                                                                        |
+| getProvider()      | プロバイダー        | [IWorldProvider](/Vanilla/World/IWorldProvider/) | 世界プロバイダーを返します。 世界のさらに多くの情報を取得するために使用できます。                                                                     |
 
-## ZenMethods with parameters
+## パラメータ付きのZenMethods
 
-### Get Biome at specific Position
+### 特定の位置でバイオームを取得
 
-Use either an [IPosition3f](/Vanilla/Utils/Position3f/) or an [IBlockPos](/Vanilla/World/IBlockPos/) object.  
-Returns an [IBiome](/Vanilla/Biomes/IBiome/) Object.
+[IPosition3f](/Vanilla/Utils/Position3f/) または [IBlockPos](/Vanilla/World/IBlockPos/) オブジェクトのいずれかを使用します。  
+[IBiome](/Vanilla/Biomes/IBiome/) オブジェクトを返します。
 
 ```zenscript
 worldObj.getBiome(IPosition3f position);
 worldObj.getBiome(IBlockPos position);
 ```
 
-### Get Brightness at specific Position
+### 特定の位置で明るさを得る
 
-Use either three ints or an [IBlockPos](/Vanilla/World/IBlockPos/) object. Returns an int.
+3 つの整数または [IBlockPos](/Vanilla/World/IBlockPos/) オブジェクトを使用します。 intを返します。
 
 ```zenscript
 worldObj.getBrightness(int x, int y, int z);
 worldObj.getBrightness(IBlockPos position);
 ```
 
-### Get Block at specific Position
+### 特定の位置にブロックを取得する
 
-Use either three ints or an [IBlockPos](/Vanilla/World/IBlockPos/) object. Returns an [IBlock](/Vanilla/Blocks/IBlock/) Object.
+3 つの整数または [IBlockPos](/Vanilla/World/IBlockPos/) オブジェクトを使用します。 [IBlock](/Vanilla/Blocks/IBlock/) オブジェクトを返します。
 
 ```zenscript
 worldObj.getBlock(int x, int y, int z);
 worldObj.getBlock(IBlockPos position);
 ```
 
-### Get or Set a blockState at a specific Position
+### 特定の位置で blockState を取得または設定
 
-Use an [IBlockPos](/Vanilla/World/IBlockPos/) Object and for the setter also an [IBlockState](/Vanilla/Blocks/IBlockState/) Object. Optionally an [IData](/Vanilla/Data/IData/) object can be specified to define NBT data for the blockstate's TileEntity when it is set. Getter Returns an [IBlockState](/Vanilla/Blocks/IBlockState/), setter a bool.
+[IBlockPos](/Vanilla/World/IBlockPos/) オブジェクトを使用し、セッターには [IBlockState](/Vanilla/Blocks/IBlockState/) オブジェクトを使用します。 必要に応じて、 [IData](/Vanilla/Data/IData/) オブジェクトを指定して、ブロック状態のタイルエンティティにNBTデータを定義することができます。 Getter [IBlockState](/Vanilla/Blocks/IBlockState/)を返し、ブール値を設定します。
 
 ```zenscript
 worldObj.getBlockState(IBlockPos pos);
@@ -77,23 +77,35 @@ worldObj.setBlockState(IBlockState state, IBlockPos pos);
 worldObj.setBlockState(IBlockState state, IData tileEntityData, IBlockPos pos);
 ```
 
-### Spawn entity
+### エンティティを出現させる
 
-Use an [IEntity](/Vanilla/Entities/IEntity/) object.  
-Returns a bool that states if the spawn was successful.
+[IEntity](/Vanilla/Entities/IEntity/) オブジェクトを使用します。  
+スポーンが成功した場合に表示される bool を返します。
 
 ```zenscript
-worldObj.spawnEntity(IEntity entity);
+worldObj.spawnEntity(IEntity)
 ```
 
 ### Get a raytrace result
 
-Use two [IVector3d](/Vanilla/World/IVector3d/) objects, and three booleans to get an [IRayTraceResult](/Vanilla/World/IRayTraceResult/).  
-**Can be null**
+[IVector3d](/Vanilla/World/IVector3d/) オブジェクトと 3 つのブール値を使用して [IRayTraceResult](/Vanilla/World/IRayTraceResult/)を取得します。  
+**null を指定できます**
 
-The first vector describes the starting point, the 2nd vector the direction and length we are searching in.  
-Only the last parameter is true by default.
+最初のベクトルは出発点、2番目のベクトルは我々が探している方向と長さを表します。  
+デフォルトでは最後のパラメータだけがtrueになります。
 
 ```zenscript
-worldObj.rayTraceBlocks(IVector3d begin, IVector3d ray, @Optional boolean stopOnLiquid, @Optional boolean ignoreBlockWithoutBoundingBox, @Optional(true) boolean returnLastUncollidableBlock)
+worldObj.rayTraceBlocks(IVector3dbegin, IVector3dray, @Optional boolean stopOnLiquid, @Optional boolean ignoreBlockWithoutBoundingBox, @Optional(true) boolean returnLastUncollidableBlock)
+```
+
+### 選択したブロックを取得する
+
+Use an [IBlockPos](/Vanilla/World/IBlockPos/), an [IRayTraceResult](/Vanilla/World/IRayTraceResult/) and an [IPlayer](/Vanilla/Players/IPlayer/).  
+Returns an [IItemStack](/Vanilla/Items/IItemStack/).  
+**Can be null**
+
+位置にあるブロックを選択することで得られるIItemStackを取得します。
+
+```zenscript
+worldObj.getPickedBlock(IBlockPos pos, IRayTraceResult rayResult, IPlayer player);
 ```

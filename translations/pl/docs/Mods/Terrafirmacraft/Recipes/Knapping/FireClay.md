@@ -1,30 +1,30 @@
-# FireClay Knapping
+# Wykrywanie FireClay
 
-## Package
+## Pakiet
 ```zenscript
-import mods.terrafirmacraft.FireClayKnapping;
+importuj mods.terrafirmacraft.Pieczenie FireClayKpieping;
 ```
 
-## Addition
+## Dodanie
 
 ```zenscript
 FireClayKnapping.addRecipe(String registryName, IItemStack output, String... pattern)
 ```
 
-## Removal
+## Usuwanie
 
 ```zenscript
-FireClayKnapping.removeRecipe(IItemStack output);
-FireClayKnapping.removeRecipe(String registryName);
+FireClayKnapping.removeRecipe(wyjście IItemStack);
+FireClayKnapping.removeRecipe(Rejestr string);
 ```
 
-## Example
+## Przykład
 ```zenscript
-// add fireClay knapping recipe for enderio conduit binder
-FireClayKnapping.addRecipe("enderio/item_conduit_binder", <enderio:item_material:22>*2, 
-"    X",
-"   XX",
-"  XXX",
+// dodaj przepis na glinianą glinianą receptę na spoiwo przewodnika enderio
+FireClayKnapping. ddRecipe("enderio/item_conduit_binder", <enderio:item_material:22>*2, 
+" X",
+" XX",
+" XXX",
 " XXXX",
 "XXXXX");
 ```

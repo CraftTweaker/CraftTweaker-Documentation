@@ -1,21 +1,21 @@
-# Liquid Fuel Generator
+# Generador de combustible líquido
 
-## Package
+## Paquete
 
 ```zemscript
-import mods.ic2.LiquidFuelGenerator;
+importar mods.ic2.LiquidFuelGenerator;
 ```
 
-## Methods
+## Métodos
 
-- **[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) liquid** The liquid which can be used as fuel in liquid fuel generators. The amount of fluid specified will make no difference; it uses 100 mb.
-- **int ticks** The time in ticks the liquid will burn for.
-- **int powerOutput** EU/tick produced by the liquid.
+- **[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) líquido** El líquido que puede utilizarse como combustible en los generadores de combustible líquidos. La cantidad de líquido especificada no marcará ninguna diferencia; utiliza 100 mb.
+- **ticks enteros** El tiempo en los ticks para los que se quemará el líquido.
+- **int. de potencia** UE/tick producido por el líquido.
 
-### Add Fluid
+### Añadir fluido
 
 ```zenscript
-mods.ic2.LiquidFuelGenerator.addFluid(ILiquidStack liquid, int ticks, int powerOutput);
+mods.ic2.LiquidFuelGenerator.addFluid(liquido ILiquidStack, ticks de int, int powerOutput);
 
 mods.ic2.LiquidFuelGenerator.addFluid(<liquid:water>, 1000, 32);
 ```

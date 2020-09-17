@@ -1,14 +1,14 @@
 # IEntityEvent
 
-This interface is extended by all Events that can have a central entity.
+このインターフェースは、中央エンティティを持つことができるすべてのイベントによって拡張されます。
 
-## Importing the class
+## クラスのインポート
 
-It might be required to [import](/AdvancedFunctions/Import/) the class to avoid errors.  
+エラーを避けるためには、クラスを [import](/AdvancedFunctions/Import/) する必要があるかもしれません。  
 `import crafttweaker.event.IEntityEvent;`
 
-## What can be done with them?
+## 何が彼らを使って行うことができますか?
 
-| name   | type                                  |
+| 名前     | タイプ                                   |
 | ------ | ------------------------------------- |
-| entity | [IEntity](/Vanilla/Entities/IEntity/) |
+| エンティティ | [IEntity](/Vanilla/Entities/IEntity/) |

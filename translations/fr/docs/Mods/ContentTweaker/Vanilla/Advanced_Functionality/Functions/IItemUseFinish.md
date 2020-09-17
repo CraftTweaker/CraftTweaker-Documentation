@@ -1,23 +1,23 @@
-# IItemUseFinish
+# format@@0 IItemUseFinish
 
-The IItemUseFinish function can be added to an [item](/Mods/ContentTweaker/Vanilla/Creatable_Content/Item/) and will be triggered only when a user finishes using the item (e.g. finishes eating).
+La fonction IItemUseFinish peut être ajoutée à un élément [](/Mods/ContentTweaker/Vanilla/Creatable_Content/Item/) et ne sera déclenchée que lorsqu'un utilisateur termine à l'aide de l'élément (e. . finit de manger).
 
-## Importing the package
+## Importation du paquet
 
-It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
-`import mods.contenttweaker.IItemUseFinish;`
+Il pourrait vous être nécessaire d'importer le paquet si vous rencontrez des problèmes, donc mieux vaut être sûr que désolé et ajouter l'importation.  
+`importer mods.contenttweaker.IItemUseFinish ;`
 
-## Parameters
+## Paramètres
 
-The IItemRightClickFunction is a function with the following parameters:
+La fonction IItemRightClickFonction est une fonction avec les paramètres suivants :
 
-- [IMutableItemStack](/Mods/ContentTweaker/Vanilla/Types/Item/IMutableItemStack/) itemStack → The item that is used
-- [IWorld](/Mods/ContentTweaker/Vanilla/Types/World/IWorld/) world → The world the player is in
+- [IMutableItemStack](/Mods/ContentTweaker/Vanilla/Types/Item/IMutableItemStack/) itemStack → L'élément qui est utilisé
+- [IWorld](/Mods/ContentTweaker/Vanilla/Types/World/IWorld/) monde → Le monde dans lequel le joueur est
 - [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) entity → The entity using the item
 
-The function needs to return an [IItemStack](/Vanilla/Items/IItemStack/).
+La fonction doit retourner une [IItemStack](/Vanilla/Items/IItemStack/).
 
-## Example
+## Exemple
 
 ```zenscript
 zsItem.onItemUseFinish = function(stack, world, player) {

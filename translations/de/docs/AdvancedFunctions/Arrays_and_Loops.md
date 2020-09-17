@@ -36,7 +36,7 @@ val IArray = [<minecraft:gold_ingot>, <minecraft:iron_ingot>] as IItemStack[];
 
 ## Verschachtelte Arrays
 
-You can place Arrays in Arrays.
+Du kannst Arrays in Arrays platzieren.
 
 ```zenscript
 val stringArray1 = ["Hallo","Welt"] as string[];
@@ -47,9 +47,9 @@ val stringArrayAll = [stringArray1,stringArray2,stringArray3,["Schmetterling","!
 
 ## Auf Elemente innerhalb eines Arrays zugreifen
 
-You can refer to an element within an array by using it's place in the list. The first item in an Array is No. 0, the 2nd No.1 and so on.
+Sie können auf ein Element innerhalb eines Arrays verweisen, indem Sie dessen Platz in der Liste verwenden. Das erste Element in einem Array ist Nein. 0, die 2. Nr. 1 und so weiter.
 
-If you want to refer to an item in a nested Array, you need two or more referers, as each removes one layer of the lists.
+Wenn du auf ein Element in einem verschachtelten Array verweisen möchtest, Sie benötigen zwei oder mehr Referenten, da jeder eine Ebene der Listen entfernt.
 
 ```zenscript
 /*
@@ -87,12 +87,12 @@ print(stringArrayAll[0][1]);
 
 # Schleifen
 
-A loop is a function that repeats itself. You can use loops to apply an action to all elements in an Array
+Eine Schleife ist eine Funktion, die sich wiederholt. Du kannst Schleifen verwenden, um eine Aktion auf alle Elemente eines Arrays anzuwenden
 
 ## For-Schleifen
 
-The main use of the for-loop is iterating through an array. Iterating means doing an action to all elements of an array.  
-You can use the `break` keyword to break the loop prematurely.
+Die Hauptnutzung der For-Schleife ist durch ein Array iteriert. Iterieren bedeutet, eine Aktion für alle Elemente eines Arrays durchzuführen.  
+Sie können das Schlüsselwort `break` verwenden, um die Schleife vorzeitig zu brechen.
 
 ```zenscript
 import crafttweaker.item.IItemStack;
@@ -107,14 +107,6 @@ val KArray = [<minecraft:wooden_axe>,<minecraft:golden_shovel>,<minecraft:emeral
 for item in IArray {
     //definiert die Variable "item" nacheinander mit jedem Element aus IArray (z.B. <minecraft:dirt>,<minecraft:planks>,<minecraft:diamond>)
     //Man kann diese Variable nun problemlos verwenden!
-    recipes.remove(item);
-}
-
-for i, item in IArray {
-    //definiert "i" mit jeder Elementenummer von IArray (z.B. 0,1,2,...)
-    //definiert "item" mit jedem Element von IArray (z.B. <minecraft:dirt>,<minecraft:planks>,<minecraft:diamond>)
-    //Man kann diese Variablen nun problemlos verwenden!
-
     //Erstellt Craftingrezepte für IArray aus den Items aus JArray und KArray (z.B. Dirt aus Gras und einer Holzaxt, Holzplanken aus Holz und einer Goldschaufel, Diamanten aus Eisenbarren und Smaragden)
     recipes.addShapeless(item,[JArray[i],KArray[i]]);
 }
@@ -124,7 +116,15 @@ for i in 0 to 10 {
     print(i);
 }
 
-for i in 10 .. 20 {
+for i in 10 ..
+
+    recipes.remove(item);
+}
+
+for i, item in IArray {
+    //definiert "i" mit jeder Elementenummer von IArray (z.B. 0,1,2,...)
+    //definiert "item" mit jedem Element von IArray (z.B. <minecraft:dirt>,<minecraft:planks>,<minecraft:diamond>)
+    //Man kann diese Variablen nun problemlos verwenden! 20 {
     //definiert "i" mit jeder Nummer von 10 bis 19 (z.B. 10,11,12,...,18,19)
     print(i);
 }
@@ -137,8 +137,8 @@ for item in loadedMods["minecraft"].items {
 
 ## While-Schleife
 
-The while loop executes the given code as long as the given condition evaluates to `true`.  
-Alternatively, you can stop it using the `break` keyword.
+Die während der Schleife führt den angegebenen Code aus, solange die angegebene Bedingung `true`auswertet.  
+Alternativ können Sie ihn mit dem `Pause` Schlüsselwort stoppen.
 
 ```zenscript
 var i = 0; 
@@ -172,9 +172,9 @@ for k in 1 .. 10 {
 
 # Elemente in ein Array hinzufügen
 
-While it is not recommended to do so, it is possible to add some Objects to Arrays.  
-You can only add single Objects to an array, you cannot add two arrays.  
-You use the `+` operator for array Addition:
+Obwohl dies nicht empfohlen wird, ist es möglich, einige Objekte zu Arrays hinzuzufügen.  
+Sie können nur einzelne Objekte zu einem Array hinzufügen, Sie können nicht zwei Arrays hinzufügen.  
+Sie verwenden den `+` Operator für Arrayzusatz:
 
 ```zenscript
 import crafttweaker.item.IItemStack;

@@ -1,26 +1,26 @@
 # PlayerItemPickup
 
-The PlayerItemPickup Event is fired after a player has interacted with an entity item and an item or amount of an item has been picked up. This event takes place after [PlayerPickupItem](/Vanilla/Events/Events/PlayerPickupItem/) has been fired.
+PlayerItemPickup イベントは、プレイヤーがエンティティアイテムとやりとりし、アイテムまたはアイテムの量がピックアップされた後に発生します。 このイベントは、 [PlayerPickupItem](/Vanilla/Events/Events/PlayerPickupItem/) が発生した後に発生します。
 
-## Event Class
+## イベントクラス
 You will need to cast the event in the function header as this class:  
 `crafttweaker.event.PlayerItemPickupEvent`  
 You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
 
-## Event interface extensions
-PlayerItemPickup Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+## イベントインターフェースの拡張
+PlayerItemPickup Eventsは以下のインターフェイスを実装し、すべてのメソッド/getters/settersを同様に呼び出すことができます。
 
 - [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
 
 
 ## ZenGetters
-The following information can be retrieved from the event:
+イベントから次の情報を取得できます。
 
 | ZenGetter        | 戻り値                                           |
 | ---------------- | --------------------------------------------- |
 | `stackCopy`      | [IItemStack](/Vanilla/Items/IItemStack/)      |
 | `originalEntity` | [IEntityItem](/Vanilla/Entities/IEntityItem/) |
 
-## Notes
+## メモ
 
-`stackCopy` is a copy of the item contained inside of the original entity item, representing what was picked up and placed into the player's inventory. `originalEntity` is the item entity with any remaining amount of the item stack (if the player didn't pick up the full amount).
+`stackCopy` は、元のエンティティアイテム内に含まれるアイテムのコピーです。 持ち上げられたものを代表してプレーヤーの在庫に入れました `originalEntity` はアイテムスタックの残りの量を持つアイテムエンティティである (プレイヤーが全額を受け取っていない場合)。

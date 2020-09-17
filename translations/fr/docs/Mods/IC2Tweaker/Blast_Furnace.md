@@ -1,24 +1,24 @@
-# Blast Furnace
+# Haut fourneau
 
-## Package
+## Paquet
 
-`import mods.ic2.BlastFurnace;`
+`Importer mods.ic2.BlastFurnace;`
 
-## Methods
+## Méthodes
 
 - **[IItemStack](/Vanilla/Items/IItemStack/)[] outputs**
-- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input**
+- **[Ingrédient](/Vanilla/Variable_Types/IIngredient/) entrée**
 - **int totalFluidCost** Per-tick IC2 liquefied air cost, measured in mB/tick
 - **int time** Total time cost, measured in ticks
 
-## Addition
+## Ajouter
 
 ```zenscript
-mods.ic2.BlastFurnace.addRecipe(IItemStack[] outputs, IIngredient input, int totalFluidCost, int time);
+mods.ic2.BlastFurnace.addRecipe(IItemStack[] sortie, entrée Igredient, int totalFluidCost, temps d'int);
 
 mods.ic2.BlastFurnace.addRecipe([<minecraft:diamond>, <minecraft:emerald>], <minecraft:dirt> * 64, 1, 1000);
 ```
 
-## Removal
+## Retirer
 
-For now simply remove the corresponding line in `config/ic2/blast_furnace.ini`.
+Pour l'instant, supprimez simplement la ligne correspondante dans `config/ic2/blast_furnace.ini`.

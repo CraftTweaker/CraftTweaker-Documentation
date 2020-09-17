@@ -1,28 +1,28 @@
-# Food Items
+# Nahrungsgegenstände
 
-This allows you to add food items to the game!
+Dies erlaubt dir, Lebensmittel zum Spiel hinzuzufügen!
 
-## Create the Food Item Representation
+## Lebensmittel-Gegenstand-Vertretung erstellen
 
-Before you can add the item, you need to create a food item Representation which will allow you to set the properties of the item you want to add.  
-This is where the [VanillaFactory](/Mods/ContentTweaker/Vanilla/Creatable_Content/VanillaFactory/) comes in:
+Bevor Sie das Element hinzufügen können, Sie müssen eine Repräsentation für Lebensmittel erstellen, mit der Sie die Eigenschaften des Elements einstellen können, das Sie hinzufügen möchten.  
+Hier kommt die [VanillaFactory](/Mods/ContentTweaker/Vanilla/Creatable_Content/VanillaFactory/) in:
 
 ```zenscript
 mods.contenttweaker.VanillaFactory.createItemFood(String unlocalizedName, int healAmount);
 ```
 
-## Import the representation Package
+## Repräsentation Paket importieren
 
-It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
-`import mods.contenttweaker.ItemFood;`
+Es kann erforderlich sein, dass Sie das Paket importieren, wenn Sie irgendwelche Probleme haben. Seien Sie also besser sicher als entschuldigen und fügen Sie den Import hinzu.  
+`mods.contenttweaker.Artikel importieren;`
 
-## ItemRepresentation Expansion
+## Artikelrepräsentation Erweiterung
 
-The ItemFoodRepresentation class expands [ItemRepresentation](/Mods/ContentTweaker/Vanilla/Creatable_Content/Item/). That means all Methods and ZenProperties that are available for [Items](/Mods/ContentTweaker/Vanilla/Creatable_Content/Item/) are also available for food items!
+Die ItemFoodRepresentation Klasse erweitert [ItemRepresentation](/Mods/ContentTweaker/Vanilla/Creatable_Content/Item/). Das bedeutet, dass alle Methoden und ZenProperties, die für [Artikel](/Mods/ContentTweaker/Vanilla/Creatable_Content/Item/) verfügbar sind, auch für Lebensmittel verfügbar sind!
 
-## ZenProperties
+## Zeneigenschaften
 
-To get/set the properties you can either use the respecting ZenGetters/Setters or the ZenMethods:
+Um die Eigenschaften zu bekommen/einzustellen, können Sie entweder die ZenGetters/Setters respektieren oder die ZenMethoden verwenden:
 
 ```zenscript
 //property name: healAmount
@@ -35,19 +35,19 @@ item.getHealAmount();
 item.setHealAmount(64);
 ```
 
-| Property        | Type                                                                                            | Required | Standardwert | Description/Notes                                           |
-| --------------- | ----------------------------------------------------------------------------------------------- | -------- | ------------ | ----------------------------------------------------------- |
-| healAmount      | int                                                                                             | Yes      |              | How many food points are restored when eaten?               |
-| alwaysEdible    | bool                                                                                            | No       | false        | Can the food still be eaten if the user's food bar is full? |
-| wolfFood        | bool                                                                                            | No       | false        | Can the food be used to tame woves?                         |
-| saturation      | float                                                                                           | No       | 0.6          | The food's Saturation Value                                 |
-| onItemFoodEaten | [IItemFoodEaten](/Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemFoodEaten/) | No       | null         | Called when the food item is eaten                          |
+| Objekt          | Type                                                                                            | Benötigt | Standardwert | Beschreibung / Notizen                                                                         |
+| --------------- | ----------------------------------------------------------------------------------------------- | -------- | ------------ | ---------------------------------------------------------------------------------------------- |
+| healamount      | int                                                                                             | Ja       |              | Wie viele Lebensmittelpunkte werden beim Essen wiederhergestellt?                              |
+| immer essbar    | bool                                                                                            | Nein     | false        | Kann das Essen immer noch gegessen werden, wenn die Lebensmittelleiste des Benutzers voll ist? |
+| Wolfsnahrung    | bool                                                                                            | Nein     | false        | Kann das Essen verwendet werden, um Wunden zu zähmen?                                          |
+| Sättigung       | float                                                                                           | Nein     | 0.6          | Der Sättigungswert des Essens                                                                  |
+| onItemFoodEaten | [IItemFoodEaten](/Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemFoodEaten/) | Nein     | null         | Called when the food item is eaten                                                             |
 
-## Registering the item
+## Artikel registrieren
 
-You need to call this method to register the item in the game!  
-Otherwise nothing will happen!  
-After you have called this function, you cannot un-register the item or change any of it's properties!
+Du musst diese Methode aufrufen, um den Gegenstand im Spiel zu registrieren!  
+Andernfalls wird nichts passieren!  
+Nachdem Sie diese Funktion aufgerufen haben, können Sie die Registrierung des Elements nicht aufheben oder keine seiner Eigenschaften ändern!
 
 ```zenscript
 item.register();

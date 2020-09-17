@@ -1,13 +1,13 @@
-# Accessory
+# 配件
 
 ## 所属包名
 
 ```zenscript
-import mods.aether_legacy.Accessory;
+导入 mods.aether_legacy.a. 配件；
 ```
-## Usage
+## 用法
 
 ```zenscript
-Accessory.registerAccessory(IItemStack input, String accessory);
+配件.注册配件(临时堆栈输入, 字符串附件)；
 ```
-- Accesory string can be "Ring", "Pendant", "Cape", "Shield", "Gloves", "Miscellaneous"
+- 访问字符串可以是 "铃声", "Pendant", "Cape", "Shield", "Gloves", "杂项"

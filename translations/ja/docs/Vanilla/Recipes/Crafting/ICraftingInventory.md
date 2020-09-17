@@ -1,31 +1,31 @@
 # ICraftingInventory
 
-The ICraftingInventory contains all kinds of information on the inventory a crafting process is performed in.
+ICraftingInventoriaには、製造プロセスが行われる在庫に関するあらゆる種類の情報が含まれています。
 
-## Importing the class
+## クラスのインポート
 
-It might be required to [import](/AdvancedFunctions/Import/) the class to avoid errors.  
+エラーを避けるためにクラスを [インポート](/AdvancedFunctions/Import/) する必要があるかもしれません。  
 `import crafttweaker.recipes.ICraftingInventory`
 
 ## ZenGetters
 
-| ZenGetter    | Return type                                  | Description                                          |
-| ------------ | -------------------------------------------- | ---------------------------------------------------- |
-| `player`     | [IPlayer](/Vanilla/Players/IPlayer/)         | the player owning this inventory                     |
-| `size`       | int                                          | the inventory's size                                 |
-| `width`      | int                                          | the inventory's width                                |
-| `height`     | int                                          | the inventory's height                               |
-| `stackCount` | int                                          | the the number of stacks that are actually filled in |
-| `items`      | [IItemStack[][]](/Vanilla/Items/IItemStack/) | The items that present in the crafting table         |
-| `itemArray`  | [IItemStack[]](/Vanilla/Items/IItemStack/)   | The items that present in the crafting table         |
+| ZenGetter    | 戻り値の種類                                       | 説明                 |
+| ------------ | -------------------------------------------- | ------------------ |
+| `プレイヤー`      | [IPlayer](/Vanilla/Players/IPlayer/)         | この持ち物を所有しているプレイヤーは |
+| `サイズ`        | int                                          | 在庫の大きさは            |
+| `width`      | int                                          | 在庫の幅は              |
+| `高さ`         | int                                          | 在庫の高さは             |
+| `stackCount` | int                                          | 実際に記入されているスタックの数は  |
+| `項目`         | [IItemStack[][]](/Vanilla/Items/IItemStack/) | クラフトテーブルに存在するアイテム  |
+| `itemArray`  | [IItemStack[]](/Vanilla/Items/IItemStack/)   | クラフトテーブルに存在するアイテム  |
 
 ## ZenMethods
 
-Following Methods are available:
+以下の方法があります：
 
-`inventory.getStack(index)` returns the [IItemStack](/Vanilla/Items/IItemStack/) at the given index or null if no item present. Index is an int.  
-`inventory.setStack(index, item)` sets the Stack at the given index to the provided item. Index is an int, item is an IItemStack. Use null if you want to clear the stack at that index.
+`inventory.getStack(index)` は指定されたインデックスで [IItemStack](/Vanilla/Items/IItemStack/) を返し、項目がない場合は null を返します。 Index is an int.  
+`inventory.setStack(index, item)` は指定されたインデックスのスタックを指定されたアイテムに設定します。 インデックスはintで、項目はIItemStackです。 インデックスのスタックをクリアしたい場合はnullを使用してください。
 
 The top left stack is position (0, 0), row and column are ints.  
 `inventory.getStack(row, column)` returns the [IItemStack](/Vanilla/Items/IItemStack/) at the given position or null if no item present.  
-`inventory.setStack(row, column, item)` sets the stack at the given position to the provided item. Item is an IItemStack. Use null if you want to clear the stack at that position.
+`inventory.setStack(row, column, item)` sets the stack at the given position to the provided item. アイテムはIItemStackです。 その位置のスタックを消去したい場合はnullを使用してください。

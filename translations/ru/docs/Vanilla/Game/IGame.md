@@ -9,14 +9,14 @@
 
 ## Геттеры
 
-| Геттер   | Что он делает?                          | Возвращаемый тип                                                | Использование   |
-| -------- | --------------------------------------- | --------------------------------------------------------------- | --------------- |
-| biomes   | Returns all registered biomes as list   | List<[IBiomes](/Vanilla/Biomes/IBiome/)>                        | `game.biomes`   |
-| blocks   | Returns all registered blocks as list   | List<[IBlockDefinition](/Vanilla/Blocks/IBlockDefinition/)>     | `game.blocks`   |
-| entities | Returns all registered entities as list | List<[IEntityDefinition](/Vanilla/Entities/IEntityDefinition/)> | `game.entities` |
-| items    | Returns all registered items as list    | List<[IItemDefinition](/Vanilla/Items/IItemDefinition/)>        | `game.items`    |
-| liquids  | Returns all registered liquids as list  | List<[ILiquidDefinition](/Vanilla/Liquids/ILiquidDefinition/)>  | `game.liquids`  |
-| potions  | Returns all registered potions as list  | List<[IPotion](/Vanilla/Potions/IPotion/)>                      | `game.potions`  |
+| Геттер   | Что он делает?                                        | Возвращаемый тип                                                   | Использование   |
+| -------- | ----------------------------------------------------- | ------------------------------------------------------------------ | --------------- |
+| biomes   | Возвращает все зарегистрированные биомы в список      | Список<[Ибиомов](/Vanilla/Biomes/IBiome/)>                         | `game.biomes`   |
+| blocks   | Возвращает все зарегистрированные блоки в список      | Список<[IBlockDefinition](/Vanilla/Blocks/IBlockDefinition/)>      | `game.blocks`   |
+| entities | Возвращает все зарегистрированные сущности как список | Список<[IEntityDefinition](/Vanilla/Entities/IEntityDefinition/)>  | `game.entities` |
+| items    | Возвращает все зарегистрированные товары как список   | Список<[Определение II](/Vanilla/Items/IItemDefinition/)>          | `game.items`    |
+| liquids  | Возвращает все зарегистрированные жидкости как список | Список<[Определение Liquidd](/Vanilla/Liquids/ILiquidDefinition/)> | `game.liquids`  |
+| potions  | Возвращает все зарегистрированные зелья в списке      | Список<[Зелье](/Vanilla/Potions/IPotion/)>                         | `game.potions`  |
 
 ## Методы
 
@@ -25,19 +25,19 @@
 ```zenscript
 //getEntity(EntityName)
 
-//essentially the same
-val sheep = game.getEntity("sheep");
+//практически та же очка
+val = game.getEntity("ов");
 val sheep1 = <entity:minecraft:sheep>;
 ```
 
 ### setLocalization
 
-Sets the localization.  
-All parameters are strings. `game.setLocalization(key, value);`  
+Устанавливает локализацию.  
+Все параметры являются строками. `game.setLocalization(key, value);`  
 `game.setLocalization(lang, key, value);`
 
 ### localize
 
-Returns a localized String  
+Возвращает локализованную строку  
 `game.localize(key)`  
 `game.localize(key, lang)`

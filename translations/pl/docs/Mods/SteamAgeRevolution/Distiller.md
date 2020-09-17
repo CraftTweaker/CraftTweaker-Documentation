@@ -1,27 +1,27 @@
-# Distiller
+# Destylaty
 
-The Distiller is a machine that converts an input fluid into an output fluid and item using steam.
+Destylator jest maszyną, która przekształca płyn wejściowy w płyn wyjściowy i element za pomocą pary.
 
-## Package
-`mods.steamagerevolution.Distiller`
+## Pakiet
+`Destylator`
 
-## Methods
+## Metody
 
-- **[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) output** The result of the recipe.
-- **[IItemStack](/Vanilla/Items/IItemStack/) output** The result of the recipe.
-- **[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) input** The input of the recipe.
-- **int craftTime** Crafting time for machine to process
-- **int steamCost** Cost of Steam for machine to process
+- **[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) wyjście** wynik przepisu.
+- **[IItemStack](/Vanilla/Items/IItemStack/) wyjście** wynik przepisu.
+- **[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) wejście** Wprowadzenie przepisu.
+- **int craftTime** Czas tworzenia maszyny do przetworzenia
+- **int SteamCost** Koszt Steam dla maszyny do przetworzenia
 
-## Addition
+## Dodanie
 
 ```zenscript
-mods.steamagerevolution.Distiller.addRecipe(ILiquidStack input, IItemStack outputStack, ILiquidStack output, int craftTime, int steamCost);
-mods.steamagerevolution.Distiller.addRecipe(<liquid:bio_fuel>*1000, <minecraft:dirt>, <liquid:ethanol>*1000, 200, 200);
+mods.steamagerevolution.Distiller.addRecipe(ILiquidStack, IItemStack outputStack, ILiquidStack, int craftTime, int steamCost);
+mods.steamagerevolution.Distiller.addRecipe(<liquid:bio_fuel>*1000, <minecraft:dirt>, <liquid:ethanol>*1000, 200, 200;
 ```
 
-## Removal
+## Usuwanie
 
-```zenscript mods.steamagerevolution.Distiller.removeRecipe(IItemStack outputStack, ILiquidStack output); mods.steamagerevolution.Distiller.removeRecipe(<minecraft:cobblestone>, <liquid:lava>);
+```zenscript mods.steamagerevolution.Distiller.removeRecipe(IItemStack outputStack, ILiquidStack); mods.steamagerevolution.Distiller.removeRecipe(<minecraft:cobblestone>, <liquid:lava>);
 
 mods.steamagerevolution.Distiller.removeAll(); ``

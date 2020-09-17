@@ -1,30 +1,30 @@
 # IBiome
 
-The IBiome interface allows you to retrieve information on a registered Biome.
+Mit der IBiome-Schnittstelle können Sie Informationen über ein registriertes Biom abrufen.
 
 ## Dieses Paket importieren
 
-It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
-`import crafttweaker.world.IBiome;`
+Möglicherweise ist es erforderlich, dass Sie das Paket importieren, wenn Sie irgendwelche Probleme haben (z.B. [Array](/AdvancedFunctions/Arrays_and_Loops/)), also besser sicher sein als bedauern und fügen Sie den Import.  
+`importiere craftweaker.world.IBiome;`
 
-## Calling an IBiome
+## Ein IBiom aufrufen
 
 You can get a list of all registered Biomes using `game.biomes` from [IGame](/Vanilla/Game/IGame/) That is currently the only way
 
 ## ZenGetter
 
-Atm, all you can do with an IBiome object is retrieving some information out of it:
+Atm, alles, was du mit einem IBiome-Objekt tun kannst, holt einige Informationen daraus:
 
-| ZenGetter                    | Rückgabetyp |
-| ---------------------------- | ----------- |
-| name                         | string      |
-| canRain                      | boolean     |
-| isSnowyBiome                 | boolean     |
-| highHumidity                 | boolean     |
-| spawningChance               | float       |
-| baseHeight                   | float       |
-| heightVariation              | float       |
-| rainfall                     | float       |
-| waterColorMultiplier         | int         |
-| ignorePlayerSpawnSuitability | boolean     |
-| temperature                  | float       |
+| ZenGetter                | Rückgabetyp |
+| ------------------------ | ----------- |
+| name                     | string      |
+| canRain                  | boolean     |
+| isSnowyBiome             | boolean     |
+| hohe Luftfeuchtigkeit    | boolean     |
+| spawningChance           | float       |
+| baseHöhe                 | float       |
+| heightVariation          | float       |
+| regnerisch               | float       |
+| wasserColorMultiplikator | int         |
+| ignorePlayerSpawnEignung | boolean     |
+| Temperatur               | float       |

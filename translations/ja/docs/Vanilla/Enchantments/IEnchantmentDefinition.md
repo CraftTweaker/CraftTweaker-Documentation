@@ -1,32 +1,32 @@
 # IEnchantmentDefinition
 
-An IEnchantmentDefinition is the actual Enchantment, it does not posess a level, but you can use this to retrieve information on the Enchantment.
+IEnchantmentDefinitionは実際のエンチャントであり、レベルを表すものではありませんが、エンチャントに関する情報を取得するためにこれを使用することができます。
 
 ## パッケージのインポート
 
 It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
 `import crafttweaker.enchantments.IEnchantmentDefinition;`
 
-## Retrieving such an object
+## そのようなオブジェクトを取得しています
 
-You can retrieve such an object from the [Enchantment Bracket handler](/Vanilla/Brackets/Bracket_Enchantment/) or from an [IEnchantment](/Vanilla/Enchantments/IEnchantment/) object.
+このようなオブジェクトは、 [エンチャントのブラケットハンドラ](/Vanilla/Brackets/Bracket_Enchantment/) または [IEnchantment](/Vanilla/Enchantments/IEnchantment/) オブジェクトから取得できます。
 
 ## ZenGetters/ZenSetters
 
-| ZenGetter             | ZenSetter | Type    |
-| --------------------- | --------- | ------- |
-| id                    |           | int型    |
-| name                  | name      | string  |
-| maxLevel              |           | int     |
-| minLevel              |           | int     |
-| isAllowedOnBooks      |           | boolean |
-| isTreasureEnchantment |           | boolean |
-| isCurse               |           | boolean |
-| registryName          |           | string  |
+| ZenGetter             | ZenSetter | タイプ      |
+| --------------------- | --------- | -------- |
+| id                    |           | int型     |
+| 名前                    | 名前        | 文字列      |
+| maxLevel              |           | int      |
+| minLevel              |           | int      |
+| isAllowedOnBooks      |           | boolean型 |
+| isTreasureEnchantment |           | boolean型 |
+| isCurse               |           | boolean型 |
+| registryName          |           | 文字列      |
 
 ## ZenMethods
 
-### CanApply
+### 適用できません
 
 Checks if the enchantment can be put on the item.  
 First method checks in general, second checks if the item can be enchanted to this enchantment using the enchantment Table.  
@@ -39,15 +39,15 @@ ench.canApplyAtEnchantmentTable(IItemStack item);
 
 ### getEnchantability
 
-Checks what enchantability the item must have for the Enchantment at the given level.  
-Both methods return an int and take the level of the enchantment as int parameter.
+アイテムが与えられたレベルでエンチャントに必要なエンチャント性をチェックします。  
+両方のメソッドはintを返し、エンチャントのレベルをintパラメータとして取ります。
 
 ```zenscript
 ench.getMinEnchantability(int level);
 ench.getMaxEnchantability(int level);
 ```
 
-### TranslatedName
+### 翻訳者名
 
 Returns the translated name (e.g. "smite IV").  
 Returns a string and requires the level of the enchantment as int parameter.  
@@ -57,16 +57,16 @@ Does the same as [IEnchantment's](/Vanilla/Enchantments/IEnchantment/) `.display
 ench.getTranslatedName(int level);
 ```
 
-### make Enchantment
+### エンチャントをする
 
-By giving an EnchantmentDefinition a level you can make an [IEnchantment](/Vanilla/Enchantments/IEnchantment/) out of it:
+EnchantmentDefinition にレベルを与えることで、 [IEnchantment](/Vanilla/Enchantments/IEnchantment/) を作成できます。
 
 ```zenscript
 ench.makeEnchantment(int level);
 ench * level;
 ```
 
-### Compare with other IEnchantmentDefinition objects
+### 他のIEnchantmentDefinitionオブジェクトと比較
 
 You can use the `==` operator to check if two enchantments are the same.  
 This means if they have the same id.
@@ -76,7 +76,7 @@ if(enchA == enchB)
     print("Same!");
 ```
 
-## Example
+## 例
 
 ```zenscript
 import crafttweaker.enchantments.IEnchantmentDefinition;

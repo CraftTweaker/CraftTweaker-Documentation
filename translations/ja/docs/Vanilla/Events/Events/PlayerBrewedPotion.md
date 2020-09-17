@@ -1,25 +1,25 @@
 # PlayerBrewedPotion
 
-The PlayerBrewedPotion Event is fired whenever a player takes out a potion from the brewing stand.
+プレイヤーが醸造台からポーションを取り出すたびに、PlayerBrewedPotionイベントが発生します。
 
-## Event Class
+## イベントクラス
 
 You will need to cast the event in the function header as this class:  
 `crafttweaker.event.PlayerBrewedPotionEvent`  
 You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
 
-## Event interface extensions
+## イベントインターフェースの拡張
 
-PlayerBrewedPotion Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+PlayerBrewedPotion Eventsは以下のインターフェースを実装し、すべてのメソッド/getters/settersを呼び出すことができます。
 
 - [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
 
 ## ZenGetters
 
-The following information can be retrieved from the event:
+イベントから次の情報を取得できます。
 
-| ZenGetter | Return Type                              |
+| ZenGetter | 戻り値                                      |
 | --------- | ---------------------------------------- |
-| `player`  | [IPlayer](/Vanilla/Players/IPlayer/)     |
-| `potion`  | [IItemStack](/Vanilla/Items/IItemStack/) |
-| `hand`    | string                                   |
+| `プレイヤー`   | [IPlayer](/Vanilla/Players/IPlayer/)     |
+| `ポーション`   | [IItemStack](/Vanilla/Items/IItemStack/) |
+| `手`       | 文字列                                      |

@@ -1,30 +1,30 @@
-# DryingBasin
+# Trockenbecken
 
-This package allows you to modify recipes for the Drying Basin.
+Dieses Paket erlaubt es dir, Rezepte für das Trockenbecken zu ändern.
 
 ## Dieses Paket importieren
 
-If you want to import this package, here you go:
+Wenn Sie dieses Paket importieren möchten, gehen Sie hier:
 
 ```zenscript
-import mods.integrateddynamics.DryingBasin;
+importieren mods.integrateddynamics.DryingBasin;
 ```
 
-## Adding Recipes
+## Rezepte hinzufügen
 
 ```zenscript
 //DryingBasin.addRecipe(@Optional IItemStack inputStack, @Optional ILiquidStack inputFluid, @Optional IItemStack outputStack, @Optional ILiquidStack outputFluid, @Optional(10) int duration);
 
-DryingBasin.addRecipe(<minecraft:melon>, <liquid:lava> * 100, <minecraft:stick>, <liquid:water> * 100, 10);
+DryingBasin. ddRecipe(<minecraft:melon>, <liquid:lava> * 100, <minecraft:stick>, <liquid:water> * 100, 10);
 ```
 
-## Removing Recipes
+## Rezepte entfernen
 
 ```zenscript
 //DryingBasin.removeRecipe(@Optional IItemStack inputStack, @Optional ILiquidStack inputFluid, @Optional IItemStack outputStack, @Optional ILiquidStack outputFluid, @Optional(10) int duration);
-DryingBasin.removeRecipe(<minecraft:melon>, <liquid:lava> * 100, <minecraft:stick>, <liquid:water> * 100, 10);
+DryingBasin. emoveRecipe(<minecraft:melon>, <liquid:lava> * 100, <minecraft:stick>, <liquid:water> * 100, 10);
 
 
-//DryingBasin.removeRecipesWithOutput(@Optional IItemStack outputStack, @Optional ILiquidStack outputFluid);
+//DryingBasin. emoveRecipesWithOutput(@Optional IItemStack outputStack, @Optional ILiquidStack outputFluid);
 DryingBasin.removeRecipesWithOutput(<minecraft:leather>, null);
 ```

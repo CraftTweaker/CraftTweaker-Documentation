@@ -1,17 +1,17 @@
-## Scrap Box
+## Boîte à fragmentation
 
-## Package
+## Paquet
 
 ```zenscript
-import mods.ic2.ScrapBox;
+Importer mods.ic2.ScrapBox ;
 ```
 
-### Methods
+### Méthodes
 
-- See [ScrapBox (From IC2 Tweaker)](/Mods/IC2Tweaker/Scrap_Box/) for info on other methods.
-- **[ItemStack](/Vanilla/Items/IItemStack/) item** The entry being removed from the scrap box drop pool. Will cause drop chances of all other tiems to be recalculated.
+- Voir [ScrapBox (From IC2 Tweaker)](/Mods/IC2Tweaker/Scrap_Box/) pour plus d'informations sur d'autres méthodes.
+- **[ItemStack](/Vanilla/Items/IItemStack/) élément** L'entrée étant retirée de la réserve de ferraille. Fait que les chances de tomber de tous les autres timbres soient recalculées.
 
-## Remove Drop (IItemStack)
+## Supprimer le Drop (IItemStack)
 
 ```zenscript
     ScrapBox.removeDrop(IItemStack item);

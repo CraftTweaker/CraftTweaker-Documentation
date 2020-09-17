@@ -1,21 +1,21 @@
-# PlayerRightClickItem
+# Clic derecho del jugador
 
-The PlayerRightClickItem Event is fired shortly before an item's functionality is fired. It is not fired if the player is targetting a block or entity. It can be canceled to prevent any other events from taking place. If the event is canceled, a specific result of allow, deny, or pass can be provided. By default, the result is pass.
+El evento Jugador ClicktItem se activa poco antes de que se active la funcionalidad de un elemento. No se dispara si el jugador está apuntando a un bloque o entidad. Puede ser cancelado para evitar que se produzcan otros acontecimientos. Si el evento es cancelado, se puede proporcionar un resultado específico de permitir, denegar o pasar. Por defecto, el resultado es pasado.
 
-## Event Class
-You will need to cast the event in the function header as this class:  
-`crafttweaker.event.PlayerRightClickItemEvent`  
-You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
+## Clase de evento
+Necesitarás lanzar el evento en la cabecera de la función como esta clase:  
+`crafttweaker.event. layerRight ClickItemEvent`  
+Puede, por supuesto, también [importar](/AdvancedFunctions/Import/) la clase antes y utilizar ese nombre entonces.
 
-## Event interface extensions
-PlayerRightClickItem Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+## Extensiones de la interfaz de eventos
+Los eventos PlayerRight ClickItem implementan las siguientes interfaces y son capaces de llamar a todos sus métodos/getters/setters también:
 
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
-- [PlayerInteract](/Vanilla/Events/Events/PlayerInteract/)
+- [Interacto del jugador](/Vanilla/Events/Events/PlayerInteract/)
 
 ## ZenGetters & ZenSetters
-The following information can be adjusted in the event.
+La siguiente información puede ser ajustada en el evento.
 
-| ZenGetter            | ZenSetter            | type                                  |
-| -------------------- | -------------------- | ------------------------------------- |
-| `cancellationResult` | `cancellationResult` | string ("allow" / "deny" / "default") |
+| ZenGetter                   | Ajuste                      | tipo                                  |
+| --------------------------- | --------------------------- | ------------------------------------- |
+| `resultados de cancelación` | `resultados de cancelación` | cadena ("allow" / "deny" / "default") |

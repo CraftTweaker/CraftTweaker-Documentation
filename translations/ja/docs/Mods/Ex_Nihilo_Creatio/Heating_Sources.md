@@ -1,16 +1,16 @@
-# Heating Sources
+# ソースを加熱中
 
-## Package
+## パッケージ
 ```zenscirpt
 `mods.exnihilocreatio.Heat`
 ```
 
-## Methods
+## メソッド
 
-- **[IItemStack](/Vanilla/Items/IItemStack/) input** The block that supplies heat.
-- **Int heat** heat per instance.
+- **[IItemStack](/Vanilla/Items/IItemStack/) 入力** 熱を供給するブロック。
+- **Int heat** はインスタンスあたりの熱です。
 
-## Addition
+## 加算
 
 ```zenscript
 mods.exnihilocreatio.Heat.addRecipe(IItemStack, Int);
@@ -18,7 +18,7 @@ mods.exnihilocreatio.Heat.addRecipe(IItemStack, Int);
 mods.exnihilocreatio.Heat.addRecipe(<minecraft:log>, 20);
 ```
 
-## Removal
+## 削除
 
 ```zenscript
 mods.exnihilocreatio.Heat.removeAll();

@@ -1,32 +1,32 @@
 # PartDataPiece
 
-A part Data piece can be added to a [PartType](/Mods/ContentTweaker/Materials/Parts/PartType/) to be able to add some [MaterialPartData](/Mods/ContentTweaker/Materials/Materials/MaterialPartData/) to [MaterialParts](/Mods/ContentTweaker/Materials/Materials/MaterialPart/) created with [Parts](/Mods/ContentTweaker/Materials/Parts/Part/) that are of this [PartType](/Mods/ContentTweaker/Materials/Parts/PartType/).
+部件数据块可以添加到 [部件类型](/Mods/ContentTweaker/Materials/Parts/PartType/) 以便能够将一些 [材料部件数据](/Mods/ContentTweaker/Materials/Materials/MaterialPartData/) 添加到 [材料部件](/Mods/ContentTweaker/Materials/Materials/MaterialPart/) 与 [部件](/Mods/ContentTweaker/Materials/Parts/Part/) 是这个 [类型部件](/Mods/ContentTweaker/Materials/Parts/PartType/)
 
 ## 导入相关包
 
-It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
-`import mods.contenttweaker.PartDataPiece;`
+如果您遇到任何问题，可能需要导入软件包，所以比抱歉更安全并添加导入。  
+`导入 mods.contenttweaker.PartDataPiece；`
 
-## Retrieving such an object
+## 正在获取此对象
 
-You can get a List of a [Parts](/Mods/ContentTweaker/Materials/Parts/Part/) DataPieces using `getData()` on a [Part](/Mods/ContentTweaker/Materials/Parts/Part/).
+您可以使用 `getData()` 在 [部分](/Mods/ContentTweaker/Materials/Parts/Part/) 获取一个 [元件的列表](/Mods/ContentTweaker/Materials/Parts/Part/) DataPieces
 
-Alternatively, you can register a new PartDataPiece using the [MaterialSystem](/Mods/ContentTweaker/Materials/MaterialSystem/):
+或者，您可以使用 [材料系统](/Mods/ContentTweaker/Materials/MaterialSystem/) 注册一个新的 PartDataPiece ：
 
 ```zenscript
-mods.contenttweaker.MaterialSystem.createPartDataPiece(String name, boolean required)
+mods.contenttweeper.MaterialSystem.createPartDataPiece(需要输入布尔名称)
 ```
 
-Parameters:
+参数：
 
-- String name: The new PartDataPiece's name
-- boolean required: Is the PartDataPiece required to be present on a [MaterialParts](/Mods/ContentTweaker/Materials/Materials/MaterialPart/) in order to register it?
+- 字符串名称：新的 PartDataPiece 名称
+- 必须输入布尔值：是否需要 PartDataPiece 在 [材料部件](/Mods/ContentTweaker/Materials/Materials/MaterialPart/) 上进行注册？
 
 ## ZenMethods
 
-You can retrieve the following information from a PartType:
+您可以从 PartType检索以下信息：
 
-| ZenMethod    | 返回值类型  |
-| ------------ | ------ |
-| getName()    | string |
-| isRequired() | string |
+| ZenMethod（ZenMethod） | 返回值类型  |
+| -------------------- | ------ |
+| getName()            | string |
+| Requireed()          | string |

@@ -1,8 +1,8 @@
-# Material Bracket Handler
+# Обработчик с фигурными скобками
 
-The Material Bracket handler's sole purpose is providing you with [Material Representations](/Mods/ContentTweaker/Tinkers_Construct/Material/).
+Единственная цель обработчика Material Bracket заключается в том, чтобы предоставить вам [Материалы](/Mods/ContentTweaker/Tinkers_Construct/Material/).
 
-You use the trait bracket handler like this:
+Вы используете комбинацию симптомов следующим образом:
 
 ```zenscript
 <ticonmaterial:identifier>
@@ -10,4 +10,4 @@ You use the trait bracket handler like this:
 <ticonmaterial:iron>
 ```
 
-If the Material is found, this will return an Material Representation Object. Please refer to the [respective Wiki entry](/Mods/ContentTweaker/Tinkers_Construct/Material/) for further information on what you can do with these.
+Если Материал найден, он возвращает объект Представления Материалов. Пожалуйста, обратитесь к [соответствующей вики](/Mods/ContentTweaker/Tinkers_Construct/Material/) для получения дополнительной информации о том, что вы можете сделать с этим.

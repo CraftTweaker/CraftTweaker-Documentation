@@ -1,34 +1,34 @@
 # IItemFoodEaten
 
-The IItemFoodEaten function is called whenever the associated [food item](/Mods/ContentTweaker/Vanilla/Creatable_Content/ItemFood/) is eaten. Note that this event *will not fire* if the item already has a provided [IItemUseFinish](/Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemUseFinish/).
+Die Funktion IItemFoodEaten wird aufgerufen, wenn das zugehörige [Lebensmittel Element](/Mods/ContentTweaker/Vanilla/Creatable_Content/ItemFood/) gegessen wird. Note that this event *will not fire* if the item already has a provided [IItemUseFinish](/Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemUseFinish/).
 
 ## Dieses Paket importieren
 
-It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
-`import mods.contenttweaker.IItemFoodEaten;`
+Es kann erforderlich sein, dass Sie das Paket importieren, wenn Sie irgendwelche Probleme haben. Seien Sie also besser sicher als entschuldigen und fügen Sie den Import hinzu.  
+`importieren mods.contenttweaker.IItemFoodEaten;`
 
-## Parameters
+## Parameter
 
-The IItemFoodEaten is a function with the following parameters (In this order):
+Das IItemFoodEaten ist eine Funktion mit den folgenden Parametern (In dieser Reihenfolge):
 
-- [IMutableItemStack](/Mods/ContentTweaker/Vanilla/Types/Item/IMutableItemStack/) mutableItemStack → The food item being eaten.
-- [IWorld](/Mods/ContentTweaker/Vanilla/Types/World/IWorld/) world → The world the player is in
-- [CTPlayer](/Mods/ContentTweaker/Vanilla/Types/Player/ICTPlayer/) player → The player eating the food.
+- [IMutableItemStack](/Mods/ContentTweaker/Vanilla/Types/Item/IMutableItemStack/) mutableItemStack → Das Futter wird gegessen.
+- [IWorld](/Mods/ContentTweaker/Vanilla/Types/World/IWorld/) Welt → Die Welt, in der der Spieler ist
+- [CTPlayer](/Mods/ContentTweaker/Vanilla/Types/Player/ICTPlayer/) Spieler → Der Spieler, der das Essen frisst.
 
-## Examples
+## Beispiele
 
 ```zenscript
 #loader contenttweaker
 
-import mods.contenttweaker.VanillaFactory;
+importiert mods.contenttweaker.VanillaFactory;
 
 var item = VanillaFactory.createItem("suspicious_soup");
 
 item.healAmount = 4;
 item.saturation = 1.5;
-item.onItemFoodEaten = function(stack, world, player) {
+item. nItemFoodEaten = function(stack, world player) {
     if (!world.isRemote()) {
-        player.addPotionEffect(<potion:minecraft:weakness>.makePotionEffect(60, 1));
+        player. ddPotionEffect(<potion:minecraft:weakness>.makePotionEffect(60, 1));
     }
 };
 item.register();

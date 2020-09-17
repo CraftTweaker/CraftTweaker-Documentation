@@ -1,77 +1,77 @@
 # Tree Tweaker
 
-Tree Tweaker is a CraftTweaker addon that allows you to add custom trees to world generation. The shape, height, leaves, logs, frequency, biome, and more can all be customized through zenscript. Trees can use modded blocks and be set to generate in modded biomes.
+Tweaker дерева является аддоном CraftTweaker, который позволяет добавлять пользовательские деревья к мировому поколению. Форма, высота, листья, бревна, частота, биома и многое другое можно настроить с помощью zenscript. Деревья могут использовать модовые блоки и быть настроены для генерации в модном биоме.
 
-## CraftTweaker Integration
+## Интеграция CraftTweaker
 
-Tree Tweaker issues should be discussed at the [Tree Tweaker issue tracker](https://github.com/superfluke/treetweaker/issues).
+Проблемы дерева Tweaker должны обсуждаться в [Tweaker Issues tracker](https://github.com/superfluke/treetweaker/issues).
 
-## Package
+## Пакет
 
 `import mods.treetweaker.TreeFactory;`
 
-## Script Requirements
+## Требования сценария
 
 #### var **newtree = TreeFatory.createTree("newtree");**
 
-create a new tree called `newtree`, using the variable`newtree`
+создайте новое дерево под названием `newtree`, используя переменную`newtree`
 
 `var newtree = TreeFactory.createTree("newtree");`
 
 #### newtree.setTreeType("TREE_TYPE");
 
-set which type of tree shape to generate as. Accepts OAK, SPRUCE, JUNGLE, BIRCH, ACACIA, and DARK_OAK. `newtree.setTreeType("SPRUCE");`
+задать тип формы дерева для генерации как Принимает OAK, SPRUCE, JUNGLE, BIRCH, ACACACIA и DARK_OAK. `newtree.setTreeType("SPRUCE");`
 
 #### newtree.register();
 
-register tree to add to worldgen. Make sure to call this method last. `newtree.register();`
+зарегистрировать дерево, чтобы добавить в worldgen. Не забудьте вызвать этот метод в последнюю очередь. `newtree.register();`
 
-## Optional Syntaxes
+## Необязательные синтаксисы
 
 #### newtree.setLog("modid:itemid");
 
-set what log to use  
-`newtree.setLog("minecraft:wool:3");`
+укажите какой журнал использовать  
+`newtree.setLog(("minecraft:wool:3");`
 
 #### newtree.setLeaf("modid:itemid");
 
-set what leaf to use  
+установите какой лист использовать  
 `newtree.setLeaf("minecraft:melon_block");`
 
 #### newtree.setMinHeight(INT);
 
-set the minimum height of the tree. `newtree.setMinHeight(5);`
+задать минимальную высоту дерева. `newtree.setMinHeight(5);`
 
 #### newtree.setExtraHeight(INT);
 
-Extra height randomly added when tree generates `treename.setExtraHeight(5);`
+Дополнительная высота случайно добавляется, когда дерево генерирует `дерева.setExtraHeight(5);`
 
 #### newtree.setGenFrequency(INT);
 
-Used to control how often a tree generates, successfully spawning at a rate of 1 in N attempts `newtree.setGenFrequency(5)`
+Используется для управления частотой генерации дерева, успешно спавна со скоростью 1 в попытках N `newtree.setGenFrequency(5)`
 
 #### newtree.setGenAttempts(INT);
 
-How many trees should try to spawn during a successful generation attempt. Can be used to make clusters of trees `newtree.setGenAttempts(1)`
+Сколько деревьев должно появляться во время успешной попытки поколения. Может быть использован для создания кластеров деревьев `newtree.setGenAttempts(1)`
 
 #### newtree.extraThick=boolean;
 
-Makes tree trunk generate as 2x2 thick. Only valid on LARGE_OAK, PINE, CANOPY, and SPRUCE trees `newtree.extraThick=true;`
+Делает дерево сгенерировать толщиной 2x2. Допустимо только для деревьев LARGE_OAK, PINE, CANOPY и SPRUCE `newtree.extraThick=true;`
 
 #### newtree.setGenBiome("string:string");
 
-Set the biome of spawning, ignoring typical biome rules.  
-If not set, the tree will generate in all biomes that normally contain trees.  
+Установите биом спавна, игнорируя типичные биомные правила.  
+Если дерево не установлено, дерево будет генерировать во всех биомах, которые обычно содержат деревья.  
 `newtree.setGenBiome("minecraft:plains")`
 
 #### newtree.setGenBiomeByTag("STRING");
 
-Biome tag tree can generate in (HOT, SWAMP, SNOWY...), ignoring typical biome tree rules . Will not function unless spawnBiome is null. `newtree.setGenBiomeByTag("HOT");`
+Дерево тегов биома может генерироваться в (HOT, SWAMP, SNOWY...), игнорируя обычные правила биома . Не будет работать, пока spawnBiome не будет нулевым. `newtree.setGenBiomeByTag("HOT");`
 
 #### newtree.setBaseBlock("modid:itemid")
 
-What block the tree should generate on top of. If not set, will default to blocks valid for vanilla trees (grass, dirt, farmland) `newtree.setBaseBlock("minecraft:dirt");`
+Какой блок дерево должно генерироваться поверх него. Если не установлено, будет блокировать действительные для ванильных деревьев (трава, земля, земля) `newtree.setBaseBlock("minecraft:dirt");`
 
 #### newtree.setDimWhitelist(INT);
 
-Either single int or array of ints listing dimension IDs the tree may generate in. If null, may generate in any dimension `newtree.setDimWhitelist(0);`
+Либо одинарная подсказка, либо массив ints, перечисляющих идентификаторы измерений, которые могут генерироваться деревом. Если null, может генерировать в любом измерении `newtree.setDimWhitelist(0);`

@@ -1,24 +1,24 @@
-# Item
+# Élément
 
-This allows you to add items to the game!
+Cela vous permet d'ajouter des objets au jeu!
 
-## Create the Item Representation
+## Créer la représentation de l'élément
 
-Before you can add the item, you need to create an Item Representation which will allow you to set the properties of the item you want to add.  
-This is where the [VanillaFactory](/Mods/ContentTweaker/Vanilla/Creatable_Content/VanillaFactory/) comes in:
+Avant de pouvoir ajouter cet élément, vous devez créer une représentation d'élément qui vous permettra de définir les propriétés de l'élément que vous souhaitez ajouter.  
+C'est là que la [VanillaFactory](/Mods/ContentTweaker/Vanilla/Creatable_Content/VanillaFactory/) arrive dans:
 
 ```zenscript
 mods.contenttweaker.VanillaFactory.createItem(String unlocalizedName);
 ```
 
-## Import the representation Package
+## Importer le package de représentation
 
-It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
-`import mods.contenttweaker.Item;`
+Il pourrait vous être nécessaire d'importer le paquet si vous rencontrez des problèmes, donc mieux vaut être sûr que désolé et ajouter l'importation.  
+`importer mods.contenttweaker.Item;`
 
-## ZenProperties
+## Propriétés Zen
 
-To get/set the properties you can either use the respecting ZenGetters/Setters or the ZenMethods:
+Pour obtenir/définir les propriétés, vous pouvez soit utiliser les ZenGetters/Setters en respectant ou les méthodes Zen:
 
 ```zenscript
 //property name: maxStackSize
@@ -31,67 +31,67 @@ item.getMaxStackSize();
 item.setMaxStackSize(64);
 ```
 
-| Property Name         | Type                                                                                                            | Required | Default Value | Description/Notes                                                                    |
-| --------------------- | --------------------------------------------------------------------------------------------------------------- | -------- | ------------- | ------------------------------------------------------------------------------------ |
-| beaconPayment         | boolean                                                                                                         | No       | false         | Can be given to a beacon to enable bonuses                                           |
-| creativeTab           | [ICreativeTab](/Mods/ContentTweaker/Vanilla/Creatable_Content/Creative_Tab/)                                    | No       | Misc          | The Creative tab the item will be put in                                             |
-| glowing               | boolean                                                                                                         | No       | false         | Can be used to give your item the glowing effect (as if it were enchanted).          |
-| itemColorSupplier     | [IItemColorSupplier](/Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemColorSupplier/)         | No       | -1 as color   | The item's color                                                                     |
-| itemDestroyedBlock    | [IItemDestroyedBlock](/Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemDestroyedBlock/)       | No       | false         | What happens when the item just destroyed a block?                                   |
-| itemDestroySpeed      | [IItemDestroySpeed](/Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemDestroySpeed/)           | No       | null          | Determines the Item's block breaking speed.                                          |
-| itemGetContainerItem  | [IItemGetContainerItem](/Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemGetContainerItem/)   | No       | null          | What will remain in the crafting grid when this item was used in a recipe?           |
-| itemRightClick        | [IItemRightClick](/Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemRightClick/)               | No       |               | Called when the player right clicks with the item                                    |
-| itemUseAction         | EnumUseAction                                                                                                   | No       | "NONE"        | What animation the item use will have ("NONE", "EAT", "DRINK", "BLOCK", "BOW")       |
-| localizedNameSupplier | [ILocalizedNameSupplier](/Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/ILocalizedNameSupplier/) | No       | null          | Can be used to programmatically determine your item's display name                   |
-| maxDamage             | int                                                                                                             | No       | -1            | How many uses does the item have? Less than 0 means it cannot be damaged             |
-| maxStackSize          | int                                                                                                             | No       | 64            | How many items can fit in one Stack? Less than 0 means standart stack size (64)      |
-| onItemUpdate          | [IItemUpdate](/Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemUpdate/)                       | No       | null          | Called every tick as long as the item is in a player's inventory                     |
-| onItemUse             | [IItemUse](/Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemUse/)                             | No       | null          | Called when the player right click on a block with the item                          |
-| onItemUseFinish       | [IItemUseFinish](/Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemUseFinish/)                 | No       | null          | Called when the player finishes using the item                                       |
-| rarity                | EnumRarity                                                                                                      | No       | COMMON        | How rare an item is, determines ToolTip color ("COMMON", "UNCOMMON", "RARE", "EPIC") |
-| smeltingExprerience   | float                                                                                                           | No       | -1            | How much experienve the player earns for smelting that item in a furnace?            |
-| textureLocation       | [CTResourceLocation](/Mods/ContentTweaker/Vanilla/Types/Resources/CTResourceLocation/)                          | No       | null          | The item's resource location, used for textures etc.                                 |
-| toolClass             | string                                                                                                          | No       |               | What block types the tool can break                                                  |
-| toolLevel             | int                                                                                                             | No       | -1            | The level of blocks can be broken                                                    |
-| unlocalizedName       | string                                                                                                          | Yes      |               | Name, should be all lowercase                                                        |
+| Nom de la propriété               | Type de texte                                                                                                             | Requis | Valeur par défaut | Description/Notes                                                                                                |
+| --------------------------------- | ------------------------------------------------------------------------------------------------------------------------- | ------ | ----------------- | ---------------------------------------------------------------------------------------------------------------- |
+| beaconPayment                     | boolean                                                                                                                   | Non    | Faux              | Peut être donné à une balise pour activer les bonus                                                              |
+| Onglet créatif                    | [Onglet ICreative](/Mods/ContentTweaker/Vanilla/Creatable_Content/Creative_Tab/)                                          | Non    | Divers            | L'onglet Créatif dans lequel l'élément sera placé                                                                |
+| scintillant                       | boolean                                                                                                                   | Non    | Faux              | Peut être utilisé pour donner à votre objet l'effet brillant (comme s'il était enchanté).                        |
+| format@@0 itemColorSupplier       | [IItemColorSupplier](/Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemColorSupplier/)                   | Non    | -1 comme couleur  | La couleur de l'élément                                                                                          |
+| Éléments détruits                 | [IItemDétruit](/Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemDestroyedBlock/)                        | Non    | Faux              | Que se passe-t-il lorsque l'objet vient de détruire un bloc?                                                     |
+| Vitesse de destruction des objets | [Vitesse de destruction de l'IIème](/Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemDestroySpeed/)     | Non    | null              | Détermine la vitesse de rupture du bloc de l'objet.                                                              |
+| itemContainerItem                 | [IItemGetContainerItem](/Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemGetContainerItem/)             | Non    | null              | Que reste-t-il dans la grille de fabrication lorsque cet objet a été utilisé dans une recette ?                  |
+| Clic droit de l'élément           | [IItemRightClick](/Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemRightClick/)                         | Non    |                   | Appelé lorsque le joueur clique droit avec l'objet                                                               |
+| Utiliser une action               | Utiliser une action                                                                                                       | Non    | "NONE"            | Quelle animation aura l'élément ("NONE", "EAT", "DRINK", "BLOCK", "BOW")                                         |
+| Nom de fournisseur localisé       | [Nom du fournisseur de traduction](/Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/ILocalizedNameSupplier/) | Non    | null              | Peut être utilisé pour déterminer par programme le nom d'affichage de votre objet                                |
+| maxDamage                         | Indice                                                                                                                    | Non    | -1                | Combien d'utilisations contient l'élément ? Moins de 0 signifie qu'il ne peut pas être endommagé                 |
+| maxStackSize                      | Indice                                                                                                                    | Non    | 64                | Combien d'objets peuvent être rangés dans une seule pile? Moins de 0 signifie la taille de la pile standard (64) |
+| onItemUpdate                      | [IItemUpdate](/Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemUpdate/)                                 | Non    | null              | Appelé chaque tick tant que l'objet est dans l'inventaire d'un joueur                                            |
+| onItemUse                         | [IItemUse](/Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemUse/)                                       | Non    | null              | Appelé lorsque le joueur fait un clic droit sur un bloc avec l'objet                                             |
+| format@@0 onItemUseUseFinish      | [format@@0 IItemUseFinish](/Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemUseFinish/)                 | Non    | null              | Appelé quand le joueur termine en utilisant l'objet                                                              |
+| rareté                            | ÉnumRarité                                                                                                                | Non    | COMMUN            | À quel point un élément est rare, détermine la couleur de l'infobulle ("COMMON", "UNCOMMON", "RARE", "EPIC")     |
+| format@@0 smeltingExprerience     | flottant                                                                                                                  | Non    | -1                | Combien d'expérience le joueur gagne pour fondre cet objet dans un four ?                                        |
+| Localisation de la texture        | [format@@0 CTResourceLocation](/Mods/ContentTweaker/Vanilla/Types/Resources/CTResourceLocation/)                          | Non    | null              | L'emplacement de la ressource de l'objet, utilisé pour les textures, etc.                                        |
+| Classe de l'outil                 | chaîne de caractères                                                                                                      | Non    |                   | Quel type de bloc l'outil peut casser                                                                            |
+| Niveauoutil                       | Indice                                                                                                                    | Non    | -1                | Le niveau des blocs peut être cassé                                                                              |
+| unlocalizedName                   | chaîne de caractères                                                                                                      | Oui    |                   | Nom, doit être en minuscule                                                                                      |
 
-## Registering the item
+## Enregistrement de l'article
 
-You need to call this method to register the item in the game!  
-Otherwise nothing will happen!  
-After you have called this function, you cannot un-register the item or change any of it's properties!
+Tu dois appeler cette méthode pour enregistrer l'objet dans le jeu !  
+Sinon, rien ne se passera !  
+Après avoir appelé cette fonction, vous ne pouvez pas désinscrire l'élément ou modifier l'une de ses propriétés !
 
 ```zenscript
 item.register();
 ```
 
-## Example Script
+## Exemple de script
 
 ```zenscript
 #loader contenttweaker
 import mods.contenttweaker.VanillaFactory;
 import mods.contenttweaker.Item;
 import mods.contenttweaker.IItemRightClick;
-import mods.contenttweaker.Commands;
+import mods. ontenttweaker.Commandes;
 
 var zsItem = VanillaFactory.createItem("zs_item");
 zsItem.maxStackSize = 8;
 zsItem.rarity = "rare";
-zsItem.creativeTab = zsCreativeTab;
+zsItem. reativeTab = zsCreativeTab;
 zsItem.smeltingExperience = 10;
 zsItem.toolClass = "pickaxe";
 zsItem.toolLevel = 5;
 zsItem.beaconPayment = true;
-zsItem.itemRightClick = function(stack, world, player, hand) {
-    Commands.call("scoreboard players set @p name 5", player, world);
-    return "Pass";
+zsItem. temRightClick = function(stack, world, player, hand) {
+    Commandes. all("les joueurs du tableau de scores définissent le nom @p 5", le joueur, le monde);
+    retournent "Pass";
 };
 zsItem.register();
 ```
 
-## Localising the item
+## Localisation de l'élément
 
-You will need to add `item.contenttweaker.itemName.name=Localized Name` to the responding language files.  
-Example in en_us.lang file `item.contenttweaker.zsItem.name=Your itemName Here` will show `Your itemName Here` in the game.
+Vous devrez ajouter `item.contenttweaker.itemName.name=Localized Name` aux fichiers de langue correspondants.  
+Exemple dans en_us. fichier ang `item.contenttweaker.zsItem.name=Your itemName Here` will show `Your itemName Here` in the game.
 
-Alternatively, you could use CraftTweaker's [localization feature](/Vanilla/Game/IGame/), though it's recommended using the language files!
+Alternativement, vous pouvez utiliser la fonctionnalité de localisation [de CraftTweaker](/Vanilla/Game/IGame/), bien qu'il soit recommandé d'utiliser les fichiers de langue !

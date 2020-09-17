@@ -1,35 +1,35 @@
-# Bottling Machine
+# Бутылочная машина
 
-## Calling The Package
+## Вызов пакета
 
-You can call the BottlingMachine package using `mods.immersiveengineering.BottlingMachine`.
+Вы можете вызвать пакет BottlingMachine с помощью `mods.immersiveengineering.BottlingMachine`.
 
-## Add Recipe
+## Добавить рецепт
 
-| Required | Type   | Data Type                                           |
-| -------- | ------ | --------------------------------------------------- |
-| Required | Output | [IItemstack](/Vanilla/Items/IItemStack/)            |
-| Required | Input  | [IIngredient](/Vanilla/Variable_Types/IIngredient/) |
-| Required | Fluid  | [Fluidstack](/Vanilla/Liquids/ILiquidStack/)        |
+| Требуется | Тип      | Тип данных                                          |
+| --------- | -------- | --------------------------------------------------- |
+| Требуется | Вывод    | [IItemstack](/Vanilla/Items/IItemStack/)            |
+| Требуется | Input    | [Иингредиент](/Vanilla/Variable_Types/IIngredient/) |
+| Требуется | Жидкость | [Fluidstack](/Vanilla/Liquids/ILiquidStack/)        |
 
-### Example
+### Пример
 
 ```zenscript
-//Example:
-mods.immersiveengineering.BottlingMachine.addRecipe(IItemStack output, IIngredient input, ILiquidStack fluid);
+//Пример:
+mods.immersiveengineering.BottlingMachine.addRecipe(IItemStack, IIngredient input, ILiquidStack fluid);
 mods.immersiveengineering.BottlingMachine.addRecipe(<minecraft:diamond>, <ore:logWood>, <liquid:water>);
 ```
 
-## Remove Recipe
+## Удалить рецепт
 
-| Type   | Data Type                                |
-| ------ | ---------------------------------------- |
-| Output | [IItemstack](/Vanilla/Items/IItemStack/) |
+| Тип   | Тип данных                               |
+| ----- | ---------------------------------------- |
+| Вывод | [IItemstack](/Vanilla/Items/IItemStack/) |
 
-### Example
+### Пример
 
 ```zenscript
-//Example:
-mods.immersiveengineering.BottlingMachine.removeRecipe(IItemStack output);
+//Пример:
+mods.immersiveengineering.BottlingMachine.removeRecipe(выход IItemStack);
 mods.immersiveengineering.BottlingMachine.removeRecipe(<minecraft:diamond>);
 ```

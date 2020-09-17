@@ -1,68 +1,68 @@
-# Crucible
+# 关键的
 
-## Basic Recipe
+## 基本配方
 
-* Adds a Unstoked Crucible Recipe 
-
-```zenscript
-mods.betterwithmods.Crucible.addUnstoked(IIngredient[] inputs, IItemStack[] outputs);
-//Examples
-mods.betterwithmods.Crucible.addUnstoked([<ore:cobblestone>],[<minecraft:stone>]);
-mods.betterwithmods.Crucible.addUnstoked([<minecraft:dirt>],[<minecraft:grass>]);
-```
-
-* Adds a Stoked Crucible Recipe 
+* 添加一个无炉灶的配方 
 
 ```zenscript
-mods.betterwithmods.Crucible.addStoked(IIngredient[] inputs, IItemStack[] outputs);
-//Examples
-mods.betterwithmods.Crucible.addStoked([<ore:cobblestone>],[<minecraft:stone>]);
-mods.betterwithmods.Crucible.addStoked([<minecraft:dirt>],[<minecraft:grass>]);
+mods.betterwithmods.Crucible.addunstoked(IIngredient[……]inputes,IItemStack[……]输出);
+//examps
+mods.betterwithmods.Crucible.addunstoked([<ore:cobblestone>],[<minecraft:stone>]);
+mods.betterwithmods.crucible.addunstoked(<minecraft:dirt>],[<minecraft:grass>]);
 ```
 
-## Removal
-
-* Remove a Crucible recipe based on the output
+* 添加一个商店的残忍配方 
 
 ```zenscript
-mods.betterwithmods.Crucible.remove(IItemStack[] outputs);
+mods.betterwithmods.Crucible.addStoked(IIngredient[Ingredient]inputs;
+//examps
+mods.betterwithmods.crucible.addStoked([<ore:cobblestone>],[<minecraft:stone>]);
+mods.betterwithmods.Crucible.addStoked(<minecraft:dirt>],[<minecraft:grass>]);
 ```
 
-* Remove all Crucible recipes
+## 移除
+
+* 移除基于输出的关键配方
+
+```zenscript
+mods.betterwithmods.Crucible.remove(IItemStack[…]输出);
+```
+
+* 删除所有关键的配方
 
 ```zenscript
 mods.betterwithmods.Crucible.removeAll();
 ```
 
-## Builder
+## 构建器
 
-The Crucible has a recipe builder that allows more precise control over the recipes. All previous methods are simply short cuts to using the builder.
+残忍有一个配方生成器，可以对配方进行更准确的控制。 所有以前的方法都是使用构建器的简单捷径。
 
-* To create a new Crucible builder. `mods.betterwithmods.Crucible.builder()`
+* 创建一个新的残酷建筑器。 `mods.betterwithmods.Crucible.builder()`
 
-* Crucible methods
+* 关键方法
      
-     * Sets up the inputs and outputs of the recipe  
+     * 设置配方的输入和输出  
               zenscript
-              buildRecipe(IIngredient[] inputs, IItemStack[] outputs)
+              buildRecipe(IIngredient[…]输入, IItemStack[…]输出)
      
-     * Sets the priority of the recipe, the lower the priority the sooner it will be crafted. Default=0.  
+     * 设定配方的优先级，优先级越早确定。 默认=0。  
               zenscript
               setPriority(int priority)
      
-     * Set the Heat requirements of the recipe. Heat is used to check if the recipe can be made in a stoked or unstoked Crucible. Unstoked heat = 1, Stoked heat = 2. You can add custom heat sources, and even custom heat levels using the [Heat Registry](/Mods/Modtweaker/BetterWithMods/HeatRegistry/).  
+     * 设置配方的热量要求。 热能用来检查配方是否可以用炉灶或无炉灶。 无炉热=1，存储热=2。 您可以使用 [热注册表](/Mods/Modtweaker/BetterWithMods/HeatRegistry/) 添加自定义的热源，甚至自定义的热量。  
               zenscript
               setHeat(int heat)
      
-     * Set the recipe to ignore the heat value and craft anyways  
+     * 设置配方以忽略热值和制作任何方式  
               zenscript
-              setIgnoreHeat(boolean ignoreHeat)
+              setIgnoreHeat(布尔值忽略热)
      
-     * Finalize the recipe and add it to the game  
+     * 完成配方并将其添加到游戏  
               zenscript
               build()
 
-### Example builder usage
+### 示例生成器使用情况
 
 ```zenscript
 mods.betterwithmods.Crucible.builder()

@@ -1,16 +1,16 @@
-# Robotic Assembly System
+# Système d'assemblage robotisé
 
-The Robotic Assembly System is a multiblock consisting of the Assembly Controller, Assembly I/O Units, Assembly Platform, Assembly Laser and Assembly Drill. It converts input items to output items using the laser and/or drill.
+Le Système d’assemblage robotique est un ensemble multibloc composé du Contrôleur de Ruche, des Unités d'E/S de Ruche, de Plate-forme d’Ruche, du laser d’assemblage et du perçage d’assemblage. Il convertit les éléments d'entrée en sortie en utilisant le laser et/ou le perçage.
 
-There are several functions for adding and removing recipes, depending on whether the recipe requires use of the laser, the drill, or both.
+Il y a plusieurs fonctions pour ajouter et supprimer des recettes, selon que la recette nécessite l'utilisation du laser, de la foreuse ou des deux.
 
-## Calling
+## Appel en cours
 
-You can call the Assembly package using `mods.pneumaticcraft.assembly`.
+Vous pouvez appeler le paquet Ruche en utilisant `mods.pneumaticcraft.assembly`.
 
-## Removing
+## Enlèvement
 
-These functions remove the first recipe they find with the given [IItemStack](/Vanilla/Items/IItemStack/) `output`:
+Ces fonctions suppriment la première recette qu'ils trouvent avec la sortie [IItemStack](/Vanilla/Items/IItemStack/) ``:
 
 ```zenscript
 mods.pneumaticcraft.assembly.removeLaserRecipe(IItemStack output);
@@ -22,17 +22,17 @@ mods.pneumaticcraft.assembly.removeLaserRecipe(<pneumaticcraft:aphorism_tile>);
 mods.pneumaticcraft.assembly.removeDrillRecipe(<pneumaticcraft:pressure_chamber_valve>);
 ```
 
-These functions remove *all* recipes currently defined for the Assembly System:
+Ces fonctions suppriment *toutes les recettes* actuellement définies pour le système de Ruche :
 
 ```zenscript
 mods.pneumaticcraft.assembly.removeAllLaserRecipes();
-mods.pneumaticcraft.assembly.removeAllDrillRecipes();
-mods.pneumaticcraft.assembly.removeAllDrillLaserRecipes();
+mods.pneumaticcraft.removeAllDrillRecipes();
+mods.pneumaticcraft.removeAllDrillLaserRecipes();
 ```
 
-## Adding
+## Ajout en cours
 
-These functions are used to add new recipes for the assembly system:
+Ces fonctions sont utilisées pour ajouter de nouvelles recettes pour le système d'assemblage :
 
 ```zenscript
 mods.pneumaticcraft.assembly.addLaserRecipe(IItemStack input, IItemStack output)

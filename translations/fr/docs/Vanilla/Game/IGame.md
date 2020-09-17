@@ -1,43 +1,43 @@
-# Game Class
+# Classe de jeu
 
-The IGame Class is used to obtain general game information. Can be accessed using `game`
+La classe IGame est utilisée pour obtenir des informations générales sur le jeu. Peut être accédé en utilisant `partie`
 
-## Importing the package
+## Importation du paquet
 
-It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
-`import crafttweaker.game.IGame;`
+Il pourrait vous être nécessaire d'importer le paquet si vous rencontrez des problèmes (comme lancer un [Tableau](/AdvancedFunctions/Arrays_and_Loops/)), alors mieux être sûr que désolé et ajouter l'importation.  
+`importer crafttweaker.game.IGame ;`
 
 ## Zengetters
 
-| Zengetter | What does it do?                        | Return Type                                                     | Usage           |
-| --------- | --------------------------------------- | --------------------------------------------------------------- | --------------- |
-| biomes    | Returns all registered biomes as list   | List<[IBiomes](/Vanilla/Biomes/IBiome/)>                        | `game.biomes`   |
-| blocks    | Returns all registered blocks as list   | List<[IBlockDefinition](/Vanilla/Blocks/IBlockDefinition/)>     | `game.blocks`   |
-| entities  | Returns all registered entities as list | List<[IEntityDefinition](/Vanilla/Entities/IEntityDefinition/)> | `game.entities` |
-| items     | Returns all registered items as list    | List<[IItemDefinition](/Vanilla/Items/IItemDefinition/)>        | `game.items`    |
-| liquids   | Returns all registered liquids as list  | List<[ILiquidDefinition](/Vanilla/Liquids/ILiquidDefinition/)>  | `game.liquids`  |
-| potions   | Returns all registered potions as list  | List<[IPotion](/Vanilla/Potions/IPotion/)>                      | `game.potions`  |
+| Zengetter | Que fait-il?                                              | Type de retour                                                    | Usage                    |
+| --------- | --------------------------------------------------------- | ----------------------------------------------------------------- | ------------------------ |
+| biomes    | Renvoie tous les biomes enregistrés en tant que liste     | Liste<[IBiomes](/Vanilla/Biomes/IBiome/)>                         | `jeu.biomes`             |
+| blocs     | Renvoie tous les blocs enregistrés en tant que liste      | Liste <[IBlockDefinition](/Vanilla/Blocks/IBlockDefinition/)>     | `blocs.game.blocks`      |
+| Entités   | Renvoie toutes les entités enregistrées en tant que liste | Liste <[IEntityDefinition](/Vanilla/Entities/IEntityDefinition/)> | `Entités de jeu`         |
+| Eléments  | Renvoie tous les éléments enregistrés en tant que liste   | Liste <[IItemDefinition](/Vanilla/Items/IItemDefinition/)>        | `Éléments du jeu`        |
+| liquides  | Renvoie tous les liquides enregistrés en tant que liste   | Liste <[ILiquid Definition](/Vanilla/Liquids/ILiquidDefinition/)> | `game.liquids`           |
+| potions   | Renvoie toutes les potions enregistrées en tant que liste | Liste<[IPotion](/Vanilla/Potions/IPotion/)>                       | `format@@0 game.potions` |
 
-## Methods
+## Méthodes
 
 ### GetEntity
 
 ```zenscript
 //getEntity(EntityName)
 
-//essentially the same
-val sheep = game.getEntity("sheep");
-val sheep1 = <entity:minecraft:sheep>;
+//Essentiellement le mouton
+val mouton = game.getEntity("mouton");
+mouton mouton 1 = <entity:minecraft:sheep>;
 ```
 
-### SetLocalization
+### Définir la localisation
 
-Sets the localization.  
-All parameters are strings. `game.setLocalization(key, value);`  
+Définit la localisation.  
+Tous les paramètres sont des chaînes. `game.setLocalization(key, value);`  
 `game.setLocalization(lang, key, value);`
 
-### Localize
+### Localiser
 
-Returns a localized String  
+Retourne une chaîne localisée  
 `game.localize(key)`  
 `game.localize(key, lang)`

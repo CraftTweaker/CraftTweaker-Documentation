@@ -1,64 +1,64 @@
-# Item Transformers
+# 项目变换
 
-Item Transformers transform your crafting inputs upon crafting.  
-This can range from damaging the item up to returning a completely different item.
+物品转换器会在制作时转换你的制造输入。  
+这可以从损坏物品到返回一个完全不同的物品的范围。
 
 ## 导入相关包
 
-It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
-`import crafttweaker.item.IItemTransformer;`
+如果您遇到任何问题，可能需要导入软件包(例如铸造一个 [数组](/AdvancedFunctions/Arrays_and_Loops/)), 这样比抱歉更安全并添加导入。  
+`导入craftminstruer.item.IItemTransformer；`
 
 ```zenscript
-<br />val item = <minecraft:apple>;
+<br />valable item = <minecraft:apple>;
 
-//Item won't be consumed and will stay in the grid
-transformedItem = item.reuse();
+//item 不会被消耗，将保持在网格
+变现item = item。 euse();
 
-//Item won't be consumed and the whole stack will be given back to you (does /give).
-transformedItem = item.giveBack();
+//item不会被消耗, 整个堆栈将被退回给你 (do /give).
+transformeditems = item.giveBack();
 
-//item will be consumed but will give the specified stack to you (the crafting slot will be cleared!).
-transformedItem = item.giveBack(<minecraft:potato>);
+///items 将被消耗，但会给您指定的堆栈(制作槽将被清除!)。
+转化物项=物品。 iveBack(<minecraft:potato>);
 
-//item will be replaced with the specified item, which will instead go to the crafting slot
-transformedItem = item.transformReplace(<minecraft:potato>);
+//item 将被指定项目替换，它将转到制作槽
+变换项= 项目。 赎金替换(<minecraft:potato>);
 
-//damages the item by 1
-transformedItem = item.transformDamage();
+//damage the item by 1
+transformmeditem = item 赎金损害();
 
-//damages the item by the given value
-transformedItem = item.transformDamage(3);
+//damage the item by 给定的值
+transformeditem = item.transformDamage(3);
 
-//item will be consumed, no matter what.
-transformedItem = item.noReturn();
+///item will be consided, what.
+转换项= item.noReturn();
 
-//Causes multiple items to be consumed.
-transformedItem = item.transformConsume(3);
+//Causes 多个要消耗的项目。
+transformeditems = item.transformConsume(3)；
 ```
 
-## Registering own item Transformers
+## 注册自己的项目变换器
 
-### Transform
+### 变换
 
-The old itemTransformer that might cease to exist in 1.13.  
-Thisis a special function that accepts two parameters: The [item](/Vanilla/Items/IItemStack/) itself and the [player](/Vanilla/Players/IPlayer/) performing the crafting.
+可能不存在于1.13中的旧物品变压器。  
+这是一个接受两个参数的特殊函数： [项目](/Vanilla/Items/IItemStack/) 本身和 [玩家](/Vanilla/Players/IPlayer/) 正在进行制造。
 
 ```zenscript
-transformedItem = item.transform(function(item, player) {return item;});
+transformedItem = item.transform(函数, 播放器) {return item;});
 ```
 
-The function needs to return an [IItemStack](/Vanilla/Items/IItemStack/).  
-This stack will replace what's in the crafting slot afterwards. Use `null` to clear that slot.
+函数需要返回一个 [IItemStack](/Vanilla/Items/IItemStack/)。  
+这个堆栈将在以后取代制作槽中的内容。 使用 `null` 来清除那个槽位。
 
-### TransformNew
+### 新建转换
 
-With the new internal recipe system there was a need for a new ItemTransformer. This one only accepts one parameter, that is the item in the slot.
+由于有了新的内部配方系统，需要有一个新的项目变换器。 这只接受一个参数，即栏位中的项目。
 
 ```zenscript
-transformedItem = item.transformNew(function(item){return item;});
+transformeditem = item.transformNew(函数)(项目){return item;});
 ```
 
-The function needs to return an [IItemStack](/Vanilla/Items/IItemStack/).  
-Unlike the other transformer however, this will not be the itemstach that replaces the one in the crafting slot, but the one that is returned for that crafting slot.  
-In other words if you return `null` here, one item will be consumed, any other item that is returned will either be placed in the crafting slot, if possible, or given back to you, same as when dealing with buckets.  
-If you don't really need the player variable, this is the transformer to go for!
+函数需要返回 [IItemStack](/Vanilla/Items/IItemStack/)。  
+与其他变压器不同的 这将不会是取代工作区中的工作区的工作区的工作区，而是返回的工作区的工作。  
+换句话说，如果您返回 `null` 这里将消耗一件物品， 任何其他退回的物品都将放在手工位置， 如果可能，或退回给您，与处理桶时相同。  
+如果你真的不需要玩家变量，那么这个变压器就要去了！

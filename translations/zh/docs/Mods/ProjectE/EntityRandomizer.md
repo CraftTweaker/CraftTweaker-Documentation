@@ -1,38 +1,38 @@
-# Entity Randomizer
+# 实体随机播放器
 
-Adding and removing entities from ProjectE's philosopher's stone entity randomizer projectile uses an [IEntityDefinition](/Vanilla/Entities/IEntityDefinition/).
+将实体添加和移除到项目设计师的石质实体随机抛射物中使用 [IEntityDefinition](/Vanilla/Entities/IEntityDefinition/)。
 
-Note: This [IEntityDefinition](/Vanilla/Entities/IEntityDefinition/) must be for a living entity.
+注意： [IEntityDefinition](/Vanilla/Entities/IEntityDefinition/) 必须是一个活的实体。
 
-## Adding
+## 添加
 
-### addPeaceful
+### 添加
 
 ```zenscript
 mods.projecte.EntityRandomizer.addPeaceful(IEntityDefinition entityDefinition);
 
-// Allows turning peaceful creatures into zombies. 
+// 允许和平生物变成僵尸。 
 mods.projecte.EntityRandomizer.addPeaceful(<entity:minecraft:zombie>);
 ```
 
 ### addMob
 
 ```zenscript
-mods.projecte.EntityRandomizer.addMob(IEntityDefinition entityDefinition);
+mods.projecte.EntityRandomizer.addMob(IentityDefinition entityDefinition);
 
-// Allows turning hostile mobs into pigs.
+// 允许将敌对生物变成猪。
 mods.projecte.EntityRandomizer.addMob(<entity:minecraft:pig>);
 ```
 
 ## 移除配方
 
-### removePeaceful
+### 移除和平
 
 ```zenscript
 mods.projecte.EntityRandomizer.removePeaceful(IEntityDefinition entityDefinition);
 
-// Stops peaceful mobs being able to be turned into pigs.
-mods.projecte.EntityRandomizer.removePeaceful(<entity:minecraft:pig>);
+// 停止和平生物能够变成猪。
+mods.projecte.EntityRandomizer.removePeaceful(<entity:minecraft:pig>)；
 ```
 
 ### removeMob
@@ -40,20 +40,20 @@ mods.projecte.EntityRandomizer.removePeaceful(<entity:minecraft:pig>);
 ```zenscript
 mods.projecte.EntityRandomizer.removeMob(IEntityDefinition entityDefinition);
 
-// Stops hostile mobs being able to be turned into zombies.
+// 停止敌对生物能够变成僵尸。
 mods.projecte.EntityRandomizer.removeMob(<entity:minecraft:zombie>);
 ```
 
-### clearPeacefuls
+### 清除Peacefuls
 
 ```zenscript
-// Removes all randomized peaceful mob entries including ones registered by CraftTweaker before this call.
+// 移除所有随机的和平生物条目，包括CraftTinder在此通话之前注册的条目。
 mods.projecte.EntityRandomizer.clearPeacefuls();
 ```
 
 ### clearMobs
 
 ```zenscript
-// Removes all randomized hostile mob entries including ones registered by CraftTweaker before this call.
+// 移除所有随机的敌对生物条目，包括CraftTinder在此通话之前注册的条目。
 mods.projecte.EntityRandomizer.clearMobs();
 ```

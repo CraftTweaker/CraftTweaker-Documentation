@@ -1,55 +1,55 @@
-# Axe Chopping
+# Rozbijanie toporów
 
-## Availability
+## Dostępność
 
-Before doing anything, you should check whether axe-chopping is enabled or not:
+Przed wykonaniem czegokolwiek, powinieneś sprawdzić, czy ścinanie osi jest włączone, czy nie:
 
 ```zenscript
 import mods.cuisine.AxeChopping;
 
-if (AxeChopping.isEnabled()) {
+jeśli (AxeChopping.isEnabled()) {
     // do stuff
 } else {
-    print("Axe Chopping is disabled, skipping");
+    print("Trapping Axe jest wyłączony, pominięto");
 }
 ```
 
-## Addition
+## Dodanie
 
 ```zenscript
-import mods.cuisine.AxeChopping;
+importuj mods.cuisine.AxeChopping;
 
 AxeChopping.add(IItemStack input, IItemStack output);
 
 AxeChopping.add(<item:minecraft:dirt>, <item:minecraft:diamond>);
 
-// If necessary, it is also possible to use ore dictionary.
-AxeChopping.add(IOreEntry input, IItemStack output);
+// W razie potrzeby możliwe jest również użycie słownika rudy.
+AxeChopping.add(dane wejściowe IItemStack);
 
 AxeChopping.add(<ore:cobblestone>, <item:minecraft:diamond>);
 ```
 
-## Removal
+## Usuwanie
 
 ```zenscript
 import mods.cuisine.AxeChopping;
 
-// Remove by input.
+// Usuń przez wejście.
 AxeChopping.remove(IItemStack input);
 
 AxeChopping.remove(<item:minecraft:log>);
 
-// Remove by output.
-AxeChopping.removeByOutput(IItemStack output);
+// Usuń przez wyjście.
+AxeChopping.removeByOutput(IItemStack);
 
 AxeChopping.removeByOutput(<item:minecraft:plank>);
 
-// Remove by identifier.
+// Usuń przez identyfikator.
 AxeChopping.remove(String id);
 
 AxeChopping.remove("recipe_name");
 
-// Remove everything!
+// Usuń wszystko!
 AxeChopping.removeAll();
 ```
 

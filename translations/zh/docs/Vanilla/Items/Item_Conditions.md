@@ -1,130 +1,130 @@
-# Item Conditions
+# 项目条件
 
-Sometimes normal items won't cut it:
+正常项目有时不会剪切它：
 
-Sometimes we want to be able to specify recipes that only work when the input item fulfills some conditions.
+有时我们想要能够指定只有当输入项满足某些条件时才能起作用的配方。
 
-Sometimes we want to be able to specify recipes that will produce a special item, be it with NBT-Tag or Damage value or otherwise.
+有时我们想要能够指定能够产生特殊物品的配方，不管它有NBT-Tag或损坏值或其他值。
 
-## Importing the package
+## 导入相关包
 
-It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
-`import crafttweaker.item.IItemCondition;`
+如果您遇到任何问题，可能需要导入软件包(例如铸造一个 [数组](/AdvancedFunctions/Arrays_and_Loops/)), 这样比抱歉更安全并添加导入。  
+`导入craftweeper.item.IItemCondition；`
 
-## Input Conditions
+## 输入条件
 
-These will affect the items that you can use to craft the resulting item. Remember, you can mix modifiers, to mix Damage and NBT-Tag, for example
-
-```zenscript
-<minecraft:iron_pickaxe>.onlyDamaged().withTag({display: {Lore: "Aren't we all butterflies?"}});
-```
-
-### Damage
-
-#### anyDamage
-
-The input item's damage value does not matter for the recipe
+这些将会影响到你可以用来制作生成的物品的项目。 记住，您可以混合修饰者以混合伤害和 NBT-Tag。
 
 ```zenscript
-item.anyDamage()
+<minecraft:iron_pickaxe>只有Damaged().withTag({display: {Lore: "Arennot we all butterflies?"}});
 ```
 
-#### onlyDamaged
+### 伤害
 
-The input item needs to be damaged
+#### 任何伤害
+
+输入项的伤害值与配方无关。
+
+```zenscript
+tem.anyDamage()
+```
+
+#### 仅已损坏
+
+输入项需要损坏
 
 ```zenscript
 item.onlyDamaged();
 ```
 
-#### Damaged at least
+#### 至少已损坏
 
-Input item's damage value needs to be at least the specified `value`  
-`Value` is an int
-
-```zenscript
-item.onlyDamageAtLeast(value);
-```
-
-#### Damage at most
-
-Input item's damage value needs to be at max the specified `value`  
-`Value` is an int
+输入项的伤害值必须至少是指定的 `值`  
+`值` 是一个整数
 
 ```zenscript
-item.onlyDamageAtMost(value);
+只限损害Atleast(值)；
 ```
 
-#### Damage between
+#### 最多伤害
 
-Input item's damage value needs to be between the speciefied `value1` and `value2`  
-`Value1` is an int  
-`Value2` is an int
+输入项的伤害值必须为指定的最大值 ``  
+`值` 为整数
 
 ```zenscript
-item.onlyDamageBetween(value1, value2);
+仅限损害AtMost(值)；
 ```
 
-### Get Items back or explicitly forbid an item's reusability
+#### 间伤害
 
-Sometimes you need a recipe where you get some of your input items back.  
-By applying `transformDamage(int)` you can create such recipes.
-
-#### transformDamage
-
-The input item will receive `value` damage points and you will get it back, unless it breaks during the crafting process.  
-`Value` is an int
+输入项的伤害值需要在指定的 `值` 和 `值2`  
+`值1` 为整数  
+`值2` 为整数
 
 ```zenscript
-item.transformDamage(value);
+item.only DamageBetween(value1, value2)；
 ```
 
-### NBT-Tags
+### 返回项目或明确禁止某个项目的可重复使用
 
-Sometimes you want your ingredients to need a specific NBT-Tag. The recipe doesn't care if your item has NBT-Tags other than the ones specified, So a pickaxe with a specific lore may also be enchanted!
+有时你需要一个配方，让你回来一些输入项目。  
+通过应用 `transformDamage(int)` 您可以创建这样的配方。
 
-If you use `withTag` jei will display it properly, if you use `onlyWithTag`, jei will only display a tagless item!
+#### 变压伤害
 
-Here's how you do it: `NBTTag` is your NBT Data
+输入项将获得 `个值` 伤害点。除非在制造过程中中断，否则您将恢复它。  
+`值` 为int
 
 ```zenscript
-item.withTag(NBTData);
-item.onlyWithTag(NBTTag);
-
-<minecraft.iron_pickaxe>.onlyWithTag({display: {Name: "Pickle the Pickleberry"}});
-<minecraft.iron_pickaxe>.withTag({display: {Name: "Pickle the Pickleberry"}});
+item.transformDamage(值)；
 ```
 
-## Output modifiers
+### NBT标签
 
-If you can specify input conditions, it's not so hard to also define output conditions, or rather, output modifiers.
+有时你想要你的原料需要一个特定的 NBT-Tag。 如果您的项目除了指定的 NBT-Tags 之外还有其他产品，配方不在乎， 也可以附着一个带有特定光线的皮斧！
 
-### Damage
+如果您使用 `使用标签` jei 将会正确显示它，如果您使用 `仅撤回标签`，jei 将只显示一个无标签的项目 ！
 
-Your output item will have `value` damage points.  
-`Value` is an int.
+这是您如何操作： `NBTTag` 是您的 NBT 数据
 
 ```zenscript
-item.withDamage(value);
+item.withTag(NBTData)；
+item.onlyWi-Tag(NBTTag)；
+
+<minecraft.iron_pickaxe>.onlyWi-Tag({显示：{名称："选择皮克利伯里"})；
+<minecraft.iron_pickaxe>.withTag({显示：{名称："选择皮克利伯里"}})；
 ```
 
-### NBT-Tags
+## 输出修饰符
 
-Your output item will have `NBTTag` as NBT-Tag.  
-`NBTTag` is your NBT Data
+如果您可以指定输入条件，那么同时定义输出条件或输出修改器就不是那么困难。
+
+### 伤害
+
+您的输出项将有 `个值` 伤害点。  
+`值` 是一个整数。
+
+```zenscript
+item.withdamage(值)；
+```
+
+### NBT标签
+
+您的输出项目将有 `NBTTag` 为 NBT-Tag。  
+`NBTTag` 是您的 NBT 数据
 
 ```zenscript
 item.withTag(NBTTag);
 
-<minecraft:iron_pickaxe>.withTag({display: {Name: "Pickle the Pickleberry"}})
+<minecraft:iron_pickaxe>.withTag({显示: {name: "选取皮革"}})
 ```
 
-## Registering own item Conditions
+## 注册自己的项目条件
 
-You can also add your own itemConditions. These are special functions that accept the [item](/Vanilla/Items/IItemStack/) itself as single parameter.
+您也可以添加您自己的项目条件。 These are special functions that accept the [item](/Vanilla/Items/IItemStack/) itself as single parameter.
 
 ```zenscript
-conditionedItem = item.only(function(item) {return true;});
+conditionedites = item.only(item) {return true;});
 ```
 
-The function needs to return a bool that is true if the item matches the condition.
+如果项目匹配条件，函数需要返回一个真的布尔值。

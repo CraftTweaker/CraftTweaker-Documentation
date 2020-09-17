@@ -1,16 +1,16 @@
-# Chemical Reactor
+# 化学反应器
 
-## Importing the Package
-`mods.nuclearcraft.chemical_reactor`
+## 导入软件包
+`mods.nuclearcraft.chemical_responses`
 
-## Adding Recipes
+## 添加配方
 ```zenscript
-mods.nuclearcraft.chemical_reactor.addRecipe([fluidInput1, fluidInput2, fluidOutput1, fluidOutput2, @Optional double timeMultiplier, @Optional double powerMultiplier, @Optional double processRadiation]);
+mods.nuclearcraft.chemical_reactor.addRecipe([fluidInput1, fluidInput2,fluidOutt1, fluidOutput2,@Optional double timeMultiplier, @Optional double powerMultiplier, @Optional double processRadiation]);
 ```
 
-## Removing Recipes
+## 删除配方
 ```zenscript
-mods.nuclearcraft.chemical_reactor.removeRecipeWithInput([fluidInput1, fluidInput2]);
-mods.nuclearcraft.chemical_reactor.removeRecipeWithOutput([fluidOutput1, fluidOutput2]);
+mods.nuclearcraft.chemical_reactor.removeRecipewidInput([fluidInput1, fluidInput2]);
+mods.nuclearcraft.chemical_reactor.removeRecipeWOutputt[fluidOut1, fluidOut2]);
 mods.nuclearcraft.chemical_reactor.removeAllRecipes();
 ```

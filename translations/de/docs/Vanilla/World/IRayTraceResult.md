@@ -1,23 +1,23 @@
 # IRayTraceResult
 
-When a player is looking or clicking at something he fires a ray that goes until it hits what it needs to hit, or misses.  
-The result of such a hit is an IRayTraceResult object.
+Wenn ein Spieler auf etwas schaut oder auf etwas klickt, feuert er einen Strahl ab, der geht, bis er das trifft, was er tun muss, oder vermisst.  
+Das Ergebnis eines solchen Treffers ist ein IRayTraceResult-Objekt.
 
 ## Diese Klasse importieren
 
-It might be required to [import](/AdvancedFunctions/Import/) the class to avoid errors.  
-`import crafttweaker.world.IRayTraceResult`
+Es könnte erforderlich sein, [die Klasse](/AdvancedFunctions/Import/) zu importieren, um Fehler zu vermeiden.  
+`crafttweaker.world.IRayTraceResult`
 
 ## ZenGetter
 
-All you can do is retrieve information from these objects, here's which:  
-Be careful though, since all getters that do not return a bool can return `null`!
+Alles, was Sie tun können, ist Informationen von diesen Objekten abzurufen, hier:  
+Seien Sie jedoch vorsichtig da alle Getter, die keinen Bool zurückgeben, `null` zurückgeben können!
 
-| name     | type                                   |
+| name     | typ                                    |
 | -------- | -------------------------------------- |
 | isMiss   | bool                                   |
 | isEntity | bool                                   |
 | isBlock  | bool                                   |
-| entity   | [IEntity](/Vanilla/Entities/IEntity/)  |
+| objekt   | [IEntity](/Vanilla/Entities/IEntity/)  |
 | blockPos | [IBlockPos](/Vanilla/World/IBlockPos/) |
 | sideHit  | [IFacing](/Vanilla/World/IFacing/)     |

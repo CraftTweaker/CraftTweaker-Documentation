@@ -1,21 +1,21 @@
-# Sawmill
+# Лесопилка
 
-## Package
+## Пакет
 
 `mods.thermalexpansion.Sawmill`
 
-## Addition
+## Сложение
 
 ```zenscript
-mods.thermalexpansion.Sawmill.addRecipe(IItemStack output, IItemStack input, int energy, @Optional IItemStack secondaryOutput, @Optional int secondaryChance);
+mods.thermalexpansion.Sawmill.addRecipe(IItemStack, IItemStack input, int energy, @Optional IItemStack secondaryOutput, @Optional int secondaryChance);
 
 mods.thermalexpansion.Sawmill.addRecipe(<minecraft:diamond>, <minecraft:stick>, 1500, <minecraft:stone>, 20);
 ```
 
-## Removal
+## Удаление
 
 ```zenscript
-mods.thermalexpansion.Sawmill.removeRecipe(IItemStack input);
+mods.thermalexpansion.Sawmill.removeRecipe(IItemStack);
 
 mods.thermalexpansion.Sawmill.removeRecipe(<minecraft:painting>);
 ```

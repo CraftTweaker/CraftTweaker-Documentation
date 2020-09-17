@@ -1,32 +1,32 @@
 # MCAxisAlignedBB
 
-A MineCraft Axis Aligned Boundary Box object allows you change a [Block's](/Mods/ContentTweaker/Vanilla/Creatable_Content/Block/) Boundary borders to a given cuboid shape.
+Un objet Boîte-limite alignée sur l'axe de MineCraft vous permet de changer les bordures de la zone de [bloc](/Mods/ContentTweaker/Vanilla/Creatable_Content/Block/) en une forme de cuboïde donnée.
 
-## Importing the package
+## Importation du paquet
 
-It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
-`import mods.contenttweaker.AxisAlignedBB;`
+Il pourrait vous être nécessaire d'importer le paquet si vous rencontrez des problèmes, donc mieux vaut être sûr que désolé et ajouter l'importation.  
+`importer mods.contenttweaker.AxisAlignedBB ;`
 
-## Calling an MCAxisAlignedBB object
+## Appel d'un objet MCAxisAlignedBB
 
 You can get such an object using a [Block's](/Mods/ContentTweaker/Vanilla/Creatable_Content/Block/) `axisAlignedBB` Property.  
 Alternatively, you can use this package to create a new MCAxisAlignedBB object:
 
 ```zenscript
-AxisAlignedBB.create(double minX, double minY, double minZ, double maxX, double maxY, double maxZ);
+AxisAlignedBB.create(double minX, double minY, double minZ, double maxX, double maxY, double maxZ) ;
 ```
 
-All parameters for this function are doubles between 0 and 1!
+Tous les paramètres de cette fonction sont doublés entre 0 et 1!
 
-## ZenProperties
+## Propriétés Zen
 
-You can get and set each Property using `getProperty()` or `object.property`.
+Vous pouvez récupérer et définir chaque propriété en utilisant `getProperty()` ou `object.property`.
 
-| ZenProperty | Type   |
-| ----------- | ------ |
-| minX        | double |
-| minY        | double |
-| minZ        | double |
-| maxX        | double |
-| maxY        | double |
-| maxZ        | double |
+| Propriété Zen | Type de texte |
+| ------------- | ------------- |
+| min X         | double        |
+| minY          | double        |
+| minZ          | double        |
+| maxX          | double        |
+| maxi          | double        |
+| maxZ          | double        |

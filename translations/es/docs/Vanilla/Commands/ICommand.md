@@ -1,11 +1,11 @@
 # ICommand
 
-An ICommand Object represents a command ingame.
+Un objeto ICommand representa un nombre de uso de comandos.
 
-## Importing the package
+## Importando el paquete
 
-It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
-`import crafttweaker.command.ICommand;`
+Podría ser necesario que importes el paquete si encuentras algún problema (como lanzar un [array](/AdvancedFunctions/Arrays_and_Loops/)), más vale estar seguro que lo siento y añadir la importación.  
+`importar crafttweaker.command.ICommand;`
 
 ## ZenGetters
 
@@ -16,36 +16,36 @@ It might be required for you to import the package if you encounter any issues (
     </th>
     
     <th>
-      Return Type
+      Tipo de devolución
     </th>
   </tr>
   
   <tr>
     <td>
-      name
+      nombre
     </td>
     
     <td>
-      string
+      cadena
     </td>
   </tr>
   
   <tr>
     <td>
-      aliases
+      alias
     </td>
     
     <td>
-      List<String\>
+      Lista<String\>
     </td>
   </tr>
 </table>
 
-## ZenMethods
+## Métodos
 
 - String getUsage([ICommandSender](/Vanilla/Commands/ICommandSender/) sender);
-- void execute([IServer](/Vanilla/Game/IServer/) server, [ICommandSender](/Vanilla/Commands/ICommandSender/) sender, String[] args);
-- boolean checkPermission([IServer](/Vanilla/Game/IServer/) server, [ICommandSender](/Vanilla/Commands/ICommandSender/) sender);
-- List<string> getTabCompletions([IServer](/Vanilla/Game/IServer/) server, [ICommandSender](/Vanilla/Commands/ICommandSender/) sender, String[] args, @Optional [IBlockPos](/Vanilla/World/IBlockPos/) targetPos);
+- void execute([servidor](/Vanilla/Game/IServer/) IServer, [ICommandSender](/Vanilla/Commands/ICommandSender/) sender, String[] args);
+- boolean checkPermission([servidor IServer](/Vanilla/Game/IServer/) , [ICommandSender](/Vanilla/Commands/ICommandSender/) sender);
+- Lista<string> getTabCompletions([Servidor](/Vanilla/Game/IServer/) IServer, [ICommandSender](/Vanilla/Commands/ICommandSender/) sender, String[] args, @Optional [IBlockPos](/Vanilla/World/IBlockPos/) targetPos);
 - boolean isUsernameIndex(String[] args, int index);
-- command1 != command2; → You can compare them!
+- command1 != command2; → ¡Puedes compararlos!

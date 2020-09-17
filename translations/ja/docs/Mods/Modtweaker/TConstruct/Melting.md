@@ -1,12 +1,12 @@
 # Melting
 
-The `Melting` package allows you to add or remove Melting recipes (item->liquid in the smeltery).
+`溶解` パッケージでは溶解レシピ（製錬所のアイテム>液体）を追加または削除できます。
 
-## Calling
+## 発信中
 
-You can call the Melting package using `mods.tconstruct.Melting`
+`mods.tconstruct.Melting` を使って、Melting パッケージを呼び出すことができます。
 
-## Add Melting Recipes
+## 溶解レシピを追加
 
 ```zenscript
 //mods.tconstruct.Melting.addRecipe(ILiquidStack output, IIngredient input, @Optional int temp);
@@ -20,15 +20,15 @@ mods.tconstruct.Melting.addEntityMelting(<entity:minecraft:villager>, <liquid:cr
 
 ```
 
-## Removing Melting Recipes
+## 溶解レシピの削除
 
 ```zenscript
-//mods.tconstruct.Melting.removeRecipe(ILiquidStack output);
-mods.tconstruct.Melting.removeRecipe(<liquid:molten_iron>);
+//mods.tconstruction.Melting.removeRecipe(ILiquidStack output);
+mods.tconstruction.Melting.removeRecipe(<liquid:molten_iron>);
 
 //mods.tconstruct.Melting.removeRecipe(ILiquidStack output, IItemStack input);
 mods.tconstruct.Melting.removeRecipe(<liquid:molten_iron>, <minecraft:iron_ingot>);
 
-//removeEntityMelting(IEntityDefinition entity);
-mods.tconstruct.Melting.removeEntityMelting(<entity:minecraft:villager>);
+///removeEntityMelting(IEntityDefinition entity);
+mods.tconstruct.Melting.removeEntityMeltentityMelting() );<entity:minecraft:villager>
 ```

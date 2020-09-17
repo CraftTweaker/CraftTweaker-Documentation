@@ -1,25 +1,25 @@
-# Altar of Birthing
+# Altar de nacimiento
 
-## Package
+## Paquete
 ```zenscript
-mods.naturesaura.AnimalSpawner
+mods.naturesaura.AnimalSpawnerGenerador de animales
 ```
 
 ## Metodos
-- **String Name**
-- **String Entity** Name of the entitiy to spawn
-- **int aura** The amount of Aura required for the completion of the recipe
-- **int time** The time processes take in ticks
-- **[IIngredient[]](/Vanilla/Variable_Types/IIngredient) ingredients** The inputs
+- **Nombre de cadena**
+- **Entidad de cadena** Nombre de la entidad a generar
+- **int aura** La cantidad de Aura necesaria para completar la receta
+- **int time** El proceso de tiempo toma ticks
+- **[IIngredient[]](/Vanilla/Variable_Types/IIngredient) ingredientes** Las entradas
 
-## Addition
+## Adicional
 
 ```zenscript
-mods.naturesaura.AnimalSpawner.addRecipe(String name, String entity, int aura, int time, IIngredient[] ingredients)
+mods.naturesaura.AnimalSpawnermods.naturesaura.AnimalSpawner.addRecipe(String name, String entity, int aura, int time, IIngredient[] ingredients)
 ```
 
-## Removal
+## Eliminar
 
 ```zenscript
-mods.naturesaura.AnimalSpawner.removeRecipe(String name)
+mods.naturesaura.AnimalSpawnermods.naturesaura.AnimalSpawner.removeRecipe(String name)
 ```

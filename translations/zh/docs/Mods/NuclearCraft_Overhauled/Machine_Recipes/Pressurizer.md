@@ -1,16 +1,16 @@
-# Pressurizer
+# 压力器
 
-## Importing the Package
-`mods.nuclearcraft.Pressurizer`
+## 导入软件包
+`nuclearcraft。压力器`
 
-## Adding Recipes
+## 添加配方
 ```zenscript
-mods.nuclearcraft.Pressurizer.addRecipe(IIngredient itemInput, IIngredient itemOutput, @Optional double timeMultiplier, @Optional double powerMultiplier, @Optional double processRadiation);
+nuclearcraft。Pressurizer.addRecipe(IIngredient itemInput, IIngredient itemOutput, @Optional double timeMultiplier, @Optional double power Multiplier, @Optional double processRadiation);
 ```
 
-## Removing Recipes
+## 删除配方
 ```zenscript
-mods.nuclearcraft.Pressurizer.removeRecipeWithInput(IIngredient itemInput);
-mods.nuclearcraft.Pressurizer.removeRecipeWithOutput(IIngredient itemOutput);
-mods.nuclearcraft.Pressurizer.removeAllRecipes();
+nuclearcraft。Pressurizer.removeRecipeWidInput(IIngredient itemInput);
+mods.nuclearcraft.Pressurizer.removeRecipeWOutput(IIngredient itemOut)；
+mods.nuclearcraft。Pressurizer.removeAllRecipes();
 ```

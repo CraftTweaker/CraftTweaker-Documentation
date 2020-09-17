@@ -1,30 +1,30 @@
-# PlayerOpenContainer
+# Открытый контейнер игрока
 
-The PlayerOpenContainer Event is fired whenever a player opens a container.
+Событие OpenContainer запускается, когда игрок открывает контейнер.
 
-## Event Class
+## Класс события
 
 You will need to cast the event in the function header as this class:  
 `crafttweaker.event.PlayerOpenContainerEvent`  
 You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
 
-## Event interface extensions
+## Наследование от интерфейсов событий
 
-PlayerOpenContainer Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+События PlayerOpenContainer реализуют следующие интерфейсы и также могут вызвать все их методы/getters/setter:
 
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 - [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
 
 ## ZenGetters
 
-The following information can be retrieved from the event:
+Следующая информация может быть получена от события:
 
-| ZenGetter   | Return Type                                  |
+| Геттеры     | Возвращаемый тип                             |
 | ----------- | -------------------------------------------- |
-| `canceled`  | boolean                                      |
+| `отменено`  | boolean                                      |
 | `player`    | [IPlayer](/Vanilla/Players/IPlayer/)         |
-| `container` | [IContainer](/Vanilla/Container/IContainer/) |
+| `контейнер` | [IContainer](/Vanilla/Container/IContainer/) |
 
 ## ZenMethods
 
-- `event.cancel()` sets the event as cancelled.
+- `event.cancel()` устанавливает событие как отменено.

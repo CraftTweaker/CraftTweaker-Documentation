@@ -1,16 +1,16 @@
-# Vacuum Freezer
+# Вакуумный морозильник
 
-## Importing the Package
+## Импортирование пакета
 `mods.techreborn.vacuumFreezer`
 
-## Adding Recipes
+## Добавление рецептов
 ```zenscript
-mods.techreborn.vacuumFreezer.addRecipe(IItemStack output, IIngredient input, int ticktime, int euTick);
+mods.techreborn.vacuumFreezer.addRecipe(IItemStack, IIngredient input, int ticktime, int euTick);
 ```
 
-## Removing Recipes
+## Удаление рецептов
 ```zenscript
 mods.techreborn.vacuumFreezer.removeInputRecipe(IIngredient ingredient);
-mods.techreborn.vacuumFreezer.removeRecipe(IItemStack output);
+mods.techreborn.vacuumFreezer.removeRecipe(IItemStack);
 mods.techreborn.vacuumFreezer.removeAll();
 ```

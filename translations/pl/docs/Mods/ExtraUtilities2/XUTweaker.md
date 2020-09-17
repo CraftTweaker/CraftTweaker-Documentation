@@ -1,53 +1,53 @@
 # XUTweaker
 
-The XUTweaker package adds several static utility methods.
+Pakiet XUTweaker dodaje kilka metod statycznych.
 
-## Importing the package
+## Importowanie pakietu
 
-If you want to shorten method calls or encounter any issues you might need to import the package.  
-You can do so using
+Jeśli chcesz skrócić połączenia metodowe lub napotkać jakiekolwiek problemy, które trzeba będzie zaimportować pakiet.  
+Możesz to zrobić za pomocą
 
 ```zenscript
-import extrautilities2.Tweaker.XUTweaker;
+importowanie produktów ekstrudowych2.Tweaker.XUTweaker,
 ```
 
-## Methods
+## Metody
 
-### Allow survival flight
+### Zezwalaj na przetrwanie
 
-Allows Flight for all players, permanently.
+Zezwala na lot dla wszystkich graczy na stałe.
 
 ```zenscript
-extrautilities2.Tweaker.XUTweaker.allowSurvivalFlight();
+ekstrutylity2.Tweaker.XUTweaker.allowSurvivalFlight();
 ```
 
-### Disable Nether Portals
+### Wyłącz netherowe portale
 
-Prevents Nether portals (and all portals that use the PortalSpawnEvent) from spawning, permanently.
+Zapobiega pojawianiu się portali Netheru (i wszystkich portali, które używają PortalSpawnEvent) na stałe.
 
 ```zenscript
-extrautilities2.Tweaker.XUTweaker.disableNetherPortals();
+ekstrutylity2.Tweaker.XUTweaker.disableNetherPortals();
 ```
 
-### Check if a player is a fake Player
+### Sprawdź, czy gracz jest fałszywym graczem
 
-Returns a boolean stating if the player is a fake Player.
+Zwraca boolean stwierdzający czy gracz jest fałszywym graczem.
 
-Requires an [IPlayer](/Vanilla/Players/IPlayer) argument.
+Wymaga argumentu [IPlayer](/Vanilla/Players/IPlayer).
 
 ```zenscript
-extrautilities2.Tweaker.XUTweaker.isPlayerFake(player);
+ekstrutylitie2.Tweaker.XUTweaker.isPlayerFake(gracz);
 ```
 
-### Open a books screen for the player
+### Otwórz ekran książki dla gracza
 
-Tries to open the written book screen to the given player.
+Próbuje otworzyć ekran książki dla danego gracza.
 
-Returns a boolean stating if the command was executed correctly.  
-Requires an [IPlayer](/Vanilla/Players/IPlayer) argument.  
-Also requires a string[] argument that will be the pages.
+Zwraca wartość logiczną, stwierdzając, czy komenda została wykonana poprawnie.  
+Wymaga argumentu [IPlay](/Vanilla/Players/IPlayer) .  
+Wymaga również argumentu ciągu [], który będzie stronami.
 
 ```zenscript
-extrautilities2.Tweaker.XUTweaker.openBookScreen(player, pages);
-extrautilities2.Tweaker.XUTweaker.openBookScreen(player, ["Page 1", "Page 2"]);
+ekstrautilities2.Tweaker.XUTweaker.openBookScreen(odtwarzacz, strony);
+ekstrulities2.Tweaker.XUTweaker.openBookScreen(odtwarzacz, ["Strona 1", "Strona 2"]);
 ```

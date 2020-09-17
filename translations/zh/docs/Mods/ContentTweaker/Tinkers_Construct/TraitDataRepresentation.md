@@ -1,32 +1,32 @@
-# Trait Data Representation
+# 特性数据表示
 
-A Trait data representation represents a Tinkers' Construct Trait's Data and is ItemBound.  
-You can get such an object from an existing [Trait](/Mods/ContentTweaker/Tinkers_Construct/Trait/) object by supplying an IItemStack to the `getData` method.
+特性数据表示Tinkers构造特性数据，并且是物品绑定的。  
+您可以通过向 `getData` 方法提供一个 IItemStack 从现有 [特性](/Mods/ContentTweaker/Tinkers_Construct/Trait/) 对象中获取这样一个对象。
 
 ## 导入类
 
-It might be required for you to import the class if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
-`import mods.contenttweaker.tconstruct.TraitDataRepresentation`
+如果您遇到任何问题，可能需要导入类 (例如铸造一个 [数组](/AdvancedFunctions/Arrays_and_Loops/)) 这样比抱歉更安全并添加导入。  
+`导入 mods.contenttweaker.tconstruct.TraitDataRepresentatives`
 
-## ZenGetter and ZenSetter
+## ZenGetter 和 ZenSetter
 
-| 名称          | ZenGetter | ZenSetter | 返回值类型  |
-| ----------- | --------- | --------- | ------ |
-| color       | ✔         | ✔         | int    |
-| current     | ✔         | ✔         | int    |
-| extraInfo   | ✔         | ✔         | string |
-| identifier  | ✔         | ✔         | string |
-| level       | ✔         | ✔         | int    |
-| max         | ✔         | ✔         | int    |
-| info        | ✔         |           | string |
-| colorString | ✔         |           | string |
+| 名称         | ZenGetter | ZenSetter | 返回值类型 |
+| ---------- | --------- | --------- | ----- |
+| color      | ✔         | ✔         | 整数    |
+| 当前的        | ✔         | ✔         | 整数    |
+| 额外信息       | ✔         | ✔         | 字符串   |
+| identifier | ✔         | ✔         | 字符串   |
+| 关卡         | ✔         | ✔         | 整数    |
+| 最大值        | ✔         | ✔         | 整数    |
+| 信息         | ✔         |           | 字符串   |
+| 颜色字符串      | ✔         |           | 字符串   |
 
 ## ZenMethods
 
 ```zenscript
-//Does the same as myTraitData.info;
+///是否与 myTraitData.info;
 myTraitData.calcInfo();
 
-//Does the same as myTraitData.colorString;
+//Does 与 myTraitData.colorString;
 myTraitData.getColorString();
 ```

@@ -1,23 +1,23 @@
-# Elven Trading
+# エルフ取引
 
-The ElvenTrade package is used for adding or removing recipes to/from the Botania Portal to Alfheim.
+ElvenTradeパッケージは、BotaniaポータルからAlfheimにレシピを追加または削除するために使用されます。
 
-## Calling
+## 発信中
 
-You can call the ElvenTrade package using `mods.botania.ElvenTrade`
+`mods.botania.ElvenTrade` を使用して、ElvenTrade パッケージを呼び出すことができます。
 
-## Find all registered Recipes
+## すべての登録済みのレシピを検索
 
-You can find all registered ElvenTrade recipes using [`/ct botania trades`](/Mods/Modtweaker/Botania/Commands/).
+登録済みのElvenTradeレシピは、 [`/ct botania trades`](/Mods/Modtweaker/Botania/Commands/) を使用して確認できます。
 
-## Recipe addition
+## レシピの追加
 
 ```zenscript
-//mods.botania.ElvenTrade.addRecipe(IIngredient[] outputs, IIngredient[] input);
+//mods.botania.ElvenTrade.addRecipe(IIngredient[] inputs, IIngredient[] input);
 mods.botania.ElvenTrade.addRecipe([<minecraft:iron_ingot>], [<minecraft:dirt>,<minecraft:grass>]);
 ```
 
-## Recipe removal
+## レシピの削除
 
 ```zenscript
 //mods.botania.ElvenTrade.removeRecipe(IIngredient output);

@@ -1,20 +1,20 @@
-# Energetic Infuser
+# Niszczyciel Energetyki
 
-## Package
+## Pakiet
 
-`mods.thermalexpansion.Infuser`
+`Infuser`
 
-## Addition
+## Dodanie
 
 ```zenscript
-//mods.thermalexpansion.Infuser.addRecipe(IItemStack output, IItemStack input, int energy);
+//mods.thermalexpansion.Infuser.addRecipe(wyjście IItemStack, wejście IItemStack, energia int);
 mods.thermalexpansion.Infuser.addRecipe(<minecraft:gold_ingot>, <minecraft:iron_ingot>, 1000);
 
 ```
 
-## Removal
+## Usuwanie
 
 ```zenscript
-//mods.thermalexpansion.Infuser.removeRecipe(IItemStack input);
+//mods.thermalexpansion.Infuser.removeRecipe(IItemStack);
 mods.thermalexpansion.Infuser.removeRecipe(<minecraft:gold_ore>);
 ```

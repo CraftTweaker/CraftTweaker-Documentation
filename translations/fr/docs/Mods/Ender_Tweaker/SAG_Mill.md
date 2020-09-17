@@ -1,27 +1,27 @@
 # SAG Mill
 
-## Package
+## Paquet
 
-`import mods.enderio.SagMill;`
+`Importer mods.enderio.SagMill;`
 
-## Methods
+## Méthodes
 
-- **[IItemStack](/Vanilla/Items/IItemStack/)[] output** The results of the recipe.
-- **float[] chances** The chance that this item appears. Must have the same length as output.
-- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input** The input.
-- **String bonusType** This impacts how Grinding Balls work. May be NONE (no bonus), MULTIPLY_OUTPUT (can increase chance > 1.0), and CHANCE_ONLY (caps chance at 1.0).
-- **int energyCost** How much FE the recipe uses. Defaults to 5000.
-- **float xp** The xp is granted from this recipe. May not be negative.
+- **[IItemStack](/Vanilla/Items/IItemStack/)[] sortie** Les résultats de la recette.
+- **float[] chances** La chance que cet élément apparaisse. Doit avoir la même longueur que la sortie.
+- **[Ingrédient](/Vanilla/Variable_Types/IIngredient/) d'entrée** L'entrée.
+- **BonusType de chaîne de caractères** Ceci affecte le fonctionnement des Balles. Peut être NONE (pas de bonus), MULTIPLY_OUTPUT (peut augmenter les chances > 1.0), et CHANCE_ONLY (limite de chance de 1.0).
+- **int EnergyCost** Combien FE la recette utilise. Par défaut, 5000.
+- **float xp** Le xp est accordé à partir de cette recette. Ne peut pas être négatif.
 
-## Addition
+## Ajouter
 
 ```zenscript
-mods.enderio.SagMill.addRecipe(IItemStack[] output, float[] chances, IIngredient input, @Optional String bonusType, @Optional int energyCost, @Optional float[] xp);
+mods.enderio.SagMill.addRecipe(IItemStack[] sortie, float[] chances, entrée IIngredient, @Optional String bonusType, @Optional int energyCost, @Optional int float[] xp);
 
 mods.enderio.SagMill.addRecipe([<minecraft:planks>], [100], <minecraft:log>);
 ```
 
-## Removal
+## Retirer
 
 ```zenscript
 mods.enderio.SagMill.removeRecipe(IItemStack input);

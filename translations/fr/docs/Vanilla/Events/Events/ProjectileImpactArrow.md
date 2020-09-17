@@ -1,42 +1,42 @@
-# ProjectileImpactArrow
+# format@@0 ProjectileImpactFrow
 
-This event is fired whenever an arrow projectile impacts an entity but before damage, etc, is calculated. It is **cancelable**, and if canceled, the impact will not be processed.
+Cet événement est déclenché chaque fois qu'une flèche de projectile affecte une entité mais avant que les dégâts, etc, soient calculés. C'est **annulable**, et si annulé, l'impact ne sera pas traité.
 
-Various values from the arrow entity are available through zengetters, and can be modified in order to adjust damage, knockback strength, pickup status, and determine (or force) a critical hit.
+Diverses valeurs de la flèche d'entité sont disponibles via zengetters, et peuvent être modifiées afin d'ajuster les dégâts, la force de recul, le statut de ramassage et déterminer (ou forcer) un coup critique.
 
-## Importing the class
-It might be required to [import](/AdvancedFunctions/Import/) the class to avoid errors.  
-`import crafttweaker.event.ProjectileImpactArrowEvent;`
+## Importation de la classe
+Il peut être nécessaire de [importer](/AdvancedFunctions/Import/) la classe pour éviter les erreurs.  
+`importer crafttweaker.event.ProjectileImpactArrowEvent ;`
 
-## Extending IEntityEvent
-ProjectileImpactArrow Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+## Étendre l'événement IEntityEvent
+Les événements ProjectileImpactArrow implémentent les interfaces suivantes et peuvent également appeler toutes leurs méthodes/getters/setters :
 
-- [IProjectileEvent](/Vanilla/Events/Events/IProjectileEvent/)
+- [Evénement IProjectile](/Vanilla/Events/Events/IProjectileEvent/)
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 
-## ZenGetters and ZenSetters
+## ZenGetters et ZenSetters
 
-The following information can be retrieved from the event:
+Les informations suivantes peuvent être récupérées à partir de l'événement :
 
-| ZenGetter      | ZenSetter           | Type                                  |
-| -------------- | ------------------- | ------------------------------------- |
-| `arrow`        |                     | [IEntity](/Vanilla/Entities/IEntity/) |
-| `shooter`      |                     | [IEntity](/Vanilla/Entities/IEntity/) |
-| `damage`       | `damage`            | double                                |
-|                | `knockbackStrength` | int (setter only, no getter)          |
-| `isCritical`   | `isCritical`        | boolean                               |
-| `pickupStatus` |                     | String                                |
+| ZenGetter             | ZenSetter                               | Type de texte                           |
+| --------------------- | --------------------------------------- | --------------------------------------- |
+| `flèche`              |                                         | [IEntity](/Vanilla/Entities/IEntity/)   |
+| `Tireur`              |                                         | [IEntity](/Vanilla/Entities/IEntity/)   |
+| `endommagement`       | `endommagement`                         | double                                  |
+|                       | `Force du back-arrière arrière arrière` | int (défini seulement, pas d'accesseur) |
+| `isCritique`          | `isCritique`                            | boolean                                 |
+| `Statut du ramassage` |                                         | Chaîne de caractères                    |
 
-## Additional methods
+## Méthodes supplémentaires
 
-- `setPickupDisallowed()`
+- `format@@0 setPickupDisallowed()`
 
-Prevents the arrow from being picked up under any circumstances.
+Empêche la collecte de la flèche en toutes circonstances.
 
-- `setPickupAllowed()`
+- `setPickupAutorisé()`
 
-Allows the arrow to be picked up from where the entity landed.
+Permet de ramasser la flèche à partir de l'endroit où l'entité a atterri.
 
 - `setPickupCreative()`
 
-Only allows the arrow to be picked up if the player is in creative mode.
+Ne permet de ramasser la flèche que si le joueur est en mode créatif.

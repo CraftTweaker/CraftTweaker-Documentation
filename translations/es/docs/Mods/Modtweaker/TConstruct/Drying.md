@@ -1,21 +1,21 @@
-# Drying
+# Secando
 
-The `Drying` package allows you to add or remove Drying recipes.
+El paquete `Secar` le permite añadir o eliminar recetas de secado.
 
-## Calling
+## Llamando
 
-You can call the Drying package using `mods.tconstruct.Drying`
+Puedes llamar al paquete de Secado usando `mods.tconstruct.Drying`
 
-## Adding
+## Agregando
 
-The time is in ticks
+El tiempo está en ticks
 
 ```zenscript
-//mods.tconstruct.Drying.addRecipe(IItemStack output, IIngredient input, int time);
+//mods.tconstruct.Drying.addRecipe(Salida IItemStack, entrada IIngredient, tiempo de intención);
 mods.tconstruct.Drying.addRecipe(<minecraft:leather>,<minecraft:rotten_flesh>, 100);
 ```
 
-## Removing
+## Eliminando
 
 ```zenscript
 //mods.tconstruct.Drying.removeRecipe(IItemStack output);

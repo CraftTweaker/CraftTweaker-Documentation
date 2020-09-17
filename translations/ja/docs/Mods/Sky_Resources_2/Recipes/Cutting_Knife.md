@@ -1,19 +1,19 @@
-# Cutting Knife
+# 切断ナイフ
 
-The *knife* package is used for adding or removing recipes to/from the Cutting Knife.
+*ナイフ* パッケージは、切削ナイフへのレシピの追加や削除に使用されます。
 
-## Calling
+## 発信中
 
-You can call the *knife* package using `mods.skyresources.knife`
+*mods.skyresources.knife* を使って `ナイフ`パッケージを呼び出すことができます。
 
-## Recipe Addition
+## レシピの追加
 
 ```zenscript
-//mods.skyresources.knife.addRecipe(IItemStack output, IItemStack input);
+//mods.skyresources.knife.addRecipe(IItemStack 出力, IItemStack input);
 mods.skyresources.knife.addRecipe(<minecraft:diamond>, <minecraft:stone>);
 ```
 
-## Recipe Removal
+## レシピの削除
 
 ```zenscript
 //mods.skyresources.knife.removeRecipe(IItemStack output);

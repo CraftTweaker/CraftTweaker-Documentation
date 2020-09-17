@@ -1,39 +1,39 @@
 # CriticalHitEvent
 
-The CriticalHit Event is fired whenever a player attacks another creature. It has a **result** which determines whether or not default crit behaviour occurs:
+CriticalHit イベントはプレイヤーが別の生物を攻撃するたびに発生します。 これは **結果** があり、デフォルトのクライト挙動が発生するかどうかを決定します。
 
-- **allow**: the attack is forced to be a critical
-- **deny**: the attack is prevented from being a critical
-- **default**: the attack uses default Vanilla behaviour to determine if it's a crit.
+- ****を許可: 攻撃はクリティカルに強制される
+- **deny**: 攻撃がクリティカルであることを防ぎます
+- **default**: 攻撃は、クリットかどうかを判断するためにデフォルトのバニラ動作を使用します。
 
-You can also adjust the damage modifier for the critical hit.
+クリティカルヒットのダメージ修飾子も調整できます。
 
-## Notes
+## メモ
 
 `event.oldDamageModifier` contains the original damage modifier of the event, while `event.isVanillaCrit` is a boolean value that determines whether or not this is actually already a critical hit.
 
-## Event Class
+## イベントクラス
 You will need to cast the event in the function header as this class:  
 `crafttweaker.event.CriticalHitEvent`  
 You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
 
-## Event interface extensions
-CriticalHit Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+## イベントインターフェースの拡張
+CriticalHit Events 以下のインターフェイスを実装しており、すべてのメソッド/getters/settersを呼び出すこともできます。
 
 - [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
 
 ## ZenGetters
-The following information can be retrieved from the event:
+イベントから次の情報を取得できます。
 
 | ZenGetter           | ZenSetter        | 戻り値の型                                 |
 | ------------------- | ---------------- | ------------------------------------- |
 | `target`            |                  | [IEntity](/Vanilla/Entities/IEntity/) |
-| `oldDamageModifier` |                  | float                                 |
+| `oldDamageModifier` |                  | float型                                |
 | `damageModifier`    | `damageModifier` | float型                                |
-| `isVanillaCrit`     |                  | boolean                               |
+| `isVanillaCrit`     |                  | boolean型                              |
 
 ## ZenMethods
 
-- `event.deny()` sets the result to deny.
-- `event.allow()` sets the result to allow.
-- `event.default()` sets the result to default.
+- `event.deny()` は結果を否定します。
+- `event.allow()` は結果を許可するように設定します。
+- `event.default()` は結果をデフォルトに設定します。

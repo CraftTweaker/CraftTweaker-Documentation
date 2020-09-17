@@ -66,7 +66,7 @@ public static void print3(@Optional("1") int value) {
 }
 ```
 
-If you want a default object or a default primitive that is not a compiletime constant (all annotation members need to be compiletime constants!), you can set the other two members: This will replace the parameter with a call to the given (static) method `methodClass.methodName(value)`. If no such method is found, will error and insert null.
+Если вы хотите, чтобы объект по умолчанию или примитивный по умолчанию не является константой компиляции (все пользователи аннотации должны быть константами компиляции! , вы можете установить два других члена: Это заменит параметр вызовом данному (статическим) методу `Класс. ethodName(значение)`. Если такой метод не найден, будет ошибкой и вставить null.
 
 ```java
 @ZenMethod

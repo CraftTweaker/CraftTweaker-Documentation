@@ -1,120 +1,120 @@
 # IBlockProperties
 
-BlockProperties are what makes a block distinctive from other blocks. It mainly serves as superinterface to [IBlockState](/Vanilla/Blocks/IBlockState/), that means all these functions are also available to all [IBlockState](/Vanilla/Blocks/IBlockState/) objects.
+Blockeigenschaften sind das, was einen Block von anderen Blöcken unterscheidet. Es dient hauptsächlich als Schnittstelle zu [IBlockState](/Vanilla/Blocks/IBlockState/), das bedeutet, dass alle diese Funktionen auch allen [IBlockState](/Vanilla/Blocks/IBlockState/) Objekten zur Verfügung stehen.
 
 ## Dieses Paket importieren
 
-It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
-`import crafttweaker.block.IBlockProperties;`
+Es kann erforderlich sein, dass Sie das Paket importieren, wenn Sie irgendwelche Probleme haben. Seien Sie also besser sicher als entschuldigen und fügen Sie den Import hinzu.  
+`importiere craftweaker.block.IBlockProperties;`
 
-| ZenGetter                 | Rückgabetyp                             | Beschreibung                                                          |
-| ------------------------- | --------------------------------------- | --------------------------------------------------------------------- |
-| canProvidePower           | bool                                    | Returns if the refered block can provide Redstone Power               |
-| mobilityFlag              | string                                  | Returns the [mobility flag](/Vanilla/Blocks/IMobilityFlag/) as string |
-| material                  | [IMaterial](/Vanilla/Blocks/IMaterial/) | Returns the block's [material](/Vanilla/Blocks/IMaterial/)            |
-| causesSuffocation         | bool                                    | Returns whether the block can choke you.                              |
-| hasCustomBreakingProgress | bool                                    |                                                                       |
-| blockNormalCube           | bool                                    |                                                                       |
-| fullBlock                 | bool                                    |                                                                       |
-| fullCube                  | bool                                    |                                                                       |
-| normalCube                | bool                                    |                                                                       |
-| opaqueCube                | bool                                    |                                                                       |
-| translucent               | bool                                    |                                                                       |
-| useNeighborBrightness     | bool                                    |                                                                       |
+| ZenGetter                    | Rückgabetyp                             | Beschreibung                                                                        |
+| ---------------------------- | --------------------------------------- | ----------------------------------------------------------------------------------- |
+| canProvidePower              | bool                                    | Gibt zurück, wenn der empfohlene Block Redstone-Power bieten kann                   |
+| mobilityFlag                 | string                                  | Gibt die [Mobilitätsflagge](/Vanilla/Blocks/IMobilityFlag/) als Zeichenkette zurück |
+| material                     | [IMaterial](/Vanilla/Blocks/IMaterial/) | Gibt das [Material des Blocks zurück](/Vanilla/Blocks/IMaterial/)                   |
+| causesSuffocation            | bool                                    | Gibt zurück, ob der Block dich ersticken kann.                                      |
+| hasCustomBreakingFortschritt | bool                                    |                                                                                     |
+| blockNormalCube              | bool                                    |                                                                                     |
+| vollblöcke                   | bool                                    |                                                                                     |
+| fullCube                     | bool                                    |                                                                                     |
+| normalwürfel                 | bool                                    |                                                                                     |
+| opaqueCube                   | bool                                    |                                                                                     |
+| durchsichtig                 | bool                                    |                                                                                     |
+| useNeighborHelligkeit        | bool                                    |                                                                                     |
 
-## ZenMethods
+## ZenMethoden
 
 ### isReplacable
 
 `boolean isReplaceable(IWorld world, IBlockPos pos);`  
-Parameters:
+Parameter:
 
-- [IWorld](/Vanilla/World/IWorld/) world → The world to be checked in
-- [IBlockPos](/Vanilla/World/IBlockPos/) pos → The Block's position
+- [IWelt](/Vanilla/World/IWorld/) Welt → Die Welt, in die eingecheckt werden soll
+- [IBlockPos](/Vanilla/World/IBlockPos/) Pos → Position des Blocks
 
-Returns a boolean that sais whether the block can be replaced or not.
+Gibt einen booleschen Wert zurück, der sicherstellt, ob der Block ersetzt werden kann oder nicht.
 
 ### getLightValue
 
 `int getLightValue(IWorld world, IBlockPos blockPos);`  
-Parameters:
+Parameter:
 
-- [IBlockAccess](/Vanilla/World/IBlockAccess/) world → The world to be checked in
-- [IBlockPos](/Vanilla/World/IBlockPos/) pos → The Block's position
+- [IBlockAccess](/Vanilla/World/IBlockAccess/) Welt → Die Welt die eingecheckt werden soll
+- [IBlockPos](/Vanilla/World/IBlockPos/) Pos → Position des Blocks
 
-Returns an int representing the current light value at the given location.
+Gibt eine Int zurück, die den aktuellen Lichtwert an der angegebenen Stelle darstellt.
 
 ### getWeakPower/GetStrongPower
 
-`int getWeakPower(IBlockAccess world, IBlockPos blockPos, Facing facing);`  
-`int getStrongPower(IBlockAccess world, IBlockPos blockPos, Facing facing);`  
-Parameters:
+`int getWeakPower(IBlockAccess-Welt, IBlockPos blockPos, Facing Facing);`  
+`int getStrongPower(IBlockAccess-Welt, IBlockPos blockPos, Facing Facing);`  
+Parameter:
 
-- [IBlockAccess](/Vanilla/World/IBlockAccess/) world → The world to be checked in
-- [IBlockPos](/Vanilla/World/IBlockPos/) pos → The Block's position
+- [IBlockAccess](/Vanilla/World/IBlockAccess/) Welt → Die Welt die eingecheckt werden soll
+- [IBlockPos](/Vanilla/World/IBlockPos/) Pos → Position des Blocks
 - [Facing](/Vanilla/World/IFacing/) facing → The side to be checked Returns an int representing the current redstone power on this side.
 
 ### getComparatorInputOverride
 
 `int getComparatorInputOverride(IWorld world, IBlockPos blockPos);`
 
-Parameters:
+Parameter:
 
-- [IWorld](/Vanilla/World/IWorld/) world → The world to be checked in
-- [IBlockPos](/Vanilla/World/IBlockPos/) pos → The Block's position
+- [IWelt](/Vanilla/World/IWorld/) Welt → Die Welt, in die eingecheckt werden soll
+- [IBlockPos](/Vanilla/World/IBlockPos/) Pos → Position des Blocks
 
-Returns an int representing the block's redstone comparator input override type.
+Gibt eine Int zurück, die den Rotsteinvergleichungstyp des Blocks überschreibt.
 
-### Check if an entity can spawn on the block
+### Prüft, ob eine Entität auf dem Block spawnen kann
 
-Use an [IEntity](/Vanilla/Entities/IEntity/).  
-Returns a bool.
-
-```zenscript
-blockProperties.canEntitySpawn(IEntity entity);
-```
-
-### Get the actual BlockState
-
-Use an [IBlockAccess](/Vanilla/World/IBlockAccess/) and an [IBlockPos](/Vanilla/World/IBlockPos/).  
-Returns a new IBlockProperties object.
+Verwende eine [IEntity](/Vanilla/Entities/IEntity/).  
+Gibt einen Bool zurück.
 
 ```zenscript
-blockProperties.getActualState(IBlockAccess world, IBlockPos pos);
+blockProperties.canEntitySpawn(IEntity Entity);
 ```
 
-### Get a block's hardness
+### Erhalte den aktuellen Blockstatus
 
-Use [IWorld](/Vanilla/World/IWorld/) and an [IBlockPos](/Vanilla/World/IBlockPos/).  
-Returns a float.
+Verwende ein [IBlockAccess](/Vanilla/World/IBlockAccess/) und ein [IBlockPos](/Vanilla/World/IBlockPos/).  
+Gibt ein neues IBlockProperties Objekt zurück.
+
+```zenscript
+blockProperties.getActualState(IBlockAccess-Welt, IBlockPos pos);
+```
+
+### Härte einen Block
+
+Verwende [IWorld](/Vanilla/World/IWorld/) und einen [IBlockPos](/Vanilla/World/IBlockPos/).  
+Gibt einen Float zurück.
 
 ```zenscript
 blockProperties.getBlockHardness(IWorld world, IBlockPos pos);
 ```
 
-### Get a block's light opacy
+### Hole dir die Lichtoptik eines Blocks
 
-Use [IWorld](/Vanilla/World/IWorld/) and an [IBlockPos](/Vanilla/World/IBlockPos/).  
-Returns an int.
+Verwende [IWorld](/Vanilla/World/IWorld/) und einen [IBlockPos](/Vanilla/World/IBlockPos/).  
+Gibt einen Int zurück.
 
 ```zenscript
 blockProperties.getLightOpacy(IWorld world, IBlockPos pos);
 ```
 
-### Get a player's Relative Block Harness
+### Erhalte die Relative Blockverbindung eines Spielers
 
-Use an [IPlayer](/Vanilla/Players/IPlayer/), an [IWorld](/Vanilla/World/IWorld/) and an [IBlockPos](/Vanilla/World/IBlockPos/).  
-Returns a float.
+Verwende einen [IPlayer](/Vanilla/Players/IPlayer/), eine [IWorld](/Vanilla/World/IWorld/) und eine [IBlockPos](/Vanilla/World/IBlockPos/).  
+Gibt einen Float zurück.
 
 ```zenscript
-blockProperties.getPlayerRelativeBlockHardness(IPlayer player, IWorld world, IBlockPos pos);
+blockProperties.getPlayerRelativeBlockHardness(IPlayer Player, IWorld Welt, IBlockPos pos);
 ```
 
-### Check if a side of the block is solid
+### Überprüfen Sie, ob eine Seite des Blocks solide ist
 
-Use an [IBlockAccess](/Vanilla/World/IBlockAccess/), an [IBlockPos](/Vanilla/World/IBlockPos/) and an [IFacing](/Vanilla/World/IFacing/) object.  
-Returns a bool.
+Verwende ein [IBlockAccess](/Vanilla/World/IBlockAccess/), ein [IBlockPos](/Vanilla/World/IBlockPos/) und ein [IFacing](/Vanilla/World/IFacing/) Objekt.  
+Gibt einen Bool zurück.
 
 ```zenscript
-blockProperties.isSideSolid(IBlockAccess world, IBlockPos pos, IFacing facing);
+blockProperties.isSideSolid(IBlockAccess-Welt, IBlockPos pos, IFacing facing);
 ```

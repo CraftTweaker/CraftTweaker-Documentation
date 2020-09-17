@@ -1,46 +1,46 @@
-# Mine Bay
+# Шахта
 
-You can trade for items on minebay.
+Вы можете торговать предметами на майнебе.
 
-## Default Trades
+## Сделки по умолчанию
 
-- Hardened Clay for 1x Emerald
-- Skull for 8x Emerald
-- Saddle for 4x Emerald
-- Spawn Egg (meta 100, does nothing) for 8x Emerald
-- Diamond Horse Armor for 8x Diamond
-- Bottle o' Enchanting for 1x Iron Ingot
-- 4x Fireworks for 1x Iron Ingot
-- Silk Touch Enchanted Book for 8x Emerald
-- 2x Night Vision Potion (3:00) for 1x Emerald
-- Recipe Book given 1x Emerald
+- Крепкая глина для 1 x изумруд
+- Череп для 8 x Изумруд
+- Седло для 4 x Изумруд
+- Создать яйцо (мета 100, ничего не делает) за 8 x Изумруд
+- Алмазная броня для 8 алмазов
+- Бутылка зачарования за 1 миллион железа
+- 4х фейерверка за 1x железный слиток
+- Шелковое Touch Зачарованная книга на 8 x Изумруд
+- 2х ночное зелье зрения (3:00) за 1 раз изумруд
+- Книга рецептов дана 1 раз изумруд
 
-## Removing
+## Удаление
 
-## Remove matching trades.
+## Удалить подходящие сделки.
 
 ```zenscript
 mods.cfm.MineBay.remove(@Optional IIngredient item);
 
-// Remove trade resulting in the nightvision potion (with any amount)
-mods.cfm.MineBay.remove(<minecraft:potion>.withTag({Potion: "night_vision"}));
-// Remove all trades
+// Удаляем торговлю, в результате чего зелье ночного видения (с любой суммой)
+модов. fm.MineBay.remove(<minecraft:potion>.withTag({Potion: "night_vision"}));
+// Удаляем все сделки
 mods.cfm.MineBay.remove();
 ```
 
-Currently only supports removing by trade result.
+В настоящее время поддерживает удаление только по результатам сделки.
 
-## Adding
+## Добавление
 
-## Add a trade.
+## Добавить сделку.
 
 ```zenscript
 mods.cfm.MineBay.addTrade(@Nonnull IItemStack item, @Nonnull IItemStack currency);
 
-// Add a trade for 42 sticks given 13 diamonds
-mods.cfm.MineBay.addTrade(<minecraft:stick>.withAmount(42),<minecraft:diamond>.withAmount(13));
-// Add a trade for 16 apples given 3 emeralds
-mods.cfm.MineBay.addTrade(<minecraft:apple>.withAmount(16),<minecraft:emerald>.withAmount(3));
-// Add a trade for 1 carrot given 1 emerald
+// Добавление торговли по 42 прицелам из 13 алмазов
+mods.cfm.MineBay.addTrade(<minecraft:stick>.withAmount(42),<minecraft:diamond>. ithAmount(13));
+// Добавить торговлю для 16 яблок с данным 3 emeralds
+mods.cfm.MineBay.addTrade(<minecraft:apple>.withAmount(16),<minecraft:emerald>. ithAmount(3));
+// Добавить торговлю для 1 морковь дано 1 изумруд
 mods.cfm.MineBay.addTrade(<minecraft:carrot>,<minecraft:emerald>);
 ```

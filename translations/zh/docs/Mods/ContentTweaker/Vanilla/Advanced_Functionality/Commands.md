@@ -1,27 +1,27 @@
 # 命令
 
-You can use this class to send a command, you cannot use this class to create new commands! Look at [CommandEvent](/Vanilla/Events/Events/CommandEvent/) to add new commands. You can also use a [ICommandManager](/Vanilla/Commands/ICommandManager/).
+您可以使用这个类来发送命令，您不能使用这个类来创建新的命令！ 查看 [命令事件](/Vanilla/Events/Events/CommandEvent/) 来添加新的命令。 您也可以使用 [ICommandManager](/Vanilla/Commands/ICommandManager/)。
 
 ## 导入相关包
 
-It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
-`import mods.contenttweaker.Commands;`
+如果您遇到任何问题，可能需要导入软件包，所以比抱歉更安全并添加导入。  
+`导入 mods.contenttweaker.Commands；`
 
-## Calling a command
+## 调用命令
 
-This is the only thing you can do with the Commands package.
+这是您唯一可以用命令包做的事情。
 
 ```zenscript
-call(String command, IPlayer player, IWorld world)
-call(String command, IPlayer player, IWorld world, boolean logToChat, boolean overridePermissions)
+调用(命令, IPlayer player, IWorld)
+调用(命令, IPlayer player, IWorld world, boolian logToChat, boolan overridePermissions)
 ```
 
-Parameters:
+参数：
 
-- String command → The command to be executed
-- [IPlayer](/Vanilla/Players/IPlayer/) player → The Player executing the command
-- [IWorld](/Mods/ContentTweaker/Vanilla/Advanced_Functionality/Commands/) world → The world the command is executed in
-- boolean logToChat → Should the command output appear in the MC chat?
-- boolean overridePermissions should the command be executed regardless of the required permission level?
+- 字符串命令 → 要执行的命令
+- [IPlayer](/Vanilla/Players/IPlayer/) 播放器 → 执行命令的播放器
+- [IWorld](/Mods/ContentTweaker/Vanilla/Advanced_Functionality/Commands/) world → 命令执行的世界是
+- 布尔值 logToChat -> 命令输出是否出现在MC 聊天中？
+- 不论所需的权限级别，是否执行命令的布尔值覆盖权限？
 
-The two booleans either both need to be added or omitted. If you call the command without them, they will be true.
+这两种布尔值要么需要增添，要么被略去。 如果你在没有他们的情况下调用命令，这些命令将是真的。

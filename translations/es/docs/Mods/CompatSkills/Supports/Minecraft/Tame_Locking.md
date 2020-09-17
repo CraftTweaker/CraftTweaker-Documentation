@@ -1,15 +1,15 @@
-# Taming Locking
+# Domesticando bloqueo
 
-## Animal-Tame Locking
+## Bloqueo de animales
 
-This feature allows for you to add requirement locks to taming specific entities.
+Esta función te permite añadir bloqueos requeridos a entidades específicas de domesticación.
 
-### Syntax
+### Síntesis
 
-[Link to IEntityDefinition](/Vanilla/Entities/IEntityDefinition/)
+[Enlace a la definición de la entidad](/Vanilla/Entities/IEntityDefinition/)
 
-    # Blank Example:
+    # Ejemplo en blanco:
     mods.compatskills.AnimalTameLock.addTameLock(IEntityDefinition definition, String... defaultRequirements);
     
-    # Working Example:
+    # Ejemplo de trabajo:
     mods.compatskills.AnimalTameLock.addTameLock(<entity:minecraft:wolf>, "reskillable:mining|5", "reskillable:magic|7");

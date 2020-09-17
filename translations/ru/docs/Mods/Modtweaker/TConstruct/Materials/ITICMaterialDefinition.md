@@ -5,12 +5,12 @@ You can use this to retrieve some information on the [ITICMaterial](/Mods/Modtwe
 
 ## Импорт пакета
 
-It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
-`import modtweaker.tconstruct.ITICMaterialDefinition;`
+Возможно, вам потребуется импортировать пакет, если вы столкнетесь с какими-либо проблемами, так что лучше быть безопасным чем извините и добавьте импорт.  
+`импортировать modtweaker.tconstruct.ITICMaterialDefinition;`
 
-## Retrieving such an object
+## Получение такого объекта
 
-You can retrieve an ITICMaterialDefinition from an [ITICMaterial's](/Mods/Modtweaker/TConstruct/Materials/ITICMaterial/) `definition` ZenGetter:
+Вы можете получить ITICMaterialDefinition от [ITICMaterial's](/Mods/Modtweaker/TConstruct/Materials/ITICMaterial/) `definition` ZenGetter:
 
 ```zenscript
 val def = <ticmat:stone>.definition;
@@ -18,7 +18,7 @@ val def = <ticmat:stone>.definition;
 
 ## Геттеры
 
-| Геттер      | Возвращаемый тип | Description                   |
+| Геттер      | Возвращаемый тип | Описание                      |
 | ----------- | ---------------- | ----------------------------- |
-| name        | string           | The material's internal name  |
-| displayName | string           | The material's localized name |
+| name        | string           | Внутреннее название материала |
+| displayName | string           | Локализованное имя материала  |

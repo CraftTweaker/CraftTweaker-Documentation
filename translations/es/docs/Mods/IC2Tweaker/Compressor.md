@@ -1,23 +1,23 @@
-# Compressor
+# Compresor
 
-## Package
+## Paquete
 
-`import mods.ic2.Compressor;`
+`importar mods.ic2.Compressor;`
 
-## Methods
+## Métodos
 
 - **[IItemStack](/Vanilla/Items/IItemStack/) output**
-- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input**
+- **[entrada IIngrediente](/Vanilla/Variable_Types/IIngredient/)**
 
-## Addition
+## Adicional
 
 ```zenscript
-mods.ic2.Compressor.addRecipe(IItemStack output, IIngredient input);
+mods.ic2.Compressor.addRecipe(Salida ItemStack, entrada IIngredient);
 
 mods.ic2.Compressor.addRecipe(<minecraft:diamond_block>, <minecraft:dirt> * 64);
 ```
 
-## Removal
+## Eliminar
 
-- If using Ic2 Experimental, to remove a recipe, simply remove the corresponding line in `config/ic2/compressor.ini`
-- If using Ic2 Classic, to remove a recipe, simply disable the corresponding recipe in `config/ic2/ic2machineRecipes.json`.
+- Si usas Ic2 Experimental, para remover una receta, simplemente elimina la línea correspondiente en `config/ic2/compressor.ini`
+- Si usas Ic2 Classic, para eliminar una receta, simplemente desactiva la receta correspondiente en `config/ic2/ic2machineRecipes.json`.

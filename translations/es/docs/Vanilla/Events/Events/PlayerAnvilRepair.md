@@ -1,28 +1,28 @@
-# PlayerAnvilRepair
+# Reparación del Jugador
 
-The PlayerAnvilRepair Event is fired whenever a player crafts something in the anvil.  
-You can change the chance that the anvil is damaged.
+El evento JugadorYvilRepair se dispara cada vez que un jugador fabrica algo en el yunque.  
+Puedes cambiar la probabilidad de que el yunque reciba daño.
 
-## Event Class
+## Clase de evento
 
-You will need to cast the event in the function header as this class:  
-`crafttweaker.event.PlayerAnvilRepairEvent`  
-You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
+Necesitarás lanzar el evento en la cabecera de la función como esta clase:  
+`crafttweaker.event. layerAnvilRepairEvent`  
+Puede, por supuesto, también [importar](/AdvancedFunctions/Import/) la clase antes y usar ese nombre entonces.
 
-## Event interface extensions
+## Extensiones de la interfaz de eventos
 
-PlayerAnvilRepair Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+PlayerAnvilRepair Events implementa las siguientes interfaces y pueden llamar a todos sus métodos/getters/setters también:
 
-- [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
+- [Evento IJugador](/Vanilla/Events/Events/IPlayerEvent/)
 
 ## ZenGetters
 
-The following information can be retrieved from the event:
+La siguiente información puede ser recuperada del evento:
 
-| ZenGetter        | ZenSetter     | Return Type                              |
-| ---------------- | ------------- | ---------------------------------------- |
-| `player`         |               | [IPlayer](/Vanilla/Players/IPlayer/)     |
-| `itemInput`      |               | [IItemStack](/Vanilla/Items/IItemStack/) |
-| `itemIngredient` |               | [IItemStack](/Vanilla/Items/IItemStack/) |
-| `itenResult`     |               | [IItemStack](/Vanilla/Items/IItemStack/) |
-| `breakChance`    | `breakChance` | float                                    |
+| ZenGetter                  | Ajuste      | Tipo de devolución                       |
+| -------------------------- | ----------- | ---------------------------------------- |
+| `jugador`                  |             | [IPlayer](/Vanilla/Players/IPlayer/)     |
+| `itemInput`                |             | [IItemStack](/Vanilla/Items/IItemStack/) |
+| `ingrediente del artículo` |             | [IItemStack](/Vanilla/Items/IItemStack/) |
+| `itenResult`               |             | [IItemStack](/Vanilla/Items/IItemStack/) |
+| `rompeolas`                | `rompeolas` | flotante                                 |

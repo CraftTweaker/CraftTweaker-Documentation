@@ -1,32 +1,32 @@
-# Basin Heating
+# Нагрев бассейна
 
-## Addition
+## Сложение
 
 ```zenscript
-import mods.cuisine.BasinHeating;
+импортируйте mods.cuisine.BasinHeating;
 
-BasinHeating.add(ILiquidStack input, IItemStack output); // Use 1 as heat value
-BasinHeating.add(ILiquidStack input, IItemStack output, int heatValue);
+BasinHeating.add(ILiquidStack input, IItemStack output); // Используйте 1 в качестве теплового значения
+BasinОтопления. dd(ILiquidStack input, IItemStack output, int heatValue);
 
 BasinHeating.add(<liquid:lava> * 1000, <item:minecraft:diamond>);
 BasinHeating.add(<liquid:water> * 1000, <item:minecraft:diamond>, 100);
 ```
 
-## Removal
+## Удаление
 
 ```zenscript
 import mods.cuisine.BasinHeating;
 
-// Remove by input.
-BasinHeating.remove(ILiquidStack input);
+// Удаляем по вводу.
+BasinHeating.remove(ILiquidStack);
 
 BasinHeating.remove(<liquid:lava> * 1000);
 
-// Remove by identifier.
-BasinHeating.remove(String id);
+// Удаляем по идентификатору.
+BasinHeating.remove(tring id);
 
 BasinHeating.remove("recipe_name");
 
-// Remove everything!
+// Удаляем все!
 BasinHeating.removeAll();
 ```

@@ -1,18 +1,18 @@
-# Steam Hammer
+# Паровой молот
 
-The Steam Hammer is a machine that converts two input items into an output item using steam.
+Steam Hammer - это машина, которая преобразует два входных элемента в выходной предмет с помощью пара.
 
-## Package
-`mods.steamagerevolution.SteamHammer`.
+## Пакет
+`mods.Steamagerevolution.SteamHammer`.
 
-## Methods
+## Методы
 
-- **[IItemStack](/Vanilla/Items/IItemStack/) output** The result of the recipe.
-- **[IItemStack](/Vanilla/Items/IItemStack/) input** The input of the recipe.
-- **int craftTime** Crafting time for machine to process
-- **int steamCost** Cost of Steam for machine to process
+- **[IItemStack](/Vanilla/Items/IItemStack/) output** Результат рецепта.
+- **[IItemStack](/Vanilla/Items/IItemStack/) ввода** Ввод рецепта.
+- **int Time** время создания машины для обработки
+- **int SteamCost** Стоимость Пара на машине для обработки
 
-## Addition
+## Сложение
 
 ```zenscript
 mods.steamagerevolution.SteamHammer.addRecipe(IIngredient input, IIngredient input, IItemStack output, int craftTime, int steamCost);
@@ -20,10 +20,10 @@ mods.steamagerevolution.SteamHammer.addRecipe(<ore:ingotIron>, <ore:ingotIron>, 
 ```
 
 
-## Removal
+## Удаление
 
 ```zenscript
-mods.steamagerevolution.SteamHammer.removeRecipe(IItemStack output);
+mods.steamagerevolution.SteamHammer.removeRecipe(выход IItemStack);
 mods.steamagerevolution.SteamHammer.removeRecipe(<ore:plateIron>.firstItem);
 
 mods.steamagerevolution.SteamHammer.removeAll();

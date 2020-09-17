@@ -1,30 +1,30 @@
-# DryingBasin
+# Cuenca seca
 
-This package allows you to modify recipes for the Drying Basin.
+Este paquete te permite modificar las recetas de la cuenca seca.
 
-## Importing the package
+## Importando el paquete
 
-If you want to import this package, here you go:
+Si quieres importar este paquete, aquí vas:
 
 ```zenscript
-import mods.integrateddynamics.DryingBasin;
+importar mods.integrateddynamics.DryingBasin;
 ```
 
-## Adding Recipes
+## Añadiendo recetas
 
 ```zenscript
-//DryingBasin.addRecipe(@Optional IItemStack inputStack, @Optional ILiquidStack inputFluid, @Optional IItemStack outputStack, @Optional ILiquidStack outputFluid, @Optional(10) int duration);
+//DryingBasin.addRecipe(@Optional ItemStack inputStack, @Optional ILiquidStack inputFluid, @Optional ItemStack outputStack, @Optional ILiquidStack outputFluid, @Optional(10) int duration);
 
-DryingBasin.addRecipe(<minecraft:melon>, <liquid:lava> * 100, <minecraft:stick>, <liquid:water> * 100, 10);
+DryingBasin. ddRecipe(<minecraft:melon>, <liquid:lava> * 100, <minecraft:stick>, <liquid:water> * 100, 10);
 ```
 
-## Removing Recipes
+## Eliminando recetas
 
 ```zenscript
-//DryingBasin.removeRecipe(@Optional IItemStack inputStack, @Optional ILiquidStack inputFluid, @Optional IItemStack outputStack, @Optional ILiquidStack outputFluid, @Optional(10) int duration);
-DryingBasin.removeRecipe(<minecraft:melon>, <liquid:lava> * 100, <minecraft:stick>, <liquid:water> * 100, 10);
+//DryingBasin.removeRecipe(@Optional ItemStack inputStack, @Optional ILiquidStack inputFluid, @Optional ItemStack outputStack, @Optional ILiquidStack outputFluid, @Optional(10) int duration);
+DryingBasin. emoveRecipe(<minecraft:melon>, <liquid:lava> * 100, <minecraft:stick>, <liquid:water> * 100, 10);
 
 
-//DryingBasin.removeRecipesWithOutput(@Optional IItemStack outputStack, @Optional ILiquidStack outputFluid);
+//DryingBasin. emoveRecipesWithOutput(@Optional ItemStack outputStack, @Optional ILiquidStack outputFluid);
 DryingBasin.removeRecipesWithOutput(<minecraft:leather>, null);
 ```

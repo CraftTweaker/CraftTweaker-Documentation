@@ -1,15 +1,15 @@
-# GameStages
+# Spielstadien
 
-## Special Thanks
+## Besonderer Dank
 
-Special Thanks goes out to Darkhax for the wonderful changes done in GameStages 2.0.0 !
+Besonderer Dank geht an Darkhax für die wunderbaren Änderungen in GameStages 2.0.0 !
 
-## Explanation:
+## Erklärung:
 
-- So the GameStage Support exists in three form:
-- Using GameStages as requirements 
-    - To see information about the GameStage requirement
-    - Please visit the Requirement-Type Page: 
+- Der GameStage Support existiert also in dreier Form:
+- Nutze GameStages als Anforderungen 
+    - Um Informationen über die GameStage Anforderung zu sehen
+    - Bitte besuchen Sie die "Requirement-Typ"-Seite: 
         - [Link](/Mods/CompatSkills/Requirements/Requirements/) 
-- Creating "Dummy Traits" that once unlocked, unlock a GameStage.
-- GameStage Locking which cancels the addition of a GameStage if the player's don't have the requirements set for that stage.
+- Erstelle "Dummy Traits", die einmal entsperrt sind, entsperrt eine GameStage.
+- GameStage Locking, das die Aufnahme einer GameStage annulliert, wenn der Spieler nicht die Voraussetzungen für diese Bühne hat.

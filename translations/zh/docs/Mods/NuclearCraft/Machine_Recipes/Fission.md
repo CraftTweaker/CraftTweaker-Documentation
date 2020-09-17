@@ -1,16 +1,16 @@
-# Fission
+# 裂痕模式
 
-## Importing the Package
-`mods.nuclearcraft.fission`
+## 导入软件包
+`nuclearcraft.ff`
 
-## Adding Recipes
+## 添加配方
 ```zenscript
-mods.nuclearcraft.fission.addRecipe([itemInput, itemOutput, double baseTime, double basePower, double baseHeat, String guiName, @Optional double processRadiation]);
+mods.nuclearcraft.fission.addRecipe([itemInput, itemOutput, two baseTime, double basePower, double baseHeat, String guiName, @Optional double processRadiation]);
 ```
 
-## Removing Recipes
+## 删除配方
 ```zenscript
-mods.nuclearcraft.fission.removeRecipeWithInput([itemInput]);
-mods.nuclearcraft.fission.removeRecipeWithOutput([itemOutput]);
+mods.nuclearcraft.fission.removeRecipeWidInput([itemInput]);
+mods.nuclearcraft.fission.removeRecipeWOutput([itemOutput]);
 mods.nuclearcraft.fission.removeAllRecipes();
 ```

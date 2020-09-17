@@ -1,9 +1,9 @@
-# Sound Event Bracket Handler
+# サウンドイベントブラケットハンドラー
 
 The SoundEvent Bracket Handler gives you access to the SoundEvents in the game.  
 Check [this](https://minecraft.gamepedia.com/Sounds.json) for a list of vanilla sound events!
 
-SoundTypes are referenced in the Sound Event Bracket handler this way:
+SoundTypesは、以下の方法でSound Event Bracket ハンドラで参照されます。
 
 Vanilla
 
@@ -13,7 +13,7 @@ Vanilla
 <soundevent:ambient.cave>
 ```
 
-Mod Added
+Modが追加されました
 
 ```zenscript
 <soundevent:modID:name>
@@ -21,4 +21,4 @@ Mod Added
 <soundevent:minecraft:ambient.cave>
 ```
 
-If the soundType is found, this will return an [ISoundEventDefinition](/Mods/ContentTweaker/Vanilla/Types/Sound/ISoundEventDefinition/) Object.
+soundType が見つかった場合、これは [ISoundEventDefinition](/Mods/ContentTweaker/Vanilla/Types/Sound/ISoundEventDefinition/) Object を返します。

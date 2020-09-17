@@ -1,31 +1,31 @@
-# ICraftingInventory
+# Ekwipunek ICrafting
 
-The ICraftingInventory contains all kinds of information on the inventory a crafting process is performed in.
+ICraftingInventory zawiera wszystkie informacje dotyczące inwentarza, w którym odbywa się proces rzemieślniczy.
 
-## Importing the class
+## Importowanie klasy
 
-It might be required to [import](/AdvancedFunctions/Import/) the class to avoid errors.  
-`import crafttweaker.recipes.ICraftingInventory`
+Może być wymagane [zaimportowanie](/AdvancedFunctions/Import/) klasy, aby uniknąć błędów.  
+`zaimportuje crafttweaker.recipes.ICraftingInventory`
 
 ## ZenGetters
 
-| ZenGetter    | Return type                                  | Description                                          |
-| ------------ | -------------------------------------------- | ---------------------------------------------------- |
-| `player`     | [IPlayer](/Vanilla/Players/IPlayer/)         | the player owning this inventory                     |
-| `size`       | int                                          | the inventory's size                                 |
-| `width`      | int                                          | the inventory's width                                |
-| `height`     | int                                          | the inventory's height                               |
-| `stackCount` | int                                          | the the number of stacks that are actually filled in |
-| `items`      | [IItemStack[][]](/Vanilla/Items/IItemStack/) | The items that present in the crafting table         |
-| `itemArray`  | [IItemStack[]](/Vanilla/Items/IItemStack/)   | The items that present in the crafting table         |
+| ZenGetter           | Typ zwrotu                                   | Opis                                          |
+| ------------------- | -------------------------------------------- | --------------------------------------------- |
+| `gracz`             | [IPlayer](/Vanilla/Players/IPlayer/)         | gracz posiadający ten ekwipunek               |
+| `rozmiar`           | odcień                                       | wielkość ekwipunku                            |
+| `width`             | odcień                                       | szerokość ekwipunku                           |
+| `wysokość`          | odcień                                       | wysokość ekwipunku                            |
+| `liczba stosów`     | odcień                                       | liczba stosów, które są faktycznie wypełnione |
+| `elementy`          | [IItemStack[][]](/Vanilla/Items/IItemStack/) | Przedmioty obecne w stole rzemieślniczym      |
+| `tablica elementów` | [IItemStack[]](/Vanilla/Items/IItemStack/)   | Przedmioty obecne w stole rzemieślniczym      |
 
-## ZenMethods
+## Metody ZenMethods
 
-Following Methods are available:
+Dostępne są następujące metody:
 
-`inventory.getStack(index)` returns the [IItemStack](/Vanilla/Items/IItemStack/) at the given index or null if no item present. Index is an int.  
-`inventory.setStack(index, item)` sets the Stack at the given index to the provided item. Index is an int, item is an IItemStack. Use null if you want to clear the stack at that index.
+`inventory.getStack(index)` zwraca [IItemStack](/Vanilla/Items/IItemStack/) w danym indeksie lub null jeśli nie ma żadnego produktu. Indeks jest int.  
+`inventory.setStack(indeks elementu)` ustawia Stack w danym indeksie na dostarczony przedmiot. Indeks jest int, przedmiot jest IItemStack. Użyj null jeśli chcesz wyczyścić stos w tym indeksie.
 
-The top left stack is position (0, 0), row and column are ints.  
-`inventory.getStack(row, column)` returns the [IItemStack](/Vanilla/Items/IItemStack/) at the given position or null if no item present.  
-`inventory.setStack(row, column, item)` sets the stack at the given position to the provided item. Item is an IItemStack. Use null if you want to clear the stack at that position.
+Górny lewy stos to pozycja (0, 0), wiersze i kolumny są intami.  
+`ekwipunku. etStack(wiersz, kolumna)` zwraca [IItemStack](/Vanilla/Items/IItemStack/) w podanej pozycji lub null jeśli nie ma aktualnej pozycji.  
+`inventory.setStack(wiersz, kolumna, element)` ustawia stosy w danej pozycji na dostarczony przedmiot. Przedmiot jest IItemStack. Użyj pustego, jeśli chcesz wyczyścić stos w tej pozycji.

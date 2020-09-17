@@ -1,28 +1,28 @@
-# Alloy Smelter
+# Fundición de Aleación
 
-## Package
+## Paquete
 
-`import mods.enderio.AlloySmelter;`
+`importar mods.enderio.Alloysmallelter;`
 
-## Methods
+## Métodos
 
-- **[IItemStack](/Vanilla/Items/IItemStack/) output** The result of the recipe.
-- **[IIngredient](/Vanilla/Variable_Types/IIngredient/)[] input** The ingredients. Must be between 1 and 3 ingredients.
-- **int energyCost** How much FE the recipe uses. Defaults to 5000.
-- **float xp** The xp is granted from this recipe. May not be negative.
+- **[ItemStack](/Vanilla/Items/IItemStack/) muestra** El resultado de la receta.
+- **[IIngrediente](/Vanilla/Variable_Types/IIngredient/)[] entrada** Los ingredientes. Debe estar entre 1 y 3 ingredientes.
+- **int energyCost** Cuánto utiliza la receta. Por defecto es 5000.
+- **xp decimal** El xp se concede de esta receta. Puede no ser negativo.
 
-## Addition
+## Adicional
 
 ```zenscript
-mods.enderio.AlloySmelter.addRecipe(IItemStack output, IIngredient[] input, @Optional int energyCost, @Optional float xp);
+mods.enderio.Alloysmallelter.addRecipe(salida ItemStack, IIngredient[] entrada, @Optional int energyCost, @Optional float xp);
 
-mods.enderio.AlloySmelter.addRecipe(<minecraft:iron_ingot>, [<minecraft:sand>, <minecraft:gravel>, <minecraft:brick>]);
+mods.enderio.Alloymirrelter.addRecipe(<minecraft:iron_ingot>, [<minecraft:sand>, <minecraft:gravel>, <minecraft:brick>]);
 ```
 
-## Removal
+## Eliminar
 
 ```zenscript
-mods.enderio.AlloySmelter.removeRecipe(IItemStack output);
+mods.enderio.AlloySmelter.removeRecipe(salida IItemStack);
 
-mods.enderio.AlloySmelter.removeRecipe(<enderio:item_alloy_ingot:7>);
+mods.enderio.Alloymirrelter.removeRecipe(<enderio:item_alloy_ingot:7>);
 ```

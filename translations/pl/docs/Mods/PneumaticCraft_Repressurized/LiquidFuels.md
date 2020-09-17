@@ -1,35 +1,35 @@
-# Liquid Fuels
+# Paliwa ciekłe
 
-Liquid Fuels are used in PneumaticCraft: Repressurized in the (Advanced) Liquid Compressor to create compressed air, and (optionally) in the Kerosene Lamp to produce light. By default the liquids produced in the Refinery are defined as fuel, as well as any liquid above a temperature of 305 degrees Kelvin.
+Paliwa ciekłe są stosowane w PneumaticCraft: Ponowne ciśnienie w (zaawansowanym) sprężarce do wytwarzania sprężonego powietrza oraz (opcjonalnie) w lampie rozdzielczej do wytwarzania światła. Domyślnie ciecze produkowane w rafinerii definiuje się jako paliwo, a także wszelkie ciecze o temperaturze powyżej 305 stopni Kelvina.
 
-## Calling
+## Dzwonienie
 
-You can call the Liquid Fuels package using `mods.pneumaticcraft.liquidfuel`.
+Możesz wywołać pakiet paliw ciekłych używając `mods.pneumaticcraft.płynne paliwo`.
 
-## Removing
+## Usuwanie
 
-This function deregisters the [ILiquidStack](/Vanilla/Liquids/ILiquidStack/) `fluid` as a fuel:
+Ta funkcja wyłącza [ILiquidStack](/Vanilla/Liquids/ILiquidStack/) `płyn` jako paliwo:
 
 ```zenscript
-mods.pneumaticcraft.liquidfuel.removeFuel(ILiquidStack fluid);
-// Example
+mods.pneumaticcraft.liquidfuel.removeFuel(ILiquidStack);
+// Przykład
 mods.pneumaticcraft.liquidfuel.removeFuel(<liquid:lpg>);
 ```
 
-This function deregisters *all* registered fuels:
+Ta funkcja wyłącza *wszystkie* zarejestrowane paliwa:
 
 ```zenscript
 mods.pneumaticcraft.liquidfuel.removeAllFuels();
 ```
 
-## Adding
+## Dodawanie
 
-The following functions can be used to add fluids to the fuel registry:
+Następujące funkcje mogą być wykorzystywane do dodawania płynów do rejestru paliw:
 
 ```zenscript
-// Register a certain liquid as a fuel. mlPerBucket defines the amount of compressed air produced per bucket of fuel. For reference, 16000mL of air is produced from a piece of Coal in an Air Compressor.
-mods.pneumaticcraft.liquidfuel.addFuel(ILiquidStack fluid, double mlPerBucket);
+// Zarejestruj pewną ciecz jako paliwo. mlPerBucket definiuje ilość sprężonego powietrza produkowanego na wiadro paliwa. Do celów odniesienia 16000 ml powietrza jest wytwarzane z kawałka węgla w kompresorze powietrza.
+mods.pneumaticcraft.płynne paliwo.addFuel(ILiquidStack, podwójny mlPerBucket);
 
-// Example: register water as a fuel which produces 16000mL air per bucket.
+// Przykład: zarejestruj wodę jako paliwo, które wytwarza 16000 ml powietrza na wiaderkę.
 mods.pneumaticcraft.liquidfuel.addFuel(<liquid:water>, 16000);
 ```

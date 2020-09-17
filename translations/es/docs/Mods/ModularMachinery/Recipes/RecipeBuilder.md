@@ -1,14 +1,14 @@
-# RecipeBuilder
+# Constructor de recetas
 
-The RecipeBuilder class only has one objective: Creating a new [RecipePrimer](/Mods/ModularMachinery/Recipes/RecipePrimer/) Object for you.
+La clase RecipeBuilder solo tiene un objetivo: Crear un nuevo objeto [RecipePrimer](/Mods/ModularMachinery/Recipes/RecipePrimer/) para ti.
 
-## Calling
+## Llamando
 
-You can call the Brew package using `mods.modularmachinery.RecipeBuilder`
+Puedes llamar al paquete Brew usando `mods.modularmachinery.RecipeBuilder`
 
-## Creating a RecipePrimer.
+## Creando un Primer de recetas.
 
-These are the only functions to be found in the class, they both return a new [RecipePrimer](/Mods/ModularMachinery/Recipes/RecipePrimer/) Object.
+Estas son las únicas funciones que se encuentran en la clase, ambas retornan un nuevo objeto [RecipePrimer](/Mods/ModularMachinery/Recipes/RecipePrimer/).
 
 ```zenscript
 //mods.modularmachinery.RecipeBuilder.newBuilder(String recipeRegistryName, String associatedMachineRegistryName, int processingTickTime);
@@ -20,5 +20,5 @@ These are the only functions to be found in the class, they both return a new [R
 ```
 
 ```zenscript
-var item = <item:minecraft:gold_ingot>;
+elemento var = <item:minecraft:gold_ingot>;
 ```

@@ -1,42 +1,42 @@
-# Chemical Combiner
+# Combinaison de produits chimiques
 
-# Package
+# Paquet
 ```zenscript
-mods.alchemistry.Combiner
+mods.alchimie.Combiner
 ```
 
-## Methods
-- **[IItemStack](/Vanilla/Items/IItemStack/) output** - The output of the recipe.
+## Méthodes
+- **[IItemStack](/Vanilla/Items/IItemStack/) sortie** - La sortie de la recette.
 
-- **[IItemStack](/Vanilla/Items/IItemStack/)[] input** - The inputs of the recipe.
+- **[IItemStack](/Vanilla/Items/IItemStack/)[] entrée** - Les entrées de la recette.
 
 
-## Addition
+## Ajouter
 ```zenscript
-mods.alchemistry.Combiner.addRecipe(IItemStack output, IItemstack[] input);
+mods.alchimie.Combiner.addRecipe(IItemStack output, IItemstack[] input);
 mods.alchemistry.Combiner.addRecipe(<minecraft:redstone>,
     [<alchemistry:element:5>,<alchemistry:element:5>,null,
      <alchemistry:element:5>]);
 ```
 
-## Removal
+## Retirer
 ```zenscript
-mods.alchemistry.Combiner.removeRecipe(IItemStack output);
+mods.alchimie.Combiner.removeRecipe(IItemStack output);
 mods.alchemistry.Combiner.removeRecipe(<minecraft:gold_ingot>);
 
 mods.alchemistry.Combiner.removeAllRecipes();
 ```
 
 
-# Game Stages Integration
+# Intégration des phases de jeu
 
-## New Recipes
+## Nouvelles recettes
 ```zenscript
-mods.alchemistry.Combiner.addStagedRecipe(IItemStack output, IItemstack[] input, String stage);
+mods.alchimie.Combiner.addStagedRecipe(IItemStack output, IItemstack[] input, String stage);
 ```
 
-## Existing Recipe
+## Recette existante
 
 ```zenscript
-mods.alchemistry.Combiner.setAsStaged(IItemStack output, String stage);
+mods.alchimie.Combiner.setAsStaged(IItemStack output, String stage);
 ```

@@ -1,24 +1,24 @@
-# Sawmill
+# Sägewerk
 
-## Package
+## Paket
 
 ```java
-import mods.ic2.Sawmill;
+importieren mods.ic2.Sägewerk
 ```
 
 ## Methoden
 
 - **[IItemStack](/Vanilla/Items/IItemStack/) output**
-- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input**
+- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) Eingabe**
 
 ### Addition
 
 ```zenscript
-mods.ic2.Sawmill.addRecipe(IItemStack output, IIngredient input);
+mods.ic2.Säge.addRecipe(IItemStack-Ausgabe, IIngredient);
 
-mods.ic2.Sawmill.addRecipe(<minecraft:diamond_block>, <minecraft:dirt> * 64);
+mods.ic2.Sägemill.addRecipe(<minecraft:diamond_block>, <minecraft:dirt> * 64);
 ```
 
-### Removal
+### Entfernen
 
-To remove an already existing recipe, simply disable the corresponding recipe in `config/ic2/ic2machineRecipes.json`.
+Um ein bereits vorhandenes Rezept zu entfernen, deaktivieren Sie einfach das entsprechende Rezept in `config/ic2/ic2machineRecipes.json`.

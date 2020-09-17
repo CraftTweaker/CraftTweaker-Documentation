@@ -1,20 +1,20 @@
-# Enchanter
+# Zaklęcie
 
-## Package
+## Pakiet
 
 `import mods.enderio.Enchanter;`
 
-## Methods
+## Metody
 
-**- [IEnchantmentDefinition](/Vanilla/Enchantments/IEnchantmentDefinition/) output** The output enchantment.
+**- [IenchantmentDefinition](/Vanilla/Enchantments/IEnchantmentDefinition/) wyjście** Zaklęcie wyjściowe.
 
-**- [IIngredient](/Vanilla/Variable_Types/IIngredient/) input** The item that it used to make this enchantment.
+**- [IIngredient](/Vanilla/Variable_Types/IIngredient/) wprowadź** element, który użył do stworzenia tego zaklęcia.
 
-**- int amountPerLevel** The number of input items per level of enchantment.
+**- int amountPerLevel** Liczba elementów wejściowych na poziom zaklęcia.
 
-**- double costMultiplier** Used to modify how expensive the recipe is.
+**- podwójny kalkulator** Używany do modyfikowania, jak kosztowny jest przepis.
 
-## Addition
+## Dodanie
 
 ```zenscript
 mods.enderio.Enchanter.addRecipe(IEnchantmentDefinition output, IIngredient input, int amountPerLevel, double costMultiplier);
@@ -22,7 +22,7 @@ mods.enderio.Enchanter.addRecipe(IEnchantmentDefinition output, IIngredient inpu
 mods.enderio.Enchanter.addRecipe(<enchantment:minecraft:sharpness>, <minecraft:prismarine_shard>, 32, 60);
 ```
 
-## Removal
+## Usuwanie
 
 ```zenscript
 mods.enderio.Enchanter.removeRecipe(IEnchantmentDefinition output);

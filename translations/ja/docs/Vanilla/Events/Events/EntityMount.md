@@ -1,24 +1,24 @@
 # EntityMountEvent
 
-The EntityMount event is fired whenever an entity is mounted or dismounted from. If canceled, the entity is prevented from mounting (or dismounting).
+EntityMount イベントは、エンティティがマウントまたはアンマウントされたときに発生します。 キャンセルされた場合、エンティティはマウント(またはマウント解除)できません。
 
-## Event Class
+## イベントクラス
 You will need to cast the event in the function header as this class:  
 `crafttweaker.event.EntityMountEvent` You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
 
-## Event interface extensions
-EntityMountEvent Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+## イベントインターフェースの拡張
+EntityMountEvent イベントは、以下のインターフェイスを実装し、それらのメソッド/getters/setters/settersをすべて呼び出すことができます。
 
 - [ILivingEvent](/Vanilla/Events/Events/ILivingEvent/)
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 
 ## ZenGetters/ZenSetters
-The following information can be retrieved/set during the event:
+イベント中に以下の情報を取得/設定できます:
 
 | ZenGetter        | 戻り値                                   |
 | ---------------- | ------------------------------------- |
-| `world`          | [IWorld](/Vanilla/World/IWorld/)      |
+| `世界`             | [IWorld](/Vanilla/World/IWorld/)      |
 | `mountingEntity` | [IEntity](/Vanilla/Entities/IEntity/) |
 | `mountedEntity`  | [IEntity](/Vanilla/Entities/IEntity/) |
 | `isMounting`     | boolean型                              |
-| `isDismounting`  | boolean                               |
+| `isdismounting`  | boolean型                              |

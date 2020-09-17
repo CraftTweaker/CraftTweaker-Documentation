@@ -1,8 +1,8 @@
-# Block Bracket Handler
+# Обработчик скобок
 
-The Block Bracket Handler gives you access to the blocks in the game. It is only possible to get blocks registered in the game, so adding or removing mods may cause issues if you reference the mod's blocks in a Block Bracket Handler.
+Обработчик браслетов дает вам доступ к блокам в игре. Можно получить только зарегистрированные в игре, так что добавление или удаление модов может вызвать проблемы, если вы ссылаетесь на блоки мода в обработчике блоков блоков.
 
-Blocks are referenced in the Block Bracket handler this way:
+Блоки упоминаются в обработчике Блок таким образом:
 
 ```zenscript
 <block:modID:blockName>

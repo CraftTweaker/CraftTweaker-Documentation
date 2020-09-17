@@ -1,23 +1,23 @@
-# Solderer
+# はんだ屋
 
-The Solderer package is used for adding or removing recipes to/from the Refined Storage Solderer.
+ソルダラーパッケージは、精製されたストレージ ソルダラーへのレシピの追加や削除に使用されます。
 
-## Calling
+## 発信中
 
-You can call the Solderer package using `mods.refinedstorage.Solderer`
+`mods.finedstorage.Solderer` を使ってソルダラーパッケージを呼び出すことができます。
 
-## Recipe addition
+## レシピの追加
 
-The Rows array **must** have a length of three! Use `null` if you need empty stacks.
+Rows 配列 **** は 3 の長さでなければなりません！ 空のスタックが必要な場合は、 `null` を使用します。
 
 ```zenscript
-//mods.refinedstorage.Solderer.addRecipe(IItemStack output, int time, IItemStack[] rows);
-mods.refinedstorage.Solderer.addRecipe(<minecraft:gold_ingot>, 100, [<minecraft:iron_ingot>, <minecraft:iron_ingot>, <minecraft:iron_ingot>]);
+//mods.refinedstorage.Solder.addRecipe(IItemStack 出力, int time, IItemStack[] rows);
+mods.refinedstorage.Solder.addRecipe(<minecraft:gold_ingot>, 100, [<minecraft:iron_ingot>, <minecraft:iron_ingot>, <minecraft:iron_ingot>]);
 ```
 
-## Recipe removal
+## レシピの削除
 
 ```zenscript
-//mods.refinedstorage.Solderer.removeRecipe(IItemStack output);
-mods.refinedstorage.Solderer.removeRecipe(<minecraft:iron_ingot>);
+//mods.finishedstorage.Solder.removeRecipe(IItemStack output);
+mods.finishedstorage.Solder.removeRecipe(<minecraft:iron_ingot>);
 ```

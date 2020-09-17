@@ -1,24 +1,25 @@
-# PlayerSmelted
+# PlayerSlused
 
-The PlayerSmelted Event is fired whenever a player takes something out of a furnace.
+プレイヤーが炉から何かを取り出すたびにPlayerSculdイベントが発生します。
 
-## Event Class
+## イベントクラス
 
-You will need to cast the event in the function header as this class:  
-`crafttweaker.event.PlayerSmeltedEvent`  
-You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
+関数ヘッダーのイベントをこのクラスとしてキャストする必要があります:  
+`crafttweaker.event. layerSmeltedEvent <br /> 
+ <code>`  
+もちろん、 [インポート](/AdvancedFunctions/Import/) 前にそのクラスをインポートして、その名前を使用することもできます。
 
-## Event interface extensions
+## イベントインターフェースの拡張
 
-PlayerSmelted Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+PlayerSmeled Eventsは以下のインターフェイスを実装し、それらのメソッド/getters/settersもすべて呼び出すことができます。
 
 - [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
 
 ## ZenGetters
 
-The following information can be retrieved from the event:
+イベントから次の情報を取得できます。
 
-| ZenGetter | Return Type                              |
+| ZenGetter | 戻り値                                      |
 | --------- | ---------------------------------------- |
-| `player`  | [IPlayer](/Vanilla/Players/IPlayer/)     |
-| `output`  | [IItemStack](/Vanilla/Items/IItemStack/) |
+| `プレイヤー`   | [IPlayer](/Vanilla/Players/IPlayer/)     |
+| `出力`      | [IItemStack](/Vanilla/Items/IItemStack/) |

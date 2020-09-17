@@ -1,11 +1,11 @@
-# Block Harvest-Level Locking
+# Blockiere die Verriegelung der Erntestufe
 
-## Feature:
+## Merkmal:
 
-This lock makes it so the player can't break a block with the set Harvest-Level unless a set of Requirements are met. For example below, you can see that Blocks with a Harvest-Level of 3 can only be broken in the End. This example is not really that great in practice, but it does show what this type of lock is capable of doing.
+Diese Sperre macht es so, dass der Spieler keinen Block mit dem Set Erntestufe zerstören kann, wenn nicht ein Set an Anforderungen erfüllt wird. Zum Beispiel unten kannst du sehen, dass Blöcke mit einer Erntestufe von 3 nur am Ende gebrochen werden können. Dieses Beispiel ist in der Praxis nicht so großartig, aber es zeigt, was diese Art von Schleusen zu tun vermag.
 
 ## Syntax:
 
-    mods.compatskills.HarvestLock.addBlockLevelLock(int level, String... requirements);
+    mods.compatskills.HarvestLock.addBlockLevelLock(int level, String... erforderlich);
     
     mods.compatskills.HarvestLock.addBlockLevelLock(3, "dim|1");

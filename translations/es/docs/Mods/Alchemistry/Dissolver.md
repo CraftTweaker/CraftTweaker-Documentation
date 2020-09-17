@@ -1,34 +1,36 @@
-# Dissolver
+# Disolver
 
-## Package
-`mods.alchemistry.Dissolver`
+## Paquete
+`mods.alchemistry.DissolverDisolver`
 
 ## Metodos
-- **[IItemStack](/Vanilla/Items/IItemStack/) input** - The input of the recipe.
-- **boolean relativeProbability** - Probability Calculation Boolean
-- **int rolls** -  Possibilty of Roles
-- **probabilityGroups** - An array of arrays with an double followed by any # of [IItemStack](/Vanilla/Items/IItemStack/)s. The double refers to the probability for its group.
+- **[ItemStack](/Vanilla/Items/IItemStack/) entrada** - La entrada de la receta.
+- **booleano relativeProbability** - Cálculo de probabilidad Booleano
+- **rollos de entera** - Posibilidad de Rol
+- **probabilityGroups** - Un array de arreglos con un doble seguido por cualquier número de [ItemStack](/Vanilla/Items/IItemStack/)s. El doble se refiere a la probabilidad para su grupo.
 
-## Addition
+## Adicional
 ```zenscript
-mods.alchemistry.Dissolver.addRecipe(IIngredient input, boolean relativeProbability, int rolls, Object[][] probabilityGroups);
+mods.alchemistry.AtomizerDissolver.addRecipe(Entrada IIngrediente, Probabilidad relativa booleana, rollos de intención, grupo de probabilidad[][]);
+mods.alchemistry.mods.alchemistry.Dissolver.addRecipe(IIngredient input, boolean relativeProbability, int rolls, Object[][] probabilityGroups);
 mods.alchemistry.Dissolver.addRecipe(<minecraft:dye:9>, false, 5,
 [[10, <minecraft:stone>], 
  [20, <minecraft:sand>,<minecraft:iron_ore>]]);
 ```
 
-## Removal
+## Eliminar
 ```zenscript
-mods.alchemistry.Dissolver.removeRecipe(IIngredient input);
+mods.alchemistry.AtomizerDissolver.removeRecipe(IIngredient input);
+mods.alchemistry.mods.alchemistry.Dissolver.removeRecipe(IIngredient input);
 mods.alchemistry.Dissolver.removeRecipe(<minecraft:ender_pearl>);
 
-mods.alchemistry.Dissolver.removeAllRecipes();
+mods.alchemistry.Dissolver.removeAllRecipes();Dissolver.removeAll-Recetas ();
 ```
 
-# Notes
-To ease in the development of modifying existing dissolver recipes there is a command, simply /dissolver that will fetch the crafttweaker recipe for the item that you are holding and copy it into your clipboard
+# Notas
+Para facilitar el desarrollo de la modificación de las recetas de disolver existentes hay un comando, simplemente /disuelver que obtendrá la receta de crafttweaker para el objeto que está sosteniendo y copiarla en el portapapeles
 
-If relative probability is true, then each probability will be calculated based on the sum of all of the probabilities. In the example above that would mean there is a 33.3% chance of outputting stone each roll and a 66.6% chance of outputting a sand and an iron ore each roll.
+Si la probabilidad relativa es verdadera, entonces cada probabilidad será calculada en base a la suma de todas las probabilidades. En el ejemplo anterior esto significaría que hay un 33,3% de posibilidades de salida de piedra cada rollo y un 66. % de probabilidad de producir una arena y un mineral de hierro cada rollo.
 
-If relative probability is false, then these numbers are absolute percentages i.e. a 10% chance of outputting stone and a 20% chance of outputting sand and iron ore (regardless of whether or not stone was outputted). Floating-point probabilities are supported, so 4.5 would mean 4.5%
+Si la probabilidad relativa es falsa, entonces estos números son porcentajes absolutos i.e. un 10% de probabilidad de salida de piedra y un 20% de probabilidad de salida de arena y mineral de hierro (independientemente de si se ha producido o no piedra). Las probabilidades de puntos flotantes son soportadas, por lo que 4,5 significaría 4,5%
 

@@ -1,34 +1,34 @@
-# Combustion Generator
+# 燃焼ジェネレーター
 
-## Package
+## パッケージ
 
 `import mods.enderio.CombustionGen;`
 
-## Methods
+## メソッド
 
-- **[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) fuel** The fluid fuel to add.
-- **int powerPerCycleRF** Amount of energy created per tick in a base-line machine.
-- **int totalBurnTime** Total burn time of one bucket of fuel.
-- **[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) coolant** The fluid coolant to add.
-- **float degreesCoolingPerMB** How much heat in the generator can one mB of the added coolant absorb until it heats up all the way?
+- **[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) 燃料** 追加する流体燃料。
+- **int powerPerCycleRF** 塩基ラインマシンでティックあたりに生成されるエネルギー量。
+- **int totalBurnTime** 燃料バケットの合計燃焼時間。
+- **[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) クーラント** 追加する流体クーラント。
+- **float度CoolingPerMB** 加えられたクーラントの1mBは、すべての方法で加熱されるまで吸収することができますか?
 
-## Add Fuel
+## 燃料を追加
 
 ```zenscript
-mods.enderio.CombustionGen.addFuel(ILiquidStack fuel, int powerPerCycleRF, int totalBurnTime);
+mods.enderio.CombustionGen.addFuel(ILiquidStack燃料, int powerPerCycleRF, int totalBurnTime);
 
 mods.enderio.CombustionGen.addFuel(<liquid:lava>, 25, 40);
 ```
 
-## Add Coolant
+## クーラントを追加
 
 ```zenscript
-mods.enderio.CombustionGen.addCoolant(ILiquidStack fluid coolant, float degreesCoolingPerMB);
+mods.enderio.CombustionGen.addCoolant(ILiquidStack流体クーラント, float度CoolingPerMB);
 
 mods.enderio.CombustionGen.addCoolant(<liquid:liquid_sunshine>, 100);
 ```
 
-## Remove Fuel
+## 燃料を取り除く
 
 ```zenscript
 mods.enderio.CombustionGen.removeFuel(ILiquidStack fuel);
@@ -36,10 +36,10 @@ mods.enderio.CombustionGen.removeFuel(ILiquidStack fuel);
 mods.enderio.CombustionGen.removeFuel(<liquid:fire_water>);
 ```
 
-## Remove Coolant
+## クーラントを削除
 
 ```zenscript
-mods.enderio.AlloySmelter.removeCoolant(ILiquidStack coolant);
+mods.enderio.AlloySmelter.removeCoolant(ILiquidStackクーラント);
 
 mods.enderio.AlloySmelter.removeCoolant(<liquid:water>);
 ```

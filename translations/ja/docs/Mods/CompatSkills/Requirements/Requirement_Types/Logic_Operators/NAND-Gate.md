@@ -1,24 +1,24 @@
-# NAND Operator
+# NAND演算子
 
-A **NAND** gate is an inverted **AND** gate. This is the same as using the output of the **AND** gate as the input to the **NOT** gate. This means that the **NAND** gate returns `TRUE` in all cases except for when both inputs are also `TRUE`.
+**NAND** ゲートは反転した **AND** ゲートです。 これは、 **NOT** ゲートへの入力として **AND** ゲートの出力を使用するのと同じです。 これは、両方の入力が **TRUE** である場合を除いて、 `NAND` ゲートがすべての場合に `TRUE`を返すことを意味します。
 
-| Input 1 | Input 2 | Output |
-| ------- | ------- | ------:|
-| 0       | 0       |      1 |
-| 0       | 1       |      1 |
-| 1       | 0       |      1 |
-| 1       | 1       |      0 |
+| Input 1 | Input 2 | 出力 |
+| ------- | ------- | --:|
+| 0       | 0       |  1 |
+| 0       | 1       |  1 |
+| 1       | 0       |  1 |
+| 1       | 1       |  0 |
 
-    Empty Example:
+    空の例:
     nand|[]~[]
     
-    Filled-In Example:
+    塗りつぶされた例:
     nand|[reskillable:defense|24]~[reskillable:agility|24]
     
 
-## Use-Case
+## ユースケース：
 
-Once a player gets to defense level 24 and agility level 24 stop allowing them to use leather armor:
+一度プレイヤーが防御レベル24に到達し、敏捷性レベル24のストップは、彼らが革の鎧を使用することができます:
 
 ```zenscript
 addRequirement(<minecraft:leather_helmet:*>, "nand|[reskillable:defense|24]~[reskillable:agility|24]");

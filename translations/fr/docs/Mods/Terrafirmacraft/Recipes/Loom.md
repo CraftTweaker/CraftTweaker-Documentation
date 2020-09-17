@@ -1,26 +1,26 @@
-# Loom
+# Matière à tisser
 
-## Package
+## Paquet
 ```zenscript
-import mods.terrafirmacraft.Loom;
+Importer mods.terrafirmacraft.Biome;
 ```
 
-## Addition
+## Ajouter
 
 ```zenscript
-Loom.addRecipe(String registryName, IIngredient input, IItemStack output, int steps, String loomTexture);
+Loom.addRecipe(String registryName, IIngredient input, IItemStack sortie, int steps, String loomTexture);
 ```
-- steps is the number of steps needed to complete the recipe. It's the number of times the player has to click the loom, each movement of the loop advances one step. Within TFC, this is the same as the number of items required for the recipe, but it is not required to be so.
-- loomTexture is a path (`ResourceLocation`) to a texture file, to be used to display on the loom in the world.(For example, "minecraft:textures/blocks/wool_colored_white.png" references the vanilla texture for white wool). If you are using custom textures you need some form of data/resource loading (read: a resource pack) for this to be able to reference your texture correctly.
+- est le nombre d'étapes nécessaires pour compléter la recette. C'est le nombre de fois où le joueur doit cliquer sur le métier, chaque mouvement de la boucle fait avancer une étape. Au sein de la CEF, c'est le même que le nombre d'articles requis pour la recette, mais ce n'est pas nécessaire.
+- loomTexture est un chemin (`RessourceLocation`) vers un fichier de texture, à utiliser pour afficher sur le métier à tisser dans le monde. Par exemple, "minecraft:textures/blocks/wool_colored_white.png" fait référence à la texture vanille pour la laine blanche). Si vous utilisez des textures personnalisées, vous avez besoin d'une forme de chargement de données/ressources (lire : un pack de ressources) pour pouvoir référencer votre texture correctement.
 
-## Removal
+## Retirer
 
 ```zenscript
-Loom.removeRecipe(IItemStack output);
+Loom.removeRecipe(IItemStack sortie);
 Loom.removeRecipe(String registryName);
 ```
 
-## Example
+## Exemple
 ```zenscript
 Loom.addRecipe("burlap_cloth", <tfc:crop/product/jute_disc>, <tfc:crop/product/burlap_cloth>, "tfc:textures/blocks/devices/loom/product/burlap.png");
 ```

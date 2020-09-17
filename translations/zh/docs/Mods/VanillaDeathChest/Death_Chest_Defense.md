@@ -1,60 +1,60 @@
-# Death Chest Defense
+# 死亡箱子
 
 ## 导入相关包
 
-`import mods.vanilladeathchest.DeathChestDefense;`
+`导入 mods.vanilladeathchest.DeathChestDefense;`
 
-## Unlocker item
+## 解锁物品
 
 ```zenscript
-//DeathChestDefense.setUnlocker(string stage, IItemStack unlocker);
-DeathChestDefense.setUnlocker("example_stage", <minecraft:diamond_axe> * 1000);
+///DeathChestDefense.setUnlocker(字符串阶段，IItemStack 解锁)；
+DeathChestDefense.setUnlocker(“example_stage”， <minecraft:diamond_axe> * 1000)；
 ```
 
-A consumption/damage amount can be set by specifying a stack size like above.
+可以通过指定堆栈大小来设置消耗/损坏金额。
 
-## Damage the unlocker item rather than consuming it
+## 损坏解锁项目而不是消耗它
 
 ```zenscript
-//DeathChestDefense.setDamageUnlockerInsteadOfConsume(string stage, bool flag);
-DeathChestDefense.setDamageUnlockerInsteadOfConsume("example_stage", true);
+///DeathChestDefense.setDamageUnlockerInsintofConsume(string stage, bool flag);
+DeathChestDefense.setDamageUnlockerInstance("example_stage", true);
 ```
 
-## Unlock failed chat message
+## 解锁失败的聊天消息
 
 ```zenscript
-//DeathChestDefense.setUnlockFailedChatMessage(string stage, string message);
-DeathChestDefense.setUnlockFailedChatMessage("example_stage", "You need to get a %2$s to unlock your chest!");
+///DeathChestDefense.setUnlockFailedChatMessage(字符串级，字符串信息)；
+DeathChestDefense.setUnlockFailedChatMessage("example_stage", "你需要获得一个 %2$s 解锁来箱子!")；
 ```
 
-The string takes two arguments: the amount and display name of the required items.
+字符串需要两个参数：所需项目的数量和显示名称。
 
-## Defense entity
+## 防御实体
 
 ```zenscript
-//DeathChestDefense.setDefenseEntity(string stage, IEntityDefinition defenseEntity);
-DeathChestDefense.setDefenseEntity("example_stage", <entity:minecraft:zombie_pigman>);
+///DeathChestDefense.setDefenseEntity(string deathChestDefenseEntity);
+DeathChestDefense.setDefenseEntity(“example_stage”, <entity:minecraft:zombie_pigman>);
 ```
 
-## Defense entity NBT
+## 防御实体 NBT
 
 ```zenscript
-//DeathChestDefense.setDefenseEntityNBT(string stage, IData nbt);
-DeathChestDefense.setDefenseEntityNBT("example_stage", {
-    HandItems: [
-        {
+///DeathChestDefense.setDefenseEntityNBT(字符串级，IData nbt)；
+DeathChestDefense.setDefenseEntityNBT("example_stage", format@@
+    HandItems：[
+
             Count: 1,
-            id: "minecraft:diamond_sword"
+            id：“minecraft:diamond_sword”
         }
-    ]
-});
+
+})；
 ```
 
-`nbt` should be a [DataMap](/Vanilla/Data/DataMap/).
+`nbt` 应该是一个 [数据地图](/Vanilla/Data/DataMap/)。
 
-## Defense entity spawn count
+## 防御实体生成计数
 
 ```zenscript
-//DeathChestDefense.setDefenseEntitySpawnCount(string stage, int count);
-DeathChestDefense.setDefenseEntitySpawnCount("example_stage", 500);
+///DeathChestDefense.setDefenseEntitySpawnCount(字符串级，int count)；
+DeathChestDefenseEntitySpawnCount(“example_stage”，500)；
 ```

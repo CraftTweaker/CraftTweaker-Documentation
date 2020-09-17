@@ -30,7 +30,7 @@ crafttweaker.world.IWorldProvider.getFromID(int id);
 | lightBrightnesTable    | getLightBrightnesTable()    | float型[]                               |
 | movementFactor         | getMovementFactor()         | double型                                |
 | randomizedSpawnPoint   | getRandomizedSpawnPoint()   | [IBlockPos](/Vanilla/World/IBlockPos/) |
-| saveFolder             | getSaveFolder()             | string                                 |
+| saveFolder             | getSaveFolder()             | 文字列                                    |
 | seed                   | getSeed()                   | long型                                  |
 | spawnCoordinate        | getSpawnCoordinate()        | [IBlockPos](/Vanilla/World/IBlockPos/) |
 | spawnPoint             | getSpawnPoint()             | [IBlockPos](/Vanilla/World/IBlockPos/) |

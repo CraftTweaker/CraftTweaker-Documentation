@@ -1,17 +1,17 @@
 # ZenMethod
 
-A ZenMethod is a java method that has been exposed to ZenScript.
+ZenMethod は、ZenScript に公開されている Java メソッドです。
 
 Static Methods can be accessed using the [ZenClass' Name](/Dev_Area/ZenAnnotations/Annotation_ZenClass/), nonstatics use `object.methodName(arguments,..);`.  
 The ZenMethod annotation can stand alongside other [Annotations](/Dev_Area/ZenAnnotations/ZenAnnotation/), like the [ZenOperator Annotation](/Dev_Area/ZenAnnotations/Annotation_ZenOperator/).
 
-## What methods can be annotated || Additional Info
+## どのようなメソッドに注釈を付けることができますか|| 追加情報
 
-- You can annotate all methods, static and nonstatic. 
-- Annotated Methods need one additional parameter when in a [ZenExpansion](/Dev_Area/ZenAnnotations/Annotation_ZenExpansion/). That parameter is the expanded class' instance
-- When annotating a static Method in a [ZenExpansion](/Dev_Area/ZenAnnotations/Annotation_ZenExpansion/) (for example a factory method) you will need to use [ZenMethodStatic](/Dev_Area/ZenAnnotations/Annotation_ZenMethodStatic/) instead.
+- 静的および非静的のすべてのメソッドに注釈を付けることができます。 
+- 注釈付きメソッドは、 [ZenExpansion](/Dev_Area/ZenAnnotations/Annotation_ZenExpansion/) の中で、追加のパラメータを1つ必要があります。 そのパラメータは展開されたクラスのインスタンスです
+- [ZenExpansion](/Dev_Area/ZenAnnotations/Annotation_ZenExpansion/) で静的メソッドに注釈を付ける場合（例えばファクトリメソッド）、代わりに [ZenMethodStatic](/Dev_Area/ZenAnnotations/Annotation_ZenMethodStatic/) を使用する必要があります。
 
-## Example Class
+## クラスの例
 
 ```java
 @ZenClass(value = "crafttweaker.tests.devWikiTest")
@@ -61,16 +61,16 @@ public class DevWikiTest {
 }
 ```
 
-ZS Script
+ZSスクリプト
 
 ```zenscript
-val instance = crafttweaker.tests.devWikiTest.staticMethod(10);
-crafttweaker.tests.devWikiTest.staticMethod2();
+val instead = crafttweaker.tests.devWikiTest.staticMethod(10);
 crafttweaker.tests.devWikiTest.staticMethodVarArg(10);
-crafttweaker.tests.devWikiTest.staticMethodVarArg(10,20,30,40);
+crafttweaker.tests.WikiTest.staticVarArg(10,20,30,40);
+crafttweaker.tests.staticMethodVarArg(10,20,30,40);
 
-print(instance.getValue());
-instance.print();
+print(instance.getValue));
+instance.printWithVarArg(10);
 instance.printWithVarArg(10);
 instance.printWithVarArg(10,20,30,40);
 ```

@@ -1,38 +1,38 @@
-# Blender
+# Блендер
 
-The Blender combines items together, resulting in a drink that restores food and saturation.
+Blender объединяет в себе предметы и напитки, восстанавливающие еду и насыщенность.
 
-## Vanilla Drinks
+## Ванильные Напитки
 
-- Fruit Crush (2x Apple, 4x Melon) for 4 food.
-- Veggie Juice (4x Carrot, 1x Potato, 2x Pumpkin Pie) for 6 food.
+- Fruit Crush (2x Apple, 4x Melon) для 4 еды.
+- Veggie Juice (4x Carrot, 1x Potato, 2x Тыквенная Пиа) для 6 продуктов.
 - Cookies and Cream Milkshake (2x Cookie, 1x Milk Bucket) for 4 food.
-- Energy Drink (8x Redstone, 1x Fire Charge, 16x Sugar) for 8 food.
+- Энергетический напиток (8х редстоун, 1х огненный сбор, 16х сахар) на 8 ед.
 
-## Removing Drinks
+## Удаление напитков
 
-## Remove matching blended drinks.
+## Удалите подходящие смесительные напитки.
 
 ```zenscript
-mods.cfm.Blender.remove(@Optional final String name, @Optional final IItemStack[] ingredients, @Optional final Integer food, @Optional final int[] colour);
+mods.cfm.Blender.remove(@Optional final String name, @Optional final IItemStack[] ingredients, @Optional final Integer food, @Optional final int[] color);
 
-// Remove drink named "Fruit Crush"
-mods.cfm.Blender.remove("Fruit Crush");
-// Remove drinks that require one carrot, one potato and one pumpkin pie to create
-mods.cfm.Blender.remove(null, [<minecraft:carrot>,<minecraft:potato>,<minecraft:pumpkin_pie>]);
-// Remove all drinks
+// Удаляем напиток с именем "Fruit Crush"
+mods.cfm.Blender. emove("Fruit Crush");
+// Удаляем напитки, требующие одного морковя, одного картофеля и одного тыквенного пирога, чтобы создать
+моды. fm.Blender.remove(null, [<minecraft:carrot>,<minecraft:potato>,<minecraft:pumpkin_pie>]);
+// Удаляем все напитки
 mods.cfm.Blender.remove();
 ```
 
-## Adding Drinks
+## Добавление напитков
 
-Add a blended drink.
+Добавить смешанный напиток.
 
-## Currently, saturation and food value cannot be set independently.
+## В настоящее время насыщенность и ценность продуктов питания не могут быть заданы самостоятельно.
 
 ```zenscript
-mods.cfm.Blender.addDrink(@Nonnull final String name, @Nonnull final IItemStack[] ingredients, final int food, @Nonnull final int[] colour);
+mods.cfm.Blender. ddDrink(@Nonnull final String name, @Nonnull final IItemStack[] ingredients, final int food, @Nonnull final int[] color);
 
-// Add a drink named "Watermelon Snow" that is coloured pink and restores 20 food and 20 saturation requiring 8 melon slices and 4 snowballs to craft
-mods.cfm.Blender.addDrink("Watermelon Snow", [<minecraft:melon>.withAmount(8),<minecraft:snowball>.withAmount(4)], 20, [255,182,193]);
+// Добавляем напиток под названием "Арбуз Снеж", который окрашен в розовый цвет и восстанавливает 20 еды и 20 насыщенности, требуя 8 дын и 4 снежков для создания
+модов. fm.Blender.addDrink("Watermelon Snow", [<minecraft:melon>.withAmount(8),<minecraft:snowball>.withAmount(4)], 20, [255,182,193]);
 ```

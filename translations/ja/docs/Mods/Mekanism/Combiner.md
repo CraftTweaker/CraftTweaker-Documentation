@@ -1,34 +1,34 @@
-# Combiner
+# 組み合わせ
 
-As of Mekanism 9.7.0 it is now possible to view all recipe strings of the Combiner through the command `/ct mekrecipes combiner`
+Mekanism 9.7.0 以降、コマンド `/ct meckrecipes combiner` でCombiner のすべてのレシピ文字列を表示できるようになりました。
 
-## Addition
+## 加算
 
 ```zenscript
-mods.mekanism.combiner.addRecipe(IIngredient itemInput, @Optional IIngredient extraInput, IItemStack itemOutput);
+mods.mekanism.combiner.addRecipe(IInput, @Optional IIngredient extraInput, IItemStack itemOutput);
 
 mods.mekanism.combiner.addRecipe(<minecraft:stone> * 4, <minecraft:cobblestone>, <minecraft:stonebrick>);
 mods.mekanism.combiner.addRecipe(<minecraft:torch> * 4, <minecraft:stick>);
 ```
 
-As of Mekanism 9.7.0 it is possible to use IIngredients as the itemInput and extraInput instead of only IItemStacks.
+Mekanism9.7.0では、IIngredientsをIItemStacksの代わりにitemInputとextraInputとして使用することが可能です。
 
-Note: Currently all this does is loop over the different possibilities in java while adding instead of you having to do it in ZenScript. Currently there is no built in support for compound ingredients or oredictionary in the machines themselves.
+注意: 現在、これらはすべて、ZenScriptで行うのではなく、Javaのさまざまな可能性をループしながら追加しています。 現在、機械自体に複合成分や鉱石辞書をサポートする構築はありません。
 
-## Removal
+## 削除
 
 ```zenscript
-mods.mekanism.combiner.removeRecipe(IIngredient outputStack, @Optional IIngredient inputStack, @Optional IIngredient extraInput);
+mods.mekanism.combiner.removeRecipe(IIngredient outputStack, @Optional IIngredient extraInput);
 
 mods.mekanism.combiner.removeRecipe(<minecraft:gravel>, <minecraft:flint>, <minecraft:cobblestone>);
-mods.mekanism.combiner.removeRecipe(<minecraft:iron_ore>);
+mods.mekanism.commoner.removeRecipe(<minecraft:iron_ore>);
 ```
 
-Specifying an input parameter will only remove the specific recipe that uses said input. Omitting the input parameter will remove all recipes that produce the specified output.
+input パラメータを指定すると、その入力を使用する特定のレシピのみが削除されます。 入力パラメータを省略すると、指定した出力を生成するすべてのレシピが削除されます。
 
-## Removing all recipes
+## すべてのレシピを削除する
 
-As of Mekanism 9.7.0 it is now possible to remove all Combiner recipes. (This excludes any recipes added via CraftTweaker)
+Mekanism 9.7.0 以降、すべてのCombinerレシピを削除できるようになりました。 （CraftTweaker経由で追加されたレシピは除外されます）
 
 ```zenscript
 mods.mekanism.combiner.removeAllRecipes();

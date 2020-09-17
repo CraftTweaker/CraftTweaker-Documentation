@@ -1,16 +1,16 @@
-# Supercooler
+# 超冷器
 
-## Importing the Package
-`mods.nuclearcraft.supercooler`
+## 导入软件包
+`超级冷却器`
 
-## Adding Recipes
+## 添加配方
 ```zenscript
-mods.nuclearcraft.supercooler.addRecipe([fluidInput, fluidOutput, @Optional double timeMultiplier, @Optional double powerMultiplier, @Optional double processRadiation]);
+mods.nuclearcraft.supercoole.addRecipe([fluidInput, fluidOutput, @Optional double time Multiplier, @Optional double powerment Multiplier, @Optional double processRadiation]);
 ```
 
-## Removing Recipes
+## 删除配方
 ```zenscript
-mods.nuclearcraft.supercooler.removeRecipeWithInput([fluidInput]);
-mods.nuclearcraft.supercooler.removeRecipeWithOutput([fluidOutput]);
-mods.nuclearcraft.supercooler.removeAllRecipes();
+mods.nuclearcraft.supercool.removeRecipeWidInput([fluidInput]);
+mods.nuclearcraft.supercool.removeReciputput([fluidOutput]);
+mods.nuclearcraft.supercool.removeAllRecipes();
 ```

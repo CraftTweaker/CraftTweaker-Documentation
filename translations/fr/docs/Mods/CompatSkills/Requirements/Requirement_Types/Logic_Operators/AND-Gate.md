@@ -1,15 +1,15 @@
-# AND Operator
+# Opérateur ET
 
-An **AND** gate combines two inputs and returns `TRUE` only if both inputs are also `TRUE`.
+Une porte **ET** combine deux entrées et renvoie `TRUE` seulement si les deux entrées sont également `VRAIES`.
 
-| Input 1 | Input 2 | Output |
+| Input 1 | Input 2 | Sortie |
 | ------- | ------- | ------:|
 | 0       | 0       |      0 |
 | 0       | 1       |      0 |
 | 1       | 0       |      0 |
 | 1       | 1       |      1 |
 
-The AND requirement unlike the other logic requirements is mainly useful for nested logic requirements, as locking an item or other object with multiple requirements requires all of the given requirements to be met. This is the same as the AND functionality, so should be used when possible, as it will make the tooltip be formatted in an easier to read manner.
+L'exigence AND contrairement aux autres exigences logiques est principalement utile pour les exigences logiques imbriquées comme verrouiller un objet ou un autre objet avec des exigences multiples requiert que toutes les conditions soient remplies. C'est la même chose que la fonctionnalité ET, donc elle devrait être utilisée lorsque cela est possible, car il facilitera la mise en forme de l'infobulle de manière plus facile à lire.
 
-    Empty Example:
-    AND|[]~[]
+    Exemple vide :
+    ET|[]~[]

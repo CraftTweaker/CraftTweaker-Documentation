@@ -1,15 +1,15 @@
-# Enchanter
+# Encantador
 
-## Package
+## Paquete
 
 ```zenscript
-import mods.aether_legacy.Enchanter;
+import mods.aether_legacy.Enchanter;Aplast;
 ```
-## Usage
+## Uso
 
 ```zenscript
-Enchanter.registerEnchantment(IItemStack input, IItemStack output, int timeRequired);
-// repairing tools and stuff
-Enchanter.registerEnchantment(IItemStack repair, int timeRequired);
-Enchanter.registerEnchanterFuel(IItemStack input, int timeGiven);
+Enchantment(entrada ItemStack, salida ItemStack, int timeRequired);
+// reparando herramientas y cosas
+Enforwter.registerEnchantment(reparación de ItemStack, int timeRequired);
+Enerciter.registerEnconfiguterFuel(entrada ItemStack, int timeGiven);
 ```

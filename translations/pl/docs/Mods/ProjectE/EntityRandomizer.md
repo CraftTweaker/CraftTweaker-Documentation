@@ -1,17 +1,17 @@
-# Entity Randomizer
+# Losowy podmiot
 
-Adding and removing entities from ProjectE's philosopher's stone entity randomizer projectile uses an [IEntityDefinition](/Vanilla/Entities/IEntityDefinition/).
+Dodawanie i usuwanie bytów z kamienia filozofii filmu randomizera ProjectE używa [IEntityDefinition](/Vanilla/Entities/IEntityDefinition/).
 
-Note: This [IEntityDefinition](/Vanilla/Entities/IEntityDefinition/) must be for a living entity.
+Uwaga: Ten [IEntityDefinition](/Vanilla/Entities/IEntityDefinition/) musi być dla żywej jednostki.
 
-## Adding
+## Dodawanie
 
-### addPeaceful
+### Dodny pokój
 
 ```zenscript
 mods.projecte.EntityRandomizer.addPeaceful(IEntityDefinition entityDefinition);
 
-// Allows turning peaceful creatures into zombies. 
+// Umożliwia przekształcanie pokojowych stworzeń w zombies. 
 mods.projecte.EntityRandomizer.addPeaceful(<entity:minecraft:zombie>);
 ```
 
@@ -20,18 +20,18 @@ mods.projecte.EntityRandomizer.addPeaceful(<entity:minecraft:zombie>);
 ```zenscript
 mods.projecte.EntityRandomizer.addMob(IEntityDefinition entityDefinition);
 
-// Allows turning hostile mobs into pigs.
+// Pozwala na przekształcenie wrogich mobów w świnie.
 mods.projecte.EntityRandomizer.addMob(<entity:minecraft:pig>);
 ```
 
-## Removing
+## Usuwanie
 
-### removePeaceful
+### usuń Pokojowy
 
 ```zenscript
 mods.projecte.EntityRandomizer.removePeaceful(IEntityDefinition entityDefinition);
 
-// Stops peaceful mobs being able to be turned into pigs.
+// Zatrzymuje pokojowe moby, które mogą być zamienione w świnie.
 mods.projecte.EntityRandomizer.removePeaceful(<entity:minecraft:pig>);
 ```
 
@@ -40,20 +40,20 @@ mods.projecte.EntityRandomizer.removePeaceful(<entity:minecraft:pig>);
 ```zenscript
 mods.projecte.EntityRandomizer.removeMob(IEntityDefinition entityDefinition);
 
-// Stops hostile mobs being able to be turned into zombies.
+// zatrzymuje wrogie moby, które mogą być zamienione w zombies.
 mods.projecte.EntityRandomizer.removeMob(<entity:minecraft:zombie>);
 ```
 
-### clearPeacefuls
+### jasny Peakefuls
 
 ```zenscript
-// Removes all randomized peaceful mob entries including ones registered by CraftTweaker before this call.
+// Usuwa wszystkie randomizowane pokojowe wpisy potworów, w tym wpisy zarejestrowane przez CraftTweaker przed tym połączeniem.
 mods.projecte.EntityRandomizer.clearPeacefuls();
 ```
 
 ### clearMobs
 
 ```zenscript
-// Removes all randomized hostile mob entries including ones registered by CraftTweaker before this call.
+// Usuwa wszystkie randomizowane wrogie wpisy potworów, w tym te zarejestrowane przez CraftTweaker przed tym połączeniem.
 mods.projecte.EntityRandomizer.clearMobs();
 ```

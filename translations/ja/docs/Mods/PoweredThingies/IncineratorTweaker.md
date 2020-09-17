@@ -1,35 +1,35 @@
-# Powered Thingies :: Incinerator
+# パワードThingies :: Incinerator
 
-### Importing
+### インポート中
 
 ```zenscript
 import mods.poweredthingies.Tweaker.incineratorTweaker as it;
 ```
 
-### Listing Keys, Removing Recipes by Key, Clearing
+### キーによるレシピの削除、キーのリスト化、クリア
 
 ```zenscript
 it().logKeys()
-it().removeRecipe('minecraft:log') // check <logKeys> output for valid keys
+it().removeRecipe('minecraft:log') // <logKeys> の有効なキーの出力をチェック
 it().clear()
 ```
 
-### Adding Recipe
+### レシピを追加中
 
-##### Signature
+##### 署名
 
 ```zenscript
-addRecipe(input: IItemStack, power: Long, outputs: Array<WeightedItemStack>)
+addRecipe(input: IItemStack, power : Long, output: Array<WeightedItemStack>)
 ```
 
-`power` represents the total number of power units (RF, T, or FE) the input item will generate.
+`電力` は、入力項目が生成する電力単位(RF、T、または FE)の合計数を表します。
 
-##### Example
+##### 例
 
 ```zenscript
 it().addRecipe(<minecraft:bucket>, 3600, [<minecraft:iron_ingot> % 15]);
 ```
 
-### Notes
+### メモ
 
-All of these actions will get cached and ran after the default registry for this machine has finished registering all recipes (including the ones from the custom jsons).
+これらのアクションはすべてキャッシュされ、このマシンのデフォルトレジストリがすべてのレシピを登録し終えた後に実行されます (カスタム json からのものを含む)。

@@ -1,34 +1,34 @@
 # IBlock
 
-An IBlock Object consists of a [IBlockDefinition](/Vanilla/Blocks/IBlockDefinition/), a metadata and a TileData.  
-It refers to a block in the game.
+IBlock オブジェクトは、 [IBlockDefinition](/Vanilla/Blocks/IBlockDefinition/)、メタデータ、タイルデータで構成されています。  
+ゲーム内のブロックを指します。
 
-## Importing the package
+## パッケージのインポート
 
 It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
 `import crafttweaker.block.IBlock;`
 
-## Calling an IBlock Object
+## IBlockオブジェクトの呼び出し
 
-There are multiple ways thet return an IBlock object:
+IBlockオブジェクトを返す方法は複数あります:
 
-* Casting a [IItemStack](/Vanilla/Items/IItemStack/) as IBlock (using the `AS` keyword, or the `asBlock()` method)
-* Using the getBlock(x,y,z) on an [IWorld](/Vanilla/World/IWorld/).
-* Using getBlock() on ContentTweaker's [ICTBlockState](/Mods/ContentTweaker/Vanilla/Types/Block/ICTBlockState/)
+* IBlock として [IItemStack](/Vanilla/Items/IItemStack/) をキャスト ( `AS` キーワード、または `asBlock()` メソッドを使用)
+* [IWorld](/Vanilla/World/IWorld/) で getBlock(x,y,z) を使用します。
+* ContentTweaker [ICTBlockState](/Mods/ContentTweaker/Vanilla/Types/Block/ICTBlockState/) での getBlock() の使用
 
 ## Zengetters
 
-| Getter     | What does it do                | Return Type                                           |
-| ---------- | ------------------------------ | ----------------------------------------------------- |
-| definition | Returns the Block's definition | [IBlockDefinition](/Vanilla/Blocks/IBlockDefinition/) |
-| meta       | Returns the Block's metadata   | int                                                   |
-| data       | Returns the Block's tileData   | [IData](/Vanilla/Data/IData/)                         |
+| Getter | 何をするか              | 戻り値                                                   |
+| ------ | ------------------ | ----------------------------------------------------- |
+| 定義     | ブロックの定義を返します       | [IBlockDefinition](/Vanilla/Blocks/IBlockDefinition/) |
+| meta   | ブロックのメタデータを返します    | int                                                   |
+| データ    | ブロックのtileDataを返します | [IData](/Vanilla/Data/IData/)                         |
 
 # IBlockPattern
 
-IBlocks extend [IBlockPattern](/Vanilla/Blocks/IBlockPattern/) Objects. That means, all functions that are available to IBlockPattern objects can also be used for IBlock objects:
+IBlocks は [IBlockPattern](/Vanilla/Blocks/IBlockPattern/) オブジェクトを拡張します。 つまり、IBlockPattern オブジェクトに利用可能なすべての機能は、IBlock オブジェクトにも使用できます。
 
-* Use the `blocks` ZenGetter
+* `ブロック` を使用する
 * OR'ing
-* Matching using the `in` keyword
-* Use the `displayName` ZenGetter
+* `キーワードの` で一致する
+* `displayName` を使用する

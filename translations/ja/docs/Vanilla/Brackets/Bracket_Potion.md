@@ -1,8 +1,8 @@
-# Potion Bracket Handler
+# ポーションブラケットハンドラー（ポーションブラケットハンドラー）
 
-The Potion Bracket Handler gives you access to the Potions in the game. It is only possible to get Potions registered in the game, so adding or removing mods may cause issues if you reference the mod's Potions in a Potion Bracket Handler.
+ポーションブラケットハンドラーは、ゲーム内のポーションにアクセスできます。 ポーションをゲームに登録することは可能です。 ですから、Modを追加または削除すると、ポーションブラケットハンドラーでModのポーションを参照すると問題が発生する可能性があります。
 
-Potions are referenced in the Potion Bracket Handler like so:
+ポーションは以下のようにポーションブラケットハンドラーで参照されます。
 
 ```zenscript
 <potion:modname:potionname>
@@ -10,11 +10,11 @@ Potions are referenced in the Potion Bracket Handler like so:
 <potion:minecraft:strength>
 ```
 
-If the Potion is found, this will return an IPotion Object. Please refer to the [respective Wiki entry](/Vanilla/Potions/IPotion/) for further information on what you can do with these.
+ポーションが見つかった場合は、IPotion オブジェクトを返します。 これらを使用して何ができるかについては、それぞれの [Wiki エントリ](/Vanilla/Potions/IPotion/) を参照してください。
 
-# Getting all Registered Potions
+# 登録済みのポーションをすべて取得
 
-You can use the following command to output all registered Potions to the CraftTweaker log
+以下のコマンドを使用して、登録されている全てのポーションをCraftTweakerログに出力できます。
 
     /ct potions
     /crafttweaker potions

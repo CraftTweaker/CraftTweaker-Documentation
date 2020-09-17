@@ -1,6 +1,6 @@
-# Leather Knapping
+# レザーナイフ
 
-## Package
+## パッケージ
 ```zenscript
 import mods.terrafirmacraft.leatherKnapping;
 ```
@@ -8,7 +8,7 @@ import mods.terrafirmacraft.leatherKnapping;
 ## 追加
 
 ```zenscript
-leatherKnapping.addRecipe(String registryName, IItemStack output, String... pattern);
+leatherKnapping.addRecipe(レジストリ名の文字列、IItemStack output, String... pattern);
 ```
 
 ## 削除
@@ -18,8 +18,8 @@ leatherKnapping.removeRecipe(IItemStack output);
 leatherKnapping.removeRecipe(String registryName);
 ```
 
-## Example
+## 例
 ```zenscript
-// quiver recipe
-leatherKnapping.addRecipe("recipe", <tfc:quiver>, " XXXX", "X XXX", "X XXX", "X XXX", " XXXX");
+// iver recipe
+leatherNapping.addRecipe("recipe", <tfc:quiver>, " XXXXXX", "X XXX", "X XXX", "X XXX", "X XXX", "XXXX");
 ```

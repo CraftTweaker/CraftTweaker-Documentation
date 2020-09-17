@@ -1,13 +1,13 @@
 # IEntityDefinition
 
-This sounds scary, so what does it mean? Basically, it is a reference to an entity registered in the game, so it is a reference to, say a mob in the game.
+これは恐ろしい聞こえるので、それは何を意味するのでしょうか? 基本的に, それはゲームに登録されているエンティティへの参照です, それはへの参照です, ゲーム内のモブと言います.
 
 ## パッケージのインポート
 
 It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
 `import crafttweaker.entity.IEntityDefinition;`
 
-## Calling an IEntityDefinition Object
+## IEntityDefinition オブジェクトの呼び出し
 
 ```zenscript
 //These return an IEntityDefinition Object
@@ -22,42 +22,42 @@ So, this is where it gets interesting: What can we do with it, now that we creat
 
 ### id
 
-Returns the ID as string
+IDを文字列として返します
 
 ```zenscript
 //returns "net.minecraft.entity.passive.EntitySheep"
 <entity:minecraft:sheep>.id;
 ```
 
-### name
+### 名前
 
-Returns the name as string
+名前を文字列として返します
 
 ```zenscript
 //returns "Sheep"
 <entity:minecraft:sheep>.name;
 ```
 
-### create entity
+### エンティティを作成
 
-The first method only creates an entity on the given location.  
-The second one also spawns it.
+最初のメソッドは指定された場所にのみエンティティを作成します。  
+2番目のメソッドはまた、エンティティを生成します。
 
 ```zenscript
 <entity:minecraft:sheep>.createEntity(world);
 <entity:minecraft:sheep>.spawnEntity(world, blockPos);
 ```
 
-`world` is an [IWorld](/Vanilla/World/IWorld/) object.  
-`blockPos` is an [IBlockPos](/Vanilla/World/IBlockPos/) object.
+`world` は [IWorld](/Vanilla/World/IWorld/) オブジェクトです。  
+`blockPos` は [IBlockPos](/Vanilla/World/IBlockPos/) オブジェクトです。
 
-## Drops
+## ドロップ
 
-We can even add and/or remove mob drops, isn't that great?
+私たちはモブドロップを追加または削除することができます, それは素晴らしいことではありません?
 
-### Add normal Drop
+### 通常のドロップを追加
 
-This adds a normal drop, a drop that can occur whenever the mob is killed by whatever means.
+これは、どのような手段によっても、暴徒が殺されるたびに起こることができる、通常の落下を加えます。
 
 ```zenscript
 val entity = <entity:minecraft:sheep>;
@@ -70,36 +70,36 @@ entity.addDrop(<minecraft:stone> % 20);
 ```
 
 `item` is the item to be added as drop and an [IItemStack](/Vanilla/Items/IItemStack/) or a [WeightedItemStack](/Vanilla/Items/WeightedItemStack/).  
-`min` is the minimum amount that is dropped and an Integer. This is optional.  
-`max` is the maximum amount that is dropped and an Integer. This is optional.  
-`chance` is the drop chance. This is optional. Not needed if you use a [weightedItemStack](/Vanilla/Items/WeightedItemStack/) instead as `item`
+`min` is the minimum amount that is dropped and an Integer. これは任意です。  
+`max` はドロップされた最大値と整数です。 これは任意です。  
+`確率` はドロップ率です。 これは任意です。 [weightedItemStack](/Vanilla/Items/WeightedItemStack/) を `アイテム`として使用する場合は不要です
 
-### Add playeronly drop
+### プレイヤーのみのドロップを追加
 
-Same as normal drops, but only if the entity was killed by a player.
+通常のドロップと同じですが、エンティティがプレイヤーによって殺された場合に限ります。
 
 ```zenscript
 //addPlayerOnlyDrop(item,min,max,chance);
 entity.addPlayerOnlyDrop(<minecraft:gold_ingot>, 10,64);
 
-//addPlayerOnlyDrop(weightedItem, min, max);
+//addPlayerOnlyDrop(weitedItem, min, max);
 entity.addPlayerOnlyDrop(<minecraft:iron_ingot> % 20, 1, 3);
 ```
 
-### Add drop Function
+### ドロップ関数を追加
 
-A drop function is called whenever the associated Entity is killed. You can use this if you need to check requirements for before you drop something, like only dropping in a certain biome and stuff.  
+関連エンティティが強制終了されるたびにdrop関数が呼び出されます。 You can use this if you need to check requirements for before you drop something, like only dropping in a certain biome and stuff.  
 You will need an [IEntityDropFunction](/Vanilla/Entities/IEntityDropFunction/):
 
 ```zenscript
 <entity:minecraft:sheep>.addDropFunction(function(entity, dmgSource) {
     return <minecraft:iron_ingot> * 10;
-    });
+});
 ```
 
-### Remove
+### 削除
 
-This removes a drop.
+ドロップを削除します。
 
 ```zenscript
 val entity = <entity:minecraft:sheep>;
@@ -108,11 +108,11 @@ val entity = <entity:minecraft:sheep>;
 entity.removeDrop(<minecraft:wool>);
 ```
 
-`item` is the item to be removed from being a drop and an [IItemStack](/Vanilla/Items/IItemStack/).
+`アイテム` はドロップから削除されるアイテムで、 [IItemStack](/Vanilla/Items/IItemStack/) です。
 
-### Clear Drops
+### ドロップをクリア
 
-This removes all drops.
+これはすべてのドロップを削除します。
 
 ```zenscript
 val entity = <entity:minecraft:sheep>;
@@ -121,9 +121,9 @@ val entity = <entity:minecraft:sheep>;
 entity.clearDrops();
 ```
 
-### Get
+### 取得
 
-This returns all drops that were added via CT as list of [IEntityDrop](/Vanilla/Entities/IEntityDrop/) Objects.
+これは、 [IEntityDrop](/Vanilla/Entities/IEntityDrop/) オブジェクトのリストとしてCTを介して追加されたすべてのドロップを返します。
 
 ```zenscript
 val entity = <entity:minecraft:sheep>;

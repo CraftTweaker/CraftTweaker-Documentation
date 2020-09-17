@@ -1,7 +1,7 @@
-# Global Functions
+# Глобальные функции
 
-Global functions are functions that can be called without being [imported](/AdvancedFunctions/Import/).  
-Here's the list:
+Глобальные функции - это функции, которые можно вызвать без импорта [](/AdvancedFunctions/Import/).  
+Вот список:
 
 ## print
 
@@ -17,16 +17,16 @@ print("Привет, мир!");
 ## totalActions
 
 ```zenscript
-//totalActions();
-totalActions();
+//суммарные действия();
+итоговых действий();
 ```
 
-Returns an int that shows how many global functions are registered.
+Возвращает подсказку, показывающую, сколько глобальных функций зарегистрировано.
 
 ## enableDebug
 
-Enables Debug mode.  
-Use of the [Debug Preprocessor](/AdvancedFunctions/Preprocessors/DebugPreprocessor/) is preferred though.
+Разрешает отладочный режим.  
+Предпочтительно использование [Препроцессора отладки](/AdvancedFunctions/Preprocessors/DebugPreprocessor/).
 
 ```zenscript
 //enableDebug();
@@ -37,15 +37,15 @@ enableDebug();
 
 ## isNull
 
-Checks if a given object is null.  
-Doesn't work on primitives!
+Проверяет, является ли данный объект нулевым.  
+не работает над примитивами!
 
 ```zenscript
 //isNull(Object o);
 isNull(<minecraft:dirt>);
 ```
 
-Returns a boolean Note: If this does not work for you, try casting the object to bool `<minecraft:dirt> as bool`
+Возвращает логическое значение Примечание: Если это не подходит для вас, попробуйте использовать объект для загрузки `<minecraft:dirt> как bool`
 
 ## max
 
@@ -59,8 +59,8 @@ max(10, 11);
 ## min
 
 ```zenscript
-//min(int number1, int number2);
-min(10, 11);
+//мин(int number1, int number2);
+мин(10, 11);
 ```
 
 Возвращает целое число.
@@ -76,18 +76,18 @@ pow(2.0, 4.0);
 
 ## Глобальные поля
 
-| Поле       | Описание                                                                                       |
-| ---------- | ---------------------------------------------------------------------------------------------- |
-| brewing    | Accesses the [Brewing Handler](/Vanilla/Recipes/Recipes_Brewing_Stand/)                        |
-| client     | Accesses [client Methods](/Vanilla/Game/IClient/)                                              |
-| events     | Accesses the [Event Handler](/Vanilla/Events/IEventManager/)                                   |
-| format     | Accesses the [Formatting Handler](/Vanilla/Utils/IFormatter/)                                  |
-| furnace    | Accesses the [Furnace Handler](/Vanilla/Recipes/Furnace/Recipes_Furnace/)                      |
-| game       | Accesses [Game functions](/Vanilla/Game/IGame/)                                                |
-| itemUtils  | Accesses the [ItemUtils Handler](/Vanilla/Utils/IItemUtils/)                                   |
-| loadedMods | Accesses the [loaded Mods list](/Vanilla/Game/Mods/)                                           |
-| logger     | Accesses the [logger](/Vanilla/Utils/Logger/)                                                  |
-| oreDict    | Accesses the [oreDictionary Handler](/Vanilla/OreDict/IOreDict/)                               |
-| recipes    | Accesses the [Recipe Handler](/Vanilla/Recipes/Crafting/Recipes_Crafting_Table/)               |
-| server     | Accesses [server Methods](/Vanilla/Game/IServer/)                                              |
-| vanilla    | Accesses vanilla functions (currently only [vanilla.seeds](/Vanilla/Recipes/Seeds/) available) |
+| Поле             | Описание                                                                                     |
+| ---------------- | -------------------------------------------------------------------------------------------- |
+| brewing          | Доступ к [Обработчику Пива](/Vanilla/Recipes/Recipes_Brewing_Stand/)                         |
+| client           | Доступ к [клиентским методам](/Vanilla/Game/IClient/)                                        |
+| события          | Доступ к [обработчику событий](/Vanilla/Events/IEventManager/)                               |
+| формат           | Доступ к [Обработчику Форматирования](/Vanilla/Utils/IFormatter/)                            |
+| furnace          | Доступ к [обработчику печей](/Vanilla/Recipes/Furnace/Recipes_Furnace/)                      |
+| игра             | Доступ к [игровым функциям](/Vanilla/Game/IGame/)                                            |
+| itemUtils        | Доступ к [обработчику ItemUtils](/Vanilla/Utils/IItemUtils/)                                 |
+| загруженные моды | Доступ к [списку загруженных модов](/Vanilla/Game/Mods/)                                     |
+| logger           | Доступ к [логгеру](/Vanilla/Utils/Logger/)                                                   |
+| oreDict          | Доступ к [обработчику словарей речи](/Vanilla/OreDict/IOreDict/)                             |
+| рецепты          | Доступ к [обработчику рецептов](/Vanilla/Recipes/Crafting/Recipes_Crafting_Table/)           |
+| server           | Доступ к [серверным методам](/Vanilla/Game/IServer/)                                         |
+| vanilla          | Доступ к ванильным функциям (сейчас доступны только [ваниль.seeds](/Vanilla/Recipes/Seeds/)) |

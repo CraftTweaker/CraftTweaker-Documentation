@@ -1,22 +1,22 @@
-# Conductor Mast
+# 导星Mast
 
 ## 所属包名
 ```zenscript
-import mods.calculator.conductorMast;
+导入 mods.calculator.conductorMast;
 ```
 
 ## 使用方式
 
-- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input** The input.
-- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) output** The output.
-- **Int powercost** The cost of power per process.
+- **[Ingredient](/Vanilla/Variable_Types/IIngredient/) 输入** 输入.
+- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) 输出** 输出.
+- **粉末** 每个过程的电量成本。
 
-## Additon
+## 附加组件
 ```zenscript
-conductorMast.addRecipe(IIngredient input, int powercost, IIngredient output);
+导体Mast.addRecipe(IIngredient input, int power cost, IIngredient output);
 ```
 
-## Removal
+## 移除
 ```zenscript
-conductorMast.removeRecipe(IIngredient output);
+导出Mast.removeRecipe(IIngredient output)；
 ```

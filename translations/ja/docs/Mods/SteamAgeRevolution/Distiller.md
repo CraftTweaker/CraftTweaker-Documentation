@@ -1,26 +1,26 @@
-# Distiller
+# 蒸留器
 
-The Distiller is a machine that converts an input fluid into an output fluid and item using steam.
+蒸留器は、蒸気を用いて入力流体を出力流体とアイテムに変換する機械です。
 
-## Package
+## パッケージ
 `mods.steamagerevolution.Distiller`
 
-## Methods
+## メソッド
 
-- **[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) output** The result of the recipe.
-- **[IItemStack](/Vanilla/Items/IItemStack/) output** The result of the recipe.
-- **[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) input** The input of the recipe.
-- **int craftTime** Crafting time for machine to process
-- **int steamCost** Cost of Steam for machine to process
+- **[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) 出力** レシピの結果。
+- **[IItemStack](/Vanilla/Items/IItemStack/) 出力** レシピの結果。
+- **[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) input** レシピの入力。
+- **int craftTime** マシンの加工時間
+- **int steamCost** 機械が処理する蒸気のコスト
 
-## Addition
+## 加算
 
 ```zenscript
-mods.steamagerevolution.Distiller.addRecipe(ILiquidStack input, IItemStack outputStack, ILiquidStack output, int craftTime, int steamCost);
+mods.steamagerevolution.Distiller.addRecipe(ILiquidStack input, IItemStack outputStack, ILiquidStack outputStack, int craftTime, int steamCost);
 mods.steamagerevolution.Distiller.addRecipe(<liquid:bio_fuel>*1000, <minecraft:dirt>, <liquid:ethanol>*1000, 200, 200);
 ```
 
-## Removal
+## 削除
 
 ```zenscript mods.steamagerevolution.Distiller.removeRecipe(IItemStack outputStack, ILiquidStack output); mods.steamagerevolution.Distiller.removeRecipe(<minecraft:cobblestone>, <liquid:lava>);
 

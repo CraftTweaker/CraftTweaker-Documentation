@@ -1,14 +1,14 @@
-# ExplosionStart
+# 爆炸开始
 
-The ExplosionStart Event is fired shortly before an explosion starts. If canceled, the explosion will not happen.
+爆炸开始事件是在爆炸开始前不久发射的。 如果取消，爆炸将不会发生。
 
-## Event Class
+## 事件类
 You will need to cast the event in the function header as this class:  
 `crafttweaker.event.ExplosionStartEvent`  
 You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
 
-## Event interface extensions
-ExplosionStart Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+## 事件界面扩展
+爆炸开始事件实现了以下接口，并且能够调用他们的所有方法/getter/setter：
 
-- [IExplosionEvent](/Vanilla/Events/Events/IExplosionEvent/)
+- [IExplossion事件](/Vanilla/Events/Events/IExplosionEvent/)
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)

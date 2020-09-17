@@ -1,7 +1,7 @@
 # IBlock
 
-An IBlock Object consists of a [IBlockDefinition](/Vanilla/Blocks/IBlockDefinition/), a metadata and a TileData.  
-It refers to a block in the game.
+Объект IBlock состоит из [IBlockDefinition](/Vanilla/Blocks/IBlockDefinition/), метаданных и TileData.  
+Он относится к блоку в игре.
 
 ## Импорт пакета
 
@@ -12,9 +12,9 @@ It refers to a block in the game.
 
 Есть несколько способов получить объект IBlock:
 
-* Casting a [IItemStack](/Vanilla/Items/IItemStack/) as IBlock (using the `AS` keyword, or the `asBlock()` method)
-* Using the getBlock(x,y,z) on an [IWorld](/Vanilla/World/IWorld/).
-* Using getBlock() on ContentTweaker's [ICTBlockState](/Mods/ContentTweaker/Vanilla/Types/Block/ICTBlockState/)
+* Разложение [IItemStack](/Vanilla/Items/IItemStack/) в качестве IBlock (используя ключевое слово `AS` или метод `asBlock()`)
+* Используя getBlock(x,y,z) на [IWorld](/Vanilla/World/IWorld/).
+* Использование getBlock() на ContentTweaker [ICTBlockState](/Mods/ContentTweaker/Vanilla/Types/Block/ICTBlockState/)
 
 ## Геттеры
 
@@ -26,9 +26,9 @@ It refers to a block in the game.
 
 # IBlockPattern
 
-IBlocks extend [IBlockPattern](/Vanilla/Blocks/IBlockPattern/) Objects. That means, all functions that are available to IBlockPattern objects can also be used for IBlock objects:
+IBlocks расширяют [IBlockPattern](/Vanilla/Blocks/IBlockPattern/) объекты. Это означает, что все функции, доступные объектам IBlockPattern, также могут быть использованы для IBlock объектов:
 
-* Use the `blocks` ZenGetter
+* Используйте блоки `` ZenGetter
 * OR'ing
-* Matching using the `in` keyword
-* Use the `displayName` ZenGetter
+* Сопоставление с использованием ключевого слова `в`
+* Используйте `displayName` ZenGetter

@@ -1,66 +1,66 @@
-# MechanicalSqueezer
+# Squeezer mécanique
 
-This package allows you to modify recipes for the Mechanical Squeezer.
+Ce paquet vous permet de modifier les recettes du Squeezer Mécanique.
 
-## Importing the package
+## Importation du paquet
 
-If you want to import this package, here you go:
+Si vous voulez importer ce paquet, voici :
 
 ```zenscript
-import mods.integrateddynamics.MechanicalSqueezer;
+Importer mods.integrateddynamics.MechanicalSqueezer;
 ```
 
-## Adding Recipes
+## Ajout de recettes
 
 ```zenscript
 //MechanicalSqueezer.addRecipe(IItemStack inputStack, @Optional IItemStack outputStack, @Optional ILiquidStack outputFluid, @Optional(10) int duration);
-MechanicalSqueezer.addRecipe(<minecraft:melon>, <minecraft:stick>, <liquid:water> * 100, 10);
+MechanicalSqueezer. ddRecipe(<minecraft:melon>, <minecraft:stick>, <liquid:water> * 100, 10);
 
 
 
-//MechanicalSqueezer.addRecipe(IItemStack inputStack, 
-//  @Optional IItemStack outputStack1, @Optional float outputStackChance1,
-//  @Optional IItemStack outputStack2, @Optional float outputStackChance2,
-//  @Optional IItemStack outputStack3, @Optional float outputStackChance3,
-//  @Optional ILiquidStack outputFluid, @Optional(10) int duration);
+//MechanicalSqueezer. ddRecipe(IItemStack inputStack, 
+// @Optional IItemStack outputStack1, @Optional float outputStackChance1,
+// @Optional IItemStack outputStack2, @Optional float outputStackChance2,
+// @Optional IItemStack outputStack3, @Optional float outputStackChance3,
+// @Optional ILiquidStack outputFluid, @Optional(10) int duration);
 
-MechanicalSqueezer.addRecipe(<minecraft:pumpkin>, 
+Squeezer mécanique. ddRecipe(<minecraft:pumpkin>, 
     <minecraft:pumpkin_seeds>, 0.2,
-    <minecraft:iron_nugget>, 0.01,
+    <minecraft:iron_nugget>, 0. 1,
     <minecraft:cactus>, 0.5,
     <liquid:water> * 100, 20);
 ```
 
-## Removing Recipes
+## Suppression des recettes
 
 ```zenscript
 //MechanicalSqueezer.removeRecipe(IItemStack inputStack, @Optional IItemStack outputStack, @Optional ILiquidStack outputFluid, @Optional(10) int duration);
-MechanicalSqueezer.removeRecipe(<minecraft:melon>, <minecraft:stick>, <liquid:water> * 100, 10);
+MechanicalSqueezer. emoveRecipe(<minecraft:melon>, <minecraft:stick>, <liquid:water> * 100, 10 );
 
-//MechanicalSqueezer.removeRecipe(IItemStack inputStack,
-//  @Optional IItemStack outputStack1, @Optional float outputStackChance1,
-//  @Optional IItemStack outputStack2, @Optional float outputStackChance2,
-//  @Optional IItemStack outputStack3, @Optional float outputStackChance3,
-//  @Optional ILiquidStack outputFluid, @Optional(10) int duration);
+//MechanicalSqueezer. emoveRecipe(IItemStack inputStack,
+// @Optional IItemStack outputStack1, @Optional float outputStackChance1,
+// @Optional IItemStack outputStack2, @Optional float outputStackChance2,
+// @Optional IItemStack outputStack3, @Optional float outputStackChance3,
+// @Optional ILiquidStack outputFluid, @Optional(10) int duration);
 
-MechanicalSqueezer.removeRecipe(<minecraft:pumpkin>, 
+Squeezer mécanique. emoveRecipe(<minecraft:pumpkin>, 
     <minecraft:pumpkin_seeds>, 0.2,
-    <minecraft:iron_nugget>, 0.01,
+    <minecraft:iron_nugget>, 0. 1,
     <minecraft:cactus>, 0.5,
     <liquid:water> * 100, 20)
 
 
 
-//MechanicalSqueezer.removeRecipesWithOutput(@Optional IItemStack outputStack, @Optional ILiquidStack outputFluid);
+//MechanicalSqueezer. emoveRecipesWithOutput(@Optional IItemStack outputStack, @Optional ILiquidStack outputFluid);
 //TODO
 
-//MechanicalSqueezer.removeRecipesWithOutput(@Optional IItemStack outputStack1, @Optional float outputStackChance1,
-//  @Optional IItemStack outputStack2, @Optional float outputStackChance2,
-//  @Optional IItemStack outputStack3, @Optional float outputStackChance3,
-//  @Optional ILiquidStack outputFluid);
+//MechanicalSqueezer. emoveRecipesWithOutput(@Optional IItemStack outputStack1, @Optional float outputStackChance1,
+// @Optional IItemStack outputStack2, @Optional float outputStackChance2,
+// @Optional IItemStack outputStack3, @Optional float outputStackChance3,
+// @Optional ILiquidStack outputFluid);
 
-MechanicalSqueezer.removeRecipesWithOutput(<minecraft:pumpkin_seeds>, 0.2,
-    <minecraft:iron_nugget>, 0.01,
+MechanicalSqueezer. emoveRecipesWithOutput(<minecraft:pumpkin_seeds>, 0.2,
+    <minecraft:iron_nugget>, 0. 1,
     <minecraft:cactus>, 0.5,
     <liquid:water> * 100, 20);
 ```

@@ -1,35 +1,35 @@
-# Powered Thingies :: Fluid Burner :: Coolant
+# Zasilane rzeczy :: Spalacz płynny :: Chłodzenie
 
-### Importing
-
-```zenscript
-import mods.poweredthingies.Tweaker.fluidBurnerCoolantTweaker as coolant;
-```
-
-### Listing Keys, Removing Recipes by Key, Clearing
+### Importowanie
 
 ```zenscript
-coolant().logKeys()
-coolant().removeRecipe('teslathingies:fluid_tf-molten_tesla') // check <logKeys> output for valid keys
-coolant().clear()
+importuj mods.poweredthingies.Tweaker.fluidBurnerCoolantTweaker jako czynnik chłodzący;
 ```
 
-### Adding Recipe
-
-##### Signature
+### Lista kluczy, usuwanie przepisów przez klucz, czyszczenie
 
 ```zenscript
-addCoolant(fluid: ILiquidStack, timeMultiplier: Float)
+chłodziwa().logKeys()
+coolant().removeRecipe('teslathingies:fluid_tf-molten_tesla') // sprawdź <logKeys> wyjście dla ważnych klawiszy
+chłodziwa().clear()
 ```
 
-`timeMultiplier` is the value that will be used to increase (or decrease) the number ticks a fuel will burn for.
+### Dodawanie przepisu
 
-##### Example
+##### Podpis
 
 ```zenscript
-coolant().addCoolant(<liquid:tf-sewage> * 50, 1.1);
+addCoolant(płyn: ILiquidStack, timeMultiplier: Float)
 ```
 
-### Notes
+`Mnożnik czasowy` to wartość, która zostanie użyta do zwiększenia (lub zmniejszenia) liczby ticków, na które paliwo zostanie spalone.
 
-All of these actions will get cached and ran after the default registry for this machine has finished registering all recipes (including the ones from the custom jsons).
+##### Przykład
+
+```zenscript
+chłodziwa().addCoolant(<liquid:tf-sewage> * 50, 1.1);
+```
+
+### Uwagi
+
+Wszystkie te działania zostaną zapisane w pamięci podręcznej i uruchomione po zakończeniu rejestracji domyślnego rejestru dla tego komputera (w tym tych z niestandardowych jsonów).

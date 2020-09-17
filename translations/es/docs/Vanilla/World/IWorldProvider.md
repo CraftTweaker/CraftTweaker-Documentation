@@ -1,82 +1,82 @@
 # IWorldProvider
 
-The World Provider interface is used to get even more information out of an [IWorld](/Vanilla/World/IWorld/) object.
+La interfaz de proveedor de mundo se utiliza para obtener aún más información de un objeto de [IWorld](/Vanilla/World/IWorld/).
 
-## Importing the package
+## Importando el paquete
 
-It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
-`import crafttweaker.world.IWorldProvider;`
+Podría ser necesario que importes el paquete si encuentras algún problema, así que más vale estar seguro que lo sentimos y añadir la importación.  
+`importar crafttweaker.world.IWorldProvider;`
 
-## Create a worldProvider
+## Crear un proveedor de mundo
 
-Normally, you can just get the worldProvider from an [IWorld](/Vanilla/World/IWorld/) object or some functions, though if yo need to create one yourself, here's how you do it:  
-Note that this method should only be called inside functions that are meant to be run inside minecraft, not during the loading circle.
+Normalmente, puedes obtener el worldProvider de un objeto [IWorld](/Vanilla/World/IWorld/) o algunas funciones, aunque si necesito crear uno usted mismo, aquí es cómo lo haces:  
+Tenga en cuenta que este método sólo debe ser llamado dentro de funciones que están destinadas a ser ejecutadas dentro de minecraft, no durante el círculo de carga.
 
 ```zenscript
 crafttweaker.world.IWorldProvider.getFromID(int id);
 ```
 
-## ZenMethods without parameters and ZenGetters
+## ZenMethods sin parámetros y ZenGetters
 
-| ZenGetter              | ZenMethod                   | Return Type                            |
-| ---------------------- | --------------------------- | -------------------------------------- |
-| actualHeight           | getActualHeight()           | int                                    |
-| actualGroundLevel      | getAverageGroundLevel()     | int                                    |
-| cloudHeight            | getCloudHeight()            | float                                  |
-| currentMoonPhaseFactor | getCurrentMoonPhaseFactor() | float                                  |
-| dimensionID            | getDimensionID()            | int                                    |
-| height                 | getHeight()                 | int                                    |
-| horizon                | getHorizon()                | double                                 |
-| lightBrightnesTable    | getLightBrightnesTable()    | float[]                                |
-| movementFactor         | getMovementFactor()         | double                                 |
-| randomizedSpawnPoint   | getRandomizedSpawnPoint()   | [IBlockPos](/Vanilla/World/IBlockPos/) |
-| saveFolder             | getSaveFolder()             | string                                 |
-| seed                   | getSeed()                   | long                                   |
-| spawnCoordinate        | getSpawnCoordinate()        | [IBlockPos](/Vanilla/World/IBlockPos/) |
-| spawnPoint             | getSpawnPoint()             | [IBlockPos](/Vanilla/World/IBlockPos/) |
-| voidFogYFactor         | getVoidFogYFactor()         | double                                 |
-| worldTime              | getWorldTime()              | long                                   |
-| canRespawnHere         | canRespawnHere()            | bool                                   |
-| waterVaporize          | doesWaterVaporize()         | bool                                   |
-| skylight               | hasSkyLight()               | bool                                   |
-| daytime                | isDaytime()                 | bool                                   |
-| nether                 | isNether()                  | bool                                   |
-| skyColored             | isSkyColored()              | bool                                   |
-| surfaceWorld           | isSurfaceWorld()            | bool                                   |
+| ZenGetter                      | Método                             | Tipo de devolución                     |
+| ------------------------------ | ---------------------------------- | -------------------------------------- |
+| actualHeight                   | getActualHeight()                  | int                                    |
+| nivel real del campo           | Nivel medio                        | int                                    |
+| nube de altura                 | getCloudHeight()                   | flotante                               |
+| Factor actual de la fase lunar | obtener Factor de la fase lunar () | flotante                               |
+| dimensiónID                    | getDimensionID()                   | int                                    |
+| altura                         | getHeight()                        | int                                    |
+| horizonte                      | getHorizon()                       | doble                                  |
+| cuadro de iluminación          | getLightBrightnesTable()           | flotante[]                             |
+| movementFactor                 | getMovementFactor()                | doble                                  |
+| randomizedSpawnPoint           | getRandomizedSpawnPoint()          | [IBlockPos](/Vanilla/World/IBlockPos/) |
+| guardar carpeta                | getSaveFolder()                    | cadena                                 |
+| semilla                        | seed()                             | largo                                  |
+| spawnCoordinate                | getSpawnCoordinate()               | [IBlockPos](/Vanilla/World/IBlockPos/) |
+| spawnPoint                     | getSpawnPoint()                    | [IBlockPos](/Vanilla/World/IBlockPos/) |
+| voidFogYFactor                 | getVoidFogYFactor()                | doble                                  |
+| mundoTiempo                    | getWorldTime()                     | largo                                  |
+| canRespawnHere                 | canRespawnHere()                   | pluma                                  |
+| waterVaporize                  | WaterVaporize()                    | pluma                                  |
+| semáforo                       | hasSkyLight()                      | pluma                                  |
+| daytime                        | isDaytime()                        | pluma                                  |
+| ni                             | está/es ()                         | pluma                                  |
+| color cielo                    | está SkyColored()                  | pluma                                  |
+| mundo de superficie            | es SurfaceWorld()                  | pluma                                  |
 
-## ZenMethods with parameters
+## ZenMethods con parámetros
 
-### get Biome at a certain Position
+### obtener bioma en una posición determinada
 
-Use either an [IBlockPos](/Vanilla/World/IBlockPos/) object.  
-Returns an [IBiome](/Vanilla/Biomes/IBiome/) Object.
+Utilice un objeto [IBlockPos](/Vanilla/World/IBlockPos/) .  
+Devuelve un objeto [IBiome](/Vanilla/Biomes/IBiome/).
 
 ```zenscript
 worldProvObj.getBiome(IBlockPos position);
 ```
 
-### get MoonPhase for a specific time
+### obtener la fase lunar por un tiempo específico
 
-Use a long.  
-Returns an int.
-
-```zenscript
-worldProvObj.getMoonPhase(long time);
-```
-
-### get Respawn Dimension for a specific player
-
-Use an [IPlayer](/Vanilla/Players/IPlayer/) object.  
-Returns a new IWorldProvider object.
+Usa un largo.  
+Devuelve un int.
 
 ```zenscript
-worldProvObj.getRespawnDimension(IPlayer player);
+worldProvObj.getMoonPhase(mucho tiempo);
 ```
 
-### get Brightnes (factor) at a specific
+### obtener Dimensión de Reaparición para un jugador específico
 
-Use a float.  
-Returns a float.
+Utilice un objeto [IPlayer](/Vanilla/Players/IPlayer/) .  
+Devuelve un nuevo objeto IWorldProvider.
+
+```zenscript
+mundProvObj.getRespawnDimension(Jugador IPlay);
+```
+
+### obtener brillo (factor) en un determinado
+
+Usa un float.  
+Devuelve un float.
 
 ```zenscript
 worldProvObj.getStarBrightness(float something);
@@ -84,11 +84,11 @@ worldProvObj.getSunBrightness(float something);
 worldProvObj.getSunBrightnessFactor(float something);
 ```
 
-### Check if a block has a high humidity
+### Evalúa si un bloque tiene una alta humedad
 
-Use an [IBlockPos](/Vanilla/World/IBlockPos/) object.  
-Returns a boolean.
+Utilice un objeto [IBlockPos](/Vanilla/World/IBlockPos/) .  
+Devuelve un boolean.
 
 ```zenscript
-worldProvObj.isBlockHighHumidity(IBlockPos pos);
+mundoProvObj.isBlockHighHumidy(IBlockPos pos);
 ```

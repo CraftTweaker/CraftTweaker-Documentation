@@ -1,16 +1,16 @@
-# Ingot Former
+# インゴットの元
 
-## Importing the Package
-`mods.nuclearcraft.ingot_former`
+## パッケージのインポート
+`mods.naturcraft.ingot_former`
 
-## Adding Recipes
+## レシピを追加中
 ```zenscript
-mods.nuclearcraft.ingot_former.addRecipe([fluidInput, itemOutput, @Optional double timeMultiplier, @Optional double powerMultiplier, @Optional double processRadiation]);
+mods.nuthcraft.ingot_former.addRecipe([fluidInput, itemOutput, @Optional double timeMultiplier, @Optional door processRadiation]);
 ```
 
-## Removing Recipes
+## レシピを削除
 ```zenscript
-mods.nuclearcraft.ingot_former.removeRecipeWithInput([fluidInput]);
-mods.nuclearcraft.ingot_former.removeRecipeWithOutput([itemOutput]);
-mods.nuclearcraft.ingot_former.removeAllRecipes();
+mods.nuthcraft.ingot_former.removeRecipeWithInput([fluidInput]);
+mods.nuclecraft.ingot_former.removeRecipeWithOutput([itemOutput]);
+mods.nuclecraft.ingot_former.removeAllRecipes();
 ```

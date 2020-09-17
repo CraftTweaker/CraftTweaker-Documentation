@@ -1,16 +1,16 @@
-# IFormattedText
+# IFormated文本
 
 ## 导入相关包
 
-It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
-`import crafttweaker.formatting.IFormattedText;`
+如果您遇到任何问题，可能需要导入软件包(例如铸造一个 [数组](/AdvancedFunctions/Arrays_and_Loops/)), 这样比抱歉更安全并添加导入。  
+`导入craftweaper.formting.IFormatedText；`
 
-## Creating an IFormattedText Object
+## 创建一个 IFormatedText 对象
 
-You can always defer an IFormatted Text from a String (the conversion is automatic).
+您总是可以从字符串延迟一个 IFormated 文本 (转换是自动的)。
 
-## Using an IFormattedText Object
+## 使用 IFormatedText 对象
 
-You can add or concatenate two IFormattedText together using the respecting Operators: `+ ~`
+您可以使用尊敬的运营商一起添加或封装两个IFormated文本： `+ ~`
 
-Besides that you can use the [IFormatter](/Vanilla/Utils/IFormatter/) to format an IFormattedText Object.
+除此之外，您可以使用 [IFormat](/Vanilla/Utils/IFormatter/) 格式化一个 IFormatedText 对象。

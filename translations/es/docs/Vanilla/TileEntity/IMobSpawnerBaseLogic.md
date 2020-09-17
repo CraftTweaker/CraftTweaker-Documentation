@@ -1,25 +1,25 @@
-# IMobSpawnerBaseLogic
+# IMobSpawnerLogic
 
-The IMobSpawnerBaseLogic object contains all kinds of information on how and where to spawn something.
+El objeto IMobSpawnerBaseLogic contiene todo tipo de información sobre cómo y dónde generar algo.
 
-## Importing the class
+## Importar la clase
 
-It might be required to [import](/AdvancedFunctions/Import/) the class to avoid errors.  
-`import crafttweaker.tileentity.IMobSpawnerBaseLogic;`
+Podría ser necesario [importar](/AdvancedFunctions/Import/) la clase para evitar errores.  
+`importar crafttweaker.tileentity.IMobSpawnerBaseLogic;`
 
 ## ZenGetters
 
-| ZenGetter  | ZenSetter          |                                       |
-| ---------- | ------------------ | ------------------------------------- |
-| `nbtData`  | `nbtData`          | [IData](/Vanilla/Data/IData/)         |
-|            | `entityDefinition` | [IPlayer](/Vanilla/Players/IPlayer/)  |
-| `world`    |                    | [IWorld](/Vanilla/World/IWorld)       |
-| `blockPos` |                    | [IBlockPos](/Vanilla/World/IBlockPos) |
+| ZenGetter          | Ajuste             |                                       |
+| ------------------ | ------------------ | ------------------------------------- |
+| `Datos inmediatos` | `Datos inmediatos` | [IData](/Vanilla/Data/IData/)         |
+|                    | `entidad definida` | [IPlayer](/Vanilla/Players/IPlayer/)  |
+| `mundo`            |                    | [IWorld](/Vanilla/World/IWorld)       |
+| `bloquear Pos`     |                    | [IBlockPos](/Vanilla/World/IBlockPos) |
 
-## ZenMethods
+## Métodos
 
 ```zenscript
-void updateSpawner();
+nulo updateSpawner();
 
 void setDelayToMin();
 ```

@@ -1,24 +1,24 @@
 # EntityLivingHurt
 
-The EntityLivingHurt Event is fired whenever an Entity is about to get hurt.  
-It can be canceled to stop the entity from being hurt.
+每当一个实体要受伤时，都会发射EntityLivingHurt事件。  
+可以取消它来阻止实体受到伤害。
 
-## Event Class
+## 事件类
 
 You will need to cast the event in the function header as this class:  
 `crafttweaker.event.EntityLivingHurtEvent`  
 You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
 
-## Event interface extensions
+## 事件界面扩展
 
-PlayerDeathDrops Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+PlayerDeathDrops Events 实现了以下接口，并且也能够调用他们的所有方法/getter/setter：
 
 - [ILivingEvent](/Vanilla/Events/Events/ILivingEvent/)
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 
 ## ZenGetters
 
-| ZenGetter    | Type                                            |
-| ------------ | ----------------------------------------------- |
-| damageSource | [IDamageSource](/Vanilla/Damage/IDamageSource/) |
-| amount       | float                                           |
+| ZenGetter | 类型                                              |
+| --------- | ----------------------------------------------- |
+| 破坏源       | [IDamageSource](/Vanilla/Damage/IDamageSource/) |
+| 金额        | 浮点数                                             |

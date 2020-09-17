@@ -1,30 +1,30 @@
 # MutableItemStack
 
-A Mutable Item Stack is a special [IItemStack](/Vanilla/Items/IItemStack/) object that can only be retrieved from [ICTPlayers](/Mods/ContentTweaker/Vanilla/Types/Player/ICTPlayer/).  
-That means all of [IItemStack](/Vanilla/Items/IItemStack/)'s methods, and those of [IIngredients](/Vanilla/Variable_Types/IIngredient/)!
+Une pile d'éléments mutables est un objet spécial [IItemStack](/Vanilla/Items/IItemStack/) qui ne peut être récupéré que depuis [ICTPlayers](/Mods/ContentTweaker/Vanilla/Types/Player/ICTPlayer/).  
+Cela signifie toutes les méthodes de [IItemStack](/Vanilla/Items/IItemStack/), et celles de [IIngrédients](/Vanilla/Variable_Types/IIngredient/)!
 
-## Importing the package
+## Importation du paquet
 
-It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
-`import mods.contenttweaker.MutableItemStack;`
+Il pourrait vous être nécessaire d'importer le paquet si vous rencontrez des problèmes, donc mieux vaut être sûr que désolé et ajouter l'importation.  
+`importer mods.contenttweaker.MutableItemStack ;`
 
-## ZenMethods
+## Méthodes Zen
 
-### Quantity
+### Quantité
 
-A Stack's count is the number of items in that stack!
+Le nombre d'objets de la pile est le nombre d'objets dans cette pile !
 
-| ZenMethod       | Parameter Type | Description                                         |
-| --------------- | -------------- | --------------------------------------------------- |
-| setCount(count) | int            | Sets the stack's count to the `count` provided      |
-| grow(count)     | int            | Increases the stack's count by the `count` provided |
-| shrink(count)   | int            | Decreases the stack's count by the `count` provided |
+| Méthode Zen             | Type de paramètre | Libellé                                               |
+| ----------------------- | ----------------- | ----------------------------------------------------- |
+| setCount(compte)        | Indice            | Définit le nombre de piles sur le `count` fourni      |
+| croissant(compte)       | Indice            | Augmente le nombre de la pile de `de` fournis         |
+| rétrécissement (compte) | Indice            | Diminue le nombre de piles par le nombre de `` fourni |
 
-### Damage
+### Dégâts
 
-`damage(int amount, ICTPlayer player)`
+`dégâts (int amount, joueur ICTPlayer)`
 
-Parameters:
+Paramètres:
 
-- int amount → The amount of Damage points to give the item
-- [ICTPlayer](/Mods/ContentTweaker/Vanilla/Types/Player/ICTPlayer/) player → the player/Entity damaging the item
+- int amount → The amount of damage points to give the item
+- [joueur ICTPlayer](/Mods/ContentTweaker/Vanilla/Types/Player/ICTPlayer/) → le joueur/entité endommageant l'objet

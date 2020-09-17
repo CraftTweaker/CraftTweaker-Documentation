@@ -1,74 +1,75 @@
 # IDamageSource
 
-An IDamageSource object is the source of damage to an entity.
+Ein IDamageSource-Objekt ist die Schadensquelle einer Entität.
 
 ## Diese Klasse importieren
 
-It might be required to [import](/AdvancedFunctions/Import/) the class to avoid errors.  
-`import crafttweaker.damage.IDamageSource`
+Es könnte erforderlich sein, [die Klasse](/AdvancedFunctions/Import/) zu importieren, um Fehler zu vermeiden.  
+`Crafttweaker.damage.IDamageSource`
 
-## Zengetters and ZenMethods without parameters
+## Zengetters und ZenMethoden ohne Parameter
 
-| ZenGetter        | ZenMethod                         | Rückgabetyp                           |
-| ---------------- | --------------------------------- | ------------------------------------- |
-| harmInCreative   | canHarmInCreative();              | bool                                  |
-| damageType       | getDamageType();                  | string                                |
-| hunderDamage     | getHungerDamage();                | float                                 |
-| immediateSource  | getImmediateSource();             | [IEntity](/Vanilla/Entities/IEntity/) |
-| trueSource       | getTrueSource();                  | [IEntity](/Vanilla/Entities/IEntity/) |
-| creativePlayer   | isCreativePlayer();               | bool                                  |
-| damageAbsolute   | isDamageAbsolute();               | bool                                  |
-| difficultyScaled | isDifficultyScaled();             | bool                                  |
-| explosion        | isExplosion();                    | bool                                  |
-| fireDamage       | isFireDamage();                   | bool                                  |
-| magicDamage      | isMagicDamage();                  | bool                                  |
-| projectile       | isProjectile();                   | bool                                  |
-|                  | setDamageAllowedInCreativeMode(); | IDamageSource                         |
-|                  | setDamageBypassesArmor();         | IDamageSource                         |
-|                  | setDamageIsAbsolute();            | IDamageSource                         |
-|                  | setDifficultyScaled();            | IDamageSource                         |
-|                  | setExplosion();                   | IDamageSource                         |
-|                  | setFireDamage();                  | IDamageSource                         |
-|                  | setMagicDamage();                 | IDamageSource                         |
-|                  | setProjectile();                  | IDamageSource                         |
+| ZenGetter          | ZenMethode                        | Rückgabetyp                           |
+| ------------------ | --------------------------------- | ------------------------------------- |
+| harmInCreative     | canHarmInCreative();              | bool                                  |
+| schadentyp         | getDamageType();                  | string                                |
+| hunderDamage       | getHungerDamage();                | float                                 |
+| immediateSource    | getImmediateSource();             | [IEntity](/Vanilla/Entities/IEntity/) |
+| trueSource         | getTrueSource();                  | [IEntity](/Vanilla/Entities/IEntity/) |
+| kreativer Spieler  | isCreativePlayer();               | bool                                  |
+| absoluter Schaden  | isDamageAbsolute();               | bool                                  |
+| schwierig skaliert | isDifficultyScaled();             | bool                                  |
+| explosion          | isExplosion();                    | bool                                  |
+| feuerschaden       | isFireDamage();                   | bool                                  |
+| magischer Schaden  | isMagicDamage();                  | bool                                  |
+| projektil          | isProjectile();                   | bool                                  |
+|                    | setDamageAllowedInCreativeMode(); | IDamageSource                         |
+|                    | setDamageBypassesRüstung();       | IDamageSource                         |
+|                    | setDamageIsAbsolute();            | IDamageSource                         |
+|                    | setDifficultyScaled();            | IDamageSource                         |
+|                    | setExplosion();                   | IDamageSource                         |
+|                    | setFireDamage();                  | IDamageSource                         |
+|                    | setMagicDamage();                 | IDamageSource                         |
+|                    | setProjectile();                  | IDamageSource                         |
 
-## ZenMethod with Parameters
+## ZenMethode mit Parametern
 
-- getDeathMessage([IEntity](/Vanilla/Entities/IEntity/) entity); → Returns a string containing the death message for the entity if it dies by this damageSource
+- getDeathMessage([IEntity](/Vanilla/Entities/IEntity/) Entity); → Gibt eine Zeichenfolge zurück, die die Todesmeldung für die Entität enthält, wenn sie an dieser Schadensquelle stirbt
 
-## Getting an IDamageSource Object
+## Ein IDamageSource-Objekt wird geladen
 
-You can either use these methods or the [Damage Source Bracket Handler](/Vanilla/Brackets/Bracket_DamageSource/).
+Du kannst entweder diese Methoden verwenden oder den [Klammerhandler](/Vanilla/Brackets/Bracket_DamageSource/).
 
 ```zenscript
 crafttweaker.damage.IDamageSource.createMobDamage(IEntityLivingBase mob)
 crafttweaker.damage.IDamageSource.createIndirectDamage(IEntity source, IEntityLivingBase indirectEntityIn)
 crafttweaker.damage.IDamageSource.createPlayerDamage(IPlayer player)
-crafttweaker.damage.IDamageSource.createThrownDamage(IEntity source, @Optional IEntity indirectEntityIn)
-crafttweaker.damage.IDamageSource.createIndirectMagicDamage(IEntity source, @Optional IEntity indirectEntityIn)
-crafttweaker.damage.IDamageSource.createThornsDamage(IEntity source)
+crafttweaker.damage.IDamageSource.createThrownDamage(IEntity source, @Optionale IEntity indirectEntityIn)
+crafttweaker.damage.IDamageSource.createIndirectMagicDamageEntity source, @Optional IEntity IndirectEntityIn)
+crafttweaker. amage.IDamageSource.createThornsDamage(IEntity source)
 crafttweaker.damage.IDamageSource.createExplosionDamage(@Optional IEntityLivingBase entityLivingBaseIn)
 crafttweaker.damage.IDamageSource.createOfType(String type)
 
-//Preregistered Damage Types
-crafttweaker.damage.IDamageSource.IN_FIRE()
-crafttweaker.damage.IDamageSource.LIGHTNING_BOLT()
-crafttweaker.damage.IDamageSource.ON_FIRE()
+//Preregistered Schadentypen
+crafttweaker.damageSource.IN_FIRE()
+crafttweaker.IDamageSource.IDamageSource.LIGHTNING_BOLT()
+crafttweaker.damage.IDamageSource. N_FIRE()
 crafttweaker.damage.IDamageSource.LAVA()
-crafttweaker.damage.IDamageSource.HOT_FLOOR()
+crafttweaker.damage.damage.IDamageSource.HOT_FLOOR()
 crafttweaker.damage.IDamageSource.IN_WALL()
 crafttweaker.damage.IDamageSource.CRAMMING()
-crafttweaker.damage.IDamageSource.DROWN()
+crafttweaker.damage.DamageSource.DROWN()
 crafttweaker.damage.IDamageSource.STARVE()
-crafttweaker.damage.IDamageSource.CACTUS()
-crafttweaker.damage.IDamageSource.FALL()
-crafttweaker.damage.IDamageSource.FLY_INTO_WALL()
+crafttweaker.damageSource.CACTUS()
+crafttweaker.damage.DamageSource.IDamageSource.FALL()
+crafttweaker.damage. DamageSource.FLY_INTO_WALL()
 crafttweaker.damage.IDamageSource.OUT_OF_WORLD()
 crafttweaker.damage.IDamageSource.GENERIC()
-crafttweaker.damage.IDamageSource.MAGIC()
-crafttweaker.damage.IDamageSource.WITHER()
+crafttweaker.damage.damageSource.MAGIC()
+crafttweaker.damage.damageSource.WITHER()
 crafttweaker.damage.IDamageSource.ANVIL()
-crafttweaker.damage.IDamageSource.FALLING_BLOCK()
-crafttweaker.damage.IDamageSource.DRAGON_BREATH()
-crafttweaker.damage.IDamageSource.FIREWORKS()
+craftweaker.damageSource.damageSource.FALLING_BLOCK()
+crafttweaker.damageSource.IDamageSource.DRAGON_BREATH()
+crafttweaker.IDamageSource.IREWORKS() 
+ crafttweaker.DamageSource.
 ```

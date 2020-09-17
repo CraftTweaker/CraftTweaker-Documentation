@@ -1,8 +1,8 @@
-# Heating
+# 加熱中
 
-## Package
+## パッケージ
 ```zenscript
-import mods.terrafirmacraft.Heating;
+import mods.terrafirmacraft.Heating;加熱;
 ```
 
 ## 追加
@@ -10,8 +10,8 @@ import mods.terrafirmacraft.Heating;
 ```zenscript
 Heating.addRecipe(String registryName, IItemStack input, IItemStack output, float transformTemp, float maxTemp);
 ```
-- transformTemp is at which temperature the recipe completely transform the input into the output stack.
-- maxTemp is at which temperature the input is destroyed. For a complete reference, check [Heating Temperatures](/Mods/Terrafirmacraft/HeatingTemperatures)
+- transformTempは、レシピが入力を完全に出力スタックに変換する温度です。
+- maxTempは入力が破棄される温度です。 完全な参照については、 [加熱温度](/Mods/Terrafirmacraft/HeatingTemperatures) を参照してください。
 
 ## 削除
 

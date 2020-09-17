@@ -1,23 +1,23 @@
 # ITeam
 
-If you don't know what a team is then you are a horrible person.
+如果你不知道一个团队是什么，你就是一个可怕的人。
 
-## Importing the package
+## 导入相关包
 
-It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
-`import crafttweaker.game.ITeam;`
+如果您遇到任何问题，可能需要导入软件包(例如铸造一个 [数组](/AdvancedFunctions/Arrays_and_Loops/)), 这样比抱歉更安全并添加导入。  
+`导入craftmilever.game.ITeam；`
 
 ## ZenGetters
 
-| Getter name            | Type           |
-| ---------------------- | -------------- |
-| name                   | string         |
-| allowFriendlyFire      | bool           |
-| colorPrefix            | string         |
-| membershipCollection   | List<string\> |
-| deathMessageVisibility | string         |
-| collisionRule          | string         |
+| 获取名称    | 类型           |
+| ------- | ------------ |
+| 名称      | 字符串          |
+| 允许好友开火！ | 布尔值          |
+| 颜色前缀    | 字符串          |
+| 会员收藏    | 列表<string\> |
+| 死亡消息可见性 | 字符串          |
+| 碰撞规则    | 字符串          |
 
 ## ZenMethods
 
-- `formatString(string input);` → Formats the input string for the team. Returns the formatted string.
+- `格式化字符串(字符串输入)；` → 团队的输入字符串格式。 返回格式化字符串。

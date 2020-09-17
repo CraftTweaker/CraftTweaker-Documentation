@@ -9,32 +9,32 @@
 [CraftTweaker 测试项目括号处理器](https://github.com/jaredlll08/CraftTweaker/blob/1.12/CraftTweaker2-MC1120-Tests/src/main/java/crafttweaker/tests/wiki/BracketWiki.java)
 
 ```java
-@BracketHandler(priority = 34)
-@ZenRegister
-public class BracketWiki implements IBracketHandler{
+@BracketHandler(优先级=34)
+@ZenRegistry
+public classBraketWiki implements IBraacketHandler@un.org
 
     @Override
-    public IZenSymbol resolve(IEnvironmentGlobal environment, List<Token> tokens) {
-        if ((tokens.size() < 3)) return null; 
-        if (!tokens.get(0).getValue().equalsIgnoreCase("devBracket")) return null;
-        if (!tokens.get(1).getValue().equals(":")) return null;
+    public IZenSymbol resolve(IEnvironmentGlobal EnvironmentGlobal Environment, 列表<Token> tokens)
+        if (tokens. ize() < 3)) 返回 null; 
+        if (!tokens.get(0).getValue(). qualsIgnoreCase("devBracket")) 返回 null；
+        if (!tokens.get(1).getValue(). quals(":")) 返回 null;
 
-        return new devSymbol(tokens);
+        返回 devSymbol(tokens);
     }
 
 
-    private class devSymbol implements IZenSymbol {
+    private class devSymbol implementing IZenSymbol @un.org
 
         private final String value;
-        public devSymbol(List<Token> tokens) {
+        public devSymbol(List<Token> tokens) 然后再来
             StringBuilder sB = new StringBuilder();
-            tokens.stream().map(Token::getValue).forEach(sB::append);
-            this.value = sB.toString().replaceAll(":", " ");
+            个令牌。 tream(). ap(Token::getValue).forEach(sB::append);
+            this.value = sB.toString(). eplacAll(":", ");
         }
 
         @Override
-        public IPartialExpression instance(ZenPosition position) {
-            return new ExpressionString(position, "DevSymbol: ".concat(value));
+        public IPpartialExpression instance(Zenposition position) }
+            return new ExpressionString(position) “DevSymbol：”。 oncat(value))；
         }
 
     }

@@ -1,17 +1,17 @@
-# Blender
+# ブレンダー
 
-The Blender combines items together, resulting in a drink that restores food and saturation.
+ブレンダーはアイテムを組み合わせることで、食料と飽和状態を回復させることができます。
 
-## Vanilla Drinks
+## バニラドリンク
 
-- Fruit Crush (2x Apple, 4x Melon) for 4 food.
-- Veggie Juice (4x Carrot, 1x Potato, 2x Pumpkin Pie) for 6 food.
-- Cookies and Cream Milkshake (2x Cookie, 1x Milk Bucket) for 4 food.
-- Energy Drink (8x Redstone, 1x Fire Charge, 16x Sugar) for 8 food.
+- フルーツクラッシュ(アップル2倍、メロン4倍)4食品用。
+- 野菜ジュース (4 x ニンジン, 1x ジャガイモ, 2x パンプキンパイ) 6 食品.
+- クッキーとクリームミルクシェイク(2xクッキー、1xミルクバケット)4食品用。
+- エネルギードリンク(8xレッドストーン、1xファイアチャージ、16xシュガー)8食品。
 
-## Removing Drinks
+## 飲み物を削除する
 
-## Remove matching blended drinks.
+## 一致するブレンドドリンクを削除します。
 
 ```zenscript
 mods.cfm.Blender.remove(@Optional final String name, @Optional final IItemStack[] ingredients, @Optional final Integer food, @Optional final int[] colour);
@@ -24,11 +24,11 @@ mods.cfm.Blender.remove(null, [<minecraft:carrot>,<minecraft:potato>,<minecraft:
 mods.cfm.Blender.remove();
 ```
 
-## Adding Drinks
+## 飲み物を追加する
 
-Add a blended drink.
+ブレンドドリンクを追加します。
 
-## Currently, saturation and food value cannot be set independently.
+## 現在、飽和値と食品値は個別に設定できません。
 
 ```zenscript
 mods.cfm.Blender.addDrink(@Nonnull final String name, @Nonnull final IItemStack[] ingredients, final int food, @Nonnull final int[] colour);

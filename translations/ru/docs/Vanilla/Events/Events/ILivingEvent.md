@@ -1,18 +1,18 @@
 # ILivingEvent
 
-This interface is extended by all Events that can have a central living entity.
+Этот интерфейс расширен всеми событиями, которые могут иметь центральное живое образование.
 
-## Importing the class
+## Импорт класса
 
-It might be required to [import](/AdvancedFunctions/Import/) the class to avoid errors.  
-`import crafttweaker.event.ILivingEvent;`
+Может потребоваться [импортировать](/AdvancedFunctions/Import/) класс, чтобы избежать ошибок.  
+`импорт crafttweaker.event.ILivingEvent;`
 
-## Extending IEntityEvent
+## Расширение IEntityEvent
 
-This interface extends [IEntityEvent](/Vanilla/Events/Events/IEntityEvent/), which means that all functionality that IEntityEvent offers is also present in ILivingEvent
+Этот интерфейс расширяет [IEntityEvent](/Vanilla/Events/Events/IEntityEvent/), что означает, что вся функциональность, которую предлагает IEntityEvent также присутствует в ILivingEvent
 
 ## ZenGetters
 
-| name             | type                                                      |
+| имя              | type                                                      |
 | ---------------- | --------------------------------------------------------- |
 | entityLivingBase | [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) |

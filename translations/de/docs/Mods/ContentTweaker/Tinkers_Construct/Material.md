@@ -1,41 +1,41 @@
-# Material Representation
+# Materialvertretung
 
-A Material representation represents a Tinkers' Construct Material.  
-You can get such an object either from the [Material Builder](/Mods/ContentTweaker/Tinkers_Construct/MaterialBuilder/) or from the [Material Bracket Handler](/Mods/ContentTweaker/Tinkers_Construct/Brackets/Bracket_Material/).
+Eine Materialdarstellung stellt ein Tinkers' Construct Material dar.  
+Sie können ein solches Objekt entweder vom [Materialbauer](/Mods/ContentTweaker/Tinkers_Construct/MaterialBuilder/) oder vom [Materialklappenhandler](/Mods/ContentTweaker/Tinkers_Construct/Brackets/Bracket_Material/) erhalten.
 
 ## Diese Klasse importieren
 
-It might be required for you to import the class if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
-`import mods.contenttweaker.tconstruct.Material`
+Möglicherweise ist es erforderlich, dass Sie die Klasse importieren, wenn Sie Probleme haben (z.B. [Array](/AdvancedFunctions/Arrays_and_Loops/)zu bearbeiten), also besser sicher sein als bedauern und fügen Sie den Import.  
+`mods.contenttweaker.tconstruct.Material`
 
 ## ZenGetter
 
 | ZenGetter     | Type   |
 | ------------- | ------ |
 | identifier    | string |
-| commandString | string |
+| Kommandozeile | string |
 
-## Adding material items
+## Materialartikel hinzufügen
 
-If you use the given item in the part builder, you can set how many materialpoints that will give, or how much the item will repair.
+Wenn du das angegebene Item im Bauteilbauer verwendest können Sie einstellen, wie viele Materialpunkte vergeben werden oder wie viel der Gegenstand reparieren wird.
 
-    //myMaterial.addItem(IIngredient item, @Optional(1) int amountNeeded, @Optional(144) int amountMatched));
+    //myMaterial.addItem(IIngredient item, @Optional(1) int amountNeeded, @Optional(144) int amountMatched);
     myMaterial.addItem(<item:minecraft:iron_pickaxe>);
     myMaterial.addItem(<item:minecraft:iron_block>, 4, 288);
     
 
-- `item` is the item that is matched against. You can use [Item Conditions](/Vanilla/Items/Item_Conditions/) but no Transformers. 
-- `amountNeeded` is the amount of items that is matched against. You can split them over all the slots the toolforge provides, which also allows you to go above 64. In the second example above, you need 4 iron blocks per addition. Defaults to 1.
-- `amountMatched` is the amount of material points added per `amountNeeded`. In the second example above four iron blocks give two material points. Defaults to 144 (one ingot/one Material value).
+- `Gegenstand` ist der Gegenstand, auf den man zutrifft. Sie können [Artikelbedingungen](/Vanilla/Items/Item_Conditions/) verwenden, aber keine Transformatoren. 
+- `Der benötigte Betrag` ist die Anzahl der Gegenstände, gegen die abgestimmt wird. Sie können sie über alle Slots der Toolforge aufteilen, so dass Sie auch über 64 hinausgehen können. Im zweiten Beispiel oben benötigen Sie 4 Eisenblöcke pro Zuschlag. Standard ist 1.
+- `Betrag übereinstimmend` ist die Menge an Materialpunkten, die pro `Betrag hinzugefügt werden muss`. Im zweiten Beispiel über vier Eisenblöcke gibt es zwei Materialpunkte. Standardmäßig 144 (ein ingot/ein Materialwert).
 
-## Adding Material Traits
+## Materialeigenschaften hinzufügen
 
-You can add a trait to the material.  
-All items made from this material will then have this trait.  
-Uses a [Trait Representation](/Mods/ContentTweaker/Tinkers_Construct/Trait/) or a String with the identifier (recommended), returns void.  
-You can also provide a dependency String, that will cause the trait to only be available for certain part types, like heads, for example. Omitting that parameter will inject null, which will cause the trait to only be on the part type when no other nonnull dependency modifiers are on that part already.
+Du kannst dem Material ein Merkmal hinzufügen.  
+Alle Gegenstände aus diesem Material werden dann dieses Merkmal haben.  
+Verwendet eine [Merkmalsrepräsentation](/Mods/ContentTweaker/Tinkers_Construct/Trait/) oder eine Zeichenkette mit dem Bezeichner (empfohlen), gibt ungültig zurück.  
+Sie können auch eine Abhängigkeitszeichenkette angeben, , was dazu führt, dass das Merkmal nur für bestimmte Bauteiltypen, wie zum Beispiel Köpfe, verfügbar ist. Wenn dieser Parameter null injiziert, , was dazu führt, dass das Merkmal nur auf dem Bauteiltyp liegt, wenn noch keine anderen nonnull Abhängigkeitsmodifikatoren auf diesem Teil vorhanden sind.
 
-The string varaint is recommended, since by the time CoT runs, most Traits aren't yet available, and even by the time CrT runs, not all of them have been initialized, but if you use the strings, the addition of the materials is postponed until they are available. Still it's not errorproof and there's no easy way of checking for typos, so beware the error messages telling you which traits haven't been findable.
+Der String-Varaint wird empfohlen, da zum Zeitpunkt der CoT-Ausführung die meisten Züge noch nicht verfügbar sind und zum Zeitpunkt der Ausführung von CrT nicht alle wurden initialisiert, aber wenn Sie die Zeichenketten verwenden, wird der Zusatz der Materialien verschoben, bis sie verfügbar sind. Es ist immer noch nicht fehlersicher und es gibt keine einfache Möglichkeit nach Tippfehlern zu suchen, also sollten Sie die Fehlermeldungen beachten, die Ihnen mitteilen, welche Merkmale noch nicht gefunden wurden.
 
 ```zenscript
 myMaterial.addTrait("fiery", "head");

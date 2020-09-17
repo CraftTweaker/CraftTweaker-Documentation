@@ -1,19 +1,19 @@
-# Industrial Sawmill
+# Промышленная лесопилка
 
-## Importing the Package
+## Импортирование пакета
 `mods.techreborn.industrialSawmill`
 
-## Adding Recipes
+## Добавление рецептов
 ```zenscript
 mods.techreborn.industrialSawmill.addRecipe(IItemStack output1, IItemStack output2, IItemStack output3, IIngredient input1, ILiquidStack fluid, int ticktime, int euTick);
-mods.techreborn.industrialSawmill.addRecipe(IItemStack output1, IItemStack output2, IItemStack output3, IIngredient input1, int ticktime, int euTick);
-mods.techreborn.industrialSawmill.addRecipe(IItemStack output1, IItemStack output2, IItemStack output3, IIngredient input1, int ticktime, int euTick, boolean useOreDic);
-mods.techreborn.industrialSawmill.addRecipe(IItemStack output1, IItemStack output2, IItemStack output3, IIngredient input1, ILiquidStack fluid, int ticktime, int euTick, boolean useOreDic);
+модов. echreborn.industrialSawmill.addRecipe(IItemStack output1, IItemStack output2, IItemStack output3, IIngredient input1, int ticktime, int euTick);
+mods.techreborn. ndustrialSawmill.addRecipe(IItemStack output1, IItemStack output2, IItemStack output3, IIngredient input1, int ticktime, int euTick, boolean useOreDic);
+mods.techreborn. ndustrialSawmill.addRecipe(IItemStack output1, IItemStack output2, IItemStack output3, IIngredient input1, ILiquidStack fluid, int ticktime, int euTick, boolean useOreDic);
 ```
 
-## Removing Recipes
+## Удаление рецептов
 ```zenscript
 mods.techreborn.industrialSawmill.removeInputRecipe(IIngredient ingredient);
-mods.techreborn.industrialSawmill.removeRecipe(IItemStack output);
+mods.techreborn.industrialSawmill.removeRecipe(выход IItemStack);
 mods.techreborn.industrialSawmill.removeAll();
 ```

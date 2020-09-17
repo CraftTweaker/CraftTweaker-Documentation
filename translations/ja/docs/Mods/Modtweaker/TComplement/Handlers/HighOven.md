@@ -1,110 +1,110 @@
 # HighOven
 
-The HighOven package allows to add/remove fuels, heat recipes and mix recipes to the high oven.
+HighOvenパッケージは、燃料を追加/削除し、レシピを加熱し、高オーブンにレシピをミックスすることができます。
 
 ## パッケージのインポート
 
-Import the package using
+パッケージをインポートするには
 
 ```zenscript
 import mods.tcomplement.highoven.HighOven;
 ```
 
-## Fuels
+## 燃料
 
-You can add and remove fuels accepted by the high oven.
+高オーブンで受け入れられる燃料を加えて取り除くことができます。
 
-### Removing fuels
+### 燃料の削除
 
 ```zenscript
 // HighOven.removeFuel(IIngredient fuel);
 HighOven.removeFuel(<minecraft:coal:1>);
 ```
 
-### Adding fuels
+### 燃料の追加
 
 ```zenscript
 // HighOven.addFuel(IIngredient fuel, int time, int rate);
 HighOven.addFuel(<minecraft:hay_block>, 3600, 5);
 ```
 
-+ `fuel` is the fuel to add (supports transformers, NBT and fluid containers)
-+ `time` is how long the fuel lasts, in seconds
-+ `rate` is the temperature increase of the high oven when that fuel is used, in degrees per second
++ `燃料` は追加する燃料です(トランス、NBT、流体容器をサポートしています)
++ `時間` は燃料がどのくらい持続するかを秒単位で表します。
++ `速度` は、燃料を使用した場合のオーブンの温度上昇を秒単位で表します。
 
-## Melting Overrides
+## 溶融オーバーライド
 
-You can add and remove melting overrides for the High Oven. Melting overrides, well, override the default melting behavior in the High Oven. Items normally behave the same as in the smeltery, overrides can redefine output fluid and melting temperature (only for the High Oven).
+融解オーバーライドを追加および削除することができます。 融解はオーバーライドされますが、High Ovenのデフォルトの融解動作をオーバーライドします。 アイテムは通常、製錬所と同じように動作し、オーバーライドは出力流体と融解温度を再定義することができます(High Ovenの場合のみ)。
 
-### Removing overrides
+### 上書きを削除する
 
 ```zenscript
 // HighOven.removeMeltingOverride(ILiquidStack output, @Optional IItemStack input)
 HighOven.removeMeltingOverride(<liquid:iron>);
 ```
 
-### Adding overrides
+### オーバーライドの追加
 
-This is more interesting. Overrides specify a new behavior for items in the High Oven
+これはもっと面白い。 オーバーライドは、High Oven 内のアイテムの新しい動作を指定します。
 
 ```zenscript
 // HighOven.addMeltingOverride(ILiquidStack output, IIngredient input, @Optional int temp)
 HighOven.addMeltingOverride(<liquid:steel> * 144, <ore:ingotIron>, 2567);
 ```
 
-+ `output` the liquid and amount to produce
-+ `input` the IIngredient to smelt. Supports transformers, oredict etc.
-+ `temp` (Optional) the minimum temperature for the item to start melting in the High Oven, in Kelvin. If undefined, leave the calculation to the High Oven
++ `` 液体と生成量
++ `` を精錬するIIngredientを入力します。 変圧器、オレディクトなどをサポートします。
++ `temp` (オプション)ケルビンのHigh Ovenで溶融を開始するための最低温度。 未定義の場合は、計算を高オーブンに任せてください
 
-## Heat recipes
+## 熱のレシピ
 
-Heat recipes transform a fluid into another in the high oven tank, provided the temperature of the high oven is high enough.
+熱レシピは、高オーブンタンクに別の流体を変換します, 高オーブンの温度が十分に高く提供されます.
 
-### Removing heat recipes
+### ヒートレシピを削除する
 
 ```zenscript
-// HighOven.removeHeatRecipe(ILiquidStack output, @Optional ILiquidStack input);
+// HighOven.removeHeatRecipe(ILiquidStack 出力, @Optional ILiquidStack input);
 HighOven.removeHeatRecipe(<liquid:steam>);
 ```
 
-+ `output` is the output for which recipes should be disabled
-+ `input` is optionally the inputs to filter recipes with. If unspecified (or `null`), all recipes producing the supplied output will be disabled. Otherwise, only the recipe with the given input is disabled.
++ `出力` はレシピを無効にする出力です
++ `入力` はレシピをフィルタリングするためのオプションです。 指定されていない場合 (または `null`)、与えられた出力を生成するすべてのレシピは無効になります。 そうでなければ、指定された入力を持つレシピのみが無効になります。
 
-*NOTE*: this method does **not** disable heat recipes added by ModTweaker using the next method.
+*注意*: この方法は **次の方法でModTweakerが追加した熱レシピを無効に** しません。
 
-### Adding heat recipes
+### 加熱レシピの追加
 
 ```zenscript
 // HighOven.addHeatRecipe(ILiquidStack output, ILiquidStack input, int temp);
 HighOven.addHeatRecipe(<liquid:iron> * 144, <liquid:lava> * 1000, 1450);
 ```
 
-+ `output` the liquid to pruduce, and in which quantity
-+ `input` the liquid to consume, and in which quantity, to produce the output quantity
-+ `temp` the minimum high oven's temperature, in Kelvin.
++ `` を液体からプルードス、およびその量
++ `` 消費する液体、および出力量を生成する量
++ `温度` は、ケルビンにおける最低高オーブンの温度である。
 
-*Note*: the actual rate of the heat recipes scales with excess temperature
+*注*: 熱レシピの実際の速度は過剰な温度でスケールする
 
-## Mix recipes
+## ミックスレシピ
 
-Mix recipes allow to do a kind of alchemy or alloying. When a stack melts in the high oven, if it produces the right fluid *and* the proper oxidizers, reducers and purifiers are in their dedicated slots, then a different fluid is produced.
+ミックスのレシピは、錬金術や合金の一種を行うことができます。 スタックが高オーブンで溶けると、適切な流体 *と* 適切な酸化剤が生成される場合。 リデューサーと浄化器は専用のスロットにあり、それから別の流体が生成されます。
 
-Since those recipes are complicated, adding or tweaking existing ones uses a special zen class.
+それらのレシピは複雑なので、既存のレシピを追加または調整することは特別なzenクラスを使用します。
 
-### Removing mix recipes
+### ミックスレシピを削除する
 
-This is the easy part for mix recipes
+ミックスレシピのための簡単な部分です
 
 ```zenscript
-// HighOven.removeMixRecipe(ILiquidStack output, @Optional ILiquidStack input);
-HighOven.removeMixRecipe(<liquid:steel>); // disable any steel-producing mix recipe
+// HighOven.removeMixRecipe(ILiquidStack出力, @Optional ILiquidStack input);
+HighOven.removeMixRecipe(<liquid:steel>); // 任意の鉄鋼生産ミックスレシピを無効にする
 ```
 
-The arguments are the same as `removeHeatRecipe()` and the matching works the same way. Similarly to `removeHeatRecipe()`, this method will not remove recipes added by ModTweaker.
+引数は `removeHeatRecipe()` と同じで、マッチングは同じように動作します。 `removeHeatRecipe()`と同様に、このメソッドはModTweakerによって追加されたレシピを削除しません。
 
-### Adding mix recipes
+### ミックスレシピの追加
 
-To add a mix recipe, you have to use a `MixRecipeBuilder`. You can get one using
+ミックスレシピを追加するには、 `MixRecipeBuilder` を使用する必要があります。 You can get one using
 
 ```zenscript
 import mods.tcomplements.highoven.MixRecipeBuilder;
@@ -113,11 +113,11 @@ import mods.tcomplements.highoven.MixRecipeBuilder;
 var builder = HighOven.newMixRecipe(<liquid:steel> * 72, <liquid:iron> * 144, 1350);
 ```
 
-+ `output` is the fluid and quantity to produce
-+ `input` is the fluid and quantity to consume
-+ `temp` is the minimal temperature of the high oven for the recipe to work, in Kelvin
++ `出力` は生産する流体と量
++ `入力` は流体と消費量
++ `温度` は、ケルビンで動作するレシピのための高オーブンの最小温度です。
 
-Once you have a `MixRecipeBuilder`, you should add oxidizers, reducers and purifiers to it, and then register it.
+`MixRecipeBuilder`を入手したら、酸化剤、レデューサー、浄化器を追加して登録する必要があります。
 
 ```zenscript
 builder.addOxidizer(<minecraft:redstone>, 95);
@@ -127,15 +127,15 @@ builder.addPurifier(<minecraft:nether_star>, 0);
 builder.register();
 ```
 
-For a detailed documentation of what you can do with a `MixRecipeBuilder`, see its documentation.
+`MixRecipeBuilder`でできることの詳細なドキュメントについては、そのドキュメントを参照してください。
 
-NOTE*: Once you have used a `MixRecipeBuilder`, you can keep modifying it and re-using it. It allows for recipe variations to be easily added.
+注*: `MixRecipeBuilder`を使用すると、変更を続けて再利用できます。 レシピのバリエーションを簡単に追加できます。
 
-**WARNING**: If no item produces the input fluid when it melts in the smeltery, then the recipe won't be visible in JEI.
+**警告**: 製錬所で溶解したときに入力液が生成されない場合、レシピはJEIでは表示されません。
 
-### Tweaking mix recipe
+### ミックスレシピの微調整
 
-To change existing mix recipes (**including** those added by ModTweaker), you can use a `MixRecipeManager`:
+既存のミックスレシピ (**を含む** ModTweakerによって追加されたものを含む) を変更するには、 `MixRecipeManager` を使用できます。
 
 ```zenscript
 import mods.tcomplement.highoven.MixRecipeManager;
@@ -144,17 +144,17 @@ import mods.tcomplement.highoven.MixRecipeManager;
 var manager = HighOven.manageMixRecipe(<liquid:steel>);
 ```
 
-As usual, not specifying the input (or providing `null`) result in a wildcard behavior where all input will be accepted.
+いつものように、入力を指定しない(または `null`を指定すると、すべての入力が受け入れられるワイルドカードの動作になります。
 
-Once you have a `MixRecipeManager` representing a particular set of mix recipe, you can prevent certain oxidizer/reducers/purifiers from being added to those recipes, *or* try to add new additives. Removals have priority on additions.
+Once you have a `MixRecipeManager` representing a particular set of mix recipe, you can prevent certain oxidizer/reducers/purifiers from being added to those recipes, *or* try to add new additives. 削除は追加を優先します。
 
 ```zenscript
 manager.removeOxidizer(<minecraft:redstone>);
 manager.addPurifier(<minecraft:dirt>, 25);
 ```
 
-The behavior might be a little surpring at times. When you disable an additive, any additive addition that would allow what you disable will be canceled. For instance, if you add a bunch of items using a single `OreDictEntry`, then try to remove a specific `IItemStack`, it will prevent the entry from being added.
+行動は時々少しsurpring かもしれない。 添加物を無効にすると、無効にする添加物はキャンセルされます。 For instance, if you add a bunch of items using a single `OreDictEntry`, then try to remove a specific `IItemStack`, it will prevent the entry from being added.
 
-This is because iternally, `OreDictEntry` are added as-is and are not converted to individual items. The only way to disable the `ItemStack` you want to forbid is to prevent the whole entry from being registered, otherwise the entry would allow the item.
+これは、反復的に、 `OreDictEntry` がそのまま追加され、個々の項目に変換されないためです。 禁止する `ItemStack` を無効にする唯一の方法は、エントリ全体が登録されないようにすることです。 そうでなければエントリは項目を許可します
 
-If you actually want to do add an oredict entry except some items, you'll have to do it manually by iterating on the `OreDictEntry` content and then removing the specific items (or by not adding them in the first place).
+実際にいくつかの項目を除いて、oredict 項目を追加したい場合。 `OreDictEntry` の内容を繰り返し、特定の項目を削除する(または最初に追加しない)ことで、手動で行う必要があります。

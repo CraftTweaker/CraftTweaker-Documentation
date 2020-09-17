@@ -1,16 +1,16 @@
 # PlayerBonemeal
 
-The PlayerBonemeal Event is fired whenever a player uses bonemeal on a block.
+プレイヤーがブロックでボネミールを使用するたびに、PlayerBonemeal イベントが発生します。
 
-## Event Class
+## イベントクラス
 
 You will need to cast the event in the function header as this class:  
 `crafttweaker.event.PlayerBonemealEvent`  
 You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
 
-## Event interface extensions
+## イベントインターフェースの拡張
 
-PlayerBonemeal Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+PlayerBonemeal Events 以下のインターフェイスを実装し、それらのメソッド/getters/setters/settersも同様に呼び出すことができます。
 
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 - [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
@@ -19,24 +19,24 @@ PlayerBonemeal Events implement the following interfaces and are able to call al
 
 ## ZenGetters
 
-The following information can be retrieved from the event:
+イベントから次の情報を取得できます。
 
-| ZenGetter    | Return Type                                 |
+| ZenGetter    | 戻り値                                         |
 | ------------ | ------------------------------------------- |
-| `canceled`   | boolean                                     |
-| `processed`  | boolean                                     |
+| `キャンセル済み`    | boolean型                                    |
+| `処理されました`    | boolean型                                    |
 | `x`          | int                                         |
 | `y`          | int                                         |
 | `z`          | int                                         |
-| `player`     | [IPlayer](/Vanilla/Players/IPlayer/)        |
-| `world`      | [IWorld](/Vanilla/World/IWorld/)            |
-| `block`      | [IBlock](/Vanilla/Blocks/IBlock/)           |
+| `プレイヤー`      | [IPlayer](/Vanilla/Players/IPlayer/)        |
+| `世界`         | [IWorld](/Vanilla/World/IWorld/)            |
+| `ブロック`       | [IBlock](/Vanilla/Blocks/IBlock/)           |
 | `blockState` | [IBlockState](/Vanilla/Blocks/IBlockState/) |
 | `blockPos`   | [IBlockPos](/Vanilla/World/IBlockPos/)      |
-| `dimension`  | int                                         |
-| `item`       | [IItemStack](/Vanilla/Items/IItemStack/)    |
+| `寸法`         | int                                         |
+| `項目`         | [IItemStack](/Vanilla/Items/IItemStack/)    |
 
 ## ZenMethods
 
-- `event.cancel()` sets the event as cancelled
-- `event.process()` sets the event as processed
+- `event.cancel()` はイベントをキャンセルとして設定します
+- `event.process()` は処理済みとしてイベントを設定します

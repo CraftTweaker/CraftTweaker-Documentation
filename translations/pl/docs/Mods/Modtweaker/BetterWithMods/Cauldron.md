@@ -1,55 +1,55 @@
-# Cauldron
+# Kocioł
 
-## Basic Recipe
+## Podstawowy przepis
 
-* Adds a Unstoked Cauldron Recipe 
+* Dodaje niezdatny przepis na kocioł 
 
 ```zenscript
-mods.betterwithmods.Cauldron.addUnstoked(IIngredient[] inputs, IItemStack[] outputs);
+mods.betterwithmods.Cauldron.addUnstoked(IIngredient[] wejść, IItemStack[] wyjście);
 //Examples
 mods.betterwithmods.Cauldron.addUnstoked([<ore:cobblestone>],[<minecraft:stone>]);
 mods.betterwithmods.Cauldron.addUnstoked([<minecraft:dirt>],[<minecraft:grass>]);
 ```
 
-* Adds a Stoked Cauldron Recipe 
+* Dodaje stokowany przepis na kocioł 
 
 ```zenscript
-mods.betterwithmods.Cauldron.addStoked(IIngredient[] inputs, IItemStack[] outputs);
+mods.betterwithmods.Cauldron.addStoked(IIngredient[] wejść, IItemStack[] wyjście);
 //Examples
 mods.betterwithmods.Cauldron.addStoked([<ore:cobblestone>],[<minecraft:stone>]);
 mods.betterwithmods.Cauldron.addStoked([<minecraft:dirt>],[<minecraft:grass>]);
 ```
 
-## Removal
+## Usuwanie
 
-* Remove a Cauldron recipe based on the output ```mods.betterwithmods.Cauldron.remove(IItemStack[] outputs);```
+* Usuń przepis na kocioł na podstawie wyjścia ```mods.betterwithmods.Cauldron.remove(wyjścia IItemStack[]);```
 
-* Remove all Cauldron recipes ```mods.betterwithmods.Cauldron.removeAll();```
+* Usuń wszystkie przepisy kocioła ```mods.betterwithmods.Cauldron.removeAll();```
 
-## Builder
+## Konstruktor
 
-The Cauldron has a recipe builder that allows more precise control over the recipes. All previous methods are simply short cuts to using the builder.
+Kocioł ma konstruktor receptury, który pozwala na dokładniejszą kontrolę nad przepisami. Wszystkie poprzednie metody są po prostu krótkimi cięciami w używaniu konstruktora.
 
-* To create a new Cauldron builder. `mods.betterwithmods.Cauldron.builder()`
+* Aby utworzyć nowego konstruktora kotła. `mods.betterwithmods.Cauldron.builder()`
 
-* Cauldron methods
+* Metody kociołu
     
-    * Sets up the inputs and outputs of the recipe  
-            buildRecipe(IIngredient[] inputs, IItemStack[] outputs)
+    * Ustawia wejścia i wyjścia przepisu  
+            Budynek (dane wejściowe IItemStack[]
     
-    * Sets the priority of the recipe, the lower the priority the sooner it will be crafted. Default=0.  
-            setPriority(int priority)
+    * Ustawia priorytet przepisu, im niższy priorytet zostanie wytworzony. Domyślnie=0.  
+            setPriority(int Priorytet)
     
-    * Set the Heat requirements of the recipe. Heat is used to check if the recipe can be made in a stoked or unstoked cauldron. Unstoked heat = 1, Stoked heat = 2. You can add custom heat sources, and even custom heat levels using the [Heat Registry](/Mods/Modtweaker/BetterWithMods/HeatRegistry/).  
-            setHeat(int heat)
+    * Ustaw wymagania grzewcze receptury. Ciepło jest używane do sprawdzenia, czy przepis może być wykonany w oszołomionym lub nieoszołamianym kotle. Ciepło niezapakowane = 1, ciepło stokowane = 2. Możesz dodać własne źródła ciepła, a nawet niestandardowe poziomy ciepła za pomocą [Rejestru ciepła](/Mods/Modtweaker/BetterWithMods/HeatRegistry/).  
+            setHeat(ogrzewanie cieczą)
     
-    * Set the recipe to ignore the heat value and craft anyways  
+    * Ustaw przepis, aby mimo to zignorować wartość ciepła i wytwarzania  
             setIgnoreHeat(boolean ignoreHeat)
     
-    * Finalize the recipe and add it to the game  
-            build()
+    * Sfinalizuj przepis i dodaj go do gry  
+            budowa()
 
-### Example builder usage
+### Przykładowe użycie konstruktora
 
 ```zenscript
 mods.betterwithmods.Cauldron.builder()

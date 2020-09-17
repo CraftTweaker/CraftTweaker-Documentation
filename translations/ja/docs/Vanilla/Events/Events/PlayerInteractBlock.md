@@ -1,17 +1,18 @@
 # PlayerInteractBlock
 
-The PlayerInteractBlock Event is fired whenever a player right clicks a block.  
-It can be canceled to prevent any other events from taking place. If the event is canceled, a specific result of success, fail or pass can be provided. By default, the result is pass.
+PlayerInteractBlock イベントは、プレイヤーがブロックを右クリックするたびに発生します。  
+他のイベントの発生を防ぐためにキャンセルすることができます。 イベントがキャンセルされた場合、特定の成功の結果、失敗またはパスを提供できます。 デフォルトでは、結果はパスです。
 
-## Event Class
+## イベントクラス
 
-You will need to cast the event in the function header as this class:  
-`crafttweaker.event.PlayerInteractBlockEvent`  
-You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
+関数ヘッダーのイベントをこのクラスとしてキャストする必要があります:  
+`crafttweaker.event. layerInteractBlockEvent <br /> 
+ <code>`  
+もちろん、 [インポート](/AdvancedFunctions/Import/) 前にクラスをインポートし、その名前を使用することもできます。
 
-## Event interface extensions
+## イベントインターフェースの拡張
 
-PlayerInteractBlock Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+PlayerInteractBlock Eventsは、以下のインターフェイスを実装し、それらのメソッド/getters/setters/settersをすべて呼び出すことができます。
 
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 - [PlayerInteract](/Vanilla/Events/Events/PlayerInteract/)
@@ -19,15 +20,15 @@ PlayerInteractBlock Events implement the following interfaces and are able to ca
 
 ## ZenGetters
 
-The following information can be retrieved from the event:
+イベントから次の情報を取得できます。
 
-| zengetter            | zengetter            | type                                   |
-| -------------------- | -------------------- | -------------------------------------- |
-| `hitvector`          |                      | [ivector3d](/vanilla/world/ivector3d/) |
-| `useblock`           | `useblock`           | string ("allow" / "deny" / "default")  |
-| `useitem`            | `useitem`            | string ("allow" / "deny" / "default")  |
-| `cancellationResult` | `cancellationResult` | string ("success" / "pass" / "fail")   |
+| zengetter           | zengetter           | タイプ                                    |
+| ------------------- | ------------------- | -------------------------------------- |
+| `hitvector`         |                     | [ivector3d](/vanilla/world/ivector3d/) |
+| `useblock`          | `useblock`          | 文字列 ("allow" / "deny" / "default")     |
+| `useitem`           | `useitem`           | 文字列 ("allow" / "deny" / "default")     |
+| `cancelationResult` | `cancelationResult` | 文字列 ("success" / "pass" / "fail")      |
 
 ## ZenMethods
 
-- `event.cancel()` sets the event as cancelled.
+- `event.cancel()` はイベントをキャンセルとして設定します。

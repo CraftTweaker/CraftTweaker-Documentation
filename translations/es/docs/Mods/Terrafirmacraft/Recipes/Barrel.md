@@ -1,19 +1,19 @@
-# Barrel
+# Cañón
 
-## Package
+## Paquete
 ```zenscript
-import mods.terrafirmacraft.Barrel;
+import mods.terrafirmacraft.Barrel;Barril;
 ```
 
-## Addition
+## Adicional
 ```zenscript
 Barrel.addRecipe(String registryName, @Optional IIngredient itemInput, ILiquidStack fluidInput, @Optional IItemStack itemOutput, @Optional ILiquidStack fluidOutput, int hours);
 ```
 
-## Removal
+## Eliminar
 
 ```zenscript
-Barrel.removeRecipe(@Optional IItemStack outputItem, @Optional ILiquidStack outputLiquid)
+Barrel.removeRecipe(@Optional ItemStack outputItem, @Optional ILiquidStack outputLiquid)
 Barrel.removeRecipe(String registryName)
 ```
-- At least one output(liquid or item) must be supplied, for both removing and adding recipes.
+- Se debe suministrar al menos una salida (líquido u objeto) para la eliminación y adición de recetas.

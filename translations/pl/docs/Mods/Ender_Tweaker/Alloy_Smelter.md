@@ -1,17 +1,17 @@
-# Alloy Smelter
+# Stop hutniczy
 
-## Package
+## Pakiet
 
 `import mods.enderio.AlloySmelter;`
 
-## Methods
+## Metody
 
-- **[IItemStack](/Vanilla/Items/IItemStack/) output** The result of the recipe.
-- **[IIngredient](/Vanilla/Variable_Types/IIngredient/)[] input** The ingredients. Must be between 1 and 3 ingredients.
-- **int energyCost** How much FE the recipe uses. Defaults to 5000.
-- **float xp** The xp is granted from this recipe. May not be negative.
+- **[IItemStack](/Vanilla/Items/IItemStack/) wyjście** wynik przepisu.
+- **[Składnik](/Vanilla/Variable_Types/IIngredient/)[] wejścia** Składniki. Musi zawierać od 1 do 3 składników.
+- **int energyCost** Ile FE używa przepisu. Domyślnie 5000.
+- **float xp** xp jest przyznany z tego przepisu. Nie może być negatywny.
 
-## Addition
+## Dodanie
 
 ```zenscript
 mods.enderio.AlloySmelter.addRecipe(IItemStack output, IIngredient[] input, @Optional int energyCost, @Optional float xp);
@@ -19,7 +19,7 @@ mods.enderio.AlloySmelter.addRecipe(IItemStack output, IIngredient[] input, @Opt
 mods.enderio.AlloySmelter.addRecipe(<minecraft:iron_ingot>, [<minecraft:sand>, <minecraft:gravel>, <minecraft:brick>]);
 ```
 
-## Removal
+## Usuwanie
 
 ```zenscript
 mods.enderio.AlloySmelter.removeRecipe(IItemStack output);

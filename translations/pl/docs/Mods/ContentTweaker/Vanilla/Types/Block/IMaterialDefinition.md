@@ -1,36 +1,36 @@
-# IMaterialDefinition
+# Definicja IMateriałowa
 
-An IMaterialDefinition object represents a material definition in the game. A Material Definition is needed if you want to create a new block.
+Obiekt IMaterialDefinition reprezentuje materialną definicję w grze. Jeśli chcesz utworzyć nowy blok, potrzebna jest definicja materiału.
 
-# Importing the package
+# Importowanie pakietu
 
-It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
-`import mods.contenttweaker.BlockMaterial;`
+Może być wymagane zaimportowanie pakietu, jeśli napotkasz jakieś problemy, więc lepiej być bezpiecznym niż przepraszamy i dodać import.  
+`zaimportuj mods.contenttweaker.BlockMaterial;`
 
-## Calling an IMaterialDefinition object
+## Wywołanie obiektu IMaterialDefinition
 
-You can get such an object using the [Block Material Bracket Handler](/Mods/ContentTweaker/Vanilla/Brackets/Bracket_Block_Material/):  
+Możesz uzyskać taki obiekt za pomocą [Handler nawiasów materiałowych](/Mods/ContentTweaker/Vanilla/Brackets/Bracket_Block_Material/):  
 `<blockmaterial:wood>`
 
-## ZenGetters/ZenMethods without parameters
+## ZenGetters/ZenMethods bez parametrów
 
-| ZenGetter       | ZenMethod           | Return Type                                                            |
-| --------------- | ------------------- | ---------------------------------------------------------------------- |
-| blocksLight     | blocksLight()       | bool                                                                   |
-| blocksMovement  | blocksMovement()    | bool                                                                   |
-| canBurn         | getCanBurn()        | bool                                                                   |
-| mobilityFlag    | getMobilityFlag()   | [PushReaction](/Mods/ContentTweaker/Vanilla/Types/Block/PushReaction/) |
-| liquid          | isLiquid()          | bool                                                                   |
-| opaque          | isOpaque()          | bool                                                                   |
-| replaceable     | isReplaceable()     | bool                                                                   |
-| solid           | isSolid()           | bool                                                                   |
-| toolNotRequired | isToolNotRequired() | bool                                                                   |
+| ZenGetter              | Metoda ZenMethod    | Typ zwrotu                                                               |
+| ---------------------- | ------------------- | ------------------------------------------------------------------------ |
+| jasny blok             | blocksLight()       | bool                                                                     |
+| blocksMovement         | blocksMovement()    | bool                                                                     |
+| płonąca                | getCanBurn()        | bool                                                                     |
+| mobilityFlag           | getMobilityFlag()   | [Reakcja pchana](/Mods/ContentTweaker/Vanilla/Types/Block/PushReaction/) |
+| ciecz                  | isLiquid()          | bool                                                                     |
+| nieprzezroczysty       | izOpaque()          | bool                                                                     |
+| wymienne               | można wymienić()    | bool                                                                     |
+| solid                  | isSolid()           | bool                                                                     |
+| Narzędzie Nie Wymagane | isToolNotRequired() | bool                                                                     |
 
-## Compare two BlockMaterials
+## Porównaj dwa BlockMaterials
 
-You can use the `==` operator to see if two MaterialDefinitions are equal
+Możesz użyć operatora `==` , aby sprawdzić, czy dwie definicje materiałów są takie same
 
 ```zenscript
-if(materialA == materialB)
-    print("success!");
+if(materiałA == materiałB)
+    druk ("sukces!");
 ```

@@ -1,27 +1,27 @@
-# PlayerChangedDimension
+# Dimensión del jugador cambiada
 
-The PlayerChangedDimension Event is fired whenever a [player's](/Vanilla/Players/IPlayer/) [dimension/world](/Vanilla/World/IWorld/) changes, for example upon entering/leaving the nether.
+El evento PlayerChangedDimension es disparado cada vez que el [jugador](/Vanilla/Players/IPlayer/) [dimensión/mundo](/Vanilla/World/IWorld/) cambia, por ejemplo al entrar/salir del ninguno de los dos.
 
-## Event Class
+## Clase de evento
 
-You will need to cast the event in the function header as this class:  
-`crafttweaker.event.PlayerChangedDimensionEvent`  
-You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
+Necesitarás lanzar el evento en la cabecera de la función como esta clase:  
+`crafttweaker.event. layerChangedDimensionEvent`  
+Puede, por supuesto, también [importar](/AdvancedFunctions/Import/) la clase antes y utilizar ese nombre entonces.
 
-## Event interface extensions
+## Extensiones de la interfaz de eventos
 
-PlayerChandedDimension Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+Los Eventos PlayerChandedDimension implementan las siguientes interfaces y son capaces de llamar a todos sus métodos/getters/setters también:
 
-- [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
+- [Evento IJugador](/Vanilla/Events/Events/IPlayerEvent/)
 
 ## ZenGetters
 
-The following information can be retrieved from the event:
+La siguiente información puede ser recuperada del evento:
 
-| ZenGetter   | Return Type                          |
+| ZenGetter   | Tipo de devolución                   |
 | ----------- | ------------------------------------ |
-| `player`    | [IPlayer](/Vanilla/Players/IPlayer/) |
-| `from`      | int                                  |
-| `fromWorld` | [IWorld](/Vanilla/World/IWorld/)     |
-| `to`        | int                                  |
-| `toWorld`   | [IWorld](/Vanilla/World/IWorld/)     |
+| `jugador`   | [IPlayer](/Vanilla/Players/IPlayer/) |
+| `de`        | int                                  |
+| `del mundo` | [IWorld](/Vanilla/World/IWorld/)     |
+| `a`         | int                                  |
+| `al mundo`  | [IWorld](/Vanilla/World/IWorld/)     |

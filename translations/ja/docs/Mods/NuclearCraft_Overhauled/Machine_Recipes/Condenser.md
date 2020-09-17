@@ -1,17 +1,18 @@
-# Condenser
-**Note: Partially Broken**
+# 凝縮器
+**注意：部分的に壊れている**
 
-## Importing the Package
-`mods.nuclearcraft.Condenser`
+## パッケージのインポート
+`mods.nuclearcraft.Condenser凝縮器`
 
-## Adding Recipes
+## レシピを追加中
 ```zenscript
-mods.nuclearcraft.Condenser.addRecipe(ILiquidStack fluidInput, ILiquidStack fluidOutput, @Optional double coolingRequired, @Optional int condensingTemperature);
+mods.nuclearcraft.Supercoolermods.nuclearcraft.Condenser.addRecipe(ILiquidStack fluidInput, ILiquidStack fluidOutput, @Optional double coolingRequired, @Optional int condensingTemperature);
 ```
 
-## Removing Recipes
+## レシピを削除
 ```zenscript
-mods.nuclearcraft.Condenser.removeRecipeWithInput(ILiquidStack fluidInput);
+mods.nuclearcraft.SupercoolerCondenser.removeRecipeWithInput(ILiquidStack fluidInput);
+mods.nuclearcraft.mods.nuclearcraft.Condenser.removeRecipeWithInput(ILiquidStack fluidInput);
 mods.nuclearcraft.Condenser.removeRecipeWithOutput(ILiquidStack fluidOutput);
-mods.nuclearcraft.Condenser.removeAllRecipes();
+mods.nuclearcraft.Condenser.removeAllRecipes();Condenser.removeAllRecipes();
 ```

@@ -1,63 +1,63 @@
 # JAOPCA
 
-[JAOPCA](https://minecraft.curseforge.com/projects/jaopca) (Just A Ore Processing Compatibility Attempt) is a mod that aims to add ore processing compatibilty to many mods.
+[JAOPCA](https://minecraft.curseforge.com/projects/jaopca) (Just A Processing Compatibility attempt) は、多くのModに鉱石処理の互換性を追加することを目的とするModです。
 
 ## パッケージのインポート
 
-If you want to shorten your method calls, you can import the package.  
-You can do so using
+メソッド呼び出しを短縮したい場合は、パッケージをインポートできます。  
+使用することで可能です。
 
 ```zenscript
 import mods.jaopca.JAOPCA;
 ```
 
-## Methods
+## メソッド
 
-This package is your entry point for JAOPCA. It provides a means of checking for and getting [OreEntry](/Mods/JAOPCA/OreEntry/) objects. Check the respective page for further information, but in short they are material names (e.g. "Gold") that can then have entries, like chunks, dusts and all.
+このパッケージはJAOPCAのエントリーポイントです。 これは [OreEntry](/Mods/JAOPCA/OreEntry/) オブジェクトをチェックして取得する手段を提供します。 詳細については、それぞれのページを確認しますが、要するにそれらは材料名です(e. をクリックします。「Gold」) をクリックすると、チャンク、ほこりなどのエントリが表示されます。
 
-- Entry: e.g. "nugget", "dust", "molten", ... (check [here](/Mods/JAOPCA/RegisteredEntries/) for a list of them all)
-- [OreEntry](/Mods/JAOPCA/OreEntry/): e.g. "Diamond", "Coal", "Redstone", ...
-- OreType: e.g. "INGOT", "GEM", "DUST"
+- エントリ: 例: "nugget", "dust", "molten", ... (すべてのリストは [ここ](/Mods/JAOPCA/RegisteredEntries/) を確認してください)
+- [鉱石エントリ](/Mods/JAOPCA/OreEntry/): 例: "ダイヤモンド", "石炭", "レッドストーン", ...
+- OreType: 例: "INGOT", "GEM", "DUST"
 
-### Check if an entry exists
+### エントリが存在するかどうかを確認します
 
-Returns `true` if an entry with the given name exists
+指定された名前を持つエントリが存在する場合、 `true` を返します。
 
 ```zenscript
 //mods.jaopca.JAOPCA.containsEntry(entryName);
 mods.jaopca.JAOPCA.containsEntry("nugget");
 ```
 
-### Get an OreEntry
+### OreEntry を取得
 
-Returns the given [OreEntry](/Mods/JAOPCA/OreEntry/) for the given name, or `null` if it does not exist. *Careful: Most materials are Capitalized, and yes, casing matters!*
+指定された名前に対して与えられた [OreEntry](/Mods/JAOPCA/OreEntry/) を返し、存在しない場合は `null` を返します。 *注意深い:ほとんどの材料は資本化されており、そうです、ケーシングは重要です!*
 
 ```zenscript
 //mods.jaopca.JAOPCA.getOre(oreName);
 mods.jaopca.JAOPCA.getOre("Coal");
 ```
 
-### Get all OreEntries for an entry
+### エントリのすべての鉱石エントリを取得
 
-Returns a list of all [OreEntry](/Mods/JAOPCA/OreEntry/) objects that have the given entry registered.
+指定したエントリが登録されているすべての [OreEntry](/Mods/JAOPCA/OreEntry/) オブジェクトのリストを返します。
 
 ```zenscript
 //mods.jaopca.JAOPCA.getOresForEntry(entryName);
 mods.jaopca.JAOPCA.getOresForEntry("nugget");
 ```
 
-### Get all OreEntries for an entry
+### エントリのすべての鉱石エントリを取得
 
-Returns a list of all [OreEntry](/Mods/JAOPCA/OreEntry/) objects that are of the given oreType.
+指定された oreType のすべての [OreEntry](/Mods/JAOPCA/OreEntry/) オブジェクトのリストを返します。
 
 ```zenscript
 //mods.jaopca.JAOPCA.getOresForType(oreType);
 mods.jaopca.JAOPCA.getOresForType("GEM");
 ```
 
-### Get all registered OreEntries
+### 登録済みのOreEntry を全て取得
 
-Returns a list of all registered [OreEntry](/Mods/JAOPCA/OreEntry/) objects.
+登録されたすべての [OreEntry](/Mods/JAOPCA/OreEntry/) オブジェクトのリストを返します。
 
 ```zenscript
 mods.jaopca.JAOPCA.getAllOres();

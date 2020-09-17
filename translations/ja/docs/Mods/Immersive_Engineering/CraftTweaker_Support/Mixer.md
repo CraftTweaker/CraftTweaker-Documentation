@@ -1,39 +1,39 @@
 # Mixer
 
-The Mixer package can be used to add/remove recipes to/from the Immersive Engineering Mixer.
+Mixerパッケージは、Immersive Engineering Mixerにレシピを追加/削除するために使用できます。
 
-## Calling The Package
+## パッケージの呼び出し
 
-You can call the Mixer package using `mods.immersiveengineering.Mixer`.
+`mods.immysiveengineering.Mixer` を使用して Mixer パッケージを呼び出すことができます。
 
-## Add Recipe
+## レシピを追加
 
-| Required | Type         | Data Type                                                    |
-| -------- | ------------ | ------------------------------------------------------------ |
-| Required | Fluid Output | [Fluidstack](/Vanilla/Liquids/ILiquidStack/)                 |
-| Required | Fluid Input  | [Fluidstack](/Vanilla/Liquids/ILiquidStack/)                 |
-| Required | Item Inputs  | [IIngredient](/Vanilla/Variable_Types/IIngredient/) as Array |
-| Required | Energy       | Integer                                                      |
+| 必須 | タイプ         | データタイプ                                                       |
+| -- | ----------- | ------------------------------------------------------------ |
+| 必須 | 流体出力        | [Fluidstack](/Vanilla/Liquids/ILiquidStack/)                 |
+| 必須 | Fluid Input | [Fluidstack](/Vanilla/Liquids/ILiquidStack/)                 |
+| 必須 | Item Inputs | [IIngredient](/Vanilla/Variable_Types/IIngredient/) as Array |
+| 必須 | エネルギー       | 整数                                                           |
 
-### Example
+### 例
 
 ```zenscript
-//Example:
-mods.immersiveengineering.Mixer.addRecipe(ILiquidStack output, ILiquidStack fluidInput, IIngredient[] itemInputs, int energy);
+//例:
+mods.immysiveengineering.Mixer.addRecipe(ILiquidStack 出力, ILiquidStack fluidInput, IInput, int energy);
 
-mods.immersiveengineering.Mixer.addRecipe(<liquid:lava>, <liquid:water>, [<ore:logWood>, <minecraft:dirt>], 2048);
+mods.immursiveengineering.Mixer.addRecipe(<liquid:lava>, <liquid:water>, [<ore:logWood>, <minecraft:dirt>], 2048);
 ```
 
-## Remove Recipe
+## レシピを削除
 
-| Type   | Data Type                                    |
-| ------ | -------------------------------------------- |
-| Output | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
+| タイプ | データタイプ                                       |
+| --- | -------------------------------------------- |
+| 出力  | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
 
-### Example
+### 例
 
 ```zenscript
-//Example:
+//例:
 mods.immersiveengineering.Mixer.removeRecipe(ILiquidStack output);
 
 mods.immersiveengineering.Mixer.removeRecipe(<liquid:lava>);

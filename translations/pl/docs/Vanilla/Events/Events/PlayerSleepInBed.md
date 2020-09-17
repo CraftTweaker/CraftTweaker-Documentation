@@ -1,27 +1,27 @@
-# PlayerSleepInBed
+# SleepInBed Gracza
 
-The PlayerSleepInBed Event is fired whenever a player sleeps.
+Wydarzenie PlayerSleepInBed jest uruchamiane za każdym razem, gdy gracz śnie.
 
-## Event Class
+## Klasa wydarzenia
 
-You will need to cast the event in the function header as this class:  
-`crafttweaker.event.PlayerSleepInBedEvent`  
-You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
+Musisz aktywować wydarzenie w nagłówku funkcji jako klasa:  
+`crafttweaker.event. layerSleepInBedEvent`  
+Oczywiście możesz również [zaimportować](/AdvancedFunctions/Import/) klasę przed i wtedy użyć tej nazwy.
 
-## Event interface extensions
+## Rozszerzenia interfejsu zdarzenia
 
-PlayerSleepInBed Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+Zdarzenia PlayerSleepInBed zaimplementują następujące interfejsy i są w stanie wywołać wszystkie swoje metody/pobierające/ustawiające:
 
-- [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
-- [IEventPositionable](/Vanilla/Events/Events/IEventPositionable/)
+- [Wydarzenie IPlayer](/Vanilla/Events/Events/IPlayerEvent/)
+- [Pozycjonowalne](/Vanilla/Events/Events/IEventPositionable/)
 
 ## ZenGetters
 
-The following information can be retrieved from the event:
+Z wydarzenia można uzyskać następujące informacje:
 
-| ZenGetter | Return Type                          |
+| ZenGetter | Typ zwrotu                           |
 | --------- | ------------------------------------ |
-| `x`       | int                                  |
-| `y`       | int                                  |
-| `z`       | int                                  |
-| `player`  | [IPlayer](/Vanilla/Players/IPlayer/) |
+| `x`       | odcień                               |
+| `y`       | odcień                               |
+| `z`       | odcień                               |
+| `gracz`   | [IPlayer](/Vanilla/Players/IPlayer/) |

@@ -1,16 +1,17 @@
-# Electrolyzer
+# エレクトロライザー
 
-## Importing the Package
-`mods.nuclearcraft.Electrolyzer`
+## パッケージのインポート
+`mods.nuclearcraft.Electrolyzerエレクトロライザー`
 
-## Adding Recipes
+## レシピを追加中
 ```zenscript
-mods.nuclearcraft.Electrolyser.addRecipe(ILiquidStack fluidInput, ILiquidStack fluidOutput1, ILiquidStack fluidOutput2, ILiquidStack fluidOutput3, ILiquidStack fluidOutput4, @Optional double timeMultiplier, @Optional double powerMultiplier, @Optional double processRadiation);
+mods.nuclearcraft.Supercoolermods.nuclearcraft.Electrolyser.addRecipe(ILiquidStack fluidInput, ILiquidStack fluidOutput1, ILiquidStack fluidOutput2, ILiquidStack fluidOutput3, ILiquidStack fluidOutput4, @Optional double timeMultiplier, @Optional double powerMultiplier, @Optional double processRadiation);
 ```
 
-## Removing Recipes
+## レシピを削除
 ```zenscript
-mods.nuclearcraft.Electrolyser.removeRecipeWithInput(ILiquidStack fluidInput);
+mods.nuclearcraft.Supercoolermods.nuclearcraft.Electrolyser.removeRecipeWithInput(ILiquidStack fluidInput);
 mods.nuclearcraft.Electrolyser.removeRecipeWithOutput(ILiquidStack fluidOutput1, ILiquidStack fluidOutput2, ILiquidStack fluidOutput3, ILiquidStack fluidOutput4);
-mods.nuclearcraft.Electrolyser.removeAllRecipes();
+mods.nuclearcraft.Electrolyser.removeAllRecipes();Electrolyser.removeRecipeWithOutput(ILiquidStack fluidOutput1, ILiquidStack fluidOutput2, ILiquidStack fluidOutput3, ILiquidStack fluidOutput4);
+mods.nut.Electrolyser.removeAllRecipes();
 ```

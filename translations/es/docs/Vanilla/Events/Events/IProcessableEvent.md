@@ -1,15 +1,15 @@
 # IProcessableEvent
 
-This interface is extended by all events that can be processed.  
-These events are to be set as processed after everything they are made for has been completed and other event handlers should not change the event any more.  
-Bear in mind that they still can!
+Esta interfaz es extendida por todos los eventos que pueden ser procesados.  
+Estos eventos se establecerán como procesados después de que todo lo que están hechos para que hayan sido completados y otros manejadores de eventos ya no deberían cambiar el evento.  
+¡Ten en cuenta que todavía pueden!
 
-## Importing the class
+## Importar la clase
 
-It might be required to [import](/AdvancedFunctions/Import/) the class to avoid errors.  
-`import crafttweaker.event.IPlayerEvent;`
+Podría ser necesario [importar](/AdvancedFunctions/Import/) la clase para evitar errores.  
+`importar crafttweaker.event.IPlayerEvent;`
 
-## What can be done with these
+## ¿Qué se puede hacer con estos
 
-- `event.process();` method, returns void (nothing)
-- `event.processed;` getter, returns a bool
+- `event.process();` método, devuelve vacío (nada)
+- `event.processed;` getter, devuelve un bool

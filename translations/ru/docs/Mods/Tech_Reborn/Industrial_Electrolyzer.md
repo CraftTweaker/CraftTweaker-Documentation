@@ -1,16 +1,16 @@
-# Industrial Electrolyzer
+# Индустриальный электролизер
 
-## Importing the Package
-`mods.techreborn.industrialElectrolyzer`
+## Импортирование пакета
+`Электролизер mods.techreborn.industrialElectrolyzer`
 
-## Adding Recipes
+## Добавление рецептов
 ```zenscript
-mods.techreborn.industrialElectrolyzer.addRecipe(IItemStack output1, IItemStack output2, IItemStack output3, IItemStack output4, IIngredient cells, IIngredient input2, int ticktime, int euTick);
+mods.techreborn.industrialElectrolyzer.addRecipe(IItemStack output1, IItemStack output3, IItemStack output4, IIngredient клеток, IIngredient input2, int ticktime, int euTick);
 ```
 
-## Removing Recipes
+## Удаление рецептов
 ```zenscript
 mods.techreborn.industrialElectrolyzer.removeInputRecipe(IIngredient ingredient);
-mods.techreborn.industrialElectrolyzer.removeRecipe(IItemStack output);
+mods.techreborn.industrialElectrolyzer.removeRecipe(выход IItemStack);
 mods.techreborn.industrialElectrolyzer.removeAll();
 ```

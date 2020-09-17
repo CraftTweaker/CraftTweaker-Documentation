@@ -1,44 +1,44 @@
 # Mekanism
 
-Mekanism CraftTweaker support has been integrated directly into Mekanism now ([link](https://github.com/aidancbrady/Mekanism/tree/master/src/main/java/mekanism/common/integration/crafttweaker))
+Mekanism CraftTweakerサポートがMekanismに直接統合されました ([link](https://github.com/aidancbrady/Mekanism/tree/master/src/main/java/mekanism/common/integration/crafttweaker))
 
-Mekanism adds bracket-handler support to define **gas** -- a special material state differing from forge [**liquids**](/Vanilla/Liquids/ILiquidStack/)
+Mekanismは、 **ガス** を定義するためにブラケットハンドラのサポートを追加しました。これは、鍛造と異なる特殊な材料状態です。 [**液体**](/Vanilla/Liquids/ILiquidStack/)
 
 ```zenscript
 <gas:oxygen>
 <gas:water> *
 ```
 
-*Noting that `<gas:water>` is different from `<liquid:water>`*
+*`<gas:water>` が `<liquid:water>` と異なることに注意してください*
 
-As of Mekanism 9.7.0 it is now possible to view all registered gases (including those from other mods) via the command `/ct gases`
+Mekanism 9.7.0 以降、コマンド `/ct gases` を介して(他のmodからのものを含む)すべての登録されたガスを見ることができるようになりました。
 
-It is also possible as of Mekanism 9.7.1 to get a gas stack/bracket handler by string. Use `mods.mekanism.MekanismHelper.getGas(string);`
+Mekanism 9.7.1 では、ガスタック/ブラケットハンドラを文字列で取得することも可能です。 Use `mods.mekanism.MekanismHelper.getGas(string);`
 
-## Example
+## 例
 
 ```zenscript
 import mod.mekanism.gas.IGasStack;
 
-var oxygen = <gas:oxygen>.withAmount(500) as IGasStack;
+var oxide = <gas:oxygen>.withAmount(500) as IGasStack;
 var oxygen2 = <gas:oxygen> * 500;
 ```
 
 ## ZenGetters
 
-Like LiquidStacks, IGasStacks also support some special ZenGetters.  
-You call the ZenGetters using `gas.Getter` (E.g. `<gas:water>.name`)
+LiquidStacksと同様、IGasStacksはいくつかの特別なZenGettersもサポートしています。  
+`gas.Getter` (例: `<gas:water>.name` ) を使用してZenGettersを呼び出します。
 
-| ZenGetter   | 説明                                      | Return Type    |
-| ----------- | --------------------------------------- | -------------- |
-| definition  | Returns the gas' definition             | IGasDefinition |
-| NAME        | Returns the gas' name                   | string         |
-| displayName | Returns the gas' displayName            | string         |
-| amount      | Returns the gas' amount in millibuckets | int            |
+| ZenGetter   | 説明                      | Return Type    |
+| ----------- | ----------------------- | -------------- |
+| 定義          | ガスの定義を返します              | IGasDefinition |
+| 名前          | ガスの名前を返します。             | 文字列            |
+| displayName | gas' displayName を返します。 | 文字列            |
+| 金額          | ガスの量をミリバケット単位で返します      | int            |
 
-## Setting the Object's Amount
+## オブジェクトの金額の設定
 
-You can set the Object's amount (gas volume in Millibuckets) in two ways, which both do exactly the same:
+オブジェクトの量(Millibucketsではガス量)を2つの方法で設定することができます。どちらもまったく同じです。
 
 ```zenscript
 var gas_amount_multiply = <gas:water> * 500;
@@ -47,15 +47,15 @@ var gas_amount_zenMethod = <gas:water>.withAmount(500);
 
 ## IGasDefinition
 
-An IGasDefinition object contains information on a gas.  
-You can get such an object using `gasStack.definition` (check the table above)
+IGasDefinition オブジェクトにはガスに関する情報が含まれています。  
+このようなオブジェクトは `gasStack.definition` を使用して取得できます(上の表を確認してください)
 
-| ZenGetter   | Description                            | Return Type |
-| ----------- | -------------------------------------- | ----------- |
-| NAME        | Returns the referred gas' name         | string      |
-| displayName | Returns the referred gas' display name | string      |
+| ZenGetter   | 説明                | 戻り値 |
+| ----------- | ----------------- | --- |
+| 名前          | 参照されたガスの名前を返します。  | 文字列 |
+| displayName | 参照されたガスの表示名を返します。 | 文字列 |
 
-You can multiply a gasDefinition to return a new IGasStack with the given amount in millibuckets:
+gasDefinition に乗算すると、与えられた量の IGasStack をミリバケットで返すことができます。
 
 ```zenscript
 var gas_definition = <gas:water>.definition;

@@ -1,22 +1,22 @@
-# Map
+# Mapa
 
-The Map Package allows you to set a waypoint using BASE's waypoint event handler.
+Pakiet mapy pozwala ustawić punkt drogi za pomocą obsługi zdarzeń BASE.
 
-## Importing the package
+## Importowanie pakietu
 
-You can import the package so that you don't have to retype it everytime.
+Możesz zaimportować pakiet, aby nie musiał go ponownie wpisywać za każdym razem.
 
-    import mods.contenttweaker.Map;
+    importuj mods.contenttweaker.Map;
     
 
-## Adding Waypoints
+## Dodawanie punktów drogi
 
-This is the only method exposed by the Map package and it allows you to set a waypoint at the given location.  
-It is a void method with the parameters:
+Jest to jedyna metoda eksponowana przez pakiet mapy i pozwala na ustawienie punktu nawigacyjnego w danej lokalizacji.  
+Jest to metoda pusta z parametrami:
 
-- string name
+- nazwa ciągu
 - [IWorld](/Mods/ContentTweaker/Vanilla/Types/World/IWorld/)
 - [IBlockPos](/Mods/ContentTweaker/Vanilla/Types/Block/IBlockPos/)
 - [CTColor](/Mods/ContentTweaker/Vanilla/Types/Color/Color/)
 
-    Map.setWaypoint(String name, IWorld world, IBlockPos pos, CTColor color)
+    Map.setWaypoint(Nazwa ciągu, świat świata, IBlockPos pos, kolor CTColor)

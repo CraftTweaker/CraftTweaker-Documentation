@@ -1,17 +1,17 @@
-# Chemical Combiner
+# Химический комбинатор
 
-# Package
+# Пакет
 ```zenscript
-mods.alchemistry.Combiner
+mods.alchemistry.Комбинер
 ```
 
-## Methods
-- **[IItemStack](/Vanilla/Items/IItemStack/) output** - The output of the recipe.
+## Методы
+- **[IItemStack](/Vanilla/Items/IItemStack/) output** - вывод рецепта.
 
-- **[IItemStack](/Vanilla/Items/IItemStack/)[] input** - The inputs of the recipe.
+- **[IItemStack](/Vanilla/Items/IItemStack/)[] ввода** - Ввод рецепта.
 
 
-## Addition
+## Сложение
 ```zenscript
 mods.alchemistry.Combiner.addRecipe(IItemStack output, IItemstack[] input);
 mods.alchemistry.Combiner.addRecipe(<minecraft:redstone>,
@@ -19,7 +19,7 @@ mods.alchemistry.Combiner.addRecipe(<minecraft:redstone>,
      <alchemistry:element:5>]);
 ```
 
-## Removal
+## Удаление
 ```zenscript
 mods.alchemistry.Combiner.removeRecipe(IItemStack output);
 mods.alchemistry.Combiner.removeRecipe(<minecraft:gold_ingot>);
@@ -28,14 +28,14 @@ mods.alchemistry.Combiner.removeAllRecipes();
 ```
 
 
-# Game Stages Integration
+# Интеграция с игровыми стадиями
 
-## New Recipes
+## Новые Рецепты
 ```zenscript
 mods.alchemistry.Combiner.addStagedRecipe(IItemStack output, IItemstack[] input, String stage);
 ```
 
-## Existing Recipe
+## Существующий рецепт
 
 ```zenscript
 mods.alchemistry.Combiner.setAsStaged(IItemStack output, String stage);

@@ -4,11 +4,11 @@
 
 ## Вызов
 
-You call the loader Preprocessor by adding `#loader loaderName` to your script file with `loaderName` being the name of the loader you want to assign the script to.  
-Example: `#loader contenttweaker`
+Вы вызываете препроцессор загрузчика, добавляя `#loader loaderName` в ваш скрипт-файл с `loaderName` как имя загрузчика, к которому вы хотите назначить скрипт.  
+Пример: `#loader contenttweaker`
 
 ## Что он делает
 
-Scripts with the loader Preprocessor will only be loaded by the loader specified.  
-In the example above, crafttweaker's loader won't touch the file, instead the loader called "contentTweaker" will execute that script.  
-If you don't specify that preprocessor, it will default to being "crafttweaker".
+Скрипты с препроцессором загрузчика будут загружены только установленным загрузчиком.  
+В приведенном выше примере загрузчик crafttweaker не коснется файла, вместо этого загрузитель с именем "contentTweaker" будет выполнять этот скрипт.  
+Если вы не указали этот препроцессор, он по умолчанию будет "crafttweaker".

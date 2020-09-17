@@ -1,21 +1,21 @@
-# Alchemy Array
+# Массив алхимии
 
-## Package
+## Пакет
 
 `mods.bloodmagic.AlchemyArray`
 
-## Addition
+## Сложение
 
 ```zenscript
 //mods.bloodmagic.AlchemyArray.addRecipe(IItemStack output, IItemStack input, IItemStack catalyst, @Optional string textureLocation);
-mods.bloodmagic.AlchemyArray.addRecipe(<minecraft:diamond>, <minecraft:stick>, <minecraft:grass>, "bloodmagic:textures/models/AlchemyArrays/LightSigil.png");
-mods.bloodmagic.AlchemyArray.addRecipe(<minecraft:diamond>, <minecraft:stick>, <minecraft:grass>);
-// creates an alchemy array recipe with the output of diamond. the first item placed into the array is the stick (the input), followed by the grass (the catalyst)
+mods.bloodmagic.AlchemyArray. ddRecipe(<minecraft:diamond>, <minecraft:stick>, <minecraft:grass>, "bloodmagic:textures/models/AlchemyArrays/LightSigil.png");
+mods.bloodmagic. lchemyArray.addRecipe(<minecraft:diamond>, <minecraft:stick>, <minecraft:grass>);
+// создает рецепт алхимии массива с выходом алмаза. первым пунктом, помещенным в массив, является палка (входная), за которой следует трава (катализатор)
 ```
 
-## Removal
+## Удаление
 
 ```zenscript
-//mods.bloodmagic.AlchemyArray.removeRecipe(IItemStack input, IItemStack catalyst);
+//mods.bloodmagic.AlchemyArray.removeRecipe(IItemStack, катализатор IItemStack);
 mods.bloodmagic.AlchemyArray.removeRecipe(<minecraft:redstone>, <bloodmagic:slate:3>);
 ```

@@ -1,22 +1,22 @@
-# Crusher
+# クラッシャー
 
-The Crusher package can be used to add/remove recipes to/from the Immersive Engineering Crusher.
+クラッシャーパッケージは、没入型エンジニアリングクラッシャーにレシピを追加/削除するために使用できます。
 
-## Calling The Package
+## パッケージの呼び出し
 
-You can call the Crusher package using `mods.immersiveengineering.Crusher`.
+`mods.immysiveengineering.Crusher` を使ってクラッシャーパッケージを呼び出すことができます。
 
-## Add Recipe
+## レシピを追加
 
-| Required | Type             | Data Type                                           |
-| -------- | ---------------- | --------------------------------------------------- |
-| Required | Output           | [IItemStack](/Vanilla/Items/IItemStack/)            |
-| Required | Input            | [IIngredient](/Vanilla/Variable_Types/IIngredient/) |
-| Required | Energy           | int                                                 |
-| Optional | Secondary Output | [IItemStack](/Vanilla/Items/IItemStack/)            |
-| Optional | Secondary Chance | double                                              |
+| 必須   | タイプ     | データタイプ                                              |
+| ---- | ------- | --------------------------------------------------- |
+| 必須   | 出力      | [IItemStack](/Vanilla/Items/IItemStack/)            |
+| 必須   | Input   | [IIngredient](/Vanilla/Variable_Types/IIngredient/) |
+| 必須   | エネルギー   | int                                                 |
+| 省略可能 | セカンダリ出力 | [IItemStack](/Vanilla/Items/IItemStack/)            |
+| 省略可能 | 二次チャンス  | double                                              |
 
-### Example
+### 例
 
 ```zenscript
 //Example:
@@ -27,31 +27,31 @@ mods.immersiveengineering.Crusher.addRecipe(<minecraft:diamond>, <ore:logWood>, 
 mods.immersiveengineering.Crusher.addRecipe(<minecraft:diamond>, <ore:logWood>, 2048, <minecraft:dirt>, 0.5);
 ```
 
-## Remove Recipe by Output
+## 出力によるレシピの削除
 
-| Type   | Data Type                                |
-| ------ | ---------------------------------------- |
-| Output | [IItemstack](/Vanilla/Items/IItemStack/) |
+| タイプ | データタイプ                                   |
+| --- | ---------------------------------------- |
+| 出力  | [IItemstack](/Vanilla/Items/IItemStack/) |
 
-### Example
+### 例
 
 ```zenscript
-//Example:
+//例:
 mods.immersiveengineering.Crusher.removeRecipe(IItemstack output);
 
 mods.immersiveengineering.Crusher.removeRecipe(<minecraft:diamond>);
 ```
 
-## Remove Recipe By Input
+## 入力によるレシピの削除
 
-| Type  | Data Type                                |
+| タイプ   | データタイプ                                   |
 | ----- | ---------------------------------------- |
 | Input | [IItemstack](/Vanilla/Items/IItemStack/) |
 
-### Example
+### 例
 
 ```zenscript
-//Example:
+//例:
 mods.immersiveengineering.Crusher.removeRecipesForInput(IItemstack input);
 
 mods.immersiveengineering.Crusher.removeRecipesForInput(<minecraft:diamond>);

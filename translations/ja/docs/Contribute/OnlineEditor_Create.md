@@ -1,84 +1,84 @@
-# Create Files using GitHub's online editor
+# GitHub のオンライン エディタを使用してファイルを作成
 
-## Requirements
+## 要件
 
-You will need to have created a GitHub account and [forked the wiki to your account](/Contribute/SetupGithub).
+GitHubアカウントを作成し、 [アカウントにWikiをフォーク](/Contribute/SetupGithub)する必要があります。
 
-## Introduction
+## 導入
 
-GitHub's online editor allows you to change and create files using nothing but your browser.  
-It may not be as versatile as [using a local copy](/Contribute/LocalClone/CreateCommit/) but you don't need to worry about [setting up git](/Contribute/LocalClone/InstallingGit/) and all.
+GitHubのオンラインエディタでは、ブラウザ以外を使用してファイルを変更して作成することができます。  
+ローカルコピーを使用する [ほど汎用性はないかもしれません](/Contribute/LocalClone/CreateCommit/) が、 [git](/Contribute/LocalClone/InstallingGit/) の設定を心配する必要はありません。
 
 This guide will show you how to create a new wiki file using github's online editor.  
 Your main reason for adding new pages is most likely to fill in missing information, but maybe you also want to add an example wiki entry for a given mod handler, whatever the reason, feel free to commit changes and eventually [file a Pull Request](/Contribute/PullRequest).
 
-However, remember that you need to create the English version, translations are then handled via [CrowdIn](https://crowdin.com/project/crafttweaker-documentation/) (but only after the PR has been merged).
+ただし、英語版を作成する必要があることを覚えておいてください。 翻訳は [Crowdin](https://crowdin.com/project/crafttweaker-documentation/) を介して処理されます (ただし、PR がマージされた後にのみ)。
 
-## Where to create the file
+## ファイルの作成場所
 
-Theoretically, it doesn't matter where you put your file, but please try to fit the current scheme:
+理論的には、ファイルをどこに置いても問題ありませんが、現在のスキームに合うようにしてください:
 
-- All files need to be in the `docs` folder.
-- The File structure should match the navigation bar crumbs. Example: When using the navigation bar in the wiki, `ICraftingRecipe` can be found in `Vanilla/Recipes/Crafting Table Recipes/ICraftingRecipe`. The file for ICraftingRecipe can be found at `docs/Vanilla/Recipes/Crafting/ICraftingRecipe.md`. As you can see, the paths don't exactly match but they are sufficient to find the file.
-- All information for one mod should remain in one group/folder.
+- すべてのファイルは `docs` フォルダ内にある必要があります。
+- ファイル構造はナビゲーションバーのクラムと一致する必要があります。 例: Wikiでナビゲーションバーを使用する場合、 `ICraftingRecipe` は `Vanilla/Recipes/CraftingRecipe/ICraftingRecipe` にあります。 ICraftingRecipe のファイルは `docs/Vanilla/Recipes/Crafting/ICraftingRecipe.md` で見つけることができます。 見てのとおり、パスは完全に一致しませんが、ファイルを見つけるのに十分です。
+- 1つのModのすべての情報は、1つのグループ/フォルダに残っている必要があります。
 
-## Create the file
+## ファイルを作成
 
-After you have successfully located your future file's path, navigate to the folder that will contain the file in GitHub, if it exists.  
-Don't worry if it does not exist, you can still create the file.
+将来のファイルのパスが正常に見つかったら、GitHubにファイルが含まれているフォルダに移動します。  
+存在しない場合は心配しないで、ファイルを作成できます。
 
-Say you want to create a file called `Secret_Information.md` in `docs/AdvancedFunctions`:  
-Find the path in GitHub and click `Create new file` ![Create File Button](/Contribute/assets/OnlineEditor_CreateFileButton.png)
+`Secret_Informationという名前のファイルを作成するとします。 d <code> docs/AdvancedFunctions` : ``:  
+GitHubでパスを見つけて、 `新しいファイルを作成` をクリックします ![ファイル作成ボタン](/Contribute/assets/OnlineEditor_CreateFileButton.png)
 
-You are now presented with the new File editor page.  
-First, on the top you can see the path of the file that will be created. If we want the file to be created in exactly the directory that is shown in the path, we only need to provide a file title and extension. Remember, all wiki entry files should have the `.md` extension, since this wiki uses markdown.
+新しいファイルエディタページが表示されます。  
+最初に、作成されるファイルのパスを見ることができます。 パスに表示されているディレクトリにファイルを正確に作成したい場合。 ファイルのタイトルと拡張子を提供するだけです このwikiはmarkdownを使用するため、すべてのwikiエントリファイルには `.md` の拡張子があることを覚えておいてください。
 
-If you want the file to be created in a (possibly nonexisting) subfolder, or even multiple folders down the path, you can use `/` to separate folder names (like you can already see in the given path).
+ファイルを(存在しない可能性があります)サブフォルダ、またはパス下の複数のフォルダに作成したい場合。 `/` を使用してフォルダ名を区別できます (指定されたパスに既に表示されているように)。
 
-The Editor allows you to create the file as you like, and also to directly view a preview of the compiled formatting.
+エディタを使用すると、ファイルを好きなように作成したり、コンパイルされた書式のプレビューを直接表示したりすることができます。
 
-If the syntax of the files is new for you, the wiki uses MarkDown. There should be many tutorials to find using google (or you could add one right here to this wiki if you like).
+ファイルの構文が新しくなった場合、wikiはMarkDownを使用します。 googleを使って見つけるべきチュートリアルはたくさんあるはずです(もしくは、こちらに追加することもできます)。
 
-## Add the file to the index
+## ファイルをインデックスに追加
 
-After you have created the file and commited the creation (see below) you will need to add the file to the index as well, so that it can be shown in the navigation bar later.
+ファイルを作成して作成(下記参照)したら、ファイルをインデックスに追加する必要があります。 後でナビゲーションバーに表示できるようにします
 
-This index is the `mkdocs.yml` file.
+このインデックスは `mkdocs.yml` ファイルです。
 
-This file contains everything that is needed to create the wiki, and you need to make sure not to break it (though we will tell you if your PR breaks a build should it come to that)!
+このファイルには、Wikiを作成するために必要なすべてが含まれています。 それを壊さないようにする必要があります(ただし、PRがビルドを壊した場合は、それが来る場合は教えてくれます)。
 
-All you need to do is add your file and categories to the `pages` list.  
-The format is pretty straight-forward:
+`ページ` リストにファイルとカテゴリを追加するだけです。  
+フォーマットはかなり単純です。
 
-- Entries start with a `-`
-- Then comes the (shown, English) name for the group or entry, followed by a `:`
-- If you are creating a grouping (e.g. `Vanilla` or `Mods`) proceed on the next line, with two spaces inlined.
-- If you are creating an actual reference to a page file, add it on the same line, after the `:` and a space. Make sure to wrap it in single quotes `'` to ensure that the build works as expected. The path is relative to the `docs` folder, so `docs/Vanilla/Commands.md` becomes `Vanilla/Commands.md`.
+- エントリの先頭は `-`
+- 次に、グループまたはエントリの(表示、英語)名、続いて `:`
+- グループを作成する場合( `Vanilla` や `Mods`など)、次の行に進み、2つのスペースがインライン化されています。
+- ページファイルへの実際の参照を作成する場合は、 `:` とスペースの後に同じ行に追加します。 ビルドが期待どおりに動作することを確認するには、 `'` を単一引用符で囲むようにしてください。 パスは `docs` フォルダからの相対パスなので、 `docs/Vanilla/Commands.md` は `Vanilla/Commands.md` になります。
 
-For examples check the [current mkdocs.yml file on github](https://github.com/CraftTweaker/CraftTweaker-Documentation/blob/master/mkdocs.yml). Alternatively, edit this file and add your own example here.
+例については、github の [current mkdocs.yml ファイル](https://github.com/CraftTweaker/CraftTweaker-Documentation/blob/master/mkdocs.yml) を確認してください。 または、このファイルを編集し、ここに独自の例を追加します。
 
-## Save/Commit the changes
+## 変更を保存/コミット
 
-*Note: This description originates from the edit files guide but the same principles apply, feel free to substitute with your own version if needed*
+*注意: この説明は編集ファイルガイドに基づいていますが、同じ原則が適用されます。必要に応じて、自由に自分のバージョンに置き換えてください*
 
-After you have created the file content you need to let GitHub know that you want to save your changes.
+ファイルコンテンツを作成したら、変更を保存したいことを GitHub に知らせる必要があります。
 
-That's what the commit box below your editor is for:  
-You cannot simply save the file, you need to provide a summary of what you did (commit title) and optionally a short description where you can put additional information like why you did the changes or what exactly was changed.
+エディタの下のコミットボックスは次のようなものです:  
+ファイルを単に保存することはできません。 あなたが何をしたか(コミットタイトル)の概要と、必要に応じて簡単な説明を提供する必要があります。ここでは、変更の理由や変更内容などの追加情報を入力できます。
 
-By default it looks roughly like this:  
-![Commit Box Default](/Contribute/assets/OnlineEditor_CommitBox_Default.png)
+デフォルトでは以下のようになります。  
+![デフォルトのコミット](/Contribute/assets/OnlineEditor_CommitBox_Default.png)
 
-In this example, the Commit title (or edit summary) is `Update Arrays_and_Loops.md`. GitHub cannot know what your actual changes were supposed to do, so it tries something as generic as this.
+この例では、コミット タイトル (または要約を編集) は `Update Array_and_Loops.md` です。 GitHub は実際の変更が何をすべきかを知ることができないため、これと同じようにジェネリックなものを試行します。
 
-You might want to add an additional title or description, but it is not neccessary, though it makes reviewing your Pull request later on easier.
+追加のタイトルや説明を追加したいと思うかもしれませんが、後でプルリクエストを簡単に確認できますが、必須ではありません。
 
-If you have multiple e-mail addresses registered for your GitHub account, you can choose as which one you will create the commit. This will not have any real impact for contributing, though.  
-You can also decide whether you want to commit directly to your master branch or rather create a new branch for your commit. In most cases committing to your master branch works just fine.
+GitHub アカウントに複数のメールアドレスを登録している場合は、コミットを作成するメールアドレスを選択できます。 しかし、これは貢献するための実質的な影響を与えることはありません。  
+マスターブランチに直接コミットするか、またはコミット用に新しいブランチを作成するかを決定することもできます。 ほとんどの場合、マスターブランチにコミットすることはうまく機能します。
 
-A filled out example might look like this: ![Commit box Filled](/Contribute/assets/OnlineEditor_CommitBox_Filled.png)
+A filled out example might look like this: ![コミットボックス 塗りつぶし](/Contribute/assets/OnlineEditor_CommitBox_Filled.png)
 
-## What to do next
+## 次の操作方法
 
 After you have committed your changes, you can go on and [edit](/Contribute/OnlineEditor_Edit) or create more files using the online editor.  
 After you have done all your changes, you can [file a Pull Request](/Contribute/PullRequest).

@@ -1,13 +1,13 @@
-# Applied Energistics 2
+# 応用エネルギー学 2
 
-## Information
+## 情報
 
-Applied Energistics 2 is a Minecraft Mod which contains a large amount of new content, mostly centered around item storage and the ME Network. The mod adds Craft Tweaker integration for some custom machines recipes and config options.
+Applied Energistics 2は、アイテムストレージとMEネットワークを中心とした大量の新しいコンテンツを含むMinecraftのModです。 Modは、一部のカスタムマシンのレシピと設定オプションのCraft Tweaker統合を追加します。
 
-### For More Information
+### 詳細はこちら
 
 https://ae-mod.info/
 
-### Bug Reports
+### バグレポート
 
 https://github.com/AppliedEnergistics/Applied-Energistics-2/issues

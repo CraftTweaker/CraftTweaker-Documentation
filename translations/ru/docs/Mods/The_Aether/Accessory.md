@@ -1,13 +1,13 @@
-# Accessory
+# Аксессуар
 
-## Package
+## Пакет
 
 ```zenscript
-import mods.aether_legacy.Accessory;
+import mods.aether_legacy.Аксессуары;
 ```
-## Usage
+## Использование
 
 ```zenscript
 Accessory.registerAccessory(IItemStack input, String accessory);
 ```
-- Accesory string can be "Ring", "Pendant", "Cape", "Shield", "Gloves", "Miscellaneous"
+- Прямоугольная строка может быть "Звонок", "Оплавленный", "Штильд", "Щит", "Щенки", "Разное"

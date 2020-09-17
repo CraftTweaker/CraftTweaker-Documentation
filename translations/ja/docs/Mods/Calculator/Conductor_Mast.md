@@ -1,22 +1,22 @@
-# Conductor Mast
+# 指揮者マスト
 
-## Package
+## パッケージ
 ```zenscript
-import mods.calculator.conductorMast;
+import mods.calculator.conductorMasterMast;
 ```
 
-## Methods
+## メソッド
 
-- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input** The input.
-- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) output** The output.
-- **Int powercost** The cost of power per process.
+- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input** 入力。
+- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) output** 出力。
+- **Intパワーコスト** プロセス当たりの電力コスト。
 
 ## Additon
 ```zenscript
-conductorMast.addRecipe(IIngredient input, int powercost, IIngredient output);
+導体MasterMasterMaster.addRecipe(IIngredient input, int powercost, IIngredient output);
 ```
 
-## Removal
+## 削除
 ```zenscript
-conductorMast.removeRecipe(IIngredient output);
+導体MasterMaster.removeRecipe(IIngredient出力);
 ```

@@ -22,8 +22,8 @@ function NAME ([arguments[as type]]) [as returnType]{
 
 ## 静态函数
 
-Static functions are created before the script is run and can be accessed from anywhere in the script.  
-You can even access functions declared outside the script using the [cross-script reference](/AdvancedFunctions/Cross-Script_Reference).
+静态函数是在脚本运行之前创建的，并且可以从脚本中的任何地方访问。  
+您甚至可以使用 [交叉脚本引用](/AdvancedFunctions/Cross-Script_Reference) 访问脚本以外声明的函数。
 
 ### 无返回值函数
 

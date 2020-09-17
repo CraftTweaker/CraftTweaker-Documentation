@@ -1,27 +1,27 @@
-# LivingExperienceDrop
+# Experiencia
 
-This event is fired when an entity dies and drops experience, allowing for the amount of experience to be modified. Alternately, the event can be **canceled** to prevent experience from being dropped.
+Este evento se dispara cuando una entidad muere y deja caer la experiencia, permitiendo que se modifique la cantidad de experiencia. Alternativamente, el evento puede ser **cancelado** para evitar que la experiencia sea soltada.
 
-## Event Class
-You will need to cast the event in the function header as this class:  
-`crafttweaker.event.LivingExperienceDropEvent`  
-You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
+## Clase de evento
+Necesitarás lanzar el evento en la cabecera de la función como esta clase:  
+`crafttweaker.event. ivingExperience enceDropEvent`  
+Puede, por supuesto, también [importar](/AdvancedFunctions/Import/) la clase antes y utilizar ese nombre entonces.
 
-## Event interface extensions
-LivingExperienceDrop Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+## Extensiones de la interfaz de eventos
+LivingExperience enceDrop Events implementan las siguientes interfaces y son capaces de llamar a todos sus métodos/getters/setters también:
 
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 - [ILivingEvent](/Vanilla/Events/Events/ILivingEvent/)
 
 ## ZenGetters/ZenSetters
-The following information can be retrieved/set during the event:
+La siguiente información se puede recuperar/establecer durante el evento:
 
-| ZenGetter            | ZenSetter           | Type                                 |
-| -------------------- | ------------------- | ------------------------------------ |
-| `player`             |                     | [IPlayer](/Vanilla/Players/IPlayer/) |
-| `droppedExperience`  | `droppedExperience` | int                                  |
-| `originalExperience` |                     | int                                  |
+| ZenGetter               | Ajuste                  | Tipo                                 |
+| ----------------------- | ----------------------- | ------------------------------------ |
+| `jugador`               |                         | [IPlayer](/Vanilla/Players/IPlayer/) |
+| `experiencia eliminada` | `experiencia eliminada` | int                                  |
+| `originalExperience`    |                         | int                                  |
 
-## Notes
+## Notas
 
-`originalExperience` contains the original Vanilla amount of experience. It is possible that `droppedExperience` when this event is fired has already been modified.
+`originalExperience` contiene la experiencia original de Vanilla. Es posible que `droppedExperience` cuando este evento es disparado ya haya sido modificado.

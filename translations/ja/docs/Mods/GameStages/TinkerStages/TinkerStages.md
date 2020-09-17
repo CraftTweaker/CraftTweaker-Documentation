@@ -1,84 +1,84 @@
-# Tinker Stages
+# ティンカーステージ
 
-This mod is an addon for the [GameStages API](https://minecraft.curseforge.com/projects/game-stages). Tinker Stages allows aspects of the Tinkers Construct mod to be put into a custom progression system set up by the modpack author. For more info, check out the mod page [here](https://minecraft.curseforge.com/projects/tinkerstages)
+この mod は [GameStages API](https://minecraft.curseforge.com/projects/game-stages) のアドオンです。 ティンカーステージでは、Modパックの作成者が設定するカスタム進行システムにモジュールを組み立てることができます。 詳細はこちら [をご覧ください](https://minecraft.curseforge.com/projects/tinkerstages)
 
-## General Restrictions
+## 一般的な制限
 
-Restricts tool crafting to a stage. If multiple stages are added using this method, the player will need at least one of them.
+ツール製作をステージに制限します。 この方法を使用して複数のステージが追加される場合、プレイヤーは少なくとも1つ必要になります。
 
 ```zenscript
 // mods.TinkerStages.addGeneralCraftingStage(String stage);
 mods.TinkerStages.addGeneralCraftingStage("one");
 ```
 
-Restricts part replacing to a stage. If multiple stages are added using this method, the player will need at least one of them.
+部品の置き換えをステージに制限します。 この方法を使用して複数のステージが追加される場合、プレイヤーは少なくとも1つ必要になります。
 
 ```zenscript
 // mods.TinkerStages.addGeneralPartReplacingStage(String stage);
 mods.TinkerStages.addGeneralPartReplacingStage("one");
 ```
 
-Restricts part building to a stage. If multiple stages are added using this method, the player will need at least one of them.
+部品の建物をステージに制限します。 この方法を使用して複数のステージが追加される場合、プレイヤーは少なくとも1つ必要になります。
 
 ```zenscript
 // mods.TinkerStages.addGeneralPartBuildingStage(String stage);
 mods.TinkerStages.addGeneralPartBuildingStage("one");
 ```
 
-Restricts applying modifiers to a stage. If multiple stages are added using this method, the player will need at least one of them.
+ステージへの修飾子の適用を制限します。 この方法を使用して複数のステージが追加される場合、プレイヤーは少なくとも1つ必要になります。
 
 ```zenscript
 // mods.TinkerStages.addGeneralModifierStage(String stage);
 mods.TinkerStages.addGeneralModifierStage("one");
 ```
 
-## Specific Restrictions
+## 特定の制限
 
-Prevents a specific tool type from being crafted at the tool station. For example, you can restrict the crafting of hammers until a specific stage.
+特定のツールタイプがツールステーションで作成されないようにします。 たとえば、特定のステージまでハンマーの製作を制限できます。
 
 ```zenscript
 // mods.TinkerStages.addToolTypeStage(String stage, String toolId);
 mods.TinkerStages.addToolTypeStage(String "one", "tconstruct:pickaxe");
 ```
 
-Prevents a material from being used by the player. Including crafting, part building, and using the tool.
+マテリアルがプレイヤーによって使用されないようにします。 製作、部品の構築、およびツールの使用を含む。
 
 ```zenscript
 // mods.TinkerStages.addMaterialStage(String stage, String material);
 mods.TinkerStages.addMaterialStage("one", "stone");
 ```
 
-Prevents a specific modifier from being applied to a tool or used.
+特定の修飾子がツールや使用されるのを防ぎます。
 
 ```zenscript
 // mods.TinkerStages.addModifierStage(String stage, String modifier);
-mods.TinkerStages.addModifierStage("two", "mending_moss");
+mods.TinkerStages.addModifierStage("two", "mending_mos");
 ```
 
-## Example Script
+## スクリプト例
 
 ```zenscript
-//GENERAL RESTRICTIONS
-//Prevents all tools unless the stage is unlocked.
+//一般制限
+//ステージのロックが解除されていない限り、すべてのツールを無効にします。
 mods.TinkerStages.addGeneralCraftingStage("one");
 
-//Prevents all tool swapping unless the stage is unlcoked.
+//ステージがunlcokedでない限り、すべてのツール交換を防ぎます。
 mods.TinkerStages.addGeneralPartReplacingStage("one");
 
-//Prvents all part building unless the stage is unlocked.
+//ステージがロックされていない限り、すべてのパーツの構築を表示します。
 mods.TinkerStages.addGeneralPartBuildingStage("one");
 
-//Prevents applying any tool modifiers unless the stage is unlocked.
+//ステージがロックされていない限り、ツール修飾子の適用を防ぎます。
 mods.TinkerStages.addGeneralModifierStage("one");
 
 
-//SPECIFIC RESTRICTIONS
-//Prevents crafting pickaxes unless the stage is unlocked.
+//SPECIFICIONS
+//ステージがロック解除されていない限りピッケルをクラフトするのを防ぎます。
 mods.TinkerStages.addToolTypeStage("two", "tconstruct:pickaxe");
 
-//Prevents the material from being used. 
-mods.TinkerStages.addMaterialStage("two", "stone");
+//マテリアルが使用されないようにします。 
+mods.TinkerStages.addMaterialStage("2", "stone");
 
-//Prevents the modifier from being applied.
-mods.TinkerStages.addModifierStage("two", "mending_moss");
+//修飾子が適用されないようにします。
+mods.TinkerStages.addModifierStage("two", "mending_mos");
 ```

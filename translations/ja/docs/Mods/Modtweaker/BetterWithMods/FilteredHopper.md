@@ -1,19 +1,19 @@
-# Filtered Hopper
+# フィルターされたホッパー
 
-The Filtered Hopper is a block that can allow or disallow certain items based on the item currently in its Filter Slot. Additionally it can perform recipes on the items that are attempting to enter the Hopper.
+フィルターホッパーは、現在フィルタースロットにあるアイテムに基づいて、特定のアイテムを許可または許可しないブロックです。 さらに、ホッパーに入ろうとしているアイテムでレシピを実行することができます。
 
-# Filters
+# フィルタ
 
-* Addition
+* 加算
     
-    * Add a new Filter by a name and assign the items which will be used in the Filter Slot.
+    * 名前で新しいフィルタを追加し、フィルタスロットで使用されるアイテムを割り当てます。
     ```zenscript
-        mods.betterwithmods.FilteredHopper.addFilter(String name, IIngredient item)
+        mods.betterwithmods.FilteredHopper.addFilter(String, name, IIngredient item)
     
         mods.betterwithmods.FilteredHopper.addFilter("modtweaker:myFilter", <minecraft:planks>);   
     ```
     
-    * Add an allowed item to a Filter by its name.
+    * 許可されている項目をフィルタ名で追加します。
     ```zenscript
         mods.betterwithmods.FilteredHopper.addFilteredItem(String name, IIngredient item)
     
@@ -21,10 +21,10 @@ The Filtered Hopper is a block that can allow or disallow certain items based on
         mods.betterwithmods.FilteredHopper.addFilteredItem("modtweaker:myFilter",<ore:ingotIron>);
     ```
     
-    * Filtered Recipes - The hopper can process the item attempting to input into specific item outputs, it can either
+    * フィルターされたレシピ - ホッパーは特定のアイテム出力に入力しようとするアイテムを処理することができます。
         
-        * Put into the hopper's inventory (as long as the current filter allows it).
-        * Eject the items into the world above the hopper 
+        * ホッパーのインベントリに入れてください(現在のフィルターが許可している限り)。
+        * ホッパーの上にある世界にアイテムを取り出します 
         ```zenscript
         mods.betterwithmods.FilteredHopper.addFilterRecipe(String name, IIngredient input, IIngredient[] insideOutput , IIngredient[] outsideOutput);
         
@@ -38,7 +38,7 @@ The Filtered Hopper is a block that can allow or disallow certain items based on
         mods.betterwithmods.FilteredHopper.addFilterRecipe("modtweaker:myFilter3",<minecraft:sand>, [<minecraft:diamond>*9], []);
         ```
         
-        Additionally, you can add special recipes to the Filtered Hopper that will create Souls Urns from Urns.
+        さらに、絞られたホッパーに特別なレシピを追加して、UrnからSoulのUrnを作成することもできます。
         
         ```zenscript
            mods.betterwithmods.FilteredHopper.addSoulUrnRecipe(IIngredient input, IItemStack[] outputs, IItemStack[] secondary)
@@ -46,22 +46,22 @@ The Filtered Hopper is a block that can allow or disallow certain items based on
            mods.betterwithmods.FilteredHopper.addSoulUrnRecipe(<minecraft:stone>,[],[<minecraft:diamond>*9]);
         ```
 
-* Removal
+* 削除
     
-    * Remove the allowed items from the specified filter
+    * 指定されたフィルターから許可されているアイテムを削除します
     ```zenscript
         mods.betterwithmods.FilteredHopper.clearFilter(String name);
     
         mods.betterwithmods.FilteredHopper.clearFilter("betterwithmods:wicker");
     ```
     
-    * Remove a Filtered Recipe by input or output
+    * 入力または出力でフィルターされたレシピを削除
     ```zenscript
         mods.betterwithmods.FilteredHopper.removeRecipe(IIngredient[] insideOutput, IIngredient[] outsideOutput);
     
-        mods.betterwithmods.FilteredHopper.removeRecipe([<minecraft:sand>,<minecraft:sand:1>],[<minecraft:flint>]);
+        mods.betterwithmods.FilteredHopper.removeRemoveRecipe([<minecraft:sand>,<minecraft:sand:1>],[<minecraft:flint>]);
     
         mods.betterwithmods.FilteredHopper.removeRecipeByInput(IIngredient input);
     
-        mods.betterwithmods.FilteredHopper.removeRecipeByInput(<minecraft:sand>);
+        mods.Betterwithmods.FilterHopper.removeRemoveRecipeByInput(IInput);<minecraft:sand>);
     ```

@@ -1,42 +1,42 @@
-# OreEntry
+# Oreentry
 
-An OreEntry is a material like Gold, Diamond, Coal, Redstone and so on.  
-You can use this to get several [OreDictEntries](/Vanilla/OreDict/IOreDictEntry/), [IItemStacks](/Vanilla/Items/IItemStack/), [ILiquidStacks](/Vanilla/Liquids/ILiquidStack/).
+Oreentry 是一种材料，如金质、钻石、煤、红石等等。  
+你可以使用这个来获得几个 [OreDictEntries](/Vanilla/OreDict/IOreDictEntry/), [IItemStacks](/Vanilla/Items/IItemStack/), [ILiquidStacks](/Vanilla/Liquids/ILiquidStack/)
 
 ## 方法
 
-In general, the methods take a string parameter that is a prefix to be used.  
-For example, an OreEntry for `"Gold"`, called with the prefix `"dust"` will return Gold Dust.  
-For these examples, we will assume this was declared:  
-The comments after the example calls will state what the method call can return (unless in the extra category).
+一般而言，方法需要一个要使用的前缀字符串参数。  
+例如，一个 `"金"`的 Oreentre 用前缀调用 `"dust"` 将返回 Gold Dust。  
+关于这些例子， 我们将假定已声明这一点：  
+示例调用后的评论将说明所调用的方法可以返回哪些(除非在额外的类别中)。
 
 ```zenscript
-val oreEntry = mods.jaopca.JAOPCA.getOre("Gold");
+val oregin = mods.jaopca.JAOPCA.getOre("Gold");
 ```
 
-### Get entry properties
+### 获取条目属性
 
-You can get these properties:
+您可以获取这些属性：
 
 ```zenscript
-oreEntry.energyModifier; //1.0 as double
-oreEntry.rarity; //1.0 as double
-oreEntry.oreType; //"INGOT" as string
+oreEntry.energyModifier; //1.0 双倍
+oreEntry.rarity; //1.0 双倍
+oreEntry.oreType; ///"INGOT" 作为字符串
 ```
 
-### Get OreName or OreNameSynonyms
+### 获取 Orename 或 OreNameSynonyms
 
-The ore name is essentialy how it is registered and what you use in a getOre to retrieve it.  
-The ore name synonyms are synonyms that mods or pack authors can register to combine two or more oreEntries (e.g. "Aluminum" and "Aluminium"). Most oreEntries will probably have nothing registered, though. The synonyms getter will return a list containing all the synonyms as strings.
+矿石名称是非常重要的注册方式以及你在 getOre 中使用什么来检索它。  
+矿石名称同义词是模组或包作者可以注册合并两个或多个矿物的同义词(e)。 a. “铝”和“铝”。 虽然大多数操作条目都没有注册过，但是这些操作条目大概不会被注册。 同义词getter 将返回一个包含所有同义词的列表。
 
 ```zenscript
 oreEntry.oreName; //"Gold"
-oreEntry.oreNameSynonyms; //[]
+oreEntry.oreNameSynonyms; //[……]
 ```
 
-### Get IOreDictEntry
+### 获取 IOreDictEnter
 
-Returns a new [IOreDictEntry](/Vanilla/OreDict/IOreDictEntry/) with the given prefix.
+使用给定的前缀返回一个新的 [IOreDictEnter](/Vanilla/OreDict/IOreDictEntry/)。
 
 ```zenscript
 oreEntry.getOreDictEntry("dust"); //<ore:dustGold>
@@ -44,46 +44,46 @@ oreEntry.getOreDictEntry("dust"); //<ore:dustGold>
 
 ### Get IItemStack
 
-Returns a new [IItemStacks](/Vanilla/Items/IItemStack/) that matches the given prefix.  
-You can provide an alternate fallback prefix to be used if no matching Item is found.
+返回一个匹配给定前缀的新的 [IItemStacks](/Vanilla/Items/IItemStack/) 。  
+如果找不到匹配的项目，您可以提供备用后退前缀。
 
-If no matching item is found and no matching item is found using the fallback prefix (if provided), it will return `null`.
+如果没有找到匹配的项目并且没有找到匹配的项目使用后退前缀(如果提供的话)，它将返回 `null`。
 
 ```zenscript
-//oreEntry.getItemStack(prefix);
-oreEntry.getItemStack("coin"); //<jaopca:item_coingold>
-oreEntry.getItemStack("invalid"); //null
+//oreEntry.getItemStack(前缀)；
+oreEntry.getItemStack("coin")；//<jaopca:item_coingold>
+oreEntry.getItemStack("invalid")；//null
 
-//oreEntry.getItemStack(prefix, fallback);
-oreEntry.getItemStack("invalid", "coin"); //<jaopca:item_coingold>
-oreEntry.getItemStack("invalid", "faulty"); //null
+//oreEntry.getItemStack(前缀, fallback)；
+oreEntry.getItemStack("valid", "coin")；//<jaopca:item_coingold>
+oreEntry.getItemStack("valid", "resulty")；////null
 ```
 
 ### Get ILiquidStack
 
-Returns a new [ILiquidStacks](/Vanilla/Liquids/ILiquidStack/) that matches the given prefix.  
-You can provide an alternate fallback prefix to be used if no matching Liquid is found.
+返回一个匹配给定前缀的新的 [ILiquidStacks](/Vanilla/Liquids/ILiquidStack/) 。  
+如果找不到匹配的液体，您可以提供备用后退前缀。
 
-If no matching liquid is found and no matching liquid is found using the fallback prefix (if provided), it will return `null`.
+如果没有找到匹配的液体并且没有找到匹配的液体使用后退前缀(如果提供的话)，它将返回 `null`。
 
 ```zenscript
-//oreEntry.getLiquidStack(prefix);
-oreEntry.getLiquidStack("molten"); //<liquid:gold>
-oreEntry.getLiquidStack("invalid"); //null
+//oreEntry.getLiquidStack(前缀)；
+oreEntry.getLiquidStack("molten")；//<liquid:gold>
+oretry.getLiquidStack("invalid")；//null
 
-//oreEntry.getLiquidStack(prefix, fallback);
-oreEntry.getLiquidStack("invalid", "molten"); //<liquid:gold>
-oreEntry.getLiquidStack("invalid", "faulty"); //null
+//oreEntry.getLiquidStack(前缀, fallback)；
+oreEntry.getLiquidStack("valid", "molten")；//<liquid:gold>
+oreEntry.getLiquidStack("valid", "defaulty")；//null
 ```
 
-### Get Extra
+### 获取额外的
 
-An Entry can have an extra registered. An extra can for example be a secondary output when pulverizing a matching ore.
+条目可以有额外的注册。 例如，在拉取一个匹配矿石时，额外的输出可以是次要输出。
 
-You can either check if an entry has an extra, get the extra (or `null` if not present) or the extraName.  
-You can also use the same methods as above (`getOreDictEntry`, `getLiquidStack` and `getItemStack`).
+您可以检查一个条目是否有外延，获取额外的 (如果不存在 `null` )或额外的名称。  
+您也可以使用与上面相同的方法 (`getOreDictEnterprise` `getLiquidStack` and `getItemStack`).
 
-There are up to 3 extras that can be registered. For the sake of simplicity there won't be examples for the equivalent methods, they will only be stated
+最多可以注册3个额外版本。 为了简洁起见，对等方法不会有示例，这些示例只会被描述
 
 ```zenscript
 //First extra

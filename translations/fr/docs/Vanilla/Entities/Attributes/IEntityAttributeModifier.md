@@ -1,15 +1,15 @@
 # IEntityAttributeModifier
 
-## Importing the package
+## Importation du paquet
 
-It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
+Il pourrait vous être nécessaire d'importer le paquet si vous rencontrez des problèmes (comme lancer un [Tableau](/AdvancedFunctions/Arrays_and_Loops/)), alors mieux être sûr que désolé et ajouter l'importation.  
 `import crafttweaker.entity.AttributeModifier;`
 
 ## ZenGetters
 
-| ZenGetter | GetterMethod   | Return Type |
-| --------- | -------------- | ----------- |
-| uuid      | getUUID()      | string      |
-| name      | getName()      | string      |
-| operation | getOperation() | int         |
-| amount    | getAmount()    | double      |
+| ZenGetter | Méthode d'obtention | Type de retour       |
+| --------- | ------------------- | -------------------- |
+| uuid      | getUUID()           | chaîne de caractères |
+| Nom       | getName()           | chaîne de caractères |
+| opération | getOperation()      | Indice               |
+| montant   | getAmount()         | double               |

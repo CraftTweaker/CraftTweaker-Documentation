@@ -1,13 +1,13 @@
-# Attack Damage Locking
+# Zablokowanie obrażeń atakujących
 
-## Feature:
+## Funkcja:
 
-This feature locks the ability for the player to use a weapon/tool with an attack damage value equal to or greater than the set amount. This means like in the example below, any weapon with Attack Damage 0.75 or greater will only be useable in the end.
+Ta funkcja blokuje możliwość użycia przez gracza broni/narzędzia o wartości obrażeń ataku równej lub większej od ustalonej ilości. Oznacza to, że tak jak w poniższym przykładzie, każda broń z obrażeniami atakującymi 0.75 lub większą będzie użyteczna tylko na końcu.
 
-For reference: 1 Damage = 0.5 Hearts You can see a quick reference guide to damage under [This Link](https://minecraft.gamepedia.com/Damage#Dealing_damage)
+Dla odniesienia: 1 obrażenia = 0.5 Serce Możesz zobaczyć szybki poradnik dotyczący obrażeń pod [tym linkiem](https://minecraft.gamepedia.com/Damage#Dealing_damage)
 
-## Syntax:
+## Składnia:
 
-    mods.compatskills.DamageLock.addDamageLock(double damage, String... requirements);
+    mods.compatskills.DamageLock.addDamageLock(podwójne obrażenia, String... wymagania);
     
     mods.compatskills.DamageLock.addDamageLock(0.75, "dim|1");

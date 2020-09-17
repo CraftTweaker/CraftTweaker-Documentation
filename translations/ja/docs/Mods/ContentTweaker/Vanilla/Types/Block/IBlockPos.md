@@ -1,38 +1,38 @@
 # IBlockPos
 
-An IBlockPos object represents a position in the game.
+IBlockPosオブジェクトは、ゲーム内の位置を表します。
 
-## Importing the package
+## パッケージのインポート
 
-It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
+問題が発生した場合は、パッケージをインポートする必要があるかもしれませんので、申し訳ありませんし、インポートを追加してください。  
 `import mods.contenttweaker.BlockPos;`
 
-## ZenMethods without parameters
+## パラメータのないZenMethods
 
-| ZenMethod | ZenGetter | Return Type | Description                    |
-| --------- | --------- | ----------- | ------------------------------ |
-| getX()    | x         | int         | Returns the position's X value |
-| getY()    | y         | int         | Returns the position's Y value |
-| getZ()    | z         | int         | Returns the position's Z value |
+| ZenMethod | ZenGetter | 戻り値 | 説明          |
+| --------- | --------- | --- | ----------- |
+| getX()    | x         | int | 位置のX値を返します。 |
+| getY()    | y         | int | 位置のY値を返します。 |
+| getZ()    | z         | int | 位置のZ値を返します。 |
 
-## ZenMethods with parameters
+## パラメータ付きのZenMethods
 
-### Get Offset
+### オフセットを取得
 
-Returns a new IBlockPos that is `offset` blocks into the `directionName` or `facing` direction.
+`方向` または `方向` に `オフセット` ブロックの新しい IBlockPos を返します。
 
 `IBlockPos getOffset(String directionName, int offset);`
 
-`directionName` can take these values:
+`directionName` は以下の値を取ることができる。
 
 - "down"
 - "up"
-- "north"
-- "south"
-- "east"
-- "west"
+- "北"
+- "南"
+- "東"
+- "西"
 
 `IBlockPos getOffset(Facing facing, int offset)` Parameters:
 
-- [Facing](/Vanilla/World/IFacing/) facing → The direction
-- int offset → how many blocks in that direction?
+- [面](/Vanilla/World/IFacing/) → 方向
+- int offset → その方向のブロックの数を指定しますか?

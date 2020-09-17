@@ -1,14 +1,14 @@
-# Manufactory
+# Ręczna fabryka
 
-## Importing the Package
-`mods.nuclearcraft.manufactory`
+## Importowanie pakietu
+`Mods.nuclearcraft.manufactory`
 
-## Adding Recipes
+## Dodawanie przepisów
 ```zenscript
 mods.nuclearcraft.manufactory.addRecipe([itemInput, itemOutput, @Optional double timeMultiplier, @Optional double powerMultiplier, @Optional double processRadiation]);
 ```
 
-## Removing Recipes
+## Usuwanie przepisów
 ```zenscript
 mods.nuclearcraft.manufactory.removeRecipeWithInput([itemInput]);
 mods.nuclearcraft.manufactory.removeRecipeWithOutput([itemOutput]);

@@ -1,57 +1,57 @@
 # MixRecipeManager
 
-A `MixRecipeManager` is used to modify existing high oven mix recipe, including those added by ModTweaker.
+`MixRecipeManager` は、ModTweaker によって追加されたものを含む、既存の高オーブンミックスレシピを変更するために使用されます。
 
 ## パッケージのインポート
 
-Better be safe than sorry and import the package
+申し訳ございませんが、パッケージをインポートするよりも安全です。
 
 ```zenscript
 import mods.tcomplement.highoven.MixRecipeManager;
 ```
 
-## Getting a `MixRecipeManager`
+## `MixRecipeManager` を取得する
 
-The `HighOven` handler can give you a `MixRecipeManager`:
+`HighOven` ハンドラは `MixRecipeManager` を与えることができます:
 
 ```zenscript
-// HighOven.manageMixRecipe(ILiquidStack output, ILiquidStack input);
+// HighOven.manageMixRecipe(ILiquidStack 出力, ILiquidStack input);
 var manager = HighOven.manageMixRecipe(<liquid:steel>);
 ```
 
-+ `output` is the output of the mix recipe to modify
-+ `input` (Optional) is the input of the mix recipe to modify. If `null` or unspecified, any mix recipe producing the output will be affected
++ `出力` は変更するミックスレシピの出力
++ `input` (オプション)は、変更するミックスレシピの入力である。 `null` または指定されていない場合、出力を生成するミックスレシピは影響を受けます
 
-## Removing additives
+## 添加物を削除する
 
-You can use a `MixRecipeManager` to remove certain additives from the affected mix recipe. Be carefull, for removals are always enforced. This means whatever way to add an additive that would add an additive you remove, will be prevented.
+`MixRecipeManager` を使用して、影響を受けるミックスレシピから特定の添加物を削除できます。 注意してください, 削除は常に強制されているため. つまり、削除した添加剤を添加する方法は何であれ防止されます。
 
-This may have surprising results with oredict entries. Since oredict entries are added as-is to the mix recipe (it is not expanded to a list of `IItemStack` but looked for when checking the recipes), removing an item will block all oredict entries it belongs to.
+これはオレディクトのエントリで驚くべき結果が得られるかもしれません。 オレディクトエントリはミックスレシピにそのまま追加されるので( `IItemStack` のリストには展開されませんが、レシピを確認するときに探されます)。 項目を削除すると、それが属するすべてのオレディクトエントリをブロックします。
 
 Generally speaking, if you remove something specific (say, an `IItemStack` with transformers) but an (single) additive addition would allow what you removed plus some other things (say, a more generic `IItemStack`), the whole addition will be cancelled, preventing said other things from being accepted by the High Oven.
 
-| Method                                 | Info                                                      |
-| -------------------------------------- | --------------------------------------------------------- |
-| `removeOxidizer(IIngredient oxidizer)` | Forefully remove the oxidizer from the affected MixRecipe |
-| `removeReducer(IIngredient reducer)`   | Forefully remove the reducer from the affected MixRecipe  |
-| `removePurifier(IIngredient reducer)`  | Forefully remove the purifier from the affected MixRecipe |
+| 方法                                   | 情報                               |
+| ------------------------------------ | -------------------------------- |
+| `除去酸化物(成分酸化剤)`                       | 影響を受けるMixRecipeから酸化剤を前もって削除します   |
+| `removeReducer(IIngredient reducer)` | 影響を受けるMixRecipeからレデューサーを前もって削除する |
+| `除去浄化器(原材料還元器)`                      | 影響を受けるMixRecipeから浄化器を前もって取り外します  |
 
 
-All those methods return the same instance they were called one, allowing method chaining.
+これらのすべてのメソッドは、メソッドチェーンを可能にするために、呼び出された同じインスタンスを返します。
 
-## Adding additives to existing MixRecipe
+## 既存の MixRecipe に添加物を追加する
 
-You can add additives to all mix recipe matched by the `MixRecipeManager`. Be careful, as removals have priority (see above).
+`MixRecipeManager` にマッチしたすべてのミックスレシピに添加剤を追加できます。 削除には優先度があります(上記参照)。
 
-| Method                                                          | Info                                                            |
-| --------------------------------------------------------------- | --------------------------------------------------------------- |
-| `addOxidizer(@NotNull IIngredient oxidizer, int consumeChance)` | Add the oxidizer with the specified consume chance (in percent) |
-| `addReducer(@NotNull IIngredient reducer, int consumeChance)`   | Add the reducer with the specified consume chance (in percent)  |
-| `addPurifier(@NotNull IIngredient purifier, int consumeChance)` | Add the purifier with the specified consume chance (in percent) |
+| 方法                                                              | 情報                                 |
+| --------------------------------------------------------------- | ---------------------------------- |
+| `addOxidizer(@NotNull IIngredient oxidizer, int consumeChance)` | 酸化剤を指定された確率で追加する（パーセント単位）          |
+| `addReducer(@NotNull IIngredient reducer, int consmeChance)`    | 指定された確率を消費するレデューサーを追加します (パーセント単位) |
+| `addPurifier(@NotNull IIngredient purfier, int consumeChance)`  | 指定された量の浄化器を消費する確率を追加します (パーセント単位)  |
 
 
-All those methods return the same instance they were called one, allowing method chaining.
+これらのすべてのメソッドは、メソッドチェーンを可能にするために、呼び出された同じインスタンスを返します。
 
-## Warning
+## 警告
 
-Creating a `MixRecipeManager` that does not match any mix recipes will not trigger any warning, because there's no way to tell which mix recipes will be added (script parsing happens before mix recipe registration). If you're `MixRecipeManager` has no effect, first check it it actually matches a mix recipe
+任意のミックスレシピと一致しない `MixRecipeManager` を作成しても警告は発生しません。 なぜなら、どのミックスレシピが追加されるかを判断する方法がないからです(ミックスレシピ登録の前にスクリプトの解析が行われます)。 `MixRecipeManager` に効果がない場合は、まずミックスレシピと一致するか確認してください。

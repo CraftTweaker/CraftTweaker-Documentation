@@ -1,18 +1,18 @@
-# Liquid Fuel Generator
+# 液体燃料ジェネレーター
 
-## Package
+## パッケージ
 
 ```zemscript
 import mods.ic2.LiquidFuelGenerator;
 ```
 
-## Methods
+## メソッド
 
-- **[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) liquid** The liquid which can be used as fuel in liquid fuel generators. The amount of fluid specified will make no difference; it uses 100 mb.
-- **int ticks** The time in ticks the liquid will burn for.
-- **int powerOutput** EU/tick produced by the liquid.
+- **[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) 液体** 液体燃料発電機の燃料として使用できる液体。 指定された流体の量は何の違いもなく、100 mbを使用します。
+- **int tick** 液体が燃焼するティック数。
+- **int powerOutput** 液体によって生成されるEU/ティック。
 
-### Add Fluid
+### 流体を追加
 
 ```zenscript
 mods.ic2.LiquidFuelGenerator.addFluid(ILiquidStack liquid, int ticks, int powerOutput);

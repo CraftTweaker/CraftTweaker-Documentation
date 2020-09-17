@@ -1,27 +1,27 @@
-# Item to Gas Conversion
+# 物品到气体转换
 
-As of Mekanism 9.7.5 it is now possible to have custom item to gas conversions in various machines.
+到Mekanism 9.7.5的时候，现在可以在各种机器中存有气体转化的定制物品。
 
-If you want to change any of the values of the built in conversions it is recommended that you first remove the conversion and then add it back rather than overwriting it. This ensures that it properly removes all the data as in 9.7.5 it does not have a specified output/handling of what happens when an item is listed twice.
+如果您想要更改转换中内置的任何值，建议您先删除转换，然后将其添加而不是覆盖它。 这确保了它能够适当地删除9.7中的所有数据。 它没有指定的输出/处理项目被列出两次时发生的事情。
 
-## Addition
+## 加
 
 ```zenscript
-mods.mekanism.GasConversion.register(IIngredient ingredient, IGasStack gas);
+mods.mekanism.Gasconversion.register(IIngredient component, IGasStack gas);
 
-mods.mekanism.GasConversion.register(<ore:sand>, <gas:liquidosmium> * 100);
+mods.mekanism.Gasconversion.register(<ore:sand>, <gas:liquidosmium> * 100);
 ```
 
-## Removal
+## 移除
 
 ```zenscript
-mods.mekanism.GasConversion.unregister(IIngredient ingredient, IGasStack gas);
+mods.mekanism.Gasconversion.unregister(IIngredient component, IGasStack gas);
 
-mods.mekanism.GasConversion.unregister(<ore:ingotOsmium>, <gas:liquidosmium>);
+mods.mekanism.Gasconversion.unregister(<ore:ingotOsmium>, <gas:liquidosmium>);
 ```
 
-## Removing all conversions
+## 移除所有转换
 
 ```zenscript
-mods.mekanism.GasConversion.unregisterAll();
+mods.mekanism.Gasconversion.unregisterAll();
 ```

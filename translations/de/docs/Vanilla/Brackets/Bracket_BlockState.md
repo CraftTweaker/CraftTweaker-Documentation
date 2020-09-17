@@ -1,39 +1,39 @@
-# BlockState Bracket Handler
+# BlockState Klammerhandler
 
-The BlockState Bracket Handler gives you access to the BlockStates in the game. It is only possible to get BlockStates registered in the game, so adding or removing mods may cause issues if you reference the mod's blockstates in a BlockState Bracket Handler.
+Der BlockState Bracket Handler gibt Ihnen Zugriff auf die BlockStates im Spiel. Es ist nur möglich BlockStates im Spiel zu registrieren so dass das Hinzufügen oder Entfernen von Mods Probleme verursachen kann, wenn Sie die Blockzustände des Mods in einem BlockState Bracket Handler referenzieren.
 
-BlockStates are referenced in the BlockState Bracket Handler like so:
+BlockStates werden im BlockState Bracket Handler wie folgt referenziert:
 
 ```zenscript
 <blockstate:modid:blockname>
 ```
 
-With the `modid` being the modid of the mod that the block is defined in, and `blockname` being the name of the block. This will return the default BlockState for the specified block.
+Mit dem `-Modid` ist das Modid der Mod in der der Block definiert ist und `Blockname` ist der Name des Blocks. Dies gibt den Standard-BlockState für den angegebenen Block zurück.
 
-To get a specific blockstate with the BlockState Bracket Handler, you can optionally specify its properties like so:
+Um einen bestimmten Blockzustand mit dem BlockState Bracket Handler zu erhalten, können Sie optional seine Eigenschaften wie folgt festlegen:
 
 ```zenscript
 <blockstate:modid:blockname:properties>
 ```
 
-Where `properties` is a comma-separated set of `name=value` pairs for any properties that you want to specify on the blockstate. Any properties that are not specified are given the same values as in the default blockstate.
+Wo `Eigenschaften` ist ein durch Kommas getrennter Satz von `name=value` Paare für alle Eigenschaften, die Sie im Blockstatus angeben möchten. Alle Eigenschaften, die nicht angegeben werden, werden dieselben Werte wie im Standard-Blockstatus angegeben.
 
-This will return an IBlockState Object. Please refer to [the respective wiki entry](/Vanilla/Blocks/IBlockState/) for further information.
+Dies gibt ein IBlockState Objekt zurück. Bitte lesen Sie [den entsprechenden Wiki-Eintrag](/Vanilla/Blocks/IBlockState/) für weitere Informationen.
 
-Note that this bracket handler will create a reference to one specific blockstate. If you would like to be able to match against multiple blockstates, please refer to [the IBlockStateMatcher wiki entry](/Vanilla/Blocks/IBlockStateMatcher).
+Beachten Sie, dass dieser Klammerhandler eine Referenz auf einen bestimmten Blockstatus erzeugt. Wenn Sie mit mehreren Blockzuständen übereinstimmen möchten, lesen Sie bitte [den IBlockStateMatcher Wiki Eintrag](/Vanilla/Blocks/IBlockStateMatcher).
 
-## Examples
+## Beispiele
 
-An example of the BlockState Bracket Handler would be:
+Ein Beispiel für den BlockState Bracket Handler wäre Folgendes:
 
 ```zenscript
-//block of dirt
+//Schmutzblock
 <blockstate:minecraft:dirt>
 
-//oak log, vertical
+//Eiche Log, vertikal
 <blockstate:minecraft:log>
 <blockstate:minecraft:log:variant=oak,axis=y>
 
-//spruce log, horizontal along the x-axis
+//Fichtenprotokoll, horizontal entlang der x-Achse
 <blockstate:minecraft:log:variant=spruce,axis=x>
 ```

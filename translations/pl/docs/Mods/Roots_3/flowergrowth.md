@@ -1,53 +1,53 @@
-### Class
+### Klasa
 
 ```zenscript
-import mods.roots.FlowerGrowth;
+importuj mods.roots.FlowerGrowth;
 ```
 
-#### Methods
+#### Metody
 
 ```zenscript
-void removeRecipe(
-  string name // The name of the recipe you wish to remove
+Unieważnij usunięcie przepisu(
+  nazwa ciągu // nazwa przepisu, który chcesz usunąć
 );
 ```
 
 * * *
 
 ```zenscript
-void addRecipeBlockState(
-  string name,      // The name of the recipe that you're adding
-  IBlockState state // The state of the block of the flower
+Unieważnij addRecipeBlockState(
+  nazwa ciągu, // Nazwa przepisu, który dodajesz
+  Stan stanu IBlockState // Stan bloku kwiatu
 );
 ```
 
 * * *
 
 ```zenscript
-void addRecipeBlock(
-  string name,  // The name of the recipe that you're adding
-  IBlock block, // The block of the flower to be placed
-  int meta      // The meta of the state of the flower block
+Unieważnij addRecipeBlock(
+  nazwa ciągu, // nazwa przepisu, który dodajesz
+  blok IBlock, // Blok kwiatu, który ma być umieszczony
+  meta // meta stanu bloku kwiatu
 );
 ```
 
 * * *
 
-### Examples
+### Przykłady
 
 ```zenscript
-import mods.roots.FlowerGrowth;
+importuj mods.roots.FlowerGrowth;
 
-// Removes the default recipe for dandelion
+// Usuwa domyślny przepis na dandelion
 FlowerGrowth.removeRecipe("dandelion");
 
-// Adds a Botania white flower using block state
-FlowerGrowth.addRecipeBlockState("mystical_white_flower", <blockstate:botania:flower:color=white>);
+// Dodaje biały kwiat Botaniczny z blokiem
+FlowerGrowth. ddRecipeBlockState("mystical_white_flower", <blockstate:botania:flower:color=white>);
 
-// Adds a Botania magenta flower using block + meta
+// Dodaje kwiat Botania z blokiem + meta
 FlowerGrowth.addRecipeBlock("mystical_green_flower", <botania:flower>.asBlock(), 2);
 ```
 
-### Notes
+### Uwagi
 
-Currently untested with double-tall flowers.
+Obecnie nieprzetestowane z podwójnie wysokimi kwiatami.

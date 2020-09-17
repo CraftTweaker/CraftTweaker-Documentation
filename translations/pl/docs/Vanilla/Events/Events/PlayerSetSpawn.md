@@ -1,27 +1,27 @@
-# PlayerSetSpawn
+# Spawn graczy
 
-The PlayerSetSpawn Event is fired whenever a player's spawn location changes.  
-It can be canceled to prevent further processing.
+Wydarzenie PlayerSetSpawn jest uruchamiane za każdym razem, gdy nastąpi zmiana lokalizacji spawnu gracza.  
+Można go anulować, aby zapobiec dalszemu przetwarzaniu.
 
-## Event Class
+## Klasa wydarzenia
 
-You will need to cast the event in the function header as this class:  
-`crafttweaker.event.PlayerSetSpawnEvent`  
-You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
+Musisz aktywować wydarzenie w nagłówku funkcji jako klasa:  
+`crafttweaker.event. layerSetSpawnEvent`  
+Oczywiście możesz również [zaimportować](/AdvancedFunctions/Import/) klasę przed i wtedy użyć tej nazwy.
 
-## Event interface extensions
+## Rozszerzenia interfejsu zdarzenia
 
-PlayerSetSpawn Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+Zdarzenia PlayerSetSpawn zaimplementują następujące interfejsy i są również w stanie wywołać wszystkie swoje metody/getters/setters:
 
-- [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
+- [Wydarzenie IPlayer](/Vanilla/Events/Events/IPlayerEvent/)
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 
 ## ZenGetters
 
-The following information can be retrieved from the event:
+Z wydarzenia można uzyskać następujące informacje:
 
-| ZenGetter  | Return Type                            |
-| ---------- | -------------------------------------- |
-| `player`   | [IPlayer](/Vanilla/Players/IPlayer/)   |
-| `isForced` | bool                                   |
-| `newSpawn` | [IBlockPos](/Vanilla/World/IBlockPos/) |
+| ZenGetter    | Typ zwrotu                             |
+| ------------ | -------------------------------------- |
+| `gracz`      | [IPlayer](/Vanilla/Players/IPlayer/)   |
+| `wymuszony`  | bool                                   |
+| `Nowy Spawn` | [IBlockPos](/Vanilla/World/IBlockPos/) |

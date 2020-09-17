@@ -1,63 +1,63 @@
 # IEntityLivingBase
 
-A living Entity is one that has health and that can die.  
-That means Monsters, Animals but also [IPlayers](/Vanilla/Players/IPlayer/).
+Żywotna jednostka to jednostka, która ma zdrowie i może umierać.  
+Oznacza to, że potwory, zwierzęta, ale także [IPlayerów](/Vanilla/Players/IPlayer/).
 
-## Importing the package
+## Importowanie pakietu
 
-It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
-`import crafttweaker.entity.IEntityLivingBase;`
+Może być wymagane zaimportowanie pakietu, jeśli napotkasz jakiekolwiek problemy (takie jak przesyłanie [Array](/AdvancedFunctions/Arrays_and_Loops/)), tak aby były bezpieczne niż przepraszamy i dodaj import.  
+`zaimportuj crafttweaker.entity.IEntityLivingBase;`
 
-## Extending [IEntity](/Vanilla/Entities/IEntity/)
+## Rozszerzanie [IEntity](/Vanilla/Entities/IEntity/)
 
-IEntityLivingBase extends [IEntity](/Vanilla/Entities/IEntity/). That means all functions available to [IEntities](/Vanilla/Entities/IEntity/) also are available to IEntityLivingBase.
+IEntityLivingBase extends [IEntity](/Vanilla/Entities/IEntity/). Oznacza to, że wszystkie funkcje dostępne dla [IEntities](/Vanilla/Entities/IEntity/) są również dostępne dla IEntityLivingBase.
 
 ## ZenGetters
 
-| ZenGetter              | Return Type (*can be null*)                            |
-| ---------------------- | ------------------------------------------------------ |
-| activePotionEffects    | List<[IPotionEffect](/Vanilla/Potions/IPotionEffect/)> |
-| AIMovementSpeed        | float                                                  |
-| arrowsInEntity         | int                                                    |
-| attackingEntity        | *IEntityLivingBase*                                    |
-| canBreatheUnderwater   | boolean                                                |
-| health                 | float                                                  |
-| isChild                | boolean                                                |
-| isOnLadder             | boolean                                                |
-| isUndead               | boolean                                                |
-| lastAttackedEntity     | *IEntityLivingBase*                                    |
-| lastAttackedEntityTime | int                                                    |
-| lastDamageSource       | [IDamageSource](/Vanilla/Damage/IDamageSource/)        |
-| mainHandHeldItem       | [IItemStack](/Vanilla/Items/IItemStack/)               |
-| maxHealth              | float                                                  |
-| offHandHeldItem        | [IItemStack](/Vanilla/Items/IItemStack/)               |
-| revengeTarget          | *IEntityLivingBase*                                    |
-| totalArmorValue        | int                                                    |
+| ZenGetter                       | Typ zwrotu (*może być pusty*)                          |
+| ------------------------------- | ------------------------------------------------------ |
+| Aktywne Efekty                  | List<[Efekt IPoczty](/Vanilla/Potions/IPotionEffect/)> |
+| AIMovementSpeed                 | zmiennoprzecinkowe                                     |
+| arrowsInEntity                  | odcień                                                 |
+| Jednostka atakująca             | *IEntityLivingBase*                                    |
+| [PLACEHOLDER] canBreathePodater | boolean                                                |
+| zdrowie                         | zmiennoprzecinkowe                                     |
+| isChild                         | boolean                                                |
+| isOnDrder                       | boolean                                                |
+| isUndead                        | boolean                                                |
+| lastAttackedEntity              | *IEntityLivingBase*                                    |
+| lastAttackedEntityTime          | odcień                                                 |
+| źródło ostatniej obrażeń        | [Źródło ID](/Vanilla/Damage/IDamageSource/)            |
+| mainHandHeldItem                | [IItemStack](/Vanilla/Items/IItemStack/)               |
+| maks. Zdrowie                   | zmiennoprzecinkowe                                     |
+| Element offHandHeldItem         | [IItemStack](/Vanilla/Items/IItemStack/)               |
+| cel zemsty                      | *IEntityLivingBase*                                    |
+| SumalArmorValue                 | odcień                                                 |
 
-## ZenSetters
+## ZenSettery
 
-| ZenSetter          | Parameter Type (*can be null*) |
-| ------------------ | ------------------------------ |
-| AIMovementSpeed    | float                          |
-| arrowsInEntity     | int                            |
-| health             | float                          |
-| lastAttackedEntity | *IEntityLivingBase*            |
-| revengeTarget      | *IEntityLivingBase*            |
+| ZenSetter          | Typ parametru (*może być pusty*) |
+| ------------------ | -------------------------------- |
+| AIMovementSpeed    | zmiennoprzecinkowe               |
+| arrowsInEntity     | odcień                           |
+| zdrowie            | zmiennoprzecinkowe               |
+| lastAttackedEntity | *IEntityLivingBase*              |
+| cel zemsty         | *IEntityLivingBase*              |
 
-## More ZenMethods
+## Więcej ZenMethods
 
-- boolean attackEntityFrom(IDamageSource source, float amount) → Does something...
+- Boolean attackEntityFrom(źródło IDamageSource, liczba zmiennoprzecinkowa) → Coczegoś...
 - boolean canEntityBeSeen([IEntity](/Vanilla/Entities/IEntity/) other);
 - boolean hasItemInSlot([IEntityEquipmentSlot](/Vanilla/Entities/IEntityEquipmentSlot/) slot);
-- boolean isPotionActive([IPotion](/Vanilla/Potions/IPotion/) potion) → Returns true if the goven potion is active
+- boolean isPotionActive([IMikstura](/Vanilla/Potions/IPotion/) → Zwraca prawdę, jeśli goven jest aktywny
 - boolean isPotionEffectApplicable([IPotionEffect](/Vanilla/Potions/IPotionEffect/) potionEffect);
-- heal(float amount) → Heals the entity by the amount given
-- [IEntityAttributeInstance](/Vanilla/Entities/Attributes/IEntityAttributeInstance/) getAttribute(String name) → Returns the given [Attribute](/Vanilla/Entities/Attributes/IEntityAttributeInstance/)
+- leczenie (ilość zmiennoprzecinkowa) → Leczy obiekt o podaną ilość
+- [IEntityAttributeInstance](/Vanilla/Entities/Attributes/IEntityAttributeInstance/) getAttribute(String name) → Zwraca podany [Atrybut](/Vanilla/Entities/Attributes/IEntityAttributeInstance/)
 - [IItemStack](/Vanilla/Items/IItemStack/) getItemInSlot([IEntityEquipmentSlot](/Vanilla/Entities/IEntityEquipmentSlot/) slot);
-- [IPotionEffect](/Vanilla/Potions/IPotionEffect/) getActivePotionEffect(IPotion potion);
-- void addPotionEffect([IPotionEffect](/Vanilla/Potions/IPotionEffect/) potionEffect);
-- void clearActivePotions() → Removes all active [potions](/Vanilla/Potions/IPotion/) from the Entity
-- void knockBack([IEntity](/Vanilla/Entities/IEntity/) entity, float one, double two, double three);
-- void onDeath();
+- [IPotionEffect](/Vanilla/Potions/IPotionEffect/) getActivePotionEffect(Mikstura Mikstur);
+- Unieważnij efekt addPotionEffect([IPotionEffect](/Vanilla/Potions/IPotionEffect/) potionEffect);
+- Unikaj clearActivePotions() → Usuwa wszystkie aktywne [mikstury](/Vanilla/Potions/IPotion/) z encji
+- Unieważnij knockBack([Element IEntity](/Vanilla/Entities/IEntity/) zmiennoprzecinkowy (float 1), podwójne dwa, podwójne trzy);
+- Unieważnienie śmierci();
 - void onLivingUpdate();
 - void setItemToSlot([IEntityEquipmentSlot](/Vanilla/Entities/IEntityEquipmentSlot/) slot, [IItemStack](/Vanilla/Items/IItemStack/) itemStack);

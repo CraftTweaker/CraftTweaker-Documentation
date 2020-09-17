@@ -1,4 +1,4 @@
-# Default Transmutations:
+# Domyślne transmutacje:
 
     Using Reagent: Chorus Fruit
     

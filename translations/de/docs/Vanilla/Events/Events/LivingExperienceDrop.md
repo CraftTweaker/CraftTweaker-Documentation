@@ -1,20 +1,20 @@
 # LivingExperienceDrop
 
-This event is fired when an entity dies and drops experience, allowing for the amount of experience to be modified. Alternately, the event can be **canceled** to prevent experience from being dropped.
+Dieses Ereignis wird abgefeuert, wenn eine Entität stirbt und die Erfahrung verliert, wodurch die Menge an Erfahrung geändert werden kann. Alternately, the event can be **canceled** to prevent experience from being dropped.
 
 ## Event-Klasse
-You will need to cast the event in the function header as this class:  
-`crafttweaker.event.LivingExperienceDropEvent`  
-You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
+Du musst das Ereignis als diese Klasse in den Funktionskopf verschieben:  
+`crafttweaker.event. ivingExperienceDropEvent`  
+Sie können natürlich auch [die Klasse vor](/AdvancedFunctions/Import/) importieren und dann diesen Namen verwenden.
 
 ## Erweiterte Event-Schnittellen
-LivingExperienceDrop Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+LivingExperienceDrop Events implementieren die folgenden Schnittstellen und können auch alle ihre Methoden/Getter/Setter aufrufen:
 
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 - [ILivingEvent](/Vanilla/Events/Events/ILivingEvent/)
 
 ## ZenGetter/ZenSetter
-The following information can be retrieved/set during the event:
+Folgende Informationen können während der Veranstaltung abgerufen bzw. eingestellt werden:
 
 | ZenGetter            | ZenSetter           | Type                                 |
 | -------------------- | ------------------- | ------------------------------------ |
@@ -22,6 +22,6 @@ The following information can be retrieved/set during the event:
 | `droppedExperience`  | `droppedExperience` | int                                  |
 | `originalExperience` |                     | int                                  |
 
-## Notes
+## Notizen
 
-`originalExperience` contains the original Vanilla amount of experience. It is possible that `droppedExperience` when this event is fired has already been modified.
+`Original-Erfahrung` enthält die ursprüngliche Vanilla-Erfahrung. Es ist möglich, dass `droppedExperience` beim Abfeuern dieses Ereignisses bereits geändert wurde.

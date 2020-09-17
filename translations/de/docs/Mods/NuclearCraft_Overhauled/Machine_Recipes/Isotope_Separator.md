@@ -1,16 +1,16 @@
 # Isotope Separator
 
-## Importing the Package
-`mods.nuclearcraft.Separator`
+## Paket wird importiert
+`mods.nuclearcraft.Trennzeichen`
 
-## Adding Recipes
+## Rezepte hinzufügen
 ```zenscript
 mods.nuclearcraft.Separator.addRecipe(IIngredient itemInput, IIngredient itemOutput1, IIngredient itemOutput2, @Optional double timeMultiplier, @Optional double powerMultiplier, @Optional double processRadiation);
 ```
 
-## Removing Recipes
+## Rezepte entfernen
 ```zenscript
 mods.nuclearcraft.Separator.removeRecipeWithInput(IIngredient itemInput);
 mods.nuclearcraft.Separator.removeRecipeWithOutput(IIngredient itemOutput1, IIngredient itemOutput2);
-mods.nuclearcraft.Separator.removeAllRecipes();
+mods.nuclearcraft.Separator.removeAllRezept();
 ```

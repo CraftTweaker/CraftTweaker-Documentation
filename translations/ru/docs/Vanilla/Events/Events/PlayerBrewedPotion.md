@@ -1,25 +1,25 @@
-# PlayerBrewedPotion
+# Зелье питомца игрока
 
-The PlayerBrewedPotion Event is fired whenever a player takes out a potion from the brewing stand.
+Событие "Зелье пивоварения" запускается, когда игрок вытягивает зелье из стола пива.
 
-## Event Class
+## Класс события
 
 You will need to cast the event in the function header as this class:  
 `crafttweaker.event.PlayerBrewedPotionEvent`  
 You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
 
-## Event interface extensions
+## Наследование от интерфейсов событий
 
-PlayerBrewedPotion Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+PlayerBrewedPotion Events реализуют следующие интерфейсы и также могут вызвать все их методы/getters/setters:
 
 - [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
 
 ## Геттеры
 
-The following information can be retrieved from the event:
+Следующая информация может быть получена от события:
 
-| ZenGetter | Return Type                              |
-| --------- | ---------------------------------------- |
-| `player`  | [IPlayer](/Vanilla/Players/IPlayer/)     |
-| `potion`  | [IItemStack](/Vanilla/Items/IItemStack/) |
-| `hand`    | string                                   |
+| Геттеры  | Возвращаемый тип                         |
+| -------- | ---------------------------------------- |
+| `player` | [IPlayer](/Vanilla/Players/IPlayer/)     |
+| `зелье`  | [IItemStack](/Vanilla/Items/IItemStack/) |
+| `рука`   | string                                   |

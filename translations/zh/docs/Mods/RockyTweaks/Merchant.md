@@ -1,25 +1,25 @@
-# Merchant
+# 商家
 
-## Commands
+## 命令
 
-The following commands are added to retrieve information about the availible merchant professions & carrers:
+以下命令被添加来检索现有商人职业 & 购物者的信息：
 
-- `/ct merchant professions` - outputs a log of valid merchant professions
-- `/ct merchant careers [profession]` - outputs a log of valid careers for all or the specified profession
+- `/ct 商人职业` - 输出有效商人职业的日志
+- `/ct 商人职业 [profession]` - 为所有或指定的职业提供一个有效的职业日志
 
 ## 所属包
 
-`mods.rockytweaks.Merchant`
+`商家`
 
 ## 添加配方
 
-Trades can be added to a specific merchant profession & carrer.
+交易可以添加到特定的商人专业 & carrer。
 
 ```zenscript
-// addTrade(String profession, String career, IItemstack input1, @Optional IItemstack input2, IItemstack output, int level);
-mods.rockytweaks.Merchant.addTrade("minecraft:nitwit", "nitwit", <minecraft:emerald>, <minecraft:diamond>, <minecraft:cobblestone>, 1);
+// 添加交易 (行业，字符串职业，IItemstack input1，@Optional IItemstack input2，IItemstack output，int level)；
+mods.rockytweugs.Merchant.addTrade("minecraft:nitit"，"nitwit"， <minecraft:emerald>， <minecraft:diamond>， <minecraft:cobblestone>，, 1)；
 ```
 
-## Removal
+## 移除
 
-Merchant trade removal is currently not possible.
+目前不可能取消商人的贸易。

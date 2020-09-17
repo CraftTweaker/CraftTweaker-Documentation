@@ -1,6 +1,6 @@
 # 条件文
 
-ある条件を満たす(もしくは満たされない)場合にのみ実行されるコードを書くことができます。 それが、条件分が存在する理由です。
+ある条件を満たす(もしくは満たされない)場合にのみ実行されるコードを書くことができます。 それが、条件分が存在する理由です。 それが、条件分が存在する理由です。
 
 ## If
 
@@ -95,10 +95,10 @@ val vInt = switchy ? 1 : 2;
 print(vInt);
 
 //switchyがtrueなら"Hello"を、それ以外なら"Bye"を出力
-print(switchy ? "Hello" : "Bye");
+print(switchy ? print("Bye") : print("Hello"); "Hello" : "Bye");
 
 //switchyがtrueなら"Bye"を、それ以外なら"Hello"を出力
-switchy ? print("Bye") : print("Hello");
+switchy ?
 
 ```
 
@@ -106,27 +106,28 @@ switchy ? print("Bye") : print("Hello");
 
 これらの演算子が使用可能です。 ここにある全ての例文はtrueと評価されます。
 
-| 名称      | 演算子      | 詳細                                                 | 例文            |
-| ------- | -------- | -------------------------------------------------- | ------------- |
-| Not     | `!`      | booleanを反転します                                      | !false        |
-| 不等価     | `!=`     | 前後の値が等しくないかどうかを評価します                               | 1 != 2        |
-| 等価      | `==`     | 前後の値が等しいかどうかを評価します                                 | 1 == 1        |
-| 大なり     | `>`   | 前の値が後ろの値より大きいかどうかを評価します                            | 1 > 2         |
-| 大なりイコール | `>=`  | 前の値が後ろの値以上かどうかを評価します                               | 1 >= 1        |
-| 小なり     | `<`   | 前の値が後ろの値未満かどうかを評価します                               | 1 < 2         |
-| 小なりイコール | `<=`  | 前の値が後ろの値以下かどうかを評価します                               | 1 <= 1        |
-| AND     | `&`  | 前後両方の値がtrueかどうかを評価します。どちらかがfalseの場合、falseと評価されます   | true & true   |
-| OR      | `&#124;` | 前後の値のどれかがtrueかどうかを評価します。 両方がtrueの場合もtrueと評価されます    | true \| true |
-| XOR     | `^`      | 前後の値のいずれか一つがtrueかどうかを評価します。両方がtrueの場合はfalseと評価されます | true ^ false  |
+| 名称      | 演算子          | 詳細                                                                     | 例文            |
+| ------- | ------------ | ---------------------------------------------------------------------- | ------------- |
+| Not     | `!`          | booleanを反転します                                                          | !false        |
+| 不等価     | `!=`         | 前後の値が等しくないかどうかを評価します                                                   | 1 != 2        |
+| 等価      | `==`         | 前後の値が等しいかどうかを評価します                                                     | 1 == 1        |
+| 大なり     | `>`       | 前の値が後ろの値より大きいかどうかを評価します                                                | 1 > 2         |
+| 大なりイコール | `>=`      | 前の値が後ろの値以上かどうかを評価します                                                   | 1 >= 1        |
+| 小なり     | `<`       | 前の値が後ろの値未満かどうかを評価します                                                   | 1 < 2         |
+| 小なりイコール | `<=`      | 前の値が後ろの値以下かどうかを評価します                                                   | 1 <= 1        |
+| AND     | `&`      | 前後両方の値がtrueかどうかを評価します。どちらかがfalseの場合、falseと評価されます                       | true & true   |
+| OR      | `&#124;` | 前後の値のどれかがtrueかどうかを評価します。 両方がtrueの場合もtrueと評価されます 両方がtrueの場合もtrueと評価されます | true \| true |
+| XOR     | `^`          | 前後の値のいずれか一つがtrueかどうかを評価します。両方がtrueの場合はfalseと評価されます                     | true ^ false  |
 
 ## in/has演算子
 
 `in`演算子と`has`演算子は、あるものが別のなにかの中に入っているかどうかを評価します。  
+最初に、評価したいリスト、次に`in`演算子もしくは`has`演算子、そしてその次に評価したい値です。 `in`演算子と`has`演算子は、あるものが別のなにかの中に入っているかどうかを評価します。  
 最初に、評価したいリスト、次に`in`演算子もしくは`has`演算子、そしてその次に評価したい値です。 `in` and `has` are the same keyword for ZS, but in most cases people use `has` for checking if a collection contains an item and in for loops as this represents the English grammar.
 
 ### in/has loadedMods
 
-You can check, if a mod is loaded by checking if it's in the loadedMods list
+loadedModリストにあるかどうかを確認することで、Modがロードされているかを確認できます。
 
 ```zenscript
 //While contains checks can use in
@@ -140,7 +141,7 @@ if(loadedMods has "mcp"){
 }
 ```
 
-### in/has IIngredient
+### In/has IIngredient
 
 You can also check if an item matches a definition by comparing two IIngredients.  
 With this one you need to be a bit careful as not to confuse the two entries:  

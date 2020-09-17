@@ -1,28 +1,28 @@
-# PlayerVisibility
+# 玩家可见性
 
-This event is fired to determine the visibility of a player, i.e., whether or not they are close enough to be noticed by an attacker. The result of this event is used to calculate (with modifiers from Vanilla Minecraft for sneaking, etc) the range a player can get to a creature before that creature sees them.
+触发此事件是为了确定玩家的可见度，即他们是否接近到攻击者的注意力。 此事件的结果用于计算 (来自原版Minecraft 的修改者用于潜入, 等玩家可以在生物看到它们之前到达生物的范围。
 
-While this can be used to increase the visibility range (if it were decreased by Minecraft or another mod), it cannot be increased above its maximum value (the standard target distance).
+虽然这可以用来提高可见度范围(如果它被Minecraft或其他模式降低), 它不能超过其最大值（标准目标距离）。
 
-## Event Class
+## 事件类
 You will need to cast the event in the function header as this class:  
 `crafttweaker.event.PlayerVisibilityEvent`  
 You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
 
-## Event interface extensions
-PlayerVisibilityEvent Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+## 事件界面扩展
+PlayerVisityEvent事件实现了以下接口，并且能够调用他们所有的方法/getter/setter：
 
 - [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
 
 
 ## ZenGetters/ZenSetters
-The following information can be retrieved/set during the event:
+以下信息可以在事件中检索/设置：
 
-| ZenGetter    | ZenSetter          | Type      |
-| ------------ | ------------------ | --------- |
-| `visibility` |                    | double    |
-|              | `modifyVisibility` | See note. |
+| ZenGetter | ZenSetter | 类型  |
+| --------- | --------- | --- |
+| `可见性`     |           | 双精度 |
+|           | `修改可见性`   | 见注。 |
 
-## Note
+## 说明
 
-This value cannot be directly set. Calling `modifyVisibility` with a double value will replace the modifier with the result of `modifiy * double value`.
+此值不能直接设置。 调用 `修改可见性` 双值将用 `修改结果* 替换修改者`。

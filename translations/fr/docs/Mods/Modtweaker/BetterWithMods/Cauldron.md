@@ -1,55 +1,60 @@
-# Cauldron
+# Chaudron
 
-## Basic Recipe
+## Recette basique
 
-* Adds a Unstoked Cauldron Recipe 
+* Ajoute une recette de chaudron non alimentée 
 
 ```zenscript
-mods.betterwithmods.Cauldron.addUnstoked(IIngredient[] inputs, IItemStack[] outputs);
-//Examples
+mods.betterwithmods.Cauldron.addUnstoked(IIngredient[] entrées, IItemStack[] sorties);
+//Exemples
 mods.betterwithmods.Cauldron.addUnstoked([<ore:cobblestone>],[<minecraft:stone>]);
 mods.betterwithmods.Cauldron.addUnstoked([<minecraft:dirt>],[<minecraft:grass>]);
 ```
 
-* Adds a Stoked Cauldron Recipe 
+* Ajoute une recette de chaudron stockée 
 
 ```zenscript
-mods.betterwithmods.Cauldron.addStoked(IIngredient[] inputs, IItemStack[] outputs);
-//Examples
+mods.betterwithmods.Cauldron.addStoked(IIngredient[] entrées, IItemStack[] sorties);
+//Exemples
 mods.betterwithmods.Cauldron.addStoked([<ore:cobblestone>],[<minecraft:stone>]);
 mods.betterwithmods.Cauldron.addStoked([<minecraft:dirt>],[<minecraft:grass>]);
 ```
 
-## Removal
+## Retirer
 
-* Remove a Cauldron recipe based on the output ```mods.betterwithmods.Cauldron.remove(IItemStack[] outputs);```
+* Retirer une recette de chaudron basée sur la sortie ```mods.betterwithmods.Cauldron.remove(IItemStack[] sorties);```
 
-* Remove all Cauldron recipes ```mods.betterwithmods.Cauldron.removeAll();```
+* Retirer toutes les recettes de chaudron ```mods.betterwithmods.Cauldron.removeAll();```
 
-## Builder
+## Constructeur
 
-The Cauldron has a recipe builder that allows more precise control over the recipes. All previous methods are simply short cuts to using the builder.
+Le chaudron a un constructeur de recettes qui permet un contrôle plus précis sur les recettes. Toutes les méthodes précédentes sont simplement des raccourcis vers l'utilisation du constructeur.
 
-* To create a new Cauldron builder. `mods.betterwithmods.Cauldron.builder()`
+* Créer un nouveau constructeur de chaudron. `mods.betterwithmods.Cauldron.builder()`
 
-* Cauldron methods
+* Méthodes de chaudron
     
     * Sets up the inputs and outputs of the recipe  
-            buildRecipe(IIngredient[] inputs, IItemStack[] outputs)
+        buildRecipe(IIngredient[] inputs, IItemStack[] outputs)  
+            buildRecipe(IIngrédient[] entrées, IItemStack[] sorties)
     
-    * Sets the priority of the recipe, the lower the priority the sooner it will be crafted. Default=0.  
-            setPriority(int priority)
+    * Définit la priorité de la recette, plus la priorité sera basse plus tôt elle sera créée. Default=0.  
+        setPriority(int priority)  
+            setPriority(int priorité)
     
-    * Set the Heat requirements of the recipe. Heat is used to check if the recipe can be made in a stoked or unstoked cauldron. Unstoked heat = 1, Stoked heat = 2. You can add custom heat sources, and even custom heat levels using the [Heat Registry](/Mods/Modtweaker/BetterWithMods/HeatRegistry/).  
-            setHeat(int heat)
+    * Définissez les exigences de chaleur de la recette. La chaleur est utilisée pour vérifier si la recette peut être fabriquée dans un chaudron cuisiné ou non stocké. Chauffage non alimenté = 1, Chauffage stocké = 2. You can add custom heat sources, and even custom heat levels using the [Heat Registry](/Mods/Modtweaker/BetterWithMods/HeatRegistry/).  
+        setHeat(int heat)  
+            setHeat(int chaleur)
     
     * Set the recipe to ignore the heat value and craft anyways  
-            setIgnoreHeat(boolean ignoreHeat)
+        setIgnoreHeat(boolean ignoreHeat)  
+            setIgnoreHeat(booléen ignoreHeat)
     
     * Finalize the recipe and add it to the game  
+        build()  
             build()
 
-### Example builder usage
+### Exemple d'utilisation du constructeur
 
 ```zenscript
 mods.betterwithmods.Cauldron.builder()

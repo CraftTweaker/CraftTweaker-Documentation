@@ -1,21 +1,21 @@
-# Heating
+# Chauffage
 
-## Package
+## Paquet
 ```zenscript
-import mods.terrafirmacraft.Heating;
+Importer mods.terrafirmacraft.Chauffage;
 ```
 
-## Addition
+## Ajouter
 
 ```zenscript
-Heating.addRecipe(String registryName, IItemStack input, IItemStack output, float transformTemp, float maxTemp);
+format@@0 Heating.addRecipe(String registryName, IItemStack input, IItemStack output, float transformTemp, float maxTemp);
 ```
-- transformTemp is at which temperature the recipe completely transform the input into the output stack.
-- maxTemp is at which temperature the input is destroyed. For a complete reference, check [Heating Temperatures](/Mods/Terrafirmacraft/HeatingTemperatures)
+- transformTemp est à la température de laquelle la recette transforme complètement l'entrée dans la pile de sortie.
+- maxTemp est à la température à laquelle l'entrée est détruite. Pour une référence complète, cochez [Températures de chauffage](/Mods/Terrafirmacraft/HeatingTemperatures)
 
-## Removal
+## Retirer
 
 ```zenscript
-Heating.removeRecipe(IItemStack output);
-Heating.removeRecipe(String registryName);
+Chauffage.removeRecipe(sortie IItemStack);
+Chauffage.removeRecipe(String registryName);
 ```

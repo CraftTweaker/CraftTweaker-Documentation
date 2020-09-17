@@ -1,122 +1,122 @@
 # IEventManager
 
-The IEventManager is what you're gonna need when dealing with event handlers.
+Le IEventManager est ce dont vous aurez besoin lorsque vous traiterez avec les gestionnaires d'événements.
 
-## Importing the class
+## Importation de la classe
 
-It might be required for you to [import](/AdvancedFunctions/Import/) the class if you encounter any issues.  
-`import crafttweaker.events.IEventManager;`
+Il peut être nécessaire pour vous de [importer](/AdvancedFunctions/Import/) la classe si vous rencontrez des problèmes.  
+`importer crafttweaker.events.IEventManager ;`
 
-## Calling the event manager
+## Appel au gestionnaire d'événements
 
-You can access the event manager using the [global `events` field](/Vanilla/Global_Functions/)
+Vous pouvez accéder au gestionnaire d'événements en utilisant le champ [global `événements`](/Vanilla/Global_Functions/)
 
-## How do events work?
+## Comment fonctionnent les événements ?
 
-You can add a function that represents the event and from there on you can decide what you want CrT to do if such an event occurs.  
-The most important thing to remember is that you need to **CAST THE EVENT TO IT'S TYPE!** as otherwise you will not be able to access any if it's ZenGetters.  
-If you simply want to print something where you don't need to access the event, then it's fine.
+Vous pouvez ajouter une fonction qui représente l'événement et, à partir de là, vous pouvez décider ce que vous voulez que CrT fasse si un tel événement se produit.  
+La chose la plus importante à retenir est que vous devez **CASTER L'ÉVÉNEMENT À CE TYPE !** sinon, vous ne serez pas en mesure d'y accéder si c'est ZenGetters.  
+Si vous voulez simplement imprimer quelque chose où vous n'avez pas besoin d'accéder à l'événement, alors c'est bien.
 
 ```zenscript
 events.onPlayerCrafted(function(event as crafttweaker.event.PlayerCraftedEvent){
     print("event".length);
     print(event.player.name);
-    event.player.xp += 1;
+    événement. layer.xp += 1;
 });
 
 
-events.onPlayerLoggedIn(function(event) {
-    //event instanceof Object -> No way of accessing it, so better cast!
-    print("SOMEONE HAS LOGGED IN!!!");
+événements. nPlayerLoggedIn(function(event) {
+    //event instanceof Object -> Aucun moyen d'y accéder, donc mieux caster !
+    print("SOMEONE A CONNECTÉ !!!");
 });
 ```
 
-## What events are available?
+## Quels sont les événements disponibles ?
 
-The ZenMethods would be what you'll need to call on `events`, the Event Class would be what you need to cast the event as.
+Les méthodes Zen seraient ce dont vous aurez besoin pour appeler les `événements`, la classe d'événement serait ce dont vous avez besoin pour lancer l'événement comme.
 
-| ZenMethod                   | Event Class                                                                                              |
-| --------------------------- | -------------------------------------------------------------------------------------------------------- |
-| onAllowDespawn              | [`crafttweaker.event.EntityLivingSpawnEvent`](/Vanilla/Events/Events/EntityLivingSpawn/)                 |
-| onAnimalTame                | [`crafttweaker.event.AnimalTameEvent`](/Vanilla/Events/Events/AnimalTame/)                               |
-| onBlockBreak                | [`crafttweaker.event.BlockBreak`](/Vanilla/Events/Events/BlockBreak/)                                    |
-| onBlockHarvestDrops         | [`crafttweaker.event.BlockHarvestDrops`](/Vanilla/Events/Events/BlockHarvestDrops/)                      |
-| onBlockPlace                | [`crafttweaker.event.BlockPlaceEvent`](/Vanilla/Events/Events/BlockPlace/)                               |
-| onCheckSpawn                | [`crafttweaker.event.EntityLivingExtendedSpawnEvent`](/Vanilla/Events/Events/EntityLivingSpawn/)         |
-| onCommand                   | [`crafttweaker.event.CommandEvent`](/Vanilla/Events/Events/CommandEvent/)                                |
-| onCriticalHit               | [`crafttweaker.event.CriticalHitEvent`](/Vanilla/Events/Events/CriticalHit/)                             |
-| onCropGrowPost              | [`crafttweaker.event.CropGrowPostEvent`](/Vanilla/Events/Events/CropGrowPost/)                           |
-| onCropGrowPre               | [`crafttweaker.event.CropGrowPreEvent`](/Vanilla/Events/Events/CropGrowPre/)                             |
-| onEnchantmentLevelSet       | [`crafttweaker.event.EnchantmentLevelSetEvent`](/Vanilla/Events/Events/EnchantmentLevelSet/)             |
-| onEnderTeleport             | [`crafttweaker.event.EnderTeleportEvent`](/Vanilla/Events/Events/EnderTeleport/)                         |
-| onEntityLivingAttacked      | [`crafttweaker.event.EntityLivingAttackedEvent`](/Vanilla/Events/Events/EntityLivingAttacked/)           |
-| onEntityLivingDeath         | [`crafttweaker.event.EntityLivingDeathEvent`](/Vanilla/Events/Events/EntityLivingDeath/)                 |
-| onEntityLivingDeathDrops    | [`crafttweaker.event.EntityLivingDeathDropsEvent`](/Vanilla/Events/Events/EntityLivingDeathDrops/)       |
-| onEntityLivingFall          | [`crafttweaker.event.EntityLivingFallEvent`](/Vanilla/Events/Events/EntityLivingFall/)                   |
-| onEntityLivingHurt          | [`crafttweaker.event.EntityLivingHurtEvent`](/Vanilla/Events/Events/EntityLivingHurt/)                   |
-| onEntityLivingJump          | [`crafttweaker.event.EntityLivingJumpEvent`](/Vanilla/Events/Events/EntityLivingJump/)                   |
-| onEntityLivingUseItem       | [`crafttweaker.event.EntityLivingUseItemEvent.All`](/Vanilla/Events/Events/LivingEntityUseItem/)         |
-| onEntityLivingUseItemFinish | [`crafttweaker.event.EntityLivingUseItemEvent.Finish`](/Vanilla/Events/Events/LivingEntityUseItem/)      |
-| onEntityLivingUseItemStart  | [`crafttweaker.event.EntityLivingUseItemEvent.Start`](/Vanilla/Events/Events/LivingEntityUseItem/)       |
-| onEntityLivingUseItemStop   | [`crafttweaker.event.EntityLivingUseItemEvent.Stop`](/Vanilla/Events/Events/LivingEntityUseItem/)        |
-| onEntityLivingUseItemTick   | [`crafttweaker.event.EntityLivingUseItemEvent.Tick`](/Vanilla/Events/Events/LivingEntityUseItem/)        |
-| onEntityMount               | [`crafttweaker.event.EntityMountEvent`](/Vanilla/Events/Events/EntityMount/)                             |
-| onEntityTravelToDimension   | [`crafttweaker.event.EntityTravelToDimensionEvent`](/Vanilla/Events/Events/EntityTravelToDimension/)     |
-| onEntityStruckByLightning   | [`crafttweaker.event.EntityStruckByLightningEvent`](/Vanilla/Events/Events/EntityStruckByLightning/)     |
-| onExplosionDetonate         | [`crafttweaker.event.ExplosionDetonateEvent`](/Vanilla/Events/Events/ExplosionDetonate/)                 |
-| onExplosionStart            | [`crafttweaker.event.ExplosionStartEvent`](/Vanilla/Events/Events/ExplosionStart/)                       |
-| onFarmlandTrample           | [`crafttweaker.event.FarmlandTrampleEvent`](/Vanilla/Events/Events/FarmlandTrample/)                     |
-| onItemExpire                | [`crafttweaker.event.ItemExpireEvent`](/Vanilla/Events/Events/ItemExpire/)                               |
-| onItemFished                | [`crafttweaker.event.ItemFishedEvent`](/Vanilla/Events/Events/ItemFished/)                               |
-| onItemToss                  | [`crafttweaker.event.ItemTossEvent`](/Vanilla/Events/Events/ItemToss/)                                   |
-| onLivingDestroyBlock        | [`crafttweaker.event.LivingDestroyBlockEvent`](/Vanilla/Events/Events/LivingDestroyBlock/)               |
-| onLivingExperienceDrop      | [`crafttweaker.event.LivingExperienceDropEvent`](/Vanilla/Events/Events/LivingExperienceDrop/)           |
-| onLivingKockBack            | [`crafttweaker.event.LivingKnockBackEvent`](/Vanilla/Events/Events/LivingKnockBack/)                     |
-| onLootingLevel              | [`crafttweaker.event.LootingLevelEvent`](/Vanilla/Events/Events/LootingLevel/)                           |
-| onMinecartCollision         | [`crafttweaker.event.MinecartCollisionEvent`](/Vanilla/Events/Events/MinecartCollision/)                 |
-| onMinecartInteract          | [`crafttweaker.event.MinecartInteractEvent`](/Vanilla/Events/Events/MinecartInteract/)                   |
-| onMobGriefing               | [`crafttweaker.event.MobGriefingEvent`](/Vanilla/Events/Events/MobGriefing/)                             |
-| onPlayerAdvancement         | [`crafttweaker.event.PlayerAdvancement`](/Vanilla/Events/Events/PlayerAdvancement/)                      |
-| onPlayerAnvilRepair         | [`crafttweaker.event.PlayerAnvilRepair`](/Vanilla/Events/Events/PlayerAnvilRepair/)                      |
-| onPlayerAttackEntity        | [`crafttweaker.event.PlayerAttackEntityEvent`](/Vanilla/Events/Events/PlayerAttackEntity/)               |
-| onPlayerBonemeal            | [`crafttweaker.event.PlayerBonemealEvent`](/Vanilla/Events/Events/PlayerBonemeal/)                       |
-| onPlayerBreakSpeed          | [`crafttweaker.event.PlayerBreakSpeed`](/Vanilla/Events/Events/PlayerBreakSpeed/)                        |
-| onPlayerBrewedPotion        | [`crafttweaker.event.PlayerBrewedPotion`](/Vanilla/Events/Events/PlayerBrewedPotion/)                    |
-| onPlayerChangedDimension    | [`crafttweaker.event.PlayerChangedDimensionEvent`](/Vanilla/Events/Events/PlayerChangedDimension/)       |
-| onPlayerCloseContainer      | [`crafttweaker.event.PlayerCloseContainerEvent`](/Vanilla/Events/Events/PlayerCloseContainer/)           |
-| onPlayerCrafted             | [`crafttweaker.event.PlayerCraftedEvent`](/Vanilla/Events/Events/PlayerCrafted/)                         |
-| onPlayerDeathDrops          | [`crafttweaker.event.PlayerDeathDropsEvent`](/Vanilla/Events/Events/PlayerDeathDrops/)                   |
-| onPlayerDestroyItem         | [`crafttweaker.event.PlayerDestroyItem`](/Vanilla/Events/Events/PlayerDestroyItem/)                      |
-| onPlayerFillBucket          | [`crafttweaker.event.PlayerFillBucketEvent`](/Vanilla/Events/Events/PlayerFillBucket/)                   |
-| onPlayerInteract            | [`crafttweaker.event.PlayerInteractEvent`](/Vanilla/Events/Events/PlayerInteract/)                       |
-| onPlayerInteractBlock       | [`crafttweaker.event.PlayerInteractBlockEvent`](/Vanilla/Events/Events/PlayerInteractBlock/)             |
-| onPlayerInteractEntity      | [`crafttweaker.event.PlayerInteractEntityEvent`](/Vanilla/Events/Events/PlayerInteractEntity/)           |
-| onPlayerItemPickup          | [`crafttweaker.event.PlayerItemPickupEvent`](/Vanilla/Events/Events/PlayerItemPickup/)                   |
-| onPlayerLeftClickBlock      | [`crafttweaker.event.PlayerLeftClickBlockEvent`](/Vanilla/Events/Events/PlayerLeftClickBlock/)           |
-| onPlayerLoggedIn            | [`crafttweaker.event.PlayerLoggedInEvent`](/Vanilla/Events/Events/PlayerLoggedIn/)                       |
-| onPlayerLoggedOut           | [`crafttweaker.event.PlayerLoggedOutEvent`](/Vanilla/Events/Events/PlayerLoggedOut/)                     |
-| onPlayerOpenContainer       | [`crafttweaker.event.PlayerOpenContainerEvent`](/Vanilla/Events/Events/PlayerOpenContainer/)             |
-| onPlayerPickupItem          | [`crafttweaker.event.PlayerPickupItemEvent`](/Vanilla/Events/Events/PlayerPickupItem/)                   |
-| onPlayerPickupXp            | [`crafttweaker.event.PlayerPickupXpEvent`](/Vanilla/Events/Events/PlayerPickupXp/)                       |
-| onPlayerRespawn             | [`crafttweaker.event.PlayerRespawnEvent`](/Vanilla/Events/Events/PlayerRespawn/)                         |
-| onPlayerRightClickItem      | [`crafttweaker.event.PlayerRightClickItemEvent`](/Vanilla/Events/Events/PlayerRightClickItem/)           |
-| onPlayerSetSpawn            | [`crafttweaker.event.PlayerSetSpawn`](/Vanilla/Events/Events/PlayerSetSpawn/)                            |
-| onPlayerSleepInBed          | [`crafttweaker.event.PlayerSleepInBedEvent`](/Vanilla/Events/Events/PlayerSleepInBed/)                   |
-| onPlayerSmelted             | [`crafttweaker.event.PlayerSmeltedEvent`](/Vanilla/Events/Events/PlayerSmelted/)                         |
-| onPlayerTick                | [`crafttweaker.event.PlayerTickEvent`](/Vanilla/Events/Events/PlayerTick/)                               |
-| onPlayerUseHoe              | [`crafttweaker.event.PlayerUseHoeEvent`](/Vanilla/Events/Events/PlayerUseHoe/)                           |
-| onPlayerVisibility          | [`crafttweaker.event.PlayerVisibilityEvent`](/Vanilla/Events/Events/PlayerVisibility/)                   |
-| onPotionBrewPost            | [`crafttweaker.event.PotionBrewPostEvent`](/Vanilla/Events/Events/PotionBrewPost/)                       |
-| onPotionBrewPre             | [`crafttweaker.event.PotionBrewPreEvent`](/Vanilla/Events/Events/PotionBrewPre/)                         |
-| onProjectileImpactArrow     | [`crafttweaker.event.ProjectileImpactArrowEvent`](/Vanilla/Events/Events/ProjectileImpactArrow/)         |
-| onProjectileImpactFireball  | [`crafttweaker.event.ProjectileImpactFireballEvent`](/Vanilla/Events/Events/ProjectileImpactFireball/)   |
-| onProjectileImpactThrowable | [`crafttweaker.event.ProjectileImpactThrowableEvent`](/Vanilla/Events/Events/ProjectileImpactThrowable/) |
-| onSleepingLocationCheck     | [`crafttweaker.event.SleepingLocationCheckEvent`](/Vanilla/Events/Events/SleepingLocationCheck/)         |
-| onSleepingTimeCheck         | [`crafttweaker.event.SleepingTimeCheckEvent`](/Vanilla/Events/Events/SleepingTimeCheck/)                 |
-| onSpecialSpawn              | [`crafttweaker.event.EntityLivingExtendedSpawnEvent`](/Vanilla/Events/Events/EntityLivingSpawn/)         |
+| Méthode Zen                            | Classe de l'événement                                                                                            |
+| -------------------------------------- | ---------------------------------------------------------------------------------------------------------------- |
+| onAllowDespawn                         | [`format@@0 crafttweaker.event.EntityLivingSpawnEvent`](/Vanilla/Events/Events/EntityLivingSpawn/)               |
+| onAnimalTame                           | [`AnimalTameEvent`](/Vanilla/Events/Events/AnimalTame/)                                                          |
+| format@@0 onBlockBreak                 | [`format@@0 crafttweaker.event.BlockBreak`](/Vanilla/Events/Events/BlockBreak/)                                  |
+| onBlockHarvestDrops                    | [`BlockHarvestDrops`](/Vanilla/Events/Events/BlockHarvestDrops/)                                                 |
+| onBlockPlace                           | [`format@@0 crafttweaker.event.BlockPlaceEvent`](/Vanilla/Events/Events/BlockPlace/)                             |
+| onCheckSpawn                           | [`format@@0 crafttweaker.event.EntityLivingExtendedSpawnEvent`](/Vanilla/Events/Events/EntityLivingSpawn/)       |
+| onCommand                              | [`Évènement crafttweaker.CommandEvent`](/Vanilla/Events/Events/CommandEvent/)                                    |
+| onCriticalHit                          | [`format@@0 CriticalHitEvent`](/Vanilla/Events/Events/CriticalHit/)                                              |
+| format@@0 onCropGrowPost               | [`format@@0 crafttweaker.event.CropGrowPostEvent`](/Vanilla/Events/Events/CropGrowPost/)                         |
+| format@@0 onCropGrowPre                | [`format@@0 crafttweaker.event.CropGrowPreEvent`](/Vanilla/Events/Events/CropGrowPre/)                           |
+| format@@0 onEnchantmentLevel           | [`format@@0 crafttweaker.event.EnchantmentLevelSetEvent`](/Vanilla/Events/Events/EnchantmentLevelSet/)           |
+| format@@0 onEnderTeleport              | [`Événement d'EnderTeleportation`](/Vanilla/Events/Events/EnderTeleport/)                                        |
+| format@@0 onEntityLivingLivingAttacked | [`format@@0 crafttweaker.event.EntityLivingAttackedEvent`](/Vanilla/Events/Events/EntityLivingAttacked/)         |
+| format@@0 onEntityLivingDeath          | [`format@@0 crafttweaker.event.EntityLivingDeathEvent`](/Vanilla/Events/Events/EntityLivingDeath/)               |
+| format@@0 onEntityLivingDeathDrops     | [`format@@0 crafttweaker.event.EntityLivingDeathDropsEvent`](/Vanilla/Events/Events/EntityLivingDeathDrops/)     |
+| onEntityLivingFall                     | [`format@@0 crafttweaker.event.EntityLivingFallEvent`](/Vanilla/Events/Events/EntityLivingFall/)                 |
+| en cours de vie sur une entité         | [`format@@0 crafttweaker.event.EntityLivingHurtEvent`](/Vanilla/Events/Events/EntityLivingHurt/)                 |
+| format@@0 onEntityLivingJump           | [`format@@0 crafttweaker.event.EntityLivingJumpEvent`](/Vanilla/Events/Events/EntityLivingJump/)                 |
+| onEntityLivingUseItem                  | [`crafttweaker.event.EntityLivingUseItemEvent.All`](/Vanilla/Events/Events/LivingEntityUseItem/)                 |
+| onEntityLivingUseItemFinish            | [`format@@0 crafttweaker.event.EntityLivingUseItemEvent`](/Vanilla/Events/Events/LivingEntityUseItem/)           |
+| onEntityLivingUseItemStart             | [`format@@0 crafttweaker.event.EntityLivingUseItemEvent.Start`](/Vanilla/Events/Events/LivingEntityUseItem/)     |
+| onEntityLivingUseItemStop              | [`Arrêt`](/Vanilla/Events/Events/LivingEntityUseItem/)                                                           |
+| onEntityLivingUseItemTick              | [`Tick`](/Vanilla/Events/Events/LivingEntityUseItem/)                                                            |
+| Montage onEntity                       | [`format@@0 crafttweaker.event.EntityMountEvent`](/Vanilla/Events/Events/EntityMount/)                           |
+| sur EntityTravelTo Dimension           | [`format@@0 crafttweaker.event.EntityTravelToDimensionEvent`](/Vanilla/Events/Events/EntityTravelToDimension/)   |
+| onEntityStruckByLightning              | [`format@@0 crafttweaker.event.EntityStruckByLightningEvent`](/Vanilla/Events/Events/EntityStruckByLightning/)   |
+| format@@0 onExplosionDetonate          | [`Événement ExplosionDetonateEvent`](/Vanilla/Events/Events/ExplosionDetonate/)                                  |
+| format@@0 onExplosionStart             | [`Événement de démarrage d'Explosion`](/Vanilla/Events/Events/ExplosionStart/)                                   |
+| format@@0 onFarmlandTrample            | [`FarmlandTrampleEvent`](/Vanilla/Events/Events/FarmlandTrample/)                                                |
+| format@@0 onItemExpire                 | [`format@@0 crafttweaker.event.ItemExpireEvent`](/Vanilla/Events/Events/ItemExpire/)                             |
+| format@@0 onItemFished                 | [`format@@0 crafttweaker.event.ItemFishedEvent`](/Vanilla/Events/Events/ItemFished/)                             |
+| onItemToss                             | [`format@@0 crafttweaker.event.ItemTossEvent`](/Vanilla/Events/Events/ItemToss/)                                 |
+| format@@0 onLivingDestroyBlock         | [`Évènement format@@0LivingDestroyBlockformat@@1`](/Vanilla/Events/Events/LivingDestroyBlock/)                   |
+| onLivingExperienceDrop                 | [`Événement « crafttweaker.» LivingExperience DropEvent`](/Vanilla/Events/Events/LivingExperienceDrop/)          |
+| onLivingKockBack                       | [`format@@0 crafttweaker.event.LivingKnockBackEvent`](/Vanilla/Events/Events/LivingKnockBack/)                   |
+| niveau de butin                        | [`Evénement de niveau de butin`](/Vanilla/Events/Events/LootingLevel/)                                           |
+| onMinecartCollision                    | [`MinecartCollisionEvent`](/Vanilla/Events/Events/MinecartCollision/)                                            |
+| sur MinecartInteract                   | [`Événement MinecartInteractEvent`](/Vanilla/Events/Events/MinecartInteract/)                                    |
+| onMobGriefing                          | [`Événement MobGriefingEvent`](/Vanilla/Events/Events/MobGriefing/)                                              |
+| format@@0 onPlayerAdvancement          | [`format@@0 crafttweaker.event.PlayerAdvancement`](/Vanilla/Events/Events/PlayerAdvancement/)                    |
+| format@@0 onPlayerAnvilRepair          | [`format@@0 crafttweaker.event.PlayerAnvilRepair`](/Vanilla/Events/Events/PlayerAnvilRepair/)                    |
+| onPlayerAttackEntity                   | [`format@@0 crafttweaker.event.PlayerAttackEntityEvent`](/Vanilla/Events/Events/PlayerAttackEntity/)             |
+| farine d'os de joueur                  | [`format@@0 crafttweaker.event.PlayerBonemealEvent`](/Vanilla/Events/Events/PlayerBonemeal/)                     |
+| format@@0 onPlayerBreakSpeed           | [`format@@0 crafttweaker.event.PlayerBreakSpeed`](/Vanilla/Events/Events/PlayerBreakSpeed/)                      |
+| onPlayerBrewedPotion                   | [`format@@0 crafttweaker.event.PlayerBrewedPotion`](/Vanilla/Events/Events/PlayerBrewedPotion/)                  |
+| onPlayerChangedDimension               | [`format@@0 crafttweaker.event.PlayerChangedDimensionEvent`](/Vanilla/Events/Events/PlayerChangedDimension/)     |
+| format@@0 onPlayerCloseContainer       | [`format@@0 crafttweaker.event.PlayerCloseContainerEvent`](/Vanilla/Events/Events/PlayerCloseContainer/)         |
+| onPlayerCrafted                        | [`format@@0 crafttweaker.event.PlayerCraftedEvent`](/Vanilla/Events/Events/PlayerCrafted/)                       |
+| onPlayerDeathDrops                     | [`format@@0 crafttweaker.event.PlayerDeathDropsEvent`](/Vanilla/Events/Events/PlayerDeathDrops/)                 |
+| format@@0 onPlayerDestroyItem          | [`format@@0 crafttweaker.event.PlayerDestroyItem`](/Vanilla/Events/Events/PlayerDestroyItem/)                    |
+| format@@0 onPlayerFiller Bucket        | [`format@@0 crafttweaker.event.PlayerFillBucketEvent`](/Vanilla/Events/Events/PlayerFillBucket/)                 |
+| format@@0 onPlayerInteract             | [`format@@0 crafttweaker.event.PlayerInteractEvent`](/Vanilla/Events/Events/PlayerInteract/)                     |
+| onPlayerInteractBlock                  | [`format@@0 crafttweaker.event.PlayerInteractBlockEvent`](/Vanilla/Events/Events/PlayerInteractBlock/)           |
+| format@@0 onPlayerInteractEntity       | [`format@@0 crafttweaker.event.PlayerInteractEntityEvent`](/Vanilla/Events/Events/PlayerInteractEntity/)         |
+| format@@0 onPlayerItemPickup           | [`format@@0 crafttweaker.event.PlayerItemPickupEvent`](/Vanilla/Events/Events/PlayerItemPickup/)                 |
+| onPlayerClickBlock                     | [`format@@0 crafttweaker.event.PlayerLeftClickBlockEvent`](/Vanilla/Events/Events/PlayerLeftClickBlock/)         |
+| onPlayerConnecté                       | [`format@@0 crafttweaker.event.PlayerLoggedInEvent`](/Vanilla/Events/Events/PlayerLoggedIn/)                     |
+| onPlayerLoggedOut                      | [`format@@0 crafttweaker.event.PlayerLoggedOutEvent`](/Vanilla/Events/Events/PlayerLoggedOut/)                   |
+| onPlayerOpenContainer                  | [`format@@0 crafttweaker.event.PlayerOpenContainerEvent`](/Vanilla/Events/Events/PlayerOpenContainer/)           |
+| format@@0 onPlayerPickupItem           | [`format@@0 crafttweaker.event.PlayerPickupItemEvent`](/Vanilla/Events/Events/PlayerPickupItem/)                 |
+| format@@0 onPlayerPickupXp             | [`format@@0 crafttweaker.event.PlayerPickupXpEvent`](/Vanilla/Events/Events/PlayerPickupXp/)                     |
+| format@@0 onPlayerRespawn              | [`format@@0 crafttweaker.event.PlayerRespawnEvent`](/Vanilla/Events/Events/PlayerRespawn/)                       |
+| onPlayerClickItem                      | [`format@@0 crafttweaker.event.PlayerRightClickItemEvent`](/Vanilla/Events/Events/PlayerRightClickItem/)         |
+| format@@0 onPlayerSetSpawn             | [`format@@0 crafttweaker.event.PlayerSetSpawn`](/Vanilla/Events/Events/PlayerSetSpawn/)                          |
+| onPlayerSleepInBed                     | [`format@@0 crafttweaker.event.PlayerSleepInBedEvent`](/Vanilla/Events/Events/PlayerSleepInBed/)                 |
+| onPlayerSmelted                        | [`format@@0 crafttweaker.event.PlayerSmeltedEvent`](/Vanilla/Events/Events/PlayerSmelted/)                       |
+| format@@0 onPlayerTick                 | [`format@@0 crafttweaker.event.PlayerTickEvent`](/Vanilla/Events/Events/PlayerTick/)                             |
+| onPlayerUseHoe                         | [`format@@0 crafttweaker.event.PlayerUseHoeEvent`](/Vanilla/Events/Events/PlayerUseHoe/)                         |
+| onPlayerVisibility                     | [`Événement de Visibilité des joueurs`](/Vanilla/Events/Events/PlayerVisibility/)                                |
+| format@@0 onPotionBrewPost             | [`format@@0 crafttweaker.event.PotionBrewPostEvent`](/Vanilla/Events/Events/PotionBrewPost/)                     |
+| format@@0 onPotionBrewPre              | [`format@@0 crafttweaker.event.PotionBrewPreEvent`](/Vanilla/Events/Events/PotionBrewPre/)                       |
+| onProjectileImpactFrow                 | [`format@@0 crafttweaker.event.ProjectileImpactArrowEvent`](/Vanilla/Events/Events/ProjectileImpactArrow/)       |
+| onProjectileImpactFireball             | [`format@@0 crafttweaker.event.ProjectileImpactFireballEvent`](/Vanilla/Events/Events/ProjectileImpactFireball/) |
+| format@@0 onProjectileImpactThrowable  | [`Événement ProjectileImpactThrowableEvent`](/Vanilla/Events/Events/ProjectileImpactThrowable/)                  |
+| onSleepingLocationCheck                | [`format@@0 crafttweaker.event.SleepingLocationCheckEvent`](/Vanilla/Events/Events/SleepingLocationCheck/)       |
+| onSleepingTimeCheck                    | [`format@@0 crafttweaker.event.SleepingTimeCheckEvent`](/Vanilla/Events/Events/SleepingTimeCheck/)               |
+| format@@0 onSpecialSpawn               | [`format@@0 crafttweaker.event.EntityLivingExtendedSpawnEvent`](/Vanilla/Events/Events/EntityLivingSpawn/)       |
 
-## Clear all event handlers
+## Effacer tous les gestionnaires d'événements
 
 ```zenscript
-events.clear();
+clear();
 ```

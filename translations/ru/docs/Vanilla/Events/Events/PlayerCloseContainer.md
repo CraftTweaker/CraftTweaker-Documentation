@@ -1,6 +1,6 @@
-# PlayerCloseContainer
+# Закрыть контейнер
 
-The PlayerCloseContainer Event is fired whenever a player closes a container.
+Событие Лидера CloseContainer запускается, когда игрок закрывает контейнер.
 
 ## Класс события
 You will need to cast the event in the function header as this class:  
@@ -8,7 +8,7 @@ You will need to cast the event in the function header as this class:
 You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
 
 ## Наследование от интерфейсов событий
-PlayerCloseContainer Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+События PlayerCloseContainer реализуют следующие интерфейсы и также могут вызвать все методы/getters/setters:
 
 - [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
 
@@ -18,4 +18,4 @@ PlayerCloseContainer Events implement the following interfaces and are able to c
 
 | ZenGetter   | Возвращаемый тип                             |
 | ----------- | -------------------------------------------- |
-| `container` | [IContainer](/Vanilla/Container/IContainer/) |
+| `контейнер` | [IContainer](/Vanilla/Container/IContainer/) |

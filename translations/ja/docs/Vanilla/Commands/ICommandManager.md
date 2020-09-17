@@ -1,7 +1,7 @@
 # ICommandManager
 
-The ICommandManager interface is managing commands. So you can use it to get and execute commands.  
-You can get this from an [IServer](/Vanilla/Game/IServer/) object.
+ICommandManager インターフェイスはコマンドを管理しています。 したがって、コマンドの取得と実行に使用できます。  
+これは [IServer](/Vanilla/Game/IServer/) オブジェクトから取得できます。
 
 ## パッケージのインポート
 
@@ -17,17 +17,17 @@ It might be required for you to import the package if you encounter any issues (
     </th>
     
     <th>
-      Type
+      タイプ
     </th>
   </tr>
   
   <tr>
     <td>
-      commands
+      コマンド
     </td>
     
     <td>
-      Map<String, <a href="/Vanilla/Commands/ICommand/">ICommand</a>\>
+      マップ<String, <a href="/Vanilla/Commands/ICommand/">ICommand</a>\>
     </td>
   </tr>
 </table>
@@ -38,6 +38,6 @@ It might be required for you to import the package if you encounter any issues (
 - List<String\> getTabCompletions([ICommandSender](/Vanilla/Commands/ICommandSender/) sender, String input, @Optional [IBlockPos](/Vanilla/World/IBlockPos/) pos);
 - List<[ICommand](/Vanilla/Commands/ICommand/)\> getPossibleCommands([ICommandSender](/Vanilla/Commands/ICommandSender/) sender);
 
-## Additional Info
+## 追加情報
 
-To add your own command, look at [CommandEvent](/Vanilla/Events/Events/CommandEvent/)
+独自のコマンドを追加するには、 [CommandEvent](/Vanilla/Events/Events/CommandEvent/) を参照してください。

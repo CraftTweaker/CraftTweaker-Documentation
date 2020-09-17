@@ -1,35 +1,35 @@
-# Brewing Recipe Handler
+# Пивоваренный Рецепт
 
-## Access the Brewing Handler
+## Получите доступ к пивоваренному хозяйству
 
-You can access the Brewing Handler using the `brewing` [global keyword](/Vanilla/Global_Functions/).
+Вы можете получить доступ к Пивоваренному Обработчику с помощью `пивоварня` [глобального ключевого слова](/Vanilla/Global_Functions/).
 
-## Recipe Methods
+## Методы рецепта
 
-A Brewing Recipe consists of 3 Parts:
+Зеленый Рецепт состоит из 3 частей:
 
-1. An Input (What is in the 3 "Bottle Slots")
-2. One or more possible Ingredients (What can go into the upper slot where netherwart goes)
-3. The output (What the recipe returns)
+1. Вход (что находится в 3 "Бутылочные слоты")
+2. Один или несколько возможных ингредиентов (что может пойти в верхний слот где уходит Нервард)
+3. Результат (возвращается рецепт)
 
-### Add Brewing Recipes
+### Добавить Рецепты Пива
 
 ```zenscript
 //brewing.addBrew(IIngredient input, IIngredient ingredient, IItemStack output, @Optional boolean hidden);
-brewing.addBrew(<ore:blockGlass>, <ore:logWood>, <minecraft:beacon>);
+brewing. ddBrew(<ore:blockGlass>, <ore:logWood>, <minecraft:beacon>);
 brewing.addBrew(<ore:ingotGold>, <minecraft:obsidian>, <minecraft:wool:3>, true);
 
 
-//brewing.addBrew(IIngredient input, IIngredient[] ingredients, IItemStack output, @Optional boolean hidden);
-brewing.addBrew(<minecraft:bedrock>, [<minecraft:lapis_ore>], <minecraft:sponge:1>);
+//пивование. ddBrew(IIngredient input, IIngredient[] ingredients, IItemStack, @Optional boolean hidden);
+brewing. ddBrew(<minecraft:bedrock>, [<minecraft:lapis_ore>], <minecraft:sponge:1>);
 brewing.addBrew(<minecraft:gold_block>, [<minecraft:iron_block>, <minecraft:lapis_block>], <minecraft:sponge:1>, true);
 ```
 
-### Remove Brewing Recipes
+### Удалить рецепты Пива
 
-Only works with JEI version 4.15.0.275 or higher.
+Работает только с JEI версией 4.15.0.275 или выше.
 
 ```zenscript
-//brewing.removeRecipe(IItemStack input, IItemStack ingredient);
+//brewing.removeRecipe(IItemStack input, IItemStack);
 brewing.removeRecipe(<minecraft:potion>.withTag({Potion: "minecraft:water"}), <minecraft:gunpowder>);
 ```

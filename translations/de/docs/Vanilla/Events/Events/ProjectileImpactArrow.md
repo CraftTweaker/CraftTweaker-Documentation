@@ -1,42 +1,42 @@
-# ProjectileImpactArrow
+# ProjektileImpactPfeil
 
-This event is fired whenever an arrow projectile impacts an entity but before damage, etc, is calculated. It is **cancelable**, and if canceled, the impact will not be processed.
+Dieses Ereignis wird abgefeuert, wenn ein Pfeil-Projektil auf eine Entität wirkt, aber vor dem Schaden, etc, berechnet wird. Es ist **widerrufbar**, und wenn abgebrochen, wird der Effekt nicht bearbeitet.
 
-Various values from the arrow entity are available through zengetters, and can be modified in order to adjust damage, knockback strength, pickup status, and determine (or force) a critical hit.
+Verschiedene Werte aus der Pfeileinheit sind über zengetters verfügbar und können geändert werden, um den Schaden anzupassen, Rückstoßstärke, Aufholstatus und einen kritischen Treffer bestimmen (oder erzwingen).
 
 ## Diese Klasse importieren
-It might be required to [import](/AdvancedFunctions/Import/) the class to avoid errors.  
-`import crafttweaker.event.ProjectileImpactArrowEvent;`
+Es könnte erforderlich sein, [die Klasse](/AdvancedFunctions/Import/) zu importieren, um Fehler zu vermeiden.  
+`importieren Sie crafttweaker.event.ProjectileImpactArrowEvent;`
 
-## Extending IEntityEvent
-ProjectileImpactArrow Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+## IEntityEvent wird erweitert
+ProjectileImpactPfeil Ereignisse implementieren die folgenden Schnittstellen und können alle ihre Methoden/Getters/Setter auch aufrufen:
 
 - [IProjectileEvent](/Vanilla/Events/Events/IProjectileEvent/)
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 
-## ZenGetters and ZenSetters
+## ZenGetters und ZenSetter
 
-The following information can be retrieved from the event:
+Die folgenden Informationen lassen sich von diesem Event (Ereignis) abrufen:
 
-| ZenGetter      | ZenSetter           | Type                                  |
-| -------------- | ------------------- | ------------------------------------- |
-| `arrow`        |                     | [IEntity](/Vanilla/Entities/IEntity/) |
-| `shooter`      |                     | [IEntity](/Vanilla/Entities/IEntity/) |
-| `damage`       | `damage`            | double                                |
-|                | `knockbackStrength` | int (setter only, no getter)          |
-| `isCritical`   | `isCritical`        | boolean                               |
-| `pickupStatus` |                     | String                                |
+| ZenGetter     | ZenSetter          | Type                                  |
+| ------------- | ------------------ | ------------------------------------- |
+| `pfeil`       |                    | [IEntity](/Vanilla/Entities/IEntity/) |
+| `schießen`    |                    | [IEntity](/Vanilla/Entities/IEntity/) |
+| `schaden`     | `schaden`          | double                                |
+|               | `rückstock-Stärke` | int (nur setter, kein getter)         |
+| `iskritisch`  | `iskritisch`       | boolean                               |
+| `abholstatus` |                    | String                                |
 
-## Additional methods
+## Zusätzliche Methoden
 
 - `setPickupDisallowed()`
 
-Prevents the arrow from being picked up under any circumstances.
+Verhindert, dass der Pfeil unter keinen Umständen aufgehoben wird.
 
 - `setPickupAllowed()`
 
-Allows the arrow to be picked up from where the entity landed.
+Ermöglicht das Aufheben des Pfeiles, von dem aus die Entität landete.
 
 - `setPickupCreative()`
 
-Only allows the arrow to be picked up if the player is in creative mode.
+Der Pfeil kann nur aufgehoben werden, wenn sich der Spieler im Kreativmodus befindet.

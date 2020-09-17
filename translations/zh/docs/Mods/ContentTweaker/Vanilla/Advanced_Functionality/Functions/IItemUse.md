@@ -1,43 +1,43 @@
-# IItemUse Function
+# IItemUse 函数
 
-An itemUseFunction is called whenever the associated [item](/Mods/ContentTweaker/Vanilla/Creatable_Content/Item/) is used on a block.
+每当在方块上使用关联的 [项目](/Mods/ContentTweaker/Vanilla/Creatable_Content/Item/) 时，都会调用物品功能。
 
 ## 导入相关包
 
-It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
-`import mods.contenttweaker.IItemUse;`
+如果您遇到任何问题，可能需要导入软件包，所以比抱歉更安全并添加导入。  
+`导入 mods.contenttweaker.IItemuse；`
 
-## Parameters
+## 参数
 
-The IItemUse function is a function with the following parameters (In this order):
+IItemUse 函数是一个具有以下参数的函数(按此顺序排列)：
 
-- [ICTPlayer](/Mods/ContentTweaker/Vanilla/Types/Player/ICTPlayer/) player → The player doing the right-click
-- [IWorld](/Mods/ContentTweaker/Vanilla/Types/World/IWorld/) world → The world the player is in
-- [IBlockPos](/Mods/ContentTweaker/Vanilla/Types/Block/IBlockPos/) pos → The Position of the block the item is used on
-- [Hand](/Mods/ContentTweaker/Vanilla/Types/Player/Hand/) hand → The used Hand (main or off)
-- [Facing](/Mods/ContentTweaker/Vanilla/Types/Block/Facing/) facing → The side of the block the item is used on
-- [Position3f](/Vanilla/Utils/Position3f/) blockHit → The block's relative X,Y and Z coordinate → All three are between 0 and 1
+- [ICTPlayer](/Mods/ContentTweaker/Vanilla/Types/Player/ICTPlayer/) 播放器 → 执行右键的播放器
+- [IWorld](/Mods/ContentTweaker/Vanilla/Types/World/IWorld/) world → 玩家所在的世界
+- [IBlockPos](/Mods/ContentTweaker/Vanilla/Types/Block/IBlockPos/) pos -> 该物品使用的方块的位置
+- [Hand](/Mods/ContentTweaker/Vanilla/Types/Player/Hand/) hand → 用过的手(主或关闭)
+- [正面](/Mods/ContentTweaker/Vanilla/Types/Block/Facing/) expressing -> 该物品使用的方块的边框
+- [Position3f](/Vanilla/Utils/Position3f/) blockHit → 方块的相对X、Y 和 Z 坐标 → 所有三个位置在 0 和 1 之间
 
-The function needs to return an [ActionResult](/Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/ActionResult/) object.
+函数需要返回 [动作结果](/Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/ActionResult/) 对象。
 
-## Example
+## 例子
 
 ```zenscript
-#loader contenttweaker
+#loader contenttinfinder
 
-import mods.contenttweaker.VanillaFactory;
-import mods.contenttweaker.ActionResult;
+import mods.contenttweiner.VanillaFactory;
+import mods.contenttweiner.ActionResult;
 
 var item = VanillaFactory.createItem("fake_flint");
 
-item.maxStackSize = 1;
-item.maxDamage = 50;
-item.onItemUse = function(player, world, pos, hand, facing, blockHit) {
-    var firePos = pos.getOffset(facing, 1);
-    if (world.getBlockState(firePos).isReplaceable(world, firePos)) {
-        world.setBlockState(<block:minecraft:fire>, firePos);
-        player.getHeldItem(hand).damage(1, player);
-        return ActionResult.success();
+it项。 axStackSize = 1；
+item.maxDamage = 50；
+项目。 nItemUse = function(player, world, pos, hand, facing, blockHit) v.
+    var firePos = pos). etOffset(facing, 1);
+    if world.getBlockState(firepos). sReplacable(world, firePos))
+        world etBlockState(<block:minecraft:fire>, 火焰)；
+        玩家. etHeldItem(hand).damage(1, player)；
+        返回 ActionResult。 uccess();
     }
 
     return ActionResult.pass();

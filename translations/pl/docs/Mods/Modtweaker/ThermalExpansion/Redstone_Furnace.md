@@ -1,39 +1,39 @@
-# Redstone Furnace
+# Piec Czerwonego Kamienia
 
-## Package
+## Pakiet
 
-`mods.thermalexpansion.RedstoneFurnace`
+`Piec Czerwonego kamienia`
 
-## Addition
+## Dodanie
 
 ```zenscript
-//mods.thermalexpansion.RedstoneFurnace.addRecipe(IItemStack output, IItemStack input, int energy);
+//mods.thermalexpansion.RedstoneFurnace.addRecipe(wyjście IItemStack, IItemStack, energia int);
 mods.thermalexpansion.RedstoneFurnace.addRecipe(<minecraft:gold_ingot>, <minecraft:iron_ingot>, 3600);
 ```
 
-## Removal
+## Usuwanie
 
 ```zenscript
-//mods.thermalexpansion.RedstoneFurnace.removeRecipe(IItemStack input);
+//mods.thermalexpansion.RedstoneFurnace.removeRecipe(wejście IItemStack);
 mods.thermalexpansion.RedstoneFurnace.removeRecipe(<minecraft:gold_ore>);
 ```
 
-## Pyrolitic Augment Addition
+## Dodanie pirolitycznego zwiększenia
 
-***Note that the energy is multiplied by `1.5`. If you specify `2000` energy, the recipe will actually cost `3000` RF. Likewise if you specify `1500`, it will cost `2250` RF.***
+***Zauważ, że energia jest pomnożona przez `1.5`. Jeśli określisz `2000` energię, przepis będzie kosztować `3000` RF. Podobnie, jeśli określisz `1500`, będzie to kosztować `2250` RF.***
 
-Example recipe to turn charcoal into coal coke, producing 250mb of creosote oil in the process.
+Przykładowy przepis na przekształcenie węgla drzewnego w koks węglowy, wytwarzając w tym procesie 250 mb oleju kreozotowego.
 
 ```zenscript
-//mods.thermalexpansion.RedstoneFurnace.addPyrolysisRecipe(IItemStack output, IItemStack input, int energy, int creosote);
+//mods.thermalexpansion.RedstoneFurnace.addPyrolysisRecipe(wyjście IItemStack, wejście IItemStack, energia int creosote);
 mods.thermalexpansion.RedstoneFurnace.addPyrolysisRecipe(<thermalfoundation:material:802>, <minecraft:coal:1>, 2000, 250);
 ```
 
-## Pyrolitic Augment Removal
+## Pirolityczne usunięcie
 
-Removes the recipe to convert coal into coal coke.
+Usuwa przepis na przekształcenie węgla w koks węglowy.
 
 ```zenscript
-//mods.thermalexpansion.RedstoneFurnace.removePyrolysisRecipe(IItemStack input);
+//mods.thermalexpansion.RedstoneFurnace.removePyrolysisRecipe(IItemStack);
 mods.thermalexpansion.RedstoneFurnace.removePyrolysisRecipe(<minecraft:coal>);
 ```

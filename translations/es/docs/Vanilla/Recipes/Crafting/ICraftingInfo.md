@@ -1,16 +1,16 @@
 # ICraftingInfo
 
-The IcraftingInfo object contains all kinds of information on the crafting process itself:
+El objeto IcraftingInfo contiene todo tipo de información sobre el proceso de fabricación en sí:
 
-## Importing the class
+## Importar la clase
 
 It might be required to [import](/AdvancedFunctions/Import/) the class to avoid errors.  
 `import crafttweaker.recipes.ICraftingInventory`
 
 ## ZenGetters
 
-| ZenGetter   |                                                                     |                                                    |
-| ----------- | ------------------------------------------------------------------- | -------------------------------------------------- |
-| `inventory` | [ICraftingInventory](/Vanilla/Recipes/Crafting/ICraftingInventory/) | The inventory the crafting is performed in         |
-| `player`    | [IPlayer](/Vanilla/Players/IPlayer/)                                | The player conducting the crafting                 |
-| `dimension` | int                                                                 | The dimension the crafting process is performed in |
+| ZenGetter    |                                                                     |                                                             |
+| ------------ | ------------------------------------------------------------------- | ----------------------------------------------------------- |
+| `inventario` | [ICraftingInventory](/Vanilla/Recipes/Crafting/ICraftingInventory/) | El inventario en el que se realiza la fabricación           |
+| `jugador`    | [IPlayer](/Vanilla/Players/IPlayer/)                                | El jugador que lleva a cabo la fabricación                  |
+| `dimensión`  | int                                                                 | La dimensión en la que se realiza el proceso de fabricación |

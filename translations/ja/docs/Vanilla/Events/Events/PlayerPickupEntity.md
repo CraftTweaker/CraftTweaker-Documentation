@@ -1,8 +1,8 @@
 # PlayerPickupEntity
 
-The PlayerPickupEntity Event is fired whenever a player interacts with an Entity.
+PlayerPickupEntity イベントはプレイヤーがエンティティと相互作用するたびに発生します。
 
-## Event Class
+## イベントクラス
 
 You will need to cast the event in the function header as this class:  
 `crafttweaker.event.PlayerPickupEvent`  
@@ -10,16 +10,16 @@ You can, of course, also [import](/AdvancedFunctions/Import/) the class before a
 
 ## ZenGetters
 
-The following information can be retrieved from the event:
+イベントから次の情報を取得できます。
 
-| ZenGetter   | Return Type                           |
-| ----------- | ------------------------------------- |
-| `canceled`  | boolean                               |
-| `processed` | boolean                               |
-| `player`    | [IPlayer](/Vanilla/Players/IPlayer/)  |
-| `entity`    | [IEntity](/Vanilla/Entities/IEntity/) |
+| ZenGetter | 戻り値                                   |
+| --------- | ------------------------------------- |
+| `キャンセル済み` | boolean型                              |
+| `処理されました` | boolean型                              |
+| `プレイヤー`   | [IPlayer](/Vanilla/Players/IPlayer/)  |
+| `エンティティ`  | [IEntity](/Vanilla/Entities/IEntity/) |
 
 ## ZenMethods
 
-- `event.cancel()` sets the event as cancelled.
-- `event.process()` sets the event as processed.
+- `event.cancel()` はイベントをキャンセルとして設定します。
+- `event.process()` はイベントを処理として設定します。

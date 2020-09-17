@@ -1,20 +1,20 @@
 # IEventHasResult
 
-This interface is extended by all Events that has a result that is used by the event. An event's result can be one of three values:
+Этот интерфейс расширен всеми событиями, которые имеют результат, используемый событием. Результат события может быть одним из трех значений:
 
-- allow
-- deny
-- default
+- разрешать
+- запретить
+- стандартный
 
-The meaning of these is dependent on context. Generally, denying an event prevents a specific event-related action from taking place (even if it wasn't guaranteed to take place). Likewise, allowing an event will force a behaviour to take place (even if it wasn't guaranteed). Default simply causes the event to continue with its normal logic. Not all events use every result.
+Значение этих слов зависит от контекста. Как правило, отказ предотвращает определённое событие (даже если это не гарантировано). Аналогичным образом, допущение события будет приводить к поведению (даже если это не будет гарантировано). По умолчанию событие просто заставляет его продолжать свою обычную логику. Не все события используют каждый результат.
 
 ## Импорт класса
-It might be required to [import](/AdvancedFunctions/Import/) the class to avoid errors.  
-`import crafttweaker.event.IEventHasResult;`
+Может потребоваться [импортировать](/AdvancedFunctions/Import/) класс, чтобы избежать ошибок.  
+`импорт crafttweaker.event.IEventHasResult;`
 
-## What can be done with them?
+## Что можно сделать с ними?
 
-- `event.result` Getter, returns a string value of `default`, `deny` or `allow`
-- `event.deny()` Method, sets the event's result to `deny`
-- `event.allow()` Method, sets the event's result to `allow`
-- `event.default()` Method, sets the event's result to `default`
+- `event.result` Getter, возвращает строковое значение `по умолчанию`, `отрицает` или `позволяет`
+- `event.deny()` Метод, устанавливает результат события на `запретить`
+- `event.allow()` Метод, устанавливает результат события в `разрешить`
+- `event.default()` Метод, устанавливает результат события на `по умолчанию`

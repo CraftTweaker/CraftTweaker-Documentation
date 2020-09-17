@@ -1,26 +1,26 @@
-# Moistener
+# Hidratante
 
-ModTweaker allows you to add or remove forestry Moistener Recipes
+ModTweaker te permite añadir o eliminar recetas de humectante forestal
 
-## Calling
+## Llamando
 
 You can call the package using `mods.forestry.Moistener`
 
-## Recipe Removal
+## Receta eliminada
 
 ```zenscript
-//mods.forestry.Moistener.removeRecipe(IIngredient output);
+//mods.forestry.Moistener.removeRecipe(salida IIngrediente);
 mods.forestry.Moistener.removeRecipe(<minecraft:stonebrick:1>);
 ```
 
-## Addition
+## Adicional
 
 ```zenscript
-//mods.forestry.Moistener.addRecipe(IItemStack output, IItemStack input, int packagingTime); 
+//mods.forestry.Moistener.addRecipe(salida IIItemStack, entrada ItemStack, int packagingTime); 
 mods.forestry.Moistener.addRecipe(<minecraft:mycelium>, <minecraft:grass>, 60); 
 ```
 
-## Fuel Removal
+## Eliminación de combustible
 
 ```zenscript
 //mods.forestry.Moistener.removeFuel(IIngredient moistenerItem);
@@ -28,16 +28,16 @@ mods.forestry.Moistener.removeFuel(<minecraft:wheat>);
 
 ```
 
-## Fuel Addition
+## Adición de combustible
 
 ```zenscript
-//mods.forestry.Moistener.addFuel(IItemStack item, IItemStack product, int moistenerValue, int stage);
+//mods.forestry.Moistener.addFuel(ítemStack item, producto ItemStack, int MoistenerValue, int stage);
 mods.forestry.Moistener.addFuel(<minecraft:gold_ingot>, <minecraft:iron_ingot>, 20, 2);
 ```
 
-| Parameter      | Type                                     | Description                                                                                  |
-| -------------- | ---------------------------------------- | -------------------------------------------------------------------------------------------- |
-| item           | [IItemStack](/Vanilla/Items/IItemStack/) | Item to become a valid fuel for the Moistener                                                |
-| product        | [IItemStack](/Vanilla/Items/IItemStack/) | Item that will leave the moistener's working slot (e.g. mouldy wheat or mulch).              |
-| MoistenerValue | int                                      | How much this item contributes to the final product of the moistener.                        |
-| stage          | int                                      | What stage this product represents. Resources with lower stage value will be consumed first. |
+| Parámetro        | Tipo                                     | Descripción                                                                                                     |
+| ---------------- | ---------------------------------------- | --------------------------------------------------------------------------------------------------------------- |
+| objeto           | [IItemStack](/Vanilla/Items/IItemStack/) | Objeto para convertirse en un combustible válido para el hidrógeno                                              |
+| producto         | [IItemStack](/Vanilla/Items/IItemStack/) | Objeto que dejará la ranura de trabajo del hidrógeno (por ejemplo, trigo mojado o mulch).                       |
+| Valor de humedad | int                                      | Cuánto contribuye este elemento al producto final del hidratante.                                               |
+| etapa            | int                                      | ¿Cuál es la etapa que representa este producto? Los recursos con valor de etapa más baja se consumirán primero. |

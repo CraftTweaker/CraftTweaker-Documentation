@@ -1,31 +1,31 @@
 # PlayerUseItemTick
 
-The PlayerUseItemTick Event is fired each tick a player consistently uses an item.
+Wydarzenie PlayerUseItemTick jest strzelane po każdym zaznaczeniu, że gracz konsekwentnie używa przedmiotu.
 
-## Event Class
+## Klasa wydarzenia
 
-You will need to cast the event in the function header as this class:  
-`crafttweaker.event.PlayerUseItemTick`  
-You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
+Musisz aktywować wydarzenie w nagłówku funkcji jako klasa:  
+`crafttweaker.event. layerUseItemTick`  
+Oczywiście możesz również [zaimportować](/AdvancedFunctions/Import/) klasę przed i wtedy użyć tej nazwy.
 
-## Event interface extensions
+## Rozszerzenia interfejsu zdarzenia
 
-PlayerUseItemTick Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+Zdarzenia PlayerUseItemTick zaimplementują następujące interfejsy i są również w stanie wywołać wszystkie swoje metody/getters/setters:
 
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
-- [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
+- [Wydarzenie IPlayer](/Vanilla/Events/Events/IPlayerEvent/)
 
 ## ZenGetters
 
-The following information can be retrieved from the event:
+Z wydarzenia można uzyskać następujące informacje:
 
-| ZenGetter  | Return Type                              |
-| ---------- | ---------------------------------------- |
-| `canceled` | boolean                                  |
-| `player`   | [IPlayer](/Vanilla/Players/IPlayer/)     |
-| `item`     | [IItemStack](/Vanilla/Items/IItemStack/) |
-| `duration` | int                                      |
+| ZenGetter      | Typ zwrotu                               |
+| -------------- | ---------------------------------------- |
+| `anulowane`    | boolean                                  |
+| `gracz`        | [IPlayer](/Vanilla/Players/IPlayer/)     |
+| `element`      | [IItemStack](/Vanilla/Items/IItemStack/) |
+| `czas trwania` | odcień                                   |
 
-## ZenMethods
+## Metody ZenMethods
 
-- `event.cancel()` sets the event as cancelled
+- `event.cancel()` ustawia wydarzenie jako anulowane

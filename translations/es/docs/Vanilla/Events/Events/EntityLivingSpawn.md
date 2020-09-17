@@ -1,40 +1,40 @@
 # EntityLivingSpawnEvent
 
-The EntityLivingSpawn Event is fired whenever an entity tries to join or leave a world.  
-It has one subclass, the EntityLivingExtendedSpawnEvent that also contains an [IMobSpawnerBaseLogic](/Vanilla/TileEntity/IMobSpawnerBaseLogic) reference.
+El evento EntityLivingSpawn se activa cada vez que una entidad intenta unirse o abandonar un mundo.  
+Tiene una subclase, la EntityLivingExtendedSpawnEvent que también contiene una referencia [IMobSpawnerBaseLogic](/Vanilla/TileEntity/IMobSpawnerBaseLogic).
 
-## Event Class
+## Clase de evento
 
-You will need to cast the event in the function header as this class:  
-`crafttweaker.event.EntityLivingSpawnEvent`  
-`crafttweaker.event.EntityLivingExtendedSpawnEvent`  
-You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
+Tendrás que lanzar el evento en el encabezado de la función como esta clase:  
+`más defensivo. vent.EntityLivingSpawnEvent`  
+`Crafttweaker. vent.EntityLivingExtendedSpawnEvent`  
+Puede, por supuesto, también [importar](/AdvancedFunctions/Import/) la clase anterior y utilizar ese nombre entonces.
 
-## Event interface extensions
+## Extensiones de la interfaz de eventos
 
-EntityLivingSpawn Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+EntityLivingSpawn Events implementan las siguientes interfaces y son capaces de llamar a todos sus métodos/getters/setters también:
 
 - [ILivingEvent](/Vanilla/Events/Events/ILivingEvent/)
 
 ## ZenGetters
 
-The following information can be retrieved from the event:
+La siguiente información puede ser recuperada del evento:
 
-| ZenGetter                 | Type                                                             |
-| ------------------------- | ---------------------------------------------------------------- |
-| `world`                   | [IWorld](/Vanilla/World/IWorld/)                                 |
-| `x`                       | float                                                            |
-| `y`                       | float                                                            |
-| `z`                       | float                                                            |
-|                           |                                                                  |
-| `spawner` (Extended Only) | [IMobSpawnerBaseLogic](/Vanilla/TileEntity/IMobSpawnerBaseLogic) |
+| ZenGetter                    | Tipo                                                         |
+| ---------------------------- | ------------------------------------------------------------ |
+| `mundo`                      | [IWorld](/Vanilla/World/IWorld/)                             |
+| `x`                          | flotante                                                     |
+| `y`                          | flotante                                                     |
+| `z`                          | flotante                                                     |
+|                              |                                                              |
+| `generador` (Solo Extendido) | [IMobSpawnerLogic](/Vanilla/TileEntity/IMobSpawnerBaseLogic) |
 
-## Event functions
+## Funciones del evento
 
-The despawn event also offers three functions to change the event outcome:
+El evento de desaparición también ofrece tres funciones para cambiar el resultado del evento:
 
-| ZenMethod | Description                                |
-| --------- | ------------------------------------------ |
-| `allow`   | Forces the entity to (de)spawn             |
-| `deny`    | Forces the entity not to (de)spawn         |
-| `pass`    | Sets the event result to the default state |
+| Método     | Descripción                                                |
+| ---------- | ---------------------------------------------------------- |
+| `permitir` | Fuerza la entidad a (de)spawn                              |
+| `negar`    | Obliga a la entidad a no aparecer (de)spawn                |
+| `pasar`    | Establece el resultado del evento en el estado por defecto |

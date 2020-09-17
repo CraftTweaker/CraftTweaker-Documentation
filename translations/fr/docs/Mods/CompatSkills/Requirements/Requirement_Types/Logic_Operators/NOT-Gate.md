@@ -1,10 +1,10 @@
-# NOT Operator
+# PAS Opérateur
 
-A **NOT** gate switches the state of the input. So if the input is `TRUE` then the output will be `FALSE` and vice versa.
+Une porte **PAS** communique l'état de l'entrée. Donc, si l'entrée est `TRUE` alors la sortie sera `FALSE` et vice versa.
 
-| Input | Output |
+| Input | Sortie |
 | ----- | ------:|
 | 0     |      1 |
 | 1     |      0 |
 
-The simplest logic requirement that Reskillable supports is the ability to invert a requirement. It does this using a NOT gate and the syntax for it is not|requirement. As described above in the section about Logic Gates, this logic requirement will only be marked as met if the specified requirement is not met.
+L'exigence logique la plus simple qui puisse être réaffirmée est la capacité d'inverser une exigence. Il fait cela en utilisant une porte NOT et la syntaxe pour elle n'est pas|requise. Comme décrit ci-dessus dans la section sur Logic Gates, cette exigence de logique ne sera marquée comme satisfaite que si la condition spécifiée n'est pas remplie.

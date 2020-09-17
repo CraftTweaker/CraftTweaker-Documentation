@@ -1,65 +1,65 @@
-# Altar Crafting
+# Ołtarz rzemieślniczy
 
-You can add and remove crafting recipes from the AS Altar.
+Możesz dodawać i usuwać przepisy tworzenia z Altaru AS.
 
-## Calling
+## Dzwonienie
 
-You can call the AltarRecipe package using `mods.astralsorcery.Altar`.
+Możesz wywołać pakiet AltarRecipe używając `mods.astralsorcery.Ołtarz`.
 
-## Remove Altar Recipes
+## Usuń przepisy Ołtarza
 
-This function removes the recipe with the given resource location.  
-You can get those locations by hovering over the recipe output in JEI or the Astral tome while the F3 screen is active.  
-Prints a warning if the recipe does not exist.
+Ta funkcja usuwa przepis z podaną lokalizacją zasobów.  
+Możesz dostać te lokalizacje przez najechanie na wyjściu receptury w JEI lub kompozycji Astralnej, gdy ekran F3 jest aktywny.  
+Wyświetla ostrzeżenie, jeśli przepis nie istnieje.
 
 ```zenscript
 //mods.astralsorcery.Altar.removeAltarRecipe(string recipeLocation);
-mods.astralsorcery.Altar.removeAltarRecipe("astralsorcery:shaped/internal/altar/lightwell");
+mods.astralsorcery.Altar.removeAltarRecipe("astralsorceryy:shaped/internal/altar/lightwell");
 ```
 
 <details><summary>Pre v1.10 handler</summary>
 
-This function removes the first recipe it finds that returns provided [IItemStack](../../../Vanilla/Items/IItemStack/) `output` and uses the provided altar level.  
-If there are multiple recipes that return the provided output, you need to call this method multiple times!
+Ta funkcja usuwa pierwszy przepis, który znajdzie zwrot dostarczony [IItemStack](../../../Vanilla/Items/IItemStack/) `wyjścia` i używa dostarczonego poziomu ołtarza.  
+Jeśli istnieje wiele receptur, które zwracają podaną wartość, musisz wywołać tę metodę wielokrotnie!
 
 <table>
-    <tr><th>Altar Level</th><th>Level name</th></tr>
-    <tr><td>0</td><td>Luminous Crafting Table</td></tr>
-    <tr><td>1</td><td>Starlight Crafting Altar</td></tr>
-    <tr><td>2</td><td>Celestial Altar</td></tr>
+    <tr><th>Poziom Ołtarza</th><th>Nazwa poziomu</th></tr>
+    <tr><td>0</td><td>Jasny stół rzemieślniczy</td></tr>
+    <tr><td>1</td><td>Ołtarz Wytwarzania Gwiazdy</td></tr>
+    <tr><td>2</td><td>Ołtarz Celestial</td></tr>
 </table>
 
 ```zenscript
-//mods.astralsorcery.Altar.removeAltarRecipe(IItemStack output, int altarLevel);
+//mods.astralsorcery.Altar.removeAltarRecipe(wyjście IItemStack, wyjście z altarLevel);
 mods.astralsorcery.Altar.removeAltarRecipe(<astralsorcery:blockblackmarble>, 0);
 ```
 
 </details>
 
-## Add Altar Recipes
+## Dodaj przepisy Ołtarza
 
-Since v1.10 all recipes require a resource location as first parameter.  
-Unlike vanilla recipe names, they are not optional and you will encounter errors if you do not provide it. If you want to override an existing recipe, you can just add a new recipe with the same location.  
-You can get those locations by hovering over the recipe output in JEI or the Astral tome while the F3 screen is active.
+Od v1.10 wszystkie przepisy wymagają lokalizacji zasobów jako pierwszy parametr.  
+W przeciwieństwie do nazw receptury vanilla nie są one opcjonalne i napotkasz błędy, jeśli ich nie podasz. Jeśli chcesz nadpisać istniejący przepis, możesz po prostu dodać nowy przepis o tej samej lokalizacji.  
+Możesz dostać te lokalizacje przez najechanie na wyjściu receptury w JEI lub kompozycji Astralnej, gdy ekran F3 jest aktywny.
 
-All recipe addition methods require these parameters:  
-string `recipeLocation`,  
-[IItemStack](/Vanilla/Items/IItemStack/) `output`,  
+Wszystkie metody dodawania receptury wymagają tych parametrów:  
+ciąg `przepis Lokalizacja`,  
+[IItemStack](/Vanilla/Items/IItemStack/) `wyjścia`  
 int `starlightRequired`,  
-int `craftingTickTime`,  
-[IIngredient](/Vanilla/Variable_Types/IIngredient/)[] `inputs`
+int `craftingTickTime`  
+[Składnik](/Vanilla/Variable_Types/IIngredient/)[] `wejścia`
 
-The `inputs` parameter is, unlike in Crafting Table recipes only a 1 Dimensional Array.  
-You can use [IItemStacks](/Vanilla/Items/IItemStack/), [ILiquidStacks](/Vanilla/Liquids/ILiquidStack/), [IOreDictEntries](/Vanilla/OreDict/IOreDictEntry/) or `null` as the array's members
+Parametr `wejścia` jest, w przeciwieństwie do receptury tabeli rzemieślniczej tylko 1 Tablica wymiarów.  
+Możesz użyć [IItemStacks](/Vanilla/Items/IItemStack/), [ILiquidStacks](/Vanilla/Liquids/ILiquidStack/), [IOreDictEnordy](/Vanilla/OreDict/IOreDictEntry/) lub `null` jako członkowie tablicy
 
-These recipes cannot be shapeless!
+Te przepisy nie mogą być bezkształtowane!
 
-### Discovery
+### Odkrycie
 
-`inputs` length *has to be* 9
+`wejścia` długość *musi być* 9
 
 `inputs` Order:  
-![Inputs Order](/Mods/Astral_Sorcery/Assets/guialtar1.png)
+![Zamówienie wejściowe](/Mods/Astral_Sorcery/Assets/guialtar1.png)
 
 ```zenscript
 mods.astralsorcery.Altar.addDiscoveryAltarRecipe("mypackname:shaped/internal/altar/dirtfromstuff", <minecraft:dirt>, 200, 200, [
@@ -68,66 +68,66 @@ mods.astralsorcery.Altar.addDiscoveryAltarRecipe("mypackname:shaped/internal/alt
             <liquid:astralsorcery.liquidstarlight>, null, <ore:treeLeaves>]);
 ```
 
-### Attunement
+### Załączniki
 
-Adds a recipe to the Starlight Crafting Table (T2)
+Dodaje przepis na stół rzemieślniczy Gwiazdy (T2)
 
-`inputs` length *has to be* 13
+`wejścia` długość *musi być* 13
 
 `inputs` Order:  
-![Inputs Order](/Mods/Astral_Sorcery/Assets/guialtar2.png)
+![Zamówienie wejściowe](/Mods/Astral_Sorcery/Assets/guialtar2.png)
 
 ```zenscript
-mods.astralsorcery.Altar.addAttunementAltarRecipe("mypackname:shaped/internal/altar/iguessmarble", <minecraft:dirt>, 500, 300, [
+mods.astralsorcery.Altar. ddAttunementAltarRecipe("mypackname:shaped/internal/altar/iguessmarble", <minecraft:dirt>, 500, 300, [
             null, null, null,
             <ore:treeLeaves>, <astralsorcery:blockmarble:2>, <ore:treeLeaves>,
             null, <liquid:astralsorcery.liquidstarlight>, null,
             <ore:blockMarble>, <ore:blockMarble>, <ore:blockMarble>, <ore:blockMarble>]);
 ```
 
-### Constellation
+### Konstelacja
 
-Adds a recipe to the Celestial Altar (T3)
+Dodaje przepis do Ołtarza Celestial (T3)
 
-`inputs` length *has to be* 21
+`wejścia` długość *musi być* 21
 
 `inputs` Order:  
-![Inputs Order](/Mods/Astral_Sorcery/Assets/guialtar3.png)
+![Zamówienie wejściowe](/Mods/Astral_Sorcery/Assets/guialtar3.png)
 
 ```zenscript
-mods.astralsorcery.Altar.addConstellationAltarRecipe("mypackname:shaped/internal/altar/thisisveryexpensive", <astralsorcery:itemcraftingcomponent:2>, 2000, 10, [
+mods.astralsorcery.Altar. ddConstellationAltarRecipe("mypackname:shaped/internal/altar/thisisveryexpensive", <astralsorcery:itemcraftingcomponent:2>, 2000, 10, [
             <ore:blockMarble>, <astralsorcery:blocklens>, <ore:blockMarble>,
             <ore:blockMarble>, <astralsorcery:itemcraftingcomponent:2>, <ore:blockMarble>,
             <ore:blockMarble>, <minecraft:nether_star>, <ore:blockMarble>,
-            null, null, <liquid:astralsorcery.liquidstarlight>, <liquid:astralsorcery.liquidstarlight>,
+            null, null, <liquid:astralsorcery.liquidstarlight> <liquid:astralsorcery.liquidstarlight>,
             <ore:blockMarble>, <ore:blockMarble>,
-            <minecraft:nether_star>, <minecraft:nether_star>,
-            <minecraft:nether_star>, <minecraft:nether_star>,
+            <minecraft:nether_star>, <minecraft:nether_star>
+            <minecraft:nether_star> <minecraft:nether_star>,
             <ore:blockMarble>, <ore:blockMarble>]);
 ```
 
-### Trait
+### Cecha
 
-Adds a recipe to the Trait Altar (T4)
+Dodaje przepis do Ołtarza Cechy (T4)
 
-`Constellation` the Constellation as an unlocalized String. This is an optional parameter.
+`Constellation` Constellation as a unlocalized String. Jest to parametr opcjonalny.
 
-`inputs` length *has to be* 25 or higher. Items at index 25 or higher will be considered as "outer items" that need to be put on relays around the altar.
+`wejścia` długość *musi być* 25 lub większa. Pozycje o indeksie 25 lub wyższym będą uważane za „pozycje zewnętrzne”, które należy umieścić na przekaźnikach wokół ołtarza.
 
 `inputs` Order:  
-![Inputs Order](/Mods/Astral_Sorcery/Assets/guialtar4.png)
+![Zamówienie wejściowe](/Mods/Astral_Sorcery/Assets/guialtar4.png)
 
 ```zenscript
-//mods.astralsorcery.Altar.addTraitAltarRecipe(string recipeLocation, IItemStack output, int starlight, int craftTickTime, IIngredient[] inputs, @optional String iRequiredConstellationFocusName);
+//mods.astralsorcery.Altar.addTraitAltarRecipe(ciąg receptur, wyjście IItemStack, int starlight, int craftTickTime, IIngredient[] wejść, @optional String iRequiredConstellationFocusName);
 
-mods.astralsorcery.Altar.addTraitAltarRecipe("mypackname:shaped/internal/altar/seemsalotforjusttnt", <minecraft:tnt>, 4500, 100, [
+mods.astralsorcery.Altar. ddTraitAltarRecipe("mypackname:shaped/internal/altar/seemsalotforjusttnt", <minecraft:tnt>, 4500, 100, [
     <liquid:lava>, <liquid:lava>, <liquid:lava>,<liquid:lava>, <minecraft:gunpowder>, 
-    <liquid:lava>, <liquid:lava>, <liquid:lava>, <liquid:lava>,null, 
-    null, null, null,<ore:blockMarble>, <ore:blockMarble>,
-    <astralsorcery:itemusabledust>, <astralsorcery:itemusabledust>, <astralsorcery:itemusabledust>, <astralsorcery:itemusabledust>,<ore:blockMarble>, 
-    <ore:blockMarble>,<minecraft:redstone>, <minecraft:redstone>,<minecraft:redstone>, <minecraft:redstone>,
-    //Outer Items, indices 25+
-    <minecraft:sand>, <minecraft:sand>, <minecraft:sand>, <minecraft:sand>, <minecraft:sand>
+    <liquid:lava>, <liquid:lava>, <liquid:lava> <liquid:lava>,null, 
+    null, null, null,<ore:blockMarble>, <ore:blockMarble>
+    <astralsorcery:itemusabledust>, <astralsorcery:itemusabledust>, <astralsorcery:itemusabledust>, <astralsorcery:itemusabledust>,<ore:blockMarble> 
+    <ore:blockMarble>,<minecraft:redstone>, <minecraft:redstone>,<minecraft:redstone>, <minecraft:redstone>
+    //Elementy zewnętrzne, indeksy 25+
+    <minecraft:sand>, <minecraft:sand> <minecraft:sand>, <minecraft:sand>, <minecraft:sand>
 ],
-"astralsorcery.constellation.evorsio");
+"astralsorcery. onstellation.evorsio);
 ```

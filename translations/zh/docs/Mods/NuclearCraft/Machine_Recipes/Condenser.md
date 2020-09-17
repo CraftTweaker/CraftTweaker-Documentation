@@ -1,16 +1,16 @@
-# Condenser
+# 冷凝器
 
-## Importing the Package
-`mods.nuclearcraft.condenser`
+## 导入软件包
+`nuclearcraft.condenser`
 
-## Adding Recipes
+## 添加配方
 ```zenscript
-mods.nuclearcraft.condenser.addRecipe([fluidInput, fluidOutput, @Optional double coolingRequired, @Optional int condensingTemperature]);
+mods.nuclearcraft.condenser.addRecipe([fluidInput, fluidOutput, @Optional double coolingRequire, @Opinion condensingTemperature]);
 ```
 
-## Removing Recipes
+## 删除配方
 ```zenscript
-mods.nuclearcraft.condenser.removeRecipeWithInput([fluidInput]);
-mods.nuclearcraft.condenser.removeRecipeWithOutput([fluidOutput]);
-mods.nuclearcraft.condenser.removeAllRecipes();
+mods.nuclearcraft.condenser.removeRecipeWidInput([fluidInput]);
+mods.nuclearcraft.condenser.removeReciputput([fluidOutput]);
+mods.nuclearcraft.condeners.removeAllRecipes();
 ```

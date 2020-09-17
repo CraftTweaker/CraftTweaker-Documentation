@@ -1,17 +1,17 @@
-# Condenser
-**Note: Partially Broken**
+# 冷凝器
+**注： 部分损坏**
 
-## Importing the Package
-`mods.nuclearcraft.Condenser`
+## 导入软件包
+`nuclearcraft。冷凝器`
 
-## Adding Recipes
+## 添加配方
 ```zenscript
-mods.nuclearcraft.Condenser.addRecipe(ILiquidStack fluidInput, ILiquidStack fluidOutput, @Optional double coolingRequired, @Optional int condensingTemperature);
+nuclearcraft。Condenser.addRecipe(ILiquidStack fluidInput, ILiquidStack fluidOutput, @Optional double cotiingRequire, @Optional int condensingTemperature);
 ```
 
-## Removing Recipes
+## 删除配方
 ```zenscript
-mods.nuclearcraft.Condenser.removeRecipeWithInput(ILiquidStack fluidInput);
-mods.nuclearcraft.Condenser.removeRecipeWithOutput(ILiquidStack fluidOutput);
-mods.nuclearcraft.Condenser.removeAllRecipes();
+nuclearcraft。Condenser.removeRecipeWidInput(ILiquidStack fluidInput);
+mods.nuclearcraft.Condenser.removeRecipeWidOutput(ILiquidStack fluidOut)；
+mods.nuclearcraft。Condenser.removeAllRecipes();
 ```

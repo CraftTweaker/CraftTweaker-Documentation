@@ -1,56 +1,60 @@
-# Saw
+# Scie
 
-## Basic Recipe
+## Recette basique
 
-* Adds Saw Recipe - inputs *MUST* have a block associated with them.
+* Ajoute une recette de Scie - les entrées *DOIVENT* avoir un bloc associé.
 
 ```zenscript
 mods.betterwithmods.Saw.add(IIngredient input, IItemStack[] output);
-//Examples
+//Exemples
 mods.betterwithmods.Saw.add(<minecraft:fence>,[<minecraft:stick>,<minecraft:stick>]);
 ```
 
-## Removal by input
+## Suppression par entrée
 
-* Remove a recipe based on the input ingredient
+* Supprimer une recette basée sur l'ingrédient d'entrée
 
 ```zenscript
 mods.betterwithmods.Saw.remove(IIngredient input);
 ```
 
-## Removal by output
+## Suppression par sortie
 
-* Remove a recipe based on the output
+* Supprimer une recette basée sur la sortie
 
 ```zenscript
-mods.betterwithmods.Saw.remove(IItemStack[] outputs);
+mods.betterwithmods.Saw.remove(IItemStack[] sorties);
 ```
 
-## Remove all
+## Retirer tout
 
-* Remove all recipes
+* Retirer toutes les recettes
 
 ```zenscript
 mods.betterwithmods.Saw.removeAll();
 ```
 
-## Builder
+## Constructeur
 
-The Saw has a recipe builder. Due to the nature of the saw it currently has no special builder methods, I will document it none-the-less.
+La Scie a un constructeur de recettes. En raison de la nature de la scie, il n'a actuellement pas de méthode spéciale constructeur, je vais le documenter inconditionnellement.
 
-* To create a new Saw builder. `mods.betterwithmods.Saw.builder()`
+* Créer un nouveau constructeur de Scies. `mods.betterwithmods.Saw.builder()`
 
-* Saw methods
+* Méthodes de Scie
      
      * Sets up the inputs and outputs of the recipe  
-              zenscript
-              buildRecipe(IIngredient[] inputs, IItemStack[] outputs)
+          zenscript buildRecipe(IIngredient[] inputs, IItemStack[] outputs)  
+              Sets up the inputs and outputs of the recipe<br />
+                    zenscript
+                    buildRecipe(IIngredient[] inputs, IItemStack[] outputs)
      
      * Finalize the recipe and add it to the game  
-              zenscript
-              build()
+          zenscript build()  
+              Finalize the recipe and add it to the game<br />
+                    zenscript
+                    build()
 
-### Example builder usage
+### Exemple d'utilisation du constructeur
 
     mods.betterwithmods.Saw.builder()
     .buildRecipe([<minecraft:oak_fence>], [<minecraft:stick>*6])

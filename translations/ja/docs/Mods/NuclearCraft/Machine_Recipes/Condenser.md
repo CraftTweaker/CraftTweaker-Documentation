@@ -1,16 +1,16 @@
-# Condenser
+# 凝縮器
 
-## Importing the Package
-`mods.nuclearcraft.condenser`
+## パッケージのインポート
+`mods.naturcraft.condenser`
 
-## Adding Recipes
+## レシピを追加中
 ```zenscript
-mods.nuclearcraft.condenser.addRecipe([fluidInput, fluidOutput, @Optional double coolingRequired, @Optional int condensingTemperature]);
+mods.nuclearcraft.condenser.addRecipe([fluidInput, fluidOutput, @Optional double coolingRequired, @Optional int condingTemperature]);
 ```
 
-## Removing Recipes
+## レシピを削除
 ```zenscript
-mods.nuclearcraft.condenser.removeRecipeWithInput([fluidInput]);
-mods.nuclearcraft.condenser.removeRecipeWithOutput([fluidOutput]);
-mods.nuclearcraft.condenser.removeAllRecipes();
+mods.nuclecraft.condenser.removeRecipeWithInput([fluidInput]);
+mods.nuclecraft.condenser.removeRecipeWithOutput([fluidOutput]);
+mods.nuclecraft.condenser.removeAllRecipes();
 ```

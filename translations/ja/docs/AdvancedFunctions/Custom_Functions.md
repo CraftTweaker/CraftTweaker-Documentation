@@ -1,10 +1,10 @@
-# Custom Functions
+# カスタム関数
 
-Sometimes the functions supplied by CT and addons just won't do it. Here's how to write your own functions! You can even nest functions in functions
+CTやアドオンによって提供される関数がそれを実行しないことがあります。 あなた自身の関数を書く方法は次のとおりです! 関数に入れ子にすることもできます
 
-## Basic Syntax
+## 基本構文
 
-Generally, you declare a static using:
+一般的に、静的な使用を宣言します。
 
 ```zenscript
 function NAME ([arguments[as type]]) [as returnType]{
@@ -13,16 +13,16 @@ function NAME ([arguments[as type]]) [as returnType]{
 }
 ```
 
-The things in brackets are optional, depending on what you want to achieve. Let's take a closer look at specific functions.
+括弧内のものは、達成したいものに応じて任意です。 具体的な機能を詳しく見てみましょう。
 
-## Static Functions
+## 静的関数
 
-Static functions are created before the script is run and can be accessed from anywhere in the script.  
-You can even access functions declared outside the script using the [cross-script reference](/AdvancedFunctions/Cross-Script_Reference).
+静的関数はスクリプトが実行される前に作成され、スクリプト内のどこからでもアクセスできます。  
+[クロススクリプト参照](/AdvancedFunctions/Cross-Script_Reference) を使用して、スクリプトの外で宣言された関数にアクセスすることもできます。
 
-### Void functions
+### 無効な機能
 
-Void functions are functions that will not return any value.
+Void 関数は、値を返さない関数です。
 
 ```zenscript
 //calls the function tens() without arguments
@@ -48,9 +48,9 @@ function realTens(a as string){
 }
 ```
 
-### Return functions
+### 戻り値関数
 
-You can also specify a value that should be returned by a function. It is recommended using the `as` keyword to define the return type.
+関数が返す値を指定することもできます。 戻り値の型を定義するには、 `を` キーワードとして使用することをお勧めします。
 
 ```zenscript
 //calls add function with 1 and 99 as parameters
@@ -67,12 +67,12 @@ function add(a as int,b as int) as int{
 }
 ```
 
-## Functions as variables
+## 変数としての関数
 
-You can also use functions like variables. In this case, they will be created as separate classes. Other than that, they work pretty much the same as static functions, you call them by their variable name.  
+変数などの関数も使用できます。 この場合、それらは個別のクラスとして作成されます。 Other than that, they work pretty much the same as static functions, you call them by their variable name.  
 You can even use them as [global variables](/AdvancedFunctions/Global_Static_Variables/) this way.
 
-If you need to cast the method (as you do for globals) you can use this:
+メソッドをキャストする必要がある場合 (グローバルに対してと同様)、以下を使用できます。
 
     global addition as function(int, int)int = function (a as int, b as int) as int {
         return a + b;

@@ -1,52 +1,52 @@
 # ILiquidDefinition
 
-The ILiquidDefinition defines the liquid an [ILiquidStack](/Vanilla/Liquids/ILiquidStack/) consists of. Unlike the ILiquidStack, this interface allows you to change fluid properties.
+ILiquidDefinition は、 [ILiquidStack](/Vanilla/Liquids/ILiquidStack/) が構成する液体を定義します。 ILiquidStackとは異なり、このインターフェイスでは流体特性を変更できます。
 
 ## パッケージのインポート
 
 It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
 `import crafttweaker.liquid.ILiquidDefinition;`
 
-## Methods
+## メソッド
 
-So, what can we do with it?
+では何ができるでしょうか？
 
-### Multiplication
+### 乗算
 
-Multiplying a ILiquidDefinition results in a new [ILiquidStack](/Vanilla/Liquids/ILiquidStack/) with the specified amount in millibuckets
+ILiquidDefinition の乗算は、指定された金額をミリバケット単位で新しい [ILiquidStack](/Vanilla/Liquids/ILiquidStack/) になります
 
 ```zenscript
 val def = <liquid:lava>.definition;
 
-//essentially the same
+//本質的に同じ
 val bucketOfLava = def * 1000;
 val bucketOfLava1 = <liquid:lava> * 1000;
 ```
 
-## Get and Set fluid properties
+## 流体特性の取得と設定
 
-As an ILiquidDefinition represents a liquid, you can get, but also set it's properties. Check the table below for further information.
+ILiquidDefinition が液体を表すので、取得できますが、プロパティも設定できます。 詳細は以下の表をご覧ください。
 
-Like in the table above, you set the Zengetter/Setter at the end of the ILiquidDefinition. Some ZenGetters have no according ZenSetter, you will need to rely on other means to alter these properties.
+上の表のように、ILiquidDefinitionの最後にZengetter/Setterを設定します。 一部の ZenGetters は、ZenSetter によると、これらのプロパティを変更する他の手段に依存する必要があります。
 
-Be careful with Zensetters though, they only alter the fluid registry and have no effect on fluids in the world. You will probably only need the temperature setter when messing with [Tinkers' Construct Smeltery fuels](/Mods/Modtweaker/TConstruct/Fuel/).
+しかし、Zensettersでは、液体のレジストリを変更するだけで、世界中の流体に影響はありません。 おそらく、 [ティンカーズ製錬所燃料](/Mods/Modtweaker/TConstruct/Fuel/)をいじくり回すときにのみ、温度設定が必要になるでしょう。
 
 ```zenscript
 val definition = <liquid:lava>.definition;
 
-//Zengetter: luminosity
-val lavaL = definition.luminosity;
+//Zengetter: 明るさ
+val lavaL = definition.lightinosity;
 
-//Zensetter: luminosity
-definition.luminosity = 0;
+//Zensetter: length
+definition.lightonity = 0;
 ```
 
-| Zengetter   | Zensetter   | What is this?                                            | Return/Set Type |
-| ----------- | ----------- | -------------------------------------------------------- | --------------- |
-| name        |             | This returns the unlocalized liquid name                 | string          |
-| displayName |             | This returns the localized liquid name                   | string          |
-| luminosity  | luminosity  | This returns/sets the luminosity of the referred liquid  | int             |
-| density     | density     | This returns/sets the density of the referred liquid     | int             |
-| temperature | temperature | This returns/sets the temperature of the referred liquid | int             |
-| viscosity   | viscosity   | This returns/sets the viscosity of the referred liquid   | int             |
-| gaseous     | gaseous     | This returns/sets whether the referred liquid is gaseous | boolean         |
+| Zengetter   | Zensetter | これは何ですか？                  | 戻り値/セットタイプ |
+| ----------- | --------- | ------------------------- | ---------- |
+| name        |           | ローカライズされていない液体名を返します。     | 文字列        |
+| displayName |           | ローカライズされた液体名を返します         | 文字列        |
+| 明るさ         | 明るさ       | これは、参照される液体の光度を返す/設定します   | int        |
+| density     | density   | これは、参照される液体の密度を返す/設定します   | int        |
+| 温度          | 温度        | これは、参照された液体の温度を返す/設定します   | int        |
+| 粘度|粘度       | 粘度|粘度     | これは、参照された液体の粘度を返す/設定します   | int        |
+| gaseous     | gaseous   | このリターン/液体が気体であるかどうかを設定します | boolean型   |

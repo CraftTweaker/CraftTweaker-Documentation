@@ -1,15 +1,15 @@
-# Enchanter
+# Verzauberer
 
-## Package
+## Paket
 
 ```zenscript
-import mods.aether_legacy.Enchanter;
+importieren mods.aether_legacy.Verzauberer;
 ```
-## Usage
+## Auslastung
 
 ```zenscript
-Enchanter.registerEnchantment(IItemStack input, IItemStack output, int timeRequired);
-// repairing tools and stuff
-Enchanter.registerEnchantment(IItemStack repair, int timeRequired);
-Enchanter.registerEnchanterFuel(IItemStack input, int timeGiven);
+Enchanter.registerEnchantment(IItemStack Eingabe, IItemStack Ausgabe, Int Zeiterforder);
+// Werkzeuge und Sachen reparieren
+Enchanter.registerEnchantment(IItemStack Reparatur, Int Zeiterforderlich);
+Enchanter.registerEnchanterFuel(IItemStack Input, int timeGiven);
 ```

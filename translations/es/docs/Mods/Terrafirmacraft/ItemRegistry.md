@@ -1,48 +1,48 @@
-# Item Registry
+# Registro del artículo
 
-## Package
+## Paquete
 ```zenscript
 // Imports ItemRegistry methods into your script
-import mods.terrafirmacraft.ItemRegistry;
+import mods.terrafirmacraft.ItemRegistry;Registro de objetos;
 ```
 
-## Register Item Size
-- Register item size and weight. This changes how much a stack can hold.
-- Sizes [TINY, VERY_SMALL, SMALL, NORMAL, LARGE, VERY_LARGE , HUGE]
-- Weights [VERY_LIGHT, LIGHT, MEDIUM, HEAVY, VERY_HEAVY]
+## Registrar tamaño del elemento
+- Registrar tamaño y peso del artículo. Esto cambia cuánto puede contener una pila.
+- Tamaños [TINY, VERY_SMALL, SMALL, NORMAL, LARGE, VERY_LARGE , HUGE]
+- Peso [VERY_LÍGHT, LÍGHT, MEDIUM, HEAVY, VERY_HEAVY]
 ```zenscript
-ItemRegistry.registerItemSize(IIngredient input, String size, String weight);
+ItemRegistry.registerItemSize(entrada IIngredient, tamaño de cadena, peso de cadena);
 ```
 
-## Register Item Heat
-- Register item heat capability and if this item is forgeable (eg: can be used in anvil).
-- Heat capacity determines how fast an item cools down/heat up. Wrought Iron is 0.35.
-- Melt temperature is at which temperature the item is melt. Wrought Iron is 1535 Brilliant White while Bronze is 950 Orange. For a complete reference, check [Heating Temperatures](/Mods/Terrafirmacraft/HeatingTemperatures)
+## Registrar elemento calor
+- Registrar la capacidad de calor del elemento y si este elemento es forjable (por ejemplo: se puede utilizar en yunque).
+- La capacidad de calor determina la rapidez con la que un objeto se enfría/calienta. El hierro forjado es 0.35.
+- La temperatura media es la temperatura a la que el elemento está fundido. El hierro forjado es 1535 Blanco Brillante mientras que el bronce es 950 Naranja. Para una referencia completa, consulte [Temperaturas de calefacción](/Mods/Terrafirmacraft/HeatingTemperatures)
 ```zenscript
-ItemRegistry.registerItemHeat(IIngredient input, float heatCapacity, float meltTemp, bool forgeable);
+ItemRegistry.registerItemHeat(Entrada IIngrediente, Capacidad de calor flotante, meltTemp, pluma forjable);
 ```
 
-## Register Item Metal
-- Register item as a metal item. Note that this automatically adds heating and forging capability. If canMelt is false this item won't bear the output directly (like iron ore needs bloomery/blast furnace)
-- Registered metal ingot items aren't automatically registered as a valid input for tools (eg: Steel ingot from other mods registered by registerMetalItem method won't be automatically workable to TFC steel pickaxe head)
+## Registrar Artículo Metal
+- Registrar elemento como elemento metálico. Tenga en cuenta que esto añade automáticamente la capacidad de calefacción y forjado. Si el canMelt es falso, este objeto no cargará la salida directamente (como el mineral de hierro necesita horno de flor/explosión)
+- Los elementos de lingote de metal registrados no están registrados automáticamente como una entrada válida para las herramientas (por ejemplo: la ingota de acero de otros mods registrados por el método registerMetalItem no será automáticamente viable para la cabeza del pico de acero TFC)
 ```zenscript
-ItemRegistry.registerItemMetal(IIngredient input, String metal, int units, bool canMelt);
+ItemRegistry.registerItemMetal(Entrada IIngrediente, Cadena metal, unidades enteras, libros);
 ```
 
-## Register Food
-- Register item food stats (Does not work on TFC Foods), This takes priority over existing values. Setting Decay to 0 stops decay from happening.
+## Registrar comida
+- Registrar las estadísticas de alimentos del ítem (no funciona en TFC Foods), Esto tiene prioridad sobre los valores existentes. Establecer la decadencia en 0 detiene la decadencia de suceder.
 ```zenscript
-ItemRegistry.registerFood(IIngredient input, int hunger, float water, float saturation, float decay, float grain, float veg, float fruit, float meat, float dairy);
+ItemRegistry.registerFood(Entrada IIngrediente, hambre, agua flotante, saturación flotante, descomposición flotante, grano flotante, verdura flotante, fruta flotante, carne flotante, carne flotante, productos lácteos);
 ```
 
-## Register Armor
-- Register armor stats
+## Registrar Armadura
+- Registrar estadísticas de armadura
 ```zenscript
-ItemRegistry.registerArmor(IIngredient input, float crushingModifier, float piercingModifier, float slashingModifier);
+ItemRegistry.registerArmor(entrada IIngredient, float trushingModifier, float piercingModifier, float slashingModifier);
 ```
 
-## Register Fuel
-- Register item as a fuel for fire pit, forge or bloomery
+## Registrar Fuel
+- Registrar elemento como combustible para fogones, forja o florecimiento
 ```zenscript
-ItemRegistry.registerFuel(IItemStack itemStack, int burnTicks, float temperature, bool forgeFuel, bool bloomeryFuel);
+ItemRegistry.registerFuel(IItemStack itemStack, int burnTicks, temperatura flotante, bool forgeFuel, bool bloomeryFuel);
 ```

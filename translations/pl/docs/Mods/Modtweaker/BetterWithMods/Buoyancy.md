@@ -1,10 +1,10 @@
-# Buoyancy
+# Pływalność
 
-Buoyancy effects the ability for an Item to float on water when HCBuoy is enabled in BWM.
+Efekt pływalności wpływa na zdolność Przedmiotu do pływania na wodzie, gdy HBWM jest włączony.
 
-Value can be a decimal between -1 and 1 where -1 sinks directly to the bottom, 0 reaches equilibrium, 1 floats on top.
+Wartość może być liczbą dziesiętną od -1 do 1, gdzie -1 pochłania bezpośrednio do dna, 0 osiąga równowagę, 1 pływaki na górze.
 
 ```zenscript
-mods.betterwithmods.Buoyancy.set(IItemStack stack, float value);
+mods.betterwithmods.Buoyancy.set(IItemStack stack, wartość zmienna);
 
 ```

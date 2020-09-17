@@ -24,7 +24,7 @@ addFuel(fluid: ILiquidStack, ticks: Int)
 
 `ticks` represents the number of ticks the specified fuel will burn for.
 
-##### Example
+##### 예제
 
 ```zenscript
 fuel().addFuel(<liquid:tf-sewage> * 50, 100);

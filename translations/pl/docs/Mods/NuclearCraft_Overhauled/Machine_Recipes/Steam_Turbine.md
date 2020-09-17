@@ -1,14 +1,14 @@
-# Steam Turbine
+# Turbina parowa
 
-## Importing the Package
-`mods.nuclearcraft.Turbine`
+## Importowanie pakietu
+`mods.nuclearcraft.Turbina`
 
-## Adding Recipes
+## Dodawanie przepisów
 ```zenscript
-mods.nuclearcraft.Turbine.addRecipe(ILiquidStack fluidInput, ILiquidStack fluidOutput, double powerPerMB, double expansionLevel, @Optional String particleEffect, @Optional double particleSpeedMultiplier);
+mods.nuclearcraft.Turbine.addRecipe(ILiquidStack fluidInput, ILiquidStack fluidOutput, podwójna moc PerMB, podwójna rozszerzenieLevel, @Optional String particleSpeedMultiplier);
 ```
 
-## Removing Recipes
+## Usuwanie przepisów
 ```zenscript
 mods.nuclearcraft.Turbine.removeRecipeWithInput(ILiquidStack fluidInput);
 mods.nuclearcraft.Turbine.removeRecipeWithOutput(ILiquidStack fluidOutput);

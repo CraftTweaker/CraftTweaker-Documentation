@@ -1,42 +1,42 @@
-# Arc Furnace
+# Piec Łukowy
 
-The Arc Furnace package can be used to add/remove recipes to/from the Immersive Engineering Arc Furnace.
+Pakiet Pieca Łukowego może być użyty do dodawania/usuwania przepisów do/z Pieca Łukowego Inżynierii.
 
-## Calling The Package
+## Wezwanie do pakietu
 
-You can call the ArcFurnace package using `mods.immersiveengineering.ArcFurnace`.
+Możesz wywołać pakiet ArcFurnace używając `mods.immersiveengineering.ArcFurnace`.
 
-## Add Recipe
+## Dodaj przepis
 
-| Required | Type                | Data Type                                                                              |
-| -------- | ------------------- | -------------------------------------------------------------------------------------- |
-| Required | Output              | [IItemStack](/Vanilla/Items/IItemStack/)                                               |
-| Required | Input               | [IIngredient](/Vanilla/Variable_Types/IIngredient/)                                    |
-| Required | Slag                | [IItemStack](/Vanilla/Items/IItemStack/)                                               |
-| Required | Time                | Integer                                                                                |
-| Required | Energy Per Tick     | Integer                                                                                |
-| Optional | Additives           | [IIngredient](/Vanilla/Variable_Types/IIngredient/) Array[]                            |
-| Optional | Special Recipe Type | String [specialRecipeTypes](/Mods/Immersive_Engineering/Variables/SpecialRecipeTypes/) |
+| Wymagane    | Typ                      | Typ danych                                                                             |
+| ----------- | ------------------------ | -------------------------------------------------------------------------------------- |
+| Wymagane    | Wyjście                  | [IItemStack](/Vanilla/Items/IItemStack/)                                               |
+| Wymagane    | Input                    | [Składnik](/Vanilla/Variable_Types/IIngredient/)                                       |
+| Wymagane    | Slag                     | [IItemStack](/Vanilla/Items/IItemStack/)                                               |
+| Wymagane    | Czas                     | Liczba całkowita                                                                       |
+| Wymagane    | Energia na wybór         | Liczba całkowita                                                                       |
+| Opcjonalnie | Dodatki                  | [Składnik](/Vanilla/Variable_Types/IIngredient/) Array[]                               |
+| Opcjonalnie | Typ przepisu specjalnego | String [specialRecipeTypes](/Mods/Immersive_Engineering/Variables/SpecialRecipeTypes/) |
 
-### Example
+### Przykład
 
 ```zenscript
 //Example:
-mods.immersiveengineering.ArcFurnace.addRecipe(IItemStack output, IIngredient input, IItemStack slag, int time, int energyPerTick, @Optional IIngredient[] additives, @Optional String specialRecipeType);
+mods.immersiveengineering.ArcFurnace.addRecipe(IItemStack output, IIngredient input, IItemStack slag, int time energyPerTick, @Optional IIngredient[] additives, @Optional String specialRecipeType);
 
-mods.immersiveengineering.ArcFurnace.addRecipe(<minecraft:diamond>, <ore:logWood>, <minecraft:dirt>, 2000, 2048);
-mods.immersiveengineering.ArcFurnace.addRecipe(<minecraft:diamond>, <ore:logWood>, <minecraft:dirt>, 2000, 2048, [<ore:oreIron>, <ore:oreGold>]);
-mods.immersiveengineering.ArcFurnace.addRecipe(<minecraft:diamond>, <ore:logWood>, <minecraft:dirt>, 2000, 2048, [<ore:oreIron>, <ore:oreGold>], "Ores");
-mods.immersiveengineering.ArcFurnace.addRecipe(<minecraft:diamond>, <ore:logWood>, <minecraft:dirt>, 2000, 2048, [<ore:oreIron>, <ore:oreGold>], "Alloying");
+mods. mmersiveengineering.ArcFurnace.addRecipe(<minecraft:diamond>, <ore:logWood>, <minecraft:dirt>, 2000, 2048);
+mods.immersiveengineering.ArcFurnace. ddRecipe(<minecraft:diamond>, <ore:logWood>, <minecraft:dirt>, 2000, 2048, [<ore:oreIron>, <ore:oreGold>]);
+mods.immersiveengineering. rcFurnace.addRecipe(<minecraft:diamond>, <ore:logWood>, <minecraft:dirt>, 2000, 2048, [<ore:oreIron>, <ore:oreGold>], "Ores");
+modów. mmersiveengineering.ArcFurnace.addRecipe(<minecraft:diamond>, <ore:logWood>, <minecraft:dirt>, 2000, 2048, [<ore:oreIron>, <ore:oreGold>], "Stocznia");
 ```
 
-## Remove Recipe
+## Usuń przepis
 
-| Type   | Data Type                                |
-| ------ | ---------------------------------------- |
-| Output | [IItemstack](/Vanilla/Items/IItemStack/) |
+| Typ     | Typ danych                               |
+| ------- | ---------------------------------------- |
+| Wyjście | [IItemstack](/Vanilla/Items/IItemStack/) |
 
-### Example
+### Przykład
 
 ```zenscript
 //Example:

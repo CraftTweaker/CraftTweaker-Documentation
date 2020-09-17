@@ -1,14 +1,14 @@
-# Infuser
+# Internaute
 
-## Importing the Package
-`mods.nuclearcraft.Infuser`
+## Importation du paquet en cours
+`mods.nuclearcraft.Internaute`
 
-## Adding Recipes
+## Ajout de recettes
 ```zenscript
 mods.nuclearcraft.Infuser.addRecipe(IIngredient itemInput, ILiquidStack fluidInput, IIngredient itemOutput, @Optional double timeMultiplier, @Optional double powerMultiplier, @Optional double processRadiation);
 ```
 
-## Removing Recipes
+## Suppression des recettes
 ```zenscript
 mods.nuclearcraft.Infuser.removeRecipeWithInput(IIngredient itemInput, ILiquidStack fluidInput);
 mods.nuclearcraft.Infuser.removeRecipeWithOutput(IIngredient itemOutput);

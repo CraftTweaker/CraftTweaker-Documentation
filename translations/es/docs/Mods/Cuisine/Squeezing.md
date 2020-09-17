@@ -1,31 +1,31 @@
-# Basin Squeezing
+# Cuenca de cuencas
 
-## Addition
+## Adicional
 
 ```zenscript
 import mods.cuisine.BasinSqueezing;
 
-BasinSqueezing.add(IIngredient input, ILiquidStack output, @Optional IItemStack extraOutput);
+BasinSqueezing.add(entrada IIngrediente, salida ILiquidStack, @extraSalida de ItemStack Opcional);
 
-BasinSqueezing.add(<item:minecraft:dirt>, <liquid:water> * 1000);
+BasinSqueezing. dd(<item:minecraft:dirt>, <liquid:water> * 1000);
 BasinSqueezing.add(<ore:cobblestone> * 2, <liquid:lava> * 1000, <item:minecraft:diamond>);
 ```
 
-## Removal
+## Eliminar
 
 ```zenscript
-import mods.cuisine.BasinSqueezing;
+importar mods.cuisine.BasinSqueezing;
 
-// Remove by inputs.
-BasinSqueezing.remove(IItemStack input, ILiquidStack inputFluid);
+// Quitar por las entradas.
+BasinSqueezing.remove(IItemStack entrada, ILiquidStack inputFluid);
 
 BasinSqueezing.remove(<item:minecraft:dirt>, <liquid:water> * 1000);
 
-// Remove by identifier.
+// Elimina por identificador.
 BasinSqueezing.remove(String id);
 
 BasinSqueezing.remove("recipe_name");
 
-// Remove everything!
+// ¡Elimina todo!
 BasinSqueezing.removeAll();
 ```

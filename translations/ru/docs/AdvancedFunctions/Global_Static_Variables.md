@@ -8,16 +8,16 @@
 
 ## Разница между статическими и глобальными
 
-Both, statics and globals are scriptbound and instantiated before the script is executed.  
-Both cannot be changed.  
-The difference is how they are called:  
-Globals can be called from everywhere simply by their name unless you already have a local variable that has the same name.  
-Statics on the other hand, need to use the [cross-script reference](/AdvancedFunctions/Cross-Script_Reference/) to be accessed.
+Оба, статика и глобальные являются скриптами и экземпляром до выполнения скрипта.  
+Оба сценария не могут быть изменены.  
+Разница в том, как они называются:  
+Глобалы можно вызвать везде просто по их имени, если у вас еще нет локальной переменной, имеющей одинаковое имя.  
+Статики, с другой стороны, необходимо использовать [межскриптовые ссылки](/AdvancedFunctions/Cross-Script_Reference/) , чтобы получить доступ.
 
-Globals are created using the `global` keyword.  
-Statics are created using the `static` keyword.
+Глобалы создаются с помощью `глобального ключевого слова` .  
+Статика создается с помощью `статического` ключевого слова.
 
-Aside from that, they are identical!
+Кроме того, они идентичны!
 
 ## Объявление глобального значения
 
@@ -35,12 +35,12 @@ static myStaticValue as IItemStack = <minecraft:sand>;
 
 1. `global` &mdash; ключевое слово, которое обозначает объявление глобального значения.
 2. `myGlobalValue` &mdash; название этого значения.
-3. `as IItemStack` the type of the value (It is recommended to [import](/AdvancedFunctions/Import/) the types before casting the variable)
+3. `в качестве IItemStack` тип значения (рекомендуется [импортировать](/AdvancedFunctions/Import/) типы перед наложение переменной)
 4. `= <minecraft:dirt>;` &mdash; инициализация значения. Так как глобальные значения неизменяемые, вы должны инициализировать их во время объявления!
 
 ## Советы
 
-- You can only access globals that have already been declared. Use the [Priority Preprocessor](/AdvancedFunctions/Preprocessors/PriorityPreprocessor/) to make sure the scripts in which global are declared are executed first.
-- Globals cannot be declared in scripts that are inside subfolders! It will compile but you will be left with a huge FieldNotFound Exception.
-- While it is technically possible to omit the `as` part, it is recommended leaving it in, as the IAny interface is not fully functional yet. Also, it makes your declaration more clear for people reading/debugging your script!
-- Local variables/values CAN overshadow global variables. The script will always search the innermost scope for variables and go outwards until it hits global when searching for keywords!
+- Вы можете получить доступ только к уже объявленным. Используйте [Препроцессор Приоритета](/AdvancedFunctions/Preprocessors/PriorityPreprocessor/) , чтобы убедиться, что сначала выполняются скрипты, декларируемые глобальным образом.
+- Глобалы не могут быть определены в скриптах, которые находятся в подпапках! Он компилируется, но вы останетесь с огромным исключением FieldNotFound.
+- Хотя технически возможно исключить `как часть` рекомендуется его оставить, так как интерфейс IAny еще не полностью функциональен. Также это делает ваше объявление более понятным для читающих/отладки вашего скрипта!
+- Локальные переменные/значения CAN overshadow global variables. Скрипт всегда будет искать самую уязвимую область для переменных и выходить за пределы до тех пор, пока он не попадет в глобальный при поиске ключевых слов!

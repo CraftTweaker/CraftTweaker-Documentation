@@ -1,19 +1,19 @@
 # Hammering
 
-## Package
+## Пакет
 ```zenscirpt
 `mods.exnihilocreatio.Hammer`
 ```
 
 ## Методы
 
-- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input** The block that needs to be broken.
-- **[IItemStack](/Vanilla/Items/IItemStack/) output** The item the block drops when broken.
-- **Int tool level** tool level for breaking the block.
-- **Float chance** chance between 0-1.
-- **Float fortune chance** chance between 0-1.
+- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) входной код** Блок должен быть нарушен.
+- **[IItemStack](/Vanilla/Items/IItemStack/) output** Блок падает при разрушении.
+- **Уровень инструмента Int** уровня для разбиения блока.
+- **Ледяной шанс** в диапазоне от 0 до 1.
+- **Ледяной шанс** в промежутке от 0 до 1.
 
-## Addition
+## Сложение
 
 ```zenscript
 mods.exnihilocreatio.Hammer.addRecipe(IIngredient, IItemStack, Int, Float, Float);
@@ -21,7 +21,7 @@ mods.exnihilocreatio.Hammer.addRecipe(IIngredient, IItemStack, Int, Float, Float
 mods.exnihilocreatio.Hammer.addRecipe(<minecraft:log>, <minecraft:plank>, 0, 0.25, 0.5);
 ```
 
-## Removal
+## Удаление
 
 ```zenscript
 mods.exnihilocreatio.Hammer.removeAll();

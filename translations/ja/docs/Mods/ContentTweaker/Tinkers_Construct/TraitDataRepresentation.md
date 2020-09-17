@@ -1,32 +1,32 @@
-# Trait Data Representation
+# トレイトデータの表現
 
-A Trait data representation represents a Tinkers' Construct Trait's Data and is ItemBound.  
-You can get such an object from an existing [Trait](/Mods/ContentTweaker/Tinkers_Construct/Trait/) object by supplying an IItemStack to the `getData` method.
+トレイトデータ表現は、ティンカーズがトレイトデータを構築することを表し、ItemBoundです。  
+[getData](/Mods/ContentTweaker/Tinkers_Construct/Trait/) メソッドに IItemStack を供給することで、既存の `Trait` オブジェクトからこのようなオブジェクトを取得できます。
 
 ## クラスのインポート
 
 It might be required for you to import the class if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
 `import mods.contenttweaker.tconstruct.TraitDataRepresentation`
 
-## ZenGetter and ZenSetter
+## ZenGetterとZenSetter
 
-| 名称          | ZenGetter | ZenSetter | Type   |
-| ----------- | --------- | --------- | ------ |
-| color       | ✔         | ✔         | int    |
-| current     | ✔         | ✔         | int    |
-| extraInfo   | ✔         | ✔         | string |
-| identifier  | ✔         | ✔         | string |
-| level       | ✔         | ✔         | int    |
-| max         | ✔         | ✔         | int    |
-| info        | ✔         |           | string |
-| colorString | ✔         |           | string |
+| 名称          | ZenGetter | ZenSetter | タイプ |
+| ----------- | --------- | --------- | --- |
+| 色           | ✔         | ✔         | int |
+| 現在          | ✔         | ✔         | int |
+| extraInfo   | ✔         | ✔         | 文字列 |
+| identifier  | ✔         | ✔         | 文字列 |
+| レベル         | ✔         | ✔         | int |
+| 最大          | ✔         | ✔         | int |
+| 情報          | ✔         |           | 文字列 |
+| colorString | ✔         |           | 文字列 |
 
 ## ZenMethods
 
 ```zenscript
-//Does the same as myTraitData.info;
+//myTraitData.infoと同じです;
 myTraitData.calcInfo();
 
-//Does the same as myTraitData.colorString;
+//myTraitData.colorString;
 myTraitData.getColorString();
 ```

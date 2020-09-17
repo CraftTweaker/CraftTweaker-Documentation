@@ -1,103 +1,103 @@
 # IMachine
 
-An IMachine is the actual machine object, you can get it from the [IMachineRegistry](/Mods/ExtraUtilities2/CustomMachines/IMachineRegistry).
+IMachine 是实际机器对象，你可以从 [IMachineRegistry](/Mods/ExtraUtilities2/CustomMachines/IMachineRegistry) 获取。
 
 ## 导入相关包
 
-It might be required for you to [import](/AdvancedFunctions/Import) the class.  
-You usually only need to import a class when directly using the name, such as in casting or [Array Declarations](/AdvancedFunctions/Arrays_and_Loops) but better be safe than sorry and add the import.
+您可能需要 [导入类](/AdvancedFunctions/Import) 。  
+您通常只需要在直接使用名称时导入类 例如在铸造或 [数组声明](/AdvancedFunctions/Arrays_and_Loops) 但比抱歉更安全并添加导入。
 
 ```zenscript
-import extrautilities2.Tweaker.IMachine;
+导入 exautilities2.Tweeper.IMachine;
 ```
 
-## Add Recipes
+## 添加配方
 
-There are two methods for adding recipes, one uses a probability map for the outputs, one allows for the use of [WeightedItemStack](/Vanilla/Items/WeightedItemStack) and [WeightedLiquidStack](/Vanilla/Liquids/WeightedLiquidStack) objects.  
-Both methods use [maps](/AdvancedFunctions/Associative_Arrays) with strings as indices.  
-These strings will be the names of the input/output slots given, which is why you should not have two slots with the same name in a machine.
+有两种方法来添加配方，一种方法使用产出概率图。 一个允许使用 [重量物品堆栈](/Vanilla/Items/WeightedItemStack) 和 [重量液化堆栈](/Vanilla/Liquids/WeightedLiquidStack) 对象。  
+两种方法均使用 [映射](/AdvancedFunctions/Associative_Arrays) 以字符串作为指数。  
+这些字符串将是给定的输入/输出位置的名称。 这就是为什么你不应该在机器中有两个名称相同的位置。
 
-### Using a probability map
+### 使用概率地图
 
 ```zenscript
-myMachine.addRecipe(inputs, outputs, energy, time, probabilities);
+myMachine.addRecipe(投入、产出、能源、时间、概率)；
 ```
 
-This method uses the following parameters:
+此方法使用以下参数：
 
-| 名称            | 类型                                                           |
-| ------------- | ------------------------------------------------------------ |
-| inputs        | [IIngredient](/Vanilla/Variable_Types/IIngredient)[string\] |
-| outputs       | [IIngredient](/Vanilla/Variable_Types/IIngredient)[string\] |
-| energy        | int                                                          |
-| time          | int                                                          |
-| probabilities | float[string\]                                              |
+| 名称      | 类型                                               |
+| ------- | ------------------------------------------------ |
+| inputs  | [元素](/Vanilla/Variable_Types/IIngredient)[字符串\] |
+| outputs | [元素](/Vanilla/Variable_Types/IIngredient)[字符串\] |
+| 能源      | 整数                                               |
+| 时间      | 整数                                               |
+| 概率      | 浮点型变量[字符串\]                                     |
 
-### Using only the outputs map
+### 仅使用输出地图
 
-You can also only use the outputs map, then ExtUtils2 will check for any [WeightedItemStack](/Vanilla/Items/WeightedItemStack) and [WeightedLiquidStack](/Vanilla/Liquids/WeightedLiquidStack) objects and use their chances.  
-Remember, that adding anything other than those two or [IIngredient](/Vanilla/Variable_Types/IIngredient) as mapped value, will have no effect.
+您也只能使用输出映射。 然后ExtUtils2将检查任何 [重量物品堆栈](/Vanilla/Items/WeightedItemStack) 和 [重量液体堆栈](/Vanilla/Liquids/WeightedLiquidStack) 对象并使用他们的机会。  
+记住，添加除这两者之外的任何东西或 [IIngredient](/Vanilla/Variable_Types/IIngredient) 作为映射值将不会产生任何效果。
 
 ```zenscript
-myMachine.addRecipe(inputs, outputs, energy, time);
+myMachine.addRecipe(投入、产出、能源、时间)；
 ```
 
-This method uses the following parameters:
+此方法使用以下参数：
 
-| 名称      | 类型                                                           |
-| ------- | ------------------------------------------------------------ |
-| inputs  | [IIngredient](/Vanilla/Variable_Types/IIngredient)[string\] |
-| outputs | Object[string\]                                             |
-| energy  | int                                                          |
-| time    | int                                                          |
+| 名称      | 类型                                               |
+| ------- | ------------------------------------------------ |
+| inputs  | [元素](/Vanilla/Variable_Types/IIngredient)[字符串\] |
+| outputs | 对象[字符串\]                                        |
+| 能源      | 整数                                               |
+| 时间      | 整数                                               |
 
-## Remove recipes
+## 删除配方
 
-You can also remove recipes. Again, you use [maps](/AdvancedFunctions/Associative_Arrays) with strings as indices.
+您也可以删除配方。 再说一遍，你使用 [地图](/AdvancedFunctions/Associative_Arrays) 作为指数字符串。
 
-There are two methods, one uses [IIngredient](/Vanilla/Variable_Types/IIngredient) as values, and one that accepts a map with [IItemStack](/Vanilla/Items/IItemStack) and a map with [ILiquidStack](/Vanilla/Liquids/ILiquidStack) values.
+有两种方法，其中一种使用 [Igredient](/Vanilla/Variable_Types/IIngredient) 作为数值。 和一个接受带有 [IItemStack](/Vanilla/Items/IItemStack) 和带有 [ILiquidStack](/Vanilla/Liquids/ILiquidStack) 值的地图的人。
 
-### Using IIngredient
+### 使用 Igredient
 
 ```zenscript
-myMachine.removeRecipe(inputs);
+myMachine.removeRecipe(输入)；
 ```
 
-| Name   | Type                                                         |
-| ------ | ------------------------------------------------------------ |
-| inputs | [IIngredient](/Vanilla/Variable_Types/IIngredient)[string\] |
+| 名称     | 类型                                               |
+| ------ | ------------------------------------------------ |
+| inputs | [元素](/Vanilla/Variable_Types/IIngredient)[字符串\] |
 
-### Using separate maps for Items and Liquids
+### 使用单独的物品和液体地图
 
 ```zenscript
-myMachine.removeRecipe(items, liquids);
+myMachine.removeRecipe(物项、液体)；
 ```
 
-| Name    | Type                                                    |
-| ------- | ------------------------------------------------------- |
-| items   | [IItemStack](/Vanilla/Items/IItemStack)[string\]       |
-| liquids | [ILiquidStack](/Vanilla/Liquids/ILiquidStack)[string\] |
+| 名称 | 类型                                                      |
+| -- | ------------------------------------------------------- |
+| 项目 | [IItemStack](/Vanilla/Items/IItemStack)[string\]       |
+| 液体 | [ILiquidStack](/Vanilla/Liquids/ILiquidStack)[string\] |
 
-## Retrieving machine information
+## 检索机器信息
 
-You can also retrieve some information on the machine using the following methods:
+您还可以通过以下方法检索机器上的一些信息：
 
-- `getInputSlots()`: Returns all input slots as a List of [IMachineSlot](/Mods/ExtraUtilities2/CustomMachines/IMachineSlot).
-- `getOutputSlots()`: Returns all output slots as a List of [IMachineSlot](/Mods/ExtraUtilities2/CustomMachines/IMachineSlot).
-- `getSlot()`: Returns the [IMachineSlot](/Mods/ExtraUtilities2/CustomMachines/IMachineSlot) matching the name.
+- `getInputSlots()`: 返回所有输入槽作为 [IMachineSlot](/Mods/ExtraUtilities2/CustomMachines/IMachineSlot)
+- `getOutputSlots()`: 返回所有输出位置作为 [IMachineSlot](/Mods/ExtraUtilities2/CustomMachines/IMachineSlot)
+- `getSlot()`: 返回 [IMachineSlot](/Mods/ExtraUtilities2/CustomMachines/IMachineSlot) 匹配名称。
 
-## Naming the machine
+## 给机器命名。
 
-So far, all our machines will be named `machine.crafttweaker:your_machine_name` where `your_machine_name` is whatever name you used to create the machine.
+到目前为止，我们所有的机器都将被命名为 `machine.craftminstrer:your_machine_name` where `your_machine_name` 是你用来创建机器的任何名称。
 
-If you want the machine name localized, use either CrT's [IGame](/Vanilla/Game/IGame) capabilities or a custom lang file.
+如果你想要机器名称本地化，请使用 Crt's [IGame](/Vanilla/Game/IGame) 功能或自定义lang 文件。
 
-So if your machine name was `time_machine`, you would need to either call this in a script:
+所以，如果你的机器名称是 `time_phys`，你需要在脚本中调用这个脚本：
 
 ```zenscript
-game.setLocalization("machine.crafttweaker:time_machine", "Space Time distorter (Time machine)");
+game.setLocalization("machine.craftminstrer:time_machine", "Space Time distribut (Time machine)");
 ```
 
-Or add this to a lang file:
+或者将其添加到一个lang文件：
 
-    machine.crafttweaker:time_machine=Space Time distorter (Time machine)
+    machine.craftbiner:time_machine=Space Time districer (Time machine)

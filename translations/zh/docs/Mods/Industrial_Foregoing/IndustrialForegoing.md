@@ -1,19 +1,19 @@
-# Industrial Foregoing
+# 工业前景
 
-Industrial Foregoing's BioReactor, Laser Drill and Sludge Refiner CraftTweaker support.
+工业前景的生物反应堆、激光钻井和淤泥精炼工艺。
 
-### Item Weight
+### 物品权重
 
-The `ItemWeight` is a number that represents the chance of an item to get selected. For example:
+`物品重量` 是一个代表项目被选中的几率的数字。 例如：
 
-| Item  | Weight | Chance % |
-| ----- | ------ | -------- |
-| Stone | 99     | 99%      |
-| Dirt  | 1      | 1%       |
+| 项目 | 权重 | 概率  |
+| -- | -- | --- |
+| 石头 | 99 | 99% |
+| 泥土 | 1  | 1%  |
 
-| Item  | Weight | Chance % |
-| ----- | ------ | -------- |
-| Stone | 2      | 66%      |
-| Dirt  | 1      | 33%      |
+| 项目 | 权重 | 概率  |
+| -- | -- | --- |
+| 石头 | 2  | 66% |
+| 泥土 | 1  | 33% |
 
 ItemChance% = (ItemWeight/TotalWeight)*100

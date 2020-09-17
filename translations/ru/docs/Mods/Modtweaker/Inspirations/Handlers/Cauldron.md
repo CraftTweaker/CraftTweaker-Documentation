@@ -1,77 +1,77 @@
-# Cauldron
+# Котел
 
-The Cauldron package is used for adding/removing recipes for the cauldron. Note that if the cauldron is set to `simple` in the config, only recipes using water will be able to be crafted but all recipes will still show in JEI.
+Пакет котла используется для добавления/удаления рецептов котла. Обратите внимание, что если в конфигурации установлен котел `простой` , могут быть изготовлены только рецепты, использующие воду, но все еще будут показаны в JEI.
 
-## Calling
+## Звонок
 
-You can call the Cauldron package using `mods.inspirations.Cauldron`
+Вы можете вызвать пакет котлов с помощью `mods.inspirations.Cauldron`
 
-## Fluids
+## Жидкости
 
-Inspirations features three types of recipes using fluids: ones to transform an item using a fluid, ones to transform a fluid using an item, and ones to add fill with a fluid using an item. While all the handlers take on a fluid stack, only the fluid type will affect the recipe. Inspirations cauldrons use the vanilla system of three bottles in a cauldron so amounts are handled in another parameter.
+Вдохновение включает три типа рецептов с помощью жидкостей: один для преобразования предмета с помощью жидкости, для преобразования жидкости с помощью предмета, и единицы для добавления жидкости с помощью предмета. В то время как все обработчики принимают стек жидкости, только жидкий тип повлияет на рецепт. Вдохновляющие котлы используют ванильную систему из трех бутылок в котле, поэтому количество обрабатывается по другому параметру.
 
-### Fluid adding
+### Добавление жидкости
 
-Adds a recipe converting the input item to the output item using the fluid.
+Добавляет рецепт для преобразования входного элемента в выходной элемент с помощью жидкости.
 
-* Input item supports stack sizes to require the held stack to be a certain size.
-* Levels determines how many levels are consumed by the recipe. Supports 0-3, defaulting to 1
-* Boiling determines if the cauldron must be placed above fire for the recipe. Can be true to require it, false to require not having fire, or null (default) to ignore it.
+* Входящий элемент поддерживает размер стека, который требует определенного размера.
+* Уровни определяют, сколько уровней потребляется рецептом. Поддерживает 0-3, по умолчанию 1
+* Определяет кипячку, следует ли накладывать котел над котелой. Может быть правда требовать его, ложно, чтобы требовать не иметь огня, или null (по умолчанию), чтобы игнорировать его.
 
 ```zenscript
 //mods.inspirations.Cauldron.addFluidRecipe(IItemStack output, IIngredient input, ILiquidStack fluid, @Optional int levels, @Optional boolean boiling);
-mods.inspirations.Cauldron.addFluidRecipe(<minecraft:blaze_rod>, <minecraft:blaze_powder> * 2, <liquid:lava>);
+mods.inspirations. auldron.addFluidRecipe(<minecraft:blaze_rod>, <minecraft:blaze_powder> * 2, <liquid:lava>);
 mods.inspirations.Cauldron.addFluidRecipe(<minecraft:water_bucket>, <minecraft:ice>, <liquid:lava>, 1, true);
 ```
 
-### Fluid removal
+### Снятие жидкости
 
-Removes an existing fluid recipe from the cauldron.
+Удаляет из котла существующий жидкий рецепт.
 
 ```zenscript
-//mods.inspirations.Cauldron.removeFluidRecipe(IIngredient output, @Optional IIngredient input, @Optional ILiquidStack fluid)
+//mods.inspirations.Cauldron.removeFluidRecipe(IIngredient output, @Optional ILiquidStack fluid)
 mods.inspirations.Cauldron.removeFluidRecipe(<minecraft:beetroot_soup>);
 ```
 
-### Fluid transform adding
+### Добавить преобразование жидкости
 
-Adds a recipe converting the fluid to the output fluid using the item.
+Добавляет рецепт, преобразующий жидкость в выходную жидкость, используя предмет.
 
-* Input item supports stack sizes to require the held stack to be a certain size.
-* Max level determines the maximum amount of fluid allowed for this transformation to happen. Used to allow recipes to have a cheaper version if the cauldron contains less fluid.
-* Boiling determines if the cauldron must be placed above fire for the recipe. Can be true to require it, false to require not having fire, or null (default) to ignore it.
+* Входящий элемент поддерживает размер стека, который требует определенного размера.
+* Максимальный уровень определяет максимальное количество жидкости, допустимое для этого преобразования. Используется для того, чтобы позволить рецептам иметь более дешевую версию, если котел содержит меньше жидкости.
+* Определяет кипячку, следует ли накладывать котел над котелой. Может быть правда требовать его, ложно, чтобы требовать не иметь огня, или null (по умолчанию), чтобы игнорировать его.
 
 ```zenscript
 //mods.inspirations.Cauldron.addFluidTransform(ILiquidStack output, IIngredient input, ILiquidStack fluid, @Optional int maxLevels, @Optional boolean boiling);
 mods.inspirations.Cauldron.addFluidTransform(<liquid:lava>, <minecraft:blaze_powder>, <liquid:water>, 2, false);
 ```
 
-### Fluid transform removal
+### Снятие жидкости трансформации
 
-Removes an existing fluid transform recipe from the cauldron. Output is `IIngredient` but only supports a fluid stack or wildcard.
+Удаляет из котела существующий рецепт преобразования жидкости. Вывод - `IIngredient` , но поддерживает только стек жидкости или подстановочную карту.
 
 ```zenscript
 //mods.inspirations.Cauldron.removeFluidTransform(IIngredient output, [IIngredient input, [IFluidStack fluid]]);
 mods.inspirations.Cauldron.removeFluidTransform(<liquid:beetroot_soup>, <minecraft:beetroot>, <liquid:water>);
 ```
 
-### Fill recipe adding
+### Заполнить добавление рецепта
 
-Adds a recipe filling the cauldron with the provided fluid..
+Добавляет рецепт, заполняющий котел предоставленной жидкостью.
 
-* Input item supports stack sizes to require the held stack to be a certain size.
-* Levels determines how much the recipe fills the cauldron by. Defaults to 1 if not provided.
-* Container determines the item returned after performing this recipe. If none is provided defaults to returning nothing.
+* Входящий элемент поддерживает размер стека, который требует определенного размера.
+* Уровни определяют, сколько рецепт заполняет котелон. По умолчанию 1, если не предоставлено.
+* Контейнер определяет предмет, возвращаемый после выполнения этого рецепта. Если ничего не указано по умолчанию возвращать ничего.
 
 ```zenscript
-//mods.inspirations.Cauldron.addFillRecipe(IIngredient input, ILiquidStack fluid, @Optional int levels, @Optional IItemStack container);
+//mods.inspirations.Cauldron.addFillRecipe(IIngredient input, ILiquidStack fluid, @Optional int levels, @Optional IItemStack);
 mods.inspirations.Cauldron.addFillRecipe(<ore:gemDiamond>, <liquid:water>, 2, <minecraft:emerald>);
 mods.inspirations.Cauldron.addFillRecipe(<minecraft:emerald>, <liquid:lava>);
 ```
 
-### Fill recipe removal
+### Удаление рецепта заливки
 
-Removes an existing fill recipe from the cauldron.
+Удаляет существующий рецепт заливки из котла.
 
 ```zenscript
 //mods.inspirations.Cauldron.removeFillRecipe(IIngredient input, @Optional ILiquidStack fluid);
@@ -79,15 +79,15 @@ mods.inspirations.Cauldron.removeFillRecipe(<minecraft:beetroot_soup>);
 mods.inspirations.Cauldron.removeFillRecipe(<*>, <liquid:mushroom_stew>);
 ```
 
-## Brewing and Potions
+## Пивоварение и зелья
 
-Inspirations features two types of potion recipes using potions: brewing recipes that change a potion from one type into another, and potion recipes that change an item using a potion.
+Вдохновение включает два типа рецептов зелий с помощью зелий: приготовление рецептов, которые превращают зелье из одного типа в другой, и рецепты зелий, которые меняют предмет с помощью зелья.
 
-Since the recipes take on `PotionType`'s instead of `Potion`'s directly, potion parameters are strings. A list of all potion types can be obtained using the command `/ct inspirations potions`.
+Поскольку рецепты используют `PotionType`вместо `Зелье`непосредственно, параметры зелья являются строками. Список всех видов зелий можно получить с помощью команды `/ct inspirations зелья`.
 
-### Brewing adding
+### Добавление пива
 
-Adds a recipe converting the input potion to the output potion using the reagent.
+Добавляет рецепт, преобразующий входное зелье в выходное зелье, используя реагент.
 
 ```zenscript
 //mods.inspirations.Cauldron.addBrewingRecipe(String output, String input, IIngredient reagent);
@@ -95,9 +95,9 @@ mods.inspirations.Cauldron.addBrewingRecipe("minecraft:invisibility", "minecraft
 mods.inspirations.Cauldron.addBrewingRecipe("minecraft:healing", "minecraft:thick", <ore:gemEmerald>);
 ```
 
-### Brewing removal
+### Удаление пива
 
-Removes an existing brewing recipe from the cauldron. Both input and output can be set to null to act as a wildcard.
+Удаляет существующий рецепт пива из котела. Как вход, так и вывод могут быть установлены в null для работы в качестве шаблона.
 
 ```zenscript
 //mods.inspirations.Cauldron.removeBrewingRecipe(String output, @Optional String input, @Optional IIngredient reagent);
@@ -105,43 +105,43 @@ mods.inspirations.Cauldron.removeBrewingRecipe("inspirations:haste");
 mods.inspirations.Cauldron.removeBrewingRecipe("minecraft:awkward", "minecraft:water", <minecraft:nether_wart>);
 ```
 
-### Potion recipe adding
+### Добавление рецепта зелья
 
-Adds a recipe converting the input item to the output item using the potion.
+Добавляет рецепт, преобразующий входной элемент в элемент, используя зелье.
 
-* Levels determines how many levels are consumed by the recipe. Supports 0-3, defaulting to 1
-* Boiling determines if the cauldron must be placed above fire for the recipe. Can be true to require it, false to require not having fire, or null (default) to ignore it.
+* Уровни определяют, сколько уровней потребляется рецептом. Поддерживает 0-3, по умолчанию 1
+* Определяет кипячку, следует ли накладывать котел над котелой. Может быть правда требовать его, ложно, чтобы требовать не иметь огня, или null (по умолчанию), чтобы игнорировать его.
 
 ```zenscript
 //mods.inspirations.Cauldron.addPotionRecipe(IItemStack output, IIngredient input, String potion, @Optional int levels, @Optional boolean boiling);
 mods.inspirations.Cauldron.addPotionRecipe(<minecraft:golden_apple>, <minecraft:apple>, "minecraft:regeneration", 2); 
 ```
 
-### Potion recipe removal
+### Удаление рецепта зелья
 
-Removes an existing potion recipe from the cauldron. By default no potion recipes exist but addons may add a recipe.
+Удаляет существующий рецепт зелий из котела. По умолчанию рецепты зелий не существуют, но аддоны могут добавить рецепт.
 
 ```zenscript
 //mods.inspirations.Cauldron.removePotionRecipe(IIngredient output, @Optional IIngredient input, @Optional String potion);
 ```
 
-## Dyes
+## Краски
 
-Inspirations features only one type of dye recipe to transform an item using a dye. Dye recipes take on a string dye color which represents a value from `EnumDyeColor`. To get a list of all values, the command `/ct inspirations dyes` is provided.
+Вдохновение имеет только один тип рецепта краски, чтобы преобразовать предмет с помощью краски. Рецепты красок получают цвет струны, который представляет собой значение из `EnumDyeColor`. Чтобы получить список всех ценностей, приведена команда `/ct вдохновляющих красителей`.
 
-### Adding
+### Добавление
 
-Adds a recipe converting the input to the output using the dye consuming a single level of dyed water.
+Добавляет рецепт, преобразующий ввод в вывод, используя раскрашенную воду, потребляющую один уровень раскрашенной воды.
 
 ```zenscript
-//mods.inspirations.Cauldron.addDyeRecipe(IItemStack output, IIngredient input, String dye);
+//mods.inspirations.Cauldron.addDyeRecipe(IItemStack, IIngredient input, String dye);
 mods.inspirations.Cauldron.addDyeRecipe(<minecraft:diamond>, <minecraft:emerald>, "blue");
 mods.inspirations.Cauldron.addDyeRecipe(<minecraft:emerald>, <minecraft:diamond>, "lime");
 ```
 
-### Removal
+### Удаление
 
-Removes an existing dye recipe from the cauldron.
+Удаляет существующий рецепт краски из котела.
 
 ```zenscript
 //mods.inspirations.Cauldron.removeDyeRecipe(IIngredient output, @Optional IIngredient input, @Optional String dye)

@@ -1,49 +1,49 @@
-# Variable Types
+# Types de variables
 
-As you surely already messed a bit with variables and values, you must've wondered, how CraftTweaker knows whether it's dealing with an Integer, an Item or an oreDic entry?
+Comme vous avez sûrement déjà eu un peu de variables et de valeurs, vous devez vous demander, comment CraftTweaker sait si elle traite avec un entier, un élément ou une entrée oreDic ?
 
-The easiest way of declaring a variable is using ```var name = value;```. This creates the variable and casts it to the value it thinks is most fitting for the situation.
+La façon la plus simple de déclarer une variable est d'utiliser ```var name = valeur;```. This creates the variable and casts it to the value it thinks is most fitting for the situation.
 
-## Casting a variable to a specific type
+## Casting d'une variable vers un type spécifique
 
-More complex scripts might require you to cast a variable as a specific type. For example, this would fail:
+Des scripts plus complexes peuvent vous obliger à convertir une variable en un type spécifique. Par exemple, cela échouerait :
 
 ```zenscript
-var test;
+test var ;
 
 test = <minecraft:dirt>;
-recipes.remove(test);
+recettes.remove(test);
 ```
 
-So why does this fail? This is because CT casts variables that aren't given a start value to the IAny Type. That type was made to facilitate some recipe handlers, though never really implemented, so it sometimes does more harm than good. It was originally intended as a type that can take the form of most other types so you don't need to change variables all the time, but the interface never got implemented.
+Alors pourquoi cela échoue-t-il ? C'est parce que CT convertit des variables qui n'ont pas de valeur de départ au type IAny . Ce type a été conçu pour faciliter certains gestionnaires de recettes, bien que jamais réellement mis en œuvre, donc il fait parfois plus de mal que de bien. Il a été initialement conçu comme un type qui peut prendre la forme de la plupart des autres types de sorte que vous n'avez pas besoin de changer des variables tout le temps, mais l'interface n'a jamais été implémentée.
 
-Back to the topic: How can we fix this issue? By casting the variable test to ```IItemStack```, which is the type used for items. Unfortunately, some types need to be imported first, and this is one of those.
+Back to the topic: How can we fix this issue? En lançant le test de la variable à ```IItemStack```, qui est le type utilisé pour les éléments. Malheureusement, certains types doivent être importés en premier, et c'est l'un de ceux-ci.
 
 ```zenscript
-import crafttweaker.item.IItemStack;
+importer crafttweaker.item.IItemStack;
 var test as IItemStack;
 
 test = <minecraft:dirt>;
 recipes.remove(test);
 ```
 
-## List of Variable Types
+## Liste des types de variables
 
-Here's an (incomplete) List of most variable types
+Voici une liste (incomplète) de la plupart des types de variables
 
-| Name (Name in CT)                                   | Explanation                                                                                           | Example                                              | Import                                    |
-| --------------------------------------------------- | ----------------------------------------------------------------------------------------------------- | ---------------------------------------------------- | ----------------------------------------- |
-| Integer (int)                                       | Integers are whole Numbers (e.g. 1,2,3,...), caps at 2 147 483 647                                    | `var test = 10 as int;`                              |                                           |
-| [IItemStack](/Vanilla/Items/IItemStack/)            | Single items                                                                                          | `var test = <minecraft:dirt> as IItemStack;`   | import crafttweaker.item.IItemStack;      |
-| [IIngredient](/Vanilla/Variable_Types/IIngredient/) | Single or Multiple Items (e.g. `<minecraft:dirt>`, `<ore:ingotIron>`,...)                 | `var test = <minecraft:dirt> as IIngredient;`  | import crafttweaker.item.IIngredient;     |
-| [IOreDictEntry](/Vanilla/OreDict/IOreDictEntry/)    | Multiple Items from an OreDict (e.g. `<ore:ingotIron>`, `<ore:ingotGold>`,...)            | `var test = <ore:ingotIron> as IOreDictEntry;` | import crafttweaker.oredict.IOreDictEntry |
-| Boolean (bool)                                      | Booleans are either true or false.                                                                    | `var test = false as bool;`                          |                                           |
-| Byte (byte)                                         | Bytes values are whole numbers from 0 to 255 ()                                                       | `var test = 125 as byte;`                            |                                           |
-| Floating Point (float)                              | Decimals                                                                                              | `var test = 1.25 as float;`                          |                                           |
-| Double Precision (double)                           | Like Floating Points, just more precise and with a higher number range                                | `var test = 1.25 as double;`                         |                                           |
-| Long (long)                                         | Like Integer, but with a higher number range (usually int is just fine)                               | `var test = 30 as long;`                             |                                           |
-| Null (null)                                         | Null, nothing, nada. Not really a type but still useful                                               | `var test = null;`                                   |                                           |
-| Short (short)                                       | Like Integer, but with a smaller number Range                                                         | `var test = 16 as short;`                            |                                           |
-| String (string)                                     | A string is a text. Here you usually won't need the "as" as anything in "s is automatically a string. | `var test = "Hello World!" as string;`               |                                           |
-| Void (void)                                         | Even less than null. You will probably only need the void type when dealing with functions            | `var test as void;`                                  |                                           |
-| [ILiquidStack](/Vanilla/Liquids/ILiquidStack/)      | Same as IItemStack, only for liquids                                                                  | `var test = <liquid:water> as ILiquidStack;`   | import crafttweaker.liquid.ILiquidStack;  |
+| Nom (Nom en CT)                                    | Explication                                                                                                                                              | Exemple                                                 | Importation                                 |
+| -------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------- | ------------------------------------------- |
+| Nombre entier (int)                                | Les entiers sont des nombres entiers (ex. 1,2,3,...), des majuscules à 2 147 483 647                                                                     | `var test = 10 comme int;`                              |                                             |
+| [IItemStack](/Vanilla/Items/IItemStack/)           | Éléments simples                                                                                                                                         | `var test = <minecraft:dirt> comme IItemStack;`   | importer crafttweaker.item.IItemStack;      |
+| [Ingrédient](/Vanilla/Variable_Types/IIngredient/) | Éléments simples ou multiples (ex : `<minecraft:dirt>`, `<ore:ingotIron>`,...)                                                               | `var test = <minecraft:dirt> comme IIngrédient;`  | Importer crafttweaker.item.IIngredient;     |
+| [Entrée IOreDict](/Vanilla/OreDict/IOreDictEntry/) | Éléments multiples d'un OreDict (par exemple `<ore:ingotIron>`, `<ore:ingotGold>`,...)                                                       | `var test = <ore:ingotIron> comme IOreDictEntry;` | Importer crafttweaker.oredict.IOreDictEntry |
+| Booléen (bool)                                     | Les booléens sont soit vrais, soit faux.                                                                                                                 | `var test = faux comme bool;`                           |                                             |
+| Octet (octet)                                      | Les valeurs de octets sont des nombres entiers de 0 à 255 ()                                                                                             | `var test = 125 byte;`                                  |                                             |
+| Point flottant (float)                             | Décimales                                                                                                                                                | `var test = 1.25 en float;`                             |                                             |
+| Double précision (double)                          | Comme les points flottants, juste plus précis et avec une plage de numéros plus élevée                                                                   | `var test = 1.25 en double;`                            |                                             |
+| Long (long)                                        | Comme Integer, mais avec une plage de numéros plus élevée (généralement int est bon)                                                                     | `var test = 30 aussi long;`                             |                                             |
+| Null (nul)                                         | Null, rien, nada. Pas vraiment un type mais toujours utile                                                                                               | `var test = null;`                                      |                                             |
+| Courte (courte)                                    | Comme Integer, mais avec une plage de nombres plus petite                                                                                                | `var test = 16 comme abrégé;`                           |                                             |
+| Chaîne (chaîne)                                    | Une chaîne est un texte. Ici, vous n'aurez généralement pas besoin du "comme" car quoi que ce soit dans "s est automatiquement une chaîne de caractères. | `var test = "Bonjour le monde!" comme chaîne;`          |                                             |
+| Vide (vide)                                        | Même moins que null. Vous n'aurez probablement besoin que du type vide lorsque vous traiterez des fonctions                                              | `test var comme étant annulé ;`                         |                                             |
+| [ILiquidStack](/Vanilla/Liquids/ILiquidStack/)     | Identique à IItemStack, uniquement pour les liquides                                                                                                     | `var test = <liquid:water> comme ILiquidStack;`   | importer crafttweaker.liquid.ILiquidStack;  |

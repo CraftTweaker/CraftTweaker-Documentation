@@ -1,26 +1,26 @@
-# IMobilityFlag
+# Drapeau de l'IMA
 
-The IMobilityFlag Interface allows you to get an [IBlockState's](/Vanilla/Blocks/IBlockState/) possible mobilityFlags.
+L'interface IMobilityFlag vous permet d'obtenir un [IBlockState's](/Vanilla/Blocks/IBlockState/) possible mobilityFlags.
 
-## Importing the package
+## Importation du paquet
 
-It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
-`import crafttweaker.block.IMobilityFlag;`
+Il pourrait vous être nécessaire d'importer le paquet si vous rencontrez des problèmes, donc mieux vaut être sûr que désolé et ajouter l'importation.  
+`importer crafttweaker.block.IMobilityFlag;`
 
-## ZenMethods
+## Méthodes Zen
 
-#### Matches
+#### Matchs
 
-You can check if two IMobilityFlag objects are equal:  
-Returns a bool.
+Vous pouvez vérifier si deux objets IMobilityFlag sont égaux :  
+Renvoie un bool.
 
 ```zenscript
-flagOne.matches(other);
+flagOne.matches(autre);
 ```
 
-## Enumerations
+## Énumérations
 
-The MobilityFlag Interface has 5 static Methods, each returning the given IMobilityFlag object.
+L'interface MobilityFlag a 5 méthodes statiques, chacune retournant l'objet IMobilityFlag donné.
 
 ```zenscript
 crafttweaker.block.MobilityFlag.normal()

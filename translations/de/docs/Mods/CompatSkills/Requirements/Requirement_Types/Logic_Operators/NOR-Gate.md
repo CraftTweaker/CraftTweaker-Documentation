@@ -1,25 +1,25 @@
 # NOR Operator
 
-A **NOR** gate is an inverted **OR** gate. This is the same as using the output of the **OR** gate as the input to the **NOT** gate. This means that the **NOR** gate returns `TRUE` only when both inputs are `FALSE`.
+Ein **NOR** Tor ist ein invertiertes **ODER** Tor. Dies ist das Gleiche wie die Verwendung der Ausgabe des **ODER** Gates als Eingabe am **NICHT** Gate. Das bedeutet, dass das **NOR** Gate `TRUE` nur zurückgibt, wenn beide Eingaben `FALSE` sind.
 
-| Input 1 | Input 2 | Output |
-| ------- | ------- | ------:|
-| 0       | 0       |      1 |
-| 0       | 1       |      0 |
-| 1       | 0       |      0 |
-| 1       | 1       |      0 |
+| Input 1 | Input 2 | Ausgang |
+| ------- | ------- | -------:|
+| 0       | 0       |       1 |
+| 0       | 1       |       0 |
+| 1       | 0       |       0 |
+| 1       | 1       |       0 |
 
-    Empty Example:
+    Leeres Beispiel:
     nor|[]~[]
     
-    Filled-In Example:
-    nor|[reskillable:mining|5]~[reskillable:gathering|5]
+    Gefülltes Beispiel:
+    nor|[reskillable:mining|5]~[reskillable:Sammeln|5]
     
 
-## Use-Case
+## Verwendungsfall
 
-Only allow using a wooden shovel until the player gets mining or gathering level 5:
+Erlaube nur die Verwendung einer Holzschaufel bis der Spieler Bergbau oder Sammellevel 5 erhält:
 
 ```zenscript
-addRequirement(<minecraft:wooden_shovel:*>, "nor|[reskillable:mining|5]~[reskillable:gathering|5]");
+addRequirement(<minecraft:wooden_shovel:*>, "nor|[reskillable:mining|5]~[reskillable:Sammeln|5]");
 ```

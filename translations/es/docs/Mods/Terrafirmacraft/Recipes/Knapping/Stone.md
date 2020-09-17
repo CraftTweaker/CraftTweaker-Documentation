@@ -1,32 +1,32 @@
-# Stone Knapping
+# Ropa de Piedra
 
-## Package
+## Paquete
 ```zenscript
-import mods.terrafirmacraft.StoneKnapping;
+import mods.terrafirmacraft.StoneKnapping;PiedraKnapping;
 ```
 
-## Addition
+## Adicional
 
 ```zenscript
-StoneKnapping.addRecipe(String registryName, IItemStack[] output, String[] rocks, String... pattern)
+StoneKnapping.addRecipe(String registryName, IItemStack[] salida, String[] rocks, String... patrón)
 ```
 
-## Removal
+## Eliminar
 
 ```zenscript
-StoneKnapping.removeRecipe(IItemStack output);
+StoneKnapping.removeRecipe(ItemStack output);
 StoneKnapping.removeRecipe(String registryName);
 ```
 
-## Examples
+## Ejemplos
 
 ```zenscript
-// Gives a stone hoe in all rocks.
-StoneKnapping.addRecipe("testrecipe", [<minecraft:stone_hoe>], ["all"], "     ", "XXXX ");
-// Gives a stone hoe only in shale, claystone, rocksalt, limestone.
-StoneKnapping.addRecipe("testrecipe2", [<minecraft:stone_hoe>], ["shale", "claystone", "rocksalt", "limestone"], "     ", "XXXX ");
-// Gives a stone hoe in claystone, and a pickaxe in limestone.
-StoneKnapping.addRecipe("testrecipe3", [<minecraft:stone_hoe>, <minecraft:stone_pickaxe>], ["claystone", "limestone"], "     ", "XXXX ");
-// Gives a stone hoe only in basalt and chert.
-StoneKnapping.addRecipe("testrecipe4", [<minecraft:stone_hoe>, <minecraft:stone_hoe>], ["basalt", "chert"], "     ", "XXXX ");
+// Da una azadada de piedra en todas las rocas".
+StoneKnapping.addRecipe("testrecipe", [<minecraft:stone_hoe>], ["all"], " ", "XXXX ");
+// Otorga una azada de piedra sólo en esquisto, arcilla, sal, caliza.
+StoneKnapping.addRecipe("testrecipe2", [<minecraft:stone_hoe>], ["shale", "claystone", "rocksalt", "caliza"], " ", "XXXX ");
+// Otorga una azada de piedra en piedra arcillada, y un pico en piedra caliza.
+StoneKnapping.addRecipe("testrecipe3", [<minecraft:stone_hoe>, <minecraft:stone_pickaxe>], ["claystone", "limestone"], " ", "XXXX ");
+// Otorga una azada de piedra sólo en basalto y cerveza.
+StoneKnapping.addRecipe("testrecipe4", [<minecraft:stone_hoe>, <minecraft:stone_hoe>], ["basalt", "chert"], " ", "XXX ");
 ```

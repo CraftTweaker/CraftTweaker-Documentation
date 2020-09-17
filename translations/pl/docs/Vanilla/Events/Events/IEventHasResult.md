@@ -1,20 +1,20 @@
 # IEventHasResult
 
-This interface is extended by all Events that has a result that is used by the event. An event's result can be one of three values:
+Ten interfejs jest rozszerzony przez wszystkie Zdarzenia, które mają wynik używany przez to wydarzenie. Wynik wydarzenia może być jedną z trzech wartości:
 
-- allow
-- deny
-- default
+- zezwól
+- odrzuć
+- domyślny
 
-The meaning of these is dependent on context. Generally, denying an event prevents a specific event-related action from taking place (even if it wasn't guaranteed to take place). Likewise, allowing an event will force a behaviour to take place (even if it wasn't guaranteed). Default simply causes the event to continue with its normal logic. Not all events use every result.
+Znaczenie tych elementów zależy od kontekstu. Ogólnie rzecz biorąc, zaprzeczanie zdarzenia uniemożliwia podjęcie określonych działań związanych ze zdarzeniem (nawet jeśli nie gwarantowano, że wydarzenie to zostanie podjęte). Podobnie zezwolenie na wydarzenie zmusi do zachowania (nawet jeśli nie było ono zagwarantowane). Domyślnie powoduje, że wydarzenie będzie kontynuowane zgodnie z jego normalną logiką. Nie wszystkie zdarzenia wykorzystują każdy wynik.
 
-## Importing the class
-It might be required to [import](/AdvancedFunctions/Import/) the class to avoid errors.  
-`import crafttweaker.event.IEventHasResult;`
+## Importowanie klasy
+Może być wymagane [zaimportowanie](/AdvancedFunctions/Import/) klasy, aby uniknąć błędów.  
+`zaimportuj crafttweaker.event.IEventHasResult;`
 
-## What can be done with them?
+## Co można z nimi zrobić?
 
-- `event.result` Getter, returns a string value of `default`, `deny` or `allow`
-- `event.deny()` Method, sets the event's result to `deny`
-- `event.allow()` Method, sets the event's result to `allow`
-- `event.default()` Method, sets the event's result to `default`
+- `event.result` Getter, zwraca wartość ciągu `domyślną`, `negy` lub `zezwalaj`
+- `event.deny()` Metoda, ustawia wynik wydarzenia na `odmowa`
+- `event.allow()` Metoda, ustaw wynik wydarzenia na `zezwolić`
+- `event.default()` Metoda, ustawia wynik wydarzenia na `domyślny`

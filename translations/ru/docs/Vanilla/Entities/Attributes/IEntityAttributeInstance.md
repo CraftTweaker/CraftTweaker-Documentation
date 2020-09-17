@@ -1,31 +1,31 @@
 # IEntityAttributeInstance
 
-## Importing the package
+## Импорт пакета
 
-It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
+Возможно, вам потребуется импортировать пакет, если вы столкнетесь с какими-либо проблемами (например, наложение [массива](/AdvancedFunctions/Arrays_and_Loops/)), так что лучше быть безопасным, чем извините и добавить импорт.  
 `import crafttweaker.entity.AttributeInstance;`
 
 ## ZenGetters
 
-| ZenGetter      | GetterMethod        | Return Type                                                        |
-| -------------- | ------------------- | ------------------------------------------------------------------ |
-| attribute      | getAttribute()      | [IEntityAttribute](/Vanilla/Entities/Attributes/IEntityAttribute/) |
-| baseValue      | getBaseValue()      | double                                                             |
-| modifiers      | getModifiers()      | `List<IEntityAttrubuteModifier>`                             |
-| attributeValue | getAttributeValue() | double                                                             |
+| Геттеры           | Метод-геттер        | Возвращаемый тип                                                   |
+| ----------------- | ------------------- | ------------------------------------------------------------------ |
+| атрибут           | getAttribute()      | [IEntityAttribute](/Vanilla/Entities/Attributes/IEntityAttribute/) |
+| базовое значение  | getBaseValue()      | double                                                             |
+| модификаторы      | getModifiers()      | `Список<IEntityAttrubuteModifier>`                           |
+| значение атрибута | getAttributeValue() | double                                                             |
 
 ## ZenSetters
 
-| ZenSetter | SetterMethod        | Parameter Type |
-| --------- | ------------------- | -------------- |
-| baseValue | setBaseValue(value) | double         |
+| ZenSetter        | Метод-сеттер           | Тип параметра |
+| ---------------- | ---------------------- | ------------- |
+| базовое значение | setBaseValue(значение) | double        |
 
-## Modifier Methods
+## Методы модификатора
 
-- `List<IEntityAttrubuteModifier>` getModifiersByOperation(int operation)
+- `Список<IEntityAttrubuteModifier>` getModifiersByOperation(int операция)
 - boolean hasModifier([IEntityAttributeModifier](/Vanilla/Entities/Attributes/IEntityAttributeModifier/) modifier)
 - [IEntityAttributeModifier](/Vanilla/Entities/Attributes/IEntityAttributeModifier/) getModifier(String uuid);
-- void applyModifier([IEntityAttributeModifier](/Vanilla/Entities/Attributes/IEntityAttributeModifier/) modifier);
+- void applyModifier([IEntityAttributeModifier](/Vanilla/Entities/Attributes/IEntityAttributeModifier/) модификатор);
 - void removeModifier([IEntityAttributeModifier](/Vanilla/Entities/Attributes/IEntityAttributeModifier/) modifier);
-- void removeModifier(String uuid);
+- void removeModifier(tring uuid);
 - void removeAllModifiers();

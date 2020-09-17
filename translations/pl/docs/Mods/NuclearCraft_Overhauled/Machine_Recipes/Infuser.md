@@ -1,16 +1,16 @@
-# Infuser
+# Naładuj
 
-## Importing the Package
-`mods.nuclearcraft.Infuser`
+## Importowanie pakietu
+`mods.nuclearcraft.Naładuj`
 
-## Adding Recipes
+## Dodawanie przepisów
 ```zenscript
-mods.nuclearcraft.Infuser.addRecipe(IIngredient itemInput, ILiquidStack fluidInput, IIngredient itemOutput, @Optional double timeMultiplier, @Optional double powerMultiplier, @Optional double processRadiation);
+mods.nuclearcraft.Infuser.addRecipe(IIngredient itemInput, ILiquidStack fluidInput, IIngredient itemOutput, @Opcjonalny podwójny timeMultiplier, @Opcjonalny podwójny nośnik, @Opcjonalny podwójny proces);
 ```
 
-## Removing Recipes
+## Usuwanie przepisów
 ```zenscript
-mods.nuclearcraft.Infuser.removeRecipeWithInput(IIngredient itemInput, ILiquidStack fluidInput);
+mods.nuclearcraft.[PLACEHOLDER] Infuser.removeRecipeWithInput(IInInput(ISkładnik itemInputt, ILiquidStack fluidInput);
 mods.nuclearcraft.Infuser.removeRecipeWithOutput(IIngredient itemOutput);
 mods.nuclearcraft.Infuser.removeAllRecipes();
 ```

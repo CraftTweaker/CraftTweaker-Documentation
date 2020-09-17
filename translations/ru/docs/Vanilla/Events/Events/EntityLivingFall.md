@@ -1,24 +1,24 @@
 # EntityLivingFall
 
-The EntityLivingFall Event is fired whenever an entity is set to be falling.  
-It can be canceled to preven the entity from falling.
+Событие EntityLivingFall запускается всякий раз, когда сущность падает.  
+Событие может быть отменено, чтобы вывести сущность из падения.
 
-## Event Class
+## Класс события
 
 You will need to cast the event in the function header as this class:  
 `crafttweaker.event.EntityLivingFallEvent`  
 You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
 
-## Event interface extensions
+## Наследование от интерфейсов событий
 
-PlayerDeathDrops Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+PlayerDeathDrops реализует следующие интерфейсы и способно вызвать все их методы/геттеры/сеттеры:
 
 - [ILivingEvent](/Vanilla/Events/Events/ILivingEvent/)
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 
 ## ZenGetter/ZenSetter
 
-| ZenGetter        | ZenSetter        | Type  |
-| ---------------- | ---------------- | ----- |
-| disance          | disance          | float |
-| damageMultiplier | damageMultiplier | float |
+| Геттеры         | ZenSetter       | Тип   |
+| --------------- | --------------- | ----- |
+| негодование     | негодование     | float |
+| Множитель урона | Множитель урона | float |

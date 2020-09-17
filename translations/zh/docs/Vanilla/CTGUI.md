@@ -1,11 +1,11 @@
 # CTGUI
 
-You can run a command and edit recipes from ingame using a GUI. It will generate a file on your local scripts folder called recipes.zs .
+您可以使用图形界面运行命令和编辑配方。 它将在你的本地脚本文件夹中生成一个文件名为配方。
 
-<details><summary>Background story</summary> Some people don't fancy text editors. Even using templates highlighting their syntax can't satisfy them. They want a GUI (Graphical User Interface).  
-For this matter, Jared, humble servant of Lord Ellpeck of House penguin, rightful heir to the Milkshake Throne, King of the Seven Kingdoms of Germany, the Rhoynar and the First Men, Mother of penguins, the modder of the great frozen plains, the unbroken and breaker of mods, has descended upon us from Maven, the great Library of Forbidden Wisdom and Blasphemy to share his great knowledge with mankind, after being urged by BBoldt, traveller of realms, slayer of the great Unknown, writer of Necrochodu. Unfortunately, we were not yet able to decipher the seemingly random jabbering that came from him, so he decided to instead go for a more simplistic means of help, by giving people who posess the power to manipulate the very laws of the universe (also called `OPs` or `Admins`) to access a magical window from inside the game they liked to play and change the fundaments of this false reality from within. </details>
+<details><summary>背景故事</summary> 一些人不喜欢文本编辑器。 即使使用突出显示其语法的模板也不能满足他们的要求。 他们需要一个图形界面(图形用户界面)。  
+关于这件事，众议院企鹅的Ellpeck勋爵的卑鄙仆人，Milkshake Throne的合法继承人。 德国七国王、罗纳尔和第一男王、企鹅母亲，伟大冻土平原的模组， 不间断和破解的模式已经从马文降临我们。 “坚决智慧”和布拉斯芬米伟大的图书馆与人类分享他的伟大知识， 在被BBoldt的促销后，行星的旅行者，杀死了Necrochodu的作家。 不幸的是，我们尚未能够解开来自他的似乎随机的围栏。 因此，他决定寻求一种比较简单的帮助方式， 通过赋予拥有操纵宇宙法则的权力的人(也称为 `OP` 或 `Admins`)，从游戏内部进入魔法窗口，他们希望玩并从内部改变这个虚假现实的根基。 </details>
 
-## Calling the command
+## 调用命令
 
 你通过调用命令来使用该功能
 
@@ -14,9 +14,9 @@ For this matter, Jared, humble servant of Lord Ellpeck of House penguin, rightfu
 
 这些ID当前已实现：
 
-| ID            | Added by     | Notes |
-| ------------- | ------------ | ----- |
-| craftingtable | CraftTweaker |       |
-| furnace       | CraftTweaker |       |
+| ID            | 添加者          | 注 |
+| ------------- | ------------ | - |
+| craftingtable | CraftTweaker |   |
+| furnace       | CraftTweaker |   |
 
-Note: This command works only on Single Player. It will return Unknown Command if ran on a server. Edit locally and merge/upload it to your server.
+注意：此命令仅适用于单个玩家。 如果运行在服务器上，它将返回未知的命令。 编辑本地并合并/上传到您的服务器。

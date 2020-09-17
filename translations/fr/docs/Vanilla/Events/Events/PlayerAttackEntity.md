@@ -1,30 +1,30 @@
-# PlayerAttackEntity
+# format@@0 PlayerAttackEntity
 
-The PlayerAttackEntity Event is fired whenever a player attacks an Entity.
+L'événement PlayerAttackEntity est lancé chaque fois qu'un joueur attaque un titre.
 
-## Event Class
+## Classe de l'événement
 
-You will need to cast the event in the function header as this class:  
-`crafttweaker.event.PlayerAttackEntityEvent`  
-You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
+Vous devrez lancer l'événement dans l'en-tête de la fonction comme cette classe:  
+`crafttweaker.event. layerAttackEntityEvent`  
+Vous pouvez, bien sûr, également [importer](/AdvancedFunctions/Import/) la classe avant et utiliser ce nom alors.
 
-## Event interface extensions
+## Extensions d'interface de l'événement
 
-PlayerAttackEntity Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+Les événements PlayerAttackEntity implémentent les interfaces suivantes et peuvent également appeler toutes leurs méthodes/getters/setters :
 
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
-- [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
+- [Evénement IPlayer](/Vanilla/Events/Events/IPlayerEvent/)
 
 ## ZenGetters
 
-The following information can be retrieved from the event:
+Les informations suivantes peuvent être récupérées à partir de l'événement :
 
-| ZenGetter  | Return Type                           |
-| ---------- | ------------------------------------- |
-| `canceled` | boolean                               |
-| `player`   | [IPlayer](/Vanilla/Players/IPlayer/)  |
-| `entity`   | [IEntity](/Vanilla/Entities/IEntity/) |
+| ZenGetter | Type de retour                        |
+| --------- | ------------------------------------- |
+| `annulé`  | boolean                               |
+| `Joueur`  | [IPlayer](/Vanilla/Players/IPlayer/)  |
+| `Entité`  | [IEntity](/Vanilla/Entities/IEntity/) |
 
-## ZenMethods
+## Méthodes Zen
 
-- `event.cancel()` sets the event as cancelled.
+- `event.cancel()` définit l'événement comme annulé.
