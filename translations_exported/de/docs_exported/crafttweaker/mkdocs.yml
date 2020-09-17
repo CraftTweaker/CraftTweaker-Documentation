@@ -1,0 +1,119 @@
+- Vanilla:
+    - Api:
+      - BracketHandler: 'vanilla/api/BracketHandlers.md'
+      - Block:
+        - Material:
+          - MCMaterial: 'vanilla/api/block/material/MCMaterial.md'
+      - Blöcke:
+        - MCBlock: 'Vanilla/api/blocks/MCBlock.md'
+        - MCBlockState: 'vanilla/api/blocks/MCBlockState.md'
+      - Klammer:
+        - BefehlStringDisplayable: 'vanilla/api/brackets/CommandStringDisplayable.md'
+      - Befehle:
+        - Benutzerdefiniert:
+          - CustomCommands: 'vanilla/api/commands/custom/CustomCommands.md'
+          - MCAmbiguityConsumer: 'vanilla/api/commands/custom/MCAmbiguityConsumer.md'
+          - MCArgumentBuilder: 'vanilla/api/commands/custom/MCArgumentBuilder.md'
+          - MCArgumentCommandNode: 'vanilla/api/commands/custom/MCArgumentCommandNode.md'
+          - MCCommand: 'vanilla/api/commands/custom/MCCommand.md'
+          - MCCommandContext: 'vanilla/api/commands/custom/MCCommandContext.md'
+          - MCCommandContextBuilder: 'vanilla/api/commands/custom/MCCommandContextBuilder.md'
+          - MCCommandDispatcher: 'vanilla/api/commands/custom/MCCommandDispatcher.md'
+          - MCCommandNode: 'vanilla/api/commands/custom/MCCommandNode.md'
+          - MCCommandSource: 'vanilla/api/commands/custom/MCCommandSource.md'
+          - MCImmutableStringReader: 'vanilla/api/commands/custom/MCImmutableStringReader.md'
+          - MCLiteralArgumentBuilder: 'vanilla/api/commands/custom/MCLiteralArgumentBuilder.md'
+          - MCLiteralCommandNode: 'vanilla/api/commands/custom/MCLiteralCommandNode.md'
+          - MCParseResults: 'vanilla/api/commands/custom/MCParseResults.md'
+          - MCParsedArgument: 'vanilla/api/commands/custom/MCParsedArgument.md'
+          - MCParsedCommandNode: 'vanilla/api/commands/custom/MCParsedCommandNode.md'
+          - MCRedirectModifier: 'vanilla/api/commands/custom/MCRedirectModifier.md'
+          - MCRequiredArgumentBuilder: 'vanilla/api/commands/custom/MCRequiredArgumentBuilder.md'
+          - MCResultConsumer: 'vanilla/api/commands/custom/MCResultConsumer.md'
+          - MCRootCommandNode: 'vanilla/api/commands/custom/MCRootCommandNode.md'
+          - MCSingleRedirectModifier: 'vanilla/api/commands/custom/MCSingleRedirectModifier.md'
+          - MCStringRange: 'vanilla/api/commands/custom/MCStringRange.md'
+          - MCSuggestion: 'vanilla/api/commands/custom/MCSuggestion.md'
+          - MCSuggestionContext: 'vanilla/api/commands/custom/MCSuggestionContext.md'
+          - MCSuggestionProvider: 'vanilla/api/commands/custom/MCSuggestionProvider.md'
+          - MCSuggests: 'vanilla/api/commands/custom/MCSuggestions.md'
+          - MCSuggestionsBuilder: 'vanilla/api/commands/custom/MCSuggestionsBuilder.md'
+      - Daten:
+        - ByteArrayData: 'vanilla/api/data/ByteArrayData.md'
+        - ByteData: 'vanilla/api/data/ByteData.md'
+        - DoubleData: 'vanilla/api/data/DoubleData.md'
+        - FloatData: 'vanilla/api/data/FloatData.md'
+        - ICollectionData: 'vanilla/api/data/ICollectionData.md'
+        - IData: 'vanilla/api/data/IData.md'
+        - INumberData: 'vanilla/api/data/INumberData.md'
+        - IntArrayData: 'vanilla/api/data/IntArrayData.md'
+        - IntData: 'vanilla/api/data/intData.md'
+        - ListDaten: 'vanilla/api/data/listData.md'
+        - LongArrayData: 'vanilla/api/data/LongArrayData.md'
+        - LongData: 'vanilla/api/data/LongData.md'
+        - MapData: 'vanilla/api/data/MapData.md'
+        - ShortData: 'vanilla/api/data/ShortData.md'
+        - StringData: 'vanilla/api/data/StringData.md'
+      - Entitäten:
+        - MCEntityClassification: 'vanilla/api/entities/MCEntityClassification.md'
+        - MCEntityType: 'vanilla/api/entities/MCEntityType.md'
+      - Flüssigkeit:
+        - IFluidStack: 'Vanilla/api/fluid/IFluidStack.md'
+        - MCFluid: 'Vanilla/api/fluid/MCFluid.md'
+      - Nahrung:
+        - MCFood: 'Vanilla/api/food/MCFood.md'
+      - Elemente:
+        - Zutat: 'Vanilla/api/items/Igredient.md'
+        - IIngredientTransformer: 'Vanilla/api/items/IIngredientTransformer.md'
+        - IIngredientTransformer: 'Vanilla/api/items/IIngredientTransformer.md'
+        - IItemStack: 'vanilla/api/items/IItemStack.md'
+        - Zutatenliste: 'Vanilla/api/items/ZutatList.md'
+        - MCIngredientConditioned: 'vanilla/api/items/MCIngredientConditioned.md'
+        - MCIngredientTransformiert: 'Vanilla/api/items/MCIngredientTransformed.md'
+      - Logger:
+        - ILogger: 'vanilla/api/logger/ILogger.md'
+      - Manager:
+        - BlastFurnaceManager: 'vanilla/api/managers/BlastFurnaceManager.md'
+        - CampFireManager: 'vanilla/api/managers/CampFireManager.md'
+        - CraftingTableManager: 'vanilla/api/managers/CraftingTableManager.md'
+        - Ofenmanager: 'vanilla/api/managers/FurnaceManager.md'
+        - ICookingRecipeManager: 'vanilla/api/managers/ICookingRecipeManager.md'
+        - IRecipeManager: 'vanilla/api/managers/IRecipeManager.md'
+        - SmithingManager: 'vanilla/api/managers/SmithingManager.md'
+        - SmokerManager: 'vanilla/api/managers/SmokerManager.md'
+        - SteinkutterManager: 'Vanilla/api/managers/StoneCutterManager.md'
+      - Mods:
+        - ModInfo: 'Vanilla/api/mods/ModInfo.md'
+        - Modus: 'Vanilla/api/mods/Mods.md'
+      - Tränke:
+        - MCPotion: 'Vanilla/api/Tränke/MCPotion.md'
+        - MCPotionEffect: 'Vanilla/api/Tränke/MCPotionEffect.md'
+        - MCPotionEffectInstance: 'Vanilla/api/Tränke/MCPotionEffectInstance.md'
+      - Rezept:
+        - RecipeFilter: 'Vanilla/api/Rezept/RecipeFilter.md'
+        - RecipeFunctionArray: 'vanilla/api/recipe/RecipeFunctionArray.md'
+        - RecipeFunctionMatrix: 'vanilla/api/recipe/RecipeFunctionMatrix.md'
+        - RecipeFunctionSingle: 'vanilla/api/recipe/RecipeFunctionSingle.md'
+      - Tags:
+        - MCTag: 'vanilla/api/tags/MCTag.md'
+      - Util:
+        - BlockPos: 'vanilla/api/util/BlockPos.md'
+        - Richtung: 'vanilla/api/util/Direction.md'
+        - Richtung: 'vanilla/api/util/DirectionAxis.md'
+        - MCResourceLocation: 'vanilla/api/util/MCResourceLocation.md'
+        - Text:
+          - MCStyle: 'vanilla/api/util/text/MCStyle.md'
+          - MCTextComponent: 'vanilla/api/util/text/MCTextComponent.md'
+      - Welt:
+        - MCBiome: 'Vanilla/api/world/MCBiome.md'
+
+- Crafttweaker:
+    - Api:
+      - Eintrag:
+        - Tooltip:
+          - ITooltipFunction: 'crafttweaker/api/item/tooltip/ITooltipFunction.md'
+      - Rezepte:
+        - WrapperRezept: 'crafttweaker/api/recipes/WrapperRecipe.md'
+      - Text:
+        - Textformatierung: 'crafttweaker/api/text/TextFormatting.md'
+
