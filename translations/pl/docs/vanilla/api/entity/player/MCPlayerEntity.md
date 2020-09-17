@@ -1,226 +1,226 @@
 # MCPlayerEntity
 
-This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
+Ta klasa została dodana przez moda z mod-id `crafttweaker`. Więc musisz zainstalować tę modyfikację, jeśli chcesz używać tej funkcji.
 
-## Importing the class
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+## Importowanie klasy
+Może być wymagane zaimportowanie pakietu, jeśli napotkasz jakiekolwiek problemy (np. rzucanie tablicy), tak aby były bezpieczne niż przepraszamy i dodaj import.
 ```zenscript
 crafttweaker.api.entity.player.MCPlayerEntity
 ```
 
-## Methods
-### addExhaustion
+## Metody
+### dodaj
 
-increases exhaustion level by supplied amount
-
-```zenscript
-myMCPlayerEntity.addExhaustion(exhaustion as float);
-```
-
-| Parameter  | Type  | Description             |
-| ---------- | ----- | ----------------------- |
-| exhaustion | float | No description provided |
-
-
-### addExperienceLevel
-
-Add experience levels to this player.
+zwiększa poziom wyczerpania o dostarczoną ilość
 
 ```zenscript
-myMCPlayerEntity.addExperienceLevel(levels as int);
+Jednostka myMCPlayerEntity.addExhaustion(jako pływak);
 ```
 
-| Parameter | Type | Description             |
-| --------- | ---- | ----------------------- |
-| levels    | int  | No description provided |
+| Parametr    | Typ                | Opis             |
+| ----------- | ------------------ | ---------------- |
+| wyczerpanie | zmiennoprzecinkowe | Nie podano opisu |
+
+
+### poziom dodatków
+
+Dodaj poziom doświadczenia do tego gracza.
+
+```zenscript
+MyMCPlayerEntity.addExperienceLevel(poziomy jak int);
+```
+
+| Parametr | Typ    | Opis             |
+| -------- | ------ | ---------------- |
+| poziomy  | odcień | Nie podano opisu |
 
 
 ### addItemStackToInventory
 
-Returns boolean
+Zwraca wartość logiczną
 
 ```zenscript
 myMCPlayerEntity.addItemStackToInventory(p_191521_1_ as crafttweaker.api.item.IItemStack);
 ```
 
-| Parameter     | Type                                                              | Description             |
-| ------------- | ----------------------------------------------------------------- | ----------------------- |
-| p_191521_1_ | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | No description provided |
+| Parametr      | Typ                                                               | Opis             |
+| ------------- | ----------------------------------------------------------------- | ---------------- |
+| p_191521_1_ | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | Nie podano opisu |
 
 
 ### addMovementStat
 
-Adds a value to a movement statistic field - like run, walk, swin or climb.
+Dodaje wartość do pola statystycznego ruchu - jak bieg, chodzenie, bieganie lub wspinanie.
 
 ```zenscript
-myMCPlayerEntity.addMovementStat(p_71000_1_ as double, p_71000_3_ as double, p_71000_5_ as double);
+Statut myMCPlayerEntity.addMovementStat(p_71000_1_ jako podwójne, p_71000_3_ jako podwójne, p_71000_5_ jako podwójne);
 ```
 
-| Parameter    | Type   | Description             |
-| ------------ | ------ | ----------------------- |
-| p_71000_1_ | double | No description provided |
-| p_71000_3_ | double | No description provided |
-| p_71000_5_ | double | No description provided |
+| Parametr     | Typ      | Opis             |
+| ------------ | -------- | ---------------- |
+| p_71000_1_ | podwójne | Nie podano opisu |
+| p_71000_3_ | podwójne | Nie podano opisu |
+| p_71000_5_ | podwójne | Nie podano opisu |
 
 
-### addPotionEffect
+### Efekt admikstury
 
-Returns boolean
+Zwraca wartość logiczną
 
 ```zenscript
-myMCPlayerEntity.addPotionEffect(effectInstanceIn as crafttweaker.api.potion.MCPotionEffectInstance);
+MyMCPlayerEntity.addPotionEffect(effectInstanceIn jako crafttweaker.api.potion.MCPotionEffectInstance);
 ```
 
-| Parameter        | Type                                                                                          | Description             |
-| ---------------- | --------------------------------------------------------------------------------------------- | ----------------------- |
-| effectInstanceIn | [crafttweaker.api.potion.MCPotionEffectInstance](/vanilla/api/potions/MCPotionEffectInstance) | No description provided |
+| Parametr   | Typ                                                                                                         | Opis             |
+| ---------- | ----------------------------------------------------------------------------------------------------------- | ---------------- |
+| InstanceIn | [[PLACEHOLDER] crafttweaker.api.potion.MCPotionEffectInstance](/vanilla/api/potions/MCPotionEffectInstance) | Nie podano opisu |
 
 
-### addScore
+### addWynik
 
-Add to player's score
+Dodaj do wyniku gracza
 
 ```zenscript
-myMCPlayerEntity.addScore(scoreIn as int);
+MyMCPlayerEntity.addScore(scoreIn as int);
 ```
 
-| Parameter | Type | Description             |
-| --------- | ---- | ----------------------- |
-| scoreIn   | int  | No description provided |
+| Parametr | Typ    | Opis             |
+| -------- | ------ | ---------------- |
+| wynik    | odcień | Nie podano opisu |
 
 
 ### addTag
 
-Returns boolean
+Zwraca wartość logiczną
 
 ```zenscript
-myMCPlayerEntity.addTag(tag as String);
+myMCPlayerEntity.addTag(tag jako String);
 ```
 
-| Parameter | Type   | Description             |
-| --------- | ------ | ----------------------- |
-| tag       | String | No description provided |
+| Parametr | Typ         | Opis             |
+| -------- | ----------- | ---------------- |
+| znacznik | Ciąg znaków | Nie podano opisu |
 
 
 ### addVelocity
 
-Adds to the current velocity of the entity, and sets  to true.
+Dodaje do bieżącej prędkości obiektu i ustawia na true.
 
 ```zenscript
-myMCPlayerEntity.addVelocity(x as double, y as double, z as double);
+MyMCPlayerEntity.addVelocity(x jako podwójne, y jako podwójne, z jako podwójne);
 ```
 
-| Parameter | Type   | Description             |
-| --------- | ------ | ----------------------- |
-| x         | double | No description provided |
-| y         | double | No description provided |
-| z         | double | No description provided |
+| Parametr | Typ      | Opis             |
+| -------- | -------- | ---------------- |
+| x        | podwójne | Nie podano opisu |
+| y        | podwójne | Nie podano opisu |
+| z        | podwójne | Nie podano opisu |
 
 
-### allowLogging
+### zezwól na rejestrowanie
 
-Returns boolean
+Zwraca wartość logiczną
 
 ```zenscript
-myMCPlayerEntity.allowLogging();
+[PLACEHOLDER] myMCPlayerEntity.allowLogging();
 ```
 
-### attackable
+### atakowalne
 
-Returns boolean
+Zwraca wartość logiczną
 
 ```zenscript
-myMCPlayerEntity.attackable();
+[PLACEHOLDER] myMCPlayerEntity.attackable();
 ```
 
-### attemptTeleport
+### próba Teleportacji
 
-Returns boolean
+Zwraca wartość logiczną
 
 ```zenscript
-myMCPlayerEntity.attemptTeleport(p_213373_1_ as double, p_213373_3_ as double, p_213373_5_ as double, p_213373_7_ as boolean);
+myMCPlayerEntity.trying ptTeleport(p_213373_1_ jako podwójne, p_213373_3_ jako podwójne, p_213373_5_ jako podwójne, p_213373_7_ jako wartość logiczna);
 ```
 
-| Parameter     | Type    | Description             |
-| ------------- | ------- | ----------------------- |
-| p_213373_1_ | double  | No description provided |
-| p_213373_3_ | double  | No description provided |
-| p_213373_5_ | double  | No description provided |
-| p_213373_7_ | boolean | No description provided |
+| Parametr      | Typ      | Opis             |
+| ------------- | -------- | ---------------- |
+| p_213373_1_ | podwójne | Nie podano opisu |
+| p_213373_3_ | podwójne | Nie podano opisu |
+| p_213373_5_ | podwójne | Nie podano opisu |
+| p_213373_7_ | boolean  | Nie podano opisu |
 
 
 ### baseTick
 
-Gets called every tick from main Entity class
+Pobiera nazywa się każdy tick z głównej klasy encji
 
 ```zenscript
 myMCPlayerEntity.baseTick();
 ```
 
-### canAttackPlayer
+### CanAttackPlayer
 
-Returns boolean
+Zwraca wartość logiczną
 
 ```zenscript
-myMCPlayerEntity.canAttackPlayer(other as crafttweaker.api.entity.player.MCPlayerEntity);
+MyMCPlayerEntity.canAttackPlayer(inne jak crafttweaker.api.entity.player.MCPlayerEntity);
 ```
 
-| Parameter | Type                                                                                       | Description             |
-| --------- | ------------------------------------------------------------------------------------------ | ----------------------- |
-| other     | [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity) | No description provided |
+| Parametr | Typ                                                                                        | Opis             |
+| -------- | ------------------------------------------------------------------------------------------ | ---------------- |
+| inne     | [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity) | Nie podano opisu |
 
 
 ### canBeAttackedWithItem
 
-Returns true if it's possible to attack this entity with an item.
+Zwraca prawda, jeśli możliwe jest zaatakowanie tego obiektu przedmiotem.
 
-Returns boolean
+Zwraca wartość logiczną
 
 ```zenscript
 myMCPlayerEntity.canBeAttackedWithItem();
 ```
 
-### canBeCollidedWith
+### kolizja z kanbem
 
-Returns true if other Entities should be prevented from moving through this Entity.
+Zwraca prawdę, jeśli inne podmioty nie powinny być w stanie przenieść się przez ten podmiot.
 
-Returns boolean
+Zwraca wartość logiczną
 
 ```zenscript
-myMCPlayerEntity.canBeCollidedWith();
+MyMCPlayerEntity.canBeCollidedWith();
 ```
 
-### canBeHitWithPotion
+### CanBeHitWithMikstura
 
-Returns false if the entity is an armor stand. Returns true for all other entity living bases.
+Zwraca fałsz jeśli obiekt jest stojak na zbroję. Zwraca true dla wszystkich innych żyjących podstaw.
 
-Returns boolean
+Zwraca wartość logiczną
 
 ```zenscript
-myMCPlayerEntity.canBeHitWithPotion();
+MyMCPlayerEntity.canBeHitWithPotion();
 ```
 
-### canBePushed
+### popychany
 
-Returns true if this entity should push and be pushed by other entities when colliding.
+Zwraca prawdę, jeśli ten obiekt powinien wypchnąć i być wypchany przez inne obiekty podczas kolizji.
 
-Returns boolean
+Zwraca wartość logiczną
 
 ```zenscript
-myMCPlayerEntity.canBePushed();
+MyMCPlayerEntity.canBePushed();
 ```
 
 ### canBeRiddenInWater
 
-Returns boolean
+Zwraca wartość logiczną
 
 ```zenscript
 myMCPlayerEntity.canBeRiddenInWater();
 ```
 
-### canBreatheUnderwater
+### [PLACEHOLDER] canBreathePodater
 
-Returns boolean
+Zwraca wartość logiczną
 
 ```zenscript
 myMCPlayerEntity.canBreatheUnderwater();
@@ -228,33 +228,33 @@ myMCPlayerEntity.canBreatheUnderwater();
 
 ### canEat
 
-Returns boolean
+Zwraca wartość logiczną
 
 ```zenscript
-myMCPlayerEntity.canEat(ignoreHunger as boolean);
+myMCPlayerEntity.canEat(ignoreHunger jako boolean);
 ```
 
-| Parameter    | Type    | Description             |
-| ------------ | ------- | ----------------------- |
-| ignoreHunger | boolean | No description provided |
+| Parametr     | Typ     | Opis             |
+| ------------ | ------- | ---------------- |
+| ignoreHunger | boolean | Nie podano opisu |
 
 
-### canHarvestBlock
+### blok canZvestBlocka
 
-Returns boolean
+Zwraca wartość logiczną
 
 ```zenscript
-myMCPlayerEntity.canHarvestBlock(state as crafttweaker.api.block.MCBlockState);
+myMCPlayerEntity.canvestBlock(stan jako crafttweaker.api.block.MCBlockState);
 ```
 
-| Parameter | Type                                                                    | Description             |
-| --------- | ----------------------------------------------------------------------- | ----------------------- |
-| state     | [crafttweaker.api.block.MCBlockState](/vanilla/api/blocks/MCBlockState) | No description provided |
+| Parametr    | Typ                                                                     | Opis             |
+| ----------- | ----------------------------------------------------------------------- | ---------------- |
+| województwo | [crafttweaker.api.block.MCBlockState](/vanilla/api/blocks/MCBlockState) | Nie podano opisu |
 
 
 ### canPassengerSteer
 
-Returns boolean
+Zwraca wartość logiczną
 
 ```zenscript
 myMCPlayerEntity.canPassengerSteer();
@@ -262,26 +262,26 @@ myMCPlayerEntity.canPassengerSteer();
 
 ### canPlayerEdit
 
-Returns whether this player can modify the block at a certain location with the given stack. <p> The position being queried is {@code pos.offset(facing.getOpposite()))}. Returns: `Whether this player may modify the queried location in the current world` @see ItemStack#canPlaceOn(Block) @see ItemStack#canEditBlocks() @see PlayerCapabilities#allowEdit
+Zwraca czy ten gracz może modyfikować blok w określonym miejscu z danym stosem. <p> Zapytana pozycja to {@code pos.offset(facing.getOpposite()))}. Zwroty: `Czy ten gracz może modyfikować zapytaną lokalizację w bieżącym świecie` @see ItemStack#canPlaceOn(Block) @see ItemStack#canEditBlocks() @see PlayerCapabilities#allowEdit
 
-Returns boolean
+Zwraca wartość logiczną
 
 ```zenscript
-myMCPlayerEntity.canPlayerEdit(pos as crafttweaker.api.util.BlockPos, facing as crafttweaker.api.util.Direction, stack as crafttweaker.api.item.IItemStack);
+MyMCPlayerEntity.canPlayerEdit(pos as crafttweaker.api.util.BlockPos, face as crafttweaker.api.util.Direction, stack as crafttweaker.api.item.IItemStack);
 ```
 
-| Parameter | Type                                                              | Description             |
-| --------- | ----------------------------------------------------------------- | ----------------------- |
-| pos       | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos)      | No description provided |
-| facing    | [crafttweaker.api.util.Direction](/vanilla/api/util/Direction)    | No description provided |
-| stack     | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | No description provided |
+| Parametr | Typ                                                                     | Opis             |
+| -------- | ----------------------------------------------------------------------- | ---------------- |
+| poz.     | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos)            | Nie podano opisu |
+| zwrócony | [Kierunek crafttweaker.api.util.Direction](/vanilla/api/util/Direction) | Nie podano opisu |
+| stos     | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)       | Nie podano opisu |
 
 
 ### canRenderOnFire
 
-Return whether this entity should be rendered as on fire.
+Zwraca, czy ten obiekt powinien być wyrenderowany jako wystrzeliwy.
 
-Returns boolean
+Zwraca wartość logiczną
 
 ```zenscript
 myMCPlayerEntity.canRenderOnFire();
@@ -289,38 +289,38 @@ myMCPlayerEntity.canRenderOnFire();
 
 ### canRiderInteract
 
-Returns boolean
+Zwraca wartość logiczną
 
 ```zenscript
 myMCPlayerEntity.canRiderInteract();
 ```
 
-### canSwim
+### pław
 
-Returns boolean
-
-```zenscript
-myMCPlayerEntity.canSwim();
-```
-
-### canTrample
-
-Returns boolean
+Zwraca wartość logiczną
 
 ```zenscript
-myMCPlayerEntity.canTrample(state as crafttweaker.api.block.MCBlockState, pos as crafttweaker.api.util.BlockPos, fallDistance as float);
+MyMCPlayerEntity.canSwim();
 ```
 
-| Parameter    | Type                                                                    | Description             |
-| ------------ | ----------------------------------------------------------------------- | ----------------------- |
-| state        | [crafttweaker.api.block.MCBlockState](/vanilla/api/blocks/MCBlockState) | No description provided |
-| pos          | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos)            | No description provided |
-| fallDistance | float                                                                   | No description provided |
+### Kanister
+
+Zwraca wartość logiczną
+
+```zenscript
+myMCPlayerEntity.canTrample(stan jako crafttweaker.api.block.MCBlockStan, pos jako crafttweaker.api.util.BlockPos, Depozyt jako pływak);
+```
+
+| Parametr    | Typ                                                                     | Opis             |
+| ----------- | ----------------------------------------------------------------------- | ---------------- |
+| województwo | [crafttweaker.api.block.MCBlockState](/vanilla/api/blocks/MCBlockState) | Nie podano opisu |
+| poz.        | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos)            | Nie podano opisu |
+| Odległość   | zmiennoprzecinkowe                                                      | Nie podano opisu |
 
 
 ### canUpdate
 
-Returns boolean
+Zwraca wartość logiczną
 
 ```zenscript
 myMCPlayerEntity.canUpdate();
@@ -328,55 +328,55 @@ myMCPlayerEntity.canUpdate();
 
 
 ```zenscript
-myMCPlayerEntity.canUpdate(value as boolean);
+myMCPlayerEntity.canUpdate(wartość jako wartość logiczna);
 ```
 
-| Parameter | Type    | Description             |
-| --------- | ------- | ----------------------- |
-| value     | boolean | No description provided |
+| Parametr | Typ     | Opis             |
+| -------- | ------- | ---------------- |
+| wartość  | boolean | Nie podano opisu |
 
 
 ### canUseCommandBlock
 
-Returns boolean
+Zwraca wartość logiczną
 
 ```zenscript
 myMCPlayerEntity.canUseCommandBlock();
 ```
 
-### clearActivePotions
+### Jasne Mikstury
 
-Returns boolean
-
-```zenscript
-myMCPlayerEntity.clearActivePotions();
-```
-
-### clearBedPosition
+Zwraca wartość logiczną
 
 ```zenscript
-myMCPlayerEntity.clearBedPosition();
+MyMCPlayerEntity.clearActivePotions();
 ```
 
-### closeScreen
+### Pozycja wylaczona
 
-set current crafting inventory back to the 2x2 square
+```zenscript
+MyMCPlayerEntity.clearBedPosition();
+```
+
+### ekran zamknięty
+
+ustaw bieżący ekwipunek z powrotem na kwadrat 2x2
 
 ```zenscript
 myMCPlayerEntity.closeScreen();
 ```
 
-### curePotionEffects
+### Efekty leczeniowe
 
-Returns boolean
+Zwraca wartość logiczną
 
 ```zenscript
-myMCPlayerEntity.curePotionEffects(curativeItem as crafttweaker.api.item.IItemStack);
+MyMCPlayerEntity.curePotionEffects(curativeItem as crafttweaker.api.item.IItemStack);
 ```
 
-| Parameter    | Type                                                              | Description             |
-| ------------ | ----------------------------------------------------------------- | ----------------------- |
-| curativeItem | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | No description provided |
+| Parametr          | Typ                                                               | Opis             |
+| ----------------- | ----------------------------------------------------------------- | ---------------- |
+| Element kuratywny | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | Nie podano opisu |
 
 
 ### detach
@@ -385,76 +385,76 @@ myMCPlayerEntity.curePotionEffects(curativeItem as crafttweaker.api.item.IItemSt
 myMCPlayerEntity.detach();
 ```
 
-### disableShield
+### wyłączona tarcza
 
 ```zenscript
-myMCPlayerEntity.disableShield(p_190777_1_ as boolean);
+myMCPlayerEntity.disableShield(p_190777_1_ jako boolean);
 ```
 
-| Parameter     | Type    | Description             |
-| ------------- | ------- | ----------------------- |
-| p_190777_1_ | boolean | No description provided |
+| Parametr      | Typ     | Opis             |
+| ------------- | ------- | ---------------- |
+| p_190777_1_ | boolean | Nie podano opisu |
 
 
-### doesEntityNotTriggerPressurePlate
+### PodmiotyNotTriggerPressurePlate
 
-Return whether this entity should NOT trigger a pressure plate or a tripwire.
+Zwróć czy ten obiekt NIE powinien uruchamiać płyty ciśnieniowej czy trójprzewodowej.
 
-Returns boolean
+Zwraca wartość logiczną
 
 ```zenscript
-myMCPlayerEntity.doesEntityNotTriggerPressurePlate();
+MyMCPlayerEntity.doesEntityNotTriggerPressurePlate();
 ```
 
-### equals
+### równa się
 
-Returns boolean
+Zwraca wartość logiczną
 
 ```zenscript
-myMCPlayerEntity.equals(p_equals_1_ as Object);
+myMCPlayerEntity.equals(p_equals_1_ jako obiekt);
 ```
 
-| Parameter     | Type   | Description             |
-| ------------- | ------ | ----------------------- |
-| p_equals_1_ | Object | No description provided |
+| Parametr   | Typ    | Opis             |
+| ---------- | ------ | ---------------- |
+| p_rów_1_ | Obiekt | Nie podano opisu |
 
 
 ### extinguish
 
-Removes fire from entity.
+Usuwa ogień z obiektu.
 
 ```zenscript
 myMCPlayerEntity.extinguish();
 ```
 
-### fall
+### upadek
 
 ```zenscript
-myMCPlayerEntity.fall(distance as float, damageMultiplier as float);
+myMCPlayerEntity.fall(odległość jako pływak, mnożnik obrażeń jako pływak);
 ```
 
-| Parameter        | Type  | Description             |
-| ---------------- | ----- | ----------------------- |
-| distance         | float | No description provided |
-| damageMultiplier | float | No description provided |
+| Parametr        | Typ                | Opis             |
+| --------------- | ------------------ | ---------------- |
+| odległość       | zmiennoprzecinkowe | Nie podano opisu |
+| Mnożnik obrażeń | zmiennoprzecinkowe | Nie podano opisu |
 
 
-### findAmmo
+### znajdź amunicję
 
-Returns [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
+Zwraca [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
 
 ```zenscript
-myMCPlayerEntity.findAmmo(shootable as crafttweaker.api.item.IItemStack);
+MyMCPlayerEntity.findAmmo(można strzelać jako crafttweaker.api.item.IItemStack);
 ```
 
-| Parameter | Type                                                              | Description             |
-| --------- | ----------------------------------------------------------------- | ----------------------- |
-| shootable | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | No description provided |
+| Parametr   | Typ                                                               | Opis             |
+| ---------- | ----------------------------------------------------------------- | ---------------- |
+| strzelalne | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | Nie podano opisu |
 
 
 ### func_213300_bk
 
-Returns boolean
+Zwraca wartość logiczną
 
 ```zenscript
 myMCPlayerEntity.func_213300_bk();
@@ -463,19 +463,19 @@ myMCPlayerEntity.func_213300_bk();
 ### func_213312_b
 
 ```zenscript
-myMCPlayerEntity.func_213312_b(p_213312_1_ as double, p_213312_3_ as double, p_213312_5_ as double);
+myMCPlayerEntity.func_213312_b(p_213312_1_ jako podwójne, p_213312_3_ jako podwójne, p_213312_5_ jako podwójne);
 ```
 
-| Parameter     | Type   | Description             |
-| ------------- | ------ | ----------------------- |
-| p_213312_1_ | double | No description provided |
-| p_213312_3_ | double | No description provided |
-| p_213312_5_ | double | No description provided |
+| Parametr      | Typ      | Opis             |
+| ------------- | -------- | ---------------- |
+| p_213312_1_ | podwójne | Nie podano opisu |
+| p_213312_3_ | podwójne | Nie podano opisu |
+| p_213312_5_ | podwójne | Nie podano opisu |
 
 
 ### func_213314_bj
 
-Returns boolean
+Zwraca wartość logiczną
 
 ```zenscript
 myMCPlayerEntity.func_213314_bj();
@@ -483,7 +483,7 @@ myMCPlayerEntity.func_213314_bj();
 
 ### func_213343_cS
 
-Returns float
+Zwraca zmiennoprzecinkowe
 
 ```zenscript
 myMCPlayerEntity.func_213343_cS();
@@ -491,22 +491,22 @@ myMCPlayerEntity.func_213343_cS();
 
 ### func_213365_e
 
-Returns boolean
+Zwraca wartość logiczną
 
 ```zenscript
-myMCPlayerEntity.func_213365_e(itemstackIn as crafttweaker.api.item.IItemStack);
+myMCPlayerEntity.func_213365_e(itemstackIn jako crafttweaker.api.item.IItemStack);
 ```
 
-| Parameter   | Type                                                              | Description             |
-| ----------- | ----------------------------------------------------------------- | ----------------------- |
-| itemstackIn | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | No description provided |
+| Parametr    | Typ                                                               | Opis             |
+| ----------- | ----------------------------------------------------------------- | ---------------- |
+| itemstackIn | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | Nie podano opisu |
 
 
 ### getAIMoveSpeed
 
-the movespeed used for the new AI system
+ruchy używane w nowym systemie AI
 
-Returns float
+Zwraca zmiennoprzecinkowe
 
 ```zenscript
 myMCPlayerEntity.getAIMoveSpeed();
@@ -514,9 +514,9 @@ myMCPlayerEntity.getAIMoveSpeed();
 
 ### getAbsorptionAmount
 
-Returns the amount of health added by the Absorption effect.
+Zwraca ilość zdrowia dodaną przez efekt absorpcji.
 
-Returns float
+Zwraca zmiennoprzecinkowe
 
 ```zenscript
 myMCPlayerEntity.getAbsorptionAmount();
@@ -524,7 +524,7 @@ myMCPlayerEntity.getAbsorptionAmount();
 
 ### getActiveItemStack
 
-Returns [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
+Zwraca [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
 
 ```zenscript
 myMCPlayerEntity.getActiveItemStack();
@@ -532,22 +532,22 @@ myMCPlayerEntity.getActiveItemStack();
 
 ### getActivePotionEffect
 
-returns the PotionEffect for the supplied Potion if it is active, null otherwise.
+zwraca Efekt Mikstur dostarczonej Mikstury, jeśli jest aktywny, zerowy w przeciwnym wypadku.
 
-Returns [crafttweaker.api.potion.MCPotionEffectInstance](/vanilla/api/potions/MCPotionEffectInstance)
+Zwraca [crafttweaker.api.potion.MCPotionEffectInstance](/vanilla/api/potions/MCPotionEffectInstance)
 
 ```zenscript
-myMCPlayerEntity.getActivePotionEffect(potionIn as crafttweaker.api.potion.MCPotionEffect);
+myMCPlayerEntity.getActivePotionEffect(potionIn jako crafttweaker.api.potion.MCPotionEffect);
 ```
 
-| Parameter | Type                                                                          | Description             |
-| --------- | ----------------------------------------------------------------------------- | ----------------------- |
-| potionIn  | [crafttweaker.api.potion.MCPotionEffect](/vanilla/api/potions/MCPotionEffect) | No description provided |
+| Parametr | Typ                                                                                         | Opis             |
+| -------- | ------------------------------------------------------------------------------------------- | ---------------- |
+| potionIn | [[PLACEHOLDER] crafttweaker.api.potion.MCPotionEffect](/vanilla/api/potions/MCPotionEffect) | Nie podano opisu |
 
 
 ### getActivePotionEffects
 
-Returns Collection<[crafttweaker.api.potion.MCPotionEffectInstance](/vanilla/api/potions/MCPotionEffectInstance)>
+Zwraca kolekcję<[crafttweaker.api.potion.MCPotionEffectInstance](/vanilla/api/potions/MCPotionEffectInstance)>
 
 ```zenscript
 myMCPlayerEntity.getActivePotionEffects();
@@ -555,17 +555,17 @@ myMCPlayerEntity.getActivePotionEffects();
 
 ### getAdjustedHorizontalFacing
 
-Gets the horizontal facing direction of this Entity, adjusted to take specially-treated entity types into account.
+Pobiera horyzontalny kierunek działania tego podmiotu, skorygowany w taki sposób, aby uwzględnić specjalnie traktowane typy podmiotów.
 
-Returns [crafttweaker.api.util.Direction](/vanilla/api/util/Direction)
+Zwraca [crafttweaker.api.util.Direction](/vanilla/api/util/Direction)
 
 ```zenscript
-myMCPlayerEntity.getAdjustedHorizontalFacing();
+MyMCPlayerEntity.getAdjustedHorizontalFacing();
 ```
 
 ### getAir
 
-Returns int
+Zwraca int
 
 ```zenscript
 myMCPlayerEntity.getAir();
@@ -573,7 +573,7 @@ myMCPlayerEntity.getAir();
 
 ### getAlwaysRenderNameTagForRender
 
-Returns boolean
+Zwraca wartość logiczną
 
 ```zenscript
 myMCPlayerEntity.getAlwaysRenderNameTagForRender();
@@ -581,7 +581,7 @@ myMCPlayerEntity.getAlwaysRenderNameTagForRender();
 
 ### getArrowCountInEntity
 
-Returns int
+Zwraca int
 
 ```zenscript
 myMCPlayerEntity.getArrowCountInEntity();
@@ -589,9 +589,9 @@ myMCPlayerEntity.getArrowCountInEntity();
 
 ### getBedDirection
 
-gets the Direction for the camera if this entity is sleeping
+pobiera Kierunek kamery, jeśli ten obiekt uśpi
 
-Returns [crafttweaker.api.util.Direction](/vanilla/api/util/Direction)
+Zwraca [crafttweaker.api.util.Direction](/vanilla/api/util/Direction)
 
 ```zenscript
 myMCPlayerEntity.getBedDirection();
@@ -599,33 +599,33 @@ myMCPlayerEntity.getBedDirection();
 
 ### getBedLocation
 
-Returns [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos)
+Zwraca [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos)
 
 ```zenscript
-myMCPlayerEntity.getBedLocation();
+MyMCPlayerEntity.getBedLocation();
 ```
 
-### getBlockState
+### Status getBlockState
 
-Returns [crafttweaker.api.block.MCBlockState](/vanilla/api/blocks/MCBlockState)
+Zwraca [crafttweaker.api.block.MCBlockState](/vanilla/api/blocks/MCBlockState)
 
 ```zenscript
 myMCPlayerEntity.getBlockState();
 ```
 
-### getBrightness
+### Uzyskaj jasność
 
-Gets how bright this entity is.
+Pobiera jak jasny jest ten obiekt.
 
-Returns float
+Zwraca zmiennoprzecinkowe
 
 ```zenscript
-myMCPlayerEntity.getBrightness();
+MyMCPlayerEntity.getBrightness();
 ```
 
 ### getBrightnessForRender
 
-Returns int
+Zwraca int
 
 ```zenscript
 myMCPlayerEntity.getBrightnessForRender();
@@ -633,28 +633,28 @@ myMCPlayerEntity.getBrightnessForRender();
 
 ### getCachedUniqueIdString
 
-Returns String
+Zwraca ciąg znaków
 
 ```zenscript
 myMCPlayerEntity.getCachedUniqueIdString();
 ```
 
-### getClassification
+### Uzyskaj klasyfikację
 
-Returns [crafttweaker.api.entity.MCEntityClassification](/vanilla/api/entities/MCEntityClassification)
+Zwraca [crafttweaker.api.entity.MCEntityClassification](/vanilla/api/entities/MCEntityClassification)
 
 ```zenscript
-myMCPlayerEntity.getClassification(forSpawnCount as boolean);
+myMCPlayerEntity.getClassification(forSpawnCount jako boolean);
 ```
 
-| Parameter     | Type    | Description             |
-| ------------- | ------- | ----------------------- |
-| forSpawnCount | boolean | No description provided |
+| Parametr                    | Typ     | Opis             |
+| --------------------------- | ------- | ---------------- |
+| [PLACEHOLDER] forSpawnCount | boolean | Nie podano opisu |
 
 
 ### getCollisionBorderSize
 
-Returns float
+Zwraca zmiennoprzecinkowe
 
 ```zenscript
 myMCPlayerEntity.getCollisionBorderSize();
@@ -662,71 +662,71 @@ myMCPlayerEntity.getCollisionBorderSize();
 
 ### getCooldownPeriod
 
-Returns float
+Zwraca zmiennoprzecinkowe
 
 ```zenscript
-myMCPlayerEntity.getCooldownPeriod();
+MyMCPlayerEntity.getCooldownPeriod();
 ```
 
-### getCooledAttackStrength
+### getCooledAttackth
 
-Returns the percentage of attack power available based on the cooldown (zero to one).
+Zwraca procentową moc ataku dostępną na podstawie czasu odnowienia (zero do jednego).
 
-Returns float
+Zwraca zmiennoprzecinkowe
 
 ```zenscript
-myMCPlayerEntity.getCooledAttackStrength(adjustTicks as float);
+myMCPlayerEntity.getCooledAttackStrength(dostosowuje Ticks jako pływak);
 ```
 
-| Parameter   | Type  | Description             |
-| ----------- | ----- | ----------------------- |
-| adjustTicks | float | No description provided |
+| Parametr         | Typ                | Opis             |
+| ---------------- | ------------------ | ---------------- |
+| dostosowuj Ticki | zmiennoprzecinkowe | Nie podano opisu |
 
 
 ### getDigSpeed
 
-Returns float
+Zwraca zmiennoprzecinkowe
 
 ```zenscript
-myMCPlayerEntity.getDigSpeed(state as crafttweaker.api.block.MCBlockState);
+myMCPlayerEntity.getDigSpeed(stan jako crafttweaker.api.block.MCBlockState);
 ```
 
-| Parameter | Type                                                                    | Description             |
-| --------- | ----------------------------------------------------------------------- | ----------------------- |
-| state     | [crafttweaker.api.block.MCBlockState](/vanilla/api/blocks/MCBlockState) | No description provided |
+| Parametr    | Typ                                                                     | Opis             |
+| ----------- | ----------------------------------------------------------------------- | ---------------- |
+| województwo | [crafttweaker.api.block.MCBlockState](/vanilla/api/blocks/MCBlockState) | Nie podano opisu |
 
 
 
-Returns float
+Zwraca zmiennoprzecinkowe
 
 ```zenscript
-myMCPlayerEntity.getDigSpeed(arg0 as crafttweaker.api.block.MCBlockState, arg1 as crafttweaker.api.util.BlockPos);
+myMCPlayerEntity.getDigSpeed(arg0 jako crafttweaker.api.block.MCBlockState, arg1 jako crafttweaker.api.util.BlockPos);
 ```
 
-| Parameter | Type                                                                    | Description             |
-| --------- | ----------------------------------------------------------------------- | ----------------------- |
-| arg0      | [crafttweaker.api.block.MCBlockState](/vanilla/api/blocks/MCBlockState) | No description provided |
-| arg1      | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos)            | No description provided |
+| Parametr | Typ                                                                     | Opis             |
+| -------- | ----------------------------------------------------------------------- | ---------------- |
+| arg0     | [crafttweaker.api.block.MCBlockState](/vanilla/api/blocks/MCBlockState) | Nie podano opisu |
+| arg1     | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos)            | Nie podano opisu |
 
 
 ### getDistanceSq
 
-Returns double
+Zwraca podwójnie
 
 ```zenscript
-myMCPlayerEntity.getDistanceSq(x as double, y as double, z as double);
+myMCPlayerEntity.getDistanceSq(x jako podwójny, y jako podwójny, z jako podwójny);
 ```
 
-| Parameter | Type   | Description             |
-| --------- | ------ | ----------------------- |
-| x         | double | No description provided |
-| y         | double | No description provided |
-| z         | double | No description provided |
+| Parametr | Typ      | Opis             |
+| -------- | -------- | ---------------- |
+| x        | podwójne | Nie podano opisu |
+| y        | podwójne | Nie podano opisu |
+| z        | podwójne | Nie podano opisu |
 
 
 ### getEntityId
 
-Returns int
+Zwraca int
 
 ```zenscript
 myMCPlayerEntity.getEntityId();
@@ -734,7 +734,7 @@ myMCPlayerEntity.getEntityId();
 
 ### getEntityString
 
-Returns String
+Zwraca ciąg znaków
 
 ```zenscript
 myMCPlayerEntity.getEntityString();
@@ -742,7 +742,7 @@ myMCPlayerEntity.getEntityString();
 
 ### getEyeHeight
 
-Returns float
+Zwraca zmiennoprzecinkowe
 
 ```zenscript
 myMCPlayerEntity.getEyeHeight();
@@ -750,7 +750,7 @@ myMCPlayerEntity.getEyeHeight();
 
 ### getFireTimer
 
-Returns int
+Zwraca int
 
 ```zenscript
 myMCPlayerEntity.getFireTimer();
@@ -758,15 +758,15 @@ myMCPlayerEntity.getFireTimer();
 
 ### getHealth
 
-Returns float
+Zwraca zmiennoprzecinkowe
 
 ```zenscript
 myMCPlayerEntity.getHealth();
 ```
 
-### getHeight
+### Wysokość getHeight
 
-Returns float
+Zwraca zmiennoprzecinkowe
 
 ```zenscript
 myMCPlayerEntity.getHeight();
@@ -774,7 +774,7 @@ myMCPlayerEntity.getHeight();
 
 ### getHeldItemMainhand
 
-Returns [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
+Zwraca [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
 
 ```zenscript
 myMCPlayerEntity.getHeldItemMainhand();
@@ -782,25 +782,25 @@ myMCPlayerEntity.getHeldItemMainhand();
 
 ### getHeldItemOffhand
 
-Returns [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
+Zwraca [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
 
 ```zenscript
 myMCPlayerEntity.getHeldItemOffhand();
 ```
 
-### getHorizontalFacing
+### Powierzchnia getHorizontalface
 
-Gets the horizontal facing direction of this Entity.
+Pobiera poziomy kierunek skierowany do kierunku jazdy tego podmiotu.
 
-Returns [crafttweaker.api.util.Direction](/vanilla/api/util/Direction)
+Zwraca [crafttweaker.api.util.Direction](/vanilla/api/util/Direction)
 
 ```zenscript
-myMCPlayerEntity.getHorizontalFacing();
+MyMCPlayerEntity.getHorizontalFacing();
 ```
 
 ### getIdleTime
 
-Returns int
+Zwraca int
 
 ```zenscript
 myMCPlayerEntity.getIdleTime();
@@ -808,7 +808,7 @@ myMCPlayerEntity.getIdleTime();
 
 ### getItemInUseCount
 
-Returns int
+Zwraca int
 
 ```zenscript
 myMCPlayerEntity.getItemInUseCount();
@@ -816,7 +816,7 @@ myMCPlayerEntity.getItemInUseCount();
 
 ### getItemInUseMaxCount
 
-Returns int
+Zwraca int
 
 ```zenscript
 myMCPlayerEntity.getItemInUseMaxCount();
@@ -824,7 +824,7 @@ myMCPlayerEntity.getItemInUseMaxCount();
 
 ### getLastAttackedEntityTime
 
-Returns int
+Zwraca int
 
 ```zenscript
 myMCPlayerEntity.getLastAttackedEntityTime();
@@ -832,7 +832,7 @@ myMCPlayerEntity.getLastAttackedEntityTime();
 
 ### getLuck
 
-Returns float
+Zwraca zmiennoprzecinkowe
 
 ```zenscript
 myMCPlayerEntity.getLuck();
@@ -840,7 +840,7 @@ myMCPlayerEntity.getLuck();
 
 ### getMaxAir
 
-Returns int
+Zwraca int
 
 ```zenscript
 myMCPlayerEntity.getMaxAir();
@@ -848,9 +848,9 @@ myMCPlayerEntity.getMaxAir();
 
 ### getMaxFallHeight
 
-The maximum height from where the entity is alowed to jump (used in pathfinder)
+Maksymalna wysokość, z której obiekt jest przyłożony do skoku (używana w ścieżce)
 
-Returns int
+Zwraca int
 
 ```zenscript
 myMCPlayerEntity.getMaxFallHeight();
@@ -858,7 +858,7 @@ myMCPlayerEntity.getMaxFallHeight();
 
 ### getMaxHealth
 
-Returns float
+Zwraca zmiennoprzecinkowe
 
 ```zenscript
 myMCPlayerEntity.getMaxHealth();
@@ -866,9 +866,9 @@ myMCPlayerEntity.getMaxHealth();
 
 ### getMaxInPortalTime
 
-Return the amount of time this entity should stay in a portal before being transported.
+Zwróć czas, w którym ten podmiot powinien pozostać w portalu przed transportem.
 
-Returns int
+Zwraca int
 
 ```zenscript
 myMCPlayerEntity.getMaxInPortalTime();
@@ -876,9 +876,9 @@ myMCPlayerEntity.getMaxInPortalTime();
 
 ### getMountedYOffset
 
-Returns the Y offset from the entity's position for any entity riding this one.
+Zwraca przesunięcie Y z pozycji podmiotu dla każdego podmiotu prowadzącego tę pozycję.
 
-Returns double
+Zwraca podwójnie
 
 ```zenscript
 myMCPlayerEntity.getMountedYOffset();
@@ -886,42 +886,42 @@ myMCPlayerEntity.getMountedYOffset();
 
 ### getPitch
 
-Gets the current pitch of the entity.
+Pobiera bieżącą wysokość obiektu.
 
-Returns float
+Zwraca zmiennoprzecinkowe
 
 ```zenscript
 myMCPlayerEntity.getPitch(partialTicks as float);
 ```
 
-| Parameter    | Type  | Description             |
-| ------------ | ----- | ----------------------- |
-| partialTicks | float | No description provided |
+| Parametr        | Typ                | Opis             |
+| --------------- | ------------------ | ---------------- |
+| fragmentalTicki | zmiennoprzecinkowe | Nie podano opisu |
 
 
-### getPortalCooldown
+### Odnowienie getPortaldown
 
-Return the amount of cooldown before this entity can use a portal again.
+Zwróć ilość czasu odnowienia zanim ten podmiot będzie mógł ponownie użyć portalu.
 
-Returns int
+Zwraca int
 
 ```zenscript
-myMCPlayerEntity.getPortalCooldown();
+MyMCPlayerEntity.getPortalCooldown();
 ```
 
 ### getPosition
 
-Get the position in the world. <b>{@code null} is not allowed!</b> If you are not an entity in the world, return the coordinates 0, 0, 0
+Zdobądź pozycję na świecie. <b>{@code null} jest niedozwolony!</b> Jeśli nie jesteś jednostką na świecie, zwróć współrzędne 0, 0, 0, 0
 
-Returns [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos)
+Zwraca [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos)
 
 ```zenscript
-myMCPlayerEntity.getPosition();
+MyMCPlayerEntity.getPosition();
 ```
 
 ### getRenderScale
 
-Returns float
+Zwraca zmiennoprzecinkowe
 
 ```zenscript
 myMCPlayerEntity.getRenderScale();
@@ -929,7 +929,7 @@ myMCPlayerEntity.getRenderScale();
 
 ### getRevengeTimer
 
-Returns int
+Zwraca int
 
 ```zenscript
 myMCPlayerEntity.getRevengeTimer();
@@ -937,103 +937,103 @@ myMCPlayerEntity.getRevengeTimer();
 
 ### getRotationYawHead
 
-Returns float
+Zwraca zmiennoprzecinkowe
 
 ```zenscript
-myMCPlayerEntity.getRotationYawHead();
+MyMCPlayerEntity.getRotationYawHead();
 ```
 
 ### getScore
 
-Returns int
+Zwraca int
 
 ```zenscript
-myMCPlayerEntity.getScore();
+MyMCPlayerEntity.getScore();
 ```
 
 ### getScoreboardName
 
-Returns a String to use as this entity's name in the scoreboard/entity selector systems
+Zwraca ciąg znaków do użycia jako nazwa tej jednostki w systemach selektora wyników/jednostek
 
-Returns String
+Zwraca ciąg znaków
 
 ```zenscript
-myMCPlayerEntity.getScoreboardName();
+MyMCPlayerEntity.getScoreboardName();
 ```
 
 ### getSleepTimer
 
-Returns int
+Zwraca int
 
 ```zenscript
 myMCPlayerEntity.getSleepTimer();
 ```
 
-### getSubmergedHeight
+### getSubmeredHeight
 
-Returns double
+Zwraca podwójnie
 
 ```zenscript
 myMCPlayerEntity.getSubmergedHeight();
 ```
 
-### getSwimAnimation
+### getSwimAnimacja
 
-Returns float
+Zwraca zmiennoprzecinkowe
 
 ```zenscript
-myMCPlayerEntity.getSwimAnimation(partialTicks as float);
+myMCPlayerEntity.getSwimAnimation(partialTicks jako float);
 ```
 
-| Parameter    | Type  | Description             |
-| ------------ | ----- | ----------------------- |
-| partialTicks | float | No description provided |
+| Parametr        | Typ                | Opis             |
+| --------------- | ------------------ | ---------------- |
+| fragmentalTicki | zmiennoprzecinkowe | Nie podano opisu |
 
 
 ### getSwingProgress
 
-Gets the progression of the swing animation, ranges from 0.0 to 1.0.
+Pobiera postęp animacji swingu, zakres od 0.0 do 1.0.
 
-Returns float
-
-```zenscript
-myMCPlayerEntity.getSwingProgress(partialTickTime as float);
-```
-
-| Parameter       | Type  | Description             |
-| --------------- | ----- | ----------------------- |
-| partialTickTime | float | No description provided |
-
-
-### getTags
-
-Returns Set<String>
+Zwraca zmiennoprzecinkowe
 
 ```zenscript
-myMCPlayerEntity.getTags();
+myMCPlayerEntity.getSwingProgress(partialTickTime jako pływak);
 ```
 
-### getTeleportDirection
+| Parametr        | Typ                | Opis             |
+| --------------- | ------------------ | ---------------- |
+| partialTickTime | zmiennoprzecinkowe | Nie podano opisu |
 
-Returns [crafttweaker.api.util.Direction](/vanilla/api/util/Direction)
+
+### getTagi
+
+Zwroty<String>
+
+```zenscript
+MyMCPlayerEntity.getTags();
+```
+
+### Kierunek getTeleportacji
+
+Zwraca [crafttweaker.api.util.Direction](/vanilla/api/util/Direction)
 
 ```zenscript
 myMCPlayerEntity.getTeleportDirection();
 ```
 
-### getTicksElytraFlying
+### getTicksElytraFlatt
 
-Returns int
+Zwraca int
 
 ```zenscript
-myMCPlayerEntity.getTicksElytraFlying();
+myMCPlayerEntity.getTicksElytraFly();
 ```
 
 ### getTotalArmorValue
 
-Returns the current armor value as determined by a call to InventoryPlayer.getTotalArmorValue
+Zwraca bieżącą wartość zbroi określoną przez wywołanie do InventoryPlayer.getTotalArmorValue
 
-Returns int
+Zwraca int
 
 ```zenscript
 myMCPlayerEntity.getTotalArmorValue();
@@ -1041,25 +1041,25 @@ myMCPlayerEntity.getTotalArmorValue();
 
 ### getWidth
 
-Returns float
+Zwraca zmiennoprzecinkowe
 
 ```zenscript
 myMCPlayerEntity.getWidth();
 ```
 
-### getXPSeed
+### getXPed
 
-Returns int
+Zwraca int
 
 ```zenscript
-myMCPlayerEntity.getXPSeed();
+MyMCPlayerEntity.getXPSeed();
 ```
 
 ### getYOffset
 
-Returns the Y Offset of this entity.
+Zwraca przesunięcie Y tej jednostki.
 
-Returns double
+Zwraca podwójnie
 
 ```zenscript
 myMCPlayerEntity.getYOffset();
@@ -1067,85 +1067,85 @@ myMCPlayerEntity.getYOffset();
 
 ### getYaw
 
-Gets the current yaw of the entity
+Pobiera bieżący jaw obiektu
 
-Returns float
+Zwraca zmiennoprzecinkowe
 
 ```zenscript
 myMCPlayerEntity.getYaw(partialTicks as float);
 ```
 
-| Parameter    | Type  | Description             |
-| ------------ | ----- | ----------------------- |
-| partialTicks | float | No description provided |
+| Parametr        | Typ                | Opis             |
+| --------------- | ------------------ | ---------------- |
+| fragmentalTicki | zmiennoprzecinkowe | Nie podano opisu |
 
 
-### giveExperiencePoints
+### giveDoDoświadczenia
 
 ```zenscript
-myMCPlayerEntity.giveExperiencePoints(p_195068_1_ as int);
+myMCPlayerEntity.giveExperiencePoints(p_195068_1_ jako int);
 ```
 
-| Parameter     | Type | Description             |
-| ------------- | ---- | ----------------------- |
-| p_195068_1_ | int  | No description provided |
+| Parametr      | Typ    | Opis             |
+| ------------- | ------ | ---------------- |
+| p_195068_1_ | odcień | Nie podano opisu |
 
 
 ### handleStatusUpdate
 
 ```zenscript
-myMCPlayerEntity.handleStatusUpdate(id as byte);
+myMCPlayerEntity.handleStatusUpdate(id jako byte);
 ```
 
-| Parameter | Type | Description             |
-| --------- | ---- | ----------------------- |
-| id        | byte | No description provided |
+| Parametr | Typ  | Opis             |
+| -------- | ---- | ---------------- |
+| id       | bajt | Nie podano opisu |
 
 
-### handleWaterMovement
+### handleWaterRuch
 
-Returns if this entity is in water and will end up adding the waters velocity to the entity
+Zwraca, jeśli ten obiekt jest w wodzie i w końcu doda prędkość wód do obiektu
 
-Returns boolean
+Zwraca wartość logiczną
 
 ```zenscript
-myMCPlayerEntity.handleWaterMovement();
+MyMCPlayerEntity.handleWaterMovement();
 ```
 
-### hasCustomName
+### Nazwa użytkownika
 
-Returns boolean
+Zwraca wartość logiczną
 
 ```zenscript
-myMCPlayerEntity.hasCustomName();
+MyMCPlayerEntity.hasCustomName();
 ```
 
-### hasNoGravity
+### hasNoGrawitacja
 
-Returns boolean
+Zwraca wartość logiczną
 
 ```zenscript
-myMCPlayerEntity.hasNoGravity();
+MyMCPlayerEntity.hasNoGravity();
 ```
 
-### hasPermissionLevel
+### Poziom hasPermissionLevel
 
-Returns boolean
+Zwraca wartość logiczną
 
 ```zenscript
-myMCPlayerEntity.hasPermissionLevel(p_211513_1_ as int);
+myMCPlayerEntity.hasPermissionLevel(p_211513_1_ jako int);
 ```
 
-| Parameter     | Type | Description             |
-| ------------- | ---- | ----------------------- |
-| p_211513_1_ | int  | No description provided |
+| Parametr      | Typ    | Opis             |
+| ------------- | ------ | ---------------- |
+| p_211513_1_ | odcień | Nie podano opisu |
 
 
-### hasReducedDebug
+### Debugowanie hasa
 
-Whether the "reducedDebugInfo" option is active for this player.
+Czy opcja "reducedDebugInfo" jest aktywna dla tego gracza.
 
-Returns boolean
+Zwraca wartość logiczną
 
 ```zenscript
 myMCPlayerEntity.hasReducedDebug();
@@ -1153,34 +1153,34 @@ myMCPlayerEntity.hasReducedDebug();
 
 ### hashCode
 
-Returns int
+Zwraca int
 
 ```zenscript
 myMCPlayerEntity.hashCode();
 ```
 
-### heal
+### leczenie
 
-Heal living entity (param: amount of half-hearts)
+Ulecz żywej jednostki (param: ilość półserców)
 
 ```zenscript
-myMCPlayerEntity.heal(healAmount as float);
+[PLACEHOLDER] myMCPlayerEntity.heal(healAmount as float);
 ```
 
-| Parameter  | Type  | Description             |
-| ---------- | ----- | ----------------------- |
-| healAmount | float | No description provided |
+| Parametr       | Typ                | Opis             |
+| -------------- | ------------------ | ---------------- |
+| ilość leczenia | zmiennoprzecinkowe | Nie podano opisu |
 
 
-### ignoreItemEntityData
+### zignorowaneEntityData
 
-Checks if players can use this entity to access operator (permission level 2) commands either directly or indirectly, such as give or setblock. A similar method exists for entities at {@link net.minecraft.tileentity.TileEntity#onlyOpsCanSetNbt()}.<p>For example, {@link
- net.minecraft.entity.item.EntityMinecartCommandBlock#ignoreItemEntityData() command block minecarts} and {@link
- net.minecraft.entity.item.EntityMinecartMobSpawner#ignoreItemEntityData() mob spawner minecarts} (spawning command
- block minecarts or drops) are considered accessible.</p>Returns: `true if this entity offers ways for unauthorized
- players to use restricted commands`
+Sprawdza, czy gracze mogą używać tego podmiotu do dostępu do poleceń operatora (poziom uprawnień 2) bezpośrednio lub pośrednio, takich jak danie lub ustawianie bloku. Podobna metoda istnieje dla podmiotów na {@link net.minecraft.tileentity.TileEntity#onlyOpsCanSetNbt()}.<p>Na przykład, {@link
+ net.minecraft.item.EntityMinecartCommandBlock#ignoreItemEntityData() blok komend minecarts} i {@link
+ net.minecraft.entity.item.EntityMinecartMobawner#ignoreItemEntityData() spawner minecarts} (polecenie
+ blokuj minecarts lub drops) są uważane za dostępne.</p>Zwraca: `true, jeśli ten obiekt oferuje nieautoryzowanym
+ graczom sposoby używania ograniczonych poleceń`
 
-Returns boolean
+Zwraca wartość logiczną
 
 ```zenscript
 myMCPlayerEntity.ignoreItemEntityData();
@@ -1188,7 +1188,7 @@ myMCPlayerEntity.ignoreItemEntityData();
 
 ### isActiveItemStackBlocking
 
-Returns boolean
+Zwraca wartość logiczną
 
 ```zenscript
 myMCPlayerEntity.isActiveItemStackBlocking();
@@ -1196,17 +1196,17 @@ myMCPlayerEntity.isActiveItemStackBlocking();
 
 ### isAddedToWorld
 
-Returns boolean
+Zwraca wartość logiczną
 
 ```zenscript
-myMCPlayerEntity.isAddedToWorld();
+MyMCPlayerEntity.isAddedToWorld();
 ```
 
 ### isAlive
 
-Returns true if the entity has not been .
+Zwraca prawdę, jeśli podmiot nie był .
 
-Returns boolean
+Zwraca wartość logiczną
 
 ```zenscript
 myMCPlayerEntity.isAlive();
@@ -1214,7 +1214,7 @@ myMCPlayerEntity.isAlive();
 
 ### isAllowEdit
 
-Returns boolean
+Zwraca wartość logiczną
 
 ```zenscript
 myMCPlayerEntity.isAllowEdit();
@@ -1222,19 +1222,19 @@ myMCPlayerEntity.isAllowEdit();
 
 ### isBeingRidden
 
-If at least 1 entity is riding this one
+Jeśli co najmniej 1 podmiot jeździ tym
 
-Returns boolean
+Zwraca wartość logiczną
 
 ```zenscript
 myMCPlayerEntity.isBeingRidden();
 ```
 
-### isBurning
+### Płonący
 
-Returns true if the entity is on fire. Used by render to add the fire effect on rendering.
+Zwraca true jeśli obiekt jest w ogniu. Używane przez renderowanie do dodawania efektu ognia przy renderowaniu.
 
-Returns boolean
+Zwraca wartość logiczną
 
 ```zenscript
 myMCPlayerEntity.isBurning();
@@ -1242,9 +1242,9 @@ myMCPlayerEntity.isBurning();
 
 ### isChild
 
-If Animal, checks if the age timer is negative
+Jeśli zwierzę sprawdza, czy licznik wieku jest ujemny
 
-Returns boolean
+Zwraca wartość logiczną
 
 ```zenscript
 myMCPlayerEntity.isChild();
@@ -1252,7 +1252,7 @@ myMCPlayerEntity.isChild();
 
 ### isCreative
 
-Returns boolean
+Zwraca wartość logiczną
 
 ```zenscript
 myMCPlayerEntity.isCreative();
@@ -1260,25 +1260,25 @@ myMCPlayerEntity.isCreative();
 
 ### isCustomNameVisible
 
-Returns boolean
+Zwraca wartość logiczną
 
 ```zenscript
-myMCPlayerEntity.isCustomNameVisible();
+MyMCPlayerEntity.isCustomNameVisible();
 ```
 
-### isElytraFlying
+### isElytraFlatt
 
-Returns boolean
+Zwraca wartość logiczną
 
 ```zenscript
-myMCPlayerEntity.isElytraFlying();
+MyMCPlayerEntity.isElytraFlying();
 ```
 
 ### isEntityInsideOpaqueBlock
 
-Checks if this entity is inside of an opaque block
+Sprawdza, czy ten obiekt jest wewnątrz nieprzejrzystego bloku
 
-Returns boolean
+Zwraca wartość logiczną
 
 ```zenscript
 myMCPlayerEntity.isEntityInsideOpaqueBlock();
@@ -1286,25 +1286,25 @@ myMCPlayerEntity.isEntityInsideOpaqueBlock();
 
 ### isEntityUndead
 
-Returns true if this entity is undead.
+Zwraca prawda, jeśli ten podmiot nie żyje.
 
-Returns boolean
+Zwraca wartość logiczną
 
 ```zenscript
 myMCPlayerEntity.isEntityUndead();
 ```
 
-### isGlowing
+### Świecący
 
-Returns boolean
+Zwraca wartość logiczną
 
 ```zenscript
-myMCPlayerEntity.isGlowing();
+MyMCPlayerEntity.isGlowing();
 ```
 
 ### isHandActive
 
-Returns boolean
+Zwraca wartość logiczną
 
 ```zenscript
 myMCPlayerEntity.isHandActive();
@@ -1312,7 +1312,7 @@ myMCPlayerEntity.isHandActive();
 
 ### isImmuneToExplosions
 
-Returns boolean
+Zwraca wartość logiczną
 
 ```zenscript
 myMCPlayerEntity.isImmuneToExplosions();
@@ -1320,7 +1320,7 @@ myMCPlayerEntity.isImmuneToExplosions();
 
 ### isImmuneToFire
 
-Returns boolean
+Zwraca wartość logiczną
 
 ```zenscript
 myMCPlayerEntity.isImmuneToFire();
@@ -1328,7 +1328,7 @@ myMCPlayerEntity.isImmuneToFire();
 
 ### isInLava
 
-Returns boolean
+Zwraca wartość logiczną
 
 ```zenscript
 myMCPlayerEntity.isInLava();
@@ -1336,131 +1336,131 @@ myMCPlayerEntity.isInLava();
 
 ### isInRangeToRender3d
 
-Returns boolean
+Zwraca wartość logiczną
 
 ```zenscript
-myMCPlayerEntity.isInRangeToRender3d(x as double, y as double, z as double);
+myMCPlayerEntity.isInRangeToRender3d(x jako podwójny, y jako podwójny, z jako podwójny);
 ```
 
-| Parameter | Type   | Description             |
-| --------- | ------ | ----------------------- |
-| x         | double | No description provided |
-| y         | double | No description provided |
-| z         | double | No description provided |
+| Parametr | Typ      | Opis             |
+| -------- | -------- | ---------------- |
+| x        | podwójne | Nie podano opisu |
+| y        | podwójne | Nie podano opisu |
+| z        | podwójne | Nie podano opisu |
 
 
 ### isInRangeToRenderDist
 
-Checks if the entity is in range to render.
+Sprawdza, czy jednostka jest w zakresie do renderowania.
 
-Returns boolean
+Zwraca wartość logiczną
 
 ```zenscript
-myMCPlayerEntity.isInRangeToRenderDist(distance as double);
+myMCPlayerEntity.isInRangeToRenderDist(odległość jako podwójna);
 ```
 
-| Parameter | Type   | Description             |
-| --------- | ------ | ----------------------- |
-| distance  | double | No description provided |
+| Parametr  | Typ      | Opis             |
+| --------- | -------- | ---------------- |
+| odległość | podwójne | Nie podano opisu |
 
 
 ### isInWater
 
-Checks if this entity is inside water (if inWater field is true as a result of handleWaterMovement() returning true)
+Sprawdza, czy ten obiekt znajduje się wewnątrz wody (jeśli pole InWater jest prawdziwe w wyniku handleWaterMovement() zwracając true)
 
-Returns boolean
+Zwraca wartość logiczną
 
 ```zenscript
 myMCPlayerEntity.isInWater();
 ```
 
-### isInWaterOrBubbleColumn
+### iInWaterOrbbleColumn
 
-Returns boolean
+Zwraca wartość logiczną
 
 ```zenscript
-myMCPlayerEntity.isInWaterOrBubbleColumn();
+MyMCPlayerEntity.isInWaterOrBubbleColumn();
 ```
 
-### isInWaterRainOrBubbleColumn
+### iInWaterRainOrbbleColumn
 
-Returns boolean
+Zwraca wartość logiczną
 
 ```zenscript
-myMCPlayerEntity.isInWaterRainOrBubbleColumn();
+MyMCPlayerEntity.isInWaterRainOrBubbleColumn();
 ```
 
-### isInvisible
+### niewidzialny
 
-Returns boolean
+Zwraca wartość logiczną
 
 ```zenscript
-myMCPlayerEntity.isInvisible();
+MyMCPlayerEntity.isInvisible();
 ```
 
 ### isInvisibleToPlayer
 
-Only used by renderer in EntityLivingBase subclasses. Determines if an entity is visible or not to a specific player, if the entity is normally invisible. For EntityLivingBase subclasses, returning false when invisible will render the entity semi-transparent.
+Używane tylko przez renderer w podklasach EntityLivingBase Określa, czy obiekt jest widoczny lub nie dla konkretnego gracza, jeśli obiekt jest zwykle niewidoczny. Dla podklas EntityLivingBase zwracanie fałszerzy, gdy niewidzialny będzie wyglądał częściowo przezroczysty.
 
-Returns boolean
+Zwraca wartość logiczną
 
 ```zenscript
-myMCPlayerEntity.isInvisibleToPlayer(player as crafttweaker.api.entity.player.MCPlayerEntity);
+myMCPlayerEntity.isInvisibleToPlayer(gracz jako crafttweaker.api.entity.player.MCPlayerEntity);
 ```
 
-| Parameter | Type                                                                                       | Description             |
-| --------- | ------------------------------------------------------------------------------------------ | ----------------------- |
-| player    | [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity) | No description provided |
+| Parametr | Typ                                                                                        | Opis             |
+| -------- | ------------------------------------------------------------------------------------------ | ---------------- |
+| gracz    | [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity) | Nie podano opisu |
 
 
-### isInvulnerable
+### niewrażliwość
 
-Returns boolean
+Zwraca wartość logiczną
 
 ```zenscript
-myMCPlayerEntity.isInvulnerable();
+MyMCPlayerEntity.isInvulnerable();
 ```
 
-### isLiving
+### Żyć
 
-Returns boolean
+Zwraca wartość logiczną
 
 ```zenscript
-myMCPlayerEntity.isLiving();
+MyMCPlayerEntity.isLiving();
 ```
 
 ### isNonBoss
 
-Returns false if this Entity is a boss, true otherwise.
+Zwraca fałsz, jeśli ten podmiot jest szefem i prawdą.
 
-Returns boolean
-
-```zenscript
-myMCPlayerEntity.isNonBoss();
-```
-
-### isOffsetPositionInLiquid
-
-Checks if the offset position from the entity's current position is inside of a liquid.
-
-Returns boolean
+Zwraca wartość logiczną
 
 ```zenscript
-myMCPlayerEntity.isOffsetPositionInLiquid(x as double, y as double, z as double);
+MyMCPlayerEntity.isNonBoss();
 ```
 
-| Parameter | Type   | Description             |
-| --------- | ------ | ----------------------- |
-| x         | double | No description provided |
-| y         | double | No description provided |
-| z         | double | No description provided |
+### izOffsetPositionInLiquid
+
+Sprawdza, czy pozycja offsetowa od bieżącej pozycji podmiotu znajduje się wewnątrz płynu.
+
+Zwraca wartość logiczną
+
+```zenscript
+myMCPlayerEntity.isOffsetPositionInLiquid(x jako podwójny, y jako podwójny, z jako podwójny);
+```
+
+| Parametr | Typ      | Opis             |
+| -------- | -------- | ---------------- |
+| x        | podwójne | Nie podano opisu |
+| y        | podwójne | Nie podano opisu |
+| z        | podwójne | Nie podano opisu |
 
 
-### isOnLadder
+### isOnDrder
 
-Returns true if this entity should move as if it were on a ladder (either because it's actually on a ladder, or for AI reasons)
+Zwraca prawdę, jeśli ten obiekt powinien się poruszać tak, jakby był na drabinie (albo dlatego, że faktycznie jest na drabinie, lub z powodu AI)
 
-Returns boolean
+Zwraca wartość logiczną
 
 ```zenscript
 myMCPlayerEntity.isOnLadder();
@@ -1468,15 +1468,15 @@ myMCPlayerEntity.isOnLadder();
 
 ### isOnePlayerRiding
 
-Returns boolean
+Zwraca wartość logiczną
 
 ```zenscript
 myMCPlayerEntity.isOnePlayerRiding();
 ```
 
-### isPassenger
+### isPasażer
 
-Returns boolean
+Zwraca wartość logiczną
 
 ```zenscript
 myMCPlayerEntity.isPassenger();
@@ -1484,9 +1484,9 @@ myMCPlayerEntity.isPassenger();
 
 ### isPlayerFullyAsleep
 
-Returns whether or not the player is asleep and the screen has fully faded.
+Zwraca czy odtwarzacz jest usypiany i ekran jest całkowicie zanikany.
 
-Returns boolean
+Zwraca wartość logiczną
 
 ```zenscript
 myMCPlayerEntity.isPlayerFullyAsleep();
@@ -1494,33 +1494,33 @@ myMCPlayerEntity.isPlayerFullyAsleep();
 
 ### isPotionActive
 
-Returns boolean
+Zwraca wartość logiczną
 
 ```zenscript
-myMCPlayerEntity.isPotionActive(potionIn as crafttweaker.api.potion.MCPotionEffect);
+myMCPlayerEntity.isPotionActive(potionIn jako crafttweaker.api.potion.MCPotionEffect);
 ```
 
-| Parameter | Type                                                                          | Description             |
-| --------- | ----------------------------------------------------------------------------- | ----------------------- |
-| potionIn  | [crafttweaker.api.potion.MCPotionEffect](/vanilla/api/potions/MCPotionEffect) | No description provided |
+| Parametr | Typ                                                                                         | Opis             |
+| -------- | ------------------------------------------------------------------------------------------- | ---------------- |
+| potionIn | [[PLACEHOLDER] crafttweaker.api.potion.MCPotionEffect](/vanilla/api/potions/MCPotionEffect) | Nie podano opisu |
 
 
 ### isPotionApplicable
 
-Returns boolean
+Zwraca wartość logiczną
 
 ```zenscript
 myMCPlayerEntity.isPotionApplicable(potioneffectIn as crafttweaker.api.potion.MCPotionEffectInstance);
 ```
 
-| Parameter      | Type                                                                                          | Description             |
-| -------------- | --------------------------------------------------------------------------------------------- | ----------------------- |
-| potioneffectIn | [crafttweaker.api.potion.MCPotionEffectInstance](/vanilla/api/potions/MCPotionEffectInstance) | No description provided |
+| Parametr      | Typ                                                                                                         | Opis             |
+| ------------- | ----------------------------------------------------------------------------------------------------------- | ---------------- |
+| Efekt mikstur | [[PLACEHOLDER] crafttweaker.api.potion.MCPotionEffectInstance](/vanilla/api/potions/MCPotionEffectInstance) | Nie podano opisu |
 
 
 ### isPushedByWater
 
-Returns boolean
+Zwraca wartość logiczną
 
 ```zenscript
 myMCPlayerEntity.isPushedByWater();
@@ -1528,9 +1528,9 @@ myMCPlayerEntity.isPushedByWater();
 
 ### isServerWorld
 
-Returns whether the entity is in a server world
+Zwraca czy obiekt jest w świecie serwera
 
-Returns boolean
+Zwraca wartość logiczną
 
 ```zenscript
 myMCPlayerEntity.isServerWorld();
@@ -1538,47 +1538,47 @@ myMCPlayerEntity.isServerWorld();
 
 ### isSilent
 
-Returns: `True if this entity will not play sounds`
+Zwraca: `Prawda jeśli ten obiekt nie odtwarza dźwięków`
 
-Returns boolean
+Zwraca wartość logiczną
 
 ```zenscript
 myMCPlayerEntity.isSilent();
 ```
 
-### isSleeping
+### ospałanie
 
-Returns whether player is sleeping or not
+Zwraca czy gracz śpi czy nie
 
-Returns boolean
+Zwraca wartość logiczną
 
 ```zenscript
-myMCPlayerEntity.isSleeping();
+MyMCPlayerEntity.isSleeping();
 ```
 
 ### isSneaking
 
-Returns if this entity is sneaking.
+Zwraca jeśli ten obiekt jest skradany.
 
-Returns boolean
+Zwraca wartość logiczną
 
 ```zenscript
 myMCPlayerEntity.isSneaking();
 ```
 
-### isSpawnForced
+### zostawnWymuszony
 
-Returns boolean
+Zwraca wartość logiczną
 
 ```zenscript
-myMCPlayerEntity.isSpawnForced();
+myMCPlayerEntity.isSpawnForce();
 ```
 
 ### isSpectator
 
-Returns true if the player is in spectator mode.
+Zwraca prawda, jeśli gracz jest w trybie obserwatora.
 
-Returns boolean
+Zwraca wartość logiczną
 
 ```zenscript
 myMCPlayerEntity.isSpectator();
@@ -1586,7 +1586,7 @@ myMCPlayerEntity.isSpectator();
 
 ### isSpinAttacking
 
-Returns boolean
+Zwraca wartość logiczną
 
 ```zenscript
 myMCPlayerEntity.isSpinAttacking();
@@ -1594,27 +1594,27 @@ myMCPlayerEntity.isSpinAttacking();
 
 ### isSprinting
 
-Get if the Entity is sprinting.
+Zdobądź jeśli Obiekt jest sprintowany.
 
-Returns boolean
+Zwraca wartość logiczną
 
 ```zenscript
 myMCPlayerEntity.isSprinting();
 ```
 
-### isSwimming
+### iPływanie
 
-Returns boolean
+Zwraca wartość logiczną
 
 ```zenscript
-myMCPlayerEntity.isSwimming();
+MyMCPlayerEntity.isSwimming();
 ```
 
-### isUser
+### jest Użytkownikiem
 
-returns true if this is an EntityPlayerSP, or the logged in player.
+zwraca true jeśli jest EnityPlayerSP lub zalogowany gracz.
 
-Returns boolean
+Zwraca wartość logiczną
 
 ```zenscript
 myMCPlayerEntity.isUser();
@@ -1622,17 +1622,17 @@ myMCPlayerEntity.isUser();
 
 ### isWet
 
-Checks if this entity is either in water or on an open air block in rain (used in wolves).
+Sprawdza, czy ten obiekt znajduje się w wodzie lub na wolnym powietrzu w deszczu (używany w wilkach).
 
-Returns boolean
+Zwraca wartość logiczną
 
 ```zenscript
 myMCPlayerEntity.isWet();
 ```
 
-### jump
+### skok
 
-Causes this entity to do an upwards motion (jumping).
+Powoduje, że ten obiekt wykonuje ruch w górę (skok).
 
 ```zenscript
 myMCPlayerEntity.jump();
@@ -1640,7 +1640,7 @@ myMCPlayerEntity.jump();
 
 ### livingTick
 
-Called frequently so the entity can update its state every tick as required. For example, zombies and skeletons use this to react to sunlight and start to burn.
+Często dzwonione, aby jednostka mogła aktualizować swój stan każdego ticku zgodnie z wymaganiami. Na przykład zombie i szkieletów użyj tego do reakcji na światło słoneczne i rozpoczęcia spalania.
 
 ```zenscript
 myMCPlayerEntity.livingTick();
@@ -1652,11 +1652,11 @@ myMCPlayerEntity.livingTick();
 myMCPlayerEntity.moveToBlockPosAndAngles(pos as crafttweaker.api.util.BlockPos, rotationYawIn as float, rotationPitchIn as float);
 ```
 
-| Parameter       | Type                                                         | Description             |
-| --------------- | ------------------------------------------------------------ | ----------------------- |
-| pos             | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | No description provided |
-| rotationYawIn   | float                                                        | No description provided |
-| rotationPitchIn | float                                                        | No description provided |
+| Parametr        | Typ                                                          | Opis             |
+| --------------- | ------------------------------------------------------------ | ---------------- |
+| poz.            | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | Nie podano opisu |
+| rotationYawIn   | zmiennoprzecinkowe                                           | Nie podano opisu |
+| rotationPitchIn | zmiennoprzecinkowe                                           | Nie podano opisu |
 
 
 ### onAddedToWorld
@@ -1665,56 +1665,56 @@ myMCPlayerEntity.moveToBlockPosAndAngles(pos as crafttweaker.api.util.BlockPos, 
 myMCPlayerEntity.onAddedToWorld();
 ```
 
-### onCollideWithPlayer
+### onCollidePlayer
 
-Called by a player entity when they collide with an entity
-
-```zenscript
-myMCPlayerEntity.onCollideWithPlayer(entityIn as crafttweaker.api.entity.player.MCPlayerEntity);
-```
-
-| Parameter | Type                                                                                       | Description             |
-| --------- | ------------------------------------------------------------------------------------------ | ----------------------- |
-| entityIn  | [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity) | No description provided |
-
-
-### onEnchant
+Zadzwonione przez gracza kiedy kolidują się z obiektem
 
 ```zenscript
-myMCPlayerEntity.onEnchant(enchantedItem as crafttweaker.api.item.IItemStack, cost as int);
+MyMCPlayerEntity.onCollideWithPlayer(entityIn as crafttweaker.api.entity.player.MCPlayerEntity);
 ```
 
-| Parameter     | Type                                                              | Description             |
-| ------------- | ----------------------------------------------------------------- | ----------------------- |
-| enchantedItem | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | No description provided |
-| cost          | int                                                               | No description provided |
+| Parametr | Typ                                                                                        | Opis             |
+| -------- | ------------------------------------------------------------------------------------------ | ---------------- |
+| entityIn | [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity) | Nie podano opisu |
 
 
-### onEnterBubbleColumn
+### Zaklęcie
 
 ```zenscript
-myMCPlayerEntity.onEnterBubbleColumn(downwards as boolean);
+MyMCPlayerEntity.onEnchant(zaklęty Element jako crafttweaker.api.item.IItemStack, koszt jako int);
 ```
 
-| Parameter | Type    | Description             |
-| --------- | ------- | ----------------------- |
-| downwards | boolean | No description provided |
+| Parametr        | Typ                                                               | Opis             |
+| --------------- | ----------------------------------------------------------------- | ---------------- |
+| Zaklęty Element | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | Nie podano opisu |
+| koszt           | odcień                                                            | Nie podano opisu |
 
 
-### onEnterBubbleColumnWithAirAbove
+### [PLACEHOLDER] onEnterBbleColumn
 
 ```zenscript
-myMCPlayerEntity.onEnterBubbleColumnWithAirAbove(downwards as boolean);
+MyMCPlayerEntity.onEnterBubbleColumn(dole jako boolean);
 ```
 
-| Parameter | Type    | Description             |
-| --------- | ------- | ----------------------- |
-| downwards | boolean | No description provided |
+| Parametr | Typ     | Opis             |
+| -------- | ------- | ---------------- |
+| w dół    | boolean | Nie podano opisu |
+
+
+### onEnterBubbleColumnWithAirAPowyżve
+
+```zenscript
+myMCPlayerEntity.onEnterBubbleColumnWithAirAbove(dos jako boolean);
+```
+
+| Parametr | Typ     | Opis             |
+| -------- | ------- | ---------------- |
+| w dół    | boolean | Nie podano opisu |
 
 
 ### onKillCommand
 
-Called by the /kill command.
+Wywołane przez komendę /zabójstwo.
 
 ```zenscript
 myMCPlayerEntity.onKillCommand();
@@ -1723,63 +1723,63 @@ myMCPlayerEntity.onKillCommand();
 ### onRemovedFromWorld
 
 ```zenscript
-myMCPlayerEntity.onRemovedFromWorld();
+MyMCPlayerEntity.onRemovedFromWorld();
 ```
 
-### performHurtAnimation
+### animacja wydajnościHurtAnimacja
 
-Setups the entity to do the hurt animation. Only used by packets in multiplayer.
+Konfiguruje obiekt aby zrobić animację bohatera. Używane tylko przez pakiety w trybie wieloosobowym.
 
 ```zenscript
-myMCPlayerEntity.performHurtAnimation();
+MyMCPlayerEntity.performHurtAnimation();
 ```
 
-### preparePlayerToSpawn
+### przygotuj gracza ToSpawn
 
-Keeps moving the entity up so it isn't colliding with blocks and other requirements for this entity to be spawned (only actually used on players though its also on Entity)
+Zachowuje przesuwanie obiektu w górę, więc nie koliduje z blokami i innymi wymaganiami, aby ten obiekt został stworzony (faktycznie używany tylko na graczach, ale również na Entity)
 
 ```zenscript
-myMCPlayerEntity.preparePlayerToSpawn();
+MyMCPlayerEntity.preparePlayerToSpawn();
 ```
 
-### recalculateSize
+### ponowne obliczenieRozmiar
 
 ```zenscript
-myMCPlayerEntity.recalculateSize();
+MyMCPlayerEntity.recalculateSize();
 ```
 
-### remove
+### usuń
 
 ```zenscript
-myMCPlayerEntity.remove();
+MyMCPlayerEntity.remove();
 ```
 
 
 ```zenscript
-myMCPlayerEntity.remove(keepData as boolean);
+MyMCPlayerEntity.remove(keepData jako boolean);
 ```
 
-| Parameter | Type    | Description             |
-| --------- | ------- | ----------------------- |
-| keepData  | boolean | No description provided |
+| Parametr      | Typ     | Opis             |
+| ------------- | ------- | ---------------- |
+| Zachowaj Dane | boolean | Nie podano opisu |
 
 
 ### removeActivePotionEffect
 
-Returns [crafttweaker.api.potion.MCPotionEffectInstance](/vanilla/api/potions/MCPotionEffectInstance)
+Zwraca [crafttweaker.api.potion.MCPotionEffectInstance](/vanilla/api/potions/MCPotionEffectInstance)
 
 ```zenscript
-myMCPlayerEntity.removeActivePotionEffect(arg0 as crafttweaker.api.potion.MCPotionEffect);
+myMCPlayerEntity.removeActivePotionEffect(arg0 jako crafttweaker.api.potion.MCPotionEffect);
 ```
 
-| Parameter | Type                                                                          | Description             |
-| --------- | ----------------------------------------------------------------------------- | ----------------------- |
-| arg0      | [crafttweaker.api.potion.MCPotionEffect](/vanilla/api/potions/MCPotionEffect) | No description provided |
+| Parametr | Typ                                                                                         | Opis             |
+| -------- | ------------------------------------------------------------------------------------------- | ---------------- |
+| arg0     | [[PLACEHOLDER] crafttweaker.api.potion.MCPotionEffect](/vanilla/api/potions/MCPotionEffect) | Nie podano opisu |
 
 
 ### removePassengers
 
-Dismounts all entities riding this entity from this entity.
+Wyświetla wszystkie obiekty prowadzące ten obiekt z tego obiektu.
 
 ```zenscript
 myMCPlayerEntity.removePassengers();
@@ -1787,42 +1787,42 @@ myMCPlayerEntity.removePassengers();
 
 ### removePotionEffect
 
-Returns boolean
+Zwraca wartość logiczną
 
 ```zenscript
 myMCPlayerEntity.removePotionEffect(effectIn as crafttweaker.api.potion.MCPotionEffect);
 ```
 
-| Parameter | Type                                                                          | Description             |
-| --------- | ----------------------------------------------------------------------------- | ----------------------- |
-| effectIn  | [crafttweaker.api.potion.MCPotionEffect](/vanilla/api/potions/MCPotionEffect) | No description provided |
+| Parametr | Typ                                                                                         | Opis             |
+| -------- | ------------------------------------------------------------------------------------------- | ---------------- |
+| Efekt    | [[PLACEHOLDER] crafttweaker.api.potion.MCPotionEffect](/vanilla/api/potions/MCPotionEffect) | Nie podano opisu |
 
 
 ### removeTag
 
-Returns boolean
+Zwraca wartość logiczną
 
 ```zenscript
-myMCPlayerEntity.removeTag(tag as String);
+myMCPlayerEntity.removeTag(tag jako String);
 ```
 
-| Parameter | Type   | Description             |
-| --------- | ------ | ----------------------- |
-| tag       | String | No description provided |
+| Parametr | Typ         | Opis             |
+| -------- | ----------- | ---------------- |
+| znacznik | Ciąg znaków | Nie podano opisu |
 
 
-### replaceItemInInventory
+### zastąp ekwipunek
 
-Returns boolean
+Zwraca wartość logiczną
 
 ```zenscript
-myMCPlayerEntity.replaceItemInInventory(inventorySlot as int, itemStackIn as crafttweaker.api.item.IItemStack);
+myMCPlayerEntity.replaceItemInventory(ekwipunek jako int, itemStackIn jako crafttweaker.api.item.IItemStack);
 ```
 
-| Parameter     | Type                                                              | Description             |
-| ------------- | ----------------------------------------------------------------- | ----------------------- |
-| inventorySlot | int                                                               | No description provided |
-| itemStackIn   | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | No description provided |
+| Parametr          | Typ                                                               | Opis             |
+| ----------------- | ----------------------------------------------------------------- | ---------------- |
+| gniazdo ekwipunku | odcień                                                            | Nie podano opisu |
+| itemStackIn       | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | Nie podano opisu |
 
 
 ### resetActiveHand
@@ -1839,55 +1839,55 @@ myMCPlayerEntity.resetCooldown();
 
 ### resetPositionToBB
 
-Resets the entity's position to the center (planar) and bottom (vertical) points of its bounding box.
+Resetuje pozycję jednostki do środka (planar) i dolnego (pionowego) punktu ograniczającego.
 
 ```zenscript
 myMCPlayerEntity.resetPositionToBB();
 ```
 
-### respawnPlayer
+### respawnGracz
 
 ```zenscript
-myMCPlayerEntity.respawnPlayer();
+MyMCPlayerEntity.respawnPlayer();
 ```
 
-### revive
+### ożywić
 
 ```zenscript
-myMCPlayerEntity.revive();
+MyMCPlayerEntity.revive();
 ```
 
-### rotateTowards
+### rotateW
 
 ```zenscript
-myMCPlayerEntity.rotateTowards(yaw as double, pitch as double);
+MyMCPlayerEntity.rotateTowards(yaw as double, pitch as double);
 ```
 
-| Parameter | Type   | Description             |
-| --------- | ------ | ----------------------- |
-| yaw       | double | No description provided |
-| pitch     | double | No description provided |
+| Parametr | Typ      | Opis             |
+| -------- | -------- | ---------------- |
+| yaw      | podwójne | Nie podano opisu |
+| wysokość | podwójne | Nie podano opisu |
 
 
 ### sendEndCombat
 
-Sends an END_COMBAT packet to the client
+Wysyła pakiet END_COMBAT do klienta
 
 ```zenscript
 myMCPlayerEntity.sendEndCombat();
 ```
 
-### sendEnterCombat
+### SendEnterWalka
 
-Sends an ENTER_COMBAT packet to the client
+Wysyła pakiet ENTER_COMBAT do klienta
 
 ```zenscript
 myMCPlayerEntity.sendEnterCombat();
 ```
 
-### sendPlayerAbilities
+### Umiejętności wysyłania graczy
 
-Sends the player's abilities to the server (if there is one).
+Wysyła zdolności gracza na serwer (jeśli jest tak).
 
 ```zenscript
 myMCPlayerEntity.sendPlayerAbilities();
@@ -1895,150 +1895,150 @@ myMCPlayerEntity.sendPlayerAbilities();
 
 ### setAIMoveSpeed
 
-set the movespeed used for the new AI system
+ustaw ruchome używane dla nowego systemu SI
 
 ```zenscript
-myMCPlayerEntity.setAIMoveSpeed(speedIn as float);
+myMCPlayerEntity.setAIMoveSpeed(speedIn jako float);
 ```
 
-| Parameter | Type  | Description             |
-| --------- | ----- | ----------------------- |
-| speedIn   | float | No description provided |
+| Parametr   | Typ                | Opis             |
+| ---------- | ------------------ | ---------------- |
+| prędkośćIn | zmiennoprzecinkowe | Nie podano opisu |
 
 
-### setAbsorptionAmount
+### setAbsorpcjaIlość
 
 ```zenscript
-myMCPlayerEntity.setAbsorptionAmount(amount as float);
+MyMCPlayerEntity.setAbsorptionAmount(kwota jako pływak);
 ```
 
-| Parameter | Type  | Description             |
-| --------- | ----- | ----------------------- |
-| amount    | float | No description provided |
+| Parametr | Typ                | Opis             |
+| -------- | ------------------ | ---------------- |
+| kwota    | zmiennoprzecinkowe | Nie podano opisu |
 
 
 ### setAir
 
 ```zenscript
-myMCPlayerEntity.setAir(air as int);
+myMCPlayerEntity.setAir(powietrze jako int);
 ```
 
-| Parameter | Type | Description             |
-| --------- | ---- | ----------------------- |
-| air       | int  | No description provided |
+| Parametr  | Typ    | Opis             |
+| --------- | ------ | ---------------- |
+| powietrze | odcień | Nie podano opisu |
 
 
 ### setArrowCountInEntity
 
 ```zenscript
-myMCPlayerEntity.setArrowCountInEntity(count as int);
+MyMCPlayerEntity.setArrowCountInEntity(liczy się jako int);
 ```
 
-| Parameter | Type | Description             |
-| --------- | ---- | ----------------------- |
-| count     | int  | No description provided |
+| Parametr | Typ    | Opis             |
+| -------- | ------ | ---------------- |
+| liczba   | odcień | Nie podano opisu |
 
 
-### setBedPosition
+### Ustawiona pozycja
 
 ```zenscript
-myMCPlayerEntity.setBedPosition(p_213369_1_ as crafttweaker.api.util.BlockPos);
+myMCPlayerEntity.setBedPosition(p_213369_1_ jako crafttweaker.api.util.BlockPos);
 ```
 
-| Parameter     | Type                                                         | Description             |
-| ------------- | ------------------------------------------------------------ | ----------------------- |
-| p_213369_1_ | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | No description provided |
+| Parametr      | Typ                                                          | Opis             |
+| ------------- | ------------------------------------------------------------ | ---------------- |
+| p_213369_1_ | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | Nie podano opisu |
 
 
 ### setCustomNameVisible
 
 ```zenscript
-myMCPlayerEntity.setCustomNameVisible(alwaysRenderNameTag as boolean);
+myMCPlayerEntity.setCustomNameVisible(alwaysRenderNameTag jako boolean);
 ```
 
-| Parameter           | Type    | Description             |
-| ------------------- | ------- | ----------------------- |
-| alwaysRenderNameTag | boolean | No description provided |
+| Parametr            | Typ     | Opis             |
+| ------------------- | ------- | ---------------- |
+| alwaysRenderNameTag | boolean | Nie podano opisu |
 
 
 ### setEntityId
 
 ```zenscript
-myMCPlayerEntity.setEntityId(id as int);
+MyMCPlayerEntity.setEntityId(id jako int);
 ```
 
-| Parameter | Type | Description             |
-| --------- | ---- | ----------------------- |
-| id        | int  | No description provided |
+| Parametr | Typ    | Opis             |
+| -------- | ------ | ---------------- |
+| id       | odcień | Nie podano opisu |
 
 
 ### setFire
 
-Sets entity to burn for x amount of seconds, cannot lower amount of existing fire.
+Ustawia obiekt do spalania przez x ilość sekund, nie można zmniejszyć ilości istniejącego pożaru.
 
 ```zenscript
-myMCPlayerEntity.setFire(seconds as int);
+[PLACEHOLDER] myMCPlayerEntity.setFire(seconds as int);
 ```
 
-| Parameter | Type | Description             |
-| --------- | ---- | ----------------------- |
-| seconds   | int  | No description provided |
+| Parametr | Typ    | Opis             |
+| -------- | ------ | ---------------- |
+| sekundy  | odcień | Nie podano opisu |
 
 
 ### setFireTimer
 
 ```zenscript
-myMCPlayerEntity.setFireTimer(p_223308_1_ as int);
+myMCPlayerEntity.setFireTimer(p_223308_1_ jako int);
 ```
 
-| Parameter     | Type | Description             |
-| ------------- | ---- | ----------------------- |
-| p_223308_1_ | int  | No description provided |
+| Parametr      | Typ    | Opis             |
+| ------------- | ------ | ---------------- |
+| p_223308_1_ | odcień | Nie podano opisu |
 
 
-### setGlowing
+### świecący
 
 ```zenscript
-myMCPlayerEntity.setGlowing(glowingIn as boolean);
+MyMCPlayerEntity.setGlowing(glowingIn jako boolean);
 ```
 
-| Parameter | Type    | Description             |
-| --------- | ------- | ----------------------- |
-| glowingIn | boolean | No description provided |
+| Parametr  | Typ     | Opis             |
+| --------- | ------- | ---------------- |
+| glowingIn | boolean | Nie podano opisu |
 
 
-### setHeadRotation
+### Obrót setHeadHeader
 
 ```zenscript
-myMCPlayerEntity.setHeadRotation(yaw as float, pitch as int);
+myMCPlayerEntity.setHeadRotation(yaw as float, skok as int);
 ```
 
-| Parameter | Type  | Description             |
-| --------- | ----- | ----------------------- |
-| yaw       | float | No description provided |
-| pitch     | int   | No description provided |
+| Parametr | Typ                | Opis             |
+| -------- | ------------------ | ---------------- |
+| yaw      | zmiennoprzecinkowe | Nie podano opisu |
+| wysokość | odcień             | Nie podano opisu |
 
 
-### setHealth
+### ustawZdrowie
 
 ```zenscript
-myMCPlayerEntity.setHealth(health as float);
+MyMCPlayerEntity.setHealth(zdrowie jako pływak);
 ```
 
-| Parameter | Type  | Description             |
-| --------- | ----- | ----------------------- |
-| health    | float | No description provided |
+| Parametr | Typ                | Opis             |
+| -------- | ------------------ | ---------------- |
+| zdrowie  | zmiennoprzecinkowe | Nie podano opisu |
 
 
 ### setIdleTime
 
 ```zenscript
-myMCPlayerEntity.setIdleTime(idleTimeIn as int);
+MyMCPlayerEntity.setIdleTime(idleTimeIn jako int);
 ```
 
-| Parameter  | Type | Description             |
-| ---------- | ---- | ----------------------- |
-| idleTimeIn | int  | No description provided |
+| Parametr   | Typ    | Opis             |
+| ---------- | ------ | ---------------- |
+| idleTimeIn | odcień | Nie podano opisu |
 
 
 ### setInLava
@@ -2047,401 +2047,401 @@ myMCPlayerEntity.setIdleTime(idleTimeIn as int);
 myMCPlayerEntity.setInLava();
 ```
 
-### setInvisible
+### Niewidzialny
 
 ```zenscript
-myMCPlayerEntity.setInvisible(invisible as boolean);
+MyMCPlayerEntity.setInvisible(niewidzialny jako boolean);
 ```
 
-| Parameter | Type    | Description             |
-| --------- | ------- | ----------------------- |
-| invisible | boolean | No description provided |
+| Parametr     | Typ     | Opis             |
+| ------------ | ------- | ---------------- |
+| niewidzialny | boolean | Nie podano opisu |
 
 
-### setInvulnerable
+### Niewrażliwy
 
-Sets whether this Entity is invulnerable.
+Ustala czy ten podmiot jest niewrażliwy.
 
 ```zenscript
-myMCPlayerEntity.setInvulnerable(isInvulnerable as boolean);
+MyMCPlayerEntity.setInvulnerable(isInvulnerable as boolean);
 ```
 
-| Parameter      | Type    | Description             |
-| -------------- | ------- | ----------------------- |
-| isInvulnerable | boolean | No description provided |
+| Parametr      | Typ     | Opis             |
+| ------------- | ------- | ---------------- |
+| niewrażliwość | boolean | Nie podano opisu |
 
 
 ### setJumping
 
 ```zenscript
-myMCPlayerEntity.setJumping(jumping as boolean);
+myMCPlayerEntity.setJumping(skakanie jako boolean);
 ```
 
-| Parameter | Type    | Description             |
-| --------- | ------- | ----------------------- |
-| jumping   | boolean | No description provided |
+| Parametr | Typ     | Opis             |
+| -------- | ------- | ---------------- |
+| skakanie | boolean | Nie podano opisu |
 
 
 ### setLocationAndAngles
 
-Sets the location and Yaw/Pitch of an entity in the world
+Ustawia lokalizację i Yaw/Pitch obiektu na świecie
 
 ```zenscript
-myMCPlayerEntity.setLocationAndAngles(x as double, y as double, z as double, yaw as float, pitch as float);
+myMCPlayerEntity.setLocationAndAngles(x jako podwójne, y jako podwójne, z jako podwójne, yaw jako pływak, jako pływak);
 ```
 
-| Parameter | Type   | Description             |
-| --------- | ------ | ----------------------- |
-| x         | double | No description provided |
-| y         | double | No description provided |
-| z         | double | No description provided |
-| yaw       | float  | No description provided |
-| pitch     | float  | No description provided |
+| Parametr | Typ                | Opis             |
+| -------- | ------------------ | ---------------- |
+| x        | podwójne           | Nie podano opisu |
+| y        | podwójne           | Nie podano opisu |
+| z        | podwójne           | Nie podano opisu |
+| yaw      | zmiennoprzecinkowe | Nie podano opisu |
+| wysokość | zmiennoprzecinkowe | Nie podano opisu |
 
 
 ### setMotion
 
 ```zenscript
-myMCPlayerEntity.setMotion(x as double, y as double, z as double);
+myMCPlayerEntity.setMotion(x jako podwójne, y jako podwójne, z jako podwójne);
 ```
 
-| Parameter | Type   | Description             |
-| --------- | ------ | ----------------------- |
-| x         | double | No description provided |
-| y         | double | No description provided |
-| z         | double | No description provided |
+| Parametr | Typ      | Opis             |
+| -------- | -------- | ---------------- |
+| x        | podwójne | Nie podano opisu |
+| y        | podwójne | Nie podano opisu |
+| z        | podwójne | Nie podano opisu |
 
 
-### setNoGravity
+### setNograwitacja
 
 ```zenscript
-myMCPlayerEntity.setNoGravity(noGravity as boolean);
+MyMCPlayerEntity.setNoGravity(noGravity as boolean);
 ```
 
-| Parameter | Type    | Description             |
-| --------- | ------- | ----------------------- |
-| noGravity | boolean | No description provided |
+| Parametr   | Typ     | Opis             |
+| ---------- | ------- | ---------------- |
+| Grawitacja | boolean | Nie podano opisu |
 
 
-### setPartying
+### setParing
 
-Called when a record starts or stops playing. Used to make parrots start or stop partying.
+Zadzwonione, gdy rekord zaczyna się lub przestaje odtwarzać. Używane do uruchamiania lub zatrzymywania partycji parotek.
 
 ```zenscript
 myMCPlayerEntity.setPartying(pos as crafttweaker.api.util.BlockPos, isPartying as boolean);
 ```
 
-| Parameter  | Type                                                         | Description             |
-| ---------- | ------------------------------------------------------------ | ----------------------- |
-| pos        | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | No description provided |
-| isPartying | boolean                                                      | No description provided |
+| Parametr      | Typ                                                          | Opis             |
+| ------------- | ------------------------------------------------------------ | ---------------- |
+| poz.          | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | Nie podano opisu |
+| isPartyowanie | boolean                                                      | Nie podano opisu |
 
 
 ### setPortal
 
-Marks the entity as being inside a portal, activating teleportation logic in onEntityUpdate() in the following tick(s).
+Zaznacza obiekt jako znajdujący się wewnątrz portalu, aktywując logikę teleportacji w onEntityUpdate() w następujących tick(ów).
 
 ```zenscript
-myMCPlayerEntity.setPortal(pos as crafttweaker.api.util.BlockPos);
+MyMCPlayerEntity.setPortal(pos as crafttweaker.api.util.BlockPos);
 ```
 
-| Parameter | Type                                                         | Description             |
-| --------- | ------------------------------------------------------------ | ----------------------- |
-| pos       | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | No description provided |
+| Parametr | Typ                                                          | Opis             |
+| -------- | ------------------------------------------------------------ | ---------------- |
+| poz.     | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | Nie podano opisu |
 
 
-### setPosition
+### ustawiona pozycja
 
-Sets the x,y,z of the entity from the given parameters. Also seems to set up a bounding box.
+Ustawia x,y,z obiektu na podstawie podanych parametrów. Wygląda na to, że ustawiono pole ograniczające.
 
 ```zenscript
-myMCPlayerEntity.setPosition(x as double, y as double, z as double);
+MyMCPlayerEntity.setPosition(x jako podwójne, y jako podwójne, z jako podwójne);
 ```
 
-| Parameter | Type   | Description             |
-| --------- | ------ | ----------------------- |
-| x         | double | No description provided |
-| y         | double | No description provided |
-| z         | double | No description provided |
+| Parametr | Typ      | Opis             |
+| -------- | -------- | ---------------- |
+| x        | podwójne | Nie podano opisu |
+| y        | podwójne | Nie podano opisu |
+| z        | podwójne | Nie podano opisu |
 
 
-### setPositionAndRotation
+### Rotacja setPositionAndRotation
 
-Sets position and rotation, clamping and wrapping params to valid values. Used by network code.
+Ustawia parametry położenia i obrotu, zaciskania i owijania do prawidłowych wartości. Używany przez kod sieciowy.
 
 ```zenscript
-myMCPlayerEntity.setPositionAndRotation(x as double, y as double, z as double, yaw as float, pitch as float);
+MyMCPlayerEntity.setPositionAndRotation(x jako podwójne, y jako podwójne, z jako podwójne, yaw jako pływak, skok jako pływak);
 ```
 
-| Parameter | Type   | Description             |
-| --------- | ------ | ----------------------- |
-| x         | double | No description provided |
-| y         | double | No description provided |
-| z         | double | No description provided |
-| yaw       | float  | No description provided |
-| pitch     | float  | No description provided |
+| Parametr | Typ                | Opis             |
+| -------- | ------------------ | ---------------- |
+| x        | podwójne           | Nie podano opisu |
+| y        | podwójne           | Nie podano opisu |
+| z        | podwójne           | Nie podano opisu |
+| yaw      | zmiennoprzecinkowe | Nie podano opisu |
+| wysokość | zmiennoprzecinkowe | Nie podano opisu |
 
 
 ### setPositionAndRotationDirect
 
-Sets a target for the client to interpolate towards over the next few ticks
+Ustawia cel dla klienta do interpolowania w kierunku następnych kilku ticków
 
 ```zenscript
-myMCPlayerEntity.setPositionAndRotationDirect(x as double, y as double, z as double, yaw as float, pitch as float, posRotationIncrements as int, teleport as boolean);
+MyMCPlayerEntity.setPositionAndRotationDirect(x jako podwójne, y jako podwójne, z jako zmiennoprzecinkowe, jako zmiennoprzecinkowe, posRotationIncrements jako int, teleportuj jako boolean);
 ```
 
-| Parameter             | Type    | Description             |
-| --------------------- | ------- | ----------------------- |
-| x                     | double  | No description provided |
-| y                     | double  | No description provided |
-| z                     | double  | No description provided |
-| yaw                   | float   | No description provided |
-| pitch                 | float   | No description provided |
-| posRotationIncrements | int     | No description provided |
-| teleport              | boolean | No description provided |
+| Parametr            | Typ                | Opis             |
+| ------------------- | ------------------ | ---------------- |
+| x                   | podwójne           | Nie podano opisu |
+| y                   | podwójne           | Nie podano opisu |
+| z                   | podwójne           | Nie podano opisu |
+| yaw                 | zmiennoprzecinkowe | Nie podano opisu |
+| wysokość            | zmiennoprzecinkowe | Nie podano opisu |
+| przyrost posRotacji | odcień             | Nie podano opisu |
+| teleportuj          | boolean            | Nie podano opisu |
 
 
-### setPositionAndUpdate
+### Aktualizacja setPositionAndUpdate
 
-Sets the position of the entity and updates the 'last' variables
+Ustawia pozycję podmiotu i aktualizuje zmienne „last”
 
 ```zenscript
-myMCPlayerEntity.setPositionAndUpdate(x as double, y as double, z as double);
+MyMCPlayerEntity.setPositionAndUpdate(x jako podwójny, y jako podwójny, z jako podwójny);
 ```
 
-| Parameter | Type   | Description             |
-| --------- | ------ | ----------------------- |
-| x         | double | No description provided |
-| y         | double | No description provided |
-| z         | double | No description provided |
+| Parametr | Typ      | Opis             |
+| -------- | -------- | ---------------- |
+| x        | podwójne | Nie podano opisu |
+| y        | podwójne | Nie podano opisu |
+| z        | podwójne | Nie podano opisu |
 
 
 ### setPositionNonDirty
 
-Returns boolean
+Zwraca wartość logiczną
 
 ```zenscript
-myMCPlayerEntity.setPositionNonDirty();
+MyMCPlayerEntity.setPositionNonDirty();
 ```
 
 ### setReducedDebug
 
 ```zenscript
-myMCPlayerEntity.setReducedDebug(reducedDebug as boolean);
+myMCPlayerEntity.setReducedDebug(reducedDebug jako boolean);
 ```
 
-| Parameter    | Type    | Description             |
-| ------------ | ------- | ----------------------- |
-| reducedDebug | boolean | No description provided |
+| Parametr            | Typ     | Opis             |
+| ------------------- | ------- | ---------------- |
+| redukuj debugowanie | boolean | Nie podano opisu |
 
 
 ### setRenderYawOffset
 
-Set the render yaw offset
+Ustaw przesunięcie renderowania
 
 ```zenscript
 myMCPlayerEntity.setRenderYawOffset(offset as float);
 ```
 
-| Parameter | Type  | Description             |
-| --------- | ----- | ----------------------- |
-| offset    | float | No description provided |
+| Parametr     | Typ                | Opis             |
+| ------------ | ------------------ | ---------------- |
+| przesunięcie | zmiennoprzecinkowe | Nie podano opisu |
 
 
 ### setRotationYawHead
 
-Sets the head's yaw rotation of the entity.
+Ustawia rotację głowy jednostki.
 
 ```zenscript
-myMCPlayerEntity.setRotationYawHead(rotation as float);
+[PLACEHOLDER] myMCPlayerEntity.setRotationYawHead(rotation as float);
 ```
 
-| Parameter | Type  | Description             |
-| --------- | ----- | ----------------------- |
-| rotation  | float | No description provided |
+| Parametr | Typ                | Opis             |
+| -------- | ------------------ | ---------------- |
+| rotacja  | zmiennoprzecinkowe | Nie podano opisu |
 
 
-### setScore
+### Skala
 
-Set player's score
+Ustaw wynik gracza
 
 ```zenscript
 myMCPlayerEntity.setScore(scoreIn as int);
 ```
 
-| Parameter | Type | Description             |
-| --------- | ---- | ----------------------- |
-| scoreIn   | int  | No description provided |
+| Parametr | Typ    | Opis             |
+| -------- | ------ | ---------------- |
+| wynik    | odcień | Nie podano opisu |
 
 
 ### setSilent
 
-When set to true the entity will not play sounds.
+Gdy ustawione na true obiekt nie odtwarza dźwięków.
 
 ```zenscript
-myMCPlayerEntity.setSilent(isSilent as boolean);
+myMCPlayerEntity.setSilent(wyciszony jako boolean);
 ```
 
-| Parameter | Type    | Description             |
-| --------- | ------- | ----------------------- |
-| isSilent  | boolean | No description provided |
+| Parametr | Typ     | Opis             |
+| -------- | ------- | ---------------- |
+| isSilent | boolean | Nie podano opisu |
 
 
-### setSneaking
+### Skradanie
 
-Sets the sneaking flag.
+Ustawia flagę skradania.
 
 ```zenscript
-myMCPlayerEntity.setSneaking(sneaking as boolean);
+MyMCPlayerEntity.setSneaking(skraking jako boolean);
 ```
 
-| Parameter | Type    | Description             |
-| --------- | ------- | ----------------------- |
-| sneaking  | boolean | No description provided |
+| Parametr  | Typ     | Opis             |
+| --------- | ------- | ---------------- |
+| skradanie | boolean | Nie podano opisu |
 
 
 ### setSpawnPoint
 
 ```zenscript
-myMCPlayerEntity.setSpawnPoint(pos as crafttweaker.api.util.BlockPos, forced as boolean);
+myMCPlayerEntity.setSpawnPoint(pos as crafttweaker.api.util.BlockPos, wymuszony jako boolean);
 ```
 
-| Parameter | Type                                                         | Description             |
-| --------- | ------------------------------------------------------------ | ----------------------- |
-| pos       | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | No description provided |
-| forced    | boolean                                                      | No description provided |
+| Parametr  | Typ                                                          | Opis             |
+| --------- | ------------------------------------------------------------ | ---------------- |
+| poz.      | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | Nie podano opisu |
+| wymuszone | boolean                                                      | Nie podano opisu |
 
 
 ### setSprinting
 
-Set sprinting switch for Entity.
+Ustaw przełącznik sprintingu dla obiektu.
 
 ```zenscript
-myMCPlayerEntity.setSprinting(sprinting as boolean);
+MyMCPlayerEntity.setSprinting(sprinting as boolean);
 ```
 
-| Parameter | Type    | Description             |
-| --------- | ------- | ----------------------- |
-| sprinting | boolean | No description provided |
+| Parametr     | Typ     | Opis             |
+| ------------ | ------- | ---------------- |
+| sprintowanie | boolean | Nie podano opisu |
 
 
-### setSwimming
+### setPływanie
 
 ```zenscript
-myMCPlayerEntity.setSwimming(p_204711_1_ as boolean);
+myMCPlayerEntity.setSwimming(p_204711_1_ jako boolean);
 ```
 
-| Parameter     | Type    | Description             |
-| ------------- | ------- | ----------------------- |
-| p_204711_1_ | boolean | No description provided |
+| Parametr      | Typ     | Opis             |
+| ------------- | ------- | ---------------- |
+| p_204711_1_ | boolean | Nie podano opisu |
 
 
 ### setVelocity
 
-Updates the entity motion clientside, called by packets from the server
+Aktualizuje klienta ruchu jednostki, wywoływane przez pakiety z serwera
 
 ```zenscript
-myMCPlayerEntity.setVelocity(x as double, y as double, z as double);
+myMCPlayerEntity.setVelocity(x jako podwójne, y jako podwójne, z jako podwójne);
 ```
 
-| Parameter | Type   | Description             |
-| --------- | ------ | ----------------------- |
-| x         | double | No description provided |
-| y         | double | No description provided |
-| z         | double | No description provided |
+| Parametr | Typ      | Opis             |
+| -------- | -------- | ---------------- |
+| x        | podwójne | Nie podano opisu |
+| y        | podwójne | Nie podano opisu |
+| z        | podwójne | Nie podano opisu |
 
 
-### shouldHeal
+### winna leczyć
 
-Checks if the player's health is not full and not zero.
+Sprawdza, czy zdrowie gracza jest niepełne i nie jest zerowe.
 
-Returns boolean
+Zwraca wartość logiczną
 
 ```zenscript
 myMCPlayerEntity.shouldHeal();
 ```
 
-### shouldReceiveErrors
+### powinieneReceiveErrors
 
-Returns boolean
+Zwraca wartość logiczną
 
 ```zenscript
-myMCPlayerEntity.shouldReceiveErrors();
+MyMCPlayerEntity.should dReceiveErrors();
 ```
 
-### shouldReceiveFeedback
+### powinieneReceiveFeedback
 
-Returns boolean
+Zwraca wartość logiczną
 
 ```zenscript
-myMCPlayerEntity.shouldReceiveFeedback();
+[PLACEHOLDER] myMCPlayerEntity.should dReceiveFeedback();
 ```
 
 ### shouldRenderSneaking
 
-Returns boolean
+Zwraca wartość logiczną
 
 ```zenscript
-myMCPlayerEntity.shouldRenderSneaking();
+MyMCPlayerEntity.should RenderSneaking();
 ```
 
-### shouldRiderFaceForward
+### powinieneRiderFaceForward
 
-Returns true if the entity's rider (EntityPlayer) should face forward when mounted. currently only used in vanilla code by pigs.
+Zwraca prawdę, jeśli kierowca jednostki (EntityPlayer) powinien zmierzyć się z przodem po zamontowaniu. obecnie używane tylko w kodzie wanilii przez świnie.
 
-Returns boolean
+Zwraca wartość logiczną
 
 ```zenscript
-myMCPlayerEntity.shouldRiderFaceForward(player as crafttweaker.api.entity.player.MCPlayerEntity);
+MyMCPlayerEntity.shouldRiderFaceForward(gracz jako crafttweaker.api.entity.player.MCPlayerEntity);
 ```
 
-| Parameter | Type                                                                                       | Description                          |
-| --------- | ------------------------------------------------------------------------------------------ | ------------------------------------ |
-| player    | [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity) | The player who is riding the entity. |
+| Parametr | Typ                                                                                        | Opis                           |
+| -------- | ------------------------------------------------------------------------------------------ | ------------------------------ |
+| gracz    | [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity) | Gracz, który jeździ na obiekt. |
 
 
-### shouldRiderSit
+### powinieneRiderSit
 
-Returns boolean
+Zwraca wartość logiczną
 
 ```zenscript
-myMCPlayerEntity.shouldRiderSit();
+MyMCPlayerEntity.shouldRiderSit();
 ```
 
-### spawnRunningParticles
+### [PLACEHOLDER] spawnRunningCticles
 
-Attempts to create sprinting particles if the entity is sprinting and not in water.
+Próbuje tworzyć cząsteczki sprintujące, jeśli obiekt jest sprintujący i nie znajduje się w wodzie.
 
 ```zenscript
-myMCPlayerEntity.spawnRunningParticles();
+MyMCPlayerEntity.spawnRunningParticles();
 ```
 
-### spawnSweepParticles
+### DronSweepCząsteczki
 
 ```zenscript
-myMCPlayerEntity.spawnSweepParticles();
+MyMCPlayerEntity.spawnSweepParticles();
 ```
 
-### startSleeping
+### startSpianie
 
 ```zenscript
-myMCPlayerEntity.startSleeping(p_213342_1_ as crafttweaker.api.util.BlockPos);
+MyMCPlayerEntity.startSleeping(p_213342_1_ jako crafttweaker.api.util.BlockPos);
 ```
 
-| Parameter     | Type                                                         | Description             |
-| ------------- | ------------------------------------------------------------ | ----------------------- |
-| p_213342_1_ | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | No description provided |
+| Parametr      | Typ                                                          | Opis             |
+| ------------- | ------------------------------------------------------------ | ---------------- |
+| p_213342_1_ | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | Nie podano opisu |
 
 
-### startSpinAttack
+### startSpinAtak
 
 ```zenscript
-myMCPlayerEntity.startSpinAttack(p_204803_1_ as int);
+myMCPlayerEntity.startSpinAttack(p_204803_1_ jako int);
 ```
 
-| Parameter     | Type | Description             |
-| ------------- | ---- | ----------------------- |
-| p_204803_1_ | int  | No description provided |
+| Parametr      | Typ    | Opis             |
+| ------------- | ------ | ---------------- |
+| p_204803_1_ | odcień | Nie podano opisu |
 
 
 ### stopActiveHand
@@ -2450,30 +2450,30 @@ myMCPlayerEntity.startSpinAttack(p_204803_1_ as int);
 myMCPlayerEntity.stopActiveHand();
 ```
 
-### stopRiding
+### zatrzymanie jazdy
 
-Dismounts this entity from the entity it is riding.
+Odmontowuje ten obiekt od jednostki, którą jeżdża.
 
 ```zenscript
 myMCPlayerEntity.stopRiding();
 ```
 
-### teleportKeepLoaded
+### teleportKeeploaded
 
 ```zenscript
-myMCPlayerEntity.teleportKeepLoaded(p_223102_1_ as double, p_223102_3_ as double, p_223102_5_ as double);
+myMCPlayerEntity.teleportKeepLoaded(p_223102_1_ jako podwójne, p_223102_3_ jako podwójne, p_223102_5_ jako podwójne);
 ```
 
-| Parameter     | Type   | Description             |
-| ------------- | ------ | ----------------------- |
-| p_223102_1_ | double | No description provided |
-| p_223102_3_ | double | No description provided |
-| p_223102_5_ | double | No description provided |
+| Parametr      | Typ      | Opis             |
+| ------------- | -------- | ---------------- |
+| p_223102_1_ | podwójne | Nie podano opisu |
+| p_223102_3_ | podwójne | Nie podano opisu |
+| p_223102_5_ | podwójne | Nie podano opisu |
 
 
-### tick
+### zaznacz
 
-Called to update the entity's position/logic.
+Zadzwoniono do aktualizacji pozycji/logiki jednostki.
 
 ```zenscript
 myMCPlayerEntity.tick();
@@ -2481,52 +2481,52 @@ myMCPlayerEntity.tick();
 
 ### toString
 
-Returns String
+Zwraca ciąg znaków
 
 ```zenscript
 myMCPlayerEntity.toString();
 ```
 
-### updateRidden
+### aktualizuj Ridden
 
-Handles updating while riding another entity
-
-```zenscript
-myMCPlayerEntity.updateRidden();
-```
-
-### updateSwimming
+Uchwyty aktualizujące podczas jazdy na inny obiekt
 
 ```zenscript
-myMCPlayerEntity.updateSwimming();
+MyMCPlayerEntity.updateRidden();
 ```
 
-### wakeUp
+### aktualizacja Pływu
+
+```zenscript
+MyMCPlayerEntity.updateSwimming();
+```
+
+### wybudzanie
 
 ```zenscript
 myMCPlayerEntity.wakeUp();
 ```
 
-### wakeUpPlayer
+### wybudzacz
 
-Wake up the player if they're sleeping.
+Obudź gracza, jeśli śpią.
 
 ```zenscript
-myMCPlayerEntity.wakeUpPlayer(immediately as boolean, updateWorldFlag as boolean, setSpawn as boolean);
+myMCPlayerEntity.wakeUpPlayer(natychmiast jako boolean, updateWorldFlg jako boolean, setSpawn jako boolean);
 ```
 
-| Parameter       | Type    | Description             |
-| --------------- | ------- | ----------------------- |
-| immediately     | boolean | No description provided |
-| updateWorldFlag | boolean | No description provided |
-| setSpawn        | boolean | No description provided |
+| Parametr        | Typ     | Opis             |
+| --------------- | ------- | ---------------- |
+| natychmiast     | boolean | Nie podano opisu |
+| updateWorldFlag | boolean | Nie podano opisu |
+| setSpawn        | boolean | Nie podano opisu |
 
 
 ### xpBarCap
 
-This method returns the cap amount of experience that the experience bar can hold. With each level, the experience cap on the player's experience bar is raised by 10.
+Ta metoda zwraca limit doświadczenia, który pasek doświadczenia może utrzymać. Z każdym poziomem, nasadka na pasku doświadczenia gracza jest podniesiona o 10.
 
-Returns int
+Zwraca int
 
 ```zenscript
 myMCPlayerEntity.xpBarCap();
