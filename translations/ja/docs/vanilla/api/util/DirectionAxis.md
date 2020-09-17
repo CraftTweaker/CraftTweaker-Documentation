@@ -1,46 +1,46 @@
-# DirectionAxis
+# 方向 軸
 
-Represents a direction axis (X, Y, Z)
+方向軸 (X, Y, Z) を表します
 
-This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
+crafttweakerのmod-idを持つmodによって追加されているクラスです。 従って、この機能を利用する場合はこのmodをインストールする必要があります。
 
-## Importing the class
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+## クラスのインポート
+問題が発生した場合には、インポートが必要になります。とはいえ、お手数ですが予めインポートしておくほうが安全です。
 ```zenscript
 crafttweaker.api.util.DirectionAxis
 ```
 
-## Implemented Interfaces
-DirectionAxis implements the following interfaces. That means any method available to them can also be used on this class.
-- [crafttweaker.api.brackets.CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
+## 実装されたインターフェース
+DirectionAxis は以下のインターフェースを実装しています。 つまり、利用可能な任意のメソッドはこのクラスでも使用できます。
+- [craftweaker.api.brackets.CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
 
-## Methods
+## メソッド
 ### getCoordinate
 
-Gets the coordinate of this axis based on the given values, if this axis is "X", then it will return the value of the "x" parameter
+指定された値に基づいてこの軸の座標を取得します。 この軸が "X" の場合、"x" パラメータの値を返します。
 
 Returns int
 
 ```zenscript
-<directionaxis:x>.getCoordinate(x as int, y as int, z as int);
+<directionaxis:x>.getCoordinate(x を int, y を int, z を int);
 <directionaxis:x>.getCoordinate(1, 2, 3);
 ```
 
-| Parameter | Type | Description               |
-| --------- | ---- | ------------------------- |
-| x         | int  | x value of the coordinate |
-| y         | int  | y value of the coordinate |
-| z         | int  | z value of the coordinate |
+| パラメータ | タイプ | 説明      |
+| ----- | --- | ------- |
+| x     | int | 座標の x 値 |
+| y     | int | 座標の y 値 |
+| z     | int | 座標のz値   |
 
 
 
-## Properties
+## プロパティー
 
-| Name          | Type    | Has Getter | Has Setter |
-| ------------- | ------- | ---------- | ---------- |
-| commandString | String  | true       | false      |
-| horizontal    | boolean | true       | false      |
-| name          | String  | true       | false      |
-| ordinal       | int     | true       | false      |
-| vertical      | boolean | true       | false      |
+| 名称            | タイプ      | ゲッターあり | セッターあり |
+| ------------- | -------- | ------ | ------ |
+| commandString | 文字列型     | true   | false  |
+| 水平方向          | boolean型 | true   | false  |
+| 名前            | 文字列型     | true   | false  |
+| 序数            | int      | true   | false  |
+| 垂直方向          | boolean型 | true   | false  |
 
