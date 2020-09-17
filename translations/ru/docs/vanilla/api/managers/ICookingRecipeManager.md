@@ -1,129 +1,129 @@
-# ICookingRecipeManager
+# Менеджер Рецептов
 
-Default interface for Registry based handlers as they can all remove recipes by ResourceLocation.
+Интерфейс по умолчанию для обработчиков реестра, так как он может удалять рецепты с помощью Расположение Ресурсов.
 
-This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
+Этот класс был добавлен модом с mod-id `crafttweaker`. Так что если вы хотите использовать эту функцию, вам нужно установить этот мод.
 
 ## Импорт класса
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+Вам может потребоваться импортировать пакет, если вы столкнетесь с какими-либо проблемами (например, с заливкой массива), так что лучше быть в безопасности, чем извиняться и добавлять импорт.
 ```zenscript
 crafttweaker.api.registries.ICookingRecipeManager
 ```
 
-## Implemented Interfaces
-ICookingRecipeManager implements the following interfaces. That means any method available to them can also be used on this class.
+## Реализованные интерфейсы
+ICookingRecipeManager реализует следующие интерфейсы. Следовательно, методы из них доступны в этом классе.
 - [crafttweaker.api.registries.IRecipeManager](/vanilla/api/managers/IRecipeManager)
 
 ## Методы
 ### addJSONRecipe
 
-Adds a recipe based on a provided IData. The provided IData should represent a DataPack JSON, this effectively allows you to register recipes for any DataPack supporting IRecipeType systems.
+Добавляет рецепт на основе предоставленной IData. Предоставленная IData должна представлять JSON DataPack DataPack это позволяет эффективно регистрировать рецепты для любого набора данных, поддерживающего системы IRecipeType.
 
 ```zenscript
-furnace.addJSONRecipe(name as String, data as crafttweaker.api.data.IData);
-furnace.addJSONRecipe("recipe_name", {ingredient:{item:<item:minecraft:gold_ore>.registryName},result:<item:minecraft:cooked_porkchop>.registryName,experience:0.35 as float, cookingtime:100});
+furnace.addJSONRecipe(название как строка, данные как crafttweaker.api.data.IData);
+Печ.addJSONRecipe("recipe_name", {ingredient:{item:<item:minecraft:gold_ore>.registryName},результат:<item:minecraft:cooked_porkchop>.registryName,experience:0.35 как float, cooking time:100});
 ```
 
-| Parameter | Тип                                                    | Описание                        |
-| --------- | ------------------------------------------------------ | ------------------------------- |
-| name      | String                                                 | name of the recipe              |
-| data      | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | data representing the json file |
+| Параметр | Тип                                                    | Описание                         |
+| -------- | ------------------------------------------------------ | -------------------------------- |
+| имя      | String                                                 | название рецепта                 |
+| data     | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | данные, представляющие файл json |
 
 
-### addRecipe
+### Добавить рецепт
 
-Adds a recipe based on given params.
+Добавляет рецепт на основе заданных параметров.
 
 ```zenscript
-furnace.addRecipe(name as String, output as crafttweaker.api.item.IItemStack, input as crafttweaker.api.item.IIngredient, xp as float, cookTime as int);
-furnace.addRecipe("wool2diamond", <item:diamond>, <tag:minecraft:wool>, 1.0, 0);
+furnace.addRecipe(название как строка, вывести как crafttweaker.api.item.IItemStack, вводить как crafttweaker.api.item.IIngredient, xp как float, время приготовления int);
+furnace.addRecipe("шерсть 2diamond", <item:diamond>, <tag:minecraft:wool>, 1.0, 0);
 ```
 
-| Parameter | Type                                                                | Description                     |
-| --------- | ------------------------------------------------------------------- | ------------------------------- |
-| name      | String                                                              | Name of the new recipe          |
-| output    | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)   | IItemStack output of the recipe |
-| input     | [crafttweaker.api.item.IIngredient](/vanilla/api/items/IIngredient) | IIngredient input of the recipe |
-| xp        | float                                                               | how much xp the player gets     |
-| cookTime  | int                                                                 | how long it takes to cook       |
+| Параметр        | Тип                                                                 | Описание                                    |
+| --------------- | ------------------------------------------------------------------- | ------------------------------------------- |
+| имя             | String                                                              | Название нового рецепта                     |
+| вывод           | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)   | Вывод рецепта IItemStack                    |
+| input           | [crafttweaker.api.item.IIngredient](/vanilla/api/items/IIngredient) | Вход Igredient в рецепт                     |
+| xp              | float                                                               | сколько xp получает игрок                   |
+| время кулинарии | int                                                                 | сколько времени требуется для приготовления |
 
 
-### removeAll
+### удалить все
 
-Remove all recipes in this registry
+Удалить все рецепты в реестре
 
 ```zenscript
 furnace.removeAll();
 ```
 
-### removeByModid
+### удалил Modid
 
-Remove recipe based on Registry name modid
+Удалить рецепт на основе модификации имени реестра
 
 ```zenscript
 furnace.removeByModid(modid as String);
-furnace.removeByModid("minecraft");
+печ.removeByModid("minecraft");
 ```
 
-| Parameter | Type   | Description                    |
-| --------- | ------ | ------------------------------ |
-| modid     | String | modid of the recipes to remove |
+| Параметр | Тип    | Описание                  |
+| -------- | ------ | ------------------------- |
+| мод      | String | мод рецептов для удаления |
 
 
 ### removeByName
 
-Remove recipe based on Registry name
+Удалить рецепт на основе названия реестра
 
 ```zenscript
-furnace.removeByName(name as String);
+furnace.removeByName(название как строка);
 furnace.removeByName("minecraft:furnace");
 ```
 
-| Parameter | Type   | Description                       |
-| --------- | ------ | --------------------------------- |
-| name      | String | registry name of recipe to remove |
+| Параметр | Тип    | Описание                 |
+| -------- | ------ | ------------------------ |
+| имя      | String | имя реестра для удаления |
 
 
 ### removeByRegex
 
-Remove recipe based on regex
+Удалить рецепт, основанный на регулярном выражении
 
 ```zenscript
-furnace.removeByRegex(regex as String);
-furnace.removeByRegex("\\d_\\d");
+furnace.removeByRegex(regex как строка);
+печь.removeByRegex("\\d_\\d");
 ```
 
-| Parameter | Type   | Description            |
-| --------- | ------ | ---------------------- |
-| regex     | String | regex to match against |
+| Параметр   | Тип    | Описание                 |
+| ---------- | ------ | ------------------------ |
+| регулярные | String | выражать до совпадения с |
 
 
-### removeRecipe
+### удалить рецепт
 
-Remove a recipe based on it's output.
+Удалите рецепт, основанный на его результате.
 
 ```zenscript
-furnace.removeRecipe(output as crafttweaker.api.item.IItemStack);
-furnace.removeRecipe(<item:minecraft:glass>);
+furnace.removeRecipe(выход как crafttweaker.api.item.IItemStack);
+печ.removeRecipe(<item:minecraft:glass>);
 ```
 
-| Parameter | Type                                                              | Description          |
-| --------- | ----------------------------------------------------------------- | -------------------- |
-| output    | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | output of the recipe |
+| Параметр | Тип                                                               | Описание      |
+| -------- | ----------------------------------------------------------------- | ------------- |
+| вывод    | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | вывод рецепта |
 
 
 
-Removes a recipe based on it's output and input.
+Удаляет рецепт на основе его вывода и ввода.
 
 ```zenscript
-furnace.removeRecipe(output as crafttweaker.api.item.IItemStack, input as crafttweaker.api.item.IIngredient);
-furnace.removeRecipe(<item:minecraft:diamond>, <tag:minecraft:wool>);
+furnace.removeRecipe(выход как crafttweaker.api.item.IItemStack, ввод в качестве crafttweaker.api.item.IIngredient);
+печ.removeRecipe(<item:minecraft:diamond>, <tag:minecraft:wool>);
 ```
 
-| Parameter | Type                                                                | Description                          |
-| --------- | ------------------------------------------------------------------- | ------------------------------------ |
-| output    | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)   | IItemStack output of the recipe.     |
-| input     | [crafttweaker.api.item.IIngredient](/vanilla/api/items/IIngredient) | IIngredient of the recipe to remove. |
+| Параметр | Тип                                                                 | Описание                         |
+| -------- | ------------------------------------------------------------------- | -------------------------------- |
+| вывод    | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)   | Выход из рецепта IItemStack.     |
+| input    | [crafttweaker.api.item.IIngredient](/vanilla/api/items/IIngredient) | Ингредиент рецепта для удаления. |
 
 
 
