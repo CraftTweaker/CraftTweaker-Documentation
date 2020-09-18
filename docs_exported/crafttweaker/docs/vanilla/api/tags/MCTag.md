@@ -207,13 +207,16 @@ myMCTag.removeFluids(fluids as crafttweaker.api.fluid.MCFluid[]);
 
 ### removeItems
 
+removes items from this tag, will fail if this is not a tag that can hold items
+
 ```zenscript
 myMCTag.removeItems(items as crafttweaker.api.item.IItemStack[]);
+myMCTag.removeItems(<item:minecraft:dirt>);
 ```
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| items | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)[] | No description provided |
+| items | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)[] | Items to remove from the tag |
 
 
 
