@@ -14,20 +14,20 @@ crafttweaker.api.item.IIngredientTransform
 Тип возврата: строка
 
 ```zenscript
-myIIngredientTransformer.getCommandString(transformedIngredient as T);
+myIIngredientTransformer.getCommandString(ингредиент как T);
 ```
 
-| Параметр                  | Тип | Описание             |
-| ------------------------- | --- | -------------------- |
-| преобразован в ингредиент | Т   | Описание отсутствует |
+| Параметр   | Тип | Описание             |
+| ---------- | --- | -------------------- |
+| ингредиент | Т   | Описание отсутствует |
 
 
-### преобразование
+### matches
 
-Возвратный тип: [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
+Тип возврата: логическое значение
 
 ```zenscript
-myIIngredientTransformer.transform(стек как crafttweaker.api.item.IItemStack);
+myIIngredientTransformer.matches(стек как crafttweaker.api.item.IItemStack);
 ```
 
 | Параметр | Тип                                                               | Описание             |
