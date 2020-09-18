@@ -1,0 +1,39 @@
+- Mods:
+    - Contenttweaker:
+      - API:
+        - BraketHandlers: 'mods/contenttweiler/API/BraketHandlers.md'
+        - Api:
+          - IIsBuilder: 'mods/contenttweiler/AAPI/IIsBuilder.md'
+        - 块：
+          - BlockBuilder: 'mods/contenttmiler/API/block/BlockBuilder.md'
+          - BlockTypeBuilder: 'mods/contenttmiler/API/block/BlockTypeBuilder.md'
+          - 基本：
+            - BlockBuilderBasic: 'mods/contenttmilower/API/block/basic/BlockBuilderBasic.md'
+          - 支柱：
+            - BlockBuilderPillarRotatable: 'mods/contenttmiler/API/block/pillar/BlockBuilderPillarRotable.md'
+          - 楼梯：
+            - BlockBuilderStairs： 'mods/contenttmiler/API/block/stairs/BlockBuilderStairs.md'
+        - 物品：
+          - ItemBuilder: 'mods/contenttemerer/API/itemBuilder.md'
+          - ItemTypeBuilder: 'mods/contenttweiler/API/itemTypeBuilder.md'
+          - MCItemGroup：'mods/contenttweiler/ADI/item/MCItemGroup.md'
+          - MCToolType: 'mods/contenttweaker/API/item/MCToolType.md'
+          - 基本：
+            - ItemBuilderBasic: 'mods/contenttweiler/API/item/ItemBuilderBasic.md'
+          - 工具：
+            - ItemBuilderTool: 'mods/contenttweiler/API/item/temBuilderTool.md'
+
+- Vanilla:
+    - Api:
+      - 块：
+        - 材料：
+          - MCMaterial: 'vanilla/api/block/material/MCMaterial.md'
+          - MCMaterialColor: 'vanilla/api/block/material/MCMaterialColor.md'
+      - 块：
+        - MCBlock: 'vanilla/api/blocks/MCBlock.md'
+        - MCBLockState: 'vanilla/api/blocks/MCBlockState.md'
+      - 板块：
+        - 命令StringDisplayable: 'vanilla/api/cluss/CommandStringDisplayable.md'
+      - Util:
+        - MCResourceLocation: 'vanilla/api/util/MCResourceLocation.md'
+
