@@ -14,20 +14,20 @@ crafttweaker.api.item.IIngredientTransformer
 Typ zwrotu: Ciąg
 
 ```zenscript
-myIIngredientTransformer.getCommandString(transformedIngredient as T);
+myIIngredientTransformer.getCommandString(składnik jako T);
 ```
 
-| Parametr               | Typ | Opis             |
-| ---------------------- | --- | ---------------- |
-| składnik transformacji | T   | Nie podano opisu |
+| Parametr | Typ | Opis             |
+| -------- | --- | ---------------- |
+| składnik | T   | Nie podano opisu |
 
 
-### przekształć
+### dopasowania
 
-Typ zwrotu: [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
+Typ zwrotu: logiczny
 
 ```zenscript
-myIIngredientTransformer.transform(stack jako crafttweaker.api.item.IItemStack);
+myIIngredientTransformer.matches(stack as crafttweaker.api.item.IItemStack);
 ```
 
 | Parametr | Typ                                                               | Opis             |
