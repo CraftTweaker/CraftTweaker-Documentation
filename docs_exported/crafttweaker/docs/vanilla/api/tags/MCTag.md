@@ -49,13 +49,16 @@ myMCTag.addFluids(fluids as crafttweaker.api.fluid.MCFluid[]);
 
 ### addItems
 
+Adds items to this tag, will fail if this is not a tag that can hold items
+
 ```zenscript
 myMCTag.addItems(items as crafttweaker.api.item.IItemStack[]);
+myMCTag.addItems(<item:minecraft:dirt>);
 ```
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| items | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)[] | No description provided |
+| items | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)[] | Items to add to the tag |
 
 
 ### anyDamage
