@@ -14,20 +14,20 @@ crafttweaker.api.item.IIngredientTransformer
 戻り値の型: String
 
 ```zenscript
-myIIngredientTransformer.getCommandString(transformedIngredient)
+myIIngredientTransformer.getCommandString(particle as T);
 ```
 
-| パラメータ                 | タイプ | 説明           |
-| --------------------- | --- | ------------ |
-| transformedIngredient | T   | 説明が提供されていません |
+| パラメータ | タイプ | 説明           |
+| ----- | --- | ------------ |
+| 材料    | T   | 説明が提供されていません |
 
 
-### 変換する
+### 一致
 
-戻り値の型: [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
+戻り値の型: boolean
 
 ```zenscript
-myIIngredientTransformer.transform(stack as crafttweaker.api.item.IItemStack);
+myIIngredientTransformer.matches(stack as crafttweaker.api.item.IItemStack);
 ```
 
 | パラメータ | タイプ                                                               | 説明           |
