@@ -14,20 +14,20 @@ craftminstruer.api.item.IIngredientTransformer
 返回类型：字符串
 
 ```zenscript
-myIIngredientTransformer.getCommandString(transformmedIngredient as T)；
+myIIngredientTransformer.getCommandString(成分为 T)；
 ```
 
-| 参数   | 类型 | 描述                      |
-| ---- | -- | ----------------------- |
-| 变形属性 | T  | No description provided |
+| 参数  | 类型 | 描述                      |
+| --- | -- | ----------------------- |
+| 成分： | T  | No description provided |
 
 
-### 转换
+### 匹配
 
-返回类型： [craftbiner.api.item.IItemStack](/vanilla/api/items/IItemStack)
+返回类型：布尔值
 
 ```zenscript
-myIIngredientTransformer.transformer (stack as craftbiner.api.item.IItemStack);
+myIIngredientTransformer.matches(堆栈为 craftbiner.api.item.IItemStack);
 ```
 
 | 参数    | 类型                                                                | 描述                      |
