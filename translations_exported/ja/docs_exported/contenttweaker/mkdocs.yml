@@ -1,0 +1,39 @@
+- Mods:
+    - Contenttweaker:
+      - API:
+        - BracketHandlers: 'mods/contenttweaker/API/BracketHandlers.md'
+        - Api:
+          - IIsBuilder: 'mods/contenttweaker/API/api/IIsBuilder.md'
+        - ブロック:
+          - BlockBuilder: 'mods/contenttweaker/API/block/BlockBuilder.md'
+          - BlockTypeBuilder: 'mods/contenttweaker/API/block/BlockTypeBuilder.md'
+          - 基本:
+            - BlockBuilderBasic: 'mods/contenttweaker/API/block/basic/BlockBuilderBasic.md'
+          - 柱:
+            - BlockBuilderPillarRotatable: 'mods/contenttweaker/API/block/pillar/BlockBuilderPillarRotatable.md'
+          - 階段:
+            - BlockBuilderStairs: 'mods/contenttweaker/API/block/stairs/BlockBuilderStairs.md'
+        - アイテム:
+          - ItemBuilder: 'mods/contenttweaker/API/item/ItemBuilder.md'
+          - ItemTypeBuilder: 'mods/contenttweaker/API/item/ItemTypeBuilder.md'
+          - MCItemGroup: 'mods/contenttweaker/API/item/MCItemGroup.md'
+          - MCToolType: 'mods/contenttweaker/API/item/MCToolType.md'
+          - 基本:
+            - ItemBuilderBasic: 'mods/contenttweaker/API/item/basic/ItemBuilderBasic.md'
+          → ツール:
+            - ItemBuilderTool: 'mods/contenttweaker/API/item/tool/ItemBuilderTool.md'
+
+- バニラ:
+    - Api:
+      - ブロック:
+        - 素材:
+          - MCMaterial: 'vanilla/api/block/material/MCMaterial.md'
+          - MCMaterialColor: 'vanilla/api/block/material/MCMaterialColor.md'
+      - ブロック:
+        - MCBlock: 'vanilla/api/blocks/MCBlock.md'
+        - MCBlockState: 'vanilla/api/blocks/MCBlockState.md'
+      - ブラケット記法:
+        - CommandStringDisplayable: 'vanilla/api/brackets/CommandStringDisplayable.md'
+      - Util:
+        - MCResourceLocation: 'vanilla/api/util/MCResourceLocation.md'
+
