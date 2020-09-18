@@ -14,20 +14,20 @@ crafttweaker.api.item.IIngredientTransformer
 Tipo de retorno: Cadena
 
 ```zenscript
-myIIngredientTransformer.getCommandString(transformedIngredient as T);
+myIIngredientTransformer.getCommandString(ingrediente como T);
 ```
 
-| Parámetro                | Tipo | Descripción                   |
-| ------------------------ | ---- | ----------------------------- |
-| Ingrediente transformado | T    | No se proporcionó descripción |
+| Parámetro   | Tipo | Descripción                   |
+| ----------- | ---- | ----------------------------- |
+| ingrediente | T    | No se proporcionó descripción |
 
 
-### transformar
+### partidas
 
-Tipo de retorno: [crafttweaker.api.item.ItemStack](/vanilla/api/items/IItemStack)
+Tipo de retorno: booleano
 
 ```zenscript
-myIIngredientTransformer.transform(pila como crafttweaker.api.item.ItemStack);
+myIIngredientTransformer.matches(stack as crafttweaker.api.item.ItemStack);
 ```
 
 | Parámetro | Tipo                                                              | Descripción                   |
