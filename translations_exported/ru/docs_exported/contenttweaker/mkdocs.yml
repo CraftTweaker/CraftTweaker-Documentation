@@ -1,0 +1,39 @@
+- Моды:
+    - Contenttweaker:
+      - API:
+        - BracketHandlers: 'mods/contenttweaker/API/BracketHandlers.md'
+        - Api:
+          - IIsBuilder: 'mods/contenttweaker/API/api/IIsBuilder.md'
+        - Блок:
+          - BlockBuilder: 'mods/contenttweaker/API/block/BlockBuilder.md'
+          - BlockTypeBuilder: 'mods/contenttweaker/API/block/BlockBuilder.md'
+          - Основное:
+            - База блоков: 'mods/contenttweaker/API/block/basic/BlockBuilderBasic.md'
+          - Основание:
+            - Поворот BlockBuilderPillar: 'mods/contenttweaker/API/block/pillar/BlockBuilderPillarRotatable.md'
+          - лестницы:
+            - Ступени BlockBuilderStairs: 'mods/contenttweaker/API/block/лестницы/BlockBuilderStairs.md'
+        - Предмет:
+          - ItemBuilder: 'mods/contenttweaker/API/item/ItemBuilder.md'
+          - Строитель типов Item: 'mods/contenttweaker/API/item/ItemTypeBuilder.md'
+          - Группа MCItemGroup: 'mods/contenttweaker/API/item/MCItemGroup.md'
+          - MCToolType: 'mods/contenttweaker/API/item/MCToolType.md'
+          - Основное:
+            - База ItemBuilderBasic: 'mods/contenttweaker/API/item/basic/ItemBuilderBasic.md'
+          - Инструмент:
+            - ItemBuilderTool: 'mods/contenttweaker/API/item/tool/ItemBuilderTool.md'
+
+- Обычная игра:
+    - Api:
+      - Блок:
+        - Материал:
+          - MCMaterial: 'vanilla/api/block/material/MCMaterial.md'
+          Цвет: 'ванильная/api/block/material/MCMaterialColor.md'
+      - Блоки:
+        - MCBlock: 'ванильная/api/blocks/MCBlock.md'
+        - MCBlockState: 'ванильная/api/blocks/MCBlockState.md'
+      - Скобки:
+        - Отображаемый команд: 'vanilla/api/brackets/CommandStringDisplayable.md'
+      - Util:
+        - Расположение MCResource: 'vanilla/api/util/MCResourceLocation.md'
+
