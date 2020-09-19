@@ -12,7 +12,6 @@ Vous pouvez, bien sûr, également [importer](/AdvancedFunctions/Import/) la cla
 
 Les événements PlayerOpenContainer implémentent les interfaces suivantes et peuvent également appeler toutes leurs méthodes/getters/setters :
 
-- [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 - [Evénement IPlayer](/Vanilla/Events/Events/IPlayerEvent/)
 
 ## ZenGetters
@@ -21,10 +20,5 @@ Les informations suivantes peuvent être récupérées à partir de l'événemen
 
 | ZenGetter   | Type de retour                               |
 | ----------- | -------------------------------------------- |
-| `annulé`    | boolean                                      |
 | `Joueur`    | [IPlayer](/Vanilla/Players/IPlayer/)         |
 | `conteneur` | [IConteneur](/Vanilla/Container/IContainer/) |
-
-## Méthodes Zen
-
-- `event.cancel()` définit l'événement comme annulé.
