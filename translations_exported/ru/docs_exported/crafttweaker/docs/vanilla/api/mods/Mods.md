@@ -1,5 +1,7 @@
 # Моды
 
+Зацепка информации обо всех зарегистрированных модах. Можно получить доступ с помощью `загруженных модов` глобального ключевого слова
+
 Этот класс был добавлен модом с mod-id `crafttweaker`. Так что если вы хотите использовать эту функцию, вам нужно установить этот мод.
 
 ## Импорт класса
@@ -18,8 +20,8 @@ crafttweaker.api.mods.Mods
 Возврат типа: [crafttweaker.api.mods.ModInfo](/vanilla/api/mods/ModInfo)
 
 ```zenscript
-myMods.getMod(modid as String);
-myMods.getMods.getMod("minecraft");
+loadedMods.getMod(modid as String);
+loadedMods.getMod("minecraft");
 ```
 
 | Параметр | Тип    | Описание             |
@@ -36,8 +38,8 @@ myMods.getMods.getMod("minecraft");
 Тип возврата: логическое значение
 
 ```zenscript
-myMods.isModLoaded(modid as String);
-myMods.isModLoaded("minecraft");
+loadedMods.isModaded(modid as String);
+loadedMods.isModLoaded("minecraft");
 ```
 
 | Параметр | Тип    | Описание         |
