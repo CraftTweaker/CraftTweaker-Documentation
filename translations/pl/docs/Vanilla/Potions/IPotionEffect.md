@@ -17,7 +17,7 @@ Może być wymagane zaimportowanie pakietu, jeśli napotkasz jakiekolwiek proble
 | Pokazuje Cząsteczki                   | bool                                            |
 | wzmacniacz                            | odcień                                          |
 | Przedmioty kuratywne                  | Lista<[IItemStack](/Vanilla/Items/IItemStack/)> |
-| effectName                            | bool                                            |
+| effectName                            | ciąg znaków                                     |
 | isAmbient                             | bool                                            |
 | isPotionDurationMax (także ZenSetter) | bool                                            |
 
