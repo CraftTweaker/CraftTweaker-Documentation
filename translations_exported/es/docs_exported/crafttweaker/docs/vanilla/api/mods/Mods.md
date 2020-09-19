@@ -1,5 +1,7 @@
 # Modos
 
+Contiene información sobre todos los mods que están registrados. Se puede acceder usando la palabra clave global `cargada`
+
 Esta clase fue añadida por un mod con la ID  `crafttweaker`. Necesitas tener este mod instalado si quieres usar esta caracteristica.
 
 ## Importar la clase
@@ -18,8 +20,8 @@ Obtiene un mod específico
 Tipo de retorno: [crafttweaker.api.mods.ModInfo](/vanilla/api/mods/ModInfo)
 
 ```zenscript
-myMods.getMod(modid as String);
-myMods.getMod("minecraft");
+loadedMods.getMod(modid as String);
+loadedMods.getMod("minecraft");
 ```
 
 | Parámetro | Tipo   | Descripción                   |
@@ -36,8 +38,8 @@ Comprueba si un mod está detenido
 Tipo de retorno: booleano
 
 ```zenscript
-myMods.isModLoaded(modid as String);
-myMods.isModLoaded("minecraft");
+LoadedMods.isModLoaded(modid as String);
+LoadedMods.isModLoaded("minecraft");
 ```
 
 | Parámetro | Tipo   | Descripción              |
