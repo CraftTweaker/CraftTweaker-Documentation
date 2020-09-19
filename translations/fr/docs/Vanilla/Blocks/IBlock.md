@@ -16,6 +16,8 @@ Il y a plusieurs façons de renvoyer un IBlock objet :
 * Utiliser getBlock(x,y,z) sur un [IWorld](/Vanilla/World/IWorld/).
 * Utiliser la fonction getBlock() sur le [ICTBlockState](/Mods/ContentTweaker/Vanilla/Types/Block/ICTBlockState/) de ContentTweaker
 
+Attention : Seule la seconde méthode est possible pour `données` ZenGetter de retourner un IData nonnull !
+
 ## Zengetters
 
 | Récupération | Que fait-il                              | Type de retour                                         |
