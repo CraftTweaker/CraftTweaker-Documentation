@@ -17,7 +17,7 @@ Il pourrait vous être nécessaire d'importer le paquet si vous rencontrez des p
 | ne montre pas les particules                     | booléen                                          |
 | amplificateur                                    | Indice                                           |
 | Éléments curatifs                                | Liste <[IItemStack](/Vanilla/Items/IItemStack/)> |
-| effectName                                       | booléen                                          |
+| effectName                                       | chaîne de caractères                             |
 | isAmbient                                        | booléen                                          |
 | format@@0 isPotionDurationMax (also a ZenSetter) | booléen                                          |
 
