@@ -14,6 +14,8 @@ There are multiple ways thet return an IBlock object:
 * Using the getBlock(x,y,z) on an [IWorld](/Vanilla/World/IWorld/).
 * Using getBlock() on ContentTweaker's [ICTBlockState](/Mods/ContentTweaker/Vanilla/Types/Block/ICTBlockState/)
 
+Tips: Only using the second way, the `data` ZenGetter will return an nonnull IData!
+
 ## Zengetters
 
 | Getter     | What does it do                | Return Type                            |
