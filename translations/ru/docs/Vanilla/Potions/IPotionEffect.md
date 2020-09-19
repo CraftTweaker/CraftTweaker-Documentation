@@ -17,7 +17,7 @@ IPotionEffect - это [IPotion](/Vanilla/Potions/IPotion/) , который т�
 | не Показать частицы                   | bool                                             |
 | усилитель                             | int                                              |
 | целительные элементы                  | Список<[IItemStack](/Vanilla/Items/IItemStack/)> |
-| effectName                            | bool                                             |
+| effectName                            | string                                           |
 | isAmbient                             | bool                                             |
 | isPotionDurationMax (также ZenSetter) | bool                                             |
 
