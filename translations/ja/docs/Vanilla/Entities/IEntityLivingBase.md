@@ -56,6 +56,7 @@ IEntityLivingBase extends [IEntity](/Vanilla/Entities/IEntity/). つまり、 [I
 - [IItemStack](/Vanilla/Items/IItemStack/) getItemInSlot([IEntityEquipmentSlot](/Vanilla/Entities/IEntityEquipmentSlot/) slot);
 - [IPotionEffect](/Vanilla/Potions/IPotionEffect/) getActivePotionEffect(IPotionポーション);
 - void addPotionEffect([IPotionEffect](/Vanilla/Potions/IPotionEffect/) potionEffect);
+- void removePotionEffect([IPotion](/Vanilla/Potions/IPotion/) potion);
 - void clearActivePotions() → エンティティから [ポーション](/Vanilla/Potions/IPotion/) をすべて削除する
 - void knockBack([IEntity](/Vanilla/Entities/IEntity/) エンティティ, float 1, double 2, double three);
 - void onDeath();
