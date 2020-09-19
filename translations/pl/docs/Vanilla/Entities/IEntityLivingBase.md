@@ -56,6 +56,7 @@ IEntityLivingBase extends [IEntity](/Vanilla/Entities/IEntity/). Oznacza to, że
 - [IItemStack](/Vanilla/Items/IItemStack/) getItemInSlot([IEntityEquipmentSlot](/Vanilla/Entities/IEntityEquipmentSlot/) slot);
 - [IPotionEffect](/Vanilla/Potions/IPotionEffect/) getActivePotionEffect(Mikstura Mikstur);
 - Unieważnij efekt addPotionEffect([IPotionEffect](/Vanilla/Potions/IPotionEffect/) potionEffect);
+- Uniknij usuń Miksturę ([Mikstura](/Vanilla/Potions/IPotion/));
 - Unikaj clearActivePotions() → Usuwa wszystkie aktywne [mikstury](/Vanilla/Potions/IPotion/) z encji
 - Unieważnij knockBack([Element IEntity](/Vanilla/Entities/IEntity/) zmiennoprzecinkowy (float 1), podwójne dwa, podwójne trzy);
 - Unieważnienie śmierci();
