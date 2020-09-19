@@ -16,6 +16,8 @@
 * Используя getBlock(x,y,z) на [IWorld](/Vanilla/World/IWorld/).
 * Использование getBlock() на ContentTweaker [ICTBlockState](/Mods/ContentTweaker/Vanilla/Types/Block/ICTBlockState/)
 
+Предупреждение: Только использование второго метода возможно для `данных` ZenGetter, чтобы вернуть ненулевую IData!
+
 ## Геттеры
 
 | Геттер     | Что он делает                      | Возвращаемый тип                                      |
