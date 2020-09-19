@@ -1,5 +1,7 @@
 # Mods
 
+Contient des informations sur tous les mods qui sont enregistrés. Accessible en utilisant le mot-clé global `loadedMods`
+
 Cette classe a été ajoutée par un mod avec le mod-id `crafttweaker`. Vous devez donc avoir ce mod installé si vous voulez utiliser cette fonctionnalité.
 
 ## Importation de la classe
@@ -18,8 +20,8 @@ Obtient un mod spécifique
 Type de retour : [crafttweaker.api.mods.ModInfo](/vanilla/api/mods/ModInfo)
 
 ```zenscript
-monMods.getMod(modid comme String);
-monMods.getMod("minecraft");
+loadedMods.getMod(modid comme String);
+loadedMods.getMod("minecraft");
 ```
 
 | Paramètre | Type de texte        | Libellé                    |
@@ -36,8 +38,8 @@ Vérifie si un mod est laodé
 Type de retour: booléen
 
 ```zenscript
-monMods.isModLoaded(modid comme String);
-monMods.isModLoaded("minecraft");
+loadedMods.isModLoaded(modid as String);
+loadedMods.isModLoaded("minecraft");
 ```
 
 | Paramètre | Type de texte        | Libellé                |
