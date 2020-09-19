@@ -15,6 +15,8 @@ IBlock 객체를 반환하는 방법은 여러가지입니다.
 * Using the getBlock(x,y,z) on an [IWorld](/Vanilla/World/IWorld/).
 * ContentTweaker의 [ICTBlockStat](/Mods/ContentTweaker/Vanilla/Types/Block/ICTBlockState/)에 getBlock()을 사용
 
+Warning: Only using the second method is it possible for `data` ZenGetter to return a nonnull IData!
+
 ## Zengetters
 
 | Getter     | 기능            | 반환 타입                                                 |
@@ -25,7 +27,7 @@ IBlock 객체를 반환하는 방법은 여러가지입니다.
 
 # IBlockPattern
 
-IBlock은 [IBlockPattern](/Vanilla/Blocks/IBlockPattern/) 객체를 확장합니다. 즉, IBlockPattern 객체에서 사용할 수있는 모든 함수를 IBlock 객체에서도 사용할 수 있습니다.
+IBlocks extend [IBlockPattern](/Vanilla/Blocks/IBlockPattern/) Objects. That means, all functions that are available to IBlockPattern objects can also be used for IBlock objects:
 
 * `blocks` ZenGetter를 사용
 * OR'ing
