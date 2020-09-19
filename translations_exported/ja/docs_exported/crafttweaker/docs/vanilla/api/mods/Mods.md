@@ -1,5 +1,7 @@
 # Mods
 
+登録されているすべてのModの情報を保持します。 `loadedMods` global keyword を使ってアクセスできます
+
 crafttweakerのmod-idを持つmodによって追加されているクラスです。 従って、この機能を利用する場合はこのmodをインストールする必要があります。
 
 ## クラスのインポート
@@ -18,8 +20,8 @@ crafttweaker.api.mods.Mods
 戻り値の型: [crafttweaker.api.mods.ModInfo](/vanilla/api/mods/ModInfo)
 
 ```zenscript
-myMods.getMod(modid as String);
-myMods.getMod("minecraft");
+loadedMods.getMod(modid as String);
+loadedMods.getMod("minecraft");
 ```
 
 | パラメータ | タイプ  | 説明           |
@@ -36,8 +38,8 @@ Modがローディングされているか確認します。
 戻り値の型: boolean
 
 ```zenscript
-myMods.isModLoaded(modo as String);
-myMods.isModLoaded("minecraft");
+loadedMods.isModLoaded(modied as String);
+loadedModLoaded("minecraft");
 ```
 
 | パラメータ | タイプ  | 説明          |
