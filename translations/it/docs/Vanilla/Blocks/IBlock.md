@@ -16,6 +16,8 @@ Ci sono diversi modi in cui il furto restituisce un oggetto IBlock:
 * Utilizzando getBlock(x,y,z) su un [IWorld](/Vanilla/World/IWorld/).
 * Utilizzando getBlock() su ContentTweaker's [ICTBlockState](/Mods/ContentTweaker/Vanilla/Types/Block/ICTBlockState/)
 
+Attenzione: Solo usando il secondo metodo è possibile che i dati `` ZenGetter restituiscano un IData non nulla!
+
 ## Zengetters
 
 | Getter      | Che cosa fa                           | Tipo Di Reso                                          |
