@@ -17,7 +17,7 @@ Podría ser necesario que importes el paquete si encuentras algún problema (com
 | No muestra partículas                                  | pluma                                           |
 | amplificador                                           | int                                             |
 | artículos curativos                                    | Lista <[ItemStack](/Vanilla/Items/IItemStack/)> |
-| effectName                                             | pluma                                           |
+| effectName                                             | cadena                                          |
 | isAmbient                                              | pluma                                           |
 | es duración máxima de la poción (también un ZenSetter) | pluma                                           |
 
