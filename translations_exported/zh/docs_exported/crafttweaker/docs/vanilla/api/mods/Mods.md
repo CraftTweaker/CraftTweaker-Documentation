@@ -1,5 +1,7 @@
 # 模组
 
+保存所有注册模组的信息。 可以使用 `加载模组` 全局关键字 访问
+
 这个类由mod-id为`crafttweaker`的模组添加. 因此，如果要使用此功能，则需要安装此mod。
 
 ## 导入相关包
@@ -18,8 +20,8 @@ crafttweaker.api.mods.Mods
 返回类型： [craftmilower.api.mods.ModInfo](/vanilla/api/mods/ModInfo)
 
 ```zenscript
-myMods.getMod(月经作为字符串);
-myMods.getMod("minecraft");
+装入Mods.getMod(月份为字符串);
+装入Mods.getMod("minecraft");
 ```
 
 | 参数  | 类型          | 描述                      |
@@ -36,8 +38,8 @@ myMods.getMod("minecraft");
 返回类型：布尔值
 
 ```zenscript
-myMods.isModLoaded(modian as String);
-myMods.isModLoaded("minecraft");
+装入Mods.isModLoaded(modian as String);
+loadedMods.isModLoaded("minecraft");
 ```
 
 | 参数  | 类型          | 描述    |
