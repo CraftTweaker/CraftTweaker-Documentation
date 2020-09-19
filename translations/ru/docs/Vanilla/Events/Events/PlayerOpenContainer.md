@@ -12,7 +12,6 @@ You can, of course, also [import](/AdvancedFunctions/Import/) the class before a
 
 События PlayerOpenContainer реализуют следующие интерфейсы и также могут вызвать все их методы/getters/setter:
 
-- [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 - [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
 
 ## ZenGetters
@@ -21,10 +20,5 @@ You can, of course, also [import](/AdvancedFunctions/Import/) the class before a
 
 | Геттеры     | Возвращаемый тип                             |
 | ----------- | -------------------------------------------- |
-| `отменено`  | boolean                                      |
 | `player`    | [IPlayer](/Vanilla/Players/IPlayer/)         |
 | `контейнер` | [IContainer](/Vanilla/Container/IContainer/) |
-
-## ZenMethods
-
-- `event.cancel()` устанавливает событие как отменено.
