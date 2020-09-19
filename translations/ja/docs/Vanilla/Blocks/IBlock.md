@@ -16,6 +16,8 @@ IBlockオブジェクトを返す方法は複数あります:
 * [IWorld](/Vanilla/World/IWorld/) で getBlock(x,y,z) を使用します。
 * ContentTweaker [ICTBlockState](/Mods/ContentTweaker/Vanilla/Types/Block/ICTBlockState/) での getBlock() の使用
 
+警告: `data` ZenGetter が non-null IDataを返すことは、2つ目のメソッドのみを使用することができます。
+
 ## Zengetters
 
 | Getter | 何をするか              | 戻り値                                                   |
