@@ -16,6 +16,8 @@ Hay varias maneras en las que devuelve un objeto de IBlock:
 * Usando el getBlock(x,y,z) en un [IWorld](/Vanilla/World/IWorld/).
 * Usando getBlock() en ContentTweaker [ICTBlockState](/Mods/ContentTweaker/Vanilla/Types/Block/ICTBlockState/)
 
+Advertencia: ¡Sólo usar el segundo método es posible que `data` ZenGetter devuelva un ID no null!
+
 ## Zengetters
 
 | Obtén      | ¿Qué hace                         | Tipo de devolución                                        |
