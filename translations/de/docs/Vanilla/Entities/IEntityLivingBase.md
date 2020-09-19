@@ -56,6 +56,7 @@ IEntityLivingBase extends [IEntity](/Vanilla/Entities/IEntity/). Das bedeutet, d
 - [IItemStack](/Vanilla/Items/IItemStack/) getItemInSlot([IEntityEquipmentSlot](/Vanilla/Entities/IEntityEquipmentSlot/) slot);
 - [IPotionEffect](/Vanilla/Potions/IPotionEffect/) getActivePotionEffect(ITrank Trank);
 - Void addPotionEffect([IPotionEffect](/Vanilla/Potions/IPotionEffect/) potionEffect);
+- Entferne PotionEffect([ITrank](/Vanilla/Potions/IPotion/) Trank);
 - clearActivePotions() → Entfernt alle aktiven [Tränke](/Vanilla/Potions/IPotion/) aus der Entität
 - nichtig KnockBack([IEntity](/Vanilla/Entities/IEntity/) Entity, float one, double zwei, double three);
 - onDeath(); ungültig
