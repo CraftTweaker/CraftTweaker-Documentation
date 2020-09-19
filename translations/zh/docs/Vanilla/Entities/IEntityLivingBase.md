@@ -56,6 +56,7 @@ IEntityLivingBase extends [IEntity](/Vanilla/Entities/IEntity/). That means all 
 - [IItemStack](/Vanilla/Items/IItemStack/) getItemInSlot([IEntityEquipmentSlot](/Vanilla/Entities/IEntityEquipmentSlot/) slot);
 - [IPotionEffect](/Vanilla/Potions/IPotionEffect/) getActivePotionEffect(IPotion 药水)；
 - 无效添加药水效果([IPotionEffect](/Vanilla/Potions/IPotionEffect/) 药水效果);
+- 无效移除药水效果([IPotion](/Vanilla/Potions/IPotion/) 药水)；
 - 无效 clearActivePotions() -> 从实体中移除所有活动的 [药剂](/Vanilla/Potions/IPotion/)
 - 无效的 kackback([IEnty](/Vanilla/Entities/IEntity/) 实体, 浮动一个, 双双倍, 三倍);
 - a. 在死亡时无效；
