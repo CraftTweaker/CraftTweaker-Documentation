@@ -1,5 +1,7 @@
 # Mods
 
+Contiene informazioni su tutte le mod registrate. È possibile accedere usando la parola chiave globale `caricata.Mods`
+
 Questa classe è stata aggiunta da una mod con ID `crafttweaker`. Perciò, è necessario avere questa mod installata per poter utilizzare questa funzione.
 
 ## Importare la classe
@@ -18,8 +20,8 @@ Ottiene una mod specifica
 Tipo restituito: [crafttweaker.api.mods.ModInfo](/vanilla/api/mods/ModInfo)
 
 ```zenscript
-myMods.getMod(modid as String);
-myMods.getMod("minecraft");
+loadedMods.getMod(modid as String);
+loadedMods.getMod("minecraft");
 ```
 
 | Parametro | Tipo    | Descrizione                 |
@@ -36,8 +38,8 @@ Controlla se una mod è bloccata
 Tipo restituito: booleano
 
 ```zenscript
-myMods.isModLoaded(modid as String);
-myMods.isModLoaded("minecraft");
+loadedMods.isModLoaded(modid as String);
+loadedMods.isModLoaded("minecraft");
 ```
 
 | Parametro | Tipo    | Descrizione           |
