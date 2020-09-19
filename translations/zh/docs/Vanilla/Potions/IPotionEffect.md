@@ -17,7 +17,7 @@ IPotionEffect 是一个 [IPotion](/Vanilla/Potions/IPotion/) 也有一个持续�
 | 不显示粒子                                | 布尔值                                          |
 | 放大器                                  | int                                          |
 | 治疗项目                                 | 列表<[IItemStack](/Vanilla/Items/IItemStack/)> |
-| effectName                           | bool                                         |
+| effectName                           | 字符串                                          |
 | isAmbient                            | bool                                         |
 | isPotionDurationMax (as a ZenSetter) | bool                                         |
 
