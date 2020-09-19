@@ -17,7 +17,7 @@ Potrebbe essere necessario importare il pacchetto se si incontrano problemi (com
 | doesShowParticles                        | bool                                            |
 | amplificatore                            | int                                             |
 | curativeItems                            | Lista<[IItemStack](/Vanilla/Items/IItemStack/)> |
-| effectName                               | bool                                            |
+| effectName                               | stringa                                         |
 | isAmbient                                | bool                                            |
 | isPotionDurationMax (anche un ZenSetter) | bool                                            |
 
