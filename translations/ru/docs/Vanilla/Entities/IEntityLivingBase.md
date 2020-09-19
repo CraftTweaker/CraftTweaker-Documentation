@@ -56,6 +56,7 @@ IEntityLivingBase extends [IEntity](/Vanilla/Entities/IEntity/). Это озна
 - [IItemStack](/Vanilla/Items/IItemStack/) getItemInSlot([IEntityEquipmentSlot](/Vanilla/Entities/IEntityEquipmentSlot/) slot);
 - [IPotionEffect](/Vanilla/Potions/IPotionEffect/) getActivePotionEffect(зелье зелья);
 - void addPotionEffect([IPotionEffect](/Vanilla/Potions/IPotionEffect/) зельея);
+- void removePotionEffect([IPotion](/Vanilla/Potions/IPotion/) зелье);
 - void clearActivePotions() → Удаляет все активные [зелья](/Vanilla/Potions/IPotion/) из сущности
 - void knockBack([IEntity](/Vanilla/Entities/IEntity/) сущность, плавающая единица, двойной два, двойной три);
 - void onDeath();
