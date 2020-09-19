@@ -16,6 +16,8 @@ Istnieje wiele sposobów, w których odcisk zwraca obiekt IBlock:
 * Używanie getBlock(x,y,z) na [IWorld](/Vanilla/World/IWorld/).
 * Używanie getBlock() na [ICTBlockState ContentTweaker's](/Mods/ContentTweaker/Vanilla/Types/Block/ICTBlockState/)
 
+Ostrzeżenie: Tylko użycie drugiej metody jest możliwe, aby `data` ZenGetter zwrócił nie-null IData!
+
 ## Zengetters
 
 | crwdns74646:0crwdne74646:0 | Co to robi               | Typ zwrotu                                              |
