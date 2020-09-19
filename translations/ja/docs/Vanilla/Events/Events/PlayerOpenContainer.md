@@ -12,7 +12,6 @@ You can, of course, also [import](/AdvancedFunctions/Import/) the class before a
 
 PlayerOpenContainer Eventsは以下のインターフェイスを実装し、すべてのメソッド/getters/settersを呼び出すことができます。
 
-- [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 - [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
 
 ## ZenGetters
@@ -21,10 +20,5 @@ PlayerOpenContainer Eventsは以下のインターフェイスを実装し、す
 
 | ZenGetter | 戻り値                                          |
 | --------- | -------------------------------------------- |
-| `キャンセル済み` | boolean型                                     |
 | `プレイヤー`   | [IPlayer](/Vanilla/Players/IPlayer/)         |
 | `コンテナ`    | [IContainer](/Vanilla/Container/IContainer/) |
-
-## ZenMethods
-
-- `event.cancel()` はイベントをキャンセルとして設定します。
