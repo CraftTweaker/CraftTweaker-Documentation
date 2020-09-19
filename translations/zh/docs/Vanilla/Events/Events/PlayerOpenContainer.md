@@ -12,7 +12,6 @@ You can, of course, also [import](/AdvancedFunctions/Import/) the class before a
 
 PlayerOpenContainer Events 实现了以下接口，并且也能够调用他们的所有方法/getter/setter：
 
-- [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 - [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
 
 ## ZenGetters
@@ -21,10 +20,5 @@ PlayerOpenContainer Events 实现了以下接口，并且也能够调用他们�
 
 | ZenGetter | 返回值类型                                        |
 | --------- | -------------------------------------------- |
-| `已取消`     | boolean                                      |
 | `播放器`     | [IPlayer](/Vanilla/Players/IPlayer/)         |
 | `容器`      | [IContainer](/Vanilla/Container/IContainer/) |
-
-## ZenMethods
-
-- `event.cancel()` 将事件设置为取消。
