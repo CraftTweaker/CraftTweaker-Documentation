@@ -17,7 +17,7 @@ Möglicherweise ist es erforderlich, dass Sie das Paket importieren, wenn Sie ir
 | does ShowParticles                       | bool                                             |
 | verstärker                               | int                                              |
 | kurativeItems                            | Liste <[IItemStack](/Vanilla/Items/IItemStack/)> |
-| effectName                               | bool                                             |
+| effectName                               | string                                           |
 | isAmbient                                | bool                                             |
 | isPotionDurationMax (auch ein ZenSetter) | bool                                             |
 
