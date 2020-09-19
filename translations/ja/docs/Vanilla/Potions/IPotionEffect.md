@@ -17,7 +17,7 @@ It might be required for you to import the package if you encounter any issues (
 | doesShowParticles                  | bool                                           |
 | アンプ                                | int                                            |
 | curativeItems                      | List<[IItemStack](/Vanilla/Items/IItemStack/)> |
-| effectName                         | bool                                           |
+| effectName                         | 文字列                                            |
 | isAmbient                          | bool                                           |
 | isPotionDurationMax (また ZenSetter) | bool                                           |
 
