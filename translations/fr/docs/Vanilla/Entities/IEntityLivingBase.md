@@ -56,6 +56,7 @@ IEntityLivingBase extends [IEntity](/Vanilla/Entities/IEntity/). Cela signifie q
 - [IItemStack](/Vanilla/Items/IItemStack/) getItemInSlot([IEntityEquipmentSlot](/Vanilla/Entities/IEntityEquipmentSlot/) slot);
 - [IPotionEffect](/Vanilla/Potions/IPotionEffect/) getActivePotionEffect(IPotion potion);
 - void addPotionEffect([IPotionEffect](/Vanilla/Potions/IPotionEffect/) potionEffet de potion);
+- void removePotionEffect([potion IPotion](/Vanilla/Potions/IPotion/));
 - void clearActivePotions() → Supprime toutes les potions [actives](/Vanilla/Potions/IPotion/) de l'entité
 - void knockBack([IEntity](/Vanilla/Entities/IEntity/) entité, float un, double deux, double trois);
 - annuler onDeath();
