@@ -16,6 +16,8 @@ Es gibt mehrere Möglichkeiten, ein IBlock Objekt zurückzugeben:
 * Verwendung des getBlock(x,y,z) auf einer [IWorld](/Vanilla/World/IWorld/).
 * Verwendung von getBlock() auf ContentTweakers [ICTBlockState](/Mods/ContentTweaker/Vanilla/Types/Block/ICTBlockState/)
 
+Warnung: Es ist nur mit der zweiten Methode möglich für `Daten` ZenGetter eine nonnull IData!
+
 ## ZenGetter
 
 | Getriebe   | Was macht es                    | Rückgabetyp                                           |
