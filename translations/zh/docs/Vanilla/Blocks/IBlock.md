@@ -16,6 +16,8 @@ IBlock 对象由 [IBlockDefinition](/Vanilla/Blocks/IBlockDefinition/)，元数�
 * 使用 [IWorld](/Vanilla/World/IWorld/) 提供的 getBlock(x,y,z) 方法
 * 使用 ContentTweaker 中 [ICTBlockState](/Mods/ContentTweaker/Vanilla/Types/Block/ICTBlockState/) 提供的 getBlock() 方法
 
+警告: 只能使用第二个方法才能使 `数据` ZenGetter 返回一个非空的 IData!
+
 ## Zengetters
 
 | Getter     | 功能             | 返回值类型                                                 |
@@ -26,7 +28,7 @@ IBlock 对象由 [IBlockDefinition](/Vanilla/Blocks/IBlockDefinition/)，元数�
 
 # IBlockPattern
 
-IBlocks 继承自 [IBlockPattern](/Vanilla/Blocks/IBlockPattern/) 对象。 就是说，所有 IBlockPattern 对象的方法都可以用于 IBlock 对象。
+IBlocks 扩展 [IBlock模式](/Vanilla/Blocks/IBlockPattern/) 对象。 这意味着IBlock模式对象可用的所有函数也可以用于IBlock对象：
 
 * 使用ZenGetter 方法 `blocks`
 * 使用 OR 运算符
