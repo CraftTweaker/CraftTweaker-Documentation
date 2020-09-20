@@ -1,6 +1,6 @@
 # PlayerSleepInBed
 
-The PlayerSleepInBed Event is fired whenever a player sleeps.
+The PlayerSleepInBed Event is fired whenever a player sleeps. This event can control whether the player is able to sleep by setting `result`.
 
 ## Event Class
 You will need to cast the event in the function header as this class:  
@@ -23,4 +23,13 @@ The following information can be retrieved from the event:
 | `x`         | int                                       |
 | `y`         | int                                       |
 | `z`         | int                                       |
-| `player`    | [IPlayer](/Vanilla/Players/IPlayer/)       |
+| `player`    | [IPlayer](/Vanilla/Players/IPlayer/)      |
+| `result`    | string                                    |
+
+## ZenSetters
+The following can be set in the event:
+
+| ZenSetter   | Parameter Type                            |
+|-------------|-------------------------------------------|
+| `result`    | string                                    |
+
