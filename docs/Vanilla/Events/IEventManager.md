@@ -67,7 +67,7 @@ The ZenMethods would be what you'll need to call on `events`, the Event Class wo
 | onItemToss                      | [`crafttweaker.event.ItemTossEvent`](/Vanilla/Events/Events/ItemToss/)                                     |
 | onLivingDestroyBlock            | [`crafttweaker.event.LivingDestroyBlockEvent`](/Vanilla/Events/Events/LivingDestroyBlock/)                 |
 | onLivingExperienceDrop          | [`crafttweaker.event.LivingExperienceDropEvent`](/Vanilla/Events/Events/LivingExperienceDrop/)             |
-| onLivingKockBack                | [`crafttweaker.event.LivingKnockBackEvent`](/Vanilla/Events/Events/LivingKnockBack/)                       |
+| onLivingKnockBack                | [`crafttweaker.event.LivingKnockBackEvent`](/Vanilla/Events/Events/LivingKnockBack/)                       |
 | onLootingLevel                  | [`crafttweaker.event.LootingLevelEvent`](/Vanilla/Events/Events/LootingLevel/)                             |
 | onMinecartCollision             | [`crafttweaker.event.MinecartCollisionEvent`](/Vanilla/Events/Events/MinecartCollision/)                   |
 | onMinecartInteract              | [`crafttweaker.event.MinecartInteractEvent`](/Vanilla/Events/Events/MinecartInteract/)                     |
