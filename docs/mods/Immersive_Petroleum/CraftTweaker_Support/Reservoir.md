@@ -70,9 +70,9 @@ new mods.immersivepetroleum.ReservoirBuilder(<fluid:minecraft:lava>, 1000, 5000,
 
 Example:
 ```zenscript
-// mods.immersivepetroleum.ReservoirBuilder.addDimensions(boolean isBlacklist, String[] dimensionNames);
+// builderInstance.addDimensions(boolean isBlacklist, String[] dimensionNames);
 
-mods.immersivepetroleum.ReservoirBuilder.addDimensions(false, ["minecraft:overworld"]);
+builderInstance.addDimensions(false, ["minecraft:overworld"]);
 ```
 
 ## addBiomes
@@ -84,9 +84,9 @@ mods.immersivepetroleum.ReservoirBuilder.addDimensions(false, ["minecraft:overwo
 
 Example:
 ```zenscript
-// mods.immersivepetroleum.ReservoirBuilder.addBiomes(boolean isBlacklist, String[] biomeNames);
+// builderInstance.addBiomes(boolean isBlacklist, String[] biomeNames);
 
-mods.immersivepetroleum.ReservoirBuilder.addBiomes(false, ["minecraft:plains"]);
+builderInstance.addBiomes(false, ["minecraft:plains"]);
 ```
 
 ## build
@@ -100,9 +100,9 @@ The base reservoirs are lowercase as they are translated - custom ones should be
 
 Example:
 ```zenscript
-// mods.immersivepetroleum.ReservoirBuilder.build(String name);
+// builderInstance.build(String name);
 
-mods.immersivepetroleum.ReservoirBuilder.build("Example Name");
+builderInstance.build("Example Name");
 ```
 
 ---

@@ -45,9 +45,9 @@ new mods.immersivepetroleum.DistillationBuilder();
 
 Example:
 ```zenscript
-// mods.immersivepetroleum.DistillationBuilder.setOutputFluids(IFluidStack[] fluidOutputs);
+// builderInstance.setOutputFluids(IFluidStack[] fluidOutputs);
 
-mods.immersivepetroleum.DistillationBuilder.setOutputFluids([<fluid:minecraft:water> * 1]);
+builderInstance.setOutputFluids([<fluid:minecraft:water> * 1]);
 ```
 
 ## addByproduct(IItemStack item, int chance)
@@ -59,9 +59,9 @@ mods.immersivepetroleum.DistillationBuilder.setOutputFluids([<fluid:minecraft:wa
 
 Example:
 ```zenscript
-// mods.immersivepetroleum.DistillationBuilder.addByproduct(IItemStack item, int chance);
+// builderInstance.addByproduct(IItemStack item, int chance);
 
-mods.immersivepetroleum.DistillationBuilder.addByproduct(<item:minecraft:cobblestone>, 50);
+builderInstance.addByproduct(<item:minecraft:cobblestone>, 50);
 ```
 
 ## addByproduct(IItemStack item, double chance)
@@ -73,9 +73,9 @@ mods.immersivepetroleum.DistillationBuilder.addByproduct(<item:minecraft:cobbles
 
 Example:
 ```zenscript
-// mods.immersivepetroleum.DistillationBuilder.addByproduct(IItemStack item, double chance);
+// builderInstance.addByproduct(IItemStack item, double chance);
 
-mods.immersivepetroleum.DistillationBuilder.addByproduct(<item:minecraft:stone>, 0.25);
+builderInstance.addByproduct(<item:minecraft:stone>, 0.25);
 ```
 
 ## setEnergyAndTime
@@ -87,9 +87,9 @@ mods.immersivepetroleum.DistillationBuilder.addByproduct(<item:minecraft:stone>,
 
 Example:
 ```zenscript
-// mods.immersivepetroleum.DistillationBuilder.setEnergyAndTime(int fluxPerTick, int ticks);
+// builderInstance.setEnergyAndTime(int fluxPerTick, int ticks);
 
-mods.immersivepetroleum.DistillationBuilder.setEnergyAndTime(1024, 1);
+builderInstance.setEnergyAndTime(1024, 1);
 ```
 
 ## setEnergy
@@ -100,9 +100,9 @@ mods.immersivepetroleum.DistillationBuilder.setEnergyAndTime(1024, 1);
 
 Example:
 ```zenscript
-// mods.immersivepetroleum.DistillationBuilder.setEnergy(int fluxPerTick);
+// builderInstance.setEnergy(int fluxPerTick);
 
-mods.immersivepetroleum.DistillationBuilder.setEnergy(1024);
+builderInstance.setEnergy(1024);
 ```
 
 ## setTime
@@ -113,9 +113,9 @@ mods.immersivepetroleum.DistillationBuilder.setEnergy(1024);
 
 Example:
 ```zenscript
-// mods.immersivepetroleum.DistillationBuilder.setTime(int ticks);
+// builderInstance.setTime(int ticks);
 
-mods.immersivepetroleum.DistillationBuilder.setTime(1);
+builderInstance.setTime(1);
 ```
 
 ## build
@@ -126,9 +126,9 @@ mods.immersivepetroleum.DistillationBuilder.setTime(1);
 
 Example:
 ```zenscript
-// mods.immersivepetroleum.DistillationBuilder.build(String recipeName);
+// builderInstance.build(String recipeName);
 
-mods.immersivepetroleum.DistillationBuilder.build("example_name");
+builderInstance.build("example_name");
 ```
 
 ---
