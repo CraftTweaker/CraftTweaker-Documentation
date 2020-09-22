@@ -49,13 +49,16 @@ myMCTag.addFluids(液体为craftweeper.api.fluid.MCFluid[])；
 
 ### 添加项目
 
+将项目添加到这个标签，如果这不是一个可以持有项目的标签，将会失败
+
 ```zenscript
-myMCTag.addItems(items as craftbiner.api.IItemStack[]);
+myMCTag.addItems(items as craftbiner.api.item.IItemStack[]);
+myMCTag.addItems(<item:minecraft:dirt>);
 ```
 
-| 参数 | 类型                                                                  | 描述                      |
-| -- | ------------------------------------------------------------------- | ----------------------- |
-| 项目 | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)[] | No description provided |
+| 参数 | 类型                                                                  | 描述        |
+| -- | ------------------------------------------------------------------- | --------- |
+| 项目 | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)[] | 要添加到标签的项目 |
 
 
 ### 任何伤害
@@ -202,32 +205,37 @@ myMCTag.removeFluids(液体为craftweeper.api.fluid.MCFluid[])；
 
 ### 删除项目
 
+从这个标签中删除项目，如果这不是一个可以持有项目的标签，将会失败
+
 ```zenscript
 myMCTag.removeItems(items as craftbiner.api.item.IItemStack[]);
+myMCTag.removeItems(<item:minecraft:dirt>);
 ```
 
-| 参数 | 类型                                                                  | 描述                      |
-| -- | ------------------------------------------------------------------- | ----------------------- |
-| 项目 | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)[] | No description provided |
+| 参数 | 类型                                                                  | 描述         |
+| -- | ------------------------------------------------------------------- | ---------- |
+| 项目 | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)[] | 要从标签中删除的项目 |
 
 
 
 ## 参数
 
-| 名称                   | 类型                                                                             | 可获得  | 可设置   |
-| -------------------- | ------------------------------------------------------------------------------ | ---- | ----- |
-| blocks               | [craftbinstruer.api.block.MCBlock](/vanilla/api/blocks/MCBlock)                | true | false |
-| commandString #命令字符串 | 字符串[string]                                                                    | true | false |
-| 实体类型                 | [craftbinstruer.api.entity.MCEntityType](/vanilla/api/entities/MCEntityType)[] | true | false |
-| 第一个块                 | [crafttweaker.api.block.MCBlock](/vanilla/api/blocks/MCBlock)                  | true | false |
-| 第一个实体类型              | [crafttweaker.api.entity.MCEntityType](/vanilla/api/entities/MCEntityType)     | true | false |
-| 第一流体                 | [crafttweaker.api.fluid.MCFluid](/vanilla/api/fluid/MCFluid)                   | true | false |
-| 第一个项目                | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)              | true | false |
-| 流体                   | [crafttweaker.api.fluid.MCFluid](/vanilla/api/fluid/MCFluid)[]                 | true | false |
-| isBlockTag           | boolean                                                                        | true | false |
-| isEntityTypeTag      | boolean                                                                        | true | false |
-| isItemTag            | boolean                                                                        | true | false |
-| 项目                   | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)[]            | true | false |
+| 名称                   | 类型                                                                                | 可获得  | 可设置   |
+| -------------------- | --------------------------------------------------------------------------------- | ---- | ----- |
+| blocks               | [craftbinstruer.api.block.MCBlock](/vanilla/api/blocks/MCBlock)                   | true | false |
+| commandString #命令字符串 | 字符串[string]                                                                       | true | false |
+| 实体类型                 | [craftbinstruer.api.entity.MCEntityType](/vanilla/api/entities/MCEntityType)[]    | true | false |
+| 第一个块                 | [crafttweaker.api.block.MCBlock](/vanilla/api/blocks/MCBlock)                     | true | false |
+| 第一个实体类型              | [crafttweaker.api.entity.MCEntityType](/vanilla/api/entities/MCEntityType)        | true | false |
+| 第一流体                 | [crafttweaker.api.fluid.MCFluid](/vanilla/api/fluid/MCFluid)                      | true | false |
+| 第一个项目                | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)                 | true | false |
+| 流体                   | [crafttweaker.api.fluid.MCFluid](/vanilla/api/fluid/MCFluid)[]                    | true | false |
+| id                   | [craftminstrer.api.util.MCResourceLocation](/vanilla/api/util/MCResourceLocation) | true | false |
+| isBlockTag           | boolean                                                                           | true | false |
+| isEntityTypeTag      | boolean                                                                           | true | false |
+| isFluidTag           | boolean                                                                           | true | false |
+| isItemTag            | boolean                                                                           | true | false |
+| 项目                   | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)[]               | true | false |
 
 ## 运算符
 ### 或
