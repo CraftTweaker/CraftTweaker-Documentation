@@ -49,13 +49,16 @@ myMCTag.addFluids(fluidos como crafttweaker.api.fluid.MCFluid[]);
 
 ### añadir elementos
 
+Añade elementos a esta etiqueta, fallará si no es una etiqueta que puede contener elementos
+
 ```zenscript
-myMCTag.addItems(items as crafttweaker.api.item.ItemStack[]);
+myMCTag.addItems(items as crafttweaker.api.item.IItemStack[]);
+myMCTag.addItems(<item:minecraft:dirt>);
 ```
 
-| Parámetro | Tipo                                                                | Descripción                   |
-| --------- | ------------------------------------------------------------------- | ----------------------------- |
-| objetos   | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)[] | No se proporcionó descripción |
+| Parámetro | Tipo                                                                | Descripción                      |
+| --------- | ------------------------------------------------------------------- | -------------------------------- |
+| objetos   | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)[] | Elementos a añadir a la etiqueta |
 
 
 ### cualquier daño
@@ -202,32 +205,37 @@ myMCTag.removeFluids(fluidos como crafttweaker.api.fluid.MCFluid[]);
 
 ### eliminar elementos
 
+elimina elementos de esta etiqueta, fallará si no es una etiqueta que puede contener elementos
+
 ```zenscript
 myMCTag.removeItems(items as crafttweaker.api.item.ItemStack[]);
+myMCTag.removeItems(<item:minecraft:dirt>);
 ```
 
-| Parámetro | Tipo                                                                | Descripción                   |
-| --------- | ------------------------------------------------------------------- | ----------------------------- |
-| objetos   | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)[] | No se proporcionó descripción |
+| Parámetro | Tipo                                                                | Descripción                         |
+| --------- | ------------------------------------------------------------------- | ----------------------------------- |
+| objetos   | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)[] | Elementos a eliminar de la etiqueta |
 
 
 
 ## Propiedades
 
-| Nombre                 | Tipo                                                                         | Tiene Obtén | Tiene Setter |
-| ---------------------- | ---------------------------------------------------------------------------- | ----------- | ------------ |
-| bloques                | [crafttweaker.api.block.MCBlock](/vanilla/api/blocks/MCBlock)[]              | verdad      | falso        |
-| commandString          | Cadena                                                                       | verdad      | falso        |
-| tipos de entidad       | [crafttweaker.api.entity.MCEntityType](/vanilla/api/entities/MCEntityType)[] | verdad      | falso        |
-| primeroBloque          | [crafttweaker.api.block.MCBlock](/vanilla/api/blocks/MCBlock)                | verdad      | falso        |
-| Primer tipo de entidad | [tipo de entidad MCT](/vanilla/api/entities/MCEntityType)                    | verdad      | falso        |
-| primerFluido           | [crafttweaker.api.fluid.MCFluid](/vanilla/api/fluid/MCFluid)                 | verdad      | falso        |
-| primer ítem            | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)            | verdad      | falso        |
-| fluidos                | [crafttweaker.api.fluid.MCFluid](/vanilla/api/fluid/MCFluid)[]               | verdad      | falso        |
-| isBlockTag             | boolean                                                                      | verdad      | falso        |
-| isEntityTypeTag        | boolean                                                                      | verdad      | falso        |
-| isItemTag              | boolean                                                                      | verdad      | falso        |
-| objetos                | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)[]          | verdad      | falso        |
+| Nombre                 | Tipo                                                                             | Tiene Obtén | Tiene Setter |
+| ---------------------- | -------------------------------------------------------------------------------- | ----------- | ------------ |
+| bloques                | [crafttweaker.api.block.MCBlock](/vanilla/api/blocks/MCBlock)[]                  | verdad      | falso        |
+| commandString          | Cadena                                                                           | verdad      | falso        |
+| tipos de entidad       | [crafttweaker.api.entity.MCEntityType](/vanilla/api/entities/MCEntityType)[]     | verdad      | falso        |
+| primeroBloque          | [crafttweaker.api.block.MCBlock](/vanilla/api/blocks/MCBlock)                    | verdad      | falso        |
+| Primer tipo de entidad | [tipo de entidad MCT](/vanilla/api/entities/MCEntityType)                        | verdad      | falso        |
+| primerFluido           | [crafttweaker.api.fluid.MCFluid](/vanilla/api/fluid/MCFluid)                     | verdad      | falso        |
+| primer ítem            | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)                | verdad      | falso        |
+| fluidos                | [crafttweaker.api.fluid.MCFluid](/vanilla/api/fluid/MCFluid)[]                   | verdad      | falso        |
+| id                     | [crafttweaker.api.util.MCResourceLocation](/vanilla/api/util/MCResourceLocation) | verdad      | falso        |
+| isBlockTag             | boolean                                                                          | verdad      | falso        |
+| isEntityTypeTag        | boolean                                                                          | verdad      | falso        |
+| isFluidTag             | boolean                                                                          | verdad      | falso        |
+| isItemTag              | boolean                                                                          | verdad      | falso        |
+| objetos                | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)[]              | verdad      | falso        |
 
 ## Operadores
 ### O
