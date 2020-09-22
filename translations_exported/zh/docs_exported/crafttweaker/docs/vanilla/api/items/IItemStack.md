@@ -186,6 +186,19 @@ IItemStack 实现以下接口。 这意味着对这个接口可用的任何方�
 | 名称 | 字符串[string] | 堆栈的新名称。 |
 
 
+### 权重
+
+返回类型： [craftbiner.api.item.MCweightedItemStack](/vanilla/api/items/MCWeightedItemStack)
+
+```zenscript
+<item:minecraft:dirt>.重量(重量为双倍)；
+```
+
+| 参数 | 类型  | 描述                      |
+| -- | --- | ----------------------- |
+| 权重 | 双精度 | No description provided |
+
+
 ### 遭受伤害
 
 设置物品的伤害
@@ -265,6 +278,15 @@ IItemStack 实现以下接口。 这意味着对这个接口可用的任何方�
 | 参数 | 类型 | 描述  |
 | -- | -- | --- |
 | 金额 | 整数 | 新金额 |
+### MOD
+
+```zenscript
+<item:minecraft:dirt> % 整流百分比
+```
+
+| 参数  | 类型 | 描述                      |
+| --- | -- | ----------------------- |
+| 百分比 | 整数 | No description provided |
 ### 或
 
 ```zenscript
