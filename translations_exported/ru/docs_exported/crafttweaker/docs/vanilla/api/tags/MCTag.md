@@ -49,13 +49,16 @@ myMCTag.addFluids(жидкости как crafttweaker.api.fluid.MCFluid[]);
 
 ### добавить элементы
 
+Добавляет элементы в этот тег, будет провалиться, если это не тег, который может содержать элементы
+
 ```zenscript
 myMCTag.addItems(предметы как crafttweaker.api.item.IItemStack[]);
+myMCTag.addItems(<item:minecraft:dirt>);
 ```
 
-| Параметр | Тип                                                                 | Описание             |
-| -------- | ------------------------------------------------------------------- | -------------------- |
-| элементы | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)[] | Описание отсутствует |
+| Параметр | Тип                                                                 | Описание                      |
+| -------- | ------------------------------------------------------------------- | ----------------------------- |
+| элементы | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)[] | Элементы для добавления в тег |
 
 
 ### любой урон
@@ -202,32 +205,37 @@ myMCTag.removeFluids(жидкости как crafttweaker.api.fluid.MCFluid[]);
 
 ### удалить элементы
 
+удаляет элементы из этого тега, если это не тег, который может содержать элементы
+
 ```zenscript
 myMCTag.removeItems(предметы как crafttweaker.api.item.IItemStack[]);
+myMCTag.removeItems(<item:minecraft:dirt>);
 ```
 
-| Параметр | Тип                                                                 | Описание             |
-| -------- | ------------------------------------------------------------------- | -------------------- |
-| элементы | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)[] | Описание отсутствует |
+| Параметр | Тип                                                                 | Описание                      |
+| -------- | ------------------------------------------------------------------- | ----------------------------- |
+| элементы | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)[] | Элементы для удаления из тега |
 
 
 
 ## Свойства
 
-| Название            | Тип                                                                          | Имеет Getter | Имеет Setter |
-| ------------------- | ---------------------------------------------------------------------------- | ------------ | ------------ |
-| blocks              | [crafttweaker.api.block.MCBlock](/vanilla/api/blocks/MCBlock)[]              | true         | false        |
-| командная строка    | String                                                                       | true         | false        |
-| типы сущностей      | [crafttweaker.api.entity.MCEntityType](/vanilla/api/entities/MCEntityType)[] | true         | false        |
-| первый блок         | [crafttweaker.api.block.MCBlock](/vanilla/api/blocks/MCBlock)                | true         | false        |
-| первый тип сущности | [crafttweaker.api.entity.MCEntityType](/vanilla/api/entities/MCEntityType)   | true         | false        |
-| первая жидкость     | [crafttweaker.api.fluid.MCFluid](/vanilla/api/fluid/MCFluid)                 | true         | false        |
-| первый пункт        | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)            | true         | false        |
-| жидкости            | [crafttweaker.api.fluid.MCFluid](/vanilla/api/fluid/MCFluid)[]               | true         | false        |
-| isBlockTag          | boolean                                                                      | true         | false        |
-| isEntityTypeTag     | boolean                                                                      | true         | false        |
-| isItemTag           | boolean                                                                      | true         | false        |
-| элементы            | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)[]          | true         | false        |
+| Название            | Тип                                                                              | Имеет Getter | Имеет Setter |
+| ------------------- | -------------------------------------------------------------------------------- | ------------ | ------------ |
+| blocks              | [crafttweaker.api.block.MCBlock](/vanilla/api/blocks/MCBlock)[]                  | true         | false        |
+| командная строка    | String                                                                           | true         | false        |
+| типы сущностей      | [crafttweaker.api.entity.MCEntityType](/vanilla/api/entities/MCEntityType)[]     | true         | false        |
+| первый блок         | [crafttweaker.api.block.MCBlock](/vanilla/api/blocks/MCBlock)                    | true         | false        |
+| первый тип сущности | [crafttweaker.api.entity.MCEntityType](/vanilla/api/entities/MCEntityType)       | true         | false        |
+| первая жидкость     | [crafttweaker.api.fluid.MCFluid](/vanilla/api/fluid/MCFluid)                     | true         | false        |
+| первый пункт        | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)                | true         | false        |
+| жидкости            | [crafttweaker.api.fluid.MCFluid](/vanilla/api/fluid/MCFluid)[]                   | true         | false        |
+| id                  | [crafttweaker.api.util.MCResourceLocation](/vanilla/api/util/MCResourceLocation) | true         | false        |
+| isBlockTag          | boolean                                                                          | true         | false        |
+| isEntityTypeTag     | boolean                                                                          | true         | false        |
+| isFluidTag          | boolean                                                                          | true         | false        |
+| isItemTag           | boolean                                                                          | true         | false        |
+| элементы            | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)[]              | true         | false        |
 
 ## Операторы
 ### ИЛИ
