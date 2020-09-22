@@ -186,6 +186,19 @@ Rückgabetyp: [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
 | name      | String | Neuer Name des Stacks. |
 
 
+### gewicht
+
+Rückgabetyp: [crafttweaker.api.item.MCWeightedItemStack](/vanilla/api/items/MCWeightedItemStack)
+
+```zenscript
+<item:minecraft:dirt>.weight(Gewicht als Doppel);
+```
+
+| Parameter | Type   | Beschreibung                 |
+| --------- | ------ | ---------------------------- |
+| gewicht   | double | Keine Beschreibung angegeben |
+
+
 ### widerrufen Schaden
 
 Legt den Schaden des Gegenstandsstapel fest
@@ -265,6 +278,15 @@ Legt den Betrag des Artikel-Stacks fest
 | Parameter | Type | Beschreibung |
 | --------- | ---- | ------------ |
 | beträge   | int  | neuer Betrag |
+### MOD
+
+```zenscript
+<item:minecraft:dirt> % Prozentsatz als Int
+```
+
+| Parameter  | Type | Beschreibung                 |
+| ---------- | ---- | ---------------------------- |
+| prozentual | int  | Keine Beschreibung angegeben |
 ### OR (ODER)
 
 ```zenscript
