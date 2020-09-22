@@ -49,13 +49,16 @@ myMCTag.addFluids(crafttweaker.api.fluidとして流体。MCFluid[]);
 
 ### addItems
 
+このタグにアイテムを追加すると、アイテムを保持できるタグでない場合は失敗します
+
 ```zenscript
-myMCTag.addItems(crafttweaker.api.item.IItemStack[]);
+myMCTag.addItems(items as crafttweaker.api.item.IItemStack[]);
+myMCTag.addItems(<item:minecraft:dirt>);
 ```
 
-| パラメータ | タイプ                                                                 | 説明           |
-| ----- | ------------------------------------------------------------------- | ------------ |
-| 項目    | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)[] | 説明が提供されていません |
+| パラメータ | タイプ                                                                 | 説明          |
+| ----- | ------------------------------------------------------------------- | ----------- |
+| 項目    | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)[] | タグに追加するアイテム |
 
 
 ### anyDamage
@@ -202,32 +205,37 @@ myMCTag.removeFluids(crafttweaker.api.fluidとして流体。MCFluid[]);
 
 ### アイテムを削除
 
+このタグからアイテムを削除します。アイテムを保持できるタグでない場合は失敗します。
+
 ```zenscript
-myMCTag.removeItems(crafttweaker.api.item.IItemStack[]);
+myMCTag.removeItems(items as crafttweaker.api.item.IItemStack[]);
+myMCTag.removeItems(<item:minecraft:dirt>);
 ```
 
 | パラメータ | タイプ                                                                 | 説明           |
 | ----- | ------------------------------------------------------------------- | ------------ |
-| 項目    | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)[] | 説明が提供されていません |
+| 項目    | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)[] | タグから削除するアイテム |
 
 
 
 ## プロパティー
 
-| 名称              | タイプ                                                                          | ゲッターあり | セッターあり |
-| --------------- | ---------------------------------------------------------------------------- | ------ | ------ |
-| ブロック            | [crafttweaker.api.block.MCBlock](/vanilla/api/blocks/MCBlock)[]              | true   | false  |
-| commandString   | 文字列型                                                                         | true   | false  |
-| entityTypes     | [crafttweaker.api.entity.MCEntityType](/vanilla/api/entities/MCEntityType)[] | true   | false  |
-| firstBlock      | [crafttweaker.api.block.MCBlock](/vanilla/api/blocks/MCBlock)                | true   | false  |
-| firstEntityType | [crafttweaker.api.entity.MCEntityType](/vanilla/api/entities/MCEntityType)   | true   | false  |
-| firstFluid      | [crafttweaker.api.fluid.MCFluid](/vanilla/api/fluid/MCFluid)                 | true   | false  |
-| firstItem       | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)            | true   | false  |
-| <unk>           | [crafttweaker.api.fluid.MCFluid](/vanilla/api/fluid/MCFluid)[]               | true   | false  |
-| isBlockTag      | boolean型                                                                     | true   | false  |
-| isEntityTypeTag | boolean型                                                                     | true   | false  |
-| isItemTag       | boolean型                                                                     | true   | false  |
-| 項目              | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)[]          | true   | false  |
+| 名称              | タイプ                                                                              | ゲッターあり | セッターあり |
+| --------------- | -------------------------------------------------------------------------------- | ------ | ------ |
+| ブロック            | [crafttweaker.api.block.MCBlock](/vanilla/api/blocks/MCBlock)[]                  | true   | false  |
+| commandString   | 文字列型                                                                             | true   | false  |
+| entityTypes     | [crafttweaker.api.entity.MCEntityType](/vanilla/api/entities/MCEntityType)[]     | true   | false  |
+| firstBlock      | [crafttweaker.api.block.MCBlock](/vanilla/api/blocks/MCBlock)                    | true   | false  |
+| firstEntityType | [crafttweaker.api.entity.MCEntityType](/vanilla/api/entities/MCEntityType)       | true   | false  |
+| firstFluid      | [crafttweaker.api.fluid.MCFluid](/vanilla/api/fluid/MCFluid)                     | true   | false  |
+| firstItem       | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)                | true   | false  |
+| <unk>           | [crafttweaker.api.fluid.MCFluid](/vanilla/api/fluid/MCFluid)[]                   | true   | false  |
+| id              | [crafttweaker.api.util.MCResourceLocation](/vanilla/api/util/MCResourceLocation) | true   | false  |
+| isBlockTag      | boolean型                                                                         | true   | false  |
+| isEntityTypeTag | boolean型                                                                         | true   | false  |
+| isFluidTag      | boolean型                                                                         | true   | false  |
+| isItemTag       | boolean型                                                                         | true   | false  |
+| 項目              | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)[]              | true   | false  |
 
 ## 演算子
 ### OR
