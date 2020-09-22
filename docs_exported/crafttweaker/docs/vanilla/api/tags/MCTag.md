@@ -232,8 +232,10 @@ myMCTag.removeItems(<item:minecraft:dirt>);
 | firstFluid | [crafttweaker.api.fluid.MCFluid](/vanilla/api/fluid/MCFluid) | true | false |
 | firstItem | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | true | false |
 | fluids | [crafttweaker.api.fluid.MCFluid](/vanilla/api/fluid/MCFluid)[] | true | false |
+| id | [crafttweaker.api.util.MCResourceLocation](/vanilla/api/util/MCResourceLocation) | true | false |
 | isBlockTag | boolean | true | false |
 | isEntityTypeTag | boolean | true | false |
+| isFluidTag | boolean | true | false |
 | isItemTag | boolean | true | false |
 | items | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)[] | true | false |
 

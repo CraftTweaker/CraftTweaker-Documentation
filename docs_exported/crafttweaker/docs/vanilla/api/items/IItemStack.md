@@ -190,6 +190,19 @@ Return type: [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
 | name | String | New name of the stack. |
 
 
+### weight
+
+Return type: [crafttweaker.api.item.MCWeightedItemStack](/vanilla/api/items/MCWeightedItemStack)
+
+```zenscript
+<item:minecraft:dirt>.weight(weight as double);
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| weight | double | No description provided |
+
+
 ### withDamage
 
 Sets the damage of the ItemStack
@@ -269,6 +282,15 @@ Sets the amount of the ItemStack
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | amount | int | new amount |
+### MOD
+
+```zenscript
+<item:minecraft:dirt> % percentage as int
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| percentage | int | No description provided |
 ### OR
 
 ```zenscript
