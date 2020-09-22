@@ -49,13 +49,16 @@ myMCTag.addFluids(Flüssigkeiten als crafttweaker.api.fluid.MCFluid[]);
 
 ### hinzufügende Elemente
 
+Fügt Items zu diesem Tag hinzu, wird fehlschlagen, wenn dies kein Tag ist, das Items enthalten kann
+
 ```zenscript
-myMCTag.addItems(Items als crafttweaker.api.item.IItemStack[]);
+myMCTag.addItems(Gegenstände als crafttweaker.api.item.IItemStack[]);
+myMCTag.addItems(<item:minecraft:dirt>);
 ```
 
-| Parameter   | Type                                                                | Beschreibung                 |
-| ----------- | ------------------------------------------------------------------- | ---------------------------- |
-| gegenstände | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)[] | Keine Beschreibung angegeben |
+| Parameter   | Type                                                                | Beschreibung                             |
+| ----------- | ------------------------------------------------------------------- | ---------------------------------------- |
+| gegenstände | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)[] | Elemente, die zum Tag hinzugefügt werden |
 
 
 ### anfallender Schaden
@@ -202,32 +205,37 @@ myMCTag.removeFluids(Flüssigkeiten als crafttweaker.api.fluid.MCFluid[]);
 
 ### Elemente entfernen
 
+entfernt Items von diesem Tag, wird fehlschlagen, wenn dies kein Schlagwort ist, das Items enthalten kann
+
 ```zenscript
 myMCTag.removeItems(Items als crafttweaker.api.item.IItemStack[]);
+myMCTag.removeItems(<item:minecraft:dirt>);
 ```
 
-| Parameter   | Type                                                                | Beschreibung                 |
-| ----------- | ------------------------------------------------------------------- | ---------------------------- |
-| gegenstände | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)[] | Keine Beschreibung angegeben |
+| Parameter   | Type                                                                | Beschreibung            |
+| ----------- | ------------------------------------------------------------------- | ----------------------- |
+| gegenstände | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)[] | Zu entfernende Elemente |
 
 
 
 ## Eigenschaften
 
-| Name            | Type                                                                         | Hat Getter | Hat Setter |
-| --------------- | ---------------------------------------------------------------------------- | ---------- | ---------- |
-| blocks          | [crafttweaker.api.block.MCBlock](/vanilla/api/blocks/MCBlock)[]              | true       | false      |
-| Kommandozeile   | String                                                                       | true       | false      |
-| entity-Typen    | [crafttweaker.api.entity.MCEntityType](/vanilla/api/entities/MCEntityType)[] | true       | false      |
-| erster Block    | [crafttweaker.api.block.MCBlock](/vanilla/api/blocks/MCBlock)                | true       | false      |
-| firstEntityType | [crafttweaker.api.entity.MCEntityType](/vanilla/api/entities/MCEntityType)   | true       | false      |
-| erstefluid      | [crafttweaker.api.fluid.MCFluid](/vanilla/api/fluid/MCFluid)                 | true       | false      |
-| erster Artikel  | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)            | true       | false      |
-| flüssigkeiten   | [crafttweaker.api.fluid.MCFluid](/vanilla/api/fluid/MCFluid)[]               | true       | false      |
-| isBlockTag      | boolean                                                                      | true       | false      |
-| isEntityTypeTag | boolean                                                                      | true       | false      |
-| isItemTag       | boolean                                                                      | true       | false      |
-| gegenstände     | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)[]          | true       | false      |
+| Name            | Type                                                                             | Hat Getter | Hat Setter |
+| --------------- | -------------------------------------------------------------------------------- | ---------- | ---------- |
+| blocks          | [crafttweaker.api.block.MCBlock](/vanilla/api/blocks/MCBlock)[]                  | true       | false      |
+| Kommandozeile   | String                                                                           | true       | false      |
+| entity-Typen    | [crafttweaker.api.entity.MCEntityType](/vanilla/api/entities/MCEntityType)[]     | true       | false      |
+| erster Block    | [crafttweaker.api.block.MCBlock](/vanilla/api/blocks/MCBlock)                    | true       | false      |
+| firstEntityType | [crafttweaker.api.entity.MCEntityType](/vanilla/api/entities/MCEntityType)       | true       | false      |
+| erstefluid      | [crafttweaker.api.fluid.MCFluid](/vanilla/api/fluid/MCFluid)                     | true       | false      |
+| erster Artikel  | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)                | true       | false      |
+| flüssigkeiten   | [crafttweaker.api.fluid.MCFluid](/vanilla/api/fluid/MCFluid)[]                   | true       | false      |
+| id              | [crafttweaker.api.util.MCResourceLocation](/vanilla/api/util/MCResourceLocation) | true       | false      |
+| isBlockTag      | boolean                                                                          | true       | false      |
+| isEntityTypeTag | boolean                                                                          | true       | false      |
+| isFluidTag      | boolean                                                                          | true       | false      |
+| isItemTag       | boolean                                                                          | true       | false      |
+| gegenstände     | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)[]              | true       | false      |
 
 ## Operatoren
 ### OR (ODER)
