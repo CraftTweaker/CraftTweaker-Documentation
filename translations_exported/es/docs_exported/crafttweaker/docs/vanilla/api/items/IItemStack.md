@@ -186,6 +186,19 @@ Tipo de retorno: [crafttweaker.api.item.ItemStack](/vanilla/api/items/IItemStack
 | nombre    | Cadena | Nuevo nombre de la pila. |
 
 
+### peso
+
+Tipo de retorno: [crafttweaker.api.item.MCWeightedItemStack](/vanilla/api/items/MCWeightedItemStack)
+
+```zenscript
+<item:minecraft:dirt>.weight(peso doble);
+```
+
+| Parámetro | Tipo  | Descripción                   |
+| --------- | ----- | ----------------------------- |
+| peso      | doble | No se proporcionó descripción |
+
+
 ### con daño
 
 Establece el daño de la pila de objetos
@@ -265,6 +278,15 @@ Establece la cantidad de la pila de objetos
 | Parámetro | Tipo | Descripción    |
 | --------- | ---- | -------------- |
 | monto     | int  | nueva cantidad |
+### MOD
+
+```zenscript
+<item:minecraft:dirt> % porcentaje como int
+```
+
+| Parámetro  | Tipo | Descripción                   |
+| ---------- | ---- | ----------------------------- |
+| porcentaje | int  | No se proporcionó descripción |
 ### O
 
 ```zenscript
