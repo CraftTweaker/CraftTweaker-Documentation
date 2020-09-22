@@ -70,6 +70,7 @@
         - Список ингредиентов: 'ванильная/api/элементы/ингредиенты.md'
         - MCIngredientConditioned: 'ванильная/api/items/MCIngredientConditioned.md'
         - MCIngredientTransformed: 'ванильная/api/items/MCIngredientTransformed.md'
+        - MCWeightedItemStack: 'ванильная/api/items/MCWeightedItemStack.md'
       - Logger:
         - ILogger: 'vanilla/api/logger/ILogger.md'
       - Менеджеры:
