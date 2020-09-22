@@ -186,6 +186,19 @@ ItemStackに表示される名前を設定します。
 | 名前    | 文字列型 | stackの新しい名前 |
 
 
+### 重量
+
+戻り値の型: [crafttweaker.api.item.MCWeightedItemStack](/vanilla/api/items/MCWeightedItemStack)
+
+```zenscript
+<item:minecraft:dirt>.weight(weight as double);
+```
+
+| パラメータ | タイプ    | 説明           |
+| ----- | ------ | ------------ |
+| 重量    | double | 説明が提供されていません |
+
+
 ### withDamage
 
 ItemStackのダメージ(耐久値)を設定します。
@@ -265,6 +278,15 @@ ItemStackの数量(スタック数)を設定します。
 | パラメータ | タイプ | 説明    |
 | ----- | --- | ----- |
 | 金額    | int | 新しい金額 |
+### MOD
+
+```zenscript
+<item:minecraft:dirt> % percentage as int
+```
+
+| パラメータ | タイプ | 説明           |
+| ----- | --- | ------------ |
+| パーセント | int | 説明が提供されていません |
 ### OR
 
 ```zenscript
