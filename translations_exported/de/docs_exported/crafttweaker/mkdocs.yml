@@ -70,6 +70,7 @@
         - Zutatenliste: 'Vanilla/api/items/ZutatList.md'
         - MCIngredientConditioned: 'vanilla/api/items/MCIngredientConditioned.md'
         - MCIngredientTransformiert: 'Vanilla/api/items/MCIngredientTransformed.md'
+        - MCWeightedItemStack: 'Vanilla/api/items/MCWeightedItemStack.md'
       - Logger:
         - ILogger: 'vanilla/api/logger/ILogger.md'
       - Manager:
