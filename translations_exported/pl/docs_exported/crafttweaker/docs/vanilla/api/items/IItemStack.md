@@ -186,6 +186,19 @@ Typ zwrotu: [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
 | Nazwa    | Ciąg znaków | Nowa nazwa stosu. |
 
 
+### Waga
+
+Typ zwrotu: [crafttweaker.api.item.MCWeweightedItemStack](/vanilla/api/items/MCWeightedItemStack)
+
+```zenscript
+<item:minecraft:dirt>.weight (masa jako podwojone);
+```
+
+| Parametr | Typ      | Opis             |
+| -------- | -------- | ---------------- |
+| Waga     | podwójne | Nie podano opisu |
+
+
 ### bez obrażeń
 
 Ustawia obrażenia PrzedmiotStack
@@ -265,6 +278,15 @@ Ustawia ilość PrzedmiotStack
 | Parametr | Typ    | Opis       |
 | -------- | ------ | ---------- |
 | kwota    | odcień | nowa kwota |
+### MOD
+
+```zenscript
+<item:minecraft:dirt> % procent jako int
+```
+
+| Parametr | Typ    | Opis             |
+| -------- | ------ | ---------------- |
+| procent  | odcień | Nie podano opisu |
 ### LUB
 
 ```zenscript
