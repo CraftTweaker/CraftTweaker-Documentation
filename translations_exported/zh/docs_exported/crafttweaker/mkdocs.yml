@@ -70,6 +70,7 @@
         - 成分列表: 'vanilla/api/items/IngredientList.md'
         - MCIngredientCondition: 'vanilla/api/items/MCIngredientConditioned.md'
         - MCIngredientTransformed: 'vanilla/api/items/MCIngredientTransformed.md'
+        - MCweightedItemStack: 'vanilla/api/items/MCweightedItemStack.md'
       - Logger:
         - ILogger: 'vanilla/api/logger/ILogger.md'
       - 经理：
