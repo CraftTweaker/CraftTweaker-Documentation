@@ -77,7 +77,8 @@ Los métodos ZenMethods serían lo que necesitarás llamar a `eventos`, la Clase
 | en MinecartInteracto                 | [`crafttweaker.event.MinecartInteractEvento`](/Vanilla/Events/Events/MinecartInteract/)                   |
 | onMobGriefing                        | [`crafttweaker.event.MobGriefingEvent`](/Vanilla/Events/Events/MobGriefing/)                              |
 | en Avance del Jugador                | [`crafttweaker.event.PlayerAdvancement`](/Vanilla/Events/Events/PlayerAdvancement/)                       |
-| en Reparacion de Jugador             | [`crafttweaker.event.PlayerAnvilRepair`](/Vanilla/Events/Events/PlayerAnvilRepair/)                       |
+| en Reparacion de Jugador             | [`crafttweaker.event.PlayerAnvilRepairEvent`](/Vanilla/Events/Events/PlayerAnvilRepair/)                  |
+| onPlayerAnvilUpdate                  | [`crafttweaker.event.PlayerAnvilUpdateEvent`](/Vanilla/Events/Events/PlayerAnvilUpdate/)                  |
 | en la entidad de ataque              | [`crafttweaker.event.PlayerAttackEntityEvento`](/Vanilla/Events/Events/PlayerAttackEntity/)               |
 | onBonemeal                           | [`crafttweaker.event.PlayerBonemealEvento`](/Vanilla/Events/Events/PlayerBonemeal/)                       |
 | en la velocidad de descanso          | [`crafttweaker.event.PlayerBreakSpeed`](/Vanilla/Events/Events/PlayerBreakSpeed/)                         |
