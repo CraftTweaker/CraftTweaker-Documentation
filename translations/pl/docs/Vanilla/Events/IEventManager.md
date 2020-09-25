@@ -77,7 +77,8 @@ ZenMethods będą tym, do czego będziesz musiał dzwonić `wydarzeń`, Klasa Wy
 | onMinecartInteract                       | [`crafttweaker.event.MinecartInteractEvent`](/Vanilla/Events/Events/MinecartInteract/)                                 |
 | onMobGriefing                            | [`Zdarzenie MobGriefing`](/Vanilla/Events/Events/MobGriefing/)                                                         |
 | onPlayerAdvancement                      | [`crafttweaker.event.Gracza Advancement`](/Vanilla/Events/Events/PlayerAdvancement/)                                   |
-| onPlayerAnvilRepair                      | [`crafttweaker.event.PlayerAnvilRepair`](/Vanilla/Events/Events/PlayerAnvilRepair/)                                    |
+| onPlayerAnvilRepair                      | [`Zdarzenie gracza AnvilRepair`](/Vanilla/Events/Events/PlayerAnvilRepair/)                                            |
+| onPlayerAnvilUpdate                      | [`[PLACEHOLDER] crafttweaker.event.PlayerAnvilUpdateEvent`](/Vanilla/Events/Events/PlayerAnvilUpdate/)                 |
 | onPlayerAttackEntity                     | [`Zdarzenie Zdarzenia Gracza Ataku`](/Vanilla/Events/Events/PlayerAttackEntity/)                                       |
 | [PLACEHOLDER] onPlayerBonemeal           | [`crafttweaker.event.PlayerBonemealEvent`](/Vanilla/Events/Events/PlayerBonemeal/)                                     |
 | Szybkość łamania gracza                  | [`crafttweaker.event.PlayerBreakSpeed`](/Vanilla/Events/Events/PlayerBreakSpeed/)                                      |
