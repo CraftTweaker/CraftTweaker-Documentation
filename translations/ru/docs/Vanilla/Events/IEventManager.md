@@ -77,7 +77,8 @@ events.onPlayerCrafted(function(event as crafttweaker.event.PlayerCraftedEvent){
 | Взаимодействие на Minecartact                     | [`crafttweaker.event.MinecartInteractEvent`](/Vanilla/Events/Events/MinecartInteract/)                   |
 | onMobGriefing                                     | [`crafttweaker.event.MobGriefingEvent`](/Vanilla/Events/Events/MobGriefing/)                             |
 | прогресс игрока                                   | [`crafttweaker.event.Player.Advancement`](/Vanilla/Events/Events/PlayerAdvancement/)                     |
-| Восстановление Игрового Аудиа                     | [`crafttweaker.event.PlayerAnvilRepair`](/Vanilla/Events/Events/PlayerAnvilRepair/)                      |
+| Восстановление Игрового Аудиа                     | [`crafttweaker.event.PlayerAnvilRepairEvent`](/Vanilla/Events/Events/PlayerAnvilRepair/)                 |
+| onPlayerAnvilUpdate                               | [`crafttweaker.event.PlayerAnvilUpdateEvent`](/Vanilla/Events/Events/PlayerAnvilUpdate/)                 |
 | атакующий Игрок                                   | [`crafttweaker.event.PlayerAttackEntityEvent`](/Vanilla/Events/Events/PlayerAttackEntity/)               |
 | onPlayerBonemeal                                  | [`crafttweaker.event.PlayerBonemealEvent`](/Vanilla/Events/Events/PlayerBonemeal/)                       |
 | скорость разрыва игроков                          | [`crafttweaker.event.PlayerBreakSpeed`](/Vanilla/Events/Events/PlayerBreakSpeed/)                        |
