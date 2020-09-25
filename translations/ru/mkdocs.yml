@@ -61,14 +61,14 @@ nav:
       - IContainer: 'Vanilla/Container/IContainer.md'
     - Вкладки творческого режима:
       - ICreativeTab: 'Vanilla/CreativeTabs/ICreativeTab.md'
-    - Чары:
-      - IEnchantment: 'Vanilla/Enchantments/IEnchantment.md'
-      - IEnchantmentDefinition: 'Vanilla/Enchantments/IEnchantmentDefinition.md'
     - Данные:
       - IData: 'Vanilla/Data/IData.md'
       - DataMap: 'Vanilla/Data/DataMap.md'
     - Урон:
       - IDamageSource: 'Vanilla/Damage/IDamageSource.md'
+    - Чары:
+      - IEnchantment: 'Vanilla/Enchantments/IEnchantment.md'
+      - IEnchantmentDefinition: 'Vanilla/Enchantments/IEnchantmentDefinition.md'
     - Сущности:
       - Атрибуты:
         - IEntityAttribute: 'Vanilla/Entities/Attributes/IEntityAttribute.md'
@@ -141,6 +141,7 @@ nav:
         - MobGriefingEvent: 'Vanilla/Events/Events/MobGriefing.md'
         - PlayerAdvancementEvent: 'Vanilla/Events/Events/PlayerAdvancement.md'
         - PlayerAnvilRepairEvent: 'Vanilla/Events/Events/PlayerAnvilRepair.md'
+        - PlayerAnvilUpdateEvent: 'Vanilla/Events/PlayerAnvilUpdate.md'
         - PlayerAttackEntityEvent: 'Vanilla/Events/Events/PlayerAttackEntity.md'
         - PlayerBonemealEvent: 'Vanilla/Events/Events/PlayerBonemeal.md'
         - PlayerBreakSpeedEvent: 'Vanilla/Events/Events/PlayerBreakSpeed.md'
