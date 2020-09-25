@@ -18,7 +18,7 @@ Zengetter sind für das Abrufen von Informationen. Normalerweise entweder einer 
 
 | ZenGetter     | Was macht es                                                                                                            | Rückgabetyp                                | Auslastung             |
 | ------------- | ----------------------------------------------------------------------------------------------------------------------- | ------------------------------------------ | ---------------------- |
-| id            | gibt die Spieler-Id zurück                                                                                              | string                                     | `player.id`            |
+| uuuid         | gibt die UUID des Spielers zurück                                                                                       | string                                     | `player.uuid`          |
 | name          | gibt den Spielernamen zurück                                                                                            | string                                     | `player.name`          |
 | daten         | gibt die Daten des Spielers zurück                                                                                      | [IData](/Vanilla/Data/IData/)              | `player.data`          |
 | xp            | gibt das Erfahrungslevel des Spielers zurück. Kann auch benutzt werden, um das Erfahrungslevel eines Spielers zu setzen | int                                        | `player.xp`            |
@@ -35,7 +35,7 @@ Zengetter sind für das Abrufen von Informationen. Normalerweise entweder einer 
 
 ## ZenMethoden
 
-Zenmethoden sind für andere Dinge zu tun, in diesem Fall mit einem Spieler.
+ZenMethods sind für Dinge mit anderen Dingen, in diesem Fall mit einem Spieler.
 
 | ZenMethode               | Parametertyp(e)                          | Was macht es                                                                              | Beispiel                                     |
 | ------------------------ | ---------------------------------------- | ----------------------------------------------------------------------------------------- | -------------------------------------------- |
@@ -47,3 +47,5 @@ Zenmethoden sind für andere Dinge zu tun, in diesem Fall mit einem Spieler.
 | give(Artikel)            | [IItemStack](/Vanilla/Items/IItemStack/) | Gib dem Spieler den angegebenen Gegenstand. Artikel ist ein IItemStack.                   | `player.give(<minecraft:gold_ingot>)`  |
 | teleport(position)       | [Position3f](/Vanilla/Utils/Position3f/) | Teleportiert den Spieler zur angegebenen Position in der gleichen Dimension               | `player.teleport(position)`                  |
 | executeCommand(raw)      | string                                   | Führt den Befehl als Spieler aus                                                          | `player.executeCommand("kill")`              |
+| dropItem(dropAll)        | bool                                     | Löscht den aktuellen Gegenstand (oder den gesamten Stapel), den der Spieler hält.         | `player.dropItem(falsch)`                    |
+| dropItem(itemToDrop)     | [IItemStack](/Vanilla/Items/IItemStack/) | Löscht den angegebenen Gegenstand an die Position des Spielers.                           | `player.dropItem(<minecraft:dirt>)`    |
