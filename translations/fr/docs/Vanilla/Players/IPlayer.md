@@ -18,7 +18,7 @@ Les Zengetters sont pour la récupération des informations. Habituellement, soi
 
 | Zengetter              | Que fait-il                                                                                                            | Type de retour                             | Usage                          |
 | ---------------------- | ---------------------------------------------------------------------------------------------------------------------- | ------------------------------------------ | ------------------------------ |
-| id                     | retourne l'id du joueur                                                                                                | chaîne de caractères                       | `joueur.id`                    |
+| uuid                   | renvoie l'UUID du joueur                                                                                               | chaîne de caractères                       | `joueur.uid`                   |
 | Nom                    | renvoie le nom du joueur                                                                                               | chaîne de caractères                       | `nom.joueur`                   |
 | données                | retourne les données du joueur                                                                                         | [IData](/Vanilla/Data/IData/)              | `données.données`              |
 | xp                     | retourne le niveau d'expérience du joueur. Peut également être utilisé pour définir le niveau d'expérience d'un joueur | Indice                                     | `player.xp`                    |
@@ -35,15 +35,17 @@ Les Zengetters sont pour la récupération des informations. Habituellement, soi
 
 ## Méthodes Zen
 
-Zenmethods sont pour faire des choses avec d'autres choses, dans ce cas avec un joueur.
+ZenMethods sont pour faire des choses avec d'autres choses, dans ce cas avec un joueur.
 
-| Méthode Zen                        | Type(s) de paramètre                     | Que fait-il                                                       | Exemple                                     |
-| ---------------------------------- | ---------------------------------------- | ----------------------------------------------------------------- | ------------------------------------------- |
-| Enlever XP(XPtoRemove)             | Indice                                   | Supprime les niveaux d'expérience donnés au joueur.               | `joueur.enlève XP(1)`                       |
-| mise à jour (IData)                | [IData](/Vanilla/Data/IData/)            | Met à jour les données du joueur vers l'IData fourni.             |                                             |
-| sendChat(Message)                  | chaîne OU message IChatMessage           | Envoie au joueur un message de chat.                              | `player.sendChat("Bonjour mon vieil ami")`  |
-| format@@0 getHotbarStack(index)    | Indice                                   | Renvoie l'objet à l'index donné dans la barre d'action du joueur. | `player.getHotbarStack(3)`                  |
-| format@@0 getInventoryStack(index) | Indice                                   | Renvoie l'objet à l'index donné dans l'inventaire du joueur.      | `player.getInventoryStack(3)`               |
-| cadeau(objet)                      | [IItemStack](/Vanilla/Items/IItemStack/) | Donner au joueur l'objet fourni. L'élément est une IItemStack.    | `player.give(<minecraft:gold_ingot>)` |
-| téléportation (position)           | [Position3f](/Vanilla/Utils/Position3f/) | Téléporte le joueur à la position fournie dans la même dimension  | `player.teleport(position)`                 |
-| executeCommand(cru)                | chaîne de caractères                     | Exécute la commande en tant que joueur                            | `player.executeCommand("kill")`             |
+| Méthode Zen                           | Type(s) de paramètre                     | Que fait-il                                                       | Exemple                                     |
+| ------------------------------------- | ---------------------------------------- | ----------------------------------------------------------------- | ------------------------------------------- |
+| Enlever XP(XPtoRemove)                | Indice                                   | Supprime les niveaux d'expérience donnés au joueur.               | `joueur.enlève XP(1)`                       |
+| mise à jour (IData)                   | [IData](/Vanilla/Data/IData/)            | Met à jour les données du joueur vers l'IData fourni.             |                                             |
+| sendChat(Message)                     | chaîne OU message IChatMessage           | Envoie au joueur un message de chat.                              | `player.sendChat("Bonjour mon vieil ami")`  |
+| format@@0 getHotbarStack(index)       | Indice                                   | Renvoie l'objet à l'index donné dans la barre d'action du joueur. | `player.getHotbarStack(3)`                  |
+| format@@0 getInventoryStack(index)    | Indice                                   | Renvoie l'objet à l'index donné dans l'inventaire du joueur.      | `player.getInventoryStack(3)`               |
+| cadeau(objet)                         | [IItemStack](/Vanilla/Items/IItemStack/) | Donner au joueur l'objet fourni. L'élément est une IItemStack.    | `player.give(<minecraft:gold_ingot>)` |
+| téléportation (position)              | [Position3f](/Vanilla/Utils/Position3f/) | Téléporte le joueur à la position fournie dans la même dimension  | `player.teleport(position)`                 |
+| executeCommand(cru)                   | chaîne de caractères                     | Exécute la commande en tant que joueur                            | `player.executeCommand("kill")`             |
+| format@@0 dropItem(dropAll)           | booléen                                  | Lâche l'objet actuel (ou toute la pile) que le joueur possède.    | `format@@0 player.dropItem(false)`          |
+| Déposer l'élément (élément à glisser) | [IItemStack](/Vanilla/Items/IItemStack/) | Lâche l'objet fourni à la position du joueur.                     | `player.dropItem(<minecraft:dirt>)`   |
