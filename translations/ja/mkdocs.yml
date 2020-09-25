@@ -61,14 +61,14 @@ nav:
       - IContainer: 'Vanilla/Container/IContainer.md'
     - クリエイティブタブ:
       - ICreativeTab: 'Vanilla/CreativeTabs/ICreativeTab.md'
-    - エンチャント:
-      - IEnchantment: 'Vanilla/Enchantments/IEnchantment.md'
-      - IEnchantmentDefinition: 'Vanilla/Enchantments/IEnchantmentDefinition.md'
     - データ:
       - IData: 'Vanilla/Data/IData.md'
       - DataMap: 'Vanilla/Data/DataMap.md'
     - ダメージ:
       - IDamageSource: 'Vanilla/Damage/IDamageSource.md'
+    - エンチャント:
+      - IEnchantment: 'Vanilla/Enchantments/IEnchantment.md'
+      - IEnchantmentDefinition: 'Vanilla/Enchantments/IEnchantmentDefinition.md'
     - エンティティ:
       - 属性:
         - IEntityAttribute: 'Vanilla/Entities/Attributes/IEntityAttribute.md'
@@ -141,6 +141,7 @@ nav:
         - MobGriefingイベント: 'Vanilla/Events/Events/MobGriefing.md'
         - PlayerAdvancementイベント: 'Vanilla/Events/Events/PlayerAdvancement.md'
         - PlayerAnvilRepairイベント: 'Vanilla/Events/Events/PlayerAnvilRepair.md'
+        - PlayerAnvilUpdateイベント: 'Vanilla/Events/Events/PlayerAnvilUpdate.md'
         - PlayerAttackEntityイベント: 'Vanilla/Events/Events/PlayerAttackEntity.md'
         - PlayerBonemealイベント: 'Vanilla/Events/Events/PlayerBonemeal.md'
         - PlayerBreakSpeedイベント: 'Vanilla/Events/Events/PlayerBreakSpeed.md'
