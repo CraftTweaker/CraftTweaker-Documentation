@@ -159,3 +159,10 @@ nav:
         - 摩尔斯顿：“mods/StoneAge/MillstoneManager.md”
         - Tanning Rack：“mods/StoneAge/TanningRackManager.md”
         - 树木Stump: 'mods/StoneAge/TreeStumpManager.md'
+    - 沉浸式石油：
+      - 沉浸式石油：“mods/Immersive_Petroleum/Immersive_Petroleum.md”
+      - CraftTinfull 支持：
+        - 蒸馏："mods/Immersive_Petroleum/CraftTinstrer_Support/ Distillation.md"
+        - 燃料注册：“mods/Immersive_Petroleum/CraftTinstrer_Support/FuelRegistration.md”
+        - 卢比肯特：“mods/Immersive_Petroleum/CraftTinstrer_Support/Lubricant.md”
+        - 储备：“mods/Immersive_Petroleum/CraftTinstrer_Support/Reservoir.md”
