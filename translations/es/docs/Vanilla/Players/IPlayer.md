@@ -18,7 +18,7 @@ Los zengetters son para recuperar información. Normalmente se asigna a una vari
 
 | Zengetter                    | ¿Qué hace                                                                                                                 | Tipo de devolución                         | Uso                                    |
 | ---------------------------- | ------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------ | -------------------------------------- |
-| id                           | devuelve el id del jugador                                                                                                | cadena                                     | `jugador.id`                           |
+| uuid                         | devuelve el UUID del jugador                                                                                              | cadena                                     | `player.uid`                           |
 | nombre                       | devuelve el nombre del jugador                                                                                            | cadena                                     | `jugador.nombre`                       |
 | datos                        | devuelve los datos del jugador                                                                                            | [IData](/Vanilla/Data/IData/)              | `jugador.datos`                        |
 | xp                           | devuelve el nivel de experiencia del jugador. También se puede usar para establecer el nivel de experiencia de un jugador | int                                        | `jugador.xp`                           |
@@ -35,7 +35,7 @@ Los zengetters son para recuperar información. Normalmente se asigna a una vari
 
 ## Métodos
 
-Zenmethods son para hacer cosas con otras cosas, en este caso con un jugador.
+ZenMethods son para hacer cosas con otras cosas, en este caso con un jugador.
 
 | Método                      | Tipo(s) de parámetro                      | ¿Qué hace                                                                        | Ejemplo                                      |
 | --------------------------- | ----------------------------------------- | -------------------------------------------------------------------------------- | -------------------------------------------- |
@@ -47,3 +47,5 @@ Zenmethods son para hacer cosas con otras cosas, en este caso con un jugador.
 | dar(elemento)               | [IItemStack](/Vanilla/Items/IItemStack/)  | Dale al jugador el objeto proporcionado. El objeto es un ItemStack.              | `jugador.give(<minecraft:gold_ingot>)` |
 | teleport(posición)          | [Posición 3f](/Vanilla/Utils/Position3f/) | Teletransporta al jugador a la posición proporcionada en la misma dimensión      | `jugador.teleport(posición)`                 |
 | executeCommand(raw)         | cadena                                    | Ejecuta el comando como el reproductor                                           | `player.executeCommand("kill")`              |
+| dropItem(dropAll)           | pluma                                     | Elimina el objeto actual (o toda la pila) que el jugador está sosteniendo.       | `jugador.dropItem(falso)`                    |
+| dropItem(itemToDrop)        | [IItemStack](/Vanilla/Items/IItemStack/)  | Soltar el objeto proporcionado en la posición del jugador.                       | `player.dropItem(<minecraft:dirt>)`    |
