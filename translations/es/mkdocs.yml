@@ -159,3 +159,10 @@ nav:
         - Piedra Milla: 'mods/StoneAge/MillstoneManager.md'
         - Tanning Rack: 'mods/StoneAge/TanningRackManager.md'
         - Paso del árbol: 'mods/StoneAge/TreeStumpManager.md'
+    - Gimnasio Inmersivo:
+      - Animolímetro Inmersivo: 'mods/Inmersive_Petroleum/Inmersive_Petroleum.md'
+      - Soporte de CraftTweaker:
+        - Distillo: 'mods/Immersive_Petroleum/CraftTweaker_Support/Distillation.md'
+        - Registro de combustible: 'mods/Inmersive_Petroleum/CraftTweaker_Support/FuelRegistration.md'
+        - Lubricante: 'mods/Inmersive_Petroleum/CraftTweaker_Support/Lubricant.md'
+        - Reserva: 'mods/Inmersive_Petroleum/CraftTweaker_Support/Reservoir.md'
