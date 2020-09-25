@@ -61,14 +61,14 @@ nav:
       - IContainer: 'Vanilla/Container/IContainer.md'
     - Zakładki w trybie kreatywnym:
       - ICreativeTab: 'Vanilla/CreativeTabs/ICreativeTab.md'
-    - Zaklęcia:
-      - IEnchantment: 'Vanilla/Enchantments/IEnchantment.md'
-      - IEnchantmentDefinition: 'Vanilla/Enchantments/IEnchantmentDefinition.md'
     - Dane:
       - IData: 'Vanilla/Data/IData.md'
       - DataMap: 'Vanilla/Data/DataMap.md'
     - Obrażenia:
       - IDamageSource: 'Vanilla/Damage/IDamageSource.md'
+    - Zaklęcia:
+      - IEnchantment: 'Vanilla/Enchantments/IEnchantment.md'
+      - IEnchantmentDefinition: 'Vanilla/Enchantments/IEnchantmentDefinition.md'
     - Entity:
       - Atrybuty:
         - IEntityAttribute: 'Vanilla/Entities/Attributes/IEntityAttribute.md'
@@ -141,6 +141,7 @@ nav:
         - MobGriefingEvent: 'Vanilla/Events/Events/MobGriefing.md'
         - PlayerAdvancementEvent: 'Vanilla/Events/Events/PlayerAdvancement.md'
         - PlayerAnvilRepairEvent: 'Vanilla/Events/Events/PlayerAnvilRepair.md'
+        - PlayerAnvilUpdateEvent: 'Vanilla/Events/Events/PlayerAnvilUpdate.md'
         - PlayerAttackEntityEvent: 'Vanilla/Events/Events/PlayerAttackEntity.md'
         - PlayerBonemealEvent: 'Vanilla/Events/Events/PlayerBonemeal.md'
         - PlayerBreakSpeedEvent: 'Vanilla/Events/Events/PlayerBreakSpeed.md'
