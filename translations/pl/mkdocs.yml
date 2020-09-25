@@ -159,3 +159,10 @@ nav:
         - Kamień milowy: 'mods/StoneAge/MillstoneManager.md'
         - Garbowanie Rack: 'mods/StoneAge/TanningRackManager.md'
         - Gniazdo drzewa: 'mods/StoneAge/TreeStumpManager.md'
+    - Niska ropa naftowa:
+      - Niskolizyjna ropa naftowa: 'mods/Immersive_Petroleum/Immersive_Petroleum.md'
+      - Wsparcie CraftTweakera:
+        - Destylacja: 'mods/Immersive_Petroleum/CraftTweaker_Support/Distillation.md'
+        - Rejestracja paliw: 'mods/Immersive_Petroleum/CraftTweaker_Support/FuelRegistration.md'
+        - Smar: 'mods/Immersive_Petroleum/CraftTweaker_Support/Lubricant.md'
+        - Zbiornik: 'mods/Immersive_Petroleum/CraftTweaker_Support/Reservoir.md'
