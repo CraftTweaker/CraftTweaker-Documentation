@@ -86,5 +86,3 @@ Returns a bool.
 ```zenscript
 defObj.isToolEffective(String type, IBlockState state);
 ```
-
-```
