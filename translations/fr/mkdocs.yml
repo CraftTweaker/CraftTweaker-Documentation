@@ -61,14 +61,14 @@ nav:
       - IConteneur : 'Vanilla/Container/IContainer.md'
     - Onglets Créatifs :
       - ICreativeTab: 'Vanilla/CreativeTabs/ICreativeTab.md'
-    - Enchantements :
-      - IEnchantement : 'Vanilla/Enchantments/IEnchantment.md'
-      - IEnchantmentDefinition: 'Vanilla/Enchantments/IEnchantmentDefinition.md'
     - Données:
       - IData : 'Vanilla/Data/IData.md'
       - DataMap: 'Vanilla/Data/DataMap.md'
     - Dommages :
       - IDamageSource: 'Vanilla/Damage/IDamageSource.md'
+    - Enchantements :
+      - IEnchantement : 'Vanilla/Enchantments/IEnchantment.md'
+      - IEnchantmentDefinition: 'Vanilla/Enchantments/IEnchantmentDefinition.md'
     - Entités :
       - Attributs :
         - Attribut IEntity: 'Vanilla/Entities/Attributes/IEntityAttribute.md'
@@ -141,6 +141,7 @@ nav:
         - Événement MobGriefing: 'Vanilla/Events/Events/MobGriefing.md'
         - Evénement PlayerAdvancement: 'Vanilla/Events/Events/PlayerAdvancement.md'
         - Événement PlayerAnvilRepair: 'Vanilla/Events/Events/PlayerAnvilRepair.md'
+        - PlayerAnvilUpdateEvent : 'Vanilla/Events/Events/PlayerAnvilUpdate.md'
         - Evénement PlayerAttackEntity: 'Vanilla/Events/Events/PlayerAttackEntity.md'
         - PlayerBonemealEvent : 'Vanilla/Events/Events/PlayerBonemeal.md'
         - PlayerBreakSpeedEvent : 'Vanilla/Events/Events/PlayerBreakSpeed.md'
