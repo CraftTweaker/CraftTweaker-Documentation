@@ -79,3 +79,12 @@ Returns an [IBlockState](/Vanilla/Blocks/IBlockState/).
 ```zenscript
 defObj.getStateFromMeta(int meta);
 ```
+
+### Check if the block is effective for the tool
+Uses a string and a [IBlockState](/Vanilla/Blocks/IBlockState/).  
+Returns a bool.
+```zenscript
+defObj.isToolEffective(String type, IBlockState state);
+```
+
+```
