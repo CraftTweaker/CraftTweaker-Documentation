@@ -77,7 +77,8 @@ Les méthodes Zen seraient ce dont vous aurez besoin pour appeler les `événeme
 | sur MinecartInteract                   | [`Événement MinecartInteractEvent`](/Vanilla/Events/Events/MinecartInteract/)                                    |
 | onMobGriefing                          | [`Événement MobGriefingEvent`](/Vanilla/Events/Events/MobGriefing/)                                              |
 | format@@0 onPlayerAdvancement          | [`format@@0 crafttweaker.event.PlayerAdvancement`](/Vanilla/Events/Events/PlayerAdvancement/)                    |
-| format@@0 onPlayerAnvilRepair          | [`format@@0 crafttweaker.event.PlayerAnvilRepair`](/Vanilla/Events/Events/PlayerAnvilRepair/)                    |
+| format@@0 onPlayerAnvilRepair          | [`format@@0 crafttweaker.event.PlayerAnvilRepairEvent`](/Vanilla/Events/Events/PlayerAnvilRepair/)               |
+| onPlayerAnvilUpdate                    | [`format@@0 crafttweaker.event.PlayerAnvilUpdateEvent`](/Vanilla/Events/Events/PlayerAnvilUpdate/)               |
 | onPlayerAttackEntity                   | [`format@@0 crafttweaker.event.PlayerAttackEntityEvent`](/Vanilla/Events/Events/PlayerAttackEntity/)             |
 | farine d'os de joueur                  | [`format@@0 crafttweaker.event.PlayerBonemealEvent`](/Vanilla/Events/Events/PlayerBonemeal/)                     |
 | format@@0 onPlayerBreakSpeed           | [`format@@0 crafttweaker.event.PlayerBreakSpeed`](/Vanilla/Events/Events/PlayerBreakSpeed/)                      |
