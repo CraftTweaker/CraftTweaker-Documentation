@@ -18,7 +18,7 @@ Zengetters służy do pobierania informacji. Zwykle przypisany do zmiennej lub u
 
 | Zengetter         | Co to robi                                                                                            | Typ zwrotu                                 | Użycie                |
 | ----------------- | ----------------------------------------------------------------------------------------------------- | ------------------------------------------ | --------------------- |
-| id                | zwraca id gracza                                                                                      | ciąg znaków                                | `ID gracza`           |
+| uuuid             | zwraca UUID gracza                                                                                    | ciąg znaków                                | `ID gracza`           |
 | Nazwa             | zwraca nazwę gracza                                                                                   | ciąg znaków                                | `Nazwa gracza`        |
 | dane              | zwraca dane gracza                                                                                    | [IData](/Vanilla/Data/IData/)              | `Dane gracza`         |
 | xp                | zwraca poziom doświadczenia gracza. Może być również użyty do ustawiania poziomu doświadczenia gracza | odcień                                     | `gracz.xp`            |
@@ -35,15 +35,17 @@ Zengetters służy do pobierania informacji. Zwykle przypisany do zmiennej lub u
 
 ## Metody ZenMethods
 
-Zenmethods to robić coś z innymi rzeczami, w tym przypadku z graczem.
+ZenMethods mają robić rzeczy z innymi rzeczami, w tym przypadku z graczem.
 
-| Metoda ZenMethod         | Typ(y) parametru                         | Co to robi                                                     | Przykład                                                 |
-| ------------------------ | ---------------------------------------- | -------------------------------------------------------------- | -------------------------------------------------------- |
-| removeXP(XPtoRemove)     | odcień                                   | Usuwa dany poziom doświadczenia z gracza.                      | `usuń XP(1)`                                             |
-| aktualizacja(IData)      | [IData](/Vanilla/Data/IData/)            | Aktualizuje dane gracza do podanego IData.                     |                                                          |
-| SendChat(wiadomość)      | ciąg znaków lub IchatMessage             | Wysyła graczowi wiadomość czatu.                               | `player.sendChat ("Witaj mojemu staremu przyjacielowi")` |
-| getHotbarStack(index)    | odcień                                   | Zwraca przedmiot w danym indeksie w pasku dostępu gracza.      | `gracz.getHotbarStack(3)`                                |
-| getInventoryStack(index) | odcień                                   | Zwraca przedmiot w danym indeksie w ekwipunku gracza.          | `gracz.getInventoryStack(3)`                             |
-| prezent(przedmiot)       | [IItemStack](/Vanilla/Items/IItemStack/) | Daj graczowi dostarczony przedmiot. Przedmiot jest IItemStack. | `gracz.give(<minecraft:gold_ingot>)`               |
-| teleportacja (pozycja)   | [Pozycja3f](/Vanilla/Utils/Position3f/)  | Teleportuje gracza do podanej pozycji w tym samym wymiarze     | `gracz.teleport(pozycja)`                                |
-| wykonaj polecenie (raw)  | ciąg znaków                              | Wykonuje polecenie jako gracz                                  | `player.executeCommand("kill")`                          |
+| Metoda ZenMethod         | Typ(y) parametru                         | Co to robi                                                      | Przykład                                                 |
+| ------------------------ | ---------------------------------------- | --------------------------------------------------------------- | -------------------------------------------------------- |
+| removeXP(XPtoRemove)     | odcień                                   | Usuwa dany poziom doświadczenia z gracza.                       | `usuń XP(1)`                                             |
+| aktualizacja(IData)      | [IData](/Vanilla/Data/IData/)            | Aktualizuje dane gracza do podanego IData.                      |                                                          |
+| SendChat(wiadomość)      | ciąg znaków lub IchatMessage             | Wysyła graczowi wiadomość czatu.                                | `player.sendChat ("Witaj mojemu staremu przyjacielowi")` |
+| getHotbarStack(index)    | odcień                                   | Zwraca przedmiot w danym indeksie w pasku dostępu gracza.       | `gracz.getHotbarStack(3)`                                |
+| getInventoryStack(index) | odcień                                   | Zwraca przedmiot w danym indeksie w ekwipunku gracza.           | `gracz.getInventoryStack(3)`                             |
+| prezent(przedmiot)       | [IItemStack](/Vanilla/Items/IItemStack/) | Daj graczowi dostarczony przedmiot. Przedmiot jest IItemStack.  | `gracz.give(<minecraft:gold_ingot>)`               |
+| teleportacja (pozycja)   | [Pozycja3f](/Vanilla/Utils/Position3f/)  | Teleportuje gracza do podanej pozycji w tym samym wymiarze      | `gracz.teleport(pozycja)`                                |
+| wykonaj polecenie (raw)  | ciąg znaków                              | Wykonuje polecenie jako gracz                                   | `player.executeCommand("kill")`                          |
+| dropItem(dropAll)        | bool                                     | Upuszcza bieżący przedmiot (lub cały stos), który gracz trzyma. | `Element gracza (false)`                                 |
+| dropItem(itemToDrop)     | [IItemStack](/Vanilla/Items/IItemStack/) | Upuszcza podany przedmiot w pozycji gracza.                     | `player.dropItem(<minecraft:dirt>)`                |
