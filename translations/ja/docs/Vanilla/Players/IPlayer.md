@@ -18,7 +18,7 @@ Zengettersは情報を取得するためのものです。 通常、変数に割
 
 | Zengetter     | 何をするか                                                      | 戻り値の型                                      | 使用法                    |
 | ------------- | ---------------------------------------------------------- | ------------------------------------------ | ---------------------- |
-| id            | は、プレーヤーの id を返します。                                         | 文字列                                        | `player.id`            |
+| uuid          | は、プレイヤーの UUID を返します。                                       | 文字列                                        | `player.uuid`          |
 | 名前            | は、プレーヤーの名前を返します。                                           | 文字列                                        | `player.name`          |
 | データ           | は、プレーヤーのデータ                                                | [IData](/Vanilla/Data/IData/)              | `player.data`          |
 | xp            | は、プレーヤーのエクスペリエンスレベルを返します。 プレイヤーのエクスペリエンスレベルを設定するためにも使用できます | int                                        | `player.xp`            |
@@ -35,7 +35,7 @@ Zengettersは情報を取得するためのものです。 通常、変数に割
 
 ## ZenMethods
 
-Zenmethodsは、この場合、プレーヤーと他のものを行うためのものです。
+ZenMethodsは、この場合、プレーヤーと他のものを行うためのものです。
 
 | ZenMethod                | パラメータの種類                                 | 何をするか                                    | 例                                           |
 | ------------------------ | ---------------------------------------- | ---------------------------------------- | ------------------------------------------- |
@@ -47,3 +47,5 @@ Zenmethodsは、この場合、プレーヤーと他のものを行うための�
 | give(item)               | [IItemStack](/Vanilla/Items/IItemStack/) | プレイヤーに提供されたアイテムを与えます。 アイテムはIItemStackです。 | `player.give(<minecraft:gold_ingot>)` |
 | テレポート（位置）                | [Position3f](/Vanilla/Utils/Position3f/) | プレイヤーを同じディメンション内の指定された位置にテレポートさせます       | `player.teleport(position)`                 |
 | executeCommand(raw)      | 文字列                                      | プレイヤーとしてコマンドを実行します                       | `player.executeCommand("kill")`             |
+| dropItem(dropAll)        | bool                                     | プレイヤーが保持している現在のアイテム（またはスタック全体）をドロップします。  | `player.dropItem(false)`                    |
+| dropItem(itemToDrop)     | [IItemStack](/Vanilla/Items/IItemStack/) | 指定されたアイテムをプレイヤーの位置にドロップします。              | `player.dropItem(<minecraft:dirt>)`   |
