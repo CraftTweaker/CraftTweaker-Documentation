@@ -61,14 +61,14 @@ nav:
       - IContainer: 'Vanilla/Container/IContainer.md'
     - 创意标签：
       - ICreativeTab：“Vanilla/CreativeTabs/ICreativeTab.md”
-    - 附魔：
-      - IEnchant: 'Vanilla/Enchantments/IEnchantment.md'
-      - IEnchantmentdefinition: 'Vanilla/Enchantments/IEnchantmentDefinition.md'
     - 数据：
       - IData: 'Vanilla/Data/IData.md'
       - 数据映射: 'Vanilla/Data/DataMap.md'
     - 伤害：
       - IDamageSource: 'Vanilla/Damage/IDamageSource.md'
+    - 附魔：
+      - IEnchant: 'Vanilla/Enchantments/IEnchantment.md'
+      - IEnchantmentdefinition: 'Vanilla/Enchantments/IEnchantmentDefinition.md'
     - 实体：
       - 属性：
         - IEntityAttribute: 'Vanilla/EntityAttribute.md'
@@ -141,6 +141,7 @@ nav:
         - MobGriefingEvent: 'Vanilla/Events/Events/MobGriefing.md'
         - PlayerAdvancementEvent: 'Vanilla/Events/Events/PlayerAdvancement.md'
         - PlayerAnvilRepairEvent: 'Vanilla/Events/PlayerAnvilRepair.md'
+        - PlayerAnvilUpdateEvent: 'Vanilla/Events/PlayerAnvilUpdate.md'
         - PlayerAttackEntityEvent: 'Vanilla/Events/Events/PlayerAttackEntity.md'
         - PlayerBonemealEvent: 'Vanilla/Events/PlayerBonemeal.md'
         - PlayerBreakSpeed事件: 'Vanilla/Events/PlayerBreakSpeed.md'
