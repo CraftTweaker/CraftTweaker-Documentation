@@ -80,6 +80,12 @@ returns an int.
 defObj.getHarvestLevel(IBlockState state);
 ```
 
+### Get harvest tool of block state
+returns a string. 
+```zenscript
+defObj.getHarvestTool(IBlockState state);
+```
+
 ### Get a block state by metadata
 Uses an int.  
 Returns an [IBlockState](/Vanilla/Blocks/IBlockState/).
