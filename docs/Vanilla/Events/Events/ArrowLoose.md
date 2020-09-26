@@ -19,6 +19,6 @@ The following information can be retrieved/set during the event:
 | ZenGetter       | ZenSetter       | Type                                              |
 |-----------------|-----------------|---------------------------------------------------|
 | `bow`           |                 | [IItemStack](/Vanilla/Items/IItemStack/)          |
-| `charge`        | `charge`        | [int]                                             |
-| `world`         |                 | [String]                                          |
+| `charge`        | `charge`        | int                                              |
+| `world`         |                 | String                                             |
 | `player`        |                 | [IPlayer](/Vanilla/Players/IPlayer/)              |
