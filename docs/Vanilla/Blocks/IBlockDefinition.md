@@ -18,7 +18,7 @@ It might be required for you to import the package if you encounter any issues (
 
 | ZenGetter       | ZenSetter           | What does it do                              | Type                                               |
 |-----------------|---------------------|----------------------------------------------|----------------------------------------------------|
-| canSpawnInBlock | canSpawnInBlock     | Returns if an entity can spawn in this block | bool                                               |
+| canSpawnInBlock |                     | Returns if an entity can spawn in this block | bool                                               |
 | creativeTab     | creativeTab         |                                              | [ICreativeTab](/Vanilla/CreativeTabs/ICreativeTab/) |
 | defaultState    |                     |                                              | [IBlockState](/Vanilla/Blocks/IBlockState/)                         |
 |                 | defaultSlipperiness |                                              | float                                              |
