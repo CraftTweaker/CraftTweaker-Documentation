@@ -8,14 +8,14 @@ It might be required for you to import the package if you encounter any issues (
 
 
 ## Extending [IEntity](/Vanilla/Entities/IEntity/)
-IEntityFishHook extends [IEntity](/Vanilla/Entities/IEntity/). That means all functions available to [IEntities](/Vanilla/Entities/IEntity/) also are available to IEntityItem.
+IEntityFishHook extends [IEntity](/Vanilla/Entities/IEntity/). That means all functions available to [IEntities](/Vanilla/Entities/IEntity/) also are available to IEntityFishHook.
 
 ## ZenGetters
 
 | ZenGetter      | GetterMethod        |  Return Type                            |
 |----------------|---------------------------------------------------------------|
-| caughtEntity   | caughtEntity()      |[IItemStack](/Vanilla/Entities/IEntity/) |
-| angler         | getAngler()         | [IItemStack](/Vanilla/Entities/IPlayer/)|
+| caughtEntity   | caughtEntity()      |[IPlayer](/Vanilla/Entities/IEntity/)    |
+| angler         | getAngler()         |[IEntity](/Vanilla/Entities/IPlayer/)    |
     
 ## ZenSetters
 
