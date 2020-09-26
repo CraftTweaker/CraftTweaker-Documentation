@@ -13,9 +13,9 @@ IEntityFishHook extends [IEntity](/Vanilla/Entities/IEntity/). That means all fu
 ## ZenGetters
 
 | ZenGetter      | GetterMethod        |  Return Type                            |
-|----------------|---------------------------------------------------------------|
-| caughtEntity   | caughtEntity()      |[IPlayer](/Vanilla/Entities/IEntity/)    |
-| angler         | getAngler()         |[IEntity](/Vanilla/Entities/IPlayer/)    |
+|----------------|---------------------|-----------------------------------------|
+| caughtEntity   | caughtEntity()      | [IPlayer](/Vanilla/Entities/IEntity/)   |
+| angler         | getAngler()         | [IEntity](/Vanilla/Entities/IPlayer/)   |
     
 ## ZenSetters
 
