@@ -55,6 +55,7 @@ IEntity extends [ICommandSender](/Vanilla/Commands/ICommandSender/). That means 
 | isInvisible                 |                     | boolean                                      |
 | isInvulnerable              |                     | boolean                                      |
 | isInWater                   |                     | boolean                                      |
+| isLightningbolt             |                     | boolean                                      |
 | isOutsideBorder             |                     | boolean                                      |
 | isOverWater                 |                     | boolean                                      |
 | isPushedByWater             |                     | boolean                                      |
