@@ -15,11 +15,14 @@ IEntityLivingBase extends [IEntity](/Vanilla/Entities/IEntity/). That means all 
 
 | ZenGetter                                              | Return Type (*can be null*)                           |
 |--------------------------------------------------------|-------------------------------------------------------|
+| activeHand                                             | String                                                |
+| activeItemStackBlocking                                | boolean                                               |
 | activePotionEffects                                    | List<[IPotionEffect](/Vanilla/Potions/IPotionEffect/)> |
 | AIMovementSpeed                                        | float                                                 |
 | arrowsInEntity                                         | int                                                   |
 | attackingEntity                                        | *IEntityLivingBase*                                   |
 | canBreatheUnderwater                                   | boolean                                               |
+| elytraFlying                                           | boolean                                               |
 | health                                                 | float                                                 |
 | isChild                                                | boolean                                               |
 | isOnLadder                                             | boolean                                               |
@@ -31,6 +34,8 @@ IEntityLivingBase extends [IEntity](/Vanilla/Entities/IEntity/). That means all 
 | maxHealth                                              | float                                                 |
 | offHandHeldItem                                        | [IItemStack](/Vanilla/Items/IItemStack/)               |
 | revengeTarget                                          | *IEntityLivingBase*                                   |
+| swingInProgress                                        | boolean                                               |
+| ticksElytraFlying                                      | int                                                   |
 | totalArmorValue                                        | int                                                   |
 
 
