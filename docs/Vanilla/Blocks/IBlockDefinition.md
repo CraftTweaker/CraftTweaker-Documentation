@@ -67,10 +67,17 @@ defObj.getSlipperiness(IBlockState state, IBlockAccess access, IBlockPos pos, @O
 ```
 
 ### Set the block's harvest level
-Uses a string and an int.  
+Uses a string, an int and an optional [IBlockState](/Vanilla/Blocks/IBlockState/).
+if the IBlockState argument is ignored, it will set harvest level to all block states in the block definition.
 Returns void (nothing).
 ```zenscript
-defObj.setHarvestLevel(string toolclass, int level);
+defObj.setHarvestLevel(string toolclass, int level, @Optional IBlockState state);
+```
+
+### Get harvest level of block state
+returns an int.
+```zenscript
+defObj.getHarvestLevel(IBlockState state);
 ```
 
 ### Get a block state by metadata
