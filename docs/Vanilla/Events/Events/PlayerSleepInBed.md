@@ -15,6 +15,15 @@ PlayerSleepInBed Events implement the following interfaces and are able to call 
 - [IEventPositionable](/Vanilla/Events/Events/IEventPositionable/)
 
 
+## Result Types
+* NOT_POSSIBLE_HERE 
+* NOT_POSSIBLE_NOW 
+* NOT_SAFE 
+* OK 
+* OTHER_PROBLEM 
+* TOO_FAR_AWAY 
+
+
 ## ZenGetters
 The following information can be retrieved from the event:
 
@@ -24,12 +33,12 @@ The following information can be retrieved from the event:
 | `y`         | int                                       |
 | `z`         | int                                       |
 | `player`    | [IPlayer](/Vanilla/Players/IPlayer/)      |
-| `result`    | string                                    |
+| `result`    | string (possible values are above)        |
 
 ## ZenSetters
 The following can be set in the event:
 
 | ZenSetter   | Parameter Type                            |
 |-------------|-------------------------------------------|
-| `result`    | string                                    |
+| `result`    | string (possible values are above)        |
 
