@@ -19,12 +19,7 @@ EntityLivingDamageEvent implements the following interfaces and are able to call
 
 ## ZenGetter/ZenSetter
 
-| ZenGetter    | Type                                           |
-|--------------|------------------------------------------------|
-| damageSource | [IDamageSource](/Vanilla/Damage/IDamageSource/) |
-| amount       | float                                          |
-
 | ZenGetter        | ZenSetter     | Type                                                               |
 |------------------|---------------|--------------------------------------------------------------------|
-| `damageSource`   |               | [IDamageSource](/Vanilla/Damage/IDamageSource/)                    |
-| `amount`         | `amount`      | float                                                              |
+| damageSource     |               | [IDamageSource](/Vanilla/Damage/IDamageSource/)                    |
+| amount           | amount        | float                                                              |
