@@ -35,7 +35,6 @@ IEntityLivingBase extends [IEntity](/Vanilla/Entities/IEntity/). That means all 
 | offHandHeldItem                                        | [IItemStack](/Vanilla/Items/IItemStack/)               |
 | revengeTarget                                          | *IEntityLivingBase*                                   |
 | swingInProgress                                        | boolean                                               |
-| ticksElytraFlying                                      | int                                                   |
 | totalArmorValue                                        | int                                                   |
 
 
