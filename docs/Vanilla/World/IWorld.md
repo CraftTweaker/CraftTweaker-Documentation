@@ -7,7 +7,7 @@ It might be required to [import](/AdvancedFunctions/Import/) the class to avoid 
 `import crafttweaker.world.IWorld`
 
 ## Extending IBlockProperties
-IBlockState extends [IBlockAccess](/Vanilla/World/IBlockAccess/). That means that all methods that are available to [IBlockAccess](/Vanilla/World/IBlockAccess/) objects are also available to IBlockState objects.
+IWorld extends [IBlockAccess](/Vanilla/World/IBlockAccess/). That means that all methods that are available to [IBlockAccess](/Vanilla/World/IBlockAccess/) objects are also available to IBlockState objects.
 
 ## Creating an IWorld object
 Normally, you can derive this object from entities or other functions. If you need to create it yourself though, this is the way to go:  
@@ -32,6 +32,7 @@ crafttweaker.world.IWorld.getFromID(int id);
 |getWorldType()     | worldType     |String                           |Returns the world's type name.                                                                                                                                                          |
 |getWorldInfo()     | worldInfo     |[IWorldInfo](/Vanilla/World/IWorldInfo/)         |Returns the world's information. Can be used to retrieve even more info on the world.                                                                                                   |
 |getProvider()      | provider      |[IWorldProvider](/Vanilla/World/IWorldProvider/) |Returns the world's provider. Can be used to retrieve even more info on the world.                                                                                                      |
+|getSeaLevel()      | seaLevel      |int                              |Returns the world's sea level.                                                                                                                                                         |
 
 ## ZenMethods with parameters
 ### Get Biome at specific Position
@@ -77,6 +78,19 @@ Returns a bool that states if the spawn was successful.
 worldObj.spawnEntity(IEntity entity);
 ```
 
+### Create Lightningbolt
+Returns the Lightningbolt as an [IEntity](/Vanilla/Entities/IEntity/) object.
+```zenscript
+worldObj.createLightningBolt(double x, double y, double z, @Optional boolean effectOnly);
+```
+
+### Add a Weather Effect
+Use an [IEntity](/Vanilla/Entities/IEntity/) object.  
+Returns a bool that states if the spawn was successful.
+```zenscript
+worldObj.addWeatherEffect(IEntity entity);
+```
+
 ### Get a raytrace result  
 Use two [IVector3d](/Vanilla/World/IVector3d/) objects, and three booleans to get an [IRayTraceResult](/Vanilla/World/IRayTraceResult/).  
 **Can be null**
@@ -98,4 +112,18 @@ Gets the IItemStack that would be obtained by picking the block at the position.
 
 ```zenscript
 worldObj.getPickedBlock(IBlockPos pos, IRayTraceResult rayTraceResult, IPlayer player);
+```
+
+### Check if a position is a spawn chunk 
+Returns a bool that states if the position is a spawn chunk.
+
+```zenscript
+worldObj.isSpawnChunk(int x, int z);
+```
+
+### Extinguish Fire
+Returns a bool.
+
+```zenscript
+worldObj.extinguishFire(IPlayer player, IBlockPos pos, String side);
 ```
