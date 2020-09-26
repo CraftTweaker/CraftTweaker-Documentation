@@ -18,13 +18,13 @@ It might be required for you to import the package if you encounter any issues (
 
 | ZenGetter       | ZenSetter           | What does it do                              | Type                                               |
 |-----------------|---------------------|----------------------------------------------|----------------------------------------------------|
-|                 | canSpawnInBlock     | Returns if an entity can spawn in this block | bool                                               |
+| canSpawnInBlock | canSpawnInBlock     | Returns if an entity can spawn in this block | bool                                               |
 | creativeTab     | creativeTab         |                                              | [ICreativeTab](/Vanilla/CreativeTabs/ICreativeTab/) |
 | defaultState    |                     |                                              | [IBlockState](/Vanilla/Blocks/IBlockState/)                         |
 |                 | defaultSlipperiness |                                              | float                                              |
 | id              |                     | Returns the block ID                         | string                                             |
 | displayName     |                     | Returns the block's DisplayName              | string                                             |
-|                 | hardness            |                                              | int                                                |
+| hardness        | hardness            |                                              | int                                                |
 | harvestLevel    |                     | Returns the block's harvest level            | int                                                |
 | harvestTool     |                     | Returns the block's harvest tool             | string                                             |
 |                 | lightOpacity        |                                              | int                                                |
