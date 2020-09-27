@@ -23,6 +23,7 @@ Warning: Only using the second method is it possible for `data` ZenGetter to ret
 | definition | Returns the Block's definition | [IBlockDefinition](/Vanilla/Blocks/IBlockDefinition/)   |
 | meta       | Returns the Block's metadata   | int                                    |
 | data       | Returns the Block's tileData   | [IData](/Vanilla/Data/IData/)           |
+| fluid      | Returns the Block's fluid      | [ILiquidDefinition](/Vanilla/Liquids/ILiquidDefinition/)   |
 
 
 
