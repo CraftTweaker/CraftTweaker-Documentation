@@ -280,7 +280,7 @@ nav:
         - 実験的なフラグ: 'Mods/Boss/Preprocessor/Exp.md'
       - タグ:
         - コンセプト: 'Mods/Boss/Tags/Concept.md'
-        - ブラケットハンドラー：'Mods/Boss/Tags/BracketHandler.md'
+        - ブラケットハンドラー: 'Mods/Boss/Tags/BracketHandler.md'
         - タグ: 'Mods/Boss/Tags/Tag.md'
         - TagType: 'Mods/Boss/Tags/TagType.md'
         - TagIngredient: 'Mods/Boss/Tags/TagIngredient.md'
@@ -331,7 +331,7 @@ nav:
           - 寸法: 'Mods/CompatSkills/Requirements/Requirements_Types/Dimensions.md'
           - 動的剣スキル: 'Mods/CompatSkills/Requirements/Requirement_Types/Dynamic_Sword_Skills.md'
           - GameStages: 'Mods/CompatSkills/Requirements/Requirement_Types/GameStages.md'
-          - 反転条件：'Mods/CompatSkills/Requirements/Requirements/Requirement_Types/Inverted_Requirements.md'
+          - 反転条件: 'Mods/CompatSkills/Requirements/Requirements/Requirement_Types/Inverted_Requirements.md'
           - アイテム: 'Mods/CompatSkills/Requirements/Requirements_Types/Items.md'
           - 論理演算子:
             - 重要な注意事項: 'Mods/CompatSkills/Requirements/Requirement_Types/Logic_Operators/1_READ_ME_FIRST.md'
@@ -343,7 +343,7 @@ nav:
             - XNOR-Gate: 'Mods/CompatSkills/Requirements/Requirement_Types/Logic_Operators/XNOR-Gate.md'
             - XOR-Gate: 'Mods/CompatSkills/Requirements/Requirement_Types/Logic_Operators/XOR-Gate.md'
           - 鉱石辞書: 'Mods/CompatSkills/Requirements/Requirement_Types/Ore_Dictionary.md'
-          - スキル：'Mods/CompatSkills/Requirements/Requirements_Types/Skills.md'
+          - スキル: 'Mods/CompatSkills/Requirements/Requirements_Types/Skills.md'
           - ツール収穫レベル: 'Mods/CompatSkills/Requirements/Requirement_Types/Tool_Harvest-Level.md'
           - 形質: 'Mods/CompatSkills/Requirements/Requirements_Types/Traits.md'
         - スキルと形質: 'Mods/CompatSkills/Requirements/Skills_Traits.md'
@@ -498,7 +498,7 @@ nav:
       - ニワトリ:
         - ChickenFactory: 'Mods/ContentTweaker/Chickens/ChickenFactory.md'
         - ChickenRepresentation: 'Mods/ContentTweaker/ChickenRepresentation.md'
-      -ティンカーズの構文:
+      - ティンカーズの構文:
         - ブラケット記法:
           - 素材: 'Mods/ContentTweaker/Tinkers_Construct/Brackets/Bracket_Material.md'
           - 形質: 'Mods/ContentTweaker/Tinkers_Construct/Brackets/Bracket_Trait.md'
@@ -547,7 +547,7 @@ nav:
       - アイテムステージ: 'Mods/GameStages/ItemStages/ItemStages.md'
       - MobStages: 'Mods/GameStages/MobStages/MobStages.md'
       - RecipeStages: 'Mods/GameStages/RecipeStages/RecipeStages/RecipeStages.md'
-      - 階層ツールチップ：'Mods/GameStages/Tiered_Tooltips/Tiered_Tooltips.md'
+      - 階層ツールチップ: 'Mods/GameStages/Tiered_Tooltips/Tiered_Tooltips.md'
       - TinkerStages: 'Mods/GameStages/TinkerStages/TinkerStages.md'
       - WailaStages: 'Mods/GameStages/WailaStages/WailaStages.md'
       - ZenStages:
@@ -560,17 +560,17 @@ nav:
       - Composter: 'Mods/Garden_Stuff/Composter.md'
     - GregTech Community Edition:
       - GregTech Community Edition: 'Mods/GregTechCE/GregTechCE.md'
-      - マシン：'Mods/GregTechCE/Machines.md'
+      - マシン: 'Mods/GregTechCE/Machines.md'
       - Material: 'Mods/GregTechCE/Material.md'
     - IC2 Tweaker:
-      - ブラスト炉：'Mods/IC2Tweaker/Blast_Furnace.md'
+      - ブラスト炉: 'Mods/IC2Tweaker/Blast_Furnace.md'
       - ブロックカッター: 'Mods/IC2Tweaker/Block_Cutter.md'
       - Canner: 'Mods/IC2Tweaker/Canner.md'
       - 圧縮: 'Mods/IC2Tweaker/Compressor.md'
       - Electrolyzer: 'Mods/IC2Tweaker/Electrolyzer.md'
       - 抽出: 'Mods/IC2Tweaker/Extractor.md'
       - Fermenter: 'Mods/IC2Tweaker/Fermenter.md'
-      - 熱交換：'Mods/IC2Tweaker/Heat_Exchanger.md'
+      - 熱交換: 'Mods/IC2Tweaker/Heat_Exchanger.md'
       - Macerator: 'Mods/IC2Tweaker/Macerator.md'
       - Metal Former: 'Mods/IC2Tweaker/Metal_Former.md'
       - 鉱石ウォッシャー: 'Mods/IC2Tweaker/Ore_Washer.md'
@@ -580,7 +580,7 @@ nav:
       - Thermal Centrifuge: 'Mods/IC2Tweaker/ThermalCentrifuge.md'
     - IC2 Classic Tweaker:
       - Adv Crafting: 'Mods/IC2ClassicTweaker/AdvCrafting.md'
-      - キャンニングマシン：'Mods/IC2ClassicTweaker/CanningMachine.md'
+      - キャンニングマシン: 'Mods/IC2ClassicTweaker/CanningMachine.md'
       - Electrolyzer: 'Mods/IC2ClassicTweaker/Electrolyzer.md'
       - 液体燃料ジェネレータ: 'Mods/IC2ClassicTweaker/LiquidFuelGenerator.md'
       - レア アース抽出器: 'Mods/IC2ClassicTweaker/RareEarthExtractor.md'
@@ -703,7 +703,7 @@ nav:
           - Orechid: 'Mods/Modtweaker/Botania/Recipes/Orechid.md'
           - Orechid Ignem: 'Mods/Modtweaker/Botania/Recipes/OrechidIgnem.md'
           - 花弁Apothecary: 'Mods/Modtweaker/Botania/Recipes/Apothecary.md'
-          - ピュアデイジー：'Mods/Modtweaker/Botania/Recipes/PureDaisy.md'
+          - ピュアデイジー: 'Mods/Modtweaker/Botania/Recipes/PureDaisy.md'
           - ルーン祭壇: 'Mods/Modtweaker/Botania/Recipes/RuneAltar.md'
       - Chisel:
         - 彫刻: 'Mods/Modtweaker/Chisel/Carving.md'
@@ -722,7 +722,7 @@ nav:
       - インスピレーション:
         - インスピレーション: 'Mods/Modtweaker/Inspirations/Inspirations.md'
         - Handlers:
-          - 大釜：'Mods/Modtweaker/Inspirations/Handlers/Cauldron.md'
+          - 大釜: 'Mods/Modtweaker/Inspirations/Handlers/Cauldron.md'
       - 精製済みストレージ:
         - レシピ:
           - 半田付け: 'Mods/Modtweaker/RefinedStorage/Recipes/Solder.md'
@@ -779,7 +779,7 @@ nav:
         - Energetic Infouser: 'Mods/Modtweaker/ThermalExpansion/Energetic_Infuser.md'
         - Factorizer: 'Mods/Modtweaker/ThermalExpansion/Factorizer.md'
         - 流体トランスポーザ: 'Mods/Modtweaker/ThermalExpansion/Fluid_Transposer.md'
-        - 分割（精製法）：'Mods/Modtweaker/ThermalExpansion/Refinery.md'
+        - 分割（精製法）: 'Mods/Modtweaker/ThermalExpansion/Refinery.md'
         - 誘導溶解: 'Mods/Modtweaker/ThermalExpansion/InductionSmelter.md'
         - マグマ・クルーシブル: 'Mods/Modtweaker/ThermalExpansion/Crucible.md'
         - Redstone Furnace: 'Mods/Modtweaker/ThermalExpansion/Redstone_Furnace.md'
@@ -787,7 +787,7 @@ nav:
         - パルベライザ: 'Mods/Modtweaker/ThermalExpansion/Pulverizer.md'
         - Sawmill: 'Mods/Modtweaker/ThermalExpansion/Sawmill.md'
     - モジュラー機械:
-      - モジュラー機械：'Mods/ModularMachinery/ModularMachinery.md'
+      - モジュラー機械: 'Mods/ModularMachinery/ModularMachinery.md'
       - レシピ:
         - RecipeBuilder: 'Mods/ModularMachinery/Recipes/RecipeBuilder.md'
         - RecipePrimer: 'Mods/ModularMachinery/Recipes/RecipePrimer.md'
@@ -922,7 +922,7 @@ nav:
       - 空のリソース 2: 'Mods/Sky_Resources_2/Sky_Resources_2.md'
       - レシピ:
         - 錬金術フュージョン: 'Mods/Sky_Resources_2/Recipes/Alchemal_Fusion.md'
-        - 錬金術用触媒：'Mods/Sky_Resources_2/Recipes/Alchemal_Fusion_Catalysts.md'
+        - 錬金術用触媒: 'Mods/Sky_Resources_2/Recipes/Alchemal_Fusion_Catalysts.md'
         - 大釜クリーニング: 'Mods/Sky_Resources_2/Recipes/Cauldron_Cleaning.md'
         - 燃焼: 'Mods/Sky_Resources_2/Recipes/Combustion.md'
         - Condenser: 'Mods/Sky_Resources_2/Recipes/Condenser.md'
@@ -930,7 +930,7 @@ nav:
         - カットナイフ: 'Mods/Sky_Resources_2/Recipes/Cutting_Knife.md'
         - フリーザ: 'Mods/Sky_Resources_2/Recipes/Freezer.md'
         - 熱源: 'Mods/Sky_Resources_2/Recipes/Heat_Sources.md'
-        - ライフインフュージョン：'Mods/Sky_Resources_2/Recipes/Life_Infusion.md'
+        - ライフインフュージョン: 'Mods/Sky_Resources_2/Recipes/Life_Infusion.md'
         - ロックグラインダー: 'Mods/Sky_Resources_2/Recipes/Rock_Grinder.md'
         - Water Extractor: 'Mods/Sky_Resources_2/Recipes/Water_Extractor.md'
     - SteamAgeRevolution:
@@ -939,7 +939,7 @@ nav:
       - Crucible: 'Mods/SteamAgeRevolution/Crucible.md'
       - 蒸留器: 'Mods/SteamAgeRevolution/Distiller.md'
       - Grinder: 'Mods/SteamAgeRevolution/Grinder.md'
-      - 蒸気炉：'Mods/SteamAgeRevolution/SteamFurnace.md'
+      - 蒸気炉: 'Mods/SteamAgeRevolution/SteamFurnace.md'
       - SteamHammer: 'Mods/SteamAgeRevolution/SteamHammer.md'
       - Steelworks: 'Mods/SteamAgeRevolution/Steelworks.md'
       - Vat: 'Mods/SteamAgeRevolution/Vat.md'
