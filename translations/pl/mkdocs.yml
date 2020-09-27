@@ -250,7 +250,7 @@ nav:
       - Tworzenie elementu: 'Mods/Alchemistry/CreateElement.md'
       - Separator: 'Mods/Alchemistry/Evaporator.md'
       - Liquifier: 'Mods/Alchemistry/Liquifier.md'
-      - Pobierz metadane 'Mods/Alchemistry/MetaGet.md'
+      - Pobierz metadane: 'Mods/Alchemistry/MetaGet.md'
     - Applied Energistics 2:
       - Applied Energistics 2: 'Mods/Applied_Energistics_2/Applied_Energistics_2.md'
       - Cannon: 'Mods/Applied_Energistics_2/Cannon.md'
@@ -436,7 +436,7 @@ nav:
           - Funkcje:
             - Rezultat działania: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/ActionResult.md'
             - Działanie IBlock: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IBlockAction.md'
-            - Dostawca Kolorów IBlock'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IBlockColorSupplier.md'
+            - Dostawca Kolorów IBlock: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IBlockColorSupplier.md'
             - IBlockDropHandler: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IBlockDropHandler.md'
             - IItemColorSupplier: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemColorSupplier.md'
             - IItemDestroyedBlock: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemDestroyedBlock.md'
@@ -452,7 +452,7 @@ nav:
             - IResourceLocationSupplier: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IResourceLocationSupplier.md'
         - Typy:
           - Zablokowanie:
-            - W kierunku 'Mods/ContentTweaker/Vanilla/Types/Block/Facing.md'
+            - W kierunku: 'Mods/ContentTweaker/Vanilla/Types/Block/Facing.md'
             - ICTBlockState: 'Mods/ContentTweaker/Vanilla/Types/Block/ICTBlockState.md'
             - IBlockPos: 'Mods/ContentTweaker/Vanilla/Types/Block/IBlockPos.md'
             - Definicja IMateriału: 'Mods/ContentTweaker/Vanilla/Types/Block/IMaterialDefinition.md'
@@ -491,7 +491,7 @@ nav:
             - Dostawca MaterialPartorColor: 'Mods/ContentTweaker/Materiały/Funkcje/MaterialPartColorSupplier.md'
             - MaterialPartLocalizedNameSupplier: 'Mods/ContentTweaker/Materials/Materials/Materials/MaterialPartLocalizedNameSupplier.md'
         - Części:
-          - Część 'Mods/ContentTweaker/Materiałs/Part.md'
+          - Część: 'Mods/ContentTweaker/Materiałs/Part.md'
           - Kreator części: 'Mods/ContentTweaker/Materials/Parts/Part_Builder.md'
           - Typ części: 'Mods/ContentTweaker/Materials/PartType.md'
           - PartDataCzęści: 'Mods/ContentTweaker/Materials/Parts/PartDataPiece.md'
@@ -553,14 +553,14 @@ nav:
       - ZenStages:
         - Wprowadzenie: 'Mods/GameStages/ZenStages/ZenStages.md'
         - ZenStager: 'Mods/GameStages/ZenStages/ZenStager.md'
-        - Etap 'Mods/GameStages/ZenStages/Stage.md'
+        - Etap: 'Mods/GameStages/ZenStages/Stage.md'
         - Typ niestandardowy: 'Mods/GameStages/ZenStages/CustomType.md'
     - Ogród:
       - Wprowadzenie: 'Mods/Garden_Stuff/Garden_Stuff.md'
       - Composter: 'Mods/Garden_Stuff/Composter.md'
     - Edycja Społeczności GregTech:
       - Edycja Społeczności GregTech: 'Mods/GregTechCE/GregTechCE.md'
-      - Maszyny 'Mods/GregTechCE/Machines.md'
+      - Maszyny: 'Mods/GregTechCE/Machines.md'
       - Materiał: 'Mods/GregTechCE/Material.md'
     - IC2 Tweaker:
       - Głębokość: 'Mods/IC2Tweaker/Blast_Furnace.md'
@@ -619,7 +619,7 @@ nav:
         - Smar: 'Mods/Immersive_Petroleum/CraftTweaker_Support/Lubricant.md'
         - Zbiornik: 'Mods/Immersive_Petroleum/CraftTweaker_Support/Reservoir.md'
     - Stopowanie przemysłowe:
-      - Foregoing Industrial 'Mods/Industrial_Foregoing/IndustrialForegoing.md'
+      - Foregoing Industrial: 'Mods/Industrial_Foregoing/IndustrialForegoing.md'
       - BioReactor: 'Mods/Industrial_Foregoing/BioReactor.md'
       - Słownik płynów: 'Mods/Industrial_Foregoing/FluidDictionary.md'
       - Wiercenie laserowe: 'Mods/Industrial_Foregoing/LaserDrill.md'
@@ -677,8 +677,8 @@ nav:
         - Kąt: 'Mods/Modtweaker/BetterWithMods/Anvil.md'
         - Belki: 'Mods/Modtweaker/BetterWithMods/Bellows.md'
         - Pława: 'Mods/Modtweaker/BetterWithMods/Buoyancy.md'
-        - Kocioł 'Mods/Modtweaker/BetterWithMods/Cauldron.md'
-        - Tygiel 'Mods/Modtweaker/BetterWithMods/Crucible.md'
+        - Kocioł: 'Mods/Modtweaker/BetterWithMods/Cauldron.md'
+        - Tygiel: 'Mods/Modtweaker/BetterWithMods/Crucible.md'
         - Filtrowane Bolt: 'Mods/Modtweaker/BetterWithMods/FilteredHopper.md'
         - Rejestr ciepła: 'Mods/Modtweaker/BetterWithMods/HeatRegistry.md'
         - HFurnace: 'Mody/Modety/Lepiej Mody/HCFurnace.md'
@@ -717,12 +717,12 @@ nav:
         - Fermenter: 'Mods/Modtweaker/Forestry/Fermenter.md'
         - Wilgotność: 'Mods/Modtweaker/Forestry/Moistener.md'
         - Squeezer: 'Mods/Modtweaker/Forestry/Squeezer.md'
-        - Nadal 'Mods/Modtweaker/Forestry/Still.md'
+        - Nadal: 'Mods/Modtweaker/Forestry/Still.md'
         - Thermionic Fabricator: 'Mods/Modtweaker/Forestry/Thermionic_Fabricator.md'
       - Inspiracje:
         - Inspiracje: 'Mods/Modtweaker/Inspirations/Inspirations.md'
         - Handlers:
-          - Kocioł 'Mods/Modtweaker/Inspirations/Handlers/Cauldron.md'
+          - Kocioł: 'Mods/Modtweaker/Inspirations/Handlers/Cauldron.md'
       - Rafinowana pamięć:
         - Przepisy:
           - Solderer: 'Mods/Modtweaker/RefinedStorage/Recipes/Solderer.md'
@@ -756,7 +756,7 @@ nav:
           - Aspektywy: 'Mods/Modtweaker/Thaumcraft/Brackets/Bracket_Aspect.md'
         - Handlers:
           - Arcane Workbench: 'Mods/Modtweaker/Thaumcraft/Handlers/ArcaneWorkbench.md'
-          - Tygiel 'Mods/Modtweaker/Thaumcraft/Handlers/Crucible.md'
+          - Tygiel: 'Mods/Modtweaker/Thaumcraft/Handlers/Crucible.md'
           - Infuzja: 'Mods/Modtweaker/Thaumcraft/Handlers/Infusion.md'
           - Loot: 'Mods/Modtweaker/Thaumcraft/Handlers/Loot.md'
           - Salis Mundus: 'Mods/Modtweaker/Thaumcraft/Handlers/SalisMundus.md'
@@ -926,7 +926,7 @@ nav:
         - Czyszczenie kociołu: 'Mods/Sky_Resources_2/Recipes/Cauldron_Cleaning.md'
         - Spalanie: 'Mods/Sky_Resources_2/Recipes/Combustion.md'
         - Kondensator: 'Mods/Sky_Resources_2/Recipes/Condenser.md'
-        - Tygiel 'Mods/Sky_Resources_2/Recipes/Crucible.md'
+        - Tygiel: 'Mods/Sky_Resources_2/Recipes/Crucible.md'
         - Knife: 'Mods/Sky_Resources_2/Recipes/Cutting_Knife.md'
         - Zamrażarka: 'Mods/Sky_Resources_2/Recipes/Freezer.md'
         - Źródła ciepła: 'Mods/Sky_Resources_2/Recipes/Heat_Sources.md'
@@ -936,7 +936,7 @@ nav:
     - SteamAgeRevolution:
       - Wykuwanie stopów: 'Mods/SteamAgeRevolution/AlloyForge.md'
       - Blok transmisji: 'Mods/SteamAgeRevolution/CastingBlock.md'
-      - Tygiel 'Mods/SteamAgeRevolution/Crucible.md'
+      - Tygiel: 'Mods/SteamAgeRevolution/Crucible.md'
       - Destylator: 'Mods/SteamAgeRevolution/Distiller.md'
       - Grinder: 'Mods/SteamAgeRevolution/Grinder.md'
       - Piec parowy: 'Mods/SteamAgeRevolution/SteamFurnace.md'
@@ -979,7 +979,7 @@ nav:
           - Anvil: 'Mods/Terrafirmacraft/Recipes/Anvil/Anvil.md'
           - Spawanie: 'Mods/Terrafirmacraft/Recipes/Anvil/Welding.md'
         - Beczka: 'Mods/Terrafirmacraft/Recipes/Barrel.md'
-        - Wykrywanie
+        - Wykrywanie:
           - Clay: 'Mods/Terrafirmacraft/Recipes/Knapping/Clay.md'
           - Zastrzeżenie ogniowe: 'Mods/Terrafirmacraft/Recipes/Knapping/FireClay.md'
           - Skóra: 'Mods/Terrafirmacraft/Recipes/Knapping/Leather.md'

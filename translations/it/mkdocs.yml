@@ -43,7 +43,7 @@ nav:
       - IBlockStateMatcher: 'Vanilla/Blocks/IBlockStateMatcher.md'
       - IMateriale: 'Vanilla/Blocks/IMaterial.md'
       - IMobilityFlag: 'Vanilla/Blocks/IMobilityFlag.md'
-    - Parentesi
+    - Parentesi:
       - Schede Creative: 'Vanilla/Brackets/Bracket_CreativeTab.md'
       - Fonte Danno: 'Vanilla/Brackets/Bracket_DamageSource.md'
       - Incantesimi: 'Vanilla/Brackets/Bracket_Enchantment.md'
@@ -416,7 +416,7 @@ nav:
       - Comandi: 'Mods/ContentTweaker/Commands.md'
       - Camminata: 'Mods/ContentTweaker/WalkThrough.md'
       - Vanilla:
-        - Parentesi
+        - Parentesi:
           - Materiale Blocco: 'Mods/ContentTweaker/Vanilla/Brackets/Bracket_Block_Material.md'
           - Blocchi: 'Mods/ContentTweaker/Vanilla/Brackets/Bracket_Blocks.md'
           - Scheda Creativa: 'Mods/ContentTweaker/Vanilla/Brackets/Bracket_Creative_Tab.md'
@@ -479,7 +479,7 @@ nav:
         - Introduzione: 'Mods/ContentTweaker/Materials/Introduction.m'
         - MaterialSystem: 'Mods/ContentTweaker/Materials/MaterialSystem.md'
         - DropTableBuilder: 'Mods/ContentTweaker/Materials/DropTableBuilder.md'
-        - Parentesi
+        - Parentesi:
           - Materiali Bracket Handler: 'Mods/ContentTweaker/Materials/Brackets/Bracket_MaterialPart.md'
         - Materiali:
           - Materiale: 'Mods/ContentTweaker/Materials/Materials/Material.md'
@@ -499,7 +499,7 @@ nav:
         - ChickenFactory: 'Mods/ContentTweaker/Chickens/ChickenFactory.md'
         - PolloRappresentazione: 'Mods/ContentTweaker/Chickens/ChickenRepresentation.md'
       - Costruzione Di Tinkers:
-        - Parentesi
+        - Parentesi:
           - Materiali: 'Mods/ContentTweaker/Tinkers_Construct/Brackets/Bracket_Material.md'
           - Traccii: 'Mods/ContentTweaker/Tinkers_Construct/Brackets/Bracket_Trait.md'
         - Material: 'Mods/ContentTweaker/Tinkers_Construct/Material.md'
@@ -728,7 +728,7 @@ nav:
           - Saldatrice: 'Mods/Modtweaker/RefinedStorage/Ricette/Solderer.md'
       - Costruzione Di Tinkers:
         - Comandi: 'Mods/Modtweaker/TConstruct/Commands.md'
-        - Parentesi
+        - Parentesi:
           - Supporto Materiali Handler: 'Mods/Modtweaker/TConstruct/Brackets/Bracket_Material.md'
         - Lega: 'Mods/Modtweaker/TConstruct/Alloying.md'
         - Casting: 'Mods/Modtweaker/TConstruct/Casting.md'
@@ -752,7 +752,7 @@ nav:
           - CTAspectStack: 'Mods/Modtweaker/Thaumcraft/Aspects/CTAspectStack.m'
           - Prospettive Entità: 'Mods/Modtweaker/Thaumcraft/Aspects/Entity_Aspects.md'
           - Item Aspects: 'Mods/Modtweaker/Thaumcraft/Aspects/Item_Aspects.md'
-        - Parentesi
+        - Parentesi:
           - Aspetti: 'Mods/Modtweaker/Thaumcraft/Brackets/Bracket_Aspect.md'
         - Handlers:
           - Arcane Workbench: 'Mods/Modtweaker/Thaumcraft/Handlers/ArcaneWorkbench.md'

@@ -283,7 +283,7 @@ nav:
         - Der Bracket-Handler: 'Mods/Boson/Tags/BracketHandler.md'
         - Tag: 'Mods/Boson/Tags/Tag.md'
         - TagType: 'Mods/Boson/Tags/TagType.md'
-        - TagIngredient: 'Mods/Boson/Tags/TagIngredient.md"
+        - TagIngredient: 'Mods/Boson/Tags/TagIngredient.md'
       - Funktionale Schnittstellen:
         - Ein Primer auf funktionalen Schnittstellen: 'Mods/Boson/Functions/Concept.md'
         - Verfügbare Schnittstellen: 'Mods/Boson/Funktionen/List.md'
@@ -378,7 +378,7 @@ nav:
             - Benutzerdefinierte Merkmale: 'Mods/CompatSkills/Supports/Reskillable/CustomTraits/Custom_Traits.md'
             - Ereignisinformation: 'Mods/CompatSkills/Supports/Reskillable/CustomTraits/Events.md'
             - Ereignisse:
-              - onAttackMobil 'Mods/CompatSkills/Supports/Reskillable/CustomTraits/Events/onAttackMob.md'
+              - onAttackMobil: 'Mods/CompatSkills/Supports/Reskillable/CustomTraits/Events/onAttackMob.md'
               - onBlockDrops: 'Mods/CompatSkills/Supports/Reskillable/CustomTraits/Events/onBlockDrops.md'
               - OnBreakSpeed: 'Mods/CompatSkills/Supports/Reskillable/CustomTraits/Events/onBreakSpeed.md'
               - onEnderTeleport: 'Mods/CompatSkills/Supports/Reskillable/CustomTraits/Events/onEnderTeleport.md'
@@ -564,13 +564,13 @@ nav:
       - Material: 'Mods/GregTechCE/Material.md'
     - IC2 Tweaker:
       - Sprengofen: 'Mods/IC2Tweaker/Blast_Ofen'
-      - Blockschnitt 'Mods/IC2Tweaker/Block_Cutter.md'
+      - Blockschnitt: 'Mods/IC2Tweaker/Block_Cutter.md'
       - Canner: 'Mods/IC2Tweaker/Canner.md'
       - Kompressor: 'Mods/IC2Tweaker/Compressor.md'
       - Elektrolyzer: 'Mods/IC2Tweaker/Electrolyzer.md'
       - Extraktor: 'Mods/IC2Tweaker/Extractor.md'
       - Fermenter: 'Mods/IC2Tweaker/Fermenter.md'
-      - Wärmetauscher 'Mods/IC2Tweaker/Heat_Exchanger.md'
+      - Wärmetauscher: 'Mods/IC2Tweaker/Heat_Exchanger.md'
       - Macerator: 'Mods/IC2Tweaker/Macerator.md'
       - Ehemalig: 'Mods/IC2Tweaker/Metal_Former.md'
       - Erz Washer: 'Mods/IC2Tweaker/Ore_Washer.md'
@@ -583,7 +583,7 @@ nav:
       - Canning Machine: 'Mods/IC2ClassicTweaker/CanningMachine.md'
       - Elektrolyzer: 'Mods/IC2ClassicTweaker/Electrolyzer.md'
       - Flüssiger Kraftstoffgenerator: 'Mods/IC2ClassicTweaker/LiquidFuelGenerator.md'
-      - Seltener Erdextraktor 'Mods/IC2ClassicTweaker/RareEarthExtractor.md'
+      - Seltener Erdextraktor: 'Mods/IC2ClassicTweaker/RareEarthExtractor.md'
       - Sägewerk: 'Mods/IC2ClassicTweaker/Sägewerk.md'
       - Schrottkasten: 'Mods/IC2ClassicTweaker/Scrap_Box.md'
     - Immersive Engineering:
@@ -615,7 +615,7 @@ nav:
       - Immersives Erdöl: 'Mods/Immersive_Petroleum/Immersive_Petroleum.md'
       - CraftTweaker Unterstützung:
         - Destillation: 'Mods/Immersive_Petroleum/CraftTweaker_Support/Destillation.md'
-        - Kraftstoffregistrierung 'Mods/Immersive_Petroleum/CraftTweaker_Support/FuelRegistration.md'
+        - Kraftstoffregistrierung: 'Mods/Immersive_Petroleum/CraftTweaker_Support/FuelRegistration.md'
         - Schmiermittel: 'Mods/Immersive_Petroleum/CraftTweaker_Support/Lubricant.md'
         - Reservoir: 'Mods/Immersive_Petroleum/CraftTweaker_Support/Reservoir.md'
     - Industrielle Nachfrage:
@@ -677,11 +677,11 @@ nav:
         - Amboss: 'Mods/Modtweaker/BetterWithMods/Anvil.md'
         - Bänder: 'Mods/Modtweaker/BetterWithMods/Bellows.md'
         - Buoyancy: 'Mods/Modtweaker/BetterWithMods/Buoyancy.md'
-        - Kessel 'Mods/Modtweaker/BetterWithMods/Cauldron.md'
-        - Crucible.md 'Mods/Modtweaker/BetterWithMods/Crucible.md'
+        - Kessel: 'Mods/Modtweaker/BetterWithMods/Cauldron.md'
+        - Crucible: 'Mods/Modtweaker/BetterWithMods/Crucible.md'
         - Filtered Hopper: 'Mods/Modtweaker/BetterWithMods/FilteredHopper.md'
         - HeatRegistry: 'Mods/Modtweaker/BetterWithMods/HeatRegistry.md'
-        - HCOfen 'Mods/Modtweaker/BetterWithMods/HCFurnace.md'
+        - HCOfen: 'Mods/Modtweaker/BetterWithMods/HCFurnace.md'
         - HCBewegung: 'Mods/Modtweaker/BetterWithMods/HCMovement.md'
         - Ofen: 'Mods/Modtweaker/BetterWithMods/Kiln.md'
         - Mill: 'Mods/Modtweaker/BetterWithMods/Mill.md'
@@ -722,7 +722,7 @@ nav:
       - Inspiration:
         - Inspiration: 'Mods/Modtweaker/Inspirations/Inspirations.md'
         - Handlers:
-          - Kessel 'Mods/Modtweaker/Inspirations/Handlers/Cauldron.md'
+          - Kessel: 'Mods/Modtweaker/Inspirations/Handlers/Cauldron.md'
       - Verfeinerter Speicher:
         - Rezepte:
           - Solderer: 'Mods/Modtweaker/RefinedStorage/Rezepte/Solderer.md'
@@ -756,7 +756,7 @@ nav:
           - Perspektiven: 'Mods/Modtweaker/Thaumcraft/Bracket/Bracket_Aspect.md'
         - Handlers:
           - Arkane Werkbank: 'Mods/Modtweaker/Thaumcraft/Handlers/ArcaneWorkbench.md'
-          - Crucible.md' Mods/Modtweaker/Thaumcraft/Handlers/Crucible.md
+          - Crucible.md: 'Mods/Modtweaker/Thaumcraft/Handlers/Crucible.md'
           - Infusion: 'Mods/Modtweaker/Thaumcraft/Handlers/Infusion.md'
           - Plünderung: 'Mods/Modtweaker/Thaumcraft/Handlers/Loot.md'
           - Salis Mundus: 'Mods/Modtweaker/Thaumcraft/Handlers/SalisMundus.md'
@@ -795,7 +795,7 @@ nav:
       - MrCrayfish's Möbel Mod: 'Mods/MrCrayfish_s_Furniture_Mod/MrCrayfish_s_Furniture_Mod.md'
       - Herstellung:
         - Blender: 'Mods/MrCrayfish_s_Furniture_Mod/Blender.md'
-        - Choppingboard 'Mods/MrCrayfish_s_Furniture_Mod/ChoppingBoard.md'
+        - Choppingboard: 'Mods/MrCrayfish_s_Furniture_Mod/ChoppingBoard.md'
         - Geschirrspüler: 'Mods/MrCrayfish_s_Furniture_Mod/Dishwasher.md'
         - Freezer: 'Mods/MrCrayfish_s_Furniture_Mod/Freezer.md'
         - Grill: 'Mods/MrCrayfish_s_Furniture_Mod/Grill.md'
