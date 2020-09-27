@@ -104,7 +104,7 @@ nav:
         - IExplosionイベント: 'Vanilla/Events/Events/IExplossionEvent.md'
         - ILivingEvent: 'Vanilla/Events/Events/ILivingEvent.md'
         - IPlayerEvent: 'Vanilla/Events/Events/IPlayerEvent.md'
-          以下の実際のイベント
+          # 以下の実際のイベント
         - AnimalTameイベント: 'Vanilla/Events/Events/AnimalTime.md'
         - BlockBreakイベント: 'Vanilla/Events/Events/BlockBreak.md'
         - BlockHarvestDropsイベント: 'Vanilla/Events/Events/BlockHarvestDrops.md'
