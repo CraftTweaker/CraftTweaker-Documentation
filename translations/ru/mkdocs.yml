@@ -13,7 +13,7 @@ nav:
           - Блок:
               - Материал:
                   - MCMaterial: 'vanilla/api/block/material/MCMaterial.md'
-                  Цвет: 'ванильная/api/block/material/MCMaterialColor.md'
+                  - Цвет: 'ванильная/api/block/material/MCMaterialColor.md'
           - Блоки:
               - MCBlock: 'ванильная/api/blocks/MCBlock.md'
               - MCBlockState: 'ванильная/api/blocks/MCBlockState.md'
