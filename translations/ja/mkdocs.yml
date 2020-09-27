@@ -272,7 +272,7 @@ nav:
         - Util: 'Mods/Astral_Sorcery/Util.md'
     - Boson:
       - Boson/About.md: 'Mods/Boss/About.md'
-      -菩薩の名称：「Mods/Boson/Names.md」
+      - 菩薩の名称: 'Mods/Boson/Names.md'
       - The ZenScriptX Project: 'Mods/Boson/ZenScriptX.md'
       - ローダー:
         - タグ: 'Mods/Boss/Loaders/Tags.md'
@@ -343,7 +343,7 @@ nav:
             - XNOR-Gate: 'Mods/CompatSkills/Requirements/Requirement_Types/Logic_Operators/XNOR-Gate.md'
             - XOR-Gate: 'Mods/CompatSkills/Requirements/Requirement_Types/Logic_Operators/XOR-Gate.md'
           - 鉱石辞書: 'Mods/CompatSkills/Requirements/Requirement_Types/Ore_Dictionary.md'
-          - スキル：「Mods/CompatSkills/Requirements/Requirements_Types/Skills.md」
+          - スキル：'Mods/CompatSkills/Requirements/Requirements_Types/Skills.md'
           - ツール収穫レベル: 'Mods/CompatSkills/Requirements/Requirement_Types/Tool_Harvest-Level.md'
           - 形質: 'Mods/CompatSkills/Requirements/Requirements_Types/Traits.md'
         - スキルと形質: 'Mods/CompatSkills/Requirements/Skills_Traits.md'
@@ -430,7 +430,7 @@ nav:
           - Fluid: 'Mods/ContentTweaker/Vanilla/Creatable_Content/Fluid.md'
           - 項目: 'Mods/ContentTweaker/Vanilla/Creatable_Content/Item.md'
           - 食品アイテム: 'Mods/ContentTweaker/Vanilla/Creatable_Content/ItemFood.md'
-        - 高度な機能
+        - 高度な機能:
           - コマンド: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Commands.md'
           - マップ: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Map.md'
           - 機能:
@@ -498,7 +498,7 @@ nav:
       - ニワトリ:
         - ChickenFactory: 'Mods/ContentTweaker/Chickens/ChickenFactory.md'
         - ChickenRepresentation: 'Mods/ContentTweaker/ChickenRepresentation.md'
-      -ティンカーズの構文：
+      -ティンカーズの構文:
         - ブラケット記法:
           - 素材: 'Mods/ContentTweaker/Tinkers_Construct/Brackets/Bracket_Material.md'
           - 形質: 'Mods/ContentTweaker/Tinkers_Construct/Brackets/Bracket_Trait.md'
@@ -611,7 +611,7 @@ nav:
         - 合金処理: 'Mods/Immersive_Engineering/CraftTweaker_Support/Refinery.md'
         - Squeezer: 'Mods/Immersive_Engineering/CraftTweaker_Support/Squezer.md'
         - Thermoelectric: 'Mods/Immersive_Engineering/CraftTweaker_Support/Thermoelectric.md'
-    -没入型石油:
+    - 没入型石油:
       - Immersive Petroleum: 'Mods/Immersive_Petroleum/Immersive_Petroleum.md'
       - CraftTweaker Support:
         - Distillation: 'Mods/Immersive_Petroleum/CraftTweaker_Support/Distillation.md'
@@ -641,7 +641,7 @@ nav:
       - JEI: 'Mods/JEI/JEI.md'
     - LootTableTweaker:
       - LootTableTweaker: 'Mods/LootTableTweaker/LootTableTweaker.md'
-    -Mekanism:
+    - Mekanism:
       - Chemical Crystallizer: 'Mods/Mekanism/Chemical_Crystallizer.md'
       - 化学溶解室: 'Mods/Mekanism/Chemical_Dissolution_Chamber.md'
       - Chemical Infouser: 'Mods/Mekanism/Chemical_Infuser.md'
@@ -719,14 +719,14 @@ nav:
         - Squeezer: 'Mods/Modtweaker/Forestry/Squeezer.md'
         - Still: 'Mods/Modtweaker/Forestry/Still.md'
         - Thermionic Fabricator: 'Mods/Modtweaker/Forestry/Thermionic_Fabricator.md'
-      - インスピレーション：
+      - インスピレーション:
         - インスピレーション: 'Mods/Modtweaker/Inspirations/Inspirations.md'
         - Handlers:
           - 大釜：'Mods/Modtweaker/Inspirations/Handlers/Cauldron.md'
       - 精製済みストレージ:
         - レシピ:
           - 半田付け: 'Mods/Modtweaker/RefinedStorage/Recipes/Solder.md'
-      -ティンカーズの構文：
+      - ティンカーズの構文:
         - コマンド: 'Mods/Modtweaker/TConstruct/Commands.md'
         - ブラケット記法:
           - Material Bracket Handler: 'Mods/Modtweaker/TConstruct/Brackets/Bracket_Material.md'
@@ -937,7 +937,7 @@ nav:
       - 合金鍛造: 'Mods/SteamAgeRevolution/AlloyForge.md'
       - キャスティングブロック: 'Mods/SteamAgeRevolution/CastingBlock.md'
       - Crucible: 'Mods/SteamAgeRevolution/Crucible.md'
-      -蒸留器：「Mods/SteamAgeRevolution/Distiller.md」
+      - 蒸留器: 'Mods/SteamAgeRevolution/Distiller.md'
       - Grinder: 'Mods/SteamAgeRevolution/Grinder.md'
       - 蒸気炉：'Mods/SteamAgeRevolution/SteamFurnace.md'
       - SteamHammer: 'Mods/SteamAgeRevolution/SteamHammer.md'
