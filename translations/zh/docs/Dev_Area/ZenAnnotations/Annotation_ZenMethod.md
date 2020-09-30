@@ -1,4 +1,4 @@
-# ZenMethod（ZenMethod）
+# ZenMethod
 
 ZenMethod 是暴露给 ZenScript 的 Java 方法。
 
