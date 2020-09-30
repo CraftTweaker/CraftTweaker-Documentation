@@ -1,16 +1,16 @@
-# Химический Реактор
+# Chemical Reactor
 
-## Импортирование пакета
-`mods.nuclearcraft.Химический Реактор`
+## Importing the Package
+`mods.nuclearcraft.ChemicalReactor`
 
-## Добавление рецептов
+## Adding Recipes
 ```zenscript
 mods.nuclearcraft.ChemicalReactor.addRecipe(ILiquidStack fluidInput1, ILiquidStack fluidInput2, ILiquidStack fluidOutput1, ILiquidStack fluidOutput2, @Optional double timeMultiplier, @Optional double powerMultiplier, @Optional double processRadiation);
 ```
 
-## Удаление рецептов
+## Removing Recipes
 ```zenscript
 mods.nuclearcraft.ChemicalReactor.removeRecipeWithInput(ILiquidStack fluidInput1, ILiquidStack fluidInput2);
 mods.nuclearcraft.ChemicalReactor.removeRecipeWithOutput(ILiquidStack fluidOutput1, ILiquidStack fluidOutput2);
-mods.nuclearcraft.удаление химических реакторов ();
+mods.nuclearcraft.ChemicalReactor.removeAllRecipes();
 ```
