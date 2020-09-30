@@ -1,44 +1,44 @@
-# Позиция 3f
+# Position 3f
 
-Позиция в Minecraft состоит из 3 значений: x, y и z.  
-Объект Position3f хранит позицию, используя эти три значения.
+A Position in Minecraft consists of 3 values: x, y and z.  
+A Position3f Object stores a position using those three values.
 
 ## Импорт пакета
 
-Возможно, вам потребуется [импортировать](/AdvancedFunctions/Import/) пакет, если вы столкнетесь с какими-либо проблемами (например, использование [массива](/AdvancedFunctions/Arrays_and_Loops/)), так что лучше быть безопасным, чем извините и добавить импорт.  
-`импортировать crafttweaker.util.Position3f;`
+It might be required for you to [import](/AdvancedFunctions/Import/) the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
+`import crafttweaker.util.Position3f;`
 
-## Получение объекта Position3f
+## Getting a Position3f object
 
-Вы можете получить такой объект с помощью:
+You can get such an object using:
 
-- `позиция` ZenGetter на объекте [IPlayer](/Vanilla/Players/IPlayer/)
-- Конструктор Position3f ниже
-- Позиция [IBlockPos](/Vanilla/World/IBlockPos/) позиция3f.
+- The `position` ZenGetter on a [IPlayer](/Vanilla/Players/IPlayer/) object
+- The Position3f constructor below
+- The [IBlockPos](/Vanilla/World/IBlockPos/) Position3f caster.
 
-## Конструктор с позицией 3f
+## Position3f constructor
 
-Вы можете создать объект Position3f самостоятельно, используя следующий метод:
+You can create a Position3f object yourself by using the following method:
 
 ```zenscript
 crafttweaker.util.Position3f.create(float x, float y, float z);
 ```
 
-Первый метод позволяет создать позицию по заданным координатам.
+The First method allows you to create a position at the given coordinates.
 
-## ZenGetters и ZenSetters
+## ZenGetters and ZenSetters
 
-| Геттер | ZenSetter | Описание                      |
-| ------ | --------- | ----------------------------- |
-| х      | х         | Возвращает значение позиции x |
-| y      | у         | Возвращает значение y позиции |
-| z      | z         | Возвращает значение z позиции |
+| Геттер | ZenSetter | Description                    |
+| ------ | --------- | ------------------------------ |
+| х      | x         | Returns the position's x value |
+| y      | y         | Returns the position's y value |
+| z      | z         | Returns the position's z value |
 
-## Разливка как IBlockPos
+## Casting as IBlockPos
 
-Вы можете использовать два способа для использования объекта Position3f в [IBlockPos](/Vanilla/World/IBlockPos/) объект: Помните, для передачи вам нужно [импортировать](/AdvancedFunctions/Import/) тип, на который вы хотите записать, если вы не используете полное имя.
+You can use the two ways below to cast a Position3f Object to an [IBlockPos](/Vanilla/World/IBlockPos/) Object: Remember, for casting you need to [import](/AdvancedFunctions/Import/) the type you want to cast to unless you use the full name.
 
 ```zenscript
-poster.asBlockPos();
+posThree.asBlockPos();
 posThree as IBlockPos;
 ```
