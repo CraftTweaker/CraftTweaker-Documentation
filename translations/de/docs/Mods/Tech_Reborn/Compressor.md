@@ -1,14 +1,14 @@
-# Kompressor
+# Compressor
 
-## Paket wird importiert
+## Importing the Package
 `mods.techreborn.compressor`
 
-## Rezepte hinzufügen
+## Adding Recipes
 ```zenscript
 mods.techreborn.compressor.addRecipe(IItemStack output1, IIngredient input1, int ticktime, int euTick);
 ```
 
-## Rezepte entfernen
+## Removing Recipes
 ```zenscript
 mods.techreborn.compressor.removeInputRecipe(IIngredient ingredient);
 mods.techreborn.compressor.removeRecipe(IItemStack output);
