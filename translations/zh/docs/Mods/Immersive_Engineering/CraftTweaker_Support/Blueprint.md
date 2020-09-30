@@ -1,37 +1,37 @@
-# 蓝图
+# Blueprint
 
-蓝图制作包可以用来添加/移除沉浸工程蓝图制作器中的配方。
+The Blueprint crafting package can be used to add/remove recipes to/from the Immersive Engineering Blueprint crafting.
 
 ## PSA
 
-[类别](/Mods/Immersive_Engineering/Variables/Categories/) 字符串非常特殊。 对于输入的没有已经建立的类别的字符串，它会创建一个新的类别，从而创建一个新的蓝图。 这意味着您可以添加一个名为“香蕉采购”的蓝图类别，提供"食物配方"。 在第一个条目找到后，它会在生成的类别下生成该类别字符串的所有附加配方。
+The [Category](/Mods/Immersive_Engineering/Variables/Categories/) String is quite special. For any string entered that doesn't already have an established Category, it'll create a new Category and thus a new Blueprint. This means that you could add a Blueprint Category called "Banana Pancakes" that provides "Food Recipes". After the first entry found it'll generate all additional recipes for that Category String under the generated Category.
 
-## 调用包
+## Calling The Package
 
-您可以使用 `mods.immersiveengineering.Blueprint` 调用蓝图包。
+You can call the Blueprint package using `mods.immersiveengineering.Blueprint`.
 
 ## 添加配方
 
-| 必填 | 类型 | 数据类型                                                        |
-| -- | -- | ----------------------------------------------------------- |
-| 必要 | 类别 | 字符串 [类别](/Mods/Immersive_Engineering/Variables/Categories/) |
-| 必要 | 输出 | [物品堆（IItemstack）](/Vanilla/Items/IItemStack/)               |
-| 必填 | 输入 | [材料（IIngredient）](/Vanilla/Variable_Types/IIngredient/)     |
+| Required | 类型       | 数据类型                                                                 |
+| -------- | -------- | -------------------------------------------------------------------- |
+| 必要       | Category | String [Category](/Mods/Immersive_Engineering/Variables/Categories/) |
+| 必要       | 输出       | [物品堆（IItemstack）](/Vanilla/Items/IItemStack/)                        |
+| Required | 输入       | [材料（IIngredient）](/Vanilla/Variable_Types/IIngredient/)              |
 
 ### 例子
 
 ```zenscript
-//示例：
-mods.immersiveengineering.Blueprint.addRecipe(String category, IItemStack output, IIngredient[…]输入)；
+//Example:
+mods.immersiveengineering.Blueprint.addRecipe(String category, IItemStack output, IIngredient[] inputs);
 
-/Using an existing category String
-mods.immersiveengineering.Blueprint. ddRecipe("components", <minecraft:diamond>, [<ore:logWood>, <minecraft:dirt>]);
+//Using an existing Category String
+mods.immersiveengineering.Blueprint.addRecipe("components", <minecraft:diamond>, [<ore:logWood>, <minecraft:dirt>]);
 
-//Using a new category string (This can enving a new Blutrue item)
-mods. mmersiveengineering.Blueprint.addRecipe("Banana Pancakes", <minecraft:diamond>, [<ore:logWood>, <minecraft:dirt>]);
+//Using a new Category String (This generates a new Blueprint item)
+mods.immersiveengineering.Blueprint.addRecipe("Banana Pancakes", <minecraft:diamond>, [<ore:logWood>, <minecraft:dirt>]);
 ```
 
-## 删除配方
+## Remove Recipe
 
 | 类型 | 数据类型                                          |
 | -- | --------------------------------------------- |
@@ -40,7 +40,7 @@ mods. mmersiveengineering.Blueprint.addRecipe("Banana Pancakes", <minecraft:diam
 ### 比如：
 
 ```zenscript
-//示例：
-mods.immersiveengineering.Blueprint.removeRecipe(IItemStack 输出)；
-mods.immersiveengineering.Blueprint.removeRecipe(<minecraft:diamond>)；
+//Example:
+mods.immersiveengineering.Blueprint.removeRecipe(IItemStack output);
+mods.immersiveengineering.Blueprint.removeRecipe(<minecraft:diamond>);
 ```
