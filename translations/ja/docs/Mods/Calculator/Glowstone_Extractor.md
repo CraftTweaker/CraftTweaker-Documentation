@@ -1,14 +1,14 @@
-# グロウストーン抽出
+# Glowstone Extractor
 
-## パッケージ
+## Package
 ```zenscript
 import mods.calculator.glowstone;
 ```
 
-## メソッド
+## Methods
 
-- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input** 入力。
-- **Int値** 入力の量がそのマシンに追加されます。
+- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input** The input.
+- **Int value** The amount of input adds to that machine.
 
 
 ## Additon
@@ -16,7 +16,7 @@ import mods.calculator.glowstone;
 glowstone.addRecipe(IIngredient input, int value);
 ```
 
-## 削除
+## Removal
 ```zenscript
-glowstone.removeRecipe(IIngredient入力);
+glowstone.removeRecipe(IIngredient input);
 ```
