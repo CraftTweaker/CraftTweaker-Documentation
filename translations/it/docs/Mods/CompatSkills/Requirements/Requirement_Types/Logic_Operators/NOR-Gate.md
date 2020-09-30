@@ -1,6 +1,6 @@
-# Operatore NOR
+# NOR Operator
 
-Un cancello **NOR** è un cancello **O** invertito. Questo è lo stesso che si utilizza l'output del cancello **OR** come l'ingresso al cancello **NON**. Ciò significa che il **NOR** gate restituisce `TRUE` solo quando entrambi gli ingressi sono `FALSE`.
+A **NOR** gate is an inverted **OR** gate. This is the same as using the output of the **OR** gate as the input to the **NOT** gate. This means that the **NOR** gate returns `TRUE` only when both inputs are `FALSE`.
 
 | Input 1 | Input 2 | Output |
 | ------- | ------- | ------:|
@@ -9,17 +9,17 @@ Un cancello **NOR** è un cancello **O** invertito. Questo è lo stesso che si u
 | 1       | 0       |      0 |
 | 1       | 1       |      0 |
 
-    Esempio vuoto:
-    nor<unk> []~[]
+    Empty Example:
+    nor|[]~[]
     
-    Esempio pieno:
-    nor<unk> [reskillable:mining<unk> 5]~[reskillable:collecting<unk> 5]
+    Filled-In Example:
+    nor|[reskillable:mining|5]~[reskillable:gathering|5]
     
 
 ## Use-Case
 
-Consenti solo di utilizzare una pala di legno fino a quando il giocatore ottiene miniere o raccogliere il livello 5:
+Only allow using a wooden shovel until the player gets mining or gathering level 5:
 
 ```zenscript
-addRequirement(<minecraft:wooden_shovel:*>, "nor<unk> [reskillable:mining<unk> 5]~[reskillable:collecting<unk> 5]");
+addRequirement(<minecraft:wooden_shovel:*>, "nor|[reskillable:mining|5]~[reskillable:gathering|5]");
 ```
