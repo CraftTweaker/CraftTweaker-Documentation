@@ -1,18 +1,18 @@
 # IEntityXp
 
-表示一个XP Orb在世界。
+Represents an XP Orb in the world.
 
 ## 导入相关包
 
-如果您遇到任何问题，可能需要导入软件包(例如铸造一个 [数组](/AdvancedFunctions/Arrays_and_Loops/)), 这样比抱歉更安全并添加导入。  
-`导入craftweaker.entity.IEntityXp;`
+It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
+`import crafttweaker.entity.IEntityXp;`
 
-## 扩展 [IEntity](/Vanilla/Entities/IEntity/)
+## Extending [IEntity](/Vanilla/Entities/IEntity/)
 
-IEntityXp 扩展 [IEntity](/Vanilla/Entities/IEntity/). 这意味着 [Ientities](/Vanilla/Entities/IEntity/) 的所有功能也都可用给IEntityXp。
+IEntityXp extends [IEntity](/Vanilla/Entities/IEntity/). That means all functions available to [IEntities](/Vanilla/Entities/IEntity/) also are available to IEntityXp.
 
 ## ZenGetters
 
 | ZenGetter | 返回值类型 |
 | --------- | ----- |
-| xp        | 浮点数   |
+| xp        | float |
