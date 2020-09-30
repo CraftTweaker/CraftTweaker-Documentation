@@ -1,14 +1,14 @@
 # Классы
 
-Я ставлю это здесь, так что только те, кто хочет знать, по крайней мере, некоторые вещи на ZS найдут его.
+I am putting this here so only those who want to know at least some things on ZS will find it.
 
-Класс ZenClass - это класс java, но вы можете определить его из ZS.  
-Если вы считаете 'Это не соответствует теме языка сценария' вы правы.  
-Поэтому только те, кто способен с ним бороться, должны найти это.
+A ZenClass is essentially a java class but you can define it from within ZS.  
+If you think 'That does not really fit the theme of a scripting language' you are right.  
+That's why only those who are able to mess with it should ever find this.
 
 ## Ключевые слова
 
-Это ключевые слова, которые могут быть найдены в теле класса, и они будут инициировать определенное действие, например, добавление участника к классу.
+These are keywords that can be found in the class' body and they will initiate a certain action, like adding a member to the class.
 
 | Название       | Описание                                                                                                                                            |
 | -------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -34,10 +34,10 @@ zenClass name {
 
 
     //Статические поля инициализируются в <clinit>, то есть во время определения класса.
-    статический мистатик как строка = "значение";
-    статическая otherStatic как строка = "значение";
+    static myStatic as string = "value";
+    static otherStatic as string = "value";
 
-    //Если экземпляр varaible имеет инициализатор, он будет инициализирован после первого вызова конструктора.
+    //If an instance varaible has an initializer, it will be initialized after before the first constructor call.
     val nonStatic as string = "123";
 
     //Если поле объекта не имеет инициализатора, вы можете присвоить ее в конструкторе, даже если она неизменяемая.
