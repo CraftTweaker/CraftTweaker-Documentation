@@ -1,21 +1,21 @@
-# 锯木厂
+# Sawmill
 
 ## 所属包名
 
-`thermalext.Sawmill`
+`mods.thermalexpansion.Sawmill`
 
 ## 添加配方
 
 ```zenscript
-mods.thermalext.Sawmill.addRecipe(IItemStack output, IItemStack input, int energy, @Optional IItemStack secondaryOutput, @Optional int secondaryChance);
+mods.thermalexpansion.Sawmill.addRecipe(IItemStack output, IItemStack input, int energy, @Optional IItemStack secondaryOutput, @Optional int secondaryChance);
 
-mods.thermalext.Sawmill.addRecipe(<minecraft:diamond>, <minecraft:stick>, 1500, <minecraft:stone>, 20);
+mods.thermalexpansion.Sawmill.addRecipe(<minecraft:diamond>, <minecraft:stick>, 1500, <minecraft:stone>, 20);
 ```
 
 ## 删除配方
 
 ```zenscript
-mods.thermallipl.Sawmill.removeRecipe(IItemStack 输入);
+mods.thermalexpansion.Sawmill.removeRecipe(IItemStack input);
 
-mods.thermallipl.Sawmill.removeRecipe(<minecraft:painting>);
+mods.thermalexpansion.Sawmill.removeRecipe(<minecraft:painting>);
 ```
