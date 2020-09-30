@@ -1,24 +1,24 @@
 # EntityMountEvent
 
-Das EntityMount-Event wird gefeuert, wenn eine Entität montiert oder abgebaut wird. Wenn abgebrochen, wird die Entität daran gehindert, zu mounten (oder abzubauen).
+The EntityMount event is fired whenever an entity is mounted or dismounted from. If canceled, the entity is prevented from mounting (or dismounting).
 
 ## Event-Klasse
 You will need to cast the event in the function header as this class:  
 `crafttweaker.event.EntityMountEvent` You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
 
 ## Erweiterte Event-Schnittellen
-EntityMountEvent Events implementieren die folgenden Schnittstellen und können auch alle ihre Methoden/Getters/Setter aufrufen:
+EntityMountEvent Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
 
 - [ILivingEvent](/Vanilla/Events/Events/ILivingEvent/)
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 
 ## ZenGetter/ZenSetter
-Folgende Informationen können während der Veranstaltung abgerufen bzw. eingestellt werden:
+The following information can be retrieved/set during the event:
 
 | ZenGetter        | Rückgabetyp                           |
 | ---------------- | ------------------------------------- |
-| `Welt`           | [IWorld](/Vanilla/World/IWorld/)      |
+| `world`          | [IWorld](/Vanilla/World/IWorld/)      |
 | `mountingEntity` | [IEntity](/Vanilla/Entities/IEntity/) |
 | `mountedEntity`  | [IEntity](/Vanilla/Entities/IEntity/) |
 | `isMounting`     | boolean                               |
-| `isTrennen`      | boolean                               |
+| `isDismounting`  | boolean                               |
