@@ -1,6 +1,6 @@
-# ПлейерБонемель
+# PlayerBonemeal
 
-Событие PlayerBonemeal запускается всякий раз, когда игрок использует костный блок.
+The PlayerBonemeal Event is fired whenever a player uses bonemeal on a block.
 
 ## Класс события
 
@@ -10,33 +10,33 @@ You can, of course, also [import](/AdvancedFunctions/Import/) the class before a
 
 ## Наследование от интерфейсов событий
 
-PlayerBonemeal События реализуют следующие интерфейсы и также могут вызвать все их методы/getters/setters:
+PlayerBonemeal Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
 
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 - [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
 - [IProcessableEvent](/Vanilla/Events/Events/IProcessableEvent/)
-- [Событие доступно](/Vanilla/Events/Events/IEventPositionable/)
+- [IEventPositionable](/Vanilla/Events/Events/IEventPositionable/)
 
 ## ZenGetters
 
 Следующая информация может быть получена от события:
 
-| Геттеры       | Возвращаемый тип                            |
-| ------------- | ------------------------------------------- |
-| `отменено`    | boolean                                     |
-| `обработано`  | boolean                                     |
-| `х`           | int                                         |
-| `у`           | int                                         |
-| `z`           | int                                         |
-| `player`      | [IPlayer](/Vanilla/Players/IPlayer/)        |
-| `world`       | [IWorld](/Vanilla/World/IWorld/)            |
-| `блок`        | [БИБлок](/Vanilla/Blocks/IBlock/)           |
-| `blockState`  | [IBlockState](/Vanilla/Blocks/IBlockState/) |
-| `Блокировщик` | [IBlockPos](/Vanilla/World/IBlockPos/)      |
-| `измерение`   | int                                         |
-| `элемент`     | [IItemStack](/Vanilla/Items/IItemStack/)    |
+| ZenGetter    | Возвращаемый тип                            |
+| ------------ | ------------------------------------------- |
+| `canceled`   | boolean                                     |
+| `processed`  | boolean                                     |
+| `x`          | int                                         |
+| `y`          | int                                         |
+| `z`          | int                                         |
+| `player`     | [IPlayer](/Vanilla/Players/IPlayer/)        |
+| `world`      | [IWorld](/Vanilla/World/IWorld/)            |
+| `block`      | [IBlock](/Vanilla/Blocks/IBlock/)           |
+| `blockState` | [IBlockState](/Vanilla/Blocks/IBlockState/) |
+| `blockPos`   | [IBlockPos](/Vanilla/World/IBlockPos/)      |
+| `dimension`  | int                                         |
+| `item`       | [IItemStack](/Vanilla/Items/IItemStack/)    |
 
 ## ZenMethods
 
-- `event.cancel()` устанавливает событие, как отменено
-- `event.process()` устанавливает событие как обработанное
+- `event.cancel()` sets the event as cancelled
+- `event.process()` sets the event as processed
