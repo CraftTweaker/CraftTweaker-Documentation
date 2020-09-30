@@ -1,8 +1,8 @@
-# Gestionnaire de pont d'onglets créatifs
+# Creative Tab Bracket Handler
 
-Le gestionnaire Creative Tab Bracket vous donne accès aux onglets Creative du jeu.
+The Creative Tab Bracket Handler gives you access to the Creative Tabs in the game.
 
-Les onglets créatifs sont référencés dans le gestionnaire des onglets créatifs de cette façon :
+Creative Tabs are referenced in the creative tabs handler this way:
 
 Vanilla
 
@@ -12,4 +12,4 @@ Vanilla
 <creativetab:misc>
 ```
 
-Si l'onglet créatif est trouvé, cela retournera un objet [un onglet créatif](/Mods/ContentTweaker/Vanilla/Creatable_Content/Creative_Tab/).
+If the creative tab is found, this will return a [creative tab](/Mods/ContentTweaker/Vanilla/Creatable_Content/Creative_Tab/) Object.
