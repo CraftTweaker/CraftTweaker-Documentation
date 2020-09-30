@@ -1,25 +1,25 @@
 # Wyniki MCParseults
 
-Ta klasa została dodana przez moda z mod-id `crafttweaker`. Więc musisz zainstalować tę modyfikację, jeśli chcesz używać tej funkcji.
+This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
 
-## Importowanie klasy
-Może być wymagane zaimportowanie pakietu, jeśli napotkasz jakiekolwiek problemy (np. rzucanie tablicy), tak aby były bezpieczne niż przepraszamy i dodaj import.
+## Importing the class
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
 ```zenscript
 crafttweaker.api.commands.custom.MCParseResults
 ```
 
-## Metody
-### równa się
+## Methods
+### equals
 
-Typ zwrotu: logiczny
+Return type: boolean
 
 ```zenscript
 myMCParseResults.equals(o jako obiekt);
 ```
 
-| Parametr | Typ    | Opis             |
-| -------- | ------ | ---------------- |
-| ob       | Obiekt | Nie podano opisu |
+| Parameter | Type   | Description             |
+| --------- | ------ | ----------------------- |
+| o         | Object | No description provided |
 
 
 ### getContext
@@ -48,7 +48,7 @@ myMCParseResults.getReader();
 
 ### hashCode
 
-Typ zwrotu: int
+Return type: int
 
 ```zenscript
 myMCParseResults.hashCode();
@@ -56,27 +56,27 @@ myMCParseResults.hashCode();
 
 ### toString
 
-Typ zwrotu: Ciąg
+Return type: String
 
 ```zenscript
 myMCParseResults.toString();
 ```
 
 
-## Operatorzy
-### RÓŻNE
+## Operators
+### EQUALS
 
 ```zenscript
 myMCParseResults == o jako obiekt
 ```
 
-| Parametr | Typ    | Opis             |
-| -------- | ------ | ---------------- |
-| ob       | Obiekt | Nie podano opisu |
+| Parameter | Type   | Description             |
+| --------- | ------ | ----------------------- |
+| o         | Object | No description provided |
 
-## Szafy na akta, szafy na kartoteki, kasety na papiery, podpórki na papiery, pojemniki na przybory do pisania, stojaki na stemple biurowe i podobne wyposażenie biurowe lub biurkowe, z metali nieszlachetnych
+## Casters
 
-| Typ wyniku  | Jest niedomniemany |
-| ----------- | ------------------ |
-| Ciąg znaków | prawda             |
+| Result type | Is Implicit |
+| ----------- | ----------- |
+| String      | true        |
 
