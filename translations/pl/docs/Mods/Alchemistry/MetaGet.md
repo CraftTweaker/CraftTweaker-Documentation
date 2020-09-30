@@ -1,19 +1,19 @@
 # Meta Get
-Uzyskaj jest wygodną alternatywą dla wyszukiwania meta wartości dla wszystkich pierwiastków i związków, ale konwencjonalny sposób, tj.: <alchemistry:compound:17> nadal pracuje dobrze
+Get is an convenient alternative to looking up the meta value for all elements and compounds, but the conventional way i.e. <alchemistry:compound:17> still works fine
 
-## Pakiet
+## Package
 ```zenscript
 mods.alchemistry.Util.get`
 ```
 
-## Metody
+## Methods
 
-- **Nazwa ciągu** Nazwa elementu
+- **String Name** Element Name
 
-## Składnia
+## Syntax
 
 ```zenscript
-mods.alchemistry.Util.get(nazwa ciągu);
+mods.alchemistry.Util.get(String name);
 
 val strontiumCarbonate = mods.alchemistry.Util.get("strontium_carbonate");
 val carbon = mods.alchemistry.Util.get("carbon");
