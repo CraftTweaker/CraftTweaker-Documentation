@@ -1,20 +1,20 @@
 # IRegisterMaterialPart
 
-La funzione IRegisterMaterialPart è una fucntion utilizzata per registrare [Componenti materiali](/Mods/ContentTweaker/Materials/Materials/MaterialPart/) aggiunti utilizzando un [PartType personalizzato](/Mods/ContentTweaker/Materials/Parts/PartType/).
+The IRegisterMaterialPart function is a fucntion used to register [Material Parts](/Mods/ContentTweaker/Materials/Materials/MaterialPart/) added using a custom [PartType](/Mods/ContentTweaker/Materials/Parts/PartType/).
 
-## Importazione del pacchetto
+## Importing the package
 
-Se hai mai sentito la necessità di importare la classe di questa funzione, qui vai:
+If you ever feel the need to import this function's class, here you go:
 
 ```zenscript
 import mods.contenttweaker.RegisterMaterialPart;
 ```
 
-## Sintassi
+## Syntax
 
-Abbiamo una funzione vuota, che richiede una [Parte Materiale](/Mods/ContentTweaker/Materials/Materials/MaterialPart/) come input.  
-Questo è il materialPart che dovrebbe essere registrato.  
-Si potrebbe per esempio chiamare la [Vanilla Factory](/Mods/ContentTweaker/Vanilla/Creatable_Content/VanillaFactory/) a questo punto, ma come procedere forma questo punto è davvero a voi.
+We have a void function, that takes a [Material Part](/Mods/ContentTweaker/Materials/Materials/MaterialPart/) as input.  
+This is the materialPart that should be registered.  
+You could for example call the [Vanilla Factory](/Mods/ContentTweaker/Vanilla/Creatable_Content/VanillaFactory/) at this point, but how proceed form this point is really up to you.
 
 ```zenscript
 function(materialPart) {
