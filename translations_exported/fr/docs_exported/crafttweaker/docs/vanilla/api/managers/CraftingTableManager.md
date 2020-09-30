@@ -1,39 +1,39 @@
-# Gestionnaire de tableaux d'artisanat
+# CraftingTableManager
 
 
 
-Cette classe a été ajoutée par un mod avec le mod-id `crafttweaker`. Vous devez donc avoir ce mod installé si vous voulez utiliser cette fonctionnalité.
+This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
 
-## Importation de la classe
-Il pourrait vous être nécessaire d'importer le paquet si vous rencontrez des problèmes (comme lancer un tableau), alors mieux être sûr que désolé et ajouter l'importation.
+## Importing the class
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
 ```zenscript
 crafttweaker.api.CraftingTableManager
 ```
 
-## Interfaces implémentées
-CraftingTableManager implémente les interfaces suivantes. Cela signifie que toutes les méthodes disponibles peuvent également être utilisées dans cette classe.
+## Implemented Interfaces
+CraftingTableManager implements the following interfaces. That means any method available to them can also be used on this class.
 - [crafttweaker.api.brackets.CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
 - [crafttweaker.api.registries.IRecipeManager](/vanilla/api/managers/IRecipeManager)
 
-## Méthodes
+## Methods
 ### addJSONRecipe
 
-Ajoute une recette basée sur un IData fourni. L'IData fourni doit représenter un JSON DataPack, ce qui vous permet d'enregistrer des recettes pour tous les systèmes de DataPack prenant en charge IRecipeType.
+Adds a recipe based on a provided IData. The provided IData should represent a DataPack JSON, this effectively allows you to register recipes for any DataPack supporting IRecipeType systems.
 
 ```zenscript
 craftingTable.addJSONRecipe(name as String, data as crafttweaker.api.data.IData);
 craftingTable.addJSONRecipe("Nom_de_la_recette", {ingredient:{item:<item:minecraft:gold_ore>.registryName},result:<item:minecraft:cooked_porkchop>.registryName,experience:0.35 as float, cookingtime:100});
 ```
 
-| Paramètre | Type de texte                                          | Libellé                              |
-| --------- | ------------------------------------------------------ | ------------------------------------ |
-| Nom       | Chaîne de caractères                                   | nom de la recette                    |
-| données   | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | données représentant le fichier json |
+| Parameter | Type                                                   | Description                     |
+| --------- | ------------------------------------------------------ | ------------------------------- |
+| name      | String                                                 | name of the recipe              |
+| data      | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | data representing the json file |
 
 
-### Ajouté à Shaped
+### addShaped
 
-Ajoute une recette formée au tableau de fabrication
+Adds a shaped recipe to the crafting table
 
 ```zenscript
 craftingTable.addShaped(recipeName as String, output as crafttweaker.api.item.IItemStack, ingredients as crafttweaker.api.item.IIngredient[][], recipeFunction as crafttweaker.api.recipeFunctionMatrix);
@@ -41,17 +41,17 @@ craftingTable.addShaped("recipe_name", <item:minecraft:dirt>, [[<item:minecraft:
 craftingTable. ddShaped("recipe_name", <item:minecraft:dirt>, [[<item:minecraft:diamond>], [<tag:minecraft:wool>]], (usualOut as IItemStack, inputs as IItemStack[][]) => {if(entrées[0][0]. isplayName == "bloc diamant totalement réel" ){return usualOut;}return <item:minecraft:clay>.setDisplayName("Diamond");});
 ```
 
-| Paramètre           | Type de texte                                                                            | Libellé                                                                                                                              | Optionnel | Valeur par défaut |
-| ------------------- | ---------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ | --------- | ----------------- |
-| Nom de la recette   | Chaîne de caractères                                                                     | nom de la recette à ajouter.                                                                                                         | Faux      | `null`            |
-| Sortie              | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)                        | output [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)                                                             | Faux      | `null`            |
-| ingrédients         | [crafttweaker.api.item.Igredient](/vanilla/api/items/IIngredient)[][]                    | tableau d'un tableau de [crafttweaker.api.item.IIngredient](/vanilla/api/items/IIngredient) pour les entrées                         | Faux      | `null`            |
-| Fonction de recette | [crafttweaker.api.recipe.RecipeFunctionMatrix](/vanilla/api/recipe/RecipeFunctionMatrix) | optionnel [crafttweaker.api.recipe.RecipeFunctionMatrix](/vanilla/api/recipe/RecipeFunctionMatrix) pour des conditions plus avancées | vrai      | `null`            |
+| Parameter      | Type                                                                                     | Description                                                                                                                          | IsOptional | Default Value |
+| -------------- | ---------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ | ---------- | ------------- |
+| recipeName     | String                                                                                   | name of the recipe to add.                                                                                                           | false      | `null`        |
+| output         | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)                        | output [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)                                                             | false      | `null`        |
+| ingredients    | [crafttweaker.api.item.IIngredient](/vanilla/api/items/IIngredient)[][]                  | tableau d'un tableau de [crafttweaker.api.item.IIngredient](/vanilla/api/items/IIngredient) pour les entrées                         | false      | `null`        |
+| recipeFunction | [crafttweaker.api.recipe.RecipeFunctionMatrix](/vanilla/api/recipe/RecipeFunctionMatrix) | optionnel [crafttweaker.api.recipe.RecipeFunctionMatrix](/vanilla/api/recipe/RecipeFunctionMatrix) pour des conditions plus avancées | true       | `null`        |
 
 
-### Ajouter ShapedMirrored
+### addShapedMirrored
 
-Ajoute une recette en forme de miroir à la table d'artisanat
+Adds a mirrored shaped recipe to the crafting table
 
 ```zenscript
 craftingTable.addShapedMirrored(recipeName as String, output as crafttweaker.api.item.IItemStack, ingredients as crafttweaker.api.item.IIngredient[][], recipeFunction as crafttweaker.api.recipe.RecipeFunctionMatrix);
@@ -59,17 +59,17 @@ craftingTable.addShapedMirrored("recipe_name", <item:minecraft:dirt>, [[<item:mi
 craftingTable.addShapedMirrored("recipe_name", <item:minecraft:dirt>, [[<item:minecraft:diamond>], [<tag:minecraft:wool>]], (usualOut as IItemStack, inputs as IItemStack[][]) => {if(inputs[0][0].displayName == "totally real diamond block" ){return usualOut;}return <item:minecraft:clay>.setDisplayName("Diamond");});
 ```
 
-| Paramètre           | Type de texte                                                                            | Libellé                                                                                                                              | Optionnel | Valeur par défaut |
-| ------------------- | ---------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ | --------- | ----------------- |
-| Nom de la recette   | Chaîne de caractères                                                                     | nom de la recette à ajouter.                                                                                                         | Faux      | `null`            |
-| Sortie              | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)                        | output [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)                                                             | Faux      | `null`            |
-| ingrédients         | [crafttweaker.api.item.Igredient](/vanilla/api/items/IIngredient)[][]                    | tableau d'un tableau de [crafttweaker.api.item.IIngredient](/vanilla/api/items/IIngredient) pour les entrées                         | Faux      | `null`            |
-| Fonction de recette | [crafttweaker.api.recipe.RecipeFunctionMatrix](/vanilla/api/recipe/RecipeFunctionMatrix) | optionnel [crafttweaker.api.recipe.RecipeFunctionMatrix](/vanilla/api/recipe/RecipeFunctionMatrix) pour des conditions plus avancées | vrai      | `null`            |
+| Parameter      | Type                                                                                     | Description                                                                                                                          | IsOptional | Default Value |
+| -------------- | ---------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ | ---------- | ------------- |
+| recipeName     | String                                                                                   | name of the recipe to add.                                                                                                           | false      | `null`        |
+| output         | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)                        | output [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)                                                             | false      | `null`        |
+| ingredients    | [crafttweaker.api.item.IIngredient](/vanilla/api/items/IIngredient)[][]                  | tableau d'un tableau de [crafttweaker.api.item.IIngredient](/vanilla/api/items/IIngredient) pour les entrées                         | false      | `null`        |
+| recipeFunction | [crafttweaker.api.recipe.RecipeFunctionMatrix](/vanilla/api/recipe/RecipeFunctionMatrix) | optionnel [crafttweaker.api.recipe.RecipeFunctionMatrix](/vanilla/api/recipe/RecipeFunctionMatrix) pour des conditions plus avancées | true       | `null`        |
 
 
 ### addShapeless
 
-Ajoute une recette sans forme à la table d'artisanat
+Adds a shapeless recipe to the crafting table
 
 ```zenscript
 craftingTable.addShapeless(recipeName as String, output as crafttweaker.api.item.IItemStack, ingredients as crafttweaker.api.item.IIngredient[], recipeFunction as crafttweaker.api.recipe.RecipeFunctionArray);
@@ -77,12 +77,12 @@ craftingTable.addShapeless("recipe_name", <item:minecraft:dirt>, [<item:minecraf
 craftingTable. ddShapeless("recipe_name", <item:minecraft:dirt>, [<item:minecraft:diamond>, <tag:minecraft:wool>], (usualOut as IItemStack, inputs as IItemStack[]) => {if(inputs[0]. isplayName == "bloc diamant totalement réel" ){return usualOut;}return <item:minecraft:clay>.setDisplayName("Diamond");});
 ```
 
-| Paramètre           | Type de texte                                                                          | Libellé                                                                                                                            | Optionnel | Valeur par défaut |
-| ------------------- | -------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------- | --------- | ----------------- |
-| Nom de la recette   | Chaîne de caractères                                                                   | nom de la recette à ajouter.                                                                                                       | Faux      | `null`            |
-| Sortie              | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)                      | output [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)                                                           | Faux      | `null`            |
-| ingrédients         | [crafttweaker.api.item.Ingredient](/vanilla/api/items/IIngredient)[]                   | tableau de [crafttweaker.api.item.IIngredient](/vanilla/api/items/IIngredient) pour les entrées                                    | Faux      | `null`            |
-| Fonction de recette | [crafttweaker.api.recipe.RecipeFunctionArray](/vanilla/api/recipe/RecipeFunctionArray) | optionnel [crafttweaker.api.recipe.RecipeFunctionArray](/vanilla/api/recipe/RecipeFunctionArray) pour des conditions plus avancées | vrai      | `null`            |
+| Parameter      | Type                                                                                   | Description                                                                                                                        | IsOptional | Default Value |
+| -------------- | -------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------- | ---------- | ------------- |
+| recipeName     | String                                                                                 | name of the recipe to add.                                                                                                         | false      | `null`        |
+| output         | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)                      | output [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)                                                           | false      | `null`        |
+| ingredients    | [crafttweaker.api.item.Ingredient](/vanilla/api/items/IIngredient)[]                   | tableau de [crafttweaker.api.item.IIngredient](/vanilla/api/items/IIngredient) pour les entrées                                    | false      | `null`        |
+| recipeFunction | [crafttweaker.api.recipe.RecipeFunctionArray](/vanilla/api/recipe/RecipeFunctionArray) | optionnel [crafttweaker.api.recipe.RecipeFunctionArray](/vanilla/api/recipe/RecipeFunctionArray) pour des conditions plus avancées | true       | `null`        |
 
 
 ### getRecipeByName
@@ -93,9 +93,9 @@ Type de retour : [crafttweaker.api.recipes.WrapperRecipe](/crafttweaker/api/reci
 craftingTable.getRecipeByName(name as String);
 ```
 
-| Paramètre | Type de texte        | Libellé                    |
-| --------- | -------------------- | -------------------------- |
-| Nom       | Chaîne de caractères | Aucune description fournie |
+| Parameter | Type   | Description             |
+| --------- | ------ | ----------------------- |
+| name      | String | No description provided |
 
 
 ### Obtenir des recettes par sortie
@@ -106,12 +106,12 @@ Type de retour : Liste&lt;[crafttweaker.api.recipes.WrapperRecipe](/crafttweaker
 craftingTable.getRecipesByOutput(sortie comme crafttweaker.api.item.IIngredient);
 ```
 
-| Paramètre | Type de texte                                                               | Libellé                    |
-| --------- | --------------------------------------------------------------------------- | -------------------------- |
-| Sortie    | [format@@0 crafttweaker.api.item.Igredient](/vanilla/api/items/IIngredient) | Aucune description fournie |
+| Parameter | Type                                                                | Description             |
+| --------- | ------------------------------------------------------------------- | ----------------------- |
+| output    | [crafttweaker.api.item.IIngredient](/vanilla/api/items/IIngredient) | No description provided |
 
 
-### Retirer tout
+### removeAll
 
 Supprimer toutes les recettes de ce registre.
 
@@ -128,9 +128,9 @@ craftingTable.removeByModid(modifier en tant que chaîne);
 craftingTable.removeByModid("minecraft");
 ```
 
-| Paramètre | Type de texte        | Libellé                           |
-| --------- | -------------------- | --------------------------------- |
-| modifier  | Chaîne de caractères | modifier les recettes à supprimer |
+| Parameter | Type   | Description                       |
+| --------- | ------ | --------------------------------- |
+| modid     | String | modifier les recettes à supprimer |
 
 
 
@@ -141,9 +141,9 @@ craftingTable.removeByModid(modid as String, exclude as crafttweaker.api.recipe.
 craftingTable.removeByModid("minecraft", (name as string) => {return name == "orange_wool";});
 ```
 
-| Paramètre | Type de texte                                                               | Libellé                                  |
+| Parameter | Type                                                                        | Description                              |
 | --------- | --------------------------------------------------------------------------- | ---------------------------------------- |
-| modifier  | Chaîne de caractères                                                        | modifier les recettes à supprimer        |
+| modid     | String                                                                      | modifier les recettes à supprimer        |
 | exclure   | [format@@0 crafttweaker.api.recipeFilter](/vanilla/api/recipe/RecipeFilter) | des recettes pour ne plus être enlevées. |
 
 
@@ -156,9 +156,9 @@ craftingTable.removeByName(name as String);
 craftingTable.removeByName("minecraft:furnace");
 ```
 
-| Paramètre | Type de texte        | Libellé                       |
-| --------- | -------------------- | ----------------------------- |
-| Nom       | Chaîne de caractères | nom de la recette à supprimer |
+| Parameter | Type   | Description                       |
+| --------- | ------ | --------------------------------- |
+| name      | String | registry name of recipe to remove |
 
 
 ### removeByRegex
@@ -170,29 +170,29 @@ craftingTable.removeByRegex(regex as String);
 craftingTable.removeByRegex("\\d_\\d");
 ```
 
-| Paramètre | Type de texte        | Libellé                              |
-| --------- | -------------------- | ------------------------------------ |
-| regex     | Chaîne de caractères | regex pour faire correspondre contre |
+| Parameter | Type   | Description            |
+| --------- | ------ | ---------------------- |
+| regex     | String | regex to match against |
 
 
-### Supprimer la recette
+### removeRecipe
 
-Supprime une recette en fonction de sa sortie.
+Remove a recipe based on it's output.
 
 ```zenscript
-craftingTable.removeRecipe(affiche en tant que crafttweaker.api.item.IItemStack);
+craftingTable.removeRecipe(output as crafttweaker.api.item.IItemStack);
 craftingTable.removeRecipe(<item:minecraft:glass>);
 ```
 
-| Paramètre | Type de texte                                                     | Libellé              |
+| Parameter | Type                                                              | Description          |
 | --------- | ----------------------------------------------------------------- | -------------------- |
-| Sortie    | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | sortie de la recette |
+| output    | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | output of the recipe |
 
 
 
-## Propriétés
+## Properties
 
-| Nom                | Type de texte        | A un Getter | A un Setter |
-| ------------------ | -------------------- | ----------- | ----------- |
-| Chaîne de commande | Chaîne de caractères | vrai        | Faux        |
+| Name          | Type   | Has Getter | Has Setter |
+| ------------- | ------ | ---------- | ---------- |
+| commandString | String | true       | false      |
 
