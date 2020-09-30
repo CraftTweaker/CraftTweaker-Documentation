@@ -1,34 +1,34 @@
 # JEITweaker
 
-## 説明
+## Description
 
-この mod はJEIにCraftTweakerのサポートを追加します。 CraftTweakerはJEIをネイティブにサポートするために使用しましたが、1.14の書き換えにより、JEIサポートは独自のmodに取り込まれています。
+This mod adds CraftTweaker support to JEI. CraftTweaker used to support JEI natively, but due to the 1.14 rewrite, the JEI support is being pulled out into it's own mod.
 
 
-## パッケージ
+## Package
 `mods.jei.JEI`
 
-## アイテム非表示
+## Item Hiding
 
-JEIで指定されたアイテムを非表示にします。 与えられた例はJEIメニューの汚れブロックを非表示にします。
+This will hide the given item in JEI. The example given will hide the dirt block in the JEI menu.
 
 ```zenscript
 //mods.jei.JEI.hideItem(IItemStack stack);
 mods.jei.JEI.hideItem(<item:minecraft:dirt>);
 ```
 
-## カテゴリ非表示
+## Category Hiding
 
-これはJEIの指定されたカテゴリを非表示にします。 与えられた例は、JEIでレシピを検索するときに炉カテゴリを非表示にします。
+This will hide the given category in JEI. The example given will hide the furnace category when looking up recipes in JEI.
 
 ```zenscript
 //mods.jei.JEI.hideCategory(String category);
-mods.jei.jei.hideCategory("minecraft:炉");
+mods.jei.JEI.hideCategory("minecraft:furnace");
 ```
 
-デフォルトのカテゴリは次のとおりです。
+The default categories are:
 ```zenscript
-"minecraft:craft"
+"minecraft:crafting"
 "minecraft:furnace"
 "minecraft:smoking"
 "minecraft:blasting"
@@ -39,19 +39,19 @@ mods.jei.jei.hideCategory("minecraft:炉");
 "jei:information"
 ```
 
-Modはさらにカテゴリを追加できます！
+Mods can add more categories though!
 
-## 情報を追加
+## Add Info
 
-これにより、JEI!で使用状況を見たときに表示されるアイテムに情報が追加されます。
+This will add information to the Item that will be shown when looking at usages in JEI!.
 
-この正確な例では、ダイヤモンドのアイテムに3行の情報を追加します。
+This exact example will add 3 lines of information to the Diamond item.
 
 ```zenscript
-//mods.jei.JEI.addInfo(IItemStack stack, String[] in
+//mods.jei.JEI.addInfo(IItemStack stack, String[] information);
 mods.jei.JEI.addInfo(<item:minecraft:diamond>, ["This is the first line!", "This is the second!", "third"]);
 ```
 
-上記のコードが生成されます: ![コミットボックス塗りつぶし](https://blamejared.com/docsImages/JEITweakerAddInfo.png)
+The code above will produce: ![Commit Box Filled](https://blamejared.com/docsImages/JEITweakerAddInfo.png)
 
 
