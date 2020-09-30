@@ -1,28 +1,28 @@
-# Powered Thingies :: Verbrennungsanlage
+# Powered Thingies :: Incinerator
 
 ### Importieren
 
 ```zenscript
-importieren mods.poweredthingies.Tweaker.incineratorTweaker wie it;
+import mods.poweredthingies.Tweaker.incineratorTweaker as it;
 ```
 
-### Schlüssel auflisten, Rezepte nach Schlüssel entfernen, Clearing
+### Listing Keys, Removing Recipes by Key, Clearing
 
 ```zenscript
 it().logKeys()
-it().removeRecipe('minecraft:log') // die <logKeys> Ausgabe auf gültige Schlüssel überprüfen
+it().removeRecipe('minecraft:log') // check <logKeys> output for valid keys
 it().clear()
 ```
 
-### Rezept hinzufügen
+### Adding Recipe
 
-##### Signatur
+##### Signature
 
 ```zenscript
-addRecipe(Eingabe: IItemStack, Kraft: lang, Ausgabe: Array<WeightedItemStack>)
+addRecipe(input: IItemStack, power: Long, outputs: Array<WeightedItemStack>)
 ```
 
-`Leistung` repräsentiert die Gesamtzahl der Leistungseinheiten (RF, T oder FE), die das Eingabeelement generieren wird.
+`power` represents the total number of power units (RF, T, or FE) the input item will generate.
 
 ##### Beispiel
 
@@ -30,6 +30,6 @@ addRecipe(Eingabe: IItemStack, Kraft: lang, Ausgabe: Array<WeightedItemStack>)
 it().addRecipe(<minecraft:bucket>, 3600, [<minecraft:iron_ingot> % 15]);
 ```
 
-### Notizen
+### Notes
 
-Alle diese Aktionen werden zwischengespeichert und ausgeführt, nachdem die Standard-Registry für diese Maschine alle Rezepte (einschließlich der von den benutzerdefinierten Jsons) registriert hat.
+All of these actions will get cached and ran after the default registry for this machine has finished registering all recipes (including the ones from the custom jsons).
