@@ -1,144 +1,144 @@
 # ZenStager
 
-このクラスは、新しい [ステージ](/Mods/GameStages/ZenStages/Stage/)を作成するためのメインハンドラです。 ゲームに演じたものをステージングするように伝えることができます [GameStages API](https://minecraft.curseforge.com/projects/game-stages) を使用して他のModと簡単に統合できるようにするためのメソッドと、Modpackメーカーの生活を少し簡単にするためのいくつかのカスタム調整が事前にロードされています。
+This class is the main handler for creating new [Stages](/Mods/GameStages/ZenStages/Stage/), which then you can build to tell the game to start staging what you've staged. It comes pre-loaded with methods to allow easy integration with other mods using the [GameStages API](https://minecraft.curseforge.com/projects/game-stages) along with some custom tweaks to make modpack makers lives that little bit easier.
 
-クラス [の詳細と最新のソースはこちら](https://github.com/DarkPacks/ZenStages/blob/master/src/main/java/uk/artdude/zenstages/stager/ZenStager.java) で確認できます。
+You can find more information and the latest source for the class [here](https://github.com/DarkPacks/ZenStages/blob/master/src/main/java/uk/artdude/zenstages/stager/ZenStager.java).
 
 ## パッケージのインポート
 
-ZenStager : `import mods.zenstager.ZenStager;`
+ZenStager : `import mods.zenstages.ZenStager;`
 
-ステージ *(インポートも推奨)* : `import mods.zenstages.Stage;`
+Stage *(Recommended to import also)* : `import mods.zenstages.Stage;`
 
-## メソッド
+## Methods
 
-### ステージを作成
+### Create Stage
 
-新しい [ステージ](/Mods/GameStages/ZenStages/Stage/)を作成して返します
+Create and returns new [Stage](/Mods/GameStages/ZenStages/Stage/)
 
 ```zenscript
 // mods.zenstages.ZenStager.initStage(string stageName);
 var TestStage = ZenStager.initStage("test");
 ```
 
-ステージを作成するときは、以下のようなstatic/globalファイルを作成し、他のスクリプト/クラスでステージにアクセスすることができます。
+When you have created your Stage you should then create a static/global file which contains the following so you can then access the Stage on other scripts/classes.
 
-**注意: 同じスクリプトで `initStage` と `静的` を作成することはできません。 制限やその他の問題により、静的メンバーを参照するたびに `initStage` が呼び出されます。 initと静的作成を別々にしておきます。**
+**Note: Do not have the `initStage` and the `static` creation in the same script. Due to limitations and other issues, the `initStage` will be called each time you reference a static member. So keep the init and the static creation separate**
 
 ```zenscript
 import mods.zenstages.ZenStager;
 
-static TestStage = ZenStager.getStage("test"); // 名前はあなたが作成したものです。
+static TestStage = ZenStager.getStage("test"); // The name being the one you just created.
 ```
 
-### ヘルパーメソッド
+### Helper Methods
 
-[ステージ](/Mods/GameStages/ZenStages/Stage/) *を取得 (見つからない場合は null を返します)*
+Get a [Stage](/Mods/GameStages/ZenStages/Stage/) *(Returns null if not found)*
 
 ```zenscript
 // mods.zenstages.ZenStager.getStage(string stageName);
 var TestStageGet = ZenStager.getStage("test");
 ```
 
-作成された [ステージ](/Mods/GameStages/ZenStages/Stage/) のマップを取得します。
+Get a map of the [Stages](/Mods/GameStages/ZenStages/Stage/) which are created.
 
 ```zenscript
 // mods.zenstages.ZenStager.getStageMap();
-var StageMap as StageMap as Stage[string] = ZenStager.getStageMap();
+var StageMap as Stage[string] = ZenStager.getStageMap();
 ```
 
-段階的な液体の地図を取得します。
+Get a map of the staged liquids.
 
 ```zenscript
-// mods.zenstager.getStagedLiquids();
+// mods.zenstages.ZenStager.getStagedLiquids();
 var LiquidMap as ILiquidStack[][string] = ZenStager.getStagedLiquids();
 ```
 
-### ステージング方法
+### Staging Methods
 
-パッケージ名を追加する。 [RecipeStages](/Mods/GameStages/RecipeStages/RecipeStages/) をインストールする必要があります。 これはここ [](/Mods/GameStages/RecipeStages/RecipeStages/)と同じロジックに従います。
+Add a package name. This requires [RecipeStages](/Mods/GameStages/RecipeStages/RecipeStages/) to be installed. This follows the same logic as [here](/Mods/GameStages/RecipeStages/RecipeStages/).
 
 ```zenscript
 // mods.zenstages.ZenStager.addPackage(string packageName, Stage[] stages);
 ZenStager.addPackage("appeng", [TestStage]);
 ```
 
-パッケージ名を追加する。 [RecipeStages](/Mods/GameStages/RecipeStages/RecipeStages/) をインストールする必要があります。 これはここ [](/Mods/GameStages/RecipeStages/RecipeStages/)と同じロジックに従います。
+Add a package name. This requires [RecipeStages](/Mods/GameStages/RecipeStages/RecipeStages/) to be installed. This follows the same logic as [here](/Mods/GameStages/RecipeStages/RecipeStages/).
 
 ```zenscript
-// mods.zenStager.addContainer(string packageName, Stage[] stages);
+// mods.zenstages.ZenStager.addContainer(string packageName, Stage[] stages);
 ZenStager.addContainer("my.awesome.container", [TestStage]);
 ```
 
-材料ステージを取得します。ステージが設定された場合、 [ステージ](/Mods/GameStages/ZenStages/Stage/) を返します。見つからない場合は null を返します。
+Get the ingredient stage, if staged it will return the [Stage](/Mods/GameStages/ZenStages/Stage/) or null if not found.
 
 ```zenscript
-// mods.zenstager.getIngredientStage(IIngredient食材);
-var StickStickStageas Stage = ZenStager.getIngredientStage(<minecraft:stick>);
+// mods.zenstages.ZenStager.getIngredientStage(IIngredient ingredient);
+var StickStage as Stage = ZenStager.getIngredientStage(<minecraft:stick>);
 ```
 
-液体スタックステージを取得します。ステージされた場合、 [ステージ](/Mods/GameStages/ZenStages/Stage/) を返します。見つからない場合は null を返します。
+Get the liquid stack stage, if staged it will return the [Stage](/Mods/GameStages/ZenStages/Stage/) or null if not found.
 
 ```zenscript
-// mods.zenstager.getLiquidStack(ILiquidStack liquidStack);
-var StickStageas Stage = ZenStager.getLiquidStage(<liquid:water>);
+// mods.zenstages.ZenStager.getLiquidStage(ILiquidStack liquidStack);
+var StickStage as Stage = ZenStager.getLiquidStage(<liquid:water>);
 ```
 
-レシピ名ステージを取得します。ステージされた場合、 [ステージ](/Mods/GameStages/ZenStages/Stage/) を返します。見つからない場合は null を返します。 [RecipeStages](/Mods/GameStages/RecipeStages/RecipeStages/) をインストールする必要があります。
+Get the recipe name stage, if staged it will return the [Stage](/Mods/GameStages/ZenStages/Stage/) or null if not found. Requires [RecipeStages](/Mods/GameStages/RecipeStages/RecipeStages/) to be installed.
 
 ```zenscript
-// mods.zenstager.getRecipeNameStage(string recipeName);
-var RecipeNameStage as Stage= ZenStager.getRecipeNameStage("minecraft:boat");
+// mods.zenstages.ZenStager.getRecipeNameStage(string recipeName);
+var RecipeNameStage as Stage = ZenStager.getRecipeNameStage("minecraft:boat");
 ```
 
-コンテナステージを取得します。ステージされた場合、 [ステージ](/Mods/GameStages/ZenStages/Stage/) を返します。見つからない場合は null を返します。 [RecipeStages](/Mods/GameStages/RecipeStages/RecipeStages/) をインストールする必要があります。
+Get the container stage, if staged it will return the [Stage](/Mods/GameStages/ZenStages/Stage/) or null if not found. Requires [RecipeStages](/Mods/GameStages/RecipeStages/RecipeStages/) to be installed.
 
 ```zenscript
 // mods.zenstages.ZenStager.getContainerStages(string containerName);
 var ContainerStage as Stage = ZenStager.getContainerStages("my.awesome.container");
 ```
 
-パッケージステージを取得します。ステージされた場合、 [ステージ](/Mods/GameStages/ZenStages/Stage/) を返します。見つからない場合は null を返します。 [RecipeStages](/Mods/GameStages/RecipeStages/RecipeStages/) をインストールする必要があります。
+Get the package stage, if staged it will return the [Stage](/Mods/GameStages/ZenStages/Stage/) or null if not found. Requires [RecipeStages](/Mods/GameStages/RecipeStages/RecipeStages/) to be installed.
 
 ```zenscript
 // mods.zenstages.ZenStager.getPackageStages(string packageName);
 var PackageStage as Stage = ZenStager.getPackageStages("appeng");
 ```
 
-ディメンションステージを取得します。ステージされた場合、 [ステージ](/Mods/GameStages/ZenStages/Stage/) を返します。見つからない場合は null を返します。 [DimStages](/Mods/GameStages/DimensionStages/DimensionStages/) をインストールする必要があります。
+Get the dimension stage, if staged it will return the [Stage](/Mods/GameStages/ZenStages/Stage/) or null if not found. Requires [DimStages](/Mods/GameStages/DimensionStages/DimensionStages/) to be installed.
 
 ```zenscript
-// mods.zenstager.getDimensionStage(int dimId);
-var DimStageas Stage = ZenStager.getDimensionStage(-1);
+// mods.zenstages.ZenStager.getDimensionStage(int dimId);
+var DimStage as Stage = ZenStager.getDimensionStage(-1);
 ```
 
-Mob ステージを取得します。ステージされた場合、 [ステージ](/Mods/GameStages/ZenStages/Stage/) を返します。見つからない場合は null を返します。 [MobStages](/Mods/GameStages/MobStages/MobStages/) をインストールする必要があります。
+Get the mob stage, if staged it will return the [Stage](/Mods/GameStages/ZenStages/Stage/) or null if not found. Requires [MobStages](/Mods/GameStages/MobStages/MobStages/) to be installed.
 
 ```zenscript
-// mods.zenstager.getMobStage(string mobName);
+// mods.zenstages.ZenStager.getMobStage(string mobName);
 var MobStage as Stage = ZenStager.getMobStage("minecraft:skeleton");
 ```
 
-TiCマテリアルステージを取得します。ステージされた場合、 [ステージ](/Mods/GameStages/ZenStages/Stage/) が返されます。見つからない場合はnullが返されます。 [TinkerStages](/Mods/GameStages/TinkerStages/TinkerStages/) をインストールする必要があります。
+Get the TiC Material stage, if staged it will return the [Stage](/Mods/GameStages/ZenStages/Stage/) or null if not found. Requires [TinkerStages](/Mods/GameStages/TinkerStages/TinkerStages/) to be installed.
 
 ```zenscript
-// mods.zenstager.getTiCMaterialStage(string material);
-var MobStageas Stage= ZenStager.getTiCMaterialStage("bronze");
+// mods.zenstages.ZenStager.getTiCMaterialStage(string material);
+var MobStage as Stage = ZenStager.getTiCMaterialStage("bronze");
 ```
 
-### 何かがステージングされているかどうかを確認します
+### Check if something is Staged
 
-サポートされているタイプ:
+Supported Types:
 
-- コンテナ
-- 寸法
-- 材料
-- Mob
+- container
+- dimension
+- ingredient
+- mob
 - mod
 - mulitblock
-- 鉱石
-- パッケージ
-- レシピネーム
+- ore
+- package
+- recipename
 - tinker
 
 ```zenscript
@@ -154,18 +154,18 @@ ZenStager.isStaged("recipename", "minecraft:boat");
 ZenStager.isStaged("dimension", -1);
 ```
 
-### デバッグ
+### Debugging
 
-このメソッドを呼び出すと、作成した [ステージ](/Mods/GameStages/ZenStages/Stage/) でModがチェックされます。 誤って *何かが* 回以上format@@2ステージングされたかどうかを確認する。 見つかった場合は、 `crafttweaker.log` ファイルに記録されます。 複製されたものがステージとそれがどの段階にあるかを伝えます。 これは、modpackまたはmodpackの一般的な開発にアップデートをリリースする前に使用するための理想的なメソッド/ツールです。
+Calling this method will make the mod check over the [Stages](/Mods/GameStages/ZenStages/Stage/) you have created and what's staged. To see if you have mistakenly *staged* something more than once. If any are found they are logged to the `crafttweaker.log` file. Telling you what is duplicated staged and what stages it is in. This is an ideal method/tool to use before releasing updates to a modpack or just general development of a modpack.
 
 ```zenscript
 // mods.zenstages.ZenStager.checkConflicts();
 ZenStager.checkConflicts();
 ```
 
-### ビルドステージ
+### Build Stages
 
-これは、ステージにエントリを追加した後に呼び出すために **重要な** です。 これにより、全てのMODが実際に言ったエントリーをステージに上げることができます。 このメソッドの実行に失敗すると、ステージングは行われません！
+This is **important** to call after you have completed adding entries to your stages. This calls upon all the mods to actually stage said entries. Failing to run this method will result in nothing being staged!
 
 ```zenscript
 // mods.zenstager.ZenStager.buildAll();
