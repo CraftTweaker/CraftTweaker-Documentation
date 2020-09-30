@@ -1,10 +1,10 @@
-# XNOR演算子
+# XNOR Operator
 
-**XNOR** ゲートは反転した **XOR** ゲートです。 これは、 **NOT** ゲートへの入力として **XOR** ゲートの出力を使用するのと同じです。 これは、両方の入力が同じ状態の場合にのみ、 **XNOR** ゲートが `TRUE` を返すことを意味します。 両方とも `TRUE` または両方とも `FALSE` です。
+An **XNOR** gate is an inverted **XOR** gate. This is the same as using the output of the **XOR** gate as the input to the **NOT** gate. This means that the **XNOR** gate returns `TRUE` only when both inputs are the same state. Either both are `TRUE` or both are `FALSE`.
 
-| Input 1 | Input 2 | 出力 |
-| ------- | ------- | --:|
-| 0       | 0       |  1 |
-| 0       | 1       |  0 |
-| 1       | 0       |  0 |
-| 1       | 1       |  1 |
+| Input 1 | Input 2 | Output |
+| ------- | ------- | ------:|
+| 0       | 0       |      1 |
+| 0       | 1       |      0 |
+| 1       | 0       |      0 |
+| 1       | 1       |      1 |
