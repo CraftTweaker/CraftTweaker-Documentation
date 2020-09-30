@@ -1,14 +1,14 @@
-# 合金炉
+# Alloy Furnace
 
-## パッケージのインポート
-`mods.nuclear.alloy_furnace`
+## Importing the Package
+`mods.nuclearcraft.alloy_furnace`
 
-## レシピを追加中
+## Adding Recipes
 ```zenscript
-mods.nuclear.alloy_furnace.addRecipe([itemInput1, itemInput2, itemOutput, @Optional door timeMultiplier, @Optional door processRadiation]);
+mods.nuclearcraft.alloy_furnace.addRecipe([itemInput1, itemInput2, itemOutput, @Optional double timeMultiplier, @Optional double powerMultiplier, @Optional double processRadiation]);
 ```
 
-## レシピを削除
+## Removing Recipes
 ```zenscript
 mods.nuclearcraft.alloy_furnace.removeRecipeWithInput([itemInput1, itemInput2]);
 mods.nuclearcraft.alloy_furnace.removeRecipeWithOutput([itemOutput1]);
