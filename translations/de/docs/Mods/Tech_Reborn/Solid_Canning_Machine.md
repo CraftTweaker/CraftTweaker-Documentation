@@ -1,15 +1,15 @@
-# Festkonservenmaschine
+# Solid Canning Machine
 
-## Paket wird importiert
+## Importing the Package
 `mods.techreborn.solidCanningMachine`
 
-## Rezepte hinzufügen
+## Adding Recipes
 ```zenscript
 mods.techreborn.solidCanningMachine.addRecipe(IItemStack output1, IIngredient input1, IIngredient input2, int ticktime, int euTick);
 ```
 
-## Rezepte entfernen
+## Removing Recipes
 ```zenscript
-mods.techreborn.solidCanningMachine.removeRecipe(IItemStack Ausgabe);
+mods.techreborn.solidCanningMachine.removeRecipe(IItemStack output);
 mods.techreborn.solidCanningMachine.removeAll();
 ```
