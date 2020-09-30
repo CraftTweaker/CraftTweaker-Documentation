@@ -1,26 +1,26 @@
-# Documentation de classe
+# Class Documentation
 
-Une `séquence` est une liste d'éléments qui peuvent être exploités et sont évalués paresseusement. Reportez-vous à la page [Concept](/Mods/Boson/Sequences/Concept/) pour plus d'informations.
+A `Sequence` is a list of items which can be operated on and is evaluated lazily. Refer to the [Concept](/Mods/Boson/Sequences/Concept/) page for more information.
 
-## Détails de la classe
-Faire partie du projet ZenScriptX, le nom pleinement qualifié pour la classe est `zenscriptx.sequence.Sequence`.
+## Class Details
+Being part of the ZenScriptX Project, the fully qualified name for the class is `zenscriptx.sequence.Sequence`.
 
-## Créer une nouvelle instance
-Reportez-vous à la page [Obtention des séquences](/Mods/Boson/Sequences/Obtaining/).
+## Creating a New Instance
+Refer to the [Obtaining Sequences](/Mods/Boson/Sequences/Obtaining/) page.
 
-## Méthodes
-Les différentes méthodes disponibles dans une séquence peuvent être divisées en quatre catégories :
+## Methods
+The various methods available in a sequence can be divided into four categories:
 
-- Méthodes de terminal
-- Méthodes de paresseux changeantes
-- Méthodes paresseux intermédiaires
-- Méthodes intermédiaires
+- Terminal methods
+- Type-changing lazy methods
+- Intermediate lazy methods
+- Intermediate eager methods
 
-Chaque catégorie a son propre comportement et ses propres bizarreries, qui sont décrites dans la catégorie respective.
+Each category has its own behavior and quirks, which are described in the respective category.
 
-De plus, dans chaque signature de méthode, les lettres `T` et `R` font référence aux types génériques qui définissent la séquence. In particular, `T` identifies the type of the current sequence, whereas `R` identifies the type of the new sequence that gets returned in case of type-changing lazy methods.
+Moreover, in every method signature, the letters `T` and `R` reference the generic types that define the sequence. In particular, `T` identifies the type of the current sequence, whereas `R` identifies the type of the new sequence that gets returned in case of type-changing lazy methods.
 
-Pour économiser de l'espace, les méthodes seront présentées dans un seul snippet dans la catégorie correspondante avec un commentaire ci-dessus indiquant ce que la méthode est censée faire, comme indiqué dans l'exemple suivant.
+To save up on space, the methods will be presented in a single snippet in the corresponding category with a comment above stating what the method is supposed to do, as shown in the following example snippet.
 
 ```zenscript
 # this method does something
@@ -30,12 +30,12 @@ function method(argument as int, argument2 as bool) as double;
 function method2() as bool?;
 ```
 
-Dernier mais non des moindres, reportez-vous à la [liste d'interfaces fonctionnelles](/Mods/Boson/Functions/List/) si vous rencontrez un type non-primitif (e. . `Prédicez<T>` ou `Fonction<T, R>`.
+Last but not least, refer to the [list of functional interfaces](/Mods/Boson/Functions/List/) if you encounter any non-primitive type (e.g. `Predicate<T>` or `Function<T, R>`).
 
-### Méthodes de terminal
-Les méthodes de terminaux sont des méthodes qui ne retournent pas une instance `Séquence` , mais plutôt n'importe quel autre type de données, comme `int`, `bool`, ou même rien (`vide`). De plus, ils peuvent aussi potentiellement causer l'évaluation de l'ensemble du contenu `Séquence` , bien que ce ne soit pas obligatoire, car certaines méthodes peuvent également terminer l'exécution dès que certaines conditions sont remplies. Néanmoins, cette garantie ne peut pas être faite.
+### Terminal methods
+Terminal methods are methods that don't return a `Sequence` instance, but rather any other type of data, such as `int`, `bool`, or even nothing (`void`). Moreover, they can also potentially cause the evaluation of the whole `Sequence` contents, though this is not required, since some methods may also terminate execution as soon as certain conditions are met. Nonetheless, this guarantee cannot be made.
 
-Il est également impossible de continuer à fonctionner sur une `Séquence` après qu'une méthode de terminal ait été appelée, sauf si la séquence a été précédemment enregistrée dans une variable avant l'invocation de la méthode du terminal.
+It is also impossible to continue operating on a `Sequence` after a terminal method has been called, unless the sequence was previously saved in a variable prior to the terminal method invocation.
 
 ```zenscript
 # Returns whether the given 'element' is present in the target sequence
@@ -157,140 +157,140 @@ function joinToString(
     postfix as string,                 # optional, default value: ""
     limit as int,                      # optional, default value: -1
     truncated as string,               # optional, default value: "..."
-    transformer en fonction<T, String>?  # optional, default value: null (i.e. a plain `toString` will be called on the target object)
+    transform as Function<T, String>?  # optional, default value: null (i.e. a plain `toString` will be called on the target object)
 ) as string;
 ```
 
-### Méthodes de paresseux changeantes
-Les méthodes paresseuses changeant de type sont des méthodes qui retournent une `Séquence` de type différent plutôt que l'originale, suite au résultat d'une opération de conversion (e. . de `IItemStack` à `IBlockState`). Puisqu'ils sont paresseux, l'évaluation du contenu de la séquence ne sera faite que plus tard, lorsque la transformation a besoin de en fait à cause de l'invocation d'une méthode de terminal ou d'une méthode intermédiaire impatiente.
+### Type-changing lazy methods
+Type-changing lazy methods are methods that return a `Sequence` of a different type rather than the original one, following the result of a conversion operation (e.g. from `IItemStack` to `IBlockState`). Since they are lazy, evaluation of the contents of the sequence will be done only at a later time, when the transformation actually needs to happen due to the invocation of a terminal method or an intermediate eager method.
 
-Puisque ces méthodes sont intermédiaires, il est possible de continuer à utiliser une `Séquence` après une invocation de ces méthodes.
+Since these methods are intermediate, it is possible to keep using a `Sequence` after an invocation of these methods.
 
 ```zenscript
-# Transforme chaque élément de cette séquence en un autre en utilisant la fonction 'transform' donnée
-function map(transformer en Function<T, R>) en séquence<R>;
+# Transforms every element of this sequence into another one using the given 'transform' function
+function map(transform as Function<T, R>) as Sequence<R>;
 
-# Transforme chaque élément de cette séquence en un autre en utilisant la fonction 'transform' donnée, en fournissant l'accès à l'index courant
-fonction mapIndexed(transformée en BiFunction<int?, T, R>) en séquence<R>;
+# Transforms every element of this sequence into another one using the given 'transform' function, providing access to the current index
+function mapIndexed(transform as BiFunction<int?, T, R>) as Sequence<R>;
 
-# Récupère chaque paire d'éléments adjacents à l'intérieur de la séquence et exécute la fonction 'transform' donnée, retournant les résultats dans une séquence
-# Retourne une séquence vide si la séquence courante a moins de deux éléments
-fonction zipWithNext(transformée en BiFunction<T, T, R>) en séquence<R>;
+# Grabs every pair of adjacent elements inside the sequence and executes the given 'transform' function, returning the results in a sequence
+# Returns an empty sequence if the current sequence has less than two elements
+function zipWithNext(transform as BiFunction<T, T, R>) as Sequence<R>;
 ```
 
-### Méthodes paresseux intermédiaires
-Les méthodes paresseuses intermédiaires sont des méthodes qui retournent une `Séquence` du même type que la méthode actuelle, et l'évaluation de la méthode sera reportée jusqu'à ce qu'une méthode terminal ou une méthode intermédiaire soit appelée, dorénavant le nom "paresse". Pour cette raison exacte, la suppression ou l'ajout d'élément peut (et sera) ne pas être reflété dans la séquence elle-même jusqu'à ce que la séquence soit complètement évaluée. Pour cette raison, toute modification des arguments passés à la fonction peut avoir effets secondaires indésirables (surtout pour `moins` et `plus` appels).
+### Intermediate lazy methods
+Intermediate lazy methods are methods that return a `Sequence` of the same type as the current one, and evaluation of the method will be deferred up until a terminal method or an intermediate eager method is called, henceforth the name "lazy". For this exact reason, element removal or addition may (and will) not be reflected in the sequence itself up until the sequence is fully evaluated. For this reason, any change to the arguments passed to the function may have unintended side effects (especially for `minus` and `plus` calls).
 
-Puisque ces méthodes sont intermédiaires, il est possible de continuer à utiliser une `Séquence` après une invocation de ces méthodes.
+Since these methods are intermediate, it is possible to keep using a `Sequence` after an invocation of these methods.
 
 ```zenscript
-# Supprime les premiers éléments 'n' de la tête de la séquence, en les déposant effectivement de
-la fonction drop(n comme int) comme Séquence<T>;
+# Removes the first 'n' elements from the head of the sequence, effectively dropping them out
+function drop(n as int) as Sequence<T>;
 
-# Supprime les éléments de la tête de la séquence tant que le prédicat donné retourne 'true', les abandonnant efficacement
-la fonction dropWhile(prédicat comme prédicat<T>) comme séquence<T>;
+# Removes elements from the head of the sequence as long as the given predicate returns 'true', effectively dropping them out
+function dropWhile(predicate as Predicate<T>) as Sequence<T>;
 
-# Garde dans la séquence uniquement les éléments qui correspondent au prédicat
-filtre de la fonction (prédicat comme prédicat<T>) comme séquence<T>;
+# Keeps in the sequence only the elements that match the given predicate
+function filter(predicate as Predicate<T>) as Sequence<T>;
 
-# Garde dans la séquence seulement les éléments qui correspondent au prédicat donné, fournissant l'accès à l'index actuel
-fonction filterIndexed(prédicat comme BiPredicate<int?, T>) comme Séquence<T>;
+# Keeps in the sequence only the elements that match the given predicate, providing access to the current index
+function filterIndexed(predicate as BiPredicate<int?, T>) as Sequence<T>;
 
-# Supprime de la séquence tous les éléments qui correspondent au prédicat donné
+# Removes from the sequence all the elements that match the given predicate
 function filterNot(predicate as Predicate<T>) as Sequence<T>;
 
-# Garde dans la séquence seulement les premiers éléments 'n', pris de la tête de la séquence
-fonction take(n as int) comme Séquence<T>;
+# Keeps in the sequence only the first 'n' elements, taken from the head of the sequence
+function take(n as int) as Sequence<T>;
 
-# Garde dans les éléments de séquence de sa tête tant que le prédicat donné retourne 'true'
-fonction takeWhile(predicate as Predicate<T>) comme Séquence<T>;
+# Keeps in the sequence elements from its head as long as the given predicate returns 'true'
+function takeWhile(predicate as Predicate<T>) as Sequence<T>;
 
-# Supprime les éléments qui sont dupliqués dans la séquence actuelle, conserver une seule "copie" de chaque élément
-function distinct() en tant que Séquence<T>;
+# Removes elements that are duplicates inside the current sequence, effectively keeping a single "copy" of every single item
+function distinct() as Sequence<T>;
 
-# Supprime les éléments qui sont des doublons selon le 'sélecteur' donné dans la séquence, conserver efficacement une seule "copie" de chaque élément
-# K dans cette instance représente un autre type générique qui identifie le type de la "key" qui sera utilisé pour effectuer cette opération
-fonction distinctBy(sélecteur de fonction<T, K>) comme Séquence<T>;
+# Removes elements that are duplicates according to the given 'selector' inside the sequence, effectively keeping a single "copy" of every single item
+# K in this instance represents another generic type that identifies the type of the "key" that will be used to perform this operation
+function distinctBy(selector as Function<T, K>) as Sequence<T>;
 
-# Exécute l'action donnée sur n'importe quel élément de la séquence, sans le terminer
-fonction onEach(action en tant que consommateur<T>) comme Séquence<T>;
+# Executes the given 'action' on any element of the sequence, without terminating it
+function onEach(action as Consumer<T>) as Sequence<T>;
 
-# Supprime les éléments donnés de la séquence, s'ils sont présents
-fonctions minus(éléments comme T[]) comme Séquence<T>;
+# Removes the given elements from the sequence, if they're present
+function minus(elements as T[]) as Sequence<T>;
 
-# Supprime l'élément donné de la séquence ONCE, si présent, réduire efficacement la quantité de doublons de cet élément par 1
-fonction minusElement(élément en T) comme Séquence<T>;
+# Removes the given element from the sequence ONCE, if present, effectively shrinking the amount of duplicates of that element by 1
+function minusElement(element as T) as Sequence<T>;
 
-# Ajoute les éléments donnés à la fin de la séquence
-function plus(éléments comme T[]) comme Séquence<T>;
+# Adds the given elements to the end of the sequence
+function plus(elements as T[]) as Sequence<T>;
 
-# Ajoute l'élément donné à la fin de la séquence
-function plusElement(element as T) comme Séquence<T>;
+# Adds the given element to the end of the sequence
+function plusElement(element as T) as Sequence<T>;
 
-# Retourne la séquence courante (effectivement un "do-nothing")
-fonction asSequence() comme Séquence<T>;
+# Returns the current sequence (effectively a "do-nothing")
+function asSequence() as Sequence<T>;
 ```
 
-### Méthodes intermédiaires
-Les méthodes intermédiaires désireuses sont des méthodes qui retournent une `Séquence` du même type de la méthode actuelle, mais l'évaluation de la méthode ne peut pas être reportée jusqu'à ce qu'une méthode terminal soit appelée. De plus, les méthodes désireuses peuvent entraîner une évaluation de l'ensemble de la séquence appelée, jusqu'à ce moment-là, à n'importe quel moment entre leur invocation et l'invocation de la méthode du terminal. Pour cette raison, il est suggéré d'appeler des méthodes enthousiastes aussi parcimonieusement que possible et de les laisser opérer sur la plus petite quantité de données possible.
+### Intermediate eager methods
+Intermediate eager methods are methods that return a `Sequence` of the same type of the current one, but the evaluation of the method may not be deferred up until a terminal method is called. Moreover, eager methods may cause evaluation of the whole sequence calls up until that point at any moment between their invocation and the terminal method invocation. For this reason, it is suggested to call eager methods as sparingly as possible and let them operate on the smallest quantity of data possible.
 
-Puisque ces méthodes sont intermédiaires, il est possible de continuer à utiliser une `Séquence` après l'invocation de ces méthodes.
+Since these methods are intermediate, it is possible to keep using a `Sequence` after the invocation of these methods.
 
 ```zenscript
-# Trie la séquence courante avec un algorithme stable, selon la sortie de la fonction de 'comparator' donnée
-fonction sortedWith(comparateur: ToIntBiFunction<T, T>) comme Séquence<T>;
+# Sorts the current sequence with a stable algorithm, according to the output of the given 'comparator' function
+function sortedWith(comparator: ToIntBiFunction<T, T>) as Sequence<T>;
 ```
 
-## Surcharge de l'opérateur
-`La séquence`s peut supporter la surcharge de l'opérateur dans les futures révisions du langage. Reportez-vous à cette documentation pour garder à jour. Notez que la prise en charge peut nécessiter l'activation d'un drapeau spécial du compilateur : reportez-vous au [Préprocesseur des indicateurs expérimentaux](/Mods/Boson/Preprocessor/Exp/) pour plus d'informations.
+## Operator Overloading
+`Sequence`s may support operator overloading in future revisions of the language. Refer to this documentation to keep up-to-date. Note that support may require a special compiler flag to be enabled: refer to the [Experimental Flags Preprocessor](/Mods/Boson/Preprocessor/Exp/) for more information.
 
-## Exemple
-Ce qui suit est un exemple de script qui montre quelques exemples qui peuvent être faits avec des séquences. Ce n'est nulle part une liste complète de , mais elle est davantage considérée comme une référence et une preuve de concept.
+## Example
+The following is an example script that shows some examples that may be done with sequences. This is nowhere a complete list, but is meant more as a reference and a proof of concept.
 
 ```zenscript
-# Affiche le nom d'affichage des trois éléments fournis
+# Prints the display name of the given three items
 <sequence:IItemStack>(<minecraft:iron_ingot>, <minecraft:gold_ingot>, <minecraft:bedrock> * 3)
-    . ilter(function (item) { return item.displayName has "Iron"; })
+    .filter(function (item) { return item.displayName has "Iron"; })
     .map(function (item) { return item.displayName; })
-    . orEach(function (displayName) { print(displayName); });
+    .forEach(function (displayName) { print(displayName); });
 
-# Affiche comment les séquences peuvent être stockées et appelées plus tard
+# Shows how sequences can be stored and called later
 val x = <sequence:IItemStack>(<minecraft:iron_ingot>, <minecraft:gold_ingot>, <minecraft:bedrock> * 3)
-            . ilter(function (item) { return item. isplayName a « Fer »; })
-            .map(function (item) { return item. isplayName; });
+            .filter(function (item) { return item.displayName has "Iron"; })
+            .map(function (item) { return item.displayName; });
 x.map(function (displayName) { return displayName + displayName; })
-    . orEach(function (message) { print(message); });
+    .forEach(function (message) { print(message); });
 
 
-# Montre comment la conversion peut être répétée plus d'une fois
+# Shows how conversion can be repeated more than once
 <sequence:IItemStack>(<minecraft:redstone>, <minecraft:bedrock>)
-    . ap(function (item) { return item * 10; })
-    . ap(function (item) { return item.commandString; })
-    . ilter(function (commandString) { return commandString a " * "; })
-    . orEach(function (b) { print(b); });
-
-# Un autre exemple aléatoire
-<sequence:IItemStack>(<minecraft:redstone>, <minecraft:bedrock>)
-    . apIndexed(function (index, item) { return item * (index + 1); })
-    . lus(<minecraft:gold_ingot> * 5)
-    . ilterNot(function (item) { return item.displayName has "Bed"; })
+    .map(function (item) { return item * 10; })
     .map(function (item) { return item.commandString; })
-    . orEachIndexed(function (s, index) { print("" + index + ": " + s); });
+    .filter(function (commandString) { return commandString has " * "; })
+    .forEach(function (b) { print(b); });
 
-# Montre comment les fonctions surchargées comme le count work
-print(<sequence:IItemStack>(<minecraft:redstone>). ount()); # Sortie 1
-print(<sequence:IItemStack>(<minecraft:gold_ingot>, <minecraft:iron_ingot>).count(function (item) { return item. isplayName a « Fer »; })); # Outputs 1
+# Another random example
+<sequence:IItemStack>(<minecraft:redstone>, <minecraft:bedrock>)
+    .mapIndexed(function (index, item) { return item * (index + 1); })
+    .plus(<minecraft:gold_ingot> * 5)
+    .filterNot(function (item) { return item.displayName has "Bed"; })
+    .map(function (item) { return item.commandString; })
+    .forEachIndexed(function (s, index) { print("" + index + ": " + s); });
+
+# Shows how overloaded functions like count work
+print(<sequence:IItemStack>(<minecraft:redstone>).count()); # Outputs 1
+print(<sequence:IItemStack>(<minecraft:gold_ingot>, <minecraft:iron_ingot>).count(function (item) { return item.displayName has "Iron"; })); # Outputs 1
 
 # Interoperability between ZenScriptX and Boson
 <sequence:IItemStack>(<minecraft:redstone>)
-    . ap(function (it) { return it. efinition; })
+    .map(function (it) { return it.definition; })
     .map(function (it) { return it.id; })
-    . ap(function (it) { return it as NameSpacedString; })
-    . nEach(function (it) { print(it.asString()); })
+    .map(function (it) { return it as NameSpacedString; })
+    .onEach(function (it) { print(it.asString()); })
     .map(function (it) { return it.path; })
-    . orEach(function (it) { print(it); });
+    .forEach(function (it) { print(it); });
 
-# Élément À saisir les éléments
+# Element At to grab elements
 val target = <sequence:IItemStack>(<minecraft:redstone>).elementAt(0);
 print(target.definition.id);
 ```
