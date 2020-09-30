@@ -1,30 +1,30 @@
 # NBT-Lock Tweaker
 
-## Bloqueo NBT
+## NBT-Locking
 
-Los NBT-Locks son específicos de CompatSkills 1.4.0+ y actualmente es la característica más potente. Puedes bloquear determinados NBT-Tags restringidos a un mod-id determinado o a cada elemento del juego.
+The NBT-Locks are specific to CompatSkills 1.4.0+ and currently is the most powerful feature. You can lock specific NBT-Tags either restricted to a given mod-id or on every item in the game.
 
-Esto significa que cualquier elemento que contenga esa etiqueta NBT tendrá el bloqueo aplicado a ella.
+This means that any item found to contain that NBT-tag will have the lock applied to it.
 
-### Sintaxis:
+### Syntax:
 
-    // Ejemplo en blanco:
-    mods.compatskills.NBTLock.addGenericNBTLock(IData tag, String... bloqueado
-    mods.compatskills.NBTLock.addModNBTLock(String modId, IData tag, String... bloqueado)
+    // Blank Example:
+    mods.compatskills.NBTLock.addGenericNBTLock(IData tag, String... locked)
+    mods.compatskills.NBTLock.addModNBTLock(String modId, IData tag, String... locked)
     
-    //// Ejemplo de trabajo:
-    // Bloquea Silk-Touch
+    //// Working Example:
+    // Locks Silk-Touch
     addGenericNBTLock({ench:[{id: 33 as short}]}, "reskillable:magic|10");
     
-    // Bloquea Unbreaking (Sin Nivel-Specified)
-    addModNBTLock("minecraft", {ench:[{id: 34 as short}]}, "reskillable:collecting|6");
+    // Locks Unbreaking (No Level-Specified)
+    addModNBTLock("minecraft", {ench:[{id: 34 as short}]}, "reskillable:gathering|6");
     
 
-Esto tiene importantes implicaciones. Esto significa, por ejemplo, que como empaquetador puede bloquear:
+This has some powerful implications. This means for example that you as a pack-maker can lock:
 
-- Materiales de Tinker
-- Modificadores de Tinker
-- Encantamientos
-- Valores de energía
+- Tinker Materials
+- Tinker Modifiers
+- Enchantments
+- Energy-Values
 
-Y mucho más, ¡mientras conozcas la etiqueta NBT que usa!
+And much more, as long as you know the NBT-tag it uses!
