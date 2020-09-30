@@ -1,17 +1,17 @@
 # PlayerBreakSpeed
 
-L'evento PlayerBreakSpeed viene sparato ogni volta che un giocatore cerca di rompere un blocco.  
-Può essere annullato per impedire che il giocatore possa rompere quel blocco.
+The PlayerBreakSpeed Event is fired whenever a player tries to break a block.  
+It can be canceled to stop theplayer from being able to break that block.
 
-## Classe Evento
+## Event Class
 
-Dovrai lanciare l'evento nell'intestazione della funzione come questa classe:  
-`crafttweaker.event. layerBreakSpeedEvent`  
-È possibile, naturalmente, anche [importare](/AdvancedFunctions/Import/) la classe prima e utilizzare quel nome allora.
+You will need to cast the event in the function header as this class:  
+`crafttweaker.event.PlayerBreakSpeedEvent`  
+You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
 
-## Estensioni dell'interfaccia evento
+## Event interface extensions
 
-Gli eventi PlayerBreakSpeed implementano le seguenti interfacce e sono in grado di chiamare tutti i loro metodi/getter/setter:
+PlayerBreakSpeed Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
 
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 - [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
@@ -19,9 +19,9 @@ Gli eventi PlayerBreakSpeed implementano le seguenti interfacce e sono in grado 
 
 ## ZenGetter/Setter
 
-| ZenGetter     | ZenSetter | Tipo                                        |
+| ZenGetter     | ZenSetter | Type                                        |
 | ------------- | --------- | ------------------------------------------- |
 | blockState    |           | [IBlockState](/Vanilla/Blocks/IBlockState/) |
-| blocco        |           | [IBlock](/Vanilla/Blocks/IBlock/)           |
-| originalSpeed |           | galleggiante                                |
-| newSpeed      | newSpeed  | galleggiante                                |
+| block         |           | [IBlock](/Vanilla/Blocks/IBlock/)           |
+| originalSpeed |           | float                                       |
+| newSpeed      | newSpeed  | float                                       |
