@@ -1,77 +1,77 @@
-# Giradischi
+# Turntable
 
-## Ricetta Di Base
+## Basic Recipe
 
-* Aggiunge Ricetta girevole - gli input *DEVONO* avere un blocco associato a loro. Lo stato del prodotto è il blocco che verrà posizionato dopo le finiture della ricetta
+* Adds Turntable Recipe - inputs *MUST* have a block associated with them. The product state is the block that will be placed after the recipe finishes
 
 ```zenscript
 mods.betterwithmods.Turntable.add(IIngredient input, IItemStack productState, IItemStack[] output);
 
 mods.betterwithmods.Turntable.add(IIngredient input, IItemStack[] output);
 
-//Esempi
-mods. etterwithmods.Turntable.add(<minecraft:grass>, <minecraft:dirt>, [<minecraft:seed>]);
+//Examples
+mods.betterwithmods.Turntable.add(<minecraft:grass>, <minecraft:dirt>, [<minecraft:seed>]);
 
 mods.betterwithmods.Turntable.add(<minecraft:gravel>, [<minecraft:flint>]);
 ```
 
-## Rimozione tramite input
+## Removal by input
 
-* Rimuovi una ricetta in base all'ingrediente in ingresso
+* Remove a recipe based on the input ingredient
 
 ```zenscript
 mods.betterwithmods.Turntable.remove(IIngredient input);
 ```
 
-## Rimozione tramite output
+## Removal by output
 
-* Rimuovi una ricetta in base all'output
+* Remove a recipe based on the output
 
 ```zenscript
-mods.betterwithmods.Turntable.remove(IItemStack[] output);
+mods.betterwithmods.Turntable.remove(IItemStack[] outputs);
 ```
 
-## Rimuovi tutto
+## Remove all
 
-* Rimuovi tutte le ricette
+* Remove all recipes
 
 ```zenscript
 mods.betterwithmods.Turntable.removeAll();
 ```
 
-## Rimuovi per prodotto
+## Remove by product
 
-* Rimuovi una ricetta dal prodottoStato 
+* Remove a recipe by the productState 
 
 ```zenscript
 mods.betterwithmods.Turntable.removeRecipe(IItemStack productState);
 ```
 
-## Costruttore
+## Builder
 
-Il giradischi ha un costruttore di ricette che consente un controllo più preciso sulle ricette. Tutti i metodi precedenti sono semplicemente tagli corti per usare il costruttore.
+The Turntable has a recipe builder that allows more precise control over the recipes. All previous methods are simply short cuts to using the builder.
 
-* Per creare un nuovo costruttore di giradischi. `mods.betterwithmods.Turntable.builder()`
+* To create a new Turntable builder. `mods.betterwithmods.Turntable.builder()`
 
-* Metodi giradischi
+* Turntable methods
      
-     * Imposta gli input e gli output della ricetta  
+     * Sets up the inputs and outputs of the recipe  
               zenscript
               buildRecipe(IIngredient[] inputs, IItemStack[] outputs)
      
-     * Imposta le rotazioni necessarie alla fine della ricetta. Questo valore predefinito è 8.  
+     * Sets the rotations required for the recipe to finish. This defaults to 8.  
               zenscript
               setRotations(int rotations)
      
-     * Imposta il blocco che viene posizionato quando la ricetta è finita.  
+     * Set the block that is placed when the recipe is finished.  
               zenscript
               setProductState(IItemStack productState)
      
-     * Finalizzare la ricetta e aggiungerla al gioco  
+     * Finalize the recipe and add it to the game  
               zenscript
               build()
 
-### Esempio di utilizzo del costruttore
+### Example builder usage
 
 ```zenscript
 mods.betterwithmods.Turntable.builder()
