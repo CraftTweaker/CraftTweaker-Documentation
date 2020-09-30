@@ -1,19 +1,19 @@
-# Klammerhandler des Wörterbuchs
+# Ore Dictionary Bracket Handler
 
-Der Ore Wörterbuch Bracket Handler gibt dir Zugriff auf die Ore Wörterbücher im Spiel.
+The Ore Dictionary Bracket Handler gives you access to the Ore Dictionaries in the game.
 
-Ore Dictionarys werden im Bracket Handler des ErzWörterbuchs wie folgt referenziert:
+Ore Dictionarys are referenced in the Ore Dictionary Bracket Handler by like so:
 
 ```zenscript
 <ore:orename>
 <ore:ingotIron>
 ```
 
-Returns an [IOreDictEntry](/Vanilla/OreDict/IOreDictEntry/), as long as no `*` is in the call, otherwise returns a `List<IOreDictEntry>` If the oreDictionary is not yet in the game, will create a new and empty oreDictionary with the given name and return that. Bitte lesen Sie im [ErzWörterbuch](/Vanilla/OreDict/IOreDictEntry/) nach, um weitere Informationen darüber zu erhalten, was mit ihnen zu tun ist.
+Returns an [IOreDictEntry](/Vanilla/OreDict/IOreDictEntry/), as long as no `*` is in the call, otherwise returns a `List<IOreDictEntry>` If the oreDictionary is not yet in the game, will create a new and empty oreDictionary with the given name and return that. Please refer to the [Ore Dictionary](/Vanilla/OreDict/IOreDictEntry/) Entry for further information on what to do with them.
 
-# Alle registrierten Wörterbücher abrufen
+# Getting all Registered ore Dictionaries
 
-Du kannst den folgenden Befehl verwenden, um alle registrierten Wörterbücher in das CraftTweaker Log auszugeben
+You can use the following command to output all registered ore Dictionaries to the CraftTweaker log
 
     /ct oredict
     /crafttweaker oredict
