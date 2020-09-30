@@ -1,21 +1,21 @@
-# 抽出チャンバー
+# Extraction Chamber
 
-## パッケージ
+## Package
 ```zenscript
 import mods.calculator.extractionChamber;
 ```
 
-## メソッド
+## Methods
 
-- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input** 入力。
-- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) output[1-2]** outputs.
+- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input** The input.
+- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) output[1-2]** The outputs.
 
 ## 加算
 ```zenscript
-extractionChamber.addRecipe(IIngredient入力, IIngredient出力1, IIngredient出力2);
+extractionChamber.addRecipe(IIngredient input, IIngredient output1, IIngredient output2);
 ```
 
-## 削除
+## Removal
 ```zenscript
-extractionChamber.removeRecipe(IIngredient出力, IIngredient出力2);
+extractionChamber.removeRecipe(IIngredient output, IIngredient output2);
 ```
