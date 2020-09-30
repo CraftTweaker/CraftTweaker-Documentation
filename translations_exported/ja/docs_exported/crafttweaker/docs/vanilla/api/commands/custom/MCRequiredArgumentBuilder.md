@@ -1,19 +1,19 @@
 # MCRequiredArgumentBuilder
 
-crafttweakerのmod-idを持つmodによって追加されているクラスです。 従って、この機能を利用する場合はこのmodをインストールする必要があります。
+This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
 
-## クラスのインポート
-問題が発生した場合には、インポートが必要になります。とはいえ、お手数ですが予めインポートしておくほうが安全です。
+## Importing the class
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
 ```zenscript
 crafttweaker.api.commands.custom.MCRequiredArgumentBuilder
 ```
 
-## 実装されたインターフェース
-MCRequiredArgumentBuilder は、以下のインターフェースを実装します。 つまり、利用可能な任意のメソッドはこのクラスでも使用できます。
+## Implemented Interfaces
+MCRequiredArgumentBuilder は、以下のインターフェースを実装します。 That means any method available to them can also be used on this class.
 - [crafttweaker.api.commands.custom.MCArgumentBuilder](/vanilla/api/commands/custom/MCArgumentBuilder)
 
-## メソッド
-### ビルド
+## Methods
+### build
 
 戻り値の型: [crafttweaker.api.commands.custom.MCArgumentCommandNode](/vanilla/api/commands/custom/MCArgumentCommandNode)
 
@@ -21,17 +21,17 @@ MCRequiredArgumentBuilder は、以下のインターフェースを実装しま
 myMCRequiredArgumentBuilder.build();
 ```
 
-### 等しい
+### equals
 
-戻り値の型: boolean
+Return type: boolean
 
 ```zenscript
 myMCRequiredArgumentBuilder.equals(o as Object);
 ```
 
-| パラメータ | タイプ    | 説明           |
-| ----- | ------ | ------------ |
-| o     | オブジェクト | 説明が提供されていません |
+| Parameter | Type   | Description             |
+| --------- | ------ | ----------------------- |
+| o         | Object | No description provided |
 
 
 ### executes
@@ -42,9 +42,9 @@ myMCRequiredArgumentBuilder.equals(o as Object);
 myMCRequiredArgumentBuilder.executes(command as crafttweaker.api.commands.custom.MCCommand);
 ```
 
-| パラメータ     | タイプ                                                                                  | 説明           |
-| --------- | ------------------------------------------------------------------------------------ | ------------ |
-| (Command) | [crafttweaker.api.commands.custom.MCCommand](/vanilla/api/commands/custom/MCCommand) | 説明が提供されていません |
+| Parameter | Type                                                                                 | Description             |
+| --------- | ------------------------------------------------------------------------------------ | ----------------------- |
+| command   | [crafttweaker.api.commands.custom.MCCommand](/vanilla/api/commands/custom/MCCommand) | No description provided |
 
 
 ### fork
@@ -55,10 +55,10 @@ myMCRequiredArgumentBuilder.executes(command as crafttweaker.api.commands.custom
 myMCRequiredArgumentBuilder.fork(target as crafttweaker.api.commands.custom.MCCommandNode, modifier as crafttweaker.api.commands.custom.MCRedirectModifier);
 ```
 
-| パラメータ    | タイプ                                                                                                    | 説明           |
-| -------- | ------------------------------------------------------------------------------------------------------ | ------------ |
-| target   | [crafttweaker.api.commands.custom.MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)           | 説明が提供されていません |
-| modifier | [crafttweaker.api.commands.custom.MCRedirectModifier](/vanilla/api/commands/custom/MCRedirectModifier) | 説明が提供されていません |
+| Parameter | Type                                                                                                   | Description             |
+| --------- | ------------------------------------------------------------------------------------------------------ | ----------------------- |
+| target    | [crafttweaker.api.commands.custom.MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)           | No description provided |
+| modifier  | [crafttweaker.api.commands.custom.MCRedirectModifier](/vanilla/api/commands/custom/MCRedirectModifier) | No description provided |
 
 
 ### 前方へ
@@ -69,11 +69,11 @@ myMCRequiredArgumentBuilder.fork(target as crafttweaker.api.commands.custom.MCCo
 myMCRequiredArgumentBuilder.forward(target as crafttweaker.api.commands.custom.MCCommandNode, modifier as crafttweaker.api.commands.custom.MCRedirectModifier, fork as boolean);
 ```
 
-| パラメータ    | タイプ                                                                                                    | 説明           |
-| -------- | ------------------------------------------------------------------------------------------------------ | ------------ |
-| target   | [crafttweaker.api.commands.custom.MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)           | 説明が提供されていません |
-| modifier | [crafttweaker.api.commands.custom.MCRedirectModifier](/vanilla/api/commands/custom/MCRedirectModifier) | 説明が提供されていません |
-| fork     | boolean型                                                                                               | 説明が提供されていません |
+| Parameter | Type                                                                                                   | Description             |
+| --------- | ------------------------------------------------------------------------------------------------------ | ----------------------- |
+| target    | [crafttweaker.api.commands.custom.MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)           | No description provided |
+| modifier  | [crafttweaker.api.commands.custom.MCRedirectModifier](/vanilla/api/commands/custom/MCRedirectModifier) | No description provided |
+| fork      | boolean型                                                                                               | No description provided |
 
 
 ### getArguments
@@ -94,7 +94,7 @@ myMCRequiredArgumentBuilder.getCommand();
 
 ### getName
 
-戻り値の型: String
+Return type: String
 
 ```zenscript
 myMCRequiredArgumentBuilder.getName();
@@ -134,7 +134,7 @@ myMCRequiredArgumentBuilder.getSuggestionsProvider();
 
 ### hashCode
 
-戻り値の種類: int
+Return type: int
 
 ```zenscript
 myMCRequiredArgumentBuilder.hashCode();
@@ -142,7 +142,7 @@ myMCRequiredArgumentBuilder.hashCode();
 
 ### isFork
 
-戻り値の型: boolean
+Return type: boolean
 
 ```zenscript
 myMCRequiredArgumentBuilder.isFork();
@@ -156,9 +156,9 @@ myMCRequiredArgumentBuilder.isFork();
 myMCRequiredArgumentBuilder.redirect(target as crafttweaker.api.commands.custom.MCCommandNode);
 ```
 
-| パラメータ  | タイプ                                                                                          | 説明           |
-| ------ | -------------------------------------------------------------------------------------------- | ------------ |
-| target | [crafttweaker.api.commands.custom.MCCommandNode](/vanilla/api/commands/custom/MCCommandNode) | 説明が提供されていません |
+| Parameter | Type                                                                                         | Description             |
+| --------- | -------------------------------------------------------------------------------------------- | ----------------------- |
+| target    | [crafttweaker.api.commands.custom.MCCommandNode](/vanilla/api/commands/custom/MCCommandNode) | No description provided |
 
 
 
@@ -168,10 +168,10 @@ myMCRequiredArgumentBuilder.redirect(target as crafttweaker.api.commands.custom.
 myMCRequiredArgumentBuilder.redirect(target as crafttweaker.api.commands.custom.MCCommandNode, modifier as crafttweaker.api.commands.custom.MCSingleRedirectModifier);
 ```
 
-| パラメータ    | タイプ                                                                                                                | 説明           |
-| -------- | ------------------------------------------------------------------------------------------------------------------ | ------------ |
-| target   | [crafttweaker.api.commands.custom.MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)                       | 説明が提供されていません |
-| modifier | [crafttweaker.api.commands.custom.MCSingleRedirectModifier](/vanilla/api/commands/custom/MCSingleRedirectModifier) | 説明が提供されていません |
+| Parameter | Type                                                                                                               | Description             |
+| --------- | ------------------------------------------------------------------------------------------------------------------ | ----------------------- |
+| target    | [crafttweaker.api.commands.custom.MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)                       | No description provided |
+| modifier  | [crafttweaker.api.commands.custom.MCSingleRedirectModifier](/vanilla/api/commands/custom/MCSingleRedirectModifier) | No description provided |
 
 
 ### 必須
@@ -182,9 +182,9 @@ myMCRequiredArgumentBuilder.redirect(target as crafttweaker.api.commands.custom.
 myMCRequiredArgumentBuilder.requires(requirements as function.Predicate<crafttweaker.api.commands.custom.MCCommandSource>);
 ```
 
-| パラメータ | タイプ                                                                                                                                    | 説明           |
-| ----- | -------------------------------------------------------------------------------------------------------------------------------------- | ------------ |
-| 要件    | function.Predicate&lt;[crafttweaker.api.commands.custom.MCCommandSource](/vanilla/api/commands/custom/MCCommandSource)&gt; | 説明が提供されていません |
+| Parameter | Type                                                                                                                                   | Description             |
+| --------- | -------------------------------------------------------------------------------------------------------------------------------------- | ----------------------- |
+| 要件        | function.Predicate&lt;[crafttweaker.api.commands.custom.MCCommandSource](/vanilla/api/commands/custom/MCCommandSource)&gt; | No description provided |
 
 
 ### 示唆する
@@ -195,9 +195,9 @@ myMCRequiredArgumentBuilder.requires(requirements as function.Predicate<crafttwe
 myMCRequiredArgumentBuilder.suggest(provider as crafttweaker.api.commands.custom.MCSuggestionProvider);
 ```
 
-| パラメータ  | タイプ                                                                                                        | 説明           |
-| ------ | ---------------------------------------------------------------------------------------------------------- | ------------ |
-| プロバイダー | [crafttweaker.api.commands.custom.MCSuggestionProvider](/vanilla/api/commands/custom/MCSuggestionProvider) | 説明が提供されていません |
+| Parameter | Type                                                                                                       | Description             |
+| --------- | ---------------------------------------------------------------------------------------------------------- | ----------------------- |
+| provider  | [crafttweaker.api.commands.custom.MCSuggestionProvider](/vanilla/api/commands/custom/MCSuggestionProvider) | No description provided |
 
 
 ### そしたら...
@@ -208,9 +208,9 @@ myMCRequiredArgumentBuilder.suggest(provider as crafttweaker.api.commands.custom
 myMCRequiredArgumentBuilder.then(crafttweaker.api.commands.custom.MCArgumentBuilder);
 ```
 
-| パラメータ | タイプ                                                                                                  | 説明           |
-| ----- | ---------------------------------------------------------------------------------------------------- | ------------ |
-| 引数    | [crafttweaker.api.commands.custom.MCArgumentBuilder](/vanilla/api/commands/custom/MCArgumentBuilder) | 説明が提供されていません |
+| Parameter | Type                                                                                                 | Description             |
+| --------- | ---------------------------------------------------------------------------------------------------- | ----------------------- |
+| 引数        | [crafttweaker.api.commands.custom.MCArgumentBuilder](/vanilla/api/commands/custom/MCArgumentBuilder) | No description provided |
 
 
 
@@ -220,9 +220,9 @@ myMCRequiredArgumentBuilder.then(crafttweaker.api.commands.custom.MCArgumentBuil
 myMCRequiredArgumentBuilder.then(crafttweaker.api.commands.custom.MCCommandNode);
 ```
 
-| パラメータ | タイプ                                                                                          | 説明           |
-| ----- | -------------------------------------------------------------------------------------------- | ------------ |
-| 引数    | [crafttweaker.api.commands.custom.MCCommandNode](/vanilla/api/commands/custom/MCCommandNode) | 説明が提供されていません |
+| Parameter | Type                                                                                         | Description             |
+| --------- | -------------------------------------------------------------------------------------------- | ----------------------- |
+| 引数        | [crafttweaker.api.commands.custom.MCCommandNode](/vanilla/api/commands/custom/MCCommandNode) | No description provided |
 
 
 
@@ -232,14 +232,14 @@ myMCRequiredArgumentBuilder.then(crafttweaker.api.commands.custom.MCCommandNode)
 myMCRequiredArgumentBuilder.then(crafttweaker.api.commands.custom.MCRequiredArgumentBuilder);
 ```
 
-| パラメータ | タイプ                                                                                                                  | 説明           |
-| ----- | -------------------------------------------------------------------------------------------------------------------- | ------------ |
-| 引数    | [crafttweaker.api.commands.custom.MCRequiredArgumentBuilder](/vanilla/api/commands/custom/MCRequiredArgumentBuilder) | 説明が提供されていません |
+| Parameter | Type                                                                                                                 | Description             |
+| --------- | -------------------------------------------------------------------------------------------------------------------- | ----------------------- |
+| 引数        | [crafttweaker.api.commands.custom.MCRequiredArgumentBuilder](/vanilla/api/commands/custom/MCRequiredArgumentBuilder) | No description provided |
 
 
 ### toString
 
-戻り値の型: String
+Return type: String
 
 ```zenscript
 myMCRequiredArgumentBuilder.toString();
@@ -253,13 +253,13 @@ myMCRequiredArgumentBuilder.toString();
 myMCRequiredArgumentBuilder == o as Object
 ```
 
-| パラメータ | タイプ    | 説明           |
-| ----- | ------ | ------------ |
-| o     | オブジェクト | 説明が提供されていません |
+| Parameter | Type   | Description             |
+| --------- | ------ | ----------------------- |
+| o         | Object | No description provided |
 
-## キャスト
+## Casters
 
-| 結果の種類 | 暗黙的  |
-| ----- | ---- |
-| 文字列型  | true |
+| Result type | Is Implicit |
+| ----------- | ----------- |
+| String      | true        |
 
