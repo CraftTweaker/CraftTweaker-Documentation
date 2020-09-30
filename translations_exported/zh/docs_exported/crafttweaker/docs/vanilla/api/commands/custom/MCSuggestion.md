@@ -11,20 +11,20 @@ crafttbiner.api.commands.custom.MCSuggestion
 ## 方法
 ### 应用
 
-返回类型：字符串
+Return type: String
 
 ```zenscript
 myMCSuggestion.apply(输入为字符串)；
 ```
 
-| 参数        | 类型          | 描述                      |
-| --------- | ----------- | ----------------------- |
-| input（输入） | 字符串[string] | No description provided |
+| 参数        | 类型     | 描述                      |
+| --------- | ------ | ----------------------- |
+| input（输入） | String | No description provided |
 
 
 ### 比较到
 
-返回类型：int
+Return type: int
 
 ```zenscript
 myMCSuggestion.compareTo(o as craftwiner.api.commands.custom.MCSuggestion);
@@ -37,7 +37,7 @@ myMCSuggestion.compareTo(o as craftwiner.api.commands.custom.MCSuggestion);
 
 ### 对比的 ToIgnoreCase
 
-返回类型：int
+Return type: int
 
 ```zenscript
 myMCSuggestion.compareToIgnoreCase(Bb as craftbiner.api.commands.custom.MCSuggestion);
@@ -50,15 +50,15 @@ myMCSuggestion.compareToIgnoreCase(Bb as craftbiner.api.commands.custom.MCSugges
 
 ### equals #等于
 
-返回类型：布尔值
+Return type: boolean
 
 ```zenscript
 myMCSuggestion.equals(o as Object);
 ```
 
-| 参数 | 类型 | 描述                      |
-| -- | -- | ----------------------- |
-| o  | 对象 | No description provided |
+| 参数 | 类型     | 描述                      |
+| -- | ------ | ----------------------- |
+| o  | Object | No description provided |
 
 
 ### 扩展
@@ -69,10 +69,10 @@ myMCSuggestion.equals(o as Object);
 myMCSuggestion.extension (命令字符串，范围为 craftbiner.api.commands.custom.MCStringRange);
 ```
 
-| 参数    | 类型                                                                                            | 描述                      |
-| ----- | --------------------------------------------------------------------------------------------- | ----------------------- |
-| 命令    | 字符串[string]                                                                                   | No description provided |
-| range | [craftminstrer.api.commands.custom.MCStringrange](/vanilla/api/commands/custom/MCStringRange) | No description provided |
+| 参数      | 类型                                                                                            | 描述                      |
+| ------- | --------------------------------------------------------------------------------------------- | ----------------------- |
+| command | String                                                                                        | No description provided |
+| range   | [craftminstrer.api.commands.custom.MCStringrange](/vanilla/api/commands/custom/MCStringRange) | No description provided |
 
 
 ### getRange
@@ -85,7 +85,7 @@ myMCSuggestion.getRange();
 
 ### getText
 
-返回类型：字符串
+Return type: String
 
 ```zenscript
 myMCSuggestion.getText();
@@ -93,7 +93,7 @@ myMCSuggestion.getText();
 
 ### 获取工具提示
 
-返回类型：字符串
+Return type: String
 
 ```zenscript
 myMCSuggestion.getTooltip();
@@ -101,7 +101,7 @@ myMCSuggestion.getTooltip();
 
 ### hashCode
 
-返回类型：int
+Return type: int
 
 ```zenscript
 myMCSuggestion.hashCode();
@@ -109,7 +109,7 @@ myMCSuggestion.hashCode();
 
 ### toString
 
-返回类型：字符串
+Return type: String
 
 ```zenscript
 myMCSuggestion.toString();
@@ -123,13 +123,13 @@ myMCSuggestion.toString();
 myMCSuggestion == o 为对象
 ```
 
-| 参数 | 类型 | 描述                      |
-| -- | -- | ----------------------- |
-| o  | 对象 | No description provided |
+| 参数 | 类型     | 描述                      |
+| -- | ------ | ----------------------- |
+| o  | Object | No description provided |
 
-## 卡斯特尔
+## Casters
 
-| 结果类型        | 是否隐藏 |
-| ----------- | ---- |
-| 字符串[string] | true |
+| 结果类型   | 是否隐藏 |
+| ------ | ---- |
+| String | true |
 
