@@ -1,18 +1,18 @@
-# Pozycjonowalne
+# IEventPositionable
 
-Ten interfejs jest rozszerzony o wszystkie zdarzenia, których pozycja jest ważna.  
-Oznacza to, że możesz użyć poniższych pobierających aby uzyskać dostęp do szczegółów pozycji.
+This interface is extended by all events whose position matters.  
+That means you can use the getters below to access the position details.
 
-## Importowanie klasy
+## Importing the class
 
-Może być wymagane [zaimportowanie](/AdvancedFunctions/Import/) klasy, aby uniknąć błędów.  
-`zaimportuj crafttweaker.event.IEventPositionable;`
+It might be required to [import](/AdvancedFunctions/Import/) the class to avoid errors.  
+`import crafttweaker.event.IEventPositionable;`
 
 ## ZenGetters
 
-| Nazwa   | typ                                    |
-| ------- | -------------------------------------- |
-| pozycja | [IBlockPos](/Vanilla/World/IBlockPos/) |
-| x       | odcień                                 |
-| y       | odcień                                 |
-| z       | odcień                                 |
+| name     | type                                   |
+| -------- | -------------------------------------- |
+| position | [IBlockPos](/Vanilla/World/IBlockPos/) |
+| x        | int                                    |
+| y        | int                                    |
+| z        | int                                    |
