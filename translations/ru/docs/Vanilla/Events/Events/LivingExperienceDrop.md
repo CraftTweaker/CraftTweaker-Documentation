@@ -1,6 +1,6 @@
 # LivingExperienceDrop
 
-Это событие запускается, когда сущность умирает и падает из опыта, что позволяет изменить количество опыта. В качестве альтернативы событие может быть **отменено** , чтобы предотвратить потерю опыта.
+This event is fired when an entity dies and drops experience, allowing for the amount of experience to be modified. Alternately, the event can be **canceled** to prevent experience from being dropped.
 
 ## Класс события
 You will need to cast the event in the function header as this class:  
@@ -8,20 +8,20 @@ You will need to cast the event in the function header as this class:
 You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
 
 ## Наследование от интерфейсов событий
-LivingExperienceDrop События реализуют следующие интерфейсы и также могут вызвать все их методы/getters/setters:
+LivingExperienceDrop Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
 
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 - [ILivingEvent](/Vanilla/Events/Events/ILivingEvent/)
 
 ## Геттеры/сеттеры
-Во время события можно извлечь/задать следующую информацию:
+The following information can be retrieved/set during the event:
 
-| ZenGetter            | ZenSetter       | Тип                                  |
-| -------------------- | --------------- | ------------------------------------ |
-| `player`             |                 | [IPlayer](/Vanilla/Players/IPlayer/) |
-| `понизить опыт`      | `понизить опыт` | int                                  |
-| `originalExperience` |                 | int                                  |
+| ZenGetter            | ZenSetter           | Тип                                  |
+| -------------------- | ------------------- | ------------------------------------ |
+| `player`             |                     | [IPlayer](/Vanilla/Players/IPlayer/) |
+| `droppedExperience`  | `droppedExperience` | int                                  |
+| `originalExperience` |                     | int                                  |
 
-## Примечания
+## Notes
 
-`originalExperience` содержит оригинальный объем опыта. Возможно, `сброшенный опыт` когда это событие уже было изменено.
+`originalExperience` contains the original Vanilla amount of experience. It is possible that `droppedExperience` when this event is fired has already been modified.
