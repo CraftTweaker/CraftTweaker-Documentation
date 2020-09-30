@@ -1,16 +1,16 @@
-# Rondella Minerale
+# Ore Washer
 
-## Pacchetto
+## Package
 
 `import mods.ic2.OreWasher;`
 
-## Metodi
+## Methods
 
 - **[IItemStack](/Vanilla/Items/IItemStack/)[] outputs**
-- **[Ingresso IIngrediente](/Vanilla/Variable_Types/IIngredient/)**
-- **@Optional int water** Quantità di acqua necessaria per un ciclo di lavorazione di questa ricetta, misurata in mB. Predefinito a 1000 se non indicato.
+- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input**
+- **@Optional int water** Amount of water required for one round of processing of this recipe, measured in mB. Default to 1000 if not given.
 
-## Addizione
+## Addition
 
 ```zenscript
 mods.ic2.OreWasher.addRecipe(IItemStack[] outputs, IIngredient input, @Optional int water);
@@ -18,7 +18,7 @@ mods.ic2.OreWasher.addRecipe(IItemStack[] outputs, IIngredient input, @Optional 
 mods.ic2.OreWasher.addRecipe([<minecraft:diamond>, <minecraft:emerald>, <minecraft:nether_star>], <minecraft:dirt>);
 ```
 
-## Rimozione
+## Removal
 
-- Se si utilizza Ic2 Experimental, per rimuovere una ricetta, basta rimuovere la riga corrispondente in `config/ic2/ore_washer.ini`
-- Se si utilizza Ic2 Classic e Ic2c Extra, per rimuovere una ricetta, basta disattivare la ricetta corrispondente in `config/ic2/ic2machineRecipes.json`.
+- If using Ic2 Experimental, to remove a recipe, simply remove the corresponding line in `config/ic2/ore_washer.ini`
+- If using Ic2 Classic and Ic2c Extras, to remove a recipe, simply disable the corresponding recipe in `config/ic2/ic2machineRecipes.json`.
