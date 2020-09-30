@@ -1,38 +1,38 @@
-# 燃烧引擎
+# Combustion Engine
 
-*需要制造能源*
+*Requires BuildCraft Energy*
 
-类路径： `mods.buildcraft。CombustionEngine`
+Class path: `mods.buildcraft.CombustionEngine`
 
-## 使用
+## Use
 
-要使用，导入使用 `导入mods.buildcraft的类。CombustionEngine；` 在你的脚本开头。
+To use, import the class with `import mods.buildcraft.CombustionEngine;` at the beginning of your script.
 
-## 添加清洁燃料
+## Adding a Clean Fuel
 
-`CombustionEngine.addCleanFuel(液体, powerPerTick, timePerBucket)；`
+`CombustionEngine.addCleanFuel(liquid, powerPerTick, timePerBucket);`
 
-- `液体` <[ILiquidStack](/Vanilla/Liquids/ILiquidStack)> 用作燃料的液体。
-- `PowerPerTick` &lt;双倍> 功率输出每只刻度 MJ
-- `timePerbucket` &lt;int> 应该运行1000mB (1 bucket)
+- `liquid` <[ILiquidStack](/Vanilla/Liquids/ILiquidStack)> The liquid to be used as fuel
+- `powerPerTick` &lt;double> Power output in MJ per tick
+- `timePerBucket` &lt;int> Amount of ticks that 1,000 mB (1 bucket) should run for
 
 ```zenscript
-导入 mods.buildcraft。CombustionEngine;
+import mods.buildcraft.CombustionEngine;
 
 CombustionEngine.addCleanFuel(<liquid:iron>, 32.0, 1200);
 ```
 
-## 添加泥土燃料
+## Adding a Dirty Fuel
 
-`CombustionEngine.addDirtyFuel(lFuel, powerPerTick, timePerBucket, lResidue)；`
+`CombustionEngine.addDirtyFuel(lFuel, powerPerTick, timePerBucket, lResidue);`
 
-- `lFuel` <[ILiquidStack](/Vanilla/Liquids/ILiquidStack)> 用作燃料的液体。
-- `PowerPerTick` &lt;双倍> 功率输出每只刻度 MJ
-- `timePerbucket` &lt;int> 应该运行1000mB (1 bucket)
-- `l残余` <[ILiquidStack](/Vanilla/Liquids/ILiquidStack)> 原燃料的每桶残余液量
+- `lFuel` <[ILiquidStack](/Vanilla/Liquids/ILiquidStack)> The liquid to be used as fuel
+- `powerPerTick` &lt;double> Power output in MJ per tick
+- `timePerBucket` &lt;int> Amount of ticks that 1,000 mB (1 bucket) should run for
+- `lResidue` <[ILiquidStack](/Vanilla/Liquids/ILiquidStack)> The residue fluid, per bucket of the original fuel
 
 ```zenscript
-导入 mods.buildcraft。CombustionEngine;
+import mods.buildcraft.CombustionEngine;
 
 CombustionEngine.addDirtyFuel(<liquid:iron>, 32.0, 1200, <liquid:water>);
 ```
