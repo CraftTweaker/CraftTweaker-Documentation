@@ -1,19 +1,19 @@
-# Crogiolo
+# Crucible
 
-Il pacchetto *crogiolo* viene utilizzato per aggiungere o rimuovere ricette da/per il Crogiolo.
+The *crucible* package is used for adding or removing recipes to/from the Crucible.
 
-## Chiamata
+## Calling
 
-Puoi chiamare il pacchetto *crogiolo* usando `mods.skyresources.crucible`
+You can call the *crucible* package using `mods.skyresources.crucible`
 
-## Aggiunta Ricetta
+## Recipe Addition
 
 ```zenscript
 //mods.skyresources.crucible.addRecipe(ILiquidStack output, IItemStack input);
 mods.skyresources.crucible.addRecipe(<liquid:lava> * 500, <minecraft:cobblestone>);
 ```
 
-## Rimozione Ricetta
+## Recipe Removal
 
 ```zenscript
 //mods.skyresources.crucible.removeRecipe(ILiquidStack output);
