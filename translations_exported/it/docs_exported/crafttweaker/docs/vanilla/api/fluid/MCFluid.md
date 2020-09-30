@@ -2,7 +2,7 @@
 
 Questa classe è stata aggiunta da una mod con ID `crafttweaker`. Perciò, è necessario avere questa mod installata per poter utilizzare questa funzione.
 
-## Importare la classe
+## Importing the class
 Potrebbe essere necessario importare il pacchetto, se si incontrano dei problemi (come castare un vettore), quindi meglio essere sicuri e aggiungere la direttiva di importazione.
 ```zenscript
 crafttweaker.api.fluid.MCFluid
@@ -12,7 +12,7 @@ crafttweaker.api.fluid.MCFluid
 MCFluid implementa le seguenti interfacce. Ciò significa che ogni metodo presente nell'interfaccia può essere usato anche per questa classe.
 - [crafttweaker.api.brackets.CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
 
-## Metodi
+## Methods
 ### makeStack
 
 Crea un nuovo [crafttweaker.api.fluid.IFluidStack](/vanilla/api/fluid/IFluidStack) con la quantità data di fluido.
@@ -26,19 +26,19 @@ myMCFluid.makeStack(amount as int);
 myMCFluid.makeStack(1000);
 ```
 
-| Parametro | Tipo | Descrizione                 |
+| Parameter | Type | Description                 |
 | --------- | ---- | --------------------------- |
-| importo   | int  | Nessuna descrizione fornita |
+| amount    | int  | Nessuna descrizione fornita |
 
 
 
-## Proprietà
+## Properties
 
-| Nome          | Tipo    | Ha Getter | Ha Setter |
-| ------------- | ------- | --------- | --------- |
-| commandString | Stringa | vero      | falso     |
+| Name          | Type   | Ha Getter | Ha Setter |
+| ------------- | ------ | --------- | --------- |
+| commandString | String | true      | false     |
 
-## Operatori
+## Operators
 ### MUL
 
 Crea un nuovo [crafttweaker.api.fluid.IFluidStack](/vanilla/api/fluid/IFluidStack) con la quantità data di fluido.
@@ -50,7 +50,7 @@ myMCFluid * amount as int
 myMCFluid * 1000
 ```
 
-| Parametro | Tipo | Descrizione                 |
+| Parameter | Type | Description                 |
 | --------- | ---- | --------------------------- |
-| importo   | int  | Nessuna descrizione fornita |
+| amount    | int  | Nessuna descrizione fornita |
 
