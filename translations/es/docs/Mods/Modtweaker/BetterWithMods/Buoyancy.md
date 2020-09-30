@@ -1,10 +1,10 @@
-# Buoyance
+# Buoyancy
 
-La mejora afecta la habilidad de un objeto para flotar en el agua cuando HCBuoy está habilitado en BWM.
+Buoyancy effects the ability for an Item to float on water when HCBuoy is enabled in BWM.
 
-El valor puede ser un decimal entre -1 y 1 donde -1 se hunde directamente hacia abajo, 0 alcanza el equilibrio, 1 flotación arriba.
+Value can be a decimal between -1 and 1 where -1 sinks directly to the bottom, 0 reaches equilibrium, 1 floats on top.
 
 ```zenscript
-mods.betterwithmods.Buoyancy.set(ItemStack stack, valor flotante);
+mods.betterwithmods.Buoyancy.set(IItemStack stack, float value);
 
 ```
