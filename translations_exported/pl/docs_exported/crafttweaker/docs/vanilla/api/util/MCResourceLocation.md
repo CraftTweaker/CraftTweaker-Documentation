@@ -1,66 +1,66 @@
 # MCResourceLocation
 
-Ta klasa została dodana przez moda z mod-id `crafttweaker`. Więc musisz zainstalować tę modyfikację, jeśli chcesz używać tej funkcji.
+This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
 
-## Importowanie klasy
-Może być wymagane zaimportowanie pakietu, jeśli napotkasz jakiekolwiek problemy (np. rzucanie tablicy), tak aby były bezpieczne niż przepraszamy i dodaj import.
+## Importing the class
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
 ```zenscript
-[PLACEHOLDER] crafttweaker.api.util.MCResourceLocation
+crafttweaker.api.util.MCResourceLocation
 ```
 
-## Zaimplementowane interfejsy
-MCResourceLocation implementuje następujące interfejsy. Oznacza to, że każda dostępna dla nich metoda może być również stosowana w tej klasie.
+## Implemented Interfaces
+MCResourceLocation implementuje następujące interfejsy. That means any method available to them can also be used on this class.
 - [crafttweaker.api.brackets.CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
 
-## Konstruktorzy
+## Constructors
 ```zenscript
 nowe crafttweaker.api.util.MCResourceLocation(nazwa jako String, ścieżka jako String);
 ```
-| Parametr        | Typ         | Opis             |
-| --------------- | ----------- | ---------------- |
-| przestrzeń nazw | Ciąg znaków | Nie podano opisu |
-| ścieżka         | Ciąg znaków | Nie podano opisu |
+| Parameter       | Type   | Description             |
+| --------------- | ------ | ----------------------- |
+| przestrzeń nazw | String | No description provided |
+| path            | String | No description provided |
 
 
 
-## Metody
+## Methods
 ### porównaj do
 
-Typ zwrotu: int
+Return type: int
 
 ```zenscript
 myMCResourceLocation.compareTo(p_compareTo_1_ jako crafttweaker.api.util.MCResourceLocation);
 ```
 
-| Parametr       | Typ                                                                                            | Opis             |
-| -------------- | ---------------------------------------------------------------------------------------------- | ---------------- |
-| p_Porówna_1_ | [[PLACEHOLDER] crafttweaker.api.util.MCResourceLocation](/vanilla/api/util/MCResourceLocation) | Nie podano opisu |
+| Parameter      | Type                                                                             | Description             |
+| -------------- | -------------------------------------------------------------------------------- | ----------------------- |
+| p_Porówna_1_ | [crafttweaker.api.util.MCResourceLocation](/vanilla/api/util/MCResourceLocation) | No description provided |
 
 
-### równa się
+### equals
 
-Typ zwrotu: logiczny
+Return type: boolean
 
 ```zenscript
 myMCResourceLocation.equals(inne jako obiekt);
 ```
 
-| Parametr | Typ    | Opis             |
-| -------- | ------ | ---------------- |
-| inne     | Obiekt | Nie podano opisu |
+| Parameter | Type   | Description             |
+| --------- | ------ | ----------------------- |
+| other     | Object | No description provided |
 
 
 ### getNamespace
 
-Typ zwrotu: Ciąg
+Return type: String
 
 ```zenscript
 myMCResourceLocation.getNamespace();
 ```
 
-### pobierz ścieżkę
+### getPath
 
-Typ zwrotu: Ciąg
+Return type: String
 
 ```zenscript
 myMCResourceLocation.getPath();
@@ -68,7 +68,7 @@ myMCResourceLocation.getPath();
 
 ### hashCode
 
-Typ zwrotu: int
+Return type: int
 
 ```zenscript
 myMCResourceLocation.hashCode();
@@ -76,18 +76,18 @@ myMCResourceLocation.hashCode();
 
 ### toString
 
-Typ zwrotu: Ciąg
+Return type: String
 
 ```zenscript
 myMCResourceLocation.toString();
 ```
 
 
-## Właściwości
+## Properties
 
-| Nazwisko        | Typ         | Posiada Getter | Ma ustawienie |
-| --------------- | ----------- | -------------- | ------------- |
-| polecenie       | Ciąg znaków | prawda         | fałszywy      |
-| przestrzeń nazw | Ciąg znaków | prawda         | fałszywy      |
-| ścieżka         | Ciąg znaków | prawda         | fałszywy      |
+| Name            | Type   | Has Getter | Has Setter |
+| --------------- | ------ | ---------- | ---------- |
+| commandString   | String | true       | false      |
+| przestrzeń nazw | String | true       | false      |
+| path            | String | true       | false      |
 
