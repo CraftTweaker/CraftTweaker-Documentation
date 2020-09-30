@@ -1,17 +1,17 @@
 # IItemDestroySpeed
 
-IItemDestroySpeed関数を [アイテム](/Mods/ContentTweaker/Vanilla/Creatable_Content/Item/) に追加し、アイテムのブロック破壊速度を決定します。
+The IItemDestroySpeed function can be added to an [Item](/Mods/ContentTweaker/Vanilla/Creatable_Content/Item/) and will determine the item's block breaking speed.
 
 ## パッケージのインポート
 
-問題が発生した場合は、パッケージをインポートする必要があるかもしれませんので、申し訳ありませんし、インポートを追加してください。  
+It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
 `import mods.contenttweaker.IItemDestroySpeed;`
 
-## パラメータ
+## Parameters
 
-IItemDestroySpeedは以下のパラメータを持つ関数です。
+The IItemDestroySpeed is a function with the following parameters:
 
-- [IMutableItemStack](/Mods/ContentTweaker/Vanilla/Types/Item/IMutableItemStack/) mutableItemStack → 項目。
-- [ICTBlockState](/Mods/ContentTweaker/Vanilla/Types/Block/ICTBlockState/) blockState → 採掘中のブロックの状態。
+- [IMutableItemStack](/Mods/ContentTweaker/Vanilla/Types/Item/IMutableItemStack/) mutableItemStack → The item.
+- [ICTBlockState](/Mods/ContentTweaker/Vanilla/Types/Block/ICTBlockState/) blockState → The state of the block that is being mined.
 
-関数はfloat値を返す必要があります。
+The function needs to return a float value.
