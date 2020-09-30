@@ -1,13 +1,13 @@
-# Rejestracja paliwa
+# Fuel Registration
 
 ## GeneratorPaliwo rejestratora
 
-| Nazwisko | Typ                                         |
+| Name     | Type                                        |
 | -------- | ------------------------------------------- |
 | Płyn / t | [Fluidstack](/Vanilla/Liquids/IFluidStack/) |
-| Flux/t   | Liczba całkowita                            |
+| Flux/t   | Integer                                     |
 
-Przykład:
+Example:
 ```ZenScript
 //mods.immersivePetum.FuelRegistry.registerGeneratorFuel(paliwo IFluidStack fuel, int fluxPerTick);
 
@@ -16,11 +16,11 @@ mods.immersivePetum.FuelRegistry.registerGeneratorFuel(<fluid:minecraft:water> *
 
 ## registerMotorboatFuel
 
-| Nazwisko | Typ                                         |
+| Name     | Type                                        |
 | -------- | ------------------------------------------- |
 | Płyn / t | [Fluidstack](/Vanilla/Liquids/IFluidStack/) |
 
-Przykład:
+Example:
 ```ZenScript
 //mods.immersivepetroum.FuelRegistry.registerMotorboatFuel(IFluidStack);
 
