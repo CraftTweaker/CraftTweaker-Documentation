@@ -1,12 +1,12 @@
-# Czyszczenie kocioła
+# Cauldron Cleaning
 
-Pakiet *kocioł* jest używany do dodawania lub usuwania przepisów do/z kociołu.
+The *cauldroncleaning* package is used for adding or removing recipes to/from the Cauldron.
 
-## Dzwonienie
+## Calling
 
-Możesz wywołać pakiet *kocioł* używając `mods.skyresources.cauldronclean`
+You can call the *cauldroncleaning* package using `mods.skyresources.cauldronclean`
 
-## Dodawanie przepisów
+## Recipe Addition
 
 ```zenscript
 //mods.skyresources.cauldronclean.addRecipe(IItemStack output, IItemStack input);
@@ -16,9 +16,9 @@ mods.skyresources.cauldronclean.addRecipe(<minecraft:diamond>, <minecraft:dirt>)
 mods.skyresources.cauldronclean.addRecipe(<minecraft:emerald>, <minecraft:dirt>, 0.50);
 ```
 
-## Usuwanie przepisów
+## Recipe Removal
 
 ```zenscript
-//mods.skyresources.cauldronclean.removeRecipe(wyjście IItemStack);
+//mods.skyresources.cauldronclean.removeRecipe(IItemStack output);
 mods.skyresources.cauldronclean.removeRecipe(<minecraft:diamond>);
 ```
