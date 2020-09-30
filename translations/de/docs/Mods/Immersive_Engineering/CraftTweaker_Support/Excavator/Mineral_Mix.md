@@ -1,50 +1,50 @@
-# Mineral-Mix
+# Mineral Mix
 
 ## Dieses Paket importieren
 
-Es kann erforderlich sein, dass Sie das Paket importieren, wenn Sie irgendwelche Probleme haben (z.B. ein Array zu casten). Also seien Sie sicher als entschuldigen und fügen Sie den Import `importieren mods.immersiveengineering.MineralMix;`.
+It might be required for you to import the package if you encounter any issues (like casting an Array). So better be safe than sorry and add the import `import mods.immersiveengineering.MineralMix;`.
 
-## Fehlerchance
+## Fail Chance
 
-Du kannst die Fehlerchance für den Mineralmix mit der FailChance [ZenSetter/Getter] auf dem Objekt einstellen und bekommen.
+You can get and set the failchance for the Mineralmix using the failChance [ZenSetter/Getter] on the object.
 
-## Erhalte Mineral
+## Get Mineral
 
 | Benötigt | Type | Datentyp |
 | -------- | ---- | -------- |
 | Benötigt | Name | string   |
 
 ```zenscript
-//Beispiel:
+//Example:
 Excavator.getMineral(String Name);
 
 var Iron = Excavator.getMineral("Iron_Ore");
 ```
 
-## Erz hinzufügen
+## Add Ore
 
-| Benötigt | Type   | Datentyp |
+| Required | Type   | Datentyp |
 | -------- | ------ | -------- |
-| Benötigt | Erz    | string   |
-| Benötigt | Hannes | string   |
+| Required | Ore    | string   |
+| Required | Chance | string   |
 
 ```zenscript
-mineralMixObject.addOre("EreIron", 0.5);
+mineralMixObject.addOre("oreIron", 0.5);
 ```
 
-Sie müssen die oredict Namen verwenden.
+You will need to use the oredict names.
 
-## Entferne Erz
+## Remove Ore
 
-| Benötigt | Type | Datentyp |
+| Required | Type | Datentyp |
 | -------- | ---- | -------- |
-| Benötigt | Erz  | string   |
+| Required | Ore  | string   |
 
 ```zenscript
 mineralMixObject.removeOre("oreIron");
 ```
 
-## Fehler-Chance Getriebe/Setter
+## Fail Chance Getter/Setter
 
 ### Beispiel
 
@@ -56,32 +56,32 @@ mineralMixObject.failchance;
 mineralMixObject.failchance = 0.5;
 ```
 
-## Volles Beispiel
+## Full Example
 
 ```zenscript
-//Beispiel:
+//Example:
 import mods.immersiveengineering.Excavator;
 import mods.immersiveengineering.MineralMix;
 
 //Get The Mineral Mix
-mods.immersiveengineering. xcavator.addMineral("Iron_Ore", 50, 0.005, ["oreIron", "oreDiamond"], [0.005, 0.01], [1, 0, -1]);
+mods.immersiveengineering.Excavator.addMineral("Iron_Ore", 50, 0.005, ["oreIron", "oreDiamond"], [0.005, 0.01], [1, 0, -1]);
 
 var Iron = Excavator.getMineral("Iron_Ore");
 
-Iron.addOre("oreIron", 0. );
+Iron.addOre("oreIron", 0.5);
 
-//Initial Fail Chance drucken
+//Print Initial Fail Chance
 print(Iron.failChance);
 
-//Setze die Fehlerchance auf 25%
-Eisen. ailChance = 0.25;
+//Set The Fail Chance to 25%
+Iron.failChance = 0.25;
 
-//Drucken der Fehlerchance
-print(Eisen. ailChance);
+//Print Out The Fail Chance
+print(Iron.failChance);
 
-//Setze die Fehlerchance auf 50%
+//Set The Fail Chance to 50%
 Iron.failChance = 0.5;
 
-//Finale Fehlerchance drucken
+//Print Final Fail Chance
 print(Iron.failChance);
 ```
