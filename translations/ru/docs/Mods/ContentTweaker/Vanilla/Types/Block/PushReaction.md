@@ -1,23 +1,23 @@
 # PushReaction
 
-Проталкивающая реакция — это то, что происходит, когда поршни пытается нажать на блок.
+A push reaction is what happens when a piston tries to push a block.
 
 # Импорт пакета
 
-Возможно, вам потребуется импортировать пакет, если вы столкнетесь с какими-либо проблемами, так что лучше быть безопасным чем извините и добавьте импорт.  
-`импорт mods.contenttweaker.PushReaction;`
+It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
+`import mods.contenttweaker.PushReaction;`
 
-## Сравнение двух реакций
+## Comparing two reactions
 
-Вы можете видеть, если две реакции одинаковы, используя оператор `==`.
+You can see if two reactions are equal by using the `==` operator.
 
 ```zenscript
 if(a == b){}
 ```
 
-## Статические методы
+## Static methods
 
-Вы можете использовать эти методы для получения объектов PushReaction:
+You can use these methods to get PushReaction Objects:
 
 ```zenscript
 mods.contenttweaker.PushReaction.normal();
