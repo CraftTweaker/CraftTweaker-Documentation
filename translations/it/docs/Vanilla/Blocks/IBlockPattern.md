@@ -1,32 +1,32 @@
 # IBlockPattern
 
-Un IBlockPattern è un'interfaccia che permette di combinare più blocchi in un unico oggetto.  
-È paragonabile a quello che l'interfaccia [IIngrediente](/Vanilla/Variable_Types/IIngredient/) è [IItemStacks](/Vanilla/Items/IItemStack/).
+An IBlockPattern is an interface that allows for combining several blocks into one object.  
+It is comparable to what the [IIngredient](/Vanilla/Variable_Types/IIngredient/) Interface is to [IItemStacks](/Vanilla/Items/IItemStack/).
 
-## Importazione del pacchetto
+## Importing the package
 
-Potrebbe essere necessario importare il pacchetto se si incontrano problemi (come lanciare un [Array](/AdvancedFunctions/Arrays_and_Loops/)), quindi meglio essere sicuri che spiacenti e aggiungere l'importazione.  
+It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
 `import crafttweaker.block.IBlockPattern;`
 
-## Chiamare un oggetto IBlockPattern
+## Calling an IBlockPattern Object
 
-Tecnicamente, ogni volta che chiami un oggetto [IBlock](/Vanilla/Blocks/IBlock/) , chiami un oggetto IBlockPattern.  
-Ma ci sono casi in cui si ottiene esplicitamente un oggetto IBlockPattern come ritorno.
+Technically, each time you call an [IBlock](/Vanilla/Blocks/IBlock/) object, you call an IBlockPattern object.  
+But there are cases when you explicitly get an IBlockPattern Object as return.
 
-* O due [IBlocks](/Vanilla/Blocks/IBlock/)
+* OR two [IBlocks](/Vanilla/Blocks/IBlock/)
 
 ## ZenGetters
 
-| ZenGetter   | Che cosa fa                                         | Tipo Di Reso                             |
-| ----------- | --------------------------------------------------- | ---------------------------------------- |
-| blocchi     | Elenca tutti i blocchi possibili per questo oggetto | Lista<[IBlock](/Vanilla/Blocks/IBlock/)> |
-| displayName | Restituisce i displayNames dei blocchi di montaggio | stringa                                  |
+| ZenGetter   | What does it do                                | Return Type                             |
+| ----------- | ---------------------------------------------- | --------------------------------------- |
+| blocks      | Lists all possible blocks for this object      | List<[IBlock](/Vanilla/Blocks/IBlock/)> |
+| displayName | Returns the displayNames of the fitting blocks | string                                  |
 
-## O
+## OR
 
-Puoi O due oggetti IBlockPattern utilizzando l'operatore OR `<unk>`
+You can OR two IBlockPattern Objects using the OR `|` Operator
 
-## Corrispondenza
+## Matching
 
-Puoi controllare se un IBlockPatternObject contiene un altro usando la parola chiave `in` .  
-Ad esempio, puoi controllare se un Blocco è in un IBlockPattern.
+You can check if an IBlockPatternObject contains another using the `in` keyword.  
+For example, you could check if a Block is in an IBlockPattern.
