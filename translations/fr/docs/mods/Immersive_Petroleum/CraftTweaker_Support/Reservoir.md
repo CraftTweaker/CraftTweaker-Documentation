@@ -1,25 +1,25 @@
-# Réservoir
+# Reservoir
 
-## Enlever
+## remove
 
-| Nom               | Type de texte        |
-| ----------------- | -------------------- |
-| Nom de la recette | Chaîne de caractères |
+| Name              | Type   |
+| ----------------- | ------ |
+| Nom de la recette | String |
 
-Exemple:
+Example:
 ```ZenScript
 // mods.immersivepetroleum.ReservoirRegistry.remove(String recipeName);
 
 mods.immersivepetroleum.ReservoirRegistry.remove("aquifer");
 ```
 
-## Retirer tout
+## removeAll
 
-| Nom | Type de texte |
-| --- | ------------- |
-|     |               |
+| Name | Type |
+| ---- | ---- |
+|      |      |
 
-Exemple:
+Example:
 ```ZenScript
 // mods.immersivepetroleum.ReservoirRegistry.removeAll();
 
@@ -30,30 +30,30 @@ mods.immersivepetroleum.ReservoirRegistry.removeAll();
 
 ## constructeur
 
-| Nom                         | Type de texte                               |
-| --------------------------- | ------------------------------------------- |
-| Fluide                      | [Fluidstack](/Vanilla/Liquids/IFluidStack/) |
-| Taille minimale             | Indice                                      |
-| Taille maximale             | Indice                                      |
-| Taux de réapprovisionnement | Indice                                      |
-| Poids                       | Indice                                      |
+| Name           | Type                                        |
+| -------------- | ------------------------------------------- |
+| Fluid          | [Fluidstack](/Vanilla/Liquids/IFluidStack/) |
+| Minimum Size   | int                                         |
+| Maximum Size   | int                                         |
+| Replenish Rate | int                                         |
+| Weight         | int                                         |
 
-### Poids
+### Weight
 
-Le poids est la chance pondérée d'un morceau contenant ce réservoir de fluide spécifique. Le poids est compté comme en X en Total.
+Weight is the Weighted Chance of a chunk containing that specific fluid reservoir. The weight is counted as in X in Total.
 
 So if you have 5 Reservoir values at: 5, 5, 6, 8, 10
 
-Alors chaque entrée respective aura une chance pondérée de:
+Then each respective entry will have a weighted chance of:
 ```
-5 en 34
-5 en 34
-6 en 34
-8 en 34
-10 en 34
+5  in 34
+5  in 34
+6  in 34
+8  in 34
+10 in 34
 ```
 
-Exemple:
+Example:
 ```zenscript
 // new mods.immersivepetroleum.ReservoirBuilder(IFluidStack fluid, int minSize, int maxSize, int traceAmount, int traceAmount, int weight);
 
@@ -62,12 +62,12 @@ new mods.immersivepetroleum.ReservoirBuilder(<fluid:minecraft:lava>, 1000, 5000,
 
 ## ajouterDimensions
 
-| Nom                 | Type de texte    |
+| Name                | Type             |
 | ------------------- | ---------------- |
-| Liste noire         | Boolean          |
+| Blacklist           | Boolean          |
 | Noms des dimensions | String[] tableau |
 
-Exemple:
+Example:
 ```zenscript
 // builderInstance.addDimensions(boolean isBlacklist, String[] dimensionNames);
 
@@ -76,28 +76,28 @@ builderInstance.addDimensions(false, ["minecraft:overworld"]);
 
 ## addBiomes
 
-| Nom           | Type de texte    |
+| Name          | Type             |
 | ------------- | ---------------- |
-| Liste noire   | Boolean          |
+| Blacklist     | Boolean          |
 | Noms de Biome | String[] tableau |
 
-Exemple:
+Example:
 ```zenscript
 // builderInstance.addBiomes(boolean isBlacklist, String[] biomeNames);
 
 builderInstance.addBiomes(false, ["minecraft:plains"]);
 ```
 
-## construire
+## build
 
-| Nom | Type de texte        |
-| --- | -------------------- |
-| Nom | Chaîne de caractères |
+| Name | Type   |
+| ---- | ------ |
+| Name | String |
 
 ### Préface
 Les réservoirs de base sont en minuscules au fur et à mesure qu'ils sont traduits - les réservoirs douaniers devraient être correctement en majuscule (par exemple "réservoir de pétrole profond de l'océan").
 
-Exemple:
+Example:
 ```zenscript
 // builderInstance.build(String name);
 
