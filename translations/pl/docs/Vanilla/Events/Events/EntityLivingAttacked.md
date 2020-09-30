@@ -1,24 +1,24 @@
-# EnityLivingAttacked
+# EntityLivingAttacked
 
-Wydarzenie EntityLivingAttacked jest uruchamiane za każdym razem, gdy obiekt jest atakowany.  
-Można go anulować, aby powstrzymać obiekt przed otrzymaniem obrażeń.
+The EntityLivingAttacked Event is fired whenever an entity is being attacked.  
+It can be canceled to stop the entity from taking damage.
 
-## Klasa wydarzenia
+## Event Class
 
-Musisz aktywować wydarzenie w nagłówku funkcji jako klasa:  
-`crafttweaker.event. ntityLivingAttackedEvent`  
-Oczywiście możesz również [zaimportować](/AdvancedFunctions/Import/) klasę przed i wtedy użyć tej nazwy.
+You will need to cast the event in the function header as this class:  
+`crafttweaker.event.EntityLivingAttackedEvent`  
+You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
 
-## Rozszerzenia interfejsu zdarzenia
+## Event interface extensions
 
-Zdarzenia PlayerDeathDrops zaimplementują następujące interfejsy i są również w stanie wywołać wszystkie swoje metody/getters/setters:
+PlayerDeathDrops Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
 
 - [ILivingEvent](/Vanilla/Events/Events/ILivingEvent/)
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 
 ## ZenGetters
 
-| ZenGetter      | Typ                                         |
-| -------------- | ------------------------------------------- |
-| Źródło obrażeń | [Źródło ID](/Vanilla/Damage/IDamageSource/) |
-| kwota          | zmiennoprzecinkowe                          |
+| ZenGetter    | Type                                            |
+| ------------ | ----------------------------------------------- |
+| damageSource | [IDamageSource](/Vanilla/Damage/IDamageSource/) |
+| amount       | float                                           |
