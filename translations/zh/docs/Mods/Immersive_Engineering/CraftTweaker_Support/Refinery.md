@@ -1,30 +1,30 @@
-# 精炼厂
+# Refinery
 
-Refinery 软件包可以用于添加/移除沉浸式工程精炼厂的配方。
+The Refinery package can be used to add/remove recipes to/from the Immersive Engineering Refinery.
 
-## 调用包
+## Calling The Package
 
-您可以使用 `mods.immersiveengineering.Refinery` 来调用 Refinery 软件包。
+You can call the Refinery package using `mods.immersiveengineering.Refinery`.
 
 ## 添加配方
 
-| 必填 | 类型  | 数据类型                                         |
-| -- | --- | -------------------------------------------- |
-| 必要 | 输出  | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
-| 必要 | 输入1 | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
-| 必填 | 输入2 | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
-| 必要 | 能源  | 整型                                           |
+| Required | 类型     | 数据类型                                         |
+| -------- | ------ | -------------------------------------------- |
+| 必要       | 输出     | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
+| 必要       | 输入1    | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
+| Required | 输入2    | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
+| 必要       | Energy | 整型                                           |
 
 ### 例子
 
 ```zenscript
-//example
+//Example
 mods.immersiveengineering.Refinery.addRecipe(ILiquidStack output, ILiquidStack input0, ILiquidStack input1, int energy);
 
 mods.immersiveengineering.Refinery.addRecipe(<liquid:iron>, <liquid:water>, <liquid:lava>, 2048);
 ```
 
-## 删除配方
+## Remove Recipe
 
 | 类型 | 数据类型                                         |
 | -- | -------------------------------------------- |
@@ -33,8 +33,8 @@ mods.immersiveengineering.Refinery.addRecipe(<liquid:iron>, <liquid:water>, <liq
 ### 例子
 
 ```zenscript
-//示例
-mods.immersiveengineering.Refinery.removeRecipe(ILiquidStack 输出);
+//Example
+mods.immersiveengineering.Refinery.removeRecipe(ILiquidStack output);
 
 mods.immersiveengineering.Refinery.removeRecipe(<liquid:iron>);
 ```
