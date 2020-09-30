@@ -2,28 +2,28 @@
 
 Questa classe è stata aggiunta da una mod con ID `crafttweaker`. Perciò, è necessario avere questa mod installata per poter utilizzare questa funzione.
 
-## Importare la classe
+## Importing the class
 Potrebbe essere necessario importare il pacchetto, se si incontrano dei problemi (come castare un vettore), quindi meglio essere sicuri e aggiungere la direttiva di importazione.
 ```zenscript
 crafttweaker.api.recipe.RecipeFunctionSingle
 ```
 
-## Interfaccia Funzionale
+## Functional Interface
 
-Questa classe è un'interfaccia funzionale. Ciò significa che è possibile utilizzare la notazione lambda per creare un'istanza di esso. La notazione lambda assomiglia:
+This class is a functional interface. This means that you can use the lambda notation to create an instance of it. The lambda notation looks like:
 ```zenscript
-(usualOut, input) => <item:minecraft:dirt>
+(usualOut, inputs) => <item:minecraft:dirt>
 ```
-## Metodi
-### processo
+## Methods
+### process
 
-Tipo di restituzione: [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
+Return type: [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
 
 ```zenscript
-myRecipeFunctionSingle.process(usualOut come crafttweaker.api.item.IItemStack, input come crafttweaker.api.item.IItemStack);
+myRecipeFunctionSingle.process(usualOut as crafttweaker.api.item.IItemStack, inputs as crafttweaker.api.item.IItemStack);
 ```
 
-| Parametro | Tipo                                                              | Descrizione                 |
+| Parameter | Type                                                              | Description                 |
 | --------- | ----------------------------------------------------------------- | --------------------------- |
 | usualOut  | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | Nessuna descrizione fornita |
 | inputs    | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | Nessuna descrizione fornita |
