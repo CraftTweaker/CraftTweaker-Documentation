@@ -1,17 +1,17 @@
-# Scrigno Del Tesoro
+# Treasure Chest
 
-## Pacchetto
+## Package
 
 `mods.actuallyadditions.TreasureChest`
 
-## Addizione
+## Addition
 
 ```zenscript
 //mods.actuallyadditions.TreasureChest.addLoot(IItemStack returnItem, int chance, int minAmount, int maxAmount);
 mods.actuallyadditions.TreasureChest.addLoot(<minecraft:dirt>, 50, 1, 64);
 ```
 
-## Rimozione
+## Removal
 
 ```zenscript
 //mods.actuallyadditions.TreasureChest.removeLoot(IItemStack returnItem);
