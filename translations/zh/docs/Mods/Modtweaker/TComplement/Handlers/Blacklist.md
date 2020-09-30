@@ -1,21 +1,21 @@
-# 黑名单
+# Blacklist
 
-黑名单包用于添加/删除混合黑名单中的配方。
+The Blacklist package is used for adding/removing recipes from/to the melter Blacklist.
 
 ## 导入包
 
-您可以使用 `mods.tcomplet.Blacklist 软件包。Blacklist`
+You can call the Blacklist package using `mods.tcomplement.Blacklist`
 
-## 黑名单条目添加
+## Blacklist entry addition
 
 ```zenscript
-//mods.tcomplement.Blacklist.addRecipe(ILiquidStack 输出, IItemStack 输入);
+//mods.tcomplement.Blacklist.addRecipe(ILiquidStack output, IItemStack input);
 mods.tcomplement.Blacklist.addRecipe(<liquid:seared_stone>, <minecraft:stone>);
 ```
 
-## 黑名单条目移除
+## Blacklist entry removal
 
 ```zenscript
-//mods.tcomplement.Blacklist.removeRecipe(StemStack 输入);
-mods.tcomplet.blacklist.removeRecipe(<minecraft:cobblestone>);
+//mods.tcomplement.Blacklist.removeRecipe(IItemStack input);
+mods.tcomplement.Blacklist.removeRecipe(<minecraft:cobblestone>);
 ```
