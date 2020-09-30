@@ -1,18 +1,18 @@
-# Scierie
+# Sawmill
 
-## Paquet
+## Package
 
-`format@@0 mods.thermalexpansion.Sawmill`
+`mods.thermalexpansion.Sawmill`
 
-## Ajouter
+## Addition
 
 ```zenscript
-mods.thermalexpansion.Sawmill.addRecipe(sortie IItemStack, entrée IItemStack, entrée int energy, @Optional IItemStack secondaryOutput, @Optional int secondaryChance);
+mods.thermalexpansion.Sawmill.addRecipe(IItemStack output, IItemStack input, int energy, @Optional IItemStack secondaryOutput, @Optional int secondaryChance);
 
-mods.thermalexpansion.Sawmill.addRecipe(<minecraft:diamond>, <minecraft:stick>, <minecraft:stick> , 1500, <minecraft:stone>, 20);
+mods.thermalexpansion.Sawmill.addRecipe(<minecraft:diamond>, <minecraft:stick>, 1500, <minecraft:stone>, 20);
 ```
 
-## Retirer
+## Removal
 
 ```zenscript
 mods.thermalexpansion.Sawmill.removeRecipe(IItemStack input);
