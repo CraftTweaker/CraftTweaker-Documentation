@@ -1,14 +1,14 @@
-# スクラップボックス
+# Scrapbox
 
-## パッケージのインポート
+## Importing the Package
 `mods.techreborn.scrapbox`
 
-## ドロップを追加中
+## Adding Drops
 ```zenscript
 mods.techreborn.scrapbox.addScrapboxDrop(IIngredient input);
 ```
 
-## ドロップを削除
+## Removing Drops
 ```zenscript
 mods.techreborn.scrapbox.removeRecipe(IItemStack output);
 mods.techreborn.scrapbox.removeAll();
