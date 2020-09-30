@@ -1,16 +1,16 @@
-# Centrifuga Termica
+# Thermal Centrifuge
 
-## Pacchetto
+## Package
 
 `import mods.ic2.ThermalCentrifuge;`
 
-## Metodi
+## Methods
 
 - **[IItemStack](/Vanilla/Items/IItemStack/)[] outputs**
-- **[Ingresso IIngrediente](/Vanilla/Variable_Types/IIngredient/)**
+- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input**
 - **@Optional int minHeat**
 
-## Addizione
+## Addition
 
 ```zenscript
 mods.ic2.ThermalCentrifuge.addRecipe([IItemStack[] outputs, IIngredient input, @Optional int minHeat);
@@ -18,7 +18,7 @@ mods.ic2.ThermalCentrifuge.addRecipe([IItemStack[] outputs, IIngredient input, @
 mods.ic2.ThermalCentrifuge.addRecipe([<minecraft:diamond>, <minecraft:emerald>, <minecraft:nether_star>], <minecraft:dirt>);
 ```
 
-## Rimozione
+## Removal
 
-- Se si utilizza Ic2 Experimental, per rimuovere una ricetta, basta rimuovere la riga corrispondente in `config/ic2/thermal_centrifuge.ini`
-- Se si utilizza Ic2 Classic e Ic2c Extra, per rimuovere una ricetta, basta disattivare la ricetta corrispondente in `config/ic2/ic2machineRecipes.json`.
+- If using Ic2 Experimental, to remove a recipe, simply remove the corresponding line in `config/ic2/thermal_centrifuge.ini`
+- If using Ic2 Classic and Ic2c Extras, to remove a recipe, simply disable the corresponding recipe in `config/ic2/ic2machineRecipes.json`.
