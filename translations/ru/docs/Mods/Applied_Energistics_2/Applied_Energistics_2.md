@@ -1,13 +1,13 @@
-# Прикладная энергетика 2
+# Applied Energistics 2
 
 ## Дополнительная информация
 
-Прикладная Энергетика 2 - это Minecraft мод, который содержит большое количество нового контента, в основном сфокусированный на хранении предметов и МЭ сети. В мод добавлена интеграция Craft Tweaker для некоторых рецептов машин и конфигурационных параметров.
+Applied Energistics 2 is a Minecraft Mod which contains a large amount of new content, mostly centered around item storage and the ME Network. The mod adds Craft Tweaker integration for some custom machines recipes and config options.
 
-### Для дополнительной информации
+### For More Information
 
 https://ae-mod.info/
 
-### Отчеты об ошибках
+### Bug Reports
 
-https://github.com/AppliedEnergistics/Applied-Energistics-2/замечания
+https://github.com/AppliedEnergistics/Applied-Energistics-2/issues
