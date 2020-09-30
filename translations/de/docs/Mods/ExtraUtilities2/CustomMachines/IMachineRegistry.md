@@ -1,90 +1,90 @@
 # IMachineRegistry
 
-Sie verwenden die IMachineRegistry um einen neuen [IMachine](/Mods/ExtraUtilities2/CustomMachines/IMachine) ins Spiel zu registrieren oder um danach eine zuvor registrierte Maschine abzurufen.
+You use the IMachineRegistry to register a new [IMachine](/Mods/ExtraUtilities2/CustomMachines/IMachine) to the game, or to retrieve a previously registered machine afterwards.
 
 ## Dieses Paket importieren
 
-Wenn Sie Methodenaufrufe verkürzen oder Probleme auftreten möchten, müssen Sie [das Paket importieren](/AdvancedFunctions/Import) importieren.  
-Sie können dies tun mit
+If you want to shorten method calls or encounter any issues you might need to [import](/AdvancedFunctions/Import) the package.  
+You can do so using
 
 ```zenscript
-extrautilities2.Tweaker.IMachineRegistry;
+import extrautilities2.Tweaker.IMachineRegistry;
 ```
 
-## Maschine erstellen
+## Create the machine
 
-Es gibt zwei Arten von Maschinen:
+There are two types of machines:
 
-- Maschinen
-- Generatoren
+- Machines
+- Generators
 
-Maschinen verbrauchen Energie, Generatoren emittieren Energie, sonst verhalten sie sich fast identisch.
+Machines consume energy, generators emit energy, otherwise they behave almost identically.
 
 ```zenscript
-extrautilities2.Tweaker.IMachineRegistry. reateNewMachine(
-    Name, 
+extrautilities2.Tweaker.IMachineRegistry.createNewMachine(
+    name, 
     energyBufferSize, 
     energyTransferLimit, 
-    InputSlots, 
-    OutputSlots, 
-    FrontTexture, 
-    FrontTextureActive, 
-    Farbe
+    inputSlots, 
+    outputSlots, 
+    frontTexture, 
+    frontTextureActive, 
+    color
 );
 
 
-Extrautilien2. schwächer.IMachineRegistry. reateNewGenerator(
-    Name,
+extrautilities2.Tweaker.IMachineRegistry.createNewGenerator(
+    name,
     energyBufferSize,
     energyTransferLimit,
-    InputSlots,
-    OutputSlots,
+    inputSlots,
+    outputSlots,
     frontTexture,
     frontTextureActive,
-    Farbe
+    color
 );
 ```
 
-Wie Sie sehen können, akzeptieren beide Methoden die gleichen Parameter, der einzige Unterschied ist, wenn sie Energie benötigen oder produzieren.  
-Die Parameter sind:
+As you can see, both methods accept the same parameters, the only difference is if they require or produce energy.  
+The parameters are:
 
 | Name                | Type                                                                |
 | ------------------- | ------------------------------------------------------------------- |
 | name                | string                                                              |
-| Energie-Puffergröße | int                                                                 |
+| energyBufferSize    | int                                                                 |
 | energyTransferLimit | int                                                                 |
 | inputSlots          | [[IMachineSlot](/Mods/ExtraUtilities2/CustomMachines/IMachineSlot)] |
 | outputSlots         | [[IMachineSlot](/Mods/ExtraUtilities2/CustomMachines/IMachineSlot)] |
 | frontTexture        | string                                                              |
 | frontTextureActive  | string                                                              |
-| farbe (optional)    | int (Standardwert `0xffffff` (schwarz))                             |
+| color (optional)    | int (defaults to `0xffffff` (black))                                |
 
-Die Slots akzeptieren eine Liste von [IMachineSlot](/Mods/ExtraUtilities2/CustomMachines/IMachineSlot). Listen können auf die gleiche Weise wie Arrays erstellt werden, indem Sie [] um die Slots herum benutzen. Beide Methoden geben ein [IMachine](/Mods/ExtraUtilities2/CustomMachines/IMachine) Objekt zurück, das die erzeugte Maschine repräsentiert.  
-Denken Sie daran, da Sie dieses Objekt brauchen, um später Rezepte zu erstellen!
+The slots accept a list of [IMachineSlot](/Mods/ExtraUtilities2/CustomMachines/IMachineSlot). Lists can be created the same way as Arrays, by using [] around the slots. Both methods return an [IMachine](/Mods/ExtraUtilities2/CustomMachines/IMachine) object that represents the created machine.  
+Keep this in mind, as you need that object to create recipes later on!
 
-## Vorhandene Maschinen holen
+## Get existing machines
 
-### Computer nach Name holen
+### Get machine by name
 
-Sie können bereits generierte Maschinen auch über die Registry erhalten:
+You can get already generated machines using the Registry as well:
 
 ```zenscript
-extrautilities2.Tweaker.IMachineRegistry.getMachine(Stringname);
+extrautilities2.Tweaker.IMachineRegistry.getMachine(String name);
 ```
 
-Diese Methode gibt die Maschine mit dem angegebenen Namen als [IMachine](/Mods/ExtraUtilities2/CustomMachines/IMachine) oder `null` zurück
+This method will return the machine with the given name as [IMachine](/Mods/ExtraUtilities2/CustomMachines/IMachine) or `null`
 
-### Holen Sie sich alle registrierten Maschinen
+### Get all registered machines
 
-Dadurch werden alle registrierten Maschinen als Liste von [IMachine](/Mods/ExtraUtilities2/CustomMachines/IMachine) zurückgegeben.
+This will return all registered machines as list of [IMachine](/Mods/ExtraUtilities2/CustomMachines/IMachine).
 
 ```zenscript
 extrautilities2.Tweaker.IMachineRegistry.getRegisterdMachineNames();
 ```
 
-### XU2-Maschinen holen
+### Get XU2 machines
 
-Du kannst diese Getter auch verwenden, um Maschinen aus dem XU2-Mod als [IMachine](/Mods/ExtraUtilities2/CustomMachines/IMachine) Objekt zu holen:
+You can also use these getters to get machines from the XU2 mod as [IMachine](/Mods/ExtraUtilities2/CustomMachines/IMachine) object:
 
     extrautilities2.Tweaker.IMachineRegistry.crusher;
     extrautilities2.Tweaker.IMachineRegistry.enchanter;
