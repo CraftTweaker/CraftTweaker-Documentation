@@ -1,29 +1,29 @@
-# 要求：
+# Requirements:
 
-要求是一个可以重置的概念，它基本上是Player-Bound的属性，可以将项目绑定。
+Requirements is a concept introduced with Reskillable and is essentially Player-Bound properties to bind items behind.
 
-例如，默认情况下，可重置具有以下要求支持：
+For example by default, Reskillable has Requirement support for the following:
 
-- 预支款
-- 技能
-- 特性
+- Advancements
+- Skills
+- Traits
 
-这个列表可以通过插件进一步扩展。 事实上的 Compatskills 可以作为一个有效的要求为GameStages添加支持。
+This list can be further expanded upon by addons. In-fact CompatSkills adds support for GameStages as a valid Requirement.
 
-要求语法因属性而异，取决于附加组件如何执行它。 在“要求类型”下，您将能够看到所有由可重置和CompatSkills添加的要求的语法。
+The requirement syntax varies from Property to Property on how it's implemented by the addon. Under Requirement Types, you'll be able to see the syntax for all Requirements added by Reskillable and CompatSkills.
 
-每个要求类型的快速链接列表见下文。
+See below for a quick list of links to each requirement type.
 
-| 链接                                                                                          |
-| ------------------------------------------------------------------------------------------- |
-| [预支款](/Mods/CompatSkills/Requirements/Requirement_Types/Advancements/)                      |
-| [尺寸](/Mods/CompatSkills/Requirements/Requirement_Types/Dimensions/)                         |
-| [动态剑技](/Mods/CompatSkills/Requirements/Requirement_Types/Dynamic_Sword_Skills/)             |
-| [游戏阶段](/Mods/CompatSkills/Requirements/Requirement_Types/GameStages/)                       |
-| [反向需求](/Mods/CompatSkills/Requirements/Requirement_Types/Inverted_Requirements/)            |
-| [项目](/Mods/CompatSkills/Requirements/Requirement_Types/Items/)                              |
-| [逻辑运算符](/Mods/CompatSkills/Requirements/Requirement_Types/Logic_Operators/1_READ_ME_FIRST/) |
-| [矿物词典](/Mods/CompatSkills/Requirements/Requirement_Types/Ore_Dictionary/)                   |
-| [技能](/Mods/CompatSkills/Requirements/Requirement_Types/Skills/)                             |
-| [工具采掘等级](/Mods/CompatSkills/Requirements/Requirement_Types/Tool_Harvest-Level/)             |
-| [特性](/Mods/CompatSkills/Requirements/Requirement_Types/Traits/)                             |
+| Links                                                                                                 |
+| ----------------------------------------------------------------------------------------------------- |
+| [Advancements](/Mods/CompatSkills/Requirements/Requirement_Types/Advancements/)                       |
+| [Dimensions](/Mods/CompatSkills/Requirements/Requirement_Types/Dimensions/)                           |
+| [动态剑技](/Mods/CompatSkills/Requirements/Requirement_Types/Dynamic_Sword_Skills/)                       |
+| [GameStages](/Mods/CompatSkills/Requirements/Requirement_Types/GameStages/)                           |
+| [Inverted Requirements](/Mods/CompatSkills/Requirements/Requirement_Types/Inverted_Requirements/)     |
+| [Items](/Mods/CompatSkills/Requirements/Requirement_Types/Items/)                                     |
+| [Logic Operators](/Mods/CompatSkills/Requirements/Requirement_Types/Logic_Operators/1_READ_ME_FIRST/) |
+| [矿物词典](/Mods/CompatSkills/Requirements/Requirement_Types/Ore_Dictionary/)                             |
+| [Skills](/Mods/CompatSkills/Requirements/Requirement_Types/Skills/)                                   |
+| [工具采掘等级](/Mods/CompatSkills/Requirements/Requirement_Types/Tool_Harvest-Level/)                       |
+| [Traits](/Mods/CompatSkills/Requirements/Requirement_Types/Traits/)                                   |
