@@ -1,34 +1,34 @@
-# Mikrowelle
+# Microwave
 
-Die Mikrowelle heizt Nahrungsmittel auf.
+The Microwave heats up food items.
 
-## Standard Microwave Rezepte
+## Default Microwave Recipes
 
-- Rindfleisch -> Gekochtes Rindfleisch
-- Kartoffel-> Kartoffelgebacken
+- Beef -> Cooked Beef
+- Potato -> Baked Potato
 
-## Entfernen
+## Removing
 
-## Entferne passende Mikrowellenrezepte.
+## Remove matching microwave recipes.
 
 ```zenscript
-mods.cfm.Microwave.remove(@Optionale endgültige IIngredientenausgabe, @Optionale endgültige IIngredienteneingabe);
+mods.cfm.Microwave.remove(@Optional final IIngredient output, @Optional final IIngredient input);
 
-// Entferne Rezepte, die eine Kartoffelausgabe
-mods.cfm.Microwave. emove(null,<minecraft:potato>);
-// Rezepte entfernen, die zu gekochtem Rindfleisch führen
+// Remove recipes that require a Potato
+mods.cfm.Microwave.remove(null,<minecraft:potato>);
+// Remove recipes that result in Cooked Beef
 mods.cfm.Microwave.remove(<minecraft:cooked_beef>);
-// Rezepte entfernen
+// Remove all recipes
 mods.cfm.Microwave.remove();
 ```
 
-## Hinzufügen
+## Adding
 
-## Mikrowellenrezept hinzufügen.
+## Add a microwave recipe.
 
 ```zenscript
-mods.cfm.Microwave.addRecipe(@Nonnull letzte IItemStack-Ausgabe, @Nonnull abschließende IItemStack-Eingabe);
+mods.cfm.Microwave.addRecipe(@Nonnull final IItemStack output, @Nonnull final IItemStack input);
 
-// Füge ein Rezept hinzu, das ein 4 Sticks aus einem Zuckerrohr
-Mods macht. fm.Microwave.addRecipe(<minecraft:stick>.withAmount(4),<minecraft:reeds>);
+// Add a recipe that makes a 4 sticks from one sugar cane
+mods.cfm.Microwave.addRecipe(<minecraft:stick>.withAmount(4),<minecraft:reeds>);
 ```
