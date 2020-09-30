@@ -1,7 +1,7 @@
-# Создатель Игрока
+# PlayerSetSpawn
 
-Событие PlayerSetSpawn запускается всякий раз, когда местоположение спавна игрока меняется.  
-Оно может быть отменено, чтобы предотвратить дальнейшую обработку.
+The PlayerSetSpawn Event is fired whenever a player's spawn location changes.  
+It can be canceled to prevent further processing.
 
 ## Класс события
 
@@ -11,7 +11,7 @@ You can, of course, also [import](/AdvancedFunctions/Import/) the class before a
 
 ## Наследование от интерфейсов событий
 
-События PlayerSetSpawn реализуют следующие интерфейсы и также могут вызвать все их методы/getters/setters:
+PlayerSetSpawn Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
 
 - [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
@@ -20,8 +20,8 @@ You can, of course, also [import](/AdvancedFunctions/Import/) the class before a
 
 Следующая информация может быть получена от события:
 
-| Геттеры           | Возвращаемый тип                       |
-| ----------------- | -------------------------------------- |
-| `player`          | [IPlayer](/Vanilla/Players/IPlayer/)   |
-| `насильно`        | bool                                   |
-| `Новая Появление` | [IBlockPos](/Vanilla/World/IBlockPos/) |
+| ZenGetter  | Возвращаемый тип                       |
+| ---------- | -------------------------------------- |
+| `player`   | [IPlayer](/Vanilla/Players/IPlayer/)   |
+| `isForced` | bool                                   |
+| `newSpawn` | [IBlockPos](/Vanilla/World/IBlockPos/) |
