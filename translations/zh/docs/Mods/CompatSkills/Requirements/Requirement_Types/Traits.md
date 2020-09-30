@@ -1,12 +1,12 @@
-# 特性：
+# Traits:
 
-特性是可重置的一个新添加，使它现在可以锁定所需特性背后的东西。 特性与技能相似，我们已经将它们移动到资源位置，而不是一个名称，以便能够更强有力地扩展。 特性语法如下：
+Traits is a new addition for Reskillable and makes it so you now can lock things behind a required Trait. Traits are similar to Skills in the way that we've moved them over to a Resource Location instead of a name to allow for more robust extendability. The Trait Syntax is as follows:
 
-    示例：
-    特性|ResourceLocation
+    Example:
+    trait|ResourceLocation
     
-    工作示例：
-    特性|reskillable:battle_sentity
+    Working Example:
+    trait|reskillable:battle_spirit
     
 
-您可以在 [技能 & 特性](/Mods/CompatSkills/Requirements/Skills_Traits/) 下找到特性的资源位置
+You can find the Traits's ResourceLocations under: [Skills & Traits](/Mods/CompatSkills/Requirements/Skills_Traits/)
