@@ -69,7 +69,7 @@ INumberData实现了以下接口。 这意味着对这个接口可用的任何�
 
 返回：`表示此IData（值和类型）的字符串。</ 0></p>
 
-<p spaces-before="0">返回类型：字符串</p>
+<p spaces-before="0">Return type: String</p>
 
 <pre><code class="zenscript">1.asString();
 `</pre> 
@@ -82,7 +82,7 @@ INumberData实现了以下接口。 这意味着对这个接口可用的任何�
 
 返回: `true 如果给定的 IData 包含在此 IData 中`
 
-返回类型：布尔值
+Return type: boolean
 
 
 
@@ -144,7 +144,7 @@ IData默认情况下是不可变的，使用它可以创建对象的正确副本
 
 返回：`表示此 IData 内部INBT 的字符串。`
 
-返回类型：字符串
+Return type: String
 
 
 
