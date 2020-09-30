@@ -1,68 +1,68 @@
-# Modifica i file usando l'editor online di GitHub
+# Edit Files using GitHub's online editor
 
-## Requisiti
+## Requirements
 
-Dovrai aver creato un account GitHub e [forked la wiki sul tuo account](/Contribute/SetupGithub).
+You will need to have created a GitHub account and [forked the wiki to your account](/Contribute/SetupGithub).
 
-## Introduzione
+## Introduction
 
-L'editor online di GitHub ti permette di modificare e creare file utilizzando solo il tuo browser.  
-Potrebbe non essere così versatile come [usando una copia locale](/Contribute/LocalClone/CreateCommit/) ma non devi preoccuparti di [impostare git](/Contribute/LocalClone/InstallingGit/) e tutti.
+GitHub's online editor allows you to change and create files using nothing but your browser.  
+It may not be as versatile as [using a local copy](/Contribute/LocalClone/CreateCommit/) but you don't need to worry about [setting up git](/Contribute/LocalClone/InstallingGit/) and all.
 
-Questa guida ti mostrerà come modificare un file già esistente utilizzando l'editor online di github.  
-Potresti voler modificare la pagina perché hai trovato un errore di battitura o vuoi includere un esempio migliore, qualunque sia il motivo, sentitevi liberi di eseguire il commit delle modifiche e alla fine [file una Pull Request](/Contribute/PullRequest).
+This guide will show you how to edit an already existing file using github's online editor.  
+You may want to edit the page because you have found a typo or want to include a better example, whatever the reason, feel free to commit changes and eventually [file a Pull Request](/Contribute/PullRequest).
 
-Tuttavia, ricordate che è possibile modificare solo la versione inglese, le traduzioni sono gestite tramite [CrowdIn](https://crowdin.com/project/crafttweaker-documentation/).
+However, remember that you can only edit the English version, translations are handled via [CrowdIn](https://crowdin.com/project/crafttweaker-documentation/).
 
-## Individua il file
+## Locate the file
 
-Se si desidera modificare un file esistente, è necessario prima individuarlo.
+If you want to edit an existing file, you first need to locate it.
 
-Nella maggior parte dei casi è possibile trovare il file controllando il suo URL Wiki.
+In most cases you can find the file by checking its Wiki Url.
 
-Regola della miniatura: La `#` è la cartella docs, tutto dopo che sono annidate le cartelle ed eventualmente il file.
+Rule of thumb: The `#` is the docs folder, everything after that are nested folders and eventually the file.
 
-Ad esempio, il file che crea  
+For example, the file creating  
 [https://docs.blamejared.com/en/#AdvancedFunctions/Arrays_and_Loops/](https://docs.blamejared.com/en/#AdvancedFunctions/Arrays_and_Loops/)  
-può essere trovato in  
+can be found in  
 `docs/AdvancedFunctions/Arrays_and_Loops.md`
 
-## Modifica il file
+## Edit the file
 
-Dopo aver trovato con successo il file, fare clic su di esso per aprirlo nella vista file GitHub.  
-Qui puoi vedere come apparirà approssimativamente la voce wiki, anche se non è presente alcuna barra di navigazione in quanto questo è solo il contenuto dell'elemento.
+After you have successfully located the file, click on it to open it in the GitHub file view.  
+Here you can see how the wiki entry will roughly look like, though no navigation bar is present as this is only the entry content.
 
-Clicca sull'icona della penna per aprire l'editor: ![Pulsante Modifica](/Contribute/assets/OnlineEditor_EditButton.png)
+Click on the little pen icon to open the editor: ![Edit Button](/Contribute/assets/OnlineEditor_EditButton.png)
 
-L'editor consente di cambiare il file come ti piace, e anche di visualizzare direttamente un'anteprima con la formattazione compilata. Questa anteprima avrà barre colorate sul lato sinistro che indicano che:
+The Editor allows you to change your file as you like, and also to directly view a preview with the compiled formatting. This preview will have colored bars on the lefthandside indicating that:
 
-- Verde: Questa sezione non era presente in questa pagina prima.
-- Giallo: Questa sezione era presente in questa pagina prima, ma è stata modificata, ad esempio un errore di battitura è stato corretto, o sono state fornite informazioni supplementari.
-- Rosso: Questa sezione era presente in questa pagina prima, ma è stata rimossa.
-- Nessuno: Questa sezione è rimasta intatta.
+- Green: This Section was not present on this page before.
+- Yellow: This Section was present on this page before but was changed, e.g. a typo was corrected, or additional information was provided.
+- Red: This section was present on this page before but was removed.
+- None: This section was untouched.
 
-Se la sintassi dei file è nuova per te, la wiki utilizza MarkDown. Ci dovrebbero essere molti tutorial da trovare usando Google (o puoi aggiungerne uno proprio qui a questa wiki se vuoi).
+If the syntax of the files is new for you, the wiki uses MarkDown. There should be many tutorials to find using google (or you could add one right here to this wiki if you like).
 
-## Salva/Commit le modifiche
+## Save/Commit the changes
 
-Dopo aver cambiato il file è necessario far sapere a GitHub di voler salvare le modifiche.
+After you have changed the file you need to let GitHub know that you want to save your changes.
 
-Questo è quello che la casella di commit qui sotto il tuo Editor è:  
-Non puoi semplicemente salvare il file, devi fornire un riepilogo di quello che hai fatto (titolo di commessa) e opzionalmente una breve descrizione in cui puoi inserire informazioni aggiuntive come il motivo per cui hai fatto le modifiche o quello che è stato cambiato esattamente.
+That's what the commit box below your Editor is for:  
+You cannot simply save the file, you need to provide a summary of what you did (commit title) and optionally a short description where you can put additional information like why you did the changes or what exactly was changed.
 
-Per impostazione predefinita assomiglia approssimativamente a questo:  
-![Casella Di Commit Predefinita](/Contribute/assets/OnlineEditor_CommitBox_Default.png)
+By default it looks roughly like this:  
+![Commit Box Default](/Contribute/assets/OnlineEditor_CommitBox_Default.png)
 
-In questo esempio, il titolo del Commit (o il riepilogo della modifica) è `Aggiorna Arrays_and_Loops.md`. GitHub non può sapere quali dovrebbero essere i tuoi cambiamenti effettivi, quindi cerca qualcosa di generico come questo.
+In this example, the Commit title (or edit summary) is `Update Arrays_and_Loops.md`. GitHub cannot know what your actual changes were supposed to do, so it tries something as generic as this.
 
-Potresti voler aggiungere un titolo o una descrizione aggiuntiva, ma non è necessario, anche se rende la revisione della tua richiesta Pull più facile.
+You might want to add an additional title or description, but it is not neccessary, though it makes reviewing your Pull request later on easier.
 
-Se hai più indirizzi e-mail registrati per il tuo account GitHub, puoi scegliere come quello che creerai il commit. Tuttavia, ciò non avrà alcun impatto reale sul contributo.  
-Puoi anche decidere se vuoi effettuare il commit direttamente nel tuo ramo principale o piuttosto creare un nuovo ramo per il tuo commit. Nella maggior parte dei casi impegnandosi al tuo ramo master funziona bene.
+If you have multiple e-mail addresses registered for your GitHub account, you can choose as which one you will create the commit. This will not have any real impact for contributing, though.  
+You can also decide whether you want to commit directly to your master branch or rather create a new branch for your commit. In most cases committing to your master branch works just fine.
 
-Un esempio completo potrebbe assomigliare a questo: ![Casella Di Commit Riempita](/Contribute/assets/OnlineEditor_CommitBox_Filled.png)
+A filled out example might look like this: ![Commit Box Filled](/Contribute/assets/OnlineEditor_CommitBox_Filled.png)
 
-## Cosa fare il prossimo
+## What to do next
 
-Dopo aver effettuato le modifiche, puoi continuare a modificare o [Creare](/Contribute/OnlineEditor_Create) più file utilizzando l'editor online.  
-Dopo aver completato tutte le modifiche, è possibile [archiviare una richiesta Pull](/Contribute/PullRequest).
+After you have committed your changes, you can go on and edit or [Create](/Contribute/OnlineEditor_Create) more files using the online editor.  
+After you have done all your changes, you can [file a Pull Request](/Contribute/PullRequest).
