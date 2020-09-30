@@ -1,16 +1,16 @@
-# 玩家交互功能
+# PlayerInteract
 
-每当玩家与方块交互时，玩家交互活动都会被射出。
+The PlayerInteract Event is fired whenever a player interacts with a block.
 
-## 事件类
+## Event Class
 
 You will need to cast the event in the function header as this class:  
 `crafttweaker.event.PlayerInteractEvent`  
 You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
 
-## 事件界面扩展
+## Event interface extensions
 
-PlayerInteract 事件实现了以下接口，并且能够调用他们所有的方法/getter/setter：
+PlayerInteract Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
 
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 - [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
@@ -18,23 +18,23 @@ PlayerInteract 事件实现了以下接口，并且能够调用他们所有的�
 
 ## ZenGetters
 
-以下信息可以从事件中检索：
+The following information can be retrieved from the event:
 
-| ZenGetter | 返回值类型                                |
-| --------- | ------------------------------------ |
-| `已取消`     | boolean                              |
-| `使用项目`    | boolean                              |
-| `正在使用块`   | boolean                              |
-| `x`       | 整数                                   |
-| `年`       | 整数                                   |
-| `z`       | 整数                                   |
-| `播放器`     | [IPlayer](/Vanilla/Players/IPlayer/) |
-| `世界`      | [IWorld](/Vanilla/World/IWorld/)     |
-| `封禁`      | [IBlock](/Vanilla/Blocks/IBlock/)    |
-| `尺寸`      | 整数                                   |
+| ZenGetter    | 返回值类型                                |
+| ------------ | ------------------------------------ |
+| `canceled`   | boolean                              |
+| `usingItem`  | boolean                              |
+| `usingBlock` | boolean                              |
+| `x`          | int                                  |
+| `y`          | int                                  |
+| `z`          | int                                  |
+| `player`     | [IPlayer](/Vanilla/Players/IPlayer/) |
+| `world`      | [IWorld](/Vanilla/World/IWorld/)     |
+| `block`      | [IBlock](/Vanilla/Blocks/IBlock/)    |
+| `dimension`  | int                                  |
 
 ## ZenMethods
 
-- `event.cancel()` 将事件设置为取消
-- `event.useBlock()` 将方块设置为 true
-- `event.useItem()` 将项目设置为 true
+- `event.cancel()` sets the event as cancelled
+- `event.useBlock()` sets Block to true
+- `event.useItem()` sets Item to true
