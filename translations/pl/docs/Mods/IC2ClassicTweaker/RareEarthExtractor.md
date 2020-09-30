@@ -1,20 +1,20 @@
-# Rzadki Ekstraktor Ziemi
+# Rare Earth Extractor
 
-## Pakiet
+## Package
 
 ```zenscript
-importuj mods.ic2.RareEarthExtractor;
+import mods.ic2.RareEarthExtractor;
 ```
 
-## Metoda
+## Method
 
-- **wartość zmiennoprzecinkowa**
-- **[IItemStack](/Vanilla/Items/IItemStack/)... wejścia** Mogą mieć więcej niż jeden określony dla wejścia. Jeśli tak, wszystkie określone elementy dają tę samą określoną wartość.
+- **float value**
+- **[IItemStack](/Vanilla/Items/IItemStack/)... inputs** Can have more then one specified for the input. If so all the specified items give the same specified value.
 
-### Dodaj rzadkie wpisy do Ziemi
+### Add Rare Earth Entries
 
 ```zenscript
-mods.ic2.RareEarthExtractor.addRareEarthEntries(wartość zmienna, IItemStack... wejście);
+mods.ic2.RareEarthExtractor.addRareEarthEntries(float value, IItemStack... input);
 
 mods.ic2.RareEarthExtractor.addRareEarthEntries(1.0F, <minecraft:bedrock>, <minecraft:iron_block>);
 ```
