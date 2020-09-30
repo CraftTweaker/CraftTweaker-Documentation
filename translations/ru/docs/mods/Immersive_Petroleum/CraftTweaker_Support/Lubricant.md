@@ -1,8 +1,8 @@
-# Регистрация смазки
+# Lubricant Registration
 
 ## зарегистрироваться
 
-| Тип   | Тип данных                                  |
+| Тип   | Data Type                                   |
 | ----- | ------------------------------------------- |
 | Input | [Fluidstack](/Vanilla/Liquids/IFluidStack/) |
 
@@ -10,15 +10,15 @@
 
 Количество жидкости используется каждые 4 билета.
 
-### Пример кода:
+### Code Example:
 ```zenscript
 mods.immersivepetroleum.Lubricant.register(IFluidStack lubricantEntry);
 mods.immersivepetroleum.Lubricant.register(<fluid:lava> * 500);
 ```
 
-## удалить все
+## removeAll
 
-### Пример кода:
+### Code Example:
 ```zenscript
 mods.immersivepetroleum.Lubricant.removeAll();
 ```
