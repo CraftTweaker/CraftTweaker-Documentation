@@ -1,45 +1,45 @@
-# Cubo de relleno de jugador
+# PlayerFillBucket
 
-El Evento PlayerFillBucket se activa cada vez que un jugador llena un cubo.
+The PlayerFillBucket Event is fired whenever a player fills a bucket.
 
-## Clase de evento
+## Event Class
 
-Necesitarás lanzar el evento en la cabecera de la función como esta clase:  
-`crafttweaker.event. layerFillBucketEvent`  
-Puede, por supuesto, también [importar](/AdvancedFunctions/Import/) la clase anterior y utilizar ese nombre entonces.
+You will need to cast the event in the function header as this class:  
+`crafttweaker.event.PlayerFillBucketEvent`  
+You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
 
-## Extensiones de la interfaz de eventos
+## Event interface extensions
 
-Los Eventos PlayerFillBucket implementan las siguientes interfaces y son capaces de llamar a todos sus métodos/getters/setters también:
+PlayerFillBucket Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
 
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
-- [Evento IJugador](/Vanilla/Events/Events/IPlayerEvent/)
+- [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
 - [IProcessableEvent](/Vanilla/Events/Events/IProcessableEvent/)
-- [Evento Posicionable](/Vanilla/Events/Events/IEventPositionable/)
+- [IEventPositionable](/Vanilla/Events/Events/IEventPositionable/)
 
 ## ZenGetters
 
-La siguiente información puede ser recuperada del evento:
+The following information can be retrieved from the event:
 
-| ZenGetter           | Tipo de devolución                                    |
-| ------------------- | ----------------------------------------------------- |
-| `cancelado`         | boolean                                               |
-| `jugador`           | [IPlayer](/Vanilla/Players/IPlayer/)                  |
-| `resultado`         | [IItemStack](/Vanilla/Items/IItemStack/)              |
-| `cubo vacío`        | [IItemStack](/Vanilla/Items/IItemStack/)              |
-| `x`                 | int                                                   |
-| `y`                 | int                                                   |
-| `z`                 | int                                                   |
-| `mundo`             | [IWorld](/Vanilla/World/IWorld/)                      |
-| `estado de bloqueo` | [Estado de IBlock](/Vanilla/Blocks/IBlockState/)      |
-| `bloque`            | [IBlock](/Vanilla/Blocks/IBlock/)                     |
-| `dimensión`         | int                                                   |
-| `rayTraceResultado` | [IRayTraceResultado](/Vanilla/World/IRayTraceResult/) |
+| ZenGetter        | Return Type                                        |
+| ---------------- | -------------------------------------------------- |
+| `canceled`       | boolean                                            |
+| `player`         | [IPlayer](/Vanilla/Players/IPlayer/)               |
+| `result`         | [IItemStack](/Vanilla/Items/IItemStack/)           |
+| `emptyBucket`    | [IItemStack](/Vanilla/Items/IItemStack/)           |
+| `x`              | int                                                |
+| `y`              | int                                                |
+| `z`              | int                                                |
+| `world`          | [IWorld](/Vanilla/World/IWorld/)                   |
+| `blockState`     | [IBlockState](/Vanilla/Blocks/IBlockState/)        |
+| `block`          | [IBlock](/Vanilla/Blocks/IBlock/)                  |
+| `dimension`      | int                                                |
+| `rayTraceResult` | [IRayTraceResult](/Vanilla/World/IRayTraceResult/) |
 
-## Métodos
+## ZenMethods
 
-- `event.cancel()` establece el evento como cancelado.
+- `event.cancel()` sets the event as cancelled.
 
-## Configuradores
+## Setters
 
-- `event.result = <minecraft:ender_pearl>` ¡Esto también procesará el evento!
+- `event.result = <minecraft:ender_pearl>` This will also process the event!
