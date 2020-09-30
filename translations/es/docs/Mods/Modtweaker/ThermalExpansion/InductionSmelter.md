@@ -1,21 +1,21 @@
-# Fundición de inducción
+# InductionSmelter
 
-## Paquete
+## Package
 
-`mods.thermalexpansion.Fundición de inducción`
+`mods.thermalexpansion.InductionSmelter`
 
-## Adicional
+## Addition
 
 ```zenscript
-mods.thermalexpansion.InductionSmelter.addRecipe(ItemStack primaryOutput, ItemStack primaryInput, ItemStack secondaryInput, int energy, @Optional ItemStack secondaryOutput, @Optional ItemStack secondaryChance);
+mods.thermalexpansion.InductionSmelter.addRecipe(IItemStack primaryOutput, IItemStack primaryInput, IItemStack secondaryInput, int energy, @Optional IItemStack secondaryOutput, @Optional int secondaryChance);
 
-mods. hermalexpansion.InductionSmelter.addRecipe(<minecraft:diamond>, <minecraft:stick>, <minecraft:iron_ore>, 1500, <minecraft:stone>, 20);
+mods.thermalexpansion.InductionSmelter.addRecipe(<minecraft:diamond>, <minecraft:stick>, <minecraft:iron_ore>, 1500, <minecraft:stone>, 20);
 ```
 
-## Eliminar
+## Removal
 
 ```zenscript
-mods.thermalexpansion.Inductionsmallelter.removeRecipe(ItemStack primaryInput, IItemStack secondaryInput);
+mods.thermalexpansion.InductionSmelter.removeRecipe(IItemStack primaryInput, IItemStack secondaryInput);
 
 mods.thermalexpansion.InductionSmelter.removeRecipe(<minecraft:bucket>, <minecraft:sand>);
 ```
