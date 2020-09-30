@@ -8,22 +8,22 @@
 crafttweaker.api.commands.custom.MCAmbiguityConsumer
 ```
 
-## Функциональный интерфейс
+## Functional Interface
 
-Этот класс является функциональным интерфейсом. Это означает, что вы можете использовать нотацию lambda для создания экземпляра. Нотация лямбда выглядит так:
+This class is a functional interface. This means that you can use the lambda notation to create an instance of it. The lambda notation looks like:
 ```zenscript
 (родитель, ребенок, братья и сестры, входы) =>{}
 ```
-## Методы
+## Methods
 ### неоднозначный
 
 ```zenscript
 myMCAmbiguityConsumer.ambiguous(родитель как crafttweaker.api.commands.custom.MCCommandNode, ребенок как crafttweaker.api.commands.custom.MCCommandNode, как crafttweaker.api.commands.custom.MCCommandNode, входы как Коллекция<String>);
 ```
 
-| Параметр  | Тип                                                                                          | Описание             |
+| Параметр  | Тип                                                                                          | Description          |
 | --------- | -------------------------------------------------------------------------------------------- | -------------------- |
-| родитель  | [crafttweaker.api.commands.custom.MCCommandNode](/vanilla/api/commands/custom/MCCommandNode) | Описание отсутствует |
+| parent    | [crafttweaker.api.commands.custom.MCCommandNode](/vanilla/api/commands/custom/MCCommandNode) | Описание отсутствует |
 | ребенок   | [crafttweaker.api.commands.custom.MCCommandNode](/vanilla/api/commands/custom/MCCommandNode) | Описание отсутствует |
 | сближение | [crafttweaker.api.commands.custom.MCCommandNode](/vanilla/api/commands/custom/MCCommandNode) | Описание отсутствует |
 | inputs    | Коллекция&lt;String&gt;                                                          | Описание отсутствует |
