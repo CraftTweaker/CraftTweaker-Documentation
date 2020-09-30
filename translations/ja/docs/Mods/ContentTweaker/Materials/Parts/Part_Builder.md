@@ -1,60 +1,60 @@
-# パーツビルダー
+# Part Builder
 
-[パーツ](/Mods/ContentTweaker/Materials/Parts/Part/)を作るには、パートビルダーが必要です！  
-難しく聞こえないでしょうか？
+If you want to build a [Part](/Mods/ContentTweaker/Materials/Parts/Part/), you will need a Part Builder!  
+Doesn't sound that hard, does it?
 
 ## パッケージのインポート
 
-問題が発生した場合は、パッケージをインポートする必要があるかもしれませんので、申し訳ありませんし、インポートを追加してください。  
+It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
 `import mods.contenttweaker.PartBuilder;`
 
-## そのようなオブジェクトを取得しています
+## Retrieving such an object
 
-[MaterialSystem Package](/Mods/ContentTweaker/Materials/MaterialSystem/) を使用して、新しい明確なビルダーを取得できます。
+You can retrieve a new, clear Builder using the [MaterialSystem Package](/Mods/ContentTweaker/Materials/MaterialSystem/):
 
 ```zenscript
 var pBuilder = mods.contenttweaker.MaterialSystem.getPartBuilder();
 ```
 
-## 部品のプロパティを設定
+## Set the Part's Properties
 
-これらのプロパティを設定できます。
+You can set these Properties
 
-| ZenMethod                           | パラメータ                                                               |
+| ZenMethod                           | Parameter                                                           |
 | ----------------------------------- | ------------------------------------------------------------------- |
 | setHasOverlay(hasOverlay)           | boolean hasOverlay                                                  |
-| setName(name)                       | 文字列名                                                                |
+| setName(name)                       | string name                                                         |
 | setPartType(partType)               | [PartType](/Mods/ContentTweaker/Materials/Parts/PartType/) partType |
-| setOreDictName(prefix)              | 文字列プレフィックス                                                          |
-| setAdditionalOreDictNames(prefixes) | ストリング... prefixes                                                   |
+| setOreDictName(prefix)              | string prefix                                                       |
+| setAdditionalOreDictNames(prefixes) | string... prefixes                                                  |
 
-すべてのこれらのメソッドは2つのことを行います: まず、ビルダーのプロパティを変更し、次に修正されたビルダーを返します。  
-この意味を以下に示す例のスクリプトで確認できます。
+All these Methods do 2 things: Firstly, they change the builder's Property, secondly they return the modified builder.  
+You can see in the example scripts below what this means.
 
-## 実際に材料を作る
+## Actually build the Material
 
-材料を作るには、それを作る必要があります。
+Before you can build your material, you need to build it:
 
 ```zenscript
 pBuilder.build();
 ```
 
-これは [パート](/Mods/ContentTweaker/Materials/Parts/Part/) のオブジェクトを返します。
+This returns an [Part](/Mods/ContentTweaker/Materials/Parts/Part/) Object.
 
-## スクリプト例
+## Example Script
 
 ```zenscript
-var pBuilder = mods.contentTweaker.MaterialSystem.getPartBuilder();
+var pBuilder = mods.contenttweaker.MaterialSystem.getPartBuilder();
 pBuilder.setName("dense_gear");
 pBuilder.setPartType(MaterialSystem.getPartType("item"));
 var denseGearPart = pBuilder.build();
 
-var denseIngotPart = mods.contentTweaker.MaterialPartBuilder().setName("dense_ingot").setPartType(mods.content弱者.MaterialSystem.getPartType("Type"item").setOreDictName("superIngot").build();
+var denseIngotPart = mods.contenttweaker.MaterialSystem.getPartBuilder().setName("dense_ingot").setPartType(mods.contenttweaker.MaterialSystem.getPartType("item")).setOreDictName("superIngot").build();
 ```
 
-## 注目すべき情報
+## Noteworthy information
 
-### 材料部品のローカライズ中
+### Localizing the MaterialParts
 
 The items you create with your new part will generally be named `contenttweaker.part.partname`  
 If you want your item to include the material name, you will need to localize it, preferably in CoT's language files which can be found at `Resources/contenttweaker/lang`.  
@@ -64,7 +64,7 @@ Instead of the material name you write `%s`, so naming the dense gears ans ingot
     contenttweaker.part.dense_ingot=Dense %s Ingot
     
 
-### テクスチャの追加
+### Adding a texture
 
 The items you create with your new part will look a bit edgy to you.  
 If you want your part to have a specific icon you will need to add a `partname.png` file to `Resources/contenttweaker/textures/items`.  
