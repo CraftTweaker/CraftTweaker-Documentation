@@ -1,30 +1,30 @@
-# 流域投射中
+# Basin Throwing
 
 ## 加
 
 ```zenscript
-导入mods.cuisine.BasinThrow;
+import mods.cuisine.BasinThrowing;
 
 BasinThrowing.add(IIngredient input, ILiquidStack inputFluid, IItemStack output);
 
 BasinThrowing.add(<ore:cobblestone> * 2, <liquid:lava> * 1000, <item:minecraft:diamond>);
 ```
 
-## 移除
+## Removal
 
 ```zenscript
-导入 mods.cuisine.BasinThrow;
+import mods.cuisine.BasinThrowing;
 
-// 通过输入删除。
-BasinThrowing.remove(IItemStack 输入, ILiquidStack inputFluid);
+// Remove by inputs.
+BasinThrowing.remove(IItemStack input, ILiquidStack inputFluid);
 
 BasinThrowing.remove(<item:minecraft:dirt>, <liquid:water> * 1000);
 
-// 通过标识符删除。
+// Remove by identifier.
 BasinThrowing.remove(String id);
 
 BasinThrowing.remove("recipe_name");
 
-// 移除所有东西！
-a. BasinThrowing.removeAll();
+// Remove everything!
+BasinThrowing.removeAll();
 ```
