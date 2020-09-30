@@ -17,9 +17,9 @@ crafttweaker.api.mods.ModInfo
 | blocks            | Список&lt;[crafttweaker.api.block.MCBlock](/vanilla/api/blocks/MCBlock)&gt;              | true         | false        |
 | displayName       | String                                                                                               | true         | false        |
 | типы сущностей    | Список&lt;[crafttweaker.api.entity.MCEntityType](/vanilla/api/entities/MCEntityType)&gt; | true         | false        |
-| жидкости          | Список&lt;[crafttweaker.api.fluid.MCFluid](/vanilla/api/fluid/MCFluid)&gt;               | true         | false        |
-| элементы          | Список&lt;[crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)&gt;          | true         | false        |
-| мод               | String                                                                                               | true         | false        |
+| fluids            | Список&lt;[crafttweaker.api.fluid.MCFluid](/vanilla/api/fluid/MCFluid)&gt;               | true         | false        |
+| items             | Список&lt;[crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)&gt;          | true         | false        |
+| modid             | String                                                                                               | true         | false        |
 | пространство имён | String                                                                                               | true         | false        |
 | version           | String                                                                                               | true         | false        |
 
