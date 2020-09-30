@@ -1,105 +1,105 @@
-# Stan MCBlocka
+# MCBlockState
 
-Ta klasa została dodana przez moda z mod-id `crafttweaker`. Więc musisz zainstalować tę modyfikację, jeśli chcesz używać tej funkcji.
+This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
 
-## Importowanie klasy
-Może być wymagane zaimportowanie pakietu, jeśli napotkasz jakiekolwiek problemy (np. rzucanie tablicy), tak aby były bezpieczne niż przepraszamy i dodaj import.
+## Importing the class
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
 ```zenscript
 crafttweaker.api.block.MCBlockState
 ```
 
-## Zaimplementowane interfejsy
-MCBlockState implementuje następujące interfejsy. Oznacza to, że każda dostępna dla nich metoda może być również stosowana w tej klasie.
+## Implemented Interfaces
+MCBlockState implements the following interfaces. That means any method available to them can also be used on this class.
 - [crafttweaker.api.brackets.CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
 
-## Metody
+## Methods
 ### getAllowedValuesForProperty
 
-Lista zwrotów<String>
+Returns List<String>
 
 ```zenscript
-myMCBlockState.getAllowedValuesForProperty(nazwa jako String);
+myMCBlockState.getAllowedValuesForProperty(name as String);
 ```
 
-| Parametr | Typ         | Opis             |
-| -------- | ----------- | ---------------- |
-| Nazwa    | Ciąg znaków | Nie podano opisu |
+| Parameter | Type   | Description             |
+| --------- | ------ | ----------------------- |
+| name      | String | No description provided |
 
 
-### Właściwości
+### getProperties
 
-Zwraca ciąg[String]
+Returns String[String]
 
 ```zenscript
 myMCBlockState.getProperties();
 ```
 
-### Nazwy getPropertyName
+### getPropertyNames
 
-Lista zwrotów<String>
+Returns List<String>
 
 ```zenscript
 myMCBlockState.getPropertyNames();
 ```
 
-### Wartość getPropertyValue
+### getPropertyValue
 
-Zwraca ciąg znaków
-
-```zenscript
-myMCBlockState.getPropertyValue(nazwa jako String);
-```
-
-| Parametr | Typ         | Opis             |
-| -------- | ----------- | ---------------- |
-| Nazwa    | Ciąg znaków | Nie podano opisu |
-
-
-### Własność
-
-Zwraca wartość logiczną
+Returns String
 
 ```zenscript
-myMCBlockState.hasProperty(nazwa jako String);
+myMCBlockState.getPropertyValue(name as String);
 ```
 
-| Parametr | Typ         | Opis             |
-| -------- | ----------- | ---------------- |
-| Nazwa    | Ciąg znaków | Nie podano opisu |
+| Parameter | Type   | Description             |
+| --------- | ------ | ----------------------- |
+| name      | String | No description provided |
 
 
-### z Właściwością
+### hasProperty
 
-Zwraca [crafttweaker.api.block.MCBlockState](/vanilla/api/blocks/MCBlockState)
+Returns boolean
+
+```zenscript
+myMCBlockState.hasProperty(name as String);
+```
+
+| Parameter | Type   | Description             |
+| --------- | ------ | ----------------------- |
+| name      | String | No description provided |
+
+
+### withProperty
+
+Returns [crafttweaker.api.block.MCBlockState](/vanilla/api/blocks/MCBlockState)
 
 ```zenscript
 myMCBlockState.withProperty(name as String, value as String);
 ```
 
-| Parametr | Typ         | Opis             |
-| -------- | ----------- | ---------------- |
-| Nazwa    | Ciąg znaków | Nie podano opisu |
-| wartość  | Ciąg znaków | Nie podano opisu |
+| Parameter | Type   | Description             |
+| --------- | ------ | ----------------------- |
+| name      | String | No description provided |
+| value     | String | No description provided |
 
 
 
-## Właściwości
+## Properties
 
-| Nazwisko        | Typ                                                           | Posiada Getter | Ma ustawienie |
-| --------------- | ------------------------------------------------------------- | -------------- | ------------- |
-| blok            | [crafttweaker.api.block.MCBlock](/vanilla/api/blocks/MCBlock) | prawda         | fałszywy      |
-| Moc kanProvidea | boolean                                                       | prawda         | fałszywy      |
-| polecenie       | Ciąg znaków                                                   | prawda         | fałszywy      |
-| hasTileEntity   | boolean                                                       | prawda         | fałszywy      |
-| isSolid         | boolean                                                       | prawda         | fałszywy      |
-| isSticky        | boolean                                                       | prawda         | fałszywy      |
-| Poziom światła  | odcień                                                        | prawda         | fałszywy      |
-| ticksRandomly   | boolean                                                       | prawda         | fałszywy      |
+| Name            | Type                                                          | Has Getter | Has Setter |
+| --------------- | ------------------------------------------------------------- | ---------- | ---------- |
+| block           | [crafttweaker.api.block.MCBlock](/vanilla/api/blocks/MCBlock) | true       | false      |
+| canProvidePower | boolean                                                       | true       | false      |
+| commandString   | String                                                        | true       | false      |
+| hasTileEntity   | boolean                                                       | true       | false      |
+| isSolid         | boolean                                                       | true       | false      |
+| isSticky        | boolean                                                       | true       | false      |
+| lightLevel      | int                                                           | true       | false      |
+| ticksRandomly   | boolean                                                       | true       | false      |
 
-## Szafy na akta, szafy na kartoteki, kasety na papiery, podpórki na papiery, pojemniki na przybory do pisania, stojaki na stemple biurowe i podobne wyposażenie biurowe lub biurkowe, z metali nieszlachetnych
+## Casters
 
-| Typ wyniku                                                    | Jest niedomniemany |
-| ------------------------------------------------------------- | ------------------ |
-| Ciąg znaków                                                   | fałszywy           |
-| [crafttweaker.api.block.MCBlock](/vanilla/api/blocks/MCBlock) | prawda             |
+| Result type                                                   | Is Implicit |
+| ------------------------------------------------------------- | ----------- |
+| String                                                        | false       |
+| [crafttweaker.api.block.MCBlock](/vanilla/api/blocks/MCBlock) | true        |
 
