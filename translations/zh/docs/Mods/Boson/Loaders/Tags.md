@@ -1,13 +1,13 @@
-# `标签` 加载器
+# `tags` Loader
 
-`标签` 加载器是一个特殊的加载器，它会在稍后阶段触发Minecraft加载过程，并允许 操纵 [标签](/Mods/Boson/Tags/Concept/)。 Tag括号处理程序在这个加载器加载的文件 中使用时有不同的含义：请参考Tags文档获取更多信息。
+The `tags` loader is a special Loader that fires at a later stage in the Minecraft loading process and allows manipulation of [Tags](/Mods/Boson/Tags/Concept/). The Tag bracket handler has a different meaning when used in a file loaded by this loader: refer to the Tags documentation for more information.
 
-## 使用此加载器
-这个加载器可以通过 [`#loader` 预处理器指令](/AdvancedFunctions/Preprocessors/LoaderPreprocessor/) 通过在声明 旁边指定其名称。 例如以下示例：
+## Using this loader
+This loader can be enabled via the [`#loader` preprocessor directive](/AdvancedFunctions/Preprocessors/LoaderPreprocessor/) by specifying its name next to the declaration, as in the following example:
 
 ```zenscript
-#加载器标签
+#loader tags
 ```
 
-## 此加载器的原因
-更多信息请参阅 [标签括号处理器](/Mods/Boson/Tags/BracketHandler/) 的文档和与 相关的页面[实际概念](/Mods/Boson/Tags/Concept/)。
+## Reason for this loader
+Refer to the documentation for the [tag bracket handler](/Mods/Boson/Tags/BracketHandler/) and the page related to the [actual concept](/Mods/Boson/Tags/Concept/) for more information.
