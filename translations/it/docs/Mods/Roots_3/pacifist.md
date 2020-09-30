@@ -1,10 +1,10 @@
-### Classe
+### Class
 
 ```zenscript
 import mods.roots.Pacifist;
 ```
 
-#### Metodi
+#### Methods
 
 ```zenscript
 void addEntity(
@@ -22,14 +22,14 @@ void removeEntity(
 
 * * *
 
-### Esempi
+### Examples
 
 ```zenscript
 import mods.roots.Pacifist;
 
-// Aggiunge un enderman come una creatura pacifista
-Pacifist. ddEntity(<entity:minecraft:enderman>);
+// Adds an enderman as a pacifist creature
+Pacifist.addEntity(<entity:minecraft:enderman>);
 
-// Impedisce alle vacche di innescare l'effetto pacifismo
+// Prevents cows from triggering the pacifism effect
 Pacifist.removeEntity(<entity:minecraft:cow>);
 ```
