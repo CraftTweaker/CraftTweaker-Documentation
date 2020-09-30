@@ -1,49 +1,49 @@
 # Quern
 
-## パッケージ
+## Package
 `mods.atum.Quern;`
 
-## レシピを追加
+## Adding a Recipe
 
 `mods.atum.Quern.addRecipe(input, output, rotations);`
 
 - `input` [IItemStack](/vanilla/api/items/IItemStack)
 - `output` [IItemStack](/vanilla/api/items/IItemStack)
-- `回転` 0 を超える任意の数
+- `rotations` Any number above 0
 
-指定された入力 & 出力でレシピを追加し、指定された回転でクエリを完了します。
+Adds a recipe with the specified input & output, that takes the specified rotations to complete querning
 
 ```zenscript
 mods.atum.Quern.addRecipe(<item:atum:fertile_soil>, <item:atum:fertile_soil_pile>, 3);
 ```
 
-## レシピを削除する
+## Removing a Recipe
 
-### 出力によるレシピの削除
+### Remove Recipes by Output
 
 `mods.atum.Quern.removeRecipeByOutput(output);`
 
 - `output` [IItemStack](/vanilla/api/items/IItemStack)
 
-出力結果が与えられた [IItemStack](/vanilla/api/items/IItemStack) であるすべてのレシピを削除します。
+Removes all recipes where the output result is the provided [IItemStack](/vanilla/api/items/IItemStack).
 
 ```zenscript
 mods.atum.Quern.removeRecipeByOutput(<item:atum:emmer_flour>);
 ```
 
-### 出力 & 入力でレシピを削除
+### Remove Recipes by Output & Input
 
 `mods.atum.Quern.removeRecipeByOutputInput(output, input);`
 
 - `output` [IItemStack](/vanilla/api/items/IItemStack)
 - `input` [IItemStack](/vanilla/api/items/IItemStack)
 
-指定された出力 & 入力で特定のレシピを削除します。
+Removes the specific recipe, with the specified output & input
 
 ```zenscript
 mods.atum.Quern.removeRecipeByOutputInput(<item:atum:emmer_flour>, <item:atum:emmer>);
 ```
 
-### その他の削除方法
+### Other removal methods
 
-Quernレシピを削除する他の方法については、 [Recipe Manager](/recipes/recipe_managers) を参照してください。
+See [Recipe Managers](/recipes/recipe_managers) for other ways to remove Quern recipes
