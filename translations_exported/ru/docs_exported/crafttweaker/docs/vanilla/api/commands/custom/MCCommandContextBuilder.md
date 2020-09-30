@@ -8,8 +8,8 @@
 crafttweaker.api.commands.custom.MCCommandContextBuilder
 ```
 
-## Методы
-### сборка
+## Methods
+### build
 
 Возврат тип: [crafttweaker.api.commands.custom.MCCommandContext](/vanilla/api/commands/custom/MCCommandContext)
 
@@ -17,7 +17,7 @@ crafttweaker.api.commands.custom.MCCommandContextBuilder
 myMCCommandContextBuilder.build(ввод в виде строки);
 ```
 
-| Параметр | Тип    | Описание             |
+| Параметр | Тип    | Description          |
 | -------- | ------ | -------------------- |
 | input    | String | Описание отсутствует |
 
@@ -30,17 +30,17 @@ myMCCommandContextBuilder.build(ввод в виде строки);
 myMCCommandContextBuilder.copy();
 ```
 
-### равно
+### equals
 
-Тип возврата: логическое значение
+Return type: boolean
 
 ```zenscript
 myMCCommandContextBuilder.equals(o as Object);
 ```
 
-| Параметр | Тип    | Описание             |
+| Параметр | Тип    | Description          |
 | -------- | ------ | -------------------- |
-| о        | Объект | Описание отсутствует |
+| o        | Object | Описание отсутствует |
 
 
 ### найти предложенный контекст
@@ -51,7 +51,7 @@ myMCCommandContextBuilder.equals(o as Object);
 myMCCommandContextBuilder.findSuggestionContext(курсор как int);
 ```
 
-| Параметр | Тип | Описание             |
+| Параметр | Тип | Description          |
 | -------- | --- | -------------------- |
 | cursor   | int | Описание отсутствует |
 
@@ -130,7 +130,7 @@ myMCCommandContextBuilder.getSource();
 
 ### hashCode
 
-Тип возврата: int
+Return type: int
 
 ```zenscript
 myMCCommandContextBuilder.hashCode();
@@ -138,7 +138,7 @@ myMCCommandContextBuilder.hashCode();
 
 ### toString
 
-Тип возврата: строка
+Return type: String
 
 ```zenscript
 myMCCommandContextBuilder.toString();
@@ -152,9 +152,9 @@ myMCCommandContextBuilder.toString();
 myMCCommandContextBuilder.withArgument(name as String, argument as crafttweaker.api.commands.custom.MCParsedArgument);
 ```
 
-| Параметр | Тип                                                                                                | Описание             |
+| Параметр | Тип                                                                                                | Description          |
 | -------- | -------------------------------------------------------------------------------------------------- | -------------------- |
-| имя      | String                                                                                             | Описание отсутствует |
+| name     | String                                                                                             | Описание отсутствует |
 | аргумент | [crafttweaker.api.commands.custom.MCParsedArgument](/vanilla/api/commands/custom/MCParsedArgument) | Описание отсутствует |
 
 
@@ -166,7 +166,7 @@ myMCCommandContextBuilder.withArgument(name as String, argument as crafttweaker.
 myMCCommandContextBuilder.withChild(child as crafttweaker.api.commands.custom.MCCommandContextBuilder);
 ```
 
-| Параметр | Тип                                                                                                              | Описание             |
+| Параметр | Тип                                                                                                              | Description          |
 | -------- | ---------------------------------------------------------------------------------------------------------------- | -------------------- |
 | ребенок  | [crafttweaker.api.commands.custom.MCCommandContextBuilder](/vanilla/api/commands/custom/MCCommandContextBuilder) | Описание отсутствует |
 
@@ -179,9 +179,9 @@ myMCCommandContextBuilder.withChild(child as crafttweaker.api.commands.custom.MC
 myMCCommandContextBuilder.withCommand(command as crafttweaker.api.commands.custom.MCCommand);
 ```
 
-| Параметр | Тип                                                                                  | Описание             |
+| Параметр | Тип                                                                                  | Description          |
 | -------- | ------------------------------------------------------------------------------------ | -------------------- |
-| команда  | [crafttweaker.api.commands.custom.MCCommand](/vanilla/api/commands/custom/MCCommand) | Описание отсутствует |
+| command  | [crafttweaker.api.commands.custom.MCCommand](/vanilla/api/commands/custom/MCCommand) | Описание отсутствует |
 
 
 ### withNode
@@ -192,7 +192,7 @@ myMCCommandContextBuilder.withCommand(command as crafttweaker.api.commands.custo
 myMCCommandContextBuilder.withNode(node as crafttweaker.api.commands.custom.MCCommandNode, диапазон как crafttweaker.api.commands.custom.MCStringRange);
 ```
 
-| Параметр | Тип                                                                                          | Описание             |
+| Параметр | Тип                                                                                          | Description          |
 | -------- | -------------------------------------------------------------------------------------------- | -------------------- |
 | узел     | [crafttweaker.api.commands.custom.MCCommandNode](/vanilla/api/commands/custom/MCCommandNode) | Описание отсутствует |
 | range    | [crafttweaker.api.commands.custom.MCStringRange](/vanilla/api/commands/custom/MCStringRange) | Описание отсутствует |
@@ -206,7 +206,7 @@ myMCCommandContextBuilder.withNode(node as crafttweaker.api.commands.custom.MCCo
 myMCCommandContextBuilder.withSource(source as crafttweaker.api.commands.custom.MCCommandSource);
 ```
 
-| Параметр | Тип                                                                                              | Описание             |
+| Параметр | Тип                                                                                              | Description          |
 | -------- | ------------------------------------------------------------------------------------------------ | -------------------- |
 | источник | [crafttweaker.api.commands.custom.MCCommandSource](/vanilla/api/commands/custom/MCCommandSource) | Описание отсутствует |
 
@@ -219,9 +219,9 @@ myMCCommandContextBuilder.withSource(source as crafttweaker.api.commands.custom.
 myMCCommandContextBuilder == o как объект
 ```
 
-| Параметр | Тип    | Описание             |
+| Параметр | Тип    | Description          |
 | -------- | ------ | -------------------- |
-| о        | Объект | Описание отсутствует |
+| o        | Object | Описание отсутствует |
 
 ## Утилиты
 
