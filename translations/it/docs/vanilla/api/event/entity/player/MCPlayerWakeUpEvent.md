@@ -2,26 +2,26 @@
 
 Questa classe è stata aggiunta da una mod con ID `crafttweaker`. Perciò, è necessario avere questa mod installata per poter utilizzare questa funzione.
 
-## Importare la classe
+## Importing the class
 Potrebbe essere necessario importare il pacchetto, se si incontrano dei problemi (come castare un vettore), quindi meglio essere sicuri e aggiungere la direttiva di importazione.
 ```zenscript
 crafttweaker.api.event.entity.player.MCPlayerWakeUpEvent
 ```
 
-## Costruttori
+## Constructors
 ```zenscript
 new crafttweaker.api.event.entity.player.MCPlayerWakeUpEvent(handler as function.Consumer<crafttweaker.api.event.entity.player.MCPlayerWakeUpEvent>);
 ```
-| Parametro | Tipo                                                                                                                                | Descrizione                 |
+| Parameter | Type                                                                                                                                | Description                 |
 | --------- | ----------------------------------------------------------------------------------------------------------------------------------- | --------------------------- |
 | handler   | function.Consumer<[crafttweaker.api.event.entity.player.MCPlayerWakeUpEvent](/vanilla/api/event/entity/player/MCPlayerWakeUpEvent)> | Nessuna descrizione fornita |
 
 
 
-## Metodi
+## Methods
 ### getEntityPlayer
 
-Restituisce [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
+Returns [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
 
 ```zenscript
 myMCPlayerWakeUpEvent.getEntityPlayer();
@@ -29,29 +29,29 @@ myMCPlayerWakeUpEvent.getEntityPlayer();
 
 ### getPlayer
 
-Restituisce: `Giocatore`
+Returns: `Player`
 
-Restituisce [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
+Returns [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
 
 ```zenscript
 myMCPlayerWakeUpEvent.getPlayer();
 ```
 
-### hasRisultato
+### hasResult
 
-Determina se questo evento prevede un valore significativo del risultato. Nota: Gli eventi con l'annotazione HasResult avranno questo metodo automaticamente aggiunto per restituire true.
+Determines if this event expects a significant result value. Note: Events with the HasResult annotation will have this method automatically added to return true.
 
 Restituisce un booleano
 
 ```zenscript
-myMCPlayerWakeUpEvent.hasRisultato();
+myMCPlayerWakeUpEvent.hasResult();
 ```
 
-### isAnnullabile
+### isCancelable
 
-Determina se questa funzione è annullabile. Restituisce: `Se l'accesso a setAnnullato dovrebbe essere consentito
- Nota:
- Gli eventi con l'annotazione annullabile avranno questo metodo automaticamente aggiunto per restituire true.`
+Determine if this function is cancelable at all. Returns: `If access to setCanceled should be allowed
+ Note:
+ Events with the Cancelable annotation will have this method automatically added to return true.`
 
 Restituisce un booleano
 
@@ -59,9 +59,9 @@ Restituisce un booleano
 myMCPlayerWakeUpEvent.isCancelable();
 ```
 
-### isAnnullato
+### isCanceled
 
-Determina se questo evento è stato annullato e dovrebbe interrompere l'esecuzione. Restituisce: `L'attuale stato annullato`
+Determine if this event is canceled and should stop executing. Returns: `The current canceled state`
 
 Restituisce un booleano
 
@@ -69,20 +69,20 @@ Restituisce un booleano
 myMCPlayerWakeUpEvent.isCanceled();
 ```
 
-### setAnnullato
+### setCanceled
 
 ```zenscript
-myMCPlayerWakeUpEvent.setAnnullato (cancella come boolean);
+myMCPlayerWakeUpEvent.setCanceled(cancel as boolean);
 ```
 
-| Parametro | Tipo    | Descrizione                 |
+| Parameter | Type    | Description                 |
 | --------- | ------- | --------------------------- |
-| annulla   | boolean | Nessuna descrizione fornita |
+| cancel    | boolean | Nessuna descrizione fornita |
 
 
 ### shouldSetSpawn
 
-Indica se il sonno del giocatore è stato considerato riuscito. In vaniglia, questo viene utilizzato per determinare se il pezzo di spawn deve essere impostato alla posizione del letto.
+Indicates if the player's sleep was considered successful. In vanilla, this is used to determine if the spawn chunk is to be set to the bed's position.
 
 Restituisce un booleano
 
@@ -92,7 +92,7 @@ myMCPlayerWakeUpEvent.shouldSetSpawn();
 
 ### updateWorld
 
-Indica se il server deve essere informato dei cambiamenti di sospensione. Questo sarà falso solo se il server è già considerato 'aggiornato', perché, per esempio, ha avviato la chiamata.
+Indicates if the server should be notified of sleeping changes. This will only be false if the server is considered 'up to date' already, because, for example, it initiated the call.
 
 Restituisce un booleano
 
@@ -100,14 +100,14 @@ Restituisce un booleano
 myMCPlayerWakeUpEvent.updateWorld();
 ```
 
-### wakeImmediatamente
+### wakeImmediately
 
-Usato per l''animazione di risveglio'. Questo è falso se il giocatore è considerato 'sonno' e la sovrapposizione dovrebbe lentamente svanire.
+Used for the 'wake up animation'. This is false if the player is considered 'sleepy' and the overlay should slowly fade away.
 
 Restituisce un booleano
 
 ```zenscript
-myMCPlayerWakeUpEvent.wakeImmediatamente();
+myMCPlayerWakeUpEvent.wakeImmediately();
 ```
 
 
