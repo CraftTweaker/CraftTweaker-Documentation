@@ -1,31 +1,31 @@
-# Zmywarka do naczyń
+# Dishwasher
 
-Zmywarka do naczyń pozwala na czyszczenie brudnych narzędzi.
+The Dishwasher allows you to clean dirty tools.
 
-Domyślnie naprawia trwałość narzędzi wanilii i broni.
+By default repairs durability of vanilla tools and weapons only.
 
-## Usuwanie
+## Removing
 
-## Usuń pasujące elementy do prania.
+## Remove matching washable items.
 
 ```zenscript
 mods.cfm.Dishwasher.remove(@Optional final IIngredient item);
 
 mods.cfm.Dishwasher.remove(<minecraft:flint_and_steel>);
-// Usuń wszystkie spryskane przedmioty.
+// Remove all washable items.
 mods.cfm.Dishwasher.remove();
 ```
 
-## Dodawanie
+## Adding
 
-## Dodaj przedmiot do zmywania.
+## Add a washable item.
 
 ```zenscript
-mods.cfm.Dishwasher.add(@Nonnull final element IItemStack);
+mods.cfm.Dishwasher.add(@Nonnull final IItemStack item);
 
 mods.cfm.Dishwasher.add(<minecraft:wooden_shovel>);
 mods.cfm.Dishwasher.add(<minecraft:stone_shovel>);
-mods.cfm. ishwasher.add(<minecraft:iron_shovel>);
+mods.cfm.Dishwasher.add(<minecraft:iron_shovel>);
 mods.cfm.Dishwasher.add(<minecraft:diamond_shovel>);
 mods.cfm.Dishwasher.add(<minecraft:shield>);
 mods.cfm.Dishwasher.add(<minecraft:bow>);
