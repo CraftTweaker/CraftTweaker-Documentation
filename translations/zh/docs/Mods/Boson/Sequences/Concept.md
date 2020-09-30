@@ -1,10 +1,10 @@
-# 概念
+# The Concept
 
-循环是一个老的概念，也是编程的基础：对一组 元素重复相同的行动。 当筛选其中一些或转换集时。 或者甚至在列表中找到符合 的特定条件或在设置中递归计的第一个项目。
+Looping is an old concept and one of the basis of programming: repeating the same set of actions over a group of elements, while filtering some of them out or converting sets. Or even finding the first item in a list that satisfies a certain condition or a count the items in a set recursively.
 
-In procedural and imperative programming, most of that has been done with plain old `for` loops and a series of conditional statements with their relative `continue` and `break` statements. 虽然这似乎更简单， 它 需要很多代码来进行过滤等简单操作，并且可能产生可以持续更长时间的嵌套链。 此外，它不表示意图，除非代码用评论来指明它。
+In procedural and imperative programming, most of that has been done with plain old `for` loops and a series of conditional statements with their relative `continue` and `break` statements. While this may seem simpler to follow, it requires a lot of code for simple operations such as filtering and may produce nesting chains that can go on for longer. Moreover, it doesn't express the intent unless the code specifies it with comments.
 
-请考虑以下ZenScript 代码：
+Consider the following ZenScript code:
 
 ```zenscript
 var nbtForMc = false;
@@ -25,7 +25,7 @@ for recipe in recipes.all {
 }
 ```
 
-这个代码在第一眼看起来不是很明显的，需要用户阅读逻辑才能理解。 请考虑 这个通过序列构造的对应版本：
+What this code does isn't obvious from a first glance and requires the user to read the logic to understand. Consider this equivalent one constructed via sequences:
 
 ```zenscript
 val nbtForMc = <sequence:ICraftingRecipe>(recipes.all)
@@ -36,9 +36,8 @@ val nbtForMc = <sequence:ICraftingRecipe>(recipes.all)
     .any(function (output) { return output.hasTag; });
 ```
 
-这个代码做到完全一样，而不仅仅是更简洁， 但也会传递更多的意思，即如果</code> 语句，嵌套的 `。 当然，由于有关守则的简单性，这似乎并不是一般性的改进。
-但它可能有助于更复杂的逻辑。</p>
+This code does the exact same and not only it's more concise, but also conveys more meaning that a chain of nested `if` statements. Granted, this does not seem like a general improvement, due to the simplicity of the code in question, but it may prove useful for more complicated pieces of logic.
 
-<p spaces-before="0">Another pro of the above code is that evaluation is not performed until the <code>any` call, meaning that the sequence can be extended via additional method calls over time and it won't be resolved until a "terminal" method is called (i.e. a method that does not return a `Sequence` itself). 这证明是极其有用的，因为没有必要去评估 整个 `配方。all` 数组。
+Another pro of the above code is that evaluation is not performed until the `any` call, meaning that the sequence can be extended via additional method calls over time and it won't be resolved until a "terminal" method is called (i.e. a method that does not return a `Sequence` itself). This proves extremely useful since it is not necessary to evaluate the whole `recipes.all` array.
 
-要开始并利用序列，您可以咨询 [类文档](/Mods/Boson/Sequences/Docs/) 和 [如何获取一个](/Mods/Boson/Sequences/Obtaining/) 文档页面。
+To get started and leverage Sequences, you can consult both the [class documentation](/Mods/Boson/Sequences/Docs/) and [how to obtain one](/Mods/Boson/Sequences/Obtaining/) documentation pages.
