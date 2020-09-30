@@ -1,27 +1,27 @@
 # ProjectileImpactFireball
 
-每当火球撞击某个实体但在损毁之前等被计算出来时，该事件都会被发射。 它是 **可取消**，如果取消，将不会处理影响。
+This event is fired whenever a fireball impacts an entity but before damage, etc, is calculated. It is **cancelable**, and if canceled, the impact will not be processed.
 
-火球实体的加速值可以通过zengetters获得。
+Acceleration values from the fireball entity are available through zengetters.
 
 ## 导入类
-可能需要 [导入](/AdvancedFunctions/Import/) 类以避免错误。  
-`导入craftmilever.event.ProjecttileImpactFireballEvent;`
+It might be required to [import](/AdvancedFunctions/Import/) the class to avoid errors.  
+`import crafttweaker.event.ProjectileImpactFireballEvent;`
 
-## 扩展 IEntityEvent
-ProjecttileImpactFireball Events 实现了以下接口，并且能够调用他们的所有方法/getter/setters：
+## Extending IEntityEvent
+ProjectileImpactFireball Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
 
 - [IProjectileEvent](/Vanilla/Events/Events/IProjectileEvent/)
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 
-## ZenGetters 和 ZenSettters
+## ZenGetters and ZenSetters
 
-以下信息可以从事件中检索：
+The following information can be retrieved from the event:
 
 | ZenGetter       | ZenSetter       | 类型                                                        |
 | --------------- | --------------- | --------------------------------------------------------- |
-| `火球`            |                 | [IEntity](/Vanilla/Entities/IEntity/)                     |
-| `射手`            |                 | [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) |
-| `加速X`           | `加速X`           | 双精度                                                       |
-| `加速度Y`          | `加速度Y`          | 双精度                                                       |
-| `accelerationZ` | `accelerationZ` | 双精度                                                       |
+| `fireball`      |                 | [IEntity](/Vanilla/Entities/IEntity/)                     |
+| `shooter`       |                 | [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) |
+| `accelerationX` | `accelerationX` | double                                                    |
+| `accelerationY` | `accelerationY` | double                                                    |
+| `accelerationZ` | `accelerationZ` | double                                                    |
