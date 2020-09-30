@@ -1,18 +1,18 @@
-# 粉砕機
+# Pulverizer
 
-## パッケージ
+## Package
 
 `mods.thermalexpansion.Pulverizer`
 
 ## 加算
 
 ```zenscript
-mods.thermalexpansion.Pulverizer.addRecipe(IItemStack 出力, IItemStack 入力, int エネルギー, @Optional IItemStack secondaryOutput, @Optional int secondaryChance);
+mods.thermalexpansion.Pulverizer.addRecipe(IItemStack output, IItemStack input, int energy, @Optional IItemStack secondaryOutput, @Optional int secondaryChance);
 
 mods.thermalexpansion.Pulverizer.addRecipe(<minecraft:diamond>, <minecraft:stick>, 1500, <minecraft:stone>, 20);
 ```
 
-## 削除
+## Removal
 
 ```zenscript
 mods.thermalexpansion.Pulverizer.removeRecipe(IItemStack input);
