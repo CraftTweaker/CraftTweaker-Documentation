@@ -1,15 +1,15 @@
 # IEntityCreature
 
-Eine Kreatur.
+A Creature.
 
 ## Dieses Paket importieren
 
-Möglicherweise ist es erforderlich, dass Sie das Paket importieren, wenn Sie irgendwelche Probleme haben (z.B. [Array](/AdvancedFunctions/Arrays_and_Loops/)), also besser sicher sein als bedauern und fügen Sie den Import.  
-`importiere crafttweaker.entity.IEntityCreature;`
+It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
+`import crafttweaker.entity.IEntityCreature;`
 
-## IEntityLiving [ wird erweitert](/Vanilla/Entities/IEntityLiving/)</h2> 
+## Extending [IEntityLiving](/Vanilla/Entities/IEntityLiving/)
 
-IEntityKreatur erweitert [IEntityLiving](/Vanilla/Entities/IEntityLiving/). Das bedeutet, dass alle Funktionen, die [IEntityLiving](/Vanilla/Entities/IEntityLiving/) Objekten zur Verfügung stehen, auch für IEntityKreatur verfügbar sind.
+IEntityCreature extends [IEntityLiving](/Vanilla/Entities/IEntityLiving/). That means all functions available to [IEntityLiving](/Vanilla/Entities/IEntityLiving/) objects also are available to IEntityCreature.
 
 ## Methoden
 
@@ -19,37 +19,37 @@ IEntityKreatur erweitert [IEntityLiving](/Vanilla/Entities/IEntityLiving/). Das 
 | -------------------- | -------------------------------------- |
 | hasPath              | bool                                   |
 | isWithinHomeDistance | bool                                   |
-| home-Position        | [IBlockPos](/Vanilla/World/IBlockPos/) |
+| homePosition         | [IBlockPos](/Vanilla/World/IBlockPos/) |
 | maximumHomeDistance  | float                                  |
 | hasHome              | bool                                   |
 
-### ZenMethoden
+### ZenMethods
 
-#### lebenden Ton abspielen
+#### play living sound
 
-Methode erwartet nichts.  
-Gibt nichts zurück.
+Method expects nothing.  
+Returns nothing.
 
 ```zenscript
 entCreObj.playLivingSound();
 ```
 
-#### Haus einstellen oder lösen
+#### Set or detach home
 
-Die erste Methode erwartet ein [IBlockPos](/Vanilla/World/IBlockPos/) Objekt und eine Int.  
-Zweite Methode erwartet nichts.  
-Beide Methoden geben nichts zurück.
+First method expects an [IBlockPos](/Vanilla/World/IBlockPos/) object and an int.  
+Second method expects nothing.  
+Both methods return nothing.
 
 ```zenscript
 entAnObj.setHomePositionAndDistance(IBlockPos pos, int distance);
 entAnObj.detachHome();
 ```
 
-#### Prüfen, ob sich eine Position innerhalb der Heimatdistanz befindet
+#### Check if a position is within the home distance
 
-Methode erwartet ein [IBlockPos](/Vanilla/World/IBlockPos/) Objekt.  
-Gibt einen Bool zurück.
+Method expects an [IBlockPos](/Vanilla/World/IBlockPos/) object.  
+Returns a bool.
 
 ```zenscript
-entAnObj.isPositionWithinHomeDistanz
+entAnObj.isPositionWithinHomeDistance
 ```
