@@ -1,86 +1,86 @@
-# Ejemplos
+# Examples
 
-Crea lava soltando 4x de cualquier madera de madera en el criotheum.  
+Creates lava by dropping 4x of any logWood into cryotheum.  
 `mods.inworldcrafting.FluidToFluid.transform(<liquid:lava>, <liquid:cryotheum>, [<ore:logWood> * 4]);`
 
 * * *
 
-Crea Madera Tratada al soltar algunas abedul en Creosote. `mods.inworldcrafting.FluidToItem.transform(<immersiveengineering:treated_wood>, <liquid:creosote>, [<minecraft:planks:2>]);`
+Creates Treated Wood by dropping some Birch Planks in Creosote. `mods.inworldcrafting.FluidToItem.transform(<immersiveengineering:treated_wood>, <liquid:creosote>, [<minecraft:planks:2>]);`
 
 * * *
 
-Crea una Botella de Agua soltando una Botella de Cristal en Agua, consume el bloque de Fuente de Agua.  
-`mods. nworldcrafting.FluidToItem.transform(<minecraft:potion>.withTag({Potion: "minecraft:water"}), <liquid:water>, [<minecraft:glass_bottle>], true);`
+Creates a Water Bottle by dropping a Glass Bottle in Water, consumes the Water sourceblock.  
+`mods.inworldcrafting.FluidToItem.transform(<minecraft:potion>.withTag({Potion: "minecraft:water"}), <liquid:water>, [<minecraft:glass_bottle>], true);`
 
 * * *
 
-Crea acero un 15% del tiempo en que una Explosión golpee el Hierro de ingotHierro en el mundo.  
-`mods. nworldcrafting.ExplosionCrafting.explodeItemRecipe(<ore:ingotSteel>.firstItem, <ore:ingotIron>, 15);`
+Create Steel 15% of the time when ingotIron dropped in the world is hit by an Explosion.  
+`mods.inworldcrafting.ExplosionCrafting.explodeItemRecipe(<ore:ingotSteel>.firstItem, <ore:ingotIron>, 15);`
 
 * * *
 
-Crea 8 palos 75% del tiempo en que las tablas de acacia colocadas en el mundo son golpeadas por una explosión. `mods.inworldcrafting.ExplosionCrafting.explodeBlockRecipe(<minecraft:stick> * 8, <minecraft:planks:4>, 75);`
+Create 8 sticks 75% of the time when Acacia Planks placed in the world is hit by an Explosion. `mods.inworldcrafting.ExplosionCrafting.explodeBlockRecipe(<minecraft:stick> * 8, <minecraft:planks:4>, 75);`
 
 * * *
 
-Crea un Bloque de Carbón cuando 4 piezas de madera se hayan quemado durante 60 ticks. `mods.inworldcrafting.FireCrafting.addRecipe(<thermalfoundation:storage_resource>, <ore:logWood> * 4, 60);`
+Create a Block of Charcoal when 4 pieces of logWood has burned for 60 ticks. `mods.inworldcrafting.FireCrafting.addRecipe(<thermalfoundation:storage_resource>, <ore:logWood> * 4, 60);`
 
-# Documentación
+# Documentation
 
-## Nota sobre la fabricación de fluidos
+## Note on fluidcrafting
 
-**No agregue el mismo ingrediente varias veces, utilice `<ingredient> * contador`. Está ahí por una razón.**  
-El juego combina objetos cercanos en pilas, así que encontrar varios ingredientes del mismo tipo en un BlockSpace solo ocurre cuando el primer EntityItem obtiene una pila completa de objetos, así que la embarcación no sucederá como esperaría.
+**Don't add the same ingredient multiple times, use `<ingredient> * count`. It's there for a reason.**  
+The game merges nearby items into stacks so finding multiple ingredients of the same type in one BlockSpace only happens when the first EntityItem gets a full stack of items, so the craft won't happen like you would expect.
 
 ### BAAD!
 
 `FluidToItem.transform(<minecraft:diamond>, <liquid:blueslime>, [<ore:ingotSteel>, <ore:ingotSteel>, <ore:dustCobalt>, <ore:nuggetEnderpearl>], true);`
 
-### Adiós
+### Goooood
 
 `FluidToItem.transform(<minecraft:diamond>, <liquid:blueslime>, [<ore:ingotSteel> * 2, <ore:dustCobalt>, <ore:nuggetEnderpearl>], true);`
 
-## Transformación de fluido a elemento
+## Fluid to Item Transformation
 
-la importación debe ser `mods.inworldcrafting.FluidToItem`
+import should be `mods.inworldcrafting.FluidToItem`
 
-**Uso**  
-`FluidToItem.transform(Salida ItemStack, ILiquidStack inputFluid, IIngredient[] inputItems, @Consumo booleano opcional);`
+**Usage**  
+`FluidToItem.transform(IItemStack output, ILiquidStack inputFluid, IIngredient[] inputItems, @Optional boolean consume);`
 
-El valor de consumo por defecto para este método es `verdadero`, así que si no quieres que se consuma el `inputItem` al transformar el líquido tienes que pasar `false` como el 4to parámetro.
+The default consume value for this method is `true`, so if you don't want the `inputItem` to be consumed when transforming the liquid you have to pass `false` as the 4th paramater to the method.
 
-## Transformación de fluido a fluido
+## Fluid to Fluid Transformation
 
-la importación debe ser `mods.inworldcrafting.FluidToFluid`
+import should be `mods.inworldcrafting.FluidToFluid`
 
-**Uso**  
-`FluidToFluid.transform(salida ILiquidStack, ILiquidStack inputFluid, IIngredient[] inputItems, @Consumo booleano opcional);`
+**Usage**  
+`FluidToFluid.transform(ILiquidStack output, ILiquidStack inputFluid, IIngredient[] inputItems, @Optional boolean consume);`
 
-El valor de consumo por defecto para este método es `verdadero`, así que si no quieres que se consuma el `inputItem` al transformar el líquido tienes que pasar `false` como el 4to parámetro.
+The default consume value for this method is `true`, so if you don't want the `inputItem` to be consumed when transforming the liquid you have to pass `false` as the 4th paramater to the method.
 
-## Elementos Quemantes
+## Burning Items
 
-la importación debe ser `mods.inworldcrafting.FireCrafting`
+import should be `mods.inworldcrafting.FireCrafting`
 
-**Uso**  
-`FireCrafting.addRecipe(salida ItemStack, InputItem, @Optional int ticks);`
+**Usage**  
+`FireCrafting.addRecipe(IItemStack output, IIngredient inputItem, @Optional int ticks);`
 
-El número predeterminado de ticks para crear la salida es `40` (2 segundos)
+The default number of ticks to create the output is `40` (2 seconds)
 
-## Elementos/Bloques Explotando
+## Exploding Items/Blocks
 
-la importación debe ser `mods.inworldcrafting.ExplosionCrafting`
+import should be `mods.inworldcrafting.ExplosionCrafting`
 
-### Explotando objetos
+### Exploding items
 
-**Uso**  
-`ExplosionCrafting.explodeItemRecipe(Salida de ItemStack, Ingredient inputItem, @Optional int survicechance);`
+**Usage**  
+`ExplosionCrafting.explodeItemRecipe(IItemStack output, IIngredient inputItem, @Optional int survicechance);`
 
-La supervivencia establece la posibilidad de que la receta tenga éxito. El valor predeterminado es `100`%
+Survivechance sets the chance for how likely the recipe is to be successful. Default value is `100`%
 
-### Bloques Explotadores
+### Exploding Blocks
 
-**Uso**  
-`ExplosionCrafting.explodeBlockRecipe(Salida de ItemStack, Stack de ItemStack, @Optional int itemSpawnChance);`
+**Usage**  
+`ExplosionCrafting.explodeBlockRecipe(IItemStack output, IItemStack blockStack, @Optional int itemSpawnChance);`
 
-`blockStack` debe ser un bloque `` en su forma de pila. Se comparará con los metadatas. `itemSpawnChance` establece la probabilidad de que el bloque aparezca la salida cuando el bloque es destruido por una explosión. El valor predeterminado es `100`%
+`blockStack` should be a `Block` in its stackform. It will compare against metadata. `itemSpawnChance` sets the chance for how likely the block is to spawn the output when the block is destroyed by an explosion. Default value is `100`%
