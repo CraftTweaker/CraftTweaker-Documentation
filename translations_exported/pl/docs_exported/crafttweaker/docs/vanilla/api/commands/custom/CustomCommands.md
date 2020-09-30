@@ -1,14 +1,14 @@
 # Własne polecenia
 
-Ta klasa została dodana przez moda z mod-id `crafttweaker`. Więc musisz zainstalować tę modyfikację, jeśli chcesz używać tej funkcji.
+This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
 
-## Importowanie klasy
-Może być wymagane zaimportowanie pakietu, jeśli napotkasz jakiekolwiek problemy (np. rzucanie tablicy), tak aby były bezpieczne niż przepraszamy i dodaj import.
+## Importing the class
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
 ```zenscript
 crafttweaker.api.commands.custom.CustomCommands
 ```
 
-## Metody
+## Methods
 ### argument
 
 Typ zwrotu: [crafttweaker.api.commands.custom.MCRequiredArgumentBuilder](/vanilla/api/commands/custom/MCRequiredArgumentBuilder)
@@ -17,9 +17,9 @@ Typ zwrotu: [crafttweaker.api.commands.custom.MCRequiredArgumentBuilder](/vanill
 crafttweaker.api.commands.custom.CustomCommands.argument (nazwa jako String);
 ```
 
-| Parametr | Typ         | Opis             |
-| -------- | ----------- | ---------------- |
-| Nazwa    | Ciąg znaków | Nie podano opisu |
+| Parameter | Type   | Description             |
+| --------- | ------ | ----------------------- |
+| name      | String | No description provided |
 
 
 ### dosłowny
@@ -30,9 +30,9 @@ Typ zwrotu: [crafttweaker.api.commands.custom.MCLiteralArgumentBuilder](/vanilla
 crafttweaker.api.commands.custom.CustomCommands.literal(nazwa jako String);
 ```
 
-| Parametr | Typ         | Opis             |
-| -------- | ----------- | ---------------- |
-| Nazwa    | Ciąg znaków | Nie podano opisu |
+| Parameter | Type   | Description             |
+| --------- | ------ | ----------------------- |
+| name      | String | No description provided |
 
 
 ### komenda rejestracyjna
@@ -41,9 +41,9 @@ crafttweaker.api.commands.custom.CustomCommands.literal(nazwa jako String);
 crafttweaker.api.commands.custom.CustomCommands.registerCommand(konstruktor jako crafttweaker.api.commands.custom.MCLiteralArgumentBuilder);
 ```
 
-| Parametr    | Typ                                                                                                                | Opis             |
-| ----------- | ------------------------------------------------------------------------------------------------------------------ | ---------------- |
-| konstruktor | [crafttweaker.api.commands.custom.MCLiteralArgumentBuilder](/vanilla/api/commands/custom/MCLiteralArgumentBuilder) | Nie podano opisu |
+| Parameter   | Type                                                                                                               | Description             |
+| ----------- | ------------------------------------------------------------------------------------------------------------------ | ----------------------- |
+| konstruktor | [crafttweaker.api.commands.custom.MCLiteralArgumentBuilder](/vanilla/api/commands/custom/MCLiteralArgumentBuilder) | No description provided |
 
 
 
