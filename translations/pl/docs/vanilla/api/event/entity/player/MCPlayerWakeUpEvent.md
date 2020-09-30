@@ -1,27 +1,27 @@
 # MCPlayerWakeUpEvent
 
-Ta klasa została dodana przez moda z mod-id `crafttweaker`. Więc musisz zainstalować tę modyfikację, jeśli chcesz używać tej funkcji.
+This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
 
-## Importowanie klasy
-Może być wymagane zaimportowanie pakietu, jeśli napotkasz jakiekolwiek problemy (np. rzucanie tablicy), tak aby były bezpieczne niż przepraszamy i dodaj import.
+## Importing the class
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
 ```zenscript
-Zdarzenie crafttweaker.api.event.entity.player.MCPlayerWakeUps
+crafttweaker.api.event.entity.player.MCPlayerWakeUpEvent
 ```
 
-## Konstruktorzy
+## Constructors
 ```zenscript
-nowe crafttweaker.api.event.entity.player.MCPlayerWakeUpEvent(handler jako funkcja.Consumer<crafttweaker.api.event.entity.player.MCPlayerWakeUpEvent>);
+new crafttweaker.api.event.entity.player.MCPlayerWakeUpEvent(handler as function.Consumer<crafttweaker.api.event.entity.player.MCPlayerWakeUpEvent>);
 ```
-| Parametr | Typ                                                                                                                                  | Opis             |
-| -------- | ------------------------------------------------------------------------------------------------------------------------------------ | ---------------- |
-| handler  | Funkcja Konsumenta<[crafttweaker.api.event.entity.player.MCPlayerWakeUpEvent](/vanilla/api/event/entity/player/MCPlayerWakeUpEvent)> | Nie podano opisu |
+| Parameter | Type                                                                                                                                | Description             |
+| --------- | ----------------------------------------------------------------------------------------------------------------------------------- | ----------------------- |
+| handler   | function.Consumer<[crafttweaker.api.event.entity.player.MCPlayerWakeUpEvent](/vanilla/api/event/entity/player/MCPlayerWakeUpEvent)> | No description provided |
 
 
 
-## Metody
+## Methods
 ### getEntityPlayer
 
-Zwraca [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
+Returns [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
 
 ```zenscript
 myMCPlayerWakeUpEvent.getEntityPlayer();
@@ -29,85 +29,85 @@ myMCPlayerWakeUpEvent.getEntityPlayer();
 
 ### getPlayer
 
-Zwroty: `Gracz`
+Returns: `Player`
 
-Zwraca [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
+Returns [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
 
 ```zenscript
 myMCPlayerWakeUpEvent.getPlayer();
 ```
 
-### wynik
+### hasResult
 
-Określa, czy to zdarzenie oczekuje znaczącej wartości wyniku. Uwaga: Zdarzenia z adnotacją HasResult będą automatycznie dodane, aby zwrócić true.
+Determines if this event expects a significant result value. Note: Events with the HasResult annotation will have this method automatically added to return true.
 
-Zwraca wartość logiczną
+Returns boolean
 
 ```zenscript
 myMCPlayerWakeUpEvent.hasResult();
 ```
 
-### anulowalne
+### isCancelable
 
-Określ czy ta funkcja jest w ogóle anulowalna. Zwroty: `Jeśli dostęp do setCanceled powinien być dozwolony
- Uwaga:
- Zdarzenia z anulowaną adnotacją będą automatycznie dodawane do tej metody, aby zwrócić true.`
+Determine if this function is cancelable at all. Returns: `If access to setCanceled should be allowed
+ Note:
+ Events with the Cancelable annotation will have this method automatically added to return true.`
 
-Zwraca wartość logiczną
+Returns boolean
 
 ```zenscript
 myMCPlayerWakeUpEvent.isCancelable();
 ```
 
-### Anulowane
+### isCanceled
 
-Określ czy to wydarzenie jest anulowane i powinno przestać wykonywać. Zwroty: `Aktualnie anulowany stan`
+Determine if this event is canceled and should stop executing. Returns: `The current canceled state`
 
-Zwraca wartość logiczną
+Returns boolean
 
 ```zenscript
 myMCPlayerWakeUpEvent.isCanceled();
 ```
 
-### Anulowane
+### setCanceled
 
 ```zenscript
-myMCPlayerWakeUpEvent.setCanceled(anuluj jako boolean);
+myMCPlayerWakeUpEvent.setCanceled(cancel as boolean);
 ```
 
-| Parametr | Typ     | Opis             |
-| -------- | ------- | ---------------- |
-| anuluj   | boolean | Nie podano opisu |
+| Parameter | Type    | Description             |
+| --------- | ------- | ----------------------- |
+| cancel    | boolean | No description provided |
 
 
-### [PLACEHOLDER] shouldSetSpawn
+### shouldSetSpawn
 
-Wskazuje, czy uśpienie gracza zostało uznane za udane. W wanilii jest to używane do określenia, czy fragment spawnu ma być ustawiony na pozycję łóżka.
+Indicates if the player's sleep was considered successful. In vanilla, this is used to determine if the spawn chunk is to be set to the bed's position.
 
-Zwraca wartość logiczną
+Returns boolean
 
 ```zenscript
 myMCPlayerWakeUpEvent.shouldSetSpawn();
 ```
 
-### aktualizuj Świat
+### updateWorld
 
-Wskazuje, czy serwer powinien być powiadamiany o zmianach trybu uśpienia. Będzie to fałszywe tylko wtedy, gdy serwer zostanie już uznany za 'aktualny', ponieważ na przykład zainicjował połączenie.
+Indicates if the server should be notified of sleeping changes. This will only be false if the server is considered 'up to date' already, because, for example, it initiated the call.
 
-Zwraca wartość logiczną
+Returns boolean
 
 ```zenscript
 myMCPlayerWakeUpEvent.updateWorld();
 ```
 
-### Wybudzanie natychmiast
+### wakeImmediately
 
-Używane do animacji obudzania. Jest to fałszywe, jeśli gracz jest uważany za "śpiący", a nakładka powinna powoli zanikać.
+Used for the 'wake up animation'. This is false if the player is considered 'sleepy' and the overlay should slowly fade away.
 
-Zwraca wartość logiczną
+Returns boolean
 
 ```zenscript
-myMCPlayerWakeUpEvent.wakeNatychmiastowo();
+myMCPlayerWakeUpEvent.wakeImmediately();
 ```
 
 
