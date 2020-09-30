@@ -8,28 +8,28 @@
 crafttweaker.api.util.text.MCStyle
 ```
 
-## Конструкторы
+## Constructors
 ```zenscript
 новый crafttweaker.api.util.text.MCStyle();
 ```
 
-## Методы
-### равно
+## Methods
+### equals
 
-Тип возврата: логическое значение
+Return type: boolean
 
 ```zenscript
 myMCStyle.equals(другие как объект);
 ```
 
-| Параметр | Тип    | Описание             |
+| Параметр | Тип    | Description          |
 | -------- | ------ | -------------------- |
-| другой   | Объект | Описание отсутствует |
+| other    | Object | Описание отсутствует |
 
 
 ### getBold
 
-Тип возврата: логическое значение
+Return type: boolean
 
 ```zenscript
 myMCStyle.getBold();
@@ -45,7 +45,7 @@ myMCStyle.getFontId();
 
 ### Вставка
 
-Тип возврата: строка
+Return type: String
 
 ```zenscript
 myMCStyle.getInsertion();
@@ -53,7 +53,7 @@ myMCStyle.getInsertion();
 
 ### getItalic
 
-Тип возврата: логическое значение
+Return type: boolean
 
 ```zenscript
 myMCStyle.getItalic();
@@ -61,7 +61,7 @@ myMCStyle.getItalic();
 
 ### getObfuscated
 
-Тип возврата: логическое значение
+Return type: boolean
 
 ```zenscript
 myMCStyle.getObfuscated();
@@ -69,7 +69,7 @@ myMCStyle.getObfuscated();
 
 ### getStrikethrough
 
-Тип возврата: логическое значение
+Return type: boolean
 
 ```zenscript
 myMCStyle.getStrikethrough();
@@ -77,7 +77,7 @@ myMCStyle.getStrikethrough();
 
 ### Подчеркнуто
 
-Тип возврата: логическое значение
+Return type: boolean
 
 ```zenscript
 myMCStyle.getUnderlined();
@@ -85,7 +85,7 @@ myMCStyle.getUnderlined();
 
 ### hashCode
 
-Тип возврата: int
+Return type: int
 
 ```zenscript
 myMCStyle.hashCode();
@@ -95,7 +95,7 @@ myMCStyle.hashCode();
 
 Будь то этот стиль пуст (наследует все от родителя).
 
-Тип возврата: логическое значение
+Return type: boolean
 
 ```zenscript
 myMCStyle.isEmpty();
@@ -109,7 +109,7 @@ myMCStyle.isEmpty();
 myMCStyle.mergeStyle(style as crafttweaker.api.util.text.MCStyle);
 ```
 
-| Параметр | Тип                                                                  | Описание             |
+| Параметр | Тип                                                                  | Description          |
 | -------- | -------------------------------------------------------------------- | -------------------- |
 | стиль    | [crafttweaker.api.util.text.MCStyle](/vanilla/api/util/text/MCStyle) | Описание отсутствует |
 
@@ -122,7 +122,7 @@ myMCStyle.mergeStyle(style as crafttweaker.api.util.text.MCStyle);
 myMCStyle.setBold(boldIn как Boolean);
 ```
 
-| Параметр | Тип     | Описание             |
+| Параметр | Тип     | Description          |
 | -------- | ------- | -------------------- |
 | boldIn   | Boolean | Описание отсутствует |
 
@@ -135,7 +135,7 @@ myMCStyle.setBold(boldIn как Boolean);
 myMCStyle.setColor(форматирование как crafttweaker.api.text.TextFormatting);
 ```
 
-| Параметр       | Тип                                                                           | Описание             |
+| Параметр       | Тип                                                                           | Description          |
 | -------------- | ----------------------------------------------------------------------------- | -------------------- |
 | форматирование | [crafttweaker.api.text.TextFormatting](/crafttweaker/api/text/TextFormatting) | Описание отсутствует |
 
@@ -147,7 +147,7 @@ myMCStyle.setColor(форматирование как crafttweaker.api.text.Tex
 myMCStyle.setColor(цвет как int);
 ```
 
-| Параметр | Тип | Описание             |
+| Параметр | Тип | Description          |
 | -------- | --- | -------------------- |
 | цвет     | int | Описание отсутствует |
 
@@ -160,7 +160,7 @@ myMCStyle.setColor(цвет как int);
 myMCStyle.setFontId(расположение как crafttweaker.api.util.MCResourceLocation);
 ```
 
-| Параметр       | Тип                                                                              | Описание             |
+| Параметр       | Тип                                                                              | Description          |
 | -------------- | -------------------------------------------------------------------------------- | -------------------- |
 | местоположение | [crafttweaker.api.util.MCResourceLocation](/vanilla/api/util/MCResourceLocation) | Описание отсутствует |
 
@@ -173,7 +173,7 @@ myMCStyle.setFontId(расположение как crafttweaker.api.util.MCReso
 myMCStyle.setFormatting(форматирование как crafttweaker.api.text.TextFormatting);
 ```
 
-| Параметр       | Тип                                                                           | Описание             |
+| Параметр       | Тип                                                                           | Description          |
 | -------------- | ----------------------------------------------------------------------------- | -------------------- |
 | форматирование | [crafttweaker.api.text.TextFormatting](/crafttweaker/api/text/TextFormatting) | Описание отсутствует |
 
@@ -188,7 +188,7 @@ myMCStyle.setFormatting(форматирование как crafttweaker.api.tex
 myMCStyle.setInsertion(вставка как строка);
 ```
 
-| Параметр | Тип    | Описание             |
+| Параметр | Тип    | Description          |
 | -------- | ------ | -------------------- |
 | вставка  | String | Описание отсутствует |
 
@@ -201,7 +201,7 @@ myMCStyle.setInsertion(вставка как строка);
 myMCStyle.setItalic(курсив как Boolean);
 ```
 
-| Параметр | Тип     | Описание             |
+| Параметр | Тип     | Description          |
 | -------- | ------- | -------------------- |
 | italic   | Boolean | Описание отсутствует |
 
@@ -214,7 +214,7 @@ myMCStyle.setItalic(курсив как Boolean);
 myMCStyle.setObfuscated(обфусцирован как Boolean);
 ```
 
-| Параметр   | Тип     | Описание             |
+| Параметр   | Тип     | Description          |
 | ---------- | ------- | -------------------- |
 | obfuscated | Boolean | Описание отсутствует |
 
@@ -227,7 +227,7 @@ myMCStyle.setObfuscated(обфусцирован как Boolean);
 myMCStyle.setStrikethrough(забастовка как Boolean);
 ```
 
-| Параметр      | Тип     | Описание             |
+| Параметр      | Тип     | Description          |
 | ------------- | ------- | -------------------- |
 | strikethrough | Boolean | Описание отсутствует |
 
@@ -240,7 +240,7 @@ myMCStyle.setStrikethrough(забастовка как Boolean);
 myMCStyle.setUnderlined(подчеркивается как Boolean);
 ```
 
-| Параметр    | Тип     | Описание             |
+| Параметр    | Тип     | Description          |
 | ----------- | ------- | -------------------- |
 | подчеркнуто | Boolean | Описание отсутствует |
 
@@ -252,14 +252,14 @@ myMCStyle.setUnderlined(подчеркивается как Boolean);
 myMCStyle.setUnderlined(подчеркивается как boolean);
 ```
 
-| Параметр    | Тип     | Описание             |
+| Параметр    | Тип     | Description          |
 | ----------- | ------- | -------------------- |
 | подчеркнуто | boolean | Описание отсутствует |
 
 
 ### toString
 
-Тип возврата: строка
+Return type: String
 
 ```zenscript
 myMCStyle.toString();
