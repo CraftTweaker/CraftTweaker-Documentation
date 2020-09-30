@@ -1,4 +1,4 @@
-# Единая функция рецепта
+# RecipeFunctionSingle
 
 Этот класс был добавлен модом с mod-id `crafttweaker`. Так что если вы хотите использовать эту функцию, вам нужно установить этот мод.
 
@@ -8,22 +8,22 @@
 crafttweaker.api.recipeFunctionSingle
 ```
 
-## Функциональный интерфейс
+## Functional Interface
 
-Этот класс является функциональным интерфейсом. Это означает, что вы можете использовать нотацию lambda для создания экземпляра. Нотация лямбда выглядит так:
+This class is a functional interface. This means that you can use the lambda notation to create an instance of it. The lambda notation looks like:
 ```zenscript
 (usualOut, inputs) => <item:minecraft:dirt>
 ```
-## Методы
-### процесс
+## Methods
+### process
 
-Возвратный тип: [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
+Return type: [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
 
 ```zenscript
-myRecipeFunctionSingle.process(usualOut as crafttweaker.api.item.IItemStack, вход как crafttweaker.api.item.IItemStack);
+myRecipeFunctionSingle.process(usualOut as crafttweaker.api.item.IItemStack, inputs as crafttweaker.api.item.IItemStack);
 ```
 
-| Параметр | Тип                                                               | Описание             |
+| Параметр | Тип                                                               | Description          |
 | -------- | ----------------------------------------------------------------- | -------------------- |
 | usualOut | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | Описание отсутствует |
 | inputs   | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | Описание отсутствует |
