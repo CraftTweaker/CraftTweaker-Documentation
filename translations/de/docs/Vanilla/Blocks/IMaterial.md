@@ -1,41 +1,41 @@
 # IMaterial
 
-Ein IMaterial-Objekt repräsentiert das Material, aus dem ein Block besteht.
+An IMaterial object represents the material a block is made of.
 
 ## Dieses Paket importieren
 
-Es kann erforderlich sein, dass Sie das Paket importieren, wenn Sie irgendwelche Probleme haben. Seien Sie also besser sicher als entschuldigen und fügen Sie den Import hinzu.  
-`import craftweaker.block.IMaterial;`
+It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
+`import crafttweaker.block.IMaterial;`
 
-## ZenGetters/ZenMethoden ohne Parameter
+## ZenGetters/ZenMethods without parameters
 
-| ZenGetter           | ZenMethode          | Rückgabetyp |
-| ------------------- | ------------------- | ----------- |
-| blockhell           | blocksLight()       | bool        |
-| blocksbewegung      | blocksMovement()    | bool        |
-| gebrannt            | getCanBurn()        | bool        |
-| mobilityFlag        | getMobilityFlag()   | string      |
-| flüssig             | isLiquid()          | bool        |
-| undurchsichtig      | isOpaque()          | bool        |
-| austauschbar        | isReplaceable()     | bool        |
-| solid               | isSolid()           | bool        |
-| toolNoterforderlich | isToolNotRequired() | bool        |
-|                     | setReplaceable()    | IMaterial   |
+| ZenGetter       | ZenMethod           | Rückgabetyp |
+| --------------- | ------------------- | ----------- |
+| blocksLight     | blocksLight()       | bool        |
+| blocksMovement  | blocksMovement()    | bool        |
+| canBurn         | getCanBurn()        | bool        |
+| mobilityFlag    | getMobilityFlag()   | string      |
+| liquid          | isLiquid()          | bool        |
+| opaque          | isOpaque()          | bool        |
+| replaceable     | isReplaceable()     | bool        |
+| solid           | isSolid()           | bool        |
+| toolNotRequired | isToolNotRequired() | bool        |
+|                 | setReplaceable()    | IMaterial   |
 
-## ZenMethoden mit Parametern
+## ZenMethods with parameters
 
-### Überprüfen Sie, ob zwei IMaterials übereinstimmen
+### Check if two IMaterials match
 
-Verwendet ein IMaterial.  
-Gibt ein Bool.
+Uses an IMaterial.  
+Returns a bool.
 
 ```zenscript
-materialObj.matches(IMaterial ander);
+materialObj.matches(IMaterial other);
 ```
 
-## Vanilla Minecraft Materialien erhalten
+## Getting Vanilla Minecraft Materials
 
-Du kannst diese Methoden verwenden, um die Vanilla Minecraft Materialien zu erhalten
+You can use these methods to get the vanilla minecraft materials
 
 ```zenscript
 crafttweaker.blocks.IMaterial.air();
