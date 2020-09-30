@@ -5,16 +5,16 @@
 
 ## 例子
 
-[CraftTinfinde测试项目模式](https://github.com/jaredlll08/CraftTweaker/tree/1.12/CraftTweaker2-MC1120-Tests/src/main/java/crafttweaker/tests/wiki/ModOnlyWiki.java)
+[CraftTweaker Test Project ModOnly](https://github.com/jaredlll08/CraftTweaker/tree/1.12/CraftTweaker2-MC1120-Tests/src/main/java/crafttweaker/tests/wiki/ModOnlyWiki.java)
 
 ```java
 @ModOnly(value = "mcp")
-@ZenClass(value = "crafttweeper.tests). 只有奇数")
-@ZenRegistry
-public class ModOnlyWiki Windows
+@ZenClass(value = "crafttweaker.tests.modOnly")
+@ZenRegister
+public class ModOnlyWiki {
     @ZenMethod
-    public static invent print() Power
-        CraftTweeperAPI。 ogInfo("打印已发布");
+    public static void print() {
+        CraftTweakerAPI.logInfo("print issued");
     }
 }
 ```
