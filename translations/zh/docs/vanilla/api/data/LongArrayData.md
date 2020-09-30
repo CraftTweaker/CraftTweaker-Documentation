@@ -18,14 +18,14 @@ longArrayData实现了以下接口。 这意味着对这个接口可用的任何
 ```zenscript
 new crafttweaker.api.data.LongArrayData(internal as long[]);
 ```
-| 参数   | 类型     | 描述                      |
-| ---- | ------ | ----------------------- |
-| 内部设置 | long[] | No description provided |
+| 参数       | 类型     | 描述                      |
+| -------- | ------ | ----------------------- |
+| internal | long[] | No description provided |
 
 
 
 ## 方法
-### 添加
+### add
 
 ```zenscript
 [100000, 800000, 50000].add(value as crafttweaker.api.data.IData);
@@ -45,7 +45,7 @@ new crafttweaker.api.data.LongArrayData(internal as long[]);
 
 | 参数    | 类型                                                     | 描述                   |
 | ----- | ------------------------------------------------------ | -------------------- |
-| index | 整数                                                     | 要添加的索引。 后续项目将会上移一个索引 |
+| index | int                                                    | 要添加的索引。 后续项目将会上移一个索引 |
 | value | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | 要添加到列表的值             |
 
 
@@ -166,9 +166,9 @@ IData默认情况下是不可变的，使用它可以创建对象的正确副本
 ```
 
 
-| 参数    | 类型 | 描述               |
-| ----- | -- | ---------------- |
-| index | 整数 | The index (从0开始) |
+| 参数    | 类型  | 描述               |
+| ----- | --- | ---------------- |
+| index | int | The index (从0开始) |
 
 
 
@@ -210,7 +210,7 @@ IData默认情况下是不可变的，使用它可以创建对象的正确副本
 
 
 
-### remove #移除
+### remove
 
 移除存储在给定索引中的[craftminstrer.api.data](/vanilla/api/data/IData)。
 
@@ -224,9 +224,9 @@ IData默认情况下是不可变的，使用它可以创建对象的正确副本
 ```
 
 
-| 参数    | 类型 | 描述               |
-| ----- | -- | ---------------- |
-| index | 整数 | The index (从0开始) |
+| 参数    | 类型  | 描述               |
+| ----- | --- | ---------------- |
+| index | int | The index (从0开始) |
 
 
 
@@ -248,7 +248,7 @@ IData默认情况下是不可变的，使用它可以创建对象的正确副本
 
 | 参数    | 类型                                                     | 描述            |
 | ----- | ------------------------------------------------------ | ------------- |
-| index | 整数                                                     | 要设置的索引 (从0开始) |
+| index | int                                                    | 要设置的索引 (从0开始) |
 | value | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | 新值            |
 
 
@@ -258,7 +258,7 @@ IData默认情况下是不可变的，使用它可以创建对象的正确副本
 
 ## 参数
 
-| 名称 | 类型 | 可获得  | 可设置   |
-| -- | -- | ---- | ----- |
-| 大小 | 整数 | true | false |
+| 名称   | 类型  | 可获得  | 可设置   |
+| ---- | --- | ---- | ----- |
+| size | int | true | false |
 
