@@ -1,8 +1,8 @@
 # Kiln
 
-## Ricetta Di Base
+## Basic Recipe
 
-* Aggiunge Kiln Ricetta - gli ingressi *DEVONO* avere un blocco associato a loro.
+* Adds Kiln Recipe - inputs *MUST* have a block associated with them.
 
 ```zenscript
 mods.betterwithmods.Kiln.add(IIngredient input, IItemStack[] output);
@@ -10,55 +10,55 @@ mods.betterwithmods.Kiln.add(IIngredient input, IItemStack[] output);
 mods.betterwithmods.Kiln.add(<minecraft:fence>,[<minecraft:stick>,<minecraft:stick>]);
 ```
 
-## Rimozione tramite input
+## Removal by input
 
-* Rimuovi una ricetta in base all'ingrediente in ingresso
+* Remove a recipe based on the input ingredient
 
 ```zenscript
 mods.betterwithmods.Kiln.remove(IIngredient input);
 ```
 
-## Rimozione tramite output
+## Removal by output
 
-* Rimuovi una ricetta in base all'output
+* Remove a recipe based on the output
 
 ```zenscript
 mods.betterwithmods.Kiln.remove(IItemStack[] outputs);
 ```
 
-## Rimuovi tutto
+## Remove all
 
-* Rimuovi tutte le ricette
+* Remove all recipes
 
 ```zenscript
 mods.betterwithmods.Kiln.removeAll();
 ```
 
-## Costruttore
+## Builder
 
-Il Kiln ha un costruttore di ricette che consente un controllo più preciso sulle ricette. Tutti i metodi precedenti sono semplicemente tagli corti per usare il costruttore.
+The Kiln has a recipe builder that allows more precise control over the recipes. All previous methods are simply short cuts to using the builder.
 
-* Per creare un nuovo costruttore Kiln. `mods.betterwithmods.Kiln.builder()`
+* To create a new Kiln builder. `mods.betterwithmods.Kiln.builder()`
 
-* Metodi per forni
+* Kiln methods
      
-     * Imposta gli input e gli output della ricetta  
+     * Sets up the inputs and outputs of the recipe  
               zenscript
               buildRecipe(IIngredient[] inputs, IItemStack[] outputs)
      
-     * Impostare i requisiti di calore della ricetta. Il calore è usato per controllare se la ricetta può essere fatta in un calderone soffiato o non soffocato. Calore non atteso = 1, Calore atteso = 2. È possibile aggiungere fonti di calore personalizzate e anche livelli di calore personalizzati utilizzando il [Registro di calore](/Mods/Modtweaker/BetterWithMods/HeatRegistry/).  
+     * Set the Heat requirements of the recipe. Heat is used to check if the recipe can be made in a stoked or unstoked cauldron. Unstoked heat = 1, Stoked heat = 2. You can add custom heat sources, and even custom heat levels using the [Heat Registry](/Mods/Modtweaker/BetterWithMods/HeatRegistry/).  
               zenscript
-              setHeat(int calore)
+              setHeat(int heat)
      
-     * Imposta la ricetta per ignorare il valore del calore e creare comunque  
+     * Set the recipe to ignore the heat value and craft anyways  
               zenscript
               setIgnoreHeat(boolean ignoreHeat)
      
-     * Finalizzare la ricetta e aggiungerla al gioco  
+     * Finalize the recipe and add it to the game  
               zenscript
               build()
 
-### Esempio di utilizzo del costruttore
+### Example builder usage
 
 ```zenscript
 mods.betterwithmods.Kiln.builder()
@@ -67,11 +67,11 @@ mods.betterwithmods.Kiln.builder()
 .build();
 ```
 
-## Blocco Struttura
+## Structure Block
 
-Il Kiln è un multiblock basato sul blocco di cui è fatto; Questo consente di registrare un blocco che può essere utilizzato per creare la struttura.
+The Kiln is a multiblock based on the block it is made of; This allows registering a block that can be used to create the structure.
 
-L'input DEVE essere un blocco **
+Input MUST be a *Block*
 
 ```zenscript
    mods.betterwithmods.Kiln.registerBlock(IItemStack input);
