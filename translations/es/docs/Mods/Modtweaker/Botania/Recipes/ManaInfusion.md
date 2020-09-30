@@ -1,32 +1,32 @@
 # Mana Infusion
 
-El paquete ManaInfusion se utiliza para añadir o quitar recetas para/de la Botania ManaPool.
+The ManaInfusion package is used for adding or removing recipes to/from the Botania ManaPool.
 
-## Llamando
+## Calling
 
-Puedes llamar al paquete ManaInfusion usando `mods.botania.ManaInfusion`
+You can call the ManaInfusion package using `mods.botania.ManaInfusion`
 
-## Encontrar todas las recetas registradas
+## Find all registered Recipes
 
-Puedes encontrar todas las recetas de ManaInfusion registradas usando [`/ct botania infusions`](/Mods/Modtweaker/Botania/Commands/).
+You can find all registered ManaInfusion recipes using [`/ct botania infusions`](/Mods/Modtweaker/Botania/Commands/).
 
-## Añadir receta
+## Recipe addition
 
 ```zenscript
-//mods.botania.ManaInfusion.addInfusion(salida ItemStack, entrada IIngredient, maná inte);
+//mods.botania.ManaInfusion.addInfusion(IItemStack output, IIngredient input, int mana);
 mods.botania.ManaInfusion.addInfusion(<minecraft:grass>, <ore:stone>, 1000);
 
-//mods.botania.ManaInfusion.addAlchemy(salida ItemStack, entrada IIngredient, maná inte);
-mods. otania.ManaInfusion.addAlchemy(<minecraft:gold_ore>, <ore:stone>, 5000);
+//mods.botania.ManaInfusion.addAlchemy(IItemStack output, IIngredient input, int mana);
+mods.botania.ManaInfusion.addAlchemy(<minecraft:gold_ore>, <ore:stone>, 5000);
 
-//mods.botania.ManaInfusion.addConjuration(ItemStack output, IIngredient input , int mana);
+//mods.botania.ManaInfusion.addConjuration(IItemStack output, IIngredient input, int mana);
 mods.botania.ManaInfusion.addConjuration(<minecraft:stone>, <minecraft:stone>, 1000);
 ```
 
-## Eliminación de receta
+## Recipe removal
 
 ```zenscript
-//mods.botania.ManaInfusion.removeRecipe(salida IIngredient);
+//mods.botania.ManaInfusion.removeRecipe(IIngredient output);
 mods.botania.ManaInfusion.removeRecipe(<minecraft:leather>);
 mods.botania.ManaInfusion.removeRecipe(<minecraft:redstone> * 2);
 ```
