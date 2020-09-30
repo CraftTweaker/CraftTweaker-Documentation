@@ -1,28 +1,28 @@
-# Zaklęcie
+# IEnchantment
 
-IEnchantment zasadniczo jest [IEnchantmentDefinition](/Vanilla/Enchantments/IEnchantmentDefinition/) i poziomem zaklęcia.
+An IEnchantment essentially is an [IEnchantmentDefinition](/Vanilla/Enchantments/IEnchantmentDefinition/) and an enchantment level.
 
-## Importowanie pakietu
+## Importing the package
 
-Może być wymagane zaimportowanie pakietu, jeśli napotkasz jakiekolwiek problemy (takie jak przesyłanie [Array](/AdvancedFunctions/Arrays_and_Loops/)), tak aby były bezpieczne niż przepraszamy i dodaj import.  
-`zaimportuj crafttweaker.enchantments.IZaklęcie;`
+It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
+`import crafttweaker.enchantments.IEnchantment;`
 
 ## ZenGetters/ZenSetters
 
-| ZenGetter          | ZenSetter          | Typ                                                                    |
-| ------------------ | ------------------ | ---------------------------------------------------------------------- |
-| definicja          |                    | [IEnchantmentDefinicja](/Vanilla/Enchantments/IEnchantmentDefinition/) |
-| poziom             |                    | odcień                                                                 |
-| nazwa wyświetlacza | nazwa wyświetlacza | ciąg znaków                                                            |
+| ZenGetter   | ZenSetter   | Type                                                                    |
+| ----------- | ----------- | ----------------------------------------------------------------------- |
+| definition  |             | [IEnchantmentDefinition](/Vanilla/Enchantments/IEnchantmentDefinition/) |
+| level       |             | int                                                                     |
+| displayName | displayName | string                                                                  |
 
-## Metody ZenMethods
+## ZenMethods
 
-### Pobierz zaklęcie jako NBT
+### Retrieve the Enchantment as NBT
 
-Możesz zebrać znacznik NBT zaklęcia.  
-Możesz rzucić go jako [IData](/Vanilla/Data/IData/) lub użyć metody:
+You might want to get the Enchantment's NBT-Tag.  
+You can either cast it as [IData](/Vanilla/Data/IData/) or use the method:
 
 ```zenscript
 ench.makeTag();
-zakoduj się jako crafttweaker.data.IData,
+ench as crafttweaker.data.IData;
 ```
