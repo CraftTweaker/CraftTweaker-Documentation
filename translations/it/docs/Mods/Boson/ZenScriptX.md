@@ -1,15 +1,15 @@
-# Il Progetto ZenScriptX
+# The ZenScriptX Project
 
-Il progetto ZenScriptX è un progetto non ufficiale che Boson ha iniziato e che mira ad ampliare le possibilità del linguaggio ZenScript, l'aggiunta di elementi come la valutazione pigra di cicli, Riflessione e interfacce funzionali, in modo che funzioni possono essere memorizzate in una variabile.
+The ZenScriptX Project is an unofficial project that Boson started and that aims to expand the possibilities of the ZenScript language, adding elements such as lazy evaluation of loops, Reflection, and functional interfaces, so that functions can be stored into a variable.
 
-L'utilizzo di queste funzionalità richiede una maggiore conoscenza dei paradigmi di programmazione più avanzati, come la programmazione funzionale e una corretta rappresentazione di programmazione orientata agli oggetti. Mentre è probabile che questo impedirà molto la demografica di ZenScript di fare effettivamente uso di queste funzionalità, questo porterà anche a una migliore qualità del codice per le persone con conoscenze di scripting più avanzate.
+The usage of this features requires stronger knowledge of more advanced programming paradigms, such as Functional Programming and proper Object Oriented Programming representation. While it's likely that this will prevent a lot of the demographic of ZenScript from actually making use of these functionalities, this will also lead to better quality code for people with more advanced scripting knowledge.
 
-Questo progetto è ancora in corso, ma a partire da 1. 5, è molto probabile che sarà spostato nel suo modulo ZenCode separato, per facilità di sviluppo e dipendenza.
+This project is still ongoing, but as of 1.15, it is highly likely it will be moved in its own separate ZenCode module, for ease of development and dependency.
 
-A partire da ora, il Progetto ZenScriptX è responsbile per l'aggiunta del seguente insieme di funzionalità:
+As of now, the ZenScriptX Project is responsbile for adding the following set of functionalities:
 
-- [Direttiva Sperimentale Sul Preprocessore Delle Bandiere](/Mods/Boson/Preprocessor/Exp/)
-- [Interfacce Funzionali](/Mods/Boson/Functions/Concept/)
-- [Funzioni Matematiche](/Mods/Boson/Math/Concept/)
-- [Sequenze](/Mods/Boson/Sequences/Concept/)
-- [Riflessione](/Mods/Boson/Reflection/Concept/)
+- [Experimental Flags Preprocessor Directive](/Mods/Boson/Preprocessor/Exp/)
+- [Functional Interfaces](/Mods/Boson/Functions/Concept/)
+- [Math Functions](/Mods/Boson/Math/Concept/)
+- [Sequences](/Mods/Boson/Sequences/Concept/)
+- [Reflection](/Mods/Boson/Reflection/Concept/)
