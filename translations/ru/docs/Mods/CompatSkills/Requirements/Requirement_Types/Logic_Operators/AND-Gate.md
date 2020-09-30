@@ -1,15 +1,15 @@
-# И Оператор
+# AND Operator
 
-**И** ворота комбинируют два входа и возвращает `TRUE` только если оба входа также `TRUE`.
+An **AND** gate combines two inputs and returns `TRUE` only if both inputs are also `TRUE`.
 
-| Input 1 | Input 2 | Вывод |
-| ------- | ------- | -----:|
-| 0       | 0       |     0 |
-| 0       | 1       |     0 |
-| 1       | 0       |     0 |
-| 1       | 1       |     1 |
+| Input 1 | Input 2 | Output |
+| ------- | ------- | ------:|
+| 0       | 0       |      0 |
+| 0       | 1       |      0 |
+| 1       | 0       |      0 |
+| 1       | 1       |      1 |
 
-Требование AND в отличие от других логических требований в основном полезно для вложенных логических требований, как блокирование элемента или другого объекта с множеством требований требует соблюдения всех данных требований. Это то же самое, что и функциональность ИД, поэтому следует по возможности использовать , так как это сделает всплывающие подсказки более удобными для чтения.
+The AND requirement unlike the other logic requirements is mainly useful for nested logic requirements, as locking an item or other object with multiple requirements requires all of the given requirements to be met. This is the same as the AND functionality, so should be used when possible, as it will make the tooltip be formatted in an easier to read manner.
 
-    Пустой пример:
+    Empty Example:
     AND|[]~[]
