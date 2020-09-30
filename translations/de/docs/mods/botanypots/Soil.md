@@ -1,133 +1,133 @@
 # Soils
 
-Klassenpfad: `mods.botanypots.Boden`
+Class path: `mods.botanypots.Soil`
 
-## Benutzen
+## Use
 
-Importieren Sie die Klasse mit `importieren Sie mods.botanypots.Soil;` am Anfang Ihres Skripts.
+To use, import the class with `import mods.botanypots.Soil;` at the beginning of your script.
 
-## Erstelle neue Böden
+## Creating New Soils
 
-`Boden.create(id, ingredient, displayState, tickRate, Kategorien);`
+`Soil.create(id, ingredient, displayState, tickRate, categories);`
 
-- `id` &lt;string> Die id des neuen Bodens. Dies ist eine Namensraum-id und muss im gültigen `Namensraum:path` Format sein.
-- `Zutat` <[Ingredient](/vanilla/api/items/IIngredient)> Die Zutat, die verwendet wird, um zu bestimmen, welche Elemente/Blöcke verwendet werden, um den Boden in einen Topf zu legen.
-- `Anzeigezustand` <[MCBlockState](/vanilla/api/blocks/MCBlockState)> Der Blockzustand, der für den Boden im Topf angezeigt werden soll.
-- `tickRate` &lt;int> Der Tick-Kurs für den Boden.
-- `Kategorien` &lt;string[]> Ein Array von Kategorien, die mit dem neuen Boden verknüpft sind.
+- `id` &lt;string> The id of the new soil. This is a namespaced id an must be in the valid `namespace:path` format.
+- `ingredient` <[IIngredient](/vanilla/api/items/IIngredient)> The ingredient used to determine which items/blocks are used to put the soil in a pot.
+- `displayState` <[MCBlockState](/vanilla/api/blocks/MCBlockState)> The block state to display for the soil in the pot.
+- `tickRate` &lt;int> The tick rate for the soil.
+- `categories` &lt;string[]> An array of categories associated with the new soil.
 
-Erstellt einen neuen Bodeneingang, den Spieler im Botanischen Topf verwenden können.
+Creates a new soil entry that players can use in the botany pot.
 
 ```zenscript
 Soil.create("examplepack:rock", <item:minecraft:stone>, <blockstate:minecraft:stone>, 100, ["rocky"]);
 ```
 
-## Eine Erde entfernen
+## Removing A Soil
 
-`Boden.remove(id);`
+`Soil.remove(id);`
 
-- `id` &lt;string> Die Id des zu entfernenden Bodens. Dies ist eine Namensraum-id und muss im gültigen `Namensraum:path` Format sein.
+- `id` &lt;string> The id of the soil to remove. This is a namespaced id an must be in the valid `namespace:path` format.
 
-Entfernt einen Boden aus den Spieldaten.
-
-```zenscript
-Boden.remove("botanypots:Boden/podzol");
-```
-
-## Änderung der Boden-Tick-Rate
-
-`Boden.setTicks(id, tickRate);`
-
-- `id` &lt;string> Die id des Bodens. Dies ist eine Namensraum-id und muss im gültigen `Namensraum:path` Format sein.
-- `tickRate` &lt;int> Der neue Tick-Kurs für den Boden.
-
-Ändert die Tickrate eines gegebenen Bodens.
+Removes a soil from the game's data.
 
 ```zenscript
-Boden.setTicks("botanypots:Boden/Gras", 1300);
+Soil.remove("botanypots:soil/podzol");
 ```
 
-## Bodenzufuhr ändern
+## Changing Soil Tick Rate
 
-`Boden.setIngredient(id, Zutat);`
+`Soil.setTicks(id, tickRate);`
 
-- `id` &lt;string> Die id des Bodens. Dies ist eine Namensraum-id und muss im gültigen `Namensraum:path` Format sein.
-- `Zutat` <[Ingredient](/vanilla/api/items/IIngredient)> Die Zutat, die verwendet wird, um zu bestimmen, welche Elemente/Blöcke verwendet werden, um den Boden in einen Topf zu legen.
+- `id` &lt;string> The id of the soil. This is a namespaced id an must be in the valid `namespace:path` format.
+- `tickRate` &lt;int> The new tick rate for the soil.
 
-Ändert die Gegenstände, die verwendet werden, um den Boden in den Botanischen Topf zu legen.
+Changes the tick rate of a given soil.
 
 ```zenscript
-Soil.setIngredient("botanypots:Boden/Soul_sand", <item:minecraft:sand>);
+Soil.setTicks("botanypots:soil/grass", 1300);
 ```
 
-## Bodenanzeige ändern
+## Changing Soil Ingredient
 
-`Boden.setDisplayState(id, displayState);`
+`Soil.setIngredient(id, ingredient);`
 
-- `id` &lt;string> Die id des Bodens. Dies ist eine Namensraum-id und muss im gültigen `Namensraum:path` Format sein.
-- `Anzeigezustand` <[MCBlockState](/vanilla/api/blocks/MCBlockState)> Der Blockzustand, der für den Boden im Topf angezeigt werden soll.
+- `id` &lt;string> The id of the soil. This is a namespaced id an must be in the valid `namespace:path` format.
+- `ingredient` <[IIngredient](/vanilla/api/items/IIngredient)> The ingredient used to determine which items/blocks are used to put the soil in a pot.
 
-Ändert den angezeigten Block für den Boden.
+Changes the items used to put the soil into the botany pot.
 
 ```zenscript
-Soil.setDisplayState("botanypots:Boden/Schmutz", <blockstate:minecraft:snow>);
+Soil.setIngredient("botanypots:soil/soul_sand", <item:minecraft:sand>);
 ```
 
-## Bodenkategorien ändern
+## Changing Soil Display
 
-Ändert die mit dem Boden verbundenen Kategorien. Diese werden verwendet, um Pflanzen mit gültigen Böden abzugleichen.
+`Soil.setDisplayState(id, displayState);`
 
-### Kategorie zu Boden hinzufügen
+- `id` &lt;string> The id of the soil. This is a namespaced id an must be in the valid `namespace:path` format.
+- `displayState` <[MCBlockState](/vanilla/api/blocks/MCBlockState)> The block state to display for the soil in the pot.
+
+Changes the block displayed for the soil.
+
+```zenscript
+Soil.setDisplayState("botanypots:soil/dirt", <blockstate:minecraft:snow>);
+```
+
+## Changing Soil Categories
+
+Changes the categories associated with the soil. These are used to match crops to valid soils.
+
+### Add a Category to a Soil
 
 `Soil.addCategory(id, categoriesToAdd);`
 
-- `id` &lt;string> Die id des Bodens. Dies ist eine Namensraum-id und muss im gültigen `Namensraum:path` Format sein.
-- `categoriesToAdd` &lt;string[]> Ein Array von Kategorien, die dem Boden zugeordnet werden sollen.
+- `id` &lt;string> The id of the soil. This is a namespaced id an must be in the valid `namespace:path` format.
+- `categoriesToAdd` &lt;string[]> An array of categories to associate with the soil.
 
 ```zenscript
-Boden.addCategory("botanypots:Boden/soul_sand", ["Nether"]);
+Soil.addCategory("botanypots:soil/soul_sand", ["nether"]);
 ```
 
-### Entferne eine Kategorie vom Boden
+### Remove a Category From a Soil
 
 `Soil.removeCategory(id, categoriesToRemove);`
 
-- `id` &lt;string> Die id des Bodens. Dies ist eine Namensraum-id und muss im gültigen `Namensraum:path` Format sein.
-- `categoriesToRemove` &lt;string[]> Ein Array von Kategorien, die mit dem Boden zu trennen sind.
+- `id` &lt;string> The id of the soil. This is a namespaced id an must be in the valid `namespace:path` format.
+- `categoriesToRemove` &lt;string[]> An array of categories to dissociate with the soil.
 
 ```zenscript
-Boden.removeCategory("botanypots:Boden/soul_sand", ["soul_sand"]);
+Soil.removeCategory("botanypots:soil/soul_sand", ["soul_sand"]);
 ```
 
-### Alle Kategorien von Boden löschen
+### Clear All Categories From a Soil
 
-`Boden.clearCategories(id);`
+`Soil.clearCategories(id);`
 
-- `id` &lt;string> Die id des Bodens. Dies ist eine Namensraum-id und muss im gültigen `Namensraum:path` Format sein.
+- `id` &lt;string> The id of the soil. This is a namespaced id an must be in the valid `namespace:path` format.
 
 ```zenscript
-Boden.clearCategories("botanypots:Boden/Ackerland");
+Soil.clearCategories("botanypots:soil/farmland");
 ```
 
-## Alle Ids abrufen
+## Getting All Ids
 
-`Boden.getAllIds();`
+`Soil.getAllIds();`
 
-- Gibt folgende Werte zurück: &lt;string[]> Ein Array aller bekannten Boden-Ids zu der Zeit, als diese ran.
+- Returns: &lt;string[]> An array of all known soil ids at the time this is ran.
 
-Dadurch erhalten Sie ein Array aller bekannten Bodentypen.
+This will give you an array of all the known soil ids at the time.
 
 ```zenscript
-// Logge alle IDs in der crafttweaker.log Datei
-für soilId in Soil.getAllIds() {
+// Log all ids to the crafttweaker.log file
+for soilId in Soil.getAllIds() {
     println(soilId);
 }
 ```
 
-## Alle Böden entfernen
+## Removing All Soil
 
-Dadurch werden alle derzeit registrierten Böden vollständig entfernt. Dies ist nützlich, wenn Sie alle Daten von Grund auf durch Skripte neu erstellen möchten.
+This will completely remove all the soils currently registered. This is useful for if you want to recreate all the data from scratch through scripts.
 
 ```zenscript
-Boden.removeAll();
+Soil.removeAll();
 ```
