@@ -1,8 +1,8 @@
-# 玩家拾取实体
+# PlayerPickupEntity
 
-每当玩家与某个实体发生互动时都会触发玩家PickupEnty 事件。
+The PlayerPickupEntity Event is fired whenever a player interacts with an Entity.
 
-## 事件类
+## Event Class
 
 You will need to cast the event in the function header as this class:  
 `crafttweaker.event.PlayerPickupEvent`  
@@ -10,16 +10,16 @@ You can, of course, also [import](/AdvancedFunctions/Import/) the class before a
 
 ## ZenGetters
 
-以下信息可以从事件中检索：
+The following information can be retrieved from the event:
 
-| ZenGetter | 返回值类型                                 |
-| --------- | ------------------------------------- |
-| `已取消`     | boolean                               |
-| `已处理`     | boolean                               |
-| `播放器`     | [IPlayer](/Vanilla/Players/IPlayer/)  |
-| `实体`      | [IEntity](/Vanilla/Entities/IEntity/) |
+| ZenGetter   | 返回值类型                                 |
+| ----------- | ------------------------------------- |
+| `canceled`  | boolean                               |
+| `processed` | boolean                               |
+| `player`    | [IPlayer](/Vanilla/Players/IPlayer/)  |
+| `entity`    | [IEntity](/Vanilla/Entities/IEntity/) |
 
 ## ZenMethods
 
-- `event.cancel()` 将事件设置为取消。
-- `event.process()` 设置事件已处理.
+- `event.cancel()` sets the event as cancelled.
+- `event.process()` sets the event as processed.
