@@ -2,7 +2,7 @@
 
 Questa classe è stata aggiunta da una mod con ID `crafttweaker`. Perciò, è necessario avere questa mod installata per poter utilizzare questa funzione.
 
-## Importare la classe
+## Importing the class
 Potrebbe essere necessario importare il pacchetto, se si incontrano dei problemi (come castare un vettore), quindi meglio essere sicuri e aggiungere la direttiva di importazione.
 ```zenscript
 crafttweaker.api.commands.custom.MCArgumentCommandNode
@@ -12,7 +12,7 @@ crafttweaker.api.commands.custom.MCArgumentCommandNode
 MCArgumentCommandNode implementa le seguenti interfacce. Ciò significa che ogni metodo presente nell'interfaccia può essere usato anche per questa classe.
 - [crafttweaker.api.commands.custom.MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)
 
-## Metodi
+## Methods
 ### createBuilder
 
 Tipo restituito: [crafttweaker.api.commands.custom.MCRequiredArgumentBuilder](/vanilla/api/commands/custom/MCRequiredArgumentBuilder)
@@ -21,17 +21,17 @@ Tipo restituito: [crafttweaker.api.commands.custom.MCRequiredArgumentBuilder](/v
 myMCArgumentCommandNode.createBuilder();
 ```
 
-### uguale
+### equals
 
-Tipo restituito: booleano
+Return type: boolean
 
 ```zenscript
 myMCArgumentCommandNode.equals(o come oggetto);
 ```
 
-| Parametro | Tipo    | Descrizione                 |
-| --------- | ------- | --------------------------- |
-| o         | Oggetto | Nessuna descrizione fornita |
+| Parameter | Type   | Description                 |
+| --------- | ------ | --------------------------- |
+| o         | Object | Nessuna descrizione fornita |
 
 
 ### getCustomSuggestions
@@ -44,7 +44,7 @@ myMCArgumentCommandNode.getCustomSuggestions();
 
 ### hashCode
 
-Tipo di restituzione: int
+Return type: int
 
 ```zenscript
 myMCArgumentCommandNode.hashCode();
@@ -52,27 +52,27 @@ myMCArgumentCommandNode.hashCode();
 
 ### toString
 
-Tipo di ritorno: Stringa
+Return type: String
 
 ```zenscript
 myMCArgumentCommandNode.toString();
 ```
 
 
-## Operatori
-### EQUALI
+## Operators
+### EQUALS
 
 ```zenscript
 myMCArgumentCommandNode == o come oggetto
 ```
 
-| Parametro | Tipo    | Descrizione                 |
-| --------- | ------- | --------------------------- |
-| o         | Oggetto | Nessuna descrizione fornita |
+| Parameter | Type   | Description                 |
+| --------- | ------ | --------------------------- |
+| o         | Object | Nessuna descrizione fornita |
 
 ## Caster
 
 | Tipo Risultato | Implicito |
 | -------------- | --------- |
-| Stringa        | vero      |
+| String         | true      |
 
