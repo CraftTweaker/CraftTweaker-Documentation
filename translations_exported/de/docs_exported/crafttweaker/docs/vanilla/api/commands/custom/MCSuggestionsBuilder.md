@@ -1,15 +1,15 @@
 # MCSuggestions-Builder
 
-Diese Klasse wurde von einer Mod mit mod-id `crafttweaker` hinzugefügt. Wenn Sie diese Funktion nutzen möchten, müssen Sie diese Mod installiert haben.
+This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
 
 ## Diese Klasse importieren
-Es kann erforderlich sein, dass Sie das Paket importieren, wenn Sie irgendwelche Probleme haben (wie zum Beispiel ein Array zu bearbeiten), also besser sicher sein als bedauern und fügen Sie den Import.
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
 ```zenscript
 crafttweaker.api.commands.custom.MCSuggestionsBuilder
 ```
 
 ## Methoden
-### hinzufügen
+### add
 
 Rückgabetyp: [craftweaker.api.commands.custom.MCSuggestionsBuilder](/vanilla/api/commands/custom/MCSuggestionsBuilder)
 
@@ -17,12 +17,12 @@ Rückgabetyp: [craftweaker.api.commands.custom.MCSuggestionsBuilder](/vanilla/ap
 myMCSuggestionsBuilder.add(andere als crafttweaker.api.commands.custom.MCSuggestionsBuilder);
 ```
 
-| Parameter | Type                                                                                                       | Beschreibung                 |
-| --------- | ---------------------------------------------------------------------------------------------------------- | ---------------------------- |
-| andere    | [crafttweaker.api.commands.custom.MCSuggestionsBuilder](/vanilla/api/commands/custom/MCSuggestionsBuilder) | Keine Beschreibung angegeben |
+| Parameter | Type                                                                                                       | Beschreibung            |
+| --------- | ---------------------------------------------------------------------------------------------------------- | ----------------------- |
+| other     | [crafttweaker.api.commands.custom.MCSuggestionsBuilder](/vanilla/api/commands/custom/MCSuggestionsBuilder) | No description provided |
 
 
-### bauen
+### build
 
 Rückgabetyp: [craftweaker.api.commands.custom.MCSuggestions](/vanilla/api/commands/custom/MCSuggestions)
 
@@ -38,27 +38,27 @@ Rückgabetyp: [craftweaker.api.commands.custom.MCSuggestionsBuilder](/vanilla/ap
 myMCSuggestionsBuilder.createOffset(Start als int);
 ```
 
-| Parameter | Type | Beschreibung                 |
-| --------- | ---- | ---------------------------- |
-| anfangen  | int  | Keine Beschreibung angegeben |
+| Parameter | Type | Beschreibung            |
+| --------- | ---- | ----------------------- |
+| anfangen  | int  | No description provided |
 
 
-### gleich
+### equals
 
-Rückgabetyp: boolesch
+Return type: boolean
 
 ```zenscript
 myMCSuggestionsBuilder.equals(o als Objekt);
 ```
 
-| Parameter | Type   | Beschreibung                 |
-| --------- | ------ | ---------------------------- |
-| o         | Objekt | Keine Beschreibung angegeben |
+| Parameter | Type   | Beschreibung            |
+| --------- | ------ | ----------------------- |
+| o         | Object | No description provided |
 
 
 ### getInput
 
-Rückgabetyp: String
+Return type: String
 
 ```zenscript
 myMCSuggestionsBuilder.getInput();
@@ -66,7 +66,7 @@ myMCSuggestionsBuilder.getInput();
 
 ### Verbleibend
 
-Rückgabetyp: String
+Return type: String
 
 ```zenscript
 myMCSuggestionsBuilder.getVerbleibend();
@@ -74,7 +74,7 @@ myMCSuggestionsBuilder.getVerbleibend();
 
 ### getStart
 
-Rückgabetyp: int
+Return type: int
 
 ```zenscript
 myMCSuggestionsBuilder.getStart();
@@ -82,7 +82,7 @@ myMCSuggestionsBuilder.getStart();
 
 ### hashCode
 
-Rückgabetyp: int
+Return type: int
 
 ```zenscript
 myMCSuggestionsBuilder.hashCode();
@@ -104,9 +104,9 @@ Rückgabetyp: [craftweaker.api.commands.custom.MCSuggestionsBuilder](/vanilla/ap
 myMCSuggestionsBuilder.suggest(Text als String);
 ```
 
-| Parameter | Type   | Beschreibung                 |
-| --------- | ------ | ---------------------------- |
-| text      | String | Keine Beschreibung angegeben |
+| Parameter | Type   | Beschreibung            |
+| --------- | ------ | ----------------------- |
+| text      | String | No description provided |
 
 
 
@@ -116,9 +116,9 @@ Rückgabetyp: [craftweaker.api.commands.custom.MCSuggestionsBuilder](/vanilla/ap
 myMCSuggestionsBuilder.suggest(Wert als int);
 ```
 
-| Parameter | Type | Beschreibung                 |
-| --------- | ---- | ---------------------------- |
-| wert      | int  | Keine Beschreibung angegeben |
+| Parameter | Type | Beschreibung            |
+| --------- | ---- | ----------------------- |
+| value     | int  | No description provided |
 
 
 
@@ -128,10 +128,10 @@ Rückgabetyp: [craftweaker.api.commands.custom.MCSuggestionsBuilder](/vanilla/ap
 myMCSuggestionsBuilder.suggest(Text als String, Tooltip als String);
 ```
 
-| Parameter | Type   | Beschreibung                 |
-| --------- | ------ | ---------------------------- |
-| text      | String | Keine Beschreibung angegeben |
-| tooltip   | String | Keine Beschreibung angegeben |
+| Parameter | Type   | Beschreibung            |
+| --------- | ------ | ----------------------- |
+| text      | String | No description provided |
+| tooltip   | String | No description provided |
 
 
 
@@ -141,15 +141,15 @@ Rückgabetyp: [craftweaker.api.commands.custom.MCSuggestionsBuilder](/vanilla/ap
 myMCSuggestionsBuilder.suggest(Wert als int, Tooltip als String);
 ```
 
-| Parameter | Type   | Beschreibung                 |
-| --------- | ------ | ---------------------------- |
-| wert      | int    | Keine Beschreibung angegeben |
-| tooltip   | String | Keine Beschreibung angegeben |
+| Parameter | Type   | Beschreibung            |
+| --------- | ------ | ----------------------- |
+| value     | int    | No description provided |
+| tooltip   | String | No description provided |
 
 
 ### toString
 
-Rückgabetyp: String
+Return type: String
 
 ```zenscript
 myMCSuggestionsBuilder.toString();
@@ -163,13 +163,13 @@ myMCSuggestionsBuilder.toString();
 myMCSuggestionsBuilder == o als Objekt
 ```
 
-| Parameter | Type   | Beschreibung                 |
-| --------- | ------ | ---------------------------- |
-| o         | Objekt | Keine Beschreibung angegeben |
+| Parameter | Type   | Beschreibung            |
+| --------- | ------ | ----------------------- |
+| o         | Object | No description provided |
 
-## Zauberer
+## Casters
 
-| Ergebnis-Typ | Ist Implizit |
-| ------------ | ------------ |
-| String       | true         |
+| Result type | Is Implicit |
+| ----------- | ----------- |
+| String      | true        |
 
