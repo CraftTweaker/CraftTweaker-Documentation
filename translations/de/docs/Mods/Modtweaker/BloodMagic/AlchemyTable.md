@@ -1,39 +1,39 @@
-# Alchemie-Tisch
+# Alchemy Table
 
-## Paket
+## Package
 
 `mods.bloodmagic.AlchemyTable`
 
 ## Addition
 
 ```zenscript
-inputs hat eine maximale Größe von 6
-//mods.bloodmagic.AlchemyTable.addRecipe(IItemStack Output, IItemStack[] Inputs, int syphon, int ticks, int minTier);
-mods. loodmagic.AlchemyTable.addRecipe(<minecraft:diamond>, [<minecraft:dirt>, <minecraft:dirt>, <minecraft:dirt>, <minecraft:dirt>, <minecraft:dirt>, <minecraft:dirt>], 20,10,0);
+inputs has a max size of 6
+//mods.bloodmagic.AlchemyTable.addRecipe(IItemStack output, IItemStack[] inputs, int syphon, int ticks, int minTier);
+mods.bloodmagic.AlchemyTable.addRecipe(<minecraft:diamond>, [<minecraft:dirt>, <minecraft:dirt>, <minecraft:dirt>, <minecraft:dirt>, <minecraft:dirt>, <minecraft:dirt>], 20,10,0);
 ```
 
-## Trank Zusatz
+## Potion addition
 
 ```zenscript
-inputs haben eine maximale Größe von 5 für Katalysatoren (jedes Trank Container Objekt wird verworfen)
-var pot = <potion:minecraft:strength>. akePotionEffect(6000, 1);
-//mods.bloodmagic.AlchemyTable. ddPotionRecipe(IItemStack[] Eingänge, IPotionEffect Effects, int syphon, int ticks, int minTier)
-mods.bloodmagic.AlchemyTable.addPotionRecipe([<bloodmagic:potion_flask>, <minecraft:carrot>,<minecraft:potato>], Pot, 20, 10, 0);
+inputs has a max size of 5 to account for catalysts (any potion container object is discarded)
+var pot = <potion:minecraft:strength>.makePotionEffect(6000, 1);
+//mods.bloodmagic.AlchemyTable.addPotionRecipe(IItemStack[] inputs, IPotionEffect effects, int syphon, int ticks, int minTier)
+mods.bloodmagic.AlchemyTable.addPotionRecipe([<bloodmagic:potion_flask>, <minecraft:carrot>,<minecraft:potato>], pot, 20, 10, 0);
 ```
 
-## Entfernen
+## Removal
 
 ```zenscript
-inputs hat eine maximale Größe von 6
-//mods.bloodmagic.AlchemyTable.removeRecipe(IItemStack[] Eingabe);
+inputs has a max size of 6
+//mods.bloodmagic.AlchemyTable.removeRecipe(IItemStack[] inputs);
 mods.bloodmagic.AlchemyTable.removeRecipe([<minecraft:carrot>,<minecraft:carrot>,<minecraft:carrot>,<minecraft:dye:15>]);
 ```
 
-## Trank entfernen
+## Potion removal
 
-Jede Entfernung wird als möglicher Trank betrachtet, wenn sie nicht mit einem Rezept im Register der API übereinstimmt.
+Any removal is considered as a potential potion if it does not match a recipe in the API's registry.
 
 ```zenscript
-//mods.bloodMagic.AlchemyTable.removeRecipe(IItemStack[] Eingänge);
+//mods.bloodMagic.AlchemyTable.removeRecipe(IItemStack[] inputs);
 mods.bloodmagic.AlchemyTable.removeRecipe([<minecraft:ghast_tear>, <bloodmagic:potion_flask>]);
 ```
