@@ -1,37 +1,37 @@
-# Mörser
+# Mortar
 
 ## Addition
 
 ```zenscript
 import mods.cuisine.Mortar;
 
-// Der dritte Parameter 'Schritt' bedeutet "wie oft Sie die Pest drücken müssen"
-Mörser. dd(IItemStack[] Eingänge, IItemStack Ausgabe, int Schritt);
+// The third parameter 'step' means "how many times you need to push down the pestle"
+Mortar.add(IItemStack[] inputs, IItemStack output, int step);
 
 Mortar.add([<item:minecraft:dirt>, <item:minecraft:cobblestone>], <item:minecraft:diamond>, 3);
 ```
 
-## Entfernen
+## Removal
 
 ```zenscript
 import mods.cuisine.Mortar;
 
-// Nach Eingabe entfernen.
-Mortar.remove(IItemStack[] Eingabe);
+// Remove by input.
+Mortar.remove(IItemStack[] input);
 
 Mortar.remove([<item:minecraft:dirt>, <item:minecraft:cobblestone>]);
 
-// Von Ausgabe entfernen.
-Mortar.removeByOutput(IIngredient Ausgabe);
+// Remove by output.
+Mortar.removeByOutput(IIngredient output);
 
 Mortar.removeByOutput(<item:minecraft:diamond>);
 Mortar.removeByOutput(<ore:gemDiamond>);
 
-// Vom Bezeichner entfernen.
+// Remove by identifier.
 Mortar.remove(String id);
 
 Mortar.remove("recipe_name");
 
-// Alles entfernen!
+// Remove everything!
 Mortar.removeAll();
 ```
