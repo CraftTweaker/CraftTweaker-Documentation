@@ -1,41 +1,41 @@
 # IEventManager
 
-IEventManager è quello di cui hai bisogno quando hai a che fare con i gestori di eventi.
+The IEventManager is what you're gonna need when dealing with event handlers.
 
-## Importare la classe
+## Importing the class
 
-Potrebbe essere necessario [importare](/AdvancedFunctions/Import/) la classe se riscontri dei problemi.  
-`importare crafttweaker.events.IEventManager;`
+It might be required for you to [import](/AdvancedFunctions/Import/) the class if you encounter any issues.  
+`import crafttweaker.events.IEventManager;`
 
-## Chiamare il gestore degli eventi
+## Calling the event manager
 
-È possibile accedere al gestore degli eventi utilizzando il campo [globale `eventi`](/Vanilla/Global_Functions/)
+You can access the event manager using the [global `events` field](/Vanilla/Global_Functions/)
 
-## Come funzionano gli eventi?
+## How do events work?
 
-È possibile aggiungere una funzione che rappresenta l'evento e da lì in poi si può decidere cosa si desidera fare CrT se tale evento si verifica.  
-La cosa più importante da ricordare è che è necessario **CAST THE EVENT TO IT 'S TYPE!** altrimenti non sarai in grado di accedere a nessuno se è ZenGetters.  
-Se vuoi semplicemente stampare qualcosa dove non hai bisogno di accedere all'evento, allora va bene.
+You can add a function that represents the event and from there on you can decide what you want CrT to do if such an event occurs.  
+The most important thing to remember is that you need to **CAST THE EVENT TO IT'S TYPE!** as otherwise you will not be able to access any if it's ZenGetters.  
+If you simply want to print something where you don't need to access the event, then it's fine.
 
 ```zenscript
 events.onPlayerCrafted(function(event as crafttweaker.event.PlayerCraftedEvent){
     print("event".length);
     print(event.player.name);
-    event. layer.xp += 1;
+    event.player.xp += 1;
 });
 
 
-eventi. nPlayerLoggedIn(function(event) {
-    //event instanceof Object -> Nessun modo di accedervi, così meglio cast!
+events.onPlayerLoggedIn(function(event) {
+    //event instanceof Object -> No way of accessing it, so better cast!
     print("SOMEONE HAS LOGGED IN!!!");
 });
 ```
 
-## Quali eventi sono disponibili?
+## What events are available?
 
-Lo ZenMethods sarebbe quello che dovrai chiamare `eventi`, la Classe Evento sarebbe ciò di cui hai bisogno per lanciare l'evento.
+The ZenMethods would be what you'll need to call on `events`, the Event Class would be what you need to cast the event as.
 
-| ZenMethod                   | Classe Evento                                                                                            |
+| ZenMethod                   | Event Class                                                                                              |
 | --------------------------- | -------------------------------------------------------------------------------------------------------- |
 | onAllowDespawn              | [`crafttweaker.event.EntityLivingSpawnEvent`](/Vanilla/Events/Events/EntityLivingSpawn/)                 |
 | onAnimalTame                | [`crafttweaker.event.AnimalTameEvent`](/Vanilla/Events/Events/AnimalTame/)                               |
@@ -66,7 +66,7 @@ Lo ZenMethods sarebbe quello che dovrai chiamare `eventi`, la Classe Evento sare
 | onExplosionDetonate         | [`crafttweaker.event.ExplosionDetonateEvent`](/Vanilla/Events/Events/ExplosionDetonate/)                 |
 | onExplosionStart            | [`crafttweaker.event.ExplosionStartEvent`](/Vanilla/Events/Events/ExplosionStart/)                       |
 | onFarmlandTrample           | [`crafttweaker.event.FarmlandTrampleEvent`](/Vanilla/Events/Events/FarmlandTrample/)                     |
-| onItemScadere               | [`crafttweaker.event.ItemExpireEvent`](/Vanilla/Events/Events/ItemExpire/)                               |
+| onItemExpire                | [`crafttweaker.event.ItemExpireEvent`](/Vanilla/Events/Events/ItemExpire/)                               |
 | onItemFished                | [`crafttweaker.event.ItemFishedEvent`](/Vanilla/Events/Events/ItemFished/)                               |
 | onItemToss                  | [`crafttweaker.event.ItemTossEvent`](/Vanilla/Events/Events/ItemToss/)                                   |
 | onLivingDestroyBlock        | [`crafttweaker.event.LivingDestroyBlockEvent`](/Vanilla/Events/Events/LivingDestroyBlock/)               |
@@ -116,7 +116,7 @@ Lo ZenMethods sarebbe quello che dovrai chiamare `eventi`, la Classe Evento sare
 | onSleepingTimeCheck         | [`crafttweaker.event.SleepingTimeCheckEvent`](/Vanilla/Events/Events/SleepingTimeCheck/)                 |
 | onSpecialSpawn              | [`crafttweaker.event.EntityLivingExtendedSpawnEvent`](/Vanilla/Events/Events/EntityLivingSpawn/)         |
 
-## Cancella tutti i gestori di eventi
+## Clear all event handlers
 
 ```zenscript
 events.clear();
