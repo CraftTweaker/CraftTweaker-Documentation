@@ -1,8 +1,8 @@
-# Kreativer Tab-Bracket-Handler
+# Creative Tab Bracket Handler
 
-Der Creative Tab Bracket Handler gibt Ihnen Zugriff auf die kreativen Tabs im Spiel.
+The Creative Tab Bracket Handler gives you access to the creative Tabs in the game.
 
-Sie werden auf diese Weise im Creative Tab Handler referenziert:
+They are referenced in the Creative Tab handler this way:
 
 ```zenscript
 <creativetab:name>
@@ -10,4 +10,4 @@ Sie werden auf diese Weise im Creative Tab Handler referenziert:
 <creativetab:misc>
 ```
 
-Wenn der Creative Tab gefunden wird, wird ein ICreativeTab Objekt zurückgegeben. Weitere Informationen dazu finden Sie im [entsprechenden Wiki-Eintrag](/Vanilla/CreativeTabs/ICreativeTab/).
+If the Creative Tab is found, this will return an ICreativeTab Object. Please refer to the [respective Wiki entry](/Vanilla/CreativeTabs/ICreativeTab/) for further information on what you can do with these.
