@@ -1,58 +1,58 @@
 # Ubicación MCResource
 
-Esta clase fue añadida por un mod con la ID  `crafttweaker`. Necesitas tener este mod instalado si quieres usar esta caracteristica.
+This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
 
-## Importar la clase
-Puede ser requerido que importes el paquete si encuentras algun problema (como crear un Array).
+## Importing the class
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
 ```zenscript
 crafttweaker.api.util.MCResourceLocation
 ```
 
-## Interfaces implementadas
-MCResourceLocation implementa las siguientes interfaces. Esto significa que cualquier método disponible también puede ser usado en esta clase.
-- [crafttweaker.api.brackets.CommandStringMostrar](/vanilla/api/brackets/CommandStringDisplayable)
+## Implemented Interfaces
+MCResourceLocation implementa las siguientes interfaces. That means any method available to them can also be used on this class.
+- [crafttweaker.api.brackets.CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
 
-## Constructores
+## Constructors
 ```zenscript
 nuevo crafttweaker.api.util.MCResourceLocation(namespace as String, path as String);
 ```
-| Parámetro | Tipo   | Descripción                   |
-| --------- | ------ | ----------------------------- |
-| namespace | Cadena | No se proporcionó descripción |
-| ruta      | Cadena | No se proporcionó descripción |
+| Parameter | Type   | Description             |
+| --------- | ------ | ----------------------- |
+| namespace | String | No description provided |
+| path      | String | No description provided |
 
 
 
-## Métodos
+## Methods
 ### comparar con
 
-Tipo de retorno: int
+Return type: int
 
 ```zenscript
 myMCResourceLocation.compareTo(p_compareTo_1_ como crafttweaker.api.util.MCResourceLocation);
 ```
 
-| Parámetro     | Tipo                                                                             | Descripción                   |
-| ------------- | -------------------------------------------------------------------------------- | ----------------------------- |
-| comparar_1_ | [crafttweaker.api.util.MCResourceLocation](/vanilla/api/util/MCResourceLocation) | No se proporcionó descripción |
+| Parameter     | Type                                                                             | Description             |
+| ------------- | -------------------------------------------------------------------------------- | ----------------------- |
+| comparar_1_ | [crafttweaker.api.util.MCResourceLocation](/vanilla/api/util/MCResourceLocation) | No description provided |
 
 
-### igual a
+### equals
 
-Tipo de retorno: booleano
+Return type: boolean
 
 ```zenscript
 myMCResourceLocation.equals(otro como objeto);
 ```
 
-| Parámetro | Tipo   | Descripción                   |
-| --------- | ------ | ----------------------------- |
-| otro      | Objeto | No se proporcionó descripción |
+| Parameter | Type   | Description             |
+| --------- | ------ | ----------------------- |
+| other     | Object | No description provided |
 
 
 ### getNamespace
 
-Tipo de retorno: Cadena
+Return type: String
 
 ```zenscript
 myMCResourceLocation.getNamespace();
@@ -60,7 +60,7 @@ myMCResourceLocation.getNamespace();
 
 ### getPath
 
-Tipo de retorno: Cadena
+Return type: String
 
 ```zenscript
 myMCResourceLocation.getPath();
@@ -68,7 +68,7 @@ myMCResourceLocation.getPath();
 
 ### hashCode
 
-Tipo de retorno: int
+Return type: int
 
 ```zenscript
 myMCResourceLocation.hashCode();
@@ -76,18 +76,18 @@ myMCResourceLocation.hashCode();
 
 ### toString
 
-Tipo de retorno: Cadena
+Return type: String
 
 ```zenscript
 myMCResourceLocation.toString();
 ```
 
 
-## Propiedades
+## Properties
 
-| Nombre        | Tipo   | Tiene Obtén | Tiene Setter |
-| ------------- | ------ | ----------- | ------------ |
-| commandString | Cadena | verdad      | falso        |
-| namespace     | Cadena | verdad      | falso        |
-| ruta          | Cadena | verdad      | falso        |
+| Name          | Type   | Has Getter | Has Setter |
+| ------------- | ------ | ---------- | ---------- |
+| commandString | String | true       | false      |
+| namespace     | String | true       | false      |
+| path          | String | true       | false      |
 
