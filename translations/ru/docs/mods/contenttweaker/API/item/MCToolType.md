@@ -1,8 +1,8 @@
 # MCToolType
 
-Тип инструментов используется для определения того, какие блоки может быть мой инструмент, или инвертированно, какой инструмент необходим для добычи заданного блока.
+A Tooltype is used to identify what kind of blocks a tool can mine, or inversely, what kind of tool is required to mine a given block.
 
-Этот класс был добавлен модом с мод-id `contenttweaker`. Так что если вы хотите использовать эту функцию, вам нужно установить этот мод.
+This class was added by a mod with mod-id `contenttweaker`. Так что если вы хотите использовать эту функцию, вам нужно установить этот мод.
 
 ## Импорт класса
 Вам может потребоваться импортировать пакет, если вы столкнетесь с какими-либо проблемами (например, с заливкой массива), так что лучше быть в безопасности, чем извиняться и добавлять импорт.
@@ -10,28 +10,28 @@
 mods.contenttweaker.item.MCToolType
 ```
 
-## Реализованные интерфейсы
-MCToolType реализует следующие интерфейсы. Следовательно, методы из них доступны в этом классе.
+## Implemented Interfaces
+MCToolType implements the following interfaces. That means any method available to them can also be used on this class.
 - [crafttweaker.api.brackets.CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
 
-## Конструкторы
-Построит объект типа инструмента. Если кто-то с таким именем уже существует, то он будет внутренне указывать на тот же тип инструмента. В противном случае, создается новый с именем (то же самое относится и к скобкам!)
+## Constructors
+Constructs a ToolType object. If one with the given name already exists, they will internally point to the same toolType. Otherwise, a new one with the name is created (The same holds true for Brackets as well!)
 ```zenscript
 new mods.contenttweaker.item.MCToolType(name as String);
-new mods.contenttweaker.item.MCToolType("кирка");
+new mods.contenttweaker.item.MCToolType("pickaxe");
 ```
-| Параметр | Тип    | Описание              |
-| -------- | ------ | --------------------- |
-| имя      | String | Имя для использования |
+| Параметр | Тип    | Description         |
+| -------- | ------ | ------------------- |
+| name     | String | The name to be used |
 
 
 
-## Методы
+## Methods
 ### getName
 
-Получает имя этого типа инструмента. Имя — это то, что используется в выражении скобки после `<типа инструмента:`
+Gets the name of this toolType. The name is what is used in the Bracket expression after the `<tooltype:`
 
-Тип возврата: строка
+Return type: String
 
 ```zenscript
 <tooltype:pickaxe>.getName();
@@ -39,9 +39,9 @@ new mods.contenttweaker.item.MCToolType("кирка");
 
 ### hashCode
 
-Возвращает хэш объекта
+Returns the object's hash code
 
-Тип возврата: int
+Return type: int
 
 ```zenscript
 <tooltype:pickaxe>.hashCode();
@@ -49,9 +49,9 @@ new mods.contenttweaker.item.MCToolType("кирка");
 
 ### toString
 
-Получить строковое представление этого типа. Это отличается от командной строки!
+Get the string representation of this type. Is different from commandString!
 
-Тип возврата: строка
+Return type: String
 
 ```zenscript
 <tooltype:pickaxe>.toString();
@@ -60,24 +60,24 @@ new mods.contenttweaker.item.MCToolType("кирка");
 
 ## Свойства
 
-| Название         | Тип    | Имеет Getter | Имеет Setter |
-| ---------------- | ------ | ------------ | ------------ |
-| командная строка | String | true         | false        |
-| имя              | String | true         | false        |
+| Название      | Тип    | Имеет Getter | Имеет Setter |
+| ------------- | ------ | ------------ | ------------ |
+| commandString | String | true         | false        |
+| name          | String | true         | false        |
 
 ## Операторы
 ### EQUALS
 
-Сравнивать, если два объекта MCToolType одинаковы
+Compares if two given MCToolType objects are equal
 
 ```zenscript
-<tooltype:pickaxe> == o как объект
-<tooltype:pickaxe> == новый MCToolType("кирка")
+<tooltype:pickaxe> == o as Object
+<tooltype:pickaxe> == new MCToolType("pickaxe")
 ```
 
-| Параметр | Тип    | Описание      |
-| -------- | ------ | ------------- |
-| о        | Объект | Другой объект |
+| Параметр | Тип    | Description      |
+| -------- | ------ | ---------------- |
+| o        | Object | The other object |
 
 ## Утилиты
 
