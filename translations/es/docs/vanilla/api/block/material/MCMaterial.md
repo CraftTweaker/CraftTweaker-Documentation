@@ -1,19 +1,19 @@
 # MCMaterial
 
-Esta clase fue añadida por un mod con la ID  `crafttweaker`. Necesitas tener este mod instalado si quieres usar esta caracteristica.
+This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
 
-## Importar la clase
-Puede ser requerido que importes el paquete si encuentras algun problema (como crear un Array).
+## Importing the class
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
 ```zenscript
 crafttweaker.api.block.material.MCMaterial
 ```
 
-## Métodos
-### bloquesMovimiento
+## Methods
+### blocksMovement
 
-Devuelve si este material se considera sólido o no
+Returns if this material is considered solid or not
 
-Devuelve booleano
+Returns boolean
 
 ```zenscript
 myMCMaterial.blocksMovement();
@@ -21,19 +21,19 @@ myMCMaterial.blocksMovement();
 
 ### getColor
 
-Obtiene el índice de color del bloque. Este es el mismo color utilizado por los mapas de vainilla para representar este bloque.
+Retrieves the color index of the block. This is is the same color used by vanilla maps to represent this block.
 
-Devuelve [crafttweaker.api.block.material.MCMaterialColor](/vanilla/api/block/material/MCMaterialColor)
+Returns [crafttweaker.api.block.material.MCMaterialColor](/vanilla/api/block/material/MCMaterialColor)
 
 ```zenscript
 myMCMaterial.getColor();
 ```
 
-### es inflamable
+### isFlammable
 
-Devuelve si el bloque puede quemar o no.
+Returns if the block can burn or not.
 
-Devuelve booleano
+Returns boolean
 
 ```zenscript
 myMCMaterial.isFlammable();
@@ -41,29 +41,29 @@ myMCMaterial.isFlammable();
 
 ### isLiquid
 
-Devuelve si los bloques de estos materiales son líquidos.
+Returns if blocks of these materials are liquids.
 
-Devuelve booleano
+Returns boolean
 
 ```zenscript
 myMCMaterial.isLiquid();
 ```
 
-### es opaco
+### isOpaque
 
-Indique si el material es opaco
+Indicate if the material is opaque
 
-Devuelve booleano
+Returns boolean
 
 ```zenscript
 myMCMaterial.isOpaque();
 ```
 
-### es reemplazable
+### isReplaceable
 
-Devuelve si el material puede ser reemplazado por otros bloques cuando se coloca - por ejemplo, nieve, cepas y hierba alta.
+Returns whether the material can be replaced by other blocks when placed - eg snow, vines and tall grass.
 
-Devuelve booleano
+Returns boolean
 
 ```zenscript
 myMCMaterial.isReplaceable();
@@ -71,22 +71,22 @@ myMCMaterial.isReplaceable();
 
 ### isSolid
 
-Devuelve verdadero si el bloque es considerado sólido. Esto es cierto por defecto.
+Returns true if the block is a considered solid. This is true by default.
 
-Devuelve booleano
+Returns boolean
 
 ```zenscript
 myMCMaterial.isSolid();
 ```
 
-### no es necesario
+### isToolNotRequired
 
-Devuelve verdadero si el material puede ser recolectado sin una herramienta (o con la herramienta equivocada)
+Returns true if the material can be harvested without a tool (or with the wrong tool)
 
-Devuelve booleano
+Returns boolean
 
 ```zenscript
-myMCMaterial.isToolNot();
+myMCMaterial.isToolNotRequired();
 ```
 
 
