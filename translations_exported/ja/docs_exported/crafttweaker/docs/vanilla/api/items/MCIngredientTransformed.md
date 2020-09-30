@@ -1,19 +1,19 @@
 # MCIngredientTransformed
 
-crafttweakerのmod-idを持つmodによって追加されているクラスです。 従って、この機能を利用する場合はこのmodをインストールする必要があります。
+This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
 
-## クラスのインポート
-問題が発生した場合には、インポートが必要になります。とはいえ、お手数ですが予めインポートしておくほうが安全です。
+## Importing the class
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
 ```zenscript
 crafttweaker.api.item.MCIngredientTransformed
 ```
 
-## 実装されたインターフェース
-MCIngredientTransformed は以下のインターフェースを実装しています。 つまり、利用可能な任意のメソッドはこのクラスでも使用できます。
-- [craftweaker.api.brackets.CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
-- [craftweaker.api.item.IIngredient](/vanilla/api/items/IIngredient)
+## Implemented Interfaces
+MCIngredientTransformed は以下のインターフェースを実装しています。 That means any method available to them can also be used on this class.
+- [crafttweaker.api.brackets.CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
+- [crafttweaker.api.item.IIngredient](/vanilla/api/items/IIngredient)
 
-## メソッド
+## Methods
 ### anyDamage
 
 戻り値の型: [crafttweaker.api.item.MCIngredientConditioned](/vanilla/api/items/MCIngredientConditioned)&lt;[crafttweaker.api.item.IIngredient](/vanilla/api/items/IIngredient)&gt;
@@ -26,48 +26,48 @@ null.anyDamage();
 
 この材料スタックでクラフトが行われると、グリッド上になにが残るか？ ただし、スタックが一致するかどうかのチェックは行いません！ Craft Tweakerでの使用例,
 
-戻り値の型: [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
+Return type: [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
 
 ```zenscript
 null.getRemainingItem(stack as crafttweaker.api.item.IItemStack);
 null.getRemainingItem(<item:minecraft:iron_ingot>);
 ```
 
-| パラメータ | タイプ                                                               | 説明                |
-| ----- | ----------------------------------------------------------------- | ----------------- |
-| スタック  | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | この成分を提供するためのスタック。 |
+| Parameter | Type                                                              | Description                               |
+| --------- | ----------------------------------------------------------------- | ----------------------------------------- |
+| stack     | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | The stack to provide for this ingredient. |
 
 
-### 一致
+### matches
 
-指定されたスタックは成分と一致しますか?
+Does the given stack match the ingredient?
 
-戻り値の型: boolean
+Return type: boolean
 
 ```zenscript
 null.matches(stack as crafttweaker.api.item.IItemStack);
 null.matches(<item:minecraft:iron_ingot>);
 ```
 
-| パラメータ | タイプ                                                               | 説明         |
-| ----- | ----------------------------------------------------------------- | ---------- |
-| スタック  | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | チェックするスタック |
+| Parameter | Type                                                              | Description        |
+| --------- | ----------------------------------------------------------------- | ------------------ |
+| stack     | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | The stack to check |
 
 
 
-戻り値の型: boolean
+Return type: boolean
 
 ```zenscript
 myMCIngredientTransformed.matches(stack as crafttweaker.api.item.IItemStack, ignoreDamage as boolean);
 ```
 
-| パラメータ        | タイプ                                                               | 説明           |
-| ------------ | ----------------------------------------------------------------- | ------------ |
-| スタック         | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | 説明が提供されていません |
-| ignoreDamage | boolean型                                                          | 説明が提供されていません |
+| Parameter    | Type                                                              | Description             |
+| ------------ | ----------------------------------------------------------------- | ----------------------- |
+| stack        | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | No description provided |
+| ignoreDamage | boolean型                                                          | No description provided |
 
 
-### のみ破損しました
+### onlyDamaged
 
 戻り値の型: [crafttweaker.api.item.MCIngredientConditioned](/vanilla/api/items/MCIngredientConditioned)&lt;[crafttweaker.api.item.IIngredient](/vanilla/api/items/IIngredient)&gt;
 
@@ -83,21 +83,21 @@ null.onlyDamaged();
 null.onlyIf(uid as String, function as function.Predicate<crafttweaker.api.item.IItemStack>);
 ```
 
-| パラメータ | タイプ                                                                                                     | 説明           | IsOptional | デフォルト値 |
-| ----- | ------------------------------------------------------------------------------------------------------- | ------------ | ---------- | ------ |
-| uid   | 文字列型                                                                                                    | 説明が提供されていません | false      | `null` |
-| 関数    | function.Predicate&lt;[crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)&gt; | 説明が提供されていません | true       | `null` |
+| Parameter | Type                                                                                                    | Description             | IsOptional | Default Value |
+| --------- | ------------------------------------------------------------------------------------------------------- | ----------------------- | ---------- | ------------- |
+| uid       | String                                                                                                  | No description provided | false      | `null`        |
+| function  | function.Predicate&lt;[crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)&gt; | No description provided | true       | `null`        |
 
 
 
-## プロパティー
+## Properties
 
-| 名称             | タイプ                                                                                                            | ゲッターあり | セッターあり |
-| -------------- | -------------------------------------------------------------------------------------------------------------- | ------ | ------ |
-| baseIngredient | T                                                                                                              | true   | false  |
-| commandString  | 文字列型                                                                                                           | true   | false  |
-| 項目             | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)[]                                            | true   | false  |
-| トランス           | [crafttweaker.api.item.IIngredientTransformer](/vanilla/api/items/IIngredientTransformer)&lt;T&gt; | true   | false  |
+| 名称             | Type                                                                                                           | Has Getter | Has Setter |
+| -------------- | -------------------------------------------------------------------------------------------------------------- | ---------- | ---------- |
+| baseIngredient | T                                                                                                              | true       | false      |
+| commandString  | String                                                                                                         | true       | false      |
+| items          | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)[]                                            | true       | false      |
+| トランス           | [crafttweaker.api.item.IIngredientTransformer](/vanilla/api/items/IIngredientTransformer)&lt;T&gt; | true       | false      |
 
 ## 演算子
 ### OR
@@ -106,14 +106,14 @@ null.onlyIf(uid as String, function as function.Predicate<crafttweaker.api.item.
 <tag:ingotIron> | crafttweaker.api.item.IIngredient
 ```
 
-| パラメータ | タイプ                                                                | 説明           |
-| ----- | ------------------------------------------------------------------ | ------------ |
-| その他   | [craftweaker.api.item.IIngredient](/vanilla/api/items/IIngredient) | 説明が提供されていません |
+| Parameter | Type                                                                | Description             |
+| --------- | ------------------------------------------------------------------- | ----------------------- |
+| other     | [crafttweaker.api.item.IIngredient](/vanilla/api/items/IIngredient) | No description provided |
 
-## キャスト
+## Casters
 
-| 結果の種類                                                      | 暗黙的  |
-| ---------------------------------------------------------- | ---- |
-| [crafttweaker.api.data.IData](/vanilla/api/data/IData)     | true |
-| [crafttweaker.api.data.MapData](/vanilla/api/data/MapData) | true |
+| Result type                                                | Is Implicit |
+| ---------------------------------------------------------- | ----------- |
+| [crafttweaker.api.data.IData](/vanilla/api/data/IData)     | true        |
+| [crafttweaker.api.data.MapData](/vanilla/api/data/MapData) | true        |
 
