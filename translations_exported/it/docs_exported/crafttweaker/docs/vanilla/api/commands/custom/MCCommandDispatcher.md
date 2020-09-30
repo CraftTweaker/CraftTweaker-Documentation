@@ -2,60 +2,60 @@
 
 Questa classe è stata aggiunta da una mod con ID `crafttweaker`. Perciò, è necessario avere questa mod installata per poter utilizzare questa funzione.
 
-## Importare la classe
+## Importing the class
 Potrebbe essere necessario importare il pacchetto, se si incontrano dei problemi (come castare un vettore), quindi meglio essere sicuri e aggiungere la direttiva di importazione.
 ```zenscript
 crafttweaker.api.commands.custom.MCCommandDispatcher
 ```
 
-## Metodi
-### uguale
+## Methods
+### equals
 
-Tipo restituito: booleano
+Return type: boolean
 
 ```zenscript
 myMCCommandDispatcher.equals(o come oggetto);
 ```
 
-| Parametro | Tipo    | Descrizione                 |
-| --------- | ------- | --------------------------- |
-| o         | Oggetto | Nessuna descrizione fornita |
+| Parameter | Type   | Description                 |
+| --------- | ------ | --------------------------- |
+| o         | Object | Nessuna descrizione fornita |
 
 
 ### esegui
 
-Tipo di restituzione: int
+Return type: int
 
 ```zenscript
 myMCCommandDispatcher.execute(parse as crafttweaker.api.commands.custom.MCParseResults);
 ```
 
-| Parametro | Tipo                                                                                           | Descrizione                 |
+| Parameter | Type                                                                                           | Description                 |
 | --------- | ---------------------------------------------------------------------------------------------- | --------------------------- |
 | parse     | [crafttweaker.api.commands.custom.MCParseResults](/vanilla/api/commands/custom/MCParseResults) | Nessuna descrizione fornita |
 
 
 
-Tipo di restituzione: int
+Return type: int
 
 ```zenscript
 myMCCommandDispatcher.execute(input as String, source as crafttweaker.api.commands.custom.MCCommandSource);
 ```
 
-| Parametro | Tipo                                                                                             | Descrizione                 |
+| Parameter | Type                                                                                             | Description                 |
 | --------- | ------------------------------------------------------------------------------------------------ | --------------------------- |
-| input     | Stringa                                                                                          | Nessuna descrizione fornita |
+| input     | String                                                                                           | Nessuna descrizione fornita |
 | sorgente  | [crafttweaker.api.commands.custom.MCCommandSource](/vanilla/api/commands/custom/MCCommandSource) | Nessuna descrizione fornita |
 
 
 
-Tipo di restituzione: int
+Return type: int
 
 ```zenscript
 myMCCommandDispatcher.execute(input as com.mojang.brigadier.StringReader, source as crafttweaker.api.commands.custom.MCCommandSource);
 ```
 
-| Parametro | Tipo                                                                                             | Descrizione                 |
+| Parameter | Type                                                                                             | Description                 |
 | --------- | ------------------------------------------------------------------------------------------------ | --------------------------- |
 | input     | com.mojang.brigadier.StringReader                                                                | Nessuna descrizione fornita |
 | sorgente  | [crafttweaker.api.commands.custom.MCCommandSource](/vanilla/api/commands/custom/MCCommandSource) | Nessuna descrizione fornita |
@@ -67,7 +67,7 @@ myMCCommandDispatcher.execute(input as com.mojang.brigadier.StringReader, source
 myMCCommandDispatcher.findAmbiguities(consumer as crafttweaker.api.commands.custom.MCAmbiguityConsumer);
 ```
 
-| Parametro   | Tipo                                                                                                     | Descrizione                 |
+| Parameter   | Type                                                                                                     | Description                 |
 | ----------- | -------------------------------------------------------------------------------------------------------- | --------------------------- |
 | consumatore | [crafttweaker.api.commands.custom.MCAmbiguityConsumer](/vanilla/api/commands/custom/MCAmbiguityConsumer) | Nessuna descrizione fornita |
 
@@ -80,9 +80,9 @@ Tipo restituito: [crafttweaker.api.commands.custom.MCCommandNode](/vanilla/api/c
 myMCCommandDispatcher.findNode(path as Collection<String>);
 ```
 
-| Parametro | Tipo                               | Descrizione                 |
+| Parameter | Type                               | Description                 |
 | --------- | ---------------------------------- | --------------------------- |
-| percorso  | Raccolta&lt;String&gt; | Nessuna descrizione fornita |
+| path      | Raccolta&lt;String&gt; | Nessuna descrizione fornita |
 
 
 ### getAllUsage
@@ -93,7 +93,7 @@ Tipo di ritorno: String[]
 myMCCommandDispatcher.getAllUsage(node as crafttweaker.api.commands.custom.MCCommandNode, source as crafttweaker.api.commands.custom.MCCommandSource, restricted as boolean);
 ```
 
-| Parametro | Tipo                                                                                             | Descrizione                 |
+| Parameter | Type                                                                                             | Description                 |
 | --------- | ------------------------------------------------------------------------------------------------ | --------------------------- |
 | nodo      | [crafttweaker.api.commands.custom.MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)     | Nessuna descrizione fornita |
 | sorgente  | [crafttweaker.api.commands.custom.MCCommandSource](/vanilla/api/commands/custom/MCCommandSource) | Nessuna descrizione fornita |
@@ -108,7 +108,7 @@ Tipo restituito: [crafttweaker.api.commands.custom.MCSuggestions](/vanilla/api/c
 myMCCommandDispatcher.getCompletionSuggestions(parse as crafttweaker.api.commands.custom.MCParseResults);
 ```
 
-| Parametro | Tipo                                                                                           | Descrizione                 |
+| Parameter | Type                                                                                           | Description                 |
 | --------- | ---------------------------------------------------------------------------------------------- | --------------------------- |
 | parse     | [crafttweaker.api.commands.custom.MCParseResults](/vanilla/api/commands/custom/MCParseResults) | Nessuna descrizione fornita |
 
@@ -120,7 +120,7 @@ Tipo restituito: [crafttweaker.api.commands.custom.MCSuggestions](/vanilla/api/c
 myMCCommandDispatcher.getCompletionSuggestions(parse as crafttweaker.api.commands.custom.MCParseResults, cursor as int);
 ```
 
-| Parametro | Tipo                                                                                           | Descrizione                 |
+| Parameter | Type                                                                                           | Description                 |
 | --------- | ---------------------------------------------------------------------------------------------- | --------------------------- |
 | parse     | [crafttweaker.api.commands.custom.MCParseResults](/vanilla/api/commands/custom/MCParseResults) | Nessuna descrizione fornita |
 | cursor    | int                                                                                            | Nessuna descrizione fornita |
@@ -134,7 +134,7 @@ Tipo di ritorno: Collezione&lt;String&gt;
 myMCCommandDispatcher.getPath(target as crafttweaker.api.commands.custom.MCCommandNode);
 ```
 
-| Parametro | Tipo                                                                                         | Descrizione                 |
+| Parameter | Type                                                                                         | Description                 |
 | --------- | -------------------------------------------------------------------------------------------- | --------------------------- |
 | target    | [crafttweaker.api.commands.custom.MCCommandNode](/vanilla/api/commands/custom/MCCommandNode) | Nessuna descrizione fornita |
 
@@ -155,7 +155,7 @@ Tipo restituito: String[[crafttweaker.api.commands.custom.MCCommandNode](/vanill
 myMCCommandDispatcher.getSmartUsage(node as crafttweaker.api.commands.custom.MCCommandNode, source as crafttweaker.api.commands.custom.MCCommandSource);
 ```
 
-| Parametro | Tipo                                                                                             | Descrizione                 |
+| Parameter | Type                                                                                             | Description                 |
 | --------- | ------------------------------------------------------------------------------------------------ | --------------------------- |
 | nodo      | [crafttweaker.api.commands.custom.MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)     | Nessuna descrizione fornita |
 | sorgente  | [crafttweaker.api.commands.custom.MCCommandSource](/vanilla/api/commands/custom/MCCommandSource) | Nessuna descrizione fornita |
@@ -163,7 +163,7 @@ myMCCommandDispatcher.getSmartUsage(node as crafttweaker.api.commands.custom.MCC
 
 ### hashCode
 
-Tipo di restituzione: int
+Return type: int
 
 ```zenscript
 myMCCommandDispatcher.hashCode();
@@ -177,9 +177,9 @@ Tipo restituito: [crafttweaker.api.commands.custom.MCParseResults](/vanilla/api/
 myMCCommandDispatcher.parse(comando come Stringa, sorgente come crafttweaker.api.commands.custom.MCCommandSource);
 ```
 
-| Parametro | Tipo                                                                                             | Descrizione                 |
+| Parameter | Type                                                                                             | Description                 |
 | --------- | ------------------------------------------------------------------------------------------------ | --------------------------- |
-| comando   | Stringa                                                                                          | Nessuna descrizione fornita |
+| command   | String                                                                                           | Nessuna descrizione fornita |
 | sorgente  | [crafttweaker.api.commands.custom.MCCommandSource](/vanilla/api/commands/custom/MCCommandSource) | Nessuna descrizione fornita |
 
 
@@ -190,9 +190,9 @@ Tipo restituito: [crafttweaker.api.commands.custom.MCParseResults](/vanilla/api/
 myMCCommandDispatcher.parse(comando come com.mojang.brigadier.StringReader, sorgente come crafttweaker.api.commands.custom.MCCommandSource);
 ```
 
-| Parametro | Tipo                                                                                             | Descrizione                 |
+| Parameter | Type                                                                                             | Description                 |
 | --------- | ------------------------------------------------------------------------------------------------ | --------------------------- |
-| comando   | com.mojang.brigadier.StringReader                                                                | Nessuna descrizione fornita |
+| command   | com.mojang.brigadier.StringReader                                                                | Nessuna descrizione fornita |
 | sorgente  | [crafttweaker.api.commands.custom.MCCommandSource](/vanilla/api/commands/custom/MCCommandSource) | Nessuna descrizione fornita |
 
 
@@ -204,9 +204,9 @@ Tipo restituito: [crafttweaker.api.commands.custom.MCLiteralCommandNode](/vanill
 myMCCommandDispatcher.register(comando come crafttweaker.api.commands.custom.MCLiteralArgumentBuilder);
 ```
 
-| Parametro | Tipo                                                                                                               | Descrizione                 |
+| Parameter | Type                                                                                                               | Description                 |
 | --------- | ------------------------------------------------------------------------------------------------------------------ | --------------------------- |
-| comando   | [crafttweaker.api.commands.custom.MCLiteralArgumentBuilder](/vanilla/api/commands/custom/MCLiteralArgumentBuilder) | Nessuna descrizione fornita |
+| command   | [crafttweaker.api.commands.custom.MCLiteralArgumentBuilder](/vanilla/api/commands/custom/MCLiteralArgumentBuilder) | Nessuna descrizione fornita |
 
 
 ### setConsumer
@@ -215,34 +215,34 @@ myMCCommandDispatcher.register(comando come crafttweaker.api.commands.custom.MCL
 myMCCommandDispatcher.setConsumer(consumer as crafttweaker.api.commands.custom.MCResultConsumer);
 ```
 
-| Parametro   | Tipo                                                                                               | Descrizione                 |
+| Parameter   | Type                                                                                               | Description                 |
 | ----------- | -------------------------------------------------------------------------------------------------- | --------------------------- |
 | consumatore | [crafttweaker.api.commands.custom.MCResultConsumer](/vanilla/api/commands/custom/MCResultConsumer) | Nessuna descrizione fornita |
 
 
 ### toString
 
-Tipo di ritorno: Stringa
+Return type: String
 
 ```zenscript
 myMCCommandDispatcher.toString();
 ```
 
 
-## Operatori
-### EQUALI
+## Operators
+### EQUALS
 
 ```zenscript
 myMCCommandDispatcher == o come oggetto
 ```
 
-| Parametro | Tipo    | Descrizione                 |
-| --------- | ------- | --------------------------- |
-| o         | Oggetto | Nessuna descrizione fornita |
+| Parameter | Type   | Description                 |
+| --------- | ------ | --------------------------- |
+| o         | Object | Nessuna descrizione fornita |
 
 ## Caster
 
 | Tipo Risultato | Implicito |
 | -------------- | --------- |
-| Stringa        | vero      |
+| String         | true      |
 
