@@ -1,53 +1,53 @@
-# Podstawowa funkcjonalność zmiennej
+# Basic variable functionality
 
-Najbardziej podstawowymi typami zmiennych ZenScript są ciągi, Integers i wartości logiczne.
+The most basic variable types of ZenScript are Strings, Integers and booleans.
 
-## Najwięcej typów
+## Most single types
 
-`true == true` Możesz sprawdzić, czy dwie wartości są takie same.  
-`"Witaj" != "Świat"` Możesz również sprawdzić, czy dwie wartości są nierówne.
+`true == true` You can check if two values are the same.  
+`"Hello" != "World"` You can also check if two values are unequal.
 
-## Ciągi
+## Strings
 
-Ciągi zapewniają pewne funkcje
+Strings provide some functionality
 
-`"Witaj".length` Zwraca długość ciągu znaków jako int.  
-`"Witaj"[1]` Zwraca postać w danym indeksie ciągu jako inny ciąg.  
-`"Witaj" w "Witaj"` sprawdza, czy ciąg znaków przed `w` zawiera ciąg znaków po nim jako logiczny. Możesz zastąpić `w` `ma` jeśli podoba Ci się to lepiej.  
-`"Witaj" ~ "lo " + "Świat"` Możesz również dodawać/konkatenować ciągi. `ciąg += "assignDodaj"` możesz również użyć operatorów przypisania/przypisania przypisania.
+`"Hello".length` Returns the string's length as int.  
+`"Hello"[1]` Returns the character at the string's given index as another string.  
+`"Hello" in "Hell"` checks if the string before `in` contains the string after it as boolean. You can replace the `in` with `has` if you like that better.  
+`"Hel" ~ "lo " + "World"` You also can add/concatenate strings. `string += "assignAdd"` you can also use the assignAdd/assignConcatenate operators.
 
-Poza tym wszystkie metody, które są dostępne dla [znaków Java](https://docs.oracle.com/javase/8/docs/api/java/lang/String.html) i nie używają typu `znaków` są również dostępne dla ciągów ZenScript!  
-Obejmuje to:
+Aside from these, all methods that are available to [Java Strings](https://docs.oracle.com/javase/8/docs/api/java/lang/String.html) and do not use the `char` type are also available to ZenScript strings!  
+This includes:
 
-- na małe litery
+- toLowerCase
 - toUpperCase
 - getBytes
 - hashCode
-- skrzyżowanie
+- intern
 - isEmpty
-- Tablica
-- przycinanie
-- podziel
+- toCharArray
+- trim
+- split
 
-## Liczba całkowita
+## Integers
 
-Liczba całkowita zapewnia pewne funkcje
+Integers provide some functionality
 
-`+-*/%` Podstawowe operatory maTheme (sprawdź stronę [zmiennych](/Vanilla/Variable_Types/Variable_Types) na stronie). Możesz również użyć tokenów przypisania operatora  
-`0 do 10` Zwraca zakres liczby całkowitej, w zakresie od 0 do 10.  
-`1~10` Konkatenuje liczby całkowite (zwraca "110").
+`+-*/%` Basic mathematic operators (check the [variable Types](/Vanilla/Variable_Types/Variable_Types) page). You can also use the operatorAssign tokens  
+`0 to 10` Returns an Integer Range ranging from 0 to 10.  
+`1~10` Concatenates the Integers (returns "110").
 
-## Wartości logiczne
+## Booleans
 
-Wartości logiczne zapewniają pewne funkcje
+Booleans provide some functionality
 
-`true ~ false` Concatenates the booleans (return "truefalse").  
-`& | ^` Operatory logiczne (i/or/xor).
+`true ~ false` Concatenates the booleans (returns "truefalse").  
+`& | ^` Boolean operators (and/or/xor).
 
-## Tablice/ArrayListy
+## Arrays/ArrayLists
 
-Tablice i tablice pełnią wspólne funkcje
+Arrays and ArrayLists provide common functions
 
-`tablica[1]` zwraca element w podanym indeksie.  
-`tablica[1] = "Witaj"` Ustawia przedmiot w podanym indeksie.  
-`tablica.length` zwraca długość tablic
+`array[1]` returns the item at the given index.  
+`array[1] = "Hello"` Sets the item at the given index.  
+`array.length` returns the arrays length
