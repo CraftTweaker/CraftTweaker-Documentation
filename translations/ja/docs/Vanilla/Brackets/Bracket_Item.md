@@ -1,8 +1,8 @@
-# アイテムブラケットハンドラー
+# Item Bracket Handler
 
-アイテムブラケットハンドラーでは、ゲーム内のアイテムにアクセスできます。 ゲームに登録されたアイテムのみを取得することができます ですから、Modを追加または削除すると、ITem Bracket HandlerでModのアイテムを参照すると問題が発生する可能性があります。
+The Item Bracket Handler gives you access to the Items in the game. It is only possible to get items registered in the game, so adding or removing mods may cause issues if you reference the mod's items in an ITem Bracket Handler.
 
-項目は、項目ブラケットハンドラで次のように参照されます。
+Items are referenced in the Item Bracket Handler by like so:
 
 ```zenscript
 <modid:itemname>
@@ -10,7 +10,7 @@
 
 With the `modid` being the modid of the mod that the Item belongs to, and `itemname` being the name of the item, It is recommended to use `/ct hand` to get the correct name of the item.
 
-一般的にはこのようなものである。
+Generally it is like this though:
 
 ```zenscript
 <item:modid:itemname:meta>
@@ -25,12 +25,12 @@ Usually you will never need this, unless dealing with several custom bracket han
 You can also use a wildcard `*` to address all meta values.  
 Also optional: If left out it will be 0.
 
-通常、これは IItemStack オブジェクトを返します。  
-詳細については [それぞれの wiki エントリ](/Vanilla/Items/IItemStack/) を参照してください。
+Normally, this will return an IItemStack Object.  
+Please refer to [the respective wiki entry](/Vanilla/Items/IItemStack/) for further information.
 
 ## 使用例
 
-項目ブラケットハンドラの例は次のとおりです。
+An example of the Item Bracket Handler would be:
 
 ```zenscript
 //apple
@@ -48,4 +48,4 @@ Also optional: If left out it will be 0.
 <item:minecraft:coal:*>
 ```
 
-これにより、 `Apple` の項目にアクセスできます。
+This will give you access to the `Apple` item.
