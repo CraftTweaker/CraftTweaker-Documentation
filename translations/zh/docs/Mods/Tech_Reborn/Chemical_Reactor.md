@@ -1,16 +1,16 @@
-# 化学反应器
+# Chemical Reactor
 
-## 导入软件包
+## Importing the Package
 `mods.techreborn.chemicalReactor`
 
-## 添加配方
+## Adding Recipes
 ```zenscript
-mods.techreborn.chemicalReactor.addRecipe(IItemStack output1，IIngredient input1，IIngredient input2，int ticktime，int euTick)；
+mods.techreborn.chemicalReactor.addRecipe(IItemStack output1, IIngredient input1, IIngredient input2, int ticktime, int euTick);
 ```
 
-## 删除配方
+## Removing Recipes
 ```zenscript
-mods.techreborn.chemicalReactor.removeInputRecipe(I创性成分)；
-mods.techreborn.chemicalReactor.removeRecipe(IItemStack 输出)；
+mods.techreborn.chemicalReactor.removeInputRecipe(IIngredient ingredient);
+mods.techreborn.chemicalReactor.removeRecipe(IItemStack output);
 mods.techreborn.chemicalReactor.removeAll();
 ```
