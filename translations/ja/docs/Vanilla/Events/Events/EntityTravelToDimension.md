@@ -1,24 +1,24 @@
 # EntityTravelToDimension
 
-EntityTravelToDimensionイベントは、エンティティが別のディメンションに移動しようとするたびに発生します。 キャンセルされた場合、エンティティは旅行を妨げられます。
+The EntityTravelToDimension event is fired whenever an entity is about to travel to another dimension. If canceled, the entity is prevented from travel.
 
-## メモ
+## Notes
 
-`event.dimension` には、図形が移動しようとしている寸法が含まれています。
+`event.dimension` contains the dimension the entity is about to travel to.
 
-## イベントクラス
+## Event Class
 You will need to cast the event in the function header as this class:  
 `crafttweaker.event.EntityTravelToDimensionEvent` You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
 
-## イベントインターフェースの拡張
-EntityTravelToDimension Eventsは以下のインターフェイスを実装し、それらのメソッド/getters/settersをすべて呼び出すことができます。
+## Event interface extensions
+EntityTravelToDimension Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
 
 - [ILivingEvent](/Vanilla/Events/Events/ILivingEvent/)
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 
 ## ZenGetters/ZenSetters
-イベント中に以下の情報を取得/設定できます:
+The following information can be retrieved/set during the event:
 
-| ZenGetter | 戻り値 |
-| --------- | --- |
-| `寸法`      | int |
+| ZenGetter   | 戻り値 |
+| ----------- | --- |
+| `dimension` | int |
