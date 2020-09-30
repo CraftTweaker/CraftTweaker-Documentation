@@ -1,8 +1,8 @@
-# Komora wzbogacania
+# Enrichment Chamber
 
-Od Mekanism 9.7.0 jest teraz możliwe oglądanie wszystkich ciągów receptur w komorze wzbogacania poprzez polecenie `/ct mekrecipes wzbogacanie`
+As of Mekanism 9.7.0 it is now possible to view all recipe strings of the Enrichment Chamber through the command `/ct mekrecipes enrichment`
 
-## Dodanie
+## Addition
 
 ```zenscript
 mods.mekanism.enrichment.addRecipe(IIngredient inputStack, IItemStack outputStack);
@@ -10,11 +10,11 @@ mods.mekanism.enrichment.addRecipe(IIngredient inputStack, IItemStack outputStac
 mods.mekanism.enrichment.addRecipe(<minecraft:coal_block>, <mekanism:compressedcarbon> * 9);
 ```
 
-Od Mekanism 9.7.0 możliwe jest stosowanie IIngredients jako inputStack zamiast tylko IItemStacks.
+As of Mekanism 9.7.0 it is possible to use IIngredients as the inputStack instead of only IItemStacks.
 
-Uwaga: Obecnie wszystko to jest w pętli nad różnymi możliwościami w java podczas dodawania zamiast tego musisz to zrobić w ZenScript. Obecnie w samych maszynach nie ma wbudowanego wsparcia dla składników składowych składowych czy też słownika.
+Note: Currently all this does is loop over the different possibilities in java while adding instead of you having to do it in ZenScript. Currently there is no built in support for compound ingredients or oredictionary in the machines themselves.
 
-## Usuwanie
+## Removal
 
 ```zenscript
 mods.mekanism.enrichment.removeRecipe(IIngredient inputStack, @Optional IIngredient outputStack);
@@ -23,11 +23,11 @@ mods.mekanism.enrichment.removeRecipe(<minecraft:mossy_cobblestone>, <minecraft:
 mods.mekanism.enrichment.removeRecipe(<minecraft:stonebrick:1>);
 ```
 
-Określenie parametru wyjściowego usunie tylko konkretny przepis, który daje ten wyjście z tego wejścia. Pominięcie parametru wyjściowego usunie wszystkie przepisy, które może wytwarzać element wejściowy.
+Specifying an output parameter will only remove the specific recipe that results in that output from that input. Omitting the output parameter will remove all recipes that the input item can produce.
 
-## Usuwanie wszystkich przepisów
+## Removing all recipes
 
-Począwszy od Mekanism 9.7.0 można obecnie usunąć wszystkie przepisy dotyczące komory wzbogacania. (Wyłącza wszelkie przepisy dodane przez CraftTweaker)
+As of Mekanism 9.7.0 it is now possible to remove all Enrichment Chamber recipes. (This excludes any recipes added via CraftTweaker)
 
 ```zenscript
 mods.mekanism.enrichment.removeAllRecipes();
