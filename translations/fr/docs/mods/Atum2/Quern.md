@@ -1,49 +1,49 @@
 # Quern
 
-## Paquet
+## Package
 `mods.atum.Quern;`
 
-## Ajout d'une recette
+## Adding a Recipe
 
-`mods.atum.Quern.addRecipe(entrée, sortie, rotations);`
+`mods.atum.Quern.addRecipe(input, output, rotations);`
 
 - `input` [IItemStack](/vanilla/api/items/IItemStack)
 - `output` [IItemStack](/vanilla/api/items/IItemStack)
-- `rotations` Tout nombre au-dessus de 0
+- `rotations` Any number above 0
 
-Ajoute une recette avec l'entrée & sortie spécifiée, qui prend les rotations spécifiées pour compléter la requête
+Adds a recipe with the specified input & output, that takes the specified rotations to complete querning
 
 ```zenscript
 mods.atum.Quern.addRecipe(<item:atum:fertile_soil>, <item:atum:fertile_soil_pile>, 3);
 ```
 
-## Suppression d'une recette
+## Removing a Recipe
 
-### Supprimer les recettes par sortie
+### Remove Recipes by Output
 
 `mods.atum.Quern.removeRecipeByOutput(output);`
 
 - `output` [IItemStack](/vanilla/api/items/IItemStack)
 
-Supprime toutes les recettes où le résultat de sortie est le [IItemStack](/vanilla/api/items/IItemStack) fourni.
+Removes all recipes where the output result is the provided [IItemStack](/vanilla/api/items/IItemStack).
 
 ```zenscript
 mods.atum.Quern.removeRecipeByOutput(<item:atum:emmer_flour>);
 ```
 
-### Supprimer les recettes par sortie & Entrée
+### Remove Recipes by Output & Input
 
-`mods.atum.Quern.removeRecipeByOutputInput(sortie, entrée);`
+`mods.atum.Quern.removeRecipeByOutputInput(output, input);`
 
 - `output` [IItemStack](/vanilla/api/items/IItemStack)
 - `input` [IItemStack](/vanilla/api/items/IItemStack)
 
-Supprime la recette spécifique, avec la sortie & entrée spécifiée
+Removes the specific recipe, with the specified output & input
 
 ```zenscript
 mods.atum.Quern.removeRecipeByOutputInput(<item:atum:emmer_flour>, <item:atum:emmer>);
 ```
 
-### Autres méthodes de suppression
+### Other removal methods
 
-Voir [Gestionnaires de recettes](/recipes/recipe_managers) pour d'autres façons de supprimer les recettes de Quern
+See [Recipe Managers](/recipes/recipe_managers) for other ways to remove Quern recipes
