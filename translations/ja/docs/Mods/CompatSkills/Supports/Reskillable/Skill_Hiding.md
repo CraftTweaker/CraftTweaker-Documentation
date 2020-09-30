@@ -1,11 +1,11 @@
-# スキルの非表示/ロック解除
+# Skill Hiding / Visibility Locking
 
-このロックでは、プレイヤーがスキルを確認するための要件を満たすまでスキルを非表示にできます。 これは、カスタムパックに「クラス」スキルを追加する場合など、いくつかの限定されたユースケースがあります。たとえば、「エンジニア」である人が「Mage」スキルページを見るか、またはアクセスできるようにしたくない場合です。
+This lock allows you to hide Skills until the point where a player fulfills the requirements to see the skill. This has some limited use-cases for example when adding "Class" Skills in Custom-Packs where you don't want someone who is an "Engineer" to see or be able to get access to the "Mage" skill page.
 
-## 構文
+## Syntax:
 
-    空白の例:
-    mods.compatskills.VisibilityLock.addVisibilityLock(CTSkill skill, String... デフォルト要件);
+    Blank Example:
+    mods.compatskills.VisibilityLock.addVisibilityLock(CTSkill skill, String... Default Requirements);
     
-    動作例:
+    Working Example:
     mods.compatskills.VisibilityLock.addVisibilityLock(<skill:reskillable:attack>, "dim|1");
