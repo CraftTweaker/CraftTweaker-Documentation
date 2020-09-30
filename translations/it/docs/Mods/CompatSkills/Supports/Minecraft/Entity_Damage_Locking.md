@@ -1,15 +1,15 @@
-# Blocco Danno Entità
+# Entity Damage Locking
 
-## Blocco Danno Entità
+## Entity-Damage Lock
 
-Questa funzione consente di bloccare la capacità di attaccare / danneggiare entità specifiche.
+This feature allows you to lock the ability to attack/damage specific entities.
 
-### Sintassi:
+### Syntax:
 
-[Link a IEntityDefinition](/Vanilla/Entities/IEntityDefinition/)
+[Link to IEntityDefinition](/Vanilla/Entities/IEntityDefinition/)
 
-    # Esempio vuoto:
+    # Blank Example:
     mods.compatskills.EntityDamageLock.addEntityLock(IEntityDefinition definition, String... defaultRequirements);
     
-    # Esempio di lavoro:
-    mods.compatskills.EntityDamageLock.addEntityLock(<entity:minecraft:zombie>, "reskillable:mining<unk> 5", "reskillable:magic<unk> 7");
+    # Working Example:
+    mods.compatskills.EntityDamageLock.addEntityLock(<entity:minecraft:zombie>, "reskillable:mining|5", "reskillable:magic|7");
