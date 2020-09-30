@@ -1,21 +1,21 @@
-# Komora Ekstrakcji
+# Extraction Chamber
 
-## Pakiet
+## Package
 ```zenscript
-importuj mods.calculator.extractionChamber;
+import mods.calculator.extractionChamber;
 ```
 
-## Metody
+## Methods
 
-- **[Składnik](/Vanilla/Variable_Types/IIngredient/) wejście** Wejście
-- **[Składnik](/Vanilla/Variable_Types/IIngredient/) wyjście[1-2]** Wyjście
+- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input** The input.
+- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) output[1-2]** The outputs.
 
-## Dodanie
+## Addition
 ```zenscript
-ekstractionChamber.addRecipe(dane wejściowe dla składnika pośredniego, dane wyjściowe dla składnika pośredniego1, dane wyjściowe dla składnika pośredniego2);
+extractionChamber.addRecipe(IIngredient input, IIngredient output1, IIngredient output2);
 ```
 
-## Usuwanie
+## Removal
 ```zenscript
-ekstractionChamber.removeRecipe(wyjście typu IIngredient, wyjście typu IIngredient2);
+extractionChamber.removeRecipe(IIngredient output, IIngredient output2);
 ```
