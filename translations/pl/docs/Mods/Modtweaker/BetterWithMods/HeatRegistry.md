@@ -1,13 +1,13 @@
-# Rejestr ciepła
+# HeatRegistry
 
-Rejestr ciepła umożliwia przypisanie wartości całkowitej do bloku, który wchodzi w interakcję z kociołem, cyklem i piecem.
+The HeatRegistry allows assigning an integer value to a block that interacts with the Cauldron, Crucible and Kiln.
 
-* Wartości domyślne: Ognisko Vanilla | 1 Ognisko Stoked | 2
+* Default Values: Vanilla fire | 1 Stoked Fire | 2
 
-# Dodawanie źródła ciepła
+# Adding a Heat Source
 
 ```zenscript
-//stack musi mieć zamaskowany stan bloku.
+//stack must have an asssociated block state.
 mods.betterwithmods.HeatRegistry.addHeatSource(IItemStack stack, int heat);
 
 mods.betterwithmods.HeatRegistry.addHeatSource(IBlockState stack, int heat);
