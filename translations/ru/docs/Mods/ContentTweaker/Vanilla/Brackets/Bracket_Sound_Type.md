@@ -1,26 +1,26 @@
-# Обработчик SoundType
+# SoundType Bracket Handler
 
-Обработчик SoundType Bracket дает вам доступ к SoundTypes в игре. В настоящее время поддерживаются только звуковые типы:
+The SoundType Bracket Handler gives you access to the SoundTypes in the game. Currently the only soundTypes supported are:
 
 <details>
-    <summary>Нажмите, чтобы развернуть список типов</summary>
+    <summary>Click to expand the type list</summary>
     <ul>
-        <li>Дерево</li>
-        <li>Земля</li>
-        <li>Растение</li>
-        <li>Камень</li>
-        <li>Металл</li>
-        <li>Стекло</li>
-        <li>Ткань</li>
-        <li>Песок</li>
-        <li>Снег</li>
-        <li>Лестница</li>
-        <li>Наковальня</li>
+        <li>Wood</li>
+        <li>Ground</li>
+        <li>Plant</li>
+        <li>Stone</li>
+        <li>Metal</li>
+        <li>Glass</li>
+        <li>Cloth</li>
+        <li>Sand</li>
+        <li>Snow</li>
+        <li>Ladder</li>
+        <li>Anvil</li>
         <li>Slime</li>
     </ul>
 </details>
 
-Звуковые типы ссылаются на обработчика SoundType таким образом:
+SoundTypes are referenced in the SoundType Bracket handler this way:
 
 ```zenscript
 <soundtype:name>
