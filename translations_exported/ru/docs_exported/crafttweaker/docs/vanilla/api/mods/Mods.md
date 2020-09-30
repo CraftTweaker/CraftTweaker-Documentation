@@ -1,4 +1,4 @@
-# Моды
+# Mods
 
 Зацепка информации обо всех зарегистрированных модах. Можно получить доступ с помощью `загруженных модов` глобального ключевого слова
 
@@ -10,7 +10,7 @@
 crafttweaker.api.mods.Mods
 ```
 
-## Методы
+## Methods
 ### getMod
 
 Получает определенный мод
@@ -24,9 +24,9 @@ loadedMods.getMod(modid as String);
 loadedMods.getMod("minecraft");
 ```
 
-| Параметр | Тип    | Описание             |
+| Параметр | Тип    | Description          |
 | -------- | ------ | -------------------- |
-| мод      | String | Описание отсутствует |
+| modid    | String | Описание отсутствует |
 
 
 ### isModLoaded
@@ -35,16 +35,16 @@ loadedMods.getMod("minecraft");
 
  Возвращается: `истина, если мод загружен`
 
-Тип возврата: логическое значение
+Return type: boolean
 
 ```zenscript
 loadedMods.isModaded(modid as String);
 loadedMods.isModLoaded("minecraft");
 ```
 
-| Параметр | Тип    | Описание         |
+| Параметр | Тип    | Description      |
 | -------- | ------ | ---------------- |
-| мод      | String | мод для проверки |
+| modid    | String | мод для проверки |
 
 
 
