@@ -1,6 +1,6 @@
-# 遠心分離器
+# Centrifugal Seperator
 
-## パッケージ
+## Package
 
 `mods.thermalexpansion.Centrifuge`
 
@@ -12,31 +12,31 @@ mods.thermalexpansion.Centrifuge.addRecipe([(<minecraft:gold_ingot> * 5) % 10, <
 
 ```
 
-## Mob の追加
+## Mob addition
 
-`fluid` can be null, in which case the default Thermal Expansion experience liquid will be used, the amount calculated from the `xp` field using the default `XP_TO_MB` constant from Thermal Expansion. カスタム液体を使用する場合、 `xp` フィールドは無視されます。
+`fluid` can be null, in which case the default Thermal Expansion experience liquid will be used, the amount calculated from the `xp` field using the default `XP_TO_MB` constant from Thermal Expansion. When using a custom liquid, the `xp` field is ignored.
 
-**カスタム流体がありません**:
+**No custom fluid**:
 
 ```zenscript
-//mods.thermalexpansion.Centrifuge.addRecipeMob(IEntityDefinition entity, WeightedItemStack[] outputs, @Nullable ILiquidStack fluid, int en, int xp);
+//mods.thermalexpansion.Centrifuge.addRecipeMob(IEntityDefinition entity, WeightedItemStack[] outputs, @Nullable ILiquidStack fluid, int energy, int xp);
 mods.thermalexpansion.Centrifuge.addRecipeMob(<entity:minecraft:slime>, [<minecraft:clay_ball>%50, <minecraft:ghast_tear>%10], null, 2000, 5);
 ```
 
-**カスタム流体**:
+**Custom fluid**:
 
 ```zenscript
 mods.thermalexpansion.Centrifuge.addRecipeMob(<entity:minecraft:slime>, [<minecraft:gunpowder>%100], <liquid:lava>*20, 2000, 0);
 ```
 
-## 削除
+## Removal
 
 ```zenscript
 //mods.thermalexpansion.Centrifuge.removeRecipe(IItemStack input);
 mods.thermalexpansion.Centrifuge.removeRecipe(<minecraft:gold_ore>);
 ```
 
-## Mob の削除
+## Mob removal
 
 ```zenscript
 //mods.thermalexpansion.Centrifuge.removeRecipeMob(IEntityDefinition entity);
