@@ -1,83 +1,83 @@
-# 肥料（肥料）
+# Fertilizers
 
-クラスパス: `mods.botanypots.Fertilizer`
+Class path: `mods.botanypots.Fertilizer`
 
-## 使用
+## Use
 
-使用するには、 `import mods.botanypots.Fertilizer;` をスクリプトの先頭にあるクラスをインポートします。
+To use, import the class with `import mods.botanypots.Fertilizer;` at the beginning of your script.
 
-## 肥料の作成
+## Creating Fertilizers
 
-`Fertilizer.create(id, 食材, minTick, maxTick);`
+`Fertilizer.create(id, ingredient, minTick, maxTick);`
 
-- `id` &lt;string> 新しい肥料のid。 これは、有効な `namespace:path` 形式でなければならない名前空間IDです。
-- `材料` <[原料](/vanilla/api/items/IIngredient)> 肥料に使われるアイテム。
-- `minTick` &lt;int> 肥料によって追加される最小ティック数。
-- `maxTick` &lt;int> 肥料によって追加されるティックの最大量。
+- `id` &lt;string> The id of the new fertilizer. This is a namespaced id an must be in the valid `namespace:path` format.
+- `ingredient` <[IIngredient](/vanilla/api/items/IIngredient)> The item used for the fertilizer.
+- `minTick` &lt;int> The minimum amount of ticks added by the fertilizer.
+- `maxTick` &lt;int> The maximum amount of ticks added by the fertilizer.
 
-新しい肥料を作成します。 これらは作物をより早く栽培するために使用できます。
+Creates a new fertilizer. These can be used to grow crops faster.
 
 ```zenscript
 Fertilizer.create("examplepack:stick", <item:minecraft:stick>, 250, 550);
 ```
 
-## 肥料を削除する
+## Removing Fertilizers
 
 `Fertilizer.remove(id);`
 
-- `id` &lt;string> 肥料のid。 これは、有効な `namespace:path` 形式でなければならない名前空間IDです。
+- `id` &lt;string> The id of the fertilizer. This is a namespaced id an must be in the valid `namespace:path` format.
 
-これは肥料を除去するために使用することができます。
+This can be used to remove a fertilizer.
 
 ```zenscript
-Fertilizer.remove("botanypots:肥料/bone_meal");
+Fertilizer.remove("botanypots:fertilizers/bone_meal");
 ```
 
-## 肥料の効果を変更
+## Changing Fertilizer Ticks
 
 `Fertilizer.setTicks(String id, int minTick, int maxTick);`
 
-- `id` &lt;string> 肥料のid。 これは、有効な `namespace:path` 形式でなければならない名前空間IDです。
-- `minTick` &lt;int> 肥料によって追加された新しい最小ティック数。
-- `maxTick` &lt;int> 肥料によって追加される最大ティック数。
+- `id` &lt;string> The id of the fertilizer. This is a namespaced id an must be in the valid `namespace:path` format.
+- `minTick` &lt;int> The new minimum amount of ticks added by the fertilizer.
+- `maxTick` &lt;int> The new maximum amount of ticks added by the fertilizer.
 
-これは、肥料によって追加された成長ダニの範囲を変更します。
-
-```zenscript
-Fertilizer.setTicks("botanypots:肥料/bone_meal", 800, 900);
-```
-
-## 肥料材料の変更
-
-`Fertilizer.setIngredient(id, 食材);`
-
-- `id` &lt;string> 肥料のid。 これは、有効な `namespace:path` 形式でなければならない名前空間IDです。
-- `材料` <[原料](/vanilla/api/items/IIngredient)> 肥料に使用される新しいアイテム。
-
-肥料である成分アイテムを設定します。
+This will change the growth tick range added by the fertilizer.
 
 ```zenscript
-Fertilizer.setIngredient("botanypots:肥料/bone_meal", <item:minecraft:sugar>);
+Fertilizer.setTicks("botanypots:fertilizers/bone_meal", 800, 900);
 ```
 
-## すべてのIDを取得
+## Changing Fertilizer Ingredients
+
+`Fertilizer.setIngredient(id, ingredient);`
+
+- `id` &lt;string> The id of the fertilizer. This is a namespaced id an must be in the valid `namespace:path` format.
+- `ingredient` <[IIngredient](/vanilla/api/items/IIngredient)> The new item to be used for the fertilizer.
+
+Sets the ingredient item that is the fertilizer.
+
+```zenscript
+Fertilizer.setIngredient("botanypots:fertilizers/bone_meal", <item:minecraft:sugar>);
+```
+
+## Getting All Ids
 
 `Fertilizer.getAllIds();`
 
-- 戻り値: &lt;string[]> これは実行された時点のすべての既知の肥料idの配列。
+- Returns: &lt;string[]> An array of all known fertilizer ids at the time this is ran.
 
-これにより、当時のすべての既知の肥料idの配列が得られます。
+This will give you an array of all the known fertilizer ids at the time.
 
 ```zenscript
-// 全てのIDをcrafttweaker.logファイルにログする
-for followerId in Fertilizer.getAllIds() {
-    println(failerId);
+// Log all ids to the crafttweaker.log file
+for fertilizerId in Fertilizer.getAllIds() {
+    println(fertilizerId);
 }
 ```
 
-## すべての肥料を削除しています
+## Removing All Fertilizers
 
-これは現在登録されているすべての肥料を完全に取り除きます。 これは、スクリプトを介してゼロからすべてのデータを再作成したい場合に便利です。
+This will completely remove all the fertilizers currently registered. This is useful for if you want to recreate all the data from scratch through scripts.
 
 ```zenscript
 Fertilizer.removeAll();
