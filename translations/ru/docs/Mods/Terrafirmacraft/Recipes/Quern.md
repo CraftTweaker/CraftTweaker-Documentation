@@ -1,6 +1,6 @@
 # Quern
 
-## Пакет
+## Package
 ```zenscript
 import mods.terrafirmacraft.Quern;
 ```
@@ -8,12 +8,12 @@ import mods.terrafirmacraft.Quern;
 ## Сложение
 
 ```zenscript
-Quern.addRecipe(String registryName, IIngredient input, IItemStack);
+Quern.addRecipe(String registryName, IIngredient input, IItemStack output);
 ```
 
-## Удаление
+## Removal
 
 ```zenscript
-Quern.removeRecipe(IItemStack);
+Quern.removeRecipe(IItemStack output);
 Quern.removeRecipe(String registryName);
 ```
