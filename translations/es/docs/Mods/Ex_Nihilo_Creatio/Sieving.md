@@ -1,8 +1,8 @@
 # Sieving
 
-## Paquete
+## Package
 
-Para acceder a `Sieve` sin aclarar la ruta completa, puede importar el paquete en la parte superior de su Script con lo siguiente:
+To access `Sieve` without clarifying the full path, you can import the package at the top of your Script with the following:
 
 ```zenscript
 mods.exnihilocreatio.SieveSieve;
@@ -10,38 +10,38 @@ mods.exnihilocreatio.SieveSieve;
 
 ## Metodos
 
-- **[IIngrediente](/Vanilla/Variable_Types/IIngredient/) bloque** El bloque que suelta la salida.
-- **[ItemStack](/Vanilla/Items/IItemStack/) salida** El elemento que cae del bloque..
-- **Probabilidad flotante** La probabilidad debe estar entre 0-1.
+- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) block** The block that drops the output.
+- **[IItemStack](/Vanilla/Items/IItemStack/) output** The item that drops from the block..
+- **Float chance** The chance should be between 0-1.
 
-## Malla de cuerda
+## String Mesh
 
 ```zenscript
 addFlintMeshRecipe(IIngredient, IItemStack, Float chance);
 addFlintMeshRecipe(<minecraft:gravel>, <minecraft:diamond>, 0.01);
 ```
 
-## Malla de Flint
+## Flint Mesh
 
 ```zenscript
 addIronMeshRecipe(IIngredient, IItemStack, Float chance);
 addIronMeshRecipe(<minecraft:gravel>, <minecraft:diamond>, 0.1);
 ```
 
-## Malla de hierro
+## Iron Mesh
 
 ```zenscript
 addDiamondMeshRecipe(IIngredient, IItemStack, Float chance);
 addDiamondMeshRecipe(<minecraft:gravel>, <minecraft:diamond>, 1);
 ```
 
-## Malla de Diamante
+## Diamond Mesh
 
 ```zenscript
 mods.exnihilocreatio.Sieve.removeAll();
 ```
 
-## Eliminar
+## Removal
 
 ```zenscript
 Sieve.removeAll();
