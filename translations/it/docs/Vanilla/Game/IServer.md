@@ -1,30 +1,30 @@
 # IServer
 
-## Importazione del pacchetto
+## Importing the package
 
-Potrebbe essere necessario importare il pacchetto se si incontrano problemi (come lanciare un [Array](/AdvancedFunctions/Arrays_and_Loops/)), quindi meglio essere sicuri che spiacenti e aggiungere l'importazione.  
+It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
 `import crafttweaker.server.IServer;`
 
-## Estensione Di ICommandSender
+## Extending ICommandSender
 
 IServer extends [ICommandSender](/Vanilla/Commands/ICommandSender), so all methods that are available for an [ICommandSender](/Vanilla/Commands/ICommandSender) object are also available for an IServer object.
 
-## Accedi al gestore del server
+## Access the Server Handler
 
-È possibile accedere al Server Handler utilizzando la parola chiave globale `server` [](/Vanilla/Global_Functions/).  
-In alternativa è possibile ottenere il server da qualsiasi [ICommandSender](/Vanilla/Commands/ICommandSender/).
+You can access the Server Handler using the `server` [global keyword](/Vanilla/Global_Functions/).  
+Alternatively you can get the server from any [ICommandSender](/Vanilla/Commands/ICommandSender/).
 
-## Verifica se un [giocatore](/Vanilla/Players/IPlayer/) è OP
+## Check if a [player](/Vanilla/Players/IPlayer/) is OP
 
-Puoi usarlo per controllare se un [IPlayer](/Vanilla/Players/IPlayer/) ha il permesso OP:
+You can use this to check if an [IPlayer](/Vanilla/Players/IPlayer/) has the OP permission:
 
 ```zenscript
 server.isOP(player);
 ```
 
-## Ottieni il gestore dei comandi
+## Get the command manager
 
-È possibile utilizzare questo per ottenere il [ICommandManager](/Vanilla/Commands/ICommandManager/)
+You can use this to get the [ICommandManager](/Vanilla/Commands/ICommandManager/)
 
 ```zenscript
 server.commandManager;
