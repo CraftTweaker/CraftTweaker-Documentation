@@ -1,56 +1,56 @@
-# Piła
+# Saw
 
-## Podstawowy przepis
+## Basic Recipe
 
-* Dodaje piaskowy przepis - dane wejściowe *MUSI* mają powiązany z nimi blok.
+* Adds Saw Recipe - inputs *MUST* have a block associated with them.
 
 ```zenscript
-mods.betterwithmods.Saw.add(IIngredient inputt, IItemStack[] output);
+mods.betterwithmods.Saw.add(IIngredient input, IItemStack[] output);
 //Examples
 mods.betterwithmods.Saw.add(<minecraft:fence>,[<minecraft:stick>,<minecraft:stick>]);
 ```
 
-## Usuwanie przez wejście
+## Removal by input
 
-* Usuń przepis na podstawie składnika wejściowego
-
-```zenscript
-mods.betterwithmods.Saw.remove(Input);
-```
-
-## Usuwanie przez wyjście
-
-* Usuń przepis na podstawie wyjścia
+* Remove a recipe based on the input ingredient
 
 ```zenscript
-mods.betterwithmods.Saw.remove(wyjścia IItemStack[]);
+mods.betterwithmods.Saw.remove(IIngredient input);
 ```
 
-## Usuń wszystkie
+## Removal by output
 
-* Usuń wszystkie przepisy
+* Remove a recipe based on the output
+
+```zenscript
+mods.betterwithmods.Saw.remove(IItemStack[] outputs);
+```
+
+## Remove all
+
+* Remove all recipes
 
 ```zenscript
 mods.betterwithmods.Saw.removeAll();
 ```
 
-## Konstruktor
+## Builder
 
-Piła ma konstruktora receptury. Ze względu na charakter wibracji, nie ma ona obecnie żadnych specjalnych metod konstrukcyjnych, nie będę go dokumentować bez wyjątku.
+The Saw has a recipe builder. Due to the nature of the saw it currently has no special builder methods, I will document it none-the-less.
 
-* Aby utworzyć nowego budowniczego piór. `mods.betterwithmods.Saw.builder()`
+* To create a new Saw builder. `mods.betterwithmods.Saw.builder()`
 
-* Metody łapania
+* Saw methods
      
-     * Ustawia wejścia i wyjścia przepisu  
+     * Sets up the inputs and outputs of the recipe  
               zenscript
-              buildRecipe(IIngredient[] wejścia IItemStack[] wyjścia
+              buildRecipe(IIngredient[] inputs, IItemStack[] outputs)
      
-     * Sfinalizuj przepis i dodaj go do gry  
+     * Finalize the recipe and add it to the game  
               zenscript
               build()
 
-### Przykładowe użycie konstruktora
+### Example builder usage
 
     mods.betterwithmods.Saw.builder()
     .buildRecipe([<minecraft:oak_fence>], [<minecraft:stick>*6])
