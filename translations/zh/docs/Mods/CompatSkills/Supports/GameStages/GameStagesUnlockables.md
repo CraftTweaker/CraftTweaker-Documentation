@@ -1,44 +1,44 @@
-# 阶段解锁项
+# Stage-Unlockables
 
-## 可解锁
+## Unlockables
 
-GameStages支持的这一部分将侧重于后面的表格。 解锁游戏阶段的Aka "虚拟特性"。
+This part of the GameStages support will focus on the later form. Aka "Dummy Traits" for unlocking GameStages.
 
-## 资源信息：
+## Resource Information:
 
-当创建一个新的虚拟特性时，你会注意到一些东西丢失：
+When creating a new dummy trait you'll notice a few things are missing:
 
-- 未本地化名称
-- 未本地化描述
-- 没有图标
+- Unlocalized Name
+- Unlocalized Description
+- No Icon is present
 
-这是因为需要资源。 在目前阶段，Compatskill的技能并不能提供本能提供这些知识的能力。 围绕这个问题有几种方式：
+This is due to these things requiring Resources. At the current stage CompatSkills does not provide the ability to provide these natively. There are a few ways around this:
 
-- 使用 BASE 与它自己的资源加载器 (仅在 ContentTinfinder 因为BASE 如何工作而存在时才能工作)
-- 使用Lumien的 ResourceLoader
+- Use BASE which comes with its own resource loader (Only works if ContentTweaker is present due to how BASE works).
+- Use ResourceLoader by Lumien.
 
-本地化正在向前发展。
+Localization is pretty straight forward.
 
     assets/compatskills/lang/en_us.lang
     
-    en_us.lang = 英语翻译
+    en_us.lang = English Translation
     
 
-但特性图标的纹理路径如下：
+However the texture path for the trait icon is as follows:
 
     assets/compatskills/textures/unlockables/name.png
     
-    所以如果名称为“banana”，路径将如下所示：
+    So if the name is "banana", The Path would be as follows:
     
     assets/compatskills/textures/unlockables/banana.png
     
 
-### 语法：
+### Syntax:
 
-    空白示例：
-    mods.compatskills.GameStageunlockable.addGameStageUnlockable(String gamestage, String name, inter x, int y, String skillnume, int costs, @Opinion String... 默认要求;
+    Blank Example:
+    mods.compatskills.GameStageUnlockable.addGameStageUnlockable(String gamestage, String name, int x, int y, String skillName, int cost, @Optional String... defaultRequirements);
     
-    工作示例:
-    mods.compatskills.GameStageUnlockable.addGameStageUnlockable("a", "a", 0, "reskillable:collection", 3, "stage|test");
-    mods.compatskills.GameStageUnlockable dddGameStageUnlockable("b", "b", 0, 1, "reskillable:collection", 3, "adv|minecraft:harmry/plant_seed");
-    mods.compatskills.GameStageunlockable.addGameStageUnlockable("c", "c", 0, 2, "reskillable:greating", 3, "trait|compatskills:b");
+    Working Example(s):
+    mods.compatskills.GameStageUnlockable.addGameStageUnlockable("a", "a", 0, 0, "reskillable:gathering", 3, "stage|test");
+    mods.compatskills.GameStageUnlockable.addGameStageUnlockable("b", "b", 0, 1, "reskillable:gathering", 3, "adv|minecraft:husbandry/plant_seed");
+    mods.compatskills.GameStageUnlockable.addGameStageUnlockable("c", "c", 0, 2, "reskillable:gathering", 3, "trait|compatskills:b");
