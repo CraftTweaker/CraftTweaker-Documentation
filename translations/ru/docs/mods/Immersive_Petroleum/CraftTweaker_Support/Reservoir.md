@@ -1,6 +1,6 @@
-# Водохранилище
+# Reservoir
 
-## удалить
+## remove
 
 | Название    | Тип    |
 | ----------- | ------ |
@@ -13,7 +13,7 @@
 mods.immersivepetroleum.ReservoirRegistry.remove("водоносный горизонт");
 ```
 
-## удалить все
+## removeAll
 
 | Название | Тип |
 | -------- | --- |
@@ -30,27 +30,27 @@ mods.immersivepetroleum.ReservoirRegistry.removeAll();
 
 ## конструктор
 
-| Название            | Тип                                         |
-| ------------------- | ------------------------------------------- |
-| Жидкость            | [Fluidstack](/Vanilla/Liquids/IFluidStack/) |
-| Минимальный размер  | int                                         |
-| Максимальный размер | int                                         |
-| Скорость пополнения | int                                         |
-| Вес                 | int                                         |
+| Название       | Тип                                         |
+| -------------- | ------------------------------------------- |
+| Fluid          | [Fluidstack](/Vanilla/Liquids/IFluidStack/) |
+| Minimum Size   | int                                         |
+| Maximum Size   | int                                         |
+| Replenish Rate | int                                         |
+| Weight         | int                                         |
 
-### Вес
+### Weight
 
-Вес - Вес Веса Шанс на чанк, содержащий конкретный жидкий резервуар. Вес считается как в X в Тотале.
+Weight is the Weighted Chance of a chunk containing that specific fluid reservoir. The weight is counted as in X in Total.
 
-Таким образом, если у вас есть 5 значений резервуара в: 5, 5, 6, 8, 10
+So if you have 5 Reservoir values at: 5, 5, 6, 8, 10
 
-Тогда каждая соответствующая запись будет иметь взвешенный шанс:
+Then each respective entry will have a weighted chance of:
 ```
-5 в 34
-5 в 34
-6 в 34
-8 в 34
-10 в 34
+5  in 34
+5  in 34
+6  in 34
+8  in 34
+10 in 34
 ```
 
 Пример:
@@ -64,7 +64,7 @@ new mods.immersivepetroleum.ReservoirBuilder(<fluid:minecraft:lava>, 1000, 5000,
 
 | Название          | Тип            |
 | ----------------- | -------------- |
-| Черный список     | Boolean        |
+| Blacklist         | Boolean        |
 | Названия размеров | Список строк[] |
 
 Пример:
@@ -78,7 +78,7 @@ builderInstance.addDimensions(false, ["minecraft:overworld"]);
 
 | Название        | Тип            |
 | --------------- | -------------- |
-| Черный список   | Boolean        |
+| Blacklist       | Boolean        |
 | Названия биомов | Список строк[] |
 
 Пример:
@@ -88,7 +88,7 @@ builderInstance.addDimensions(false, ["minecraft:overworld"]);
 builderInstance.addBiomes(false, ["minecraft:plains"]);
 ```
 
-## сборка
+## build
 
 | Название | Тип    |
 | -------- | ------ |
