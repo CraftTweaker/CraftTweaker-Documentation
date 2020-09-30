@@ -1,28 +1,28 @@
 # PlayerAnvilRepair
 
-プレイヤーがアンビルで何かをクラフトすると、PlayerAnvilRepairイベントが発生します。  
-アンビルが破壊される確率を変更できます。
+The PlayerAnvilRepair Event is fired whenever a player crafts something in the anvil.  
+You can change the chance that the anvil is damaged.
 
-## イベントクラス
+## Event Class
 
 You will need to cast the event in the function header as this class:  
 `crafttweaker.event.PlayerAnvilRepairEvent`  
 You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
 
-## イベントインターフェースの拡張
+## Event interface extensions
 
-PlayerAnvilRepair Events 次のインターフェイスを実装し、それらのメソッド/ゲッター/セッターをすべて呼び出すことができます。
+PlayerAnvilRepair Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
 
 - [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
 
 ## ZenGetters
 
-イベントから次の情報を取得できます。
+The following information can be retrieved from the event:
 
-| ZenGetter        | ZenSetter  | 戻り値                                      |
-| ---------------- | ---------- | ---------------------------------------- |
-| `プレイヤー`          |            | [IPlayer](/Vanilla/Players/IPlayer/)     |
-| `itemInput`      |            | [IItemStack](/Vanilla/Items/IItemStack/) |
-| `itemIngredient` |            | [IItemStack](/Vanilla/Items/IItemStack/) |
-| `itenResult`     |            | [IItemStack](/Vanilla/Items/IItemStack/) |
-| `ブレイクチャンス`       | `ブレイクチャンス` | float型                                   |
+| ZenGetter        | ZenSetter     | 戻り値                                      |
+| ---------------- | ------------- | ---------------------------------------- |
+| `player`         |               | [IPlayer](/Vanilla/Players/IPlayer/)     |
+| `itemInput`      |               | [IItemStack](/Vanilla/Items/IItemStack/) |
+| `itemIngredient` |               | [IItemStack](/Vanilla/Items/IItemStack/) |
+| `itenResult`     |               | [IItemStack](/Vanilla/Items/IItemStack/) |
+| `breakChance`    | `breakChance` | float                                    |
