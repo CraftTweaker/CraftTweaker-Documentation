@@ -1,16 +1,16 @@
-# Źródła ciepła
+# Heating Sources
 
-## Pakiet
+## Package
 ```zenscirpt
-`mods.exnihilocreo.Heat`
+`mods.exnihilocreatio.Heat`
 ```
 
-## Metody
+## Methods
 
-- **[IItemStack](/Vanilla/Items/IItemStack/) wejście** Blok, który dostarcza ciepło.
-- **ciepło wsadowe** ciepło na wystąpienie.
+- **[IItemStack](/Vanilla/Items/IItemStack/) input** The block that supplies heat.
+- **Int heat** heat per instance.
 
-## Dodanie
+## Addition
 
 ```zenscript
 mods.exnihilocreatio.Heat.addRecipe(IItemStack, Int);
@@ -18,7 +18,7 @@ mods.exnihilocreatio.Heat.addRecipe(IItemStack, Int);
 mods.exnihilocreatio.Heat.addRecipe(<minecraft:log>, 20);
 ```
 
-## Usuwanie
+## Removal
 
 ```zenscript
 mods.exnihilocreatio.Heat.removeAll();
