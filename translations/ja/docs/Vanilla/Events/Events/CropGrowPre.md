@@ -1,28 +1,27 @@
-# クロップGrowPreEvent
+# CropGrowPreEvent
 
-クロップグロプレイベントは、作物が成長しようとすると発生します。 **結果** があり、デフォルトの動作が発生するかどうかを決定します。
+The CropGrowPre Event is fired when crops attempt to grow. It has a **result** which determines whether the default behaviour occurs or not:
 
-- **allow**: 作物は成長を余儀なくされる。
-- **deny**: 作物の成長が妨げられている。
-- **default**: 攻撃はデフォルトのバニラ動作を使用する。
+- **allow**: the crop is forced to grow.
+- **deny**: the crop is prevented from growing.
+- **default**: the attack uses default Vanilla behaviour.
 
-## イベントクラス
-関数ヘッダーのイベントをこのクラスとしてキャストする必要があります:  
-`crafttweaker.event. ropGrowPreEvent <br x-id="2" /> 
- <code>`  
-前にクラスをインポート [](/AdvancedFunctions/Import/) して、その名前を使用することもできます。
+## Event Class
+You will need to cast the event in the function header as this class:  
+`crafttweaker.event.CropGrowPreEvent`  
+You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
 
-## イベントインターフェースの拡張
-CropGrowPost イベントは、以下のインターフェイスを実装し、すべてのメソッド/getters/setter を呼び出すことができます。
+## Event interface extensions
+CropGrowPost Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
 
 - [IBlockEvent](/Vanilla/Events/Events/IBlockEvent/)
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 
 
 ## ZenGetters
-イベントから次の情報を取得できます。
+The following information can be retrieved from the event:
 
-| ZenGetter            | ZenSetter | タイプ                                         |
+| ZenGetter            | ZenSetter | Type                                        |
 | -------------------- | --------- | ------------------------------------------- |
 | `originalBlockState` |           | [IBlockState](/Vanilla/Blocks/IBlockState/) |
 | `originalBlock`      |           | [IBlock](/Vanilla/Blocks/IBlock/)           |
