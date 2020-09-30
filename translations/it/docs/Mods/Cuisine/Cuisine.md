@@ -1,13 +1,13 @@
-# Cucina
+# Cuisine
 
-## Informazioni
+## Information
 
-La cucina è un mod sull'arte culinaria realistica. La cucina ha il supporto integrato per CraftTweaker per consentire al creatore di modpack di cambiare le ricette per vari dispositivi dalla Cuisine mod.
+Cuisine is a mod about realistic culinary art. Cuisine has built-in support for CraftTweaker to allow modpack creator to change recipes for various devices from the Cuisine mod.
 
-## Per ulteriori informazioni
+## For more Information
 
 https://www.curseforge.com/minecraft/mc-mods/cuisine
 
-## Segnalazioni bug
+## Bug reports
 
 https://github.com/Snownee/Cuisine/issues
