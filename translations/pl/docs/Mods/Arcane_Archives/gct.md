@@ -1,50 +1,50 @@
-### Klasa
+### Class
 
 ```zenscript
 import mods.arcanearchives.GCT;
 ```
 
-#### Metody
+#### Methods
 
 ```zenscript
-Unieważnij przepis(
-  nazwa ciągu, // nazwa przepisu
-  wyjście IItemStack, // wyjście jako element
-  ISkładnik [] wejścia // wejścia jako tablicę składników
+void addRecipe(
+  string name,         // the recipe name
+  IItemStack output,   // the output as an itemstack
+  IIngredient[] inputs // the inputs as an array of ingredients
 );
 ```
 
 * * *
 
 ```zenscript
-Unieważnij usunięcieRecype(
-  IItemStack wyjście // wyjściowy stos do usunięcia (ilość musi się zgadzać)
+void removeRecipe(
+  IItemStack output // the output itemstack to be removed (quantity must match)
 );
 ```
 
 * * *
 
 ```zenscript
-unieważnienie zastępujące eRecipe(
-  nazwa ciągu, // nazwa receptury (musi już istnieć)
-  Wyjście IItemStack // wyjście jako element
-  ISkładnik [] wejścia // wejścia jako tablicę składników
+void replaceRecipe(
+  string name,         // the recipe name (must already exist)
+  IItemStack output,   // the output as an itemstack
+  IIngredient[] inputs // the inputs as an array of ingredients
 );
 ```
 
 * * *
 
-### Przykłady
+### Examples
 
 ```zenscript
 import mods.arcanearchives.GCT;
 
-// Usuwa przepis na promienny pył
+// Removes the recipe for radiant dust
 GCT.removeRecipe(<arcanearchives:radiant_dust>*2);
 
-// Dodaje nowy przepis na promienny pył
-GCT. ddRecipe("radiant_dust", <arcanearchives:radiant_dust>*2, [<minecraft:flint>, <arcanearchives:raw_quartz>]);
+// Adds a new recipe for radiant dust
+GCT.addRecipe("radiant_dust", <arcanearchives:radiant_dust>*2, [<minecraft:flint>, <arcanearchives:raw_quartz>]);
 
-// Zastępuje promienną recepturę kwarcową bez zakłócania ekranu GCT
-GCT. eplaceRecipe("shaped_quartz", <arcanearchives:shaped_quartz>, [<arcanearchives:raw_quartz>*10]);
+// Replaces the shaped radiant quartz recipe without disordering the GCT screen
+GCT.replaceRecipe("shaped_quartz", <arcanearchives:shaped_quartz>, [<arcanearchives:raw_quartz>*10]);
 ```
