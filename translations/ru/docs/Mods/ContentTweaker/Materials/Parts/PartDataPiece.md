@@ -1,30 +1,30 @@
 # PartDataPiece
 
-Часть данных может быть добавлена в [часть типа](/Mods/ContentTweaker/Materials/Parts/PartType/) , чтобы иметь возможность добавить некоторые [MaterialPartData](/Mods/ContentTweaker/Materials/Materials/MaterialPartData/) в [MaterialParts](/Mods/ContentTweaker/Materials/Materials/MaterialPart/) созданные с [частями](/Mods/ContentTweaker/Materials/Parts/Part/) , которые являются этой [PartType](/Mods/ContentTweaker/Materials/Parts/PartType/).
+A part Data piece can be added to a [PartType](/Mods/ContentTweaker/Materials/Parts/PartType/) to be able to add some [MaterialPartData](/Mods/ContentTweaker/Materials/Materials/MaterialPartData/) to [MaterialParts](/Mods/ContentTweaker/Materials/Materials/MaterialPart/) created with [Parts](/Mods/ContentTweaker/Materials/Parts/Part/) that are of this [PartType](/Mods/ContentTweaker/Materials/Parts/PartType/).
 
 ## Импорт пакета
 
-Возможно, вам потребуется импортировать пакет, если вы столкнетесь с какими-либо проблемами, так что лучше быть безопасным чем извините и добавьте импорт.  
-`импорт mods.contenttweaker.PartDataPiece;`
+It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
+`import mods.contenttweaker.PartDataPiece;`
 
-## Получение такого объекта
+## Retrieving such an object
 
-Вы можете получить список [частей](/Mods/ContentTweaker/Materials/Parts/Part/) DataPieces, используя `getData()` на [части](/Mods/ContentTweaker/Materials/Parts/Part/).
+You can get a List of a [Parts](/Mods/ContentTweaker/Materials/Parts/Part/) DataPieces using `getData()` on a [Part](/Mods/ContentTweaker/Materials/Parts/Part/).
 
-Кроме того, вы можете зарегистрировать новую часть DataPiece, используя [MaterialSystem](/Mods/ContentTweaker/Materials/MaterialSystem/):
+Alternatively, you can register a new PartDataPiece using the [MaterialSystem](/Mods/ContentTweaker/Materials/MaterialSystem/):
 
 ```zenscript
-mods.contenttweaker.MaterialSystem.createPartDataPiece(String name, boolean booled)
+mods.contenttweaker.MaterialSystem.createPartDataPiece(String name, boolean required)
 ```
 
-Параметры:
+Parameters:
 
-- Название строки: Имя новой части
-- boolean требуется: требуется ли присутствие PartDataPiece на [MaterialParts](/Mods/ContentTweaker/Materials/Materials/MaterialPart/) , чтобы зарегистрировать его?
+- String name: The new PartDataPiece's name
+- boolean required: Is the PartDataPiece required to be present on a [MaterialParts](/Mods/ContentTweaker/Materials/Materials/MaterialPart/) in order to register it?
 
 ## ZenMethods
 
-Вы можете получить следующую информацию от PartType:
+You can retrieve the following information from a PartType:
 
 | ZenMethod    | Возвращаемый тип |
 | ------------ | ---------------- |
