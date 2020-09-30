@@ -5,16 +5,16 @@
 ## 导入相关包
 如果遇到任何问题（例如强制转换数组），则可能需要导入软件包，因此，最好的方式就是导入包支持。
 ```zenscript
-craftminstruer.api.world.MCBiome
+crafttweaker.api.world.MCBiome
 ```
 
 ## 方法
 ### getSpawns
 
-返回列表<[craftmiliter.api.world.MCBiomeSpawnentre](/vanilla/api/world/MCBiomeSpawnEntry)>
+Returns List<[crafttweaker.api.world.MCBiomeSpawnEntry](/vanilla/api/world/MCBiomeSpawnEntry)>
 
 ```zenscript
-myMCBiome.getSpawns(分类为craftminstruer.api.entity.MCEntityClassification)；
+myMCBiome.getSpawns(classification as crafttweaker.api.entity.MCEntityClassification);
 ```
 
 | 参数                 | 类型                                                                                             | 描述                      |
@@ -22,20 +22,20 @@ myMCBiome.getSpawns(分类为craftminstruer.api.entity.MCEntityClassification)�
 | classification #类别 | [crafttweaker.api.entity.MCEntityClassification](/vanilla/api/entities/MCEntityClassification) | No description provided |
 
 
-### getTemp类别
+### getTempCategory
 
 返回字符串[String]
 
 ```zenscript
-a. myMCBiome.getTempcategory();
+myMCBiome.getTempCategory();
 ```
 
 ### getTemperature
 
-返回浮点数
+Returns float
 
 ```zenscript
-myMCBiome.getTemperature(pos as craftweeper.api.util.BlockPos)；
+myMCBiome.getTemperature(pos as crafttweaker.api.util.BlockPos);
 ```
 
 | 参数 | 类型                                                           | 描述                      |
@@ -46,25 +46,25 @@ myMCBiome.getTemperature(pos as craftweeper.api.util.BlockPos)；
 
 ## 参数
 
-| 名称             | 类型          | 可获得  | 可设置   |
-| -------------- | ----------- | ---- | ----- |
-| 类别             | 字符串[string] | true | false |
-| 默认温度           | 浮点数         | true | false |
-| 深度：            | 浮点数         | true | false |
-| 无雨             | boolean     | true | false |
-| 无雪             | boolean     | true | false |
-| 下落时            | 浮点数         | true | false |
-| 异高湿度           | boolean     | true | false |
-| isMutation     | boolean     | true | false |
-| isTempcold     | boolean     | true | false |
-| isTempmed中     | boolean     | true | false |
-| isTempOcean    | boolean     | true | false |
-| isTempWarm     | boolean     | true | false |
-| 父级             | 字符串[string] | true | false |
-| 雨类型            | 字符串[string] | true | false |
-| 缩放             | 浮点数         | true | false |
-| spawningChange | 浮点数         | true | false |
-| translationKey | 字符串[string] | true | false |
-| 水颜色            | 整数          | true | false |
-| 水彩色            | 整数          | true | false |
+| 名称                 | 类型      | 可获得  | 可设置   |
+| ------------------ | ------- | ---- | ----- |
+| category           | String  | true | false |
+| defaultTemperature | float   | true | false |
+| depth              | float   | true | false |
+| doesRain           | boolean | true | false |
+| doesSnow           | boolean | true | false |
+| downfall           | float   | true | false |
+| isHighHumidity     | boolean | true | false |
+| isMutation         | boolean | true | false |
+| isTempCold         | boolean | true | false |
+| isTempMedium       | boolean | true | false |
+| isTempOcean        | boolean | true | false |
+| isTempWarm         | boolean | true | false |
+| parent             | String  | true | false |
+| rainType           | String  | true | false |
+| scale              | float   | true | false |
+| spawningChange     | float   | true | false |
+| translationKey     | String  | true | false |
+| waterColor         | int     | true | false |
+| waterFogColor      | int     | true | false |
 
