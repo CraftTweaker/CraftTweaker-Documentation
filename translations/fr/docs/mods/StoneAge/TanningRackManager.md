@@ -1,20 +1,20 @@
-# Rack de Tannage
+# Tanning Rack
 
-## Paquet
-`Importer mods.stone_age.TanningRackManager;`
+## Package
+`import mods.stone_age.TanningRackManager;`
 
-## Méthodes
-- **Nom de la chaîne de caractères** Nom de la recette
+## Methods
+- **String name** Recipe name
 - **[IItemStack](/Vanilla/Items/IItemStack/) output**
-- **[Ingrédient](/Vanilla/Variable_Types/IIngredient/) entrée**
-- **[Outil Igredient](/Vanilla/Variable_Types/IIngredient/)**
-- **Groupe de chaînes** de recettes
+- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input**
+- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) tool**
+- **String group** Recipe group
 
-## Ajouter
+## Addition
 
 ```zenscript
-<recipetype:stone_age:tanning_rack>.addRecipe(String name, IItemStack sortie, Entrée IIngredient, IIngredient tool, @OptionalString group)
+<recipetype:stone_age:tanning_rack>.addRecipe(String name, IItemStack output, IIngredient input, IIngredient tool, @OptionalString String group)
 
-<recipetype:stone_age:tanning_rack>. ddRecipe("cuir", <item:minecraft:leather>, <item:minecraft:rotten_flesh>, <item:minecraft:iron_sword>, "cuir");
-TanningRackManager.INSTANCE.addRecipe("cuir", <item:minecraft:leather>, <item:minecraft:rotten_flesh>, <item:minecraft:iron_sword>, "cuir");
+<recipetype:stone_age:tanning_rack>.addRecipe("leather", <item:minecraft:leather>, <item:minecraft:rotten_flesh>, <item:minecraft:iron_sword>, "leather");
+TanningRackManager.INSTANCE.addRecipe("leather", <item:minecraft:leather>, <item:minecraft:rotten_flesh>, <item:minecraft:iron_sword>, "leather");
 ```
