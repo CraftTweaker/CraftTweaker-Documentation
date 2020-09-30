@@ -1,15 +1,15 @@
-# Блокировка приручения
+# Taming Locking
 
-## Блокировка животных
+## Animal-Tame Locking
 
-Эта функция позволяет вам добавлять требования в привязку определенных объектов.
+This feature allows for you to add requirement locks to taming specific entities.
 
-### Синтаксис
+### Syntax
 
-[Ссылка на IEntityDefinition](/Vanilla/Entities/IEntityDefinition/)
+[Link to IEntityDefinition](/Vanilla/Entities/IEntityDefinition/)
 
-    # Пустой Пример:
-    mods.compatskills.AnimalTameLock.addTameLock(IEntityDefinition definition, строка... defaultТребования);
+    # Blank Example:
+    mods.compatskills.AnimalTameLock.addTameLock(IEntityDefinition definition, String... defaultRequirements);
     
-    # Пример:
+    # Working Example:
     mods.compatskills.AnimalTameLock.addTameLock(<entity:minecraft:wolf>, "reskillable:mining|5", "reskillable:magic|7");
