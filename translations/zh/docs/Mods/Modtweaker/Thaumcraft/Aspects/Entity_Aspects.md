@@ -1,21 +1,21 @@
-# 实体方面
+# Entity Aspects
 
-插件的 Thaumcraft 集成扩展 [IentityDefine](/Vanilla/Entities/IEntityDefinition/)。  
-这意味着你可以在任何 IEntityDefinition 对象上使用下面的方法：
+Modtweaker's Thaumcraft integration extends [IEntityDefinition](/Vanilla/Entities/IEntityDefinition/).  
+That means that you can use the methods below on any IEntityDefinition object:
 
-## 设定方面
+## Set aspects
 
-您可以使用它来覆盖一个实体通常具有的方面。  
-需要 [CTAspectStack](/Mods/Modtweaker/Thaumcraft/Aspects/CTAspect/)[] 或更多 [CTAPotStack](/Mods/Modtweaker/Thaumcraft/Aspects/CTAspect/) 对象。
+You can use this to override what aspects an entity would normally have.  
+Requires a [CTAspectStack](/Mods/Modtweaker/Thaumcraft/Aspects/CTAspect/)[] or many [CTAspectStack](/Mods/Modtweaker/Thaumcraft/Aspects/CTAspect/) objects.
 
 ```zenscript
 <entity:sheep>.setAspects(<aspect:terra>*5);
 ```
 
-## 移除分组
+## Remove aspects
 
-您可以使用这个来防止某些方面被添加到实体中。  
-需要 [CTAspectStack](/Mods/Modtweaker/Thaumcraft/Aspects/CTAspect/)[] 或更多 [CTAPotStack](/Mods/Modtweaker/Thaumcraft/Aspects/CTAspect/) 对象。
+You can use this to prevent certain aspects from being added to an entity.  
+Requires a [CTAspectStack](/Mods/Modtweaker/Thaumcraft/Aspects/CTAspect/)[] or many [CTAspectStack](/Mods/Modtweaker/Thaumcraft/Aspects/CTAspect/) objects.
 
 ```zenscript
 <entity:blaze>.removeAspects(<aspect:ignis>);
