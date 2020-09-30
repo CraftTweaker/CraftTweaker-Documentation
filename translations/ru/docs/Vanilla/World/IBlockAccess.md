@@ -1,37 +1,37 @@
-# Доступ к IBlockAccess
+# IBlockAccess
 
-Объекты BlockAccess представляют собой группу блоков, доступных по координатам. Они в основном служат суперинтерфейсом к [IWorld](/Vanilla/World/IWorld/), это означает, что все эти функции также доступны для всех [IWorld](/Vanilla/World/IWorld/) объектов.
+BlockAccess objects are a group of blocks accessible via coordinates. They mainly serves as superinterface to [IWorld](/Vanilla/World/IWorld/), that means all these functions are also available to all [IWorld](/Vanilla/World/IWorld/) objects.
 
 ## Импорт класса
 
-Может потребоваться [импортировать](/AdvancedFunctions/Import/) класс, чтобы избежать ошибок.  
-`импорт crafttweaker.world.IBlockAccess`
+It might be required to [import](/AdvancedFunctions/Import/) the class to avoid errors.  
+`import crafttweaker.world.IBlockAccess`
 
 ## ZenMethods
 
-### Получить или установить состояние блокировки в определенном месте
+### Get or Set a blockState at a specific Position
 
-Используйте [IBlockPos](/Vanilla/World/IBlockPos/) объект и объект [IBlockState](/Vanilla/Blocks/IBlockState/) .  
-Возвращает [IBlockState](/Vanilla/Blocks/IBlockState/).
+Use an [IBlockPos](/Vanilla/World/IBlockPos/) Object and an [IBlockState](/Vanilla/Blocks/IBlockState/) Object.  
+Returns an [IBlockState](/Vanilla/Blocks/IBlockState/).
 
 ```zenscript
 accObj.getBlockState(IBlockPos pos);
 ```
 
-### Проверьте, является ли блок воздушным блоком.
+### Check if a block is an air block.
 
-Используйте [IBlockPos](/Vanilla/World/IBlockPos/) объект.  
-Возвращает рабочее пространство.
+Use an [IBlockPos](/Vanilla/World/IBlockPos/) object.  
+Returns a bool.
 
 ```zenscript
 accObj.isAirBlock(IBlockPos pos);
 ```
 
-### Получите сильную силу на стороне блока
+### Get strong Power at a block's side
 
-Используйте объект [IBlockPos](/Vanilla/World/IBlockPos/) и объект [IFacing](/Vanilla/World/IFacing/) .  
-Возвращает int.
+Use an [IBlockPos](/Vanilla/World/IBlockPos/) object and an [IFacing](/Vanilla/World/IFacing/) object.  
+Returns an int.
 
 ```zenscript
-accObj.getStrongPower(BlockPos var1, EnumFacing var2)
+accObj.getStrongPower(BlockPos var1, EnumFacing var2);
 ```
