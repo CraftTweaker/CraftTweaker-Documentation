@@ -1,24 +1,24 @@
-# Jugador Fundicionado
+# PlayerSmelted
 
-El Evento de Fundición de Jugadores se activa cada vez que un jugador saca algo de un horno.
+The PlayerSmelted Event is fired whenever a player takes something out of a furnace.
 
-## Clase de evento
+## Event Class
 
-Necesitarás lanzar el evento en la cabecera de la función como esta clase:  
-`crafttweaker.event. layerworeltedEvent`  
-Puede, por supuesto, también [importar](/AdvancedFunctions/Import/) la clase antes y utilizar ese nombre entonces.
+You will need to cast the event in the function header as this class:  
+`crafttweaker.event.PlayerSmeltedEvent`  
+You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
 
-## Extensiones de la interfaz de eventos
+## Event interface extensions
 
-Eventos Jugados implementan las siguientes interfaces y pueden llamar a todos sus métodos/getters/setters también:
+PlayerSmelted Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
 
-- [Evento IJugador](/Vanilla/Events/Events/IPlayerEvent/)
+- [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
 
 ## ZenGetters
 
-La siguiente información puede ser recuperada del evento:
+The following information can be retrieved from the event:
 
-| ZenGetter | Tipo de devolución                       |
+| ZenGetter | Return Type                              |
 | --------- | ---------------------------------------- |
-| `jugador` | [IPlayer](/Vanilla/Players/IPlayer/)     |
-| `salida`  | [IItemStack](/Vanilla/Items/IItemStack/) |
+| `player`  | [IPlayer](/Vanilla/Players/IPlayer/)     |
+| `output`  | [IItemStack](/Vanilla/Items/IItemStack/) |
