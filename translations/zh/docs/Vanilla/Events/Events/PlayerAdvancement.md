@@ -1,22 +1,22 @@
 # PlayerAdvancement
 
-每当一名玩家被授予高级版时，玩家升级活动就会被发射。
+The PlayerAdvancement Event is fired whenever a player is awarded an Advancement.
 
-## 事件类
+## Event Class
 
 You will need to cast the event in the function header as this class:  
 `crafttweaker.event.PlayerAdvancementEvent`  
 You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
 
-## 事件界面扩展
+## Event interface extensions
 
-PlayerAdvance事件实现了以下接口，并且能够调用他们所有的方法/getter/setter：
+PlayerAdvancement Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
 
 - [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
 
 ## ZenGetters
 
-以下信息可以从事件中检索：
+The following information can be retrieved from the event:
 
 | ZenGetter | 返回值类型  |
 | --------- | ------ |
@@ -24,10 +24,10 @@ PlayerAdvance事件实现了以下接口，并且能够调用他们所有的方�
 
 ## Id
 
-除了玩家事件所显示的功能外，您可以获得高级ID作为字符串。
+Apart from the functionality the PlayerEvent exposes you can get the advancement's ID as string.
 
-这可以是一个像这样的字符串
+This can for example be a string like
 
 ```zenscript
-“minecraft:story/mine_diamond”
+"minecraft:story/mine_diamond"
 ```
