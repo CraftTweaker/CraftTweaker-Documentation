@@ -1,60 +1,60 @@
-# Registrierte Einträge
+# Registered Entries
 
-Dies sind Basiseinträge, sie können um Addons oder spezielle Mod-Integrationen erweitert werden.
+These are base entries, they may be extended by addons or special mod integrations.
 
-| Name              | Hinzugefügt von                                                                                                                                                   |
+| Name              | Added by                                                                                                                                                          |
 | ----------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| "Münze"           | JAOPCA                                                                                                                                                            |
-| "Staub"           | JAOPCA                                                                                                                                                            |
+| "coin"            | JAOPCA                                                                                                                                                            |
+| "dust"            | JAOPCA                                                                                                                                                            |
 | "dustTiny"        | JAOPCA                                                                                                                                                            |
-| "staubklein"      | JAOPCA                                                                                                                                                            |
-| "Getriebe"        | JAOPCA                                                                                                                                                            |
+| "dustSmall"       | JAOPCA                                                                                                                                                            |
+| "gear"            | JAOPCA                                                                                                                                                            |
 | "nugget"          | JAOPCA                                                                                                                                                            |
-| "Plate"           | JAOPCA                                                                                                                                                            |
+| "plate"           | JAOPCA                                                                                                                                                            |
 | "plateDense"      | JAOPCA                                                                                                                                                            |
-| "Peitschen"       | JAOPCA                                                                                                                                                            |
+| "stick"           | JAOPCA                                                                                                                                                            |
 |                   |                                                                                                                                                                   |
 | "molten"          | JAOPCA                                                                                                                                                            |
 |                   |                                                                                                                                                                   |
-| "Block"           | JAOPCA                                                                                                                                                            |
-| Zaune             | [JAOPCAAdditions](https://minecraft.curseforge.com/projects/jaopcaadditions)                                                                                      |
-| "Wand"            | [JAOPCAAdditions](https://minecraft.curseforge.com/projects/jaopcaadditions)                                                                                      |
+| "block"           | JAOPCA                                                                                                                                                            |
+| "fence"           | [JAOPCAAdditions](https://minecraft.curseforge.com/projects/jaopcaadditions)                                                                                      |
+| "wall"            | [JAOPCAAdditions](https://minecraft.curseforge.com/projects/jaopcaadditions)                                                                                      |
 |                   |                                                                                                                                                                   |
-| "kristallabyss"   | JAOPCA + [AbyssalCraft](https://minecraft.curseforge.com/projects/abyssalcraft)                                                                                   |
-| "KristallCluster" | JAOPCA + [AbyssalCraft](https://minecraft.curseforge.com/projects/abyssalcraft)                                                                                   |
+| "crystalAbyss"    | JAOPCA + [AbyssalCraft](https://minecraft.curseforge.com/projects/abyssalcraft)                                                                                   |
+| "crystalCluster"  | JAOPCA + [AbyssalCraft](https://minecraft.curseforge.com/projects/abyssalcraft)                                                                                   |
 | "crystalFragment" | JAOPCA + [AbyssalCraft](https://minecraft.curseforge.com/projects/abyssalcraft)                                                                                   |
 | "crystalShard"    | JAOPCA + [AbyssalCraft](https://minecraft.curseforge.com/projects/abyssalcraft)                                                                                   |
 |                   |                                                                                                                                                                   |
-| "HotMolten"       | JAOPCA + [BuildCraft (1.11.2)](https://minecraft.curseforge.com/projects/buildcraft)                                                                              |
+| "hotMolten"       | JAOPCA + [BuildCraft (1.11.2)](https://minecraft.curseforge.com/projects/buildcraft)                                                                              |
 | "coolMolten"      | JAOPCA + [BuildCraft (1.11.2)](https://minecraft.curseforge.com/projects/buildcraft)                                                                              |
 | "searingMolten"   | JAOPCA + [BuildCraft (1.11.2)](https://minecraft.curseforge.com/projects/buildcraft)                                                                              |
 |                   |                                                                                                                                                                   |
 | "hunk"            | JAOPCA + [Ex Nihilo Creatio](https://minecraft.curseforge.com/projects/ex-nihilo-creatio)                                                                         |
-| "Stück"           | JAOPCA + [Ex Nihilo Creatio](https://minecraft.curseforge.com/projects/ex-nihilo-creatio)                                                                         |
+| "piece"           | JAOPCA + [Ex Nihilo Creatio](https://minecraft.curseforge.com/projects/ex-nihilo-creatio)                                                                         |
 |                   |                                                                                                                                                                   |
-| "zerdrückt"       | JAOPCA + [IndustrialCraft](https://minecraft.curseforge.com/projects/industrial-craft)                                                                            |
-| "gereinigt"       | JAOPCA + [IndustrialCraft](https://minecraft.curseforge.com/projects/industrial-craft)                                                                            |
+| "crushed"         | JAOPCA + [IndustrialCraft](https://minecraft.curseforge.com/projects/industrial-craft)                                                                            |
+| "purified"        | JAOPCA + [IndustrialCraft](https://minecraft.curseforge.com/projects/industrial-craft)                                                                            |
 |                   |                                                                                                                                                                   |
 | "rockyChunk"      | JAOPCA + [Magneticraft](https://minecraft.curseforge.com/projects/magneticraft)                                                                                   |
 | "chunk"           | JAOPCA + [Magneticraft](https://minecraft.curseforge.com/projects/magneticraft)                                                                                   |
 |                   |                                                                                                                                                                   |
-| "staubig"         | JAOPCA + [Mekanism](https://minecraft.curseforge.com/projects/mekanism)                                                                                           |
-| "klump"           | JAOPCA + [Mekanism](https://minecraft.curseforge.com/projects/mekanism)                                                                                           |
-| "Scherben"        | JAOPCA + [Mekanism](https://minecraft.curseforge.com/projects/mekanism)                                                                                           |
-| "Kristall"        | JAOPCA + [Mekanism](https://minecraft.curseforge.com/projects/mekanism)                                                                                           |
+| "dustDirty"       | JAOPCA + [Mekanism](https://minecraft.curseforge.com/projects/mekanism)                                                                                           |
+| "clump"           | JAOPCA + [Mekanism](https://minecraft.curseforge.com/projects/mekanism)                                                                                           |
+| "shard"           | JAOPCA + [Mekanism](https://minecraft.curseforge.com/projects/mekanism)                                                                                           |
+| "crystal"         | JAOPCA + [Mekanism](https://minecraft.curseforge.com/projects/mekanism)                                                                                           |
 | "slurryClean"     | JAOPCA + [Mekanism](https://minecraft.curseforge.com/projects/mekanism)                                                                                           |
 | "slurry"          | JAOPCA + [Mekanism](https://minecraft.curseforge.com/projects/mekanism)                                                                                           |
 |                   |                                                                                                                                                                   |
-| "OreChunk"        | [JAOPCA Erzteile](https://minecraft.curseforge.com/projects/aobd-ore-chunks)                                                                                      |
+| "oreChunk"        | [JAOPCA Ore Chunks](https://minecraft.curseforge.com/projects/aobd-ore-chunks)                                                                                    |
 |                   |                                                                                                                                                                   |
 | "teslaLump"       | JAOPCA + [Powered Thingies](https://minecraft.curseforge.com/projects/powered-thingies)                                                                           |
 | "augmentedLump    | JAOPCA + [Powered Thingies](https://minecraft.curseforge.com/projects/powered-thingies)                                                                           |
 |                   |                                                                                                                                                                   |
-| "Singularität"    | [JAOPCA Singularitäten](https://minecraft.curseforge.com/projects/jaopcasingularities)                                                                            |
+| "singularity"     | [JAOPCA Singularities](https://minecraft.curseforge.com/projects/jaopcasingularities)                                                                             |
 |                   |                                                                                                                                                                   |
-| "staubweis"       | JAOPCA + [Sky Resources](https://minecraft.curseforge.com/projects/sky-resources)                                                                                 |
+| "dustAlch"        | JAOPCA + [Sky Resources](https://minecraft.curseforge.com/projects/sky-resources)                                                                                 |
 | "dirtyGem"        | JAOPCA + [Sky Resources](https://minecraft.curseforge.com/projects/sky-resources)                                                                                 |
 |                   |                                                                                                                                                                   |
-| "staubklein"      | JAOPCA + [Tech Reborn](https://minecraft.curseforge.com/projects/techreborn)                                                                                      |
+| "dustSmall"       | JAOPCA + [Tech Reborn](https://minecraft.curseforge.com/projects/techreborn)                                                                                      |
 |                   |                                                                                                                                                                   |
 | "hardenedGlass"   | [JAOPCAAdditions](https://minecraft.curseforge.com/projects/jaopcaadditions) + [Thermal Foundation](https://minecraft.curseforge.com/projects/thermal-foundation) |
