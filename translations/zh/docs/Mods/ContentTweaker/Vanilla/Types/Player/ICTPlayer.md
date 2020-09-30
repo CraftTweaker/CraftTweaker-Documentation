@@ -1,19 +1,19 @@
 # ICTPlayer
 
-ICTPlayer 是 ContentTweaker 特殊的 [IPlayer](/Vanilla/Players/IPlayer/) 对象。  
-这意味着所有 [IPlayer](/Vanilla/Players/IPlayer/) 方法也可以在此对象上使用！
+An ICTPlayer is ContentTweaker's special [IPlayer](/Vanilla/Players/IPlayer/) object.  
+That means all of [IPlayer's](/Vanilla/Players/IPlayer/) methods are also available on this object!
 
 ## 导入相关包
 
-如果您遇到任何问题，可能需要导入软件包(例如铸造一个 [数组](/AdvancedFunctions/Arrays_and_Loops/)), 这样比抱歉更安全并添加导入。  
-`导入mods.contenttweaker.Player；`
+It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
+`import mods.contenttweaker.Player;`
 
 ## ZenMethods
 
 `IMutableItemStack getHeldItem(Hand hand);`
 
-参数：
+Parameters:
 
-- [Hand](/Mods/ContentTweaker/Vanilla/Types/Player/Hand/) hand -> Main or Off Hand
+- [Hand](/Mods/ContentTweaker/Vanilla/Types/Player/Hand/) hand → Main or Off Hand
 
-返回 [IMutableItemStack](/Mods/ContentTweaker/Vanilla/Types/Item/IMutableItemStack/) 在给定的 [Hand](/Mods/ContentTweaker/Vanilla/Types/Player/Hand/)。
+Returns the [IMutableItemStack](/Mods/ContentTweaker/Vanilla/Types/Item/IMutableItemStack/) held at the given [Hand](/Mods/ContentTweaker/Vanilla/Types/Player/Hand/).
