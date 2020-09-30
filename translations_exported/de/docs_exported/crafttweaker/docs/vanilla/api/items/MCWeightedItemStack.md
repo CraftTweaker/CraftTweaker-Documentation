@@ -2,19 +2,19 @@
 
 Ein ItemStack mit einer Chance, in der Regel für die Rezeptausgabe. <p> Vorsichtig, wenn der Stapel verwendet wurde, um den WeightedStack zu erstellen war veränderbar, dann wird der Größensatz auch den ursprünglichen Stapel mutieren!
 
-Diese Klasse wurde von einer Mod mit mod-id `crafttweaker` hinzugefügt. Wenn Sie diese Funktion nutzen möchten, müssen Sie diese Mod installiert haben.
+This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
 
 ## Diese Klasse importieren
-Es kann erforderlich sein, dass Sie das Paket importieren, wenn Sie irgendwelche Probleme haben (wie zum Beispiel ein Array zu bearbeiten), also besser sicher sein als bedauern und fügen Sie den Import.
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
 ```zenscript
 crafttweaker.api.item.MCWeightedItemStack
 ```
 
-## Implementierte Schnittstellen
-MCWeightedItemStack implementiert die folgenden Schnittstellen. Das bedeutet, dass jede ihnen zur Verfügung stehende Methode auch in dieser Klasse verwendet werden kann.
+## Implemented Interfaces
+MCWeightedItemStack implementiert die folgenden Schnittstellen. That means any method available to them can also be used on this class.
 - [crafttweaker.api.brackets.CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
 
-## Konstrukteure
+## Constructors
 Erstellt manuell den gewichteten Artikelstack. Normalerweise können Sie den Operator oder `.weight(weight)` Methode von IItemStack verwenden, obwohl
 ```zenscript
 neue crafttweaker.api.item.MCWeightedItemStack(itemStack as crafttweaker.api.item.IItemStack, Gewicht als Doppel);
@@ -23,12 +23,12 @@ new crafttweaker.api.item.MCWeightedItemStack(<item:minecraft:bedrock>, 0.5D);
 | Parameter | Type                                                              | Beschreibung                             |
 | --------- | ----------------------------------------------------------------- | ---------------------------------------- |
 | itemStack | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | Der Stapel                               |
-| gewicht   | double                                                            | Die Chance, zwischen 0 (0%) und 1 (100%) |
+| weight    | double                                                            | Die Chance, zwischen 0 (0%) und 1 (100%) |
 
 
 
 ## Methoden
-### gewicht
+### weight
 
 Erstellt einen neuen Gewichteten Stapel mit dem angegebenen Gewicht
 
@@ -47,13 +47,13 @@ Rückgabetyp: [crafttweaker.api.item.MCWeightedItemStack](/vanilla/api/items/MCW
 
 
 
-## Eigenschaften
+## Properties
 
-| Name          | Type                                                              | Hat Getter | Hat Setter |
+| Name          | Type                                                              | Has Getter | Has Setter |
 | ------------- | ----------------------------------------------------------------- | ---------- | ---------- |
-| Kommandozeile | String                                                            | true       | false      |
-| stapeln       | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | true       | false      |
-| gewicht       | double                                                            | true       | false      |
+| commandString | String                                                            | true       | false      |
+| stack         | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | true       | false      |
+| weight        | double                                                            | true       | false      |
 
 ## Operatoren
 ### MUL
