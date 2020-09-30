@@ -1,11 +1,11 @@
-# Il Concetto
+# The Concept
 
-La maggior parte degli usi della matematica in ZenScript può essere coperta attraverso le quattro operazioni di base: aggiunta, sottrazione, moltiplicazione e divisione. ZenScript fornisce anche l'accesso alla funzione `pow` , che esegue l'operazione di potenza. Ma è così. Non è possibile eseguire operazioni matematiche più avanzate, e richiederebbe una reimplementazione completa con le tabelle di ricerca e non trarrebbe beneficio dalle ottimizzazioni dell'hardware a questo proposito, soprattutto per le moderne CPU.
+Most of the uses of Math in ZenScript can be covered via the four basic operations: addition, subtraction, multiplication, and division. ZenScript also provides access to the `pow` function, which performs the power operation. But that's it. More advanced mathematical operations cannot be performed, and would require a full reimplementation with lookup tables and wouldn't benefit from the hardware's optimizations in that regard, especially for modern CPUs.
 
-È qui che entra in gioco ZenScriptX, fornendo una serie di classi e alcune operazioni aritmetiche di base che possono essere di utilità generale, pur beneficiando nella maggior parte dei casi di ottimizzazioni hardware, dal momento che la maggior parte di questi sono implementati a livello nativo (tramite un paio di indizi a causa della VM ZenScript funziona).
+This is where ZenScriptX Math comes in, providing a set of classes and some basic arithmetic operations that may be of general usefulness, while also benefitting in the most part from hardware optimizations, since most of those are implemented on a native level (via a couple of indirections due to the VM ZenScript runs on).
 
-Ogni sezione di documentazione fornirà all'utente un elenco delle funzioni fornite e del loro comportamento.
+Every documentation section will provide the user with a list of provided functions and their behavior.
 
-L'elenco attuale delle classi fornite che sono implementate sono:
+The current list of provided classes that are implemented are:
 
-- [Matematica](/Mods/Boson/Math/Math/) per le funzioni matematiche comuni (es. seno, coseno, logaritmo...)
+- [Math](/Mods/Boson/Math/Math/) for common mathematical functions (e.g., sine, cosine, logarithm...)
