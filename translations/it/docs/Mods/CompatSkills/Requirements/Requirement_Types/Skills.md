@@ -1,12 +1,12 @@
-# Abilità:
+# Skills:
 
-Le abilità a fianco di Advancements era uno dei tipi di blocco originali aggiunti da Skillable e da allora è stato raffinato per supportare altre mod aggiungendo più Abilità. La Sintassi delle Abilità è la seguente:
+Skills alongside Advancements was one of the original lock types added by Skillable and has since then been refined to support other mods adding more Skills. The Skill Syntax is as follows:
 
-    Esempio:
-    ResourceLocation<unk> Level
+    Example:
+    ResourceLocation|Level
     
-    Esempio di lavoro:
-    reskillable:building<unk> 15
+    Working Example:
+    reskillable:building|15
     
 
-Dal rilascio di Reskillable abbiamo spostato da un sistema di nomi di abilità a un sistema di nomi di localizzazione di risorse. Questo permette a diverse abilità di aggiungere abilità con lo stesso nome interno, ma diversi ID mod per la posizione delle risorse. Puoi trovare le Risorse dell'Abilità su: [Abilità & Tratti](/Mods/CompatSkills/Requirements/Skills_Traits/)
+Since the release of Reskillable we've moved from a skill name system to a resource location name system. This allows for several skills to add skills with the same internal name but different mod id's for the Resource Location. You can find the Skill's ResourceLocations under: [Skills & Traits](/Mods/CompatSkills/Requirements/Skills_Traits/)
