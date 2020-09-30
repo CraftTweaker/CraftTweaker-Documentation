@@ -1,17 +1,17 @@
-# Fusione Leghe Metalliche
+# Alloy Smelter
 
-## Pacchetto
+## Package
 
 `import mods.enderio.AlloySmelter;`
 
-## Metodi
+## Methods
 
-- **[IItemStack](/Vanilla/Items/IItemStack/) output** Il risultato della ricetta.
-- **[IIngrediente](/Vanilla/Variable_Types/IIngredient/)[] input** Gli ingredienti. Deve essere compreso tra 1 e 3 ingredienti.
-- **int energyCost** Quanto FE usa la ricetta. Predefinito a 5000.
-- **float xp** L'xp è concesso da questa ricetta. Non può essere negativo.
+- **[IItemStack](/Vanilla/Items/IItemStack/) output** The result of the recipe.
+- **[IIngredient](/Vanilla/Variable_Types/IIngredient/)[] input** The ingredients. Must be between 1 and 3 ingredients.
+- **int energyCost** How much FE the recipe uses. Defaults to 5000.
+- **float xp** The xp is granted from this recipe. May not be negative.
 
-## Addizione
+## Addition
 
 ```zenscript
 mods.enderio.AlloySmelter.addRecipe(IItemStack output, IIngredient[] input, @Optional int energyCost, @Optional float xp);
@@ -19,7 +19,7 @@ mods.enderio.AlloySmelter.addRecipe(IItemStack output, IIngredient[] input, @Opt
 mods.enderio.AlloySmelter.addRecipe(<minecraft:iron_ingot>, [<minecraft:sand>, <minecraft:gravel>, <minecraft:brick>]);
 ```
 
-## Rimozione
+## Removal
 
 ```zenscript
 mods.enderio.AlloySmelter.removeRecipe(IItemStack output);
