@@ -1,24 +1,24 @@
-# Stampante
+# Printer
 
-La stampa consente di fare una copia di un elemento.
+The Print allows you to make a copy of an item.
 
-Per impostazione predefinita può copiare libri scritti e libri incantati.
+By default can copy written books and enchanted books.
 
-## Rimozione
+## Removing
 
-## Rimuovi gli elementi copiabili corrispondenti.
+## Remove matching copyable items.
 
 ```zenscript
 mods.cfm.Printer.remove(@Optional final IIngredient item);
 
 mods.cfm.Printer.remove(<minecraft:enchanted_book>);
-// Rimuovi tutti gli elementi stampabili.
+// Remove all printable items.
 mods.cfm.Printer.remove();
 ```
 
-## Aggiunta
+## Adding
 
-## Aggiungi un elemento copiabile.
+## Add a copyable item.
 
 ```zenscript
 mods.cfm.Printer.add(@Nonnull final IItemStack item);
