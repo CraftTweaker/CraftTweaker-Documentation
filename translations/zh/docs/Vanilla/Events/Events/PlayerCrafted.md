@@ -1,25 +1,25 @@
-# 玩家合成了
+# PlayerCrafted
 
-每当玩家制造东西时，玩家都会被发射。
+The PlayerCrafted Event is fired whenever a player crafts something.
 
-## 事件类
+## Event Class
 
 You will need to cast the event in the function header as this class:  
 `crafttweaker.event.PlayerCraftedEvent`  
 You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
 
-## 事件界面扩展
+## Event interface extensions
 
-玩家制作的事件实现了以下接口，并且能够调用他们所有的方法/getter/setter：
+PlayerCrafted Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
 
 - [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
 
 ## ZenGetters
 
-以下信息可以从事件中检索：
+The following information can be retrieved from the event:
 
-| ZenGetter    | 返回值类型                                                        |
-| ------------ | ------------------------------------------------------------ |
-| `播放器`        | [IPlayer](/Vanilla/Players/IPlayer/)                         |
-| `output（输出）` | [IItemStack](/Vanilla/Items/IItemStack/)                     |
-| `库存`         | [ICrafting库存](/Vanilla/Recipes/Crafting/ICraftingInventory/) |
+| ZenGetter    | 返回值类型                                                               |
+| ------------ | ------------------------------------------------------------------- |
+| `player`     | [IPlayer](/Vanilla/Players/IPlayer/)                                |
+| `output（输出）` | [IItemStack](/Vanilla/Items/IItemStack/)                            |
+| `inventory`  | [ICraftingInventory](/Vanilla/Recipes/Crafting/ICraftingInventory/) |
