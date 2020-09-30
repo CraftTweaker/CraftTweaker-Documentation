@@ -1,25 +1,25 @@
-# Händler
+# Merchant
 
-## Befehle
+## Commands
 
-Die folgenden Befehle werden hinzugefügt, um Informationen über die verfügbaren Händlerberufe & zurückzuholen:
+The following commands are added to retrieve information about the availible merchant professions & carrers:
 
-- `/ct Händlerberufe` - gibt eine Liste gültiger Händlerberufe aus
-- `/ct Händler Karrieren [profession]` - gibt ein Protokoll gültiger Karrieren für alle oder den angegebenen Beruf aus
+- `/ct merchant professions` - outputs a log of valid merchant professions
+- `/ct merchant careers [profession]` - outputs a log of valid careers for all or the specified profession
 
-## Paket
+## Package
 
 `mods.rockytweaks.Merchant`
 
 ## Addition
 
-Trades können einem bestimmten Händlerberuf & hinzugefügt werden.
+Trades can be added to a specific merchant profession & carrer.
 
 ```zenscript
-// addTrade(String-Beruf, String-Karriere, IItemstack input1, @Optional IItemstack input2, IItemstack output, int level);
-mods.rockytweaks.Merchant.addTrade("minecraft:nitwit", <minecraft:emerald>, <minecraft:diamond>, <minecraft:cobblestone>, 1);
+// addTrade(String profession, String career, IItemstack input1, @Optional IItemstack input2, IItemstack output, int level);
+mods.rockytweaks.Merchant.addTrade("minecraft:nitwit", "nitwit", <minecraft:emerald>, <minecraft:diamond>, <minecraft:cobblestone>, 1);
 ```
 
-## Entfernen
+## Removal
 
-Das Entfernen des Händlers ist derzeit nicht möglich.
+Merchant trade removal is currently not possible.
