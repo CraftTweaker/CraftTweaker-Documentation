@@ -1,14 +1,14 @@
 # MCStringRange
 
-Ta klasa została dodana przez moda z mod-id `crafttweaker`. Więc musisz zainstalować tę modyfikację, jeśli chcesz używać tej funkcji.
+This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
 
-## Importowanie klasy
-Może być wymagane zaimportowanie pakietu, jeśli napotkasz jakiekolwiek problemy (np. rzucanie tablicy), tak aby były bezpieczne niż przepraszamy i dodaj import.
+## Importing the class
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
 ```zenscript
 crafttweaker.api.commands.custom.MCStringRange
 ```
 
-## Metody
+## Methods
 ### w
 
 Typ zwrotu: [crafttweaker.api.commands.custom.MCStringRange](/vanilla/api/commands/custom/MCStringRange)
@@ -17,9 +17,9 @@ Typ zwrotu: [crafttweaker.api.commands.custom.MCStringRange](/vanilla/api/comman
 crafttweaker.api.commands.custom.MCStringRange.at(pos as int);
 ```
 
-| Parametr | Typ    | Opis             |
-| -------- | ------ | ---------------- |
-| poz.     | odcień | Nie podano opisu |
+| Parameter | Type | Description             |
+| --------- | ---- | ----------------------- |
+| pos       | int  | No description provided |
 
 
 ### między
@@ -30,10 +30,10 @@ Typ zwrotu: [crafttweaker.api.commands.custom.MCStringRange](/vanilla/api/comman
 crafttweaker.api.commands.custom.MCStringRange.between(start as int, end as int);
 ```
 
-| Parametr | Typ    | Opis             |
-| -------- | ------ | ---------------- |
-| początek | odcień | Nie podano opisu |
-| koniec   | odcień | Nie podano opisu |
+| Parameter | Type | Description             |
+| --------- | ---- | ----------------------- |
+| początek  | int  | No description provided |
+| koniec    | int  | No description provided |
 
 
 ### uwzględnianie
@@ -44,53 +44,53 @@ Typ zwrotu: [crafttweaker.api.commands.custom.MCStringRange](/vanilla/api/comman
 crafttweaker.api.commands.custom.MCStringRange.Incluassing(jako crafttweaker.api.commands.custom.MCStringRange, b jako crafttweaker.api.commands.custom.MCStringRange);
 ```
 
-| Parametr | Typ                                                                                          | Opis             |
-| -------- | -------------------------------------------------------------------------------------------- | ---------------- |
-| ob z     | [crafttweaker.api.commands.custom.MCStringRange](/vanilla/api/commands/custom/MCStringRange) | Nie podano opisu |
-| b        | [crafttweaker.api.commands.custom.MCStringRange](/vanilla/api/commands/custom/MCStringRange) | Nie podano opisu |
+| Parameter | Type                                                                                         | Description             |
+| --------- | -------------------------------------------------------------------------------------------- | ----------------------- |
+| ob z      | [crafttweaker.api.commands.custom.MCStringRange](/vanilla/api/commands/custom/MCStringRange) | No description provided |
+| b         | [crafttweaker.api.commands.custom.MCStringRange](/vanilla/api/commands/custom/MCStringRange) | No description provided |
 
 
-### równa się
+### equals
 
-Typ zwrotu: logiczny
+Return type: boolean
 
 ```zenscript
 myMCStringRange.equals(o jako obiekt);
 ```
 
-| Parametr | Typ    | Opis             |
-| -------- | ------ | ---------------- |
-| ob       | Obiekt | Nie podano opisu |
+| Parameter | Type   | Description             |
+| --------- | ------ | ----------------------- |
+| o         | Object | No description provided |
 
 
-### pobierz
+### get
 
-Typ zwrotu: Ciąg
+Return type: String
 
 ```zenscript
 myMCStringRange.get(ciąg jako String);
 ```
 
-| Parametr    | Typ         | Opis             |
-| ----------- | ----------- | ---------------- |
-| ciąg znaków | Ciąg znaków | Nie podano opisu |
+| Parameter | Type   | Description             |
+| --------- | ------ | ----------------------- |
+| string    | String | No description provided |
 
 
 
-Typ zwrotu: Ciąg
+Return type: String
 
 ```zenscript
 myMCStringRange.get(czytnik jako crafttweaker.api.commands.custom.MCImmutableStringReader);
 ```
 
-| Parametr | Typ                                                                                                              | Opis             |
-| -------- | ---------------------------------------------------------------------------------------------------------------- | ---------------- |
-| czytnik  | [crafttweaker.api.commands.custom.MCImmutableStringReader](/vanilla/api/commands/custom/MCImmutableStringReader) | Nie podano opisu |
+| Parameter | Type                                                                                                             | Description             |
+| --------- | ---------------------------------------------------------------------------------------------------------------- | ----------------------- |
+| czytnik   | [crafttweaker.api.commands.custom.MCImmutableStringReader](/vanilla/api/commands/custom/MCImmutableStringReader) | No description provided |
 
 
 ### getEnd
 
-Typ zwrotu: int
+Return type: int
 
 ```zenscript
 myMCStringRange.getEnd();
@@ -98,7 +98,7 @@ myMCStringRange.getEnd();
 
 ### długość getLlength
 
-Typ zwrotu: int
+Return type: int
 
 ```zenscript
 myMCStringRange.getLength();
@@ -106,7 +106,7 @@ myMCStringRange.getLength();
 
 ### getStart
 
-Typ zwrotu: int
+Return type: int
 
 ```zenscript
 myMCStringRange.getStart();
@@ -114,7 +114,7 @@ myMCStringRange.getStart();
 
 ### hashCode
 
-Typ zwrotu: int
+Return type: int
 
 ```zenscript
 myMCStringRange.hashCode();
@@ -122,7 +122,7 @@ myMCStringRange.hashCode();
 
 ### isEmpty
 
-Typ zwrotu: logiczny
+Return type: boolean
 
 ```zenscript
 myMCStringRange.isEmpty();
@@ -130,7 +130,7 @@ myMCStringRange.isEmpty();
 
 ### toString
 
-Typ zwrotu: Ciąg
+Return type: String
 
 ```zenscript
 myMCStringRange.toString();
