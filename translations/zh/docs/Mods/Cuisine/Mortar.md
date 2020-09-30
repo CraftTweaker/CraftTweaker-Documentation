@@ -1,37 +1,37 @@
-# 面包机
+# Mortar
 
 ## 加
 
 ```zenscript
-导入mods.cuisine.Mortar;
+import mods.cuisine.Mortar;
 
-// 第三个参数“step”表示“你需要多少次推送pestle”
-Mortar。 d(IItemStack[…]投入, IItemStack输出, int step);
+// The third parameter 'step' means "how many times you need to push down the pestle"
+Mortar.add(IItemStack[] inputs, IItemStack output, int step);
 
 Mortar.add([<item:minecraft:dirt>, <item:minecraft:cobblestone>], <item:minecraft:diamond>, 3);
 ```
 
-## 移除
+## Removal
 
 ```zenscript
-导入 mods.cuisine.Mortar;
+import mods.cuisine.Mortar;
 
-// 通过输入删除。
-mortar.remove(IItemStack[…]输入)；
+// Remove by input.
+Mortar.remove(IItemStack[] input);
 
-Mortar.remove([<item:minecraft:dirt>, <item:minecraft:cobblestone>])；
+Mortar.remove([<item:minecraft:dirt>, <item:minecraft:cobblestone>]);
 
-// 通过输出删除。
-mortar.remove ByOutput(Ingredient output);
+// Remove by output.
+Mortar.removeByOutput(IIngredient output);
 
-Mortar.remove ByOutput(<item:minecraft:diamond>);
-Mortar.remove ByOutput(<ore:gemDiamond>);
+Mortar.removeByOutput(<item:minecraft:diamond>);
+Mortar.removeByOutput(<ore:gemDiamond>);
 
-// 通过标识符删除。
-mortar.remove(String id);
+// Remove by identifier.
+Mortar.remove(String id);
 
 Mortar.remove("recipe_name");
 
-// 移除所有东西!
-mortar.removeAll();
+// Remove everything!
+Mortar.removeAll();
 ```
