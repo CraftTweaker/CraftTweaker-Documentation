@@ -1,41 +1,41 @@
-# Utilisez des boucles pour améliorer l'apparence de votre script
+# Use Loops to make your script look better
 
-## Problème
+## Problem
 
-Nous l'avons tous vu : des scripts avec plus de 500 lignes où il dit 500 fois `recettes.remove(item1);recettes.remove(item2),...`  
-Non seulement est-ce une douleur à écrire, mais il est possible que vous passiez des heures à déboguer un peu de faute quand la seule exception que vous obtenez est `erreur dans les recettes. s : null`
+We all have seen it: Scripts with more than 500 lines where it says 500 times `recipes.remove(item1);recipes.remove(item2),...`  
+Not only is this a pain to write, but it is possible that you spend hours debugging a little typo when the only exception you get is `error in recipes.zs: null`
 
 ## Solution
 
 My rule of thumb: When writing the exactly same command more than 10 times, with only 1 Parameter changing, I'll use a loop.
 
-Donc, au lieu de toujours taper les fonctions, je déclare un tableau contenant tous les éléments et j'itère à travers celui-ci.
+So, instead of always typing out the functions, I declare one array containing all items and iterate through that one.
 
 ```zenscript
-importer crafttweaker.item.IIngredient;
+import crafttweaker.item.IIngredient;
 
-Array val = [
+val Array = [
     item1,
     item2,
     item3,
+    ...
+] as IIngredient[];
 
-] en tant qu'IIngrédient[];
 
-
-pour l'objet dans Array{
-    recettes.remove(item);
+for item in Array{
+    recipes.remove(item);
 }
 ```
 
-## Avantages
+## Advantages
 
-- Votre script devient (à mon avis) plus facile à lire
-- Vous savez exactement où se situe votre script
-- Les changements de dernière minute sont vraiment faciles car tout ce que vous avez à faire est d'ajouter ou de supprimer l'élément du tableau.
+- Your script becomes (in my opinion) easier to read
+- You know exactly where your script screws up
+- Last minute changes are really easy as all you need to do is adding or removing the item from the array.
 
-## Inconvénients
+## Disadvantages
 
-- Ne fonctionne que s'il n'y a que quelques paramètres qui changent
-- Vous pouvez dévisser votre script sans le savoir, par exemple, en lançant le tableau mal
-- Une erreur dans le tableau fait échouer le tableau entier et rien ne sera fait du tout.
-- Vous pouvez recevoir des messages d'erreur cryptiques en raison de la création du tableau de la mauvaise manière.
+- Only works when there's only a few parameters changing
+- You could screw up your script without knowing it, by say, casting the array wrong
+- One error in the array makes the whole array fail and nothing will be done at all.
+- You might receive cryptic error messages because of the array being created the wrong way.
