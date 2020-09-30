@@ -1,24 +1,24 @@
 # AnimalTame
 
-发射这个事件是为了确定一个动物是否会被拍摄。 如果取消， **tame无法成功**。 否则，它只不过是对正在进行的指责的一种通知。
+This event is fired to determine if an animal is going to be tamed. If canceled, **the tame does not succeed**. Otherwise, it simply serves as a notification of the tame taking place.
 
-## 事件类
+## Event Class
 You will need to cast the event in the function header as this class:  
 `crafttweaker.event.AnimalTameEvent`  
 You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
 
-## 事件界面扩展
-AnimalTame 事件实现了以下接口，并且能够调用他们所有的方法/getter/setter：
+## Event interface extensions
+AnimalTame Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
 
 - [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 
 
 ## ZenGetters/ZenSetters
-以下信息可以在事件中检索/设置：
+The following information can be retrieved/set during the event:
 
 | ZenGetter | ZenSetter | 类型                                                |
 | --------- | --------- | ------------------------------------------------- |
-| `动物数`     |           | [IEntityAnimal](/Vanilla/Entities/IEntityAnimal/) |
-| `动物数`     |           | [IEntityAnimal](/Vanilla/Entities/IEntityAnimal/) |
-| `播放器`     |           | [IPlayer](/Vanilla/Players/IPlayer/)              |
+| `animal`  |           | [IEntityAnimal](/Vanilla/Entities/IEntityAnimal/) |
+| `animal`  |           | [IEntityAnimal](/Vanilla/Entities/IEntityAnimal/) |
+| `player`  |           | [IPlayer](/Vanilla/Players/IPlayer/)              |
