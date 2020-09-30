@@ -1,28 +1,28 @@
 # ICommandSender
 
-L'interfaccia ICommandSender viene utilizzata la base di ogni entità e anche alcuni altri tipi in CraftTweaker.  
-Ogni [IEntity](/Vanilla/Entities/IEntity/) e [IPlayer](/Vanilla/Players/IPlayer/) implementa questo!
+The ICommandSender interface is used the base of each Entity and also some other types in CraftTweaker.  
+Each [IEntity](/Vanilla/Entities/IEntity/) and [IPlayer](/Vanilla/Players/IPlayer/) implements this!
 
-## Importazione del pacchetto
+## Importing the package
 
-Potrebbe essere necessario importare il pacchetto se si incontrano problemi (come lanciare un [Array](/AdvancedFunctions/Arrays_and_Loops/)), quindi meglio essere sicuri che spiacenti e aggiungere l'importazione.  
+It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
 `import crafttweaker.command.ICommandSender;`
 
 ## ZenGetter
 
-| ZenGetter   | Tipo Di Reso                           |
+| ZenGetter   | Return Type                            |
 | ----------- | -------------------------------------- |
-| displayName | stringa                                |
-| posizione   | [IBlockPos](/Vanilla/World/IBlockPos/) |
-| mondo       | [IWorld](/Vanilla/World/IWorld/)       |
+| displayName | string                                 |
+| position    | [IBlockPos](/Vanilla/World/IBlockPos/) |
+| world       | [IWorld](/Vanilla/World/IWorld/)       |
 | server      | [IServer](/Vanilla/Game/IServer/)      |
 
 ## ZenMethods
 
-#### Invia Messaggio
+#### Send Message
 
-Prende una stringa. Restituisce vuoto (nulla).
+Takes a String. Returns void (nothing).
 
 ```zenscript
-sender.sendMessage(testo stringa);
+sender.sendMessage(String text);
 ```
