@@ -1,14 +1,14 @@
-# Evento de Itidad
+# IEntityEvent
 
-Esta interfaz es extendida por todos los eventos que pueden tener una entidad central.
+This interface is extended by all Events that can have a central entity.
 
-## Importar la clase
+## Importing the class
 
 It might be required to [import](/AdvancedFunctions/Import/) the class to avoid errors.  
 `import crafttweaker.event.IEntityEvent;`
 
-## ¿Qué se puede hacer con ellos?
+## What can be done with them?
 
-| nombre  | tipo                                  |
-| ------- | ------------------------------------- |
-| entidad | [IEntity](/Vanilla/Entities/IEntity/) |
+| name   | type                                  |
+| ------ | ------------------------------------- |
+| entity | [IEntity](/Vanilla/Entities/IEntity/) |
