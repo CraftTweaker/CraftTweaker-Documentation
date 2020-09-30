@@ -1,16 +1,16 @@
 # PlayerInteract
 
-PlayerInteract イベントは、プレイヤーがブロックと相互作用するたびに発生します。
+The PlayerInteract Event is fired whenever a player interacts with a block.
 
-## イベントクラス
+## Event Class
 
 You will need to cast the event in the function header as this class:  
 `crafttweaker.event.PlayerInteractEvent`  
 You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
 
-## イベントインターフェースの拡張
+## Event interface extensions
 
-PlayerInteract Eventsは以下のインターフェイスを実装し、それらのメソッド/getters/setters/settersをすべて呼び出すことができます。
+PlayerInteract Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
 
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 - [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
@@ -18,23 +18,23 @@ PlayerInteract Eventsは以下のインターフェイスを実装し、それ�
 
 ## ZenGetters
 
-イベントから次の情報を取得できます。
+The following information can be retrieved from the event:
 
 | ZenGetter    | 戻り値                                  |
 | ------------ | ------------------------------------ |
-| `キャンセル済み`    | boolean型                             |
-| `UsingItem`  | boolean型                             |
+| `canceled`   | boolean型                             |
+| `usingItem`  | boolean型                             |
 | `usingBlock` | boolean型                             |
 | `x`          | int                                  |
 | `y`          | int                                  |
 | `z`          | int                                  |
-| `プレイヤー`      | [IPlayer](/Vanilla/Players/IPlayer/) |
-| `世界`         | [IWorld](/Vanilla/World/IWorld/)     |
-| `ブロック`       | [IBlock](/Vanilla/Blocks/IBlock/)    |
-| `寸法`         | int                                  |
+| `player`     | [IPlayer](/Vanilla/Players/IPlayer/) |
+| `world`      | [IWorld](/Vanilla/World/IWorld/)     |
+| `block`      | [IBlock](/Vanilla/Blocks/IBlock/)    |
+| `dimension`  | int                                  |
 
 ## ZenMethods
 
-- `event.cancel()` はイベントをキャンセルとして設定します
-- `event.useBlock()` は Block を true に設定
-- `event.useItem()` は項目を true に設定します
+- `event.cancel()` sets the event as cancelled
+- `event.useBlock()` sets Block to true
+- `event.useItem()` sets Item to true
