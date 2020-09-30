@@ -4,7 +4,7 @@
 
 Questa classe è stata aggiunta da una mod con ID `crafttweaker`. Perciò, è necessario avere questa mod installata per poter utilizzare questa funzione.
 
-## Importare la classe
+## Importing the class
 Potrebbe essere necessario importare il pacchetto, se si incontrano dei problemi (come castare un vettore), quindi meglio essere sicuri e aggiungere la direttiva di importazione.
 ```zenscript
 crafttweaker.api.SmithingManager
@@ -15,20 +15,20 @@ SmithingManager implementa le seguenti interfacce. Ciò significa che ogni metod
 - [crafttweaker.api.brackets.CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
 - [crafttweaker.api.registries.IRecipeManager](/vanilla/api/managers/IRecipeManager)
 
-## Metodi
+## Methods
 ### addJSONRecipe
 
-Aggiunge una ricetta basata su un IData fornito. L'IData fornita dovrebbe rappresentare un DataPack JSON, questo consente effettivamente di registrare ricette per qualsiasi DataPack che supporti i sistemi IRecipeType.
+Adds a recipe based on a provided IData. The provided IData should represent a DataPack JSON, this effectively allows you to register recipes for any DataPack supporting IRecipeType systems.
 
 ```zenscript
 smithing.addJSONRecipe(nome come String, dati come crafttweaker.api.data.IData);
 smithing.addJSONRecipe("recipe_name", {ingredient:{item:<item:minecraft:gold_ore>.registryName},result:<item:minecraft:cooked_porkchop>.registryName,experience:0.35 come float, cookingtime:100});
 ```
 
-| Parametro | Tipo                                                   | Descrizione                         |
-| --------- | ------------------------------------------------------ | ----------------------------------- |
-| nome      | Stringa                                                | nome della ricetta                  |
-| dati      | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | dati che rappresentano il file json |
+| Parameter | Type                                                   | Description                     |
+| --------- | ------------------------------------------------------ | ------------------------------- |
+| name      | String                                                 | name of the recipe              |
+| data      | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | data representing the json file |
 
 
 ### addRecipe
@@ -40,10 +40,10 @@ smithing.addRecipe(recipeName as String, result as crafttweaker.api.item.IItemSt
 smithing.addRecipe("recipe_name", <item:minecraft:golden_apple>, <item:minecraft:apple>, <tag:forge:ingots/gold>);
 ```
 
-| Parametro  | Tipo                                                                | Descrizione                            |
+| Parameter  | Type                                                                | Description                            |
 | ---------- | ------------------------------------------------------------------- | -------------------------------------- |
-| recipeName | Stringa                                                             | Nome della ricetta.                    |
-| risultato  | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)   | L'oggetto creato dalla ricetta.        |
+| recipeName | String                                                              | Nome della ricetta.                    |
+| result     | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)   | L'oggetto creato dalla ricetta.        |
 | base       | [crafttweaker.api.item.IIngredient](/vanilla/api/items/IIngredient) | L'ingrediente iniziale per la ricetta. |
 | aggiunta   | [crafttweaker.api.item.IIngredient](/vanilla/api/items/IIngredient) | L'elemento aggiunto all'elemento base. |
 
@@ -56,9 +56,9 @@ Tipo di restituzione: [crafttweaker.api.recipes.WrapperRecipe](/crafttweaker/api
 smithing.getRecipeByName(nome come stringa);
 ```
 
-| Parametro | Tipo    | Descrizione                 |
-| --------- | ------- | --------------------------- |
-| nome      | Stringa | Nessuna descrizione fornita |
+| Parameter | Type   | Description                 |
+| --------- | ------ | --------------------------- |
+| name      | String | Nessuna descrizione fornita |
 
 
 ### getRecipesByOutput
@@ -69,14 +69,14 @@ Tipo di restituzione: Lista&lt;[crafttweaker.api.recipes.WrapperRecipe](/crafttw
 smithing.getRecipesByOutput(output come crafttweaker.api.item.IIngredient);
 ```
 
-| Parametro | Tipo                                                                | Descrizione                 |
+| Parameter | Type                                                                | Description                 |
 | --------- | ------------------------------------------------------------------- | --------------------------- |
 | output    | [crafttweaker.api.item.IIngredient](/vanilla/api/items/IIngredient) | Nessuna descrizione fornita |
 
 
 ### removeAll
 
-Rimuovi tutte le ricette in questo registro
+Remove all recipes in this registry
 
 ```zenscript
 smithing.removeAll();
@@ -84,16 +84,16 @@ smithing.removeAll();
 
 ### removeByModid
 
-Rimuovere la ricetta in base al nome del Registro di sistema
+Remove recipe based on Registry name modid
 
 ```zenscript
 smithing.removeByModid(modid as String);
 smithing.removeByModid("minecraft");
 ```
 
-| Parametro | Tipo    | Descrizione                      |
-| --------- | ------- | -------------------------------- |
-| modid     | Stringa | modid delle ricette da rimuovere |
+| Parameter | Type   | Description                    |
+| --------- | ------ | ------------------------------ |
+| modid     | String | modid of the recipes to remove |
 
 
 
@@ -104,58 +104,58 @@ smithing.removeByModid(modid as String, exclude as crafttweaker.api.recipe.Recip
 smithing.removeByModid("minecraft", (name as string) => {return name == "orange_wool";});
 ```
 
-| Parametro | Tipo                                                                     | Descrizione                           |
+| Parameter | Type                                                                     | Description                           |
 | --------- | ------------------------------------------------------------------------ | ------------------------------------- |
-| modid     | Stringa                                                                  | modid delle ricette da rimuovere      |
+| modid     | String                                                                   | modid of the recipes to remove        |
 | esclude   | [crafttweaker.api.recipe.RecipeFilter](/vanilla/api/recipe/RecipeFilter) | ricette da evitare di essere rimosse. |
 
 
 ### removeByName
 
-Rimuovi ricetta in base al nome del Registro
+Remove recipe based on Registry name
 
 ```zenscript
 smithing.removeByName(nome come Stringa);
 smithing.removeByName("minecraft:furnace");
 ```
 
-| Parametro | Tipo    | Descrizione                                     |
-| --------- | ------- | ----------------------------------------------- |
-| nome      | Stringa | il nome del registro della ricetta da rimuovere |
+| Parameter | Type   | Description                       |
+| --------- | ------ | --------------------------------- |
+| name      | String | registry name of recipe to remove |
 
 
 ### removeByRegex
 
-Rimuovere la ricetta a base di regex
+Remove recipe based on regex
 
 ```zenscript
 smithing.removeByRegex(regex as String);
 smithing.removeByRegex("\\d_\\d");
 ```
 
-| Parametro | Tipo    | Descrizione              |
-| --------- | ------- | ------------------------ |
-| regex     | Stringa | regex da abbinare contro |
+| Parameter | Type   | Description            |
+| --------- | ------ | ---------------------- |
+| regex     | String | regex to match against |
 
 
 ### removeRecipe
 
-Rimuovere una ricetta basata sul suo output.
+Remove a recipe based on it's output.
 
 ```zenscript
 smithing.removeRecipe(output as crafttweaker.api.item.IItemStack);
 smithing.removeRecipe(<item:minecraft:glass>);
 ```
 
-| Parametro | Tipo                                                              | Descrizione          |
+| Parameter | Type                                                              | Description          |
 | --------- | ----------------------------------------------------------------- | -------------------- |
-| output    | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | output della ricetta |
+| output    | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | output of the recipe |
 
 
 
-## Proprietà
+## Properties
 
-| Nome          | Tipo    | Ha Getter | Ha Setter |
-| ------------- | ------- | --------- | --------- |
-| commandString | Stringa | vero      | falso     |
+| Name          | Type   | Ha Getter | Ha Setter |
+| ------------- | ------ | --------- | --------- |
+| commandString | String | true      | false     |
 
