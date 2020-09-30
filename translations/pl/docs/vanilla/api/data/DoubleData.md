@@ -2,25 +2,25 @@
 
 
 
-Ta klasa została dodana przez moda z mod-id `crafttweaker`. Więc musisz zainstalować tę modyfikację, jeśli chcesz używać tej funkcji.
+This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
 
-## Importowanie klasy
-Może być wymagane zaimportowanie pakietu, jeśli napotkasz jakiekolwiek problemy (np. rzucanie tablicy), tak aby były bezpieczne niż przepraszamy i dodaj import.
+## Importing the class
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
 ```zenscript
 crafttweaker.api.data.DoubleData
 ```
 
-## Zaimplementowane interfejsy
-DoubleData implementuje następujące interfejsy. Oznacza to, że każda dostępna dla nich metoda może być również stosowana w tej klasie.
+## Implemented Interfaces
+DoubleData implements the following interfaces. That means any method available to them can also be used on this class.
 - [crafttweaker.api.data.INumberData](/vanilla/api/data/INumberData)
 
-## Konstruktorzy
+## Constructors
 ```zenscript
-nowy crafttweaker.api.data.DoubleData(wewnętrzny jako podwójny);
+new crafttweaker.api.data.DoubleData(internal as double);
 ```
-| Parametr   | Typ      | Opis             |
-| ---------- | -------- | ---------------- |
-| wewnętrzna | podwójne | Nie podano opisu |
+| Parameter | Type   | Description             |
+| --------- | ------ | ----------------------- |
+| internal  | double | No description provided |
 
 
 
