@@ -1,6 +1,6 @@
 # Reservoir
 
-## entfernen
+## remove
 
 | Name       | Type   |
 | ---------- | ------ |
@@ -13,7 +13,7 @@ Beispiel:
 mods.immersivepetroleum.ReservoirRegistry.remove("aquifer");
 ```
 
-## alle entfernen
+## removeAll
 
 | Name | Type |
 | ---- | ---- |
@@ -32,24 +32,24 @@ mods.immersivepetroleum.ReservoirRegistry.removeAll();
 
 | Name           | Type                                        |
 | -------------- | ------------------------------------------- |
-| Flüssigkeit    | [Fluidstack](/Vanilla/Liquids/IFluidStack/) |
-| Minimale Größe | int                                         |
-| Maximale Größe | int                                         |
-| Auffüllrate    | int                                         |
-| Gewicht        | int                                         |
+| Fluid          | [Fluidstack](/Vanilla/Liquids/IFluidStack/) |
+| Minimum Size   | int                                         |
+| Maximum Size   | int                                         |
+| Replenish Rate | int                                         |
+| Weight         | int                                         |
 
-### Gewicht
+### Weight
 
-Gewicht ist die Gewichtschance eines Chunks, der dieses spezifische Flüssigkeitsbehälter enthält. Das Gewicht wird wie in X im Total gezählt.
+Weight is the Weighted Chance of a chunk containing that specific fluid reservoir. The weight is counted as in X in Total.
 
 So if you have 5 Reservoir values at: 5, 5, 6, 8, 10
 
-Dann hat jeder einzelne Eintrag eine gewichtete Chance:
+Then each respective entry will have a weighted chance of:
 ```
-5 in 34
-5 in 34
-6 in 34
-8 in 34
+5  in 34
+5  in 34
+6  in 34
+8  in 34
 10 in 34
 ```
 
@@ -88,7 +88,7 @@ Beispiel:
 builderInstance.addBiomes(falsch, ["minecraft:plains"]);
 ```
 
-## bauen
+## build
 
 | Name | Type   |
 | ---- | ------ |
