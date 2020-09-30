@@ -1,8 +1,8 @@
-# ターンテーブル
+# Turntable
 
-## 基本的なレシピ
+## Basic Recipe
 
-* ターンテーブルレシピを追加する - 入力 ** は、それらに関連付けられているブロックを持たなければなりません。 製品の状態は、レシピが終了した後に配置されるブロックです。
+* Adds Turntable Recipe - inputs *MUST* have a block associated with them. The product state is the block that will be placed after the recipe finishes
 
 ```zenscript
 mods.betterwithmods.Turntable.add(IIngredient input, IItemStack productState, IItemStack[] output);
@@ -15,52 +15,52 @@ mods.betterwithmods.Turntable.add(<minecraft:grass>, <minecraft:dirt>, [<minecra
 mods.betterwithmods.Turntable.add(<minecraft:gravel>, [<minecraft:flint>]);
 ```
 
-## 入力による削除
+## Removal by input
 
-* 入力材料に基づいてレシピを削除
+* Remove a recipe based on the input ingredient
 
 ```zenscript
-mods.betterwithmods.Turntable.remove(IIngredient入力);
+mods.betterwithmods.Turntable.remove(IIngredient input);
 ```
 
-## 出力による削除
+## Removal by output
 
-* 出力に基づいてレシピを削除
+* Remove a recipe based on the output
 
 ```zenscript
 mods.betterwithmods.Turntable.remove(IItemStack[] outputs);
 ```
 
-## すべて削除
+## Remove all
 
-* すべてのレシピを削除
+* Remove all recipes
 
 ```zenscript
 mods.betterwithmods.Turntable.removeAll();
 ```
 
-## 製品で削除
+## Remove by product
 
-* productState によるレシピの削除 
+* Remove a recipe by the productState 
 
 ```zenscript
 mods.betterwithmods.Turntable.removeRecipe(IItemStack productState);
 ```
 
-## ビルダー
+## Builder
 
-The Turntable has a recipe builder that allows more precise control over the recipes. 以前のすべてのメソッドはビルダーの使用に単純に短縮されます。
+The Turntable has a recipe builder that allows more precise control over the recipes. All previous methods are simply short cuts to using the builder.
 
-* 新しいターンテーブルビルダーを作成します。 `mods.betterwithmods.Turntable.builder()`
+* To create a new Turntable builder. `mods.betterwithmods.Turntable.builder()`
 
-* ターンテーブルメソッド
+* Turntable methods
      
      * Sets up the inputs and outputs of the recipe  
           zenscript buildRecipe(IIngredient[] inputs, IItemStack[] outputs)  
               zenscript
               buildRecipe(IIngredient[] inputs, IItemStack[] outputs)
      
-     * レシピの終了に必要な回転を設定します。 This defaults to 8.  
+     * Sets the rotations required for the recipe to finish. This defaults to 8.  
           zenscript setRotations(int rotations)  
               zenscript
               setRotations(int rotations)
@@ -75,7 +75,7 @@ The Turntable has a recipe builder that allows more precise control over the rec
               zenscript
               build()
 
-### ビルダーの使用例
+### Example builder usage
 
 ```zenscript
 mods.betterwithmods.Turntable.builder()
