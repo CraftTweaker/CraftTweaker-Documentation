@@ -1,22 +1,22 @@
-# Estrattore Di Amido
+# Starch Extractor
 
-## Pacchetto
+## Package
 ```zenscript
 import mods.calculator.starch;
 ```
 
-## Metodi
+## Methods
 
-- **[Ingresso IIngrediente](/Vanilla/Variable_Types/IIngredient/)** L'input.
-- **int value** La quantità di input aggiunge a quella macchina.
+- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input** The input.
+- **int value** The amount of input adds to that machine.
 
 
-## Addizionale
+## Additon
 ```zenscript
 starch.addRecipe(IIngredient input, int value);
 ```
 
-## Rimozione
+## Removal
 ```zenscript
 starch.removeRecipe(IIngredient input);
 ```
