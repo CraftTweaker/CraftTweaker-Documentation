@@ -1,46 +1,46 @@
-# Stadi Del Giocatore
+# Player Stages
 
-L'API GameStages espande la funzionalità [IPlayer](/Vanilla/Players/IPlayer/) di CraftTweaker per permetterti di controllare e modificare le fasi di un giocatore.
+The GameStages API expands CraftTweaker's [IPlayer](/Vanilla/Players/IPlayer/) functionality to allow you to check and modify a player's stages.
 
-## Chiamare i metodi
+## Calling the methods
 
-Poiché questo è un [ZenExpansion](/Dev_Area/ZenAnnotations/Annotation_ZenExpansion/), puoi semplicemente chiamare i metodi su qualsiasi oggetto [IPlayer](/Vanilla/Players/IPlayer/) , o su uno qualsiasi dei suoi sottotipi.
+As this is a [ZenExpansion](/Dev_Area/ZenAnnotations/Annotation_ZenExpansion/), you can simply call the methods on any [IPlayer](/Vanilla/Players/IPlayer/) object, or any of it's subtypes.
 
-## Metodi
+## Methods
 
-### Cerca gamestages
+### Check for gamestages
 
-I metodi restituiscono i booleani.
+The methods return booleans.
 
 ```zenscript
-// Controlla se il giocatore ha lo stadio passato.
+// Checks if the player has the passed stage.
 //player.hasGameStage(String stage);
 player.hasGameStage("one");
 
 
 
-// Controlla se il giocatore ha una qualsiasi delle fasi passate. Ne hanno solo bisogno.
-//player.hasAnyGameStages(Stringa... fasi);
-player.hasAnyGameStages("one", "due");
+// Checks if the player has any of the passed stages. They only need one.
+//player.hasAnyGameStages(String... stages);
+player.hasAnyGameStages("one", "two");
 
 
 
-// Controlla se il giocatore ha tutte le fasi passate.
-//player.hasAllGameStages (Stringa... fasi);
-player.hasAllGameStages ("uno", "due");
+// Checks if the player has all of the passed stages.
+//player.hasAllGameStages (String... stages);
+player.hasAllGameStages ("one", "two");
 ```
 
-### Aggiungi o rimuovi un gioco
+### Add or remove a gamestage
 
-I metodi restituiscono vuoto (niente).
+The methods return void (nothing).
 
 ```zenscript
-// Sblocca una fase per un giocatore.
+// Unlocks a stage for a player.
 //addGameStage(String stage);
 addGameStage(String stage);
 
 
-// Blocca una fase per un giocatore.
+// Locks a stage for a player.
 //removeGameStage(String stage);
 removeGameStage(String stage);
 ```
