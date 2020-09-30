@@ -1,37 +1,37 @@
-# Тостер
+# Toaster
 
-Тоскан хочет начать свой день.
+The Toaster crips up food to start your day.
 
-## Рецепты тостер по умолчанию
+## Default Toaster Recipes
 
-- Жареная говядина
-- Комбинация -> Приготовленная колбаса
-- Кебаб -> Приготовленный Кебаб
+- Beef -> Cooked Beef
+- Sausage -> Cooked Sausage
+- Kebab -> Cooked Kebab
 
-## Удаление
+## Removing
 
-## Удалить соответствующие рецепты тостера.
+## Remove matching toaster recipes.
 
 ```zenscript
 mods.cfm.Toaster.remove(@Optional final IIngredient output, @Optional final IIngredient input);
 
-// Удаляем рецепты, которые делают Toast из Bread Slice
-модов. fm.Toaster.remove(<cfm:item_toast>,<cfm:item_bread_slice>);
-// Удаляем все рецепты
+// Remove recipes that make Toast from a Bread Slice
+mods.cfm.Toaster.remove(<cfm:item_toast>,<cfm:item_bread_slice>);
+// Remove all recipes
 mods.cfm.Toaster.remove();
 ```
 
-## Добавление
+## Adding
 
-Добавить тостер рецепта.
+Add a toaster recipe.
 
-## Поддерживает только входы размера 1.
+## Only supports inputs of size 1.
 
 ```zenscript
-mods.cfm.Toaster.addRecipe(@Nonnull final IItemStack, @Nonnull final IItemStack);
+mods.cfm.Toaster.addRecipe(@Nonnull final IItemStack output, @Nonnull final IItemStack input);
 
-// Добавление рецепта, который делает хлеб из пшеницы
-mods.cfm. oaster.addRecipe(<minecraft:bread>,<minecraft:wheat>);
-// Добавить рецепт, который делает приготовленную пчелу из пчелы
+// Add a recipe that makes Bread from Wheat
+mods.cfm.Toaster.addRecipe(<minecraft:bread>,<minecraft:wheat>);
+// Add a recipe that makes Cooked Beef from Beef
 mods.cfm.Toaster.addRecipe(<minecraft:cooked_beef>,<minecraft:beef>);
 ```
