@@ -1,24 +1,24 @@
-# Définition du matériel ITICA
+# ITICMaterialDefinition
 
-Une définition ITICMaterialDefinition est une [définition](/Mods/Modtweaker/TConstruct/Materials/ITICMaterial/) de ITICMaterial.  
-Vous pouvez l'utiliser pour récupérer des informations sur l'objet [ITICMaterial](/Mods/Modtweaker/TConstruct/Materials/ITICMaterial/).
+An ITICMaterialDefinition is an [ITICMaterial's](/Mods/Modtweaker/TConstruct/Materials/ITICMaterial/) definition.  
+You can use this to retrieve some information on the [ITICMaterial](/Mods/Modtweaker/TConstruct/Materials/ITICMaterial/) object.
 
-## Importation du paquet
+## Importing the package
 
-Il pourrait vous être nécessaire d'importer le paquet si vous rencontrez des problèmes, donc mieux vaut être sûr que désolé et ajouter l'importation.  
-`importer modtweaker.tconstruct.ITICMaterialDefinition;`
+It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
+`import modtweaker.tconstruct.ITICMaterialDefinition;`
 
-## Récupération d'un tel objet
+## Retrieving such an object
 
-Vous pouvez récupérer une définition ITICMaterialDefinition à partir d'une [définition de](/Mods/Modtweaker/TConstruct/Materials/ITICMaterial/) `ITICMaterial` ZenGetter :
+You can retrieve an ITICMaterialDefinition from an [ITICMaterial's](/Mods/Modtweaker/TConstruct/Materials/ITICMaterial/) `definition` ZenGetter:
 
 ```zenscript
-val def = <ticmat:stone>.definition ;
+val def = <ticmat:stone>.definition;
 ```
 
 ## ZenGetters
 
-| ZenGetter      | Type de retour       | Libellé                     |
-| -------------- | -------------------- | --------------------------- |
-| Nom            | chaîne de caractères | Le nom interne du matériau  |
-| nomdeaffichage | chaîne de caractères | Le nom localisé du matériau |
+| ZenGetter   | Return Type | Description                   |
+| ----------- | ----------- | ----------------------------- |
+| name        | string      | The material's internal name  |
+| displayName | string      | The material's localized name |
