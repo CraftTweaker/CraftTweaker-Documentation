@@ -5,29 +5,29 @@ L'événement PlayerAnvilUpdate est lancé lorsqu'un joueur place des objets à 
  * Si l'événement n'est pas annulé, mais que la sortie n'est pas nulle, il définira la sortie et ne lancera pas le comportement vanilla.
  * si la sortie est nulle, et que l'événement n'est pas annulé, le comportement vanilla s'exécutera.
 
-## Classe de l'événement
+## Event Class
 Vous devrez lancer l'événement dans l'en-tête de la fonction comme cette classe:  
 `crafttweaker.event. layerAnvilUpdateEvent`  
 Vous pouvez, bien sûr, également [importer](/AdvancedFunctions/Import/) la classe avant et utiliser ce nom alors.
 
-## Extensions d'interface de l'événement
+## Event interface extensions
 Les événements PlayerAnvilUpdate implémentent les interfaces suivantes et peuvent également appeler toutes leurs méthodes/getters/setters :
 
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 
 
 ## ZenGetters & ZenSetters
-Les informations suivantes peuvent être récupérées à partir de l'événement :
+The following information can be retrieved from the event:
 
-| ZenGetter          | ZenSetter          | Type de type                             | Libellé                                                                                                            |
+| ZenGetter          | ZenSetter          | type                                     | Description                                                                                                        |
 | ------------------ | ------------------ | ---------------------------------------- | ------------------------------------------------------------------------------------------------------------------ |
 | `Élément gauche`   |                    | [IItemStack](/Vanilla/Items/IItemStack/) | Le côté gauche de l'entrée.                                                                                        |
 | `DroiteItem`       |                    | [IItemStack](/Vanilla/Items/IItemStack/) | Le côté droit de l'entrée.                                                                                         |
 | `outputItem`       | `outputItem`       | [IItemStack](/Vanilla/Items/IItemStack/) | Définissez ceci pour définir la pile de sortie.                                                                    |
-| `itemName`         |                    | chaîne de caractères                     | Le nom de l'élément à définir, si l'utilisateur a spécifié un.                                                     |
-| `Coût de xp`       | `Coût de xp`       | Indice                                   | Le coût de base, définissez ceci pour le changer si la sortie != null.                                             |
-| `Coût du matériel` | `Coût du matériel` | Indice                                   | Le nombre d'objets du bon emplacement à consommer lors de la réparation. Laisser 0 pour consommer la pile entière. |
+| `itemName`         |                    | string                                   | Le nom de l'élément à définir, si l'utilisateur a spécifié un.                                                     |
+| `Coût de xp`       | `Coût de xp`       | int                                      | Le coût de base, définissez ceci pour le changer si la sortie != null.                                             |
+| `Coût du matériel` | `Coût du matériel` | int                                      | Le nombre d'objets du bon emplacement à consommer lors de la réparation. Laisser 0 pour consommer la pile entière. |
 
-## Méthodes Zen
+## ZenMethods
 
-- `event.cancel()` définit l'événement comme annulé.
+- `event.cancel()` sets the event as cancelled.
