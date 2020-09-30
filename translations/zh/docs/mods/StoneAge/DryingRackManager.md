@@ -1,14 +1,14 @@
-# 干燥机架
+# Drying Rack
 
 ## 所属包名
 `导入 mods.stone_age.DryingRackManager;`
 
 ## 方法
-- **字符串名称** 配方名称
+- **String name** Recipe name
 - **[IItemStack](/Vanilla/Items/IItemStack/) output**
-- **[Igredient](/Vanilla/Variable_Types/IIngredient/) 输入**
-- **整流时间** 干燥时间 </strong> 干燥时间
-- **字符串组** 食谱组
+- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input**
+- **int dryingTime** Drying time in ticks
+- **String group** Recipe group
 
 ## 加
 
