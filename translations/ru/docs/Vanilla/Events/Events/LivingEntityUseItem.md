@@ -1,41 +1,41 @@
 # LivingEntityUseItem
 
-Событие LivingEntityUseItem запускается каждый раз, когда сущность начинает использовать предмет, останавливается после того, как игрок закончит использовать предмет, и каждый тик использует предмет.  
-Так как это будет называться слишком часто, есть 4 подсобытия, вызываемые только в их конкретном случае.
+The LivingEntityUseItem event is fired whenever an entity starts using an item, stops doing so, after the player finishes using an item and each tick they use the item.  
+Since that would be called far too often, there are 4 subEvents that are only called in their specific case.
 
 ## Импорт класса
 
-Может потребоваться [импортировать](/AdvancedFunctions/Import/) класс, чтобы избежать ошибок.
+It might be required to [import](/AdvancedFunctions/Import/) the class to avoid errors.
 
 ```zenscript
-//Базовое событие
-импортировать crafttweaker.event.EntityLivingUseItemEvent.All;
+//Base Event
+import crafttweaker.event.EntityLivingUseItemEvent.All;
 
-//Специальные события
-импортировать crafttweaker.event.EntityLivingUseItemEvent.Start;
-импортировать crafttweaker.event.EntityLivingUseItemEvent.Tick;
-импортировать crafttweaker.event.EntityLivingUseItemEvent.Stop;
-импортировать crafttweaker.event.EntityLivingUseItemEvent.Finish;
+//Specific Events
+import crafttweaker.event.EntityLivingUseItemEvent.Start;
+import crafttweaker.event.EntityLivingUseItemEvent.Tick;
+import crafttweaker.event.EntityLivingUseItemEvent.Stop;
+import crafttweaker.event.EntityLivingUseItemEvent.Finish;
 ```
 
 ## Наследование от интерфейсов событий
 
-События LivingEntityUseItem реализуют следующие интерфейсы и также могут вызвать все их методы/getters/setters:
+LivingEntityUseItem Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
 
 - [ILivingEvent](/Vanilla/Events/Events/ILivingEvent/)
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 
 ## Геттеры/сеттеры
 
-Во время события можно извлечь/задать следующую информацию:
+The following information can be retrieved/set during the event:
 
-| Геттер         | Возвращаемый тип                         |
-| -------------- | ---------------------------------------- |
-| `player`       | [IPlayer](/Vanilla/Players/IPlayer/)     |
-| `isPlayer`     | bool                                     |
-| `элемент`      | [IItemStack](/Vanilla/Items/IItemStack/) |
-| `длительность` | int                                      |
+| Геттер     | Возвращаемый тип                         |
+| ---------- | ---------------------------------------- |
+| `player`   | [IPlayer](/Vanilla/Players/IPlayer/)     |
+| `isPlayer` | bool                                     |
+| `item`     | [IItemStack](/Vanilla/Items/IItemStack/) |
+| `duration` | int                                      |
 
-| ZenSetter      | Тип параметра |
-| -------------- | ------------- |
-| `длительность` | int           |
+| ZenSetter  | Parameter Type |
+| ---------- | -------------- |
+| `duration` | int            |
