@@ -1,22 +1,22 @@
 # Logger
 
-print-functionが不十分な場合、logger Objectを使用してコマンドや情報の警告などを記録することができます。
+If the print-function is not enough for you, then you can use the logger Object to log Commands, information warnings and more.
 
-## ロギングハンドラへのアクセス
+## Accessing the Logging Handler
 
-`logger` [global キーワード](/Vanilla/Global_Functions/) を使用して、書式設定ハンドラにアクセスできます。
+You can access the Formatting Handler using the `logger` [global keyword](/Vanilla/Global_Functions/).
 
-## ログ
+## Logging
 
-- logCommand(メッセージを読み込む);
+- logCommand(String message);
 - logInfo(String message);
-- ログ(メッセージの保存);
+- logWarning(String message);
 - logError(String message);
 
-## アクセスできますが、役に立たないメソッド
+## Accessible, but useless Methods
 
 - logError(String message, Throwable exception);
 - logPlayer([IPlayer](/Vanilla/Players/IPlayer/) player);
 
-Javaのthrowablesを使うことはできないため、最初のメソッドは役に立ちません。  
-2番目のメソッドは全く何もしません。 文字通り、実装は空です！
+You can not use Java's throwables so the first Method is useless.  
+The second Method does absolutely nothing. Literally, the implementation is empty!
