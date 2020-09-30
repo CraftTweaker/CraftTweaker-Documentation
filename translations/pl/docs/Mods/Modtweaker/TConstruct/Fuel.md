@@ -1,25 +1,25 @@
-# Paliwo
+# Fuel
 
-`Pakiet paliwa` pozwala na dodanie płynów paliwa hutniczego.
+The `Fuel` package allows you to add Smeltery fuel fluids.
 
-## Dzwonienie
+## Calling
 
-Możesz wywołać pakiet stopu używając `mods.tconstruct.Fuel`
+You can call the Alloy package using `mods.tconstruct.Fuel`
 
-## Dodaj przepisy dotyczące paliwa
+## Add Fuel Recipes
 
 ```zenscript
 //mods.tconstruct.Fuel.registerFuel(ILiquidStack fuel, int duration);
 mods.tconstruct.Fuel.registerFuel(<liquid:water> * 2, 300);
 ```
 
-Parametry:
+Parameters:
 
-- [ILiquidStack](/Vanilla/Liquids/ILiquidStack/) paliwo → Płyn Ilość jest minimalnym przyrostem zużytym jednocześnie.
-- Inny czas trwania → Ile kleszczy pion płynnego Stacka.
+- [ILiquidStack](/Vanilla/Liquids/ILiquidStack/) fuel → The fluid. Amount is the minimal increment that is consumed at once.
+- int duration → How many ticks the consumtpion of the fluidStack lasts.
 
-### Należy wziąć pod uwagę:
+### Consider this:
 
-- [ILiquidStack](/Vanilla/Liquids/ILiquidStack/) jest minimalnym przyrostem, który jest zużywany na raz (np. hutnictwo zużywa tylko 2 mB naraz).
-- Czas trwania wynosi ile kleszczy jeden stos płynów.
-- Nie można ustawić temperatury, jaką płyn będzie miał w hutnictwie. Użyj [ILiquidDefinition](/Vanilla/Liquids/ILiquidDefinition/) ZenSetter, aby wcześniej zmienić temperaturę płynu!
+- The [ILiquidStack's](/Vanilla/Liquids/ILiquidStack/) amount is the minimal increment that is consumed at once (e.g. the smeltery only consumes 2 mB at once).
+- The duration is how many ticks one fluid stack lasts.
+- You cannot set the temperature the fluid is going to have in the smeltery. Use an [ILiquidDefinition's](/Vanilla/Liquids/ILiquidDefinition/) ZenSetter to change the fluid's temperature beforehand!
