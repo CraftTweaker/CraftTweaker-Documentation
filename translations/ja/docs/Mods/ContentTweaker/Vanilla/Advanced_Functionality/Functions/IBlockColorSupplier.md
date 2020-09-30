@@ -1,20 +1,20 @@
-# IBlockColorサプライヤー
+# IBlockColorSupplier
 
-IBlockColorSupplier 関数は、 [Color Object](/Mods/ContentTweaker/Vanilla/Types/Color/Color/) を提供するために使用できます。
+The IBlockColorSupplier function can be used to provide the [Color Object](/Mods/ContentTweaker/Vanilla/Types/Color/Color/) to be used for whatever.
 
 ## パッケージのインポート
 
-問題が発生した場合は、パッケージをインポートする必要があるかもしれませんので、申し訳ありませんし、インポートを追加してください。  
+It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
 `import mods.contenttweaker.IBlockColorSupplier;`
 
-## パラメータ
+## Parameters
 
-IBlockColorサプライヤー関数は以下のパラメータを持つ関数です。
+The IBlockColorSupplier Function is a function with following parameters.
 
-- [ICTBlockState](/Mods/ContentTweaker/Vanilla/Types/Block/ICTBlockState/) の状態 → 色が要求されているブロックのブロック状態。
-- [IBlockAccess](/Vanilla/World/IBlockAccess/) アクセス → 要求されているブロックのブロックアクセス
-- [IBlockPos](/Mods/ContentTweaker/Vanilla/Types/Block/IBlockPos/) pos → 要求されているブロックの位置。
-- int tintIndex → 色素インデックスを使用します。 関数は [Color Object](/Mods/ContentTweaker/Vanilla/Types/Color/Color/) を返す必要があります。
+- [ICTBlockState](/Mods/ContentTweaker/Vanilla/Types/Block/ICTBlockState/) state → the blockstate of the block whose color is being requested.
+- [IBlockAccess](/Vanilla/World/IBlockAccess/) access → the block access of the block whose color is being requested.
+- [IBlockPos](/Mods/ContentTweaker/Vanilla/Types/Block/IBlockPos/) pos → the position of the block whose color is being requested.
+- int tintIndex → the tint index, use that however you like. The function needs to return an [Color Object](/Mods/ContentTweaker/Vanilla/Types/Color/Color/).
 
 ## 使用例
 
