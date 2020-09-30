@@ -1,17 +1,17 @@
-# W preprocesorach
+# On Preprocessors
 
-## Czym są preprzetwórcy
+## What are preprocessors
 
-Jak sugeruje nazwa, preprocesory są wykonywane przed wykonaniem skryptu.  
-Mogą wykonywać różne czynności, takie jak włączanie trybu debugowania lub błędów nawiasu.
+As the name suggests, preprocessors are executed before the script is executed.  
+They can perform various actions like enabling Debug Mode or Supress Bracket Errors.
 
-## Wywołanie preprocesora
+## Calling a preprocessor
 
-Preprocesor może być wywołany za pomocą funkcji #komentarza.  
-Zachowaj ostrożność przy komentarzach, ale możesz zacząć od słowa kluczowego preprocesora.
+A preprocessor can be called using the #comment function.  
+Be careful with the comments though as you might start one with a preprocessor keyword.
 
 ```zenscript
-#debugowanie to moje ulubione słowo, które lubię dodać wszędzie jako komentarz
+#debug is my favorite word I like to add it everywhere as a comment
 ```
 
-↑ Włącz tryb debugowania, gdy znaleziono `#debug`. Jeśli naprawdę chcesz upewnić się, że taki rzadki przypadek nie występuje, użyj `//` aby skomentować.
+↑ Would enable debug mode as `#debug` is found. If you really want to ensure such a rare case doesn't happen, use `//` for comments.
