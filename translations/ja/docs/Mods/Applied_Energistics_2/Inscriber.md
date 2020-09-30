@@ -1,14 +1,14 @@
 # Inscriber
 
-### インポート中
+### Importing
 
 ```zenscript
-import mods.appledenergistics2.Inscriber;
+import mods.appliedenergistics2.Inscriber;
 ```
 
-### 追加中
+### Adding
 
-`inscribe` boolean が true の場合、上部と下部の入力は消費されません。
+When the `inscribe` boolean is true, the top and bottom inputs are not consumed.
 
 ```zenscript
 Inscriber.addRecipe(IItemStack output, IItemStack input, boolean inscribe, @Optional IItemStack topInput, @Optional IItemStack bottomInput);
@@ -16,15 +16,15 @@ Inscriber.addRecipe(IItemStack output, IItemStack input, boolean inscribe, @Opti
 //turns eggs into Wither Skele spawn eggs, does not consume wither skull
 Inscriber.addRecipe(<minecraft:spawn_egg:5>, <minecraft:egg>, true, <minecraft:skull:1>);
 
-//combines bread, coco beans, and sugar. すべての入力は
+//combines bread, coco beans, and sugar. all inputs are consumed
 Inscriber.addRecipe(<minecraft:cookie>, <minecraft:minecraft:bread>, false, <minecraft:dye:3>, <minecraft:sugar>);
 ```
 
-### 削除中
+### Removing
 
 ```zenscript
 Inscriber.removeRecipe(IItemStack output);
 
-//印刷されたシリコンレシピ 
+//removes printed silicon recipe 
 Inscriber.removeRecipe(<appliedenergistics2:material:20>); 
 ```
