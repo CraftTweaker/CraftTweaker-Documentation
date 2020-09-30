@@ -1,19 +1,19 @@
 # IItemFoodEaten
 
-每当相关的 [食品项](/Mods/ContentTweaker/Vanilla/Creatable_Content/ItemFood/) 被食用时，IItemFoodEaten 函数被调用。 请注意，如果项目已经提供 [IItemUseFinish](/Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemUseFinish/) 则此事件 *不会触发*。
+The IItemFoodEaten function is called whenever the associated [food item](/Mods/ContentTweaker/Vanilla/Creatable_Content/ItemFood/) is eaten. Note that this event *will not fire* if the item already has a provided [IItemUseFinish](/Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemUseFinish/).
 
 ## 导入相关包
 
-如果您遇到任何问题，可能需要导入软件包，所以比抱歉更安全并添加导入。  
-`导入 mods.contenttweaker.IItemFoodEaten；`
+It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
+`import mods.contenttweaker.IItemFoodEaten;`
 
-## 参数
+## Parameters
 
-IItemFoodEaten是具有以下参数的函数(按此顺序排列)：
+The IItemFoodEaten is a function with the following parameters (In this order):
 
-- [IMutableItemStack](/Mods/ContentTweaker/Vanilla/Types/Item/IMutableItemStack/) mutableItemStack = 食用的食品。
-- [IWorld](/Mods/ContentTweaker/Vanilla/Types/World/IWorld/) world → 玩家所在的世界
-- [CTPlayer](/Mods/ContentTweaker/Vanilla/Types/Player/ICTPlayer/) 玩家 → 吃食物的玩家。
+- [IMutableItemStack](/Mods/ContentTweaker/Vanilla/Types/Item/IMutableItemStack/) mutableItemStack → The food item being eaten.
+- [IWorld](/Mods/ContentTweaker/Vanilla/Types/World/IWorld/) world → The world the player is in
+- [CTPlayer](/Mods/ContentTweaker/Vanilla/Types/Player/ICTPlayer/) player → The player eating the food.
 
 ## 例子
 
