@@ -2,16 +2,16 @@
 
 ## Mod-Locking
 
-Dies wurde als Möglichkeit für Konfigurationen in 1.2.0 hinzugefügt und hat nun eine CrT ZenMethod implementiert, um sie zu unterstützen. Dies kann auch durch die Konfigurationen wie bereits erwähnt erreicht werden.
+This was added as a capability for configs in 1.2.0 and now has a CrT ZenMethod implemented to support it. This can also be accomplished through the configs as previously mentioned.
 
-Mod-Locks erlauben es dir, alle Gegenstände einer bestimmten Mod hinter einer bestimmten Sperre zu sperren.
+Mod-Locks allow you to lock all ItemStacks from a specific mod behind a specific lock.
 
 ### Syntax:
 
-    // Leeres Beispiel
-    mods.compatskills.ModLock.addModLock(String modId, String... gesperrt);
+    // Blank Example
+    mods.compatskills.ModLock.addModLock(String modId, String... locked);
     
-    // Arbeitsbeispiel:
+    // Working Example:
     mods.compatskills.ModLock.addModLock("minecraft", "reskillable:building|4");
     
-    Die obige Sperre wird alles aus dem Mod "minecraft" hinter einer Sperre von "building 4" sperren
+    The above lock will lock everything from the mod "minecraft" behind a lock of "building 4"
