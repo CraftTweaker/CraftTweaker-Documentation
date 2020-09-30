@@ -1,24 +1,24 @@
 # MCSingleRedirectModifier
 
-Ta klasa została dodana przez moda z mod-id `crafttweaker`. Więc musisz zainstalować tę modyfikację, jeśli chcesz używać tej funkcji.
+This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
 
-## Importowanie klasy
-Może być wymagane zaimportowanie pakietu, jeśli napotkasz jakiekolwiek problemy (np. rzucanie tablicy), tak aby były bezpieczne niż przepraszamy i dodaj import.
+## Importing the class
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
 ```zenscript
 crafttweaker.api.commands.custom.MCSingleRedirectModifier
 ```
 
-## Konstruktorzy
+## Constructors
 ```zenscript
 nowe crafttweaker.api.commands.custom.MCSingleRedirectModifier(zabawne jako funkcja.Funkcja<crafttweaker.api.commands.custom.MCCommandContext, crafttweaker.api.commands.custom.MCCommandSource>);
 ```
-| Parametr | Typ                                                                                                                                                                                                                             | Opis             |
-| -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------- |
-| zabawa   | Funkcja&lt;[crafttweaker.api.commands.custom.MCCommandContext](/vanilla/api/commands/custom/MCCommandContext), [crafttweaker.api.commands.custom.MCCommandSource](/vanilla/api/commands/custom/MCCommandSource)&gt; | Nie podano opisu |
+| Parameter | Type                                                                                                                                                                                                                            | Description             |
+| --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------- |
+| zabawa    | Funkcja&lt;[crafttweaker.api.commands.custom.MCCommandContext](/vanilla/api/commands/custom/MCCommandContext), [crafttweaker.api.commands.custom.MCCommandSource](/vanilla/api/commands/custom/MCCommandSource)&gt; | No description provided |
 
 
 
-## Metody
+## Methods
 ### zastosuj
 
 Typ zwrotu: [crafttweaker.api.commands.custom.MCCommandSource](/vanilla/api/commands/custom/MCCommandSource)
@@ -27,27 +27,27 @@ Typ zwrotu: [crafttweaker.api.commands.custom.MCCommandSource](/vanilla/api/comm
 myMCSingleRedirectModifier.apply(context as crafttweaker.api.commands.custom.MCCommandContext);
 ```
 
-| Parametr | Typ                                                                                                | Opis             |
-| -------- | -------------------------------------------------------------------------------------------------- | ---------------- |
-| kontekst | [crafttweaker.api.commands.custom.MCCommandContext](/vanilla/api/commands/custom/MCCommandContext) | Nie podano opisu |
+| Parameter | Type                                                                                               | Description             |
+| --------- | -------------------------------------------------------------------------------------------------- | ----------------------- |
+| kontekst  | [crafttweaker.api.commands.custom.MCCommandContext](/vanilla/api/commands/custom/MCCommandContext) | No description provided |
 
 
-### równa się
+### equals
 
-Typ zwrotu: logiczny
+Return type: boolean
 
 ```zenscript
 myMCSingleRedirectModifier.equals(o jako Obiekt);
 ```
 
-| Parametr | Typ    | Opis             |
-| -------- | ------ | ---------------- |
-| ob       | Obiekt | Nie podano opisu |
+| Parameter | Type   | Description             |
+| --------- | ------ | ----------------------- |
+| o         | Object | No description provided |
 
 
 ### hashCode
 
-Typ zwrotu: int
+Return type: int
 
 ```zenscript
 myMCSingleRedirectModifier.hashCode();
@@ -55,27 +55,27 @@ myMCSingleRedirectModifier.hashCode();
 
 ### toString
 
-Typ zwrotu: Ciąg
+Return type: String
 
 ```zenscript
 myMCSingleRedirectModifier.toString();
 ```
 
 
-## Operatorzy
-### RÓŻNE
+## Operators
+### EQUALS
 
 ```zenscript
 myMCSingleRedirectModifier == o jako obiekt
 ```
 
-| Parametr | Typ    | Opis             |
-| -------- | ------ | ---------------- |
-| ob       | Obiekt | Nie podano opisu |
+| Parameter | Type   | Description             |
+| --------- | ------ | ----------------------- |
+| o         | Object | No description provided |
 
-## Szafy na akta, szafy na kartoteki, kasety na papiery, podpórki na papiery, pojemniki na przybory do pisania, stojaki na stemple biurowe i podobne wyposażenie biurowe lub biurkowe, z metali nieszlachetnych
+## Casters
 
-| Typ wyniku  | Jest niedomniemany |
-| ----------- | ------------------ |
-| Ciąg znaków | prawda             |
+| Result type | Is Implicit |
+| ----------- | ----------- |
+| String      | true        |
 
