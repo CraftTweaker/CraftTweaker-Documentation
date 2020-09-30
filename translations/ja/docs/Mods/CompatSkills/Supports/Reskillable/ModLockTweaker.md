@@ -1,12 +1,12 @@
 # Mod-Lock Tweaker
 
-## モッドロック
+## Mod-Locking
 
-これは1.2.0で設定機能として追加され、CRT ZenMethodがサポートされるようになりました。 これは、前述のような設定を通じても可能です。
+This was added as a capability for configs in 1.2.0 and now has a CrT ZenMethod implemented to support it. This can also be accomplished through the configs as previously mentioned.
 
-Modロックでは、特定のロックの後ろにある特定のModからすべてのItemStackをロックできます。
+Mod-Locks allow you to lock all ItemStacks from a specific mod behind a specific lock.
 
-### 構文
+### Syntax:
 
     // Blank Example
     mods.compatskills.ModLock.addModLock(String modId, String... locked);
@@ -14,4 +14,4 @@ Modロックでは、特定のロックの後ろにある特定のModからす�
     // Working Example:
     mods.compatskills.ModLock.addModLock("minecraft", "reskillable:building|4");
     
-    上記のロックは mod "minecraft" から"building 4" のロックの後ろにすべてをロックします
+    The above lock will lock everything from the mod "minecraft" behind a lock of "building 4"
