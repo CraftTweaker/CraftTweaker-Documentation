@@ -1,10 +1,10 @@
-### クラス
+### Class
 
 ```zenscript
 import mods.roots.Pyre;
 ```
 
-#### メソッド
+#### Methods
 
 ```zenscript
 void addRecipe(
@@ -29,7 +29,7 @@ void addRecipe(
 
 ```zenscript
 void removeRecipe(
-  IItemStack 出力// 削除するレシピの出力
+  IItemStack output // the output of the recipe to remove
 );
 ```
 
@@ -40,8 +40,8 @@ void removeRecipe(
 ```zenscript
 import mods.roots.Pyre;
 
-// Removes the recipes for stalicripe; Note that the quantity is not considered
-// when checking if the recipes matches.
+// Removes the recipe for stalicripe; note that the quantity is not considered
+// when checking if the recipe matches.
 Pyre.removeRecipe(<roots:stalicripe>);
 
 // Re-adds the stalicripe using an addition recipe that grants no XP,
@@ -52,8 +52,8 @@ Pyre.addRecipe("stalicripe", <roots:stalicripe>*64, [<minecraft:diamond_block>, 
 Pyre.addRecipe("stalicripe", <roots:stalicripe>*64, [<minecraft:diamond_block>, <minecraft:gold_block>, <minecraft:iron_block>, <minecraft:emerald_block>, <minecraft:deadbush>], 30);
 ```
 
-### メモ
+### Notes
 
-基本アイテムを作成するための正しいレシピをPatchouliが正しく報告していることを確認するために、レシピ名が同じであることを確認するためには、レシピを置き換える際に非常に重要です。
+It's extremely important when replacing recipes to ensure that the recipe name is the same to make certain that Patchouli correctly reports the correct recipe for crafting base items.
 
-他のすべてのアイテムについては、レシピが何をするかを説明する名前を使用してください。
+For all other items, please use a name descriptive of what your recipe does.
