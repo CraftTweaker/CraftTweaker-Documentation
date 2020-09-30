@@ -1,16 +1,16 @@
 # DryingBasin
 
-このパッケージでは、乾燥盆地のレシピを変更できます。
+This package allows you to modify recipes for the Drying Basin.
 
 ## パッケージのインポート
 
-このパッケージをインポートしたい場合は、次のようにします。
+If you want to import this package, here you go:
 
 ```zenscript
 import mods.integrateddynamics.DryingBasin;
 ```
 
-## レシピを追加中
+## Adding Recipes
 
 ```zenscript
 //DryingBasin.addRecipe(@Optional IItemStack inputStack, @Optional ILiquidStack inputFluid, @Optional IItemStack outputStack, @Optional ILiquidStack outputFluid, @Optional(10) int duration);
@@ -18,7 +18,7 @@ import mods.integrateddynamics.DryingBasin;
 DryingBasin.addRecipe(<minecraft:melon>, <liquid:lava> * 100, <minecraft:stick>, <liquid:water> * 100, 10);
 ```
 
-## レシピを削除
+## Removing Recipes
 
 ```zenscript
 //DryingBasin.removeRecipe(@Optional IItemStack inputStack, @Optional ILiquidStack inputFluid, @Optional IItemStack outputStack, @Optional ILiquidStack outputFluid, @Optional(10) int duration);
