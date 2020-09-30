@@ -1,18 +1,18 @@
-# Infusuario getico
+# Energetic Infuser
 
-## Paquete
+## Package
 
 `mods.thermalexpansion.Infuser`
 
-## Adicional
+## Addition
 
 ```zenscript
-//mods.thermalexpansion.Infuser.addRecipe(salida IItemStack, entrada ItemStack, energía de int);
+//mods.thermalexpansion.Infuser.addRecipe(IItemStack output, IItemStack input, int energy);
 mods.thermalexpansion.Infuser.addRecipe(<minecraft:gold_ingot>, <minecraft:iron_ingot>, 1000);
 
 ```
 
-## Eliminar
+## Removal
 
 ```zenscript
 //mods.thermalexpansion.Infuser.removeRecipe(IItemStack input);
