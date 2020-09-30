@@ -1,40 +1,40 @@
 # MCBiome
 
-crafttweakerのmod-idを持つmodによって追加されているクラスです。 従って、この機能を利用する場合はこのmodをインストールする必要があります。
+This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
 
-## クラスのインポート
-問題が発生した場合には、インポートが必要になります。とはいえ、お手数ですが予めインポートしておくほうが安全です。
+## Importing the class
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
 ```zenscript
 crafttweaker.api.world.MCBiome
 ```
 
-## メソッド
+## Methods
 ### getTemperature
 
 戻り値の型: float
 
 ```zenscript
-myMCBiome.getTemperature(crafttweaker.api.util.BlockPos);
+myMCBiome.getTemperature(pos as crafttweaker.api.util.BlockPos);
 ```
 
-| パラメータ | タイプ                                                          | 説明           |
-| ----- | ------------------------------------------------------------ | ------------ |
-| pos   | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | 説明が提供されていません |
+| Parameter | Type                                                         | Description             |
+| --------- | ------------------------------------------------------------ | ----------------------- |
+| pos       | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | No description provided |
 
 
 
-## プロパティー
+## Properties
 
-| 名称             | タイプ      | ゲッターあり | セッターあり |
-| -------------- | -------- | ------ | ------ |
-| カテゴリ           | 文字列型     | true   | false  |
-| 深さ             | float型   | true   | false  |
-| doesRain       | boolean型 | true   | false  |
-| doesSnow       | boolean型 | true   | false  |
-| <unk>          | float型   | true   | false  |
-| isHighHumidity | boolean型 | true   | false  |
-| rainType       | 文字列型     | true   | false  |
-| スケール           | float型   | true   | false  |
-| waterColor     | int      | true   | false  |
-| waterFogColor  | int      | true   | false  |
+| 名称             | Type     | Has Getter | Has Setter |
+| -------------- | -------- | ---------- | ---------- |
+| category       | String   | true       | false      |
+| depth          | float    | true       | false      |
+| doesRain       | boolean型 | true       | false      |
+| doesSnow       | boolean型 | true       | false      |
+| downfall       | float    | true       | false      |
+| isHighHumidity | boolean型 | true       | false      |
+| rainType       | String   | true       | false      |
+| scale          | float    | true       | false      |
+| waterColor     | int      | true       | false      |
+| waterFogColor  | int      | true       | false      |
 
