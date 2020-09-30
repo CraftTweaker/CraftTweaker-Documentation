@@ -1,21 +1,21 @@
-# 沉浸式工程
+# Immersive Engineering
 
-## 积分：
+## Credits:
 
-感谢Skysom帮助引导我完成这个任务，并允许我从MultiblockStages重编他的一些代码！
+Credits goes out to Skysom for helping guide me through this and for allowing me to rework some of his code from MultiblockStages!
 
-## 解释：
+## Explaination:
 
-“沉浸式工程支持”目前包括：
+Immersive Engineering-Support currently consists of:
 
-- 倾倒所有 IE 多块字符串名称的命令。 
-    - 命令为：/ct iMultiBlocks
-- 使用基于Crtax的语法多块通关。
+- A Command for dumping the string name of all IE Multiblocks. 
+    - Command is: /ct ieMultiBlocks
+- Multiblock Gating using a Crt-based Syntax.
 
-### 语法：
+### Syntax:
 
-    空白示例：
-    mods.compatskills.IEMultiBlockGate.addGate(String multiBlockName, String failureMessage, String... 默认要求)；
+    Blank Example:
+    mods.compatskills.IEMultiBlockGate.addGate(String multiBlockName, String failureMessage, String... defaultRequirements);
     
-    工作示例：
-    mods.compatskills.IEMultiBlockGate.addGate("IE:DieselGenerator", "我害怕这太复杂对于像你这样的idiot来说！""reskillable:building|15", "reskillable:magic|7", "stage|test", "adv|minecraft:harmry/plant_seed");
+    Working Example:
+    mods.compatskills.IEMultiBlockGate.addGate("IE:DieselGenerator", "I'm afraid this is just too complex for an idiot like you!", "reskillable:building|15", "reskillable:magic|7", "stage|test", "adv|minecraft:husbandry/plant_seed");
