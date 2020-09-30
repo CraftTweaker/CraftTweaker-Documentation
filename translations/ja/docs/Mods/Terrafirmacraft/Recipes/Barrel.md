@@ -1,13 +1,13 @@
-# バレル
+# Barrel
 
-## パッケージ
+## Package
 ```zenscript
-import mods.terrafirmacraft.Barrel;バレル;
+import mods.terrafirmacraft.Barrel;Barrel;
 ```
 
 ## 追加
 ```zenscript
-Barrel.addRecipe(レジストリ名を文字列化します, @Optional IIngredient itemInput, ILiquidStack fluidInput, @Optional IItemStack itemOutput, @Optional ILiquidStack fluidOutput, int hours);
+Barrel.addRecipe(String registryName, @Optional IIngredient itemInput, ILiquidStack fluidInput, @Optional IItemStack itemOutput, @Optional ILiquidStack fluidOutput, int hours);
 ```
 
 ## 削除
@@ -16,4 +16,4 @@ Barrel.addRecipe(レジストリ名を文字列化します, @Optional IIngredie
 Barrel.removeRecipe(@Optional IItemStack outputItem, @Optional ILiquidStack outputLiquid)
 Barrel.removeRecipe(String registryName)
 ```
-- レシピの削除と追加の両方のために、少なくとも1つの出力(液体またはアイテム)を供給する必要があります。
+- At least one output(liquid or item) must be supplied, for both removing and adding recipes.
