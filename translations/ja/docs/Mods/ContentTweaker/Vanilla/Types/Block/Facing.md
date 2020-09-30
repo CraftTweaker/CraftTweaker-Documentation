@@ -1,23 +1,23 @@
-# 面と向かって
+# Facing
 
-CoT Facing は、 [ブロックの](/Mods/ContentTweaker/Vanilla/Creatable_Content/Block/) 可能な方向の列挙です。
+A CoT Facing is an enumeration of a [block's](/Mods/ContentTweaker/Vanilla/Creatable_Content/Block/) possible directions
 
 ## パッケージのインポート
 
-問題が発生した場合は、パッケージをインポートする必要があるかもしれませんので、申し訳ありませんし、インポートを追加してください。  
+It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
 `import mods.contenttweaker.Facing;`
 
-## 列挙型
+## Enumerations
 
-面と向きは以下の6つの値になります:
+Facing can be of those six values:
 
-- 北へ
-- 東
-- 南
-- 西
-- 下
-- 上
+- north
+- east
+- south
+- west
+- down
+- up
 
-## 使用
+## Uses
 
-Handの主な使用法は [IItemUse Function](/Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemUse/) です。
+A Hand's main use is in a [IItemUse Function](/Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemUse/).
