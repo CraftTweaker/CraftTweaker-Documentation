@@ -1,15 +1,15 @@
-# Bloqueo-Etapa
+# Stage-Locks
 
-## Fase de bloqueo
+## Stage-Lock
 
-Esta parte del soporte de GameStages te permite bloquear una etapa específica detrás de un conjunto de requisitos. Esto significa que si un jugador no coincide con los requisitos establecidos para la etapa al desbloquear el escenario, cancelará el desbloqueo y publicará un mensaje de error en el chat. Este mensaje de chat no es amplio en el servidor, sino específico del jugador.
+This part of the GameStages-support allows you to lock a specific stage behind a set of requirements. This means that if a player does not match the set requirements for the stage upon unlocking the stage, it'll cancel the unlock and post an error message to chat. This chat message isn't server-wide but player-specific.
 
-### Sintaxis:
+### Syntax:
 
-    // Ejemplo en blanco:
+    // Blank Example:
     mods.compatskills.GameStageLocks.addGameStageLock(String gamestage, String... defaultRequirements);
     
-    // Ejemplo de prueba:
+    // Test Example:
     mods.compatskills.GameStageLocks.addGameStageLock("i", "reskillable:agility|10");
     mods.compatskills.GameStageLocks.addGameStageLock("like", "reskillable:agility|11");
     mods.compatskills.GameStageLocks.addGameStageLock("banana", "reskillable:agility|12");
