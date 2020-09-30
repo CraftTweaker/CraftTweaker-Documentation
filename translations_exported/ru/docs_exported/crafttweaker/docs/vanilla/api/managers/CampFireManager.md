@@ -10,44 +10,44 @@
 crafttweaker.api.CampFireManager
 ```
 
-## Реализованные интерфейсы
-В CampFireManager реализованы следующие интерфейсы. Следовательно, методы из них доступны в этом классе.
+## Implemented Interfaces
+CampFireManager implements the following interfaces. That means any method available to them can also be used on this class.
 - [crafttweaker.api.brackets.CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
 - [crafttweaker.api.registries.ICookingRecipeManager](/vanilla/api/managers/ICookingRecipeManager)
 - [crafttweaker.api.registries.IRecipeManager](/vanilla/api/managers/IRecipeManager)
 
-## Методы
+## Methods
 ### addJSONRecipe
 
-Добавляет рецепт на основе предоставленной IData. Предоставленная IData должна представлять JSON DataPack DataPack это позволяет эффективно регистрировать рецепты для любого набора данных, поддерживающего системы IRecipeType.
+Adds a recipe based on a provided IData. The provided IData should represent a DataPack JSON, this effectively allows you to register recipes for any DataPack supporting IRecipeType systems.
 
 ```zenscript
 campfire.addJSONRecipe(название строки, данные как crafttweaker.api.data.IData);
 campfire.addJSONRecipe("recipe_name", {ingredient:{item:<item:minecraft:gold_ore>.registryName},результат:<item:minecraft:cooked_porkchop>.registryName,experience:0.35 как float, cooking time:100});
 ```
 
-| Параметр | Тип                                                    | Описание                         |
-| -------- | ------------------------------------------------------ | -------------------------------- |
-| имя      | String                                                 | название рецепта                 |
-| data     | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | данные, представляющие файл json |
+| Параметр | Тип                                                    | Description                     |
+| -------- | ------------------------------------------------------ | ------------------------------- |
+| name     | String                                                 | name of the recipe              |
+| data     | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | data representing the json file |
 
 
-### Добавить рецепт
+### addRecipe
 
-Добавляет рецепт на основе заданных параметров.
+Adds a recipe based on given params.
 
 ```zenscript
-campfire.addRecipe(название как строка, вывести как crafttweaker.api.item.IItemStack, вводить как crafttweaker.api.item.IIngredient, xp как плавущий, время приготовления int);
+campfire.addRecipe(name as String, output as crafttweaker.api.item.IItemStack, input as crafttweaker.api.item.IIngredient, xp as float, cookTime as int);
 campfire.addRecipe("wool2diamond", <item:diamond>, <tag:minecraft:wool>, 1.0, 0);
 ```
 
-| Параметр        | Тип                                                                 | Описание                                    |
-| --------------- | ------------------------------------------------------------------- | ------------------------------------------- |
-| имя             | String                                                              | Название нового рецепта                     |
-| вывод           | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)   | Вывод рецепта IItemStack                    |
-| input           | [crafttweaker.api.item.IIngredient](/vanilla/api/items/IIngredient) | Вход Igredient в рецепт                     |
-| xp              | float                                                               | сколько xp получает игрок                   |
-| время кулинарии | int                                                                 | сколько времени требуется для приготовления |
+| Параметр | Тип                                                                 | Description                     |
+| -------- | ------------------------------------------------------------------- | ------------------------------- |
+| name     | String                                                              | Name of the new recipe          |
+| output   | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)   | IItemStack output of the recipe |
+| input    | [crafttweaker.api.item.IIngredient](/vanilla/api/items/IIngredient) | IIngredient input of the recipe |
+| xp       | float                                                               | how much xp the player gets     |
+| cookTime | int                                                                 | how long it takes to cook       |
 
 
 ### getRecipeByName
@@ -58,9 +58,9 @@ campfire.addRecipe("wool2diamond", <item:diamond>, <tag:minecraft:wool>, 1.0, 0)
 Лагерь.getRecipeByName(название как строка);
 ```
 
-| Параметр | Тип    | Описание             |
+| Параметр | Тип    | Description          |
 | -------- | ------ | -------------------- |
-| имя      | String | Описание отсутствует |
+| name     | String | Описание отсутствует |
 
 
 ### getRecipesByFrom
@@ -71,31 +71,31 @@ campfire.addRecipe("wool2diamond", <item:diamond>, <tag:minecraft:wool>, 1.0, 0)
 campfire.getRecipesByOutput(вывод как crafttweaker.api.item.IIngredient);
 ```
 
-| Параметр | Тип                                                                 | Описание             |
+| Параметр | Тип                                                                 | Description          |
 | -------- | ------------------------------------------------------------------- | -------------------- |
-| вывод    | [crafttweaker.api.item.IIngredient](/vanilla/api/items/IIngredient) | Описание отсутствует |
+| output   | [crafttweaker.api.item.IIngredient](/vanilla/api/items/IIngredient) | Описание отсутствует |
 
 
-### удалить все
+### removeAll
 
-Удалить все рецепты в реестре
+Remove all recipes in this registry
 
 ```zenscript
 лагерь.removeAll();
 ```
 
-### удалил Modid
+### removeByModid
 
-Удалить рецепт на основе модификации имени реестра
+Remove recipe based on Registry name modid
 
 ```zenscript
 костер.removeByModid(modid as String);
 campfire.removeByModid("minecraft");
 ```
 
-| Параметр | Тип    | Описание                  |
-| -------- | ------ | ------------------------- |
-| мод      | String | мод рецептов для удаления |
+| Параметр | Тип    | Description                    |
+| -------- | ------ | ------------------------------ |
+| modid    | String | modid of the recipes to remove |
 
 
 
@@ -106,72 +106,72 @@ campfire.removeByModid(modid as String, exclude as crafttweaker.api.recipe.Recip
 campfire.removeByModid("minecraft", (название как строка) => {return name == "orange_wool";});
 ```
 
-| Параметр  | Тип                                                                      | Описание                            |
+| Параметр  | Тип                                                                      | Description                         |
 | --------- | ------------------------------------------------------------------------ | ----------------------------------- |
-| мод       | String                                                                   | мод рецептов для удаления           |
+| modid     | String                                                                   | modid of the recipes to remove      |
 | исключить | [crafttweaker.api.recipe.RecipeFilter](/vanilla/api/recipe/RecipeFilter) | рецепты для exlude от быть удалены. |
 
 
 ### removeByName
 
-Удалить рецепт на основе названия реестра
+Remove recipe based on Registry name
 
 ```zenscript
 имя лагеря (название как строка);
 лагерь.removeByName("minecraft:furnace");
 ```
 
-| Параметр | Тип    | Описание                 |
-| -------- | ------ | ------------------------ |
-| имя      | String | имя реестра для удаления |
+| Параметр | Тип    | Description                       |
+| -------- | ------ | --------------------------------- |
+| name     | String | registry name of recipe to remove |
 
 
 ### removeByRegex
 
-Удалить рецепт, основанный на регулярном выражении
+Remove recipe based on regex
 
 ```zenscript
 campfire.removeByRegex(regex как строка);
 campfire.removeByRegex("\\d_\\d");
 ```
 
-| Параметр   | Тип    | Описание                 |
-| ---------- | ------ | ------------------------ |
-| регулярные | String | выражать до совпадения с |
+| Параметр | Тип    | Description            |
+| -------- | ------ | ---------------------- |
+| regex    | String | regex to match against |
 
 
-### удалить рецепт
+### removeRecipe
 
-Удалите рецепт, основанный на его результате.
+Remove a recipe based on it's output.
 
 ```zenscript
 лагерь.removeRecipe(выход как crafttweaker.api.item.IItemStack);
 лагерь.removeRecipe(<item:minecraft:glass>);
 ```
 
-| Параметр | Тип                                                               | Описание      |
-| -------- | ----------------------------------------------------------------- | ------------- |
-| вывод    | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | вывод рецепта |
+| Параметр | Тип                                                               | Description          |
+| -------- | ----------------------------------------------------------------- | -------------------- |
+| output   | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | output of the recipe |
 
 
 
-Удаляет рецепт на основе его вывода и ввода.
+Removes a recipe based on it's output and input.
 
 ```zenscript
-лагерь.removeRecipe(выход как crafttweaker.api.item.IItemStack, ввод в качестве crafttweaker.api.item.IIngredient);
-лагерь.removeRecipe(<item:minecraft:diamond>, <tag:minecraft:wool>);
+campfire.removeRecipe(output as crafttweaker.api.item.IItemStack, input as crafttweaker.api.item.IIngredient);
+campfire.removeRecipe(<item:minecraft:diamond>, <tag:minecraft:wool>);
 ```
 
-| Параметр | Тип                                                                 | Описание                         |
-| -------- | ------------------------------------------------------------------- | -------------------------------- |
-| вывод    | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)   | Выход из рецепта IItemStack.     |
-| input    | [crafttweaker.api.item.IIngredient](/vanilla/api/items/IIngredient) | Ингредиент рецепта для удаления. |
+| Параметр | Тип                                                                 | Description                          |
+| -------- | ------------------------------------------------------------------- | ------------------------------------ |
+| output   | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)   | IItemStack output of the recipe.     |
+| input    | [crafttweaker.api.item.IIngredient](/vanilla/api/items/IIngredient) | IIngredient of the recipe to remove. |
 
 
 
 ## Свойства
 
-| Название         | Тип    | Имеет Getter | Имеет Setter |
-| ---------------- | ------ | ------------ | ------------ |
-| командная строка | String | true         | false        |
+| Название      | Тип    | Имеет Getter | Имеет Setter |
+| ------------- | ------ | ------------ | ------------ |
+| commandString | String | true         | false        |
 
