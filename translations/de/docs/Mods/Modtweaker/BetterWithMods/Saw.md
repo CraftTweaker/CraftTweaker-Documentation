@@ -1,58 +1,58 @@
-# Säge
+# Saw
 
-## Einfaches Rezept
+## Basic Recipe
 
-* Fügt Sägerezept hinzu - Eingaben *MÜSSEN* haben einen Block zugeordnet.
+* Adds Saw Recipe - inputs *MUST* have a block associated with them.
 
 ```zenscript
-mods.betterwithmods.Saw.add(IIngredient Eingabe, IItemStack[] Ausgabe);
-//Beispiele
+mods.betterwithmods.Saw.add(IIngredient input, IItemStack[] output);
+//Examples
 mods.betterwithmods.Saw.add(<minecraft:fence>,[<minecraft:stick>,<minecraft:stick>]);
 ```
 
-## Entfernen durch Eingabe
+## Removal by input
 
-* Entfernen Sie ein Rezept basierend auf der Eingabezutat
-
-```zenscript
-mods.betterwithmods.Saw.remove(IIngredient Eingabe);
-```
-
-## Nach Ausgabe entfernen
-
-* Ein Rezept basierend auf der Ausgabe entfernen
+* Remove a recipe based on the input ingredient
 
 ```zenscript
-mods.betterwithmods.Saw.remove(IItemStack[] Ausgänge);
+mods.betterwithmods.Saw.remove(IIngredient input);
 ```
 
-## Alle entfernen
+## Removal by output
 
-* Alle Rezepte entfernen
+* Remove a recipe based on the output
+
+```zenscript
+mods.betterwithmods.Saw.remove(IItemStack[] outputs);
+```
+
+## Remove all
+
+* Remove all recipes
 
 ```zenscript
 mods.betterwithmods.Saw.removeAll();
 ```
 
-## Erbauer
+## Builder
 
-Die Säge hat einen Rezeptbauer. Aufgrund der Natur der Säge hat es derzeit keine speziellen Baumethoden zu dokumentieren, werde ich es none-the-less dokumentieren.
+The Saw has a recipe builder. Due to the nature of the saw it currently has no special builder methods, I will document it none-the-less.
 
-* Um einen neuen Sägenbauer zu erstellen. `mods.betterwithmods.Saw.builder()`
+* To create a new Saw builder. `mods.betterwithmods.Saw.builder()`
 
-* Sägemethoden
+* Saw methods
      
      * Sets up the inputs and outputs of the recipe  
           zenscript buildRecipe(IIngredient[] inputs, IItemStack[] outputs)  
               zenscript
-              buildRecipe(IIngredient[] Eingänge, IItemStack[] Ausgaben)
+              buildRecipe(IIngredient[] inputs, IItemStack[] outputs)
      
      * Finalize the recipe and add it to the game  
           zenscript build()  
               zenscript
               build()
 
-### Beispiel-Builder-Nutzung
+### Example builder usage
 
     mods.betterwithmods.Saw.builder()
     .buildRecipe([<minecraft:oak_fence>], [<minecraft:stick>*6])
