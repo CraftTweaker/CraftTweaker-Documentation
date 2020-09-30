@@ -1,35 +1,35 @@
 # MCPlayerFlyableFallEvent
 
-Esta clase fue añadida por un mod con la ID  `crafttweaker`. Necesitas tener este mod instalado si quieres usar esta caracteristica.
+This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
 
-## Importar la clase
-Puede ser requerido que importes el paquete si encuentras algun problema (como crear un Array).
+## Importing the class
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
 ```zenscript
 crafttweaker.api.event.entity.player.MCPlayerFlyableFallEvent
 ```
 
-## Constructores
+## Constructors
 ```zenscript
-nuevo crafttweaker.api.event.entity.player.MCPlayerFlyableFallEvent(handler as function.Consumer<crafttweaker.api.event.entity.player.MCPlayerFlyableFallEvent>);
+new crafttweaker.api.event.entity.player.MCPlayerFlyableFallEvent(handler as function.Consumer<crafttweaker.api.event.entity.player.MCPlayerFlyableFallEvent>);
 ```
-| Parámetro | Tipo                                                                                                                                          | Descripción                   |
-| --------- | --------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------- |
-| handler   | function.Consumer<[crafttweaker.api.event.entity.player.MCPlayerFlyableFallEvent](/vanilla/api/event/entity/player/MCPlayerFlyableFallEvent)> | No se proporcionó descripción |
+| Parameter | Type                                                                                                                                          | Description             |
+| --------- | --------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------- |
+| handler   | function.Consumer<[crafttweaker.api.event.entity.player.MCPlayerFlyableFallEvent](/vanilla/api/event/entity/player/MCPlayerFlyableFallEvent)> | No description provided |
 
 
 
-## Métodos
+## Methods
 ### getDistance
 
-Devuelve flotante
+Returns float
 
 ```zenscript
 myMCPlayerFlyableFallEvent.getDistance();
 ```
 
-### %s Jugador
+### getEntityPlayer
 
-Devuelve [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
+Returns [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
 
 ```zenscript
 myMCPlayerFlyableFallEvent.getEntityPlayer();
@@ -37,7 +37,7 @@ myMCPlayerFlyableFallEvent.getEntityPlayer();
 
 ### getMultiplier
 
-Devuelve flotante
+Returns float
 
 ```zenscript
 myMCPlayerFlyableFallEvent.getMultiplier();
@@ -45,77 +45,77 @@ myMCPlayerFlyableFallEvent.getMultiplier();
 
 ### getPlayer
 
-Devuelve: `Jugador`
+Returns: `Player`
 
-Devuelve [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
+Returns [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
 
 ```zenscript
 myMCPlayerFlyableFallEvent.getPlayer();
 ```
 
-### hastaResultado
+### hasResult
 
-Determina si este evento espera un valor de resultado significativo. Nota: Los eventos con la anotación HasResult tendrán este método automáticamente añadido para devolver verdadero.
+Determines if this event expects a significant result value. Note: Events with the HasResult annotation will have this method automatically added to return true.
 
-Devuelve booleano
+Returns boolean
 
 ```zenscript
 myMCPlayerFlyableFallEvent.hasResult();
 ```
 
-### es cancelable
+### isCancelable
 
-Determine si esta función es cancelable. Devuelve: `Si el acceso a setCanceled debe ser permitido
- Nota:
- Los eventos con la anotación Cancelable tendrán este método automáticamente añadido para devolver verdadero.`
+Determine if this function is cancelable at all. Returns: `If access to setCanceled should be allowed
+ Note:
+ Events with the Cancelable annotation will have this method automatically added to return true.`
 
-Devuelve booleano
+Returns boolean
 
 ```zenscript
 myMCPlayerFlyableFallEvent.isCancelable();
 ```
 
-### es cancelado
+### isCanceled
 
-Determine si este evento es cancelado y debe dejar de ejecutarse. Devuelve: `El estado actual cancelado`
+Determine if this event is canceled and should stop executing. Returns: `The current canceled state`
 
-Devuelve booleano
+Returns boolean
 
 ```zenscript
 myMCPlayerFlyableFallEvent.isCanceled();
 ```
 
-### setCancelado
+### setCanceled
 
 ```zenscript
-myMCPlayerFlyableFallEvent.setCanceled(cancelar como booleano);
+myMCPlayerFlyableFallEvent.setCanceled(cancel as boolean);
 ```
 
-| Parámetro | Tipo    | Descripción                   |
-| --------- | ------- | ----------------------------- |
-| cancelar  | boolean | No se proporcionó descripción |
+| Parameter | Type    | Description             |
+| --------- | ------- | ----------------------- |
+| cancel    | boolean | No description provided |
 
 
 ### setDistance
 
 ```zenscript
-myMCPlayerFlyableFallEvent.setDistance(distancia como flotante);
+myMCPlayerFlyableFallEvent.setDistance(distance as float);
 ```
 
-| Parámetro | Tipo     | Descripción                   |
-| --------- | -------- | ----------------------------- |
-| distancia | flotante | No se proporcionó descripción |
+| Parameter | Type  | Description             |
+| --------- | ----- | ----------------------- |
+| distance  | float | No description provided |
 
 
 ### setMultiplier
 
 ```zenscript
-myMCPlayerFlyableFallEvent.setMultiplier(multiplicador como flotante);
+myMCPlayerFlyableFallEvent.setMultiplier(multiplier as float);
 ```
 
-| Parámetro     | Tipo     | Descripción                   |
-| ------------- | -------- | ----------------------------- |
-| multiplicador | flotante | No se proporcionó descripción |
+| Parameter  | Type  | Description             |
+| ---------- | ----- | ----------------------- |
+| multiplier | float | No description provided |
 
 
 
