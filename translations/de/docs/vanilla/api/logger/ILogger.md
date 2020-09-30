@@ -1,11 +1,11 @@
 # ILogger
 
-Base-Klasse, die verwendet wird, um mit der crafttweaker.log Datei und anderen Loggern (wie der Player-Logger) zu arbeiten.
+Base class used to interface with the crafttweaker.log file and other loggers (such as the player logger).
 
-Diese Klasse wurde von einer Mod mit mod-id `crafttweaker` hinzugefügt. Wenn Sie diese Funktion nutzen möchten, müssen Sie diese Mod installiert haben.
+This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
 
 ## Diese Klasse importieren
-Es kann erforderlich sein, dass Sie das Paket importieren, wenn Sie irgendwelche Probleme haben (wie zum Beispiel ein Array zu bearbeiten), also besser sicher sein als bedauern und fügen Sie den Import.
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
 ```zenscript
 crafttweaker.api.ILogger
 ```
@@ -13,58 +13,58 @@ crafttweaker.api.ILogger
 ## Methoden
 ### debug
 
-Protokolliert eine Debug-Nachricht.
+Logs a debug message.
 
 ```zenscript
 logger.debug(message as String);
 logger.debug("message");
 ```
 
-| Parameter | Type   | Beschreibung                   |
-| --------- | ------ | ------------------------------ |
-| nachricht | String | zu protokollierende Nachricht. |
+| Parameter | Type   | Beschreibung          |
+| --------- | ------ | --------------------- |
+| message   | String | message to be logged. |
 
 
-### fehlerhaft
+### error
 
-Protokolliert eine Fehlermeldung.
+Logs an error message.
 
 ```zenscript
 logger.error(message as String);
 logger.error("message");
 ```
 
-| Parameter | Type   | Beschreibung                   |
-| --------- | ------ | ------------------------------ |
-| nachricht | String | zu protokollierende Nachricht. |
+| Parameter | Type   | Beschreibung          |
+| --------- | ------ | --------------------- |
+| message   | String | message to be logged. |
 
 
 ### info
 
-Protokolliert eine Info-Nachricht.
+Logs an info message.
 
 ```zenscript
 logger.info(message as String);
 logger.info("message");
 ```
 
-| Parameter | Type   | Beschreibung                   |
-| --------- | ------ | ------------------------------ |
-| nachricht | String | zu protokollierende Nachricht. |
+| Parameter | Type   | Beschreibung          |
+| --------- | ------ | --------------------- |
+| message   | String | message to be logged. |
 
 
-### warnung
+### warning
 
-Protokolliert eine Warnmeldung.
+Logs a warning message.
 
 ```zenscript
-logger.warning(Nachricht als String);
+logger.warning(message as String);
 logger.warning("message");
 ```
 
-| Parameter | Type   | Beschreibung                   |
-| --------- | ------ | ------------------------------ |
-| nachricht | String | zu protokollierende Nachricht. |
+| Parameter | Type   | Beschreibung          |
+| --------- | ------ | --------------------- |
+| message   | String | message to be logged. |
 
 
 
