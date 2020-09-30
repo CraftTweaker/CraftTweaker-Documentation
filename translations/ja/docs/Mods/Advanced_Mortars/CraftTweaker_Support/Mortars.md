@@ -1,19 +1,19 @@
 # Mortars
 
-## パッケージのインポート
+## Importing The Package
 
-`mods.advancedmortars.Mortar` を使ってMortarパッケージを呼び出すことができます。
+You can call the Mortar package using `mods.advancedmortars.Mortar`.
 
-## レシピを追加
+## Add Recipe
 
 <table>
   <tr>
     <th>
-      タイプ
+      Type
     </th>
     
     <th>
-      データタイプ
+      Data Type
     </th>
     
     <th>
@@ -23,11 +23,11 @@
   
   <tr>
     <td>
-      迫撃砲の種類
+      Mortar Types
     </td>
     
     <td>
-      ストリング[]
+      String[]
     </td>
     
     <td>
@@ -37,7 +37,7 @@
   
   <tr>
     <td>
-      出力
+      Output
     </td>
     
     <td>
@@ -51,11 +51,11 @@
   
   <tr>
     <td>
-      期間
+      Duration
     </td>
     
     <td>
-      整数
+      Integer
     </td>
     
     <td>
