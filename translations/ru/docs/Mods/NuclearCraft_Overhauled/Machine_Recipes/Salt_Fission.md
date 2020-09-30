@@ -1,15 +1,15 @@
-# Солевое Fission
-**Примечание: Частично сломано**
+# Salt Fission
+**Note: Partially Broken**
 
-## Импортирование пакета
+## Importing the Package
 `mods.nuclearcraft.SaltFission`
 
-## Добавление рецептов
+## Adding Recipes
 ```zenscript
-mods.nuclearcraft.SaltFission.addRecipe(ILiquidStack fluidInput, ILiquidStack fluidOutput, двойной базы, двойная база, @Optional double processRadiation);
+mods.nuclearcraft.SaltFission.addRecipe(ILiquidStack fluidInput, ILiquidStack fluidOutput, double baseTime, double basePower, @Optional double processRadiation);
 ```
 
-## Удаление рецептов
+## Removing Recipes
 ```zenscript
 mods.nuclearcraft.SaltFission.removeRecipeWithInput(ILiquidStack fluidInput);
 mods.nuclearcraft.SaltFission.removeRecipeWithOutput(ILiquidStack fluidOutput);
