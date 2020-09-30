@@ -5,23 +5,23 @@
 ## 导入类
 如果遇到任何问题（例如强制转换数组），则可能需要导入软件包，因此，最好的方式就是导入包支持。
 ```zenscript
-craftbinvest.api.event.entity.player.MCAnvilRepairEvent
+crafttweaker.api.event.entity.player.MCAnvilRepairEvent
 ```
 
 ## Constructor #构造函数
 ```zenscript
-新 craftminstrer.api.event.entity.player.MCAnvilRepairEvent(处理函数。消费者<crafttweaker.api.event.entity.player.MCAnvilRepairEvent>)；
+new crafttweaker.api.event.entity.player.MCAnvilRepairEvent(handler as function.Consumer<crafttweaker.api.event.entity.player.MCAnvilRepairEvent>);
 ```
-| 参数      | 类型                                                                                                                       | 描述                      |
-| ------- | ------------------------------------------------------------------------------------------------------------------------ | ----------------------- |
-| handler | Consumer<[craftmiliter.api.event.entity.player.MCAnvilRepairEvent](/vanilla/api/event/entity/player/MCAnvilRepairEvent)> | No description provided |
+| 参数      | 类型                                                                                                                                | 描述                      |
+| ------- | --------------------------------------------------------------------------------------------------------------------------------- | ----------------------- |
+| handler | function.Consumer<[crafttweaker.api.event.entity.player.MCAnvilRepairEvent](/vanilla/api/event/entity/player/MCAnvilRepairEvent)> | No description provided |
 
 
 
 ## 方法
 ### getBreakChance
 
-返回浮点数
+Returns float
 
 ```zenscript
 myMCAnvilRepairEvent.getBreakChance();
@@ -29,15 +29,15 @@ myMCAnvilRepairEvent.getBreakChance();
 
 ### getEntityPlayer
 
-返回 [craftbinstruer.api.entity.player.MCPlayerEnty](/vanilla/api/entity/player/MCPlayerEntity)
+Returns [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
 
 ```zenscript
 myMCAnvilRepairEvent.getEntityPlayer();
 ```
 
-### getIngredient输入
+### getIngredientInput
 
-将第二个项目输入到铁轨 返回： `第二个输入栏位`
+Get the second item input into the anvil Returns: `the second input slot`
 
 Returns [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
 
@@ -47,7 +47,7 @@ myMCAnvilRepairEvent.getIngredientInput();
 
 ### getItemInput
 
-将第一个项目输入到铁轨 返回： `第一个输入栏位`
+Get the first item input into the anvil Returns: `the first input slot`
 
 Returns [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
 
@@ -55,9 +55,9 @@ Returns [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
 myMCAnvilRepairEvent.getItemInput();
 ```
 
-### getItemResults
+### getItemResult
 
-从铁轨 返回获取输出结果： `输出`
+Get the output result from the anvil Returns: `the output`
 
 Returns [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
 
@@ -67,17 +67,17 @@ myMCAnvilRepairEvent.getItemResult();
 
 ### getPlayer
 
-返回： `玩家`
+Returns: `Player`
 
-返回 [craftbinstruer.api.entity.player.MCPlayerEnty](/vanilla/api/entity/player/MCPlayerEntity)
+Returns [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
 
 ```zenscript
 myMCAnvilRepairEvent.getPlayer();
 ```
 
-### 突然结果
+### hasResult
 
-确定此事件是否需要一个重要的结果值。 注意： HasResult 注解中的事件将会自动添加此方法以返回 true。
+Determines if this event expects a significant result value. Note: Events with the HasResult annotation will have this method automatically added to return true.
 
 返回为布尔值
 
@@ -85,11 +85,11 @@ myMCAnvilRepairEvent.getPlayer();
 myMCAnvilRepairEvent.hasResult();
 ```
 
-### 可取消
+### isCancelable
 
-确定此函数是否可以取消。 返回： `如果应该允许访问 setcanced
- 注意：
- 取消批注事件将自动添加此方法以返回 true。`
+Determine if this function is cancelable at all. Returns: `If access to setCanceled should be allowed
+ Note:
+ Events with the Cancelable annotation will have this method automatically added to return true.`
 
 返回为布尔值
 
@@ -97,36 +97,36 @@ myMCAnvilRepairEvent.hasResult();
 myMCAnvilRepairEvent.isCancelable();
 ```
 
-### 已取消
+### isCanceled
 
-确定此事件是否被取消并应停止执行。 返回： `当前取消的状态`
+Determine if this event is canceled and should stop executing. Returns: `The current canceled state`
 
 返回为布尔值
 
 ```zenscript
-myMCAnvilRepairEvent.isCancelled();
+myMCAnvilRepairEvent.isCanceled();
 ```
 
 ### setBreakChance
 
 ```zenscript
-myMCAnvilRepairEvent.setBreakChance(浮点数)；
+myMCAnvilRepairEvent.setBreakChance(breakChance as float);
 ```
 
-| 参数   | 类型  | 说明                      |
-| ---- | --- | ----------------------- |
-| 断裂概率 | 浮点数 | No description provided |
+| 参数          | 类型    | 说明                      |
+| ----------- | ----- | ----------------------- |
+| breakChance | float | No description provided |
 
 
-### 已取消
+### setCanceled
 
 ```zenscript
-myMCAnvilRepairEvent.setCanceled(cancel as boolean)；
+myMCAnvilRepairEvent.setCanceled(cancel as boolean);
 ```
 
-| 参数 | 类型      | 描述                      |
-| -- | ------- | ----------------------- |
-| 取消 | boolean | No description provided |
+| 参数     | 类型      | 描述                      |
+| ------ | ------- | ----------------------- |
+| cancel | boolean | No description provided |
 
 
 
