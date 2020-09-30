@@ -1,15 +1,15 @@
-# エンティティダメージロック
+# Entity Damage Locking
 
-## エンティティ-ダメージロック
+## Entity-Damage Lock
 
-この機能を使用すると、特定のエンティティを攻撃/破損させる機能をロックできます。
+This feature allows you to lock the ability to attack/damage specific entities.
 
-### 構文
+### Syntax:
 
-[IEntityDefinition へのリンク](/Vanilla/Entities/IEntityDefinition/)
+[Link to IEntityDefinition](/Vanilla/Entities/IEntityDefinition/)
 
-    # 空白の例:
+    # Blank Example:
     mods.compatskills.EntityDamageLock.addEntityLock(IEntityDefinition definition, String... defaultRequirements);
     
     # Working Example:
-    mods.compatskills.EntityDamageLock.addEntityLock(<entity:minecraft:zombie>, "reskillable:mining|5", "reskillable:magic|7');
+    mods.compatskills.EntityDamageLock.addEntityLock(<entity:minecraft:zombie>, "reskillable:mining|5", "reskillable:magic|7");
