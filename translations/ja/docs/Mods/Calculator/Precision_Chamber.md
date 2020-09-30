@@ -1,21 +1,21 @@
-# 精密チャンバー
+# Precision Chamber
 
-## パッケージ
+## Package
 ```zenscript
 import mods.calculator.precisionChamber;
 ```
 
-## メソッド
+## Methods
 
-- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input** 入力。
-- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) output[1-2]** outputs.
+- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input** The input.
+- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) output[1-2]** The outputs.
 
 ## 加算
 ```zenscript
-precisionChamber.addRecipe(IIngredient入力, IIngredient出力1, IIngredient出力2);
+precisionChamber.addRecipe(IIngredient input, IIngredient output1, IIngredient output2);
 ```
 
-## 削除
+## Removal
 ```zenscript
 precisionChamber.removeRecipe(IIngredient output1, IIngredient output2);
 ```
