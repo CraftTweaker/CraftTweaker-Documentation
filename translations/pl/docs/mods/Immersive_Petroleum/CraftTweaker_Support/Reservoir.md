@@ -1,25 +1,25 @@
-# Zbiornik
+# Reservoir
 
-## usuń
+## remove
 
-| Nazwisko       | Typ         |
-| -------------- | ----------- |
-| Nazwa przepisu | Ciąg znaków |
+| Name           | Type   |
+| -------------- | ------ |
+| Nazwa przepisu | String |
 
-Przykład:
+Example:
 ```ZenScript
 // mods.immersiveoilum.ReservoirRegistry.remove(String recipeName);
 
 mods.immersivepetroleum um.ReservoirRegistry.remove("aquifer");
 ```
 
-## usuń wszystko
+## removeAll
 
-| Nazwisko | Typ |
-| -------- | --- |
-|          |     |
+| Name | Type |
+| ---- | ---- |
+|      |      |
 
-Przykład:
+Example:
 ```ZenScript
 // mods.immersiveoilum.ReservoirRegistry.removeAll();
 
@@ -30,30 +30,30 @@ mods.immersivepetroleum um.ReservoirRegistry.removeAll();
 
 ## konstruktor
 
-| Nazwisko              | Typ                                         |
-| --------------------- | ------------------------------------------- |
-| Płyn                  | [Fluidstack](/Vanilla/Liquids/IFluidStack/) |
-| Minimalny rozmiar     | odcień                                      |
-| Maksymalny rozmiar    | odcień                                      |
-| Szybkość uzupełnienia | odcień                                      |
-| Waga                  | odcień                                      |
+| Name           | Type                                        |
+| -------------- | ------------------------------------------- |
+| Fluid          | [Fluidstack](/Vanilla/Liquids/IFluidStack/) |
+| Minimum Size   | int                                         |
+| Maximum Size   | int                                         |
+| Replenish Rate | int                                         |
+| Weight         | int                                         |
 
-### Waga
+### Weight
 
-Masa to ważona szansa na pocisk zawierający ten konkretny zbiornik płynu. Masa jest liczona jak w X w sumie
+Weight is the Weighted Chance of a chunk containing that specific fluid reservoir. The weight is counted as in X in Total.
 
-Więc jeśli masz 5 wartości zbiornika na: 5, 5, 6, 8, 10
+So if you have 5 Reservoir values at: 5, 5, 6, 8, 10
 
-Wtedy każdy odpowiedni wpis będzie miał ważoną szansę:
+Then each respective entry will have a weighted chance of:
 ```
-5 w 34
-5 w 34
-6 w 34
-8 w 34
-10 w 34
+5  in 34
+5  in 34
+6  in 34
+8  in 34
+10 in 34
 ```
 
-Przykład:
+Example:
 ```zenscript
 // new mods.immersivePetum.ReservoirBuilder(płyn IFluidStack minSize, int maxSize, int traceAmount, int weight);
 
@@ -62,12 +62,12 @@ new mods.immersivepetroleum um.ReservoirBuilder(<fluid:minecraft:lava>, 1000, 50
 
 ## Wymiary dodatków
 
-| Nazwisko      | Typ              |
+| Name          | Type             |
 | ------------- | ---------------- |
-| Czarna lista  | Boolean          |
+| Blacklist     | Boolean          |
 | Nazwy Wymiaru | Tablica string[] |
 
-Przykład:
+Example:
 ```zenscript
 // builderInstance.addDimensions(boolean isBlacklist, String[] dimensionNames);
 
@@ -76,28 +76,28 @@ builderInstance.addDimensions(false, ["minecraft:overworld"]);
 
 ## addBiomes
 
-| Nazwisko     | Typ              |
+| Name         | Type             |
 | ------------ | ---------------- |
-| Czarna lista | Boolean          |
+| Blacklist    | Boolean          |
 | Nazwy biomów | Tablica string[] |
 
-Przykład:
+Example:
 ```zenscript
 // builderInstance.addBiomes(boolean isBlacklist, String[] biomeNames);
 
 builderInstance.addBiomes(false, ["minecraft:plains"]);
 ```
 
-## kompilacja
+## build
 
-| Nazwisko | Typ         |
-| -------- | ----------- |
-| Nazwisko | Ciąg znaków |
+| Name | Type   |
+| ---- | ------ |
+| Name | String |
 
 ### Preface
 Podstawowe zbiorniki są małe, ponieważ są przetłumaczone - niestandardowe zbiorniki powinny być poprawnie kapitalizowane (np. "Deep Ocean Oil Reservoir").
 
-Przykład:
+Example:
 ```zenscript
 // builderInstance.build(String name);
 
