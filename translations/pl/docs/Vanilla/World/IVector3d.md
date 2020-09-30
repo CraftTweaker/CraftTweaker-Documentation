@@ -1,36 +1,36 @@
 # IVector3d
 
-Obiekt Vector3d jest wektorem, który używa trzech podwójnych kierunków.  
-Ma kilka metod użyteczności i pobiera.
+A Vector3d object is a vector that uses three doubles for the directions.  
+They have several utility methods and getters.
 
-## Importowanie klasy
+## Importing the class
 
-Może być wymagane [zaimportowanie](/AdvancedFunctions/Import/) klasy, aby uniknąć błędów.  
-`zaimportuj crafttweaker.world.IVector3d`
+It might be required to [import](/AdvancedFunctions/Import/) the class to avoid errors.  
+`import crafttweaker.world.IVector3d`
 
-## Tworzenie nowego obiektu IVector3d
+## Creating a new IVector3d object
 
-Jeśli kiedykolwiek znajdziesz się w potrzebie stworzenia nowego obiektu IVector3d, możesz użyć tej metody:
+If you ever find yourself in the need of creating a new IVector3d object, you can use this method:
 
 ```zenscript
-//crafttweaker.world.IVector3d.create(podwójne x, podwójne, podwójne z);
-crafttweaker.world.IVector3d.create(0.0D, 0,0D, 0,0D);
+//crafttweaker.world.IVector3d.create(double x, double y, double z);
+crafttweaker.world.IVector3d.create(0.0D, 0.0D, 0.0D);
 ```
 
 ## ZenGetters
 
-| ZenGetter      | Typ       |
-| -------------- | --------- |
-| x              | podwójne  |
-| y              | podwójne  |
-| z              | podwójne  |
-| znormalizowany | IVector3d |
+| ZenGetter  | Type      |
+| ---------- | --------- |
+| x          | double    |
+| y          | double    |
+| z          | double    |
+| normalized | IVector3d |
 
-## Metody ZenMethods
+## ZenMethods
 
-- podwójna dotProdukt(IVector3d inny);
-- IVector3d crossProduct(IVector3d inny);
-- Odjąć IVector3d (IVector3d inny);
-- Dodać IVector3d (IVector3d inny);
-- podwójna odległośćdo (IVector3d inny);
-- skala IVector3d (podwójny czynnik);
+- double dotProduct(IVector3d other);
+- IVector3d crossProduct(IVector3d other);
+- IVector3d subtract(IVector3d other);
+- IVector3d add(IVector3d other);
+- double distanceTo(IVector3d other);
+- IVector3d scale(double factor);
