@@ -1,21 +1,21 @@
-# Инфузия жизни
+# Life Infusion
 
-Пакет *инфузии* используется для добавления или удаления рецептов в/из процесса Life Infusion.
+The *infusion* package is used for adding or removing recipes to/from the Life Infusion process.
 
-## Звонок
+## Calling
 
-Вы можете вызвать *инфузию* с помощью `mods.skyresources.infusion`
+You can call the *infusion* package using `mods.skyresources.infusion`
 
-## Добавление рецепта
+## Recipe Addition
 
 ```zenscript
-//mods.skyresources.infusion.addRecipe(IItemStack, IItemStack inputStack, IItemStack inputBlock, int health);
+//mods.skyresources.infusion.addRecipe(IItemStack output, IItemStack inputStack, IItemStack inputBlock, int health);
 mods.skyresources.infusion.addRecipe(<minecraft:diamond> * 8, <minecraft:nether_star>, <minecraft:dirt>, 14);
 ```
 
-## Удаление рецепта
+## Recipe Removal
 
 ```zenscript
-//mods.skyresources.infusion.removeRecipe(IItemStack);
+//mods.skyresources.infusion.removeRecipe(IItemStack output);
 mods.skyresources.infusion.removeRecipe(<minecraft:cactus>);
 ```
