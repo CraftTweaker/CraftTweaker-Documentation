@@ -1,38 +1,38 @@
 # IIngredientTransformer
 
-crafttweakerのmod-idを持つmodによって追加されているクラスです。 従って、この機能を利用する場合はこのmodをインストールする必要があります。
+This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
 
-## クラスのインポート
-問題が発生した場合には、インポートが必要になります。とはいえ、お手数ですが予めインポートしておくほうが安全です。
+## Importing the class
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
 ```zenscript
 crafttweaker.api.item.IIngredientTransformer
 ```
 
-## メソッド
+## Methods
 ### getCommandString
 
-戻り値の型: String
+Return type: String
 
 ```zenscript
 myIIngredientTransformer.getCommandString(particle as T);
 ```
 
-| パラメータ | タイプ | 説明           |
-| ----- | --- | ------------ |
-| 材料    | T   | 説明が提供されていません |
+| Parameter  | Type | Description             |
+| ---------- | ---- | ----------------------- |
+| ingredient | T    | No description provided |
 
 
-### 一致
+### matches
 
-戻り値の型: boolean
+Return type: boolean
 
 ```zenscript
 myIIngredientTransformer.matches(stack as crafttweaker.api.item.IItemStack);
 ```
 
-| パラメータ | タイプ                                                               | 説明           |
-| ----- | ----------------------------------------------------------------- | ------------ |
-| スタック  | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | 説明が提供されていません |
+| Parameter | Type                                                              | Description             |
+| --------- | ----------------------------------------------------------------- | ----------------------- |
+| stack     | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | No description provided |
 
 
 
