@@ -1,35 +1,35 @@
 # Proveedor de MCSuggestión
 
-Esta clase fue añadida por un mod con la ID  `crafttweaker`. Necesitas tener este mod instalado si quieres usar esta caracteristica.
+This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
 
-## Importar la clase
-Puede ser requerido que importes el paquete si encuentras algun problema (como crear un Array).
+## Importing the class
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
 ```zenscript
 crafttweaker.api.commands.custom.MCSuggestionProvider
 ```
 
-## Constructores
+## Constructors
 ```zenscript
 nuevo crafttweaker.api.commands.custom.MCSuggestionProvider(fun as function.BiFunction<crafttweaker.api.commands.custom.MCCommandContext, crafttweaker.api.commands.custom.MCSuggestionsBuilder, crafttweaker.api.commands.custom.MCSuggestions>);
 ```
-| Parámetro | Tipo                                                                                                                                                                                                                                                                                                                                               | Descripción                   |
-| --------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------- |
-| diversión | function.BiFunction&lt;[crafttweaker.api.commands.custom.MCCommandContext](/vanilla/api/commands/custom/MCCommandContext), [crafttweaker.api.commands.custom.MCSuggestionsBuilder](/vanilla/api/commands/custom/MCSuggestionsBuilder), [crafttweaker.api.commands.custom.MCSuggsions.](/vanilla/api/commands/custom/MCSuggestions)&gt; | No se proporcionó descripción |
+| Parameter | Type                                                                                                                                                                                                                                                                                                                                               | Description             |
+| --------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------- |
+| diversión | function.BiFunction&lt;[crafttweaker.api.commands.custom.MCCommandContext](/vanilla/api/commands/custom/MCCommandContext), [crafttweaker.api.commands.custom.MCSuggestionsBuilder](/vanilla/api/commands/custom/MCSuggestionsBuilder), [crafttweaker.api.commands.custom.MCSuggsions.](/vanilla/api/commands/custom/MCSuggestions)&gt; | No description provided |
 
 
 
-## Métodos
-### igual a
+## Methods
+### equals
 
-Tipo de retorno: booleano
+Return type: boolean
 
 ```zenscript
 myMCSuggestionProvider.equals(o como Objeto);
 ```
 
-| Parámetro | Tipo   | Descripción                   |
-| --------- | ------ | ----------------------------- |
-| o         | Objeto | No se proporcionó descripción |
+| Parameter | Type   | Description             |
+| --------- | ------ | ----------------------- |
+| o         | Object | No description provided |
 
 
 ### getSugerencias
@@ -40,15 +40,15 @@ Tipo de retorno: [crafttweaker.api.commands.custom.MCSuggeries,](/vanilla/api/co
 myMCSuggestionProvider.getSuggestions(context as crafttweaker.api.commands.custom.MCCommandContext, builder as crafttweaker.api.commands.custom.MCSuggestionsBuilder);
 ```
 
-| Parámetro   | Tipo                                                                                                       | Descripción                   |
-| ----------- | ---------------------------------------------------------------------------------------------------------- | ----------------------------- |
-| contexto    | [crafttweaker.api.commands.custom.MCCommandContext](/vanilla/api/commands/custom/MCCommandContext)         | No se proporcionó descripción |
-| constructor | [crafttweaker.api.commands.custom.MCSuggestionsBuilder](/vanilla/api/commands/custom/MCSuggestionsBuilder) | No se proporcionó descripción |
+| Parameter   | Type                                                                                                       | Description             |
+| ----------- | ---------------------------------------------------------------------------------------------------------- | ----------------------- |
+| contexto    | [crafttweaker.api.commands.custom.MCCommandContext](/vanilla/api/commands/custom/MCCommandContext)         | No description provided |
+| constructor | [crafttweaker.api.commands.custom.MCSuggestionsBuilder](/vanilla/api/commands/custom/MCSuggestionsBuilder) | No description provided |
 
 
 ### hashCode
 
-Tipo de retorno: int
+Return type: int
 
 ```zenscript
 myMCSuggestionProvider.hashCode();
@@ -56,27 +56,27 @@ myMCSuggestionProvider.hashCode();
 
 ### toString
 
-Tipo de retorno: Cadena
+Return type: String
 
 ```zenscript
 myMCSuggestionProvider.toString();
 ```
 
 
-## Operadores
-### IGUALES
+## Operators
+### EQUALS
 
 ```zenscript
 myMCSuggestionProvider == o como objeto
 ```
 
-| Parámetro | Tipo   | Descripción                   |
-| --------- | ------ | ----------------------------- |
-| o         | Objeto | No se proporcionó descripción |
+| Parameter | Type   | Description             |
+| --------- | ------ | ----------------------- |
+| o         | Object | No description provided |
 
 ## Casters
 
-| Tipo de resultado | Es implícito |
-| ----------------- | ------------ |
-| Cadena            | verdad       |
+| Result type | Is Implicit |
+| ----------- | ----------- |
+| String      | true        |
 
