@@ -1,23 +1,23 @@
-# Wydarzenie IPotionBrewEvent
+# IPotionBrewEvent
 
-To wydarzenie jest rozszerzone o wszystkie wydarzenia z udziałem stojaka piwowarskiego, chociaż nie jest to funkcja gracza pozwalająca na wydobywanie przedmiotów z stoiska piwowarskiego.
+This event is extended by all events involving the brewing stand, although not the player-based function for extracting items from the brewing stand.
 
-## Importowanie klasy
-Może być wymagane [importowanie](/AdvancedFunctions/Import/) klasy, aby uniknąć błędów.  
+## Importing the class
+It might be required to [import](/AdvancedFunctions/Import/) the class to avoid errors.  
 `import crafttweaker.event.IPotionBrewEvent;`
 
-## Co można z nimi zrobić?
+## What can be done with them?
 
-| ZenGetter | ZenSetter | typ    |
-| --------- | --------- | ------ |
-| `długość` |           | odcień |
+| ZenGetter | ZenSetter | type |
+| --------- | --------- | ---- |
+| `length`  |           | int  |
 
-## Metody
+## Methods
 
 - [IItemStack](/Vanilla/Items/IItemStack/) `getItem()`
 
-Zwraca IItemStack znajdujący się na liście elementów określonej tablicy. Zwraca puste IItemStack jeśli określony indeks jest większy niż `długości`.
+Returns the IItemStack contained in the list of items at the specified array. Will return an empty IItemStack if the specified index is greater than `length`.
 
 - `setItem(int,` [`IItemStack`](/Vanilla/Items/IItemStack/) `)`
 
-Zastępuje element w określonym indeksie określoną pozycją. Jeśli ten indeks jest większy niż długość tablicy, nic się nie wydarzy.
+Replaces the itemstack at the specified index with the specified item. If th index is greater than the length of the item array, nothing will happen.
