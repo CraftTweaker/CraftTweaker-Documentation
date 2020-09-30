@@ -1,18 +1,18 @@
-# Blocco Cibo
+# Food Locking
 
-## Caratteristica:
+## Feature:
 
-Il bloccaggio degli alimenti è un nuovo tipo di blocco, e permette agli autori del pacchetto di bloccare la capacità di mangiare cibo con determinati valori di fame e saturazione dietro una serie di requisiti. Questo ha alcune applicazioni potenzialmente intressting insieme a RecipeStages, GameStages e la nostra nuova [Abilità Modifica Funzionalità](/Mods/CompatSkills/Supports/Reskillable/Skill_Change_Tweaker/) Questo permetterebbe in teoria agli autori di un pacchetto di configurare un sistema in cui i giocatori possono mangiare solo cibo che possono creare, e poi consentire che le fasi necessarie per la creazione di essere bloccate dietro i livelli di abilità.
+Food Locking is quite a new type of lock type, and allows for pack authors to lock the ability to eat food with certain Hunger and Saturation Values behind a set of requirements. This has some potentially intressting applications together with RecipeStages, GameStages and our newly added [Skill Change Feature](/Mods/CompatSkills/Supports/Reskillable/Skill_Change_Tweaker/) This would in theory allow for a pack authors to set-up a system where in players can only eat food they can craft, and then allow for the required stages for crafting to be locked behind skill levels.
 
-## Sintassi Fame
+## Hunger Syntax:
 
-    mods.compatskills.FoodTweaker.addHungerLock(int level, String... requisiti);
+    mods.compatskills.FoodTweaker.addHungerLock(int level, String... requirements);
     
-    mods.compatskills.FoodTweaker.addHungerLock(3, "dim<unk> 1");
+    mods.compatskills.FoodTweaker.addHungerLock(3, "dim|1");
     
 
-## Sintassi Di Saturazione:
+## Saturation Syntax:
 
-    mods.compatskills.FoodTweaker.addSaturationLock(float level, String... requisiti);
+    mods.compatskills.FoodTweaker.addSaturationLock(float level, String... requirements);
     
-    mods.compatskills.FoodTweaker.addSaturationLock(1.25, "dim<unk> 1");
+    mods.compatskills.FoodTweaker.addSaturationLock(1.25, "dim|1");
