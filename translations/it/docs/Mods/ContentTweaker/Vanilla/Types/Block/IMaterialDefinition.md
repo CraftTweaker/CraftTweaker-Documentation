@@ -1,36 +1,36 @@
-# IMaterialDefinizione
+# IMaterialDefinition
 
-Un oggetto IMaterialDefinition rappresenta una definizione materiale nel gioco. Una Definizione di Materiale è necessaria se vuoi creare un nuovo blocco.
+An IMaterialDefinition object represents a material definition in the game. A Material Definition is needed if you want to create a new block.
 
-# Importazione del pacchetto
+# Importing the package
 
-Potrebbe essere necessario per importare il pacchetto se si verificano problemi, in modo da essere più sicuri di spiacenti e aggiungere l'importazione.  
+It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
 `import mods.contenttweaker.BlockMaterial;`
 
-## Chiamare un oggetto IMaterialDefinizione
+## Calling an IMaterialDefinition object
 
-È possibile ottenere un tale oggetto utilizzando il [Block Material Bracket Handler](/Mods/ContentTweaker/Vanilla/Brackets/Bracket_Block_Material/):  
+You can get such an object using the [Block Material Bracket Handler](/Mods/ContentTweaker/Vanilla/Brackets/Bracket_Block_Material/):  
 `<blockmaterial:wood>`
 
-## ZenGetters/ZenMethods senza parametri
+## ZenGetters/ZenMethods without parameters
 
-| ZenGetter       | ZenMethod           | Tipo Di Reso                                                           |
+| ZenGetter       | ZenMethod           | Return Type                                                            |
 | --------------- | ------------------- | ---------------------------------------------------------------------- |
 | blocksLight     | blocksLight()       | bool                                                                   |
 | blocksMovement  | blocksMovement()    | bool                                                                   |
 | canBurn         | getCanBurn()        | bool                                                                   |
 | mobilityFlag    | getMobilityFlag()   | [PushReaction](/Mods/ContentTweaker/Vanilla/Types/Block/PushReaction/) |
-| liquido         | isLiquid()          | bool                                                                   |
-| opaco           | isOpaque()          | bool                                                                   |
-| sostituibile    | isReplaceable()     | bool                                                                   |
+| liquid          | isLiquid()          | bool                                                                   |
+| opaque          | isOpaque()          | bool                                                                   |
+| replaceable     | isReplaceable()     | bool                                                                   |
 | solid           | isSolid()           | bool                                                                   |
 | toolNotRequired | isToolNotRequired() | bool                                                                   |
 
-## Confronta due BlockMaterials
+## Compare two BlockMaterials
 
-Puoi usare l'operatore `==` per vedere se due Definizioni di Materiali sono uguali
+You can use the `==` operator to see if two MaterialDefinitions are equal
 
 ```zenscript
 if(materialA == materialB)
-    print("successo!");
+    print("success!");
 ```
