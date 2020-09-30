@@ -1,13 +1,13 @@
-# 燃料登録
+# Fuel Registration
 
 ## registerGeneratorFuel
 
-| 名称     | タイプ                                         |
+| 名称     | Type                                        |
 | ------ | ------------------------------------------- |
 | 流体/t   | [Fluidstack](/Vanilla/Liquids/IFluidStack/) |
-| Flux/t | 整数                                          |
+| Flux/t | Integer                                     |
 
-例
+Example:
 ```ZenScript
 //mods.immersivepetroleum.FuelRegistry.registerGeneratorFuel(IFluidStack fuel, int fluxPerTick);
 
@@ -16,11 +16,11 @@ mods.immysivepetroleum.FuelRegistry.registerGeneratorFuel(<fluid:minecraft:water
 
 ## registerMotorboatFuel
 
-| 名称   | タイプ                                         |
+| 名称   | Type                                        |
 | ---- | ------------------------------------------- |
 | 流体/t | [Fluidstack](/Vanilla/Liquids/IFluidStack/) |
 
-例
+Example:
 ```ZenScript
 //mods.immersivepetroleum.FuelRegistry.registerMotorboatFuel(IFluidStack燃料);
 
