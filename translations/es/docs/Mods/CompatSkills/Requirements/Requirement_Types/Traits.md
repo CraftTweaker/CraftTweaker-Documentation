@@ -1,11 +1,11 @@
-# Rasgos:
+# Traits:
 
-Los rasgos son una nueva adición para Reskillable y lo hace así que ahora puedes bloquear cosas detrás de un Rasgo requerido. Los rasgos son similares a los de Habilidades en la forma en que los hemos trasladado a una Ubicación de Recursos en lugar de un nombre para permitir una extensión más robusta. La sintaxis de rasgo es la siguiente:
+Traits is a new addition for Reskillable and makes it so you now can lock things behind a required Trait. Traits are similar to Skills in the way that we've moved them over to a Resource Location instead of a name to allow for more robust extendability. The Trait Syntax is as follows:
 
-    Ejemplo:
+    Example:
     trait|ResourceLocation
     
-    Ejemplo de trabajo:
+    Working Example:
     trait|reskillable:battle_spirit
     
 
