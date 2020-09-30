@@ -8,11 +8,11 @@
 crafttweaker.api.commands.custom.MCLiteralCommandNode
 ```
 
-## Реализованные интерфейсы
-MCLiteralCommandNode реализует следующие интерфейсы. Следовательно, методы из них доступны в этом классе.
+## Implemented Interfaces
+MCLiteralCommandNode реализует следующие интерфейсы. That means any method available to them can also be used on this class.
 - [crafttweaker.api.commands.custom.MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)
 
-## Методы
+## Methods
 ### createBuilder
 
 Тип возврата: [crafttweaker.api.commands.custom.MCLiteralArgumentBuilder](/vanilla/api/commands/custom/MCLiteralArgumentBuilder)
@@ -21,22 +21,22 @@ MCLiteralCommandNode реализует следующие интерфейсы.
 myMCLiteralCommandNode.createBuilder();
 ```
 
-### равно
+### equals
 
-Тип возврата: логическое значение
+Return type: boolean
 
 ```zenscript
 myMCLiteralCommandNode.equals(o as Object);
 ```
 
-| Параметр | Тип    | Описание             |
+| Параметр | Тип    | Description          |
 | -------- | ------ | -------------------- |
-| о        | Объект | Описание отсутствует |
+| o        | Object | Описание отсутствует |
 
 
 ### getLiteral
 
-Тип возврата: строка
+Return type: String
 
 ```zenscript
 myMCLiteralCommandNode.getLiteral();
@@ -44,7 +44,7 @@ myMCLiteralCommandNode.getLiteral();
 
 ### hashCode
 
-Тип возврата: int
+Return type: int
 
 ```zenscript
 myMCLiteralCommandNode.hashCode();
@@ -52,20 +52,20 @@ myMCLiteralCommandNode.hashCode();
 
 ### isValidInput
 
-Тип возврата: логическое значение
+Return type: boolean
 
 ```zenscript
 myMCLiteralCommandNode.isValidInput(input as String);
 ```
 
-| Параметр | Тип    | Описание             |
+| Параметр | Тип    | Description          |
 | -------- | ------ | -------------------- |
 | input    | String | Описание отсутствует |
 
 
 ### toString
 
-Тип возврата: строка
+Return type: String
 
 ```zenscript
 myMCLiteralCommandNode.toString();
@@ -79,9 +79,9 @@ myMCLiteralCommandNode.toString();
 myMCLiteralCommandNode == o как объект
 ```
 
-| Параметр | Тип    | Описание             |
+| Параметр | Тип    | Description          |
 | -------- | ------ | -------------------- |
-| о        | Объект | Описание отсутствует |
+| o        | Object | Описание отсутствует |
 
 ## Утилиты
 
