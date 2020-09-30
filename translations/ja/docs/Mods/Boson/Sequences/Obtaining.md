@@ -1,42 +1,42 @@
-# `系列`を取得中
+# Obtaining `Sequence`s
 
-## 概要
+## Overview
 Obtaining a `Sequence` is a two step process: it is first necessary to obtain a reference to a sequence constructor of the correct type, then invoking the constructor by passing either a list of elements of the given type or a ready-made array of the given type will complete the construction process.
 
-CraftTweakerの統合によっては、直接またはメソッド経由で `シーケンス` を取得する方法も提供されています。 この の場合、コンストラクタを呼び出す必要はありません。 一方、ジェネリック型は明示的に を指定せず、ユーザーは戻り値型のメンタルノートを作成する必要があります。
+Some CraftTweaker integrations may also provide a way to obtain a `Sequence` either directly or via a method. In this case, there is no need to do any constructor invocation. On the other hand, the generic type will not be specified explicitly, requiring the user to make a mental note of the return type.
 
-## ステップ 1: コンストラクター
-`Sequence` コンストラクタを参照するには、以下の構文を持つ特殊なブラケットハンドラを使用します。
+## Step 1: The Constructor
+Referencing a `Sequence` constructor is done via a special bracket handler, that has the following syntax:
 
 ```zenscript
 <sequence:CLASSNAME>
 ```
 
-上記のスニペットで `CLASSNAME` は、この シーケンスが一般的になるクラスのショートまたは完全修飾名のいずれかを表します。 簡単な言葉では、コンストラクタが呼び出されたときにシーケンスが 保存できる要素の種類を定義します。
+In the above snippet, `CLASSNAME` represents either the short or the fully-qualified name of the class that this sequence will be generic for. In simpler words, that will define what type of elements the sequence will be able to store when the constructor is invoked.
 
-以下の2つの例を考えてみましょう。
+Consider the following two examples:
 
 ```zenscript
 <sequence:IItemStack> # 1
 <sequence:crafttweaker.item.IIngredient> # 2
 ```
 
-`# 1` でマークされたシーケンス式は、 `IItemStack` のインスタンスを保持することができるシーケンスのコンストラクタへの参照を返します。 これは、現在のスクリプトで動作するようにクラスをインポートする必要があることに注意してください。
+The sequence expression marked with `# 1` will return a reference to a constructor for a sequence that will be able to hold instances of `IItemStack`. Note that this require the class to be imported in the current script to work.
 
 The sequence expression marked with `# 2` will return a reference to a constructor for a sequence that will be able to hold any type of `IIngredient`, meaning that it will accept `IItemStack`s, but also `IOreDictEntr`ies or any other custom `IIngredient` implementation.
 
-**重要:** この初期型は現在のシーケンス型にのみ影響します。 It is always possible to change the type stored in this sequence later on via any `Sequence`-type-converting calls, such as `map`. 詳細は クラスドキュメント [](/Mods/Boson/Sequences/Docs/) で入手できます。
+**IMPORTANT:** This initial type will only influence the current sequence type. It is always possible to change the type stored in this sequence later on via any `Sequence`-type-converting calls, such as `map`. More information are available in the [class documentation](/Mods/Boson/Sequences/Docs/).
 
-## ステップ 2: コンストラクタの起動
-ブラケットハンドラはコンストラクタを呼び出すのではなく、単にそれを参照するだけなので、 コンストラクタを直接呼び出す必要があります。 これは通常のメソッドの呼び出し構文を介して行うことができますが、メソッド名ではなく、カッコ内のハンドラ を介して行われます。
+## Step 2: Invoking the Constructor
+Since the bracket handlers doesn't invoke the constructor, but simply references it, it is now necessary to invoke the constructor directly. This can be done via a normal method invocation syntax, except it gets done over a bracket handler and not a method name.
 
-シーケンスのコンストラクタはvarargです。つまり、任意の量の引数を受け付けることができます。 コンストラクタ参照で与えられた 汎用型である限り。 E.g., the bracket handler `<sequence:IItemStack>` will not be able to accept a `<ore:ingotCopper>` in its constructor, since an `IOreDictEntry` is not an `IItemStack`.
+The constructor of a sequence is a vararg, meaning it can accept any amount of arguments, as long as they're all of the generic type given in the constructor reference. E.g., the bracket handler `<sequence:IItemStack>` will not be able to accept a `<ore:ingotCopper>` in its constructor, since an `IOreDictEntry` is not an `IItemStack`.
 
-コンストラクタに引数を与えることはできません。この場合、シーケンスは空になります。
+It is possible to provide no arguments to the constructor, in which case the sequence will be empty.
 
-また、メソッドまたは変数の形式で配列自体または配列への参照を提供することもできます。 In this case, the array will be accepted only if the type matches `CLASSNAME[]`, where `CLASSNAME` is the name of the type of objects in the sequence. この動作 **は、** 実験フラグを有効にする必要があるかもしれないことに注意してください。 詳細については、 [実験的フラグプリプロセッサ](/Mods/Boson/Preprocessor/Exp/) を参照してください。
+It is also possible to provide an array itself or a reference to an array, either in the form of a method or a variable. In this case, the array will be accepted only if the type matches `CLASSNAME[]`, where `CLASSNAME` is the name of the type of objects in the sequence. Note that this behavior **may require** an experimental flag to be enabled. Refer to the [Experimental Flags Preprocessor](/Mods/Boson/Preprocessor/Exp/) for more information.
 
-以下は、上記がどのようにインコードで適用されるかを示すコードの一部です。
+The following is a snippet of code that shows how the above is applied in-code.
 
 ```zenscript
 val emptySequence = <sequence:string>();
@@ -44,5 +44,5 @@ val sequenceWithStacks = <sequence:IItemStack>(<minecraft:iron_ingot>, <minecraf
 val sequenceOfRecipes = <sequence:ICraftingRecipe>(recipes.all); # requires -Esao to be specified
 ```
 
-## 次は何ですか？
-`シーケンス` が作成されたので、 [サポートされているメソッドのリストについては](/Mods/Boson/Sequences/Docs/) クラスドキュメント を参照してください。
+## What's next?
+Now that the `Sequence` has been buily, refer to [the class documentation](/Mods/Boson/Sequences/Docs/) for a list of supported methods.
