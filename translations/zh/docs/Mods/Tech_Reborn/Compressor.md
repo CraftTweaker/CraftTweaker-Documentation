@@ -1,16 +1,16 @@
-# 压缩机
+# Compressor
 
-## 导入软件包
+## Importing the Package
 `mods.techreborn.compressor`
 
-## 添加配方
+## Adding Recipes
 ```zenscript
-mods.techreborn.compressor.addRecipe(IItemStack output1, Ingredient input1, int ticktime, int euTick)；
+mods.techreborn.compressor.addRecipe(IItemStack output1, IIngredient input1, int ticktime, int euTick);
 ```
 
-## 删除配方
+## Removing Recipes
 ```zenscript
-mods.techreborn.compressor.removeInputRecipe(IIngredient component);
-mods.techreborn.compressor.removeRecipe(IItemStack 输出);
+mods.techreborn.compressor.removeInputRecipe(IIngredient ingredient);
+mods.techreborn.compressor.removeRecipe(IItemStack output);
 mods.techreborn.compressor.removeAll();
 ```
