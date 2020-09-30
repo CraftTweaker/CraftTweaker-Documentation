@@ -1,18 +1,18 @@
-# 液体生成器
-**注：流体生成器是热液、加斯、普拉斯马、塞米和柴油。**
-## 导入软件包
+# Fluid Generators
+**Note: The Fluid Generators are Thermal, Gas, Plasma, Semi and Diesel**
+## Importing the Package
 `mods.techreborn.fluidGen`
 
-## 添加燃料中
+## Adding Fuels
 ```zenscript
 mods.techreborn.fluidGen.addThermalFluid(ILiquidStack fluid, int energyPerMb);
 mods.techreborn.fluidGen.addGasFluid(ILiquidStack fluid, int energyPerMb);
 mods.techreborn.fluidGen.addSemiFluid(ILiquidStack fluid, int energyPerMb);
 mods.techreborn.fluidGen.addDieselFluid(ILiquidStack fluid, int energyPerMb);
-mods.techreborn.fluidGen.addPlasmaFluid(ILiquidStack fluid, int energyPer
+mods.techreborn.fluidGen.addPlasmaFluid(ILiquidStack fluid, int energyPerMb);
 ```
 
-## 移除燃料
+## Removing Fuel
 ```zenscript
 mods.techreborn.fluidGen.removeThermalFluid(ILiquidStack fluid);
 mods.techreborn.fluidGen.removeGasFluid(ILiquidStack fluid);
