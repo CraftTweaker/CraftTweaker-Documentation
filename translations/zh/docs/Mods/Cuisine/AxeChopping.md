@@ -1,30 +1,30 @@
-# 斧头
+# Axe Chopping
 
-## 可用性
+## Availability
 
-在做任何事情之前，您应该检查是否启用轴制：
+Before doing anything, you should check whether axe-chopping is enabled or not:
 
 ```zenscript
-导入mods.cuisine.AxeChopping;
+import mods.cuisine.AxeChopping;
 
-if (AxeChopping.isEnabled()) format@@
+if (AxeChopping.isEnabled()) {
     // do stuff
-} exuf
-    print("Axe Chopping 已禁用, 跳过");
+} else {
+    print("Axe Chopping is disabled, skipping");
 }
 ```
 
 ## 添加配方
 
 ```zenscript
-导入 mods.cuisine.AxeChopping;
+import mods.cuisine.AxeChopping;
 
-AxeChopping.add(StemStack 输入, IItemStack 输出);
+AxeChopping.add(IItemStack input, IItemStack output);
 
 AxeChopping.add(<item:minecraft:dirt>, <item:minecraft:diamond>);
 
-// 如果需要，也可以使用矿石字典。
-AxeChopping.add(IOreentry input, IItemStack output);
+// If necessary, it is also possible to use ore dictionary.
+AxeChopping.add(IOreEntry input, IItemStack output);
 
 AxeChopping.add(<ore:cobblestone>, <item:minecraft:diamond>);
 ```
@@ -32,33 +32,33 @@ AxeChopping.add(<ore:cobblestone>, <item:minecraft:diamond>);
 ## 删除配方
 
 ```zenscript
-导入mods.cuisine.AxeChopping;
+import mods.cuisine.AxeChopping;
 
-// 通过输入删除。
-AxeChopping.remove(StemStack 输入);
+// Remove by input.
+AxeChopping.remove(IItemStack input);
 
 AxeChopping.remove(<item:minecraft:log>);
 
-// 通过输出删除。
-AxeChopping.removeByOut(IItemStack 输出);
+// Remove by output.
+AxeChopping.removeByOutput(IItemStack output);
 
 AxeChopping.removeByOutput(<item:minecraft:plank>);
 
-// 通过标识符删除。
+// Remove by identifier.
 AxeChopping.remove(String id);
 
 AxeChopping.remove("recipe_name");
 
-// 移除所有东西！
+// Remove everything!
 AxeChopping.removeAll();
 ```
 
 ## Misc.
 
 ```zenscript
-导入mods.cuisine.AxeChopping;
+import mods.cuisine.AxeChopping;
 
-val defaultPlanksoutput as int = AxeChopping.getDefaultPlanksOutput();
+val defaultPlanksOutput as int = AxeChopping.getDefaultPlanksOutput();
 
-val defaultStick输出as int = AxeChopping.getDefaultStickOutput();
+val defaultStickOutput as int = AxeChopping.getDefaultStickOutput();
 ```
