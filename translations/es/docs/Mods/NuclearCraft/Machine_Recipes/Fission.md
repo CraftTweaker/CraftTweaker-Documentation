@@ -1,14 +1,14 @@
-# Franco
+# Fission
 
-## Importando el Paquete
-`mods.nuclearcraft.fisión`
+## Importing the Package
+`mods.nuclearcraft.fission`
 
-## Añadiendo recetas
+## Adding Recipes
 ```zenscript
 mods.nuclearcraft.fission.addRecipe([itemInput, itemOutput, double baseTime, double basePower, double baseHeat, String guiName, @Optional double processRadiation]);
 ```
 
-## Eliminando recetas
+## Removing Recipes
 ```zenscript
 mods.nuclearcraft.fission.removeRecipeWithInput([itemInput]);
 mods.nuclearcraft.fission.removeRecipeWithOutput([itemOutput]);
