@@ -1,24 +1,24 @@
-# Оператор NAND
+# NAND Operator
 
-**NAND** ворота являются обратными **И** воротами. Это то же самое, что и использование выходных данных **И** ворот, что и входные данные на порог **НЕ** входа. Это означает, что **NAND** ворота возвращает `TRUE` во всех случаях, за исключением случаев, когда оба входа также `TRUE`.
+A **NAND** gate is an inverted **AND** gate. This is the same as using the output of the **AND** gate as the input to the **NOT** gate. This means that the **NAND** gate returns `TRUE` in all cases except for when both inputs are also `TRUE`.
 
-| Input 1 | Input 2 | Вывод |
-| ------- | ------- | -----:|
-| 0       | 0       |     1 |
-| 0       | 1       |     1 |
-| 1       | 0       |     1 |
-| 1       | 1       |     0 |
+| Input 1 | Input 2 | Output |
+| ------- | ------- | ------:|
+| 0       | 0       |      1 |
+| 0       | 1       |      1 |
+| 1       | 0       |      1 |
+| 1       | 1       |      0 |
 
-    Пустой пример:
+    Empty Example:
     nand|[]~[]
     
-    Заполнил- например:
+    Filled-In Example:
     nand|[reskillable:defense|24]~[reskillable:agility|24]
     
 
-## Вариант использования
+## Use-Case
 
-Как только игрок достигнет 24 уровня защиты и 24 уровня ловкости, он сможет использовать кожаную броню:
+Once a player gets to defense level 24 and agility level 24 stop allowing them to use leather armor:
 
 ```zenscript
 addRequirement(<minecraft:leather_helmet:*>, "nand|[reskillable:defense|24]~[reskillable:agility|24]");
