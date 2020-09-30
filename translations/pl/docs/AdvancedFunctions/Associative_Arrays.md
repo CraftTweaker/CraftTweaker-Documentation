@@ -1,157 +1,156 @@
-# Tablice stowarzyszeniowe
+# Associative Arrays
 
-Tablica stowarzyszona (czasami nazywana również mapą lub słownikiem) jest jak normalna [tablica](/AdvancedFunctions/Arrays_and_Loops/) w sposób, w jaki jest w stanie przechowywać wiele wpisów. W przeciwieństwie jednak do [tablic](/AdvancedFunctions/Arrays_and_Loops/) możesz wybrać typ indeksu, lub (nazywamy go w mapie), aby było!
+An Associative Array (sometimes also called a Map or a Dictionary) is like a normal [Array](/AdvancedFunctions/Arrays_and_Loops/) in the way that it is able to store multiple entries. Unlike [Arrays](/AdvancedFunctions/Arrays_and_Loops/) however, you can choose what type you want the index, or (as we call it in maps) key, to be!
 
-## Deklaracja tablicy stowarzyszeniowej
+## Declaring an Associative Array
 
-Ogłaszasz tablice stowarzyszeń za pomocą nawiasów klamrowych `{}` i dwukropków `:`
+You declare Associative Arrays using curly brackets `{}` and colons `:`
 
 ```zenscript
 val myAssocArray = {
     dirt : <minecraft:dirt>,
     gold : <minecraft:gold_ingot>
-} jako IItemStack[string];
+} as IItemStack[string];
 ```
 
-Przełamajmy to, prawda?
+Let's break this down, shall we?
 
-- `val myAssocArray =` standardowa deklaracja zmiennej
-- `{` to jest tablica stowarzyszona, Sir!
-- `ziemię: <minecraft:dirt>` mapujemy `<minecraft:dirt>` w ciągu `ziemia`
-- `,` czekać, jest więcej do przyjrzenia
-- `złot: <minecraft:gold_ingot>` mapujemy `<minecraft:gold_ingot>` w ciągu `złota`
-- `}` znaleźliśmy się na końcu tablicy, Sir!
-- `jako IItemStack[string];` jest to tablica stowarzyszeniowa, która używa ciągów jako indeksów i IItemStacks jako wartości.
+- `val myAssocArray =` standard variable declaration
+- `{` this is an Associative Array, Sir!
+- `dirt : <minecraft:dirt>` we map `<minecraft:dirt>` under the string `dirt`
+- `,` wait, there's more to come
+- `gold : <minecraft:gold_ingot>` we map `<minecraft:gold_ingot>` under the string `gold`
+- `}` we have reached the end of the Array, Sir!
+- `as IItemStack[string];` this is an Associative Array that uses strings as indices and IItemStacks as values.
 
-OK, więc o czym muszę myśleć podczas ich używania?
+Okay, so what do I need to think of when using these?
 
-- Możesz użyć każdego typu dostępnego dla Zenscript jako klucz lub wartość.
-- Nie możesz używać zmiennych dla deklaracji kluczowej w deklaracji początkowej (takiej, która używa `{}`), jak czysty tekst jest interpretowany jako ciąg znaków!
+- You can use about every type available to Zenscript as either key or value.
+- You cannot use variables for key declaration in the initial Declaration (the one that uses `{}`) as clear Text is interpreted as string!
 
-## Odnosi się do elementów wewnątrz tablicy stowarzyszeniowej.
+## Refering to Items inside an Associative Array.
 
-Odnosisz się do elementów w tablicy stowarzyszeniowej tak samo jak do elementów w normalnym [tablicy](/AdvancedFunctions/Arrays_and_Loops/):  
-`tablicy[index]`  
-Tym razem jest tylko różnica, niekoniecznie musisz używać liczby Integer jako indeksu, ale bez względu na typ który zadeklarowałeś swoją tablicę!
+You refer to items inside an Associative Array the same way you refer to items inside a normal [Array](/AdvancedFunctions/Arrays_and_Loops/):  
+`Array[index]`  
+Only difference is this time, you don't necessarily need to use an Integer as index, but whatever type you declared your Array to be!
 
 ```zenscript
-<br />walna ziemia = <minecraft:dirt>;
+<br />val dirt = <minecraft:dirt>;
 val assocArray = {
     <minecraft:dirt> : "This is me"
-} jako ciąg[IItemStack];
+} as string[IItemStack];
 
-//tablica[index]
+//array[index]
 print(assocArray[<minecraft:dirt>]);
 
-//Możesz również użyć varaibles tutaj, o ile zmienna jest poprawna typu
+//You can also use varaibles here, as long as the variable is of the correct type
 print(assocArray[dirt]);
 ```
 
-Jest jeden przypadek szczególny. jest to gdy używasz ciągów jako nieusuwalności:  
-W tym przypadku możesz również użyć użytkownika Getter w następujący sposób:
+There is one special case, that is when you use strings as indeces:  
+In this case you can also use the memberGetter like this:
 
 ```zenscript
 val assocWithStrings = {
-    //możesz użyć "" jeśli chcesz
-    "jeden" : "1",
+    //you can use "" if you want
+    "one" : "1",
 
-    //ale nie musisz
-    dwa : "2"
-} jako ciąg[string];
+    //but you don't have to
+    two : "2"
+} as string[string];
 
-//Możesz użyć druku użytkownika Getter
-(assocWithStrings. ne);
+//You can either use the memberGetter
+print(assocWithStrings.one);
 
-//Albo standardowy indeks Getter
-print(assocWithStrings["dwa"]);
+//Or the standard index Getter
+print(assocWithStrings["two"]);
 ```
 
-## Manipulacja przedmiotów wewnątrz tablicy stowarzyszeniowej
+## Manipulating items inside an Associative Array
 
-Podobnie jak w tablicach, możesz manipulować przedmiotami wewnątrz tablicy stowarzyszonej używając `tablicy[index] = nowej wartości`.  
-Istnieje jedna zasadnicza różnica:  
-Podczas gdy tablice mają stały rozmiar, mapy nie istnieją. Oznacza to, że zawsze możesz dodać wpis poprzez ustawienie indeksu, który wcześniej nie został ustawiony!
+As in Arrays, you can manipulate items inside an Associative Array using `array[index] = newValue`.  
+There is one major differenc though:  
+While Arrays have a fixed size, maps don't. That means you can always add an entry by setting to an index that has previously not been set!
 
 ```zenscript
 val changingArray = {
     <minecraft:dirt> : "this is me",
-    <minecraft:gold_ingot> : "i nienawidzę go"
-} jako ciąg znaków[IItemStack];
+    <minecraft:gold_ingot> : "and I hate it"
+} as string[IItemStack];
 
 val gg = <minecraft:gold>;
 
-//Nadpisuje wartość gold_ingot
-changingArray[gg] = "i kocham to";
+//Overrides the value of gold_ingot
+changingArray[gg] = "and I love it";
 
-//dodaje nowy wpis
-changingArray[<minecraft:grass>] = "Powod!";
+//adds a new entry
+changingArray[<minecraft:grass>] = "Power!";
 ```
 
-## Pobieranie kluczy i wejść tablicy stowarzyszeniowej
+## Retrieving an Associative Array's Key and Entrysets
 
-Zestaw klawiszy jest tablicą zawierającą wszystkie klucze mapy.  
-Zestaw wartości jest tablicą zawierającą wszystkie wartości mapy.  
-EnrySet jest tablicą zawierającą wszystkie wpisy mapy (patrz poniżej).
+The KeySet is an array containing all the map's keys.  
+The valueSet is an array containing all the map's values.  
+The entrySet is an array containing all the map's entries (see below).
 
 ```zenscript
-myAssocArray.keySet //keySet
-myAssocArray.keys //keySet
-myAssocArray.values //valueSet
+myAssocArray.keySet   //keySet
+myAssocArray.keys     //keySet
+myAssocArray.values   //valueSet
 myAssocArray.valueSet //valueSet
 myAssocArray.entrySet //entrySet
 ```
 
-## Iteracja nad tablicą stowarzyszeniową
+## Iterating over an Associative Array
 
-Są dwa Iteratory, które pozwalają Ci powtórzyć się nad Arrą Stowarzyszenia:
+There are two Iterators that allow you to iterate over an Associative Array:
 
-- Klucz-Iterator: Iterates nad kluczami, używa jednej zmiennej
-- Klucz-wartość-Iterator: Iterates nad kluczami i wartościami, używa dwóch zmiennych
+- The key-Iterator: Iterates over the keys, uses one variable
+- The key-value-Iterator: Iterates over the keys and values, uses two variables
 
-Dodajmy tablicę stowarzyszeniową, która przechowuje receptury rzemieślnicze, które mają zostać powtórzone:
+Let's add an Associative Array that stores crafting recipes to be iterated over:
 
-- Klucze powinny być wyjściem wytwarzania jako [IItemStack](/Vanilla/Items/IItemStack/)
-- Wartości powinny być składnikami tworzącymi jako [ISkładnik](/Vanilla/Variable_Types/IIngredient/)
-- Użyjemy klucza-Iteratora, który jest zbudowany w następujący sposób: `dla klucza assocArray {doSth;}`
-- Użyjemy również klucza-Iteratora, który jest zbudowany w ten sposób `dla klucza, wartości assocArray {doSth;}`
+- Keys shall be the crafting output as [IItemStack](/Vanilla/Items/IItemStack/)
+- Values shall be the crafting ingredients as [IIngredient](/Vanilla/Variable_Types/IIngredient/)
+- We shall use the key-Iterator that is built like this: `for key in assocArray {doSth;}`
+- We shall also use the key-value-Iterator that is built like this `for key, value in assocArray {doSth;}`
 
 ```zenscript
-importuj crafttweaker.item.IItemStack;
-zaimportuj crafttweaker.itemem. Składnik;
+import crafttweaker.item.IItemStack;
+import crafttweaker.item.IIngredient;
 
-walowa ziemia = <minecraft:dirt>;
+val dirt = <minecraft:dirt>;
 val recipeMapShaped = {
-    <minecraft:grass> : [[dirt, brud, brud, brud, [brud, brud, brud],[brud, brud, brud, brudna]],
-    <minecraft:gold_ingot> : [[dirt, ziemię, ziemię],[ziemię, <minecraft:gold_ingot>, brud],[ziemię, brud, brud, bruksa]]
-} jako IIngredient[][][IItemStack]
+    <minecraft:grass> : [[dirt, dirt, dirt],[dirt, dirt, dirt],[dirt, dirt, dirt]],
+    <minecraft:gold_ingot> : [[dirt, dirt, dirt],[dirt, <minecraft:gold_ingot>, dirt],[dirt, dirt, dirt]]
+} as IIngredient[][][IItemStack];
 
-recipeMapShaped[dirt] = [[dirt, ziemię],[ziemię, null, ziemię],[ziemię, ziemię, ziemię]];
+recipeMapShaped[dirt] = [[dirt, dirt, dirt],[dirt, null, dirt],[dirt, dirt, dirt]];
 
-//kluczem będzie trawa, goldIngot, ziemia
-dla klucza w recepturze 
-MapShaped {
-    receptur. ddShaped(klucz, recipeMapShaped[key]);
+//key will be grass, goldIngot, dirt
+for key in recipeMapShaped {
+    recipes.addShaped(key, recipeMapShaped[key]);
 }
 
 
-//klucze będą trawą, złotą Sztabą, ziemią, wartości będą dla nich recepturami
-na klucz, wartość w recepturze receptura {
-    . ddShaped(klucz, wartość);
+//keys will be grass, goldIngot, dirt, values will be the recipes for them
+for key, value in recipeMapShaped {
+    recipes.addShaped(key, value);
 }
 ```
 
-# Wpis ZenType
+# ZenType Entry
 
-Wpis mapy składa się z klucza i wartości.  
-Obecnie jedynym sposobem na uzyskanie takiego obiektu jest metoda entrySet mapy.
+A map Entry consists of a key and a value.  
+Currently the only way to get such an object is via a map's entrySet method.
 
-Możesz użyć pobierających do otrzymania `klucza` i `wartości`
+You can use the getters to get `key` and `value`
 
 ```zenscript
-//Zastąp mapę odniesieniem do istniejącej tablicy map/associative Array
+//Replace map with a reference to an existing map/associative array
 val myEntry = map.entrySet[0];
 
 
-myEntry.key; //Zwraca klucz wpisu.
-myEntry.value; //Zwraca wartość wpisu.
+myEntry.key;    //Returns the entry's key.
+myEntry.value;  //Returns the entry's value.
 ```
