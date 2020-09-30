@@ -1,21 +1,21 @@
 # PlayerRightClickItem
 
-PlayerRightClickItem イベントは、アイテムの機能が発生する直前に発生します。 プレイヤーがブロックやエンティティを取得している場合は発行されません。 他のイベントの発生を防ぐため、キャンセルすることができます。 イベントがキャンセルされた場合、許可、拒否、またはパスの特定の結果を提供することができます。 デフォルトでは、結果はパスです。
+The PlayerRightClickItem Event is fired shortly before an item's functionality is fired. It is not fired if the player is targetting a block or entity. It can be canceled to prevent any other events from taking place. If the event is canceled, a specific result of allow, deny, or pass can be provided. By default, the result is pass.
 
-## イベントクラス
+## Event Class
 You will need to cast the event in the function header as this class:  
 `crafttweaker.event.PlayerRightClickItemEvent`  
 You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
 
-## イベントインターフェースの拡張
-PlayerRightClickItem イベントは以下のインターフェイスを実装し、それらのすべてのメソッド/getters/setters も同様に呼び出すことができます。
+## Event interface extensions
+PlayerRightClickItem Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
 
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 - [PlayerInteract](/Vanilla/Events/Events/PlayerInteract/)
 
 ## ZenGetters & ZenSetters
-イベントでは以下の情報を調整できます。
+The following information can be adjusted in the event.
 
-| ZenGetter           | ZenSetter           | タイプ                                |
-| ------------------- | ------------------- | ---------------------------------- |
-| `cancelationResult` | `cancelationResult` | 文字列 ("allow" / "deny" / "default") |
+| ZenGetter            | ZenSetter            | type                                  |
+| -------------------- | -------------------- | ------------------------------------- |
+| `cancellationResult` | `cancellationResult` | string ("allow" / "deny" / "default") |
