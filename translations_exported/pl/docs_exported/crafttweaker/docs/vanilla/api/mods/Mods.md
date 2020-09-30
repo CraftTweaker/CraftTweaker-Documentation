@@ -1,16 +1,16 @@
-# Modyfikacje
+# Mods
 
 Przechowuje informacje o wszystkich zarejestrowanych modyfikacjach. Można uzyskać dostęp za pomocą `loadedMods` globalnego słowa kluczowego
 
-Ta klasa została dodana przez moda z mod-id `crafttweaker`. Więc musisz zainstalować tę modyfikację, jeśli chcesz używać tej funkcji.
+This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
 
-## Importowanie klasy
-Może być wymagane zaimportowanie pakietu, jeśli napotkasz jakiekolwiek problemy (np. rzucanie tablicy), tak aby były bezpieczne niż przepraszamy i dodaj import.
+## Importing the class
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
 ```zenscript
 crafttweaker.api.mods.Mods
 ```
 
-## Metody
+## Methods
 ### getMod
 
 Pobiera określoną modyfikację
@@ -24,9 +24,9 @@ loadedMods.getMod(modid jako String);
 loadedMods.getMod("minecraft");
 ```
 
-| Parametr | Typ         | Opis             |
-| -------- | ----------- | ---------------- |
-| modid    | Ciąg znaków | Nie podano opisu |
+| Parameter | Type   | Description             |
+| --------- | ------ | ----------------------- |
+| modid     | String | No description provided |
 
 
 ### isModLoaded
@@ -35,23 +35,23 @@ Sprawdza, czy mod jest laodowany
 
  Zwraca: `true jeśli mod jest załadowany`
 
-Typ zwrotu: logiczny
+Return type: boolean
 
 ```zenscript
 loadedMods.isModLoaded(modid jako String);
 loadedMods.isModLoaded("minecraft");
 ```
 
-| Parametr | Typ         | Opis                 |
-| -------- | ----------- | -------------------- |
-| modid    | Ciąg znaków | modid do sprawdzenia |
+| Parameter | Type   | Description          |
+| --------- | ------ | -------------------- |
+| modid     | String | modid do sprawdzenia |
 
 
 
-## Właściwości
+## Properties
 
-| Nazwisko | Typ                                                                                 | Posiada Getter | Ma ustawienie |
-| -------- | ----------------------------------------------------------------------------------- | -------------- | ------------- |
-| mody     | Lista&lt;[crafttweaker.api.mods.ModInfo](/vanilla/api/mods/ModInfo)&gt; | prawda         | fałszywy      |
-| rozmiar  | odcień                                                                              | prawda         | fałszywy      |
+| Name | Type                                                                                | Has Getter | Has Setter |
+| ---- | ----------------------------------------------------------------------------------- | ---------- | ---------- |
+| mody | Lista&lt;[crafttweaker.api.mods.ModInfo](/vanilla/api/mods/ModInfo)&gt; | true       | false      |
+| size | int                                                                                 | true       | false      |
 
