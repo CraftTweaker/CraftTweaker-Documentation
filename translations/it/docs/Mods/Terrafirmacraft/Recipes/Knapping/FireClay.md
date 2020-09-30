@@ -1,30 +1,30 @@
 # FireClay Knapping
 
-## Pacchetto
+## Package
 ```zenscript
 import mods.terrafirmacraft.FireClayKnapping;
 ```
 
-## Addizione
+## Addition
 
 ```zenscript
 FireClayKnapping.addRecipe(String registryName, IItemStack output, String... pattern)
 ```
 
-## Rimozione
+## Removal
 
 ```zenscript
 FireClayKnapping.removeRecipe(IItemStack output);
 FireClayKnapping.removeRecipe(String registryName);
 ```
 
-## Esempio
+## Example
 ```zenscript
-// aggiungi la ricetta per il raccoglitore per conduit enderio
-FireClayKnapping. ddRecipe("enderio/item_conduit_binder", <enderio:item_material:22>*2, 
-" X",
-" XX",
-" XXX",
+// add fireClay knapping recipe for enderio conduit binder
+FireClayKnapping.addRecipe("enderio/item_conduit_binder", <enderio:item_material:22>*2, 
+"    X",
+"   XX",
+"  XXX",
 " XXXX",
 "XXXXX");
 ```
