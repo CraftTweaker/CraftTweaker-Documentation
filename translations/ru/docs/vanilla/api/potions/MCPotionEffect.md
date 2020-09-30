@@ -1,4 +1,4 @@
-# Эффект "Зелье MC"
+# MCPotionEffect
 
 Этот класс был добавлен модом с mod-id `crafttweaker`. Так что если вы хотите использовать эту функцию, вам нужно установить этот мод.
 
@@ -8,49 +8,49 @@
 crafttweaker.api.potion.MCPotionEffect
 ```
 
-## Реализованные интерфейсы
-MCPotionEffect реализует следующие интерфейсы. Следовательно, методы из них доступны в этом классе.
+## Implemented Interfaces
+MCPotionEffect implements the following interfaces. That means any method available to them can also be used on this class.
 - [crafttweaker.api.brackets.CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
 
-## Методы
-### Готов
+## Methods
+### isReady
 
 Возвращает boolean
 
 ```zenscript
-myMCPotionEffect.isReady(продолжительность, int, усилитель как int);
+myMCPotionEffect.isReady(duration as int, amplifier as int);
 ```
 
-| Параметр     | Тип | Описание             |
-| ------------ | --- | -------------------- |
-| длительность | int | Описание отсутствует |
-| усилитель    | int | Описание отсутствует |
+| Параметр  | Тип | Description          |
+| --------- | --- | -------------------- |
+| duration  | int | Описание отсутствует |
+| amplifier | int | Описание отсутствует |
 
 
 ### newInstance
 
-Возвращает [crafttweaker.api.potion.MCPotionEffectInstance](/vanilla/api/potions/MCPotionEffectInstance)
+Returns [crafttweaker.api.potion.MCPotionEffectInstance](/vanilla/api/potions/MCPotionEffectInstance)
 
 ```zenscript
-myMCPotionEffect.newInstance(длительность int, усилитель как int);
+myMCPotionEffect.newInstance(duration as int, amplifier as int);
 ```
 
-| Параметр     | Тип | Описание             | Необязательный | Значение по умолчанию |
-| ------------ | --- | -------------------- | -------------- | --------------------- |
-| длительность | int | Описание отсутствует | false          | null                  |
-| усилитель    | int | Описание отсутствует | true           | 0                     |
+| Параметр  | Тип | Description          | IsOptional | Default Value |
+| --------- | --- | -------------------- | ---------- | ------------- |
+| duration  | int | Описание отсутствует | false      | null          |
+| amplifier | int | Описание отсутствует | true       | 0             |
 
 
 
 ## Свойства
 
-| Название             | Тип                                                                       | Имеет Getter | Имеет Setter |
-| -------------------- | ------------------------------------------------------------------------- | ------------ | ------------ |
-| командная строка     | String                                                                    | true         | false        |
-| целительные элементы | Список<[crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)> | true         | false        |
-| displayName          | String                                                                    | true         | false        |
-| Бенефициар           | boolean                                                                   | true         | false        |
-| Мгновенный           | boolean                                                                   | true         | false        |
-| ликвидационный цвет  | int                                                                       | true         | false        |
-| имя                  | String                                                                    | true         | false        |
+| Название      | Тип                                                                     | Имеет Getter | Имеет Setter |
+| ------------- | ----------------------------------------------------------------------- | ------------ | ------------ |
+| commandString | String                                                                  | true         | false        |
+| curativeItems | List<[crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)> | true         | false        |
+| displayName   | String                                                                  | true         | false        |
+| isBeneficial  | boolean                                                                 | true         | false        |
+| isInstant     | boolean                                                                 | true         | false        |
+| liquidColor   | int                                                                     | true         | false        |
+| name          | String                                                                  | true         | false        |
 
