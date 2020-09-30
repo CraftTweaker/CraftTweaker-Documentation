@@ -1,55 +1,55 @@
-# Étapes des créatures
+# Mob Stages
 
-Ce mod est un addon pour l'API [GameStages](https://minecraft.curseforge.com/projects/game-stages). Mob Stages permet de configurer l'apparition des créatures dans un système de progression personnalisé. Pour plus d'informations sur le fonctionnement du mod, consultez la page du mod [ici](https://minecraft.curseforge.com/projects/mob-stages)
+This mod is an addon for the [GameStages API](https://minecraft.curseforge.com/projects/game-stages). Mob Stages allows for mob spawning to be configured into a custom progression system. For more info on how the mod works, check out the mod page [here](https://minecraft.curseforge.com/projects/mob-stages)
 
-## Options globales
+## Global Options
 
-Crée une nouvelle entrée gloabl pour le mob. Une seule entrée globale peut exister par mob.
+Creates a new gloabl entry for the mob. Only one global entry can exist per mob.
 
 ```zenscript
 // mods.MobStages.addStage(String stage, String entityId);
 mods.MobStages.addStage("one", "minecraft:zombie");
 ```
 
-Ajoute un remplacement pour le mob. Si le mob ne parvient pas à apparaître parce qu'il n'y a pas de joueurs valides à proximité, le mob de remplacement apparaîtra à sa place.
+Adds a replacement for the mob. If the mob fails to spawn because there are no valid players nearby, the replacement mob will be spawned in it's place.
 
 ```zenscript
 // mods.MobStages.addReplacement(String entityId, String replacementId);
 mods.MobStages.addReplacement("minecraft:zombie", "minecraft:slime");
 ```
 
-Définit la plage pour rechercher des joueurs valides. La plage par défaut est de 512 blocs, donc c'est optionnel.
+Sets the range to search for valid players. The default range is 512 blocks, so this is optional.
 
 ```zenscript
 // mods.MobStages.addRange(String entityId, int range);
 mods.MobStages.addRange("minecraft:zombie", 32);
 ```
 
-Permet aux spawners de remplacer la vérification de phase. La valeur par défaut est faux. Si activé, les spawners fonctionneront pour ce mob, même s'il n'y a pas de joueurs valides.
+Allows for spawners to override the stage check. The default is false. If set to true, spawners will work for this mob, even if there are no valid players.
 
 ```zenscript
 // mods.MobStages.toggleSpawners(String entityId, boolean allow);
 mods.MobStages.toggleSpawners("minecraft:zombie", true);
 ```
 
-## Options spécifiques à la dimension
+## Dimension Specific Options
 
-Les options spécifiques aux dimensions sont presque les mêmes que les options globales, Cependant, ils ont un autre argument ajouté à la fin, qui est l'id de dimension Integer. Les entrées spécifiques à la dimension remplaceront l'entrée globale dans cette dimension. Vous ne pouvez avoir qu'une seule entrée par mob, par dimension.
+Dimension specific options are nearly the same as the global options, however they have another argument added to the end, which is the Integer dimension id. Dimension specific entries will override the global entry in that dimension. You can only have one entry per mob, per dimension.
 
-## Exemple de script
+## Example Script
 
 ```zenscript
-// Les creepers ont besoin de la phase 1 pour faire apparaître
-mods.MobStages.addStage("une", "minecraft:creeper");
+// Creepers require stage one to spawn
+mods.MobStages.addStage("one", "minecraft:creeper");
 
-// Les squelettes nécessitent la phase 2 ou tout spawner.
+// Skeletons require stage two, or any spawner.
 mods.MobStages.addStage("two", "minecraft:skeleton");
 mods.MobStages.toggleSpawner("minecraft:skeleton", true);
 
-// Les araignées nécessitent l'étape 3 dans le nether.
+// Spiders require stage three in the nether.
 mods.MobStages.addStage("three", "minecraft:spider", -1);
 
-// Zombies requièrent l'étape 4 dans le nether, et sont remplacés par des chauves-souris s'ils ne le peuvent pas.
+// Zombies require stage 4 in the nether, and are replaced by bats if they can't.
 mods.MobStages.addStage("four", "minecraft:zombie", -1);
 mods.MobStages.toggleSpawner("minecraft:zombie", true, -1);
 mods.MobStages.addStage("four", "minecraft:zombie", -1);
