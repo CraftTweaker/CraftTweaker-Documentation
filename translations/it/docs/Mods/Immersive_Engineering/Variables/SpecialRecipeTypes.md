@@ -1,12 +1,12 @@
-# Tipi Di Ricette Speciali
+# Special Recipe Types
 
-## Informazioni
+## Information
 
-L'Arc-Furnace ha un parametro Opzionale String chiamato "SpeciRecipeType". Questa Stringa ti permette di "Sub-Tag" la tua Ricetta a un tipo di Ricetta specifico. Questo non altera il comportamento in alcun modo, lo assegna solo a un Sub-Tag.
+The Arc-Furnace has an Optional String parameter called "specialRecipeType". This String allows you to "Sub-Tag" your Recipe to a specific Recipe Type. This does not alter behavior in any way, it just assigns it to a Sub-Tag.
 
-### Tipi Esistenti
+### Existing Types
 
-| Tipi Di Ricetta: | Valore |
-| ---------------- | ------ |
-| Leghe            | "Lega" |
-| Ores             | "Ores" |
+| Recipe Types: | Value      |
+| ------------- | ---------- |
+| Alloying      | "Alloying" |
+| Ores          | "Ores"     |
