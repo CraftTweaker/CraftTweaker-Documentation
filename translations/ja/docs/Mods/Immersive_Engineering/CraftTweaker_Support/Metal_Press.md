@@ -1,20 +1,20 @@
-# 金属プレス機
+# Metal Press
 
-金属プレスパッケージは、没入型金属プレスへのレシピの追加/削除に使用できます。
+The Metal Press package can be used to add/remove recipes to/from the Immersive Engineering Metal Press.
 
-## パッケージの呼び出し
+## Calling The Package
 
-`mods.immysiveengineering.MetalPress` を使用して、MetalPress パッケージを呼び出すことができます。
+You can call the MetalPress package using `mods.immersiveengineering.MetalPress`.
 
-## レシピを追加
+## Add Recipe
 
-| 必須 | タイプ        | データタイプ                                              |
-| -- | ---------- | --------------------------------------------------- |
-| 必須 | 出力         | [IItemstack](/Vanilla/Items/IItemStack/)            |
-| 必須 | Input      | [IIngredient](/Vanilla/Variable_Types/IIngredient/) |
-| 必須 | 金型：        | [IItemstack](/Vanilla/Items/IItemStack/)            |
-| 必須 | エネルギー      | 整数                                                  |
-| 必須 | Input Size | 整数                                                  |
+| Required | Type       | Data Type                                           |
+| -------- | ---------- | --------------------------------------------------- |
+| Required | Output     | [IItemstack](/Vanilla/Items/IItemStack/)            |
+| Required | Input      | [IIngredient](/Vanilla/Variable_Types/IIngredient/) |
+| Required | Mold       | [IItemstack](/Vanilla/Items/IItemStack/)            |
+| Required | Energy     | Integer                                             |
+| Required | Input Size | Integer                                             |
 
 ### 例
 
@@ -26,32 +26,32 @@ mods.immersiveengineering.MetalPress.addRecipe(<minecraft:diamond>, <ore:logWood
 mods.immersiveengineering.MetalPress.addRecipe(<minecraft:diamond>, <ore:logWood>, <minecraft:emerald>, 2000, 16);
 ```
 
-## レシピを削除
+## Remove Recipe
 
-| タイプ | データタイプ                                   |
-| --- | ---------------------------------------- |
-| 出力  | [IItemstack](/Vanilla/Items/IItemStack/) |
+| Type   | Data Type                                |
+| ------ | ---------------------------------------- |
+| Output | [IItemstack](/Vanilla/Items/IItemStack/) |
 
 ### 例
 
 ```zenscript
-//例:
-mods.immysiveengineering.MetalPress.removeRecipe(IItemstack output);
+//Example:
+mods.immersiveengineering.MetalPress.removeRecipe(IItemstack output);
 
 mods.immersiveengineering.MetalPress.removeRecipe(<minecraft:diamond>);
 ```
 
-## 金型で削除
+## Remove By Mold
 
-| タイプ | データタイプ                                   |
-| --- | ---------------------------------------- |
-| 出力  | [IItemstack](/Vanilla/Items/IItemStack/) |
+| Type   | Data Type                                |
+| ------ | ---------------------------------------- |
+| Output | [IItemstack](/Vanilla/Items/IItemStack/) |
 
 ### 例
 
 ```zenscript
-//例:
-mods.immysiveengineering.MetalPress.removeRecipeByMold(IItemstack output);
+//Example:
+mods.immersiveengineering.MetalPress.removeRecipeByMold(IItemstack output);
 
 mods.immersiveengineering.MetalPress.removeRecipeByMold(<minecraft:diamond>);
 ```
