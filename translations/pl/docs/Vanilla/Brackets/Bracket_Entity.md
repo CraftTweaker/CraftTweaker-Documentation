@@ -1,8 +1,8 @@
-# Obsługa nawiasów encji
+# Entity Bracket Handler
 
-Słuchacz Obiektów daje Ci dostęp do obiektów (np. Moby, płytki itp.) w grze. Można zarejestrować tylko podmioty w grze, więc dodawanie lub usuwanie modów może powodować problemy, jeśli odwołujesz się do mobów moda w Handlerze Obiektów.
+The Entity Bracket Handler gives you access to the Entities (e.g. Mobs, tile ents etc.) in the game. It is only possible to get entities registered in the game, so adding or removing mods may cause issues if you reference the mod's mobs in an Entity Bracket Handler.
 
-Jednostki są odwoływane w obsłudze jednostki w następujący sposób:
+Entities are referenced in the Entity handler this way:
 
 ```zenscript
 <entity:modID:entityName>
@@ -10,11 +10,11 @@ Jednostki są odwoływane w obsłudze jednostki w następujący sposób:
 <entity:minecraft:sheep>
 ```
 
-Jeśli zostanie znaleziony mob/podmiot, zwróci to obiekt IEntityDefinition Object. Please refer to the [respective Wiki entry](/Vanilla/Entities/IEntityDefinition/) for further information on what you can do with these.
+If the mob/entity is found, this will return an IEntityDefinition Object. Please refer to the [respective Wiki entry](/Vanilla/Entities/IEntityDefinition/) for further information on what you can do with these.
 
-# Uzyskanie wszystkich zarejestrowanych podmiotów
+# Getting all Registered Entities
 
-Możesz użyć następującej komendy do przesyłania wszystkich zarejestrowanych obiektów do dziennika CraftTweaker
+You can use the following command to output all registered entities to the CraftTweaker log
 
     /ct entities
     /crafttweaker entities
