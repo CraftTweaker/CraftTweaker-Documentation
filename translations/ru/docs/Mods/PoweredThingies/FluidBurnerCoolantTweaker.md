@@ -1,28 +1,28 @@
-# Питание :: Жидкая горелка :: Крутость
+# Powered Thingies :: Fluid Burner :: Coolant
 
-### Импорт
+### Importing
 
 ```zenscript
 import mods.poweredthingies.Tweaker.fluidBurnerCoolantTweaker as coolant;
 ```
 
-### Список ключей, удаление рецептов по ключу, очистка
+### Listing Keys, Removing Recipes by Key, Clearing
 
 ```zenscript
 coolant().logKeys()
-coolant().removeRecipe('teslathingies:fluid_tf-molten_tesla') // проверьте <logKeys> вывод для допустимых ключей
+coolant().removeRecipe('teslathingies:fluid_tf-molten_tesla') // check <logKeys> output for valid keys
 coolant().clear()
 ```
 
-### Добавление рецепта
+### Adding Recipe
 
-##### Подпись
+##### Signature
 
 ```zenscript
-addCoolant(fluid: ILiquidStack, мультипликатор времени: Float)
+addCoolant(fluid: ILiquidStack, timeMultiplier: Float)
 ```
 
-`timeMultiplier` — это значение, которое будет использоваться для увеличения (или уменьшения) количества тиков, на которое будет сжигаться топливо.
+`timeMultiplier` is the value that will be used to increase (or decrease) the number ticks a fuel will burn for.
 
 ##### Пример
 
@@ -30,6 +30,6 @@ addCoolant(fluid: ILiquidStack, мультипликатор времени: Flo
 coolant().addCoolant(<liquid:tf-sewage> * 50, 1.1);
 ```
 
-### Примечания
+### Notes
 
-Все эти действия будут кэшироваться и запускаться после завершения регистрации реестра по умолчанию (в том числе от пользовательских json).
+All of these actions will get cached and ran after the default registry for this machine has finished registering all recipes (including the ones from the custom jsons).
