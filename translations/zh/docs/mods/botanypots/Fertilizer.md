@@ -1,83 +1,83 @@
-# 肥料
+# Fertilizers
 
-类路径： `mods.botanypots.Fertilizer`
+Class path: `mods.botanypots.Fertilizer`
 
-## 使用
+## Use
 
-若要使用，导入 `导入mods.botanypots.Fertilizer的类；` 在你的脚本开头。
+To use, import the class with `import mods.botanypots.Fertilizer;` at the beginning of your script.
 
-## 创建化肥器
+## Creating Fertilizers
 
-`Fertilizer.create(id, component, minTick, maxTick);`
+`Fertilizer.create(id, ingredient, minTick, maxTick);`
 
-- `id` &lt;string> The id of the new profer. 这是一个命名空间ID，必须是有效的 `命名空间：路径` 格式。
-- `成分` <[IIngredient](/vanilla/api/items/IIngredient)> 用于肥料的物品。
-- `minTick` &lt;int> 由化肥添加的最少的刻录量。
-- `maxTick` &lt;int> 化肥添加的最大刻度.
+- `id` &lt;string> The id of the new fertilizer. This is a namespaced id an must be in the valid `namespace:path` format.
+- `ingredient` <[IIngredient](/vanilla/api/items/IIngredient)> The item used for the fertilizer.
+- `minTick` &lt;int> The minimum amount of ticks added by the fertilizer.
+- `maxTick` &lt;int> The maximum amount of ticks added by the fertilizer.
 
-创建一个新化肥。 这些资源可以用来更快地种植作物。
+Creates a new fertilizer. These can be used to grow crops faster.
 
 ```zenscript
 Fertilizer.create("examplepack:stick", <item:minecraft:stick>, 250, 550);
 ```
 
-## 去除化肥器
+## Removing Fertilizers
 
-`Fertilizer.remove(id)；`
+`Fertilizer.remove(id);`
 
-- `id` &lt;字符串> 化肥的 id。 这是一个命名空间ID，必须是有效的 `命名空间：路径` 格式。
+- `id` &lt;string> The id of the fertilizer. This is a namespaced id an must be in the valid `namespace:path` format.
 
-这可以用来去除肥料。
+This can be used to remove a fertilizer.
 
 ```zenscript
-(a) 化肥厂拆卸(“botanypots:肥料/bone_meal”)；
+Fertilizer.remove("botanypots:fertilizers/bone_meal");
 ```
 
-## 改变化肥服务单
+## Changing Fertilizer Ticks
 
-`Fertilizer.setTicks(String id，int minTick，int maxTick)；`
+`Fertilizer.setTicks(String id, int minTick, int maxTick);`
 
-- `id` &lt;字符串> 化肥的 id。 这是一个命名空间ID，必须是有效的 `命名空间：路径` 格式。
-- `minTick` &lt;int> 由化肥添加的新的最小刻度。
-- `maxTick` &lt;int> 由化肥添加的新最大的刻录量。
+- `id` &lt;string> The id of the fertilizer. This is a namespaced id an must be in the valid `namespace:path` format.
+- `minTick` &lt;int> The new minimum amount of ticks added by the fertilizer.
+- `maxTick` &lt;int> The new maximum amount of ticks added by the fertilizer.
 
-这将改变化肥添加的生长勾画范围。
+This will change the growth tick range added by the fertilizer.
 
 ```zenscript
-Fertilizer.setTicks(“botanypots:fertiless/bone_meal”，800,900)；
+Fertilizer.setTicks("botanypots:fertilizers/bone_meal", 800, 900);
 ```
 
-## 肥料成分变化
+## Changing Fertilizer Ingredients
 
-`a. Fertilizer.setIngredient（id，成分）；`
+`Fertilizer.setIngredient(id, ingredient);`
 
-- `id` &lt;字符串> 化肥的 id。 这是一个命名空间ID，必须是有效的 `命名空间：路径` 格式。
-- `成分` <[IIngredient](/vanilla/api/items/IIngredient)> 用于化肥的新物品。
+- `id` &lt;string> The id of the fertilizer. This is a namespaced id an must be in the valid `namespace:path` format.
+- `ingredient` <[IIngredient](/vanilla/api/items/IIngredient)> The new item to be used for the fertilizer.
 
-设置化肥的成份物品。
+Sets the ingredient item that is the fertilizer.
 
 ```zenscript
-Fertilizer.setIngredient(“botanypots:fertilers/bone_meal”， <item:minecraft:sugar>)；
+Fertilizer.setIngredient("botanypots:fertilizers/bone_meal", <item:minecraft:sugar>);
 ```
 
-## 正在获取所有ID
+## Getting All Ids
 
-`Fertilizer.getAllids();`
+`Fertilizer.getAllIds();`
 
-- 返回： &lt;字符串[]> 这是当时所有已知肥料id的数组。
+- Returns: &lt;string[]> An array of all known fertilizer ids at the time this is ran.
 
-这将给您一系列已知的肥料id。
+This will give you an array of all the known fertilizer ids at the time.
 
 ```zenscript
-// 将所有id记录到 craftbiner.log 文件
-以获取化肥Id in Fertilizer.getAllIds() 然后
+// Log all ids to the crafttweaker.log file
+for fertilizerId in Fertilizer.getAllIds() {
     println(fertilizerId);
-
+}
 ```
 
-## 移除所有化肥器
+## Removing All Fertilizers
 
-这将完全清除目前登记的所有化肥。 如果你想要通过脚本从头重新创建所有数据，这是有用的。
+This will completely remove all the fertilizers currently registered. This is useful for if you want to recreate all the data from scratch through scripts.
 
 ```zenscript
 Fertilizer.removeAll();
