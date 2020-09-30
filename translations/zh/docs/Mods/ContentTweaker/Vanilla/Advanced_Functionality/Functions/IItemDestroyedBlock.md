@@ -1,20 +1,20 @@
 # IItemDestroyedBlock
 
-ItemDestroyedBlock功能可以添加到 [项目](/Mods/ContentTweaker/Vanilla/Creatable_Content/Item/) 中，并且每当你试图破坏一个方块时都会运行。
+The IItemDestroyedBlock function can be added to an [Item](/Mods/ContentTweaker/Vanilla/Creatable_Content/Item/) and will run whenever you try to break a block with the assiciated Item.
 
 ## 导入相关包
 
-如果您遇到任何问题，可能需要导入软件包，所以比抱歉更安全并添加导入。  
-`导入 mods.contenttweaker.IItemDestroyedBlock；`
+It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
+`import mods.contenttweaker.IItemDestroyedBlock;`
 
-## 参数
+## Parameters
 
-ItemDestroyedBlock是一个具有以下参数的函数：
+The IItemDestroyedBlock is a function with the following parameters:
 
-- [IMutableItemStack](/Mods/ContentTweaker/Vanilla/Types/Item/IMutableItemStack/) stack → 该物品。
-- [IWorld](/Mods/ContentTweaker/Vanilla/Types/World/IWorld/) world -> 这个世界发生于
-- [ICTBlockState](/Mods/ContentTweaker/Vanilla/Types/Block/ICTBlockState/) blockStateformat@@2 = 正在开采的方块的状态。
-- [IBlockPos](/Mods/ContentTweaker/Vanilla/Types/Block/IBlockPos/) pos = 这种情况发生在哪里？
-- [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) entity → 谁/什么样的地雷？
+- [IMutableItemStack](/Mods/ContentTweaker/Vanilla/Types/Item/IMutableItemStack/) stack → The item.
+- [IWorld](/Mods/ContentTweaker/Vanilla/Types/World/IWorld/) world → The world this takes place in
+- [ICTBlockState](/Mods/ContentTweaker/Vanilla/Types/Block/ICTBlockState/) blockState → The state of the block that is being mined.
+- [IBlockPos](/Mods/ContentTweaker/Vanilla/Types/Block/IBlockPos/) pos → Where does this take place?
+- [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) entity → Who/What mines the block?
 
-函数需要返回一个 boole, 如果blockBreaking 进程成功, 则为 `true` , 如果它已经成功, `false` 如果它是这样的。
+The Function needs to return a boolean, that is `true` if the blockBreaking process is successfull, and `false` if it ain't.
