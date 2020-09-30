@@ -1,7 +1,7 @@
-# Восстановление Игрока
+# PlayerAnvilRepair
 
-Событие Восстановление PlayerAnvilRepair запускается всякий раз, когда игрок создает что-нибудь в ярости.  
-Вы можете изменить вероятность повреждения зла.
+The PlayerAnvilRepair Event is fired whenever a player crafts something in the anvil.  
+You can change the chance that the anvil is damaged.
 
 ## Класс события
 
@@ -11,7 +11,7 @@ You can, of course, also [import](/AdvancedFunctions/Import/) the class before a
 
 ## Наследование от интерфейсов событий
 
-PlayerAnvilRepair События реализуют следующие интерфейсы и также могут вызвать все их методы/getters/setters:
+PlayerAnvilRepair Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
 
 - [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
 
@@ -19,10 +19,10 @@ PlayerAnvilRepair События реализуют следующие инте�
 
 Следующая информация может быть получена от события:
 
-| Геттеры              | ZenSetter      | Возвращаемый тип                         |
-| -------------------- | -------------- | ---------------------------------------- |
-| `player`             |                | [IPlayer](/Vanilla/Players/IPlayer/)     |
-| `itemInput`          |                | [IItemStack](/Vanilla/Items/IItemStack/) |
-| `элемент Ингредиент` |                | [IItemStack](/Vanilla/Items/IItemStack/) |
-| `itenResult`         |                | [IItemStack](/Vanilla/Items/IItemStack/) |
-| `Шанс разрыва`       | `Шанс разрыва` | float                                    |
+| ZenGetter        | ZenSetter     | Возвращаемый тип                         |
+| ---------------- | ------------- | ---------------------------------------- |
+| `player`         |               | [IPlayer](/Vanilla/Players/IPlayer/)     |
+| `itemInput`      |               | [IItemStack](/Vanilla/Items/IItemStack/) |
+| `itemIngredient` |               | [IItemStack](/Vanilla/Items/IItemStack/) |
+| `itenResult`     |               | [IItemStack](/Vanilla/Items/IItemStack/) |
+| `breakChance`    | `breakChance` | float                                    |
