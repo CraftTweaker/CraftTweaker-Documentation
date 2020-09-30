@@ -1,12 +1,12 @@
-# Tipos de receta especiales
+# Special Recipe Types
 
-## Información
+## Information
 
-El Arc-Hornace tiene un parámetro de cadena opcional llamado "specialRecipeType". Esta cadena le permite "Subetiquetar" su receta a un tipo de receta específico. Esto no altera el comportamiento de ninguna manera, sólo lo asigna a un Sub-Tag.
+The Arc-Furnace has an Optional String parameter called "specialRecipeType". This String allows you to "Sub-Tag" your Recipe to a specific Recipe Type. This does not alter behavior in any way, it just assigns it to a Sub-Tag.
 
-### Tipos existentes
+### Existing Types
 
-| Tipos de receta: | Valor      |
-| ---------------- | ---------- |
-| Aleación         | "Aleación" |
-| Ores             | "Ores"     |
+| Recipe Types: | Value      |
+| ------------- | ---------- |
+| Alloying      | "Alloying" |
+| Ores          | "Ores"     |
