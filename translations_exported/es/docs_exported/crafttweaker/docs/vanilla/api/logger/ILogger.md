@@ -1,70 +1,70 @@
 # ILogger
 
-Clase base usada para interactuar con el archivo crafttweaker.log y otros registradores (como el registrador del jugador).
+Base class used to interface with the crafttweaker.log file and other loggers (such as the player logger).
 
-Esta clase fue añadida por un mod con la ID  `crafttweaker`. Necesitas tener este mod instalado si quieres usar esta caracteristica.
+This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
 
-## Importar la clase
-Puede ser requerido que importes el paquete si encuentras algun problema (como crear un Array).
+## Importing the class
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
 ```zenscript
 crafttweaker.api.ILogger
 ```
 
-## Métodos
+## Methods
 ### debug
 
-Registra un mensaje de depuración.
+Logs a debug message.
 
 ```zenscript
 logger.debug(message as String);
 logger.debug("message");
 ```
 
-| Parámetro | Tipo   | Descripción               |
-| --------- | ------ | ------------------------- |
-| mensaje   | Cadena | mensaje a ser registrado. |
+| Parameter | Type   | Description           |
+| --------- | ------ | --------------------- |
+| message   | String | message to be logged. |
 
 
 ### error
 
-Registra un mensaje de error.
+Logs an error message.
 
 ```zenscript
 logger.error(message as String);
 logger.error("message");
 ```
 
-| Parámetro | Tipo   | Descripción               |
-| --------- | ------ | ------------------------- |
-| mensaje   | Cadena | mensaje a ser registrado. |
+| Parameter | Type   | Description           |
+| --------- | ------ | --------------------- |
+| message   | String | message to be logged. |
 
 
 ### info
 
-Registra un mensaje de información.
+Logs an info message.
 
 ```zenscript
 logger.info(message as String);
 logger.info("message");
 ```
 
-| Parámetro | Tipo   | Descripción               |
-| --------- | ------ | ------------------------- |
-| mensaje   | Cadena | mensaje a ser registrado. |
+| Parameter | Type   | Description           |
+| --------- | ------ | --------------------- |
+| message   | String | message to be logged. |
 
 
-### advertencia
+### warning
 
-Registra un mensaje de advertencia.
+Logs a warning message.
 
 ```zenscript
 logger.warning(message as String);
 logger.warning("message");
 ```
 
-| Parámetro | Tipo   | Descripción               |
-| --------- | ------ | ------------------------- |
-| mensaje   | Cadena | mensaje a ser registrado. |
+| Parameter | Type   | Description           |
+| --------- | ------ | --------------------- |
+| message   | String | message to be logged. |
 
 
 
