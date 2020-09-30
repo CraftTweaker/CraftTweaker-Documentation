@@ -1,29 +1,29 @@
-# Exigences:
+# Requirements:
 
-Exigences est un concept introduit avec Reskillable et est essentiellement des propriétés Player-Bound pour lier les objets derrière.
+Requirements is a concept introduced with Reskillable and is essentially Player-Bound properties to bind items behind.
 
-Par exemple, par défaut, Reskillable a le support des conditions pour les suivants :
+For example by default, Reskillable has Requirement support for the following:
 
-- Avancées
-- Compétences
-- Caractéristiques
+- Advancements
+- Skills
+- Traits
 
-Cette liste peut être enrichie par des addons. CompatSkills en fait ajoute la prise en charge de GameStages comme une condition valide.
+This list can be further expanded upon by addons. In-fact CompatSkills adds support for GameStages as a valid Requirement.
 
-La syntaxe de l'exigence varie de Propriété à Propriété en fonction de la façon dont elle est implémentée par l'extension. Sous Types d'exigences, vous serez en mesure de voir la syntaxe pour toutes les exigences ajoutées par les compétences de réanimation et CompatSkills.
+The requirement syntax varies from Property to Property on how it's implemented by the addon. Under Requirement Types, you'll be able to see the syntax for all Requirements added by Reskillable and CompatSkills.
 
-Voir ci-dessous pour une liste rapide de liens vers chaque type d'exigence.
+See below for a quick list of links to each requirement type.
 
-| Liens                                                                                                     |
-| --------------------------------------------------------------------------------------------------------- |
-| [Avancées](/Mods/CompatSkills/Requirements/Requirement_Types/Advancements/)                               |
-| [Dimensions](/Mods/CompatSkills/Requirements/Requirement_Types/Dimensions/)                               |
-| [Compétences d'épée dynamiques](/Mods/CompatSkills/Requirements/Requirement_Types/Dynamic_Sword_Skills/)  |
-| [format@@0 GameStages](/Mods/CompatSkills/Requirements/Requirement_Types/GameStages/)                     |
-| [Exigences inversées](/Mods/CompatSkills/Requirements/Requirement_Types/Inverted_Requirements/)           |
-| [Éléments](/Mods/CompatSkills/Requirements/Requirement_Types/Items/)                                      |
-| [Opérateurs logiques](/Mods/CompatSkills/Requirements/Requirement_Types/Logic_Operators/1_READ_ME_FIRST/) |
-| [Dictionnaire de minerai](/Mods/CompatSkills/Requirements/Requirement_Types/Ore_Dictionary/)              |
-| [Compétences](/Mods/CompatSkills/Requirements/Requirement_Types/Skills/)                                  |
-| [Niveau de récolte des outils](/Mods/CompatSkills/Requirements/Requirement_Types/Tool_Harvest-Level/)     |
-| [Caractéristiques](/Mods/CompatSkills/Requirements/Requirement_Types/Traits/)                             |
+| Links                                                                                                 |
+| ----------------------------------------------------------------------------------------------------- |
+| [Advancements](/Mods/CompatSkills/Requirements/Requirement_Types/Advancements/)                       |
+| [Dimensions](/Mods/CompatSkills/Requirements/Requirement_Types/Dimensions/)                           |
+| [Dynamic Sword Skills](/Mods/CompatSkills/Requirements/Requirement_Types/Dynamic_Sword_Skills/)       |
+| [GameStages](/Mods/CompatSkills/Requirements/Requirement_Types/GameStages/)                           |
+| [Inverted Requirements](/Mods/CompatSkills/Requirements/Requirement_Types/Inverted_Requirements/)     |
+| [Items](/Mods/CompatSkills/Requirements/Requirement_Types/Items/)                                     |
+| [Logic Operators](/Mods/CompatSkills/Requirements/Requirement_Types/Logic_Operators/1_READ_ME_FIRST/) |
+| [Dictionnaire de minerai](/Mods/CompatSkills/Requirements/Requirement_Types/Ore_Dictionary/)          |
+| [Skills](/Mods/CompatSkills/Requirements/Requirement_Types/Skills/)                                   |
+| [Tool Harvest-Level](/Mods/CompatSkills/Requirements/Requirement_Types/Tool_Harvest-Level/)           |
+| [Traits](/Mods/CompatSkills/Requirements/Requirement_Types/Traits/)                                   |
