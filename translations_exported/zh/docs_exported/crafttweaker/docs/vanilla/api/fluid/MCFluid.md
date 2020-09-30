@@ -26,17 +26,17 @@ myMCFluid.makeStack(合计数量)；
 myMCFluid.makeStack(1000)；
 ```
 
-| 参数 | 类型 | 描述                      |
-| -- | -- | ----------------------- |
-| 金额 | 整数 | No description provided |
+| 参数     | 类型  | 描述                      |
+| ------ | --- | ----------------------- |
+| amount | int | No description provided |
 
 
 
 ## 参数
 
-| 名称                   | 类型          | 可获得  | 可设置   |
-| -------------------- | ----------- | ---- | ----- |
-| commandString #命令字符串 | 字符串[string] | true | false |
+| 名称            | 类型     | 可获得  | 可设置   |
+| ------------- | ------ | ---- | ----- |
+| commandString | String | true | false |
 
 ## 运算符
 ### MUL
@@ -50,7 +50,7 @@ myMCFluid * 金额为 int
 myMCFluid * 1000
 ```
 
-| 参数 | 类型 | 描述                      |
-| -- | -- | ----------------------- |
-| 金额 | 整数 | No description provided |
+| 参数     | 类型  | 描述                      |
+| ------ | --- | ----------------------- |
+| amount | int | No description provided |
 
