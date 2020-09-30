@@ -1,19 +1,19 @@
-# 工業的なフォアgoing
+# Industrial Foregoing
 
-工業フォアゴーイングのバイオリアクター、レーザードリル、スラッジリファイナークラフト微調整サポート。
+Industrial Foregoing's BioReactor, Laser Drill and Sludge Refiner CraftTweaker support.
 
-### 商品の重量
+### Item Weight
 
-`ItemWeight` は、アイテムが選択される確率を表す数値です。 例:
+The `ItemWeight` is a number that represents the chance of an item to get selected. For example:
 
-| 項目 | 重量 | 確率 % |
-| -- | -- | ---- |
-| 石  | 99 | 99%  |
-| 土  | 1  | 1%   |
+| Item  | Weight | Chance % |
+| ----- | ------ | -------- |
+| Stone | 99     | 99%      |
+| Dirt  | 1      | 1%       |
 
-| 項目 | 重量 | 確率 % |
-| -- | -- | ---- |
-| 石  | 2  | 66%  |
-| 土  | 1  | 33%  |
+| Item  | Weight | Chance % |
+| ----- | ------ | -------- |
+| Stone | 2      | 66%      |
+| Dirt  | 1      | 33%      |
 
 ItemChance% = (ItemWeight/TotalWeight)*100
