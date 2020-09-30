@@ -1,24 +1,24 @@
-# EnityTravelToDimension
+# EntityTravelToDimension
 
-Wydarzenie »podmiot« TravelToDimension jest uruchamiane za każdym razem, gdy jednostka ma zamiar przenieść się do innego wymiaru. W przypadku anulowania podmiot nie może podróżować.
+The EntityTravelToDimension event is fired whenever an entity is about to travel to another dimension. If canceled, the entity is prevented from travel.
 
-## Uwagi
+## Notes
 
-`event.dimension` zawiera wymiar, do którego jednostka ma zamiar dotrzeć.
+`event.dimension` contains the dimension the entity is about to travel to.
 
-## Klasa wydarzenia
-Musisz aktywować wydarzenie w nagłówku funkcji jako klasa:  
-`crafttweaker.event. ntityTravelToDimensionEvent` Oczywiście możesz również [zaimportować](/AdvancedFunctions/Import/) klasę przed i wtedy użyć tej nazwy.
+## Event Class
+You will need to cast the event in the function header as this class:  
+`crafttweaker.event.EntityTravelToDimensionEvent` You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
 
-## Rozszerzenia interfejsu zdarzenia
-Wydarzenia EntityTravelToDimension wdrażają następujące interfejsy i są również w stanie wywołać wszystkie swoje metody/getters/setters:
+## Event interface extensions
+EntityTravelToDimension Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
 
 - [ILivingEvent](/Vanilla/Events/Events/ILivingEvent/)
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 
 ## ZenGetters/ZenSetters
-Następujące informacje mogą być pobierane/ustawione podczas wydarzenia:
+The following information can be retrieved/set during the event:
 
-| ZenGetter | Typ zwrotu |
-| --------- | ---------- |
-| `wymiary` | odcień     |
+| ZenGetter   | Return Type |
+| ----------- | ----------- |
+| `dimension` | int         |
