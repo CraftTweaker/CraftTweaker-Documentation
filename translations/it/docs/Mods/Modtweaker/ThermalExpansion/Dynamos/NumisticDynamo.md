@@ -1,35 +1,35 @@
 # Numistic Dynamo
 
-## Importa il pacchetto
+## Import the package
 
-Per abbreviare le chiamate di metodo è possibile [importare](/AdvancedFunctions/Import/) il pacchetto in questo modo:
+To shorten method calls you can [import](/AdvancedFunctions/Import/) the package like so:
 
 ```zenscript
 import mods.thermalexpansion.NumisticDynamo;
 ```
 
-## Aggiungi Carburante
+## Add Fuel
 
 ```zenscript
 //mods.thermalexpansion.NumisticDynamo.addFuel(IItemStack stack, int energy);
 mods.thermalexpansion.NumisticDynamo.addFuel(<minecraft:stick>, 13);
 ```
 
-## Aggiungi Carburante Gemma
+## Add Gem Fuel
 
 ```zenscript
 //mods.thermalexpansion.NumisticDynamo.addGemFuel(IItemStack stack, int energy);
 mods.thermalexpansion.NumisticDynamo.addGemFuel(<minecraft:stick>, 13);
 ```
 
-## Rimuovi Carburante
+## Remove Fuel
 
 ```zenscript
 //mods.thermalexpansion.NumisticDynamo.removeFuel(IItemStack stack);
 mods.thermalexpansion.NumisticDynamo.removeFuel(<minecraft:stick>);
 ```
 
-## Rimuovi Carburante Gemme
+## Remove Gem Fuel
 
 ```zenscript
 //mods.thermalexpansion.NumisticDynamo.removeGemFuel(IItemStack stack);
