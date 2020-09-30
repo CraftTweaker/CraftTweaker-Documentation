@@ -1,30 +1,30 @@
 # NBT-Lock Tweaker
 
-## Blokada NBT
+## NBT-Locking
 
-Blokady NBT są specyficzne dla CompatSkills 1.4.0+ i obecnie są najpotężniejszą funkcją. Możesz zablokować konkretne tagi NBT ograniczone do danego identyfikatora moda lub na każdym elemencie w grze.
+The NBT-Locks are specific to CompatSkills 1.4.0+ and currently is the most powerful feature. You can lock specific NBT-Tags either restricted to a given mod-id or on every item in the game.
 
-Oznacza to, że dowolny element znajdujący się w tym tagu NBT będzie miał do niego zastosowaną blokadę.
+This means that any item found to contain that NBT-tag will have the lock applied to it.
 
-### Składnia:
+### Syntax:
 
-    // Pusty przykład:
-    mods.compatskills.NBTLock.addGenericNBTLock(IDI, String... zablokowane)
-    mods.compatskills.NBTLock.addModNBTLock(String modId, IData tag, String... zablokowane)
+    // Blank Example:
+    mods.compatskills.NBTLock.addGenericNBTLock(IData tag, String... locked)
+    mods.compatskills.NBTLock.addModNBTLock(String modId, IData tag, String... locked)
     
-    //// Przykład:
-    // Zablokuj jedwabne dotknięcie
-    addicNBTLock({ench:[{id: 33 as short}]}, "reskillable:magic|10");
+    //// Working Example:
+    // Locks Silk-Touch
+    addGenericNBTLock({ench:[{id: 33 as short}]}, "reskillable:magic|10");
     
-    // Blokady Unbreaking (No Level-Specified)
-    addModNBTLock ("minecraft", {ench:[{id: 34 as short}]}, "reskillable:gathering|6");
+    // Locks Unbreaking (No Level-Specified)
+    addModNBTLock("minecraft", {ench:[{id: 34 as short}]}, "reskillable:gathering|6");
     
 
-Ma to pewne poważne konsekwencje. Oznacza to na przykład, że jako twórca pakietów możesz zablokować:
+This has some powerful implications. This means for example that you as a pack-maker can lock:
 
-- Materiały drukujące
-- Modyfikatory Tinkera
-- Zaklęcia
-- Wartości energetyczne
+- Tinker Materials
+- Tinker Modifiers
+- Enchantments
+- Energy-Values
 
-I o wiele więcej, o ile znasz tagi NBT, który go stosuje!
+And much more, as long as you know the NBT-tag it uses!
