@@ -1,41 +1,41 @@
 # Grill
 
-Le Grill fait cuire de la nourriture sur des charbons chauds.
+The Grill cooks food over hot coals.
 
-Il faut faire cuire les deux côtés.
+It requires flipping food to cook both sides.
 
-## Recettes de grille par défaut
+## Default Grill Recipes
 
-- Boeuf -> Boeuf cuit
-- Saucisse -> Saucisse cuite
-- Kebab -> Kebab Cuit
+- Beef -> Cooked Beef
+- Sausage -> Cooked Sausage
+- Kebab -> Cooked Kebab
 
-## Enlèvement
+## Removing
 
-## Retirer les recettes de grill correspondantes.
+## Remove matching grill recipes.
 
 ```zenscript
-mods.cfm.Grill.remove(@Optional final IIngredient output, @Optional final Igredient input);
+mods.cfm.Grill.remove(@Optional final IIngredient output, @Optional final IIngredient input);
 
-// Supprime les recettes qui nécessitent du boeuf
-mods.cfm.Grill. emove(null,<minecraft:beef>);
-// Supprime les recettes qui aboutissent à un saucisse cuite
+// Remove recipes that require Beef
+mods.cfm.Grill.remove(null,<minecraft:beef>);
+// Remove recipes that result in a Cooked Sausage
 mods.cfm.Grill.remove(<cfm:item_sausage_cooked>);
-// Supprime toutes les recettes
+// Remove all recipes
 mods.cfm.Grill.remove();
 ```
 
-## Ajout en cours
+## Adding
 
-Ajouter une recette de grillade.
+Add a grill recipe.
 
-## Ne prend en charge que les entrées de taille 1.
+## Only supports inputs of size 1.
 
 ```zenscript
 mods.cfm.Grill.addRecipe(@Nonnull final IItemStack output, @Nonnull final IItemStack input);
 
-// Ajoute une recette qui fait un Stick à partir d'un mod
-Sausage. fm.Grill.addRecipe(<minecraft:stick>,<cfm:item_sausage>);
-// Ajoute une recette qui fait une torche à partir d'un bâton
+// Add a recipe that makes a Stick from a Sausage
+mods.cfm.Grill.addRecipe(<minecraft:stick>,<cfm:item_sausage>);
+// Add a recipe that makes a Torch from a Stick
 mods.cfm.Grill.addRecipe(<minecraft:torch>,<minecraft:stick>);
 ```
