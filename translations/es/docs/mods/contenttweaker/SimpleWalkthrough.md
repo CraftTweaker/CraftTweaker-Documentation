@@ -1,142 +1,142 @@
-# Caminata simple
+# Simple Walkthrough
 
-Hola, kindlich aquí. Así que estás probando ContentTweaker por 1.15, ¿eh?
+Hey there, kindlich here. So you're trying out ContentTweaker for 1.15, huh?
 
-A veces generalmente abreviaré ContentTweaker con CoT para ahorrarme unas pocas letras (es más un automatismo de Discord ya), así que manténgase conmigo, ¿no? Luego, primero te recomiendo que también instales un mod del gestor de recursos, para que los bloques/objetos que tienes una forma de añadir texturas y modelos para bloques y objetos más adelante.
+Sometimes I'll usually abbreviate ContentTweaker with CoT to spare me a few letters (it's more an automatism from Discord already), so stay with me, okay? Then, first I recommend you also install a resource manager mod, so that the blocks/items that you have a way of adding textures and models for blocks and items later on.
 
-ContentTweaker intentará crear modelos de archivos así como una simple imagen sin textura en la carpeta de recursos, siempre y cuando detecte el mod [El cargador](https://www.curseforge.com/minecraft/mc-mods/the-loader) o [Abrir cargador](https://www.curseforge.com/minecraft/mc-mods/open-loader) instalado. Si ninguna de estas dos opciones está instalada, sólo imprimirá un mensaje al registro indicando que no creará texturas para usted. En algún momento también será posible deshabilitar la generación de texturas totalmente, pero no en la construcción Alpha/Beta.
+ContentTweaker will try to create model files as well as a simple no-texture image in your resource folder, as long as it detects either the mod [The loader](https://www.curseforge.com/minecraft/mc-mods/the-loader) or [Open Loader](https://www.curseforge.com/minecraft/mc-mods/open-loader) installed. If neither of these is installed, it will only print a message to the log stating that it won't create textures for you. At some point it will also be possible to disable the generation of textures altogether, but not in the curren Alpha/Beta build.
 
-Para las texturas generadas, CoT no anulará los archivos si ya existen, para que puedas reemplazar los archivos existentes con tus propios y CoT no deshará estos cambios.
+For the generated textures, CoT will not override files if they already exist, so you can simple replace the existing files with your own ones and CoT will not undo these changes.
 
 
-Ahora, vamos a llegar, ¿no? Daré ejemplos para algunos bloques y artículos simples. Si quieres ver todo el soporte de estas clases, usted puede encontrar la exportación de la API en la carpeta API justo debajo de este archivo en la barra de navegación!
+Now, let's get to it, shall we? I will give examples for some simple blocks and items. If you want to see everything these classes support, you can find the API export in the API folder right below this file in the navbar!
 
 ## Loader ContentTweaker
-Puesto que CraftTweaker en 1.14+ cargará mientras el servidor está activo y en ejecución, necesitamos una forma de cargar scripts en otro lugar. ¡Para eso es para el `#loader contenttweaker` !  
-Simplemente póngalo en algún lugar (preferible en la parte superior) de tu archivo y ya estás listo.  
-¡Recuerda **que no se permiten scripts de crafttweaker** en `#loader contenttweaker`mientras se ejecutan en diferentes fases del ciclo de laod !
+Since CraftTweaker in 1.14+ will load while the server is up and running, we need a way to load scripts somewhere else. That is what the `#loader contenttweaker` is for!  
+Simply put it somewhere in (preferable the top of) your file and you're set to go.  
+Remember **no crafttweaker scripts are allowed** in `#loader contenttweaker`as they run at different phases of the laod cycle!
 
 
-## Bloques
+## Blocks
 
-Para crear bloques necesitas crear un objeto [BlockBuilder](/mods/contenttweaker/API/block/BlockBuilder) .  
-Una vez que tengas eso puedes establecer las propiedades más simples en un patrón de constructor.
+For creating blocks you need to create a [BlockBuilder](/mods/contenttweaker/API/block/BlockBuilder) object.  
+Once you have that you can set most simple properties in a builder pattern.
 
-Entonces puedes llamar directamente a `build(name)` en él y ser hecho si quieres crear un bloque básico.  
-O podría especializar el constructor usando `withType` y proporcionar una clase de constructor especializada, por ejemplo [BuilderStairs](/mods/contenttweaker/API/block/stairs/BlockBuilderStairs) o [BlockBuilderPillarRotatable](/mods/contenttweaker/API/block/pillar/BlockBuilderPillarRotatable). Revisa sus respectivas páginas para ver qué características adicionales ofrecen. Tenga en cuenta que una vez que haga la llamada withType, no hay vuelta atrás, así que establezca todas las propiedades básicas antes de esa llamada.
+You could then directly call `build(name)` on it and be done if you want to create a basic block.  
+Or you could specialize the builder using `withType` and provide a specialized builder class, for example [BuilderStairs](/mods/contenttweaker/API/block/stairs/BlockBuilderStairs) or [BlockBuilderPillarRotatable](/mods/contenttweaker/API/block/pillar/BlockBuilderPillarRotatable). Check their respective pages to see what additional features they offer. Be aware that once you do the withType call, there is no going back, so set all basic properties before that call.
 
-Recuerda lo que hagas, al final de la cadena **necesitas una `build(name)` llamada**, ¡ya que de lo contrario no pasará nada!
+Remember, whatever you do, at the end of the chain you **need a `build(name)` call**, since otherwise nothing will happen!
 
-Basta hablar, quieres un ejemplo de copia/pega, ¿verdad?
+Enough spoken, you want a copy/paste example, do you?
 
 ```zenscript
 #loader contenttweaker
 
 import mods.contenttweaker.block.BlockBuilder;
-importar mods.contenttweaker.block.stairs.BlockBuilderStairs;
-importar mods.contenttweaker.block.basic.BlockBuilderBasic;
-importar mods.contenttweaker.block.pillar.BlockBuilderPillarRotable;
+import mods.contenttweaker.block.stairs.BlockBuilderStairs;
+import mods.contenttweaker.block.basic.BlockBuilderBasic;
+import mods.contenttweaker.block.pillar.BlockBuilderPillarRotatable;
 
 
-//La manera más simple, usa el IRON
+//The simplest way, uses blockamterial IRON
 new BlockBuilder()
-    //Will delegar en el Constructor Básico
-    . uild("generic_block");
+    //Will delegate to the Basic Builder
+    .build("generic_block");
 
 
-//Establece un material de bloque diferente.
-nuevo BlockBuilder(<blockmaterial:earth>)
+//Sets a different block material.
+new BlockBuilder(<blockmaterial:earth>)
     .withType<BlockBuilderBasic>()
-    . uild("earth_like_block");
+    .build("earth_like_block");
 
 
-//El Pilar Tipo es básicamente el mismo que los registros, una textura en la parte superior/inferior y otra para los lados.
-//Se puede rotar en todos los ejes, al igual que los registros.
-//Los nombres de texturas por defecto serán "block_name" + "end", "_sides"
+//The Pillar Type is basically the same as logs, one texture on top/bottom and one for the sides.
+//Can be rotated on all axes, just like logs.
+//Texture names by default will be "block_name" + "end", "_sides"
 new BlockBuilder()
     .withType<BlockBuilderPillarRotatable>()
     .build("preset_pillar_rotatable_noarg");
 
 
 //Stairs.
-//Tiene 3 Texturas, arriba, abajo, lados, por defecto serán "block_name" + "_top", "_bottom", "_sides"
+//Has 3 Textures, top, bottom, sides, by default they will be "block_name" + "_top", "_bottom", "_sides"
 new BlockBuilder()
     .withType<BlockBuilderStairs>()
     .build("stairs_noarg");
 ```
 
 
-## Elementos
+## Items
 
-Para objetos que más o menos haces lo mismo, pero esta vez necesitas un [ItemBuilder](/mods/contenttweaker/API/item/ItemBuilder).  
-Puedes de nuevo, usar un `build(name)` directamente, o cambiar a una versión especializada usando `withType`.  
-En el momento de esta escritura sólo existe [ItemBuilderTool](/mods/contenttweaker/API/item/tool/ItemBuilderTool), sin embargo.
+For items you more or less do the same, but this time you need an [ItemBuilder](/mods/contenttweaker/API/item/ItemBuilder).  
+You can again, either use a `build(name)` directly, or switch to a specialized version using `withType`.  
+At the time of this writing there only exists [ItemBuilderTool](/mods/contenttweaker/API/item/tool/ItemBuilderTool), though.
 
-Recuerda lo que hagas, al final de la cadena **necesitas una `build(name)` llamada**, ¡ya que de lo contrario no pasará nada!
+Remember, whatever you do, at the end of the chain you **need a `build(name)` call**, since otherwise nothing will happen!
 
-Basta hablar, quieres un ejemplo de copia/pega, ¿verdad?
+Enough spoken, you want a copy/paste example, do you?
 ```zenscript
 #loader contenttweaker
 
 import mods.contenttweaker.item.ItemBuilder;
-importar mods.contenttweaker.item.tool.ItemBuilderTool;
+import mods.contenttweaker.item.tool.ItemBuilderTool;
 
-//La forma más sencilla de crear artículos.
+//The simplest way of creating items.
 new ItemBuilder().build("generic_item");
 new ItemBuilder().build("generic_item_2");
 new ItemBuilder().build("generic_item_3");
 
 
-//Con propiedades
+//With setting properties
 new ItemBuilder()
-    . ithMaxStackSize(16) //MaxStackSize y MaxDamage se contradicen entre sí, así que sólo usa 1
-    . uild("other_item");
+    .withMaxStackSize(16) //MaxStackSize and MaxDamage contradict each other, so only use 1
+    .build("other_item");
 
 
-//Si quieres herramientas necesitarás configurar el tipo.
-//Desde el momento de ajustar el tipo que cambiará de contexto, por lo que los otros métodos ya no estarán disponibles.
-//Esto significa que necesita establecer la durabilidad y _before_ la llamada withType.
-nuevo ItemBuilder()
+//If you want tools you'll need to set the type.
+//From the moment of setting the type you will switch contexts, so the other methods will no longer be available.
+//That means, that you need to set durability and the like _before_ the withType call.
+new ItemBuilder()
     .withMaxDamage(100)
     .withType<ItemBuilderTool>()
-    . ithToolType(<tooltype:axe>, 1) //hacha cosecha nivel = 1
-    .withToolType(<tooltype:shovel>, 3, 4. F) //pala cosecha nivel 3 y destruye velocidad 4.0
-    . uild("mi_herramienta");
+    .withToolType(<tooltype:axe>, 1) //Axe harvest level = 1
+    .withToolType(<tooltype:shovel>, 3, 4.0F) //Shovel harvest level 3 and destroy speed 4.0
+    .build("my_tool");
 
 
 
-///Si desea una herramienta que haga daño, también puede utilizar el tipo de herramienta
-nuevo ItemBuilder()
-    . ithMaxDamage(100)
-    . ithType<ItemBuilderTool>()
+//If you want a tool that does damage, you can also use the tool type
+new ItemBuilder()
+    .withMaxDamage(100)
+    .withType<ItemBuilderTool>()
     .withAttackDamage(10.0F)
-    .withAttackSpeed(5. F)
-    .withDurabilityCostAttack(1) //Por defecto: 2
+    .withAttackSpeed(5.0F)
+    .withDurabilityCostAttack(1) //By default: 2
     .build("my_mace");
 
 ```
 
-## Nombres
-Entonces, ¿cómo harías para dar nombres apropiados a los artículos?  
-Para eso, necesitas un archivo de idioma.  
-En el momento de escribir CoT aún no lo creó para ya, así que necesitarás crearlo tú mismo.  
-En tu paquete de recursos, encuentra la carpeta `assets/contenttweaker` .  
-En ella, cree una carpeta llamada `lang` si aún no existe, y crear un archivo llamado `es_us. hijo` allí.  
-Recomiendo comenzar siempre con el en_us, ya que eso es a lo que volverá el juego si no puede encontrar el nombre para otro idioma. Después, siéntete libre de repetir esto con otros códigos de lang también.
+## Names
+So, how would you go about giving items proper names?  
+For that, you need a lang file.  
+At the time of this writing CoT did not yet create that one for ya, so you will need to create it yourself.  
+In your resource pack, find the `assets/contenttweaker` folder.  
+In there, create a folder named `lang` if it does not yet exist, and create a file named `en_us.json` in there.  
+I recommend always starting with the en_us one, since that is what the game will fall back to if it cannot find the name for another language. Afterwards feel free to repeat this with other lang codes as well.
 
-Allí tendrá que crear un mapa Key-Value para sus entradas. Las claves, también llamadas claves de traducción, o en versiones anteriores nombre no localizado, dependen del nombre del bloque/elemento que usaste y se verán como
+In there you will have to create a Key-Value map for your entries. The keys, also called Translation keys, or in earlier versions unlocalized Name, are dependent on the name of the block/item you used, and they will look like
 ```
 "<block|item>.contenttweaker.<the_name_you_gave_them>"
 ```
-Para el valor, puedes establecer como el elemento se llama en ese lugar. Si no estás seguro de la sintaxis, revisa el ejemplo de abajo, o prueba un Validador JSON si tienes la sintaxis abajo.
+For the value, you can set how the item is named ingame in there. If you are unsure about the syntax, check the example below, or try a JSON Validator if you got the syntax down.
 
 
 TLDR: `<resoruce_pack>/assets/contenttweaker/lang/en_us.json`.
 ```
 {
   "block.contenttweaker.generic_block": "Generic Block",
-  "item.contenttweaker.generic_item": "Genérico Item",
-  "item.contenttweaker.generic_item_2": "Genérico Item the 2nd",
-  "item.contenttweaker.generic_item_3": "Genérico Item el encantado"
+  "item.contenttweaker.generic_item": "Generic Item",
+  "item.contenttweaker.generic_item_2": "Generic Item the 2nd",
+  "item.contenttweaker.generic_item_3": "Generic Item the charmed one"
 }
 ```
