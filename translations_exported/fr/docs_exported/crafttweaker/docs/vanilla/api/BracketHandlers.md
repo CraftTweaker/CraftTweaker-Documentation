@@ -1,14 +1,14 @@
-# Gestionnaires de tranches
+# BracketHandlers
 
-Cette classe a été ajoutée par un mod avec le mod-id `crafttweaker`. Vous devez donc avoir ce mod installé si vous voulez utiliser cette fonctionnalité.
+This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
 
-## Importation de la classe
-Il pourrait vous être nécessaire d'importer le paquet si vous rencontrez des problèmes (comme lancer un tableau), alors mieux être sûr que désolé et ajouter l'importation.
+## Importing the class
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
 ```zenscript
 crafttweaker.api.BracketHandlers
 ```
 
-## Méthodes
+## Methods
 ### getBlockMaterial
 
 Obtient le [crafttweaker.api.block.material.MCMaterial](/vanilla/api/block/material/MCMaterial) fourni. Lance une exception si elle est introuvable.
@@ -24,9 +24,9 @@ crafttweaker.api.BracketHandlers.getBlockMaterial(tokens as String);
 crafttweaker.api.BracketHandlers.getBlockMaterial("earth");
 ```
 
-| Paramètre | Type de texte        | Libellé                                |
-| --------- | -------------------- | -------------------------------------- |
-| jetons    | Chaîne de caractères | Ce que vous écririez dans l'appel BEP. |
+| Parameter | Type   | Description                            |
+| --------- | ------ | -------------------------------------- |
+| tokens    | String | Ce que vous écririez dans l'appel BEP. |
 
 
 ### getBlockState
@@ -45,9 +45,9 @@ crafttweaker.api.BracketHandlers.getBlockState(tokens as String);
 crafttweaker.api.BracketHandlers.getBlockState("minecraft:acacia_planks");
 ```
 
-| Paramètre | Type de texte        | Libellé                                               |
-| --------- | -------------------- | ----------------------------------------------------- |
-| jetons    | Chaîne de caractères | L'emplacement des ressources et les variantes du bloc |
+| Parameter | Type   | Description                                           |
+| --------- | ------ | ----------------------------------------------------- |
+| tokens    | String | L'emplacement des ressources et les variantes du bloc |
 
 
 ### getDirectionAxis
@@ -65,9 +65,9 @@ crafttweaker.api.BracketHandlers.getDirectionAxis(tokens as String);
 crafttweaker.api.BracketHandlers.getDirectionAxis("x");
 ```
 
-| Paramètre | Type de texte        | Libellé                                               |
-| --------- | -------------------- | ----------------------------------------------------- |
-| jetons    | Chaîne de caractères | La direction de l'emplacement des ressources de l'axe |
+| Parameter | Type   | Description                                           |
+| --------- | ------ | ----------------------------------------------------- |
+| tokens    | String | La direction de l'emplacement des ressources de l'axe |
 
 
 ### Obtenir Effet
@@ -85,9 +85,9 @@ crafttweaker.api.BracketHandlers.getEffect(tokens as String);
 crafttweaker.api.BracketHandlers.getEffect("minecraft:haste");
 ```
 
-| Paramètre | Type de texte        | Libellé                                  |
-| --------- | -------------------- | ---------------------------------------- |
-| jetons    | Chaîne de caractères | L'emplacement de la ressource de l'effet |
+| Parameter | Type   | Description                              |
+| --------- | ------ | ---------------------------------------- |
+| tokens    | String | L'emplacement de la ressource de l'effet |
 
 
 ### format@@0 getEntityClassification
@@ -105,9 +105,9 @@ crafttweaker.api.BracketHandlers.getEntityClassification(tokens as String);
 crafttweaker.api.BracketHandlers.getEntityClassification("monster");
 ```
 
-| Paramètre | Type de texte        | Libellé                                |
-| --------- | -------------------- | -------------------------------------- |
-| jetons    | Chaîne de caractères | Emplacement des ressources de l'entité |
+| Parameter | Type   | Description                            |
+| --------- | ------ | -------------------------------------- |
+| tokens    | String | Emplacement des ressources de l'entité |
 
 
 ### getEntityType
@@ -125,9 +125,9 @@ crafttweaker.api.BracketHandlers.getEntityType(tokens as String);
 crafttweaker.api.BracketHandlers.getEntityType("minecraft:pig");
 ```
 
-| Paramètre | Type de texte        | Libellé                                   |
-| --------- | -------------------- | ----------------------------------------- |
-| jetons    | Chaîne de caractères | L'emplacement de la ressource de l'entité |
+| Parameter | Type   | Description                               |
+| --------- | ------ | ----------------------------------------- |
+| tokens    | String | L'emplacement de la ressource de l'entité |
 
 
 ### getFluidStack
@@ -145,9 +145,9 @@ crafttweaker.api.BracketHandlers.getFluidStack(tokens as String);
 crafttweaker.api.BracketHandlers.getFluidStack("minecraft:water");
 ```
 
-| Paramètre | Type de texte        | Libellé                               |
-| --------- | -------------------- | ------------------------------------- |
-| jetons    | Chaîne de caractères | L'emplacement des ressources du Fluid |
+| Parameter | Type   | Description                           |
+| --------- | ------ | ------------------------------------- |
+| tokens    | String | L'emplacement des ressources du Fluid |
 
 
 ### getItem
@@ -156,7 +156,7 @@ Récupère l'élément en fonction du nom du registre. Lance une erreur s'il ne 
 
  Renvoie : `L'élément trouvé`
 
-Type de retour : [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
+Return type: [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
 
 ```zenscript
 <item:minecraft:dirt>
@@ -165,9 +165,9 @@ crafttweaker.api.BracketHandlers.getItem(tokens as String);
 crafttweaker.api.BracketHandlers.getItem("minecraft:dirt");
 ```
 
-| Paramètre | Type de texte        | Libellé                                  |
-| --------- | -------------------- | ---------------------------------------- |
-| jetons    | Chaîne de caractères | Emplacement de la ressource de l'élément |
+| Parameter | Type   | Description                              |
+| --------- | ------ | ---------------------------------------- |
+| tokens    | String | Emplacement de la ressource de l'élément |
 
 
 ### format@@0 getPotion
@@ -179,9 +179,9 @@ Type de retour : [crafttweaker.api.potion.MCPotion](/vanilla/api/potions/MCPotio
 crafttweaker.api.BracketHandlers.getPotion(tokens comme String);
 ```
 
-| Paramètre | Type de texte        | Libellé                    |
-| --------- | -------------------- | -------------------------- |
-| jetons    | Chaîne de caractères | Aucune description fournie |
+| Parameter | Type   | Description             |
+| --------- | ------ | ----------------------- |
+| tokens    | String | No description provided |
 
 
 ### Obtenir un gestionnaire de recettes
@@ -197,9 +197,9 @@ crafttweaker.api.BracketHandlers.getRecipeManager(tokens as String);
 crafttweaker.api.BracketHandlers.getRecipeManager("minecraft:crafting");
 ```
 
-| Paramètre | Type de texte        | Libellé                                                  |
-| --------- | -------------------- | -------------------------------------------------------- |
-| jetons    | Chaîne de caractères | L'emplacement des ressources du Gestionnaire de recettes |
+| Parameter | Type   | Description                                              |
+| --------- | ------ | -------------------------------------------------------- |
+| tokens    | String | L'emplacement des ressources du Gestionnaire de recettes |
 
 
 ### Obtenir la localisation des ressources
@@ -217,9 +217,9 @@ crafttweaker.api.BracketHandlers.getResourceLocation(tokens as String);
 crafttweaker.api.BracketHandlers.getResourceLocation("minecraft:dirt");
 ```
 
-| Paramètre | Type de texte        | Libellé                       |
-| --------- | -------------------- | ----------------------------- |
-| jetons    | Chaîne de caractères | L'emplacement de la ressource |
+| Parameter | Type   | Description                   |
+| --------- | ------ | ----------------------------- |
+| tokens    | String | L'emplacement de la ressource |
 
 
 ### format@@0 getTag
@@ -237,9 +237,9 @@ crafttweaker.api.BracketHandlers.getTag(tokens as String);
 crafttweaker.api.BracketHandlers.getTag("tag:minecraft:wool");
 ```
 
-| Paramètre | Type de texte        | Libellé                           |
-| --------- | -------------------- | --------------------------------- |
-| jetons    | Chaîne de caractères | Emplacement des ressources du tag |
+| Parameter | Type   | Description                       |
+| --------- | ------ | --------------------------------- |
+| tokens    | String | Emplacement des ressources du tag |
 
 
 ### Formatage de texte
@@ -251,9 +251,9 @@ Type de retour : [crafttweaker.api.text.TextFormatting](/crafttweaker/api/text/T
 crafttweaker.api.BracketHandlers.getTextFormatting(tokens as String);
 ```
 
-| Paramètre | Type de texte        | Libellé                    |
-| --------- | -------------------- | -------------------------- |
-| jetons    | Chaîne de caractères | Aucune description fournie |
+| Parameter | Type   | Description             |
+| --------- | ------ | ----------------------- |
+| tokens    | String | No description provided |
 
 
 
