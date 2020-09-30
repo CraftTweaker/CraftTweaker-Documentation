@@ -8,10 +8,10 @@
 crafttweaker.api.commands.custom.MCCommandSource
 ```
 
-## Методы
+## Methods
 ### getName
 
-Тип возврата: строка
+Return type: String
 
 ```zenscript
 myMCCommandSource.getName();
@@ -49,22 +49,22 @@ myMCCommandSource.getTargetedEntity();
 myMCCommandSource.getTeamNames();
 ```
 
-### уровень разрешений
+### hasPermissionLevel
 
-Тип возврата: логическое значение
+Return type: boolean
 
 ```zenscript
 myMCCommandSource.hasPermissionLevel(p_197034_1_ как int);
 ```
 
-| Параметр      | Тип | Описание             |
+| Параметр      | Тип | Description          |
 | ------------- | --- | -------------------- |
 | p_197034_1_ | int | Описание отсутствует |
 
 
 ### isPlayer
 
-Тип возврата: логическое значение
+Return type: boolean
 
 ```zenscript
 myMCCommandSource.isPlayer();
@@ -76,9 +76,9 @@ myMCCommandSource.isPlayer();
 myMCCommandSource.sendErrorMessage(сообщение как строка);
 ```
 
-| Параметр  | Тип    | Описание             |
-| --------- | ------ | -------------------- |
-| сообщение | String | Описание отсутствует |
+| Параметр | Тип    | Description          |
+| -------- | ------ | -------------------- |
+| message  | String | Описание отсутствует |
 
 
 ### sendFeedback
@@ -87,10 +87,10 @@ myMCCommandSource.sendErrorMessage(сообщение как строка);
 myMCCommandSource.sendFeedback(обратная связь как String, allowLogging как boolean);
 ```
 
-| Параметр                  | Тип     | Описание             |
-| ------------------------- | ------- | -------------------- |
-| обратная связь            | String  | Описание отсутствует |
-| разрешить ведение журнала | boolean | Описание отсутствует |
+| Параметр       | Тип     | Description          |
+| -------------- | ------- | -------------------- |
+| обратная связь | String  | Описание отсутствует |
+| allowLogging   | boolean | Описание отсутствует |
 
 
 ### обратная связь отключена
@@ -109,7 +109,7 @@ myMCCommandSource.withFeedbackDisabled();
 myMCCommandSource.withMinPermissionLevel(p_197026_1_ как int);
 ```
 
-| Параметр      | Тип | Описание             |
+| Параметр      | Тип | Description          |
 | ------------- | --- | -------------------- |
 | p_197026_1_ | int | Описание отсутствует |
 
@@ -122,7 +122,7 @@ myMCCommandSource.withMinPermissionLevel(p_197026_1_ как int);
 myMCCommandSource.withPermissionLevel(p_197033_1_ как int);
 ```
 
-| Параметр      | Тип | Описание             |
+| Параметр      | Тип | Description          |
 | ------------- | --- | -------------------- |
 | p_197033_1_ | int | Описание отсутствует |
 
