@@ -1,27 +1,27 @@
-# Zasilane rzeczy :: Klasa Tweakera
+# Powered Thingies :: Tweaker Class
 
-To jest punkt wejścia używany do uzyskania instancji pojedynczych klas `Tweaker` dla każdej maszyny.
+This is the entry point used to get instances of the individual `Tweaker` classes for each machine.
 
-### Importowanie
+### Importing
 
 ```zenscript
-importuj mods.poweredthingies.Tweaker,
+import mods.poweredthingies.Tweaker;
 ```
 
-### Uzyskiwanie specyficznych dla maszyny Tweakerów
+### Getting Machine Specific Tweakers
 
 ```zenscript
 var compoundMaker = Tweaker.compoundTweaker();
-fluidCompound = Tweaker.fluidCompoundTweaker();
-fluidBurnerFuel = Tweaker.fluidBurnerFuelTweaker();
-fluidBurnerCoolant = Tweaker.fluidBurnerCoolant ();
-produktów var CompoundProducer = Tweaker. temCompoundProducerTweaker();
-spalarnia var = Tweaker.incineratorTweaker();
+var fluidCompound = Tweaker.fluidCompoundTweaker();
+var fluidBurnerFuel = Tweaker.fluidBurnerFuelTweaker();
+var fluidBurnerCoolant = Tweaker.fluidBurnerCoolantTweaker();
+var itemCompoundProducer = Tweaker.itemCompoundProducerTweaker();
+var incinerator = Tweaker.incineratorTweaker();
 var itemLiquefier = Tweaker.itemLiquefierTweaker();
 var poweredKiln = Tweaker.poweredKilnTweaker();
-var powerderMaker = Tweaker.powderMakerTweaker();
+var powderMaker = Tweaker.powderMakerTweaker();
 ```
 
-### Powody nawet istnienia tej klasy
+### Reasons why this class even exists
 
-Głównie dlatego, że uwielbiam używać klas bazowych i Kotlina, a oba te rzeczy nie importują się dobrze w CT. Albo jestem zbyt opóźniony, aby to zadziałać. Więc... utknęłeś na to zamiast mieć bezpośredni dostęp do poszczególnych klas dla każdej maszyny.
+Mainly because I love using base classes and Kotlin and both those things don't import well in CT. Or I'm too retarded to make it work. So... you are stuck with using this instead of having direct access to individual classes for each machine.
