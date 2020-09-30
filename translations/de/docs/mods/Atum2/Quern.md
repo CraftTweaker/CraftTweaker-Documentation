@@ -1,49 +1,49 @@
 # Quern
 
-## Paket
+## Package
 `mods.atum.Quern;`
 
-## Rezept hinzufügen
+## Adding a Recipe
 
-`mods.atum.Quern.addRecipe(Eingabe, Ausgabe, Drehung);`
+`mods.atum.Quern.addRecipe(input, output, rotations);`
 
 - `input` [IItemStack](/vanilla/api/items/IItemStack)
 - `output` [IItemStack](/vanilla/api/items/IItemStack)
-- `Drehungen` Jede Zahl über 0
+- `rotations` Any number above 0
 
-Fügt ein Rezept mit der angegebenen Eingabe & Ausgabe hinzu, das die angegebenen Drehungen benötigt, um die Abfrage abzuschließen
+Adds a recipe with the specified input & output, that takes the specified rotations to complete querning
 
 ```zenscript
 mods.atum.Quern.addRecipe(<item:atum:fertile_soil>, <item:atum:fertile_soil_pile>, 3);
 ```
 
-## Rezept entfernen
+## Removing a Recipe
 
-### Rezepte durch Ausgabe entfernen
+### Remove Recipes by Output
 
 `mods.atum.Quern.removeRecipeByOutput(output);`
 
 - `output` [IItemStack](/vanilla/api/items/IItemStack)
 
-Entfernt alle Rezepte, bei denen das Ausgabeergebnis der angegebene [IItemStack](/vanilla/api/items/IItemStack) ist.
+Removes all recipes where the output result is the provided [IItemStack](/vanilla/api/items/IItemStack).
 
 ```zenscript
 mods.atum.Quern.removeRecipeByOutput(<item:atum:emmer_flour>);
 ```
 
-### Rezepte durch Ausgabe & Eingang entfernen
+### Remove Recipes by Output & Input
 
 `mods.atum.Quern.removeRecipeByOutputInput(output, input);`
 
 - `output` [IItemStack](/vanilla/api/items/IItemStack)
 - `input` [IItemStack](/vanilla/api/items/IItemStack)
 
-Entfernt das spezifische Rezept mit der angegebenen Ausgabe & Eingabe
+Removes the specific recipe, with the specified output & input
 
 ```zenscript
 mods.atum.Quern.removeRecipeByOutputInput(<item:atum:emmer_flour>, <item:atum:emmer>);
 ```
 
-### Andere Löschmethoden
+### Other removal methods
 
-Siehe [Rezeptmanager](/recipes/recipe_managers) für andere Möglichkeiten, Quernenrezepte zu entfernen
+See [Recipe Managers](/recipes/recipe_managers) for other ways to remove Quern recipes
