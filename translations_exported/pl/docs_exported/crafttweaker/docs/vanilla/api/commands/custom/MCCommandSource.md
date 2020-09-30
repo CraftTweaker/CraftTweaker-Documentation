@@ -1,17 +1,17 @@
 # Źródło polecenia MCCommand
 
-Ta klasa została dodana przez moda z mod-id `crafttweaker`. Więc musisz zainstalować tę modyfikację, jeśli chcesz używać tej funkcji.
+This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
 
-## Importowanie klasy
-Może być wymagane zaimportowanie pakietu, jeśli napotkasz jakiekolwiek problemy (np. rzucanie tablicy), tak aby były bezpieczne niż przepraszamy i dodaj import.
+## Importing the class
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
 ```zenscript
 crafttweaker.api.commands.custom.MCCommandSource
 ```
 
-## Metody
+## Methods
 ### getName
 
-Typ zwrotu: Ciąg
+Return type: String
 
 ```zenscript
 myMCCommandSource.getName();
@@ -49,22 +49,22 @@ Typ zwrotu: Kolekcja&lt;String&gt;
 myMCCommandSource.getTeamNames();
 ```
 
-### Poziom hasPermissionLevel
+### hasPermissionLevel
 
-Typ zwrotu: logiczny
+Return type: boolean
 
 ```zenscript
 myMCCommandSource.hasPermissionLevel(p_197034_1_ jako int);
 ```
 
-| Parametr     | Typ    | Opis             |
-| ------------ | ------ | ---------------- |
-| p_197034_1 | odcień | Nie podano opisu |
+| Parameter    | Type | Description             |
+| ------------ | ---- | ----------------------- |
+| p_197034_1 | int  | No description provided |
 
 
 ### isPlayer
 
-Typ zwrotu: logiczny
+Return type: boolean
 
 ```zenscript
 myMCCommandSource.isPlayer();
@@ -76,9 +76,9 @@ myMCCommandSource.isPlayer();
 myMCCommandSource.sendErrorMessage(wiadomość jako String);
 ```
 
-| Parametr  | Typ         | Opis             |
-| --------- | ----------- | ---------------- |
-| wiadomość | Ciąg znaków | Nie podano opisu |
+| Parameter | Type   | Description             |
+| --------- | ------ | ----------------------- |
+| message   | String | No description provided |
 
 
 ### sendFeedback
@@ -87,10 +87,10 @@ myMCCommandSource.sendErrorMessage(wiadomość jako String);
 myMCCommandSource.sendFeedback(feedback as String, allow Logging as boolean);
 ```
 
-| Parametr                | Typ         | Opis             |
-| ----------------------- | ----------- | ---------------- |
-| opinia                  | Ciąg znaków | Nie podano opisu |
-| zezwól na rejestrowanie | boolean     | Nie podano opisu |
+| Parameter    | Type    | Description             |
+| ------------ | ------- | ----------------------- |
+| opinia       | String  | No description provided |
+| allowLogging | boolean | No description provided |
 
 
 ### opinia wyłączona
@@ -109,9 +109,9 @@ Typ zwrotu: [crafttweaker.api.commands.custom.MCCommandSource](/vanilla/api/comm
 myMCCommandSource.withMinPermissionLevel(p_197026_1_ jako int);
 ```
 
-| Parametr      | Typ    | Opis             |
-| ------------- | ------ | ---------------- |
-| p_197026_1_ | odcień | Nie podano opisu |
+| Parameter     | Type | Description             |
+| ------------- | ---- | ----------------------- |
+| p_197026_1_ | int  | No description provided |
 
 
 ### Poziom withPermissionLevel
@@ -122,9 +122,9 @@ Typ zwrotu: [crafttweaker.api.commands.custom.MCCommandSource](/vanilla/api/comm
 myMCCommandSource.withPermissionLevel(p_197033_1_ jako int);
 ```
 
-| Parametr      | Typ    | Opis             |
-| ------------- | ------ | ---------------- |
-| p_197033_1_ | odcień | Nie podano opisu |
+| Parameter     | Type | Description             |
+| ------------- | ---- | ----------------------- |
+| p_197033_1_ | int  | No description provided |
 
 
 
