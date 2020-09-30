@@ -1,64 +1,64 @@
-# Килн
+# Kiln
 
-## Базовый рецепт
+## Basic Recipe
 
-* Добавляет Килн Рецепт. Входы *ДОЛЖНЫ* имеют связанный с ними блок.
+* Adds Kiln Recipe - inputs *MUST* have a block associated with them.
 
 ```zenscript
-mods.betterwithmods.Kiln.add(IIngredient input, IItemStack[] вывод);
-//Примеры
+mods.betterwithmods.Kiln.add(IIngredient input, IItemStack[] output);
+//Examples
 mods.betterwithmods.Kiln.add(<minecraft:fence>,[<minecraft:stick>,<minecraft:stick>]);
 ```
 
-## Удаление по вводу
+## Removal by input
 
-* Удалить рецепт на основе вводимого ингредиента
+* Remove a recipe based on the input ingredient
 
 ```zenscript
-mods.betterwithmods.Kiln.remove(Ввод Ingredient);
+mods.betterwithmods.Kiln.remove(IIngredient input);
 ```
 
-## Удаление по выходу
+## Removal by output
 
-* Удалить рецепт на основе вывода
+* Remove a recipe based on the output
 
 ```zenscript
 mods.betterwithmods.Kiln.remove(IItemStack[] outputs);
 ```
 
-## Удалить все
+## Remove all
 
-* Удалить все рецепты
+* Remove all recipes
 
 ```zenscript
 mods.betterwithmods.Kiln.removeAll();
 ```
 
-## Строитель
+## Builder
 
-В Kiln есть коллектор рецептов, который позволяет более точно контролировать рецепты. Все предыдущие методы являются просто короткими отрезками для использования конструктора.
+The Kiln has a recipe builder that allows more precise control over the recipes. All previous methods are simply short cuts to using the builder.
 
-* Создавать нового конструктора Kiln. `mods.betterwithmods.Kiln.builder()`
+* To create a new Kiln builder. `mods.betterwithmods.Kiln.builder()`
 
-* Методы Килна
+* Kiln methods
      
-     * Настраивает входы и выходные данные рецепта  
+     * Sets up the inputs and outputs of the recipe  
               zenscript
-              buildRecipe(IIngredient[] входов, IItemStack[] вывод)
+              buildRecipe(IIngredient[] inputs, IItemStack[] outputs)
      
-     * Установите требования к отоплению рецепта. Тепло, используется, чтобы проверить, можно ли сделать рецепт в украденном или неукраденном котле. Неукрашенное тепло = 1, Сохраненное тепло = 2. Вы можете добавить собственные источники тепла, а также даже пользовательские уровни тепла, используя [Реестр Тепловых](/Mods/Modtweaker/BetterWithMods/HeatRegistry/).  
+     * Set the Heat requirements of the recipe. Heat is used to check if the recipe can be made in a stoked or unstoked cauldron. Unstoked heat = 1, Stoked heat = 2. You can add custom heat sources, and even custom heat levels using the [Heat Registry](/Mods/Modtweaker/BetterWithMods/HeatRegistry/).  
               zenscript
-              setHeat(внутреннее тепла)
+              setHeat(int heat)
      
-     * Установите рецепт, чтобы игнорировать значение тепла и создать всё равно  
+     * Set the recipe to ignore the heat value and craft anyways  
               zenscript
-              setIgnoreHeat(логическое игнорирование)
+              setIgnoreHeat(boolean ignoreHeat)
      
-     * Завершить рецепт и добавить его в игру  
+     * Finalize the recipe and add it to the game  
               zenscript
               build()
 
-### Пример использования конструктора
+### Example builder usage
 
 ```zenscript
 mods.betterwithmods.Kiln.builder()
@@ -67,14 +67,14 @@ mods.betterwithmods.Kiln.builder()
 .build();
 ```
 
-## Структурный блок
+## Structure Block
 
-Kiln - это многоблочный блок, из которого он изготовлен; Это позволяет зарегистрировать блок, который может быть использован для создания структуры.
+The Kiln is a multiblock based on the block it is made of; This allows registering a block that can be used to create the structure.
 
-Вход ДОЛЖНО быть *блоком*
+Input MUST be a *Block*
 
 ```zenscript
-   mods.betterwithmods.Kiln.registerBlock(IItemStack);
+   mods.betterwithmods.Kiln.registerBlock(IItemStack input);
 
    mods.betterwithmods.Kiln.registerBlock(<minecraft:stonebrick>);
 ```
