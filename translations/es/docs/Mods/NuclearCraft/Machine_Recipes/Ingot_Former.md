@@ -1,14 +1,14 @@
-# Lingote antiguo
+# Ingot Former
 
-## Importando el Paquete
-`mods.nuclearcraft.ingot_ex`
+## Importing the Package
+`mods.nuclearcraft.ingot_former`
 
-## Añadiendo recetas
+## Adding Recipes
 ```zenscript
 mods.nuclearcraft.ingot_former.addRecipe([fluidInput, itemOutput, @Optional double timeMultiplier, @Optional double powerMultiplier, @Optional double processRadiation]);
 ```
 
-## Eliminando recetas
+## Removing Recipes
 ```zenscript
 mods.nuclearcraft.ingot_former.removeRecipeWithInput([fluidInput]);
 mods.nuclearcraft.ingot_former.removeRecipeWithOutput([itemOutput]);
