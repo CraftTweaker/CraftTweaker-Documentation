@@ -2,26 +2,26 @@
 
 Questa classe è stata aggiunta da una mod con ID `crafttweaker`. Perciò, è necessario avere questa mod installata per poter utilizzare questa funzione.
 
-## Importare la classe
+## Importing the class
 Potrebbe essere necessario importare il pacchetto, se si incontrano dei problemi (come castare un vettore), quindi meglio essere sicuri e aggiungere la direttiva di importazione.
 ```zenscript
 crafttweaker.api.event.entity.player.MCPlayerFlyableFallEvent
 ```
 
-## Costruttori
+## Constructors
 ```zenscript
 new crafttweaker.api.event.entity.player.MCPlayerFlyableFallEvent(handler as function.Consumer<crafttweaker.api.event.entity.player.MCPlayerFlyableFallEvent>);
 ```
-| Parametro | Tipo                                                                                                                                          | Descrizione                 |
+| Parameter | Type                                                                                                                                          | Description                 |
 | --------- | --------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------- |
 | handler   | function.Consumer<[crafttweaker.api.event.entity.player.MCPlayerFlyableFallEvent](/vanilla/api/event/entity/player/MCPlayerFlyableFallEvent)> | Nessuna descrizione fornita |
 
 
 
-## Metodi
+## Methods
 ### getDistance
 
-Restituisce fluttuante
+Returns float
 
 ```zenscript
 myMCPlayerFlyableFallEvent.getDistance();
@@ -29,7 +29,7 @@ myMCPlayerFlyableFallEvent.getDistance();
 
 ### getEntityPlayer
 
-Restituisce [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
+Returns [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
 
 ```zenscript
 myMCPlayerFlyableFallEvent.getEntityPlayer();
@@ -37,7 +37,7 @@ myMCPlayerFlyableFallEvent.getEntityPlayer();
 
 ### getMultiplier
 
-Restituisce fluttuante
+Returns float
 
 ```zenscript
 myMCPlayerFlyableFallEvent.getMultiplier();
@@ -45,17 +45,17 @@ myMCPlayerFlyableFallEvent.getMultiplier();
 
 ### getPlayer
 
-Restituisce: `Giocatore`
+Returns: `Player`
 
-Restituisce [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
+Returns [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
 
 ```zenscript
 myMCPlayerFlyableFallEvent.getPlayer();
 ```
 
-### hasRisultato
+### hasResult
 
-Determina se questo evento prevede un valore significativo del risultato. Nota: Gli eventi con l'annotazione HasResult avranno questo metodo automaticamente aggiunto per restituire true.
+Determines if this event expects a significant result value. Note: Events with the HasResult annotation will have this method automatically added to return true.
 
 Restituisce un booleano
 
@@ -63,11 +63,11 @@ Restituisce un booleano
 myMCPlayerFlyableFallEvent.hasResult();
 ```
 
-### isAnnullabile
+### isCancelable
 
-Determina se questa funzione è annullabile. Restituisce: `Se l'accesso a setAnnullato dovrebbe essere consentito
- Nota:
- Gli eventi con l'annotazione annullabile avranno questo metodo automaticamente aggiunto per restituire true.`
+Determine if this function is cancelable at all. Returns: `If access to setCanceled should be allowed
+ Note:
+ Events with the Cancelable annotation will have this method automatically added to return true.`
 
 Restituisce un booleano
 
@@ -75,9 +75,9 @@ Restituisce un booleano
 myMCPlayerFlyableFallEvent.isCancelable();
 ```
 
-### isAnnullato
+### isCanceled
 
-Determina se questo evento è stato annullato e dovrebbe interrompere l'esecuzione. Restituisce: `L'attuale stato annullato`
+Determine if this event is canceled and should stop executing. Returns: `The current canceled state`
 
 Restituisce un booleano
 
@@ -85,37 +85,37 @@ Restituisce un booleano
 myMCPlayerFlyableFallEvent.isCanceled();
 ```
 
-### setAnnullato
+### setCanceled
 
 ```zenscript
 myMCPlayerFlyableFallEvent.setCanceled(cancel as boolean);
 ```
 
-| Parametro | Tipo    | Descrizione                 |
+| Parameter | Type    | Description                 |
 | --------- | ------- | --------------------------- |
-| annulla   | boolean | Nessuna descrizione fornita |
+| cancel    | boolean | Nessuna descrizione fornita |
 
 
-### setDistanza
+### setDistance
 
 ```zenscript
-myMCPlayerFlyableFallEvent.setDistanze(distanza come float);
+myMCPlayerFlyableFallEvent.setDistance(distance as float);
 ```
 
-| Parametro | Tipo         | Descrizione                 |
-| --------- | ------------ | --------------------------- |
-| distanza  | galleggiante | Nessuna descrizione fornita |
+| Parameter | Type  | Description                 |
+| --------- | ----- | --------------------------- |
+| distance  | float | Nessuna descrizione fornita |
 
 
 ### setMultiplier
 
 ```zenscript
-myMCPlayerFlyableFallEvent.setMultiplier(moltiplicatore come float);
+myMCPlayerFlyableFallEvent.setMultiplier(multiplier as float);
 ```
 
-| Parametro      | Tipo         | Descrizione                 |
-| -------------- | ------------ | --------------------------- |
-| moltiplicatore | galleggiante | Nessuna descrizione fornita |
+| Parameter  | Type  | Description                 |
+| ---------- | ----- | --------------------------- |
+| multiplier | float | Nessuna descrizione fornita |
 
 
 
