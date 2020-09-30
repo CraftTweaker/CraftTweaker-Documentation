@@ -1,9 +1,9 @@
-# Mod Mobili Di MrCrayfish
+# MrCrayfish's Furniture Mod
 
-Arredamento Mod di MrCrayfish aggiunge pezzi unici di mobili che è possibile utilizzare per decorare le vostre costruzioni, alcuni di loro sono apparecchi e strumenti utilizzabili.
+MrCrayfish's Furniture Mod adds unique pieces of furniture that you can use to decorate your builds, some of them are useable appliances and implements.
 
-Anche se la documentazione include ricette predefinite, si prega di fare riferimento al libro di ricette mod per le ricette aggiornate.
+Although the documentation includes default recipes, please refer to the mod recipe book for the up to date recipes.
 
-# Nota Importante
+# Important Note
 
-Gli input sono abbinati solo all'id dell'elemento e i metadati, nbt viene ignorato.
+Inputs are matched only on item id and metadata, nbt is ignored.
