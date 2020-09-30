@@ -1,52 +1,52 @@
-# 组别类型
+# PartType
 
-PartType 可以被视为适合多个部分的组，例如 `个项目`
+A PartType can be seen as a group that several parts fit in, e.g. `items`
 
 ## 导入相关包
 
-如果您遇到任何问题，可能需要导入软件包，所以比抱歉更安全并添加导入。  
-`导入 mods.contenttweiner.PartType；`
+It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
+`import mods.contenttweaker.PartType;`
 
-## 正在获取此对象
+## Retrieving such an object
 
-您可以使用 [材料系统](/Mods/ContentTweaker/Materials/MaterialSystem/) 检索一个现有的 PartType 对象或创建一个全新的对象。  
-查阅下面的条目以了解如何创建一个新的 Part类型.
+You can use the [MaterialSystem](/Mods/ContentTweaker/Materials/MaterialSystem/) to either retrieve an existing PartType object or create an entirely new one.  
+Check out below entry to learn how to create a new PartType.
 
 <details>
-    <summary>以下类型已预先注册：</summary>
+    <summary>Following types are pre-registered:</summary>
     <ul>
-        <li>项目</li>
-        <li>封禁</li>
-        <li>矿石</li>
-        <li>流体</li>
-        <li>盔甲</li>
+        <li>item</li>
+        <li>block</li>
+        <li>ore</li>
+        <li>fluid</li>
+        <li>armor</li>
         <li>minecart</li>
     </ul>
 </details>
 
 ## ZenMethods
 
-您可以从 PartType检索以下信息：
+You can retrieve the following information from a PartType:
 
-| ZenMethod（ZenMethod） | 返回值类型  |
-| -------------------- | ------ |
-| getName()            | string |
+| ZenMethod | 返回值类型  |
+| --------- | ------ |
+| getName() | string |
 
-您可以在 PartType上设置以下信息：
+You can set the following information on a PartType:
 
-| ZenMethod（ZenMethod）          | 参数类型                                                                       |
-| ----------------------------- | -------------------------------------------------------------------------- |
-| setData(IPartDataPiece[…]数据)； | [IPartDataPiece](/Mods/ContentTweaker/Materials/Parts/PartDataPiece/)[] 数据 |
+| ZenMethod                       | 参数类型                                                                         |
+| ------------------------------- | ---------------------------------------------------------------------------- |
+| setData(IPartDataPiece[] data); | [IPartDataPiece](/Mods/ContentTweaker/Materials/Parts/PartDataPiece/)[] data |
 
-## 创建一个新的 PartType
+## Create a new PartType
 
-如果你出于任何原因需要注册一个新的 PartType，你需要知道两件事：
+If you, for whatever reason would ever need to register a new PartType, you will need to know two things:
 
-- 新配件类型的名称
+- What name the new partType will have
 - How [MaterialParts](/Mods/ContentTweaker/Materials/Materials/MaterialPart/) created from [Parts](/Mods/ContentTweaker/Materials/Parts/Part/) that are of this type will be registered
 
-第一个是简单的，它是一个字符串。  
-第二个是一个有点棘手的问题，它是一个将材料部件作为输入的函数：
+The first is simple, it's a string.  
+The second is a bit trickier, it's a function that takes a MaterialPart as input:
 
 ```zenscript
 #loader contenttweaker
