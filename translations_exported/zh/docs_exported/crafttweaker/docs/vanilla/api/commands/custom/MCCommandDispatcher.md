@@ -11,20 +11,20 @@ craftminstrer.api.commands.custom.MCCommandDispater
 ## 方法
 ### equals #等于
 
-返回类型：布尔值
+Return type: boolean
 
 ```zenscript
 myMCCommandDispatcher.equals(ao as Object);
 ```
 
-| 参数 | 类型 | 描述                      |
-| -- | -- | ----------------------- |
-| o  | 对象 | No description provided |
+| 参数 | 类型     | 描述                      |
+| -- | ------ | ----------------------- |
+| o  | Object | No description provided |
 
 
 ### 执行
 
-返回类型：int
+Return type: int
 
 ```zenscript
 myMCCommandDispatcher.execute(解析为craftbiner.api.commands.custom.MCParseResults);
@@ -36,7 +36,7 @@ myMCCommandDispatcher.execute(解析为craftbiner.api.commands.custom.MCParseRes
 
 
 
-返回类型：int
+Return type: int
 
 ```zenscript
 myMCCommandDispatcher.execute(输入 String, source as craftbiner.api.commands.custom.MCCommandSource);
@@ -44,12 +44,12 @@ myMCCommandDispatcher.execute(输入 String, source as craftbiner.api.commands.c
 
 | 参数        | 类型                                                                                                | 描述                      |
 | --------- | ------------------------------------------------------------------------------------------------- | ----------------------- |
-| input（输入） | 字符串[string]                                                                                       | No description provided |
+| input（输入） | String                                                                                            | No description provided |
 | 来源        | [craftminstrer.api.commands.custom.MCCommandSource](/vanilla/api/commands/custom/MCCommandSource) | No description provided |
 
 
 
-返回类型：int
+Return type: int
 
 ```zenscript
 myMCCommandDispatcher.execute(input as com.mojang.brigadier.StringReader, source as craftweeper.api.commands.custom.MCCommandSource);
@@ -80,9 +80,9 @@ myMCCommandDispatcher.findAmbiguities(消费者为craftweeper.api.commands.custo
 myMCCommandDispatcher.findNode(路径作为收藏集<String>)；
 ```
 
-| 参数 | 类型                           | 描述                      |
-| -- | ---------------------------- | ----------------------- |
-| 路径 | 收藏&lt;String&gt; | No description provided |
+| 参数   | 类型                           | 描述                      |
+| ---- | ---------------------------- | ----------------------- |
+| path | 收藏&lt;String&gt; | No description provided |
 
 
 ### getAllUsage
@@ -123,7 +123,7 @@ myMCCommandDispatcher.getComplitionPropositions(parse as craftmilever.api.comman
 | 参数     | 类型                                                                                              | 描述                      |
 | ------ | ----------------------------------------------------------------------------------------------- | ----------------------- |
 | parse  | [craftminstrer.api.commands.custom.MCParseResults](/vanilla/api/commands/custom/MCParseResults) | No description provided |
-| cursor | 整数                                                                                              | No description provided |
+| cursor | int                                                                                             | No description provided |
 
 
 ### getPath
@@ -163,7 +163,7 @@ myMCCommandDispatcher.getSmartUsage(节点为 craftmilever.api.commands.custom.M
 
 ### hashCode
 
-返回类型：int
+Return type: int
 
 ```zenscript
 myMCCommandDispatcher.hashCode();
@@ -177,10 +177,10 @@ myMCCommandDispatcher.hashCode();
 myMCCommandDispatcher.parse(命令 String, source as craftwiner.api.commands.custom.MCCommandSource);
 ```
 
-| 参数 | 类型                                                                                                | 描述                      |
-| -- | ------------------------------------------------------------------------------------------------- | ----------------------- |
-| 命令 | 字符串[string]                                                                                       | No description provided |
-| 来源 | [craftminstrer.api.commands.custom.MCCommandSource](/vanilla/api/commands/custom/MCCommandSource) | No description provided |
+| 参数      | 类型                                                                                                | 描述                      |
+| ------- | ------------------------------------------------------------------------------------------------- | ----------------------- |
+| command | String                                                                                            | No description provided |
+| 来源      | [craftminstrer.api.commands.custom.MCCommandSource](/vanilla/api/commands/custom/MCCommandSource) | No description provided |
 
 
 
@@ -190,10 +190,10 @@ myMCCommandDispatcher.parse(命令 String, source as craftwiner.api.commands.cus
 myMCCommandDispatcher.parse(command as com.mojang.brigadier.StringReader, source as craftweeper.api.commands.custom.MCCommandSource);
 ```
 
-| 参数 | 类型                                                                                                | 描述                      |
-| -- | ------------------------------------------------------------------------------------------------- | ----------------------- |
-| 命令 | com.mojang.brigadier.StringReader                                                                 | No description provided |
-| 来源 | [craftminstrer.api.commands.custom.MCCommandSource](/vanilla/api/commands/custom/MCCommandSource) | No description provided |
+| 参数      | 类型                                                                                                | 描述                      |
+| ------- | ------------------------------------------------------------------------------------------------- | ----------------------- |
+| command | com.mojang.brigadier.StringReader                                                                 | No description provided |
+| 来源      | [craftminstrer.api.commands.custom.MCCommandSource](/vanilla/api/commands/custom/MCCommandSource) | No description provided |
 
 
 ### 注册
@@ -204,9 +204,9 @@ myMCCommandDispatcher.parse(command as com.mojang.brigadier.StringReader, source
 myMCCommandDispatcher.register(命令作为craftmilever.api.commands.custom.MCLiteralArgumentBuilder);
 ```
 
-| 参数 | 类型                                                                                                                | 描述                      |
-| -- | ----------------------------------------------------------------------------------------------------------------- | ----------------------- |
-| 命令 | [crafttbower.api.commands.custom.MCLiteralArgumentBuilder](/vanilla/api/commands/custom/MCLiteralArgumentBuilder) | No description provided |
+| 参数      | 类型                                                                                                                | 描述                      |
+| ------- | ----------------------------------------------------------------------------------------------------------------- | ----------------------- |
+| command | [crafttbower.api.commands.custom.MCLiteralArgumentBuilder](/vanilla/api/commands/custom/MCLiteralArgumentBuilder) | No description provided |
 
 
 ### 用户设置
@@ -222,7 +222,7 @@ myMCCommandDispatcher.setConsumer(消费者为craftweeper.api.commands.custom.MC
 
 ### toString
 
-返回类型：字符串
+Return type: String
 
 ```zenscript
 myMCCommandDispatcher.toString();
@@ -236,13 +236,13 @@ myMCCommandDispatcher.toString();
 myMCCommandDispatcher == o 为对象
 ```
 
-| 参数 | 类型 | 描述                      |
-| -- | -- | ----------------------- |
-| o  | 对象 | No description provided |
+| 参数 | 类型     | 描述                      |
+| -- | ------ | ----------------------- |
+| o  | Object | No description provided |
 
-## 卡斯特尔
+## Casters
 
-| 结果类型        | 是否隐藏 |
-| ----------- | ---- |
-| 字符串[string] | true |
+| 结果类型   | 是否隐藏 |
+| ------ | ---- |
+| String | true |
 
