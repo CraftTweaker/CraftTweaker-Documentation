@@ -1,19 +1,19 @@
-# Soporte de bloqueo de nivel
+# Level-Lock Support
 
 ## PSA:
 
-Esta característica funciona cancelando el evento Level-Up en Reskillable. ¡Algunos mods que llaman al levelUp(); el método directamente saltará los bloqueos! Esto incluye mods como Scavenge: Reskillable y TogetherForever!
+This feature works off cancelling the Level-Up event in Reskillable. Some mods that call the levelUp(); method directly will bypass the locks! This includes mods like Scavenge: Reskillable and TogetherForever!
 
-## Soporte de bloqueo de nivel
+## Level-Lock Support
 
-Level-Lock Support es una característica extraña que vino de una broma que Skysom hizo en un DM algún día. ¡Esta característica es enteramente para aquellos lo suficientemente sadistas como para implementarla! Esto compuerta la progresión al nivel establecido, no el "ir desde" de ese nivel!
+Level-Lock Support is a weird feature that came from a joke that Skysom made in a DM one day. This feature is entirely for those sadistic enough to implement it! This gates the progression to the set level not the "going from" that level!
 
-CTHabilidad = [Manejador de brazos de habilidad](/Mods/CompatSkills/Supports/Reskillable/BracketHandlers/)
+CTSkill = [Skill-Bracket Handler](/Mods/CompatSkills/Supports/Reskillable/BracketHandlers/)
 
-### Sintaxis:
+### Syntax:
 
-    // Ejemplo en blanco:
-    mods.compatskills.SkillLocks.addLevelLock(CTSkill Skill, int level, String... defaultRequirements);
+    // Blank Example:
+    mods.compatskills.SkillLocks.addLevelLock(CTSkill skill, int level, String... defaultRequirements);
     
-    // Ejemplo de prueba:
-    mods.compatskills.SkillLocks.addLevelLock(<skill:reskillable:agility>, 11, "reskillable:collecting", 3, "adv|minecraft:husbandry/plant_seed");
+    // Test Example:
+    mods.compatskills.SkillLocks.addLevelLock(<skill:reskillable:agility>, 11, "reskillable:gathering", 3, "adv|minecraft:husbandry/plant_seed");
