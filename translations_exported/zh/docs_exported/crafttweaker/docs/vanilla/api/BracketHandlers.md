@@ -1,4 +1,4 @@
-# 骨架处理程序
+# BracketHandlers
 
 这个类由mod-id为`crafttweaker`的模组添加. 因此，如果要使用此功能，则需要安装此mod。
 
@@ -24,9 +24,9 @@ craftmiliter.api.BracketHandlers.getBlockMaterial(tokens as String);
 craftbiner.api.BraketHandlers.getBlockMaterial("earth");
 ```
 
-| 参数 | 类型          | 描述              |
-| -- | ----------- | --------------- |
-| 令牌 | 字符串[string] | 您要在 BEP 通话中写什么。 |
+| 参数     | 类型     | 描述              |
+| ------ | ------ | --------------- |
+| tokens | String | 您要在 BEP 通话中写什么。 |
 
 
 ### getBlockState
@@ -45,9 +45,9 @@ craftmiliter.api.BracketHandlers.getBlockState(tokens as String);
 craftmiliter.api.BracketHandlers.getBlockState("minecraft:acacia_planks");
 ```
 
-| 参数 | 类型          | 描述         |
-| -- | ----------- | ---------- |
-| 令牌 | 字符串[string] | 方块的资源位置和变体 |
+| 参数     | 类型     | 描述         |
+| ------ | ------ | ---------- |
+| tokens | String | 方块的资源位置和变体 |
 
 
 ### getDirectionAxis
@@ -65,9 +65,9 @@ craftmiliter.api.BracketHandlers.getDirectionAxis(tokens as String);
 craftmiliter.api.BracketHandlers.getDirectionAxis("x");
 ```
 
-| 参数 | 类型          | 描述       |
-| -- | ----------- | -------- |
-| 令牌 | 字符串[string] | 方向轴的资源位置 |
+| 参数     | 类型     | 描述       |
+| ------ | ------ | -------- |
+| tokens | String | 方向轴的资源位置 |
 
 
 ### getEffect
@@ -85,9 +85,9 @@ craftmiliter.api.BracketHandlers.getEffect(tokens as String);
 craftmiliter.api.BracketHandlers.getEffect("minecraft:haste");
 ```
 
-| 参数 | 类型          | 描述      |
-| -- | ----------- | ------- |
-| 令牌 | 字符串[string] | 特效的资源位置 |
+| 参数     | 类型     | 描述      |
+| ------ | ------ | ------- |
+| tokens | String | 特效的资源位置 |
 
 
 ### getEntity分类
@@ -105,9 +105,9 @@ craftmiliter.api.BracketHandlers.getEntityClassification(tokens as String);
 craftbiner.api.BracketHandlers.getEntityClassification("monster");
 ```
 
-| 参数 | 类型          | 描述        |
-| -- | ----------- | --------- |
-| 令牌 | 字符串[string] | 实体分类的资源位置 |
+| 参数     | 类型     | 描述        |
+| ------ | ------ | --------- |
+| tokens | String | 实体分类的资源位置 |
 
 
 ### getEntityType
@@ -125,9 +125,9 @@ craftbinstruer.api.BracketHandlers.getEntityType(tokens as String);
 craftmiliter.api.BracketHandlers.getEntityType("minecraft:pig");
 ```
 
-| 参数 | 类型          | 描述              |
-| -- | ----------- | --------------- |
-| 令牌 | 字符串[string] | entityType的资源位置 |
+| 参数     | 类型     | 描述              |
+| ------ | ------ | --------------- |
+| tokens | String | entityType的资源位置 |
 
 
 ### getFluidStack
@@ -145,9 +145,9 @@ craftmiliter.api.BracketHandlers.getFluidStack(tokens as String);
 craftbiner.api.BracketHandlers.getFluidStack("minecraft:water");
 ```
 
-| 参数 | 类型          | 描述     |
-| -- | ----------- | ------ |
-| 令牌 | 字符串[string] | 流体资源位置 |
+| 参数     | 类型     | 描述     |
+| ------ | ------ | ------ |
+| tokens | String | 流体资源位置 |
 
 
 ### getItem
@@ -156,7 +156,7 @@ craftbiner.api.BracketHandlers.getFluidStack("minecraft:water");
 
  返回： `找到的项目`
 
-返回类型： [craftbiner.api.item.IItemStack](/vanilla/api/items/IItemStack)
+Return type: [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
 
 ```zenscript
 <item:minecraft:dirt>
@@ -165,9 +165,9 @@ craftmiliter.api.BracketHandlers.getItem(tokens as String);
 craftmiliter.api.BracketHandlers.getItem("minecraft:dirt");
 ```
 
-| 参数 | 类型          | 描述      |
-| -- | ----------- | ------- |
-| 令牌 | 字符串[string] | 项目的资源位置 |
+| 参数     | 类型     | 描述      |
+| ------ | ------ | ------- |
+| tokens | String | 项目的资源位置 |
 
 
 ### 获取药水
@@ -179,9 +179,9 @@ craftmiliter.api.BracketHandlers.getItem("minecraft:dirt");
 craftbinstruer.api.BracketHandlers.getPotion(tokens as String);
 ```
 
-| 参数 | 类型          | 描述                      |
-| -- | ----------- | ----------------------- |
-| 令牌 | 字符串[string] | No description provided |
+| 参数     | 类型     | 描述                      |
+| ------ | ------ | ----------------------- |
+| tokens | String | No description provided |
 
 
 ### getRecipeManager
@@ -197,9 +197,9 @@ crafttmilower.api.BracketHandlers.getRecipeManager(tokens as String);
 craftmiliter.api.BracketHandlers.getRecipeManager(“minecraft:crafting”);
 ```
 
-| 参数 | 类型          | 描述         |
-| -- | ----------- | ---------- |
-| 令牌 | 字符串[string] | 累犯管理员的资源位置 |
+| 参数     | 类型     | 描述         |
+| ------ | ------ | ---------- |
+| tokens | String | 累犯管理员的资源位置 |
 
 
 ### 获取资源位置
@@ -217,9 +217,9 @@ craftmiliter.api.BracketHandlers.getResourceLocation(tokens as String);
 craftmiliter.api.BracketHandlers.getResourceLocation("minecraft:dirt");
 ```
 
-| 参数 | 类型          | 描述   |
-| -- | ----------- | ---- |
-| 令牌 | 字符串[string] | 资源位置 |
+| 参数     | 类型     | 描述   |
+| ------ | ------ | ---- |
+| tokens | String | 资源位置 |
 
 
 ### 获取标签
@@ -237,9 +237,9 @@ craftmiliter.api.BracketHandlers.getTaglers(tokens as String);
 craftmiliter.api.BraketHandlers.getTag ("tag:minecraft:wool");
 ```
 
-| 参数 | 类型          | 描述      |
-| -- | ----------- | ------- |
-| 令牌 | 字符串[string] | 标签的资源位置 |
+| 参数     | 类型     | 描述      |
+| ------ | ------ | ------- |
+| tokens | String | 标签的资源位置 |
 
 
 ### getTextFormating
@@ -251,9 +251,9 @@ craftmiliter.api.BraketHandlers.getTag ("tag:minecraft:wool");
 craftmiliter.api.BracketHandlers.getTextFormating(tokens as String);
 ```
 
-| 参数 | 类型          | 描述                      |
-| -- | ----------- | ----------------------- |
-| 令牌 | 字符串[string] | No description provided |
+| 参数     | 类型     | 描述                      |
+| ------ | ------ | ----------------------- |
+| tokens | String | No description provided |
 
 
 
