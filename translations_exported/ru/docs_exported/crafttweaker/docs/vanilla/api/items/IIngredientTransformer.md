@@ -8,29 +8,29 @@
 crafttweaker.api.item.IIngredientTransform
 ```
 
-## Методы
+## Methods
 ### getCommandString
 
-Тип возврата: строка
+Return type: String
 
 ```zenscript
 myIIngredientTransformer.getCommandString(ингредиент как T);
 ```
 
-| Параметр   | Тип | Описание             |
+| Параметр   | Тип | Description          |
 | ---------- | --- | -------------------- |
-| ингредиент | Т   | Описание отсутствует |
+| ingredient | T   | Описание отсутствует |
 
 
 ### matches
 
-Тип возврата: логическое значение
+Return type: boolean
 
 ```zenscript
 myIIngredientTransformer.matches(стек как crafttweaker.api.item.IItemStack);
 ```
 
-| Параметр | Тип                                                               | Описание             |
+| Параметр | Тип                                                               | Description          |
 | -------- | ----------------------------------------------------------------- | -------------------- |
 | stack    | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | Описание отсутствует |
 
