@@ -1,53 +1,53 @@
-# Очистка
+# Refinery
 
-Refinery - многоблочная структура, использующая тепло для преобразования входной жидкости в две или более выходные жидкости. Многоблочный блок состоит из 2-4 (включительных) блоков переработки, и количество возможных выходных жидкостей ограничено количеством блоков переработки в структуре.
+The Refinery is a multiblock structure which uses heat to convert an input fluid to two or more output fluids. The multiblock consists of two to four (inclusive) refinery blocks, and the number of possible output fluids is limited by the number of refinery blocks in the structure.
 
-До Пневматического Крафта: Пониженное давление v0.9.0 минимальная температура для любого рецепта Refinery (т.е. температура, при которой запускаются запуска) всегда составляла 373К или 100°C. Однако в версии 0.9.0 и более поздних версиях при добавлении рецепта Refinery можно указать минимальную температуру.
+Prior to PneumaticCraft: Repressurized v0.9.0, the minimum temperature for any Refinery recipe (i.e. the temperature at which procesing starts) was always 373K, or 100°C. However, in v0.9.0 and later, it is possible to specify a minimum temperature when adding a Refinery recipe.
 
-Очистка начнет обрабатывать жидкости при минимальной температуре рецепта и будет работать быстрее по мере повышения температуры.
+The Refinery will start processing fluids at the recipe's minimum temperature, and will work faster as the temperature rises.
 
-Обратите внимание, что можно иметь два или более рецептов с одинаковым вводом, если количество выходов различается. В этом случае будет использоваться рецепт, производящий максимально возможные выходные (учитывая количество блоков переработки в многоблоке).
+Note that it's possible to have two or more recipes with the same input, as long as the number of outputs is different. In this case, the recipe producing the most possible outputs (given the number of refinery blocks in the multiblock) will be used.
 
-## Звонок
+## Calling
 
-Вы можете вызвать пакет Refinery с помощью `mods.pneumaticcraft.refinery`.
+You can call the Refinery package using `mods.pneumaticcraft.refinery`.
 
-## Удаление
+## Removing
 
-Эта функция удаляет первый рецепт, который он обнаружил, совпадает со всеми из заданных [Ingredient](/Vanilla/Variable_Types/IIngredient/) `выходов`:
+This function removes the first recipe it finds which matches all of the given [IIngredient](/Vanilla/Variable_Types/IIngredient/) `outputs`:
 
 ```zenscript
-mods.pneumaticcraft.refinery.removeRecipe(IIngredient[]);
+mods.pneumaticcraft.refinery.removeRecipe(IIngredient[] outputs);
 ```
 
-Эта функция удаляет первый рецепт, который он обнаружил, совпадает с данным [Ingredient](/Vanilla/Variable_Types/IIngredient/) вводом ``:
+This function removes the first recipe it finds which matches the given [IIngredient](/Vanilla/Variable_Types/IIngredient/) `input`:
 
 ```zenscript
 mods.pneumaticcraft.refinery.removeRecipes(IIngredient input);
 ```
 
-Эта функция удалит *всех* рецептов Refinery:
+This function will remove *all* Refinery recipes:
 
 ```zenscript
 mods.pneumaticcraft.refinery.removeAllRecipes();
 ```
 
-## Добавление
+## Adding
 
-Эти функции добавляют новый рецепт к Refinery:
+These functions add a new recipe to the Refinery:
 
 ```zenscript
-// Добавьте рецепт по умолчанию минимальной температурой 373K (100°C)
-mods.pneumaticcraft.refinery. ddRecipe(ILiquidStack input, ILiquidStack[] outputs);
+// Add a recipe with the default minimum temperature of 373K (100°C)
+mods.pneumaticcraft.refinery.addRecipe(ILiquidStack input, ILiquidStack[] outputs);
 
-// (требуется v0.9.0+) Добавить рецепт с заданной минимальной температурой
-модов. neumaticcraft.refinery. ddRecipe(int minimumTemperature, ILiquidStack input, ILiquidStack[]);
+// (v0.9.0+ required) Add a recipe with a given minimum temperature
+mods.pneumaticcraft.refinery.addRecipe(int minimumTemperature, ILiquidStack input, ILiquidStack[] outputs);
 
 
-// Пример: оба рецепта используют воду в качестве ввода
-// Первый рецепт будет использоваться в 2-блочных модификаторских модах
-. neumaticcraft.refinery. ddRecipe(<liquid:water> * 10, [<liquid:lava> * 2, <liquid:oil> * 5]);
-// Второй рецепт будет использоваться в 3-- или 4-блочной переработке,
-// а также требует минимальной температуры 473K или 200°C
-мод. neumaticcraft.refinery.addRecipe(473, <liquid:water> * 10, [<liquid:lava> * 2, <liquid:oil> * 5, <liquid:lpg> * 2]);
+// Example: both recipes use water as input
+// First recipe will be used in a 2-block refinery
+mods.pneumaticcraft.refinery.addRecipe(<liquid:water> * 10, [<liquid:lava> * 2, <liquid:oil> * 5]);
+// Second recipe will be used in a 3- or 4-block refinery,
+// and also requires a minimum temperature of 473K, or 200°C
+mods.pneumaticcraft.refinery.addRecipe(473, <liquid:water> * 10, [<liquid:lava> * 2, <liquid:oil> * 5, <liquid:lpg> * 2]);
 ```
