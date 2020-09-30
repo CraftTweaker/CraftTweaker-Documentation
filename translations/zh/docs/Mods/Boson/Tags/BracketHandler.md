@@ -1,49 +1,49 @@
-# 套装处理器
+# The Bracket Handler
 
-打包处理程序是获取标签的唯一途径。
+The Bracket Handler is the only way to obtain a tag.
 
 ## 语句
-这个括号处理程序的语法非常容易遵循， 同时，它允许了各种各样的 种可能性。在这种可能性中，它的标签应由括号处理器还原。
+The syntax of this bracket handler is extremely easy to follow, and at the same time it allows for a huge variety of possibilities in which tag it should be returned by the bracket handler.
 
 ```zenscript
 <tag-TYPE:NAMESPACE:NAME>
 ```
 
-在上述代码片段 所有上限中的零件是开发者可以自定义的位数，代表将返回的 目标。
+In the above code snippet, the parts in all caps are the bits that are customizable by the developer and represent the target that will be returned.
 
-`TYPE` 确定将创建的 [标签类型](/Mods/Boson/Tags/TagType/) 类型必须是标识标签类型的 mnemonics 之一。 请参阅链接页面中的有效标签类型列表。
+`TYPE` identifies the [type of tag](/Mods/Boson/Tags/TagType/) that will be created. The type has to be one of the mnemonics that identify a tag type. Refer to the linked page for a list of valid tag types.
 
-`命名` 指明标签的名称空间，即拥有标签的模组ID。 在大多数情况下，命名空间将是 `forge` 或 `Minecraft`， 但也可以使用其他名称空格，e。 . 适用于 mod-specific 标签。
+`NAMESPACE` identifies the name space of a tag, i.e. the mod ID that owns the tag. In most cases, the namespace will be either `forge` or `minecraft`, but it is also possible to use other name spaces, e.g. for mod-specific tags.
 
-`命名` 代表应该获取的标签的名称。
+`NAME` represents the name of the tag that should be obtained.
 
-请参阅行为部分以了解这个括号处理程序返回的内容。
+Refer to the Behavior section to know what this bracket handler returns.
 
-## 行为
-不同于其他在 CraftTweaker 中存在的括号处理程序， 这个括号处理器的行为差异 ，加载器正在处理括号处理器中的脚本。
+## Behavior
+Differently from other bracket handlers that are present in CraftTweaker, the behavior of this bracket handler differs according to which loader is processing the script the bracket handler is in.
 
-### `个标签` 加载器
-如果括号处理程序在脚本中被 [`标签` 加载器](/Mods/Boson/Loaders/Tags/)引用， 它将返回 [`标签`](/Mods/Boson/Tags/Tag/). 这允许操纵标签 本身中包含的元素。 欲了解更多信息，请参阅类文档。
+### The `tags` loader
+If the bracket handler is referenced in a script loaded by the [`tags` loader](/Mods/Boson/Loaders/Tags/), it will return a [`Tag`](/Mods/Boson/Tags/Tag/). This allows for manipulation of the elements that are contained in the tag itself. Refer to the class documentation for more information.
 
-### `前置` 加载器
-如果括号处理程序在脚本中被 `预设` 加载器所引用，它将会抛出一个异常。 因为标签 稍后被加载到Minecraft生命周期中，即在配方注册之前。
+### The `preinit` loader
+If the bracket handler is referenced in a script loaded by the `preinit` loader, it will throw an exception, since tags are loaded later on in the Minecraft lifecycle, namely just before recipes are registered.
 
-### 每个其它加载器
-如果括号处理程序在一个脚本中被任何其他加载器加载， 包括默认 `recipevent` one, 然后它将返回 [`Tag Ingredient`](/Mods/Boson/Tags/TagIngredient/)。 这不允许操纵 标签内容， 但允许将标签用于配方和其他调用方法，需要实例为 [`IIngredient`](/Vanilla/Variable_Types/IIngredient/) 作为参数。
+### Every other loader
+If the bracket handler is referenced in a script loaded by any of the other loaders, including the default `recipeevent` one, then it will return a [`TagIngredient`](/Mods/Boson/Tags/TagIngredient/). This does not allow for manipulation of the tag contents, but allows the tag to be used in recipes and other method invocations that require an instance of [`IIngredient`](/Vanilla/Variable_Types/IIngredient/) as a parameter.
 
-## 示例使用
+## Example usage
 
-这个第一个示例展示了一个 `Tag Ingredient` 用于添加一个新配方。 注意 `个项目` 标签 类型的用法：
+This first example demonstrates the usage of a `TagIngredient` to add a new recipe. Note the usage of the `items` tag type:
 
 ```zenscript
-valable taggredient = <tag-items:forge:ingots/iron>;
-配方.addShapelessRecipe("test", <minecraft:iron_ingot> * 3, [tagIngredient, tagIngredient, tagIngredient]);
+val tagIngredient = <tag-items:forge:ingots/iron>;
+recipes.addShapelessRecipe("test", <minecraft:iron_ingot> * 3, [tagIngredient, tagIngredient, tagIngredient]);
 ```
 
-这第二个示例显示了一个 `标签` 类型 `块` 的操纵：
+This second example shows the manipulation of a `Tag` of type `blocks`:
 
 ```zenscript
-#loader 标签
+#loader tags
 val tag = <tag-blocks:minecraft:enderman_holdable>;
 tag.add("minecraft:iron_block" as NameSpacedString);
 ```
