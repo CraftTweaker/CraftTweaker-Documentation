@@ -1,8 +1,8 @@
-# Gestionnaire de tranches de tranches
+# Trait Bracket Handler
 
-Le seul but du gestionnaire de tranches de tranches est de vous fournir des [représentations de la tranche](/Mods/ContentTweaker/Tinkers_Construct/Trait/).
+The Trait Bracket handler's sole purpose is providing you with [Trait Representations](/Mods/ContentTweaker/Tinkers_Construct/Trait/).
 
-Vous utilisez le gestionnaire de crochets de traits comme ceci :
+You use the trait bracket handler like this:
 
 ```zenscript
 <ticontrait:identifier>
@@ -10,4 +10,4 @@ Vous utilisez le gestionnaire de crochets de traits comme ceci :
 <ticontrait:cactus>
 ```
 
-Si la Trait est trouvée, cela retournera un objet de Représentation de la Trait . Veuillez vous référer à la [entrée Wiki respective](/Mods/ContentTweaker/Tinkers_Construct/Trait/) pour plus d'informations sur ce que vous pouvez faire avec celles-ci.
+If the Trait is found, this will return an Trait Representation Object. Please refer to the [respective Wiki entry](/Mods/ContentTweaker/Tinkers_Construct/Trait/) for further information on what you can do with these.
