@@ -17,9 +17,9 @@ CustomCommands
 crafttbiner.api.commands.custom.CustomCommands.argument(name as String);
 ```
 
-| 参数 | 类型          | 描述                      |
-| -- | ----------- | ----------------------- |
-| 名称 | 字符串[string] | No description provided |
+| 参数   | 类型     | 描述                      |
+| ---- | ------ | ----------------------- |
+| name | String | No description provided |
 
 
 ### 纯文本
@@ -30,9 +30,9 @@ crafttbiner.api.commands.custom.CustomCommands.argument(name as String);
 crafttbiner.api.commands.customCommands.literal(name as String);
 ```
 
-| 参数 | 类型          | 描述                      |
-| -- | ----------- | ----------------------- |
-| 名称 | 字符串[string] | No description provided |
+| 参数   | 类型     | 描述                      |
+| ---- | ------ | ----------------------- |
+| name | String | No description provided |
 
 
 ### 注册命令
