@@ -1,6 +1,6 @@
 # Arcane Ensorcellator (a.k.a Enchanter)
 
-## パッケージ
+## Package
 
 `mods.thermalexpansion.Enchanter`
 
@@ -12,7 +12,7 @@ mods.thermalexpansion.Enchanter.addRecipe(IItemStack output, IItemStack input, I
 mods.thermalexpansion.Enchanter.addRecipe(<minecraft:enchanted_book>.withTag({StoredEnchantments: [{id: 35}]}), <minecraft:book>, <minecraft:diamond>, 12000, 3000, false);
 ```
 
-## 削除
+## Removal
 
 ```zenscript
 mods.thermalexpansion.Enchanter.removeRecipe(IItemStack input, IItemStack secondInput);
