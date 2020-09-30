@@ -1,32 +1,32 @@
-# 熱空圧加工工場
+# Thermopneumatic Processing Plant
 
-熱空圧加工工場(TPP)は、圧力と熱を使用して、1つの流体および/または1つの固体成分を別の流体に変換します。 Kelvin: 273 K = 0°C (32°F), 373 K = 100°C (212°F).
+The Thermopneumatic Processing Plant (TPP) uses pressure and heat to convert one fluid and/or one solid ingredient to another fluid. Temperatures should be specified in Kelvin: 273 K = 0°C (32°F), 373 K = 100°C (212°F).
 
-*技術的には、273.16 K = 0°Cですが、このモジュールは整数オフセットに簡略化されています。*
+*Technically, 273.16 K = 0°C, but for the purposes of this mod it's simplified to an integer offset.*
 
-## 発信中
+## Calling
 
-`mods.empaticcraft.thermopenaticplant` を使用してTPPパッケージを呼び出すことができます。
+You can call the TPP package using `mods.pneumaticcraft.thermopneumaticprocessingplant`.
 
-## 削除中
+## Removing
 
-この関数は、与えられた [IIngredient](/Vanilla/Variable_Types/IIngredient/) `出力` で見つけた最初のレシピを削除します。
+This function removes the first recipe it finds with the given [IIngredient](/Vanilla/Variable_Types/IIngredient/) `output`:
 
 ```zenscript
-mods.emeraticcraft.thermopenaticprocessingplant.removeRecipe(IIngredient output);
+mods.pneumaticcraft.thermopneumaticprocessingplant.removeRecipe(IIngredient output);
 // Example
-mods.emumaticcraft.thermopenaticprocessingplant.removeRecipe(<liquid:lpg>);
+mods.pneumaticcraft.thermopneumaticprocessingplant.removeRecipe(<liquid:lpg>);
 ```
 
-この関数は *すべての* TPPレシピを削除します。
+This function removes *all* TPP recipes:
 
 ```zenscript
-mods.emeraticcraft.thermopenmaticprocessingplant.removeAllRecipes();
+mods.pneumaticcraft.thermopneumaticprocessingplant.removeAllRecipes();
 ```
 
-## 追加中
+## Adding
 
-TPPにレシピを追加するには、以下の機能を使用できます。
+The following functions can be used to add recipes to the TPP:
 
 ```zenscript
 // Add a recipe converting an input item into an output fluid
