@@ -1,15 +1,15 @@
 # IEntityAnimal
 
-动物.
+An Animal.
 
 ## 导入相关包
 
-如果您遇到任何问题，可能需要导入软件包(例如铸造一个 [数组](/AdvancedFunctions/Arrays_and_Loops/)), 这样比抱歉更安全并添加导入。  
-`导入craftweaper.entityIEntityAnimal。`
+It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
+`import crafttweaker.entity.IEntityAnimal;`
 
-## 扩展 [IEntityAgeable](/Vanilla/Entities/IEntityAgeable/)
+## Extending [IEntityAgeable](/Vanilla/Entities/IEntityAgeable/)
 
-IEntityAnimal extension [IEntityable](/Vanilla/Entities/IEntityAgeable/). 这意味着 [Ientity](/Vanilla/Entities/IEntityAgeable/) 的所有功能也都可供IEntityAnimal使用。
+IEntityAnimal extends [IEntityAgeable](/Vanilla/Entities/IEntityAgeable/). That means all functions available to [IEntities](/Vanilla/Entities/IEntityAgeable/) also are available to IEntityAnimal.
 
 ## 方法
 
@@ -17,34 +17,34 @@ IEntityAnimal extension [IEntityable](/Vanilla/Entities/IEntityAgeable/). 这意
 
 | ZenGetter | 类型                                                  |
 | --------- | --------------------------------------------------- |
-| 爱情暂停      | [IPlayer](/Vanilla/Players/IPlayer/) (Can be null!) |
-| isInLove  | 布尔值                                                 |
+| loveCause | [IPlayer](/Vanilla/Players/IPlayer/) (Can be null!) |
+| isInLove  | bool                                                |
 
 ### ZenMethods
 
-#### 检查一件物品是否可以用来培育这种动物。
+#### check if an item can be used to breed the animal
 
-方法需要 [IItemStack](/Vanilla/Items/IItemStack/)。  
-返回一个布尔值。
+Method expects an [IItemStack](/Vanilla/Items/IItemStack/).  
+Returns a bool.
 
 ```zenscript
-entAnObj.isBreedingItem(ItemStack itemstack)；
+entAnObj.isBreedingItem(IItemStack itemStack);
 ```
 
-#### 在爱情中设置或重置
+#### Set or Reset in love
 
-第一个方法需要一个可选的 [IPlayer](/Vanilla/Players/IPlayer/) 对象，第二个什么都不。  
-什么也不返回任何东西。
+First method expects an optional [IPlayer](/Vanilla/Players/IPlayer/) object, second nothing.  
+Returns nothing.
 
 ```zenscript
 entAnObj.setInLove(@Optional IPlayer player);
 entAnObj.resetInLove();
 ```
 
-#### 检查另一个动物是否可以与这个动物混合。
+#### Check if another animal can mate with this one.
 
-方法需要一个 IEntityAnimal 对象。  
-返回一个布尔值。
+Method expects an IEntityAnimal object.  
+Returns a bool.
 
 ```zenscript
 entAnObj.canMateWith(IEntityAnimal other);
