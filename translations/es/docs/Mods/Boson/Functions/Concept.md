@@ -1,47 +1,47 @@
-# Un Primer sobre Interfaces Funcionales
+# A Primer on Functional Interfaces
 
-De acuerdo con la especificación del lenguaje Java 8, una interfaz funcional en Java es:
+According to the Java Language Specification for Java 8, a Functional Interface in Java is:
 
-> Una interfaz funcional es una interfaz que tiene un solo método abstracto (aparte de los métodos de `Objeto`), y representa así un único contrato de función. Este método "single" puede tomar la forma de múltiples métodos abstractos con firmas equivalentes sobreescribibles heredadas de superinterfaces; en este caso, los métodos heredados representan lógicamente un único método.
+> A functional interface is an interface that has just one abstract method (aside from the methods of `Object`), and thus represents a single function contract. This "single" method may take the form of multiple abstract methods with override-equivalent signatures inherited from superinterfaces; in this case, the inherited methods logically represent a single method.
 > 
-> Para una interfaz I, dejar `M` ser el conjunto de métodos `abstract` que son miembros de I que no tienen la misma firma que cualquier `método de instancia` público de la clase `Object`. Entonces soy una *interfaz funcional* si existe un método `m` en `M` para el cual ambas cosas son verdaderas:
+> For an interface I, let `M` be the set of `abstract` methods that are members of I that do not have the same signature as any `public` instance method of the class `Object`. Then, I is a *functional interface* if there exists a method `m` in `M` for which both of the following are true:
 > 
-> - La firma de `m` es una subfirma ([§8.4.2](https://docs.oracle.com/javase/specs/jls/se8/html/jls-8.html#jls-8.4.2)) de cada método de firma en `M`.
-> - `m` es devuelto sustituible ([§8.4.5](https://docs.oracle.com/javase/specs/jls/se8/html/jls-8.html#jls-8.4.5)) por cada método en `M`.
+> - The signature of `m` is a subsignature ([§8.4.2](https://docs.oracle.com/javase/specs/jls/se8/html/jls-8.html#jls-8.4.2)) of every method's signature in `M`.
+> - `m` is return-type-substitutable ([§8.4.5](https://docs.oracle.com/javase/specs/jls/se8/html/jls-8.html#jls-8.4.5)) for every method in `M`.
 > 
-> [Fuente](https://docs.oracle.com/javase/specs/jls/se8/html/jls-9.html#jls-9.8)
+> [Source](https://docs.oracle.com/javase/specs/jls/se8/html/jls-9.html#jls-9.8)
 
-ZenScript, siendo un lenguaje de programación similar a Java que interactúa con un backend de Java, tiene una definición similar.
+ZenScript, being a Java-like programming language that interacts with a Java backend, has a similar definition.
 
-## Una simplificación
-La definición anterior es demasiado precisa y complicada, lo que cabe esperar de una especificación formal del idioma. Una versión más simplificada para el desarrollador podría ser la siguiente:
+## A Simplification
+The above definition is overly precise and complicated, which has to be expected from a formal language specification. A way more simplified version for the developer could be the following:
 
-> Una interfaz `I` se llama *interfaz funcional* si define solo un método abstracto.
+> An interface `I` is called a *functional interface* if it defines only a single abstract method.
 
-Esta definición también es aceptada por el propio ZenScript.
+This definition is also accepted by ZenScript itself.
 
-## El uso práctico
-Hasta ahora, la documentación anterior se ha basado más en "qué" que en "por qué". Las interfaces funcionales pueden parecer un gimmick , pero son particularmente útiles, ya que en ZenScript permiten *Funciones puras* (i. . Las cosas que creas con la función ``se pasarán al código Java sin requerir shenanigans extraños. Esto es algo que definimos como "lambda".
+## The Practical Usage
+Up until now, the above documentation has more relied on "what" rather than "why". Functional interfaces may seem like a gimmick, but they're particularly useful, since in ZenScript they allow *Pure Functions* (i.e. the things you create with `function`) to be passed to Java code without requiring weird shenanigans. This is something that we define as "lambda".
 
 Examples of applications of these interfaces are the [Recipe Functions](/Vanilla/Recipes/Crafting/Recipe_Functions/) that can be passed to recipes to change the output or input dynamically: `IRecipeFunction` and `IRecipeAction` are in fact two functional interfaces.
 
-## El problema y su solución
-Las Interfaces Funcionales que están disponibles en el lenguaje ZenScript son demasiado específicas. Por un lado, esto permite funciones finamente fabricadas para ciertos parámetros; por otra parte, esto limita severamente las posibilidades de lo que puede hacer el desarrollador.
+## The Problem and its Solution
+The Functional Interfaces that are available in the ZenScript language are all overly specific. On one hand, this allows finely crafted functions for certain parameters; on the other hand, this severely limits the possibilities of what can be done by the developer.
 
-Por esta razón, el Proyecto ZenScriptX decidió proporcionar un conjunto de interfaces funcionales de propósito general que pueden recibir una cantidad determinada de parámetros de entrada y salida otra cosa, permitiendo una interoperabilidad más fácil con las API basadas en Java. Una lista completa de las interfaces funcionales disponibles puede encontrarse [en esta página](/Mods/Boson/Functions/List/), junto con todos sus argumentos y tipos de retorno.
+For this reason, the ZenScriptX Project decided to provide a set of general purpose functional interfaces that can receive a set amount of input parameters and output something else, allowing for easier interoperability with Java-based APIs. A full list of the functional interfaces that are available can be found [on this page](/Mods/Boson/Functions/List/), along with all their arguments and return types.
 
-## Un aviso rápido
-Tenga en cuenta que en esta documentación nos hemos referido principalmente a la interoperabilidad entre ZenScript y Java. Esto es porque ZenScript ya proporciona soporte para funciones de orden superior (i.e. almacenando funciones en una variable, llamándolas, pasándolos como parámetros, etc.) sin requerir ninguna interfaz funcional intermedio. Por esta razón, el siguiente código no sería válido en ZenScript:
+## A Quick Disclaimer
+Note that in this documentation we have referred mainly to interoperability between ZenScript and Java. This is because ZenScript already provides support for higher-order functions (i.e. storing functions in a variable, calling them, passing them as parameters etc.) without requiring any functional interface in-between. For this reason the following code would be invalid in ZenScript:
 
 ```zenscript
 val fun as Function = function (input as IIngredient) as IItemStack {
-    if (input instanceof ItemStack) return input as ItemStack;
+    if (input instanceof IItemStack) return input as IItemStack;
     return null;
 } as Function;
 
-print(divertido. pply(<minecraft:stick>).commandString); # no compile
+print(fun.apply(<minecraft:stick>).commandString); # doesn't compile
 ```
 
-Esto sucede porque los métodos funcionales no están expuestos a ZenScript, sino sólo al backend de Java. Para encontrar un ejemplo de un uso real de estas interfaces funcionales, consulte la página [documentación de secuencias](/Mods/Boson/Sequences/Docs/).
+This happens because the functional methods aren't exposed to ZenScript, but only to the Java backend. To find an example of a real usage of such functional interfaces, refer to the [Sequences documentation](/Mods/Boson/Sequences/Docs/) page.
 
 
