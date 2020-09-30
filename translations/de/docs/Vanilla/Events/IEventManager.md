@@ -1,41 +1,41 @@
 # IEventManager
 
-Der IEventManager ist genau das, was Sie brauchen, wenn Sie mit Eventhandlern umgehen.
+The IEventManager is what you're gonna need when dealing with event handlers.
 
 ## Diese Klasse importieren
 
 It might be required for you to [import](/AdvancedFunctions/Import/) the class if you encounter any issues.  
 `import crafttweaker.events.IEventManager;`
 
-## Aufruf des Event-Managers
+## Calling the event manager
 
 You can access the event manager using the [global `events` field](/Vanilla/Global_Functions/)
 
-## Wie funktionieren Ereignisse?
+## How do events work?
 
-Sie können eine Funktion hinzufügen, die das Ereignis repräsentiert, und von dort aus können Sie entscheiden, was CrT tun soll, wenn ein solches Ereignis auftritt.  
-Das Wichtigste, was man sich vor Augen halten muss, ist, dass man den Anlass **ZUGRIFF ZU IHREN ZU ZU ZU ZU ZU ZU ZU ZU ZU ZU ZU ZU ZU ZU ZU ZU ZU ZU ZU ZU ZU!** ansonsten können Sie auf keinen Fall zugreifen, wenn es ZenGetters ist.  
-Wenn Sie einfach etwas ausdrucken wollen, wo Sie nicht auf das Ereignis zugreifen müssen, dann ist es in Ordnung.
+You can add a function that represents the event and from there on you can decide what you want CrT to do if such an event occurs.  
+The most important thing to remember is that you need to **CAST THE EVENT TO IT'S TYPE!** as otherwise you will not be able to access any if it's ZenGetters.  
+If you simply want to print something where you don't need to access the event, then it's fine.
 
 ```zenscript
-events.onPlayerCrafted(function(event as craftweaker.event.PlayerCraftedEvent){
+events.onPlayerCrafted(function(event as crafttweaker.event.PlayerCraftedEvent){
     print("event".length);
     print(event.player.name);
-    event. layer.xp += 1;
+    event.player.xp += 1;
 });
 
 
-Events. nPlayerLoggedIn(function(event) {
-    //event instanceof Object -> Keine Möglichkeit darauf zuzugreifen, also besser casten!
-    print("SOMEONE HAT EIN!!!");
+events.onPlayerLoggedIn(function(event) {
+    //event instanceof Object -> No way of accessing it, so better cast!
+    print("SOMEONE HAS LOGGED IN!!!");
 });
 ```
 
-## Welche Veranstaltungen sind verfügbar?
+## What events are available?
 
-Die ZenMethoden sind das, was Sie bei `Events anrufen müssen,`, die Event Class wäre das, was du brauchst, um das Event zu werfen.
+The ZenMethods would be what you'll need to call on `events`, the Event Class would be what you need to cast the event as.
 
-| ZenMethode                    | Event-Klasse                                                                                             |
+| ZenMethod                     | Event-Klasse                                                                                             |
 | ----------------------------- | -------------------------------------------------------------------------------------------------------- |
 | onAllowDespawn                | [`crafttweaker.event.EntityLivingSpawnEvent`](/Vanilla/Events/Events/EntityLivingSpawn/)                 |
 | onAnimalTame                  | [`crafttweaker.event.AnimalTameEvent`](/Vanilla/Events/Events/AnimalTame/)                               |
@@ -47,7 +47,7 @@ Die ZenMethoden sind das, was Sie bei `Events anrufen müssen,`, die Event Class
 | onCriticalHit                 | [`crafttweaker.event.CriticalHitEvent`](/Vanilla/Events/Events/CriticalHit/)                             |
 | onCropGrowPost                | [`crafttweaker.event.CropGrowPostEvent`](/Vanilla/Events/Events/CropGrowPost/)                           |
 | onCropGrowPre                 | [`crafttweaker.event.CropGrowPreEvent`](/Vanilla/Events/Events/CropGrowPre/)                             |
-| onVerzauberung LevelSet       | [`crafttweaker.event.EnchantmentLevelSetEvent`](/Vanilla/Events/Events/EnchantmentLevelSet/)             |
+| onEnchantmentLevelSet         | [`crafttweaker.event.EnchantmentLevelSetEvent`](/Vanilla/Events/Events/EnchantmentLevelSet/)             |
 | onEnderTeleport               | [`crafttweaker.event.EnderTeleportEvent`](/Vanilla/Events/Events/EnderTeleport/)                         |
 | onEntityLivingAttacked        | [`crafttweaker.event.EntityLivingAttackedEvent`](/Vanilla/Events/Events/EntityLivingAttacked/)           |
 | onEntityLivingDeath           | [`crafttweaker.event.EntityLivingDeathEvent`](/Vanilla/Events/Events/EntityLivingDeath/)                 |
@@ -66,13 +66,13 @@ Die ZenMethoden sind das, was Sie bei `Events anrufen müssen,`, die Event Class
 | onExplosionDetonate           | [`crafttweaker.event.ExplosionDetonateEvent`](/Vanilla/Events/Events/ExplosionDetonate/)                 |
 | onExplosionStart              | [`crafttweaker.event.ExplosionStartEvent`](/Vanilla/Events/Events/ExplosionStart/)                       |
 | onFarmlandTrample             | [`crafttweaker.event.FarmlandTrampleEvent`](/Vanilla/Events/Events/FarmlandTrample/)                     |
-| onItemAblauf                  | [`crafttweaker.event.ItemExpireEvent`](/Vanilla/Events/Events/ItemExpire/)                               |
+| onItemExpire                  | [`crafttweaker.event.ItemExpireEvent`](/Vanilla/Events/Events/ItemExpire/)                               |
 | onItemFished                  | [`crafttweaker.event.ItemFishedEvent`](/Vanilla/Events/Events/ItemFished/)                               |
 | onItemToss                    | [`crafttweaker.event.ItemTossEvent`](/Vanilla/Events/Events/ItemToss/)                                   |
 | onLivingDestroyBlock          | [`crafttweaker.event.LivingDestroyBlockEvent`](/Vanilla/Events/Events/LivingDestroyBlock/)               |
 | onLivingExperienceDrop        | [`crafttweaker.event.LivingExperienceDropEvent`](/Vanilla/Events/Events/LivingExperienceDrop/)           |
 | onLivingKockBack              | [`crafttweaker.event.LivingKnockBackEvent`](/Vanilla/Events/Events/LivingKnockBack/)                     |
-| onPlünderungsebene            | [`crafttweaker.event.LootingLevelEvent`](/Vanilla/Events/Events/LootingLevel/)                           |
+| onLootingLevel                | [`crafttweaker.event.LootingLevelEvent`](/Vanilla/Events/Events/LootingLevel/)                           |
 | onMinecartCollision           | [`crafttweaker.event.MinecartCollisionEvent`](/Vanilla/Events/Events/MinecartCollision/)                 |
 | onMinecartInteract            | [`crafttweaker.event.MinecartInteractEvent`](/Vanilla/Events/Events/MinecartInteract/)                   |
 | onMobGriefing                 | [`crafttweaker.event.MobGriefingEvent`](/Vanilla/Events/Events/MobGriefing/)                             |
@@ -116,7 +116,7 @@ Die ZenMethoden sind das, was Sie bei `Events anrufen müssen,`, die Event Class
 | onSleepingTimeCheck           | [`crafttweaker.event.SleepingTimeCheckEvent`](/Vanilla/Events/Events/SleepingTimeCheck/)                 |
 | onSpecialSpawn                | [`crafttweaker.event.EntityLivingExtendedSpawnEvent`](/Vanilla/Events/Events/EntityLivingSpawn/)         |
 
-## Alle Ereignis-Handler löschen
+## Clear all event handlers
 
 ```zenscript
 events.clear();
