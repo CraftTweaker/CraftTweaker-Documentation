@@ -1,25 +1,25 @@
-### Classe
+### Class
 
 ```zenscript
 import mods.roots.Ritual;
 ```
 
-#### Metodi
+#### Methods
 
 ```zenscript
 void modifyRitual(
-  string name, // il nome del rituale di cui si desidera modificare gli ingredienti
-  IIngredient[] input // una lista di cinque ingredienti (non più, non meno)
+  string name,         // the name of the ritual whose ingredients you wish to modify
+  IIngredient[] inputs // a list of five ingredients (no more, no less)
 );
 ```
 
 * * *
 
-### Esempi
+### Examples
 
 ```zenscript
 import mods.roots.Ritual;
 
-// Cambia gli ingredienti necessari per eseguire il rituale del parabrezza
-Rituale. odifyRitual("ritual_windwall", [<minecraft:feather>, <minecraft:glass>, <roots:cloud_berry>, <roots:cloud_berry>, <minecraft:web>]);
+// Changes the ingredients required to perform the windwall ritual
+Ritual.modifyRitual("ritual_windwall", [<minecraft:feather>, <minecraft:glass>, <roots:cloud_berry>, <roots:cloud_berry>, <minecraft:web>]);
 ```
