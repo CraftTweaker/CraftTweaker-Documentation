@@ -1,32 +1,32 @@
-### Klasse
+### Class
 
 ```zenscript
-importieren mods.roots.AnimalHarvest;
+import mods.roots.AnimalHarvest;
 ```
 
 #### Methoden
 
 ```zenscript
-AddEntity(
-  IEntityDefinition-Entität // Entität zum generieren von Drops für
+void addEntity(
+  IEntityDefinition entity // the entity to generate drops for
 );
 ```
 
 * * *
 
 ```zenscript
-Entfernungsentfernung(
-  IEntityDefinition-Entität // Entität, um die Generierung von Drops für
- zu beenden);
+void removeEntity(
+  IEntityDefinition entity // the entity to stop generating drops for
+);
 ```
 
 * * *
 
 ```zenscript
 void addFish(
-  String Name, // Name des Fischtyps
-  IItemStack Fisch, // Art von Fisch als Element-Stack
-  int Gewicht // das Gewicht des Fischs als Ganzzahl
+  string name,     // the name of the type of fish
+  IItemStack fish, // the type of fish as an item stack
+  int weight       // the weight of the fish as an integer
 );
 ```
 
@@ -34,7 +34,7 @@ void addFish(
 
 ```zenscript
 void removeFish(
-  IItemStack fish // Art von Fisch zum Entfernen als Stapel
+  IItemStack fish // the type of fish to remove as an item stack
 );
 ```
 
@@ -45,17 +45,17 @@ void removeFish(
 ```zenscript
 import mods.roots.AnimalHarvest;
 
-// Enderman als Ziel für das Animal Harvest Ritual hinzufügen.
-// Im Allgemeinen wäre es besser, Tiere zu verwenden.
+// Adds an enderman as a target for the Animal Harvest ritual.
+// Generally it would be better to use animals.
 AnimalHarvest.addEntity(<entity:minecraft:enderman>);
 
-// Verhindert, dass die Entität während des Rituals Tropfen gibt
-AnimalHarvest. emoveEntity(<entity:minecraft:cow>);
+// Prevents the entity from giving drops during the ritual
+AnimalHarvest.removeEntity(<entity:minecraft:cow>);
 
-// Fügt Magmacreme als Fischart mit einem Gewicht von 20 (alle Gewichte basierend auf 
-// Standardfischerei. son-Beutetabelle)
+// Adds magma cream as a type of fish with a weight of 20 (all weights based on 
+// the standard fishing.json loot table)
 AnimalHarvest.addFish("magma_cream", <minecraft:magma_cream>, 20);
 
-// Pufferfish aus dem Animal Ernte-Ritual entfernen
+// Removes pufferfish from the Animal Harvest ritual
 AnimalHarvest.removeFish(<minecraft:fish:3>);
 ```
