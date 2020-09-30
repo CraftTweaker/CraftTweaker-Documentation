@@ -1,10 +1,10 @@
-# OR 演算子
+# OR Operator
 
-**OR** ゲートは、2 つの入力を組み合わせて、少なくとも 1 つの入力が `TRUE` である場合、 `TRUE` を返します。
+An **OR** gate combines two inputs and returns `TRUE` if at least one of the inputs is also `TRUE`.
 
-| Input 1 | Input 2 | 出力 |
-| ------- | ------- | --:|
-| 0       | 0       |  0 |
-| 0       | 1       |  1 |
-| 1       | 0       |  1 |
-| 1       | 1       |  1 |
+| Input 1 | Input 2 | Output |
+| ------- | ------- | ------:|
+| 0       | 0       |      0 |
+| 0       | 1       |      1 |
+| 1       | 0       |      1 |
+| 1       | 1       |      1 |
