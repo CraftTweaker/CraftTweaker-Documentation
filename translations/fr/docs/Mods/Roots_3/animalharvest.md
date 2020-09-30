@@ -1,14 +1,14 @@
-### Classe
+### Class
 
 ```zenscript
-Importer mods.roots.AnimalHarvest;
+import mods.roots.AnimalHarvest;
 ```
 
-#### Méthodes
+#### Methods
 
 ```zenscript
 void addEntity(
-  IEntityDefinition entity // l'entité à générer des drops pour
+  IEntityDefinition entity // the entity to generate drops for
 );
 ```
 
@@ -16,7 +16,7 @@ void addEntity(
 
 ```zenscript
 void removeEntity(
-  IEntityDefinition entity // l'entité pour arrêter de générer des drops pour
+  IEntityDefinition entity // the entity to stop generating drops for
 );
 ```
 
@@ -24,9 +24,9 @@ void removeEntity(
 
 ```zenscript
 void addFish(
-  string name, // le nom du type de poisson
-  IItemStack fish, // le type de poisson en tant que pile d'objet
-  int poids // le poids du poisson en tant qu'entier
+  string name,     // the name of the type of fish
+  IItemStack fish, // the type of fish as an item stack
+  int weight       // the weight of the fish as an integer
 );
 ```
 
@@ -34,28 +34,28 @@ void addFish(
 
 ```zenscript
 void removeFish(
-  IItemStack fish // le type de poisson à supprimer en tant que pile d'élément
+  IItemStack fish // the type of fish to remove as an item stack
 );
 ```
 
 * * *
 
-### Exemples
+### Examples
 
 ```zenscript
 import mods.roots.AnimalHarvest;
 
-// Ajoute un enderman comme cible pour le rituel de récolte des animaux.
-// Généralement, il vaudrait mieux utiliser les animaux.
+// Adds an enderman as a target for the Animal Harvest ritual.
+// Generally it would be better to use animals.
 AnimalHarvest.addEntity(<entity:minecraft:enderman>);
 
-// Empêche l'entité de donner des gouttes pendant le rituel
-AnimalHarvest. emoveEntity(<entity:minecraft:cow>);
+// Prevents the entity from giving drops during the ritual
+AnimalHarvest.removeEntity(<entity:minecraft:cow>);
 
-// Ajoute la crème de magma en tant que type de poisson avec un poids de 20 (tous les poids basés sur 
-// la pêche standard. table de butin de fils)
+// Adds magma cream as a type of fish with a weight of 20 (all weights based on 
+// the standard fishing.json loot table)
 AnimalHarvest.addFish("magma_cream", <minecraft:magma_cream>, 20);
 
-// Supprime les poissons bouffons du rituel de récolte d'animaux
+// Removes pufferfish from the Animal Harvest ritual
 AnimalHarvest.removeFish(<minecraft:fish:3>);
 ```
