@@ -1,24 +1,24 @@
-# 食器洗い機
+# Dishwasher
 
-食器洗い機で汚れた道具をきれいにすることができます。
+The Dishwasher allows you to clean dirty tools.
 
-デフォルトでは、バニラツールと武器の耐久性のみを修理します。
+By default repairs durability of vanilla tools and weapons only.
 
-## 削除中
+## Removing
 
-## 一致する洗濯可能な項目を削除します。
+## Remove matching washable items.
 
 ```zenscript
 mods.cfm.Dishwasher.remove(@Optional final IIngredient item);
 
 mods.cfm.Dishwasher.remove(<minecraft:flint_and_steel>);
-// すべての洗えるアイテムを削除します。
+// Remove all washable items.
 mods.cfm.Dishwasher.remove();
 ```
 
-## 追加中
+## Adding
 
-## 洗えるアイテムを追加します。
+## Add a washable item.
 
 ```zenscript
 mods.cfm.Dishwasher.add(@Nonnull final IItemStack item);
