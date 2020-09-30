@@ -4,23 +4,23 @@
 
 Questa classe è stata aggiunta da una mod con ID `crafttweaker`. Perciò, è necessario avere questa mod installata per poter utilizzare questa funzione.
 
-## Importare la classe
+## Importing the class
 Potrebbe essere necessario importare il pacchetto, se si incontrano dei problemi (come castare un vettore), quindi meglio essere sicuri e aggiungere la direttiva di importazione.
 ```zenscript
 crafttweaker.api.data.ByteData
 ```
 
 ## Interfacce Implementate
-ByteData implementa le seguenti interfacce. Ciò significa che ogni metodo presente nell'interfaccia può essere usato anche per questa classe.
+ByteData implements the following interfaces. Ciò significa che ogni metodo presente nell'interfaccia può essere usato anche per questa classe.
 - [crafttweaker.api.data.INumberData](/vanilla/api/data/INumberData)
 
-## Costruttori
+## Constructors
 ```zenscript
-new crafttweaker.api.data.ByteData(interno come byte);
+new crafttweaker.api.data.ByteData(internal as byte);
 ```
-| Parametro | Tipo | Descrizione                 |
+| Parameter | Type | Description                 |
 | --------- | ---- | --------------------------- |
-| interno   | byte | Nessuna descrizione fornita |
+| internal  | byte | Nessuna descrizione fornita |
 
 
 
