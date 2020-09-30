@@ -1,16 +1,16 @@
-# 加圧器
+# Pressurizer
 
-## パッケージのインポート
-`mods.naturcraft.psurizer`
+## Importing the Package
+`mods.nuclearcraft.pressurizer`
 
-## レシピを追加中
+## Adding Recipes
 ```zenscript
-mods.nuclearcraft.pressurizer.addRecipe([itemInput, itemOutput, @Optional double timeMultiplier, @Optional door powerMultiplier, @Optional door processRadiation]);
+mods.nuclearcraft.pressurizer.addRecipe([itemInput, itemOutput, @Optional double timeMultiplier, @Optional double powerMultiplier, @Optional double processRadiation]);
 ```
 
-## レシピを削除
+## Removing Recipes
 ```zenscript
-mods.nuclecraft.pressurizer.removeRecipeWithInput([itemInput]);
-mods.nuclecraft.pressurizer.removeRecipeWithOutput([itemOutput]);
-mods.nuclecraft.pressurizer.removeAllRecipes();
+mods.nuclearcraft.pressurizer.removeRecipeWithInput([itemInput]);
+mods.nuclearcraft.pressurizer.removeRecipeWithOutput([itemOutput]);
+mods.nuclearcraft.pressurizer.removeAllRecipes();
 ```
