@@ -1,28 +1,28 @@
-# 元合金
+# Metal Former
 
-## パッケージ
+## Package
 
 `import mods.ic2.MetalFormer;`
 
-## メソッド
+## Methods
 
 - **[IItemStack](/Vanilla/Items/IItemStack/) output**
-- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) の入力**
+- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input**
 
-## カットレシピを追加
+## Add Cutting Recipe
 
 ```zenscript
-mods.ic2.MetalFormer.addCuttingRecipe(IItemStack 出力, IIngredient input);
+mods.ic2.MetalFormer.addCuttingRecipe(IItemStack output, IIngredient input);
 
 mods.ic2.MetalFormer.addCuttingRecipe(<minecraft:diamond>, <minecraft:dirt> * 64);
 ```
 
-## カットレシピを削除
+## Remove Cutting Recipe
 
 - If using Ic2 Experimental, to remove a recipe, simply remove the corresponding line in `config/ic2/metal_former_cutting.ini`.
-- Ic2 Classic と Ic2c Extras を使用している場合、レシピを削除するには、 `config/ic2/ic2machineRecipes.json` 内の対応するレシピを無効にしてください。
+- If using Ic2 Classic and Ic2c Extras, to remove a recipe, simply disable the corresponding recipe in `config/ic2/ic2machineRecipes.json`.
 
-## 押し出しレシピを追加
+## Add Extruding Recipe
 
 ```zenscript
 mods.ic2.MetalFormer.addExtrudingRecipe(IItemStack output, IIngredient input);
@@ -30,20 +30,20 @@ mods.ic2.MetalFormer.addExtrudingRecipe(IItemStack output, IIngredient input);
 mods.ic2.MetalFormer.addExtrudingRecipe(<minecraft:diamond_block>, <minecraft:dirt> * 64);
 ```
 
-## 押し出しレシピを削除
+## Remove Extruding Recipe
 
 - If using Ic2 Experimental, to remove a recipe, simply remove the corresponding line in `config/ic2/metal_former_extruding.ini`.
-- Ic2 Classic と Ic2c Extras を使用している場合、レシピを削除するには、 `config/ic2/ic2machineRecipes.json` 内の対応するレシピを無効にしてください。
+- If using Ic2 Classic and Ic2c Extras, to remove a recipe, simply disable the corresponding recipe in `config/ic2/ic2machineRecipes.json`.
 
-## ロールレシピを追加
+## Add Rolling Recipe
 
 ```zenscript
-mods.ic2.MetalFormer.addRollingRecipe(IItemStack 出力, IIngredient input);
+mods.ic2.MetalFormer.addRollingRecipe(IItemStack output, IIngredient input);
 
 mods.ic2.MetalFormer.addRollingRecipe(<minecraft:diamond>, <minecraft:dirt> * 32);
 ```
 
-## ロールレシピを削除
+## Remove Rolling Recipe
 
-- Ic2 Experimental を使用してレシピを削除する場合は、config/ic2/metal_former_rolling.ini の `該当する行を削除してください`
-- Ic2 Classic と Ic2c Extras を使用している場合、レシピを削除するには、 `config/ic2/ic2machineRecipes.json` 内の対応するレシピを無効にしてください。
+- If using Ic2 Experimental, to remove a recipe, simply remove the corresponding line in `config/ic2/metal_former_rolling.ini`
+- If using Ic2 Classic and Ic2c Extras, to remove a recipe, simply disable the corresponding recipe in `config/ic2/ic2machineRecipes.json`.
