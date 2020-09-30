@@ -1,14 +1,14 @@
-# Broyeur
+# Grinder
 
-## Importation du paquet en cours
-`grinder mods.techreborn.grinder`
+## Importing the Package
+`mods.techreborn.grinder`
 
-## Ajout de recettes
+## Adding Recipes
 ```zenscript
-mods.techreborn.grinder.addRecipe(IItemStack, IIngredient input1, int ticktime, int euTick);
+mods.techreborn.grinder.addRecipe(IItemStack output, IIngredient input1, int ticktime, int euTick);
 ```
 
-## Suppression des recettes
+## Removing Recipes
 ```zenscript
 mods.techreborn.grinder.removeInputRecipe(IIngredient ingredient);
 mods.techreborn.grinder.removeRecipe(IItemStack output);
