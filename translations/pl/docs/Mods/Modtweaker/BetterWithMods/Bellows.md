@@ -1,10 +1,10 @@
-# Wywietrzniki
+# Bellows
 
-Rejestr Bellows pozwala na dodawanie przedmiotów do klasy wagowej dla tego, czy może być wydmuchany przed Bellowi
+The Bellows registry allows adding items to a weight class for whether it can be blown when in front of a Bellows
 
-Wartość może być liczbą dziesiętną między (0, 128). W której liczbie nakazuje się jak wiele bloków z dala od wzgórza, przedmiot będzie wydmuchiwany, dopóki nie będzie już się poruszał.
+Value can be a decimal between (0, 128]. In which the number dictates how many blocks away from the bellows the item will be blown until it does not move anymore.
 
 ```zenscript
-mods.betterwithmods.Bellows.set(IItemStack stack, wartość float);
+mods.betterwithmods.Bellows.set(IItemStack stack, float value);
 
 ```
