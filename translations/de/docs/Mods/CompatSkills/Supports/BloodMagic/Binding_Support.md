@@ -1,30 +1,30 @@
-# Bindungsunterstützung
+# Binding Support
 
-## Bindung:
+## Binding:
 
-Dies wird die Bindung von Gegenständen für besagte Gegenstände abbrechen, wenn der Spieler die Anforderungen nicht erfüllt.
+This will cancel Item Binding for said specific item if the player doesn't meet the requirements.
 
-### Vor-1.4.0:
+### Pre-1.4.0:
 
 #### Syntax:
 
-    Leeres Beispiel:
+    Blank Example:
     mods.compatskills.BindHandler.addBindLock(String failureMessage, IItemStack stack, String... requirements);
     
-    Test Beispiel:
+    Test Example:
     mods.compatskills.BindHandler.addBindLock("Untold Dark Energies swirl around you and then subside", <bloodmagic:blood_orb>.withTag({orb: "bloodmagic:weak"}), "reskillable:building|15", "reskillable:magic|7", "stage|test", "adv|minec
     
 
-### Nach-1.4.0
+### Post-1.4.0
 
-Mit CompatSkills 1.4.0 wurde die Bindungssperre nun als Teil von ItemStack-Locking eingerollt. Dies bedeutet, dass es keine spezielle Skript-Syntax mehr gibt, um einem Element eine bindende Sperre hinzuzufügen.
+As of CompatSkills 1.4.0 the binding locking has now been rolled in as a part of ItemStack-Locking. This means there is no longer a dedicated script syntax for adding a binding lock to an item.
 
-Diese Änderung hat auch einige andere Änderungen mit sich gebracht. Zum Beispiel wurde die angezeigte Standardfehlermeldung in mancher Hinsicht geändert:
+This change has also come with a few other changes. For example the default error message displayed has been changed in some regards:
 
-- Es wird nun neben den Anforderungen im Chat als Nur-Spieler-Statusmeldung angezeigt
-- Die Fehlermeldung ist nun eine lokalisierbare Zeichenkette: 
+- It now displays alongside requirements in the chat as a player-only status message
+- The error message is now a Localizable string: 
 
-    compatskills.bloodmagic.bindingError=Untold Dark Energies wirbeln um dich herum und dann subside
+    compatskills.bloodmagic.bindingError=Untold Dark Energies swirl around you and then subside
     
 
-Das bedeutet, dass Autoren des Ressourcenpacks nun die Fehlermeldung in jede gewünschte Sprache übersetzen können. Dies bedeutet auch, dass Sie Mods wie ResourceLoader oder Base (ContentTweaker present) verwenden können, um den Fehlerstring zu ändern.
+This means that resource pack authors can now localize the error message into whatever language they want. This also means you can use mods like ResourceLoader or Base (With ContentTweaker present) to change the error string.
