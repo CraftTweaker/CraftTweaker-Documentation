@@ -13,7 +13,7 @@ MCLiteralArgumentBuilder 实现了以下接口。 这意味着对这个接口可
 - [crafttbower.api.commands.custom.MCArgumentBuilder](/vanilla/api/commands/custom/MCArgumentBuilder)
 
 ## 方法
-### 构建中
+### build
 
 返回类型： [craftbiner.api.commands.custom.MCLiteralCommandNode](/vanilla/api/commands/custom/MCLiteralCommandNode)
 
@@ -23,15 +23,15 @@ myMCLiteralArgumentBuilder.build();
 
 ### equals #等于
 
-返回类型：布尔值
+Return type: boolean
 
 ```zenscript
 myMCLiteralArgumentBuilder.equals(o as Object);
 ```
 
-| 参数 | 类型 | 描述                      |
-| -- | -- | ----------------------- |
-| o  | 对象 | No description provided |
+| 参数 | 类型     | 描述                      |
+| -- | ------ | ----------------------- |
+| o  | Object | No description provided |
 
 
 ### 执行
@@ -42,9 +42,9 @@ myMCLiteralArgumentBuilder.equals(o as Object);
 myMCLiteralArgumentBuilder.executes(命令 craftbiner.api.commands.custom.MCCommand);
 ```
 
-| 参数 | 类型                                                                                    | 描述                      |
-| -- | ------------------------------------------------------------------------------------- | ----------------------- |
-| 命令 | [craftminstrer.api.commands.custom.MCCommand](/vanilla/api/commands/custom/MCCommand) | No description provided |
+| 参数      | 类型                                                                                    | 描述                      |
+| ------- | ------------------------------------------------------------------------------------- | ----------------------- |
+| command | [craftminstrer.api.commands.custom.MCCommand](/vanilla/api/commands/custom/MCCommand) | No description provided |
 
 
 ### fork
@@ -94,7 +94,7 @@ myMCLiteralArgumentBuilder.getCommand();
 
 ### getLiteral
 
-返回类型：字符串
+Return type: String
 
 ```zenscript
 myMCLiteralArgumentBuilder.getLiteral();
@@ -126,7 +126,7 @@ myMCLiteralArgumentBuilder.getRequirement();
 
 ### hashCode
 
-返回类型：int
+Return type: int
 
 ```zenscript
 myMCLiteralArgumentBuilder.hashCode();
@@ -134,7 +134,7 @@ myMCLiteralArgumentBuilder.hashCode();
 
 ### isFork
 
-返回类型：布尔值
+Return type: boolean
 
 ```zenscript
 myMCLiteralArgumentBuilder.isFork();
@@ -206,7 +206,7 @@ myMCLiteralArgumentBuilder.then(参数为 craftbiner.api.commands.custom.MCComma
 
 ### toString
 
-返回类型：字符串
+Return type: String
 
 ```zenscript
 myMCLiteralArgumentBuilder.toString();
@@ -220,13 +220,13 @@ myMCLiteralArgumentBuilder.toString();
 myMCLiteralArgumentBuilder == o 作为对象
 ```
 
-| 参数 | 类型 | 描述                      |
-| -- | -- | ----------------------- |
-| o  | 对象 | No description provided |
+| 参数 | 类型     | 描述                      |
+| -- | ------ | ----------------------- |
+| o  | Object | No description provided |
 
-## 卡斯特尔
+## Casters
 
-| 结果类型        | 是否隐藏 |
-| ----------- | ---- |
-| 字符串[string] | true |
+| 结果类型   | 是否隐藏 |
+| ------ | ---- |
+| String | true |
 
