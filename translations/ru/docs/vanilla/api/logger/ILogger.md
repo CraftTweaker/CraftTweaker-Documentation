@@ -1,6 +1,6 @@
 # ILogger
 
-Базовый класс используется для интерфейса с файлом crafttweaker.log и другими логгерами (такими как плейер).
+Base class used to interface with the crafttweaker.log file and other loggers (such as the player logger).
 
 Этот класс был добавлен модом с mod-id `crafttweaker`. Так что если вы хотите использовать эту функцию, вам нужно установить этот мод.
 
@@ -10,61 +10,61 @@
 crafttweaker.api.ILogger
 ```
 
-## Методы
+## Methods
 ### debug
 
-Регистрирует отладочное сообщение.
+Logs a debug message.
 
 ```zenscript
-logger.debug(сообщение как String);
+logger.debug(message as String);
 logger.debug("message");
 ```
 
-| Параметр  | Тип    | Описание             |
-| --------- | ------ | -------------------- |
-| сообщение | String | сообщение для входа. |
+| Параметр | Тип    | Описание              |
+| -------- | ------ | --------------------- |
+| message  | String | message to be logged. |
 
 
-### ошибка
+### error
 
-Регистрирует сообщение об ошибке.
+Logs an error message.
 
 ```zenscript
-logger.error(сообщение как строка);
+logger.error(message as String);
 logger.error("message");
 ```
 
-| Параметр  | Тип    | Описание             |
-| --------- | ------ | -------------------- |
-| сообщение | String | сообщение для входа. |
+| Параметр | Тип    | Description           |
+| -------- | ------ | --------------------- |
+| message  | String | message to be logged. |
 
 
-### инфо
+### info
 
-Регистрирует информационное сообщение.
+Logs an info message.
 
 ```zenscript
-logger.info(сообщение как строка);
+logger.info(message as String);
 logger.info("message");
 ```
 
-| Параметр  | Тип    | Описание             |
-| --------- | ------ | -------------------- |
-| сообщение | String | сообщение для входа. |
+| Параметр | Тип    | Description           |
+| -------- | ------ | --------------------- |
+| message  | String | message to be logged. |
 
 
-### предупреждение
+### warning
 
-Регистрирует предупреждение.
+Logs a warning message.
 
 ```zenscript
-logger.warning(сообщение как String);
+logger.warning(message as String);
 logger.warning("message");
 ```
 
-| Параметр  | Тип    | Описание             |
-| --------- | ------ | -------------------- |
-| сообщение | String | сообщение для входа. |
+| Параметр | Тип    | Description           |
+| -------- | ------ | --------------------- |
+| message  | String | message to be logged. |
 
 
 
