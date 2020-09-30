@@ -1,14 +1,14 @@
-# パワードThingies :: Tweaker Class
+# Powered Thingies :: Tweaker Class
 
-これは、各マシンの個々の `Tweaker` クラスのインスタンスを取得するために使用されるエントリポイントです。
+This is the entry point used to get instances of the individual `Tweaker` classes for each machine.
 
-### インポート中
+### Importing
 
 ```zenscript
 import mods.poweredthingies.Tweaker;
 ```
 
-### マシン固有の微調整を取得する
+### Getting Machine Specific Tweakers
 
 ```zenscript
 var compoundMaker = Tweaker.compoundTweaker();
@@ -22,6 +22,6 @@ var poweredKiln = Tweaker.poweredKilnTweaker();
 var powderMaker = Tweaker.powderMakerTweaker();
 ```
 
-### このクラスが存在する理由
+### Reasons why this class even exists
 
-基本クラスとKotlinを使うのが好きで、どちらもCTではうまくインポートできないからです。 それとも遅れてうまくいくわけにはいきません それで... それぞれのマシンの個々のクラスに直接アクセスする代わりに、これを使用することにこだわっている。
+Mainly because I love using base classes and Kotlin and both those things don't import well in CT. Or I'm too retarded to make it work. So... you are stuck with using this instead of having direct access to individual classes for each machine.
