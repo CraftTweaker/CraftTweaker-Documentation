@@ -1,22 +1,22 @@
-# 强化的线索 :: 土生土长的击杀
+# Powered Thingies :: Powered Kiln
 
 ### 导入
 
 ```zenscript
-导入 mods.poweredthingies.Tweeper.poweredKilnTinfate 为 pkt;
+import mods.poweredthingies.Tweaker.poweredKilnTweaker as pkt;
 ```
 
-### 列出密钥，按键删除配方
+### Listing Keys, Removing Recipes by Key, Clearing
 
 ```zenscript
 pkt().logKeys()
-pkt().removeRecipe('minecraft:planks') // 检查 <logKeys> 输出有效密钥
+pkt().removeRecipe('minecraft:planks') // check <logKeys> output for valid keys
 pkt().clear()
 ```
 
-### 添加配方
+### Adding Recipe
 
-##### 签名
+##### Signature
 
 ```zenscript
 addRecipe(input: IItemStack, output: IItemStack)
@@ -28,6 +28,6 @@ addRecipe(input: IItemStack, output: IItemStack)
 pkt().addRecipe(<minecraft:bucket>, <minecraft:iron_ingot>);
 ```
 
-### 注
+### Notes
 
-所有这些操作都会被缓存并运行在这台机器的默认注册表完成注册后所有配方(包括来自自定义jsons的配方)。
+All of these actions will get cached and ran after the default registry for this machine has finished registering all recipes (including the ones from the custom jsons).
