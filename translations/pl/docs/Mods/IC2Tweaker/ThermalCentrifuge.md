@@ -1,24 +1,24 @@
-# Wirówka termiczna
+# Thermal Centrifuge
 
-## Pakiet
+## Package
 
-`importuj mods.ic2.ThermalCentrifuge;`
+`import mods.ic2.ThermalCentrifuge;`
 
-## Metody
+## Methods
 
 - **[IItemStack](/Vanilla/Items/IItemStack/)[] outputs**
-- **[Składnik](/Vanilla/Variable_Types/IIngredient/) wejście**
-- **@Opcjonalnie minHeat**
+- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input**
+- **@Optional int minHeat**
 
-## Dodanie
+## Addition
 
 ```zenscript
-mods.ic2.ThermalCentrifuge.addRecipe([IItemStack[] wyjść, IIngredient input, @Optional int minHeat);
+mods.ic2.ThermalCentrifuge.addRecipe([IItemStack[] outputs, IIngredient input, @Optional int minHeat);
 
 mods.ic2.ThermalCentrifuge.addRecipe([<minecraft:diamond>, <minecraft:emerald>, <minecraft:nether_star>], <minecraft:dirt>);
 ```
 
-## Usuwanie
+## Removal
 
-- Jeśli używasz eksperymentalnego Ic2, aby usunąć przepis, po prostu usuń odpowiednią linię w `config/ic2/thermal_centrifuge.ini`
-- Jeśli używasz dodatków Ic2 Classic i Ic2c, aby usunąć przepis, po prostu wyłącz odpowiedni przepis w `config/ic2/ic2machineRecipes.json`.
+- If using Ic2 Experimental, to remove a recipe, simply remove the corresponding line in `config/ic2/thermal_centrifuge.ini`
+- If using Ic2 Classic and Ic2c Extras, to remove a recipe, simply disable the corresponding recipe in `config/ic2/ic2machineRecipes.json`.
