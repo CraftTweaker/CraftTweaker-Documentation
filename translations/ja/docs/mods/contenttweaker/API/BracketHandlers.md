@@ -1,27 +1,27 @@
-# BracketHandler
+# BracketHandlers
 
-このクラスの静的メソッドは、いつでもCrTのBEPにマージされる可能性があるため、直接使用しないことをお勧めします。 ブラケット式パーサーメソッドに動的にアクセスする必要がある場合は、
+I advise against using the static methods in this class directly as they may be merged into CrT's BEP at any point. If you need to access the Bracket Expression Parser methods dynamically, you can use
  ```zencode
  var myName = "misc";
  <itemgroup:${myName}>
  ```
 
-このクラスは mod-id `contenttweaker` を持つ mod によって追加されました。 従って、この機能を利用する場合はこのmodをインストールする必要があります。
+This class was added by a mod with mod-id `contenttweaker`. So you need to have this mod installed if you want to use this feature.
 
 ## クラスのインポート
-問題が発生した場合には、インポートが必要になります。とはいえ、お手数ですが予めインポートしておくほうが安全です。
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
 ```zenscript
-mods.contenttweaker.BracketHandler
+mods.contenttweaker.BracketHandlers
 ```
 
-## メソッド
+## Methods
 ### getItemGroup
 
-項目グループを取得します。 グループが見つからなかった場合はエラーが発生します
+Gets the itemGroup. Will throw an error if the group could not be found
 
- 戻り値: `見つかった MCItemGroup`
+ Returns: `The found MCItemGroup`
 
-戻り値の型: [mods.contenttweaker.item.MCItemGroup](/mods/contenttweaker/API/item/MCItemGroup)
+Return type: [mods.contenttweaker.item.MCItemGroup](/mods/contenttweaker/API/item/MCItemGroup)
 
 ```zenscript
 <itemgroup:misc>
@@ -30,18 +30,18 @@ mods.contenttweaker.BracketHandlers.getItemGroup(tokens as String);
 mods.contenttweaker.BracketHandlers.getItemGroup("misc");
 ```
 
-| パラメータ | タイプ  | 説明                          |
-| ----- | ---- | --------------------------- |
-| トークン  | 文字列型 | BEP呼び出しでDataCompoundを作成するもの |
+| Parameter | Type | Description                                 |
+| --------- | ---- | ------------------------------------------- |
+| tokens    | 文字列型 | What you createDataCompound in the BEP call |
 
 
 ### getToolType
 
-[mods.contenttweaker.item.MCToolType](/mods/contenttweaker/API/item/MCToolType) を取得します。 指定されたものが存在しない場合、新しいものを作成します。
+Gets a [mods.contenttweaker.item.MCToolType](/mods/contenttweaker/API/item/MCToolType). Will create a new one if the given one does not exist.
 
- 戻り値: `見つかった場合は [mods.contenttweaker.item.MCToolType](/mods/contenttweaker/API/item/MCToolType) または新しい MCToolType`
+ Returns: `The [mods.contenttweaker.item.MCToolType](/mods/contenttweaker/API/item/MCToolType) if found, or a new MCToolType`
 
-戻り値の型: [mods.contenttweaker.item.MCToolType](/mods/contenttweaker/API/item/MCToolType)
+Return type: [mods.contenttweaker.item.MCToolType](/mods/contenttweaker/API/item/MCToolType)
 
 ```zenscript
 <tooltype:shovel>
@@ -50,9 +50,9 @@ mods.contenttweaker.BracketHandlers.getToolType(tokens as String);
 mods.contenttweaker.BracketHandlers.getToolType("shovel");
 ```
 
-| パラメータ | タイプ  | 説明                        |
-| ----- | ---- | ------------------------- |
-| トークン  | 文字列型 | BEP呼び出しでDataCompoundを作成する |
+| Parameter | Type   | Description                                       |
+| --------- | ------ | ------------------------------------------------- |
+| tokens    | String | What you would createDataCompound in the BEP call |
 
 
 
