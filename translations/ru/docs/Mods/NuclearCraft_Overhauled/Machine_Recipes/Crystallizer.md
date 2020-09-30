@@ -1,16 +1,16 @@
-# Кристаллизатор
+# Crystallizer
 
-## Импортирование пакета
-`mods.nuclearcraft.Кристаллизатор`
+## Importing the Package
+`mods.nuclearcraft.Crystallizer`
 
-## Добавление рецептов
+## Adding Recipes
 ```zenscript
 mods.nuclearcraft.Crystallizer.addRecipe(ILiquidStack fluidInput, IIngredient itemOutput, @Optional double timeMultiplier, @Optional double powerMultiplier, @Optional double processRadiation);
 ```
 
-## Удаление рецептов
+## Removing Recipes
 ```zenscript
 mods.nuclearcraft.Crystallizer.removeRecipeWithInput(ILiquidStack fluidInput);
-mods.nuclearcraft.Crystallizer.removeRecipeWithOutput(IIngredient itemput);
-mods.nuclearcraft.Кристаллизер.removeAllRecipes();
+mods.nuclearcraft.Crystallizer.removeRecipeWithOutput(IIngredient itemOutput);
+mods.nuclearcraft.Crystallizer.removeAllRecipes();
 ```
