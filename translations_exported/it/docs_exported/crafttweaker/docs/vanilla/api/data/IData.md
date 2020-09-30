@@ -1,21 +1,21 @@
 # IData
 
-L'interfaccia IData è un'interfaccia generica per la gestione dei dati come NBT. È possibile lanciare su tutti i primitivi (breve, doppio, stringa, int, ...) così come alcuni array per IData. Ricordate che mentre offrono caratteristiche simili, IData e le loro controparti NON sono lo stesso, che è il motivo per cui saranno denominati DataTypes (e. . [crafttweaker.api.data.ByteData](/vanilla/api/data/ByteData)).
+The IData interface is a generic Interface for handling Data like NBT. You can cast about all primitives (short, double, string, int, ...) as well as certain arrays to IData. Remember that while they offer similar features, IData and their counterparts are NOT the same, which is why they will be referred to as DataTypes (e.g. [crafttweaker.api.data.ByteData](/vanilla/api/data/ByteData)).
 
 Questa classe è stata aggiunta da una mod con ID `crafttweaker`. Perciò, è necessario avere questa mod installata per poter utilizzare questa funzione.
 
-## Importare la classe
+## Importing the class
 Potrebbe essere necessario importare il pacchetto, se si incontrano dei problemi (come castare un vettore), quindi meglio essere sicuri e aggiungere la direttiva di importazione.
 ```zenscript
 crafttweaker.api.data.IData
 ```
 
-## Metodi
+## Methods
 ### asList
 
-Ottiene una lista<IData> rappresentazione di questo IData, restituisce nulla su qualsiasi cosa tranne [crafttweaker.api.data.ListData](/vanilla/api/data/ListData).
+Gets a List<IData> representation of this IData, returns null on anything but [crafttweaker.api.data.ListData](/vanilla/api/data/ListData).
 
- Restituisce: `null se questo IData non è una lista.`
+ Returns: `null if this IData is not a list.`
 
 Tipo di restituzione: Elenco&lt;[crafttweaker.api.data.IData](/vanilla/api/data/IData)&gt;
 
@@ -25,9 +25,9 @@ myIData.asList();
 
 ### asMap
 
-Ottiene una rappresentazione mappa<String, IData> di questo IData, restituisce nulla su qualsiasi cosa tranne [crafttweaker.api.data.MapData](/vanilla/api/data/MapData).
+Gets a Map<String, IData> representation of this IData, returns null on anything but [crafttweaker.api.data.MapData](/vanilla/api/data/MapData).
 
- Restituisce: `null se questo IData non è una mappa.`
+ Returns: `null if this IData is not a map.`
 
 Tipo restituito: [crafttweaker.api.data.IData](/vanilla/api/data/IData)[String]
 
@@ -37,41 +37,41 @@ myIData.asMap();
 
 ### asString
 
-Ottiene la rappresentazione stringa di questo IData
+Gets the String representation of this IData
 
- Restituisce: `Stringa che rappresenta questo IData (valore e tipo).`
+ Returns: `String that represents this IData (value and type).`
 
-Tipo di ritorno: Stringa
+Return type: String
 
 ```zenscript
 myIData.asString();
 ```
 
-### contiene
+### contains
 
-Controlla se questo IData contiene un altro IData, usato principalmente nelle sottoclassi di [crafttweaker. pi.data.ICollectionData](/vanilla/api/data/ICollectionData), è lo stesso di un controllo uguale su altri tipi di IData
+Checks if this IData contains another IData, mainly used in subclasses of [crafttweaker.api.data.ICollectionData](/vanilla/api/data/ICollectionData), is the same as an equals check on other IData types
 
  Restituisce: `true se gli IData forniti sono contenuti in questo IData`
 
-Tipo restituito: booleano
+Return type: boolean
 
 ```zenscript
-myIData.contains(dati come crafttweaker.api.data.IData);
+myIData.contains(data as crafttweaker.api.data.IData);
 myIData.contains("Display");
 ```
 
-| Parametro | Tipo                                                   | Descrizione                           |
-| --------- | ------------------------------------------------------ | ------------------------------------- |
-| dati      | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | dati per verificare se sono contenuti |
+| Parameter | Type                                                   | Description                      |
+| --------- | ------------------------------------------------------ | -------------------------------- |
+| data      | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | data to check if it is contained |
 
 
-### copia
+### copy
 
-Rende una copia di questo IData.
+Makes a copy of this IData.
 
- IData è immutabile per impostazione predefinita, usala per creare una copia corretta dell'oggetto.
+ IData is immutable by default, use this to create a proper copy of the object.
 
- Restituisce: `una copia di questo IData.`
+ Returns: `a copy of this IData.`
 
 Tipo restituito: [crafttweaker.api.data.IData](/vanilla/api/data/IData)
 
@@ -81,11 +81,11 @@ myIData.copy();
 
 ### getId
 
-Ottiene l'ID del tag NBT interno.
+Gets the ID of the internal NBT tag.
 
- Usato per determinare quale tipo di NBT è memorizzato (in un elenco per esempio)
+ Used to determine what NBT type is stored (in a list for example)
 
- Restituisce: `ID del tag NBT che questi dati rappresentano.`
+ Returns: `ID of the NBT tag that this data represents.`
 
 Tipo restituito: byte
 
@@ -95,11 +95,11 @@ myIData.getId();
 
 ### getString
 
-Ottiene la rappresentazione della stringa del tag INBT interno
+Gets the String representation of the internal INBT tag
 
- Restituisce: `Stringa che rappresenta l'INBT interno di questo IData.`
+ Returns: `String that represents the internal INBT of this IData.`
 
-Tipo di ritorno: Stringa
+Return type: String
 
 ```zenscript
 myIData.getString();
