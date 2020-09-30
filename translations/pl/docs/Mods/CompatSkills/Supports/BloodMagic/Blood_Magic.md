@@ -1,28 +1,28 @@
-# Krew Magiczna
+# Blood Magic
 
-**To wsparcie to WIP** **Jeśli coś się zgubi, otwórz problem na liście zgłoszeń!** [Link do śledzenia zgłoszeń](https://github.com/Coders-After-Dark/CompatSkills/issues)
+**This Support is WIP** **If Something Breaks, please open an issue on the issue tracker!** [Issue-Tracker Link](https://github.com/Coders-After-Dark/CompatSkills/issues)
 
-## Wiążący:
+## Binding:
 
-Spowoduje to anulowanie Wiązania w Magicznej Krew dla określonego przedmiotu, jeśli gracz nie spełnia wymagań.
+This will cancel the Item Binding in Blood Magic for said specific item if the player doesn't meet the requirements.
 
-### Składnia:
+### Syntax:
 
-    Pusty przykład:
-    mods.compatskills.BindHandler.addBindLock(String failureMessreMessage, IItemStack stack, String... wymagania);
+    Blank Example:
+    mods.compatskills.BindHandler.addBindLock(String failureMessage, IItemStack stack, String... requirements);
     
-    Test Przykład:
-    mods.compatskills.BindHandler.addBindLock ("Nieznana ciemna energia wir wokół ciebie, a następnie na własne potrzeby", <bloodmagic:blood_orb>.withTag({orb: "blood magic:weak"}), "reskillable:building|15", "reskillable:magic|7", "stage|test", "adv|minecraft:husbandry/plant_seed");
+    Test Example:
+    mods.compatskills.BindHandler.addBindLock("Untold Dark Energies swirl around you and then subside", <bloodmagic:blood_orb>.withTag({orb: "bloodmagic:weak"}), "reskillable:building|15", "reskillable:magic|7", "stage|test", "adv|minecraft:husbandry/plant_seed");
     
 
-## Rytuały:
+## Rituals:
 
-Spowoduje to anulowanie aktywacji rytuału, jeśli gracz nie spełnia wymagań.
+This will cancel the activation of a ritual if the player doesn't meet the requirements.
 
-### Składnia:
+### Syntax:
 
-    Pusty przykład:
-    mods.compatskills.RitualHandler.addRitualLock(String failureMessage, String ritual, String... Wymagania)
+    Blank Example:
+    mods.compatskills.RitualHandler.addRitualLock(String failureMessage, String ritual, String... requirements)
     
-    Test Przykład:
-    mods.compatskills.RitualHandler.addRitualLock ("Ponieważ rytuał aktywuje, nie osiągasz oczekiwanego wyniku", "rytualCrushing", "reskillable:building|15", "reskillable:magic|7", "stage|test", "adv|minecraft:husbandry/plant_seed")
+    Test Example:
+    mods.compatskills.RitualHandler.addRitualLock("As the ritual activates, you don't achieve the expected result", "ritualCrushing", "reskillable:building|15", "reskillable:magic|7", "stage|test", "adv|minecraft:husbandry/plant_seed")
