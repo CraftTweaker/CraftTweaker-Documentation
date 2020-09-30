@@ -1,78 +1,78 @@
-# Table d'assemblage
+# Assembly Table
 
-*Nécessite la fabrication de silicium de construction*
+*Requires BuildCraft Silicon*
 
-Chemin de classe : `mods.buildcraft.AssemblyTable`
+Class path: `mods.buildcraft.AssemblyTable`
 
-## Utiliser
+## Use
 
-Pour l'utiliser, importez la classe avec `import mods.buildcraft.AssemblyTable ;` au début de votre script.
+To use, import the class with `import mods.buildcraft.AssemblyTable;` at the beginning of your script.
 
-## Ajout d'une recette
+## Adding a Recipe
 
-`AssemblyTable.addRecipe(recetteNom, sortie, puissance, entrées) ;`
+`AssemblyTable.addRecipe(recipeName, output, power, inputs);`
 
-- `recetteName` (facultatif) &lt;chaîne> Le nom de la recette. *Doit être unique !*
+- `recipeName` (Optional) &lt;string> The name of the recipe. *Must be unique!*
 - `output` <[IItemStack](/vanilla/api/items/IItemStack)>
-- `puissance` &lt;int> coût d'énergie totale en MJ
+- `power` &lt;int> Total power cost in MJ
 - `inputs` <[IIngredient](/vanilla/api/items/IIngredient)[]>
 
 ```zenscript
-Importer mods.buildcraft.Table d'assemblage ;
+import mods.buildcraft.AssemblyTable;
 
-AssemblyTable.addRecipe("example_recipe_for_diamants", <minecraft:diamond>, 1000, [<minecraft:coal_block>, <minecraft:redstone>]);
+AssemblyTable.addRecipe("example_recipe_for_diamonds", <minecraft:diamond>, 1000, [<minecraft:coal_block>, <minecraft:redstone>]);
 ```
 
-## Suppression d'une recette
+## Removing a Recipe
 
 `AssemblyTable.removeByName(name);`
 
-- `recipeName` &lt;chaîne> Le nom de la recette.
+- `recipeName` &lt;string> The name of the recipe.
 
 ```zenscript
-Importer mods.buildcraft.AssemblyTable;
+import mods.buildcraft.AssemblyTable;
 
 AssemblyTable.removeByName("buildcraftsilicon:redstone_chipset");
 ```
 
-## Recettes existantes
+## Existing Recipes
 
-### Chipsets :
+### Chipsets:
 
 - `buildcraftsilicon:redstone_chipset`
 - `buildcraftsilicon:iron_chipset`
 - `buildcraftsilicon:gold_chipset`
 - `buildcraftsilicon:quartz_chipset`
-- `format@@0 buildcraftsilicon:diamond_chipset`
+- `buildcraftsilicon:diamond_chipset`
 
-### Plug-in :
+### Pluggables:
 
-- `format@@0 buildcraftsilicon:plug_pulsar`
-- `buildcraftsilicon:capteur de lumière`
+- `buildcraftsilicon:plug_pulsar`
+- `buildcraftsilicon:light-sensor`
 - `buildcrafttransport:facaderecipes`
 
-### Lentilles:
+### Lenses:
 
-- `buildcraftsilicon: lentilles normales`
-- `buildcraftsilicon:lentilles-filtre`
-- `buildcraftsilicon:lentilles-réguliers-<color>`
-- `buildcraftsilicon:lentilles-filter-<color>`
+- `buildcraftsilicon:lens-regular`
+- `buildcraftsilicon:lens-filter`
+- `buildcraftsilicon:lens-regular-<color>`
+- `buildcraftsilicon:lens-filter-<color>`
 
-*Remplacez `<color>` par l'un des suivants : `blanc`, `orange`, `magenta`, `bleu clair`, `jaune`, `chaux`, `rose`, `gris`, `argent`, `cyan`, `violet`, `bleu`, `marron`, `vert`, `rouge`, `noir`*
+*Replace `<color>` with any of the following: `white`, `orange`, `magenta`, `lightblue`, `yellow`, `lime`, `pink`, `gray`, `silver`, `cyan`, `purple`, `blue`, `brown`, `green`, `red`, `black`*
 
-### Fil :
+### Wires:
 
 - `buildcrafttransport:wire-<color>`
 
-*Remplacez `<color>` par l'un des suivants : `blanc`, `orange`, `magenta`, `bleu clair`, `jaune`, `chaux`, `rose`, `gris`, `argent`, `cyan`, `violet`, `bleu`, `marron`, `vert`, `rouge`, `noir`*
+*Replace `<color>` with any of the following: `white`, `orange`, `magenta`, `lightblue`, `yellow`, `lime`, `pink`, `gray`, `silver`, `cyan`, `purple`, `blue`, `brown`, `green`, `red`, `black`*
 
-### Portes :
+### Gates:
 
 - `buildcraftsilicon:gate-<operation>-<material>-no_modifier`
-- `buildcraftsilicon:modificateur de gate-<operation>-<material>-<modifier>`
+- `buildcraftsilicon:gate-modifier-<operation>-<material>-<modifier>`
 
-Paramètres:
+Parameters:
 
-- `<operation>`: `et` ou `ou`
-- `<material>`: `fer`, `nether_brick`, ou `or`
-- `<modifier>`: `lapis`, `quartz`, ou `diamant`
+- `<operation>`: `and` or `or`
+- `<material>`: `iron`, `nether_brick`, or `gold`
+- `<modifier>`: `lapis`, `quartz`, or `diamond`
