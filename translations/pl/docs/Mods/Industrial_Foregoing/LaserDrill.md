@@ -1,12 +1,12 @@
-# Wiertnica laserowa
+# Laser Drill
 
-### Importowanie
+### Importing
 
 ```zenscript
 import mods.industrialforegoing.LaserDrill;
 ```
 
-### Dodawanie
+### Adding
 
 ```zenscript
 LaserDrill.add(int itemLensMetaColor, IItemStack output, int ItemWeight);
@@ -14,10 +14,10 @@ LaserDrill.add(int itemLensMetaColor, IItemStack output, int ItemWeight);
 LaserDrill.add(1, <minecraft:stone>, 10);
 ```
 
-### Usuwanie
+### Removing
 
 ```zenscript
-LaserDrill.remove(wyjście IItemStack);
+LaserDrill.remove(IItemStack output);
 
 LaserDrill.remove(<minecraft:stone>);
 ```
