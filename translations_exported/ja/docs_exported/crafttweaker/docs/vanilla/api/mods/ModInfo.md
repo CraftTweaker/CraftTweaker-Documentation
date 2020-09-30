@@ -2,24 +2,24 @@
 
 読み込まれたMODについての情報を保持します
 
-crafttweakerのmod-idを持つmodによって追加されているクラスです。 従って、この機能を利用する場合はこのmodをインストールする必要があります。
+This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
 
-## クラスのインポート
-問題が発生した場合には、インポートが必要になります。とはいえ、お手数ですが予めインポートしておくほうが安全です。
+## Importing the class
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
 ```zenscript
 crafttweaker.api.modInfo
 ```
 
-## プロパティー
+## Properties
 
-| 名称          | タイプ                                                                                                | ゲッターあり | セッターあり |
-| ----------- | -------------------------------------------------------------------------------------------------- | ------ | ------ |
-| ブロック        | List&lt;[crafttweaker.api.block.MCBlock](/vanilla/api/blocks/MCBlock)&gt;              | true   | false  |
-| displayName | 文字列型                                                                                               | true   | false  |
-| エンティティタイプ   | List&lt;[crafttweaker.api.entity.MCEntityType](/vanilla/api/entities/MCEntityType)&gt; | true   | false  |
-| <unk>       | List&lt;[crafttweaker.api.fluid.MCFluid](/vanilla/api/fluid/MCFluid)&gt;               | true   | false  |
-| 項目          | List&lt;[crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)&gt;          | true   | false  |
-| modid       | 文字列型                                                                                               | true   | false  |
-| 名前空間        | 文字列型                                                                                               | true   | false  |
-| バージョン       | 文字列型                                                                                               | true   | false  |
+| 名称          | Type                                                                                               | Has Getter | Has Setter |
+| ----------- | -------------------------------------------------------------------------------------------------- | ---------- | ---------- |
+| blocks      | List&lt;[crafttweaker.api.block.MCBlock](/vanilla/api/blocks/MCBlock)&gt;              | true       | false      |
+| displayName | String                                                                                             | true       | false      |
+| エンティティタイプ   | List&lt;[crafttweaker.api.entity.MCEntityType](/vanilla/api/entities/MCEntityType)&gt; | true       | false      |
+| fluids      | List&lt;[crafttweaker.api.fluid.MCFluid](/vanilla/api/fluid/MCFluid)&gt;               | true       | false      |
+| items       | List&lt;[crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)&gt;          | true       | false      |
+| modid       | String                                                                                             | true       | false      |
+| 名前空間        | String                                                                                             | true       | false      |
+| version     | String                                                                                             | true       | false      |
 
