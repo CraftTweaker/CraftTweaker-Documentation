@@ -1,10 +1,10 @@
-### クラス
+### Class
 
 ```zenscript
 import mods.roots.RunicShears;
 ```
 
-#### メソッド
+#### Methods
 
 ```zenscript
 void addRecipe(
@@ -31,7 +31,7 @@ void addEntityRecipe(
 
 ```zenscript
 void removeRecipe(
-  IItemStack 出力 // 削除したいアイテムスタック出力
+  IItemStack output // the itemstack output that you wish to remove
 );
 ```
 
@@ -53,6 +53,6 @@ RunicShears.addEntityRecipe("egg_from_chicken", <minecraft:egg>*2, <entity:minec
 RunicShears.removeRecipe(<roots:fey_leather>);
 ```
 
-### メモ
+### Notes
 
-`removeRecipe` 関数は、目的の出力と一致するレシピ(ブロックとエンティティの両方)を削除しようとします。
+Note that the `removeRecipe` function will attempt to remove any recipe (both runic shearing of blocks and of entities) that matches the desired output.
