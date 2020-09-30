@@ -1,21 +1,21 @@
-# 健康处理器
+# Health Processor
 
 ## 所属包名
 ```zenscript
-导入模式.计算器.健康;
+import mods.calculator.health;
 ```
 
 ## 使用方式
 
-- **[Ingredient](/Vanilla/Variable_Types/IIngredient/) 输入** 输入.
-- **整数** 输入数量添加到该机上。
+- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input** The input.
+- **Int value** The amount of input adds to that machine.
 
-## 附加组件
+## Additon
 ```zenscript
-health.addRecipe(IIngretient input, int value)；
+health.addRecipe(IIngredient input, int value);
 ```
 
-## 移除
+## Removal
 ```zenscript
-health.removeRecipe(Ingredient input)；
+health.removeRecipe(IIngredient input);
 ```
