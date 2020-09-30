@@ -1,25 +1,25 @@
-# 燃料
+# Fuel
 
-`燃料` 软件包允许您添加冶炼燃料液体。
+The `Fuel` package allows you to add Smeltery fuel fluids.
 
 ## 导入包
 
-您可以使用 `mods.tconstruct.Fuel` 来调用合金包
+You can call the Alloy package using `mods.tconstruct.Fuel`
 
-## 添加燃料配方
+## Add Fuel Recipes
 
 ```zenscript
-//mods.tconstruct.Fuel.registerFuel(ILiquidStack fuel, int dur);
+//mods.tconstruct.Fuel.registerFuel(ILiquidStack fuel, int duration);
 mods.tconstruct.Fuel.registerFuel(<liquid:water> * 2, 300);
 ```
 
-参数：
+Parameters:
 
-- [ILiquidStack](/Vanilla/Liquids/ILiquidStack/) fuel -> 液体。 金额是一次消耗的最低增量。
-- 整数型变体持续时间→ 液体堆栈的消耗量为多少秒。
+- [ILiquidStack](/Vanilla/Liquids/ILiquidStack/) fuel → The fluid. Amount is the minimal increment that is consumed at once.
+- int duration → How many ticks the consumtpion of the fluidStack lasts.
 
-### 请考虑：
+### Consider this:
 
-- [ILiquidStack的](/Vanilla/Liquids/ILiquidStack/) 数量是一次消耗的最小增量(例如冶炼厂一次只消耗2毫巴)。
-- 时间长度是一个液体堆栈的数量。
-- 你不能设置液体在熔炼中的温度。 使用 [ILiquidDefinitation's](/Vanilla/Liquids/ILiquidDefinition/) ZenSetter 事先更改液体温度！
+- The [ILiquidStack's](/Vanilla/Liquids/ILiquidStack/) amount is the minimal increment that is consumed at once (e.g. the smeltery only consumes 2 mB at once).
+- The duration is how many ticks one fluid stack lasts.
+- You cannot set the temperature the fluid is going to have in the smeltery. Use an [ILiquidDefinition's](/Vanilla/Liquids/ILiquidDefinition/) ZenSetter to change the fluid's temperature beforehand!
