@@ -1,13 +1,13 @@
-# Блокировка урожая
+# Tool Harvest-Level Locking
 
-## Свойство:
+## Feature:
 
-Этот замок добавляет возможность для авторов закрепить инструменты в общем или специальном инструменте "типы" за их уровнем урожая. Это означает, что вы можете заблокировать все кирки с уровнем сбора урожая 3 за набором требований. Или вообще все инструменты с уровнем сбора урожая 3 за набором требований!
+This lock adds the ability for pack authors to lock Tools in general or specific tool "types" behind their harvest level. This means that you can lock down all pickaxes with a harvest level of "3" behind a set of requirements. Or in general all tools with a harvest level of 3 behind a set of requirements!
 
-## Синтаксис:
+## Syntax:
 
-    Compatskills.HarvestLock.addToolLevelLock(int level, String... requirement);
+    mods.compatskills.HarvestLock.addToolLevelLock(int level, String... requirements);
     mods.compatskills.HarvestLock.addToolLevelLock(String type, int level, String... requirements);
     
     mods.compatskills.HarvestLock.addToolLevelLock(3, "dim|1");
-    mods.compatskills.HarvestLock.addToolLevelLock("кирка", 3, "dim|1");
+    mods.compatskills.HarvestLock.addToolLevelLock("pickaxe", 3, "dim|1");
