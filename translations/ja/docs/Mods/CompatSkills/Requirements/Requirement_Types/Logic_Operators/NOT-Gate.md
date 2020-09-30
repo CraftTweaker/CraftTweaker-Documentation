@@ -1,10 +1,10 @@
-# NOT 演算子
+# NOT Operator
 
-**NOT** gate は入力の状態を切り替えます。 そのため、入力が `TRUE` の場合、出力は `FALSE` になり、その逆も同様になります。
+A **NOT** gate switches the state of the input. So if the input is `TRUE` then the output will be `FALSE` and vice versa.
 
-| Input | 出力 |
-| ----- | --:|
-| 0     |  1 |
-| 1     |  0 |
+| Input | Output |
+| ----- | ------:|
+| 0     |      1 |
+| 1     |      0 |
 
-Reskillableがサポートしているという最も単純なロジック要件は、要件を反転する能力です。 NOTゲートを使用してこれを行います。この構文は必須ではありません。 前述の Logic Gates のセクションで説明されているように、このロジック要件は、指定された要件が満たされていない場合にのみ満たされます。
+The simplest logic requirement that Reskillable supports is the ability to invert a requirement. It does this using a NOT gate and the syntax for it is not|requirement. As described above in the section about Logic Gates, this logic requirement will only be marked as met if the specified requirement is not met.
