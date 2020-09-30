@@ -1,19 +1,19 @@
-# Jugador en la cama
+# PlayerSleepInBed
 
 El Evento PlayerSleepInBed se activa cada vez que un jugador duerme. Este evento puede controlar si el jugador es capaz de dormir estableciendo `resultado`.
 
-## Clase de evento
+## Event Class
 
-Necesitarás lanzar el evento en la cabecera de la función como esta clase:  
-`crafttweaker.event. layerSleepInBedEvent`  
-Puede, por supuesto, también [importar](/AdvancedFunctions/Import/) la clase antes y utilizar ese nombre entonces.
+You will need to cast the event in the function header as this class:  
+`crafttweaker.event.PlayerSleepInBedEvent`  
+You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
 
-## Extensiones de la interfaz de eventos
+## Event interface extensions
 
-Los eventos PlayerSleepInBed implementan las siguientes interfaces y pueden llamar a todos sus métodos/getters/setters también:
+PlayerSleepInBed Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
 
-* [Evento IJugador](/Vanilla/Events/Events/IPlayerEvent/)
-* [Evento Posicionable](/Vanilla/Events/Events/IEventPositionable/)
+* [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
+* [IEventPositionable](/Vanilla/Events/Events/IEventPositionable/)
 
 ## Tipos de resultado
 
@@ -26,20 +26,20 @@ Los eventos PlayerSleepInBed implementan las siguientes interfaces y pueden llam
 
 ## ZenGetters
 
-La siguiente información puede ser recuperada del evento:
+The following information can be retrieved from the event:
 
-| ZenGetter   | Tipo de devolución                         |
-| ----------- | ------------------------------------------ |
-| `x`         | int                                        |
-| `y`         | int                                        |
-| `z`         | int                                        |
-| `jugador`   | [IPlayer](/Vanilla/Players/IPlayer/)       |
-| `resultado` | cadena (los valores posibles están arriba) |
+| ZenGetter | Return Type                                |
+| --------- | ------------------------------------------ |
+| `x`       | int                                        |
+| `y`       | int                                        |
+| `z`       | int                                        |
+| `player`  | [IPlayer](/Vanilla/Players/IPlayer/)       |
+| `result`  | cadena (los valores posibles están arriba) |
 
 ## ZenSetters
 
 Lo siguiente puede establecerse en el evento:
 
-| Ajuste      | Tipo de parámetro                          |
-| ----------- | ------------------------------------------ |
-| `resultado` | cadena (los valores posibles están arriba) |
+| ZenSetter | Parameter Type                             |
+| --------- | ------------------------------------------ |
+| `result`  | cadena (los valores posibles están arriba) |
