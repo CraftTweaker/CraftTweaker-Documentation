@@ -1,14 +1,14 @@
-# 米尔斯顿
+# Millstone
 
 ## 所属包名
-`导入 mods.stone_age。MillstoneManager`
+`import mods.stone_age.MillstoneManager;`
 
 ## 使用方式
-- **字符串名称** 配方名称
+- **String name** Recipe name
 - **[IItemStack](/Vanilla/Items/IItemStack/) output**
-- **[Igredient](/Vanilla/Variable_Types/IIngredient/) 输入**
-- **int activateCount** 激活毫石计数
-- **字符串组** 食谱组
+- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input**
+- **int activateCount** Activate millstone count
+- **String group** Recipe group
 
 ## 添加配方
 
