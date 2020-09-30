@@ -1,19 +1,19 @@
-# Congélation
+# Freezer
 
-Le paquet *congélateur* est utilisé pour ajouter ou supprimer des recettes vers/de la congélation.
+The *freezer* package is used for adding or removing recipes to/from the Freezer.
 
-## Appel en cours
+## Calling
 
-Vous pouvez appeler le paquet *freezer* en utilisant `mods.skyresources.freezer`
+You can call the *freezer* package using `mods.skyresources.freezer`
 
-## Ajout de recette
+## Recipe Addition
 
 ```zenscript
-//mods.skyresources.freezer.addRecipe(sortie IItemStack, entrée IItemStack, int ticks);
+//mods.skyresources.freezer.addRecipe(IItemStack output, IItemStack input, int ticks);
 mods.skyresources.freezer.addRecipe(<minecraft:ice>, <minecraft:dirt>, 900);
 ```
 
-## Suppression de la recette
+## Recipe Removal
 
 ```zenscript
 //mods.skyresources.freezer.removeRecipe(IItemStack output);
