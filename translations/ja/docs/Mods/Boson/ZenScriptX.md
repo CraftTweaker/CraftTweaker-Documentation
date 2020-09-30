@@ -1,15 +1,15 @@
-# ZenScriptX プロジェクト
+# The ZenScriptX Project
 
 The ZenScriptX Project is an unofficial project that Boson started and that aims to expand the possibilities of the ZenScript language, adding elements such as lazy evaluation of loops, Reflection, and functional interfaces, so that functions can be stored into a variable.
 
-この機能を使用するには、Function プログラミングや適切なオブジェクト指向プログラミング表現など、より高度なプログラミングパラダイムの知識が必要です。 While it's likely that this will prevent a lot of the demographic of ZenScript from actually making use of these functionalities, this will also lead to better quality code for people with more advanced scripting knowledge.
+The usage of this features requires stronger knowledge of more advanced programming paradigms, such as Functional Programming and proper Object Oriented Programming representation. While it's likely that this will prevent a lot of the demographic of ZenScript from actually making use of these functionalities, this will also lead to better quality code for people with more advanced scripting knowledge.
 
-このプロジェクトはまだ進行中ですが、1の時点で。 5、開発と依存関係を容易にするために、それは独自のZenCodeモジュール に移動される可能性が高いです。
+This project is still ongoing, but as of 1.15, it is highly likely it will be moved in its own separate ZenCode module, for ease of development and dependency.
 
-現時点では、ZenScriptX プロジェクトは以下の機能セットを追加するためのresponsbileです。
+As of now, the ZenScriptX Project is responsbile for adding the following set of functionalities:
 
-- [実験的なフラグプリプロセッサ指令format@@0](/Mods/Boson/Preprocessor/Exp/)
-- [関数インターフェイス](/Mods/Boson/Functions/Concept/)
-- [数学関数](/Mods/Boson/Math/Concept/)
-- [シーケンス](/Mods/Boson/Sequences/Concept/)
-- [リフレクション](/Mods/Boson/Reflection/Concept/)
+- [Experimental Flags Preprocessor Directive](/Mods/Boson/Preprocessor/Exp/)
+- [Functional Interfaces](/Mods/Boson/Functions/Concept/)
+- [Math Functions](/Mods/Boson/Math/Concept/)
+- [Sequences](/Mods/Boson/Sequences/Concept/)
+- [Reflection](/Mods/Boson/Reflection/Concept/)
