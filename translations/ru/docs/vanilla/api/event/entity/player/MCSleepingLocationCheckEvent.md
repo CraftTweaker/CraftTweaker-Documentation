@@ -1,4 +1,4 @@
-# Событие MCSleepingLocationCheckEvent
+# MCSleepingLocationCheckEvent
 
 Этот класс был добавлен модом с mod-id `crafttweaker`. Так что если вы хотите использовать эту функцию, вам нужно установить этот мод.
 
@@ -8,28 +8,28 @@
 crafttweaker.api.event.entity.player.MCSleepingLocationCheckEvent
 ```
 
-## Конструкторы
+## Constructors
 ```zenscript
-new crafttweaker.api.event.entity.player.MCSleepingLocationCheckEvent(обработчик функции.Consumer<crafttweaker.api.event.entity.player.MCSleepingLocationCheckEvent>);
+new crafttweaker.api.event.entity.player.MCSleepingLocationCheckEvent(handler as function.Consumer<crafttweaker.api.event.entity.player.MCSleepingLocationCheckEvent>);
 ```
-| Параметр | Тип                                                                                                                                                   | Описание             |
+| Параметр | Тип                                                                                                                                                   | Description          |
 | -------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------- |
 | handler  | function.Consumer<[crafttweaker.api.event.entity.player.MCSleepingLocationCheckEvent](/vanilla/api/event/entity/player/MCSleepingLocationCheckEvent)> | Описание отсутствует |
 
 
 
-## Методы
-### Местоположение getSleepinging
+## Methods
+### getSleepingLocation
 
-Возвращает [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos)
+Returns [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos)
 
 ```zenscript
 myMCSleepingLocationCheckEvent.getSleepingLocation();
 ```
 
-### имеет Результат
+### hasResult
 
-Определяет, ожидает ли это событие значимое значение результата. Примечание: События с аннотацией HasResult будут автоматически добавлены для возврата true.
+Determines if this event expects a significant result value. Note: Events with the HasResult annotation will have this method automatically added to return true.
 
 Возвращает boolean
 
@@ -37,11 +37,11 @@ myMCSleepingLocationCheckEvent.getSleepingLocation();
 myMCSleepingLocationCheckEvent.hasResult();
 ```
 
-### неотменяемый
+### isCancelable
 
-Определите, если эта функция вообще недоступна. Возвращается: `Если доступ к установленной отмене должен быть разрешен
- Примечание:
- События с отменяемой аннотацией будут иметь этот метод автоматически добавлены для возврата истины.`
+Determine if this function is cancelable at all. Returns: `If access to setCanceled should be allowed
+ Note:
+ Events with the Cancelable annotation will have this method automatically added to return true.`
 
 Возвращает boolean
 
@@ -49,25 +49,25 @@ myMCSleepingLocationCheckEvent.hasResult();
 myMCSleepingLocationCheckEvent.isCancelable();
 ```
 
-### отменено
+### isCanceled
 
-Определяет, отменено ли это событие и должно прекратить выполнение. Возвращение: `Текущее состояние отменено`
+Determine if this event is canceled and should stop executing. Returns: `The current canceled state`
 
 Возвращает boolean
 
 ```zenscript
-myMCSleepingLocationCheckEvent.isCancel();
+myMCSleepingLocationCheckEvent.isCanceled();
 ```
 
-### установка отменена
+### setCanceled
 
 ```zenscript
-myMCSleepingLocationCheckEvent.setCancel(отмените как boolean);
+myMCSleepingLocationCheckEvent.setCanceled(cancel as boolean);
 ```
 
-| Параметр | Тип     | Описание             |
+| Параметр | Тип     | Description          |
 | -------- | ------- | -------------------- |
-| отменить | boolean | Описание отсутствует |
+| cancel   | boolean | Описание отсутствует |
 
 
 
