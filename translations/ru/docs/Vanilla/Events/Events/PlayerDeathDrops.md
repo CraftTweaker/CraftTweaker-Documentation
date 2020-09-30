@@ -1,6 +1,6 @@
-# ПлеерСмертельная Смерть
+# PlayerDeathDrops
 
-Событие PlayerDeathDrops запускается, когда предметы игрока попадут на землю из-за смерти игрока.
+The PlayerDeathDrops Event is fired whenever a player's items fall to the ground due to the player's death.
 
 ## Класс события
 
@@ -18,18 +18,18 @@ PlayerDeathDrops реализует следующие интерфейсы и �
 
 Следующая информация может быть получена от события:
 
-| Геттер                 | Возвращаемый тип                                              |
-| ---------------------- | ------------------------------------------------------------- |
-| `player`               | [IPlayer](/Vanilla/Players/IPlayer/)                          |
-| `элементы`             | [`Список<IEntityItem>`](/Vanilla/Entities/IEntityItem/) |
-| `источник повреждения` | [IDamageSource](/Vanilla/Damage/IDamageSource/)               |
+| Геттер         | Возвращаемый тип                                            |
+| -------------- | ----------------------------------------------------------- |
+| `player`       | [IPlayer](/Vanilla/Players/IPlayer/)                        |
+| `items`        | [`List<IEntityItem>`](/Vanilla/Entities/IEntityItem/) |
+| `damageSource` | [IDamageSource](/Vanilla/Damage/IDamageSource/)             |
 
-## Изменение выпадения предмета
+## Modifying the item drops
 
-Вы можете либо добавить в дроплист, либо полностью заменить его новым:
+You can either add to the droplist or completely substitute it with a new one:
 
 ```zenscript
-event.items = //ссылка на список IEntityItem .
+event.items = //reference to IEntityItem list.
 
 //event.addItem(IItemStack item);
 event.addItem(<minecraft:iron_ingot>);
