@@ -1,75 +1,75 @@
 # ICTBlockState
 
-Объект ICTBlockState представляет текущее состояние блока.
+An ICTBlockState object represents a block's current state.
 
 ## Импорт пакета
 
-Возможно, вам потребуется импортировать пакет, если вы столкнетесь с какими-либо проблемами, так что лучше быть безопасным чем извините и добавьте импорт.  
-`импорт mods.contenttweaker.BlockState;`
+It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
+`import mods.contenttweaker.BlockState;`
 
-## Вызов ICTBlockState
+## Calling an ICTBlockState
 
-Вы можете получить ICTBlockState в качестве параметра либо в [функции IBlockAction](/Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IBlockAction/) или в [Обработчике блоков](/Mods/ContentTweaker/Vanilla/Brackets/Bracket_Blocks/)
+You can get an ICTBlockState either as a parameter in an [IBlockAction function](/Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IBlockAction/) or from the [Block Bracket Handler](/Mods/ContentTweaker/Vanilla/Brackets/Bracket_Blocks/)
 
 `<block:minecraft:dirt>`
 
-## Методы ZenMethods и ZenGetters
+## ZenMethods and ZenGetters
 
-| ZenMethod         | Геттеры | Возвращаемый тип                                                       | Описание                                                         |
-| ----------------- | ------- | ---------------------------------------------------------------------- | ---------------------------------------------------------------- |
-| getBlock()        | блок    | [БИБлок](/Vanilla/Blocks/IBlock/)                                      | Возвращает реферируемый блок                                     |
-| getMeta()         | meta    | int                                                                    | Возвращает метаданные реферированного блока                      |
-| canProvidePower() |         | boolean                                                                | Возвращается, если блок реферата может обеспечить мощь редстоуна |
-| getMobilityFlag() |         | [PushReaction](/Mods/ContentTweaker/Vanilla/Types/Block/PushReaction/) | Возвращает флаг push-реакции                                     |
+| ZenMethod         | ZenGetter | Возвращаемый тип                                                       | Description                                             |
+| ----------------- | --------- | ---------------------------------------------------------------------- | ------------------------------------------------------- |
+| getBlock()        | block     | [IBlock](/Vanilla/Blocks/IBlock/)                                      | Returns the refered block                               |
+| getMeta()         | meta      | int                                                                    | Returns the refered block's metadata                    |
+| canProvidePower() |           | boolean                                                                | Returns if the refered block can provide Redstone Power |
+| getMobilityFlag() |           | [PushReaction](/Mods/ContentTweaker/Vanilla/Types/Block/PushReaction/) | Returns the push reaction flag                          |
 
 ## ZenMethods
 
-### незаменимый
+### isReplacable
 
 `boolean isReplaceable(IWorld world, IBlockPos pos);`  
-Параметры:
+Parameters:
 
-- [IWorld](/Mods/ContentTweaker/Vanilla/Types/World/IWorld/) мир → Мир для проверки
-- [IBlockPos](/Mods/ContentTweaker/Vanilla/Types/Block/IBlockPos/) бак → Положение Блока
+- [IWorld](/Mods/ContentTweaker/Vanilla/Types/World/IWorld/) world → The world to be checked in
+- [IBlockPos](/Mods/ContentTweaker/Vanilla/Types/Block/IBlockPos/) pos → The Block's position
 
-Возвращает логическое значение, которое говорит может ли блок быть заменен или нет.
+Returns a boolean that sais whether the block can be replaced or not.
 
 ### getLightValue
 
 `int getLightValue(IWorld world, IBlockPos blockPos);`  
-Параметры:
+Parameters:
 
-- [IWorld](/Mods/ContentTweaker/Vanilla/Types/World/IWorld/) мир → Мир для проверки
-- [IBlockPos](/Mods/ContentTweaker/Vanilla/Types/Block/IBlockPos/) бак → Положение Блока
+- [IWorld](/Mods/ContentTweaker/Vanilla/Types/World/IWorld/) world → The world to be checked in
+- [IBlockPos](/Mods/ContentTweaker/Vanilla/Types/Block/IBlockPos/) pos → The Block's position
 
-Возвращает подсказку, представляющую текущее значение света в заданном месте.
+Returns an int representing the current light value at the given location.
 
-### Слабая Сила
+### getWeakPower
 
-`int getWeakPower(IWorld world, IBlockPos blockPos, лицом лицом к лицу);`  
-Параметры:
+`int getWeakPower(IWorld world, IBlockPos blockPos, Facing facing);`  
+Parameters:
 
-- [IWorld](/Mods/ContentTweaker/Vanilla/Types/World/IWorld/) мир → Мир для проверки
-- [IBlockPos](/Mods/ContentTweaker/Vanilla/Types/Block/IBlockPos/) бак → Положение Блока
-- [лицом](/Mods/ContentTweaker/Vanilla/Types/Block/Facing/) перед → сторона должна быть проверена
+- [IWorld](/Mods/ContentTweaker/Vanilla/Types/World/IWorld/) world → The world to be checked in
+- [IBlockPos](/Mods/ContentTweaker/Vanilla/Types/Block/IBlockPos/) pos → The Block's position
+- [Facing](/Mods/ContentTweaker/Vanilla/Types/Block/Facing/) facing → The side to be checked
 
-Возвращает подсказку, представляющую текущую силу редстоуна на этой стороне.
+Returns an int representing the current redstone power on this side.
 
 ### getComparatorInputOverride
 
 `int getComparatorInputOverride(IWorld world, IBlockPos blockPos);`
 
-Параметры:
+Parameters:
 
-- [IWorld](/Mods/ContentTweaker/Vanilla/Types/World/IWorld/) мир → Мир для проверки
-- [IBlockPos](/Mods/ContentTweaker/Vanilla/Types/Block/IBlockPos/) бак → Положение Блока
+- [IWorld](/Mods/ContentTweaker/Vanilla/Types/World/IWorld/) world → The world to be checked in
+- [IBlockPos](/Mods/ContentTweaker/Vanilla/Types/Block/IBlockPos/) pos → The Block's position
 
-Возвращает подсказку, представляющую входной элемент редактора редстоун-компаратора.
+Returns an int representing the block's redstone comparator input override type.
 
-### Сравнение двух объектов ICTBlockState
+### Comparing two ICTBlockState objects
 
-Вы можете использовать `int compare(ICTBlockState другой);` или ZenCompare Tokens `==` `!=`.  
-Длительность возврата разных типов:
+You can either use `int compare(ICTBlockState other);` or the ZenCompare Tokens `==` `!=`.  
+The return different types though:
 
-- `state.compare(other)` возвращает подсказку, 0 если она равна
-- `состояние == другой` возвращает значение переменной "истина"
+- `state.compare(other)` returns an int that is 0 if they are equal
+- `state == other` returns a bool that is true of they are equal
