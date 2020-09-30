@@ -1,6 +1,6 @@
-# Изменить размер игрока
+# PlayerChangedDimension
 
-Событие PlayerChangedDimension запускается всякий раз, когда [игрок](/Vanilla/Players/IPlayer/) [измерение/мир](/Vanilla/World/IWorld/) изменяется, например при входе или выходе из него.
+The PlayerChangedDimension Event is fired whenever a [player's](/Vanilla/Players/IPlayer/) [dimension/world](/Vanilla/World/IWorld/) changes, for example upon entering/leaving the nether.
 
 ## Класс события
 
@@ -10,7 +10,7 @@ You can, of course, also [import](/AdvancedFunctions/Import/) the class before a
 
 ## Наследование от интерфейсов событий
 
-PlayerChandedDimension События реализуют следующие интерфейсы и также могут вызвать все методы/getters/setters:
+PlayerChandedDimension Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
 
 - [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
 
@@ -18,10 +18,10 @@ PlayerChandedDimension События реализуют следующие ин
 
 Следующая информация может быть получена от события:
 
-| Геттеры    | Возвращаемый тип                     |
-| ---------- | ------------------------------------ |
-| `player`   | [IPlayer](/Vanilla/Players/IPlayer/) |
-| `от`       | int                                  |
-| `из мира`  | [IWorld](/Vanilla/World/IWorld/)     |
-| `до`       | int                                  |
-| `весь мир` | [IWorld](/Vanilla/World/IWorld/)     |
+| ZenGetter   | Возвращаемый тип                     |
+| ----------- | ------------------------------------ |
+| `player`    | [IPlayer](/Vanilla/Players/IPlayer/) |
+| `from`      | int                                  |
+| `fromWorld` | [IWorld](/Vanilla/World/IWorld/)     |
+| `to`        | int                                  |
+| `toWorld`   | [IWorld](/Vanilla/World/IWorld/)     |
