@@ -1,34 +1,34 @@
 # IEntityAgeable
 
-Un'entità agibile è una che cresce nel tempo, come una mucca.
+An Ageable Entity is one that grows over time, like a cow.
 
-## Importazione del pacchetto
+## Importing the package
 
-Potrebbe essere necessario importare il pacchetto se si incontrano problemi (come lanciare un [Array](/AdvancedFunctions/Arrays_and_Loops/)), quindi meglio essere sicuri che spiacenti e aggiungere l'importazione.  
+It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
 `import crafttweaker.entity.IEntityAgeable;`
 
-## Estendere [IEntityCreature](/Vanilla/Entities/IEntityCreature/)
+## Extending [IEntityCreature](/Vanilla/Entities/IEntityCreature/)
 
-IEntityAgeable estende [IEntityCreature](/Vanilla/Entities/IEntityCreature/). Ciò significa che tutte le funzioni disponibili per [IEntities](/Vanilla/Entities/IEntityCreature/) sono disponibili anche per IEntityAgeable.
+IEntityAgeable extends [IEntityCreature](/Vanilla/Entities/IEntityCreature/). That means all functions available to [IEntities](/Vanilla/Entities/IEntityCreature/) also are available to IEntityAgeable.
 
-## Metodi
+## Methods
 
 ### ZenGetters/Setters
 
-| ZenGetter  | ZenSetter   | Tipo |
+| ZenGetter  | ZenSetter   | Type |
 | ---------- | ----------- | ---- |
 | growingAge | growingAge  | int  |
 |            | scaleForAge | bool |
 
 ### ZenMethods
 
-#### aggiungi età
+#### add age
 
-I metodi prevedono un int e il secondo metodo un bool.  
-Entrambi i metodi non restituiscono nulla.  
-Normalmente, il secondo metodo fa lo stesso del primo con falso come argomento forzato, che può differire per le implementazioni mod, però.
+Methods expect an int and the second method an optional bool.  
+Both methods return nothing.  
+Normally, the second method does the same as the first with false as forced argument, that may differ for mod implementations, though.
 
 ```zenscript
-entAgObj.ageUp(int secondi, @Optional boolean forzato);
-entAgObj.addGrowth(int secondi);
+entAgObj.ageUp(int seconds, @Optional boolean forced);
+entAgObj.addGrowth(int seconds);
 ```
