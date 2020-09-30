@@ -1,48 +1,48 @@
 # Sieving
 
-## Paket
+## Package
 
-Um auf `Sieve` zuzugreifen, ohne den vollständigen Pfad zu klären, können Sie das Paket oben an Ihrem Script mit folgendem importieren:
+To access `Sieve` without clarifying the full path, you can import the package at the top of your Script with the following:
 
 ```zenscript
-importieren mods.exnihilocreatio.Sieve;
+import mods.exnihilocreatio.Sieve;
 ```
 
 ## Methoden
 
-- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) Block** Der Block, der die Ausgabe fallen lässt.
-- **[IItemStack](/Vanilla/Items/IItemStack/) Ausgabe** Das Item das aus dem Block fällt.
-- **Schwebende Chance** Die Chance sollte zwischen 0-1 liegen.
+- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) block** The block that drops the output.
+- **[IItemStack](/Vanilla/Items/IItemStack/) output** The item that drops from the block..
+- **Float chance** The chance should be between 0-1.
 
 ## String Mesh
 
 ```zenscript
-Sieve.addStringMeshRecipe(IZutat, IItemStack, Float Chance);
+Sieve.addStringMeshRecipe(IIngredient, IItemStack, Float chance);
 Sieve.addStringMeshRecipe(<minecraft:gravel>, <minecraft:diamond>, 0.001);
 ```
 
-## Feuernetz
+## Flint Mesh
 
 ```zenscript
-Sieve.addFlintMeshRecipe(IZutat, IItemStack, Float Chance);
+Sieve.addFlintMeshRecipe(IIngredient, IItemStack, Float chance);
 Sieve.addFlintMeshRecipe(<minecraft:gravel>, <minecraft:diamond>, 0.01);
 ```
 
-## Eisengitter
+## Iron Mesh
 
 ```zenscript
-Sieve.addIronMeshRecipe(Igredient, IItemStack, Float Chance);
+Sieve.addIronMeshRecipe(IIngredient, IItemStack, Float chance);
 Sieve.addIronMeshRecipe(<minecraft:gravel>, <minecraft:diamond>, 0.1);
 ```
 
-## Diamantnetzwerk
+## Diamond Mesh
 
 ```zenscript
-Sieve.addDiamondMeshRecipe(IZutat, IItemStack, Float Chance);
+Sieve.addDiamondMeshRecipe(IIngredient, IItemStack, Float chance);
 Sieve.addDiamondMeshRecipe(<minecraft:gravel>, <minecraft:diamond>, 1);
 ```
 
-## Entfernen
+## Removal
 
 ```zenscript
 Sieve.removeAll();
