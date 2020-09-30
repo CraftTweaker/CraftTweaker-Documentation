@@ -1,16 +1,16 @@
-# 倒计时
+# Ingot Former
 
-## 导入软件包
-`先前的 mods.nuclearcraft.ingot`
+## Importing the Package
+`mods.nuclearcraft.ingot_former`
 
-## 添加配方
+## Adding Recipes
 ```zenscript
-mods.nuclearcraft.ingot_former.addRecipe([fluidInput, itemOutput, @Optional double timeMultiplier, @Optional double powerment Multiplier, @Optional double processRadiation]);
+mods.nuclearcraft.ingot_former.addRecipe([fluidInput, itemOutput, @Optional double timeMultiplier, @Optional double powerMultiplier, @Optional double processRadiation]);
 ```
 
-## 删除配方
+## Removing Recipes
 ```zenscript
-mods.nuclearcraft.ingot_former.removeRecipeWidInput([fluidInput]);
-mods.nuclearcraft.ingot_former.removeRecipeWOutput([itemOutput]);
+mods.nuclearcraft.ingot_former.removeRecipeWithInput([fluidInput]);
+mods.nuclearcraft.ingot_former.removeRecipeWithOutput([itemOutput]);
 mods.nuclearcraft.ingot_former.removeAllRecipes();
 ```
