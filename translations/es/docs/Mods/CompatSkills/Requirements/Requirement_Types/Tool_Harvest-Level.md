@@ -1,11 +1,11 @@
-# Nivel de cosecha de herramientas
+# Tool Harvest-Level
 
-Esto requiere que el jugador tenga una herramienta de objetos cuyo nivel de cosecha sea igual o superior al nivel especificado.
+This requires the player to be holding an itemTool whose harvest level is equal or higher than the level specified.
 
-    Ejemplo:
-    cosecha|entero
+    Example:
+    harvest|integer
     
-    Ejemplo de trabajo:
-    cosecha|1
-    cosecha|2
-    cosecha|3
+    Working Example:
+    harvest|1
+    harvest|2
+    harvest|3
