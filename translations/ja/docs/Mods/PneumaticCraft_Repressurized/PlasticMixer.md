@@ -1,37 +1,37 @@
-# プラスチックミキサー
+# Plastic Mixer
 
-プラスチックミキサーは、以下の2つの機能を持つマシンです。
+The Plastic Mixer is a machine with two functions:
 
-* 液体プラスチック流体を固体プラスチックシートに固体化させるには、赤、緑、青の染料を使用してシートを色付けします。
-* 固体プラスチックシートを液体プラスチックに溶融する。 これには最低150°C(423K)の温度が必要です。
+* To solidify Liquid Plastic fluid to solid Plastic sheets, using red, green and blue dyes to colour the sheets.
+* To melt solid Plastic sheets into Liquid Plastic. This requires a minimum temperature of 150°C (423K).
 
-CraftTweakerのサポートにより、溶融および/または固化目的のために任意のアイテムと液体の組み合わせを指定することができます。 アイテムを溶かすのみ、流体を固めるか、双方向プロセスを可能にするかを指定することができます。
+CraftTweaker support adds the ability to specify any item and liquid combination for melting and/or solidifying purposes. It is possible to specify that items should only be melted, fluids should only be solidified, or to allow a two-way process.
 
-固化ターゲットアイテムはどのアイテムでもかまいませんが、ここでは色とりどりのアイテムを使用するのが最も理にかなっています。 染料は常に使われているので出力品目が色付きかどうかに関わらず。
+While the solidification target item can be any item, it makes most sense to use colourable items here, since dyes are always used, regardless of whether or not the output item is colourable.
 
-## 発信中
+## Calling
 
-`mods.empaticcraft.plasticmixer` を使ってPlastic Mixerパッケージを呼び出すことができます。
+You can call the Plastic Mixer package using `mods.pneumaticcraft.plasticmixer`.
 
-## 削除中
+## Removing
 
-この関数は、与えられた [ILiquidStack](/Vanilla/Liquids/ILiquidStack/) `入力` で見つけた最初のレシピを削除します。
+This function removes the first recipe it finds with the given [ILiquidStack](/Vanilla/Liquids/ILiquidStack/) `input`:
 
 ```zenscript
-mods.emeraticcraft.plasticmixer.removeRecipe(ILiquidStack fluid);
+mods.pneumaticcraft.plasticmixer.removeRecipe(ILiquidStack fluid);
 // Example
-mods.emeraticcraft.plasticmixer.removeRecipe(<liquid:plastic>);
+mods.pneumaticcraft.plasticmixer.removeRecipe(<liquid:plastic>);
 ```
 
-この機能は *全ての* プラスチックミキサーのレシピを削除します。
+This function removes *all* Plastic Mixer recipes:
 
 ```zenscript
-mods.emeraticcraft.plasticmixer.removeAllRecipes();
+mods.pneumaticcraft.plasticmixer.removeAllRecipes();
 ```
 
-## 追加中
+## Adding
 
-TPPにレシピを追加するには、以下の機能を使用できます。
+The following functions can be used to add recipes to the TPP:
 
 ```zenscript
 // Add a two-way recipe (temperature in Kelvin)
