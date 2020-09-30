@@ -1,16 +1,16 @@
-# ロッククラッシャー
+# Rock Crusher
 
-## パッケージのインポート
-`mods.naturcraft.rock_crusher`
+## Importing the Package
+`mods.nuclearcraft.rock_crusher`
 
-## レシピを追加中
+## Adding Recipes
 ```zenscript
-mods.numeric.rock_crusher.addRecipe([itemInput, itemOutput1, itemOutput2, itemOutput3, @Optional double timeMultiplier, @Optional door processRadiation]);
+mods.nuclearcraft.rock_crusher.addRecipe([itemInput, itemOutput1, itemOutput2, itemOutput3, @Optional double timeMultiplier, @Optional double powerMultiplier, @Optional double processRadiation]);
 ```
 
-## レシピを削除
+## Removing Recipes
 ```zenscript
-mods.naturcraft.rock_crusher.removeRecipeWithInput([itemInput]);
-mods.nuclecraft.rock_crusher.removeRecipeWithOutput([itemOutput1, itemOutput2, itemOutput3]);
-mods.nuclecraft.rock_crusher.removeAllRecipes();
+mods.nuclearcraft.rock_crusher.removeRecipeWithInput([itemInput]);
+mods.nuclearcraft.rock_crusher.removeRecipeWithOutput([itemOutput1, itemOutput2, itemOutput3]);
+mods.nuclearcraft.rock_crusher.removeAllRecipes();
 ```
