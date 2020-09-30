@@ -1,16 +1,16 @@
 # PlayerBonemeal
 
-L'evento PlayerBonemeal viene sparato ogni volta che un giocatore usa bonemeal su un blocco.
+The PlayerBonemeal Event is fired whenever a player uses bonemeal on a block.
 
-## Classe Evento
+## Event Class
 
-Dovrai lanciare l'evento nell'intestazione della funzione come questa classe:  
-`crafttweaker.event. layerBonemealEvent`  
-È possibile, naturalmente, anche [importare](/AdvancedFunctions/Import/) la classe prima e utilizzare quel nome allora.
+You will need to cast the event in the function header as this class:  
+`crafttweaker.event.PlayerBonemealEvent`  
+You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
 
-## Estensioni dell'interfaccia evento
+## Event interface extensions
 
-PlayerBonemeal Events implementa le seguenti interfacce e sono in grado di chiamare tutti i loro metodi/getter/setter:
+PlayerBonemeal Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
 
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 - [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
@@ -19,24 +19,24 @@ PlayerBonemeal Events implementa le seguenti interfacce e sono in grado di chiam
 
 ## ZenGetters
 
-Le seguenti informazioni possono essere ricavate dall'evento:
+The following information can be retrieved from the event:
 
-| ZenGetter    | Tipo Di Reso                                |
+| ZenGetter    | Return Type                                 |
 | ------------ | ------------------------------------------- |
-| `annullato`  | boolean                                     |
-| `elaborato`  | boolean                                     |
+| `canceled`   | boolean                                     |
+| `processed`  | boolean                                     |
 | `x`          | int                                         |
 | `y`          | int                                         |
 | `z`          | int                                         |
-| `giocatore`  | [IPlayer](/Vanilla/Players/IPlayer/)        |
-| `mondo`      | [IWorld](/Vanilla/World/IWorld/)            |
-| `blocco`     | [IBlock](/Vanilla/Blocks/IBlock/)           |
+| `player`     | [IPlayer](/Vanilla/Players/IPlayer/)        |
+| `world`      | [IWorld](/Vanilla/World/IWorld/)            |
+| `block`      | [IBlock](/Vanilla/Blocks/IBlock/)           |
 | `blockState` | [IBlockState](/Vanilla/Blocks/IBlockState/) |
 | `blockPos`   | [IBlockPos](/Vanilla/World/IBlockPos/)      |
-| `dimensione` | int                                         |
-| `elemento`   | [IItemStack](/Vanilla/Items/IItemStack/)    |
+| `dimension`  | int                                         |
+| `item`       | [IItemStack](/Vanilla/Items/IItemStack/)    |
 
 ## ZenMethods
 
-- `event.cancel()` imposta l'evento come annullato
-- `event.process()` imposta l'evento come elaborato
+- `event.cancel()` sets the event as cancelled
+- `event.process()` sets the event as processed
