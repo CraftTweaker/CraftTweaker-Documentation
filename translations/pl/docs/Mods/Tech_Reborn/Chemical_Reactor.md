@@ -1,16 +1,16 @@
-# Reaktor chemiczny
+# Chemical Reactor
 
-## Importowanie pakietu
-`[PLACEHOLDER] mods.techreborn.chemicalReactor`
+## Importing the Package
+`mods.techreborn.chemicalReactor`
 
-## Dodawanie przepisów
+## Adding Recipes
 ```zenscript
 mods.techreborn.chemicalReactor.addRecipe(IItemStack output1, IIngredient input1, IIngredient input2, int ticktime, int euTick);
 ```
 
-## Usuwanie przepisów
+## Removing Recipes
 ```zenscript
-mods.techreborn.chemicalReactor.removeInputRecipe(Składnik składnika);
-mods.techreborn.chemicalReactor.removeRecipe(wyjście IItemStack);
+mods.techreborn.chemicalReactor.removeInputRecipe(IIngredient ingredient);
+mods.techreborn.chemicalReactor.removeRecipe(IItemStack output);
 mods.techreborn.chemicalReactor.removeAll();
 ```
