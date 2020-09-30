@@ -1,51 +1,51 @@
 # ZenAnnotation
 
-Una ZenAnnotation può essere data a una Classe o ai suoi Metodi per esporla a ZenScript
+A ZenAnnotation can be given to a Class or its Methods to expose it to ZenScript
 
-## Annotazioni di classe
+## Class annotations
 
-Queste annotazioni possono essere date a ZenClasses
+These annotations can be given to ZenClasses
 
-| Annotazione                                                              | Valore                                                                                          | Target | Informazioni                                                                                 |
-| ------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------- | ------ | -------------------------------------------------------------------------------------------- |
-| [`@ZenClass`](/Dev_Area/ZenAnnotations/Annotation_ZenClass/)             | Nome ZenClass (es. `crafttweaker.item.IItemStack`), può differire dal nome formale della classe | Classe | Il nome deve essere unico                                                                    |
-| [`@ZenExpansion`](/Dev_Area/ZenAnnotations/Annotation_ZenExpansion/)     | Nome di ZenType esteso (es. `crafttweaker.item.IItemStack`)                                     | Classe | Il nome deve esistere già (si cant estendere qualcosa di inesistente)                        |
-| [`@ZenRegister`](/Dev_Area/ZenAnnotations/Annotation_ZenRegister/)       |                                                                                                 | Classe | Usato per registrare automaticamente la classe o l'espansione                                |
-| [`@IterableList`](/Dev_Area/ZenAnnotations/Annotation_Iterable/)         | Nome ZenClass del Tipo Iterabile (es. `crafttweaker.mods.IMod`)                                 | Classe | La classe deve essere assegnabile a `Iterable<Type>`                                   |
-| [`@IterableMap`](/Dev_Area/ZenAnnotations/Annotation_Iterable/)          | Nome ZenClass della chiave e valore Iterable (es. `stringa`, `crafttweaker.item.IItemStack`)    | Classe | La classe deve essere assegnabile a `Lista<Type>`                                      |
-| [`@IterableSimple`](/Dev_Area/ZenAnnotations/Annotation_Iterable/)       | Nome ZenClass del Tipo Iterabile (es. `crafttweaker.mods.IMod`)                                 | Classe | La classe deve essere assegnabile a `Mappa<KeyType, ValueType>`                        |
-| [`@BracketHandler`](/Dev_Area/ZenAnnotations/Annotation_BracketHandler/) | Priorità gestore parentesi (es. `priorità = 19`)                                                | Classe | La classe deve essere assegnabile a `IBracketHandler`                                        |
-| [`@ModOnly`](/Dev_Area/ZenAnnotations/Annotation_ModOnly/)               | Nome della mod richiesto (`isModLoaded(annotation.getValue())` deve essere eval a true)         | Classe | Usato in combinazione con [`@ZenRegister`](/Dev_Area/ZenAnnotations/Annotation_ZenRegister/) |
+| Annotation                                                               | Value                                                                                            | Target | Information                                                                                 |
+| ------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------ | ------ | ------------------------------------------------------------------------------------------- |
+| [`@ZenClass`](/Dev_Area/ZenAnnotations/Annotation_ZenClass/)             | ZenClass Name (e.g. `crafttweaker.item.IItemStack`), can differ from class' formal name          | Class  | Name has to be unique                                                                       |
+| [`@ZenExpansion`](/Dev_Area/ZenAnnotations/Annotation_ZenExpansion/)     | Expanded ZenType name (e.g. `crafttweaker.item.IItemStack`)                                      | Class  | Name has to exist already (you cant extend something nonexistant)                           |
+| [`@ZenRegister`](/Dev_Area/ZenAnnotations/Annotation_ZenRegister/)       |                                                                                                  | Class  | Used to Automatically register the class or expansion                                       |
+| [`@IterableList`](/Dev_Area/ZenAnnotations/Annotation_Iterable/)         | ZenClass name of the Iterable Type (e.g. `crafttweaker.mods.IMod`)                               | Class  | Class needs to be assignable to `Iterable<Type>`                                      |
+| [`@IterableMap`](/Dev_Area/ZenAnnotations/Annotation_Iterable/)          | ZenClass name of the Iterable key and value Type (e.g. `string`, `crafttweaker.item.IItemStack`) | Class  | Class needs to be assignable to `List<Type>`                                          |
+| [`@IterableSimple`](/Dev_Area/ZenAnnotations/Annotation_Iterable/)       | ZenClass name of the Iterable Type (e.g. `crafttweaker.mods.IMod`)                               | Class  | Class needs to be assignable to `Map<KeyType, ValueType>`                             |
+| [`@BracketHandler`](/Dev_Area/ZenAnnotations/Annotation_BracketHandler/) | Bracket Handler Priority (e.g. `priority = 19`)                                                  | Class  | Class needs to be assignable to `IBracketHandler`                                           |
+| [`@ModOnly`](/Dev_Area/ZenAnnotations/Annotation_ModOnly/)               | Required mod's name (`isModLoaded(annotation.getValue())` needs to eval to true)                 | Class  | Used in combination with [`@ZenRegister`](/Dev_Area/ZenAnnotations/Annotation_ZenRegister/) |
 
-## Annotazioni dei parametri
+## Parameter annotations
 
-Queste annotazioni possono essere date ai parametri del metodo
+These annotations can be given to Method Parameters
 
-| Annotazione                                                   | Target    | Informazioni                                                                                                   |
-| ------------------------------------------------------------- | --------- | -------------------------------------------------------------------------------------------------------------- |
-| `@NotNull`                                                    | Parametro | Non fa nulla (NYI)                                                                                             |
-| [`@Opzionale`](/Dev_Area/ZenAnnotations/Annotation_Optional/) | Parametro | Indica un parametro come facoltativo. I parametri opzionali possono essere omessi quando si chiama la funzione |
+| Annotation                                                   | Target    | Information                                                                                   |
+| ------------------------------------------------------------ | --------- | --------------------------------------------------------------------------------------------- |
+| `@NotNull`                                                   | Parameter | Does nothing (NYI)                                                                            |
+| [`@Optional`](/Dev_Area/ZenAnnotations/Annotation_Optional/) | Parameter | Denotes a Parameter as optional. Optional parameters can be omitted when calling the function |
 
-## Annotazioni del metodo
+## Method annotations
 
-Queste annotazioni possono essere date a Metodi (sia statici che nonstatici)
+These annotations can be given to Methods (both static and nonstatic)
 
-| Annotazione                                                                | Valore                                                                           | Target |
-| -------------------------------------------------------------------------- | -------------------------------------------------------------------------------- | ------ |
-| [`@ZenCaster`](/Dev_Area/ZenAnnotations/Annotation_ZenCaster/)             |                                                                                  | Metodo |
-| [`@ZenOperator`](/Dev_Area/ZenAnnotations/Annotation_ZenOperator/)         | [OperatorType](/Dev_Area/ZenOperators/)                                          | Metodo |
-| [`@ZenGetter`](/Dev_Area/ZenAnnotations/ZenMembers/)                       | getter name (es. "name") se omesso, verrà utilizzato il nome del metodo senza () | Metodo |
-| [`@ZenSetter`](/Dev_Area/ZenAnnotations/ZenMembers/)                       | nome setter (es. "nome") se omesso, verrà utilizzato il nome del metodo senza () | Metodo |
-| [`@ZenMemberGetter`](/Dev_Area/ZenAnnotations/ZenMembers/)                 |                                                                                  | Metodo |
-| [`@ZenMemberSetter`](/Dev_Area/ZenAnnotations/ZenMembers/)                 |                                                                                  | Metodo |
-| [`@ZenMethod`](/Dev_Area/ZenAnnotations/Annotation_ZenMethod/)             |                                                                                  | Metodo |
-| [`@ZenMethodStatic`](/Dev_Area/ZenAnnotations/Annotation_ZenMethodStatic/) |                                                                                  | Metodo |
-| [`@ZenDoc`](/Dev_Area/ZenAnnotations/Annotation_ZenDoc/)                   | The Additional Method info for `dumpZS`                                          | Metodo |
+| Annotation                                                                 | Value                                                                    | Target |
+| -------------------------------------------------------------------------- | ------------------------------------------------------------------------ | ------ |
+| [`@ZenCaster`](/Dev_Area/ZenAnnotations/Annotation_ZenCaster/)             |                                                                          | Method |
+| [`@ZenOperator`](/Dev_Area/ZenAnnotations/Annotation_ZenOperator/)         | [OperatorType](/Dev_Area/ZenOperators/)                                  | Method |
+| [`@ZenGetter`](/Dev_Area/ZenAnnotations/ZenMembers/)                       | getter name (e.g. "name") if omited, method name without () will be used | Method |
+| [`@ZenSetter`](/Dev_Area/ZenAnnotations/ZenMembers/)                       | setter name (e.g. "name") if omited, method name without () will be used | Method |
+| [`@ZenMemberGetter`](/Dev_Area/ZenAnnotations/ZenMembers/)                 |                                                                          | Method |
+| [`@ZenMemberSetter`](/Dev_Area/ZenAnnotations/ZenMembers/)                 |                                                                          | Method |
+| [`@ZenMethod`](/Dev_Area/ZenAnnotations/Annotation_ZenMethod/)             |                                                                          | Method |
+| [`@ZenMethodStatic`](/Dev_Area/ZenAnnotations/Annotation_ZenMethodStatic/) |                                                                          | Method |
+| [`@ZenDoc`](/Dev_Area/ZenAnnotations/Annotation_ZenDoc/)                   | The Additional Method info for `dumpZS`                                  | Method |
 
-## Annotazioni sul campo
+## Field annotations
 
-Queste annotazioni possono essere date a campi pubblici (sia statici che nonstatici)
+These annotations can be given to public fields (both static and nonstatic)
 
-| Annotazione                                            | Target | Informazioni                        |
-| ------------------------------------------------------ | ------ | ----------------------------------- |
-| [`@ZenProperty`](/Dev_Area/ZenAnnotations/ZenMembers/) | Campo  | Combina `@ZenSetter` e `@ZenGetter` |
+| Annotation                                             | Target | Information                            |
+| ------------------------------------------------------ | ------ | -------------------------------------- |
+| [`@ZenProperty`](/Dev_Area/ZenAnnotations/ZenMembers/) | Field  | Combines `@ZenSetter` and `@ZenGetter` |
