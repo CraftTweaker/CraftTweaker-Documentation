@@ -1,13 +1,13 @@
-# OreDictionaryロック
+# OreDictionary Locking
 
-## 機能:
+## Feature:
 
-このロックは、特定の鉱石辞書タグの下にあるすべてのアイテムをロックする機能を追加します。 つまり、"oreIron"の鉱石辞書エントリをロックすると、"oreIron"タグが付いた任意のアイテム/ブロックが設定された要件の後ろにロックされることになります。 このタイプのロックは [IData](/Vanilla/Data/IData/) パラメータもサポートしています。つまり、ロックに提供されたものに一致する IDATA タグがある場合、Ore-Dictタグの下のものにのみ影響を与えることを意味します。
+This lock adds the ability to lock any and all items that are under a certain Ore Dictionary Tag. This means that if you lock the Ore Dictionary Entry of "oreIron" any item/block with the tag "oreIron" would be locked behind the set requirements. This type of lock also supports an [IData](/Vanilla/Data/IData/) Parameter which means that it only affects things under the Ore-Dict tag IF they have a matching IDATA tag to the one provided to the lock.
 
-## 構文
+## Syntax:
 
-    mods.compatskills.OreDictLock.addOreDictLock(IOreDictEntry, String... locked);
-    mods.compatskills.OreDictLock.addNBTOreDictLock(IOreDictEntry, IData tag, String... locked);
+    mods.compatskills.OreDictLock.addOreDictLock(IOreDictEntry entry, String... locked);
+    mods.compatskills.OreDictLock.addNBTOreDictLock(IOreDictEntry entry, IData tag, String... locked);
     
     mods.compatskills.OreDictLock.addOreDictLock(<ore:ingotIron>, "dim|1");
     mods.compatskills.OreDictLock.addNBTOreDictLock(<ore:oreIron>, IData tag, "dim|1");
