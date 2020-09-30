@@ -1,14 +1,14 @@
 # Decay Generator
 
-## Importando el Paquete
+## Importing the Package
 `mods.nuclearcraft.decay_generator`
 
-## Añadiendo recetas
+## Adding Recipes
 ```zenscript
-mods.nuclearcraft.decay_generator.addRecipe([blockInput, blockOututput, double lifetimeTicks, double energyPerSegundo, @Optional double processRadiation]);
+mods.nuclearcraft.decay_generator.addRecipe([blockInput, blockOutput, double lifetimeTicks, double energyPerSecond, @Optional double processRadiation]);
 ```
 
-## Eliminando recetas
+## Removing Recipes
 ```zenscript
 mods.nuclearcraft.decay_generator.removeRecipeWithInput([blockInput]);
 mods.nuclearcraft.decay_generator.removeRecipeWithOutput([blockOutput]);
