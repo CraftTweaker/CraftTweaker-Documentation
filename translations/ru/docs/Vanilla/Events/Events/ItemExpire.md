@@ -1,8 +1,8 @@
-# Срок действия предмета
+# ItemExpire
 
-Время жизни предмета истекает каждый раз после окончания предмета  
-Это может быть отменено, чтобы предотвратить помеченные предмет как мертвый.  
-Если отменено, он добавит `дополнительные` в срок жизни предмета.
+The ItemExpire Event is fired whenever an Item expires (reaches its macimum lifespan).  
+It can be canceled to prevent the item from being flagged as dead.  
+If canceled it will add `extralife` to the item's lifetime.
 
 ## Класс события
 
@@ -19,7 +19,7 @@ PlayerDeathDrops реализует следующие интерфейсы и �
 
 ## ZenGetter/ZenSetter
 
-| Геттеры   | ZenSetter | Тип                                           |
+| ZenGetter | ZenSetter | Тип                                           |
 | --------- | --------- | --------------------------------------------- |
-| элемент   |           | [IEntityItem](/Vanilla/Entities/IEntityItem/) |
+| item      |           | [IEntityItem](/Vanilla/Entities/IEntityItem/) |
 | extraLife | extraLife | int                                           |
