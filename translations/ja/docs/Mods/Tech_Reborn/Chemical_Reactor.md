@@ -1,16 +1,16 @@
-# 化学リアクタ
+# Chemical Reactor
 
-## パッケージのインポート
+## Importing the Package
 `mods.techreborn.chemicalReactor`
 
-## レシピを追加中
+## Adding Recipes
 ```zenscript
-mods.techreborn.chemicalReactor.addRecipe(IItemStack output1, IIngredient input1, IInput2, int ticktime, int euTick);
+mods.techreborn.chemicalReactor.addRecipe(IItemStack output1, IIngredient input1, IIngredient input2, int ticktime, int euTick);
 ```
 
-## レシピを削除
+## Removing Recipes
 ```zenscript
-mods.techreborn.chemicalReactor.removeInputRecipe(IIngredient 食材);
+mods.techreborn.chemicalReactor.removeInputRecipe(IIngredient ingredient);
 mods.techreborn.chemicalReactor.removeRecipe(IItemStack output);
 mods.techreborn.chemicalReactor.removeAll();
 ```
