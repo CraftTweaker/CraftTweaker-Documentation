@@ -1,40 +1,40 @@
 # MCCommand
 
-Ta klasa została dodana przez moda z mod-id `crafttweaker`. Więc musisz zainstalować tę modyfikację, jeśli chcesz używać tej funkcji.
+This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
 
-## Importowanie klasy
-Może być wymagane zaimportowanie pakietu, jeśli napotkasz jakiekolwiek problemy (np. rzucanie tablicy), tak aby były bezpieczne niż przepraszamy i dodaj import.
+## Importing the class
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
 ```zenscript
 crafttweaker.api.commands.custom.MCCommand
 ```
 
-## Konstruktorzy
+## Constructors
 ```zenscript
 nowe crafttweaker.api.commands.custom.MCCommand(zabawne jako funkcja.Funkcja<crafttweaker.api.commands.custom.MCCommandContext, Integer>);
 ```
-| Parametr | Typ                                                                                                                                    | Opis             |
-| -------- | -------------------------------------------------------------------------------------------------------------------------------------- | ---------------- |
-| zabawa   | Funkcja&lt;[crafttweaker.api.commands.custom.MCCommandContext](/vanilla/api/commands/custom/MCCommandContext), Integer&gt; | Nie podano opisu |
+| Parameter | Type                                                                                                                                   | Description             |
+| --------- | -------------------------------------------------------------------------------------------------------------------------------------- | ----------------------- |
+| zabawa    | Funkcja&lt;[crafttweaker.api.commands.custom.MCCommandContext](/vanilla/api/commands/custom/MCCommandContext), Integer&gt; | No description provided |
 
 
 
-## Metody
-### równa się
+## Methods
+### equals
 
-Typ zwrotu: logiczny
+Return type: boolean
 
 ```zenscript
 myMCCommand.equals(o jako Obiekt);
 ```
 
-| Parametr | Typ    | Opis             |
-| -------- | ------ | ---------------- |
-| ob       | Obiekt | Nie podano opisu |
+| Parameter | Type   | Description             |
+| --------- | ------ | ----------------------- |
+| o         | Object | No description provided |
 
 
 ### hashCode
 
-Typ zwrotu: int
+Return type: int
 
 ```zenscript
 myMCCommand.hashCode();
@@ -42,40 +42,40 @@ myMCCommand.hashCode();
 
 ### uruchom
 
-Typ zwrotu: int
+Return type: int
 
 ```zenscript
 myMCCommand.run(context as crafttweaker.api.commands.custom.MCCommandContext);
 ```
 
-| Parametr | Typ                                                                                                | Opis             |
-| -------- | -------------------------------------------------------------------------------------------------- | ---------------- |
-| kontekst | [crafttweaker.api.commands.custom.MCCommandContext](/vanilla/api/commands/custom/MCCommandContext) | Nie podano opisu |
+| Parameter | Type                                                                                               | Description             |
+| --------- | -------------------------------------------------------------------------------------------------- | ----------------------- |
+| kontekst  | [crafttweaker.api.commands.custom.MCCommandContext](/vanilla/api/commands/custom/MCCommandContext) | No description provided |
 
 
 ### toString
 
-Typ zwrotu: Ciąg
+Return type: String
 
 ```zenscript
 myMCCommand.toString();
 ```
 
 
-## Operatorzy
-### RÓŻNE
+## Operators
+### EQUALS
 
 ```zenscript
 myMCCommand == o jako obiekt
 ```
 
-| Parametr | Typ    | Opis             |
-| -------- | ------ | ---------------- |
-| ob       | Obiekt | Nie podano opisu |
+| Parameter | Type   | Description             |
+| --------- | ------ | ----------------------- |
+| o         | Object | No description provided |
 
-## Szafy na akta, szafy na kartoteki, kasety na papiery, podpórki na papiery, pojemniki na przybory do pisania, stojaki na stemple biurowe i podobne wyposażenie biurowe lub biurkowe, z metali nieszlachetnych
+## Casters
 
-| Typ wyniku  | Jest niedomniemany |
-| ----------- | ------------------ |
-| Ciąg znaków | prawda             |
+| Result type | Is Implicit |
+| ----------- | ----------- |
+| String      | true        |
 
