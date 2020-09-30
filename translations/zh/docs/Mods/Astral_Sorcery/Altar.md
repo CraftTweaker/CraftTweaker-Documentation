@@ -82,11 +82,11 @@ mods.astralsorcery.Altar.addDiscoveryAltarRecipe("mypackname:shaped/internal/alt
 ![输入顺序](/Mods/Astral_Sorcery/Assets/guialtar2.png)
 
 ```zenscript
-mods.astralsorcery.Altar. dAttunementAltarRecipe("mypackname:shaped/internal/altar/iguessmarle", <minecraft:dirt>, 500, 300, [
-            null, null, null, 空,
+mods.astralsorcery.Altar.addAttunementAltarRecipe("mypackname:shaped/internal/altar/iguessmarble", <minecraft:dirt>, 500, 300, [
+            null, null, null,
             <ore:treeLeaves>, <astralsorcery:blockmarble:2>, <ore:treeLeaves>,
             null, <liquid:astralsorcery.liquidstarlight>, null,
-            <ore:blockMarble>, <ore:blockMarble>, <ore:blockMarble>, <ore:blockMarble>];
+            <ore:blockMarble>, <ore:blockMarble>, <ore:blockMarble>, <ore:blockMarble>]);
 ```
 
 ### 星宿
