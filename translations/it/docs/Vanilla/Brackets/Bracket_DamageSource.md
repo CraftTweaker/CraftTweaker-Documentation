@@ -1,11 +1,11 @@
 # DamageSource Bracket Handler
 
-Il Gestore delle parentesi di origine del danno consente di fare riferimento a [IDamageSources](/Vanilla/Damage/IDamageSource/) nel gioco.
+The Damage Source Bracket Handler allows you to refer to [IDamageSources](/Vanilla/Damage/IDamageSource/) in the game.
 
-Se la fonte del Danno non è una di quelle predefinite, ne creerà una nuova con il nome dato.
+If the Damage source is not one of the predefined ones, this will create a new one with the given name.
 
 <details>
-    <summary>Tipi Sorgenti Danno Preregisterati</summary>
+    <summary>Preregistered Damage Source Types</summary>
     <ul>
         <li>IN_FIRE</li>
         <li>LIGHTNING_BOLT</li>
@@ -13,16 +13,16 @@ Se la fonte del Danno non è una di quelle predefinite, ne creerà una nuova con
         <li>LAVA</li>
         <li>HOT_FLOOR</li>
         <li>IN_WALL</li>
-        <li>RIPARTIZIONE</li>
+        <li>CRAMMING</li>
         <li>DROWN</li>
-        <li>INIZIA</li>
+        <li>STARVE</li>
         <li>CACTUS</li>
-        <li>QUADRO</li>
-        <li>INTO_WALL</li>
-        <li>WORLD</li>
+        <li>FALL</li>
+        <li>FLY_INTO_WALL</li>
+        <li>OUT_OF_WORLD</li>
         <li>GENERIC</li>
         <li>MAGIC</li>
-        <li>SENZA</li>
+        <li>WITHER</li>
         <li>ANVIL</li>
         <li>FALLING_BLOCK</li>
         <li>DRAGON_BREATH</li>
