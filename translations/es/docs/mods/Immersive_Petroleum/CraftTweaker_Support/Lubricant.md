@@ -1,8 +1,8 @@
-# Registro Lubricante
+# Lubricant Registration
 
 ## registrarse
 
-| Tipo  | Tipo de Datos                               |
+| Type  | Data Type                                   |
 | ----- | ------------------------------------------- |
 | Input | [Fluidstack](/Vanilla/Liquids/IFluidStack/) |
 
@@ -10,15 +10,15 @@
 
 La cantidad de fluido dado se utiliza cada 4 Ticks.
 
-### Ejemplo de código:
+### Code Example:
 ```zenscript
 mods.immersivepetroleum.Lubricant.register(IFluidStack lubricantEntry);
 mods.immersivepetroleum.Lubricant.register(<fluid:lava> * 500);
 ```
 
-## eliminar todo
+## removeAll
 
-### Ejemplo de código:
+### Code Example:
 ```zenscript
 mods.immersivepetroleum.Lubricant.removeAll();
 ```
