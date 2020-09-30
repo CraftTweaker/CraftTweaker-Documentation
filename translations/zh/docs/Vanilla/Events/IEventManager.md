@@ -1,21 +1,21 @@
 # IEventManager
 
-IEventManager是你在处理事件处理程序时所需要的。
+The IEventManager is what you're gonna need when dealing with event handlers.
 
 ## 导入类
 
-如果您遇到任何问题，您可能需要 [导入类](/AdvancedFunctions/Import/) 。  
-`导入craftmiliter.events.IEventManager；`
+It might be required for you to [import](/AdvancedFunctions/Import/) the class if you encounter any issues.  
+`import crafttweaker.events.IEventManager;`
 
-## 调用事件管理器
+## Calling the event manager
 
-您可以使用 [global `事件` 字段访问事件管理器](/Vanilla/Global_Functions/)
+You can access the event manager using the [global `events` field](/Vanilla/Global_Functions/)
 
-## 事件如何工作？
+## How do events work?
 
-您可以添加一个代表事件的函数，从那里可以决定如果发生这种事件，您想要CrT做什么。  
-需要记住的最重要的事情是你需要 **把信息传输给你的技术！** 否则您将无法访问它的ZenGetters。  
-如果您只是想打印出您不需要访问该事件的内容，那么它就好了。
+You can add a function that represents the event and from there on you can decide what you want CrT to do if such an event occurs.  
+The most important thing to remember is that you need to **CAST THE EVENT TO IT'S TYPE!** as otherwise you will not be able to access any if it's ZenGetters.  
+If you simply want to print something where you don't need to access the event, then it's fine.
 
 ```zenscript
 events.onPlayerCrafted(function(event as crafttweaker.event.PlayerCraftedEvent){
@@ -27,57 +27,57 @@ events.onPlayerCrafted(function(event as crafttweaker.event.PlayerCraftedEvent){
 
 events.onPlayerLoggedIn(function(event) {
     //event instanceof Object -> No way of accessing it, so better cast!
-    打印("SOMEONE HAS LOGUGED IN!!!");
+    print("SOMEONE HAS LOGGED IN!!!");
 });
 ```
 
-## 有哪些活动可用？
+## What events are available?
 
-ZenMethods 将是您需要调用的 `事件`, 事件类将是您需要投射的事件。
+The ZenMethods would be what you'll need to call on `events`, the Event Class would be what you need to cast the event as.
 
-| ZenMethod（ZenMethod）        | 事件类                                                                                                           |
+| ZenMethod                   | Event Class                                                                                                   |
 | --------------------------- | ------------------------------------------------------------------------------------------------------------- |
-| onallows Despawn            | [`craftbenefer.event.EntityLivingSpawnEvent`](/Vanilla/Events/Events/EntityLivingSpawn/)                      |
-| onAnimalTame                | [`craftbenefer.event.AnimalTameEvent`](/Vanilla/Events/Events/AnimalTame/)                                    |
-| onBlockBreak                | [`Craftbiner.event.BlockBreak`](/Vanilla/Events/Events/BlockBreak/)                                           |
-| onBlockHarvestDrops         | [`craftbenefer.event.BlockHarvestDrops`](/Vanilla/Events/Events/BlockHarvestDrops/)                           |
-| onBlockplace                | [`craftbenefer.event.BlockPlaceEvent`](/Vanilla/Events/Events/BlockPlace/)                                    |
-| onCheckSpawn                | [`craftbenefer.event.EntityLivingExtenedSpawnEvent`](/Vanilla/Events/Events/EntityLivingSpawn/)               |
-| on命令                        | [`craftbinvest.command事件`](/Vanilla/Events/Events/CommandEvent/)                                              |
-| onCriticalHit               | [`CriticalHitEvent`](/Vanilla/Events/Events/CriticalHit/)                                                     |
-| onCropGrowPost              | [`craftbenefer.event.CropGrowPostEvent`](/Vanilla/Events/Events/CropGrowPost/)                                |
-| onCropGrowPre               | [`craftbenefer.event.CropGrowPreEvent`](/Vanilla/Events/Events/CropGrowPre/)                                  |
-| onEnchantLevel集             | [`craftbenefer.event.EnchantLevelSet事件`](/Vanilla/Events/Events/EnchantmentLevelSet/)                         |
-| onEnderTeleport             | [`craftbenefer.event.EnderTeleportEvent`](/Vanilla/Events/Events/EnderTeleport/)                              |
-| onentityLiving被攻击           | [`craftbenefer.event.EntityLivingAttackedEvent`](/Vanilla/Events/Events/EntityLivingAttacked/)                |
-| 亡语                          | [`craftbenefer.event.EntityLivingDeathEvent`](/Vanilla/Events/Events/EntityLivingDeath/)                      |
-| onentityLivingDeathDrops    | [`craftbenefer.event.EntityLivingDeathDropsEvent`](/Vanilla/Events/Events/EntityLivingDeathDrops/)            |
-| onEntityLivingFall          | [`craftbenefer.event.EntityLivingFallEvent`](/Vanilla/Events/Events/EntityLivingFall/)                        |
-| onentityLivingHurt          | [`craftbenefer.event.EntityLivingHurtEvent`](/Vanilla/Events/Events/EntityLivingHurt/)                        |
-| onentityLivingJump          | [`craftbenefer.event.EntityLivingJumpEvent`](/Vanilla/Events/Events/EntityLivingJump/)                        |
-| onEntityLivingUseItem       | [`所有 craftbenefer.event.EntityLivingUseItemEvent.All`](/Vanilla/Events/Events/LivingEntityUseItem/)           |
-| onEntityLivingUseItemFinish | [`craftbenefer.event.EntityLivingUseItemEvent.Finish`](/Vanilla/Events/Events/LivingEntityUseItem/)           |
-| onEntityLivingUseItemStart  | [`craftminstrer.event.EntityLivingUseItemEvent.启动`](/Vanilla/Events/Events/LivingEntityUseItem/)              |
-| onEntityLivingUseItemStop   | [`craftbower.event.EntityLivingUseItemEvent.Stop`](/Vanilla/Events/Events/LivingEntityUseItem/)               |
-| onEntityLivingUseItemTick   | [`craftminstrer.event.EntityLivingUseItemEvent.Tick`](/Vanilla/Events/Events/LivingEntityUseItem/)            |
-| onEntityMount               | [`craftbenefer.event.EntityMountEvent`](/Vanilla/Events/Events/EntityMount/)                                  |
-| onentityTravel Timension    | [`craftbenefer.event.EntityTravelToDimension事件`](/Vanilla/Events/Events/EntityTravelToDimension/)             |
-| onEntityStruckByLightning   | [`craftbenefer.event.EntityStruckByLightningEvent`](/Vanilla/Events/Events/EntityStruckByLightning/)          |
-| 引爆消耗度                       | [`craftbenefer.event.ExplosionDetonateEvent`](/Vanilla/Events/Events/ExplosionDetonate/)                      |
-| 引爆开始                        | [`craftbenefer.event.ExplosionStartEvent`](/Vanilla/Events/Events/ExplosionStart/)                            |
-| 法尔兰特雷姆普尔                    | [`craftbenefer.event.FarmlandTrampleEvent`](/Vanilla/Events/Events/FarmlandTrample/)                          |
-| 过期时间                        | [`craftbinstrer.eventItemExpireEvent`](/Vanilla/Events/Events/ItemExpire/)                                    |
-| onItemFished                | [`craftbinvest.event.ItemFishedEvent`](/Vanilla/Events/Events/ItemFished/)                                    |
-| onItemToss                  | [`craftbenefer.event.ItemTossEvent`](/Vanilla/Events/Events/ItemToss/)                                        |
-| onLivingDestroyBlock        | [`craftminstrer.event.LivingDestroyBlockEvent`](/Vanilla/Events/Events/LivingDestroyBlock/)                   |
-| onLivingExperienceDrop      | [`craftbinvest.LivingExperienceDropEvent`](/Vanilla/Events/Events/LivingExperienceDrop/)                      |
-| onLivingKockBack            | [`craftbenefer.event.LivingKnockBackEvent`](/Vanilla/Events/Events/LivingKnockBack/)                          |
-| 开关级别                        | [`Lottweaker.event.LootingLevel事件`](/Vanilla/Events/Events/LootingLevel/)                                     |
-| onMinecartCollision         | [`craftbenefer.event.MinecartCollisionEvent`](/Vanilla/Events/Events/MinecartCollision/)                      |
-| onMinecartInteract          | [`craftbenefer.event.MinecartInteract事件`](/Vanilla/Events/Events/MinecartInteract/)                           |
-| onMobGriefing               | [`craftbinefer.event.MobGriefingEvent`](/Vanilla/Events/Events/MobGriefing/)                                  |
-| onPlayerAdvancement         | [`PlayerAdvancement`](/Vanilla/Events/Events/PlayerAdvancement/)                                              |
-| onPlayerAnvil维修             | [`PlayerAnvilRepairEvent craftbiner.event.PlayerAnvilRepairEvent`](/Vanilla/Events/Events/PlayerAnvilRepair/) |
+| onAllowDespawn              | [`crafttweaker.event.EntityLivingSpawnEvent`](/Vanilla/Events/Events/EntityLivingSpawn/)                      |
+| onAnimalTame                | [`crafttweaker.event.AnimalTameEvent`](/Vanilla/Events/Events/AnimalTame/)                                    |
+| onBlockBreak                | [`crafttweaker.event.BlockBreak`](/Vanilla/Events/Events/BlockBreak/)                                         |
+| onBlockHarvestDrops         | [`crafttweaker.event.BlockHarvestDrops`](/Vanilla/Events/Events/BlockHarvestDrops/)                           |
+| onBlockPlace                | [`crafttweaker.event.BlockPlaceEvent`](/Vanilla/Events/Events/BlockPlace/)                                    |
+| onCheckSpawn                | [`crafttweaker.event.EntityLivingExtendedSpawnEvent`](/Vanilla/Events/Events/EntityLivingSpawn/)              |
+| onCommand                   | [`crafttweaker.event.CommandEvent`](/Vanilla/Events/Events/CommandEvent/)                                     |
+| onCriticalHit               | [`crafttweaker.event.CriticalHitEvent`](/Vanilla/Events/Events/CriticalHit/)                                  |
+| onCropGrowPost              | [`crafttweaker.event.CropGrowPostEvent`](/Vanilla/Events/Events/CropGrowPost/)                                |
+| onCropGrowPre               | [`crafttweaker.event.CropGrowPreEvent`](/Vanilla/Events/Events/CropGrowPre/)                                  |
+| onEnchantmentLevelSet       | [`crafttweaker.event.EnchantmentLevelSetEvent`](/Vanilla/Events/Events/EnchantmentLevelSet/)                  |
+| onEnderTeleport             | [`crafttweaker.event.EnderTeleportEvent`](/Vanilla/Events/Events/EnderTeleport/)                              |
+| onEntityLivingAttacked      | [`crafttweaker.event.EntityLivingAttackedEvent`](/Vanilla/Events/Events/EntityLivingAttacked/)                |
+| onEntityLivingDeath         | [`crafttweaker.event.EntityLivingDeathEvent`](/Vanilla/Events/Events/EntityLivingDeath/)                      |
+| onEntityLivingDeathDrops    | [`crafttweaker.event.EntityLivingDeathDropsEvent`](/Vanilla/Events/Events/EntityLivingDeathDrops/)            |
+| onEntityLivingFall          | [`crafttweaker.event.EntityLivingFallEvent`](/Vanilla/Events/Events/EntityLivingFall/)                        |
+| onEntityLivingHurt          | [`crafttweaker.event.EntityLivingHurtEvent`](/Vanilla/Events/Events/EntityLivingHurt/)                        |
+| onEntityLivingJump          | [`crafttweaker.event.EntityLivingJumpEvent`](/Vanilla/Events/Events/EntityLivingJump/)                        |
+| onEntityLivingUseItem       | [`crafttweaker.event.EntityLivingUseItemEvent.All`](/Vanilla/Events/Events/LivingEntityUseItem/)              |
+| onEntityLivingUseItemFinish | [`crafttweaker.event.EntityLivingUseItemEvent.Finish`](/Vanilla/Events/Events/LivingEntityUseItem/)           |
+| onEntityLivingUseItemStart  | [`crafttweaker.event.EntityLivingUseItemEvent.Start`](/Vanilla/Events/Events/LivingEntityUseItem/)            |
+| onEntityLivingUseItemStop   | [`crafttweaker.event.EntityLivingUseItemEvent.Stop`](/Vanilla/Events/Events/LivingEntityUseItem/)             |
+| onEntityLivingUseItemTick   | [`crafttweaker.event.EntityLivingUseItemEvent.Tick`](/Vanilla/Events/Events/LivingEntityUseItem/)             |
+| onEntityMount               | [`crafttweaker.event.EntityMountEvent`](/Vanilla/Events/Events/EntityMount/)                                  |
+| onEntityTravelToDimension   | [`crafttweaker.event.EntityTravelToDimensionEvent`](/Vanilla/Events/Events/EntityTravelToDimension/)          |
+| onEntityStruckByLightning   | [`crafttweaker.event.EntityStruckByLightningEvent`](/Vanilla/Events/Events/EntityStruckByLightning/)          |
+| onExplosionDetonate         | [`crafttweaker.event.ExplosionDetonateEvent`](/Vanilla/Events/Events/ExplosionDetonate/)                      |
+| onExplosionStart            | [`crafttweaker.event.ExplosionStartEvent`](/Vanilla/Events/Events/ExplosionStart/)                            |
+| onFarmlandTrample           | [`crafttweaker.event.FarmlandTrampleEvent`](/Vanilla/Events/Events/FarmlandTrample/)                          |
+| onItemExpire                | [`crafttweaker.event.ItemExpireEvent`](/Vanilla/Events/Events/ItemExpire/)                                    |
+| onItemFished                | [`crafttweaker.event.ItemFishedEvent`](/Vanilla/Events/Events/ItemFished/)                                    |
+| onItemToss                  | [`crafttweaker.event.ItemTossEvent`](/Vanilla/Events/Events/ItemToss/)                                        |
+| onLivingDestroyBlock        | [`crafttweaker.event.LivingDestroyBlockEvent`](/Vanilla/Events/Events/LivingDestroyBlock/)                    |
+| onLivingExperienceDrop      | [`crafttweaker.event.LivingExperienceDropEvent`](/Vanilla/Events/Events/LivingExperienceDrop/)                |
+| onLivingKockBack            | [`crafttweaker.event.LivingKnockBackEvent`](/Vanilla/Events/Events/LivingKnockBack/)                          |
+| onLootingLevel              | [`crafttweaker.event.LootingLevelEvent`](/Vanilla/Events/Events/LootingLevel/)                                |
+| onMinecartCollision         | [`crafttweaker.event.MinecartCollisionEvent`](/Vanilla/Events/Events/MinecartCollision/)                      |
+| onMinecartInteract          | [`crafttweaker.event.MinecartInteractEvent`](/Vanilla/Events/Events/MinecartInteract/)                        |
+| onMobGriefing               | [`crafttweaker.event.MobGriefingEvent`](/Vanilla/Events/Events/MobGriefing/)                                  |
+| onPlayerAdvancement         | [`crafttweaker.event.PlayerAdvancement`](/Vanilla/Events/Events/PlayerAdvancement/)                           |
+| onPlayerAnvilRepair         | [`PlayerAnvilRepairEvent craftbiner.event.PlayerAnvilRepairEvent`](/Vanilla/Events/Events/PlayerAnvilRepair/) |
 | onPlayerAnvilUpdate         | [`craftbinvest.PlayerAnvilUpdate事件`](/Vanilla/Events/Events/PlayerAnvilUpdate/)                               |
 | onPlayerAttack实体            | [`craftbenefer.event.PlayerAttackEntity事件`](/Vanilla/Events/Events/PlayerAttackEntity/)                       |
 | onPlayerBonemeal            | [`PlayerBonemealEvent`](/Vanilla/Events/Events/PlayerBonemeal/)                                               |
@@ -114,10 +114,10 @@ ZenMethods 将是您需要调用的 `事件`, 事件类将是您需要投射的�
 | 关于投影ImpactThrowable         | [`craftbenefer.event.ProjecttileImpactThrowableEvents`](/Vanilla/Events/Events/ProjectileImpactThrowable/)    |
 | 睡眠定位检查                      | [`craftbenefer.event.SleepingLocationCheck事件`](/Vanilla/Events/Events/SleepingLocationCheck/)                 |
 | onSleepingTimeCheck         | [`craftbenefer.event.SleepingTimeCheck事件`](/Vanilla/Events/Events/SleepingTimeCheck/)                         |
-| 特别生成                        | [`craftbenefer.event.EntityLivingExtenedSpawnEvent`](/Vanilla/Events/Events/EntityLivingSpawn/)               |
+| 特别生成                        | [`crafttweaker.event.EntityLivingExtendedSpawnEvent`](/Vanilla/Events/Events/EntityLivingSpawn/)              |
 
-## 清除所有事件处理程序
+## Clear all event handlers
 
 ```zenscript
-clear();
+events.clear();
 ```
