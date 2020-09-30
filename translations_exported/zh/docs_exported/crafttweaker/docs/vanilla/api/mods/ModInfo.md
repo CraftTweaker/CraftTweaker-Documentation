@@ -12,14 +12,14 @@
 
 ## 参数
 
-| 名称     | 类型                                                                                               | 可获得  | 可设置   |
-| ------ | ------------------------------------------------------------------------------------------------ | ---- | ----- |
-| blocks | 列表&lt;[craftmiliter.api.block.MCBlock](/vanilla/api/blocks/MCBlock)&gt;              | true | false |
-| 显示名称   | 字符串[string]                                                                                      | true | false |
-| 实体类型   | 列表&lt;[craftmiliter.api.entity.MCEntityType](/vanilla/api/entities/MCEntityType)&gt; | true | false |
-| 流体     | 邮件列表&lt;[craftminstrer.api.fluid.MCFluid](/vanilla/api/fluid/MCFluid)&gt;            | true | false |
-| 项目     | 列表&lt;[craftmiliter.api.IItemStack](/vanilla/api/items/IItemStack)&gt;               | true | false |
-| 莫多德    | 字符串[string]                                                                                      | true | false |
-| 命名空间   | 字符串[string]                                                                                      | true | false |
-| 版本     | 字符串[string]                                                                                      | true | false |
+| 名称          | 类型                                                                                               | 可获得  | 可设置   |
+| ----------- | ------------------------------------------------------------------------------------------------ | ---- | ----- |
+| blocks      | 列表&lt;[craftmiliter.api.block.MCBlock](/vanilla/api/blocks/MCBlock)&gt;              | true | false |
+| displayName | String                                                                                           | true | false |
+| 实体类型        | 列表&lt;[craftmiliter.api.entity.MCEntityType](/vanilla/api/entities/MCEntityType)&gt; | true | false |
+| fluids      | 邮件列表&lt;[craftminstrer.api.fluid.MCFluid](/vanilla/api/fluid/MCFluid)&gt;            | true | false |
+| items       | 列表&lt;[craftmiliter.api.IItemStack](/vanilla/api/items/IItemStack)&gt;               | true | false |
+| modid       | String                                                                                           | true | false |
+| 命名空间        | String                                                                                           | true | false |
+| version     | String                                                                                           | true | false |
 
