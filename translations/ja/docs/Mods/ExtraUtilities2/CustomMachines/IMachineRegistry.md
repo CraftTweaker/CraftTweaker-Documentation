@@ -1,6 +1,6 @@
 # IMachineRegistry
 
-IMachineRegistry を使用して、新しい [IMachine](/Mods/ExtraUtilities2/CustomMachines/IMachine) をゲームに登録したり、その後以前に登録されたマシンを取得したりします。
+You use the IMachineRegistry to register a new [IMachine](/Mods/ExtraUtilities2/CustomMachines/IMachine) to the game, or to retrieve a previously registered machine afterwards.
 
 ## パッケージのインポート
 
@@ -8,17 +8,17 @@ If you want to shorten method calls or encounter any issues you might need to [i
 You can do so using
 
 ```zenscript
-import extraautilities2.Tweaker.IMachineRegistry;
+import extrautilities2.Tweaker.IMachineRegistry;
 ```
 
-## マシンを作成
+## Create the machine
 
-2種類の機械があります:
+There are two types of machines:
 
-- マシン
-- ジェネレーター
+- Machines
+- Generators
 
-機械はエネルギーを消費し発電機はエネルギーを放出します さもなければほとんど同じように動作します
+Machines consume energy, generators emit energy, otherwise they behave almost identically.
 
 ```zenscript
 extrautilities2.Tweaker.IMachineRegistry.createNewMachine(
@@ -45,46 +45,46 @@ extrautilities2.Tweaker.IMachineRegistry.createNewGenerator(
 );
 ```
 
-ご覧のとおり、両方のメソッドは同じパラメータを受け入れます。唯一の違いはエネルギーを必要とするか生成するかどうかです。  
-パラメータは以下の通りです:
+As you can see, both methods accept the same parameters, the only difference is if they require or produce energy.  
+The parameters are:
 
-| 名称                  | タイプ                                                                 |
+| 名称                  | Type                                                                |
 | ------------------- | ------------------------------------------------------------------- |
-| name                | 文字列                                                                 |
+| name                | string                                                              |
 | energyBufferSize    | int                                                                 |
 | energyTransferLimit | int                                                                 |
 | inputSlots          | [[IMachineSlot](/Mods/ExtraUtilities2/CustomMachines/IMachineSlot)] |
 | outputSlots         | [[IMachineSlot](/Mods/ExtraUtilities2/CustomMachines/IMachineSlot)] |
-| frontTexture        | 文字列                                                                 |
-| frontTextureActive  | 文字列                                                                 |
-| color (任意)          | int (デフォルトは `0xffff` (black))                                       |
+| frontTexture        | string                                                              |
+| frontTextureActive  | string                                                              |
+| color (optional)    | int (defaults to `0xffffff` (black))                                |
 
-スロットは [IMachineSlot](/Mods/ExtraUtilities2/CustomMachines/IMachineSlot) のリストを受け付けます。 リストはスロットのまわりで [] を使用することで、配列と同じ方法で作成できます。 Both methods return an [IMachine](/Mods/ExtraUtilities2/CustomMachines/IMachine) object that represents the created machine.  
+The slots accept a list of [IMachineSlot](/Mods/ExtraUtilities2/CustomMachines/IMachineSlot). Lists can be created the same way as Arrays, by using [] around the slots. Both methods return an [IMachine](/Mods/ExtraUtilities2/CustomMachines/IMachine) object that represents the created machine.  
 Keep this in mind, as you need that object to create recipes later on!
 
-## 既存のマシンを取得する
+## Get existing machines
 
-### マシン名で取得
+### Get machine by name
 
-レジストリを使用して既に生成されたマシンを取得することもできます：
-
-```zenscript
-extraautilities2.Tweaker.IMachineRegistry.getMachine(String name);
-```
-
-このメソッドは指定された名前のマシンを [IMachine](/Mods/ExtraUtilities2/CustomMachines/IMachine) または `null` として返します。
-
-### 登録されたすべてのマシンを取得する
-
-これにより、登録されたすべてのマシンが [IMachine](/Mods/ExtraUtilities2/CustomMachines/IMachine) のリストとして返されます。
+You can get already generated machines using the Registry as well:
 
 ```zenscript
-extraautilities2.Tweaker.IMachineRegistry.getRegisterdMachineNames();
+extrautilities2.Tweaker.IMachineRegistry.getMachine(String name);
 ```
 
-### XU2マシンを入手
+This method will return the machine with the given name as [IMachine](/Mods/ExtraUtilities2/CustomMachines/IMachine) or `null`
 
-XU2 mod から [IMachine](/Mods/ExtraUtilities2/CustomMachines/IMachine) オブジェクトとして以下のようにマシンを取得することもできます。
+### Get all registered machines
+
+This will return all registered machines as list of [IMachine](/Mods/ExtraUtilities2/CustomMachines/IMachine).
+
+```zenscript
+extrautilities2.Tweaker.IMachineRegistry.getRegisterdMachineNames();
+```
+
+### Get XU2 machines
+
+You can also use these getters to get machines from the XU2 mod as [IMachine](/Mods/ExtraUtilities2/CustomMachines/IMachine) object:
 
     extrautilities2.Tweaker.IMachineRegistry.crusher;
     extrautilities2.Tweaker.IMachineRegistry.enchanter;
