@@ -1,132 +1,132 @@
 # Soils
 
-Путь к классу: `mods.botanypots.Soil`
+Class path: `mods.botanypots.Soil`
 
-## Использовано
+## Use
 
-Чтобы использовать, импортируйте класс с `import mods.botanypots.Soil;` в начале вашего скрипта.
+To use, import the class with `import mods.botanypots.Soil;` at the beginning of your script.
 
-## Создание новых почв
+## Creating New Soils
 
-`Soil.create(id, ингредиент, отображаемое состояние, курс, категории);`
+`Soil.create(id, ingredient, displayState, tickRate, categories);`
 
-- `id` &lt;строка> id новой почвы. Это идентификатор пространства имён должен быть в допустимом формате `пространства имён:пути`.
-- `ингредиент` <[Ингредиент](/vanilla/api/items/IIngredient)> Ингредиент, используемый для определения предметов/блоков для размещения почвы в горшок.
-- `displayState` <[MCBlockState](/vanilla/api/blocks/MCBlockState)> Состояние блока для отображения почвы в баке.
-- `tickRate` &lt;int> Скорость такта почвы.
-- `категории` &lt;строка[]> Массив категорий, связанных с новой почвой.
+- `id` &lt;string> The id of the new soil. This is a namespaced id an must be in the valid `namespace:path` format.
+- `ingredient` <[IIngredient](/vanilla/api/items/IIngredient)> The ingredient used to determine which items/blocks are used to put the soil in a pot.
+- `displayState` <[MCBlockState](/vanilla/api/blocks/MCBlockState)> The block state to display for the soil in the pot.
+- `tickRate` &lt;int> The tick rate for the soil.
+- `categories` &lt;string[]> An array of categories associated with the new soil.
 
-Создает новую запись почвы, которую игроки могут использовать в горшке ботаны.
+Creates a new soil entry that players can use in the botany pot.
 
 ```zenscript
 Soil.create("examplepack:rock", <item:minecraft:stone>, <blockstate:minecraft:stone>, 100, ["rocky"]);
 ```
 
-## Снятие земли
+## Removing A Soil
 
 `Soil.remove(id);`
 
-- `id` &lt;строка> id почвы для удаления. Это идентификатор пространства имён должен быть в допустимом формате `пространства имён:пути`.
+- `id` &lt;string> The id of the soil to remove. This is a namespaced id an must be in the valid `namespace:path` format.
 
-Удаляет почву из данных игры.
+Removes a soil from the game's data.
 
 ```zenscript
 Soil.remove("botanypots:soil/podzol");
 ```
 
-## Изменение скорости Тика Почвы
+## Changing Soil Tick Rate
 
 `Soil.setTicks(id, tickRate);`
 
-- `id` &lt;строка> id почвы. Это идентификатор пространства имён должен быть в допустимом формате `пространства имён:пути`.
-- `tickRate` &lt;int> Новая частота тактов для почвы.
+- `id` &lt;string> The id of the soil. This is a namespaced id an must be in the valid `namespace:path` format.
+- `tickRate` &lt;int> The new tick rate for the soil.
 
-Изменяет тиковую ставку данной почвы.
+Changes the tick rate of a given soil.
 
 ```zenscript
-Soil.setTicks("botanypots:soil/трава", 1300);
+Soil.setTicks("botanypots:soil/grass", 1300);
 ```
 
-## Изменение ингредиента почвы
+## Changing Soil Ingredient
 
-`Soil.setIngredient(id, ингредиент);`
+`Soil.setIngredient(id, ingredient);`
 
-- `id` &lt;строка> id почвы. Это идентификатор пространства имён должен быть в допустимом формате `пространства имён:пути`.
-- `ингредиент` <[Ингредиент](/vanilla/api/items/IIngredient)> Ингредиент, используемый для определения предметов/блоков для размещения почвы в горшок.
+- `id` &lt;string> The id of the soil. This is a namespaced id an must be in the valid `namespace:path` format.
+- `ingredient` <[IIngredient](/vanilla/api/items/IIngredient)> The ingredient used to determine which items/blocks are used to put the soil in a pot.
 
-Изменяет предметы, использованные для перемещения почвы в ботанический горшок.
+Changes the items used to put the soil into the botany pot.
 
 ```zenscript
 Soil.setIngredient("botanypots:soil/soul_sand", <item:minecraft:sand>);
 ```
 
-## Изменение режима почвы
+## Changing Soil Display
 
 `Soil.setDisplayState(id, displayState);`
 
-- `id` &lt;строка> id почвы. Это идентификатор пространства имён должен быть в допустимом формате `пространства имён:пути`.
-- `displayState` <[MCBlockState](/vanilla/api/blocks/MCBlockState)> Состояние блока для отображения почвы в баке.
+- `id` &lt;string> The id of the soil. This is a namespaced id an must be in the valid `namespace:path` format.
+- `displayState` <[MCBlockState](/vanilla/api/blocks/MCBlockState)> The block state to display for the soil in the pot.
 
-Изменяет отображенный на почве блок.
+Changes the block displayed for the soil.
 
 ```zenscript
 Soil.setDisplayState("botanypots:soil/dirt", <blockstate:minecraft:snow>);
 ```
 
-## Изменение категорий почв
+## Changing Soil Categories
 
-Изменяет категории, связанные с почвой. Они используются для сопоставления сельскохозяйственных культур с действительными почвами.
+Changes the categories associated with the soil. These are used to match crops to valid soils.
 
-### Добавить категорию в почву
+### Add a Category to a Soil
 
 `Soil.addCategory(id, categoriesToAdd);`
 
-- `id` &lt;строка> id почвы. Это идентификатор пространства имён должен быть в допустимом формате `пространства имён:пути`.
-- `categoriesToAdd` &lt;string[]> Массив категорий, связанных с почвой.
+- `id` &lt;string> The id of the soil. This is a namespaced id an must be in the valid `namespace:path` format.
+- `categoriesToAdd` &lt;string[]> An array of categories to associate with the soil.
 
 ```zenscript
 Soil.addCategory("botanypots:soil/soul_sand", ["nether"]);
 ```
 
-### Удалить категорию из почвы
+### Remove a Category From a Soil
 
 `Soil.removeCategory(id, categoriesToRemove);`
 
-- `id` &lt;строка> id почвы. Это идентификатор пространства имён должен быть в допустимом формате `пространства имён:пути`.
-- `categoriesToRemove` &lt;string[]> Массив категорий, чтобы разделить с почвой.
+- `id` &lt;string> The id of the soil. This is a namespaced id an must be in the valid `namespace:path` format.
+- `categoriesToRemove` &lt;string[]> An array of categories to dissociate with the soil.
 
 ```zenscript
 Soil.removeCategory("botanypots:soil/soul_sand", ["soul_sand"]);
 ```
 
-### Очистить все категории на почве
+### Clear All Categories From a Soil
 
 `Soil.clearCategories(id);`
 
-- `id` &lt;строка> id почвы. Это идентификатор пространства имён должен быть в допустимом формате `пространства имён:пути`.
+- `id` &lt;string> The id of the soil. This is a namespaced id an must be in the valid `namespace:path` format.
 
 ```zenscript
 Soil.clearCategories("botanypots:soil/farmland");
 ```
 
-## Получение всех идентификаторов
+## Getting All Ids
 
 `Soil.getAllIds();`
 
-- Возвращается: &lt;string[]> На момент прохождения массив всех известных идентификаторов грунта.
+- Returns: &lt;string[]> An array of all known soil ids at the time this is ran.
 
-Это даст вам массив всех известных идентификаторов почвы в то время.
+This will give you an array of all the known soil ids at the time.
 
 ```zenscript
-// Регистрировать все идентификаторы в файл crafttweaker.log
-для soilId в Soil.getAllIds() {
+// Log all ids to the crafttweaker.log file
+for soilId in Soil.getAllIds() {
     println(soilId);
 }
 ```
 
-## Удаление всех почв
+## Removing All Soil
 
-Это полностью удалит все зарегистрированные почвы. Это полезно, если вы хотите пересоздать все данные с нуля через скрипты.
+This will completely remove all the soils currently registered. This is useful for if you want to recreate all the data from scratch through scripts.
 
 ```zenscript
 Soil.removeAll();
