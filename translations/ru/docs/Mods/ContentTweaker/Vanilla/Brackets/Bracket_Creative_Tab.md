@@ -1,8 +1,8 @@
-# Обработчик фигурных табов
+# Creative Tab Bracket Handler
 
-Обработчик «Табуляции» дает вам доступ к вкладкам творчества в игре.
+The Creative Tab Bracket Handler gives you access to the Creative Tabs in the game.
 
-В обработчике креативных вкладок ссылаются на вкладки:
+Creative Tabs are referenced in the creative tabs handler this way:
 
 Vanilla
 
@@ -12,4 +12,4 @@ Vanilla
 <creativetab:misc>
 ```
 
-Если креативная вкладка найдена, то она вернёт вкладку [креативности](/Mods/ContentTweaker/Vanilla/Creatable_Content/Creative_Tab/) Объект.
+If the creative tab is found, this will return a [creative tab](/Mods/ContentTweaker/Vanilla/Creatable_Content/Creative_Tab/) Object.
