@@ -1,4 +1,4 @@
-# 模组
+# Mods
 
 保存所有注册模组的信息。 可以使用 `加载模组` 全局关键字 访问
 
@@ -24,9 +24,9 @@ crafttweaker.api.mods.Mods
 装入Mods.getMod("minecraft");
 ```
 
-| 参数  | 类型          | 描述                      |
-| --- | ----------- | ----------------------- |
-| 莫多德 | 字符串[string] | No description provided |
+| 参数    | 类型     | 描述                      |
+| ----- | ------ | ----------------------- |
+| modid | String | No description provided |
 
 
 ### isModLoaded
@@ -35,23 +35,23 @@ crafttweaker.api.mods.Mods
 
  返回： `true 如果已加载模组`
 
-返回类型：布尔值
+Return type: boolean
 
 ```zenscript
 装入Mods.isModLoaded(modian as String);
 loadedMods.isModLoaded("minecraft");
 ```
 
-| 参数  | 类型          | 描述    |
-| --- | ----------- | ----- |
-| 莫多德 | 字符串[string] | 摩托车检查 |
+| 参数    | 类型     | 描述    |
+| ----- | ------ | ----- |
+| modid | String | 摩托车检查 |
 
 
 
 ## 参数
 
-| 名称 | 类型                                                                               | 可获得  | 可设置   |
-| -- | -------------------------------------------------------------------------------- | ---- | ----- |
-| 模组 | 列表&lt;[craftmiliter.api.mods.ModInfo](/vanilla/api/mods/ModInfo)&gt; | true | false |
-| 大小 | 整数                                                                               | true | false |
+| 名称   | 类型                                                                               | 可获得  | 可设置   |
+| ---- | -------------------------------------------------------------------------------- | ---- | ----- |
+| 模组   | 列表&lt;[craftmiliter.api.mods.ModInfo](/vanilla/api/mods/ModInfo)&gt; | true | false |
+| size | int                                                                              | true | false |
 
