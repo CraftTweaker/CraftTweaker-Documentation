@@ -1,28 +1,28 @@
-# Waschmaschine
+# Washing Machine
 
-Die Waschmaschine ermöglicht es Ihnen, schmutzige Kleidung zu reinigen.
+The Washing Machine allows you to clean dirty clothes.
 
-Standardmäßig repariert die Haltbarkeit der Vanillerüstung, einschließlich der Elytra.
+By default repairs durability of vanilla armour, including the Elytra.
 
-## Entfernen
+## Removing
 
-## Entfernen Sie passende waschbare Gegenstände.
+## Remove matching washable items.
 
 ```zenscript
 mods.cfm.WashingMachine.remove(@Optional final IIngredient item);
 
 mods.cfm.WashingMachine.add(<minecraft:elytra>);
 mods.cfm.WashingMachine.remove(<minecraft:chainmail_helmet>);
-mods. fm.WashingMachine.remove(<minecraft:chainmail_chestplate>);
+mods.cfm.WashingMachine.remove(<minecraft:chainmail_chestplate>);
 mods.cfm.WashingMachine.remove(<minecraft:chainmail_leggings>);
 mods.cfm.WashingMachine.remove(<minecraft:chainmail_boots>);
-// Alle waschbaren Elemente entfernen.
+// Remove all washable items.
 mods.cfm.WashingMachine.remove();
 ```
 
-## Hinzufügen
+## Adding
 
-## Füge einen waschbaren Gegenstand hinzu.
+## Add a washable item.
 
 ```zenscript
 mods.cfm.WashingMachine.add(@Nonnull final IItemStack item);
