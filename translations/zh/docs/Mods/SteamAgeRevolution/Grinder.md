@@ -1,16 +1,16 @@
-# 研磨机
+# Grinder
 
-研磨机是一台机器，用蒸汽将输入物品转换为输出物品。
+The Grinder is a machine that converts an input item into an output item using steam.
 
 ## 所属包名
-`steamagerevolution.Grinder`
+`mods.steamagerevolution.Grinder`
 
 ## 方法
 
-- **[IItemStack](/Vanilla/Items/IItemStack/) 输出** 该配方的结果。
-- **[IItemStack](/Vanilla/Items/IItemStack/) 输入** 该配方的输入.
-- **整理时间** 机器处理的制造时间
-- **整流蒸汽成本** 机器处理蒸汽成本
+- **[IItemStack](/Vanilla/Items/IItemStack/) output** The result of the recipe.
+- **[IItemStack](/Vanilla/Items/IItemStack/) input** The input of the recipe.
+- **int craftTime** Crafting time for machine to process
+- **int steamCost** Cost of Steam for machine to process
 
 ## 添加配方
 
