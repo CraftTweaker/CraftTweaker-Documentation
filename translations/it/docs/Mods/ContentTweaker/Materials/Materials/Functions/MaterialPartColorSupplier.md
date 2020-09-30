@@ -1,18 +1,18 @@
-# MaterialePartColorSupplier
+# MaterialPartColorSupplier
 
-È possibile creare un MaterialPartColorSupplier forma un oggetto [MaterialPart](/Mods/ContentTweaker/Materials/Materials/MaterialPart/) che verrà poi utilizzato ogni volta che richiesto.
+You can create a MaterialPartColorSupplier form a [MaterialPart](/Mods/ContentTweaker/Materials/Materials/MaterialPart/) object, which will then be used whenever requested.
 
-## Importare la classe
+## Importing the class
 
-Se avete bisogno di importare la classe di lui, qui vai:
+Should you need to import he class, here you go:
 
 ```zenscript
 import mods.contenttweaker.MaterialPartColorSupplier;
 ```
 
-## Metodi statici
+## Static methods
 
-I metodi statici possono essere richiamati sul pacchetto, non su istanze della classe.
+Static methods can be called upon the package, not upon instances of the class.
 
 ```zenscript
 //mods.contenttweaker.MaterialPartColorSupplier.create(IMaterialPart materialPart);
