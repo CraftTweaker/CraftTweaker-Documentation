@@ -1,25 +1,25 @@
-# Natürlicher Altar
+# Natural Altar
 
-## Paket
+## Package
 ```zenscript
-mods.naturesaura.Alfred
+mods.naturesaura.Altar
 ```
 
 ## Methoden
-- **Zeichenkettenname**
-- **[Ingredient](/Vanilla/Variable_Types/IIngredient) Input** Die Altareingabe.
-- **[IItemStack](/Vanilla/Items/IItemStack) Ausgabe** Die Altarausgabe.
-- **[IIngredient](/Vanilla/Variable_Types/IIngredient) Katalysator** Der Katalysator Block, der an einem der vier Eckblöcke platziert ist, kann null sein
-- **int Aura** die für die Fertigstellung des Rezeptes erforderlich ist
-- **Int-Zeit** Die Zeitprozesse nehmen Ticks ein
+- **String Name**
+- **[IIngredient](/Vanilla/Variable_Types/IIngredient) input** The altars input.
+- **[IItemStack](/Vanilla/Items/IItemStack) output** The altars output.
+- **[IIngredient](/Vanilla/Variable_Types/IIngredient) catalyst** The catalyst block that is placed on one of the four corner blocks, can be null
+- **int aura** The amount of Aura required for the completion of the recipe
+- **int time** The time processes take in ticks
 
 ## Addition
 
 ```zenscript
-mods.naturesaura.Altar.addRecipe(String name, IIngredient Input, IItemStack Output, IIngredient catalyst, int aura, int time)
+mods.naturesaura.Altar.addRecipe(String name, IIngredient input, IItemStack output, IIngredient catalyst, int aura, int time)
 ```
 
-## Entfernen
+## Removal
 
 ```zenscript
 mods.naturesaura.Altar.removeRecipe(IItemStack output)
