@@ -1,12 +1,12 @@
 # Clear Tweaker
 
-## Lista ZenMethod
+## ZenMethod List:
 
-    // Czyści Mapę Transmutacji Reagenta i wszystkie jego wpisy
-    mods.compatskills.transmutations.clears. learMapOfReagent(IItemStack stack);
+    // Clears the Transmutation Map of the Reagent and all it's entries
+    mods.compatskills.transmutations.clears.clearMapOfReagent(IItemStack stack);
     
-    // Czyści wpis Reagenta w Mapie Transmutacji.
+    // Clears the Reagent Entry in the Transmutation Map of Entries.
     mods.compatskills.transmutations.clears.clearReagentOfEntries(IItemStack stack);
     
-    // Bądź świadomy WSZCZĘCIA TEJ ZENMETHODY PRZEKAZYWANIA WSZYSTKICH MAPY PRZEKAZYWANIA WSZYSTKICH ŚRODKÓJ!
+    // BE AWARE CALLING THIS ZENMETHOD CLEARS THE ENTIRE TRANSMUTATION MAP OF ALL ENTRIES!
     mods.compatskills.transmutations.clears.clearReagentMap();
