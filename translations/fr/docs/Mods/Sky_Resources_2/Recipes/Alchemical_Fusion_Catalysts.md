@@ -1,19 +1,19 @@
-# Catalyseurs de fusion alchimique
+# Alchemical Fusion Catalysts
 
-Le paquet *catalyseurs* est utilisé pour ajouter ou supprimer des catalyseurs pour la fusion alchimique.
+The *catalysts* package is used for adding or removing catalysts for Alchemical Fusion.
 
-## Appel en cours
+## Calling
 
-Vous pouvez appeler le paquet *catalyseurs* en utilisant `mods.skyresources.catalysts`
+You can call the *catalysts* package using `mods.skyresources.catalysts`
 
-## Ajout de catalyseur
+## Catalyst Addition
 
 ```zenscript
-//mods.skyresources.catalysts.add(IItemStack stack, valeur flottante);
+//mods.skyresources.catalysts.add(IItemStack stack, float value);
 mods.skyresources.catalysts.add(<minecraft:diamond>, 4.20);
 ```
 
-## Destruction du catalyseur
+## Catalyst Removal
 
 ```zenscript
 //mods.skyresources.catalysts.remove(IItemStack output);
