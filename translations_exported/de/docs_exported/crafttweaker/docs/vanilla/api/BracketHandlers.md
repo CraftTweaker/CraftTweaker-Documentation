@@ -1,9 +1,9 @@
-# BracketHandler
+# BracketHandlers
 
-Diese Klasse wurde von einer Mod mit mod-id `crafttweaker` hinzugefügt. Wenn Sie diese Funktion nutzen möchten, müssen Sie diese Mod installiert haben.
+This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
 
 ## Diese Klasse importieren
-Es kann erforderlich sein, dass Sie das Paket importieren, wenn Sie irgendwelche Probleme haben (wie zum Beispiel ein Array zu bearbeiten), also besser sicher sein als bedauern und fügen Sie den Import.
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
 ```zenscript
 crafttweaker.api.BracketHandlers
 ```
@@ -26,10 +26,10 @@ crafttweaker.api.BracketHandlers.getBlockMaterial("earth");
 
 | Parameter | Type   | Beschreibung                                |
 | --------- | ------ | ------------------------------------------- |
-| token     | String | Was Sie in den BEP-Aufruf schreiben würden. |
+| tokens    | String | Was Sie in den BEP-Aufruf schreiben würden. |
 
 
-### getBlockStatus
+### getBlockState
 
 Erstellt einen Blockstatus basierend auf den angegebenen Eingängen. Gibt `null` zurück, wenn der Block nicht gefunden werden kann, ungültige Varianten ignoriert
 
@@ -47,7 +47,7 @@ crafttweaker.api.BracketHandlers.getBlockState("minecraft:acacia_planks");
 
 | Parameter | Type   | Beschreibung                                     |
 | --------- | ------ | ------------------------------------------------ |
-| token     | String | Die Ressourcen-Position und Varianten des Blocks |
+| tokens    | String | Die Ressourcen-Position und Varianten des Blocks |
 
 
 ### getDirectionAxis
@@ -67,7 +67,7 @@ crafttweaker.api.BracketHandlers.getDirectionAxis("x");
 
 | Parameter | Type   | Beschreibung                                  |
 | --------- | ------ | --------------------------------------------- |
-| token     | String | Die Richtung der Ressourcenposition der Achse |
+| tokens    | String | Die Richtung der Ressourcenposition der Achse |
 
 
 ### getEffekt
@@ -87,7 +87,7 @@ crafttweaker.api.BracketHandlers.getEffect("minecraft:haste");
 
 | Parameter | Type   | Beschreibung                       |
 | --------- | ------ | ---------------------------------- |
-| token     | String | Der Ressourcenstandort des Effekts |
+| tokens    | String | Der Ressourcenstandort des Effekts |
 
 
 ### getEntityklassifikation
@@ -107,7 +107,7 @@ crafttweaker.api.BracketHandlers.getEntityClassification("monster");
 
 | Parameter | Type   | Beschreibung                                    |
 | --------- | ------ | ----------------------------------------------- |
-| token     | String | Der Ressourcenstandort der EntityClassifikation |
+| tokens    | String | Der Ressourcenstandort der EntityClassifikation |
 
 
 ### getEntityType
@@ -127,7 +127,7 @@ crafttweaker.api.BracketHandlers.getEntityType("minecraft:pig");
 
 | Parameter | Type   | Beschreibung                      |
 | --------- | ------ | --------------------------------- |
-| token     | String | Der EntityType-Ressourcenstandort |
+| tokens    | String | Der EntityType-Ressourcenstandort |
 
 
 ### getFluidStack
@@ -147,7 +147,7 @@ crafttweaker.api.BracketHandlers.getFluidStack("minecraft:water");
 
 | Parameter | Type   | Beschreibung                     |
 | --------- | ------ | -------------------------------- |
-| token     | String | Der Ressourcenstandort der Fluid |
+| tokens    | String | Der Ressourcenstandort der Fluid |
 
 
 ### getItem
@@ -156,7 +156,7 @@ Ruft das Element basierend auf Registry-Namen ab. Wirf einen Fehler, wenn das El
 
  Rückgaben: `Das gefundene Element`
 
-Rückgabetyp: [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
+Return type: [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
 
 ```zenscript
 <item:minecraft:dirt>
@@ -167,7 +167,7 @@ crafttweaker.api.BracketHandlers.getItem("minecraft:dirt");
 
 | Parameter | Type   | Beschreibung                        |
 | --------- | ------ | ----------------------------------- |
-| token     | String | Der Ressourcenstandort des Elements |
+| tokens    | String | Der Ressourcenstandort des Elements |
 
 
 ### getTrank
@@ -179,9 +179,9 @@ Rückgabetyp: [crafttweaker.api.potion.MCTrank](/vanilla/api/potions/MCPotion)
 crafttweaker.api.BracketHandlers.getPotion(Marken als String);
 ```
 
-| Parameter | Type   | Beschreibung                 |
-| --------- | ------ | ---------------------------- |
-| token     | String | Keine Beschreibung angegeben |
+| Parameter | Type   | Beschreibung            |
+| --------- | ------ | ----------------------- |
+| tokens    | String | No description provided |
 
 
 ### getRecipeManager
@@ -199,7 +199,7 @@ crafttweaker.api.BracketHandlers.getRecipeManager("minecraft:crafting");
 
 | Parameter | Type   | Beschreibung                              |
 | --------- | ------ | ----------------------------------------- |
-| token     | String | Der Ressourcenstandort des recipeManagers |
+| tokens    | String | Der Ressourcenstandort des recipeManagers |
 
 
 ### getResource-Standort
@@ -219,7 +219,7 @@ crafttweaker.api.BracketHandlers.getResourceLocation("minecraft:dirt");
 
 | Parameter | Type   | Beschreibung           |
 | --------- | ------ | ---------------------- |
-| token     | String | Der Ressourcenstandort |
+| tokens    | String | Der Ressourcenstandort |
 
 
 ### getTag
@@ -239,7 +239,7 @@ crafttweaker.api.BracketHandlers.getTag("tag:minecraft:wool");
 
 | Parameter | Type   | Beschreibung                    |
 | --------- | ------ | ------------------------------- |
-| token     | String | Der Ressourcenstandort des Tags |
+| tokens    | String | Der Ressourcenstandort des Tags |
 
 
 ### getTextformatierung
@@ -251,9 +251,9 @@ Rückgabetyp: [craftweaker.api.text.TextFormatierung](/crafttweaker/api/text/Tex
 crafttweaker.api.BracketHandlers.getTextFormatting(Token als String);
 ```
 
-| Parameter | Type   | Beschreibung                 |
-| --------- | ------ | ---------------------------- |
-| token     | String | Keine Beschreibung angegeben |
+| Parameter | Type   | Beschreibung            |
+| --------- | ------ | ----------------------- |
+| tokens    | String | No description provided |
 
 
 
