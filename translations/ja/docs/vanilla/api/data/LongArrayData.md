@@ -2,60 +2,60 @@
 
 
 
-crafttweakerのmod-idを持つmodによって追加されているクラスです。 従って、この機能を利用する場合はこのmodをインストールする必要があります。
+This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
 
-## クラスのインポート
-問題が発生した場合には、インポートが必要になります。とはいえ、お手数ですが予めインポートしておくほうが安全です。
+## Importing the class
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
 ```zenscript
 crafttweaker.api.data.LongArrayData
 ```
 
-## 実装されたインターフェース
-LongArrayData は以下のインタフェースを実装しています。 つまり、利用可能な任意のメソッドはこのクラスでも使用できます。
+## Implemented Interfaces
+LongArrayData implements the following interfaces. That means any method available to them can also be used on this class.
 - [crafttweaker.api.data.ICollectionData](/vanilla/api/data/ICollectionData)
 
 ## Constructors
 ```zenscript
-new crafttweaker.api.data.LongArrayData(internal as long[] );
+new crafttweaker.api.data.LongArrayData(internal as long[]);
 ```
-| パラメータ | タイプ    | 説明           |
-| ----- | ------ | ------------ |
-| 内部    | ♪long♪ | 説明が提供されていません |
+| Parameter | Type   | Description             |
+| --------- | ------ | ----------------------- |
+| internal  | long[] | No description provided |
 
 
 
-## メソッド
-### 追加
+## Methods
+### add
 
 ```zenscript
-[100000, 8000, 50000].add(value as crafttweaker.api.data.IData);
-[100000, 8000, 50000].add("today");
+[100000, 800000, 50000].add(value as crafttweaker.api.data.IData);
+[100000, 800000, 50000].add("today");
 ```
 
-| パラメータ | タイプ                                                    | 説明        |
-| ----- | ------------------------------------------------------ | --------- |
-| 値     | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | リストに追加する値 |
+| Parameter | Type                                                   | Description                  |
+| --------- | ------------------------------------------------------ | ---------------------------- |
+| value     | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | The value to add to the list |
 
 
 
 ```zenscript
 [100000, 800000, 50000].add(index as int, value as crafttweaker.api.data.IData);
-[100000, 80000, 50000].add(1, "beautiful");
+[100000, 800000, 50000].add(1, "beautiful");
 ```
 
-| パラメータ  | タイプ                                                    | 説明                                   |
-| ------ | ------------------------------------------------------ | ------------------------------------ |
-| インデックス | int                                                    | 追加するインデックス 後続のアイテムは1つ高いインデックスに移動されます |
-| 値      | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | リストに追加する値                            |
+| Parameter | Type                                                   | Description                                                          |
+| --------- | ------------------------------------------------------ | -------------------------------------------------------------------- |
+| index     | int                                                    | The index to add to. Subsequent items will be moved one index higher |
+| value     | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | The value to add to the list                                         |
 
 
 ### asList
 
-リストを取得<IData> この IData の表現は、 [crafttweaker.api.data.ListData](/vanilla/api/data/ListData) 以外の場合は null を返します。
+Gets a List<IData> representation of this IData, returns null on anything but [crafttweaker.api.data.ListData](/vanilla/api/data/ListData).
 
- 戻り値: `この IData がリストでない場合は null です。`
+ Returns: `null if this IData is not a list.`
 
-戻り値 List<[crafttweaker.api.data.IData](/vanilla/api/data/IData)>
+Returns List<[crafttweaker.api.data.IData](/vanilla/api/data/IData)>
 
 ```zenscript
 [100000, 800000, 50000].asList();
@@ -63,11 +63,11 @@ new crafttweaker.api.data.LongArrayData(internal as long[] );
 
 ### asMap
 
-この IData のマップ<String, IData> 表現を取得します。 [crafttweaker.api.data.MapData](/vanilla/api/data/MapData) 以外の場合は null を返します。
+Gets a Map<String, IData> representation of this IData, returns null on anything but [crafttweaker.api.data.MapData](/vanilla/api/data/MapData).
 
- 戻り値: `この IData がマップでない場合は null です。`
+ Returns: `null if this IData is not a map.`
 
-戻り値 [crafttweaker.api.data.IData](/vanilla/api/data/IData)[String]
+Returns [crafttweaker.api.data.IData](/vanilla/api/data/IData)[String]
 
 ```zenscript
 [100000, 800000, 50000].asMap();
@@ -75,79 +75,79 @@ new crafttweaker.api.data.LongArrayData(internal as long[] );
 
 ### asString
 
-この IData の文字列表現を取得します
+Gets the String representation of this IData
 
- 戻り値: `この IData (値と型) を表す文字列。`
+ Returns: `String that represents this IData (value and type).`
 
-戻り値の文字列
+Returns String
 
 ```zenscript
 [100000, 800000, 50000].asString();
 ```
 
-### クリア
+### clear
 
-リスト内のすべての要素を削除します
+Removes every element in the list
 
 ```zenscript
-[100000, 80000000, 50000].clear();
+[100000, 800000, 50000].clear();
 ```
 
-### を含む
+### contains
 
 Checks if this IData contains another IData, mainly used in subclasses of [crafttweaker.api.data.ICollectionData](/vanilla/api/data/ICollectionData), is the same as an equals check on other IData types
 
-戻り値ブール値
+Returns boolean
 
 ```zenscript
-[100000, 8000, 50000].contains(data as crafttweaker.api.data.IData);
-[100000, 8000, 50000].contains("Display");
+[100000, 800000, 50000].contains(data as crafttweaker.api.data.IData);
+[100000, 800000, 50000].contains("Display");
 ```
 
-| パラメータ | タイプ                                                    | 説明                    |
-| ----- | ------------------------------------------------------ | --------------------- |
-| データ   | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | それが含まれているかどうかを確認するデータ |
+| Parameter | Type                                                   | Description                      |
+| --------- | ------------------------------------------------------ | -------------------------------- |
+| data      | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | data to check if it is contained |
 
 
-### コピー
+### copy
 
-このIDataのコピーを作成します。
+Makes a copy of this IData.
 
- IData はデフォルトで変更不能です。これを使用してオブジェクトの適切なコピーを作成します。
+ IData is immutable by default, use this to create a proper copy of the object.
 
- 戻り値: `この IData のコピー`
+ Returns: `a copy of this IData.`
 
-戻り値 [crafttweaker.api.data.IData](/vanilla/api/data/IData)
+Returns [crafttweaker.api.data.IData](/vanilla/api/data/IData)
 
 ```zenscript
-[100000, 80000000, 50000].copy();
+[100000, 800000, 50000].copy();
 ```
 
-### 取得する
+### get
 
-指定したインデックスに保存されている [crafttweaker.api.data.IData](/vanilla/api/data/IData) を取得します。
+Retrieves the [crafttweaker.api.data.IData](/vanilla/api/data/IData) stored at the given index.
 
-戻り値 [crafttweaker.api.data.IData](/vanilla/api/data/IData)
+Returns [crafttweaker.api.data.IData](/vanilla/api/data/IData)
 
 ```zenscript
 [100000, 800000, 50000].get(index as int);
-[100000, 80000, 50000].get(0);
+[100000, 800000, 50000].get(0);
 ```
 
-| パラメータ  | タイプ | 説明           |
-| ------ | --- | ------------ |
-| インデックス | int | インデックス（0ベース） |
+| Parameter | Type | Description         |
+| --------- | ---- | ------------------- |
+| index     | int  | The index (0-based) |
 
 
 ### getId
 
-内部 NBT タグの ID を取得します。
+Gets the ID of the internal NBT tag.
 
- どの種類の NBT が格納されているかを決定するために使用されます(例えばリスト)
+ Used to determine what NBT type is stored (in a list for example)
 
- 戻り値: `このデータが表現する NBT タグの ID。`
+ Returns: `ID of the NBT tag that this data represents.`
 
-バイトを返します
+Returns byte
 
 ```zenscript
 [100000, 800000, 50000].getId();
@@ -155,53 +155,53 @@ Checks if this IData contains another IData, mainly used in subclasses of [craft
 
 ### getString
 
-内部 INBT タグの文字列表現を取得します。
+Gets the String representation of the internal INBT tag
 
- 戻り値: `この IData の内部 INBT を表す文字列。`
+ Returns: `String that represents the internal INBT of this IData.`
 
-戻り値の文字列
+Returns String
 
 ```zenscript
 [100000, 800000, 50000].getString();
 ```
 
-### 削除
+### remove
 
-指定したインデックスに保存されている [crafttweaker.api.data.IData](/vanilla/api/data/IData) を削除します。
+Removes the [crafttweaker.api.data.IData](/vanilla/api/data/IData) stored at the given index.
 
-戻り値 [crafttweaker.api.data.IData](/vanilla/api/data/IData)
+Returns [crafttweaker.api.data.IData](/vanilla/api/data/IData)
 
 ```zenscript
 [100000, 800000, 50000].remove(index as int);
-[100000, 80000, 50000].remove(0);
+[100000, 800000, 50000].remove(0);
 ```
 
-| パラメータ  | タイプ | 説明           |
-| ------ | --- | ------------ |
-| インデックス | int | インデックス（0ベース） |
+| Parameter | Type | Description         |
+| --------- | ---- | ------------------- |
+| index     | int  | The index (0-based) |
 
 
-### セット
+### set
 
-指定されたインデックスの項目を指定された値に設定します。
+Sets the item at the provided index to the given value
 
-戻り値 [crafttweaker.api.data.IData](/vanilla/api/data/IData)
+Returns [crafttweaker.api.data.IData](/vanilla/api/data/IData)
 
 ```zenscript
-[100000, 8000, 50000].set(index as int, value as crafttweaker.api.data.IData);
-[100000, 80000, 50000].set(0, "Bye");
+[100000, 800000, 50000].set(index as int, value as crafttweaker.api.data.IData);
+[100000, 800000, 50000].set(0, "Bye");
 ```
 
-| パラメータ  | タイプ                                                    | 説明                   |
-| ------ | ------------------------------------------------------ | -------------------- |
-| インデックス | int                                                    | 設定するインデックス (0-based) |
-| 値      | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | 新しい値                 |
+| Parameter | Type                                                   | Description                |
+| --------- | ------------------------------------------------------ | -------------------------- |
+| index     | int                                                    | The index to set (0-based) |
+| value     | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | The new Value              |
 
 
 
-## プロパティー
+## Properties
 
-| 名称  | タイプ | ゲッターあり | セッターあり |
-| --- | --- | ------ | ------ |
-| サイズ | int | true   | false  |
+| 名称   | Type | Has Getter | Has Setter |
+| ---- | ---- | ---------- | ---------- |
+| size | int  | true       | false      |
 
