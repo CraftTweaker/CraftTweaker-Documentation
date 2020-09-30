@@ -1,3 +1,3 @@
 # Modtweaker
 
-Modtbinter 是一个 CraftTin弱化的插件，它为许多模式添加了支持！
+Modtweaker is an addon for CraftTweaker that adds support for many mods!
