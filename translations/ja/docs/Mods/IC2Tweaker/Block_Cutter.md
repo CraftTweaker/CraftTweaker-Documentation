@@ -1,23 +1,23 @@
-# ブロックカッター
+# Block Cutter
 
-## パッケージ
+## Package
 
 `import mods.ic2.BlockCutter;`
 
-## メソッド
+## Methods
 
 - **[IItemStack](/Vanilla/Items/IItemStack/) output**
-- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) の入力**
-- **@Optional int hardness** ブレードの最小硬度要件。
+- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input**
+- **@Optional int hardness** Minimum hardness requirement for blade.
 
 ## 加算
 
 ```zenscript
-mods.ic2.BlockCutter.addRecipe(IItemStack 出力, IIngredient input, @Optional int hardness default 0);
+mods.ic2.BlockCutter.addRecipe(IItemStack output, IIngredient input, @Optional int hardness default 0);
 
 mods.ic2.BlockCutter.addRecipe(<minecraft:diamond>, <minecraft:dirt>);
 ```
 
-## 削除
+## Removal
 
-今のところ、 `config/ic2/block_cutter.ini` 内の対応する行を削除するだけです。
+For now simply remove the corresponding line in `config/ic2/block_cutter.ini`.
