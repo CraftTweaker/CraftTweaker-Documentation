@@ -1,16 +1,16 @@
-# 盐水混合器
+# Salt Mixer
 
-## 导入软件包
-`nuclearcraft。SaltMixer`
+## Importing the Package
+`mods.nuclearcraft.SaltMixer`
 
-## 添加配方
+## Adding Recipes
 ```zenscript
-nuclearcraft。SaltMixer.addRecipe(ILiquidStack fluidInput1,ILiquidStack fluidInput2,ILiquidStack fluidOutput, @Optional double timeMultiplier, @Optional double powerMultiplier, @Optional double processRadio);
+mods.nuclearcraft.SaltMixer.addRecipe(ILiquidStack fluidInput1, ILiquidStack fluidInput2, ILiquidStack fluidOutput, @Optional double timeMultiplier, @Optional double powerMultiplier, @Optional double processRadiation);
 ```
 
-## 删除配方
+## Removing Recipes
 ```zenscript
-nuclearcraft。SaltMixer.removeRecipeWidInput(ILiquidStack fluidInput1, ILiquidStack fluidInput2);
-mods.nuclearcraft.SaltMixer.removeRecipeWOutput(ILiquidStack fluidOut)；
-mods.nuclearcraft。SaltMixer.removeAllRecipes();
+mods.nuclearcraft.SaltMixer.removeRecipeWithInput(ILiquidStack fluidInput1, ILiquidStack fluidInput2);
+mods.nuclearcraft.SaltMixer.removeRecipeWithOutput(ILiquidStack fluidOutput);
+mods.nuclearcraft.SaltMixer.removeAllRecipes();
 ```
