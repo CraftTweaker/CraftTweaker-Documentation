@@ -1,17 +1,17 @@
-# Этапы Вайлы
+# Waila Stages
 
-Этот мод является аддоном для [GameStages API](https://minecraft.curseforge.com/projects/game-stages). Waila Stages позволяет ограничить аспекты шума Waila/Hwyla с помощью пользовательской прогрессивной системы. Для получения дополнительной информации, посетите страницу модов [здесь](https://minecraft.curseforge.com/projects/waila-stages)
+This mod is an addon for the [GameStages API](https://minecraft.curseforge.com/projects/game-stages). Waila Stages allows aspects of the Waila/Hwyla hud to be restricted by a custom progression system. For more info, check out the mod page [here](https://minecraft.curseforge.com/projects/waila-stages)
 
-## Методы
+## Methods
 
-Скрывает весь оттенок, если только у игрока нет сцены.
+Hides the entire hud, unless the player has the stage.
 
 ```zenscript
 // mods.WailaStages.addWailaStage(String stage);
 mods.WailaStages.addWailaStage("one");
 ```
 
-Скрывает конкретную линию в хате вайла, если только игрок не имеет сцены.
+Hides a specific line in the waila hud, unless the player has the stage.
 
 ```zenscript
 // mods.WailaProgression.addRequirement(String stage, String prefix); 
