@@ -21,15 +21,15 @@ crafttbiner.api.commands.custom.MCSuggestionProvider
 ## 方法
 ### equals #等于
 
-返回类型：布尔值
+Return type: boolean
 
 ```zenscript
 myMCSuggestionProvider.equals(o 为对象)；
 ```
 
-| 参数 | 类型 | 描述                      |
-| -- | -- | ----------------------- |
-| o  | 对象 | No description provided |
+| 参数 | 类型     | 描述                      |
+| -- | ------ | ----------------------- |
+| o  | Object | No description provided |
 
 
 ### 获取建议
@@ -48,7 +48,7 @@ myMCSuggestionProvider.getPropositions(context as craftweer.api.commands.custom.
 
 ### hashCode
 
-返回类型：int
+Return type: int
 
 ```zenscript
 myMCSuggestionProvider.hashCode();
@@ -56,7 +56,7 @@ myMCSuggestionProvider.hashCode();
 
 ### toString
 
-返回类型：字符串
+Return type: String
 
 ```zenscript
 myMCSuggestionProvider.toString();
@@ -70,13 +70,13 @@ myMCSuggestionProvider.toString();
 myMCSuggestionProvider == o 为对象
 ```
 
-| 参数 | 类型 | 描述                      |
-| -- | -- | ----------------------- |
-| o  | 对象 | No description provided |
+| 参数 | 类型     | 描述                      |
+| -- | ------ | ----------------------- |
+| o  | Object | No description provided |
 
-## 卡斯特尔
+## Casters
 
-| 结果类型        | 是否隐藏 |
-| ----------- | ---- |
-| 字符串[string] | true |
+| 结果类型   | 是否隐藏 |
+| ------ | ---- |
+| String | true |
 
