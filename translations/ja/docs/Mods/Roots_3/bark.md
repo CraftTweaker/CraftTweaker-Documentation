@@ -1,10 +1,10 @@
-### クラス
+### Class
 
 ```zenscript
 import mods.roots.Bark;
 ```
 
-#### メソッド
+#### Methods
 
 ```zenscript
 void addRecipe(
@@ -18,7 +18,7 @@ void addRecipe(
 
 ```zenscript
 void removeRecipe(
-  IItemStack 樹皮/削除する樹皮の型のitemstack (スタックサイズを除く)
+  IItemStack bark // the itemstack of the type of bark to remove (excluding stack size)
 );
 ```
 
@@ -29,9 +29,9 @@ void removeRecipe(
 ```zenscript
 import mods.roots.Bark;
 
-// Will produce 2 sand from a mon block breaked by a nife.
+// Will produce 2 sand from a melon block broken by a knife.
 Bark.addRecipe("melon", <minecraft:melon_block>, <minecraft:sand>*2);
 
-// デフォルトのリストからワイルドウッドの樹皮を削除します。
+// Removes wildwood bark from the default list
 Bark.removeRecipe(<roots:bark_wildwood>);
 ```
