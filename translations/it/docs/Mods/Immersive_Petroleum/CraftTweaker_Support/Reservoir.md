@@ -1,34 +1,34 @@
-# Serbatoio
+# Reservoir
 
 ## registerReservoir
 
-| Tipo                  | Tipo Di Dati                                 |
-| --------------------- | -------------------------------------------- |
-| Nome Identificatore   | Stringa                                      |
-| Fluido                | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
-| Dimensione Minima     | Intero                                       |
-| Dimensione Massima    | Intero                                       |
-| Tasso Di Rifornimento | Intero                                       |
-| Peso                  | Intero                                       |
+| Type            | Data Type                                    |
+| --------------- | -------------------------------------------- |
+| Name Identifier | String                                       |
+| Fluid           | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
+| Minimum Size    | Integer                                      |
+| Maximum Size    | Integer                                      |
+| Replenish Rate  | Integer                                      |
+| Weight          | Integer                                      |
 
-### Peso
+### Weight
 
-Il peso è la possibilità di peso di un pezzo contenente quel serbatoio di fluido specifico. Il peso è contato come in X in totale.
+Weight is the Weighted Chance of a chunk containing that specific fluid reservoir. The weight is counted as in X in Total.
 
-Quindi, se si dispone di 5 valori del serbatoio a: 5, 5, 6, 8, 10
+So if you have 5 Reservoir values at: 5, 5, 6, 8, 10
 
-Quindi ogni rispettiva voce avrà una probabilità ponderata di:
+Then each respective entry will have a weighted chance of:
 
-    5 su 34
-    5 su 34
-    6 su 34
-    8 su 34
-    10 su 34
+    5  in 34
+    5  in 34
+    6  in 34
+    8  in 34
+    10 in 34
     
 
-### Esempio Di Codice:
+### Code Example:
 
 ```zenscript
-mods.immersivepetroleum.Reservoir.registerReservoir(nome string, liquido ILiquidStack, int minSize, int maxSize, int replenishRate, int weight);
+mods.immersivepetroleum.Reservoir.registerReservoir(String name, ILiquidStack fluid, int minSize, int maxSize, int replenishRate, int weight);
 mods.immersivepetroleum.Reservoir.registerReservoir("WaterTest", <liquid:water>, 48000, 64000, 200, 5);
 ```
