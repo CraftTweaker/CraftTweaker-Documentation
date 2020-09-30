@@ -1,64 +1,64 @@
-# Info-bulles
+# Tooltips
 
-Ajouter ou supprimer une infobulle est vraiment facile :  
-Tout ce dont vous avez besoin, c'est d'un élément (ou oreDict ou similaire), en d'autres termes, d'un IIngrédient.
+Adding or removing a tooltip is really easy:  
+All you need is an item (or oreDict or similar), in other words, an IIngredient.
 
-## Nettoyage des infobulles
+## Clearing tooltips
 
-Ceci supprime TOUTES les infobulles de l'élément ``
+This removes ALL tooltips from the `item`
 
 ```zenscript
 item.clearTooltip();
 ```
 
-## Suppression des infobulles spécifiques
+## Removing specific tooltips
 
-Cette fonction supprime toutes les infobulles qui correspondent à une expression régulière donnée. Une infobulle est généralement une ligne de texte (à moins qu'il y ait des sauts de ligne forcés en raison de l'espace).
+This function removes all tooltips that match the given regex. One tooltip is generally one line of text (unless there are forced linebreaks due to space).
 
 ```zenscript
 item.removeTooltip(regex);
 ```
 
-`item` est un [IIngrédient](/Vanilla/Variable_Types/IIngredient/)  
-`tT` est une chaîne de caractères
+`item` is an [IIngredient](/Vanilla/Variable_Types/IIngredient/)  
+`tT` is a string
 
-## Infobulles normales
+## Normal Tooltips
 
-Cela ajoute `tT` comme infobulle à l'élément ``.
+This adds `tT` as tooltip to `item`.
 
 ```zenscript
 item.addTooltip(tT);
 
-<minecraft:chest>.addTooltip("Stocker, que puis-je en dire plus ?");
+<minecraft:chest>.addTooltip("Storage, what can I say more?");
 ```
 
-`item` est un [IIngrédient](/Vanilla/Variable_Types/IIngredient/)  
-`tT` est une chaîne de caractères
+`item` is an [IIngredient](/Vanilla/Variable_Types/IIngredient/)  
+`tT` is a string
 
-## Infobulles de Maj
+## Shift Tooltips
 
-Cela ajoute une infobulle qui ne sera visible que lorsque vous maintenez la touche Maj.  
-Vous pouvez également ajouter une information qui sera visible lorsque vous ne maintenez pas le décalage (généralement utilisé pour créer quelque chose comme un message vous parlant de l'info-bulle de déplacement.)
+This adds a tooltip, that will only be visible when you hold shift.  
+You can also add an info that will be visible when you don't hold shift (usually used to create something like a message telling you about the shift tooltip.)
 
 ```zenscript
 item.addShiftTooltip(tT);
 item.addShiftTooltip(tT, info);
 
 <minecraft:chest>.addShiftTooltip("STORAGE!!!");
-<minecraft:redstone>.addShiftTooltip("RED!!!", "Maintenir le shift pour savoir ce que je suis");
+<minecraft:redstone>.addShiftTooltip("RED!!!", "Hold shift to know what I am");
 ```
 
-`élément` est un [IIngrédient](/Vanilla/Variable_Types/IIngredient/)  
-`tT` est un [IFormattedText](/Vanilla/Utils/IFormattedText/). Vous pouvez également utiliser une chaîne de caractères car elle est automatiquement convertie.  
-`info` est un [IFormattedText](/Vanilla/Utils/IFormattedText/). Vous pouvez également utiliser une chaîne de caractères car elle est automatiquement convertie.
+`item` is an [IIngredient](/Vanilla/Variable_Types/IIngredient/)  
+`tT` is an [IFormattedText](/Vanilla/Utils/IFormattedText/). You can also just use a string as they are automatically converted.  
+`info` is an [IFormattedText](/Vanilla/Utils/IFormattedText/). You can also just use a string as they are automatically converted.
 
 # Markup
 
-Le monde est coloré et devrait donc être toutes nos infobulles. Vous pouvez également imbriquer ces options, si vous voulez un texte vert, qui est frappé)
+The world is colorful, and so should be all of our tooltips. You can also nest these options, should you with to (if you wanted a green text, that is strikethrough)
 
-## Coloriage d'une chaîne de caractères
+## Coloring a String
 
-Vous pouvez appliquer une des 16 couleurs à votre chaîne de caractères
+You can apply one of the 16 colors to your string
 
 ```zenscript
 format.black
@@ -68,7 +68,7 @@ format.darkAqua
 format.darkRed
 format.darkPurple
 format.gold
-format. Format.ray
+format.gray
 format.darkGray
 format.blue
 format.green
@@ -80,50 +80,50 @@ format.white
 ```
 
 ```zenscript
-<minecraft:stick>.addTooltip(format.green("Celui ci n'est pas mûre"));
+<minecraft:stick>.addTooltip(format.green("This one wasn't ripe"));
 ```
 
-## Formatage d'une chaîne de caractères
+## Formatting a String
 
-Vous pouvez appliquer différents formats à votre chaîne de caractères si vous le souhaitez:
+You can apply different formats to your String should you wish to:
 
 ```zenscript
 format.obfuscated
 format.bold
 format.strikethrough
-format.souligné
+format.underline
 format.italic
 ```
 
 ```zenscript
-<minecraft:stick>.addShiftTooltip(format.strikethrough("Ceci est un mauvais tooltip"));
+<minecraft:stick>.addShiftTooltip(format.strikethrough("This is a bad tooltip"));
 ```
 
-## Fonctions d'info-bulle
+## Tooltip functions
 
-Vous pouvez remplacer le paramètre [IFormattedText](/Vanilla/Utils/IFormattedText/) par une fonction ITooltipFunction (`import crafttweaker.item. Fonction Tooltip;`).  
-Ces fonctions vous permettent de générer dynamiquement une infobulle basée sur la IItemstack donnée.
+You can replace the [IFormattedText](/Vanilla/Utils/IFormattedText/) parameter with an ITooltipFunction (`import crafttweaker.item.ITooltipFunction;`).  
+These functions allow you to dynamically generate a tooltip based on the given IItemStack.
 
-Une fonction infobulle est une fonction qui prend un [IItemstack](/Vanilla/Items/IItemStack/) et retourne l'info-bulle sous la forme de chaîne. Cela signifie que l'utilisation d'une commande `format` *ne fonctionne pas* pour ces fonctions, vous devrez vous appuyer sur les préfixes de mise en forme de Minecraft si vous avez besoin de le faire.
+A tooltip function is a function that takes an [IItemStack](/Vanilla/Items/IItemStack/) and returns the tooltip as string. This means that using a `format` command *does not work* for these functions, you will need to rely on Minecraft's formatting prefixes if you need to accomplish that.
 
-Pour les info-bulles de décalage, vous pouvez également fournir une fonction 2ème qui vous permet également de générer l'info-bulle qui doit être affichée lorsque la touche Maj n'est pas pressée. Pour les info-bulles de décalage, il s'agit soit des deux paramètres en tant que fonction ou les deux en tant que [IFormattedText](/Vanilla/Utils/IFormattedText/), pas de mixage !
+For the shift tooltips, you can provide a 2nd function as well, which allows you to also generate the tooltip that should be shown when shift is not pressed. For shift tooltips it's either both parameters as function or both as [IFormattedText](/Vanilla/Utils/IFormattedText/), no mix-ups!
 
 ```zenscript
 addAdvancedTooltip(ITooltipFunction fn);
 addShiftTooltip(ITooltipFunction fn, @Optional ITooltipFunction infoFn);
 
 
-//Exemple
-<ore:myAxeOreDictionary>. dd(<minecraft:iron_axe:*>, <minecraft:golden_axe:*>, <minecraft:diamond_axe:*>);
+//Example
+<ore:myAxeOreDictionary>.add(<minecraft:iron_axe:*>, <minecraft:golden_axe:*>, <minecraft:diamond_axe:*>);
 
-<ore:myAxeOreDictionary>. ddAdvancedTooltip(function(item) {   
-    retourne "Dommage: " ~ item. amage ~ " / " ~ item.maxDamage;
+<ore:myAxeOreDictionary>.addAdvancedTooltip(function(item) {   
+    return "Damage: " ~ item.damage ~ " / " ~ item.maxDamage;
 });
 
 
-<ore:myAxeOreDictionary>. ddShiftTooltip(function(item) {    
-    return "Utilisations restantes: " ~ (item. axDamage - item.damage);
+<ore:myAxeOreDictionary>.addShiftTooltip(function(item) {    
+    return "Uses left: " ~ (item.maxDamage - item.damage);
 }, function(item){
-    return "Maintenir le temps pour un math.";
+    return "Hold shift for some juicy math.";
 });
 ```
