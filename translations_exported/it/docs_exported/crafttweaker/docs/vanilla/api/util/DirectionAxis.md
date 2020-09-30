@@ -1,23 +1,23 @@
 # DirectionAxis
 
-Rappresenta un asse di direzione (X, Y, Z)
+Represents a direction axis (X, Y, Z)
 
 Questa classe è stata aggiunta da una mod con ID `crafttweaker`. Perciò, è necessario avere questa mod installata per poter utilizzare questa funzione.
 
-## Importare la classe
+## Importing the class
 Potrebbe essere necessario importare il pacchetto, se si incontrano dei problemi (come castare un vettore), quindi meglio essere sicuri e aggiungere la direttiva di importazione.
 ```zenscript
 crafttweaker.api.util.DirectionAxis
 ```
 
 ## Interfacce Implementate
-DirectionAxis implementa le seguenti interfacce. Ciò significa che ogni metodo presente nell'interfaccia può essere usato anche per questa classe.
+DirectionAxis implements the following interfaces. Ciò significa che ogni metodo presente nell'interfaccia può essere usato anche per questa classe.
 - [crafttweaker.api.brackets.CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
 
-## Metodi
+## Methods
 ### getCoordinate
 
-Ottiene le coordinate di questo asse in base ai valori indicati, se questo asse è "X", restituirà il valore del parametro "x"
+Gets the coordinate of this axis based on the given values, if this axis is "X", then it will return the value of the "x" parameter
 
  Restituisce: `valore della coordinata`
 
@@ -28,40 +28,40 @@ Tipo di ritorno: doppio
 <directionaxis:x>.getCoordinate(1.2, 2.5, 3.87);
 ```
 
-| Parametro | Tipo   | Descrizione               |
+| Parameter | Type   | Description               |
 | --------- | ------ | ------------------------- |
-| x         | doppia | x valore delle coordinate |
-| y         | doppia | valore y della coordinata |
-| z         | doppia | valore z della coordinata |
+| x         | double | x value of the coordinate |
+| y         | double | y value of the coordinate |
+| z         | double | z value of the coordinate |
 
 
 
-Ottiene le coordinate di questo asse in base ai valori indicati, se questo asse è "X", restituirà il valore del parametro "x"
+Gets the coordinate of this axis based on the given values, if this axis is "X", then it will return the value of the "x" parameter
 
  Restituisce: `valore della coordinata`
 
-Tipo di restituzione: int
+Return type: int
 
 ```zenscript
 <directionaxis:x>.getCoordinate(x as int, y as int, z as int);
 <directionaxis:x>.getCoordinate(1, 2, 3);
 ```
 
-| Parametro | Tipo | Descrizione               |
+| Parameter | Type | Description               |
 | --------- | ---- | ------------------------- |
-| x         | int  | x valore delle coordinate |
-| y         | int  | valore y della coordinata |
-| z         | int  | valore z della coordinata |
+| x         | int  | x value of the coordinate |
+| y         | int  | y value of the coordinate |
+| z         | int  | z value of the coordinate |
 
 
 
-## Proprietà
+## Properties
 
-| Nome          | Tipo    | Ha Getter | Ha Setter |
+| Name          | Type    | Ha Getter | Ha Setter |
 | ------------- | ------- | --------- | --------- |
-| commandString | Stringa | vero      | falso     |
-| orizzontale   | boolean | vero      | falso     |
-| nome          | Stringa | vero      | falso     |
-| ordinale      | int     | vero      | falso     |
-| verticale     | boolean | vero      | falso     |
+| commandString | String  | true      | false     |
+| horizontal    | boolean | true      | false     |
+| name          | String  | true      | false     |
+| ordinal       | int     | true      | false     |
+| vertical      | boolean | true      | false     |
 
