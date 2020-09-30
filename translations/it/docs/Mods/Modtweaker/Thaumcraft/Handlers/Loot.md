@@ -1,34 +1,34 @@
-# Borse Di Bottino
+# Loot Bags
 
-Questo pacchetto ti permette di aggiungere e rimuovere oggetti da/per il Loot Bags.
+This package allows you to add and remove items to/from the Loot Bags.
 
-## Importazione del pacchetto
+## Importing the package
 
-È possibile [importare](/AdvancedFunctions/Import/) il pacchetto e i suoi metodi per facilitare il retrival dei metodi.
+You can [import](/AdvancedFunctions/Import/) the package and its methods to facilitate the retrival of the methods.
 
 ```zenscript
 import mods.thaumcraft.LootBag;
 ```
 
-## Tipi di bottino
+## Loot types
 
-È necessario fornire una serie di uno o più numeri da 0 a 2 (inclusi) alle funzioni.  
-Quelli determinano il tipo di sacchetto da interessare.
+You need to provide an array of one or multiple numbers from 0 to 2 (inclusive) to the functions.  
+Those determine the type of lootbag to be affected.
 
-- 0: Comune
-- 1: Non Comune
-- 2: Raro
+- 0: Common
+- 1: Uncommon
+- 2: Rare
 
-## Aggiunta elementi
+## Adding items
 
-Avviso: Le monete d'oro hanno un valore di 2000, i diamanti sono 50.
+Notice: Gold coins have a value of 2000, diamonds are 50.
 
 ```zenscript
 //mods.thaumcraft.LootBag.addLoot(WeightedItemStack stack, int[] bagTypes)
 mods.thaumcraft.LootBag.addLoot(<minecraft:dirt>%20000, [0,1,2]);
 ```
 
-## Rimozione elementi
+## Removing items
 
 ```zenscript
 //mods.thaumcraft.LootBag.removeLoot(IItemStack stack, int[] bagTypes);
