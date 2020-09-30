@@ -1,16 +1,16 @@
-# 研磨机
+# Grinder
 
-## 导入软件包
-`mods.techreborn.griinder`
+## Importing the Package
+`mods.techreborn.grinder`
 
-## 添加配方
+## Adding Recipes
 ```zenscript
-mods.techreborn.grinder.addRecipe(IItemStack output, IIngredient input1, int ticktime, int euTick)；
+mods.techreborn.grinder.addRecipe(IItemStack output, IIngredient input1, int ticktime, int euTick);
 ```
 
-## 删除配方
+## Removing Recipes
 ```zenscript
-mods.techreborn.grinder.removeInputRecipe(IIngredient component);
+mods.techreborn.grinder.removeInputRecipe(IIngredient ingredient);
 mods.techreborn.grinder.removeRecipe(IItemStack output);
 mods.techreborn.grinder.removeAll();
 ```
