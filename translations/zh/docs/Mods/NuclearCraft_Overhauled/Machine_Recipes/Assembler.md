@@ -1,16 +1,16 @@
-# 助攻者
+# Assembler
 
-## 导入软件包
-`nuclearcraft。助攻者`
+## Importing the Package
+`mods.nuclearcraft.Assembler`
 
-## 添加配方
+## Adding Recipes
 ```zenscript
-nuclearcraft。Assembler.addRecipe(IIngredient itemInput1, IIngredient itemInput2, IIngredient itemInput3, IIngredient itemInput4, IIngredient itemOutput, @Optional double time Multiplier, @Opinion double processRadi);
+mods.nuclearcraft.Assembler.addRecipe(IIngredient itemInput1, IIngredient itemInput2, IIngredient itemInput3, IIngredient itemInput4, IIngredient itemOutput, @Optional double timeMultiplier, @Optional double powerMultiplier, @Optional double processRadiation);
 ```
 
-## 删除配方
+## Removing Recipes
 ```zenscript
-nuclearcraft。Assembler.removeRecipeWidInput(IIngredient itemInput1, IIngredient itemInput2, IIngredient itemInput3, IIngredient itemInput4);
-mods.nuclearcraft.Assembler.removeRecipeWOutput(IIngredient itemOut)；
-mods.nuclearcraft。Assembly.removeAllRecipes();
+mods.nuclearcraft.Assembler.removeRecipeWithInput(IIngredient itemInput1, IIngredient itemInput2, IIngredient itemInput3, IIngredient itemInput4);
+mods.nuclearcraft.Assembler.removeRecipeWithOutput(IIngredient itemOutput);
+mods.nuclearcraft.Assembler.removeAllRecipes();
 ```
