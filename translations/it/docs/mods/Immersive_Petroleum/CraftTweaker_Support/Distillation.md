@@ -1,12 +1,12 @@
-# Distillazione
+# Distillation
 
-## rimuovi
+## remove
 
-| Nome         | Tipo    |
-| ------------ | ------- |
-| Nome Ricetta | Stringa |
+| Name         | Type   |
+| ------------ | ------ |
+| Nome Ricetta | String |
 
-Esempio:
+Example:
 ```ZenScript
 // mods.immersivepetroleum.DistillationTower.remove(String recipeName);
 
@@ -15,24 +15,24 @@ mods.immersivepetroleum.DistillationTower.remove("oilcracking");
 
 ## removeAll
 
-| Nome | Tipo |
+| Name | Type |
 | ---- | ---- |
 |      |      |
 
-Esempio:
+Example:
 ```ZenScript
 mods.immersivepetroleum.DistillationTower.removeAll();
 ```
 
-# Costruttore
+# Builder
 
 ## costruttore
 
-| Nome | Tipo |
+| Name | Type |
 | ---- | ---- |
 |      |      |
 
-Esempio:
+Example:
 ```zenscript
 // new mods.immersivepetroleum.DistillationBuilder();
 
@@ -41,11 +41,11 @@ new mods.immersivepetroleum.DistillationBuilder();
 
 ## setOutputFluid
 
-| Nome             | Tipo                                        |
+| Name             | Type                                        |
 | ---------------- | ------------------------------------------- |
 | Fluido In Uscita | [Fluidstack](/Vanilla/Liquids/IFluidStack/) |
 
-Esempio:
+Example:
 ```zenscript
 // builderInstance.setOutputFluids(IFluidStack[] fluidOutputs);
 
@@ -54,12 +54,12 @@ builderInstance.setOutputFluids([<fluid:minecraft:water> * 1]);
 
 ## addByproduct(IItemStack item, int chance)
 
-| Nome        | Tipo                                    |
-| ----------- | --------------------------------------- |
-| Elemento    | [ItemStack](/Vanilla/Items/IItemStack/) |
-| Probabilità | Intero (0 - 100)                        |
+| Name   | Type                                    |
+| ------ | --------------------------------------- |
+| Item   | [ItemStack](/Vanilla/Items/IItemStack/) |
+| Chance | Intero (0 - 100)                        |
 
-Esempio:
+Example:
 ```zenscript
 // builderInstance.addByproduct(IItemStack item, int chance);
 
@@ -68,12 +68,12 @@ builderInstance.addByproduct(<item:minecraft:cobblestone>, 50);
 
 ## addByproduct(IItemStack item, doppia possibilità)
 
-| Nome        | Tipo                                    |
-| ----------- | --------------------------------------- |
-| Elemento    | [ItemStack](/Vanilla/Items/IItemStack/) |
-| Probabilità | Doppio (0,0 - 1,0)                      |
+| Name   | Type                                    |
+| ------ | --------------------------------------- |
+| Item   | [ItemStack](/Vanilla/Items/IItemStack/) |
+| Chance | Doppio (0,0 - 1,0)                      |
 
-Esempio:
+Example:
 ```zenscript
 // builderInstance.addByproduct(IItemStack item, double chance);
 
@@ -82,12 +82,12 @@ builderInstance.addByproduct(<item:minecraft:stone>, 0.25);
 
 ## setEnergyAndTime
 
-| Nome   | Tipo         |
+| Name   | Type         |
 | ------ | ------------ |
 | Flux/t | Intero (>=1) |
 | Zecche | Intero (>=1) |
 
-Esempio:
+Example:
 ```zenscript
 // builderInstance.setEnergyAndTime(int fluxPerTick, int ticks);
 
@@ -96,11 +96,11 @@ builderInstance.setEnergyAndTime(1024, 1);
 
 ## setEnergy
 
-| Nome        | Tipo         |
+| Name        | Type         |
 | ----------- | ------------ |
 | FluxPerTick | Intero (>=1) |
 
-Esempio:
+Example:
 ```zenscript
 // builderInstance.setEnergy(int fluxPerTick);
 
@@ -109,11 +109,11 @@ builderInstance.setEnergy(1024);
 
 ## setTime
 
-| Nome   | Tipo         |
+| Name   | Type         |
 | ------ | ------------ |
 | Zecche | Intero (>=1) |
 
-Esempio:
+Example:
 ```zenscript
 // builderInstance.setTime(int ticks);
 
@@ -122,11 +122,11 @@ builderInstance.setTime(1);
 
 ## build
 
-| Nome         | Tipo    |
-| ------------ | ------- |
-| Nome Ricetta | Stringa |
+| Name         | Type   |
+| ------------ | ------ |
+| Nome Ricetta | String |
 
-Esempio:
+Example:
 ```zenscript
 // builderInstance.build(String recipeName);
 
