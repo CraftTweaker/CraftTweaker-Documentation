@@ -1,22 +1,20 @@
 # Grindstone
 
-### インポート中
+### Importing
 
 ```zenscript
-import mods.appledenergistics2.Grinder;
+import mods.appliedenergistics2.Grinder;
 ```
 
-### 追加中
+### Adding
 
 ```zenscript
-Grinder.addRecipe(IItemStack 出力, IItemStack 入力, int turns, @Optional IItemStack secondary1Output, @Optional float secondary1Chance, @Optional IItemStack secondary2Output, @Optional float secondary2Chance, @Optional float secondary2Chance);
+Grinder.addRecipe(IItemStack output, IItemStack input, int turns, @Optional IItemStack secondary1Output, @Optional float secondary1Chance, @Optional IItemStack secondary2Output, @Optional float secondary2Chance);
 
-Grinder. ddRecipe( 
-
- ,<minecraft:sapling>, <minecraft:leaves>, 4, <minecraft:sapling:5>, 0.3);
+Grinder.addRecipe(<minecraft:sapling>, <minecraft:leaves>, 4, <minecraft:sapling:5>, 0.3);
 ```
 
-### 削除中
+### Removing
 
 ```zenscript
 Grinder.removeRecipe(IItemStack input);
