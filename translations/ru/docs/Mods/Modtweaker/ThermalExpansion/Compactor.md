@@ -1,101 +1,101 @@
-# Компактор
+# Compactor
 
-## Пакет
+## Package
 
 `mods.thermalexpansion.Compactor`
 
-Компатор поддерживает 4 типа модификаторов:
+The compactor supports 4 types of modifiers:
 
-    Мятное
-    Нажмите
-    Хранилище
-    Снаряжение
+    Mint
+    Press
+    Storage
+    Gear
     
 
-## Мята
+## Mint
 
-Мятный модификатор изменяет рецепты, зарегистрированные в карте рецептов `COIN` в Thermal Expansion.
+The Mint modifier changes the recipes registered in the `COIN` recipe map in Thermal Expansion.
 
-Заметьте, что эти рецепты требуют Нумизматического Пресса Augment.
+Note that these recipes require the Numismatic Press Augment.
 
 ### Сложение
 
 ```zenscript
-mods.thermalexpansion.Compactor.addMintRecipe(выход IItemStack, вход IItemStack, внутренняя энергия);
+mods.thermalexpansion.Compactor.addMintRecipe(IItemStack output, IItemStack input, int energy);
 
 mods.thermalexpansion.Compactor.addMintRecipe(<minecraft:sand>, <minecraft:stick>, 1500);
 ```
 
-### Удаление
+### Removal
 
 ```zenscript
-mods.thermalexpansion.Compactor.removeMintRecipe(IItemStack);
+mods.thermalexpansion.Compactor.removeMintRecipe(IItemStack input);
 
 mods.thermalexpansion.Compactor.removeMintRecipe(<thermalfoundation:material:167>);
 ```
 
-## Пресса
+## Press
 
-Модификатор прессы изменяет рецепты, не зарегистрированные в `PLATE`, `COIN`или `GEAR` карты рецептов в Thermal Expansion.
+The Press modifier changes the recipes not registered in the `PLATE`, `COIN`, or `GEAR` recipe maps in Thermal Expansion.
 
-Эти рецепты не требуют конкретного дополнения.
+These recipes do not require a specific Augment.
 
 ### Сложение
 
 ```zenscript
-mods.thermalexpansion.Compactor.addPressRecipe(IItemStack, IItemStack, int energy);
+mods.thermalexpansion.Compactor.addPressRecipe(IItemStack output, IItemStack input, int energy);
 
 mods.thermalexpansion.Compactor.addPressRecipe(<minecraft:sand>, <minecraft:apple>, 1500);
 ```
 
-### Удаление
+### Removal
 
 ```zenscript
-mods.thermalexpansion.Compactor.removePressRecipe(IItemStack);
+mods.thermalexpansion.Compactor.removePressRecipe(IItemStack input);
 
 mods.thermalexpansion.Compactor.removePressRecipe(<thermalfoundation:material:167>);
 ```
 
-## Хранилище
+## Storage
 
-Модификатор хранилища изменяет рецепты, зарегистрированные в карте рецептов `PLATE` в Thermal Expansion.
+The Storage modifier changes the recipes registered in the `PLATE` recipe map in Thermal Expansion.
 
-Эти рецепты не требуют конкретного дополнения, и, как представляется, используются только для пластин.
+These recipes do not require a specific Augment, and seemingly are used only for plates.
 
 ### Сложение
 
 ```zenscript
-mods.thermalexpansion.Compactor.addStorageRecipe(выход IItemStack, вход IItemStack, внутренняя энергия);
+mods.thermalexpansion.Compactor.addStorageRecipe(IItemStack output, IItemStack input, int energy);
 
 mods.thermalexpansion.Compactor.addStorageRecipe(<minecraft:sand>, <minecraft:arrow>, 1500);
 ```
 
-### Удаление
+### Removal
 
 ```zenscript
-mods.thermalexpansion.Compactor.removeStorageRecipe(IItemStack);
+mods.thermalexpansion.Compactor.removeStorageRecipe(IItemStack input);
 
 mods.thermalexpansion.Compactor.removeStorageRecipe(<thermalfoundation:material:167>);
 ```
 
-## Снаряжение
+## Gear
 
-Модификатор Gear изменяет рецепты, зарегистрированные в карте рецептов `GEAR` в Thermal Expansion.
+The Gear modifier changes the recipes registered in the `GEAR` recipe map in Thermal Expansion.
 
-Обратите внимание, что эти рецепты требуют обработки Die Augment.
+Note that these recipes require the Gearworking Die Augment.
 
 ### Сложение
 
 ```zenscript
-mods.thermalexpansion.Compactor.addGearRecipe(выход IItemStack, вход IItemStack, внутренняя энергия);
+mods.thermalexpansion.Compactor.addGearRecipe(IItemStack output, IItemStack input, int energy);
 
 mods.thermalexpansion.Compactor.addGearRecipe(<minecraft:sand>, <minecraft:arrow>, 1500);
 ```
 
-### Удаление
+### Removal
 
 ```zenscript
-mods.thermalexpansion.Compactor.removeGearRecipe(IItemStack);
+mods.thermalexpansion.Compactor.removeGearRecipe(IItemStack input);
 
 mods.thermalexpansion.Compactor.removeGearRecipe(<thermalfoundation:material:167>);
 ```
