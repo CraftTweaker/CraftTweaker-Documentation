@@ -2,24 +2,24 @@
 
 Zatrzymuje informacje o załadowanym modze
 
-Ta klasa została dodana przez moda z mod-id `crafttweaker`. Więc musisz zainstalować tę modyfikację, jeśli chcesz używać tej funkcji.
+This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
 
-## Importowanie klasy
-Może być wymagane zaimportowanie pakietu, jeśli napotkasz jakiekolwiek problemy (np. rzucanie tablicy), tak aby były bezpieczne niż przepraszamy i dodaj import.
+## Importing the class
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
 ```zenscript
 crafttweaker.api.mods.ModInfo
 ```
 
-## Właściwości
+## Properties
 
-| Nazwisko           | Typ                                                                                                 | Posiada Getter | Ma ustawienie |
-| ------------------ | --------------------------------------------------------------------------------------------------- | -------------- | ------------- |
-| bloki              | Lista&lt;[crafttweaker.api.block.MCBlock](/vanilla/api/blocks/MCBlock)&gt;              | prawda         | fałszywy      |
-| nazwa wyświetlacza | Ciąg znaków                                                                                         | prawda         | fałszywy      |
-| typy podmiotów     | Lista&lt;[crafttweaker.api.entity.MCEntityType](/vanilla/api/entities/MCEntityType)&gt; | prawda         | fałszywy      |
-| płyny              | Lista&lt;[crafttweaker.api.fluid.MCFluid](/vanilla/api/fluid/MCFluid)&gt;               | prawda         | fałszywy      |
-| elementy           | Lista&lt;[crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)&gt;          | prawda         | fałszywy      |
-| modid              | Ciąg znaków                                                                                         | prawda         | fałszywy      |
-| przestrzeń nazw    | Ciąg znaków                                                                                         | prawda         | fałszywy      |
-| wersja             | Ciąg znaków                                                                                         | prawda         | fałszywy      |
+| Name            | Type                                                                                                | Has Getter | Has Setter |
+| --------------- | --------------------------------------------------------------------------------------------------- | ---------- | ---------- |
+| blocks          | Lista&lt;[crafttweaker.api.block.MCBlock](/vanilla/api/blocks/MCBlock)&gt;              | true       | false      |
+| displayName     | String                                                                                              | true       | false      |
+| typy podmiotów  | Lista&lt;[crafttweaker.api.entity.MCEntityType](/vanilla/api/entities/MCEntityType)&gt; | true       | false      |
+| fluids          | Lista&lt;[crafttweaker.api.fluid.MCFluid](/vanilla/api/fluid/MCFluid)&gt;               | true       | false      |
+| items           | Lista&lt;[crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)&gt;          | true       | false      |
+| modid           | String                                                                                              | true       | false      |
+| przestrzeń nazw | String                                                                                              | true       | false      |
+| version         | String                                                                                              | true       | false      |
 
