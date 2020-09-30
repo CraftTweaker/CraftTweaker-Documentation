@@ -1,14 +1,14 @@
-# Industrieller Sprengöfen
+# Industrial Blast Furnace
 
-## Paket wird importiert
-`mods.techreborn.blastOfen`
+## Importing the Package
+`mods.techreborn.blastFurnace`
 
-## Rezepte hinzufügen
+## Adding Recipes
 ```zenscript
 mods.techreborn.blastFurnace.addRecipe(IItemStack output1, IItemStack output2, IIngredient input1, IIngredient input2, int ticktime, int euTick, int neededHeat);
 ```
 
-## Rezepte entfernen
+## Removing Recipes
 ```zenscript
 mods.techreborn.blastFurnace.removeInputRecipe(IIngredient ingredient);
 mods.techreborn.blastFurnace.removeRecipe(IItemStack output);
