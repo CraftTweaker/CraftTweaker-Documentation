@@ -1,32 +1,32 @@
 # MCAxisAlignedBB
 
-Wyrównany na osi MineCraft obiekt Boundary Box pozwala na zmianę granic [Block](/Mods/ContentTweaker/Vanilla/Creatable_Content/Block/) na dany kształt sześciokątny.
+A MineCraft Axis Aligned Boundary Box object allows you change a [Block's](/Mods/ContentTweaker/Vanilla/Creatable_Content/Block/) Boundary borders to a given cuboid shape.
 
-## Importowanie pakietu
+## Importing the package
 
-Może być wymagane zaimportowanie pakietu, jeśli napotkasz jakieś problemy, więc lepiej być bezpiecznym niż przepraszamy i dodać import.  
-`zaimportuj mods.contenttweaker.AxisAlignedBB;`
+It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
+`import mods.contenttweaker.AxisAlignedBB;`
 
-## Wywołanie obiektu MCAxisAlignedBB
+## Calling an MCAxisAlignedBB object
 
-Możesz uzyskać taki obiekt za pomocą właściwości [Block's](/Mods/ContentTweaker/Vanilla/Creatable_Content/Block/) `axisAlignedBB` .  
-Alternatywnie, możesz użyć tego pakietu, aby utworzyć nowy obiekt MCAxisAlignedBB:
+You can get such an object using a [Block's](/Mods/ContentTweaker/Vanilla/Creatable_Content/Block/) `axisAlignedBB` Property.  
+Alternatively, you can use this package to create a new MCAxisAlignedBB object:
 
 ```zenscript
-AxisAlignedBB.create(podwójna minX, podwójna minY, podwójna minZ, podwójna maxX, podwójna maxY, podwójna maxZ);
+AxisAlignedBB.create(double minX, double minY, double minZ, double maxX, double maxY, double maxZ);
 ```
 
-Wszystkie parametry dla tej funkcji są dwukrotnie większe od 0 do 1!
+All parameters for this function are doubles between 0 and 1!
 
-## Właściwości ZenWłaściwości
+## ZenProperties
 
-Możesz uzyskać i ustawić każdą właściwość używając `getProperty()` lub `object.property`.
+You can get and set each Property using `getProperty()` or `object.property`.
 
-| Właściwość ZenProperty | Typ      |
-| ---------------------- | -------- |
-| minX                   | podwójne |
-| minY                   | podwójne |
-| minZ                   | podwójne |
-| maxX                   | podwójne |
-| maks.                  | podwójne |
-| maks. Z                | podwójne |
+| ZenProperty | Type   |
+| ----------- | ------ |
+| minX        | double |
+| minY        | double |
+| minZ        | double |
+| maxX        | double |
+| maxY        | double |
+| maxZ        | double |
