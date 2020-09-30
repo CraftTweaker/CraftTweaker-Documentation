@@ -1,129 +1,129 @@
 # ICookingRecipeManager
 
-レジストリベースのハンドラのデフォルトインターフェイスは、すべてResourceLocationによってレシピを削除できるためです。
+Default interface for Registry based handlers as they can all remove recipes by ResourceLocation.
 
-crafttweakerのmod-idを持つmodによって追加されているクラスです。 従って、この機能を利用する場合はこのmodをインストールする必要があります。
+This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
 
-## クラスのインポート
-問題が発生した場合には、インポートが必要になります。とはいえ、お手数ですが予めインポートしておくほうが安全です。
+## Importing the class
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
 ```zenscript
-crafttweaker.api.registrries.ICookingRecipeManager
+crafttweaker.api.registries.ICookingRecipeManager
 ```
 
-## 実装されたインターフェース
-ICookingRecipeManagerは、以下のインターフェースを実装しています。 つまり、利用可能な任意のメソッドはこのクラスでも使用できます。
-- [crafttweaker.api.registrries.IRecipeManager](/vanilla/api/managers/IRecipeManager)
+## Implemented Interfaces
+ICookingRecipeManager implements the following interfaces. That means any method available to them can also be used on this class.
+- [crafttweaker.api.registries.IRecipeManager](/vanilla/api/managers/IRecipeManager)
 
-## メソッド
+## Methods
 ### addJSONRecipe
 
-提供されたIDataに基づいてレシピを追加します。 提供されたIDataはDataPack JSONを表し、IRecipeTypeシステムをサポートするDataPackのレシピを効果的に登録することができます。
+Adds a recipe based on a provided IData. The provided IData should represent a DataPack JSON, this effectively allows you to register recipes for any DataPack supporting IRecipeType systems.
 
 ```zenscript
 furnace.addJSONRecipe(name as String, data as crafttweaker.api.data.IData);
-furnace.addJSONRecipe("recipe_name", {item:<item:minecraft:gold_ore>.registryName},result:<item:minecraft:cooked_porkchop>.registryName,experience:0.35 as float, cookingtime:100});
+furnace.addJSONRecipe("recipe_name", {ingredient:{item:<item:minecraft:gold_ore>.registryName},result:<item:minecraft:cooked_porkchop>.registryName,experience:0.35 as float, cookingtime:100});
 ```
 
-| パラメータ | タイプ                                                    | 説明             |
-| ----- | ------------------------------------------------------ | -------------- |
-| 名前    | 文字列型                                                   | レシピの名前         |
-| データ   | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | jsonファイルを表すデータ |
+| Parameter | Type                                                   | Description                     |
+| --------- | ------------------------------------------------------ | ------------------------------- |
+| name      | String                                                 | name of the recipe              |
+| data      | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | data representing the json file |
 
 
 ### addRecipe
 
-与えられたパラメータに基づいてレシピを追加します。
+Adds a recipe based on given params.
 
 ```zenscript
 furnace.addRecipe(name as String, output as crafttweaker.api.item.IItemStack, input as crafttweaker.api.item.IIngredient, xp as float, cookTime as int);
-furnace.addRecipe("wool2diamond", <item:diamond>, <tag:minecraft:wool>, 1.0);
+furnace.addRecipe("wool2diamond", <item:diamond>, <tag:minecraft:wool>, 1.0, 0);
 ```
 
-| パラメータ | タイプ                                                                | 説明                 |
-| ----- | ------------------------------------------------------------------ | ------------------ |
-| 名前    | 文字列型                                                               | 新しいレシピの名前          |
-| 出力    | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)  | レシピの IItemStack 出力 |
-| input | [craftweaker.api.item.IIngredient](/vanilla/api/items/IIngredient) | レシピの原料入力           |
-| xp    | float型                                                             | プレーヤーがどれだけXPを取得するか |
-| 調理時間  | int                                                                | 調理にどれだけ時間がかかるか     |
+| Parameter | Type                                                                | Description                     |
+| --------- | ------------------------------------------------------------------- | ------------------------------- |
+| name      | String                                                              | Name of the new recipe          |
+| output    | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)   | IItemStack output of the recipe |
+| input     | [crafttweaker.api.item.IIngredient](/vanilla/api/items/IIngredient) | IIngredient input of the recipe |
+| xp        | float                                                               | how much xp the player gets     |
+| cookTime  | int                                                                 | how long it takes to cook       |
 
 
-### すべて削除
+### removeAll
 
-このレジストリ内のすべてのレシピを削除
+Remove all recipes in this registry
 
 ```zenscript
 furnace.removeAll();
 ```
 
-### removeByModo
+### removeByModid
 
-レジストリ名modidに基づいてレシピを削除
+Remove recipe based on Registry name modid
 
 ```zenscript
 furnace.removeByModid(modid as String);
 furnace.removeByModid("minecraft");
 ```
 
-| パラメータ | タイプ  | 説明              |
-| ----- | ---- | --------------- |
-| modid | 文字列型 | 取り除くべきレシピの<unk> |
+| Parameter | Type   | Description                    |
+| --------- | ------ | ------------------------------ |
+| modid     | String | modid of the recipes to remove |
 
 
 ### removeByName
 
-レジストリ名に基づいてレシピを削除
+Remove recipe based on Registry name
 
 ```zenscript
 furnace.removeByName(name as String);
 furnace.removeByName("minecraft:furnace");
 ```
 
-| パラメータ | タイプ  | 説明             |
-| ----- | ---- | -------------- |
-| 名前    | 文字列型 | 削除するレシピのレジストリ名 |
+| Parameter | Type   | Description                       |
+| --------- | ------ | --------------------------------- |
+| name      | String | registry name of recipe to remove |
 
 
 ### removeByRegex
 
-正規表現に基づいてレシピを削除
+Remove recipe based on regex
 
 ```zenscript
 furnace.removeByRegex(regex as String);
 furnace.removeByRegex("\\d_\\d");
 ```
 
-| パラメータ | タイプ  | 説明        |
-| ----- | ---- | --------- |
-| Regex | 文字列型 | 正規表現と一致する |
+| Parameter | Type   | Description            |
+| --------- | ------ | ---------------------- |
+| regex     | String | regex to match against |
 
 
-### RemoveRecipe
+### removeRecipe
 
-出力に基づいてレシピを削除します。
+Remove a recipe based on it's output.
 
 ```zenscript
 furnace.removeRecipe(output as crafttweaker.api.item.IItemStack);
 furnace.removeRecipe(<item:minecraft:glass>);
 ```
 
-| パラメータ | タイプ                                                               | 説明     |
-| ----- | ----------------------------------------------------------------- | ------ |
-| 出力    | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | レシピの出力 |
+| Parameter | Type                                                              | Description          |
+| --------- | ----------------------------------------------------------------- | -------------------- |
+| output    | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | output of the recipe |
 
 
 
-出力と入力に基づいてレシピを削除します。
+Removes a recipe based on it's output and input.
 
 ```zenscript
 furnace.removeRecipe(output as crafttweaker.api.item.IItemStack, input as crafttweaker.api.item.IIngredient);
 furnace.removeRecipe(<item:minecraft:diamond>, <tag:minecraft:wool>);
 ```
 
-| パラメータ | タイプ                                                                | 説明                 |
-| ----- | ------------------------------------------------------------------ | ------------------ |
-| 出力    | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)  | IItemStack レシピの出力。 |
-| input | [craftweaker.api.item.IIngredient](/vanilla/api/items/IIngredient) | 削除するレシピの成分.        |
+| Parameter | Type                                                                | Description                          |
+| --------- | ------------------------------------------------------------------- | ------------------------------------ |
+| output    | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)   | IItemStack output of the recipe.     |
+| input     | [crafttweaker.api.item.IIngredient](/vanilla/api/items/IIngredient) | IIngredient of the recipe to remove. |
 
 
 
