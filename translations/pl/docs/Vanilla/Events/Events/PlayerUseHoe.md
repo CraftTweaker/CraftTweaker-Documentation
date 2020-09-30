@@ -1,41 +1,41 @@
-# GraczUseHoe
+# PlayerUseHoe
 
-Wydarzenie Gracza UseHoe jest strzelane za każdym razem, gdy gracz używa swojej płytek... Jeśli wiesz, co mam na myśli.
+The PlayerUseHoe Event is fired whenever a player uses his hoe... If you know what I mean.
 
-## Klasa wydarzenia
+## Event Class
 
-Musisz aktywować wydarzenie w nagłówku funkcji jako klasa:  
-`crafttweaker.event. layerUseHoeEvent`  
-Oczywiście możesz również [zaimportować](/AdvancedFunctions/Import/) klasę przed i wtedy użyć tej nazwy.
+You will need to cast the event in the function header as this class:  
+`crafttweaker.event.PlayerUseHoeEvent`  
+You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
 
-## Rozszerzenia interfejsu zdarzenia
+## Event interface extensions
 
-PlayerUseHoe Events implementuje następujące interfejsy i są w stanie wywołać wszystkie swoje metody/getters/setters:
+PlayerUseHoe Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
 
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
-- [Wydarzenie IPlayer](/Vanilla/Events/Events/IPlayerEvent/)
+- [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
 - [IProcessableEvent](/Vanilla/Events/Events/IProcessableEvent/)
-- [Pozycjonowalne](/Vanilla/Events/Events/IEventPositionable/)
+- [IEventPositionable](/Vanilla/Events/Events/IEventPositionable/)
 
 ## ZenGetters
 
-Z wydarzenia można uzyskać następujące informacje:
+The following information can be retrieved from the event:
 
-| ZenGetter      | Typ zwrotu                                   |
-| -------------- | -------------------------------------------- |
-| `anulowane`    | boolean                                      |
-| `przetworzone` | boolean                                      |
-| `x`            | odcień                                       |
-| `y`            | odcień                                       |
-| `z`            | odcień                                       |
-| `gracz`        | [IPlayer](/Vanilla/Players/IPlayer/)         |
-| `świat`        | [IWorld](/Vanilla/World/IWorld/)             |
-| `blok`         | [IBlock](/Vanilla/Blocks/IBlock/)            |
-| `Blokada`      | [Stan IBlocka](/Vanilla/Blocks/IBlockState/) |
-| `wymiary`      | odcień                                       |
-| `element`      | [IItemStack](/Vanilla/Items/IItemStack/)     |
+| ZenGetter    | Return Type                                 |
+| ------------ | ------------------------------------------- |
+| `canceled`   | boolean                                     |
+| `processed`  | boolean                                     |
+| `x`          | int                                         |
+| `y`          | int                                         |
+| `z`          | int                                         |
+| `player`     | [IPlayer](/Vanilla/Players/IPlayer/)        |
+| `world`      | [IWorld](/Vanilla/World/IWorld/)            |
+| `block`      | [IBlock](/Vanilla/Blocks/IBlock/)           |
+| `blockState` | [IBlockState](/Vanilla/Blocks/IBlockState/) |
+| `dimension`  | int                                         |
+| `item`       | [IItemStack](/Vanilla/Items/IItemStack/)    |
 
-## Metody ZenMethods
+## ZenMethods
 
-- `event.cancel()` ustawia wydarzenie jako anulowane
-- `event.process()` ustawia wydarzenie jako przetworzone
+- `event.cancel()` sets the event as cancelled
+- `event.process()` sets the event as processed
