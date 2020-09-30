@@ -1,26 +1,26 @@
-# Командное событие
+# CommandEvent
 
-При выполнении команды запускается командное событие. Вы можете реагировать на команду с помощью обработчика команд. Смотрите примеры [Crafttweaker](https://github.com/CraftTweaker/CraftTweaker-Examples/blob/master/crafttweaker/events/commandEvent/SendMessageOnSyntaxCommand/SendMessageOnSyntaxCommand.zs) для примера.
+The Command Event is fired whenever a command is executed. You can react to the command by providing a command handler. See [Crafttweaker examples](https://github.com/CraftTweaker/CraftTweaker-Examples/blob/master/crafttweaker/events/commandEvent/SendMessageOnSyntaxCommand/SendMessageOnSyntaxCommand.zs) for an example.
 
 ## Класс события
 
-Вам нужно будет использовать событие в заголовке функции как этот класс: `crafttweaker.event.CommandEvent`. Рекомендуется [импортировать](/AdvancedFunctions/Import/) класс
+You will need to cast the event in the function header as this class: `crafttweaker.event.CommandEvent`. It is advised to [import](/AdvancedFunctions/Import/) the class
 
     import crafttweaker.event.CommandEvent;
     
 
 ## Наследование от интерфейсов событий
 
-Командное событие реализует следующие интерфейсы:
+Command event implements the following interfaces:
 
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 
 ## Геттеры/сеттеры
 
-Во время события необходимо извлечь/задать следующую информацию:
+The following information ca be retrieved/set during the event:
 
-| Геттер        | ZenSetter   | Тип                                                 |
-| ------------- | ----------- | --------------------------------------------------- |
-| `отправитель` | нет         | [ICommandSender](/Vanilla/Commands/ICommandSender/) |
-| `команда`     | нет         | [ICommand](/Vanilla/Commands/ICommand/)             |
-| `параметры`   | `параметры` | строковый массив                                    |
+| Геттер          | ZenSetter    | Тип                                                 |
+| --------------- | ------------ | --------------------------------------------------- |
+| `commandSender` | no           | [ICommandSender](/Vanilla/Commands/ICommandSender/) |
+| `command`       | no           | [ICommand](/Vanilla/Commands/ICommand/)             |
+| `parameters`    | `parameters` | string array                                        |
