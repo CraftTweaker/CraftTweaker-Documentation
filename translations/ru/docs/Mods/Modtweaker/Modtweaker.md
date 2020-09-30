@@ -1,3 +1,3 @@
 # Modtweaker
 
-Modtweaker - это аддон для CraftTweaker, который добавляет поддержку для многих модов!
+Modtweaker is an addon for CraftTweaker that adds support for many mods!
