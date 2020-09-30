@@ -1,10 +1,10 @@
-# 蒸馏器
+# Distillation
 
-## remove #移除
+## remove
 
-| 名称   | 类型          |
-| ---- | ----------- |
-| 配方名称 | 字符串[string] |
+| 名称   | 类型     |
+| ---- | ------ |
+| 配方名称 | String |
 
 比如：
 ```ZenScript
@@ -13,7 +13,7 @@
 mods.immersivepetroleum.StillationTower.remove("石油粉碎");
 ```
 
-## 全部移除
+## removeAll
 
 | 名称 | 类型 |
 | -- | -- |
@@ -24,7 +24,7 @@ mods.immersivepetroleum.StillationTower.remove("石油粉碎");
 mods.immersiveproleum.StillationTower.removeAll();
 ```
 
-# 构建器
+# Builder
 
 ## 构造器
 
@@ -54,10 +54,10 @@ builderInstance.setOutputFluids([<fluid:minecraft:water> * 1]);
 
 ## 添加 Byproduct(StemStack 项, int 概率)
 
-| 名称  | 类型                                 |
-| --- | ---------------------------------- |
-| 项目  | [物品应用](/Vanilla/Items/IItemStack/) |
-| 可能的 | 整数 (0-100)                         |
+| 名称     | 类型                                 |
+| ------ | ---------------------------------- |
+| Item   | [物品应用](/Vanilla/Items/IItemStack/) |
+| Chance | 整数 (0-100)                         |
 
 比如：
 ```zenscript
@@ -68,10 +68,10 @@ builderInstance.addByproduct(<item:minecraft:cobblestone>, 50);
 
 ## 添加 Byproduct(StemStack 项目，双次概率)
 
-| 名称  | 类型                                 |
-| --- | ---------------------------------- |
-| 项目  | [物品应用](/Vanilla/Items/IItemStack/) |
-| 可能的 | 双倍(0.0 - 1.0)                      |
+| 名称     | 类型                                 |
+| ------ | ---------------------------------- |
+| Item   | [物品应用](/Vanilla/Items/IItemStack/) |
+| Chance | 双倍(0.0 - 1.0)                      |
 
 比如：
 ```zenscript
@@ -120,11 +120,11 @@ builderInstance.setEnergy(1024);
 builderInstance.setTime(1)；
 ```
 
-## 构建中
+## build
 
-| 名称   | 类型          |
-| ---- | ----------- |
-| 配方名称 | 字符串[string] |
+| 名称   | 类型     |
+| ---- | ------ |
+| 配方名称 | String |
 
 比如：
 ```zenscript
