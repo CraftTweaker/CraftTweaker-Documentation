@@ -1,25 +1,25 @@
-# 貯水池:
+# Reservoir
 
-## 削除
+## remove
 
-| 名称   | タイプ  |
-| ---- | ---- |
-| レシピ名 | 文字列型 |
+| 名称   | Type   |
+| ---- | ------ |
+| レシピ名 | String |
 
-例
+Example:
 ```ZenScript
 // mods.immersivepetroleum.ReservoirRegistry.remove(String recipeName);
 
 mods.immersivepetroleum.ReservoirRegistry.remove("aquifer");
 ```
 
-## すべて削除
+## removeAll
 
-| 名称 | タイプ |
-| -- | --- |
-|    |     |
+| 名称 | Type |
+| -- | ---- |
+|    |      |
 
-例
+Example:
 ```ZenScript
 // mods.immersivepetroleum.ReservoirRegistry.removeAll();
 
@@ -30,30 +30,30 @@ mods.immersivepetroleum.ReservoirRegistry.removeAll();
 
 ## コンストラクター
 
-| 名称    | タイプ                                         |
-| ----- | ------------------------------------------- |
-| Fluid | [Fluidstack](/Vanilla/Liquids/IFluidStack/) |
-| 最小サイズ | int                                         |
-| 最大サイズ | int                                         |
-| 補充率   | int                                         |
-| 重量    | int                                         |
+| 名称             | Type                                        |
+| -------------- | ------------------------------------------- |
+| Fluid          | [Fluidstack](/Vanilla/Liquids/IFluidStack/) |
+| Minimum Size   | int                                         |
+| Maximum Size   | int                                         |
+| Replenish Rate | int                                         |
+| Weight         | int                                         |
 
-### 重量
+### Weight
 
-重量は、特定の流体貯水池を含むチャンクの重量チャンスです。 重量は、合計でXとしてカウントされます。
+Weight is the Weighted Chance of a chunk containing that specific fluid reservoir. The weight is counted as in X in Total.
 
 So if you have 5 Reservoir values at: 5, 5, 6, 8, 10
 
-それぞれのエントリには、以下の重み付きの可能性があります。
+Then each respective entry will have a weighted chance of:
 ```
-5 in 34
-5 in 34
-6 in 34
-8 in 34
+5  in 34
+5  in 34
+6  in 34
+8  in 34
 10 in 34
 ```
 
-例
+Example:
 ```zenscript
 // new mods.immersivepetroleum.ReservoirBuilder(IFluidStack fluid, int minSize, int maxSize, int traceAmount, int weight);
 
@@ -62,12 +62,12 @@ new mods.immimmsivetroleum.ReservoirBuilder(<fluid:minecraft:lava>, 1000, 5000, 
 
 ## addDimensions
 
-| 名称       | タイプ            |
-| -------- | -------------- |
-| ブラック リスト | Boolean        |
-| 寸法名      | String[] array |
+| 名称        | Type           |
+| --------- | -------------- |
+| Blacklist | Boolean        |
+| 寸法名       | String[] array |
 
-例
+Example:
 ```zenscript
 // builderInstance.addDimensions(boolean isBlacklist, String[] dimensionNames);
 
@@ -76,28 +76,28 @@ builderInstance.addDimensions(false, ["minecraft:overworld"]);
 
 ## addBiomes
 
-| 名称       | タイプ            |
-| -------- | -------------- |
-| ブラック リスト | Boolean        |
-| バイオーム名   | String[] array |
+| 名称        | Type           |
+| --------- | -------------- |
+| Blacklist | Boolean        |
+| バイオーム名    | String[] array |
 
-例
+Example:
 ```zenscript
 // builderInstance.addBiomes(boolean isBlacklist, String[] biomeNames);
 
 builderInstance.addBiomes(false, ["minecraft:plains"]);
 ```
 
-## ビルド
+## build
 
-| 名称 | タイプ  |
-| -- | ---- |
-| 名称 | 文字列型 |
+| 名称 | Type   |
+| -- | ------ |
+| 名称 | String |
 
 ### 序文
 ベースリザーバーは翻訳されているように小文字です。カスタムリザーバーは適切に大文字にする必要があります(例:「ディープオーシャンオイル貯水池」)。
 
-例
+Example:
 ```zenscript
 // builderInstance.build(String name);
 
