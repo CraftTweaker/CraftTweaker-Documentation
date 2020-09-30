@@ -1,28 +1,28 @@
 # IItemUpdate
 
-Функция обновления IItemUpdateFunction может быть добавлена к элементу [](/Mods/ContentTweaker/Vanilla/Creatable_Content/Item/) , чтобы позволить выполнять код при обновлении элемента.
+The IItemUpdateFunction can be added to an [Item](/Mods/ContentTweaker/Vanilla/Creatable_Content/Item/) to allow code to be executed whenever the item updates.
 
 ## Импорт пакета
 
-Если вы чувствуете необходимость импорта класса этой функции, вам следует:
+If you ever feel the need to import this function's class, here you go:
 
 ```zenscript
 import mods.contenttweaker.IItemUpdate;
 ```
 
-## Синтаксис
+## Syntax
 
-У нас недействительная функция, которая принимает следующие параметры (в порядке)
+We have a void function that takes the following parameters (in order)
 
-- [IMutableItemStack](/Mods/ContentTweaker/Vanilla/Types/Item/IMutableItemStack/) , представляющий сам стек предметов.
-- [IWorld объект](/Mods/ContentTweaker/Vanilla/Types/World/IWorld/) , представляющий мир, в котором происходит действие.
-- Объект [IEntity](/Vanilla/Entities/IEntity/) падает, насколько это возможно, так что вы можете установить экземпляр до [ICTPlayer](/Mods/ContentTweaker/Vanilla/Types/Player/ICTPlayer/).
-- Подсказка, представляющая ячейку в данный момент
-- Логическое сообщение о том, выбран ли элемент или нет.
+- An [IMutableItemStack](/Mods/ContentTweaker/Vanilla/Types/Item/IMutableItemStack/) representing the item stack itself.
+- An [IWorld object](/Mods/ContentTweaker/Vanilla/Types/World/IWorld/) representing the world the action takes place in.
+- An [IEntity object](/Vanilla/Entities/IEntity/) downcast as far as possible, so you can instanceOf up until [ICTPlayer](/Mods/ContentTweaker/Vanilla/Types/Player/ICTPlayer/).
+- An int representing the slot the item currently is in
+- A boolean stating whether or not the item is currently selected.
 
 ```zenscript
 item.onItemUpdate = function(itemStack, world, owner, slot, isSelected) {
     //CODE GOES HERE!!
-    вернуться;
+    return;
 }
 ```
