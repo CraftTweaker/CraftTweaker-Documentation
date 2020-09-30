@@ -2,16 +2,16 @@
 
 Questa classe è stata aggiunta da una mod con ID `crafttweaker`. Perciò, è necessario avere questa mod installata per poter utilizzare questa funzione.
 
-## Importare la classe
+## Importing the class
 Potrebbe essere necessario importare il pacchetto, se si incontrano dei problemi (come castare un vettore), quindi meglio essere sicuri e aggiungere la direttiva di importazione.
 ```zenscript
 crafttweaker.api.block.MCBlock
 ```
 
-## Metodi
+## Methods
 ### canSpawnInBlock
 
-Tipo restituito: booleano
+Return type: boolean
 
 ```zenscript
 myMCBlock.canSpawnInBlock();
@@ -26,16 +26,16 @@ myMCBlock.getDefaultState();
 ```
 
 
-## Proprietà
+## Properties
 
-| Nome           | Tipo    | Ha Getter | Ha Setter |
-| -------------- | ------- | --------- | --------- |
-| lootTable      | Stringa | vero      | falso     |
-| translationKey | Stringa | vero      | falso     |
+| Name           | Type   | Ha Getter | Ha Setter |
+| -------------- | ------ | --------- | --------- |
+| lootTable      | String | true      | false     |
+| translationKey | String | true      | false     |
 
 ## Caster
 
 | Tipo Risultato | Implicito |
 | -------------- | --------- |
-| Stringa        | falso     |
+| String         | false     |
 
