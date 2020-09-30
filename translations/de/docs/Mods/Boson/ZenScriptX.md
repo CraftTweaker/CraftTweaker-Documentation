@@ -1,15 +1,15 @@
-# Das ZenScriptX-Projekt
+# The ZenScriptX Project
 
-Das ZenScriptX-Projekt ist ein inoffizielles Projekt, das Boson gestartet hat und das die Möglichkeiten der -ZenScript-Sprache erweitern will Hinzufügen von Elementen wie die faule Auswertung von Schleifen, Reflexion und funktionalen Schnittstellen, so dass Funktionen in einer Variable gespeichert werden können.
+The ZenScriptX Project is an unofficial project that Boson started and that aims to expand the possibilities of the ZenScript language, adding elements such as lazy evaluation of loops, Reflection, and functional interfaces, so that functions can be stored into a variable.
 
-Die Nutzung dieser Funktionen erfordert ein stärkeres Wissen über fortgeschrittenere Programmierparadigmen wie Functional Programmieren und eine objektorientierte Programmierung. Es ist zwar wahrscheinlich, dass dies viele der demographischen ZenScript daran hindert, diese Funktionen tatsächlich zu nutzen, Dies wird auch zu einer besseren Qualität von Code für Leute mit fortgeschrittenerem Skriptwissen führen.
+The usage of this features requires stronger knowledge of more advanced programming paradigms, such as Functional Programming and proper Object Oriented Programming representation. While it's likely that this will prevent a lot of the demographic of ZenScript from actually making use of these functionalities, this will also lead to better quality code for people with more advanced scripting knowledge.
 
-Dieses Projekt ist noch im Gange, aber ab 1. 5, es ist sehr wahrscheinlich, dass es in seinem eigenen separaten ZenCode-Modul verschoben wird, um die Entwicklung und Abhängigkeit zu vereinfachen.
+This project is still ongoing, but as of 1.15, it is highly likely it will be moved in its own separate ZenCode module, for ease of development and dependency.
 
-Ab sofort ist das ZenScriptX Projekt dafür verantwortlich, folgende Funktionalitäten hinzuzufügen:
+As of now, the ZenScriptX Project is responsbile for adding the following set of functionalities:
 
-- [Experimentelle Flags Präprozessorrichtlinie](/Mods/Boson/Preprocessor/Exp/)
-- [Funktionale Schnittstellen](/Mods/Boson/Functions/Concept/)
-- [Mathe-Funktionen](/Mods/Boson/Math/Concept/)
-- [Sequenzen](/Mods/Boson/Sequences/Concept/)
-- [Reflexion](/Mods/Boson/Reflection/Concept/)
+- [Experimental Flags Preprocessor Directive](/Mods/Boson/Preprocessor/Exp/)
+- [Functional Interfaces](/Mods/Boson/Functions/Concept/)
+- [Math Functions](/Mods/Boson/Math/Concept/)
+- [Sequences](/Mods/Boson/Sequences/Concept/)
+- [Reflection](/Mods/Boson/Reflection/Concept/)
