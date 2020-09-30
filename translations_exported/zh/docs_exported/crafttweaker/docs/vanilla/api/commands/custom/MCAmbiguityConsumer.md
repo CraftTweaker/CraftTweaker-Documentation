@@ -8,9 +8,9 @@
 craftminstrer.api.commands.custom.MCAmbiguityConsumer
 ```
 
-## 函数接口
+## Functional Interface
 
-此类是一个功能接口。 这意味着您可以使用 lambda 符号来创建一个实例。 Lambda 符号如下所示：
+This class is a functional interface. This means that you can use the lambda notation to create an instance of it. The lambda notation looks like:
 ```zenscript
 (父母、孩子、兄弟姐妹、输入) =>{}
 ```
@@ -23,7 +23,7 @@ myMCAmbiguityConsumer.marious(父级为 craftmilever.api.commands.custom.MCComma
 
 | 参数     | 类型                                                                                            | 描述                      |
 | ------ | --------------------------------------------------------------------------------------------- | ----------------------- |
-| 父级     | [craftminstrer.api.commands.custom.MCCommandNode](/vanilla/api/commands/custom/MCCommandNode) | No description provided |
+| parent | [craftminstrer.api.commands.custom.MCCommandNode](/vanilla/api/commands/custom/MCCommandNode) | No description provided |
 | 子节点    | [craftminstrer.api.commands.custom.MCCommandNode](/vanilla/api/commands/custom/MCCommandNode) | No description provided |
 | 兄弟姐妹的  | [craftminstrer.api.commands.custom.MCCommandNode](/vanilla/api/commands/custom/MCCommandNode) | No description provided |
 | inputs | 收藏&lt;String&gt;                                                                  | No description provided |
