@@ -1,30 +1,30 @@
 # MCBiome
 
-Ta klasa została dodana przez moda z mod-id `crafttweaker`. Więc musisz zainstalować tę modyfikację, jeśli chcesz używać tej funkcji.
+This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
 
-## Importowanie klasy
-Może być wymagane zaimportowanie pakietu, jeśli napotkasz jakiekolwiek problemy (np. rzucanie tablicy), tak aby były bezpieczne niż przepraszamy i dodaj import.
+## Importing the class
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
 ```zenscript
 crafttweaker.api.world.MCBiome
 ```
 
-## Metody
+## Methods
 ### getSpawns
 
-Lista zwrotów <[crafttweaker.api.world.MCBiomeSpawnEntry](/vanilla/api/world/MCBiomeSpawnEntry)>
+Returns List<[crafttweaker.api.world.MCBiomeSpawnEntry](/vanilla/api/world/MCBiomeSpawnEntry)>
 
 ```zenscript
-myMCBiome.getSpawns(klasyfikacja jako crafttweaker.api.entity.MCEntityClassification);
+myMCBiome.getSpawns(classification as crafttweaker.api.entity.MCEntityClassification);
 ```
 
-| Parametr     | Typ                                                                                            | Opis             |
-| ------------ | ---------------------------------------------------------------------------------------------- | ---------------- |
-| klasyfikacja | [crafttweaker.api.entity.MCEntityClassification](/vanilla/api/entities/MCEntityClassification) | Nie podano opisu |
+| Parameter      | Type                                                                                           | Description             |
+| -------------- | ---------------------------------------------------------------------------------------------- | ----------------------- |
+| classification | [crafttweaker.api.entity.MCEntityClassification](/vanilla/api/entities/MCEntityClassification) | No description provided |
 
 
 ### getTempCategory
 
-Zwraca ciąg znaków
+Returns String
 
 ```zenscript
 myMCBiome.getTempCategory();
@@ -32,39 +32,39 @@ myMCBiome.getTempCategory();
 
 ### getTemperature
 
-Zwraca zmiennoprzecinkowe
+Returns float
 
 ```zenscript
 myMCBiome.getTemperature(pos as crafttweaker.api.util.BlockPos);
 ```
 
-| Parametr | Typ                                                          | Opis             |
-| -------- | ------------------------------------------------------------ | ---------------- |
-| poz.     | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | Nie podano opisu |
+| Parameter | Type                                                         | Description             |
+| --------- | ------------------------------------------------------------ | ----------------------- |
+| pos       | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | No description provided |
 
 
 
-## Właściwości
+## Properties
 
-| Nazwisko             | Typ                | Posiada Getter | Ma ustawienie |
-| -------------------- | ------------------ | -------------- | ------------- |
-| kategoria            | Ciąg znaków        | prawda         | fałszywy      |
-| domyślna Temperatura | zmiennoprzecinkowe | prawda         | fałszywy      |
-| głębokość            | zmiennoprzecinkowe | prawda         | fałszywy      |
-| Deszcz               | boolean            | prawda         | fałszywy      |
-| Śnieg                | boolean            | prawda         | fałszywy      |
-| upadek               | zmiennoprzecinkowe | prawda         | fałszywy      |
-| Wysoka wilgotność    | boolean            | prawda         | fałszywy      |
-| isMutacja            | boolean            | prawda         | fałszywy      |
-| izTempCold           | boolean            | prawda         | fałszywy      |
-| izTempMedium         | boolean            | prawda         | fałszywy      |
-| isTempOcean          | boolean            | prawda         | fałszywy      |
-| isTempWarm           | boolean            | prawda         | fałszywy      |
-| rodzic               | Ciąg znaków        | prawda         | fałszywy      |
-| Typ deszczu          | Ciąg znaków        | prawda         | fałszywy      |
-| skala                | zmiennoprzecinkowe | prawda         | fałszywy      |
-| spawningChange       | zmiennoprzecinkowe | prawda         | fałszywy      |
-| Klucz tłumaczeniowy  | Ciąg znaków        | prawda         | fałszywy      |
-| Wodny Kolor          | odcień             | prawda         | fałszywy      |
-| Kolor WodnoFogera    | odcień             | prawda         | fałszywy      |
+| Name               | Type    | Has Getter | Has Setter |
+| ------------------ | ------- | ---------- | ---------- |
+| category           | String  | true       | false      |
+| defaultTemperature | float   | true       | false      |
+| depth              | float   | true       | false      |
+| doesRain           | boolean | true       | false      |
+| doesSnow           | boolean | true       | false      |
+| downfall           | float   | true       | false      |
+| isHighHumidity     | boolean | true       | false      |
+| isMutation         | boolean | true       | false      |
+| isTempCold         | boolean | true       | false      |
+| isTempMedium       | boolean | true       | false      |
+| isTempOcean        | boolean | true       | false      |
+| isTempWarm         | boolean | true       | false      |
+| parent             | String  | true       | false      |
+| rainType           | String  | true       | false      |
+| scale              | float   | true       | false      |
+| spawningChange     | float   | true       | false      |
+| translationKey     | String  | true       | false      |
+| waterColor         | int     | true       | false      |
+| waterFogColor      | int     | true       | false      |
 
