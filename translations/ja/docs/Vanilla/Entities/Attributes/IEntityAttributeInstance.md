@@ -9,20 +9,20 @@ It might be required for you to import the package if you encounter any issues (
 
 | ZenGetter      | GetterMethod        | 戻り値                                                                |
 | -------------- | ------------------- | ------------------------------------------------------------------ |
-| 属性             | getAttribute()      | [IEntityAttribute](/Vanilla/Entities/Attributes/IEntityAttribute/) |
+| attribute      | getAttribute()      | [IEntityAttribute](/Vanilla/Entities/Attributes/IEntityAttribute/) |
 | baseValue      | getBaseValue()      | double                                                             |
-| 修飾子            | getModifiers()      | `リスト<IEntityAttrubuteModifier>`                              |
+| modifiers      | getModifiers()      | `List<IEntityAttrubuteModifier>`                             |
 | attributeValue | getAttributeValue() | double                                                             |
 
 ## ZenSetters
 
-| ZenSetter | SetterMethod         | パラメータタイプ |
-| --------- | -------------------- | -------- |
-| baseValue | setBaseValue (value) | double   |
+| ZenSetter | SetterMethod        | Parameter Type |
+| --------- | ------------------- | -------------- |
+| baseValue | setBaseValue(value) | double         |
 
-## Modifierメソッド
+## Modifier Methods
 
-- `リスト<IEntityAttrubuteModifier>` getModifiersByOperation(int operation)
+- `List<IEntityAttrubuteModifier>` getModifiersByOperation(int operation)
 - boolean hasModifier([IEntityAttributeModifier](/Vanilla/Entities/Attributes/IEntityAttributeModifier/) modifier)
 - [IEntityAttributeModifier](/Vanilla/Entities/Attributes/IEntityAttributeModifier/) getModifier(String uuid);
 - void applyModifier([IEntityAttributeModifier](/Vanilla/Entities/Attributes/IEntityAttributeModifier/) modifier);
