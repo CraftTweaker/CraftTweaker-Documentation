@@ -1,8 +1,8 @@
-# Обработчик шарниров
+# Enchantment Bracket Handler
 
-Обработчик зачарований дает вам доступ к определениям чар в игре.
+The Enchantment Bracket Handler gives you access to the Enchantment definitions in the game.
 
-Они упоминаются в обработчике чар таким образом:
+They are referenced in the Enchantment handler this way:
 
 ```zenscript
 <enchantment:modid:name>
@@ -10,4 +10,4 @@
 <enchantment:minecraft:protection>
 ```
 
-Если зачарование найдено, оно возвращает объект IEnchantmentDefinition. Пожалуйста, обратитесь к [соответствующей вики](/Vanilla/Enchantments/IEnchantmentDefinition/) для получения дополнительной информации о том, что вы можете сделать с этим.
+If the Enchantment is found, this will return an IEnchantmentDefinition Object. Please refer to the [respective Wiki entry](/Vanilla/Enchantments/IEnchantmentDefinition/) for further information on what you can do with these.
