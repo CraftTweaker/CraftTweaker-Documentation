@@ -30,9 +30,9 @@ myMCTextcomponent.appendsibling(组件as craftbiner.api.util.text.MCTextComponen
 myMCTextcomponent.appendText(文本作为字符串)；
 ```
 
-| 参数 | 类型          | 描述                      |
-| -- | ----------- | ----------------------- |
-| 文本 | 字符串[string] | No description provided |
+| 参数 | 类型     | 描述                      |
+| -- | ------ | ----------------------- |
+| 文本 | String | No description provided |
 
 
 ### 复制 Raw
@@ -53,7 +53,7 @@ myMCTextComponent.deepCopy();
 
 ### getString #获取字符串
 
-返回类型：字符串
+Return type: String
 
 ```zenscript
 myMCTextcomponent.getString();
@@ -61,20 +61,20 @@ myMCTextcomponent.getString();
 
 ### getString截取
 
-返回类型：字符串
+Return type: String
 
 ```zenscript
 myMCTextComponent.getStringTruncated(maxLen 为int)；
 ```
 
-| 参数     | 类型 | 描述                      |
-| ------ | -- | ----------------------- |
-| maxLen | 整数 | No description provided |
+| 参数     | 类型  | 描述                      |
+| ------ | --- | ----------------------- |
+| maxLen | int | No description provided |
 
 
 ### getUnformattedComponentText
 
-返回类型：字符串
+Return type: String
 
 ```zenscript
 myMCTextcomponent.getUnformed ComponentText();
@@ -98,9 +98,9 @@ myMCTextComponent.setStyle(style as craftwiner.api.util.text.MCStyle);
 
 | 名称                       | 类型                                                                                                         | 可获得  | 可设置   |
 | ------------------------ | ---------------------------------------------------------------------------------------------------------- | ---- | ----- |
-| 格式化文本                    | 字符串[string]                                                                                                | true | false |
+| 格式化文本                    | String                                                                                                     | true | false |
 | 兄弟姐妹们：                   | 列表&lt;[craftmiliter.api.util.text.MCTextComponent](/vanilla/api/util/text/MCTextComponent)&gt; | true | false |
-| unformattedComponentText | 字符串[string]                                                                                                | true | false |
+| unformattedComponentText | String                                                                                                     | true | false |
 
 ## 运算符
 ### ADD
@@ -131,9 +131,9 @@ myMCText组件 << 组件作为craftbinstrer.api.util.text.MCText组件
 | -- | ----------------------------------------------------------------------------- | ----------------------- |
 | 组件 | [craftbinvest.api.util.text.MCText组件](/vanilla/api/util/text/MCTextComponent) | No description provided |
 
-## 卡斯特尔
+## Casters
 
-| 结果类型        | 是否隐藏  |
-| ----------- | ----- |
-| 字符串[string] | false |
+| 结果类型   | 是否隐藏  |
+| ------ | ----- |
+| String | false |
 
