@@ -1,12 +1,12 @@
-# 大釜クリーニング
+# Cauldron Cleaning
 
-大釜へのレシピの追加や削除には、 *大釜洗浄* パッケージが使用されます。
+The *cauldroncleaning* package is used for adding or removing recipes to/from the Cauldron.
 
-## 発信中
+## Calling
 
-*mods.skyresources.cauldronclean* を使って `caulonclean` を呼び出すことができます。
+You can call the *cauldroncleaning* package using `mods.skyresources.cauldronclean`
 
-## レシピの追加
+## Recipe Addition
 
 ```zenscript
 //mods.skyresources.cauldronclean.addRecipe(IItemStack output, IItemStack input);
@@ -16,7 +16,7 @@ mods.skyresources.cauldronclean.addRecipe(<minecraft:diamond>, <minecraft:dirt>)
 mods.skyresources.cauldronclean.addRecipe(<minecraft:emerald>, <minecraft:dirt>, 0.50);
 ```
 
-## レシピの削除
+## Recipe Removal
 
 ```zenscript
 //mods.skyresources.cauldronclean.removeRecipe(IItemStack output);
