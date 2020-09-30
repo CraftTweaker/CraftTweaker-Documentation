@@ -1,21 +1,21 @@
 # Precision Sawmill
 
-A partire da Mekanism 9.7.0 è ora possibile visualizzare tutte le stringhe di ricetta della segheria di precisione attraverso il comando `/ct mekrecipes segheria`
+As of Mekanism 9.7.0 it is now possible to view all recipe strings of the Precision Sawmill through the command `/ct mekrecipes sawmill`
 
-## Addizione
+## Addition
 
 ```zenscript
 mods.mekanism.sawmill.addRecipe(IIngredient inputStack, IItemStack outputStack, @Optional IItemStack bonusOutput, @Optional double bonusChance);
 
-mods. ekanism.sawmill.addRecipe(<minecraft:bow>, <minecraft:stick> * 3, <minecraft:string> * 3, 0.5);
+mods.mekanism.sawmill.addRecipe(<minecraft:bow>, <minecraft:stick> * 3, <minecraft:string> * 3, 0.5);
 mods.mekanism.sawmill.addRecipe(<minecraft:torch>, <minecraft:stick>);
 ```
 
-A partire da Mekanism 9.7.0 è possibile usare IIngredients come inputStack invece di IItemStacks.
+As of Mekanism 9.7.0 it is possible to use IIngredients as the inputStack instead of only IItemStacks.
 
-Nota: Attualmente tutto questo fa è loop sopra le diverse possibilità in java mentre si aggiunge invece di doverlo fare in ZenScript. Attualmente nelle macchine stesse non vi è alcun supporto per gli ingredienti composti o per il dizionario.
+Note: Currently all this does is loop over the different possibilities in java while adding instead of you having to do it in ZenScript. Currently there is no built in support for compound ingredients or oredictionary in the machines themselves.
 
-## Rimozione
+## Removal
 
 ```zenscript
 mods.mekanism.sawmill.removeRecipe(IIngredient inputStack, @Optional IIngredient outputStack, @Optional IIngredient bonusOutput);
@@ -24,12 +24,12 @@ mods.mekanism.sawmill.removeRecipe(<minecraft:bed>, <minecraft:planks>, <minecra
 mods.mekanism.sawmill.removeRecipe(<minecraft:planks:*>);
 ```
 
-Specificare un parametro di output rimuoverà solo la ricetta specifica che si traduce in quell'output da quell'input. L'esclusione del parametro di output rimuoverà tutte le ricette che l'elemento di input può produrre.
+Specifying an output parameter will only remove the specific recipe that results in that output from that input. Omitting the output parameter will remove all recipes that the input item can produce.
 
-## Rimozione di tutte le ricette
+## Removing all recipes
 
-A partire da Mekanism 9.7.0 è ora possibile rimuovere tutte le ricette di segheria di precisione. (Questo esclude le ricette aggiunte tramite CraftTweaker)
+As of Mekanism 9.7.0 it is now possible to remove all Precision Sawmill recipes. (This excludes any recipes added via CraftTweaker)
 
 ```zenscript
-mods.mekanism.sawmill.removeAllRicette();
+mods.mekanism.sawmill.removeAllRecipes();
 ```
