@@ -8,54 +8,54 @@
 crafttweaker.api.commands.custom.MCCommandDispatcher
 ```
 
-## Методы
-### равно
+## Methods
+### equals
 
-Тип возврата: логическое значение
+Return type: boolean
 
 ```zenscript
 myMCCommandDispatcher.equals(o as Object);
 ```
 
-| Параметр | Тип    | Описание             |
+| Параметр | Тип    | Description          |
 | -------- | ------ | -------------------- |
-| о        | Объект | Описание отсутствует |
+| o        | Object | Описание отсутствует |
 
 
 ### выполнить
 
-Тип возврата: int
+Return type: int
 
 ```zenscript
 myMCCommandDispatcher.execute(проанализировать как crafttweaker.api.commands.custom.MCParseResults);
 ```
 
-| Параметр | Тип                                                                                            | Описание             |
+| Параметр | Тип                                                                                            | Description          |
 | -------- | ---------------------------------------------------------------------------------------------- | -------------------- |
 | parse    | [crafttweaker.api.commands.custom.MCParseResults](/vanilla/api/commands/custom/MCParseResults) | Описание отсутствует |
 
 
 
-Тип возврата: int
+Return type: int
 
 ```zenscript
 myMCCommandDispatcher.execute(ввод как String, источник как crafttweaker.api.commands.custom.MCCommandSource);
 ```
 
-| Параметр | Тип                                                                                              | Описание             |
+| Параметр | Тип                                                                                              | Description          |
 | -------- | ------------------------------------------------------------------------------------------------ | -------------------- |
 | input    | String                                                                                           | Описание отсутствует |
 | источник | [crafttweaker.api.commands.custom.MCCommandSource](/vanilla/api/commands/custom/MCCommandSource) | Описание отсутствует |
 
 
 
-Тип возврата: int
+Return type: int
 
 ```zenscript
 myMCCommandDispatcher.execute(input as com.mojang.brigadier.StringReader, source as crafttweaker.api.commands.custom.MCCommandSource);
 ```
 
-| Параметр | Тип                                                                                              | Описание             |
+| Параметр | Тип                                                                                              | Description          |
 | -------- | ------------------------------------------------------------------------------------------------ | -------------------- |
 | input    | com.mojang.brigadier.StringReader                                                                | Описание отсутствует |
 | источник | [crafttweaker.api.commands.custom.MCCommandSource](/vanilla/api/commands/custom/MCCommandSource) | Описание отсутствует |
@@ -67,7 +67,7 @@ myMCCommandDispatcher.execute(input as com.mojang.brigadier.StringReader, source
 myMCCommandDispatcher.findAmbiguities(потребитель как crafttweaker.api.commands.custom.MCAmbiguityConsumer);
 ```
 
-| Параметр    | Тип                                                                                                      | Описание             |
+| Параметр    | Тип                                                                                                      | Description          |
 | ----------- | -------------------------------------------------------------------------------------------------------- | -------------------- |
 | потребитель | [crafttweaker.api.commands.custom.MCAmbiguityConsumer](/vanilla/api/commands/custom/MCAmbiguityConsumer) | Описание отсутствует |
 
@@ -80,9 +80,9 @@ myMCCommandDispatcher.findAmbiguities(потребитель как crafttweaker
 myMCCommandDispatcher.findNode(путь как коллекция<String>);
 ```
 
-| Параметр | Тип                                 | Описание             |
+| Параметр | Тип                                 | Description          |
 | -------- | ----------------------------------- | -------------------- |
-| путь     | Коллекция&lt;String&gt; | Описание отсутствует |
+| path     | Коллекция&lt;String&gt; | Описание отсутствует |
 
 
 ### getAllUsage
@@ -93,7 +93,7 @@ myMCCommandDispatcher.findNode(путь как коллекция<String>);
 myMCCommandDispatcher.getAllUsage(node as crafttweaker.api.commands.custom.MCCommandNode, источник как crafttweaker.api.commands.custom.MCCommandSource, ограничен как boolean);
 ```
 
-| Параметр   | Тип                                                                                              | Описание             |
+| Параметр   | Тип                                                                                              | Description          |
 | ---------- | ------------------------------------------------------------------------------------------------ | -------------------- |
 | узел       | [crafttweaker.api.commands.custom.MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)     | Описание отсутствует |
 | источник   | [crafttweaker.api.commands.custom.MCCommandSource](/vanilla/api/commands/custom/MCCommandSource) | Описание отсутствует |
@@ -108,7 +108,7 @@ myMCCommandDispatcher.getAllUsage(node as crafttweaker.api.commands.custom.MCCom
 myMCCommandDispatcher.getCompletionSuggestions(parse as crafttweaker.api.commands.custom.MCParseResults);
 ```
 
-| Параметр | Тип                                                                                            | Описание             |
+| Параметр | Тип                                                                                            | Description          |
 | -------- | ---------------------------------------------------------------------------------------------- | -------------------- |
 | parse    | [crafttweaker.api.commands.custom.MCParseResults](/vanilla/api/commands/custom/MCParseResults) | Описание отсутствует |
 
@@ -120,7 +120,7 @@ myMCCommandDispatcher.getCompletionSuggestions(parse as crafttweaker.api.command
 myMCCommandDispatcher.getCompletionSuggestions(parse as crafttweaker.api.commands.custom.MCParseResults, cursor as int);
 ```
 
-| Параметр | Тип                                                                                            | Описание             |
+| Параметр | Тип                                                                                            | Description          |
 | -------- | ---------------------------------------------------------------------------------------------- | -------------------- |
 | parse    | [crafttweaker.api.commands.custom.MCParseResults](/vanilla/api/commands/custom/MCParseResults) | Описание отсутствует |
 | cursor   | int                                                                                            | Описание отсутствует |
@@ -134,7 +134,7 @@ myMCCommandDispatcher.getCompletionSuggestions(parse as crafttweaker.api.command
 myMCCommandDispatcher.getPath(цель как crafttweaker.api.commands.custom.MCCommandNode);
 ```
 
-| Параметр | Тип                                                                                          | Описание             |
+| Параметр | Тип                                                                                          | Description          |
 | -------- | -------------------------------------------------------------------------------------------- | -------------------- |
 | target   | [crafttweaker.api.commands.custom.MCCommandNode](/vanilla/api/commands/custom/MCCommandNode) | Описание отсутствует |
 
@@ -155,7 +155,7 @@ myMCCommandDispatcher.getRoot();
 myMCCommandDispatcher.getSmartUsage(node as crafttweaker.api.commands.custom.MCCommandNode, источник как crafttweaker.api.commands.custom.MCCommandSource);
 ```
 
-| Параметр | Тип                                                                                              | Описание             |
+| Параметр | Тип                                                                                              | Description          |
 | -------- | ------------------------------------------------------------------------------------------------ | -------------------- |
 | узел     | [crafttweaker.api.commands.custom.MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)     | Описание отсутствует |
 | источник | [crafttweaker.api.commands.custom.MCCommandSource](/vanilla/api/commands/custom/MCCommandSource) | Описание отсутствует |
@@ -163,7 +163,7 @@ myMCCommandDispatcher.getSmartUsage(node as crafttweaker.api.commands.custom.MCC
 
 ### hashCode
 
-Тип возврата: int
+Return type: int
 
 ```zenscript
 myMCCommandDispatcher.hashCode();
@@ -177,9 +177,9 @@ myMCCommandDispatcher.hashCode();
 myMCCommandDispatcher.parse(command as String, source as crafttweaker.api.commands.custom.MCCommandSource);
 ```
 
-| Параметр | Тип                                                                                              | Описание             |
+| Параметр | Тип                                                                                              | Description          |
 | -------- | ------------------------------------------------------------------------------------------------ | -------------------- |
-| команда  | String                                                                                           | Описание отсутствует |
+| command  | String                                                                                           | Описание отсутствует |
 | источник | [crafttweaker.api.commands.custom.MCCommandSource](/vanilla/api/commands/custom/MCCommandSource) | Описание отсутствует |
 
 
@@ -190,9 +190,9 @@ myMCCommandDispatcher.parse(command as String, source as crafttweaker.api.comman
 myMCCommandDispatcher.parse(command as com.mojang.brigadier.StringReader, source as crafttweaker.api.commands.custom.MCCommandSource);
 ```
 
-| Параметр | Тип                                                                                              | Описание             |
+| Параметр | Тип                                                                                              | Description          |
 | -------- | ------------------------------------------------------------------------------------------------ | -------------------- |
-| команда  | com.mojang.brigadier.StringReader                                                                | Описание отсутствует |
+| command  | com.mojang.brigadier.StringReader                                                                | Описание отсутствует |
 | источник | [crafttweaker.api.commands.custom.MCCommandSource](/vanilla/api/commands/custom/MCCommandSource) | Описание отсутствует |
 
 
@@ -204,9 +204,9 @@ myMCCommandDispatcher.parse(command as com.mojang.brigadier.StringReader, source
 myMCCommandDispatcher.register(command as crafttweaker.api.commands.custom.MCLiteralArgumentBuilder);
 ```
 
-| Параметр | Тип                                                                                                                | Описание             |
+| Параметр | Тип                                                                                                                | Description          |
 | -------- | ------------------------------------------------------------------------------------------------------------------ | -------------------- |
-| команда  | [crafttweaker.api.commands.custom.MCLiteralArgumentBuilder](/vanilla/api/commands/custom/MCLiteralArgumentBuilder) | Описание отсутствует |
+| command  | [crafttweaker.api.commands.custom.MCLiteralArgumentBuilder](/vanilla/api/commands/custom/MCLiteralArgumentBuilder) | Описание отсутствует |
 
 
 ### настройки Потребителя
@@ -215,14 +215,14 @@ myMCCommandDispatcher.register(command as crafttweaker.api.commands.custom.MCLit
 myMCCommandDispatcher.setConsumer(потребитель как crafttweaker.api.commands.custom.MCResultConsumer);
 ```
 
-| Параметр    | Тип                                                                                                | Описание             |
+| Параметр    | Тип                                                                                                | Description          |
 | ----------- | -------------------------------------------------------------------------------------------------- | -------------------- |
 | потребитель | [crafttweaker.api.commands.custom.MCResultConsumer](/vanilla/api/commands/custom/MCResultConsumer) | Описание отсутствует |
 
 
 ### toString
 
-Тип возврата: строка
+Return type: String
 
 ```zenscript
 myMCCommandDispatcher.toString();
@@ -236,9 +236,9 @@ myMCCommandDispatcher.toString();
 myMCCommandDispatcher == o как объект
 ```
 
-| Параметр | Тип    | Описание             |
+| Параметр | Тип    | Description          |
 | -------- | ------ | -------------------- |
-| о        | Объект | Описание отсутствует |
+| o        | Object | Описание отсутствует |
 
 ## Утилиты
 
