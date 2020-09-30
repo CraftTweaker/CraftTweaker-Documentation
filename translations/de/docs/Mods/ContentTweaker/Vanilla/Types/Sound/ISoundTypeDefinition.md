@@ -1,25 +1,25 @@
 # ISoundTypeDefinition
 
-Ein ISoundTypeDefinition-Objekt repräsentiert einen Sound (Typ) im Spiel. Ein Soundtyp ist fast immer an einen oder mehrere Blöcke gebunden.
+An ISoundTypeDefinition object represents a sound (type) in the game. A sound type is almost always bound to one or multiple blocks.
 
 ## Dieses Paket importieren
 
-Es kann erforderlich sein, dass Sie das Paket importieren, wenn Sie irgendwelche Probleme haben. Seien Sie also besser sicher als entschuldigen und fügen Sie den Import hinzu.  
-`importieren mods.contenttweaker.SoundType;`
+It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
+`import mods.contenttweaker.SoundType;`
 
-## Aufruf eines ISoundTypeDefinition-Objekts
+## Calling an ISoundTypeDefinition object
 
-Sie können ein solches Objekt mit dem [Klang Typ Klammerhandler](/Mods/ContentTweaker/Vanilla/Brackets/Bracket_Sound_Type/)erhalten:  
+You can get such an object using the [Sound Type Bracket Handler](/Mods/ContentTweaker/Vanilla/Brackets/Bracket_Sound_Type/):  
 `<soundtype:wood>`
 
-## ZenMethoden ohne Parameter
+## ZenMethods without parameters
 
-| ZenMethode      | Rückgabetyp                                                                             | Definition                                                                      |
-| --------------- | --------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------- |
-| getVolume()     | float                                                                                   | Gibt die Lautstärke des Typs zurück                                             |
-| getPitch()      | float                                                                                   | Gibt die Tonhöhe des Typs zurück                                                |
-| getBreakSound() | [ISoundEventDefinition](/Mods/ContentTweaker/Vanilla/Types/Sound/ISoundTypeDefinition/) | Gibt den Ton zurück, der auftritt, wenn der zugehörige Block defekt ist         |
-| getStepSound()  | [ISoundEventDefinition](/Mods/ContentTweaker/Vanilla/Types/Sound/ISoundTypeDefinition/) | Gibt den Ton zurück, der auftritt, wenn der zugehörige Block eingeschaltet wird |
-| getPlaceSound() | [ISoundEventDefinition](/Mods/ContentTweaker/Vanilla/Types/Sound/ISoundTypeDefinition/) | Gibt den Ton zurück, der auftritt, wenn der zugehörige Block platziert wird     |
-| getHitSound()   | [ISoundEventDefinition](/Mods/ContentTweaker/Vanilla/Types/Sound/ISoundTypeDefinition/) | Gibt den Ton zurück, der auftritt, wenn der zugehörige Block berührt wird       |
-| getFallSound()  | [ISoundEventDefinition](/Mods/ContentTweaker/Vanilla/Types/Sound/ISoundTypeDefinition/) | Gibt den Ton zurück, der auftritt, wenn der zugehörige Block fällt              |
+| ZenMethod       | Rückgabetyp                                                                             | Definition                                                         |
+| --------------- | --------------------------------------------------------------------------------------- | ------------------------------------------------------------------ |
+| getVolume()     | float                                                                                   | Returns the type's volume                                          |
+| getPitch()      | float                                                                                   | Returns the type's pitch                                           |
+| getBreakSound() | [ISoundEventDefinition](/Mods/ContentTweaker/Vanilla/Types/Sound/ISoundTypeDefinition/) | Returns the sound that occurs when the related block is broken     |
+| getStepSound()  | [ISoundEventDefinition](/Mods/ContentTweaker/Vanilla/Types/Sound/ISoundTypeDefinition/) | Returns the sound that occurs when the related block is stepped on |
+| getPlaceSound() | [ISoundEventDefinition](/Mods/ContentTweaker/Vanilla/Types/Sound/ISoundTypeDefinition/) | Returns the sound that occurs when the related block is placed     |
+| getHitSound()   | [ISoundEventDefinition](/Mods/ContentTweaker/Vanilla/Types/Sound/ISoundTypeDefinition/) | Returns the sound that occurs when the related block is hit        |
+| getFallSound()  | [ISoundEventDefinition](/Mods/ContentTweaker/Vanilla/Types/Sound/ISoundTypeDefinition/) | Returns the sound that occurs when the related block is falling    |
