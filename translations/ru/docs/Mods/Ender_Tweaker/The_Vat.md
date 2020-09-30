@@ -1,37 +1,37 @@
-# Ват
+# The Vat
 
-## Пакет
+## Package
 
-`импорт mods.enderio.Vat;`
+`import mods.enderio.Vat;`
 
 ## Метод
 
-**[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) output** - выходная жидкость (правый резерв).
+**[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) output** - The output fluid (right tank).
 
-**[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) input** - входная жидкость (левая резервуара).
+**[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) input** - The input fluid (left tank).
 
-**[IIngredient](/Vanilla/Variable_Types/IIngredient/)[] slot1Solids** - Предметы, которые могут пойти в слот 1.
+**[IIngredient](/Vanilla/Variable_Types/IIngredient/)[] slot1Solids** - Items that can go in slot 1.
 
-**float[] slot1Mults** - Множители для предметов в ячейке 1. Должно быть той же длины, что и в случае с твердыми веществами.
+**float[] slot1Mults** - The multipliers for the items in slot 1. Must be the same length as slot1Solids.
 
-**[IIngredient](/Vanilla/Variable_Types/IIngredient/)[] slot2Solids** - Предметы, которые могут быть в ячейке 2.
+**[IIngredient](/Vanilla/Variable_Types/IIngredient/)[] slot2Solids** - Items that can go in slot 2.
 
-**float[] slot2Mults** - Множители для предметов в ячейке 2. Должно быть той же длины, что и слоты.
+**float[] slot2Mults** - The multipliers for the items in slot 2. Must be the same length as slot2Solids.
 
-**@Optional int energyCost** - Сколько ПЭ рецепта используется. По умолчанию 5000.
+**@Optional int energyCost** - How much FE the recipe uses. Defaults to 5000.
 
 ## Сложение
 
 ```zenscript
 mods.enderio.Vat.addRecipe(ILiquidStack output, ILiquidStack input, IIngredient[] slot1Solids, float[] slot1Mults, IIngredient[] slot2Solids, float[] slot2Mults, @Optional int energyCost);
 
-mods. nderio.Vat.addRecipe(<liquid:lava>, <liquid:water>, [<minecraft:glowstone_dust>], [5], [<minecraft:fire_charge>], [10], 500);
+mods.enderio.Vat.addRecipe(<liquid:lava>, <liquid:water>, [<minecraft:glowstone_dust>], [5], [<minecraft:fire_charge>], [10], 500);
 ```
 
-## Удаление
+## Removal
 
 ```zenscript
-mods.enderio.Vat.removeRecipe(ILiquidStack);
+mods.enderio.Vat.removeRecipe(ILiquidStack output);
 
 mods.enderio.Vat.removeRecipe(<liquid:ender_distillation>);
 ```
