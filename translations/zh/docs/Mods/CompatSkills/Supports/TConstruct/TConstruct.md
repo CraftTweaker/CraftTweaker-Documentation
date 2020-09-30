@@ -1,18 +1,18 @@
-# Tinker构造工具
+# Tinker's Construct
 
-## 通知
+## Notice
 
-截至Compatskills 1.9.0, TConstruct Locks现在将"向上"传"到项目一级。 如果朋友提供一个精心设计的版本，这样的工具仍然无法使用。
+As of CompatSkills 1.9.0, TConstruct Locks now pass "up" to item-level. That way the tools are still inaccessible if a friend provides a crafted version.
 
-## 命令
+## Commands
 
-    // 倾倒所有材料
-    ~/ct tinkermaterials
+    // Dumps all Materials
+    ~ /ct tinkermaterials
     
-    // 倾倒所有修饰物
-    ~/ct tinkermodifiers
+    // Dumps all Modifiers
+    ~ /ct tinkermodifiers
     
 
-## 工具创建锁
+## Tool-Creation Locks
 
-向任何Tinker 工具类型添加普通项目锁定(不是零件类型!)。 您可以锁定Tinker工具类型的创建！
+By adding a normal ItemStack lock to any of the Tinker Tool-Types (not Part-Types!). You can lock the creation of a Tinker Tool-Type!
