@@ -1,14 +1,14 @@
 # MCTextComponent
 
-Cette classe a été ajoutée par un mod avec le mod-id `crafttweaker`. Vous devez donc avoir ce mod installé si vous voulez utiliser cette fonctionnalité.
+This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
 
-## Importation de la classe
-Il pourrait vous être nécessaire d'importer le paquet si vous rencontrez des problèmes (comme lancer un tableau), alors mieux être sûr que désolé et ajouter l'importation.
+## Importing the class
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
 ```zenscript
 crafttweaker.api.util.text.MCTextComponent
 ```
 
-## Méthodes
+## Methods
 ### appendSibling
 
 Type de retour : [crafttweaker.api.util.text.MCTextComponent](/vanilla/api/util/text/MCTextComponent)
@@ -17,9 +17,9 @@ Type de retour : [crafttweaker.api.util.text.MCTextComponent](/vanilla/api/util/
 myMCTextComponent.appendSibling(composant comme crafttweaker.api.util.text.MCTextComponent);
 ```
 
-| Paramètre | Type de texte                                                                        | Libellé                    |
-| --------- | ------------------------------------------------------------------------------------ | -------------------------- |
-| composant | [crafttweaker.api.util.text.MCTextComponent](/vanilla/api/util/text/MCTextComponent) | Aucune description fournie |
+| Parameter | Type                                                                                 | Description             |
+| --------- | ------------------------------------------------------------------------------------ | ----------------------- |
+| composant | [crafttweaker.api.util.text.MCTextComponent](/vanilla/api/util/text/MCTextComponent) | No description provided |
 
 
 ### appendText
@@ -30,9 +30,9 @@ Type de retour : [crafttweaker.api.util.text.MCTextComponent](/vanilla/api/util/
 myMCTextComponent.appendText(text as String);
 ```
 
-| Paramètre | Type de texte        | Libellé                    |
-| --------- | -------------------- | -------------------------- |
-| texte     | Chaîne de caractères | Aucune description fournie |
+| Parameter | Type   | Description             |
+| --------- | ------ | ----------------------- |
+| texte     | String | No description provided |
 
 
 ### copier/copier brute
@@ -53,7 +53,7 @@ myMCTextComponent.deepCopy();
 
 ### getString
 
-Type de retour: chaîne de caractères
+Return type: String
 
 ```zenscript
 myMCTextComponent.getString();
@@ -61,20 +61,20 @@ myMCTextComponent.getString();
 
 ### format@@0 getStringTuncated
 
-Type de retour: chaîne de caractères
+Return type: String
 
 ```zenscript
 myMCTextComponent.getStringTruncated(maxLen comme int);
 ```
 
-| Paramètre | Type de texte | Libellé                    |
-| --------- | ------------- | -------------------------- |
-| maxLen    | Indice        | Aucune description fournie |
+| Parameter | Type | Description             |
+| --------- | ---- | ----------------------- |
+| maxLen    | int  | No description provided |
 
 
 ### getUnformattedComponentText
 
-Type de retour: chaîne de caractères
+Return type: String
 
 ```zenscript
 myMCTextComponent.getUnformattedComponentText();
@@ -88,52 +88,52 @@ Type de retour : [crafttweaker.api.util.text.MCTextComponent](/vanilla/api/util/
 myMCTextComponent.setStyle(style comme crafttweaker.api.util.text.MCStyle);
 ```
 
-| Paramètre | Type de texte                                                        | Libellé                    |
-| --------- | -------------------------------------------------------------------- | -------------------------- |
-| style     | [crafttweaker.api.util.text.MCStyle](/vanilla/api/util/text/MCStyle) | Aucune description fournie |
+| Parameter | Type                                                                 | Description             |
+| --------- | -------------------------------------------------------------------- | ----------------------- |
+| style     | [crafttweaker.api.util.text.MCStyle](/vanilla/api/util/text/MCStyle) | No description provided |
 
 
 
-## Propriétés
+## Properties
 
-| Nom                      | Type de texte                                                                                                 | A un Getter | A un Setter |
-| ------------------------ | ------------------------------------------------------------------------------------------------------------- | ----------- | ----------- |
-| texte formaté            | Chaîne de caractères                                                                                          | vrai        | Faux        |
-| frères et soeurs         | Liste&lt;[crafttweaker.api.util.text.MCTextComponent](/vanilla/api/util/text/MCTextComponent)&gt; | vrai        | Faux        |
-| unformattedComponentText | Chaîne de caractères                                                                                          | vrai        | Faux        |
+| Name                     | Type                                                                                                          | Has Getter | Has Setter |
+| ------------------------ | ------------------------------------------------------------------------------------------------------------- | ---------- | ---------- |
+| texte formaté            | String                                                                                                        | true       | false      |
+| frères et soeurs         | Liste&lt;[crafttweaker.api.util.text.MCTextComponent](/vanilla/api/util/text/MCTextComponent)&gt; | true       | false      |
+| unformattedComponentText | String                                                                                                        | true       | false      |
 
-## Opérateurs
-### AJOUTER
+## Operators
+### ADD
 
 ```zenscript
 myMCTextComponent + composant en tant que crafttweaker.api.util.text.MCTextComponent
 ```
 
-| Paramètre | Type de texte                                                                        | Libellé                    |
-| --------- | ------------------------------------------------------------------------------------ | -------------------------- |
-| composant | [crafttweaker.api.util.text.MCTextComponent](/vanilla/api/util/text/MCTextComponent) | Aucune description fournie |
-### ATTENTION
+| Parameter | Type                                                                                 | Description             |
+| --------- | ------------------------------------------------------------------------------------ | ----------------------- |
+| composant | [crafttweaker.api.util.text.MCTextComponent](/vanilla/api/util/text/MCTextComponent) | No description provided |
+### CAT
 
 ```zenscript
 myMCTextComponent ~ composant en tant que crafttweaker.api.util.text.MCTextComponent
 ```
 
-| Paramètre | Type de texte                                                                        | Libellé                    |
-| --------- | ------------------------------------------------------------------------------------ | -------------------------- |
-| composant | [crafttweaker.api.util.text.MCTextComponent](/vanilla/api/util/text/MCTextComponent) | Aucune description fournie |
+| Parameter | Type                                                                                 | Description             |
+| --------- | ------------------------------------------------------------------------------------ | ----------------------- |
+| composant | [crafttweaker.api.util.text.MCTextComponent](/vanilla/api/util/text/MCTextComponent) | No description provided |
 ### SHL
 
 ```zenscript
 myMCTextComponent << composant en tant que crafttweaker.api.util.text.MCTextComponent
 ```
 
-| Paramètre | Type de texte                                                                        | Libellé                    |
-| --------- | ------------------------------------------------------------------------------------ | -------------------------- |
-| composant | [crafttweaker.api.util.text.MCTextComponent](/vanilla/api/util/text/MCTextComponent) | Aucune description fournie |
+| Parameter | Type                                                                                 | Description             |
+| --------- | ------------------------------------------------------------------------------------ | ----------------------- |
+| composant | [crafttweaker.api.util.text.MCTextComponent](/vanilla/api/util/text/MCTextComponent) | No description provided |
 
-## Pistolet
+## Casters
 
-| Type de résultat     | Est implicite |
-| -------------------- | ------------- |
-| Chaîne de caractères | Faux          |
+| Result type | Is Implicit |
+| ----------- | ----------- |
+| String      | false       |
 
