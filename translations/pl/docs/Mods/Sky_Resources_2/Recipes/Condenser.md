@@ -1,19 +1,19 @@
-# Kondensator
+# Condenser
 
-Pakiet *skraplacza* jest używany do dodawania lub usuwania przepisów do/z kondensatora.
+The *condenser* package is used for adding or removing recipes to/from the Condenser.
 
-## Dzwonienie
+## Calling
 
-Możesz wywołać pakiet *kondensatora* używając `mods.skyresources.condenser`
+You can call the *condenser* package using `mods.skyresources.condenser`
 
-## Dodawanie przepisów
+## Recipe Addition
 
 ```zenscript
 //mods.skyresources.condenser.addRecipe(IItemStack output, int tickTime, IItemStack catalyst, ILiquidStack inputFluid);
 mods.skyresources.condenser.addRecipe(<minecraft:obsidian>, 300, <minecraft:ice>, <liquid:lava>);
 ```
 
-## Usuwanie przepisów
+## Recipe Removal
 
 ```zenscript
 //mods.skyresources.condenser.removeRecipe(IItemStack output);
