@@ -8,11 +8,11 @@
 crafttweaker.api.fluid.IFluidStack
 ```
 
-## Реализованные интерфейсы
-IFluidStack реализует следующие интерфейсы. Следовательно, методы из них доступны в этом классе.
+## Implemented Interfaces
+IFluidStack реализует следующие интерфейсы. That means any method available to them can also be used on this class.
 - [crafttweaker.api.brackets.CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
 
-## Методы
+## Methods
 ### copy
 
 Копирует стек. Необходимы только тогда, когда задействованы мутирующие стеки.
@@ -37,7 +37,7 @@ myIFluidStack.copy();
 myIFluidStack.mutable();
 ```
 
-### установленная сумма
+### setAmount
 
 Задает количество жидкости в вехах (MB)
 
@@ -50,18 +50,18 @@ myIFluidStack.setAmount(сумма как int);
 myIFluidStack.setAmount(1000);
 ```
 
-| Параметр | Тип | Описание                 |
+| Параметр | Тип | Description              |
 | -------- | --- | ------------------------ |
-| сумма    | int | Сумма умножить этот стек |
+| amount   | int | Сумма умножить этот стек |
 
 
 
 ## Свойства
 
-| Название         | Тип                                                          | Имеет Getter | Имеет Setter |
-| ---------------- | ------------------------------------------------------------ | ------------ | ------------ |
-| командная строка | String                                                       | true         | false        |
-| жидкость         | [crafttweaker.api.fluid.MCFluid](/vanilla/api/fluid/MCFluid) | true         | false        |
+| Название      | Тип                                                          | Имеет Getter | Имеет Setter |
+| ------------- | ------------------------------------------------------------ | ------------ | ------------ |
+| commandString | String                                                       | true         | false        |
+| fluid         | [crafttweaker.api.fluid.MCFluid](/vanilla/api/fluid/MCFluid) | true         | false        |
 
 ## Операторы
 ### MUL
@@ -75,7 +75,7 @@ myIFluidStack * сумма как int
 myIFluidStack * 1000
 ```
 
-| Параметр | Тип | Описание                 |
+| Параметр | Тип | Description              |
 | -------- | --- | ------------------------ |
-| сумма    | int | Сумма умножить этот стек |
+| amount   | int | Сумма умножить этот стек |
 
