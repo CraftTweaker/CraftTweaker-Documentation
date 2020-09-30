@@ -1,18 +1,18 @@
-# 附魔者
+# Enchanter
 
 ## 所属包名
 
-`导入 mods.enderio.Enchanter;`
+`import mods.enderio.Enchanter;`
 
 ## 方法
 
-**- [IEnchantmentDefinition](/Vanilla/Enchantments/IEnchantmentDefinition/) 输出** 输出附魔。
+**- [IEnchantmentDefinition](/Vanilla/Enchantments/IEnchantmentDefinition/) output** The output enchantment.
 
-**- [IIngredient](/Vanilla/Variable_Types/IIngredient/) 输入** 它用来创造这个附魔的项目。
+**- [IIngredient](/Vanilla/Variable_Types/IIngredient/) input** The item that it used to make this enchantment.
 
-**- 英寸取决于等级** 每级附魔的输入项数量。
+**- int amountPerLevel** The number of input items per level of enchantment.
 
-**- 双倍成本倍增器** 用于修改配方的昂贵程度。
+**- double costMultiplier** Used to modify how expensive the recipe is.
 
 ## 添加配方
 
@@ -22,7 +22,7 @@ mods.enderio.Enchanter.addRecipe(IEnchantmentDefinition output, IIngredient inpu
 mods.enderio.Enchanter.addRecipe(<enchantment:minecraft:sharpness>, <minecraft:prismarine_shard>, 32, 60);
 ```
 
-## 移除
+## Removal
 
 ```zenscript
 mods.enderio.Enchanter.removeRecipe(IEnchantmentDefinition output);
