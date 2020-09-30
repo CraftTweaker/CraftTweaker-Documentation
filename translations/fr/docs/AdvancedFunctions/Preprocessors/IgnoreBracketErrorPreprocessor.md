@@ -1,14 +1,14 @@
-# Ignorer le préprocesseur des erreurs entre crochets
+# Ignore Bracket Errors Preprocessor
 
-Ce préprocesseur définit votre script pour ignorer les erreurs de backet.  
-Ceci NE FAIT PAS de quelque manière, forme ou forme magiquement corriger votre script, il supprime le journal des erreurs.
+This Preprocessor sets your script to ignore backet errors.  
+This DOES NOT in any way, shape or form magically correct your script, it supresses the error log.
 
 ## Appel
 
-Vous pouvez appeler le préprocesseur IgnoreBracketErrors en plaçant `#ignoreBracketErrors` dans votre fichier de script.  
-Ce préprocesseur est spécifique à un fichier, donc l'appeler sur un fichier n'affecte pas les autres (au moins pas pour ce que le processeur concerné.
+You can call the IgnoreBracketErrors Preprocessor by placing `#ignoreBracketErrors` inside your script file.  
+This Preprocessor is file-specific, so calling it on one file doesn't affect the others (at least not for what the processor's concerned.
 
 ## Ce qu'il fait
 
-Lorsque le préprocesseur est appelé sur un fichier, toutes les erreurs de journalisation sur les parenthèses seront supprimées.  
-Cela ne change en aucune manière les lignes affectées, au lieu de cela, le seul changement est que votre journal ne contiendra pas les lignes correspondantes.
+When the preprocessor is called on a file, all error logging on bracket errors will be supressed.  
+This doesn't change the affected lines in any way, instead the only change is that your log won't contain the regarding lines.
