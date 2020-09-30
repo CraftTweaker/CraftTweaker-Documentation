@@ -117,3 +117,10 @@ furnace.setFuel(<minecraft:rotten_flesh>, 100);
 furnace.all;
 ```
 Returns a [`List<IFurnaceRecipe>`](/Vanilla/Recipes/Furnace/IFurnaceRecipe/).
+
+### Get Smelting Result
+```zenscript
+furnace.getSmeltingResult(IItemstack stack);
+```
+Returns an [IItemStack](/Vanilla/Items/IItemStack/).
+
