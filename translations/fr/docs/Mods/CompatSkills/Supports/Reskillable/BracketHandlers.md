@@ -1,20 +1,20 @@
-# Gestionnaires de tranches
+# Bracket Handlers
 
-## Gestionnaires de tranches
+## Bracket Handlers
 
-### Gestionnaire de la tranche de compétences :
+### Skill Bracket Handler:
 
-    ## Exemple :
+    ## Example:
     <skill:resourcelocation>
     
-    ## Exemple de Travail :
+    ## Working Example:
     <skill:reskillable:agility>
     
 
-### Gestionnaire de tranchées :
+### Trait Bracket Handler:
 
-    ## Exemple :
+    ## Example:
     <trait:resourcelocation>
     
-    ## Exemple de Travail :
+    ## Working Example:
     <trait:reskillable:sidestep>
