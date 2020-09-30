@@ -17,9 +17,9 @@ craftminstrer.api.commands.custom.MCStringrange
 crafttbiner.api.commands.custom.MCStringRange.at(pos as int)；
 ```
 
-| 参数 | 类型 | 描述                      |
-| -- | -- | ----------------------- |
-| 点  | 整数 | No description provided |
+| 参数 | 类型  | 描述                      |
+| -- | --- | ----------------------- |
+| 点  | int | No description provided |
 
 
 ### 之间
@@ -30,10 +30,10 @@ crafttbiner.api.commands.custom.MCStringRange.at(pos as int)；
 crafttminstrer.api.commands.custom.MCStringRange.interenen(开始为整数，结束为整数)；
 ```
 
-| 参数 | 类型 | 描述                      |
-| -- | -- | ----------------------- |
-| 开始 | 整数 | No description provided |
-| 结束 | 整数 | No description provided |
+| 参数 | 类型  | 描述                      |
+| -- | --- | ----------------------- |
+| 开始 | int | No description provided |
+| 结束 | int | No description provided |
 
 
 ### 包含
@@ -52,32 +52,32 @@ crafttmilower.api.commands.custom.MCStringRange.inclusing(as crafttweer.api.comm
 
 ### equals #等于
 
-返回类型：布尔值
+Return type: boolean
 
 ```zenscript
 myMCStringrange.equals(o as Object);
 ```
 
-| 参数 | 类型 | 描述                      |
-| -- | -- | ----------------------- |
-| o  | 对象 | No description provided |
+| 参数 | 类型     | 描述                      |
+| -- | ------ | ----------------------- |
+| o  | Object | No description provided |
 
 
 ### get #获取
 
-返回类型：字符串
+Return type: String
 
 ```zenscript
 myMCStringRange.get(字符串为字符串)；
 ```
 
-| 参数  | 类型          | 描述                      |
-| --- | ----------- | ----------------------- |
-| 字符串 | 字符串[string] | No description provided |
+| 参数     | 类型     | 描述                      |
+| ------ | ------ | ----------------------- |
+| string | String | No description provided |
 
 
 
-返回类型：字符串
+Return type: String
 
 ```zenscript
 myMCStringRange.get(reader as craftweeper.api.commands.custom.MCImmutableStringReader);
@@ -90,7 +90,7 @@ myMCStringRange.get(reader as craftweeper.api.commands.custom.MCImmutableStringR
 
 ### getEnd
 
-返回类型：int
+Return type: int
 
 ```zenscript
 myMCStringRange.getEnd();
@@ -98,7 +98,7 @@ myMCStringRange.getEnd();
 
 ### getLength
 
-返回类型：int
+Return type: int
 
 ```zenscript
 myMCStringRange.getLength();
@@ -106,7 +106,7 @@ myMCStringRange.getLength();
 
 ### getStart
 
-返回类型：int
+Return type: int
 
 ```zenscript
 myMCStringRange.getStart();
@@ -114,7 +114,7 @@ myMCStringRange.getStart();
 
 ### hashCode
 
-返回类型：int
+Return type: int
 
 ```zenscript
 myMCStringRange.hashCode();
@@ -122,7 +122,7 @@ myMCStringRange.hashCode();
 
 ### isEmpty
 
-返回类型：布尔值
+Return type: boolean
 
 ```zenscript
 myMCStringRange.isEmpty();
@@ -130,7 +130,7 @@ myMCStringRange.isEmpty();
 
 ### toString
 
-返回类型：字符串
+Return type: String
 
 ```zenscript
 myMCStringRange.toString();
