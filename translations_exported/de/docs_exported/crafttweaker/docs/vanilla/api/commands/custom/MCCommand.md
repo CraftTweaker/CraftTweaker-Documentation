@@ -1,40 +1,40 @@
 # MCCommand
 
-Diese Klasse wurde von einer Mod mit mod-id `crafttweaker` hinzugefügt. Wenn Sie diese Funktion nutzen möchten, müssen Sie diese Mod installiert haben.
+This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
 
 ## Diese Klasse importieren
-Es kann erforderlich sein, dass Sie das Paket importieren, wenn Sie irgendwelche Probleme haben (wie zum Beispiel ein Array zu bearbeiten), also besser sicher sein als bedauern und fügen Sie den Import.
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
 ```zenscript
 crafttweaker.api.commands.custom.MCCommand
 ```
 
-## Konstrukteure
+## Constructors
 ```zenscript
 neue crafttweaker.api.commands.custom.MCCommand(Spaß als Funktion.Funktion<crafttweaker.api.commands.custom.MCCommandContext, Integer>);
 ```
-| Parameter | Type                                                                                                                                             | Beschreibung                 |
-| --------- | ------------------------------------------------------------------------------------------------------------------------------------------------ | ---------------------------- |
-| lustig    | function.Function&lt;[crafttweaker.api.commands.custom.MCCommandContext](/vanilla/api/commands/custom/MCCommandContext), Integer&gt; | Keine Beschreibung angegeben |
+| Parameter | Type                                                                                                                                             | Beschreibung            |
+| --------- | ------------------------------------------------------------------------------------------------------------------------------------------------ | ----------------------- |
+| lustig    | function.Function&lt;[crafttweaker.api.commands.custom.MCCommandContext](/vanilla/api/commands/custom/MCCommandContext), Integer&gt; | No description provided |
 
 
 
 ## Methoden
-### gleich
+### equals
 
-Rückgabetyp: boolesch
+Return type: boolean
 
 ```zenscript
 myMCCommand.equals(o als Objekt);
 ```
 
-| Parameter | Type   | Beschreibung                 |
-| --------- | ------ | ---------------------------- |
-| o         | Objekt | Keine Beschreibung angegeben |
+| Parameter | Type   | Beschreibung            |
+| --------- | ------ | ----------------------- |
+| o         | Object | No description provided |
 
 
 ### hashCode
 
-Rückgabetyp: int
+Return type: int
 
 ```zenscript
 myMCCommand.hashCode();
@@ -42,20 +42,20 @@ myMCCommand.hashCode();
 
 ### laufen
 
-Rückgabetyp: int
+Return type: int
 
 ```zenscript
 myMCCommand.run(Kontext als crafttweaker.api.commands.custom.MCCommandContext);
 ```
 
-| Parameter | Type                                                                                               | Beschreibung                 |
-| --------- | -------------------------------------------------------------------------------------------------- | ---------------------------- |
-| kontext   | [crafttweaker.api.commands.custom.MCCommandContext](/vanilla/api/commands/custom/MCCommandContext) | Keine Beschreibung angegeben |
+| Parameter | Type                                                                                               | Beschreibung            |
+| --------- | -------------------------------------------------------------------------------------------------- | ----------------------- |
+| kontext   | [crafttweaker.api.commands.custom.MCCommandContext](/vanilla/api/commands/custom/MCCommandContext) | No description provided |
 
 
 ### toString
 
-Rückgabetyp: String
+Return type: String
 
 ```zenscript
 myMCCommand.toString();
@@ -69,13 +69,13 @@ myMCCommand.toString();
 myMCCommand == o als Objekt
 ```
 
-| Parameter | Type   | Beschreibung                 |
-| --------- | ------ | ---------------------------- |
-| o         | Objekt | Keine Beschreibung angegeben |
+| Parameter | Type   | Beschreibung            |
+| --------- | ------ | ----------------------- |
+| o         | Object | No description provided |
 
-## Zauberer
+## Casters
 
-| Ergebnis-Typ | Ist Implizit |
-| ------------ | ------------ |
-| String       | true         |
+| Result type | Is Implicit |
+| ----------- | ----------- |
+| String      | true        |
 
