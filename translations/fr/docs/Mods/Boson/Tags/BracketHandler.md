@@ -1,49 +1,49 @@
-# Le gestionnaire de pont
+# The Bracket Handler
 
-Le gestionnaire de brackets est le seul moyen d'obtenir un tag.
+The Bracket Handler is the only way to obtain a tag.
 
-## Syntaxe
-La syntaxe de ce gestionnaire de parenthèses est extrêmement facile à suivre, et en même temps il permet une grande variété de possibilités dans lesquelles la balise doit être retournée par le gestionnaire de crochets.
+## Syntax
+The syntax of this bracket handler is extremely easy to follow, and at the same time it allows for a huge variety of possibilities in which tag it should be returned by the bracket handler.
 
 ```zenscript
 <tag-TYPE:NAMESPACE:NAME>
 ```
 
-Dans le code ci-dessus snippet, les pièces dans toutes les majuscules sont les bits que le développeur peut personnaliser et représentent la cible qui sera retournée.
+In the above code snippet, the parts in all caps are the bits that are customizable by the developer and represent the target that will be returned.
 
-`TYPE` identifie le type [de balise](/Mods/Boson/Tags/TagType/) qui sera créé. Le type doit être l'un des mnémoniques qui identifient un type d'étiquette. Reportez-vous à la page liée pour une liste de types de balises valides.
+`TYPE` identifies the [type of tag](/Mods/Boson/Tags/TagType/) that will be created. The type has to be one of the mnemonics that identify a tag type. Refer to the linked page for a list of valid tag types.
 
-`NAMESPACE` identifie l'espace de nom d'une balise, c'est-à-dire l'ID du mod qui possède la balise. Dans la plupart des cas, l'espace de noms sera soit `forge` ou `minecraft`, mais il est également possible d'utiliser d'autres espaces de noms, e. pour les tags spécifiques à un mod.
+`NAMESPACE` identifies the name space of a tag, i.e. the mod ID that owns the tag. In most cases, the namespace will be either `forge` or `minecraft`, but it is also possible to use other name spaces, e.g. for mod-specific tags.
 
-`NOM` représente le nom du tag qui doit être obtenu.
+`NAME` represents the name of the tag that should be obtained.
 
-Reportez-vous à la section Comportement pour savoir quelle est la réponse de ce gestionnaire de parenthèses.
+Refer to the Behavior section to know what this bracket handler returns.
 
-## Comportement
-Contrairement aux autres gestionnaires de parenthèses présents dans CraftTweaker, le comportement de ce gestionnaire de parenthèses diffère selon le chargeur qui traite le script dans lequel se trouve le gestionnaire de parenthèses.
+## Behavior
+Differently from other bracket handlers that are present in CraftTweaker, the behavior of this bracket handler differs according to which loader is processing the script the bracket handler is in.
 
-### Le chargeur de balises ``
-If the bracket handler is referenced in a script loaded by the [`tags` loader](/Mods/Boson/Loaders/Tags/), it will return a [`Tag`](/Mods/Boson/Tags/Tag/). Cela permet de manipuler les éléments qui sont contenus dans la balise elle-même. Reportez-vous à la documentation de la classe pour plus d'informations.
+### The `tags` loader
+If the bracket handler is referenced in a script loaded by the [`tags` loader](/Mods/Boson/Loaders/Tags/), it will return a [`Tag`](/Mods/Boson/Tags/Tag/). This allows for manipulation of the elements that are contained in the tag itself. Refer to the class documentation for more information.
 
-### Le chargeur `preinit`
-Si le gestionnaire d'accolades est référencé dans un script chargé par le chargeur `preinit` , il lancera une exception, puisque les balises sont chargées plus tard dans le cycle de vie de Minecraft, à savoir juste avant que les recettes soient enregistrées.
+### The `preinit` loader
+If the bracket handler is referenced in a script loaded by the `preinit` loader, it will throw an exception, since tags are loaded later on in the Minecraft lifecycle, namely just before recipes are registered.
 
-### Tous les autres chargeurs
-Si le gestionnaire de parenthèses est référencé dans un script chargé par l'un des autres chargeurs, y compris le `recipeevent par défaut` un, puis il retournera un [`TagIngredient`](/Mods/Boson/Tags/TagIngredient/). Cela ne permet pas de manipuler le contenu du tag, mais permet d'utiliser la balise dans les recettes et autres invocations de méthodes qui nécessitent une instance de [`Ingrédient`](/Vanilla/Variable_Types/IIngredient/) comme paramètre.
+### Every other loader
+If the bracket handler is referenced in a script loaded by any of the other loaders, including the default `recipeevent` one, then it will return a [`TagIngredient`](/Mods/Boson/Tags/TagIngredient/). This does not allow for manipulation of the tag contents, but allows the tag to be used in recipes and other method invocations that require an instance of [`IIngredient`](/Vanilla/Variable_Types/IIngredient/) as a parameter.
 
-## Exemple d'utilisation
+## Example usage
 
-Ce premier exemple démontre l'utilisation d'un `TagIngredient` pour ajouter une nouvelle recette. Notez l'utilisation de la balise `items` de type :
+This first example demonstrates the usage of a `TagIngredient` to add a new recipe. Note the usage of the `items` tag type:
 
 ```zenscript
 val tagIngredient = <tag-items:forge:ingots/iron>;
-recettes.addShapelessRecipe("test", <minecraft:iron_ingot> * 3, [tagIngredient, tagIngredient, tagIngredient]);
+recipes.addShapelessRecipe("test", <minecraft:iron_ingot> * 3, [tagIngredient, tagIngredient, tagIngredient]);
 ```
 
-Ce deuxième exemple montre la manipulation d'un `Tag` de type `blocs`:
+This second example shows the manipulation of a `Tag` of type `blocks`:
 
 ```zenscript
 #loader tags
-tag val = <tag-blocks:minecraft:enderman_holdable>;
-tag.add("minecraft:iron_block" en tant que NameSpacedString);
+val tag = <tag-blocks:minecraft:enderman_holdable>;
+tag.add("minecraft:iron_block" as NameSpacedString);
 ```
