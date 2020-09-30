@@ -1,18 +1,18 @@
 # IEntityItem
 
-表示世界上的物品堆栈。
+Represents an item stack in the world.
 
 ## 导入相关包
 
-如果您遇到任何问题，可能需要导入软件包(例如铸造一个 [数组](/AdvancedFunctions/Arrays_and_Loops/)), 这样比抱歉更安全并添加导入。  
-`导入craftweaker.entity.IEntityityitem；`
+It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
+`import crafttweaker.entity.IEntityItem;`
 
-## 扩展 [IEntity](/Vanilla/Entities/IEntity/)
+## Extending [IEntity](/Vanilla/Entities/IEntity/)
 
-IEntityItem extends [IEntity](/Vanilla/Entities/IEntity/). 这意味着 [Ientity](/Vanilla/Entities/IEntity/) 的所有功能也都可以提供给IEntityItem。
+IEntityItem extends [IEntity](/Vanilla/Entities/IEntity/). That means all functions available to [IEntities](/Vanilla/Entities/IEntity/) also are available to IEntityItem.
 
 ## ZenGetters
 
 | ZenGetter | 返回值类型                                    |
 | --------- | ---------------------------------------- |
-| 项目        | [IItemStack](/Vanilla/Items/IItemStack/) |
+| item      | [IItemStack](/Vanilla/Items/IItemStack/) |
