@@ -1,42 +1,42 @@
-# Защита Сундука смерти
+# Death Chest Defense
 
 ## Импорт пакета
 
-`import mods.vanilladeathchest.DeathDefense;`
+`import mods.vanilladeathchest.DeathChestDefense;`
 
-## Разблокировать элемент
+## Unlocker item
 
 ```zenscript
 //DeathChestDefense.setUnlocker(string stage, IItemStack unlocker);
 DeathChestDefense.setUnlocker("example_stage", <minecraft:diamond_axe> * 1000);
 ```
 
-Количество потребления/урона можно установить, указав размер стека как выше.
+A consumption/damage amount can be set by specifying a stack size like above.
 
-## Нанесите урон предмету разблокировки, а не потребляйте
+## Damage the unlocker item rather than consuming it
 
 ```zenscript
-//Сундук защиты.setDamageUnlockerInsteadOfConsume(string stage, bool flag);
+//DeathChestDefense.setDamageUnlockerInsteadOfConsume(string stage, bool flag);
 DeathChestDefense.setDamageUnlockerInsteadOfConsume("example_stage", true);
 ```
 
-## Разблокировать неудачное сообщение чата
+## Unlock failed chat message
 
 ```zenscript
 //DeathChestDefense.setUnlockFailedChatMessage(string stage, string message);
-DeathChestDefense.setUnlockFailedChatMessage("example_stage", "Вам нужно получить %2$s для разблокировки сундука!");
+DeathChestDefense.setUnlockFailedChatMessage("example_stage", "You need to get a %2$s to unlock your chest!");
 ```
 
-Строка принимает два аргумента: количество и отображаемое имя необходимых элементов.
+The string takes two arguments: the amount and display name of the required items.
 
-## Оборона
+## Defense entity
 
 ```zenscript
-//ChestDefense.setDefenseEntity(строковая стадия, IEntityDefinition защиты);
-сундук DeathDefenseEntity("example_stage", <entity:minecraft:zombie_pigman>);
+//DeathChestDefense.setDefenseEntity(string stage, IEntityDefinition defenseEntity);
+DeathChestDefense.setDefenseEntity("example_stage", <entity:minecraft:zombie_pigman>);
 ```
 
-## NBT Обороны
+## Defense entity NBT
 
 ```zenscript
 //DeathChestDefense.setDefenseEntityNBT(string stage, IData nbt);
@@ -45,16 +45,16 @@ DeathChestDefense.setDefenseEntityNBT("example_stage", {
         {
             Count: 1,
             id: "minecraft:diamond_sword"
-        } }
+        }
     ]
 });
 ```
 
-`nbt` должен быть [DataMap](/Vanilla/Data/DataMap/).
+`nbt` should be a [DataMap](/Vanilla/Data/DataMap/).
 
-## Количество спавна защитных объектов
+## Defense entity spawn count
 
 ```zenscript
-//ChestDefense.setDefenseEntitySpawnCount(string stage, int count);
-DeathDefense.setDefenseEntitySpawnCount("example_stage", 500);
+//DeathChestDefense.setDefenseEntitySpawnCount(string stage, int count);
+DeathChestDefense.setDefenseEntitySpawnCount("example_stage", 500);
 ```
