@@ -1,24 +1,24 @@
 # EntityMountEvent
 
-L'evento EntityMount viene sparato ogni volta che un'entità viene montata o smontata da. Se annullato, l'entità non è in grado di montare (o smontare).
+The EntityMount event is fired whenever an entity is mounted or dismounted from. If canceled, the entity is prevented from mounting (or dismounting).
 
-## Classe Evento
-Dovrai lanciare l'evento nell'intestazione della funzione come questa classe:  
-`crafttweaker.event. ntityMountEvent` È possibile, naturalmente, anche [importare](/AdvancedFunctions/Import/) la classe prima e utilizzare quel nome allora.
+## Event Class
+You will need to cast the event in the function header as this class:  
+`crafttweaker.event.EntityMountEvent` You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
 
-## Estensioni dell'interfaccia evento
-Gli eventi EntityMountEvent implementano le seguenti interfacce e sono in grado di chiamare anche tutti i loro metodi/getter/setter:
+## Event interface extensions
+EntityMountEvent Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
 
 - [ILivingEvent](/Vanilla/Events/Events/ILivingEvent/)
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 
 ## ZenGetters/ZenSetters
-Le seguenti informazioni possono essere recuperate/impostate durante l'evento:
+The following information can be retrieved/set during the event:
 
-| ZenGetter        | Tipo Di Reso                          |
+| ZenGetter        | Return Type                           |
 | ---------------- | ------------------------------------- |
-| `mondo`          | [IWorld](/Vanilla/World/IWorld/)      |
+| `world`          | [IWorld](/Vanilla/World/IWorld/)      |
 | `mountingEntity` | [IEntity](/Vanilla/Entities/IEntity/) |
 | `mountedEntity`  | [IEntity](/Vanilla/Entities/IEntity/) |
 | `isMounting`     | boolean                               |
-| `isDismontaggio` | boolean                               |
+| `isDismounting`  | boolean                               |
