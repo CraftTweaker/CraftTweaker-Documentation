@@ -1,27 +1,27 @@
-# Représentation des poulets
+# ChickenRepresentation
 
-La Représentation du poulet est un modèle de ce que votre poulet fera.  
-Par défaut, il n'existera et pondera que l'oeuf que vous lui avez donné en tant que paramètre initial.  
-Vous pouvez modifier ce comportement pour permettre de meilleurs poulets en modifiant les propriétés données.
+The ChickenRepresentation is a template of what your Chicken will do.  
+By default, it will only exist and lay the egg you gave it as initial parameter.  
+You can change this behavior to allow for better chickens by modifying the given properties.
 
-## Importation de la classe
+## Importing the class
 
-Vous voulez importer la classe? Voici:
+Want to import the class? Here you go:
 
 ```zenscript
-Importer mods.contenttweaker.Chicken;
+import mods.contenttweaker.Chicken;
 ```
 
-## Enregistrement du poulet
+## Registering the chicken
 
-Une fois que vous avez défini votre représentation de poulet pour être ce que vous voulez être, la partie la plus importante est de l'enregistrer.  
-Faites attention, car toute modification apportée à ce modèle après l'inscription prendra toujours effet, vous devriez donc créer une nouvelle représentation du poulet pour chaque poulet que vous voulez avoir.
+After you have set your chickenRepresentation to be what you want it to be, the most important part is to register it.  
+Be careful though, as any changes done to this template after the the registering will still take effect, so you should create a new chickenRepresentation for each chicken you want to have.
 
-## Propriétés Zen
+## ZenProperties
 
-Vous pouvez modifier ou récupérer la valeur actuelle des propriétés soit par un objet `. ame = newValue` ou en utilisant les méthodes `object.setName(newValue);`
+You can change or get the current value of the properties either by `object.name = newValue` or by using the methods `object.setName(newValue);`
 
-Exemple:
+Example:
 
 ```zenscript
 chickenRep.layItem = <minecraft:iron_ingot>;
@@ -30,15 +30,15 @@ chickenRep.setLayItem(<minecraft:gold_ingot>);
 print(chickenRep.getLayItem().displayName);
 ```
 
-| Nom                        | Type de type                                                                                     |
-| -------------------------- | ------------------------------------------------------------------------------------------------ |
-| Nom                        | chaîne de caractères                                                                             |
-| layItem                    | [IItemStack](/Vanilla/Items/IItemStack/)                                                         |
-| format@@0 dropItem         | [IItemStack](/Vanilla/Items/IItemStack/)                                                         |
-| Couleur de fond            | [CTColor](/Mods/ContentTweaker/Vanilla/Types/Color/Color/)                                       |
-| foregroundColor            | [CTColor](/Mods/ContentTweaker/Vanilla/Types/Color/Color/)                                       |
-| Localisation de la texture | [format@@0 CTResourceLocation](/Mods/ContentTweaker/Vanilla/Types/Resources/CTResourceLocation/) |
-| type d'apparition          | chaîne de caractères                                                                             |
-| format@@0 layCoefficient   | flottant                                                                                         |
-| parentOne                  | [format@@0 CTResourceLocation](/Mods/ContentTweaker/Vanilla/Types/Resources/CTResourceLocation/) |
-| parentTwo                  | [format@@0 CTResourceLocation](/Mods/ContentTweaker/Vanilla/Types/Resources/CTResourceLocation/) |
+| name            | type                                                                                   |
+| --------------- | -------------------------------------------------------------------------------------- |
+| name            | string                                                                                 |
+| layItem         | [IItemStack](/Vanilla/Items/IItemStack/)                                               |
+| dropItem        | [IItemStack](/Vanilla/Items/IItemStack/)                                               |
+| backgroundColor | [CTColor](/Mods/ContentTweaker/Vanilla/Types/Color/Color/)                             |
+| foregroundColor | [CTColor](/Mods/ContentTweaker/Vanilla/Types/Color/Color/)                             |
+| textureLocation | [CTResourceLocation](/Mods/ContentTweaker/Vanilla/Types/Resources/CTResourceLocation/) |
+| spawnType       | string                                                                                 |
+| layCoefficient  | float                                                                                  |
+| parentOne       | [CTResourceLocation](/Mods/ContentTweaker/Vanilla/Types/Resources/CTResourceLocation/) |
+| parentTwo       | [CTResourceLocation](/Mods/ContentTweaker/Vanilla/Types/Resources/CTResourceLocation/) |
