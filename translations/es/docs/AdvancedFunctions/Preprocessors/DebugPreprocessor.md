@@ -1,12 +1,12 @@
 # DebugPreprocessor
 
-El debugPreprocessor habilita el modo de depuración.
+The debugPreprocessor enables debug mode.
 
-## Llamar
+## Call
 
-Llamas al preprocesador de depuración añadiendo `#debug` a tu archivo de script.
+You call the debug Preprocessor by adding `#debug` to your script file.
 
-## Qué hace
+## What it does
 
-Permite globalmente el modo de depuración. Este modo muestra los archivos de script analizados.  
-Probablemente nunca los necesitarás.
+It globally enables debug mode. This mode outputs the parsed script files.  
+You most likely will never need them.
