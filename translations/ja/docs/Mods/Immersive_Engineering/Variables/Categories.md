@@ -1,17 +1,17 @@
-# カテゴリ
+# Categories
 
-## 情報
+## Information
 
-ブループリントには、「カテゴリ」と呼ばれる必須文字列パラメータがあります。 この文字列を使用すると、特定のブループリントカテゴリにレシピを「分類」できます。
+The Blueprint has a Required String parameter called "Category". This String allows you to "Categorise" your recipes to a specific Blueprint Category.
 
-この文字列がまだ存在しないカテゴリを返すと、そのカテゴリと適切なブループリントが作成されます。 既存のカテゴリを見つけると、そのカテゴリにレシピが追加されます。
+If this string returns a Category not already existing it'll create that Category and an appropriate Blueprint. If it finds an existing Category it'll add the recipe to said Category.
 
-### 既存のカテゴリ
+### Existing Categories
 
-| カテゴリ: | 名前:                                                          | ローカライズ名:          |
-| ----- | ------------------------------------------------------------ | ----------------- |
-| カテゴリ  | コンポーネント                                                      | コンポーネントの作成        |
-| カテゴリ  | 金型|金型|金型|金型|金型|金型|金型|金型|金型|金型|金型|金型|金型|金型|金型|金型|金型|金型|金型|金型| | Metal Press Molds |
-| カテゴリ  | 弾                                                            | 一般的なプロジェクタイル      |
-| カテゴリ  | specialBullet                                                | 特殊なプロジェクタイル       |
-| カテゴリ  | 電極線                                                          | アークかまど            |
+| Category: | Name:         | Localized Name:         |
+| --------- | ------------- | ----------------------- |
+| Category  | components    | Crafting Components     |
+| Category  | molds         | Metal Press Molds       |
+| Category  | bullet        | Common Projectiles      |
+| Category  | specialBullet | Specialized Projectiles |
+| Category  | electrode     | Arc Furnace Electrodes  |
