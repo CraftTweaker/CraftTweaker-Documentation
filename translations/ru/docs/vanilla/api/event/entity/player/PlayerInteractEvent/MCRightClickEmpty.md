@@ -1,4 +1,4 @@
-# КправкаККП пуста
+# MCRightClickEmpty
 
 Этот класс был добавлен модом с mod-id `crafttweaker`. Так что если вы хотите использовать эту функцию, вам нужно установить этот мод.
 
@@ -8,9 +8,9 @@
 crafttweaker.api.event.entity.player.PlayerInteractEvent.MCRightClickEmpty
 ```
 
-## Конструкторы
+## Constructors
 ```zenscript
-new crafttweaker.api.event.entity.player.PlayerInteractEvent.MCRightClickEmpty(обработчик функции.Consumer<crafttweaker.api.event.entity.player.PlayerInteractEvent.MCRightClickEmpty>);
+new crafttweaker.api.event.entity.player.PlayerInteractEvent.MCRightClickEmpty(handler as function.Consumer<crafttweaker.api.event.entity.player.PlayerInteractEvent.MCRightClickEmpty>);
 ```
 | Параметр | Тип                                                                                                                                                                     | Описание             |
 | -------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------- |
@@ -21,7 +21,7 @@ new crafttweaker.api.event.entity.player.PlayerInteractEvent.MCRightClickEmpty(�
 ## Методы
 ### getEntityPlayer
 
-Возвращает [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
+Returns [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
 
 ```zenscript
 myMCRightClickEmpty.getEntityPlayer();
@@ -29,9 +29,9 @@ myMCRightClickEmpty.getEntityPlayer();
 
 ### getFace
 
-Возвращается: `Лицо, участвующее в этом взаимодействии. Для всех неблочных взаимодействий он вернёт null.`
+Returns: `The face involved in this interaction. For all non-block interactions, this will return null.`
 
-Возвращает [crafttweaker.api.util.Direction](/vanilla/api/util/Direction)
+Returns [crafttweaker.api.util.Direction](/vanilla/api/util/Direction)
 
 ```zenscript
 myMCRightClickEmpty.getFace();
@@ -39,9 +39,9 @@ myMCRightClickEmpty.getFace();
 
 ### getItemStack
 
-Возвращается: `Если рука была пуста: {` @code ItemStack.EMPTY}.
+Returns: `The itemstack involved in this interaction, {` @code ItemStack.EMPTY} if the hand was empty.
 
-Возвращает [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
+Returns [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
 
 ```zenscript
 myMCRightClickEmpty.getItemStack();
@@ -49,9 +49,9 @@ myMCRightClickEmpty.getItemStack();
 
 ### getPlayer
 
-Возвращение: `Игрок`
+Returns: `Player`
 
-Возвращает [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
+Returns [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
 
 ```zenscript
 myMCRightClickEmpty.getPlayer();
@@ -59,17 +59,17 @@ myMCRightClickEmpty.getPlayer();
 
 ### getPos
 
-Если взаимодействие было на сущности, то будет BlockPos в центре сущности. Если взаимодействие было на блоке, будет позиция этого блока. В противном случае будет BlockPos в центре игрока. никогда не будет нулевым. Возвращается: `Должность, участвующая в этом взаимодействии.`
+If the interaction was on an entity, will be a BlockPos centered on the entity. If the interaction was on a block, will be the position of that block. Otherwise, will be a BlockPos centered on the player. Will never be null. Returns: `The position involved in this interaction.`
 
-Возвращает [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos)
+Returns [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos)
 
 ```zenscript
 myMCRightClickEmpty.getPos();
 ```
 
-### имеет Результат
+### hasResult
 
-Определяет, ожидает ли это событие значимое значение результата. Примечание: События с аннотацией HasResult будут автоматически добавлены для возврата true.
+Determines if this event expects a significant result value. Note: Events with the HasResult annotation will have this method automatically added to return true.
 
 Возвращает boolean
 
@@ -77,11 +77,11 @@ myMCRightClickEmpty.getPos();
 myMCRightClickEmpty.hasResult();
 ```
 
-### неотменяемый
+### isCancelable
 
-Определите, если эта функция вообще недоступна. Возвращается: `Если доступ к установленной отмене должен быть разрешен
- Примечание:
- События с отменяемой аннотацией будут иметь этот метод автоматически добавлены для возврата истины.`
+Determine if this function is cancelable at all. Returns: `If access to setCanceled should be allowed
+ Note:
+ Events with the Cancelable annotation will have this method automatically added to return true.`
 
 Возвращает boolean
 
@@ -89,25 +89,25 @@ myMCRightClickEmpty.hasResult();
 myMCRightClickEmpty.isCancelable();
 ```
 
-### отменено
+### isCanceled
 
-Определяет, отменено ли это событие и должно прекратить выполнение. Возвращение: `Текущее состояние отменено`
+Determine if this event is canceled and should stop executing. Returns: `The current canceled state`
 
 Возвращает boolean
 
 ```zenscript
-myMCRightClickEmpty.isCancel();
+myMCRightClickEmpty.isCanceled();
 ```
 
-### установка отменена
+### setCanceled
 
 ```zenscript
-myMCRightClickEmpty.setОтменить (отменить как boolean);
+myMCRightClickEmpty.setCanceled(cancel as boolean);
 ```
 
-| Параметр | Тип     | Описание             |
+| Параметр | Тип     | Description          |
 | -------- | ------- | -------------------- |
-| отменить | boolean | Описание отсутствует |
+| cancel   | boolean | Описание отсутствует |
 
 
 
