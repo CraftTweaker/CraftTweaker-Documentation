@@ -1,21 +1,21 @@
-# エンチャントプラス
+# Enchanting Plus
 
-[エンチャントプラス](https://minecraft.curseforge.com/projects/enchanting-plus) を使用すると、プレイヤーはエンチャント体験をより詳細にコントロールできます。 CraftTweakerは、このMODに特定の制限を適用するために使用できます。
+The [Enchanting Plus](https://minecraft.curseforge.com/projects/enchanting-plus) allows players to have more control over the enchanting experience. CraftTweaker can be used to apply certain restrictions to this mod.
 
-# アイテムをブラックリストにする
+# Blacklisting Items
 
-特定のアイテムが高度なエンチャントテーブルに入るのを防ぎます。
+Prevents a specific item from entering the advanced enchanting table.
 
 ```zenscript
 // mods.eplus.Eplus.blacklistItem(IItemStack item);
 mods.eplus.Eplus.blacklistItem(<minecraft:chainmail_helmet>);
 ```
 
-# エンチャントをブラックリストに登録
+# Blacklisting Enchantments
 
-高度なエンチャントテーブルに特定のエンチャントが適用されないようにします。
+Prevents a specific enchantment from being applied at the advanced enchanting table.
 
 ```zenscript
-// mods.Eplus.blacklistEnchantment(IEnchantmentDefinition enchantment);
+// mods.eplus.Eplus.blacklistEnchantment(IEnchantmentDefinition enchantment);
 mods.eplus.Eplus.blacklistEnchantment(<enchantment:minecraft:protection>);
 ```
