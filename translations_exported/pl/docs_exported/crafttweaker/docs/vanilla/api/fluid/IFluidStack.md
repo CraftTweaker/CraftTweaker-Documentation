@@ -1,19 +1,19 @@
 # IFluidStack
 
-Ta klasa została dodana przez moda z mod-id `crafttweaker`. Więc musisz zainstalować tę modyfikację, jeśli chcesz używać tej funkcji.
+This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
 
-## Importowanie klasy
-Może być wymagane zaimportowanie pakietu, jeśli napotkasz jakiekolwiek problemy (np. rzucanie tablicy), tak aby były bezpieczne niż przepraszamy i dodaj import.
+## Importing the class
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
 ```zenscript
 crafttweaker.api.fluid.IFluidStack
 ```
 
-## Zaimplementowane interfejsy
-IFluidStack implementuje następujące interfejsy. Oznacza to, że każda dostępna dla nich metoda może być również stosowana w tej klasie.
+## Implemented Interfaces
+IFluidStack implementuje następujące interfejsy. That means any method available to them can also be used on this class.
 - [crafttweaker.api.brackets.CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
 
-## Metody
-### kopiuj
+## Methods
+### copy
 
 Kopiuje stos. Wymagane tylko wtedy, gdy stosowane są zmienne stosy.
 
@@ -37,7 +37,7 @@ Typ zwrotu: [crafttweaker.api.fluid.IFluidStack](/vanilla/api/fluid/IFluidStack)
 miIFluidStack.mutable();
 ```
 
-### setamount
+### setAmount
 
 Ustawia ilość płynów w mililitrach (MB)
 
@@ -50,20 +50,20 @@ myIFluidStack.setAmount(ilość jak int);
 myIFluidStack.setAmount(1000);
 ```
 
-| Parametr | Typ    | Opis                      |
-| -------- | ------ | ------------------------- |
-| kwota    | odcień | Ilość mnożenia tego stosu |
+| Parameter | Type | Description               |
+| --------- | ---- | ------------------------- |
+| amount    | int  | Ilość mnożenia tego stosu |
 
 
 
-## Właściwości
+## Properties
 
-| Nazwisko  | Typ                                                          | Posiada Getter | Ma ustawienie |
-| --------- | ------------------------------------------------------------ | -------------- | ------------- |
-| polecenie | Ciąg znaków                                                  | prawda         | fałszywy      |
-| płyn      | [crafttweaker.api.fluid.MCFluid](/vanilla/api/fluid/MCFluid) | prawda         | fałszywy      |
+| Name          | Type                                                         | Has Getter | Has Setter |
+| ------------- | ------------------------------------------------------------ | ---------- | ---------- |
+| commandString | String                                                       | true       | false      |
+| fluid         | [crafttweaker.api.fluid.MCFluid](/vanilla/api/fluid/MCFluid) | true       | false      |
 
-## Operatorzy
+## Operators
 ### MUL
 
 Ustawia ilość płynów w mililitrach (MB)
@@ -75,7 +75,7 @@ myIFluidStack * ilość jako int
 myIFluidStack * 1000
 ```
 
-| Parametr | Typ    | Opis                      |
-| -------- | ------ | ------------------------- |
-| kwota    | odcień | Ilość mnożenia tego stosu |
+| Parameter | Type | Description               |
+| --------- | ---- | ------------------------- |
+| amount    | int  | Ilość mnożenia tego stosu |
 
