@@ -1,16 +1,16 @@
-# 滚动机机
+# Rolling_Machine
 
-## 导入软件包
+## Importing the Package
 `mods.techreborn.rollingMachine`
 
-## 添加配方
+## Adding Recipes
 ```zenscript
-mods.techreborn.rollingMachine.addShaped(IItemStack 输出, IIngredient[] 成分);
-mods.techreborn.rollingMachine.addShapeless(IItemStack 输出, IIngredient[成分);
+mods.techreborn.rollingMachine.addShaped(IItemStack output, IIngredient[][] ingredients);
+mods.techreborn.rollingMachine.addShapeless(IItemStack output, IIngredient[] ingredients);
 ```
 
-## 删除配方
+## Removing Recipes
 ```zenscript
-mods.techreborn.rollingMachine.removeRecipe(IItemStack 输出);
+mods.techreborn.rollingMachine.removeRecipe(IItemStack output);
 mods.techreborn.rollingMachine.removeAll();
 ```
