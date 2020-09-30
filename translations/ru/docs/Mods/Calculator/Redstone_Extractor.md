@@ -1,22 +1,22 @@
-# Экстрактор редстоуна
+# Redstone Extractor
 
-## Пакет
+## Package
 ```zenscript
-импорт mods.calculator.redstone;
+import mods.calculator.redstone;
 ```
 
 ## Методы
 
 - **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input** The input.
-- **значение подсказки** Количество входных данных добавляет к этой машине.
+- **int value** The amount of input adds to that machine.
 
 
-## Добавить
+## Additon
 ```zenscript
 redstone.addRecipe(IIngredient input, int value);
 ```
 
-## Удаление
+## Removal
 ```zenscript
 redstone.removeRecipe(IIngredient input);
 ```
