@@ -1,23 +1,23 @@
-# Gesicht
+# Facing
 
-Eine CoT-Verkleidung ist eine Auflistung der</a> möglichen Richtungen eines Blocks</p> 
+A CoT Facing is an enumeration of a [block's](/Mods/ContentTweaker/Vanilla/Creatable_Content/Block/) possible directions
 
 ## Dieses Paket importieren
 
-Es kann erforderlich sein, dass Sie das Paket importieren, wenn Sie irgendwelche Probleme haben. Seien Sie also besser sicher als entschuldigen und fügen Sie den Import hinzu.  
-`importiere mods.contenttweaker.Facing;`
+It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
+`import mods.contenttweaker.Facing;`
 
-## Aufzählungen
+## Enumerations
 
-Angesichts dieser sechs Werte kann es sein:
+Facing can be of those six values:
 
-- nördlich
-- östlich
-- süd
-- westlich
-- runter
-- oben
+- north
+- east
+- south
+- west
+- down
+- up
 
-## Verwendungen
+## Uses
 
-Hauptverwendung einer Hand ist in einer [IItemUse Funktion](/Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemUse/).
+A Hand's main use is in a [IItemUse Function](/Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemUse/).
