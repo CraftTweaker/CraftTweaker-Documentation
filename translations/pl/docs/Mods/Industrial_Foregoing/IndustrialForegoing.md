@@ -1,19 +1,19 @@
-# Stopień przemysłowy
+# Industrial Foregoing
 
-Wsparcie dla BioReaktora, Lasera i Rafinera Sludge Foregoing Industrial Foregoing's
+Industrial Foregoing's BioReactor, Laser Drill and Sludge Refiner CraftTweaker support.
 
-### Waga Przedmiotu
+### Item Weight
 
-`PrzedmiotWaga` to liczba, która reprezentuje szansę na wybranie przedmiotu. Na przykład:
+The `ItemWeight` is a number that represents the chance of an item to get selected. For example:
 
-| Artykuł 1 1 0 – Ogółem | Waga | Szansa % |
-| ---------------------- | ---- | -------- |
-| Kamień                 | 99   | 99%      |
-| Ziemia                 | 1    | 1%       |
+| Item  | Weight | Chance % |
+| ----- | ------ | -------- |
+| Stone | 99     | 99%      |
+| Dirt  | 1      | 1%       |
 
-| Artykuł 1 1 0 – Ogółem | Waga | Szansa % |
-| ---------------------- | ---- | -------- |
-| Kamień                 | 2    | 66%      |
-| Ziemia                 | 1    | 33%      |
+| Item  | Weight | Chance % |
+| ----- | ------ | -------- |
+| Stone | 2      | 66%      |
+| Dirt  | 1      | 33%      |
 
-ElementChance% = (ItemWeight/TotalWewag)*100
+ItemChance% = (ItemWeight/TotalWeight)*100
