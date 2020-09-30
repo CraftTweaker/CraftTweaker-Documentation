@@ -8,17 +8,17 @@
 crafttweaker.api.commands.custom.MCSingleRedirectModifier
 ```
 
-## Конструкторы
+## Constructors
 ```zenscript
 new crafttweaker.api.commands.custom.MCSingleRedirectModifier(fun as function.Function<crafttweaker.api.commands.custom.MCCommandContext, crafttweaker.api.commands.custom.MCCommandSource>);
 ```
-| Параметр | Тип                                                                                                                                                                                                                                       | Описание             |
+| Параметр | Тип                                                                                                                                                                                                                                       | Description          |
 | -------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------- |
 | весело   | function.Function&lt;[crafttweaker.api.commands.custom.MCCommandContext](/vanilla/api/commands/custom/MCCommandContext), [crafttweaker.api.commands.custom.MCCommandSource](/vanilla/api/commands/custom/MCCommandSource)&gt; | Описание отсутствует |
 
 
 
-## Методы
+## Methods
 ### применить
 
 Возврат тип: [crafttweaker.api.commands.custom.MCCommandSource](/vanilla/api/commands/custom/MCCommandSource)
@@ -27,27 +27,27 @@ new crafttweaker.api.commands.custom.MCSingleRedirectModifier(fun as function.Fu
 myMCSingleRedirectModifier.apply(context as crafttweaker.api.commands.custom.MCCommandContext);
 ```
 
-| Параметр | Тип                                                                                                | Описание             |
+| Параметр | Тип                                                                                                | Description          |
 | -------- | -------------------------------------------------------------------------------------------------- | -------------------- |
 | контекст | [crafttweaker.api.commands.custom.MCCommandContext](/vanilla/api/commands/custom/MCCommandContext) | Описание отсутствует |
 
 
-### равно
+### equals
 
-Тип возврата: логическое значение
+Return type: boolean
 
 ```zenscript
 myMCSingleRedirectModifier.equals(o as Object);
 ```
 
-| Параметр | Тип    | Описание             |
+| Параметр | Тип    | Description          |
 | -------- | ------ | -------------------- |
-| о        | Объект | Описание отсутствует |
+| o        | Object | Описание отсутствует |
 
 
 ### hashCode
 
-Тип возврата: int
+Return type: int
 
 ```zenscript
 myMCSingleRedirectModifier.hashCode();
@@ -55,7 +55,7 @@ myMCSingleRedirectModifier.hashCode();
 
 ### toString
 
-Тип возврата: строка
+Return type: String
 
 ```zenscript
 myMCSingleRedirectModifier.toString();
@@ -69,9 +69,9 @@ myMCSingleRedirectModifier.toString();
 myMCSingleRedirectModifier == o как объект
 ```
 
-| Параметр | Тип    | Описание             |
+| Параметр | Тип    | Description          |
 | -------- | ------ | -------------------- |
-| о        | Объект | Описание отсутствует |
+| o        | Object | Описание отсутствует |
 
 ## Утилиты
 
