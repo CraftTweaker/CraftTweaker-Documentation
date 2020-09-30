@@ -1,13 +1,13 @@
-# Blokowanie poziomu Zbioru Narzędzi
+# Tool Harvest-Level Locking
 
-## Funkcja:
+## Feature:
 
-Ta blokada zwiększa zdolność autorów paczek do blokowania narzędzi w ogóle lub specjalnych "typów" narzędzi, za ich poziomem zbiorów. Oznacza to, że możesz zablokować wszystkie kilofy z poziomem zbioru „3” za zbiorem wymagań. Lub ogólnie wszystkie narzędzia z poziomem zbiorów 3 za zestawem wymagań!
+This lock adds the ability for pack authors to lock Tools in general or specific tool "types" behind their harvest level. This means that you can lock down all pickaxes with a harvest level of "3" behind a set of requirements. Or in general all tools with a harvest level of 3 behind a set of requirements!
 
-## Składnia:
+## Syntax:
 
-    mods.compatskills.HarvestLock.addToolLevelLock(int poziom, String... wymagania);
-    mods.compatskills.HarvestLock.addToolLevelLock(Typ ciągu, poziom int, String... wymagania);
+    mods.compatskills.HarvestLock.addToolLevelLock(int level, String... requirements);
+    mods.compatskills.HarvestLock.addToolLevelLock(String type, int level, String... requirements);
     
     mods.compatskills.HarvestLock.addToolLevelLock(3, "dim|1");
-    mods.compatskills.HarvestLock.addToolLevelLock("kilkaxe", 3, "dim|1");
+    mods.compatskills.HarvestLock.addToolLevelLock("pickaxe", 3, "dim|1");
