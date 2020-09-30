@@ -1,26 +1,26 @@
-# Suszenie
+# Drying
 
-Pakiet `Susza` pozwala na dodanie lub usunięcie przepisów suszenia.
+The `Drying` package allows you to add or remove Drying recipes.
 
-## Dzwonienie
+## Calling
 
-Możesz nazwać pakiet suszenia używając `mods.tconstruct.Drying`
+You can call the Drying package using `mods.tconstruct.Drying`
 
-## Dodawanie
+## Adding
 
-Czas jest w tickach
+The time is in ticks
 
 ```zenscript
-//mods.tconstruct.Drygin.addRecipe(wyjście IItemStack, Wejście IIngredient, czas int);
+//mods.tconstruct.Drying.addRecipe(IItemStack output, IIngredient input, int time);
 mods.tconstruct.Drying.addRecipe(<minecraft:leather>,<minecraft:rotten_flesh>, 100);
 ```
 
-## Usuwanie
+## Removing
 
 ```zenscript
-//mods.tconstruct.Drying.removeRecipe(wyjście IItemStack);
+//mods.tconstruct.Drying.removeRecipe(IItemStack output);
 mods.tconstruct.Drying.removeRecipe(<minecraft:leather>);
 
-//mods.tconstruct.Drying.removeRecipe(wyjście IItemStack, wejście IItemStack);
+//mods.tconstruct.Drying.removeRecipe(IItemStack output, IItemStack input);
 mods.tconstruct.Drying.removeRecipe(<minecraft:leather>, <minecraft:rotten_flesh>);
 ```
