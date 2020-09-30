@@ -1,35 +1,35 @@
-# Raffinerie
+# Refinery
 
-## Paket
+## Package
 
 `mods.thermalexpansion.Refinery`
 
-## Rezept hinzufügen
+## Adding a Recipe
 
 `Refinery.addRecipe(output, outputItem, input, energy);`
 
-- `Ausgabe` <[ILiquidStack](/Vanilla/Liquids/ILiquidStack)>
+- `output` <[ILiquidStack](/Vanilla/Liquids/ILiquidStack)>
 - `outputItem` <[WeightedItemStack](/Vanilla/Items/WeightedItemStack)>
 - `input` <[ILiquidStack](/Vanilla/Liquids/ILiquidStack)>
 - `energy` &lt;int> The total energy cost
 
 ```zenscript
-import mods.thermalexpansion.Rfinery;
+import mods.thermalexpansion.Refinery;
 
-// Fügt ein Rezept hinzu, das 1 mB Lava und einen Diamanten (bei einer 100%igen Chance) pro 1mB Wasser
-Raffinerie ausgibt. ddRecipe(<liquid:lava>, <minecraft:diamond>, <liquid:water>, 50);
+// Adds a recipe that outputs 1mB of lava and a diamond (at a 100% chance) per 1mB of water
+Refinery.addRecipe(<liquid:lava>, <minecraft:diamond>, <liquid:water>, 50);
 
-// Fügt ein Rezept hinzu, das 5mB Lava und einen Diamanten (bei einer 1% Chance) pro 100mB Wasser ausgibt
-Raffinerie. ddRecipe(<liquid:lava> * 5, <minecraft:diamond> % 1, <liquid:water> * 100, 50);
+// Adds a recipe that outputs 5mB of lava and a diamond (at a 1% chance) per 100mB of water
+Refinery.addRecipe(<liquid:lava> * 5, <minecraft:diamond> % 1, <liquid:water> * 100, 50);
 ```
 
-### Hinzufügen eines Trank Rezepts
+### Adding a Potion Recipe
 
-Fügt ein Rezept hinzu, das bei der Alchemie-Retort-Augmentation verwendet werden soll
+Adds a recipe to be used with the Alchemical Retort Augmentation
 
-`Refinery.addRecipePotion(Ausgabe, Eingabe, Energie);`
+`Refinery.addRecipePotion(output, input, energy);`
 
-- `Ausgabe` <[ILiquidStack](/Vanilla/Liquids/ILiquidStack)>
+- `output` <[ILiquidStack](/Vanilla/Liquids/ILiquidStack)>
 - `input` <[ILiquidStack](/Vanilla/Liquids/ILiquidStack)>
 - `energy` &lt;int> The total energy cost
 
@@ -39,26 +39,26 @@ import mods.thermalexpansion.Refinery;
 Refinery.addRecipePotion(<liquid:potion>.withTag({Potion: "minecraft:mundane"}) * 500, <liquid:potion>.withTag({Potion: "cofhcore:leaping4"}) * 100, 100);
 ```
 
-## Rezept entfernen
+## Removing a Recipe
 
-`Refinery.removeRecipe(Eingabe);`
+`Refinery.removeRecipe(input);`
 
 - `input` <[ILiquidStack](/Vanilla/Liquids/ILiquidStack)>
 
 ```zenscript
-import mods.thermalexpansion.Rfinery;
+import mods.thermalexpansion.Refinery;
 
 Refinery.removeRecipe(<liquid:resin>);
 ```
 
-### Entfernen eines Trank Rezepts
+### Removing a Potion Recipe
 
-`Refinery.removeRecipePotion(Eingabe);`
+`Refinery.removeRecipePotion(input);`
 
 - `input` <[ILiquidStack](/Vanilla/Liquids/ILiquidStack)>
 
 ```zenscript
-import mods.thermalexpansion.Raffery;
+import mods.thermalexpansion.Refinery;
 
 Refinery.removeRecipePotion(<liquid:potion_lingering>.withTag({Potion: "cofhcore:healing3"}));
 ```
