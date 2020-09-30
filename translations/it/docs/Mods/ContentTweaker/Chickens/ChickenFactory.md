@@ -1,39 +1,39 @@
 # ChickenFactory
 
-Il ChickenFactory consente di creare [polli personalizzati](/Mods/ContentTweaker/Chickens/ChickenRepresentation/) per il gioco.  
-Nota che questo modulo è una funzionalità aggiunta alla [Chickens mod by setycz](https://minecraft.curseforge.com/projects/chickens), quindi questo modulo è disponibile solo se questa mod è caricata.
+The ChickenFactory allows you to create custom [Chickens](/Mods/ContentTweaker/Chickens/ChickenRepresentation/) to the game.  
+Note that this module is a feature addition to the [Chickens mod by setycz](https://minecraft.curseforge.com/projects/chickens), so this module is only available if that mod is loaded.
 
-## Importazione del pacchetto
+## Importing the package
 
 ```zenscript
 import mods.contenttweaker.ChickenFactory;
 ```
 
-## Creazione polli
+## Creating chickens
 
-Prima di tutto, è necessario creare una [rappresentanza di pollo](/Mods/ContentTweaker/Chickens/ChickenRepresentation/).  
-Questo è essenzialmente un modello vuoto di quello che diventerà il tuo pollo.  
-Questo metodo restituisce un [Chicken Representation](/Mods/ContentTweaker/Chickens/ChickenRepresentation/) object, prendendo i seguenti parametri:
+First of all, you will need to create a [Chicken Representation](/Mods/ContentTweaker/Chickens/ChickenRepresentation/).  
+This is essentially an empty template of what your chicken will become.  
+This method returns such a [Chicken Representation](/Mods/ContentTweaker/Chickens/ChickenRepresentation/) object, by taking the following parameters:
 
-- Nome della stringa: il nome dell’entità del pollo, utilizzato per i modelli e il registro delle entità.
+- String name: the entity name of the chicken, used for models and the entity registry.
 - [CTColor](/Mods/ContentTweaker/Vanilla/Types/Color/Color/) color: The color, the chicken will have.
-- [IItemStack](/Vanilla/Items/IItemStack/) layedItem: L'oggetto che il pollo deporrà più tardi.
+- [IItemStack](/Vanilla/Items/IItemStack/) layedItem: The item the chicken will lay later on.
 
 ```zenscript
-ChickenFactory.createChicken(nome stringa, colore CTColor, elemento IItemStack);
+ChickenFactory.createChicken(String name, CTColor color, IItemStack item);
 ```
 
-## Script Di Esempio
+## Example Script
 
 ```zenscript
 #loader contenttweaker
-#modloaded polli
+#modloaded chickens
 
 import mods.contenttweaker.ChickenFactory;
 import mods.contenttweaker.Color;
 
 
-val chickenRepresentation = ChickenFactory.createChicken("bedrocked_chicken", Color.fromInt(0xffffffff), <item:minecraft:bedrock>);
+val chickenRepresentation = ChickenFactory.createChicken("bedrocked_chicken", Color.fromInt(0xffffff), <item:minecraft:bedrock>);
 
 chickenRepresentation.setForegroundColor(Color.fromInt(0xabcdef));
 
