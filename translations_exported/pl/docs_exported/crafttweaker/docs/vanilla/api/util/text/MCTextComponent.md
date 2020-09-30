@@ -1,14 +1,14 @@
 # Komponent MCText
 
-Ta klasa została dodana przez moda z mod-id `crafttweaker`. Więc musisz zainstalować tę modyfikację, jeśli chcesz używać tej funkcji.
+This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
 
-## Importowanie klasy
-Może być wymagane zaimportowanie pakietu, jeśli napotkasz jakiekolwiek problemy (np. rzucanie tablicy), tak aby były bezpieczne niż przepraszamy i dodaj import.
+## Importing the class
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
 ```zenscript
 crafttweaker.api.util.text.MCTextComponent
 ```
 
-## Metody
+## Methods
 ### appendSibling
 
 Typ zwrotu: [crafttweaker.api.util.text.MCTextComponent](/vanilla/api/util/text/MCTextComponent)
@@ -17,9 +17,9 @@ Typ zwrotu: [crafttweaker.api.util.text.MCTextComponent](/vanilla/api/util/text/
 myMCTextComponent.appendSibling(komponent jako crafttweaker.api.util.text.MCTextComponent);
 ```
 
-| Parametr  | Typ                                                                                  | Opis             |
-| --------- | ------------------------------------------------------------------------------------ | ---------------- |
-| komponent | [crafttweaker.api.util.text.MCTextComponent](/vanilla/api/util/text/MCTextComponent) | Nie podano opisu |
+| Parameter | Type                                                                                 | Description             |
+| --------- | ------------------------------------------------------------------------------------ | ----------------------- |
+| komponent | [crafttweaker.api.util.text.MCTextComponent](/vanilla/api/util/text/MCTextComponent) | No description provided |
 
 
 ### appendText
@@ -30,9 +30,9 @@ Typ zwrotu: [crafttweaker.api.util.text.MCTextComponent](/vanilla/api/util/text/
 myMCTextComponent.appendText(tekst jako ciąg);
 ```
 
-| Parametr | Typ         | Opis             |
-| -------- | ----------- | ---------------- |
-| tekst    | Ciąg znaków | Nie podano opisu |
+| Parameter | Type   | Description             |
+| --------- | ------ | ----------------------- |
+| tekst     | String | No description provided |
 
 
 ### Kopiuj surowy
@@ -53,7 +53,7 @@ myMCTextComponent.deepCopy();
 
 ### getString
 
-Typ zwrotu: Ciąg
+Return type: String
 
 ```zenscript
 myMCTextComponent.getString();
@@ -61,20 +61,20 @@ myMCTextComponent.getString();
 
 ### getStringskrócony
 
-Typ zwrotu: Ciąg
+Return type: String
 
 ```zenscript
 myMCTextComponent.getStringTruncated(maxLen jako int);
 ```
 
-| Parametr | Typ    | Opis             |
-| -------- | ------ | ---------------- |
-| maksimum | odcień | Nie podano opisu |
+| Parameter | Type | Description             |
+| --------- | ---- | ----------------------- |
+| maksimum  | int  | No description provided |
 
 
 ### getUnformattedComponentText
 
-Typ zwrotu: Ciąg
+Return type: String
 
 ```zenscript
 myMCTextComponent.getUnformattedComponentText();
@@ -88,52 +88,52 @@ Typ zwrotu: [crafttweaker.api.util.text.MCTextComponent](/vanilla/api/util/text/
 myMCTextComponent.setStyle(styl jak crafttweaker.api.util.text.MCStyle);
 ```
 
-| Parametr | Typ                                                                  | Opis             |
-| -------- | -------------------------------------------------------------------- | ---------------- |
-| styl     | [craftaweaker.api.util.text.MCStyle](/vanilla/api/util/text/MCStyle) | Nie podano opisu |
+| Parameter | Type                                                                 | Description             |
+| --------- | -------------------------------------------------------------------- | ----------------------- |
+| styl      | [craftaweaker.api.util.text.MCStyle](/vanilla/api/util/text/MCStyle) | No description provided |
 
 
 
-## Właściwości
+## Properties
 
-| Nazwisko                 | Typ                                                                                                           | Posiada Getter | Ma ustawienie |
-| ------------------------ | ------------------------------------------------------------------------------------------------------------- | -------------- | ------------- |
-| sformatowanTekst         | Ciąg znaków                                                                                                   | prawda         | fałszywy      |
-| rodzeństwo               | Lista&lt;[crafttweaker.api.util.text.MCTextComponent](/vanilla/api/util/text/MCTextComponent)&gt; | prawda         | fałszywy      |
-| unformattedComponentText | Ciąg znaków                                                                                                   | prawda         | fałszywy      |
+| Name                     | Type                                                                                                          | Has Getter | Has Setter |
+| ------------------------ | ------------------------------------------------------------------------------------------------------------- | ---------- | ---------- |
+| sformatowanTekst         | String                                                                                                        | true       | false      |
+| rodzeństwo               | Lista&lt;[crafttweaker.api.util.text.MCTextComponent](/vanilla/api/util/text/MCTextComponent)&gt; | true       | false      |
+| unformattedComponentText | String                                                                                                        | true       | false      |
 
-## Operatorzy
-### DODAJ
+## Operators
+### ADD
 
 ```zenscript
 Komponent myMCTextComponent + jako komponent crafttweaker.api.util.text.MCTextComponent
 ```
 
-| Parametr  | Typ                                                                                  | Opis             |
-| --------- | ------------------------------------------------------------------------------------ | ---------------- |
-| komponent | [crafttweaker.api.util.text.MCTextComponent](/vanilla/api/util/text/MCTextComponent) | Nie podano opisu |
-### KAT
+| Parameter | Type                                                                                 | Description             |
+| --------- | ------------------------------------------------------------------------------------ | ----------------------- |
+| komponent | [crafttweaker.api.util.text.MCTextComponent](/vanilla/api/util/text/MCTextComponent) | No description provided |
+### CAT
 
 ```zenscript
 Komponent myMCText~ jako komponent crafttweaker.api.util.text.MCTextComponent
 ```
 
-| Parametr  | Typ                                                                                  | Opis             |
-| --------- | ------------------------------------------------------------------------------------ | ---------------- |
-| komponent | [crafttweaker.api.util.text.MCTextComponent](/vanilla/api/util/text/MCTextComponent) | Nie podano opisu |
+| Parameter | Type                                                                                 | Description             |
+| --------- | ------------------------------------------------------------------------------------ | ----------------------- |
+| komponent | [crafttweaker.api.util.text.MCTextComponent](/vanilla/api/util/text/MCTextComponent) | No description provided |
 ### SHL
 
 ```zenscript
 Komponent myMCTextComponent << jako crafttweaker.api.util.text.MCTextComponent
 ```
 
-| Parametr  | Typ                                                                                  | Opis             |
-| --------- | ------------------------------------------------------------------------------------ | ---------------- |
-| komponent | [crafttweaker.api.util.text.MCTextComponent](/vanilla/api/util/text/MCTextComponent) | Nie podano opisu |
+| Parameter | Type                                                                                 | Description             |
+| --------- | ------------------------------------------------------------------------------------ | ----------------------- |
+| komponent | [crafttweaker.api.util.text.MCTextComponent](/vanilla/api/util/text/MCTextComponent) | No description provided |
 
-## Szafy na akta, szafy na kartoteki, kasety na papiery, podpórki na papiery, pojemniki na przybory do pisania, stojaki na stemple biurowe i podobne wyposażenie biurowe lub biurkowe, z metali nieszlachetnych
+## Casters
 
-| Typ wyniku  | Jest niedomniemany |
-| ----------- | ------------------ |
-| Ciąg znaków | fałszywy           |
+| Result type | Is Implicit |
+| ----------- | ----------- |
+| String      | false       |
 
