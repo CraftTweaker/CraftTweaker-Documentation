@@ -1,26 +1,26 @@
-# Datos flotantes
+# FloatData
 
 
 
-Esta clase fue añadida por un mod con la ID  `crafttweaker`. Necesitas tener este mod instalado si quieres usar esta caracteristica.
+This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
 
-## Importar la clase
-Puede ser requerido que importes el paquete si encuentras algun problema (como crear un Array).
+## Importing the class
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
 ```zenscript
 crafttweaker.api.data.FloatData
 ```
 
-## Interfaces implementadas
-FloatData implementa las siguientes interfaces. Esto significa que cualquier método disponible también puede ser usado en esta clase.
-- [datos de crafttweaker.api.infumberData](/vanilla/api/data/INumberData)
+## Implemented Interfaces
+FloatData implements the following interfaces. That means any method available to them can also be used on this class.
+- [crafttweaker.api.data.INumberData](/vanilla/api/data/INumberData)
 
-## Constructores
+## Constructors
 ```zenscript
-nuevo crafttweaker.api.data.FloatData(interno como flotante);
+new crafttweaker.api.data.FloatData(internal as float);
 ```
-| Parámetro | Tipo     | Descripción                   |
-| --------- | -------- | ----------------------------- |
-| interno   | flotante | No se proporcionó descripción |
+| Parameter | Type  | Description             |
+| --------- | ----- | ----------------------- |
+| internal  | float | No description provided |
 
 
 
