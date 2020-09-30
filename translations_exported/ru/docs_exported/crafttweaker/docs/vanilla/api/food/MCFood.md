@@ -8,30 +8,30 @@
 crafttweaker.api.food.MCFood
 ```
 
-## Конструкторы
+## Constructors
 ```zenscript
-new crafttweaker.api.food.MCFood(исцеление как int, насыщенность как плавный);
+new crafttweaker.api.food.MCFood(healing as int, saturation as float);
 ```
-| Параметр     | Тип   | Описание             |
-| ------------ | ----- | -------------------- |
-| исцеление    | int   | Описание отсутствует |
-| насыщенность | float | Описание отсутствует |
+| Параметр   | Тип   | Description          |
+| ---------- | ----- | -------------------- |
+| healing    | int   | Описание отсутствует |
+| saturation | float | Описание отсутствует |
 
 
 
-## Методы
+## Methods
 ### addEffect
 
 Тип возврата: [crafttweaker.api.food.MCFood](/vanilla/api/food/MCFood)
 
 ```zenscript
-myMCFood.addEffect(эффект как crafttweaker.api.potion.MCPotionEffectInstance, вероятность как плавание);
+myMCFood.addEffect(effect as crafttweaker.api.potion.MCPotionEffectInstance, probability as float);
 ```
 
-| Параметр    | Тип                                                                                                   | Описание             |
-| ----------- | ----------------------------------------------------------------------------------------------------- | -------------------- |
-| effect      | [Экземпляр crafttweaker.api.potion.MCPotionEffectEffect](/vanilla/api/potions/MCPotionEffectInstance) | Описание отсутствует |
-| вероятность | float                                                                                                 | Описание отсутствует |
+| Параметр    | Тип                                                                                           | Description          |
+| ----------- | --------------------------------------------------------------------------------------------- | -------------------- |
+| effect      | [crafttweaker.api.potion.MCPotionEffectInstance](/vanilla/api/potions/MCPotionEffectInstance) | Описание отсутствует |
+| probability | float                                                                                         | Описание отсутствует |
 
 
 ### clearEffects
@@ -45,12 +45,12 @@ myMCFood.clearEffects();
 Тип возврата: [crafttweaker.api.food.MCFood](/vanilla/api/food/MCFood)
 
 ```zenscript
-myMCFood.removeEffect(эффект как crafttweaker.api.potion.MCPotionEffectInstance);
+myMCFood.removeEffect(effect as crafttweaker.api.potion.MCPotionEffectInstance);
 ```
 
-| Параметр | Тип                                                                                                   | Описание             |
-| -------- | ----------------------------------------------------------------------------------------------------- | -------------------- |
-| effect   | [Экземпляр crafttweaker.api.potion.MCPotionEffectEffect](/vanilla/api/potions/MCPotionEffectInstance) | Описание отсутствует |
+| Параметр | Тип                                                                                           | Description          |
+| -------- | --------------------------------------------------------------------------------------------- | -------------------- |
+| effect   | [crafttweaker.api.potion.MCPotionEffectInstance](/vanilla/api/potions/MCPotionEffectInstance) | Описание отсутствует |
 
 
 ### setCanEatWhenFull
@@ -58,15 +58,15 @@ myMCFood.removeEffect(эффект как crafttweaker.api.potion.MCPotionEffect
 Тип возврата: [crafttweaker.api.food.MCFood](/vanilla/api/food/MCFood)
 
 ```zenscript
-myMCFood.setCanEatWhenFull(canEatWhenFull как boolean);
+myMCFood.setCanEatWhenFull(canEatWhenFull as boolean);
 ```
 
-| Параметр       | Тип     | Описание             |
+| Параметр       | Тип     | Description          |
 | -------------- | ------- | -------------------- |
 | canEatWhenFull | boolean | Описание отсутствует |
 
 
-### Настройка FastEating
+### setFastEating
 
 Тип возврата: [crafttweaker.api.food.MCFood](/vanilla/api/food/MCFood)
 
@@ -74,35 +74,35 @@ myMCFood.setCanEatWhenFull(canEatWhenFull как boolean);
 myMCFood.setFastEating(fastEating as boolean);
 ```
 
-| Параметр | Тип     | Описание             |
-| -------- | ------- | -------------------- |
-| Зажигаем | boolean | Описание отсутствует |
+| Параметр   | Тип     | Description          |
+| ---------- | ------- | -------------------- |
+| fastEating | boolean | Описание отсутствует |
 
 
-### назначение лечения
-
-Тип возврата: [crafttweaker.api.food.MCFood](/vanilla/api/food/MCFood)
-
-```zenscript
-myMCFood.setHealing(исцеление как int);
-```
-
-| Параметр  | Тип | Описание             |
-| --------- | --- | -------------------- |
-| исцеление | int | Описание отсутствует |
-
-
-### Мясо
+### setHealing
 
 Тип возврата: [crafttweaker.api.food.MCFood](/vanilla/api/food/MCFood)
 
 ```zenscript
-myMCFood.setMeat(мясо в виде бункеров);
+myMCFood.setHealing(healing as int);
 ```
 
-| Параметр | Тип     | Описание             |
+| Параметр | Тип | Description          |
+| -------- | --- | -------------------- |
+| healing  | int | Описание отсутствует |
+
+
+### setMeat
+
+Тип возврата: [crafttweaker.api.food.MCFood](/vanilla/api/food/MCFood)
+
+```zenscript
+myMCFood.setMeat(meat as boolean);
+```
+
+| Параметр | Тип     | Description          |
 | -------- | ------- | -------------------- |
-| мясо     | boolean | Описание отсутствует |
+| meat     | boolean | Описание отсутствует |
 
 
 ### setSaturation
@@ -110,22 +110,22 @@ myMCFood.setMeat(мясо в виде бункеров);
 Тип возврата: [crafttweaker.api.food.MCFood](/vanilla/api/food/MCFood)
 
 ```zenscript
-myMCFood.setSaturation(продолжительность как плавный);
+myMCFood.setSaturation(saturation as float);
 ```
 
-| Параметр     | Тип   | Описание             |
-| ------------ | ----- | -------------------- |
-| насыщенность | float | Описание отсутствует |
+| Параметр   | Тип   | Description          |
+| ---------- | ----- | -------------------- |
+| saturation | float | Описание отсутствует |
 
 
 
 ## Свойства
 
-| Название        | Тип     | Имеет Getter | Имеет Setter |
-| --------------- | ------- | ------------ | ------------ |
-| canEatWhenFull  | boolean | true         | false        |
-| исцеление       | int     | true         | false        |
-| небыстроеееееие | boolean | true         | false        |
-| мясо            | boolean | true         | false        |
-| насыщенность    | float   | true         | false        |
+| Название       | Тип     | Имеет Getter | Имеет Setter |
+| -------------- | ------- | ------------ | ------------ |
+| canEatWhenFull | boolean | true         | false        |
+| healing        | int     | true         | false        |
+| isFastEating   | boolean | true         | false        |
+| meat           | boolean | true         | false        |
+| saturation     | float   | true         | false        |
 
