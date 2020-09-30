@@ -1,23 +1,23 @@
-# Dynamo kompresji
+# Compression Dynamo
 
-## Importuj pakiet
+## Import the package
 
-Aby skrócić połączenia metodą, możesz [zaimportować](/AdvancedFunctions/Import/) pakiet taki jak tak:
+To shorten method calls you can [import](/AdvancedFunctions/Import/) the package like so:
 
 ```zenscript
-importuj mods.thermalexpansion.CompressionDynamo;
+import mods.thermalexpansion.CompressionDynamo;
 ```
 
-## Dodaj paliwo
+## Add Fuel
 
 ```zenscript
 //mods.thermalexpansion.CompressionDynamo.addFuel(ILiquidStack stack, int energy);
 mods.thermalexpansion.CompressionDynamo.addFuel(<liquid:water>, 13);
 ```
 
-## Usuń paliwo
+## Remove Fuel
 
 ```zenscript
-//mods.thermalexpansion.Compression.removeFuel(ILiquidStack);
+//mods.thermalexpansion.Compression.removeFuel(ILiquidStack stack);
 mods.thermalexpansion.Compression.removeFuel(<liquid:water>);
 ```
