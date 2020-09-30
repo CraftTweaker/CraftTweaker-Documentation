@@ -1,37 +1,37 @@
 # MCToolType
 
-Ein Werkzeugtyp wird verwendet, um zu ermitteln, welche Blöcke ein Werkzeug abbauen kann, oder umgekehrt, welche Art von Werkzeug benötigt wird, um einen bestimmten Block abzubauen.
+A Tooltype is used to identify what kind of blocks a tool can mine, or inversely, what kind of tool is required to mine a given block.
 
-Diese Klasse wurde von einer Mod mit mod-id `contenttweaker` hinzugefügt. Wenn Sie diese Funktion nutzen möchten, müssen Sie diese Mod installiert haben.
+This class was added by a mod with mod-id `contenttweaker`. So you need to have this mod installed if you want to use this feature.
 
 ## Diese Klasse importieren
-Es kann erforderlich sein, dass Sie das Paket importieren, wenn Sie irgendwelche Probleme haben (wie zum Beispiel ein Array zu bearbeiten), also besser sicher sein als bedauern und fügen Sie den Import.
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
 ```zenscript
 mods.contenttweaker.item.MCToolType
 ```
 
-## Implementierte Schnittstellen
-MCToolType implementiert die folgenden Schnittstellen. Das bedeutet, dass jede ihnen zur Verfügung stehende Methode auch in dieser Klasse verwendet werden kann.
-- [crafttweaker.api.brackets.Befehlstempelanzeige](/vanilla/api/brackets/CommandStringDisplayable)
+## Implemented Interfaces
+MCToolType implements the following interfaces. That means any method available to them can also be used on this class.
+- [crafttweaker.api.brackets.CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
 
-## Konstrukteure
-Erzeugt ein Werkzeugtyp-Objekt. Wenn bereits ein Name mit dem angegebenen Namen existiert, wird intern auf den gleichen Werkzeugtyp verwiesen. Andernfalls wird ein neuer mit dem Namen erstellt (Gleiches gilt auch für Klammer!)
+## Constructors
+Constructs a ToolType object. If one with the given name already exists, they will internally point to the same toolType. Otherwise, a new one with the name is created (The same holds true for Brackets as well!)
 ```zenscript
-neue mods.contenttweaker.item.MCToolType(name as String);
-new mods.contenttweaker.item.MCToolType("Spitzhace");
+new mods.contenttweaker.item.MCToolType(name as String);
+new mods.contenttweaker.item.MCToolType("pickaxe");
 ```
-| Parameter | Type   | Beschreibung            |
-| --------- | ------ | ----------------------- |
-| name      | String | Der zu verwendende Name |
+| Parameter | Type   | Beschreibung        |
+| --------- | ------ | ------------------- |
+| name      | String | The name to be used |
 
 
 
 ## Methoden
 ### getName
 
-Gibt den Namen dieses ToolTyps zurück. Der Name wird im Klammerausdruck nach dem `<Werkzeugtyp verwendet:`
+Gets the name of this toolType. The name is what is used in the Bracket expression after the `<tooltype:`
 
-Rückgabetyp: String
+Return type: String
 
 ```zenscript
 <tooltype:pickaxe>.getName();
@@ -39,9 +39,9 @@ Rückgabetyp: String
 
 ### hashCode
 
-Gibt den Hashcode des Objekts zurück
+Returns the object's hash code
 
-Rückgabetyp: int
+Return type: int
 
 ```zenscript
 <tooltype:pickaxe>.hashCode();
@@ -49,39 +49,39 @@ Rückgabetyp: int
 
 ### toString
 
-Ruft die String-Repräsentation dieses Typs ab. Ist anders als commandString!
+Get the string representation of this type. Is different from commandString!
 
-Rückgabetyp: String
+Return type: String
 
 ```zenscript
 <tooltype:pickaxe>.toString();
 ```
 
 
-## Eigenschaften
+## Properties
 
-| Name          | Type   | Hat Getter | Hat Setter |
+| Name          | Type   | Has Getter | Has Setter |
 | ------------- | ------ | ---------- | ---------- |
-| Kommandozeile | String | true       | false      |
+| commandString | String | true       | false      |
 | name          | String | true       | false      |
 
 ## Operatoren
 ### EQUALS
 
-Vergleicht, wenn zwei angegebene MCToolType-Objekte gleich sind
+Compares if two given MCToolType objects are equal
 
 ```zenscript
-<tooltype:pickaxe> == o als Objekt
-<tooltype:pickaxe> == neuer MCToolType("Spitzhacke")
+<tooltype:pickaxe> == o as Object
+<tooltype:pickaxe> == new MCToolType("pickaxe")
 ```
 
-| Parameter | Type   | Beschreibung      |
-| --------- | ------ | ----------------- |
-| o         | Objekt | Das andere Objekt |
+| Parameter | Type   | Beschreibung     |
+| --------- | ------ | ---------------- |
+| o         | Object | The other object |
 
-## Zauberer
+## Casters
 
-| Ergebnis-Typ | Ist Implizit |
-| ------------ | ------------ |
-| String       | false        |
+| Result type | Is Implicit |
+| ----------- | ----------- |
+| String      | false       |
 
