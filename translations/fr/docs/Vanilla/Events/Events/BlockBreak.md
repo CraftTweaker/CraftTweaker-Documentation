@@ -1,27 +1,27 @@
-# format@@0 BlockBreakEvent
+# BlockBreakEvent
 
-L'événement BlockBreak est lancé chaque fois qu'un bloc est cassé.  
-Vous pouvez annuler l'événement pour éviter que le bloc ne soit cassé.
+The BlockBreak Event is fired whenever a block is being broken.  
+You can cancel the event to prevent the block from being broken.
 
-## Classe de l'événement
+## Event Class
 
-Vous devrez lancer l'événement dans l'en-tête de la fonction comme cette classe:  
-`crafttweaker.event. lockBreakEvent`  
-Vous pouvez, bien sûr, également [importer](/AdvancedFunctions/Import/) la classe avant et utiliser ce nom alors.
+You will need to cast the event in the function header as this class:  
+`crafttweaker.event.BlockBreakEvent`  
+You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
 
-## Extensions d'interface de l'événement
+## Event interface extensions
 
-Les événements BlockBreak implémentent les interfaces suivantes et peuvent également appeler toutes leurs méthodes/getters/setters :
+BlockBreak Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
 
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
-- [Évènement IBlock](/Vanilla/Events/Events/IBlockEvent/)
+- [IBlockEvent](/Vanilla/Events/Events/IBlockEvent/)
 
 ## ZenGetters
 
-Les informations suivantes peuvent être récupérées à partir de l'événement :
+The following information can be retrieved from the event:
 
-| ZenGetter    | ZenSetter    | Type de texte                        |
+| ZenGetter    | ZenSetter    | Type                                 |
 | ------------ | ------------ | ------------------------------------ |
-| `Joueur`     |              | [IPlayer](/Vanilla/Players/IPlayer/) |
-| `isPlayer`   |              | booléen                              |
-| `Expérience` | `Expérience` | Indice                               |
+| `player`     |              | [IPlayer](/Vanilla/Players/IPlayer/) |
+| `isPlayer`   |              | bool                                 |
+| `experience` | `experience` | int                                  |
