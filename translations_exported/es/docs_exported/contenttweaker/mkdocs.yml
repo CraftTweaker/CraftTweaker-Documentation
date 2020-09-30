@@ -4,32 +4,32 @@
         - BracketHandlers: 'mods/contenttweaker/API/BracketHandlers.md'
         - Api:
           - IIsBuilder: 'mods/contenttweaker/API/api/IIsBuilder.md'
-        - Bloqueo:
+        - Block:
           - BlockBuilder: 'mods/contenttweaker/API/block/BlockBuilder.md'
           - BlockTypeBuilder: 'mods/contenttweaker/API/block/BlockTypeBuilder.md'
-          - Básico:
+          - Basic:
             - BlockBuilderBasic: 'mods/contenttweaker/API/block/basic/BlockBuilderBasic.md'
-          - Pila:
+          - Pillar:
             - BlockBuilderPillarRotatable: 'mods/contenttweaker/API/block/pillar/BlockBuilderPillarRotatable.md'
-          - Escaleras:
+          - Stairs:
             - BlockBuilderStairs: 'mods/contenttweaker/API/block/stairs/BlockBuilderStairs.md'
-        - Elemento:
+        - Item:
           - ItemBuilder: 'mods/contenttweaker/API/item/ItemBuilder.md'
           - ItemTypeBuilder: 'mods/contenttweaker/API/item/ItemTypeBuilder.md'
-          - Grupo MCItem: 'mods/contenttweaker/API/item/MCItemGroup.md'
+          - MCItemGroup: 'mods/contenttweaker/API/item/MCItemGroup.md'
           - MCToolType: 'mods/contenttweaker/API/item/MCToolType.md'
-          - Básico:
+          - Basic:
             - ItemBuilderBasic: 'mods/contenttweaker/API/item/basic/ItemBuilderBasic.md'
-          - Herramienta:
+          - Tool:
             - ItemBuilderTool: 'mods/contenttweaker/API/item/tool/ItemBuilderTool.md'
 
 - Vanilla:
     - Api:
-      - Bloqueo:
-        - material:
+      - Block:
+        - Material:
           - MCMaterial: 'vanilla/api/block/material/MCMaterial.md'
           - MCMaterialColor: 'vanilla/api/block/material/MCMaterialColor.md'
-      - Bloques:
+      - Blocks:
         - MCBlock: 'vanilla/api/blocks/MCBlock.md'
         - MCBlockState: 'vanilla/api/blocks/MCBlockState.md'
       - Brackets:
