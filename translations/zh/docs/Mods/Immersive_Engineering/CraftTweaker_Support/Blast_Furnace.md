@@ -1,30 +1,30 @@
-# 高炉高炉子
+# Blast Furnace
 
-爆破熔炉包件可以用来添加/移除配方/燃料到沉浸式工程爆破炉。
+The Blast Furnace package can be used to add/remove recipes/fuels to/from the Immersive Engineering Blast Furnace.
 
-## 调用包
+## Calling The Package
 
-您可以使用 `mods.immersiveengineering.BlastFurnace` 调用BlastFurnace 软件包。
+You can call the BlastFurnace package using `mods.immersiveengineering.BlastFurnace`.
 
-## 添加食谱：
+## Add Recipe:
 
-| 必填 | 类型   | 数据类型                                                    |
-| -- | ---- | ------------------------------------------------------- |
-| 必要 | 输出   | [物品堆（IItemstack）](/Vanilla/Items/IItemStack/)           |
-| 必要 | 输入   | [材料（IIngredient）](/Vanilla/Variable_Types/IIngredient/) |
-| 必填 | 时间   | 整型                                                      |
-| 可选 | Slag | [物品堆（IItemstack）](/Vanilla/Items/IItemStack/)           |
+| Required | 类型   | 数据类型                                                    |
+| -------- | ---- | ------------------------------------------------------- |
+| 必要       | 输出   | [物品堆（IItemstack）](/Vanilla/Items/IItemStack/)           |
+| 必要       | 输入   | [材料（IIngredient）](/Vanilla/Variable_Types/IIngredient/) |
+| Required | Time | 整型                                                      |
+| 可选       | Slag | [物品堆（IItemstack）](/Vanilla/Items/IItemStack/)           |
 
 ### 例子
 
 ```zenscript
-//示例：
+//Example:
 mods.immersiveengineering.BlastFurnace.addRecipe(IItemStack output, IIngredient input, int time, @Optional IItemStack slag);
-mods.immersiveengineering. lastFurnace.addRecipe(<minecraft:diamond>, <ore:logWood>, 2000);
+mods.immersiveengineering.BlastFurnace.addRecipe(<minecraft:diamond>, <ore:logWood>, 2000);
 mods.immersiveengineering.BlastFurnace.addRecipe(<minecraft:diamond>, <ore:logWood>, 2000, <minecraft:dirt>);
 ```
 
-## 删除配方
+## Remove Recipe
 
 | 类型 | 数据类型                                          |
 | -- | --------------------------------------------- |
@@ -33,36 +33,36 @@ mods.immersiveengineering.BlastFurnace.addRecipe(<minecraft:diamond>, <ore:logWo
 ### 比如：
 
 ```zenscript
-//示例：
-mods.immersiveengineering.BlastFurnace.removeRecipe(IItemStack 输出)；
+//Example:
+mods.immersiveengineering.BlastFurnace.removeRecipe(IItemStack output);
 mods.immersiveengineering.BlastFurnace.removeRecipe(<minecraft:diamond>;
 ```
 
-## 添加燃料
+## Add Fuel
 
-| 必填 | 返回值类型 | 数据类型                                                    |
-| -- | ----- | ------------------------------------------------------- |
-| 必填 | 输入    | [材料（IIngredient）](/Vanilla/Variable_Types/IIngredient/) |
-| 必填 | 时间    | 整型                                                      |
+| Required | 返回值类型 | 数据类型                                                    |
+| -------- | ----- | ------------------------------------------------------- |
+| Required | 输入    | [材料（IIngredient）](/Vanilla/Variable_Types/IIngredient/) |
+| Required | Time  | 整型                                                      |
 
 ### 例子
 
 ```zenscript
-//示例：
-mods.immersiveengineering.BlastFurnace.addFuel(IIngredient input, int time)；
-mods.immersiveengineering.BlastFurnace.addFuel(<ore:plankWood>, 2000年)；
+//Example:
+mods.immersiveengineering.BlastFurnace.addFuel(IIngredient input, int time);
+mods.immersiveengineering.BlastFurnace.addFuel(<ore:plankWood>, 2000);
 ```
 
-## 移除燃料
+## Remove Fuel
 
-| 必填 | 返回值类型 | 数据类型                                          |
-| -- | ----- | --------------------------------------------- |
-| 必填 | 输出    | [物品堆（IItemstack）](/Vanilla/Items/IItemStack/) |
+| Required | 返回值类型 | 数据类型                                          |
+| -------- | ----- | --------------------------------------------- |
+| Required | 输出    | [物品堆（IItemstack）](/Vanilla/Items/IItemStack/) |
 
 ### 例子
 
 ```zenscript
-//示例：
-mods.immersiveengineering.BlastFurnace.removeFuel(IItemStack 输出)；
-mods.immersiveengineering.BlastFurnace.removeFuel(<minecraft:planks>)；
+//Example:
+mods.immersiveengineering.BlastFurnace.removeFuel(IItemStack output);
+mods.immersiveengineering.BlastFurnace.removeFuel(<minecraft:planks>);
 ```
