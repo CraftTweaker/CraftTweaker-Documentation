@@ -1,16 +1,16 @@
-# 电解器
+# Electrolyzer
 
-## 导入软件包
-`nuclearcraft.elyzer`
+## Importing the Package
+`mods.nuclearcraft.electrolyzer`
 
-## 添加配方
+## Adding Recipes
 ```zenscript
-mods.nuclearcraft.elyser.addRecipe([fluidInput, fluidOutput1, fluidOut2, fluidOutput3, fluidOutput4, @Optional double powerMultiplier, @Optional double processRadiation]);
+mods.nuclearcraft.electrolyser.addRecipe([fluidInput, fluidOutput1, fluidOutput2, fluidOutput3, fluidOutput4, @Optional double timeMultiplier, @Optional double powerMultiplier, @Optional double processRadiation]);
 ```
 
-## 删除配方
+## Removing Recipes
 ```zenscript
-mods.nuclearcraft.elyser.removeRecipewidInput([fluidInput]);
-mods.nuclearcraft.ellyser.removeRecipeWOutputt([fluidOutput1, fluidOutput2,fluidOutput3, fluidOutput4]);
-mods.nuclearcraft.ellyserv.removeAllRecipes();
+mods.nuclearcraft.electrolyser.removeRecipeWithInput([fluidInput]);
+mods.nuclearcraft.electrolyser.removeRecipeWithOutput([fluidOutput1, fluidOutput2, fluidOutput3, fluidOutput4]);
+mods.nuclearcraft.electrolyser.removeAllRecipes();
 ```
