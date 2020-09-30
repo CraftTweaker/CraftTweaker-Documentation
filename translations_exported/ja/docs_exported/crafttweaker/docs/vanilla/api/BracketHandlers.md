@@ -1,14 +1,14 @@
-# BracketHandler
+# BracketHandlers
 
-crafttweakerのmod-idを持つmodによって追加されているクラスです。 従って、この機能を利用する場合はこのmodをインストールする必要があります。
+This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
 
-## クラスのインポート
-問題が発生した場合には、インポートが必要になります。とはいえ、お手数ですが予めインポートしておくほうが安全です。
+## Importing the class
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
 ```zenscript
 crafttweaker.api.BracketHandlers
 ```
 
-## メソッド
+## Methods
 ### getBlockMaterial
 
 指定された [crafttweaker.api.block.material.MCMaterial](/vanilla/api/block/material/MCMaterial) を取得します。 例外が見つからない場合はスローします。
@@ -24,9 +24,9 @@ crafttweaker.api.BracketHandlers.getBlockMaterial(tokens as String);
 crafttweaker.api.BracketHandlers.getBlockMaterial("earth");
 ```
 
-| パラメータ | タイプ  | 説明             |
-| ----- | ---- | -------------- |
-| トークン  | 文字列型 | BEP呼び出しで何を書くか。 |
+| Parameter | Type   | Description    |
+| --------- | ------ | -------------- |
+| tokens    | String | BEP呼び出しで何を書くか。 |
 
 
 ### getBlockState
@@ -45,9 +45,9 @@ crafttweaker.api.BracketHandlers.getBlockState(tokens as String);
 crafttweaker.api.BracketHandlers.getBlockState("minecraft:acia_planks");
 ```
 
-| パラメータ | タイプ  | 説明                   |
-| ----- | ---- | -------------------- |
-| トークン  | 文字列型 | ブロックのリソースの場所とバリエーション |
+| Parameter | Type   | Description          |
+| --------- | ------ | -------------------- |
+| tokens    | String | ブロックのリソースの場所とバリエーション |
 
 
 ### getDirectionAxis
@@ -65,9 +65,9 @@ crafttweaker.api.BracketHandlers.getDirectionAxis(tokens as String);
 crafttweaker.api.BracketHandlers.getDirectionAxis("x");
 ```
 
-| パラメータ | タイプ  | 説明        |
-| ----- | ---- | --------- |
-| トークン  | 文字列型 | 軸のリソースの場所 |
+| Parameter | Type   | Description |
+| --------- | ------ | ----------- |
+| tokens    | String | 軸のリソースの場所   |
 
 
 ### getEffect
@@ -85,9 +85,9 @@ crafttweaker.api.BracketHandlers.getEffect(tokens as String);
 crafttweaker.api.BracketHandlers.getEffect("minecraft:haste");
 ```
 
-| パラメータ | タイプ  | 説明         |
-| ----- | ---- | ---------- |
-| トークン  | 文字列型 | 効果のリソースの場所 |
+| Parameter | Type   | Description |
+| --------- | ------ | ----------- |
+| tokens    | String | 効果のリソースの場所  |
 
 
 ### getEntityClassification
@@ -105,9 +105,9 @@ crafttweaker.api.BracketHandlers.getEntityClassification(tokens as String);
 crafttweaker.api.BracketHandlers.getEntityClassification("monster');
 ```
 
-| パラメータ | タイプ  | 説明                           |
-| ----- | ---- | ---------------------------- |
-| トークン  | 文字列型 | entityClassificationのリソースの場所 |
+| Parameter | Type   | Description                  |
+| --------- | ------ | ---------------------------- |
+| tokens    | String | entityClassificationのリソースの場所 |
 
 
 ### getEntityType
@@ -125,9 +125,9 @@ crafttweaker.api.BracketHandlers.getEntityType(tokens as String);
 crafttweaker.api.BracketHandlers.getEntityType("minecraft:pig');
 ```
 
-| パラメータ | タイプ  | 説明                |
-| ----- | ---- | ----------------- |
-| トークン  | 文字列型 | エンティティタイプのリソースの場所 |
+| Parameter | Type   | Description       |
+| --------- | ------ | ----------------- |
+| tokens    | String | エンティティタイプのリソースの場所 |
 
 
 ### getFluidStack
@@ -145,9 +145,9 @@ crafttweaker.api.BracketHandlers.getFluidStack(tokens as String);
 crafttweaker.api.BracketHandlers.getFluidStack("minecraft:water");
 ```
 
-| パラメータ | タイプ  | 説明            |
-| ----- | ---- | ------------- |
-| トークン  | 文字列型 | Fluidのリソースの場所 |
+| Parameter | Type   | Description   |
+| --------- | ------ | ------------- |
+| tokens    | String | Fluidのリソースの場所 |
 
 
 ### getItem
@@ -156,7 +156,7 @@ crafttweaker.api.BracketHandlers.getFluidStack("minecraft:water");
 
  戻り値: `見つかった項目`
 
-戻り値の型: [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
+Return type: [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
 
 ```zenscript
 <item:minecraft:dirt>
@@ -165,9 +165,9 @@ crafttweaker.api.BracketHandlers.getItem(token as String);
 crafttweaker.api.BracketHandlers.getItem("minecraft:dirt");
 ```
 
-| パラメータ | タイプ  | 説明          |
-| ----- | ---- | ----------- |
-| トークン  | 文字列型 | アイテムのリソース位置 |
+| Parameter | Type   | Description |
+| --------- | ------ | ----------- |
+| tokens    | String | アイテムのリソース位置 |
 
 
 ### getPotion
@@ -179,9 +179,9 @@ crafttweaker.api.BracketHandlers.getItem("minecraft:dirt");
 crafttweaker.api.BracketHandlers.getPotion(tokens as String);
 ```
 
-| パラメータ | タイプ  | 説明           |
-| ----- | ---- | ------------ |
-| トークン  | 文字列型 | 説明が提供されていません |
+| Parameter | Type   | Description             |
+| --------- | ------ | ----------------------- |
+| tokens    | String | No description provided |
 
 
 ### getRecipeManager
@@ -197,9 +197,9 @@ crafttweaker.api.BracketHandlers.getRecipeManager(tokens as String);
 crafttweaker.api.BracketHandlers.getRecipeManager("minecraft:craft");
 ```
 
-| パラメータ | タイプ  | 説明             |
-| ----- | ---- | -------------- |
-| トークン  | 文字列型 | レシピ管理者のリソースの場所 |
+| Parameter | Type   | Description    |
+| --------- | ------ | -------------- |
+| tokens    | String | レシピ管理者のリソースの場所 |
 
 
 ### getResourceLocation
@@ -217,9 +217,9 @@ crafttweaker.api.BracketHandlers.getResourceLocation(token as String);
 crafttweaker.api.BracketHandlers.getResourceLocation("minecraft:dirt");
 ```
 
-| パラメータ | タイプ  | 説明      |
-| ----- | ---- | ------- |
-| トークン  | 文字列型 | リソースの場所 |
+| Parameter | Type   | Description |
+| --------- | ------ | ----------- |
+| tokens    | String | リソースの場所     |
 
 
 ### getTag
@@ -237,9 +237,9 @@ crafttweaker.api.BracketHandlers.getTag(tokens as String);
 craftweaker.api.BracketHandlers.getTag("tag:minecraft:wool");
 ```
 
-| パラメータ | タイプ  | 説明         |
-| ----- | ---- | ---------- |
-| トークン  | 文字列型 | タグのリソースの場所 |
+| Parameter | Type   | Description |
+| --------- | ------ | ----------- |
+| tokens    | String | タグのリソースの場所  |
 
 
 ### getTextFormatting
@@ -251,9 +251,9 @@ craftweaker.api.BracketHandlers.getTag("tag:minecraft:wool");
 crafttweaker.api.BracketHandlers.getTextFormating(tokens as String);
 ```
 
-| パラメータ | タイプ  | 説明           |
-| ----- | ---- | ------------ |
-| トークン  | 文字列型 | 説明が提供されていません |
+| Parameter | Type   | Description             |
+| --------- | ------ | ----------------------- |
+| tokens    | String | No description provided |
 
 
 
