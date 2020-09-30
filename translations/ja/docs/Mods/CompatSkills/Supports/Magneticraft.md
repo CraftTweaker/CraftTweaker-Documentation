@@ -1,17 +1,17 @@
-# 磁気いかだ（磁気）
+# Magneticraft
 
-## 説明:
+## Explaination:
 
-Magneticraft サポートは現在以下のもので構成されています:
+Magneticraft Support currently consists of:
 
-- すべての Magneticraft マルチブロックの文字列名をダンプするコマンド。 
-    - コマンド: /ct magMultiBlocks
-- Crt-based Syntaxを使用したマルチブロック ゲート。
+- A Command for dumping the string name of all Magneticraft Multiblocks. 
+    - Command is: /ct magMultiBlocks
+- Multiblock Gating using a Crt-based Syntax.
 
-### 構文
+### Syntax:
 
-    Blank 例:
+    Blank Example:
     mods.compatskills.MagMultiBlockGates.addGate(String multiBlockName, String failureMessage, String... defaultRequirements);
     
     Working Example:
-    mods.compatskills.MagMultiBlockGates.addGate("solar_mirror", "これはあなたのような馬鹿にはあまりにも複雑すぎます!", "reskillable:building|15", "reskillable:magic|7", "adv|minecraft:fused_seed", "stage|test");
+    mods.compatskills.MagMultiBlockGates.addGate("solar_mirror", "I'm afraid this is just too complex for an idiot like you!", "reskillable:building|15", "reskillable:magic|7", "adv|minecraft:husbandry/plant_seed", "stage|test");
