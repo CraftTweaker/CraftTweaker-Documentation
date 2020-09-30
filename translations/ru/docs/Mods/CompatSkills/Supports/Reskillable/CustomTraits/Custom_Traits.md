@@ -1,82 +1,82 @@
-# Пользовательские навыки & симптомы
+# Custom Skills & Traits
 
-## Авторы:
+## Credits:
 
-Кредиты отправляются в Kindlich для написания большей части реализации Пользовательского Контента!
+Credits goes out to Kindlich for writing most of the Custom Content implementation!
 
-## Пользовательские симптомы:
+## Custom Traits:
 
-### Синтаксис:
+### Implementation Syntax:
 
-    Примеры:
+    Examples:
     mods.compatskills.TraitCreator.createTrait(String traitName, int x, int y, String skillLocation, int cost, @Optional String... requirements)
-    mods.compatskills.TraitCreator.createTrait(tring traitName, int x, int y, int y, CrTSkill parentSkill, int cost, @Optional String... Требования)
+    mods.compatskills.TraitCreator.createTrait(String traitName, int x, int y, CrTSkill parentSkill, int cost, @Optional String... requirements)
     mods.compatskills.TraitCreator.createNewTrait(String traitLocation, int x, int y, String skillLocation, int cost, @Optional String... requirements)
-    mods.compatskills.TraitCreator.createNewTrait(String traitLocation, int x, int y, CrTSkill parentSkill, int cost, @Optional String... требования)
+    mods.compatskills.TraitCreator.createNewTrait(String traitLocation, int x, int y, CrTSkill parentSkill, int cost, @Optional String... requirements)
     
     
-    "traitName" VS "traitLocation" аналогично навыкам.
+    "traitName" VS "traitLocation" is the same as in Skills.
     
-    "CrTSkill parentSkill" - обработчик уровня мастерства.
+    "CrTSkill parentSkill" is the Skill Bracket Handler.
     
     
-    Таким образом, функциональным примером может быть:
+    So a functional Example would be:
     var test = mods.compatskills.TraitCreator.createTrait("test", 2, 3, "compatskills:banana", 1, "compatskills:banana|5");
-    var test1 = моды. ompatskills.TraitCreator.createTrait("test", 2, 3, "<skill:compatskills:banana>", 1, "compatskills:banana|5");
-    var test2 = моды. ompatskills.TraitCreator.createTrait("broken:test", 2, 3, "compatskills:banana", 1, "compatskills:banana|5");
+    var test1 = mods.compatskills.TraitCreator.createTrait("test", 2, 3, "<skill:compatskills:banana>", 1, "compatskills:banana|5");
+    var test2 = mods.compatskills.TraitCreator.createTrait("broken:test", 2, 3, "compatskills:banana", 1, "compatskills:banana|5");
     var test3 = mods.compatskills.TraitCreator.createTrait("broken:test", 2, 3, "<skill:compatskills:banana>", 1, "compatskills:banana|5");
     
 
-### Свойства ZenProperties
+### ZenProperties
 
-| Артикул  | Название свойства | Осуществление |
-|:-------- |:----------------- | ------------- |
-| CrTTrait | имя               | Смотреть ниже |
-| CrTTrait | описание          | Смотреть ниже |
+| Reference | Property Name | Implementation |
+|:--------- |:------------- | -------------- |
+| CrTTrait  | name          | See Below      |
+| CrTTrait  | description   | See Below      |
 
-    // Создает симптомы как переменную
-    характеристики вара = mods.compatskills.TraitCreator. reateTrait("test", 2, 3, "compatskills:banana", 1, "compatskills:banana|5");
+    // Creates the trait as a variable
+    var trait = mods.compatskills.TraitCreator.createTrait("test", 2, 3, "compatskills:banana", 1, "compatskills:banana|5");
     
-    // Задать название "Test"
-    // Имейте в виду, что локализация через .lang файлы невозможна!
+    // Hard-Sets the name to "Test"
+    // Be aware this makes localization through .lang files not possible!
     trait.name = "Test"
     
-    // Задает описание "Привет, я описание"
-    // Имейте в виду, что это делает локализацию с помощью .lang файлов невозможным!
-    trait.description = "Привет, я описание"
+    // Hard-Sets the description to "Hello, I'm a Description"
+    // Be aware this makes localization through .lang files not possible!
+    trait.description = "Hello, I'm a Description"
     
 
 ### ZenSetters/ZenGetters
 
-| Тип метода | Название метода    | Значения                                           |
-|:---------- |:------------------ | -------------------------------------------------- |
-| Setter     | настройки включены | Занимает логическое значение                       |
-| Геттер     | Получено           | Возвращает логическое значение                     |
-| Геттер     | getName            | Возвращает локализованное имя строки симптома      |
-| Геттер     | getОписание        | Возвращает описание локализованной строки симптома |
-| Геттер     | получить значок    | Возвращает местоположение ресурсов                 |
-| Setter     | Иконка изменения   | Захват строки расположения ресурсов                |
+| Method Type | Method Name    | Values                                                |
+|:----------- |:-------------- | ----------------------------------------------------- |
+| Setter      | setEnabled     | Takes a Boolean                                       |
+| Getter      | getEnabled     | Returns a Boolean                                     |
+| Getter      | getName        | Returns the localized String Name of the Trait        |
+| Getter      | getDescription | Returns the localized String Description of the Trait |
+| Getter      | retrieveIcon   | Returns an Resource Location                          |
+| Setter      | changeIcon     | Takes an Resource Location String                     |
 
-### Локализация & Местоположение ресурсов:
+### Localization & Resource Location References:
 
-    Значки симптомов:
+    Trait Icons:
     
-    Эфиро:
+    Either:
     
-    - mods.compatskills.TraitCreator.createTrait(String traitName, int x, int y, int skillLocation, int cost, @Optional String... requirement);
+    - mods.compatskills.TraitCreator.createTrait(String traitName, int x, int y, String skillLocation, int cost, @Optional String... requirements);
         - compatskills:textures/unlockables/traitname.png
     
-    - mods.compatskills.TraitCreator.createNewTrait(String traitLocation, int x, int y, int skills Location, int cost, Optional String... requirements);
+    - mods.compatskills.TraitCreator.createNewTrait(String traitLocation, int x, int y, String skillLocation, int cost, @Optional String... requirements);
         - customResourceLocation:/textures/unlockables/traitname.png
     
     
-    Локализации расположены в:
+    Localizations are placed in:
     
     - compatskills:lang/localeCode.lang
     
-    или
+    or
     
     - customResourceLocation:lang/localeCode.lang
     
 
-Перейдите по этой ссылке, чтобы увидеть все возможные Locale-Codes! [Языковая страница Gamepedia Minecraft](https://minecraft.gamepedia.com/Language "Gamepedia's Minecraft Language Page")
+Go to this link to see all possible Locale-Codes! [Gamepedia's Minecraft Language Page](https://minecraft.gamepedia.com/Language "Gamepedia's Minecraft Language Page")
