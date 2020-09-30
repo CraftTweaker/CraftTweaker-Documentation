@@ -1,32 +1,32 @@
 # CTAspectStack
 
-CTAspectStack to [CTAspect](/Mods/Modtweaker/Thaumcraft/Aspects/CTAspect/) w połączeniu z ilością punktów, z których zostanie wykonany stos.
+A CTAspectStack is a [CTAspect](/Mods/Modtweaker/Thaumcraft/Aspects/CTAspect/) combined with an amount that shows how many aspect points the stack will be made of.
 
-## Importowanie pakietu
+## Importing the package
 
-Może być wymagane zaimportowanie pakietu, jeśli napotkasz jakieś problemy, więc lepiej być bezpiecznym niż przepraszamy i dodać import.  
-`zaimportuj thaumcraft.aspect.CTAspectStack;`
+It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
+`import thaumcraft.aspect.CTAspectStack;`
 
-## Pobieranie takiego obiektu
+## Retrieving such an object
 
-Możesz pobrać obiekt CTAspectStack z obiektu [CTAspectStack Handler](/Mods/Modtweaker/Thaumcraft/Brackets/Bracket_Aspect/):
+You can retrieve a CTAspectStack object from the [CTAspectStack Bracket Handler](/Mods/Modtweaker/Thaumcraft/Brackets/Bracket_Aspect/) object:
 
 ```zenscript
-Aspekt walny = <aspect:ignis>;
+val aspect = <aspect:ignis>;
 ```
 
 ## ZenGetters
 
-| Nazwisko   | Typ                                                       |
-| ---------- | --------------------------------------------------------- |
-| kwota      | odcień                                                    |
-| wewnętrzna | [CTAspect](/Mods/Modtweaker/Thaumcraft/Aspects/CTAspect/) |
+| Name     | Type                                                      |
+| -------- | --------------------------------------------------------- |
+| amount   | int                                                       |
+| internal | [CTAspect](/Mods/Modtweaker/Thaumcraft/Aspects/CTAspect/) |
 
-## Ustawianie kwoty
+## Setting the amount
 
 ```zenscript
-//Zrobią to samo, oba zwracają nowy CTAspectStack
-walowy aspekt = <aspect:ignis> * 10;
+//They do the same, both return a new CTAspectStack
+val aspect = <aspect:ignis> * 10;
 
-walny aspekt1 = <aspect:ignis>.setAmount(10);
+val aspect1 = <aspect:ignis>.setAmount(10);
 ```
