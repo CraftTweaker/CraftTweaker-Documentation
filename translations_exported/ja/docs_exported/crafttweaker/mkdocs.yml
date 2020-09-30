@@ -1,8 +1,8 @@
 - バニラ:
     - Api:
       - BracketHandlers: 'vanilla/api/BracketHandlers.md'
-      - ブロック:
-        - 素材:
+      - Block:
+        - Material:
           - MCMaterial: 'vanilla/api/block/material/MCMaterial.md'
       - ブロック:
         - MCBlock: 'vanilla/api/blocks/MCBlock.md'
@@ -60,7 +60,7 @@
       - 流体:
         - IFluidStack: 'vanilla/api/fluid/IFluidStack.md'
         - MCFluid: 'vanilla/api/fluid/MCFluid.md'
-      - 食料:
+      - Food:
         - MCFood: 'vanilla/api/food/MCFood.md'
       - アイテム:
         - IIngredient: 'vanilla/api/items/IIngredient.md'
@@ -73,7 +73,7 @@
         - MCWeightedItemStack: 'vanilla/api/items/MCWeightedItemStack.md'
       - Logger:
         - ILogger: 'vanilla/api/logger/ILogger.md'
-      - マネージャー:
+      - Managers:
         - BlastFurnaceManager: 'vanilla/api/managers/BlastFurnaceManager.md'
         - CampFireManager: 'vanilla/api/managers/CampFireManager.md'
         - CraftingTableManager: 'vanilla/api/managers/CraftingTableManager.md'
@@ -90,27 +90,27 @@
         - MCPotion: 'vanilla/api/potions/MCPotion.md'
         - MCPotionEffect: 'vanilla/api/potions/MCPotionEffect.md'
         - MCPotionEffectInstance: 'vanilla/api/potions/MCPotionEffectInstance.md'
-      - レシピ:
+      - Recipe:
         - RecipeFilter: 'vanilla/api/recipe/RecipeFilter.md'
         - RecipeFunctionArray: 'vanilla/api/recipe/RecipeFunctionArray.md'
         - RecipeFunctionMatrix: 'vanilla/api/recipe/RecipeFunctionMatrix.md'
         - RecipeFunctionSingle: 'vanilla/api/recipe/RecipeFunctionSingle.md'
-      - タグ:
+      - Tags:
         - MCTag: 'vanilla/api/tags/MCTag.md'
       - Util:
         - BlockPos: 'vanilla/api/util/BlockPos.md'
-        - 方向: 'vanilla/api/util/Direction.md'
+        - Direction: 'vanilla/api/util/Direction.md'
         - DirectionAxis: 'vanilla/api/util/DirectionAxis.md'
         - MCResourceLocation: 'vanilla/api/util/MCResourceLocation.md'
         - テキスト:
           - MCStyle: 'vanilla/api/util/text/MCStyle.md'
           - MCTextComponent: 'vanilla/api/util/MCTextComponent.md'
-      - ワールド:
+      - World:
         - MCBiome: 'vanilla/api/world/MCBiome.md'
 
 - Crafttweaker:
     - Api:
-      - アイテム:
+      - Item:
         → ツールチップ:
           - ITooltipFunction: 'crafttweaker/api/item/tooltip/ITooltipFunction.md'
       - レシピ:
