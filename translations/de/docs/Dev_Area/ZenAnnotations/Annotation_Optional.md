@@ -1,62 +1,62 @@
 # Optional
 
-`@Optional` kann einem Methoden-Parameter gegeben werden, um ihn als optional zu deklarieren.  
-Optionale Parameter können beim Aufruf der Methode weggelassen werden:
+`@Optional` can be given to a Method parameter to declare it as being optional.  
+Optional Parameters can be omitted when calling the method:
 
 ## Beispiel
 
-[CraftTweakers IFurnaceManager](https://github.com/jaredlll08/CraftTweaker/blob/1.12/CraftTweaker2-API/src/main/java/crafttweaker/api/recipes/IFurnaceManager.java):
+[CraftTweaker's IFurnaceManager](https://github.com/jaredlll08/CraftTweaker/blob/1.12/CraftTweaker2-API/src/main/java/crafttweaker/api/recipes/IFurnaceManager.java):
 
 ```java
-    @ZenMethode
-    ungültig entfernen (Igredient Ausgabe, @Optionale IIngredient Eingabe);
+    @ZenMethod
+    void remove(IIngredient output, @Optional IIngredient input);
 ```
 
-[MCFurnaceManager (Umsetzung)](https://github.com/jaredlll08/CraftTweaker/blob/1.12/CraftTweaker2-MC1120-Main/src/main/java/crafttweaker/mc1120/furnace/MCFurnaceManager.java)
+[MCFurnaceManager (Implementation)](https://github.com/jaredlll08/CraftTweaker/blob/1.12/CraftTweaker2-MC1120-Main/src/main/java/crafttweaker/mc1120/furnace/MCFurnaceManager.java)
 
 ```java
-    @Überschreibe
-    öffentliche Leerzeichen entfernen (IIngrediente Ausgabe, @Optionale IIngredient Eingabe) {
+    @Override
+    public void remove(IIngredient output, @Optional IIngredient input) {
         if(output == null)
-            werfen neue IllegalArgumentException("Ausgabe kann nicht leer sein");
+            throw new IllegalArgumentException("output cannot be null");
 
-        RezeptToEntfernen. dd(new ActionFurnaceRemoveRecipe(Output, Input));
-}
+        recipesToRemove.add(new ActionFurnaceRemoveRecipe(output, input));
+    }
 ```
 
-Technisch gesehen brauchen Sie nicht die `@Optional` in der Implementierung, aber Sie können sie hinzufügen, wenn Sie sicher sein möchten. Sie können diese Methode nun mit einer aufrufen:
+Technically, you don't need the `@Optional` in the implementation but you can add it if you want to be sure. You can now call this method using either one:
 
 ```java
-furnace.remove(output); //Eingabe wird auf null
+furnace.remove(output); //Input will be set to null
 furnace.remove(output, input);
 ```
 
-## Welche Werte werden für ausgelassene Parameter eingefügt?
+## What values are inserted for omited parameters?
 
-### Nur die Anmerkung verwenden
+### Using only the annotation
 
-Die eingefügte Datei ist entweder `0`, `false` oder `null`abhängig vom kommentierten Typ:
+Inserted is either `0`, `false` or `null`, depending on the annotated Type:
 
-Primitive werden `0` sein (außer Bool, das falsch sein wird, so technisch auch 0)  
-Alle Objekte werden `null` sein
+Primitives will be `0` (except bool, which will be false, so technically 0 as well)  
+All Objects will be `null`
 
-### Annotationsmitglieder verwenden
+### Using annotation members
 
-| Mitglied           | Type            | Standardwert     |
-| ------------------ | --------------- | ---------------- |
-| wert               | string          | `""`             |
-| methodische Klasse | java.lang.Class | `Optional.class` |
-| methodenname       | string          | `getValue`       |
+| Member      | Type            | Standardwert     |
+| ----------- | --------------- | ---------------- |
+| value       | string          | `""`             |
+| methodClass | java.lang.Class | `Optional.class` |
+| methodName  | string          | `"getValue"`     |
 
-Die optionale Anmerkung unterstützt auch Standardwerte.  
-Wenn Sie einen Standardwert angeben möchten Sie können dies tun, indem Sie dem `Wert` Mitglied einen String geben, der den Parameter repräsentiert.
+The Optional annotation also supports default values.  
+If you want to provide a default value, you can do that by giving the `value` member a String representing the parameter.
 
-Wenn Sie nur eine primitive Standardeinstellung wollen, dann sind Sie eingestellt.
+If you only want a default primitive, then you are set.
 
 ```java
 @ZenMethod
 public static void print(@Optional("heyho") String value) {
-    CraftTweakerAPI. ogError(value);
+    CraftTweakerAPI.logError(value);
 }
 
 
@@ -66,12 +66,12 @@ public static void print3(@Optional("1") int value) {
 }
 ```
 
-If you want a default object or a default primitive that is not a compiletime constant (all annotation members need to be compiletime constants!), you can set the other two members: This will replace the parameter with a call to the given (static) method `methodClass.methodName(value)`. Wenn keine solche Methode gefunden wird, wird ein Fehler auftreten und Null einfügen.
+If you want a default object or a default primitive that is not a compiletime constant (all annotation members need to be compiletime constants!), you can set the other two members: This will replace the parameter with a call to the given (static) method `methodClass.methodName(value)`. If no such method is found, will error and insert null.
 
 ```java
 @ZenMethod
 public static void print2(@Optional(value = "minecraft:iron_ingot", methodClass = Optionals.class, methodName = "getFromString") IItemStack value) {
-    print(value. etDisplayName());
+    print(value.getDisplayName());
 }
 
 
@@ -80,12 +80,12 @@ public static IItemStack getFromString(String value) {
 }
 ```
 
-## Welche Parameter können kommentiert werden?
+## What parameters can be annotated?
 
-Alle Parameter können kommentiert werden, aber Sie müssen sich daran erinnern, dass kommentierte Parameter am Ende sein müssen also während dies technisch funktionieren würde, würden Methodenaufrufe fehlschlagen:
+All parameters can be annotated, but you need to remember that annotated parameters need to be at the end, so while this would technically work, method calls would fail:
 
 ```java
-myMethod(@Optional String Name, Int Nummer)
+myMethod(@Optional String name, int number)
 ```
 
-Das Aufrufen dieser Methode mit nur einer Inte wird immer scheitern!
+Calling this method with only an int will always fail!
