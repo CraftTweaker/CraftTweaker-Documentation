@@ -1,19 +1,19 @@
 # IFluidStack
 
-Cette classe a été ajoutée par un mod avec le mod-id `crafttweaker`. Vous devez donc avoir ce mod installé si vous voulez utiliser cette fonctionnalité.
+This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
 
-## Importation de la classe
-Il pourrait vous être nécessaire d'importer le paquet si vous rencontrez des problèmes (comme lancer un tableau), alors mieux être sûr que désolé et ajouter l'importation.
+## Importing the class
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
 ```zenscript
 crafttweaker.api.fluid.IFluidStack
 ```
 
-## Interfaces implémentées
-IFluidStack implémente les interfaces suivantes. Cela signifie que toutes les méthodes disponibles peuvent également être utilisées dans cette classe.
+## Implemented Interfaces
+IFluidStack implémente les interfaces suivantes. That means any method available to them can also be used on this class.
 - [crafttweaker.api.brackets.CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
 
-## Méthodes
-### Copie
+## Methods
+### copy
 
 Copie la pile. Nécessaire uniquement lorsque des piles mutables sont impliquées.
 
@@ -50,20 +50,20 @@ myIFluidStack.setAmount(amount as int);
 myIFluidStack.setAmount(1000);
 ```
 
-| Paramètre | Type de texte | Libellé                                       |
-| --------- | ------------- | --------------------------------------------- |
-| montant   | Indice        | Le montant de la multiplication de cette pile |
+| Parameter | Type | Description                                   |
+| --------- | ---- | --------------------------------------------- |
+| amount    | int  | Le montant de la multiplication de cette pile |
 
 
 
-## Propriétés
+## Properties
 
-| Nom                | Type de texte                                                | A un Getter | A un Setter |
-| ------------------ | ------------------------------------------------------------ | ----------- | ----------- |
-| Chaîne de commande | Chaîne de caractères                                         | vrai        | Faux        |
-| fluide             | [crafttweaker.api.fluid.MCFluid](/vanilla/api/fluid/MCFluid) | vrai        | Faux        |
+| Name          | Type                                                         | Has Getter | Has Setter |
+| ------------- | ------------------------------------------------------------ | ---------- | ---------- |
+| commandString | String                                                       | true       | false      |
+| fluid         | [crafttweaker.api.fluid.MCFluid](/vanilla/api/fluid/MCFluid) | true       | false      |
 
-## Opérateurs
+## Operators
 ### MUL
 
 Définit la quantité de fluide en MilliBuckets (MB)
@@ -75,7 +75,7 @@ myIFluidStack * montant en int
 myIFluidStack * 1000
 ```
 
-| Paramètre | Type de texte | Libellé                                       |
-| --------- | ------------- | --------------------------------------------- |
-| montant   | Indice        | Le montant de la multiplication de cette pile |
+| Parameter | Type | Description                                   |
+| --------- | ---- | --------------------------------------------- |
+| amount    | int  | Le montant de la multiplication de cette pile |
 
