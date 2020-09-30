@@ -1,9 +1,9 @@
-# События и симптомы
+# Events and Traits
 
-## Авторы:
+## Credits:
 
-Кредиты отправляются в Kindlich для написания большей части реализации события!
+Credits goes out to Kindlich for writing most of the Event implementation!
 
-## ЗУ:
+## PSA:
 
-Все события, перечисленные на вкладке Событие, частично документированы той информации, которую я получил в то время. Если события были обновлены для использования настроек модов/Getters/Methods, эта информация может быть найдена в: [Под страницей IEventManager](/Vanilla/Events/IEventManager/)
+All the Events listed under the Event Tab are partially documented-based of the information I had available to me at the time. If the events has been update to feature mods Setters/Getters/Methods, that information can probably be found under: [Under the IEventManager Page](/Vanilla/Events/IEventManager/)
