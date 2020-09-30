@@ -1,19 +1,19 @@
 # MCRequiredArgumentBuilder
 
-Ta klasa została dodana przez moda z mod-id `crafttweaker`. Więc musisz zainstalować tę modyfikację, jeśli chcesz używać tej funkcji.
+This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
 
-## Importowanie klasy
-Może być wymagane zaimportowanie pakietu, jeśli napotkasz jakiekolwiek problemy (np. rzucanie tablicy), tak aby były bezpieczne niż przepraszamy i dodaj import.
+## Importing the class
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
 ```zenscript
 crafttweaker.api.commands.custom.MCRequiredArgumentBuilder
 ```
 
-## Zaimplementowane interfejsy
-MCRequiredArgumentBuilder implementuje następujące interfejsy. Oznacza to, że każda dostępna dla nich metoda może być również stosowana w tej klasie.
+## Implemented Interfaces
+MCRequiredArgumentBuilder implementuje następujące interfejsy. That means any method available to them can also be used on this class.
 - [crafttweaker.api.commands.custom.MCArgumentBuilder](/vanilla/api/commands/custom/MCArgumentBuilder)
 
-## Metody
-### kompilacja
+## Methods
+### build
 
 Typ zwrotu: [crafttweaker.api.commands.custom.MCArgumentCommandNode](/vanilla/api/commands/custom/MCArgumentCommandNode)
 
@@ -21,17 +21,17 @@ Typ zwrotu: [crafttweaker.api.commands.custom.MCArgumentCommandNode](/vanilla/ap
 myMCRequiredArgumentBuilder.build();
 ```
 
-### równa się
+### equals
 
-Typ zwrotu: logiczny
+Return type: boolean
 
 ```zenscript
 myMCRequiredArgumentBuilder.equals(o jako obiekt);
 ```
 
-| Parametr | Typ    | Opis             |
-| -------- | ------ | ---------------- |
-| ob       | Obiekt | Nie podano opisu |
+| Parameter | Type   | Description             |
+| --------- | ------ | ----------------------- |
+| o         | Object | No description provided |
 
 
 ### wykonuje
@@ -42,9 +42,9 @@ Typ zwrotu: [crafttweaker.api.commands.custom.MCRequiredArgumentBuilder](/vanill
 myMCRequiredArgumentBuilder.executes(polecenie jako crafttweaker.api.commands.custom.MCCommand);
 ```
 
-| Parametr  | Typ                                                                                  | Opis             |
-| --------- | ------------------------------------------------------------------------------------ | ---------------- |
-| polecenie | [crafttweaker.api.commands.custom.MCCommand](/vanilla/api/commands/custom/MCCommand) | Nie podano opisu |
+| Parameter | Type                                                                                 | Description             |
+| --------- | ------------------------------------------------------------------------------------ | ----------------------- |
+| command   | [crafttweaker.api.commands.custom.MCCommand](/vanilla/api/commands/custom/MCCommand) | No description provided |
 
 
 ### fork
@@ -55,10 +55,10 @@ Typ zwrotu: [crafttweaker.api.commands.custom.MCRequiredArgumentBuilder](/vanill
 myMCRequiredArgumentBuilder.fork(target as crafttweaker.api.commands.custom.MCCommandNode, modifier as crafttweaker.api.commands.custom.MCRedirectModifier);
 ```
 
-| Parametr | Typ                                                                                                    | Opis             |
-| -------- | ------------------------------------------------------------------------------------------------------ | ---------------- |
-| target   | [crafttweaker.api.commands.custom.MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)           | Nie podano opisu |
-| modifier | [crafttweaker.api.commands.custom.MCRedirectModifier](/vanilla/api/commands/custom/MCRedirectModifier) | Nie podano opisu |
+| Parameter | Type                                                                                                   | Description             |
+| --------- | ------------------------------------------------------------------------------------------------------ | ----------------------- |
+| target    | [crafttweaker.api.commands.custom.MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)           | No description provided |
+| modifier  | [crafttweaker.api.commands.custom.MCRedirectModifier](/vanilla/api/commands/custom/MCRedirectModifier) | No description provided |
 
 
 ### do przodu
@@ -69,11 +69,11 @@ Typ zwrotu: [crafttweaker.api.commands.custom.MCRequiredArgumentBuilder](/vanill
 myMCRequiredArgumentBuilder.forward(target as crafttweaker.api.commands.custom.MCCommandNode, modifier as crafttweaker.api.commands.custom.MCRedirectModifier, fork jako boolean);
 ```
 
-| Parametr | Typ                                                                                                    | Opis             |
-| -------- | ------------------------------------------------------------------------------------------------------ | ---------------- |
-| target   | [crafttweaker.api.commands.custom.MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)           | Nie podano opisu |
-| modifier | [crafttweaker.api.commands.custom.MCRedirectModifier](/vanilla/api/commands/custom/MCRedirectModifier) | Nie podano opisu |
-| fork     | boolean                                                                                                | Nie podano opisu |
+| Parameter | Type                                                                                                   | Description             |
+| --------- | ------------------------------------------------------------------------------------------------------ | ----------------------- |
+| target    | [crafttweaker.api.commands.custom.MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)           | No description provided |
+| modifier  | [crafttweaker.api.commands.custom.MCRedirectModifier](/vanilla/api/commands/custom/MCRedirectModifier) | No description provided |
+| fork      | boolean                                                                                                | No description provided |
 
 
 ### getArgumenty
@@ -94,7 +94,7 @@ myMCRequiredArgumentBuilder.getCommand();
 
 ### getName
 
-Typ zwrotu: Ciąg
+Return type: String
 
 ```zenscript
 myMCRequiredArgumentBuilder.getName();
@@ -134,7 +134,7 @@ myMCRequiredArgumentBuilder.getSuggestionsProvider();
 
 ### hashCode
 
-Typ zwrotu: int
+Return type: int
 
 ```zenscript
 myMCRequiredArgumentBuilder.hashCode();
@@ -142,7 +142,7 @@ myMCRequiredArgumentBuilder.hashCode();
 
 ### isFork
 
-Typ zwrotu: logiczny
+Return type: boolean
 
 ```zenscript
 myMCRequiredArgumentBuilder.isFork();
@@ -156,9 +156,9 @@ Typ zwrotu: [crafttweaker.api.commands.custom.MCRequiredArgumentBuilder](/vanill
 myMCRequiredArgumentBuilder.redirect(target as crafttweaker.api.commands.custom.MCCommandNode);
 ```
 
-| Parametr | Typ                                                                                          | Opis             |
-| -------- | -------------------------------------------------------------------------------------------- | ---------------- |
-| target   | [crafttweaker.api.commands.custom.MCCommandNode](/vanilla/api/commands/custom/MCCommandNode) | Nie podano opisu |
+| Parameter | Type                                                                                         | Description             |
+| --------- | -------------------------------------------------------------------------------------------- | ----------------------- |
+| target    | [crafttweaker.api.commands.custom.MCCommandNode](/vanilla/api/commands/custom/MCCommandNode) | No description provided |
 
 
 
@@ -168,10 +168,10 @@ Typ zwrotu: [crafttweaker.api.commands.custom.MCRequiredArgumentBuilder](/vanill
 myMCRequiredArgumentBuilder.redirect(target as crafttweaker.api.commands.custom.MCCommandNode, modifier as crafttweaker.api.commands.custom.MCSingleRedirectModifier);
 ```
 
-| Parametr | Typ                                                                                                                | Opis             |
-| -------- | ------------------------------------------------------------------------------------------------------------------ | ---------------- |
-| target   | [crafttweaker.api.commands.custom.MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)                       | Nie podano opisu |
-| modifier | [crafttweaker.api.commands.custom.MCSingleRedirectModifier](/vanilla/api/commands/custom/MCSingleRedirectModifier) | Nie podano opisu |
+| Parameter | Type                                                                                                               | Description             |
+| --------- | ------------------------------------------------------------------------------------------------------------------ | ----------------------- |
+| target    | [crafttweaker.api.commands.custom.MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)                       | No description provided |
+| modifier  | [crafttweaker.api.commands.custom.MCSingleRedirectModifier](/vanilla/api/commands/custom/MCSingleRedirectModifier) | No description provided |
 
 
 ### wymaga
@@ -182,9 +182,9 @@ Typ zwrotu: [crafttweaker.api.commands.custom.MCRequiredArgumentBuilder](/vanill
 myMCRequiredArgumentBuilder.Requres(wymagany jako function.Predicate<crafttweaker.api.commands.custom.MCCommandSource>);
 ```
 
-| Parametr  | Typ                                                                                                                                    | Opis             |
-| --------- | -------------------------------------------------------------------------------------------------------------------------------------- | ---------------- |
-| wymaganie | Funkcja. Przewidaj&lt;[crafttweaker.api.commands.custom.MCCommandSource](/vanilla/api/commands/custom/MCCommandSource)&gt; | Nie podano opisu |
+| Parameter | Type                                                                                                                                   | Description             |
+| --------- | -------------------------------------------------------------------------------------------------------------------------------------- | ----------------------- |
+| wymaganie | Funkcja. Przewidaj&lt;[crafttweaker.api.commands.custom.MCCommandSource](/vanilla/api/commands/custom/MCCommandSource)&gt; | No description provided |
 
 
 ### sugeruje
@@ -195,9 +195,9 @@ Typ zwrotu: [crafttweaker.api.commands.custom.MCRequiredArgumentBuilder](/vanill
 myMCRequiredArgumentBuilder.suggests(dostawca jako crafttweaker.api.commands.custom.MCSuggestionProvider);
 ```
 
-| Parametr | Typ                                                                                                        | Opis             |
-| -------- | ---------------------------------------------------------------------------------------------------------- | ---------------- |
-| dostawca | [crafttweaker.api.commands.custom.MCSuggestionProvider](/vanilla/api/commands/custom/MCSuggestionProvider) | Nie podano opisu |
+| Parameter | Type                                                                                                       | Description             |
+| --------- | ---------------------------------------------------------------------------------------------------------- | ----------------------- |
+| provider  | [crafttweaker.api.commands.custom.MCSuggestionProvider](/vanilla/api/commands/custom/MCSuggestionProvider) | No description provided |
 
 
 ### potem
@@ -208,9 +208,9 @@ Typ zwrotu: [crafttweaker.api.commands.custom.MCArgumentBuilder](/vanilla/api/co
 myMCRequiredArgumentBuilder.then(argument jak crafttweaker.api.commands.custom.MCArgumentBuilder);
 ```
 
-| Parametr | Typ                                                                                                  | Opis             |
-| -------- | ---------------------------------------------------------------------------------------------------- | ---------------- |
-| argument | [crafttweaker.api.commands.custom.MCArgumentBuilder](/vanilla/api/commands/custom/MCArgumentBuilder) | Nie podano opisu |
+| Parameter | Type                                                                                                 | Description             |
+| --------- | ---------------------------------------------------------------------------------------------------- | ----------------------- |
+| argument  | [crafttweaker.api.commands.custom.MCArgumentBuilder](/vanilla/api/commands/custom/MCArgumentBuilder) | No description provided |
 
 
 
@@ -220,9 +220,9 @@ Typ zwrotu: [crafttweaker.api.commands.custom.MCRequiredArgumentBuilder](/vanill
 myMCRequiredArgumentBuilder.then(argument jak crafttweaker.api.commands.custom.MCCommandNode);
 ```
 
-| Parametr | Typ                                                                                          | Opis             |
-| -------- | -------------------------------------------------------------------------------------------- | ---------------- |
-| argument | [crafttweaker.api.commands.custom.MCCommandNode](/vanilla/api/commands/custom/MCCommandNode) | Nie podano opisu |
+| Parameter | Type                                                                                         | Description             |
+| --------- | -------------------------------------------------------------------------------------------- | ----------------------- |
+| argument  | [crafttweaker.api.commands.custom.MCCommandNode](/vanilla/api/commands/custom/MCCommandNode) | No description provided |
 
 
 
@@ -232,34 +232,34 @@ Typ zwrotu: [crafttweaker.api.commands.custom.MCRequiredArgumentBuilder](/vanill
 myMCRequiredArgumentBuilder.then(argument jak crafttweaker.api.commands.custom.MCRequiredArgumentBuilder);
 ```
 
-| Parametr | Typ                                                                                                                  | Opis             |
-| -------- | -------------------------------------------------------------------------------------------------------------------- | ---------------- |
-| argument | [crafttweaker.api.commands.custom.MCRequiredArgumentBuilder](/vanilla/api/commands/custom/MCRequiredArgumentBuilder) | Nie podano opisu |
+| Parameter | Type                                                                                                                 | Description             |
+| --------- | -------------------------------------------------------------------------------------------------------------------- | ----------------------- |
+| argument  | [crafttweaker.api.commands.custom.MCRequiredArgumentBuilder](/vanilla/api/commands/custom/MCRequiredArgumentBuilder) | No description provided |
 
 
 ### toString
 
-Typ zwrotu: Ciąg
+Return type: String
 
 ```zenscript
 myMCRequiredArgumentBuilder.toString();
 ```
 
 
-## Operatorzy
-### RÓŻNE
+## Operators
+### EQUALS
 
 ```zenscript
 myMCRequiredArgumentBuilder == o jako obiekt
 ```
 
-| Parametr | Typ    | Opis             |
-| -------- | ------ | ---------------- |
-| ob       | Obiekt | Nie podano opisu |
+| Parameter | Type   | Description             |
+| --------- | ------ | ----------------------- |
+| o         | Object | No description provided |
 
-## Szafy na akta, szafy na kartoteki, kasety na papiery, podpórki na papiery, pojemniki na przybory do pisania, stojaki na stemple biurowe i podobne wyposażenie biurowe lub biurkowe, z metali nieszlachetnych
+## Casters
 
-| Typ wyniku  | Jest niedomniemany |
-| ----------- | ------------------ |
-| Ciąg znaków | prawda             |
+| Result type | Is Implicit |
+| ----------- | ----------- |
+| String      | true        |
 
