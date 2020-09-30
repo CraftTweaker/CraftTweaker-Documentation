@@ -1,24 +1,24 @@
-# Aleación
+# Alloying
 
-El paquete `de Aleación` te permite añadir o eliminar las recetas de Aleación.
+The `Alloy` package allows you to add or remove Alloy recipes.
 
-## Llamando
+## Calling
 
-Puedes llamar al paquete de Aley usando `mods.tconstruct.Alloy`
+You can call the Alloy package using `mods.tconstruct.Alloy`
 
-## Añadir recetas de aleación
+## Add Alloy Recipes
 
 ```zenscript
-//mods.tconstruct.Alloy.addRecipe(salida ILiquidStack, ILiquidStack[] entradas);
+//mods.tconstruct.Alloy.addRecipe(ILiquidStack output, ILiquidStack[] inputs);
 mods.tconstruct.Alloy.addRecipe(<liquid:water> * 10, [<liquid:lava> * 10, <liquid:molten_iron> * 5]);
 ```
 
-## Eliminando recetas de aleación
+## Removing Alloy Recipes
 
 ```zenscript
-//mods.tconstruct.Alloy.removeRecipe(salida ILiquidStack);
+//mods.tconstruct.Alloy.removeRecipe(ILiquidStack output);
 mods.tconstruct.Alloy.removeRecipe(<liquid:water>);
 
-//mods.tconstruct.Alloy.removeRecipe(salida ILiquidStack, ILiquidStack[] entradas);
+//mods.tconstruct.Alloy.removeRecipe(ILiquidStack output, ILiquidStack[] inputs);
 mods.tconstruct.Alloy.removeRecipe(<liquid:water>, [<liquid:lava>, <liquid:molten_iron>]);
 ```
