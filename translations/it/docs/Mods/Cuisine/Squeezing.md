@@ -1,17 +1,17 @@
-# Schiacciamento Del Bacino
+# Basin Squeezing
 
-## Addizione
+## Addition
 
 ```zenscript
 import mods.cuisine.BasinSqueezing;
 
 BasinSqueezing.add(IIngredient input, ILiquidStack output, @Optional IItemStack extraOutput);
 
-BasinSqueezing. dd(<item:minecraft:dirt>, <liquid:water> * 1000);
+BasinSqueezing.add(<item:minecraft:dirt>, <liquid:water> * 1000);
 BasinSqueezing.add(<ore:cobblestone> * 2, <liquid:lava> * 1000, <item:minecraft:diamond>);
 ```
 
-## Rimozione
+## Removal
 
 ```zenscript
 import mods.cuisine.BasinSqueezing;
@@ -26,6 +26,6 @@ BasinSqueezing.remove(String id);
 
 BasinSqueezing.remove("recipe_name");
 
-// Rimuovi tutto!
+// Remove everything!
 BasinSqueezing.removeAll();
 ```
