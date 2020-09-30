@@ -1,15 +1,15 @@
-# Młyn Wire
+# Wire Mill
 
-## Importowanie pakietu
+## Importing the Package
 `mods.techreborn.wireMill`
 
-## Dodawanie przepisów
+## Adding Recipes
 ```zenscript
 mods.techreborn.wireMill.addRecipe(IItemStack output1, IIngredient input1, int ticktime, int euTick);
 ```
 
-## Usuwanie przepisów
+## Removing Recipes
 ```zenscript
-mods.techreborn.wireMill.removeRecipe(wyjście IItemStack);
+mods.techreborn.wireMill.removeRecipe(IItemStack output);
 mods.techreborn.wireMill.removeAll();
 ```
