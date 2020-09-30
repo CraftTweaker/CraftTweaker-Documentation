@@ -1,17 +1,17 @@
-# 回收站
+# Recycler
 
 ## 所属包名
 
-`导入mods.ic2.回收商;`
+`import mods.ic2.Recycler;`
 
 ## 方法
 
-- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) 成分** 拟从再循环程序中列入黑名单的物品(作为废料来源)
+- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) ingredient** The item to be blacklisted from recycler (as source of scrap)
 
 ## Add Blacklist
 
 ```zenscript
-mods.ic2.Recycler.addBlacklist(Ingredient component);
+mods.ic2.Recycler.addBlacklist(IIngredient ingredient);
 
 mods.ic2.Recycler.addBlacklist(<minecraft:dirt>);
 ```
