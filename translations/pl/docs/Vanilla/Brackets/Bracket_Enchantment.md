@@ -1,8 +1,8 @@
-# Obsługa zaklęć wspornika
+# Enchantment Bracket Handler
 
-Obsługa zaklęć daje Ci dostęp do definicji zaklęć w grze.
+The Enchantment Bracket Handler gives you access to the Enchantment definitions in the game.
 
-Odwołuje się je w obsłudze zaklęć w ten sposób:
+They are referenced in the Enchantment handler this way:
 
 ```zenscript
 <enchantment:modid:name>
@@ -10,4 +10,4 @@ Odwołuje się je w obsłudze zaklęć w ten sposób:
 <enchantment:minecraft:protection>
 ```
 
-Jeśli zostanie znaleziony Zaklęcie, zwróci to obiekt IEnchantmentDefinicje. Please refer to the [respective Wiki entry](/Vanilla/Enchantments/IEnchantmentDefinition/) for further information on what you can do with these.
+If the Enchantment is found, this will return an IEnchantmentDefinition Object. Please refer to the [respective Wiki entry](/Vanilla/Enchantments/IEnchantmentDefinition/) for further information on what you can do with these.
