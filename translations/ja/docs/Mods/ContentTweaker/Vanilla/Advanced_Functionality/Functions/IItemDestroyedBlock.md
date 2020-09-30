@@ -1,20 +1,20 @@
 # IItemDestroyedBlock
 
-IItemDestroyedBlock 関数は [アイテム](/Mods/ContentTweaker/Vanilla/Creatable_Content/Item/) に追加でき、assicated アイテムでブロックを壊そうとするたびに実行されます。
+The IItemDestroyedBlock function can be added to an [Item](/Mods/ContentTweaker/Vanilla/Creatable_Content/Item/) and will run whenever you try to break a block with the assiciated Item.
 
 ## パッケージのインポート
 
-問題が発生した場合は、パッケージをインポートする必要があるかもしれませんので、申し訳ありませんし、インポートを追加してください。  
+It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
 `import mods.contenttweaker.IItemDestroyedBlock;`
 
-## パラメータ
+## Parameters
 
-IItemDestroyedBlockは、以下のパラメータを持つ関数です。
+The IItemDestroyedBlock is a function with the following parameters:
 
-- [IMutableItemStack](/Mods/ContentTweaker/Vanilla/Types/Item/IMutableItemStack/) stack → 項目。
-- [IWorld](/Mods/ContentTweaker/Vanilla/Types/World/IWorld/) 世界 → これが行われる世界
-- [ICTBlockState](/Mods/ContentTweaker/Vanilla/Types/Block/ICTBlockState/) blockState → 採掘中のブロックの状態。
-- [IBlockPos](/Mods/ContentTweaker/Vanilla/Types/Block/IBlockPos/) pos → これはどこで行われますか？
-- [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) エンティティ → ブロックを誰/何を鉱山しますか？
+- [IMutableItemStack](/Mods/ContentTweaker/Vanilla/Types/Item/IMutableItemStack/) stack → The item.
+- [IWorld](/Mods/ContentTweaker/Vanilla/Types/World/IWorld/) world → The world this takes place in
+- [ICTBlockState](/Mods/ContentTweaker/Vanilla/Types/Block/ICTBlockState/) blockState → The state of the block that is being mined.
+- [IBlockPos](/Mods/ContentTweaker/Vanilla/Types/Block/IBlockPos/) pos → Where does this take place?
+- [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) entity → Who/What mines the block?
 
-関数はブール値を返す必要があります。つまり、blockBreaking プロセスが成功した場合は `true` 、そうでない場合は `false` です。
+The Function needs to return a boolean, that is `true` if the blockBreaking process is successfull, and `false` if it ain't.
