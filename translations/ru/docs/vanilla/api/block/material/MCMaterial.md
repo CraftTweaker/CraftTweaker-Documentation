@@ -8,7 +8,7 @@
 crafttweaker.api.block.material.MCMaterial
 ```
 
-## Методы
+## Methods
 ### blocksMovement
 
 Возвращает, если этот материал считается твёрдым или нет.
