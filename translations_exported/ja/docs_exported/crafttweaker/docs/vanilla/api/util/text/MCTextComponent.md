@@ -1,14 +1,14 @@
 # MCTextComponent
 
-crafttweakerのmod-idを持つmodによって追加されているクラスです。 従って、この機能を利用する場合はこのmodをインストールする必要があります。
+This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
 
-## クラスのインポート
-問題が発生した場合には、インポートが必要になります。とはいえ、お手数ですが予めインポートしておくほうが安全です。
+## Importing the class
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
 ```zenscript
 crafttweaker.api.util.text.MCTextComponent
 ```
 
-## メソッド
+## Methods
 ### appendSibling
 
 戻り値の型: [crafttweaker.api.util.text.MCTextComponent](/vanilla/api/util/text/MCTextComponent)
@@ -17,9 +17,9 @@ crafttweaker.api.util.text.MCTextComponent
 myMCTextComponent.appendSibling(component as crafttweaker.api.util.text.MCTextComponent);
 ```
 
-| パラメータ   | タイプ                                                                                  | 説明           |
-| ------- | ------------------------------------------------------------------------------------ | ------------ |
-| コンポーネント | [crafttweaker.api.util.text.MCTextComponent](/vanilla/api/util/text/MCTextComponent) | 説明が提供されていません |
+| Parameter | Type                                                                                 | Description             |
+| --------- | ------------------------------------------------------------------------------------ | ----------------------- |
+| コンポーネント   | [crafttweaker.api.util.text.MCTextComponent](/vanilla/api/util/text/MCTextComponent) | No description provided |
 
 
 ### appendText
@@ -30,9 +30,9 @@ myMCTextComponent.appendSibling(component as crafttweaker.api.util.text.MCTextCo
 myMCTTextComponent.appendText(text as String);
 ```
 
-| パラメータ | タイプ  | 説明           |
-| ----- | ---- | ------------ |
-| テキスト  | 文字列型 | 説明が提供されていません |
+| Parameter | Type   | Description             |
+| --------- | ------ | ----------------------- |
+| テキスト      | String | No description provided |
 
 
 ### copyRaw
@@ -53,7 +53,7 @@ myMCTextComponent.deepCopy();
 
 ### getString
 
-戻り値の型: String
+Return type: String
 
 ```zenscript
 myMCTTextComponent.getString();
@@ -61,20 +61,20 @@ myMCTTextComponent.getString();
 
 ### getStringTruncated
 
-戻り値の型: String
+Return type: String
 
 ```zenscript
 myMCTextComponent.getStringTruncated(maxLen)
 ```
 
-| パラメータ  | タイプ | 説明           |
-| ------ | --- | ------------ |
-| maxLen | int | 説明が提供されていません |
+| Parameter | Type | Description             |
+| --------- | ---- | ----------------------- |
+| maxLen    | int  | No description provided |
 
 
 ### getUnformattedComponentText
 
-戻り値の型: String
+Return type: String
 
 ```zenscript
 myMCTextComponent.getUnformattedComponentText();
@@ -88,52 +88,52 @@ myMCTextComponent.getUnformattedComponentText();
 myMCTextComponent.setStyle(style as crafttweaker.api.util.text.MCStyle);
 ```
 
-| パラメータ | タイプ                                                                  | 説明           |
-| ----- | -------------------------------------------------------------------- | ------------ |
-| スタイル  | [crafttweaker.api.util.text.MCStyle](/vanilla/api/util/text/MCStyle) | 説明が提供されていません |
+| Parameter | Type                                                                 | Description             |
+| --------- | -------------------------------------------------------------------- | ----------------------- |
+| スタイル      | [crafttweaker.api.util.text.MCStyle](/vanilla/api/util/text/MCStyle) | No description provided |
 
 
 
-## プロパティー
+## Properties
 
-| 名称                       | タイプ                                                                                                          | ゲッターあり | セッターあり |
-| ------------------------ | ------------------------------------------------------------------------------------------------------------ | ------ | ------ |
-| 書式設定されたテキスト              | 文字列型                                                                                                         | true   | false  |
-| 兄弟要素                     | List&lt;[crafttweaker.api.util.text.MCTextComponent](/vanilla/api/util/text/MCTextComponent)&gt; | true   | false  |
-| unformattedComponentText | 文字列型                                                                                                         | true   | false  |
+| 名称                       | Type                                                                                                         | Has Getter | Has Setter |
+| ------------------------ | ------------------------------------------------------------------------------------------------------------ | ---------- | ---------- |
+| 書式設定されたテキスト              | String                                                                                                       | true       | false      |
+| 兄弟要素                     | List&lt;[crafttweaker.api.util.text.MCTextComponent](/vanilla/api/util/text/MCTextComponent)&gt; | true       | false      |
+| unformattedComponentText | String                                                                                                       | true       | false      |
 
 ## 演算子
-### 追加
+### ADD
 
 ```zenscript
 myMCTextComponent + component as crafttweaker.api.util.text.MCTextComponent
 ```
 
-| パラメータ   | タイプ                                                                                  | 説明           |
-| ------- | ------------------------------------------------------------------------------------ | ------------ |
-| コンポーネント | [crafttweaker.api.util.text.MCTextComponent](/vanilla/api/util/text/MCTextComponent) | 説明が提供されていません |
-### CAT(CAT)
+| Parameter | Type                                                                                 | Description             |
+| --------- | ------------------------------------------------------------------------------------ | ----------------------- |
+| コンポーネント   | [crafttweaker.api.util.text.MCTextComponent](/vanilla/api/util/text/MCTextComponent) | No description provided |
+### CAT
 
 ```zenscript
 myMCTextComponent ~ component as crafttweaker.api.util.text.MCTextComponent
 ```
 
-| パラメータ   | タイプ                                                                                  | 説明           |
-| ------- | ------------------------------------------------------------------------------------ | ------------ |
-| コンポーネント | [crafttweaker.api.util.text.MCTextComponent](/vanilla/api/util/text/MCTextComponent) | 説明が提供されていません |
+| Parameter | Type                                                                                 | Description             |
+| --------- | ------------------------------------------------------------------------------------ | ----------------------- |
+| コンポーネント   | [crafttweaker.api.util.text.MCTextComponent](/vanilla/api/util/text/MCTextComponent) | No description provided |
 ### SHL
 
 ```zenscript
 myMCTextComponent << component as crafttweaker.api.util.text.MCTextComponent
 ```
 
-| パラメータ   | タイプ                                                                                  | 説明           |
-| ------- | ------------------------------------------------------------------------------------ | ------------ |
-| コンポーネント | [crafttweaker.api.util.text.MCTextComponent](/vanilla/api/util/text/MCTextComponent) | 説明が提供されていません |
+| Parameter | Type                                                                                 | Description             |
+| --------- | ------------------------------------------------------------------------------------ | ----------------------- |
+| コンポーネント   | [crafttweaker.api.util.text.MCTextComponent](/vanilla/api/util/text/MCTextComponent) | No description provided |
 
-## キャスト
+## Casters
 
-| 結果の種類 | 暗黙的   |
-| ----- | ----- |
-| 文字列型  | false |
+| Result type | Is Implicit |
+| ----------- | ----------- |
+| String      | false       |
 
