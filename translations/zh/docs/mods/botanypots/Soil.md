@@ -1,133 +1,133 @@
 # Soils
 
-类路径： `mods.botanypots.Soil`
+Class path: `mods.botanypots.Soil`
 
-## 使用
+## Use
 
-若要使用，导入 `导入mods.botanypots.Soil的类；` 在您的脚本开头。
+To use, import the class with `import mods.botanypots.Soil;` at the beginning of your script.
 
-## 创建新的土地
+## Creating New Soils
 
-`土壤.create(id, components, displayState, tickRate, categories);`
+`Soil.create(id, ingredient, displayState, tickRate, categories);`
 
-- `id` &lt;字符串> 新土壤的 id。 这是一个命名空间ID，必须是有效的 `命名空间：路径` 格式。
-- `成分` <[Iugrendient](/vanilla/api/items/IIngredient)> 用来确定哪些物品/方块用于将土壤放入土豆的成分。
-- `显示状态` <[MCBlockState](/vanilla/api/blocks/MCBlockState)> 土壤在池中显示的方块状态。
-- `tickRate` &lt;int> The tick rate for the land
-- `类别` &lt;字符串[……]> 与新土壤相关联的数组类别。
+- `id` &lt;string> The id of the new soil. This is a namespaced id an must be in the valid `namespace:path` format.
+- `ingredient` <[IIngredient](/vanilla/api/items/IIngredient)> The ingredient used to determine which items/blocks are used to put the soil in a pot.
+- `displayState` <[MCBlockState](/vanilla/api/blocks/MCBlockState)> The block state to display for the soil in the pot.
+- `tickRate` &lt;int> The tick rate for the soil.
+- `categories` &lt;string[]> An array of categories associated with the new soil.
 
-创建一个新的土壤入口，玩家可以在机器人坑中使用。
-
-```zenscript
-Soil.create("示例包:rock", <item:minecraft:stone>, <blockstate:minecraft:stone>, 100, ["rocky"]);
-```
-
-## 移除一块土
-
-`土壤.移除(id)；`
-
-- `id` &lt;字符串> 要移除的土壤ID。 这是一个命名空间ID，必须是有效的 `命名空间：路径` 格式。
-
-从游戏数据中移除土壤。
+Creates a new soil entry that players can use in the botany pot.
 
 ```zenscript
-土壤.remove("botanypots:soil/podzol");
+Soil.create("examplepack:rock", <item:minecraft:stone>, <blockstate:minecraft:stone>, 100, ["rocky"]);
 ```
 
-## 变化中的土壤提取率
+## Removing A Soil
 
-`土壤.setTicks(id, tickRate)；`
+`Soil.remove(id);`
 
-- `id` &lt;字符串> 土壤中的id。 这是一个命名空间ID，必须是有效的 `命名空间：路径` 格式。
-- `tickRate` &lt;int> The new tick rate for the land
+- `id` &lt;string> The id of the soil to remove. This is a namespaced id an must be in the valid `namespace:path` format.
 
-改变给定土壤的刻度速度。
+Removes a soil from the game's data.
+
+```zenscript
+Soil.remove("botanypots:soil/podzol");
+```
+
+## Changing Soil Tick Rate
+
+`Soil.setTicks(id, tickRate);`
+
+- `id` &lt;string> The id of the soil. This is a namespaced id an must be in the valid `namespace:path` format.
+- `tickRate` &lt;int> The new tick rate for the soil.
+
+Changes the tick rate of a given soil.
 
 ```zenscript
 Soil.setTicks("botanypots:soil/grass", 1300);
 ```
 
-## 土壤成分变化
+## Changing Soil Ingredient
 
-`土壤成分(id，成分)；`
+`Soil.setIngredient(id, ingredient);`
 
-- `id` &lt;字符串> 土壤中的id。 这是一个命名空间ID，必须是有效的 `命名空间：路径` 格式。
-- `成分` <[Iugrendient](/vanilla/api/items/IIngredient)> 用来确定哪些物品/方块用于将土壤放入土豆的成分。
+- `id` &lt;string> The id of the soil. This is a namespaced id an must be in the valid `namespace:path` format.
+- `ingredient` <[IIngredient](/vanilla/api/items/IIngredient)> The ingredient used to determine which items/blocks are used to put the soil in a pot.
 
-改变用于将土壤放入机器人马桶的物品。
+Changes the items used to put the soil into the botany pot.
 
 ```zenscript
 Soil.setIngredient("botanypots:soil/soul_sand", <item:minecraft:sand>);
 ```
 
-## 改变土壤显示
+## Changing Soil Display
 
-`Soil.setDisplayState(id, displayState)；`
+`Soil.setDisplayState(id, displayState);`
 
-- `id` &lt;字符串> 土壤中的id。 这是一个命名空间ID，必须是有效的 `命名空间：路径` 格式。
-- `显示状态` <[MCBlockState](/vanilla/api/blocks/MCBlockState)> 土壤在池中显示的方块状态。
+- `id` &lt;string> The id of the soil. This is a namespaced id an must be in the valid `namespace:path` format.
+- `displayState` <[MCBlockState](/vanilla/api/blocks/MCBlockState)> The block state to display for the soil in the pot.
 
-更改显示在土壤中的方块。
+Changes the block displayed for the soil.
 
 ```zenscript
 Soil.setDisplayState("botanypots:soil/dirt", <blockstate:minecraft:snow>);
 ```
 
-## 变化中的土壤类别
+## Changing Soil Categories
 
-更改与土壤相关联的类别。 它们被用来将作物与有效土壤相匹配。
+Changes the categories associated with the soil. These are used to match crops to valid soils.
 
-### 将类别添加到土壤中
+### Add a Category to a Soil
 
-`Soil.addCategory(id, categoriesToAdd)；`
+`Soil.addCategory(id, categoriesToAdd);`
 
-- `id` &lt;字符串> 土壤中的id。 这是一个命名空间ID，必须是有效的 `命名空间：路径` 格式。
-- `categoriesToAdd` &lt;string]> 一个与土壤关联的数组类别。
+- `id` &lt;string> The id of the soil. This is a namespaced id an must be in the valid `namespace:path` format.
+- `categoriesToAdd` &lt;string[]> An array of categories to associate with the soil.
 
 ```zenscript
-Soil.addCategory(“botanypots:soil/soul_sand”、“["下水道"]”)；
+Soil.addCategory("botanypots:soil/soul_sand", ["nether"]);
 ```
 
-### 从土壤中删除类别
+### Remove a Category From a Soil
 
-`Soil.removeCategory(id, categoriesTOremove)；`
+`Soil.removeCategory(id, categoriesToRemove);`
 
-- `id` &lt;字符串> 土壤中的id。 这是一个命名空间ID，必须是有效的 `命名空间：路径` 格式。
-- `categoriesToday` &lt;string[]> 一个要与土壤脱离关联的数组类别。
+- `id` &lt;string> The id of the soil. This is a namespaced id an must be in the valid `namespace:path` format.
+- `categoriesToRemove` &lt;string[]> An array of categories to dissociate with the soil.
 
 ```zenscript
-Soil.removeCategory("botanypots:soil/soul_sand"");
+Soil.removeCategory("botanypots:soil/soul_sand", ["soul_sand"]);
 ```
 
-### 清除土壤中的所有类别
+### Clear All Categories From a Soil
 
-`清空类别(id)；`
+`Soil.clearCategories(id);`
 
-- `id` &lt;字符串> 土壤中的id。 这是一个命名空间ID，必须是有效的 `命名空间：路径` 格式。
+- `id` &lt;string> The id of the soil. This is a namespaced id an must be in the valid `namespace:path` format.
 
 ```zenscript
-土壤.clearories("botanypots:soil/farmland");
+Soil.clearCategories("botanypots:soil/farmland");
 ```
 
-## 正在获取所有ID
+## Getting All Ids
 
-`() Soil.getAllIds();`
+`Soil.getAllIds();`
 
-- 返回： &lt;字符串[]> 当时所有已知土壤ID的数组。
+- Returns: &lt;string[]> An array of all known soil ids at the time this is ran.
 
-这将给您一个当时所有已知土壤ID的数组。
+This will give you an array of all the known soil ids at the time.
 
 ```zenscript
-// 在Soil.getAllIds() 中将所有id记录到craftbiner.log 文件
-中的soilId
-    println(soilId)；
+// Log all ids to the crafttweaker.log file
+for soilId in Soil.getAllIds() {
+    println(soilId);
 }
 ```
 
-## 移除所有泥土。
+## Removing All Soil
 
-这将完全清除目前登记的所有土壤。 如果你想要通过脚本从头重新创建所有数据，这是有用的。
+This will completely remove all the soils currently registered. This is useful for if you want to recreate all the data from scratch through scripts.
 
 ```zenscript
-土壤.移除所有();
+Soil.removeAll();
 ```
