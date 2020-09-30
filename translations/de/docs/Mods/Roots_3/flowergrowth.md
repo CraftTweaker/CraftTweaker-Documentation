@@ -1,23 +1,23 @@
-### Klasse
+### Class
 
 ```zenscript
-importiere mods.roots.FlowerGrowth;
+import mods.roots.FlowerGrowth;
 ```
 
 #### Methoden
 
 ```zenscript
-Entfernungsrecipe(
-  String Name // Der Name des Rezepts, das Sie entfernen möchten
+void removeRecipe(
+  string name // The name of the recipe you wish to remove
 );
 ```
 
 * * *
 
 ```zenscript
-addRecipeBlockState(
-  String-Name, ungültig // Der Name des Rezepts, das Sie
-  IBlockState Status hinzufügen // Der Zustand des Blocks der Blume
+void addRecipeBlockState(
+  string name,      // The name of the recipe that you're adding
+  IBlockState state // The state of the block of the flower
 );
 ```
 
@@ -25,9 +25,9 @@ addRecipeBlockState(
 
 ```zenscript
 void addRecipeBlock(
-  String Name, // Der Name des Rezepts, das Sie
-  IBlock Block hinzufügen, // Block der zu platzierenden Blume
-  int Meta // Meta des Status des Blumenblocks
+  string name,  // The name of the recipe that you're adding
+  IBlock block, // The block of the flower to be placed
+  int meta      // The meta of the state of the flower block
 );
 ```
 
@@ -38,16 +38,16 @@ void addRecipeBlock(
 ```zenscript
 import mods.roots.FlowerGrowth;
 
-// Entfernt das Standardrezept für den Löscher
-Blumen Growth.removeRecipe("dandelion");
+// Removes the default recipe for dandelion
+FlowerGrowth.removeRecipe("dandelion");
 
-// Fügt eine Botania weiße Blume mit dem Blockzustand
-Blumen hinzu. ddRecipeBlockState("mystical_white_flower", <blockstate:botania:flower:color=white>);
+// Adds a Botania white flower using block state
+FlowerGrowth.addRecipeBlockState("mystical_white_flower", <blockstate:botania:flower:color=white>);
 
-// Fügt eine Botania magenta Blume mit Block + Meta
-BlumenGrowth.addRecipeBlock("mystical_green_flower", <botania:flower>.asBlock(), 2);
+// Adds a Botania magenta flower using block + meta
+FlowerGrowth.addRecipeBlock("mystical_green_flower", <botania:flower>.asBlock(), 2);
 ```
 
-### Notizen
+### Notes
 
-Momentan nicht getestet mit Doppelblumen.
+Currently untested with double-tall flowers.
