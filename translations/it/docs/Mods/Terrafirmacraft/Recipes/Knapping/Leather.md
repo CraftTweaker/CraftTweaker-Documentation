@@ -1,25 +1,25 @@
-# Knapping In Cuoio
+# Leather Knapping
 
-## Pacchetto
+## Package
 ```zenscript
 import mods.terrafirmacraft.leatherKnapping;
 ```
 
-## Addizione
+## Addition
 
 ```zenscript
 leatherKnapping.addRecipe(String registryName, IItemStack output, String... pattern);
 ```
 
-## Rimozione
+## Removal
 
 ```zenscript
 leatherKnapping.removeRecipe(IItemStack output);
 leatherKnapping.removeRecipe(String registryName);
 ```
 
-## Esempio
+## Example
 ```zenscript
-// ricetta faretra
-pelletteria Knapping.addRecipe("ricetta", <tfc:quiver>, " XXXX", "X XXX", "X XXX", "X XXX", " XXXX");
+// quiver recipe
+leatherKnapping.addRecipe("recipe", <tfc:quiver>, " XXXX", "X XXX", "X XXX", "X XXX", " XXXX");
 ```
