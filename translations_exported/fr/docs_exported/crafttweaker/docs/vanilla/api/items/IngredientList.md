@@ -1,20 +1,20 @@
 # Liste d'ingrédients
 
-Cette classe a été ajoutée par un mod avec le mod-id `crafttweaker`. Vous devez donc avoir ce mod installé si vous voulez utiliser cette fonctionnalité.
+This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
 
-## Importation de la classe
-Il pourrait vous être nécessaire d'importer le paquet si vous rencontrez des problèmes (comme lancer un tableau), alors mieux être sûr que désolé et ajouter l'importation.
+## Importing the class
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
 ```zenscript
 crafttweaker.api.item.IngredientList
 ```
 
-## Interfaces implémentées
-IngredientList implémente les interfaces suivantes. Cela signifie que toutes les méthodes disponibles peuvent également être utilisées dans cette classe.
+## Implemented Interfaces
+IngredientList implémente les interfaces suivantes. That means any method available to them can also be used on this class.
 - [crafttweaker.api.brackets.CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
-- [format@@0 crafttweaker.api.item.Igredient](/vanilla/api/items/IIngredient)
+- [crafttweaker.api.item.IIngredient](/vanilla/api/items/IIngredient)
 
-## Méthodes
-### aucun dégât
+## Methods
+### anyDamage
 
 Type de retour : [crafttweaker.api.item.MCIngredientConditioned](/vanilla/api/items/MCIngredientConditioned)&lt;[crafttweaker.api.item.IIngredient](/vanilla/api/items/IIngredient)&gt;
 
@@ -22,54 +22,54 @@ Type de retour : [crafttweaker.api.item.MCIngredientConditioned](/vanilla/api/it
 null.anyDomage();
 ```
 
-### Obtenir les objets restants
+### getRemainingItem
 
-Quand cette pile d'ingrédients est fabriquée, que restera-t-il dans la grille ? Ne vérifie cependant pas si la pile correspond ! Utilisé par exemple dans net.minecraft.item.crafting.ICraftingRecipe
+When this ingredient stack is crafted, what will remain in the grid? Does not check if the stack matches though! Used e.g. in CrT's net.minecraft.item.crafting.ICraftingRecipe
 
-Type de retour : [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
+Return type: [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
 
 ```zenscript
 null.getRemainingItem(stack as crafttweaker.api.item.IItemStack);
 null.getRemainingItem(<item:minecraft:iron_ingot>);
 ```
 
-| Paramètre | Type de texte                                                     | Libellé                                |
-| --------- | ----------------------------------------------------------------- | -------------------------------------- |
-| empilage  | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | La pile à fournir pour cet ingrédient. |
+| Parameter | Type                                                              | Description                               |
+| --------- | ----------------------------------------------------------------- | ----------------------------------------- |
+| stack     | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | The stack to provide for this ingredient. |
 
 
-### correspondances
+### matches
 
-Est-ce que la pile donnée correspond à l'ingrédient ?
+Does the given stack match the ingredient?
 
-Type de retour: booléen
+Return type: boolean
 
 ```zenscript
 null.matches(stack as crafttweaker.api.item.IItemStack);
 null.matches(<item:minecraft:iron_ingot>);
 ```
 
-| Paramètre | Type de texte                                                     | Libellé            |
+| Parameter | Type                                                              | Description        |
 | --------- | ----------------------------------------------------------------- | ------------------ |
-| empilage  | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | La pile à vérifier |
+| stack     | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | The stack to check |
 
 
 
-Est-ce que la pile donnée correspond à l'ingrédient ?
+Does the given stack match the ingredient?
 
-Type de retour: booléen
+Return type: boolean
 
 ```zenscript
 null.matches(stack as crafttweaker.api.item.IItemStack, ignoreDamage as boolean);
 ```
 
-| Paramètre          | Type de texte                                                     | Libellé                                   |
+| Parameter          | Type                                                              | Description                               |
 | ------------------ | ----------------------------------------------------------------- | ----------------------------------------- |
-| empilage           | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | La pile à vérifier                        |
+| stack              | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | The stack to check                        |
 | Ignorer les dégâts | boolean                                                           | Les dommages devraient-ils être vérifiés? |
 
 
-### seulement endommagé
+### onlyDamaged
 
 Type de retour : [crafttweaker.api.item.MCIngredientConditioned](/vanilla/api/items/MCIngredientConditioned)&lt;[crafttweaker.api.item.IIngredient](/vanilla/api/items/IIngredient)&gt;
 
@@ -85,35 +85,35 @@ Type de retour : [crafttweaker.api.item.MCIngredientConditioned](/vanilla/api/it
 null.onlyIf(uid en tant que chaîne, fonction en tant que function.Predicate<crafttweaker.api.item.IItemStack>);
 ```
 
-| Paramètre | Type de texte                                                                                           | Libellé                    | Optionnel | Valeur par défaut |
-| --------- | ------------------------------------------------------------------------------------------------------- | -------------------------- | --------- | ----------------- |
-| uid       | Chaîne de caractères                                                                                    | Aucune description fournie | Faux      | `null`            |
-| fonction  | function.Predicate&lt;[crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)&gt; | Aucune description fournie | vrai      | `null`            |
+| Parameter | Type                                                                                                    | Description             | IsOptional | Default Value |
+| --------- | ------------------------------------------------------------------------------------------------------- | ----------------------- | ---------- | ------------- |
+| uid       | String                                                                                                  | No description provided | false      | `null`        |
+| function  | function.Predicate&lt;[crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)&gt; | No description provided | true       | `null`        |
 
 
 
-## Propriétés
+## Properties
 
-| Nom                | Type de texte                                                       | A un Getter | A un Setter |
-| ------------------ | ------------------------------------------------------------------- | ----------- | ----------- |
-| Chaîne de commande | Chaîne de caractères                                                | vrai        | Faux        |
-| Eléments           | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)[] | vrai        | Faux        |
+| Name          | Type                                                                | Has Getter | Has Setter |
+| ------------- | ------------------------------------------------------------------- | ---------- | ---------- |
+| commandString | String                                                              | true       | false      |
+| items         | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)[] | true       | false      |
 
-## Opérateurs
-### OU
+## Operators
+### OR
 
 ```zenscript
 <tag:ingotIron> | autres que crafttweaker.api.item.IIngredient
 ```
 
-| Paramètre | Type de texte                                                               | Libellé                    |
-| --------- | --------------------------------------------------------------------------- | -------------------------- |
-| autres    | [format@@0 crafttweaker.api.item.Igredient](/vanilla/api/items/IIngredient) | Aucune description fournie |
+| Parameter | Type                                                                | Description             |
+| --------- | ------------------------------------------------------------------- | ----------------------- |
+| other     | [crafttweaker.api.item.IIngredient](/vanilla/api/items/IIngredient) | No description provided |
 
-## Pistolet
+## Casters
 
-| Type de résultat                                           | Est implicite |
-| ---------------------------------------------------------- | ------------- |
-| [crafttweaker.api.data.IData](/vanilla/api/data/IData)     | vrai          |
-| [crafttweaker.api.data.MapData](/vanilla/api/data/MapData) | vrai          |
+| Result type                                                | Is Implicit |
+| ---------------------------------------------------------- | ----------- |
+| [crafttweaker.api.data.IData](/vanilla/api/data/IData)     | true        |
+| [crafttweaker.api.data.MapData](/vanilla/api/data/MapData) | true        |
 
