@@ -1,13 +1,13 @@
-# Blokowanie Wymiaru
+# Dimension Locking
 
-## Blokowanie Wymiaru
+## Dimension Locking
 
-Ta funkcja pozwala na zablokowanie możliwości przemieszczania się do określonych wymiarów, chyba że spełnione są wymagania!
+This feature allows for locking the ability to travel to specific dimensions unless requirements are met!
 
-### Składnia
+### Syntax
 
-    Pusty przykład:
-    mods.compatskills.DimensionLock.addDimensionLock(int dimension, String... domyślne wymagania);
+    Blank Example:
+    mods.compatskills.DimensionLock.addDimensionLock(int dimension, String... defaultRequirements);
     
-    Przykład:
+    Working Example:
     mods.compatskills.DimensionLock.addDimensionLock(-1, "reskillable:mining|5", "reskillable:magic|7");
