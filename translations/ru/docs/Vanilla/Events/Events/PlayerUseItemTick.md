@@ -1,6 +1,6 @@
 # PlayerUseItemTick
 
-Событие PlayerUseItemTick запускается каждый тик игрок постоянно использует предмет.
+The PlayerUseItemTick Event is fired each tick a player consistently uses an item.
 
 ## Класс события
 
@@ -10,7 +10,7 @@ You can, of course, also [import](/AdvancedFunctions/Import/) the class before a
 
 ## Наследование от интерфейсов событий
 
-PlayerUseItemTick Events реализуют следующие интерфейсы и также могут вызвать все методы/getters/setter:
+PlayerUseItemTick Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
 
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 - [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
@@ -19,13 +19,13 @@ PlayerUseItemTick Events реализуют следующие интерфей�
 
 Следующая информация может быть получена от события:
 
-| Геттеры        | Возвращаемый тип                         |
-| -------------- | ---------------------------------------- |
-| `отменено`     | boolean                                  |
-| `player`       | [IPlayer](/Vanilla/Players/IPlayer/)     |
-| `элемент`      | [IItemStack](/Vanilla/Items/IItemStack/) |
-| `длительность` | int                                      |
+| ZenGetter  | Возвращаемый тип                         |
+| ---------- | ---------------------------------------- |
+| `canceled` | boolean                                  |
+| `player`   | [IPlayer](/Vanilla/Players/IPlayer/)     |
+| `item`     | [IItemStack](/Vanilla/Items/IItemStack/) |
+| `duration` | int                                      |
 
 ## ZenMethods
 
-- `event.cancel()` устанавливает событие, как отменено
+- `event.cancel()` sets the event as cancelled
