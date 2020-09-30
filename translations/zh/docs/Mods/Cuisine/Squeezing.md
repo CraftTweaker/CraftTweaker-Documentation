@@ -1,31 +1,31 @@
-# 流域挤压中
+# Basin Squeezing
 
 ## 加
 
 ```zenscript
-导入mods.cuisine.BasinSpeez;
+import mods.cuisine.BasinSqueezing;
 
-BasinSqueezing.add(IIngredient input, ILiquidStack output, @Optional IItemStack extrexput);
+BasinSqueezing.add(IIngredient input, ILiquidStack output, @Optional IItemStack extraOutput);
 
-BasinSqueezing. dd(<item:minecraft:dirt>, <liquid:water> * 1000);
+BasinSqueezing.add(<item:minecraft:dirt>, <liquid:water> * 1000);
 BasinSqueezing.add(<ore:cobblestone> * 2, <liquid:lava> * 1000, <item:minecraft:diamond>);
 ```
 
-## 移除
+## Removal
 
 ```zenscript
-导入 mods.cuisine.BasinSqueez;
+import mods.cuisine.BasinSqueezing;
 
-// 通过输入删除。
-BasinSqueezing.remove(IItemStack 输入, ILiquidStack inputFluid);
+// Remove by inputs.
+BasinSqueezing.remove(IItemStack input, ILiquidStack inputFluid);
 
 BasinSqueezing.remove(<item:minecraft:dirt>, <liquid:water> * 1000);
 
-// 通过标识符删除。
+// Remove by identifier.
 BasinSqueezing.remove(String id);
 
 BasinSqueezing.remove("recipe_name");
 
-// 移除所有东西！
-a. BasinSqueezing.removeAll();
+// Remove everything!
+BasinSqueezing.removeAll();
 ```
