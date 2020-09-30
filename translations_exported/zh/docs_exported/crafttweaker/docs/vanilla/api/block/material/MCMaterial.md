@@ -18,7 +18,7 @@ MCMaterial 实现了以下接口。 这意味着对这个接口可用的任何�
 
 判断材料是否为可移动固体(不知道为啥这一行和下面有一行好像)
 
-返回类型：布尔值
+Return type: boolean
 
 ```zenscript
 myMCMaterial.blocksMovement();
@@ -38,7 +38,7 @@ myMCMaterial.getColor();
 
 判断方块是否为可燃物
 
-返回类型：布尔值
+Return type: boolean
 
 ```zenscript
 myMCMaterial.isFlammable();
@@ -48,7 +48,7 @@ myMCMaterial.isFlammable();
 
 判断方块是否为液体
 
-返回类型：布尔值
+Return type: boolean
 
 ```zenscript
 myMCMaterial.isLiquid();
@@ -58,7 +58,7 @@ myMCMaterial.isLiquid();
 
 判断方块是否为不透明方块
 
-返回类型：布尔值
+Return type: boolean
 
 ```zenscript
 myMCMaterial.isOpaque();
@@ -68,7 +68,7 @@ myMCMaterial.isOpaque();
 
 返回是否在放置时可以用其他方块替换该材料，例如雪，藤蔓和高草丛
 
-返回类型：布尔值
+Return type: boolean
 
 ```zenscript
 myMCMaterial.isReplaceable();
@@ -78,7 +78,7 @@ myMCMaterial.isReplaceable();
 
 判断方块是否为固体 默认情况下返回为true
 
-返回类型：布尔值
+Return type: boolean
 
 ```zenscript
 myMCMaterial.isSolid();
@@ -87,7 +87,7 @@ myMCMaterial.isSolid();
 
 ## 参数
 
-| 名称                   | 类型          | 可获得  | 可设置   |
-| -------------------- | ----------- | ---- | ----- |
-| commandString #命令字符串 | 字符串[string] | true | false |
+| 名称            | 类型     | 可获得  | 可设置   |
+| ------------- | ------ | ---- | ----- |
+| commandString | String | true | false |
 
