@@ -1,6 +1,6 @@
 # Distillation
 
-## entfernen
+## remove
 
 | Name       | Type   |
 | ---------- | ------ |
@@ -13,7 +13,7 @@ Beispiel:
 mods.immersivepetroleum.DestillationTower.remove("oilcracking");
 ```
 
-## alle entfernen
+## removeAll
 
 | Name | Type |
 | ---- | ---- |
@@ -24,7 +24,7 @@ Beispiel:
 mods.immersivepetroleum.DistillationTower.removeAll();
 ```
 
-# Erbauer
+# Builder
 
 ## Konstrukteur
 
@@ -54,10 +54,10 @@ builderInstance.setOutputFluids([<fluid:minecraft:water> * 1]);
 
 ## addByproduct(IItemStack Item, int Chance)
 
-| Name    | Type                                        |
-| ------- | ------------------------------------------- |
-| Artikel | [Artikel-Stack](/Vanilla/Items/IItemStack/) |
-| Hannes  | Ganzzahl (0 - 100)                          |
+| Name   | Type                                        |
+| ------ | ------------------------------------------- |
+| Item   | [Artikel-Stack](/Vanilla/Items/IItemStack/) |
+| Chance | Ganzzahl (0 - 100)                          |
 
 Beispiel:
 ```zenscript
@@ -68,10 +68,10 @@ builderInstance.addByproduct(<item:minecraft:cobblestone>, 50);
 
 ## addByproduct(IItemStack Artikel, doppelte Chance)
 
-| Name    | Type                                        |
-| ------- | ------------------------------------------- |
-| Artikel | [Artikel-Stack](/Vanilla/Items/IItemStack/) |
-| Hannes  | Doppelt (0.0 - 1.0)                         |
+| Name   | Type                                        |
+| ------ | ------------------------------------------- |
+| Item   | [Artikel-Stack](/Vanilla/Items/IItemStack/) |
+| Chance | Doppelt (0.0 - 1.0)                         |
 
 Beispiel:
 ```zenscript
@@ -120,7 +120,7 @@ Beispiel:
 builderInstance.setTime(1);
 ```
 
-## bauen
+## build
 
 | Name       | Type   |
 | ---------- | ------ |
