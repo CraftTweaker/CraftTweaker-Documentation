@@ -1,4 +1,4 @@
-# 食谱滤镜
+# RecipeFilter
 
 这个类由mod-id为`crafttweaker`的模组添加. 因此，如果要使用此功能，则需要安装此mod。
 
@@ -8,24 +8,24 @@
 制作器.api.recipe.RecipeFilter
 ```
 
-## 函数接口
+## Functional Interface
 
-此类是一个功能接口。 这意味着您可以使用 lambda 符号来创建一个实例。 Lambda 符号如下所示：
+This class is a functional interface. This means that you can use the lambda notation to create an instance of it. The lambda notation looks like:
 ```zenscript
 (name) => false
 ```
 ## 方法
-### 测试
+### test
 
-返回类型：布尔值
+Return type: boolean
 
 ```zenscript
-myRecipefilter.test(名称为字符串)；
+myRecipeFilter.test(name as String);
 ```
 
-| 参数 | 类型          | 描述                      |
-| -- | ----------- | ----------------------- |
-| 名称 | 字符串[string] | No description provided |
+| 参数   | 类型     | 描述                      |
+| ---- | ------ | ----------------------- |
+| name | String | No description provided |
 
 
 
