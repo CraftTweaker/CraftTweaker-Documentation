@@ -1,407 +1,407 @@
-# Pos de Blocs
+# BlockPos
 
-Représente une position d'un bloc dans le monde
+Represents a position of a block in the world
 
-Cette classe a été ajoutée par un mod avec le mod-id `crafttweaker`. Vous devez donc avoir ce mod installé si vous voulez utiliser cette fonctionnalité.
+This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
 
-## Importation de la classe
-Il pourrait vous être nécessaire d'importer le paquet si vous rencontrez des problèmes (comme lancer un tableau), alors mieux être sûr que désolé et ajouter l'importation.
+## Importing the class
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
 ```zenscript
 crafttweaker.api.util.BlockPos
 ```
 
-## Constructeurs
+## Constructors
 ```zenscript
 new crafttweaker.api.util.BlockPos(x as int, y as int, z as int);
 ```
-| Paramètre | Type de texte | Libellé                    |
-| --------- | ------------- | -------------------------- |
-| x         | Indice        | Aucune description fournie |
-| y         | Indice        | Aucune description fournie |
-| Z         | Indice        | Aucune description fournie |
+| Parameter | Type | Description             |
+| --------- | ---- | ----------------------- |
+| x         | int  | No description provided |
+| y         | int  | No description provided |
+| z         | int  | No description provided |
 
 
 
-## Méthodes
-### Ajouter
+## Methods
+### add
 
-Ajoute deux positions ensemble et retourne le résultat.
+Adds two positions together and returns the result.
 
-Retourne [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos)
+Returns [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos)
 
 ```zenscript
 new BlockPos(0, 1, 2).add(pos as crafttweaker.api.util.BlockPos);
 new BlockPos(0, 1, 2).add(new BlockPos(3, 2, 1));
 ```
 
-| Paramètre | Type de texte                                                | Libellé                  |
-| --------- | ------------------------------------------------------------ | ------------------------ |
-| pos       | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | autre position à ajouter |
+| Parameter | Type                                                         | Description           |
+| --------- | ------------------------------------------------------------ | --------------------- |
+| pos       | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | other position to add |
 
 
 
-Ajoute les valeurs données à cette position, et retourne une nouvelle position avec les nouvelles valeurs.
+Adds the given values to this position, and returns a new position with the new values.
 
-Retourne [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos)
+Returns [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos)
 
 ```zenscript
 new BlockPos(0, 1, 2).add(x as double, y as double, z as double);
 new BlockPos(0, 1, 2).add(50.21, -20.8, -25.2);
 ```
 
-| Paramètre | Type de texte | Libellé            |
-| --------- | ------------- | ------------------ |
-| x         | double        | valeur x à ajouter |
-| y         | double        | valeur y à ajouter |
-| Z         | double        | valeur z à ajouter |
+| Parameter | Type   | Description    |
+| --------- | ------ | -------------- |
+| x         | double | x value to add |
+| y         | double | y value to add |
+| z         | double | z value to add |
 
 
-### Produit croisé
+### crossProduct
 
-Crée un nouveau BlockPos basé sur le produit croisé de cette position, et la position donnée
+Creates a new BlockPos based on the cross product of this position, and the given position
 
-Retourne [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos)
+Returns [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos)
 
 ```zenscript
 new BlockPos(0, 1, 2).crossProduct(pos as crafttweaker.api.util.BlockPos);
 new BlockPos(0, 1, 2).crossProduct(new BlockPos(5, 8, 2););
 ```
 
-| Paramètre | Type de texte                                                | Libellé                       |
-| --------- | ------------------------------------------------------------ | ----------------------------- |
-| pos       | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | Blocs pour croiser le produit |
+| Parameter | Type                                                         | Description               |
+| --------- | ------------------------------------------------------------ | ------------------------- |
+| pos       | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | BlockPos to cross product |
 
 
 ### distanceSq
 
-Obtient la distance carrée de cette position vers les BlockPos spécifiés, en utilisant le centre des BlockPos
+Gets the squared distance of this position to the specified BlockPos, using the center of the BlockPos
 
-Renvoie double
+Returns double
 
 ```zenscript
 new BlockPos(0, 1, 2).distanceSq(to as crafttweaker.api.util.BlockPos);
 new BlockPos(0, 1, 2).distanceSq(new BlockPos(256, 128, 10););
 ```
 
-| Paramètre | Type de texte                                                | Libellé                 |
-| --------- | ------------------------------------------------------------ | ----------------------- |
-| à         | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | Blocs à vérifier contre |
+| Parameter | Type                                                         | Description               |
+| --------- | ------------------------------------------------------------ | ------------------------- |
+| to        | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | BlockPos to check against |
 
 
 
-Obtient la distance carrée de cette position aux BlockPos spécifiés
+Gets the squared distance of this position to the specified BlockPos
 
-Renvoie double
+Returns double
 
 ```zenscript
 new BlockPos(0, 1, 2).distanceSq(to as crafttweaker.api.util.BlockPos, useCenter as boolean);
 new BlockPos(0, 1, 2).distanceSq(new BlockPos(256, 128, 10);, true);
 ```
 
-| Paramètre | Type de texte                                                | Libellé                                                                    |
-| --------- | ------------------------------------------------------------ | -------------------------------------------------------------------------- |
-| à         | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | Blocs à vérifier contre                                                    |
-| Centrer   | boolean                                                      | doit-on utiliser le centre de la coordonnée ? (ajoute 0,5 à chaque valeur) |
+| Parameter | Type                                                         | Description                                                           |
+| --------- | ------------------------------------------------------------ | --------------------------------------------------------------------- |
+| to        | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | BlockPos to check against                                             |
+| useCenter | boolean                                                      | should the center of the coordinate be used? (adds 0.5 to each value) |
 
 
 
-Obtient la distance carrée de cette position aux coordonnées spécifiées
+Gets the squared distance of this position to the specified coordinates
 
-Renvoie double
+Returns double
 
 ```zenscript
 new BlockPos(0, 1, 2).distanceSq(x as double, y as double, z as double, useCenter as boolean);
 new BlockPos(0, 1, 2).distanceSq(500.25, 250.75, 100.20, false);
 ```
 
-| Paramètre | Type de texte | Libellé                                                                    |
-| --------- | ------------- | -------------------------------------------------------------------------- |
-| x         | double        | position x contre laquelle vérifier                                        |
-| y         | double        | position y à vérifier                                                      |
-| Z         | double        | Position de z à vérifier                                                   |
-| Centrer   | boolean       | doit-on utiliser le centre de la coordonnée ? (ajoute 0,5 à chaque valeur) |
+| Parameter | Type    | Description                                                           |
+| --------- | ------- | --------------------------------------------------------------------- |
+| x         | double  | x position to check against                                           |
+| y         | double  | y position to check against                                           |
+| z         | double  | z position to check against                                           |
+| useCenter | boolean | should the center of the coordinate be used? (adds 0.5 to each value) |
 
 
-### bas
+### down
 
-Crée une nouvelle BlockPos basée sur cette BlockPos qui est un bloc inférieur à cette BlockPos
+Creates a new BlockPos based on this BlockPos that is one block lower than this BlockPos
 
- Renvoie : `un nouveau BlockPos qui est un bloc inférieur à ce BlockPos`
+ Returns: `a new BlockPos that is one block lower than this BlockPos`
 
-Retourne net.minecraft.util.math.BlockPos
+Returns net.minecraft.util.math.BlockPos
 
 ```zenscript
 new BlockPos(0, 1, 2).down();
 ```
 
-### est
+### east
 
-Crée un nouveau BlockPos basé sur ce BlockPos qui est un bloc à l'est de ce BlockPos
+Creates a new BlockPos based on this BlockPos that is one block east of this BlockPos
 
- Renvoie : `un nouveau BlockPos qui est un bloc à l'est de ce BlockPos`
+ Returns: `a new BlockPos that is one block east of this BlockPos`
 
-Retourne net.minecraft.util.math.BlockPos
+Returns net.minecraft.util.math.BlockPos
 
 ```zenscript
 new BlockPos(0, 1, 2).east();
 ```
 
 
-Crée un nouveau BlockPos basé sur ce BlockPos qui est n bloc(s) à l'est de ce BlockPos
+Creates a new BlockPos based on this BlockPos that is n block(s) east of this BlockPos
 
- Renvoie : `un nouveau BlockPos qui est n bloc(s) à l'est de ce BlockPos`
+ Returns: `a new BlockPos that is n block(s) east of this BlockPos`
 
-Retourne net.minecraft.util.math.BlockPos
+Returns net.minecraft.util.math.BlockPos
 
 ```zenscript
 new BlockPos(0, 1, 2).east(n as int);
 new BlockPos(0, 1, 2).east(2);
 ```
 
-| Paramètre | Type de texte | Libellé                    |
-| --------- | ------------- | -------------------------- |
-| n         | Indice        | Aucune description fournie |
+| Parameter | Type | Description             |
+| --------- | ---- | ----------------------- |
+| n         | int  | No description provided |
 
 
-### Distance de manHans
+### manhattanDistance
 
-Obtient la distance de Manhattan de cette pos par rapport à une position différente
+Gets the Manhattan Distance of this pos compared to a different position
 
-Renvoie int
+Returns int
 
 ```zenscript
-new BlockPos(0, 1, 2).man文anDistance(other as crafttweaker.api.util.BlockPos);
-new BlockPos(0, 1, 2).man文anDistance(new BlockPos(4, 5, 6));
+new BlockPos(0, 1, 2).manhattanDistance(other as crafttweaker.api.util.BlockPos);
+new BlockPos(0, 1, 2).manhattanDistance(new BlockPos(4, 5, 6));
 ```
 
-| Paramètre | Type de texte                                                | Libellé                                   |
-| --------- | ------------------------------------------------------------ | ----------------------------------------- |
-| autres    | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | autre position pour obtenir la distance à |
+| Parameter | Type                                                         | Description                           |
+| --------- | ------------------------------------------------------------ | ------------------------------------- |
+| other     | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | other position to get the distance to |
 
 
-### Nord
+### north
 
-Crée un nouveau BlockPos basé sur ce BlockPos qui est un bloc au nord de ce BlockPos
+Creates a new BlockPos based on this BlockPos that is one block north of this BlockPos
 
- Renvoie : `un nouveau BlockPos qui est un bloc au nord de ce BlockPos`
+ Returns: `a new BlockPos that is one block north of this BlockPos`
 
-Retourne net.minecraft.util.math.BlockPos
+Returns net.minecraft.util.math.BlockPos
 
 ```zenscript
 new BlockPos(0, 1, 2).north();
 ```
 
 
-Crée un nouveau BlockPos basé sur ce BlockPos qui est n bloc(s) au nord de ce BlockPos
+Creates a new BlockPos based on this BlockPos that is n block(s) north of this BlockPos
 
- Renvoie : `un nouveau BlockPos qui est n bloc(s) au nord de ce BlockPos`
+ Returns: `a new BlockPos that is n block(s) north of this BlockPos`
 
-Retourne net.minecraft.util.math.BlockPos
+Returns net.minecraft.util.math.BlockPos
 
 ```zenscript
 new BlockPos(0, 1, 2).north(n as int);
 new BlockPos(0, 1, 2).north(10);
 ```
 
-| Paramètre | Type de texte | Libellé                    |
-| --------- | ------------- | -------------------------- |
-| n         | Indice        | Aucune description fournie |
+| Parameter | Type | Description             |
+| --------- | ---- | ----------------------- |
+| n         | int  | No description provided |
 
 
-### décalage
+### offset
 
-Crée un nouveau BlockPos basé sur ce BlockPos qui est un décalage de bloc de ce BlockPos basé sur le [crafttweaker.api.util.Direction donné](/vanilla/api/util/Direction)
+Creates a new BlockPos based on this BlockPos that is one block offset of this BlockPos based on the given [crafttweaker.api.util.Direction](/vanilla/api/util/Direction)
 
- Renvoie : `un nouveau BlockPos qui est 1 offset de bloc de ce BlockPos`
+ Returns: `a new BlockPos that is 1 block offset of this BlockPos`
 
-Retourne [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos)
+Returns [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos)
 
 ```zenscript
 new BlockPos(0, 1, 2).offset(direction as crafttweaker.api.util.Direction);
 new BlockPos(0, 1, 2).offset(<direction:east>);
 ```
 
-| Paramètre | Type de texte                                                  | Libellé                    |
-| --------- | -------------------------------------------------------------- | -------------------------- |
-| direction | [crafttweaker.api.util.Direction](/vanilla/api/util/Direction) | Aucune description fournie |
+| Parameter | Type                                                           | Description             |
+| --------- | -------------------------------------------------------------- | ----------------------- |
+| direction | [crafttweaker.api.util.Direction](/vanilla/api/util/Direction) | No description provided |
 
 
 
-Crée un nouveau BlockPos basé sur ce BlockPos qui est n bloc(s) offset de ce BlockPos basé sur le [crafttweaker.api.util.Direction](/vanilla/api/util/Direction)
+Creates a new BlockPos based on this BlockPos that is n block(s) offset of this BlockPos based on the given [crafttweaker.api.util.Direction](/vanilla/api/util/Direction)
 
- Renvoie : `un nouveau BlockPos qui est n bloc(s) de décalage de ce BlockPos`
+ Returns: `a new BlockPos that is n block(s) offset of this BlockPos`
 
-Retourne [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos)
+Returns [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos)
 
 ```zenscript
 new BlockPos(0, 1, 2).offset(direction as crafttweaker.api.util.Direction, n as int);
 new BlockPos(0, 1, 2).offset(<direction:south>, 3);
 ```
 
-| Paramètre | Type de texte                                                  | Libellé                    |
-| --------- | -------------------------------------------------------------- | -------------------------- |
-| direction | [crafttweaker.api.util.Direction](/vanilla/api/util/Direction) | Aucune description fournie |
-| n         | Indice                                                         | Aucune description fournie |
+| Parameter | Type                                                           | Description             |
+| --------- | -------------------------------------------------------------- | ----------------------- |
+| direction | [crafttweaker.api.util.Direction](/vanilla/api/util/Direction) | No description provided |
+| n         | int                                                            | No description provided |
 
 
-### Sud
+### south
 
-Crée un nouveau BlockPos basé sur ce BlockPos qui est un bloc au sud de ce BlockPos
+Creates a new BlockPos based on this BlockPos that is one block south of this BlockPos
 
- Renvoie : `un nouveau BlockPos qui est un bloc au sud de ce BlockPos`
+ Returns: `a new BlockPos that is one block south of this BlockPos`
 
-Retourne net.minecraft.util.math.BlockPos
+Returns net.minecraft.util.math.BlockPos
 
 ```zenscript
-new BlockPos(0, 1, 2).sud();
+new BlockPos(0, 1, 2).south();
 ```
 
 
-Crée un nouveau BlockPos basé sur ce BlockPos qui est n bloc(s) au sud de ce BlockPos
+Creates a new BlockPos based on this BlockPos that is n block(s) south of this BlockPos
 
- Renvoie : `un nouveau BlockPos qui est n bloc(s) au sud de ce BlockPos`
+ Returns: `a new BlockPos that is n block(s) south of this BlockPos`
 
-Retourne net.minecraft.util.math.BlockPos
+Returns net.minecraft.util.math.BlockPos
 
 ```zenscript
 new BlockPos(0, 1, 2).south(n as int);
 new BlockPos(0, 1, 2).south(12);
 ```
 
-| Paramètre | Type de texte | Libellé                    |
-| --------- | ------------- | -------------------------- |
-| n         | Indice        | Aucune description fournie |
+| Parameter | Type | Description             |
+| --------- | ---- | ----------------------- |
+| n         | int  | No description provided |
 
 
-### soustraire
+### subtract
 
-Soustrait deux positions ensemble et retourne le résultat.
+Subtracts two positions together and returns the result.
 
-Retourne [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos)
+Returns [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos)
 
 ```zenscript
 new BlockPos(0, 1, 2).subtract(pos as crafttweaker.api.util.BlockPos);
 new BlockPos(0, 1, 2).subtract(new BlockPos(2, 1, 3));
 ```
 
-| Paramètre | Type de texte                                                | Libellé                    |
-| --------- | ------------------------------------------------------------ | -------------------------- |
-| pos       | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | autre position à supprimer |
+| Parameter | Type                                                         | Description              |
+| --------- | ------------------------------------------------------------ | ------------------------ |
+| pos       | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | other position to remove |
 
 
-### plus haut
+### up
 
-Crée une nouvelle BlockPos basée sur cette BlockPos qui est un bloc supérieur à cette BlockPos
+Creates a new BlockPos based on this BlockPos that is one block higher than this BlockPos
 
- Renvoie : `un nouveau BlockPos qui est un bloc supérieur à ce BlockPos`
+ Returns: `a new BlockPos that is one block higher than this BlockPos`
 
-Retourne net.minecraft.util.math.BlockPos
+Returns net.minecraft.util.math.BlockPos
 
 ```zenscript
 new BlockPos(0, 1, 2).up();
 ```
 
 
-Crée un nouveau BlockPos basé sur ce BlockPos qui est n bloc(s) supérieur à ce BlockPos
+Creates a new BlockPos based on this BlockPos that is n block(s) higher than this BlockPos
 
- Renvoie : `un nouveau BlockPos qui est n bloc(s) supérieur à ce BlockPos`
+ Returns: `a new BlockPos that is n block(s) higher than this BlockPos`
 
-Retourne net.minecraft.util.math.BlockPos
+Returns net.minecraft.util.math.BlockPos
 
 ```zenscript
 new BlockPos(0, 1, 2).up(n as int);
 new BlockPos(0, 1, 2).up(45);
 ```
 
-| Paramètre | Type de texte | Libellé                    |
-| --------- | ------------- | -------------------------- |
-| n         | Indice        | Aucune description fournie |
+| Parameter | Type | Description             |
+| --------- | ---- | ----------------------- |
+| n         | int  | No description provided |
 
 
-### à l'ouest
+### west
 
-Crée un nouveau BlockPos basé sur ce BlockPos qui est un bloc à l'ouest de ce BlockPos
+Creates a new BlockPos based on this BlockPos that is one block west of this BlockPos
 
- Renvoie : `un nouveau BlockPos qui est un bloc à l'ouest de ce BlockPos`
+ Returns: `a new BlockPos that is one block west of this BlockPos`
 
-Retourne net.minecraft.util.math.BlockPos
+Returns net.minecraft.util.math.BlockPos
 
 ```zenscript
 new BlockPos(0, 1, 2).west();
 ```
 
 
-Crée un nouveau BlockPos basé sur ce BlockPos qui est n bloc(s) à l'ouest de ce BlockPos
+Creates a new BlockPos based on this BlockPos that is n block(s) west of this BlockPos
 
- Renvoie : `un nouveau BlockPos qui est n bloc(s) à l'ouest de ce BlockPos`
+ Returns: `a new BlockPos that is n block(s) west of this BlockPos`
 
-Retourne net.minecraft.util.math.BlockPos
+Returns net.minecraft.util.math.BlockPos
 
 ```zenscript
 new BlockPos(0, 1, 2).west(n as int);
 new BlockPos(0, 1, 2).west(120);
 ```
 
-| Paramètre | Type de texte | Libellé                    |
-| --------- | ------------- | -------------------------- |
-| n         | Indice        | Aucune description fournie |
+| Parameter | Type | Description             |
+| --------- | ---- | ----------------------- |
+| n         | int  | No description provided |
 
 
-### à distance
+### withinDistance
 
-Vérifie si les BlockPos donnés sont dans la distance spécifiée de ce BlockPos (utilise le milieu des BlockPos)
+Checks if the given BlockPos is within the specified distance of this BlockPos (this uses the middle of the BlockPos)
 
-Retourne un booléen
+Returns boolean
 
 ```zenscript
 new BlockPos(0, 1, 2).withinDistance(pos as crafttweaker.api.util.BlockPos, distance as double);
 new BlockPos(0, 1, 2).withinDistance(new BlockPos(80, 75, 54);, 10);
 ```
 
-| Paramètre | Type de texte                                                | Libellé                                    |
-| --------- | ------------------------------------------------------------ | ------------------------------------------ |
-| pos       | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | Bloc Pos pour vérifier s'il est à distance |
-| Distance  | double                                                       | distance à vérifier dans                   |
+| Parameter | Type                                                         | Description                                    |
+| --------- | ------------------------------------------------------------ | ---------------------------------------------- |
+| pos       | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | BlockPos to check if it is within the distance |
+| distance  | double                                                       | distance to check within                       |
 
 
 
-## Propriétés
+## Properties
 
-| Nom | Type de texte | A un Getter | A un Setter |
-| --- | ------------- | ----------- | ----------- |
-| x   | Indice        | vrai        | Faux        |
-| y   | Indice        | vrai        | Faux        |
-| Z   | Indice        | vrai        | Faux        |
+| Name | Type | Has Getter | Has Setter |
+| ---- | ---- | ---------- | ---------- |
+| x    | int  | true       | false      |
+| y    | int  | true       | false      |
+| z    | int  | true       | false      |
 
-## Opérateurs
-### AJOUTER
+## Operators
+### ADD
 
-Ajoute deux positions ensemble et retourne le résultat.
+Adds two positions together and returns the result.
 
 ```zenscript
 new BlockPos(0, 1, 2) + pos as crafttweaker.api.util.BlockPos
 new BlockPos(0, 1, 2) + new BlockPos(3, 2, 1)
 ```
 
-| Paramètre | Type de texte                                                | Libellé                  |
-| --------- | ------------------------------------------------------------ | ------------------------ |
-| pos       | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | autre position à ajouter |
+| Parameter | Type                                                         | Description           |
+| --------- | ------------------------------------------------------------ | --------------------- |
+| pos       | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | other position to add |
 ### SUB
 
-Soustrait deux positions ensemble et retourne le résultat.
+Subtracts two positions together and returns the result.
 
 ```zenscript
 new BlockPos(0, 1, 2) - pos as crafttweaker.api.util.BlockPos
 new BlockPos(0, 1, 2) - new BlockPos(2, 1, 3)
 ```
 
-| Paramètre | Type de texte                                                | Libellé                    |
-| --------- | ------------------------------------------------------------ | -------------------------- |
-| pos       | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | autre position à supprimer |
+| Parameter | Type                                                         | Description              |
+| --------- | ------------------------------------------------------------ | ------------------------ |
+| pos       | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | other position to remove |
 
-## Pistolet
+## Casters
 
-| Type de résultat | Est implicite |
-| ---------------- | ------------- |
-| long             | Faux          |
+| Result type | Is Implicit |
+| ----------- | ----------- |
+| long        | false       |
 
