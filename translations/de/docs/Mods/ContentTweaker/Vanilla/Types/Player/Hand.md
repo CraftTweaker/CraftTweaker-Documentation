@@ -1,18 +1,18 @@
 # Hand
 
-Eine Hand ist eine Auflistung der zwei möglichen Hände des Spielers: Haupt- und Ausschalten
+A Hand is an enumeration of the player's two possible hands: main and off
 
 ## Dieses Paket importieren
 
-Es kann erforderlich sein, dass Sie das Paket importieren, wenn Sie irgendwelche Probleme haben. Seien Sie also besser sicher als entschuldigen und fügen Sie den Import hinzu.  
-`mods.contenttweaker.Hand;`
+It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
+`import mods.contenttweaker.Hand;`
 
-## Aufzählungen
+## Enumerations
 
-Hand kann von diesen beiden Werten sein:
+Hand can be of those two values:
 
-- wichtigsten
-- aus
+- main
+- off
 
 ```zenscript
 import mods.contenttweaker.Hand;
@@ -23,13 +23,13 @@ Hand.fromString("off");
 Hand.fromString("main");
 ```
 
-## Verwendungen
+## Uses
 
-Hauptverwendung einer Hand ist in einer [IItemUse Funktion](/Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemUse/).
+A Hand's main use is in a [IItemUse Function](/Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemUse/).
 
-## Vergleiche zwei Handobjekte
+## Comparing two Hand objects
 
-Sie können zwei Handobjekte mit dem `==` verglichen.
+You can compare two Hand objects using the `==` getter.
 
 ```zenscript
 Hand.main() == Hand.main()
