@@ -1,42 +1,42 @@
-# Todestruhe Verteidigung
+# Death Chest Defense
 
 ## Dieses Paket importieren
 
 `import mods.vanilladeathchest.DeathChestDefense;`
 
-## Entsperr-Element
+## Unlocker item
 
 ```zenscript
 //DeathChestDefense.setUnlocker(string stage, IItemStack unlocker);
 DeathChestDefense.setUnlocker("example_stage", <minecraft:diamond_axe> * 1000);
 ```
 
-Ein Verbrauch/Schadensbetrag kann gesetzt werden, indem eine Stapelgröße wie oben angegeben wird.
+A consumption/damage amount can be set by specifying a stack size like above.
 
-## Beschädigung des Entsperrungsgegenstandes anstatt ihn zu verbrauchen
+## Damage the unlocker item rather than consuming it
 
 ```zenscript
-//DeathChestDefense.setDamageUnlocker<unk> adOfConsume(string stage, bool flag);
-DeathChestDefense.setDamageUnlocker<unk> adOfConsume("example_stage", true);
+//DeathChestDefense.setDamageUnlockerInsteadOfConsume(string stage, bool flag);
+DeathChestDefense.setDamageUnlockerInsteadOfConsume("example_stage", true);
 ```
 
-## Schalte fehlgeschlagene Chat-Nachricht frei
+## Unlock failed chat message
 
 ```zenscript
 //DeathChestDefense.setUnlockFailedChatMessage(string stage, string message);
-DeathChestDefense.setUnlockFailedChatMessage("example_stage", "Du musst ein %2$s bekommen, um deine Truhe freizuschalten!");
+DeathChestDefense.setUnlockFailedChatMessage("example_stage", "You need to get a %2$s to unlock your chest!");
 ```
 
-Die Zeichenkette enthält zwei Argumente: die Menge und der Anzeigename der benötigten Elemente.
+The string takes two arguments: the amount and display name of the required items.
 
-## Abwehr Einheit
+## Defense entity
 
 ```zenscript
 //DeathChestDefense.setDefenseEntity(string stage, IEntityDefinition defenseEntity);
 DeathChestDefense.setDefenseEntity("example_stage", <entity:minecraft:zombie_pigman>);
 ```
 
-## Verteidigungseigentum NBT
+## Defense entity NBT
 
 ```zenscript
 //DeathChestDefense.setDefenseEntityNBT(string stage, IData nbt);
@@ -50,9 +50,9 @@ DeathChestDefense.setDefenseEntityNBT("example_stage", {
 });
 ```
 
-`nbt` sollte eine [DataMap](/Vanilla/Data/DataMap/) sein.
+`nbt` should be a [DataMap](/Vanilla/Data/DataMap/).
 
-## Verteidigung-Entität Spawn-Anzahl
+## Defense entity spawn count
 
 ```zenscript
 //DeathChestDefense.setDefenseEntitySpawnCount(string stage, int count);
