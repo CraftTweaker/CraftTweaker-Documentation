@@ -1,6 +1,6 @@
-# ゲームクラス
+# Game Class
 
-IGameクラスは一般的なゲーム情報を取得するために使用されます。 `ゲーム` を使用してアクセスできます
+The IGame Class is used to obtain general game information. Can be accessed using `game`
 
 ## パッケージのインポート
 
@@ -9,35 +9,35 @@ It might be required for you to import the package if you encounter any issues (
 
 ## Zengetters
 
-| Zengetter | それは何をするか。                 | Return Type                                                     | 使用法             |
-| --------- | ------------------------- | --------------------------------------------------------------- | --------------- |
-| バイオーム     | すべての登録済みバイオームをリストとして返します。 | List<[IBiomes](/Vanilla/Biomes/IBiome/)>                        | `game.biomes`   |
-| ブロック      | すべての登録済みブロックをリストとして返します。  | List<[IBlockDefinition](/Vanilla/Blocks/IBlockDefinition/)>     | `game.blocks`   |
-| エンティティ    | すべての登録エンティティをリストとして返します。  | List<[IEntityDefinition](/Vanilla/Entities/IEntityDefinition/)> | `game.entities` |
-| 項目        | すべての登録済みアイテムをリストとして返します。  | List<[IItemDefinition](/Vanilla/Items/IItemDefinition/)>        | `game.items`    |
-| リキード      | すべての登録済み液体をリストとして返します。    | List<[ILiquidDefinition](/Vanilla/Liquids/ILiquidDefinition/)>  | `game.liquids`  |
-| ポーション     | すべてのポーションをリストとして返します      | List<[IPotion](/Vanilla/Potions/IPotion/)>                      | `game.potions`  |
+| Zengetter | What does it do?                        | Return Type                                                     | Usage           |
+| --------- | --------------------------------------- | --------------------------------------------------------------- | --------------- |
+| biomes    | Returns all registered biomes as list   | List<[IBiomes](/Vanilla/Biomes/IBiome/)>                        | `game.biomes`   |
+| blocks    | Returns all registered blocks as list   | List<[IBlockDefinition](/Vanilla/Blocks/IBlockDefinition/)>     | `game.blocks`   |
+| entities  | Returns all registered entities as list | List<[IEntityDefinition](/Vanilla/Entities/IEntityDefinition/)> | `game.entities` |
+| items     | Returns all registered items as list    | List<[IItemDefinition](/Vanilla/Items/IItemDefinition/)>        | `game.items`    |
+| liquids   | Returns all registered liquids as list  | List<[ILiquidDefinition](/Vanilla/Liquids/ILiquidDefinition/)>  | `game.liquids`  |
+| potions   | Returns all registered potions as list  | List<[IPotion](/Vanilla/Potions/IPotion/)>                      | `game.potions`  |
 
-## メソッド
+## Methods
 
 ### GetEntity
 
 ```zenscript
 //getEntity(EntityName)
 
-//本質的には同じ
-val ship = game.getEntity("sheep");
-val sheep1 = <entity:minecraft:sheep>
+//essentially the same
+val sheep = game.getEntity("sheep");
+val sheep1 = <entity:minecraft:sheep>;
 ```
 
-### ローカライズの設定
+### SetLocalization
 
-ローカライズを設定します。  
-パラメータはすべて文字列です。 `game.setLocalization(key, value);`  
+Sets the localization.  
+All parameters are strings. `game.setLocalization(key, value);`  
 `game.setLocalization(lang, key, value);`
 
-### ローカライズする
+### Localize
 
-戻り値 ローカライズ文字列  
+Returns a localized String  
 `game.localize(key)`  
 `game.localize(key, lang)`
