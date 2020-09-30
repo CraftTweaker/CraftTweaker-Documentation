@@ -1,80 +1,80 @@
-# Kreator zaklęć
+# Enchantment Builder
 
-Za pomocą tego pakietu możesz tworzyć niestandardowe zaklęcia dla narzędzi, broni i prawdopodobnie wszystkiego innego.
+Using this package you can create custom enchantments for tools, weapons and probably everything else.
 
-## Importowanie klasy
+## Importing the class
 
-Może być wymagane zaimportowanie klasy, jeśli napotkasz jakiekolwiek problemy (np. rzucenie [Array](/AdvancedFunctions/Arrays_and_Loops/)), tak aby były bezpieczne niż przepraszamy i dodaj import.  
-`zaimportuj mods.contenttweaker.enchantments.EnchantmentBuilder;`
+It might be required for you to import the class if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
+`import mods.contenttweaker.enchantments.EnchantmentBuilder;`
 
-## Tworzenie zaklęcia
+## Creating an Enchant
 
-Przede wszystkim musisz utworzyć Budowniczego Materiałów.  
-Można to zrobić za pomocą metody tworzenia statycznego.
+First and foremost you will need to create a Material Builder.  
+This can be done using the static create method.
 
 ```zenscript
-//mods.contenttweaker.enchantments.EnchantmentBuilder.create(Nazwa ciągu);
-walal myChant = mods.contenttweaker.enchantments.EnchantmentBuilder.create("kindlich_chant");
+//mods.contenttweaker.enchantments.EnchantmentBuilder.create(String name);
+val myChant = mods.contenttweaker.enchantments.EnchantmentBuilder.create("kindlich_chant");
 ```
 
-Pamiętaj, że musisz zarejestrować zaklęcie po dokonaniu zmian.  
-Można to zrobić z metodą `rejestru` , która zwróci [IEnchantmentDefinition](/Vanilla/Enchantments/IEnchantmentDefinition/) nowego zaklęcia.
+Remember, that you will need to register the enchantment after you've done your changes.  
+This can be done with the `register` method which will return a [IEnchantmentDefinition](/Vanilla/Enchantments/IEnchantmentDefinition/) of the new enchantment.
 
 ```zenscript
 myChant.register();
 ```
 
-## Właściwości
+## Properties
 
-Możesz ustawić i pobrać te właściwości używając `myChant.name`.
+You can set and get these properties using `myChant.name`.
 
-| Nazwa               | Typ                                                                                  |
-| ------------------- | ------------------------------------------------------------------------------------ |
-| Nazwa               | ciąg znaków                                                                          |
-| dozwoloneOnBooks    | bool                                                                                 |
-| Odpowiednie miejsca | [IEntityEquipmentSlot](/Vanilla/Entities/IEntityEquipmentSlot/)[] (domyślnie: puste) |
-| przekleństwo        | bool                                                                                 |
-| domena              | string (default: "contenttweaker")                                                   |
-| maksymalny poziom   | int (domyślnie: 1)                                                                   |
-| minLevel            | int (domyślnie: 1)                                                                   |
-| rzadkość            | ciąg znaków (użyj niestandardowych metod poniżej)                                    |
-| skarb               | bool                                                                                 |
-| typ                 | ciąg znaków (użyj niestandardowych metod poniżej)                                    |
+| name            | Type                                                                               |
+| --------------- | ---------------------------------------------------------------------------------- |
+| name            | string                                                                             |
+| allowedOnBooks  | bool                                                                               |
+| applicableSlots | [IEntityEquipmentSlot](/Vanilla/Entities/IEntityEquipmentSlot/)[] (default: empty) |
+| curse           | bool                                                                               |
+| domain          | string (default: "contenttweaker")                                                 |
+| maxLevel        | int (default: 1)                                                                   |
+| minLevel        | int (default: 1)                                                                   |
+| rarity          | string (use the custom methods below)                                              |
+| treasure        | bool                                                                               |
+| type            | string (use the custom methods below)                                              |
 
-## Obliczone właściwości
+## Calculated Properties
 
-Możesz ustawić i uzyskać te funkcje właściwości.
+You can set and get these properties functions.
 
-| Nazwa                                    | parametry                                                                                                                                                                                                                      | Typ zwrotu         |
-| ---------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------ |
-| można zastosować                         | [IEnchantmentDefinition](/Vanilla/Enchantments/IEnchantmentDefinition/) thisEnchantment, [IItemStack](/Vanilla/Items/IItemStack/) element                                                                                      | bool               |
-| [PLACEHOLDER] canApplyAtEnchantmentTable | [IEnchantmentDefinition](/Vanilla/Enchantments/IEnchantmentDefinition/) thisEnchantment, [IItemStack](/Vanilla/Items/IItemStack/) element                                                                                      | bool               |
-| CanApplyTogether                         | [IEnchantmentDefinition](/Vanilla/Enchantments/IEnchantmentDefinition/) thisEnchantment, [IchantmentDefinition](/Vanilla/Enchantments/IEnchantmentDefinition/) other                                                           | bool               |
-| calcDamageByCreature                     | [IEnchantmentDefinition](/Vanilla/Enchantments/IEnchantmentDefinition/) ThisEnchantment, [int]() poziom, [String]() creatureType                                                                                               | zmiennoprzecinkowe |
-| calcEnchantabilityMin                    | [IEnchantmentDefinition](/Vanilla/Enchantments/IEnchantmentDefinition/) To zaklęcie, [int]() poziom                                                                                                                            | odcień             |
-| calcEnchantabilityMax                    | [IEnchantmentDefinition](/Vanilla/Enchantments/IEnchantmentDefinition/) To zaklęcie, [int]() poziom                                                                                                                            | odcień             |
-| calcModifierDamage                       | [IEnchantmentDefinition](/Vanilla/Enchantments/IEnchantmentDefinition/) ThisEnchantment, [int]() poziom, [IDamageSource](/Vanilla/Damage/IDamageSource/) obrażeńŹródło                                                         | odcień             |
-| calcTranslatedName                       | [IEnchantmentDefinition](/Vanilla/Enchantments/IEnchantmentDefinition/) To zaklęcie, [int]() poziom                                                                                                                            | ciąg znaków        |
-|                                          |                                                                                                                                                                                                                                |                    |
-| onEntityuszkodzony                       | [IEnchantmentDefinition](/Vanilla/Enchantments/IEnchantmentDefinition/) thisEnchantment, [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) użytkownik, [IEntity](/Vanilla/Entities/IEntity/) cel, [int]() poziom       | unieważnij         |
-| onUserHurt                               | [IEnchantmentDefinition](/Vanilla/Enchantments/IEnchantmentDefinition/) ThisEnchantment, [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) użytkownik, [IEntity](/Vanilla/Entities/IEntity/) atakujący, [int]() poziom | unieważnij         |
+| name                       | parameters                                                                                                                                                                                                             | Return Type |
+| -------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------- |
+| canApply                   | [IEnchantmentDefinition](/Vanilla/Enchantments/IEnchantmentDefinition/) thisEnchantment, [IItemStack](/Vanilla/Items/IItemStack/) item                                                                                 | bool        |
+| canApplyAtEnchantmentTable | [IEnchantmentDefinition](/Vanilla/Enchantments/IEnchantmentDefinition/) thisEnchantment, [IItemStack](/Vanilla/Items/IItemStack/) item                                                                                 | bool        |
+| canApplyTogether           | [IEnchantmentDefinition](/Vanilla/Enchantments/IEnchantmentDefinition/) thisEnchantment, [IEnchantmentDefinition](/Vanilla/Enchantments/IEnchantmentDefinition/) other                                                 | bool        |
+| calcDamageByCreature       | [IEnchantmentDefinition](/Vanilla/Enchantments/IEnchantmentDefinition/) thisEnchantment, [int]() level, [String]() creatureType                                                                                        | float       |
+| calcEnchantabilityMin      | [IEnchantmentDefinition](/Vanilla/Enchantments/IEnchantmentDefinition/) thisEnchantment, [int]() level                                                                                                                 | int         |
+| calcEnchantabilityMax      | [IEnchantmentDefinition](/Vanilla/Enchantments/IEnchantmentDefinition/) thisEnchantment, [int]() level                                                                                                                 | int         |
+| calcModifierDamage         | [IEnchantmentDefinition](/Vanilla/Enchantments/IEnchantmentDefinition/) thisEnchantment, [int]() level, [IDamageSource](/Vanilla/Damage/IDamageSource/) damageSource                                                   | int         |
+| calcTranslatedName         | [IEnchantmentDefinition](/Vanilla/Enchantments/IEnchantmentDefinition/) thisEnchantment, [int]() level                                                                                                                 | string      |
+|                            |                                                                                                                                                                                                                        |             |
+| onEntityDamaged            | [IEnchantmentDefinition](/Vanilla/Enchantments/IEnchantmentDefinition/) thisEnchantment, [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) user, [IEntity](/Vanilla/Entities/IEntity/) target, [int]() level   | void        |
+| onUserHurt                 | [IEnchantmentDefinition](/Vanilla/Enchantments/IEnchantmentDefinition/) thisEnchantment, [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) user, [IEntity](/Vanilla/Entities/IEntity/) attacker, [int]() level | void        |
 
-## Rzadkość i typ
+## Rarity and Type
 
-Użyj tych metod, aby zostać natychmiast powiadomionym o utworzeniu typo.
+Use these methods to be instantly notified if you made a typo.
 
 ```zenscript
-//Rzadkości
+//Rarities
 myChant.setRarityCommon()
 myChant.setRarityUncommon()
 myChant.setRarityRare()
 myChant.setRarityVeryRare()
 
-//Typy
+//Types
 myChant.setTypeAll()
 myChant.setTypeArmor()
 myChant.setTypeFeed()
-myChant. etTypeLegs()
+myChant.setTypeLegs()
 myChant.setTypeChest()
 myChant.setTypeHead()
 myChant.setTypeWeapon()
@@ -85,23 +85,23 @@ myChant.setTypeBow()
 myChant.setTypeWearable()
 ```
 
-## Przykład
+## Example
 
 ```zenscript
 #loader contenttweaker
 val builder = mods.contenttweaker.enchantments.EnchantmentBuilder.create("kindlich_chant");
-builder.applicableSlots = [mainHand, offhand feet, nogi, chest, head];
+builder.applicableSlots = [mainHand, offhand, feet, legs, chest, head];
 builder.setTypeAll();
 builder.setRarityVeryRare();
-builder. alcModifierDamage = function(thisEnch, level, damageSource){
+builder.calcModifierDamage = function(thisEnch, level, damageSource){
     return level;
 };
 
-builder. nUserHurt = function(thisEnch, entity, attacker, level) {
+builder.onUserHurt = function(thisEnch, entity, attacker, level) {
     entity.health = entity.maxHealth;
-    if(entity instanceof crafttweaker. layer.IPlayer) {
-        walowy gracz jako crafttweaker.player. Gracz = jednostka;
-        gracz.foodStats.addStats(100, 10). f);
+    if(entity instanceof crafttweaker.player.IPlayer) {
+        val player as crafttweaker.player.IPlayer = entity;
+        player.foodStats.addStats(100, 10.0f);
     }
 
 };
@@ -109,9 +109,9 @@ builder. nUserHurt = function(thisEnch, entity, attacker, level) {
 builder.register();
 
 builder.name = "other_chant";
-builder. omain = "definitely_not_cot";
+builder.domain = "definitely_not_cot";
 builder.calcModifierDamage = null;
-builder. nUserHurt = function(thisEnch, player, attacker, level) {
+builder.onUserHurt = function(thisEnch, player, attacker, level) {
     player.sendMessage("EARNED IT!");   
 };
 builder.register();
