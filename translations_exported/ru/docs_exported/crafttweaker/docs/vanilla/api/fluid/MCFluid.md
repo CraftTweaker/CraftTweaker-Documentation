@@ -8,11 +8,11 @@
 crafttweaker.api.fluid.MCFluid
 ```
 
-## Реализованные интерфейсы
-MCFluid реализует следующие интерфейсы. Следовательно, методы из них доступны в этом классе.
+## Implemented Interfaces
+MCFluid реализует следующие интерфейсы. That means any method available to them can also be used on this class.
 - [crafttweaker.api.brackets.CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
 
-## Методы
+## Methods
 ### makeStack
 
 Создает новый [crafttweaker.api.fluid.IFluidStack](/vanilla/api/fluid/IFluidStack) с заданным количеством жидкости.
@@ -26,17 +26,17 @@ myMCFluid.makeStack(сумма как int);
 myMCFluid.makeStack(1000);
 ```
 
-| Параметр | Тип | Описание             |
+| Параметр | Тип | Description          |
 | -------- | --- | -------------------- |
-| сумма    | int | Описание отсутствует |
+| amount   | int | Описание отсутствует |
 
 
 
 ## Свойства
 
-| Название         | Тип    | Имеет Getter | Имеет Setter |
-| ---------------- | ------ | ------------ | ------------ |
-| командная строка | String | true         | false        |
+| Название      | Тип    | Имеет Getter | Имеет Setter |
+| ------------- | ------ | ------------ | ------------ |
+| commandString | String | true         | false        |
 
 ## Операторы
 ### MUL
@@ -50,7 +50,7 @@ myMCFluid * сумма как int
 myMCFluid * 1000
 ```
 
-| Параметр | Тип | Описание             |
+| Параметр | Тип | Description          |
 | -------- | --- | -------------------- |
-| сумма    | int | Описание отсутствует |
+| amount   | int | Описание отсутствует |
 
