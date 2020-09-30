@@ -1,38 +1,38 @@
-# Brennmaschine
+# Combustion Engine
 
-*Erfordert Bauherstellungsenergie*
+*Requires BuildCraft Energy*
 
-Klassenpfad: `mods.buildcraft.CombustionEngine`
+Class path: `mods.buildcraft.CombustionEngine`
 
-## Benutzen
+## Use
 
-Importieren Sie die Klasse mit `importieren Sie mods.buildcraft.CombustionEngine;` am Anfang deines Skripts.
+To use, import the class with `import mods.buildcraft.CombustionEngine;` at the beginning of your script.
 
-## Ein sauberer Brennstoff hinzufügen
+## Adding a Clean Fuel
 
-`CombustionEngine.addCleanFuel(flüssig, powerPerTick, timePerBucket);`
+`CombustionEngine.addCleanFuel(liquid, powerPerTick, timePerBucket);`
 
 - `liquid` <[ILiquidStack](/vanilla/api/liquids/ILiquidStack)> The liquid to be used as fuel
-- `powerPerTick` &lt;doppelte> Leistung in MJ pro Häkchen
-- `timePerbucket` &lt;int> Höhe der Ticks, für die 1.000 mB (1 Bucket) laufen sollen
+- `powerPerTick` &lt;double> Power output in MJ per tick
+- `timePerBucket` &lt;int> Amount of ticks that 1,000 mB (1 bucket) should run for
 
 ```zenscript
-importieren mods.buildcraft.CombustionEngine;
+import mods.buildcraft.CombustionEngine;
 
 CombustionEngine.addCleanFuel(<liquid:iron>, 32.0, 1200);
 ```
 
-## Einen schmutzigen Brennstoff hinzufügen
+## Adding a Dirty Fuel
 
 `CombustionEngine.addDirtyFuel(lFuel, powerPerTick, timePerBucket, lResidue);`
 
 - `lFuel` <[ILiquidStack](/vanilla/api/liquids/ILiquidStack)> The liquid to be used as fuel
-- `powerPerTick` &lt;doppelte> Leistung in MJ pro Häkchen
-- `timePerbucket` &lt;int> Höhe der Ticks, für die 1.000 mB (1 Bucket) laufen sollen
+- `powerPerTick` &lt;double> Power output in MJ per tick
+- `timePerBucket` &lt;int> Amount of ticks that 1,000 mB (1 bucket) should run for
 - `lResidue` <[ILiquidStack](/vanilla/api/liquids/ILiquidStack)> The residue fluid, per bucket of the original fuel
 
 ```zenscript
-importieren mods.buildcraft.CombustionEngine;
+import mods.buildcraft.CombustionEngine;
 
 CombustionEngine.addDirtyFuel(<liquid:iron>, 32.0, 1200, <liquid:water>);
 ```
