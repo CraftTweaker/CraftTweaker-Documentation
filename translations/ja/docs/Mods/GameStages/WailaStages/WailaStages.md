@@ -1,17 +1,17 @@
-# Wailaステージ
+# Waila Stages
 
-この mod は [GameStages API](https://minecraft.curseforge.com/projects/game-stages) のアドオンです。 Waila Stages は、Waila/Hwyla hud の側面をカスタム進行システムによって制限することを可能にします。 詳細はこちら [をご覧ください](https://minecraft.curseforge.com/projects/waila-stages)
+This mod is an addon for the [GameStages API](https://minecraft.curseforge.com/projects/game-stages). Waila Stages allows aspects of the Waila/Hwyla hud to be restricted by a custom progression system. For more info, check out the mod page [here](https://minecraft.curseforge.com/projects/waila-stages)
 
-## メソッド
+## Methods
 
-ステージを持たない限り、ハド全体を隠します。
+Hides the entire hud, unless the player has the stage.
 
 ```zenscript
 // mods.WailaStages.addWailaStage(String stage);
 mods.WailaStages.addWailaStage("one");
 ```
 
-ステージがある場合を除き、waila hud内の特定のラインを非表示にします。
+Hides a specific line in the waila hud, unless the player has the stage.
 
 ```zenscript
 // mods.WailaProgression.addRequirement(String stage, String prefix); 
