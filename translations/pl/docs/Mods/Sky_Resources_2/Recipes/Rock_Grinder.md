@@ -1,24 +1,24 @@
-# Grinder skał
+# Rock Grinder
 
-Pakiet *szlifierka rakietowa* jest używany do dodawania lub usuwania przepisów z/z szlifierki skałowej.
+The *rockgrinder* package is used for adding or removing recipes to/from the Rock Grinder.
 
-## Dzwonienie
+## Calling
 
-Możesz wywołać pakiet *rockgrinder* używając `mods.skyresources.rockgrinder`
+You can call the *rockgrinder* package using `mods.skyresources.rockgrinder`
 
-## Dodawanie przepisów
+## Recipe Addition
 
 ```zenscript
-//mods.skyresources.rockgrinder.addRecipe(wyjście IItemStack, wejście IItemStack);
+//mods.skyresources.rockgrinder.addRecipe(IItemStack output, IItemStack input);
 mods.skyresources.rockgrinder.addRecipe(<minecraft:diamond>, <minecraft:stone>);
 
-//mods.skyresources.rockgrinder.addRecipe(wyjście IItemStack, IItemStack, wejście float, chance);
+//mods.skyresources.rockgrinder.addRecipe(IItemStack output, IItemStack input, float chance);
 mods.skyresources.rockgrinder.addRecipe(<minecraft:emerald>, <minecraft:stone>, 0.50);
 ```
 
-## Usuwanie przepisów
+## Recipe Removal
 
 ```zenscript
-//mods.skyresources.rockgrinder.removeRecipe(wyjście IItemStack);
+//mods.skyresources.rockgrinder.removeRecipe(IItemStack output);
 mods.skyresources.rockgrinder.removeRecipe(<minecraft:gravel>);
 ```
