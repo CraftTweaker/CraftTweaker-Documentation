@@ -1,86 +1,86 @@
 # IEntityLiving
 
-Eine lebende Entität ist eine, die Gesundheit hat und sterben kann.  
-Anders als [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) sind Spieler jedoch keine IEnitiyLiving Objekte!
+A living Entity is one that has health and that can die.  
+Unlike [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) however, players don't are IEnitiyLiving objects!
 
 ## Dieses Paket importieren
 
-Möglicherweise ist es erforderlich, dass Sie das Paket importieren, wenn Sie irgendwelche Probleme haben (z.B. [Array](/AdvancedFunctions/Arrays_and_Loops/)), also besser sicher sein als bedauern und fügen Sie den Import.  
-`importiere crafttweaker.entity.IEntityLiving:`
+It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
+`import crafttweaker.entity.IEntityLiving;`
 
-## [IEntityLivingBase wird erweitert](/Vanilla/Entities/IEntityLivingBase/)
+## Extending [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/)
 
-IEntityLiving extends [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/). Das bedeutet, dass alle Funktionen, die [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) Objekten zur Verfügung stehen, auch für IEntityLiving Objekte verfügbar sind.
+IEntityLiving extends [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/). That means all functions available to [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) objects also are available to IEntityLiving objects.
 
 ## Methoden
 
 ### ZenGetter/ZenSetter
 
-| ZenGetter                | ZenSetter           | Type                                                      |
-| ------------------------ | ------------------- | --------------------------------------------------------- |
-| Angriffsintervall        |                     | int                                                       |
-| attackiere Ziel          | attackiere Ziel     | [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) |
-| canbeered                |                     | bool                                                      |
-| canPickUpLoot            | canPickUpLoot       | bool                                                      |
-| canSpawnHere             |                     | bool                                                      |
-| getLeashedToEntity       |                     | [IEntity](/Vanilla/Entities/IEntity/)                     |
-| isAIDisabled             | isAIDisabled        | bool                                                      |
-| isAIDisabled             | isAIDisabled        | bool                                                      |
-| isColliding              |                     | bool                                                      |
-| isLeashed                |                     | bool                                                      |
-| isLeftHanded             | isLeftHanded        | bool                                                      |
-| isNoDespawnRequired      |                     | bool                                                      |
-| maxSpawnedInChunk        |                     | int                                                       |
-|                          | Vorwärts bewegen    | float                                                     |
-|                          | bewege Strafen      | float                                                     |
-|                          | bewegliche Vertikal | float                                                     |
-| renderGrößen-Modifikator |                     | float                                                     |
+| ZenGetter           | ZenSetter     | Type                                                      |
+| ------------------- | ------------- | --------------------------------------------------------- |
+| attackInterval      |               | int                                                       |
+| attackTarget        | attackTarget  | [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) |
+| canBeSteered        |               | bool                                                      |
+| canPickUpLoot       | canPickUpLoot | bool                                                      |
+| canSpawnHere        |               | bool                                                      |
+| getLeashedToEntity  |               | [IEntity](/Vanilla/Entities/IEntity/)                     |
+| isAIDisabled        | isAIDisabled  | bool                                                      |
+| isAIDisabled        | isAIDisabled  | bool                                                      |
+| isColliding         |               | bool                                                      |
+| isLeashed           |               | bool                                                      |
+| isLeftHanded        | isLeftHanded  | bool                                                      |
+| isNoDespawnRequired |               | bool                                                      |
+| maxSpawnedInChunk   |               | int                                                       |
+|                     | moveForward   | float                                                     |
+|                     | moveStrafing  | float                                                     |
+|                     | moveVertival  | float                                                     |
+| renderSizeModifier  |               | float                                                     |
 
-### ZenMethoden
+### ZenMethods
 
-#### Lebenden Ton abspielen
+#### Play living sound
 
-Benötigt keine Parameter.  
-gibt nichts zurück.
+Requires no parameters.  
+Returns nothing.
 
 ```zenscript
 ebtLiv.playLivingSound();
 ```
 
-#### Erschaffe Explosionspartikel
+#### Spawn explosion particles
 
-Benötigt keine Parameter.  
-gibt nichts zurück.
+Requires no parameters.  
+Returns nothing.
 
 ```zenscript
 ebtLiv.spawnExplosionParticle();
 ```
 
-#### Setze die Drop-Chance für einen Ausrüstungsfeld
+#### Set the drop chance for an Equipment Slot
 
-Benötigt ein [IEntityEquipmentSlot](/Vanilla/Entities/IEntityEquipmentSlot/) Objekt und einen Float.  
-Gibt nichts zurück.
-
-```zenscript
-ebtLiv.setDropChance(IEntityEquipmentSlot Slot, Float Chance);
-```
-
-#### Persistenz aktivieren
-
-Benötigt keine Parameter.  
-gibt nichts zurück.
+Requires an [IEntityEquipmentSlot](/Vanilla/Entities/IEntityEquipmentSlot/) object and a float.  
+Returns nothing.
 
 ```zenscript
-ebtLiv.enablePersistenz();
+ebtLiv.setDropChance(IEntityEquipmentSlot slot, float chance);
 ```
 
-#### Leine
+#### Enable Persistence
 
-Die erste Methode erfordert ein [IEntity](/Vanilla/Entities/IEntity/) Objekt, ein boolesches Objekt und gibt nichts zurück. Die zweite Methode benötigt zwei Booleans und gibt nichts zurück.  
-Die dritte Methode erfordert ein [IPlayer](/Vanilla/Players/IPlayer/) Objekt und gibt ein Bool zurück.
+Requires no parameters.  
+Returns nothing.
+
+```zenscript
+ebtLiv.enablePersistence();
+```
+
+#### Lashes
+
+First method requires an [IEntity](/Vanilla/Entities/IEntity/) object, a boolean and returns nothing. Second method requires two booleans and returns nothing.  
+Third method requires an [IPlayer](/Vanilla/Players/IPlayer/) object and returns a bool.
 
 ```zenscript
 ebtLiv.setLeashedToEntity(IEntity enttiy, boolean sendAttachNotification);
 ebtLiv.clearLeashed(boolean sendPacket, boolean dropLead);
-ebtLiv.canBeLeashedTo(IPlayer Player);
+ebtLiv.canBeLeashedTo(IPlayer player);
 ```
