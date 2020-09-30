@@ -8,63 +8,63 @@
 crafttweaker.api.world.MCBiome
 ```
 
-## Методы
+## Methods
 ### getSpawns
 
-Возвращает список <[crafttweaker.api.world.MCBiomeSpawnEntry](/vanilla/api/world/MCBiomeSpawnEntry)>
+Returns List<[crafttweaker.api.world.MCBiomeSpawnEntry](/vanilla/api/world/MCBiomeSpawnEntry)>
 
 ```zenscript
-myMCBiome.getSpawns(классификация как crafttweaker.api.entity.MCEntityClassification);
+myMCBiome.getSpawns(classification as crafttweaker.api.entity.MCEntityClassification);
 ```
 
-| Параметр      | Тип                                                                                            | Описание             |
-| ------------- | ---------------------------------------------------------------------------------------------- | -------------------- |
-| классификация | [crafttweaker.api.entity.MCEntityClassification](/vanilla/api/entities/MCEntityClassification) | Описание отсутствует |
+| Параметр       | Тип                                                                                            | Описание             |
+| -------------- | ---------------------------------------------------------------------------------------------- | -------------------- |
+| classification | [crafttweaker.api.entity.MCEntityClassification](/vanilla/api/entities/MCEntityClassification) | Описание отсутствует |
 
 
-### getTempКатегория
+### getTempCategory
 
-Возвращает строку
+Returns String
 
 ```zenscript
 myMCBiome.getTempCategory();
 ```
 
-### Геотерапия
+### getTemperature
 
-Возвращает с плавающей точкой
+Returns float
 
 ```zenscript
 myMCBiome.getTemperature(pos as crafttweaker.api.util.BlockPos);
 ```
 
-| Параметр | Тип                                                          | Описание             |
+| Параметр | Тип                                                          | Description          |
 | -------- | ------------------------------------------------------------ | -------------------- |
-| пос      | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | Описание отсутствует |
+| pos      | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | Описание отсутствует |
 
 
 
 ## Свойства
 
-| Название                 | Тип     | Имеет Getter | Имеет Setter |
-| ------------------------ | ------- | ------------ | ------------ |
-| категория                | String  | true         | false        |
-| температура по умолчанию | float   | true         | false        |
-| глубина                  | float   | true         | false        |
-| не Дождь                 | boolean | true         | false        |
-| не снег                  | boolean | true         | false        |
-| понижение                | float   | true         | false        |
-| Высокая влажность        | boolean | true         | false        |
-| исмутация                | boolean | true         | false        |
-| истепморд                | boolean | true         | false        |
-| ИстемСредний             | boolean | true         | false        |
-| isTempOcean              | boolean | true         | false        |
-| isTempWarm               | boolean | true         | false        |
-| родитель                 | String  | true         | false        |
-| тип дождя                | String  | true         | false        |
-| шкала                    | float   | true         | false        |
-| spawningChange           | float   | true         | false        |
-| translationKey           | String  | true         | false        |
-| водяной цвет             | int     | true         | false        |
-| водяный цвет             | int     | true         | false        |
+| Название           | Тип     | Имеет Getter | Имеет Setter |
+| ------------------ | ------- | ------------ | ------------ |
+| category           | String  | true         | false        |
+| defaultTemperature | float   | true         | false        |
+| depth              | float   | true         | false        |
+| doesRain           | boolean | true         | false        |
+| doesSnow           | boolean | true         | false        |
+| downfall           | float   | true         | false        |
+| isHighHumidity     | boolean | true         | false        |
+| isMutation         | boolean | true         | false        |
+| isTempCold         | boolean | true         | false        |
+| isTempMedium       | boolean | true         | false        |
+| isTempOcean        | boolean | true         | false        |
+| isTempWarm         | boolean | true         | false        |
+| parent             | String  | true         | false        |
+| rainType           | String  | true         | false        |
+| scale              | float   | true         | false        |
+| spawningChange     | float   | true         | false        |
+| translationKey     | String  | true         | false        |
+| waterColor         | int     | true         | false        |
+| waterFogColor      | int     | true         | false        |
 
