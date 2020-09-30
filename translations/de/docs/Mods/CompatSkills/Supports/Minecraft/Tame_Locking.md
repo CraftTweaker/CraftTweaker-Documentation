@@ -1,15 +1,15 @@
-# Zähmendes Sperren
+# Taming Locking
 
-## Tier-Sperre
+## Animal-Tame Locking
 
-Mit dieser Funktion können Sie bestimmte Entitäten um Anforderungssperren ergänzen.
+This feature allows for you to add requirement locks to taming specific entities.
 
 ### Syntax
 
-[Link zur IEntityDefinition](/Vanilla/Entities/IEntityDefinition/)
+[Link to IEntityDefinition](/Vanilla/Entities/IEntityDefinition/)
 
-    # Leeres Beispiel:
-    mods.compatskills.AnimalTameLock.addTameLock(IEntityDefinition Definition, String... defaultRequirements);
+    # Blank Example:
+    mods.compatskills.AnimalTameLock.addTameLock(IEntityDefinition definition, String... defaultRequirements);
     
-    # Arbeitsbeispiel:
+    # Working Example:
     mods.compatskills.AnimalTameLock.addTameLock(<entity:minecraft:wolf>, "reskillable:mining|5", "reskillable:magic|7");
