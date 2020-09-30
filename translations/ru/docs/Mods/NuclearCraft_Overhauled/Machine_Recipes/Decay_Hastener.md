@@ -1,16 +1,16 @@
 # Decay Hastener
 
-## Импортирование пакета
-`mods.nuclearcraft.Рекайшитель`
+## Importing the Package
+`mods.nuclearcraft.DecayHastener`
 
-## Добавление рецептов
+## Adding Recipes
 ```zenscript
 mods.nuclearcraft.DecayHastener.addRecipe(IIngredient itemInput, IIngredient itemOutput, @Optional double timeMultiplier, @Optional double powerMultiplier, @Optional double processRadiation);
 ```
 
-## Удаление рецептов
+## Removing Recipes
 ```zenscript
-mods.nuclearcraft.DecayHastener.removeRecipeWithInput(Ingredient itemput);
-mods.nuclearcraft.DecayHastener.removeRecipeWithOutput(IIngredient itemput);
-mods.nuclearcraft.• декайHastener.removeAllRecipes();
+mods.nuclearcraft.DecayHastener.removeRecipeWithInput(IIngredient itemInput);
+mods.nuclearcraft.DecayHastener.removeRecipeWithOutput(IIngredient itemOutput);
+mods.nuclearcraft.DecayHastener.removeAllRecipes();
 ```
