@@ -1,16 +1,16 @@
 # DataMap
 
-Карта, иногда называемая также ассоциативным массивом, представляет собой структуру данных, которая позволяет хранить несколько элементов.  
-Однако в отличие от массива вы также можете дать каждому из этих элементов ключ, который нужно вызвать.  
-DataMap расширяет [IData](/Vanilla/Data/IData/), поэтому каждая DataMap IData, возможно, вам нужна эта информация позже.
+A Map, sometimes also called an Associative Array is a data structure that allows you to store multiple items.  
+Unlike an Array however, you can also give each of these item a key to call upon.  
+The DataMap expands [IData](/Vanilla/Data/IData/), so each DataMap is IData, you might need this info later.
 
 ## Создание карты:
 
-Карта - особый вид [IData](/Vanilla/Data/IData/), так что наконец-то вам нужно импортировать этот интерфейс:  
-`импортировать rafttweaker. ata.IData;`
+A Map is a special kind of [IData](/Vanilla/Data/IData/), so at the very last you'll need to import that interface:  
+`import crafttweaker.data.IData;`
 
-Вы могли заметить, что ни один тип не может быть преобразован в карту (не может быть преобразован в любой тип помимо строк), так что должен быть другой способ их создания!  
-Тут:
+You may have noticed that no type can be converted into a map (nor can map be converted to any type besides Strings), so there has to be another way of creating them!  
+There is:
 
 ```zenscript
 import crafttweaker.data.IData;
@@ -20,32 +20,32 @@ val myFirstMap = {key1: "value1",
                   key3: 3} as IData;
 ```
 
-Запомните:  
-Карты обрабатываются как `Карта<String,IData>`!  
-Это означает, что ваши ключи не должны содержать символы, которые не могут обрабатывать обычные CT строки.  
-Это также означает, что в то время как ключ является строкой, значение является другим [IData](/Vanilla/Data/IData/) объектом.  
-Вы можете даже гнездо карт внутри карты (это делает много NBT-данных):
+The thing to remember is:  
+Maps are handled as `Map<String,IData>`!  
+That means your keys should not contain characters that normal CT strings can't handle.  
+It also means that while the key is a string, the value is another [IData](/Vanilla/Data/IData/) object.  
+You can even nest maps inside maps (that's what a lot of NBT-Data do):
 
 ```zenscript
 val nestedMap = { key1: 
                     {
-                        key1: "Привет"
+                        key1: "hello"
                     }
-                } как IData;
+                } as IData;
 ```
 
-## Получение участников
+## Retrieving Members
 
-К сожалению, карты, созданные как выше, неизменяемы, поэтому вы не можете изменить своих членов.  
-Для получения карты вам нужно знать ее имя ключа. Тогда вы можете сделать это:
+Unfortunately, Maps created as above are immutable, so you cannot change their members.  
+To retrieve a Map's member you need to know its key name. Then you can do this:
 
 ```zenscript
 val mySecondMap = {key1: "value1",
-                   ключ 2: "value2",
-                   ключ3: 3} как IData;
+                   key2: "value2",
+                   key3: 3} as IData;
 
-//Возвращает участника "key1"
-var k1 = mySecondMap. ey1 как IData;
+//Retrieves the member called "key1"
+var k1 = mySecondMap.key1 as IData;
 print(k1.asString());
 
 //Retrieves the member called "key2"
@@ -53,14 +53,14 @@ var k2 = mySecondMap.memberGet("key2") as IData;
 print(k2.asString());
 ```
 
-## Изменение карт
+## Modifying maps
 
-Вы можете добавлять или подстрактные карты друг от друга, чтобы получить новую карту с измененными значениями.  
-Это даже работает для вложенных карт!
+You can add or substract maps from each other to get a new map with changed values.  
+This even works for nested maps!
 
 ```zenscript
 val map1 as IData = {
-    key1 : "Привет"
+    key1 : "hello"
     key3 : "test"
 };
 
@@ -69,21 +69,21 @@ val map2 as IData = {
     key3 : "override"
 };
 
-print((map1 + map2). sString()); //Вывод {key1 : "Привет", key2 : "bye", key3 : "override"}
+print((map1 + map2).asString()); //Prints {key1 : "hello", key2 : "bye", key3 : "override"}
 
 
 
 val map3 as IData = {
-    key1 : "два",
-    key2 : "два",
+    key1 : "two",
+    key2 : "two",
     key3 : "three"
 };
 
-print(map3 - "key1"). sString()); //Выводит {key2 : "two", key3 : "three"}
+print((map3 - "key1").asString()); //Prints {key2 : "two", key3 : "three"}
 
 val map4 as IData = {
     key3 : "anything"
 };
 
-print(map3 - map4). sString()); //Вывод {key1 : "two", key2 : "two"}
+print((map3 - map4).asString()); //Prints {key1 : "two", key2 : "two"}
 ```
