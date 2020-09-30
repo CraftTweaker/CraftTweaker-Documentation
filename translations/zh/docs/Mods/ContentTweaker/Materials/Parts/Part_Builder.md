@@ -1,71 +1,71 @@
-# 部件生成器
+# Part Builder
 
-如果你想要构建一个 [部件](/Mods/ContentTweaker/Materials/Parts/Part/), 你将需要一个零件生成器！  
-这个声音不是硬的，是吗？
+If you want to build a [Part](/Mods/ContentTweaker/Materials/Parts/Part/), you will need a Part Builder!  
+Doesn't sound that hard, does it?
 
 ## 导入相关包
 
-如果您遇到任何问题，可能需要导入软件包，所以比抱歉更安全并添加导入。  
-`导入 mods.contenttweiner.Partner Builder；`
+It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
+`import mods.contenttweaker.PartBuilder;`
 
-## 正在获取此对象
+## Retrieving such an object
 
-您可以使用 [材料系统包](/Mods/ContentTweaker/Materials/MaterialSystem/) 检索一个新的、清晰的构建器：
-
-```zenscript
-var pBuilder = mods.contenttweeper.MaterialSystem.getPartner Builder();
-```
-
-## 设置零件属性
-
-您可以设置这些属性
-
-| ZenMethod（ZenMethod）          | 参数                                                                  |
-| ----------------------------- | ------------------------------------------------------------------- |
-| setHasOverlay(hasOverlay)     | boolean hasOverlay                                                  |
-| 设置名称(名称)                      | 字符串名称                                                               |
-| setPartType(partType)         | [PartType](/Mods/ContentTweaker/Materials/Parts/PartType/) partType |
-| setOreDictName(prefix)        | 字符串前缀                                                               |
-| setAdditionalOreDictNames(前缀) | 字符串... prefixes                                                     |
-
-所有这些方法都有两件事：第一，它们改变了建筑商的财产，第二，它们归还了经过修改的建筑商。  
-您可以在下面的示例脚本中看到这意味着什么。
-
-## 实际构建材料
-
-在你可以构建你的材料之前，你需要构建它：
+You can retrieve a new, clear Builder using the [MaterialSystem Package](/Mods/ContentTweaker/Materials/MaterialSystem/):
 
 ```zenscript
-Builder.build();
+var pBuilder = mods.contenttweaker.MaterialSystem.getPartBuilder();
 ```
 
-这返回 [部分](/Mods/ContentTweaker/Materials/Parts/Part/) 对象。
+## Set the Part's Properties
+
+You can set these Properties
+
+| ZenMethod                           | 参数                                                                  |
+| ----------------------------------- | ------------------------------------------------------------------- |
+| setHasOverlay(hasOverlay)           | boolean hasOverlay                                                  |
+| setName(name)                       | string name                                                         |
+| setPartType(partType)               | [PartType](/Mods/ContentTweaker/Materials/Parts/PartType/) partType |
+| setOreDictName(prefix)              | string prefix                                                       |
+| setAdditionalOreDictNames(prefixes) | string... prefixes                                                  |
+
+All these Methods do 2 things: Firstly, they change the builder's Property, secondly they return the modified builder.  
+You can see in the example scripts below what this means.
+
+## Actually build the Material
+
+Before you can build your material, you need to build it:
+
+```zenscript
+pBuilder.build();
+```
+
+This returns an [Part](/Mods/ContentTweaker/Materials/Parts/Part/) Object.
 
 ## 示例脚本
 
 ```zenscript
-var pBuilder = mods.contenttweeper.MaterialSystem.getPartBuilder();
+var pBuilder = mods.contenttweaker.MaterialSystem.getPartBuilder();
 pBuilder.setName("dense_gear");
-pBuilder.setPartType(MaterialSystem.getPartType("item");
+pBuilder.setPartType(MaterialSystem.getPartType("item"));
 var denseGearPart = pBuilder.build();
 
-var denseIngotogotPart = mods.contentiner.MaterialSystem.getPartBuilder().setName("dense_ingot").setPartType(mods.contentbuilder.MaterialSystem.getPartType("item").setOreDictName("supergot").build();
+var denseIngotPart = mods.contenttweaker.MaterialSystem.getPartBuilder().setName("dense_ingot").setPartType(mods.contenttweaker.MaterialSystem.getPartType("item")).setOreDictName("superIngot").build();
 ```
 
-## 值得注意的信息
+## Noteworthy information
 
-### 本地化材料
+### Localizing the MaterialParts
 
-您用您的新配件创建的项目一般将被命名为 `contenttweiner.part 。 艺术名`  
-如果你想要你的项目包含材料名称，你需要本地化它。 最好是在 CoT's 语言文件中，这些文件可以在 `Resources/contenttweiler/lang`找到。  
-替代您写的材料名称 `%s`所以命名上面创建的密度用具的人看起来就像这样：
+The items you create with your new part will generally be named `contenttweaker.part.partname`  
+If you want your item to include the material name, you will need to localize it, preferably in CoT's language files which can be found at `Resources/contenttweaker/lang`.  
+Instead of the material name you write `%s`, so naming the dense gears ans ingots created above would look like this:
 
     contenttweaker.part.dense_gear=Dense %s Gear
-    contenttweaker.part.dense_ingot=Dense %s
+    contenttweaker.part.dense_ingot=Dense %s Ingot
     
 
-### 添加纹理
+### Adding a texture
 
-你用你的新配件创建的物品将会对你有点了解。  
-如果你想要你的配件有一个特定的图标，你需要添加一个 `配件名称。 ng` 文件到 `Resources/contenttweiler/textures/items/items`  
-因此，给一个密集的纹理需要我们添加一个名为 `gear_dense的文件。 ng` 到那个文件夹。
+The items you create with your new part will look a bit edgy to you.  
+If you want your part to have a specific icon you will need to add a `partname.png` file to `Resources/contenttweaker/textures/items`.  
+So, giving the dense gears a texture would require us to add a file called `gear_dense.png` to that folder.
