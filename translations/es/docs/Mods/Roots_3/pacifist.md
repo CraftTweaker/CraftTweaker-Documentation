@@ -1,14 +1,14 @@
-### Clase
+### Class
 
 ```zenscript
-importar mods.roots.► puño;
+import mods.roots.Pacifist;
 ```
 
-#### Métodos
+#### Methods
 
 ```zenscript
 void addEntity(
-  IEntityDefinition entity // la entidad a agregar a la lista de pacifistas
+  IEntityDefinition entity // the entity to add to the pacifist list
 );
 ```
 
@@ -16,20 +16,20 @@ void addEntity(
 
 ```zenscript
 void removeEntity(
-  entidad IEntityDefinition // la entidad a remover de la lista de pacifistas
+  IEntityDefinition entity // the entity to remove from the pacifist list
 );
 ```
 
 * * *
 
-### Ejemplos
+### Examples
 
 ```zenscript
-import mods.roots.ATIS;
+import mods.roots.Pacifist;
 
-// Agrega a un enderman como una criatura pacifista
-apuñalado. ddEntity(<entity:minecraft:enderman>);
+// Adds an enderman as a pacifist creature
+Pacifist.addEntity(<entity:minecraft:enderman>);
 
-// Evita que las vacas desencadenen el efecto pacifismo
-pist.removeEntity(<entity:minecraft:cow>);
+// Prevents cows from triggering the pacifism effect
+Pacifist.removeEntity(<entity:minecraft:cow>);
 ```
