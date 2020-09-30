@@ -1,10 +1,10 @@
-# Polecenie trybu pakietowego
+# Packmode Command
 
-## Dzwonienie
+## Calling
 
-Zadzwonisz polecenie używając `/packmode newMode` z `newMode` jako nazwy nowego trybu pakietu
+You call the Command using `/packmode newMode` with `newMode` being the name of the new packMode
 
-## Użycie
+## Usage
 
-Używasz polecenia, aby ustawić tryb paczki gry.  
-Pamiętaj, że musisz zrestartować grę, aby pojawiły się zmiany!
+You use the command to set your game's packmode.  
+Please note that you will need to restart your game in order for the changes to occur!
