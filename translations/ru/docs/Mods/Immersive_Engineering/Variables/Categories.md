@@ -1,17 +1,17 @@
-# Категории
+# Categories
 
 ## Дополнительная информация
 
-У чертежа есть обязательный параметр строки под названием "Категория". Эта строка позволяет вам «Категоризировать» рецепты в определенную категорию чертежей.
+The Blueprint has a Required String parameter called "Category". This String allows you to "Categorise" your recipes to a specific Blueprint Category.
 
-Если эта строка возвращает категорию еще не существует, она создаст эту категорию и соответствующий чертеж. Если найдет существующую категорию, он добавит рецепт в указанную категорию.
+If this string returns a Category not already existing it'll create that Category and an appropriate Blueprint. If it finds an existing Category it'll add the recipe to said Category.
 
-### Существующие категории
+### Existing Categories
 
-| Категория: | Имя:          | Локализованное имя:        |
-| ---------- | ------------- | -------------------------- |
-| Категория  | компоненты    | Компоненты создания        |
-| Категория  | плесени       | Плитки из металла          |
-| Категория  | пуля          | Обычные снаряды            |
-| Категория  | specialBullet | Специализированные снаряды |
-| Категория  | электрод      | Электроды дуговой печи     |
+| Category: | Name:         | Localized Name:         |
+| --------- | ------------- | ----------------------- |
+| Category  | components    | Crafting Components     |
+| Category  | molds         | Metal Press Molds       |
+| Category  | bullet        | Common Projectiles      |
+| Category  | specialBullet | Specialized Projectiles |
+| Category  | electrode     | Arc Furnace Electrodes  |
