@@ -1,41 +1,41 @@
-# format@@0 IPotionEffect
+# IPotionEffect
 
-Un IPotionEffect est une [IPotion](/Vanilla/Potions/IPotion/) qui a également une durée et un paramètre d'amplificateur (force).  
-Vous pouvez les obtenir à partir d'un objet [IPotion](/Vanilla/Potions/IPotion/).
+An IPotionEffect is an [IPotion](/Vanilla/Potions/IPotion/) that also has a duration and an amplifier (strength) parameter.  
+You can get them from an [IPotion](/Vanilla/Potions/IPotion/) object.
 
-## Importation du paquet
+## Importing the package
 
-Il pourrait vous être nécessaire d'importer le paquet si vous rencontrez des problèmes (comme lancer un [Tableau](/AdvancedFunctions/Arrays_and_Loops/)), alors mieux être sûr que désolé et ajouter l'importation.  
-`importer crafttweaker.potions.IPotionEffect;`
+It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
+`import crafttweaker.potions.IPotionEffect;`
 
 ## ZenGetter
 
-| ZenGetter                                        | Type de texte                                    |
-| ------------------------------------------------ | ------------------------------------------------ |
-| durée                                            | Indice                                           |
-| potion                                           | [format@@0 IPotion](/Vanilla/Potions/IPotion/)   |
-| ne montre pas les particules                     | booléen                                          |
-| amplificateur                                    | Indice                                           |
-| Éléments curatifs                                | Liste <[IItemStack](/Vanilla/Items/IItemStack/)> |
-| effectName                                       | chaîne de caractères                             |
-| isAmbient                                        | booléen                                          |
-| format@@0 isPotionDurationMax (also a ZenSetter) | booléen                                          |
+| ZenGetter                              | Type                                           |
+| -------------------------------------- | ---------------------------------------------- |
+| duration                               | int                                            |
+| potion                                 | [IPotion](/Vanilla/Potions/IPotion/)           |
+| doesShowParticles                      | bool                                           |
+| amplifier                              | int                                            |
+| curativeItems                          | List<[IItemStack](/Vanilla/Items/IItemStack/)> |
+| effectName                             | string                                         |
+| isAmbient                              | bool                                           |
+| isPotionDurationMax (also a ZenSetter) | bool                                           |
 
-## Méthodes Zen
+## ZenMethods
 
-### Est un élément un élément curatif
+### Is an item a curative item
 
-Utilise un [IItemStack](/Vanilla/Items/IItemStack/).  
-Renvoie un booléen
+Uses an [IItemStack](/Vanilla/Items/IItemStack/).  
+Returns a bool
 
 ```zenscript
 isCurativeItem(IItemStack item);
 ```
 
-### Effectuer l'effet sur une entité
+### Perform Effect on an Entity
 
-Utilise une [IEntity](/Vanilla/Entities/IEntity/) ou l'une de ses sous-classes (par exemple [IPlayer](/Vanilla/Players/IPlayer/)).  
-Renvoie vide (rien).
+Uses an [IEntity](/Vanilla/Entities/IEntity/) or any of its subclasses (e.g. [IPlayer](/Vanilla/Players/IPlayer/)).  
+Returns void (nothing).
 
 ```zenscript
 performEffect(IEntity Entity);
