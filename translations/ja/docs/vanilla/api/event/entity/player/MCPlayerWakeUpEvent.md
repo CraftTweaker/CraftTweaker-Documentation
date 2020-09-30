@@ -1,27 +1,27 @@
 # MCPlayerWakeUpEvent
 
-crafttweakerのmod-idを持つmodによって追加されているクラスです。 従って、この機能を利用する場合はこのmodをインストールする必要があります。
+This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
 
-## クラスのインポート
-問題が発生した場合には、インポートが必要になります。とはいえ、お手数ですが予めインポートしておくほうが安全です。
+## Importing the class
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
 ```zenscript
-craftweaker.api.event.entity.player.MCPlayerWakeUpEvent
+crafttweaker.api.event.entity.player.MCPlayerWakeUpEvent
 ```
 
 ## Constructors
 ```zenscript
 new crafttweaker.api.event.entity.player.MCPlayerWakeUpEvent(handler as function.Consumer<crafttweaker.api.event.entity.player.MCPlayerWakeUpEvent>);
 ```
-| パラメータ   | タイプ                                                                                                                                 | 説明           |
-| ------- | ----------------------------------------------------------------------------------------------------------------------------------- | ------------ |
-| handler | function.Consumer<[crafttweaker.api.event.entity.player.MCPlayerWakeUpEvent](/vanilla/api/event/entity/player/MCPlayerWakeUpEvent)> | 説明が提供されていません |
+| Parameter | Type                                                                                                                                | Description             |
+| --------- | ----------------------------------------------------------------------------------------------------------------------------------- | ----------------------- |
+| handler   | function.Consumer<[crafttweaker.api.event.entity.player.MCPlayerWakeUpEvent](/vanilla/api/event/entity/player/MCPlayerWakeUpEvent)> | No description provided |
 
 
 
-## メソッド
+## Methods
 ### getEntityPlayer
 
-戻り値 [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
+Returns [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
 
 ```zenscript
 myMCPlayerWakeUpEvent.getEntityPlayer();
@@ -29,9 +29,9 @@ myMCPlayerWakeUpEvent.getEntityPlayer();
 
 ### getPlayer
 
-戻り値: `プレイヤー`
+Returns: `Player`
 
-戻り値 [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
+Returns [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
 
 ```zenscript
 myMCPlayerWakeUpEvent.getPlayer();
@@ -39,9 +39,9 @@ myMCPlayerWakeUpEvent.getPlayer();
 
 ### hasResult
 
-このイベントが重要な結果値を期待するかどうかを決定します。 注: HasResult アノテーションを持つイベントでは、true を返すためにこのメソッドが自動的に追加されます。
+Determines if this event expects a significant result value. Note: Events with the HasResult annotation will have this method automatically added to return true.
 
-戻り値ブール値
+Returns boolean
 
 ```zenscript
 myMCPlayerWakeUpEvent.hasResult();
@@ -49,11 +49,11 @@ myMCPlayerWakeUpEvent.hasResult();
 
 ### isCancelable
 
-この関数がキャンセル可能かどうかを判断します。 Returns: `If access to setCanceled should be allowed
+Determine if this function is cancelable at all. Returns: `If access to setCanceled should be allowed
  Note:
  Events with the Cancelable annotation will have this method automatically added to return true.`
 
-戻り値ブール値
+Returns boolean
 
 ```zenscript
 myMCPlayerWakeUpEvent.isCancelable();
@@ -61,9 +61,9 @@ myMCPlayerWakeUpEvent.isCancelable();
 
 ### isCanceled
 
-このイベントがキャンセルされ、実行を停止するかどうかを決定します。 戻り値: `現在の状態がキャンセルされました`
+Determine if this event is canceled and should stop executing. Returns: `The current canceled state`
 
-戻り値ブール値
+Returns boolean
 
 ```zenscript
 myMCPlayerWakeUpEvent.isCanceled();
@@ -75,16 +75,16 @@ myMCPlayerWakeUpEvent.isCanceled();
 myMCPlayerWakeUpEvent.setCanceled(cancel as boolean);
 ```
 
-| パラメータ | タイプ      | 説明           |
-| ----- | -------- | ------------ |
-| キャンセル | boolean型 | 説明が提供されていません |
+| Parameter | Type     | Description             |
+| --------- | -------- | ----------------------- |
+| cancel    | boolean型 | No description provided |
 
 
 ### shouldSetSpawn
 
-プレイヤーの睡眠が成功したと見なされたかどうかを示します。 バニラでは、スポーンチャンクをベッドの位置に設定するかどうかを決定するために使用されます。
+Indicates if the player's sleep was considered successful. In vanilla, this is used to determine if the spawn chunk is to be set to the bed's position.
 
-戻り値ブール値
+Returns boolean
 
 ```zenscript
 myMCPlayerWakeUpEvent.shouldSetSpawn();
@@ -92,19 +92,19 @@ myMCPlayerWakeUpEvent.shouldSetSpawn();
 
 ### updateWorld
 
-スリープ状態の変更を通知するかどうかを示します。 サーバーが既に「最新の状態」と見なされている場合にのみ、これは偽になります。たとえば、呼び出しが開始された場合などです。
+Indicates if the server should be notified of sleeping changes. This will only be false if the server is considered 'up to date' already, because, for example, it initiated the call.
 
-戻り値ブール値
+Returns boolean
 
 ```zenscript
 myMCPlayerWakeUpEvent.updateWorld();
 ```
 
-### WakeImmediately
+### wakeImmediately
 
-「スリープ解除」アニメーションに使用されます。 これは、プレイヤーが「眠い」と見なされ、オーバーレイがゆっくりと消える必要がある場合に偽です。
+Used for the 'wake up animation'. This is false if the player is considered 'sleepy' and the overlay should slowly fade away.
 
-戻り値ブール値
+Returns boolean
 
 ```zenscript
 myMCPlayerWakeUpEvent.wakeImmediately();
