@@ -1,15 +1,15 @@
 - Vanilla:
     - Api:
       - BracketHandlers: 'vanilla/api/BracketHandlers.md'
-      - Bloqueo:
-        - material:
+      - Block:
+        - Material:
           - MCMaterial: 'vanilla/api/block/material/MCMaterial.md'
-      - Bloques:
+      - Blocks:
         - MCBlock: 'vanilla/api/blocks/MCBlock.md'
         - MCBlockState: 'vanilla/api/blocks/MCBlockState.md'
       - Brackets:
         - CommandStringDisplayable: 'vanilla/api/brackets/CommandStringDisplayable.md'
-      - Comandos:
+      - Commands:
         - Personalizado:
           - Comandos personalizados: 'vanilla/api/commands/custom/CustomCommands.md'
           - MCAmbiguityConsumer: 'vanilla/api/commands/custom/MCAmbiguityConsumer.md'
@@ -38,10 +38,10 @@
           - MCSuggestionProvider: 'vanilla/api/commands/custom/MCSuggestionProvider.md'
           - MCSuggestions: 'vanilla/api/commands/custom/MCSuggestions.md'
           - MCSuggestionsBuilder: 'vanilla/api/commands/custom/MCSuggestionsBuilder.md'
-      - Datos:
+      - Data:
         - ByteArrayData: 'vanilla/api/data/ByteArrayData.md'
         - ByteData: 'vanilla/api/data/ByteData.md'
-        - DobleData: 'vanilla/api/data/DoubleData.md'
+        - DoubleData: 'vanilla/api/data/DoubleData.md'
         - FloatData: 'vanilla/api/data/FloatData.md'
         - ICollectionData: 'vanilla/api/data/ICollectionData.md'
         - IData: 'vanilla/api/data/IData.md'
@@ -54,15 +54,15 @@
         - MapData: 'vanilla/api/data/MapData.md'
         - ShortData: 'vanilla/api/data/ShortData.md'
         - StringData: 'vanilla/api/data/StringData.md'
-      - Entidades:
+      - Entities:
         - MCEntityClassification: 'vanilla/api/entities/MCEntityClassification.md'
         - MCEntityType: 'vanilla/api/entities/MCEntityType.md'
       - Fluido:
         - IFluidStack: 'vanilla/api/fluid/IFluidStack.md'
         - MCFluid: 'vanilla/api/fluid/MCFluid.md'
-      - Comida:
+      - Food:
         - MCFood: 'vanilla/api/food/MCFood.md'
-      - Elementos:
+      - Items:
         - IIngredient: 'vanilla/api/items/IIngredient.md'
         - IIngredientTransformer: 'vanilla/api/items/IIngredientTransformer.md'
         - IIngredientTransformer: 'vanilla/api/items/IIngredientTransformer.md'
@@ -73,47 +73,47 @@
         - MCWeightedItemStack: 'vanilla/api/items/MCWeightedItemStack.md'
       - Logger:
         - ILogger: 'vanilla/api/logger/ILogger.md'
-      - Gestores:
+      - Managers:
         - BlastFurnaceManager: 'vanilla/api/managers/BlastFurnaceManager.md'
         - CampFireManager: 'vanilla/api/managers/CampFireManager.md'
-        - Creación de TableManager: 'vanilla/api/managers/CraftingTableManager.md'
+        - CraftingTableManager: 'vanilla/api/managers/CraftingTableManager.md'
         - FurnaceManager: 'vanilla/api/managers/FurnaceManager.md'
         - ICookingRecipeManager: 'vanilla/api/managers/ICookingRecipeManager.md'
         - IRecipeManager: 'vanilla/api/managers/IRecipeManager.md'
         - SmithingManager: 'vanilla/api/managers/SmithingManager.md'
-        - smokerManager: 'vanilla/api/managers/smokerManager.md'
+        - SmokerManager: 'vanilla/api/managers/SmokerManager.md'
         - StoneCutterManager: 'vanilla/api/managers/StoneCutterManager.md'
       - Mods:
         - ModInfo: 'vanilla/api/mods/ModInfo.md'
         - Mods: 'vanilla/api/mods/Mods.md'
-      - Pociones:
+      - Potions:
         - MCPotion: 'vanilla/api/potions/MCPotion.md'
         - MCPotionEffect: 'vanilla/api/potions/MCPotionEffect.md'
         - MCPotionEffectInstance: 'vanilla/api/potions/MCPotionEffectInstance.md'
-      - Receta:
+      - Recipe:
         - RecipeFilter: 'vanilla/api/recipe/RecipeFilter.md'
         - RecipeFunctionArray: 'vanilla/api/recipe/RecipeFunctionArray.md'
-        - RecipeFunctionMATIx: 'vanilla/api/recipe/RecipeFunctionMcampax.md'
+        - RecipeFunctionMatrix: 'vanilla/api/recipe/RecipeFunctionMatrix.md'
         - RecipeFunctionSingle: 'vanilla/api/recipe/RecipeFunctionSingle.md'
-      - Etiquetas:
+      - Tags:
         - MCTag: 'vanilla/api/tags/MCTag.md'
       - Util:
         - BlockPos: 'vanilla/api/util/BlockPos.md'
-        - Dirección: 'vanilla/api/util/Direction.md'
+        - Direction: 'vanilla/api/util/Direction.md'
         - DirectionAxis: 'vanilla/api/util/DirectionAxis.md'
         - MCResourceLocation: 'vanilla/api/util/MCResourceLocation.md'
         - Texto:
           - MCStyle: 'vanilla/api/util/text/MCStyle.md'
           - MCTextComponent: 'vanilla/api/util/text/MCTextComponent.md'
-      - Mundo:
+      - World:
         - MCBiome: 'vanilla/api/world/MCBiome.md'
 
 - Crafttweaker:
     - Api:
-      - Elemento:
+      - Item:
         - Sugerencia:
           - ITooltipFunction: 'crafttweaker/api/item/tooltip/ITooltipFunction.md'
-      - Recetas:
+      - Recipes:
         - Receta de envoltorio: 'crafttweaker/api/recipes/WrapperRecipe.md'
       - Texto:
         - TextFormatting: 'crafttweaker/api/text/TextFormatting.md'
