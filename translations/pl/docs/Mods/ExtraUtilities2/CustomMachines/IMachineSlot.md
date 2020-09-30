@@ -1,65 +1,65 @@
 # IMachineSlot
 
-Miejsce na maszynę to miejsce, które przyjmuje przedmioty lub płyny.  
-Potrzebujesz ich podczas tworzenia maszyny za pomocą [Rejestru IMachineRegistry](/Mods/ExtraUtilities2/CustomMachines/IMachineRegistry) później.
+A Machine slot is a slot that either accepts Items or liquids.  
+You need them when creating a machine using the [IMachineRegistry](/Mods/ExtraUtilities2/CustomMachines/IMachineRegistry) later on.
 
-## Importowanie pakietu
+## Importing the package
 
-Jeśli chcesz skrócić połączenia metodowe lub napotkać jakiekolwiek problemy, musisz [zaimportować pakiet](/AdvancedFunctions/Import) .  
-Możesz to zrobić używając
-
-```zenscript
-importowanie ekstruzji2.Tweaker.IMachineSlot;
-```
-
-## Tworzenie nowego IMachineSlot
-
-Pakiet IMachineSlot oferuje metody tworzenia nowych obiektów IMachineSlot:
+If you want to shorten method calls or encounter any issues you might need to [import](/AdvancedFunctions/Import) the package.  
+You can do so using
 
 ```zenscript
-ekstrautilities2.Tweaker.IMachineSlot.newItemStackSlot(nazwa);
-ekstrautilities2.Tweaker.IMachineSlot.newItemStackSlot(nazwa, izOpcjonalna);
-ekstraulities2.Tweaker.IMachineSlot.newItemStackSlot(nazwa, stackCapacity);
-ekstraulities2.Tweaker.IMachineSlot.newItemStackSlot(nazwa, izOpcjonalna, stackCapacity);
-ekstrautilities2.Tweaker.IMachineSlot. ewItemStackSlot(nazwa, kolor, izOpcjonalne, tła tekstura, stackCapacity);
-
-
-newFluidSlot(nazwa);
-newFluidSlot(nazwa, stackCapacity);
-newFluidSlot(nazwa, stackCapacity, filterLiquidStack);
-newFluidSlot(nazwa, stackCapacity, isOpcjonalne, filterLiquidStack);
-newFluidSlot(nazwa, stackCapacity, color, isOpcjonalne, filterLiquidStack);
+import extrautilities2.Tweaker.IMachineSlot;
 ```
 
-Wszystkie te metody zwrócą nowy Slot jako obiekt IMachineSlot.
+## Creating a new IMachineSlot
 
-Parametry są następujące:
+The IMachineSlot package offers methods to create new IMachineSlot objects:
 
-| Nazwisko          | Typ                                           |
+```zenscript
+extrautilities2.Tweaker.IMachineSlot.newItemStackSlot(name);
+extrautilities2.Tweaker.IMachineSlot.newItemStackSlot(name, isOptional);
+extrautilities2.Tweaker.IMachineSlot.newItemStackSlot(name, stackCapacity);
+extrautilities2.Tweaker.IMachineSlot.newItemStackSlot(name, isOptional, stackCapacity);
+extrautilities2.Tweaker.IMachineSlot.newItemStackSlot(name, color, isOptional, backgroundTexture, stackCapacity);
+
+
+newFluidSlot(name);
+newFluidSlot(name, stackCapacity);
+newFluidSlot(name, stackCapacity, filterLiquidStack);
+newFluidSlot(name, stackCapacity, isOptional, filterLiquidStack);
+newFluidSlot(name, stackCapacity, color, isOptional, filterLiquidStack);
+```
+
+All these methods will return the new Slot as IMachineSlot object.
+
+The parameters are:
+
+| Name              | Type                                          |
 | ----------------- | --------------------------------------------- |
-| Nazwa             | ciąg znaków                                   |
-| Opcjonalnie       | bool                                          |
-| pojemność stosu   | odcień                                        |
-| kolor             | odcień                                        |
-| Teksttła          | ciąg znaków                                   |
+| name              | string                                        |
+| isOptional        | bool                                          |
+| stackCapacity     | int                                           |
+| color             | int                                           |
+| backgroundTexture | string                                        |
 | filterLiquidStack | [ILiquidStack](/Vanilla/Liquids/ILiquidStack) |
 
-Co robią:
+What the parameters do:
 
-- `name`: Nazwa slotu. Używane do przepisów później. Upewnij się, że maszyna nie ma 2 gniazda o tej samej nazwie.
-- `jest Opcjonalny`: Wskazuje, czy to miejsce musi być wypełnione w celu rozpoczęcia kontroli receptury.
-- `Pojemność stosu`: Ile elementów/milibucketów może zmieścić się w tym slocie?
-- `kolor`: Jaki kolor będzie miał slot?
-- `BackgroundTexture`: niestandardowa ścieżka tekstury dla tła tego gniazda może być dodana tutaj.
-- `filterLiquidStack`: Jeśli dostarczysz ten obiekt [ILiquidStack](/Vanilla/Liquids/ILiquidStack) wtedy tylko ten płyn będzie mógł wejść do gniazda.
+- `name`: The slot's name. Used for recipes later. Make sure that a machine has no 2 slots with the same name.
+- `isOptional`: Dictates whether or not this slot must be filled for recipe checks to commence.
+- `stackCapacity`: How many items/millibuckets can fit in this slot?
+- `color`: What color will the slot have?
+- `backgroundTexture`: A custom texture path for the background of this slot can be added here.
+- `filterLiquidStack`: If you provide this [ILiquidStack](/Vanilla/Liquids/ILiquidStack) object, then only this fluid will be allowed to enter the slot.
 
-## Kettery
+## Getters
 
-Podstawowe informacje można uzyskać również z IMachineSlotu.  
-Nie spodziewaj się, że podczas tworzenia tego gniazda te magicznie zwracają coś innego niż to, co ustawiłeś.
+You can get basic information from an IMachineSlot as well.  
+Don't expect these getters to magically return something different from what you set the slot when creating it, though.
 
-| Nazwisko        | Typ         |
-| --------------- | ----------- |
-| Nazwa           | ciąg znaków |
-| fakultatywne    | bool        |
-| pojemność stosu | odcień      |
+| Name          | Type   |
+| ------------- | ------ |
+| name          | string |
+| optional      | bool   |
+| stackCapacity | int    |
