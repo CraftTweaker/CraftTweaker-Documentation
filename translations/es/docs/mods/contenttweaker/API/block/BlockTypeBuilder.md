@@ -1,32 +1,32 @@
 # BlockTypeBuilder
 
-Denota un constructor especial que se utiliza para construir bloques especiales. Utilizado en [mods.contenttweaker.block.BlockTypeBuilder#withType](/mods/contenttweaker/API/block/BlockTypeBuilder/#withtype)
+Denotes a special builder that is used for building special block types. Utilizado en [mods.contenttweaker.block.BlockTypeBuilder#withType](/mods/contenttweaker/API/block/BlockTypeBuilder/#withtype)
 
-Esta clase fue añadida por un mod con mod-id `contenttweaker`. Necesitas tener este mod instalado si quieres usar esta caracteristica.
+This class was added by a mod with mod-id `contenttweaker`. So you need to have this mod installed if you want to use this feature.
 
-## Importar la clase
-Puede ser requerido que importes el paquete si encuentras algun problema (como crear un Array).
+## Importing the class
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
 ```zenscript
 mods.contenttweaker.block.BlockTypeBuilder
 ```
 
-## Interfaces implementadas
-BlockTypeBuilder implementa las siguientes interfaces. Esto significa que cualquier método disponible también puede ser usado en esta clase.
+## Implemented Interfaces
+BlockTypeBuilder implements the following interfaces. That means any method available to them can also be used on this class.
 - [mods.contenttweaker.api.IIsBuilder](/mods/contenttweaker/API/api/IIsBuilder)
 
-## Métodos
-### construir
+## Methods
+### build
 
-Instruye CoT para construir lo que se supone que este constructor está construyendo.
+Instructs CoT to actually build whatever this builder is supposed to be building.
 
 ```zenscript
 new BlockBuilder().withType<BlockBuilderBasic>().build(resourceLocation as String);
 new BlockBuilder().withType<BlockBuilderBasic>().build("my_awesome_block");
 ```
 
-| Parámetro            | Tipo   | Descripción                              |
-| -------------------- | ------ | ---------------------------------------- |
-| ubicacin del recurso | Cadena | La ruta de recursos para dar este bloque |
+| Parameter        | Type   | Description                          |
+| ---------------- | ------ | ------------------------------------ |
+| resourceLocation | String | The resource path to give this block |
 
 
 
