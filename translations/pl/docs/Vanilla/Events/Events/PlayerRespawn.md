@@ -1,24 +1,24 @@
-# Odnowienie gracza
+# PlayerRespawn
 
-Wydarzenie PlayerRespawn jest uruchamiane za każdym razem, gdy gracz odrodzi się.
+The PlayerRespawn Event is fired whenever a player respawns.
 
-## Klasa wydarzenia
+## Event Class
 
-Musisz aktywować wydarzenie w nagłówku funkcji jako klasa:  
-`crafttweaker.event. layerRespawnEvent`  
-Oczywiście możesz również [zaimportować](/AdvancedFunctions/Import/) klasę przed i wtedy użyć tej nazwy.
+You will need to cast the event in the function header as this class:  
+`crafttweaker.event.PlayerRespawnEvent`  
+You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
 
-## Rozszerzenia interfejsu zdarzenia
+## Event interface extensions
 
-Zdarzenia PlayerRespawn zaimplementują następujące interfejsy i są w stanie wywołać wszystkie swoje metody/getters/setters:
+PlayerRespawn Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
 
-- [Wydarzenie IPlayer](/Vanilla/Events/Events/IPlayerEvent/)
+- [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
 
 ## ZenGetters
 
-Z wydarzenia można uzyskać następujące informacje:
+The following information can be retrieved from the event:
 
-| ZenGetter        | Typ zwrotu                                              |
-| ---------------- | ------------------------------------------------------- |
-| `gracz`          | [IPlayer](/Vanilla/Players/IPlayer/)                    |
-| `isEndConquered` | bool (stany jeśli odrodzenie jest spowodowane portalem) |
+| ZenGetter        | Return Type                                               |
+| ---------------- | --------------------------------------------------------- |
+| `player`         | [IPlayer](/Vanilla/Players/IPlayer/)                      |
+| `isEndConquered` | bool (states if the respawn is because of the end portal) |
