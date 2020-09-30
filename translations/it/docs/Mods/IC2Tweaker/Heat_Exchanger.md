@@ -1,33 +1,33 @@
-# Scambiatore Di Calore
+# Heat Exchanger
 
-## Pacchetto
+## Package
 
 `import mods.ic2.HeatExchanger;`
 
-## Metodi
+## Methods
 
-- **[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) output** Il liquido dopo che è stato riscaldato su/raffreddato
-- **[Ingresso ILiquidStack](/Vanilla/Liquids/ILiquidStack/)** Il liquido prima di essere riscaldato / raffreddato
+- **[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) output** The liquid after it's been heated up/cooled down
+- **[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) input** The liquid before it's been heated up/cooled down
 - **int heat** The heat required to heat the fluid or gained by cooling it down
 
-In alternativa puoi usare gli oggetti [ILiquidDefinition](/Vanilla/Liquids/ILiquidDefinition) invece degli oggetti [ILiquidStack](/Vanilla/Liquids/ILiquidStack/).
+Alternatively you can use [ILiquidDefinition](/Vanilla/Liquids/ILiquidDefinition) objects instead of the [ILiquidStack](/Vanilla/Liquids/ILiquidStack/) objects.
 
-## Aggiungi Fluido Freddo Giù
+## Add Fluid Cool Down
 
 ```zenscript
 mods.ic2.HeatExchanger.addFluidCoolDown(ILiquidStack output, ILiquidStack input, int heat);
 mods.ic2.HeatExchanger.addFluidCoolDown(ILiquidDefinition output, ILiquidDefinition input, int heat);
 
-mods. c2.HeatExchanger.addFluidCoolDown(<liquid:lava>, <liquid:water>, 10);
+mods.ic2.HeatExchanger.addFluidCoolDown(<liquid:lava>, <liquid:water>, 10);
 mods.ic2.HeatExchanger.addFluidCoolDown(<liquid:lava>.definition, <liquid:water>.definition, 10);
 ```
 
-## Aggiungi Riscaldamento Fluido Su
+## Add Fluid Heat Up
 
 ```zenscript
 mods.ic2.HeatExchanger.addFluidHeatUp(ILiquidStack output, ILiquidStack input, int heat);
 mods.ic2.HeatExchanger.addFluidHeatUp(ILiquidDefinition output, ILiquidDefinition input, int heat);
 
-mods. c2.HeatExchanger.addFluidHeatUp(<liquid:lava>, <liquid:water>, 10);
+mods.ic2.HeatExchanger.addFluidHeatUp(<liquid:lava>, <liquid:water>, 10);
 mods.ic2.HeatExchanger.addFluidHeatUp(<liquid:lava>.definition, <liquid:water>.definition, 10);
 ```
