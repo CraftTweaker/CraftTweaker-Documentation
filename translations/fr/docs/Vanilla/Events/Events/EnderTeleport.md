@@ -1,28 +1,28 @@
-# Téléportation de l'Ender
+# EnderTeleport
 
-L'événement EnderTeleport est lancé chaque fois qu'un enderman ou un shulker se téléporte.  
-Il est également tiré chaque fois qu'un joueur se téléporte en utilisant une enderpearl (il est possible que d'autres mods allument également cet événement.)
+The EnderTeleport event is fired whenever an enderman or shulker teleport.  
+It is also fired whenever a player teleports using an enderpearl (it is possible that other mods fire this event as well.)
 
-## Classe de l'événement
+## Event Class
 
-Vous devrez lancer l'événement dans l'en-tête de la fonction comme cette classe:  
-`crafttweaker.event. nderTeleportEvent`  
-Vous pouvez, bien sûr, également [importer](/AdvancedFunctions/Import/) la classe avant et utiliser ce nom alors.
+You will need to cast the event in the function header as this class:  
+`crafttweaker.event.EnderTeleportEvent`  
+You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
 
-## Extensions d'interface de l'événement
+## Event interface extensions
 
-Les événements LivingEntityUseItem implémentent les interfaces suivantes et peuvent également appeler toutes leurs méthodes/getters/setters :
+LivingEntityUseItem Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
 
 - [ILivingEvent](/Vanilla/Events/Events/ILivingEvent/)
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 
 ## ZenGetters/ZenSetters
 
-Les informations suivantes peuvent être récupérées/définies pendant l'événement :
+The following information can be retrieved/set during the event:
 
-| ZenGetter           | ZenSetter           | Type de texte |
-| ------------------- | ------------------- | ------------- |
-| `targetX`           | `targetX`           | double        |
-| `targetY`           | `targetY`           | double        |
-| `format@@0 targetZ` | `format@@0 targetZ` | double        |
-| `Dégâts d'attaque`  | `Dégâts d'attaque`  | flottant      |
+| ZenGetter      | ZenSetter      | Type   |
+| -------------- | -------------- | ------ |
+| `targetX`      | `targetX`      | double |
+| `targetY`      | `targetY`      | double |
+| `targetZ`      | `targetZ`      | double |
+| `attackDamage` | `attackDamage` | float  |
