@@ -1,8 +1,8 @@
-# Rejestracja smaru
+# Lubricant Registration
 
 ## zarejestruj
 
-| Typ   | Typ danych                                  |
+| Type  | Data Type                                   |
 | ----- | ------------------------------------------- |
 | Input | [Fluidstack](/Vanilla/Liquids/IFluidStack/) |
 
@@ -10,15 +10,15 @@
 
 Ilość podawanego płynu jest używana co 4 kliknięcia.
 
-### Przykład kodu:
+### Code Example:
 ```zenscript
 mods.immersiveoilum.Lubricant.register(IFluidStack LubricantEntry);
 mods.immersiveoilum.Lubricant.register(<fluid:lava> * 500);
 ```
 
-## usuń wszystko
+## removeAll
 
-### Przykład kodu:
+### Code Example:
 ```zenscript
 mods.immersivepetroleum um.Lubricant.removeAll();
 ```
