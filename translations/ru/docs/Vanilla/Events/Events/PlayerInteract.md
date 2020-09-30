@@ -1,6 +1,6 @@
-# Взаимодействие игрока
+# PlayerInteract
 
-Событие взаимодействия между игроками запускается, когда игрок взаимодействует с блоком.
+The PlayerInteract Event is fired whenever a player interacts with a block.
 
 ## Класс события
 
@@ -10,31 +10,31 @@ You can, of course, also [import](/AdvancedFunctions/Import/) the class before a
 
 ## Наследование от интерфейсов событий
 
-PlayerInteract Events реализуют следующие интерфейсы и могут вызвать все их методы/getters/setters:
+PlayerInteract Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
 
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 - [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
-- [Событие доступно](/Vanilla/Events/Events/IEventPositionable/)
+- [IEventPositionable](/Vanilla/Events/Events/IEventPositionable/)
 
 ## ZenGetters
 
 Следующая информация может быть получена от события:
 
-| Геттеры                 | Возвращаемый тип                     |
-| ----------------------- | ------------------------------------ |
-| `отменено`              | boolean                              |
-| `предмет использования` | boolean                              |
-| `используя блоки`       | boolean                              |
-| `х`                     | int                                  |
-| `у`                     | int                                  |
-| `z`                     | int                                  |
-| `player`                | [IPlayer](/Vanilla/Players/IPlayer/) |
-| `world`                 | [IWorld](/Vanilla/World/IWorld/)     |
-| `блок`                  | [БИБлок](/Vanilla/Blocks/IBlock/)    |
-| `измерение`             | int                                  |
+| ZenGetter    | Возвращаемый тип                     |
+| ------------ | ------------------------------------ |
+| `canceled`   | boolean                              |
+| `usingItem`  | boolean                              |
+| `usingBlock` | boolean                              |
+| `x`          | int                                  |
+| `y`          | int                                  |
+| `z`          | int                                  |
+| `player`     | [IPlayer](/Vanilla/Players/IPlayer/) |
+| `world`      | [IWorld](/Vanilla/World/IWorld/)     |
+| `block`      | [IBlock](/Vanilla/Blocks/IBlock/)    |
+| `dimension`  | int                                  |
 
 ## ZenMethods
 
-- `event.cancel()` устанавливает событие, как отменено
-- `event.useBlock()` устанавливает блок "истина"
-- `event.useItem()` устанавливает значение true
+- `event.cancel()` sets the event as cancelled
+- `event.useBlock()` sets Block to true
+- `event.useItem()` sets Item to true
