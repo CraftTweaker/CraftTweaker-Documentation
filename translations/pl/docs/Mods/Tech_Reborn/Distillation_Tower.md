@@ -1,16 +1,16 @@
-# Wieża destylacyjna
+# Distillation Tower
 
-## Importowanie pakietu
-`[PLACEHOLDER] mods.techreborn.distillationTower`
+## Importing the Package
+`mods.techreborn.distillationTower`
 
-## Dodawanie przepisów
+## Adding Recipes
 ```zenscript
-mods.techreborn.distationTower.addRecipe(IItemStack output1, IItemStack output2, IItemStack output3, IItemStack output4, IIngredient input1, IIngredient input2, int ticktime, int euTick);
+mods.techreborn.distillationTower.addRecipe(IItemStack output1, IItemStack output2, IItemStack output3, IItemStack output4, IIngredient input1, IIngredient input2, int ticktime, int euTick);
 ```
 
-## Usuwanie przepisów
+## Removing Recipes
 ```zenscript
-mods.techreborn.distationTower.removeInputRecipe(Składnik składnika);
-mods.techreborn.distillationTower.removeRecipe(wyjście IItemStack);
-mods.techreborn.distationTower.removeAll();
+mods.techreborn.distillationTower.removeInputRecipe(IIngredient ingredient);
+mods.techreborn.distillationTower.removeRecipe(IItemStack output);
+mods.techreborn.distillationTower.removeAll();
 ```
