@@ -1,11 +1,11 @@
 # Tags
 
-Les tags sont un concept puissant qui est présent dans Minecraft Vanilla depuis 1.13. Il permet aux joueurs et aux fabricants de datapack de définir un ensemble d'éléments à considérer comme identiques dans un contexte donné. suppression de certains du durcodage des blocs et des éléments dans le code.
+Tags are a powerful concept that has been present in Vanilla Minecraft since 1.13. It allows players and datapack makers to define a set of elements to be considered the same in a certain context, removing some of the hardcoding of blocks and items in code.
 
-Les tags sont représentés comme un ensemble de fichiers JSON placés dans le répertoire `data/<namespace>/tags/<tag-type>` , où `espace de noms` identifie l'espace de noms auquel les balises appartiennent, et `<tag-type>` le type d'éléments que les balises groupes.
+Tags are represented as a set of JSON files placed in the `data/<namespace>/tags/<tag-type>` directory, where `namespace` identifies the namespace the tags belong to, and `<tag-type>` the type of elements that the tag groups.
 
-Ce concept peut sembler similaire dans le concept du dictionnaire d'Ore, et en fait, il est presque le même. Contrairement au dictionnaire de minerai, les balises peuvent également se référer, certains agissant en tant que groupes pour d'autres. De plus, alors que le dictionnaire de minerai ne fonctionne qu'avec des éléments (i.e. choses qui peuvent être placées dans votre inventaire), les balises fonctionnent également avec des blocs, des fluides et d'autres types si nécessaire.
+This concept may seem similar in concept to the Ore Dictionary, and in fact, it is almost the same. Differently from the ore dictionary, though, tags can also reference one another, with some acting as groups for others. Moreover, while the ore dictionary only works with items (i.e. things that can be placed in your inventory), tags also work with blocks, fluids, and other types if needed.
 
-L'implémentation de Boson diffère de celle de Vanilla en raison de l'énorme différence entre les changements internes dans 1. 3, mais cela fonctionne presque de la même manière, sauf pour permettre une extension mod plus facile avec de nouveaux types de tags. Pour cette raison, l'intégration de CraftTweaker est également différente.
+Boson's implementation differs from Vanilla's due to the huge difference in internal changes in 1.13, but it works almost the same, except for allowing easier mod extension with new tag types. For this reason, the CraftTweaker integration is also different.
 
-Pour commencer, lisez comment [obtenir un tag via un gestionnaire de parenthèses](/Mods/Boson/Tags/BracketHandler/).
+To get started, read how to [obtain a tag via a bracket handler](/Mods/Boson/Tags/BracketHandler/).
