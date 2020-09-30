@@ -1,16 +1,16 @@
-# Materia
+# Manufactory
 
-## Importando el Paquete
-`mods.nuclearcraft. tory`
+## Importing the Package
+`mods.nuclearcraft.manufactory`
 
-## Añadiendo recetas
+## Adding Recipes
 ```zenscript
-mods.nuclearcraft.► tory.addRecipe([itemInput, itemOutput, @Optional double timeMultiplier, @Optional double powerMultiplier, @Optional double processRadiation]);
+mods.nuclearcraft.manufactory.addRecipe([itemInput, itemOutput, @Optional double timeMultiplier, @Optional double powerMultiplier, @Optional double processRadiation]);
 ```
 
-## Eliminando recetas
+## Removing Recipes
 ```zenscript
-mods.nuclearcraft.► tory.removeRecipeWithInput([itemInput]);
-mods.nuclearcraft.► tory.removeRecipeWithOutput([itemOutput]);
-mods.nuclearcraft.► tory.removeAllRecipes();
+mods.nuclearcraft.manufactory.removeRecipeWithInput([itemInput]);
+mods.nuclearcraft.manufactory.removeRecipeWithOutput([itemOutput]);
+mods.nuclearcraft.manufactory.removeAllRecipes();
 ```
