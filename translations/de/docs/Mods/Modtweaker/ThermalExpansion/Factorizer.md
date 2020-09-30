@@ -1,34 +1,34 @@
 # Factorizer
 
-Mit dem Factorizer Manager können Sie dem Factorizer Rezepte hinzufügen.
+The Factorizer Manager allows you to add recipes to the factorizer.
 
 ## Dieses Paket importieren
 
 To shorten method calls you can [import](/AdvancedFunctions/Import/) the package like so:
 
 ```zenscript
-importieren mods.thermalexpansion.Factorizer;
+import mods.thermalexpansion.Factorizer;
 ```
 
 ## Rezepte hinzufügen
 
-Sie können Rezepte oder zweiseitige Bindungen hinzufügen.
+You can add oneway split/combine recipes or two-way bindings.
 
 ```zenscript
 //mods.thermalexpansion.Factorizer.addRecipeSplit(IItemStack in, IItemStack out);
 mods.thermalexpansion.Factorizer.addRecipeSplit(<minecraft:dirt>, <minecraft:grass> * 5);
 
 //mods.thermalexpansion.Factorizer.addRecipeCombine(IItemStack in, IItemStack out);
-mods. hermalexpansion.Factorizer.addRecipeCombine(<minecraft:grass> * 5, <minecraft:dirt>);
+mods.thermalexpansion.Factorizer.addRecipeCombine(<minecraft:grass> * 5, <minecraft:dirt>);
 
 //mods.thermalexpansion.Factorizer.addRecipeBoth(IItemStack combined, IItemStack split);
 mods.thermalexpansion.Factorizer.addRecipeBoth(<minecraft:trapped_chest>, <minecraft:chest> * 13);
 ```
 
-## Rezepte entfernen
+## Remove Recipes
 
-Sie können natürlich auch Rezepte entfernen.  
-Wenn Sie eine Zwei-Wege-Bindung entfernen möchten, benötigen Sie jedoch zwei Anrufe.
+You can of course also remove recipes.  
+If you want to remove a two-way binding you'll need two calls, though.
 
 ```zenscript
 //mods.thermalexpansion.Factorizer.removeRecipeSplit(IItemStack in);
