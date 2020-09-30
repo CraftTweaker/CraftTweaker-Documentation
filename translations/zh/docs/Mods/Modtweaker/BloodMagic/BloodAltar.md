@@ -1,8 +1,8 @@
-# 血祭坛：
+# Blood Altar
 
 ## 所属包名
 
-`血魔法.BloodAltar`
+`mods.bloodmagic.BloodAltar`
 
 ## 添加配方
 
@@ -13,13 +13,13 @@ The `consumeRate` is how quickly the Life Essence is syphoned.
 The `drainRate` is how quickly progress is lost if the Blood Altar runs out of Life Essence during the craft.
 
 ```zenscript
-//mods.blemmagic.BloodAltar.addRecipe(IItemStack output, IItemStack input, int minimumTier, int syphon, int consumeRate, int drainRate);
-mods.blemmagic.BloodAltar.addRecipe(<minecraft:glass>, <minecraft:stick>, 0, 20,30,40);
+//mods.bloodmagic.BloodAltar.addRecipe(IItemStack output, IItemStack input, int minimumTier, int syphon, int consumeRate, int drainRate);
+mods.bloodmagic.BloodAltar.addRecipe(<minecraft:glass>, <minecraft:stick>, 0, 20,30,40);
 ```
 
 ## 删除配方
 
 ```zenscript
-//mods.blemmagic.BloodAltar.removeRecipe(StemStack 输入);
-mods.blemmagic.BloodAltar.removeRecipe(<minecraft:stone>);
+//mods.bloodmagic.BloodAltar.removeRecipe(IItemStack input);
+mods.bloodmagic.BloodAltar.removeRecipe(<minecraft:stone>);
 ```
