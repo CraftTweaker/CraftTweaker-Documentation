@@ -1,19 +1,19 @@
-# Waila-Phasen
+# Waila Stages
 
-Dieser Mod ist ein Addon für die [GameStages API](https://minecraft.curseforge.com/projects/game-stages). Waila Stages erlaubt es, Aspekte des Waila/Hwyla Hud durch ein benutzerdefiniertes Progression System zu beschränken. Für weitere Informationen, schaue dir die Mod-Seite [hier an](https://minecraft.curseforge.com/projects/waila-stages)
+This mod is an addon for the [GameStages API](https://minecraft.curseforge.com/projects/game-stages). Waila Stages allows aspects of the Waila/Hwyla hud to be restricted by a custom progression system. For more info, check out the mod page [here](https://minecraft.curseforge.com/projects/waila-stages)
 
 ## Methoden
 
-Versteckt den gesamten Hud, es sei denn, der Spieler hat die Bühne.
+Hides the entire hud, unless the player has the stage.
 
 ```zenscript
 // mods.WailaStages.addWailaStage(String stage);
-mods.WailaStages.addWailaStage("ein");
+mods.WailaStages.addWailaStage("one");
 ```
 
-Versteckt eine bestimmte Linie in der Waila Hud, es sei denn, der Spieler hat die Bühne.
+Hides a specific line in the waila hud, unless the player has the stage.
 
 ```zenscript
-// mods.WailaProgression.addRequirement(String-Bühne, String-Präfix); 
-mods.WailaProgression.addRequirement("eine", "Power:"); 
+// mods.WailaProgression.addRequirement(String stage, String prefix); 
+mods.WailaProgression.addRequirement("one", "Power:"); 
 ```
