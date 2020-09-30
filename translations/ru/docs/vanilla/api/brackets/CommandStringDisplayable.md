@@ -1,6 +1,6 @@
-# Отображаемая строка команды
+# CommandStringDisplayable
 
-Это вспомогательный интерфейс для каждого элемента, который возвращается BEP!
+This is A helper interface for every item that is returned by a BEP!
 
 Этот класс был добавлен модом с mod-id `crafttweaker`. Так что если вы хотите использовать эту функцию, вам нужно установить этот мод.
 
@@ -12,7 +12,7 @@ crafttweaker.api.brackets.CommandStringDisplayable
 
 ## Свойства
 
-| Название         | Тип    | Имеет Getter | Имеет Setter |
-| ---------------- | ------ | ------------ | ------------ |
-| командная строка | String | true         | false        |
+| Название      | Тип    | Имеет Getter | Имеет Setter |
+| ------------- | ------ | ------------ | ------------ |
+| commandString | String | true         | false        |
 
