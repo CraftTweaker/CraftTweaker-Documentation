@@ -2,7 +2,7 @@
 
 Questa classe è stata aggiunta da una mod con ID `crafttweaker`. Perciò, è necessario avere questa mod installata per poter utilizzare questa funzione.
 
-## Importare la classe
+## Importing the class
 Potrebbe essere necessario importare il pacchetto, se si incontrano dei problemi (come castare un vettore), quindi meglio essere sicuri e aggiungere la direttiva di importazione.
 ```zenscript
 crafttweaker.api.block.material.MCMaterial
@@ -12,12 +12,12 @@ crafttweaker.api.block.material.MCMaterial
 MCMaterial implementa le seguenti interfacce. Ciò significa che ogni metodo presente nell'interfaccia può essere usato anche per questa classe.
 - [crafttweaker.api.brackets.CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
 
-## Metodi
+## Methods
 ### blocksMovement
 
 Ritorna se questo materiale è considerato solido o no
 
-Tipo restituito: booleano
+Return type: boolean
 
 ```zenscript
 myMCMaterial.blocksMovement();
@@ -37,7 +37,7 @@ myMCMaterial.getColor();
 
 Ritorna se il blocco può bruciare o meno.
 
-Tipo restituito: booleano
+Return type: boolean
 
 ```zenscript
 myMCMaterial.isFlammable();
@@ -47,7 +47,7 @@ myMCMaterial.isFlammable();
 
 Restituisce se i blocchi fatti di questo materiale sono liquidi.
 
-Tipo restituito: booleano
+Return type: boolean
 
 ```zenscript
 myMCMaterial.isLiquid();
@@ -57,7 +57,7 @@ myMCMaterial.isLiquid();
 
 Indica se questo materiale è opaco
 
-Tipo restituito: booleano
+Return type: boolean
 
 ```zenscript
 myMCMaterial.isOpaque();
@@ -67,7 +67,7 @@ myMCMaterial.isOpaque();
 
 Restituisce se questo materiale può essere rimpiazzato da altri blocchi quando vengono piazzati - per esempio neve, liane e erba alta.
 
-Tipo restituito: booleano
+Return type: boolean
 
 ```zenscript
 myMCMaterial.isReplaceable();
@@ -77,16 +77,16 @@ myMCMaterial.isReplaceable();
 
 Restituisce true se il blocco è considerato solido. Questo vale per impostazione predefinita.
 
-Tipo restituito: booleano
+Return type: boolean
 
 ```zenscript
 myMCMaterial.isSolid();
 ```
 
 
-## Proprietà
+## Properties
 
-| Nome          | Tipo    | Ha Getter | Ha Setter |
-| ------------- | ------- | --------- | --------- |
-| commandString | Stringa | vero      | falso     |
+| Name          | Type   | Ha Getter | Ha Setter |
+| ------------- | ------ | --------- | --------- |
+| commandString | String | true      | false     |
 
