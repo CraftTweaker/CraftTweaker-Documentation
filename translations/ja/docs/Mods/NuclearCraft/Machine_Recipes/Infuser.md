@@ -1,16 +1,16 @@
 # Decay Infuser
 
-## パッケージのインポート
-`mods.naturcraft.infuser`
+## Importing the Package
+`mods.nuclearcraft.infuser`
 
-## レシピを追加中
+## Adding Recipes
 ```zenscript
-mods.numeric.infuser.addRecipe([itemInput, fluidInput, itemOutput, @Optional double timeMultiplier, @Optional door processRadiation]);
+mods.nuclearcraft.infuser.addRecipe([itemInput, fluidInput, itemOutput, @Optional double timeMultiplier, @Optional double powerMultiplier, @Optional double processRadiation]);
 ```
 
-## レシピを削除
+## Removing Recipes
 ```zenscript
-mods.nuclecraft.infuser.removeRecipeWithInput([itemInput, fluidInput]);
-mods.nuclecraft.infuser.removeRecipeWithOutput([itemOutput]);
-mods.nuclecraft.infuser.removeAllRecipes();
+mods.nuclearcraft.infuser.removeRecipeWithInput([itemInput, fluidInput]);
+mods.nuclearcraft.infuser.removeRecipeWithOutput([itemOutput]);
+mods.nuclearcraft.infuser.removeAllRecipes();
 ```
