@@ -1,15 +1,15 @@
 # MCCommandContextBuilder
 
-crafttweakerのmod-idを持つmodによって追加されているクラスです。 従って、この機能を利用する場合はこのmodをインストールする必要があります。
+This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
 
-## クラスのインポート
-問題が発生した場合には、インポートが必要になります。とはいえ、お手数ですが予めインポートしておくほうが安全です。
+## Importing the class
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
 ```zenscript
 crafttweaker.api.commands.custom.MCCommandContextBuilder
 ```
 
-## メソッド
-### ビルド
+## Methods
+### build
 
 戻り値の型: [crafttweaker.api.commands.custom.MCCommandContext](/vanilla/api/commands/custom/MCCommandContext)
 
@@ -17,12 +17,12 @@ crafttweaker.api.commands.custom.MCCommandContextBuilder
 myMCCommandContextBuilder.build(input as String);
 ```
 
-| パラメータ | タイプ  | 説明           |
-| ----- | ---- | ------------ |
-| input | 文字列型 | 説明が提供されていません |
+| Parameter | Type   | Description             |
+| --------- | ------ | ----------------------- |
+| input     | String | No description provided |
 
 
-### コピー
+### copy
 
 戻り値の型: [crafttweaker.api.commands.custom.MCCommandContextBuilder](/vanilla/api/commands/custom/MCCommandContextBuilder)
 
@@ -30,17 +30,17 @@ myMCCommandContextBuilder.build(input as String);
 myMCCommandContextBuilder.copy();
 ```
 
-### 等しい
+### equals
 
-戻り値の型: boolean
+Return type: boolean
 
 ```zenscript
 myMCCommandContextBuilder.equals(o as Object);
 ```
 
-| パラメータ | タイプ    | 説明           |
-| ----- | ------ | ------------ |
-| o     | オブジェクト | 説明が提供されていません |
+| Parameter | Type   | Description             |
+| --------- | ------ | ----------------------- |
+| o         | Object | No description provided |
 
 
 ### findSuggestionContext
@@ -51,9 +51,9 @@ myMCCommandContextBuilder.equals(o as Object);
 myMCCommandContextBuilder.findSuggestionContext(intとしてカーソル);
 ```
 
-| パラメータ  | タイプ | 説明           |
-| ------ | --- | ------------ |
-| cursor | int | 説明が提供されていません |
+| Parameter | Type | Description             |
+| --------- | ---- | ----------------------- |
+| cursor    | int  | No description provided |
 
 
 ### getArguments
@@ -130,7 +130,7 @@ myMCCommandContextBuilder.getSource();
 
 ### hashCode
 
-戻り値の種類: int
+Return type: int
 
 ```zenscript
 myMCCommandContextBuilder.hashCode();
@@ -138,7 +138,7 @@ myMCCommandContextBuilder.hashCode();
 
 ### toString
 
-戻り値の型: String
+Return type: String
 
 ```zenscript
 myMCCommandContextBuilder.toString();
@@ -152,10 +152,10 @@ myMCCommandContextBuilder.toString();
 myMCCommandContextBuilder.withArgument(name as String, argumentas crafttweaker.api.commands.custom.MCParsedArgument);
 ```
 
-| パラメータ | タイプ                                                                                                | 説明           |
-| ----- | -------------------------------------------------------------------------------------------------- | ------------ |
-| 名前    | 文字列型                                                                                               | 説明が提供されていません |
-| 引数    | [crafttweaker.api.commands.custom.MCParsedArgument](/vanilla/api/commands/custom/MCParsedArgument) | 説明が提供されていません |
+| Parameter | Type                                                                                               | Description             |
+| --------- | -------------------------------------------------------------------------------------------------- | ----------------------- |
+| name      | String                                                                                             | No description provided |
+| 引数        | [crafttweaker.api.commands.custom.MCParsedArgument](/vanilla/api/commands/custom/MCParsedArgument) | No description provided |
 
 
 ### withChild
@@ -166,9 +166,9 @@ myMCCommandContextBuilder.withArgument(name as String, argumentas crafttweaker.a
 myMCCommandContextBuilder.withChild(child as crafttweaker.api.commands.custom.MCCommandContextBuilder);
 ```
 
-| パラメータ | タイプ                                                                                                              | 説明           |
-| ----- | ---------------------------------------------------------------------------------------------------------------- | ------------ |
-| 子供    | [crafttweaker.api.commands.custom.MCCommandContextBuilder](/vanilla/api/commands/custom/MCCommandContextBuilder) | 説明が提供されていません |
+| Parameter | Type                                                                                                             | Description             |
+| --------- | ---------------------------------------------------------------------------------------------------------------- | ----------------------- |
+| 子供        | [crafttweaker.api.commands.custom.MCCommandContextBuilder](/vanilla/api/commands/custom/MCCommandContextBuilder) | No description provided |
 
 
 ### withCommand
@@ -179,9 +179,9 @@ myMCCommandContextBuilder.withChild(child as crafttweaker.api.commands.custom.MC
 myMCCommandContextBuilder.withCommand(command as crafttweaker.api.commands.custom.MCCommand);
 ```
 
-| パラメータ     | タイプ                                                                                  | 説明           |
-| --------- | ------------------------------------------------------------------------------------ | ------------ |
-| (Command) | [crafttweaker.api.commands.custom.MCCommand](/vanilla/api/commands/custom/MCCommand) | 説明が提供されていません |
+| Parameter | Type                                                                                 | Description             |
+| --------- | ------------------------------------------------------------------------------------ | ----------------------- |
+| command   | [crafttweaker.api.commands.custom.MCCommand](/vanilla/api/commands/custom/MCCommand) | No description provided |
 
 
 ### withNode
@@ -192,10 +192,10 @@ myMCCommandContextBuilder.withCommand(command as crafttweaker.api.commands.custo
 myMCCommandContextBuilder.withNode(node as crafttweaker.api.commands.custom.MCCommandNode, range as crafttweaker.api.commands.custom.MCStringRange);
 ```
 
-| パラメータ | タイプ                                                                                          | 説明           |
-| ----- | -------------------------------------------------------------------------------------------- | ------------ |
-| ノード   | [crafttweaker.api.commands.custom.MCCommandNode](/vanilla/api/commands/custom/MCCommandNode) | 説明が提供されていません |
-| range | [crafttweaker.api.commands.custom.MCStringRange](/vanilla/api/commands/custom/MCStringRange) | 説明が提供されていません |
+| Parameter | Type                                                                                         | Description             |
+| --------- | -------------------------------------------------------------------------------------------- | ----------------------- |
+| ノード       | [crafttweaker.api.commands.custom.MCCommandNode](/vanilla/api/commands/custom/MCCommandNode) | No description provided |
+| range     | [crafttweaker.api.commands.custom.MCStringRange](/vanilla/api/commands/custom/MCStringRange) | No description provided |
 
 
 ### withSource
@@ -206,9 +206,9 @@ myMCCommandContextBuilder.withNode(node as crafttweaker.api.commands.custom.MCCo
 myMCCommandContextBuilder.withSource(source as crafttweaker.api.commands.custom.MCCommandSource);
 ```
 
-| パラメータ | タイプ                                                                                              | 説明           |
-| ----- | ------------------------------------------------------------------------------------------------ | ------------ |
-| ソース   | [crafttweaker.api.commands.custom.MCCommandSource](/vanilla/api/commands/custom/MCCommandSource) | 説明が提供されていません |
+| Parameter | Type                                                                                             | Description             |
+| --------- | ------------------------------------------------------------------------------------------------ | ----------------------- |
+| ソース       | [crafttweaker.api.commands.custom.MCCommandSource](/vanilla/api/commands/custom/MCCommandSource) | No description provided |
 
 
 
@@ -219,13 +219,13 @@ myMCCommandContextBuilder.withSource(source as crafttweaker.api.commands.custom.
 myMCCommandContextBuilder == o をオブジェクトとして
 ```
 
-| パラメータ | タイプ    | 説明           |
-| ----- | ------ | ------------ |
-| o     | オブジェクト | 説明が提供されていません |
+| Parameter | Type   | Description             |
+| --------- | ------ | ----------------------- |
+| o         | Object | No description provided |
 
-## キャスト
+## Casters
 
-| 結果の種類 | 暗黙的  |
-| ----- | ---- |
-| 文字列型  | true |
+| Result type | Is Implicit |
+| ----------- | ----------- |
+| String      | true        |
 
