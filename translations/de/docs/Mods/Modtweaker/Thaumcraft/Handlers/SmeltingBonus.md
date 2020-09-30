@@ -1,7 +1,7 @@
-# Schmelzbonus
+# Smelting bonus
 
-Mit diesem Paket können Sie Elemente zur Schmelz-Bonusliste hinzufügen und aus der Schmelz-Bonusliste entfernen.  
-Die Liste der Schmelz-Bonusse wird befragt, wann immer ein Höllenöfen einen Gegenstand kocht.
+This package allows you to add and remove items to/from the Smelting bonus list.  
+The Smelting Bonus list is queried whenever an infernal furnace cooks an item.
 
 ## Dieses Paket importieren
 
@@ -11,20 +11,20 @@ You can [import](/AdvancedFunctions/Import/) the package and its methods to faci
 import mods.thaumcraft.SmeltingBonus;
 ```
 
-## Hinzufügen von Elementen
+## Adding items
 
-Hinweis: Eingabe muss entweder ein IItemStack oder ein IOreDictEintrag sein
+Notice: Input needs to be either an IItemStack or an IOreDictEntry
 
 ```zenscript
-//mods.thaumcraft.SmeltingBonus.addSmeltingBonus(IIngredient Eingabe, Gewichtetes ItemStack)
+//mods.thaumcraft.SmeltingBonus.addSmeltingBonus(IIngredient input, WeightedItemStack stack)
 mods.thaumcraft.SmeltingBonus.addSmeltingBonus(<minecraft:cobblestone>, <minecraft:button> % 20);
 ```
 
-## Entferne Elemente
+## Removing items
 
-Hinweis: Eingabe muss entweder ein IItemStack oder ein IOreDictEintrag sein
+Notice: Input needs to be either an IItemStack or an IOreDictEntry
 
 ```zenscript
-//mods.thaumcraft.SmeltingBonus.removeSmeltingBonus(IIngredient Eingabe, IItemStack Stack);
+//mods.thaumcraft.SmeltingBonus.removeSmeltingBonus(IIngredient input, IItemStack stack);
 mods.thaumcraft.SmeltingBonus.removeSmeltingBonus(<minecraft:gold_ore>, <minecraft:gold_nugget>);
 ```
