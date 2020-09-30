@@ -8,51 +8,51 @@
 crafttweaker.api.util.MCResourceLocation
 ```
 
-## Реализованные интерфейсы
-MCResourceLocation реализует следующие интерфейсы. Следовательно, методы из них доступны в этом классе.
+## Implemented Interfaces
+MCResourceLocation реализует следующие интерфейсы. That means any method available to them can also be used on this class.
 - [crafttweaker.api.brackets.CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
 
-## Конструкторы
+## Constructors
 ```zenscript
 new crafttweaker.api.util.MCResourceLocation(пространство имён как String, путь как String);
 ```
-| Параметр          | Тип    | Описание             |
+| Параметр          | Тип    | Description          |
 | ----------------- | ------ | -------------------- |
 | пространство имён | String | Описание отсутствует |
-| путь              | String | Описание отсутствует |
+| path              | String | Описание отсутствует |
 
 
 
-## Методы
+## Methods
 ### сравнить
 
-Тип возврата: int
+Return type: int
 
 ```zenscript
 myMCResourceLocation.compareTo(p_compareTo_1_ как crafttweaker.api.util.MCResourceLocation);
 ```
 
-| Параметр           | Тип                                                                              | Описание             |
+| Параметр           | Тип                                                                              | Description          |
 | ------------------ | -------------------------------------------------------------------------------- | -------------------- |
 | p_сравнить с _1_ | [crafttweaker.api.util.MCResourceLocation](/vanilla/api/util/MCResourceLocation) | Описание отсутствует |
 
 
-### равно
+### equals
 
-Тип возврата: логическое значение
+Return type: boolean
 
 ```zenscript
 myMCResourceLocation.equals(другие как объект);
 ```
 
-| Параметр | Тип    | Описание             |
+| Параметр | Тип    | Description          |
 | -------- | ------ | -------------------- |
-| другой   | Объект | Описание отсутствует |
+| other    | Object | Описание отсутствует |
 
 
 ### getNamespace
 
-Тип возврата: строка
+Return type: String
 
 ```zenscript
 myMCResourceLocation.getNamespace();
@@ -60,7 +60,7 @@ myMCResourceLocation.getNamespace();
 
 ### getPath
 
-Тип возврата: строка
+Return type: String
 
 ```zenscript
 myMCResourceLocation.getPath();
@@ -68,7 +68,7 @@ myMCResourceLocation.getPath();
 
 ### hashCode
 
-Тип возврата: int
+Return type: int
 
 ```zenscript
 myMCResourceLocation.hashCode();
@@ -76,7 +76,7 @@ myMCResourceLocation.hashCode();
 
 ### toString
 
-Тип возврата: строка
+Return type: String
 
 ```zenscript
 myMCResourceLocation.toString();
@@ -87,7 +87,7 @@ myMCResourceLocation.toString();
 
 | Название          | Тип    | Имеет Getter | Имеет Setter |
 | ----------------- | ------ | ------------ | ------------ |
-| командная строка  | String | true         | false        |
+| commandString     | String | true         | false        |
 | пространство имён | String | true         | false        |
-| путь              | String | true         | false        |
+| path              | String | true         | false        |
 
