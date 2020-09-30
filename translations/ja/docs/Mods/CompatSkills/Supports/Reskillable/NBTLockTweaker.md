@@ -1,16 +1,16 @@
 # NBT-Lock Tweaker
 
-## NBTロック
+## NBT-Locking
 
-NBT-LocksはCompatSkills 1.4.0以上に特有で、現在最も強力な機能です。 特定のNBTタグは、特定のModIDまたはゲーム内のすべてのアイテムに限定されてロックできます。
+The NBT-Locks are specific to CompatSkills 1.4.0+ and currently is the most powerful feature. You can lock specific NBT-Tags either restricted to a given mod-id or on every item in the game.
 
-これは、NBTタグを含むアイテムが見つかった場合、ロックが適用されることを意味します。
+This means that any item found to contain that NBT-tag will have the lock applied to it.
 
-### 構文
+### Syntax:
 
     // Blank Example:
     mods.compatskills.NBTLock.addGenericNBTLock(IData tag, String... locked)
-    mods.compatskills.NBTLock.addModNBTLock(String mod, IData tag, String... locked)
+    mods.compatskills.NBTLock.addModNBTLock(String modId, IData tag, String... locked)
     
     //// Working Example:
     // Locks Silk-Touch
@@ -20,11 +20,11 @@ NBT-LocksはCompatSkills 1.4.0以上に特有で、現在最も強力な機能�
     addModNBTLock("minecraft", {ench:[{id: 34 as short}]}, "reskillable:gathering|6");
     
 
-これには強力な意味があります これは、例えば、あなたがパックメーカーとしてロックできることを意味します:
+This has some powerful implications. This means for example that you as a pack-maker can lock:
 
-- ティンカー材料
+- Tinker Materials
 - Tinker Modifiers
-- エンチャントメント
-- エネルギー値
+- Enchantments
+- Energy-Values
 
-そして、はるかに、あなたがそれが使用するNBTタグを知っている限り!
+And much more, as long as you know the NBT-tag it uses!
