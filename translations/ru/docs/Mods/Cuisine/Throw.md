@@ -1,30 +1,30 @@
-# Метание бассейнов
+# Basin Throwing
 
 ## Сложение
 
 ```zenscript
-импортировать mods.cuisine.BasinThrowing;
+import mods.cuisine.BasinThrowing;
 
-BasinThrowing.add(IIngredient input, ILiquidStack inputFluid, IItemStack);
+BasinThrowing.add(IIngredient input, ILiquidStack inputFluid, IItemStack output);
 
 BasinThrowing.add(<ore:cobblestone> * 2, <liquid:lava> * 1000, <item:minecraft:diamond>);
 ```
 
-## Удаление
+## Removal
 
 ```zenscript
 import mods.cuisine.BasinThrowing;
 
-// Удаляем по входам.
+// Remove by inputs.
 BasinThrowing.remove(IItemStack input, ILiquidStack inputFluid);
 
 BasinThrowing.remove(<item:minecraft:dirt>, <liquid:water> * 1000);
 
-// Удаление по идентификатору.
-BasinThrowing.remove(tring id);
+// Remove by identifier.
+BasinThrowing.remove(String id);
 
 BasinThrowing.remove("recipe_name");
 
-// Удаляем все!
+// Remove everything!
 BasinThrowing.removeAll();
 ```
