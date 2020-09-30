@@ -1,38 +1,38 @@
-# La entidad pasa a morir solas
+# EntityLivingDeathDrops
 
-El evento EntityLivingDeathDrops se dispara cuando la muerte de una entidad hace que aparezcan objetos soltados.  
-Se puede cancelar para evitar que la entidad caiga cualquier cosa.
+The EntityLivingDeathDrops Event is fired whenver an Entity's death causes dropped items to appear.  
+It can be canceled to stop the entity from dropping anything.
 
-## Clase de evento
+## Event Class
 
-Necesitarás lanzar el evento en la cabecera de la función como esta clase:  
-`crafttweaker.event. ntityLivingDeathDropsEvent`  
-Puede, por supuesto, también [importar la clase](/AdvancedFunctions/Import/) antes y usar ese nombre entonces.
+You will need to cast the event in the function header as this class:  
+`crafttweaker.event.EntityLivingDeathDropsEvent`  
+You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
 
-## Extensiones de la interfaz de eventos
+## Event interface extensions
 
-PlayerDeathDrops Events implementan las siguientes interfaces y son capaces de llamar a todos sus métodos/getters/setters también:
+PlayerDeathDrops Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
 
 - [ILivingEvent](/Vanilla/Events/Events/ILivingEvent/)
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 
 ## ZenGetters
 
-La siguiente información puede ser recuperada del evento:
+The following information can be retrieved from the event:
 
-| ZenGetter                   | Tipo de devolución                                           |
-| --------------------------- | ------------------------------------------------------------ |
-| `gotas`                     | [`Lista<IEntityItem>`](/Vanilla/Entities/IEntityItem/) |
-| `fuente de daño`            | [Fuente del ID](/Vanilla/Damage/IDamageSource/)              |
-| `es golpeado recientemente` | pluma                                                        |
-| `lootingLevel`              | int                                                          |
+| ZenGetter       | Return Type                                                 |
+| --------------- | ----------------------------------------------------------- |
+| `drops`         | [`List<IEntityItem>`](/Vanilla/Entities/IEntityItem/) |
+| `damageSource`  | [IDamageSource](/Vanilla/Damage/IDamageSource/)             |
+| `isRecentlyHit` | bool                                                        |
+| `lootingLevel`  | int                                                         |
 
-## Modificando los objetos sueltos
+## Modifying the item drops
 
-Puedes añadir a la droplist o sustituirla por una nueva:
+You can either add to the droplist or completely substitute it with a new one:
 
 ```zenscript
-event.drops = //referencia a la lista IEntityElement.
+event.drops = //reference to IEntityItem list.
 
 //event.addItem(IItemStack item);
 event.addItem(<minecraft:iron_ingot>);
