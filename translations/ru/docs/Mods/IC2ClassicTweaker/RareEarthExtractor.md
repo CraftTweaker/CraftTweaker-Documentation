@@ -1,6 +1,6 @@
-# Редкий Пламенный Экстрактор
+# Rare Earth Extractor
 
-## Пакет
+## Package
 
 ```zenscript
 import mods.ic2.RareEarthExtractor;
@@ -8,13 +8,13 @@ import mods.ic2.RareEarthExtractor;
 
 ## Метод
 
-- **значение с плавающей точкой**
-- **[IItemStack](/Vanilla/Items/IItemStack/)... вводит** Может быть больше одного для ввода. Если это так, то все указанные пункты имеют одинаковое указанное значение.
+- **float value**
+- **[IItemStack](/Vanilla/Items/IItemStack/)... inputs** Can have more then one specified for the input. If so all the specified items give the same specified value.
 
-### Добавить редкие записи Земли
+### Add Rare Earth Entries
 
 ```zenscript
-mods.ic2.RareEarthExtractor.addRareEarthEntries(float value, IItemStack... Ввод);
+mods.ic2.RareEarthExtractor.addRareEarthEntries(float value, IItemStack... input);
 
 mods.ic2.RareEarthExtractor.addRareEarthEntries(1.0F, <minecraft:bedrock>, <minecraft:iron_block>);
 ```
