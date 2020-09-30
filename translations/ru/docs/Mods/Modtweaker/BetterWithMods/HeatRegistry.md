@@ -1,14 +1,14 @@
 # HeatRegistry
 
-HeatRegistry позволяет присвоить целочисленное значение блоку, который взаимодействует с котлом, Котлом и Килном.
+The HeatRegistry allows assigning an integer value to a block that interacts with the Cauldron, Crucible and Kiln.
 
-* Значения по умолчанию: Vanilla fire | 1 Stoked Fire | 2
+* Default Values: Vanilla fire | 1 Stoked Fire | 2
 
-# Добавление источника тепла
+# Adding a Heat Source
 
 ```zenscript
-//стек должен иметь пораженное состояние блока.
-mods.betterwithmods.HeatRegistry.addHeatSource(IItemStack, int heat);
+//stack must have an asssociated block state.
+mods.betterwithmods.HeatRegistry.addHeatSource(IItemStack stack, int heat);
 
 mods.betterwithmods.HeatRegistry.addHeatSource(IBlockState stack, int heat);
 
