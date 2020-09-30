@@ -1,19 +1,19 @@
-# Aserradero industrial
+# Industrial Sawmill
 
-## Importando el Paquete
-`mods.techreborn.aserradero industrial`
+## Importing the Package
+`mods.techreborn.industrialSawmill`
 
-## Añadiendo recetas
+## Adding Recipes
 ```zenscript
-mods.techreborn.industrialSawmill.addRecipe(IItemStack output1, ItemStack output2, IItemStack output3, IIngredient input1, ILiquidStack fluid, int euTick);
-mods. echreborn.industrialSawmill.addRecipe(IItemStack output1, ItemStack output2, ItemStack output3, IIngredient input1, int ticktime, int euTick);
-mods.techreborn. ndustrialSawmill.addRecipe(ItemStack output1, ItemStack output2, ItemStack output3, IIngredient input1, int ticktime, int euTick, boolean useOreDic);
-mods.techreborn. ndustrialSawmill.addRecipe(ItemStack output1, IItemStack output2, ItemStack output3, IIngredient input1, ILiquidStack fluid, int ticktime, int euTick, boolean useOreDic);
+mods.techreborn.industrialSawmill.addRecipe(IItemStack output1, IItemStack output2, IItemStack output3, IIngredient input1, ILiquidStack fluid, int ticktime, int euTick);
+mods.techreborn.industrialSawmill.addRecipe(IItemStack output1, IItemStack output2, IItemStack output3, IIngredient input1, int ticktime, int euTick);
+mods.techreborn.industrialSawmill.addRecipe(IItemStack output1, IItemStack output2, IItemStack output3, IIngredient input1, int ticktime, int euTick, boolean useOreDic);
+mods.techreborn.industrialSawmill.addRecipe(IItemStack output1, IItemStack output2, IItemStack output3, IIngredient input1, ILiquidStack fluid, int ticktime, int euTick, boolean useOreDic);
 ```
 
-## Eliminando recetas
+## Removing Recipes
 ```zenscript
-mods.techreborn.industrialSawmill.removeInputRecipe(ingrediente IIngredient);
-mods.techreborn.industrialSawmill.removeRecipe(salida ItemStack);
+mods.techreborn.industrialSawmill.removeInputRecipe(IIngredient ingredient);
+mods.techreborn.industrialSawmill.removeRecipe(IItemStack output);
 mods.techreborn.industrialSawmill.removeAll();
 ```
