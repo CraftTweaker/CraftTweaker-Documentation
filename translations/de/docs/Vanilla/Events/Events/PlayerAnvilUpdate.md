@@ -16,10 +16,10 @@ PlayerAnvilUpdate Events implementieren die folgenden Schnittstellen und können
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 
 
-## ZenGetters & ZenSetter
+## ZenGetters & ZenSetters
 Die folgenden Informationen lassen sich von diesem Event (Ereignis) abrufen:
 
-| ZenGetter         | ZenSetter        | typ                                      | Beschreibung                                                                                                                                             |
+| ZenGetter         | ZenSetter        | type                                     | Beschreibung                                                                                                                                             |
 | ----------------- | ---------------- | ---------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `linkes Element`  |                  | [IItemStack](/Vanilla/Items/IItemStack/) | Die linke Seite der Eingabe.                                                                                                                             |
 | `rechtes Element` |                  | [IItemStack](/Vanilla/Items/IItemStack/) | Die rechte Seite der Eingabe.                                                                                                                            |
@@ -28,6 +28,6 @@ Die folgenden Informationen lassen sich von diesem Event (Ereignis) abrufen:
 | `xpCost`          | `xpCost`         | int                                      | Die Basiskosten, setzen Sie dies, um sie zu ändern, wenn die Ausgabe != null ist.                                                                        |
 | `materialkosten`  | `materialkosten` | int                                      | Die Anzahl der Items aus dem richtigen Slot, die während der Reparatur verbraucht werden sollen. Lassen Sie als 0 um den gesamten Stapel zu konsumieren. |
 
-## ZenMethoden
+## ZenMethods
 
-- `event.cancel()` setzt das Ereignis als abgebrochen.
+- `event.cancel()` sets the event as cancelled.
