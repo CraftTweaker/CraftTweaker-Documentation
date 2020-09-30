@@ -4,7 +4,7 @@ An IDamageSource object is the source of damage to an entity.
 
 ## Importing the class
 It might be required to [import](/AdvancedFunctions/Import/) the class to avoid errors.  
-`import crafttweaker.damage.IDamageSource`
+`import crafttweaker.damage.IDamageSource;`
 
 
 ## Zengetters and ZenMethods without parameters
@@ -13,11 +13,13 @@ It might be required to [import](/AdvancedFunctions/Import/) the class to avoid 
 |------------------|-----------------------------------|--------------------------------------|
 | harmInCreative   | canHarmInCreative();              | bool                                 |
 | damageType       | getDamageType();                  | string                               |
-| hunderDamage     | getHungerDamage();                | float                                |
+| hungerDamage     | getHungerDamage();                | float                                |
 | immediateSource  | getImmediateSource();             | [IEntity](/Vanilla/Entities/IEntity/) |
 | trueSource       | getTrueSource();                  | [IEntity](/Vanilla/Entities/IEntity/) |
 | creativePlayer   | isCreativePlayer();               | bool                                 |
+| damageLocation   | getDamageLocation();              | [IVector3d](/Vanilla/World/IVector3d/) |
 | damageAbsolute   | isDamageAbsolute();               | bool                                 |
+| damageUnblockable| isDamageUnblockable();            | bool                                 |
 | difficultyScaled | isDifficultyScaled();             | bool                                 |
 | explosion        | isExplosion();                    | bool                                 |
 | fireDamage       | isFireDamage();                   | bool                                 |
@@ -51,6 +53,8 @@ crafttweaker.damage.IDamageSource.createIndirectMagicDamage(IEntity source, @Opt
 crafttweaker.damage.IDamageSource.createThornsDamage(IEntity source)
 crafttweaker.damage.IDamageSource.createExplosionDamage(@Optional IEntityLivingBase entityLivingBaseIn)
 crafttweaker.damage.IDamageSource.createOfType(String type)
+crafttweaker.damage.IDamageSource.createEntityDamage(String type, IEntity source)
+crafttweaker.damage.IDamageSource.createIndirectDamage(String type, IEntityLivingBase truesource, @Optional IEntity immediateSource)
 
 //Preregistered Damage Types
 crafttweaker.damage.IDamageSource.IN_FIRE()
