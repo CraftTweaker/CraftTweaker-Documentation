@@ -1,15 +1,15 @@
-# <unk>
+# Crooking
 
-## パッケージ
+## Package
 ```zenscirpt
-mods.exnihilocreatio.Clook
+mods.exnihilocreatio.Crook
 ```
-## メソッド
+## Methods
 
-- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input** 入力。
-- **[IItemStack](/Vanilla/Items/IItemStack/) はドロップする確率があるアイテムに報酬を与える**
-- **浮動小数点数** の確率は 0-1 です。
-- **浮動小数点数のチャンス** 0-1 の間の確率。
+- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input** The input.
+- **[IItemStack](/Vanilla/Items/IItemStack/) reward** the item that has a chance to drop.
+- **Float chance** chance between 0-1.
+- **Float fortune chance** chance between 0-1.
 
 ## 加算
 
@@ -19,7 +19,7 @@ mods.exnihilocreatio.Crook.addRecipe(IIngredient, IItemStack, Float, Float);
 mods.exnihilocreatio.Crook.addRecipe(<minecraft:log>, <minecraft:plank>, 0.25, 0.5);
 ```
 
-## 削除
+## Removal
 
 ```zenscript
 mods.exnihilocreatio.Crook.removeAll();
