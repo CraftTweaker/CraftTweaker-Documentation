@@ -11,15 +11,15 @@ craftminstrer.api.commands.custom.MCParsedCommandNode
 ## 方法
 ### equals #等于
 
-返回类型：布尔值
+Return type: boolean
 
 ```zenscript
 myMCParsedCommandNode.equals(o 为对象)；
 ```
 
-| 参数 | 类型 | 描述                      |
-| -- | -- | ----------------------- |
-| o  | 对象 | No description provided |
+| 参数 | 类型     | 描述                      |
+| -- | ------ | ----------------------- |
+| o  | Object | No description provided |
 
 
 ### getNode
@@ -40,7 +40,7 @@ myMCParsedCommandNode.getRange();
 
 ### hashCode
 
-返回类型：int
+Return type: int
 
 ```zenscript
 myMCParsedCommandNode.hashCode();
@@ -48,7 +48,7 @@ myMCParsedCommandNode.hashCode();
 
 ### toString
 
-返回类型：字符串
+Return type: String
 
 ```zenscript
 myMCParsedCommandNode.toString();
@@ -62,13 +62,13 @@ myMCParsedCommandNode.toString();
 myMCParsedCommandNode == o 为对象
 ```
 
-| 参数 | 类型 | 描述                      |
-| -- | -- | ----------------------- |
-| o  | 对象 | No description provided |
+| 参数 | 类型     | 描述                      |
+| -- | ------ | ----------------------- |
+| o  | Object | No description provided |
 
-## 卡斯特尔
+## Casters
 
-| 结果类型        | 是否隐藏 |
-| ----------- | ---- |
-| 字符串[string] | true |
+| 结果类型   | 是否隐藏 |
+| ------ | ---- |
+| String | true |
 
