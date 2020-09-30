@@ -1,98 +1,98 @@
-# IEnchantment定义
+# IEnchantmentDefinition
 
-IEnchantmentDefine 是实际的附魔，它没有一个等级，但您可以使用它来检索附魔上的信息。
+An IEnchantmentDefinition is the actual Enchantment, it does not posess a level, but you can use this to retrieve information on the Enchantment.
 
 ## 导入相关包
 
-如果您遇到任何问题，可能需要导入软件包(例如铸造一个 [数组](/AdvancedFunctions/Arrays_and_Loops/)), 这样比抱歉更安全并添加导入。  
-`导入craftweaper.enchantments.IEnchantmentDefinition；`
+It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
+`import crafttweaker.enchantments.IEnchantmentDefinition;`
 
-## 正在获取此对象
+## Retrieving such an object
 
-您可以从 [附魔约束处理器](/Vanilla/Brackets/Bracket_Enchantment/) 或从 [IEnchantation](/Vanilla/Enchantments/IEnchantment/) 对象中检索到这样一个物体。
+You can retrieve such an object from the [Enchantment Bracket handler](/Vanilla/Brackets/Bracket_Enchantment/) or from an [IEnchantment](/Vanilla/Enchantments/IEnchantment/) object.
 
 ## ZenGetters/ZenSetters
 
-| ZenGetter       | ZenSetter | 类型      |
-| --------------- | --------- | ------- |
-| id              |           | 整数      |
-| 名称              | 名称        | string  |
-| 最大级别            |           | 整数      |
-| minLevel        |           | 整数      |
-| isAlleedOnBooks |           | boolean |
-| 宝石附魔器           |           | boolean |
-| isCurse         |           | boolean |
-| registryName    |           | 字符串     |
+| ZenGetter             | ZenSetter | 类型      |
+| --------------------- | --------- | ------- |
+| id                    |           | int     |
+| name                  | name      | string  |
+| maxLevel              |           | int     |
+| minLevel              |           | int     |
+| isAllowedOnBooks      |           | boolean |
+| isTreasureEnchantment |           | boolean |
+| isCurse               |           | boolean |
+| registryName          |           | string  |
 
 ## ZenMethods
 
-### 取消应用
+### CanApply
 
-检查是否可以将附魔放在物品上。  
-第一个方法检查，第二个检查是否可以使用附魔表将物品附魔到这个附魔处。  
-两者都返回了布尔值，需要一个 [IItemStack](/Vanilla/Items/IItemStack/) 作为输入参数。
+Checks if the enchantment can be put on the item.  
+First method checks in general, second checks if the item can be enchanted to this enchantment using the enchantment Table.  
+Both return a bool and require an [IItemStack](/Vanilla/Items/IItemStack/) as input parameter.
 
 ```zenscript
 ench.canApply(IItemStack item);
 ench.canApplyAtEnchantmentTable(IItemStack item);
 ```
 
-### getEnchanability
+### getEnchantability
 
-检查物品在给定级别上对附魔必须具有什么附魔性。  
-这两种方法都返回了一个整数并将附魔的水平作为整数参数。
+Checks what enchantability the item must have for the Enchantment at the given level.  
+Both methods return an int and take the level of the enchantment as int parameter.
 
 ```zenscript
 ench.getMinEnchantability(int level);
-ench.getMaxEnchangability(int level);
+ench.getMaxEnchantability(int level);
 ```
 
-### 翻译名称
+### TranslatedName
 
-返回已翻译的名称 (例如"smite IV")。  
-返回一个字符串并要求附魔级别作为整数参数。  
-与 [IEnchant's](/Vanilla/Enchantments/IEnchantment/) `.displayname` ZenGetter!
+Returns the translated name (e.g. "smite IV").  
+Returns a string and requires the level of the enchantment as int parameter.  
+Does the same as [IEnchantment's](/Vanilla/Enchantments/IEnchantment/) `.displayName` ZenGetter!
 
 ```objectzenscriptivec
 ench.getTranslatedName(int level);
 ```
 
-### 制作附魔器
+### make Enchantment
 
 By giving an EnchantmentDefinition a level you can make an [IEnchantment](/Vanilla/Enchantments/IEnchantment/) out of it:
 
 ```zenscript
 ench.makeEnchantment(int level);
-ench * 级别;
+ench * level;
 ```
 
-### 与其他 IEnchantmentDefinition 对象比较
+### Compare with other IEnchantmentDefinition objects
 
-您可以使用 `==` 操作员来检查两个附魔是否相同。  
-这意味着如果他们有相同的 id。
+You can use the `==` operator to check if two enchantments are the same.  
+This means if they have the same id.
 
 ```zenscript
 if(enchA == enchB)
-    打印("萨米!");
+    print("Same!");
 ```
 
 ## 例子
 
 ```zenscript
-导入 craftweeker.enchantments.IEnchantmentDefinition;
-导入 craftweaper.data. 数据;
+import crafttweaker.enchantments.IEnchantmentDefinition;
+import crafttweaker.data.IData;
 
-个数组为 IEnchantmentDefinition[] = [<enchantment:minecraft:protection>,<enchantment:minecraft:fire_protection>,<enchantment:minecraft:feather_falling>,<enchantment:minecraft:blast_protection>,<enchantment:minecraft:projectile_protection>,<enchantment:minecraft:respiration>,<enchantment:minecraft:aqua_affinity>]；
+val array as IEnchantmentDefinition[] = [<enchantment:minecraft:protection>,<enchantment:minecraft:fire_protection>,<enchantment:minecraft:feather_falling>,<enchantment:minecraft:blast_protection>,<enchantment:minecraft:projectile_protection>,<enchantment:minecraft:respiration>,<enchantment:minecraft:aqua_affinity>];
 
 var map as IData = {};
 
-for ench in ar阵列中。
-    map += ench。 akeEnchantment(3).makeTag();
+for ench in array {
+    map += ench.makeEnchantment(3).makeTag();
 }
 
-print(map.asString();
+print(map.asString());
 
 
-配方.addShapeless("Supo", <minecraft:golden_sword>.withTag(map), [<minecraft:iron_sword>, <minecraft:golden_sword>]);
+recipes.addShapeless("Supo", <minecraft:golden_sword>.withTag(map), [<minecraft:iron_sword>, <minecraft:golden_sword>]);
 
 ```
