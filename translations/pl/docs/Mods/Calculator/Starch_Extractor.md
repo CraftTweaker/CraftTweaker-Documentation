@@ -1,22 +1,22 @@
-# Ekstraktor skrobiowy
+# Starch Extractor
 
-## Pakiet
+## Package
 ```zenscript
-importuj mods.calculator.skrobi;
+import mods.calculator.starch;
 ```
 
-## Metody
+## Methods
 
-- **[Składnik](/Vanilla/Variable_Types/IIngredient/) wejście** Wejście
-- **wartość int** Ilość danych wejściowych dodaje do tego komputera.
+- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input** The input.
+- **int value** The amount of input adds to that machine.
 
 
-## Dodatek
+## Additon
 ```zenscript
-skrobi.addRecipe(dane wejściowe, wartość int);
+starch.addRecipe(IIngredient input, int value);
 ```
 
-## Usuwanie
+## Removal
 ```zenscript
-skrobi.removeRecipe(dane wejściowe);
+starch.removeRecipe(IIngredient input);
 ```
