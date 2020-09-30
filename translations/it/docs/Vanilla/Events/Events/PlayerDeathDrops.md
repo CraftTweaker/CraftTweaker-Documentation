@@ -1,35 +1,35 @@
 # PlayerDeathDrops
 
-L'evento PlayerDeathDrops viene sparato ogni volta che gli oggetti di un giocatore cadono a terra a causa della morte del giocatore.
+The PlayerDeathDrops Event is fired whenever a player's items fall to the ground due to the player's death.
 
-## Classe Evento
+## Event Class
 
-Dovrai lanciare l'evento nell'intestazione della funzione come questa classe:  
-`crafttweaker.event. layerDeathDropsEvent`  
-È possibile, naturalmente, anche [importare](/AdvancedFunctions/Import/) la classe prima e utilizzare quel nome allora.
+You will need to cast the event in the function header as this class:  
+`crafttweaker.event.PlayerDeathDropsEvent`  
+You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
 
-## Estensioni dell'interfaccia evento
+## Event interface extensions
 
-Gli eventi PlayerDeathDrops implementano le seguenti interfacce e sono in grado di chiamare tutti i loro metodi/getter/setter:
+PlayerDeathDrops Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
 
 - [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
 
 ## ZenGetters
 
-Le seguenti informazioni possono essere ricavate dall'evento:
+The following information can be retrieved from the event:
 
-| ZenGetter      | Tipo Di Reso                                                  |
-| -------------- | ------------------------------------------------------------- |
-| `giocatore`    | [IPlayer](/Vanilla/Players/IPlayer/)                          |
-| `elementi`     | [`Elenco<IEntityItem>`](/Vanilla/Entities/IEntityItem/) |
-| `damageSource` | [IDamageSource](/Vanilla/Damage/IDamageSource/)               |
+| ZenGetter      | Return Type                                                 |
+| -------------- | ----------------------------------------------------------- |
+| `player`       | [IPlayer](/Vanilla/Players/IPlayer/)                        |
+| `items`        | [`List<IEntityItem>`](/Vanilla/Entities/IEntityItem/) |
+| `damageSource` | [IDamageSource](/Vanilla/Damage/IDamageSource/)             |
 
-## Modificare la caduta dell'elemento
+## Modifying the item drops
 
-È possibile aggiungere al droplist o completamente sostituirlo con uno nuovo:
+You can either add to the droplist or completely substitute it with a new one:
 
 ```zenscript
-event.items = //riferimento a IEntityItem list.
+event.items = //reference to IEntityItem list.
 
 //event.addItem(IItemStack item);
 event.addItem(<minecraft:iron_ingot>);
