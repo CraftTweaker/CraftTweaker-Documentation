@@ -1,10 +1,10 @@
-# Comando Packmode
+# Packmode Command
 
-## Chiamata
+## Calling
 
-Si chiama il Comando utilizzando `/packmode newMode` con `newMode` che è il nome del nuovo packMode
+You call the Command using `/packmode newMode` with `newMode` being the name of the new packMode
 
-## Utilizzo
+## Usage
 
-Si utilizza il comando per impostare la modalità pacchetto del gioco.  
-Si prega di notare che è necessario riavviare il gioco in modo che le modifiche si verificano!
+You use the command to set your game's packmode.  
+Please note that you will need to restart your game in order for the changes to occur!
