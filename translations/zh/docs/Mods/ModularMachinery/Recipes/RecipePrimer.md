@@ -1,84 +1,84 @@
-# 食谱师
+# RecipePrimer
 
-食谱仪对象是实际配方。 你可以从 [食谱构建器](/Mods/ModularMachinery/Recipes/RecipeBuilder/) 获取这样一个对象，并使用它的方法来实际提供配方的内容和东西。
+A RecipePrimer Object is the actual recipe. You can get such an object from the [RecipeBuilder](/Mods/ModularMachinery/Recipes/RecipeBuilder/) and use its methods to actually give the recipe ins and outs and stuff.
 
 ## 导入相关包
 
-如果您遇到任何问题，可能需要导入软件包(例如铸造一个 [数组](/AdvancedFunctions/Arrays_and_Loops/)), 这样比抱歉更安全并添加导入。  
-`导入mods.modarmachinery.RecipePrimer；`
+It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
+`import mods.modularmachinery.RecipePrimer;`
 
 ## ZenMethods
 
-每种方法都有两件事：第一，它修改对象，然后它返回对象本身（作为另一个RecipePrimer）。  
-意味着您可以单独调用每个方法。 或在你附加每个代码的地方拨打一个电话(下面的示例)。
+Each of these methods does two things: First, it modifies the object, then it returns the object itself (as another RecipePrimer).  
+This means you can either call each method on its own, or make one call where you append each pieces of code (example below).
 
-### 设置机会
+### Setting the chance
 
 ```zenscript
-setChance(浮动概率)；
+setChance(float chance);
 ```
 
-### 增加能源和燃料需求
+### Adding Energy and fuel requirements
 
 ```zenscript
 addEnergyPerTickInput(int perTick);
 addEnergyPerTickOutput(int perTick);
 
 
-//Typo? 这是源代码的说法，如果它不起作用，请尝试输入
-addFuelItemInout(int required TotalBurnTime)；
+//Typo? This is what the sourcecode sais, if it doesn't work try Input
+addFuelItemInout(int requiredTotalBurnTime);
 ```
 
-### 添加输入
+### Adding inputs
 
-您可以添加 [IItemStacks](/Vanilla/Items/IItemStack/), [IOreDictEntries](/Vanilla/OreDict/IOreDictEntry/) 或 [ILiquidStacks](/Vanilla/Liquids/ILiquidStack/) 作为输入。
+You can add [IItemStacks](/Vanilla/Items/IItemStack/), [IOreDictEntries](/Vanilla/OreDict/IOreDictEntry/) or [ILiquidStacks](/Vanilla/Liquids/ILiquidStack/) as input.
 
 ```zenscript
-addItemInput(StemStack 堆栈)；
+addItemInput(IItemStack stack);
 
-addItemInput(IomeDictEntry oredict)；
-addItemInput(IOLquidStack 堆栈)；
+addItemInput(IOreDictEntry oreDict);
+addItemInput(IOreDictEntry oreDict, int amount);
 
 
-addFulluidInput(ILiquidStack 堆栈)；
+addFluidInput(ILiquidStack stack);
 ```
 
 ### Adding outputs
 
-您可以添加 [IItemStacks](/Vanilla/Items/IItemStack/), [IOREDictEntries](/Vanilla/OreDict/IOreDictEntry/) 或 [ILiquidStacks](/Vanilla/Liquids/ILiquidStack/) 作为输出。
+You can add [IItemStacks](/Vanilla/Items/IItemStack/), [IOreDictEntries](/Vanilla/OreDict/IOreDictEntry/) or [ILiquidStacks](/Vanilla/Liquids/ILiquidStack/) as output.
 
 ```zenscript
-addItemOut(StemStack 堆栈)；
+addItemOutput(IItemStack stack);
 
-addItemOutput(IOREDictEntry oredict)；
-addItemOutput(IOLictEntry oredict, int amount)；
+addItemOutput(IOreDictEntry oreDict);
+addItemOutput(IOreDictEntry oreDict, int amount);
 
 
-addFluidOut(ILiquidStack 堆栈)；
+addFluidOutput(ILiquidStack stack);
 ```
 
-### 构建配方
+### Building the recipe
 
-在您完成上述更改后，您需要构建配方，以便它能够做一些事情。
+After you have done your changes above, you need to build the recipe so that it will actually do something.
 
 ```zenscript
-构建();
+build();
 ```
 
 ## 例子
 
-您可以单独调用每个方法，也可以播放代码：
+You can either call each method on its own, or play codegolf:
 
 ```zenscript
-val reci = mods.modarmachinery.RecipeBuilder.newBuilder("recipeRegistryName", "associatedMachineRegistryName", 1000, 0);
+val reci = mods.modularmachinery.RecipeBuilder.newBuilder("recipeRegistryName", "associatedMachineRegistryName", 1000, 0);
 
 reci.addEnergyPerTickInput(100);
 reci.addItemInput(<ore:ingotIron>);
-reci.addItemOut(<minecraft:gold_ingot>);
-reci.addItemOput( uild();
+reci.addItemOutput(<minecraft:gold_ingot>);
+reci.build();
 
 
 
-val rec = mods.modarmachinery.RecipeBuilder.newBuilder("anotherRecipeRegistryName", "associatedMachineRegistryName", 1000, 0);
+val rec = mods.modularmachinery.RecipeBuilder.newBuilder("anotherRecipeRegistryName", "associatedMachineRegistryName", 1000, 0);
 rec.addEnergyPerTickInput(100).addFluidInput(<liquid:water> * 1000).addFluidInput(<liquid:lava> * 1000).addItemOutput(<minecraft:obsidian> * 2).build();
 ```
