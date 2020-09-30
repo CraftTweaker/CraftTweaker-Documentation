@@ -1,19 +1,19 @@
-# Obsługa wspornika ze słownikiem rudy
+# Ore Dictionary Bracket Handler
 
-Obsługa słowników rudy daje Ci dostęp do słowników rudy w grze.
+The Ore Dictionary Bracket Handler gives you access to the Ore Dictionaries in the game.
 
-Słowniki rudy są przywoływane w uchwycie słownika rudy tak, jak tak:
+Ore Dictionarys are referenced in the Ore Dictionary Bracket Handler by like so:
 
 ```zenscript
 <ore:orename>
 <ore:ingotIron>
 ```
 
-Zwraca [IOreDictEntry](/Vanilla/OreDict/IOreDictEntry/), dopóki nie `*` jest w połączeniu, w przeciwnym razie zwraca `Listę<IOreDictEntry>` Jeśli słownik nie jest jeszcze w grze, utworzy nowy i pusty słownik o podanej nazwie i zwróci to. Proszę odnieść się do [słownika rud](/Vanilla/OreDict/IOreDictEntry/) Wpis w celu uzyskania dalszych informacji na temat tego, co z nimi zrobić.
+Returns an [IOreDictEntry](/Vanilla/OreDict/IOreDictEntry/), as long as no `*` is in the call, otherwise returns a `List<IOreDictEntry>` If the oreDictionary is not yet in the game, will create a new and empty oreDictionary with the given name and return that. Please refer to the [Ore Dictionary](/Vanilla/OreDict/IOreDictEntry/) Entry for further information on what to do with them.
 
-# Uzyskiwanie wszystkich zarejestrowanych słowników rudy
+# Getting all Registered ore Dictionaries
 
-Możesz użyć następującej komendy, aby wysłać wszystkie zarejestrowane słowniki rudy do dziennika CraftTweaker
+You can use the following command to output all registered ore Dictionaries to the CraftTweaker log
 
     /ct oredict
     /crafttweaker oredict
