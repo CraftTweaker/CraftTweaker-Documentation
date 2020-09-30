@@ -1,6 +1,6 @@
 # Fluid_Transposer
 
-## パッケージ
+## Package
 
 `mods.thermalexpansion.Transposer`
 
@@ -20,7 +20,7 @@ mods.thermalexpansion.Transposer.addFillRecipe(<minecraft:leaves:1>, <minecraft:
 
 ```
 
-## 削除
+## Removal
 
 ```zenscript
 //mods.thermalexpansion.Transposer.removeExtractRecipe(IItemStack input);
@@ -28,5 +28,5 @@ mods.thermalexpansion.Transposer.removeExtractRecipe(<minecraft:gold_ore>);
 
 
 //mods.thermalexpansion.Transposer.removeFillRecipe(IItemStack input, ILiquidStack fluid);
-mods.thermalexpansion.Transposer.removeFillRepipe(<minecraft:bucket>, <liquid:water>);
+mods.thermalexpansion.Transposer.removeFillRecipe(<minecraft:bucket>, <liquid:water>);
 ```
