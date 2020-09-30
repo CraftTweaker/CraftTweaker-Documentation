@@ -1,102 +1,102 @@
-# 裂痕模式
+# Fission
 
-## F裂变版主
+## Fission Moderator
 
-### 导入软件包
-`nuclearcraft。FissionModerator`
+### Importing the Package
+`mods.nuclearcraft.FissionModerator`
 
-### 添加配方
+### Adding Recipes
 ```zenscript
-nuclearcraft。FissionModerator.add（Ingredient block，int fluxFactor，双重效率）；
+mods.nuclearcraft.FissionModerator.add(IIngredient block, int fluxFactor, double efficiency);
 ```
 
-### 删除配方
+### Removing Recipes
 ```zenscript
-nuclearcraft。FissionModerator.remove(IIngredient block);
+mods.nuclearcraft.FissionModerator.remove(IIngredient block);
 mods.nuclearcraft.FissionModerator.removeAll();
 ```
 
-## 裂变反射器
+## Fission Reflector
 
-### 导入软件包
-`nuclearcraft。裂变反射器`
+### Importing the Package
+`mods.nuclearcraft.FissionReflector`
 
-### 添加配方
+### Adding Recipes
 ```zenscript
-nuclearcraft。FissionReflector.add（Ingredient block，双重效率，双重反射）；
+mods.nuclearcraft.FissionReflector.add(IIngredient block, double efficiency, double reflectivity);
 ```
 
-### 删除配方
+### Removing Recipes
 ```zenscript
-nuclearcraft。FissionReflector.remove(IIngredient block);
-mods.nuclearcraft.fissionReflector.removeAll();
+mods.nuclearcraft.FissionReflector.remove(IIngredient block);
+mods.nuclearcraft.FissionReflector.removeAll();
 ```
 
-## 裂变减速器
+## Fission Irradiator
 
-### 导入软件包
-`nuclearcraft。裂变Irrardator`
+### Importing the Package
+`mods.nuclearcraft.FissionIrradiator`
 
-### 添加配方
+### Adding Recipes
 ```zenscript
-nuclearcraft。FissionIrraryator.add(Ingredient itemInput, IIngredient itemOutput, int fluxRequire, two heatPerFlux, 双重效率, 双重辐射)；
+mods.nuclearcraft.FissionIrradiator.add(IIngredient itemInput, IIngredient itemOutput, int fluxRequired, double heatPerFlux, double efficiency, double radiation);
 ```
 
-### 删除配方
+### Removing Recipes
 ```zenscript
-nuclearcraft。FissionIrraryator.removeRecipeWidInput(IIngredient itemInput);
-mods.nuclearcraft.FissionIrraryator.removeRecipeWOutput(IIngredient itemOut);
-mods.nuclearcraft.a. FissionIrrardator.removeAllRecipes();
+mods.nuclearcraft.FissionIrradiator.removeRecipeWithInput(IIngredient itemInput);
+mods.nuclearcraft.FissionIrradiator.removeRecipeWithOutput(IIngredient itemOutput);
+mods.nuclearcraft.FissionIrradiator.removeAllRecipes();
 ```
 
-## Pebble Bed Firts
+## Pebble Bed Fission
 
-### 导入软件包
-`nuclearcraft。Pebbleff`
+### Importing the Package
+`mods.nuclearcraft.PebbleFission`
 
-### 添加配方
+### Adding Recipes
 ```zenscript
-nuclearcraft。PebbleFission.addRecipe(IIngredient itemInput, IIngredient itemput, inter time, int heat, 双重效率, int criticity, 布尔值, 双重辐射)；
+mods.nuclearcraft.PebbleFission.addRecipe(IIngredient itemInput, IIngredient itemOutput, int time, int heat, double efficiency, int criticality, boolean selfPriming, double radiation);
 ```
 
-### 删除配方
+### Removing Recipes
 ```zenscript
-nuclearcraft。PebbleFission.removeRecipeWidInput(IIngredient itemInput);
-mods.nuclearcraft.PebbleFission.removeRecipeWOutput(IIngredient itemOut)；
-mods.nuclearcraft。a. PebbleFission.removeAllRecipes();
+mods.nuclearcraft.PebbleFission.removeRecipeWithInput(IIngredient itemInput);
+mods.nuclearcraft.PebbleFission.removeRecipeWithOutput(IIngredient itemOutput);
+mods.nuclearcraft.PebbleFission.removeAllRecipes();
 ```
 
-## 固体燃料裂变量
+## Solid Fuel Fission
 
-### 导入软件包
-`nuclearcraft。SolidFugh`
+### Importing the Package
+`mods.nuclearcraft.SolidFission`
 
-### 添加配方
+### Adding Recipes
 ```zenscript
-nuclearcraft。SolidFission.addRecipe(IIngredient itemInput, IIngredient itemput, inter time, int heat, 双重功效, int criticality, 布尔温度, 双重辐射)；
+mods.nuclearcraft.SolidFission.addRecipe(IIngredient itemInput, IIngredient itemOutput, int time, int heat, double efficiency, int criticality, boolean selfPriming, double radiation);
 
 ```
 
-### 删除配方
+### Removing Recipes
 ```zenscript
-nuclearcraft。SolidFission.removeRecipeWidInput(IIngredient itemInput);
-mods.nuclearcraft.SolidFission.removeRecipeWidOutput(IIngredient itemOut)；
-mods.nuclearcraft。SolidFission.removeAllRecipes();
+mods.nuclearcraft.SolidFission.removeRecipeWithInput(IIngredient itemInput);
+mods.nuclearcraft.SolidFission.removeRecipeWithOutput(IIngredient itemOutput);
+mods.nuclearcraft.SolidFission.removeAllRecipes();
 ```
 
-## 裂变加热中
+## Fission Heating
 
-### 导入软件包
-`nuclearcraft。裂变加热中`
+### Importing the Package
+`mods.nuclearcraft.FissionHeating`
 
-### 添加配方
+### Adding Recipes
 ```zenscript
-nuclearcraft。a. Fissionating.addRecipe(ILiquidStack fluidInput, ILiquidStack fluidOutput, int heatPerputMB)；
+mods.nuclearcraft.FissionHeating.addRecipe(ILiquidStack fluidInput, ILiquidStack fluidOutput, int heatPerInputMB);
 ```
 
-### 删除配方
+### Removing Recipes
 ```zenscript
-nuclearcraft。Fissionating.removeRecipeWidInput(ILiquidStack fluidInput);
-mods.nuclearcraft.Fissionating.removeRecipeWOutput(ILiquidStack fluidOut)；
-mods.nuclearcraft。a. Fissionating.removeAllRecipes();
+mods.nuclearcraft.FissionHeating.removeRecipeWithInput(ILiquidStack fluidInput);
+mods.nuclearcraft.FissionHeating.removeRecipeWithOutput(ILiquidStack fluidOutput);
+mods.nuclearcraft.FissionHeating.removeAllRecipes();
 ```
