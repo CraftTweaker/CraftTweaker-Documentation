@@ -1,9 +1,9 @@
-# Dynamiczne umiejętności miecza
+# Dynamic Sword Skills
 
-## Składnia
+## Syntax
 
 ```zenscript
-dss|nazwa umiejętności|poziom
+dss|skillname|level
 
 dss|
 ```
