@@ -1,34 +1,34 @@
-# Sacs de butin
+# Loot Bags
 
-Ce pack vous permet d'ajouter et de supprimer des objets vers/depuis les sacs de butin.
+This package allows you to add and remove items to/from the Loot Bags.
 
-## Importation du paquet
+## Importing the package
 
-Vous pouvez [importer](/AdvancedFunctions/Import/) le paquet et ses méthodes pour faciliter la récupération des méthodes.
+You can [import](/AdvancedFunctions/Import/) the package and its methods to facilitate the retrival of the methods.
 
 ```zenscript
-Importer mods.thaumcraft.LootBag;
+import mods.thaumcraft.LootBag;
 ```
 
-## Types de butin
+## Loot types
 
-Vous devez fournir un tableau d'un ou plusieurs nombres entre 0 et 2 (inclus) et les fonctions.  
-Celles déterminent le type de sac de butin à affecter.
+You need to provide an array of one or multiple numbers from 0 to 2 (inclusive) to the functions.  
+Those determine the type of lootbag to be affected.
 
-- 0 : Commun
-- 1 : Inhabituel
-- 2 : Rare
+- 0: Common
+- 1: Uncommon
+- 2: Rare
 
-## Ajout d'éléments
+## Adding items
 
-Avis: Les pièces d'or ont une valeur de 2000, les diamants sont de 50.
+Notice: Gold coins have a value of 2000, diamonds are 50.
 
 ```zenscript
 //mods.thaumcraft.LootBag.addLoot(WeightedItemStack stack, int[] bagTypes)
 mods.thaumcraft.LootBag.addLoot(<minecraft:dirt>%20000, [0,1,2]);
 ```
 
-## Suppression des éléments
+## Removing items
 
 ```zenscript
 //mods.thaumcraft.LootBag.removeLoot(IItemStack stack, int[] bagTypes);
