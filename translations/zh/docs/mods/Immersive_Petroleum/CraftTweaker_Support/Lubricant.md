@@ -1,4 +1,4 @@
-# 卢比康注册
+# Lubricant Registration
 
 ## 注册
 
@@ -10,15 +10,15 @@
 
 给定的流体量每4只提示。
 
-### 代码示例：
+### Code Example:
 ```zenscript
 mods.immersivepetroleum.Lubricant.register(IFluidStack 润滑油入口)；
 mods.immersivepetroleum.Lubricant.register(<fluid:lava> * 500);
 ```
 
-## 全部移除
+## removeAll
 
-### 代码示例：
+### Code Example:
 ```zenscript
 mods.immersiveproleum.Lubricant.removeAll();
 ```
