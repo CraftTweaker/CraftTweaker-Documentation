@@ -10,25 +10,25 @@ ItemStack с шансом, обычно используется для выво
 crafttweaker.api.item.MCWeightedItemStack
 ```
 
-## Реализованные интерфейсы
-MCWeightedItemStack реализует следующие интерфейсы. Следовательно, методы из них доступны в этом классе.
+## Implemented Interfaces
+MCWeightedItemStack реализует следующие интерфейсы. That means any method available to them can also be used on this class.
 - [crafttweaker.api.brackets.CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
 
-## Конструкторы
+## Constructors
 Вручную создает взвешенный ItemStack. Обычно вы можете использовать оператор или `.weight(вес)` метод IItemStack, хотя
 ```zenscript
 new crafttweaker.api.item.MCWeightedItemStack(itemStack as crafttweaker.api.item.IItemStack, weight as double);
 new crafttweaker.api.item.MCWeightedItemStack(<item:minecraft:bedrock>, 0.5D);
 ```
-| Параметр     | Тип                                                               | Описание                      |
+| Параметр     | Тип                                                               | Description                   |
 | ------------ | ----------------------------------------------------------------- | ----------------------------- |
 | элемент Стек | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | Стек                          |
-| вес          | double                                                            | Шанс, между 0 (0%) и 1 (100%) |
+| weight       | double                                                            | Шанс, между 0 (0%) и 1 (100%) |
 
 
 
-## Методы
-### вес
+## Methods
+### weight
 
 Создает новый взвешенный стек с заданным весом
 
@@ -41,19 +41,19 @@ new crafttweaker.api.item.MCWeightedItemStack(<item:minecraft:bedrock>, 0.5D);
 <item:minecraft:bedrock>.вес (0.5D).вес (0.75D);
 ```
 
-| Параметр  | Тип    | Описание |
-| --------- | ------ | -------- |
-| новый вес | double | Процент  |
+| Параметр  | Тип    | Description |
+| --------- | ------ | ----------- |
+| новый вес | double | Процент     |
 
 
 
 ## Свойства
 
-| Название         | Тип                                                               | Имеет Getter | Имеет Setter |
-| ---------------- | ----------------------------------------------------------------- | ------------ | ------------ |
-| командная строка | String                                                            | true         | false        |
-| stack            | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | true         | false        |
-| вес              | double                                                            | true         | false        |
+| Название      | Тип                                                               | Имеет Getter | Имеет Setter |
+| ------------- | ----------------------------------------------------------------- | ------------ | ------------ |
+| commandString | String                                                            | true         | false        |
+| stack         | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | true         | false        |
+| weight        | double                                                            | true         | false        |
 
 ## Операторы
 ### MUL
@@ -67,7 +67,7 @@ new crafttweaker.api.item.MCWeightedItemStack(<item:minecraft:bedrock>, 0.5D);
 <item:minecraft:bedrock>.weight (0.5D) * 5
 ```
 
-| Параметр    | Тип | Описание            |
+| Параметр    | Тип | Description         |
 | ----------- | --- | ------------------- |
 | новая сумма | int | Размер нового стека |
 ### MOD
@@ -81,7 +81,7 @@ new crafttweaker.api.item.MCWeightedItemStack(<item:minecraft:bedrock>, 0.5D);
 <item:minecraft:bedrock>.веса (0,5D) % 75
 ```
 
-| Параметр  | Тип | Описание |
-| --------- | --- | -------- |
-| новый вес | int | Процент  |
+| Параметр  | Тип | Description |
+| --------- | --- | ----------- |
+| новый вес | int | Процент     |
 
