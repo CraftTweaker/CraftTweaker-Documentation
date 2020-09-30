@@ -1,16 +1,16 @@
-# Früher Barren
+# Ingot Former
 
-## Paket wird importiert
+## Importing the Package
 `mods.nuclearcraft.IngotFormer`
 
-## Rezepte hinzufügen
+## Adding Recipes
 ```zenscript
 mods.nuclearcraft.IngotFormer.addRecipe(ILiquidStack fluidInput, IIngredient itemOutput, @Optional double timeMultiplier, @Optional double powerMultiplier, @Optional double processRadiation);
 ```
 
-## Rezepte entfernen
+## Removing Recipes
 ```zenscript
 mods.nuclearcraft.IngotFormer.removeRecipeWithInput(ILiquidStack fluidInput);
 mods.nuclearcraft.IngotFormer.removeRecipeWithOutput(IIngredient itemOutput);
-mods.nuclearcraft.IngotFormer.removeAllRezept();
+mods.nuclearcraft.IngotFormer.removeAllRecipes();
 ```
