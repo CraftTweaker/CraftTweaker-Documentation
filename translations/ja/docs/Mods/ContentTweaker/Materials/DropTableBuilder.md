@@ -1,44 +1,44 @@
 # DropTableBuilder
 
-DropTableBuilder は、複数のアイテムスタックを一度にドロップすることをサポートする鉱石やサンプルの「ドロップ」文字列を作成するために使用されます。 複数のアイテムと重み付きドロップを含むアイテムスタック。
+DropTableBuilder is used to create 'drops' strings for ores and samples that support dropping multiple item stacks at once, item stacks that contain more than one item, and weighted drops.
 
 ## パッケージのインポート
 
-問題が発生した場合は、パッケージをインポートする必要があるかもしれませんので、申し訳ありませんし、インポートを追加してください。  
+It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
 `import mods.contenttweaker.DropTableBuilder;`
 
-## メソッド
+## Methods
 
-これらのメソッドは、ドロップテーブルの作成と変更を可能にします。 すべてのビルダーメソッドは、実行されたビルダーを返し、メソッドの連鎖を可能にします。
+These methods allow for creation and modification of a drop table. All builder methods return the builder they were run on, allowing for chaining methods.
 
-| メソッド名           | 説明                                                       |
-| --------------- | -------------------------------------------------------- |
-| newSlot()       | 静的に実行する場合、またはドロップテーブルに新しいスロットを追加する場合は、新しいドロップテーブルを作成します。 |
-| addItem()       | 指定したアイテムをドロップテーブルの現在のスロットに追加します。                         |
-| enableFortune() | 現在のスロットを有効にして、幸運のエンチャントの恩恵を受けられます。                       |
+| Method Name     | 説明                                                                               |
+| --------------- | -------------------------------------------------------------------------------- |
+| newSlot()       | Creates a new drop table if run statically or adds a new slot to the drop table. |
+| addItem()       | Adds the specified item to the current slot of the drop table.                   |
+| enableFortune() | Enables the current slot to benefit from the fortune enchant.                    |
 
-### 使用方法:
+### Usage:
 
 #### `newSlot()`
 
-DropTableBuilder.newSlot()が新しいビルダーを作成します。 \<builder\>.newSlot()は現在のスロットを終了し、新しいスロットを開始します。
+DropTableBuilder.newSlot() will create a new builder. \<builder\>.newSlot() will finalize the current slot and start a new one.
 
-#### `addItem(String[, int weight[, int count]])`
+#### `addItem(String itemStr[, int weight[, int count]])`
 
-`itemStr` は、\<mod\>:\<item\>:\<meta\>のようなアイテムの名前、oredict:\<entry\>のような鉱石辞書のエントリ、または単語が空になることができます。 `weight` は、公式\を使用してアイテムがドロップする可能性を制御します。<item weight\>/\<sum of item weights within slot\>。 省略した場合はデフォルトは 1 です。 `count` は、選択されているアイテムドロップの数です。 省略した場合はデフォルトは 1 です。
+`itemStr` can be an item's name like \<mod\>:\<item\>:\<meta\>, an ore dictionary entry like oredict:\<entry\>, or the word empty. `weight` controls how likely the item is to drop using the formula \<item weight\>/\<sum of item weights within slot\>。 Defaults to 1 if omitted. `count` is how many of the item drop if selected. Defaults to 1 if omitted.
 
 #### `enableFortune()`
 
-スロットがフォーチュンを有効にしている場合、スロットから使用されるアイテムまでのアイテムを選択します。 アイテムが1つだけのスロットでバニラの運命行動が一致します。
+Slots that have fortune enabled will select a number of additional items from the slot up to the level of fortune used. Matches vanilla fortune behavior on slots that have only 1 item.
 
-## ビルダーを使用した例
+## Examples using the Builder
 
-### ドロップテーブルの作成
+### Creating a drop table
 
 ```zenscript
-var compliextable = DropTableBuilder.newSlot()
+var complextable = DropTableBuilder.newSlot()
                     .addItem("minecraft:diamond", 1, 2)
-                    .addItem("minecraft:coul", 9)
+                    .addItem("minecraft:coal", 9)
                     .enableFortune()
                     .newSlot()
                     .addItem("oredict:stone")
@@ -47,7 +47,7 @@ var compliextable = DropTableBuilder.newSlot()
                     .addItem("empty");
 ```
 
-このドロップテーブルは、運命、石1(100%)、石1(50%)、石1(50%)の恩恵を受ける2ダイヤモンド(10%)または石炭1(90%)をドロップします。
+This drop table would drop 2 diamonds (10%) or 1 coal (90%) benefiting from fortune, 1 stone (100%), and 1 cobblestone (50%).
 
 ```zenscript
 var lapistable = DropTableBuilder.newSlot()
@@ -59,21 +59,21 @@ var lapistable = DropTableBuilder.newSlot()
                    .enableFortune();
 ```
 
-このドロップテーブルは、バニララピスを模倣し、4-8ラピスを落とし、幸運の恩恵を受けます。
+This drop table mimics vanilla lapis, dropping 4-8 lapis and benefiting from fortune.
 
-### ドロップテーブルの使用
+### Using a drop table
 
-ビルダーは、データ値を「ドロップ」として割り当てることによって使用されます。 データ値は文字列のみを受け付けるため、ビルダーは文字列として toString メソッドを使用してキャストされます。
+Builders are used by assigning them as a "drops" data value. Since data values only accept strings, the builder will be cast as a string using its toString method.
 
 ```zenscript
 var lapisData = MaterialSystem.getMaterialBuilder()
-                  .setColor(12345678).setName("Fake Lapis").setName("Fake Lapis").setColor(12345678).build()
+                  .setColor(12345678).setName("Fake Lapis").setColor(12345678).build()
                   .registerPart("ore").getData();
 var complexData = MaterialSystem.getMaterialBuilder()
-                    .setName("Complex Ore").set("Complex Ore").set(12345678).build()
-                    .registerPartor(").getData();
-lapisDataDataValue("uedrops",lapistable);
-complexData.
+                    .setColor(12345678).setName("Complex Ore").setColor(12345678).build()
+                    .registerPart("ore").getData();
+lapisData.addDataValue("drops",lapistable);
+complexData.addDataValue("drops",complextable+lapistable);
 ```
 
-2 つのビルダーが一緒に追加されると、両方のテーブルのスロットで新しいテーブルが作成されます。
+When 2 builders are added together, a new table is created with the slots from both tables.
