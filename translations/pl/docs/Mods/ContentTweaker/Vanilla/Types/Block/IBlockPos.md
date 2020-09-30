@@ -1,38 +1,38 @@
 # IBlockPos
 
-Obiekt IBlockPos reprezentuje pozycję w grze.
+An IBlockPos object represents a position in the game.
 
-## Importowanie pakietu
+## Importing the package
 
-Może być wymagane zaimportowanie pakietu, jeśli napotkasz jakieś problemy, więc lepiej być bezpiecznym niż przepraszamy i dodać import.  
-`zaimportuj mods.contenttweaker.BlockPos;`
+It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
+`import mods.contenttweaker.BlockPos;`
 
-## Metody ZenMethods bez parametrów
+## ZenMethods without parameters
 
-| Metoda ZenMethod | ZenGetter | Typ zwrotu | Opis                     |
-| ---------------- | --------- | ---------- | ------------------------ |
-| getX()           | x         | odcień     | Zwraca wartość X pozycji |
-| getY()           | y         | odcień     | Zwraca wartość Y pozycji |
-| getZ()           | z         | odcień     | Zwraca wartość Z pozycji |
+| ZenMethod | ZenGetter | Return Type | Description                    |
+| --------- | --------- | ----------- | ------------------------------ |
+| getX()    | x         | int         | Returns the position's X value |
+| getY()    | y         | int         | Returns the position's Y value |
+| getZ()    | z         | int         | Returns the position's Z value |
 
-## Metody ZenMethods z parametrami
+## ZenMethods with parameters
 
-### Pobierz przesunięcie
+### Get Offset
 
-Zwraca nowy IBlockPos, który jest `przesunięciem` bloków w `kierunek` lub `zwrócony w kierunku`.
+Returns a new IBlockPos that is `offset` blocks into the `directionName` or `facing` direction.
 
-`IBlockPos getOffset(Tring directionName, int offset);`
+`IBlockPos getOffset(String directionName, int offset);`
 
-`directionName` może przyjąć następujące wartości:
+`directionName` can take these values:
 
-- "dół"
-- "do góry"
-- „północ”
-- "południe"
-- „wschód”
-- "zachod"
+- "down"
+- "up"
+- "north"
+- "south"
+- "east"
+- "west"
 
-`IBlockPos getOffset(Facing facing, int offset)` Parametry:
+`IBlockPos getOffset(Facing facing, int offset)` Parameters:
 
-- [zwrócenie](/Vanilla/World/IFacing/) zwrócone w kierunku → Kierunek
-- int offset → ile bloków w tym kierunku?
+- [Facing](/Vanilla/World/IFacing/) facing → The direction
+- int offset → how many blocks in that direction?
