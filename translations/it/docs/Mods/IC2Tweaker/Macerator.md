@@ -1,15 +1,15 @@
 # Macerator
 
-## Pacchetto
+## Package
 
 `import mods.ic2.Macerator;`
 
-## Metodi
+## Methods
 
 - **[IItemStack](/Vanilla/Items/IItemStack/) output**
-- **[Ingresso IIngrediente](/Vanilla/Variable_Types/IIngredient/)**
+- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input**
 
-## Addizione
+## Addition
 
 ```zenscript
 mods.ic2.Macerator.addRecipe(IItemStack output, IIngredient input);
@@ -17,7 +17,7 @@ mods.ic2.Macerator.addRecipe(IItemStack output, IIngredient input);
 mods.ic2.Macerator.addRecipe(<minecraft:diamond_block>, <minecraft:dirt> * 64);
 ```
 
-## Rimozione
+## Removal
 
-- Se si utilizza Ic2 Experimental, per rimuovere una ricetta, basta rimuovere la riga corrispondente in `config/ic2/macerator.ini`
-- Se usi Ic2 Classic, per rimuovere una ricetta, disabilita semplicemente la ricetta corrispondente in `config/ic2/ic2machineRecipes.json`.
+- If using Ic2 Experimental, to remove a recipe, simply remove the corresponding line in `config/ic2/macerator.ini`
+- If using Ic2 Classic, to remove a recipe, simply disable the corresponding recipe in `config/ic2/ic2machineRecipes.json`.
