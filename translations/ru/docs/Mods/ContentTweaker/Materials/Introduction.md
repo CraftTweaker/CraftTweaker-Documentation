@@ -1,16 +1,16 @@
-# Контентная материальная система
+# Contenttweaker Material System
 
-Contenttweaker позволяет не только добавлять отдельные предметы в игру, но и целые материалы! Вы можете использовать эти материалы для автоматического создания руды вместе с снаряжением, слитками и т.п.
+Contenttweaker allows you not only to add single items to the game but whole materials! You can for example use these materials to automatically generate a new ore together with gears, ingots and the like!
 
-Есть 5 Условий, которые важны:
+There are 5 Terms that are important:
 
-- [Материал](/Mods/ContentTweaker/Materials/Materials/Material/): Материал, который вы собираетесь добавить/использовать (например, Платина) → Что делают из
-- [Тип части](/Mods/ContentTweaker/Materials/Parts/PartType/): По сути группа (например, блок, предмет и т. д.) → Тип частей
-- [Часть](/Mods/ContentTweaker/Materials/Parts/Part/): Предметы (например, Gear, Rod, Ingot, и т. д.)
-- [MaterialPart](/Mods/ContentTweaker/Materials/Materials/MaterialPart/): Комбинация части и материала (напр. Железный стержень, Платиновое снаряжение и т. д. → Может быть использован для возврата предмета как [IItemStack](/Vanilla/Items/IItemStack/) позже.
-- [MaterialPartData](/Mods/ContentTweaker/Materials/Materials/MaterialPartData/): Некоторые конфигурации → Varies по типу частей, проверьте wiki страницу для получения дополнительной информации.
+- [Material](/Mods/ContentTweaker/Materials/Materials/Material/): The Material you are going to add/use (e.g. Platinum) → What the items are made of
+- [PartType](/Mods/ContentTweaker/Materials/Parts/PartType/): Basically a group (e.g. Block, Item, Entity, etc) → The type of the parts
+- [Part](/Mods/ContentTweaker/Materials/Parts/Part/): The item's form (e.g. Gear, Rod, Ingot, etc)
+- [MaterialPart](/Mods/ContentTweaker/Materials/Materials/MaterialPart/): Combination of Part and Material (e.g. Iron rod, Platinum Gear, etc) → Can be used to return the item as [IItemStack](/Vanilla/Items/IItemStack/) later on.
+- [MaterialPartData](/Mods/ContentTweaker/Materials/Materials/MaterialPartData/): Some configurations → Varies by part type, check the wiki page for further information.
 
-## Пример скрипта
+## Example Script
 
 ```zenscript
     #loader contenttweaker
