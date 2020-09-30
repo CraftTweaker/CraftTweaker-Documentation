@@ -8,24 +8,24 @@
 crafttweaker.api.commands.custom.MCResultConsumer
 ```
 
-## Функциональный интерфейс
+## Functional Interface
 
-Этот класс является функциональным интерфейсом. Это означает, что вы можете использовать нотацию lambda для создания экземпляра. Нотация лямбда выглядит так:
+This class is a functional interface. This means that you can use the lambda notation to create an instance of it. The lambda notation looks like:
 ```zenscript
 (командный текст, успех, результат) =>{}
 ```
-## Методы
+## Methods
 ### выполнить команду
 
 ```zenscript
 myMCResultConsumer.onCommandComplete(commandContext as crafttweaker.api.commands.custom.MCCommandContext, успех как булев, результат как int);
 ```
 
-| Параметр           | Тип                                                                                                | Описание             |
+| Параметр           | Тип                                                                                                | Description          |
 | ------------------ | -------------------------------------------------------------------------------------------------- | -------------------- |
 | командный контекст | [crafttweaker.api.commands.custom.MCCommandContext](/vanilla/api/commands/custom/MCCommandContext) | Описание отсутствует |
-| успешно            | boolean                                                                                            | Описание отсутствует |
-| результат          | int                                                                                                | Описание отсутствует |
+| success            | boolean                                                                                            | Описание отсутствует |
+| result             | int                                                                                                | Описание отсутствует |
 
 
 
