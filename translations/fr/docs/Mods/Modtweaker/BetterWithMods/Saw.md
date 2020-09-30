@@ -1,46 +1,46 @@
-# Scie
+# Saw
 
-## Recette basique
+## Basic Recipe
 
-* Ajoute une recette de Scie - les entrées *DOIVENT* avoir un bloc associé.
+* Adds Saw Recipe - inputs *MUST* have a block associated with them.
 
 ```zenscript
 mods.betterwithmods.Saw.add(IIngredient input, IItemStack[] output);
-//Exemples
+//Examples
 mods.betterwithmods.Saw.add(<minecraft:fence>,[<minecraft:stick>,<minecraft:stick>]);
 ```
 
-## Suppression par entrée
+## Removal by input
 
-* Supprimer une recette basée sur l'ingrédient d'entrée
+* Remove a recipe based on the input ingredient
 
 ```zenscript
 mods.betterwithmods.Saw.remove(IIngredient input);
 ```
 
-## Suppression par sortie
+## Removal by output
 
-* Supprimer une recette basée sur la sortie
+* Remove a recipe based on the output
 
 ```zenscript
-mods.betterwithmods.Saw.remove(IItemStack[] sorties);
+mods.betterwithmods.Saw.remove(IItemStack[] outputs);
 ```
 
-## Retirer tout
+## Remove all
 
-* Retirer toutes les recettes
+* Remove all recipes
 
 ```zenscript
 mods.betterwithmods.Saw.removeAll();
 ```
 
-## Constructeur
+## Builder
 
-La Scie a un constructeur de recettes. En raison de la nature de la scie, il n'a actuellement pas de méthode spéciale constructeur, je vais le documenter inconditionnellement.
+The Saw has a recipe builder. Due to the nature of the saw it currently has no special builder methods, I will document it none-the-less.
 
-* Créer un nouveau constructeur de Scies. `mods.betterwithmods.Saw.builder()`
+* To create a new Saw builder. `mods.betterwithmods.Saw.builder()`
 
-* Méthodes de Scie
+* Saw methods
      
      * Sets up the inputs and outputs of the recipe  
           zenscript buildRecipe(IIngredient[] inputs, IItemStack[] outputs)  
@@ -54,7 +54,7 @@ La Scie a un constructeur de recettes. En raison de la nature de la scie, il n'a
                     zenscript
                     build()
 
-### Exemple d'utilisation du constructeur
+### Example builder usage
 
     mods.betterwithmods.Saw.builder()
     .buildRecipe([<minecraft:oak_fence>], [<minecraft:stick>*6])
