@@ -1,6 +1,6 @@
-# Камера очистки
+# Purification Chamber
 
-В соответствии с Меканизмом 9.7.0 теперь можно просматривать все рецептные строки Камеры очистки через команду `/ct mekrecipes`
+As of Mekanism 9.7.0 it is now possible to view all recipe strings of the Purification Chamber through the command `/ct mekrecipes purification`
 
 ## Сложение
 
@@ -11,26 +11,26 @@ mods.mekanism.purification.addRecipe(<minecraft:wool:1>, <gas:hydrogenchloride>,
 mods.mekanism.purification.addRecipe(<minecraft:coal:1>, <minecraft:coal>);
 ```
 
-По данным Меканизма 9.7.0 впускГаз больше не ограничивается только кислородом
+As of Mekanism 9.7.0 inputGas is no longer restricted to only oxygen
 
-Также как и Mekanism 9.7.0, можно использовать IIngredients в качестве itemInput вместо IItemStacks.
+Also as of Mekanism 9.7.0 it is possible to use IIngredients as the itemInput instead of only IItemStacks.
 
-Замечание: В настоящее время все это повторяет различные возможности в java при добавлении вместо того, чтобы делать это в ZenScript. В настоящее время в машинах нет встроенной поддержки комбинированных ингредиентов или oredictionary .
+Note: Currently all this does is loop over the different possibilities in java while adding instead of you having to do it in ZenScript. Currently there is no built in support for compound ingredients or oredictionary in the machines themselves.
 
-## Удаление
+## Removal
 
 ```zenscript
-mods.mekanism.purification.removeRecipe(IIngredient itemOutput, @Optional IIngredient itemInput, @Optional Igredient gasInput);
+mods.mekanism.purification.removeRecipe(IIngredient itemOutput, @Optional IIngredient itemInput, @Optional IIngredient gasInput);
 
 mods.mekanism.purification.removeRecipe(<mekanism:clump:2>, <mekanism:shard:2>, <gas:oxygen>);
 mods.mekanism.purification.removeRecipe(<mekanism:clump:1>);
 ```
 
-Указанный входной параметр удалит только тот рецепт, который использует указанный ввод. Пропуск входного параметра удалит все рецепты, которые производят указанный выход.
+Specifying an input parameter will only remove the specific recipe that uses said input. Omitting the input parameter will remove all recipes that produce the specified output.
 
-## Удаление всех рецептов
+## Removing all recipes
 
-Меканизм 9.7.0 теперь можно удалить все рецепты Палаты Очистки. (Это исключает любые рецепты, добавленные через CraftTweaker)
+As of Mekanism 9.7.0 it is now possible to remove all Purification Chamber recipes. (This excludes any recipes added via CraftTweaker)
 
 ```zenscript
 mods.mekanism.purification.removeAllRecipes();
