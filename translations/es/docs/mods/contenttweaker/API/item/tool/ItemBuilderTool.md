@@ -1,40 +1,40 @@
-# Herramienta de construcción
+# ItemBuilderTool
 
-Un constructor especial que te permite crear objetos que pueden ser usados como herramientas. Debes haber establecido el daño máximo del objeto antes de cambiar a este constructor. <p> Tiene métodos especiales que te permiten establecer el nivel de minería para varios tipos de herramientas, así como el daño de ataque.
+A special builder that allows you to create items that can be used as tools. You should have set the item's max damage before changing to this builder. <p> Has special methods that allow you to set the mining level for several tool types as well as the attack damage.
 
-Esta clase fue añadida por un mod con mod-id `contenttweaker`. Necesitas tener este mod instalado si quieres usar esta caracteristica.
+This class was added by a mod with mod-id `contenttweaker`. So you need to have this mod installed if you want to use this feature.
 
-## Importar la clase
-Puede ser requerido que importes el paquete si encuentras algun problema (como crear un Array).
+## Importing the class
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
 ```zenscript
 mods.contenttweaker.item.tool.ItemBuilderTool
 ```
 
-## Interfaces implementadas
-ItemBuilderTool implementa las siguientes interfaces. Esto significa que cualquier método disponible también puede ser usado en esta clase.
+## Implemented Interfaces
+ItemBuilderTool implements the following interfaces. That means any method available to them can also be used on this class.
 - [mods.contenttweaker.api.IIsBuilder](/mods/contenttweaker/API/api/IIsBuilder)
 - [mods.contenttweaker.item.ItemTypeBuilder](/mods/contenttweaker/API/item/ItemTypeBuilder)
 
-## Métodos
-### construir
+## Methods
+### build
 
-Instruye CoT para construir lo que se supone que este constructor está construyendo.
+Instructs CoT to actually build whatever this builder is supposed to be building.
 
 ```zenscript
 new ItemBuilder().withMaxDamage(150).withType<ItemBuilderTool>().build(resourceLocation as String);
 new ItemBuilder().withMaxDamage(150).withType<ItemBuilderTool>().build("my_awesome_block");
 ```
 
-| Parámetro            | Tipo   | Descripción                              |
-| -------------------- | ------ | ---------------------------------------- |
-| ubicacin del recurso | Cadena | La ruta de recursos para dar este bloque |
+| Parameter        | Type   | Description                          |
+| ---------------- | ------ | ------------------------------------ |
+| resourceLocation | String | The resource path to give this block |
 
 
-### sin daño de ataque
+### withAttackDamage
 
-Te permite establecer el bonus de daño de ataque que obtienes al sostener este objeto
+Allows you to set the attack damage bonus that you get when holding this item
 
- Devuelve: `Este constructor, utilizado para encadenamiento de métodos`
+ Returns: `This builder, used for method chaining`
 
 Tipo de retorno: [mods.contenttweaker.item.tool.ItemBuilderTool](/mods/contenttweaker/API/item/tool/ItemBuilderTool)
 
@@ -43,16 +43,16 @@ new ItemBuilder().withMaxDamage(150).withType<ItemBuilderTool>().withAttackDamag
 new ItemBuilder().withMaxDamage(150).withType<ItemBuilderTool>().withAttackDamage(2.0f);
 ```
 
-| Parámetro      | Tipo     | Descripción                 |
-| -------------- | -------- | --------------------------- |
-| daño de ataque | flotante | El daño adicional de ataque |
+| Parameter    | Type  | Description                  |
+| ------------ | ----- | ---------------------------- |
+| attackDamage | float | The additional attack damage |
 
 
-### sin velocidad de ataque
+### withAttackSpeed
 
-Te permite establecer el bonus de velocidad de ataque que obtienes cuando sostienes este objeto.
+Allows you to set the attack speed bonus that you get when holding this item.
 
- Devuelve: `Este constructor, utilizado para encadenamiento de métodos.`
+ Returns: `This builder, used for method chaining.`
 
 Tipo de retorno: [mods.contenttweaker.item.tool.ItemBuilderTool](/mods/contenttweaker/API/item/tool/ItemBuilderTool)
 
@@ -61,16 +61,16 @@ new ItemBuilder().withMaxDamage(150).withType<ItemBuilderTool>().withAttackSpeed
 new ItemBuilder().withMaxDamage(150).withType<ItemBuilderTool>().withAttackSpeed(2.0d);
 ```
 
-| Parámetro           | Tipo  | Descripción         |
-| ------------------- | ----- | ------------------- |
-| velocidad de ataque | doble | Velocidad de ataque |
+| Parameter   | Type   | Description      |
+| ----------- | ------ | ---------------- |
+| attackSpeed | double | The attack speed |
 
 
-### con el coste de durabilidad
+### withDurabilityCostAttack
 
-Te permite establecer la cantidad de daño que recibirá este objeto al golpear enemigos. Por defecto es `0`
+Allows you to set the amount of damage that this item will receive when hitting enemies. By default this is `0`
 
- Devuelve: `Este constructor, utilizado para encadenamiento de métodos`
+ Returns: `This builder, used for method chaining`
 
 Tipo de retorno: [mods.contenttweaker.item.tool.ItemBuilderTool](/mods/contenttweaker/API/item/tool/ItemBuilderTool)
 
@@ -79,16 +79,16 @@ new ItemBuilder().withMaxDamage(150).withType<ItemBuilderTool>().withDurabilityC
 new ItemBuilder().withMaxDamage(150).withType<ItemBuilderTool>().withDurabilityCostAttack(5);
 ```
 
-| Parámetro            | Tipo | Descripción                                 |
-| -------------------- | ---- | ------------------------------------------- |
-| coste de durabilidad | int  | Los puntos de daño que recibirá este objeto |
+| Parameter            | Type | Description                              |
+| -------------------- | ---- | ---------------------------------------- |
+| durabilityCostAttack | int  | The damage points this item will receive |
 
 
 ### withDurabilityCostMining
 
-Te permite establecer la cantidad de daño que este objeto recibirá al minar bloques. Por defecto es `0`
+Allows you to set the amount of damage that this item will receive when mining blocks. By default this is `0`
 
- Devuelve: `Este constructor, utilizado para encadenamiento de métodos`
+ Returns: `This builder, used for method chaining`
 
 Tipo de retorno: [mods.contenttweaker.item.tool.ItemBuilderTool](/mods/contenttweaker/API/item/tool/ItemBuilderTool)
 
@@ -97,30 +97,30 @@ new ItemBuilder().withMaxDamage(150).withType<ItemBuilderTool>().withDurabilityC
 new ItemBuilder().withMaxDamage(150).withType<ItemBuilderTool>().withDurabilityCostMining(1);
 ```
 
-| Parámetro                 | Tipo | Descripción                                 |
-| ------------------------- | ---- | ------------------------------------------- |
-| durabilidad de la minería | int  | Los puntos de daño que recibirá este objeto |
+| Parameter            | Type | Description                              |
+| -------------------- | ---- | ---------------------------------------- |
+| durabilityCostMining | int  | The damage points this item will receive |
 
 
 ### withToolType
 
-Le permite añadir un tipo de herramienta a esta herramienta. Puede especificar el tipo, el nivel de minería y, opcionalmente, la velocidad de minería cuando este tipo también se golpee.
+Allows you to add a tool type to this tool. You can specify the type, the mining level and optionally the mining speed when this type is hit as well.
 
- Devuelve: `Este constructor, utilizado para encadenamiento de métodos`
+ Returns: `This builder, used for method chaining`
 
 Tipo de retorno: [mods.contenttweaker.item.tool.ItemBuilderTool](/mods/contenttweaker/API/item/tool/ItemBuilderTool)
 
 ```zenscript
-nuevo ItemBuilder().withMaxDamage(150).withType<ItemBuilderTool>().withToolType(toolType as mods.contenttweaker.item.MCToolType, miningLevel as int, miningSpeed as float);
-new ItemBuilder(). ithMaxDamage(150).withType<ItemBuilderTool>().withToolType(<tooltype:shovel>, 3);
+new ItemBuilder().withMaxDamage(150).withType<ItemBuilderTool>().withToolType(toolType as mods.contenttweaker.item.MCToolType, miningLevel as int, miningSpeed as float);
+new ItemBuilder().withMaxDamage(150).withType<ItemBuilderTool>().withToolType(<tooltype:shovel>, 3);
 new ItemBuilder().withMaxDamage(150).withType<ItemBuilderTool>().withToolType(<tooltype:shovel>, 3, 2.0f);
 ```
 
-| Parámetro            | Tipo                                                                            | Descripción                                                       | Opcional | Valor por defecto |
-| -------------------- | ------------------------------------------------------------------------------- | ----------------------------------------------------------------- | -------- | ----------------- |
-| tipo de herramienta  | [mods.contenttweaker.item.MCToolType](/mods/contenttweaker/API/item/MCToolType) | El tipo de herramienta                                            | falso    | `nulo`            |
-| nivel de minería     | int                                                                             | El nivel de minería para este tipo de herramienta                 | falso    | `nulo`            |
-| velocidad de minería | flotante                                                                        | Qué tan rápido esta herramienta puede minar bloques del tipo dado | verdad   | `1.0`             |
+| Parameter   | Type                                                                            | Description                                          | IsOptional | Default Value |
+| ----------- | ------------------------------------------------------------------------------- | ---------------------------------------------------- | ---------- | ------------- |
+| toolType    | [mods.contenttweaker.item.MCToolType](/mods/contenttweaker/API/item/MCToolType) | The type of the tool                                 | false      | `null`        |
+| miningLevel | int                                                                             | The mining level for this tool type                  | false      | `null`        |
+| miningSpeed | float                                                                           | How fast this tool can mine blocks of the given type | true       | `1.0`         |
 
 
 
