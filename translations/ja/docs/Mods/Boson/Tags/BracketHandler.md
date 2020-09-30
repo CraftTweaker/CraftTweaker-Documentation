@@ -1,46 +1,46 @@
-# ブラケットのハンドラー
+# The Bracket Handler
 
-Bracket Handler はタグを取得する唯一の方法です。
+The Bracket Handler is the only way to obtain a tag.
 
-## 構文
-この括弧ハンドラの構文はとても簡単に追従できます。 そして同時に、ブラケットハンドラによって返されるタグをどのような 可能性をもたらします。
+## Syntax
+The syntax of this bracket handler is extremely easy to follow, and at the same time it allows for a huge variety of possibilities in which tag it should be returned by the bracket handler.
 
 ```zenscript
 <tag-TYPE:NAMESPACE:NAME>
 ```
 
-上記のコードスニペット内で すべてのキャップのパーツは、開発者がカスタマイズ可能なビットであり、返される ターゲットを表します。
+In the above code snippet, the parts in all caps are the bits that are customizable by the developer and represent the target that will be returned.
 
-`TYPE` は、作成される [タグの種類](/Mods/Boson/Tags/TagType/) を識別する。 この型は、タグタイプを識別する ニーモニクスのいずれかでなければなりません。 有効なタグタイプの一覧については、リンク先のページを参照してください。
+`TYPE` identifies the [type of tag](/Mods/Boson/Tags/TagType/) that will be created. The type has to be one of the mnemonics that identify a tag type. Refer to the linked page for a list of valid tag types.
 
-`NAMESPACE` は、タグの名前空間、すなわち、タグを所有する mod ID を識別します。 ほとんどの場合、名前空間は `forge` または `minecraft`のいずれかになります。 他の名前空間を使うことも可能です e. をクリックします。
+`NAMESPACE` identifies the name space of a tag, i.e. the mod ID that owns the tag. In most cases, the namespace will be either `forge` or `minecraft`, but it is also possible to use other name spaces, e.g. for mod-specific tags.
 
-`NAME` は取得すべきタグの名前を表す。
+`NAME` represents the name of the tag that should be obtained.
 
-このブラケットハンドラが何を返すかについては、「Behavior」セクションを参照してください。
+Refer to the Behavior section to know what this bracket handler returns.
 
-## 動作
-CraftTweakerに存在する他のブラケットハンドラとは異なります。 この括弧ハンドラの動作は で異なり、どのローダが括弧ハンドラのスクリプトを処理しているかによって異なります。
+## Behavior
+Differently from other bracket handlers that are present in CraftTweaker, the behavior of this bracket handler differs according to which loader is processing the script the bracket handler is in.
 
-### `タグ` ローダー
-If the bracket handler is referenced in a script loaded by the [`tags` loader](/Mods/Boson/Loaders/Tags/), it will return a [`Tag`](/Mods/Boson/Tags/Tag/). これにより、タグ に含まれる要素を操作することができます。 詳細については、クラスのドキュメントを参照してください。
+### The `tags` loader
+If the bracket handler is referenced in a script loaded by the [`tags` loader](/Mods/Boson/Loaders/Tags/), it will return a [`Tag`](/Mods/Boson/Tags/Tag/). This allows for manipulation of the elements that are contained in the tag itself. Refer to the class documentation for more information.
 
-### `preinit` loader
+### The `preinit` loader
 If the bracket handler is referenced in a script loaded by the `preinit` loader, it will throw an exception, since tags are loaded later on in the Minecraft lifecycle, namely just before recipes are registered.
 
-### 他のすべてのローダー
-ブラケットハンドラが他のローダーによってロードされたスクリプトで参照されている場合。 デフォルトの `recipeevent` を含めると、 [`TagIngredient`](/Mods/Boson/Tags/TagIngredient/) が返されます。 タグの内容を 操作することはできません しかし、タグはレシピやその他のメソッドの呼び出しで使用され、パラメータとして [`IIngredient`](/Vanilla/Variable_Types/IIngredient/) のインスタンスを必要とします。
+### Every other loader
+If the bracket handler is referenced in a script loaded by any of the other loaders, including the default `recipeevent` one, then it will return a [`TagIngredient`](/Mods/Boson/Tags/TagIngredient/). This does not allow for manipulation of the tag contents, but allows the tag to be used in recipes and other method invocations that require an instance of [`IIngredient`](/Vanilla/Variable_Types/IIngredient/) as a parameter.
 
-## 使用例
+## Example usage
 
-この最初の例では、 `TagIngredient` を使用して新しいレシピを追加する方法を示します。 `アイテム` タグ の種類の使用法に注意してください。
+This first example demonstrates the usage of a `TagIngredient` to add a new recipe. Note the usage of the `items` tag type:
 
 ```zenscript
 val tagIngredient = <tag-items:forge:ingots/iron>;
-recipes.addShapelessRecipe("test", <minecraft:iron_ingot> * 3, [tagIngredient, tagIngredient]);
+recipes.addShapelessRecipe("test", <minecraft:iron_ingot> * 3, [tagIngredient, tagIngredient, tagIngredient]);
 ```
 
-次の2番目の例は、 `ブロック` 型の `Tag` の操作を示しています:
+This second example shows the manipulation of a `Tag` of type `blocks`:
 
 ```zenscript
 #loader tags
