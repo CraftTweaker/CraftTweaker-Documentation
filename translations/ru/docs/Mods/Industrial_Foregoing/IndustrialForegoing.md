@@ -1,19 +1,19 @@
-# Промышленное прогнозирование
+# Industrial Foregoing
 
-Поддержка BioReactor, Laser Drill and Sludge Refiner CraftTweaker.
+Industrial Foregoing's BioReactor, Laser Drill and Sludge Refiner CraftTweaker support.
 
-### Вес товара
+### Item Weight
 
-`Вес предмета` — это число, которое показывает вероятность выбора предмета. Например:
+The `ItemWeight` is a number that represents the chance of an item to get selected. For example:
 
-| Пункт 1 | Вес | Шанс % |
-| ------- | --- | ------ |
-| Камень  | 99  | 99%    |
-| Грязь   | 1   | 1%     |
+| Item  | Weight | Chance % |
+| ----- | ------ | -------- |
+| Stone | 99     | 99%      |
+| Dirt  | 1      | 1%       |
 
-| Пункт 1 | Вес | Шанс % |
-| ------- | --- | ------ |
-| Камень  | 2   | 66%    |
-| Грязь   | 1   | 33%    |
+| Item  | Weight | Chance % |
+| ----- | ------ | -------- |
+| Stone | 2      | 66%      |
+| Dirt  | 1      | 33%      |
 
-Шанс предмета = Вес предмета/общий вес) *100
+ItemChance% = (ItemWeight/TotalWeight)*100
