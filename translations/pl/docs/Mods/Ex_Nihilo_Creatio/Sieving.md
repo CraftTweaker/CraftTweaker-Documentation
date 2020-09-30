@@ -1,48 +1,48 @@
 # Sieving
 
-## Pakiet
+## Package
 
-Aby uzyskać dostęp do `Sieve` bez wyjaśnienia pełnej ścieżki, możesz zaimportować pakiet u góry swojego skryptu z następującymi danymi:
+To access `Sieve` without clarifying the full path, you can import the package at the top of your Script with the following:
 
 ```zenscript
-importuj mods.exnihilocreatio.Sieve;
+import mods.exnihilocreatio.Sieve;
 ```
 
-## Metody
+## Methods
 
-- **[Blok Igredient](/Vanilla/Variable_Types/IIngredient/)** Blok, który upuszcza wyjście.
-- **[IItemStack](/Vanilla/Items/IItemStack/) wyjście** element, który usuwa się z bloku..
-- **Szansa na pływanie** Szansa powinna wynosić od 0 do 1.
+- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) block** The block that drops the output.
+- **[IItemStack](/Vanilla/Items/IItemStack/) output** The item that drops from the block..
+- **Float chance** The chance should be between 0-1.
 
-## Siatka String
+## String Mesh
 
 ```zenscript
-Sieve.addStringMeshRecipe(IIngredient, IItemStack, Szansa Pływania);
+Sieve.addStringMeshRecipe(IIngredient, IItemStack, Float chance);
 Sieve.addStringMeshRecipe(<minecraft:gravel>, <minecraft:diamond>, 0.001);
 ```
 
-## Siatka Krzemienia
+## Flint Mesh
 
 ```zenscript
-Sieve.addFlintMeshRecipe(IIngredient, IItemStack, Szansa Pływania);
+Sieve.addFlintMeshRecipe(IIngredient, IItemStack, Float chance);
 Sieve.addFlintMeshRecipe(<minecraft:gravel>, <minecraft:diamond>, 0.01);
 ```
 
-## Żelazna siatka
+## Iron Mesh
 
 ```zenscript
-Sieve.addIronMeshRecipe(IIngredient, IItemStack, Szansa Pływania);
+Sieve.addIronMeshRecipe(IIngredient, IItemStack, Float chance);
 Sieve.addIronMeshRecipe(<minecraft:gravel>, <minecraft:diamond>, 0.1);
 ```
 
-## Siatka diamentowa
+## Diamond Mesh
 
 ```zenscript
-Sieve.addDiamondMeshRecipe(Ingredient, IItemStack, Szansa Pływania);
-Sieve.addDiamondMeshRecipe(<minecraft:gravel>, <minecraft:diamond>, 1;
+Sieve.addDiamondMeshRecipe(IIngredient, IItemStack, Float chance);
+Sieve.addDiamondMeshRecipe(<minecraft:gravel>, <minecraft:diamond>, 1);
 ```
 
-## Usuwanie
+## Removal
 
 ```zenscript
 Sieve.removeAll();
