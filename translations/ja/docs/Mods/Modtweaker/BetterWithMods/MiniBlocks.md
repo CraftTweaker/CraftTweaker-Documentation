@@ -1,17 +1,17 @@
-# MiniBlocks ユーティリティ
+# MiniBlocks Utils
 
-## 特定の Mini Blocks を取得
+## Get specific Mini Blocks
 
-これは特定のMiniBlockのIIngredientを取得するためのutil関数で、奇妙なNBTを避けることができます。
+This is a util function for getting an IIngredient for a specific MiniBlock so you can avoid weird NBT.
 
-* type パラメータは "siding", "moulding" または "corner" を指定します。
-* parentBlockは、このparentBlockは鉱石のようなIIngredientなものであるため、miniblockがそのテクスチャから得たブロックです。
+* The type parameter specifies "siding", "moulding" or "corner"
+* The parentBlock is the block of which the miniblock got its texture from, because this parentBlock is an IIngredient things like oredictionary also work.
 
 ```zenscript
 mods.betterwithmods.MiniBlocks.getMiniBlock(String type, IIngredient parentBlock)
 
 
 //Example
-//
-mods.betterwithmods.MiniBlock("siding", <ore:plankWood>);
+//Gets all sidings that have a base of planks
+mods.betterwithmods.MiniBlocks.getMiniBlock("siding", <ore:plankWood>);
 ```
