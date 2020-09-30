@@ -1,18 +1,18 @@
 # CropGrowPreEvent
 
-Das CropGrowPre Event wird gefeuert, wenn Ernten zu wachsen versuchen. It has a **result** which determines whether the default behaviour occurs or not:
+The CropGrowPre Event is fired when crops attempt to grow. It has a **result** which determines whether the default behaviour occurs or not:
 
-- **Erlaube**: die Ernte ist gezwungen, zu wachsen.
-- **lehne**ab: die Ernte kann nicht angebaut werden.
-- **Standard**: Der Angriff verwendet das Standardverhalten von Vanille.
+- **allow**: the crop is forced to grow.
+- **deny**: the crop is prevented from growing.
+- **default**: the attack uses default Vanilla behaviour.
 
 ## Event-Klasse
-Du musst das Ereignis als diese Klasse in den Funktionskopf verschieben:  
-`crafttweaker.event. ropGrowPreEvent`  
-Sie können natürlich auch [die Klasse vor](/AdvancedFunctions/Import/) importieren und dann diesen Namen verwenden.
+You will need to cast the event in the function header as this class:  
+`crafttweaker.event.CropGrowPreEvent`  
+You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
 
 ## Erweiterte Event-Schnittellen
-CropGrowPost Events implementieren die folgenden Schnittstellen und können auch alle ihre Methoden/Getters/Setter aufrufen:
+CropGrowPost Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
 
 - [IBlockEvent](/Vanilla/Events/Events/IBlockEvent/)
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
@@ -21,7 +21,7 @@ CropGrowPost Events implementieren die folgenden Schnittstellen und können auch
 ## ZenGetter
 Die folgenden Informationen lassen sich von diesem Event (Ereignis) abrufen:
 
-| ZenGetter             | ZenSetter | Type                                        |
-| --------------------- | --------- | ------------------------------------------- |
-| `originalBlockstatus` |           | [IBlockState](/Vanilla/Blocks/IBlockState/) |
-| `originalBlock`       |           | [IBlock](/Vanilla/Blocks/IBlock/)           |
+| ZenGetter            | ZenSetter | Type                                        |
+| -------------------- | --------- | ------------------------------------------- |
+| `originalBlockState` |           | [IBlockState](/Vanilla/Blocks/IBlockState/) |
+| `originalBlock`      |           | [IBlock](/Vanilla/Blocks/IBlock/)           |
