@@ -1,35 +1,35 @@
-# Охлаждающий
+# Coolant
 
-Менеджер Coolant не принадлежит какой-либо конкретной машине, а управляет охлаждающими значениями для всех других машин.  
-Например, Динамо Энергии использует охлаждающие значения, так же как и Динамо-Динамо-Магматик с предоставлением усиления Иентропического Резервуара.
+The Coolant manager does not belong to any specific machine but manages coolant values for all other machines.  
+For example the Enervation Dynamo uses the coolant values, as does the Magmatic Dynamo with the Ientropic Reservoir augment provided.
 
-## Импортировать пакет
+## Import the package
 
-Чтобы сократить вызовы методов, вы можете [импортировать](/AdvancedFunctions/Import/) пакет так:
+To shorten method calls you can [import](/AdvancedFunctions/Import/) the package like so:
 
 ```zenscript
 import mods.thermalexpansion.Coolant;
 ```
 
-## Добавить охладитель
+## Add Coolant
 
-Используйте это для регистрации нового охлаждающего менеджера .  
-CoolantRF должен быть неотрицательным, а охлаждающий коэффициент должен быть от 1 до 100 (включительно).  
-Если эти диапазоны не будут достигнуты, охладитель не будет зарегистрирован!
+Use this to register a new coolant to the manager.  
+CoolantRF needs to be non-negative, and the coolant factor needs to be between 1 and 100 (inclusive).  
+If those ranges are not met, the coolant will not be registered!
 
 ```zenscript
 //mods.thermalexpansion.Coolant.addCoolant(ILiquidStack fluid, int coolantRf, int coolantFactor);
 mods.thermalexpansion.Coolant.addCoolant(<liquid:lava>, 0, 1);
 
 
-//Это два из значений TE использования по умолчанию:
-//моды. hermalexpansion.Coolant.addCoolant(<liquid:water>, 250000, 20);
+//These are two of the values TE uses by default:
+//mods.thermalexpansion.Coolant.addCoolant(<liquid:water>, 250000, 20);
 //mods.thermalexpansion.Coolant.addCoolant(<liquid:cryotheum>, 3000000, 60);
 ```
 
-## Удалить охладитель
+## Remove Coolant
 
-Используйте это для дерегистрации существующего хладагента от менеджера.
+Use this to deregister an existing coolant from the manager.
 
 ```zenscript
 //mods.thermalexpansion.Coolant.removeCoolant(ILiquidStack fluid);
