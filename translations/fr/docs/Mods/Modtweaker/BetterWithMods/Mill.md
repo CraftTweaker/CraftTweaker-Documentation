@@ -1,36 +1,36 @@
-# Moulin
+# Mill
 
-## Recette basique
+## Basic Recipe
 
-* Ajoute une recette de moulin 
+* Adds a Mill Recipe 
 
 ```zenscript
-mods.betterwithmods.Mill.addRecipe(IIngredient[] entrées, IItemStack[] sorties);
-//Exemples
+mods.betterwithmods.Mill.addRecipe(IIngredient[] inputs, IItemStack[] outputs);
+//Examples
 mods.betterwithmods.Mill.addRecipe([<minecraft:dirt>],[<minecraft:stone>]);
 ```
 
-## Retirer
+## Removal
 
-* Retirer une recette de moulin basée sur la sortie
+* Remove a Mill recipe based on the output
 
 ```zenscript
-mods.betterwithmods.Mill.remove(IItemStack[] sorties);
+mods.betterwithmods.Mill.remove(IItemStack[] outputs);
 ```
 
-* Retirer toutes les recettes du moulin
+* Remove all Mill recipes
 
 ```zenscript
 mods.betterwithmods.Mill.removeAll();
 ```
 
-## Constructeur
+## Builder
 
-Le moulin a un constructeur de recettes qui permet un contrôle plus précis des recettes. Toutes les méthodes précédentes sont simplement des raccourcis vers l'utilisation du constructeur.
+The Mill has a recipe builder that allows more precise control over the recipes. All previous methods are simply short cuts to using the builder.
 
-* Créer un nouveau constructeur de moulins. `mods.betterwithmods.Mill.builder()`
+* To create a new Mill builder. `mods.betterwithmods.Mill.builder()`
 
-* Méthodes de construction du moulin
+* Mill builder methods
      
      * Sets up the inputs and outputs of the recipe  
           zenscript buildRecipe(IIngredient[] inputs, IItemStack[] outputs)  
@@ -38,10 +38,10 @@ Le moulin a un constructeur de recettes qui permet un contrôle plus précis des
                     zenscript
                     buildRecipe(IIngredient[] inputs, IItemStack[] outputs)
      
-     * Définit la priorité de la recette, plus la priorité sera basse plus tôt elle sera créée. Default=0.  
+     * Sets the priority of the recipe, the lower the priority the sooner it will be crafted. Default=0.  
           zenscript setPriority(int priority)  
               zenscript
-              setPriority(int priorité)
+              setPriority(int priority)
      
      * Set the sound of a Mill Recipe.  
           zenscript setSound(String soundLocation)  
@@ -54,7 +54,7 @@ Le moulin a un constructeur de recettes qui permet un contrôle plus précis des
                     zenscript
                     build()
 
-### Exemple d'utilisation du constructeur
+### Example builder usage
 
 ```zenscript
 mods.betterwithmods.Mill.builder()
