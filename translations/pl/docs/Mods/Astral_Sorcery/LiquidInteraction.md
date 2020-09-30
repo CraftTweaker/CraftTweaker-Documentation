@@ -1,19 +1,19 @@
-# Interakcje płynne
+# LiquidInteraction
 
-Zestaw interakcji płynnych jest stosowany w celu dodania interakcji płynnych (takich jak lawa i płynna skrobia) do chalionów systemu alarmowego.
+The liquidInteraction package is used to add Liquid interactions (like lava and liquid starlight) to AS chalices.
 
-## Importowanie pakietu
+## Importing the package
 
-Jeśli chcesz zaimportować pakiet, tutaj:
+If you want to import the package, here you go:
 
 ```zenscript
-importuj mods.astralsorcery.Płynna Interakcja;
+import mods.astralsorcery.LiquidInteraction;
 ```
 
-## Usuń interakcję
+## Remove interaction
 
-Ta funkcja usuwa pierwszy przepis, który znajdzie użyty do użycia podanych [płynów](/Vanilla/Liquids/ILiquidStack/) i zwraca dany stos wyjściowy [](/Vanilla/Items/IItemStack/).  
-Jeśli opuścisz wyjście, usuniesz pierwszy przepis, który wykorzystuje te dwie płyny niezależnie od ich wyjścia.
+This function removes the first recipe it finds that uses the given [liquids](/Vanilla/Liquids/ILiquidStack/) and returns the given output [stack](/Vanilla/Items/IItemStack/).  
+If you leave out the output, it will remove the first recipe that uses the two given liquids regardless of their output.
 
 ```zenscript
 //LiquidInteraction.removeInteraction(ILiquidStack liquid1, ILiquidStack liquid2, @Optional IItemStack output);
@@ -21,15 +21,15 @@ LiquidInteraction.removeInteraction(<liquid:lava>, <liquid:starlight>);
 LiquidInteraction.removeInteraction(<liquid:lava>, <liquid:starlight>, <minecraft:obsidian>);
 ```
 
-## Dodanie przepisu
+## Recipe addition
 
-Dodaje płynną interakcję do szalików
+Adds a liquid interaction to the chalice-interactions
 
-[Stos płynny](/Vanilla/Liquids/ILiquidStack/) liczy się jako ilość płynu, która zostanie zużyta w przypadku wystąpienia interakcji.  
-szansa1 i szansa2 określają prawdopodobieństwo, że płyny wejściowe1 i wejścia2 zostaną zużyte.  
-waga określa, jak prawdopodobne jest wybranie tej opcji w porównaniu z innymi interakcjami w płynie zarejestrowanymi dla danej pary wejść płynów
+[FluidStack](/Vanilla/Liquids/ILiquidStack/) amounts count as the amount of liquid that will be consumed if an interaction occurs.  
+chance1 and chance2 define the chances the input fluids input1 and input2 are consumed respectively.  
+weight determines how likely this is to be selected in comparison to the other liquid interactions registered for a given pair of fluid-inputs
 
 ```zenscript
-//Interakcja LiquidInteraction.addInteraction(ILiquidStack liquidIn1, float chanceConsumption1, ILiquidStack liquidIn2, float chanceConsumption2, int weight IItemStack output);
-Interakcja płynna(<liquid:lava> * 10, 0.1, <liquid:water> * 90, 0.2, 400, <minecraft:diamond>);
+//LiquidInteraction.addInteraction(ILiquidStack liquidIn1, float chanceConsumption1, ILiquidStack liquidIn2, float chanceConsumption2, int weight, IItemStack output);
+LiquidInteraction.addInteraction(<liquid:lava> * 10, 0.1, <liquid:water> * 90, 0.2, 400, <minecraft:diamond>);
 ```
