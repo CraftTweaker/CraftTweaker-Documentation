@@ -6,15 +6,15 @@
 import mods.appliedenergistics2.Grinder;
 ```
 
-### Hinzufügen
+### Adding
 
 ```zenscript
-Grinder.addRecipe(IItemStack Output, IItemStack Input, int turns, @Optional IItemStack secondary1Output, @Optional float secondary1Chance, @Optional IItemStack secondary2Output, @Optional float secondary2Chance);
+Grinder.addRecipe(IItemStack output, IItemStack input, int turns, @Optional IItemStack secondary1Output, @Optional float secondary1Chance, @Optional IItemStack secondary2Output, @Optional float secondary2Chance);
 
-Grinder. ddRecipe(<minecraft:sapling>, <minecraft:leaves>, 4, <minecraft:sapling:5>, 0.3);
+Grinder.addRecipe(<minecraft:sapling>, <minecraft:leaves>, 4, <minecraft:sapling:5>, 0.3);
 ```
 
-### Entfernen
+### Removing
 
 ```zenscript
 Grinder.removeRecipe(IItemStack input);
