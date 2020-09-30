@@ -1,8 +1,8 @@
-# Обработчик деталей Material Part
+# Material Part Bracket Handler
 
-The Material Part Bracket Handler gives you access to the Material Parts in the game. Вы можете получить только те материалы, которые зарегистрированы в игре, так что вам нужно быть осторожным в порядке загрузки скриптов.
+The Material Part Bracket Handler gives you access to the Material Parts in the game. It is only possible to get Material Parts registered in the game, so you need to be careful of the loading order of scripts.
 
-Материальные части упоминаются в обработчике деталей Material Part Bracket таким образом:
+Material Parts are referenced in the Material Part Bracket handler this way:
 
 ```zenscript
 <materialpart:material:part>
@@ -10,5 +10,5 @@ The Material Part Bracket Handler gives you access to the Material Parts in the 
 <materialpart:platinum:gear>
 ```
 
-Если материальная часть найдена, то будет возвращен объект MaterialPartDefinition.  
-Это объект, который действует как оба an [IMaterialPart](/Mods/ContentTweaker/Materials/Materials/MaterialPart/) а также объект [IItemStack](/Vanilla/Items/IItemStack/) , , так что оба интерфейса будут работать над возвращаемым определением.
+If the Material Part is found, this will return a MaterialPartDefinition Object.  
+This is an object that acts as both, an [IMaterialPart](/Mods/ContentTweaker/Materials/Materials/MaterialPart/) as well as an [IItemStack](/Vanilla/Items/IItemStack/) object, so methods of both interfaces will work on the returned definition.
