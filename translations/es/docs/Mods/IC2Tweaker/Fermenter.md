@@ -1,19 +1,19 @@
-# Fermentador
+# Fermenter
 
-## Paquete
+## Package
 
-`importar mods.ic2.Fermenter;`
+`import mods.ic2.Fermenter;`
 
-## Métodos
+## Methods
 
-- **[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) salida** El fluido fermentado
+- **[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) output** The fermented fluid
 - **[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) input** The input fluid
-- **calor intacto** La cantidad de calor necesario para la fermentación
+- **int heat** The amount of heat required for fermentation
 
-## Adicional
+## Addition
 
 ```zenscript
-mods.ic2.Fermenter.addRecipe(salida ILiquidStack, entrada ILiquidStack, calor interno);
+mods.ic2.Fermenter.addRecipe(ILiquidStack output, ILiquidStack input, int heat);
 
 mods.ic2.Fermenter.addRecipe(<liquid:lava> * 1000, <liquid:water> * 2000, 23333);
 ```
