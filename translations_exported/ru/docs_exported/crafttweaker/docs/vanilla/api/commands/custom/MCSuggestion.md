@@ -8,57 +8,57 @@
 crafttweaker.api.commands.custom.MCSuggestion
 ```
 
-## Методы
+## Methods
 ### применить
 
-Тип возврата: строка
+Return type: String
 
 ```zenscript
 myMCSuggestion.apply(ввод в виде строки);
 ```
 
-| Параметр | Тип    | Описание             |
+| Параметр | Тип    | Description          |
 | -------- | ------ | -------------------- |
 | input    | String | Описание отсутствует |
 
 
 ### сравнить
 
-Тип возврата: int
+Return type: int
 
 ```zenscript
 myMCSuggestion.compareTo(o как crafttweaker.api.commands.custom.MCSuggestion);
 ```
 
-| Параметр | Тип                                                                                        | Описание             |
+| Параметр | Тип                                                                                        | Description          |
 | -------- | ------------------------------------------------------------------------------------------ | -------------------- |
-| о        | [crafttweaker.api.commands.custom.MCSuggestion](/vanilla/api/commands/custom/MCSuggestion) | Описание отсутствует |
+| o        | [crafttweaker.api.commands.custom.MCSuggestion](/vanilla/api/commands/custom/MCSuggestion) | Описание отсутствует |
 
 
 ### сравнениеИгнорирования
 
-Тип возврата: int
+Return type: int
 
 ```zenscript
 myMCSuggestion.compareToIgnoreCase(b as crafttweaker.api.commands.custom.MCSuggestion);
 ```
 
-| Параметр | Тип                                                                                        | Описание             |
+| Параметр | Тип                                                                                        | Description          |
 | -------- | ------------------------------------------------------------------------------------------ | -------------------- |
 | т        | [crafttweaker.api.commands.custom.MCSuggestion](/vanilla/api/commands/custom/MCSuggestion) | Описание отсутствует |
 
 
-### равно
+### equals
 
-Тип возврата: логическое значение
+Return type: boolean
 
 ```zenscript
 myMCSuggestion.equals(o as Object);
 ```
 
-| Параметр | Тип    | Описание             |
+| Параметр | Тип    | Description          |
 | -------- | ------ | -------------------- |
-| о        | Объект | Описание отсутствует |
+| o        | Object | Описание отсутствует |
 
 
 ### развернуть
@@ -69,9 +69,9 @@ myMCSuggestion.equals(o as Object);
 myMCSuggestion.expand(команда String, range as crafttweaker.api.commands.custom.MCStringRange);
 ```
 
-| Параметр | Тип                                                                                          | Описание             |
+| Параметр | Тип                                                                                          | Description          |
 | -------- | -------------------------------------------------------------------------------------------- | -------------------- |
-| команда  | String                                                                                       | Описание отсутствует |
+| command  | String                                                                                       | Описание отсутствует |
 | range    | [crafttweaker.api.commands.custom.MCStringRange](/vanilla/api/commands/custom/MCStringRange) | Описание отсутствует |
 
 
@@ -85,7 +85,7 @@ myMCSuggestion.getRange();
 
 ### getText
 
-Тип возврата: строка
+Return type: String
 
 ```zenscript
 myMCSuggestion.getText();
@@ -93,7 +93,7 @@ myMCSuggestion.getText();
 
 ### getTooltip
 
-Тип возврата: строка
+Return type: String
 
 ```zenscript
 myMCSuggestion.getTooltip();
@@ -101,7 +101,7 @@ myMCSuggestion.getTooltip();
 
 ### hashCode
 
-Тип возврата: int
+Return type: int
 
 ```zenscript
 myMCSuggestion.hashCode();
@@ -109,7 +109,7 @@ myMCSuggestion.hashCode();
 
 ### toString
 
-Тип возврата: строка
+Return type: String
 
 ```zenscript
 myMCSuggestion.toString();
@@ -123,9 +123,9 @@ myMCSuggestion.toString();
 myMCSuggestion == o как объект
 ```
 
-| Параметр | Тип    | Описание             |
+| Параметр | Тип    | Description          |
 | -------- | ------ | -------------------- |
-| о        | Объект | Описание отсутствует |
+| o        | Object | Описание отсутствует |
 
 ## Утилиты
 
