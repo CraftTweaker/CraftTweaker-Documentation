@@ -1,17 +1,17 @@
-# 聚合反应器
+# Fusion Reactor
 
-## 导入软件包
+## Importing the Package
 `mods.techreborn.fusionReactor`
 
-## 添加配方
+## Adding Recipes
 ```zenscript
-mods.techreborn.fusionReactor.addRecipe(IIngredient topInput, IIngredient bownInput, IItemStack output, int startEU, int euTickk, int tickTime)；
+mods.techreborn.fusionReactor.addRecipe(IIngredient topInput, IIngredient bottomInput, IItemStack output, int startEU, int euTick, int tickTime);
 ```
 
-## 删除配方
+## Removing Recipes
 ```zenscript
 mods.techreborn.fusionReactor.removeTopInputRecipe(IIngredient iIngredient);
 mods.techreborn.fusionReactor.removeBottomInputRecipe(IIngredient iIngredient);
 mods.techreborn.fusionReactor.removeRecipe(IItemStack output);
-mods.techreborn.fusionReactor.reaveAll();
+mods.techreborn.fusionReactor.removeAll();
 ```
