@@ -1,42 +1,42 @@
-# Défense du Coffre de Mort
+# Death Chest Defense
 
-## Importation du paquet
+## Importing the package
 
-`Importer mods.vanilladeathchest.DeathChestDefense;`
+`import mods.vanilladeathchest.DeathChestDefense;`
 
-## Déverrouiller l'objet
-
-```zenscript
-//DeathChestDefense.setUnlocker(stage de chaîne, IItemStack déblocker);
-DeathChestDefense.setUnlocker("exemple_stage", <minecraft:diamond_axe> * 1000);
-```
-
-Un montant de consommation/dommage peut être défini en spécifiant une taille de pile comme ci-dessus.
-
-## Infligez des dégâts à l'objet de déverrouillage au lieu de le consommer
+## Unlocker item
 
 ```zenscript
-//DeathChestDefense.setDamageUnlocker<unk> adOfConsume(stage de cordes, drapeau de boolé);
-DeathChestDefense.setDamageUnlocker<unk> adOfConsume("example_stage", true);
+//DeathChestDefense.setUnlocker(string stage, IItemStack unlocker);
+DeathChestDefense.setUnlocker("example_stage", <minecraft:diamond_axe> * 1000);
 ```
 
-## Déverrouiller le message de chat échoué
+A consumption/damage amount can be set by specifying a stack size like above.
+
+## Damage the unlocker item rather than consuming it
+
+```zenscript
+//DeathChestDefense.setDamageUnlockerInsteadOfConsume(string stage, bool flag);
+DeathChestDefense.setDamageUnlockerInsteadOfConsume("example_stage", true);
+```
+
+## Unlock failed chat message
 
 ```zenscript
 //DeathChestDefense.setUnlockFailedChatMessage(string stage, string message);
-DeathChestDefense.setUnlockFailedChatMessage("example_stage", "Vous devez obtenir un %2$s pour débloquer votre coffre!");
+DeathChestDefense.setUnlockFailedChatMessage("example_stage", "You need to get a %2$s to unlock your chest!");
 ```
 
-La chaîne prend deux arguments : la quantité et le nom d'affichage des éléments requis.
+The string takes two arguments: the amount and display name of the required items.
 
-## Entité de défense
+## Defense entity
 
 ```zenscript
-//DeathChestDefense.setDefenseEntity(stage de chaîne, IEntityDefinition defenseEntity);
-DeathChestDefense.setDefenseEntity("exemple_stage", <entity:minecraft:zombie_pigman>);
+//DeathChestDefense.setDefenseEntity(string stage, IEntityDefinition defenseEntity);
+DeathChestDefense.setDefenseEntity("example_stage", <entity:minecraft:zombie_pigman>);
 ```
 
-## NBT de l'entité de défense
+## Defense entity NBT
 
 ```zenscript
 //DeathChestDefense.setDefenseEntityNBT(string stage, IData nbt);
@@ -50,11 +50,11 @@ DeathChestDefense.setDefenseEntityNBT("example_stage", {
 });
 ```
 
-`nbt` doit être un [DataMap](/Vanilla/Data/DataMap/).
+`nbt` should be a [DataMap](/Vanilla/Data/DataMap/).
 
-## Nombre d'apparition d'entités de défense
+## Defense entity spawn count
 
 ```zenscript
-//DeathChestDefense.setDefenseEntitySpawnCount(stage de cordes, nombre d'ints);
+//DeathChestDefense.setDefenseEntitySpawnCount(string stage, int count);
 DeathChestDefense.setDefenseEntitySpawnCount("example_stage", 500);
 ```
