@@ -1,60 +1,60 @@
 # InitialInventory
 
-## Opis
+## Description
 
-Ta modyfikacja dodaje wsparcie dla gracza, aby otrzymać przedmiot, gdy dołączą do świata, a następnie nigdy więc, podobna do tego, jak niektóre mody dają graczom książki, gdy po raz pierwszy dołączają do świata.
+This mod adds support for the player to be given an item when they join a world, and then never again, similar to how some mods give players books when they join a world for the first time.
 
-## Pakiet
+## Package
 `mods.initialinventory.InvHandler`
 
-## Dodawanie elementów początkowych
+## Adding starting items
 
-Spowoduje to dodanie przedmiotu do ekwipunku graczy kiedy dołączą do świata.
+This will add an item to the players inventory when they join the world.
 
-Parametry są następujące:
+The parameters are:
 
 
 Param: `key`
 
-Typ: `String`
+Type: `String`
 
-Opis:
+Description:
 
-Wykorzystywane do określenia, czy dany przedmiot powinien zostać podany. Kluczem może być dowolny ciąg. Punktem jest ustalenie, czy gracz otrzymał wcześniej zestaw przedmiotów.
+Used to determine if an item should be given. A key can be any string, the point of it is to determine if a player has been given a set of items before.
 
-Jest to przydatne dla paczek modów, które później dodają więcej elementów startowych, używając innego klucza, gracze, którzy już zaczęli grać w paczkę, mogą nadal otrzymywać te przedmioty. Przykładem byłoby:
+It is useful for modpacks which later add more starting items, by using a different key, players who have already started playing the pack, can still receive those items. An example would be:
 
-Dodaj diament jako przedmiot startowy z kluczem "1", dołącz do świata, gracz otrzyma diament.
+Add a diamond as a starting item with key "1", join the world, the player will get the diamond.
 
-Dodaj jabłko jako przedmiot startowy z kluczem "2", dołącz do świata, gracz otrzyma jabłko, ale nie diament.
+Add an apple as a starting item with key "2", join the world, the player will get the apple, but not the diamond again.
 
-Stwórz nowy świat, gracz otrzyma zarówno jabłko, jak i diament.
+Make a new world, the player will receive both an apple and a diamond.
 
 param: `item`
 
 Type `IItemStack`
 
-Opis:
+Description:
 
-Przedmiot do oddania graczowi po dołączeniu.
+The item to give to the player when they join.
 
-Param: `indeks`
+Param: `index`
 
-Typ: `int`
+Type: `int`
 
-Opis:
+Description:
 
-Opcjonalna liczba całkowita, aby określić, gdzie przedmiot zostanie podany, może być użyta do umieszczenia przedmiotu w polu ekwipunku jak miejsce na zbroję.
+Optional integer to define where the item will be given, can be used to put an item in a inventory slot like an armor slot.
 
-Jeśli zostawione, domyślnie -1, co oznacza, że umieści go w pierwszym dostępnym slocie, lub połączyć go z innymi przedmiotami, które mogą już znajdować się w ekwipunku.
+If left out, will default to -1, which means it will put it in the first available slot, or combine it with other items that may already be in the inventory.
 
 
-## Przykład
+## Example
 
 ```zenscript
-//mods.initialinventory.InvHandler.addStartingItem(String key, IItemStack itemem, Opcjonalny indeks int);
-mods.initialinventory.InvHandler.addStartingItem("jabłka", <item:minecraft:apple>);
-mods.initialinventory.InvHandler.addStartingItem("jabłka", <item:minecraft:golden_apple>, 5);
+//mods.initialinventory.InvHandler.addStartingItem(String key, IItemStack item, Optional int index);
+mods.initialinventory.InvHandler.addStartingItem("apples", <item:minecraft:apple>);
+mods.initialinventory.InvHandler.addStartingItem("apples", <item:minecraft:golden_apple>, 5);
 ```
 
 
