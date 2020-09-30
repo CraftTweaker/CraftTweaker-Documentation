@@ -1,21 +1,21 @@
-# Ingegneria Immersiva
+# Immersive Engineering
 
-## Crediti:
+## Credits:
 
-I crediti vanno a Skysom per aiutarmi a guidarmi attraverso questo e per avermi permesso di rielaborare alcuni dei suoi codici da Multiblockstages!
+Credits goes out to Skysom for helping guide me through this and for allowing me to rework some of his code from MultiblockStages!
 
-## Spiegazione:
+## Explaination:
 
-Immersive Engineering-Support attualmente consiste di:
+Immersive Engineering-Support currently consists of:
 
-- Un comando per il dumping del nome della stringa di tutti i Multiblock IE. 
-    - Comando è: /ct ieMultiBlocks
-- Multiblock Gating utilizzando una sintassi basata su Crt.
+- A Command for dumping the string name of all IE Multiblocks. 
+    - Command is: /ct ieMultiBlocks
+- Multiblock Gating using a Crt-based Syntax.
 
-### Sintassi:
+### Syntax:
 
-    Esempio vuoto:
-    mods.compatskills.IEMultiBlockGate.addGate(String multiBlockName, String failureMessage, Stringa... defaultRequirements);
+    Blank Example:
+    mods.compatskills.IEMultiBlockGate.addGate(String multiBlockName, String failureMessage, String... defaultRequirements);
     
-    Esempio di lavoro:
-    mods.compatskills.IEMultiBlockGate.addGate("IE:DieselGenerator", "Temo che questo sia troppo complesso per un idiota come te!", "reskillable:building<unk> 15", "reskillable:magic<unk> 7", "stage<unk> test", "adv<unk> minecraft:husbandry/plant_seed");
+    Working Example:
+    mods.compatskills.IEMultiBlockGate.addGate("IE:DieselGenerator", "I'm afraid this is just too complex for an idiot like you!", "reskillable:building|15", "reskillable:magic|7", "stage|test", "adv|minecraft:husbandry/plant_seed");
