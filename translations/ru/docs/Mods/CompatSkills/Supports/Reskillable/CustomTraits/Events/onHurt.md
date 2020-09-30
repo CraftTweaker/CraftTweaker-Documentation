@@ -1,12 +1,12 @@
 ### onHurt
 
-| Сетчат/Геттер/Метод | Имена методов      | Имена           | Input/Output                                               |
-|:------------------- |:------------------ |:--------------- | ---------------------------------------------------------- |
-| Геттер              | getDamageSource(); | damageSource(); | Возвращает [IDamageSource](/Vanilla/Damage/IDamageSource/) |
-| Геттер              | getAmount();       | сумма();        | Возвращает плавающий                                       |
+| Setter/Getter/Method | Method Names       | Names           | Input/Output                                               |
+|:-------------------- |:------------------ |:--------------- | ---------------------------------------------------------- |
+| Getter               | getDamageSource(); | damageSource(); | Returns an [IDamageSource](/Vanilla/Damage/IDamageSource/) |
+| Getter               | getAmount();       | amount();       | Returns an Float                                           |
 
     var test = mods.compatskills.TraitCreator.createTrait("test", 2, 3, "compatskills:banana", 1, "compatskills:banana|5");
     
     test.onHurt = function(event as crafttweaker.event.EntityLivingHurtEvent) {
-    ...
+        ...
     };
