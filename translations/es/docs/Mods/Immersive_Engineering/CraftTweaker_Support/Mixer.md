@@ -1,39 +1,39 @@
-# Mezclador
+# Mixer
 
-El paquete Mixer se puede utilizar para añadir/quitar recetas para/de la Mezcladora de Ingeniería Inmersiva.
+The Mixer package can be used to add/remove recipes to/from the Immersive Engineering Mixer.
 
-## Llamar al paquete
+## Calling The Package
 
-Puede llamar al paquete Mixer usando `mods.immersiveengineering.Mixer`.
+You can call the Mixer package using `mods.immersiveengineering.Mixer`.
 
-## Añadir Receta
+## Add Recipe
 
-| Requerido | Tipo              | Tipo de Datos                                                     |
-| --------- | ----------------- | ----------------------------------------------------------------- |
-| Requerido | Salida de fluidos | [Fluidstack](/Vanilla/Liquids/ILiquidStack/)                      |
-| Requerido | Fluid Input       | [Fluidstack](/Vanilla/Liquids/ILiquidStack/)                      |
-| Requerido | Item Inputs       | [IIngrediente](/Vanilla/Variable_Types/IIngredient/) como Arreglo |
-| Requerido | Energía           | Entero                                                            |
+| Required | Type         | Data Type                                                    |
+| -------- | ------------ | ------------------------------------------------------------ |
+| Required | Fluid Output | [Fluidstack](/Vanilla/Liquids/ILiquidStack/)                 |
+| Required | Fluid Input  | [Fluidstack](/Vanilla/Liquids/ILiquidStack/)                 |
+| Required | Item Inputs  | [IIngredient](/Vanilla/Variable_Types/IIngredient/) as Array |
+| Required | Energy       | Integer                                                      |
 
-### Ejemplo
+### Example
 
 ```zenscript
-//Ejemplo:
-mods.immersiveengineering.Mixer.addRecipe(salida ILiquidStack, ILiquidStack fluidInput, IIngredient[] itemInputs, int energy);
+//Example:
+mods.immersiveengineering.Mixer.addRecipe(ILiquidStack output, ILiquidStack fluidInput, IIngredient[] itemInputs, int energy);
 
 mods.immersiveengineering.Mixer.addRecipe(<liquid:lava>, <liquid:water>, [<ore:logWood>, <minecraft:dirt>], 2048);
 ```
 
-## Eliminar receta
+## Remove Recipe
 
-| Tipo   | Tipo de Datos                                |
+| Type   | Data Type                                    |
 | ------ | -------------------------------------------- |
-| Salida | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
+| Output | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
 
-### Ejemplo
+### Example
 
 ```zenscript
-//Ejemplo:
+//Example:
 mods.immersiveengineering.Mixer.removeRecipe(ILiquidStack output);
 
 mods.immersiveengineering.Mixer.removeRecipe(<liquid:lava>);
