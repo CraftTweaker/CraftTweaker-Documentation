@@ -1,21 +1,21 @@
-# Forge Tartarique
+# Tartaric Forge
 
-## Paquet
+## Package
 
-`format@@0 mods.bloodmagic.TartaricForge`
+`mods.bloodmagic.TartaricForge`
 
-## Ajouter
+## Addition
 
 ```zenscript
-les entrées ont une taille maximale de 4
-//mods.bloodmagic.TartaricForge.addRecipe(IItemStack, IItemStack[] entrées, double minSouls, double soulDrain);
-mods. loodmagic.TartaricForge.addRecipe(<minecraft:diamond>,[<minecraft:dirt>, <minecraft:dirt>, <minecraft:dirt>, <minecraft:dirt>], 10,10);
+inputs has a max size of 4
+//mods.bloodmagic.TartaricForge.addRecipe(IItemStack output, IItemStack[] inputs, double minSouls, double soulDrain);
+mods.bloodmagic.TartaricForge.addRecipe(<minecraft:diamond>,[<minecraft:dirt>, <minecraft:dirt>, <minecraft:dirt>, <minecraft:dirt>], 10,10);
 ```
 
-## Retirer
+## Removal
 
 ```zenscript
-inputs a une taille maximale de 4
-//mods.bloodmagic.TartaricForge.removeRecipe(IItemStack[] entrées);
+inputs has a max size of 4
+//mods.bloodmagic.TartaricForge.removeRecipe(IItemStack[] inputs);
 mods.bloodmagic.TartaricForge.removeRecipe([<minecraft:ghast_tear>,<minecraft:feather>, <minecraft:feather>]);
 ```
