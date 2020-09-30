@@ -1,16 +1,16 @@
 # Skill_Change Tweaker
 
-## Merkmal:
+## Feature:
 
-Mit dieser Funktion kannst du als Spieler eine Gruppe von Befehlen festlegen, die du auf einem Spieler ausführen möchtest, der ein Merkmal entsperren/sperrt oder ein bestimmtes Fähigkeitslevel erreicht.
+This feature will allow you as the player to set a group of commands you want to run upon a player unlocking/locking a trait or reaching a specific Skill Level.
 
 ## Syntax:
 
-    Leere Beispiele:
-    mods.compatskills.SkillChange.addLevelUpCommands(CTSkill Skill, Int, String... Kommandos);
-    mods.compatskills.SkillChange.addUnlockableUnlockCommands(CTUnlockable unlockable, String... Kommandos);
-    mods.compatskills.SkillChange.addUnlockableLockCommands(CTUnlockable unlockable, String... Kommandos);
+    Blank Examples:
+    mods.compatskills.SkillChange.addLevelUpCommands(CTSkill skill, int level, String... commands);
+    mods.compatskills.SkillChange.addUnlockableUnlockCommands(CTUnlockable unlockable, String... commands);
+    mods.compatskills.SkillChange.addUnlockableLockCommands(CTUnlockable unlockable, String... commands);
     
     mods.compatskills.SkillChange.addLevelUpCommands(<skill:reskillable:attack>, 5, "/give @e minecraft:stone 1");
-    mods.compatskills.SkillChange. ddUnlockableUnlockCommands(<trait:reskillable:battle_spirit>, "/give @e minecraft:stone 1", "/give @e minecraft:stone 2");
-    mods.compatskills.SkillChange. ddUnlockableLockCommands(<trait:reskillable:battle_spirit>, "/give @e minecraft:stone 1", "/give @e minecraft:stone 2", "/give @e minecraft:stone 3");
+    mods.compatskills.SkillChange.addUnlockableUnlockCommands(<trait:reskillable:battle_spirit>, "/give @e minecraft:stone 1", "/give @e minecraft:stone 2");
+    mods.compatskills.SkillChange.addUnlockableLockCommands(<trait:reskillable:battle_spirit>, "/give @e minecraft:stone 1", "/give @e minecraft:stone 2", "/give @e minecraft:stone 3");
