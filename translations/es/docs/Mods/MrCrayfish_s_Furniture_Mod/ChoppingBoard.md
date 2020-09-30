@@ -1,33 +1,33 @@
-# Tablero de corte
+# Chopping Board
 
-El tablero de corte te permite cortar un objeto en muchas piezas de otro objeto.
+The Chopping Board allows you to chop up an item into many pieces of another item.
 
-Por defecto sólo corta el pan en 6 rodajas de pan.
+By default only cuts bread into 6 bread slices.
 
-## Eliminando recetas de corte
+## Removing Chopping Recipes
 
-## Quitar recetas de corte coincidentes.
+## Remove matching chopping recipes.
 
 ```zenscript
 mods.cfm.ChoppingBoard.remove(@Optional final IIngredient output, @Optional final IIngredient input);
 
-// Elimina la receta con el pan como elemento
-mods.cfm.ChoppingBoard. emove(null,<minecraft:bread>);
-// Elimina las recetas que resultan en 6 rebanadas de pan (igual que la receta anterior, por lo que no tendrán efecto si se usan después)
-mods. fm.ChoppingBoard.remove(<cfm:item_bread_slice>.withAmount(6));
+// Remove recipe with bread as the input item
+mods.cfm.ChoppingBoard.remove(null,<minecraft:bread>);
+// Remove recipes that result in 6 bread slices (same match as above recipe, so will have no effect if used after)
+mods.cfm.ChoppingBoard.remove(<cfm:item_bread_slice>.withAmount(6));
 ```
 
-## Añadiendo recetas de corte
+## Adding Chopping Recipes
 
-Añade una receta para cortar.
+Add a chopping recipe.
 
-## La entrada requiere tamaño de la pila de 1.
+## Input requires stack size of 1.
 
 ```zenscript
-mods.cfm.ChoppingBoard.addRecipe(@Nonnull final ItemStack output, @Nonnull final ItemStack input);
+mods.cfm.ChoppingBoard.addRecipe(@Nonnull final IItemStack output, @Nonnull final IItemStack input);
 
-// Añadir una receta para cortar el trigo en 2 sticks
-mods.cfm.ChopingBoard. ddRecipe(<minecraft:stick>.withAmount(2),<minecraft:wheat>);
-// Añade una receta para cortar el pan en 3 trigos
+// Add a recipe to chop wheat into 2 sticks
+mods.cfm.ChoppingBoard.addRecipe(<minecraft:stick>.withAmount(2),<minecraft:wheat>);
+// Add a recipe to chop bread into 3 wheat
 mods.cfm.ChoppingBoard.addRecipe(<minecraft:wheat>.withAmount(3),<minecraft:bread>);
 ```
