@@ -1,33 +1,33 @@
 # ItemBuilderBasic
 
-[mods.contenttweaker.item.basic.ItemBuilderBasic#build](/mods/contenttweaker/API/item/basic/ItemBuilderBasic/#build) によって呼び出されるアイテムの基本ビルダー。 特別なプロパティはありません。存在します。
+[mods.contenttweaker.item.basic.ItemBuilderBasic#build](/mods/contenttweaker/API/item/basic/ItemBuilderBasic/#build) によって呼び出されるアイテムの基本ビルダー。 Does not have any special properties, it exists.
 
-このクラスは mod-id `contenttweaker` を持つ mod によって追加されました。 従って、この機能を利用する場合はこのmodをインストールする必要があります。
+This class was added by a mod with mod-id `contenttweaker`. So you need to have this mod installed if you want to use this feature.
 
-## クラスのインポート
-問題が発生した場合には、インポートが必要になります。とはいえ、お手数ですが予めインポートしておくほうが安全です。
+## Importing the class
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
 ```zenscript
 mods.contenttweaker.item.basic.ItemBuilderBasic
 ```
 
-## 実装されたインターフェース
-ItemBuilderBasic は以下のインターフェイスを実装しています。 つまり、利用可能な任意のメソッドはこのクラスでも使用できます。
+## Implemented Interfaces
+ItemBuilderBasic implements the following interfaces. That means any method available to them can also be used on this class.
 - [mods.contenttweaker.api.IIsBuilder](/mods/contenttweaker/API/api/IIsBuilder)
 - [mods.contenttweaker.item.ItemTypeBuilder](/mods/contenttweaker/API/item/ItemTypeBuilder)
 
-## メソッド
-### ビルド
+## Methods
+### build
 
-このビルダーが構築されると思われるものは何でも実際に構築するようCoTに指示します。
+Instructs CoT to actually build whatever this builder is supposed to be building.
 
 ```zenscript
 new ItemBuilder().withType<ItemBuilderBasic>().build(resourceLocation as String);
 new ItemBuilder().withType<ItemBuilderBasic>().build("my_awesome_block");
 ```
 
-| パラメータ   | タイプ  | 説明               |
-| ------- | ---- | ---------------- |
-| リソースの場所 | 文字列型 | このブロックを与えるリソースパス |
+| Parameter        | Type   | Description                          |
+| ---------------- | ------ | ------------------------------------ |
+| resourceLocation | String | The resource path to give this block |
 
 
 
