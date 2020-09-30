@@ -70,7 +70,7 @@ myMapData.asMap();
 
 返回：`表示此IData（值和类型）的字符串。</ 0></p>
 
-<p spaces-before="0">返回类型：字符串</p>
+<p spaces-before="0">Return type: String</p>
 
 <pre><code class="zenscript">myMapData.asString();
 `</pre> 
@@ -83,7 +83,7 @@ myMapData.asMap();
 
 返回： `如果地图包含密钥` 为 True
 
-返回类型：布尔值
+Return type: boolean
 
 
 
@@ -93,16 +93,16 @@ myMapData.contains("Hello");
 ```
 
 
-| 参数  | 类型          | 描述     |
-| --- | ----------- | ------ |
-| key | 字符串[string] | 要搜索的密钥 |
+| 参数  | 类型     | 描述     |
+| --- | ------ | ------ |
+| key | String | 要搜索的密钥 |
 
 
 检查这个IData是否包含另一个IData，主要用于[craftminstruer.api.data.ICollectionData](/vanilla/api/data/ICollectionData)的子类，与其他IData类型的同等检查
 
 返回: `true 如果给定的 IData 包含在此 IData 中`
 
-返回类型：布尔值
+Return type: boolean
 
 
 
@@ -155,9 +155,9 @@ myMapData.get("Hello");
 ```
 
 
-| 参数  | 类型          | 描述     |
-| --- | ----------- | ------ |
-| key | 字符串[string] | 要搜索的密钥 |
+| 参数  | 类型     | 描述     |
+| --- | ------ | ------ |
+| key | String | 要搜索的密钥 |
 
 
 
@@ -188,7 +188,7 @@ myMapData.getId();
 
 返回：`表示此 IData 内部INBT 的字符串。`
 
-返回类型：字符串
+Return type: String
 
 
 
@@ -241,7 +241,7 @@ myMapData.put("Hello", "Goodbye");
 
 | 参数    | 类型                                                     | 描述       |
 | ----- | ------------------------------------------------------ | -------- |
-| key   | 字符串[string]                                            | 要设置值的密钥。 |
+| key   | String                                                 | 要设置值的密钥。 |
 | value | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | 要设置的值    |
 
 
@@ -268,7 +268,7 @@ myMapData.putAll({Hello: "Goodbye", Item: "Bedrock"});
 
 
 
-### remove #移除
+### remove
 
 从地图中移除给定键的条目
 
@@ -280,9 +280,9 @@ myMapData.remove("Somewhere");
 ```
 
 
-| 参数  | 类型          | 描述        |
-| --- | ----------- | --------- |
-| key | 字符串[string] | 要删除的条目的密钥 |
+| 参数  | 类型     | 描述        |
+| --- | ------ | --------- |
+| key | String | 要删除的条目的密钥 |
 
 
 
@@ -295,7 +295,7 @@ myMapData.remove("Somewhere");
 | ----------- | ---------------------------- | ---- | ----- |
 | isEmpty     | boolean                      | true | false |
 | keySet #设置键 | 设置&lt;String&gt; | true | false |
-| 大小          | 整数                           | true | false |
+| size        | int                          | true | false |
 
 
 
@@ -321,7 +321,7 @@ myMapData + data as crafttweaker.api.data.IData
 
 
 
-## 卡斯特尔
+## Casters
 
 | 结果类型                                                           | 是否隐藏 |
 | -------------------------------------------------------------- | ---- |
