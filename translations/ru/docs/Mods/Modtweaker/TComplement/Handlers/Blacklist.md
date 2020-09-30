@@ -1,21 +1,21 @@
-# Черный список
+# Blacklist
 
-Пакет Blacklist используется для добавления/удаления рецептов из/в черный список.
+The Blacklist package is used for adding/removing recipes from/to the melter Blacklist.
 
-## Звонок
+## Calling
 
-Вы можете вызвать пакет Blacklist с помощью `mods.tcomplement.Blacklist`
+You can call the Blacklist package using `mods.tcomplement.Blacklist`
 
-## Добавление черного списка
+## Blacklist entry addition
 
 ```zenscript
-//mods.tcomplement.Blacklist.addRecipe(ILiquidStack, ввод IItemStack);
+//mods.tcomplement.Blacklist.addRecipe(ILiquidStack output, IItemStack input);
 mods.tcomplement.Blacklist.addRecipe(<liquid:seared_stone>, <minecraft:stone>);
 ```
 
-## Удаление записи черного списка
+## Blacklist entry removal
 
 ```zenscript
-//mods.tcomplement.Blacklist.removeRecipe(IItemStack);
+//mods.tcomplement.Blacklist.removeRecipe(IItemStack input);
 mods.tcomplement.Blacklist.removeRecipe(<minecraft:cobblestone>);
 ```
