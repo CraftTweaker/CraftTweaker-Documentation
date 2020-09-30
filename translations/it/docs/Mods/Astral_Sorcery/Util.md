@@ -1,18 +1,18 @@
 # Util
 
-Il pacchetto utils consente di recuperare un dato [IIngredient](/Vanilla/Variable_Types/IIngredient/) dai parametri forniti.
+The utils package allows you to retrieve a given [IIngredient](/Vanilla/Variable_Types/IIngredient/) from parameters provided.
 
-## Importazione del pacchetto
+## Importing the package
 
-Se ti trovi mai bisogno di un'importazione per questo, ecco la tua possibilità:
+If you ever find yourself needing an import for this, here's your chance:
 
 ```zenscript
 import mods.astralsorcery.Utils;
 ```
 
-## Ottieni un ingrediente di cristallo
+## Get a Crystal Ingredient
 
-Questo ti restituirà un ingrediente corrispondente a tutti i cristalli AS.
+This will return you an ingredient matching all befitting AS crystals.
 
 ```zenscript
 //Utils.getCrystalORIngredient(boolean hasToBeCelestial, boolean hasToBeAttuned);
