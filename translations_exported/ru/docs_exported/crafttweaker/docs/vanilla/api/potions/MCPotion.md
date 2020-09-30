@@ -1,4 +1,4 @@
-# MCЗелье
+# MCPotion
 
 Этот класс был добавлен модом с mod-id `crafttweaker`. Так что если вы хотите использовать эту функцию, вам нужно установить этот мод.
 
@@ -8,22 +8,22 @@
 crafttweaker.api.potion.MCPotion
 ```
 
-## Реализованные интерфейсы
-MCPotion реализует следующие интерфейсы. Следовательно, методы из них доступны в этом классе.
+## Implemented Interfaces
+MCPotion implements the following interfaces. That means any method available to them can also be used on this class.
 - [crafttweaker.api.brackets.CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
 
-## Методы
+## Methods
 ### getNamePrefixed
 
-Тип возврата: строка
+Return type: String
 
 ```zenscript
 myMCPotion.getNamePrefixed(name as String);
 ```
 
-| Параметр | Тип    | Описание             |
+| Параметр | Тип    | Description          |
 | -------- | ------ | -------------------- |
-| имя      | String | Описание отсутствует |
+| name     | String | Описание отсутствует |
 
 
 
@@ -31,7 +31,7 @@ myMCPotion.getNamePrefixed(name as String);
 
 | Название         | Тип                                                                                                                     | Имеет Getter | Имеет Setter |
 | ---------------- | ----------------------------------------------------------------------------------------------------------------------- | ------------ | ------------ |
-| командная строка | String                                                                                                                  | true         | false        |
-| эффекты          | Список&lt;[crafttweaker.api.potion.MCPotionEffectInstance](/vanilla/api/potions/MCPotionEffectInstance)&gt; | true         | false        |
+| commandString    | String                                                                                                                  | true         | false        |
+| effects          | Список&lt;[crafttweaker.api.potion.MCPotionEffectInstance](/vanilla/api/potions/MCPotionEffectInstance)&gt; | true         | false        |
 | hasInstantEffect | boolean                                                                                                                 | true         | false        |
 
