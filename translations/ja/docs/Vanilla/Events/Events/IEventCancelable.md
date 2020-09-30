@@ -1,18 +1,18 @@
 # IEventCancelable
 
-このインターフェイスは、キャンセルすることができるすべてのイベントによって拡張されます。  
-つまり、CrTを使ってキャンセルしたり、キャンセルされたかどうかを確認することができます。
+This interface is extended by all Events that can be cancelled.  
+That means you can cancel them using CrT or check if they have been canceled.
 
-CrTがそれらを受け取る前にキャンセルされたイベントはハンドラによってチェックされないことに注意してください。  
-また、複数のハンドラを登録し、そのうちの1つがイベントをキャンセルすると、他のCrTハンドラは引き続きそれを受け取ります!
+Note that events that have been canceled before CrT receives them will not be checked by the handlers.  
+Also, if you register multiple handlers, and one of them cancels the event, the other CrT handlers will still receive it!
 
-## クラスのインポート
+## Importing the class
 
-エラーを避けるためにクラスを [インポート](/AdvancedFunctions/Import/) する必要があるかもしれません。  
+It might be required to [import](/AdvancedFunctions/Import/) the class to avoid errors.  
 `import crafttweaker.event.IEventCancelable;`
 
-## 何が彼らを使って行うことができますか?
+## What can be done with them?
 
-- `event.cancel();` メソッド, void (なし) を返します。
-- `event.canceled;` Getter, bool.
+- `event.cancel();` Method, returns void (nothing).
+- `event.canceled;` Getter, returns a bool.
 - `event.canceled = true;` Setter
