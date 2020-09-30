@@ -1,8 +1,8 @@
-# Materialklasse-Handler
+# Material Bracket Handler
 
-Der einzige Zweck des Klammerhandhabers ist die Bereitstellung von [Materialdarstellungen](/Mods/ContentTweaker/Tinkers_Construct/Material/).
+The Material Bracket handler's sole purpose is providing you with [Material Representations](/Mods/ContentTweaker/Tinkers_Construct/Material/).
 
-Sie verwenden den Trait-Klammer-Handler folgendermaßen:
+You use the trait bracket handler like this:
 
 ```zenscript
 <ticonmaterial:identifier>
@@ -10,4 +10,4 @@ Sie verwenden den Trait-Klammer-Handler folgendermaßen:
 <ticonmaterial:iron>
 ```
 
-Wenn das Material gefunden wird, gibt es ein Material-Repräsentation Objekt zurück. Weitere Informationen dazu finden Sie im [entsprechenden Wiki-Eintrag](/Mods/ContentTweaker/Tinkers_Construct/Material/).
+If the Material is found, this will return an Material Representation Object. Please refer to the [respective Wiki entry](/Mods/ContentTweaker/Tinkers_Construct/Material/) for further information on what you can do with these.
