@@ -1,27 +1,27 @@
 # IMachineSlot
 
-Una ranura para máquinas es una ranura que acepta objetos o líquidos.  
-Los necesita al crear una máquina usando el [IMachineRegistry](/Mods/ExtraUtilities2/CustomMachines/IMachineRegistry) más adelante.
+A Machine slot is a slot that either accepts Items or liquids.  
+You need them when creating a machine using the [IMachineRegistry](/Mods/ExtraUtilities2/CustomMachines/IMachineRegistry) later on.
 
-## Importando el paquete
+## Importing the package
 
-Si desea acortar las llamadas a métodos o encontrar cualquier problema, puede que necesite [importar](/AdvancedFunctions/Import) el paquete.  
-Puedes hacerlo usando
+If you want to shorten method calls or encounter any issues you might need to [import](/AdvancedFunctions/Import) the package.  
+You can do so using
 
 ```zenscript
-importar extrautionties2.Tweaker.IMachineSlot;
+import extrautilities2.Tweaker.IMachineSlot;
 ```
 
-## Crear un nuevo IMachineSlot
+## Creating a new IMachineSlot
 
-El paquete IMachineSlot ofrece métodos para crear nuevos objetos de IMachineSlot:
+The IMachineSlot package offers methods to create new IMachineSlot objects:
 
 ```zenscript
-extrauFirstties2.Tweaker.IMachineSlot.newItemStackSlot(name);
-extrauthes2.Tweaker.IMachineSlot.newItemStackSlot(name, isOptional);
-extrauFirstties2.Tweaker.IMachineSlot.newItemStackSlot(name, stackCapacity);
-extrauercities2.Tweaker.IMachineSlot.newItemStackSlot(name, isOptional, stackCapacity);
-extrauBILties2.Tweaker.IMachineSlot. ewItemStackSlot(name, color, isOptional, backgroundTexture, stackCapacity);
+extrautilities2.Tweaker.IMachineSlot.newItemStackSlot(name);
+extrautilities2.Tweaker.IMachineSlot.newItemStackSlot(name, isOptional);
+extrautilities2.Tweaker.IMachineSlot.newItemStackSlot(name, stackCapacity);
+extrautilities2.Tweaker.IMachineSlot.newItemStackSlot(name, isOptional, stackCapacity);
+extrautilities2.Tweaker.IMachineSlot.newItemStackSlot(name, color, isOptional, backgroundTexture, stackCapacity);
 
 
 newFluidSlot(name);
@@ -31,35 +31,35 @@ newFluidSlot(name, stackCapacity, isOptional, filterLiquidStack);
 newFluidSlot(name, stackCapacity, color, isOptional, filterLiquidStack);
 ```
 
-Todos estos métodos devolverán el nuevo Slot como objeto de IMachineSlot.
+All these methods will return the new Slot as IMachineSlot object.
 
-Los parámetros son:
+The parameters are:
 
-| Nombre            | Tipo                                          |
+| Name              | Type                                          |
 | ----------------- | --------------------------------------------- |
-| nombre            | cadena                                        |
-| opcional          | pluma                                         |
-| capacidad de pila | int                                           |
+| name              | string                                        |
+| isOptional        | bool                                          |
+| stackCapacity     | int                                           |
 | color             | int                                           |
-| textura de fondo  | cadena                                        |
+| backgroundTexture | string                                        |
 | filterLiquidStack | [ILiquidStack](/Vanilla/Liquids/ILiquidStack) |
 
-Qué hacen los parámetros:
+What the parameters do:
 
-- `name`: Nombre de la ranura. Usado para recetas más tarde. Asegúrese de que una máquina no tiene 2 ranuras con el mismo nombre.
-- `isoptional`: Indica si esta ranura debe o no ser rellenada para que comiencen los chequeos de recetas.
-- `Capacidad de pila`: ¿Cuántos artículos/millbuckets pueden caber en esta ranura?
-- `color`: ¿Qué color tendrá la ranura?
-- `textura de fondo`: Aquí se puede añadir una ruta de textura personalizada para el fondo de esta ranura.
-- `filterLiquidStack`: Si proporciona este objeto [ILiquidStack](/Vanilla/Liquids/ILiquidStack) , entonces sólo este fluido podrá entrar en la ranura.
+- `name`: The slot's name. Used for recipes later. Make sure that a machine has no 2 slots with the same name.
+- `isOptional`: Dictates whether or not this slot must be filled for recipe checks to commence.
+- `stackCapacity`: How many items/millibuckets can fit in this slot?
+- `color`: What color will the slot have?
+- `backgroundTexture`: A custom texture path for the background of this slot can be added here.
+- `filterLiquidStack`: If you provide this [ILiquidStack](/Vanilla/Liquids/ILiquidStack) object, then only this fluid will be allowed to enter the slot.
 
-## Obtetos
+## Getters
 
-También puede obtener información básica de un IMachineSlot también.  
-No esperes que estos getters devuelvan mágicamente algo diferente de lo que configuras la ranura al crearla.
+You can get basic information from an IMachineSlot as well.  
+Don't expect these getters to magically return something different from what you set the slot when creating it, though.
 
-| Nombre            | Tipo   |
-| ----------------- | ------ |
-| nombre            | cadena |
-| opcional          | pluma  |
-| capacidad de pila | int    |
+| Name          | Type   |
+| ------------- | ------ |
+| name          | string |
+| optional      | bool   |
+| stackCapacity | int    |
