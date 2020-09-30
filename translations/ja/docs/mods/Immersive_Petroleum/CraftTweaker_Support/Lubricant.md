@@ -1,8 +1,8 @@
-# 潤滑剤の登録
+# Lubricant Registration
 
 ## 登録
 
-| タイプ   | データタイプ                                      |
+| Type  | Data Type                                   |
 | ----- | ------------------------------------------- |
 | Input | [Fluidstack](/Vanilla/Liquids/IFluidStack/) |
 
@@ -10,15 +10,15 @@
 
 与えられた流体の量は、4 Ticksごとに使用されます。
 
-### コード例:
+### Code Example:
 ```zenscript
 mods.immersivepetroleum.Lubricant.register(IFluidStack lubricantEntry);
 mods.immersivepetroleum.Lubricant.register(<fluid:lava> * 500);
 ```
 
-## すべて削除
+## removeAll
 
-### コード例:
+### Code Example:
 ```zenscript
 mods.immersivepetroleum.Lubricant.removeAll();
 ```
