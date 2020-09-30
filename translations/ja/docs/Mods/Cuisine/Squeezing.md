@@ -1,4 +1,4 @@
-# Basin Squezing
+# Basin Squeezing
 
 ## 加算
 
@@ -11,7 +11,7 @@ BasinSqueezing.add(<item:minecraft:dirt>, <liquid:water> * 1000);
 BasinSqueezing.add(<ore:cobblestone> * 2, <liquid:lava> * 1000, <item:minecraft:diamond>);
 ```
 
-## 削除
+## Removal
 
 ```zenscript
 import mods.cuisine.BasinSqueezing;
@@ -22,10 +22,10 @@ BasinSqueezing.remove(IItemStack input, ILiquidStack inputFluid);
 BasinSqueezing.remove(<item:minecraft:dirt>, <liquid:water> * 1000);
 
 // Remove by identifier.
-BasinSceezing.remove(String id);
+BasinSqueezing.remove(String id);
 
-BasinSceezing.remove("recipe_name");
+BasinSqueezing.remove("recipe_name");
 
-// すべてを削除します！
+// Remove everything!
 BasinSqueezing.removeAll();
 ```
