@@ -1,33 +1,33 @@
-# 需求调低
+# Requirement Tweaker
 
-## PSA：
+## PSA:
 
-从1.2.0开始到现在，正在积极开发Rekkilable，以改进可重命名和竞争技能锁定系统的内部。 这是为了使今后能够建立更强有力的锁机制。
+As of 1.2.0 and forward, Reskillable is being actively developed to improve on the internals of Reskillable and CompatSkill's Locking Systems. This is in an effort to allow for more powerful locking mechanisms in the future.
 
-## 需要锁定：
+## Requirement-Locking:
 
-目前主要的 CrT 支持是要求锁定。 这也可以通过配置系统来实现。 However the Config System does **NOT** support NBT!
+Currently the main CrT support is for Requirement Locking. This can also be accomplished through the config system. However the Config System does **NOT** support NBT!
 
-### 语法：
+### Syntax:
 
-    // 空白示例：
-    mods.compatskills.Requirement.addRequirement(ItemStack项目，字符串... 已锁定)
+    // Blank Example:
+    mods.compatskills.Requirement.addRequirement(IItemStack item, String... locked)
     
-    工作示例：
+    Working Examples:
     
-    // 添加钻石比克轴的锁，带有Wildcard 元数据
-    mods.compattime。 equirement.addRequirement(<minecraft:diamond_pickaxe:*>, "reskillable:mining|4");
+    // Adds a lock for the Diamond Pickaxe with a Wildcard Metadata
+    mods.compatskills.Requirement.addRequirement(<minecraft:diamond_pickaxe:*>, "reskillable:mining|4");
     
-    // 添加一个 NBT Lock for Efficiency 5
-    mods. ompatskills.Requirement.addRequirement(<minecraft:diamond_pickaxe:*>.withTag({ench: [{lvl: 5 as short, id: 32 as short}]}), "reskillable:mining|5", "reskillable:magic|7");
+    // Adds a NBT Lock for Efficiency 5
+    mods.compatskills.Requirement.addRequirement(<minecraft:diamond_pickaxe:*>.withTag({ench: [{lvl: 5 as short, id: 32 as short}]}), "reskillable:mining|5", "reskillable:magic|7");
     
-    // 添加一个 NBT Lock for Silk Touch
-    mods. ompatskills.Requirement.addRequirement(<minecraft:diamond_pickaxe:*>.withTag({ench: [{lvl: 1 as short, id: 33 as short}]}), "reskillable:mining|6", "reskillable:agility|7");
+    // Adds a NBT Lock for Silk Touch
+    mods.compatskills.Requirement.addRequirement(<minecraft:diamond_pickaxe:*>.withTag({ench: [{lvl: 1 as short, id: 33 as short}]}), "reskillable:mining|6", "reskillable:agility|7");
     
-    // 添加一个 NBT 锁来解开3
-    mods. ompatskills.Requirement.addRequirement(<minecraft:diamond_pickaxe:*>.withTag({ench: [{lvl: 3 as short, id: 34 as short}]}), "reskillable:mining|7";
+    // Adds a NBT Lock for Unbreaking 3
+    mods.compatskills.Requirement.addRequirement(<minecraft:diamond_pickaxe:*>.withTag({ench: [{lvl: 3 as short, id: 34 as short}]}), "reskillable:mining|7", "reskillable:attack|7");
     
 
-将3个附魔锁合并为单个锁的示例：
+Example of the 3 Enchantment Locks being Combined into a single lock:
 
-![非常棒的锁](https://i.imgur.com/gCfETAh.png)
+![Awesome Lock](https://i.imgur.com/gCfETAh.png)
