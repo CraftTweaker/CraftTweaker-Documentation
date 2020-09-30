@@ -1,65 +1,65 @@
 # IMachineSlot
 
-Машиностроительный слот — это ячейка для приема предметов или жидкостей.  
-Они нужны при создании машины с помощью [IMachineRegistry](/Mods/ExtraUtilities2/CustomMachines/IMachineRegistry) позже.
+A Machine slot is a slot that either accepts Items or liquids.  
+You need them when creating a machine using the [IMachineRegistry](/Mods/ExtraUtilities2/CustomMachines/IMachineRegistry) later on.
 
 ## Импорт пакета
 
-Если вы хотите сократить вызовы методов или столкнуться с любыми проблемами, вам может потребоваться [импортировать](/AdvancedFunctions/Import) пакет.  
-Вы можете сделать это, используя
+If you want to shorten method calls or encounter any issues you might need to [import](/AdvancedFunctions/Import) the package.  
+You can do so using
 
 ```zenscript
-импорт extrautilities2.Tweaker.IMachineSlot;
+import extrautilities2.Tweaker.IMachineSlot;
 ```
 
-## Создание нового IMachineSlot
+## Creating a new IMachineSlot
 
-Слот IMachineSlot предлагает методы создания новых объектов IMachineSслота:
+The IMachineSlot package offers methods to create new IMachineSlot objects:
 
 ```zenscript
 extrautilities2.Tweaker.IMachineSlot.newItemStackSlot(name);
 extrautilities2.Tweaker.IMachineSlot.newItemStackSlot(name, isOptional);
 extrautilities2.Tweaker.IMachineSlot.newItemStackSlot(name, stackCapacity);
-extrautilities2.Tweaker.IMachineSlot.newItemStackSlot(name, isOptional, stackity);
-extrautilities2.Tweaker.IMachineSlot. ewItemStackSlot(имя, цвет, необязательный, фоновый текст, стэкконная вместимость);
+extrautilities2.Tweaker.IMachineSlot.newItemStackSlot(name, isOptional, stackCapacity);
+extrautilities2.Tweaker.IMachineSlot.newItemStackSlot(name, color, isOptional, backgroundTexture, stackCapacity);
 
 
 newFluidSlot(name);
 newFluidSlot(name, stackCapacity);
 newFluidSlot(name, stackCapacity, filterLiquidStack);
 newFluidSlot(name, stackCapacity, isOptional, filterLiquidStack);
-newFluidSlot(name, stackCapacity, цвет, isOptional, filterLiquidStack);
+newFluidSlot(name, stackCapacity, color, isOptional, filterLiquidStack);
 ```
 
-Все эти методы возвращают новый слот как объект IMachineSслот.
+All these methods will return the new Slot as IMachineSlot object.
 
-Эти параметры включают:
+The parameters are:
 
 | Название          | Тип                                           |
 | ----------------- | --------------------------------------------- |
 | name              | string                                        |
-| необязательный    | bool                                          |
-| емкость стека     | int                                           |
-| цвет              | int                                           |
-| фон текстуры      | string                                        |
+| isOptional        | bool                                          |
+| stackCapacity     | int                                           |
+| color             | int                                           |
+| backgroundTexture | string                                        |
 | filterLiquidStack | [ILiquidStack](/Vanilla/Liquids/ILiquidStack) |
 
-Что делают параметры:
+What the parameters do:
 
-- `имя`: Имя слота. Используется для рецептов позже. Убедитесь, что на машине нет 2 слота с одинаковым именем.
-- `isOptional`: Dictates, должен ли этот слот быть заполненным для начала проверки рецепта.
-- `стопка`: Сколько предметов/миллиблоков может поместиться в этот слот?
-- `цвет`: Какой цвет будет слот иметь?
-- `backgroundTexture`: Путь к текстуре для фона этого слота можно добавить здесь.
-- `filterLiquidStack`: Если вы предоставите этот объект [ILiquidStack](/Vanilla/Liquids/ILiquidStack) , то только эта жидкость будет разрешена входить в слот.
+- `name`: The slot's name. Used for recipes later. Make sure that a machine has no 2 slots with the same name.
+- `isOptional`: Dictates whether or not this slot must be filled for recipe checks to commence.
+- `stackCapacity`: How many items/millibuckets can fit in this slot?
+- `color`: What color will the slot have?
+- `backgroundTexture`: A custom texture path for the background of this slot can be added here.
+- `filterLiquidStack`: If you provide this [ILiquidStack](/Vanilla/Liquids/ILiquidStack) object, then only this fluid will be allowed to enter the slot.
 
-## Геттеры
+## Getters
 
-Вы также можете получить базовую информацию из IMachineSlot .  
-Не ожидайте от этих получателей волшебным возвращать что-то отличное от того, что вы установили слот при его создании.
+You can get basic information from an IMachineSlot as well.  
+Don't expect these getters to magically return something different from what you set the slot when creating it, though.
 
 | Название      | Тип    |
 | ------------- | ------ |
-| имя           | string |
-| опционально   | bool   |
-| емкость стека | int    |
+| name          | string |
+| optional      | bool   |
+| stackCapacity | int    |
