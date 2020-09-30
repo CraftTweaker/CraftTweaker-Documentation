@@ -1,30 +1,30 @@
-# 実験的なフラグプリプロセッサ指令format@@0
+# Experimental Flags Preprocessor Directive
 
-このプリプロセッサ指令により、特定の ZenScript 関数に対していくつかの実験的な動作が可能になります。
+This preprocessor directive enables some experimental behavior for certain ZenScript functionalities.
 
-Being part of the ZenScriptX project, and due to the experimental nature of the project in itself, some features may require extensive testing on the compiler side or cause other unintended side effects. これらの理由から、いくつかの機能 は実験的とみなされ、スクリプトのコンパイル時にデフォルトで有効になっていません。
+Being part of the ZenScriptX project, and due to the experimental nature of the project in itself, some features may require extensive testing on the compiler side or cause other unintended side effects. For these reasons, some features have been deemed experimental and are not enabled by default when compiling a script.
 
-さらに、いくつかの実験的なフラグは完全に機能しない可能性があり、今後の機能のヒントとしてのみ提供されます。 は、特定のフラグが使用されているかどうかを知るために必ずドキュメントを参照する必要があります。 On the other hand, experimental flags will never be removed, meaning that features that are integrated into the "non-experimental" part of ZenScriptX won't have their flags disabled. これにより、スクリプトは ZenScriptX プロジェクトの新しいリリースと互換性があります。 書き直す必要はありません。
+Moreover, some experimental flags may outright not work, and are provided only as hints of upcoming features. You should always refer to the documentation to know whether a certain flag is used or not. On the other hand, experimental flags will never be removed, meaning that features that are integrated into the "non-experimental" part of ZenScriptX won't have their flags disabled. This allows scripts to be compatible with newer releases of the ZenScriptX project without requiring a rewrite.
 
-## ディレクティブの使用
+## Using the directive
 Using the directive is as simple as adding `#experimental` to the beginning of the file, and specifying a list of flags that represent behavior to enable right after the declaration.
 
-すべてのフラグは、スペースで他のフラグを区切る必要があり、 **は** `-E` で始まる必要があります。 これはフラグを 実験的なフラグとして識別します。 その宣言に従って、特定のフラグを特定する一連の文字と数字を 入力する必要があります。 利用可能なすべてのフラグを知るには、このドキュメントのリストを参照してください。
+Every flag must be separated by the others with spaces and it **has to** begin with `-E`. This identifies the flag as an experimental flag. Following that declaration, a series of letters and numbers that identify the specific flag should be entered. Refer to the list in this documentation to know all the available flags.
 
-例として、 `soo` と `wd4` フラグを有効にしたいとします。 対応する行は次のようになります:
+As an example, imagine we wanted to enable the `soo` and `wd4` flags. The corresponding line would be:
 ```zenscript
 #experimental -Esoo -Ewd4
 ```
 
-## フラグ一覧
-| フラグ名   | 現在の状態 | 説明                                      |
-| ------ | ----- | --------------------------------------- |
-| `soo`  | 無効    | シーケンスの演算子の過負荷を有効にします                    |
-| `saia` | 無効    | シーケンス内で単一のパラメータを持つ関数に自動的に `it` 引数を提供します |
-| `sao`  | 有効    | 配列の引数から `シーケンス` を作成できます                 |
+## List of flags
+| Flag name | Current Status | Description                                                                           |
+| --------- | -------------- | ------------------------------------------------------------------------------------- |
+| `soo`     | Disabled       | Enables operator overloading for Sequences                                            |
+| `saia`    | Disabled       | Provides an automatic `it` argument to functions with a single parameter in Sequences |
+| `sao`     | Enabled        | Allows creation of `Sequences` from array arguments                                   |
 
-現在のステータスの意味は以下のとおりです。
+The meaning for Current Status are the following:
 
-- **無効** は存在するが、バックエンドの準備ができていないため対応するアクションがないフラグを識別します。 開発者が近い将来、どのような新機能が利用可能になるかを知ることができるようにするために、単に「ロードマップ」のために提供される です。
-- **有効** は存在するフラグを識別し、ファイルに影響を及ぼす。
-- **非推奨の** は、機能が満期に達し、 もはや実験的ではないことにより、もう使用されるべきではないフラグを特定している。 それにもかかわらず、後方互換性の一形態として提供されています。
+- **Disabled** identifies a flag that exists but has no corresponding actions due to the backend not being ready. It is provided merely due to "roadmap", allowing developers to know what new features will be available in the near future.
+- **Enabled** identifies a flag that exists and has an effect on the file.
+- **Deprecated** identifies a flag that shouldn't be used anymore due to a feature reaching maturity and not being considered experimental anymore. It is nevertheless provided as a form of backwards compatibility.
