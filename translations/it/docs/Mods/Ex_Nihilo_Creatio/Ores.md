@@ -1,40 +1,40 @@
 # Ores
 
-**Necessità di essere nel `#loader preinit` o `#loader contenttweaker`**
+**Needs to be in the `#loader preinit` or `#loader contenttweaker`**
 
 
-## Pacchetto
+## Package
 ```zenscript
 `mods.exnihilocreatio.Ore`
 ```
 
-## Metodi
+## Methods
 
 - **String name** Name the ore chunks/piece/dust/ingot
-- **Colore stringa** Colore del materiale in ex.
-- **[IItemStack](/Vanilla/Items/IItemStack/) output** richiede un oredict.firstItem o errori fuori.
-- **Stringa mappa[string]** Codice lingua poi traduzione.
-- **String oreDict** Il nome dell'oreDict che vuoi.
+- **String color** Color of material in hex.
+- **[IItemStack](/Vanilla/Items/IItemStack/) output** requires an oredict.firstItem or errors out.
+- **Map string[string]** Language code then translation.
+- **String oreDict** The name of the oreDict you want.
 
-## Addizione
+## Addition
 
 ```zenscript
-mods.exnihilocreatio.Ore. ddRecipe(String,
+mods.exnihilocreatio.Ore.addRecipe(String,
     String,
     @Optional IItemStack,
     @Optional Map<string, String>,
     @Optional String);
 
-mods. xnihilocreatio.Ore.addRecipe("Pietra",
+mods.exnihilocreatio.Ore.addRecipe("Stone",
     "63452D",
-    <ore:stone>. irstItem,
+    <ore:stone>.firstItem,
     {
     "en_au": "StoneDownUnder"
     },
-    "Pietra");
+    "Stone");
 ```
 
-## Rimozione
+## Removal
 
 ```zenscript
 mods.exnihilocreatio.Ore.removeAll();
