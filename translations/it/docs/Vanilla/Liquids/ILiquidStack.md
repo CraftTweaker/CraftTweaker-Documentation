@@ -1,53 +1,53 @@
 # ILiquidStack
 
-Un LiquidStack è costituito da una [Definizione Liquido](/Vanilla/Liquids/ILiquidDefinition/) e da un tag opzionale e da un valore facoltativo.
+A LiquidStack consists of a [Liquid Definition](/Vanilla/Liquids/ILiquidDefinition/) as well as an optional tag and an optional amount value.
 
-## Importazione del pacchetto
+## Importing the package
 
-Potrebbe essere necessario importare il pacchetto se si incontrano problemi (come lanciare un [Array](/AdvancedFunctions/Arrays_and_Loops/)), quindi meglio essere sicuri che spiacenti e aggiungere l'importazione.  
+It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
 `import crafttweaker.liquid.ILiquidStack;`
 
-## Creare un ILiquidStack
+## Creating an ILiquidStack
 
-Un ILiquidStack può essere creato utilizzando il gestore [parentesi liquide](/Vanilla/Brackets/Bracket_Liquid/)
+An ILiquidStack can be created by using the [Liquid Bracket Handler](/Vanilla/Brackets/Bracket_Liquid/)
 
 ```zenscript
-//vedere The liquid bracket Handler for further information
+//see The liquid bracket Handler for further information
 val lava = <liquid:lava>;
 
-//liquid. ithTag(Tag come IData)
-val lavaWithTag = <liquid:lava>. ithTag(DATA);
+//liquid.withTag(Tag as IData)
+val lavaWithTag = <liquid:lava>.withTag(DATA);
 
-//liquid * amount in millibuckets (-> 1000 = 1 secco)
+//liquid * amount in millibuckets (-> 1000 = 1 Bucket)
 val lavaWithAmount = <liquid:lava> * 1000;
 ```
 
-## Ottieni proprietà fluide
+## Get fluid properties
 
-Come ILiquidStack rappresenta un liquido, sicuramente ci deve essere anche un modo per recuperare le proprietà del fluido.  
-Controlla la tabella per vedere cosa puoi recuperare dall'oggetto ILiquidStack utilizzando ZenGetters.
+As an ILiquidStack represents a liquid, there surely must also be a way of retrieving the fluid's properties.  
+Check the table to see what you can retrieve from the ILiquidStack Object using ZenGetters.
 
-| Zengetter   | Che cos'è questo?                                                       | Tipo Di Reso                                                | Esempio                                    |
-| ----------- | ----------------------------------------------------------------------- | ----------------------------------------------------------- | ------------------------------------------ |
-| nome        | Questo restituisce il nome del liquido non localizzato                  | stringa                                                     | `test = <liquid:lava>.name;`         |
-| displayName | Questo restituisce il nome del liquido localizzato                      | stringa                                                     | `test = <liquid:lava>.displayName;`  |
-| importo     | Questo restituisce la quantità di ILiquidObject                         | int                                                         | `test = <liquid:lava>.amount;`       |
-| luminosità  | Questo restituisce la luminosità del liquido di riferimento             | int                                                         | `test = <liquid:lava>.luminosità;`   |
-| densità     | Questo restituisce la densità del liquido di riferimento                | int                                                         | `prova = <liquid:lava>.densità;`     |
-| temperatura | Questo restituisce la temperatura del liquido di riferimento            | int                                                         | `prova = <liquid:lava>.temperature;` |
-| viscosità   | Questo restituisce la viscosità del liquido di riferimento              | int                                                         | `test = <liquid:lava>.viscosità;`    |
-| gassoso     | Questo restituisce se il liquido di riferimento è gassoso               | boolean                                                     | `prova = <liquid:lava>.gaseous;`     |
-| tag         | Questo restituisce il tag di ILiquidObject's                            | [IData](/Vanilla/Data/IData/)                               | `test = <liquid:lava>.tag;`          |
-| definizione | Questo restituisce la definizione del liquido di cui sopra (vedi sotto) | [Definizione ILiquide](/Vanilla/Liquids/ILiquidDefinition/) | `test = <liquid:lava>.definition;`   |
+| Zengetter   | What is this?                                             | Return Type                                               | Example                                   |
+| ----------- | --------------------------------------------------------- | --------------------------------------------------------- | ----------------------------------------- |
+| name        | This returns the unlocalized liquid name                  | string                                                    | `test = <liquid:lava>.name;`        |
+| displayName | This returns the localized liquid name                    | string                                                    | `test = <liquid:lava>.displayName;` |
+| amount      | This returns the amount of the ILiquidObject              | int                                                       | `test = <liquid:lava>.amount;`      |
+| luminosity  | This returns the luminosity of the referred liquid        | int                                                       | `test = <liquid:lava>.luminosity;`  |
+| density     | This returns the density of the referred liquid           | int                                                       | `test = <liquid:lava>.density;`     |
+| temperature | This returns the temperature of the referred liquid       | int                                                       | `test = <liquid:lava>.temperature;` |
+| viscosity   | This returns the viscosity of the referred liquid         | int                                                       | `test = <liquid:lava>.viscosity;`   |
+| gaseous     | This returns whether the referred liquid is gaseous       | boolean                                                   | `test = <liquid:lava>.gaseous;`     |
+| tag         | This returns the ILiquidObject's tag                      | [IData](/Vanilla/Data/IData/)                             | `test = <liquid:lava>.tag;`         |
+| definition  | This returns the referred liquid's definition (see below) | [ILiquid Definition](/Vanilla/Liquids/ILiquidDefinition/) | `test = <liquid:lava>.definition;`  |
 
-# Implementazione IIngrediente
+# IIngredient Implementaion
 
-Java Jargon: ILiquidStack implementa IIngredient. In altre parole, tutti i metodi che possono essere utilizzati in [IIngredienti](/Vanilla/Variable_Types/IIngredient/) possono essere utilizzati anche per ILiquidStacks Fare riferimento alla voce IIngredient per ulteriori informazioni su questo. Ecco alcuni casi speciali, poiché i liquidi non sono articoli
+Java Jargon: ILiquidStack implements IIngredient. In other words, all methods that can be used in [IIngredients](/Vanilla/Variable_Types/IIngredient/) can also be used for ILiquidStacks Refer to the IIngredient entry for further information on this. Here are some special cases, as liquids just aren't items
 
-* Non puoi contrassegnare ILiquidStack e non puoi cercare di recuperare il segno di ILiquidStack
-* .items restituisce una lista vuota
-* .itemArray restituisce un Array vuoto
-* .liquids restituisce questo liquido come ILiquidStack (così, esattamente questo oggetto)
-* LiquidStacks non può avere Transformers e chiedere trasformatori restituisce sempre false
-* LiquidStacks non può avere condizioni (.only non funziona)
-* Corrispondenza con gli elementi restituisce sempre falso
+* You can't mark ILiquidStacks, and you get null of you try to retrieve an ILiquidStack's mark
+* .items returns an empty List
+* .itemArray returns an empty Array
+* .liquids returns this liquid as ILiquidStack (so, exactly this object)
+* LiquidStacks can't have Transformers and asking for transformers always returns false
+* LiquidStacks can't have Conditions (.only doesn't work)
+* Matching with items always returns false
