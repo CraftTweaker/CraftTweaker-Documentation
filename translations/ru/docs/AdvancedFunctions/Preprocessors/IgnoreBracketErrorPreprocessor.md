@@ -5,10 +5,10 @@
 
 ## Вызов
 
-Вы можете вызвать препроцессор IgnoreBracketErrors, заменив `#ignoreBracketErrors` внутри вашего файла скрипта.  
-Этот препроцессор специфичен для файлов, поэтому вызов его в одном файле не влияет на другие (хотя бы на то, что касается процессора.
+You can call the IgnoreBracketErrors Preprocessor by placing `#ignoreBracketErrors` inside your script file.  
+This Preprocessor is file-specific, so calling it on one file doesn't affect the others (at least not for what the processor's concerned.
 
 ## Что он делает
 
-При вызове препроцессора на файл, все ошибки при записи в скобки будут испорчены.  
-Это никак не изменяет затрагиваемые строки, вместо этого единственное изменение в том, что в вашем журнале не будут содержаться соответствующие строки.
+When the preprocessor is called on a file, all error logging on bracket errors will be supressed.  
+This doesn't change the affected lines in any way, instead the only change is that your log won't contain the regarding lines.
