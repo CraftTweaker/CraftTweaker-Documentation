@@ -1,30 +1,30 @@
-# Enlazar Soporte
+# Binding Support
 
-## Vinculando:
+## Binding:
 
-Esto cancelará la vinculación de objetos para dicho objeto específico si el jugador no cumple con los requisitos.
+This will cancel Item Binding for said specific item if the player doesn't meet the requirements.
 
 ### Pre-1.4.0:
 
-#### Sintaxis:
+#### Syntax:
 
-    Ejemplo en blanco:
-    mods.compatskills.BindHandler.addBindLock(String failureMessage, ItemStack stack, String... requisitos);
+    Blank Example:
+    mods.compatskills.BindHandler.addBindLock(String failureMessage, IItemStack stack, String... requirements);
     
-    Ejemplo de prueba:
+    Test Example:
     mods.compatskills.BindHandler.addBindLock("Untold Dark Energies swirl around you and then subside", <bloodmagic:blood_orb>.withTag({orb: "bloodmagic:weak"}), "reskillable:building|15", "reskillable:magic|7", "stage|test", "adv|minec
     
 
 ### Post-1.4.0
 
-A partir de CompatSkills 1.4.0, el bloqueo de unión ha sido rodado como parte de ItemStack-Locking. Esto significa que ya no hay una sintaxis de script dedicada para añadir un bloqueo de enlace a un elemento.
+As of CompatSkills 1.4.0 the binding locking has now been rolled in as a part of ItemStack-Locking. This means there is no longer a dedicated script syntax for adding a binding lock to an item.
 
-Este cambio también se ha producido con algunos cambios más. Por ejemplo, el mensaje de error mostrado por defecto ha sido cambiado en algunos saludos:
+This change has also come with a few other changes. For example the default error message displayed has been changed in some regards:
 
-- Ahora se muestra junto a los requisitos en el chat como un mensaje de estado de sólo jugador
-- El mensaje de error es ahora una cadena localizable: 
+- It now displays alongside requirements in the chat as a player-only status message
+- The error message is now a Localizable string: 
 
-    compatskills.bloodmagic.bindingError=Untold Dark Energies giran a tu alrededor y luego ceden
+    compatskills.bloodmagic.bindingError=Untold Dark Energies swirl around you and then subside
     
 
-Esto significa que los autores del paquete de recursos ahora pueden localizar el mensaje de error en el idioma que deseen. Esto también significa que puedes usar mods como ResourceLoader o Base (con ContentTweaker presente) para cambiar la cadena de error.
+This means that resource pack authors can now localize the error message into whatever language they want. This also means you can use mods like ResourceLoader or Base (With ContentTweaker present) to change the error string.
