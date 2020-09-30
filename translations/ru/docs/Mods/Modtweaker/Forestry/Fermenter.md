@@ -1,12 +1,12 @@
-# Ферментер
+# Fermenter
 
-ModTweaker позволяет добавлять или удалять рецепты лесного фермента
+ModTweaker allows you to add or remove forestry Fermenter Recipes
 
-## Звонок
+## Calling
 
-Вы можете вызвать пакет с помощью `mods.forestry.Fermenter`
+You can call the package using `mods.forestry.Fermenter`
 
-## Удаление рецепта
+## Recipe Removal
 
 ```zenscript
 //mods.forestry.Fermenter.removeRecipe(IIngredient input);
@@ -14,24 +14,24 @@ mods.forestry.Fermenter.removeRecipe(<minecraft:reeds>);
 mods.forestry.Fermenter.removeRecipe(<liquid:water>);
 ```
 
-## Добавление рецепта
+## Recipe Addition
 
 ```zenscript
-//mods.forestry.Fermenter.addRecipe(ILiquidStack fluidOutput, ресурс IItemStack, ILiquidStack fluidInput, int fermentationValue, float fluidOutputModifier);
+//mods.forestry.Fermenter.addRecipe(ILiquidStack fluidOutput, IItemStack resource, ILiquidStack fluidInput, int fermentationValue, float fluidOutputModifier);
 mods.forestry.Fermenter.addRecipe(<liquid:lava>, <minecraft:obsidian>, <liquid:water>, 1000, 0.5);
 ```
 
-Количество жидкого вывода: значение ферментации * fluidOutModifier
+Amount of fluid output: fermentationValue * fluidOutputModifier
 
-| Параметр            | Тип                                            | описание                                                    |
-| ------------------- | ---------------------------------------------- | ----------------------------------------------------------- |
-| fluidOutput         | [ILiquidStack](/Vanilla/Liquids/ILiquidStack/) | Выход рецепта                                               |
-| ресурс              | [IItemStack](/Vanilla/Items/IItemStack/)       | Ввод элемента рецепта                                       |
-| fluidInput          | [ILiquidStack](/Vanilla/Liquids/ILiquidStack/) | жидкий ввод рецепта                                         |
-| fermentationValue   | int                                            | Количество входной жидкости на органический предмет требует |
-| fluidOutputModifier | int                                            | Мультипликатор вывода                                       |
+| Параметр            | Тип                                            | description                                   |
+| ------------------- | ---------------------------------------------- | --------------------------------------------- |
+| fluidOutput         | [ILiquidStack](/Vanilla/Liquids/ILiquidStack/) | The Recipe's output                           |
+| resource            | [IItemStack](/Vanilla/Items/IItemStack/)       | The Recipe's item input                       |
+| fluidInput          | [ILiquidStack](/Vanilla/Liquids/ILiquidStack/) | The Recipe's liquid input                     |
+| fermentationValue   | int                                            | Amount of inputFluid on organic item requires |
+| fluidOutputModifier | int                                            | Output multiplier                             |
 
-## Снятие топлива
+## Fuel Removal
 
 ```zenscript
 //mods.forestry.Fermenter.removeFuel(IIngredient fermenterItem);
@@ -39,15 +39,15 @@ mods.forestry.Fermenter.removeFuel(<forestry:fertilizer_compound>);
 
 ```
 
-## Добавление топлива
+## Fuel Addition
 
 ```zenscript
-//mods.forestry.Fermenter.addFuel(IItemStack, int fermentPerCycle, int burnDuration);
+//mods.forestry.Fermenter.addFuel(IItemStack item, int fermentPerCycle, int burnDuration);
 mods.forestry.Fermenter.addFuel(<minecraft:leaves:1>, 100, 5);
 ```
 
-| Параметр                   | Тип                                      | Описание                                                                                            |
-| -------------------------- | ---------------------------------------- | --------------------------------------------------------------------------------------------------- |
-| элемент                    | [IItemStack](/Vanilla/Items/IItemStack/) | Предмет, чтобы стать валидным топливом для бродильника                                              |
-| ферментный цикл            | int                                      | Сколько происходит ферментирование за рабочий цикл, то есть сколько жидкости на входе потребляется. |
-| продолжительность сгорания | int                                      | Количество рабочих циклов одного пункта этого топлива продолжается до истечения.                    |
+| Параметр        | Тип                                      | Description                                                                         |
+| --------------- | ---------------------------------------- | ----------------------------------------------------------------------------------- |
+| item            | [IItemStack](/Vanilla/Items/IItemStack/) | Item to become a valid fuel for the fermenter                                       |
+| fermentPerCycle | int                                      | How much is fermented per work cycle, i.e. how much fluid of the input is consumed. |
+| burnDuration    | int                                      | Amount of work cycles a single item of this fuel lasts before expiring.             |
