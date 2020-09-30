@@ -1,17 +1,17 @@
-## Złom
+## Scrap Box
 
-## Pakiet
+## Package
 
 ```zenscript
-importuj mods.ic2.ScrapBox;
+import mods.ic2.ScrapBox;
 ```
 
-### Metody
+### Methods
 
-- Zobacz [ScrapBox (From IC2 Tweaker)](/Mods/IC2Tweaker/Scrap_Box/) aby uzyskać informacje o innych metodach.
-- **[ItemStack](/Vanilla/Items/IItemStack/) element** wpis jest usuwany z puli złomu. Powoduje ponowne obliczenie szans na odrzucenie wszystkich innych pięści.
+- See [ScrapBox (From IC2 Tweaker)](/Mods/IC2Tweaker/Scrap_Box/) for info on other methods.
+- **[ItemStack](/Vanilla/Items/IItemStack/) item** The entry being removed from the scrap box drop pool. Will cause drop chances of all other tiems to be recalculated.
 
-## Usuń upuść (IItemStack)
+## Remove Drop (IItemStack)
 
 ```zenscript
     ScrapBox.removeDrop(IItemStack item);
