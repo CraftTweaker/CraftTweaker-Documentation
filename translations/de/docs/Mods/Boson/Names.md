@@ -1,54 +1,54 @@
-# Namen in Boson
+# Names in Boson
 
-In Minecraft werden die meisten Objekte durch eindeutige Namen identifiziert. Z.B. werden Artikel mit dem Registrierungsnamen eindeutig identifiziert, und es kann nicht mehr als ein Element mit dem gleichen Registry-Namen geben.
+In Minecraft, most objects are identified by unique names. E.g., items use their registry name to be uniquely identified and there can't exist more than one item with the same registry name.
 
-Die meisten Namen in Minecraft folgen einer starren Struktur, die durch einen String mit einem Namensraum und einem durch einen Doppelpunkt getrennten Pfad identifiziert wird. `minecraft:iron_ingot`, wobei `minecraft` der Namensraum ist und `iron_ingot` der Pfad ist). Im CraftTweaker werden die meisten dieser Namen als rohe Zeichenketten dargestellt, aber innerhalb von Boson wird dies verfälscht. In der Tat die Verwendung eines rohen `Strings` kann Leute darüber verwirren, ob ein Methodenaufruf einen String mit einem Namensraum erwartet oder nicht. Aus diesem Grund hat Boson die Verwendung von Zeichenketten ohne Namensräume und Namensräume getrennt.
+Most names in Minecraft follow a rigid structure, identified by a string with a namespace and a path separated by a colon (e.g. `minecraft:iron_ingot`, where `minecraft` is the namespace and `iron_ingot` is the path). In CraftTweaker, most of these names are represented as raw strings, but within Boson this is frowned upon. In fact, the usage of a raw `string` may confuse people on whether a method call expects a string with a namespace or without. For this reason, Boson separated the usage of non-namespaced strings and namespaced ones.
 
-Nicht-Namensraum-Zeichenketten werden als Instanzen von `String`unter allen Boson-APIs dargestellt. For more information, refer to the ZenScript documentation.
+Non-namespaced strings are represented as instances of `string`, among all the Boson APIs. For more information, refer to the ZenScript documentation.
 
-Namespaced-Zeichenketten werden als Instanzen von `NameSpacedString`unter allen Boson APIs dargestellt. Für weitere Informationen darüber, wie man solche Zeichenketten erhält, lesen Sie bitte den nächsten Abschnitt.
+Namespaced strings are represented as instances of `NameSpacedString`, among all the Boson APIs. For more information on how to obtain such strings, refer to the next section.
 
-## `NamensraumString` Dokumentation
-Die `NameSpacedString` Klasse befindet sich im `net.thesilkminer.mc.boson.zen.naming` Paket.
+## `NameSpacedString` Documentation
+The `NameSpacedString` class resides in the `net.thesilkminer.mc.boson.zen.naming` package.
 
-### Neue Instanz erstellen
-Es gibt zwei Möglichkeiten, einen `NameSpacedString`zu erstellen: mit der Werksmethode oder mit einer `Zeichenkette`.
+### Creating a new instance
+There are two ways of creating a `NameSpacedString`: using the factory method or casting a `string`.
 
-Die Fabrikmethode ist der empfohlene Ansatz. Da es sich um eine statische Methode handelt, kann sie direkt in der Instanz aufgerufen werden. Das folgende Beispiel ist die Methoden-Signatur und ein Beispiel für ihre Verwendung:
+The factory method is the suggested approach. Due to it being a static method, it can be invoked directly on the class instance. The following is the method signature and an example of its usage:
 
 ```zenscript
-function von(nameSpace as string?, path as string) as NameSpacedString;
+function from(nameSpace as string?, path as string) as NameSpacedString;
 ```
 
 ```zenscript
-NameSpacedString.from("minecraft", "iron_ingot"); // äquivalent zu minecraft:iron_ingot
-NameSpacedString.from(null, "iron_ingot"); // Standard-Namensraum 'minecraft' verwendet
+NameSpacedString.from("minecraft", "iron_ingot"); // equivalent to minecraft:iron_ingot
+NameSpacedString.from(null, "iron_ingot"); // uses default namespace 'minecraft'
 ```
 
-Der Casting-Weg beruht stattdessen auf einem expliziten Casting von einem `-String` zu einem `NameSpacedString` mit dem `als` -Operator in ZenScript:
+The casting way relies instead on an explicit cast from a `string` to a `NameSpacedString` using the `as` operator in ZenScript:
 
 ```zenscript
-"minecraft:iron_ingot" als NameSpacedString;
+"minecraft:iron_ingot" as NameSpacedString;
 ```
 
-### Eigenschaften
-Ein `NameSpacedString` ermöglicht sowohl den Namespace als auch den Pfad über die Eigenschaften schreibgeschützt zu:
+### Properties
+A `NameSpacedString` provides read-only access to both its namespace and its path via properties:
 
-| Eigenschaftsname | Type     | Beschreibung                                                          |
-| ---------------- | -------- | --------------------------------------------------------------------- |
-| `nameRaum`       | `string` | Ruft den Namespace Teil des `NameSpacedString` (z.B. `Minecraft` ) ab |
-| `pfad`           | `string` | Liefert den Pfadanteil des `NameSpacedString` (z.B. `iron_ingot`)     |
+| Property Name | Type     | Beschreibung                                                            |
+| ------------- | -------- | ----------------------------------------------------------------------- |
+| `nameSpace`   | `string` | Gets the namespace portion of the `NameSpacedString` (e.g. `minecraft`) |
+| `path`        | `string` | Gets the path portion of the `NameSpacedString` (e.g. `iron_ingot`)     |
 
 ### Methoden
 
 #### `asString`
-A `NameSpacedString` can be converted back into a regular `string` by using the `asString` method. Das folgende Beispiel ist die -Methoden-Signatur und ein Beispiel für die Verwendung:
+A `NameSpacedString` can be converted back into a regular `string` by using the `asString` method. The following is the method signature and an example of its usage:
 
 ```zenscript
-Funktion asString() als String;
+function asString() as string;
 ```
 
 ```zenscript
 val nss = NameSpacedString("minecraft", "iron_ingot");
-println(nss.asString()); // Druckt 'minecraft:iron_ingot' zum Log
+println(nss.asString()); // Prints 'minecraft:iron_ingot' to the log
 ```
