@@ -1,25 +1,25 @@
-# Brennstoff
+# Fuel
 
-Das `-Kraftstoff-` Paket erlaubt Ihnen das Hinzufügen von Schmelzkraftstoffflüssigkeiten.
+The `Fuel` package allows you to add Smeltery fuel fluids.
 
-## Anruf
+## Calling
 
-Sie können das Legierungspaket mit `mods.tconstruct.Fuel` aufrufen
+You can call the Alloy package using `mods.tconstruct.Fuel`
 
-## Brennstoffrezepte hinzufügen
+## Add Fuel Recipes
 
 ```zenscript
-//mods.tconstruct.Fuel.registerFuel(ILiquidStack Kraftstoff, int Dauern);
+//mods.tconstruct.Fuel.registerFuel(ILiquidStack fuel, int duration);
 mods.tconstruct.Fuel.registerFuel(<liquid:water> * 2, 300);
 ```
 
-Parameter:
+Parameters:
 
-- [ILiquidStack](/Vanilla/Liquids/ILiquidStack/) Treibstoff → Die Flüssigkeit. Der Betrag ist der minimale Zuwachs, der auf einmal verbraucht wird.
-- int Dauer → Wie viele Ticks das Verbrauchsmaterial des FluidStacks dauert.
+- [ILiquidStack](/Vanilla/Liquids/ILiquidStack/) fuel → The fluid. Amount is the minimal increment that is consumed at once.
+- int duration → How many ticks the consumtpion of the fluidStack lasts.
 
-### Man bedenke Folgendes:
+### Consider this:
 
-- Der [ILiquidStack](/Vanilla/Liquids/ILiquidStack/) Betrag ist der minimale Zuwachs, der sofort konsumiert wird (z.B. das Schmelzen verbraucht nur 2 mB gleichzeitig).
-- Die Dauer ist, wie viele Ticks ein Flüssigkeitstapel dauert.
-- Sie können nicht die Temperatur festlegen, die die Flüssigkeit in der Schmelze haben wird. Verwende [ILiquidDefinition's](/Vanilla/Liquids/ILiquidDefinition/) ZenSetter um die Temperatur des Flüssigkeits vorher zu ändern!
+- The [ILiquidStack's](/Vanilla/Liquids/ILiquidStack/) amount is the minimal increment that is consumed at once (e.g. the smeltery only consumes 2 mB at once).
+- The duration is how many ticks one fluid stack lasts.
+- You cannot set the temperature the fluid is going to have in the smeltery. Use an [ILiquidDefinition's](/Vanilla/Liquids/ILiquidDefinition/) ZenSetter to change the fluid's temperature beforehand!
