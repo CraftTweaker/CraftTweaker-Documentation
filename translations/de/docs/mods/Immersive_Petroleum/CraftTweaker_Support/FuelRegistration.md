@@ -1,11 +1,11 @@
-# Kraftstoffregistrierung
+# Fuel Registration
 
 ## registerGeneratorbenzin
 
 | Name          | Type                                        |
 | ------------- | ------------------------------------------- |
 | Flüssigkeit/t | [Fluidstack](/Vanilla/Liquids/IFluidStack/) |
-| Flux/t        | Ganzzahl                                    |
+| Flux/t        | Integer                                     |
 
 Beispiel:
 ```ZenScript
@@ -14,7 +14,7 @@ Beispiel:
 mods.immersivepetroleum.FuelRegistry.registerGeneratorFuel(<fluid:minecraft:water> * 180, 64); // Verwendung von 180mB pro Tick
 ```
 
-## registerMotorbootkraftstoff
+## registerMotorboatFuel
 
 | Name          | Type                                        |
 | ------------- | ------------------------------------------- |
