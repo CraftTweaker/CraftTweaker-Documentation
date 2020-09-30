@@ -1,6 +1,6 @@
 # IEnchantmentDefinition
 
-IEnchantmentDefinition - это фактическое зачарование, оно не имеет уровня, но вы можете использовать это для получения информации о зачаровании.
+An IEnchantmentDefinition is the actual Enchantment, it does not posess a level, but you can use this to retrieve information on the Enchantment.
 
 ## Импорт пакета
 
@@ -9,7 +9,7 @@ IEnchantmentDefinition - это фактическое зачарование, �
 
 ## Получение такого объекта
 
-Вы можете извлечь такой объект из [обработчика зачарования Bracket](/Vanilla/Brackets/Bracket_Enchantment/) или из объекта [IEnchantment](/Vanilla/Enchantments/IEnchantment/).
+You can retrieve such an object from the [Enchantment Bracket handler](/Vanilla/Brackets/Bracket_Enchantment/) or from an [IEnchantment](/Vanilla/Enchantments/IEnchantment/) object.
 
 ## Геттеры/сеттеры
 
@@ -28,9 +28,9 @@ IEnchantmentDefinition - это фактическое зачарование, �
 
 ### canApply
 
-Проверяет, можно ли наложить чары на предмет.  
-Первый метод вообще проверяет, можно ли зачаровать предмет с использованием Зачарок.  
-Оба возвращают бул и требуют значение [IItemStack](/Vanilla/Items/IItemStack/) в качестве входного параметра.
+Checks if the enchantment can be put on the item.  
+First method checks in general, second checks if the item can be enchanted to this enchantment using the enchantment Table.  
+Both return a bool and require an [IItemStack](/Vanilla/Items/IItemStack/) as input parameter.
 
 ```zenscript
 ench.canApply(IItemStack item);
@@ -39,8 +39,8 @@ ench.canApplyAtEnchantmentTable(IItemStack item);
 
 ### getEnchantability
 
-Проверяет, какая зачарованность должна иметь предмет для зачарования на данном уровне.  
-оба метода возвращают int и принимают уровень зачарования в качестве параметра int .
+Checks what enchantability the item must have for the Enchantment at the given level.  
+Both methods return an int and take the level of the enchantment as int parameter.
 
 ```zenscript
 ench.getMinEnchantability(int level);
@@ -49,9 +49,9 @@ ench.getMaxEnchantability(int level);
 
 ### getTranslatedName
 
-Возвращает переведенное имя (например, "smite IV").  
-Возвращает строку и требует уровень зачарования в качестве параметра int.  
-То же самое, что и [IEnchant](/Vanilla/Enchantments/IEnchantment/) `.displayName` ZenGetter!
+Returns the translated name (e.g. "smite IV").  
+Returns a string and requires the level of the enchantment as int parameter.  
+Does the same as [IEnchantment's](/Vanilla/Enchantments/IEnchantment/) `.displayName` ZenGetter!
 
 ```objectzenscriptivec
 ench.getTranslatedName(int level);
@@ -59,7 +59,7 @@ ench.getTranslatedName(int level);
 
 ### makeEnchantment
 
-Давая зачарование уровень вы можете сделать [зачарования](/Vanilla/Enchantments/IEnchantment/) из него:
+By giving an EnchantmentDefinition a level you can make an [IEnchantment](/Vanilla/Enchantments/IEnchantment/) out of it:
 
 ```zenscript
 ench.makeEnchantment(int level);
@@ -68,26 +68,26 @@ ench * level;
 
 ### Сравнение с другими объектами IEnchantmentDefinition
 
-Вы можете использовать оператор `==` , чтобы проверить, являются ли два чара одинаковыми.  
-Это означает, что они имеют одинаковый идентификатор.
+You can use the `==` operator to check if two enchantments are the same.  
+This means if they have the same id.
 
 ```zenscript
 if(enchA == enchB)
-    print("То же!");
+    print("Same!");
 ```
 
 ## Пример
 
 ```zenscript
 import crafttweaker.enchantments.IEnchantmentDefinition;
-import crafttweaker.data. Data;
+import crafttweaker.data.IData;
 
 val array as IEnchantmentDefinition[] = [<enchantment:minecraft:protection>,<enchantment:minecraft:fire_protection>,<enchantment:minecraft:feather_falling>,<enchantment:minecraft:blast_protection>,<enchantment:minecraft:projectile_protection>,<enchantment:minecraft:respiration>,<enchantment:minecraft:aqua_affinity>];
 
 var map as IData = {};
 
 for ench in array {
-    map += ench. akeEnchant(3).makeTag();
+    map += ench.makeEnchantment(3).makeTag();
 }
 
 print(map.asString());
