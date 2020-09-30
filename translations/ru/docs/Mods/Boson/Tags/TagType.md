@@ -1,28 +1,28 @@
 # `TagType`
 
-`Тип Тега` идентифицирует тип предметов, которые могут храниться внутри данного [`Тега`](/Mods/Boson/Tags/Tag/). Он также содержит дополнительные данные только для чтения, которые идентифицируют определенный набор мнемоники, которые помогают идентифицировать тип более более удобным для человека.
+A `TagType` identifies the kind of items that can be stored inside a given [`Tag`](/Mods/Boson/Tags/Tag/). It also hosts some additional read-only data that identifies a certain set of mnemonics that help identify a type in a more human-friendly way.
 
-## Детали урока
-Класс находится в пакете `net.thesilkminer.mc.boson.zen.tag` , что делает `net.thesilkminer.mc.boson.zen.tag.TagType` его полное имя для импорта.
+## Class Details
+The class is situated in the `net.thesilkminer.mc.boson.zen.tag` package, making `net.thesilkminer.mc.boson.zen.tag.TagType` its fully qualified name for importing.
 
-## Создание нового экземпляра
-Невозможно создать новый экземпляр типа необработанного тега из CraftTweaker. Тем не менее можно получить тип `тега` через его свойства. Обратитесь к [документации для `Тег`](/Mods/Boson/Tags/Tag/) для получения более информации.
+## Creating a New Instance
+It is not possible to create a new instance of a raw tag type from CraftTweaker. It is nevertheless possible to obtain the type of a given `Tag` via its properties. Refer to the [documentation for `Tag`](/Mods/Boson/Tags/Tag/) for more information.
 
-### Известные экземпляры `TagType`
-Boson по умолчанию уже создает определенный набор типов тегов, которая может быть использована в [обработчиках скобками](/Mods/Boson/Tags/BracketHandler/) для получения экземпляров `тега`или `TagIngredient`s. Эти мнемоники написаны в следующей таблице:
+### Known `TagType` instances
+Boson by default already creates a certain set of tag types, which can be used in [bracket handlers](/Mods/Boson/Tags/BracketHandler/) to obtain instances of `Tag`s or `TagIngredient`s. These mnemonics are written in the table that follows:
 
-| Мнемоника  | Сохраненные объекты                           |
-| ---------- | --------------------------------------------- |
-| `blocks`   | [`IBlockState`](/Vanilla/Blocks/IBlockState/) |
-| `жидкости` | (сейчас доступно через CraftTweaker)          |
-| `элементы` | [`IItemStack`](/Vanilla/Items/IItemStack/)    |
+| Mnemonic | Stored Objects                                |
+| -------- | --------------------------------------------- |
+| `blocks` | [`IBlockState`](/Vanilla/Blocks/IBlockState/) |
+| `fluids` | (not currently accessible via CraftTweaker)   |
+| `items`  | [`IItemStack`](/Vanilla/Items/IItemStack/)    |
 
 ## Свойства
-`Тип тега` предоставляет только для чтения доступ к определенному набору свойств, как указано в следующей таблице:
+A `TagType` provides read-only access to a certain set of properties, as outlined in the following table:
 
-| Название свойства        | Тип                                                                   | Описание                                                                       |
-| ------------------------ | --------------------------------------------------------------------- | ------------------------------------------------------------------------------ |
-| `directoryName`          | `string`                                                              | Имя каталога, в котором JSONs теги находятся в наборе данных                   |
-| `имя`                    | `string`                                                              | Мнемоника, идентифицирующая данный тип тега; используется в обработчиках тегов |
-| `classType`              | [`Класс`](/Mods/Boson/Reflection/Class/)                              | Тип объектов в теге                                                            |
-| `функция преобразования` | [`Функция<NameSpacedString, any>`](/Mods/Boson/Functions/List/) | Преобразует имена в элементы тегов                                             |
+| Property Name       | Тип                                                                    | Описание                                                                  |
+| ------------------- | ---------------------------------------------------------------------- | ------------------------------------------------------------------------- |
+| `directoryName`     | `string`                                                               | Name of the directory where tag JSONs are in a data-pack                  |
+| `name`              | `string`                                                               | Mnemonic that identifies the given tag type; used in tag bracket handlers |
+| `classType`         | [`Класс`](/Mods/Boson/Reflection/Class/)                               | Type of objects stored in the tag                                         |
+| `converterFunction` | [`Function<NameSpacedString, any>`](/Mods/Boson/Functions/List/) | Converts names into tag elements                                          |
