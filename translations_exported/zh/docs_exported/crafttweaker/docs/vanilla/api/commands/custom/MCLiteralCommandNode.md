@@ -23,20 +23,20 @@ myMCLiteralCommandNode.createBuilder();
 
 ### equals #等于
 
-返回类型：布尔值
+Return type: boolean
 
 ```zenscript
 myMCLiteralCommandNode.equals(ao as Object);
 ```
 
-| 参数 | 类型 | 描述                      |
-| -- | -- | ----------------------- |
-| o  | 对象 | No description provided |
+| 参数 | 类型     | 描述                      |
+| -- | ------ | ----------------------- |
+| o  | Object | No description provided |
 
 
 ### getLiteral
 
-返回类型：字符串
+Return type: String
 
 ```zenscript
 a. myMCLiteralCommandNode.getLiteral();
@@ -44,7 +44,7 @@ a. myMCLiteralCommandNode.getLiteral();
 
 ### hashCode
 
-返回类型：int
+Return type: int
 
 ```zenscript
 myMCLiteralCommandNode.hashCode();
@@ -52,20 +52,20 @@ myMCLiteralCommandNode.hashCode();
 
 ### isValidInput
 
-返回类型：布尔值
+Return type: boolean
 
 ```zenscript
 myMCLiteralCommandNode.isValidInput(输入为字符串)；
 ```
 
-| 参数        | 类型          | 描述                      |
-| --------- | ----------- | ----------------------- |
-| input（输入） | 字符串[string] | No description provided |
+| 参数        | 类型     | 描述                      |
+| --------- | ------ | ----------------------- |
+| input（输入） | String | No description provided |
 
 
 ### toString
 
-返回类型：字符串
+Return type: String
 
 ```zenscript
 myMCLiteralCommandNode.toString();
@@ -79,13 +79,13 @@ myMCLiteralCommandNode.toString();
 myMCLiteralCommandNode == o 为对象
 ```
 
-| 参数 | 类型 | 描述                      |
-| -- | -- | ----------------------- |
-| o  | 对象 | No description provided |
+| 参数 | 类型     | 描述                      |
+| -- | ------ | ----------------------- |
+| o  | Object | No description provided |
 
-## 卡斯特尔
+## Casters
 
-| 结果类型        | 是否隐藏 |
-| ----------- | ---- |
-| 字符串[string] | true |
+| 结果类型   | 是否隐藏 |
+| ------ | ---- |
+| String | true |
 
