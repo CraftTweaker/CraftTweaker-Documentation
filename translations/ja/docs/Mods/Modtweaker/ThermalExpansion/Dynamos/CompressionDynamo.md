@@ -1,21 +1,21 @@
-# 圧縮ダイナモ
+# Compression Dynamo
 
-## パッケージをインポート
+## Import the package
 
-メソッド呼び出しを短くするには、 [パッケージを](/AdvancedFunctions/Import/) インポートすることができます。
+To shorten method calls you can [import](/AdvancedFunctions/Import/) the package like so:
 
 ```zenscript
 import mods.thermalexpansion.CompressionDynamo;
 ```
 
-## 燃料を追加
+## Add Fuel
 
 ```zenscript
 //mods.thermalexpansion.CompressionDynamo.addFuel(ILiquidStack stack, int energy);
-mods.thermalexpansion.addFuel(<liquid:water>, 13);
+mods.thermalexpansion.CompressionDynamo.addFuel(<liquid:water>, 13);
 ```
 
-## 燃料を取り除く
+## Remove Fuel
 
 ```zenscript
 //mods.thermalexpansion.Compression.removeFuel(ILiquidStack stack);
