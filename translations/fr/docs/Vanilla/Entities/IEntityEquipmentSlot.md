@@ -1,32 +1,32 @@
-# Emplacement d'Équipement IEntité
+# IEntityEquipmentSlot
 
-Un emplacement d'équipement IEntitySlot est un emplacement dans l'inventaire d'un joueur. Cela pourrait par exemple être la main principale ou l'un des emplacements d'armure.
+An IEntityEquipmentSlot is a slot in a player's inventory. That could for example be the mainHand or one of the armor slots.
 
-## Importation du paquet
+## Importing the package
 
-Il pourrait vous être nécessaire d'importer le paquet si vous rencontrez des problèmes, donc mieux vaut être sûr que désolé et ajouter l'importation.  
-`importer crafttweaker.entity.IEntityEquipmentSlot ;`
+It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
+`import crafttweaker.entity.IEntityEquipmentSlot;`
 
 ## ZenGetters/ZenMethods
 
-| Récupération | Type de texte        |
-| ------------ | -------------------- |
-| index        | Indice               |
-| slotIndex    | Indice               |
-| Nom          | chaîne de caractères |
+| Getter    | Type   |
+| --------- | ------ |
+| index     | int    |
+| slotIndex | int    |
+| name      | string |
 
-### Comparer
+### Compare
 
-Vous pouvez vérifier si deux objets IEntityEquipmentSlot sont égaux :  
-Renvoie un bool.
+You can check if two IEntityEquipmentSlot objects are equal:  
+Returns a bool.
 
 ```zenscript
 slotOne == slotTwo;
 ```
 
-## Énumérations
+## Enumerations
 
-L'Interface EntityEquipmentSlot a 6 méthodes statiques, renvoyant chacun l'objet IEntityEquipmentSlot donné.
+The EntityEquipmentSlot Interface has 6 static Methods, each returning the given IEntityEquipmentSlot object.
 
 ```zenscript
 crafttweaker.entity.IEntityEquipmentSlot.mainHand();
