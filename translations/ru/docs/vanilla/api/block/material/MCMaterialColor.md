@@ -8,7 +8,7 @@
 crafttweaker.api.block.material.MCMaterialColor
 ```
 
-## Методы
+## Methods
 ### getMapColor
 
 Возвращает int
@@ -17,7 +17,7 @@ crafttweaker.api.block.material.MCMaterialColor
 myMCMaterialColor.getMapColor(index as int);
 ```
 
-| Параметр | Тип | Описание             |
+| Параметр | Тип | Description          |
 | -------- | --- | -------------------- |
 | index    | int | Описание отсутствует |
 
