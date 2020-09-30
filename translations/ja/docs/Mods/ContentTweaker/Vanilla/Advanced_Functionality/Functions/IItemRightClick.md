@@ -1,22 +1,22 @@
 # IItemRightClick
 
-IItemRightClick 関数は、 [アイテム](/Mods/ContentTweaker/Vanilla/Creatable_Content/Item/) に追加でき、ユーザがプライマリーハンドで選択したアイテムで右クリックを行うとトリガーされます。
+The IItemRightClick function can be added to an [Item](/Mods/ContentTweaker/Vanilla/Creatable_Content/Item/) and will be triggered when a user does rightclick with the item selected in his primary hand.
 
 ## パッケージのインポート
 
-問題が発生した場合は、パッケージをインポートする必要があるかもしれませんので、申し訳ありませんし、インポートを追加してください。  
+It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
 `import mods.contenttweaker.IItemRightClick;`
 
-## パラメータ
+## Parameters
 
-IItemRightClick 関数は、次のパラメータを持つ関数です。
+The IItemRightClick function is a function with the following parameters:
 
-- [IMutableItemStack](/Mods/ContentTweaker/Vanilla/Types/Item/IMutableItemStack/) itemStack → 右クリックされた項目
-- [IWorld](/Mods/ContentTweaker/Vanilla/Types/World/IWorld/) ワールド → プレイヤーがいる世界
-- [ICTPlayer](/Mods/ContentTweaker/Vanilla/Types/Player/ICTPlayer/) プレーヤー → 右クリックを行うプレイヤー
-- 文字列の手 → "OFF_HAND" または "MAIN_HAND" のいずれか
+- [IMutableItemStack](/Mods/ContentTweaker/Vanilla/Types/Item/IMutableItemStack/) itemStack → The item that is right-clicked
+- [IWorld](/Mods/ContentTweaker/Vanilla/Types/World/IWorld/) world → The world the player is in
+- [ICTPlayer](/Mods/ContentTweaker/Vanilla/Types/Player/ICTPlayer/) player → The player doing the right-click
+- String hand → Either "OFF_HAND" or "MAIN_HAND"
 
-関数は `"成功"`, `"パスワード"` または `"失敗"` のいずれかを返す必要があります。
+The function needs to return either `"SUCCESS"`, `"PASS"` or `"FAIL"`
 
 ## 例
 
