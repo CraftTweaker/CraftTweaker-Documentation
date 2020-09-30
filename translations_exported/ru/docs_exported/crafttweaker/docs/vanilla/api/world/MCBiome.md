@@ -8,8 +8,8 @@
 crafttweaker.api.world.MCBiome
 ```
 
-## Методы
-### Геотерапия
+## Methods
+### getTemperature
 
 Тип возврата: число с плавающей точкой
 
@@ -17,24 +17,24 @@ crafttweaker.api.world.MCBiome
 myMCBiome.getTemperature(pos as crafttweaker.api.util.BlockPos);
 ```
 
-| Параметр | Тип                                                          | Описание             |
+| Параметр | Тип                                                          | Description          |
 | -------- | ------------------------------------------------------------ | -------------------- |
-| пос      | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | Описание отсутствует |
+| pos      | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | Описание отсутствует |
 
 
 
 ## Свойства
 
-| Название          | Тип     | Имеет Getter | Имеет Setter |
-| ----------------- | ------- | ------------ | ------------ |
-| категория         | String  | true         | false        |
-| глубина           | float   | true         | false        |
-| не Дождь          | boolean | true         | false        |
-| не снег           | boolean | true         | false        |
-| понижение         | float   | true         | false        |
-| Высокая влажность | boolean | true         | false        |
-| тип дождя         | String  | true         | false        |
-| шкала             | float   | true         | false        |
-| водяной цвет      | int     | true         | false        |
-| водяный цвет      | int     | true         | false        |
+| Название       | Тип     | Имеет Getter | Имеет Setter |
+| -------------- | ------- | ------------ | ------------ |
+| category       | String  | true         | false        |
+| depth          | float   | true         | false        |
+| doesRain       | boolean | true         | false        |
+| doesSnow       | boolean | true         | false        |
+| downfall       | float   | true         | false        |
+| isHighHumidity | boolean | true         | false        |
+| rainType       | String  | true         | false        |
+| scale          | float   | true         | false        |
+| waterColor     | int     | true         | false        |
+| waterFogColor  | int     | true         | false        |
 
