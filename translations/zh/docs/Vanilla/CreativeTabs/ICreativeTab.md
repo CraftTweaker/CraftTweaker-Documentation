@@ -1,32 +1,32 @@
 # ICreativeTab
 
-ICreativeTabObject 代表一个创造性的库存选项卡。
+An ICreativeTabObject represents a creative inventory tab.
 
 ## 导入相关包
 
-如果您遇到任何问题，可能需要导入软件包，所以比抱歉更安全并添加导入。  
-`导入 craftbiner.creatativetabs.ICreativeTab；`
+It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
+`import crafttweaker.creativetabs.ICreativeTab;`
 
-## 获取这样一个对象
+## Getting such an Object
 
-您可以从 [创造性标签布料处理器](/Vanilla/Brackets/Bracket_CreativeTab/) 中检索一个 ICreativeTab 。
+You can retrieve an ICreativeTab from the [Creative tab Bracket Handler](/Vanilla/Brackets/Bracket_CreativeTab/).
 
-## ZenGetters 和 ZenMethods 没有参数
+## ZenGetters and ZenMethods without parameters
 
-| ZenGetter/ZenMethod（ZenMethod） | 返回值类型  |
-| ------------------------------ | ------ |
-| searchBarWidth                 | int    |
-| 标签标签                           | string |
-| setNoScrollBar()               | 空(无)   |
-| setNoTitle()                   | 空(无)   |
+| ZenGetter/ZenMethod | 返回值类型          |
+| ------------------- | -------------- |
+| searchBarWidth      | int            |
+| tabLabel            | string         |
+| setNoScrollBar()    | void (nothing) |
+| setNoTitle()        | void (nothing) |
 
-## ZenMethod（ZenMethod）
+## ZenMethod
 
-#### 设置背景图像名称
+#### Set Background image Name
 
-使用一个字符串(例如， `"item_search.png"`)。  
-返回无效(无)。
+Uses a string (e.g. `"item_search.png"`).  
+Returns void (nothing).
 
 ```zenscript
-tab.setBackgroundImageName(正在创建背景图像)；
+tab.setBackgroundImageName(String backgroundImage);
 ```
