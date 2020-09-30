@@ -1,34 +1,34 @@
-# Микроволновая
+# Microwave
 
-Микроволновая вода нагревает продукты питания.
+The Microwave heats up food items.
 
-## Микроволновые Рецепты
+## Default Microwave Recipes
 
-- Жареная говядина
-- Картофель -> Печёный картофель
+- Beef -> Cooked Beef
+- Potato -> Baked Potato
 
-## Удаление
+## Removing
 
-## Удалить соответствующие рецепты микроволновой печи.
+## Remove matching microwave recipes.
 
 ```zenscript
 mods.cfm.Microwave.remove(@Optional final IIngredient output, @Optional final IIngredient input);
 
-// Удаляем рецепты, требующие Potato
-mods.cfm.Microwave. emove(null,<minecraft:potato>);
-// Удаляем рецепты, которые приводят к Cooked Beef
+// Remove recipes that require a Potato
+mods.cfm.Microwave.remove(null,<minecraft:potato>);
+// Remove recipes that result in Cooked Beef
 mods.cfm.Microwave.remove(<minecraft:cooked_beef>);
-// Удаляем все рецепты
+// Remove all recipes
 mods.cfm.Microwave.remove();
 ```
 
-## Добавление
+## Adding
 
-## Добавить микроволновый рецепт.
+## Add a microwave recipe.
 
 ```zenscript
-mods.cfm.Microwave.addRecipe(@Nonnull final IItemStack, @Nonnull final IItemStack);
+mods.cfm.Microwave.addRecipe(@Nonnull final IItemStack output, @Nonnull final IItemStack input);
 
-// Добавляем рецепт, который делает 4 палки из одного сахарного тростника
-модов. fm.Microwave.addRecipe(<minecraft:stick>.withAmount(4),<minecraft:reeds>);
+// Add a recipe that makes a 4 sticks from one sugar cane
+mods.cfm.Microwave.addRecipe(<minecraft:stick>.withAmount(4),<minecraft:reeds>);
 ```
