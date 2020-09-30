@@ -1,6 +1,6 @@
 # IRecipeManager
 
-Интерфейс по умолчанию для обработчиков реестра, так как он может удалять рецепты с помощью Расположение Ресурсов.
+Default interface for Registry based handlers as they can all remove recipes by ResourceLocation.
 
 Этот класс был добавлен модом с mod-id `crafttweaker`. Так что если вы хотите использовать эту функцию, вам нужно установить этот мод.
 
@@ -10,94 +10,94 @@
 crafttweaker.api.registries.IRecipeManager
 ```
 
-## Реализованные интерфейсы
-IRecipeManager реализует следующие интерфейсы. Следовательно, методы из них доступны в этом классе.
+## Implemented Interfaces
+IRecipeManager implements the following interfaces. That means any method available to them can also be used on this class.
 - [crafttweaker.api.brackets.CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
 
-## Методы
+## Methods
 ### addJSONRecipe
 
-Добавляет рецепт на основе предоставленной IData. Предоставленная IData должна представлять JSON DataPack DataPack это позволяет эффективно регистрировать рецепты для любого набора данных, поддерживающего системы IRecipeType.
+Adds a recipe based on a provided IData. The provided IData should represent a DataPack JSON, this effectively allows you to register recipes for any DataPack supporting IRecipeType systems.
 
 ```zenscript
-craftingTable.addJSONRecipe(название строки, данные как crafttweaker.api.data.IData);
-craftingTable.addJSONRecipe("recipe_name", {ingredient:{item:<item:minecraft:gold_ore>.registryName},результат:<item:minecraft:cooked_porkchop>.registryName,experience:0.35 как float, cookingtime:100});
+craftingTable.addJSONRecipe(name as String, data as crafttweaker.api.data.IData);
+craftingTable.addJSONRecipe("recipe_name", {ingredient:{item:<item:minecraft:gold_ore>.registryName},result:<item:minecraft:cooked_porkchop>.registryName,experience:0.35 as float, cookingtime:100});
 ```
 
-| Параметр | Тип                                                    | Описание                         |
-| -------- | ------------------------------------------------------ | -------------------------------- |
-| имя      | String                                                 | название рецепта                 |
-| data     | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | данные, представляющие файл json |
+| Параметр | Тип                                                    | Description                     |
+| -------- | ------------------------------------------------------ | ------------------------------- |
+| name     | String                                                 | name of the recipe              |
+| data     | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | data representing the json file |
 
 
-### удалить все
+### removeAll
 
-Удалить все рецепты в реестре
+Remove all recipes in this registry
 
 ```zenscript
 craftingTable.removeAll();
 ```
 
-### удалил Modid
+### removeByModid
 
-Удалить рецепт на основе модификации имени реестра
+Remove recipe based on Registry name modid
 
 ```zenscript
 craftingTable.removeByModid(modid as String);
 craftingTable.removeByModid("minecraft");
 ```
 
-| Параметр | Тип    | Описание                  |
-| -------- | ------ | ------------------------- |
-| мод      | String | мод рецептов для удаления |
+| Параметр | Тип    | Description                    |
+| -------- | ------ | ------------------------------ |
+| modid    | String | modid of the recipes to remove |
 
 
 ### removeByName
 
-Удалить рецепт на основе названия реестра
+Remove recipe based on Registry name
 
 ```zenscript
-craftingTable.removeByName(название как строка);
+craftingTable.removeByName(name as String);
 craftingTable.removeByName("minecraft:furnace");
 ```
 
-| Параметр | Тип    | Описание                 |
-| -------- | ------ | ------------------------ |
-| имя      | String | имя реестра для удаления |
+| Параметр | Тип    | Description                       |
+| -------- | ------ | --------------------------------- |
+| name     | String | registry name of recipe to remove |
 
 
 ### removeByRegex
 
-Удалить рецепт, основанный на регулярном выражении
+Remove recipe based on regex
 
 ```zenscript
-craftingTable.removeByRegex(regex как строка);
+craftingTable.removeByRegex(regex as String);
 craftingTable.removeByRegex("\\d_\\d");
 ```
 
-| Параметр   | Тип    | Описание                 |
-| ---------- | ------ | ------------------------ |
-| регулярные | String | выражать до совпадения с |
+| Параметр | Тип    | Description            |
+| -------- | ------ | ---------------------- |
+| regex    | String | regex to match against |
 
 
-### удалить рецепт
+### removeRecipe
 
-Удалите рецепт, основанный на его результате.
+Remove a recipe based on it's output.
 
 ```zenscript
-craftingTable.removeRecipe(выход как crafttweaker.api.item.IItemStack);
+craftingTable.removeRecipe(output as crafttweaker.api.item.IItemStack);
 craftingTable.removeRecipe(<item:minecraft:glass>);
 ```
 
-| Параметр | Тип                                                               | Описание      |
-| -------- | ----------------------------------------------------------------- | ------------- |
-| вывод    | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | вывод рецепта |
+| Параметр | Тип                                                               | Description          |
+| -------- | ----------------------------------------------------------------- | -------------------- |
+| output   | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | output of the recipe |
 
 
 
 ## Свойства
 
-| Название         | Тип    | Имеет Getter | Имеет Setter |
-| ---------------- | ------ | ------------ | ------------ |
-| командная строка | String | true         | false        |
+| Название      | Тип    | Имеет Getter | Имеет Setter |
+| ------------- | ------ | ------------ | ------------ |
+| commandString | String | true         | false        |
 
