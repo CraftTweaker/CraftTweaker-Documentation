@@ -1,7 +1,7 @@
 # EntityLivingDeath
 
-Событие EntityLivingDeath запускается всякий раз, когда сущность погибает.  
-Это можно отменить, чтобы позволить сущности жить.
+The EntityLivingDeath event is fired whenever an Entity is about to die.  
+It can be canceled to let the entity live.
 
 ## Класс события
 
@@ -18,6 +18,6 @@ PlayerDeathDrops реализует следующие интерфейсы и �
 
 ## ZenGetters
 
-| Геттеры              | Тип                                             |
-| -------------------- | ----------------------------------------------- |
-| источник повреждения | [IDamageSource](/Vanilla/Damage/IDamageSource/) |
+| ZenGetter    | Тип                                             |
+| ------------ | ----------------------------------------------- |
+| damageSource | [IDamageSource](/Vanilla/Damage/IDamageSource/) |
