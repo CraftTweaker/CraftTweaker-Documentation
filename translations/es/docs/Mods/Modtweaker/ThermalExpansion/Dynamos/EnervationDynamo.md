@@ -1,21 +1,21 @@
-# Dilución de la cervizeza
+# Enervation Dynamo
 
-## Importar el paquete
+## Import the package
 
-Para acortar las llamadas a métodos puedes [importar](/AdvancedFunctions/Import/) el paquete así:
+To shorten method calls you can [import](/AdvancedFunctions/Import/) the package like so:
 
 ```zenscript
-importar mods.thermalexpansion.EnervationDynamo;
+import mods.thermalexpansion.EnervationDynamo;
 ```
 
-## Añadir combustible
+## Add Fuel
 
 ```zenscript
 //mods.thermalexpansion.EnervationDynamo.addFuel(ILiquidStack stack, int energy);
 mods.thermalexpansion.EnervationDynamo.addFuel(<liquid:water>, 13);
 ```
 
-## Eliminar Petróleo
+## Remove Fuel
 
 ```zenscript
 //mods.thermalexpansion.EnervationDynamo.removeFuel(ILiquidStack stack);
