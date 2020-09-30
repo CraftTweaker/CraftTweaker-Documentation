@@ -1,25 +1,25 @@
-# Reservas
+# Reservoir
 
-## eliminar
+## remove
 
-| Nombre        | Tipo   |
+| Name          | Type   |
 | ------------- | ------ |
-| Nombre Receta | Cadena |
+| Nombre Receta | String |
 
-Ejemplo:
+Example:
 ```ZenScript
 // mods.immersivepetroleum.ReservoirRegistry.remove(String recipeName);
 
 mods.immersivepetroleum.ReservoirRegistry.remove("aquifer");
 ```
 
-## eliminar todo
+## removeAll
 
-| Nombre | Tipo |
-| ------ | ---- |
-|        |      |
+| Name | Type |
+| ---- | ---- |
+|      |      |
 
-Ejemplo:
+Example:
 ```ZenScript
 // mods.immersivepetroleum.ReservoirRegistry.removeAll();
 
@@ -30,30 +30,30 @@ mods.immersivepetroleum.ReservoirRegistry.removeAll();
 
 ## constructor
 
-| Nombre        | Tipo                                        |
-| ------------- | ------------------------------------------- |
-| Fluido        | [Fluidstack](/Vanilla/Liquids/IFluidStack/) |
-| Tamaño mínimo | int                                         |
-| Tamaño máximo | int                                         |
-| Reponer tasa  | int                                         |
-| Peso          | int                                         |
+| Name           | Type                                        |
+| -------------- | ------------------------------------------- |
+| Fluid          | [Fluidstack](/Vanilla/Liquids/IFluidStack/) |
+| Minimum Size   | int                                         |
+| Maximum Size   | int                                         |
+| Replenish Rate | int                                         |
+| Weight         | int                                         |
 
-### Peso
+### Weight
 
-El peso es la posibilidad ponderada de un trozo que contiene ese depósito de líquido específico. El peso es contado como en X en Total.
+Weight is the Weighted Chance of a chunk containing that specific fluid reservoir. The weight is counted as in X in Total.
 
 So if you have 5 Reservoir values at: 5, 5, 6, 8, 10
 
-Entonces cada entrada respectiva tendrá una probabilidad ponderada de:
+Then each respective entry will have a weighted chance of:
 ```
-5 en 34
-5 en 34
-6 en 34
-8 en 34
-10 en 34
+5  in 34
+5  in 34
+6  in 34
+8  in 34
+10 in 34
 ```
 
-Ejemplo:
+Example:
 ```zenscript
 // new mods.immersivepetroleum.ReservoirBuilder(IFluidStack fluid, int minSize, int maxSize, int traceAmount, int weight);
 
@@ -62,12 +62,12 @@ new mods.immersivepetroleum.ReservoirBuilder(<fluid:minecraft:lava>, 1000, 5000,
 
 ## añadir Dimensiones
 
-| Nombre                  | Tipo                |
+| Name                    | Type                |
 | ----------------------- | ------------------- |
-| Lista negra             | Boolean             |
+| Blacklist               | Boolean             |
 | Nombres de la dimensión | Arreglo de cadena[] |
 
-Ejemplo:
+Example:
 ```zenscript
 // builderInstance.addDimensions(boolean isBlacklist, String[] dimensionNames);
 
@@ -76,28 +76,28 @@ builderInstance.addDimensions(false, ["minecraft:overworld"]);
 
 ## addBiomes
 
-| Nombre           | Tipo                |
+| Name             | Type                |
 | ---------------- | ------------------- |
-| Lista negra      | Boolean             |
+| Blacklist        | Boolean             |
 | Nombres de bioma | Arreglo de cadena[] |
 
-Ejemplo:
+Example:
 ```zenscript
 // builderInstance.addBiomes(boolean isBlacklist, String[] biomeNames);
 
 builderInstance.addBiomes(false, ["minecraft:plains"]);
 ```
 
-## construir
+## build
 
-| Nombre | Tipo   |
-| ------ | ------ |
-| Nombre | Cadena |
+| Name | Type   |
+| ---- | ------ |
+| Name | String |
 
 ### Preface
 Los embalses de base son minúsculas ya que se traducen - las personalizadas deben ser debidamente capitalizadas (por ejemplo, "Reservas de Petróleo en el Océano Profundo").
 
-Ejemplo:
+Example:
 ```zenscript
 // builderInstance.build(String name);
 
