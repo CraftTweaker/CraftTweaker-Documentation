@@ -1,19 +1,19 @@
 # IEntityAttribute
 
-## Importazione del pacchetto
+## Importing the package
 
-Potrebbe essere necessario importare il pacchetto se si incontrano problemi (come lanciare un [Array](/AdvancedFunctions/Arrays_and_Loops/)), quindi meglio essere sicuri che spiacenti e aggiungere l'importazione.  
+It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
 `import crafttweaker.entity.Attribute;`
 
 ## ZenGetters
 
-| ZenGetter          | GetterMethod      | Tipo Di Reso     |
-| ------------------ | ----------------- | ---------------- |
-| nome               | getName()         | stringa          |
-| valore predefinito | getDefaultValue() | doppia           |
-| shouldWatch        | getShouldWatch()  | boolean          |
-| genitore           | getParent()       | IEntityAttribute |
+| ZenGetter    | GetterMethod      | Return Type      |
+| ------------ | ----------------- | ---------------- |
+| name         | getName()         | string           |
+| defaultValue | getDefaultValue() | double           |
+| shouldWatch  | getShouldWatch()  | boolean          |
+| parent       | getParent()       | IEntityAttribute |
 
-## Più ZenMethods
+## More ZenMethods
 
-- doppia clampValue(doppio valore) → Fa qualcosa...
+- double clampValue(double Value) → Does something...
