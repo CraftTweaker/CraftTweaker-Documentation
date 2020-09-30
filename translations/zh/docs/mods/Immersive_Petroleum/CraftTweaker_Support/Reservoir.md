@@ -1,10 +1,10 @@
-# 库
+# Reservoir
 
-## remove #移除
+## remove
 
-| 名称   | 类型          |
-| ---- | ----------- |
-| 配方名称 | 字符串[string] |
+| 名称   | 类型     |
+| ---- | ------ |
+| 配方名称 | String |
 
 比如：
 ```ZenScript
@@ -13,7 +13,7 @@
 mods.immersivepetroleum.ReservoirRegistry.remove("含水层");
 ```
 
-## 全部移除
+## removeAll
 
 | 名称 | 类型 |
 | -- | -- |
@@ -30,21 +30,21 @@ mods.immersivepetroleum.ReservoirRegistry.removeAll();
 
 ## 构造器
 
-| 名称   | 类型                                          |
-| ---- | ------------------------------------------- |
-| 流体   | [Fluidstack](/Vanilla/Liquids/IFluidStack/) |
-| 最小尺寸 | 整数                                          |
-| 最大尺寸 | 整数                                          |
-| 增补率  | 整数                                          |
-| 权重   | 整数                                          |
+| 名称             | 类型                                          |
+| -------------- | ------------------------------------------- |
+| Fluid          | [Fluidstack](/Vanilla/Liquids/IFluidStack/) |
+| Minimum Size   | int                                         |
+| Maximum Size   | int                                         |
+| Replenish Rate | int                                         |
+| Weight         | int                                         |
 
-### 权重
+### Weight
 
-重量是一个含有该特定液体库的区块的加权机会。 重量按Total的X值计算。
+Weight is the Weighted Chance of a chunk containing that specific fluid reservoir. The weight is counted as in X in Total.
 
-所以，如果你有 5 个储备值： 5, 5, 6, 8, 10
+So if you have 5 Reservoir values at: 5, 5, 6, 8, 10
 
-然后每个相应条目都有加权几率：
+Then each respective entry will have a weighted chance of:
 ```
 5  in 34
 5  in 34
@@ -62,10 +62,10 @@ new mods.immersivepetroleum.ReservoirBuilder(<fluid:minecraft:lava>, 1000, 5000,
 
 ## 添加尺寸
 
-| 名称   | 类型      |
-| ---- | ------- |
-| 黑名单  | Boolean |
-| 尺寸名称 | 字符串[]数组 |
+| 名称        | 类型      |
+| --------- | ------- |
+| Blacklist | Boolean |
+| 尺寸名称      | 字符串[]数组 |
 
 比如：
 ```zenscript
@@ -76,10 +76,10 @@ builderInstance.addDimensions(false, ["minecraft:overworld"]);
 
 ## addBiomes
 
-| 名称     | 类型      |
-| ------ | ------- |
-| 黑名单    | Boolean |
-| 生物群落名称 | 字符串[]数组 |
+| 名称        | 类型      |
+| --------- | ------- |
+| Blacklist | Boolean |
+| 生物群落名称    | 字符串[]数组 |
 
 比如：
 ```zenscript
@@ -88,11 +88,11 @@ builderInstance.addDimensions(false, ["minecraft:overworld"]);
 builderInstance.addBiomes(false, [["minecraft:plains"]);
 ```
 
-## 构建中
+## build
 
-| 名称 | 类型          |
-| -- | ----------- |
-| 名称 | 字符串[string] |
+| 名称 | 类型     |
+| -- | ------ |
+| 名称 | String |
 
 ### 序言
 基础储藏因翻译而是小写的 - 自定义储藏应被适当地资本化(例如“深海石油储藏”)。
