@@ -1,9 +1,9 @@
-# Informazioni Ricetta
+# Recipe Info
 
-## Gestori Ricette
-Se vuoi ottenere il gestore delle ricette associato a un tipo di ricetta, usa `getRecipeHandler()`. Per esempio, se si desidera attivare il gestore della ricetta Fissione Carburante Solid, utilizzare `mods.nuclearcraft.SolidFission.getRecipeHandler()`.
+## Recipe Handlers
+If you want to get the recipe handler associated with a recipe type, use `getRecipeHandler()`. For example, if you want toget the Solid Fuel Fission recipe handler, use `mods.nuclearcraft.SolidFission.getRecipeHandler()`.
 
-## Metodi Gestore Ricette
+## Recipe Handler Methods
 ```zenscript
 RecipeHandler::getRecipeName();
 RecipeHandler::getRecipeList();
@@ -15,7 +15,7 @@ RecipeHandler::getFluidOutputSize();
 RecipeHandler::isShapeless();
 ```
 
-## Metodi Di Ricetta
+## Recipe Methods
 ```zenscript
 Recipe::getItemIngredient(int index);
 Recipe::getFluidIngredient(int index);
