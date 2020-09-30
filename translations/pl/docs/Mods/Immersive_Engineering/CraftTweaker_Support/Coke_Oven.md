@@ -1,33 +1,33 @@
-# Piec koksowy
+# Coke Oven
 
-## Wezwanie do pakietu
+## Calling The Package
 
-Możesz wywołać pakiet CokeOven używając `mods.immersiveengineering.CokeOven`.
+You can call the CokeOven package using `mods.immersiveengineering.CokeOven`.
 
-## Dodaj przepis
+## Add Recipe
 
-| Wymagane | Typ              | Typ danych                                       |
-| -------- | ---------------- | ------------------------------------------------ |
-| Wymagane | Wyjście          | [IItemstack](/Vanilla/Items/IItemStack/)         |
-| Wymagane | Produkcja paliwa | Liczba całkowita                                 |
-| Wymagane | Input            | [Składnik](/Vanilla/Variable_Types/IIngredient/) |
-| Wymagane | Czas             | Liczba całkowita                                 |
+| Required | Type        | Data Type                                           |
+| -------- | ----------- | --------------------------------------------------- |
+| Required | Output      | [IItemstack](/Vanilla/Items/IItemStack/)            |
+| Required | Fuel Output | Integer                                             |
+| Required | Input       | [IIngredient](/Vanilla/Variable_Types/IIngredient/) |
+| Required | Time        | Integer                                             |
 
-### Przykład
+### Example
 
 ```zenscript
 //Example:
-mods.immersiveengineering.CokeOven.addRecipe(IItemStack output, int fuelOutput, IIngredient Input , int time);
+mods.immersiveengineering.CokeOven.addRecipe(IItemStack output, int fuelOutput, IIngredient input, int time);
 mods.immersiveengineering.CokeOven.addRecipe(<minecraft:coal>, 2, <ore:logWood>, 2000);
 ```
 
-## Usuń przepis
+## Remove Recipe
 
-| Typ     | Typ danych                               |
-| ------- | ---------------------------------------- |
-| Wyjście | [IItemstack](/Vanilla/Items/IItemStack/) |
+| Type   | Data Type                                |
+| ------ | ---------------------------------------- |
+| Output | [IItemstack](/Vanilla/Items/IItemStack/) |
 
-### Przykład:
+### Example:
 
 ```zenscript
 //Example:
