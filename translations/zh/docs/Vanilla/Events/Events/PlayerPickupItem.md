@@ -1,24 +1,24 @@
-# 玩家拾取物品
+# PlayerPickupItem
 
-每当玩家与实体交互时都会触发玩家选取物品事件。
+The PlayerPickupItem Event is fired whenever a player interacts with an Entity.
 
-## 事件类
+## Event Class
 
 You will need to cast the event in the function header as this class:  
 `crafttweaker.event.PlayerPickupItemEvent`  
 You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
 
-## 事件界面扩展
+## Event interface extensions
 
-播放器拾取项目事件实现了以下接口，并且能够调用他们所有的方法/getter/setter：
+PlayerPickupItem Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
 
 - [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
 
 ## ZenGetters
 
-以下信息可以从事件中检索：
+The following information can be retrieved from the event:
 
 | ZenGetter | 返回值类型                                         |
 | --------- | --------------------------------------------- |
-| `项目`      | [IEntityItem](/Vanilla/Entities/IEntityItem/) |
-| `播放器`     | [IPlayer](/Vanilla/Players/IPlayer/)          |
+| `item`    | [IEntityItem](/Vanilla/Entities/IEntityItem/) |
+| `player`  | [IPlayer](/Vanilla/Players/IPlayer/)          |
