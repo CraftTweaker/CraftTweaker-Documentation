@@ -1,6 +1,6 @@
-# Дистиллинг
+# Distillation
 
-## удалить
+## remove
 
 | Название    | Тип    |
 | ----------- | ------ |
@@ -13,7 +13,7 @@
 mods.immersivepetroleum.DistillationTower.remove("oilcracking");
 ```
 
-## удалить все
+## removeAll
 
 | Название | Тип |
 | -------- | --- |
@@ -24,7 +24,7 @@ mods.immersivepetroleum.DistillationTower.remove("oilcracking");
 mods.immersivepetroleum.DistillationTower.removeAll();
 ```
 
-# Строитель
+# Builder
 
 ## конструктор
 
@@ -56,8 +56,8 @@ builderInstance.setOutputFluids([<fluid:minecraft:water> * 1]);
 
 | Название | Тип                                     |
 | -------- | --------------------------------------- |
-| Пункт 1  | [ItemStack](/Vanilla/Items/IItemStack/) |
-| Шанс     | Целое число (0 - 100)                   |
+| Item     | [ItemStack](/Vanilla/Items/IItemStack/) |
+| Chance   | Целое число (0 - 100)                   |
 
 Пример:
 ```zenscript
@@ -70,8 +70,8 @@ builderInstance.addByproduct(<item:minecraft:cobblestone>, 50);
 
 | Название | Тип                                     |
 | -------- | --------------------------------------- |
-| Пункт 1  | [ItemStack](/Vanilla/Items/IItemStack/) |
-| Шанс     | Двойной (0.0 - 1.0)                     |
+| Item     | [ItemStack](/Vanilla/Items/IItemStack/) |
+| Chance   | Двойной (0.0 - 1.0)                     |
 
 Пример:
 ```zenscript
@@ -120,7 +120,7 @@ builderInstance.setEnergy(1024);
 builderInstance.setTime(1);
 ```
 
-## сборка
+## build
 
 | Название    | Тип    |
 | ----------- | ------ |
