@@ -1,4 +1,4 @@
-# Modalità Pacchetto
+# Packmode
 
-La mod Packmode è un addon CraftTweaker che consente di creare diverse modalità di pacchetto utilizzando un preprocessore personalizzato.  
-Per ottenere questo risultato, dovrai cambiare un file di configurazione e *riavviare completamente il gioco*
+The Packmode mod is a CraftTweaker addon that lets you create different pack modes using a custom preprocessor.  
+To achieve this, you will need to change a config file and then *fully restart your game*
