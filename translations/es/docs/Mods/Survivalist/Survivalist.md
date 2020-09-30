@@ -1,55 +1,55 @@
-# Superviviente
+# Survivalist
 
-## Bloque de corte
+## Chopping Block
 
 ### InputStack, OutputStack, {outputMultiplier}, {hitCountMultiplier}
 
 ```zenscript
-gigaherz.survivalist.Choppable.addRecipe(entrada IIngredient, salida IItemStack, salidaMultiplier, hitCountMultiplier);
+gigaherz.survivalist.Choppable.addRecipe(IIngredient input,  IItemStack output, outputMultiplier, hitCountMultiplier);
 ```
 
-##### Ejemplo
+##### Example
 
 ```zenscript
 gigaherz.survivalist.Choppable.addRecipe(<minecraft:bone>,<minecraft:dye:15>, 1.0, 1.0);
 ```
 
-### SalidaStack, {InputStack}
+### OutputStack, {InputStack}
 
 ```zenscript
-gigaherz.survivalist.Choppable.removeRecipe(salida IIngredient, entrada IIngredient);
+gigaherz.survivalist.Choppable.removeRecipe(IIngredient output, IIngredient input);
 ```
 
-##### Ejemplo
+##### Example
 
 ```zenscript
 gigaherz.survivalist.Choppable.removeRecipe(<minecraft:stick>);
 ```
 
-## Rack de secado
+## Drying Rack
 
-### InputStack, OutputStack, Tiempo en Ticks
+### InputStack, OutputStack, Time in Ticks
 
 ```zenscript
-gigaherz.survivalist.Dryable.addRecipe(entrada IIngredient, salida ItemStack, hora int);
+gigaherz.survivalist.Dryable.addRecipe(IIngredient input, IItemStack output, int time);
 ```
 
-##### Ejemplo
+##### Example
 
 ```zenscript
 gigaherz.survivalist.Dryable.addRecipe(<minecraft:rotten_flesh>, <minecraft:leather>, 300);
 ```
 
-### SalidaStack, {InputStack}
+### OutputStack, {InputStack}
 
 ```zenscript
 gigaherz.survivalist.Dryable.removeRecipe(IIngredient output, IIngredient input);
 ```
 
-##### Ejemplo
+##### Example
 
 ```zenscript
 gigaherz.survivalist.Dryable.removeRecipe(<minecraft:leather>, <minecraft:rotten_flesh>);
 ```
 
-#### InputStack puede ser un diccionario de minerales y cualquier cosa rodeada por {} es opcional
+#### InputStack can be ore dictionary and anything surrounded by {} is optional
