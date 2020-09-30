@@ -1,58 +1,58 @@
 # MCResourceLocation
 
-crafttweakerのmod-idを持つmodによって追加されているクラスです。 従って、この機能を利用する場合はこのmodをインストールする必要があります。
+This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
 
-## クラスのインポート
-問題が発生した場合には、インポートが必要になります。とはいえ、お手数ですが予めインポートしておくほうが安全です。
+## Importing the class
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
 ```zenscript
 crafttweaker.api.util.MCResourceLocation
 ```
 
-## 実装されたインターフェース
-MCResourceLocationは以下のインターフェースを実装しています。 つまり、利用可能な任意のメソッドはこのクラスでも使用できます。
-- [craftweaker.api.brackets.CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
+## Implemented Interfaces
+MCResourceLocationは以下のインターフェースを実装しています。 That means any method available to them can also be used on this class.
+- [crafttweaker.api.brackets.CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
 
 ## Constructors
 ```zenscript
 new crafttweaker.api.util.MCResourceLocation(namespace as String, path as String);
 ```
-| パラメータ | タイプ  | 説明           |
-| ----- | ---- | ------------ |
-| 名前空間  | 文字列型 | 説明が提供されていません |
-| 小道    | 文字列型 | 説明が提供されていません |
+| Parameter | Type   | Description             |
+| --------- | ------ | ----------------------- |
+| 名前空間      | String | No description provided |
+| path      | String | No description provided |
 
 
 
-## メソッド
+## Methods
 ### compareTo
 
-戻り値の種類: int
+Return type: int
 
 ```zenscript
 myMCResourceLocation.compareTo(p_compareTo_1_ as crafttweaker.api.util.MCResourceLocation);
 ```
 
-| パラメータ            | タイプ                                                                              | 説明           |
-| ---------------- | -------------------------------------------------------------------------------- | ------------ |
-| p_compareTo_1_ | [crafttweaker.api.util.MCResourceLocation](/vanilla/api/util/MCResourceLocation) | 説明が提供されていません |
+| Parameter        | Type                                                                             | Description             |
+| ---------------- | -------------------------------------------------------------------------------- | ----------------------- |
+| p_compareTo_1_ | [crafttweaker.api.util.MCResourceLocation](/vanilla/api/util/MCResourceLocation) | No description provided |
 
 
-### 等しい
+### equals
 
-戻り値の型: boolean
+Return type: boolean
 
 ```zenscript
 myMCResourceLocation.equals(other as Object);
 ```
 
-| パラメータ | タイプ    | 説明           |
-| ----- | ------ | ------------ |
-| その他   | オブジェクト | 説明が提供されていません |
+| Parameter | Type   | Description             |
+| --------- | ------ | ----------------------- |
+| other     | Object | No description provided |
 
 
 ### getNamespace
 
-戻り値の型: String
+Return type: String
 
 ```zenscript
 myMCResourceLocation.getNamespace();
@@ -60,7 +60,7 @@ myMCResourceLocation.getNamespace();
 
 ### getPath
 
-戻り値の型: String
+Return type: String
 
 ```zenscript
 myMCResourceLocation.getPath();
@@ -68,7 +68,7 @@ myMCResourceLocation.getPath();
 
 ### hashCode
 
-戻り値の種類: int
+Return type: int
 
 ```zenscript
 myMCResourceLocation.hashCode();
@@ -76,18 +76,18 @@ myMCResourceLocation.hashCode();
 
 ### toString
 
-戻り値の型: String
+Return type: String
 
 ```zenscript
 myMCResourceLocation.toString();
 ```
 
 
-## プロパティー
+## Properties
 
-| 名称            | タイプ  | ゲッターあり | セッターあり |
-| ------------- | ---- | ------ | ------ |
-| commandString | 文字列型 | true   | false  |
-| 名前空間          | 文字列型 | true   | false  |
-| 小道            | 文字列型 | true   | false  |
+| 名称            | Type   | Has Getter | Has Setter |
+| ------------- | ------ | ---------- | ---------- |
+| commandString | String | true       | false      |
+| 名前空間          | String | true       | false      |
+| path          | String | true       | false      |
 
