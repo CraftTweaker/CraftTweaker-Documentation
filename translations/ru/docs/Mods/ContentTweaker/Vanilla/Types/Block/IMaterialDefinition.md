@@ -1,18 +1,18 @@
-# Определение IMaterialThis
+# IMaterialDefinition
 
-Объект IMaterialDefinition представляет собой материальное определение в игре. Для создания нового блока требуется определение материала.
+An IMaterialDefinition object represents a material definition in the game. A Material Definition is needed if you want to create a new block.
 
 # Импорт пакета
 
-Возможно, вам потребуется импортировать пакет, если вы столкнетесь с какими-либо проблемами, так что лучше быть безопасным чем извините и добавьте импорт.  
-`импорт mods.contenttweaker.BlockMaterial;`
+It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
+`import mods.contenttweaker.BlockMaterial;`
 
-## Вызов объекта IMaterialDefinition
+## Calling an IMaterialDefinition object
 
-Такой объект можно получить с помощью [Block Material Bracket Handler](/Mods/ContentTweaker/Vanilla/Brackets/Bracket_Block_Material/):  
+You can get such an object using the [Block Material Bracket Handler](/Mods/ContentTweaker/Vanilla/Brackets/Bracket_Block_Material/):  
 `<blockmaterial:wood>`
 
-## Геттеры/методы без параметров
+## ZenGetters/ZenMethods without parameters
 
 | Геттер          | Метод               | Возвращаемый тип                                                       |
 | --------------- | ------------------- | ---------------------------------------------------------------------- |
@@ -20,17 +20,17 @@
 | blocksMovement  | blocksMovement()    | bool                                                                   |
 | canBurn         | getCanBurn()        | bool                                                                   |
 | mobilityFlag    | getMobilityFlag()   | [PushReaction](/Mods/ContentTweaker/Vanilla/Types/Block/PushReaction/) |
-| жидкость        | isLiquid()          | bool                                                                   |
+| liquid          | isLiquid()          | bool                                                                   |
 | opaque          | isOpaque()          | bool                                                                   |
 | replaceable     | isReplaceable()     | bool                                                                   |
 | solid           | isSolid()           | bool                                                                   |
 | toolNotRequired | isToolNotRequired() | bool                                                                   |
 
-## Сравнить два блока
+## Compare two BlockMaterials
 
-Вы можете использовать оператор `==` , чтобы увидеть, одинаковы ли два MaterialDefinitions
+You can use the `==` operator to see if two MaterialDefinitions are equal
 
 ```zenscript
 if(materialA == materialB)
-    принтера ("успеха!");
+    print("success!");
 ```
