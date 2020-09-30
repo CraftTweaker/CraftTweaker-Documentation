@@ -1,19 +1,19 @@
 # IPlayerEvent
 
-このインターフェイスはプレイヤーを持つすべてのイベントによって拡張されます。  
-つまり、プレイヤーにアクセスするには以下のゲッターを使用できます。
+This interface is extended by all events that have a player.  
+That means you can use the getter below to access the player.
 
-## クラスのインポート
+## Importing the class
 
-エラーを避けるためにクラスを [インポート](/AdvancedFunctions/Import/) する必要があるかもしれません。  
+It might be required to [import](/AdvancedFunctions/Import/) the class to avoid errors.  
 `import crafttweaker.event.IPlayerEvent;`
 
-## ILivingEvent の拡張
+## Extending ILivingEvent
 
-このインターフェースは [ILivingEvent](/Vanilla/Events/Events/ILivingEvent/)を拡張します。つまり、ILivingEvent が提供するすべての機能が IPlayerEvent にも存在することを意味します。
+This interface extends [ILivingEvent](/Vanilla/Events/Events/ILivingEvent/), which means that all functionality that ILivingEvent offers is also present in IPlayerEvent
 
 ## ZenGetters
 
-| 名前    | タイプ                                  |
-| ----- | ------------------------------------ |
-| プレイヤー | [IPlayer](/Vanilla/Players/IPlayer/) |
+| name   | type                                 |
+| ------ | ------------------------------------ |
+| player | [IPlayer](/Vanilla/Players/IPlayer/) |
