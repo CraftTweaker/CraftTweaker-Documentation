@@ -1,22 +1,22 @@
-# 液体燃料
+# Liquid Fuels
 
-液体燃料用于肺电学工艺：在(高级)液体压缩机中压制以制造压缩空气，(可选的)Kerosene Lamp中则可产生光线。 默认情况下，炼油厂生产的液体被定义为燃料以及超过Kelvin温度305度以上的任何液体。
+Liquid Fuels are used in PneumaticCraft: Repressurized in the (Advanced) Liquid Compressor to create compressed air, and (optionally) in the Kerosene Lamp to produce light. By default the liquids produced in the Refinery are defined as fuel, as well as any liquid above a temperature of 305 degrees Kelvin.
 
 ## 导入
 
-您可以使用 `mods.pneumaticcraft.like fuels 调用液体燃料包`。
+You can call the Liquid Fuels package using `mods.pneumaticcraft.liquidfuel`.
 
 ## 移除配方
 
-此函数去掉 [ILiquidStack](/Vanilla/Liquids/ILiquidStack/) `fluid` 作为燃料：
+This function deregisters the [ILiquidStack](/Vanilla/Liquids/ILiquidStack/) `fluid` as a fuel:
 
 ```zenscript
-mods.pneumaticraft.lifuel.removeFuel(ILiquidStack fluid);
-// 示例
-mods.pneumaticcraft.lifuel.removeFuel(<liquid:lpg>);
+mods.pneumaticcraft.liquidfuel.removeFuel(ILiquidStack fluid);
+// Example
+mods.pneumaticcraft.liquidfuel.removeFuel(<liquid:lpg>);
 ```
 
-此函数取消注册 *所有* 个注册燃料：
+This function deregisters *all* registered fuels:
 
 ```zenscript
 mods.pneumaticcraft.liquidfuel.removeAllFuels();
@@ -24,12 +24,12 @@ mods.pneumaticcraft.liquidfuel.removeAllFuels();
 
 ## 添加
 
-以下功能可用于向燃料登记处添加液体：
+The following functions can be used to add fluids to the fuel registry:
 
 ```zenscript
-/ 将一定液体登记为燃料。 mlPerBucket界定每桶燃料产生的压缩空气数量。 供参考，空气压缩机中的一块煤炭产生了16 000米的空气。
-mods.pneumaticcraft.lifuel.addFuel(ILiquidStack fluid, double mlPerBucket);
+// Register a certain liquid as a fuel. mlPerBucket defines the amount of compressed air produced per bucket of fuel. For reference, 16000mL of air is produced from a piece of Coal in an Air Compressor.
+mods.pneumaticcraft.liquidfuel.addFuel(ILiquidStack fluid, double mlPerBucket);
 
-// 示例: 将水注册为燃料，每桶生产16000毫升空气。
+// Example: register water as a fuel which produces 16000mL air per bucket.
 mods.pneumaticcraft.liquidfuel.addFuel(<liquid:water>, 16000);
 ```
