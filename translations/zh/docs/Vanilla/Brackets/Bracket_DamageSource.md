@@ -1,32 +1,32 @@
-# 破坏源代码处理器
+# DamageSource Bracket Handler
 
-伤害源代码处理器允许您在游戏中引用 [IDamageSource](/Vanilla/Damage/IDamageSource/)。
+The Damage Source Bracket Handler allows you to refer to [IDamageSources](/Vanilla/Damage/IDamageSource/) in the game.
 
-如果损害源不是预定义的来源，这将创建一个具有给定名称的新来源。
+If the Damage source is not one of the predefined ones, this will create a new one with the given name.
 
 <details>
-    <summary>预注册的伤害源类型</summary>
+    <summary>Preregistered Damage Source Types</summary>
     <ul>
-        <li>IN_FIE</li>
+        <li>IN_FIRE</li>
         <li>LIGHTNING_BOLT</li>
-        <li>ON_FIRES</li>
+        <li>ON_FIRE</li>
         <li>LAVA</li>
-        <li>FLOOR</li>
+        <li>HOT_FLOOR</li>
         <li>IN_WALL</li>
-        <li>制造业省</li>
-        <li>反转</li>
-        <li>已开始</li>
+        <li>CRAMMING</li>
+        <li>DROWN</li>
+        <li>STARVE</li>
         <li>CACTUS</li>
-        <li>常见问题</li>
+        <li>FALL</li>
         <li>FLY_INTO_WALL</li>
-        <li>OUT_OUT_WORLD</li>
+        <li>OUT_OF_WORLD</li>
         <li>GENERIC</li>
         <li>MAGIC</li>
-        <li>发信人</li>
+        <li>WITHER</li>
         <li>ANVIL</li>
-        <li>错误_BLOCK</li>
-        <li>RANGON_BREATH</li>
-        <li>第一页</li>
+        <li>FALLING_BLOCK</li>
+        <li>DRAGON_BREATH</li>
+        <li>FIREWORKS</li>
     </ul>
 </details>
 
