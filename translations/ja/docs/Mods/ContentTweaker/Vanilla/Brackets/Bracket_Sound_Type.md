@@ -1,26 +1,26 @@
-# サウンドタイプのブラケットハンドラー
+# SoundType Bracket Handler
 
-SoundTypeブラケットハンドラーでは、ゲーム内のSoundTypesにアクセスできます。 現在サポートされている唯一のサウンドタイプは次のとおりです。
+The SoundType Bracket Handler gives you access to the SoundTypes in the game. Currently the only soundTypes supported are:
 
 <details>
-    <summary>クリックしてタイプリストを展開します</summary>
+    <summary>Click to expand the type list</summary>
     <ul>
-        <li>木材</li>
+        <li>Wood</li>
         <li>Ground</li>
-        <li>植物</li>
-        <li>石</li>
-        <li>合金</li>
-        <li>ガラス</li>
-        <li>服</li>
-        <li>砂地</li>
-        <li>雪</li>
-        <li>梯子</li>
-        <li>金床</li>
+        <li>Plant</li>
+        <li>Stone</li>
+        <li>Metal</li>
+        <li>Glass</li>
+        <li>Cloth</li>
+        <li>Sand</li>
+        <li>Snow</li>
+        <li>Ladder</li>
+        <li>Anvil</li>
         <li>Slime</li>
     </ul>
 </details>
 
-SoundTypeは以下の方法でSoundTypeブラケットハンドラで参照されます。
+SoundTypes are referenced in the SoundType Bracket handler this way:
 
 ```zenscript
 <soundtype:name>
@@ -28,4 +28,4 @@ SoundTypeは以下の方法でSoundTypeブラケットハンドラで参照さ�
 <soundtype:wood>
 ```
 
-soundType が見つかれば、 [ISoundTypeDefinition](/Mods/ContentTweaker/Vanilla/Types/Sound/ISoundTypeDefinition/) Object を返します。
+If the soundType is found, this will return an [ISoundTypeDefinition](/Mods/ContentTweaker/Vanilla/Types/Sound/ISoundTypeDefinition/) Object.
