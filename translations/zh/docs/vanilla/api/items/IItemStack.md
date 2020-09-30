@@ -1,6 +1,6 @@
 # IItemStack
 
-这是一个项目。 它可以使用 BEP进行检索。 是 [craftbiner.api.item.IIngredient](/vanilla/api/items/IIngredient)
+This represents an item. It can be retrieved using an Item BEP. Is an [crafttweaker.api.item.IIngredient](/vanilla/api/items/IIngredient)
 
 这个类由mod-id为`crafttweaker`的模组添加. 因此，如果要使用此功能，则需要安装此mod。
 
@@ -11,85 +11,85 @@ crafttweaker.api.item.IItemStack
 ```
 
 ## 已实现的接口
-IItemStack 实现以下接口。 这意味着对这个接口可用的任何方法也可以在此类上使用。
-- [制造商.api.item.IIngredient](/vanilla/api/items/IIngredient)
+IItemStack implements the following interfaces. 这意味着对这个接口可用的任何方法也可以在此类上使用。
+- [crafttweaker.api.item.IIngredient](/vanilla/api/items/IIngredient)
 
 ## 方法
-### 清除自定义名称
+### clearCustomName
 
-清除此项目的自定义名称
+Clears any custom name set for this ItemStack
 
 ```zenscript
-<item:minecraft:dirt>.clear CustomName();
+<item:minecraft:dirt>.clearCustomName();
 ```
 
-### getRemainingitem
+### getRemainingItem
 
-当这种成分堆栈被制造时，网格中还会有什么东西？ 不检查堆栈是否匹配！ 用于Ctrt's net.minecraft.item.crafting.ICraftingRecipe
+When this ingredient stack is crafted, what will remain in the grid? Does not check if the stack matches though! Used e.g. in CrT's net.minecraft.item.crafting.ICraftingRecipe
 
 Returns [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
 
 ```zenscript
-<item:minecraft:dirt>.getRemainingItem(堆栈为 craftbiner.api.item.IItemStack)；
+<item:minecraft:dirt>.getRemainingItem(stack as crafttweaker.api.item.IItemStack);
 <item:minecraft:dirt>.getRemainingItem(<item:minecraft:iron_ingot>);
 ```
 
-| 参数    | 类型                                                                | 描述         |
-| ----- | ----------------------------------------------------------------- | ---------- |
-| 堆栈... | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | 提供这种成分的堆栈。 |
+| 参数    | 类型                                                                | 描述                                        |
+| ----- | ----------------------------------------------------------------- | ----------------------------------------- |
+| stack | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | The stack to provide for this ingredient. |
 
 
-### 匹配
+### matches
 
-给定的堆栈是否与原料相符？
+Does the given stack match the ingredient?
 
 返回为布尔值
 
 ```zenscript
-<item:minecraft:dirt>.matches(堆栈为craftbiner.api.item.IItemStack)；
+<item:minecraft:dirt>.matches(stack as crafttweaker.api.item.IItemStack);
 <item:minecraft:dirt>.matches(<item:minecraft:iron_ingot>);
 ```
 
-| 参数    | 类型                                                                | 说明      |
-| ----- | ----------------------------------------------------------------- | ------- |
-| 堆栈... | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | 要检查的堆栈。 |
+| 参数    | 类型                                                                | 说明                 |
+| ----- | ----------------------------------------------------------------- | ------------------ |
+| stack | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | The stack to check |
 
 
 ### setDisplayName
 
-设置项目的显示名称
+Sets the display name of the ItemStack
 
 Returns [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
 
 ```zenscript
-<item:minecraft:dirt>.setDisplayName(名称为字符串)；
-<item:minecraft:dirt>.setDisplayName("完全不是肮脏")；
+<item:minecraft:dirt>.setDisplayName(name as String);
+<item:minecraft:dirt>.setDisplayName("totally not dirt");
 ```
 
-| 参数 | 类型          | 描述      |
-| -- | ----------- | ------- |
-| 名称 | 字符串[string] | 堆栈的新名称。 |
+| 参数   | 类型     | 描述                     |
+| ---- | ------ | ---------------------- |
+| name | String | New name of the stack. |
 
 
-### 遭受伤害
+### withDamage
 
-设置物品的伤害
+Sets the damage of the ItemStack
 
 Returns [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
 
 ```zenscript
-<item:minecraft:dirt>.withdamage(故意伤害)；
-<item:minecraft:dirt>.withdamage(10)；
+<item:minecraft:dirt>.withDamage(damage as int);
+<item:minecraft:dirt>.withDamage(10);
 ```
 
-| 参数 | 类型 | 描述    |
-| -- | -- | ----- |
-| 伤害 | 整数 | 新的伤害值 |
+| 参数     | 类型  | 描述                   |
+| ------ | --- | -------------------- |
+| damage | int | the new damage value |
 
 
-### 使用标签
+### withTag
 
-设置项目标签。
+Sets the tag for the ItemStack.
 
 Returns [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
 
@@ -98,56 +98,56 @@ Returns [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
 <item:minecraft:dirt>.withTag({Display: {lore: ["Hello"]}});
 ```
 
-| 参数 | 类型                                                     | 描述      |
-| -- | ------------------------------------------------------ | ------- |
-| 标签 | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | 要设置的标签。 |
+| 参数  | 类型                                                     | 描述              |
+| --- | ------------------------------------------------------ | --------------- |
+| tag | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | The tag to set. |
 
 
 
 ## 参数
 
-| 名称                   | 类型                                                                  | 可获得  | 可设置   |
-| -------------------- | ------------------------------------------------------------------- | ---- | ----- |
-| 金额                   | 整数                                                                  | true | false |
-| 烧焦时间                 | 整数                                                                  | true | true  |
-| commandString #命令字符串 | 字符串[string]                                                         | true | false |
-| 可造成伤害                | boolean                                                             | true | false |
-| 已损坏                  | boolean                                                             | true | false |
-| 显示名称                 | 字符串[string]                                                         | true | false |
-| 空的                   | boolean                                                             | true | false |
-| 食物：                  | [craftminstrer.api.food.MCFood](/vanilla/api/food/MCFood)           | true | true  |
-| getOrCreate          | [crafttweaker.api.data.IData](/vanilla/api/data/IData)              | true | false |
-| getRepairCost        | 整数                                                                  | true | false |
-| hasDisplayName       | boolean                                                             | true | false |
-| 哈斯特效                 | boolean                                                             | true | false |
-| 哈斯塔克                 | boolean                                                             | true | false |
-| isCrossbow           | boolean                                                             | true | false |
-| isEnchangable        | boolean                                                             | true | false |
-| 有附魔的                 | boolean                                                             | true | false |
-| 项目                   | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)[] | true | false |
-| maxDamage            | 整数                                                                  | true | false |
-| maxStackSize         | 整数                                                                  | true | false |
-| registryName         | 字符串[string]                                                         | true | false |
-| 可堆叠的                 | boolean                                                             | true | false |
-| 标签                   | [crafttweaker.api.data.IData](/vanilla/api/data/IData)              | true | false |
-| translationKey       | 字符串[string]                                                         | true | false |
-| useDuration          | 整数                                                                  | true | false |
+| 名称             | 类型                                                                  | 可获得  | 可设置   |
+| -------------- | ------------------------------------------------------------------- | ---- | ----- |
+| amount         | int                                                                 | true | false |
+| burnTime       | int                                                                 | true | true  |
+| commandString  | String                                                              | true | false |
+| damageable     | boolean                                                             | true | false |
+| damaged        | boolean                                                             | true | false |
+| displayName    | String                                                              | true | false |
+| empty          | boolean                                                             | true | false |
+| food           | [crafttweaker.api.food.MCFood](/vanilla/api/food/MCFood)            | true | true  |
+| getOrCreate    | [crafttweaker.api.data.IData](/vanilla/api/data/IData)              | true | false |
+| getRepairCost  | int                                                                 | true | false |
+| hasDisplayName | boolean                                                             | true | false |
+| hasEffect      | boolean                                                             | true | false |
+| hasTag         | boolean                                                             | true | false |
+| isCrossbow     | boolean                                                             | true | false |
+| isEnchantable  | boolean                                                             | true | false |
+| isEnchanted    | boolean                                                             | true | false |
+| items          | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)[] | true | false |
+| maxDamage      | int                                                                 | true | false |
+| maxStackSize   | int                                                                 | true | false |
+| registryName   | String                                                              | true | false |
+| stackable      | boolean                                                             | true | false |
+| tag            | [crafttweaker.api.data.IData](/vanilla/api/data/IData)              | true | false |
+| translationKey | String                                                              | true | false |
+| useDuration    | int                                                                 | true | false |
 
 ## 运算符
 ### MUL
 
-设置项目的数量
+Sets the amount of the ItemStack
 
 ```zenscript
-<item:minecraft:dirt> * 数量为 int
+<item:minecraft:dirt> * amount as int
 <item:minecraft:dirt> * 3
 ```
 
-| 参数 | 类型 | 描述  |
-| -- | -- | --- |
-| 金额 | 整数 | 新金额 |
+| 参数     | 类型  | 描述         |
+| ------ | --- | ---------- |
+| amount | int | new amount |
 
-## 卡斯特尔
+## Casters
 
 | 结果类型                                                              | 是否隐藏  |
 | ----------------------------------------------------------------- | ----- |
