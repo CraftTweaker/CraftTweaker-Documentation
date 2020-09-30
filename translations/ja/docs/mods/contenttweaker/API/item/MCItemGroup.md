@@ -1,25 +1,25 @@
 # MCItemGroup
 
-アイテムグループ (別名. Creative Tab)は、カテゴリに基づいてアイテムをグループ化したものです。
+An item Group (a.k.a. Creative Tab) is a grouping of items based on category.
 
-このクラスは mod-id `contenttweaker` を持つ mod によって追加されました。 従って、この機能を利用する場合はこのmodをインストールする必要があります。
+This class was added by a mod with mod-id `contenttweaker`. So you need to have this mod installed if you want to use this feature.
 
 ## クラスのインポート
-問題が発生した場合には、インポートが必要になります。とはいえ、お手数ですが予めインポートしておくほうが安全です。
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
 ```zenscript
 mods.contenttweaker.item.MCItemGroup
 ```
 
-## 実装されたインターフェース
-MCItemGroup は以下のインターフェースを実装しています。 つまり、これらのクラスで使用できるすべてのメソッドをこのクラスで使用することができます。
+## Implemented Interfaces
+MCItemGroup implements the following interfaces. つまり、これらのクラスで使用できるすべてのメソッドをこのクラスで使用することができます。
 - [crafttweaker.api.brackets.CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
 
 ## メソッド
 ### getPath
 
-アイテムグループのパスを取得します。 パスは、 `<itemgroup:` パートの後のブラケット式で使用するものです。
+Gets the path of the item group. The path is what you use in the Bracket Expression after the `<itemgroup:` part.
 
-戻り値の型: String
+Return type: String
 
 ```zenscript
 <itemgroup:misc>.getPath();
@@ -27,26 +27,26 @@ MCItemGroup は以下のインターフェースを実装しています。 つ�
 
 ### setBackgroundImageName
 
-クリエイティブメニューでこのタブに使用される背景の画像名を設定します。 戻り値: `チェーン用のこのオブジェクト`
+Sets the image name of the Background that is used for this tab in the creative menu Returns: `This object for chaining`
 
-戻り値の型: [mods.contenttweaker.item.MCItemGroup](/mods/contenttweaker/API/item/MCItemGroup)
+Return type: [mods.contenttweaker.item.MCItemGroup](/mods/contenttweaker/API/item/MCItemGroup)
 
 ```zenscript
 <itemgroup:misc>.setBackgroundImageName(texture as String);
 ```
 
-| パラメータ                                                                                                          | タイプ  | 説明        |
-| -------------------------------------------------------------------------------------------------------------- | ---- | --------- |
-| テクスチャ|テクスチャ|テクスチャ|テクスチャ|テクスチャ|テクスチャ|テクスチャ|テクスチャ|テクスチャ||テクスチャ|テクスチャ|テクスチャ|テクスチャ||テクスチャ|テクスチャ|テクスチャ|テクスチャ|テクスチャ| | 文字列型 | 使用するテクスチャ |
+| Parameter | Type | Description            |
+| --------- | ---- | ---------------------- |
+| texture   | 文字列型 | The texture to be used |
 
 
 ### setNoScrollbar
 
-クリエイティブインベントリ内のアイテムグループのスクロールバーを削除します
+Removes the scrollbar of the item Group in the creative inventory
 
- 戻り値: `チェーン用のこのオブジェクト`
+ Returns: `This object for chaining`
 
-戻り値の型: [mods.contenttweaker.item.MCItemGroup](/mods/contenttweaker/API/item/MCItemGroup)
+Return type: [mods.contenttweaker.item.MCItemGroup](/mods/contenttweaker/API/item/MCItemGroup)
 
 ```zenscript
 <itemgroup:misc>.setNoScrollbar();
@@ -54,11 +54,11 @@ MCItemGroup は以下のインターフェースを実装しています。 つ�
 
 ### setNoTitle
 
-クリエイティブインベントリ内のアイテムグループのタイトルを削除します。
+Removes the title of the item Group in the creative inventory
 
- 戻り値: `チェーン用のこのオブジェクト`
+ Returns: `This object for chaining`
 
-戻り値の型: [mods.contenttweaker.item.MCItemGroup](/mods/contenttweaker/API/item/MCItemGroup)
+Return type: [mods.contenttweaker.item.MCItemGroup](/mods/contenttweaker/API/item/MCItemGroup)
 
 ```zenscript
 <itemgroup:misc>.setNoTitle();
@@ -67,8 +67,8 @@ MCItemGroup は以下のインターフェースを実装しています。 つ�
 
 ## プロパティ
 
-| 名称            | タイプ  | ゲッターあり | セッターあり |
-| ------------- | ---- | ------ | ------ |
-| commandString | 文字列型 | true   | false  |
-| 小道            | 文字列型 | true   | false  |
+| 名称            | Type   | Has Getter | Has Setter |
+| ------------- | ------ | ---------- | ---------- |
+| commandString | String | true       | false      |
+| path          | String | true       | false      |
 
