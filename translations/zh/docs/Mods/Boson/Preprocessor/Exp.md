@@ -1,30 +1,30 @@
-# 实验标志预处理器指令
+# Experimental Flags Preprocessor Directive
 
-此预处理器指令允许某些ZenScript 函数的实验行为。
+This preprocessor directive enables some experimental behavior for certain ZenScript functionalities.
 
-Being part of the ZenScriptX project, and due to the experimental nature of the project in itself, some features may require extensive testing on the compiler side or cause other unintended side effects. 由于这些原因，一些功能 被视为实验性功能，在编译脚本时默认不启用。
+Being part of the ZenScriptX project, and due to the experimental nature of the project in itself, some features may require extensive testing on the compiler side or cause other unintended side effects. For these reasons, some features have been deemed experimental and are not enabled by default when compiling a script.
 
-此外，一些实验性标志可能不会完全奏效，只能作为即将到来的功能提示提供。 You should always refer to the documentation to know whether a certain flag is used or not. 另一方面，实验标志 永远不会被移除， 表示集成到 ZenScriptX 的 "非实验" 部分的功能不会 禁用他们的标记。 这将允许脚本与新版本的 ZenScriptX 项目兼容，而不需要重写 。
+Moreover, some experimental flags may outright not work, and are provided only as hints of upcoming features. You should always refer to the documentation to know whether a certain flag is used or not. On the other hand, experimental flags will never be removed, meaning that features that are integrated into the "non-experimental" part of ZenScriptX won't have their flags disabled. This allows scripts to be compatible with newer releases of the ZenScriptX project without requiring a rewrite.
 
-## 使用该指令
-使用该指令非常简单，只需将 `#expertic` 添加到文件开头， 并指定代表声明后右侧启用行为的标志 列表。
+## Using the directive
+Using the directive is as simple as adding `#experimental` to the beginning of the file, and specifying a list of flags that represent behavior to enable right after the declaration.
 
-Every flag must be separated by the others with spaces and it **has to** begin with `-E`. 这把旗帜识别为 实验性旗帜。 Following that declaration, a series of letters and numbers that identify the specific flag should be entered. 请参阅此文档中的列表以了解所有可用的标记。
+Every flag must be separated by the others with spaces and it **has to** begin with `-E`. This identifies the flag as an experimental flag. Following that declaration, a series of letters and numbers that identify the specific flag should be entered. Refer to the list in this documentation to know all the available flags.
 
-作为示例，我们想要启用 `Soo` 和 `wd4` 标记。 相应的线条是：
+As an example, imagine we wanted to enable the `soo` and `wd4` flags. The corresponding line would be:
 ```zenscript
-#实验-Esoo -Ewd4
+#experimental -Esoo -Ewd4
 ```
 
-## 旗帜列表
-| 标记名称   | 当前状态 | 描述                      |
-| ------ | ---- | ----------------------- |
-| `soo`  | 已禁用  | 启用序列操作员重载               |
-| `saia` | 已禁用  | 在序列中提供一个带单个参数的函数 `它` 参数 |
-| `sao`  | 已启用  | 允许从数组参数中创建 `序列`         |
+## List of flags
+| Flag name | Current Status | 描述                                                                                    |
+| --------- | -------------- | ------------------------------------------------------------------------------------- |
+| `soo`     | Disabled       | Enables operator overloading for Sequences                                            |
+| `saia`    | Disabled       | Provides an automatic `it` argument to functions with a single parameter in Sequences |
+| `sao`     | Enabled        | Allows creation of `Sequences` from array arguments                                   |
 
-目前状况的含义如下：
+The meaning for Current Status are the following:
 
-- **禁用** 指明了一个已存在但由于后端未准备就绪而没有相应动作的标记。 It is provided merely due to "roadmap", allowing developers to know what new features will be available in the near future.
-- **启用** 指明了一个已存在并对文件产生影响的标记。
-- **已废弃的** 指明了一个因为某个功能已经成熟而不应再使用且不再被认为是实验性的 的标记。 不过，它是作为一种向后兼容的形式提供的。
+- **Disabled** identifies a flag that exists but has no corresponding actions due to the backend not being ready. It is provided merely due to "roadmap", allowing developers to know what new features will be available in the near future.
+- **Enabled** identifies a flag that exists and has an effect on the file.
+- **Deprecated** identifies a flag that shouldn't be used anymore due to a feature reaching maturity and not being considered experimental anymore. It is nevertheless provided as a form of backwards compatibility.
