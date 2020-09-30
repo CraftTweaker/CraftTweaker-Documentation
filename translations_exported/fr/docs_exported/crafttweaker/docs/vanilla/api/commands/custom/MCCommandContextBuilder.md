@@ -1,15 +1,15 @@
 # format@@0 MCCommandContextBuilder
 
-Cette classe a été ajoutée par un mod avec le mod-id `crafttweaker`. Vous devez donc avoir ce mod installé si vous voulez utiliser cette fonctionnalité.
+This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
 
-## Importation de la classe
-Il pourrait vous être nécessaire d'importer le paquet si vous rencontrez des problèmes (comme lancer un tableau), alors mieux être sûr que désolé et ajouter l'importation.
+## Importing the class
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
 ```zenscript
 crafttweaker.api.commands.custom.MCCommandContextBuilder
 ```
 
-## Méthodes
-### construire
+## Methods
+### build
 
 Type de retour : [crafttweaker.api.commands.custom.MCCommandContext](/vanilla/api/commands/custom/MCCommandContext)
 
@@ -17,12 +17,12 @@ Type de retour : [crafttweaker.api.commands.custom.MCCommandContext](/vanilla/ap
 myMCCommandContextBuilder.build(input as String);
 ```
 
-| Paramètre | Type de texte        | Libellé                    |
-| --------- | -------------------- | -------------------------- |
-| input     | Chaîne de caractères | Aucune description fournie |
+| Parameter | Type   | Description             |
+| --------- | ------ | ----------------------- |
+| input     | String | No description provided |
 
 
-### Copie
+### copy
 
 Type de retour : [crafttweaker.api.commands.custom.MCCommandContextBuilder](/vanilla/api/commands/custom/MCCommandContextBuilder)
 
@@ -30,17 +30,17 @@ Type de retour : [crafttweaker.api.commands.custom.MCCommandContextBuilder](/van
 myMCCommandContextBuilder.copy();
 ```
 
-### est égal à
+### equals
 
-Type de retour: booléen
+Return type: boolean
 
 ```zenscript
 myMCCommandContextBuilder.equals(o en tant qu'objet) ;
 ```
 
-| Paramètre | Type de texte | Libellé                    |
-| --------- | ------------- | -------------------------- |
-| o         | Objet         | Aucune description fournie |
+| Parameter | Type   | Description             |
+| --------- | ------ | ----------------------- |
+| o         | Object | No description provided |
 
 
 ### trouver un contexte de suggestion
@@ -51,9 +51,9 @@ Type de retour : [crafttweaker.api.commands.custom.MCSuggestionContext](/vanilla
 myMCCommandContextBuilder.findSuggestionContext(curseur comme int);
 ```
 
-| Paramètre | Type de texte | Libellé                    |
-| --------- | ------------- | -------------------------- |
-| cursor    | Indice        | Aucune description fournie |
+| Parameter | Type | Description             |
+| --------- | ---- | ----------------------- |
+| cursor    | int  | No description provided |
 
 
 ### getArguments
@@ -130,7 +130,7 @@ myMCCommandContextBuilder.getSource();
 
 ### hashCode
 
-Type de retour: int
+Return type: int
 
 ```zenscript
 myMCCommandContextBuilder.hashCode();
@@ -138,7 +138,7 @@ myMCCommandContextBuilder.hashCode();
 
 ### toString
 
-Type de retour: chaîne de caractères
+Return type: String
 
 ```zenscript
 myMCCommandContextBuilder.toString();
@@ -152,10 +152,10 @@ Type de retour : [crafttweaker.api.commands.custom.MCCommandContextBuilder](/van
 myMCCommandContextBuilder.withArgument(name as String, argument as crafttweaker.api.commands.custom.MCParsedArgument);
 ```
 
-| Paramètre | Type de texte                                                                                      | Libellé                    |
-| --------- | -------------------------------------------------------------------------------------------------- | -------------------------- |
-| Nom       | Chaîne de caractères                                                                               | Aucune description fournie |
-| Argument  | [crafttweaker.api.commands.custom.MCParsedArgument](/vanilla/api/commands/custom/MCParsedArgument) | Aucune description fournie |
+| Parameter | Type                                                                                               | Description             |
+| --------- | -------------------------------------------------------------------------------------------------- | ----------------------- |
+| name      | String                                                                                             | No description provided |
+| Argument  | [crafttweaker.api.commands.custom.MCParsedArgument](/vanilla/api/commands/custom/MCParsedArgument) | No description provided |
 
 
 ### avec enfant
@@ -166,9 +166,9 @@ Type de retour : [crafttweaker.api.commands.custom.MCCommandContextBuilder](/van
 myMCCommandContextBuilder.withChild(child as crafttweaker.api.commands.custom.MCCommandContextBuilder);
 ```
 
-| Paramètre | Type de texte                                                                                                    | Libellé                    |
-| --------- | ---------------------------------------------------------------------------------------------------------------- | -------------------------- |
-| enfant    | [crafttweaker.api.commands.custom.MCCommandContextBuilder](/vanilla/api/commands/custom/MCCommandContextBuilder) | Aucune description fournie |
+| Parameter | Type                                                                                                             | Description             |
+| --------- | ---------------------------------------------------------------------------------------------------------------- | ----------------------- |
+| enfant    | [crafttweaker.api.commands.custom.MCCommandContextBuilder](/vanilla/api/commands/custom/MCCommandContextBuilder) | No description provided |
 
 
 ### withCommand
@@ -179,9 +179,9 @@ Type de retour : [crafttweaker.api.commands.custom.MCCommandContextBuilder](/van
 myMCCommandContextBuilder.withCommand(commande comme crafttweaker.api.commands.custom.MCCommand);
 ```
 
-| Paramètre | Type de texte                                                                        | Libellé                    |
-| --------- | ------------------------------------------------------------------------------------ | -------------------------- |
-| commande  | [crafttweaker.api.commands.custom.MCCommand](/vanilla/api/commands/custom/MCCommand) | Aucune description fournie |
+| Parameter | Type                                                                                 | Description             |
+| --------- | ------------------------------------------------------------------------------------ | ----------------------- |
+| command   | [crafttweaker.api.commands.custom.MCCommand](/vanilla/api/commands/custom/MCCommand) | No description provided |
 
 
 ### withNode
@@ -192,10 +192,10 @@ Type de retour : [crafttweaker.api.commands.custom.MCCommandContextBuilder](/van
 myMCCommandContextBuilder.withNode(node as crafttweaker.api.commands.custom.MCCommandNode, range as crafttweaker.api.commands.custom.MCStringRange);
 ```
 
-| Paramètre | Type de texte                                                                                | Libellé                    |
-| --------- | -------------------------------------------------------------------------------------------- | -------------------------- |
-| Nœud      | [crafttweaker.api.commands.custom.MCCommandNode](/vanilla/api/commands/custom/MCCommandNode) | Aucune description fournie |
-| range     | [crafttweaker.api.commands.custom.MCStringRange](/vanilla/api/commands/custom/MCStringRange) | Aucune description fournie |
+| Parameter | Type                                                                                         | Description             |
+| --------- | -------------------------------------------------------------------------------------------- | ----------------------- |
+| Nœud      | [crafttweaker.api.commands.custom.MCCommandNode](/vanilla/api/commands/custom/MCCommandNode) | No description provided |
+| range     | [crafttweaker.api.commands.custom.MCStringRange](/vanilla/api/commands/custom/MCStringRange) | No description provided |
 
 
 ### avec source
@@ -206,26 +206,26 @@ Type de retour : [crafttweaker.api.commands.custom.MCCommandContextBuilder](/van
 myMCCommandContextBuilder.withSource(source as crafttweaker.api.commands.custom.MCCommandSource);
 ```
 
-| Paramètre | Type de texte                                                                                    | Libellé                    |
-| --------- | ------------------------------------------------------------------------------------------------ | -------------------------- |
-| source    | [crafttweaker.api.commands.custom.MCCommandSource](/vanilla/api/commands/custom/MCCommandSource) | Aucune description fournie |
+| Parameter | Type                                                                                             | Description             |
+| --------- | ------------------------------------------------------------------------------------------------ | ----------------------- |
+| source    | [crafttweaker.api.commands.custom.MCCommandSource](/vanilla/api/commands/custom/MCCommandSource) | No description provided |
 
 
 
-## Opérateurs
-### EQUALES
+## Operators
+### EQUALS
 
 ```zenscript
 myMCCommandContextBuilder == o en tant qu'objet
 ```
 
-| Paramètre | Type de texte | Libellé                    |
-| --------- | ------------- | -------------------------- |
-| o         | Objet         | Aucune description fournie |
+| Parameter | Type   | Description             |
+| --------- | ------ | ----------------------- |
+| o         | Object | No description provided |
 
-## Pistolet
+## Casters
 
-| Type de résultat     | Est implicite |
-| -------------------- | ------------- |
-| Chaîne de caractères | vrai          |
+| Result type | Is Implicit |
+| ----------- | ----------- |
+| String      | true        |
 
