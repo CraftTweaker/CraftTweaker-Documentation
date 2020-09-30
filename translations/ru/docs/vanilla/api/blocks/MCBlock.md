@@ -8,7 +8,7 @@
 crafttweaker.api.block.MCBlock
 ```
 
-## Методы
+## Methods
 ### canSpawnInBlock
 
 Возвращает boolean
