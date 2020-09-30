@@ -2,17 +2,17 @@
 
 ItemStack は、通常レシピ出力に使用されます。 <p> WeightedStack を作成するために使用されたスタックが変更可能であれば、サイズ設定者は元のスタックも変更します!
 
-crafttweakerのmod-idを持つmodによって追加されているクラスです。 従って、この機能を利用する場合はこのmodをインストールする必要があります。
+This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
 
-## クラスのインポート
-問題が発生した場合には、インポートが必要になります。とはいえ、お手数ですが予めインポートしておくほうが安全です。
+## Importing the class
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
 ```zenscript
 crafttweaker.api.item.MCWeightedItemStack
 ```
 
-## 実装されたインターフェース
-MCWeightedItemStack は、以下のインターフェイスを実装しています。 つまり、利用可能な任意のメソッドはこのクラスでも使用できます。
-- [craftweaker.api.brackets.CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
+## Implemented Interfaces
+MCWeightedItemStack は、以下のインターフェイスを実装しています。 That means any method available to them can also be used on this class.
+- [crafttweaker.api.brackets.CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
 
 ## Constructors
 weightedItemStackを手動で作成します。 通常、IItemStackの演算子または `.weight(weight)` メソッドを使用できますが、
@@ -20,15 +20,15 @@ weightedItemStackを手動で作成します。 通常、IItemStackの演算子�
 new crafttweaker.api.item.MCWeightedItemStack(itemStack as crafttweaker.api.item.IItemStack, weight as double);
 new crafttweaker.api.item.MCWeightedItemStack(<item:minecraft:bedrock>, 0.5D);
 ```
-| パラメータ     | タイプ                                                               | 説明                      |
+| Parameter | Type                                                              | Description             |
 | --------- | ----------------------------------------------------------------- | ----------------------- |
 | itemStack | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | スタック                    |
-| 重量        | double                                                            | 0 (0%)から1 (100%)の間のチャンス |
+| weight    | double                                                            | 0 (0%)から1 (100%)の間のチャンス |
 
 
 
-## メソッド
-### 重量
+## Methods
+### weight
 
 指定された重みを持つ新しい重み付きスタックを作成します
 
@@ -41,19 +41,19 @@ new crafttweaker.api.item.MCWeightedItemStack(<item:minecraft:bedrock>, 0.5D);
 <item:minecraft:bedrock>.weight(0.5D).weight(0.75D);
 ```
 
-| パラメータ | タイプ    | 説明 |
-| ----- | ------ | -- |
-| 新しい重量 | double | 割合 |
+| Parameter | Type   | Description |
+| --------- | ------ | ----------- |
+| 新しい重量     | double | 割合          |
 
 
 
-## プロパティー
+## Properties
 
-| 名称            | タイプ                                                               | ゲッターあり | セッターあり |
-| ------------- | ----------------------------------------------------------------- | ------ | ------ |
-| commandString | 文字列型                                                              | true   | false  |
-| スタック          | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | true   | false  |
-| 重量            | double                                                            | true   | false  |
+| 名称            | Type                                                              | Has Getter | Has Setter |
+| ------------- | ----------------------------------------------------------------- | ---------- | ---------- |
+| commandString | String                                                            | true       | false      |
+| stack         | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | true       | false      |
+| weight        | double                                                            | true       | false      |
 
 ## 演算子
 ### MUL
@@ -67,9 +67,9 @@ new crafttweaker.api.item.MCWeightedItemStack(<item:minecraft:bedrock>, 0.5D);
 <item:minecraft:bedrock>.weight(0.5D) * 5
 ```
 
-| パラメータ     | タイプ | 説明         |
-| --------- | --- | ---------- |
-| newAmount | int | 新しいスタックサイズ |
+| Parameter | Type | Description |
+| --------- | ---- | ----------- |
+| newAmount | int  | 新しいスタックサイズ  |
 ### MOD
 
 与えられたパーセンテージで新しい重み付きスタックを作成します
@@ -81,7 +81,7 @@ new crafttweaker.api.item.MCWeightedItemStack(<item:minecraft:bedrock>, 0.5D);
 <item:minecraft:bedrock>.weight(0.5D) % 75
 ```
 
-| パラメータ | タイプ | 説明 |
-| ----- | --- | -- |
-| 新しい重量 | int | 割合 |
+| Parameter | Type | Description |
+| --------- | ---- | ----------- |
+| 新しい重量     | int  | 割合          |
 
