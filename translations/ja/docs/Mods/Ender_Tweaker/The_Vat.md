@@ -1,39 +1,37 @@
-# Vat
+# The Vat
 
-## パッケージ
+## Package
 
 `import mods.enderio.Vat;`
 
-## 方法
+## Method
 
-**[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) 出力** - 出力流体(右タンク)。
+**[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) output** - The output fluid (right tank).
 
-**[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) input** - 入力流体(左タンク)。
+**[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) input** - The input fluid (left tank).
 
-**[IIngredient](/Vanilla/Variable_Types/IIngredient/)[] slot1Solids** - スロット1に入ることができるアイテム。
+**[IIngredient](/Vanilla/Variable_Types/IIngredient/)[] slot1Solids** - Items that can go in slot 1.
 
-**float[] slot1Mults** - スロット1のアイテムの乗数。 slot1Solidsと同じ長さである必要があります。
+**float[] slot1Mults** - The multipliers for the items in slot 1. Must be the same length as slot1Solids.
 
-**[IIngredient](/Vanilla/Variable_Types/IIngredient/)[] slot2Solids** - スロット2に入ることができるアイテム。
+**[IIngredient](/Vanilla/Variable_Types/IIngredient/)[] slot2Solids** - Items that can go in slot 2.
 
-**float[] slot2Mults** - スロット2のアイテムの乗数。 slot2Solidsと同じ長さである必要があります。
+**float[] slot2Mults** - The multipliers for the items in slot 2. Must be the same length as slot2Solids.
 
-**@Optional int energyCost** - レシピの使用量。 デフォルトは5000です。
+**@Optional int energyCost** - How much FE the recipe uses. Defaults to 5000.
 
 ## 加算
 
 ```zenscript
-mods.enderio.Vat.addRecipe(ILiquidStack出力, ILiquidStack入力, IIngredient[] slot1Solid, float[] slot1Mults, IIngredient[] slot2Solid, float[] slot2Mult, @Optional int energyCost);
+mods.enderio.Vat.addRecipe(ILiquidStack output, ILiquidStack input, IIngredient[] slot1Solids, float[] slot1Mults, IIngredient[] slot2Solids, float[] slot2Mults, @Optional int energyCost);
 
-mods. nderio.Vat.addRecipe( 
-
- ,<liquid:lava>, <liquid:water>, [<minecraft:glowstone_dust>], [5], [<minecraft:fire_charge>], [10], 500);
+mods.enderio.Vat.addRecipe(<liquid:lava>, <liquid:water>, [<minecraft:glowstone_dust>], [5], [<minecraft:fire_charge>], [10], 500);
 ```
 
-## 削除
+## Removal
 
 ```zenscript
-mods.enderio.Vat.removeRecipe(ILiquidStack出力);
+mods.enderio.Vat.removeRecipe(ILiquidStack output);
 
 mods.enderio.Vat.removeRecipe(<liquid:ender_distillation>);
 ```
