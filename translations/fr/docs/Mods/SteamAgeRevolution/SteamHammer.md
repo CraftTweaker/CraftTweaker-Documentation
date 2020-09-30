@@ -1,26 +1,26 @@
-# Marteau à vapeur
+# Steam Hammer
 
-Le marteau Steam est une machine qui convertit deux éléments d'entrée en un élément de sortie à l'aide de vapeur.
+The Steam Hammer is a machine that converts two input items into an output item using steam.
 
-## Paquet
+## Package
 `mods.steamagerevolution.SteamHammer`.
 
-## Méthodes
+## Methods
 
-- **[IItemStack](/Vanilla/Items/IItemStack/) sortie** Le résultat de la recette.
-- **[IItemstack](/Vanilla/Items/IItemStack/) entrée** L'entrée de la recette.
-- **int craftTime** Temps d'artisanat pour la machine à traiter
-- **int steamCost** Coût de vapeur pour la machine à traiter
+- **[IItemStack](/Vanilla/Items/IItemStack/) output** The result of the recipe.
+- **[IItemStack](/Vanilla/Items/IItemStack/) input** The input of the recipe.
+- **int craftTime** Crafting time for machine to process
+- **int steamCost** Cost of Steam for machine to process
 
-## Ajouter
+## Addition
 
 ```zenscript
-mods.steamagerevolution.SteamHammer.addRecipe(IIngredient input, IIngredient input, IItemStack sortie, int craftTime, int steamCost);
+mods.steamagerevolution.SteamHammer.addRecipe(IIngredient input, IIngredient input, IItemStack output, int craftTime, int steamCost);
 mods.steamagerevolution.SteamHammer.addRecipe(<ore:ingotIron>, <ore:ingotIron>, <ore:plateIron>.firstItem, 200, 200);
 ```
 
 
-## Retirer
+## Removal
 
 ```zenscript
 mods.steamagerevolution.SteamHammer.removeRecipe(IItemStack output);
