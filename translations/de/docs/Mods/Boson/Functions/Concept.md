@@ -1,37 +1,37 @@
-# Ein Primer auf funktionalen Schnittstellen
+# A Primer on Functional Interfaces
 
-Laut der Java Language Specification for Java 8 ist eine Functional Interface in Java folgende:
+According to the Java Language Specification for Java 8, a Functional Interface in Java is:
 
-> Eine funktionale Schnittstelle ist eine Schnittstelle, die nur eine abstrakte Methode hat (abgesehen von den Methoden von `Objekt`), und stellt somit einen einzigen Funktionsvertrag dar. Diese "Single"-Methode kann die Form mehrerer abstrakter Methoden annehmen mit überride-äquivalenten Signaturen, die von Oberflächen geerbt werden; in diesem Fall repräsentieren die vererbten Methoden logischerweise eine einzige Methode.
+> A functional interface is an interface that has just one abstract method (aside from the methods of `Object`), and thus represents a single function contract. This "single" method may take the form of multiple abstract methods with override-equivalent signatures inherited from superinterfaces; in this case, the inherited methods logically represent a single method.
 > 
-> Für eine Schnittstelle I, ließ `M` den Satz von `abstrakten` Methoden sein, die Mitglieder von mir sind, die nicht die gleiche Signatur haben wie jede `öffentliche` Instanz Methode der Klasse `Objekt`. Dann ist ich eine *-Funktionsschnittstelle* wenn es eine Methode gibt `m` in `M` , für die beides wahr ist:
+> For an interface I, let `M` be the set of `abstract` methods that are members of I that do not have the same signature as any `public` instance method of the class `Object`. Then, I is a *functional interface* if there exists a method `m` in `M` for which both of the following are true:
 > 
-> - Die Signatur von `m` ist eine Unterschrift ([§8.4.2](https://docs.oracle.com/javase/specs/jls/se8/html/jls-8.html#jls-8.4.2)) der Signatur jeder Methode in `M`.
-> - `m` ist zurücklieferbar ([§8.4.5](https://docs.oracle.com/javase/specs/jls/se8/html/jls-8.html#jls-8.4.5)) für jede Methode in `M`.
+> - The signature of `m` is a subsignature ([§8.4.2](https://docs.oracle.com/javase/specs/jls/se8/html/jls-8.html#jls-8.4.2)) of every method's signature in `M`.
+> - `m` is return-type-substitutable ([§8.4.5](https://docs.oracle.com/javase/specs/jls/se8/html/jls-8.html#jls-8.4.5)) for every method in `M`.
 > 
-> [Quelle](https://docs.oracle.com/javase/specs/jls/se8/html/jls-9.html#jls-9.8)
+> [Source](https://docs.oracle.com/javase/specs/jls/se8/html/jls-9.html#jls-9.8)
 
-ZenScript, eine Java-ähnliche Programmiersprache, die mit einem Java-Backend interagiert, hat eine ähnliche Definition.
+ZenScript, being a Java-like programming language that interacts with a Java backend, has a similar definition.
 
-## Eine Vereinfachung
-Die obige Definition ist zu präzise und kompliziert, was von einer formalen Sprachspezifikation zu erwarten ist. Eine wesentlich vereinfachtere Version für den Entwickler könnte Folgendes sein:
+## A Simplification
+The above definition is overly precise and complicated, which has to be expected from a formal language specification. A way more simplified version for the developer could be the following:
 
-> Eine Schnittstelle `I` nennt man eine *funktionale Schnittstelle* , wenn sie nur eine abstrakte Methode definiert.
+> An interface `I` is called a *functional interface* if it defines only a single abstract method.
 
-Diese Definition wird auch von ZenScript selbst akzeptiert.
+This definition is also accepted by ZenScript itself.
 
-## Die praktische Nutzung
-Bisher hat sich die obige Dokumentation eher auf "was" als auf "warum" verlassen. Funktionale Schnittstellen mögen wie ein Gimmick erscheinen, aber sie sind besonders nützlich, da sie in ZenScript *reine Funktionen* erlauben (i. , welche Dinge Sie mit mit `Funktion`erstellen), die an Java-Code weitergegeben werden sollen, ohne dass seltsame Shenanigans benötigt werden. Das ist etwas, was wir als "lambda" definieren.
+## The Practical Usage
+Up until now, the above documentation has more relied on "what" rather than "why". Functional interfaces may seem like a gimmick, but they're particularly useful, since in ZenScript they allow *Pure Functions* (i.e. the things you create with `function`) to be passed to Java code without requiring weird shenanigans. This is something that we define as "lambda".
 
-Beispiele für Anwendungen dieser Schnittstellen sind die [Rezeptfunktionen](/Vanilla/Recipes/Crafting/Recipe_Functions/) die an Rezepte übergeben werden können, um die Ausgabe oder die Eingabe dynamisch zu ändern: `IRecipeFunction` und `IRecipeAction` sind in tatsächlich zwei funktionale Schnittstellen.
+Examples of applications of these interfaces are the [Recipe Functions](/Vanilla/Recipes/Crafting/Recipe_Functions/) that can be passed to recipes to change the output or input dynamically: `IRecipeFunction` and `IRecipeAction` are in fact two functional interfaces.
 
-## Das Problem und seine Lösung
-Die Funktionsschnittstellen, die in der Sprache ZenScript verfügbar sind, sind alle überspezifisch. Auf der einen Seite erlaubt dies fein erstellte Funktionen für bestimmte Parameter; auf der anderen Seite beschränkt dies die Möglichkeiten dessen, was der Entwickler tun kann.
+## The Problem and its Solution
+The Functional Interfaces that are available in the ZenScript language are all overly specific. On one hand, this allows finely crafted functions for certain parameters; on the other hand, this severely limits the possibilities of what can be done by the developer.
 
-Aus diesem Grund das ZenScriptX Projekt hat beschlossen, eine Reihe von allgemeinen funktionalen Schnittstellen zur Verfügung zu stellen, die eine bestimmte Anzahl von Eingabeparametern erhalten und etwas anderes ausgeben können ermöglicht eine einfachere Interoperabilität mit Java-basierten APIs. Eine vollständige Liste der verfügbaren funktionalen Schnittstellen findest du [auf dieser Seite](/Mods/Boson/Functions/List/), zusammen mit all ihren Argumenten und Rückgabetypen.
+For this reason, the ZenScriptX Project decided to provide a set of general purpose functional interfaces that can receive a set amount of input parameters and output something else, allowing for easier interoperability with Java-based APIs. A full list of the functional interfaces that are available can be found [on this page](/Mods/Boson/Functions/List/), along with all their arguments and return types.
 
-## Ein Schnellausschluss
-Beachten Sie, dass wir in dieser Dokumentation hauptsächlich auf die Interoperabilität zwischen ZenScript und Java verwiesen haben. Das liegt daran, dass ZenScript bereits Unterstützung für höhere Funktionen bietet (z. Speichern von Funktionen in einer Variable, indem sie sie aufrufen, sie als Parameter übergeben usw., ohne dass eine funktionale Schnittstelle dazwischen benötigt wird. Aus diesem Grund wäre der folgende -Code in ZenScript ungültig:
+## A Quick Disclaimer
+Note that in this documentation we have referred mainly to interoperability between ZenScript and Java. This is because ZenScript already provides support for higher-order functions (i.e. storing functions in a variable, calling them, passing them as parameters etc.) without requiring any functional interface in-between. For this reason the following code would be invalid in ZenScript:
 
 ```zenscript
 val fun as Function = function (input as IIngredient) as IItemStack {
@@ -39,9 +39,9 @@ val fun as Function = function (input as IIngredient) as IItemStack {
     return null;
 } as Function;
 
-print(fun. pply(<minecraft:stick>).commandString); # kompiliert nicht
+print(fun.apply(<minecraft:stick>).commandString); # doesn't compile
 ```
 
-Dies geschieht, weil die funktionalen Methoden nicht ZenScript ausgesetzt sind, sondern nur dem Java-Backend. Um ein Beispiel für die tatsächliche Verwendung solcher funktionalen Schnittstellen zu finden, lesen Sie bitte die [Sequenzen-Dokumentation](/Mods/Boson/Sequences/Docs/) Seite.
+This happens because the functional methods aren't exposed to ZenScript, but only to the Java backend. To find an example of a real usage of such functional interfaces, refer to the [Sequences documentation](/Mods/Boson/Sequences/Docs/) page.
 
 
