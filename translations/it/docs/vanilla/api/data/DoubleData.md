@@ -4,23 +4,23 @@
 
 Questa classe è stata aggiunta da una mod con ID `crafttweaker`. Perciò, è necessario avere questa mod installata per poter utilizzare questa funzione.
 
-## Importare la classe
+## Importing the class
 Potrebbe essere necessario importare il pacchetto, se si incontrano dei problemi (come castare un vettore), quindi meglio essere sicuri e aggiungere la direttiva di importazione.
 ```zenscript
 crafttweaker.api.data.DoubleData
 ```
 
 ## Interfacce Implementate
-DoubleData implementa le seguenti interfacce. Ciò significa che ogni metodo presente nell'interfaccia può essere usato anche per questa classe.
+DoubleData implements the following interfaces. Ciò significa che ogni metodo presente nell'interfaccia può essere usato anche per questa classe.
 - [crafttweaker.api.data.INumberData](/vanilla/api/data/INumberData)
 
-## Costruttori
+## Constructors
 ```zenscript
-new crafttweaker.api.data.DoubleData(interno come doppio);
+new crafttweaker.api.data.DoubleData(internal as double);
 ```
-| Parametro | Tipo   | Descrizione                 |
+| Parameter | Type   | Description                 |
 | --------- | ------ | --------------------------- |
-| interno   | doppia | Nessuna descrizione fornita |
+| internal  | double | Nessuna descrizione fornita |
 
 
 
