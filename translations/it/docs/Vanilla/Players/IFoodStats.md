@@ -1,25 +1,25 @@
 # IFoodStats
 
-L'interfaccia IPlayer consente di visualizzare determinate informazioni sulle statistiche alimentari di un giocatore.
+The IPlayer interface allows you to view certain information on a player's food Stats.
 
-## Importazione del pacchetto
+## Importing the package
 
-Potrebbe essere necessario importare il pacchetto se si incontrano problemi (come lanciare un [Array](/AdvancedFunctions/Arrays_and_Loops/)), quindi meglio essere sicuri che spiacenti e aggiungere l'importazione.  
+It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
 `import crafttweaker.player.IFoodStats;`
 
 ## ZenGetter/ZenSetters
 
-| ZenGetter          | ZenSetter          | Tipo         |
-| ------------------ | ------------------ | ------------ |
-| Livello alimentare | Livello alimentare | int          |
-| saturazioneLivello | saturazioneLivello | galleggiante |
-| necessitàAlimenti  |                    | boolean      |
+| ZenGetter       | ZenSetter       | Type    |
+| --------------- | --------------- | ------- |
+| foodLevel       | foodLevel       | int     |
+| saturationLevel | saturationLevel | float   |
+| needFood        |                 | boolean |
 
 ## ZenMethods
 
-#### Aggiunta Statistiche
+#### Adding Stats
 
-Funzione Del Vuoto. Prende un int e un float come parametri di inserimento.
+Void Function. Takes an int and a float as intput parameters.
 
 ```zenscript
 stats.addStats(int foodValue, float saturationLevel);
@@ -27,7 +27,7 @@ stats.addStats(int foodValue, float saturationLevel);
 
 #### onUpdate
 
-Funzione Del Vuoto. Prende un oggetto [IPlayer](/Vanilla/Players/IPlayer/) come parametro di input.
+Void Function. Takes an [IPlayer](/Vanilla/Players/IPlayer/) object as input parameter.
 
 ```zenscript
 stats.onUpdate(IPlayer player);
@@ -35,17 +35,17 @@ stats.onUpdate(IPlayer player);
 
 #### asNBT
 
-Restituisce un oggetto IData che rappresenta gli alimenti.
+Returns an IData Object representing the foodStats.
 
 ```zenscript
 stats.asNBT();
-statistiche come crafttweaker.data.IData;
+stats as crafttweaker.data.IData;
 ```
 
-#### Aggiungi Esaurimento
+#### Add Exhaustion
 
-Void Funtion. prende un float come parametro di input.
+Void Funtion. takes a float as input parameter.
 
 ```zenscript
-stats.addExhaustion(esaurimento galleggiante);
+stats.addExhaustion(float exhaustion);
 ```
