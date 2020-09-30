@@ -1,9 +1,9 @@
 # MCRightClickEmpty
 
-crafttweakerのmod-idを持つmodによって追加されているクラスです。 従って、この機能を利用する場合はこのmodをインストールする必要があります。
+This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
 
-## クラスのインポート
-問題が発生した場合には、インポートが必要になります。とはいえ、お手数ですが予めインポートしておくほうが安全です。
+## Importing the class
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
 ```zenscript
 crafttweaker.api.event.entity.player.PlayerInteractEvent.MCRightClickEmpty
 ```
@@ -12,16 +12,16 @@ crafttweaker.api.event.entity.player.PlayerInteractEvent.MCRightClickEmpty
 ```zenscript
 new crafttweaker.api.event.entity.player.PlayerInteractEvent.MCRightClickEmpty(handler as function.Consumer<crafttweaker.api.event.entity.player.PlayerInteractEvent.MCRightClickEmpty>);
 ```
-| パラメータ   | タイプ                                                                                                                                                                     | 説明           |
-| ------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ |
-| handler | function.Consumer<[crafttweaker.api.event.entity.player.PlayerInteractEvent.MCRightClickEmpty](/vanilla/api/event/entity/player/PlayerInteractEvent/MCRightClickEmpty)> | 説明が提供されていません |
+| Parameter | Type                                                                                                                                                                    | Description             |
+| --------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------- |
+| handler   | function.Consumer<[crafttweaker.api.event.entity.player.PlayerInteractEvent.MCRightClickEmpty](/vanilla/api/event/entity/player/PlayerInteractEvent/MCRightClickEmpty)> | No description provided |
 
 
 
-## メソッド
+## Methods
 ### getEntityPlayer
 
-戻り値 [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
+Returns [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
 
 ```zenscript
 myMCRightClickEmpty.getEntityPlayer();
@@ -29,9 +29,9 @@ myMCRightClickEmpty.getEntityPlayer();
 
 ### getFace
 
-戻り値: `この相互作用にかかわる顔。 すべての非ブロック相互作用に対して、これはnullを返します。`
+Returns: `The face involved in this interaction. For all non-block interactions, this will return null.`
 
-戻り値 [crafttweaker.api.util.Direction](/vanilla/api/util/Direction)
+Returns [crafttweaker.api.util.Direction](/vanilla/api/util/Direction)
 
 ```zenscript
 myMCRightClickEmpty.getFace();
@@ -39,9 +39,9 @@ myMCRightClickEmpty.getFace();
 
 ### getItemStack
 
-戻り値: `この操作に関与するitemstack, {` @code ItemStack.EMPTY} if the hand was empty.
+Returns: `The itemstack involved in this interaction, {` @code ItemStack.EMPTY} if the hand was empty.
 
-戻り値 [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
+Returns [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
 
 ```zenscript
 myMCRightClickEmpty.getItemStack();
@@ -49,9 +49,9 @@ myMCRightClickEmpty.getItemStack();
 
 ### getPlayer
 
-戻り値: `プレイヤー`
+Returns: `Player`
 
-戻り値 [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
+Returns [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
 
 ```zenscript
 myMCRightClickEmpty.getPlayer();
@@ -59,9 +59,9 @@ myMCRightClickEmpty.getPlayer();
 
 ### getPos
 
-相互作用がエンティティにあった場合は、エンティティを中心としたBlockPosになります。 相互作用がブロックの上にあった場合、そのブロックの位置になります。 そうでなければ、プレイヤーを中心としたBlockPosになります。 決してゼロになることはありません。 戻り値: `この相互作用に関与する位置`
+If the interaction was on an entity, will be a BlockPos centered on the entity. If the interaction was on a block, will be the position of that block. Otherwise, will be a BlockPos centered on the player. Will never be null. Returns: `The position involved in this interaction.`
 
-戻り値 [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos)
+Returns [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos)
 
 ```zenscript
 myMCRightClickEmpty.getPos();
@@ -69,9 +69,9 @@ myMCRightClickEmpty.getPos();
 
 ### hasResult
 
-このイベントが重要な結果値を期待するかどうかを決定します。 注: HasResult アノテーションを持つイベントでは、true を返すためにこのメソッドが自動的に追加されます。
+Determines if this event expects a significant result value. Note: Events with the HasResult annotation will have this method automatically added to return true.
 
-戻り値ブール値
+Returns boolean
 
 ```zenscript
 myMCRightClickEmpty.hasResult();
@@ -79,11 +79,11 @@ myMCRightClickEmpty.hasResult();
 
 ### isCancelable
 
-この関数がキャンセル可能かどうかを判断します。 Returns: `If access to setCanceled should be allowed
+Determine if this function is cancelable at all. Returns: `If access to setCanceled should be allowed
  Note:
  Events with the Cancelable annotation will have this method automatically added to return true.`
 
-戻り値ブール値
+Returns boolean
 
 ```zenscript
 myMCRightClickEmpty.isCancelable();
@@ -91,9 +91,9 @@ myMCRightClickEmpty.isCancelable();
 
 ### isCanceled
 
-このイベントがキャンセルされ、実行を停止するかどうかを決定します。 戻り値: `現在の状態がキャンセルされました`
+Determine if this event is canceled and should stop executing. Returns: `The current canceled state`
 
-戻り値ブール値
+Returns boolean
 
 ```zenscript
 myMCRightClickEmpty.isCanceled();
@@ -105,9 +105,9 @@ myMCRightClickEmpty.isCanceled();
 myMCRightClickEmpty.setCanceled(cancel as boolean);
 ```
 
-| パラメータ | タイプ      | 説明           |
-| ----- | -------- | ------------ |
-| キャンセル | boolean型 | 説明が提供されていません |
+| Parameter | Type     | Description             |
+| --------- | -------- | ----------------------- |
+| cancel    | boolean型 | No description provided |
 
 
 
