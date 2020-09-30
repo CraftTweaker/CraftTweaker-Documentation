@@ -7,13 +7,13 @@ Die Distillation "addRecipe" Methode besteht aus:
 | Type          | Datentyp                                             |
 | ------------- | ---------------------------------------------------- |
 | Output        | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) Array[] |
-| Ausgang       | [Artikel-Stack](/Vanilla/Items/IItemStack/) Array[]  |
+| Output        | [ItemStack](/Vanilla/Items/IItemStack/) Array[]      |
 | Input         | [Fluidstack](/Vanilla/Liquids/ILiquidStack/)         |
-| Flux/t        | Ganzzahl                                             |
-| Zeit in Ticks | Ganzzahl                                             |
-| Hannes        | Schwebendes Array []                                 |
+| Flux/t        | Integer                                              |
+| Time in Ticks | Integer                                              |
+| Chance        | Float Array []                                       |
 
-### Präface:
+### Preface:
 
 Jeder ItemStack Eintrag ist mit dem entsprechenden Array-Eintrag "Chance" verknüpft.
 
