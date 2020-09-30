@@ -1,4 +1,4 @@
-# Обработчики брекетов
+# BracketHandlers
 
 Этот класс был добавлен модом с mod-id `crafttweaker`. Так что если вы хотите использовать эту функцию, вам нужно установить этот мод.
 
@@ -8,7 +8,7 @@
 crafttweaker.api.BracketHandlers
 ```
 
-## Методы
+## Methods
 ### getBlockMaterial
 
 Получает данные [crafttweaker.api.block.material.MCMaterial](/vanilla/api/block/material/MCMaterial). Бросает исключение, если не найдено.
@@ -24,9 +24,9 @@ crafttweaker.api.BracketHandlers.getBlockMaterial(tokens as String);
 crafttweaker.api.BracketHandlers.getBlockMaterial("earth");
 ```
 
-| Параметр | Тип    | Описание                                 |
+| Параметр | Тип    | Description                              |
 | -------- | ------ | ---------------------------------------- |
-| жетоны   | String | То, что вы можете написать в BEP вызове. |
+| tokens   | String | То, что вы можете написать в BEP вызове. |
 
 
 ### getBlockState
@@ -45,9 +45,9 @@ crafttweaker.api.BracketHandlers.getBlockState(tokens as String);
 crafttweaker.api.BracketHandlers.getBlockState("minecraft:acacia_planks");
 ```
 
-| Параметр | Тип    | Описание                              |
+| Параметр | Тип    | Description                           |
 | -------- | ------ | ------------------------------------- |
-| жетоны   | String | Расположение и варианты ресурса блока |
+| tokens   | String | Расположение и варианты ресурса блока |
 
 
 ### getDirectionAxis
@@ -65,9 +65,9 @@ crafttweaker.api.BracketHandlers.getDirectionAxis(tokens as String);
 crafttweaker.api.BracketHandlers.getDirectionAxis("x");
 ```
 
-| Параметр | Тип    | Описание                               |
+| Параметр | Тип    | Description                            |
 | -------- | ------ | -------------------------------------- |
-| жетоны   | String | Расположение ресурса в направлении оси |
+| tokens   | String | Расположение ресурса в направлении оси |
 
 
 ### получить эффект
@@ -85,9 +85,9 @@ crafttweaker.api.BracketHandlers.getEffect(tokens as String);
 crafttweaker.api.BracketHandlers.getEffect("minecraft:haste");
 ```
 
-| Параметр | Тип    | Описание                      |
+| Параметр | Тип    | Description                   |
 | -------- | ------ | ----------------------------- |
-| жетоны   | String | Расположение ресурсов эффекта |
+| tokens   | String | Расположение ресурсов эффекта |
 
 
 ### getEntityClassification
@@ -105,9 +105,9 @@ crafttweaker.api.BracketHandlers.getEntityClassification(tokens as String);
 crafttweaker.api.BracketHandlers.getEntityClassification("monster");
 ```
 
-| Параметр | Тип    | Описание                       |
+| Параметр | Тип    | Description                    |
 | -------- | ------ | ------------------------------ |
-| жетоны   | String | Расположение ресурсов сущности |
+| tokens   | String | Расположение ресурсов сущности |
 
 
 ### getEntityType
@@ -125,9 +125,9 @@ crafttweaker.api.BracketHandlers.getEntityType(tokens as String);
 crafttweaker.api.BracketHandlers.getEntityType("minecraft:pig");
 ```
 
-| Параметр | Тип    | Описание                            |
+| Параметр | Тип    | Description                         |
 | -------- | ------ | ----------------------------------- |
-| жетоны   | String | Расположение ресурсов типа сущности |
+| tokens   | String | Расположение ресурсов типа сущности |
 
 
 ### getFluidStack
@@ -145,9 +145,9 @@ crafttweaker.api.BracketHandlers.getFluidStack(tokens as String);
 crafttweaker.api.BracketHandlers.getFluidStack("minecraft:water");
 ```
 
-| Параметр | Тип    | Описание                    |
+| Параметр | Тип    | Description                 |
 | -------- | ------ | --------------------------- |
-| жетоны   | String | Расположение ресурсов Fluid |
+| tokens   | String | Расположение ресурсов Fluid |
 
 
 ### getItem
@@ -156,7 +156,7 @@ crafttweaker.api.BracketHandlers.getFluidStack("minecraft:water");
 
  Возвращается: `Найденный элемент`
 
-Возвратный тип: [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
+Return type: [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
 
 ```zenscript
 <item:minecraft:dirt>
@@ -165,9 +165,9 @@ crafttweaker.api.BracketHandlers.getItem(tokens as String);
 crafttweaker.api.BracketHandlers.getItem("minecraft:dirt");
 ```
 
-| Параметр | Тип    | Описание             |
+| Параметр | Тип    | Description          |
 | -------- | ------ | -------------------- |
-| жетоны   | String | Расположение ресурса |
+| tokens   | String | Расположение ресурса |
 
 
 ### getЗелье
@@ -179,9 +179,9 @@ crafttweaker.api.BracketHandlers.getItem("minecraft:dirt");
 crafttweaker.api.BracketHandlers.getPotion(tokens as String);
 ```
 
-| Параметр | Тип    | Описание             |
+| Параметр | Тип    | Description          |
 | -------- | ------ | -------------------- |
-| жетоны   | String | Описание отсутствует |
+| tokens   | String | Описание отсутствует |
 
 
 ### getRecipeManager
@@ -197,9 +197,9 @@ crafttweaker.api.BracketHandlers.getRecipeManager(tokens as String);
 crafttweaker.api.BracketHandlers.getRecipeManager("minecraft:crafting");
 ```
 
-| Параметр | Тип    | Описание                      |
+| Параметр | Тип    | Description                   |
 | -------- | ------ | ----------------------------- |
-| жетоны   | String | Расположение ресурсов рецепта |
+| tokens   | String | Расположение ресурсов рецепта |
 
 
 ### Местоположение getResourceLocation
@@ -217,9 +217,9 @@ crafttweaker.api.BracketHandlers.getResourceLocation(tokens as String);
 crafttweaker.api.BracketHandlers.getResourceLocation("minecraft:dirt");
 ```
 
-| Параметр | Тип    | Описание             |
+| Параметр | Тип    | Description          |
 | -------- | ------ | -------------------- |
-| жетоны   | String | Расположение ресурса |
+| tokens   | String | Расположение ресурса |
 
 
 ### getTag
@@ -237,9 +237,9 @@ crafttweaker.api.BracketHandlers.getTag(tokens as String);
 crafttweaker.api.BracketHandlers.getTag("tag:minecraft:wool");
 ```
 
-| Параметр | Тип    | Описание                  |
+| Параметр | Тип    | Description               |
 | -------- | ------ | ------------------------- |
-| жетоны   | String | Расположение ресурса тега |
+| tokens   | String | Расположение ресурса тега |
 
 
 ### getTextFormatting
@@ -251,9 +251,9 @@ crafttweaker.api.BracketHandlers.getTag("tag:minecraft:wool");
 crafttweaker.api.BracketHandlers.getTextFormatting(tokens as String);
 ```
 
-| Параметр | Тип    | Описание             |
+| Параметр | Тип    | Description          |
 | -------- | ------ | -------------------- |
-| жетоны   | String | Описание отсутствует |
+| tokens   | String | Описание отсутствует |
 
 
 
