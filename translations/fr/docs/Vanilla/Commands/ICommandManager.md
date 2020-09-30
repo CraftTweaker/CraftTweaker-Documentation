@@ -1,12 +1,12 @@
-# Gestionnaire de commandes
+# ICommandManager
 
-L'interface ICommandManager gère les commandes. Vous pouvez donc l'utiliser pour récupérer et exécuter des commandes.  
-Vous pouvez le récupérer depuis un objet [IServer](/Vanilla/Game/IServer/).
+The ICommandManager interface is managing commands. So you can use it to get and execute commands.  
+You can get this from an [IServer](/Vanilla/Game/IServer/) object.
 
-## Importation du paquet
+## Importing the package
 
-Il pourrait vous être nécessaire d'importer le paquet si vous rencontrez des problèmes (comme lancer un [Tableau](/AdvancedFunctions/Arrays_and_Loops/)), alors mieux être sûr que désolé et ajouter l'importation.  
-`importer crafttweaker.command.ICommandManager ;`
+It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
+`import crafttweaker.command.ICommandManager;`
 
 ## ZenGetters
 
@@ -17,27 +17,27 @@ Il pourrait vous être nécessaire d'importer le paquet si vous rencontrez des p
     </th>
     
     <th>
-      Type de texte
+      Type
     </th>
   </tr>
   
   <tr>
     <td>
-      commandes
+      commands
     </td>
     
     <td>
-      Carte<String, <a href="/Vanilla/Commands/ICommand/">ICommand</a>\>
+      Map<String, <a href="/Vanilla/Commands/ICommand/">ICommand</a>\>
     </td>
   </tr>
 </table>
 
-## Méthodes Zen
+## ZenMethods
 
-- int executeCommand([ICommandSender](/Vanilla/Commands/ICommandSender/) expéditeur, String rawCommand);
-- Liste<String\> getTabCompletions([ICommandSender](/Vanilla/Commands/ICommandSender/) expéditeur, String input, @Optional [IBlockPos](/Vanilla/World/IBlockPos/) pos);
-- List<[ICommand](/Vanilla/Commands/ICommand/)\> getPossibleCommands([ICommandSender](/Vanilla/Commands/ICommandSender/) expéditeur) ;
+- int executeCommand([ICommandSender](/Vanilla/Commands/ICommandSender/) sender, String rawCommand);
+- List<String\> getTabCompletions([ICommandSender](/Vanilla/Commands/ICommandSender/) sender, String input, @Optional [IBlockPos](/Vanilla/World/IBlockPos/) pos);
+- List<[ICommand](/Vanilla/Commands/ICommand/)\> getPossibleCommands([ICommandSender](/Vanilla/Commands/ICommandSender/) sender);
 
-## Infos supplémentaires
+## Additional Info
 
-Pour ajouter votre propre commande, regardez [CommandEvent](/Vanilla/Events/Events/CommandEvent/)
+To add your own command, look at [CommandEvent](/Vanilla/Events/Events/CommandEvent/)
