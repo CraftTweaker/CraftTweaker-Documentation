@@ -1,16 +1,16 @@
 # Steam Turbine
 
-## 导入软件包
-`nuclearcraft。涡轮机`
+## Importing the Package
+`mods.nuclearcraft.Turbine`
 
-## 添加配方
+## Adding Recipes
 ```zenscript
-nuclearcraft。Turbine.addRecipe(ILiquidStack fluidInput, ILiquidStack fluidOutput, double powerPerMB, double expandLevel, @Optional String particleEfft, @Optional double particleSpeedMultiplier)；
+mods.nuclearcraft.Turbine.addRecipe(ILiquidStack fluidInput, ILiquidStack fluidOutput, double powerPerMB, double expansionLevel, @Optional String particleEffect, @Optional double particleSpeedMultiplier);
 ```
 
-## 删除配方
+## Removing Recipes
 ```zenscript
-nuclearcraft。Turbine.removeRecipeWidInput(ILiquidStack fluidInput);
-mods.nuclearcraft.Turbine.removeRecipeWOutput(ILiquidStack fluidOut);
+mods.nuclearcraft.Turbine.removeRecipeWithInput(ILiquidStack fluidInput);
+mods.nuclearcraft.Turbine.removeRecipeWithOutput(ILiquidStack fluidOutput);
 mods.nuclearcraft.turbine.removeAllRecipes();
 ```
