@@ -1,11 +1,11 @@
 # IMobSpawnerBaseLogic
 
-L'oggetto IMobSpawnerBaseLogic contiene tutti i tipi di informazioni su come e dove generare qualcosa.
+The IMobSpawnerBaseLogic object contains all kinds of information on how and where to spawn something.
 
-## Importare la classe
+## Importing the class
 
-Potrebbe essere necessario [importare](/AdvancedFunctions/Import/) la classe per evitare errori.  
-`importare crafttweaker.tileentity.IMobSpawnerBaseLogic;`
+It might be required to [import](/AdvancedFunctions/Import/) the class to avoid errors.  
+`import crafttweaker.tileentity.IMobSpawnerBaseLogic;`
 
 ## ZenGetters
 
@@ -13,7 +13,7 @@ Potrebbe essere necessario [importare](/AdvancedFunctions/Import/) la classe per
 | ---------- | ------------------ | ------------------------------------- |
 | `nbtData`  | `nbtData`          | [IData](/Vanilla/Data/IData/)         |
 |            | `entityDefinition` | [IPlayer](/Vanilla/Players/IPlayer/)  |
-| `mondo`    |                    | [IWorld](/Vanilla/World/IWorld)       |
+| `world`    |                    | [IWorld](/Vanilla/World/IWorld)       |
 | `blockPos` |                    | [IBlockPos](/Vanilla/World/IBlockPos) |
 
 ## ZenMethods
