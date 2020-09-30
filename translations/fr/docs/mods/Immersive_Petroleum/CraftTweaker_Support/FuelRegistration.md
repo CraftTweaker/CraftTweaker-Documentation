@@ -1,26 +1,26 @@
-# Enregistrement du carburant
+# Fuel Registration
 
 ## Inscrire le Carburant
 
-| Nom      | Type de texte                               |
+| Name     | Type                                        |
 | -------- | ------------------------------------------- |
 | Fluide/t | [Fluidstack](/Vanilla/Liquids/IFluidStack/) |
-| Flux/t   | Nombre entier                               |
+| Flux/t   | Integer                                     |
 
-Exemple:
+Example:
 ```ZenScript
 //mods.immersivepetroleum.FuelRegistry.registerGeneratorFuel(IFluidStack fuel, int fluxPerTick);
 
 mods.immersivepetroleum.FuelRegistry.registerGeneratorFuel(<fluid:minecraft:water> * 180, 64); // Using 180mB per Tick
 ```
 
-## Enregistrer le Carburant Moto
+## registerMotorboatFuel
 
-| Nom      | Type de texte                               |
+| Name     | Type                                        |
 | -------- | ------------------------------------------- |
 | Fluide/t | [Fluidstack](/Vanilla/Liquids/IFluidStack/) |
 
-Exemple:
+Example:
 ```ZenScript
 //mods.immersivepetroleum.FuelRegistry.registerboatFuel(IFluidStack carburant);
 
