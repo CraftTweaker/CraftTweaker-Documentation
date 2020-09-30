@@ -1,16 +1,16 @@
 # PlayerDestroyItem
 
-Das Event des Spielers DestroyItem wird abgefeuert, wenn ein Spieler einen Gegenstand zerstört.
+The PlayerDestroyItem Event is fired whenever a player destroys an item.
 
 ## Event-Klasse
 
-Du musst das Ereignis als diese Klasse in den Funktionskopf verschieben:  
-`crafttweaker.event. layerDestroyItemEvent`  
-Sie können natürlich auch [die Klasse vor](/AdvancedFunctions/Import/) importieren und dann diesen Namen verwenden.
+You will need to cast the event in the function header as this class:  
+`crafttweaker.event.PlayerDestroyItemEvent`  
+You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
 
 ## Erweiterte Event-Schnittellen
 
-PlayerDestroyItem Events implementieren die folgenden Schnittstellen und können alle ihre Methoden/Getter/Setter auch aufrufen:
+PlayerDestroyItem Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
 
 - [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
 
@@ -18,8 +18,8 @@ PlayerDestroyItem Events implementieren die folgenden Schnittstellen und können
 
 Die folgenden Informationen lassen sich von diesem Event (Ereignis) abrufen:
 
-| ZenGetter            | Rückgabetyp                              |
-| -------------------- | ---------------------------------------- |
-| `player`             | [IPlayer](/Vanilla/Players/IPlayer/)     |
-| `originales Element` | [IItemStack](/Vanilla/Items/IItemStack/) |
-| `Hand`               | string                                   |
+| ZenGetter      | Rückgabetyp                              |
+| -------------- | ---------------------------------------- |
+| `player`       | [IPlayer](/Vanilla/Players/IPlayer/)     |
+| `originalItem` | [IItemStack](/Vanilla/Items/IItemStack/) |
+| `hand`         | string                                   |
