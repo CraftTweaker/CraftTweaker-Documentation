@@ -1,17 +1,17 @@
-# Działo
+# Cannon
 
-### Importowanie
+### Importing
 
 ```zenscript
-mods.applied iedenergistics2.Cannon;
+import mods.appliedenergistics2.Cannon;
 ```
 
-### Dodawanie
+### Adding
 
-Dodaje rodzaje amunicji dla działa. Masa odnosi się do masy atomowej materiału.
+Adds ammo types for the matter cannon. Weight refers to (roughly) the atomic weight of the material.
 
 ```zenscript
-Cannon.registerAmmo(IItemStack ammo, podwójna waga);
+Cannon.registerAmmo(IItemStack ammo, double weight);
 
-Cannon.registerAmmo(<minecraft:bone>, 40,07);
+Cannon.registerAmmo(<minecraft:bone>, 40.07);
 ```
