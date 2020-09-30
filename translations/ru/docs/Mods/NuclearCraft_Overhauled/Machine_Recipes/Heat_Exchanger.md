@@ -1,15 +1,15 @@
-# Теплообменник
-**Примечание: Частично сломано**
+# Heat Exchanger
+**Note: Partially Broken**
 
-## Импортирование пакета
-`mods.nuclearcraft.Теплообменник`
+## Importing the Package
+`mods.nuclearcraft.HeatExchanger`
 
-## Добавление рецептов
+## Adding Recipes
 ```zenscript
-mods.nuclearcraft.Рецепт HeatExchanger.addRecipe(ILiquidStack fluidInput, ILiquidStack fluidOutput, требуется двойное нагревание, внутренняя температура, внутренняя температура);
+mods.nuclearcraft.HeatExchanger.addRecipe(ILiquidStack fluidInput, ILiquidStack fluidOutput, double heatRequired, int temperatureIn, int temperatureOut);
 ```
 
-## Удаление рецептов
+## Removing Recipes
 ```zenscript
 mods.nuclearcraft.HeatExchanger.removeRecipeWithInput(ILiquidStack fluidInput);
 mods.nuclearcraft.HeatExchanger.removeRecipeWithOutput(ILiquidStack fluidOutput);
