@@ -1,19 +1,19 @@
-# Skrzynia Skarbów
+# Treasure Chest
 
-## Pakiet
+## Package
 
-`mods.Rzeczywiściejadditions.Skrzynia Skarbów`
+`mods.actuallyadditions.TreasureChest`
 
-## Dodanie
+## Addition
 
 ```zenscript
-//mods.actuyadditions.TreasureChest.addLoot(IItemStack returnItem, szansa na int minAmount, int maxAmount);
-mods.rzeczywiścieadditions.TreasureChest.addLoot(<minecraft:dirt>, 50, 1, 64);
+//mods.actuallyadditions.TreasureChest.addLoot(IItemStack returnItem, int chance, int minAmount, int maxAmount);
+mods.actuallyadditions.TreasureChest.addLoot(<minecraft:dirt>, 50, 1, 64);
 ```
 
-## Usuwanie
+## Removal
 
 ```zenscript
-//mods.actuyadditions.TreasureChest.removeLoot(IItemStack returnItem);
-mods.actuyadditions.TreasureChest.removeLoot(<minecraft:gold_nugget>);
+//mods.actuallyadditions.TreasureChest.removeLoot(IItemStack returnItem);
+mods.actuallyadditions.TreasureChest.removeLoot(<minecraft:gold_nugget>);
 ```
