@@ -1,8 +1,8 @@
-# Gestionnaire de pont d'onglets créatifs
+# Creative Tab Bracket Handler
 
-The Creative Tab Bracket Handler vous donne accès aux onglets créatifs du jeu.
+The Creative Tab Bracket Handler gives you access to the creative Tabs in the game.
 
-Ils sont référencés dans le gestionnaire des onglets créatifs de cette façon :
+They are referenced in the Creative Tab handler this way:
 
 ```zenscript
 <creativetab:name>
@@ -10,4 +10,4 @@ Ils sont référencés dans le gestionnaire des onglets créatifs de cette faço
 <creativetab:misc>
 ```
 
-Si l'onglet Créatif est trouvé, cela retournera un objet ICreativeTab . Veuillez vous référer à la [entrée Wiki respective](/Vanilla/CreativeTabs/ICreativeTab/) pour plus d'informations sur ce que vous pouvez faire avec celles-ci.
+If the Creative Tab is found, this will return an ICreativeTab Object. Please refer to the [respective Wiki entry](/Vanilla/CreativeTabs/ICreativeTab/) for further information on what you can do with these.
