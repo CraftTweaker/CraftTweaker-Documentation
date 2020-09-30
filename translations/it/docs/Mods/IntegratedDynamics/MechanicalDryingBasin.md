@@ -1,30 +1,30 @@
-# Bacino Di Essiccazione
+# MechanicalDryingBasin
 
-Questo pacchetto consente di modificare le ricette per il bacino di asciugatura meccanico.
+This package allows you to modify recipes for the Mechanical Drying Basin.
 
-## Importazione del pacchetto
+## Importing the package
 
-Se vuoi importare questo pacchetto, qui vai:
+If you want to import this package, here you go:
 
 ```zenscript
 import mods.integrateddynamics.MechanicalDryingBasin;
 ```
 
-## Aggiunta Di Ricette
+## Adding Recipes
 
 ```zenscript
 //MechanicalDryingBasin.addRecipe(@Optional IItemStack inputStack, @Optional ILiquidStack inputFluid, @Optional IItemStack outputStack, @Optional ILiquidStack outputFluid, @Optional(10) int duration);
 
-MechanicalDryingBasin. ddRecipe(<minecraft:melon>, <liquid:lava> * 100, <minecraft:stick>, <liquid:water> * 100, 10);
+MechanicalDryingBasin.addRecipe(<minecraft:melon>, <liquid:lava> * 100, <minecraft:stick>, <liquid:water> * 100, 10);
 ```
 
-## Rimozione Ricette
+## Removing Recipes
 
 ```zenscript
 //MechanicalDryingBasin.removeRecipe(@Optional IItemStack inputStack, @Optional ILiquidStack inputFluid, @Optional IItemStack outputStack, @Optional ILiquidStack outputFluid, @Optional(10) int duration);
-MechanicalDryingBasin. emoveRecipe(<minecraft:melon>, <liquid:lava> * 100, <minecraft:stick>, <liquid:water> * 100, 10);
+MechanicalDryingBasin.removeRecipe(<minecraft:melon>, <liquid:lava> * 100, <minecraft:stick>, <liquid:water> * 100, 10);
 
 
-//MechanicalDryingBasin. emoveRecipesWithOutput(@Optional IItemStack outputStack, @Optional ILiquidStack outputFluid);
+//MechanicalDryingBasin.removeRecipesWithOutput(@Optional IItemStack outputStack, @Optional ILiquidStack outputFluid);
 MechanicalDryingBasin.removeRecipesWithOutput(<minecraft:leather>, null);
 ```
