@@ -18,9 +18,9 @@ LongData实现了以下接口。 这意味着对这个接口可用的任何方�
 ```zenscript
 new crafttweaker.api.data.LongData(internal as long);
 ```
-| 参数   | 类型 | 描述                      |
-| ---- | -- | ----------------------- |
-| 内部设置 | 长  | No description provided |
+| 参数       | 类型   | 描述                      |
+| -------- | ---- | ----------------------- |
+| internal | long | No description provided |
 
 
 
