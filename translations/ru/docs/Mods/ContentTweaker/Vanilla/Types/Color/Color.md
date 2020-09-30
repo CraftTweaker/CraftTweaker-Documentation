@@ -1,25 +1,25 @@
-# Цвет
+# Color
 
-Если вы не уверены в том, как создать цветной int объект, то вместо этого вы можете использовать Цветной объект.
+If you are uncertain on how to create the colour int object, you can use the Color Object instead.
 
 ## Импорт пакета
 
-Возможно, вам потребуется импортировать пакет, если вы столкнетесь с какими-либо проблемами, так что лучше быть безопасным чем извините и добавьте импорт.  
-`импорт mods.contenttweaker.Color;`
+It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
+`import mods.contenttweaker.Color;`
 
-## Статические методы
+## Static Methods
 
-Вызываются статические методы на имя пакета, а не на самом объекте.  
-Все эти методы возвращают цветовой объект.
+Static Methods are called on the package name and not on the Object itself.  
+All these Methods return a Color Object.
 
-| ZenMethod      | Тип параметра |
-| -------------- | ------------- |
-| из/Int(цвет)   | int           |
-| из/в Hex(цвет) | string        |
+| ZenMethod      | Parameter Type |
+| -------------- | -------------- |
+| fromInt(color) | int            |
+| fromHex(color) | string         |
 
-## Нестационарные методы
+## Nonstatic Methods
 
-Nonstatic Methods вызываются не на имя пакета, а на самом Объекте.
+Nonstatic Methods are not called on the package name but on the Object itself.
 
 | ZenMethod     | Возвращаемый тип |
 | ------------- | ---------------- |
