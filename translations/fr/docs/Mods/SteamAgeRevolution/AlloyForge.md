@@ -1,17 +1,17 @@
-# Forge d'Alliage
+# Alloy Forge
 
-La Forge d'Alliage est une machine qui convertit deux fluides d'entrée en un seul fluide de sortie.
+The Alloy Forge is a machine that converts two input fluids into one output fluid.
 
-## Paquet
-`AlloyForge`
+## Package
+`mods.steamagerevolution.AlloyForge`
 
-## Méthodes
+## Methods
 
-- **[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) sortie** Le résultat de la recette.
-- **[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) entrée** L'entrée de la recette.
-- **int craftTime** Temps d'artisanat pour la machine à traiter
+- **[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) output** The result of the recipe.
+- **[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) input** The input of the recipe.
+- **int craftTime** Crafting time for machine to process
 
-## Ajouter
+## Addition
 
 ```zenscript
 mods.steamagerevolution.AlloyForge.addRecipe(ILiquidStack input, ILiquidStack input, ILiquidStack output, int craftTime);
@@ -19,7 +19,7 @@ mods.steamagerevolution.AlloyForge.addRecipe(<liquid:water>*100, <liquid:lava>*1
 ```
 
 
-## Retirer
+## Removal
 
 ```zenscript
 mods.steamagerevolution.AlloyForge.removeRecipe(ILiquidStack output);
