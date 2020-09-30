@@ -1,24 +1,24 @@
-# Compattatore
+# Compactor
 
-## Pacchetto
+## Package
 
 `mods.thermalexpansion.Compactor`
 
-Il compattatore supporta 4 tipi di modificatori:
+The compactor supports 4 types of modifiers:
 
-    Menta
-    Premi
-    Magazzino
+    Mint
+    Press
+    Storage
     Gear
     
 
-## Menta
+## Mint
 
-Il modificatore della zecca cambia le ricette registrate nella mappa delle ricette `COIN` nell'espansione termica.
+The Mint modifier changes the recipes registered in the `COIN` recipe map in Thermal Expansion.
 
-Si noti che queste ricette richiedono l'incremento della stampa Numismatica.
+Note that these recipes require the Numismatic Press Augment.
 
-### Addizione
+### Addition
 
 ```zenscript
 mods.thermalexpansion.Compactor.addMintRecipe(IItemStack output, IItemStack input, int energy);
@@ -26,7 +26,7 @@ mods.thermalexpansion.Compactor.addMintRecipe(IItemStack output, IItemStack inpu
 mods.thermalexpansion.Compactor.addMintRecipe(<minecraft:sand>, <minecraft:stick>, 1500);
 ```
 
-### Rimozione
+### Removal
 
 ```zenscript
 mods.thermalexpansion.Compactor.removeMintRecipe(IItemStack input);
@@ -34,13 +34,13 @@ mods.thermalexpansion.Compactor.removeMintRecipe(IItemStack input);
 mods.thermalexpansion.Compactor.removeMintRecipe(<thermalfoundation:material:167>);
 ```
 
-## Stampa
+## Press
 
-Il modificatore stampa cambia le ricette non registrate nel `PLATE`, `COIN`, o `GEAR` ricette mappe in espansione termica.
+The Press modifier changes the recipes not registered in the `PLATE`, `COIN`, or `GEAR` recipe maps in Thermal Expansion.
 
-Queste ricette non richiedono un aumento specifico.
+These recipes do not require a specific Augment.
 
-### Addizione
+### Addition
 
 ```zenscript
 mods.thermalexpansion.Compactor.addPressRecipe(IItemStack output, IItemStack input, int energy);
@@ -48,7 +48,7 @@ mods.thermalexpansion.Compactor.addPressRecipe(IItemStack output, IItemStack inp
 mods.thermalexpansion.Compactor.addPressRecipe(<minecraft:sand>, <minecraft:apple>, 1500);
 ```
 
-### Rimozione
+### Removal
 
 ```zenscript
 mods.thermalexpansion.Compactor.removePressRecipe(IItemStack input);
@@ -56,13 +56,13 @@ mods.thermalexpansion.Compactor.removePressRecipe(IItemStack input);
 mods.thermalexpansion.Compactor.removePressRecipe(<thermalfoundation:material:167>);
 ```
 
-## Archiviazione
+## Storage
 
-Il modificatore Storage cambia le ricette registrate nella mappa delle ricette `PLATE` in espansione termica.
+The Storage modifier changes the recipes registered in the `PLATE` recipe map in Thermal Expansion.
 
-Queste ricette non richiedono un aumento specifico, e apparentemente sono utilizzate solo per i piatti.
+These recipes do not require a specific Augment, and seemingly are used only for plates.
 
-### Addizione
+### Addition
 
 ```zenscript
 mods.thermalexpansion.Compactor.addStorageRecipe(IItemStack output, IItemStack input, int energy);
@@ -70,7 +70,7 @@ mods.thermalexpansion.Compactor.addStorageRecipe(IItemStack output, IItemStack i
 mods.thermalexpansion.Compactor.addStorageRecipe(<minecraft:sand>, <minecraft:arrow>, 1500);
 ```
 
-### Rimozione
+### Removal
 
 ```zenscript
 mods.thermalexpansion.Compactor.removeStorageRecipe(IItemStack input);
@@ -78,13 +78,13 @@ mods.thermalexpansion.Compactor.removeStorageRecipe(IItemStack input);
 mods.thermalexpansion.Compactor.removeStorageRecipe(<thermalfoundation:material:167>);
 ```
 
-## Attrezzo
+## Gear
 
-Il modificatore dell'ingranaggio cambia le ricette registrate nella mappa delle ricette `GEAR` nell'espansione termica.
+The Gear modifier changes the recipes registered in the `GEAR` recipe map in Thermal Expansion.
 
-Nota che queste ricette richiedono il Gearworking Die Augment.
+Note that these recipes require the Gearworking Die Augment.
 
-### Addizione
+### Addition
 
 ```zenscript
 mods.thermalexpansion.Compactor.addGearRecipe(IItemStack output, IItemStack input, int energy);
@@ -92,7 +92,7 @@ mods.thermalexpansion.Compactor.addGearRecipe(IItemStack output, IItemStack inpu
 mods.thermalexpansion.Compactor.addGearRecipe(<minecraft:sand>, <minecraft:arrow>, 1500);
 ```
 
-### Rimozione
+### Removal
 
 ```zenscript
 mods.thermalexpansion.Compactor.removeGearRecipe(IItemStack input);
