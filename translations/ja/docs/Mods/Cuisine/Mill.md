@@ -1,4 +1,4 @@
-# ミル
+# Mill
 
 ## 加算
 
@@ -11,7 +11,7 @@ Mill.add(<item:minecraft:dirt> * 2, null, <item:minecraft:diamond>, null);
 Mill.add(<ore:cobblestone> * 4, <liquid:water> * 1000, null, <liquid:lava> * 1000);
 ```
 
-## 削除
+## Removal
 
 ```zenscript
 import mods.cuisine.Mill;
@@ -28,6 +28,6 @@ Mill.remove(String id);
 
 Mill.remove("recipe_name");
 
-// すべてを削除！
+// Remove everything!
 Mill.removeAll();
 ```
