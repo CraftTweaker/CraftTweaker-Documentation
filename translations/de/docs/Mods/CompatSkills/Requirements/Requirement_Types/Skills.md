@@ -1,12 +1,12 @@
-# Fähigkeiten:
+# Skills:
 
-Fertigkeiten neben Erweiterungen waren einer der originalen Lock-Typen, die von Skillable hinzugefügt wurden und seither verfeinert wurden, um andere Mods zu unterstützen, die mehr Fähigkeiten hinzufügen. Die Fertigkeitssyntax lautet wie folgt:
+Skills alongside Advancements was one of the original lock types added by Skillable and has since then been refined to support other mods adding more Skills. The Skill Syntax is as follows:
 
-    Beispiel:
-    RessourcenLocation|Stufe
+    Example:
+    ResourceLocation|Level
     
-    Arbeitsbeispiel:
+    Working Example:
     reskillable:building|15
     
 
-Seit der Veröffentlichung von Reskillable haben wir uns von einem Fähigkeiten-Namenssystem zu einem Ressourcenstandortsnamensystem entwickelt. Dies erlaubt mehrere Fähigkeiten, um Fähigkeiten mit dem gleichen internen Namen aber unterschiedliche Mod-ID für die Ressourcen-Position hinzuzufügen. You can find the Skill's ResourceLocations under: [Skills & Traits](/Mods/CompatSkills/Requirements/Skills_Traits/)
+Since the release of Reskillable we've moved from a skill name system to a resource location name system. This allows for several skills to add skills with the same internal name but different mod id's for the Resource Location. You can find the Skill's ResourceLocations under: [Skills & Traits](/Mods/CompatSkills/Requirements/Skills_Traits/)
