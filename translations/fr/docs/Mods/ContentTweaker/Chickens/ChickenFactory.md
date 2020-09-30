@@ -1,29 +1,29 @@
 # ChickenFactory
 
-La ChickenFactory vous permet de créer des poulets [personnalisés](/Mods/ContentTweaker/Chickens/ChickenRepresentation/) pour le jeu.  
-Notez que ce module est un ajout de fonctionnalité au mod [Poulet par setycz](https://minecraft.curseforge.com/projects/chickens), donc ce module n'est disponible que si ce mod est chargé.
+The ChickenFactory allows you to create custom [Chickens](/Mods/ContentTweaker/Chickens/ChickenRepresentation/) to the game.  
+Note that this module is a feature addition to the [Chickens mod by setycz](https://minecraft.curseforge.com/projects/chickens), so this module is only available if that mod is loaded.
 
-## Importation du paquet
+## Importing the package
 
 ```zenscript
 import mods.contenttweaker.ChickenFactory;
 ```
 
-## Création de poulets
+## Creating chickens
 
-Tout d'abord, vous devrez créer une [Représentation Poulet](/Mods/ContentTweaker/Chickens/ChickenRepresentation/).  
-Il s'agit essentiellement d'un modèle vide de ce que votre poulet va devenir.  
-Cette méthode retourne un tel [objet de Représentation Poulet](/Mods/ContentTweaker/Chickens/ChickenRepresentation/) , en prenant les paramètres suivants :
+First of all, you will need to create a [Chicken Representation](/Mods/ContentTweaker/Chickens/ChickenRepresentation/).  
+This is essentially an empty template of what your chicken will become.  
+This method returns such a [Chicken Representation](/Mods/ContentTweaker/Chickens/ChickenRepresentation/) object, by taking the following parameters:
 
-- Nom de la chaîne : le nom de l'entité du poulet, utilisé pour les modèles et le registre de l'entité.
-- [CTColor](/Mods/ContentTweaker/Vanilla/Types/Color/Color/) : La couleur, le poulet aura une couleur.
-- [IItemStack](/Vanilla/Items/IItemStack/) layedItem: L'objet que le poulet va reposer plus tard.
+- String name: the entity name of the chicken, used for models and the entity registry.
+- [CTColor](/Mods/ContentTweaker/Vanilla/Types/Color/Color/) color: The color, the chicken will have.
+- [IItemStack](/Vanilla/Items/IItemStack/) layedItem: The item the chicken will lay later on.
 
 ```zenscript
-ChickenFactory.createPicken(String name, CTColor color, IItemStack item);
+ChickenFactory.createChicken(String name, CTColor color, IItemStack item);
 ```
 
-## Exemple de script
+## Example Script
 
 ```zenscript
 #loader contenttweaker
