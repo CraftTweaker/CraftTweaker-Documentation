@@ -1,14 +1,14 @@
-# P2P調整
+# P2P Attunement
 
-### インポート中
+### Importing
 
 ```zenscript
-import mods.appledenergistics2.Attunement;
+import mods.appliedenergistics2.Attunement;
 ```
 
-### Attuning item
+### Attuning Item
 
-特定のP2PトンネルタイプにIItemStackまたはModIDを接続します。 ModIDは、IItemStackが見つからなかった場合にフォールバックとして使用されます。
+Attune an IItemStack or ModID to a specific P2P-Tunnel type. ModID's are used as fallback when no IItemStack was found.
 
 ### ME P2P
 
@@ -20,21 +20,21 @@ Attunement.attuneME(<appliedenergistics2:controller>);
 Attunement.attuneME("actuallyadditions");
 ```
 
-### アイテムP2P
+### Item P2P
 
 ```zenscript
 Attunement.attuneItem(IItemStack IItemStack);
 Attunement.attuneItem(String modID);
 ```
 
-### 流体P2P
+### Fluid P2P
 
 ```zenscript
 Attunement.attuneFluid(IItemStack IItemStack);
 Attunement.attuneFluid(String modID);
 ```
 
-### レッドストーン P2P
+### Redstone P2P
 
 ```zenscript
 Attunement.attuneRedstone(IItemStack IItemStack);
@@ -55,7 +55,7 @@ Attunement.attuneIC2(IItemStack IItemStack);
 Attunement.attuneIC2(String modID);
 ```
 
-### ライト P2P
+### Light P2P
 
 ```zenscript
 Attunement.attuneLight(IItemStack IItemStack);
