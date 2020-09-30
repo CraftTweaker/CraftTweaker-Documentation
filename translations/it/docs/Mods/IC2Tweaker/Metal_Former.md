@@ -1,15 +1,15 @@
-# Metallo Ex
+# Metal Former
 
-## Pacchetto
+## Package
 
 `import mods.ic2.MetalFormer;`
 
-## Metodi
+## Methods
 
 - **[IItemStack](/Vanilla/Items/IItemStack/) output**
-- **[Ingresso IIngrediente](/Vanilla/Variable_Types/IIngredient/)**
+- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input**
 
-## Aggiungi Ricetta Di Taglio
+## Add Cutting Recipe
 
 ```zenscript
 mods.ic2.MetalFormer.addCuttingRecipe(IItemStack output, IIngredient input);
@@ -17,12 +17,12 @@ mods.ic2.MetalFormer.addCuttingRecipe(IItemStack output, IIngredient input);
 mods.ic2.MetalFormer.addCuttingRecipe(<minecraft:diamond>, <minecraft:dirt> * 64);
 ```
 
-## Rimuovi La Ricetta Di Taglio
+## Remove Cutting Recipe
 
-- Se si utilizza Ic2 Experimental, per rimuovere una ricetta, basta rimuovere la riga corrispondente in `config/ic2/metal_former_cutting.ini`.
-- Se si utilizza Ic2 Classic e Ic2c Extra, per rimuovere una ricetta, basta disattivare la ricetta corrispondente in `config/ic2/ic2machineRecipes.json`.
+- If using Ic2 Experimental, to remove a recipe, simply remove the corresponding line in `config/ic2/metal_former_cutting.ini`.
+- If using Ic2 Classic and Ic2c Extras, to remove a recipe, simply disable the corresponding recipe in `config/ic2/ic2machineRecipes.json`.
 
-## Aggiungi Ricetta Estrusione
+## Add Extruding Recipe
 
 ```zenscript
 mods.ic2.MetalFormer.addExtrudingRecipe(IItemStack output, IIngredient input);
@@ -30,12 +30,12 @@ mods.ic2.MetalFormer.addExtrudingRecipe(IItemStack output, IIngredient input);
 mods.ic2.MetalFormer.addExtrudingRecipe(<minecraft:diamond_block>, <minecraft:dirt> * 64);
 ```
 
-## Rimuovi Ricetta Estrusione
+## Remove Extruding Recipe
 
-- Se si utilizza Ic2 Experimental, per rimuovere una ricetta, basta rimuovere la riga corrispondente in `config/ic2/metal_former_extruding.ini`.
-- Se si utilizza Ic2 Classic e Ic2c Extra, per rimuovere una ricetta, basta disattivare la ricetta corrispondente in `config/ic2/ic2machineRecipes.json`.
+- If using Ic2 Experimental, to remove a recipe, simply remove the corresponding line in `config/ic2/metal_former_extruding.ini`.
+- If using Ic2 Classic and Ic2c Extras, to remove a recipe, simply disable the corresponding recipe in `config/ic2/ic2machineRecipes.json`.
 
-## Aggiungi Ricetta Rotolante
+## Add Rolling Recipe
 
 ```zenscript
 mods.ic2.MetalFormer.addRollingRecipe(IItemStack output, IIngredient input);
@@ -43,7 +43,7 @@ mods.ic2.MetalFormer.addRollingRecipe(IItemStack output, IIngredient input);
 mods.ic2.MetalFormer.addRollingRecipe(<minecraft:diamond>, <minecraft:dirt> * 32);
 ```
 
-## Rimuovi La Ricetta Di Rotolamento
+## Remove Rolling Recipe
 
-- Se si utilizza Ic2 Experimental, per rimuovere una ricetta, basta rimuovere la riga corrispondente in `config/ic2/metal_former_rolling.ini`
-- Se si utilizza Ic2 Classic e Ic2c Extra, per rimuovere una ricetta, basta disattivare la ricetta corrispondente in `config/ic2/ic2machineRecipes.json`.
+- If using Ic2 Experimental, to remove a recipe, simply remove the corresponding line in `config/ic2/metal_former_rolling.ini`
+- If using Ic2 Classic and Ic2c Extras, to remove a recipe, simply disable the corresponding recipe in `config/ic2/ic2machineRecipes.json`.
