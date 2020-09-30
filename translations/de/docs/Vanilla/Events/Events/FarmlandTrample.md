@@ -1,18 +1,18 @@
 # FarmlandTrampleEvent
 
-Das FarmlandTrample Event wird gefeuert, wenn ein Ackerland kurz davor steht, mit Füßen zu treten. Das Abbrechen des Ereignisses verhindert, dass der Block mit Füßen tritt.
+The FarmlandTrample Event is fired whenever a farmland is about to be trampled. Canceling the event will prevent the block from being trampled.
 
-## Notizen
+## Notes
 
-`event.fallDistance` enthält die Distanz, die vor dem Angriff auf das Land gefallen ist.
+`event.fallDistance` contains the distance fallen before hitting the farmland.
 
 ## Event-Klasse
-Du musst das Ereignis als diese Klasse in den Funktionskopf verschieben:  
-`crafttweaker.event. armlandTrampleEvent`  
-Sie können natürlich auch [die Klasse vor](/AdvancedFunctions/Import/) importieren und dann diesen Namen verwenden.
+You will need to cast the event in the function header as this class:  
+`crafttweaker.event.FarmlandTrampleEvent`  
+You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
 
 ## Erweiterte Event-Schnittellen
-FarmlandTrample Events implementieren die folgenden Schnittstellen und können alle ihre Methoden/Getters/Setter auch aufrufen:
+FarmlandTrample Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
 
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 - [IBlockEvent](/Vanilla/Events/Events/IBlockEvent/)
@@ -20,7 +20,7 @@ FarmlandTrample Events implementieren die folgenden Schnittstellen und können a
 ## ZenGetter
 Die folgenden Informationen lassen sich von diesem Event (Ereignis) abrufen:
 
-| ZenGetter     | ZenSetter | Type                                  |
-| ------------- | --------- | ------------------------------------- |
-| `objekt`      |           | [IEntity](/Vanilla/Entities/IEntity/) |
-| `falldistanz` |           | float                                 |
+| ZenGetter      | ZenSetter | Type                                  |
+| -------------- | --------- | ------------------------------------- |
+| `entity`       |           | [IEntity](/Vanilla/Entities/IEntity/) |
+| `fallDistance` |           | float                                 |
