@@ -1,21 +1,21 @@
-### Klasa
+### Class
 
 ```zenscript
-importuj mods.roots.AnimalHarvest;
+import mods.roots.AnimalHarvest;
 ```
 
-#### Metody
+#### Methods
 
 ```zenscript
-Unieważnij addEntity(
-  IEntityDefinition entity // the entity to create drops for
+void addEntity(
+  IEntityDefinition entity // the entity to generate drops for
 );
 ```
 
 * * *
 
 ```zenscript
-Unieważnij removeEntity(
+void removeEntity(
   IEntityDefinition entity // the entity to stop generating drops for
 );
 ```
@@ -23,39 +23,39 @@ Unieważnij removeEntity(
 * * *
 
 ```zenscript
-Unieważnij addFish(
-  nazwa ciągu, // nazwa typu ryby
-  IItemStack, // typ ryb jako stos przedmiotów
-  int waga // masa ryb jako liczba całkowita
+void addFish(
+  string name,     // the name of the type of fish
+  IItemStack fish, // the type of fish as an item stack
+  int weight       // the weight of the fish as an integer
 );
 ```
 
 * * *
 
 ```zenscript
-Unieważnij removeFish(
-  IItemStack ryba // typ ryby do usunięcia jako stos przedmiotów
+void removeFish(
+  IItemStack fish // the type of fish to remove as an item stack
 );
 ```
 
 * * *
 
-### Przykłady
+### Examples
 
 ```zenscript
 import mods.roots.AnimalHarvest;
 
-// Dodaje endermana jako cel rytuału zbiorów zwierząt.
-// Generalnie lepiej byłoby wykorzystywać zwierzęta.
+// Adds an enderman as a target for the Animal Harvest ritual.
+// Generally it would be better to use animals.
 AnimalHarvest.addEntity(<entity:minecraft:enderman>);
 
-// Zapobiega oddawaniu spadków podczas rytuału
-Zwierzęta. emoveEntity(<entity:minecraft:cow>);
+// Prevents the entity from giving drops during the ritual
+AnimalHarvest.removeEntity(<entity:minecraft:cow>);
 
-// Dodaje magma krem jako rodzaj ryb o wadze 20 (wszystkie wagi oparte na 
-// standardowym połowie. syn loot table)
+// Adds magma cream as a type of fish with a weight of 20 (all weights based on 
+// the standard fishing.json loot table)
 AnimalHarvest.addFish("magma_cream", <minecraft:magma_cream>, 20);
 
-// Usuwa pufferryty z rytuału zbiorów zwierząt
+// Removes pufferfish from the Animal Harvest ritual
 AnimalHarvest.removeFish(<minecraft:fish:3>);
 ```
