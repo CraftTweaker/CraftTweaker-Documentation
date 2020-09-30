@@ -1,15 +1,15 @@
 # Microwave
 
-マイクロ波は食料品を加熱します
+The Microwave heats up food items.
 
-## 既定のマイクロ波レシピ
+## Default Microwave Recipes
 
-- 牛肉->焼いた肉
-- ポテト->ベイクドポテト
+- Beef -> Cooked Beef
+- Potato -> Baked Potato
 
-## 削除中
+## Removing
 
-## 一致するマイクロ波レシピを削除します。
+## Remove matching microwave recipes.
 
 ```zenscript
 mods.cfm.Microwave.remove(@Optional final IIngredient output, @Optional final IIngredient input);
@@ -22,9 +22,9 @@ mods.cfm.Microwave.remove(<minecraft:cooked_beef>);
 mods.cfm.Microwave.remove();
 ```
 
-## 追加中
+## Adding
 
-## マイクロ波レシピを追加します。
+## Add a microwave recipe.
 
 ```zenscript
 mods.cfm.Microwave.addRecipe(@Nonnull final IItemStack output, @Nonnull final IItemStack input);
