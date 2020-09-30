@@ -1,36 +1,36 @@
 # BlockHarvestDropsEvent
 
-L'evento BlockHarvestDrops viene sparato ogni volta che un blocco sta per cadere i suoi oggetti.  
-È possibile modificare l'elenco dei blocchi e la possibilità generale di rilascio. Impostare quest'ultimo a 1 se si fa tutta la possibilità di gestire in anticipo.
+The BlockHarvestDrops Event is fired whenever a block is about to drop its items.  
+You can modify the block list as well as the overall drop chance. Set latter to 1 if you do all chance handling beforehand.
 
-## Classe Evento
+## Event Class
 
-Dovrai lanciare l'evento nell'intestazione della funzione come questa classe:  
-`crafttweaker.event. lockHarvestDropsEvent`  
-È possibile, naturalmente, anche [importare](/AdvancedFunctions/Import/) la classe prima e utilizzare quel nome allora.
+You will need to cast the event in the function header as this class:  
+`crafttweaker.event.BlockHarvestDropsEvent`  
+You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
 
-## Estensioni dell'interfaccia evento
+## Event interface extensions
 
-BlockHarvestDrops Events implementa le seguenti interfacce e sono in grado di chiamare anche tutti i loro metodi/getter/setter:
+BlockHarvestDrops Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
 
 - [IBlockEvent](/Vanilla/Events/Events/IBlockEvent/)
 
 ## ZenGetters
 
-Le seguenti informazioni possono essere ricavate dall'evento:
+The following information can be retrieved from the event:
 
-| ZenGetter    | ZenSetter    | Tipo                                             |
-| ------------ | ------------ | ------------------------------------------------ |
-| `giocatore`  |              | [IPlayer](/Vanilla/Players/IPlayer/)             |
-| `isPlayer`   |              | bool                                             |
-| `silkTouch`  |              | bool                                             |
-| `ForteLevel` |              | int                                              |
-| `gocce`      | `gocce`      | List<[IItemStack](/Vanilla/Items/IItemStack/)\> |
-| `dropChance` | `dropChance` | galleggiante                                     |
+| ZenGetter      | ZenSetter    | Type                                             |
+| -------------- | ------------ | ------------------------------------------------ |
+| `player`       |              | [IPlayer](/Vanilla/Players/IPlayer/)             |
+| `isPlayer`     |              | bool                                             |
+| `silkTouch`    |              | bool                                             |
+| `fortuneLevel` |              | int                                              |
+| `drops`        | `drops`      | List<[IItemStack](/Vanilla/Items/IItemStack/)\> |
+| `dropChance`   | `dropChance` | float                                            |
 
-## Aggiungere un elemento alla lista
+## Adding an item to the list
 
-È possibile aggiungereAssegnare l'elenco o utilizzare il metodo per aggiungere un elemento all'elenco:
+You can either addAssign the list or use the method to add an item to the list:
 
 ```zenscript
 event.drops += <minecraft:coal>;
