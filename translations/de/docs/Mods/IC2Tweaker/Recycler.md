@@ -1,17 +1,17 @@
 # Recycler
 
-## Paket
+## Package
 
-`importieren mods.ic2.Recycler;`
+`import mods.ic2.Recycler;`
 
 ## Methoden
 
-- **[Zutat](/Vanilla/Variable_Types/IIngredient/)** Der Gegenstand der Blacklist vom Recycler (als Quelle von Schrott)
+- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) ingredient** The item to be blacklisted from recycler (as source of scrap)
 
 ## Add Blacklist
 
 ```zenscript
-mods.ic2.Recycler.addBlacklist(IZutat);
+mods.ic2.Recycler.addBlacklist(IIngredient ingredient);
 
 mods.ic2.Recycler.addBlacklist(<minecraft:dirt>);
 ```
