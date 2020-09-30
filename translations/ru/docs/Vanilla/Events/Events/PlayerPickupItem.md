@@ -1,6 +1,6 @@
-# Предмет выбора игрока
+# PlayerPickupItem
 
-Событие Пикап Игрока запускается всякий раз, когда игрок взаимодействует с сущностью.
+The PlayerPickupItem Event is fired whenever a player interacts with an Entity.
 
 ## Класс события
 
@@ -10,7 +10,7 @@ You can, of course, also [import](/AdvancedFunctions/Import/) the class before a
 
 ## Наследование от интерфейсов событий
 
-События PlayerPickupItem реализуют следующие интерфейсы и также могут вызвать все их методы/getters/setters:
+PlayerPickupItem Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
 
 - [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
 
@@ -18,7 +18,7 @@ You can, of course, also [import](/AdvancedFunctions/Import/) the class before a
 
 Следующая информация может быть получена от события:
 
-| Геттеры   | Возвращаемый тип                              |
+| ZenGetter | Возвращаемый тип                              |
 | --------- | --------------------------------------------- |
-| `элемент` | [IEntityItem](/Vanilla/Entities/IEntityItem/) |
+| `item`    | [IEntityItem](/Vanilla/Entities/IEntityItem/) |
 | `player`  | [IPlayer](/Vanilla/Players/IPlayer/)          |
