@@ -8,7 +8,7 @@
 crafttweaker.api.commands.custom.MCCommandContext
 ```
 
-## Методы
+## Methods
 ### copyFor
 
 Возврат тип: [crafttweaker.api.commands.custom.MCCommandContext](/vanilla/api/commands/custom/MCCommandContext)
@@ -17,35 +17,35 @@ crafttweaker.api.commands.custom.MCCommandContext
 myMCCommandContext.copyFor(источник как crafttweaker.api.commands.custom.MCCommandSource);
 ```
 
-| Параметр | Тип                                                                                              | Описание             |
+| Параметр | Тип                                                                                              | Description          |
 | -------- | ------------------------------------------------------------------------------------------------ | -------------------- |
 | источник | [crafttweaker.api.commands.custom.MCCommandSource](/vanilla/api/commands/custom/MCCommandSource) | Описание отсутствует |
 
 
-### равно
+### equals
 
-Тип возврата: логическое значение
+Return type: boolean
 
 ```zenscript
 myMCCommandContext.equals(o как объект);
 ```
 
-| Параметр | Тип    | Описание             |
+| Параметр | Тип    | Description          |
 | -------- | ------ | -------------------- |
-| о        | Объект | Описание отсутствует |
+| o        | Object | Описание отсутствует |
 
 
 ### getАргумент
 
-Тип возврата: строка
+Return type: String
 
 ```zenscript
 myMCCommandContext.getArgument(название как строка);
 ```
 
-| Параметр | Тип    | Описание             |
+| Параметр | Тип    | Description          |
 | -------- | ------ | -------------------- |
-| имя      | String | Описание отсутствует |
+| name     | String | Описание отсутствует |
 
 
 ### getChild
@@ -66,7 +66,7 @@ myMCCommandContext.getCommand();
 
 ### getInput
 
-Тип возврата: строка
+Return type: String
 
 ```zenscript
 myMCCommandContext.getInput();
@@ -122,7 +122,7 @@ myMCCommandContext.getSource();
 
 ### hasNodes
 
-Тип возврата: логическое значение
+Return type: boolean
 
 ```zenscript
 myMCCommandContext.hasNodes();
@@ -130,7 +130,7 @@ myMCCommandContext.hasNodes();
 
 ### hashCode
 
-Тип возврата: int
+Return type: int
 
 ```zenscript
 myMCCommandContext.hashCode();
@@ -138,7 +138,7 @@ myMCCommandContext.hashCode();
 
 ### isForked
 
-Тип возврата: логическое значение
+Return type: boolean
 
 ```zenscript
 myMCCommandContext.isForked();
@@ -146,7 +146,7 @@ myMCCommandContext.isForked();
 
 ### toString
 
-Тип возврата: строка
+Return type: String
 
 ```zenscript
 myMCCommandContext.toString();
@@ -160,9 +160,9 @@ myMCCommandContext.toString();
 myMCCommandContext == o как объект
 ```
 
-| Параметр | Тип    | Описание             |
+| Параметр | Тип    | Description          |
 | -------- | ------ | -------------------- |
-| о        | Объект | Описание отсутствует |
+| o        | Object | Описание отсутствует |
 
 ## Утилиты
 
