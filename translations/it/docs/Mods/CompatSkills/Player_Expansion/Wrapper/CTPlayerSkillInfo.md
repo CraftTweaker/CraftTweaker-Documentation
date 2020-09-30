@@ -1,66 +1,66 @@
 # CTPlayerSkillInfo
 
-## Metodi
+## Methods
 
 ### getLevel()
 
-    Esempio:
+    Example:
     event.player.skillData.getSkillInfo(<skill:reskillable:agility>).getLevel();
     
-    Questo restituisce il livello dell'Abilità.
+    This returns the level of the Skill.
     
 
 ### getSkillPoints()
 
-    Esempio:
+    Example:
     event.player.skillData.getSkillInfo(<skill:reskillable:agility>).getSkillPoints();
     
-    Questo restituisce il numero di Punti Abilità disponibili da spendere per quella Abilità.
+    This return the number of Skill Points available to spend for that Skill.
     
 
 ### getLevelUpCost()
 
-    Esempio:
+    Example:
     event.player.skillData.getSkillInfo(<skill:reskillable:agility>).getLevelUpCost();
     
-    Questo restituisce il costo di aumento di livello per l'abilità.
+    This returns the Level-Up Cost for the Skill.
     
 
 ### getRank()
 
-    Esempio:
+    Example:
     event.player.skillData.getSkillInfo(<skill:reskillable:agility>).getRank();
     
-    Questo restituisce l'attuale Stringa di Rango per l'Abilità.
+    This returns the current Rank String for the Skill.
     
 
 ### getSkill()
 
-    Esempio:
+    Example:
     event.player.skillData.getSkillInfo(<skill:reskillable:agility>).getSkill();
     
-    Questo restituisce l'Abilità da cui stai ricevendo informazioni.
+    This returns the Skill you're currently getting info from.
     
 
 ### levelUp()
 
-    Esempio:
+    Example:
     event.player.skillData.getSkillInfo(<skill:reskillable:agility>).levelUp();
     
-    Questo livello aumenta l'Abilità per il giocatore.
+    This levels up the Skill for the player.
     
 
 ### respec()
 
-    Esempio:
+    Example:
     event.player.skillData.getSkillInfo(<skill:reskillable:agility>).respec();
     
     This "un-purchases" all traits in this specific Skill and refunds all Skill Points.
     
 
-### sblocco(CTUnlockable ctUnlockable, IPlayer player)
+### unlock(CTUnlockable ctUnlockable, IPlayer player)
 
-    Esempio:
+    Example:
     event.player.skillData.getSkillInfo(<skill:reskillable:agility>).unlock(<trait:reskillable:sidestep>, event.player);
     
-    Questo sblocca la caratteristica fornita se disponibile sotto l'abilità al giocatore fornito.
+    This unlocks the provided trait if available under the skill to the provided player.
