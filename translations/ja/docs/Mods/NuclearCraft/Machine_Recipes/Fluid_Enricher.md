@@ -1,16 +1,16 @@
-# 流体エンリチャー
+# Fluid Enricher
 
-## パッケージのインポート
-`mods.naturcraft.dissolver`
+## Importing the Package
+`mods.nuclearcraft.dissolver`
 
-## レシピを追加中
+## Adding Recipes
 ```zenscript
-mods.nuclearcraft.dissolver.addRecipe([itemInput, fluidInput, fluidOutput, @Optional double timeMultiplier, @Optional door processRadiation]);
+mods.nuclearcraft.dissolver.addRecipe([itemInput, fluidInput, fluidOutput, @Optional double timeMultiplier, @Optional double powerMultiplier, @Optional double processRadiation]);
 ```
 
-## レシピを削除
+## Removing Recipes
 ```zenscript
 mods.nuclearcraft.dissolver.removeRecipeWithInput([itemInput, fluidInput]);
 mods.nuclearcraft.dissolver.removeRecipeWithOutput([fluidOutput]);
-mods.nuclecraft.dissolver.removeAllRecipes();
+mods.nuclearcraft.dissolver.removeAllRecipes();
 ```
