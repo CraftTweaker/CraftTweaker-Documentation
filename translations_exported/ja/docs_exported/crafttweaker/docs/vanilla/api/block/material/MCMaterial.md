@@ -1,23 +1,23 @@
 # MCMaterial
 
-crafttweakerのmod-idを持つmodによって追加されているクラスです。 従って、この機能を利用する場合はこのmodをインストールする必要があります。
+This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
 
-## クラスのインポート
-問題が発生した場合には、インポートが必要になります。とはいえ、お手数ですが予めインポートしておくほうが安全です。
+## Importing the class
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
 ```zenscript
 crafttweaker.api.block.material.MCMaterial
 ```
 
-## 実装されたインターフェース
-MCMaterialは以下のインターフェースを実装しています。 つまり、利用可能な任意のメソッドはこのクラスでも使用できます。
-- [craftweaker.api.brackets.CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
+## Implemented Interfaces
+MCMaterialは以下のインターフェースを実装しています。 That means any method available to them can also be used on this class.
+- [crafttweaker.api.brackets.CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
 
-## メソッド
+## Methods
 ### blocksMovement
 
-このマテリアルがソリッドであるかどうかを返します。
+Returns if this material is considered solid or not
 
-戻り値の型: boolean
+Return type: boolean
 
 ```zenscript
 myMCMaterial.blocksMovement();
@@ -25,7 +25,7 @@ myMCMaterial.blocksMovement();
 
 ### getColor
 
-ブロックのカラーインデックスを取得します。 これは、このブロックを表すためにバニラマップで使用されるのと同じ色です。
+Retrieves the color index of the block. This is is the same color used by vanilla maps to represent this block.
 
 戻り値の種類: MCMaterialColor
 
@@ -33,11 +33,11 @@ myMCMaterial.blocksMovement();
 myMCMaterial.getColor();
 ```
 
-### isFlamable
+### isFlammable
 
-ブロックが燃やすかどうかを返します。
+Returns if the block can burn or not.
 
-戻り値の型: boolean
+Return type: boolean
 
 ```zenscript
 myMCMaterial.isFlammable();
@@ -45,9 +45,9 @@ myMCMaterial.isFlammable();
 
 ### isLiquid
 
-これらの材料のブロックが液体である場合に返します。
+Returns if blocks of these materials are liquids.
 
-戻り値の型: boolean
+Return type: boolean
 
 ```zenscript
 myMCMaterial.isLiquid();
@@ -55,19 +55,19 @@ myMCMaterial.isLiquid();
 
 ### isOpaque
 
-材料が不透明であるかどうかを示します
+Indicate if the material is opaque
 
-戻り値の型: boolean
+Return type: boolean
 
 ```zenscript
 myMCMaterial.isOpaque();
 ```
 
-### isReplacable
+### isReplaceable
 
-材料が置かれたときに他のブロックに置き換えることができるかどうかを返します - 例えば、雪、ブドウ、背の高い草。
+Returns whether the material can be replaced by other blocks when placed - eg snow, vines and tall grass.
 
-戻り値の型: boolean
+Return type: boolean
 
 ```zenscript
 myMCMaterial.isReplaceable();
@@ -75,18 +75,18 @@ myMCMaterial.isReplaceable();
 
 ### isSolid
 
-ブロックがソリッドである場合はtrueを返します。 これはデフォルトでは true です。
+Returns true if the block is a considered solid. This is true by default.
 
-戻り値の型: boolean
+Return type: boolean
 
 ```zenscript
 myMCMaterial.isSolid();
 ```
 
 
-## プロパティー
+## Properties
 
-| 名称            | タイプ  | ゲッターあり | セッターあり |
-| ------------- | ---- | ------ | ------ |
-| commandString | 文字列型 | true   | false  |
+| 名称            | Type   | Has Getter | Has Setter |
+| ------------- | ------ | ---------- | ---------- |
+| commandString | String | true       | false      |
 
