@@ -1,14 +1,14 @@
-# Fusionsreaktor
+# Fusion Reactor
 
-## Paket wird importiert
+## Importing the Package
 `mods.techreborn.fusionReactor`
 
-## Rezepte hinzufügen
+## Adding Recipes
 ```zenscript
 mods.techreborn.fusionReactor.addRecipe(IIngredient topInput, IIngredient bottomInput, IItemStack output, int startEU, int euTick, int tickTime);
 ```
 
-## Rezepte entfernen
+## Removing Recipes
 ```zenscript
 mods.techreborn.fusionReactor.removeTopInputRecipe(IIngredient iIngredient);
 mods.techreborn.fusionReactor.removeBottomInputRecipe(IIngredient iIngredient);
