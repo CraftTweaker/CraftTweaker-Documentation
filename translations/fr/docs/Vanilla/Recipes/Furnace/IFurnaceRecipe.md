@@ -1,22 +1,22 @@
-# format@@0 IFurnaceRecipe
+# IFurnaceRecipe
 
-Une recette de table de four ICraftingRecipe est la façon dont ZS la voit.
+An ICraftingRecipe is a furnace table recipe the way ZS sees it.
 
-## Importation de la classe
+## Importing the class
 
-Il peut être nécessaire de [importer](/AdvancedFunctions/Import/) la classe pour éviter les erreurs.  
-`importer crafttweaker.recipes.IFurnaceRecipe`
+It might be required to [import](/AdvancedFunctions/Import/) the class to avoid errors.  
+`import crafttweaker.recipes.IFurnaceRecipe`
 
-## Méthodes Zen/Getters
+## ZenMethods/Getters
 
-### À la chaîne de caractères
+### To String
 
 ```zenscript
 rec.commandString;
 rec.toCommandString();
 ```
 
-### Autres accesseurs
+### Other getters
 
 ```zenscript
 rec.input;
