@@ -12,7 +12,7 @@ crafttweaker.api.brackets.CommandStringDisplayable
 
 ## 参数
 
-| 名称                   | 类型          | 可获得  | 可设置   |
-| -------------------- | ----------- | ---- | ----- |
-| commandString #命令字符串 | 字符串[string] | true | false |
+| 名称            | 类型     | 可获得  | 可设置   |
+| ------------- | ------ | ---- | ----- |
+| commandString | String | true | false |
 
