@@ -1,21 +1,21 @@
 # IBlockAction
 
-Функция IBlockAction может быть добавлена в [блок](/Mods/ContentTweaker/Vanilla/Creatable_Content/Block/) и в зависимости от того, где вы добавили его, будет срабатывать, когда блок помещен или сломан.
+The IBlockAction function can be added to a [Block](/Mods/ContentTweaker/Vanilla/Creatable_Content/Block/) and, depending on where you added it, will be triggered when the block is placed or broken.
 
 ## Импорт пакета
 
-Возможно, вам потребуется импортировать пакет, если вы столкнетесь с какими-либо проблемами, так что лучше быть безопасным чем извините и добавьте импорт.  
-`импорт mods.contenttweaker.IBlockAction;`
+It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
+`import mods.contenttweaker.IBlockAction;`
 
-## Параметры
+## Parameters
 
-IBlockAction — это функция со следующими параметрами:
+The IBlockAction is a function with the following parameters:
 
-- [IWorld](/Mods/ContentTweaker/Vanilla/Types/World/IWorld/) мир → Мир в блоке в
-- [IBlockPos](/Mods/ContentTweaker/Vanilla/Types/Block/IBlockPos/) позиция → Положение Блока
-- [ICTBlockState](/Mods/ContentTweaker/Vanilla/Types/Block/ICTBlockState/) состояние → Содержит информацию о блоке, например, сам блок и его метаданные
+- [IWorld](/Mods/ContentTweaker/Vanilla/Types/World/IWorld/) world → The world the block is in
+- [IBlockPos](/Mods/ContentTweaker/Vanilla/Types/Block/IBlockPos/) position → The Block's position
+- [ICTBlockState](/Mods/ContentTweaker/Vanilla/Types/Block/ICTBlockState/) state → Contains information on the block, such as the Block itself and its metadata
 
-Функция не имеет возвращаемого значения!
+The function doesn't have a return value!
 
 ## Пример
 
