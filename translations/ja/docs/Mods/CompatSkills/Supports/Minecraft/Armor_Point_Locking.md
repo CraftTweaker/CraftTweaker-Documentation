@@ -1,11 +1,11 @@
-# アーマー値のロック
+# Armor-Value Locking
 
-## 機能:
+## Feature:
 
-このタイプのロックは、要件の背後にある一定量の防具ポイントを提供する防具を使用する能力をロックします。 これは、鎧が0を提供する場合を意味します。 以下の例のように、5つのアーマーポイントは、エンド(Aka Dim 1)でのみ使用可能であることの後ろにロックできます!
+This type of lock, locks the ability to use armor that provides a certain amount of Armor Points behind a set of requirements. This means that if an armor provides 0.75 armor point, as in the example below, you can lock it behind only being useable in the End (Aka Dim 1)!
 
-## 構文
+## Syntax:
 
-    mods.compatskills.ArmorLock.addArmorLock(二重装甲, 文字列... requirements);
+    mods.compatskills.ArmorLock.addArmorLock(double armor, String... requirements);
     
     mods.compatskills.ArmorLock.addArmorLock(0.75, "dim|1");
