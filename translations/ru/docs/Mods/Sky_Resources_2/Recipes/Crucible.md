@@ -1,21 +1,21 @@
-# Котел
+# Crucible
 
-*Тихий* пакет используется для добавления или удаления рецептов в/из Котла.
+The *crucible* package is used for adding or removing recipes to/from the Crucible.
 
-## Звонок
+## Calling
 
-Вы можете вызвать пакет *распятый* с помощью `mods.skyresources.crucible`
+You can call the *crucible* package using `mods.skyresources.crucible`
 
-## Добавление рецепта
+## Recipe Addition
 
 ```zenscript
-//mods.skyresources.crucible.addRecipe(ILiquidStack), вход IItemStack;
+//mods.skyresources.crucible.addRecipe(ILiquidStack output, IItemStack input);
 mods.skyresources.crucible.addRecipe(<liquid:lava> * 500, <minecraft:cobblestone>);
 ```
 
-## Удаление рецепта
+## Recipe Removal
 
 ```zenscript
-//mods.skyresources.crucible.removeRecipe(ILiquidStack);
+//mods.skyresources.crucible.removeRecipe(ILiquidStack output);
 mods.skyresources.crucible.removeRecipe(<liquid:lava>);
 ```
