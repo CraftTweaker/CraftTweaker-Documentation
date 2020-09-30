@@ -8,8 +8,8 @@
 crafttweaker.api.commands.custom.MCArgumentBuilder
 ```
 
-## Методы
-### сборка
+## Methods
+### build
 
 Возврат тип: [crafttweaker.api.commands.custom.MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)
 
@@ -17,17 +17,17 @@ crafttweaker.api.commands.custom.MCArgumentBuilder
 myMCArgumentBuilder.build();
 ```
 
-### равно
+### equals
 
-Тип возврата: логическое значение
+Return type: boolean
 
 ```zenscript
 myMCArgumentBuilder.equals(o as Object);
 ```
 
-| Параметр | Тип    | Описание             |
+| Параметр | Тип    | Description          |
 | -------- | ------ | -------------------- |
-| о        | Объект | Описание отсутствует |
+| o        | Object | Описание отсутствует |
 
 
 ### выполняет
@@ -38,9 +38,9 @@ myMCArgumentBuilder.equals(o as Object);
 myMCArgumentBuilder.executes(команда как crafttweaker.api.commands.custom.MCCommand);
 ```
 
-| Параметр | Тип                                                                                  | Описание             |
+| Параметр | Тип                                                                                  | Description          |
 | -------- | ------------------------------------------------------------------------------------ | -------------------- |
-| команда  | [crafttweaker.api.commands.custom.MCCommand](/vanilla/api/commands/custom/MCCommand) | Описание отсутствует |
+| command  | [crafttweaker.api.commands.custom.MCCommand](/vanilla/api/commands/custom/MCCommand) | Описание отсутствует |
 
 
 ### fork
@@ -51,7 +51,7 @@ myMCArgumentBuilder.executes(команда как crafttweaker.api.commands.cus
 myMCArgumentBuilder.fork(цель как crafttweaker.api.commands.custom.MCCommandNode, модификатор как crafttweaker.api.commands.custom.MCRedirectModifier);
 ```
 
-| Параметр | Тип                                                                                                    | Описание             |
+| Параметр | Тип                                                                                                    | Description          |
 | -------- | ------------------------------------------------------------------------------------------------------ | -------------------- |
 | target   | [crafttweaker.api.commands.custom.MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)           | Описание отсутствует |
 | modifier | [crafttweaker.api.commands.custom.MCRedirectModifier](/vanilla/api/commands/custom/MCRedirectModifier) | Описание отсутствует |
@@ -65,7 +65,7 @@ myMCArgumentBuilder.fork(цель как crafttweaker.api.commands.custom.MCComm
 myMCArgumentBuilder.forward(цель как crafttweaker.api.commands.custom.MCCommandNode, модификатор как crafttweaker.api.commands.custom.MCRedirectModifier, форк как boolean);
 ```
 
-| Параметр | Тип                                                                                                    | Описание             |
+| Параметр | Тип                                                                                                    | Description          |
 | -------- | ------------------------------------------------------------------------------------------------------ | -------------------- |
 | target   | [crafttweaker.api.commands.custom.MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)           | Описание отсутствует |
 | modifier | [crafttweaker.api.commands.custom.MCRedirectModifier](/vanilla/api/commands/custom/MCRedirectModifier) | Описание отсутствует |
@@ -114,7 +114,7 @@ myMCArgumentBuilder.getRequirement();
 
 ### hashCode
 
-Тип возврата: int
+Return type: int
 
 ```zenscript
 myMCArgumentBuilder.hashCode();
@@ -122,7 +122,7 @@ myMCArgumentBuilder.hashCode();
 
 ### isFork
 
-Тип возврата: логическое значение
+Return type: boolean
 
 ```zenscript
 myMCArgumentBuilder.isFork();
@@ -136,7 +136,7 @@ myMCArgumentBuilder.isFork();
 myMCArgumentBuilder.redirect(цель как crafttweaker.api.commands.custom.MCCommandNode);
 ```
 
-| Параметр | Тип                                                                                          | Описание             |
+| Параметр | Тип                                                                                          | Description          |
 | -------- | -------------------------------------------------------------------------------------------- | -------------------- |
 | target   | [crafttweaker.api.commands.custom.MCCommandNode](/vanilla/api/commands/custom/MCCommandNode) | Описание отсутствует |
 
@@ -148,7 +148,7 @@ myMCArgumentBuilder.redirect(цель как crafttweaker.api.commands.custom.MC
 myMCArgumentBuilder.redirect(цель как crafttweaker.api.commands.custom.MCCommandNode, модификатор как crafttweaker.api.commands.custom.MCSingleRedirectModifier);
 ```
 
-| Параметр | Тип                                                                                                                | Описание             |
+| Параметр | Тип                                                                                                                | Description          |
 | -------- | ------------------------------------------------------------------------------------------------------------------ | -------------------- |
 | target   | [crafttweaker.api.commands.custom.MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)                       | Описание отсутствует |
 | modifier | [crafttweaker.api.commands.custom.MCSingleRedirectModifier](/vanilla/api/commands/custom/MCSingleRedirectModifier) | Описание отсутствует |
@@ -162,7 +162,7 @@ myMCArgumentBuilder.redirect(цель как crafttweaker.api.commands.custom.MC
 myMCArgumentBuilder.requires(requirement as function.Predicate<crafttweaker.api.commands.custom.MCCommandSource>);
 ```
 
-| Параметр   | Тип                                                                                                                                    | Описание             |
+| Параметр   | Тип                                                                                                                                    | Description          |
 | ---------- | -------------------------------------------------------------------------------------------------------------------------------------- | -------------------- |
 | требование | function.Predicate&lt;[crafttweaker.api.commands.custom.MCCommandSource](/vanilla/api/commands/custom/MCCommandSource)&gt; | Описание отсутствует |
 
@@ -175,7 +175,7 @@ myMCArgumentBuilder.requires(requirement as function.Predicate<crafttweaker.api.
 myMCArgumentBuilder.then(аргумент как crafttweaker.api.commands.custom.MCArgumentBuilder);
 ```
 
-| Параметр | Тип                                                                                                  | Описание             |
+| Параметр | Тип                                                                                                  | Description          |
 | -------- | ---------------------------------------------------------------------------------------------------- | -------------------- |
 | аргумент | [crafttweaker.api.commands.custom.MCArgumentBuilder](/vanilla/api/commands/custom/MCArgumentBuilder) | Описание отсутствует |
 
@@ -187,14 +187,14 @@ myMCArgumentBuilder.then(аргумент как crafttweaker.api.commands.custo
 myMCArgumentBuilder.then(аргумент как crafttweaker.api.commands.custom.MCCommandNode);
 ```
 
-| Параметр | Тип                                                                                          | Описание             |
+| Параметр | Тип                                                                                          | Description          |
 | -------- | -------------------------------------------------------------------------------------------- | -------------------- |
 | аргумент | [crafttweaker.api.commands.custom.MCCommandNode](/vanilla/api/commands/custom/MCCommandNode) | Описание отсутствует |
 
 
 ### toString
 
-Тип возврата: строка
+Return type: String
 
 ```zenscript
 myMCArgumentBuilder.toString();
@@ -208,9 +208,9 @@ myMCArgumentBuilder.toString();
 myMCArgumentBuilder == o как объект
 ```
 
-| Параметр | Тип    | Описание             |
+| Параметр | Тип    | Description          |
 | -------- | ------ | -------------------- |
-| о        | Объект | Описание отсутствует |
+| o        | Object | Описание отсутствует |
 
 ## Утилиты
 
