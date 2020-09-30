@@ -1,17 +1,17 @@
-# Reaktor syntezy jądrowej
+# Fusion Reactor
 
-## Importowanie pakietu
-`[PLACEHOLDER] mods.techreborn.fusionReactor`
+## Importing the Package
+`mods.techreborn.fusionReactor`
 
-## Dodawanie przepisów
+## Adding Recipes
 ```zenscript
-mods.techreborn.fusionReactor.addRecipe(Iponentowy topInput, IIngredient bottomInput, wyjście IItemStack, int startEU, int euTick, int tickTime);
+mods.techreborn.fusionReactor.addRecipe(IIngredient topInput, IIngredient bottomInput, IItemStack output, int startEU, int euTick, int tickTime);
 ```
 
-## Usuwanie przepisów
+## Removing Recipes
 ```zenscript
-mods.techreborn.fusionReactor.removeTopInputRecipe(ISkładnik iIngredient);
+mods.techreborn.fusionReactor.removeTopInputRecipe(IIngredient iIngredient);
 mods.techreborn.fusionReactor.removeBottomInputRecipe(IIngredient iIngredient);
-mods.techreborn.fusionReactor.removeRecipe(wyjście IItemStack);
+mods.techreborn.fusionReactor.removeRecipe(IItemStack output);
 mods.techreborn.fusionReactor.removeAll();
 ```
