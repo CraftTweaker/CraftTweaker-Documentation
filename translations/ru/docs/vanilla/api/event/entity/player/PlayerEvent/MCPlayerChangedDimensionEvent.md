@@ -1,45 +1,45 @@
-# Событие MCPlayerChangedDimensionName
+# MCPlayerChangedDimensionEvent
 
 Этот класс был добавлен модом с mod-id `crafttweaker`. Так что если вы хотите использовать эту функцию, вам нужно установить этот мод.
 
 ## Импорт класса
 Вам может потребоваться импортировать пакет, если вы столкнетесь с какими-либо проблемами (например, с заливкой массива), так что лучше быть в безопасности, чем извиняться и добавлять импорт.
 ```zenscript
-crafttweaker.api.event.entity.player.PlayerEvent.MCPlayerChangedDimension.Event
+crafttweaker.api.event.entity.player.PlayerEvent.MCPlayerChangedDimensionEvent
 ```
 
-## Конструкторы
+## Constructors
 ```zenscript
-new crafttweaker.api.event.entity.player.PlayerEvent.MCPlayerChangedDimensionEvent(обработчик функции.Consumer<crafttweaker.api.event.entity.player.PlayerEvent.MCPlayerChangedDimensionEvent>);
+new crafttweaker.api.event.entity.player.PlayerEvent.MCPlayerChangedDimensionEvent(handler as function.Consumer<crafttweaker.api.event.entity.player.PlayerEvent.MCPlayerChangedDimensionEvent>);
 ```
-| Параметр | Тип                                                                                                                                                                              | Описание             |
-| -------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------- |
-| handler  | function.Consumer<[crafttweaker.api.event.entity.player.PlayerEvent.MCPlayerChangedDimension.Event](/vanilla/api/event/entity/player/PlayerEvent/MCPlayerChangedDimensionEvent)> | Описание отсутствует |
+| Параметр | Тип                                                                                                                                                                             | Description          |
+| -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------- |
+| handler  | function.Consumer<[crafttweaker.api.event.entity.player.PlayerEvent.MCPlayerChangedDimensionEvent](/vanilla/api/event/entity/player/PlayerEvent/MCPlayerChangedDimensionEvent)> | Описание отсутствует |
 
 
 
-## Методы
+## Methods
 ### getEntityPlayer
 
-Возвращает [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
+Returns [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
 
 ```zenscript
-myMCPlayerChangedDimension.getEntityPlayer();
+myMCPlayerChangedDimensionEvent.getEntityPlayer();
 ```
 
 ### getPlayer
 
-Возвращение: `Игрок`
+Returns: `Player`
 
-Возвращает [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
+Returns [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
 
 ```zenscript
 myMCPlayerChangedDimensionEvent.getPlayer();
 ```
 
-### имеет Результат
+### hasResult
 
-Определяет, ожидает ли это событие значимое значение результата. Примечание: События с аннотацией HasResult будут автоматически добавлены для возврата true.
+Determines if this event expects a significant result value. Note: Events with the HasResult annotation will have this method automatically added to return true.
 
 Возвращает boolean
 
@@ -47,37 +47,37 @@ myMCPlayerChangedDimensionEvent.getPlayer();
 myMCPlayerChangedDimensionEvent.hasResult();
 ```
 
-### неотменяемый
+### isCancelable
 
-Определите, если эта функция вообще недоступна. Возвращается: `Если доступ к установленной отмене должен быть разрешен
- Примечание:
- События с отменяемой аннотацией будут иметь этот метод автоматически добавлены для возврата истины.`
-
-Возвращает boolean
-
-```zenscript
-myMCPlayerChangedDimension.isCancelable();
-```
-
-### отменено
-
-Определяет, отменено ли это событие и должно прекратить выполнение. Возвращение: `Текущее состояние отменено`
+Determine if this function is cancelable at all. Returns: `If access to setCanceled should be allowed
+ Note:
+ Events with the Cancelable annotation will have this method automatically added to return true.`
 
 Возвращает boolean
 
 ```zenscript
-myMCPlayerChangedDimension.isCancel();
+myMCPlayerChangedDimensionEvent.isCancelable();
 ```
 
-### установка отменена
+### isCanceled
+
+Determine if this event is canceled and should stop executing. Returns: `The current canceled state`
+
+Возвращает boolean
 
 ```zenscript
-myMCPlayerChangedDimensionEvent.setCancel(отменить как boolean);
+myMCPlayerChangedDimensionEvent.isCanceled();
 ```
 
-| Параметр | Тип     | Описание             |
+### setCanceled
+
+```zenscript
+myMCPlayerChangedDimensionEvent.setCanceled(cancel as boolean);
+```
+
+| Параметр | Тип     | Description          |
 | -------- | ------- | -------------------- |
-| отменить | boolean | Описание отсутствует |
+| cancel   | boolean | Описание отсутствует |
 
 
 
