@@ -1,22 +1,22 @@
-# Nave
+# Vessel
 
-## Addizione
+## Addition
 
 ```zenscript
 import mods.cuisine.Vessel;
 
-// Tutti i parametri denominati 'extra' si riferiscono all'input aggiuntivo.
+// All parameter named 'extra' refers to the extra input.
 Vessel.add(IItemStack input, ILiquidStack inputFluid, IItemStack output, ILiquidStack outputFluid, IItemStack extra);
-Nave. dd(IItemStack input, ILiquidStack inputFluid, IItemStack output, ILiquidStack outputFluid, IOreDictEntry extra);
+Vessel.add(IItemStack input, ILiquidStack inputFluid, IItemStack output, ILiquidStack outputFluid, IOreDictEntry extra);
 Vessel.add(IOreDictEntry input, ILiquidStack inputFluid, IItemStack output, ILiquidStack outputFluid, IItemStack extra);
-Vessel. dd(IOreDictEntry input, ILiquidStack inputFluid, IItemStack output, ILiquidStack outputFluid, IOreEntry extra);
+Vessel.add(IOreDictEntry input, ILiquidStack inputFluid, IItemStack output, ILiquidStack outputFluid, IOreEntry extra);
 Vessel.add(IItemStack input, ILiquidStack inputFluid, IItemStack output, ILiquidStack outputFluid);
-Vessel. dd(IOreEntry input, ILiquidStack inputFluid, IItemStack output, ILiquidStack outputFluid);
+Vessel.add(IOreEntry input, ILiquidStack inputFluid, IItemStack output, ILiquidStack outputFluid);
 
 Vessel.add(<item:minecraft:dirt>, <liquid:water> * 1000, <item:minecraft:diamond>, null);
 ```
 
-## Rimozione
+## Removal
 
 ```zenscript
 import mods.cuisine.Vessel;
@@ -34,6 +34,6 @@ Vessel.remove();
 
 Vessel.remove("recipe_name");
 
-// Rimuovi tutto!
+// Remove everything!
 Vessel.removeAll();
 ```
