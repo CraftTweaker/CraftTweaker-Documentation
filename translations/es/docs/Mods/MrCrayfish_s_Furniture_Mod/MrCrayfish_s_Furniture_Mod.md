@@ -1,9 +1,9 @@
-# ► Mod de mueble de Crayfish
+# MrCrayfish's Furniture Mod
 
-☆ El Mod de Muebles de Crayfish añade piezas únicas de muebles que se pueden utilizar para decorar sus edificios, algunos de ellos son aparatos e implementos utilizables.
+MrCrayfish's Furniture Mod adds unique pieces of furniture that you can use to decorate your builds, some of them are useable appliances and implements.
 
-Aunque la documentación incluye recetas predeterminadas, por favor consulte el libro de recetas de mod para las recetas actualizadas.
+Although the documentation includes default recipes, please refer to the mod recipe book for the up to date recipes.
 
-# Nota Importante
+# Important Note
 
-Las entradas sólo coinciden con el id del artículo y los metadatos; el cursor es ignorado.
+Inputs are matched only on item id and metadata, nbt is ignored.
