@@ -1,34 +1,34 @@
 # MCBlockState
 
-crafttweakerのmod-idを持つmodによって追加されているクラスです。 従って、この機能を利用する場合はこのmodをインストールする必要があります。
+This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
 
-## クラスのインポート
-問題が発生した場合には、インポートが必要になります。とはいえ、お手数ですが予めインポートしておくほうが安全です。
+## Importing the class
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
 ```zenscript
 crafttweaker.api.block.MCBlockState
 ```
 
-## 実装されたインターフェース
-MCBlockState は以下のインターフェースを実装しています。 つまり、利用可能な任意のメソッドはこのクラスでも使用できます。
-- [craftweaker.api.brackets.CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
+## Implemented Interfaces
+MCBlockState implements the following interfaces. That means any method available to them can also be used on this class.
+- [crafttweaker.api.brackets.CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
 
-## メソッド
+## Methods
 ### getAllowedValuesForProperty
 
-返品リスト<String>
+Returns List<String>
 
 ```zenscript
 myMCBlockState.getAllowedValuesForProperty(name as String);
 ```
 
-| パラメータ | タイプ  | 説明           |
-| ----- | ---- | ------------ |
-| name  | 文字列型 | 説明が提供されていません |
+| Parameter | Type | Description             |
+| --------- | ---- | ----------------------- |
+| name      | 文字列型 | No description provided |
 
 
 ### getProperties
 
-戻り値文字列[String]
+Returns String[String]
 
 ```zenscript
 myMCBlockState.getProperties();
@@ -36,7 +36,7 @@ myMCBlockState.getProperties();
 
 ### getPropertyNames
 
-返品リスト<String>
+Returns List<String>
 
 ```zenscript
 myMCBlockState.getPropertyNames();
@@ -44,62 +44,62 @@ myMCBlockState.getPropertyNames();
 
 ### getPropertyValue
 
-戻り値の文字列
+Returns String
 
 ```zenscript
 myMCBlockState.getPropertyValue(name as String);
 ```
 
-| パラメータ | タイプ  | 説明           |
-| ----- | ---- | ------------ |
-| 名前    | 文字列型 | 説明が提供されていません |
+| Parameter | Type   | Description             |
+| --------- | ------ | ----------------------- |
+| name      | String | No description provided |
 
 
 ### hasProperty
 
-戻り値ブール値
+Returns boolean
 
 ```zenscript
 myMCBlockState.hasProperty(name as String);
 ```
 
-| パラメータ | タイプ  | 説明           |
-| ----- | ---- | ------------ |
-| 名前    | 文字列型 | 説明が提供されていません |
+| Parameter | Type   | Description             |
+| --------- | ------ | ----------------------- |
+| name      | String | No description provided |
 
 
 ### withProperty
 
-戻り値 [crafttweaker.api.block.MCBlockState](/vanilla/api/blocks/MCBlockState)
+Returns [crafttweaker.api.block.MCBlockState](/vanilla/api/blocks/MCBlockState)
 
 ```zenscript
 myMCBlockState.withProperty(name as String, value as String);
 ```
 
-| パラメータ | タイプ  | 説明           |
-| ----- | ---- | ------------ |
-| 名前    | 文字列型 | 説明が提供されていません |
-| 値     | 文字列型 | 説明が提供されていません |
+| Parameter | Type   | Description             |
+| --------- | ------ | ----------------------- |
+| name      | String | No description provided |
+| value     | String | No description provided |
 
 
 
-## プロパティー
+## Properties
 
-| 名称              | タイプ                                                           | ゲッターあり | セッターあり |
-| --------------- | ------------------------------------------------------------- | ------ | ------ |
-| ブロック            | [crafttweaker.api.block.MCBlock](/vanilla/api/blocks/MCBlock) | true   | false  |
-| canProvidePower | boolean型                                                      | true   | false  |
-| commandString   | 文字列型                                                          | true   | false  |
-| hasTileEntity   | boolean型                                                      | true   | false  |
-| isSolid         | boolean型                                                      | true   | false  |
-| isSticky        | boolean型                                                      | true   | false  |
-| lightLevel      | int                                                           | true   | false  |
-| ticsRandomly    | boolean型                                                      | true   | false  |
+| 名称              | Type                                                          | Has Getter | Has Setter |
+| --------------- | ------------------------------------------------------------- | ---------- | ---------- |
+| block           | [crafttweaker.api.block.MCBlock](/vanilla/api/blocks/MCBlock) | true       | false      |
+| canProvidePower | boolean型                                                      | true       | false      |
+| commandString   | String                                                        | true       | false      |
+| hasTileEntity   | boolean型                                                      | true       | false      |
+| isSolid         | boolean型                                                      | true       | false      |
+| isSticky        | boolean型                                                      | true       | false      |
+| lightLevel      | int                                                           | true       | false      |
+| ticksRandomly   | boolean型                                                      | true       | false      |
 
-## キャスト
+## Casters
 
-| 結果の種類                                                         | 暗黙的   |
-| ------------------------------------------------------------- | ----- |
-| 文字列型                                                          | false |
-| [crafttweaker.api.block.MCBlock](/vanilla/api/blocks/MCBlock) | true  |
+| Result type                                                   | Is Implicit |
+| ------------------------------------------------------------- | ----------- |
+| String                                                        | false       |
+| [crafttweaker.api.block.MCBlock](/vanilla/api/blocks/MCBlock) | true        |
 
