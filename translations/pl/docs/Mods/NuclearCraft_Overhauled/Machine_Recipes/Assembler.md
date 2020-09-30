@@ -1,16 +1,16 @@
-# Montaż
+# Assembler
 
-## Importowanie pakietu
-`mods.nuclearcraft.Montaż`
+## Importing the Package
+`mods.nuclearcraft.Assembler`
 
-## Dodawanie przepisów
+## Adding Recipes
 ```zenscript
-mods.nuclearcraft.Assembler.addRecipe(ISkładnik itemInput1, ISkładnik itemInput2, ISkładnik itemInput3, ISkładnik itemInput4, ISkładnik itemInput4, ISkładnik itemOutput, @Opcjonalny podwójny timeMultiplier, @Opcjonalny podwójny Mnożnik mocy, @Opcjonalny podwójny proces);
+mods.nuclearcraft.Assembler.addRecipe(IIngredient itemInput1, IIngredient itemInput2, IIngredient itemInput3, IIngredient itemInput4, IIngredient itemOutput, @Optional double timeMultiplier, @Optional double powerMultiplier, @Optional double processRadiation);
 ```
 
-## Usuwanie przepisów
+## Removing Recipes
 ```zenscript
-mods.nuclearcraft.Assembler.removeRecipeWithInput(ISkładnik itemInput1, ISkładnik itemInput2, ISkładnik itemInput3, ISkładnik itemInput4);
+mods.nuclearcraft.Assembler.removeRecipeWithInput(IIngredient itemInput1, IIngredient itemInput2, IIngredient itemInput3, IIngredient itemInput4);
 mods.nuclearcraft.Assembler.removeRecipeWithOutput(IIngredient itemOutput);
 mods.nuclearcraft.Assembler.removeAllRecipes();
 ```
