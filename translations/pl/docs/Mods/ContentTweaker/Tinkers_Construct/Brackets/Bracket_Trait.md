@@ -1,8 +1,8 @@
-# Obsługa nawiasów cech
+# Trait Bracket Handler
 
-Jedynym celem obsługi nawiasów Cechy jest dostarczenie [Reprezentacji Cechy](/Mods/ContentTweaker/Tinkers_Construct/Trait/).
+The Trait Bracket handler's sole purpose is providing you with [Trait Representations](/Mods/ContentTweaker/Tinkers_Construct/Trait/).
 
-Używasz uchwytu wspornika cechowego w następujący sposób:
+You use the trait bracket handler like this:
 
 ```zenscript
 <ticontrait:identifier>
@@ -10,4 +10,4 @@ Używasz uchwytu wspornika cechowego w następujący sposób:
 <ticontrait:cactus>
 ```
 
-Jeśli Cecha zostanie znaleziona, zwróci to obiekt reprezentacji Cechy. Please refer to the [respective Wiki entry](/Mods/ContentTweaker/Tinkers_Construct/Trait/) for further information on what you can do with these.
+If the Trait is found, this will return an Trait Representation Object. Please refer to the [respective Wiki entry](/Mods/ContentTweaker/Tinkers_Construct/Trait/) for further information on what you can do with these.
