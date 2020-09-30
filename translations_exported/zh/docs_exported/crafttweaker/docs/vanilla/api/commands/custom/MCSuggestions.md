@@ -17,13 +17,13 @@ craftbiner.api.commands.custom.MCSuggestions
 crafttbiner.api.commands.custom.MCSuggestions.create(命令作为字符串，建议作为收藏集<crafttweaker.api.commands.custom.MCSuggestion>)；
 ```
 
-| 参数 | 类型                                                                                                               | 描述                      |
-| -- | ---------------------------------------------------------------------------------------------------------------- | ----------------------- |
-| 命令 | 字符串[string]                                                                                                      | No description provided |
-| 建议 | 收藏&lt;[craftmiliter.api.commands.custom.MCSuggestion](/vanilla/api/commands/custom/MCSuggestion)&gt; | No description provided |
+| 参数      | 类型                                                                                                               | 描述                      |
+| ------- | ---------------------------------------------------------------------------------------------------------------- | ----------------------- |
+| command | String                                                                                                           | No description provided |
+| 建议      | 收藏&lt;[craftmiliter.api.commands.custom.MCSuggestion](/vanilla/api/commands/custom/MCSuggestion)&gt; | No description provided |
 
 
-### 空的
+### empty
 
 返回类型： [craftbiner.api.commands.custom.MCSuggestions](/vanilla/api/commands/custom/MCSuggestions)
 
@@ -33,15 +33,15 @@ crafttbiner.api.commands.custom.MCSuggestions.empty();
 
 ### equals #等于
 
-返回类型：布尔值
+Return type: boolean
 
 ```zenscript
 myMCSuggestions.equals(o as Object);
 ```
 
-| 参数 | 类型 | 描述                      |
-| -- | -- | ----------------------- |
-| o  | 对象 | No description provided |
+| 参数 | 类型     | 描述                      |
+| -- | ------ | ----------------------- |
+| o  | Object | No description provided |
 
 
 ### getList
@@ -62,7 +62,7 @@ myMCSuggestions.getRange();
 
 ### hashCode
 
-返回类型：int
+Return type: int
 
 ```zenscript
 myMCSuggestions.hashCode();
@@ -70,7 +70,7 @@ myMCSuggestions.hashCode();
 
 ### isEmpty
 
-返回类型：布尔值
+Return type: boolean
 
 ```zenscript
 myMCSuggestions.isEmpty();
@@ -86,13 +86,13 @@ crafttbiner.api.commands.custom.MCSuggestions.merge(命令字符串，输入为�
 
 | 参数        | 类型                                                                                                                 | 描述                      |
 | --------- | ------------------------------------------------------------------------------------------------------------------ | ----------------------- |
-| 命令        | 字符串[string]                                                                                                        | No description provided |
+| command   | String                                                                                                             | No description provided |
 | input（输入） | 收藏&lt;[craftmiliter.api.commands.custom.MCSuggestions](/vanilla/api/commands/custom/MCSuggestions)&gt; | No description provided |
 
 
 ### toString
 
-返回类型：字符串
+Return type: String
 
 ```zenscript
 myMCSuggestions.toString();
@@ -106,13 +106,13 @@ myMCSuggestions.toString();
 myMCSuggestions == o 为对象
 ```
 
-| 参数 | 类型 | 描述                      |
-| -- | -- | ----------------------- |
-| o  | 对象 | No description provided |
+| 参数 | 类型     | 描述                      |
+| -- | ------ | ----------------------- |
+| o  | Object | No description provided |
 
-## 卡斯特尔
+## Casters
 
-| 结果类型        | 是否隐藏 |
-| ----------- | ---- |
-| 字符串[string] | true |
+| 结果类型   | 是否隐藏 |
+| ------ | ---- |
+| String | true |
 
