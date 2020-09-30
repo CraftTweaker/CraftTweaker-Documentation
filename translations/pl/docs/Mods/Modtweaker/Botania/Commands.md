@@ -1,154 +1,154 @@
-# Polecenia
+# Commands
 
-ModTweaker's Botania Integration rozszerza paletę poleceń dostarczoną przez CraftTweaker.  
-Aby uzyskać dostęp do tych poleceń, robisz to samo co dla poleceń CraftTweaker, używasz prefiksu `/crafttweaker`
+ModTweaker's Botania Integration extends the command palette provided by CraftTweaker.  
+To access these commands you do the same as you do for CraftTweaker commands, you use the `/crafttweaker` prefix
 
-# Lista słabszych poleceń modyfikacji w Botanii
+# List of Botania Mod Tweaker Commands
 
-## Przepisy
+## Recipes
 
-### browary botbrowe
+### botbrews
 
-Użycie:
+Usage:
 
 `/crafttweaker botbrews`
 
 `/ct botbrews`
 
-Opis:
+Description:
 
-Wyswietla listę wszystkich zarejestrowanych Brewów Botanii do pliku crafttweaker.log.
+Outputs a list of all registered Botania Brews to the crafttweaker.log file.
 
 ### botorechid
 
-Użycie:
+Usage:
 
 `/crafttweaker botorechid`
 
 `/ct botorechid`
 
-Opis:
+Description:
 
-Wyswietla listę wszystkich zarejestrowanych rud Orechid oraz ich możliwości generowania w pliku crafttweaker.log.
+Outputs a list of all registered Orechid ores as well as their generation chances to the crafttweaker.log file.
 
 ### botania apothecary
 
-Użycie:
+Usage:
 
 `/crafttweaker botania apothecary`
 
-`/e apothecary botania`
+`/ct botania apothecary`
 
-Opis:
+Description:
 
-Wyświetla listę wszystkich przepisów rejestracyjnych apothecary do pliku crafttweaker.log.
+Outputs a list of all registerd apothecary recipes to the crafttweaker.log file.
 
-### Orzechy palmowe
+### botania brews
 
-Użycie:
+Usage:
 
-`/craftttweaker botania brews`
+`/crafttweaker botania brews`
 
-`/pl/pl/brokuły botaniczne`
+`/ct botania brews`
 
-Opis:
+Description:
 
-Wyswietla listę wszystkich zapisów do pliku crafttweaker.log.
+Outputs a list of all registerd brewing recipes to the crafttweaker.log file.
 
 ### botania trades
 
-Użycie:
+Usage:
 
 `/crafttweaker botania trades`
 
-`/uj transakcje botaniczne`
+`/ct botania trades`
 
-Opis:
+Description:
 
-Wyswietla listę wszystkich przepisów handlu z elvenami rejestrującymi do pliku crafttweaker.log.
+Outputs a list of all registerd elven trade recipes to the crafttweaker.log file.
 
 ### botania infusions
 
-Użycie:
+Usage:
 
 `/crafttweaker botania infusions`
 
-`/l infuzje botanii`
+`/ct botania infusions`
 
-Opis:
+Description:
 
-Wystawia listę wszystkich receptur na infuzję many rejestrowanej do pliku crafttweaker.log.
+Outputs a list of all registerd mana infusion recipes to the crafttweaker.log file.
 
 ### botania daisy
 
-Użycie:
+Usage:
 
 `/crafttweaker botania daisy`
 
 `/ct botania daisy`
 
-Opis:
+Description:
 
-Wyświetla listę wszystkich przepisów rejestracyjnych czystej daisy do pliku crafttweaker.log.
+Outputs a list of all registerd pure daisy recipes to the crafttweaker.log file.
 
 ### botania altar
 
-Użycie:
+Usage:
 
 `/crafttweaker botania altar`
 
-`/l ołtarz botaniczny`
+`/ct botania altar`
 
-Opis:
+Description:
 
-Wyswietla listę wszystkich zapisów botanicznych rejestru do pliku crafttweaker.log.
+Outputs a list of all registerd botania altar recipes to the crafttweaker.log file.
 
 ## Lexica Botania
 
 ### botlexcats
 
-Użycie:
+Usage:
 
 `/crafttweaker botlexcats`
 
 `/ct botlexcats`
 
-Opis:
+Description:
 
-Wyświetla listę wszystkich kategorii zarejestrowanych lexiconów do pliku crafttweaker.log.
+Outputs a list of all registerd botania lexicon categories to the crafttweaker.log file.
 
-### wpisy botlexentów
+### botlexentries
 
-Użycie:
+Usage:
 
-`/stwórz słabsze botlexentries`
+`/crafttweaker botlexentries`
 
 `/ct botlexentries`
 
-Opis:
+Description:
 
-Wyświetla listę wszystkich wpisów do pliku crafttweaker.log z rejestru botanii.
+Outputs a list of all registerd botania lexicon entries to the crafttweaker.log file.
 
-### botlextypy
+### botlextypes
 
-Użycie:
+Usage:
 
 `/crafttweaker botlextypes`
 
-`/e/e/botlextypes`
+`/ct botlextypes`
 
-Opis:
+Description:
 
-Wyswietla listę wszystkich typów wiedzy zarejestrowanych botania lexicon do pliku crafttweaker.log.
+Outputs a list of all registerd botania lexicon knowledge types to the crafttweaker.log file.
 
-### strony botlexpage
+### botlexpages
 
-Użycie:
+Usage:
 
-`/stwórz słabsze strony botlexpage`
+`/crafttweaker botlexpages`
 
-`/_botlexpage`
+`/ct botlexpages`
 
-Opis:
+Description:
 
-Wyświetla listę wszystkich stron lexicon registerd botania do pliku crafttweaker.log.
+Outputs a list of all registerd botania lexicon pages to the crafttweaker.log file.
