@@ -1,23 +1,23 @@
 # MCMaterial
 
-Diese Klasse wurde von einer Mod mit mod-id `crafttweaker` hinzugefügt. Wenn Sie diese Funktion nutzen möchten, müssen Sie diese Mod installiert haben.
+This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
 
 ## Diese Klasse importieren
-Es kann erforderlich sein, dass Sie das Paket importieren, wenn Sie irgendwelche Probleme haben (wie zum Beispiel ein Array zu bearbeiten), also besser sicher sein als bedauern und fügen Sie den Import.
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
 ```zenscript
 crafttweaker.api.block.material.MCMaterial
 ```
 
-## Implementierte Schnittstellen
-MCMaterial implementiert die folgenden Schnittstellen. Das bedeutet, dass jede ihnen zur Verfügung stehende Methode auch in dieser Klasse verwendet werden kann.
+## Implemented Interfaces
+MCMaterial implementiert die folgenden Schnittstellen. That means any method available to them can also be used on this class.
 - [crafttweaker.api.brackets.CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
 
 ## Methoden
-### blocksbewegung
+### blocksMovement
 
-Gibt zurück, wenn dieses Material als solide betrachtet wird oder nicht
+Returns if this material is considered solid or not
 
-Rückgabetyp: boolesch
+Return type: boolean
 
 ```zenscript
 myMCMaterial.blocksMovement();
@@ -25,7 +25,7 @@ myMCMaterial.blocksMovement();
 
 ### getColor
 
-Ruft den Farbindex des Blocks ab. Dies ist die gleiche Farbe, die Vanille-Karten verwenden, um diesen Block zu repräsentieren.
+Retrieves the color index of the block. This is is the same color used by vanilla maps to represent this block.
 
 Rückgabetyp: MCMaterialColor
 
@@ -33,11 +33,11 @@ Rückgabetyp: MCMaterialColor
 myMCMaterial.getColor();
 ```
 
-### isistimmend
+### isFlammable
 
-Gibt zurück, wenn der Block brennen kann oder nicht.
+Returns if the block can burn or not.
 
-Rückgabetyp: boolesch
+Return type: boolean
 
 ```zenscript
 myMCMaterial.isFlammable();
@@ -45,9 +45,9 @@ myMCMaterial.isFlammable();
 
 ### isLiquid
 
-Gibt zurück, wenn Blöcke dieser Materialien Flüssigkeiten sind.
+Returns if blocks of these materials are liquids.
 
-Rückgabetyp: boolesch
+Return type: boolean
 
 ```zenscript
 myMCMaterial.isLiquid();
@@ -55,38 +55,38 @@ myMCMaterial.isLiquid();
 
 ### isOpaque
 
-Zeigt an, ob das Material undurchsichtig ist
+Indicate if the material is opaque
 
-Rückgabetyp: boolesch
+Return type: boolean
 
 ```zenscript
 myMCMaterial.isOpaque();
 ```
 
-### unveränderbar
+### isReplaceable
 
-Gibt zurück, ob das Material durch andere Blöcke ersetzt werden kann, wenn es platziert wird - zB Schnee, Reben und großes Gras.
+Returns whether the material can be replaced by other blocks when placed - eg snow, vines and tall grass.
 
-Rückgabetyp: boolesch
+Return type: boolean
 
 ```zenscript
-myMCMaterial.isErsetzbar();
+myMCMaterial.isReplaceable();
 ```
 
 ### isSolid
 
-Gibt wahr aus, wenn der Block als solide gilt. Dies ist standardmäßig der Fall.
+Returns true if the block is a considered solid. This is true by default.
 
-Rückgabetyp: boolesch
+Return type: boolean
 
 ```zenscript
 myMCMaterial.isSolid();
 ```
 
 
-## Eigenschaften
+## Properties
 
-| Name          | Type   | Hat Getter | Hat Setter |
+| Name          | Type   | Has Getter | Has Setter |
 | ------------- | ------ | ---------- | ---------- |
-| Kommandozeile | String | true       | false      |
+| commandString | String | true       | false      |
 
