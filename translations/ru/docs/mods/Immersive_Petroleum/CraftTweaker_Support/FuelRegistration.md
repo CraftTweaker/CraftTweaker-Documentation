@@ -1,11 +1,11 @@
-# Регистрация топлива
+# Fuel Registration
 
 ## Топливо регистратора
 
 | Название   | Тип                                         |
 | ---------- | ------------------------------------------- |
 | Жидкости/т | [Fluidstack](/Vanilla/Liquids/IFluidStack/) |
-| Flux/t     | Целое                                       |
+| Flux/t     | Integer                                     |
 
 Пример:
 ```ZenScript
@@ -14,7 +14,7 @@
 mods.immersivepetroleum.FuelRegistry.registerGeneratorFuel(<fluid:minecraft:water> * 180, 64); // Использование 180mB per Tick
 ```
 
-## Реестр моторного топлива
+## registerMotorboatFuel
 
 | Название   | Тип                                         |
 | ---------- | ------------------------------------------- |
