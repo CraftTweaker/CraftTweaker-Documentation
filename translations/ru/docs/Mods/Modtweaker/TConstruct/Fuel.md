@@ -1,25 +1,25 @@
-# Топливо
+# Fuel
 
-Пакет `топлива` позволяет добавлять жидкость к жидкости из плавильного топлива.
+The `Fuel` package allows you to add Smeltery fuel fluids.
 
-## Звонок
+## Calling
 
-Вы можете вызвать пакет Alloy, используя `mods.tconstruct.Fuel`
+You can call the Alloy package using `mods.tconstruct.Fuel`
 
-## Добавить Топливные Рецепты
+## Add Fuel Recipes
 
 ```zenscript
-//mods.tconstruct.Fuel.registerFuel(ILiquidStack топливо, внутренняя продолжительность);
+//mods.tconstruct.Fuel.registerFuel(ILiquidStack fuel, int duration);
 mods.tconstruct.Fuel.registerFuel(<liquid:water> * 2, 300);
 ```
 
-Параметры:
+Parameters:
 
-- [ILiquidStack](/Vanilla/Liquids/ILiquidStack/) топливо → жидкость. Сумма - минимальный прирост за один раз.
-- int длительность → Сколько тактов длится потребляемый пион fluidStack.
+- [ILiquidStack](/Vanilla/Liquids/ILiquidStack/) fuel → The fluid. Amount is the minimal increment that is consumed at once.
+- int duration → How many ticks the consumtpion of the fluidStack lasts.
 
-### Рассмотрите следующее:
+### Consider this:
 
 - The [ILiquidStack's](/Vanilla/Liquids/ILiquidStack/) amount is the minimal increment that is consumed at once (e.g. the smeltery only consumes 2 mB at once).
-- Продолжительность, сколько тиков длится один стек жидкости.
-- Вы не можете установить температуру в плавильной плавильне. Используйте [ILiquidDefinition](/Vanilla/Liquids/ILiquidDefinition/) ZenSetter, чтобы изменить температуру жидкости заранее!
+- The duration is how many ticks one fluid stack lasts.
+- You cannot set the temperature the fluid is going to have in the smeltery. Use an [ILiquidDefinition's](/Vanilla/Liquids/ILiquidDefinition/) ZenSetter to change the fluid's temperature beforehand!
