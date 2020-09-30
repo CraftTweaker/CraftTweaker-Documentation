@@ -1,23 +1,23 @@
-# Ołtarz Runy
+# Rune Altar
 
-Pakiet Runeołtarza jest używany do dodawania lub usuwania przepisów do/z Altarza Ruy Botanicznej.
+The RuneAltar package is used for adding or removing recipes to/from the Botania Rune Altar.
 
-## Dzwonienie
+## Calling
 
-Możesz wywołać pakiet RuneAltar używając `mods.botania.Runeołtar`
+You can call the RuneAltar package using `mods.botania.RuneAltar`
 
-## Znajdź wszystkie zarejestrowane przepisy
+## Find all registered Recipes
 
-Wszystkie zarejestrowane przepisy na ołtarzu Rune można znaleźć używając [`/ct botania`](/Mods/Modtweaker/Botania/Commands/).
+You can find all registered Rune Altar recipes using [`/ct botania altar`](/Mods/Modtweaker/Botania/Commands/).
 
-## Dodanie przepisu
+## Recipe addition
 
 ```zenscript
-//mods.botania.RuneAltar.addRecipe(wyjście IItemStack, IIngredient[] wejścia, int mana);
+//mods.botania.RuneAltar.addRecipe(IItemStack output, IIngredient[] input, int mana);
 mods.botania.RuneAltar.addRecipe(<minecraft:planks>,[<minecraft:grass>, <minecraft:dirt>], 200);
 ```
 
-## Usuwanie przepisów
+## Recipe removal
 
 ```zenscript
 //mods.botania.RuneAltar.removeRecipe(IIngredient output);
