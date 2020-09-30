@@ -1,6 +1,6 @@
-# Befehle
+# Commands
 
-Hier sind die Befehle, die wichtig sind:
+Here are the commands that matter:
 ```
 /ct hand
 ```
@@ -8,19 +8,19 @@ Hier sind die Befehle, die wichtig sind:
 /ct log
 ```
 ```
-/ct Skripte
+/ct scripts
 ```
 ```
-/ct Tickets
+/ct issues
 ```
 ```
 /ct discord
 ```
 ```
-/ct Dump
+/ct dump
 ```
 ```
-/ct Rezepttypen
+/ct recipeTypes
 ```
 ```
 /ct help
