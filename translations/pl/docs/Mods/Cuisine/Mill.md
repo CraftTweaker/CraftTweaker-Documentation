@@ -1,22 +1,22 @@
-# Młyn
+# Mill
 
-## Dodanie
+## Addition
 
 ```zenscript
-importuj mods.cuisine.Mill;
+import mods.cuisine.Mill;
 
-Mill.add(IIngredient inputFluid, ILiquidStack inputFluid, IItemStack output, ILiquidStack outputFluid);
+Mill.add(IIngredient input, ILiquidStack inputFluid, IItemStack output, ILiquidStack outputFluid);
 
-Mill. dd(<item:minecraft:dirt> * 2, null, <item:minecraft:diamond>, null);
-Mill. dd(<ore:cobblestone> * 4, <liquid:water> * 1000, null, <liquid:lava> * 1000);
+Mill.add(<item:minecraft:dirt> * 2, null, <item:minecraft:diamond>, null);
+Mill.add(<ore:cobblestone> * 4, <liquid:water> * 1000, null, <liquid:lava> * 1000);
 ```
 
-## Usuwanie
+## Removal
 
 ```zenscript
-importuj mods.cuisine.Mill;
+import mods.cuisine.Mill;
 
-// Usuń przez wejście.
+// Remove by input.
 Mill.remove(IItemStack input, ILiquidStack inputFluid);
 Mill.remove(IOreEntry input, ILiquidStack inputFluid);
 
@@ -28,6 +28,6 @@ Mill.remove(String id);
 
 Mill.remove("recipe_name");
 
-// Usuń wszystko!
+// Remove everything!
 Mill.removeAll();
 ```
