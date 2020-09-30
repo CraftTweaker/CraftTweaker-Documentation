@@ -1,68 +1,68 @@
-# Four à four
+# Kiln
 
-Le four est un four multibloc utilisé pour le traitement rapide des blocs de construction, qui peuvent être acquis en fondant quelque chose dans un four.
+The Kiln is a multiblock used for quickly processing building blocks, that can be acquired through smelting something in a furnace.
 
-## Paquet
+## Package
 `mods.atum.Kiln;`
 
-## Liste noire
+## Blacklist
 
-Les recettes de fours sont basées sur les recettes de fours à la vanille, en plus de construire des blocs. La liste noire est un moyen pour vous de minimiser davantage les recettes saisies dans le four à vanille.
+The Kiln recipes are based on the vanilla Furnaces recipes, sorting out everything besides building blocks. The blacklist is a way for you to further minimize what recipes are grabbed from the vanilla Furnace.
 
 `mods.atum.Kiln.blacklist(id);`
 
-- `id` Un identifiant d'espace de noms pour le bloc/élément d'entrée qui doit être mis en liste noire.
+- `id` A namespaced ID for the input block/item that should be blacklisted.
 
-Supprime le(s) recette(s) avec l'objet/bloc spécifié dans les recettes que le four tirera du four à vanille
+Removes the recipe(s) with the specified item/block from the recipes the Kiln will pull from the vanilla Furnace
 
 ```zenscript
 mods.atum.Kiln.blacklist("minecraft:cobblestone");
 ```
 
-## Ajout d'une recette
+## Adding a Recipe
 
-`mods.atum.Kiln.addRecipe(entrée, sortie, expérience, @cookTime);`
+`mods.atum.Kiln.addRecipe(input, output, experience, @Optional cookTime);`
 
 - `input` [IItemStack](/vanilla/api/items/IItemStack)
 - `output` [IItemStack](/vanilla/api/items/IItemStack)
-- `expérience` Nombre flottant
-- `cookTime` Nombre entier (si laissé vide, il sera par défaut à 75)
+- `experience` Float number
+- `cookTime` Integer number (If left empty, it'll default to 75)
 
-Ajoute une recette avec l'entrée spécifiée, sortie, expérience & temps de cuisson
+Adds a recipe with the specified input, output, experience & cook time
 
 ```zenscript
 mods.atum.Kiln.addRecipe(<item:atum:dirty_bone_block>, <item:atum:alabaster>, 0.2);
 ```
 
-## Suppression d'une recette
+## Removing a Recipe
 
-Les méthodes d'enlèvement ne fonctionnent que pour les recettes ajoutées spécifiquement pour le four par Atum (Ou d'autres mods) Par défaut dans Atum, cela ne sera que la recette de bloc Marl to White Ceramic Tile Block. Si vous souhaitez supprimer autre chose, vous êtes probablement à la recherche de la liste noire (documentation ci-dessus)
+The removal methods only work for recipes added specifically for the Kiln by Atum (Or other mods) By default in Atum this will only be the Marl to White Ceramic Tile Block recipe. If you wish to remove something else, you're probably looking for the blacklist (Documentation above)
 
-### Supprimer les recettes par sortie
+### Remove Recipes by Output
 
 `mods.atum.Kiln.removeRecipeByOutput(output);`
 
 - `output` [IItemStack](/vanilla/api/items/IItemStack)
 
-Supprime toutes les recettes où le résultat de sortie est le [IItemStack](/vanilla/api/items/IItemStack) fourni.
+Removes all recipes where the output result is the provided [IItemStack](/vanilla/api/items/IItemStack).
 
 ```zenscript
 mods.atum.Kiln.removeRecipeByOutput(<item:atum:marl>);
 ```
 
-### Supprimer les recettes par sortie & Entrée
+### Remove Recipes by Output & Input
 
-`mods.atum.Kiln.removeRecipeByOutputInput(sortie, entrée);`
+`mods.atum.Kiln.removeRecipeByOutputInput(output, input);`
 
 - `output` [IItemStack](/vanilla/api/items/IItemStack)
 - `input` [IItemStack](/vanilla/api/items/IItemStack)
 
-Supprime la recette spécifique, avec la sortie & entrée spécifiée
+Removes the specific recipe, with the specified output & input
 
 ```zenscript
 mods.atum.Kiln.removeRecipeByOutputInput(<item:atum:cermic_white>, <item:atum:marl>);
 ```
 
-### Autres méthodes de suppression
+### Other removal methods
 
-Voir [Gestionnaires de recettes](/recipes/recipe_managers) pour d'autres façons de supprimer les recettes de roue tournante
+See [Recipe Managers](/recipes/recipe_managers) for other ways to remove Spinning Wheel recipes
