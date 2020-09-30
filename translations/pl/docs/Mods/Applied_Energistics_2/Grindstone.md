@@ -1,20 +1,20 @@
 # Grindstone
 
-### Importowanie
+### Importing
 
 ```zenscript
-mody.applied iedenergistics2.Grinder;
+import mods.appliedenergistics2.Grinder;
 ```
 
-### Dodawanie
+### Adding
 
 ```zenscript
 Grinder.addRecipe(IItemStack output, IItemStack input, int turns, @Optional IItemStack secondary1Output, @Optional float secondary1Chance, @Optional IItemStack secondary2Output, @Optional float secondary2Chance);
 
-Grinder. ddRecype(<minecraft:sapling>, <minecraft:leaves>, 4, <minecraft:sapling:5>, 0.3);
+Grinder.addRecipe(<minecraft:sapling>, <minecraft:leaves>, 4, <minecraft:sapling:5>, 0.3);
 ```
 
-### Usuwanie
+### Removing
 
 ```zenscript
 Grinder.removeRecipe(IItemStack input);
