@@ -1,19 +1,19 @@
-# フリーザー
+# Freezer
 
-*freezer* パッケージは、フリーザーへのレシピの追加や削除に使用されます。
+The *freezer* package is used for adding or removing recipes to/from the Freezer.
 
-## 発信中
+## Calling
 
-*mods.skyresources.freezer* を使用して `freezer` パッケージを呼び出すことができます。
+You can call the *freezer* package using `mods.skyresources.freezer`
 
-## レシピの追加
+## Recipe Addition
 
 ```zenscript
-//mods.skyresources.freezer.addRecipe(IItemStack 出力, IItemStack 入力, int ticks);
+//mods.skyresources.freezer.addRecipe(IItemStack output, IItemStack input, int ticks);
 mods.skyresources.freezer.addRecipe(<minecraft:ice>, <minecraft:dirt>, 900);
 ```
 
-## レシピの削除
+## Recipe Removal
 
 ```zenscript
 //mods.skyresources.freezer.removeRecipe(IItemStack output);
