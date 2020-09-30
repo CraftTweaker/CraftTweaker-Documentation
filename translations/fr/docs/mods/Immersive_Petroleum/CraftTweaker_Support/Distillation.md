@@ -1,38 +1,38 @@
 # Distillation
 
-## Enlever
+## remove
 
-| Nom               | Type de texte        |
-| ----------------- | -------------------- |
-| Nom de la recette | Chaîne de caractères |
+| Name              | Type   |
+| ----------------- | ------ |
+| Nom de la recette | String |
 
-Exemple:
+Example:
 ```ZenScript
 // mods.immersivepetroleum.DistillationTower.remove(String recipeName);
 
 mods.immersivepetroleum.DistillationTower.remove("oilcracking");
 ```
 
-## Retirer tout
+## removeAll
 
-| Nom | Type de texte |
-| --- | ------------- |
-|     |               |
+| Name | Type |
+| ---- | ---- |
+|      |      |
 
-Exemple:
+Example:
 ```ZenScript
 mods.immersivepetroleum.DistillationTower.removeAll();
 ```
 
-# Constructeur
+# Builder
 
 ## constructeur
 
-| Nom | Type de texte |
-| --- | ------------- |
-|     |               |
+| Name | Type |
+| ---- | ---- |
+|      |      |
 
-Exemple:
+Example:
 ```zenscript
 // new mods.immersivepetroleum.DistillationBuilder();
 
@@ -41,11 +41,11 @@ new mods.immersivepetroleum.DistillationBuilder();
 
 ## setOutputFluid
 
-| Nom              | Type de texte                               |
+| Name             | Type                                        |
 | ---------------- | ------------------------------------------- |
 | Fluide de sortie | [Fluidstack](/Vanilla/Liquids/IFluidStack/) |
 
-Exemple:
+Example:
 ```zenscript
 // builderInstance.setOutputFluids(IFluidStack[] fluidOutputs);
 
@@ -54,12 +54,12 @@ builderInstance.setOutputFluids([<fluid:minecraft:water> * 1]);
 
 ## addByproduct(IItemStack item, int chance)
 
-| Nom     | Type de texte                                     |
-| ------- | ------------------------------------------------- |
-| Élément | [format@@0 ItemStack](/Vanilla/Items/IItemStack/) |
-| Chance  | Nombre entier (0 - 100)                           |
+| Name   | Type                                              |
+| ------ | ------------------------------------------------- |
+| Item   | [format@@0 ItemStack](/Vanilla/Items/IItemStack/) |
+| Chance | Nombre entier (0 - 100)                           |
 
-Exemple:
+Example:
 ```zenscript
 // builderInstance.addByproduct(IItemStack item, int chance);
 
@@ -68,12 +68,12 @@ builderInstance.addByproduct(<item:minecraft:cobblestone>, 50);
 
 ## addByproduct(IItemStack item, double chance)
 
-| Nom     | Type de texte                                     |
-| ------- | ------------------------------------------------- |
-| Élément | [format@@0 ItemStack](/Vanilla/Items/IItemStack/) |
-| Chance  | Double (0.0 - 1.0)                                |
+| Name   | Type                                              |
+| ------ | ------------------------------------------------- |
+| Item   | [format@@0 ItemStack](/Vanilla/Items/IItemStack/) |
+| Chance | Double (0.0 - 1.0)                                |
 
-Exemple:
+Example:
 ```zenscript
 // builderInstance.addByproduct(IItemStack item, double chance);
 
@@ -82,12 +82,12 @@ builderInstance.addByproduct(<item:minecraft:stone>, 0.25);
 
 ## setEnergyAndTime
 
-| Nom     | Type de texte |
-| ------- | ------------- |
-| Flux/t  | Entier (>=1)  |
-| Billets | Entier (>=1)  |
+| Name    | Type         |
+| ------- | ------------ |
+| Flux/t  | Entier (>=1) |
+| Billets | Entier (>=1) |
 
-Exemple:
+Example:
 ```zenscript
 // builderInstance.setEnergyAndTime(int fluxPerTick, int ticks);
 
@@ -96,11 +96,11 @@ builderInstance.setEnergyAndTime(1024, 1);
 
 ## setÉnergie
 
-| Nom         | Type de texte |
-| ----------- | ------------- |
-| FluxPerTick | Entier (>=1)  |
+| Name        | Type         |
+| ----------- | ------------ |
+| FluxPerTick | Entier (>=1) |
 
-Exemple:
+Example:
 ```zenscript
 // builderInstance.setEnergy(int fluxPerTick);
 
@@ -109,24 +109,24 @@ builderInstance.setEnergy(1024);
 
 ## setTime
 
-| Nom     | Type de texte |
-| ------- | ------------- |
-| Billets | Entier (>=1)  |
+| Name    | Type         |
+| ------- | ------------ |
+| Billets | Entier (>=1) |
 
-Exemple:
+Example:
 ```zenscript
 // builderInstance.setTime(int ticks);
 
 builderInstance.setTime(1);
 ```
 
-## construire
+## build
 
-| Nom               | Type de texte        |
-| ----------------- | -------------------- |
-| Nom de la recette | Chaîne de caractères |
+| Name              | Type   |
+| ----------------- | ------ |
+| Nom de la recette | String |
 
-Exemple:
+Example:
 ```zenscript
 // builderInstance.build(String recipeName);
 
