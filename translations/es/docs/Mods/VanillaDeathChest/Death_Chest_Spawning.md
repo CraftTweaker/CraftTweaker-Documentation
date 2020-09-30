@@ -1,35 +1,35 @@
-# Desovando Cofre de la Muerte
+# Death Chest Spawning
 
-## Importando el paquete
+## Importing the package
 
-`importar mods.vanilladeathchest.DeathChestSpawning;`
+`import mods.vanilladeathchest.DeathChestSpawning;`
 
-## Mensaje de chat
+## Chat message
 
 ```zenscript
-//DeathChestSpawning.setChatMessage(etapa de cadena, mensaje de cadena);
-DeathChestSpawning.setChatMessage("example_stage", "Un cofre aparece en [%s, %s, %s]!");
+//DeathChestSpawning.setChatMessage(string stage, string message);
+DeathChestSpawning.setChatMessage("example_stage", "A chest appears at [%s, %s, %s]!");
 ```
 
-La cuerda tiene tres argumentos: las coordenadas X, Y y Z del cofre de muerte.
+The string takes three arguments: the X, Y and Z coordinates of the death chest.
 
-## Nombre del contenedor
+## Container display name
 
 ```zenscript
-//DeathChestSpawning.setContainerDisplayName(etapa de cadena, nombre de cadena);
-DeathChestSpawning.setContainerDisplayName("example_stage", "Tus ítems");
+//DeathChestSpawning.setContainerDisplayName(string stage, string name);
+DeathChestSpawning.setContainerDisplayName("example_stage", "Your Items");
 ```
 
-## Regex nombre del registro
+## Registry name regex
 
 ```zenscript
-//DeathChestSpawning.setRegistryNameRegex(etapa de cadena, cadena regex);
+//DeathChestSpawning.setRegistryNameRegex(string stage, string regex);
 DeathChestSpawning.setRegistryNameRegex("example_stage", ".*dirt.*");
 ```
 
-## Usar contenedor en el inventario
+## Use container in inventory
 
 ```zenscript
-//DeathChestSpawning.setUseContainerInventory(etapa de cadena, bandera de bool);
-DeathChestSpawning.setUseContainerInventory("example_stage", false);
+//DeathChestSpawning.setUseContainerInInventory(string stage, bool flag);
+DeathChestSpawning.setUseContainerInInventory("example_stage", false);
 ```
