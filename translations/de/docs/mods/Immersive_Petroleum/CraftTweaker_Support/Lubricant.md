@@ -1,4 +1,4 @@
-# Schmiermittelregistrierung
+# Lubricant Registration
 
 ## registrieren
 
@@ -16,7 +16,7 @@ mods.immersivepetroleum.Lubricant.register(IFluidStack lubricantEntry);
 mods.immersivepetroleum.Lubricant.register(<fluid:lava> * 500);
 ```
 
-## alle entfernen
+## removeAll
 
 ### Beispielcode:
 ```zenscript
