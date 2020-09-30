@@ -2,28 +2,28 @@
 
 Questa classe è stata aggiunta da una mod con ID `crafttweaker`. Perciò, è necessario avere questa mod installata per poter utilizzare questa funzione.
 
-## Importare la classe
+## Importing the class
 Potrebbe essere necessario importare il pacchetto, se si incontrano dei problemi (come castare un vettore), quindi meglio essere sicuri e aggiungere la direttiva di importazione.
 ```zenscript
 crafttweaker.api.event.entity.player.MCCriticalHitEvent
 ```
 
-## Costruttori
+## Constructors
 ```zenscript
 new crafttweaker.api.event.entity.player.MCCriticalHitEvent(handler as function.Consumer<crafttweaker.api.event.entity.player.MCCriticalHitEvent>);
 ```
-| Parametro | Tipo                                                                                                                              | Descrizione                 |
+| Parameter | Type                                                                                                                              | Description                 |
 | --------- | --------------------------------------------------------------------------------------------------------------------------------- | --------------------------- |
 | handler   | function.Consumer<[crafttweaker.api.event.entity.player.MCCriticalHitEvent](/vanilla/api/event/entity/player/MCCriticalHitEvent)> | Nessuna descrizione fornita |
 
 
 
-## Metodi
+## Methods
 ### getDamageModifier
 
-Il modificatore di danno per il colpito.<br> Questo è di default 1.5F per i colpi ciritcali e 1F per i colpi normali.
+The damage modifier for the hit.<br> This is by default 1.5F for ciritcal hits and 1F for normal hits .
 
-Restituisce fluttuante
+Returns float
 
 ```zenscript
 myMCCriticalHitEvent.getDamageModifier();
@@ -31,7 +31,7 @@ myMCCriticalHitEvent.getDamageModifier();
 
 ### getEntityPlayer
 
-Restituisce [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
+Returns [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
 
 ```zenscript
 myMCCriticalHitEvent.getEntityPlayer();
@@ -39,9 +39,9 @@ myMCCriticalHitEvent.getEntityPlayer();
 
 ### getOldDamageModifier
 
-Il modificatore di danno orignale per il colpo wthout qualsiasi cambiamento.<br> Questo è 1,5F per i colpi ciritcali e 1F per i colpi normali.
+The orignal damage modifier for the hit wthout any changes.<br> This is 1.5F for ciritcal hits and 1F for normal hits .
 
-Restituisce fluttuante
+Returns float
 
 ```zenscript
 myMCCriticalHitEvent.getOldDamageModifier();
@@ -49,29 +49,29 @@ myMCCriticalHitEvent.getOldDamageModifier();
 
 ### getPlayer
 
-Restituisce: `Giocatore`
+Returns: `Player`
 
-Restituisce [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
+Returns [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
 
 ```zenscript
 myMCCriticalHitEvent.getPlayer();
 ```
 
-### hasRisultato
+### hasResult
 
-Determina se questo evento prevede un valore significativo del risultato. Nota: Gli eventi con l'annotazione HasResult avranno questo metodo automaticamente aggiunto per restituire true.
+Determines if this event expects a significant result value. Note: Events with the HasResult annotation will have this method automatically added to return true.
 
 Restituisce un booleano
 
 ```zenscript
-myMCCriticalHitEvent.hasRisultato();
+myMCCriticalHitEvent.hasResult();
 ```
 
-### isAnnullabile
+### isCancelable
 
-Determina se questa funzione è annullabile. Restituisce: `Se l'accesso a setAnnullato dovrebbe essere consentito
- Nota:
- Gli eventi con l'annotazione annullabile avranno questo metodo automaticamente aggiunto per restituire true.`
+Determine if this function is cancelable at all. Returns: `If access to setCanceled should be allowed
+ Note:
+ Events with the Cancelable annotation will have this method automatically added to return true.`
 
 Restituisce un booleano
 
@@ -79,9 +79,9 @@ Restituisce un booleano
 myMCCriticalHitEvent.isCancelable();
 ```
 
-### isAnnullato
+### isCanceled
 
-Determina se questo evento è stato annullato e dovrebbe interrompere l'esecuzione. Restituisce: `L'attuale stato annullato`
+Determine if this event is canceled and should stop executing. Returns: `The current canceled state`
 
 Restituisce un booleano
 
@@ -91,7 +91,7 @@ myMCCriticalHitEvent.isCanceled();
 
 ### isVanillaCritical
 
-Restituisce vero se questo colpo è stato critico dalla vaniglia
+Returns true if this hit was critical by vanilla
 
 Restituisce un booleano
 
@@ -99,28 +99,28 @@ Restituisce un booleano
 myMCCriticalHitEvent.isVanillaCritical();
 ```
 
-### setAnnullato
+### setCanceled
 
 ```zenscript
 myMCCriticalHitEvent.setCanceled(cancel as boolean);
 ```
 
-| Parametro | Tipo    | Descrizione                 |
+| Parameter | Type    | Description                 |
 | --------- | ------- | --------------------------- |
-| annulla   | boolean | Nessuna descrizione fornita |
+| cancel    | boolean | Nessuna descrizione fornita |
 
 
 ### setDamageModifier
 
-Questo imposta il moltiplicatore di danno per il colpo. Se lo si imposta a 0, allora le particelle sono ancora generate, ma il danno non è fatto.
+This set the damage multiplier for the hit. If you set it to 0, then the particles are still generated but damage is not done.
 
 ```zenscript
 myMCCriticalHitEvent.setDamageModifier(mod as float);
 ```
 
-| Parametro | Tipo         | Descrizione                 |
-| --------- | ------------ | --------------------------- |
-| mod       | galleggiante | Nessuna descrizione fornita |
+| Parameter | Type  | Description                 |
+| --------- | ----- | --------------------------- |
+| mod       | float | Nessuna descrizione fornita |
 
 
 
