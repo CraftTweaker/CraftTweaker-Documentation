@@ -1,37 +1,37 @@
 # MCImmutableStringReader
 
-crafttweakerのmod-idを持つmodによって追加されているクラスです。 従って、この機能を利用する場合はこのmodをインストールする必要があります。
+This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
 
-## クラスのインポート
-問題が発生した場合には、インポートが必要になります。とはいえ、お手数ですが予めインポートしておくほうが安全です。
+## Importing the class
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
 ```zenscript
 crafttweaker.api.commands.custom.MCImmutableStringReader
 ```
 
-## メソッド
+## Methods
 ### canRead
 
-戻り値の型: boolean
+Return type: boolean
 
 ```zenscript
 myMCImmutableStringReader.canRead();
 ```
 
 
-戻り値の型: boolean
+Return type: boolean
 
 ```zenscript
 myMCImmutableStringReader.canRead(arg0 as int);
 ```
 
-| パラメータ | タイプ | 説明           |
-| ----- | --- | ------------ |
-| arg0  | int | 説明が提供されていません |
+| Parameter | Type | Description             |
+| --------- | ---- | ----------------------- |
+| arg0      | int  | No description provided |
 
 
 ### getCursor
 
-戻り値の種類: int
+Return type: int
 
 ```zenscript
 myMCImmutableStringReader.getCursor();
@@ -39,7 +39,7 @@ myMCImmutableStringReader.getCursor();
 
 ### getRead
 
-戻り値の型: String
+Return type: String
 
 ```zenscript
 myMCImmutableStringReader.getRead();
@@ -47,7 +47,7 @@ myMCImmutableStringReader.getRead();
 
 ### 残りの取得
 
-戻り値の型: String
+Return type: String
 
 ```zenscript
 myMCImmutableStringReader.getRemaining();
@@ -55,7 +55,7 @@ myMCImmutableStringReader.getRemaining();
 
 ### getRemainingLength
 
-戻り値の種類: int
+Return type: int
 
 ```zenscript
 myMCImmutableStringReader.getRemainingLength();
@@ -63,7 +63,7 @@ myMCImmutableStringReader.getRemainingLength();
 
 ### getString
 
-戻り値の型: String
+Return type: String
 
 ```zenscript
 myMCImmutableStringReader.getString();
@@ -71,7 +71,7 @@ myMCImmutableStringReader.getString();
 
 ### 取得総長さ
 
-戻り値の種類: int
+Return type: int
 
 ```zenscript
 myMCImmutableStringReader.getTotalLength();
@@ -92,9 +92,9 @@ myMCImmutableStringReader.peek();
 myMCImmutableStringReader.peek(arg0 as int);
 ```
 
-| パラメータ | タイプ | 説明           |
-| ----- | --- | ------------ |
-| arg0  | int | 説明が提供されていません |
+| Parameter | Type | Description             |
+| --------- | ---- | ----------------------- |
+| arg0      | int  | No description provided |
 
 
 
