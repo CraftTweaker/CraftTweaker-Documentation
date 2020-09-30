@@ -1,24 +1,24 @@
-# 玩家熔化
+# PlayerSmelted
 
-每当玩家从炉子里拿出一些东西时，玩家冶炼活动都会被射击。
+The PlayerSmelted Event is fired whenever a player takes something out of a furnace.
 
-## 事件类
+## Event Class
 
 You will need to cast the event in the function header as this class:  
 `crafttweaker.event.PlayerSmeltedEvent`  
 You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
 
-## 事件界面扩展
+## Event interface extensions
 
-PlayerSmelted Events 实现了以下接口，并且能够调用他们所有的方法/getter/setter：
+PlayerSmelted Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
 
 - [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
 
 ## ZenGetters
 
-以下信息可以从事件中检索：
+The following information can be retrieved from the event:
 
 | ZenGetter    | 返回值类型                                    |
 | ------------ | ---------------------------------------- |
-| `播放器`        | [IPlayer](/Vanilla/Players/IPlayer/)     |
+| `player`     | [IPlayer](/Vanilla/Players/IPlayer/)     |
 | `output（输出）` | [IItemStack](/Vanilla/Items/IItemStack/) |
