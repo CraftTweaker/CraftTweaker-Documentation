@@ -1,21 +1,21 @@
 # IEntityDrop
 
-Un IEntityDrop fait référence à un butin issu d'une [Entité](/Vanilla/Entities/IEntityDefinition/).
+An IEntityDrop refers to a drop from an [Entity](/Vanilla/Entities/IEntityDefinition/).
 
-## Importation du paquet
+## Importing the package
 
-Il pourrait vous être nécessaire d'importer le paquet si vous rencontrez des problèmes (comme lancer un [Tableau](/AdvancedFunctions/Arrays_and_Loops/)), alors mieux être sûr que désolé et ajouter l'importation.  
-`importer crafttweaker.entity.IEntityDrop;`
+It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
+`import crafttweaker.entity.IEntityDrop;`
 
 ## ZenGetters
 
-Vous pouvez en extraire ces informations.
+You can retrieve this information out of them.
 
-| ZenGetter       | Que fait-il                                                            | Type de retour                           | Usage              |
-| --------------- | ---------------------------------------------------------------------- | ---------------------------------------- | ------------------ |
-| Probabilité     | Renvoie la chance de la goutte.                                        | flottant                                 | `chance de drop`   |
-| max             | Renvoie le montant maximum de la baisse.                               | Indice                                   | `déposer.max`      |
-| min             | Renvoie le montant minimum de la baisse.                               | Indice                                   | `Déposer.min`      |
-| JoueurSeulement | Retourne si le drop est joueurSeulement.                               | boolean                                  | `joueurOnly`       |
-| range           | Renvoie la plage de montant minimum à la limite maximale de la baisse. | Intervalle entier                        | `Plage de dépôt`   |
-| empilage        | Renvoie l'élément déposé.                                              | [IItemStack](/Vanilla/Items/IItemStack/) | `Déposer une pile` |
+| ZenGetter  | What does it do                                          | Return type                              | Usage             |
+| ---------- | -------------------------------------------------------- | ---------------------------------------- | ----------------- |
+| chance     | Returns the chance of the drop.                          | float                                    | `drop.chance`     |
+| max        | Returns the maximum Amount of the drop.                  | int                                      | `drop.max`        |
+| min        | Returns the minimum Amount of the drop.                  | int                                      | `drop.min`        |
+| playerOnly | Returns whether the drop is playerOnly.                  | boolean                                  | `drop.playerOnly` |
+| range      | Returns the minimum to maximum Amount range of the drop. | IntegerRange                             | `drop.range`      |
+| stack      | Returns the dropped Item.                                | [IItemStack](/Vanilla/Items/IItemStack/) | `drop.stack`      |
