@@ -1,14 +1,14 @@
 # Supercooler
 
-## Importation du paquet en cours
+## Importing the Package
 `mods.nuclearcraft.Supercooler`
 
-## Ajout de recettes
+## Adding Recipes
 ```zenscript
 mods.nuclearcraft.Supercooler.addRecipe(ILiquidStack fluidInput, ILiquidStack fluidOutput, @Optional double timeMultiplier, @Optional double powerMultiplier, @Optional double processRadiation);
 ```
 
-## Suppression des recettes
+## Removing Recipes
 ```zenscript
 mods.nuclearcraft.mods.nuclearcraft.Supercooler.removeRecipeWithInput(ILiquidStack fluidInput);
 mods.nuclearcraft.Supercooler.removeRecipeWithOutput(ILiquidStack fluidOutput);
