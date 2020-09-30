@@ -1,7 +1,7 @@
-# Скорость Разрыва Игроков
+# PlayerBreakSpeed
 
-Событие "Скорость Разрыва Игроков" запускается, когда игрок пытается сломать блок.  
-Это может быть отменено, чтобы остановить игрока от возможности ломать этот блок.
+The PlayerBreakSpeed Event is fired whenever a player tries to break a block.  
+It can be canceled to stop theplayer from being able to break that block.
 
 ## Класс события
 
@@ -11,17 +11,17 @@ You can, of course, also [import](/AdvancedFunctions/Import/) the class before a
 
 ## Наследование от интерфейсов событий
 
-PlayerBreakSpeed Events реализуют следующие интерфейсы и также могут вызвать все их методы/getters/setters:
+PlayerBreakSpeed Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
 
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 - [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
-- [Событие доступно](/Vanilla/Events/Events/IEventPositionable/)
+- [IEventPositionable](/Vanilla/Events/Events/IEventPositionable/)
 
 ## Геттеры/сеттеры
 
-| Геттеры            | ZenSetter      | Тип                                         |
-| ------------------ | -------------- | ------------------------------------------- |
-| blockState         |                | [IBlockState](/Vanilla/Blocks/IBlockState/) |
-| блок               |                | [БИБлок](/Vanilla/Blocks/IBlock/)           |
-| скорость оригинала |                | float                                       |
-| новая скорость     | новая скорость | float                                       |
+| ZenGetter     | ZenSetter | Тип                                         |
+| ------------- | --------- | ------------------------------------------- |
+| blockState    |           | [IBlockState](/Vanilla/Blocks/IBlockState/) |
+| block         |           | [IBlock](/Vanilla/Blocks/IBlock/)           |
+| originalSpeed |           | float                                       |
+| newSpeed      | newSpeed  | float                                       |
