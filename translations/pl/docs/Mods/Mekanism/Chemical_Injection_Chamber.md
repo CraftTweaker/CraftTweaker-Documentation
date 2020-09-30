@@ -1,8 +1,8 @@
-# Komora do wstrzykiwania chemicznego
+# Chemical Injection Chamber
 
-Od Mekanism 9.7. możliwe jest teraz wyświetlenie wszystkich ciągów receptur Komory Wstrzykiwania Chemicznego poprzez polecenie `/ct mekrecipes injection`
+As of Mekanism 9.7.0 it is now possible to view all recipe strings of the Chemical Injection Chamber through the command `/ct mekrecipes injection`
 
-## Dodanie
+## Addition
 
 ```zenscript
 mods.mekanism.chemical.injection.addRecipe(IIngredient inputStack, IGasStack inputGas, IItemStack outputStack);
@@ -10,13 +10,13 @@ mods.mekanism.chemical.injection.addRecipe(IIngredient inputStack, IGasStack inp
 mods.mekanism.chemical.injection.addRecipe(<minecraft:hardened_clay:1>, <gas:water>, <minecraft:clay>);
 ```
 
-Od Mekanism 9.7.0 inputGas nie jest już ograniczony tylko do kwasu siarkowego, wody lub wodoru
+As of Mekanism 9.7.0 inputGas is no longer restricted to just sulfuric acid, water, or hydrogen chloride
 
-Również od Mekanism 9.7.0 możliwe jest stosowanie IIngredients jako inputStack zamiast tylko IItemStacks.
+Also as of Mekanism 9.7.0 it is possible to use IIngredients as the inputStack instead of only IItemStacks.
 
-Uwaga: Obecnie wszystko to jest w pętli nad różnymi możliwościami w java podczas dodawania zamiast tego musisz to zrobić w ZenScript. Obecnie w samych maszynach nie ma wbudowanego wsparcia dla składników składowych składowych czy też słownika.
+Note: Currently all this does is loop over the different possibilities in java while adding instead of you having to do it in ZenScript. Currently there is no built in support for compound ingredients or oredictionary in the machines themselves.
 
-## Usuwanie
+## Removal
 
 ```zenscript
 mods.mekanism.chemical.injection.removeRecipe(IIngredient outputStack, @Optional IIngredient inputStack, @Optional IIngredient inputGas);
@@ -25,11 +25,11 @@ mods.mekanism.chemical.injection.removeRecipe(<mekanism:shard:2>, <mekanism:oreb
 mods.mekanism.chemical.injection.removeRecipe(<mekanism:shard:1>);
 ```
 
-Określenie parametru wejściowego usunie tylko konkretny przepis, który wykorzystuje dane wejściowe. Odrzucenie parametru wejściowego usunie wszystkie receptury, które wytwarzają dane wyjściowe.
+Specifying an input parameter will only remove the specific recipe that uses said input. Omitting the input parameter will remove all recipes that produce the specified output.
 
-## Usuwanie wszystkich przepisów
+## Removing all recipes
 
-Od Mekanism 9.7.0 można obecnie usunąć wszystkie przepisy komory do wstrzykiwania chemicznego. (Wyłącza wszelkie przepisy dodane przez CraftTweaker)
+As of Mekanism 9.7.0 it is now possible to remove all Chemical Injection Chamber recipes. (This excludes any recipes added via CraftTweaker)
 
 ```zenscript
 mods.mekanism.chemical.injection.removeAllRecipes();
