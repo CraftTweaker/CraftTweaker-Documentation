@@ -1,17 +1,17 @@
-# Casualizzatore Entità
+# Entity Randomizer
 
-Aggiungere e rimuovere entità dal proiettile randomizzatore entità pietra del filosofo del Progetto utilizza un [IEntityDefinition](/Vanilla/Entities/IEntityDefinition/).
+Adding and removing entities from ProjectE's philosopher's stone entity randomizer projectile uses an [IEntityDefinition](/Vanilla/Entities/IEntityDefinition/).
 
-Nota: Questa [IEntityDefinition](/Vanilla/Entities/IEntityDefinition/) deve essere per un'entità vivente.
+Note: This [IEntityDefinition](/Vanilla/Entities/IEntityDefinition/) must be for a living entity.
 
-## Aggiunta
+## Adding
 
 ### addPeaceful
 
 ```zenscript
 mods.projecte.EntityRandomizer.addPeaceful(IEntityDefinition entityDefinition);
 
-// Permette di trasformare le creature pacifiche in zombie. 
+// Allows turning peaceful creatures into zombies. 
 mods.projecte.EntityRandomizer.addPeaceful(<entity:minecraft:zombie>);
 ```
 
@@ -20,18 +20,18 @@ mods.projecte.EntityRandomizer.addPeaceful(<entity:minecraft:zombie>);
 ```zenscript
 mods.projecte.EntityRandomizer.addMob(IEntityDefinition entityDefinition);
 
-// Permette di trasformare mob ostili in maiali.
+// Allows turning hostile mobs into pigs.
 mods.projecte.EntityRandomizer.addMob(<entity:minecraft:pig>);
 ```
 
-## Rimozione
+## Removing
 
 ### removePeaceful
 
 ```zenscript
 mods.projecte.EntityRandomizer.removePeaceful(IEntityDefinition entityDefinition);
 
-// Ferma le creature pacifiche possono essere trasformate in maiali.
+// Stops peaceful mobs being able to be turned into pigs.
 mods.projecte.EntityRandomizer.removePeaceful(<entity:minecraft:pig>);
 ```
 
@@ -40,20 +40,20 @@ mods.projecte.EntityRandomizer.removePeaceful(<entity:minecraft:pig>);
 ```zenscript
 mods.projecte.EntityRandomizer.removeMob(IEntityDefinition entityDefinition);
 
-// Ferma i mob ostili possono essere trasformati in zombie.
+// Stops hostile mobs being able to be turned into zombies.
 mods.projecte.EntityRandomizer.removeMob(<entity:minecraft:zombie>);
 ```
 
 ### clearPeacefuls
 
 ```zenscript
-// Rimuove tutte le voci pacifiche casuali di mob comprese quelle registrate da CraftTweaker prima di questa chiamata.
+// Removes all randomized peaceful mob entries including ones registered by CraftTweaker before this call.
 mods.projecte.EntityRandomizer.clearPeacefuls();
 ```
 
 ### clearMobs
 
 ```zenscript
-// Rimuove tutte le voci di mob ostili randomizzate, comprese quelle registrate da CraftTweaker prima di questa chiamata.
+// Removes all randomized hostile mob entries including ones registered by CraftTweaker before this call.
 mods.projecte.EntityRandomizer.clearMobs();
 ```
