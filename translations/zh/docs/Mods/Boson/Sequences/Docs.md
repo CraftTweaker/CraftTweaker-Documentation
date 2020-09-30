@@ -1,41 +1,41 @@
-# 类文档
+# Class Documentation
 
-`序列` 是一个可以运行并被评价的项目列表。 欲了解更多信息，请参阅 [概念](/Mods/Boson/Sequences/Concept/) 页面。
+A `Sequence` is a list of items which can be operated on and is evaluated lazily. Refer to the [Concept](/Mods/Boson/Sequences/Concept/) page for more information.
 
-## 班级详细信息
-作为ZenScriptX项目的一部分，类的完全合格名称是 `zenscriptx.sequence.Sequence`。
+## Class Details
+Being part of the ZenScriptX Project, the fully qualified name for the class is `zenscriptx.sequence.Sequence`.
 
-## 创建一个新实例
-请参阅 [获取序列](/Mods/Boson/Sequences/Obtaining/) 页面。
+## Creating a New Instance
+Refer to the [Obtaining Sequences](/Mods/Boson/Sequences/Obtaining/) page.
 
 ## 方法
-按顺序排列的各种方法可分为四类：
+The various methods available in a sequence can be divided into four categories:
 
-- 终端方法
-- 改变风格的延迟方法
-- 中型延迟方法
-- 中间热衷的方法
+- Terminal methods
+- Type-changing lazy methods
+- Intermediate lazy methods
+- Intermediate eager methods
 
-每个类别都有自己的行为和要求，而这些行为和要求在各自的类别中作了描述。
+Each category has its own behavior and quirks, which are described in the respective category.
 
-此外，在每个方法签名中，字母 `T` 和 `R` 引用了定义序列的通用类型。 在 特别是, `T` 确定当前序列的类型。 而 `R` 则指明了新序列的类型， 会在换次延迟时返回.
+Moreover, in every method signature, the letters `T` and `R` reference the generic types that define the sequence. In particular, `T` identifies the type of the current sequence, whereas `R` identifies the type of the new sequence that gets returned in case of type-changing lazy methods.
 
 To save up on space, the methods will be presented in a single snippet in the corresponding category with a comment above stating what the method is supposed to do, as shown in the following example snippet.
 
 ```zenscript
-# 这个方法做了一些
-函数方法(参数为 int, 参数2 为 bool) 为双倍；
+# this method does something
+function method(argument as int, argument2 as bool) as double;
 
-# 这个方法做了其他事情，可能返回 null
-function method2() 作为布尔值？
+# this method does something else, and may return null
+function method2() as bool?;
 ```
 
-最后但并非最不重要的一点是，如果您遇到任何 非原始类型，请参阅 [功能接口](/Mods/Boson/Functions/List/) 列表。 。 `预测<T>` 或 `函数<T, R>`。
+Last but not least, refer to the [list of functional interfaces](/Mods/Boson/Functions/List/) if you encounter any non-primitive type (e.g. `Predicate<T>` or `Function<T, R>`).
 
-### 终端方法
-终端方法是不返回 `序列` 实例的方法，而是任何其他类型的数据。 例如 `int`, `布尔`, 甚至无(`无效`)。 Moreover, they can also potentially cause the evaluation of the whole `Sequence` contents, though this is not required, since some methods may also terminate execution as soon as certain conditions are met. 然而，这种保证是不能做到的。
+### Terminal methods
+Terminal methods are methods that don't return a `Sequence` instance, but rather any other type of data, such as `int`, `bool`, or even nothing (`void`). Moreover, they can also potentially cause the evaluation of the whole `Sequence` contents, though this is not required, since some methods may also terminate execution as soon as certain conditions are met. Nonetheless, this guarantee cannot be made.
 
-在一个终端方法被调用后，也不可能继续在 `序列` 上操作。 除非序列 先前保存到一个变量后才能调用终端方法。
+It is also impossible to continue operating on a `Sequence` after a terminal method has been called, unless the sequence was previously saved in a variable prior to the terminal method invocation.
 
 ```zenscript
 # Returns whether the given 'element' is present in the target sequence
@@ -157,31 +157,31 @@ function joinToString(
     postfix as string,                 # optional, default value: ""
     limit as int,                      # optional, default value: -1
     truncated as string,               # optional, default value: "..."
-    转换为函数<T, String>？  # 可选，默认值：null (即一个普通的 `toString` 将被调用在目标对象上)
-) 为字符串；
+    transform as Function<T, String>?  # optional, default value: null (i.e. a plain `toString` will be called on the target object)
+) as string;
 ```
 
-### 改变风格的延迟方法
-改变类型的延迟方法是返回不同类型的 `序列` 而不是原类型的方法。 跟随转换操作的结果 (e)。 . 从 `IItemStack` 到 `IBlockState`。 由于它们很迷惑， 只能稍后才能对序列内容进行评价。 当转换实际上需要到 因为调用终端方法或中间急切方法而发生。
+### Type-changing lazy methods
+Type-changing lazy methods are methods that return a `Sequence` of a different type rather than the original one, following the result of a conversion operation (e.g. from `IItemStack` to `IBlockState`). Since they are lazy, evaluation of the contents of the sequence will be done only at a later time, when the transformation actually needs to happen due to the invocation of a terminal method or an intermediate eager method.
 
-由于这些方法是中间方法，所以可以在援引这些方法后继续使用 `序列`。
+Since these methods are intermediate, it is possible to keep using a `Sequence` after an invocation of these methods.
 
 ```zenscript
-# 将此序列的每个元素转换成另一个元素，使用给定的“变换”函数
-函数映射(转换为函数<T, R>) 作为序列<R>;
+# Transforms every element of this sequence into another one using the given 'transform' function
+function map(transform as Function<T, R>) as Sequence<R>;
 
-# 使用给定的“变换”函数将这个序列的每个元素转换成另一个元素。 提供访问当前索引
-函数 mapIndexed(转换为 BiFunction<int?, T, R>) 的序列<R>;
+# Transforms every element of this sequence into another one using the given 'transform' function, providing access to the current index
+function mapIndexed(transform as BiFunction<int?, T, R>) as Sequence<R>;
 
-# 在序列中抓取每两对相邻元素，并执行给定的“变换”函数。 返回一个序列中的结果
-# 返回一个空序列，如果当前序列小于两个元素
-function zipwithNext(transformation as BiFunction<T, T, R>) 为序列<R>;
+# Grabs every pair of adjacent elements inside the sequence and executes the given 'transform' function, returning the results in a sequence
+# Returns an empty sequence if the current sequence has less than two elements
+function zipWithNext(transform as BiFunction<T, T, R>) as Sequence<R>;
 ```
 
-### 中型延迟方法
-中间延迟方法是返回与当前类型相同的 `序列` 的方法。 并评估 该方法将推迟到终端方法或一个中间急切方法被调用时， 这里的名称 "迷宫". 正是出于这一原因， 元素删除或添加可能(而且将会)不会反映在序列本身上 直到对序列进行充分评估。 出于这一原因， 对函数参数的任何更改可能会产生 意外的副作用(尤其是对于 `减号` 和 `加号` 调用)。
+### Intermediate lazy methods
+Intermediate lazy methods are methods that return a `Sequence` of the same type as the current one, and evaluation of the method will be deferred up until a terminal method or an intermediate eager method is called, henceforth the name "lazy". For this exact reason, element removal or addition may (and will) not be reflected in the sequence itself up until the sequence is fully evaluated. For this reason, any change to the arguments passed to the function may have unintended side effects (especially for `minus` and `plus` calls).
 
-由于这些方法是中间方法，所以可以在援引这些方法后继续使用 `序列`。
+Since these methods are intermediate, it is possible to keep using a `Sequence` after an invocation of these methods.
 
 ```zenscript
 # Removes the first 'n' elements from the head of the sequence, effectively dropping them out
@@ -231,21 +231,21 @@ function plusElement(element as T) as Sequence<T>;
 function asSequence() as Sequence<T>;
 ```
 
-### 中间热衷的方法
-中间的热衷方法是返回当前类型的 `序列` 的方法。 但对方法的评估 不能推迟到一个终端方法被调用。 此外， 热衷的方法可能会导致对 的评估。整个序列调用直到在他们的调用和终端方法调用之间的任何时候。 出于这一原因， 有人建议尽量少调用急切的方法，让它们在尽可能小的 数量的数据上运作。
+### Intermediate eager methods
+Intermediate eager methods are methods that return a `Sequence` of the same type of the current one, but the evaluation of the method may not be deferred up until a terminal method is called. Moreover, eager methods may cause evaluation of the whole sequence calls up until that point at any moment between their invocation and the terminal method invocation. For this reason, it is suggested to call eager methods as sparingly as possible and let them operate on the smallest quantity of data possible.
 
-由于这些方法是中间方法，所以在援引这些方法后可以继续使用 `序列`。
+Since these methods are intermediate, it is possible to keep using a `Sequence` after the invocation of these methods.
 
 ```zenscript
-# 用稳定的算法排序当前序列. 根据给定的 '比较器' 函数
-的输出排序(比较器：ToIntBiFunction<T, T>) 为序列<T>;
+# Sorts the current sequence with a stable algorithm, according to the output of the given 'comparator' function
+function sortedWith(comparator: ToIntBiFunction<T, T>) as Sequence<T>;
 ```
 
-## 操作员过载
-`序列`s可能支持操作员在将来的语言版本中超载. 请参阅此文档以保持 最新。 请注意，支持可能需要一个特殊的编译器标志才能启用：参考 [实验标志预处理器](/Mods/Boson/Preprocessor/Exp/) 获取更多信息。
+## Operator Overloading
+`Sequence`s may support operator overloading in future revisions of the language. Refer to this documentation to keep up-to-date. Note that support may require a special compiler flag to be enabled: refer to the [Experimental Flags Preprocessor](/Mods/Boson/Preprocessor/Exp/) for more information.
 
 ## 例子
-下面是一个示例脚本，显示一些可以用序列完成的示例。 这绝不是完整的 清单，而是指更多地作为概念的参考和证明。
+The following is an example script that shows some examples that may be done with sequences. This is nowhere a complete list, but is meant more as a reference and a proof of concept.
 
 ```zenscript
 # Prints the display name of the given three items
