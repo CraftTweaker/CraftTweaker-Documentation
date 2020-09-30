@@ -1,25 +1,25 @@
-# Krzyżowanie
+# Crooking
 
-## Pakiet
+## Package
 ```zenscirpt
-mods.exnihilocreo.Crook
+mods.exnihilocreatio.Crook
 ```
-## Metody
+## Methods
 
-- **[Składnik](/Vanilla/Variable_Types/IIngredient/) wejście** Wejście
-- **[IItemStack](/Vanilla/Items/IItemStack/) nagradza** przedmiot, który ma szansę wyrzucić.
-- **Szansa na pływanie** szansa między 0-1.
-- **Szansa na przedłużenie** szansa między 0-1.
+- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input** The input.
+- **[IItemStack](/Vanilla/Items/IItemStack/) reward** the item that has a chance to drop.
+- **Float chance** chance between 0-1.
+- **Float fortune chance** chance between 0-1.
 
-## Dodanie
+## Addition
 
 ```zenscript
-mods.exnihilocreatio.Crook.addRecipe(IIngredient, IItemStack, Float);
+mods.exnihilocreatio.Crook.addRecipe(IIngredient, IItemStack, Float, Float);
 
 mods.exnihilocreatio.Crook.addRecipe(<minecraft:log>, <minecraft:plank>, 0.25, 0.5);
 ```
 
-## Usuwanie
+## Removal
 
 ```zenscript
 mods.exnihilocreatio.Crook.removeAll();
