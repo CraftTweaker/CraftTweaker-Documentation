@@ -1,19 +1,19 @@
-# Industrielle Vorgänge
+# Industrial Foregoing
 
-Unterstützung von BioReactor, Laser Drill und Schlamm Refiner CraftTweaker für Industrial Foregoing.
+Industrial Foregoing's BioReactor, Laser Drill and Sludge Refiner CraftTweaker support.
 
-### Artikelgewicht
+### Item Weight
 
-Das `Artikelgewicht` ist eine Zahl, die die Chance eines Elements repräsentiert, ausgewählt zu werden. Zum Beispiel:
+The `ItemWeight` is a number that represents the chance of an item to get selected. For example:
 
-| Artikel | Gewicht | Chance % |
-| ------- | ------- | -------- |
-| Stein   | 99      | 99%      |
-| Erde    | 1       | 1%       |
+| Item  | Weight | Chance % |
+| ----- | ------ | -------- |
+| Stone | 99     | 99%      |
+| Dirt  | 1      | 1%       |
 
-| Artikel | Gewicht | Chance % |
-| ------- | ------- | -------- |
-| Stein   | 2       | 66%      |
-| Erde    | 1       | 33%      |
+| Item  | Weight | Chance % |
+| ----- | ------ | -------- |
+| Stone | 2      | 66%      |
+| Dirt  | 1      | 33%      |
 
-ItemChance% = (ItemGewicht/Gesamtgewicht)*100
+ItemChance% = (ItemWeight/TotalWeight)*100
