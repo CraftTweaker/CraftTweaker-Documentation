@@ -1,22 +1,22 @@
-# Incudine
+# Anvil
 
-## Pacchetto
+## Package
 ```zenscript
-import mods.terrafirmacraft.Incudine;
+import mods.terrafirmacraft.Anvil;
 ```
 
-## Addizione
+## Addition
 
 ```zenscript
-Anvil.addRecipe(String registryName, Input IIngrediente, Uscita IItemStack, int minTier, Tipo di abilità String, Stringa... forgeRules);
+Anvil.addRecipe(String registryName, IIngredient input, IItemStack output, int minTier, String skillType, String... forgeRules);
 ```
-- L'input non può essere impilato. Le incudine accettano solo un oggetto per slot.
-- l'input deve essere forgeable (si prega di fare riferimento a [ItemRegistry](/Mods/Terrafirmacraft/ItemRegistry) per registrare la capacità di forgiatura a un articolo).
-- I livelli sono 0 = pietra, 1 = rame, 2 = bronzo, 3 = ferro battuto, 4 = acciaio, 5 = acciaio nero e 6 = acciaio rosso/blu.
-- Tipo di abilità è a quale categoria di abilità la forgiatura dovrebbe contribuire. Le voci valide sono `generali`, `strumenti`, `armi`, `armatura`o null. Se il tipo di abilità è `strumenti`, `armi`, o `armatura` allora l'elemento risultato avrà un bonus abilità applicato.
-- Una ricetta deve avere 1, 2 o 3 regole. Le regole consistono in un tipo (`HIT`, `DRAW`, `PUNCH`, `BEND`, `UPSET`, o `SHRINK`), seguita da un ordine (`ANY`, `NOT_LAST`, `ULTIMA`, `SECOND_LAST`, `THIRD_LAST`), separati da un underscore. Ad esempio, `HIT_ANY`, `DRAW_SECOND_LAST`e `UPSET_NOT_LAST` sono nomi di regola validi.
+- Input can't be stacked. Anvils only accept one item per slot.
+- input must be forgeable (please refer to [ItemRegistry](/Mods/Terrafirmacraft/ItemRegistry) for registering forging capability to an item).
+- Tiers are 0 = Stone, 1 = Copper, 2 = Bronze, 3 = Wrought Iron, 4 = Steel, 5 = Black Steel and 6 = Red/Blue Steel.
+- Skill type is what category of skill the forging should contribute to. Valid entries are `general`, `tools`, `weapons`, `armor`, or null. If the skill type is `tools`, `weapons`, or `armor` then the result item will have a skill bonus applied to it.
+- A recipe must have 1, 2 or 3 rules. Rules consist of a type (`HIT`, `DRAW`, `PUNCH`, `BEND`, `UPSET`, or `SHRINK`), followed by an order (`ANY`, `NOT_LAST`, `LAST`, `SECOND_LAST`, `THIRD_LAST`), separated by an underscore. As example, `HIT_ANY`, `DRAW_SECOND_LAST`, and `UPSET_NOT_LAST` are valid rule names.
 
-## Rimozione
+## Removal
 
 ```zenscript
 Anvil.removeRecipe(IItemStack output);
