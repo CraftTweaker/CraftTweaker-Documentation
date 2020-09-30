@@ -1,8 +1,8 @@
-# Обработчик фигурных табов
+# Creative Tab Bracket Handler
 
-Обработчик "Табуляция" дает вам доступ к креативным вкладкам в игре.
+The Creative Tab Bracket Handler gives you access to the creative Tabs in the game.
 
-Они ссылаются на них в обработчике вкладок таким образом:
+They are referenced in the Creative Tab handler this way:
 
 ```zenscript
 <creativetab:name>
@@ -10,4 +10,4 @@
 <creativetab:misc>
 ```
 
-Если найдена креативная вкладка, то она вернет объект ICreativeTab. Пожалуйста, обратитесь к [соответствующей вики](/Vanilla/CreativeTabs/ICreativeTab/) для получения дополнительной информации о том, что вы можете сделать с этим.
+If the Creative Tab is found, this will return an ICreativeTab Object. Please refer to the [respective Wiki entry](/Vanilla/CreativeTabs/ICreativeTab/) for further information on what you can do with these.
