@@ -1,38 +1,38 @@
-# Destylacja
+# Distillation
 
-## usuń
+## remove
 
-| Nazwisko       | Typ         |
-| -------------- | ----------- |
-| Nazwa przepisu | Ciąg znaków |
+| Name           | Type   |
+| -------------- | ------ |
+| Nazwa przepisu | String |
 
-Przykład:
+Example:
 ```ZenScript
 // mods.immersiveoilum.DistillationTower.remove(formuła ciągowaNazwa);
 
 mods.immersivepetroleum um.DistillationTower.remove("olej kraking");
 ```
 
-## usuń wszystko
+## removeAll
 
-| Nazwisko | Typ |
-| -------- | --- |
-|          |     |
+| Name | Type |
+| ---- | ---- |
+|      |      |
 
-Przykład:
+Example:
 ```ZenScript
 mods.immersivepetroleum um.DistillationTower.removeAll();
 ```
 
-# Konstruktor
+# Builder
 
 ## konstruktor
 
-| Nazwisko | Typ |
-| -------- | --- |
-|          |     |
+| Name | Type |
+| ---- | ---- |
+|      |      |
 
-Przykład:
+Example:
 ```zenscript
 // new mods.immersivepetroleum um.DistillationBuilder();
 
@@ -41,11 +41,11 @@ new mods.immersivepetroleum um.DistillationBuilder();
 
 ## setOutputFluid
 
-| Nazwisko       | Typ                                         |
+| Name           | Type                                        |
 | -------------- | ------------------------------------------- |
 | Płyn wyjściowy | [Fluidstack](/Vanilla/Liquids/IFluidStack/) |
 
-Przykład:
+Example:
 ```zenscript
 // builderInstance.setOutputFluids(IFluidStack[] fluidOutputs);
 
@@ -54,12 +54,12 @@ builderInstance.setOutputFluids([<fluid:minecraft:water> * 1]);
 
 ## addByproduct(IItemStack item, int choance)
 
-| Nazwisko               | Typ                                            |
-| ---------------------- | ---------------------------------------------- |
-| Artykuł 1 1 0 – Ogółem | [Stos przedmiotów](/Vanilla/Items/IItemStack/) |
-| Szansa                 | Liczba całkowita (0 - 100)                     |
+| Name   | Type                                           |
+| ------ | ---------------------------------------------- |
+| Item   | [Stos przedmiotów](/Vanilla/Items/IItemStack/) |
+| Chance | Liczba całkowita (0 - 100)                     |
 
-Przykład:
+Example:
 ```zenscript
 // builderInstance.addByproduct(element IItemStack , int choance);
 
@@ -68,12 +68,12 @@ builderInstance.addByproduct(<item:minecraft:cobblestone>, 50);
 
 ## addByproduct(element IItemStack, podwójna szansa)
 
-| Nazwisko               | Typ                                            |
-| ---------------------- | ---------------------------------------------- |
-| Artykuł 1 1 0 – Ogółem | [Stos przedmiotów](/Vanilla/Items/IItemStack/) |
-| Szansa                 | Podwójne (0,0 - 1,0)                           |
+| Name   | Type                                           |
+| ------ | ---------------------------------------------- |
+| Item   | [Stos przedmiotów](/Vanilla/Items/IItemStack/) |
+| Chance | Podwójne (0,0 - 1,0)                           |
 
-Przykład:
+Example:
 ```zenscript
 // builderInstance.addByproduct(IItemStack, podwójna szansa);
 
@@ -82,12 +82,12 @@ builderInstance.addByproduct(<item:minecraft:stone>, 0.25);
 
 ## setEnergyAndTime
 
-| Nazwisko | Typ                    |
-| -------- | ---------------------- |
-| Flux/t   | Liczba całkowita (>=1) |
-| Ticki    | Liczba całkowita (>=1) |
+| Name   | Type                   |
+| ------ | ---------------------- |
+| Flux/t | Liczba całkowita (>=1) |
+| Ticki  | Liczba całkowita (>=1) |
 
-Przykład:
+Example:
 ```zenscript
 // builderInstance.setEnergyAndTime(int fluxPerTick, int ticks);
 
@@ -96,11 +96,11 @@ builderInstance.setEnergyAndTime(1024, 1);
 
 ## setEnergy
 
-| Nazwisko    | Typ                    |
+| Name        | Type                   |
 | ----------- | ---------------------- |
 | FluxPerTick | Liczba całkowita (>=1) |
 
-Przykład:
+Example:
 ```zenscript
 // builderInstance.setEnergy(int fluxPerTick);
 
@@ -109,24 +109,24 @@ builderInstance.setEnergy(1024);
 
 ## setTime
 
-| Nazwisko | Typ                    |
-| -------- | ---------------------- |
-| Ticki    | Liczba całkowita (>=1) |
+| Name  | Type                   |
+| ----- | ---------------------- |
+| Ticki | Liczba całkowita (>=1) |
 
-Przykład:
+Example:
 ```zenscript
 // builderInstance.setTime(int ticks);
 
 builderInstance.setTime(1);
 ```
 
-## kompilacja
+## build
 
-| Nazwisko       | Typ         |
-| -------------- | ----------- |
-| Nazwa przepisu | Ciąg znaków |
+| Name           | Type   |
+| -------------- | ------ |
+| Nazwa przepisu | String |
 
-Przykład:
+Example:
 ```zenscript
 // builderInstance.build(String recipeName);
 
