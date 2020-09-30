@@ -1,6 +1,6 @@
 # Banco da Lavoro
 
-## Tipi di Ricette
+## Recipe Types
 
 Ci sono tre tipi di ricette per i banchi da lavoro:
 
