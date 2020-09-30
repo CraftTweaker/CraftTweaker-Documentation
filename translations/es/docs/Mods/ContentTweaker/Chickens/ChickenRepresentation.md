@@ -1,27 +1,27 @@
-# Representación de pollos
+# ChickenRepresentation
 
-La representación de pollo es una plantilla de lo que hará su pollo.  
-Por defecto, sólo existirá y colocará el huevo que le dio como parámetro inicial.  
-Puedes cambiar este comportamiento para permitir mejores pollos modificando las propiedades dadas.
+The ChickenRepresentation is a template of what your Chicken will do.  
+By default, it will only exist and lay the egg you gave it as initial parameter.  
+You can change this behavior to allow for better chickens by modifying the given properties.
 
-## Importar la clase
+## Importing the class
 
-¿Quieres importar la clase? Aquí te ves:
+Want to import the class? Here you go:
 
 ```zenscript
-importar mods.contenttweaker.Chicken;
+import mods.contenttweaker.Chicken;
 ```
 
-## Registrando el pollo
+## Registering the chicken
 
-Después de haber configurado su representación de pollo como lo que quiere que sea, la parte más importante es registrarla.  
-Tenga cuidado, ya que cualquier cambio realizado en esta plantilla después del registro seguirá teniendo efecto. así que deberías crear una nueva representación de pollo para cada pollo que quieras tener.
+After you have set your chickenRepresentation to be what you want it to be, the most important part is to register it.  
+Be careful though, as any changes done to this template after the the registering will still take effect, so you should create a new chickenRepresentation for each chicken you want to have.
 
-## Propiedades de Zeng
+## ZenProperties
 
-Puede cambiar o obtener el valor actual de las propiedades por `objeto. ame = newValue` o usando los métodos `object.setName(newValue);`
+You can change or get the current value of the properties either by `object.name = newValue` or by using the methods `object.setName(newValue);`
 
-Ejemplo:
+Example:
 
 ```zenscript
 chickenRep.layItem = <minecraft:iron_ingot>;
@@ -30,15 +30,15 @@ chickenRep.setLayItem(<minecraft:gold_ingot>);
 print(chickenRep.getLayItem().displayName);
 ```
 
-| nombre                | tipo                                                                                      |
-| --------------------- | ----------------------------------------------------------------------------------------- |
-| nombre                | cadena                                                                                    |
-| layItem               | [IItemStack](/Vanilla/Items/IItemStack/)                                                  |
-| soltar elemento       | [IItemStack](/Vanilla/Items/IItemStack/)                                                  |
-| Color de fondo        | [CTColor](/Mods/ContentTweaker/Vanilla/Types/Color/Color/)                                |
-| foregroundColor       | [CTColor](/Mods/ContentTweaker/Vanilla/Types/Color/Color/)                                |
-| ubicación de texto    | [Ubicación CTResources](/Mods/ContentTweaker/Vanilla/Types/Resources/CTResourceLocation/) |
-| spawnTipo             | cadena                                                                                    |
-| Coeficiente de estrés | flotante                                                                                  |
-| uno padre             | [Ubicación CTResources](/Mods/ContentTweaker/Vanilla/Types/Resources/CTResourceLocation/) |
-| parentTwo             | [Ubicación CTResources](/Mods/ContentTweaker/Vanilla/Types/Resources/CTResourceLocation/) |
+| name            | type                                                                                   |
+| --------------- | -------------------------------------------------------------------------------------- |
+| name            | string                                                                                 |
+| layItem         | [IItemStack](/Vanilla/Items/IItemStack/)                                               |
+| dropItem        | [IItemStack](/Vanilla/Items/IItemStack/)                                               |
+| backgroundColor | [CTColor](/Mods/ContentTweaker/Vanilla/Types/Color/Color/)                             |
+| foregroundColor | [CTColor](/Mods/ContentTweaker/Vanilla/Types/Color/Color/)                             |
+| textureLocation | [CTResourceLocation](/Mods/ContentTweaker/Vanilla/Types/Resources/CTResourceLocation/) |
+| spawnType       | string                                                                                 |
+| layCoefficient  | float                                                                                  |
+| parentOne       | [CTResourceLocation](/Mods/ContentTweaker/Vanilla/Types/Resources/CTResourceLocation/) |
+| parentTwo       | [CTResourceLocation](/Mods/ContentTweaker/Vanilla/Types/Resources/CTResourceLocation/) |
