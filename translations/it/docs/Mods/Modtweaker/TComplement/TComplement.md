@@ -1,5 +1,5 @@
-# Complemento
+# TComplement
 
-Il pacchetto complemento Tinkers è utilizzato esclusivamente per modificare il fusore TComplement.
+The Tinkers' Complement Package is used solely for altering the TComplement melter.
 
-Puoi modificare le sue [override](/Mods/Modtweaker/TComplement/Handlers/Overrides) o la sua [Blacklist](/Mods/Modtweaker/TComplement/Handlers/Blacklist).
+You can either alter its [overrides](/Mods/Modtweaker/TComplement/Handlers/Overrides) or its [Blacklist](/Mods/Modtweaker/TComplement/Handlers/Blacklist).
