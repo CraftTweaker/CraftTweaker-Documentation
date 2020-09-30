@@ -1,126 +1,126 @@
-# Evento de HitHit Crítico
+# MCCriticalHitEvent
 
-Esta clase fue añadida por un mod con la ID  `crafttweaker`. Necesitas tener este mod instalado si quieres usar esta caracteristica.
+This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
 
-## Importar la clase
-Puede ser requerido que importes el paquete si encuentras algun problema (como crear un Array).
+## Importing the class
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
 ```zenscript
-crafttweaker.api.event.entity.player.MCriticalHitEvent
+crafttweaker.api.event.entity.player.MCCriticalHitEvent
 ```
 
-## Constructores
+## Constructors
 ```zenscript
-nuevo crafttweaker.api.event.entity.player.MCriticalHitEvent(handler as function.Consumer<crafttweaker.api.event.entity.player.MCCriticalHitEvent>);
+new crafttweaker.api.event.entity.player.MCCriticalHitEvent(handler as function.Consumer<crafttweaker.api.event.entity.player.MCCriticalHitEvent>);
 ```
-| Parámetro | Tipo                                                                                                                             | Descripción                   |
-| --------- | -------------------------------------------------------------------------------------------------------------------------------- | ----------------------------- |
-| handler   | function.Consumer<[crafttweaker.api.event.entity.player.MCriticalHitEvent](/vanilla/api/event/entity/player/MCCriticalHitEvent)> | No se proporcionó descripción |
+| Parameter | Type                                                                                                                              | Description             |
+| --------- | --------------------------------------------------------------------------------------------------------------------------------- | ----------------------- |
+| handler   | function.Consumer<[crafttweaker.api.event.entity.player.MCCriticalHitEvent](/vanilla/api/event/entity/player/MCCriticalHitEvent)> | No description provided |
 
 
 
-## Métodos
+## Methods
 ### getDamageModifier
 
-El modificador de daño del golpe.<br> Esto es por defecto 1.5F para golpes cirílitos y 1F para golpes normales.
+The damage modifier for the hit.<br> This is by default 1.5F for ciritcal hits and 1F for normal hits .
 
-Devuelve flotante
+Returns float
 
 ```zenscript
-miMCriticalHitEvent.getDamageModifier();
+myMCCriticalHitEvent.getDamageModifier();
 ```
 
-### %s Jugador
+### getEntityPlayer
 
-Devuelve [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
+Returns [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
 
 ```zenscript
-MyMCriticalHitEvent.getEntityPlayer();
+myMCCriticalHitEvent.getEntityPlayer();
 ```
 
 ### getOldDamageModifier
 
-El modificador de daño inicial para el golpe generará cualquier cambio.<br> Esto es 1.5F para golpes circulares y 1F para golpes normales.
+The orignal damage modifier for the hit wthout any changes.<br> This is 1.5F for ciritcal hits and 1F for normal hits .
 
-Devuelve flotante
+Returns float
 
 ```zenscript
-miMCriticalHitEvent.getOldDamageModifier();
+myMCCriticalHitEvent.getOldDamageModifier();
 ```
 
 ### getPlayer
 
-Devuelve: `Jugador`
+Returns: `Player`
 
-Devuelve [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
+Returns [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
 
 ```zenscript
-myMCriticalHitEvent.getPlayer();
+myMCCriticalHitEvent.getPlayer();
 ```
 
-### hastaResultado
+### hasResult
 
-Determina si este evento espera un valor de resultado significativo. Nota: Los eventos con la anotación HasResult tendrán este método automáticamente añadido para devolver verdadero.
+Determines if this event expects a significant result value. Note: Events with the HasResult annotation will have this method automatically added to return true.
 
-Devuelve booleano
+Returns boolean
 
 ```zenscript
-miMCriticalHitEvent.hasResult();
+myMCCriticalHitEvent.hasResult();
 ```
 
-### es cancelable
+### isCancelable
 
-Determine si esta función es cancelable. Devuelve: `Si el acceso a setCanceled debe ser permitido
- Nota:
- Los eventos con la anotación Cancelable tendrán este método automáticamente añadido para devolver verdadero.`
+Determine if this function is cancelable at all. Returns: `If access to setCanceled should be allowed
+ Note:
+ Events with the Cancelable annotation will have this method automatically added to return true.`
 
-Devuelve booleano
+Returns boolean
 
 ```zenscript
-miMCriticalHitEvent.isCancelable();
+myMCCriticalHitEvent.isCancelable();
 ```
 
-### es cancelado
+### isCanceled
 
-Determine si este evento es cancelado y debe dejar de ejecutarse. Devuelve: `El estado actual cancelado`
+Determine if this event is canceled and should stop executing. Returns: `The current canceled state`
 
-Devuelve booleano
+Returns boolean
 
 ```zenscript
-miMCriticalHitEvent.isCanceled();
+myMCCriticalHitEvent.isCanceled();
 ```
 
 ### isVanillaCritical
 
-Devuelve verdadero si este golpe fue crítico por vainilla
+Returns true if this hit was critical by vanilla
 
-Devuelve booleano
-
-```zenscript
-miMCriticalHitEvent.isVanillaCritical();
-```
-
-### setCancelado
+Returns boolean
 
 ```zenscript
-myMCriticalHitEvent.setCanceled(cancelar como booleano);
+myMCCriticalHitEvent.isVanillaCritical();
 ```
 
-| Parámetro | Tipo    | Descripción                   |
-| --------- | ------- | ----------------------------- |
-| cancelar  | boolean | No se proporcionó descripción |
+### setCanceled
+
+```zenscript
+myMCCriticalHitEvent.setCanceled(cancel as boolean);
+```
+
+| Parameter | Type    | Description             |
+| --------- | ------- | ----------------------- |
+| cancel    | boolean | No description provided |
 
 
 ### setDamageModifier
 
-Esto establece el multiplicador de daños por el golpe. Si lo ajusta a 0, las partículas todavía se generan pero no se hace daño.
+This set the damage multiplier for the hit. If you set it to 0, then the particles are still generated but damage is not done.
 
 ```zenscript
-miMCriticalHitEvent.setDamageModifier(mod como flotante);
+myMCCriticalHitEvent.setDamageModifier(mod as float);
 ```
 
-| Parámetro | Tipo     | Descripción                   |
-| --------- | -------- | ----------------------------- |
-| mod       | flotante | No se proporcionó descripción |
+| Parameter | Type  | Description             |
+| --------- | ----- | ----------------------- |
+| mod       | float | No description provided |
 
 
 
