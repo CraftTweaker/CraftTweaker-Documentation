@@ -2,28 +2,28 @@
 
 Questa classe è stata aggiunta da una mod con ID `crafttweaker`. Perciò, è necessario avere questa mod installata per poter utilizzare questa funzione.
 
-## Importare la classe
+## Importing the class
 Potrebbe essere necessario importare il pacchetto, se si incontrano dei problemi (come castare un vettore), quindi meglio essere sicuri e aggiungere la direttiva di importazione.
 ```zenscript
 crafttweaker.api.commands.custom.MCAmbiguityConsumer
 ```
 
-## Interfaccia Funzionale
+## Functional Interface
 
-Questa classe è un'interfaccia funzionale. Ciò significa che è possibile utilizzare la notazione lambda per creare un'istanza di esso. La notazione lambda assomiglia:
+This class is a functional interface. This means that you can use the lambda notation to create an instance of it. The lambda notation looks like:
 ```zenscript
 (genitore, figlio, fratello, ingressi) =>{}
 ```
-## Metodi
+## Methods
 ### ambiguo
 
 ```zenscript
 myMCAmbiguityConsumer.ambiguous(parent as crafttweaker.api.commands.custom.MCCommandNode, child as crafttweaker.api.commands.custom.MCCommandNode, sibling as crafttweaker.api.commands.custom.MCCommandNode, inputs as Collection<String>);
 ```
 
-| Parametro | Tipo                                                                                         | Descrizione                 |
+| Parameter | Type                                                                                         | Description                 |
 | --------- | -------------------------------------------------------------------------------------------- | --------------------------- |
-| genitore  | [crafttweaker.api.commands.custom.MCCommandNode](/vanilla/api/commands/custom/MCCommandNode) | Nessuna descrizione fornita |
+| parent    | [crafttweaker.api.commands.custom.MCCommandNode](/vanilla/api/commands/custom/MCCommandNode) | Nessuna descrizione fornita |
 | figlio    | [crafttweaker.api.commands.custom.MCCommandNode](/vanilla/api/commands/custom/MCCommandNode) | Nessuna descrizione fornita |
 | fratello  | [crafttweaker.api.commands.custom.MCCommandNode](/vanilla/api/commands/custom/MCCommandNode) | Nessuna descrizione fornita |
 | inputs    | Raccolta&lt;String&gt;                                                           | Nessuna descrizione fornita |
