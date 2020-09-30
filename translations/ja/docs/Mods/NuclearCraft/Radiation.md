@@ -1,108 +1,108 @@
-# <unk>
-**注意: 括弧 `([...])` のダブルセットはここでは必要ありません！**
+# Radiation
+**Note: The double set of brackets `([...])` is not required here!**
 
-## <unk>
-このメソッドは、ラド/ティックの `IIngredient` の放射を取得します。
+## Radiation
+This method gets the radiation of an `IIngredient` in rads/tick.
 ```zenscript
 mods.nuclearcraft.radiation.getRadiationLevel(itemInput);
 ```
-## 変異をブロック
-このメソッドはブロックの変更を追加します。 放射線が `radiationThreshold` を下回っても、ブロックは変異しません。
+## Block Mutations
+This method adds a block mutation. The Block will not mutate when the radiation is below `radiationThreshold`.
 ```zenscript
-mods.nutcraft.radiation.addBlockMutation(blockInput, blockOutput, double radiationThreshold);
+mods.nuclearcraft.radiation.addBlockMutation(blockInput, blockOutput, double radiationThreshold);
 ```
 
-## 放射線イミュニティ
-この方法は、ステージに応じてプレイヤーの免疫を制御する能力を与えます。 `defaultImunity` は、指定されたステージなしでプレイヤーの免疫を指定する真偽値です。 `stageNames` は、プレイヤーの免疫を切り替えることができるすべてのステージの名前の配列です。
+## Radiation Immunity
+This method gives the ability to control the immunity of players depending on the stage. `defaultImmunity` is a boolean specifiying the players' immunity without the specified stages. `stageNames` is an array of the names of all stages that can toggle the immunity of players.
 ```zenscript
-mods.naturcraft.radiation.setRadiationImmunityGameStages(boolean defaultImmunity, string[] stageNames);
+mods.nuclearcraft.radiation.setRadiationImmunityGameStages(boolean defaultImmunity, string[] stageNames);
 ```
 
-## Radiation Getter/Setters
+## Radiation Getters/Setters
 
-### 放射線の追加
-`amount` is the amount of radiation added to the `IEntityLivingBase`. `useImmunity` は関数が `IEntityLivingBase` であっても免疫があるかどうかを制御します。
+### Adding Radiation
+`amount` is the amount of radiation added to the `IEntityLivingBase`. `useImmunity` controls whether the function occurs even the `IEntityLivingBase` is immune.
 ```zenscript
 IEntityLivingBase.addRadiation(double amount, @Optional boolean useImmunity);
 ```
 
-### 放射線の設定
-`amount` は、 `IEntityLivingBase` に適用される放射線のレベルです。 `useImmunity` は関数が `IEntityLivingBase` であっても免疫があるかどうかを制御します。
+### Setting Radiation
+`amount` is the level of radiation that is applied to the `IEntityLivingBase`. `useImmunity` controls whether the function occurs even the `IEntityLivingBase` is immune.
 ```zenscript
 IEntityLivingBase.setRadiation(double amount, @Optional boolean useImmunity);
 ```
 
-### 放射能を得ます
-このメソッドは、 `IEntityLivingBase` の放射線レベルを返します。
+### Getting Radiation
+This method returns the level of radiation of the `IEntityLivingBase`.
 ```zenscript
 IEntityLivingBase.getRadiation();
 ```
 
-## レーダウェイバッファーゲッター/セッター
+## Radaway Buffer Getters/Setters
 
-### レーダウェイバッファーの追加
-`amount` is the amount of Radaway Buffer added to the `IEntityLivingBase`. `slowBuffer` は、追加されたRadaway Bufferが遅いバッファであるかどうかを決定します。
+### Adding Radaway Buffer
+`amount` is the amount of Radaway Buffer added to the `IEntityLivingBase`. `slowBuffer` decides if the Radaway Buffer added is a slow buffer.
 ```zenscript
 IEntityLivingBase.addRadiationResistance(double amount, @Optional boolean slowBuffer);
 ```
-### レーダウェイバッファーの設定
-`amount` は、 `IEntityLivingBase` に適用されるラダウェイバッファーの量です。 `slowBuffer` は、追加されたRadaway Bufferが遅いバッファであるかどうかを決定します。
+### Setting Radaway Buffer
+`amount` is the amount of Radaway Buffer that is applied to the `IEntityLivingBase`. `slowBuffer` decides if the Radaway Buffer added is a slow buffer.
 ```zenscript
 IEntityLivingBase.setRadiationResistance(double amount, @Optional boolean slowBuffer);
 ```
 
-### レーダウェイバッファーの入手
-このメソッドは、 `IEntityLivingBase` の Radaway Buffer を返します。 `slowBuffer` は、返された値にスローバッファが含まれるかどうかを決定します。
+### Getting Radaway Buffer
+This method returns the Radaway Buffer of the `IEntityLivingBase`. `slowBuffer` determines whether slow buffer is included in the returned value.
 ```zenscript
 IEntityLivingBase.getRadiationResistance(@Optional boolean slowBuffer);
 ```
 
-## 毒バッファーゲッター/セッター
+## Poison Buffer Getters/Setters
 
-### 毒バッファーを追加中
-`amount` は、 `IEntityLivingBase` に追加された毒バッファーの量です。
+### Adding Poison Buffer
+`amount` is the amount of Poison Buffer added to the `IEntityLivingBase`.
 ```zenscript
 IEntityLivingBase.addPoisonBuffer(double amount);
 ```
-### 毒バッファーの設定
-`amount` は、 `IEntityLivingBase` に適用される毒バッファーの量です。
+### Setting Poison Buffer
+`amount` is the amount of Poison Buffer that is applied to the `IEntityLivingBase`.
 ```zenscript
 IEntityLivingBase.setPoisonBuffer(double amount);
 ```
 
-### 毒バッファーを取得中
-このメソッドは、 `IEntityLivingBase` の毒バッファーを返します。
+### Getting Poison Buffer
+This method returns the Poison Buffer of the `IEntityLivingBase`.
 ```zenscript
 IEntityLivingBase.getPoisonBuffer();
 ```
 
-## 放射線耐性ゲッター/セッター
-### 放射線耐性の追加
-`amount` は、 `IEntityLivingBase` に加えられる放射線耐性の量である。
+## Radiation Resistance Getters/Setters
+### Adding Radiation Resistance
+`amount` is the amount of Radiation Resistance added to the `IEntityLivingBase`.
 ```zenscript
-IEntityLivingBase.addRadawayBuffer(倍額);
+IEntityLivingBase.addRadawayBuffer(double amount);
 ```
-## 放射線耐性の設定
-`amount` は、 `IEntityLivingBase` に適用される放射線耐性の量である。
+## Setting Radiation Resistance
+`amount` is the amount of Radiation Resistance that is applied to the `IEntityLivingBase`.
 ```zenscript
-IEntityLivingBase.setRadawayBuffer(倍額);
+IEntityLivingBase.setRadawayBuffer(double amount);
 ```
 
-## 放射線耐性を得ます
-この方法は、 `IEntityLivingBase` の放射線耐性を返します。
+## Getting Radiation Resistance
+This method returns the Radiation Resistance of the `IEntityLivingBase`.
 ```zenscript
 IEntityLivingBase.getRadawayBuffer();
 ```
-## 放射能レベルゲッター
+## Radiation Level Getters
 
-### 未加工の放射線レベル
-このメソッドは、ラード内の `IEntityLivingBase` の放射を返します。
+### Raw Radiation Level
+This method returns the radiation of the `IEntityLivingBase` in rads.
 ```zenscript
 IEntityLivingBase.getRawRadiationLevel();
 ```
 
-### 放射能レベル
-このメソッドは、rads/tick の `IEntityLivingBase` の放射線レベルの変化を返します。
+### Radiation Level
+This method returns the change in radiation level of the `IEntityLivingBase` in rads/tick.
 ```zenscript
 IEntityLivingBase.getRadiationLevel();
 ```
