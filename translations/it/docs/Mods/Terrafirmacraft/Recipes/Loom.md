@@ -1,26 +1,26 @@
 # Loom
 
-## Pacchetto
+## Package
 ```zenscript
-import mods.terrafirmacraft.Telaio;
+import mods.terrafirmacraft.Loom;
 ```
 
-## Addizione
+## Addition
 
 ```zenscript
 Loom.addRecipe(String registryName, IIngredient input, IItemStack output, int steps, String loomTexture);
 ```
-- passi è il numero di passaggi necessari per completare la ricetta. È il numero di volte che il giocatore deve fare clic sul telaio, ogni movimento del ciclo avanza un passo. All'interno di TFC, questo è lo stesso del numero di elementi necessari per la ricetta, ma non è tenuto ad essere così.
-- loomTexture è un percorso (`ResourceLocation`) a un file di texture, da usare per visualizzare sul telaio del mondo. Ad esempio, "minecraft:textures/blocks/wool_colored_white.png" fa riferimento alla texture vanilla per la lana bianca). Se stai usando delle texture personalizzate, hai bisogno di una forma di caricamento dati/risorse (leggi: un pacchetto di risorse) per poter fare riferimento alla tua texture in modo corretto.
+- steps is the number of steps needed to complete the recipe. It's the number of times the player has to click the loom, each movement of the loop advances one step. Within TFC, this is the same as the number of items required for the recipe, but it is not required to be so.
+- loomTexture is a path (`ResourceLocation`) to a texture file, to be used to display on the loom in the world.(For example, "minecraft:textures/blocks/wool_colored_white.png" references the vanilla texture for white wool). If you are using custom textures you need some form of data/resource loading (read: a resource pack) for this to be able to reference your texture correctly.
 
-## Rimozione
+## Removal
 
 ```zenscript
 Loom.removeRecipe(IItemStack output);
 Loom.removeRecipe(String registryName);
 ```
 
-## Esempio
+## Example
 ```zenscript
 Loom.addRecipe("burlap_cloth", <tfc:crop/product/jute_disc>, <tfc:crop/product/burlap_cloth>, "tfc:textures/blocks/devices/loom/product/burlap.png");
 ```
