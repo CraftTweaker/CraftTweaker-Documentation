@@ -1,21 +1,21 @@
-# Cámara de Remontaje
+# Reassembly Chamber
 
-## Paquete
+## Package
 ```zenscript
-importar mods.calculator.reassemblyChamber;
+import mods.calculator.reassemblyChamber;
 ```
 
 ## Metodos
 
-- **[IIngrediente](/Vanilla/Variable_Types/IIngredient/) entrada** La entrada.
-- **[IIngrediente](/Vanilla/Variable_Types/IIngredient/) salida** La salida.
+- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input** The input.
+- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) output** The output.
 
-## Adicional
+## Addition
 ```zenscript
-reassemblyChamber.addRecipe(entrada IIngredient, salida IIngredient);
+reassemblyChamber.addRecipe(IIngredient input, IIngredient output);
 ```
-## Eliminar
+## Removal
 ```zenscript
 
-reassemblyChamber.removeRecipe(salida IIngredient);
+reassemblyChamber.removeRecipe(IIngredient output);
 ```
