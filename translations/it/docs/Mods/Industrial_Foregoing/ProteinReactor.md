@@ -1,12 +1,12 @@
-# Reattore Di Proteine
+# Protein Reactor
 
-### Importazione
+### Importing
 
 ```zenscript
 import mods.industrialforegoing.ProteinReactor;
 ```
 
-### Aggiunta
+### Adding
 
 ```zenscript
 ProteinReactor.add(IItemStack input);
@@ -14,7 +14,7 @@ ProteinReactor.add(IItemStack input);
 ProteinReactor.add(<minecraft:diamond>);
 ```
 
-### Rimozione
+### Removing
 
 ```zenscript
 ProteinReactor.remove(IItemStack input);
