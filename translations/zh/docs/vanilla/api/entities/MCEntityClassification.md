@@ -14,11 +14,11 @@ MCEntityClassification实现了以下接口。 这意味着对这个接口可用
 
 ## 参数
 
-| 名称                       | 类型          | 可获得  | 可设置   |
-| ------------------------ | ----------- | ---- | ----- |
-| commandString #命令字符串     | 字符串[string] | true | false |
-| isAnimal #识别为动物          | boolean     | true | false |
-| isPeaceful #友好生物         | boolean     | true | false |
-| maxNumberOfEntity #实体最大值 | 整数          | true | false |
-| 名称                       | 字符串[string] | true | false |
+| 名称                       | 类型      | 可获得  | 可设置   |
+| ------------------------ | ------- | ---- | ----- |
+| commandString            | String  | true | false |
+| isAnimal #识别为动物          | boolean | true | false |
+| isPeaceful #友好生物         | boolean | true | false |
+| maxNumberOfEntity #实体最大值 | int     | true | false |
+| name                     | String  | true | false |
 
