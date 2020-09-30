@@ -1,6 +1,6 @@
-# Ruota Da Filatura
+# Spinning Wheel
 
-## Pacchetto
+## Package
 `mods.atum.SpinningWheel;`
 
 ## Aggiungere una Ricetta
@@ -9,9 +9,9 @@
 
 - `input` [IItemStack](/vanilla/api/items/IItemStack)
 - `output` [IItemStack](/vanilla/api/items/IItemStack)
-- `rotazioni` Qualsiasi numero sopra 0
+- `rotations` Any number above 0
 
-Aggiunge una ricetta con l'input & output specificato, che richiede le rotazioni specificate per completare la ricetta
+Adds a recipe with the specified input & output, that takes the specified rotations to complete the recipe
 
 ```zenscript
 mods.atum.SpinningWheel.addRecipe(<item:atum:scroll>, <item:minecraft:string>, 3);
@@ -31,19 +31,19 @@ Rimuove tutte le ricette il cui prodotto è l'[IItemStack](/vanilla/api/items/II
 mods.atum.SpinningWheel.removeRecipeByOutput(<item:atum:linen_thread>);
 ```
 
-### Rimuovi Ricette per Uscita & Input
+### Remove Recipes by Output & Input
 
 `mods.atum.SpinningWheel.removeRecipeByOutputInput(output, input);`
 
 - `output` [IItemStack](/vanilla/api/items/IItemStack)
 - `input` [IItemStack](/vanilla/api/items/IItemStack)
 
-Rimuove la ricetta specifica, con l'output specificato & input
+Removes the specific recipe, with the specified output & input
 
 ```zenscript
 mods.atum.SpinningWheel.removeRecipeByOutputInput(<item:atum:linen_thread>, <item:atum:flax>);
 ```
 
-### Altri metodi di rimozione
+### Other removal methods
 
-Vedi [Gestori ricette](/recipes/recipe_managers) per altri modi per rimuovere le ricette della ruota rotante
+See [Recipe Managers](/recipes/recipe_managers) for other ways to remove Spinning Wheel recipes
