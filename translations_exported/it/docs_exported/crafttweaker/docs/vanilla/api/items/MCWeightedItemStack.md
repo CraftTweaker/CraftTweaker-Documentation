@@ -4,7 +4,7 @@ Un ItemStack con una possibilità, di solito usato per gli output delle ricette.
 
 Questa classe è stata aggiunta da una mod con ID `crafttweaker`. Perciò, è necessario avere questa mod installata per poter utilizzare questa funzione.
 
-## Importare la classe
+## Importing the class
 Potrebbe essere necessario importare il pacchetto, se si incontrano dei problemi (come castare un vettore), quindi meglio essere sicuri e aggiungere la direttiva di importazione.
 ```zenscript
 crafttweaker.api.item.MCWeightedItemStack
@@ -14,21 +14,21 @@ crafttweaker.api.item.MCWeightedItemStack
 MCWeightedItemStack implementa le seguenti interfacce. Ciò significa che ogni metodo presente nell'interfaccia può essere usato anche per questa classe.
 - [crafttweaker.api.brackets.CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
 
-## Costruttori
+## Constructors
 Crea manualmente il weightedItemStack. Di solito è possibile utilizzare l'operatore o il metodo `.weight(weight)` di IItemStack, anche se
 ```zenscript
 new crafttweaker.api.item.MCWeightedItemStack(itemStack as crafttweaker.api.item.IItemStack, weight as double);
 new crafttweaker.api.item.MCWeightedItemStack(<item:minecraft:bedrock>, 0.5D);
 ```
-| Parametro | Tipo                                                              | Descrizione                           |
+| Parameter | Type                                                              | Description                           |
 | --------- | ----------------------------------------------------------------- | ------------------------------------- |
 | itemStack | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | La Pila                               |
-| peso      | doppia                                                            | La possibilità, tra 0 (0%) e 1 (100%) |
+| weight    | double                                                            | La possibilità, tra 0 (0%) e 1 (100%) |
 
 
 
-## Metodi
-### peso
+## Methods
+### weight
 
 Crea una nuova pila ponderata con il peso dato
 
@@ -41,21 +41,21 @@ Tipo di restituzione: [crafttweaker.api.item.MCWeightedItemStack](/vanilla/api/i
 <item:minecraft:bedrock>.weight(0.5D).weight(0.75D);
 ```
 
-| Parametro | Tipo   | Descrizione    |
+| Parameter | Type   | Description    |
 | --------- | ------ | -------------- |
-| NuovoPeso | doppia | La percentuale |
+| NuovoPeso | double | La percentuale |
 
 
 
-## Proprietà
+## Properties
 
-| Nome          | Tipo                                                              | Ha Getter | Ha Setter |
+| Name          | Type                                                              | Ha Getter | Ha Setter |
 | ------------- | ----------------------------------------------------------------- | --------- | --------- |
-| commandString | Stringa                                                           | vero      | falso     |
-| pila          | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | vero      | falso     |
-| peso          | doppia                                                            | vero      | falso     |
+| commandString | String                                                            | true      | false     |
+| stack         | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | true      | false     |
+| weight        | double                                                            | true      | false     |
 
-## Operatori
+## Operators
 ### MUL
 
 Imposta l'importo dell'oggettoStack. <p> Se lo Stack originale era mutabile, muta anche la dimensione dello stack originale.
@@ -67,7 +67,7 @@ Imposta l'importo dell'oggettoStack. <p> Se lo Stack originale era mutabile, mut
 <item:minecraft:bedrock>.weight(0.5D) * 5
 ```
 
-| Parametro    | Tipo | Descrizione                     |
+| Parameter    | Type | Description                     |
 | ------------ | ---- | ------------------------------- |
 | nuovoImporto | int  | La nuova dimensione dello stack |
 ### MOD
@@ -81,7 +81,7 @@ Crea una nuova pila ponderata con la percentuale data
 <item:minecraft:bedrock>.weight(0.5D) % 75
 ```
 
-| Parametro | Tipo | Descrizione    |
+| Parameter | Type | Description    |
 | --------- | ---- | -------------- |
 | NuovoPeso | int  | La percentuale |
 
