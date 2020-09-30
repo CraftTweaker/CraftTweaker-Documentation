@@ -1,6 +1,6 @@
-# Плеер UseHoe
+# PlayerUseHoe
 
-Событие PlayerUseHoe запускается всякий раз, когда игрок использует своего куда... Если вы знаете, что я имею в виду.
+The PlayerUseHoe Event is fired whenever a player uses his hoe... If you know what I mean.
 
 ## Класс события
 
@@ -10,12 +10,12 @@ You can, of course, also [import](/AdvancedFunctions/Import/) the class before a
 
 ## Наследование от интерфейсов событий
 
-PlayerUseHoe Events реализуют следующие интерфейсы и также могут вызвать все методы/getters/setters:
+PlayerUseHoe Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
 
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 - [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
 - [IProcessableEvent](/Vanilla/Events/Events/IProcessableEvent/)
-- [Событие доступно](/Vanilla/Events/Events/IEventPositionable/)
+- [IEventPositionable](/Vanilla/Events/Events/IEventPositionable/)
 
 ## Геттеры
 
@@ -23,19 +23,19 @@ PlayerUseHoe Events реализуют следующие интерфейсы �
 
 | ZenGetter    | Возвращаемый тип                            |
 | ------------ | ------------------------------------------- |
-| `отменено`   | boolean                                     |
-| `обработано` | boolean                                     |
-| `х`          | int                                         |
-| `у`          | int                                         |
+| `canceled`   | boolean                                     |
+| `processed`  | boolean                                     |
+| `x`          | int                                         |
+| `y`          | int                                         |
 | `z`          | int                                         |
 | `player`     | [IPlayer](/Vanilla/Players/IPlayer/)        |
 | `world`      | [IWorld](/Vanilla/World/IWorld/)            |
-| `блок`       | [БИБлок](/Vanilla/Blocks/IBlock/)           |
+| `block`      | [IBlock](/Vanilla/Blocks/IBlock/)           |
 | `blockState` | [IBlockState](/Vanilla/Blocks/IBlockState/) |
-| `измерение`  | int                                         |
-| `элемент`    | [IItemStack](/Vanilla/Items/IItemStack/)    |
+| `dimension`  | int                                         |
+| `item`       | [IItemStack](/Vanilla/Items/IItemStack/)    |
 
 ## Методы
 
-- `event.cancel()` устанавливает событие, как отменено
-- `event.process()` устанавливает событие как обработанное
+- `event.cancel()` sets the event as cancelled
+- `event.process()` sets the event as processed
