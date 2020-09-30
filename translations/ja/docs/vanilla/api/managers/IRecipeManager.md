@@ -1,103 +1,103 @@
 # IRecipeManager
 
-レジストリベースのハンドラのデフォルトインターフェイスは、すべてResourceLocationによってレシピを削除できるためです。
+Default interface for Registry based handlers as they can all remove recipes by ResourceLocation.
 
-crafttweakerのmod-idを持つmodによって追加されているクラスです。 従って、この機能を利用する場合はこのmodをインストールする必要があります。
+This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
 
-## クラスのインポート
-問題が発生した場合には、インポートが必要になります。とはいえ、お手数ですが予めインポートしておくほうが安全です。
+## Importing the class
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
 ```zenscript
-crafttweaker.api.registrries.IRecipeManager
+crafttweaker.api.registries.IRecipeManager
 ```
 
-## 実装されたインターフェース
-IRecipeManager は以下のインターフェースを実装しています。 つまり、利用可能な任意のメソッドはこのクラスでも使用できます。
-- [craftweaker.api.brackets.CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
+## Implemented Interfaces
+IRecipeManager implements the following interfaces. That means any method available to them can also be used on this class.
+- [crafttweaker.api.brackets.CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
 
-## メソッド
+## Methods
 ### addJSONRecipe
 
-提供されたIDataに基づいてレシピを追加します。 提供されたIDataはDataPack JSONを表し、IRecipeTypeシステムをサポートするDataPackのレシピを効果的に登録することができます。
+Adds a recipe based on a provided IData. The provided IData should represent a DataPack JSON, this effectively allows you to register recipes for any DataPack supporting IRecipeType systems.
 
 ```zenscript
 craftingTable.addJSONRecipe(name as String, data as crafttweaker.api.data.IData);
-craftingTable.addJSONRecipe("recipe_name", {item:<item:minecraft:gold_ore>.registryName},result:<item:minecraft:cooked_porkchop>.registryName,experience:0.35 as float, cookingtime:100});
+craftingTable.addJSONRecipe("recipe_name", {ingredient:{item:<item:minecraft:gold_ore>.registryName},result:<item:minecraft:cooked_porkchop>.registryName,experience:0.35 as float, cookingtime:100});
 ```
 
-| パラメータ | タイプ                                                    | 説明             |
-| ----- | ------------------------------------------------------ | -------------- |
-| name  | 文字列型                                                   | レシピの名前         |
-| データ   | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | jsonファイルを表すデータ |
+| Parameter | Type                                                   | Description                     |
+| --------- | ------------------------------------------------------ | ------------------------------- |
+| name      | 文字列型                                                   | name of the recipe              |
+| data      | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | data representing the json file |
 
 
-### すべて削除
+### removeAll
 
-このレジストリ内のすべてのレシピを削除
+Remove all recipes in this registry
 
 ```zenscript
 craftingTable.removeAll();
 ```
 
-### removeByModo
+### removeByModid
 
-レジストリ名modidに基づいてレシピを削除
+Remove recipe based on Registry name modid
 
 ```zenscript
 craftingTable.removeByModid(modid as String);
 craftingTable.removeByModid("minecraft");
 ```
 
-| パラメータ | タイプ  | 説明              |
-| ----- | ---- | --------------- |
-| modid | 文字列型 | 取り除くべきレシピの<unk> |
+| Parameter | Type   | Description                    |
+| --------- | ------ | ------------------------------ |
+| modid     | String | modid of the recipes to remove |
 
 
 ### removeByName
 
-レジストリ名に基づいてレシピを削除
+Remove recipe based on Registry name
 
 ```zenscript
 craftingTable.removeByName(name as String);
 craftingTable.removeByName("minecraft:furnace");
 ```
 
-| パラメータ | タイプ  | 説明             |
-| ----- | ---- | -------------- |
-| 名前    | 文字列型 | 削除するレシピのレジストリ名 |
+| Parameter | Type   | Description                       |
+| --------- | ------ | --------------------------------- |
+| name      | String | registry name of recipe to remove |
 
 
 ### removeByRegex
 
-正規表現に基づいてレシピを削除
+Remove recipe based on regex
 
 ```zenscript
 craftingTable.removeByRegex(regex as String);
 craftingTable.removeByRegex("\\d_\\d");
 ```
 
-| パラメータ | タイプ  | 説明        |
-| ----- | ---- | --------- |
-| Regex | 文字列型 | 正規表現と一致する |
+| Parameter | Type   | Description            |
+| --------- | ------ | ---------------------- |
+| regex     | String | regex to match against |
 
 
-### RemoveRecipe
+### removeRecipe
 
-出力に基づいてレシピを削除します。
+Remove a recipe based on it's output.
 
 ```zenscript
-craftingTable.removeRecipe(crafttweaker.api.item.IItemStack);
+craftingTable.removeRecipe(output as crafttweaker.api.item.IItemStack);
 craftingTable.removeRecipe(<item:minecraft:glass>);
 ```
 
-| パラメータ | タイプ                                                               | 説明     |
-| ----- | ----------------------------------------------------------------- | ------ |
-| 出力    | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | レシピの出力 |
+| Parameter | Type                                                              | Description          |
+| --------- | ----------------------------------------------------------------- | -------------------- |
+| output    | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | output of the recipe |
 
 
 
-## プロパティー
+## Properties
 
-| 名称            | タイプ  | ゲッターあり | セッターあり |
-| ------------- | ---- | ------ | ------ |
-| commandString | 文字列型 | true   | false  |
+| 名称            | Type   | Has Getter | Has Setter |
+| ------------- | ------ | ---------- | ---------- |
+| commandString | String | true       | false      |
 
