@@ -1,13 +1,13 @@
-# Accessoire
+# Accessory
 
-## Paquet
+## Package
 
 ```zenscript
-Importer mods.aether_legacy.Accessoires ;
+import mods.aether_legacy.Accessory;
 ```
 ## Usage
 
 ```zenscript
-Accessory.registerAccessory(IItemStack entrée, accessoire de chaîne);
+Accessory.registerAccessory(IItemStack input, String accessory);
 ```
-- La chaîne d'accessoire peut être "Ring", "Pendant", "Cape", "Bouclier", "Gants", "Divers"
+- Accesory string can be "Ring", "Pendant", "Cape", "Shield", "Gloves", "Miscellaneous"
