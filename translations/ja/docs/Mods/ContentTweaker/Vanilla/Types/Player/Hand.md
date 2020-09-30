@@ -1,18 +1,18 @@
-# 手
+# Hand
 
-ハンドはプレーヤーの可能な2つのハンドの列挙です：メインとオフ
+A Hand is an enumeration of the player's two possible hands: main and off
 
 ## パッケージのインポート
 
-問題が発生した場合は、パッケージをインポートする必要があるかもしれませんので、申し訳ありませんし、インポートを追加してください。  
+It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
 `import mods.contenttweaker.Hand;`
 
-## 列挙型
+## Enumerations
 
-ハンドは以下の2つの値を指定できます:
+Hand can be of those two values:
 
-- メイン
-- オフ
+- main
+- off
 
 ```zenscript
 import mods.contenttweaker.Hand;
@@ -23,13 +23,13 @@ Hand.fromString("off");
 Hand.fromString("main");
 ```
 
-## 使用
+## Uses
 
-Handの主な使用法は [IItemUse Function](/Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemUse/) です。
+A Hand's main use is in a [IItemUse Function](/Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemUse/).
 
-## 2つのハンドオブジェクトの比較
+## Comparing two Hand objects
 
-`==` getter を使用して、2つの Hand オブジェクトを比較できます。
+You can compare two Hand objects using the `==` getter.
 
 ```zenscript
 Hand.main() == Hand.main()
