@@ -1,8 +1,8 @@
-# Vollständiges Beispiel
+# Full Scale Example
 
-## Kredit
+## Credit
 
-Anerkennung geht an Lead Developer pupnewfster für das folgende Beispiel!
+Credit goes out to Lead Developer pupnewfster for the below example!
 
     #modloaded compatskills reskillable
     #priority 1000
