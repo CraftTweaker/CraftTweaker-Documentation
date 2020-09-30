@@ -1,14 +1,14 @@
-# 条件調整
+# Requirement Tweaker
 
 ## PSA:
 
-1.2.0以降では、ReskillableやCompatSkillのロックシステムの内部改善のために、Reskillableが積極的に開発されています。 これは、将来的により強力なロックメカニズムを可能にするための努力です。
+As of 1.2.0 and forward, Reskillable is being actively developed to improve on the internals of Reskillable and CompatSkill's Locking Systems. This is in an effort to allow for more powerful locking mechanisms in the future.
 
-## 条件ロック:
+## Requirement-Locking:
 
-現在、主なCrTサポートは要件ロックです。 これは設定システムを介しても行うことができます。 しかし、設定システムは **** NBTをサポートしていません!
+Currently the main CrT support is for Requirement Locking. This can also be accomplished through the config system. However the Config System does **NOT** support NBT!
 
-### 構文
+### Syntax:
 
     // Blank Example:
     mods.compatskills.Requirement.addRequirement(IItemStack item, String... locked)
@@ -28,6 +28,6 @@
     mods.compatskills.Requirement.addRequirement(<minecraft:diamond_pickaxe:*>.withTag({ench: [{lvl: 3 as short, id: 34 as short}]}), "reskillable:mining|7", "reskillable:attack|7");
     
 
-3つのエンチャントロックを1つのロックにまとめた例:
+Example of the 3 Enchantment Locks being Combined into a single lock:
 
-![素晴らしいロック](https://i.imgur.com/gCfETAh.png)
+![Awesome Lock](https://i.imgur.com/gCfETAh.png)
