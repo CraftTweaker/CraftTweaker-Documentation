@@ -1,7 +1,7 @@
-# Небесные ресурсы 2
+# Sky Resources 2
 
-[Небесные ресурсы 2](https://minecraft.curseforge.com/projects/sky-resources) - компаньон "SkyBlock", предоставляющий доступ ко всем основным ресурсам, необходимым для ванильных и других модов с помощью машин, включая нагреватели для сжигания, конденсаторы, водоэкстракторы и многое другое!
+[Sky Resources 2](https://minecraft.curseforge.com/projects/sky-resources) is a skyblock companion mod providing access to all the basic resources needed for vanilla and other mods using machines including combustion heaters, condensers, water extractors, and much more!
 
-## Источник и проблемы
+## Source and Issues
 
-Страница [github](https://github.com/Bartz24/SkyResources) для Sky Resources 2 где вы можете опубликовать замечания или просмотреть исходный код для мода.
+The [github page](https://github.com/Bartz24/SkyResources) for Sky Resources 2 where you can post issues or view the source code for the mod.
