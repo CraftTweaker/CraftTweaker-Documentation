@@ -1,35 +1,35 @@
-# Usines d'Acier
+# Steelworks
 
-Le Steelworks est une machine qui convertit un élément d'entrée et un fluide en un élément de sortie à l'aide de vapeur.
+The Steelworks is a machine that converts an input item and fluid into an output item using steam.
 
-## Appel en cours
+## Calling
 
-Vous pouvez appeler le paquet Steelworks en utilisant `mods.steamagerevolution.Steelworks`.
+You can call the Steelworks package using `mods.steamagerevolution.Steelworks`.
 
-## Enlèvement
+## Removing
 
-Cette fonction supprime la première recette qu'ils trouvent avec la sortie [IItemStack](/Vanilla/Items/IItemStack/) ``:
+This function removes the first recipe they find with the given [IItemStack](/Vanilla/Items/IItemStack/) `output`:
 
 ```java
 mods.steamagerevolution.Steelworks.removeRecipe(IItemStack output);
 
-// Exemples
+// Examples
 mods.steamagerevolution.Steelworks.removeRecipe(<ore:ingotSteel>.firstItem);
 ```
 
-Cette fonction supprime *toutes les recettes* actuellement définies pour les aciers :
+This function removes *all* recipes currently defined for the Steelworks:
 
 ```java
 mods.steamagerevolution.Steelworks.removeAll();
 ```
 
-## Ajout en cours
+## Adding
 
-Cette fonction est utilisée pour ajouter de nouvelles recettes pour les aciers :
+This function is used to add new recipes for the Steelworks:
 
 ```java
 mods.steamagerevolution.Steelworks.addRecipe(ILiquidStack input, IIngredient input2, IItemStack output, int craftTime, int steamCost);
 
-// Exemples
+// Examples
 mods.steamagerevolution.Steelworks.addRecipe(<liquid:iron>, <ore:coal>, <ore:ingotSteel>.firstItem, 200, 200);
 ```
