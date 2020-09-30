@@ -1,15 +1,15 @@
-# Проект ZenScriptX
+# The ZenScriptX Project
 
-Проект ZenScriptX - неофициальный проект, который был начат Босоном и который направлен на расширение возможностей языка ZenScript, добавляя такие элементы, как ленивая оценку циклов, Reflection и функциональных интерфейсов, чтобы функции могли храниться в переменной.
+The ZenScriptX Project is an unofficial project that Boson started and that aims to expand the possibilities of the ZenScript language, adding elements such as lazy evaluation of loops, Reflection, and functional interfaces, so that functions can be stored into a variable.
 
-Использование этих функций требует более глубокого знания о более передовых парадигмах программирования, таких как функциональное программирование и надлежащее представление объективного программирования. Хотя вполне вероятно, что это помешает большому количеству демографии ZenScript использовать эти функциональные возможности, это также приведет к улучшению качества кода для людей с более продвинутыми знаниями о скриптах.
+The usage of this features requires stronger knowledge of more advanced programming paradigms, such as Functional Programming and proper Object Oriented Programming representation. While it's likely that this will prevent a lot of the demographic of ZenScript from actually making use of these functionalities, this will also lead to better quality code for people with more advanced scripting knowledge.
 
-Этот проект все еще продолжается, но начиная с 1. 5, это очень вероятно, что он будет перемещен в свой собственный отдельный ZenCode модуль, для удобства развития и зависимости.
+This project is still ongoing, but as of 1.15, it is highly likely it will be moved in its own separate ZenCode module, for ease of development and dependency.
 
-На данный момент проект ZenScriptX отвечает за добавление следующего набора функций:
+As of now, the ZenScriptX Project is responsbile for adding the following set of functionalities:
 
-- [Директива о препроцессоре флагов](/Mods/Boson/Preprocessor/Exp/)
-- [Функциональные интерфейсы](/Mods/Boson/Functions/Concept/)
-- [Математические функции](/Mods/Boson/Math/Concept/)
-- [Последовательность](/Mods/Boson/Sequences/Concept/)
-- [Отражение](/Mods/Boson/Reflection/Concept/)
+- [Experimental Flags Preprocessor Directive](/Mods/Boson/Preprocessor/Exp/)
+- [Functional Interfaces](/Mods/Boson/Functions/Concept/)
+- [Math Functions](/Mods/Boson/Math/Concept/)
+- [Sequences](/Mods/Boson/Sequences/Concept/)
+- [Reflection](/Mods/Boson/Reflection/Concept/)
