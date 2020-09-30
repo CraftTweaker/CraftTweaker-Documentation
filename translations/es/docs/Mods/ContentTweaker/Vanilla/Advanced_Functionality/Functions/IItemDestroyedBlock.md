@@ -1,20 +1,20 @@
-# ItemDestroyedBlock
+# IItemDestroyedBlock
 
-La función ItemDestroyedBlock se puede añadir a un [Elemento](/Mods/ContentTweaker/Vanilla/Creatable_Content/Item/) y se ejecutará cuando intente romper un bloque con el objeto assiciado.
+The IItemDestroyedBlock function can be added to an [Item](/Mods/ContentTweaker/Vanilla/Creatable_Content/Item/) and will run whenever you try to break a block with the assiciated Item.
 
-## Importando el paquete
+## Importing the package
 
-Podría ser necesario que importes el paquete si encuentras algún problema, así que más vale estar seguro que lo sentimos y añadir la importación.  
-`importar mods.contenttweaker.ItemDestroyedBlock;`
+It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
+`import mods.contenttweaker.IItemDestroyedBlock;`
 
-## Parámetros
+## Parameters
 
-ItemDestroyedBlock es una función con los siguientes parámetros:
+The IItemDestroyedBlock is a function with the following parameters:
 
-- [IMutableItemStack](/Mods/ContentTweaker/Vanilla/Types/Item/IMutableItemStack/) pila → El artículo.
-- [Mundo](/Mods/ContentTweaker/Vanilla/Types/World/IWorld/) mundo → El mundo en el que esto ocurre
-- [ICTBlockState](/Mods/ContentTweaker/Vanilla/Types/Block/ICTBlockState/) blockState → El estado del bloque que está siendo extraído.
-- [IBlockPos](/Mods/ContentTweaker/Vanilla/Types/Block/IBlockPos/) pos → ¿Dónde ocurre esto?
-- [entidad IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) → Quién/¿Qué minas el bloque?
+- [IMutableItemStack](/Mods/ContentTweaker/Vanilla/Types/Item/IMutableItemStack/) stack → The item.
+- [IWorld](/Mods/ContentTweaker/Vanilla/Types/World/IWorld/) world → The world this takes place in
+- [ICTBlockState](/Mods/ContentTweaker/Vanilla/Types/Block/ICTBlockState/) blockState → The state of the block that is being mined.
+- [IBlockPos](/Mods/ContentTweaker/Vanilla/Types/Block/IBlockPos/) pos → Where does this take place?
+- [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) entity → Who/What mines the block?
 
-La función necesita devolver un valor booleano, que es `verdadero` si el proceso blockBreaking es exitoso, y `falso` si lo hace.
+The Function needs to return a boolean, that is `true` if the blockBreaking process is successfull, and `false` if it ain't.
