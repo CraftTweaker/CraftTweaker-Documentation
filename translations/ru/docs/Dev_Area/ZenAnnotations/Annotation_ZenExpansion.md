@@ -22,12 +22,12 @@ public class Expansion {
 <minecraft:iron_ingot>.print();
 ```
 
-Поскольку это расширение является первым параметром экземпляра класса!  
-Этот параметр не будет доступен в ZS.
+Since this is an expansion the first parameter is the class' instance!  
+This parameter will not be available in ZS.
 
 ## Какие классы должны быть помечены || Дополнительная информация
 
-- Все методы должны начинаться с параметра, представляющего экземпляр расширенного класса. Кроме того, все методы внутри расширения должны быть статичными (... и публичная).
-- Вы можете аннотировать все классы Java
-- Вы должны дать аннотацию значения строки (например, `crafttweaker.item.IItemStack`). Это значение должно представлять уже существующее имя ZenClass'.
-- После объявления класса ZenExpansion, вам все равно нужно зарегистрировать его. Рекомендуется, чтобы вы использовали для этого [`@ZenRegister`](/Dev_Area/ZenAnnotations/Annotation_ZenRegister/).
+- All Methods need to begin with a parameter that represents the expanded class' instance. Also, all Methods inside the expansion must be static (... and public).
+- You can annotate all Java Classes
+- You must give the annotation a String value (e.g. `crafttweaker.item.IItemStack`). This String value must represent an already existing ZenClass' name.
+- After declaring a class a ZenExpansion, you still need to register it. Рекомендуется, чтобы вы использовали для этого [`@ZenRegister`](/Dev_Area/ZenAnnotations/Annotation_ZenRegister/).
