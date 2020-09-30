@@ -1,38 +1,38 @@
 # Transformator IIngrediententora
 
-Ta klasa została dodana przez moda z mod-id `crafttweaker`. Więc musisz zainstalować tę modyfikację, jeśli chcesz używać tej funkcji.
+This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
 
-## Importowanie klasy
-Może być wymagane zaimportowanie pakietu, jeśli napotkasz jakiekolwiek problemy (np. rzucanie tablicy), tak aby były bezpieczne niż przepraszamy i dodaj import.
+## Importing the class
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
 ```zenscript
 crafttweaker.api.item.IIngredientTransformer
 ```
 
-## Metody
+## Methods
 ### getCommandString
 
-Typ zwrotu: Ciąg
+Return type: String
 
 ```zenscript
 myIIngredientTransformer.getCommandString(składnik jako T);
 ```
 
-| Parametr | Typ | Opis             |
-| -------- | --- | ---------------- |
-| składnik | T   | Nie podano opisu |
+| Parameter  | Type | Description             |
+| ---------- | ---- | ----------------------- |
+| ingredient | T    | No description provided |
 
 
-### dopasowania
+### matches
 
-Typ zwrotu: logiczny
+Return type: boolean
 
 ```zenscript
 myIIngredientTransformer.matches(stack as crafttweaker.api.item.IItemStack);
 ```
 
-| Parametr | Typ                                                               | Opis             |
-| -------- | ----------------------------------------------------------------- | ---------------- |
-| stos     | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | Nie podano opisu |
+| Parameter | Type                                                              | Description             |
+| --------- | ----------------------------------------------------------------- | ----------------------- |
+| stack     | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | No description provided |
 
 
 
