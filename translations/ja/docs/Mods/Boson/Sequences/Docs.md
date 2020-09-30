@@ -1,26 +1,26 @@
-# クラスドキュメント
+# Class Documentation
 
-`シーケンス` は、操作可能な項目のリストで、遅延して評価されます。 詳細については、 [コンセプト](/Mods/Boson/Sequences/Concept/) のページを参照してください。
+A `Sequence` is a list of items which can be operated on and is evaluated lazily. Refer to the [Concept](/Mods/Boson/Sequences/Concept/) page for more information.
 
-## クラスの詳細
-ZenScriptX プロジェクトの一部であるため、クラスの完全修飾名は `zenscriptx.sequence.Sequence` です。
+## Class Details
+Being part of the ZenScriptX Project, the fully qualified name for the class is `zenscriptx.sequence.Sequence`.
 
-## 新しいインスタンスの作成
-[シーケンスの取得](/Mods/Boson/Sequences/Obtaining/) ページを参照してください。
+## Creating a New Instance
+Refer to the [Obtaining Sequences](/Mods/Boson/Sequences/Obtaining/) page.
 
 ## メソッド
-順序で利用可能なさまざまなメソッドは4つのカテゴリに分けることができます:
+The various methods available in a sequence can be divided into four categories:
 
-- 端末のメソッド
-- 遅延メソッドの型を変更する
-- 中級遅延メソッド
-- 中級熱心メソッド
+- Terminal methods
+- Type-changing lazy methods
+- Intermediate lazy methods
+- Intermediate eager methods
 
-各カテゴリにはそれぞれのカテゴリに記載されている独自の動作と癖があります。
+Each category has its own behavior and quirks, which are described in the respective category.
 
-さらに、すべてのメソッド署名で、文字 `T` および `R` はシーケンスを定義する汎用型を参照します。 In particular, `T` identifies the type of the current sequence, whereas `R` identifies the type of the new sequence that gets returned in case of type-changing lazy methods.
+Moreover, in every method signature, the letters `T` and `R` reference the generic types that define the sequence. In particular, `T` identifies the type of the current sequence, whereas `R` identifies the type of the new sequence that gets returned in case of type-changing lazy methods.
 
-スペースを節約するには メソッドは、対応するカテゴリの中で、そのメソッドが何をすべきかを示すコメント と共に、単一のスニペットで表示されます。 次の例に示すようになります。
+To save up on space, the methods will be presented in a single snippet in the corresponding category with a comment above stating what the method is supposed to do, as shown in the following example snippet.
 
 ```zenscript
 # this method does something
@@ -32,8 +32,8 @@ function method2() as bool?;
 
 Last but not least, refer to the [list of functional interfaces](/Mods/Boson/Functions/List/) if you encounter any non-primitive type (e.g. `Predicate<T>` or `Function<T, R>`).
 
-### 端末のメソッド
-ターミナルメソッドは、 `Sequence` インスタンスを返さず、他のデータ型を返すメソッドです。 例えば ` int ` , `bool`, `bool`, あるいは何も (`void` ) など。 Moreover, they can also potentially cause the evaluation of the whole `Sequence` contents, though this is not required, since some methods may also terminate execution as soon as certain conditions are met. それにもかかわらず、この保証はできません。
+### Terminal methods
+Terminal methods are methods that don't return a `Sequence` instance, but rather any other type of data, such as `int`, `bool`, or even nothing (`void`). Moreover, they can also potentially cause the evaluation of the whole `Sequence` contents, though this is not required, since some methods may also terminate execution as soon as certain conditions are met. Nonetheless, this guarantee cannot be made.
 
 It is also impossible to continue operating on a `Sequence` after a terminal method has been called, unless the sequence was previously saved in a variable prior to the terminal method invocation.
 
@@ -157,14 +157,14 @@ function joinToString(
     postfix as string,                 # optional, default value: ""
     limit as int,                      # optional, default value: -1
     truncated as string,               # optional, default value: "..."
-    function<T, String> として変換?  # オプション、デフォルト値: null (つまり、ターゲットオブジェクト上に `toString` が呼び出されます)
-) を文字列として指定します。
+    transform as Function<T, String>?  # optional, default value: null (i.e. a plain `toString` will be called on the target object)
+) as string;
 ```
 
-### 遅延メソッドの型を変更する
+### Type-changing lazy methods
 Type-changing lazy methods are methods that return a `Sequence` of a different type rather than the original one, following the result of a conversion operation (e.g. from `IItemStack` to `IBlockState`). Since they are lazy, evaluation of the contents of the sequence will be done only at a later time, when the transformation actually needs to happen due to the invocation of a terminal method or an intermediate eager method.
 
-これらのメソッドは中間的なメソッドなので、これらのメソッドを呼び出した後に `Sequence` を使用し続けることができます。
+Since these methods are intermediate, it is possible to keep using a `Sequence` after an invocation of these methods.
 
 ```zenscript
 # Transforms every element of this sequence into another one using the given 'transform' function
@@ -178,10 +178,10 @@ function mapIndexed(transform as BiFunction<int?, T, R>) as Sequence<R>;
 function zipWithNext(transform as BiFunction<T, T, R>) as Sequence<R>;
 ```
 
-### 中級遅延メソッド
-Intermediate lazy methods are methods that return a `Sequence` of the same type as the current one, and evaluation of the method will be deferred up until a terminal method or an intermediate eager method is called, henceforth the name "lazy". この正確な理由から。 要素の削除や追加は、シーケンス自体が完全に評価されるまで に反映されない可能性があります。 このため、 関数に渡された引数の変更には、意図しない副作用があります (特に マイナス `と` + `+` の場合)。
+### Intermediate lazy methods
+Intermediate lazy methods are methods that return a `Sequence` of the same type as the current one, and evaluation of the method will be deferred up until a terminal method or an intermediate eager method is called, henceforth the name "lazy". For this exact reason, element removal or addition may (and will) not be reflected in the sequence itself up until the sequence is fully evaluated. For this reason, any change to the arguments passed to the function may have unintended side effects (especially for `minus` and `plus` calls).
 
-これらのメソッドは中間的なメソッドなので、これらのメソッドを呼び出した後に `Sequence` を使用し続けることができます。
+Since these methods are intermediate, it is possible to keep using a `Sequence` after an invocation of these methods.
 
 ```zenscript
 # Removes the first 'n' elements from the head of the sequence, effectively dropping them out
@@ -231,21 +231,21 @@ function plusElement(element as T) as Sequence<T>;
 function asSequence() as Sequence<T>;
 ```
 
-### 中級熱心メソッド
-Intermediate eager methods are methods that return a `Sequence` of the same type of the current one, but the evaluation of the method may not be deferred up until a terminal method is called. さらに、 eager メソッドは の評価を引き起こす可能性があります。シーケンス全体が呼び出されるまで、その時点まで呼び出されます。 このため、 可能な限り慎重に熱心なメソッドを呼び出し、可能な限り最小 量のデータを操作させることをお勧めします。
+### Intermediate eager methods
+Intermediate eager methods are methods that return a `Sequence` of the same type of the current one, but the evaluation of the method may not be deferred up until a terminal method is called. Moreover, eager methods may cause evaluation of the whole sequence calls up until that point at any moment between their invocation and the terminal method invocation. For this reason, it is suggested to call eager methods as sparingly as possible and let them operate on the smallest quantity of data possible.
 
-これらのメソッドは中間的なので、これらのメソッドの呼び出し後も `Sequence` を使用し続けることができます。
+Since these methods are intermediate, it is possible to keep using a `Sequence` after the invocation of these methods.
 
 ```zenscript
-# 現在のシーケンスを安定したアルゴリズムでソートします。 与えられた 'comparator' 関数
-の出力によると、関数 sortedWith(comparator: ToIntBiFunction<T, T>) を Sequence として<T>;
+# Sorts the current sequence with a stable algorithm, according to the output of the given 'comparator' function
+function sortedWith(comparator: ToIntBiFunction<T, T>) as Sequence<T>;
 ```
 
-## オペレータのオーバーロード
-`シーケンス`s は、言語の将来の改訂において、演算子の過負荷をサポートする可能性があります。 を最新の状態に保つには、このドキュメントを参照してください。 サポートには特別なコンパイラフラグを有効にする必要があることに注意してください。詳細については、 [実験的フラグプリプロセッサ](/Mods/Boson/Preprocessor/Exp/) を参照してください。
+## Operator Overloading
+`Sequence`s may support operator overloading in future revisions of the language. Refer to this documentation to keep up-to-date. Note that support may require a special compiler flag to be enabled: refer to the [Experimental Flags Preprocessor](/Mods/Boson/Preprocessor/Exp/) for more information.
 
 ## 例
-以下は、シーケンスで行うことができる例を示すスクリプト例です。 これはどこにも完全な リストではありませんが、参照と概念の証明として意味されています。
+The following is an example script that shows some examples that may be done with sequences. This is nowhere a complete list, but is meant more as a reference and a proof of concept.
 
 ```zenscript
 # Prints the display name of the given three items
