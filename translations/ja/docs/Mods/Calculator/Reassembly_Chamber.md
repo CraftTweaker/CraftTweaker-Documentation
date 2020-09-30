@@ -1,21 +1,21 @@
-# 再建チャンバー
+# Reassembly Chamber
 
-## パッケージ
+## Package
 ```zenscript
 import mods.calculator.reassemblyChamber;
 ```
 
-## メソッド
+## Methods
 
-- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input** 入力。
-- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) output** 出力。
+- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input** The input.
+- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) output** The output.
 
 ## 加算
 ```zenscript
-再アセンブリChamber.addRecipe(IIngredient入力, IIngredient出力);
+reassemblyChamber.addRecipe(IIngredient input, IIngredient output);
 ```
-## 削除
+## Removal
 ```zenscript
 
-再アセンブリChamber.removeRecipe(IIngredient出力);
+reassemblyChamber.removeRecipe(IIngredient output);
 ```
