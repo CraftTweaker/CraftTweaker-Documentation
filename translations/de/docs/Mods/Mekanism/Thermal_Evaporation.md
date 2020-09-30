@@ -1,6 +1,6 @@
-# Thermische Verdunstung
+# Thermal Evaporation
 
-Ab dem Mekanismus 9.7.0 ist es nun möglich, alle Rezeptfolgen der Thermik-Verdampfung durch den Befehl `/ct mekrecipes thermalevaporation` zu sehen
+As of Mekanism 9.7.0 it is now possible to view all recipe strings of the Thermal Evaporation through the command `/ct mekrecipes thermalevaporation`
 
 ## Addition
 
@@ -10,7 +10,7 @@ mods.mekanism.thermalevaporation.addRecipe(ILiquidStack liquidInput, ILiquidStac
 mods.mekanism.thermalevaporation.addRecipe(<liquid:liquidfusionfuel>, <liquid:lava>);
 ```
 
-## Entfernen
+## Removal
 
 ```zenscript
 mods.mekanism.thermalevaporation.removeRecipe(IIngredient liquidInput, @Optional IIngredient liquidOutput);
@@ -19,11 +19,11 @@ mods.mekanism.thermalevaporation.removeRecipe(<liquid:water>, <liquid:brine>);
 mods.mekanism.thermalevaporation.removeRecipe(<liquid:brine>);
 ```
 
-Die Angabe eines Ausgabeparameters entfernt nur das spezifische Rezept, das zu dieser Ausgabe führt. Wird der Ausgabeparameter nicht aktiviert, werden alle Rezepte entfernt, die der Eingabeartikel produzieren kann.
+Specifying an output parameter will only remove the specific recipe that results in that output from that input. Omitting the output parameter will remove all recipes that the input item can produce.
 
-## Entferne alle Rezepte
+## Removing all recipes
 
-Ab Mekanism 9.7.0 ist es nun möglich, alle Rezepte der thermischen Verdampfungsanlage zu entfernen. (Das betrifft nicht die Rezepte, welche mittels CraftTweaker hinzugefügt wurden)
+As of Mekanism 9.7.0 it is now possible to remove all Thermal Evaporation Plant recipes. (Das betrifft nicht die Rezepte, welche mittels CraftTweaker hinzugefügt wurden)
 
 ```zenscript
 mods.mekanism.thermalevaporation.removeAllRecipes();
