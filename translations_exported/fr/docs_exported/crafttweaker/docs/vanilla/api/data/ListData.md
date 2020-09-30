@@ -1,63 +1,63 @@
-# Données de la liste
+# ListData
 
 
 
-Cette classe a été ajoutée par un mod avec le mod-id `crafttweaker`. Vous devez donc avoir ce mod installé si vous voulez utiliser cette fonctionnalité.
+This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
 
-## Importation de la classe
-Il pourrait vous être nécessaire d'importer le paquet si vous rencontrez des problèmes (comme lancer un tableau), alors mieux être sûr que désolé et ajouter l'importation.
+## Importing the class
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
 ```zenscript
 crafttweaker.api.data.ListData
 ```
 
-## Interfaces implémentées
-ListData implémente les interfaces suivantes. Cela signifie que toutes les méthodes disponibles peuvent également être utilisées dans cette classe.
+## Implemented Interfaces
+ListData implements the following interfaces. That means any method available to them can also be used on this class.
 - [crafttweaker.api.data.ICollectionData](/vanilla/api/data/ICollectionData)
 - [crafttweaker.api.data.IData](/vanilla/api/data/IData)
 
-## Constructeurs
+## Constructors
 ```zenscript
 new crafttweaker.api.data.ListData();
 ```
 ```zenscript
-new crafttweaker.api.data.ListData(liste<crafttweaker.api.data.IData>);
+new crafttweaker.api.data.ListData(list as List<crafttweaker.api.data.IData>);
 ```
-| Paramètre | Type de texte                                                                   | Libellé                    | Optionnel | Valeur par défaut |
-| --------- | ------------------------------------------------------------------------------- | -------------------------- | --------- | ----------------- |
-| liste     | Liste&lt;[crafttweaker.api.data.IData](/vanilla/api/data/IData)&gt; | Aucune description fournie | vrai      | `null`            |
+| Parameter | Type                                                                            | Description             | IsOptional | Default Value |
+| --------- | ------------------------------------------------------------------------------- | ----------------------- | ---------- | ------------- |
+| list      | Liste&lt;[crafttweaker.api.data.IData](/vanilla/api/data/IData)&gt; | No description provided | true       | `null`        |
 
 
 
-## Méthodes
-### Ajouter
+## Methods
+### add
 
 ```zenscript
-["Bonjour", "Monde", "!"].add(valeur comme crafttweaker.api.data.IData);
-["Bonjour", "Monde", "!"].add("aujourd'hui");
+["Hello", "World", "!"].add(value as crafttweaker.api.data.IData);
+["Hello", "World", "!"].add("today");
 ```
 
-| Paramètre | Type de texte                                          | Libellé                        |
-| --------- | ------------------------------------------------------ | ------------------------------ |
-| valeur    | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | La valeur à ajouter à la liste |
+| Parameter | Type                                                   | Description                  |
+| --------- | ------------------------------------------------------ | ---------------------------- |
+| value     | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | The value to add to the list |
 
 
 
 ```zenscript
-["Bonjour", "Monde", "!"].add(index comme int, valeur comme crafttweaker.api.data.IData);
-["Bonjour", "Monde", "!"].add(1, "beau");
+["Hello", "World", "!"].add(index as int, value as crafttweaker.api.data.IData);
+["Hello", "World", "!"].add(1, "beautiful");
 ```
 
-| Paramètre | Type de texte                                          | Libellé                                                                     |
-| --------- | ------------------------------------------------------ | --------------------------------------------------------------------------- |
-| index     | Indice                                                 | L'index à ajouter. Les objets suivants seront déplacés d'un index plus haut |
-| valeur    | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | La valeur à ajouter à la liste                                              |
+| Parameter | Type                                                   | Description                                                          |
+| --------- | ------------------------------------------------------ | -------------------------------------------------------------------- |
+| index     | int                                                    | The index to add to. Subsequent items will be moved one index higher |
+| value     | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | The value to add to the list                                         |
 
 
-### asListe
+### asList
 
-Renvoie une liste<IData> la représentation de cet IData, retourne NULL sur tout sauf [crafttweaker.api.data.ListData](/vanilla/api/data/ListData).
+Gets a List<IData> representation of this IData, returns null on anything but [crafttweaker.api.data.ListData](/vanilla/api/data/ListData).
 
- Renvoie : `nul si cet IData n'est pas une liste.`
+ Returns: `null if this IData is not a list.`
 
 Type de retour : Liste&lt;[crafttweaker.api.data.IData](/vanilla/api/data/IData)&gt;
 
@@ -67,9 +67,9 @@ Type de retour : Liste&lt;[crafttweaker.api.data.IData](/vanilla/api/data/IData)
 
 ### asMap
 
-Obtient une représentation de la carte<String, IData> de cet IData, retourne null sur tout sauf [crafttweaker.api.data.MapData](/vanilla/api/data/MapData).
+Gets a Map<String, IData> representation of this IData, returns null on anything but [crafttweaker.api.data.MapData](/vanilla/api/data/MapData).
 
- Renvoie : `nul si cet IData n'est pas une carte.`
+ Returns: `null if this IData is not a map.`
 
 Type de retour : [crafttweaker.api.data.IData](/vanilla/api/data/IData)[String]
 
@@ -79,49 +79,49 @@ Type de retour : [crafttweaker.api.data.IData](/vanilla/api/data/IData)[String]
 
 ### asString
 
-Obtient la représentation de la chaîne de caractères de cette IData
+Gets the String representation of this IData
 
- Renvoie : `chaîne de caractères qui représente cet IData (valeur et type).`
+ Returns: `String that represents this IData (value and type).`
 
-Type de retour: chaîne de caractères
+Return type: String
 
 ```zenscript
 ["Bonjour", "Monde", "!"].asString();
 ```
 
-### effacer
+### clear
 
-Supprime tous les éléments de la liste
+Removes every element in the list
 
 ```zenscript
-["Bonjour", "Monde", "!"].clear();
+["Hello", "World", "!"].clear();
 ```
 
-### contient
+### contains
 
-Vérifie si cette IData contient un autre IData, principalement utilisé dans les sous-classes de [fabricant. pi.data.ICollectionData](/vanilla/api/data/ICollectionData), est le même qu'une vérification égale sur d'autres types IData
+Checks if this IData contains another IData, mainly used in subclasses of [crafttweaker.api.data.ICollectionData](/vanilla/api/data/ICollectionData), is the same as an equals check on other IData types
 
  Renvoie : `true si l'IData donné est contenu dans cet IData`
 
-Type de retour: booléen
+Return type: boolean
 
 ```zenscript
 ["Bonjour", "Monde", "!"].contains(données comme crafttweaker.api.data.IData);
 ["Bonjour", "Monde", "!"].contains("Affichage");
 ```
 
-| Paramètre | Type de texte                                          | Libellé                                       |
-| --------- | ------------------------------------------------------ | --------------------------------------------- |
-| données   | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | données pour vérifier si elles sont contenues |
+| Parameter | Type                                                   | Description                      |
+| --------- | ------------------------------------------------------ | -------------------------------- |
+| data      | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | data to check if it is contained |
 
 
-### Copie
+### copy
 
-Fait une copie de cet IData.
+Makes a copy of this IData.
 
- IData est immuable par défaut, utilisez ceci pour créer une copie correcte de l'objet.
+ IData is immutable by default, use this to create a proper copy of the object.
 
- Renvoie : `une copie de cet IData.`
+ Returns: `a copy of this IData.`
 
 Type de retour : [crafttweaker.api.data.IData](/vanilla/api/data/IData)
 
@@ -129,29 +129,29 @@ Type de retour : [crafttweaker.api.data.IData](/vanilla/api/data/IData)
 ["Bonjour", "Monde", "!"].copie();
 ```
 
-### obtenir
+### get
 
-Récupère le [crafttweaker.api.data.IData](/vanilla/api/data/IData) stocké à l'index donné. Renvoie : `Le [crafttweaker.api.data.IData](/vanilla/api/data/IData)`
+Retrieves the [crafttweaker.api.data.IData](/vanilla/api/data/IData) stored at the given index. Renvoie : `Le [crafttweaker.api.data.IData](/vanilla/api/data/IData)`
 
 Type de retour : [crafttweaker.api.data.IData](/vanilla/api/data/IData)
 
 ```zenscript
-["Bonjour", "Monde", "!"].get(index comme int);
-["Bonjour", "Monde", "!"].get(0);
+["Hello", "World", "!"].get(index as int);
+["Hello", "World", "!"].get(0);
 ```
 
-| Paramètre | Type de texte | Libellé              |
-| --------- | ------------- | -------------------- |
-| index     | Indice        | L'index (basé sur 0) |
+| Parameter | Type | Description         |
+| --------- | ---- | ------------------- |
+| index     | int  | The index (0-based) |
 
 
 ### getId
 
-Récupère l'ID de la balise NBT interne.
+Gets the ID of the internal NBT tag.
 
- Utilisé pour déterminer quel type de NBT est stocké (dans une liste par exemple)
+ Used to determine what NBT type is stored (in a list for example)
 
- Renvoie : `ID de la balise NBT que ces données représente.`
+ Returns: `ID of the NBT tag that this data represents.`
 
 Type de retour: octet
 
@@ -161,59 +161,59 @@ Type de retour: octet
 
 ### getString
 
-Récupère la représentation de la chaîne de caractères de la balise INBT interne
+Gets the String representation of the internal INBT tag
 
- Renvoie : `Chaîne qui représente l'INBT interne de cet IData.`
+ Returns: `String that represents the internal INBT of this IData.`
 
-Type de retour: chaîne de caractères
+Return type: String
 
 ```zenscript
 ["Bonjour", "Monde", "!"].getString();
 ```
 
-### Enlever
+### remove
 
-Supprime le fichier [crafttweaker.api.data.IData](/vanilla/api/data/IData) stocké à l'index donné. Renvoie : `Le [crafttweaker.api.data.IData](/vanilla/api/data/IData) qui a été supprimé`
+Removes the [crafttweaker.api.data.IData](/vanilla/api/data/IData) stored at the given index. Renvoie : `Le [crafttweaker.api.data.IData](/vanilla/api/data/IData) qui a été supprimé`
 
 Type de retour : [crafttweaker.api.data.IData](/vanilla/api/data/IData)
 
 ```zenscript
-["Bonjour", "Monde", "!"].remove(index comme int);
-["Bonjour", "Monde", "!"].remove(0);
+["Hello", "World", "!"].remove(index as int);
+["Hello", "World", "!"].remove(0);
 ```
 
-| Paramètre | Type de texte | Libellé              |
-| --------- | ------------- | -------------------- |
-| index     | Indice        | L'index (basé sur 0) |
+| Parameter | Type | Description         |
+| --------- | ---- | ------------------- |
+| index     | int  | The index (0-based) |
 
 
-### définir
+### set
 
 Définit l'élément à l'index fourni à la valeur donnée Retours : `La valeur remplacée`
 
 Type de retour : [crafttweaker.api.data.IData](/vanilla/api/data/IData)
 
 ```zenscript
-["Bonjour", "Monde", "!"].set(index comme int, valeur comme crafttweaker.api.data.IData);
-["Bonjour", "Monde", "!"].set(0, "Au revoir");
+["Hello", "World", "!"].set(index as int, value as crafttweaker.api.data.IData);
+["Hello", "World", "!"].set(0, "Bye");
 ```
 
-| Paramètre | Type de texte                                          | Libellé                        |
-| --------- | ------------------------------------------------------ | ------------------------------ |
-| index     | Indice                                                 | L'index à définir (basé sur 0) |
-| valeur    | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | La nouvelle valeur             |
+| Parameter | Type                                                   | Description                |
+| --------- | ------------------------------------------------------ | -------------------------- |
+| index     | int                                                    | The index to set (0-based) |
+| value     | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | The new Value              |
 
 
 
-## Propriétés
+## Properties
 
-| Nom    | Type de texte | A un Getter | A un Setter |
-| ------ | ------------- | ----------- | ----------- |
-| taille | Indice        | vrai        | Faux        |
+| Name | Type | Has Getter | Has Setter |
+| ---- | ---- | ---------- | ---------- |
+| size | int  | true       | false      |
 
-## Pistolet
+## Casters
 
-| Type de résultat                                                                | Est implicite |
-| ------------------------------------------------------------------------------- | ------------- |
-| Liste&lt;[crafttweaker.api.data.IData](/vanilla/api/data/IData)&gt; | vrai          |
+| Result type                                                                     | Is Implicit |
+| ------------------------------------------------------------------------------- | ----------- |
+| Liste&lt;[crafttweaker.api.data.IData](/vanilla/api/data/IData)&gt; | true        |
 
