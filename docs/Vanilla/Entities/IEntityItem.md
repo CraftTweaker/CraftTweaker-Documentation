@@ -10,8 +10,8 @@ It might be required for you to import the package if you encounter any issues (
 ## Extending [IEntity](/Vanilla/Entities/IEntity/)
 IEntityItem extends [IEntity](/Vanilla/Entities/IEntity/). That means all functions available to [IEntities](/Vanilla/Entities/IEntity/) also are available to IEntityItem.
 
-## ZenGetters
+## ZenGetters/Setters
 
-| ZenGetter | Return Type                             |
-|-----------|-----------------------------------------|
-| item      | [IItemStack](/Vanilla/Items/IItemStack/) |
+| ZenGetter/ZenSetter | Type                                    |
+|---------------------|-----------------------------------------|
+| item                | [IItemStack](/Vanilla/Items/IItemStack/)|
