@@ -2,7 +2,7 @@
 
 Questa classe è stata aggiunta da una mod con ID `crafttweaker`. Perciò, è necessario avere questa mod installata per poter utilizzare questa funzione.
 
-## Importare la classe
+## Importing the class
 Potrebbe essere necessario importare il pacchetto, se si incontrano dei problemi (come castare un vettore), quindi meglio essere sicuri e aggiungere la direttiva di importazione.
 ```zenscript
 crafttweaker.api.commands.custom.MCRootCommandNode
@@ -12,23 +12,23 @@ crafttweaker.api.commands.custom.MCRootCommandNode
 MCRootCommandNode implementa le seguenti interfacce. Ciò significa che ogni metodo presente nell'interfaccia può essere usato anche per questa classe.
 - [crafttweaker.api.commands.custom.MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)
 
-## Metodi
-### uguale
+## Methods
+### equals
 
-Tipo restituito: booleano
+Return type: boolean
 
 ```zenscript
 myMCRootCommandNode.equals(o come oggetto);
 ```
 
-| Parametro | Tipo    | Descrizione                 |
-| --------- | ------- | --------------------------- |
-| o         | Oggetto | Nessuna descrizione fornita |
+| Parameter | Type   | Description                 |
+| --------- | ------ | --------------------------- |
+| o         | Object | Nessuna descrizione fornita |
 
 
 ### hashCode
 
-Tipo di restituzione: int
+Return type: int
 
 ```zenscript
 myMCRootCommandNode.hashCode();
@@ -36,40 +36,40 @@ myMCRootCommandNode.hashCode();
 
 ### isValidInput
 
-Tipo restituito: booleano
+Return type: boolean
 
 ```zenscript
 myMCRootCommandNode.isValidInput(input as String);
 ```
 
-| Parametro | Tipo    | Descrizione                 |
-| --------- | ------- | --------------------------- |
-| input     | Stringa | Nessuna descrizione fornita |
+| Parameter | Type   | Description                 |
+| --------- | ------ | --------------------------- |
+| input     | String | Nessuna descrizione fornita |
 
 
 ### toString
 
-Tipo di ritorno: Stringa
+Return type: String
 
 ```zenscript
 myMCRootCommandNode.toString();
 ```
 
 
-## Operatori
-### EQUALI
+## Operators
+### EQUALS
 
 ```zenscript
 myMCRootCommandNode == o come oggetto
 ```
 
-| Parametro | Tipo    | Descrizione                 |
-| --------- | ------- | --------------------------- |
-| o         | Oggetto | Nessuna descrizione fornita |
+| Parameter | Type   | Description                 |
+| --------- | ------ | --------------------------- |
+| o         | Object | Nessuna descrizione fornita |
 
 ## Caster
 
 | Tipo Risultato | Implicito |
 | -------------- | --------- |
-| Stringa        | vero      |
+| String         | true      |
 
