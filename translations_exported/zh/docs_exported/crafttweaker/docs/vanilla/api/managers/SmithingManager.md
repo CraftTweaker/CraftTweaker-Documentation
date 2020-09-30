@@ -25,13 +25,13 @@ smithing.addJSONRecipe(name as String, data as craftbiner.api.data.IData);
 smithing.addJSONRecipe("recipe_name", {component:{item:<item:minecraft:gold_ore>.registryName},result:<item:minecraft:cooked_porkchop>.registryName,experience:0.35 as float, cookingtime:100});
 ```
 
-| 参数   | 类型                                                     | 描述           |
-| ---- | ------------------------------------------------------ | ------------ |
-| 名称   | 字符串[string]                                            | 配方名称         |
-| data | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | 代表json 文件的数据 |
+| 参数   | 类型                                                     | 描述                              |
+| ---- | ------------------------------------------------------ | ------------------------------- |
+| name | String                                                 | name of the recipe              |
+| data | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | data representing the json file |
 
 
-### 添加配方
+### addRecipe
 
 将配方添加到烟花桌上。
 
@@ -40,12 +40,12 @@ smithing.addRecipe(RecipeName as String, result as craftbiner.api.item.IItemStac
 smithing.addRecipe("recipe_name", <item:minecraft:golden_apple>, <item:minecraft:apple>, <tag:forge:ingots/gold>);
 ```
 
-| 参数   | 类型                                                                | 描述          |
-| ---- | ----------------------------------------------------------------- | ----------- |
-| 累计名称 | 字符串[string]                                                       | 配方名称。       |
-| 结果   | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | 该配方创建的物品。   |
-| 基数   | [制造商.api.item.IIngredient](/vanilla/api/items/IIngredient)        | 该配方的初始成分。   |
-| 添加   | [制造商.api.item.IIngredient](/vanilla/api/items/IIngredient)        | 该项目添加到基本项目。 |
+| 参数         | 类型                                                                  | 描述          |
+| ---------- | ------------------------------------------------------------------- | ----------- |
+| recipeName | String                                                              | 配方名称。       |
+| result     | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)   | 该配方创建的物品。   |
+| 基数         | [crafttweaker.api.item.IIngredient](/vanilla/api/items/IIngredient) | 该配方的初始成分。   |
+| 添加         | [crafttweaker.api.item.IIngredient](/vanilla/api/items/IIngredient) | 该项目添加到基本项目。 |
 
 
 ### getRecipeByName
@@ -56,9 +56,9 @@ smithing.addRecipe("recipe_name", <item:minecraft:golden_apple>, <item:minecraft
 smithing.getRecipeByname(名称为字符串)；
 ```
 
-| 参数 | 类型          | 描述                      |
-| -- | ----------- | ----------------------- |
-| 名称 | 字符串[string] | No description provided |
+| 参数   | 类型     | 描述                      |
+| ---- | ------ | ----------------------- |
+| name | String | No description provided |
 
 
 ### getRecipesBy输出
@@ -69,31 +69,31 @@ smithing.getRecipeByname(名称为字符串)；
 smithing.getRecipesByOutput(输出为 craftweeper.api.item.IIngredient);
 ```
 
-| 参数         | 类型                                                         | 描述                      |
-| ---------- | ---------------------------------------------------------- | ----------------------- |
-| output（输出） | [制造商.api.item.IIngredient](/vanilla/api/items/IIngredient) | No description provided |
+| 参数         | 类型                                                                  | 描述                      |
+| ---------- | ------------------------------------------------------------------- | ----------------------- |
+| output（输出） | [crafttweaker.api.item.IIngredient](/vanilla/api/items/IIngredient) | No description provided |
 
 
-### 全部移除
+### removeAll
 
-删除此注册表中的所有配方
+Remove all recipes in this registry
 
 ```zenscript
 smithing.removeAll();
 ```
 
-### 移除 ByModid
+### removeByModid
 
-删除基于注册表名称莫迪的配方
+Remove recipe based on Registry name modid
 
 ```zenscript
 smithing.removeByModed(modand as String);
 smithing.removeByModed("minecraft");
 ```
 
-| 参数  | 类型          | 描述          |
-| --- | ----------- | ----------- |
-| 莫多德 | 字符串[string] | 已删除配方的 modo |
+| 参数    | 类型     | 描述                             |
+| ----- | ------ | ------------------------------ |
+| modid | String | modid of the recipes to remove |
 
 
 
@@ -104,58 +104,58 @@ smithing.removeByModed(modid as String, exclusion as craftweapi.recipe.RecipeFil
 smithing.removeByModed("minecraft", (name as string) => {return name == "orange_wool";});
 ```
 
-| 参数  | 类型                                                              | 描述          |
-| --- | --------------------------------------------------------------- | ----------- |
-| 莫多德 | 字符串[string]                                                     | 已删除配方的 modo |
-| 不包含 | [制作器.api.recipe.RecipeFilter](/vanilla/api/recipe/RecipeFilter) | 要避免被移除的配方。  |
+| 参数    | 类型                                                              | 描述                             |
+| ----- | --------------------------------------------------------------- | ------------------------------ |
+| modid | String                                                          | modid of the recipes to remove |
+| 不包含   | [制作器.api.recipe.RecipeFilter](/vanilla/api/recipe/RecipeFilter) | 要避免被移除的配方。                     |
 
 
 ### removeByName
 
-删除基于注册表名称的配方
+Remove recipe based on Registry name
 
 ```zenscript
 smithing.removeByname(名称为字符串);
 smithing.removeByname("minecraft:furchace");
 ```
 
-| 参数 | 类型          | 描述           |
-| -- | ----------- | ------------ |
-| 名称 | 字符串[string] | 要删除的配方的注册表名称 |
+| 参数   | 类型     | 描述                                |
+| ---- | ------ | --------------------------------- |
+| name | String | registry name of recipe to remove |
 
 
 ### removeByRegex
 
-基于正则表达式删除配方
+Remove recipe based on regex
 
 ```zenscript
 smithing.removeByRegex(regex as String);
 smithing.removeByRegex("\d_\\d");
 ```
 
-| 参数    | 类型          | 描述      |
-| ----- | ----------- | ------- |
-| 正则表达式 | 字符串[string] | 正则表达式匹配 |
+| 参数    | 类型     | 描述                     |
+| ----- | ------ | ---------------------- |
+| regex | String | regex to match against |
 
 
 ### 删除合成表
 
-移除基于其输出的配方。
+Remove a recipe based on it's output.
 
 ```zenscript
 smithing.removeRecipe(输出为 craftbiner.api.item.IItemStack);
 smithing.removeRecipe(<item:minecraft:glass>);
 ```
 
-| 参数         | 类型                                                                | 描述    |
-| ---------- | ----------------------------------------------------------------- | ----- |
-| output（输出） | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | 配方的输出 |
+| 参数         | 类型                                                                | 描述                   |
+| ---------- | ----------------------------------------------------------------- | -------------------- |
+| output（输出） | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | output of the recipe |
 
 
 
 ## 参数
 
-| 名称                   | 类型          | 可获得  | 可设置   |
-| -------------------- | ----------- | ---- | ----- |
-| commandString #命令字符串 | 字符串[string] | true | false |
+| 名称            | 类型     | 可获得  | 可设置   |
+| ------------- | ------ | ---- | ----- |
+| commandString | String | true | false |
 
