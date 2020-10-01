@@ -54,7 +54,7 @@ crafttweaker.damage.IDamageSource.createThornsDamage(IEntity source)
 crafttweaker.damage.IDamageSource.createExplosionDamage(@Optional IEntityLivingBase entityLivingBaseIn)
 crafttweaker.damage.IDamageSource.createOfType(String type)
 crafttweaker.damage.IDamageSource.createEntityDamage(String type, IEntity source)
-crafttweaker.damage.IDamageSource.createIndirectDamage(String type, IEntityLivingBase truesource, @Optional IEntity immediateSource)
+crafttweaker.damage.IDamageSource.createIndirectDamage(String type, IEntity truesource, @Optional IEntity immediateSource)
 
 //Preregistered Damage Types
 crafttweaker.damage.IDamageSource.IN_FIRE()
