@@ -13,3 +13,14 @@ It might be required for you to import the package if you encounter any issues (
 | name      | getName()      | string      |
 | operation | getOperation() | int         |
 | amount    | getAmount()    | double      |
+| saved     | isSaved()      | boolean     |
+
+## ZenSetters
+
+| SetterName                  | SetterMethod            | Parameter Type  |
+|-----------------------------|-------------------------|-----------------|
+| saved                       | setSaved(boolean)       | boolean         |
+
+## More ZenMethods
+
+- IEntityAttributeModifier createModifier(String name, double amount, int operation, @Optional String uuid);
