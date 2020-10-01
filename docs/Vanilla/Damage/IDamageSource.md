@@ -25,14 +25,14 @@ It might be required to [import](/AdvancedFunctions/Import/) the class to avoid 
 | fireDamage       | isFireDamage();                   | bool                                 |
 | magicDamage      | isMagicDamage();                  | bool                                 |
 | projectile       | isProjectile();                   | bool                                 |
-|                  | setDamageAllowedInCreativeMode(); | IDamageSource                        |
-|                  | setDamageBypassesArmor();         | IDamageSource                        |
-|                  | setDamageIsAbsolute();            | IDamageSource                        |
-|                  | setDifficultyScaled();            | IDamageSource                        |
-|                  | setExplosion();                   | IDamageSource                        |
-|                  | setFireDamage();                  | IDamageSource                        |
-|                  | setMagicDamage();                 | IDamageSource                        |
-|                  | setProjectile();                  | IDamageSource                        |
+| setDamageAllowedInCreativeMode| setDamageAllowedInCreativeMode(); | IDamageSource                        |
+| setDamageBypassesArmor| setDamageBypassesArmor();         | IDamageSource                        |
+| setDamageIsAbsolute| setDamageIsAbsolute();            | IDamageSource                        |
+| setDifficultyScaled| setDifficultyScaled();            | IDamageSource                        |
+| setExplosion     | setExplosion();                   | IDamageSource                        |
+| setFireDamage    | setFireDamage();                  | IDamageSource                        |
+| setMagicDamage   | setMagicDamage();                 | IDamageSource                        |
+| setProjectile    | setProjectile();                  | IDamageSource                        |
 
 ## ZenMethod with Parameters
 
