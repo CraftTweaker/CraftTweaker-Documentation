@@ -17,14 +17,14 @@ IEntityArrow Events implement the following interfaces and are able to call all 
 
 ## Methods
 
-| ZenGetter        | ZenSetter           | Type                                                               |
-|------------------|---------------------|--------------------------------------------------------------------|
-| `shooter`        | `shooter`           | [IEntity](/Vanilla/Entities/IEntity/)                              |
-| `damage`         | `damage`            | double                                                             |
-|                  | `knockbackStrength` | int                                                                |
-| `isCritical`     | `isCritical`        | boolean                                                            |
-| `pickupStatus`   | `pickupStatus`      | String                                                             |
-| `shake`          |                     | int                                                                |
+| ZenGetter      | ZenSetter         | Type                                                               |
+|----------------|-------------------|--------------------------------------------------------------------|
+| shooter        | shooter           | [IEntity](/Vanilla/Entities/IEntity/)                              |
+| damage         | damage            | double                                                             |
+|                | knockbackStrength | int                                                                |
+| isCritical     | isCritical        | boolean                                                            |
+| pickupStatus   | pickupStatus      | String                                                             |
+| shake          |                   | int                                                                |
 
 ## Additional methods
 
