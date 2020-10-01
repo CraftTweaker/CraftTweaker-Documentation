@@ -9,6 +9,12 @@ It might be required for you to import the package if you encounter any issues (
 ## Extending [IEntity](/Vanilla/Entities/IEntity/)
 IEntityArrow extends [IEntity](/Vanilla/Entities/IEntity/). That means all functions available to [IEntities](/Vanilla/Entities/IEntity/) also are available to IEntityArrow.
 
+## Extending IEntityEvent
+IEntityArrow Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+
+- [IEntity](/Vanilla/Entities/IEntity/)
+- [IProjectile](/Vanilla/Events/Events/IProjectile/)
+
 ## Methods
 
 | ZenGetter        | ZenSetter           | Type                                                               |
