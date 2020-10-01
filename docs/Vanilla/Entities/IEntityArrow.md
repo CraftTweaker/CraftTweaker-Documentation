@@ -19,10 +19,6 @@ IEntityArrow extends [IEntity](/Vanilla/Entities/IEntity/). That means all funct
 | `isCritical`     | `isCritical`        | boolean                                                            |
 | `pickupStatus`   | `pickupStatus`      | String                                                             |
 | `shake`          |                     | int                                                                |
-| `isCritical`     | `isCritical`        | boolean                                                            |
-| `isCritical`     | `isCritical`        | boolean                                                            |
-| `isCritical`     | `isCritical`        | boolean                                                            |
-| `isCritical`     | `isCritical`        | boolean                                                            |
 
 ## Additional methods
 
@@ -30,13 +26,7 @@ IEntityArrow extends [IEntity](/Vanilla/Entities/IEntity/). That means all funct
 
 - void `setPickupDisallowed()`
 
-Prevents the arrow from being picked up under any circumstances.
-
 - void `setPickupAllowed()`
 
-Allows the arrow to be picked up from where the entity landed.
-
 - void `setPickupCreative()`
-
-Only allows the arrow to be picked up if the player is in creative mode.
 
