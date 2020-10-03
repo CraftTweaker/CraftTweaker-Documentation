@@ -1,84 +1,84 @@
-# Ferúzceras
+# Fertilizers
 
-Ruta de la clase: `mods.botanypots.FerATIzer`
+Class path: `mods.botanypots.Fertilizer`
 
-## Usar
+## Use
 
-Para usar, importa la clase con `import mods.botanypots.FerATIzer;` al principio de tu script.
+To use, import the class with `import mods.botanypots.Fertilizer;` at the beginning of your script.
 
-## Creación de ferozantes
+## Creating Fertilizers
 
-`FerFirstzer.create(id, ingrediente, pick, maxTick);`
+`Fertilizer.create(id, ingredient, minTick, maxTick);`
 
-- `id` &lt;cadena> El id del nuevo ferízer. Este es un id de espacio de nombres y debe estar en el formato válido `namespace:path`.
-- `ingrediente` <[IIngrediente](/vanilla/api/items/IIngredient)> El elemento utilizado para el ferácizo.
-- `minTick` &lt;int> La cantidad mínima de ticks añadidos por el ferízor.
-- `maxTick` &lt;int> La cantidad máxima de ticks añadidos por el ferízor.
+- `id` &lt;string> The id of the new fertilizer. This is a namespaced id an must be in the valid `namespace:path` format.
+- `ingredient` <[IIngredient](/vanilla/api/items/IIngredient)> The item used for the fertilizer.
+- `minTick` &lt;int> The minimum amount of ticks added by the fertilizer.
+- `maxTick` &lt;int> The maximum amount of ticks added by the fertilizer.
 
-Crea un nuevo ferácizo. Pueden utilizarse para cultivar más rápido.
+Creates a new fertilizer. These can be used to grow crops faster.
 
 ```zenscript
-FerFirstzer.create("examplepack:stick", <item:minecraft:stick>, 250, 550);
+Fertilizer.create("examplepack:stick", <item:minecraft:stick>, 250, 550);
 ```
 
-## Eliminando feroz
+## Removing Fertilizers
 
-`FerFirstzer.remove(id);`
+`Fertilizer.remove(id);`
 
-- `id` &lt;cadena> El id del fervicultor. Este es un id de espacio de nombres y debe estar en el formato válido `namespace:path`.
+- `id` &lt;string> The id of the fertilizer. This is a namespaced id an must be in the valid `namespace:path` format.
 
-Esto se puede utilizar para eliminar a un ferácizo.
+This can be used to remove a fertilizer.
 
 ```zenscript
-FerFirstzer.remove("botanypots:ferChanczers/bone_meal");
+Fertilizer.remove("botanypots:fertilizers/bone_meal");
 ```
 
-## Cambiando trucos feroz
+## Changing Fertilizer Ticks
 
-`FerFirstzer.setTicks(String id, int minTick, int maxTick);`
+`Fertilizer.setTicks(String id, int minTick, int maxTick);`
 
-- `id` &lt;cadena> El id del fervicultor. Este es un id de espacio de nombres y debe estar en el formato válido `namespace:path`.
-- `minTick` &lt;int> La nueva cantidad mínima de ticks añadida por el ferízer.
-- `maxTick` &lt;int> La nueva cantidad máxima de ticks añadidos por el ferízer.
+- `id` &lt;string> The id of the fertilizer. This is a namespaced id an must be in the valid `namespace:path` format.
+- `minTick` &lt;int> The new minimum amount of ticks added by the fertilizer.
+- `maxTick` &lt;int> The new maximum amount of ticks added by the fertilizer.
 
-Esto cambiará el rango de tick de crecimiento añadido por el ferácizo.
+This will change the growth tick range added by the fertilizer.
 
 ```zenscript
-FerFirstzer.setTicks("botanypots:ferChanczers/bone_meal", 800, 900);
+Fertilizer.setTicks("botanypots:fertilizers/bone_meal", 800, 900);
 ```
 
-## Cambiando ingredientes feroz
+## Changing Fertilizer Ingredients
 
-`FerFirstzer.setIngredient(id, ingrediente);`
+`Fertilizer.setIngredient(id, ingredient);`
 
-- `id` &lt;cadena> El id del fervicultor. Este es un id de espacio de nombres y debe estar en el formato válido `namespace:path`.
-- `ingrediente` <[IIngrediente](/vanilla/api/items/IIngredient)> El nuevo elemento que se utilizará para el ferrecero.
+- `id` &lt;string> The id of the fertilizer. This is a namespaced id an must be in the valid `namespace:path` format.
+- `ingredient` <[IIngredient](/vanilla/api/items/IIngredient)> The new item to be used for the fertilizer.
 
-Establece el elemento ingrediente que es el ferácizo.
+Sets the ingredient item that is the fertilizer.
 
 ```zenscript
-FerFirstzer.setIngredient("botanypots:ferChanczers/bone_meal", <item:minecraft:sugar>);
+Fertilizer.setIngredient("botanypots:fertilizers/bone_meal", <item:minecraft:sugar>);
 ```
 
-## Obteniendo todos los Ids
+## Getting All Ids
 
-`FerFirstzer.getAllIds();`
+`Fertilizer.getAllIds();`
 
-- Devuelve: &lt;string[]> Una matriz de todos los ids de ferrezador conocidos en el momento en que esto es ran.
+- Returns: &lt;string[]> An array of all known fertilizer ids at the time this is ran.
 
-Esto te dará una matriz de todos los identificadores ferozer conocidos en ese momento.
+This will give you an array of all the known fertilizer ids at the time.
 
 ```zenscript
-// Registra todos los ids en el archivo crafttweaker.log
-para ferChanczerId en FerFirstzer.getAllIds() {
-    println(ferdeezerId);
+// Log all ids to the crafttweaker.log file
+for fertilizerId in Fertilizer.getAllIds() {
+    println(fertilizerId);
 }
 ```
 
-## Eliminando todos los ferozantes
+## Removing All Fertilizers
 
-Esto eliminará por completo todos los ferozadores actualmente registrados. Esto es útil para si desea recrear todos los datos de scratch a través de scripts.
+This will completely remove all the fertilizers currently registered. This is useful for if you want to recreate all the data from scratch through scripts.
 
 ```zenscript
-Fer‡zer.removeAll();
+Fertilizer.removeAll();
 ```

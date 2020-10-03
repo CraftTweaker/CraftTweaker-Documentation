@@ -1,163 +1,163 @@
-# Урожай
+# Crops
 
-Путь к классу: `mods.botanypots.Crop`
+Class path: `mods.botanypots.Crop`
 
-## Использовано
+## Use
 
-Чтобы использовать, импортируйте класс с `import mods.botanypots.Crop;` в начале вашего скрипта.
+To use, import the class with `import mods.botanypots.Crop;` at the beginning of your script.
 
-## Создать обрезку
+## Create A Crop
 
-`Crop.create(id, seed, display, тикет, категории);`
+`Crop.create(id, seed, display, tickRate, categories);`
 
-- `id` &lt;строка> id обрезания. Это идентификатор пространства имён должен быть в допустимом формате `пространства имён:пути`.
-- `seed` <[IIngredient](/vanilla/api/items/IIngredient)> Предмет для посадки урожая.
-- `отображать` <[MCBlockState](/vanilla/api/blocks/MCBlockState)> Блок для отображения при отрисовке.
-- `tickRate` &lt;int> Один из факторов на то, сколько времени занимает обрезание.
-- `категории` &lt;строка[]> Массив категорий почвы, в которых может быть выращен этот урожай.
+- `id` &lt;string> The id of the crop. This is a namespaced id an must be in the valid `namespace:path` format.
+- `seed` <[IIngredient](/vanilla/api/items/IIngredient)> The item used to plant the crop.
+- `display` <[MCBlockState](/vanilla/api/blocks/MCBlockState)> The block to display when rendering the crop.
+- `tickRate` &lt;int> One of the factors for how long a crop takes to grow.
+- `categories` &lt;string[]> An array of soil categories this crop can be grown in.
 
-Может быть использовано для создания новой обрезания. Имейте в виду, что корзины должны быть добавлены отдельно.
+This can be used to create a new crop. Keep in mind that drops need to be added separately.
 
 ```zenscript
-Crop.create("examplepack:gold", <item:minecraft:gold_nugget>, <blockstate:minecraft:gold_block>, 3000, 2, ["камень"]);
+Crop.create("examplepack:gold", <item:minecraft:gold_nugget>, <blockstate:minecraft:gold_block>, 3000, 2, ["stone"]);
 ```
 
-## Удалить обрезку
+## Remove A Crop
 
 `Crop.remove(id);`
 
-- `id` строка &lt;> id обрезания для удаления. Это идентификатор пространства имён должен быть в допустимом формате `пространства имён:пути`.
+- `id` &lt;string> The id of the crop to remove. This is a namespaced id an must be in the valid `namespace:path` format.
 
-Удаляет кадрирование на основе идентификатора.
+Removes a crop based on it's id.
 
 ```zenscript
-Crop.remove("botanypots:crop/пшеница");
+Crop.remove("botanypots:crop/wheat");
 ```
 
-## Установить предмет сида
+## Set Seed Item
 
 `Crop.setSeed(id, seed);`
 
-- `id` &lt;строка> id обрезания. Это идентификатор пространства имён должен быть в допустимом формате `пространства имён:пути`.
-- `seed` <[IIngredient](/vanilla/api/items/IIngredient)> Предмет для посадки урожая.
+- `id` &lt;string> The id of the crop. This is a namespaced id an must be in the valid `namespace:path` format.
+- `seed` <[IIngredient](/vanilla/api/items/IIngredient)> The item used to plant the crop.
 
-Устанавливает предмет для посадки урожая.
+Sets the item used to plant the crop.
 
 ```zenscript
-Crop.setSeed("botanypots:crop/пшеница", <item:minecraft:diamond>);
+Crop.setSeed("botanypots:crop/wheat", <item:minecraft:diamond>);
 ```
 
-## Установить блок дисплея
+## Set Display Block
 
 `Crop.setDisplay(id, state);`
 
-- `id` &lt;строка> id обрезания. Это идентификатор пространства имён должен быть в допустимом формате `пространства имён:пути`.
-- `отображать` <[MCBlockState](/vanilla/api/blocks/MCBlockState)> Блок для отображения при отрисовке.
+- `id` &lt;string> The id of the crop. This is a namespaced id an must be in the valid `namespace:path` format.
+- `display` <[MCBlockState](/vanilla/api/blocks/MCBlockState)> The block to display when rendering the crop.
 
-Устанавливает отображенный блок для обрезания.
+Sets the block rendered for the crop.
 
 ```zenscript
-Crop.setDisplay("botanypots:crop/пшеница", <blockstate:minecraft:snow_block>);
+Crop.setDisplay("botanypots:crop/wheat", <blockstate:minecraft:snow_block>);
 ```
 
-## Установить частоту тика
+## Set Tick Rate
 
 `Crop.setTickRate(id, tickRate);`
 
-- `id` &lt;строка> id обрезания. Это идентификатор пространства имён должен быть в допустимом формате `пространства имён:пути`.
-- `tickRate` &lt;int> Обновленный тикет. Один из факторов того, как долго растёт урожай.
+- `id` &lt;string> The id of the crop. This is a namespaced id an must be in the valid `namespace:path` format.
+- `tickRate` &lt;int> The updated tick rate. One of the factors for how long a crop takes to grow.
 
-Устанавливает коэффициент частоты кадрирования.
+Sets the crop tick factor.
 
 ```zenscript
-Crop.setTickRate("botanypots:crop/пшеница", 5000);
+Crop.setTickRate("botanypots:crop/wheat", 5000);
 ```
 
-## Изменение категорий обрезки
+## Changing Crop Categories
 
-Изменяет категории, связанные с обрезанием. Категории используются для соответствия допустимых почв культуре.
+Changes the categories associated with the crop. Categories are used to match the valid soils to the crop.
 
-### Добавить категорию к кадрированию
+### Add a Category to a Crop
 
 `Crop.addCategory(id, categoriesToAdd);`
 
-- `id` &lt;строка> id обрезания. Это идентификатор пространства имён должен быть в допустимом формате `пространства имён:пути`.
-- `categoriesToAdd` &lt;string[]> Массив категорий, связанных с обрезанием.
+- `id` &lt;string> The id of the crop. This is a namespaced id an must be in the valid `namespace:path` format.
+- `categoriesToAdd` &lt;string[]> An array of categories to associate with the crop.
 
 ```zenscript
-Crop.addCategory("botanypots:crop/пшеница", ["камень", "снег"]);
+Crop.addCategory("botanypots:crop/wheat", ["stone", "snow"]);
 ```
 
-### Удалить категорию из кадрирования
+### Remove a Category From a Crop
 
 `Crop.removeCategory(id, categoriesToRemove);`
 
-- `id` &lt;строка> id обрезания. Это идентификатор пространства имён должен быть в допустимом формате `пространства имён:пути`.
-- `categoriesToRemove` &lt;string[]> Массив категорий, чтобы отделить кадрирование.
+- `id` &lt;string> The id of the crop. This is a namespaced id an must be in the valid `namespace:path` format.
+- `categoriesToRemove` &lt;string[]> An array of categories to dissociate with the crop.
 
 ```zenscript
-Crop.removeCategory("botanypots:crop/пшеница", ["грязь"]);
+Crop.removeCategory("botanypots:crop/wheat", ["dirt"]);
 ```
 
-### Очистить все категории из обрезки
+### Clear All Categories From a Crop
 
 `Crop.clearCategories(id);`
 
-- `id` &lt;строка> id обрезания. Это идентификатор пространства имён должен быть в допустимом формате `пространства имён:пути`.
+- `id` &lt;string> The id of the crop. This is a namespaced id an must be in the valid `namespace:path` format.
 
 ```zenscript
-Crop.clearCategories("botanypots:crop/пшеница");
+Crop.clearCategories("botanypots:crop/wheat");
 ```
 
-## Капли обрезки
+## Crop Drops
 
-### Добавление капли
+### Adding Drops
 
-`Crop.addDrop(id, drop, шанс, мин, макс);`
+`Crop.addDrop(id, drop, chance, min, max);`
 
-- `id` строка &lt;> id обрезания, чтобы добавить капсулу. Это идентификатор пространства имён должен быть в допустимом формате `пространства имён:пути`.
-- `выбросить` <[IItemStack](/vanilla/api/items/IItemStack)> предмет, чтобы сбросить.
-- `шанс` &lt;плавает> Шанс выпадения.
-- `мин` &lt;int> Минимальная сумма этого предмета, чтобы дать.
-- `макс.` &lt;int> Максимальная сумма этого предмета для дачи.
+- `id` &lt;string> The id of the crop to add a drop to. This is a namespaced id an must be in the valid `namespace:path` format.
+- `drop` <[IItemStack](/vanilla/api/items/IItemStack)> The item to drop.
+- `chance` &lt;float> The chance it drops.
+- `min` &lt;int> The min amount of that item to give.
+- `max` &lt;int> The max amount of that item to give.
 
-Это добавляет новый потенциальный сброс на обрезание.
+This adds a new potential drop to the crop.
 
 ```zenscript
-Crop.addDrop("botanypots:crop/пшеница", <item:minecraft:diamond>, 0.05, 1, 1);
+Crop.addDrop("botanypots:crop/wheat", <item:minecraft:diamond>, 0.05, 1, 1);
 ```
 
-### Удаление капли
+### Removing Drops
 
 `Crop.removeDrop(id, toRemove);`
 
-- `id` строка &lt;> id обрезания, чтобы удалить капсулу. Это идентификатор пространства имён должен быть в допустимом формате `пространства имён:пути`.
-- `toRemove` <[IIngredient](/vanilla/api/items/IIngredient)> Ингредиент, соответствующий для удаления
+- `id` &lt;string> The id of the crop to remove a drop from. This is a namespaced id an must be in the valid `namespace:path` format.
+- `toRemove` <[IIngredient](/vanilla/api/items/IIngredient)> The ingredient to match against for removal
 
-Удаляет капли с подходящим элементом.
+Removes any drops that have a matching item.
 
 ```zenscript
-Crop.removeDrop("botanypots:crop/пшеница", <item:minecraft:wheat_seeds>);
+Crop.removeDrop("botanypots:crop/wheat", <item:minecraft:wheat_seeds>);
 ```
 
-## Получение всех идентификаторов
+## Getting All Ids
 
 `Crop.getAllIds();`
 
-- Возвращается: &lt;string[]> Массив всех известных идентификаторов обрезания на момент возвращения.
+- Returns: &lt;string[]> An array of all known crop ids at the time this is ran.
 
-Это даст вам массив всех известных идентификаторов кадрирования.
+This will give you an array of all the known crop ids at the time.
 
 ```zenscript
-// Записывать все идентификаторы в файл crafttweaker.log
-для cropId в Crop.getAllIds() {
+// Log all ids to the crafttweaker.log file
+for cropId in Crop.getAllIds() {
     println(cropId);
 }
 ```
 
-## Удаление всех культур
+## Removing All Crops
 
-Это полностью удалит все собранные в настоящее время урожаи. Это полезно, если вы хотите пересоздать все данные с нуля через скрипты.
+This will completely remove all the crops currently registered. This is useful for if you want to recreate all the data from scratch through scripts.
 
 ```zenscript
 Crop.removeAll();

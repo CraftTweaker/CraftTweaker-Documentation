@@ -2,7 +2,7 @@
 
 Percorso classe: `mods.botanypots.Fertilizer`
 
-## Uso
+## Use
 
 Per usare, importa la classe con `import mods.botanypots.Fertilizer;` all'inizio del tuo script.
 

@@ -1,8 +1,8 @@
 # MCToolType
 
-工具类型用于识别工具可以输入哪种类型的块， 或者反之，需要哪种工具来挖掘给定的方块。
+A Tooltype is used to identify what kind of blocks a tool can mine, or inversely, what kind of tool is required to mine a given block.
 
-这个类是由模组添加的，有模组id `内容较弱`。 因此，如果要使用此功能，则需要安装此mod。
+This class was added by a mod with mod-id `contenttweaker`. 因此，如果要使用此功能，则需要安装此mod。
 
 ## 导入相关包
 如果遇到任何问题（例如强制转换数组），则可能需要导入软件包，因此，最好的方式就是导入包支持。
@@ -11,27 +11,27 @@ mods.contenttweaker.item.MCToolType
 ```
 
 ## 已实现的接口
-MCToolType 实现了以下接口。 这意味着对这个接口可用的任何方法也可以在此类上使用。
+MCToolType implements the following interfaces. 这意味着对这个接口可用的任何方法也可以在此类上使用。
 - [crafttweaker.api.brackets.CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
 
 ## Constructor #构造函数
-构造工具类型对象。 如果一个具有给定名称的工具已经存在，它们内部会指向相同的工具类型。 否则，将创建一个新的名字(同样适用于板块！)
+Constructs a ToolType object. If one with the given name already exists, they will internally point to the same toolType. Otherwise, a new one with the name is created (The same holds true for Brackets as well!)
 ```zenscript
-新mods.contenttweeper.item.MCToolType(name as String);
-新mods.contenttweeper.item.MCToolType("pickaxe");
+new mods.contenttweaker.item.MCToolType(name as String);
+new mods.contenttweaker.item.MCToolType("pickaxe");
 ```
-| 参数 | 类型          | 描述     |
-| -- | ----------- | ------ |
-| 名称 | 字符串[string] | 要使用的名称 |
+| 参数   | 类型     | 描述                  |
+| ---- | ------ | ------------------- |
+| name | String | The name to be used |
 
 
 
 ## 方法
 ### getName
 
-获取此工具类型的名称。 名称是 `<工具类型之后在括号中的表达式中使用的名称：`
+Gets the name of this toolType. The name is what is used in the Bracket expression after the `<tooltype:`
 
-返回类型：字符串
+Return type: String
 
 ```zenscript
 <tooltype:pickaxe>.getName();
@@ -39,9 +39,9 @@ MCToolType 实现了以下接口。 这意味着对这个接口可用的任何�
 
 ### hashCode
 
-返回对象的散列代码
+Returns the object's hash code
 
-返回类型：int
+Return type: int
 
 ```zenscript
 <tooltype:pickaxe>.hashCode();
@@ -49,9 +49,9 @@ MCToolType 实现了以下接口。 这意味着对这个接口可用的任何�
 
 ### toString
 
-获取此类型的字符串表达式。 不同于命令字符串！
+Get the string representation of this type. Is different from commandString!
 
-返回类型：字符串
+Return type: String
 
 ```zenscript
 <tooltype:pickaxe>.toString();
@@ -60,28 +60,28 @@ MCToolType 实现了以下接口。 这意味着对这个接口可用的任何�
 
 ## 参数
 
-| 名称                   | 类型          | 可获得  | 可设置   |
-| -------------------- | ----------- | ---- | ----- |
-| commandString #命令字符串 | 字符串[string] | true | false |
-| 名称                   | 字符串[string] | true | false |
+| 名称            | 类型     | 可获得  | 可设置   |
+| ------------- | ------ | ---- | ----- |
+| commandString | String | true | false |
+| name          | String | true | false |
 
 ## 运算符
 ### EQUALS
 
-如果给定的 MCToolType 对象是等效的
+Compares if two given MCToolType objects are equal
 
 ```zenscript
-<tooltype:pickaxe> == o 为对象
-<tooltype:pickaxe> == 新的 MCToolType("选择轴")
+<tooltype:pickaxe> == o as Object
+<tooltype:pickaxe> == new MCToolType("pickaxe")
 ```
 
-| 参数 | 类型 | 描述    |
-| -- | -- | ----- |
-| o  | 对象 | 另一个对象 |
+| 参数 | 类型     | 描述               |
+| -- | ------ | ---------------- |
+| o  | Object | The other object |
 
-## 卡斯特尔
+## Casters
 
-| 结果类型        | 是否隐藏  |
-| ----------- | ----- |
-| 字符串[string] | false |
+| 结果类型   | 是否隐藏  |
+| ------ | ----- |
+| String | false |
 

@@ -1,24 +1,24 @@
 # InitialInventory
 
-## 説明
+## Description
 
 このmodでは、初めてワールドに参加したプレイヤーにアイテムを提供できる機能を追加しています。他の一部のmodにおいて、プレイーが初めてワールドに参加したときに本などを与えるのと同じようなものです。
 
-## パッケージ
+## Package
 `mods.initialinventory.InvHandler`
 
-## 開始アイテムを追加中
+## Adding starting items
 
 これにより、プレイヤーがワールドに参加した際に、プレイヤーのインベントリにアイテムが追加されます。
 
-パラメータは次のとおりです。
+The parameters are:
 
 
 Param: `key`
 
 Type: `String`
 
-説明:
+Description:
 
 アイテムを与えるかどうかを決定する際に使用します。 キー(key)は任意の文字列に設定することができ、その取っ掛かりというのは、以前にそのプレイヤーにアイテムセットが与えられたかどうかの判定をすることです。
 
@@ -34,15 +34,15 @@ param: `item`
 
 Type `IItemStack`
 
-説明:
+Description:
 
 プレイヤーが参加した際に、プレイヤーに与えられるアイテムです。
 
-パラメータ: `index`
+Param: `index`
 
 Type: `int`
 
-説明:
+Description:
 
 オプションであるこの整数は、アイテムが与えられる場所を定義するものです。与えるアイテムを防具スロットのようなインベントリスロットに配置する場合などに使用できます。
 
@@ -52,9 +52,9 @@ Type: `int`
 ## 例
 
 ```zenscript
-//mods.initialinvHandler.addStartingItem(String key, IItemStack item, Optional int index);
-mods.initialinvHandler.addStartingItem("apples", <item:minecraft:apple>);
-mods.initialinvHandler.addStartingItem("apples", <item:minecraft:golden_apple>, 5);
+//mods.initialinventory.InvHandler.addStartingItem(String key, IItemStack item, Optional int index);
+mods.initialinventory.InvHandler.addStartingItem("apples", <item:minecraft:apple>);
+mods.initialinventory.InvHandler.addStartingItem("apples", <item:minecraft:golden_apple>, 5);
 ```
 
 

@@ -1,6 +1,6 @@
 # Quern
 
-## Pacchetto
+## Package
 `mods.atum.Quern;`
 
 ## Aggiungere una Ricetta
@@ -9,9 +9,9 @@
 
 - `input` [IItemStack](/vanilla/api/items/IItemStack)
 - `output` [IItemStack](/vanilla/api/items/IItemStack)
-- `rotazioni` Qualsiasi numero sopra 0
+- `rotations` Any number above 0
 
-Aggiunge una ricetta con l'input & output specificato, che richiede le rotazioni specificate per completare l'interrogazione
+Adds a recipe with the specified input & output, that takes the specified rotations to complete querning
 
 ```zenscript
 mods.atum.Quern.addRecipe(<item:atum:fertile_soil>, <item:atum:fertile_soil_pile>, 3);
@@ -31,19 +31,19 @@ Rimuove tutte le ricette il cui prodotto è l'[IItemStack](/vanilla/api/items/II
 mods.atum.Quern.removeRecipeByOutput(<item:atum:emmer_flour>);
 ```
 
-### Rimuovi Ricette per Uscita & Input
+### Remove Recipes by Output & Input
 
 `mods.atum.Quern.removeRecipeByOutputInput(output, input);`
 
 - `output` [IItemStack](/vanilla/api/items/IItemStack)
 - `input` [IItemStack](/vanilla/api/items/IItemStack)
 
-Rimuove la ricetta specifica, con l'output specificato & input
+Removes the specific recipe, with the specified output & input
 
 ```zenscript
 mods.atum.Quern.removeRecipeByOutputInput(<item:atum:emmer_flour>, <item:atum:emmer>);
 ```
 
-### Altri metodi di rimozione
+### Other removal methods
 
-Vedi [Gestori ricette](/recipes/recipe_managers) per altri modi per rimuovere le ricette Quern
+See [Recipe Managers](/recipes/recipe_managers) for other ways to remove Quern recipes

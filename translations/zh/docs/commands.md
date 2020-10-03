@@ -1,14 +1,14 @@
-# 命令
+# Commands
 
 重要的指令：
 ```
-/ct 手
+/ct hand
 ```
 ```
-/ct 日志
+/ct log
 ```
 ```
-/ct脚本
+/ct scripts
 ```
 ```
 /ct issues

@@ -1,27 +1,27 @@
 # MCPlayerWakeUpEvent
 
-Diese Klasse wurde von einer Mod mit mod-id `crafttweaker` hinzugefügt. Wenn Sie diese Funktion nutzen möchten, müssen Sie diese Mod installiert haben.
+This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
 
 ## Diese Klasse importieren
-Es kann erforderlich sein, dass Sie das Paket importieren, wenn Sie irgendwelche Probleme haben (wie zum Beispiel ein Array zu bearbeiten), also besser sicher sein als bedauern und fügen Sie den Import.
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
 ```zenscript
 crafttweaker.api.event.entity.player.MCPlayerWakeUpEvent
 ```
 
-## Konstrukteure
+## Constructors
 ```zenscript
-neue crafttweaker.api.event.entity.player.MCPlayerWakeUpEvent(Handler als Funktion.Verbraucher<crafttweaker.api.event.entity.player.MCPlayerWakeUpEvent>);
+new crafttweaker.api.event.entity.player.MCPlayerWakeUpEvent(handler as function.Consumer<crafttweaker.api.event.entity.player.MCPlayerWakeUpEvent>);
 ```
-| Parameter | Type                                                                                                                                | Beschreibung                 |
-| --------- | ----------------------------------------------------------------------------------------------------------------------------------- | ---------------------------- |
-| handler   | function.Consumer<[crafttweaker.api.event.entity.player.MCPlayerWakeUpEvent](/vanilla/api/event/entity/player/MCPlayerWakeUpEvent)> | Keine Beschreibung angegeben |
+| Parameter | Type                                                                                                                                | Beschreibung            |
+| --------- | ----------------------------------------------------------------------------------------------------------------------------------- | ----------------------- |
+| handler   | function.Consumer<[crafttweaker.api.event.entity.player.MCPlayerWakeUpEvent](/vanilla/api/event/entity/player/MCPlayerWakeUpEvent)> | No description provided |
 
 
 
 ## Methoden
 ### getEntityPlayer
 
-Gibt [craftweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity) zurück
+Returns [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
 
 ```zenscript
 myMCPlayerWakeUpEvent.getEntityPlayer();
@@ -29,85 +29,85 @@ myMCPlayerWakeUpEvent.getEntityPlayer();
 
 ### getPlayer
 
-Rückgaben: `Spieler`
+Returns: `Player`
 
-Gibt [craftweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity) zurück
+Returns [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
 
 ```zenscript
 myMCPlayerWakeUpEvent.getPlayer();
 ```
 
-### hasergebnis
+### hasResult
 
-Legt fest, ob dieses Ereignis einen signifikanten Ergebniswert erwartet. Hinweis: Ereignisse mit der HasResult-Anmerkung werden diese Methode automatisch hinzugefügt, um wahr zurückzugeben.
+Determines if this event expects a significant result value. Note: Events with the HasResult annotation will have this method automatically added to return true.
 
-Rückgabewert boolesch
+Returns boolean
 
 ```zenscript
 myMCPlayerWakeUpEvent.hasResult();
 ```
 
-### isabbrechbar
+### isCancelable
 
-Legen Sie fest, ob diese Funktion überhaupt abgebrochen werden kann. Gibt zurück: `Wenn der Zugriff auf setCanceled erlaubt sein sollte
- Hinweis:
- Ereignisse mit der abbrechbaren Anmerkung werden diese Methode automatisch hinzugefügt, um true zurückzugeben.`
+Determine if this function is cancelable at all. Returns: `If access to setCanceled should be allowed
+ Note:
+ Events with the Cancelable annotation will have this method automatically added to return true.`
 
-Rückgabewert boolesch
+Returns boolean
 
 ```zenscript
 myMCPlayerWakeUpEvent.isCancelable();
 ```
 
-### ist abgebrochen
+### isCanceled
 
-Legen Sie fest, ob dieses Ereignis abgebrochen wird und nicht mehr ausgeführt werden soll. Rückgabe: `Der aktuell abgebrochene Status`
+Determine if this event is canceled and should stop executing. Returns: `The current canceled state`
 
-Rückgabewert boolesch
+Returns boolean
 
 ```zenscript
 myMCPlayerWakeUpEvent.isCanceled();
 ```
 
-### abgebrochen
+### setCanceled
 
 ```zenscript
-myMCPlayerWakeUpEvent.setCanceled(Abbrechen als Boolean);
+myMCPlayerWakeUpEvent.setCanceled(cancel as boolean);
 ```
 
-| Parameter | Type    | Beschreibung                 |
-| --------- | ------- | ---------------------------- |
-| abbrechen | boolean | Keine Beschreibung angegeben |
+| Parameter | Type    | Beschreibung            |
+| --------- | ------- | ----------------------- |
+| cancel    | boolean | No description provided |
 
 
-### sollte Spawn setzen
+### shouldSetSpawn
 
-Zeigt an, ob der Schlaf des Spielers als erfolgreich galt. In Vanille wird dies verwendet, um festzustellen, ob der Spawn-Chunk auf die Position des Bettes gesetzt werden soll.
+Indicates if the player's sleep was considered successful. In vanilla, this is used to determine if the spawn chunk is to be set to the bed's position.
 
-Rückgabewert boolesch
+Returns boolean
 
 ```zenscript
 myMCPlayerWakeUpEvent.shouldSetSpawn();
 ```
 
-### aktualisiere Welt
+### updateWorld
 
-Gibt an, ob der Server über Schlafänderungen benachrichtigt werden soll. Dies wird nur falsch sein, wenn der Server bereits als 'up to date' gilt, da er zum Beispiel den Anruf initiiert hat.
+Indicates if the server should be notified of sleeping changes. This will only be false if the server is considered 'up to date' already, because, for example, it initiated the call.
 
-Rückgabewert boolesch
+Returns boolean
 
 ```zenscript
 myMCPlayerWakeUpEvent.updateWorld();
 ```
 
-### wkeSofort
+### wakeImmediately
 
-Verwendet für die 'Weckanimation'. Dies ist falsch, wenn der Spieler als 'schläft' betrachtet wird und das Overlay langsam verschwinden soll.
+Used for the 'wake up animation'. This is false if the player is considered 'sleepy' and the overlay should slowly fade away.
 
-Rückgabewert boolesch
+Returns boolean
 
 ```zenscript
-myMCPlayerWakeUpEvent.wakeSofort();
+myMCPlayerWakeUpEvent.wakeImmediately();
 ```
 
 

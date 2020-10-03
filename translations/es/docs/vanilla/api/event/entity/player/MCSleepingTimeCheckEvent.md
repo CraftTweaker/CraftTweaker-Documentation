@@ -1,83 +1,83 @@
-# Evento de verificación
+# MCSleepingTimeCheckEvent
 
-Esta clase fue añadida por un mod con la ID  `crafttweaker`. Necesitas tener este mod instalado si quieres usar esta caracteristica.
+This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
 
-## Importar la clase
-Puede ser requerido que importes el paquete si encuentras algun problema (como crear un Array).
+## Importing the class
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
 ```zenscript
-evento de verificación de tiempo
+crafttweaker.api.event.entity.player.MCSleepingTimeCheckEvent
 ```
 
-## Constructores
+## Constructors
 ```zenscript
-nuevo crafttweaker.api.event.entity.player.MCSleepingTimeCheckEvent(handler as function.Consumer<crafttweaker.api.event.entity.player.MCSleepingTimeCheckEvent>);
+new crafttweaker.api.event.entity.player.MCSleepingTimeCheckEvent(handler as function.Consumer<crafttweaker.api.event.entity.player.MCSleepingTimeCheckEvent>);
 ```
-| Parámetro | Tipo                                                                                                                                          | Descripción                   |
-| --------- | --------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------- |
-| handler   | function.Consumer<[crafttweaker.api.event.entity.player.MCSleepingTimeCheckEvent](/vanilla/api/event/entity/player/MCSleepingTimeCheckEvent)> | No se proporcionó descripción |
+| Parameter | Type                                                                                                                                          | Description             |
+| --------- | --------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------- |
+| handler   | function.Consumer<[crafttweaker.api.event.entity.player.MCSleepingTimeCheckEvent](/vanilla/api/event/entity/player/MCSleepingTimeCheckEvent)> | No description provided |
 
 
 
-## Métodos
-### %s Jugador
+## Methods
+### getEntityPlayer
 
-Devuelve [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
+Returns [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
 
 ```zenscript
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%; %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%;
+myMCSleepingTimeCheckEvent.getEntityPlayer();
 ```
 
 ### getPlayer
 
-Devuelve: `Jugador`
+Returns: `Player`
 
-Devuelve [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
-
-```zenscript
-miMCSleepingCheckEvent.getPlayer();
-```
-
-### hastaResultado
-
-Determina si este evento espera un valor de resultado significativo. Nota: Los eventos con la anotación HasResult tendrán este método automáticamente añadido para devolver verdadero.
-
-Devuelve booleano
+Returns [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
 
 ```zenscript
-%s %{count} %{count} %{count} %} %{count} %{count} %{count} %{count} %{count} %{count} {0} {0} {0} {0} {0} {0} {0} {0} {0} {0} {0} {0} {0} {0} {0} {0} } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } }
+myMCSleepingTimeCheckEvent.getPlayer();
 ```
 
-### es cancelable
+### hasResult
 
-Determine si esta función es cancelable. Devuelve: `Si el acceso a setCanceled debe ser permitido
- Nota:
- Los eventos con la anotación Cancelable tendrán este método automáticamente añadido para devolver verdadero.`
+Determines if this event expects a significant result value. Note: Events with the HasResult annotation will have this method automatically added to return true.
 
-Devuelve booleano
+Returns boolean
 
 ```zenscript
-%{count} %{count} %{count} %} %{count} %{count} %{count} %{count} %{count} %{count} %{count} %{count} %{count} %{count} %{count} %{count} %{count} {0} {0} {0} {0} {0} {0} {0} {0} {0} {0} {0} {0} {0} {0} {0} {0} {0} {0} {0} {0} {0} } {0} {0} {0} {0} {0} {0} {0} {0} {0} {0} {0} {0} {0} {0} {0} {0} {0} {0} {0} {0} {0} {0} {0} {
+myMCSleepingTimeCheckEvent.hasResult();
 ```
 
-### es cancelado
+### isCancelable
 
-Determine si este evento es cancelado y debe dejar de ejecutarse. Devuelve: `El estado actual cancelado`
+Determine if this function is cancelable at all. Returns: `If access to setCanceled should be allowed
+ Note:
+ Events with the Cancelable annotation will have this method automatically added to return true.`
 
-Devuelve booleano
+Returns boolean
 
 ```zenscript
-%s %{count} %{count} %{count} %{count} %{count} %{count} %{count} %{count} %{count} %{count} %{count} %{count} %{count} %{count} %{count} %{count} %{count} %{count} %{count} %{count} %{count} {0} {0} {0} {0} {0} {0} {0} {0} {0} {0} {0} {0} {0} {0} {0} {0} {0} {0} {0} {0} {0} {0} {0} {0} {0} {0} {0} {0} {0} {0} {0} {0} {0} {0} {0} {0} {0} {0}
+myMCSleepingTimeCheckEvent.isCancelable();
 ```
 
-### setCancelado
+### isCanceled
+
+Determine if this event is canceled and should stop executing. Returns: `The current canceled state`
+
+Returns boolean
 
 ```zenscript
-miMCSleepingTimeCheckEvent.setCanceled(cancelar como booleano);
+myMCSleepingTimeCheckEvent.isCanceled();
 ```
 
-| Parámetro | Tipo    | Descripción                   |
-| --------- | ------- | ----------------------------- |
-| cancelar  | boolean | No se proporcionó descripción |
+### setCanceled
+
+```zenscript
+myMCSleepingTimeCheckEvent.setCanceled(cancel as boolean);
+```
+
+| Parameter | Type    | Description             |
+| --------- | ------- | ----------------------- |
+| cancel    | boolean | No description provided |
 
 
 

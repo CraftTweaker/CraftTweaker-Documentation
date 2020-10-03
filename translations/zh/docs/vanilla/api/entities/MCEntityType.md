@@ -14,16 +14,16 @@ MCEntityType实现了以下接口。 这意味着对这个接口可用的任何�
 
 ## 参数
 
-| 名称                   | 类型                                                                                             | 可获得  | 可设置   |
-| -------------------- | ---------------------------------------------------------------------------------------------- | ---- | ----- |
-| classification #类别   | [crafttweaker.api.entity.MCEntityClassification](/vanilla/api/entities/MCEntityClassification) | true | false |
-| commandString #命令字符串 | 字符串[string]                                                                                    | true | false |
-| 高度                   | 浮点数                                                                                            | true | false |
-| immuneToFire #免疫火焰   | boolean                                                                                        | true | false |
-| lootTable            | 字符串[string]                                                                                    | true | false |
-| 名称                   | 字符串[string]                                                                                    | true | false |
-| serializable #可序列化   | boolean                                                                                        | true | false |
-| summonable #可召唤的     | boolean                                                                                        | true | false |
-| translationKey       | 字符串[string]                                                                                    | true | false |
-| width                | 浮点数                                                                                            | true | false |
+| 名称                 | 类型                                                                                             | 可获得  | 可设置   |
+| ------------------ | ---------------------------------------------------------------------------------------------- | ---- | ----- |
+| classification #类别 | [crafttweaker.api.entity.MCEntityClassification](/vanilla/api/entities/MCEntityClassification) | true | false |
+| commandString      | String                                                                                         | true | false |
+| height             | float                                                                                          | true | false |
+| immuneToFire #免疫火焰 | boolean                                                                                        | true | false |
+| lootTable          | String                                                                                         | true | false |
+| name               | String                                                                                         | true | false |
+| serializable #可序列化 | boolean                                                                                        | true | false |
+| summonable #可召唤的   | boolean                                                                                        | true | false |
+| translationKey     | String                                                                                         | true | false |
+| width              | float                                                                                          | true | false |
 

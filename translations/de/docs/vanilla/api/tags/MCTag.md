@@ -1,54 +1,54 @@
 # MCTag
 
-Diese Klasse wurde von einer Mod mit mod-id `crafttweaker` hinzugefügt. Wenn Sie diese Funktion nutzen möchten, müssen Sie diese Mod installiert haben.
+This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
 
 ## Diese Klasse importieren
-Es kann erforderlich sein, dass Sie das Paket importieren, wenn Sie irgendwelche Probleme haben (wie zum Beispiel ein Array zu bearbeiten), also besser sicher sein als bedauern und fügen Sie den Import.
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
 ```zenscript
 crafttweaker.api.tag.MCTag
 ```
 
-## Implementierte Schnittstellen
-MCTag implementiert die folgenden Schnittstellen. Das bedeutet, dass jede ihnen zur Verfügung stehende Methode auch in dieser Klasse verwendet werden kann.
+## Implemented Interfaces
+MCTag implements the following interfaces. That means any method available to them can also be used on this class.
 - [crafttweaker.api.item.IIngredient](/vanilla/api/items/IIngredient)
 
 ## Methoden
-### add-Blöcke
+### addBlocks
 
 ```zenscript
-myMCTag.addBlock(Blöcke als crafttweaker.api.block.MCBlock[]);
+myMCTag.addBlocks(blocks as crafttweaker.api.block.MCBlock[]);
 ```
 
-| Parameter | Type                                                            | Beschreibung                 |
-| --------- | --------------------------------------------------------------- | ---------------------------- |
-| blocks    | [crafttweaker.api.block.MCBlock](/vanilla/api/blocks/MCBlock)[] | Keine Beschreibung angegeben |
+| Parameter | Type                                                            | Beschreibung            |
+| --------- | --------------------------------------------------------------- | ----------------------- |
+| blocks    | [crafttweaker.api.block.MCBlock](/vanilla/api/blocks/MCBlock)[] | No description provided |
 
 
-### addEntity-Typen
+### addEntityTypes
 
 ```zenscript
-myMCTag.addEntityTypes(Entitäten als crafttweaker.api.entity.MCEntityType[]);
+myMCTag.addEntityTypes(entities as crafttweaker.api.entity.MCEntityType[]);
 ```
 
-| Parameter | Type                                                                         | Beschreibung                 |
-| --------- | ---------------------------------------------------------------------------- | ---------------------------- |
-| objekte   | [crafttweaker.api.entity.MCEntityType](/vanilla/api/entities/MCEntityType)[] | Keine Beschreibung angegeben |
+| Parameter | Type                                                                         | Beschreibung            |
+| --------- | ---------------------------------------------------------------------------- | ----------------------- |
+| entities  | [crafttweaker.api.entity.MCEntityType](/vanilla/api/entities/MCEntityType)[] | No description provided |
 
 
-### hinzufügende Elemente
+### addItems
 
 ```zenscript
-myMCTag.addItems(Items als crafttweaker.api.item.IItemStack[]);
+myMCTag.addItems(items as crafttweaker.api.item.IItemStack[]);
 ```
 
-| Parameter   | Type                                                                | Beschreibung                 |
-| ----------- | ------------------------------------------------------------------- | ---------------------------- |
-| gegenstände | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)[] | Keine Beschreibung angegeben |
+| Parameter | Type                                                                | Beschreibung            |
+| --------- | ------------------------------------------------------------------- | ----------------------- |
+| items     | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)[] | No description provided |
 
 
 ### createBlockTag
 
-Gibt [craftweaker.api.tag.MCTag](/vanilla/api/tags/MCTag) zurück
+Returns [crafttweaker.api.tag.MCTag](/vanilla/api/tags/MCTag)
 
 ```zenscript
 myMCTag.createBlockTag();
@@ -56,7 +56,7 @@ myMCTag.createBlockTag();
 
 ### createEntityTypeTag
 
-Gibt [craftweaker.api.tag.MCTag](/vanilla/api/tags/MCTag) zurück
+Returns [crafttweaker.api.tag.MCTag](/vanilla/api/tags/MCTag)
 
 ```zenscript
 myMCTag.createEntityTypeTag();
@@ -64,91 +64,91 @@ myMCTag.createEntityTypeTag();
 
 ### createItemTag
 
-Gibt [craftweaker.api.tag.MCTag](/vanilla/api/tags/MCTag) zurück
+Returns [crafttweaker.api.tag.MCTag](/vanilla/api/tags/MCTag)
 
 ```zenscript
 myMCTag.createItemTag();
 ```
 
-### Verbleibender Artikel
+### getRemainingItem
 
-Was bleibt im Raster, wenn diese Zutatenstapel hergestellt wird? Prüft aber nicht, ob der Stapel übereinstimmt! Verwendet z.B. im net.minecraft.item.crafting.ICraftingRecipe von CrT
+When this ingredient stack is crafted, what will remain in the grid? Does not check if the stack matches though! Used e.g. in CrT's net.minecraft.item.crafting.ICraftingRecipe
 
-Gibt [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) zurück
+Returns [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
 
 ```zenscript
-myMCTag.getRemainingItem(Stapel als crafttweaker.api.item.IItemStack);
+myMCTag.getRemainingItem(stack as crafttweaker.api.item.IItemStack);
 myMCTag.getRemainingItem(<item:minecraft:iron_ingot>);
 ```
 
-| Parameter | Type                                                              | Beschreibung                |
-| --------- | ----------------------------------------------------------------- | --------------------------- |
-| stapeln   | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | Der Stapel für diese Zutat. |
+| Parameter | Type                                                              | Beschreibung                              |
+| --------- | ----------------------------------------------------------------- | ----------------------------------------- |
+| stack     | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | The stack to provide for this ingredient. |
 
 
-### passt
+### matches
 
-Stimmt der gegebene Stapel mit der Zutat?
+Does the given stack match the ingredient?
 
-Rückgabewert boolesch
+Returns boolean
 
 ```zenscript
-myMCTag.matches(Stapel als crafttweaker.api.item.IItemStack);
+myMCTag.matches(stack as crafttweaker.api.item.IItemStack);
 myMCTag.matches(<item:minecraft:iron_ingot>);
 ```
 
-| Parameter | Type                                                              | Beschreibung           |
-| --------- | ----------------------------------------------------------------- | ---------------------- |
-| stapeln   | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | Der zu prüfende Stapel |
+| Parameter | Type                                                              | Beschreibung       |
+| --------- | ----------------------------------------------------------------- | ------------------ |
+| stack     | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | The stack to check |
 
 
-### entfernen Blöcke
-
-```zenscript
-myMCTag.removeBlock(Blöcke als crafttweaker.api.block.MCBlock[]);
-```
-
-| Parameter | Type                                                            | Beschreibung                 |
-| --------- | --------------------------------------------------------------- | ---------------------------- |
-| blocks    | [crafttweaker.api.block.MCBlock](/vanilla/api/blocks/MCBlock)[] | Keine Beschreibung angegeben |
-
-
-### entfernenEntity-Typen
+### removeBlocks
 
 ```zenscript
-myMCTag.removeEntityTypes(Entitäten als crafttweaker.api.entity.MCEntityType[]);
+myMCTag.removeBlocks(blocks as crafttweaker.api.block.MCBlock[]);
 ```
 
-| Parameter | Type                                                                         | Beschreibung                 |
-| --------- | ---------------------------------------------------------------------------- | ---------------------------- |
-| objekte   | [crafttweaker.api.entity.MCEntityType](/vanilla/api/entities/MCEntityType)[] | Keine Beschreibung angegeben |
+| Parameter | Type                                                            | Beschreibung            |
+| --------- | --------------------------------------------------------------- | ----------------------- |
+| blocks    | [crafttweaker.api.block.MCBlock](/vanilla/api/blocks/MCBlock)[] | No description provided |
 
 
-### Elemente entfernen
+### removeEntityTypes
 
 ```zenscript
-myMCTag.removeItems(Items als crafttweaker.api.item.IItemStack[]);
+myMCTag.removeEntityTypes(entities as crafttweaker.api.entity.MCEntityType[]);
 ```
 
-| Parameter   | Type                                                                | Beschreibung                 |
-| ----------- | ------------------------------------------------------------------- | ---------------------------- |
-| gegenstände | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)[] | Keine Beschreibung angegeben |
+| Parameter | Type                                                                         | Beschreibung            |
+| --------- | ---------------------------------------------------------------------------- | ----------------------- |
+| entities  | [crafttweaker.api.entity.MCEntityType](/vanilla/api/entities/MCEntityType)[] | No description provided |
+
+
+### removeItems
+
+```zenscript
+myMCTag.removeItems(items as crafttweaker.api.item.IItemStack[]);
+```
+
+| Parameter | Type                                                                | Beschreibung            |
+| --------- | ------------------------------------------------------------------- | ----------------------- |
+| items     | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)[] | No description provided |
 
 
 
-## Eigenschaften
+## Properties
 
-| Name          | Type                                                                         | Hat Getter | Hat Setter |
+| Name          | Type                                                                         | Has Getter | Has Setter |
 | ------------- | ---------------------------------------------------------------------------- | ---------- | ---------- |
 | blocks        | [crafttweaker.api.block.MCBlock](/vanilla/api/blocks/MCBlock)[]              | true       | false      |
-| Kommandozeile | String                                                                       | true       | false      |
-| entity-Typen  | [crafttweaker.api.entity.MCEntityType](/vanilla/api/entities/MCEntityType)[] | true       | false      |
-| gegenstände   | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)[]          | true       | false      |
+| commandString | String                                                                       | true       | false      |
+| entityTypes   | [crafttweaker.api.entity.MCEntityType](/vanilla/api/entities/MCEntityType)[] | true       | false      |
+| items         | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)[]          | true       | false      |
 
-## Zauberer
+## Casters
 
-| Ergebnis-Typ                                               | Ist Implizit |
-| ---------------------------------------------------------- | ------------ |
-| [crafttweaker.api.data.IData](/vanilla/api/data/IData)     | true         |
-| [crafttweaker.api.data.MapData](/vanilla/api/data/MapData) | true         |
+| Result type                                                | Is Implicit |
+| ---------------------------------------------------------- | ----------- |
+| [crafttweaker.api.data.IData](/vanilla/api/data/IData)     | true        |
+| [crafttweaker.api.data.MapData](/vanilla/api/data/MapData) | true        |
 

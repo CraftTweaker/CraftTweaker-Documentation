@@ -1,4 +1,4 @@
-# Менеджер планшетов
+# CraftingTableManager
 
 
 
@@ -10,142 +10,142 @@
 crafttweaker.api.CraftingTableManager
 ```
 
-## Реализованные интерфейсы
-CraftingTableManager реализует следующие интерфейсы. Следовательно, методы из них доступны в этом классе.
+## Implemented Interfaces
+CraftingTableManager implements the following interfaces. That means any method available to them can also be used on this class.
 - [crafttweaker.api.registries.IRecipeManager](/vanilla/api/managers/IRecipeManager)
 
-## Методы
+## Methods
 ### addJSONRecipe
 
-Добавляет рецепт на основе предоставленной IData. Предоставленная IData должна представлять JSON DataPack DataPack это позволяет эффективно регистрировать рецепты для любого набора данных, поддерживающего системы IRecipeType.
+Adds a recipe based on a provided IData. The provided IData should represent a DataPack JSON, this effectively allows you to register recipes for any DataPack supporting IRecipeType systems.
 
 ```zenscript
-craftingTable.addJSONRecipe(название строки, данные как crafttweaker.api.data.IData);
-craftingTable.addJSONRecipe("recipe_name", {ingredient:{item:<item:minecraft:gold_ore>.registryName},результат:<item:minecraft:cooked_porkchop>.registryName,experience:0.35 как float, cookingtime:100});
+craftingTable.addJSONRecipe(name as String, data as crafttweaker.api.data.IData);
+craftingTable.addJSONRecipe("recipe_name", {ingredient:{item:<item:minecraft:gold_ore>.registryName},result:<item:minecraft:cooked_porkchop>.registryName,experience:0.35 as float, cookingtime:100});
 ```
 
-| Параметр | Тип                                                    | Описание                         |
-| -------- | ------------------------------------------------------ | -------------------------------- |
-| имя      | String                                                 | название рецепта                 |
-| data     | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | данные, представляющие файл json |
+| Параметр | Тип                                                    | Description                     |
+| -------- | ------------------------------------------------------ | ------------------------------- |
+| name     | String                                                 | name of the recipe              |
+| data     | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | data representing the json file |
 
 
 ### addShaped
 
-Добавляет рецепт формы в таблицу крафта
+Adds a shaped recipe to the crafting table
 
 ```zenscript
 craftingTable.addShaped(recipeName as String, output as crafttweaker.api.item.IItemStack, ingredients as crafttweaker.api.item.IIngredient[][], recipeFunction as com.blamejared.crafttweaker.api.managers.IRecipeManager.RecipeFunctionMatrix);
 craftingTable.addShaped("recipe_name", <item:minecraft:dirt>, [[<item:minecraft:diamond>], [<tag:minecraft:wool>]]);
-craftingTable. ddShaped("recipe_name", <item:minecraft:dirt>, [[<item:minecraft:diamond>], [<tag:minecraft:wool>]], (usualOut as IItemStack, inpuas IItemStack[][]) => {if(inpu[0][0]. isplayName == "совершенно настоящий алмазный блок" ){return usualOut;}return <item:minecraft:clay>.setDisplayName("Алмаз");});
+craftingTable.addShaped("recipe_name", <item:minecraft:dirt>, [[<item:minecraft:diamond>], [<tag:minecraft:wool>]], (usualOut as IItemStack, inputs as IItemStack[][]) => {if(inputs[0][0].displayName == "totally real diamond block" ){return usualOut;}return <item:minecraft:clay>.setDisplayName("Diamond");});
 ```
 
-| Параметр       | Тип                                                                          | Описание                                                                                                              | Необязательный | Значение по умолчанию |
-| -------------- | ---------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- | -------------- | --------------------- |
-| имя рецепта    | String                                                                       | имя рецепта для добавления.                                                                                           | false          | null                  |
-| вывод          | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)            | output IItemStack                                                                                                     | false          | null                  |
-| ингредиенты    | [crafttweaker.api.item.IIngredient](/vanilla/api/items/IIngredient)[][]      | массив массива IIngredient для входов                                                                                 | false          | null                  |
-| рецепт функции | com.blamejared.crafttweaker.api.managers.IRecipeManager.RecipeFunctionMatrix | необязательный com.blamejared.crafttweaker.api.managers.IRecipeManager.RecipeFunctionMatrix для более сложных условий | true           | null                  |
+| Параметр       | Тип                                                                          | Description                                                                                                        | IsOptional | Default Value |
+| -------------- | ---------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------ | ---------- | ------------- |
+| recipeName     | String                                                                       | name of the recipe to add.                                                                                         | false      | null          |
+| output         | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)            | output IItemStack                                                                                                  | false      | null          |
+| ingredients    | [crafttweaker.api.item.IIngredient](/vanilla/api/items/IIngredient)[][]      | array of an array of IIngredient for inputs                                                                        | false      | null          |
+| recipeFunction | com.blamejared.crafttweaker.api.managers.IRecipeManager.RecipeFunctionMatrix | optional com.blamejared.crafttweaker.api.managers.IRecipeManager.RecipeFunctionMatrix for more advanced conditions | true       | null          |
 
 
 ### addShapedMirrored
 
-Добавляет рецепт зеркальной формы к столу создания
+Adds a mirrored shaped recipe to the crafting table
 
 ```zenscript
 craftingTable.addShapedMirrored(recipeName as String, output as crafttweaker.api.item.IItemStack, ingredients as crafttweaker.api.item.IIngredient[][], recipeFunction as com.blamejared.crafttweaker.api.managers.IRecipeManager.RecipeFunctionMatrix);
-craftingTable.addShapedMirrored("recipe_name", <item:minecraft:dirt>, [[<item:minecraft:diamond>], [<tag:minecraft:wool>]);
-craftingTable. ddShapedMirrored("recipe_name", <item:minecraft:dirt>, [[<item:minecraft:diamond>], [<tag:minecraft:wool>]], (usualOut as IItemStack, inpuas IItemStack[][]) => {if(inpu[0][0]. isplayName == "совершенно настоящий алмазный блок" ){return usualOut;}return <item:minecraft:clay>.setDisplayName("Алмаз");});
+craftingTable.addShapedMirrored("recipe_name", <item:minecraft:dirt>, [[<item:minecraft:diamond>], [<tag:minecraft:wool>]]);
+craftingTable.addShapedMirrored("recipe_name", <item:minecraft:dirt>, [[<item:minecraft:diamond>], [<tag:minecraft:wool>]], (usualOut as IItemStack, inputs as IItemStack[][]) => {if(inputs[0][0].displayName == "totally real diamond block" ){return usualOut;}return <item:minecraft:clay>.setDisplayName("Diamond");});
 ```
 
-| Параметр       | Тип                                                                          | Описание                                                                                                              | Необязательный | Значение по умолчанию |
-| -------------- | ---------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- | -------------- | --------------------- |
-| имя рецепта    | String                                                                       | имя рецепта для добавления.                                                                                           | false          | null                  |
-| вывод          | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)            | output IItemStack                                                                                                     | false          | null                  |
-| ингредиенты    | [crafttweaker.api.item.IIngredient](/vanilla/api/items/IIngredient)[][]      | массив массива IIngredient для входов                                                                                 | false          | null                  |
-| рецепт функции | com.blamejared.crafttweaker.api.managers.IRecipeManager.RecipeFunctionMatrix | необязательный com.blamejared.crafttweaker.api.managers.IRecipeManager.RecipeFunctionMatrix для более сложных условий | true           | null                  |
+| Параметр       | Тип                                                                          | Description                                                                                                        | IsOptional | Default Value |
+| -------------- | ---------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------ | ---------- | ------------- |
+| recipeName     | String                                                                       | name of the recipe to add.                                                                                         | false      | null          |
+| output         | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)            | output IItemStack                                                                                                  | false      | null          |
+| ingredients    | [crafttweaker.api.item.IIngredient](/vanilla/api/items/IIngredient)[][]      | array of an array of IIngredient for inputs                                                                        | false      | null          |
+| recipeFunction | com.blamejared.crafttweaker.api.managers.IRecipeManager.RecipeFunctionMatrix | optional com.blamejared.crafttweaker.api.managers.IRecipeManager.RecipeFunctionMatrix for more advanced conditions | true       | null          |
 
 
 ### addShapeless
 
-Добавляет бесформенный рецепт в стол создания
+Adds a shapeless recipe to the crafting table
 
 ```zenscript
 craftingTable.addShapeless(recipeName as String, output as crafttweaker.api.item.IItemStack, ingredients as crafttweaker.api.item.IIngredient[], recipeFunction as com.blamejared.crafttweaker.api.managers.IRecipeManager.RecipeFunctionArray);
-craftingTable. ddShapeless("recipe_name", <item:minecraft:dirt>, [<item:minecraft:diamond>, <tag:minecraft:wool>]);
-craftingTable. ddShapeless("recipe_name", <item:minecraft:dirt>, [<item:minecraft:diamond>, <tag:minecraft:wool>], (usualOut as IItemStack, inpuas IItemStack[]) => {if(inpu[0]. isplayName == "совершенно настоящий алмазный блок" ){return usualOut;}return <item:minecraft:clay>.setDisplayName("Алмаз");});
+craftingTable.addShapeless("recipe_name", <item:minecraft:dirt>, [<item:minecraft:diamond>, <tag:minecraft:wool>]);
+craftingTable.addShapeless("recipe_name", <item:minecraft:dirt>, [<item:minecraft:diamond>, <tag:minecraft:wool>], (usualOut as IItemStack, inputs as IItemStack[]) => {if(inputs[0].displayName == "totally real diamond block" ){return usualOut;}return <item:minecraft:clay>.setDisplayName("Diamond");});
 ```
 
-| Параметр       | Тип                                                                         | Описание                                                                                                             | Необязательный | Значение по умолчанию |
-| -------------- | --------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------- | -------------- | --------------------- |
-| имя рецепта    | String                                                                      | имя рецепта для добавления.                                                                                          | false          | null                  |
-| вывод          | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)           | output IItemStack                                                                                                    | false          | null                  |
-| ингредиенты    | [crafttweaker.api.item.IIngredient](/vanilla/api/items/IIngredient)[]       | массив Ingredient для входов                                                                                         | false          | null                  |
-| рецепт функции | com.blamejared.crafttweaker.api.managers.IRecipeManager.RecipeFunctionArray | необязательный com.blamejared.crafttweaker.api.managers.IRecipeManager.RecipeFunctionArray для более сложных условий | true           | null                  |
+| Параметр       | Тип                                                                         | Description                                                                                                       | IsOptional | Default Value |
+| -------------- | --------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- | ---------- | ------------- |
+| recipeName     | String                                                                      | name of the recipe to add.                                                                                        | false      | null          |
+| output         | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)           | output IItemStack                                                                                                 | false      | null          |
+| ingredients    | [crafttweaker.api.item.IIngredient](/vanilla/api/items/IIngredient)[]       | array of IIngredient for inputs                                                                                   | false      | null          |
+| recipeFunction | com.blamejared.crafttweaker.api.managers.IRecipeManager.RecipeFunctionArray | optional com.blamejared.crafttweaker.api.managers.IRecipeManager.RecipeFunctionArray for more advanced conditions | true       | null          |
 
 
-### удалить все
+### removeAll
 
-Удалить все рецепты в реестре
+Remove all recipes in this registry
 
 ```zenscript
 craftingTable.removeAll();
 ```
 
-### удалил Modid
+### removeByModid
 
-Удалить рецепт на основе модификации имени реестра
+Remove recipe based on Registry name modid
 
 ```zenscript
 craftingTable.removeByModid(modid as String);
 craftingTable.removeByModid("minecraft");
 ```
 
-| Параметр | Тип    | Описание                  |
-| -------- | ------ | ------------------------- |
-| мод      | String | мод рецептов для удаления |
+| Параметр | Тип    | Description                    |
+| -------- | ------ | ------------------------------ |
+| modid    | String | modid of the recipes to remove |
 
 
 ### removeByName
 
-Удалить рецепт на основе названия реестра
+Remove recipe based on Registry name
 
 ```zenscript
-craftingTable.removeByName(название как строка);
+craftingTable.removeByName(name as String);
 craftingTable.removeByName("minecraft:furnace");
 ```
 
-| Параметр | Тип    | Описание                 |
-| -------- | ------ | ------------------------ |
-| имя      | String | имя реестра для удаления |
+| Параметр | Тип    | Description                       |
+| -------- | ------ | --------------------------------- |
+| name     | String | registry name of recipe to remove |
 
 
 ### removeByRegex
 
-Удалить рецепт, основанный на регулярном выражении
+Remove recipe based on regex
 
 ```zenscript
-craftingTable.removeByRegex(regex как строка);
+craftingTable.removeByRegex(regex as String);
 craftingTable.removeByRegex("\\d_\\d");
 ```
 
-| Параметр   | Тип    | Описание                 |
-| ---------- | ------ | ------------------------ |
-| регулярные | String | выражать до совпадения с |
+| Параметр | Тип    | Description            |
+| -------- | ------ | ---------------------- |
+| regex    | String | regex to match against |
 
 
-### удалить рецепт
+### removeRecipe
 
-Удалите рецепт, основанный на его результате.
+Remove a recipe based on it's output.
 
 ```zenscript
-craftingTable.removeRecipe(выход как crafttweaker.api.item.IItemStack);
+craftingTable.removeRecipe(output as crafttweaker.api.item.IItemStack);
 craftingTable.removeRecipe(<item:minecraft:glass>);
 ```
 
-| Параметр | Тип                                                               | Описание      |
-| -------- | ----------------------------------------------------------------- | ------------- |
-| вывод    | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | вывод рецепта |
+| Параметр | Тип                                                               | Description          |
+| -------- | ----------------------------------------------------------------- | -------------------- |
+| output   | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | output of the recipe |
 
 
 

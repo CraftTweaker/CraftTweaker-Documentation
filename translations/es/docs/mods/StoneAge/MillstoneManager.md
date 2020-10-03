@@ -1,20 +1,20 @@
-# Piedra miligrana
+# Millstone
 
-## Paquete
+## Package
 `importar mods.stone_age.MillstoneManager;`
 
-## Métodos
-- **Nombre de cadena** Nombre de la receta
+## Methods
+- **String name** Recipe name
 - **[IItemStack](/Vanilla/Items/IItemStack/) output**
-- **[entrada IIngrediente](/Vanilla/Variable_Types/IIngredient/)**
-- **int activateCount** Activa el contador de milstone
-- **Grupo de cadenas** Grupo de recetas
+- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input**
+- **int activateCount** Activate millstone count
+- **String group** Recipe group
 
-## Adicional
+## Addition
 
 ```zenscript
 <recipetype:stone_age:millstone>.addRecipe(String name, IItemStack output, IIngredient input, int activateCount, @OptionalString String group)
 
-<recipetype:stone_age:millstone>. ddRecipe("azúcar", <item:minecraft:sugar>, <item:minecraft:sugar_cane>, 2, "foods");
-MillstoneManager.INSTANCE.addRecipe("azúcar", <item:minecraft:sugar>, <item:minecraft:sugar_cane>, 2, "foods");
+<recipetype:stone_age:millstone>.addRecipe("sugar", <item:minecraft:sugar>, <item:minecraft:sugar_cane>, 2, "foods");
+MillstoneManager.INSTANCE.addRecipe("sugar", <item:minecraft:sugar>, <item:minecraft:sugar_cane>, 2, "foods");
 ```

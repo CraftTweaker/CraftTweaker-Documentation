@@ -1,14 +1,14 @@
-# Comandi
+# Commands
 
 Questi sono i comandi più importanti:
 ```
-/ct mano
+/ct hand
 ```
 ```
 /ct log
 ```
 ```
-/ct script
+/ct scripts
 ```
 ```
 /ct issues

@@ -1,27 +1,27 @@
-# Polecenia
+# Commands
 
-Oto polecenia, które mają znaczenie:
+Here are the commands that matter:
 ```
-/ct dłoń
-```
-```
-/g dziennika
+/ct hand
 ```
 ```
-/wyłącz skrypty
+/ct log
 ```
 ```
-/daj problemy
+/ct scripts
+```
+```
+/ct issues
 ```
 ```
 /ct discord
 ```
 ```
-/g zrzut
+/ct dump
 ```
 ```
-/konstrukcja typu
+/ct recipeTypes
 ```
 ```
-/daj pomoc
+/ct help
 ```

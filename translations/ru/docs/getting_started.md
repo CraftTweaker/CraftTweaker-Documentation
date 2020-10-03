@@ -5,36 +5,36 @@ CraftTweaker uses a custom scripting Language called `ZenScript`, ZenScript is r
 ZenScript — язык сценариев «сверху вниз». Это значит, что `операторы импорта` должны быть сверху файла, `объявления переменных` должны быть недалеко от верха файла, впрочем, ограничения на это нет. `Переменная` может быть объявлена где угодно в скрипте, а доступа к ней не будет выше, чем объявлена.
 
 
-Файлы скриптов имеют префикс `.zs` , убедитесь, что он не `.zs.txt`!
+Script files have the `.zs` prefix, make sure that it isn't `.zs.txt`!
 
-## Что такое скрипты
+## What are scripts
 
-Скрипты хранятся в `<gamedir>/scripts` и загружаются, когда игрок присоединяется к миру, подобно предыдущим версиям CraftTweaker (за исключением 1. 2), скрипты могут быть перезагружены, просто запустите `/reload`.
+Scripts are stored in `<gamedir>/scripts` and are loaded when the player joins a world, much like previous versions of CraftTweaker (excluding 1.12), Scripts CAN be reloaded, just run `/reload`.
 
-Скрипты загружаются дважды при входе в мир одного игрока, один раз на `сервере` , а затем на `клиенте` стороне, если у вас в скрипте `println()` , вы увидите его дважды, так как он работает дважды.
+Scripts are loaded twice when entering a single player world, once on the `Server` side, and then on the `Client` side, if you have a `println()` in your script, you will see it twice, since it is running twice.
 
-Это не означает, что изменения применяются дважды при изменениях, внесенных скриптами, могут быть заблокированы, так что некоторые изменения, Например, настройка локализации, работает только на стороне клиента, но добавление рецептов происходит только на стороне сервера.
+This does not mean that changes are applied twice however, changes made by scripts can be sided, so some changes, such as setting localization, only run on the client side, but adding recipes is only done on the server side.
 
-При подключении к серверу сервер отправляет клиенту свои скрипты, и клиент запускает эти скрипты. Это означает, что клиент без каких-либо скриптов, может присоединиться к серверу и получить изменения (полезно, если вам нужно отключить элемент на сервере, но не хочу заставлять клиентов загружать дополнительные файлы!)
+When joining a server, the server sends their scripts to the client, and the client runs those scripts. This does mean that a client without any scripts, can join a server and get the changes (useful if you need to disable an item on the server but don't want to force clients to download extra files!)
 
 
 ### Написание вашего первого скрипта
 
-Чтобы начать работу со скриптами, вы можете создать очень простой файл, называемый `привет. s` в папке `<gamedir>/scripts>` ; Если вы не уверены в том, где находится папка, просто запустите `/ct scripts` и он должен открыть!
+To get started with Scripts, you can create a very basic file, called `hello.zs` in the `<gamedir>/scripts>` folder; If you aren't sure where the folder is, just run `/ct scripts` and it should open!
 
 В `hello.zs` вставьте следующую строку
 
 ```zenscript
-println("Привет мир!");
+println("Hello world!");
 ```
 
 Now load up Minecraft and and take a look at the `<gamedir>/logs/crafttweaker.log` file (or run `/ct log` to have the file open in your default text editor).
 
-Файл `crafttweaker.log` находится в `<gamedir>/logs` и может быть прочитан любой программой, которая может читать текстовые файлы.
+The `crafttweaker.log` file is located in `<gamedir>/logs` and can be read by any program that can read plaintext files.
 
-Для редактирования файлов скриптов рекомендуется использовать Notepad++, Sublime Text или VSCode .
+It is recommended to use Notepad++, Sublime Text or VSCode to edit script files, however any program will do.
 
-При выборе программы, используемой для редактирования скриптов, посмотрите какие подсветки синтаксиса доступны, большинство распространенных текстовых редакторов имеют ZenScript поддержку через использование плагина.
+When choosing a program to use to edit scripts, take a look at what Syntax highlighters are available, most common text editors have ZenScript highlighting support through the use of a plugin.
 
 
 
@@ -43,16 +43,16 @@ Now load up Minecraft and and take a look at the `<gamedir>/logs/crafttweaker.lo
 Файл `crafttweaker.log` использует специальный синтаксис в выходном файле, приведенный ниже:
 
 ```
-[ЧЧ:ММ:СС.мс][LOADERSTAGE][SIDE][TYPE] <message>
+[HH:MM:SS.ms][LOADERSTAGE][SIDE][TYPE] <message>
 ```
 
 Используя приведенный выше шаблон, можно сделать пример:
 
 ```
-[14:58:06.697][DONE][SERVER][INFO] Привет мир!
+[14:58:06.697][DONE][SERVER][INFO] Hello world!
 ```
 
-Синтаксис используется в целях отладки и единственный раз, когда не используется синтаксис, - для командных дампов, в этом случае просто напечатайте сообщение, так что скопируйте полученную информацию легче.
+The syntax is used for debug purposes and the only time the syntax is not used, is for command dumps, in which case it just prints the message, this is done so copy pasting the dumped information is easier.
 
 ### Комментарии
 
@@ -70,4 +70,4 @@ ZenScript поддерживает 3 типа комментариев:
 многострочный комментарий! */
 ```
 
-Просто обратите внимание, что `#` комментариев также используются для препроцессоров (TODO ссылка на препроцессоры, когда они документированы), так что если они все еще являются действительными комментариями, они могут вызвать нежелательные побочные эффекты. 
+Just note, that `#` comments are also used for PreProcessors (TODO link to PreProcessors when they are documented), so while they are still valid comments, they could cause unwanted side effects. 

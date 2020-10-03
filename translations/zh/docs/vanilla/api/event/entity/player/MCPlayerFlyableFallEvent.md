@@ -5,23 +5,23 @@
 ## 导入相关包
 如果遇到任何问题（例如强制转换数组），则可能需要导入软件包，因此，最好的方式就是导入包支持。
 ```zenscript
-craftminstrer.api.event.entity.player.MCPlayerFlyableFallEvent
+crafttweaker.api.event.entity.player.MCPlayerFlyableFallEvent
 ```
 
 ## Constructor #构造函数
 ```zenscript
-新 craftminstrer.api.event.entity.player.MCPlayerFlyableFallEvent(处理程序作为函数。消费者<crafttweaker.api.event.entity.player.MCPlayerFlyableFallEvent>);
+new crafttweaker.api.event.entity.player.MCPlayerFlyableFallEvent(handler as function.Consumer<crafttweaker.api.event.entity.player.MCPlayerFlyableFallEvent>);
 ```
-| 参数      | 类型                                                                                                                                   | 描述                      |
-| ------- | ------------------------------------------------------------------------------------------------------------------------------------ | ----------------------- |
-| handler | Consumer<[craftmiliter.api.event.entity.player.MCPlayerFlyableFallEvent](/vanilla/api/event/entity/player/MCPlayerFlyableFallEvent)> | No description provided |
+| 参数      | 类型                                                                                                                                            | 描述                      |
+| ------- | --------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------- |
+| handler | function.Consumer<[crafttweaker.api.event.entity.player.MCPlayerFlyableFallEvent](/vanilla/api/event/entity/player/MCPlayerFlyableFallEvent)> | No description provided |
 
 
 
 ## 方法
 ### getDistance
 
-返回浮点数
+Returns float
 
 ```zenscript
 myMCPlayerFlyableFallEvent.getDistance();
@@ -29,7 +29,7 @@ myMCPlayerFlyableFallEvent.getDistance();
 
 ### getEntityPlayer
 
-返回 [craftbinstruer.api.entity.player.MCPlayerEnty](/vanilla/api/entity/player/MCPlayerEntity)
+Returns [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
 
 ```zenscript
 myMCPlayerFlyableFallEvent.getEntityPlayer();
@@ -37,7 +37,7 @@ myMCPlayerFlyableFallEvent.getEntityPlayer();
 
 ### getMultiplier
 
-返回浮点数
+Returns float
 
 ```zenscript
 myMCPlayerFlyableFallEvent.getMultiplier();
@@ -45,17 +45,17 @@ myMCPlayerFlyableFallEvent.getMultiplier();
 
 ### getPlayer
 
-返回： `玩家`
+Returns: `Player`
 
-返回 [craftbinstruer.api.entity.player.MCPlayerEnty](/vanilla/api/entity/player/MCPlayerEntity)
+Returns [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
 
 ```zenscript
 myMCPlayerFlyableFallEvent.getPlayer();
 ```
 
-### 突然结果
+### hasResult
 
-确定此事件是否需要一个重要的结果值。 注意： HasResult 注解中的事件将会自动添加此方法以返回 true。
+Determines if this event expects a significant result value. Note: Events with the HasResult annotation will have this method automatically added to return true.
 
 返回为布尔值
 
@@ -63,11 +63,11 @@ myMCPlayerFlyableFallEvent.getPlayer();
 myMCPlayerFlyableFallEvent.hasResult();
 ```
 
-### 可取消
+### isCancelable
 
-确定此函数是否可以取消。 返回： `如果应该允许访问 setcanced
- 注意：
- 取消批注事件将自动添加此方法以返回 true。`
+Determine if this function is cancelable at all. Returns: `If access to setCanceled should be allowed
+ Note:
+ Events with the Cancelable annotation will have this method automatically added to return true.`
 
 返回为布尔值
 
@@ -75,9 +75,9 @@ myMCPlayerFlyableFallEvent.hasResult();
 myMCPlayerFlyableFallEvent.isCancelable();
 ```
 
-### 已取消
+### isCanceled
 
-确定此事件是否被取消并应停止执行。 返回： `当前取消的状态`
+Determine if this event is canceled and should stop executing. Returns: `The current canceled state`
 
 返回为布尔值
 
@@ -85,37 +85,37 @@ myMCPlayerFlyableFallEvent.isCancelable();
 myMCPlayerFlyableFallEvent.isCanceled();
 ```
 
-### 已取消
+### setCanceled
 
 ```zenscript
-myMCPlayerFlyableFallEvent.setCanceled(cancel as boolean)；
+myMCPlayerFlyableFallEvent.setCanceled(cancel as boolean);
 ```
 
-| 参数 | 类型      | 描述                      |
-| -- | ------- | ----------------------- |
-| 取消 | boolean | No description provided |
+| 参数     | 类型      | 描述                      |
+| ------ | ------- | ----------------------- |
+| cancel | boolean | No description provided |
 
 
-### 设置距离
+### setDistance
 
 ```zenscript
-myMCPlayerFlyableFallEvent.setDistance(距离浮点数)；
+myMCPlayerFlyableFallEvent.setDistance(distance as float);
 ```
 
-| 参数 | 类型  | 描述                      |
-| -- | --- | ----------------------- |
-| 距离 | 浮点数 | No description provided |
+| 参数       | 类型    | 描述                      |
+| -------- | ----- | ----------------------- |
+| distance | float | No description provided |
 
 
 ### setMultiplier
 
 ```zenscript
-myMCPlayerFlyableFallEvent.setMultiplier(乘数为浮点)；
+myMCPlayerFlyableFallEvent.setMultiplier(multiplier as float);
 ```
 
-| 参数 | 类型  | 描述                      |
-| -- | --- | ----------------------- |
-| 倍数 | 浮点数 | No description provided |
+| 参数         | 类型    | 描述                      |
+| ---------- | ----- | ----------------------- |
+| multiplier | float | No description provided |
 
 
 

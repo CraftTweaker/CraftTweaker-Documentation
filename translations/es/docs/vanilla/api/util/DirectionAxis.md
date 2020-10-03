@@ -1,46 +1,46 @@
-# Eje de dirección
+# DirectionAxis
 
-Representa un eje de dirección (X, Y, Z)
+Represents a direction axis (X, Y, Z)
 
-Esta clase fue añadida por un mod con la ID  `crafttweaker`. Necesitas tener este mod instalado si quieres usar esta caracteristica.
+This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
 
-## Importar la clase
-Puede ser requerido que importes el paquete si encuentras algun problema (como crear un Array).
+## Importing the class
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
 ```zenscript
-crafttweaker.api.util.Eje de dirección
+crafttweaker.api.util.DirectionAxis
 ```
 
-## Interfaces implementadas
-DirectionAxis implementa las siguientes interfaces. Esto significa que cualquier método disponible también puede ser usado en esta clase.
-- [crafttweaker.api.brackets.CommandStringMostrar](/vanilla/api/brackets/CommandStringDisplayable)
+## Implemented Interfaces
+DirectionAxis implements the following interfaces. That means any method available to them can also be used on this class.
+- [crafttweaker.api.brackets.CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
 
-## Métodos
+## Methods
 ### getCoordinate
 
-Obtiene la coordenada de este eje basada en los valores dados, si este eje es "X", entonces devolverá el valor del parámetro "x"
+Gets the coordinate of this axis based on the given values, if this axis is "X", then it will return the value of the "x" parameter
 
-Devuelve la pista
+Returns int
 
 ```zenscript
 <directionaxis:x>.getCoordinate(x as int, y as int, z as int);
 <directionaxis:x>.getCoordinate(1, 2, 3);
 ```
 
-| Parámetro | Tipo | Descripción              |
-| --------- | ---- | ------------------------ |
-| x         | int  | valor x de la coordenada |
-| y         | int  | valor y de la coordenada |
-| z         | int  | valor z de la coordenada |
+| Parameter | Type | Description               |
+| --------- | ---- | ------------------------- |
+| x         | int  | x value of the coordinate |
+| y         | int  | y value of the coordinate |
+| z         | int  | z value of the coordinate |
 
 
 
-## Propiedades
+## Properties
 
-| Nombre        | Tipo    | Tiene Obtén | Tiene Setter |
-| ------------- | ------- | ----------- | ------------ |
-| commandString | Cadena  | verdad      | falso        |
-| horizontal    | boolean | verdad      | falso        |
-| nombre        | Cadena  | verdad      | falso        |
-| ordinal       | int     | verdad      | falso        |
-| vertical      | boolean | verdad      | falso        |
+| Name          | Type    | Has Getter | Has Setter |
+| ------------- | ------- | ---------- | ---------- |
+| commandString | String  | true       | false      |
+| horizontal    | boolean | true       | false      |
+| name          | String  | true       | false      |
+| ordinal       | int     | true       | false      |
+| vertical      | boolean | true       | false      |
 

@@ -1,68 +1,68 @@
-# 基尔文
+# Kiln
 
-Kiln 是一个用于快速处理构造块的多块，可以通过熔炼炉中的东西获得。
+The Kiln is a multiblock used for quickly processing building blocks, that can be acquired through smelting something in a furnace.
 
 ## 所属包名
 `mods.atum.Kiln;`
 
-## 黑名单
+## Blacklist
 
-玉米配方是基于原料熔炉配方的，除构件块外，还排序所有其他配方。 黑名单是你进一步最大限度地减少从草原熔炉中抢到什么配方的一种方式。
+The Kiln recipes are based on the vanilla Furnaces recipes, sorting out everything besides building blocks. The blacklist is a way for you to further minimize what recipes are grabbed from the vanilla Furnace.
 
 `mods.atum.Kiln.blacklist(id);`
 
-- `id` 应该黑名单上的输入方块/项目的命名空间 ID。
+- `id` A namespaced ID for the input block/item that should be blacklisted.
 
-移除基尔会从原料熔炉中提取的配方中指定项目/方块的累计数
+Removes the recipe(s) with the specified item/block from the recipes the Kiln will pull from the vanilla Furnace
 
 ```zenscript
 mods.atum.Kiln.blacklist("minecraft:cobblestone");
 ```
 
-## 添加配方
+## Adding a Recipe
 
-`mods.atum.Kiln.addRecipe(input, output, experience, @Optional cookTime)；`
+`mods.atum.Kiln.addRecipe(input, output, experience, @Optional cookTime);`
 
 - `input` [IItemStack](/vanilla/api/items/IItemStack)
 - `output` [IItemStack](/vanilla/api/items/IItemStack)
-- `体验` 浮点数
-- `cooktime` 整数 (如果留空，默认值为 75)
+- `experience` Float number
+- `cookTime` Integer number (If left empty, it'll default to 75)
 
-添加配方与指定输入、输出、体验 & 烹饪时间
+Adds a recipe with the specified input, output, experience & cook time
 
 ```zenscript
-mods.atum.Kiln.addRecipe(<item:atum:dirty_bone_block>, <item:atum:alabaster>, 0.2)；
+mods.atum.Kiln.addRecipe(<item:atum:dirty_bone_block>, <item:atum:alabaster>, 0.2);
 ```
 
-## 删除配方
+## Removing a Recipe
 
-移除方法仅适用于由 Atum (其他模式) 在 默认情况下，这只能是 Mar-White Ceramic Tile Block 配方。 如果你想要删除其他东西，你可能正在寻找黑名单 (上面的文档)
+The removal methods only work for recipes added specifically for the Kiln by Atum (Or other mods) By default in Atum this will only be the Marl to White Ceramic Tile Block recipe. If you wish to remove something else, you're probably looking for the blacklist (Documentation above)
 
-### 通过输出移除配方
+### Remove Recipes by Output
 
-`mods.atum.Kiln.removeRecipeByOutput(输出)；`
+`mods.atum.Kiln.removeRecipeByOutput(output);`
 
 - `output` [IItemStack](/vanilla/api/items/IItemStack)
 
-移除输出结果为所提供的 [IItemStack](/vanilla/api/items/IItemStack) 的所有配方。
+Removes all recipes where the output result is the provided [IItemStack](/vanilla/api/items/IItemStack).
 
 ```zenscript
-mods.atum.Kiln.removeRecipeByOut(<item:atum:marl>)；
+mods.atum.Kiln.removeRecipeByOutput(<item:atum:marl>);
 ```
 
-### 通过输出 & 输入移除配方
+### Remove Recipes by Output & Input
 
-`mods.atum.Kiln.removeRecipeByOutput(输出, 输入)；`
+`mods.atum.Kiln.removeRecipeByOutputInput(output, input);`
 
 - `output` [IItemStack](/vanilla/api/items/IItemStack)
 - `input` [IItemStack](/vanilla/api/items/IItemStack)
 
-移除指定输出 & 输入的特定方法
+Removes the specific recipe, with the specified output & input
 
 ```zenscript
-mods.atum.Kiln.removeRecipeByOutPutt(<item:atum:cermic_white>, <item:atum:marl>);
+mods.atum.Kiln.removeRecipeByOutputInput(<item:atum:cermic_white>, <item:atum:marl>);
 ```
 
-### 其他移除方法
+### Other removal methods
 
-请参阅 [配方管理器](/recipes/recipe_managers) 以其他方式去除旋转轮配方
+See [Recipe Managers](/recipes/recipe_managers) for other ways to remove Spinning Wheel recipes

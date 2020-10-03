@@ -1,27 +1,27 @@
 # MCXpChange
 
-Ta klasa została dodana przez moda z mod-id `crafttweaker`. Więc musisz zainstalować tę modyfikację, jeśli chcesz używać tej funkcji.
+This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
 
-## Importowanie klasy
-Może być wymagane zaimportowanie pakietu, jeśli napotkasz jakiekolwiek problemy (np. rzucanie tablicy), tak aby były bezpieczne niż przepraszamy i dodaj import.
+## Importing the class
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
 ```zenscript
 crafttweaker.api.event.entity.player.PlayerXpEvent.MCXpChange
 ```
 
-## Konstruktorzy
+## Constructors
 ```zenscript
-nowy crafttweaker.api.event.entity.player.PlayerXpEvent.MCXpChange(handler jako function.Consumer<crafttweaker.api.event.entity.player.PlayerXpEvent.MCXpChange>);
+new crafttweaker.api.event.entity.player.PlayerXpEvent.MCXpChange(handler as function.Consumer<crafttweaker.api.event.entity.player.PlayerXpEvent.MCXpChange>);
 ```
-| Parametr | Typ                                                                                                                                            | Opis             |
-| -------- | ---------------------------------------------------------------------------------------------------------------------------------------------- | ---------------- |
-| handler  | Funkcja Konsumenta<[crafttweaker.api.event.entity.player.PlayerXpEvent.MCXpChange](/vanilla/api/event/entity/player/PlayerXpEvent/MCXpChange)> | Nie podano opisu |
+| Parameter | Type                                                                                                                                          | Description             |
+| --------- | --------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------- |
+| handler   | function.Consumer<[crafttweaker.api.event.entity.player.PlayerXpEvent.MCXpChange](/vanilla/api/event/entity/player/PlayerXpEvent/MCXpChange)> | No description provided |
 
 
 
-## Metody
-### getamount
+## Methods
+### getAmount
 
-Zwraca int
+Returns int
 
 ```zenscript
 myMCXpChange.getAmount();
@@ -29,7 +29,7 @@ myMCXpChange.getAmount();
 
 ### getEntityPlayer
 
-Zwraca [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
+Returns [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
 
 ```zenscript
 myMCXpChange.getEntityPlayer();
@@ -37,66 +37,66 @@ myMCXpChange.getEntityPlayer();
 
 ### getPlayer
 
-Zwroty: `Gracz`
+Returns: `Player`
 
-Zwraca [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
+Returns [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
 
 ```zenscript
 myMCXpChange.getPlayer();
 ```
 
-### wynik
+### hasResult
 
-Określa, czy to zdarzenie oczekuje znaczącej wartości wyniku. Uwaga: Zdarzenia z adnotacją HasResult będą automatycznie dodane, aby zwrócić true.
+Determines if this event expects a significant result value. Note: Events with the HasResult annotation will have this method automatically added to return true.
 
-Zwraca wartość logiczną
+Returns boolean
 
 ```zenscript
 myMCXpChange.hasResult();
 ```
 
-### anulowalne
+### isCancelable
 
-Określ czy ta funkcja jest w ogóle anulowalna. Zwroty: `Jeśli dostęp do setCanceled powinien być dozwolony
- Uwaga:
- Zdarzenia z anulowaną adnotacją będą automatycznie dodawane do tej metody, aby zwrócić true.`
+Determine if this function is cancelable at all. Returns: `If access to setCanceled should be allowed
+ Note:
+ Events with the Cancelable annotation will have this method automatically added to return true.`
 
-Zwraca wartość logiczną
+Returns boolean
 
 ```zenscript
 myMCXpChange.isCancelable();
 ```
 
-### Anulowane
+### isCanceled
 
-Określ czy to wydarzenie jest anulowane i powinno przestać wykonywać. Zwroty: `Aktualnie anulowany stan`
+Determine if this event is canceled and should stop executing. Returns: `The current canceled state`
 
-Zwraca wartość logiczną
+Returns boolean
 
 ```zenscript
 myMCXpChange.isCanceled();
 ```
 
-### setamount
+### setAmount
 
 ```zenscript
-myMCXpChange.setAmount(kwota jako int);
+myMCXpChange.setAmount(amount as int);
 ```
 
-| Parametr | Typ    | Opis             |
-| -------- | ------ | ---------------- |
-| kwota    | odcień | Nie podano opisu |
+| Parameter | Type | Description             |
+| --------- | ---- | ----------------------- |
+| amount    | int  | No description provided |
 
 
-### Anulowane
+### setCanceled
 
 ```zenscript
-myMCXpChange.setAnulowane (anuluj jako boolean);
+myMCXpChange.setCanceled(cancel as boolean);
 ```
 
-| Parametr | Typ     | Opis             |
-| -------- | ------- | ---------------- |
-| anuluj   | boolean | Nie podano opisu |
+| Parameter | Type    | Description             |
+| --------- | ------- | ----------------------- |
+| cancel    | boolean | No description provided |
 
 
 

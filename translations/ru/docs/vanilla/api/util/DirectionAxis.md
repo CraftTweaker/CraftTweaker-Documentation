@@ -1,23 +1,23 @@
-# Ось направления
+# DirectionAxis
 
-Представляет собой ось направления (X, Y, Z)
+Represents a direction axis (X, Y, Z)
 
 Этот класс был добавлен модом с mod-id `crafttweaker`. Так что если вы хотите использовать эту функцию, вам нужно установить этот мод.
 
 ## Импорт класса
 Вам может потребоваться импортировать пакет, если вы столкнетесь с какими-либо проблемами (например, с заливкой массива), так что лучше быть в безопасности, чем извиняться и добавлять импорт.
 ```zenscript
-crafttweaker.api.util.DirectionAx
+crafttweaker.api.util.DirectionAxis
 ```
 
-## Реализованные интерфейсы
-DirectionAxis реализует следующие интерфейсы. Следовательно, методы из них доступны в этом классе.
+## Implemented Interfaces
+DirectionAxis implements the following interfaces. That means any method available to them can also be used on this class.
 - [crafttweaker.api.brackets.CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
 
-## Методы
-### Получать координаты
+## Methods
+### getCoordinate
 
-Получает координату этой оси на основе заданных значений, если эта ось равна "X", то она вернёт значение параметра "x"
+Gets the coordinate of this axis based on the given values, if this axis is "X", then it will return the value of the "x" parameter
 
 Возвращает int
 
@@ -26,21 +26,21 @@ DirectionAxis реализует следующие интерфейсы. Сле
 <directionaxis:x>.getCoordinate(1, 2, 3);
 ```
 
-| Параметр | Тип | Описание             |
-| -------- | --- | -------------------- |
-| х        | int | x значение координат |
-| у        | int | y значение координат |
-| z        | int | z значение координат |
+| Параметр | Тип | Description               |
+| -------- | --- | ------------------------- |
+| x        | int | x value of the coordinate |
+| y        | int | y value of the coordinate |
+| z        | int | z value of the coordinate |
 
 
 
 ## Свойства
 
-| Название         | Тип     | Имеет Getter | Имеет Setter |
-| ---------------- | ------- | ------------ | ------------ |
-| командная строка | String  | true         | false        |
-| горизонтально    | boolean | true         | false        |
-| имя              | String  | true         | false        |
-| обычный          | int     | true         | false        |
-| вертикально      | boolean | true         | false        |
+| Название      | Тип     | Имеет Getter | Имеет Setter |
+| ------------- | ------- | ------------ | ------------ |
+| commandString | String  | true         | false        |
+| horizontal    | boolean | true         | false        |
+| name          | String  | true         | false        |
+| ordinal       | int     | true         | false        |
+| vertical      | boolean | true         | false        |
 

@@ -1,49 +1,49 @@
 # Quern
 
-## Pakiet
+## Package
 `mods.atum.Quern;`
 
-## Dodawanie przepisu
+## Adding a Recipe
 
-`mods.atum.Quern.addRecipe(wejście, wyjście, rotacje);`
+`mods.atum.Quern.addRecipe(input, output, rotations);`
 
 - `input` [IItemStack](/vanilla/api/items/IItemStack)
 - `output` [IItemStack](/vanilla/api/items/IItemStack)
-- `rotacje` Dowolna liczba powyżej 0
+- `rotations` Any number above 0
 
-Dodaje przepis z określonym wejściem & wyjścia, który wymaga określonej rotacji aby zakończyć zapytanie
+Adds a recipe with the specified input & output, that takes the specified rotations to complete querning
 
 ```zenscript
 mods.atum.Quern.addRecipe(<item:atum:fertile_soil>, <item:atum:fertile_soil_pile>, 3);
 ```
 
-## Usuwanie przepisu
+## Removing a Recipe
 
-### Usuń przepisy przez wyjście
+### Remove Recipes by Output
 
 `mods.atum.Quern.removeRecipeByOutput(output);`
 
 - `output` [IItemStack](/vanilla/api/items/IItemStack)
 
-Usuwa wszystkie przepisy, w których wynik wyjściowy jest dostarczonym [IItemStack](/vanilla/api/items/IItemStack).
+Removes all recipes where the output result is the provided [IItemStack](/vanilla/api/items/IItemStack).
 
 ```zenscript
 mods.atum.Quern.removeRecipeByOutput(<item:atum:emmer_flour>);
 ```
 
-### Usuń przepisy przez wyjście & Wejście
+### Remove Recipes by Output & Input
 
-`mods.atum.Quern.removeRecipeByOutputInput(wyjście, wejście);`
+`mods.atum.Quern.removeRecipeByOutputInput(output, input);`
 
 - `output` [IItemStack](/vanilla/api/items/IItemStack)
 - `input` [IItemStack](/vanilla/api/items/IItemStack)
 
-Usuwa konkretny przepis z określonym wyjściem & wejście
+Removes the specific recipe, with the specified output & input
 
 ```zenscript
 mods.atum.Quern.removeRecipeByOutputInput(<item:atum:emmer_flour>, <item:atum:emmer>);
 ```
 
-### Inne metody usuwania
+### Other removal methods
 
-Zobacz [Menadżerów przepisów](/recipes/recipe_managers) dla innych sposobów usunięcia przepisów Quern
+See [Recipe Managers](/recipes/recipe_managers) for other ways to remove Quern recipes

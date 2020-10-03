@@ -1,49 +1,49 @@
-# Roue Tournante
+# Spinning Wheel
 
-## Paquet
+## Package
 `mods.atum.SpinningWheel;`
 
-## Ajout d'une recette
+## Adding a Recipe
 
-`mods.atum.SpinningWheel.addRecipe(entrée, sortie, rotations);`
+`mods.atum.SpinningWheel.addRecipe(input, output, rotations);`
 
 - `input` [IItemStack](/vanilla/api/items/IItemStack)
 - `output` [IItemStack](/vanilla/api/items/IItemStack)
-- `rotations` Tout nombre au-dessus de 0
+- `rotations` Any number above 0
 
-Ajoute une recette avec l'entrée & sortie spécifiée, qui prend les rotations spécifiées pour compléter la recette
+Adds a recipe with the specified input & output, that takes the specified rotations to complete the recipe
 
 ```zenscript
 mods.atum.SpinningWheel.addRecipe(<item:atum:scroll>, <item:minecraft:string>, 3);
 ```
 
-## Suppression d'une recette
+## Removing a Recipe
 
-### Supprimer les recettes par sortie
+### Remove Recipes by Output
 
 `mods.atum.SpinningWheel.removeRecipeByOutput(output);`
 
 - `output` [IItemStack](/vanilla/api/items/IItemStack)
 
-Supprime toutes les recettes où le résultat de sortie est le [IItemStack](/vanilla/api/items/IItemStack) fourni.
+Removes all recipes where the output result is the provided [IItemStack](/vanilla/api/items/IItemStack).
 
 ```zenscript
 mods.atum.SpinningWheel.removeRecipeByOutput(<item:atum:linen_thread>);
 ```
 
-### Supprimer les recettes par sortie & Entrée
+### Remove Recipes by Output & Input
 
-`mods.atum.SpinningWheel.removeRecipeByOutputInput(sortie, entrée);`
+`mods.atum.SpinningWheel.removeRecipeByOutputInput(output, input);`
 
 - `output` [IItemStack](/vanilla/api/items/IItemStack)
 - `input` [IItemStack](/vanilla/api/items/IItemStack)
 
-Supprime la recette spécifique, avec la sortie & entrée spécifiée
+Removes the specific recipe, with the specified output & input
 
 ```zenscript
 mods.atum.SpinningWheel.removeRecipeByOutputInput(<item:atum:linen_thread>, <item:atum:flax>);
 ```
 
-### Autres méthodes de suppression
+### Other removal methods
 
-Voir [Gestionnaires de recettes](/recipes/recipe_managers) pour d'autres façons de supprimer les recettes de roue tournante
+See [Recipe Managers](/recipes/recipe_managers) for other ways to remove Spinning Wheel recipes

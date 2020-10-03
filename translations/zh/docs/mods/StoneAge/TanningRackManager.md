@@ -1,14 +1,14 @@
-# 扫描机机
+# Tanning Rack
 
 ## 所属包名
 `导入 mods.stone_age.TanningRackManager;`
 
 ## 方法
-- **字符串名称** 配方名称
+- **String name** Recipe name
 - **[IItemStack](/Vanilla/Items/IItemStack/) output**
-- **[Igredient](/Vanilla/Variable_Types/IIngredient/) 输入**
-- **[Ingredient](/Vanilla/Variable_Types/IIngredient/) 工具**
-- **字符串组** 食谱组
+- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input**
+- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) tool**
+- **String group** Recipe group
 
 ## 加
 

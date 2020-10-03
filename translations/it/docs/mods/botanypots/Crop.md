@@ -2,13 +2,13 @@
 
 Percorso classe: `mods.botanypots.Crop`
 
-## Uso
+## Use
 
 Per usare, importa la classe con `import mods.botanypots.Crop;` all'inizio del tuo script.
 
 ## Crea Una Coltura
 
-`Crop.create(id, seed, display, tickRate, categorie);`
+`Crop.create(id, seed, display, tickRate, categories);`
 
 - `id` &lt;string> L'id della coltura. Questo è un id spaziato dai nomi e deve essere nel formato valido `namespace:path`.
 - `seed` <[IIngredient](/vanilla/api/items/IIngredient)> L'elemento usato per piantare la coltura.
@@ -111,7 +111,7 @@ Crop.clearCategories("botanypots:crop/wheat");
 
 ## Gocce Coltura
 
-### Aggiungere Gocce
+### Adding Drops
 
 `Crop.addDrop(id, drop, chance, min, max);`
 
@@ -127,7 +127,7 @@ Questo aggiunge una nuova goccia potenziale alla coltura.
 Crop.addDrop("botanypots:crop/wheat", <item:minecraft:diamond>, 0.05, 1, 1);
 ```
 
-### Rimozione Di Gocce
+### Removing Drops
 
 `Crop.removeDrop(id, toRemove);`
 

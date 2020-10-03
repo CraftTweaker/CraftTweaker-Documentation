@@ -17,9 +17,9 @@ crafttweaker.api.block.material.MCMaterialColor
 myMCMaterialColor.getMapColor(index as int);
 ```
 
-| 参数    | 类型 | 描述                      |
-| ----- | -- | ----------------------- |
-| index | 整数 | No description provided |
+| 参数    | 类型  | 描述                      |
+| ----- | --- | ----------------------- |
+| index | int | No description provided |
 
 
 

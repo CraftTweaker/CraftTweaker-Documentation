@@ -1,17 +1,17 @@
 # MCBlock
 
-Ta klasa została dodana przez moda z mod-id `crafttweaker`. Więc musisz zainstalować tę modyfikację, jeśli chcesz używać tej funkcji.
+This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
 
-## Importowanie klasy
-Może być wymagane zaimportowanie pakietu, jeśli napotkasz jakiekolwiek problemy (np. rzucanie tablicy), tak aby były bezpieczne niż przepraszamy i dodaj import.
+## Importing the class
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
 ```zenscript
 crafttweaker.api.block.MCBlock
 ```
 
-## Metody
+## Methods
 ### canSpawnInBlock
 
-Zwraca wartość logiczną
+Returns boolean
 
 ```zenscript
 myMCBlock.canSpawnInBlock();
@@ -19,23 +19,23 @@ myMCBlock.canSpawnInBlock();
 
 ### getDefaultState
 
-Zwraca [crafttweaker.api.block.MCBlockState](/vanilla/api/blocks/MCBlockState)
+Returns [crafttweaker.api.block.MCBlockState](/vanilla/api/blocks/MCBlockState)
 
 ```zenscript
 myMCBlock.getDefaultState();
 ```
 
 
-## Właściwości
+## Properties
 
-| Nazwisko            | Typ         | Posiada Getter | Ma ustawienie |
-| ------------------- | ----------- | -------------- | ------------- |
-| tablica lootTable   | Ciąg znaków | prawda         | fałszywy      |
-| Klucz tłumaczeniowy | Ciąg znaków | prawda         | fałszywy      |
+| Name           | Type   | Has Getter | Has Setter |
+| -------------- | ------ | ---------- | ---------- |
+| lootTable      | String | true       | false      |
+| translationKey | String | true       | false      |
 
-## Szafy na akta, szafy na kartoteki, kasety na papiery, podpórki na papiery, pojemniki na przybory do pisania, stojaki na stemple biurowe i podobne wyposażenie biurowe lub biurkowe, z metali nieszlachetnych
+## Casters
 
-| Typ wyniku  | Jest niedomniemany |
-| ----------- | ------------------ |
-| Ciąg znaków | fałszywy           |
+| Result type | Is Implicit |
+| ----------- | ----------- |
+| String      | false       |
 
