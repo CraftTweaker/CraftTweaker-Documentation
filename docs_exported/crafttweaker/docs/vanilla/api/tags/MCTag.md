@@ -49,13 +49,16 @@ myMCTag.addFluids(fluids as crafttweaker.api.fluid.MCFluid[]);
 
 ### addItems
 
+Adds items to this tag, will fail if this is not a tag that can hold items
+
 ```zenscript
 myMCTag.addItems(items as crafttweaker.api.item.IItemStack[]);
+myMCTag.addItems(<item:minecraft:dirt>);
 ```
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| items | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)[] | No description provided |
+| items | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)[] | Items to add to the tag |
 
 
 ### anyDamage
@@ -204,13 +207,16 @@ myMCTag.removeFluids(fluids as crafttweaker.api.fluid.MCFluid[]);
 
 ### removeItems
 
+removes items from this tag, will fail if this is not a tag that can hold items
+
 ```zenscript
 myMCTag.removeItems(items as crafttweaker.api.item.IItemStack[]);
+myMCTag.removeItems(<item:minecraft:dirt>);
 ```
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| items | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)[] | No description provided |
+| items | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)[] | Items to remove from the tag |
 
 
 
@@ -226,8 +232,10 @@ myMCTag.removeItems(items as crafttweaker.api.item.IItemStack[]);
 | firstFluid | [crafttweaker.api.fluid.MCFluid](/vanilla/api/fluid/MCFluid) | true | false |
 | firstItem | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | true | false |
 | fluids | [crafttweaker.api.fluid.MCFluid](/vanilla/api/fluid/MCFluid)[] | true | false |
+| id | [crafttweaker.api.util.MCResourceLocation](/vanilla/api/util/MCResourceLocation) | true | false |
 | isBlockTag | boolean | true | false |
 | isEntityTypeTag | boolean | true | false |
+| isFluidTag | boolean | true | false |
 | isItemTag | boolean | true | false |
 | items | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)[] | true | false |
 
