@@ -1,17 +1,17 @@
 # PlayerInteractBlock
 
-The PlayerInteractBlock Event is fired whenever a player right clicks a block.  
-It can be canceled to prevent any other events from taking place. If the event is canceled, a specific result of success, fail or pass can be provided. By default, the result is pass.
+Wydarzenie PlayerInteractBlock jest uruchamiane za każdym razem, gdy gracz kliknie blok.  
+Można go anulować, aby zapobiec wszelkim innym wydarzeniom. Jeżeli zdarzenie zostanie anulowane, można podać konkretny wynik sukcesu, niepowodzenia lub przejścia. Domyślnie wynik jest pozytywny.
 
 ## Event Class
 
-You will need to cast the event in the function header as this class:  
-`crafttweaker.event.PlayerInteractBlockEvent`  
-You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
+Musisz aktywować wydarzenie w nagłówku funkcji jako klasa:  
+`crafttweaker.event. layerInteractBlockEvent`  
+Oczywiście możesz również [zaimportować](/AdvancedFunctions/Import/) klasę przed i wtedy użyć tej nazwy.
 
 ## Event interface extensions
 
-PlayerInteractBlock Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+Zdarzenia PlayerInteractBlock zaimplementują następujące interfejsy i są również w stanie wywołać wszystkie swoje metody/getters/setters:
 
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 - [PlayerInteract](/Vanilla/Events/Events/PlayerInteract/)
@@ -21,12 +21,12 @@ PlayerInteractBlock Events implement the following interfaces and are able to ca
 
 The following information can be retrieved from the event:
 
-| zengetter            | zengetter            | type                                   |
-| -------------------- | -------------------- | -------------------------------------- |
-| `hitvector`          |                      | [ivector3d](/vanilla/world/ivector3d/) |
-| `useblock`           | `useblock`           | string ("allow" / "deny" / "default")  |
-| `useitem`            | `useitem`            | string ("allow" / "deny" / "default")  |
-| `cancellationResult` | `cancellationResult` | string ("success" / "pass" / "fail")   |
+| zengetter          | nastawnik          | type                                           |
+| ------------------ | ------------------ | ---------------------------------------------- |
+| `hitvector`        |                    | [IVector3d](/Vanilla/World/IVector3d/)         |
+| `użyj bloku`       | `użyj bloku`       | ciąg znaków ("zezwól / "odmowa " / "domyślna") |
+| `useitem`          | `useitem`          | ciąg znaków ("zezwól / "odmowa " / "domyślna") |
+| `wynik anulowania` | `wynik anulowania` | ciąg znaków ("success" / "pass" / "fail")      |
 
 ## ZenMethods
 
