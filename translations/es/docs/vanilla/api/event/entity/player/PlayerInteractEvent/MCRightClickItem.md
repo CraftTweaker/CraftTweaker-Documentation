@@ -1,27 +1,27 @@
-# ClickItem MCright
+# MCRightClickItem
 
-Esta clase fue añadida por un mod con la ID  `crafttweaker`. Necesitas tener este mod instalado si quieres usar esta caracteristica.
+This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
 
-## Importar la clase
-Puede ser requerido que importes el paquete si encuentras algun problema (como crear un Array).
+## Importing the class
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
 ```zenscript
-crafttweaker.api.event.entity.player.PlayerInteractEvent.MCRight ClickItem
+crafttweaker.api.event.entity.player.PlayerInteractEvent.MCRightClickItem
 ```
 
-## Constructores
+## Constructors
 ```zenscript
-nuevo crafttweaker.api.event.entity.player.PlayerInteractEvent.MCRight ClickItem(handler as function.Consumer<crafttweaker.api.event.entity.player.PlayerInteractEvent.MCRightClickItem>);
+new crafttweaker.api.event.entity.player.PlayerInteractEvent.MCRightClickItem(handler as function.Consumer<crafttweaker.api.event.entity.player.PlayerInteractEvent.MCRightClickItem>);
 ```
-| Parámetro | Tipo                                                                                                                                                             | Descripción                   |
-| --------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------- |
-| handler   | function.Consumer<[crafttweaker.api.event.entity.player.PlayerInteractEvent.MCClickItem](/vanilla/api/event/entity/player/PlayerInteractEvent/MCRightClickItem)> | No se proporcionó descripción |
+| Parameter | Type                                                                                                                                                                  | Description             |
+| --------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------- |
+| handler   | function.Consumer<[crafttweaker.api.event.entity.player.PlayerInteractEvent.MCRightClickItem](/vanilla/api/event/entity/player/PlayerInteractEvent/MCRightClickItem)> | No description provided |
 
 
 
-## Métodos
-### %s Jugador
+## Methods
+### getEntityPlayer
 
-Devuelve [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
+Returns [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
 
 ```zenscript
 myMCRightClickItem.getEntityPlayer();
@@ -29,19 +29,19 @@ myMCRightClickItem.getEntityPlayer();
 
 ### getFace
 
-Devuelve: `La cara involucrada en esta interacción. Para todas las interacciones que no sean bloqueadas, esto devolverá nulas.`
+Returns: `The face involved in this interaction. For all non-block interactions, this will return null.`
 
-Devuelve [crafttweaker.api.util.Direction](/vanilla/api/util/Direction)
+Returns [crafttweaker.api.util.Direction](/vanilla/api/util/Direction)
 
 ```zenscript
-myMCRight ClickItem.getFace();
+myMCRightClickItem.getFace();
 ```
 
 ### getItemStack
 
-Devuelve: `La pila de elementos involucrada en esta interacción, {` @code ItemStack.EMPTY} si la mano estaba vacía.
+Returns: `The itemstack involved in this interaction, {` @code ItemStack.EMPTY} if the hand was empty.
 
-Devuelve [crafttweaker.api.item.ItemStack](/vanilla/api/items/IItemStack)
+Returns [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
 
 ```zenscript
 myMCRightClickItem.getItemStack();
@@ -49,65 +49,65 @@ myMCRightClickItem.getItemStack();
 
 ### getPlayer
 
-Devuelve: `Jugador`
+Returns: `Player`
 
-Devuelve [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
+Returns [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
 
 ```zenscript
-myMCRight ClickItem.getPlayer();
+myMCRightClickItem.getPlayer();
 ```
 
 ### getPos
 
-Si la interacción estaba en una entidad, será un BlockPos centrado en la entidad. Si la interacción estaba en un bloque, será la posición de ese bloque. De lo contrario, será un BlockPos centrado en el jugador. Nunca será nulo. Devuelve: `La posición involucrada en esta interacción.`
+If the interaction was on an entity, will be a BlockPos centered on the entity. If the interaction was on a block, will be the position of that block. Otherwise, will be a BlockPos centered on the player. Will never be null. Returns: `The position involved in this interaction.`
 
-Devuelve [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos)
+Returns [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos)
 
 ```zenscript
 myMCRightClickItem.getPos();
 ```
 
-### hastaResultado
+### hasResult
 
-Determina si este evento espera un valor de resultado significativo. Nota: Los eventos con la anotación HasResult tendrán este método automáticamente añadido para devolver verdadero.
+Determines if this event expects a significant result value. Note: Events with the HasResult annotation will have this method automatically added to return true.
 
-Devuelve booleano
-
-```zenscript
-myMCRight ClickItem.hasResult();
-```
-
-### es cancelable
-
-Determine si esta función es cancelable. Devuelve: `Si el acceso a setCanceled debe ser permitido
- Nota:
- Los eventos con la anotación Cancelable tendrán este método automáticamente añadido para devolver verdadero.`
-
-Devuelve booleano
+Returns boolean
 
 ```zenscript
-myMCRight ClickItem.isCancelable();
+myMCRightClickItem.hasResult();
 ```
 
-### es cancelado
+### isCancelable
 
-Determine si este evento es cancelado y debe dejar de ejecutarse. Devuelve: `El estado actual cancelado`
+Determine if this function is cancelable at all. Returns: `If access to setCanceled should be allowed
+ Note:
+ Events with the Cancelable annotation will have this method automatically added to return true.`
 
-Devuelve booleano
+Returns boolean
 
 ```zenscript
-myMCRight ClickItem.isCanceled();
+myMCRightClickItem.isCancelable();
 ```
 
-### setCancelado
+### isCanceled
+
+Determine if this event is canceled and should stop executing. Returns: `The current canceled state`
+
+Returns boolean
 
 ```zenscript
-myMCRight ClickItem.setCanceled(cancelar como booleano);
+myMCRightClickItem.isCanceled();
 ```
 
-| Parámetro | Tipo    | Descripción                   |
-| --------- | ------- | ----------------------------- |
-| cancelar  | boolean | No se proporcionó descripción |
+### setCanceled
+
+```zenscript
+myMCRightClickItem.setCanceled(cancel as boolean);
+```
+
+| Parameter | Type    | Description             |
+| --------- | ------- | ----------------------- |
+| cancel    | boolean | No description provided |
 
 
 

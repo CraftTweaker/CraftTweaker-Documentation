@@ -8,9 +8,9 @@
 crafttweaker.api.event.entity.player.MCPlayerWakeUpEvent
 ```
 
-## Конструкторы
+## Constructors
 ```zenscript
-new crafttweaker.api.event.entity.player.MCPlayerWakeUpEvent(обработчик функции.Consumer<crafttweaker.api.event.entity.player.MCPlayerWakeUpEvent>);
+new crafttweaker.api.event.entity.player.MCPlayerWakeUpEvent(handler as function.Consumer<crafttweaker.api.event.entity.player.MCPlayerWakeUpEvent>);
 ```
 | Параметр | Тип                                                                                                                                 | Описание             |
 | -------- | ----------------------------------------------------------------------------------------------------------------------------------- | -------------------- |
@@ -21,7 +21,7 @@ new crafttweaker.api.event.entity.player.MCPlayerWakeUpEvent(обработчи�
 ## Методы
 ### getEntityPlayer
 
-Возвращает [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
+Returns [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
 
 ```zenscript
 myMCPlayerWakeUpEvent.getEntityPlayer();
@@ -29,17 +29,17 @@ myMCPlayerWakeUpEvent.getEntityPlayer();
 
 ### getPlayer
 
-Возвращение: `Игрок`
+Returns: `Player`
 
-Возвращает [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
+Returns [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
 
 ```zenscript
 myMCPlayerWakeUpEvent.getPlayer();
 ```
 
-### имеет Результат
+### hasResult
 
-Определяет, ожидает ли это событие значимое значение результата. Примечание: События с аннотацией HasResult будут автоматически добавлены для возврата true.
+Determines if this event expects a significant result value. Note: Events with the HasResult annotation will have this method automatically added to return true.
 
 Возвращает boolean
 
@@ -47,11 +47,11 @@ myMCPlayerWakeUpEvent.getPlayer();
 myMCPlayerWakeUpEvent.hasResult();
 ```
 
-### неотменяемый
+### isCancelable
 
-Определите, если эта функция вообще недоступна. Возвращается: `Если доступ к установленной отмене должен быть разрешен
- Примечание:
- События с отменяемой аннотацией будут иметь этот метод автоматически добавлены для возврата истины.`
+Determine if this function is cancelable at all. Returns: `If access to setCanceled should be allowed
+ Note:
+ Events with the Cancelable annotation will have this method automatically added to return true.`
 
 Возвращает boolean
 
@@ -59,9 +59,9 @@ myMCPlayerWakeUpEvent.hasResult();
 myMCPlayerWakeUpEvent.isCancelable();
 ```
 
-### отменено
+### isCanceled
 
-Определяет, отменено ли это событие и должно прекратить выполнение. Возвращение: `Текущее состояние отменено`
+Determine if this event is canceled and should stop executing. Returns: `The current canceled state`
 
 Возвращает boolean
 
@@ -69,20 +69,20 @@ myMCPlayerWakeUpEvent.isCancelable();
 myMCPlayerWakeUpEvent.isCanceled();
 ```
 
-### установка отменена
+### setCanceled
 
 ```zenscript
-myMCPlayerWakeUpEvent.setCancel(отменить как boolean);
+myMCPlayerWakeUpEvent.setCanceled(cancel as boolean);
 ```
 
-| Параметр | Тип     | Описание             |
+| Параметр | Тип     | Description          |
 | -------- | ------- | -------------------- |
-| отменить | boolean | Описание отсутствует |
+| cancel   | boolean | Описание отсутствует |
 
 
 ### shouldSetSpawn
 
-Указывает, считать ли сн игрока успешным. В ваниле это используется для определения того, должен ли кусок спавна быть установлен в положение кровати.
+Indicates if the player's sleep was considered successful. In vanilla, this is used to determine if the spawn chunk is to be set to the bed's position.
 
 Возвращает boolean
 
@@ -90,9 +90,9 @@ myMCPlayerWakeUpEvent.setCancel(отменить как boolean);
 myMCPlayerWakeUpEvent.shouldSetSpawn();
 ```
 
-### обновлять мир
+### updateWorld
 
-Указывает, следует ли уведомлять сервер об изменениях в спящем режиме. Это будет ложным, если сервер уже считается 'актуальным', поскольку, например, он инициировал вызов.
+Indicates if the server should be notified of sleeping changes. This will only be false if the server is considered 'up to date' already, because, for example, it initiated the call.
 
 Возвращает boolean
 
@@ -100,14 +100,14 @@ myMCPlayerWakeUpEvent.shouldSetSpawn();
 myMCPlayerWakeUpEvent.updateWorld();
 ```
 
-### пробудить немедленно
+### wakeImmediately
 
-Используется для "анимации пробуждения". Это ложно, если игрок считается "сонным", а оверлей должен постепенно исчезать.
+Used for the 'wake up animation'. This is false if the player is considered 'sleepy' and the overlay should slowly fade away.
 
 Возвращает boolean
 
 ```zenscript
-myMCPlayerWakeUpEvent.wakeImmediate();
+myMCPlayerWakeUpEvent.wakeImmediately();
 ```
 
 

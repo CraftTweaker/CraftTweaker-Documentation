@@ -1,178 +1,178 @@
-# Uprawy
+# Crops
 
-Ścieżka klasy: `mods.botanypots.Crop`
+Class path: `mods.botanypots.Crop`
 
-## Użycie
+## Use
 
-Aby użyć, zaimportuj klasę z `importuj mods.botanypots.Crop;` na początku skryptu.
+To use, import the class with `import mods.botanypots.Crop;` at the beginning of your script.
 
-## Utwórz przycięcie
+## Create A Crop
 
-`Uprawy (id, materiał siewny, wyświetlacz, wskaźnik tickRate, mnożnik, kategorie);`
+`Crop.create(id, seed, display, tickRate, multiplier, categories);`
 
-- `id` &lt;ciąg> Id przycinania. Jest to identyfikator pliku nazw, który musi być w prawidłowym formacie `namespace:path`.
-- `ziarno` <[Składnik](/vanilla/api/items/IIngredient)> Element używany do zasadzania upraw.
-- `wyświetl` <[MCBlockState](/vanilla/api/blocks/MCBlockState)> Blok wyświetlany podczas renderowania przycinania.
-- `tickRate` &lt;int> Jeden z czynników, jak długo rośnie uprawa.
-- `mnożnik` &lt;zmiennoprzecinkowy> Inny czynnik, jak długo rośnie uprawa.
-- `kategorie` &lt;string[]> Tablica kategorii gleby, w których można uprawiać tę uprawę.
+- `id` &lt;string> The id of the crop. This is a namespaced id an must be in the valid `namespace:path` format.
+- `seed` <[IIngredient](/vanilla/api/items/IIngredient)> The item used to plant the crop.
+- `display` <[MCBlockState](/vanilla/api/blocks/MCBlockState)> The block to display when rendering the crop.
+- `tickRate` &lt;int> One of the factors for how long a crop takes to grow.
+- `multiplier` &lt;float> Another factor for how long the crop takes to grow.
+- `categories` &lt;string[]> An array of soil categories this crop can be grown in.
 
-To może być użyte do tworzenia nowej uprawy. Pamiętaj, że krople należy dodawać oddzielnie.
-
-```zenscript
-Przytnij tworzenie ("examplepack:gold", <item:minecraft:gold_nugget>, <blockstate:minecraft:gold_block>, 3000, 2, ["stone"]);
-```
-
-## Usuń przytnij
-
-`Przycinanie (id);`
-
-- `id` &lt;ciąg> Id przycinania do usunięcia. Jest to identyfikator pliku nazw, który musi być w prawidłowym formacie `namespace:path`.
-
-Usuwa przycinanie na podstawie jego identyfikatora.
+This can be used to create a new crop. Keep in mind that drops need to be added separately.
 
 ```zenscript
-Uprawy pastewne („botanypots:uprawa pszenica”);
+Crop.create("examplepack:gold", <item:minecraft:gold_nugget>, <blockstate:minecraft:gold_block>, 3000, 2, ["stone"]);
 ```
 
-## Ustaw materiał siewny
+## Remove A Crop
 
-`Nasiona roślin uprawnych (id, nasiona);`
+`Crop.remove(id);`
 
-- `id` &lt;ciąg> Id przycinania. Jest to identyfikator pliku nazw, który musi być w prawidłowym formacie `namespace:path`.
-- `ziarno` <[Składnik](/vanilla/api/items/IIngredient)> Element używany do zasadzania upraw.
+- `id` &lt;string> The id of the crop to remove. This is a namespaced id an must be in the valid `namespace:path` format.
 
-Ustawia przedmiot używany do sadzenia upraw.
+Removes a crop based on it's id.
 
 ```zenscript
-Nasiona roślin uprawnych („botanypots:crop/pszenica”, <item:minecraft:diamond>);
+Crop.remove("botanypots:crop/wheat");
 ```
 
-## Ustaw blok wyświetlania
+## Set Seed Item
+
+`Crop.setSeed(id, seed);`
+
+- `id` &lt;string> The id of the crop. This is a namespaced id an must be in the valid `namespace:path` format.
+- `seed` <[IIngredient](/vanilla/api/items/IIngredient)> The item used to plant the crop.
+
+Sets the item used to plant the crop.
+
+```zenscript
+Crop.setSeed("botanypots:crop/wheat", <item:minecraft:diamond>);
+```
+
+## Set Display Block
 
 `Crop.setDisplay(id, state);`
 
-- `id` &lt;ciąg> Id przycinania. Jest to identyfikator pliku nazw, który musi być w prawidłowym formacie `namespace:path`.
-- `wyświetl` <[MCBlockState](/vanilla/api/blocks/MCBlockState)> Blok wyświetlany podczas renderowania przycinania.
+- `id` &lt;string> The id of the crop. This is a namespaced id an must be in the valid `namespace:path` format.
+- `display` <[MCBlockState](/vanilla/api/blocks/MCBlockState)> The block to display when rendering the crop.
 
-Ustawia blok renderowany dla przycinania.
-
-```zenscript
-Crop.setDisplay("botanypots:crop/pszenica", <blockstate:minecraft:snow_block>);
-```
-
-## Ustaw szybkość zaznaczania
-
-`Uprawy setTickRate(id, tickRate);`
-
-- `id` &lt;ciąg> Id przycinania. Jest to identyfikator pliku nazw, który musi być w prawidłowym formacie `namespace:path`.
-- `tickRate` &lt;int> Zaktualizowany wskaźnik ticku. Jeden z czynników, jak długo uprawa trwa do wzrostu.
-
-Ustawia współczynnik ticku przycinania.
+Sets the block rendered for the crop.
 
 ```zenscript
-Rośliny uprawne setTickRate(»botanypots:plony/pszenica«, 5000);
+Crop.setDisplay("botanypots:crop/wheat", <blockstate:minecraft:snow_block>);
 ```
 
-## Ustaw mnożnik wzrostu
+## Set Tick Rate
 
-`Uprawy setGrowthModifier(id, mnożnik);`
+`Crop.setTickRate(id, tickRate);`
 
-- `id` &lt;ciąg> Id przycinania. Jest to identyfikator pliku nazw, który musi być w prawidłowym formacie `namespace:path`.
-- `mnożnik` &lt;zmienny> Zaktualizowany mnożnik. Inny czynnik, jak długo uprawa zajmuje wzrost.
+- `id` &lt;string> The id of the crop. This is a namespaced id an must be in the valid `namespace:path` format.
+- `tickRate` &lt;int> The updated tick rate. One of the factors for how long a crop takes to grow.
 
-Ustawia mnożnik/modyfikator wzrostu dla upraw.
+Sets the crop tick factor.
 
 ```zenscript
-Uprawy uprawneGrowthMofieir(„botanypots:plony/pszenica”, 1,8);
+Crop.setTickRate("botanypots:crop/wheat", 5000);
 ```
 
-## Zmiana kategorii przycinania
+## Set Growth Multiplier
 
-Zmienia kategorie związane z uprawą. Kategorie są używane do dopasowania prawidłowych gleb do upraw.
+`Crop.setGrowthModifier(id, multiplier);`
 
-### Dodaj kategorię do przycinania
+- `id` &lt;string> The id of the crop. This is a namespaced id an must be in the valid `namespace:path` format.
+- `multiplier` &lt;float> The updated multiplier. Another factor for how long the crop takes to grow.
 
-`Przytnij kategorię(id, kategorieToAdd);`
-
-- `id` &lt;ciąg> Id przycinania. Jest to identyfikator pliku nazw, który musi być w prawidłowym formacie `namespace:path`.
-- `categoriesToAdd` &lt;string[]> Tablica kategorii do powiązania z uprawami.
+Sets the growth multiplier/modifier for the crop.
 
 ```zenscript
-Rośliny uprawne („botanypots:uprawy pszenicy”, [„kamienne”, „śnieg”]);
+Crop.setGrowthMofieir("botanypots:crop/wheat", 1.8);
 ```
 
-### Usuń kategorię z przycinania
+## Changing Crop Categories
 
-`Przytnij kategorie(id, kategorieToRemove);`
+Changes the categories associated with the crop. Categories are used to match the valid soils to the crop.
 
-- `id` &lt;ciąg> Id przycinania. Jest to identyfikator pliku nazw, który musi być w prawidłowym formacie `namespace:path`.
-- `categoriesToRemove` &lt;string[]> Tablica kategorii do rozdzielenia z przycinaniem.
+### Add a Category to a Crop
+
+`Crop.addCategory(id, categoriesToAdd);`
+
+- `id` &lt;string> The id of the crop. This is a namespaced id an must be in the valid `namespace:path` format.
+- `categoriesToAdd` &lt;string[]> An array of categories to associate with the crop.
 
 ```zenscript
-Rośliny uprawne removeCategory(»botanypots:plony/pszenica«, [»brudna«]);
+Crop.addCategory("botanypots:crop/wheat", ["stone", "snow"]);
 ```
 
-### Wyczyść wszystkie kategorie z przycinania
+### Remove a Category From a Crop
 
-`Przytnij kategorie(id);`
+`Crop.removeCategory(id, categoriesToRemove);`
 
-- `id` &lt;ciąg> Id przycinania. Jest to identyfikator pliku nazw, który musi być w prawidłowym formacie `namespace:path`.
+- `id` &lt;string> The id of the crop. This is a namespaced id an must be in the valid `namespace:path` format.
+- `categoriesToRemove` &lt;string[]> An array of categories to dissociate with the crop.
 
 ```zenscript
-Kategorie upraw („botanypots:uprawy pszenicy”);
+Crop.removeCategory("botanypots:crop/wheat", ["dirt"]);
 ```
 
-## Krople przycinania
+### Clear All Categories From a Crop
 
-### Dodawanie spadków
+`Crop.clearCategories(id);`
 
-`Przytnij dodatni (id, kropla, szansa, min, maks.);`
-
-- `id` &lt;ciąg> Id przycięcia do dodania kropli. Jest to identyfikator pliku nazw, który musi być w prawidłowym formacie `namespace:path`.
-- `upuść` <[IItemStack](/vanilla/api/items/IItemStack)> Element do upuszczenia.
-- `szansa` &lt;unosi się> Szansa, którą upuszcza.
-- `min` &lt;int> Minimalna ilość tego elementu do podania.
-- `maks.` &lt;int> Maksymalna ilość tego elementu do podania.
-
-To dodaje nowy potencjalny łup do uprawy.
+- `id` &lt;string> The id of the crop. This is a namespaced id an must be in the valid `namespace:path` format.
 
 ```zenscript
-Crop.addDrop("botanypots:crop/pszenica", <item:minecraft:diamond>, 0.05, 1, 1);
+Crop.clearCategories("botanypots:crop/wheat");
 ```
 
-### Usuwanie kropel
+## Crop Drops
+
+### Adding Drops
+
+`Crop.addDrop(id, drop, chance, min, max);`
+
+- `id` &lt;string> The id of the crop to add a drop to. This is a namespaced id an must be in the valid `namespace:path` format.
+- `drop` <[IItemStack](/vanilla/api/items/IItemStack)> The item to drop.
+- `chance` &lt;float> The chance it drops.
+- `min` &lt;int> The min amount of that item to give.
+- `max` &lt;int> The max amount of that item to give.
+
+This adds a new potential drop to the crop.
+
+```zenscript
+Crop.addDrop("botanypots:crop/wheat", <item:minecraft:diamond>, 0.05, 1, 1);
+```
+
+### Removing Drops
 
 `Crop.removeDrop(id, toRemove);`
 
-- `id` &lt;ciąg> Id przycinania do usunięcia kropla. Jest to identyfikator pliku nazw, który musi być w prawidłowym formacie `namespace:path`.
-- `toRemove` <[Składnik](/vanilla/api/items/IIngredient)> Składnik do dopasowania do usunięcia
+- `id` &lt;string> The id of the crop to remove a drop from. This is a namespaced id an must be in the valid `namespace:path` format.
+- `toRemove` <[IIngredient](/vanilla/api/items/IIngredient)> The ingredient to match against for removal
 
-Usuwa wszelkie kropki, które mają pasujący element.
+Removes any drops that have a matching item.
 
 ```zenscript
-Rośliny uprawne removeDrop("botanypots:uprawa pszenicy", <item:minecraft:wheat_seeds>);
+Crop.removeDrop("botanypots:crop/wheat", <item:minecraft:wheat_seeds>);
 ```
 
-## Pobieranie wszystkich identyfikatorów
+## Getting All Ids
 
 `Crop.getAllIds();`
 
-- Zwraca: &lt;ciąg znaków[]> Tablica wszystkich znanych identyfikatorów upraw w tym momencie.
+- Returns: &lt;string[]> An array of all known crop ids at the time this is ran.
 
-To da Ci tablicę wszystkich znanych identyfikatorów upraw na raz.
+This will give you an array of all the known crop ids at the time.
 
 ```zenscript
-// Rejestruj wszystkie identyfikatory pliku crafttweaker.log
-dla przycięcia w Crop.getAllIds() {
+// Log all ids to the crafttweaker.log file
+for cropId in Crop.getAllIds() {
     println(cropId);
 }
 ```
 
-## Usuwanie wszystkich przycinanych
+## Removing All Crops
 
-Spowoduje to całkowite usunięcie wszystkich obecnie zarejestrowanych upraw. Jest to przydatne jeśli chcesz odtworzyć wszystkie dane od podstaw przez skrypty.
+This will completely remove all the crops currently registered. This is useful for if you want to recreate all the data from scratch through scripts.
 
 ```zenscript
-Przycięcie removeAll();
+Crop.removeAll();
 ```

@@ -8,17 +8,17 @@
 crafttweaker.api.block.MCBlockState
 ```
 
-## Реализованные интерфейсы
-MCBlockState реализует следующие интерфейсы. Следовательно, методы из них доступны в этом классе.
+## Implemented Interfaces
+MCBlockState implements the following interfaces. That means any method available to them can also be used on this class.
 - [crafttweaker.api.brackets.CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
 
 ## Методы
-### getAllowValuesForProperty
+### getAllowedValuesForProperty
 
-Список возвратов<String>
+Returns List<String>
 
 ```zenscript
-myMCBlockState.getAllowedValuesForProperty(название как строка);
+myMCBlockState.getAllowedValuesForProperty(name as String);
 ```
 
 | Параметр | Тип    | Описание             |
@@ -26,9 +26,9 @@ myMCBlockState.getAllowedValuesForProperty(название как строка)
 | name     | String | Описание отсутствует |
 
 
-### getСвойства
+### getProperties
 
-Возвращает строку[String]
+Returns String[String]
 
 ```zenscript
 myMCBlockState.getProperties();
@@ -36,7 +36,7 @@ myMCBlockState.getProperties();
 
 ### getPropertyNames
 
-Список возвратов<String>
+Returns List<String>
 
 ```zenscript
 myMCBlockState.getPropertyNames();
@@ -44,57 +44,57 @@ myMCBlockState.getPropertyNames();
 
 ### getPropertyValue
 
-Возвращает строку
+Returns String
 
 ```zenscript
-myMCBlockState.getPropertyValue(название как строка);
+myMCBlockState.getPropertyValue(name as String);
 ```
 
-| Параметр | Тип    | Описание             |
+| Параметр | Тип    | Description          |
 | -------- | ------ | -------------------- |
-| имя      | String | Описание отсутствует |
+| name     | String | Описание отсутствует |
 
 
-### имеет Инвестиции
+### hasProperty
 
 Возвращает boolean
 
 ```zenscript
-myMCBlockState.hasProperty(название как строка);
+myMCBlockState.hasProperty(name as String);
 ```
 
-| Параметр | Тип    | Описание             |
+| Параметр | Тип    | Description          |
 | -------- | ------ | -------------------- |
-| имя      | String | Описание отсутствует |
+| name     | String | Описание отсутствует |
 
 
-### с свойствами
+### withProperty
 
 Возвращает [crafttweaker.api.block.MCBlockState](/vanilla/api/blocks/MCBlockState)
 
 ```zenscript
-myMCBlockState.withProperty(название как строка, значение как строка);
+myMCBlockState.withProperty(name as String, value as String);
 ```
 
-| Параметр | Тип    | Описание             |
+| Параметр | Тип    | Description          |
 | -------- | ------ | -------------------- |
-| имя      | String | Описание отсутствует |
+| name     | String | Описание отсутствует |
 | value    | String | Описание отсутствует |
 
 
 
 ## Свойства
 
-| Название         | Тип                                                           | Имеет Getter | Имеет Setter |
-| ---------------- | ------------------------------------------------------------- | ------------ | ------------ |
-| блок             | [crafttweaker.api.block.MCBlock](/vanilla/api/blocks/MCBlock) | true         | false        |
-| canProvidePower  | boolean                                                       | true         | false        |
-| командная строка | String                                                        | true         | false        |
-| hasTileEntity    | boolean                                                       | true         | false        |
-| isSolid          | boolean                                                       | true         | false        |
-| isSticky         | boolean                                                       | true         | false        |
-| lightLevel       | int                                                           | true         | false        |
-| ТиксСлучайно     | boolean                                                       | true         | false        |
+| Название        | Тип                                                           | Имеет Getter | Имеет Setter |
+| --------------- | ------------------------------------------------------------- | ------------ | ------------ |
+| block           | [crafttweaker.api.block.MCBlock](/vanilla/api/blocks/MCBlock) | true         | false        |
+| canProvidePower | boolean                                                       | true         | false        |
+| commandString   | String                                                        | true         | false        |
+| hasTileEntity   | boolean                                                       | true         | false        |
+| isSolid         | boolean                                                       | true         | false        |
+| isSticky        | boolean                                                       | true         | false        |
+| lightLevel      | int                                                           | true         | false        |
+| ticksRandomly   | boolean                                                       | true         | false        |
 
 ## Утилиты
 

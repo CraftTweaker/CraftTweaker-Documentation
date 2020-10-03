@@ -8,9 +8,9 @@
 crafttweaker.api.event.entity.player.MCEntityItemPickupEvent
 ```
 
-## Конструкторы
+## Constructors
 ```zenscript
-new crafttweaker.api.event.entity.player.MCEntityItemPickupEvent(обработчик функции.Consumer<crafttweaker.api.event.entity.player.MCEntityItemPickupEvent>);
+new crafttweaker.api.event.entity.player.MCEntityItemPickupEvent(handler as function.Consumer<crafttweaker.api.event.entity.player.MCEntityItemPickupEvent>);
 ```
 | Параметр | Тип                                                                                                                                         | Описание             |
 | -------- | ------------------------------------------------------------------------------------------------------------------------------------------- | -------------------- |
@@ -21,7 +21,7 @@ new crafttweaker.api.event.entity.player.MCEntityItemPickupEvent(обработ�
 ## Методы
 ### getEntityPlayer
 
-Возвращает [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
+Returns [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
 
 ```zenscript
 myMCEntityItemPickupEvent.getEntityPlayer();
@@ -29,17 +29,17 @@ myMCEntityItemPickupEvent.getEntityPlayer();
 
 ### getPlayer
 
-Возвращение: `Игрок`
+Returns: `Player`
 
-Возвращает [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
+Returns [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
 
 ```zenscript
 myMCEntityItemPickupEvent.getPlayer();
 ```
 
-### имеет Результат
+### hasResult
 
-Определяет, ожидает ли это событие значимое значение результата. Примечание: События с аннотацией HasResult будут автоматически добавлены для возврата true.
+Determines if this event expects a significant result value. Note: Events with the HasResult annotation will have this method automatically added to return true.
 
 Возвращает boolean
 
@@ -47,11 +47,11 @@ myMCEntityItemPickupEvent.getPlayer();
 myMCEntityItemPickupEvent.hasResult();
 ```
 
-### неотменяемый
+### isCancelable
 
-Определите, если эта функция вообще недоступна. Возвращается: `Если доступ к установленной отмене должен быть разрешен
- Примечание:
- События с отменяемой аннотацией будут иметь этот метод автоматически добавлены для возврата истины.`
+Determine if this function is cancelable at all. Returns: `If access to setCanceled should be allowed
+ Note:
+ Events with the Cancelable annotation will have this method automatically added to return true.`
 
 Возвращает boolean
 
@@ -59,25 +59,25 @@ myMCEntityItemPickupEvent.hasResult();
 myMCEntityItemPickupEvent.isCancelable();
 ```
 
-### отменено
+### isCanceled
 
-Определяет, отменено ли это событие и должно прекратить выполнение. Возвращение: `Текущее состояние отменено`
+Determine if this event is canceled and should stop executing. Returns: `The current canceled state`
 
 Возвращает boolean
 
 ```zenscript
-myMCEntityItemPickupEvent.isCancel();
+myMCEntityItemPickupEvent.isCanceled();
 ```
 
-### установка отменена
+### setCanceled
 
 ```zenscript
-myMCEntityItemPickupEvent.setCancel(отменить как boolean);
+myMCEntityItemPickupEvent.setCanceled(cancel as boolean);
 ```
 
-| Параметр | Тип     | Описание             |
+| Параметр | Тип     | Description          |
 | -------- | ------- | -------------------- |
-| отменить | boolean | Описание отсутствует |
+| cancel   | boolean | Описание отсутствует |
 
 
 

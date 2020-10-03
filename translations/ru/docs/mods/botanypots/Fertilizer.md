@@ -1,84 +1,84 @@
-# Удобрения
+# Fertilizers
 
-Путь к классу: `mods.botanypots.Fertilizer`
+Class path: `mods.botanypots.Fertilizer`
 
-## Использовано
+## Use
 
-Для использования импортируйте класс с импортом `mods.botanypots.Fertilizer;` в начале вашего скрипта.
+To use, import the class with `import mods.botanypots.Fertilizer;` at the beginning of your script.
 
-## Создание удобрений
+## Creating Fertilizers
 
-`Fertilizer.create(id, ингредиент, minTick, maxTick);`
+`Fertilizer.create(id, ingredient, minTick, maxTick);`
 
-- `id` &lt;строка> id нового удобрения. Это идентификатор пространства имён должен быть в допустимом формате `пространства имён:пути`.
-- `ингредиент` <[Ингредиент](/vanilla/api/items/IIngredient)> Предмет, используемый для удобрений.
-- `minTick` &lt;int> Минимальное количество тиков, добавленных удобрениями.
-- `maxTick` &lt;int> Максимальное количество тиков, добавленных удобрениями.
+- `id` &lt;string> The id of the new fertilizer. This is a namespaced id an must be in the valid `namespace:path` format.
+- `ingredient` <[IIngredient](/vanilla/api/items/IIngredient)> The item used for the fertilizer.
+- `minTick` &lt;int> The minimum amount of ticks added by the fertilizer.
+- `maxTick` &lt;int> The maximum amount of ticks added by the fertilizer.
 
-Создает новое удобрение. Они могут быть использованы для выращивания урожая быстрее.
+Creates a new fertilizer. These can be used to grow crops faster.
 
 ```zenscript
 Fertilizer.create("examplepack:stick", <item:minecraft:stick>, 250, 550);
 ```
 
-## Удаление удобрений
+## Removing Fertilizers
 
-`Удобрения.remove(id);`
+`Fertilizer.remove(id);`
 
-- `id` &lt;строка> id удобрений. Это идентификатор пространства имён должен быть в допустимом формате `пространства имён:пути`.
+- `id` &lt;string> The id of the fertilizer. This is a namespaced id an must be in the valid `namespace:path` format.
 
-Может быть использован для удаления удобрений.
+This can be used to remove a fertilizer.
 
 ```zenscript
 Fertilizer.remove("botanypots:fertilizers/bone_meal");
 ```
 
-## Изменение характеристик Удобрения
+## Changing Fertilizer Ticks
 
 `Fertilizer.setTicks(String id, int minTick, int maxTick);`
 
-- `id` &lt;строка> id удобрений. Это идентификатор пространства имён должен быть в допустимом формате `пространства имён:пути`.
-- `minTick` &lt;int> Новое минимальное количество тиков, добавленное удобрений.
-- `maxTick` &lt;int> Новое максимальное количество тиков, добавленных удобрений.
+- `id` &lt;string> The id of the fertilizer. This is a namespaced id an must be in the valid `namespace:path` format.
+- `minTick` &lt;int> The new minimum amount of ticks added by the fertilizer.
+- `maxTick` &lt;int> The new maximum amount of ticks added by the fertilizer.
 
-Это изменит диапазон тиков при добавлении удобрений.
+This will change the growth tick range added by the fertilizer.
 
 ```zenscript
 Fertilizer.setTicks("botanypots:fertilizers/bone_meal", 800, 900);
 ```
 
-## Изменение ингредиентов удобрений
+## Changing Fertilizer Ingredients
 
-`Удобрения.setIngredient(id, ингредиент);`
+`Fertilizer.setIngredient(id, ingredient);`
 
-- `id` &lt;строка> id удобрений. Это идентификатор пространства имён должен быть в допустимом формате `пространства имён:пути`.
-- `ингредиент` <[Ингредиент](/vanilla/api/items/IIngredient)> Новый предмет для удобрений.
+- `id` &lt;string> The id of the fertilizer. This is a namespaced id an must be in the valid `namespace:path` format.
+- `ingredient` <[IIngredient](/vanilla/api/items/IIngredient)> The new item to be used for the fertilizer.
 
-Задает ингредиент, который является удобрением.
+Sets the ingredient item that is the fertilizer.
 
 ```zenscript
-Удобрения .setIngredient("botanypots:fertilizers/bone_meal", <item:minecraft:sugar>);
+Fertilizer.setIngredient("botanypots:fertilizers/bone_meal", <item:minecraft:sugar>);
 ```
 
-## Получение всех идентификаторов
+## Getting All Ids
 
-`Удобрения.getAllIds();`
+`Fertilizer.getAllIds();`
 
-- Возвращается: &lt;string[]> Множественный массив всех известных идентификаторов удобрений.
+- Returns: &lt;string[]> An array of all known fertilizer ids at the time this is ran.
 
-Это даст вам массив всех известных идентификаторов удобрений.
+This will give you an array of all the known fertilizer ids at the time.
 
 ```zenscript
-// Регистрировать все идентификаторы в файл crafttweaker.log
-для fertilizerId в Fertilizer.getAllIds() {
+// Log all ids to the crafttweaker.log file
+for fertilizerId in Fertilizer.getAllIds() {
     println(fertilizerId);
 }
 ```
 
-## Удаление всех удобрений
+## Removing All Fertilizers
 
-Это полностью удалит все зарегистрированные удобрения. Это полезно, если вы хотите пересоздать все данные с нуля через скрипты.
+This will completely remove all the fertilizers currently registered. This is useful for if you want to recreate all the data from scratch through scripts.
 
 ```zenscript
-Удобрения.removeAll();
+Fertilizer.removeAll();
 ```

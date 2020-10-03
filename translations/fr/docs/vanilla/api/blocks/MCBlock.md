@@ -1,17 +1,17 @@
 # MCBlock
 
-Cette classe a été ajoutée par un mod avec le mod-id `crafttweaker`. Vous devez donc avoir ce mod installé si vous voulez utiliser cette fonctionnalité.
+This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
 
-## Importation de la classe
-Il pourrait vous être nécessaire d'importer le paquet si vous rencontrez des problèmes (comme lancer un tableau), alors mieux être sûr que désolé et ajouter l'importation.
+## Importing the class
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
 ```zenscript
 crafttweaker.api.block.MCBlock
 ```
 
-## Méthodes
-### format@@0 canSpawnInBlock
+## Methods
+### canSpawnInBlock
 
-Retourne un booléen
+Returns boolean
 
 ```zenscript
 myMCBlock.canSpawnInBlock();
@@ -19,23 +19,23 @@ myMCBlock.canSpawnInBlock();
 
 ### getDefaultState
 
-Retourne [crafttweaker.api.block.MCBlockState](/vanilla/api/blocks/MCBlockState)
+Returns [crafttweaker.api.block.MCBlockState](/vanilla/api/blocks/MCBlockState)
 
 ```zenscript
 myMCBlock.getDefaultState();
 ```
 
 
-## Propriétés
+## Properties
 
-| Nom               | Type de texte        | A un Getter | A un Setter |
-| ----------------- | -------------------- | ----------- | ----------- |
-| table de butin    | Chaîne de caractères | vrai        | Faux        |
-| Clé de traduction | Chaîne de caractères | vrai        | Faux        |
+| Name           | Type   | Has Getter | Has Setter |
+| -------------- | ------ | ---------- | ---------- |
+| lootTable      | String | true       | false      |
+| translationKey | String | true       | false      |
 
-## Pistolet
+## Casters
 
-| Type de résultat     | Est implicite |
-| -------------------- | ------------- |
-| Chaîne de caractères | Faux          |
+| Result type | Is Implicit |
+| ----------- | ----------- |
+| String      | false       |
 

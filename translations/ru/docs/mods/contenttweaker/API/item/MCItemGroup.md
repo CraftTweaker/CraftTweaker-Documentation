@@ -1,8 +1,8 @@
 # MCItemGroup
 
-Группа предметов (a.k.a. Creative Tab) - это группировка элементов по категориям.
+An item Group (a.k.a. Creative Tab) is a grouping of items based on category.
 
-Этот класс был добавлен модом с мод-id `contenttweaker`. Так что если вы хотите использовать эту функцию, вам нужно установить этот мод.
+This class was added by a mod with mod-id `contenttweaker`. Так что если вы хотите использовать эту функцию, вам нужно установить этот мод.
 
 ## Импорт класса
 Вам может потребоваться импортировать пакет, если вы столкнетесь с какими-либо проблемами (например, с заливкой массива), так что лучше быть в безопасности, чем извиняться и добавлять импорт.
@@ -11,15 +11,15 @@ mods.contenttweaker.item.MCItemGroup
 ```
 
 ## Реализованные интерфейсы
-MCItemGroup реализует следующие интерфейсы. Следовательно, методы из них доступны в этом классе.
-- [crafttweaker.api.brackets.Отображаемая строка команды](/vanilla/api/brackets/CommandStringDisplayable)
+MCItemGroup implements the following interfaces. That means any method available to them can also be used on this class.
+- [crafttweaker.api.brackets.CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
 
 ## Методы
 ### getPath
 
-Получает путь к группе элементов. Путь — это то, что вы используете в выражении кронштейна после `<itemgroup:` part.
+Gets the path of the item group. The path is what you use in the Bracket Expression after the `<itemgroup:` part.
 
-Тип возврата: строка
+Return type: String
 
 ```zenscript
 <itemgroup:misc>.getPath();
@@ -27,26 +27,26 @@ MCItemGroup реализует следующие интерфейсы. След
 
 ### setBackgroundImageName
 
-Устанавливает имя изображения фона, используемого для этой вкладки в меню креативного меню Возвращает: `Этот объект для цепочки`
+Sets the image name of the Background that is used for this tab in the creative menu Returns: `This object for chaining`
 
-Тип возврата: [mods.contenttweaker.item.MCItemGroup](/mods/contenttweaker/API/item/MCItemGroup)
+Return type: [mods.contenttweaker.item.MCItemGroup](/mods/contenttweaker/API/item/MCItemGroup)
 
 ```zenscript
-<itemgroup:misc>.setBackgroundImageName(текстура как строка);
+<itemgroup:misc>.setBackgroundImageName(texture as String);
 ```
 
-| Параметр | Тип    | Описание                   |
-| -------- | ------ | -------------------------- |
-| текстура | String | Текстура для использования |
+| Параметр | Тип    | Описание               |
+| -------- | ------ | ---------------------- |
+| texture  | String | The texture to be used |
 
 
 ### setNoScrollbar
 
-Удаляет полосу прокрутки группы предметов в креативном инвентаре
+Removes the scrollbar of the item Group in the creative inventory
 
- Возвращается: `Этот объект для цепочки`
+ Returns: `This object for chaining`
 
-Тип возврата: [mods.contenttweaker.item.MCItemGroup](/mods/contenttweaker/API/item/MCItemGroup)
+Return type: [mods.contenttweaker.item.MCItemGroup](/mods/contenttweaker/API/item/MCItemGroup)
 
 ```zenscript
 <itemgroup:misc>.setNoScrollbar();
@@ -54,11 +54,11 @@ MCItemGroup реализует следующие интерфейсы. След
 
 ### setNoTitle
 
-Убирает название группы предметов в творческом инвентаре
+Removes the title of the item Group in the creative inventory
 
- Возвращается: `Этот объект для цепочки`
+ Returns: `This object for chaining`
 
-Тип возврата: [mods.contenttweaker.item.MCItemGroup](/mods/contenttweaker/API/item/MCItemGroup)
+Return type: [mods.contenttweaker.item.MCItemGroup](/mods/contenttweaker/API/item/MCItemGroup)
 
 ```zenscript
 <itemgroup:misc>.setNoTitle();
@@ -67,8 +67,8 @@ MCItemGroup реализует следующие интерфейсы. След
 
 ## Свойства
 
-| Название         | Тип    | Имеет Getter | Имеет Setter |
-| ---------------- | ------ | ------------ | ------------ |
-| командная строка | String | true         | false        |
-| путь             | String | true         | false        |
+| Название      | Тип    | Имеет Getter | Имеет Setter |
+| ------------- | ------ | ------------ | ------------ |
+| commandString | String | true         | false        |
+| path          | String | true         | false        |
 

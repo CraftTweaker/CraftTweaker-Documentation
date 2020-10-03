@@ -1,4 +1,4 @@
-# Событие MCAnvilRepair'а
+# MCAnvilRepairEvent
 
 Этот класс был добавлен модом с mod-id `crafttweaker`. Так что если вы хотите использовать эту функцию, вам нужно установить этот мод.
 
@@ -8,9 +8,9 @@
 crafttweaker.api.event.entity.player.MCAnvilRepairEvent
 ```
 
-## Конструкторы
+## Constructors
 ```zenscript
-new crafttweaker.api.event.entity.player.MCAnvilRepairEvent(обработчик функции.Consumer<crafttweaker.api.event.entity.player.MCAnvilRepairEvent>);
+new crafttweaker.api.event.entity.player.MCAnvilRepairEvent(handler as function.Consumer<crafttweaker.api.event.entity.player.MCAnvilRepairEvent>);
 ```
 | Параметр | Тип                                                                                                                               | Описание             |
 | -------- | --------------------------------------------------------------------------------------------------------------------------------- | -------------------- |
@@ -21,7 +21,7 @@ new crafttweaker.api.event.entity.player.MCAnvilRepairEvent(обработчик
 ## Методы
 ### getBreakChance
 
-Возвращает с плавающей точкой
+Returns float
 
 ```zenscript
 myMCAnvilRepairEvent.getBreakChance();
@@ -29,7 +29,7 @@ myMCAnvilRepairEvent.getBreakChance();
 
 ### getEntityPlayer
 
-Возвращает [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
+Returns [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
 
 ```zenscript
 myMCAnvilRepairEvent.getEntityPlayer();
@@ -37,9 +37,9 @@ myMCAnvilRepairEvent.getEntityPlayer();
 
 ### getIngredientInput
 
-Получите второй элемент в зло Возвращается: `вторая ячейка ввода`
+Get the second item input into the anvil Returns: `the second input slot`
 
-Возвращает [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
+Returns [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
 
 ```zenscript
 myMCAnvilRepairEvent.getIngredientInput();
@@ -47,19 +47,19 @@ myMCAnvilRepairEvent.getIngredientInput();
 
 ### getItemInput
 
-Получите первый элемент в зло Возвращается: `первая слот для ввода`
+Get the first item input into the anvil Returns: `the first input slot`
 
-Возвращает [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
+Returns [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
 
 ```zenscript
 myMCAnvilRepairEvent.getItemInput();
 ```
 
-### getItemРезультат
+### getItemResult
 
-Получить результат вывода из язвы возвратов: `вывод`
+Get the output result from the anvil Returns: `the output`
 
-Возвращает [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
+Returns [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
 
 ```zenscript
 myMCAnvilRepairEvent.getItemResult();
@@ -67,17 +67,17 @@ myMCAnvilRepairEvent.getItemResult();
 
 ### getPlayer
 
-Возвращение: `Игрок`
+Returns: `Player`
 
-Возвращает [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
+Returns [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
 
 ```zenscript
 myMCAnvilRepairEvent.getPlayer();
 ```
 
-### имеет Результат
+### hasResult
 
-Определяет, ожидает ли это событие значимое значение результата. Примечание: События с аннотацией HasResult будут автоматически добавлены для возврата true.
+Determines if this event expects a significant result value. Note: Events with the HasResult annotation will have this method automatically added to return true.
 
 Возвращает boolean
 
@@ -85,11 +85,11 @@ myMCAnvilRepairEvent.getPlayer();
 myMCAnvilRepairEvent.hasResult();
 ```
 
-### неотменяемый
+### isCancelable
 
-Определите, если эта функция вообще недоступна. Возвращается: `Если доступ к установленной отмене должен быть разрешен
- Примечание:
- События с отменяемой аннотацией будут иметь этот метод автоматически добавлены для возврата истины.`
+Determine if this function is cancelable at all. Returns: `If access to setCanceled should be allowed
+ Note:
+ Events with the Cancelable annotation will have this method automatically added to return true.`
 
 Возвращает boolean
 
@@ -97,14 +97,14 @@ myMCAnvilRepairEvent.hasResult();
 myMCAnvilRepairEvent.isCancelable();
 ```
 
-### отменено
+### isCanceled
 
-Определяет, отменено ли это событие и должно прекратить выполнение. Возвращение: `Текущее состояние отменено`
+Determine if this event is canceled and should stop executing. Returns: `The current canceled state`
 
 Возвращает boolean
 
 ```zenscript
-myMCAnvilRepairEvent.isCancel();
+myMCAnvilRepairEvent.isCanceled();
 ```
 
 ### setBreakChance
@@ -113,20 +113,20 @@ myMCAnvilRepairEvent.isCancel();
 myMCAnvilRepairEvent.setBreakChance(breakChance as float);
 ```
 
-| Параметр     | Тип   | Описание             |
-| ------------ | ----- | -------------------- |
-| Шанс разрыва | float | Описание отсутствует |
+| Параметр    | Тип   | Description          |
+| ----------- | ----- | -------------------- |
+| breakChance | float | Описание отсутствует |
 
 
-### установка отменена
+### setCanceled
 
 ```zenscript
-myMCAnvilRepairEvent.setCancel(отменить как boolean);
+myMCAnvilRepairEvent.setCanceled(cancel as boolean);
 ```
 
-| Параметр | Тип     | Описание             |
+| Параметр | Тип     | Description          |
 | -------- | ------- | -------------------- |
-| отменить | boolean | Описание отсутствует |
+| cancel   | boolean | Описание отсутствует |
 
 
 

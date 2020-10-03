@@ -1,60 +1,60 @@
-# 作業台
+# Crafting Table
 
-## レシピタイプ
+## Recipe Types
 
-テーブル制作には3種類のレシピがあります。
+There are three recipe types for crafting tables:
 
-- **シェイプレス:** シェイプレスレシピは、クラフトグリッド内の入力アイテムの位置が問題にならないレシピです。
-- **形状:** 形状のレシピは、アイテムの位置が正確でなければならないレシピです。
-- **鏡面ミラー:** 鏡面レシピは、形状のレシピのようなものですが、水平または垂直軸に沿ってレシピをミラーします。
+- **Shapeless:** A shapeless recipe is a recipe where the position of the input items in the crafting grid does not matter.
+- **Shaped:** A shaped recipe is a recipe where the position of the items must be exact.
+- **Shaped Mirrored:** A mirrored recipe is like shaped recipes but mirrors the recipe along the horizontal or vertical axes.
 
-## レシピを追加
+## Adding a Recipe
 
-_レシピを追加するときは、レシピ名が一意であることを確認してください!_
+_When adding a recipe, ensure that your recipe names are unique!_
 
-### シェイプレスレシピの追加
+### Adding Shapeless Recipes
 
-`craftingTable.addShapeless(recipeName, output, 食材, recipeFunction);`
+`craftingTable.addShapeless(recipeName, output, ingredients, recipeFunction);`
 
 - `recipeName` &lt;string>
-- `出力` <[IItemStack](/vanilla/api/items/IItemStack)>
-- `成分` <[IIngredient](/vanilla/api/items/IIngredient)[]>
-- `recipeFunction` (任意) <[RecipeFunctionArray](/vanilla/api/recipe/RecipeFunctionArray)>
+- `output` <[IItemStack](/vanilla/api/items/IItemStack)>
+- `ingredients` <[IIngredient](/vanilla/api/items/IIngredient)[]>
+- `recipeFunction` (Optional) <[RecipeFunctionArray](/vanilla/api/recipe/RecipeFunctionArray)>
 
-[シェイプレス](#recipe-types) レシピをクラフトテーブルに追加します。 [シェイプレス](#recipe-types) レシピは入力項目の位置を無視するため、レシピを作成する際の項目の順序も関係ありません。
+Adds a [shapeless](#recipe-types) recipe to the crafting table. As [shapeless](#recipe-types) recipes ignore the position of the input items, the ordering of the items when creating the recipe does not matter either.
 
-[Shapeless](#recipe-types) レシピには最大で 9 個の入力があります。 4つ以下のインプットも2x2のインベントリグリッドで作ることができます
+[Shapeless](#recipe-types) recipes can have up to 9 inputs, but those with 4 or less inputs can also be crafted in the 2x2 inventory grid.
 
-作業台レシピは、出力アイテムの1個以上を出力することもできます。 これは出力項目の [IItemStack multipcation 演算子](/vanilla/api/items/IItemStack/#mul) を使用することで実現できます。
+Crafting Table Recipes can also output more than 1 amount of the output item. This can be achieved by using the [IItemStack multiplcation operator](/vanilla/api/items/IItemStack/#mul) on the output item.
 
 ```zenscript
 craftingTable.addShapeless("shapeless_example_1", <item:minecraft:grass>, [<item:minecraft:wheat_seeds>, <item:minecraft:dirt>]);
 
 // A shapeless recipe can have up to 9 inputs
-// This also demonstrates that more than one output can be used. この例では、8つの草が出力されます。
+// This also demonstrates that more than one output can be used. In this example, 8 grass will be outputted.
 craftingTable.addShapeless("shapeless_example_2", <item:minecraft:grass> * 8, [<item:minecraft:wheat_seeds>, <item:minecraft:dirt>, <item:minecraft:dirt>, <item:minecraft:dirt>, <item:minecraft:dirt>, <item:minecraft:dirt>, <item:minecraft:dirt>, <item:minecraft:dirt>, <item:minecraft:dirt>]);
 ```
 
-_レシピ関数の使用方法については、 [レシピ関数の使用](#using-recipe-functions) を参照してください。_
+_See [Using Recipe Functions](#using-recipe-functions) for examples on how to use recipe functions._
 
-### 形状と形状の鏡像レシピの追加
+### Adding Shaped and Shaped Mirrored Recipes
 
-`craftingTable.addShaped(recipeName, output, 食材, recipeFunction);`
+`craftingTable.addShaped(recipeName, output, ingredients, recipeFunction);`
 
-`craftingTable.addShapedMirrored(recipeName, output, 食材, recipeFunction);`
+`craftingTable.addShapedMirrored(recipeName, output, ingredients, recipeFunction);`
 
 - `recipeName` &lt;string>
-- `出力` <[IItemStack](/vanilla/api/items/IItemStack)>
-- `成分` <[IIngredient](/vanilla/api/items/IIngredient)[][]>
-- `recipeFunction` (任意) <[RecipeFunctionMatrix](/vanilla/api/recipe/RecipeFunctionMatrix)>
+- `output` <[IItemStack](/vanilla/api/items/IItemStack)>
+- `ingredients` <[IIngredient](/vanilla/api/items/IIngredient)[][]>
+- `recipeFunction` (Optional) <[RecipeFunctionMatrix](/vanilla/api/recipe/RecipeFunctionMatrix)>
 
-[形の](#recipe-types) （または [ミラーリング](#recipe-types)）レシピをクラフトテーブルに追加します。 レシピを作成する際のアイテムの順序は、作成グリッド内の各アイテムの位置を決定します。
+Adds a [shaped](#recipe-types) (or [mirrored](#recipe-types), depending on the function) recipe to the crafting table. The ordering of the items when creating the recipe dictates the position of each item in the crafting grid.
 
-代わりにレシピを [形のミラーリング](#recipe-types) レシピにすることで、アイテムをクラフトグリッドに追加する際にプレーヤーにより柔軟性を高めることができます。
+Making the recipe a [shaped mirrored](#recipe-types) recipe instead allows for more flexibility to the player when adding the items to the crafting grid.
 
 Both [shaped](#recipe-types) and [shaped mirrored](#recipe-types) recipes can be made to work in a 2x2 (inventory) or 3x3 crafting grid.
 
-作業台レシピは、出力アイテムの1個以上を出力することもできます。 これは出力項目の [IItemStack multipcation 演算子](/vanilla/api/items/IItemStack/#mul) を使用することで実現できます。
+Crafting Table Recipes can also output more than 1 amount of the output item. This can be achieved by using the [IItemStack multiplcation operator](/vanilla/api/items/IItemStack/#mul) on the output item.
 
 ```zenscript
 // Adding a shaped recipe
@@ -78,22 +78,22 @@ craftingTable.addShapedMirrored("shaped_mirror_example_1", <item:minecraft:arrow
 ]);
 ```
 
-_レシピ関数の使用方法については、 [レシピ関数の使用](#using-recipe-functions) を参照してください。_
+_See [Using Recipe Functions](#using-recipe-functions) for examples on how to use recipe functions._
 
-## レシピ関数の使用
+## Using Recipe Functions
 
-レシピ関数は、プログラムによって決定された出力を可能にします。 これは、項目の損傷やその他のNBTデータのような入力項目の情報が必要な場合に特に便利です。
+A recipe function allows for a programatically determined output. This can be especially useful when you need some of the input item's information, like the item's damage or other NBT data.
 
-_形状と形状のミラーレシピが似ているため、例には形状のレシピのみが含まれます。 `addShaped` を使用して、 `addShapedMirrored` と同じように扱うことができます。_
+_As Shaped and Shaped Mirrored Recipes are similar, examples will only include Shaped Recipes. You may treat any example using `addShaped` as the same as using `addShapedMirrored`._
 
-### シェイプレスレシピで RecipeFunctionArray を使用する
+### Using RecipeFunctionArray in a Shapeless Recipe
 
 `recipeFunction` <[RecipeFunctionArray](/vanilla/api/recipe/RecipeFunctionArray)>
 
-`(通常は IItemStack, inputs as IItemStack[]) =>{};`
+`(usualOut as IItemStack, inputs as IItemStack[]) => {};`
 
-- `normalOut` <[IItemStack](/vanilla/api/items/IItemStack)>
-- `入力` <[IItemStack](/vanilla/api/items/IItemStack)[]> 元のレシピで定義されているのと同じ順序の入力配列
+- `usualOut` <[IItemStack](/vanilla/api/items/IItemStack)>
+- `inputs` <[IItemStack](/vanilla/api/items/IItemStack)[]> Array of inputs ordered the same as defined in the original recipe
 
 ```zenscript
 import crafttweaker.api.item.IItemStack;
@@ -110,14 +110,14 @@ craftingTable.addShapeless("shapeless_func_example_1", <item:minecraft:diamond> 
 });
 ```
 
-### 形状/鏡像レシピでのレシピ関数マトリクスの使用
+### Using RecipeFunctionMatrix in a Shaped/Mirrored Recipe
 
 `recipeFunction` <[RecipeFunctionMatrix](/vanilla/api/recipe/RecipeFunctionMatrix)>
 
-`(通常は IItemStack, inputs as IItemStack[][] =>{};`
+`(usualOut as IItemStack, inputs as IItemStack[][]) => {};`
 
-- `normalOut` <[IItemStack](/vanilla/api/items/IItemStack)>
-- `入力` <[IItemStack](/vanilla/api/items/IItemStack)[][]> 元のレシピで定義されているのと同じ順序で入力された配列。 行を定義することで入力が見つかります。 次に、列(`は[0]を入力します[1]` は、最初の行、2番目の列の項目を取得します)。
+- `usualOut` <[IItemStack](/vanilla/api/items/IItemStack)>
+- `inputs` <[IItemStack](/vanilla/api/items/IItemStack)[][]> Array of inputs ordered the same as defined in the original recipe. An input can be found by defining the row, then the column (`inputs[0][1]` to get the item in the first row, second column).
 
 ```zenscript
 import crafttweaker.api.item.IItemStack;
@@ -155,13 +155,13 @@ craftingTable.addShaped("shapeed_func_example_1", <item:minecraft:diamond_block>
     });
 ```
 
-### 高度な使い方
+### Advanced Usage
 
-#### 変数としての関数
+#### Functions as a Variable
 
-レシピ関数を変数に割り当てることで、複数のレシピで同じ機能を簡単に選択できます。
+Recipe functions can be assigned to a variable allowing you to ulitize the same function for multiple recipes easily.
 
-シェイプレス:
+Shapeless:
 
 ```zenscript
 import crafttweaker.api.item.IItemStack;
@@ -181,7 +181,7 @@ craftingTable.addShapeless("shapeless_varfunc_example_1", <item:minecraft:diamon
 craftingTable.addShapeless("shapeless_varfunc_example_2", <item:minecraft:diamond> * 9, [<item:minecraft:cobblestone>, <item:minecraft:dirt>], exampleShapelessRecipeVarFunction);
 ```
 
-形状/鏡像:
+Shaped/Mirrored:
 
 ```zenscript
 import crafttweaker.api.item.IItemStack;
@@ -227,62 +227,62 @@ craftingTable.addShaped("shapeed_func_example_4", <item:minecraft:diamond_block>
 ], exampleShapedRecipeVarFunction);
 ```
 
-## レシピを削除する
+## Removing a Recipe
 
-### 名前でレシピを削除
+### Remove a Recipe by Name
 
 `craftingTable.removeByName(recipeName);`
 
 - `recipeName` &lt;string>
 
-指定された名前に一致するレシピを削除します。
+Removes the recipe that matches the name provided.
 
 ```zenscript
 craftingTable.removeByName("minecraft:sugar_from_sugar_cane");
 ```
 
-### 出力によるレシピの削除
+### Remove Recipes by Output
 
 `craftingTable.removeRecipe(output);`
 
-- `出力` <[IItemStack](/vanilla/api/items/IItemStack)>
+- `output` <[IItemStack](/vanilla/api/items/IItemStack)>
 
-出力結果が与えられた [IItemStack](/vanilla/api/items/IItemStack) であるすべてのレシピを削除します。
+Removes all recipes where the output result is the provided [IItemStack](/vanilla/api/items/IItemStack).
 
 ```zenscript
 craftingTable.removeRecipe(<item:minecraft:stick>);
 ```
 
-### Mod ID によるレシピの削除
+### Remove Recipes by Mod ID
 
 `craftingTable.removeByModid(modId);`
 
 - `modId` &lt;string>
 
-提供された Mod によって追加されたすべてのレシピを削除します。
+Removes all recipes added by the provided mod.
 
 ```zenscript
 craftingTable.removeByModid("minecraft");
 ```
 
-#### Mod ID の削除からレシピを除外
+#### Exclude Recipes From Mod ID Removal
 
-`craftingTable.removeByModid(modId, exclusonFilter);`
+`craftingTable.removeByModid(modId, exclusionFilter);`
 
 - `modId` &lt;string>
-- `exclusonFilter` <[RecipeFilter](/vanilla/api/recipe/RecipeFilter)>
-  - `name` &lt;string> チェック中の現在のレシピの名前。 _MODIDは含まれません_
+- `exclusionFilter` <[RecipeFilter](/vanilla/api/recipe/RecipeFilter)>
+  - `name` &lt;string> The name of the current recipe being checked. _The mod id will not be included_
 
-提供された Mod によって追加されたすべてのレシピを削除します。 exclusonFilter の結果がレシピ名に true を返した場合、レシピは除外されます。
+Removes all recipes added by the provided mod. Recipes are excluded if the result of the exclusionFilter returns true for the recipe name.
 
 ```zenscript
 craftingTable.removeByModid("minecraft", (name) => {
-    // レシピの名前が "minecraft:red_bed_from_white_bed" と一致するか確認します。
+    // Checks if the name of the recipe matches "minecraft:red_bed_from_white_bed"
     return name == "red_bed_from_white_bed";
 });
 ```
 
-複数のレシピを除外することもできます。 これを行うことができる1つの方法は次のとおりです。
+Multiple recipes can also be excluded. One way this can be done is as follows:
 
 ```zenscript
 // An array of recipe names as strings
@@ -297,24 +297,24 @@ craftingTable.removeByModid("minecraft", (name) => {
 });
 ```
 
-### 正規表現によるレシピの削除
+### Remove Recipes by Regex
 
 `craftingTable.removeByRegex(regex);`
 
 - `regex` &lt;string>
 
-名前が正規表現文字列と一致するレシピをすべて削除します。
+Removes all recipes that's name matches the regex string.
 
 ```zenscript
-// "minecraft:green_carpet", "minecraft:lime_carpet_from_white_carpet", and "minecraft:white_carpet"
+// Removes recipes such as "minecraft:green_carpet", "minecraft:lime_carpet_from_white_carpet", and "minecraft:white_carpet"
 craftingTable.removeByRegex("minecraft:.*_carpet");
 ```
 
-### すべてのレシピを削除
+### Remove All Recipes
 
 `craftingTable.removeAll();`
 
-すべてのクラフトテーブルレシピを削除します。
+Removes all crafting table recipes.
 
 ```zenscript
 craftingTable.removeAll();

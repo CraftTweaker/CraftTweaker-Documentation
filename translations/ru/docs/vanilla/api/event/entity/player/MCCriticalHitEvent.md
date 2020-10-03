@@ -8,9 +8,9 @@
 crafttweaker.api.event.entity.player.MCCriticalHitEvent
 ```
 
-## Конструкторы
+## Constructors
 ```zenscript
-new crafttweaker.api.event.entity.player.MCCriticalHitEvent(обработчик функции.Consumer<crafttweaker.api.event.entity.player.MCCriticalHitEvent>);
+new crafttweaker.api.event.entity.player.MCCriticalHitEvent(handler as function.Consumer<crafttweaker.api.event.entity.player.MCCriticalHitEvent>);
 ```
 | Параметр | Тип                                                                                                                               | Описание             |
 | -------- | --------------------------------------------------------------------------------------------------------------------------------- | -------------------- |
@@ -21,9 +21,9 @@ new crafttweaker.api.event.entity.player.MCCriticalHitEvent(обработчик
 ## Методы
 ### getDamageModifier
 
-Модификатор урона для удара.<br> Это по умолчанию 1.5F для ударов по кругу и 1F для обычных хитов.
+The damage modifier for the hit.<br> This is by default 1.5F for ciritcal hits and 1F for normal hits .
 
-Возвращает с плавающей точкой
+Returns float
 
 ```zenscript
 myMCCriticalHitEvent.getDamageModifier();
@@ -31,7 +31,7 @@ myMCCriticalHitEvent.getDamageModifier();
 
 ### getEntityPlayer
 
-Возвращает [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
+Returns [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
 
 ```zenscript
 myMCCriticalHitEvent.getEntityPlayer();
@@ -39,9 +39,9 @@ myMCCriticalHitEvent.getEntityPlayer();
 
 ### getOldDamageModifier
 
-Модификатор повреждений для ударов по вертикали.<br> Это 1.5F для ударов по кругу и 1F для обычных ударов.
+The orignal damage modifier for the hit wthout any changes.<br> This is 1.5F for ciritcal hits and 1F for normal hits .
 
-Возвращает с плавающей точкой
+Returns float
 
 ```zenscript
 myMCCriticalHitEvent.getOldDamageModifier();
@@ -49,17 +49,17 @@ myMCCriticalHitEvent.getOldDamageModifier();
 
 ### getPlayer
 
-Возвращение: `Игрок`
+Returns: `Player`
 
-Возвращает [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
+Returns [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
 
 ```zenscript
 myMCCriticalHitEvent.getPlayer();
 ```
 
-### имеет Результат
+### hasResult
 
-Определяет, ожидает ли это событие значимое значение результата. Примечание: События с аннотацией HasResult будут автоматически добавлены для возврата true.
+Determines if this event expects a significant result value. Note: Events with the HasResult annotation will have this method automatically added to return true.
 
 Возвращает boolean
 
@@ -67,11 +67,11 @@ myMCCriticalHitEvent.getPlayer();
 myMCCriticalHitEvent.hasResult();
 ```
 
-### неотменяемый
+### isCancelable
 
-Определите, если эта функция вообще недоступна. Возвращается: `Если доступ к установленной отмене должен быть разрешен
- Примечание:
- События с отменяемой аннотацией будут иметь этот метод автоматически добавлены для возврата истины.`
+Determine if this function is cancelable at all. Returns: `If access to setCanceled should be allowed
+ Note:
+ Events with the Cancelable annotation will have this method automatically added to return true.`
 
 Возвращает boolean
 
@@ -79,9 +79,9 @@ myMCCriticalHitEvent.hasResult();
 myMCCriticalHitEvent.isCancelable();
 ```
 
-### отменено
+### isCanceled
 
-Определяет, отменено ли это событие и должно прекратить выполнение. Возвращение: `Текущее состояние отменено`
+Determine if this event is canceled and should stop executing. Returns: `The current canceled state`
 
 Возвращает boolean
 
@@ -91,7 +91,7 @@ myMCCriticalHitEvent.isCanceled();
 
 ### isVanillaCritical
 
-Возвращает значение истины, если этот удар критичен ванильной
+Returns true if this hit was critical by vanilla
 
 Возвращает boolean
 
@@ -99,26 +99,26 @@ myMCCriticalHitEvent.isCanceled();
 myMCCriticalHitEvent.isVanillaCritical();
 ```
 
-### установка отменена
+### setCanceled
 
 ```zenscript
-myMCCriticalHitEvent.setCanceled(отменить как boolean);
+myMCCriticalHitEvent.setCanceled(cancel as boolean);
 ```
 
-| Параметр | Тип     | Описание             |
+| Параметр | Тип     | Description          |
 | -------- | ------- | -------------------- |
-| отменить | boolean | Описание отсутствует |
+| cancel   | boolean | Описание отсутствует |
 
 
-### Модификатор Урона
+### setDamageModifier
 
-Это задает мультипликатор урона для попадания. Если вы установите его в 0, то частицы все еще генерируются, но повреждение не сделано.
+This set the damage multiplier for the hit. If you set it to 0, then the particles are still generated but damage is not done.
 
 ```zenscript
-myMCCriticalHitEvent.setDamageModifier(мод как float);
+myMCCriticalHitEvent.setDamageModifier(mod as float);
 ```
 
-| Параметр | Тип   | Описание             |
+| Параметр | Тип   | Description          |
 | -------- | ----- | -------------------- |
 | mod      | float | Описание отсутствует |
 

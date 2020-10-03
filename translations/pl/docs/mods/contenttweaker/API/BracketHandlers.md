@@ -1,58 +1,58 @@
-# Obsługa nawiasów
+# BracketHandlers
 
-Zalecam bezpośrednie stosowanie metod statycznych w tej grupie, ponieważ w każdym momencie mogą one zostać połączone w protokół BEP CrT. Jeśli potrzebujesz dynamicznego dostępu do metod Parsera wyrażeń nawiasów, możesz użyć
+I advise against using the static methods in this class directly as they may be merged into CrT's BEP at any point. If you need to access the Bracket Expression Parser methods dynamically, you can use
  ```zencode
  var myName = "misc";
  <itemgroup:${myName}>
  ```
 
-Ta klasa została dodana przez moda z mod-id `contenttweaker`. Więc musisz zainstalować tę modyfikację, jeśli chcesz używać tej funkcji.
+This class was added by a mod with mod-id `contenttweaker`. So you need to have this mod installed if you want to use this feature.
 
-## Importowanie klasy
-Może być wymagane zaimportowanie pakietu, jeśli napotkasz jakiekolwiek problemy (np. rzucanie tablicy), tak aby były bezpieczne niż przepraszamy i dodaj import.
+## Importing the class
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
 ```zenscript
-mods.contenttweaker.Obsługa nawiasów
+mods.contenttweaker.BracketHandlers
 ```
 
-## Metody
+## Methods
 ### getItemGroup
 
-Pobiera grupę przedmiotów. Wyrzuci błąd, jeśli grupa nie może zostać znaleziona
+Gets the itemGroup. Will throw an error if the group could not be found
 
- Zwroty: `Znaleziona grupa MCItemGroup`
+ Returns: `The found MCItemGroup`
 
-Typ zwrotu: [mods.contenttweaker.item.MCItemGroup](/mods/contenttweaker/API/item/MCItemGroup)
+Return type: [mods.contenttweaker.item.MCItemGroup](/mods/contenttweaker/API/item/MCItemGroup)
 
 ```zenscript
 <itemgroup:misc>
 
-mods.contenttweaker.BracketHandlers.getItemGroup(tokeny jako String);
+mods.contenttweaker.BracketHandlers.getItemGroup(tokens as String);
 mods.contenttweaker.BracketHandlers.getItemGroup("misc");
 ```
 
-| Parametr | Typ         | Opis                                     |
-| -------- | ----------- | ---------------------------------------- |
-| tokeny   | Ciąg znaków | Co tworzysz DataCompound w wywołaniu BEP |
+| Parameter | Type   | Description                                 |
+| --------- | ------ | ------------------------------------------- |
+| tokens    | String | What you createDataCompound in the BEP call |
 
 
-### Typ getToolType
+### getToolType
 
-Pobiera [mods.contenttweaker.item.MCToolType](/mods/contenttweaker/API/item/MCToolType). Stworzy nowy, jeśli podany nie istnieje.
+Gets a [mods.contenttweaker.item.MCToolType](/mods/contenttweaker/API/item/MCToolType). Will create a new one if the given one does not exist.
 
- Zwraca: `Zwroty: [mods.contenttweaker.item.MCToolType](/mods/contenttweaker/API/item/MCToolType) jeśli znalezione, lub nowy typ MCToolType`
+ Returns: `The [mods.contenttweaker.item.MCToolType](/mods/contenttweaker/API/item/MCToolType) if found, or a new MCToolType`
 
-Typ zwracania: [mods.contenttweaker.item.MCToolType](/mods/contenttweaker/API/item/MCToolType)
+Return type: [mods.contenttweaker.item.MCToolType](/mods/contenttweaker/API/item/MCToolType)
 
 ```zenscript
 <tooltype:shovel>
 
-mods.contenttweaker.BracketHandlers.getToolType(tokeny jako String);
+mods.contenttweaker.BracketHandlers.getToolType(tokens as String);
 mods.contenttweaker.BracketHandlers.getToolType("shovel");
 ```
 
-| Parametr | Typ         | Opis                                           |
-| -------- | ----------- | ---------------------------------------------- |
-| tokeny   | Ciąg znaków | Co chcesz utworzyć DataCompound w rozmowie BEP |
+| Parameter | Type   | Description                                       |
+| --------- | ------ | ------------------------------------------------- |
+| tokens    | String | What you would createDataCompound in the BEP call |
 
 
 

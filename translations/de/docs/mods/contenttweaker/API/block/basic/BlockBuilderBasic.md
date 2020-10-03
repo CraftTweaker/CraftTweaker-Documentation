@@ -1,33 +1,33 @@
 # BlockBuilderBasic
 
-Dieser Builder erzeugt den Blocktyp, der standardmäßig in [mods.contenttweaker.block.basic verwendet wird.BlockBuilderBasic#build](/mods/contenttweaker/API/block/basic/BlockBuilderBasic/#build) Dieser Builder bietet keine speziellen Eigenschaften zu setzen, du kannst ihn nur bauen.
+This builder builds the block type that is used by default in [mods.contenttweaker.block.basic.BlockBuilderBasic#build](/mods/contenttweaker/API/block/basic/BlockBuilderBasic/#build) This builder does not offer any special properties to set, you can only build it.
 
-Diese Klasse wurde von einer Mod mit mod-id `contenttweaker` hinzugefügt. Wenn Sie diese Funktion nutzen möchten, müssen Sie diese Mod installiert haben.
+This class was added by a mod with mod-id `contenttweaker`. So you need to have this mod installed if you want to use this feature.
 
 ## Diese Klasse importieren
-Es kann erforderlich sein, dass Sie das Paket importieren, wenn Sie irgendwelche Probleme haben (wie zum Beispiel ein Array zu bearbeiten), also besser sicher sein als bedauern und fügen Sie den Import.
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
 ```zenscript
 mods.contenttweaker.block.basic.BlockBuilderBasic
 ```
 
-## Implementierte Schnittstellen
-BlockBuilderBasic implementiert die folgenden Schnittstellen. Das bedeutet, dass jede ihnen zur Verfügung stehende Methode auch in dieser Klasse verwendet werden kann.
+## Implemented Interfaces
+BlockBuilderBasic implements the following interfaces. That means any method available to them can also be used on this class.
 - [mods.contenttweaker.api.IIsBuilder](/mods/contenttweaker/API/api/IIsBuilder)
 - [mods.contenttweaker.block.BlockTypeBuilder](/mods/contenttweaker/API/block/BlockTypeBuilder)
 
 ## Methoden
-### bauen
+### build
 
-Weist CoT tatsächlich zu bauen, was dieser Baumeister eigentlich bauen soll.
+Instructs CoT to actually build whatever this builder is supposed to be building.
 
 ```zenscript
-neuer BlockBuilder().withType<ItemBuilderBasic>().build(resourceLocation as String);
+new BlockBuilder().withType<ItemBuilderBasic>().build(resourceLocation as String);
 new BlockBuilder().withType<ItemBuilderBasic>().build("my_awesome_block");
 ```
 
-| Parameter          | Type   | Beschreibung                                    |
-| ------------------ | ------ | ----------------------------------------------- |
-| ressourcenstandort | String | Der Ressourcenpfad, der diesen Block geben soll |
+| Parameter        | Type   | Beschreibung                         |
+| ---------------- | ------ | ------------------------------------ |
+| resourceLocation | String | The resource path to give this block |
 
 
 

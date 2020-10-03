@@ -116,7 +116,7 @@ new crafttweaker.api.data.ListData(list as List<crafttweaker.api.data.IData>);
 | -------- | ----- | ---- | ----- |
 | size #大小 | 整型    | true | false |
 
-## 卡斯特尔
+## Casters
 
 | 结果类型                                                             | 是否隐藏 |
 | ---------------------------------------------------------------- | ---- |

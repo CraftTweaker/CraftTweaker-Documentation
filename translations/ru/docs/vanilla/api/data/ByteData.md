@@ -10,17 +10,17 @@
 crafttweaker.api.data.ByteData
 ```
 
-## Реализованные интерфейсы
-ByteData реализует следующие интерфейсы. Следовательно, методы из них доступны в этом классе.
+## Implemented Interfaces
+ByteData implements the following interfaces. That means any method available to them can also be used on this class.
 - [crafttweaker.api.data.INumberData](/vanilla/api/data/INumberData)
 
-## Конструкторы
+## Constructors
 ```zenscript
-new crafttweaker.api.data.ByteData(внутренняя как байт);
+new crafttweaker.api.data.ByteData(internal as byte);
 ```
-| Параметр   | Тип  | Описание             |
-| ---------- | ---- | -------------------- |
-| внутренняя | byte | Описание отсутствует |
+| Параметр | Тип  | Описание             |
+| -------- | ---- | -------------------- |
+| internal | byte | Описание отсутствует |
 
 
 

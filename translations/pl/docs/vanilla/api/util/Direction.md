@@ -1,39 +1,39 @@
-# Kierunek
+# Direction
 
-Reprezentuje kierunek kardynalny (północ, południe, wschod, zachód) oraz (góra i dół).
+Represents a cardinal direction (north, south, east, west) and (up and down).
 
-Ta klasa została dodana przez moda z mod-id `crafttweaker`. Więc musisz zainstalować tę modyfikację, jeśli chcesz używać tej funkcji.
+This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
 
-## Importowanie klasy
-Może być wymagane zaimportowanie pakietu, jeśli napotkasz jakiekolwiek problemy (np. rzucanie tablicy), tak aby były bezpieczne niż przepraszamy i dodaj import.
+## Importing the class
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
 ```zenscript
-Kierunek crafttweaker.api.util.Direction
+crafttweaker.api.util.Direction
 ```
 
-## Metody
+## Methods
 ### rotateAround
 
-Obraca ten kierunek wokół danej osi
+Rotates this direction around a given Axis
 
-Zwraca [crafttweaker.api.util.Direction](/vanilla/api/util/Direction)
+Returns [crafttweaker.api.util.Direction](/vanilla/api/util/Direction)
 
 ```zenscript
-<direction:north>.rotateAround(oś jako crafttweaker.api.util.DirectionAxis);
+<direction:north>.rotateAround(axis as crafttweaker.api.util.DirectionAxis);
 <direction:north>.rotateAround(<directionaxis:north>);
 ```
 
-| Parametr | Typ                                                                    | Opis            |
-| -------- | ---------------------------------------------------------------------- | --------------- |
-| oś       | [crafttweaker.api.util.DirectionAxis](/vanilla/api/util/DirectionAxis) | Oś do obracania |
+| Parameter | Type                                                                   | Description               |
+| --------- | ---------------------------------------------------------------------- | ------------------------- |
+| axis      | [crafttweaker.api.util.DirectionAxis](/vanilla/api/util/DirectionAxis) | the Axis to rotate around |
 
 
 ### rotateY
 
-Obraca ten kierunek na osi Y
+Rotates this direction on the Y axis
 
- Zwraca: `kierunek, który obrócił się na osi Y tego kierunku`
+ Returns: `the direction that rotated on the Y axis of this direction`
 
-Zwraca [crafttweaker.api.util.Direction](/vanilla/api/util/Direction)
+Returns [crafttweaker.api.util.Direction](/vanilla/api/util/Direction)
 
 ```zenscript
 <direction:north>.rotateY();
@@ -41,29 +41,29 @@ Zwraca [crafttweaker.api.util.Direction](/vanilla/api/util/Direction)
 
 ### rotateYCCW
 
-Obróć ten kierunek w kierunku przeciwnym do ruchu wskazówek zegara na osi Y
+Rotates this direction counter-clock wise on the Y axis
 
- Zwraca: `kierunek, który jest przeciwny do ruchu wskazówek zegara na osi Y`
+ Returns: `the direction that is counter clockwise on the Y axis`
 
-Zwraca [crafttweaker.api.util.Direction](/vanilla/api/util/Direction)
+Returns [crafttweaker.api.util.Direction](/vanilla/api/util/Direction)
 
 ```zenscript
-<direction:north>rotateYCCW();
+<direction:north>.rotateYCCW();
 ```
 
 
-## Właściwości
+## Properties
 
-| Nazwisko       | Typ                                                                     | Posiada Getter | Ma ustawienie |
-| -------------- | ----------------------------------------------------------------------- | -------------- | ------------- |
-| oś             | [crafttweaker.api.util.DirectionAxis](/vanilla/api/util/DirectionAxis)  | prawda         | fałszywy      |
-| axisOffset     | odcień                                                                  | prawda         | fałszywy      |
-| Kąt poziomy    | zmiennoprzecinkowe                                                      | prawda         | fałszywy      |
-| indeks poziomy | odcień                                                                  | prawda         | fałszywy      |
-| indeks         | odcień                                                                  | prawda         | fałszywy      |
-| Nazwa          | Ciąg znaków                                                             | prawda         | fałszywy      |
-| przeciwnie     | [Kierunek crafttweaker.api.util.Direction](/vanilla/api/util/Direction) | prawda         | fałszywy      |
-| xOffset        | odcień                                                                  | prawda         | fałszywy      |
-| yOffset        | odcień                                                                  | prawda         | fałszywy      |
-| zOffset        | odcień                                                                  | prawda         | fałszywy      |
+| Name            | Type                                                                   | Has Getter | Has Setter |
+| --------------- | ---------------------------------------------------------------------- | ---------- | ---------- |
+| axis            | [crafttweaker.api.util.DirectionAxis](/vanilla/api/util/DirectionAxis) | true       | false      |
+| axisOffset      | int                                                                    | true       | false      |
+| horizontalAngle | float                                                                  | true       | false      |
+| horizontalIndex | int                                                                    | true       | false      |
+| index           | int                                                                    | true       | false      |
+| name            | String                                                                 | true       | false      |
+| opposite        | [crafttweaker.api.util.Direction](/vanilla/api/util/Direction)         | true       | false      |
+| xOffset         | int                                                                    | true       | false      |
+| yOffset         | int                                                                    | true       | false      |
+| zOffset         | int                                                                    | true       | false      |
 

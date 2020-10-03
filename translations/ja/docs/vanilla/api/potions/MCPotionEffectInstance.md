@@ -1,41 +1,41 @@
 # MCPotionEffectInstance
 
-crafttweakerのmod-idを持つmodによって追加されているクラスです。 従って、この機能を利用する場合はこのmodをインストールする必要があります。
+This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
 
-## クラスのインポート
-問題が発生した場合には、インポートが必要になります。とはいえ、お手数ですが予めインポートしておくほうが安全です。
+## Importing the class
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
 ```zenscript
 crafttweaker.api.potion.MCPotionEffectInstance
 ```
 
-## メソッド
+## Methods
 ### addCurativeItem
 
 ```zenscript
 myMCPotionEffectInstance.addCurativeItem(stack as crafttweaker.api.item.IItemStack);
 ```
 
-| パラメータ | タイプ                                                               | 説明           |
-| ----- | ----------------------------------------------------------------- | ------------ |
-| スタック  | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | 説明が提供されていません |
+| Parameter | Type                                                              | Description             |
+| --------- | ----------------------------------------------------------------- | ----------------------- |
+| stack     | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | No description provided |
 
 
-### 結合
+### combine
 
-戻り値ブール値
+Returns boolean
 
 ```zenscript
-myMCPotionEffectInstance.combine(effecer.api.potion.MCPotionEffectInstance);
+myMCPotionEffectInstance.combine(effect as crafttweaker.api.potion.MCPotionEffectInstance);
 ```
 
-| パラメータ | タイプ                                                                                           | 説明           |
-| ----- | --------------------------------------------------------------------------------------------- | ------------ |
-| 効果    | [crafttweaker.api.potion.MCPotionEffectInstance](/vanilla/api/potions/MCPotionEffectInstance) | 説明が提供されていません |
+| Parameter | Type                                                                                          | Description             |
+| --------- | --------------------------------------------------------------------------------------------- | ----------------------- |
+| effect    | [crafttweaker.api.potion.MCPotionEffectInstance](/vanilla/api/potions/MCPotionEffectInstance) | No description provided |
 
 
 ### getCurativeItems
 
-戻り値 List<[crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)>
+Returns List<[crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)>
 
 ```zenscript
 myMCPotionEffectInstance.getCurativeItems();
@@ -43,38 +43,38 @@ myMCPotionEffectInstance.getCurativeItems();
 
 ### isCurativeItem
 
-戻り値ブール値
+Returns boolean
 
 ```zenscript
 myMCPotionEffectInstance.isCurativeItem(stack as crafttweaker.api.item.IItemStack);
 ```
 
-| パラメータ | タイプ                                                               | 説明           |
-| ----- | ----------------------------------------------------------------- | ------------ |
-| スタック  | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | 説明が提供されていません |
+| Parameter | Type                                                              | Description             |
+| --------- | ----------------------------------------------------------------- | ----------------------- |
+| stack     | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | No description provided |
 
 
 ### setCurativeItems
 
 ```zenscript
-myMCPotionEffectInstance.setCurativeItems(items as crafttweaker.api.item.IItemStack[] []);
+myMCPotionEffectInstance.setCurativeItems(items as crafttweaker.api.item.IItemStack[]);
 ```
 
-| パラメータ | タイプ                                                                 | 説明           |
-| ----- | ------------------------------------------------------------------- | ------------ |
-| 項目    | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)[] | 説明が提供されていません |
+| Parameter | Type                                                                | Description             |
+| --------- | ------------------------------------------------------------------- | ----------------------- |
+| items     | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)[] | No description provided |
 
 
 
-## プロパティー
+## Properties
 
-| 名称            | タイプ                                                                           | ゲッターあり | セッターあり |
-| ------------- | ----------------------------------------------------------------------------- | ------ | ------ |
-| ambient       | boolean型                                                                      | true   | false  |
-| アンプ           | int                                                                           | true   | false  |
-| 期間            | int                                                                           | true   | false  |
-| effectName    | 文字列型                                                                          | true   | false  |
-| ポーション         | [crafttweaker.api.potion.MCPotionEffect](/vanilla/api/potions/MCPotionEffect) | true   | false  |
-| showIcon      | boolean型                                                                      | true   | false  |
-| showParticles | boolean型                                                                      | true   | false  |
+| 名称            | Type                                                                          | Has Getter | Has Setter |
+| ------------- | ----------------------------------------------------------------------------- | ---------- | ---------- |
+| ambient       | boolean型                                                                      | true       | false      |
+| amplifier     | int                                                                           | true       | false      |
+| duration      | int                                                                           | true       | false      |
+| effectName    | String                                                                        | true       | false      |
+| potion        | [crafttweaker.api.potion.MCPotionEffect](/vanilla/api/potions/MCPotionEffect) | true       | false      |
+| showIcon      | boolean型                                                                      | true       | false      |
+| showParticles | boolean型                                                                      | true       | false      |
 

@@ -1,14 +1,14 @@
-# 日焼けラック
+# Tanning Rack
 
-## パッケージ
-`import mods.stone_ageTanningRackManager;`
+## Package
+`import mods.stone_age.TanningRackManager;`
 
-## メソッド
-- **文字列名** レシピ名
+## Methods
+- **String name** Recipe name
 - **[IItemStack](/Vanilla/Items/IItemStack/) output**
-- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) の入力**
-- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) ツール**
-- **文字列グループ** レシピグループ
+- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input**
+- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) tool**
+- **String group** Recipe group
 
 ## 加算
 

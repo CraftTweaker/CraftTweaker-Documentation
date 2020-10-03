@@ -1,26 +1,26 @@
-# Рецепт FunctionArray
+# RecipeFunctionArray
 
 Этот класс добавляется модом `crafttweaker`. Вы должны установить этот мод, если хотите использовать эту возможность.
 
 ## Импорт класса
 Вам может потребоваться импортировать пакет, если вы столкнетесь с какими-либо проблемами (например, с заливкой массива), так что лучше быть в безопасности, чем извиняться и добавлять импорт.
 ```zenscript
-crafttweaker.api.рецепт.Рецепт FunctionArray
+crafttweaker.api.recipe.RecipeFunctionArray
 ```
 
-## Функциональный интерфейс
+## Functional Interface
 
-Этот класс является функциональным интерфейсом. Это означает, что вы можете использовать нотацию lambda для создания экземпляра. Нотация лямбда выглядит так:
+This class is a functional interface. This means that you can use the lambda notation to create an instance of it. The lambda notation looks like:
 ```zenscript
 (usualOut, inputs) => <item:minecraft:dirt>
 ```
 ## Методы
-### процесс
+### process
 
-Возвратный тип: [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
+Return type: [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
 
 ```zenscript
-myRecipeFunctionArray.process(usualOut as crafttweaker.api.item.IItemStack, input as crafttweaker.api.item.IItemStack[]);
+myRecipeFunctionArray.process(usualOut as crafttweaker.api.item.IItemStack, inputs as crafttweaker.api.item.IItemStack[]);
 ```
 
 | Параметр | Тип                                                                 | Описание             |

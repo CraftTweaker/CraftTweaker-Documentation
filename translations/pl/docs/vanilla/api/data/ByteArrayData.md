@@ -2,114 +2,114 @@
 
 
 
-Ta klasa została dodana przez moda z mod-id `crafttweaker`. Więc musisz zainstalować tę modyfikację, jeśli chcesz używać tej funkcji.
+This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
 
-## Importowanie klasy
-Może być wymagane zaimportowanie pakietu, jeśli napotkasz jakiekolwiek problemy (np. rzucanie tablicy), tak aby były bezpieczne niż przepraszamy i dodaj import.
+## Importing the class
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
 ```zenscript
 crafttweaker.api.data.ByteArrayData
 ```
 
-## Zaimplementowane interfejsy
-ByteArrayData implementuje następujące interfejsy. Oznacza to, że każda dostępna dla nich metoda może być również stosowana w tej klasie.
+## Implemented Interfaces
+ByteArrayData implements the following interfaces. That means any method available to them can also be used on this class.
 - [crafttweaker.api.data.ICollectionData](/vanilla/api/data/ICollectionData)
 
-## Konstruktorzy
+## Constructors
 ```zenscript
-nowy crafttweaker.api.data.ByteArrayData(wewnętrzny jako bajt[]);
+new crafttweaker.api.data.ByteArrayData(internal as byte[]);
 ```
-| Parametr   | Typ    | Opis             |
-| ---------- | ------ | ---------------- |
-| wewnętrzna | bajt[] | Nie podano opisu |
+| Parameter | Type   | Description             |
+| --------- | ------ | ----------------------- |
+| internal  | byte[] | No description provided |
 
 
 
-## Metody
-### dodaj
+## Methods
+### add
 
 ```zenscript
-[4, 1, 2].add(wartość jako crafttweaker.api.data.IData);
-[4, 1, 2].add("dziś");
+[4, 1, 2].add(value as crafttweaker.api.data.IData);
+[4, 1, 2].add("today");
 ```
 
-| Parametr | Typ                                                    | Opis                        |
-| -------- | ------------------------------------------------------ | --------------------------- |
-| wartość  | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | Wartość do dodania do listy |
+| Parameter | Type                                                   | Description                  |
+| --------- | ------------------------------------------------------ | ---------------------------- |
+| value     | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | The value to add to the list |
 
 
 
 ```zenscript
 [4, 1, 2].add(index as int, value as crafttweaker.api.data.IData);
-[4, 1, 2].add(1, "piękny");
+[4, 1, 2].add(1, "beautiful");
 ```
 
-| Parametr | Typ                                                    | Opis                                                                          |
-| -------- | ------------------------------------------------------ | ----------------------------------------------------------------------------- |
-| indeks   | odcień                                                 | Indeks do dodania. Kolejne pozycje zostaną przeniesione o jeden indeks wyższy |
-| wartość  | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | Wartość do dodania do listy                                                   |
+| Parameter | Type                                                   | Description                                                          |
+| --------- | ------------------------------------------------------ | -------------------------------------------------------------------- |
+| index     | int                                                    | The index to add to. Subsequent items will be moved one index higher |
+| value     | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | The value to add to the list                                         |
 
 
-### wyczyść
+### clear
 
-Usuwa każdy element z listy
+Removes every element in the list
 
 ```zenscript
 [4, 1, 2].clear();
 ```
 
-### pobierz
+### get
 
-Pobiera [crafttweaker.api.data.IData](/vanilla/api/data/IData) przechowywany w danym indeksie.
+Retrieves the [crafttweaker.api.data.IData](/vanilla/api/data/IData) stored at the given index.
 
-Zwraca [crafttweaker.api.data.IData](/vanilla/api/data/IData)
+Returns [crafttweaker.api.data.IData](/vanilla/api/data/IData)
 
 ```zenscript
 [4, 1, 2].get(index as int);
 [4, 1, 2].get(0);
 ```
 
-| Parametr | Typ    | Opis                 |
-| -------- | ------ | -------------------- |
-| indeks   | odcień | Indeks (oparty na 0) |
+| Parameter | Type | Description         |
+| --------- | ---- | ------------------- |
+| index     | int  | The index (0-based) |
 
 
-### usuń
+### remove
 
-Usuwa [crafttweaker.api.data.IData](/vanilla/api/data/IData) przechowywany w danym indeksie.
+Removes the [crafttweaker.api.data.IData](/vanilla/api/data/IData) stored at the given index.
 
-Zwraca [crafttweaker.api.data.IData](/vanilla/api/data/IData)
+Returns [crafttweaker.api.data.IData](/vanilla/api/data/IData)
 
 ```zenscript
-[4, 1, 2].remove(indeks jak int);
+[4, 1, 2].remove(index as int);
 [4, 1, 2].remove(0);
 ```
 
-| Parametr | Typ    | Opis                 |
-| -------- | ------ | -------------------- |
-| indeks   | odcień | Indeks (oparty na 0) |
+| Parameter | Type | Description         |
+| --------- | ---- | ------------------- |
+| index     | int  | The index (0-based) |
 
 
-### ustaw
+### set
 
-Ustawia element w podanym indeksie na podaną wartość
+Sets the item at the provided index to the given value
 
-Zwraca [crafttweaker.api.data.IData](/vanilla/api/data/IData)
+Returns [crafttweaker.api.data.IData](/vanilla/api/data/IData)
 
 ```zenscript
 [4, 1, 2].set(index as int, value as crafttweaker.api.data.IData);
 [4, 1, 2].set(0, "Bye");
 ```
 
-| Parametr | Typ                                                    | Opis                                 |
-| -------- | ------------------------------------------------------ | ------------------------------------ |
-| indeks   | odcień                                                 | Indeks do ustawiania (w oparciu o 0) |
-| wartość  | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | Nowa wartość                         |
+| Parameter | Type                                                   | Description                |
+| --------- | ------------------------------------------------------ | -------------------------- |
+| index     | int                                                    | The index to set (0-based) |
+| value     | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | The new Value              |
 
 
 
-## Właściwości
+## Properties
 
-| Nazwisko | Typ    | Posiada Getter | Ma ustawienie |
-| -------- | ------ | -------------- | ------------- |
-| rozmiar  | odcień | prawda         | fałszywy      |
+| Name | Type | Has Getter | Has Setter |
+| ---- | ---- | ---------- | ---------- |
+| size | int  | true       | false      |
 

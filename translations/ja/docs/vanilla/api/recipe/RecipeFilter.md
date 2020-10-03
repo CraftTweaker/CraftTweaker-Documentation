@@ -8,24 +8,24 @@ crafttweakerのmod-idを持つmodによって追加されているクラスで�
 crafttweaker.api.recipe.RecipeFilter
 ```
 
-## 機能インターフェイス
+## Functional Interface
 
-このクラスは関数型インターフェイスです。 つまり、ラムダ表記を使用してインスタンスを作成することができます。 ラムダ表記は次のようになります。
+This class is a functional interface. This means that you can use the lambda notation to create an instance of it. The lambda notation looks like:
 ```zenscript
 (name) => false
 ```
 ## メソッド
-### テスト
+### test
 
-戻り値の型: boolean
+Return type: boolean
 
 ```zenscript
 myRecipeFilter.test(name as String);
 ```
 
-| パラメータ | タイプ  | 説明           |
-| ----- | ---- | ------------ |
-| name  | 文字列型 | 説明が提供されていません |
+| Parameter | Type | Description             |
+| --------- | ---- | ----------------------- |
+| name      | 文字列型 | No description provided |
 
 
 

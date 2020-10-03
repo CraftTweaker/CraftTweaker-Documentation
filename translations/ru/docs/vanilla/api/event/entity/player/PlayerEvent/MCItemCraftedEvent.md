@@ -1,4 +1,4 @@
-# Акция MCItemCraftedEvent
+# MCItemCraftedEvent
 
 Этот класс был добавлен модом с mod-id `crafttweaker`. Так что если вы хотите использовать эту функцию, вам нужно установить этот мод.
 
@@ -8,9 +8,9 @@
 crafttweaker.api.event.entity.player.PlayerEvent.MCItemCraftedEvent
 ```
 
-## Конструкторы
+## Constructors
 ```zenscript
-new crafttweaker.api.event.entity.player.PlayerEvent.MCItemCraftedEvent(обработчик функции.Consumer<crafttweaker.api.event.entity.player.PlayerEvent.MCItemCraftedEvent>);
+new crafttweaker.api.event.entity.player.PlayerEvent.MCItemCraftedEvent(handler as function.Consumer<crafttweaker.api.event.entity.player.PlayerEvent.MCItemCraftedEvent>);
 ```
 | Параметр | Тип                                                                                                                                                       | Описание             |
 | -------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------- |
@@ -21,7 +21,7 @@ new crafttweaker.api.event.entity.player.PlayerEvent.MCItemCraftedEvent(обра
 ## Методы
 ### getCrafting
 
-Возвращает [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
+Returns [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
 
 ```zenscript
 myMCItemCraftedEvent.getCrafting();
@@ -29,7 +29,7 @@ myMCItemCraftedEvent.getCrafting();
 
 ### getEntityPlayer
 
-Возвращает [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
+Returns [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
 
 ```zenscript
 myMCItemCraftedEvent.getEntityPlayer();
@@ -37,17 +37,17 @@ myMCItemCraftedEvent.getEntityPlayer();
 
 ### getPlayer
 
-Возвращение: `Игрок`
+Returns: `Player`
 
-Возвращает [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
+Returns [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
 
 ```zenscript
 myMCItemCraftedEvent.getPlayer();
 ```
 
-### имеет Результат
+### hasResult
 
-Определяет, ожидает ли это событие значимое значение результата. Примечание: События с аннотацией HasResult будут автоматически добавлены для возврата true.
+Determines if this event expects a significant result value. Note: Events with the HasResult annotation will have this method automatically added to return true.
 
 Возвращает boolean
 
@@ -55,11 +55,11 @@ myMCItemCraftedEvent.getPlayer();
 myMCItemCraftedEvent.hasResult();
 ```
 
-### неотменяемый
+### isCancelable
 
-Определите, если эта функция вообще недоступна. Возвращается: `Если доступ к установленной отмене должен быть разрешен
- Примечание:
- События с отменяемой аннотацией будут иметь этот метод автоматически добавлены для возврата истины.`
+Determine if this function is cancelable at all. Returns: `If access to setCanceled should be allowed
+ Note:
+ Events with the Cancelable annotation will have this method automatically added to return true.`
 
 Возвращает boolean
 
@@ -67,25 +67,25 @@ myMCItemCraftedEvent.hasResult();
 myMCItemCraftedEvent.isCancelable();
 ```
 
-### отменено
+### isCanceled
 
-Определяет, отменено ли это событие и должно прекратить выполнение. Возвращение: `Текущее состояние отменено`
+Determine if this event is canceled and should stop executing. Returns: `The current canceled state`
 
 Возвращает boolean
 
 ```zenscript
-myMCItemCraftedEvent.isCancel();
+myMCItemCraftedEvent.isCanceled();
 ```
 
-### установка отменена
+### setCanceled
 
 ```zenscript
-myMCItemCraftedEvent.setCancel(отменить как boolean);
+myMCItemCraftedEvent.setCanceled(cancel as boolean);
 ```
 
-| Параметр | Тип     | Описание             |
+| Параметр | Тип     | Description          |
 | -------- | ------- | -------------------- |
-| отменить | boolean | Описание отсутствует |
+| cancel   | boolean | Описание отсутствует |
 
 
 

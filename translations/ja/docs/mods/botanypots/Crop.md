@@ -1,177 +1,177 @@
-# クロップ
+# Crops
 
-クラスパス: `mods.botanypots.cript`
+Class path: `mods.botanypots.Crop`
 
-## 使用
+## Use
 
-使用するには、スクリプトの先頭に `import mods.botanypots.Crop;` を使用してクラスをインポートします。
+To use, import the class with `import mods.botanypots.Crop;` at the beginning of your script.
 
-## トリミングを作成
+## Create A Crop
 
 `Crop.create(id, seed, display, tickRate, multiplier, categories);`
 
-- `id` &lt;string> 作物のID。 これは、有効な `namespace:path` 形式でなければならない名前空間IDです。
-- `seed` <[IIngredient](/vanilla/api/items/IIngredient)> 作物を植えるために使用されるアイテム。
-- `display` <[MCBlockState](/vanilla/api/blocks/MCBlockState)> トリミング時に表示するブロック。
-- `tickRate` &lt;int> 作物が成長するまでにかかる時間の要因の1つ。
-- `倍率` &lt;float> 作物が成長するまでにかかる時間のもう一つの要因。
-- `categories` &lt;string[]> この作物は栽培できる土壌カテゴリーの配列。
+- `id` &lt;string> The id of the crop. This is a namespaced id an must be in the valid `namespace:path` format.
+- `seed` <[IIngredient](/vanilla/api/items/IIngredient)> The item used to plant the crop.
+- `display` <[MCBlockState](/vanilla/api/blocks/MCBlockState)> The block to display when rendering the crop.
+- `tickRate` &lt;int> One of the factors for how long a crop takes to grow.
+- `multiplier` &lt;float> Another factor for how long the crop takes to grow.
+- `categories` &lt;string[]> An array of soil categories this crop can be grown in.
 
-これは、新しい作物を作成するために使用できます。 ドロップは別途追加する必要があることに留意してください。
+This can be used to create a new crop. Keep in mind that drops need to be added separately.
 
 ```zenscript
 Crop.create("examplepack:gold", <item:minecraft:gold_nugget>, <blockstate:minecraft:gold_block>, 3000, 2, ["stone"]);
 ```
 
-## 切り抜きを削除
+## Remove A Crop
 
 `Crop.remove(id);`
 
-- `id` &lt;string> 削除するクロップのID。 これは、有効な `namespace:path` 形式でなければならない名前空間IDです。
+- `id` &lt;string> The id of the crop to remove. This is a namespaced id an must be in the valid `namespace:path` format.
 
-ID に基づいて作物を削除します。
+Removes a crop based on it's id.
 
 ```zenscript
 Crop.remove("botanypots:crop/wheat");
 ```
 
-## シードアイテムを設定
+## Set Seed Item
 
 `Crop.setSeed(id, seed);`
 
-- `id` &lt;string> 作物のID。 これは、有効な `namespace:path` 形式でなければならない名前空間IDです。
-- `seed` <[IIngredient](/vanilla/api/items/IIngredient)> 作物を植えるために使用されるアイテム。
+- `id` &lt;string> The id of the crop. This is a namespaced id an must be in the valid `namespace:path` format.
+- `seed` <[IIngredient](/vanilla/api/items/IIngredient)> The item used to plant the crop.
 
-作物の植え付けに使用するアイテムを設定します。
+Sets the item used to plant the crop.
 
 ```zenscript
 Crop.setSeed("botanypots:crop/wheat", <item:minecraft:diamond>);
 ```
 
-## ディスプレイブロックを設定
+## Set Display Block
 
 `Crop.setDisplay(id, state);`
 
-- `id` &lt;string> 作物のID。 これは、有効な `namespace:path` 形式でなければならない名前空間IDです。
-- `display` <[MCBlockState](/vanilla/api/blocks/MCBlockState)> トリミング時に表示するブロック。
+- `id` &lt;string> The id of the crop. This is a namespaced id an must be in the valid `namespace:path` format.
+- `display` <[MCBlockState](/vanilla/api/blocks/MCBlockState)> The block to display when rendering the crop.
 
-トリミング用にレンダリングされたブロックを設定します。
+Sets the block rendered for the crop.
 
 ```zenscript
 Crop.setDisplay("botanypots:crop/wheat", <blockstate:minecraft:snow_block>);
 ```
 
-## ティックレートの設定
+## Set Tick Rate
 
 `Crop.setTickRate(id, tickRate);`
 
-- `id` &lt;string> 作物のID。 これは、有効な `namespace:path` 形式でなければならない名前空間IDです。
-- `tickRate` &lt;int> 更新されたティックレート。 作物が成長するのにかかる時間の要因の一つ。
+- `id` &lt;string> The id of the crop. This is a namespaced id an must be in the valid `namespace:path` format.
+- `tickRate` &lt;int> The updated tick rate. One of the factors for how long a crop takes to grow.
 
-トリミング係数を設定します。
+Sets the crop tick factor.
 
 ```zenscript
 Crop.setTickRate("botanypots:crop/wheat", 5000);
 ```
 
-## 成長倍率を設定
+## Set Growth Multiplier
 
 `Crop.setGrowthModifier(id, multiplier);`
 
-- `id` &lt;string> 作物のID。 これは、有効な `namespace:path` 形式でなければならない名前空間IDです。
-- `multilier` &lt;float> 更新された乗数. 作物が成長するのにかかる時間のもう一つの要因。
+- `id` &lt;string> The id of the crop. This is a namespaced id an must be in the valid `namespace:path` format.
+- `multiplier` &lt;float> The updated multiplier. Another factor for how long the crop takes to grow.
 
-作物の成長乗数/修飾子を設定します。
+Sets the growth multiplier/modifier for the crop.
 
 ```zenscript
 Crop.setGrowthMofieir("botanypots:crop/wheat", 1.8);
 ```
 
-## カテゴリのクロップを変更する
+## Changing Crop Categories
 
-トリミングに関連付けられたカテゴリを変更します。 カテゴリは、有効な土壌と作物を一致させるために使用されます。
+Changes the categories associated with the crop. Categories are used to match the valid soils to the crop.
 
-### カテゴリをトリミングに追加
+### Add a Category to a Crop
 
 `Crop.addCategory(id, categoriesToAdd);`
 
-- `id` &lt;string> 作物のID。 これは、有効な `namespace:path` 形式でなければならない名前空間IDです。
-- `categoriesToAdd` &lt;string[]> トリミングに関連付けるカテゴリの配列。
+- `id` &lt;string> The id of the crop. This is a namespaced id an must be in the valid `namespace:path` format.
+- `categoriesToAdd` &lt;string[]> An array of categories to associate with the crop.
 
 ```zenscript
 Crop.addCategory("botanypots:crop/wheat", ["stone", "snow"]);
 ```
 
-### カテゴリを切り抜きから削除
+### Remove a Category From a Crop
 
 `Crop.removeCategory(id, categoriesToRemove);`
 
-- `id` &lt;string> 作物のID。 これは、有効な `namespace:path` 形式でなければならない名前空間IDです。
-- `categoriesToRemove` &lt;string[]> 切り口と切り離すカテゴリーの配列。
+- `id` &lt;string> The id of the crop. This is a namespaced id an must be in the valid `namespace:path` format.
+- `categoriesToRemove` &lt;string[]> An array of categories to dissociate with the crop.
 
 ```zenscript
 Crop.removeCategory("botanypots:crop/wheat", ["dirt"]);
 ```
 
-### すべてのカテゴリをトリミングからクリア
+### Clear All Categories From a Crop
 
 `Crop.clearCategories(id);`
 
-- `id` &lt;string> 作物のID。 これは、有効な `namespace:path` 形式でなければならない名前空間IDです。
+- `id` &lt;string> The id of the crop. This is a namespaced id an must be in the valid `namespace:path` format.
 
 ```zenscript
 Crop.clearCategories("botanypots:crop/wheat");
 ```
 
-## クロップドロップ
+## Crop Drops
 
-### ドロップを追加中
+### Adding Drops
 
 `Crop.addDrop(id, drop, chance, min, max);`
 
-- `id` &lt;string> ドロップ先のクロップのID。 これは、有効な `namespace:path` 形式でなければならない名前空間IDです。
-- `ドロップ` <[IItemStack](/vanilla/api/items/IItemStack)> ドロップするアイテム。
-- `chance` &lt;float> 確率が低下します。
-- `min` &lt;int> 与えるアイテムの最小量。
-- `max` &lt;int> 与えるアイテムの最大数。
+- `id` &lt;string> The id of the crop to add a drop to. This is a namespaced id an must be in the valid `namespace:path` format.
+- `drop` <[IItemStack](/vanilla/api/items/IItemStack)> The item to drop.
+- `chance` &lt;float> The chance it drops.
+- `min` &lt;int> The min amount of that item to give.
+- `max` &lt;int> The max amount of that item to give.
 
-これにより、作物に新しい潜在的なドロップが追加されます。
+This adds a new potential drop to the crop.
 
 ```zenscript
 Crop.addDrop("botanypots:crop/wheat", <item:minecraft:diamond>, 0.05, 1, 1);
 ```
 
-### ドロップを削除
+### Removing Drops
 
 `Crop.removeDrop(id, toRemove);`
 
-- `id` &lt;string> ドロップから削除するクロップのID。 これは、有効な `namespace:path` 形式でなければならない名前空間IDです。
-- `toRemove` <[IIngredient](/vanilla/api/items/IIngredient)> 除去に適合する材料
+- `id` &lt;string> The id of the crop to remove a drop from. This is a namespaced id an must be in the valid `namespace:path` format.
+- `toRemove` <[IIngredient](/vanilla/api/items/IIngredient)> The ingredient to match against for removal
 
-一致するアイテムを持つドロップを削除します。
+Removes any drops that have a matching item.
 
 ```zenscript
 Crop.removeDrop("botanypots:crop/wheat", <item:minecraft:wheat_seeds>);
 ```
 
-## すべてのIDを取得
+## Getting All Ids
 
 `Crop.getAllIds();`
 
-- 戻り値: &lt;string[]> 実行時の既知の作物IDの配列。
+- Returns: &lt;string[]> An array of all known crop ids at the time this is ran.
 
-これにより、その時点で既知の作物IDの配列が得られます。
+This will give you an array of all the known crop ids at the time.
 
 ```zenscript
-// Log all id to the crafttweaker.log file
+// Log all ids to the crafttweaker.log file
 for cropId in Crop.getAllIds() {
     println(cropId);
 }
 ```
 
-## すべてのクロップを削除しています
+## Removing All Crops
 
-これは現在登録されているすべての作物を完全に削除します。 これは、スクリプトを介してゼロからすべてのデータを再作成したい場合に便利です。
+This will completely remove all the crops currently registered. This is useful for if you want to recreate all the data from scratch through scripts.
 
 ```zenscript
 Crop.removeAll();

@@ -1,124 +1,124 @@
-# ListDatos
+# ListData
 
 
 
-Esta clase fue añadida por un mod con la ID  `crafttweaker`. Necesitas tener este mod instalado si quieres usar esta caracteristica.
+This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
 
-## Importar la clase
-Puede ser requerido que importes el paquete si encuentras algun problema (como crear un Array).
+## Importing the class
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
 ```zenscript
-data.ListData de crafttweaker.api.
+crafttweaker.api.data.ListData
 ```
 
-## Interfaces implementadas
-ListData implementa las siguientes interfaces. Esto significa que cualquier método disponible también puede ser usado en esta clase.
-- [data.ICollectionData](/vanilla/api/data/ICollectionData)
+## Implemented Interfaces
+ListData implements the following interfaces. That means any method available to them can also be used on this class.
+- [crafttweaker.api.data.ICollectionData](/vanilla/api/data/ICollectionData)
 
-## Constructores
+## Constructors
 ```zenscript
 new crafttweaker.api.data.ListData();
 ```
 ```zenscript
 new crafttweaker.api.data.ListData(list as List<crafttweaker.api.data.IData>);
 ```
-| Parámetro | Tipo                                                           | Descripción                   | Opcional | Valor por defecto |
-| --------- | -------------------------------------------------------------- | ----------------------------- | -------- | ----------------- |
-| lista     | Lista <[crafttweaker.api.data.IData](/vanilla/api/data/IData)> | No se proporcionó descripción | verdad   | nulo              |
+| Parameter | Type                                                         | Description             | IsOptional | Default Value |
+| --------- | ------------------------------------------------------------ | ----------------------- | ---------- | ------------- |
+| list      | List<[crafttweaker.api.data.IData](/vanilla/api/data/IData)> | No description provided | true       | null          |
 
 
 
-## Métodos
-### añadir
-
-```zenscript
-["Hola", "Mundo", "!"].add(value as crafttweaker.api.data.IData);
-["Hola", "Mundo", "!"].add("hoy");
-```
-
-| Parámetro | Tipo                                  | Descripción                  |
-| --------- | ------------------------------------- | ---------------------------- |
-| valor     | [data.IData](/vanilla/api/data/IData) | El valor a añadir a la lista |
-
-
+## Methods
+### add
 
 ```zenscript
-["Hola", "Mundo", "!"].add(index as int, value as crafttweaker.api.data.IData);
-["Hola", "Mundo", "!"].add(1, "hermoso");
+["Hello", "World", "!"].add(value as crafttweaker.api.data.IData);
+["Hello", "World", "!"].add("today");
 ```
 
-| Parámetro | Tipo                                  | Descripción                                                                      |
-| --------- | ------------------------------------- | -------------------------------------------------------------------------------- |
-| índice    | int                                   | El índice al que añadir. Los elementos posteriores se moverán un índice más alto |
-| valor     | [data.IData](/vanilla/api/data/IData) | El valor a añadir a la lista                                                     |
+| Parameter | Type                                                   | Description                  |
+| --------- | ------------------------------------------------------ | ---------------------------- |
+| value     | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | The value to add to the list |
 
 
-### limpiar
-
-Elimina todos los elementos de la lista
 
 ```zenscript
-["Hola", "Mundo", "!"].clear();
+["Hello", "World", "!"].add(index as int, value as crafttweaker.api.data.IData);
+["Hello", "World", "!"].add(1, "beautiful");
 ```
 
-### obtener
+| Parameter | Type                                                   | Description                                                          |
+| --------- | ------------------------------------------------------ | -------------------------------------------------------------------- |
+| index     | int                                                    | The index to add to. Subsequent items will be moved one index higher |
+| value     | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | The value to add to the list                                         |
 
-Recupera el [crafttweaker.api.data.IData](/vanilla/api/data/IData) almacenado en el índice dado.
 
-Devuelve [crafttweaker.api.data.IData](/vanilla/api/data/IData)
+### clear
+
+Removes every element in the list
 
 ```zenscript
-["Hola", "Mundo", "!"].get(index as int);
-["Hola", "Mundo", "!"].get(0);
+["Hello", "World", "!"].clear();
 ```
 
-| Parámetro | Tipo | Descripción          |
-| --------- | ---- | -------------------- |
-| índice    | int  | El índice (0-basado) |
+### get
 
+Retrieves the [crafttweaker.api.data.IData](/vanilla/api/data/IData) stored at the given index.
 
-### eliminar
-
-Elimina el [crafttweaker.api.data.IData](/vanilla/api/data/IData) almacenado en el índice dado.
-
-Devuelve [crafttweaker.api.data.IData](/vanilla/api/data/IData)
+Returns [crafttweaker.api.data.IData](/vanilla/api/data/IData)
 
 ```zenscript
-["Hola", "Mundo", "!"].remove(index as int);
-["Hola", "Mundo", "!"].remove(0);
+["Hello", "World", "!"].get(index as int);
+["Hello", "World", "!"].get(0);
 ```
 
-| Parámetro | Tipo | Descripción          |
-| --------- | ---- | -------------------- |
-| índice    | int  | El índice (0-basado) |
+| Parameter | Type | Description         |
+| --------- | ---- | ------------------- |
+| index     | int  | The index (0-based) |
 
 
-### poner
+### remove
 
-Establece el elemento en el índice proporcionado al valor dado
+Removes the [crafttweaker.api.data.IData](/vanilla/api/data/IData) stored at the given index.
 
-Devuelve [crafttweaker.api.data.IData](/vanilla/api/data/IData)
+Returns [crafttweaker.api.data.IData](/vanilla/api/data/IData)
 
 ```zenscript
-["Hola", "Mundo", "!"].set(index as int, value as crafttweaker.api.data.IData);
-["Hola", "Mundo", "!"].set(0, "Sí");
+["Hello", "World", "!"].remove(index as int);
+["Hello", "World", "!"].remove(0);
 ```
 
-| Parámetro | Tipo                                  | Descripción                       |
-| --------- | ------------------------------------- | --------------------------------- |
-| índice    | int                                   | El índice a establecer (0-basado) |
-| valor     | [data.IData](/vanilla/api/data/IData) | El nuevo valor                    |
+| Parameter | Type | Description         |
+| --------- | ---- | ------------------- |
+| index     | int  | The index (0-based) |
+
+
+### set
+
+Sets the item at the provided index to the given value
+
+Returns [crafttweaker.api.data.IData](/vanilla/api/data/IData)
+
+```zenscript
+["Hello", "World", "!"].set(index as int, value as crafttweaker.api.data.IData);
+["Hello", "World", "!"].set(0, "Bye");
+```
+
+| Parameter | Type                                                   | Description                |
+| --------- | ------------------------------------------------------ | -------------------------- |
+| index     | int                                                    | The index to set (0-based) |
+| value     | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | The new Value              |
 
 
 
-## Propiedades
+## Properties
 
-| Nombre | Tipo | Tiene Obtén | Tiene Setter |
-| ------ | ---- | ----------- | ------------ |
-| tamaño | int  | verdad      | falso        |
+| Name | Type | Has Getter | Has Setter |
+| ---- | ---- | ---------- | ---------- |
+| size | int  | true       | false      |
 
 ## Casters
 
-| Tipo de resultado                                              | Es implícito |
-| -------------------------------------------------------------- | ------------ |
-| Lista <[crafttweaker.api.data.IData](/vanilla/api/data/IData)> | verdad       |
+| Result type                                                  | Is Implicit |
+| ------------------------------------------------------------ | ----------- |
+| List<[crafttweaker.api.data.IData](/vanilla/api/data/IData)> | true        |
 

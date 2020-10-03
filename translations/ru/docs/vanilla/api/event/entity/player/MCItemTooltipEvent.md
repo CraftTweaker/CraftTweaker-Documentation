@@ -8,9 +8,9 @@
 crafttweaker.api.event.entity.player.MCItemTooltipEvent
 ```
 
-## Конструкторы
+## Constructors
 ```zenscript
-new crafttweaker.api.event.entity.player.MCItemTooltipEvent(обработчик функции.Consumer<crafttweaker.api.event.entity.player.MCItemTooltipEvent>);
+new crafttweaker.api.event.entity.player.MCItemTooltipEvent(handler as function.Consumer<crafttweaker.api.event.entity.player.MCItemTooltipEvent>);
 ```
 | Параметр | Тип                                                                                                                               | Описание             |
 | -------- | --------------------------------------------------------------------------------------------------------------------------------- | -------------------- |
@@ -21,9 +21,9 @@ new crafttweaker.api.event.entity.player.MCItemTooltipEvent(обработчик
 ## Методы
 ### getEntityPlayer
 
-Это событие запускается нулевым игроком во время заполнения деревьев для подсказок.
+This event is fired with a null player during startup when populating search trees for tooltips.
 
-Возвращает [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
+Returns [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
 
 ```zenscript
 myMCItemTooltipEvent.getEntityPlayer();
@@ -31,9 +31,9 @@ myMCItemTooltipEvent.getEntityPlayer();
 
 ### getItemStack
 
-ItemStack с подсказкой.
+The ItemStack with the tooltip.
 
-Возвращает [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
+Returns [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
 
 ```zenscript
 myMCItemTooltipEvent.getItemStack();
@@ -41,17 +41,17 @@ myMCItemTooltipEvent.getItemStack();
 
 ### getPlayer
 
-Возвращение: `Игрок`
+Returns: `Player`
 
-Возвращает [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
+Returns [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
 
 ```zenscript
 myMCItemTooltipEvent.getPlayer();
 ```
 
-### имеет Результат
+### hasResult
 
-Определяет, ожидает ли это событие значимое значение результата. Примечание: События с аннотацией HasResult будут автоматически добавлены для возврата true.
+Determines if this event expects a significant result value. Note: Events with the HasResult annotation will have this method automatically added to return true.
 
 Возвращает boolean
 
@@ -59,11 +59,11 @@ myMCItemTooltipEvent.getPlayer();
 myMCItemTooltipEvent.hasResult();
 ```
 
-### неотменяемый
+### isCancelable
 
-Определите, если эта функция вообще недоступна. Возвращается: `Если доступ к установленной отмене должен быть разрешен
- Примечание:
- События с отменяемой аннотацией будут иметь этот метод автоматически добавлены для возврата истины.`
+Determine if this function is cancelable at all. Returns: `If access to setCanceled should be allowed
+ Note:
+ Events with the Cancelable annotation will have this method automatically added to return true.`
 
 Возвращает boolean
 
@@ -71,25 +71,25 @@ myMCItemTooltipEvent.hasResult();
 myMCItemTooltipEvent.isCancelable();
 ```
 
-### отменено
+### isCanceled
 
-Определяет, отменено ли это событие и должно прекратить выполнение. Возвращение: `Текущее состояние отменено`
+Determine if this event is canceled and should stop executing. Returns: `The current canceled state`
 
 Возвращает boolean
 
 ```zenscript
-myMCItemTooltipEvent.isCancel();
+myMCItemTooltipEvent.isCanceled();
 ```
 
-### установка отменена
+### setCanceled
 
 ```zenscript
-myMCItemTooltipEvent.setCancel(отменить как boolean);
+myMCItemTooltipEvent.setCanceled(cancel as boolean);
 ```
 
-| Параметр | Тип     | Описание             |
+| Параметр | Тип     | Description          |
 | -------- | ------- | -------------------- |
-| отменить | boolean | Описание отсутствует |
+| cancel   | boolean | Описание отсутствует |
 
 
 

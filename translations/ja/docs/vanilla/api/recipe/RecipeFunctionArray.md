@@ -8,25 +8,25 @@ crafttweakerのmod-idを持つmodによって追加されているクラスで�
 crafttweaker.api.recipe.RecipeFunctionArray
 ```
 
-## 機能インターフェイス
+## Functional Interface
 
-このクラスは関数型インターフェイスです。 つまり、ラムダ表記を使用してインスタンスを作成することができます。 ラムダ表記は次のようになります。
+This class is a functional interface. This means that you can use the lambda notation to create an instance of it. The lambda notation looks like:
 ```zenscript
-(normalOut, inputs) => <item:minecraft:dirt>
+(usualOut, inputs) => <item:minecraft:dirt>
 ```
 ## メソッド
-### プロセス
+### process
 
-戻り値の型: [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
+Return type: [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
 
 ```zenscript
-myRecipeFunctionArray.process(normalOut as crafttweaker.api.item.IItemStack, inputs as crafttweaker.api.item.IItemStack[] );
+myRecipeFunctionArray.process(usualOut as crafttweaker.api.item.IItemStack, inputs as crafttweaker.api.item.IItemStack[]);
 ```
 
-| パラメータ  | タイプ                                                                 | 説明           |
-| ------ | ------------------------------------------------------------------- | ------------ |
-| 通常終了   | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)   | 説明が提供されていません |
-| inputs | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)[] | 説明が提供されていません |
+| Parameter | Type                                                                | Description             |
+| --------- | ------------------------------------------------------------------- | ----------------------- |
+| usualOut  | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)   | No description provided |
+| inputs    | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)[] | No description provided |
 
 
 

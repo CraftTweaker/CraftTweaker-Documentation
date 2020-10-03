@@ -1,132 +1,132 @@
 # Soils
 
-クラスパス: `mods.botanypots.Soil`
+Class path: `mods.botanypots.Soil`
 
-## 使用
+## Use
 
-使用するには、スクリプトの先頭に `import mods.botanypots.Soil;` を使用してクラスをインポートします。
+To use, import the class with `import mods.botanypots.Soil;` at the beginning of your script.
 
-## 新しい土壌の作成
+## Creating New Soils
 
-`Soil.create(id, 食材, displayState, tickRate, categories);`
+`Soil.create(id, ingredient, displayState, tickRate, categories);`
 
-- `id` &lt;string> 新しい土壌のid。 これは、有効な `namespace:path` 形式でなければならない名前空間IDです。
-- `成分` <[IIngredient](/vanilla/api/items/IIngredient)> 土壌を鍋に入れるために使用するアイテム/ブロックを決定するために使用する成分。
-- `displayState` <[MCBlockState](/vanilla/api/blocks/MCBlockState)> 鉢の土壌に表示するブロック状態。
-- `tickRate` &lt;int> 土壌のティックレート。
-- `categories` &lt;string[]> 新しい土壌に関連するカテゴリの配列。
+- `id` &lt;string> The id of the new soil. This is a namespaced id an must be in the valid `namespace:path` format.
+- `ingredient` <[IIngredient](/vanilla/api/items/IIngredient)> The ingredient used to determine which items/blocks are used to put the soil in a pot.
+- `displayState` <[MCBlockState](/vanilla/api/blocks/MCBlockState)> The block state to display for the soil in the pot.
+- `tickRate` &lt;int> The tick rate for the soil.
+- `categories` &lt;string[]> An array of categories associated with the new soil.
 
-ボタニーポットでプレイヤーが使用できる新しい土壌エントリを作成します。
+Creates a new soil entry that players can use in the botany pot.
 
 ```zenscript
 Soil.create("examplepack:rock", <item:minecraft:stone>, <blockstate:minecraft:stone>, 100, ["rocky"]);
 ```
 
-## 土壌を削除する
+## Removing A Soil
 
 `Soil.remove(id);`
 
-- `id` &lt;string> 取り除く土壌のid。 これは、有効な `namespace:path` 形式でなければならない名前空間IDです。
+- `id` &lt;string> The id of the soil to remove. This is a namespaced id an must be in the valid `namespace:path` format.
 
-ゲームのデータから土壌を削除します。
+Removes a soil from the game's data.
 
 ```zenscript
 Soil.remove("botanypots:soil/podzol");
 ```
 
-## 土壌ティックレートの変更
+## Changing Soil Tick Rate
 
 `Soil.setTicks(id, tickRate);`
 
-- `id` &lt;string> 土壌のid。 これは、有効な `namespace:path` 形式でなければならない名前空間IDです。
-- `tickRate` &lt;int> 土壌の新しいティックレート。
+- `id` &lt;string> The id of the soil. This is a namespaced id an must be in the valid `namespace:path` format.
+- `tickRate` &lt;int> The new tick rate for the soil.
 
-土壌のティックレートを変更します。
+Changes the tick rate of a given soil.
 
 ```zenscript
 Soil.setTicks("botanypots:soil/grass", 1300);
 ```
 
-## 土壌成分を変える
+## Changing Soil Ingredient
 
-`Soil.setIngredient(id, 食材);`
+`Soil.setIngredient(id, ingredient);`
 
-- `id` &lt;string> 土壌のid。 これは、有効な `namespace:path` 形式でなければならない名前空間IDです。
-- `成分` <[IIngredient](/vanilla/api/items/IIngredient)> 土壌を鍋に入れるために使用するアイテム/ブロックを決定するために使用する成分。
+- `id` &lt;string> The id of the soil. This is a namespaced id an must be in the valid `namespace:path` format.
+- `ingredient` <[IIngredient](/vanilla/api/items/IIngredient)> The ingredient used to determine which items/blocks are used to put the soil in a pot.
 
-植物鉢に土壌を入れるために使用されるアイテムを変更します。
+Changes the items used to put the soil into the botany pot.
 
 ```zenscript
 Soil.setIngredient("botanypots:soil/soul_sand", <item:minecraft:sand>);
 ```
 
-## 土壌表示の変更
+## Changing Soil Display
 
 `Soil.setDisplayState(id, displayState);`
 
-- `id` &lt;string> 土壌のid。 これは、有効な `namespace:path` 形式でなければならない名前空間IDです。
-- `displayState` <[MCBlockState](/vanilla/api/blocks/MCBlockState)> 鉢の土壌に表示するブロック状態。
+- `id` &lt;string> The id of the soil. This is a namespaced id an must be in the valid `namespace:path` format.
+- `displayState` <[MCBlockState](/vanilla/api/blocks/MCBlockState)> The block state to display for the soil in the pot.
 
-土に表示されるブロックを変更します。
+Changes the block displayed for the soil.
 
 ```zenscript
 Soil.setDisplayState("botanypots:soil/dirt", <blockstate:minecraft:snow>);
 ```
 
-## 土壌カテゴリの変更
+## Changing Soil Categories
 
-土壌に関連するカテゴリを変更します。 これらは有効な土壌に作物をマッチさせるために使用されます。
+Changes the categories associated with the soil. These are used to match crops to valid soils.
 
-### 土壌にカテゴリを追加
+### Add a Category to a Soil
 
 `Soil.addCategory(id, categoriesToAdd);`
 
-- `id` &lt;string> 土壌のid。 これは、有効な `namespace:path` 形式でなければならない名前空間IDです。
-- `categoriesToAdd` &lt;string[]> 土壌に関連付けるカテゴリの配列。
+- `id` &lt;string> The id of the soil. This is a namespaced id an must be in the valid `namespace:path` format.
+- `categoriesToAdd` &lt;string[]> An array of categories to associate with the soil.
 
 ```zenscript
 Soil.addCategory("botanypots:soil/soul_sand", ["nether"]);
 ```
 
-### 土壌からカテゴリを削除
+### Remove a Category From a Soil
 
 `Soil.removeCategory(id, categoriesToRemove);`
 
-- `id` &lt;string> 土壌のid。 これは、有効な `namespace:path` 形式でなければならない名前空間IDです。
-- `categoriesToRemove` &lt;string[]> 土壌と解離するカテゴリーの配列。
+- `id` &lt;string> The id of the soil. This is a namespaced id an must be in the valid `namespace:path` format.
+- `categoriesToRemove` &lt;string[]> An array of categories to dissociate with the soil.
 
 ```zenscript
 Soil.removeCategory("botanypots:soil/soul_sand", ["soul_sand"]);
 ```
 
-### 土壌からすべてのカテゴリをクリア
+### Clear All Categories From a Soil
 
 `Soil.clearCategories(id);`
 
-- `id` &lt;string> 土壌のid。 これは、有効な `namespace:path` 形式でなければならない名前空間IDです。
+- `id` &lt;string> The id of the soil. This is a namespaced id an must be in the valid `namespace:path` format.
 
 ```zenscript
-Soil.clearCategories("botanypots:土壌/農地");
+Soil.clearCategories("botanypots:soil/farmland");
 ```
 
-## すべてのIDを取得
+## Getting All Ids
 
 `Soil.getAllIds();`
 
-- 戻り値: &lt;string[]> これは実行された時点で既知の土壌IDの配列。
+- Returns: &lt;string[]> An array of all known soil ids at the time this is ran.
 
-これにより、その時点で既知の土壌idの配列が得られます。
+This will give you an array of all the known soil ids at the time.
 
 ```zenscript
-// Log all id to the crafttweaker.log file
+// Log all ids to the crafttweaker.log file
 for soilId in Soil.getAllIds() {
     println(soilId);
 }
 ```
 
-## すべての土壌を削除
+## Removing All Soil
 
-これは現在登録されているすべての土壌を完全に削除します。 これは、スクリプトを介してゼロからすべてのデータを再作成したい場合に便利です。
+This will completely remove all the soils currently registered. This is useful for if you want to recreate all the data from scratch through scripts.
 
 ```zenscript
 Soil.removeAll();

@@ -1,21 +1,21 @@
-# Ceppo Albero
+# Tree Stump
 
-## Pacchetto
+## Package
 `import mods.stone_age.TreeStumpManager;`
 
-## Metodi
-- **Nome stringa** Nome ricetta
+## Methods
+- **String name** Recipe name
 - **[IItemStack](/Vanilla/Items/IItemStack/) output**
-- **[Strumento IIngrediente](/Vanilla/Variable_Types/IIngredient/)**
-- **[Ingresso IIngrediente](/Vanilla/Variable_Types/IIngredient/)**
+- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) tool**
+- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input**
 - **int chopTimes** Chop times
-- **Gruppo di stringhe** Gruppo di ricette
+- **String group** Recipe group
 
-## Addizione
+## Addition
 
 ```zenscript
-<recipetype:stone_age:tree_stump>.addRecipe(nome stringa, uscita IItemStack, strumento IIngrediente, input IIngrediente, int chopTimes, @OptionalString String group)
+<recipetype:stone_age:tree_stump>.addRecipe(String name, IItemStack output, IIngredient tool, IIngredient input, int chopTimes, @OptionalString String group)
 
-<recipetype:stone_age:tree_stump>. ddRecipe("oak_planks", <item:minecraft:oak_planks>, <item:minecraft:iron_axe>, <item:minecraft:oak_log>, 2);
+<recipetype:stone_age:tree_stump>.addRecipe("oak_planks", <item:minecraft:oak_planks>, <item:minecraft:iron_axe>, <item:minecraft:oak_log>, 2);
 TreeStumpManager.INSTANCE.addRecipe("oak_planks", <item:minecraft:oak_planks>, <item:minecraft:iron_axe>, <item:minecraft:oak_log>, 2);
 ```
