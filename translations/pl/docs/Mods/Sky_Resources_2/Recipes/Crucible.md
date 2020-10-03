@@ -1,19 +1,19 @@
-# Tygiel
+# Crucible
 
-Pakiet *tygiel* jest używany do dodawania lub usuwania przepisów do/z tygielu.
+The *crucible* package is used for adding or removing recipes to/from the Crucible.
 
-## Dzwonienie
+## Calling
 
-Możesz wywołać pakiet *tygiel* używając `mods.skyresources.tygiel`
+You can call the *crucible* package using `mods.skyresources.crucible`
 
-## Dodawanie przepisów
+## Recipe Addition
 
 ```zenscript
-//mods.skyresources.crucible.addRecipe(ILiquidStack output, IItemStack);
+//mods.skyresources.crucible.addRecipe(ILiquidStack output, IItemStack input);
 mods.skyresources.crucible.addRecipe(<liquid:lava> * 500, <minecraft:cobblestone>);
 ```
 
-## Usuwanie przepisów
+## Recipe Removal
 
 ```zenscript
 //mods.skyresources.crucible.removeRecipe(ILiquidStack output);

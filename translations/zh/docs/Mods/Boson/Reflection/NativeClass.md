@@ -1,41 +1,41 @@
-# `原生类`
+# `NativeClass`
 
-一个 `原生类` 识别了ZenScript 后端环境类的实例。 在 CraftTweaker, `NativeClass` 因此代表了一个 Java 类。
+A `NativeClass` identifies the instance of a class of the backend environment that is behind ZenScript. In the case of CraftTweaker, `NativeClass` therefore represents a Java class.
 
-## 类详细信息
+## Class details
 The class is situated in the `zenscriptx.reflect` package, making `zenscriptx.reflect.NativeClass` the fully qualified name for importing.
 
-## 创建一个新实例
-创建新的 `原生类` 实例的唯一可能的方法是通过两个静态方法之一。 要检查的对象是 要检查的对象。 下面的狙击枪显示了可以使用 的两种方法的特征：
+## Creating a new Instance
+The only possible way to create a new `NativeClass` instance is through one of the two static methods, which take either the name of the class or an object to inspect. The snippe that follows shows the signatures of the two methods that can be used:
 
 ```zenscript
-函数字节名称(名称为字符串)为NativeClass?;
-函数来自Zen(实例)为NativeClass？
+function byName(name as string) as NativeClass?;
+function fromZen(instance as any) as NativeClass?;
 ```
 
-这两种方法都允许返回 `null` (如 `所示？` 在类型末尾，因为 某些类可能不存在或不存在后端对应类。 事实上，某些特定的伴侣关系数组可能在 后端无法代表，因此需要正确使用某些管道。
+Both methods are allowed to return `null` (as shown by the `?` at the end of the type) because there is the possibility for some classes not to exist or not to have a backend counterpart. In fact, some particular associative arrays may be not representable in the backend and require some mangling to be used correctly.
 
-以下是使用两种工厂方法的一些例子：
+The following are some examples of usage of the two factory methods:
 
 ```zenscript
-NativeClass.byname ("craftminstrer.api.item.IItemStack"); # 返回给定名称
-NativeClass。 romZen(<blockstate:minecraft:pumpkin>); # 返回匹配ZenScript IBlockState类
-Native类的原生类。 yName("123"); # 返回 null ，因为没有具有该名称的本地类
+NativeClass.byName("crafttweaker.api.item.IItemStack"); # returns the NativeClass with the given name
+NativeClass.fromZen(<blockstate:minecraft:pumpkin>); # returns the NativeClass that matches the ZenScript IBlockState Class
+NativeClass.byName("123"); # returns null because no native class with that name can exist
 ```
 
 ## 参数
-`原生类` 提供只读访问特定的特定属性，如下表所示：
+A `NativeClass` provides read-only access to a certain set of properties, as outlined in the following table:
 
-| 属性名称         | 返回值类型 | 描述                                                                                                          |
-| ------------ | ----- | ----------------------------------------------------------------------------------------------------------- |
-| `simpleName` | `字符串` | 可用于参考类的"最短"名称(例如： `制作器的 <code>IItemStack` )。 pi.item.IItemStack</code>, `String` for `java.lang.String`) |
-| `限定名称`       | `字符串` | 在后端环境中唯一识别此类的全名(即 `craftbiner.api.item.IItemStack` or `java.lang.String`)                                   |
+| Property Name   | 返回值类型    | 描述                                                                                                                                                 |
+| --------------- | -------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `simpleName`    | `string` | "Shortest" name that can be used to refer to the class (i.e. `IItemStack` for `crafttweaker.api.item.IItemStack`, `String` for `java.lang.String`) |
+| `qualifiedName` | `string` | Full name that uniquely identifies this class in the backend environment (i.e. `crafttweaker.api.item.IItemStack` or `java.lang.String`)           |
 
 ## 方法
-`原生类` 也可以访问允许转换为 ZenScript 等效的单个方法 (参考 [`类`](/Mods/Boson/Reflection/Class/) 获取更多信息)。 方法签名如下：
+`NativeClass` also provides access to a single method that allows conversion to the ZenScript equivalent (refer to [`Class`](/Mods/Boson/Reflection/Class/) for more information). The signature of the method is as follows:
 
 ```zenscript
-函数 toClass() 为类？
+function toClass() as Class?;
 ```
 
-这个方法可能返回 `null` ，因为并非所有的本地类都可能在 ZenScript 中都有代表。 事实上，有 个后端的部分没有接触到ZenScript 用户，例如 `org.apache.commons。 ang3.BitField`因此 不能通过ZenScript `类` 对象来表示它。
+The method may return `null` since not all native classes may have a representation in ZenScript. In fact, there are some parts of the backend that are not exposed to ZenScript users, such as `org.apache.commons.lang3.BitField`, which therefore cannot be represented via a ZenScript `Class` object.

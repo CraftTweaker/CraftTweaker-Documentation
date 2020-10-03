@@ -1,39 +1,39 @@
-# 玩家死亡掉落
+# PlayerDeathDrops
 
-每当玩家的物品因为死亡而落入地面时，玩家死亡事件就会被射击。
+The PlayerDeathDrops Event is fired whenever a player's items fall to the ground due to the player's death.
 
-## 事件类
+## Event Class
 
 You will need to cast the event in the function header as this class:  
 `crafttweaker.event.PlayerDeathDropsEvent`  
 You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
 
-## 事件界面扩展
+## Event interface extensions
 
-PlayerDeathDrops Events 实现了以下接口，并且也能够调用他们的所有方法/getter/setter：
+PlayerDeathDrops Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
 
 - [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
 
 ## ZenGetters
 
-以下信息可以从事件中检索：
+The following information can be retrieved from the event:
 
-| ZenGetter | 返回值类型                                                     |
-| --------- | --------------------------------------------------------- |
-| `播放器`     | [IPlayer](/Vanilla/Players/IPlayer/)                      |
-| `项目`      | [`列表<IEntityItem>`](/Vanilla/Entities/IEntityItem/) |
-| `破坏源`     | [IDamageSource](/Vanilla/Damage/IDamageSource/)           |
+| ZenGetter      | 返回值类型                                                       |
+| -------------- | ----------------------------------------------------------- |
+| `player`       | [IPlayer](/Vanilla/Players/IPlayer/)                        |
+| `items`        | [`List<IEntityItem>`](/Vanilla/Entities/IEntityItem/) |
+| `damageSource` | [IDamageSource](/Vanilla/Damage/IDamageSource/)             |
 
-## 修改项目掉线
+## Modifying the item drops
 
-您可以添加到机器人列表或者完全用一个新的插件：
+You can either add to the droplist or completely substitute it with a new one:
 
 ```zenscript
-items = //reference to IEntityItem list.
+event.items = //reference to IEntityItem list.
 
-///event.addItem(StemStack 项目);
-event.additem(<minecraft:iron_ingot>);
+//event.addItem(IItemStack item);
+event.addItem(<minecraft:iron_ingot>);
 
-/event.additem(IEntityitem iten);
-event.additem(<minecraft:iron_ingot>.createEntityItityItem(event.player.world, event.player.position);
+//event.addItem(IEntityItem iten);
+event.addItem(<minecraft:iron_ingot>.createEntityItem(event.player.world, event.player.position));
 ```

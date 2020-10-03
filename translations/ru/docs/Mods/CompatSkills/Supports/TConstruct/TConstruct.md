@@ -1,18 +1,18 @@
-# Сооружение Оленицы
+# Tinker's Construct
 
-## Уведомление
+## Notice
 
-Начиная с CompatSkills 1.9.0, TConstruct Locks теперь передает "вверх" на уровень предметов. Таким образом, инструменты все еще недоступны, если друг предоставляет созданную версию.
+As of CompatSkills 1.9.0, TConstruct Locks now pass "up" to item-level. That way the tools are still inaccessible if a friend provides a crafted version.
 
-## Команды
+## Commands
 
-    // Дампы всех материалов
-    ~ /ct настойки
+    // Dumps all Materials
+    ~ /ct tinkermaterials
     
-    // Дампы всех модификаторов
+    // Dumps all Modifiers
     ~ /ct tinkermodifiers
     
 
-## Блокировки создания инструментов
+## Tool-Creation Locks
 
-Добавив обычный замок ItemStack в любой из типов инструментов Tinker (а не частей!). Вы можете заблокировать создание типа инструментов Tinker!
+By adding a normal ItemStack lock to any of the Tinker Tool-Types (not Part-Types!). You can lock the creation of a Tinker Tool-Type!

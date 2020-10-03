@@ -1,28 +1,28 @@
-# 食料アイテム
+# Food Items
 
-これにより、ゲームに食料品を追加できます。
+This allows you to add food items to the game!
 
-## 食品アイテム表示を作成
+## Create the Food Item Representation
 
-アイテムを追加する前に。 食品項目を作成する必要があります 表示を追加したい項目のプロパティを設定できます。  
-[VanillaFactory](/Mods/ContentTweaker/Vanilla/Creatable_Content/VanillaFactory/) がある場所:
+Before you can add the item, you need to create a food item Representation which will allow you to set the properties of the item you want to add.  
+This is where the [VanillaFactory](/Mods/ContentTweaker/Vanilla/Creatable_Content/VanillaFactory/) comes in:
 
 ```zenscript
-mods.contenttweaker.VanillaFactory.createItemFood(Scing unlocalizedName, int healAmount);
+mods.contenttweaker.VanillaFactory.createItemFood(String unlocalizedName, int healAmount);
 ```
 
-## 表示パッケージをインポート
+## Import the representation Package
 
-問題が発生した場合は、パッケージをインポートする必要があるかもしれませんので、申し訳ありませんし、インポートを追加してください。  
+It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
 `import mods.contenttweaker.ItemFood;`
 
-## アイテム表現の拡張
+## ItemRepresentation Expansion
 
-ItemFoodRepresentationクラスは [ItemRepresentation](/Mods/ContentTweaker/Vanilla/Creatable_Content/Item/) を展開します。 つまり、 [項目](/Mods/ContentTweaker/Vanilla/Creatable_Content/Item/) で利用可能なすべてのメソッドと ZenProperties が、食品アイテムでも利用可能です!
+The ItemFoodRepresentation class expands [ItemRepresentation](/Mods/ContentTweaker/Vanilla/Creatable_Content/Item/). That means all Methods and ZenProperties that are available for [Items](/Mods/ContentTweaker/Vanilla/Creatable_Content/Item/) are also available for food items!
 
 ## ZenProperties
 
-プロパティを取得/設定するには、respecting ZenGetters/SettersまたはZenMethodsを使用できます。
+To get/set the properties you can either use the respecting ZenGetters/Setters or the ZenMethods:
 
 ```zenscript
 //property name: healAmount
@@ -35,15 +35,15 @@ item.getHealAmount();
 item.setHealAmount(64);
 ```
 
-| 属性              | タイプ                                                                                             | 必須  | デフォルト値 | 説明/メモ                              |
-| --------------- | ----------------------------------------------------------------------------------------------- | --- | ------ | ---------------------------------- |
-| 治療量             | int                                                                                             | はい  |        | 食べると何点の食べ物が回復しますか。                 |
-| 常に食べられる         | bool                                                                                            | いいえ | false  | 利用者のフードバーがいっぱいになっても食べられるのでしょうか?    |
-| wolfFood        | bool                                                                                            | いいえ | false  | 食べ物を使ってウォブを飼いならすことはできますか？          |
-| 彩度              | float型                                                                                          | いいえ | 0.6    | 食品の飽和値                             |
-| onItemFoodEaten | [IItemFoodEaten](/Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemFoodEaten/) | いいえ | null   | Called when the food item is eaten |
+| Property        | Type                                                                                            | Required | Default Value | Description/Notes                                           |
+| --------------- | ----------------------------------------------------------------------------------------------- | -------- | ------------- | ----------------------------------------------------------- |
+| healAmount      | int                                                                                             | Yes      |               | How many food points are restored when eaten?               |
+| alwaysEdible    | bool                                                                                            | No       | false         | Can the food still be eaten if the user's food bar is full? |
+| wolfFood        | bool                                                                                            | No       | false         | Can the food be used to tame woves?                         |
+| saturation      | float                                                                                           | No       | 0.6           | The food's Saturation Value                                 |
+| onItemFoodEaten | [IItemFoodEaten](/Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemFoodEaten/) | No       | null          | Called when the food item is eaten                          |
 
-## アイテムの登録
+## Registering the item
 
 You need to call this method to register the item in the game!  
 Otherwise nothing will happen!  

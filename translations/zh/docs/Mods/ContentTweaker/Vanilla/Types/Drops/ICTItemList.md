@@ -1,20 +1,20 @@
 # ICTItemList
 
-ICTItemList 是 [IBlockDropHandler](/Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IBlockDropHandler/) 作为第一个参数。  
-这是将被给定的 [块丢弃的项目列表](/Mods/ContentTweaker/Vanilla/Creatable_Content/Block/)。  
-根据活跃的其他事件处理程序，它可能已经包含一些项目，或者它可能是空的。
+The ICTItemList is what an [IBlockDropHandler](/Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IBlockDropHandler/) uses as first parameter.  
+It is a list of items that will be dropped by the given [Block](/Mods/ContentTweaker/Vanilla/Creatable_Content/Block/).  
+Depending on other event handlers active it might already contain some items, or it might be empty.
 
 ## 导入类
 
-如果你发现自己需要导入这个类，这就是你这样做：
+If you ever find yourself in need of importing this class, this is how you do it:
 
 ```zenscript
 import mods.contenttweaker.ItemList;
 ```
 
-## 添加项目到列表
+## Adding items to the list
 
-您可以使用下面的函数添加 [IItemStack](/Vanilla/Items/IItemStack/) 或 [重量项目](/Vanilla/Items/WeightedItemStack/) 到列表中：
+You can add [IItemStacks](/Vanilla/Items/IItemStack/) or [WeightedItemStacks](/Vanilla/Items/WeightedItemStack/) to the list using the functions below:
 
 ```zenscript
 list.add(<minecraft:carrot>);
@@ -26,33 +26,33 @@ list.add(<minecraft:seeds> % 10);
 list + (<minecraft:seeds> % 10);
 ```
 
-## 从列表中删除项目
+## Removing items from the list
 
-您只能使用项目的索引删除项目，或者您可以清除整个列表。
+You can only remove items using the item's index, or you can clear the whole list.
 
 ```zenscript
-list.remove(1)；
+list.remove(1);
 
 list.clear();
 ```
 
-## 从列表中获取项目
+## Getting items from the list
 
-您可以通过其索引获取一个项目，或者您可以获取整个列表作为数组或列表：
+You can either get an item by its index or you can get the whole list as either an array or a list:
 
 ```zenscript
-导入craftweeker.item.IItemStack;
+import crafttweaker.item.IItemStack;
 
-val itemAt = list.get(0); /as IItemStack
+val itemAt = list.get(0); //as IItemStack
 
-val itemArray = list.getArray(); //as IItemStack[……]
+val itemArray = list.getArray(); //as IItemStack[]
 
 val itemList = list.getList(); //as [IItemStack]
 ```
 
-## 其他信息
+## Other information
 
-您也可以从列表中撤回此信息：
+You can also retreive this information from the list:
 
 ```zenscript
 list.getLength();

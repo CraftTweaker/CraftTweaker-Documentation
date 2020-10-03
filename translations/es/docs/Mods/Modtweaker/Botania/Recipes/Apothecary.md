@@ -1,33 +1,33 @@
-# Apóstol gaseoso
+# Petal Apothecary
 
-El paquete de portafolio se utiliza para añadir o quitar recetas para/de Botania Petal aprovecary.
+The Apothecary package is used for adding or removing recipes to/from the Botania Petal Apothecary.
 
-## Llamando
+## Calling
 
-Puedes llamar al paquete de portafolio usando `mods.botania.Scotthecary`
+You can call the Apothecary package using `mods.botania.Apothecary`
 
-## Añadir receta
+## Recipe addition
 
-Puedes añadir recetas usando el [ItemStack](/Vanilla/Items/IItemStack/) devuelto como parámetro de salida, o el nombre de la flor de botania como cadena. el nombre de la cuerda sólo funciona para las flores de botania.  
-Recuerda una cosa, sin embargo:  
-El portafolio es **hardcoded para aceptar solo mascotas**, así que mientras puedas añadir recetas con cualquier ingrediente, solo deberías usar objetos que puedas lanzar en el apoteador.
+You can either add recipes using the returned [IItemStack](/Vanilla/Items/IItemStack/) as output parameter, or the name of the botania flower as string. the string name only works for botania flowers.  
+Remember one thing though:  
+The Apothecary is **hardcoded to only accept petals**, so while you can add recipes with any ingredients, you should only use items that you can throw in the apothecary.
 
 ```zenscript
-//mods.botania.Withthecary.addRecipe(salida IItemStack, IIngredient[] entrada);
-mods.botania.s3.amazonaws.com/thecary.addRecipe(<minecraft:melon>, [<ore:petalLime>, <ore:petalLime>, <ore:petalLime>]);
+//mods.botania.Apothecary.addRecipe(IItemStack output, IIngredient[] input);
+mods.botania.Apothecary.addRecipe(<minecraft:melon>, [<ore:petalLime>, <ore:petalLime>, <ore:petalLime>]);
 
-//mods. otania.Withthecary.addRecipe(String output, IIngredient[] input);
-mods.botania.Withthecary.addRecipe("daybloom", [<ore:petalLime>, <ore:petalLime>, <ore:petalLime>, <ore:petalRed>]);
+//mods.botania.Apothecary.addRecipe(String output, IIngredient[] input);
+mods.botania.Apothecary.addRecipe("daybloom", [<ore:petalLime>, <ore:petalLime>, <ore:petalLime>, <ore:petalRed>]);
 ```
 
-## Eliminación de receta
+## Recipe removal
 
-Puede eliminar las recetas usando el [ItemStack](/Vanilla/Items/IItemStack/) devuelto como parámetro de salida, o el nombre de la flor de botania como cadena. el nombre de la cuerda sólo funciona para las flores de botania.
+You can either remove recipes using the returned [IItemStack](/Vanilla/Items/IItemStack/) as output parameter, or the name of the botania flower as string. the string name only works for botania flowers.
 
 ```zenscript
-//mods.botania.s3.amazonaws.com/thecary.removeRecipe(salida IItemStack);
-mods.botania.s3.amazonaws.com/thecary.removeRecipe(<minecraft:melon>);
+//mods.botania.Apothecary.removeRecipe(IItemStack output);
+mods.botania.Apothecary.removeRecipe(<minecraft:melon>);
 
-//mods.botania.s3.amazonaws.com/thecary.removeRecipe(String output);
-mods.botania.s3.amazonaws.com/thecary.removeRecipe("daybloom");
+//mods.botania.Apothecary.removeRecipe(String output);
+mods.botania.Apothecary.removeRecipe("daybloom");
 ```

@@ -1,24 +1,24 @@
-# 热电处理厂
+# Thermopneumatic Processing Plant
 
-热气体处理厂利用压力和热将一种液体和/或一种固体成分转化为另一种液体。 Kelvin应指明温度：273 K = 0°C (32°F)，373 K = 100°C (212°F)。
+The Thermopneumatic Processing Plant (TPP) uses pressure and heat to convert one fluid and/or one solid ingredient to another fluid. Temperatures should be specified in Kelvin: 273 K = 0°C (32°F), 373 K = 100°C (212°F).
 
-*技术上，273.16K = 0°C，但为了本模型的目的，它简化为整数偏移。*
+*Technically, 273.16 K = 0°C, but for the purposes of this mod it's simplified to an integer offset.*
 
 ## 导入包
 
-您可以使用 `mods.pneumaticcraft.thermopneumaticprocessingplace` 来调用 TPP 包。
+You can call the TPP package using `mods.pneumaticcraft.thermopneumaticprocessingplant`.
 
 ## 移除配方
 
-该方法移除其找到的第一个以指定的[IIngredient](/Vanilla/Variable_Types/IIngredient/)作为`输出`的合成配方：
+This function removes the first recipe it finds with the given [IIngredient](/Vanilla/Variable_Types/IIngredient/) `output`:
 
 ```zenscript
 mods.pneumaticcraft.thermopneumaticprocessingplant.removeRecipe(IIngredient output);
-// 示例
+// Example
 mods.pneumaticcraft.thermopneumaticprocessingplant.removeRecipe(<liquid:lpg>);
 ```
 
-此函数可移除 *所有* TPP 配方：
+This function removes *all* TPP recipes:
 
 ```zenscript
 mods.pneumaticcraft.thermopneumaticprocessingplant.removeAllRecipes();
@@ -26,19 +26,19 @@ mods.pneumaticcraft.thermopneumaticprocessingplant.removeAllRecipes();
 
 ## 添加
 
-以下函数可以用来向TP添加配方：
+The following functions can be used to add recipes to the TPP:
 
 ```zenscript
-// 添加一个配方，将输入项转换为输出液体
-mods.pneumaticcraft.thermopneumaticprocessingplant。 ddRecipe(ItemStack itemInput, 双重压力，双温度，ILiquidStack 输出)；
+// Add a recipe converting an input item into an output fluid
+mods.pneumaticcraft.thermopneumaticprocessingplant.addRecipe(IItemStack itemInput, double pressure, double temperature, ILiquidStack output);
 
-// 添加将输入液体和项目转换为输出液体的配方(项目可能为空)
-模组。 eumaticraft.thermopneumaticprocessingplant.addRecipe(ILiquidStack 液体输入，IItemStack 项目输入，双重压力，双温度，ILiquidStack 输出)；
+// Add a recipe converting an input fluid and item into an output fluid (item may be null)
+mods.pneumaticcraft.thermopneumaticprocessingplant.addRecipe(ILiquidStack liquidInput, IItemStack itemInput, double pressure, double temperature, ILiquidStack output);
 
-// 示例：将水和红石转换为3个红石液。 bar and 473K (2003)
-mods.pneumaticcraft.thermopneumaticprocessingplant.addRecipe(<liquid:water>, <item:redstone>, 3. , 473, <liquid:redstone> * 250);
-// 示例: 将10mB oil 转换为5mB lava at 3.0 bar and 473K
-mods.pneumaticcraft.thermopneumaticprocessingplant. ddRecipe(<liquid:oil> * 10, null, 3.0, 473, <liquid:lava> * 5);
-// 示例: 将 1 下机柜转换为 50mB 岩浆, at 1。 bar and 573K
-mods.pneumaticcraft.thermopneumaticprocessingplant.addRecipe(<minecraft:netherrack>, 1.5, 573, <liquid:lava> * 50)；
+// Example: convert water and redstone to some redstone fluid at 3.0 bar and 473K (200C)
+mods.pneumaticcraft.thermopneumaticprocessingplant.addRecipe(<liquid:water>, <item:redstone>, 3.0, 473, <liquid:redstone> * 250);
+// Example: convert 10mB oil into 5mB lava at 3.0 bar and 473K
+mods.pneumaticcraft.thermopneumaticprocessingplant.addRecipe(<liquid:oil> * 10, null, 3.0, 473, <liquid:lava> * 5);
+// Example: convert 1 netherrack into 50mB lava at 1.5 bar and 573K
+mods.pneumaticcraft.thermopneumaticprocessingplant.addRecipe(<minecraft:netherrack>, 1.5, 573, <liquid:lava> * 50);
 ```

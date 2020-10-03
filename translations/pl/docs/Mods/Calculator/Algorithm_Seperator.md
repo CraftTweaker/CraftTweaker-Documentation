@@ -1,21 +1,21 @@
 # Algorithm Separator
 
-## Pakiet
+## Package
 ```zenscript
-import mods.calculator.algorytmSeparator;
+import mods.calculator.algorithmSeparator;
 ```
 
-## Metody
+## Methods
 
-- **[Składnik](/Vanilla/Variable_Types/IIngredient/) wejście** Wejście
-- **[Składnik](/Vanilla/Variable_Types/IIngredient/) wyjście[1-2]** Wyjście
+- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input** The input.
+- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) output[1-2]** The outputs.
 
-## Dodanie
+## Addition
 ```zenscript
-algorytmSeparator.addRecipe(ISkładnik wejściowy, wyjście typu IIngredient 1, wyjście typu IIngredient 2);
+algorithmSeparator.addRecipe(IIngredient input, IIngredient output1, IIngredient output2);
 ```
 
-## Usuwanie
+## Removal
 ```zenscript
-algorytmSeparator.removeRecipe(IIngredient output1, IIngredient output2);
+algorithmSeparator.removeRecipe(IIngredient output1, IIngredient output2);
 ```

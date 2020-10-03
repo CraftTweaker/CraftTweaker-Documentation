@@ -1,13 +1,13 @@
-# Kraftstoffregistrierung
+# Fuel Registration
 
-## Motorboot
+## Motorboat
 
-### registerMotorbootkraftstoff
+### registerMotorboatFuel
 
 | Type  | Datentyp                                     |
 | ----- | -------------------------------------------- |
 | Input | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
-| mB/t  | Ganzzahl                                     |
+| mB/t  | Integer                                      |
 
 #### Beispielcode:
 
@@ -16,15 +16,15 @@ mods.immersivepetroleum.Motorboat.registerMotorboatFuel(ILiquidStack fuelEntry, 
 mods.immersivepetroleum.Motorboat.registerMotorboatFuel(<liquid:water>, 5);
 ```
 
-## Tragbarer Generator
+## Portable Generator
 
 ### registerPortableGenFuel
 
 | Type   | Datentyp                                     |
 | ------ | -------------------------------------------- |
 | Input  | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
-| Flux/t | Ganzzahl                                     |
-| mB/t   | Ganzzahl                                     |
+| Flux/t | Integer                                      |
+| mB/t   | Integer                                      |
 
 #### Beispielcode:
 

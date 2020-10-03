@@ -16,18 +16,18 @@ public class Expansion {
 }
 ```
 
-これにより人々が行うことができます
+This would allow people to do
 
 ```zenscript
 <minecraft:iron_ingot>.print();
 ```
 
-これは拡張なので、最初のパラメータはクラスのインスタンスです!  
-このパラメータはZSでは使用できません。
+Since this is an expansion the first parameter is the class' instance!  
+This parameter will not be available in ZS.
 
-## どのクラスに注釈を付けることができますか|| 追加情報
+## What classes can be annotated || Additional Info
 
-- すべてのメソッドは展開されたクラスのインスタンスを表すパラメータから始める必要があります。 また、展開内のすべてのメソッドは静的でなければなりません (... (および公開)
-- すべてのJavaクラスに注釈を付けることができます。
-- 注釈に文字列の値を付ける必要があります(例: `crafttweaker.item.IItemStack`)。 この文字列の値は既存の ZenClassの名前を表す必要があります。
-- クラスを宣言した後で、ZenExpansionを登録する必要があります。 [`@ZenRegister`](/Dev_Area/ZenAnnotations/Annotation_ZenRegister/) を使用することをお勧めします。
+- All Methods need to begin with a parameter that represents the expanded class' instance. Also, all Methods inside the expansion must be static (... and public).
+- You can annotate all Java Classes
+- You must give the annotation a String value (e.g. `crafttweaker.item.IItemStack`). This String value must represent an already existing ZenClass' name.
+- After declaring a class a ZenExpansion, you still need to register it. It is recommended that you use [`@ZenRegister`](/Dev_Area/ZenAnnotations/Annotation_ZenRegister/) for that.

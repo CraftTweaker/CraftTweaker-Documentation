@@ -1,36 +1,36 @@
-# Acceso a IBlock
+# IBlockAccess
 
-Los objetos BlockAccess son un grupo de bloques accesibles a través de coordenadas. Sirven principalmente como superinterfaz para [IWorld](/Vanilla/World/IWorld/), lo que significa que todas estas funciones también están disponibles para todos los objetos [IWorld](/Vanilla/World/IWorld/).
+BlockAccess objects are a group of blocks accessible via coordinates. They mainly serves as superinterface to [IWorld](/Vanilla/World/IWorld/), that means all these functions are also available to all [IWorld](/Vanilla/World/IWorld/) objects.
 
-## Importar la clase
+## Importing the class
 
-Podría ser necesario [importar](/AdvancedFunctions/Import/) la clase para evitar errores.  
-`importar crafttweaker.world.IBlockAccess`
+It might be required to [import](/AdvancedFunctions/Import/) the class to avoid errors.  
+`import crafttweaker.world.IBlockAccess`
 
-## Métodos
+## ZenMethods
 
-### Obtener o establecer un blockState en una posición específica
+### Get or Set a blockState at a specific Position
 
-Usa un objeto [IBlockPos](/Vanilla/World/IBlockPos/) y un objeto [IBlockState](/Vanilla/Blocks/IBlockState/) .  
-Devuelve un [IBlockState](/Vanilla/Blocks/IBlockState/).
+Use an [IBlockPos](/Vanilla/World/IBlockPos/) Object and an [IBlockState](/Vanilla/Blocks/IBlockState/) Object.  
+Returns an [IBlockState](/Vanilla/Blocks/IBlockState/).
 
 ```zenscript
 accObj.getBlockState(IBlockPos pos);
 ```
 
-### Evalúa si un bloque es un bloque de aire.
+### Check if a block is an air block.
 
-Utilice un objeto [IBlockPos](/Vanilla/World/IBlockPos/) .  
-Devuelve un bool.
+Use an [IBlockPos](/Vanilla/World/IBlockPos/) object.  
+Returns a bool.
 
 ```zenscript
 accObj.isAirBlock(IBlockPos pos);
 ```
 
-### Consigue Poder fuerte a un lado de un bloque
+### Get strong Power at a block's side
 
-Usa un objeto [IBlockPos](/Vanilla/World/IBlockPos/) y un objeto [IFacing](/Vanilla/World/IFacing/) .  
-Devuelve un int.
+Use an [IBlockPos](/Vanilla/World/IBlockPos/) object and an [IFacing](/Vanilla/World/IFacing/) object.  
+Returns an int.
 
 ```zenscript
 accObj.getStrongPower(BlockPos var1, EnumFacing var2);

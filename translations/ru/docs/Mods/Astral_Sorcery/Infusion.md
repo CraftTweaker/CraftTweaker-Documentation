@@ -1,15 +1,15 @@
-# Рецепты инфузии Звёздного Света
+# Starlight Infusion Recipes
 
-Вы можете добавлять и удалять инфузии крафта.
+You can add and remove crafting infusions.
 
-## Звонок
+## Calling
 
-Вы можете вызвать пакет InfusionRecipe с помощью `mods.astralsorcery.StarlightInfusion`.
+You can call the InfusionRecipe package using `mods.astralsorcery.StarlightInfusion`.
 
-## Удаление
+## Removing
 
-Это удалит первую инфузию, которую она обнаружит, что создаёт предоставленный [IItemStack](/Vanilla/Items/IItemStack/) `вывод`.  
-Если есть несколько рецептов, возвращающих предоставленный выход, вам нужно вызвать этот метод несколько раз!
+This will remove the first infusion it finds that creates the provided [IItemStack](/Vanilla/Items/IItemStack/) `output`.  
+If there are multiple recipes that return the provided output, you need to call this method multiple times!
 
 ```zenscript
 //mods.astralsorcery.StarlightInfusion.removeInfusion(IItemStack output);
@@ -20,5 +20,5 @@ mods.astralsorcery.StarlightInfusion.removeInfusion(<minecraft:ice>);
 
 ```zenscript
 //mods.astralsorcery.StarlightInfusion.addInfusion(IItemStack input, IItemStack output, boolean consumeMultiple, float consumptionChance, int craftingTickTime);
-mods.astralsorcery.StarlightInfusion.addfusion(<astralsorcery:itemjournal>, <minecraft:bow>, false, 0.7, 200);
+mods.astralsorcery.StarlightInfusion.addInfusion(<astralsorcery:itemjournal>, <minecraft:bow>, false, 0.7, 200);
 ```

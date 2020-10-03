@@ -1,9 +1,9 @@
-# Dimensions :
+# Dimensions:
 
-Dimensions est une condition introduite par CompatSkills et vous permet de mettre les choses derrière vous :
+Dimensions is a Requirement introduced by CompatSkills and allows you to gate things behind either:
 
-- Être dans une dimension **spécifique**.
-- Etre dans **n'importe quelle dimension** **autre que** celle spécifiée.
+- Being in a **Specific** dimension.
+- Being in **any** dimension **other than** the one specified.
 
     Working Example:
     dim|0

@@ -1,29 +1,29 @@
-# 注入中
+# Infusion
 
-此软件包允许您将配方添加到/移除输入框。
+This package allows you to add and remove recipes to/from the Infusion.
 
 ## 导入相关包
 
-您可以 [导入](/AdvancedFunctions/Import/) 个软件包及其方法来方便检索这些方法。
+You can [import](/AdvancedFunctions/Import/) the package and its methods to facilitate the retrival of the methods.
 
 ```zenscript
-导入 mods.thaumcraft.Infution;
+import mods.thaumcraft.Infusion;
 ```
 
-## 添加配方
+## Adding recipes
 
 ```zenscript
-//mods.thaumcraft.Infusion.registerRecipe(String name, String research, IItemStack output, int stance, CtapertStack[……]aspect, Igredient centralItem, Ingredient[……]recipe);
-mods. haumcraft.Infusion.registerRecipe("testName", "", <minecraft:diamond>, 20, [<aspect:aer>, <aspect:ignis>], <minecraft:grass>, [<minecraft:stick>, <minecraft:dirt>]);
+//mods.thaumcraft.Infusion.registerRecipe(String name, String research, IItemStack output, int instability, CTAspectStack[] aspects, IIngredient centralItem, IIngredient[] recipe);
+mods.thaumcraft.Infusion.registerRecipe("testName", "", <minecraft:diamond>, 20, [<aspect:aer>, <aspect:ignis>], <minecraft:grass>, [<minecraft:stick>, <minecraft:dirt>]);
 ```
 
-## 删除配方
+## Removing recipes
 
 ```zenscript
 //mods.thaumcraft.Infusion.removeRecipe(String name);
 mods.thaumcraft.Infusion.removeRecipe("recipeName");
 
 
-//mods.thaumcraft.Infusion.removeRecipe(ItemStack output);
+//mods.thaumcraft.Infusion.removeRecipe(IItemStack output);
 mods.thaumcraft.Infusion.removeRecipe(<thaumcraft:mirror_essentia>);
 ```

@@ -1,23 +1,23 @@
-# Steam 动态
+# Steam Dynamo
 
-## 导入软件包
+## Import the package
 
 To shorten method calls you can [import](/AdvancedFunctions/Import/) the package like so:
 
 ```zenscript
-导入 mods.thermalext.SteamDynamo;
+import mods.thermalexpansion.SteamDynamo;
 ```
 
-## 添加燃料
+## Add Fuel
 
 ```zenscript
-//mods.thermalext.SteamDynamo.addFuel(StemStack, int energy);
-mods.thermalext.SteamDynamo.addFuel(<minecraft:stick>, 13);
+//mods.thermalexpansion.SteamDynamo.addFuel(IItemStack stack, int energy);
+mods.thermalexpansion.SteamDynamo.addFuel(<minecraft:stick>, 13);
 ```
 
-## 移除燃料
+## Remove Fuel
 
 ```zenscript
-//mods.thermalext.SteamDynamo.removeFuel(StemStack stack);
-mods.thermalabov.SteamDynamo.removeFuel(<minecraft:stick>);
+//mods.thermalexpansion.SteamDynamo.removeFuel(IItemStack stack);
+mods.thermalexpansion.SteamDynamo.removeFuel(<minecraft:stick>);
 ```

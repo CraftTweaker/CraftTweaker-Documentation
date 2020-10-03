@@ -1,22 +1,22 @@
-# パワードThingies :: アイテムLiqueifier
+# Powered Thingies :: Item Liquefier
 
-### インポート中
+### Importing
 
 ```zenscript
 import mods.poweredthingies.Tweaker.itemLiquefierTweaker as ilt;
 ```
 
-### キーによるレシピの削除、キーのリスト化、クリア
+### Listing Keys, Removing Recipes by Key, Clearing
 
 ```zenscript
 ilt().logKeys()
-ilt().removeRecipe('liquid:fluid_lava') // <logKeys> の有効なキーの出力をチェック
+ilt().removeRecipe('liquid:fluid_lava') // check <logKeys> output for valid keys
 ilt().clear()
 ```
 
-### レシピを追加中
+### Adding Recipe
 
-##### 署名
+##### Signature
 
 ```zenscript
 addRecipe(input: IItemStack, output: ILiquidStack)
@@ -28,6 +28,6 @@ addRecipe(input: IItemStack, output: ILiquidStack)
 ilt().addRecipe(<minecraft:bucket>, <liquid:lava> * 125);
 ```
 
-### メモ
+### Notes
 
-これらのアクションはすべてキャッシュされ、このマシンのデフォルトレジストリがすべてのレシピを登録し終えた後に実行されます (カスタム json からのものを含む)。
+All of these actions will get cached and ran after the default registry for this machine has finished registering all recipes (including the ones from the custom jsons).

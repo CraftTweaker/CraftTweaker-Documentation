@@ -1,6 +1,6 @@
-# Кровавый Алтарь
+# Blood Altar
 
-## Пакет
+## Package
 
 `mods.bloodmagic.BloodAltar`
 
@@ -13,13 +13,13 @@ The `consumeRate` is how quickly the Life Essence is syphoned.
 The `drainRate` is how quickly progress is lost if the Blood Altar runs out of Life Essence during the craft.
 
 ```zenscript
-//mods.bloodmagic.BloodAltar.addRecipe(IItemStack, IItemStack, int minimumTier, int syphon, int consumeRate, int drainRate);
+//mods.bloodmagic.BloodAltar.addRecipe(IItemStack output, IItemStack input, int minimumTier, int syphon, int consumeRate, int drainRate);
 mods.bloodmagic.BloodAltar.addRecipe(<minecraft:glass>, <minecraft:stick>, 0, 20,30,40);
 ```
 
-## Удаление
+## Removal
 
 ```zenscript
-//mods.bloodmagic.BloodAltar.removeRecipe(введенный IItemStack);
+//mods.bloodmagic.BloodAltar.removeRecipe(IItemStack input);
 mods.bloodmagic.BloodAltar.removeRecipe(<minecraft:stone>);
 ```

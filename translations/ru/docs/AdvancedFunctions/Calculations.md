@@ -5,10 +5,10 @@
 
 ## Совет
 
-Если при расчете непредвиденные результаты, вполне возможно, что вы использовали два разных типа.  
-Например, `13 % 6.5` возвращает 1, хотя правильный результат равен 0. Почему? ZenScript всегда выполняет свои вычисления с двумя переменными одного типа. Для этого он преобразует второй тип, совпадающий с первым. В этом примере выполнялся расчет `13 % 6`, как 2-е число (двойное) было преобразовано в соответствие с первым (целые числа).
+When unexpected results happen in a calculation, it is very well possible that you used two different types.  
+For example `13 % 6.5` returns 1, even though the correct result is 0. Why? ZenScript always performs its calculations with two variables of the same type. For this, it converts the 2nd Type to match the first one. In this example, the calculation performed was `13 % 6`, as the 2nd number (a double) was converted to match the first one (an Integer).
 
-Всегда будьте осторожны с тем, какие две переменные типа вы используете и когда сомневаетесь, просто используйте функцию печати для вывода в журнал и подтверждения результатов.
+Always be careful about what two variable types you use and when in doubt, just use a print function to print the output to the log and confirm the results.
 
 ## Арифметические операторы
 
@@ -55,11 +55,11 @@ test = test + 2;
 test -= 3;
 ```
 
-Параметр 1 и 2 присвоите возвращаемую переменную, используя токен `=` .  
-Вероятно, это самый простой способ для начинающих и единственный способ, если вы хотите назначить переменную, не используемую при расчете.
+Option 1 and 2 assign the return variable using the `=` token.  
+This is probably the easiest way for beginners and the only way if you want to assign a variable not used in the calculation.
 
-Параметр 3 назначает переменную перед `-=` с результатом нормального вычета.  
-Все операторы на этой странице имеют соответствующие токены, проверьте таблицу выше.
+Option 3 assigns the variable before the `-=` with the result of a normal subtraction.  
+All Operators on on this page have their respective assign tokens, check the table above.
 
 ### Использование результата по-другому
 

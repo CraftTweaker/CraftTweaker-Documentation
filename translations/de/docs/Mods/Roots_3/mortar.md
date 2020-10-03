@@ -1,24 +1,24 @@
-### Klasse
+### Class
 
 ```zenscript
-importieren mods.roots.Mortar;
+import mods.roots.Mortar;
 ```
 
 #### Methoden
 
 ```zenscript
-addRecipe(
-  IItemStack Ausgabe, ungültig // die Artikelausgabe dieses Rezepts
-  IIngredient[] Eingänge // ein Array von Zutaten, die entweder 5 lang oder 1 lang sind
- sind;
+void addRecipe(
+  IItemStack output,   // the item output of this recipe
+  IIngredient[] inputs // an array of ingredients that is either 5 long or 1 long
+);
 ```
 
 * * *
 
 ```zenscript
-nichtig changeSpell (
-  Zeichenbuchstabenname, // der Name des Zauberspruchs wie in der Zauberregistrierung
-  IIngredient[] Eingabe // ein Array von 5 Elementen, die die neuen Zutaten für das Rezept sind
+void changeSpell(
+  string spellName,    // the name of the spell as in the spell registry
+  IIngredient[] inputs // an array of 5 items that are the new ingredients for the recipe
 );
 ```
 
@@ -26,8 +26,8 @@ nichtig changeSpell (
 
 ```zenscript
 void removeRecipe(
-  IItemStack Ausgabe // der Artikelstapel, der vom Rezept
- erzeugt wurde);
+  IItemStack output // the item stack produced by the recipe
+);
 ```
 
 * * *
@@ -35,22 +35,22 @@ void removeRecipe(
 ### Beispiele
 
 ```zenscript
-importieren mods.roots. ortar;
+import mods.roots.Mortar;
 
-// Fügt ein Rezept hinzu, das Schießpulver aus Feuerstein macht
-// Da das Rezept nur einen Eingang hat, es wird automatisch
-// erzeugt 5 Rezepte und erhöht die Anzahl der Eingaben und
-// die Menge der Ausgabe bzw. der Ausgabe.
+// Adds a recipe that makes gunpowder out of flint
+// As the recipe only has one input, it will automatically
+// generate 5 recipes, increasing the number of inputs and
+// the quantity of the output respectively.
 Mortar.addRecipe(<minecraft:gunpowder>, [<minecraft:flint>]);
 
-// Dieses Rezept verwendet fünf Zutaten um ein Bett zu erstellen.
-Mörtel. ddRecipe(<minecraft:bed>, [<minecraft:wool>, <minecraft:wool>, <minecraft:wool> , <minecraft:planks>, <minecraft:planks>, <minecraft:planks>]);
+// This recipe uses five ingredients to create one bed.
+Mortar.addRecipe(<minecraft:bed>, [<minecraft:wool>, <minecraft:wool>, <minecraft:planks>, <minecraft:planks>, <minecraft:planks>]);
 
-// Dadurch werden alle Rezepte mit Wurzelmehl als Ausgabe entfernt
-// einschließlich aller Rezepte mit mehreren Zutaten
-Mörtel. emoveRecipe(<roots:flour>);
+// This will remove all recipes that have Root's flour as an output
+// including any multi-ingredient recipes
+Mortar.removeRecipe(<roots:flour>);
 
-// Dies ändert das Rezept für den Hainfleckszauber auf
-// braucht einfach fünf Zuckerstücke.
+// This will change the recipe for the grove supplication spell to
+// simply require five pieces of sugar.
 Mortar.changeSpell("spell_supplication", [<minecraft:sugar>, <minecraft:sugar>, <minecraft:sugar>, <minecraft:sugar>, <minecraft:sugar>]);
 ```

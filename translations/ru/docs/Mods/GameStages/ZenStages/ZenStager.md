@@ -1,144 +1,144 @@
 # ZenStager
 
-Этот класс является главным обработчиком для создания новых [этапов](/Mods/GameStages/ZenStages/Stage/), , то вы можете построить для того, чтобы рассказать игре, чтобы начать отлаживать то, что вы поставили. Он поставляется с методами, позволяющими легко интегрироваться с другими модами, использующими [GameStages API](https://minecraft.curseforge.com/projects/game-stages) , а также некоторые пользовательские твики для того, чтобы сделать жизнь модпаков намного проще.
+This class is the main handler for creating new [Stages](/Mods/GameStages/ZenStages/Stage/), which then you can build to tell the game to start staging what you've staged. It comes pre-loaded with methods to allow easy integration with other mods using the [GameStages API](https://minecraft.curseforge.com/projects/game-stages) along with some custom tweaks to make modpack makers lives that little bit easier.
 
-Более подробную информацию и последний исходник для класса [вы можете найти здесь](https://github.com/DarkPacks/ZenStages/blob/master/src/main/java/uk/artdude/zenstages/stager/ZenStager.java).
+You can find more information and the latest source for the class [here](https://github.com/DarkPacks/ZenStages/blob/master/src/main/java/uk/artdude/zenstages/stager/ZenStager.java).
 
 ## Импорт пакета
 
-ZenStager : `импорт mods.zenstages.ZenStager;`
+ZenStager : `import mods.zenstages.ZenStager;`
 
-Этап *(Рекомендуется также импортировать)* : `импорт mods.zenstages.Stage;`
+Stage *(Recommended to import also)* : `import mods.zenstages.Stage;`
 
-## Методы
+## Methods
 
-### Создать этап
+### Create Stage
 
-Создать и вернуть новый [этап](/Mods/GameStages/ZenStages/Stage/)
+Create and returns new [Stage](/Mods/GameStages/ZenStages/Stage/)
 
 ```zenscript
 // mods.zenstages.ZenStager.initStage(string stageName);
 var TestStage = ZenStager.initStage("test");
 ```
 
-Когда вы создали свою стадию, вы должны создать статический/глобальный файл, который содержит следующие параметры: затем вы можете получить доступ к Stage на других скриптах/классах.
+When you have created your Stage you should then create a static/global file which contains the following so you can then access the Stage on other scripts/classes.
 
-**Примечание: У вас нет `initStage` и `статического` создания в том же скрипте. Из-за ограничений и других проблем, `initStage` будет вызываться каждый раз, когда вы ссылаетесь на статического члена. Так что сохраните инт и статическое творение раздельно**
+**Note: Do not have the `initStage` and the `static` creation in the same script. Due to limitations and other issues, the `initStage` will be called each time you reference a static member. So keep the init and the static creation separate**
 
 ```zenscript
-Импортируйте mods.zenstages.ZenStager;
+import mods.zenstages.ZenStager;
 
-статический TestStage = ZenStager.getStage("test"); // Имя как тот, который вы только что создали.
+static TestStage = ZenStager.getStage("test"); // The name being the one you just created.
 ```
 
-### Способы помощи
+### Helper Methods
 
-Получить [этап](/Mods/GameStages/ZenStages/Stage/) *(Бросок нуля, если не найден)*
+Get a [Stage](/Mods/GameStages/ZenStages/Stage/) *(Returns null if not found)*
 
 ```zenscript
 // mods.zenstages.ZenStager.getStage(string stageName);
 var TestStageGet = ZenStager.getStage("test");
 ```
 
-Получить карту [стадий](/Mods/GameStages/ZenStages/Stage/) которые созданы.
+Get a map of the [Stages](/Mods/GameStages/ZenStages/Stage/) which are created.
 
 ```zenscript
 // mods.zenstages.ZenStager.getStageMap();
-var StageMap как этап[string] = ZenStager.getStageMap();
+var StageMap as Stage[string] = ZenStager.getStageMap();
 ```
 
-Получить карту распределенных жидкостей.
+Get a map of the staged liquids.
 
 ```zenscript
 // mods.zenstages.ZenStager.getStagedLiquids();
-var LiquidMap как ILiquidStack[][string] = ZenStager.getStagedLiquids();
+var LiquidMap as ILiquidStack[][string] = ZenStager.getStagedLiquids();
 ```
 
-### Методы разбивки
+### Staging Methods
 
-Добавить имя пакета. Для установки требуется [RecipeStages](/Mods/GameStages/RecipeStages/RecipeStages/). Это следует той же логике, что и [здесь](/Mods/GameStages/RecipeStages/RecipeStages/).
+Add a package name. This requires [RecipeStages](/Mods/GameStages/RecipeStages/RecipeStages/) to be installed. This follows the same logic as [here](/Mods/GameStages/RecipeStages/RecipeStages/).
 
 ```zenscript
 // mods.zenstages.ZenStager.addPackage(string packageName, Stage[] stages);
 ZenStager.addPackage("appeng", [TestStage]);
 ```
 
-Добавить имя пакета. Для установки требуется [RecipeStages](/Mods/GameStages/RecipeStages/RecipeStages/). Это следует той же логике, что и [здесь](/Mods/GameStages/RecipeStages/RecipeStages/).
+Add a package name. This requires [RecipeStages](/Mods/GameStages/RecipeStages/RecipeStages/) to be installed. This follows the same logic as [here](/Mods/GameStages/RecipeStages/RecipeStages/).
 
 ```zenscript
 // mods.zenstages.ZenStager.addContainer(string packageName, Stage[] stages);
 ZenStager.addContainer("my.awesome.container", [TestStage]);
 ```
 
-Получи стадию ингредиента, если он поставлен, он вернет этап [](/Mods/GameStages/ZenStages/Stage/) или аннулировать, если не найден.
+Get the ingredient stage, if staged it will return the [Stage](/Mods/GameStages/ZenStages/Stage/) or null if not found.
 
 ```zenscript
 // mods.zenstages.ZenStager.getIngredientStage(IIngredient ingredient);
-var StickStage = ZenStager.getIngredientStage(<minecraft:stick>);
+var StickStage as Stage = ZenStager.getIngredientStage(<minecraft:stick>);
 ```
 
-Стадия пачки жидкости, если она поставлена, вернет этап [](/Mods/GameStages/ZenStages/Stage/) или аннулировать, если не найдена.
+Get the liquid stack stage, if staged it will return the [Stage](/Mods/GameStages/ZenStages/Stage/) or null if not found.
 
 ```zenscript
 // mods.zenstages.ZenStager.getLiquidStage(ILiquidStack liquidStack);
-var StickStage = ZenStager.getLiquidStage(<liquid:water>);
+var StickStage as Stage = ZenStager.getLiquidStage(<liquid:water>);
 ```
 
-Получить имя этапа, если он поставлен, он вернет этап [](/Mods/GameStages/ZenStages/Stage/) или аннулировать, если не найден. Для установки требуется [Рецептов](/Mods/GameStages/RecipeStages/RecipeStages/).
+Get the recipe name stage, if staged it will return the [Stage](/Mods/GameStages/ZenStages/Stage/) or null if not found. Requires [RecipeStages](/Mods/GameStages/RecipeStages/RecipeStages/) to be installed.
 
 ```zenscript
 // mods.zenstages.ZenStager.getRecipeNameStage(string recipeName);
-var RecipeNameStage Stage = ZenStager.getRecipeNameStage("minecraft:boat");
+var RecipeNameStage as Stage = ZenStager.getRecipeNameStage("minecraft:boat");
 ```
 
-Стадия контейнера вернёт [Этап](/Mods/GameStages/ZenStages/Stage/) или null, если не найдена. Для установки требуется [Рецептов](/Mods/GameStages/RecipeStages/RecipeStages/).
+Get the container stage, if staged it will return the [Stage](/Mods/GameStages/ZenStages/Stage/) or null if not found. Requires [RecipeStages](/Mods/GameStages/RecipeStages/RecipeStages/) to be installed.
 
 ```zenscript
 // mods.zenstages.ZenStager.getContainerStages(string containerName);
 var ContainerStage as Stage = ZenStager.getContainerStages("my.awesome.container");
 ```
 
-Перейдите на стадии пакета, если он вернёт этап [](/Mods/GameStages/ZenStages/Stage/) или null, если он не найден. Для установки требуется [Рецептов](/Mods/GameStages/RecipeStages/RecipeStages/).
+Get the package stage, if staged it will return the [Stage](/Mods/GameStages/ZenStages/Stage/) or null if not found. Requires [RecipeStages](/Mods/GameStages/RecipeStages/RecipeStages/) to be installed.
 
 ```zenscript
 // mods.zenstages.ZenStager.getPackageStages(string packageName);
 var PackageStage as Stage = ZenStager.getPackageStages("appeng");
 ```
 
-Достигните этапа измерения, если он поставлен, он вернет этап [](/Mods/GameStages/ZenStages/Stage/) или нулевой, если не найден. Требуется установка [DimStages](/Mods/GameStages/DimensionStages/DimensionStages/).
+Get the dimension stage, if staged it will return the [Stage](/Mods/GameStages/ZenStages/Stage/) or null if not found. Requires [DimStages](/Mods/GameStages/DimensionStages/DimensionStages/) to be installed.
 
 ```zenscript
 // mods.zenstages.ZenStager.getDimensionStage(int dimId);
-var DimStage = ZenStager.getDimensionStage(-1);
+var DimStage as Stage = ZenStager.getDimensionStage(-1);
 ```
 
-Сделайте стадию мобов, если она будет поставлена на стадию [](/Mods/GameStages/ZenStages/Stage/) или аннулирована, если не будет найдена. Требуется установка [MobStages](/Mods/GameStages/MobStages/MobStages/).
+Get the mob stage, if staged it will return the [Stage](/Mods/GameStages/ZenStages/Stage/) or null if not found. Requires [MobStages](/Mods/GameStages/MobStages/MobStages/) to be installed.
 
 ```zenscript
 // mods.zenstages.ZenStager.getMobStage(string mobName);
 var MobStage as Stage = ZenStager.getMobStage("minecraft:skeleton");
 ```
 
-Достигните этапа Материала TiC, если он будет размещен, он вернет этап [](/Mods/GameStages/ZenStages/Stage/) или аннулировать, если не найден. Требуется установка [TinkerStages](/Mods/GameStages/TinkerStages/TinkerStages/).
+Get the TiC Material stage, if staged it will return the [Stage](/Mods/GameStages/ZenStages/Stage/) or null if not found. Requires [TinkerStages](/Mods/GameStages/TinkerStages/TinkerStages/) to be installed.
 
 ```zenscript
 // mods.zenstages.ZenStager.getTiCMaterialStage(string material);
-var MobStage = ZenStager.getTiCMaterialStage("bronze");
+var MobStage as Stage = ZenStager.getTiCMaterialStage("bronze");
 ```
 
-### Проверьте, если что-то откладывается
+### Check if something is Staged
 
-Поддерживаемые типы:
+Supported Types:
 
-- контейнер
-- измерение
-- ингредиент
-- моб
+- container
+- dimension
+- ingredient
+- mob
 - mod
 - mulitblock
-- руда
-- пакет
-- имя рецепта
+- ore
+- package
+- recipename
 - tinker
 
 ```zenscript
@@ -146,7 +146,7 @@ var MobStage = ZenStager.getTiCMaterialStage("bronze");
 // mods.zenstages.ZenStager.isStaged(string type, int value);
 // mods.zenstages.ZenStager.isStaged(string type, IIngredient value);
 ZenStager.isStaged("ingredient", <minecraft:stick>);
-ZenStager.isStaged("container", "my. wesome.container");
+ZenStager.isStaged("container", "my.awesome.container");
 ZenStager.isStaged("mob", "minecraft:skeleton");
 ZenStager.isStaged("tinker", "bronze");
 ZenStager.isStaged("tinker", "tconstruct:crossbow");
@@ -154,18 +154,18 @@ ZenStager.isStaged("recipename", "minecraft:boat");
 ZenStager.isStaged("dimension", -1);
 ```
 
-### Отладка
+### Debugging
 
-Вызов этого метода позволит проверить мод на [стадиях,](/Mods/GameStages/ZenStages/Stage/) которые вы создали и что поставили. Чтобы узнать, ошибочно ли вы *поставили* что-нибудь более одного раза. Если обнаружено, они вошли в файл `crafttweaker.log`. Расскажите вам, что дублируется и какие этапы он находится. Это идеальный метод/инструмент для использования перед выпуском обновлений к модпаку или просто для разработки модпака.
+Calling this method will make the mod check over the [Stages](/Mods/GameStages/ZenStages/Stage/) you have created and what's staged. To see if you have mistakenly *staged* something more than once. If any are found they are logged to the `crafttweaker.log` file. Telling you what is duplicated staged and what stages it is in. This is an ideal method/tool to use before releasing updates to a modpack or just general development of a modpack.
 
 ```zenscript
 // mods.zenstages.ZenStager.checkConflicts();
 ZenStager.checkConflicts();
 ```
 
-### Стадии сборки
+### Build Stages
 
-Это **важно** для вызова после того, как вы завершили добавление записей в свои стадии. Это призывает все моды к реально заявленным записям. Если этот метод не будет запущен, ничего не будет оглушено!
+This is **important** to call after you have completed adding entries to your stages. This calls upon all the mods to actually stage said entries. Failing to run this method will result in nothing being staged!
 
 ```zenscript
 // mods.zenstager.ZenStager.buildAll();

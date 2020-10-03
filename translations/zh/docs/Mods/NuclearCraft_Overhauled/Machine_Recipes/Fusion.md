@@ -1,17 +1,17 @@
-# 融合模式
-**注：尚未执行**
+# Fusion
+**Note: Not yet implemented**
 
-## 导入软件包
-`nuclearcraft。融合模式`
+## Importing the Package
+`mods.nuclearcraft.Fusion`
 
-## 添加配方
+## Adding Recipes
 ```zenscript
-nuclearcraft。Fusion.addRecipe(ILiquidStack fluidInput1、 ILiquidStack fluidInput2、 ILiquidStack fluidOut1、 ILiquidStack fluidOut2、 ILiquidStack fluidOut3、 ILiquidStack fluidOut4、 douboTime、 douboPower、 due comboHeatVar, double processRadiation)；
+mods.nuclearcraft.Fusion.addRecipe(ILiquidStack fluidInput1, ILiquidStack fluidInput2, ILiquidStack fluidOutput1, ILiquidStack fluidOutput2, ILiquidStack fluidOutput3, ILiquidStack fluidOutput4, double comboTime, double comboPower, double comboHeatVar, double processRadiation);
 ```
 
-## 删除配方
+## Removing Recipes
 ```zenscript
-nuclearcraft。Fusion.removeRecipeWidInput(ILiquidStack fluidInput1,ILiquidStack fluidInput2);
-mods.nuclearcraft。Fusion.removeRecipeWOutput(ILiquidStack fluidOutt1,ILiquidStack fluidOutput2,ILiquidStack fluidOutput3,ILiquidStack fluidOutput4);
-mods.nuclearcraft.移除AllRecipes();
+mods.nuclearcraft.Fusion.removeRecipeWithInput(ILiquidStack fluidInput1, ILiquidStack fluidInput2);
+mods.nuclearcraft.Fusion.removeRecipeWithOutput(ILiquidStack fluidOutput1, ILiquidStack fluidOutput2, ILiquidStack fluidOutput3, ILiquidStack fluidOutput4);
+mods.nuclearcraft.Fusion.removeAllRecipes();
 ```

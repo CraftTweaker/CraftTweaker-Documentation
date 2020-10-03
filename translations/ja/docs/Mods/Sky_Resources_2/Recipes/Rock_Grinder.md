@@ -1,22 +1,22 @@
-# ロックグラインダー
+# Rock Grinder
 
-*rockgrinder* パッケージは、Rock Grinderへのレシピの追加や削除に使用されます。
+The *rockgrinder* package is used for adding or removing recipes to/from the Rock Grinder.
 
-## 発信中
+## Calling
 
-*mods.skyresources.rockgrinder* を使って `rockgrinder` を呼び出すことができます。
+You can call the *rockgrinder* package using `mods.skyresources.rockgrinder`
 
-## レシピの追加
+## Recipe Addition
 
 ```zenscript
 //mods.skyresources.rockgrinder.addRecipe(IItemStack output, IItemStack input);
 mods.skyresources.rockgrinder.addRecipe(<minecraft:diamond>, <minecraft:stone>);
 
 //mods.skyresources.rockgrinder.addRecipe(IItemStack output, IItemStack input, float chance);
-mods.skyresources.rockgrinder.addRecipe()<minecraft:emerald>, <minecraft:stone>, 0.50);
+mods.skyresources.rockgrinder.addRecipe(<minecraft:emerald>, <minecraft:stone>, 0.50);
 ```
 
-## レシピの削除
+## Recipe Removal
 
 ```zenscript
 //mods.skyresources.rockgrinder.removeRecipe(IItemStack output);

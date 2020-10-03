@@ -1,24 +1,24 @@
-# ITICMaterialDefinizione
+# ITICMaterialDefinition
 
-Una ITICMaterialDefinition è una definizione [ITICMaterial's](/Mods/Modtweaker/TConstruct/Materials/ITICMaterial/) .  
-Puoi usarla per recuperare alcune informazioni sull'oggetto [ITICMaterial](/Mods/Modtweaker/TConstruct/Materials/ITICMaterial/).
+An ITICMaterialDefinition is an [ITICMaterial's](/Mods/Modtweaker/TConstruct/Materials/ITICMaterial/) definition.  
+You can use this to retrieve some information on the [ITICMaterial](/Mods/Modtweaker/TConstruct/Materials/ITICMaterial/) object.
 
-## Importazione del pacchetto
+## Importing the package
 
-Potrebbe essere necessario per importare il pacchetto se si verificano problemi, in modo da essere più sicuri di spiacenti e aggiungere l'importazione.  
+It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
 `import modtweaker.tconstruct.ITICMaterialDefinition;`
 
-## Recupero di un tale oggetto
+## Retrieving such an object
 
-Puoi recuperare una definizione di ITICMaterialdal [definizione di ITICMaterial](/Mods/Modtweaker/TConstruct/Materials/ITICMaterial/) `` ZenGetter:
+You can retrieve an ITICMaterialDefinition from an [ITICMaterial's](/Mods/Modtweaker/TConstruct/Materials/ITICMaterial/) `definition` ZenGetter:
 
 ```zenscript
-val def = <ticmat:stone>.definizione;
+val def = <ticmat:stone>.definition;
 ```
 
 ## ZenGetters
 
-| ZenGetter   | Tipo Di Reso | Descrizione                    |
-| ----------- | ------------ | ------------------------------ |
-| nome        | stringa      | Nome interno del materiale     |
-| displayName | stringa      | Nome localizzato del materiale |
+| ZenGetter   | Return Type | Description                   |
+| ----------- | ----------- | ----------------------------- |
+| name        | string      | The material's internal name  |
+| displayName | string      | The material's localized name |

@@ -1,13 +1,13 @@
-# 解散者
+# Dissolver
 
-## パッケージ
-`mods.alchemistry.Dissolver解散者`
+## Package
+`mods.alchemistry.DissolverDissolver`
 
-## メソッド
-- **[IItemStack](/Vanilla/Items/IItemStack/) input** - レシピの入力。
-- **boolean relativeProbability** - 確率計算 Boolean
-- **int roll** - 役割の可能性
-- **probabilityGroups** - double の後に任意の # の [IItemStack](/Vanilla/Items/IItemStack/)の配列。 doubleは、そのグループの確率を指します。
+## Methods
+- **[IItemStack](/Vanilla/Items/IItemStack/) input** - The input of the recipe.
+- **boolean relativeProbability** - Probability Calculation Boolean
+- **int rolls** -  Possibilty of Roles
+- **probabilityGroups** - An array of arrays with an double followed by any # of [IItemStack](/Vanilla/Items/IItemStack/)s. The double refers to the probability for its group.
 
 ## 加算
 ```zenscript
@@ -18,7 +18,7 @@ mods.alchemistry.Dissolver.addRecipe(<minecraft:dye:9>, false, 5,
  [20, <minecraft:sand>,<minecraft:iron_ore>]]);
 ```
 
-## 削除
+## Removal
 ```zenscript
 mods.alchemistry.AtomizerDissolver.removeRecipe(IIngredient input);
 mods.alchemistry.mods.alchemistry.Dissolver.removeRecipe(IIngredient input);
@@ -27,10 +27,10 @@ mods.alchemistry.Dissolver.removeRecipe(<minecraft:ender_pearl>);
 mods.alchemistry.Dissolver.removeAllRecipes();Dissolver.removeAllRecipes();
 ```
 
-# メモ
-既存の解散レシピを変更する開発を容易にするために、コマンドがあります。 持っているアイテムのcrafttweakerレシピを取得し、クリップボードにコピーする/dissolver
+# Notes
+To ease in the development of modifying existing dissolver recipes there is a command, simply /dissolver that will fetch the crafttweaker recipe for the item that you are holding and copy it into your clipboard
 
-相対確率が true の場合、各確率はすべての確率の和に基づいて計算されます。 上記の例では、各ロールと66の石を出力する33.3%の可能性があることを意味します。 砂と鉄鉱石をそれぞれのロールに出力する確率が%です。
+If relative probability is true, then each probability will be calculated based on the sum of all of the probabilities. In the example above that would mean there is a 33.3% chance of outputting stone each roll and a 66.6% chance of outputting a sand and an iron ore each roll.
 
-相対確率が false の場合、これらの数値は絶対パーセンテージ、つまり 10%の確率で石を出力し、砂と鉄鉱石を出力する可能性が20%(石が出力されたかどうかに関係なく)。 浮動小数点数がサポートされているため、4.5は4.5%を意味します。
+If relative probability is false, then these numbers are absolute percentages i.e. a 10% chance of outputting stone and a 20% chance of outputting sand and iron ore (regardless of whether or not stone was outputted). Floating-point probabilities are supported, so 4.5 would mean 4.5%
 

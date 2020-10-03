@@ -1,30 +1,30 @@
-# Supporto Di Associazione
+# Binding Support
 
-## Legatura:
+## Binding:
 
-Questo annullerà l'Obbligazione per detto elemento specifico se il giocatore non soddisfa i requisiti.
+This will cancel Item Binding for said specific item if the player doesn't meet the requirements.
 
 ### Pre-1.4.0:
 
-#### Sintassi:
+#### Syntax:
 
-    Esempio vuoto:
-    mods.compatskills.BindHandler.addBindLock(String failureMessage, IItemStack stack, String... requisiti);
+    Blank Example:
+    mods.compatskills.BindHandler.addBindLock(String failureMessage, IItemStack stack, String... requirements);
     
-    Esempio di prova:
-    mods.compatskills.BindHandler.addBindLock("Untold Dark Energies ruotano intorno a te e poi si sottomettono", <bloodmagic:blood_orb>.withTag({orb: "bloodmagic:weak"}), "reskillable:building<unk> 15", "reskillable:magic<unk> 7", "stage<unk> test", "adv<unk> minec
+    Test Example:
+    mods.compatskills.BindHandler.addBindLock("Untold Dark Energies swirl around you and then subside", <bloodmagic:blood_orb>.withTag({orb: "bloodmagic:weak"}), "reskillable:building|15", "reskillable:magic|7", "stage|test", "adv|minec
     
 
 ### Post-1.4.0
 
-A partire da CompatSkills 1.4.0 il bloccaggio di rilegatura è stato ora inserito come parte di ItemStack-Locking. Ciò significa che non c'è più una sintassi di script dedicata per aggiungere un blocco di associazione a un elemento.
+As of CompatSkills 1.4.0 the binding locking has now been rolled in as a part of ItemStack-Locking. This means there is no longer a dedicated script syntax for adding a binding lock to an item.
 
-Questo cambiamento è anche venuto con alcuni altri cambiamenti. Ad esempio, il messaggio di errore predefinito visualizzato è stato modificato in alcuni punti:
+This change has also come with a few other changes. For example the default error message displayed has been changed in some regards:
 
-- Ora viene visualizzato accanto ai requisiti nella chat come un messaggio di stato solo giocatore
-- Il messaggio di errore è ora una stringa localizzabile: 
+- It now displays alongside requirements in the chat as a player-only status message
+- The error message is now a Localizable string: 
 
-    compatskills.bloodmagic.bindingError=Untold Dark Energies ruotano intorno a te e poi si abbassano
+    compatskills.bloodmagic.bindingError=Untold Dark Energies swirl around you and then subside
     
 
-Ciò significa che gli autori del pacchetto di risorse possono ora localizzare il messaggio di errore in qualsiasi lingua desiderata. Questo significa anche che è possibile utilizzare mod come ResourceLoader o Base (Con ContentTweaker presente) per modificare la stringa di errore.
+This means that resource pack authors can now localize the error message into whatever language they want. This also means you can use mods like ResourceLoader or Base (With ContentTweaker present) to change the error string.

@@ -1,34 +1,34 @@
 # Loot Bags
 
-このパッケージでは、アイテムをLoot Bagsへ/から追加および削除できます。
+This package allows you to add and remove items to/from the Loot Bags.
 
 ## パッケージのインポート
 
-[パッケージとそのメソッドを](/AdvancedFunctions/Import/) インポートして、メソッドの再取得を促進できます。
+You can [import](/AdvancedFunctions/Import/) the package and its methods to facilitate the retrival of the methods.
 
 ```zenscript
 import mods.thaumcraft.LootBag;
 ```
 
-## 戦利品の種類
+## Loot types
 
-0 から 2 までの数字から関数への配列を指定する必要があります。  
-影響を受ける戦利品の種類を決定する。
+You need to provide an array of one or multiple numbers from 0 to 2 (inclusive) to the functions.  
+Those determine the type of lootbag to be affected.
 
 - 0: Common
-- 1: ふつうではない
-- 2: レア
+- 1: Uncommon
+- 2: Rare
 
-## アイテムを追加中
+## Adding items
 
-注意:ゴールドコインは2000の値を持って、ダイヤモンドは50です。
+Notice: Gold coins have a value of 2000, diamonds are 50.
 
 ```zenscript
 //mods.thaumcraft.LootBag.addLoot(WeightedItemStack stack, int[] bagTypes)
 mods.thaumcraft.LootBag.addLoot(<minecraft:dirt>%20000, [0,1,2]);
 ```
 
-## 項目を削除中
+## Removing items
 
 ```zenscript
 //mods.thaumcraft.LootBag.removeLoot(IItemStack stack, int[] bagTypes);

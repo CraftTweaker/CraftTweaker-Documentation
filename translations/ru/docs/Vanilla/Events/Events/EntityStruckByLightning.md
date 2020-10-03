@@ -1,6 +1,6 @@
 # EntityStruckByLightning
 
-Событие EntityStruckByLightning запускается всякий раз, когда молния заканчивается ударом объекта.
+The EntityStruckByLightning event is fired whenever a lightning bolt is about to hit an entity.
 
 ## Класс события
 
@@ -10,15 +10,15 @@ You can, of course, also [import](/AdvancedFunctions/Import/) the class before a
 
 ## Наследование от интерфейсов событий
 
-События LivingEntityUseItem реализуют следующие интерфейсы и также могут вызвать все их методы/getters/setters:
+LivingEntityUseItem Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
 
 - [ILivingEvent](/Vanilla/Events/Events/ILivingEvent/)
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 
 ## Геттеры/сеттеры
 
-Во время события можно извлечь/задать следующую информацию:
+The following information can be retrieved/set during the event:
 
-| Геттеры  | Возвращаемый тип                      |
-| -------- | ------------------------------------- |
-| `молния` | [IEntity](/Vanilla/Entities/IEntity/) |
+| ZenGetter   | Возвращаемый тип                      |
+| ----------- | ------------------------------------- |
+| `lightning` | [IEntity](/Vanilla/Entities/IEntity/) |

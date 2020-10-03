@@ -1,30 +1,30 @@
 # PlayerUseItemStart
 
-L'evento PlayerUseItemStart viene sparato ogni volta che un giocatore inizia ad usare un oggetto.
+The PlayerUseItemStart Event is fired whenever a player starts using an item.
 
-## Classe Evento
+## Event Class
 
-Dovrai lanciare l'evento nell'intestazione della funzione come questa classe:  
-`crafttweaker.event. layerUseItemStartEvent`  
-È possibile, naturalmente, anche [importare](/AdvancedFunctions/Import/) la classe prima e utilizzare quel nome allora.
+You will need to cast the event in the function header as this class:  
+`crafttweaker.event.PlayerUseItemStartEvent`  
+You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
 
-## Estensioni dell'interfaccia evento
+## Event interface extensions
 
-Gli eventi PlayerUseItemStart implementano le seguenti interfacce e sono in grado di chiamare anche tutti i loro metodi/getters/setter:
+PlayerUseItemStart Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
 
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 - [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
 
 ## ZenGetters
 
-Le seguenti informazioni possono essere ricavate dall'evento:
+The following information can be retrieved from the event:
 
-| ZenGetter   | Tipo Di Reso                             |
-| ----------- | ---------------------------------------- |
-| `annullato` | boolean                                  |
-| `giocatore` | [IPlayer](/Vanilla/Players/IPlayer/)     |
-| `elemento`  | [IItemStack](/Vanilla/Items/IItemStack/) |
+| ZenGetter  | Return Type                              |
+| ---------- | ---------------------------------------- |
+| `canceled` | boolean                                  |
+| `player`   | [IPlayer](/Vanilla/Players/IPlayer/)     |
+| `item`     | [IItemStack](/Vanilla/Items/IItemStack/) |
 
 ## ZenMethods
 
-- `event.cancel()` imposta l'evento come annullato
+- `event.cancel()` sets the event as cancelled

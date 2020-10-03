@@ -1,20 +1,20 @@
 # Empowerer
 
-## Pacchetto
+## Package
 
 `mods.actuallyadditions.Empowerer`
 
-## Addizione
+## Addition
 
 ```zenscript
-mods.actuallyadditions.Empowerer.addRecipe(IItemStack output, IItemStack input, IItemStack modificier1, IItemStack modificier2, IItemStack modificier3, IItemStack modificier4, int energyPerStand, int time);
-mods.actuallyadditions. mpowerer.addRecipe(IItemStack output, IItemStack input, IItemStack modificier1, IItemStack modificier2, IItemStack modificier3, IItemStack modificier4, int energyPerStand, int tempo, float[] particleColourArray);
+mods.actuallyadditions.Empowerer.addRecipe(IItemStack output, IItemStack input, IItemStack modifier1, IItemStack modifier2, IItemStack modifier3, IItemStack modifier4, int energyPerStand, int time);
+mods.actuallyadditions.Empowerer.addRecipe(IItemStack output, IItemStack input, IItemStack modifier1, IItemStack modifier2, IItemStack modifier3, IItemStack modifier4, int energyPerStand, int time, float[] particleColourArray);
 
-mods. ctuallyadditions.Empowerer.addRecipe(<minecraft:iron_ingot>, <minecraft:leaves>, <minecraft:redstone>, <minecraft:redstone>, <minecraft:redstone>, <minecraft:redstone>, 500, 100);
-mods. ctuallyadditions.Empowerer.addRecipe(<minecraft:gold_ingot>, <minecraft:iron_ingot>, <minecraft:redstone>, <minecraft:redstone>, <minecraft:redstone>, <minecraft:redstone>, 500, 100, [0.5, 0.3, 0.2]);
+mods.actuallyadditions.Empowerer.addRecipe(<minecraft:iron_ingot>, <minecraft:leaves>, <minecraft:redstone>, <minecraft:redstone>, <minecraft:redstone>, <minecraft:redstone>, 500, 100);
+mods.actuallyadditions.Empowerer.addRecipe(<minecraft:gold_ingot>, <minecraft:iron_ingot>, <minecraft:redstone>, <minecraft:redstone>, <minecraft:redstone>, <minecraft:redstone>, 500, 100, [0.5, 0.3, 0.2]);
 ```
 
-## Rimozione
+## Removal
 
 ```zenscript
 //mods.actuallyadditions.Empowerer.removeRecipe(IItemStack output);

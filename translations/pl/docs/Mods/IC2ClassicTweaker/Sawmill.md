@@ -1,24 +1,24 @@
-# Tartak
+# Sawmill
 
-## Pakiet
+## Package
 
 ```java
-importuj mods.ic2.Tartak;
+import mods.ic2.Sawmill;
 ```
 
-## Metody
+## Methods
 
 - **[IItemStack](/Vanilla/Items/IItemStack/) output**
-- **[Składnik](/Vanilla/Variable_Types/IIngredient/) wejście**
+- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input**
 
-### Dodanie
+### Addition
 
 ```zenscript
-mods.ic2.Sawmill.addRecipe(wyjście IItemStack, Wejście IIngredienta);
+mods.ic2.Sawmill.addRecipe(IItemStack output, IIngredient input);
 
 mods.ic2.Sawmill.addRecipe(<minecraft:diamond_block>, <minecraft:dirt> * 64);
 ```
 
-### Usuwanie
+### Removal
 
-Aby usunąć już istniejący przepis, po prostu wyłącz odpowiedni przepis w `config/ic2/ic2machineRecipes.json`.
+To remove an already existing recipe, simply disable the corresponding recipe in `config/ic2/ic2machineRecipes.json`.

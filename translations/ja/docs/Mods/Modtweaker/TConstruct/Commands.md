@@ -3,16 +3,16 @@
 ModTweaker's Tinker's Construct integration extends the command palette provided by CraftTweaker.  
 To access these commands you do the same as you do for CraftTweaker commands, you use the `/crafttweaker` prefix
 
-# ティンカーのコマンドのリスト
+# List of Tinkers' Commands
 
-## ticmart
+## ticmat
 
-使用方法:
+Usage:
 
 `/crafttweaker ticmat`
 
-`/ct ticmat.`
+`/ct ticmat`
 
-説明:
+Description:
 
-ゲーム内で登録されている [ティンカーズ製の素材](/Mods/Modtweaker/TConstruct/Materials/ITICMaterial/) のリストをcrafttweaker.logファイルに出力します。
+Outputs a list of all registered [Tinkers' Construct Materials](/Mods/Modtweaker/TConstruct/Materials/ITICMaterial/) in the game to the crafttweaker.log file.

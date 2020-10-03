@@ -1,14 +1,14 @@
 # IEntityEvent
 
-Этот интерфейс расширен всеми событиями, которые могут иметь центральную сущность.
+This interface is extended by all Events that can have a central entity.
 
 ## Импорт класса
 
-Может потребоваться [импортировать](/AdvancedFunctions/Import/) класс, чтобы избежать ошибок.  
-`импорт crafttweaker.event.IEntityEvent;`
+It might be required to [import](/AdvancedFunctions/Import/) the class to avoid errors.  
+`import crafttweaker.event.IEntityEvent;`
 
-## Что можно сделать с ними?
+## What can be done with them?
 
-| name     | type                                  |
-| -------- | ------------------------------------- |
-| сущность | [IEntity](/Vanilla/Entities/IEntity/) |
+| name   | type                                  |
+| ------ | ------------------------------------- |
+| entity | [IEntity](/Vanilla/Entities/IEntity/) |

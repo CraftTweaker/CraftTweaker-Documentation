@@ -1,14 +1,14 @@
-# 内容较弱的材料系统
+# Contenttweaker Material System
 
-内容更弱不仅允许您添加单个物品到游戏中，而且还允许完整的材料！ 例如，您可以使用这些材料自动生成一块新矿石，并配备一些渔具、创作器等等！
+Contenttweaker allows you not only to add single items to the game but whole materials! You can for example use these materials to automatically generate a new ore together with gears, ingots and the like!
 
-有 5 个条款是重要的：
+There are 5 Terms that are important:
 
-- [Material](/Mods/ContentTweaker/Materials/Materials/Material/): The Material you will to add/use (e.g. Platinum) → the what projects are made of
-- [PartType](/Mods/ContentTweaker/Materials/Parts/PartType/): 基本上一个组 (例如Block, Item, Entity等) -> 部件类型
-- [部件](/Mods/ContentTweaker/Materials/Parts/Part/): 项目的窗体 (例如，Gear, Rod, Ingot等)
-- [材料部分](/Mods/ContentTweaker/Materials/Materials/MaterialPart/): 部件和材料的组合 (例如) 铁棒、白金宝石等)→ 可以用来返还物品，就像 [IItemStack](/Vanilla/Items/IItemStack/) 稍后。
-- [MaterialPartData](/Mods/ContentTweaker/Materials/Materials/MaterialPartData/): 有些配置 → 按零件类型排列的Varies，请检查wiki页面以获取更多信息。
+- [Material](/Mods/ContentTweaker/Materials/Materials/Material/): The Material you are going to add/use (e.g. Platinum) → What the items are made of
+- [PartType](/Mods/ContentTweaker/Materials/Parts/PartType/): Basically a group (e.g. Block, Item, Entity, etc) → The type of the parts
+- [Part](/Mods/ContentTweaker/Materials/Parts/Part/): The item's form (e.g. Gear, Rod, Ingot, etc)
+- [MaterialPart](/Mods/ContentTweaker/Materials/Materials/MaterialPart/): Combination of Part and Material (e.g. Iron rod, Platinum Gear, etc) → Can be used to return the item as [IItemStack](/Vanilla/Items/IItemStack/) later on.
+- [MaterialPartData](/Mods/ContentTweaker/Materials/Materials/MaterialPartData/): Some configurations → Varies by part type, check the wiki page for further information.
 
 ## 示例脚本
 

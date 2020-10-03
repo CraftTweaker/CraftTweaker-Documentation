@@ -1,90 +1,90 @@
 # IMachineRegistry
 
-Вы используете IMachineRegistry для регистрации [IMachine](/Mods/ExtraUtilities2/CustomMachines/IMachine) в игре, или для получения ранее зарегистрированной машины.
+You use the IMachineRegistry to register a new [IMachine](/Mods/ExtraUtilities2/CustomMachines/IMachine) to the game, or to retrieve a previously registered machine afterwards.
 
 ## Импорт пакета
 
-Если вы хотите сократить вызовы методов или столкнуться с любыми проблемами, вам может потребоваться [импортировать](/AdvancedFunctions/Import) пакет.  
-Вы можете сделать это, используя
+If you want to shorten method calls or encounter any issues you might need to [import](/AdvancedFunctions/Import) the package.  
+You can do so using
 
 ```zenscript
-• импортировать дополнительные утилиты2.Tweaker.IMachineRegistry;
+import extrautilities2.Tweaker.IMachineRegistry;
 ```
 
-## Создать машину
+## Create the machine
 
-Существует два типа машин:
+There are two types of machines:
 
-- Машины
-- Генераторы
+- Machines
+- Generators
 
-Машины потребляют энергию, генераторы выделяют энергию, в противном случае они ведут себя почти идентично.
+Machines consume energy, generators emit energy, otherwise they behave almost identically.
 
 ```zenscript
-extrautilities2.Tweaker.IMachineRegistry. reateNewMachine(
-    имя, 
+extrautilities2.Tweaker.IMachineRegistry.createNewMachine(
+    name, 
     energyBufferSize, 
-    energyTransferit, 
-    входных слотов, 
-    выходные слоты, 
-    фронтаТекстура, 
-    фронтальная Текстурия, цвет 
-
+    energyTransferLimit, 
+    inputSlots, 
+    outputSlots, 
+    frontTexture, 
+    frontTextureActive, 
+    color
 );
 
 
-экстраутилиты2. weaker.IMachineRegistry. reateNewGenerator(
-    имя,
-    объём буфера энергии
-    лимит энергии,
-    слота ввода,
-    выходные слоты,
-    фронтаТекстура,
-    передней Актуальной Текстуры,
-    цвет
+extrautilities2.Tweaker.IMachineRegistry.createNewGenerator(
+    name,
+    energyBufferSize,
+    energyTransferLimit,
+    inputSlots,
+    outputSlots,
+    frontTexture,
+    frontTextureActive,
+    color
 );
 ```
 
-Как вы можете видеть, оба метода принимают одни и те же параметры, единственная разница заключается в том, что они требуют или производят энергию.  
-Параметры являются:
+As you can see, both methods accept the same parameters, the only difference is if they require or produce energy.  
+The parameters are:
 
-| Название                     | Тип                                                                 |
-| ---------------------------- | ------------------------------------------------------------------- |
-| name                         | string                                                              |
-| Размер буфера энергии        | int                                                                 |
-| energyTransferLimit          | int                                                                 |
-| inputSlots                   | [[IMachineSlot](/Mods/ExtraUtilities2/CustomMachines/IMachineSlot)] |
-| outputSlots                  | [[IMachineSlot](/Mods/ExtraUtilities2/CustomMachines/IMachineSlot)] |
-| frontTexture                 | string                                                              |
-| Активный передний инструмент | string                                                              |
-| цвет (необязательно)         | int (по умолчанию `0xffffff` (черный)                               |
+| Название            | Тип                                                                 |
+| ------------------- | ------------------------------------------------------------------- |
+| name                | string                                                              |
+| energyBufferSize    | int                                                                 |
+| energyTransferLimit | int                                                                 |
+| inputSlots          | [[IMachineSlot](/Mods/ExtraUtilities2/CustomMachines/IMachineSlot)] |
+| outputSlots         | [[IMachineSlot](/Mods/ExtraUtilities2/CustomMachines/IMachineSlot)] |
+| frontTexture        | string                                                              |
+| frontTextureActive  | string                                                              |
+| color (optional)    | int (defaults to `0xffffff` (black))                                |
 
-Слоты принимают список [IMachineSlot](/Mods/ExtraUtilities2/CustomMachines/IMachineSlot). Списки могут быть созданы так же, как и массивы, используя [] вокруг слотов. Оба метода возвращают объект [IMachine](/Mods/ExtraUtilities2/CustomMachines/IMachine) , представляющий созданную машину.  
-Имейте в виду это, так как этот объект нужен для создания рецептов позже!
+The slots accept a list of [IMachineSlot](/Mods/ExtraUtilities2/CustomMachines/IMachineSlot). Lists can be created the same way as Arrays, by using [] around the slots. Both methods return an [IMachine](/Mods/ExtraUtilities2/CustomMachines/IMachine) object that represents the created machine.  
+Keep this in mind, as you need that object to create recipes later on!
 
-## Получить существующие машины
+## Get existing machines
 
-### Получить машину по имени
+### Get machine by name
 
-Вы можете получить уже сгенерированные машины с помощью реестра:
+You can get already generated machines using the Registry as well:
 
 ```zenscript
 extrautilities2.Tweaker.IMachineRegistry.getMachine(String name);
 ```
 
-Этот метод вернет машину с заданным именем как [IMachine](/Mods/ExtraUtilities2/CustomMachines/IMachine) или `null`
+This method will return the machine with the given name as [IMachine](/Mods/ExtraUtilities2/CustomMachines/IMachine) or `null`
 
-### Получить все зарегистрированные машины
+### Get all registered machines
 
-Это вернет все зарегистрированные машины в список [IMachine](/Mods/ExtraUtilities2/CustomMachines/IMachine).
+This will return all registered machines as list of [IMachine](/Mods/ExtraUtilities2/CustomMachines/IMachine).
 
 ```zenscript
 extrautilities2.Tweaker.IMachineRegistry.getRegisterdMachineNames();
 ```
 
-### Получить машины XU2
+### Get XU2 machines
 
-Вы также можете использовать эти гетеры для получения машин с мода XU2 как [IMachine](/Mods/ExtraUtilities2/CustomMachines/IMachine) объекта:
+You can also use these getters to get machines from the XU2 mod as [IMachine](/Mods/ExtraUtilities2/CustomMachines/IMachine) object:
 
     extrautilities2.Tweaker.IMachineRegistry.crusher;
     extrautilities2.Tweaker.IMachineRegistry.enchanter;

@@ -1,15 +1,15 @@
-# Máquina de enlatado sólida
+# Solid Canning Machine
 
-## Importando el Paquete
-`Maquina de cañón solidario mods.techreborn.`
+## Importing the Package
+`mods.techreborn.solidCanningMachine`
 
-## Añadiendo recetas
+## Adding Recipes
 ```zenscript
-mods.techreborn.solidCanningMachine.addRecipe(ItemStack output1, IIngredient input1, IIngredient input2, int ticktime, int euTick);
+mods.techreborn.solidCanningMachine.addRecipe(IItemStack output1, IIngredient input1, IIngredient input2, int ticktime, int euTick);
 ```
 
-## Eliminando recetas
+## Removing Recipes
 ```zenscript
-mods.techreborn.solidCanningMachine.removeRecipe(Salida ItemStack);
+mods.techreborn.solidCanningMachine.removeRecipe(IItemStack output);
 mods.techreborn.solidCanningMachine.removeAll();
 ```

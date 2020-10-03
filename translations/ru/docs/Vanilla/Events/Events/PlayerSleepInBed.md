@@ -1,6 +1,6 @@
-# SleepInBed
+# PlayerSleepInBed
 
-Событие SleepInBed запускается, когда игрок спит.
+Событие SleepInBed запускается, когда игрок спит. Это событие может контролировать, может ли игрок спать, установив `результат`.
 
 ## Класс события
 
@@ -10,18 +10,36 @@ You can, of course, also [import](/AdvancedFunctions/Import/) the class before a
 
 ## Наследование от интерфейсов событий
 
-PlayerSleepInBed Events реализуют следующие интерфейсы и также могут вызвать все методы/getters/setters:
+PlayerSleepInBed Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
 
-- [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
-- [Событие доступно](/Vanilla/Events/Events/IEventPositionable/)
+* [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
+* [IEventPositionable](/Vanilla/Events/Events/IEventPositionable/)
+
+## Типы результатов
+
+* YOU_PLAYLIST 
+* NOT_PLAYLIST 
+* Не сохранено 
+* ОК 
+* Другие ПРОБЛЕМЫ 
+* В ФАРЕ 
 
 ## ZenGetters
 
 Следующая информация может быть получена от события:
 
-| Геттеры  | Возвращаемый тип                     |
-| -------- | ------------------------------------ |
-| `х`      | int                                  |
-| `у`      | int                                  |
-| `z`      | int                                  |
-| `player` | [IPlayer](/Vanilla/Players/IPlayer/) |
+| ZenGetter | Возвращаемый тип                     |
+| --------- | ------------------------------------ |
+| `x`       | int                                  |
+| `y`       | int                                  |
+| `z`       | int                                  |
+| `player`  | [IPlayer](/Vanilla/Players/IPlayer/) |
+| `result`  | строка (возможные значения выше)     |
+
+## ZenSetters
+
+В ходе события можно задать следующее:
+
+| ZenSetter | Parameter Type                   |
+| --------- | -------------------------------- |
+| `result`  | строка (возможные значения выше) |

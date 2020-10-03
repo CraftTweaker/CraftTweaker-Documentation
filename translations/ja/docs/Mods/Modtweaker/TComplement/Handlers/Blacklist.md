@@ -1,19 +1,19 @@
-# ブラック リスト
+# Blacklist
 
-ブラックリストパッケージは、メルターブラックリストへのレシピの追加/削除に使用されます。
+The Blacklist package is used for adding/removing recipes from/to the melter Blacklist.
 
-## 発信中
+## Calling
 
-`mods.tcomplement.Blacklist` を使ってブラックリストパッケージを呼び出すことができます。
+You can call the Blacklist package using `mods.tcomplement.Blacklist`
 
-## ブラックリストエントリの追加
+## Blacklist entry addition
 
 ```zenscript
-//mods.tcomplement.Blacklist.addRecipe(ILiquidStack出力, IItemStack input);
+//mods.tcomplement.Blacklist.addRecipe(ILiquidStack output, IItemStack input);
 mods.tcomplement.Blacklist.addRecipe(<liquid:seared_stone>, <minecraft:stone>);
 ```
 
-## ブラックリストのエントリの削除
+## Blacklist entry removal
 
 ```zenscript
 //mods.tcomplement.Blacklist.removeRecipe(IItemStack input);

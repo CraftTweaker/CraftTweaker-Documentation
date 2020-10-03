@@ -1,67 +1,67 @@
-# Cuadrante
+# Squeezer
 
-Este paquete le permite modificar las recetas para el Squareezer.
+This package allows you to modify recipes for the Squeezer.
 
-## Importando el paquete
+## Importing the package
 
-Si quieres importar este paquete, aquí vas:
+If you want to import this package, here you go:
 
 ```zenscript
-importar mods.integrateddynamics.Square
+import mods.integrateddynamics.Squeezer;
 ```
 
-## Añadiendo recetas
+## Adding Recipes
 
 ```zenscript
-//Squeezer.addRecipe(IItemStack inputStack, @Optional ItemStack outputStack, @Optional ILiquidStack outputFluid);
+//Squeezer.addRecipe(IItemStack inputStack, @Optional IItemStack outputStack, @Optional ILiquidStack outputFluid);
 Squeezer.addRecipe(<minecraft:melon>, <minecraft:stick>, <liquid:water> * 100);
 
 
 
-//Squeezer. ddRecipe(IItemStack inputStack, 
-// @Optional ItemStack outputStack1, @Optional float outputStackChance1,
-// @Optional ItemStack outputStack outputStack2, @Optional float outputStackChance2,
-// @Optional ItemStack outputStack3, @Optional float outputStackChance3,
-// @Optional ILiquidStack outputFluid);
+//Squeezer.addRecipe(IItemStack inputStack, 
+//  @Optional IItemStack outputStack1, @Optional float outputStackChance1,
+//  @Optional IItemStack outputStack2, @Optional float outputStackChance2,
+//  @Optional IItemStack outputStack3, @Optional float outputStackChance3,
+//  @Optional ILiquidStack outputFluid);
 
 
-Cuadrillo. ddReceta(<minecraft:pumpkin>, 
+Squeezer.addRecipe(<minecraft:pumpkin>, 
     <minecraft:pumpkin_seeds>, 0.2,
-    <minecraft:iron_nugget>, 0. 1,
+    <minecraft:iron_nugget>, 0.01,
     <minecraft:cactus>, 0.5,
     <liquid:water> * 100);
 ```
 
-## Eliminando recetas
+## Removing Recipes
 
 ```zenscript
-//Squeezer.removeRecipe(ItemStack inputStack, @Optional ItemStack outputStack, @Optional ILiquidStack outputFluid);
+//Squeezer.removeRecipe(IItemStack inputStack, @Optional IItemStack outputStack, @Optional ILiquidStack outputFluid);
 //TODO
 
-//Squeezer. emoveRecipe(IItemStack inputStack,
-// @Optional ItemStack outputStack1, @Optional float outputStackChance1,
-// @Optional ItemStack outputStack outputStack2, @Optional float outputStackChance2,
-// @Optional ItemStack outputStack3, @Optional float outputStackChance3,
-// @Optional ILiquidStack outputFluid);
+//Squeezer.removeRecipe(IItemStack inputStack,
+//  @Optional IItemStack outputStack1, @Optional float outputStackChance1,
+//  @Optional IItemStack outputStack2, @Optional float outputStackChance2,
+//  @Optional IItemStack outputStack3, @Optional float outputStackChance3,
+//  @Optional ILiquidStack outputFluid);
 
-Squeezer. emoveRecipe(<minecraft:pumpkin>, 
+Squeezer.removeRecipe(<minecraft:pumpkin>, 
     <minecraft:pumpkin_seeds>, 0.2,
-    <minecraft:iron_nugget>, 0. 1,
+    <minecraft:iron_nugget>, 0.01,
     <minecraft:cactus>, 0.5,
     <liquid:water> * 100);
 
 
 
-//Squeezer. emoveRecipesWithOutput(@Optional ItemStack outputStack, @Optional ILiquidStack outputFluid);
+//Squeezer.removeRecipesWithOutput(@Optional IItemStack outputStack, @Optional ILiquidStack outputFluid);
 Squeezer.removeRecipesWithOutput(<minecraft:pumpkin_seeds>, <liquid:water>);
 
-//Squeezer. emoveRecipesWithOutput(@Optional ItemStack outputStack1, @Optional float outputStackChance1,
-// @Optional ItemStack outputStack2, @Optional float outputStackChance2,
-// @Optional ILiquidStack outputStack3, @Optional float outputStackChance3,
-// @Optional ILiquidStack outputFluid);
+//Squeezer.removeRecipesWithOutput(@Optional IItemStack outputStack1, @Optional float outputStackChance1,
+//  @Optional IItemStack outputStack2, @Optional float outputStackChance2,
+//  @Optional IItemStack outputStack3, @Optional float outputStackChance3,
+//  @Optional ILiquidStack outputFluid);
 
-Squeezer. emoveRecipesWithSalida(<minecraft:pumpkin_seeds>, 0.2,
-    <minecraft:iron_nugget>, 0. 1,
+Squeezer.removeRecipesWithOutput(<minecraft:pumpkin_seeds>, 0.2,
+    <minecraft:iron_nugget>, 0.01,
     <minecraft:cactus>, 0.5,
     <liquid:water> * 100);
 ```

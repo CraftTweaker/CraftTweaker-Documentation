@@ -1,13 +1,13 @@
-# 立方体
+# Cuisine
 
 ## 信息
 
-立方体是一个关于现实的烹饪艺术的模组。 Cuisine 有内置的 CraftTinver 支持，以允许modpack 创建器从Cuisine mod 更改各种设备的配方。
+Cuisine is a mod about realistic culinary art. Cuisine has built-in support for CraftTweaker to allow modpack creator to change recipes for various devices from the Cuisine mod.
 
-## 更多信息
+## For more Information
 
 https://www.curseforge.com/minecraft/mc-mods/cuisine
 
-## 错误报告
+## Bug reports
 
 https://github.com/Snownee/Cuisine/issues

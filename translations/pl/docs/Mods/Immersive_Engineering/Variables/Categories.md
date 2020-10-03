@@ -1,17 +1,17 @@
-# Kategorie
+# Categories
 
-## Informacje
+## Information
 
-Projekt ma wymagany parametr ciągu o nazwie "Kategoria". Ten ciąg pozwala "Kategoria" twoich przepisów do określonej kategorii planów.
+The Blueprint has a Required String parameter called "Category". This String allows you to "Categorise" your recipes to a specific Blueprint Category.
 
-Jeśli ten ciąg zwróci kategorię, która jeszcze nie istnieje, utworzy tę kategorię i odpowiedni schemat. Jeśli znajdzie istniejącą kategorię, doda przepis do tej kategorii.
+If this string returns a Category not already existing it'll create that Category and an appropriate Blueprint. If it finds an existing Category it'll add the recipe to said Category.
 
-### Istniejące kategorie
+### Existing Categories
 
-| Kategoria: | Nazwa:        | Zlokalizowana nazwa:       |
-| ---------- | ------------- | -------------------------- |
-| Kategoria  | komponenty    | Składniki rzemieślnicze    |
-| Kategoria  | metry         | Metalowe naciśnięcie Molds |
-| Kategoria  | pocisk        | Zwykłe pociski             |
-| Kategoria  | specialBullet | Wyspecjalizowane pociski   |
-| Kategoria  | elektroda     | Elektroniczne piece łukowe |
+| Category: | Name:         | Localized Name:         |
+| --------- | ------------- | ----------------------- |
+| Category  | components    | Crafting Components     |
+| Category  | molds         | Metal Press Molds       |
+| Category  | bullet        | Common Projectiles      |
+| Category  | specialBullet | Specialized Projectiles |
+| Category  | electrode     | Arc Furnace Electrodes  |

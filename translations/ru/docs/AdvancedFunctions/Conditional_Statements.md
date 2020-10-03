@@ -19,86 +19,86 @@ if(test == 0){ //true
 Выражение else может быть добавлено после условного выражения, чтобы объявить, что должно быть выполнено, если выражение из if ложно.
 
 ```zenscript
-испытание вар = 0;
+var test = 0;
 
 if(test == 0){//true
-    //будет выполнен, когда тест равен 0
-    print("Тест равен нулю! );
+    //will be executed when test is equal to 0
+    print("Test is zero!");
 } else {
-    //будет выполнен, когда тест не равен 0
-    print("Тест не нуль! );
+    //will be executed when test is not equal to 0
+    print("Test is NOT zero!");
 }
 
 test = 1
 if(test == 0){//false
-    //будет выполнено при равном 0
-    print("Теперь, тест равен нулю! );
+    //will be executed when test is equal to 0
+    print("Now, test is zero!");
 } else {
-    //будет выполнен, когда тест не равен 0
-    print("Теперь, тест не нулево! );
+    //will be executed when test is not equal to 0
+    print("Now, test is NOT zero!");
 }
 
 ```
 
 ## Вещи, которые можно проверять
 
-Поддерживаемые вычисления `+`,`-`,`*`,`/`,`мод`,`слияния(~)`
+Supported Calculations are `+`,`-`,`*`,`/`,`mod`,`concatenation(~)`
 
-Поддерживаемые операнды: `OR(|)`, `AND(&)`, `XOR(^)`
+Supported Operands are `OR(|)`, `AND(&)`, `XOR(^)`
 
 ```zenscript
-//Вы можете проверить:
+//You can check for:
 
 
-//Значения чисел
-val a = 0 int;
-if(a==0){print("NumVal");
+//Number values
+val a = 0 as int;
+if(a==0){print("NumVal");}
 
-//Вычисляемые числовые значения
+//Calculated number values
 val b = 1;
 val c = 5;
-//Все вычисляются истинно
-if(b+c==6){print("Num1! );}
+//All evaluate to true
+if(b+c==6){print("Num1!");}
 if(b*c==5){print("Num2!");}
-if(b/c==0. ){print("Num3! );}
+if(b/c==0.2){print("Num3!");}
 
 //OR, XOR, AND
-val d = "Привет";
-val e = "Мир";
-val f = d~e; //f = "HelloWorld", Tilde просто объединяет одну вещь в другую
+val d = "Hello";
+val e = "World";
+val f = d~e; //f = "HelloWorld", the Tilde just concatenates one thing to another
 
-//|(OR) означает, до тех пор, пока один из критериев будет выполнен, он вычисляет истину
-if(d=="Hello" | e == "Hello"){print("OR1! );} //true
-if(d=="Hello" | e == "World"){print("OR2! );} //истина
+//|(OR) means, as long as one of the criteria is met, it evaluates to true
+if(d=="Hello" | e == "Hello"){print("OR1!");}       //true
+if(d=="Hello" | e == "World"){print("OR2!");}       //true
 
-//^(XOR) означает ТОЛЬКО ОДИН критерии, иначе он вычисляет ложь
-if(d=="Hello" ^ e == "Hello"){print("XOR1! );} //true
-if(d=="Hello" ^ e == "World"){print("XOR2! );} //false
+//^(XOR) means, ONLY ONE criteria may be met, otherwise it evaluates to false
+if(d=="Hello" ^ e == "Hello"){print("XOR1!");}      //true
+if(d=="Hello" ^ e == "World"){print("XOR2!");}      //false
 
-//&(AND) означает оба критерия необходимо выполнить, иначе он вычисляет ложь
-if(d=="Hello" & e == "Hello"){print("AND1! );} //false
-if(d=="Hello" & e == "World"){print("AND2!");} //true
+//&(AND) means, both criteria need to be met, otherwise it evaluates to false
+if(d=="Hello" & e == "Hello"){print("AND1!");}      //false
+if(d=="Hello" & e == "World"){print("AND2!");}      //true
 ```
 
 ## Оператор ?
 
-Безусловно, всегда напечатайте структуру если /else может быть раздражающей. Особенно если вы просто хотите сделать или состояние. Именно поэтому оператор `?` был реализован. Он следует той же логике, что и заявление если/иначе, это только по гораздо меньше требуемого кода. Syntax: `boolean ? если : else`
+Surely, always typing out an if/else structure can be annoying. Especially if you just want to do an either or condition. That's why the `?` operator was implemented. It follows the same logic as an if/else statement, it only is by far less code required. Syntax: `boolean ? if : else`
 
 ```zenscript
 val switchy = false;
 
-//Состояние переключателя печати
-("Щит " ~ switchy);
+//prints switchy state
+print("Switchy is " ~ switchy);
 
-//Если переключатель истинен, vInt = 1, иначе vInt = 2
+//if switchy is true, vInt = 1, otherwise vInt = 2
 val vInt = switchy ? 1 : 2;
 print(vInt);
 
-//Вывод "Hello" если переключатель вешен, иначе напечатает "Bye"
+//Prints "Hello" if switchy is stue, otherwise prints "Bye"
 print(switchy ? "Hello" : "Bye");
 
-//Выводит "Bye", если переключатель верен, иначе напечатает "Hello"
-переключатель ? print("Bye") : print("Hello");
+//Prints "Bye" if switchy is true, otherwise prints "Hello"
+switchy ? print("Bye") : print("Hello");
 
 ```
 
@@ -106,37 +106,37 @@ print(switchy ? "Hello" : "Bye");
 
 Вы можете использовать следующие операторы. Все приведенные примеры истинны.
 
-| Название         | символ   | Объяснение                                                                                                          | Пример            |
-| ---------------- | -------- | ------------------------------------------------------------------------------------------------------------------- | ----------------- |
-| Не               | `!`      | Инвертирует логическое значение                                                                                     | !false            |
-| Не равно         | `!=`     | Проверяет, что значение перед знаком и после него не равны                                                          | ! != 2            |
-| Равно            | `==`     | Проверяет, что значение перед знаком и после равны                                                                  | 1 == 1            |
-| Больше           | `>`   | Проверят, что значение перед знаком больше, чем то, что после                                                       | 1 > 2             |
-| Больше или равно | `>=`  | Проверят, что значение перед знаком больше или равно тому, что после                                                | 1 >= 1            |
-| Меньше           | `<`   | Проверяет, что значение перед знаком меньше, чем то, что после                                                      | 1 < 2             |
-| Меньше или равно | `<=`  | Проверяет, что значение перед знаком меньше или равно тому, что после                                               | 1 <= 1            |
-| И                | `&`  | Проверяет, что выражения и перед знаком, и после него истинны                                                       | true & true       |
-| ИЛИ              | `&#124;` | Проверят, что истинно либо значение перед знаком, либо значение после знака. Если верны оба, то все выражение верно | истина \| истина |
-| ИЛИ-ИСКЛ         | `^`      | Проверяет, что ровно одно значение либо перед, либо после знака верно                                               | true ^ false      |
+| Название         | символ   | Объяснение                                                                                                          | Пример        |
+| ---------------- | -------- | ------------------------------------------------------------------------------------------------------------------- | ------------- |
+| Не               | `!`      | Инвертирует логическое значение                                                                                     | !false        |
+| Не равно         | `!=`     | Проверяет, что значение перед знаком и после него не равны                                                          | ! != 2        |
+| Равно            | `==`     | Проверяет, что значение перед знаком и после равны                                                                  | 1 == 1        |
+| Больше           | `>`   | Проверят, что значение перед знаком больше, чем то, что после                                                       | 1 > 2         |
+| Больше или равно | `>=`  | Проверят, что значение перед знаком больше или равно тому, что после                                                | 1 >= 1        |
+| Меньше           | `<`   | Проверяет, что значение перед знаком меньше, чем то, что после                                                      | 1 < 2         |
+| Меньше или равно | `<=`  | Проверяет, что значение перед знаком меньше или равно тому, что после                                               | 1 <= 1        |
+| И                | `&`  | Проверяет, что выражения и перед знаком, и после него истинны                                                       | true & true   |
+| ИЛИ              | `&#124;` | Проверят, что истинно либо значение перед знаком, либо значение после знака. Если верны оба, то все выражение верно | true \| true |
+| ИЛИ-ИСКЛ         | `^`      | Проверяет, что ровно одно значение либо перед, либо после знака верно                                               | true ^ false  |
 
 ## Оператор in/has
 
-`в` и `оператор` проверит, что-то ли в чем-то еще.  
-Для начала вам нужен список, который вы хотите проверить, тогда `в`/`имеет` , затем значение, которое вы хотите проверить. `in` and `has` are the same keyword for ZS, but in most cases people use `has` for checking if a collection contains an item and in for loops as this represents the English grammar.
+The `in` and the `has` operator check if something is in something.  
+First you need the list you want to check in, then the `in`/`has` then the value you want to check for. `in` and `has` are the same keyword for ZS, but in most cases people use `has` for checking if a collection contains an item and in for loops as this represents the English grammar.
 
 ### in/has loadedMods
 
-Вы можете проверить, загружен ли мод, проверив его ли в списке загруженных модов
+You can check, if a mod is loaded by checking if it's in the loadedMods list
 
 ```zenscript
-//В то время как проверки могут использоваться в
-if(loadedMods в "mcp"){
-    print("Minecraft Coder Pack загружен");
+//While contains checks can use in
+if(loadedMods in "mcp"){
+    print("Minecraft Coder Pack loaded");
 }
 
-//Большинство людей предпочитают использовать
-if(loadedMods имеет "mcp"){
-    print("Minecraft Coder Pack загружен");
+//Most people prefer using has
+if(loadedMods has "mcp"){
+    print("Minecraft Coder Pack loaded");
 }
 ```
 
@@ -149,7 +149,7 @@ In most cases you will use the `has` keyword instead as it's intention is more c
 
 ```zenscript
 if(<ore:ingotIron> in <minecraft:iron_ingot>){
-    print("Железные слитки находятся в правой oreDic");
+    print("Iron ingots are in the right oreDic");
 }
 
 if(<ore:ingotIron> has <minecraft:iron_ingot>){
@@ -157,21 +157,21 @@ if(<ore:ingotIron> has <minecraft:iron_ingot>){
 }
 ```
 
-Это только тогда правда, когда ВСЕ совпадающие элементы из IIngredient AFTER `есть` также могут быть найдены в IIngredient ``: Скажем, у нас есть ингредиент, содержащий все пыли (e. . красный и светлокаменный пыль):
+This is only then true, when ALL matching items from the IIngredient AFTER the `has` can also be found in the IIngredient BEFORE `has`: Say we have an IIngredient that contains all dusts (e.g. redstone and glowstone dust):
 
 ```zenscript
 val redstone = <minecraft:redstone>;
 val glowstone = <minecraft:glowstone>
 val allDusts = <ore:dustAll>;
-allDusts. dd(красный камень, светящий);
+allDusts.add(redstone, glowstone);
 
-//Истинно редстоун является частью alldusts
+//True as redstone is a part of alldusts
 if(allDusts has redstone) {
 
 }
 
-//Ложь, как allDusts состоит из красного камня и светлокамня, и красный камень только состоит из красного камня.
-if(redstone имеет allDusts) {
+//False as allDusts consists of redstone and glowstone, and redstone only consists of redstone.
+if(redstone has allDusts) {
 
 }
 ```

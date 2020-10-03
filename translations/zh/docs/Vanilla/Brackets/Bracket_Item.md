@@ -1,16 +1,16 @@
-# 物品栏处理器
+# Item Bracket Handler
 
-物品栏处理程序让您可以访问游戏中的物品。 它只能在游戏中注册项目。 这样添加或移除模组可能会导致问题，因为你在ITem Backet处理器中引用模组的项目。
+The Item Bracket Handler gives you access to the Items in the game. It is only possible to get items registered in the game, so adding or removing mods may cause issues if you reference the mod's items in an ITem Bracket Handler.
 
-项目在物品栏处理程序中如此引用：
+Items are referenced in the Item Bracket Handler by like so:
 
 ```zenscript
 <modid:itemname>
 ```
 
-使用 `样式` 作为物品所属的模组的模组， 和 `项目名称` 为项目名称， 建议使用 `/ct hand` 获取正确的项目名称。
+With the `modid` being the modid of the mod that the Item belongs to, and `itemname` being the name of the item, It is recommended to use `/ct hand` to get the correct name of the item.
 
-一般情况下就是这样：
+Generally it is like this though:
 
 ```zenscript
 <item:modid:itemname:meta>
@@ -21,31 +21,31 @@ As you've seen above: Optional.
 Usually you will never need this, unless dealing with several custom bracket handlers.  
 `modid` is the modid of the mod that the Item belongs to.  
 `itemname` is the name of the item, use /ct hand to get the correct name.  
-`meta` is the meta value of the item (e.g. Damage value, types, etc.). 这是一个整数。  
-你也可以使用通配符 `*` 来处理所有元值。  
-也可选：如果遗漏，则为0。
+`meta` is the meta value of the item (e.g. Damage value, types, etc.). This is an Integer.  
+You can also use a wildcard `*` to address all meta values.  
+Also optional: If left out it will be 0.
 
-通常，这将返回一个 IItemStack 对象。  
-请参考 [相应的 wiki 条目](/Vanilla/Items/IItemStack/) 以获取更多信息。
+Normally, this will return an IItemStack Object.  
+Please refer to [the respective wiki entry](/Vanilla/Items/IItemStack/) for further information.
 
 ## 例子
 
-物品栏处理程序的一个例子是：
+An example of the Item Bracket Handler would be:
 
 ```zenscript
-//appe
+//apple
 <minecraft:apple>
 
-/coal
+//coal
 <minecraft:coal>
 <minecraft:coal:0>
 
-//木炭
+//charcoal
 <minecraft:coal:1>
 
-//both 、煤和木炭
+//both, coal and charcoal
 <minecraft:coal:*>
 <item:minecraft:coal:*>
 ```
 
-这将使您能够访问 `苹果` 项目。
+This will give you access to the `Apple` item.

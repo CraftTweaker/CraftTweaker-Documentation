@@ -1,35 +1,35 @@
-# Питающие вещи :: Жидкие горелки :: Топливо
+# Powered Thingies :: Fluid Burner :: Fuel
 
-### Импорт
+### Importing
 
 ```zenscript
-• импортировать mods.poweredthingies.Tweaker.fluidBurnerFuelTweaker в качестве топлива;
+import mods.poweredthingies.Tweaker.fluidBurnerFuelTweaker as fuel;
 ```
 
-### Список ключей, удаление рецептов по ключу, очистка
+### Listing Keys, Removing Recipes by Key, Clearing
 
 ```zenscript
 fuel().logKeys()
-fuel().removeRecipe('liquid:fluid_lava') // проверьте <logKeys> вывод для допустимых ключей
+fuel().removeRecipe('liquid:fluid_lava') // check <logKeys> output for valid keys
 fuel().clear()
 ```
 
-### Добавление рецепта
+### Adding Recipe
 
-##### Подпись
+##### Signature
 
 ```zenscript
-addFuel(fluid: ILiquidStack, тики: Int)
+addFuel(fluid: ILiquidStack, ticks: Int)
 ```
 
-`такты` представляют количество тактов, на которые будет сжигаться указанное топливо.
+`ticks` represents the number of ticks the specified fuel will burn for.
 
 ##### Пример
 
 ```zenscript
-топливо().addFuel(<liquid:tf-sewage> * 50, 100);
+fuel().addFuel(<liquid:tf-sewage> * 50, 100);
 ```
 
-### Примечания
+### Notes
 
-Все эти действия будут кэшироваться и запускаться после завершения регистрации реестра по умолчанию (в том числе от пользовательских json).
+All of these actions will get cached and ran after the default registry for this machine has finished registering all recipes (including the ones from the custom jsons).

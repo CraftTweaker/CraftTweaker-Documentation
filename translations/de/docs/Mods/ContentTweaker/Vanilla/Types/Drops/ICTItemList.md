@@ -1,34 +1,34 @@
 # ICTItemList
 
-Die ICTItemList ist das, was ein [IBlockDropHandler](/Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IBlockDropHandler/) als erster Parameter verwendet.  
-Es ist eine Liste von Elementen, die vom angegebenen [Block](/Mods/ContentTweaker/Vanilla/Creatable_Content/Block/)fallen gelassen werden.  
-Abhängig von anderen Eventhandlern kann es bereits einige Elemente enthalten, oder es kann leer sein.
+The ICTItemList is what an [IBlockDropHandler](/Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IBlockDropHandler/) uses as first parameter.  
+It is a list of items that will be dropped by the given [Block](/Mods/ContentTweaker/Vanilla/Creatable_Content/Block/).  
+Depending on other event handlers active it might already contain some items, or it might be empty.
 
 ## Diese Klasse importieren
 
-Wenn du jemals diese Klasse importieren musst, ist es so, wie du es machst:
+If you ever find yourself in need of importing this class, this is how you do it:
 
 ```zenscript
 import mods.contenttweaker.ItemList;
 ```
 
-## Hinzufügen von Elementen zur Liste
+## Adding items to the list
 
-Sie können [IItemStacks](/Vanilla/Items/IItemStack/) oder [Gewichtete Artikel](/Vanilla/Items/WeightedItemStack/) zur Liste mit den folgenden Funktionen hinzufügen:
+You can add [IItemStacks](/Vanilla/Items/IItemStack/) or [WeightedItemStacks](/Vanilla/Items/WeightedItemStack/) to the list using the functions below:
 
 ```zenscript
 list.add(<minecraft:carrot>);
 
-Liste + <minecraft:carrot>;
+list + <minecraft:carrot>;
 
 list.add(<minecraft:seeds> % 10);
 
-Liste + (<minecraft:seeds> % 10);
+list + (<minecraft:seeds> % 10);
 ```
 
-## Entferne Elemente aus der Liste
+## Removing items from the list
 
-Sie können nur Elemente mit dem Index des Elements entfernen oder die ganze Liste löschen.
+You can only remove items using the item's index, or you can clear the whole list.
 
 ```zenscript
 list.remove(1);
@@ -36,9 +36,9 @@ list.remove(1);
 list.clear();
 ```
 
-## Lade Elemente aus der Liste
+## Getting items from the list
 
-Sie können entweder ein Element nach seinem Index erhalten oder die ganze Liste entweder als Array oder als Liste:
+You can either get an item by its index or you can get the whole list as either an array or a list:
 
 ```zenscript
 import crafttweaker.item.IItemStack;
@@ -50,10 +50,10 @@ val itemArray = list.getArray(); //as IItemStack[]
 val itemList = list.getList(); //as [IItemStack]
 ```
 
-## Sonstige Informationen
+## Other information
 
-Sie können diese Informationen auch von der Liste abfragen:
+You can also retreive this information from the list:
 
 ```zenscript
-list.getLänge();
+list.getLength();
 ```

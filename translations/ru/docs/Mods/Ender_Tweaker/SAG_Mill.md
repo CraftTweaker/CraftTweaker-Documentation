@@ -1,30 +1,30 @@
 # SAG Mill
 
-## Пакет
+## Package
 
 `import mods.enderio.SagMill;`
 
-## Методы
+## Methods
 
-- **[IItemStack](/Vanilla/Items/IItemStack/)[] вывод** результатов рецепта.
-- **плавает[] шанс** шанс появления этого предмета. Должен иметь ту же длину, что и выход.
+- **[IItemStack](/Vanilla/Items/IItemStack/)[] output** The results of the recipe.
+- **float[] chances** The chance that this item appears. Must have the same length as output.
 - **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input** The input.
-- **String bonusType** Это влияет на работу шлифовальных шаров. Может быть NONE (не бонус), MULTIPLY_OUTPUT (может увеличить шанс > 1.0), и CHANCE_ТОЛЬКО (шанс на 1.0).
-- **int energyCost** Сколько FE использует рецепт. По умолчанию 5000.
-- **float xp** xp дается из этого рецепта. Не может быть отрицательным.
+- **String bonusType** This impacts how Grinding Balls work. May be NONE (no bonus), MULTIPLY_OUTPUT (can increase chance > 1.0), and CHANCE_ONLY (caps chance at 1.0).
+- **int energyCost** How much FE the recipe uses. Defaults to 5000.
+- **float xp** The xp is granted from this recipe. May not be negative.
 
 ## Сложение
 
 ```zenscript
-mods.enderio.SagMill.addRecipe(IItemStack[] Выход, float[] попытки, IIngredient input, @Optional String bonusType, @Optional int energyCost, @Optional float[] xp);
+mods.enderio.SagMill.addRecipe(IItemStack[] output, float[] chances, IIngredient input, @Optional String bonusType, @Optional int energyCost, @Optional float[] xp);
 
-mods.enderio.SagMill.addRecipe([<minecraft:planks>], [100], <minecraft:log>
+mods.enderio.SagMill.addRecipe([<minecraft:planks>], [100], <minecraft:log>);
 ```
 
-## Удаление
+## Removal
 
 ```zenscript
-mods.enderio.SagMill.removeRecipe(Ввод IItemStack);
+mods.enderio.SagMill.removeRecipe(IItemStack input);
 
 mods.enderio.SagMill.removeRecipe(<minecraft:cobblestone>);
 ```

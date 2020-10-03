@@ -1,46 +1,46 @@
-# Variables globales y estáticas
+# Global and Static Variables
 
-Seguro que ha estado en la situación en la que ha declarado la misma variable en cada guión una y otra vez.  
-"¿Por qué no hay forma de hacerlos disponibles en cada script?" ¿Es lo que pasó por tu cabeza en esos momentos.
+Sure you have been in the situation where you declared the same variable in each and every script over and over again.  
+"Why is there no way to make them available in every script?" Is what went through your head at such times.
 
-¡Sean aliviados ahora porque se ha añadido un medio para declarar y acceder a valores globales y (estáticos)!  
-No se pueden cambiar, sin embargo.
+Be relieved now for there has been added a means of declaring and accessing global and scriptbound (static) values!  
+They cannot be changed, though.
 
-## Diferencia entre estática y global
+## Difference between statics and globals
 
-Ambos, estáticos y globales son guiones e instanciados antes de que el script sea ejecutado.  
-Ambos no pueden ser cambiados.  
-La diferencia es cómo se llaman:  
-Los globales pueden ser llamados desde cualquier lugar simplemente por su nombre a menos que usted ya tenga una variable local que tenga el mismo nombre.  
-Por otra parte, las estáticas necesitan utilizar la referencia de script cruzado [](/AdvancedFunctions/Cross-Script_Reference/) para poder acceder a ellas.
+Both, statics and globals are scriptbound and instantiated before the script is executed.  
+Both cannot be changed.  
+The difference is how they are called:  
+Globals can be called from everywhere simply by their name unless you already have a local variable that has the same name.  
+Statics on the other hand, need to use the [cross-script reference](/AdvancedFunctions/Cross-Script_Reference/) to be accessed.
 
-Los globales se crean usando la palabra clave `global` .  
-Estáticos se crean usando la palabra clave `static`.
+Globals are created using the `global` keyword.  
+Statics are created using the `static` keyword.
 
-Aparte de eso, ¡son idénticos!
+Aside from that, they are identical!
 
-## Declarando un valor global
+## Declaring a global value
 
-Declarar un valor global es tan simple como declarar un valor local:
+Declaring a global value is as simple as declaring a local value:
 
 ```zenscript
 import crafttweaker.item.IItemStack;
 
 
-global myGlobalValue as ItemStack = <minecraft:dirt>;
-static myStaticValue as ItemStack = <minecraft:sand>;
+global myGlobalValue as IItemStack = <minecraft:dirt>;
+static myStaticValue as IItemStack = <minecraft:sand>;
 ```
 
-Vale, vamos a romperlo, ¿no?
+Okay, let's break it down, shall we?
 
-1. `palabra clave` global que indica la declaración de un valor global
-2. `myGlobalValue` el nombre del valor
-3. `como ItemStack` el tipo del valor (Se recomienda [importar](/AdvancedFunctions/Import/) los tipos antes de lanzar la variable)
-4. `= <minecraft:dirt>;` inicialización de valor. Como los valores globales son finales, ¡necesita inicializarlos mientras se declaran!
+1. `global` keyword that indicates the declaration of a global value
+2. `myGlobalValue` the name of the value
+3. `as IItemStack` the type of the value (It is recommended to [import](/AdvancedFunctions/Import/) the types before casting the variable)
+4. `= <minecraft:dirt>;` value initialization. As global values are final, you need to initialize them whilst declaring them!
 
-## Palabras de consejos
+## Words of advice
 
-- Sólo puede acceder a los globales que ya han sido declarados. Use the [Priority Preprocessor](/AdvancedFunctions/Preprocessors/PriorityPreprocessor/) to make sure the scripts in which global are declared are executed first.
-- Los globales no pueden ser declarados en scripts que están dentro de subcarpetas! Se compilará pero quedará con una enorme Excepción FieldNotFound .
-- Aunque técnicamente es posible omitir el `como` parte, se recomienda dejarlo dentro, ya que la interfaz de IAny aún no es totalmente funcional. ¡Además, hace que su declaración sea más clara para la gente leyendo/depurando su script!
-- Variables/valores locales CAN eclipsa variables globales. El script siempre buscará el alcance más interior de variables y saldrá hacia afuera hasta que alcance global cuando busque palabras clave!
+- You can only access globals that have already been declared. Use the [Priority Preprocessor](/AdvancedFunctions/Preprocessors/PriorityPreprocessor/) to make sure the scripts in which global are declared are executed first.
+- Globals cannot be declared in scripts that are inside subfolders! It will compile but you will be left with a huge FieldNotFound Exception.
+- While it is technically possible to omit the `as` part, it is recommended leaving it in, as the IAny interface is not fully functional yet. Also, it makes your declaration more clear for people reading/debugging your script!
+- Local variables/values CAN overshadow global variables. The script will always search the innermost scope for variables and go outwards until it hits global when searching for keywords!

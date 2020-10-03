@@ -1,4 +1,4 @@
-# 既定の変換:
+# Default Transmutations:
 
     Using Reagent: Chorus Fruit
     

@@ -1,18 +1,18 @@
-# ILocalizedNameサプライヤー
+# ILocalizedNameSupplier
 
-ILocalizedNameSupplier 関数はプログラム的に [アイテム](/Mods/ContentTweaker/Vanilla/Creatable_Content/Item/) の表示名を決定するために使用されます。
+The ILocalizedNameSupplier function is used to programmatically determine an [Item's](/Mods/ContentTweaker/Vanilla/Creatable_Content/Item/) display name.
 
-## クラスをインポートする
+## importing the class
 
-関数のクラスをインポートしたい場合は、次のようにします。
+If you want to import the function's class, here you go:
 
 ```zenscript
 import mods.contenttweaker.LocalizedNameSupplier;
 ```
 
-## 関数のセットアップ
+## The function setup
 
-関数は文字列を返し、 [IItemStack](/Vanilla/Items/IItemStack/) を単一の入力パラメータとして取ります。
+The function returns a string and takes an [IItemStack](/Vanilla/Items/IItemStack/) as single input parameter.
 
 ```zenscript
 item.setLocalizedNameSupplier(function(itemStack) {

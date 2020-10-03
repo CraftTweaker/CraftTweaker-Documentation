@@ -1,46 +1,46 @@
-# Avisado
+# Saw
 
-## Receta básica
+## Basic Recipe
 
-* Añade una receta de Saw - las entradas *DEBEN* tener un bloque asociado con ellas.
+* Adds Saw Recipe - inputs *MUST* have a block associated with them.
 
 ```zenscript
-mods.betterwithmods.Saw.add(entrada IIngredient, salida ItemStack[]);
-//Ejemplos
+mods.betterwithmods.Saw.add(IIngredient input, IItemStack[] output);
+//Examples
 mods.betterwithmods.Saw.add(<minecraft:fence>,[<minecraft:stick>,<minecraft:stick>]);
 ```
 
-## Eliminar por entrada
+## Removal by input
 
-* Elimina una receta basada en el ingrediente de entrada
+* Remove a recipe based on the input ingredient
 
 ```zenscript
 mods.betterwithmods.Saw.remove(IIngredient input);
 ```
 
-## Eliminar por salida
+## Removal by output
 
-* Elimina una receta basada en la salida
+* Remove a recipe based on the output
 
 ```zenscript
-mods.betterwithmods.Saw.remove(ItemStack[] salidas);
+mods.betterwithmods.Saw.remove(IItemStack[] outputs);
 ```
 
-## Eliminar todo
+## Remove all
 
-* Eliminar todas las recetas
+* Remove all recipes
 
 ```zenscript
 mods.betterwithmods.Saw.removeAll();
 ```
 
-## Constructor
+## Builder
 
-La Saw tiene un constructor de recetas. Debido a la naturaleza de la sierra que actualmente no tiene métodos especiales de construcción, voy a documentarlo de ninguna manera.
+The Saw has a recipe builder. Due to the nature of the saw it currently has no special builder methods, I will document it none-the-less.
 
-* Crear un nuevo constructor de Saw. `mods.betterwithmods.Saw.builder()`
+* To create a new Saw builder. `mods.betterwithmods.Saw.builder()`
 
-* Métodos de borrado
+* Saw methods
      
      * Sets up the inputs and outputs of the recipe  
           zenscript buildRecipe(IIngredient[] inputs, IItemStack[] outputs)  
@@ -54,7 +54,7 @@ La Saw tiene un constructor de recetas. Debido a la naturaleza de la sierra que 
                     zenscript
                     build()
 
-### Ejemplo de uso del constructor
+### Example builder usage
 
     mods.betterwithmods.Saw.builder()
     .buildRecipe([<minecraft:oak_fence>], [<minecraft:stick>*6])

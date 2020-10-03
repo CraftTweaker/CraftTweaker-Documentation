@@ -1,27 +1,27 @@
-# 蒸汽熔炉：
+# Steam Furnace
 
-Steam Furnace 是一个用蒸汽将输入项转换为输出项的机器。
+The Steam Furnace is a machine that converts an input item into an output item using steam.
 
 ## 所属包名
-`steamagerevolution.SteamFurnace`
+`mods.steamagerevolution.SteamFurnace`
 
 ## 方法
 
-- **[IItemStack](/Vanilla/Items/IItemStack/) 输出** 该配方的结果。
-- **[IItemStack](/Vanilla/Items/IItemStack/) 输入** 该配方的输入.
-- **整理时间** 机器处理的制造时间
-- **整流蒸汽成本** 机器处理蒸汽成本
+- **[IItemStack](/Vanilla/Items/IItemStack/) output** The result of the recipe.
+- **[IItemStack](/Vanilla/Items/IItemStack/) input** The input of the recipe.
+- **int craftTime** Crafting time for machine to process
+- **int steamCost** Cost of Steam for machine to process
 
 ## 添加配方
 
 ```zenscript
 mods.steamagerevolution.SteamFurnace.addRecipe(IIngredient input, IItemStack output, int craftTime, int steamCost);
-mods.steamagerevolution.Steamace.addRecipe(<ore:cobblestone>, <minecraft:stone>, 200, 200);
+mods.steamagerevolution.SteamFurnace.addRecipe(<ore:cobblestone>, <minecraft:stone>, 200, 200);
 ```
 
 
-## 移除
+## Removal
 
-```zenscript mods.steamagerevolution.Steamfurnace.removeRecipe(IItemStack output); mods.steamagerevolution.SteamFurnace.removeRecipe(<minecraft:glass>);
+```zenscript mods.steamagerevolution.SteamFurnace.removeRecipe(IItemStack output); mods.steamagerevolution.SteamFurnace.removeRecipe(<minecraft:glass>);
 
 mods.steamagerevolution.SteamFurnace.removeAll(); ``

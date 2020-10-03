@@ -10,29 +10,29 @@ It might be required for you to import the package if you encounter any issues (
 
 ## Calling an IItemStack
 
-IItemStack を返すいくつかのメソッドがあります
+There are several methods that return an IItemStack
 
-* [ブラケットハンドラ](/Vanilla/Brackets/Bracket_Item/) `<minecraft:apple>` を使用する
-* `IItemDefinition` オブジェクトの [makeStack()](/Vanilla/Items/IItemDefinition/) メソッドを使用する `<minecraft:stone>.definition.makeStack(0)`
-* `スタック` を [IEntityDrop](/Vanilla/Entities/IEntityDrop/) オブジェクトに使用する
-* `firstItem` を使用して [IOreDictEntry](/Vanilla/OreDict/IOreDictEntry/) を取得する
+* Using the [bracket Handler](/Vanilla/Brackets/Bracket_Item/) `<minecraft:apple>`
+* Using the `makeStack()` method on a [IItemDefinition](/Vanilla/Items/IItemDefinition/) object `<minecraft:stone>.definition.makeStack(0)`
+* Using the `stack` getter on a [IEntityDrop](/Vanilla/Entities/IEntityDrop/) object
+* Using the `firstItem` getter on a [IOreDictEntry](/Vanilla/OreDict/IOreDictEntry/)
 
 ## Calling an IItemStack[] or a IItemStack List
 
-これらの関数を呼び出すと、結果のリスト/配列を反復することができます。
+If you call these functions, you will most likely do so to iterate through the resulting lists/Arrays
 
-* `IIngredient` で [items](/Vanilla/Variable_Types/IIngredient/) メソッドを使用すると、IItemStack リストを返します: `<ore:ingotGold>.items`
-* `IIngredient` で [itemArray](/Vanilla/Variable_Types/IIngredient/) メソッドを使用すると、IItemStack[]: `<ore:ingotGold>.itemArray` を返します。
-* `IMod` オブジェクトの [アイテム](/Vanilla/Game/Mods/#imod) メソッドを使用すると、IItemStack[]: `loadedMods["minecraft"].items` を返します。
+* Using the `items` method on an [IIngredient](/Vanilla/Variable_Types/IIngredient/) returns a IItemStack List: `<ore:ingotGold>.items`
+* Using the `itemArray` method on an [IIngredient](/Vanilla/Variable_Types/IIngredient/) returns a IItemStack[]: `<ore:ingotGold>.itemArray`
+* Using the `items` method on a [IMod](/Vanilla/Game/Mods/#imod) object returns a IItemStack[]: `loadedMods["minecraft"].items`
 
 ## 関数
 
-では今それで何ができるでしょう？
+So what can we do with that now?
 
-### IIngredient の拡張
+### Extending IIngredient
 
 IItemStack extends [IIngredient](/Vanilla/Variable_Types/IIngredient/).  
-つまり、 [IIngredient](/Vanilla/Variable_Types/IIngredient/) オブジェクトで使用可能なすべての機能は、IItemStacksにも適用可能です。 <details><summary>派生メソッド</summary> 
+That means all functionality that is available to [IIngredient](/Vanilla/Variable_Types/IIngredient/) objects also is applicable to IItemStacks. <details><summary>Derived Methods</summary> 
 
 * stack.mark
 * stack.amount
@@ -44,32 +44,32 @@ IItemStack extends [IIngredient](/Vanilla/Variable_Types/IIngredient/).
 * stack.or(otherIngredient)
 * stack.transform([transformer](/Vanilla/Items/Item_Transformers/))
 * stack.transformNew([transformer](/Vanilla/Items/Item_Transformers/))
-* stack.only([条件](/Vanilla/Items/Item_Conditions/))
+* stack.only([condition](/Vanilla/Items/Item_Conditions/))
 * stack.marked(mark)
 * stack.matches(item)
 * stack.matchesExact(item)
 * stack.matches(liquid)
-* スタックには成分があり
+* stack has ingredient
 * stack.applyTransform(stack,player)
 * stack.hasTransformers()</details>
 
 ### ZenGetters/ZenSetters
 
-使い方はこちら [](/UsingThisWiki/) をご覧ください。 また、以下の例をご覧ください。
+Read how to use them [here](/UsingThisWiki/). Also, check out the examples below.
 
-| ZenGetter/ZenMethod | ZenSetter/ZenMethod | タイプ                                                         |
+| ZenGetter/ZenMethod | ZenSetter/ZenMethod | Type                                                        |
 | ------------------- | ------------------- | ----------------------------------------------------------- |
-| 定義                  |                     | [IItemDefinition](/Vanilla/Items/IItemDefinition/)          |
-| 名前                  |                     | 文字列                                                         |
-| displayName         | displayName         | 文字列                                                         |
+| definition          |                     | [IItemDefinition](/Vanilla/Items/IItemDefinition/)          |
+| name                |                     | string                                                      |
+| displayName         | displayName         | string                                                      |
 | maxStackSize        | maxStackSize        | int                                                         |
-| 硬さ                  | 硬さ                  | float型                                                      |
-| ダメージ                |                     | int型                                                        |
+| hardness            | hardness            | float                                                       |
+| damage              |                     | int型                                                        |
 | maxDamage           | maxDamage           | int型                                                        |
 | hasTag              |                     | bool                                                        |
-| タグ                  | withTag(tag)        | [IData](/Vanilla/Data/IData/)                               |
+| tag                 | withTag(tag)        | [IData](/Vanilla/Data/IData/)                               |
 | ores                |                     | List<[IOreDictEntry](/Vanilla/OreDict/IOreDictEntry/)\>    |
-| toolClasses         |                     | リスト<string\>                                               |
+| toolClasses         |                     | List<string\>                                              |
 | itemEnchantability  |                     | int                                                         |
 | containerItem       |                     | IItemStack                                                  |
 | hasContainerItem    |                     | bool                                                        |
@@ -80,105 +80,105 @@ IItemStack extends [IIngredient](/Vanilla/Variable_Types/IIngredient/).
 | isEnchanted         |                     | bool型                                                       |
 | isDamaged           |                     | bool型                                                       |
 | isDamageable        |                     | bool型                                                       |
-| isItemBlock         |                     | bool (項目が項目ブロックの場合)                                         |
+| isItemBlock         |                     | bool (if contained item is an itemblock)                    |
 | isStackable         |                     | bool型                                                       |
 | isBeaconPayment     |                     | bool                                                        |
 | hasEffect           |                     | bool                                                        |
 | hasDisplayName      |                     | bool型                                                       |
-| メタデータ               |                     | int                                                         |
+| metadata            |                     | int                                                         |
 | hasSubtypes         |                     | bool型                                                       |
 | isEmpty             |                     | bool型                                                       |
 | burnTime            |                     | int                                                         |
 | showsDurabilityBar  |                     | bool型                                                       |
 | hasCustomEntity     |                     | bool                                                        |
-| エンチャント              |                     | List<[IEnchantment](/Vanilla/Enchantments/IEnchantment/)\> |
+| enchantments        |                     | List<[IEnchantment](/Vanilla/Enchantments/IEnchantment/)\> |
 | matchTagExact       |                     | bool                                                        |
 
-#### 金額
+#### Amount
 
-| メソッド通話                         | Returns                            | パラメータタイプ |
-| ------------------------------ | ---------------------------------- | -------- |
-| `stack.anyAmount()`            | 変更されたプロパティを持つ新しいIItemStack         |          |
-| `stack.amount(int amount)`     | 変更されたプロパティを持つ新しいIItemStack         | int      |
-| `stack.withAmount(int amount)` | 変更されたプロパティを持つ新しいIItemStack         | int      |
-| `スタック * 量`                     | 変更されたプロパティを持つ新しいIItemStack         | int      |
-| `stack.splitStack(int amount)` | スプリットIItemStack。 古いものはそれに応じて減少します。 | int      |
+| Method call                    | Returns                                                        | ParameterTypes |
+| ------------------------------ | -------------------------------------------------------------- | -------------- |
+| `stack.anyAmount()`            | A new IItemStack with the changed property                     |                |
+| `stack.amount(int amount)`     | A new IItemStack with the changed property                     | int            |
+| `stack.withAmount(int amount)` | A new IItemStack with the changed property                     | int            |
+| `stack *  amount`              | A new IItemStack with the changed property                     | int            |
+| `stack.splitStack(int amount)` | The split IItemStack. The old one will be reduced accordingly. | int            |
 
-#### 重量
+#### Weight
 
-| メソッド通話                        | Returns                                                  | パラメータタイプ           |
+| Method call                   | Returns                                                  | ParameterTypes     |
 | ----------------------------- | -------------------------------------------------------- | ------------------ |
 | `stack.percent(float chance)` | A [WeightedItemStack](/Vanilla/Items/WeightedItemStack/) | float (100 = 100%) |
 | `stack.weight(float chance)`  | A [WeightedItemStack](/Vanilla/Items/WeightedItemStack/) | float (1 = 100%)   |
 
-#### ダメージ
+#### Damage
 
-| メソッド通話                                  | Returns                    | パラメータタイプ                                   |
-| --------------------------------------- | -------------------------- | ------------------------------------------ |
-| `stack.anyDamage()`                     | 変更されたプロパティを持つ新しいIItemStack |                                            |
-| `stack.withDamage(int damage)`          | 変更されたプロパティを持つ新しいIItemStack | int                                        |
-| `stack.damageItem(int amount, IEntity)` | 無効（なし）                     | int, [IEntity](/Vanilla/Entities/IEntity/) |
+| Method call                                    | Returns                                    | ParameterTypes                             |
+| ---------------------------------------------- | ------------------------------------------ | ------------------------------------------ |
+| `stack.anyDamage()`                            | A new IItemStack with the changed property |                                            |
+| `stack.withDamage(int damage)`                 | A new IItemStack with the changed property | int                                        |
+| `stack.damageItem(int amount, IEntity entity)` | void (nothing)                             | int, [IEntity](/Vanilla/Entities/IEntity/) |
 
-#### タグ
+#### Tags
 
-| メソッド通話                                           | Returns                    | パラメータタイプ                            |
-| ------------------------------------------------ | -------------------------- | ----------------------------------- |
-| `stack.withEmtpyTag()`                           | 変更されたプロパティを持つ新しいIItemStack |                                     |
-| `stack.withTag(IData tag)`                       | 変更されたプロパティを持つ新しいIItemStack | [IData](/Vanilla/Data/IData/)       |
-| `stack.withTag(IData tag, bool matchTagExact)`   | 変更されたプロパティを持つ新しいIItemStack | [IData](/Vanilla/Data/IData/), bool |
-| `stack.removeTag(String name)`                   | 変更されたプロパティを持つ新しいIItemStack | 文字列                                 |
-| `stack.updateTag(IData tag)`                     | 変更されたプロパティを持つ新しいIItemStack | [IData](/Vanilla/Data/IData/)       |
-| `stack.updateTag(IData tag, bool matchTagExact)` | 変更されたプロパティを持つ新しいIItemStack | [IData](/Vanilla/Data/IData/), bool |
+| Method call                                      | Returns                                    | ParameterTypes                      |
+| ------------------------------------------------ | ------------------------------------------ | ----------------------------------- |
+| `stack.withEmtpyTag()`                           | A new IItemStack with the changed property |                                     |
+| `stack.withTag(IData tag)`                       | A new IItemStack with the changed property | [IData](/Vanilla/Data/IData/)       |
+| `stack.withTag(IData tag, bool matchTagExact)`   | A new IItemStack with the changed property | [IData](/Vanilla/Data/IData/), bool |
+| `stack.removeTag(String name)`                   | A new IItemStack with the changed property | string                              |
+| `stack.updateTag(IData tag)`                     | A new IItemStack with the changed property | [IData](/Vanilla/Data/IData/)       |
+| `stack.updateTag(IData tag, bool matchTagExact)` | A new IItemStack with the changed property | [IData](/Vanilla/Data/IData/), bool |
 
-#### ブロックキャスト
+#### Block Casting
 
-| メソッド通話            | Returns                                       |
-| ----------------- | --------------------------------------------- |
-| `stack.asBlock()` | 新しい [IBlock](/Vanilla/Blocks/IBlock/) オブジェクト。 |
-| `IBlockとしてスタックする` | 新しい [IBlock](/Vanilla/Blocks/IBlock/) オブジェクト。 |
+| Method call       | Returns                                         |
+| ----------------- | ----------------------------------------------- |
+| `stack.asBlock()` | A new [IBlock](/Vanilla/Blocks/IBlock/) object. |
+| `stack as IBlock` | A new [IBlock](/Vanilla/Blocks/IBlock/) object. |
 
-#### 表示/表示名
+#### Lore/DisplayName
 
-| メソッド通話                               | Returns                                                                | パラメータタイプ                    |
-| ------------------------------------ | ---------------------------------------------------------------------- | --------------------------- |
-| `stack.withDisplayName(String name)` | 変更されたプロパティを持つ新しい IItemStack displayName セッターとは異なり、これはこの単一の項目にのみ適用されます。 | 文字列 ("§" のカラーコードをサポートしています) |
-| `stack.withLore(String[] lore)`      | 変更されたプロパティを持つ新しい IItemStack                                            | string[] ("§"でカラーコードをサポート)  |
-| `stack.clearCustomName()`            | 無効（なし）                                                                 |                             |
+| Method call                          | Returns                                                                                                           | ParameterTypes                           |
+| ------------------------------------ | ----------------------------------------------------------------------------------------------------------------- | ---------------------------------------- |
+| `stack.withDisplayName(String name)` | A new IItemStack with the changed property. Unlike the displayName setter, this only applies to this single item. | string (supports color codes with "§")   |
+| `stack.withLore(String[] lore)`      | A new IItemStack with the changed property.                                                                       | string[] (supports color codes with "§") |
+| `stack.clearCustomName()`            | void (nothing)                                                                                                    |                                          |
 
-#### エンチャントメント
+#### Enchantments
 
-| メソッド通話                                                              | Returns | パラメータタイプ                                                                |
-| ------------------------------------------------------------------- | ------- | ----------------------------------------------------------------------- |
-| `stack.canApplyAtCraftingTable(IEnchantmentDefinition enchantment)` | 真偽値。    | [IEnchantmentDefinition](/Vanilla/Enchantments/IEnchantmentDefinition/) |
-| `stack.addEnchantment(IEnchantment enchantment)`                    | 無効（なし）  | [Ienchantment](/Vanilla/Enchantments/IEnchantment/)                     |
+| Method call                                                         | Returns        | ParameterTypes                                                          |
+| ------------------------------------------------------------------- | -------------- | ----------------------------------------------------------------------- |
+| `stack.canApplyAtCraftingTable(IEnchantmentDefinition enchantment)` | A bool.        | [IEnchantmentDefinition](/Vanilla/Enchantments/IEnchantmentDefinition/) |
+| `stack.addEnchantment(IEnchantment enchantment)`                    | void (nothing) | [IEnchantment](/Vanilla/Enchantments/IEnchantment/)                     |
 
 #### canItem...
 
-| メソッド通話                                             | Returns                    | パラメータタイプ                                              |
-| -------------------------------------------------- | -------------------------- | ----------------------------------------------------- |
-| `stack.canPlaceOn(IBlockDefinition block)`         | アイテムがブロックの上に置けるかどうかを示すブール。 | [IBlockDefinition](/Vanilla/Blocks/IBlockDefinition/) |
-| `stack.canDestroy(IBlockDefinition block)`         | アイテムがブロックを破壊できるかどうかを示すブール。 | [IBlockDefinition](/Vanilla/Blocks/IBlockDefinition/) |
-| `stack.canHarvestBlock(IBlockStateブロック)`           | アイテムがブロックを収穫できるかどうかを示すブール。 | [IBlockState](/Vanilla/Blocks/IBlockState/)           |
-| `stack.getStrengthAgainstBlock(IBlockState block)` | ブロックに対するアイテムの強さを表すフロート。    | [IBlockState](/Vanilla/Blocks/IBlockState/)           |
+| Method call                                        | Returns                                                        | ParameterTypes                                        |
+| -------------------------------------------------- | -------------------------------------------------------------- | ----------------------------------------------------- |
+| `stack.canPlaceOn(IBlockDefinition block)`         | A bool that tells if the item can be placed on the block.      | [IBlockDefinition](/Vanilla/Blocks/IBlockDefinition/) |
+| `stack.canDestroy(IBlockDefinition block)`         | A bool that tells if the item can destroy the block.           | [IBlockDefinition](/Vanilla/Blocks/IBlockDefinition/) |
+| `stack.canHarvestBlock(IBlockState block)`         | A bool that tells if the item can harvest the block.           | [IBlockState](/Vanilla/Blocks/IBlockState/)           |
+| `stack.getStrengthAgainstBlock(IBlockState block)` | A float that represents the item's strength against the block. | [IBlockState](/Vanilla/Blocks/IBlockState/)           |
 
 #### create IEntityItem
 
-| メソッド通話                                                       | Returns                                                                 | パラメータの種類                                                                 |
-| ------------------------------------------------------------ | ----------------------------------------------------------------------- | ------------------------------------------------------------------------ |
-| `stack.createEntityItem(IWorld world, int x, int y, int z);` | ワールドの新しく作成されたアイテムに対応する新しい [IEntityItem](/Vanilla/Entities/IEntityItem/) | [IWorld](/Vanilla/World/IWorld/), int, int, int                          |
-| `stack.createEntityItem(IWorld world, IBlockPos pos);`       | ワールドの新しく作成されたアイテムに対応する新しい [IEntityItem](/Vanilla/Entities/IEntityItem/) | [IWorld](/Vanilla/World/IWorld/), [IBlockPos](/Vanilla/World/IBlockPos/) |
+| Method call                                                  | Returns                                                                                                     | Parameter Types                                                          |
+| ------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------ |
+| `stack.createEntityItem(IWorld world, int x, int y, int z);` | A new [IEntityItem](/Vanilla/Entities/IEntityItem/) that corresponds to the newly created item in the world | [IWorld](/Vanilla/World/IWorld/), int, int, int                          |
+| `stack.createEntityItem(IWorld world, IBlockPos pos);`       | A new [IEntityItem](/Vanilla/Entities/IEntityItem/) that corresponds to the newly created item in the world | [IWorld](/Vanilla/World/IWorld/), [IBlockPos](/Vanilla/World/IBlockPos/) |
 
 ## ItemTransformers and ItemConditions
 
-これらの使い方は、 [IIngredient](/Vanilla/Variable_Types/IIngredient/) ページまたはリスペシヴエントリで確認できます:  
-[アイテムの条件](/Vanilla/Items/Item_Conditions/)  
-[アイテムのトランスフォーマー](/Vanilla/Items/Item_Transformers/)
+You can find how to use these either in the [IIngredient](/Vanilla/Variable_Types/IIngredient/) page or in their respecive entries:  
+[Item Conditions](/Vanilla/Items/Item_Conditions/)  
+[Item Transformers](/Vanilla/Items/Item_Transformers/)
 
 ## 使用例
 
-#### 表示名
+#### DisplayName
 
-グローバル (項目を新しい名前に変換します)。
+Globally (translates the item to the new name).
 
 ```zenscript
 val apple = <minecraft:apple>;
@@ -193,19 +193,19 @@ apple.displayName = "Tomato";
 print(apple.displayName);
 ```
 
-ローカル（この単一アイテムのみ）
+Locally (only this single item).
 
 ```zenscript
 <minecraft:coal>.withDisplayName("Black Gold");
 ```
 
-#### <unk>
+#### Lore
 
-`<minecraft:coal>.withLore(["この関数","requires a","string[]"]);`
+`<minecraft:coal>.withLore(["This function","requires a","string[]"]);`
 
-#### 最大スタックサイズ
+#### Maximum Stack Size
 
-最大スタックサイズは、1スタックに収まるアイテムの数です。たとえば、ウールのスタックサイズは64、バケットはわずか16です。
+The maximum Stack Size is how many items fit in one Stack, for example, wool’s Stack size is 64 and Buckets’ only 16.
 
 ```zenscript
 val apple = <minecraft:apple>;
@@ -227,9 +227,9 @@ apple.maxStackSize = bucket.maxStackSize;
 print(apple.maxStackSize);
 ```
 
-#### 硬さ
+#### Hardness
 
-Hardnessは、参照されたブロックを壊すのにかかる時間です。 オブジェクトがブロックを参照している場合にのみ動作します。
+The Hardness is how long it takes to break the referred block. Only works if the object refers to a block.
 
 ```zenscript
 val grass = <minecraft:grass>;
@@ -237,16 +237,16 @@ val grass = <minecraft:grass>;
 //prints 1.0
 print(grass.hardness);
 
-//hardness は 10.0 に設定
+//sets grass Hardness to 10.0
 grass.hardness = 10.0;
 
 //prints 10.0
-print(gras.hardness);
+print(grass.hardness);
 ```
 
-#### ダメージ
+#### Damage
 
-ダメージを受けないアイテムのダメージは0です。
+The damage for items that cannot be damaged is 0.
 
 ```zenscript
 val pick = <minecraft:diamond_pickaxe>;
@@ -269,7 +269,7 @@ print(pick.maxDamage);
 <minecraft:iron_pickaxe>.withDamage(122);
 ```
 
-#### タグ
+#### Tag
 
 The tag is an [IData](/Vanilla/Data/IData/) object.  
 If the item does not contain a tag, it will return an empty tag, never null.
@@ -300,9 +300,9 @@ val lav = <minecraft:lava_bucket>;
 print(lav.liquid.name);
 ```
 
-#### 金額
+#### Amount
 
-リンゴはいくつありますか。
+How many apples are there?
 
 ```zenscript
 <minecraft:apple>.anyAmount();
@@ -317,9 +317,9 @@ val moreApples = apple * 2;
 val evenMoreApples = <minecraft:apple> * 3;
 ```
 
-#### 重量
+#### Weight
 
-指定されたパーセンテージの [weightedItemStack](/Vanilla/Items/WeightedItemStack/) を返します。
+Returns a [weightedItemStack](/Vanilla/Items/WeightedItemStack/) with the provided percentage.
 
 ```zenscript
 val apple = <minecraft:apple>;
@@ -333,31 +333,31 @@ applePercentage = apple.weight(1.0);
 
 #### Ores
 
-この項目を参照する [IOreDictEntity](/Vanilla/OreDict/IOreDictEntry/) のリストを返します。
+Returns a List of [IOreDictEntries](/Vanilla/OreDict/IOreDictEntry/) referring to this item.
 
 ```zenscript
 <minecraft:apple>.ores;
 ```
 
-#### IBlockへのキャスト
+#### Casting to IBlock
 
-IItemStack を [IBlock](/Vanilla/Blocks/IBlock/)にキャストできます。 君がブロックを言っている限りキャストは例外を投げるだろう
+You can cast an IItemStack to an [IBlock](/Vanilla/Blocks/IBlock/), as long as you are referring to a block, otherwise the cast will throw an exception.
 
 ```zenscript
 <minecraft:dirt>.asBlock();
 <minecraft:dirt> as crafttweaker.block.IBlock;
 ```
 
-IItemStack に ItemBlock が含まれていて、変換できるかどうかをテストすることもできます。
+You can also test if an IItemStack contains an ItemBlock and can thus be converted:
 
 <pre><code class="zenscript:">&lt;minecraft:dirt&gt;.isItemBlock; // true
 &lt;minecraft:stick&gt;.isItemBlock; // false
 </code></pre>
 
-#### 食品プロパティ
+#### Food Properties
 
-IItemStack が食品項目であり、どの食品特性を持っているかを確認できます。  
-Modでは動作しない場合があります。
+You can check if an IItemStack is a food item and what food properties it has.  
+May not work for every modded food item!
 
 ```zenscript
 <minecraft:apple>.isFood; //true

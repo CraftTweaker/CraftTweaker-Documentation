@@ -1,14 +1,14 @@
 # LivingDestroyBlock
 
-当凋灵或末影龙试图摧毁方块时，或当僵尸试图打破门时，就会发射这个事件。 此事件是 **可取消**, 如果取消, 方块将不会被损坏。
+This event is fired whenever a Wither or Ender Dragon attempts to destroy blocks, or when a zombie attempts to break a door. This event is **cancelable**, and if canceled, the block will not be broken.
 
-## 事件类
+## Event Class
 You will need to cast the event in the function header as this class:  
 `crafttweaker.event.LivingDestroyBlockEvent`  
 You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
 
-## 事件界面扩展
-LivingDestrroyBlock 事件实现了以下接口，并且能够调用他们所有的方法/getter/setter：
+## Event interface extensions
+LivingDestroyBlock Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
 
 - [IEventPositionable](/Vanilla/Events/Events/IEventPositionable/)
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
@@ -16,7 +16,7 @@ LivingDestrroyBlock 事件实现了以下接口，并且能够调用他们所有
 
 
 ## ZenGetters/ZenSetters
-以下信息可以在事件中检索/设置：
+The following information can be retrieved/set during the event:
 
 | ZenGetter | ZenSetter | 类型                                          |
 | --------- | --------- | ------------------------------------------- |

@@ -1,46 +1,46 @@
-# Обработчик фигурных скобок
+# Block Material Bracket Handler
 
-Обработчик Блок Material Bracket дает вам доступ к Блочным материалам в игре. В настоящее время поддерживается единственный блок материалов:
+The Block Material Bracket Handler gives you access to the Block Materials in the game. Currently the only Block Materials supported are:
 
 <details>
-    <summary>Нажмите, чтобы расширить список материалов</summary>
+    <summary>Click to expand the Material list</summary>
     <ul>
-        <li>Воздушный</li>
-        <li>Трава</li>
-        <li>Земля</li>
-        <li>Дерево</li>
-        <li>Камень</li>
-        <li>Железо</li>
-        <li>Наковальня</li>
-        <li>Вода</li>
+        <li>Air</li>
+        <li>Grass</li>
+        <li>Ground</li>
+        <li>Wood</li>
+        <li>Rock</li>
+        <li>Iron</li>
+        <li>Anvil</li>
+        <li>Water</li>
         <li>Lava</li>
-        <li>Листья</li>
-        <li>Растения</li>
+        <li>Leaves</li>
+        <li>Plants</li>
         <li>Vine</li>
         <li>Sponge</li>
-        <li>Ткань</li>
-        <li>Огонь</li>
-        <li>песок</li>
-        <li>Схемы</li>
-        <li>Ковер</li>
-        <li>Стекло</li>
-        <li>Редстоун_светлый</li>
+        <li>Cloth</li>
+        <li>Fire</li>
+        <li>sand</li>
+        <li>Circuits</li>
+        <li>Carpet</li>
+        <li>Glass</li>
+        <li>Redstone_Light</li>
         <li>TNT</li>
-        <li>Корал</li>
-        <li>Лед</li>
-        <li>Упакованный льд</li>
-        <li>Снег создан</li>
+        <li>Coral</li>
+        <li>Ice</li>
+        <li>Packed_Ice</li>
+        <li>Crafted_Snow</li>
         <li>Cactus</li>
-        <li>Глина</li>
+        <li>Clay</li>
         <li>Gourd</li>
-        <li>Яйцо Дракона</li>
-        <li>Портал</li>
-        <li>Торт</li>
-        <li>Веб</li>
+        <li>Dragon_Egg</li>
+        <li>Portal</li>
+        <li>Cake</li>
+        <li>Web</li>
     </ul>
 </details>
 
-Материалы блока ссылаются в обработчике материала таким образом:
+Block Materials are referenced in the Material Bracket handler this way:
 
 ```zenscript
 <blockmaterial:name>
@@ -48,4 +48,4 @@
 <blockmaterial:wood>
 ```
 
-Если блок материала будет найден, это приведет к возврату объекта [IMaterialDefinition](/Mods/ContentTweaker/Vanilla/Types/Block/IMaterialDefinition/).
+If the Block Material is found, this will return an [IMaterialDefinition](/Mods/ContentTweaker/Vanilla/Types/Block/IMaterialDefinition/) Object.

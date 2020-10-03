@@ -1,8 +1,8 @@
-# Gestore Staffa Trait
+# Trait Bracket Handler
 
-Il solo scopo del gestore della staffa Trait Bracket è fornire [Rappresentanze Trait](/Mods/ContentTweaker/Tinkers_Construct/Trait/).
+The Trait Bracket handler's sole purpose is providing you with [Trait Representations](/Mods/ContentTweaker/Tinkers_Construct/Trait/).
 
-Usi il gestore della parentesi tratto così:
+You use the trait bracket handler like this:
 
 ```zenscript
 <ticontrait:identifier>
@@ -10,4 +10,4 @@ Usi il gestore della parentesi tratto così:
 <ticontrait:cactus>
 ```
 
-Se il Trait è trovato, questo restituirà un oggetto Rappresentazione Trait. Si prega di fare riferimento alla voce [Wiki](/Mods/ContentTweaker/Tinkers_Construct/Trait/) per ulteriori informazioni su ciò che si può fare con questi.
+If the Trait is found, this will return an Trait Representation Object. Please refer to the [respective Wiki entry](/Mods/ContentTweaker/Tinkers_Construct/Trait/) for further information on what you can do with these.

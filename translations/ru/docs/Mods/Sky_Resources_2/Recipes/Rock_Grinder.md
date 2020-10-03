@@ -1,24 +1,24 @@
-# Скальная Мельница
+# Rock Grinder
 
-Пакет *каменьная мельница* используется для добавления или удаления рецептов в/с Rock Grinder.
+The *rockgrinder* package is used for adding or removing recipes to/from the Rock Grinder.
 
-## Звонок
+## Calling
 
-Вы можете вызвать пакет *rockgrinder* с помощью `mods.skyresources.rockgrinder`
+You can call the *rockgrinder* package using `mods.skyresources.rockgrinder`
 
-## Добавление рецепта
+## Recipe Addition
 
 ```zenscript
 //mods.skyresources.rockgrinder.addRecipe(IItemStack output, IItemStack input);
 mods.skyresources.rockgrinder.addRecipe(<minecraft:diamond>, <minecraft:stone>);
 
-//mods.skyresources.rockgrinder.addRecipe(IItemStack, IItemStack input, float chance);
+//mods.skyresources.rockgrinder.addRecipe(IItemStack output, IItemStack input, float chance);
 mods.skyresources.rockgrinder.addRecipe(<minecraft:emerald>, <minecraft:stone>, 0.50);
 ```
 
-## Удаление рецепта
+## Recipe Removal
 
 ```zenscript
-//mods.skyresources.rockgrinder.removeRecipe(IItemStack);
+//mods.skyresources.rockgrinder.removeRecipe(IItemStack output);
 mods.skyresources.rockgrinder.removeRecipe(<minecraft:gravel>);
 ```

@@ -1,18 +1,18 @@
 ### Класс
 
 ```zenscript
-импорт mods.roots.RunicShears;
+import mods.roots.RunicShears;
 ```
 
-#### Методы
+#### Methods
 
 ```zenscript
 void addRecipe(
-  имя строки, // имя создаваемого рецепта
-  IItemStack outputDrop, // вывод элемента получен путем выполнения замещения
-  IItemStackBlock, // блок (как itemstack), заменяющий блок, взаимодействующий при прошивке
-  IItemStack inputBlock, // блок, который должен быть вырезан
-  IItemStack jeiDisplayItem // элемент, который должен быть отображен в JEI для этого рецепта
+  string name,                 // the name of the recipe being created
+  IItemStack outputDrop,       // the item output obtained by performing the shearing
+  IItemStack replacementBlock, // the block (as an itemstack) that replaces the block being interacted with upon shearing
+  IItemStack inputBlock,       // the block that is to be sheared
+  IItemStack jeiDisplayItem    // the item that should be displayed in JEI for this recipe
 );
 ```
 
@@ -20,10 +20,10 @@ void addRecipe(
 
 ```zenscript
 void addEntityRecipe(
-  строковое имя, // имя рецепта для shearing
-  IItemStack outputDrop, // элемент, который выбрасывается при сбрасывании указанной сущности
-  IEntityDefinition сущности, // сущность, которая должна быть вырублена для получения int перезарядки
-  int: количество тиков (секунд, умноженных на 20), оно занимает до тех пор, пока сущность не может быть сбита снова
+  string name,              // the name of the recipe for the shearing
+  IItemStack outputDrop,    // the item that is dropped upon shearing the specified entity
+  IEntityDefinition entity, // the entity that is to be sheared to obtain the drop
+  int cooldown              // the number of ticks (seconds multiplied by 20) it takes until the entity can be sheared again
 );
 ```
 
@@ -31,7 +31,7 @@ void addEntityRecipe(
 
 ```zenscript
 void removeRecipe(
-  IItemStack output // вывод элемента, который вы хотите удалить
+  IItemStack output // the itemstack output that you wish to remove
 );
 ```
 
@@ -40,19 +40,19 @@ void removeRecipe(
 ### Примеры
 
 ```zenscript
-import mods.roots. "юникеры";
+import mods.roots.RunicShears;
 
-// Создаёт рецепт, получающий из красных кирпичей Незера
-, а затем преобразовывает кирпичи в обычные кирпичи Незера
-RunicShears. ddRecipe("nether_wart_block", <minecraft:nether_wart>*2, <minecraft:nether_brick>, <minecraft:red_nether_brick>, <minecraft:red_nether_brick>);
+// Creates a recipe that obtains nether wart from red nether bricks
+// and then converts the bricks into normal nether bricks
+RunicShears.addRecipe("nether_wart_block", <minecraft:nether_wart>*2, <minecraft:nether_brick>, <minecraft:red_nether_brick>, <minecraft:red_nether_brick>);
 
-// Создаёт рецепт, который получает яйца от цыплят через 2 минуты перезарядки
-RunicShears. ddEntityRecipe("egg_from_chicken", <minecraft:egg>*2, <entity:minecraft:chicken>, 120*20);
+// Creates a recipe that obtains eggs from chickens with a 2 minute cooldown
+RunicShears.addEntityRecipe("egg_from_chicken", <minecraft:egg>*2, <entity:minecraft:chicken>, 120*20);
 
-// Удаляет все рецепты (оба блока & ), которые дают кожу
-RunicShears. emoveRecipe(<roots:fey_leather>);
+// Removes all recipes (both entity & block) that give fey leather
+RunicShears.removeRecipe(<roots:fey_leather>);
 ```
 
-### Примечания
+### Notes
 
 Note that the `removeRecipe` function will attempt to remove any recipe (both runic shearing of blocks and of entities) that matches the desired output.

@@ -1,14 +1,14 @@
-# Fournaise Industrielle Explosive
+# Industrial Blast Furnace
 
-## Importation du paquet en cours
+## Importing the Package
 `mods.techreborn.blastFurnace`
 
-## Ajout de recettes
+## Adding Recipes
 ```zenscript
 mods.techreborn.blastFurnace.addRecipe(IItemStack output1, IItemStack output2, IIngredient input1, IIngredient input2, int ticktime, int euTick, int neededHeat);
 ```
 
-## Suppression des recettes
+## Removing Recipes
 ```zenscript
 mods.techreborn.blastFurnace.removeInputRecipe(IIngredient ingredient);
 mods.techreborn.blastFurnace.removeRecipe(IItemStack output);

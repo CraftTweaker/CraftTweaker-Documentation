@@ -1,23 +1,23 @@
 # PlayerLoggedOut
 
-Wydarzenie PlayerLoggedOut jest uruchamiane za każdym razem, gdy gracz wyloguje się.
+The PlayerLoggedOut Event is fired whenever a player logs out.
 
-## Klasa wydarzenia
+## Event Class
 
-Musisz aktywować wydarzenie w nagłówku funkcji jako klasa:  
-`crafttweaker.event. layerLoggedOutEvent`  
-Oczywiście możesz również [zaimportować](/AdvancedFunctions/Import/) klasę przed i wtedy użyć tej nazwy.
+You will need to cast the event in the function header as this class:  
+`crafttweaker.event.PlayerLoggedOutEvent`  
+You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
 
-## Rozszerzenia interfejsu zdarzenia
+## Event interface extensions
 
-PlayerLoggedIn Events implementuje następujące interfejsy i są w stanie wywołać wszystkie swoje metody/getters/setters:
+PlayerLoggedIn Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
 
-- [Wydarzenie IPlayer](/Vanilla/Events/Events/IPlayerEvent/)
+- [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
 
 ## ZenGetters
 
-Z wydarzenia można uzyskać następujące informacje:
+The following information can be retrieved from the event:
 
-| ZenGetter | Typ zwrotu                           |
+| ZenGetter | Return Type                          |
 | --------- | ------------------------------------ |
-| `gracz`   | [IPlayer](/Vanilla/Players/IPlayer/) |
+| `player`  | [IPlayer](/Vanilla/Players/IPlayer/) |

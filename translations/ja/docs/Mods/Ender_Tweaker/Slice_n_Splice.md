@@ -1,18 +1,18 @@
-# 'n' スプライス（スライス）
+# Slice 'n' Splice
 
-## パッケージ
+## Package
 
 `import mods.enderio.SliceNSplice;`
 
-## メソッド
+## Methods
 
-**- [IItemStack](/Vanilla/Items/IItemStack/) 出力** レシピの結果。
+**- [IItemStack](/Vanilla/Items/IItemStack/) output** The result of the recipe.
 
-**- [IIngredient](/Vanilla/Variable_Types/IIngredient/)[] input** 原料. 1から6の材料の間でなければなりません。
+**- [IIngredient](/Vanilla/Variable_Types/IIngredient/)[] input** The ingredients. Must be between 1 and 6 ingredients.
 
-**- energyCost** レシピが使用するFEの量。 デフォルトは5000です。
+**- int energyCost** How much FE the recipe uses. Defaults to 5000.
 
-**- float xp** このレシピからxpが付与されます。 否定的ではないかもしれない。
+**- float xp** The xp is granted from this recipe. May not be negative.
 
 ## 加算
 
@@ -24,7 +24,7 @@ mods.enderio.SliceNSplice.
 addRecipe(<minecraft:emerald>, [<minecraft:diamond>, <minecraft:gold_ingot>, <minecraft:iron_ingot>], 5000, 0);
 ```
 
-## 削除
+## Removal
 
 ```zenscript
 mods.enderio.SliceNSplice.removeRecipe(IItemStack output);

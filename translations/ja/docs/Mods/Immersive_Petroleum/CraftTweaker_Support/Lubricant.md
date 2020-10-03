@@ -1,13 +1,13 @@
-# 潤滑剤の登録
+# Lubricant Registration
 
 ## registerLubricant
 
-| タイプ      | データタイプ                                       |
+| Type     | Data Type                                    |
 | -------- | -------------------------------------------- |
 | Input    | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
-| MB/4tick | 整数                                           |
+| mB/4tick | Integer                                      |
 
-### コード例:
+### Code Example:
 
 ```zenscript
 mods.immersivepetroleum.Lubricant.registerLubricant(ILiquidStack lubricantEntry, int amount);

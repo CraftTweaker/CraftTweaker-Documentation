@@ -1,16 +1,16 @@
-# Miscelatore Di Sale
+# Salt Mixer
 
-## Importazione del pacchetto
+## Importing the Package
 `mods.nuclearcraft.SaltMixer`
 
-## Aggiunta Di Ricette
+## Adding Recipes
 ```zenscript
 mods.nuclearcraft.SaltMixer.addRecipe(ILiquidStack fluidInput1, ILiquidStack fluidInput2, ILiquidStack fluidOutput, @Optional double timeMultiplier, @Optional double powerMultiplier, @Optional double processRadiation);
 ```
 
-## Rimozione Ricette
+## Removing Recipes
 ```zenscript
 mods.nuclearcraft.SaltMixer.removeRecipeWithInput(ILiquidStack fluidInput1, ILiquidStack fluidInput2);
 mods.nuclearcraft.SaltMixer.removeRecipeWithOutput(ILiquidStack fluidOutput);
-mods.nuclearcraft.SaltMixer.removeAllRicette();
+mods.nuclearcraft.SaltMixer.removeAllRecipes();
 ```

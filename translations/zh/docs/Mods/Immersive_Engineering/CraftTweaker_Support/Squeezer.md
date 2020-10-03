@@ -1,30 +1,30 @@
-# 挤压器
+# Squeezer
 
-挤压器包可以用来添加/移除沉浸式工程施压器到/移除配方。
+The Squeezer package can be used to add/remove recipes to/from the Immersive Engineering Squeezer.
 
-## 调用包
+## Calling The Package
 
-您可以使用 `mods.immersiveengineering.Squeezer` 来调用Speezer 包.
+You can call the Squeezer package using `mods.immersiveengineering.Squeezer`.
 
 ## 添加配方
 
-| 必填 | 类型 | 数据类型                                                    |
-| -- | -- | ------------------------------------------------------- |
-| 必要 | 输出 | [IItemStack](/Vanilla/Items/IItemStack/)                |
-| 必要 | 流体 | [Fluidstack](/Vanilla/Liquids/ILiquidStack/)            |
-| 必填 | 输入 | [材料（IIngredient）](/Vanilla/Variable_Types/IIngredient/) |
-| 必要 | 能源 | 整型                                                      |
+| Required | 类型     | 数据类型                                                    |
+| -------- | ------ | ------------------------------------------------------- |
+| 必要       | 输出     | [IItemStack](/Vanilla/Items/IItemStack/)                |
+| 必要       | Fluid  | [Fluidstack](/Vanilla/Liquids/ILiquidStack/)            |
+| Required | 输入     | [材料（IIngredient）](/Vanilla/Variable_Types/IIngredient/) |
+| 必要       | Energy | 整型                                                      |
 
 ### 例子
 
 ```zenscript
-//示例：
-mods.immersiveengineering.Squeezer.addRecipe(IItemStack output, ILiquidStack fluid, Ingredient input, int energy);
+//Example:
+mods.immersiveengineering.Squeezer.addRecipe(IItemStack output, ILiquidStack fluid, IIngredient input, int energy);
 
 mods.immersiveengineering.Squeezer.addRecipe(<minecraft:diamond>, <liquid:water>, <ore:logWood>, 2048);
 ```
 
-## 移除液体配方
+## Remove Fluid Recipe
 
 | 类型 | 数据类型                                         |
 | -- | -------------------------------------------- |
@@ -33,13 +33,13 @@ mods.immersiveengineering.Squeezer.addRecipe(<minecraft:diamond>, <liquid:water>
 ### 例子
 
 ```zenscript
-//示例：
-mods.immersiveengineering.Squeezer.removeFluidRecipe(ILiquidStack fluid)；
+//Example:
+mods.immersiveengineering.Squeezer.removeFluidRecipe(ILiquidStack fluid);
 
-mods.immersiveengineering.Squeezer.removeFluidRecipe(<liquid:water>)；
+mods.immersiveengineering.Squeezer.removeFluidRecipe(<liquid:water>);
 ```
 
-## 删除项目配方
+## Remove Item Recipe
 
 | 类型 | 数据类型                                          |
 | -- | --------------------------------------------- |
@@ -48,13 +48,13 @@ mods.immersiveengineering.Squeezer.removeFluidRecipe(<liquid:water>)；
 ### 例子
 
 ```zenscript
-//示例：
-mods.immersiveengineering.Squeezer.removeItemRecipe(IItemStack Stack)；
+//Example:
+mods.immersiveengineering.Squeezer.removeItemRecipe(IItemStack stack);
 
-mods.immersiveengineering.Squeezer.removeItemRecipe(<minecraft:diamond>)；
+mods.immersiveengineering.Squeezer.removeItemRecipe(<minecraft:diamond>);
 ```
 
-## 通过输入删除
+## Remove By Input
 
 | 类型 | 数据类型                                          |
 | -- | --------------------------------------------- |
@@ -63,8 +63,8 @@ mods.immersiveengineering.Squeezer.removeItemRecipe(<minecraft:diamond>)；
 ### 例子
 
 ```zenscript
-//示例：
-mods.immersiveengineering.Squeezer.removeByInput(StemStack Stack)；
+//Example:
+mods.immersiveengineering.Squeezer.removeByInput(IItemStack stack);
 
-mods.immersiveengineering.Squeezer.removeByInput(<minecraft:log>)；
+mods.immersiveengineering.Squeezer.removeByInput(<minecraft:log>);
 ```

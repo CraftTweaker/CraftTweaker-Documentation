@@ -1,22 +1,22 @@
-# 离心机
+# Centrifuge
 
-ModTinflow允许您添加或移除林业编码方案
+ModTweaker allows you to add or remove forestry Centrifuge Recipes
 
 ## 导入包
 
-您可以使用 `mods.forestry.Centrifuge` 来调用软件包。
+You can call the package using `mods.forestry.Centrifuge`
 
-## 删除配方
+## Recipe Removal
 
 ```zenscript
-//mods.forestry.Centrifile.removeRecipe(IIngredient input);
-mods.forestry.Centrifile.removeRecipe(<forestry:bee_combs:*>);
+//mods.forestry.Centrifuge.removeRecipe(IIngredient input);
+mods.forestry.Centrifuge.removeRecipe(<forestry:bee_combs:*>);
 
 ```
 
-## Reipe 添加
+## Reipe Addition
 
 ```zenscript
-//mods.forestry.Centrifile.addRecipe(WeightedItemStack[…]输出, IItemStack 组件, int 包装时间);
-mods.forestry.Centrifile.addRecipe([(<minecraft:redstone> * 9) % 80, <minecraft:gold_ingot> % 12], <minecraft:redstone_block>, 100);
+//mods.forestry.Centrifuge.addRecipe(WeightedItemStack[] output, IItemStack ingredients, int packagingTime);
+mods.forestry.Centrifuge.addRecipe([(<minecraft:redstone> * 9) % 80, <minecraft:gold_ingot> % 12], <minecraft:redstone_block>, 100);
 ```

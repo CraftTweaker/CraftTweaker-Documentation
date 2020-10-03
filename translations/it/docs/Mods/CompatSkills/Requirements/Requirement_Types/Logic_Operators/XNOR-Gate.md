@@ -1,6 +1,6 @@
-# Operatore XNOR
+# XNOR Operator
 
-Un cancello **XNOR** è un cancello **XOR** invertito. Questo è lo stesso di utilizzare l'output del cancello **XOR** come l'ingresso al cancello **NON**. Ciò significa che il cancello **XNOR** restituisce `TRUE` solo quando entrambi gli ingressi sono lo stesso stato. Entrambi sono `VERO` o entrambi sono `FALSE`.
+An **XNOR** gate is an inverted **XOR** gate. This is the same as using the output of the **XOR** gate as the input to the **NOT** gate. This means that the **XNOR** gate returns `TRUE` only when both inputs are the same state. Either both are `TRUE` or both are `FALSE`.
 
 | Input 1 | Input 2 | Output |
 | ------- | ------- | ------:|

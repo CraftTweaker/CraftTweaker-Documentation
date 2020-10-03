@@ -1,29 +1,29 @@
-# Требования:
+# Requirements:
 
-Требования - это концепция, внедренная в Reskillable и, по сути, это свойства Player-Bound для привязки элементов позади.
+Requirements is a concept introduced with Reskillable and is essentially Player-Bound properties to bind items behind.
 
-Например, по умолчанию, Reskillable имеет поддержку в следующих случаях:
+For example by default, Reskillable has Requirement support for the following:
 
-- Улучшения
-- Навыки
-- Черты
+- Advancements
+- Skills
+- Traits
 
-Этот список может быть расширен с помощью дополнений. В качестве правильного требования добавлена поддержка CompatSkills для GameStage.
+This list can be further expanded upon by addons. In-fact CompatSkills adds support for GameStages as a valid Requirement.
 
-Синтаксис требования варьируется от собственности к собственности о том, как она реализуется дополнением. В соответствии с типами требований вы сможете увидеть синтаксис для всех требований, добавленных Reskillable и CompatSkills.
+The requirement syntax varies from Property to Property on how it's implemented by the addon. Under Requirement Types, you'll be able to see the syntax for all Requirements added by Reskillable and CompatSkills.
 
-Ниже приводится краткий список ссылок на каждый тип требования.
+See below for a quick list of links to each requirement type.
 
-| Ссылки                                                                                                 |
-| ------------------------------------------------------------------------------------------------------ |
-| [Улучшения](/Mods/CompatSkills/Requirements/Requirement_Types/Advancements/)                           |
-| [Размеры](/Mods/CompatSkills/Requirements/Requirement_Types/Dimensions/)                               |
-| [Навыки динамического меча](/Mods/CompatSkills/Requirements/Requirement_Types/Dynamic_Sword_Skills/)   |
-| [Стадии игры](/Mods/CompatSkills/Requirements/Requirement_Types/GameStages/)                           |
-| [Обратные требования](/Mods/CompatSkills/Requirements/Requirement_Types/Inverted_Requirements/)        |
-| [Предметы](/Mods/CompatSkills/Requirements/Requirement_Types/Items/)                                   |
-| [Операторы логики](/Mods/CompatSkills/Requirements/Requirement_Types/Logic_Operators/1_READ_ME_FIRST/) |
-| [Словарь руды](/Mods/CompatSkills/Requirements/Requirement_Types/Ore_Dictionary/)                      |
-| [Навыки](/Mods/CompatSkills/Requirements/Requirement_Types/Skills/)                                    |
-| [Урожай Инструмента](/Mods/CompatSkills/Requirements/Requirement_Types/Tool_Harvest-Level/)            |
-| [Черты](/Mods/CompatSkills/Requirements/Requirement_Types/Traits/)                                     |
+| Links                                                                                                 |
+| ----------------------------------------------------------------------------------------------------- |
+| [Advancements](/Mods/CompatSkills/Requirements/Requirement_Types/Advancements/)                       |
+| [Dimensions](/Mods/CompatSkills/Requirements/Requirement_Types/Dimensions/)                           |
+| [Dynamic Sword Skills](/Mods/CompatSkills/Requirements/Requirement_Types/Dynamic_Sword_Skills/)       |
+| [GameStages](/Mods/CompatSkills/Requirements/Requirement_Types/GameStages/)                           |
+| [Inverted Requirements](/Mods/CompatSkills/Requirements/Requirement_Types/Inverted_Requirements/)     |
+| [Items](/Mods/CompatSkills/Requirements/Requirement_Types/Items/)                                     |
+| [Logic Operators](/Mods/CompatSkills/Requirements/Requirement_Types/Logic_Operators/1_READ_ME_FIRST/) |
+| [Ore Dictionary](/Mods/CompatSkills/Requirements/Requirement_Types/Ore_Dictionary/)                   |
+| [Skills](/Mods/CompatSkills/Requirements/Requirement_Types/Skills/)                                   |
+| [Tool Harvest-Level](/Mods/CompatSkills/Requirements/Requirement_Types/Tool_Harvest-Level/)           |
+| [Traits](/Mods/CompatSkills/Requirements/Requirement_Types/Traits/)                                   |

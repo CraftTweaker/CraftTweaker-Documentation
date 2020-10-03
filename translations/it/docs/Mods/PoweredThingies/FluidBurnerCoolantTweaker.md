@@ -1,35 +1,35 @@
-# Thingies Powered :: Bruciatore Fluido :: Raffreddante
+# Powered Thingies :: Fluid Burner :: Coolant
 
-### Importazione
+### Importing
 
 ```zenscript
 import mods.poweredthingies.Tweaker.fluidBurnerCoolantTweaker as coolant;
 ```
 
-### Elencando le chiavi, la rimozione delle ricette dalla chiave, la cancellazione
+### Listing Keys, Removing Recipes by Key, Clearing
 
 ```zenscript
 coolant().logKeys()
-coolant().removeRecipe('teslathingies:fluid_tf-molten_tesla') // controlla <logKeys> output per chiavi valide
+coolant().removeRecipe('teslathingies:fluid_tf-molten_tesla') // check <logKeys> output for valid keys
 coolant().clear()
 ```
 
-### Aggiunta Ricetta
+### Adding Recipe
 
-##### Firma
-
-```zenscript
-addCoolant(fluido: ILiquidStack, tempoMultiplier: Float)
-```
-
-`tempoMoltiplicatore` è il valore che verrà utilizzato per aumentare (o diminuire) il numero di zecche per cui un carburante brucerà.
-
-##### Esempio
+##### Signature
 
 ```zenscript
-refrigerante().addCoolant(<liquid:tf-sewage> * 50, 1.1);
+addCoolant(fluid: ILiquidStack, timeMultiplier: Float)
 ```
 
-### Note
+`timeMultiplier` is the value that will be used to increase (or decrease) the number ticks a fuel will burn for.
 
-Tutte queste azioni verranno memorizzate nella cache e eseguite dopo che il registro di default per questa macchina ha finito di registrare tutte le ricette (comprese quelle dei json personalizzati).
+##### Example
+
+```zenscript
+coolant().addCoolant(<liquid:tf-sewage> * 50, 1.1);
+```
+
+### Notes
+
+All of these actions will get cached and ran after the default registry for this machine has finished registering all recipes (including the ones from the custom jsons).

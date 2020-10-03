@@ -1,6 +1,6 @@
-# Привязка кожи
+# Leather Knapping
 
-## Пакет
+## Package
 ```zenscript
 import mods.terrafirmacraft.leatherKnapping;
 ```
@@ -8,18 +8,18 @@ import mods.terrafirmacraft.leatherKnapping;
 ## Сложение
 
 ```zenscript
-leatherKnapping.addRecipe(tring registryName, IItemStack output, String... pattern);
+leatherKnapping.addRecipe(String registryName, IItemStack output, String... pattern);
 ```
 
-## Удаление
+## Removal
 
 ```zenscript
-leatherKnapping.removeRecipe(IItemStack);
-кожаный Knapping.removeRecipe(String registryName);
+leatherKnapping.removeRecipe(IItemStack output);
+leatherKnapping.removeRecipe(String registryName);
 ```
 
 ## Пример
 ```zenscript
-// рецепт кожаного
-кожаного Knapping.addRecipe("рецепт", <tfc:quiver>, " XXXX", "X XXX", "X XXX", "X XXX", " XXXX");
+// quiver recipe
+leatherKnapping.addRecipe("recipe", <tfc:quiver>, " XXXX", "X XXX", "X XXX", "X XXX", " XXXX");
 ```

@@ -1,8 +1,8 @@
-# Обработчик скобок симптомов
+# Trait Bracket Handler
 
-Единственная цель обработчика комплекта симптомов — предоставить вам [Представительства симптомов](/Mods/ContentTweaker/Tinkers_Construct/Trait/).
+The Trait Bracket handler's sole purpose is providing you with [Trait Representations](/Mods/ContentTweaker/Tinkers_Construct/Trait/).
 
-Вы используете комбинацию симптомов следующим образом:
+You use the trait bracket handler like this:
 
 ```zenscript
 <ticontrait:identifier>
@@ -10,4 +10,4 @@
 <ticontrait:cactus>
 ```
 
-Если симптом обнаружен, он вернёт объект представительства симптомов. Пожалуйста, обратитесь к [соответствующей вики](/Mods/ContentTweaker/Tinkers_Construct/Trait/) для получения дополнительной информации о том, что вы можете сделать с этим.
+If the Trait is found, this will return an Trait Representation Object. Please refer to the [respective Wiki entry](/Mods/ContentTweaker/Tinkers_Construct/Trait/) for further information on what you can do with these.

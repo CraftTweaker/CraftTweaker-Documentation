@@ -1,16 +1,16 @@
-# Exigences inversées :
+# Inverted Requirements:
 
 ## [NOTICE]
 
-Les exigences inversées sont dépréciées et sont remplacées en interne par l'opérateur logique NOT. Cela signifie que les exigences inversées sont automatiquement converties en code NOT-Operator. Veuillez vous abstenir d'utiliser ce type d'exigence, elles sont toujours incluses pour **le support hérité !**
+Inverted Requirements are Deprecated and is replaced internally by the NOT-Logical Operator. This means that the inverted requirements are automatically converted in-code into a NOT-Operator. Please refrain from using this requirement type, they are still included for **Legacy Support!**
 
-## Pré-requis inversés
+## Inverted-Requirements
 
-Les exigences inversées sont une fonctionnalité 1.4.0 + CompatSkills seulement! Les exigences inversées sont débloquées tant que vous n'avez pas le composant requis. Une condition de compétence inversée est débloquée tant que vous n'avez pas le niveau spécifié de la compétence ou plus.
+Inverted requirements are a 1.4.0+ CompatSkills feature only! Inverted requirements are unlocked as long as you do not have the required component. An Inverted Skill Requirement is unlocked as long as you do not have the specified level of the skill or higher.
 
-Les syntaxes inversées sont les suivantes :
+The Inverted-Syntaxes are as follows:
 
-    Exemple:
+    Example:
     !adv|
     !dim|
     !stage|
@@ -18,7 +18,7 @@ Les syntaxes inversées sont les suivantes :
     !trait|
     
     
-    Exemple de travail :
+    Working Example:
     !adv|minecraft:husbandry/plant_seed
     !dim|0
     !stage|test

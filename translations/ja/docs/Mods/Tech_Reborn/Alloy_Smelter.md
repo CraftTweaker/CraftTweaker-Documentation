@@ -1,16 +1,16 @@
-# 合金精錬機
+# Alloy Smelter
 
-## パッケージのインポート
+## Importing the Package
 `mods.techreborn.alloySmelter`
 
-## レシピを追加中
+## Adding Recipes
 ```zenscript
-mods.techreborn.alloySmelter.addRecipe(IItemStack 出力, IIngredient input1, IInput2, int ticktime, int euTick);
+mods.techreborn.alloySmelter.addRecipe(IItemStack output, IIngredient input1, IIngredient input2, int ticktime, int euTick);
 ```
 
-## レシピを削除
+## Removing Recipes
 ```zenscript
-mods.techreborn.alloySmelter.removeInputRecipe(IIngredient成分A, IIngredient成分B);
+mods.techreborn.alloySmelter.removeInputRecipe(IIngredient ingredientA, IIngredient ingredientB);
 mods.techreborn.alloySmelter.removeRecipe(IItemStack output);
 mods.techreborn.alloySmelter.removeAll();
 ```

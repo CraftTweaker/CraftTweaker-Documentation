@@ -1,51 +1,51 @@
 # IFoodStats
 
-IPlayer 接口允许您查看某个玩家的食物统计信息。
+The IPlayer interface allows you to view certain information on a player's food Stats.
 
 ## 导入相关包
 
-如果您遇到任何问题，可能需要导入软件包(例如铸造一个 [数组](/AdvancedFunctions/Arrays_and_Loops/)), 这样比抱歉更安全并添加导入。  
-`导入craftweaper.player.IFoodStates；`
+It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
+`import crafttweaker.player.IFoodStats;`
 
-## ZenGetter/ZenSettters
+## ZenGetter/ZenSetters
 
-| ZenGetter | ZenSetter | 类型      |
-| --------- | --------- | ------- |
-| 食物等级      | 食物等级      | 整数      |
-| 饱和度       | 饱和度       | 浮点数     |
-| 需要的食物：    |           | boolean |
+| ZenGetter       | ZenSetter       | 类型      |
+| --------------- | --------------- | ------- |
+| foodLevel       | foodLevel       | int     |
+| saturationLevel | saturationLevel | float   |
+| needFood        |                 | boolean |
 
 ## ZenMethods
 
-#### 添加统计
+#### Adding Stats
 
-无效函数。 输入一个整数和一个浮点型变量。
+Void Function. Takes an int and a float as intput parameters.
 
 ```zenscript
-stats.addStats(int foodValue，float saturation级别)；
+stats.addStats(int foodValue, float saturationLevel);
 ```
 
 #### onUpdate
 
-无效函数。 使用 [IPlayer](/Vanilla/Players/IPlayer/) 对象作为输入参数。
+Void Function. Takes an [IPlayer](/Vanilla/Players/IPlayer/) object as input parameter.
 
 ```zenscript
-Stats.onUpdate(IPlayer player)；
+stats.onUpdate(IPlayer player);
 ```
 
 #### asNBT
 
-返回一个代表食物统计的 IData 对象。
+Returns an IData Object representing the foodStats.
 
 ```zenscript
 stats.asNBT();
-stats as craftweeper.data.IData;
+stats as crafttweaker.data.IData;
 ```
 
-#### 添加 Exhaustion
+#### Add Exhaustion
 
-虚空退役。 将浮点型变量作为输入参数。
+Void Funtion. takes a float as input parameter.
 
 ```zenscript
-stats.addExhaustion(浮点用尽)；
+stats.addExhaustion(float exhaustion);
 ```

@@ -1,30 +1,30 @@
-# Iscrittore
+# Inscriber
 
-### Importazione
+### Importing
 
 ```zenscript
-import mods.Appledenergistics2.Inscriber;
+import mods.appliedenergistics2.Inscriber;
 ```
 
-### Aggiunta
+### Adding
 
-Quando l'inscribe `` booleano è vero, gli ingressi in alto e in basso non vengono consumati.
+When the `inscribe` boolean is true, the top and bottom inputs are not consumed.
 
 ```zenscript
-Iscrittore. ddRecipe(IItemStack output, IItemStack input, boolean inscribe, @Optional IItemStack topInput, @Optional IItemStack bottomInput);
+Inscriber.addRecipe(IItemStack output, IItemStack input, boolean inscribe, @Optional IItemStack topInput, @Optional IItemStack bottomInput);
 
-//trasforma le uova in uova di Wither Skele, non consuma cranio di wither
-Inscriber. ddRecipe(<minecraft:spawn_egg:5>, <minecraft:egg>, true, <minecraft:skull:1>);
+//turns eggs into Wither Skele spawn eggs, does not consume wither skull
+Inscriber.addRecipe(<minecraft:spawn_egg:5>, <minecraft:egg>, true, <minecraft:skull:1>);
 
-//combina pane, fagioli di cocco, e zucchero. tutti gli input sono consumati
+//combines bread, coco beans, and sugar. all inputs are consumed
 Inscriber.addRecipe(<minecraft:cookie>, <minecraft:minecraft:bread>, false, <minecraft:dye:3>, <minecraft:sugar>);
 ```
 
-### Rimozione
+### Removing
 
 ```zenscript
-Inscriber.removeRecipe(uscita IItemStack);
+Inscriber.removeRecipe(IItemStack output);
 
-//rimuove la ricetta stampata in silicio 
+//removes printed silicon recipe 
 Inscriber.removeRecipe(<appliedenergistics2:material:20>); 
 ```

@@ -1,36 +1,36 @@
-# Molino
+# Mill
 
-## Receta básica
+## Basic Recipe
 
-* Añade una receta de aserradero 
+* Adds a Mill Recipe 
 
 ```zenscript
-mods.betterwithmods.Mill.addRecipe(entradas IIngredient[], salidas ItemStack[]);
-//Ejemplos
+mods.betterwithmods.Mill.addRecipe(IIngredient[] inputs, IItemStack[] outputs);
+//Examples
 mods.betterwithmods.Mill.addRecipe([<minecraft:dirt>],[<minecraft:stone>]);
 ```
 
-## Eliminar
+## Removal
 
-* Elimina una receta de molino basada en la salida
+* Remove a Mill recipe based on the output
 
 ```zenscript
-mods.betterwithmods.Mill.remove(ItemStack[] salidas);
+mods.betterwithmods.Mill.remove(IItemStack[] outputs);
 ```
 
-* Quitar todas las recetas del molino
+* Remove all Mill recipes
 
 ```zenscript
 mods.betterwithmods.Mill.removeAll();
 ```
 
-## Constructor
+## Builder
 
-El molino tiene un constructor de recetas que permite un control más preciso de las recetas. Todos los métodos anteriores son simplemente atajos al uso del constructor.
+The Mill has a recipe builder that allows more precise control over the recipes. All previous methods are simply short cuts to using the builder.
 
-* Crear un nuevo constructor de molino. `mods.betterwithmods.Mill.builder()`
+* To create a new Mill builder. `mods.betterwithmods.Mill.builder()`
 
-* Métodos constructores de molino
+* Mill builder methods
      
      * Sets up the inputs and outputs of the recipe  
           zenscript buildRecipe(IIngredient[] inputs, IItemStack[] outputs)  
@@ -38,7 +38,7 @@ El molino tiene un constructor de recetas que permite un control más preciso de
                     zenscript
                     buildRecipe(IIngredient[] inputs, IItemStack[] outputs)
      
-     * Establece la prioridad de la receta, cuanto más baja sea la prioridad, más pronto será fabricada. Default=0.  
+     * Sets the priority of the recipe, the lower the priority the sooner it will be crafted. Default=0.  
           zenscript setPriority(int priority)  
               zenscript
               setPriority(int priority)
@@ -54,7 +54,7 @@ El molino tiene un constructor de recetas que permite un control más preciso de
                     zenscript
                     build()
 
-### Ejemplo de uso del constructor
+### Example builder usage
 
 ```zenscript
 mods.betterwithmods.Mill.builder()

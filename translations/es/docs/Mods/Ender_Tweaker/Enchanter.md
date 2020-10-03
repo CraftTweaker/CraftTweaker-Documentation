@@ -1,31 +1,31 @@
-# Encantador
+# Enchanter
 
-## Paquete
+## Package
 
-`importar mods.enderio.Eneguter;`
+`import mods.enderio.Enchanter;`
 
-## Métodos
+## Methods
 
-**- [IEnchantmentDefinition](/Vanilla/Enchantments/IEnchantmentDefinition/) salida** El encantamiento de salida.
+**- [IEnchantmentDefinition](/Vanilla/Enchantments/IEnchantmentDefinition/) output** The output enchantment.
 
-**- [IIngrediente](/Vanilla/Variable_Types/IIngredient/) entrada** El elemento que utilizó para hacer este encantamiento.
+**- [IIngredient](/Vanilla/Variable_Types/IIngredient/) input** The item that it used to make this enchantment.
 
-**- int amountPerLevel** El número de elementos de entrada por nivel de encantamiento.
+**- int amountPerLevel** The number of input items per level of enchantment.
 
-**- multiplicador doble** Se utiliza para modificar el coste de la receta.
+**- double costMultiplier** Used to modify how expensive the recipe is.
 
-## Adicional
+## Addition
 
 ```zenscript
-mods.enderio.Eneguter.addRecipe(salida IEnchantmentDefinition , entrada IIngredient, int amountPerLevel, doble costMultiplier);
+mods.enderio.Enchanter.addRecipe(IEnchantmentDefinition output, IIngredient input, int amountPerLevel, double costMultiplier);
 
-mods.enderio.Enforwter.addRecipe(<enchantment:minecraft:sharpness>, <minecraft:prismarine_shard>, 32, 60);
+mods.enderio.Enchanter.addRecipe(<enchantment:minecraft:sharpness>, <minecraft:prismarine_shard>, 32, 60);
 ```
 
-## Eliminar
+## Removal
 
 ```zenscript
-mods.enderio.Eneguter.removeRecipe(salida IEnchantmentDefinition );
+mods.enderio.Enchanter.removeRecipe(IEnchantmentDefinition output);
 
-mods.enderio.EnЂ ter.removeRecipe(<enchantment:minecraft:sharpness>);
+mods.enderio.Enchanter.removeRecipe(<enchantment:minecraft:sharpness>);
 ```

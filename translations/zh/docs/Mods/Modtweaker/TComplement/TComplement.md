@@ -1,5 +1,5 @@
-# 补丁
+# TComplement
 
-Tinkers的补给包仅用于更改TCombosmelter。
+The Tinkers' Complement Package is used solely for altering the TComplement melter.
 
-您可以修改它的 [覆盖](/Mods/Modtweaker/TComplement/Handlers/Overrides) 或其 [黑名单](/Mods/Modtweaker/TComplement/Handlers/Blacklist)。
+You can either alter its [overrides](/Mods/Modtweaker/TComplement/Handlers/Overrides) or its [Blacklist](/Mods/Modtweaker/TComplement/Handlers/Blacklist).

@@ -1,42 +1,42 @@
-# ProyectileImpacto Flecha
+# ProjectileImpactArrow
 
-Este evento se dispara cuando un proyectil de flecha afecta a una entidad pero antes de daño, etc, se calcula. Es **cancelable**y, si se cancela, el impacto no será procesado.
+This event is fired whenever an arrow projectile impacts an entity but before damage, etc, is calculated. It is **cancelable**, and if canceled, the impact will not be processed.
 
-Varios valores de la entidad flecha están disponibles a través de zengetros, y pueden ser modificados para ajustar el daño, empuja la fuerza, recolecta el estado y determina (o fuerza) un golpe crítico.
+Various values from the arrow entity are available through zengetters, and can be modified in order to adjust damage, knockback strength, pickup status, and determine (or force) a critical hit.
 
-## Importar la clase
-Podría ser necesario [importar](/AdvancedFunctions/Import/) la clase para evitar errores.  
-`importar crafttweaker.event.ProjectileImpactArrowEvent;`
+## Importing the class
+It might be required to [import](/AdvancedFunctions/Import/) the class to avoid errors.  
+`import crafttweaker.event.ProjectileImpactArrowEvent;`
 
-## Extendiendo IEntityEvent
-ProjectileImpactArrow Events implementan las siguientes interfaces y son capaces de llamar a todos sus métodos/getters/setters también:
+## Extending IEntityEvent
+ProjectileImpactArrow Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
 
-- [Evento Iproyectil](/Vanilla/Events/Events/IProjectileEvent/)
+- [IProjectileEvent](/Vanilla/Events/Events/IProjectileEvent/)
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 
-## ZenGetters y ZenSetters
+## ZenGetters and ZenSetters
 
-La siguiente información puede ser recuperada del evento:
+The following information can be retrieved from the event:
 
-| ZenGetter      | Ajuste            | Tipo                                  |
-| -------------- | ----------------- | ------------------------------------- |
-| `flecha`       |                   | [IEntity](/Vanilla/Entities/IEntity/) |
-| `tirador`      |                   | [IEntity](/Vanilla/Entities/IEntity/) |
-| `daño`         | `daño`            | doble                                 |
-|                | `fuerza de golpe` | int (sólo configurador, sin getter)   |
-| `es crítico`   | `es crítico`      | boolean                               |
-| `pickupStatus` |                   | Cadena                                |
+| ZenGetter      | ZenSetter           | Type                                  |
+| -------------- | ------------------- | ------------------------------------- |
+| `arrow`        |                     | [IEntity](/Vanilla/Entities/IEntity/) |
+| `shooter`      |                     | [IEntity](/Vanilla/Entities/IEntity/) |
+| `damage`       | `damage`            | double                                |
+|                | `knockbackStrength` | int (setter only, no getter)          |
+| `isCritical`   | `isCritical`        | boolean                               |
+| `pickupStatus` |                     | String                                |
 
-## Métodos adicionales
+## Additional methods
 
-- `setPickupdisallowed()`
+- `setPickupDisallowed()`
 
-Evita que la flecha sea recogida bajo cualquier circunstancia.
+Prevents the arrow from being picked up under any circumstances.
 
 - `setPickupAllowed()`
 
-Permite recoger la flecha desde donde aterrizó la entidad.
+Allows the arrow to be picked up from where the entity landed.
 
 - `setPickupCreative()`
 
-Sólo permite recoger la flecha si el jugador está en modo creativo.
+Only allows the arrow to be picked up if the player is in creative mode.

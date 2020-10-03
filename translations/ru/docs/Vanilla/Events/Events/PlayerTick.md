@@ -1,6 +1,6 @@
 # PlayerTick
 
-Событие PlayerTick запускается каждый тик для каждого игрока.
+The PlayerTick Event is fired each tick for each player.
 
 ## Класс события
 
@@ -10,7 +10,7 @@ You can, of course, also [import](/AdvancedFunctions/Import/) the class before a
 
 ## Наследование от интерфейсов событий
 
-PlayerTick Events реализует следующие интерфейсы и могут также вызвать все их методы/getters/setters:
+PlayerTick Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
 
 - [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
 
@@ -18,7 +18,7 @@ PlayerTick Events реализует следующие интерфейсы и 
 
 Следующая информация может быть получена от события:
 
-| Геттеры  | Возвращаемый тип                     |
-| -------- | ------------------------------------ |
-| `player` | [IPlayer](/Vanilla/Players/IPlayer/) |
-| `фаза`   | string                               |
+| ZenGetter | Возвращаемый тип                     |
+| --------- | ------------------------------------ |
+| `player`  | [IPlayer](/Vanilla/Players/IPlayer/) |
+| `phase`   | string                               |

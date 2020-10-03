@@ -1,28 +1,28 @@
 # Reservoir
 
-## registerreservoir
+## registerReservoir
 
-| Type              | Datentyp                                     |
-| ----------------- | -------------------------------------------- |
-| Namensbezeichnung | String                                       |
-| Flüssigkeit       | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
-| Minimale Größe    | Ganzzahl                                     |
-| Maximale Größe    | Ganzzahl                                     |
-| Auffüllrate       | Ganzzahl                                     |
-| Gewicht           | Ganzzahl                                     |
+| Type            | Datentyp                                     |
+| --------------- | -------------------------------------------- |
+| Name Identifier | String                                       |
+| Fluid           | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
+| Minimum Size    | Integer                                      |
+| Maximum Size    | Integer                                      |
+| Replenish Rate  | Integer                                      |
+| Weight          | Integer                                      |
 
-### Gewicht
+### Weight
 
-Gewicht ist die Gewichtschance eines Chunks, der dieses spezifische Flüssigkeitsbehälter enthält. Das Gewicht wird wie in X im Total gezählt.
+Weight is the Weighted Chance of a chunk containing that specific fluid reservoir. The weight is counted as in X in Total.
 
 So if you have 5 Reservoir values at: 5, 5, 6, 8, 10
 
-Dann hat jeder einzelne Eintrag eine gewichtete Chance:
+Then each respective entry will have a weighted chance of:
 
-    5 in 34
-    5 in 34
-    6 in 34
-    8 in 34
+    5  in 34
+    5  in 34
+    6  in 34
+    8  in 34
     10 in 34
     
 

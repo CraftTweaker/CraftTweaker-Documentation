@@ -1,22 +1,22 @@
 # `TagIngredient`
 
-`TagIngredient` は `IIngredient` 実装で、レシピで [`タグ`](/Mods/Boson/Tags/Tag/) を使用することができます。 [`タグ` ローダー](/Mods/Boson/Loaders/Tags/) の外部からのみ、このデータにアクセスできます。 タグと取得方法についての詳細は [このページ](/Mods/Boson/Tags/Concept/) を参照してください。
+A `TagIngredient` is an `IIngredient` implementation that allows you to use a [`Tag`](/Mods/Boson/Tags/Tag/) in recipes. You can only access this data from outside the [`tags` loader](/Mods/Boson/Loaders/Tags/). For more information regarding tags and how to obtain them, refer to [this page](/Mods/Boson/Tags/Concept/).
 
-## クラスの詳細
-このクラスは `net.thesilkminer.mc.boson.zen.tag` パッケージ内にあり、 `net.thesilkminer.mc.boson.tag.tag.TagIngredient` インポートのための完全修飾名です。
+## Class Details
+The class is situated in the `net.thesilkminer.mc.boson.zen.tag` package, making `net.thesilkminer.mc.boson.zen.tag.TagIngredient` its fully qualified name for importing.
 
-## 新しいインスタンスの作成
+## Creating a New Instance
 Refer to [the bracket handler documentation](/Mods/Boson/Tags/BracketHandler/).
 
 ## `IIngredient`
-`TagIngredient` は `IIngredient`であるため、そのインターフェイスのすべてのプロパティとメソッドへのアクセスを提供します。 詳細については、 から [`IIngredient`のドキュメント ページ](/Vanilla/Variable_Types/IIngredient/) を参照してください。 このドキュメントページ では、このクラスに特有の追加とQuirks のみを概説しています。
+Since `TagIngredient` is an `IIngredient`, it provides access to all the properties and methods of that interface. Refer to [`IIngredient`'s documentation page](/Vanilla/Variable_Types/IIngredient/) for more details. This documentation page only outlines additions and quirks that are particular of this class.
 
 ## プロパティ
-`TagIngredient` は、次の表に示されるように、追加のプロパティセットへの読み取り専用アクセスを提供します。
+A `TagIngredient` provides read-only access to an additional set of properties, as outlined in the following table:
 
-| プロパティ名    | タイプ                                    | 説明                    |
-| --------- | -------------------------------------- | --------------------- |
-| `tagName` | [`名前SpacedString`](/Mods/Boson/Names/) | この成分が参照するタグを一意に識別する名前 |
+| Property Name | Type                                     | Description                                                     |
+| ------------- | ---------------------------------------- | --------------------------------------------------------------- |
+| `tagName`     | [`NameSpacedString`](/Mods/Boson/Names/) | Name that uniquely identifies the tag this ingredient refers to |
 
 ## 例
 
@@ -24,5 +24,5 @@ Refer to [the bracket handler documentation](/Mods/Boson/Tags/BracketHandler/).
 val anyIngot = <tag-items:forge:ingots>;
 val anyWool = <tag-items:minecraft:wool>;
 
-recipes.addShaped("wool_infused_ingot", <contenttweaker:wool_infused_ingot>, [[anyIngot, anyWool]), [anyWool, anyIngot]);
+recipes.addShaped("wool_infused_ingot", <contenttweaker:wool_infused_ingot>, [[anyIngot, anyWool], [anyWool, anyIngot]]);
 ```

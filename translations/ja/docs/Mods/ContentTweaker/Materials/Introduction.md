@@ -1,16 +1,16 @@
-# ContentTweaker Material System
+# Contenttweaker Material System
 
-Contenttweakerは、ゲームに単一のアイテムを追加するだけでなく、全体の素材を追加することができます! 例えば、これらの材料を使用して、ギア、インゴットなどと一緒に新しい鉱石を自動的に生成することができます!
+Contenttweaker allows you not only to add single items to the game but whole materials! You can for example use these materials to automatically generate a new ore together with gears, ingots and the like!
 
-重要な5つの規約があります:
+There are 5 Terms that are important:
 
-- [マテリアル](/Mods/ContentTweaker/Materials/Materials/Material/): 追加/使用するマテリアル(プラチナなど)→ アイテムの素材について
-- [PartType](/Mods/ContentTweaker/Materials/Parts/PartType/): 基本的にはグループ (ブロック、アイテム、エンティティなど) → 部品の種類
-- [パート](/Mods/ContentTweaker/Materials/Parts/Part/): 項目の形 (例: Gear, Rod, Ingot, etc)
+- [Material](/Mods/ContentTweaker/Materials/Materials/Material/): The Material you are going to add/use (e.g. Platinum) → What the items are made of
+- [PartType](/Mods/ContentTweaker/Materials/Parts/PartType/): Basically a group (e.g. Block, Item, Entity, etc) → The type of the parts
+- [Part](/Mods/ContentTweaker/Materials/Parts/Part/): The item's form (e.g. Gear, Rod, Ingot, etc)
 - [MaterialPart](/Mods/ContentTweaker/Materials/Materials/MaterialPart/): Combination of Part and Material (e.g. Iron rod, Platinum Gear, etc) → Can be used to return the item as [IItemStack](/Vanilla/Items/IItemStack/) later on.
-- [MaterialPartData](/Mods/ContentTweaker/Materials/Materials/MaterialPartData/): いくつかの設定 → 部品タイプごとに変動します。詳細については、wiki ページを確認してください。
+- [MaterialPartData](/Mods/ContentTweaker/Materials/Materials/MaterialPartData/): Some configurations → Varies by part type, check the wiki page for further information.
 
-## スクリプト例
+## Example Script
 
 ```zenscript
     #loader contenttweaker

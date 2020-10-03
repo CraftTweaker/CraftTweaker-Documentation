@@ -1,10 +1,10 @@
-### クラス
+### Class
 
 ```zenscript
 import mods.roots.Pacifist;
 ```
 
-#### メソッド
+#### Methods
 
 ```zenscript
 void addEntity(

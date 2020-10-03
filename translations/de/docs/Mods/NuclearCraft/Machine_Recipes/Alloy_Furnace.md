@@ -1,14 +1,14 @@
-# Legierungsöfen
+# Alloy Furnace
 
-## Paket wird importiert
-`mods.nuclearcraft.alloy_ofen`
+## Importing the Package
+`mods.nuclearcraft.alloy_furnace`
 
-## Rezepte hinzufügen
+## Adding Recipes
 ```zenscript
 mods.nuclearcraft.alloy_furnace.addRecipe([itemInput1, itemInput2, itemOutput, @Optional double timeMultiplier, @Optional double powerMultiplier, @Optional double processRadiation]);
 ```
 
-## Rezepte entfernen
+## Removing Recipes
 ```zenscript
 mods.nuclearcraft.alloy_furnace.removeRecipeWithInput([itemInput1, itemInput2]);
 mods.nuclearcraft.alloy_furnace.removeRecipeWithOutput([itemOutput1]);

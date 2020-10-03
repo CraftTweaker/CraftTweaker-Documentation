@@ -1,28 +1,28 @@
-# 推送反应
+# PushReaction
 
-推力反应是当手枪试图推送方块时发生的情况。
+A push reaction is what happens when a piston tries to push a block.
 
 # 导入相关包
 
-如果您遇到任何问题，可能需要导入软件包，所以比抱歉更安全并添加导入。  
-`导入 mods.contenttweaker.PushReact；`
+It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
+`import mods.contenttweaker.PushReaction;`
 
-## 比较两个反应
+## Comparing two reactions
 
-您可以通过使用 `==` 操作员看到两个反应是否相同。
+You can see if two reactions are equal by using the `==` operator.
 
 ```zenscript
-如果(1== b){}
+if(a == b){}
 ```
 
-## 静态方法
+## Static methods
 
-您可以使用这些方法获取PushReaction 对象：
+You can use these methods to get PushReaction Objects:
 
 ```zenscript
-mods.contenttweeper.PushReaction.normal();
-mods.contenttweeper.PushReaction.destroy();
-mods.contenttweiner.PushReaction.block();
-mods.contenttweeper.PushReaction.ignore();
-mods.contenttweeper.PushReaction.pusOnly();
+mods.contenttweaker.PushReaction.normal();
+mods.contenttweaker.PushReaction.destroy();
+mods.contenttweaker.PushReaction.block();
+mods.contenttweaker.PushReaction.ignore();
+mods.contenttweaker.PushReaction.pushOnly();
 ```

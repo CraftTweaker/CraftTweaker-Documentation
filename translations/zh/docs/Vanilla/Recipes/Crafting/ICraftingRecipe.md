@@ -1,70 +1,70 @@
-# ICrafting配方
+# ICraftingRecipe
 
-ICraftingRecipe 是ZS 如何看待它的一个制造桌子。
+An ICraftingRecipe is a crafting table recipe the way ZS sees it.
 
 ## 导入相关包
 
-可能需要 [导入](/AdvancedFunctions/Import/) 类以避免错误。  
-`导入craftminstruer.reciples.ICraftingRecipe`
+It might be required to [import](/AdvancedFunctions/Import/) the class to avoid errors.  
+`import crafttweaker.recipes.ICraftingRecipe`
 
 ## ZenMethods/Getters
 
-### 获取属性
+### Get Ingredients
 
-要么返回一个 [IIngredient](/Vanilla/Variable_Types/IIngredient/)[]或一个 [Igredient](/Vanilla/Variable_Types/IIngredient/)[]
+Either returns an [IIngredient](/Vanilla/Variable_Types/IIngredient/)[] or an [IIngredient](/Vanilla/Variable_Types/IIngredient/)[][]
 
 ```zenscript
-复合成分1D
-rec.incomponents2D
+rec.ingredients1D
+rec.ingredients2D
 ```
 
 ### Get standart output
 
-以 [IItemStack](/Vanilla/Items/IItemStack/) 返回的 ouptut。 小心，可以为空！
+Returns the ouptut as [IItemStack](/Vanilla/Items/IItemStack/). Careful, can be null!
 
 ```zenscript
-输出
+rec.output
 ```
 
-### 检查条件
+### Check for conditions
 
-每个返回一个布尔值
+Each of these returns a boolean
 
 ```zenscript
-建议.hasTransformers;
-rec.hasRecipepeAction;
+rec.hasTransformers;
+rec.hasRecipeAction;
 rec.hasRecipeFunction;
 rec.hidden;
 rec.shaped;
 ```
 
-### 资源域
+### resourceDomain
 
-基本上，添加该配方的模组的模组。
+Basically, the modid of the mod that added the recipe.
 
 ```zenscript
-Rec.resourceDomain;
+rec.resourceDomain;
 rec.fullResourceDomain;
 ```
 
-### 成分：
+### Ingredients
 
-返回成分列表分别为 [IIngredient](/Vanilla/Variable_Types/IIngredient/)\[] 或 [IIngredient](/Vanilla/Variable_Types/IIngredient/)\[]\[]\[……]。
+Returns the ingredients list as [IIngredient](/Vanilla/Variable_Types/IIngredient/)\[] or [IIngredient](/Vanilla/Variable_Types/IIngredient/)\[]\[] respectively.
 
 ```zenscript
-rec.listicents1D;
-rec.listents2D;
+rec.ingredients1D;
+rec.ingredients2D;
 ```
 
 ### 输出
 
-该配方的 [IItemStack](/Vanilla/Items/IItemStack/) 输出。
+The [IItemStack](/Vanilla/Items/IItemStack/) output of the recipe.
 
 ```zenscript
-输出；
+rec.output;
 ```
 
-### 到字符串
+### To String
 
 ```zenscript
 rec.commandString;

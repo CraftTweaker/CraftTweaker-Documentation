@@ -1,21 +1,21 @@
-# Зачарованный Плюс
+# Enchanting Plus
 
-[Зачаровательный плюс](https://minecraft.curseforge.com/projects/enchanting-plus) позволяет игрокам иметь больше контроля над чародейским опытом. Craftweaker может быть использован для применения определенных ограничений к этому шагу.
+The [Enchanting Plus](https://minecraft.curseforge.com/projects/enchanting-plus) allows players to have more control over the enchanting experience. CraftTweaker can be used to apply certain restrictions to this mod.
 
-# Черный список элементов
+# Blacklisting Items
 
-Запрещает конкретному предмету входить в расширенную зачарованную таблицу.
+Prevents a specific item from entering the advanced enchanting table.
 
 ```zenscript
-// mods.eplus.Eplus.blacklistItem(предмет IItemStack);
+// mods.eplus.Eplus.blacklistItem(IItemStack item);
 mods.eplus.Eplus.blacklistItem(<minecraft:chainmail_helmet>);
 ```
 
-# Чёрные Чары
+# Blacklisting Enchantments
 
-Предотвращает нанесение определённых чар за улучшенным чародейским столом.
+Prevents a specific enchantment from being applied at the advanced enchanting table.
 
 ```zenscript
 // mods.eplus.Eplus.blacklistEnchantment(IEnchantmentDefinition enchantment);
-mods.eplus.Eplus.blacklistEnchant(<enchantment:minecraft:protection>);
+mods.eplus.Eplus.blacklistEnchantment(<enchantment:minecraft:protection>);
 ```

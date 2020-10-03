@@ -1,24 +1,24 @@
-# ステージ
+# Stage
 
-ステージは、新しい「ステージ」を作成するときに与えられるクラスです。クラスには、その *ステージ*へのエントリをステージングするために必要なすべてのメインメソッドが含まれています。 それはそれと同じくらい簡単です! 必要なすべてのエントリを追加したら. ステージを作るのを忘れないでください！
+Stage is the class you are given when you create a new "Stage" the class contains all the main method you need to stage an entry to that *Stage*. It's as simple as that! Once you have added all the entries you need. Don't forget to build the stage!
 
 ## パッケージのインポート
 
 `import mods.zenstages.Stage;`
 
-## どうすればいいか
+## What to do with it
 
 ### ZenGetters and parameterless ZenMethods
 
-| ZenGetter | 何をするか      | Return Type |
-| --------- | ---------- | ----------- |
-| ステージ      | ステージ名を返します | 文字列         |
+| ZenGetter | What does it do        | Return Type |
+| --------- | ---------------------- | ----------- |
+| stage     | Returns the stage name | string      |
 
-### ステージング方法
+### Staging Methods
 
-**注意: これらのメソッドはすべて、 [ZenStager](/Mods/GameStages/ZenStages/ZenStager/) を使用してステージを作成するときに与えられた Stageクラスでのみ動作しますので、静的に保存することで、必要に応じて他のクラスから参照することができます。**
+**Note: All these methods will only work with the Stage class given when you create a Stage using [ZenStager](/Mods/GameStages/ZenStages/ZenStager/) so save these to a static so you can reference from other classes if need be.**
 
-[カスタムタイプ](/Mods/GameStages/ZenStages/CustomType/) がこのステージにステージングされたかどうかを確認します。
+Check to see if a [Custom Type](/Mods/GameStages/ZenStages/CustomType/) has been Staged to this Stage.
 
 ```zenscript
 // isCustomStaged(String slug, String value);
@@ -31,7 +31,7 @@ TestStage.isCustomStaged("blockBreak", <minecraft:stone>);
 TestStage.isCustomStaged("container", "com.test");
 ```
 
-ステージに材料を追加します。 指定した原材料のレシピをステージングするオプションのパラメータをtrueにデフォルト設定します。
+Add an Ingredient to a stage. Defaulted to true the optional parameter to stage the recipe for said Ingredient.
 
 ```zenscript
 // addIngredient(IIngredient ingredient, @Optional(valueBoolean = true) boolean recipeStage);
@@ -41,14 +41,14 @@ TestStage.addIngredient(<ore:wool>);
 TestStage.addIngredients([<minecraft:boat>, <minecraft:string>], false);
 ```
 
-材料オーバーライドを追加します。 これはModIdを介してMod全体をステージングしているときに使用されますが、Modから別の [ステージ](/Mods/GameStages/ZenStages/Stage/)にいくつかのアイテムをステージングする必要があります。 これによりアイテムの再ステージが可能になります
+Add an Ingredient Override. This is used when you're Staging an entire mod via the ModId but you need to re-stage some items from the mod to another [Stage](/Mods/GameStages/ZenStages/Stage/), so this allows you to re-stage items.
 
 ```zenscript
-// addIngredientOverride(IIngredient食材, @Optional(valueBoolean = true) boolean recipeStage);
+// addIngredientOverride(IIngredient ingredient, @Optional(valueBoolean = true) boolean recipeStage);
 TestStage.addIngredientOverride(<myawesomemod:generator>, true);
 ```
 
-ステージにModIDを追加します。 これにより、ステージに提供された modId によって登録されたすべてのアイテムがステージングされます。 提供されたアイテムがステージングされないIIngredientsの配列を提供することもできます。
+Add a ModId to a stage. This will stage all the items found which are registered by the modId provided to the Stage. You can also provide an array of IIngredients which the provided items won't be staged.
 
 ```zenscript
 // addModId(String modId);
@@ -58,7 +58,7 @@ TestStage.addModId("bloodmagic");
 TestStage.addModId("bloodmagic", [<bloodmagic:someitem>]);
 ```
 
-ILiquidStack をステージに追加します。
+Add an ILiquidStack to a stage.
 
 ```zenscript
 // addLiquid(ILiquidStack liquidStack);
@@ -67,28 +67,28 @@ TestStage.addLiquid(<liquid:water>);
 TestStage.addLiquids([<minecraft:water>, <minecraft:lava>]);
 ```
 
-ステージに寸法を追加 [DimStages](/Mods/GameStages/DimensionStages/DimensionStages/) をインストールする必要があります。
+Add a dimension to a stage. Requires [DimStages](/Mods/GameStages/DimensionStages/DimensionStages/) to be installed.
 
 ```zenscript
 // addDimension(int dimId);
 TestStage.addDimension(-1);
 ```
 
-レシピ名をステージに追加します。 [RecipeStages](/Mods/GameStages/RecipeStages/RecipeStages/) をインストールする必要があります。
+Add a recipe name to a stage. Requires [RecipeStages](/Mods/GameStages/RecipeStages/RecipeStages/) to be installed.
 
 ```zenscript
 // addRecipeName(string recipeName);
 TestStage.addRecipeName("minecraft:boat");
 ```
 
-レシピ名をステージに追加します。 [RecipeStages](/Mods/GameStages/RecipeStages/RecipeStages/) をインストールする必要があります。
+Add a recipe name to a stage. Requires [RecipeStages](/Mods/GameStages/RecipeStages/RecipeStages/) to be installed.
 
 ```zenscript
 // addRecipeName(string recipeName);
 TestStage.addRecipeRegex("crafttweaker:test_.*");
 ```
 
-モブをステージに追加します。 [MobStages](/Mods/GameStages/MobStages/MobStages/) をインストールする必要があります。
+Add a mob to a stage. Requires [MobStages](/Mods/GameStages/MobStages/MobStages/) to be installed.
 
 ```zenscript
 // addMob(string mobName);
@@ -101,7 +101,7 @@ TestStage.addMob("minecraft:skeleton", 0);
 TestStage.addMobs(["minecraft:skeleton", "minecraft:skeleton_horse"], 9);
 ```
 
-TiC材料名をステージに追加します。 [TinkerStages](/Mods/GameStages/TinkerStages/TinkerStages/) をインストールする必要があります。
+Add a TiC material name to a stage. Requires [TinkerStages](/Mods/GameStages/TinkerStages/TinkerStages/) to be installed.
 
 ```zenscript
 // addTiCMaterial(string materialName);
@@ -110,23 +110,23 @@ TestStage.addTiCMaterial("iron");
 TestStage.addTiCMaterials(["bronze", "iron"]);
 ```
 
-TiC修飾子をステージに追加します。 [TinkerStages](/Mods/GameStages/TinkerStages/TinkerStages/) をインストールする必要があります。
+Add a TiC modifier to a stage. Requires [TinkerStages](/Mods/GameStages/TinkerStages/TinkerStages/) to be installed.
 
 ```zenscript
 // addTiCModifier(string modifierName);
 TestStage.addTiCModifier("mending_moss");
 ```
 
-IE のマルチブロックをステージに追加します。 [マルチブロックステージ](https://github.com/The-Acronym-Coders/MultiBlock-Stages/) をインストールする必要があります。
+Add a IE Multiblock to a stage. Requires [Multi Block Stages](https://github.com/The-Acronym-Coders/MultiBlock-Stages/) to be installed.
 
 ```zenscript
-// addIEMmultiBlock(string multiblock);
-// addIEMMultiBlocks(string multiblocks);
-TestStage.addIEMMultiBlock("IE:ArcFurnace");
-TestStage.addIEMMultiBlocks([IE:Mixer", IE:SheetmetalTank"]);
+// addIEMultiBlock(string multiblock);
+// addIEMultiBlocks(string multiblocks);
+TestStage.addIEMultiBlock("IE:ArcFurnace");
+TestStage.addIEMultiBlocks(["IE:Mixer", "IE:SheetmetalTank"]);
 ```
 
-ステージに鉱石交換を追加します。 [OreStages](https://github.com/Darkhax-Minecraft/Ore-Stages/#crafttweaker-methods) のインストールが必要です。
+Add an Ore Replacment to a stage. Requires [OreStages](https://github.com/Darkhax-Minecraft/Ore-Stages/#crafttweaker-methods) to be installed.
 
 ```zenscript
 // addOreReplacement(IIngredient blockToHide, @Optional(valueBoolean = false) boolean isNonDefaulting);

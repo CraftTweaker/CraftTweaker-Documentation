@@ -1,22 +1,22 @@
-# Wydobywacz Świecącego Kamienia
+# Glowstone Extractor
 
-## Pakiet
+## Package
 ```zenscript
-importuj mods.calculator.glowstone;
+import mods.calculator.glowstone;
 ```
 
-## Metody
+## Methods
 
-- **[Składnik](/Vanilla/Variable_Types/IIngredient/) wejście** Wejście
-- **Wartość Int** Ilość danych wejściowych dodaje do tej maszyny.
+- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input** The input.
+- **Int value** The amount of input adds to that machine.
 
 
-## Dodatek
+## Additon
 ```zenscript
-glowstone.addRecipe(dane wejściowe dla składników, wartość int);
+glowstone.addRecipe(IIngredient input, int value);
 ```
 
-## Usuwanie
+## Removal
 ```zenscript
-glowstone.removeRecipe(dane wejściowe);
+glowstone.removeRecipe(IIngredient input);
 ```

@@ -1,15 +1,15 @@
 # IProcessableEvent
 
-此接口将扩展到所有可以处理的事件。  
-这些事件将设置为已经处理完毕，其它事件处理程序不应再改变事件。  
-铭记他们仍然可以！
+This interface is extended by all events that can be processed.  
+These events are to be set as processed after everything they are made for has been completed and other event handlers should not change the event any more.  
+Bear in mind that they still can!
 
 ## 导入相关包
 
-可能需要 [导入](/AdvancedFunctions/Import/) 类以避免错误。  
-`导入craftmilower.event.IPlayerEvent；`
+It might be required to [import](/AdvancedFunctions/Import/) the class to avoid errors.  
+`import crafttweaker.event.IPlayerEvent;`
 
-## 在这些问题上能够做些什么？
+## What can be done with these
 
-- `event.process();` method, 返回 null (nothing)
-- `event.process;` getter, 返回 bool
+- `event.process();` method, returns void (nothing)
+- `event.processed;` getter, returns a bool

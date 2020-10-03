@@ -1,31 +1,31 @@
-# Коробка с ломом
+# Scrap Box
 
-## Пакет
+## Package
 
-`импорт mods.ic2.ScrapBox;`
+`import mods.ic2.ScrapBox;`
 
-## Методы
+## Methods
 
-- **[взвешенный ItemStack](/Vanilla/Items/WeightedItemStack/) взвешенная вещь** Новый вход в пул коробки скрапа. Вес процента будет разделён на 100.
-- **вес с плавающей точкой** Вес этой новой записи
+- **[WeightedItemStack](/Vanilla/Items/WeightedItemStack/) weightedItem** The new entry of scrap box drop pool. Percentage weight will be divided by 100.
+- **float weight** The weight of this new entry
 
-### Добавить Drop (взвешенный ItemStack)
+### Add Drop (WeightedItemStack)
 
 ```zenscript
-mods.ic2.ScrapBox.addDrop(WeightedItemStack);
+mods.ic2.ScrapBox.addDrop(WeightedItemStack weightedItem);
 
 mods.ic2.ScrapBox.addDrop(<minecraft:diamond_ore>.weight(0.1));
-mods.ic2.ScrapBox.addDrop(<minecraft:diamond_ore> 10);
+mods.ic2.ScrapBox.addDrop(<minecraft:diamond_ore> % 10);
 ```
 
-### Добавить Drop (IItemStack, float)
+### Add Drop (IItemStack, float)
 
 ```zenscript
-mods.ic2.ScrapBox.addDrop(предмет IItemStack, вес с плавающей точкой);
+mods.ic2.ScrapBox.addDrop(IItemStack item, float weight);
 mods.ic2.ScrapBox.addDrop(<minecraft:diamond_ore>, 0.1F);
 ```
 
-## Удаление
+## Removal
 
-- При установленном IC2 Classic Tweaker и использовании Ic2 Classic вместо Ic2 Экспериментальная коробка скрапа может быть удалена. Смотрите [здесь](/Mods/IC2ClassicTweaker/Scrap_Box) для документации.
-- При использовании Экспериментального Ic2 удаление невозможно.
+- If IC2 Classic Tweaker is installed and Ic2 Classic is being used instead of Ic2 Experimental, scrap box drops can be removed. See [here](/Mods/IC2ClassicTweaker/Scrap_Box) for doc.
+- If using Ic2 Experimental, then removal is not possible.

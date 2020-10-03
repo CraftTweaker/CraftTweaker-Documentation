@@ -1,26 +1,26 @@
-# Metallurgic
+# Metallurgic Infuser
 
-Od Mekanism 9.7.0 jest teraz możliwe oglądanie wszystkich ciągów receptur Metallurgic Infuser za pomocą polecenia `/ct mekrecipes metallurgicInfuser`
+As of Mekanism 9.7.0 it is now possible to view all recipe strings of the Metallurgic Infuser through the command `/ct mekrecipes metallurgicInfuser`
 
-## Ciąg typu infuzji
+## Infusion Type String
 
-Zarówno dodawanie, jak i usuwanie przepisów wymagają ciągu „typu infuzji”. Domyślne przykłady z Mekanizmu to:
+Both addition and removal of recipes require an "infusion type" string. Default examples from Mekanism are:
 
-| Typ wlewu  | Dodane przez |
-| ---------- | ------------ |
-| "KARBON"   | Mekanizm     |
-| "TIN"      | Mekanizm     |
-| "DIAMOND"  | Mekanizm     |
-| „REDSTONA” | Mekanizm     |
-| „FUNGI”    | Mekanizm     |
-| „BIO”      | Mekanizm     |
-| "OBSIDIAN" | Mekanizm     |
+| Infuse Type | Added by |
+| ----------- | -------- |
+| "CARBON"    | Mekanism |
+| "TIN"       | Mekanism |
+| "DIAMOND"   | Mekanism |
+| "REDSTONE"  | Mekanism |
+| "FUNGI"     | Mekanism |
+| "BIO"       | Mekanism |
+| "OBSIDIAN"  | Mekanism |
 
-Jeśli ktoś z innych modów rejestruje nowy typ infuzji, ten typ może być użyty w CraftTweaker, jak również pod warunkiem, że nazwa zarejestrowanego typu jest dokładnie określona. UWAGA: *nie jest* możliwe zdefiniowanie **nowych** typów ** z CraftTweaker
+If any other mod registers a new infusion type, that type can be used in CraftTweaker as well as long as the registered type's name is specified exactly. NOTE: It is *not* possible to define **new** infusion *types* with CraftTweaker
 
-Od Mekanism 9.7.0 jest teraz możliwe przeglądanie wszystkich zarejestrowanych infuzji (w tym tych z innych modyfikacji) za pomocą polecenia `/ct infuseTypes`
+As of Mekanism 9.7.0 it is now possible to view all registered infusions (including those from other mods) via the command `/ct infuseTypes`
 
-## Dodanie
+## Addition
 
 ```zenscript
 mods.mekanism.infuser.addRecipe(String infusionType, int infusionConsumed, IIngredient inputStack, IItemStack outputStack);
@@ -29,11 +29,11 @@ mods.mekanism.infuser.addRecipe("OBSIDIAN", 20, <minecraft:coal_block>, <minecra
 mods.mekanism.infuser.addRecipe("DIAMOND", 80, <minecraft:glowstone>, <minecraft:nether_star>);
 ```
 
-Od Mekanism 9.7.0 możliwe jest stosowanie IIngredients jako inputStack zamiast tylko IItemStacks.
+As of Mekanism 9.7.0 it is possible to use IIngredients as the inputStack instead of only IItemStacks.
 
-Uwaga: Obecnie wszystko to jest w pętli nad różnymi możliwościami w java podczas dodawania zamiast tego musisz to zrobić w ZenScript. Obecnie w samych maszynach nie ma wbudowanego wsparcia dla składników składowych składowych czy też słownika.
+Note: Currently all this does is loop over the different possibilities in java while adding instead of you having to do it in ZenScript. Currently there is no built in support for compound ingredients or oredictionary in the machines themselves.
 
-## Usuwanie
+## Removal
 
 ```zenscript
 mods.mekanism.infuser.removeRecipe(IIngredient outputStack, @Optional IIngredient inputStack, @Optional String infusionType);
@@ -42,11 +42,11 @@ mods.mekanism.infuser.removeRecipe(<mekanism:enrichedalloy>, <minecraft:iron_ing
 mods.mekanism.infuser.removeRecipe(<minecraft:mycelium>);
 ```
 
-Określenie parametru wejściowego usunie tylko konkretny przepis, który wykorzystuje dane wejściowe. Odrzucenie parametru wejściowego usunie wszystkie receptury, które wytwarzają dane wyjściowe.
+Specifying an input parameter will only remove the specific recipe that uses said input. Omitting the input parameter will remove all recipes that produce the specified output.
 
-## Usuwanie wszystkich przepisów
+## Removing all recipes
 
-Począwszy od Mekanism 9.7.0 możliwe jest obecnie usunięcie wszystkich przepisów dotyczących wyrobu metalurgicznego. (Wyłącza wszelkie przepisy dodane przez CraftTweaker)
+As of Mekanism 9.7.0 it is now possible to remove all Metallurgic Infuser recipes. (This excludes any recipes added via CraftTweaker)
 
 ```zenscript
 mods.mekanism.infuser.removeAllRecipes();

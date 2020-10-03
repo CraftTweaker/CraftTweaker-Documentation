@@ -1,41 +1,41 @@
 # Grill
 
-Grill gotuje jedzenie nad gorącymi węglikami.
+The Grill cooks food over hot coals.
 
-Do gotowania obu stron wymaga to obcinania jedzenia.
+It requires flipping food to cook both sides.
 
-## Domyślne przepisy Grill
+## Default Grill Recipes
 
-- Wołowina -> Gotowana Wołowina
-- Kiełbasa -> gotowana kiełbasa
-- Kebab -> Upieczony Kebab
+- Beef -> Cooked Beef
+- Sausage -> Cooked Sausage
+- Kebab -> Cooked Kebab
 
-## Usuwanie
+## Removing
 
-## Usuń odpowiednie przepisy grilli.
+## Remove matching grill recipes.
 
 ```zenscript
 mods.cfm.Grill.remove(@Optional final IIngredient output, @Optional final IIngredient input);
 
-// Usuń przepisy, które wymagają wołowiny
-mods.cfm.Grill. emove(null,<minecraft:beef>);
-// Usuń receptury, które skutkują gotowaną kiełbasą
+// Remove recipes that require Beef
+mods.cfm.Grill.remove(null,<minecraft:beef>);
+// Remove recipes that result in a Cooked Sausage
 mods.cfm.Grill.remove(<cfm:item_sausage_cooked>);
-// Usuń wszystkie przepisy
+// Remove all recipes
 mods.cfm.Grill.remove();
 ```
 
-## Dodawanie
+## Adding
 
-Dodaj przepis na grill.
+Add a grill recipe.
 
-## Wspiera tylko dane wejściowe o rozmiarze 1.
+## Only supports inputs of size 1.
 
 ```zenscript
-mods.cfm.Grill.addRecipe(@Nonnull final wyjście IItemStack, @Nonnull final IItemStack);
+mods.cfm.Grill.addRecipe(@Nonnull final IItemStack output, @Nonnull final IItemStack input);
 
-// Dodaj przepis, który sprawia, że Patyk z kiełbasy
-mody. fm.Grill.addRecipe(<minecraft:stick>,<cfm:item_sausage>);
-// Dodaj przepis, który tworzy pochodnię z Przyklejenia
+// Add a recipe that makes a Stick from a Sausage
+mods.cfm.Grill.addRecipe(<minecraft:stick>,<cfm:item_sausage>);
+// Add a recipe that makes a Torch from a Stick
 mods.cfm.Grill.addRecipe(<minecraft:torch>,<minecraft:stick>);
 ```

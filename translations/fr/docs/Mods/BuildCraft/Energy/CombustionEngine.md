@@ -1,38 +1,38 @@
-# Moteur à Combustion
+# Combustion Engine
 
-*Nécessite une Fabrication de Construction d'Énergie*
+*Requires BuildCraft Energy*
 
-Chemin de classe : `mods.buildcraft.CombustionEngine`
+Class path: `mods.buildcraft.CombustionEngine`
 
-## Utiliser
+## Use
 
-Pour l'utiliser, importez la classe avec `import mods.buildcraft.CombustionEngine;` au début de votre script.
+To use, import the class with `import mods.buildcraft.CombustionEngine;` at the beginning of your script.
 
-## Ajouter un carburant propre
+## Adding a Clean Fuel
 
-`CombustionEngine.addCleanFuel(liquide, powerPerTick, timePerBucket);`
+`CombustionEngine.addCleanFuel(liquid, powerPerTick, timePerBucket);`
 
 - `liquid` <[ILiquidStack](/vanilla/api/liquids/ILiquidStack)> The liquid to be used as fuel
-- `powerPerTick` &lt;double> puissance sortie en MJ par tick
-- `timePerBucket` &lt;int> Quantité de ticks que 1000 mB (1 secket) doivent exécuter pour
+- `powerPerTick` &lt;double> Power output in MJ per tick
+- `timePerBucket` &lt;int> Amount of ticks that 1,000 mB (1 bucket) should run for
 
 ```zenscript
-Importer mods.buildcraft.CombustionEngine;
+import mods.buildcraft.CombustionEngine;
 
 CombustionEngine.addCleanFuel(<liquid:iron>, 32.0, 1200);
 ```
 
-## Ajouter un carburant sale
+## Adding a Dirty Fuel
 
 `CombustionEngine.addDirtyFuel(lFuel, powerPerTick, timePerBucket, lResidue);`
 
 - `lFuel` <[ILiquidStack](/vanilla/api/liquids/ILiquidStack)> The liquid to be used as fuel
-- `powerPerTick` &lt;double> puissance sortie en MJ par tick
-- `timePerBucket` &lt;int> Quantité de ticks que 1000 mB (1 secket) doivent exécuter pour
+- `powerPerTick` &lt;double> Power output in MJ per tick
+- `timePerBucket` &lt;int> Amount of ticks that 1,000 mB (1 bucket) should run for
 - `lResidue` <[ILiquidStack](/vanilla/api/liquids/ILiquidStack)> The residue fluid, per bucket of the original fuel
 
 ```zenscript
-Importer mods.buildcraft.CombustionEngine;
+import mods.buildcraft.CombustionEngine;
 
 CombustionEngine.addDirtyFuel(<liquid:iron>, 32.0, 1200, <liquid:water>);
 ```

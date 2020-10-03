@@ -1,38 +1,38 @@
-# 燃焼エンジン
+# Combustion Engine
 
-*クラフトエネルギーを建造する必要があります*
+*Requires BuildCraft Energy*
 
 Class path: `mods.buildcraft.CombustionEngine`CombustionEngine</code>
 
-## 使用
+## Use
 
-To use, import the class with `import mods.buildcraft.CombustionEngine;` at the beginning of your script.combustionEngine;</code> はスクリプトの先頭にあります。
+To use, import the class with `import mods.buildcraft.CombustionEngine;` at the beginning of your script.CombustionEngine;</code> at the beginning of your script.
 
-## 燃料を追加する
+## Adding a Clean Fuel
 
 `CombustionEngine.addCleanFuel(liquid, powerPerTick, timePerBucket);`
 
 - `liquid` <[ILiquidStack](/vanilla/api/liquids/ILiquidStack)> The liquid to be used as fuel
-- `powerPerTick` &lt;double> 1ティックあたりのMJ出力。
-- `timePerBucket` &lt;int> 1000mB(1バケット)が実行するティック数
+- `powerPerTick` &lt;double> Power output in MJ per tick
+- `timePerBucket` &lt;int> Amount of ticks that 1,000 mB (1 bucket) should run for
 
 ```zenscript
-import mods.buildcraftimport mods.buildcraft.CombustionEngine;
+import mods.buildcraft.import mods.buildcraft.CombustionEngine;
 
 CombustionEngine.addCleanFuel(<liquid:iron>, 32.0, 1200);
 ```
 
-## 燃料を追加しています
+## Adding a Dirty Fuel
 
 `CombustionEngine.addDirtyFuel(lFuel, powerPerTick, timePerBucket, lResidue);`
 
 - `lFuel` <[ILiquidStack](/vanilla/api/liquids/ILiquidStack)> The liquid to be used as fuel
-- `powerPerTick` &lt;double> 1ティックあたりのMJ出力。
-- `timePerBucket` &lt;int> 1000mB(1バケット)が実行するティック数
+- `powerPerTick` &lt;double> Power output in MJ per tick
+- `timePerBucket` &lt;int> Amount of ticks that 1,000 mB (1 bucket) should run for
 - `lResidue` <[ILiquidStack](/vanilla/api/liquids/ILiquidStack)> The residue fluid, per bucket of the original fuel
 
 ```zenscript
-import mods.buildcraftimport mods.buildcraft.CombustionEngine;
+import mods.buildcraft.import mods.buildcraft.CombustionEngine;
 
 CombustionEngine.addDirtyFuel(<liquid:iron>, 32.0, 1200, <liquid:water>);
 ```

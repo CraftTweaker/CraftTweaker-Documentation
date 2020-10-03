@@ -1,20 +1,20 @@
-# Laser Drills
+# Laser Drill
 
-### インポート中
+### Importing
 
 ```zenscript
-import mods.industrialforgoing.LaserDrill;
+import mods.industrialforegoing.LaserDrill;
 ```
 
-### 追加中
+### Adding
 
 ```zenscript
-LaserDrill.add(int itemLensMetaColor, IItemStack 出力, int ItemWeight);
+LaserDrill.add(int itemLensMetaColor, IItemStack output, int ItemWeight);
 
 LaserDrill.add(1, <minecraft:stone>, 10);
 ```
 
-### 削除中
+### Removing
 
 ```zenscript
 LaserDrill.remove(IItemStack output);

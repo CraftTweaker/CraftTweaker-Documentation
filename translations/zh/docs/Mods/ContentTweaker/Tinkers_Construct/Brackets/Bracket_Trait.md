@@ -1,8 +1,8 @@
-# 特性区块处理器
+# Trait Bracket Handler
 
-特性区块处理程序的唯一目的是为您提供 [特性表示](/Mods/ContentTweaker/Tinkers_Construct/Trait/)。
+The Trait Bracket handler's sole purpose is providing you with [Trait Representations](/Mods/ContentTweaker/Tinkers_Construct/Trait/).
 
-您使用的特征括号处理程序像这样：
+You use the trait bracket handler like this:
 
 ```zenscript
 <ticontrait:identifier>
@@ -10,4 +10,4 @@
 <ticontrait:cactus>
 ```
 
-如果找到特征，它将返回特征表示对象。 请参考 [相应的 Wiki 条目](/Mods/ContentTweaker/Tinkers_Construct/Trait/) 了解您可以对这些条目做些什么。
+If the Trait is found, this will return an Trait Representation Object. Please refer to the [respective Wiki entry](/Mods/ContentTweaker/Tinkers_Construct/Trait/) for further information on what you can do with these.

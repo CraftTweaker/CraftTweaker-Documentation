@@ -1,8 +1,8 @@
-# Gestionnaire de fourchettes de matériaux
+# Material Part Bracket Handler
 
-Le gestionnaire de supports de matériaux vous donne accès aux pièces du jeu. Il est seulement possible de faire enregistrer des Material Parts dans le jeu, donc vous devez faire attention à l'ordre de chargement des scripts.
+The Material Part Bracket Handler gives you access to the Material Parts in the game. It is only possible to get Material Parts registered in the game, so you need to be careful of the loading order of scripts.
 
-Les pièces de matériaux sont référencées dans le gestionnaire de fourchettes de pièce de cette façon :
+Material Parts are referenced in the Material Part Bracket handler this way:
 
 ```zenscript
 <materialpart:material:part>
@@ -10,5 +10,5 @@ Les pièces de matériaux sont référencées dans le gestionnaire de fourchette
 <materialpart:platinum:gear>
 ```
 
-Si la pièce de matériau est trouvée, cela retournera un objet MaterialPartDefinition.  
-Ceci est un objet qui agit les deux, une [IMaterialPart](/Mods/ContentTweaker/Materials/Materials/MaterialPart/) ainsi qu'un objet [IItemStack](/Vanilla/Items/IItemStack/) , de sorte que les méthodes des deux interfaces fonctionnent sur la définition retournée.
+If the Material Part is found, this will return a MaterialPartDefinition Object.  
+This is an object that acts as both, an [IMaterialPart](/Mods/ContentTweaker/Materials/Materials/MaterialPart/) as well as an [IItemStack](/Vanilla/Items/IItemStack/) object, so methods of both interfaces will work on the returned definition.

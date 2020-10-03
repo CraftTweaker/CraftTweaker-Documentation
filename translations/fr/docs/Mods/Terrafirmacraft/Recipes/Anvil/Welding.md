@@ -1,20 +1,20 @@
-# Soudure des Enclumes
+# Anvil Welding
 
-## Paquet
+## Package
 ```zenscript
-Importer mods.terrafirmacraft.Soudure;
+import mods.terrafirmacraft.Welding;
 ```
 
-## Ajouter
+## Addition
 
 ```zenscript
-Welding.addRecipe(String registryName, IIngredient input1, IIngredient input2, IItemStack sortie, int minTier);
+Welding.addRecipe(String registryName, IIngredient input1, IIngredient input2, IItemStack output, int minTier);
 ```
 
-## Retirer
+## Removal
 
 ```zenscript
 Welding.removeRecipe(IItemStack output);
 Welding.removeRecipe(String registryName);
 ```
-- Comme pour les recettes d'enclume, les mêmes règles s'appliquent ici. L'entrée doit être forgeable (voir [Registre d'objet](/Mods/Terrafirmacraft/ItemRegistry) pour enregistrer la capacité de forgeage à un objet) et ne peut pas être empilée.
+- As with anvil recipes, the same rules for input applies here. The input must be forgeable(see [ItemRegistry](/Mods/Terrafirmacraft/ItemRegistry) for registering forging capability to an item) and can't be stacked.

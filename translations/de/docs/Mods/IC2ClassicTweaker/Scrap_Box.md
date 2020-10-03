@@ -1,17 +1,17 @@
-## Schrottkiste
+## Scrap Box
 
-## Paket
+## Package
 
 ```zenscript
-importieren mods.ic2.ScrapBox;
+import mods.ic2.ScrapBox;
 ```
 
 ### Methoden
 
-- Siehe [ScrapBox (From IC2 Tweaker)](/Mods/IC2Tweaker/Scrap_Box/) für Informationen zu anderen Methoden.
-- **[ArtikelStack](/Vanilla/Items/IItemStack/) Element** Der Eintrag wird aus dem Scrap Box Drop Pool entfernt. Wird dazu führen, dass die Tropfen Chancen aller anderen Geister neu berechnet werden.
+- See [ScrapBox (From IC2 Tweaker)](/Mods/IC2Tweaker/Scrap_Box/) for info on other methods.
+- **[ItemStack](/Vanilla/Items/IItemStack/) item** The entry being removed from the scrap box drop pool. Will cause drop chances of all other tiems to be recalculated.
 
-## Drop entfernen (IItemStack)
+## Remove Drop (IItemStack)
 
 ```zenscript
     ScrapBox.removeDrop(IItemStack item);

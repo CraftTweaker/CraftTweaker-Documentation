@@ -1,6 +1,6 @@
-# Войти в игру
+# PlayerLoggedIn
 
-Событие PlayerLoggedIn запускается при входе игрока.
+The PlayerLoggedIn Event is fired whenever a player logs in.
 
 ## Класс события
 
@@ -10,7 +10,7 @@ You can, of course, also [import](/AdvancedFunctions/Import/) the class before a
 
 ## Наследование от интерфейсов событий
 
-PlayerLoggedIn События реализуют следующие интерфейсы и также могут вызвать все их методы/getters/setters:
+PlayerLoggedIn Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
 
 - [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
 
@@ -18,6 +18,6 @@ PlayerLoggedIn События реализуют следующие интерф
 
 Следующая информация может быть получена от события:
 
-| Геттеры  | Возвращаемый тип                     |
-| -------- | ------------------------------------ |
-| `player` | [IPlayer](/Vanilla/Players/IPlayer/) |
+| ZenGetter | Возвращаемый тип                     |
+| --------- | ------------------------------------ |
+| `player`  | [IPlayer](/Vanilla/Players/IPlayer/) |

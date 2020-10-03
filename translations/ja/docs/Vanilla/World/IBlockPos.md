@@ -1,30 +1,30 @@
 # IBlockPos
 
-IBlockPosオブジェクトは、ゲーム内の位置を表します。
+An IBlockPos object represents a position in the game.
 
 ## パッケージのインポート
 
-問題が発生した場合は、パッケージをインポートする必要があるかもしれませんので、申し訳ありませんし、インポートを追加してください。  
+It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
 `import crafttweaker.world.IBlockPos;`
 
-## パラメータのないZenMethods
+## ZenMethods without parameters
 
-| ZenMethod    | ZenGetter/Caster | 戻り値                                       | 説明                            |
-| ------------ | ---------------- | ----------------------------------------- | ----------------------------- |
-| getX()       | x                | int                                       | 位置のX値を返します。                   |
-| getY()       | y                | int                                       | 位置のY値を返します。                   |
-| getZ()       | z                | int                                       | 位置のZ値を返します。                   |
-| asPosition3f | IPosition3f として  | [IPosition3f](/Vanilla/Utils/Position3f/) | Position3f Object として位置を返します。 |
+| ZenMethod    | ZenGetter/Caster | 戻り値                                       | Description                                |
+| ------------ | ---------------- | ----------------------------------------- | ------------------------------------------ |
+| getX()       | x                | int                                       | Returns the position's X value             |
+| getY()       | y                | int                                       | Returns the position's Y value             |
+| getZ()       | z                | int                                       | Returns the position's Z value             |
+| asPosition3f | as IPosition3f   | [IPosition3f](/Vanilla/Utils/Position3f/) | Returns the position as Position3f Object. |
 
-## パラメータ付きのZenMethods
+## ZenMethods with parameters
 
-### オフセットを取得
+### Get Offset
 
-`方向` の方向に `ブロックをオフセット` する新しい IBlockPos を返します。
+Returns a new IBlockPos that is `offset` blocks into the `direction` direction.
 
 `IBlockPos getOffset(IFacing direction, int offset);`
 
-あるいは、そこで提供されている静的メソッドを使用して [IFacing](/Vanilla/World/IFacing/) オブジェクトを直接取得することもできます。
+Alternatively you can directly get the [IFacing](/Vanilla/World/IFacing/) objects using the static methods provided there.
 
-- [IFacing](/Vanilla/World/IFacing/) direction → 方向
-- int offset → その方向のブロックの数を指定しますか?
+- [IFacing](/Vanilla/World/IFacing/) direction → The direction
+- int offset → how many blocks in that direction?

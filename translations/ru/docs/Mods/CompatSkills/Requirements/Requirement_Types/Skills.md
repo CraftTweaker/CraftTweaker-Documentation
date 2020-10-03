@@ -1,12 +1,12 @@
-# Навыки:
+# Skills:
 
-Навыки наряду с усовершенствованиями были одним из оригинальных типов замков, добавленных Skillable и с тех пор были усовершенствованы для поддержки других модов, добавляя больше навыков. Синтаксис мастерства является следующим:
+Skills alongside Advancements was one of the original lock types added by Skillable and has since then been refined to support other mods adding more Skills. The Skill Syntax is as follows:
 
-    Пример:
-    ResourceLocation|Уровень
+    Example:
+    ResourceLocation|Level
     
-    рабочий пример:
+    Working Example:
     reskillable:building|15
     
 
-С момента выпуска Reskillable мы перешли из системы имен навыков в систему локализации ресурсов. Это позволяет добавить несколько навыков с одинаковым внутренним именем, но разные идентификаторы модов для расположения ресурса. Вы можете найти ресурсы навыка под: [Навыки & Черты](/Mods/CompatSkills/Requirements/Skills_Traits/)
+Since the release of Reskillable we've moved from a skill name system to a resource location name system. This allows for several skills to add skills with the same internal name but different mod id's for the Resource Location. You can find the Skill's ResourceLocations under: [Skills & Traits](/Mods/CompatSkills/Requirements/Skills_Traits/)

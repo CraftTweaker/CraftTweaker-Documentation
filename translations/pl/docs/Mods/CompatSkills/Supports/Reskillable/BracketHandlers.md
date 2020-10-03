@@ -1,20 +1,20 @@
-# Obsługa nawiasów
+# Bracket Handlers
 
-## Obsługa nawiasów
+## Bracket Handlers
 
-### Uchwyt z nawiasem umiejętności:
+### Skill Bracket Handler:
 
-    ## Przykład:
+    ## Example:
     <skill:resourcelocation>
     
-    ## Przykład:
+    ## Working Example:
     <skill:reskillable:agility>
     
 
-### Obsługa nawiasów cech:
+### Trait Bracket Handler:
 
-    ## Przykład:
+    ## Example:
     <trait:resourcelocation>
     
-    ## Przykład:
+    ## Working Example:
     <trait:reskillable:sidestep>

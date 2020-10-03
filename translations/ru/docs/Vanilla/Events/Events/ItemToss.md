@@ -1,7 +1,7 @@
-# Тос
+# ItemToss
 
-Событие Предметы запущено, когда из инвентаря игрока разбрасываются предметы.  
-Отмена этого события не позволит предмету попасть в мир, таким образом он будет удален.
+The ItemToss Event is fired whenever an Item is being tossed from a player's inventory.  
+Canceling this event will prevent the item from entering the world, thus causing the item to be deleted.
 
 ## Класс события
 
@@ -18,7 +18,7 @@ PlayerDeathDrops реализует следующие интерфейсы и �
 
 ## ZenGetter/ZenSetter
 
-| Геттеры | Тип                                           |
-| ------- | --------------------------------------------- |
-| элемент | [IEntityItem](/Vanilla/Entities/IEntityItem/) |
-| player  | [IPlayer](/Vanilla/Players/IPlayer/)          |
+| ZenGetter | Тип                                           |
+| --------- | --------------------------------------------- |
+| item      | [IEntityItem](/Vanilla/Entities/IEntityItem/) |
+| player    | [IPlayer](/Vanilla/Players/IPlayer/)          |

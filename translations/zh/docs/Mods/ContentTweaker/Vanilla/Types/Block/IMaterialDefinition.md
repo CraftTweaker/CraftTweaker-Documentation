@@ -1,36 +1,36 @@
-# IMaterial定义
+# IMaterialDefinition
 
-IMaterialDefinition objects 代表游戏中的实质性定义。 如果你想要创建一个新块，需要材料定义。
+An IMaterialDefinition object represents a material definition in the game. A Material Definition is needed if you want to create a new block.
 
 # 导入相关包
 
-如果您遇到任何问题，可能需要导入软件包，所以比抱歉更安全并添加导入。  
-`导入 mods.contenttweaker.BlockMaterial。`
+It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
+`import mods.contenttweaker.BlockMaterial;`
 
-## 调用 IMaterialDefinition 对象
+## Calling an IMaterialDefinition object
 
-您可以使用 [块材料夹处理器](/Mods/ContentTweaker/Vanilla/Brackets/Bracket_Block_Material/)获取这样一个对象：  
+You can get such an object using the [Block Material Bracket Handler](/Mods/ContentTweaker/Vanilla/Brackets/Bracket_Block_Material/):  
 `<blockmaterial:wood>`
 
 ## 不带参数的 ZenGetters/ZenMethods
 
-| ZenGetter       | ZenMethod           | 返回值类型                                                          |
-| --------------- | ------------------- | -------------------------------------------------------------- |
-| blocksLight     | blocksLight()       | bool                                                           |
-| blocksMovement  | blocksMovement()    | bool                                                           |
-| canBurn         | getCanBurn()        | bool                                                           |
-| mobilityFlag    | getMobilityFlag()   | [推送反应](/Mods/ContentTweaker/Vanilla/Types/Block/PushReaction/) |
-| liquid          | isLiquid()          | bool                                                           |
-| opaque          | isOpaque()          | bool                                                           |
-| replaceable     | isReplaceable()     | bool                                                           |
-| solid           | isSolid()           | bool                                                           |
-| toolNotRequired | isToolNotRequired() | bool                                                           |
+| ZenGetter       | ZenMethod           | 返回值类型                                                                  |
+| --------------- | ------------------- | ---------------------------------------------------------------------- |
+| blocksLight     | blocksLight()       | bool                                                                   |
+| blocksMovement  | blocksMovement()    | bool                                                                   |
+| canBurn         | getCanBurn()        | bool                                                                   |
+| mobilityFlag    | getMobilityFlag()   | [PushReaction](/Mods/ContentTweaker/Vanilla/Types/Block/PushReaction/) |
+| liquid          | isLiquid()          | bool                                                                   |
+| opaque          | isOpaque()          | bool                                                                   |
+| replaceable     | isReplaceable()     | bool                                                                   |
+| solid           | isSolid()           | bool                                                                   |
+| toolNotRequired | isToolNotRequired() | bool                                                                   |
 
-## 比较两个块材料
+## Compare two BlockMaterials
 
-您可以使用 `==` 操作员来查看两个材料定义是否相同
+You can use the `==` operator to see if two MaterialDefinitions are equal
 
 ```zenscript
 if(materialA == materialB)
-    打印("success!")；
+    print("success!");
 ```

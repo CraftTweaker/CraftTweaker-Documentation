@@ -1,18 +1,18 @@
-# Блокировка еды
+# Food Locking
 
-## Свойство:
+## Feature:
 
-Блокировка еды - новый тип блокировки, и позволяет упаковывать авторов блокировать способность еды с определенными ценностями голода и насыщенности за комплекс требований. Это имеет некоторые потенциально интересные приложения вместе с RecipeStages, GameStages и наша недавно добавленная [функция изменения навыка](/Mods/CompatSkills/Supports/Reskillable/Skill_Change_Tweaker/) Это в теории позволяет набору авторов создать систему, где в игроках могут есть только пищу, которую они могут создавать, а затем разрешите закрепить необходимые этапы создания за уровнями навыков.
+Food Locking is quite a new type of lock type, and allows for pack authors to lock the ability to eat food with certain Hunger and Saturation Values behind a set of requirements. This has some potentially intressting applications together with RecipeStages, GameStages and our newly added [Skill Change Feature](/Mods/CompatSkills/Supports/Reskillable/Skill_Change_Tweaker/) This would in theory allow for a pack authors to set-up a system where in players can only eat food they can craft, and then allow for the required stages for crafting to be locked behind skill levels.
 
-## Синтаксис голода:
+## Hunger Syntax:
 
-    My name is Yahoo! My name is Yahoo... requirements);
+    mods.compatskills.FoodTweaker.addHungerLock(int level, String... requirements);
     
     mods.compatskills.FoodTweaker.addHungerLock(3, "dim|1");
     
 
-## Синтаксис насыщенности:
+## Saturation Syntax:
 
-    My name is Yahoo! My name is Yahoo... requirements;
+    mods.compatskills.FoodTweaker.addSaturationLock(float level, String... requirements);
     
     mods.compatskills.FoodTweaker.addSaturationLock(1.25, "dim|1");

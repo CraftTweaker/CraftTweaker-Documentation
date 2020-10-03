@@ -1,32 +1,32 @@
-# Maglia Di Pietra
+# Stone Knapping
 
-## Pacchetto
+## Package
 ```zenscript
 import mods.terrafirmacraft.StoneKnapping;
 ```
 
-## Addizione
+## Addition
 
 ```zenscript
 StoneKnapping.addRecipe(String registryName, IItemStack[] output, String[] rocks, String... pattern)
 ```
 
-## Rimozione
+## Removal
 
 ```zenscript
 StoneKnapping.removeRecipe(IItemStack output);
 StoneKnapping.removeRecipe(String registryName);
 ```
 
-## Esempi
+## Examples
 
 ```zenscript
-// Fornisce una zappa di pietra in tutte le rocce.
-StoneKnapping.addRecipe("testrecipe", [<minecraft:stone_hoe>], ["all"], " ", "XXXX ");
-// Fornisce una zappa di pietra solo in scisto, argilla, sale di roccia, calcare.
-StoneKnapping.addRecipe("testrecipe2", [<minecraft:stone_hoe>], ["shale", "claystone", "rocksalt", "calcareo"], " ", "XXXX ");
-// Fornisce una zappa di pietra in argilla e un piccone in pietra calcarea.
-StoneKnapping.addRecipe("testrecipe3", [<minecraft:stone_hoe>, <minecraft:stone_pickaxe>], ["claystone", "calcareo"], " ", "XXXX ");
-// Fornisce una zappa di pietra solo in basalto e chert.
-StoneKnapping.addRecipe("testrecipe4", [<minecraft:stone_hoe>, <minecraft:stone_hoe>], ["basalt", "chert"], " ", "XXXX ");
+// Gives a stone hoe in all rocks.
+StoneKnapping.addRecipe("testrecipe", [<minecraft:stone_hoe>], ["all"], "     ", "XXXX ");
+// Gives a stone hoe only in shale, claystone, rocksalt, limestone.
+StoneKnapping.addRecipe("testrecipe2", [<minecraft:stone_hoe>], ["shale", "claystone", "rocksalt", "limestone"], "     ", "XXXX ");
+// Gives a stone hoe in claystone, and a pickaxe in limestone.
+StoneKnapping.addRecipe("testrecipe3", [<minecraft:stone_hoe>, <minecraft:stone_pickaxe>], ["claystone", "limestone"], "     ", "XXXX ");
+// Gives a stone hoe only in basalt and chert.
+StoneKnapping.addRecipe("testrecipe4", [<minecraft:stone_hoe>, <minecraft:stone_hoe>], ["basalt", "chert"], "     ", "XXXX ");
 ```

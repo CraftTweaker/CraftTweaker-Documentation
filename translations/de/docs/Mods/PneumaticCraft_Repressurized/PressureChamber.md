@@ -1,34 +1,34 @@
-# Druckkammer
+# Pressure Chamber
 
-Die Druckkammer ist eine Multiblock-Struktur, die mit Druckluft ein oder mehrere Eingangselemente in ein oder mehrere Ausgangselemente umwandelt. Rezepte der Druckkammer haben einen zugehörigen Druckwert, was der Luftdruck in der Leiste erforderlich ist, um die Umwandlung durchzuführen.
+The Pressure Chamber is a multiblock structure which uses compressed air to convert one or more input items into one or more output items. Pressure Chamber recipes have an associated pressure value, which is the air pressure in bar required to perform the conversion.
 
-## Anruf
+## Calling
 
-Sie können das Paket der Druckkammer mit `mods.pneumaticcraft.pressurechamber` aufrufen.
+You can call the Pressure Chamber package using `mods.pneumaticcraft.pressurechamber`.
 
-## Entfernen
+## Removing
 
-Diese Funktion entfernt das erste Rezept, das sie mit dem angegebenen [IItemStack findet:](/Vanilla/Items/IItemStack/) `Ausgabe` Array:
+This function removes the first recipe it finds with the given [IItemStack](/Vanilla/Items/IItemStack/) `outputs` array:
 
 ```zenscript
-mods.pneumaticcraft.pressurechamber.removeRecipe(IItemStack[] Ausgabe);
-// Beispiel
+mods.pneumaticcraft.pressurechamber.removeRecipe(IItemStack[] outputs);
+// Example
 mods.pneumaticcraft.pressurechamber.removeRecipe([<pneumaticcraft:ingot_iron_compressed>]);
 ```
 
-Diese Funktion entfernt *alle* Rezepte der Druckkammer:
+This function removes *all* Pressure Chamber recipes:
 
 ```zenscript
 mods.pneumaticcraft.pressurechamber.removeAllRecipes();
 ```
 
-## Hinzufügen
+## Adding
 
-Diese Funktion wird verwendet, um neue Rezepte zur Druckkammer hinzuzufügen:
+This function is used to add new recipes to the Pressure Chamber:
 
 ```zenscript
-mods.pneumaticcraft.pressurechamber.addRecipe(IIngredient[] Eingänge, Doppeldruck, IItemStack[] Ausgaben);
+mods.pneumaticcraft.pressurechamber.addRecipe(IIngredient[] inputs, double pressure, IItemStack[] outputs);
 
-// Beispiel
+// Example
 mods.pneumaticcraft.pressurechamber.addRecipe([<minecraft:gold_ingot> * 2,<minecraft:apple>], 2.0, [<minecraft:golden_apple>]);
 ```

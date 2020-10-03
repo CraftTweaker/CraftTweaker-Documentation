@@ -1,14 +1,14 @@
-# ブラケットエラーのプリプロセッサを無視
+# Ignore Bracket Errors Preprocessor
 
-このプリプロセッサーは、スクリプトをバックセットエラーを無視するように設定します。  
-これはいかなる方法でも形状や形状にもならず、あなたのスクリプトを魔法のように修正します。エラーログを抑制します。
+This Preprocessor sets your script to ignore backet errors.  
+This DOES NOT in any way, shape or form magically correct your script, it supresses the error log.
 
-## 電話
+## Call
 
 You can call the IgnoreBracketErrors Preprocessor by placing `#ignoreBracketErrors` inside your script file.  
 This Preprocessor is file-specific, so calling it on one file doesn't affect the others (at least not for what the processor's concerned.
 
-## 何をするか
+## What it does
 
-プリプロセッサがファイル上で呼び出されると、ブラケットエラーのすべてのエラーログが抑制されます。  
-これは影響を受ける行をいかなる方法でも変更しません。代わりに、唯一の変更は、ログには関連する行が含まれないということです。
+When the preprocessor is called on a file, all error logging on bracket errors will be supressed.  
+This doesn't change the affected lines in any way, instead the only change is that your log won't contain the regarding lines.

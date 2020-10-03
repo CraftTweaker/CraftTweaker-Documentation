@@ -1,39 +1,39 @@
 # CriticalHitEvent
 
-Das kritische Trefferereignis wird gefeuert, wenn ein Spieler eine andere Kreatur angreift. It has a **result** which determines whether or not default crit behaviour occurs:
+The CriticalHit Event is fired whenever a player attacks another creature. It has a **result** which determines whether or not default crit behaviour occurs:
 
-- **Erlaube**: Der Angriff ist zu einem kritischen Angriff gezwungen
-- **lehne**ab: Der Angriff wird daran gehindert, kritisch zu sein
-- **Standard**: Der Angriff verwendet das Standardverhalten von Vanilla um festzustellen, ob es sich um einen Schlag handelt.
+- **allow**: the attack is forced to be a critical
+- **deny**: the attack is prevented from being a critical
+- **default**: the attack uses default Vanilla behaviour to determine if it's a crit.
 
-Sie können auch den Schadensmodifikator für den kritischen Treffer anpassen.
+You can also adjust the damage modifier for the critical hit.
 
-## Notizen
+## Notes
 
-`event.oldDamageModifier` enthält den ursprünglichen Schadensmodifikator des Ereignisses, während `Ereignis. sVanillaCrit` ist ein boolescher Wert, der bestimmt, ob dies tatsächlich ein kritischer Treffer ist oder nicht.
+`event.oldDamageModifier` contains the original damage modifier of the event, while `event.isVanillaCrit` is a boolean value that determines whether or not this is actually already a critical hit.
 
 ## Event-Klasse
-Du musst das Ereignis als diese Klasse in den Funktionskopf verschieben:  
-`crafttweaker.event. riticalHitEvent`  
-Sie können natürlich auch [die Klasse vor](/AdvancedFunctions/Import/) importieren und dann diesen Namen verwenden.
+You will need to cast the event in the function header as this class:  
+`crafttweaker.event.CriticalHitEvent`  
+You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
 
 ## Erweiterte Event-Schnittellen
-CriticalHit Events implementieren die folgenden Schnittstellen und können auch alle ihre Methoden/Getters/Setter aufrufen:
+CriticalHit Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
 
 - [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
 
 ## ZenGetter
 Die folgenden Informationen lassen sich von diesem Event (Ereignis) abrufen:
 
-| ZenGetter                    | ZenSetter              | Rückgabetyp                           |
-| ---------------------------- | ---------------------- | ------------------------------------- |
-| `target`                     |                        | [IEntity](/Vanilla/Entities/IEntity/) |
-| `alter Schadensmodifizierer` |                        | float                                 |
-| `Schadensmodifizierer`       | `Schadensmodifizierer` | float                                 |
-| `isVanillaCrit`              |                        | boolean                               |
+| ZenGetter           | ZenSetter        | Rückgabetyp                           |
+| ------------------- | ---------------- | ------------------------------------- |
+| `target`            |                  | [IEntity](/Vanilla/Entities/IEntity/) |
+| `oldDamageModifier` |                  | float                                 |
+| `damageModifier`    | `damageModifier` | float                                 |
+| `isVanillaCrit`     |                  | boolean                               |
 
-## ZenMethoden
+## ZenMethods
 
-- `event.deny()` setzt das Ergebnis abzulehnen.
-- `event.allow()` setzt das erlaubte Ergebnis.
-- `event.default()` setzt das Ergebnis auf Standardwert.
+- `event.deny()` sets the result to deny.
+- `event.allow()` sets the result to allow.
+- `event.default()` sets the result to default.

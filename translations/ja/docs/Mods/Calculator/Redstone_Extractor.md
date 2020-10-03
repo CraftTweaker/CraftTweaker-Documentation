@@ -1,14 +1,14 @@
-# レッドストーン抽出
+# Redstone Extractor
 
-## パッケージ
+## Package
 ```zenscript
 import mods.calculator.redstone;
 ```
 
-## メソッド
+## Methods
 
-- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input** 入力。
-- **int value** 入力の量がそのマシンに追加されます。
+- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input** The input.
+- **int value** The amount of input adds to that machine.
 
 
 ## Additon
@@ -16,7 +16,7 @@ import mods.calculator.redstone;
 redstone.addRecipe(IIngredient input, int value);
 ```
 
-## 削除
+## Removal
 ```zenscript
-redstone.removeRecipe(IIngredient入力);
+redstone.removeRecipe(IIngredient input);
 ```

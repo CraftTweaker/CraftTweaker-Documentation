@@ -1,38 +1,38 @@
-# Funciones personalizadas
+# Custom Functions
 
-A veces las funciones proporcionadas por CT y addons no lo harán. ¡Así es como escribir tus propias funciones! Incluso puedes anidar funciones en funciones
+Sometimes the functions supplied by CT and addons just won't do it. Here's how to write your own functions! You can even nest functions in functions
 
-## Síntesis básica
+## Basic Syntax
 
-Generalmente, declaras un uso estático:
+Generally, you declare a static using:
 
 ```zenscript
-function NAME ([argumentos[como tipo]]) [como returnType]{
+function NAME ([arguments[as type]]) [as returnType]{
     [Statements]
     [return VALUE;]
 }
 ```
 
-Las cosas entre paréntesis son opcionales, dependiendo de lo que quieras conseguir. Veamos más de cerca las funciones específicas.
+The things in brackets are optional, depending on what you want to achieve. Let's take a closer look at specific functions.
 
-## Funciones estáticas
+## Static Functions
 
-Las funciones estáticas se crean antes de que el script se ejecute y se pueda acceder desde cualquier lugar del script.  
-Incluso puede acceder a las funciones declaradas fuera del script usando la [referencia de script cruzado](/AdvancedFunctions/Cross-Script_Reference).
+Static functions are created before the script is run and can be accessed from anywhere in the script.  
+You can even access functions declared outside the script using the [cross-script reference](/AdvancedFunctions/Cross-Script_Reference).
 
-### Funciones de Vacío
+### Void functions
 
-Las funciones de vacío son funciones que no devolverán ningún valor.
+Void functions are functions that will not return any value.
 
 ```zenscript
 //calls the function tens() without arguments
 tens();
 
-//calls the function realTens() with the String "Hola Mundo!" as argument
-realTens("Hola Mundo! );
+//calls the function realTens() with the String "Hello World!" as argument
+realTens("Hello World!");
 
 
-//crates function tens() sin argumentos obligatorios
+//crates function tens() with no required arguments
 function tens(){
     //Calls function realTens() with "" as argument
     realTens("");
@@ -48,33 +48,33 @@ function realTens(a as string){
 }
 ```
 
-### Devolver funciones
+### Return functions
 
-También puede especificar un valor que debe ser devuelto por una función. Se recomienda utilizar la palabra clave `como` para definir el tipo de devolución.
+You can also specify a value that should be returned by a function. It is recommended using the `as` keyword to define the return type.
 
 ```zenscript
 //calls add function with 1 and 99 as parameters
 val result = add(1,99);
-print(resultado);
+print(result);
 
-///you puede colocar la función add dentro de la función de impresión también
+//you can place the add function inside the print function as well
 print(add(2,64));
 
-//define función add() con un y b como parámetros (ambos definidos como enteros! y establece el tipo de retorno a Integer
-function add(a as int, as int) as int{
+//defines function add() with a and b as parameters (both set to be Integers!) and sets the return type to Integer
+function add(a as int,b as int) as int{
     //returns the sum of a and b
     return a+b;
 }
 ```
 
-## Funciones como variables
+## Functions as variables
 
-También puede utilizar funciones como variables. En este caso, se crearán como clases separadas. Aparte de eso, funcionan prácticamente igual que las funciones estáticas, se las llama por su nombre variable.  
-Incluso puedes usarlos como [variables globales](/AdvancedFunctions/Global_Static_Variables/) de esta manera.
+You can also use functions like variables. In this case, they will be created as separate classes. Other than that, they work pretty much the same as static functions, you call them by their variable name.  
+You can even use them as [global variables](/AdvancedFunctions/Global_Static_Variables/) this way.
 
-Si necesitas convertir el método (como lo haces para los globales) puedes usar esto:
+If you need to cast the method (as you do for globals) you can use this:
 
-    adición global como function(int, int)int = function (a as int, b as int) as int {
+    global addition as function(int, int)int = function (a as int, b as int) as int {
         return a + b;
     };
     

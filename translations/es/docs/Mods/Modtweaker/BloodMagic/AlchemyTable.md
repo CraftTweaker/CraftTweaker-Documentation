@@ -1,39 +1,39 @@
-# Mesa de alquimia
+# Alchemy Table
 
-## Paquete
+## Package
 
 `mods.bloodmagic.AlchemyTable`
 
-## Adicional
+## Addition
 
 ```zenscript
-las entradas tienen un tamaño máximo de 6
-//mods.bloodmagic.AlchemyTable.addRecipe(IItemStack de salida, IItemStack[] entradas, int syphon, int ticks, int minTier);
-mods. loodmagic.AlchemyTable.addRecipe(<minecraft:diamond>, [<minecraft:dirt>, <minecraft:dirt>, <minecraft:dirt>, <minecraft:dirt>, <minecraft:dirt>, <minecraft:dirt>], 20,10,0);
+inputs has a max size of 6
+//mods.bloodmagic.AlchemyTable.addRecipe(IItemStack output, IItemStack[] inputs, int syphon, int ticks, int minTier);
+mods.bloodmagic.AlchemyTable.addRecipe(<minecraft:diamond>, [<minecraft:dirt>, <minecraft:dirt>, <minecraft:dirt>, <minecraft:dirt>, <minecraft:dirt>, <minecraft:dirt>], 20,10,0);
 ```
 
-## Añadir poción
+## Potion addition
 
 ```zenscript
-las entradas tienen un tamaño máximo de 5 para tener en cuenta los catalizadores (cualquier objeto contenedor de poción es descartado)
-var pot = <potion:minecraft:strength>. akePotionEffect(6000, 1);
-//mods.bloodmagic.AlchemyTable. ddPotionRecipe(ItemStack[] entradas, efectos IPotionEffect, int syphon, int tick, int minTier)
+inputs has a max size of 5 to account for catalysts (any potion container object is discarded)
+var pot = <potion:minecraft:strength>.makePotionEffect(6000, 1);
+//mods.bloodmagic.AlchemyTable.addPotionRecipe(IItemStack[] inputs, IPotionEffect effects, int syphon, int ticks, int minTier)
 mods.bloodmagic.AlchemyTable.addPotionRecipe([<bloodmagic:potion_flask>, <minecraft:carrot>,<minecraft:potato>], pot, 20, 10, 0);
 ```
 
-## Eliminar
+## Removal
 
 ```zenscript
-las entradas tienen un tamaño máximo de 6
-//mods.bloodmagic.AlchemyTable.removeRecipe(IItemStack[] entradas);
+inputs has a max size of 6
+//mods.bloodmagic.AlchemyTable.removeRecipe(IItemStack[] inputs);
 mods.bloodmagic.AlchemyTable.removeRecipe([<minecraft:carrot>,<minecraft:carrot>,<minecraft:carrot>,<minecraft:dye:15>]);
 ```
 
-## Eliminación de Poción
+## Potion removal
 
-Cualquier eliminación se considera una poción potencial si no coincide con una receta en el registro de la API.
+Any removal is considered as a potential potion if it does not match a recipe in the API's registry.
 
 ```zenscript
-//mods.bloodMagic.AlchemyTable.removeRecipe(ItemStack[] entradas);
+//mods.bloodMagic.AlchemyTable.removeRecipe(IItemStack[] inputs);
 mods.bloodmagic.AlchemyTable.removeRecipe([<minecraft:ghast_tear>, <bloodmagic:potion_flask>]);
 ```

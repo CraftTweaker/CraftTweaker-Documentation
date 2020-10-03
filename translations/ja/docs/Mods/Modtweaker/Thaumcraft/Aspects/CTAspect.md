@@ -1,23 +1,23 @@
 # CTAspect
 
-CTAspect は、 [アスペクトスタック](/Mods/Modtweaker/Thaumcraft/Aspects/CTAspectStack/)の裏にある [IItemDefinition](/Vanilla/Items/IItemDefinition/) のように、 [IItemStack](/Vanilla/Items/IItemStack/) の下にある側面です。
+A CTAspect is the aspect underlying an [Aspect Stack](/Mods/Modtweaker/Thaumcraft/Aspects/CTAspectStack/), much like an [IItemDefinition](/Vanilla/Items/IItemDefinition/) underlies an [IItemStack](/Vanilla/Items/IItemStack/).
 
 ## パッケージのインポート
 
-問題が発生した場合は、パッケージをインポートする必要があるかもしれませんので、申し訳ありませんし、インポートを追加してください。  
+It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
 `import thaumcraft.aspect.CTAspect;`
 
-## そのようなオブジェクトを取得しています
+## Retrieving such an object
 
-[CTAspectStack](/Mods/Modtweaker/Thaumcraft/Aspects/CTAspectStack/) オブジェクトからCTAspectオブジェクトを取得できます。
+You can retrieve a CTAspect object from a [CTAspectStack](/Mods/Modtweaker/Thaumcraft/Aspects/CTAspectStack/) object:
 
 ```zenscript
-val アスペクト = <aspect:ignis>.internal;
+val aspect = <aspect:ignis>.internal;
 ```
 
-## ZenGettersとZenSetters
+## ZenGetters and ZenSetters
 
-| 名称             | isGetter | isSetter | タイプ |
-| -------------- | -------- | -------- | --- |
-| chatColo**u**r | ✔        | ✔        | 文字列 |
-| 名前             | ✔        |          | 文字列 |
+| 名称             | isGetter | isSetter | Type   |
+| -------------- | -------- | -------- | ------ |
+| chatColo**u**r | ✔        | ✔        | string |
+| name           | ✔        |          | string |

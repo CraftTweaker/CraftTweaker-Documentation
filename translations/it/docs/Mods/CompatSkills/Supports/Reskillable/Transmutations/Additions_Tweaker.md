@@ -1,12 +1,12 @@
-# Addizione Più Debole
+# Addition Tweaker
 
-## Elenco Zenmethod:
+## ZenMethod List:
 
-    // Aggiunge un Blockstate > Trasmutazione Blockstate al Reagente Itemstack specificato.
+    // Adds a Blockstate > Blockstate transmutation to the specified Itemstack Reagent.
     mods.compatskills.transmutations.additions.addEntryToReagent(IItemStack reagent, IItemStack startState, IItemStack endState);
-    mods.compatskills.transmutations.additions. ddEntryToReagent(IItemStack reagent, crafttweaker.api.block.IBlockState state1, crafttweaker.api.block.IBlockState state2);
+    mods.compatskills.transmutations.additions.addEntryToReagent(IItemStack reagent, crafttweaker.api.block.IBlockState state1, crafttweaker.api.block.IBlockState state2);
     
-    // Aggiunge un Blockstate > Blockstate Transmutation indipendentemente da un reagente specifico.
-    // Questo significa che aggiungerà questa Trasmutazione a qualsiasi reagente già disponibile nella Mappa di Trasmutazione.
+    // Adds a Blockstate > Blockstate Transmutation regardless of a specific reagent.
+    // This means it will add this Transmutation to any already available reagent in the Transmutation Map.
     mods.compatskills.transmutations.additions.addEntryToReagentAgnostic(IItemStack startState, IItemStack endState);
     mods.compatskills.transmutations.additions.addEntryToReagentAgnostic(crafttweaker.api.block.IBlockState state1, crafttweaker.api.block.IBlockState state2);

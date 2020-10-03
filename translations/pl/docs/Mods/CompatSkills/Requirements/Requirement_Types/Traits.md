@@ -1,12 +1,12 @@
-# Cechy:
+# Traits:
 
-Cechy są nowym dodatkiem do ponownego zabijania i sprawia, że możesz zablokować rzeczy za wymaganą cechą. Cechy są podobne do Umiejętności w sposób, w jaki przenieśliśmy je do lokalizacji zasobu zamiast nazwy, aby umożliwić bardziej solidną możliwość rozszerzenia. Składnia Cechy jest następująca:
+Traits is a new addition for Reskillable and makes it so you now can lock things behind a required Trait. Traits are similar to Skills in the way that we've moved them over to a Resource Location instead of a name to allow for more robust extendability. The Trait Syntax is as follows:
 
-    Przykład:
-    cecha|Lokalizacja Zasobów
+    Example:
+    trait|ResourceLocation
     
-    Przykład:
-    cecha|przekwalifikowalna:battle_spirit
+    Working Example:
+    trait|reskillable:battle_spirit
     
 
-Miejsca Zasobów Cechy można znaleźć pod adresem: [Umiejętności & Cechy](/Mods/CompatSkills/Requirements/Skills_Traits/)
+You can find the Traits's ResourceLocations under: [Skills & Traits](/Mods/CompatSkills/Requirements/Skills_Traits/)

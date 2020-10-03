@@ -1,16 +1,16 @@
-# Horno Explosivo industrial
+# Industrial Blast Furnace
 
-## Importando el Paquete
+## Importing the Package
 `mods.techreborn.blastFurnace`
 
-## Añadiendo recetas
+## Adding Recipes
 ```zenscript
-mods.techreborn.blastFurnace.addRecipe(IItemStack output1, ItemStack output2, IIngredient input1, IIngredient input2, int euTick, int neededHeat);
+mods.techreborn.blastFurnace.addRecipe(IItemStack output1, IItemStack output2, IIngredient input1, IIngredient input2, int ticktime, int euTick, int neededHeat);
 ```
 
-## Eliminando recetas
+## Removing Recipes
 ```zenscript
-mods.techreborn.blastFurnace.removeInputRecipe(ingrediente IIngredient);
-mods.techreborn.blastFurnace.removeRecipe(ItemStack output);
+mods.techreborn.blastFurnace.removeInputRecipe(IIngredient ingredient);
+mods.techreborn.blastFurnace.removeRecipe(IItemStack output);
 mods.techreborn.blastFurnace.removeAll();
 ```

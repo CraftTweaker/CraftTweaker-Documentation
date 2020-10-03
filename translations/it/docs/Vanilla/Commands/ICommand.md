@@ -1,10 +1,10 @@
 # ICommand
 
-Un oggetto ICommand rappresenta un ingame di comando.
+An ICommand Object represents a command ingame.
 
-## Importazione del pacchetto
+## Importing the package
 
-Potrebbe essere necessario importare il pacchetto se si incontrano problemi (come lanciare un [Array](/AdvancedFunctions/Arrays_and_Loops/)), quindi meglio essere sicuri che spiacenti e aggiungere l'importazione.  
+It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
 `import crafttweaker.command.ICommand;`
 
 ## ZenGetters
@@ -16,27 +16,27 @@ Potrebbe essere necessario importare il pacchetto se si incontrano problemi (com
     </th>
     
     <th>
-      Tipo Di Reso
+      Return Type
     </th>
   </tr>
   
   <tr>
     <td>
-      nome
+      name
     </td>
     
     <td>
-      stringa
+      string
     </td>
   </tr>
   
   <tr>
     <td>
-      alias
+      aliases
     </td>
     
     <td>
-      Elenco<String\>
+      List<String\>
     </td>
   </tr>
 </table>
@@ -46,6 +46,6 @@ Potrebbe essere necessario importare il pacchetto se si incontrano problemi (com
 - String getUsage([ICommandSender](/Vanilla/Commands/ICommandSender/) sender);
 - void execute([IServer](/Vanilla/Game/IServer/) server, [ICommandSender](/Vanilla/Commands/ICommandSender/) sender, String[] args);
 - boolean checkPermission([IServer](/Vanilla/Game/IServer/) server, [ICommandSender](/Vanilla/Commands/ICommandSender/) sender);
-- Elenco<string> getTabCompletions([IServer](/Vanilla/Game/IServer/) server, [ICommandSender](/Vanilla/Commands/ICommandSender/) sender, String[] args, @Optional [IBlockPos](/Vanilla/World/IBlockPos/) targetPos);
+- List<string> getTabCompletions([IServer](/Vanilla/Game/IServer/) server, [ICommandSender](/Vanilla/Commands/ICommandSender/) sender, String[] args, @Optional [IBlockPos](/Vanilla/World/IBlockPos/) targetPos);
 - boolean isUsernameIndex(String[] args, int index);
-- command1 != command2; → Puoi confrontarli!
+- command1 != command2; → You can compare them!

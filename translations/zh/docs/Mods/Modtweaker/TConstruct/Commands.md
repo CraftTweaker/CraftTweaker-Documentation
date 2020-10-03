@@ -1,18 +1,18 @@
-# 命令
+# Commands
 
-ModTinker 的 Tinker 构造扩展了 CraftTweaker 提供的调色板命令。  
-要访问这些命令，您的行为与您对CraftTinventer 命令的行为相同， 您使用 `/craftbinter` 前缀
+ModTweaker's Tinker's Construct integration extends the command palette provided by CraftTweaker.  
+To access these commands you do the same as you do for CraftTweaker commands, you use the `/crafttweaker` prefix
 
-# Tinkers命令列表
+# List of Tinkers' Commands
 
 ## ticmat
 
-用法：
+Usage:
 
 `/crafttweaker ticmat`
 
-`/ctt ticmat`
+`/ct ticmat`
 
-描述：
+Description:
 
-将游戏中所有注册的 [Tinkers 构造材料](/Mods/Modtweaker/TConstruct/Materials/ITICMaterial/) 的列表导出到craftminstruer.log 文件。
+Outputs a list of all registered [Tinkers' Construct Materials](/Mods/Modtweaker/TConstruct/Materials/ITICMaterial/) in the game to the crafttweaker.log file.

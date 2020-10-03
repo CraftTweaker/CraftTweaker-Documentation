@@ -1,22 +1,22 @@
-# ファブリケーションチャンバー
-## 完全に暗示されているわけではありませんが、入力は1つだけです。
+# Fabrication Chamber
+## Not fully implimented, only takes one input.
 
-## パッケージ
+## Package
 ```zenscript
-import mods.calculator.fabationChamber;
+import mods.calculator.fabricationChamber;
 ```
 
 ## メソッド
-- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input** 入力。
-- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) 出力** 出力。
+- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input** The input.
+- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) output** The outputs.
 
 
 ## 加算
 ```zenscript
-facationChamber.addRecipe(IIngredient入力, IIngredient出力);
+fabricationChamber.addRecipe(IIngredient input, IIngredient output);
 ```
 
-## 削除
+## Removal
 ```zenscript
-facationChamber.removeRecipe(IIngredient入力);
+fabricationChamber.removeRecipe(IIngredient input);
 ```

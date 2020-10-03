@@ -1,80 +1,80 @@
-# Sintassi Del Requisito Logico
+# Logic Requirement Syntax
 
-Ora che sai quali cancelli logici sono io in grado di descrivere la sintassi implementata in Reskillable che permette loro di essere utilizzati. Vi saranno esempi più dettagliati in una sezione successiva.
+Now that you know what logic gates are I can describe the syntax implemented into Reskillable that allows them to be used. There will be more detailed examples in a later section.
 
-In tutte le sintassi di seguito `requisito` è la rappresentazione stringa di qualsiasi altro requisito supportato (compresi quelli aggiunti da CompatSkills o altri addons).
-
-* * *
-
-## Cancelli obbligatori unari
-
-### NON Requisito
-
-Il più semplice requisito logico che supporti Reskillable è la capacità di invertire un requisito. Lo fa utilizzando un cancello **NOT** e la sintassi per esso è `non richiesto`. Come descritto sopra nella sezione sui cancelli logici, questo requisito logico sarà contrassegnato come soddisfatto solo se il requisito `specificato` non è soddisfatto.
+In all the below syntaxes `requirement` is the string representation of any other supported requirement (including ones added by CompatSkills or other addons).
 
 * * *
 
-## Cancelli di richiesta binaria
+## Unary requirement gates
 
-Gli altri requisiti logici sono leggermente più complessi in quanto richiedono due *requisiti di input*. Poiché i cancelli logici sono relativamente semplici, l'ordine dei requisiti non conta, tuttavia mi riferirò a loro come `requisito<sub>1</sub>` e `requisito<sub>2</sub>` per differenziare quello che è.
+### NOT Requirement
 
-Condividono anche la sintassi: `gate<unk> [requisito<sub>1</sub>]~[requisito<sub>2</sub>]`. With the gate being either `and`, `nand`, `or`, `né`, `xor`, o `xnor`.  
-**Nota**: Le parentesi intorno a `requisiti<sub>1</sub>` e `requisiti<sub>2</sub>` sono necessari.
-
-* * *
-
-### E Requisito
-
-Il requisito **E** a differenza degli altri requisiti logici è principalmente utile per i requisiti logici annidati (più su questo abbassamento), per bloccare un elemento o un altro oggetto con più requisiti richiede che tutti i requisiti indicati siano soddisfatti. Questo è lo stesso della funzionalità **E** , quindi dovrebbe essere utilizzato quando possibile, in quanto renderà il suggerimento essere formattato in modo più facile da leggere.
-
-## Esempi
-
-Tutti gli esempi qui sotto saranno mostrati utilizzando la sintassi dal supporto di CompatSkill's CraftTweaker in quanto è più facile da leggere. I requisiti logici funzionano bene anche dalla configurazione.
-
-Tutte le voci di script CrT di esempio qui sotto usano la dichiarazione di importazione: `import mods.compatskills.Requirement. ddRequireation;` questo è principalmente per ridurre la lunghezza delle altre linee e renderle più leggibili. (So se stai copiando uno degli esempi dovrai includerlo nella parte superiore del tuo file di script. Un paio di esempi qui sotto che iniziano direttamente con `mods. ompatskills.` sono serrature che sono specifiche per CompatSkills e che ho fornito esempi di requisiti di logica decente per.
+The simplest logic requirement that Reskillable supports is the ability to invert a requirement. It does this using a **NOT** gate and the syntax for it is `not|requirement`. As described above in the section about Logic Gates, this logic requirement will only be marked as met if the specified `requirement` is not met.
 
 * * *
 
-Consenti solo di attaccare pigmen zombie al di fuori di nether: `mods.compatskills.EntityDamageLock.addEntityLock(<entity:minecraft:zombie_pigman>, "not<unk> dim<unk> -1");`
+## Binary requirement gates
+
+The other logic requirements are slightly more complex as they take two *input* requirements. As the logic gates are relatively simple the order of the requirements does not actually matter, however I will be referring to them as `requirement<sub>1</sub>` and `requirement<sub>2</sub>` as to differentiate which one is which.
+
+They also share the syntax: `gate|[requirement<sub>1</sub>]~[requirement<sub>2</sub>]`. With the gate being either `and`, `nand`, `or`, `nor`, `xor`, or `xnor`.  
+**Note**: The brackets around `requirement<sub>1</sub>` and `requirement<sub>2</sub>` are needed.
 
 * * *
 
-Permetti di entrare nel nether se un giocatore ha un livello di attacco o difesa di almeno 15: `mods.compatskills.DimensionLock.addDimensionLock(-1, "o<unk> [reskillable:attack<unk> 15]~[reskillable:defense<unk> 15]");`
+### AND Requirement
+
+The **AND** requirement unlike the other logic requirements is mainly useful for nested logic requirements (more on this lower down), as locking an item or other object with multiple requirements requires all of the given requirements to be met. This is the same as the **AND** functionality, so should be used when possible, as it will make the tooltip be formatted in an easier to read manner.
+
+## Examples
+
+All the examples below are going to be shown using the syntax from CompatSkill's CraftTweaker support as it is easier to read. The logic requirements work just fine from the config as well.
+
+All the example script CrT script entries below use the import statement: `import mods.compatskills.Requirement.addRequirement;` this is mainly to reduce the lengths of the other lines and make them more readable. (So if you are copying any of the examples you will need to include it at the top of your script file.) A couple of the examples below that directly start with `mods.compatskills.` are locks that are specific to CompatSkills and that I came up with decent logic requirement examples for.
 
 * * *
 
-Una volta che un giocatore ottiene di difesa di livello 24 e di agilità livello 24 smettere di consentire loro di utilizzare armature di cuoio:
+Only allow attacking zombie pigmen outside of the nether: `mods.compatskills.EntityDamageLock.addEntityLock(<entity:minecraft:zombie_pigman>, "not|dim|-1");`
 
-    addRequirement(<minecraft:leather_helmet:*>, "nand<unk> [reskillable:defense<unk> 24]~[reskillable:agility<unk> 24]");
-    addRequirement(<minecraft:leather_chestplate:*>, "nand<unk> [reskillable:defense<unk> 24]~[reskillable:agility<unk> 24]");
-    addRequirement(<minecraft:leather_leggings:*>, "nand<unk> [reskillable:defense<unk> 24]~[reskillable:agility<unk> 24]");
-    addRequirement(<minecraft:leather_boots:*>, "nand<unk> [reskillable:defense<unk> 24]~[reskillable:agility<unk> 24]");
+* * *
+
+Allow entering the nether if a player has an attack or defense level of at least 15: `mods.compatskills.DimensionLock.addDimensionLock(-1, "or|[reskillable:attack|15]~[reskillable:defense|15]");`
+
+* * *
+
+Once a player gets to defense level 24 and agility level 24 stop allowing them to use leather armor:
+
+    addRequirement(<minecraft:leather_helmet:*>, "nand|[reskillable:defense|24]~[reskillable:agility|24]");
+    addRequirement(<minecraft:leather_chestplate:*>, "nand|[reskillable:defense|24]~[reskillable:agility|24]");
+    addRequirement(<minecraft:leather_leggings:*>, "nand|[reskillable:defense|24]~[reskillable:agility|24]");
+    addRequirement(<minecraft:leather_boots:*>, "nand|[reskillable:defense|24]~[reskillable:agility|24]");
     
 
 * * *
 
-Permetti solo di usare una pala di legno finché il giocatore non ottiene miniere o raccoglie livello 5: `addRequirement(<minecraft:wooden_shovel:*>, "nor<unk> [reskillable:mining<unk> 5]~[reskillable:collecting<unk> 5]");`
+Only allow using a wooden shovel until the player gets mining or gathering level 5: `addRequirement(<minecraft:wooden_shovel:*>, "nor|[reskillable:mining|5]~[reskillable:gathering|5]");`
 
 * * *
 
-Permetti a un giocatore di usare perle ender, solo se ha magia 32 o se ha agilità 32. Non lasciare tuttavia che lo usino se hanno entrambe le abilità al livello 32: `addRequirement(<minecraft:ender_pearl>, "xor<unk> [reskillable:magic<unk> 32]~[reskillable:agility<unk> 32]");`. Questo può essere utile se si desidera avere più alberi di progressione e assicurarsi che devono seguirne uno se vogliono continuare a essere in grado di utilizzare elementi specifici.
+Only allow a player to use ender pearls if they have magic 32 or if they have agility 32. Do not however let them use it if they have both skills at level 32: `addRequirement(<minecraft:ender_pearl>, "xor|[reskillable:magic|32]~[reskillable:agility|32]");`. This can be useful if you want to have multiple progression trees and ensure that they have to follow one if they want to keep being able to use specific items.
 
 * * *
 
-È stato difficile trovare un esempio per **XNOR**, tuttavia questo è un esempio di come può funzionare.
+It was hard to come up with an example for **XNOR**, however this is an example of how it can work.
 
-Permetti a un giocatore di livellare la difesa al livello 5 solo se non hanno ancora messo punti in attacco o se sono al livello di attacco 32: `mods. ompatskills.SkillLocks.addLevelLock(<skill:reskillable:defense>, 5, "xnor<unk> [reskillable:attack<unk> 2]~[reskillable:attack<unk> 32]");`
+Only allow a player to level defense to level 5 if they have not put any points into attack yet or if they are at attack level 32: `mods.compatskills.SkillLocks.addLevelLock(<skill:reskillable:defense>, 5, "xnor|[reskillable:attack|2]~[reskillable:attack|32]");`
 
-### Requisiti Di Logica Nested
+### Nested Logic Requirements
 
-I requisiti logici annidati sono quando si utilizza un requisito logico come uno dei `parametri del requisito` in un altro requisito logico. Prestare particolare attenzione al posizionamento staffa in requisiti nidificati.
-
-* * *
-
-Permetti che il minerale di diamante venga rotto solo se il giocatore ha il livello di miniera 20 o se il giocatore ha entrambi il livello di raccolta 25 e il livello di miniera 15: `addRequirement(<minecraft:diamond_ore>, "o<unk> [reskillable:mining<unk> 20]~[e<unk> [reskillable:collecting<unk> 25]~[reskillable:mining<unk> 15]]");` *Nota*: Questo ha anche l'effetto collaterale di non consentire ai giocatori di posizionare minerale di diamante a meno che non soddisfino anche il requisito.
+Nested logic requirements are when you are using a logic requirement as one of the `requirement` parameters in another logic requirement. Pay special attention to bracket placement in nested requirements.
 
 * * *
 
-Consenti solo di utilizzare gli elitari con agilità 15 alla fine o di avere agilità e livelli magici 25 senza essere alla fine: `addRequirement(<minecraft:elytra:*>, "xor<unk> [and<unk> [dim<unk> 1]~[reskillable:agility<unk> 15]]~[and<unk> [reskillable:agility<unk> 25]~[reskillable:magic<unk> 25]]");` *Nota*: Una volta che raggiungi l'agilità e la magia 25 non puoi usare l'elytra alla fine. Questo è in parte solo come esempio e non necessariamente quello che qualcuno vuole.
+Only allow diamond ore to be broken if the player has mining level 20 or if the player has both gathering level 25 and mining level 15: `addRequirement(<minecraft:diamond_ore>, "or|[reskillable:mining|20]~[and|[reskillable:gathering|25]~[reskillable:mining|15]]");` *Note*: This also has the side effect of not allowing players to place diamond ore unless they meet the requirement as well.
 
-Un altro modo in cui il requisito di cui sopra potrebbe essere scritto è: `addRequirement(<minecraft:elytra:*>, "reskillable:agility<unk> 15", "xor<unk> [dim<unk> 1]~[and<unk> [reskillable:agility<unk> 25]~[reskillable:magic<unk> 25]]");` perché entrambe le parti richiedono almeno l'agilità 15.
+* * *
+
+Only allow using the elytra with agility 15 in the end or having agility and magic levels 25 while not being in the end: `addRequirement(<minecraft:elytra:*>, "xor|[and|[dim|1]~[reskillable:agility|15]]~[and|[reskillable:agility|25]~[reskillable:magic|25]]");` *Note*: Once you reach agility and magic 25 you are unable to use the elytra in the end. This is in part just as an example and not necessarily what someone wants.
+
+Another way that the above requirement could be written is: `addRequirement(<minecraft:elytra:*>, "reskillable:agility|15", "xor|[dim|1]~[and|[reskillable:agility|25]~[reskillable:magic|25]]");` because both sides require at least agility 15.

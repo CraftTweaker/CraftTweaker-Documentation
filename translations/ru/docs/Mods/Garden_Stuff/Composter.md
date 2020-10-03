@@ -1,20 +1,20 @@
-# Композитор
-## Пакет
+# Composter
+## Package
 `import mods.gardenstuff.CompostBin;`
 
 ## Методы
-- **[IItemStack](/Vanilla/Liquids/IItemStack/) предмет** Предмет для создания.
-- **int processTime** Количество энергии, создаваемой за тик в машине базовой линии.
-- **[IOreDictEntry](/Vanilla/OreDict/IOreDictEntry) oredictKey** запись oreDictionary .
+- **[IItemStack](/Vanilla/Liquids/IItemStack/) item** The item to be composted.
+- **int processTime** Amount of energy created per tick in a base-line machine.
+- **[IOreDictEntry](/Vanilla/OreDict/IOreDictEntry) oredictKey** An oreDictionary entry.
 
-## Добавить запись
+## Add Compostable Item
 ```zenscript
-mods.gardenstuff.CompostBin.add(IItemStack, int processTime);
+mods.gardenstuff.CompostBin.add(IItemStack item, int processTime);
 
 mods.gardenstuff.CompostBin.add(<minecraft:carrot>, 150);
 ```
 
-## Добавить запись в Compostable oreDictionary
+## Add Compostable oreDictionary Entry
 ```zenscript
 mods.gardenstuff.CompostBin.add(oredictKey, int processTime);
 

@@ -1,32 +1,32 @@
-# Kamienny Wykrywanie
+# Stone Knapping
 
-## Pakiet
+## Package
 ```zenscript
-importuj mods.terrafirmacraft.Pieczenie kamienne;
+import mods.terrafirmacraft.StoneKnapping;
 ```
 
-## Dodanie
+## Addition
 
 ```zenscript
-[PLACEHOLDER] StoneKnapping.addRecipe(String registryName, IItemStack[] output, String[] rocks, String... pattern)
+StoneKnapping.addRecipe(String registryName, IItemStack[] output, String[] rocks, String... pattern)
 ```
 
-## Usuwanie
+## Removal
 
 ```zenscript
-[PLACEHOLDER] StoneKnapping.removeRecipe(IItemStack);
+StoneKnapping.removeRecipe(IItemStack output);
 StoneKnapping.removeRecipe(String registryName);
 ```
 
-## Przykłady
+## Examples
 
 ```zenscript
-// Daje kamienną motykę we wszystkich skałach.
-kamiennyKnapping.addRecipe("testrecipe", [<minecraft:stone_hoe>], ["wszystkie"], " ", "XXXX ");
-// daje kamienną haczykę tylko w łupku, kałamarnicy, skałowej, wapiennej.
-KamiennaKamienna.addRecipe("testrecipe2", [<minecraft:stone_hoe>], ["shale", "claystone", "rocksalt", "wapienie"], " ", "XXXX ");
-// daje kamienną czepę w kałamarnicy, a kilof w wapieniu.
-KamiennaKamienna.addRecipe("testrecipe3", [<minecraft:stone_hoe>, <minecraft:stone_pickaxe>], ["kałamarnica", "wapienie"], " ", "XXXX ");
-// daje kamienną motykę tylko w bazylicie i wiśni.
-StoneKnapping.addRecipe("testrecipe4", [<minecraft:stone_hoe>, <minecraft:stone_hoe>], ["basalt", "chert"], " ", "XXXX ");
+// Gives a stone hoe in all rocks.
+StoneKnapping.addRecipe("testrecipe", [<minecraft:stone_hoe>], ["all"], "     ", "XXXX ");
+// Gives a stone hoe only in shale, claystone, rocksalt, limestone.
+StoneKnapping.addRecipe("testrecipe2", [<minecraft:stone_hoe>], ["shale", "claystone", "rocksalt", "limestone"], "     ", "XXXX ");
+// Gives a stone hoe in claystone, and a pickaxe in limestone.
+StoneKnapping.addRecipe("testrecipe3", [<minecraft:stone_hoe>, <minecraft:stone_pickaxe>], ["claystone", "limestone"], "     ", "XXXX ");
+// Gives a stone hoe only in basalt and chert.
+StoneKnapping.addRecipe("testrecipe4", [<minecraft:stone_hoe>, <minecraft:stone_hoe>], ["basalt", "chert"], "     ", "XXXX ");
 ```

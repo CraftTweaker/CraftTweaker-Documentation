@@ -1,25 +1,25 @@
-# L'élément a expiré
+# ItemExpire
 
-L'Evénement d'Expire des Objets est lancé à chaque fois qu'un Objet expire (atteint sa durée de vie de macimum).  
-Il peut être annulé pour empêcher l'élément d'être signalé comme mort.  
-Si annulé, il ajoutera `extralife` à la durée de vie de l'élément.
+The ItemExpire Event is fired whenever an Item expires (reaches its macimum lifespan).  
+It can be canceled to prevent the item from being flagged as dead.  
+If canceled it will add `extralife` to the item's lifetime.
 
-## Classe de l'événement
+## Event Class
 
-Vous devrez lancer l'événement dans l'en-tête de la fonction comme cette classe:  
-`crafttweaker.event. temExpireEvent`  
-Vous pouvez, bien sûr, également [importer](/AdvancedFunctions/Import/) la classe avant et utiliser ce nom alors.
+You will need to cast the event in the function header as this class:  
+`crafttweaker.event.ItemExpireEvent`  
+You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
 
-## Extensions d'interface de l'événement
+## Event interface extensions
 
-Les événements PlayerDeathDrops implémentent les interfaces suivantes et peuvent également appeler toutes leurs méthodes/getters/setters :
+PlayerDeathDrops Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
 
-- [Evénement IEntity](/Vanilla/Events/Events/IEntityEvent/)
+- [IEntityEvent](/Vanilla/Events/Events/IEntityEvent/)
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 
 ## ZenGetter/ZenSetter
 
-| ZenGetter | ZenSetter | Type de texte                                 |
+| ZenGetter | ZenSetter | Type                                          |
 | --------- | --------- | --------------------------------------------- |
-| Élément   |           | [IEntityItem](/Vanilla/Entities/IEntityItem/) |
-| extraLife | extraLife | Indice                                        |
+| item      |           | [IEntityItem](/Vanilla/Entities/IEntityItem/) |
+| extraLife | extraLife | int                                           |

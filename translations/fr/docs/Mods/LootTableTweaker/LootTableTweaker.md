@@ -1,59 +1,59 @@
 # LootTableTweaker
 
-Le mod [LootTableTweaker](https://minecraft.curseforge.com/projects/loottabletweaker) vise à ajouter des fonctions très simples pour travailler avec des tables de butin.
+The [LootTableTweaker](https://minecraft.curseforge.com/projects/loottabletweaker) mod aims to add very simple functions for working with loot tables.
 
-## Suppression des choses
+## Removing things
 
-Supprime une table de butin spécifique et toutes ses entrées.
+Removes a specific loot table and all it's entries.
 
 ```zenscript
 // mods.ltt.LootTable.removeTable(String table);
 mods.ltt.LootTable.removeTable("minecraft:chests/simple_dungeon");
 ```
 
-Supprime un pool spécifique d'une table spécifique.
+Removes a specific pool from a specific table.
 
 ```zenscript
 // mods.ltt.LootTable.removePool(String table, String pool);
 mods.ltt.LootTable.removePool("minecraft:chests/simple_dungeon", "main");
 ```
 
-Supprime une entrée spécifique d'un pool spécifique d'une table spécifique.
+Removes a speciifc entry from a specific pool from a specific table.
 
 ```zenscript
 // mods.ltt.LootTable.removeEntry(String table, String pool, String entry);
 mods.ltt.LootTable.removeEntry("minecraft:chests/simple_dungeon", "main", "minecraft:iron_horse_armor");
 ```
 
-Supprime toutes les instances d'un élément d'un pool spécifique d'une table spécifique.
+Removes all instances of an item from a specific pool from a specific table.
 
 ```zenscript
 //mods.ltt.LootTable.removeItem(String table, String pool, String entry);
 mods.ltt.LootTable.removeItem("minecraft:chests/simple_dungeon", "main", "minecraft:golden_apple");
 ```
 
-Supprime toutes les entrées ajoutées par le mod au niveau global.
+Removes all entries added by the mod on a global level.
 
 ```zenscript
 // mods.ltt.LootTable.removeModEntry(String modid);
 mods.ltt.LootTable.removeModEntry("modid");
 ```
 
-Supprime toutes les entrées contenant des éléments ajoutés par le mod.
+Removes all entries containing items added by the mod.
 
 ```zenscript
 // mods.ltt.LootTable.removeModItem(String modid);
 mods.ltt.LootTable.removeModItem("modid");
 ```
 
-Supprime toutes les tables ajoutées par un mod.
+Remove all tables added by a mod.
 
 ```zenscript
 // mods.ltt.LootTable.removeModTable(String modid);
 mods.ltt.LootTable.removeModTable("modid");
 ```
 
-Supprime un objet de chaque table de butin.
+Removes an item from every loot table.
 
 ```zenscript
 // mods.ltt.LootTable.removeGlobalItem(String itemId);

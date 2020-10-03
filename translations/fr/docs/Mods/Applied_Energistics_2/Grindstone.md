@@ -1,20 +1,20 @@
 # Grindstone
 
-### Importation en cours
+### Importing
 
 ```zenscript
-Importer mods.appliedenergistics2.Grinder;
+import mods.appliedenergistics2.Grinder;
 ```
 
-### Ajout en cours
+### Adding
 
 ```zenscript
-Grinder.addRecipe(sortie IItemStack, entrée IItemStack, int tours, @Optional IItemStack secondary1Output, @Optional float secondary1Chance, @Optional IItemStack secondy2Output, @Optional float secondary2Chance);
+Grinder.addRecipe(IItemStack output, IItemStack input, int turns, @Optional IItemStack secondary1Output, @Optional float secondary1Chance, @Optional IItemStack secondary2Output, @Optional float secondary2Chance);
 
-Broyeur. ddRecipe(<minecraft:sapling>, <minecraft:leaves>, 4, <minecraft:sapling:5>, 0.3);
+Grinder.addRecipe(<minecraft:sapling>, <minecraft:leaves>, 4, <minecraft:sapling:5>, 0.3);
 ```
 
-### Enlèvement
+### Removing
 
 ```zenscript
 Grinder.removeRecipe(IItemStack input);

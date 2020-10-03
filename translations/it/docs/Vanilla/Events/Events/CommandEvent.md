@@ -1,26 +1,26 @@
-# ComandoEvento
+# CommandEvent
 
-L'Evento di Comando viene sparato ogni volta che viene eseguito un comando. È possibile reagire al comando fornendo un gestore dei comandi. Vedi gli esempi [Crafttweaker](https://github.com/CraftTweaker/CraftTweaker-Examples/blob/master/crafttweaker/events/commandEvent/SendMessageOnSyntaxCommand/SendMessageOnSyntaxCommand.zs) per un esempio.
+The Command Event is fired whenever a command is executed. You can react to the command by providing a command handler. See [Crafttweaker examples](https://github.com/CraftTweaker/CraftTweaker-Examples/blob/master/crafttweaker/events/commandEvent/SendMessageOnSyntaxCommand/SendMessageOnSyntaxCommand.zs) for an example.
 
-## Classe Evento
+## Event Class
 
-Dovrai lanciare l'evento nell'intestazione della funzione come questa classe: `crafttweaker.event.CommandEvent`. Si consiglia di [importare](/AdvancedFunctions/Import/) la classe
+You will need to cast the event in the function header as this class: `crafttweaker.event.CommandEvent`. It is advised to [import](/AdvancedFunctions/Import/) the class
 
     import crafttweaker.event.CommandEvent;
     
 
-## Estensioni dell'interfaccia evento
+## Event interface extensions
 
-L'evento di comando implementa le seguenti interfacce:
+Command event implements the following interfaces:
 
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 
 ## ZenGetters/ZenSetters
 
-Le seguenti informazioni possono essere recuperate/impostate durante l'evento:
+The following information ca be retrieved/set during the event:
 
-| ZenGetter       | ZenSetter   | Tipo                                                |
-| --------------- | ----------- | --------------------------------------------------- |
-| `commandSender` | no          | [ICommandSender](/Vanilla/Commands/ICommandSender/) |
-| `comando`       | no          | [ICommand](/Vanilla/Commands/ICommand/)             |
-| `parametri`     | `parametri` | array di stringhe                                   |
+| ZenGetter       | ZenSetter    | Type                                                |
+| --------------- | ------------ | --------------------------------------------------- |
+| `commandSender` | no           | [ICommandSender](/Vanilla/Commands/ICommandSender/) |
+| `command`       | no           | [ICommand](/Vanilla/Commands/ICommand/)             |
+| `parameters`    | `parameters` | string array                                        |

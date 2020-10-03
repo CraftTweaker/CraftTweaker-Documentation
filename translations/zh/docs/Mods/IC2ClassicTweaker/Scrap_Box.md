@@ -1,17 +1,17 @@
-## 废纸箱
+## Scrap Box
 
 ## 所属包
 
 ```zenscript
-导入 mods.ic2.ScrappBox;
+import mods.ic2.ScrapBox;
 ```
 
 ### 方法
 
-- 关于其他方法的信息，请参阅 [ScrapBox (来自 IC2 调节器)](/Mods/IC2Tweaker/Scrap_Box/)。
-- **[ItemStack](/Vanilla/Items/IItemStack/) 项** 从废件箱投放池中删除的条目。 将导致所有其它潮流的几率被重新计算。
+- See [ScrapBox (From IC2 Tweaker)](/Mods/IC2Tweaker/Scrap_Box/) for info on other methods.
+- **[ItemStack](/Vanilla/Items/IItemStack/) item** The entry being removed from the scrap box drop pool. Will cause drop chances of all other tiems to be recalculated.
 
-## 删除掉落(StemStack)
+## Remove Drop (IItemStack)
 
 ```zenscript
     ScrapBox.removeDrop(IItemStack item);

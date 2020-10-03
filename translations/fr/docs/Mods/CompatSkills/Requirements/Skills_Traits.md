@@ -1,35 +1,35 @@
-# Compétences & Caractéristiques
+# Skills & Traits
 
-## Liste de compétences :
+## Skills List:
 
-| Compétences | Emplacement de la ressource |
-|:----------- |:--------------------------- |
-| Agilité     | remorquable:agilité         |
-| Attaquer    | remorquable : attaque       |
-| Bâtiment    | remorquable:construction    |
-| Défense     | remorquable : défense       |
-| Fermeture   | remorquable:farming         |
-| Récolte     | remorquable : collecte      |
-| Magie       | reskillable:magic           |
-| Extraction  | remorquable:minage          |
+| Skills    | ResourceLocation      |
+|:--------- |:--------------------- |
+| Agility   | reskillable:agility   |
+| Attack    | reskillable:attack    |
+| Building  | reskillable:building  |
+| Defense   | reskillable:defense   |
+| Farming   | reskillable:farming   |
+| Gathering | reskillable:gathering |
+| Magic     | reskillable:magic     |
+| Mining    | reskillable:mining    |
 
-## Liste de caractéristiques:
+## Traits List:
 
-| Compétence Parente |     Caractéristique     | Emplacement de la ressource            |
-|:------------------:|:-----------------------:|:-------------------------------------- |
-|      Agilité       |    Marche sur route     | remorquable:marche sur route           |
-|      Agilité       |        Sidestep         | reskillable:sidestep                   |
-|      Attaquer      |    Esprit de Combat     | reskillable:battle_spirit              |
-|      Attaquer      |      Neutralissse       | reskillable:neutralissse               |
-|      Bâtiment      | Transmutation de Chorus | reskillable:chorus_transmute           |
-|      Bâtiment      |  Récupération parfaite  | reskillable:perfect_recovery           |
-|      Défense       |   Tendance de l'effet   | reskillable:effett_twist               |
-|      Défense       |        Chandail         | chemise remorquable:sous-chemise       |
-|     Fermeture      |       Pouce vert        | reskillable:green_thumb                |
-|     Fermeture      |       Plus de blé       | remorquable : plus de blé              |
-|      Récolte       |    Garantie de lâche    | reskillable:drop_guarantee             |
-|      Récolte       |    Pêcheur chanceux     | format@@0 reskillable:lucky_fishman    |
-|       Magie        |      Osmose dorée       | reskillable:golden_osmosis             |
-|       Magie        |      Port sécurisé      | reskillable:safe_port                  |
-|     Extraction     |    Fouilleur fossile    | reskillable:fossil_digger              |
-|     Extraction     |    Obsidian Smasher     | format@@0 reskillable:obsidian_smasher |
+| Parent Skill |        Trait         | ResourceLocation             |
+|:------------:|:--------------------:|:---------------------------- |
+|   Agility    |      Road Walk       | reskillable:roadwalk         |
+|   Agility    |       Sidestep       | reskillable:sidestep         |
+|    Attack    |    Battle Spirit     | reskillable:battle_spirit    |
+|    Attack    |     Neutralissse     | reskillable:neutralissse     |
+|   Building   | Chorus Transmutation | reskillable:chorus_transmute |
+|   Building   |   Perfect Recovery   | reskillable:perfect_recover  |
+|   Defense    |     Effect Twist     | reskillable:effect_twist     |
+|   Defense    |      Undershirt      | reskillable:undershirt       |
+|   Farming    |     Green Thumb      | reskillable:green_thumb      |
+|   Farming    |      More Wheat      | reskillable:more_wheat       |
+|  Gathering   |    Drop Guarantee    | reskillable:drop_guarantee   |
+|  Gathering   |   Lucky Fisherman    | reskillable:lucky_fisherman  |
+|    Magic     |    Golden Osmosis    | reskillable:golden_osmosis   |
+|    Magic     |      Safe Port       | reskillable:safe_port        |
+|    Mining    |    Fossil Digger     | reskillable:fossil_digger    |
+|    Mining    |   Obsidian Smasher   | reskillable:obsidian_smasher |

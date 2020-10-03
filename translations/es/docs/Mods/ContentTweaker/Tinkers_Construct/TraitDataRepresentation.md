@@ -1,32 +1,32 @@
-# Representación de datos de rasgo
+# Trait Data Representation
 
-Una representación de datos de rasgo de rasgo representa los datos de Construct Trait de un Tinker y es ItemBound.  
-Puede obtener tal objeto de un objeto [Trait](/Mods/ContentTweaker/Tinkers_Construct/Trait/) existente suministrando un ItemStack al método `getData`.
+A Trait data representation represents a Tinkers' Construct Trait's Data and is ItemBound.  
+You can get such an object from an existing [Trait](/Mods/ContentTweaker/Tinkers_Construct/Trait/) object by supplying an IItemStack to the `getData` method.
 
 ## Importar la clase
 
-Podría ser necesario que importes la clase si encuentras algún problema (como lanzar un [array](/AdvancedFunctions/Arrays_and_Loops/)), más vale estar seguro que lo siento y añadir la importación.  
-`importar mods.contenttweaker.tconstruct.TraitDataRepresentation`
+It might be required for you to import the class if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
+`import mods.contenttweaker.tconstruct.TraitDataRepresentation`
 
-## ZenGetter y ZenSetter
+## ZenGetter and ZenSetter
 
-| Nombre          | ZenGetter | Ajuste | Tipo   |
-| --------------- | --------- | ------ | ------ |
-| color           | ✔         | ✔      | int    |
-| actual          | ✔         | ✔      | int    |
-| extraInfo       | ✔         | ✔      | cadena |
-| identifier      | ✔         | ✔      | cadena |
-| nivel           | ✔         | ✔      | int    |
-| máx             | ✔         | ✔      | int    |
-| info            | ✔         |        | cadena |
-| cadena de color | ✔         |        | cadena |
+| Name        | ZenGetter | ZenSetter | Type   |
+| ----------- | --------- | --------- | ------ |
+| color       | ✔         | ✔         | int    |
+| current     | ✔         | ✔         | int    |
+| extraInfo   | ✔         | ✔         | string |
+| identifier  | ✔         | ✔         | string |
+| level       | ✔         | ✔         | int    |
+| max         | ✔         | ✔         | int    |
+| info        | ✔         |           | string |
+| colorString | ✔         |           | string |
 
-## Métodos
+## ZenMethods
 
 ```zenscript
-//Hace lo mismo que myTraitData.info;
+//Does the same as myTraitData.info;
 myTraitData.calcInfo();
 
-//Does lo mismo que myTraitData.colorString;
+//Does the same as myTraitData.colorString;
 myTraitData.getColorString();
 ```

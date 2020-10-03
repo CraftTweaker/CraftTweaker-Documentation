@@ -1,6 +1,6 @@
 # IMachine
 
-IMachineは実際のマシンオブジェクトです。 [IMachineRegistry](/Mods/ExtraUtilities2/CustomMachines/IMachineRegistry) から取得できます。
+An IMachine is the actual machine object, you can get it from the [IMachineRegistry](/Mods/ExtraUtilities2/CustomMachines/IMachineRegistry).
 
 ## パッケージのインポート
 
@@ -8,32 +8,32 @@ It might be required for you to [import](/AdvancedFunctions/Import) the class.
 You usually only need to import a class when directly using the name, such as in casting or [Array Declarations](/AdvancedFunctions/Arrays_and_Loops) but better be safe than sorry and add the import.
 
 ```zenscript
-import extraautilities2.Tweaker.IMachine;
+import extrautilities2.Tweaker.IMachine;
 ```
 
-## レシピを追加
+## Add Recipes
 
 There are two methods for adding recipes, one uses a probability map for the outputs, one allows for the use of [WeightedItemStack](/Vanilla/Items/WeightedItemStack) and [WeightedLiquidStack](/Vanilla/Liquids/WeightedLiquidStack) objects.  
 Both methods use [maps](/AdvancedFunctions/Associative_Arrays) with strings as indices.  
 These strings will be the names of the input/output slots given, which is why you should not have two slots with the same name in a machine.
 
-### 確率マップの使用
+### Using a probability map
 
 ```zenscript
-myMachine.addRecipe(入力、出力、エネルギー、時間、確率);
+myMachine.addRecipe(inputs, outputs, energy, time, probabilities);
 ```
 
-このメソッドは以下のパラメータを使用します。
+This method uses the following parameters:
 
-| 名称      | タイプ                                                          |
-| ------- | ------------------------------------------------------------ |
-| inputs  | [IIngredient](/Vanilla/Variable_Types/IIngredient)[string\] |
-| outputs | [IIngredient](/Vanilla/Variable_Types/IIngredient)[string\] |
-| エネルギー   | int                                                          |
-| 時間      | int                                                          |
-| 確率は     | float[string\]                                              |
+| 名称            | Type                                                         |
+| ------------- | ------------------------------------------------------------ |
+| inputs        | [IIngredient](/Vanilla/Variable_Types/IIngredient)[string\] |
+| outputs       | [IIngredient](/Vanilla/Variable_Types/IIngredient)[string\] |
+| energy        | int                                                          |
+| time          | int                                                          |
+| probabilities | float[string\]                                              |
 
-### 出力マップのみを使用
+### Using only the outputs map
 
 You can also only use the outputs map, then ExtUtils2 will check for any [WeightedItemStack](/Vanilla/Items/WeightedItemStack) and [WeightedLiquidStack](/Vanilla/Liquids/WeightedLiquidStack) objects and use their chances.  
 Remember, that adding anything other than those two or [IIngredient](/Vanilla/Variable_Types/IIngredient) as mapped value, will have no effect.
@@ -42,62 +42,62 @@ Remember, that adding anything other than those two or [IIngredient](/Vanilla/Va
 myMachine.addRecipe(inputs, outputs, energy, time);
 ```
 
-このメソッドは以下のパラメータを使用します。
+This method uses the following parameters:
 
-| 名称      | タイプ                                                          |
+| 名称      | Type                                                         |
 | ------- | ------------------------------------------------------------ |
 | inputs  | [IIngredient](/Vanilla/Variable_Types/IIngredient)[string\] |
 | outputs | Object[string\]                                             |
-| エネルギー   | int                                                          |
-| 時間      | int                                                          |
+| energy  | int                                                          |
+| time    | int                                                          |
 
-## レシピを削除
+## Remove recipes
 
-レシピを削除することもできます。 ここでも、 [個のマップ](/AdvancedFunctions/Associative_Arrays) をインデックスとして使用します。
+You can also remove recipes. Again, you use [maps](/AdvancedFunctions/Associative_Arrays) with strings as indices.
 
 There are two methods, one uses [IIngredient](/Vanilla/Variable_Types/IIngredient) as values, and one that accepts a map with [IItemStack](/Vanilla/Items/IItemStack) and a map with [ILiquidStack](/Vanilla/Liquids/ILiquidStack) values.
 
-### IIngredientの使用
+### Using IIngredient
 
 ```zenscript
 myMachine.removeRecipe(inputs);
 ```
 
-| 名称     | タイプ                                                          |
+| 名称     | Type                                                         |
 | ------ | ------------------------------------------------------------ |
 | inputs | [IIngredient](/Vanilla/Variable_Types/IIngredient)[string\] |
 
-### アイテムと液体に別々のマップを使用する
+### Using separate maps for Items and Liquids
 
 ```zenscript
-myMachine.removeRecipe(item, liquids);
+myMachine.removeRecipe(items, liquids);
 ```
 
-| 名称   | タイプ                                                     |
-| ---- | ------------------------------------------------------- |
-| 項目   | [IItemStack](/Vanilla/Items/IItemStack)[string\]       |
-| リキード | [ILiquidStack](/Vanilla/Liquids/ILiquidStack)[string\] |
+| 名称      | Type                                                    |
+| ------- | ------------------------------------------------------- |
+| items   | [IItemStack](/Vanilla/Items/IItemStack)[string\]       |
+| liquids | [ILiquidStack](/Vanilla/Liquids/ILiquidStack)[string\] |
 
-## マシン情報の取得
+## Retrieving machine information
 
-以下のメソッドを使用して、マシン上の情報を取得することもできます。
+You can also retrieve some information on the machine using the following methods:
 
-- `getInputSlots()`: [IMachineSlot](/Mods/ExtraUtilities2/CustomMachines/IMachineSlot) のリストとしてすべての入力スロットを返します。
-- `getOutputSlots()`: [IMachineSlot](/Mods/ExtraUtilities2/CustomMachines/IMachineSlot) のリストとしてすべての出力スロットを返します。
-- `getSlot()`: 名前に一致する [IMachineSlot](/Mods/ExtraUtilities2/CustomMachines/IMachineSlot) を返します。
+- `getInputSlots()`: Returns all input slots as a List of [IMachineSlot](/Mods/ExtraUtilities2/CustomMachines/IMachineSlot).
+- `getOutputSlots()`: Returns all output slots as a List of [IMachineSlot](/Mods/ExtraUtilities2/CustomMachines/IMachineSlot).
+- `getSlot()`: Returns the [IMachineSlot](/Mods/ExtraUtilities2/CustomMachines/IMachineSlot) matching the name.
 
-## マシンに名前を付ける
+## Naming the machine
 
-これまでのところ、すべてのマシンに `machine.crafttweaker:your_machine_name` という名前が付けられます。ここで、 `your_machine_name` は、マシンを作成するために使用した名前です。
+So far, all our machines will be named `machine.crafttweaker:your_machine_name` where `your_machine_name` is whatever name you used to create the machine.
 
-マシン名をローカライズしたい場合は、CrTの [IGame](/Vanilla/Game/IGame) 機能またはカスタムラングファイルを使用してください。
+If you want the machine name localized, use either CrT's [IGame](/Vanilla/Game/IGame) capabilities or a custom lang file.
 
-ですから、マシン名が `time_machine`の場合、スクリプト内でこれを呼び出す必要があります:
+So if your machine name was `time_machine`, you would need to either call this in a script:
 
 ```zenscript
-game.setLocalization("machine.crafttweaker:time_machine", "スペースタイムディストーター(タイムマシン)");
+game.setLocalization("machine.crafttweaker:time_machine", "Space Time distorter (Time machine)");
 ```
 
-または、言語ファイルにこれを追加します:
+Or add this to a lang file:
 
-    machine.crafttweaker:time_machine=スペースタイムディストーター(タイムマシン)
+    machine.crafttweaker:time_machine=Space Time distorter (Time machine)

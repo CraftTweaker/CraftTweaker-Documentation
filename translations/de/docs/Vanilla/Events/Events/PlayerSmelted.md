@@ -1,16 +1,16 @@
-# Spieler geschmolzen
+# PlayerSmelted
 
-Das PlayerSmelted Event wird gefeuert, wenn ein Spieler etwas aus einem Ofen nimmt.
+The PlayerSmelted Event is fired whenever a player takes something out of a furnace.
 
 ## Event-Klasse
 
-Du musst das Ereignis als diese Klasse in den Funktionskopf verschieben:  
-`crafttweaker.event. layerSmeltedEvent`  
-Sie können natürlich auch [die Klasse vor](/AdvancedFunctions/Import/) importieren und dann diesen Namen verwenden.
+You will need to cast the event in the function header as this class:  
+`crafttweaker.event.PlayerSmeltedEvent`  
+You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
 
 ## Erweiterte Event-Schnittellen
 
-PlayerSmelted Events implementieren die folgenden Schnittstellen und können auch alle ihre Methoden/Getters/Setter aufrufen:
+PlayerSmelted Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
 
 - [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
 
@@ -18,7 +18,7 @@ PlayerSmelted Events implementieren die folgenden Schnittstellen und können auc
 
 Die folgenden Informationen lassen sich von diesem Event (Ereignis) abrufen:
 
-| ZenGetter  | Rückgabetyp                              |
-| ---------- | ---------------------------------------- |
-| `player`   | [IPlayer](/Vanilla/Players/IPlayer/)     |
-| `ausgeben` | [IItemStack](/Vanilla/Items/IItemStack/) |
+| ZenGetter | Rückgabetyp                              |
+| --------- | ---------------------------------------- |
+| `player`  | [IPlayer](/Vanilla/Players/IPlayer/)     |
+| `output`  | [IItemStack](/Vanilla/Items/IItemStack/) |

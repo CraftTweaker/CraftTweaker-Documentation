@@ -1,15 +1,15 @@
-# Блокировка монтирования
+# Mount Locking
 
-## Блоки монтирования
+## Mount Locks
 
-Эта функция позволяет вам добавлять требования к определенным объектам!
+This feature allows you to add a requirement lock to Mounting specific entities!
 
-### Синтаксис
+### Syntax
 
-[Ссылка на IEntityDefinition](/Vanilla/Entities/IEntityDefinition/)
+[Link to IEntityDefinition](/Vanilla/Entities/IEntityDefinition/)
 
-    # Пустой Пример:
-    mods.compatskills.AnimalTameLock.addTameLock(IEntityDefinition definition, строка... defaultТребования)
+    # Blank Example:
+    mods.compatskills.AnimalTameLock.addTameLock(IEntityDefinition definition, String... defaultRequirements)
     
-    # Пример:
+    # Working Example:
     mods.compatskills.AnimalTameLock.addTameLock(<entity:minecraft:pig>, "reskillable:mining|5", "reskillable:magic|7")

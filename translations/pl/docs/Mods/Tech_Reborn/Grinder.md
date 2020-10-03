@@ -1,16 +1,16 @@
 # Grinder
 
-## Importowanie pakietu
+## Importing the Package
 `mods.techreborn.grinder`
 
-## Dodawanie przepisów
+## Adding Recipes
 ```zenscript
-mods.techreborn.grinder.addRecipe(wyjście IItemStack, IIngredient input1, int ticktime, int euTick);
+mods.techreborn.grinder.addRecipe(IItemStack output, IIngredient input1, int ticktime, int euTick);
 ```
 
-## Usuwanie przepisów
+## Removing Recipes
 ```zenscript
-mods.techreborn.grinder.removeInputRecipe(Składnik składnika);
+mods.techreborn.grinder.removeInputRecipe(IIngredient ingredient);
 mods.techreborn.grinder.removeRecipe(IItemStack output);
 mods.techreborn.grinder.removeAll();
 ```

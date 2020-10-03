@@ -1,26 +1,26 @@
-# Distillatore
+# Distiller
 
-Il Distiller è una macchina che converte un fluido in ingresso in un fluido in uscita e un elemento utilizzando vapore.
+The Distiller is a machine that converts an input fluid into an output fluid and item using steam.
 
-## Pacchetto
+## Package
 `mods.steamagerevolution.Distiller`
 
-## Metodi
+## Methods
 
-- **[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) output** Il risultato della ricetta.
-- **[IItemStack](/Vanilla/Items/IItemStack/) output** Il risultato della ricetta.
-- **[Ingresso ILiquidStack](/Vanilla/Liquids/ILiquidStack/)** L'ingresso della ricetta.
-- **int craftTime** Tempo di lavorazione della macchina da elaborare
-- **int steamCosto** Costo di vapore per la macchina da elaborare
+- **[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) output** The result of the recipe.
+- **[IItemStack](/Vanilla/Items/IItemStack/) output** The result of the recipe.
+- **[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) input** The input of the recipe.
+- **int craftTime** Crafting time for machine to process
+- **int steamCost** Cost of Steam for machine to process
 
-## Addizione
+## Addition
 
 ```zenscript
-mods.steamagerevolution.Distiller.addRecipe(ingresso ILiquidStack, uscita IItemStack, uscita ILiquidStack, int craftTime, int steamCost);
+mods.steamagerevolution.Distiller.addRecipe(ILiquidStack input, IItemStack outputStack, ILiquidStack output, int craftTime, int steamCost);
 mods.steamagerevolution.Distiller.addRecipe(<liquid:bio_fuel>*1000, <minecraft:dirt>, <liquid:ethanol>*1000, 200, 200);
 ```
 
-## Rimozione
+## Removal
 
 ```zenscript mods.steamagerevolution.Distiller.removeRecipe(IItemStack outputStack, ILiquidStack output); mods.steamagerevolution.Distiller.removeRecipe(<minecraft:cobblestone>, <liquid:lava>);
 

@@ -1,16 +1,16 @@
-# 盐度
+# Salt Fission
 
-## 导入软件包
-`nuclearcraft.salt_f_mods.nuclear`
+## Importing the Package
+`mods.nuclearcraft.salt_fission`
 
-## 添加配方
+## Adding Recipes
 ```zenscript
-mods.nuclearcraft.salt_fission.addRecipe([fluidInput, fluidOutput, two baseTime, double basePower, @Optional double processRadiation]);
+mods.nuclearcraft.salt_fission.addRecipe([fluidInput, fluidOutput, double baseTime, double basePower, @Optional double processRadiation]);
 ```
 
-## 删除配方
+## Removing Recipes
 ```zenscript
-mods.nuclearcraft.salt_fission.removeRecipeWidInput([fluidInput]);
-mods.nuclearcraft.salt.salt_fission.removeRecipewOut([fluidOutput]);
+mods.nuclearcraft.salt_fission.removeRecipeWithInput([fluidInput]);
+mods.nuclearcraft.salt_fission.removeRecipeWithOutput([fluidOutput]);
 mods.nuclearcraft.salt_fission.removeAllRecipes();
 ```

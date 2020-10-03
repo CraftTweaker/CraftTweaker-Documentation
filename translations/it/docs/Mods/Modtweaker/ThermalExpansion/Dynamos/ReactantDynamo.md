@@ -1,35 +1,35 @@
 # ReactantDynamo
 
-## Importa il pacchetto
+## Import the package
 
-Per abbreviare le chiamate di metodo è possibile [importare](/AdvancedFunctions/Import/) il pacchetto in questo modo:
+To shorten method calls you can [import](/AdvancedFunctions/Import/) the package like so:
 
 ```zenscript
 import mods.thermalexpansion.ReactantDynamo;
 ```
 
-## Aggiungi Reazione
+## Add Reaction
 
 ```zenscript
 //mods.thermalexpansion.ReactantDynamo.addReaction(IItemStack item, ILiquidStack liquid, int energy);
 mods.thermalexpansion.ReactantDynamo.addReaction(<minecraft:bedrock>, <liquid:water>, 13);
 ```
 
-## Aggiungi Reazione Elementale
+## Add Elemental Reaction
 
 ```zenscript
 //mods.thermalexpansion.ReactantDynamo.addElementalReaction(IItemStack item, ILiquidStack liquid, int energy);
 mods.thermalexpansion.ReactantDynamo.addElementalReaction(<minecraft:bedrock>, <liquid:water>, 13);
 ```
 
-## Rimuovi Reazione
+## Remove Reaction
 
 ```zenscript
 //mods.thermalexpansion.ReactantDynamo.removeReaction(IItemStack item, ILiquidStack liquid);
 mods.thermalexpansion.ReactantDynamo.removeReaction(<minecraft:bedrock>, <liquid:water>);
 ```
 
-## Rimuovi Reazione Elementale
+## Remove Elemental Reaction
 
 ```zenscript
 //mods.thermalexpansion.ReactantDynamo.removeElementalReaction(IItemStack item, ILiquidStack liquid);

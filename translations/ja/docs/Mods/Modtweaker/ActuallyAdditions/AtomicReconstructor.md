@@ -1,6 +1,6 @@
-# 原子構造体の再構築
+# Atomic Reconstructor
 
-## パッケージ
+## Package
 
 `mods.actuallyadditions.AtomicReconstructor`
 
@@ -11,7 +11,7 @@
 mods.actuallyadditions.AtomicReconstructor.addRecipe(<minecraft:fire_charge>, <minecraft:coal:1>, 1000);
 ```
 
-## 削除
+## Removal
 
 ```zenscript
 //mods.actuallyadditions.AtomicReconstructor.removeRecipe(IItemStack output);

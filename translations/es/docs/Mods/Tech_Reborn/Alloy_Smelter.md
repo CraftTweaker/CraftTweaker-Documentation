@@ -1,16 +1,16 @@
-# Fundición de Aleación
+# Alloy Smelter
 
-## Importando el Paquete
-`mods.techreborn.alloysmallelter`
+## Importing the Package
+`mods.techreborn.alloySmelter`
 
-## Añadiendo recetas
+## Adding Recipes
 ```zenscript
-mods.techreborn.alloyworthelter.addRecipe(salida ItemStack, IIngredient input1, IIngredient input2, int ticktime, int euTick);
+mods.techreborn.alloySmelter.addRecipe(IItemStack output, IIngredient input1, IIngredient input2, int ticktime, int euTick);
 ```
 
-## Eliminando recetas
+## Removing Recipes
 ```zenscript
-mods.techreborn.alloyijelter.removeInputRecipe(ingrediente IIngredientA, ingrediente IIngredientB);
-mods.techreborn.alloypyelter.removeRecipe(salida ItemStack);
-mods.techreborn.alloyğelter.removeAll();
+mods.techreborn.alloySmelter.removeInputRecipe(IIngredient ingredientA, IIngredient ingredientB);
+mods.techreborn.alloySmelter.removeRecipe(IItemStack output);
+mods.techreborn.alloySmelter.removeAll();
 ```

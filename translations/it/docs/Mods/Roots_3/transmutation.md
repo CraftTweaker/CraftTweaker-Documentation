@@ -1,14 +1,14 @@
-### Classe
+### Class
 
 ```zenscript
 import mods.roots.Transmutation;
 ```
 
-#### Metodi
+#### Methods
 
 ```zenscript
 void removeRecipe(
-  stringa name // il nome della ricetta che viene rimosso
+  string name // the name of the recipe being removed
 );
 ```
 
@@ -16,9 +16,9 @@ void removeRecipe(
 
 ```zenscript
 void addBlockToBlockRecipe(
-  nome stringa, // il nome della ricetta da aggiungere (deve essere unico)
-  Stato IBlockState1, // lo stato iniziale del blocco come definito come stato blocco
-  stato IBlockState 2 // lo stato che lo stato iniziale dovrebbe essere convertito in
+  string name,        // the name of the recipe being added (must be unique)
+  IBlockState state1, // the initial state of the block as defined as a blockstate
+  IBlockState state2  // the state that the initial state should be converted into
 );
 ```
 
@@ -26,37 +26,37 @@ void addBlockToBlockRecipe(
 
 ```zenscript
 void addBlockToItemRecipe(
-  nome stringa, // il nome della ricetta da aggiungere (deve essere unico)
-  stato IBlockForth, // lo stato iniziale ricercato durante la conversione (come stato di blocco)
-  IItemStack stack // lo stack di elementi che sostituisce lo stato di blocco
+  string name,       // the name of the recipe being added (must be unique)
+  IBlockState state, // the initial state that is looked for when converting (as a block state)
+  IItemStack stack   // the item stack that replaces the block state
 );
 ```
 
 * * *
 
-### Esempi
+### Examples
 
 ```zenscript
 import mods.roots.Transmutation;
 
-// Rimuove la ricetta predefinita zucca-over-water-to-melon
+// Removes the default pumpkin-over-water-to-melon recipe
 Transmutation.removeRecipe("pumpkin_melon");
 
-// Aggiunge una ricetta che converte la pietra fine in blocchi ossei
-Trasmutazione. ddBlockToBlockRecipe("end_stone_to_bone", <blockstate:minecraft:end_stone>, <blockstate:minecraft:bone_block:axis=y>);
+// Adds a recipe which converts end stone into bone blocks
+Transmutation.addBlockToBlockRecipe("end_stone_to_bone", <blockstate:minecraft:end_stone>, <blockstate:minecraft:bone_block:axis=y>);
 
-// Aggiunge una ricetta che converte tallgrass predefinito in palle di neve
-Trasmutazione. ddBlockToItemRecipe("tallgrass_to_snowball", <blockstate:minecraft:tallgrass:type=tall_grass>, <minecraft:snowball>*3);
+// Adds a recipe which converts default tallgrass into snowballs
+Transmutation.addBlockToItemRecipe("tallgrass_to_snowball", <blockstate:minecraft:tallgrass:type=tall_grass>, <minecraft:snowball>*3);
 ```
 
-### Note
+### Notes
 
-**Nota: le funzioni di stato complesso non sono attualmente acessibili attraverso CraftTweaker (cioè, controllare dintorni).**
+**Note: complex state functions are not currently acessible through CraftTweaker (i.e., checking surroundings).**
 
-È possibile trovare le informazioni sul blocco e sulle sue varianti e stati utilizzando la funzionalità di debug F3 e puntando su di esso. Sul lato destro dello schermo verrà visualizzato il nome del Registro di sistema del blocco, e quindi qualsiasi stato sotto quello.
+It is possible to find the information about the block and its variants and states by using the F3 debug functionality and targeting it. On the right side of the screen it will display the block's registry name, and then any states below that.
 
-Ad esempio, `bone_block` ha le seguenti caratteristiche:
+For example, `bone_block` has the following:
 
-    asse: y
+    axis: y
 
-Questo può essere convertito in uno stato di blocco sostituendo il `:` con `=` così: `axis=y`, significa che il blocco finale (per un blocco osseo rivolto verso l'alto) sarebbe `<blockstate:minecraft:bone_block:axis=y>`.
+This can be converted into a blockstate by replacing the `:` with `=` like so: `axis=y`, meaning that the final blockstate (for an upwards facing bone block) would be `<blockstate:minecraft:bone_block:axis=y>`.

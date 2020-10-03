@@ -1,25 +1,25 @@
 # Vat
 
-Il Vat è una macchina che converte elementi di ingresso e fluidi in un fluido di uscita.
+The Vat is a machine that converts input items and fluids into an output fluid.
 
-## Pacchetto
+## Package
 `mods.steamagerevolution.Vat`
 
-## Metodi
+## Methods
 
-- **[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) output** Il risultato della ricetta.
-- **[Ingresso ILiquidStack](/Vanilla/Liquids/ILiquidStack/)** Ingresso fluido della ricetta.
-- **[IIngrediente](/Vanilla/Variable_Types/IIngredient/) inputItems** Items to input of the recipe.
-- **int craftTime** Tempo di lavorazione della macchina da elaborare
+- **[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) output** The result of the recipe.
+- **[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) input** Fluid input of the recipe.
+- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) inputItems** Items to input of the recipe.
+- **int craftTime** Crafting time for machine to process
 
-## Aggiunta
+## Adding
 
 ```zenscript
 mods.steamagerevolution.Vat.addRecipe(ILiquidStack[] input, IIngredient[] inputItems, ILiquidStack output, int craftTime);
 mods.steamagerevolution.Vat.addRecipe([<liquid:tin>*144, <liquid:copper>*144], [<ore:coal>, <ore:cobblestone>], <liquid:steel>*288, 200, 200);
 ```
 
-## Rimozione
+## Removing
 
 ```zenscript
 mods.steamagerevolution.Vat.removeRecipe(ILiquidStack output);

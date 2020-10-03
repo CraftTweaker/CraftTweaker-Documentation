@@ -1,12 +1,12 @@
 # Bioreactor
 
-### Importazione
+### Importing
 
 ```zenscript
 import mods.industrialforegoing.BioReactor;
 ```
 
-### Aggiunta
+### Adding
 
 ```zenscript
 BioReactor.add(IItemStack input);
@@ -14,7 +14,7 @@ BioReactor.add(IItemStack input);
 BioReactor.add(<minecraft:diamond>);
 ```
 
-### Rimozione
+### Removing
 
 ```zenscript
 BioReactor.remove(IItemStack input);

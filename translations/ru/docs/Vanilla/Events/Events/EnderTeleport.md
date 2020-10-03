@@ -1,7 +1,7 @@
-# ЭндерТелепорт
+# EnderTeleport
 
-Событие EnderTeleport запускается всякий раз, когда эндерман или шалкер телепорт.  
-Также стреляется, когда игрок телепортируется с помощью enderpearl (возможно, что другие моды тоже огоняются.)
+The EnderTeleport event is fired whenever an enderman or shulker teleport.  
+It is also fired whenever a player teleports using an enderpearl (it is possible that other mods fire this event as well.)
 
 ## Класс события
 
@@ -11,18 +11,18 @@ You can, of course, also [import](/AdvancedFunctions/Import/) the class before a
 
 ## Наследование от интерфейсов событий
 
-События LivingEntityUseItem реализуют следующие интерфейсы и также могут вызвать все их методы/getters/setters:
+LivingEntityUseItem Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
 
 - [ILivingEvent](/Vanilla/Events/Events/ILivingEvent/)
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 
 ## Геттеры/сеттеры
 
-Во время события можно извлечь/задать следующую информацию:
+The following information can be retrieved/set during the event:
 
-| Геттеры      | ZenSetter    | Тип    |
-| ------------ | ------------ | ------ |
-| `targetX`    | `targetX`    | double |
-| `targetY`    | `targetY`    | double |
-| `целевой Z`  | `целевой Z`  | double |
-| `Урон атаки` | `Урон атаки` | float  |
+| ZenGetter      | ZenSetter      | Тип    |
+| -------------- | -------------- | ------ |
+| `targetX`      | `targetX`      | double |
+| `targetY`      | `targetY`      | double |
+| `targetZ`      | `targetZ`      | double |
+| `attackDamage` | `attackDamage` | float  |

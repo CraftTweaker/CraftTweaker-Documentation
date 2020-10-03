@@ -1,28 +1,28 @@
 # EnderTeleport
 
-L'evento EnderTeleport viene sparato ogni volta che un enderman o shulker teletrasporta.  
-È anche sparato ogni volta che un giocatore teletrasporta utilizzando un enderpearl (è possibile che anche altre mod sparino questo evento.)
+The EnderTeleport event is fired whenever an enderman or shulker teleport.  
+It is also fired whenever a player teleports using an enderpearl (it is possible that other mods fire this event as well.)
 
-## Classe Evento
+## Event Class
 
-Dovrai lanciare l'evento nell'intestazione della funzione come questa classe:  
-`crafttweaker.event. nderTeleportEvent`  
-È possibile, naturalmente, anche [importare](/AdvancedFunctions/Import/) la classe prima e utilizzare quel nome allora.
+You will need to cast the event in the function header as this class:  
+`crafttweaker.event.EnderTeleportEvent`  
+You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
 
-## Estensioni dell'interfaccia evento
+## Event interface extensions
 
-LivingEntityUseItem Events implementare le seguenti interfacce e sono in grado di chiamare tutti i loro metodi/getter/setters pure:
+LivingEntityUseItem Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
 
 - [ILivingEvent](/Vanilla/Events/Events/ILivingEvent/)
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 
 ## ZenGetters/ZenSetters
 
-Le seguenti informazioni possono essere recuperate/impostate durante l'evento:
+The following information can be retrieved/set during the event:
 
-| ZenGetter       | ZenSetter       | Tipo         |
-| --------------- | --------------- | ------------ |
-| `targetX`       | `targetX`       | doppia       |
-| `targetY`       | `targetY`       | doppia       |
-| `targetZ`       | `targetZ`       | doppia       |
-| `attacco Danno` | `attacco Danno` | galleggiante |
+| ZenGetter      | ZenSetter      | Type   |
+| -------------- | -------------- | ------ |
+| `targetX`      | `targetX`      | double |
+| `targetY`      | `targetY`      | double |
+| `targetZ`      | `targetZ`      | double |
+| `attackDamage` | `attackDamage` | float  |

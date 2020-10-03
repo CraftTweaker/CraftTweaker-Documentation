@@ -1,8 +1,8 @@
-# Manipulador de material
+# Material Bracket Handler
 
-El único propósito del manejador de soportes Material Bracket es proporcionarle [Representaciones de Material](/Mods/ContentTweaker/Tinkers_Construct/Material/).
+The Material Bracket handler's sole purpose is providing you with [Material Representations](/Mods/ContentTweaker/Tinkers_Construct/Material/).
 
-Utilizas el manejador de corchetes como este:
+You use the trait bracket handler like this:
 
 ```zenscript
 <ticonmaterial:identifier>
@@ -10,4 +10,4 @@ Utilizas el manejador de corchetes como este:
 <ticonmaterial:iron>
 ```
 
-Si se encuentra el material, se devolverá un objeto de representación de material. Por favor, consulte la [entrada respectiva del Wiki](/Mods/ContentTweaker/Tinkers_Construct/Material/) para obtener más información sobre lo que puede hacer con estos.
+If the Material is found, this will return an Material Representation Object. Please refer to the [respective Wiki entry](/Mods/ContentTweaker/Tinkers_Construct/Material/) for further information on what you can do with these.

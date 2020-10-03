@@ -1,37 +1,37 @@
-# Empreinte de recette
+# RecipePrimer
 
-Un objet RecipePrimer est la recette actuelle. Vous pouvez obtenir un tel objet de la part du [RecipeBuilder](/Mods/ModularMachinery/Recipes/RecipeBuilder/) et utiliser ses méthodes pour donner les recettes et les sorties.
+A RecipePrimer Object is the actual recipe. You can get such an object from the [RecipeBuilder](/Mods/ModularMachinery/Recipes/RecipeBuilder/) and use its methods to actually give the recipe ins and outs and stuff.
 
-## Importation du paquet
+## Importing the package
 
-Il pourrait vous être nécessaire d'importer le paquet si vous rencontrez des problèmes (comme lancer un [Tableau](/AdvancedFunctions/Arrays_and_Loops/)), alors mieux être sûr que désolé et ajouter l'importation.  
-`import mods.modularmachinery.RecipePrimer.`
+It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
+`import mods.modularmachinery.RecipePrimer;`
 
-## Méthodes Zen
+## ZenMethods
 
-Chacune de ces méthodes fait deux choses : tout d'abord, il modifie l'objet, puis il retourne l'objet lui-même (comme un autre RecipePrimer).  
-Cela signifie que vous pouvez soit appeler chaque méthode par vous-même, ou faites un appel où vous ajoutez chaque morceau de code (exemple ci-dessous).
+Each of these methods does two things: First, it modifies the object, then it returns the object itself (as another RecipePrimer).  
+This means you can either call each method on its own, or make one call where you append each pieces of code (example below).
 
-### Définition de la chance
+### Setting the chance
 
 ```zenscript
-setChance(chance flottante);
+setChance(float chance);
 ```
 
-### Ajout des exigences en matière d'énergie et de carburant
+### Adding Energy and fuel requirements
 
 ```zenscript
 addEnergyPerTickInput(int perTick);
 addEnergyPerTickOutput(int perTick);
 
 
-//Typo? C'est ce que saisit le code source, si cela ne fonctionne pas, essayez d'entrer
+//Typo? This is what the sourcecode sais, if it doesn't work try Input
 addFuelItemInout(int requiredTotalBurnTime);
 ```
 
-### Ajout des entrées
+### Adding inputs
 
-Vous pouvez ajouter [IItemStacks](/Vanilla/Items/IItemStack/), [IOreDictEntries](/Vanilla/OreDict/IOreDictEntry/) ou [ILiquidStacks](/Vanilla/Liquids/ILiquidStack/) en entrée.
+You can add [IItemStacks](/Vanilla/Items/IItemStack/), [IOreDictEntries](/Vanilla/OreDict/IOreDictEntry/) or [ILiquidStacks](/Vanilla/Liquids/ILiquidStack/) as input.
 
 ```zenscript
 addItemInput(IItemStack stack);
@@ -45,7 +45,7 @@ addFluidInput(ILiquidStack stack);
 
 ### Adding outputs
 
-Vous pouvez ajouter [IItemStacks](/Vanilla/Items/IItemStack/), [IOreDictEntries](/Vanilla/OreDict/IOreDictEntry/) ou [ILiquidStacks](/Vanilla/Liquids/ILiquidStack/) en sortie.
+You can add [IItemStacks](/Vanilla/Items/IItemStack/), [IOreDictEntries](/Vanilla/OreDict/IOreDictEntry/) or [ILiquidStacks](/Vanilla/Liquids/ILiquidStack/) as output.
 
 ```zenscript
 addItemOutput(IItemStack stack);
@@ -57,17 +57,17 @@ addItemOutput(IOreDictEntry oreDict, int amount);
 addFluidOutput(ILiquidStack stack);
 ```
 
-### Construire la recette
+### Building the recipe
 
-Une fois que vous avez fait vos changements ci-dessus, vous devez construire la recette pour qu'elle fasse quelque chose.
+After you have done your changes above, you need to build the recipe so that it will actually do something.
 
 ```zenscript
 build();
 ```
 
-## Exemple
+## Example
 
-Vous pouvez appeler chaque méthode par vous-même, ou jouer au codegolf:
+You can either call each method on its own, or play codegolf:
 
 ```zenscript
 val reci = mods.modularmachinery.RecipeBuilder.newBuilder("recipeRegistryName", "associatedMachineRegistryName", 1000, 0);
@@ -75,7 +75,7 @@ val reci = mods.modularmachinery.RecipeBuilder.newBuilder("recipeRegistryName", 
 reci.addEnergyPerTickInput(100);
 reci.addItemInput(<ore:ingotIron>);
 reci.addItemOutput(<minecraft:gold_ingot>);
-reci. uild();
+reci.build();
 
 
 

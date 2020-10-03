@@ -1,30 +1,30 @@
-# Direttiva Sperimentale Sul Preprocessore Delle Bandiere
+# Experimental Flags Preprocessor Directive
 
-Questa direttiva preprocessore abilita alcuni comportamenti sperimentali per alcune funzionalità ZenScript.
+This preprocessor directive enables some experimental behavior for certain ZenScript functionalities.
 
-Far parte del progetto ZenScriptX e per la natura sperimentale del progetto in sé, alcune caratteristiche possono richiedere ampie prove sul lato compilatore o causare altri effetti collaterali indesiderati. Per questi motivi, alcune caratteristiche sono state ritenute sperimentali e non sono state abilitate di default durante la compilazione di uno script.
+Being part of the ZenScriptX project, and due to the experimental nature of the project in itself, some features may require extensive testing on the compiler side or cause other unintended side effects. For these reasons, some features have been deemed experimental and are not enabled by default when compiling a script.
 
-Inoltre, alcune bandiere sperimentali possono non funzionare e sono fornite solo come suggerimenti di funzioni imminenti. Si dovrebbe sempre fare riferimento alla documentazione per sapere se un determinato flag è usato o meno. On the other hand, experimental flags will never be removed, meaning that features that are integrated into the "non-experimental" part of ZenScriptX won't have their flags disabled. Ciò consente agli script di essere compatibili con i rilasci più recenti del progetto ZenScriptX senza che richieda una riscrittura.
+Moreover, some experimental flags may outright not work, and are provided only as hints of upcoming features. You should always refer to the documentation to know whether a certain flag is used or not. On the other hand, experimental flags will never be removed, meaning that features that are integrated into the "non-experimental" part of ZenScriptX won't have their flags disabled. This allows scripts to be compatible with newer releases of the ZenScriptX project without requiring a rewrite.
 
-## Utilizzo della direttiva
-Utilizzare la direttiva è semplice come aggiungere `#sperimentale` all'inizio del file, e specificando un elenco di flag che rappresentano il comportamento da abilitare subito dopo la dichiarazione.
+## Using the directive
+Using the directive is as simple as adding `#experimental` to the beginning of the file, and specifying a list of flags that represent behavior to enable right after the declaration.
 
-Ogni bandiera deve essere separata dagli altri con spazi e **deve** iniziare con `-E`. Questo identifica la bandiera come una bandiera sperimentale. In seguito a tale dichiarazione, occorre inserire una serie di lettere e numeri che identificano il contrassegno specifico . Fare riferimento alla lista in questa documentazione per conoscere tutti i flag disponibili.
+Every flag must be separated by the others with spaces and it **has to** begin with `-E`. This identifies the flag as an experimental flag. Following that declaration, a series of letters and numbers that identify the specific flag should be entered. Refer to the list in this documentation to know all the available flags.
 
-Ad esempio, immaginiamo di voler abilitare le bandiere `soo` e `wd4`. La linea corrispondente sarebbe la seguente:
+As an example, imagine we wanted to enable the `soo` and `wd4` flags. The corresponding line would be:
 ```zenscript
-#sperimentale -Esoo -Ewd4
+#experimental -Esoo -Ewd4
 ```
 
-## Elenco delle bandiere
-| Nome contrassegno | Stato Attuale | Descrizione                                                                             |
-| ----------------- | ------------- | --------------------------------------------------------------------------------------- |
-| `soo`             | Disabilitato  | Abilita il sovraccarico dell'operatore per le sequenze                                  |
-| `saia`            | Disabilitato  | Fornisce un argomento `automatico` per le funzioni con un singolo parametro in Sequenze |
-| `sao`             | Abilitato     | Consente la creazione di `Sequenze` da argomenti array                                  |
+## List of flags
+| Flag name | Current Status | Description                                                                           |
+| --------- | -------------- | ------------------------------------------------------------------------------------- |
+| `soo`     | Disabled       | Enables operator overloading for Sequences                                            |
+| `saia`    | Disabled       | Provides an automatic `it` argument to functions with a single parameter in Sequences |
+| `sao`     | Enabled        | Allows creation of `Sequences` from array arguments                                   |
 
-Il significato dello stato attuale è il seguente:
+The meaning for Current Status are the following:
 
-- **Disabilitato** identifica un flag che esiste ma non ha azioni corrispondenti a causa del fatto che il backend non è pronto. E ' fornito solo a causa di "roadmap", consentendo agli sviluppatori di sapere quali nuove funzionalità saranno disponibili nel prossimo futuro.
-- **Abilitato** identifica un flag che esiste e ha un effetto sul file.
-- **Deprecated** identifies a flag that shouldn't be used anymore due to a feature reaching maturity and not being considered experimental anymore. Esso è tuttavia fornito come una forma di retrocompatibilità.
+- **Disabled** identifies a flag that exists but has no corresponding actions due to the backend not being ready. It is provided merely due to "roadmap", allowing developers to know what new features will be available in the near future.
+- **Enabled** identifies a flag that exists and has an effect on the file.
+- **Deprecated** identifies a flag that shouldn't be used anymore due to a feature reaching maturity and not being considered experimental anymore. It is nevertheless provided as a form of backwards compatibility.

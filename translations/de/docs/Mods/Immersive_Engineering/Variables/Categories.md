@@ -1,17 +1,17 @@
-# Kategorien
+# Categories
 
-## Informationen
+## Information
 
-Die Blaupause hat einen erforderlichen String-Parameter namens "Kategorie". Dieser String erlaubt es dir, deine Rezepte zu einer bestimmten Blaupausenkategorie zu kategorisieren.
+The Blueprint has a Required String parameter called "Category". This String allows you to "Categorise" your recipes to a specific Blueprint Category.
 
-Gibt dieser String eine Kategorie zurück, die nicht bereits existiert, wird diese Kategorie und eine entsprechende Blaupause erstellt. Wenn es eine existierende Kategorie findet, wird es das Rezept zu dieser Kategorie hinzufügen.
+If this string returns a Category not already existing it'll create that Category and an appropriate Blueprint. If it finds an existing Category it'll add the recipe to said Category.
 
-### Bestehende Kategorien
+### Existing Categories
 
-| Kategorie: | Name:         | Lokalisierter Name:       |
-| ---------- | ------------- | ------------------------- |
-| Kategorie  | komponenten   | Komponenten herstellen    |
-| Kategorie  | formen        | Metallpressenformen       |
-| Kategorie  | kugel         | Gewöhnliche Projektile    |
-| Kategorie  | specialBullet | Spezialisierte Projektile |
-| Kategorie  | elektrode     | Bogen-Ofen Elektrode      |
+| Category: | Name:         | Localized Name:         |
+| --------- | ------------- | ----------------------- |
+| Category  | components    | Crafting Components     |
+| Category  | molds         | Metal Press Molds       |
+| Category  | bullet        | Common Projectiles      |
+| Category  | specialBullet | Specialized Projectiles |
+| Category  | electrode     | Arc Furnace Electrodes  |

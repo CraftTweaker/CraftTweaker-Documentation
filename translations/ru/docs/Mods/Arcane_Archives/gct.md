@@ -4,13 +4,13 @@
 import mods.arcanearchives.GCT;
 ```
 
-#### Методы
+#### Methods
 
 ```zenscript
 void addRecipe(
-  string name, // название рецепта
-  IItemStack, // вывод как элемент
-  IIngredient[] входов // массив ингредиентов
+  string name,         // the recipe name
+  IItemStack output,   // the output as an itemstack
+  IIngredient[] inputs // the inputs as an array of ingredients
 );
 ```
 
@@ -18,7 +18,7 @@ void addRecipe(
 
 ```zenscript
 void removeRecipe(
-  IItemStack output // удаляемый элемент (количество должно совпадать)
+  IItemStack output // the output itemstack to be removed (quantity must match)
 );
 ```
 
@@ -26,9 +26,9 @@ void removeRecipe(
 
 ```zenscript
 void replaceRecipe(
-  строковое имя, // имя рецепта (должно уже существовать)
-  вывод IItemStack, // вывод как элемент
-  IIngredient[] входов // массив ингредиентов
+  string name,         // the recipe name (must already exist)
+  IItemStack output,   // the output as an itemstack
+  IIngredient[] inputs // the inputs as an array of ingredients
 );
 ```
 
@@ -37,14 +37,14 @@ void replaceRecipe(
 ### Примеры
 
 ```zenscript
-импорт mods.arcanearchives.GCT;
+import mods.arcanearchives.GCT;
 
-// Удаляем рецепт сияющей пыли
+// Removes the recipe for radiant dust
 GCT.removeRecipe(<arcanearchives:radiant_dust>*2);
 
-// Добавляет новый рецепт для сияющей пыли
-GCT. ddRecipe("radiant_dust", <arcanearchives:radiant_dust>*2, [<minecraft:flint>, <arcanearchives:raw_quartz>]);
+// Adds a new recipe for radiant dust
+GCT.addRecipe("radiant_dust", <arcanearchives:radiant_dust>*2, [<minecraft:flint>, <arcanearchives:raw_quartz>]);
 
-// Заменяет рецепт сияющего кварца в форме без нарушения экрана GCT
-GCT. eplaceRecipe("shaped_quartz", <arcanearchives:shaped_quartz>, [<arcanearchives:raw_quartz>*10]);
+// Replaces the shaped radiant quartz recipe without disordering the GCT screen
+GCT.replaceRecipe("shaped_quartz", <arcanearchives:shaped_quartz>, [<arcanearchives:raw_quartz>*10]);
 ```

@@ -1,28 +1,28 @@
-# 冶炼加成
+# Smelting bonus
 
-此软件包允许您将项目添加到/从冶炼红包列表中移除。  
-冶炼加成列表是每当一个恶魔炉烧焦一件物品时会被询问的。
+This package allows you to add and remove items to/from the Smelting bonus list.  
+The Smelting Bonus list is queried whenever an infernal furnace cooks an item.
 
 ## 导入相关包
 
-您可以 [导入](/AdvancedFunctions/Import/) 个软件包及其方法来方便检索这些方法。
+You can [import](/AdvancedFunctions/Import/) the package and its methods to facilitate the retrival of the methods.
 
 ```zenscript
-导入 mods.thaumcraft.SmeltingBonus;
+import mods.thaumcraft.SmeltingBonus;
 ```
 
-## 添加项目
+## Adding items
 
-注意：输入必须是 IItemStack 或 IOreDictEnter
+Notice: Input needs to be either an IItemStack or an IOreDictEntry
 
 ```zenscript
 //mods.thaumcraft.SmeltingBonus.addSmeltingBonus(IIngredient input, WeightedItemStack stack)
 mods.thaumcraft.SmeltingBonus.addSmeltingBonus(<minecraft:cobblestone>, <minecraft:button> % 20);
 ```
 
-## 删除项目
+## Removing items
 
-注意：输入必须是 IItemStack 或 IOreDictEnter
+Notice: Input needs to be either an IItemStack or an IOreDictEntry
 
 ```zenscript
 //mods.thaumcraft.SmeltingBonus.removeSmeltingBonus(IIngredient input, IItemStack stack);

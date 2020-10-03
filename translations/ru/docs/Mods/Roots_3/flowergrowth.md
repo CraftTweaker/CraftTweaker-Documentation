@@ -4,11 +4,11 @@
 import mods.roots.FlowerGrowth;
 ```
 
-#### Методы
+#### Methods
 
 ```zenscript
 void removeRecipe(
-  string name // Имя рецепта, который вы хотите удалить
+  string name // The name of the recipe you wish to remove
 );
 ```
 
@@ -16,8 +16,8 @@ void removeRecipe(
 
 ```zenscript
 void addRecipeBlockState(
-  строковое имя, // Имя рецепта, который вы добавляете
-  состояние IBlockState // Состояние блока цветка
+  string name,      // The name of the recipe that you're adding
+  IBlockState state // The state of the block of the flower
 );
 ```
 
@@ -25,9 +25,9 @@ void addRecipeBlockState(
 
 ```zenscript
 void addRecipeBlock(
-  строковое имя, // Имя рецепта, который вы добавляете
-  блок IBlock, // Блок цветка, размещаемый
-  int meta // Мета состояния цветного блока
+  string name,  // The name of the recipe that you're adding
+  IBlock block, // The block of the flower to be placed
+  int meta      // The meta of the state of the flower block
 );
 ```
 
@@ -38,16 +38,16 @@ void addRecipeBlock(
 ```zenscript
 import mods.roots.FlowerGrowth;
 
-// Удаляем рецепт по умолчанию для dandelion
+// Removes the default recipe for dandelion
 FlowerGrowth.removeRecipe("dandelion");
 
-// Добавляет белый цветок Botania, используя состояние блока
-Цветок Growth. ddRecipeBlockState("mystical_white_flower", <blockstate:botania:flower:color=white>);
+// Adds a Botania white flower using block state
+FlowerGrowth.addRecipeBlockState("mystical_white_flower", <blockstate:botania:flower:color=white>);
 
-// Добавляет цветок Ботании, используя блок + meta
+// Adds a Botania magenta flower using block + meta
 FlowerGrowth.addRecipeBlock("mystical_green_flower", <botania:flower>.asBlock(), 2);
 ```
 
-### Примечания
+### Notes
 
-В настоящее время не тестируется с двойными цветами.
+Currently untested with double-tall flowers.

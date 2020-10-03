@@ -1,22 +1,22 @@
-# Broyeur
+# Crusher
 
-ModTweaker vous permet d'ajouter ou de supprimer des Utilitaires Supplémentaires 2 Recettes Crusher
+ModTweaker allows you to add or remove Extra Utilities 2 Crusher Recipes
 
-## Appel en cours
+## Calling
 
-Vous pouvez appeler le paquet Crusher en utilisant `mods.extrautils2.Crusher`
+You can call the Crusher package using `mods.extrautils2.Crusher`
 
-## Enlèvement
+## Removing
 
 ```zenscript
 //mods.extrautils2.Crusher.remove(IItemStack outout);
 mods.extrautils2.Crusher.remove(<minecraft:redstone>);
 ```
 
-## Ajouter
+## Addition
 
 ```zenscript
-//mods.extrautils2.Crusher.add(sortie IItemStack, entrée IItemStack, @Optional IItemStack secondaryOutput, @Optional float secondaryChance);
-mods. xtrautils2.Crusher.add(<minecraft:gold_ingot> * 9, <minecraft:gold_block>, <minecraft:iron_ingot>, 0,1 F );
+//mods.extrautils2.Crusher.add(IItemStack output, IItemStack input, @Optional IItemStack secondaryOutput, @Optional float secondaryChance);
+mods.extrautils2.Crusher.add(<minecraft:gold_ingot> * 9, <minecraft:gold_block>, <minecraft:iron_ingot>, 0.1f);
 mods.extrautils2.Crusher.add(<minecraft:iron_ingot> * 9, <minecraft:iron_block>);
 ```

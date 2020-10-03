@@ -1,29 +1,29 @@
-# Requisiti:
+# Requirements:
 
-Requisiti è un concetto introdotto con Reskillable ed è essenzialmente proprietà Player-Bound per legare gli oggetti dietro.
+Requirements is a concept introduced with Reskillable and is essentially Player-Bound properties to bind items behind.
 
-Ad esempio per impostazione predefinita, Reskillable ha il supporto di Requisito per i seguenti:
+For example by default, Reskillable has Requirement support for the following:
 
-- Avanzamenti
-- Abilità
-- Tratti
+- Advancements
+- Skills
+- Traits
 
-Questo elenco può essere ulteriormente ampliato da addon. Compatibilità In-fact Skills aggiunge il supporto per GameStages come requisito valido.
+This list can be further expanded upon by addons. In-fact CompatSkills adds support for GameStages as a valid Requirement.
 
-La sintassi del requisito varia da Proprietà a Proprietà su come è implementato dall'addon. In Tipi di Requisito, sarai in grado di vedere la sintassi per tutti i Requisiti aggiunti da Abilità Reskillabili e Compatibili.
+The requirement syntax varies from Property to Property on how it's implemented by the addon. Under Requirement Types, you'll be able to see the syntax for all Requirements added by Reskillable and CompatSkills.
 
-Vedi qui sotto per un rapido elenco di collegamenti a ogni tipo di requisito.
+See below for a quick list of links to each requirement type.
 
-| Collegamenti                                                                                           |
-| ------------------------------------------------------------------------------------------------------ |
-| [Avanzamenti](/Mods/CompatSkills/Requirements/Requirement_Types/Advancements/)                         |
-| [Dimensioni](/Mods/CompatSkills/Requirements/Requirement_Types/Dimensions/)                            |
-| [Abilità Spada Dinamica](/Mods/CompatSkills/Requirements/Requirement_Types/Dynamic_Sword_Skills/)      |
-| [GameStages](/Mods/CompatSkills/Requirements/Requirement_Types/GameStages/)                            |
-| [Requisiti Invertiti](/Mods/CompatSkills/Requirements/Requirement_Types/Inverted_Requirements/)        |
-| [Oggetti](/Mods/CompatSkills/Requirements/Requirement_Types/Items/)                                    |
-| [Operatori Logici](/Mods/CompatSkills/Requirements/Requirement_Types/Logic_Operators/1_READ_ME_FIRST/) |
-| [Dizionario Minerario](/Mods/CompatSkills/Requirements/Requirement_Types/Ore_Dictionary/)              |
-| [Abilità](/Mods/CompatSkills/Requirements/Requirement_Types/Skills/)                                   |
-| [Strumento Di Raccolta-Livello](/Mods/CompatSkills/Requirements/Requirement_Types/Tool_Harvest-Level/) |
-| [Tratti](/Mods/CompatSkills/Requirements/Requirement_Types/Traits/)                                    |
+| Links                                                                                                 |
+| ----------------------------------------------------------------------------------------------------- |
+| [Advancements](/Mods/CompatSkills/Requirements/Requirement_Types/Advancements/)                       |
+| [Dimensions](/Mods/CompatSkills/Requirements/Requirement_Types/Dimensions/)                           |
+| [Dynamic Sword Skills](/Mods/CompatSkills/Requirements/Requirement_Types/Dynamic_Sword_Skills/)       |
+| [GameStages](/Mods/CompatSkills/Requirements/Requirement_Types/GameStages/)                           |
+| [Inverted Requirements](/Mods/CompatSkills/Requirements/Requirement_Types/Inverted_Requirements/)     |
+| [Items](/Mods/CompatSkills/Requirements/Requirement_Types/Items/)                                     |
+| [Logic Operators](/Mods/CompatSkills/Requirements/Requirement_Types/Logic_Operators/1_READ_ME_FIRST/) |
+| [Ore Dictionary](/Mods/CompatSkills/Requirements/Requirement_Types/Ore_Dictionary/)                   |
+| [Skills](/Mods/CompatSkills/Requirements/Requirement_Types/Skills/)                                   |
+| [Tool Harvest-Level](/Mods/CompatSkills/Requirements/Requirement_Types/Tool_Harvest-Level/)           |
+| [Traits](/Mods/CompatSkills/Requirements/Requirement_Types/Traits/)                                   |

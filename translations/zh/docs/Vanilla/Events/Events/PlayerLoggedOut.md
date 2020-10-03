@@ -1,23 +1,23 @@
-# 玩家登出
+# PlayerLoggedOut
 
-每当玩家退出时都会触发PlayerLoggedOut事件。
+The PlayerLoggedOut Event is fired whenever a player logs out.
 
-## 事件类
+## Event Class
 
 You will need to cast the event in the function header as this class:  
 `crafttweaker.event.PlayerLoggedOutEvent`  
 You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
 
-## 事件界面扩展
+## Event interface extensions
 
-PlayerLoggedIn事件实现了以下接口，并且能够调用他们所有的方法/getter/setter：
+PlayerLoggedIn Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
 
 - [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
 
 ## ZenGetters
 
-以下信息可以从事件中检索：
+The following information can be retrieved from the event:
 
 | ZenGetter | 返回值类型                                |
 | --------- | ------------------------------------ |
-| `播放器`     | [IPlayer](/Vanilla/Players/IPlayer/) |
+| `player`  | [IPlayer](/Vanilla/Players/IPlayer/) |

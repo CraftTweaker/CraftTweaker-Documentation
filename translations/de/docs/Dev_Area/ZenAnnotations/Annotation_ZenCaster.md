@@ -6,29 +6,29 @@ ZenCasters can be used to convert one type into another (e.g. [Strings to IData]
 ## Beispiel
 
 ```java
-@ZenExpansion("crafttweaker.item. ItemStack")
+@ZenExpansion("crafttweaker.item.IItemStack")
 @ZenRegister
 public class Expansion {
     @ZenMethod
     public static void print(IItemStack stack) {
-        CraftTweakerAPI. ogInfo("STACKKKK: " + Stack. etDisplayName());
+        CraftTweakerAPI.logInfo("STACKKKKK: " + stack.getDisplayName());
     }
 
     @ZenCaster
     public static IOreDictEntry asOreDict(IItemStack stack) {
-        return stack. etOres().get(0);
+        return stack.getOres().get(0);
     }
 }
 ```
 
-Wenn jemand dies jetzt nennen würde, würde er einen OreDictEintrag bekommen:
+If someone now would call this, they would get an oreDictEntry:
 
 ```zenscript
-val oreDict = <minecraft:iron_ingot> als IOreDictEntry;
+val oreDict = <minecraft:iron_ingot> as IOreDictEntry;
 ```
 
-## Welche Methoden können kommentiert werden || Zusätzliche Informationen
+## What methods can be annotated || Additional Info
 
-- Sie können alle nichtstatischen Methoden kommentieren (außer in einer ZenExpansion, da sie nur aus Statik bestehen)
-- Annotierte Methoden benötigen einen Parameter, wenn sie in einer [ZenExpansion](/Dev_Area/ZenAnnotations/Annotation_ZenExpansion/)sind, keine, wenn sie sich in einer [ZenClass](/Dev_Area/ZenAnnotations/Annotation_ZenClass/) befinden.
-- Verlassen Sie sich nicht auf ZenCaster in [ZenClasses](/Dev_Area/ZenAnnotations/Annotation_ZenClass/), sie funktionieren nur zuverlässig in [ZenErweiterungen](/Dev_Area/ZenAnnotations/Annotation_ZenExpansion/).
+- You can annotate all nonstatic methods (unless in a ZenExpansion, as they only consist of statics)
+- Annotated Methods need one parameter when in a [ZenExpansion](/Dev_Area/ZenAnnotations/Annotation_ZenExpansion/), none if they are in a [ZenClass](/Dev_Area/ZenAnnotations/Annotation_ZenClass/).
+- Don't rely on ZenCasters in [ZenClasses](/Dev_Area/ZenAnnotations/Annotation_ZenClass/), they only work reliably in [ZenExpansions](/Dev_Area/ZenAnnotations/Annotation_ZenExpansion/).

@@ -1,20 +1,20 @@
 # IEventHasResult
 
-Questa interfaccia è estesa da tutti gli Eventi che hanno un risultato che viene utilizzato dall'evento. Il risultato di un evento può essere uno dei tre valori:
+This interface is extended by all Events that has a result that is used by the event. An event's result can be one of three values:
 
-- consentire
-- nega
-- predefinito
+- allow
+- deny
+- default
 
-Il significato di questi fattori dipende dal contesto. In generale, negare un evento impedisce che si svolga un'azione specifica relativa all'evento (anche se non era garantito che si svolgesse). Allo stesso modo, permettere un evento costringerà un comportamento (anche se non era garantito). Predefinito fa sì che l'evento continui con la sua logica normale. Non tutti gli eventi usano tutti i risultati.
+The meaning of these is dependent on context. Generally, denying an event prevents a specific event-related action from taking place (even if it wasn't guaranteed to take place). Likewise, allowing an event will force a behaviour to take place (even if it wasn't guaranteed). Default simply causes the event to continue with its normal logic. Not all events use every result.
 
-## Importare la classe
-Potrebbe essere necessario [importare](/AdvancedFunctions/Import/) la classe per evitare errori.  
-`importare crafttweaker.event.IEventHasResult;`
+## Importing the class
+It might be required to [import](/AdvancedFunctions/Import/) the class to avoid errors.  
+`import crafttweaker.event.IEventHasResult;`
 
-## Cosa si può fare con loro?
+## What can be done with them?
 
-- `event.result` Getter, restituisce un valore stringa di `predefinito`, `deny` or `allow`
-- `event.deny()` Method, imposta il risultato dell'evento a `deny`
-- `event.allow()` Method, imposta il risultato dell'evento a `allow`
-- `event.default()` Method, imposta il risultato dell'evento a `default`
+- `event.result` Getter, returns a string value of `default`, `deny` or `allow`
+- `event.deny()` Method, sets the event's result to `deny`
+- `event.allow()` Method, sets the event's result to `allow`
+- `event.default()` Method, sets the event's result to `default`

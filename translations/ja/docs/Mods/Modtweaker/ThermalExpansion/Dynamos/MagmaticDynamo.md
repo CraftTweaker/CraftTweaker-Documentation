@@ -1,21 +1,21 @@
 # Magmatic Dynamo
 
-## パッケージをインポート
+## Import the package
 
-メソッド呼び出しを短くするには、 [パッケージを](/AdvancedFunctions/Import/) インポートすることができます。
+To shorten method calls you can [import](/AdvancedFunctions/Import/) the package like so:
 
 ```zenscript
 import mods.thermalexpansion.MagmaticDynamo;
 ```
 
-## 燃料を追加
+## Add Fuel
 
 ```zenscript
 //mods.thermalexpansion.MagmaticDynamo.addFuel(ILiquidStack stack, int energy);
 mods.thermalexpansion.MagmaticDynamo.addFuel(<liquid:water>, 13);
 ```
 
-## 燃料を取り除く
+## Remove Fuel
 
 ```zenscript
 //mods.thermalexpansion.MagmaticDynamo.removeFuel(ILiquidStack stack);

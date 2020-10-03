@@ -1,15 +1,15 @@
 # `Math`
 
-`Math` は、基本的な数学関数のセットのためのコンテナクラスである。 詳細については、 [コンセプト](/Mods/Boson/Math/Concept/) のページを参照してください。
+`Math` is the container class for a set of basic mathematical functions. Refer to the [Concept](/Mods/Boson/Math/Concept/) page for more information.
 
-## クラスの詳細
-ZenScriptX プロジェクトの一部であるため、クラスの完全修飾名は `zenscriptx.math.Math` です。
+## Class Details
+Being part of the ZenScriptX Project, the fully qualified name for the class is `zenscriptx.math.Math`.
 
-## 新しいインスタンスの作成
-このクラスは単なる数学関数の保持者であるため、新しいインスタンスを作成することはできません。 むしろ、すべての メソッドはクラス自体で呼び出される必要があります。
+## Creating a New Instance
+Since this class is just a holder of mathematical functions, it is impossible to create a new instance. Rather, all methods should be invoked on the class itself.
 
 ## メソッド
-スペースを節約するために、メソッドは1つのスニペットに表示されます。 操作の種類に応じてグループ化された は、メソッドが何をするべきか、および を使用する際に保持すべきその他の条件について、上記のコメントで実行します。 さらに、それらが互いの近くの過負荷なら 複数のメソッドをグループ化することができます (i. を選択します。これらは同じことを行いますが、異なる引数または戻り値の型があります。
+To save up on space, the methods will be presented in a single snippet, grouped according to the kind of operation they perform with a comment above outlining what the method is supposed to do and any other conditions that should be kept into consideration when using the method. Moreover, multiple methods may be grouped together if they're close overloads of one another (i.e. they do the same thing, but they have different argument or return types).
 
 ```zenscript
 # this method does something
@@ -20,8 +20,8 @@ function method(argument as float, argument2 as bool) as float;
 function method2() as bool?;
 ```
 
-### 数学的定数
-これらのメソッドは、必要に応じて他の操作で使用できる顕著な数学定数へのアクセスを提供します。 それらの精度は、コンピュータ内で使用される表現に従って可能な限り最大の精度です (i. を選択します。 ダブル `で表現可能な最大`の正確な数字です。
+### Mathematical Constants
+These methods provide access to notable mathematical constants that may be used across other operations, if needed. Their precision is the biggest possible precision according to the used representation inside computers (i.e. the most accurate number representable with a `double`).
 
 ```zenscript
 # Obtains the value of PI, which is the ratio of a circumpherence of a circle to its diameter, approximately 3.14159
@@ -31,8 +31,8 @@ function pi() as double;
 function e() as double;
 ```
 
-### 三角関数
-三角関数は、角度で動作し、 直角三角形の2つの辺の長さの比率に関連付ける関数です。 全ての逆関数を使っています
+### Trigonometric Functions
+Trigonometric functions are functions that work with angles and relate them to the ratio of two side lenghts of a right-angled triangle, along with all their inverse functions.
 
 ```zenscript
 # Computes the sine of the angle passed in, which MUST be in RADIANS
@@ -88,8 +88,8 @@ function atan2(y as double, x as double) as double;
 function atan2(y as float, x as float) as float;
 ```
 
-### 双曲線関数
-双曲線関数は、円ではなく双曲線用に定義された三角関数のアナログです。
+### Hyperbolic Functions
+Hyperbolic functions are analogs of the trigonometric functions, defined for a hyperbola rather than on a circle.
 
 ```zenscript
 # Computes the hyperbolic sine of the given value
@@ -117,8 +117,8 @@ function atanh(x as double) as double;
 function atanh(x as float) as float;
 ```
 
-### 右角三角形関数
-これらは直角三角形で計算できる追加関数です 三角関数 に加えて、三角形の角度では動作しません。
+### Right-Angled Triangle Functions
+These are some additional functions that can be computed on a right-angled triangle, in addition to the trigonometric functions, but that do not operate on the angles of the triangle.
 
 ```zenscript
 # Computes the length of the hypothenuse of the triangle with the Pythagorean's theorem, making sure no overflow or underflow happens during the computation
@@ -126,8 +126,8 @@ function hypot(x as double, y as double) as double;
 function hypot(x as float, y as float) as float;
 ```
 
-### 力とルート
-これらの関数は、 乗算またはその後の減算の標準的な方法よりも速く、より効率的な方法で力と根を計算することができます。
+### Powers and Roots
+These functions allow to compute powers and roots in a quicker and more efficient way than the standard method of multiplications or subsequent subtraction.
 
 ```zenscript
 # Computes the positive square root of the given value
@@ -150,7 +150,7 @@ function pow(base as float, exp as int) as float;
 ```
 
 ### Exponential Functions
-指数関数は、 `y = a * b^x` の形式をとる関数です。
+An exponential function is a function that takes the form of `y = a * b^x`.
 
 ```zenscript
 # Computes Euler's number (e) raised to the power of x
@@ -162,8 +162,8 @@ function expm1(x as double) as double;
 function expm1(x as float) as float;
 ```
 
-### 対数関数
-対数関数は、一般に対数として知られている、指数関数の逆関数です。 Differently from other functions, a logarithm is defined according to a base, which represents the number which has to be raised to the resulting power to obtain the argument of the logarithm itself.
+### Logarithimic Functions
+A logarithmic function, commonly known as logarithm, is the inverse function of the exponential function. Differently from other functions, a logarithm is defined according to a base, which represents the number which has to be raised to the resulting power to obtain the argument of the logarithm itself.
 
 ```zenscript
 # Computes the logarithm of x to the given base
@@ -187,8 +187,8 @@ function ln1p(x as double) as double;
 function ln1p(x as float) as float;
 ```
 
-### 丸める機能
-丸める関数は、実数を特定の整数に、ルールのセットに従ってマップする関数です。 機能に応じて。
+### Rounding functions
+A rounding function is a function that maps a real number to a specific integer number according to a set of rules, depending to the function.
 
 ```zenscript
 # Rounds the given value towards positive infinity, returning the smallest real number that is greater than or equal to x and is a mathematical integer
@@ -232,8 +232,8 @@ function roundl(x as double) as long;
 function roundl(x as float) as long;
 ```
 
-### 看板ベースの関数
-これらの関数は、ほとんどの場合または単に引数のサイン上で動作します。
+### Sign-based Functions
+These functions operate mostly or solely on the sign of the argument.
 
 ```zenscript
 # Returns the absolute value of the given value
@@ -249,8 +249,8 @@ function sign(x as int) as int;
 function sign(x as long) as long;
 ```
 
-### 比較関数
-これらの関数は、さまざまな引数を比較し、特定のルールに従ってそのうちの1つだけを返します。
+### Comparison Functions
+These functions compare the various arguments and return only one of them according to a certain set of rules.
 
 ```zenscript
 # Returns the smaller of the two given values
@@ -272,8 +272,8 @@ function clamp(x as int, min as int, max as int) as int;
 function clamp(x as long, min as long, max as long) as long;
 ```
 
-### 残りの関数
-これらの関数は、ルールのセットに従って、2つの引数間の残りの部分を計算します。
+### Remainder Functions
+These functions compute the remainder between two arguments according to a set of rules.
 
 ```zenscript
 # Computes the remainder of the division between value and div according to the IEEE 754 standard: 'r = value - (round(value / div) * div)'

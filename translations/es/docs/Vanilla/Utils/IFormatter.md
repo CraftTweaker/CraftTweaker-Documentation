@@ -1,38 +1,38 @@
 # IFormatter
 
-## Accediendo al gestor de formato de texto
+## Accessing the text formatting Handler
 
-Puede acceder al Formatting Handler usando el `format` [global keyword](/Vanilla/Global_Functions/).
+You can access the Formatting Handler using the `format` [global keyword](/Vanilla/Global_Functions/).
 
-## Formateando un texto
+## Formatting a text
 
 ### Color
 
-Puede darle un color a IFormattedText usando uno de los siguientes Colores:
+You can give an IFormattedText a color using one of the following Colors:
 
-- negro
+- black
 - darkBlue
-- verde oscuro
+- darkGreen
 - darkAqua
-- rojo oscuro
-- morado oscuro
-- oro
-- gris
-- oscuro gris
-- azul
-- verde
+- darkRed
+- darkPurple
+- gold
+- gray
+- darkGray
+- blue
+- green
 - aqua
-- rojo
-- morado claro
-- amarillo
-- blanco
+- red
+- lightPurple
+- yellow
+- white
 
-### Estilo
+### Style
 
-Puede dar un IFormattedText (o más) de los siguientes estilos de formato:
+You can give an IFormattedText one (or more) of the following formatting styles:
 
-- oscurecido
+- obfuscated
 - bold
-- hacer huelga
-- subrayado
+- strikethrough
+- underline
 - italic

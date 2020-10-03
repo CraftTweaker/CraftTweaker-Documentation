@@ -1,35 +1,35 @@
-# Zasilane Rzeczy: Wypalacz cieczy :: Paliwo
+# Powered Thingies :: Fluid Burner :: Fuel
 
-### Importowanie
-
-```zenscript
-importowanie mods.poweredthingies.Tweaker.fluidBurnerFuelTweaker jako paliwo;
-```
-
-### Lista kluczy, usuwanie przepisów przez klucz, czyszczenie
+### Importing
 
 ```zenscript
-paliwo().logKeys()
-paliwo().removeRecipe('płyn:fluid_lava') // sprawdź <logKeys> wyjście ważnych kluczy
-paliwo().clear()
+import mods.poweredthingies.Tweaker.fluidBurnerFuelTweaker as fuel;
 ```
 
-### Dodawanie przepisu
-
-##### Podpis
+### Listing Keys, Removing Recipes by Key, Clearing
 
 ```zenscript
-addFuel(płyn: ILiquidStack, ticks: Int)
+fuel().logKeys()
+fuel().removeRecipe('liquid:fluid_lava') // check <logKeys> output for valid keys
+fuel().clear()
 ```
 
-`ticki` reprezentują liczbę ticków, na którą spali określone paliwo.
+### Adding Recipe
 
-##### Przykład
+##### Signature
 
 ```zenscript
-paliwo().addFuel(<liquid:tf-sewage> * 50, 100);
+addFuel(fluid: ILiquidStack, ticks: Int)
 ```
 
-### Uwagi
+`ticks` represents the number of ticks the specified fuel will burn for.
 
-Wszystkie te działania zostaną zapisane w pamięci podręcznej i uruchomione po zakończeniu rejestracji domyślnego rejestru dla tego komputera (w tym tych z niestandardowych jsonów).
+##### Example
+
+```zenscript
+fuel().addFuel(<liquid:tf-sewage> * 50, 100);
+```
+
+### Notes
+
+All of these actions will get cached and ran after the default registry for this machine has finished registering all recipes (including the ones from the custom jsons).

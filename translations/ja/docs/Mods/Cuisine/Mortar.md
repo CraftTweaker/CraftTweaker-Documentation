@@ -1,4 +1,4 @@
-# 迫撃砲
+# Mortar
 
 ## 加算
 
@@ -11,7 +11,7 @@ Mortar.add(IItemStack[] inputs, IItemStack output, int step);
 Mortar.add([<item:minecraft:dirt>, <item:minecraft:cobblestone>], <item:minecraft:diamond>, 3);
 ```
 
-## 削除
+## Removal
 
 ```zenscript
 import mods.cuisine.Mortar;
@@ -21,7 +21,7 @@ Mortar.remove(IItemStack[] input);
 
 Mortar.remove([<item:minecraft:dirt>, <item:minecraft:cobblestone>]);
 
-// 出力で削除します。
+// Remove by output.
 Mortar.removeByOutput(IIngredient output);
 
 Mortar.removeByOutput(<item:minecraft:diamond>);
@@ -32,6 +32,6 @@ Mortar.remove(String id);
 
 Mortar.remove("recipe_name");
 
-// すべてを削除します！
+// Remove everything!
 Mortar.removeAll();
 ```

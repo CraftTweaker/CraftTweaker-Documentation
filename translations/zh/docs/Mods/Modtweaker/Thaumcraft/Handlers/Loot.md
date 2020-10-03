@@ -1,36 +1,36 @@
-# 战利品包
+# Loot Bags
 
-此软件包允许您添加和从战利品袋中移除项目。
+This package allows you to add and remove items to/from the Loot Bags.
 
 ## 导入相关包
 
-您可以 [导入](/AdvancedFunctions/Import/) 个软件包及其方法来方便检索这些方法。
+You can [import](/AdvancedFunctions/Import/) the package and its methods to facilitate the retrival of the methods.
 
 ```zenscript
-导入 mods.thaumcraft.LootBag;
+import mods.thaumcraft.LootBag;
 ```
 
-## 取款类型
+## Loot types
 
-您需要提供一个包含一个或多个数字的数组，从0到2(包含)到函数。  
-决定受影响的抢劫包类型。
+You need to provide an array of one or multiple numbers from 0 to 2 (inclusive) to the functions.  
+Those determine the type of lootbag to be affected.
 
-- 0：常用
-- 1： 不寻常的
-- 2： 稀有度
+- 0: Common
+- 1: Uncommon
+- 2: Rare
 
-## 添加项目
+## Adding items
 
-注意：金币价值为2000，钻石价值为50。
+Notice: Gold coins have a value of 2000, diamonds are 50.
 
 ```zenscript
-//mods.thaumcraft.LootBag.addLoot(WeightedItemStack stack, int[……]bagTypes)
+//mods.thaumcraft.LootBag.addLoot(WeightedItemStack stack, int[] bagTypes)
 mods.thaumcraft.LootBag.addLoot(<minecraft:dirt>%20000, [0,1,2]);
 ```
 
-## 删除项目
+## Removing items
 
 ```zenscript
-//mods.thaumcraft.LootBag.removeLoot(IItemStack stack, int[……]pages);
+//mods.thaumcraft.LootBag.removeLoot(IItemStack stack, int[] bagTypes);
 mods.thaumcraft.LootBag.removeLoot(<minecraft:gold_nugget>, [1,2]);
 ```

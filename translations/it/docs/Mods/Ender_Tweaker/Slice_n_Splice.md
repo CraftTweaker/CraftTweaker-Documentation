@@ -1,20 +1,20 @@
-# Fetta 'n' Splice
+# Slice 'n' Splice
 
-## Pacchetto
+## Package
 
 `import mods.enderio.SliceNSplice;`
 
-## Metodi
+## Methods
 
-**- [IItemStack](/Vanilla/Items/IItemStack/) output** Il risultato della ricetta.
+**- [IItemStack](/Vanilla/Items/IItemStack/) output** The result of the recipe.
 
-**- [Ingresso IIngrediente](/Vanilla/Variable_Types/IIngredient/)[]** Gli ingredienti. Deve essere compreso tra 1 e 6 ingredienti.
+**- [IIngredient](/Vanilla/Variable_Types/IIngredient/)[] input** The ingredients. Must be between 1 and 6 ingredients.
 
-**- int energyCost** Quanto FE usa la ricetta. Predefinito a 5000.
+**- int energyCost** How much FE the recipe uses. Defaults to 5000.
 
-**- float xp** L'xp è concesso da questa ricetta. Non può essere negativo.
+**- float xp** The xp is granted from this recipe. May not be negative.
 
-## Addizione
+## Addition
 
 ```zenscript
 mods.enderio.SliceNSplice.  
@@ -24,7 +24,7 @@ mods.enderio.SliceNSplice.
 addRecipe(<minecraft:emerald>, [<minecraft:diamond>, <minecraft:gold_ingot>, <minecraft:iron_ingot>], 5000, 0);
 ```
 
-## Rimozione
+## Removal
 
 ```zenscript
 mods.enderio.SliceNSplice.removeRecipe(IItemStack output);

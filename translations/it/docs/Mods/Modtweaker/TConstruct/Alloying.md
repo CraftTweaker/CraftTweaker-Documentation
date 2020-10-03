@@ -1,19 +1,19 @@
-# Leghe
+# Alloying
 
-Il pacchetto `Alloy` consente di aggiungere o rimuovere ricette Lega.
+The `Alloy` package allows you to add or remove Alloy recipes.
 
-## Chiamata
+## Calling
 
-Puoi chiamare il pacchetto Lega usando `mods.tconstruct.Alloy`
+You can call the Alloy package using `mods.tconstruct.Alloy`
 
-## Aggiungi Ricette Leghe Metalliche
+## Add Alloy Recipes
 
 ```zenscript
 //mods.tconstruct.Alloy.addRecipe(ILiquidStack output, ILiquidStack[] inputs);
 mods.tconstruct.Alloy.addRecipe(<liquid:water> * 10, [<liquid:lava> * 10, <liquid:molten_iron> * 5]);
 ```
 
-## Rimozione Ricette Leghe Metalliche
+## Removing Alloy Recipes
 
 ```zenscript
 //mods.tconstruct.Alloy.removeRecipe(ILiquidStack output);

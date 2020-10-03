@@ -2,19 +2,19 @@
 
 ## ブラケット記法
 
-### スキルブラケットハンドラー:
+### Skill Bracket Handler:
 
-    ## 例:
+    ## Example:
     <skill:resourcelocation>
     
-    ## 作業例:
+    ## Working Example:
     <skill:reskillable:agility>
     
 
-### トレイトブラケットハンドラー:
+### Trait Bracket Handler:
 
-    ## 例:
+    ## Example:
     <trait:resourcelocation>
     
-    ## 作業例:
+    ## Working Example:
     <trait:reskillable:sidestep>

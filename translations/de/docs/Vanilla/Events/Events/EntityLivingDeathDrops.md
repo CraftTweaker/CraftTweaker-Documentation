@@ -1,7 +1,7 @@
 # EntityLivingDeathDrops
 
-Das EntityLivingDeathDrops Event wird abgefeuert, wenn der Tod eines Entitäts dazu führt, dass abgeworfene Gegenstände erscheinen.  
-Es kann abgebrochen werden, um zu verhindern, dass die Entität etwas löscht.
+The EntityLivingDeathDrops Event is fired whenver an Entity's death causes dropped items to appear.  
+It can be canceled to stop the entity from dropping anything.
 
 ## Event-Klasse
 
@@ -11,7 +11,7 @@ You can, of course, also [import](/AdvancedFunctions/Import/) the class before a
 
 ## Erweiterte Event-Schnittellen
 
-PlayerDeathDrops Events implementieren die folgenden Schnittstellen und können alle ihre Methoden/Getters/Setter auch aufrufen:
+PlayerDeathDrops Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
 
 - [ILivingEvent](/Vanilla/Events/Events/ILivingEvent/)
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
@@ -20,19 +20,19 @@ PlayerDeathDrops Events implementieren die folgenden Schnittstellen und können 
 
 Die folgenden Informationen lassen sich von diesem Event (Ereignis) abrufen:
 
-| ZenGetter          | Rückgabetyp                                                  |
-| ------------------ | ------------------------------------------------------------ |
-| `drops`            | [`Liste<IEntityItem>`](/Vanilla/Entities/IEntityItem/) |
-| `Schadensquelle`   | [IDamageSource](/Vanilla/Damage/IDamageSource/)              |
-| `isRecentlyHit`    | bool                                                         |
-| `plündernde Stufe` | int                                                          |
+| ZenGetter       | Rückgabetyp                                                 |
+| --------------- | ----------------------------------------------------------- |
+| `drops`         | [`List<IEntityItem>`](/Vanilla/Entities/IEntityItem/) |
+| `damageSource`  | [IDamageSource](/Vanilla/Damage/IDamageSource/)             |
+| `isRecentlyHit` | bool                                                        |
+| `lootingLevel`  | int                                                         |
 
-## Ändern der Artikel Drops
+## Modifying the item drops
 
-Sie können entweder zur Dropliste hinzufügen oder sie komplett durch eine neue ersetzen:
+You can either add to the droplist or completely substitute it with a new one:
 
 ```zenscript
-event.drops = //Verweis auf IEntityItem Liste.
+event.drops = //reference to IEntityItem list.
 
 //event.addItem(IItemStack item);
 event.addItem(<minecraft:iron_ingot>);

@@ -1,6 +1,6 @@
-# Operatore NAND
+# NAND Operator
 
-Un cancello **NAND** è un cancello **E** invertito. Questo è lo stesso di usare l'output del cancello **E** come l'ingresso al cancello **NON**. Ciò significa che il cancello **NAND** restituisce `TRUE` in tutti i casi tranne quando entrambi gli ingressi sono anche `TRUE`.
+A **NAND** gate is an inverted **AND** gate. This is the same as using the output of the **AND** gate as the input to the **NOT** gate. This means that the **NAND** gate returns `TRUE` in all cases except for when both inputs are also `TRUE`.
 
 | Input 1 | Input 2 | Output |
 | ------- | ------- | ------:|
@@ -9,20 +9,20 @@ Un cancello **NAND** è un cancello **E** invertito. Questo è lo stesso di usar
 | 1       | 0       |      1 |
 | 1       | 1       |      0 |
 
-    Esempio vuoto:
-    nand<unk> []~[]
+    Empty Example:
+    nand|[]~[]
     
-    Esempio completato:
-    nand<unk> [reskillable:defense<unk> 24]~[reskillable:agility<unk> 24]
+    Filled-In Example:
+    nand|[reskillable:defense|24]~[reskillable:agility|24]
     
 
 ## Use-Case
 
-Una volta che un giocatore ottiene di difesa di livello 24 e di agilità livello 24 smettere di consentire loro di utilizzare armature di cuoio:
+Once a player gets to defense level 24 and agility level 24 stop allowing them to use leather armor:
 
 ```zenscript
-addRequirement(<minecraft:leather_helmet:*>, "nand<unk> [reskillable:defense<unk> 24]~[reskillable:agility<unk> 24]");
-addRequirement(<minecraft:leather_chestplate:*>, "nand<unk> [reskillable:defense<unk> 24]~[reskillable:agility<unk> 24]");
-addRequirement(<minecraft:leather_leggings:*>, "nand<unk> [reskillable:defense<unk> 24]~[reskillable:agility<unk> 24]");
-addRequirement(<minecraft:leather_boots:*>, "nand<unk> [reskillable:defense<unk> 24]~[reskillable:agility<unk> 24]");
+addRequirement(<minecraft:leather_helmet:*>, "nand|[reskillable:defense|24]~[reskillable:agility|24]");
+addRequirement(<minecraft:leather_chestplate:*>, "nand|[reskillable:defense|24]~[reskillable:agility|24]");
+addRequirement(<minecraft:leather_leggings:*>, "nand|[reskillable:defense|24]~[reskillable:agility|24]");
+addRequirement(<minecraft:leather_boots:*>, "nand|[reskillable:defense|24]~[reskillable:agility|24]");
 ```

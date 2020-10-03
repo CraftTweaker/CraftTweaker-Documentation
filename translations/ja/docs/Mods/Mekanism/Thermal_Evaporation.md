@@ -1,30 +1,30 @@
-# 熱蒸<unk>
+# Thermal Evaporation
 
-Mekanism 9.7.0 以降、コマンド `/ct mekrecipes thermalevaparation` を通じて熱蒸発のすべてのレシピ文字列を表示できるようになりました。
+As of Mekanism 9.7.0 it is now possible to view all recipe strings of the Thermal Evaporation through the command `/ct mekrecipes thermalevaporation`
 
 ## 加算
 
 ```zenscript
-mods.mekanism.thermalavape.addRecipe(ILiquidStack liquidInput, ILiquidStack liquid Output);
+mods.mekanism.thermalevaporation.addRecipe(ILiquidStack liquidInput, ILiquidStack liquidOutput);
 
-mods.mekanism.thermaleavape.addRecipe(<liquid:liquidfusionfuel>, <liquid:lava>);
+mods.mekanism.thermalevaporation.addRecipe(<liquid:liquidfusionfuel>, <liquid:lava>);
 ```
 
-## 削除
+## Removal
 
 ```zenscript
-mods.mekanism.thermalavape.removeRecipe(IInput, @Optional IInput),
+mods.mekanism.thermalevaporation.removeRecipe(IIngredient liquidInput, @Optional IIngredient liquidOutput);
 
-mods.mekanism.thermalevapation.removeRecipe(<liquid:water>, <liquid:brine>);
-mods.mekanism.thermalavapation.removeRecipe(<liquid:brine>);
+mods.mekanism.thermalevaporation.removeRecipe(<liquid:water>, <liquid:brine>);
+mods.mekanism.thermalevaporation.removeRecipe(<liquid:brine>);
 ```
 
-出力パラメータを指定すると、その入力から出力される特定のレシピのみが削除されます。 出力パラメータを省略すると、入力項目が生成できるすべてのレシピが削除されます。
+Specifying an output parameter will only remove the specific recipe that results in that output from that input. Omitting the output parameter will remove all recipes that the input item can produce.
 
-## すべてのレシピを削除する
+## Removing all recipes
 
-Mekanism 9.7.0 以降、すべての熱蒸発プラントのレシピを削除することが可能になりました。 （CraftTweaker経由で追加されたレシピは除外されます）
+As of Mekanism 9.7.0 it is now possible to remove all Thermal Evaporation Plant recipes. (This excludes any recipes added via CraftTweaker)
 
 ```zenscript
-mods.mekanism.thermalevaperation.removeAllRecipes();
+mods.mekanism.thermalevaporation.removeAllRecipes();
 ```

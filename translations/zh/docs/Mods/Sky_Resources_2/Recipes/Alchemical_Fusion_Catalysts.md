@@ -1,21 +1,21 @@
-# 化学聚合催化剂
+# Alchemical Fusion Catalysts
 
-*催化剂* 包用于添加或移除Alchemical Fuse催化剂。
+The *catalysts* package is used for adding or removing catalysts for Alchemical Fusion.
 
 ## 导入包
 
-您可以使用 `mods.skyresources.catalysts</em> 软件包调用 <em>催化剂。`
+You can call the *catalysts* package using `mods.skyresources.catalysts`
 
-## 催化剂添加
+## Catalyst Addition
 
 ```zenscript
-//mods.skyresources.catalysts.add(IItemStack, float value);
+//mods.skyresources.catalysts.add(IItemStack stack, float value);
 mods.skyresources.catalysts.add(<minecraft:diamond>, 4.20);
 ```
 
-## 催化剂移除
+## Catalyst Removal
 
 ```zenscript
-//mods.skyresources.catalysts.remove(ItemStack output);
+//mods.skyresources.catalysts.remove(IItemStack output);
 mods.skyresources.catalysts.remove(<skyresources:alchemyitemcomponent:2>);
 ```

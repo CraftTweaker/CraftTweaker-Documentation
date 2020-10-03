@@ -1,10 +1,10 @@
-# NON Operatore
+# NOT Operator
 
-Un cancello **NOT** cambia lo stato dell'ingresso. Quindi, se l'input è `VERO` allora l'output sarà `FALSE` e viceversa.
+A **NOT** gate switches the state of the input. So if the input is `TRUE` then the output will be `FALSE` and vice versa.
 
 | Input | Output |
 | ----- | ------:|
 | 0     |      1 |
 | 1     |      0 |
 
-Il più semplice requisito logico che supporti Reskillable è la capacità di invertire un requisito. Lo fa utilizzando un cancello NON e la sintassi per esso non è richiesto. Come descritto sopra nella sezione sui cancelli logici, questo requisito logico sarà contrassegnato come soddisfatto solo se il requisito specificato non è soddisfatto.
+The simplest logic requirement that Reskillable supports is the ability to invert a requirement. It does this using a NOT gate and the syntax for it is not|requirement. As described above in the section about Logic Gates, this logic requirement will only be marked as met if the specified requirement is not met.

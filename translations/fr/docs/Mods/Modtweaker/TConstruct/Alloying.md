@@ -1,19 +1,19 @@
-# Alliage
+# Alloying
 
-Le paquet `Alliage` vous permet d'ajouter ou de supprimer des recettes d'alliage.
+The `Alloy` package allows you to add or remove Alloy recipes.
 
-## Appel en cours
+## Calling
 
-Vous pouvez appeler le package Alliage en utilisant `mods.tconstruct.Alloy`
+You can call the Alloy package using `mods.tconstruct.Alloy`
 
-## Ajouter des recettes en alliage
+## Add Alloy Recipes
 
 ```zenscript
-//mods.tconstruct.Alloy.addRecipe(ILiquidStack, ILiquidStack[] entrées);
+//mods.tconstruct.Alloy.addRecipe(ILiquidStack output, ILiquidStack[] inputs);
 mods.tconstruct.Alloy.addRecipe(<liquid:water> * 10, [<liquid:lava> * 10, <liquid:molten_iron> * 5]);
 ```
 
-## Suppression des recettes d'alliage
+## Removing Alloy Recipes
 
 ```zenscript
 //mods.tconstruct.Alloy.removeRecipe(ILiquidStack output);

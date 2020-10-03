@@ -1,14 +1,14 @@
-# Sztabka przeszła
+# Ingot Former
 
-## Importowanie pakietu
-`[PLACEHOLDER] mods.nuclearcraft.ingota`
+## Importing the Package
+`mods.nuclearcraft.ingot_former`
 
-## Dodawanie przepisów
+## Adding Recipes
 ```zenscript
-mods.nuclearcraft.ingot_former.addRecipe([fluidInput, itemOutput, @Opcjonalny podwójny timeMultiplier, @Opcjonalny podwójny nośnik, @Opcjonalny podwójny proces Promieniowania]);
+mods.nuclearcraft.ingot_former.addRecipe([fluidInput, itemOutput, @Optional double timeMultiplier, @Optional double powerMultiplier, @Optional double processRadiation]);
 ```
 
-## Usuwanie przepisów
+## Removing Recipes
 ```zenscript
 mods.nuclearcraft.ingot_former.removeRecipeWithInput([fluidInput]);
 mods.nuclearcraft.ingot_former.removeRecipeWithOutput([itemOutput]);

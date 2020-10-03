@@ -1,12 +1,12 @@
-# Gestor de Comandos
+# ICommandManager
 
-La interfaz de ICommandManager está gestionando comandos. Así que puedes usarlo para obtener y ejecutar comandos.  
-Puedes obtener esto de un objeto [IServer](/Vanilla/Game/IServer/).
+The ICommandManager interface is managing commands. So you can use it to get and execute commands.  
+You can get this from an [IServer](/Vanilla/Game/IServer/) object.
 
-## Importando el paquete
+## Importing the package
 
-Podría ser necesario que importes el paquete si encuentras algún problema (como lanzar un [array](/AdvancedFunctions/Arrays_and_Loops/)), más vale estar seguro que lo siento y añadir la importación.  
-`importar crafttweaker.command.ICommandManager;`
+It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
+`import crafttweaker.command.ICommandManager;`
 
 ## ZenGetters
 
@@ -17,27 +17,27 @@ Podría ser necesario que importes el paquete si encuentras algún problema (com
     </th>
     
     <th>
-      Tipo
+      Type
     </th>
   </tr>
   
   <tr>
     <td>
-      comandos
+      commands
     </td>
     
     <td>
-      Mapa<String, <a href="/Vanilla/Commands/ICommand/">ICommand</a>\>
+      Map<String, <a href="/Vanilla/Commands/ICommand/">ICommand</a>\>
     </td>
   </tr>
 </table>
 
-## Métodos
+## ZenMethods
 
 - int executeCommand([ICommandSender](/Vanilla/Commands/ICommandSender/) sender, String rawCommand);
-- Lista<String\> getTabCompletions([ICommandSender](/Vanilla/Commands/ICommandSender/) sender, entrada de cadena, @Optional [IBlockPos](/Vanilla/World/IBlockPos/) pos);
-- Lista <[ICommand](/Vanilla/Commands/ICommand/)\> getPossibleCommands([ICommandSender](/Vanilla/Commands/ICommandSender/) remitente);
+- List<String\> getTabCompletions([ICommandSender](/Vanilla/Commands/ICommandSender/) sender, String input, @Optional [IBlockPos](/Vanilla/World/IBlockPos/) pos);
+- List<[ICommand](/Vanilla/Commands/ICommand/)\> getPossibleCommands([ICommandSender](/Vanilla/Commands/ICommandSender/) sender);
 
-## Información adicional
+## Additional Info
 
-Para añadir tu propio comando, mira [CommandEvent](/Vanilla/Events/Events/CommandEvent/)
+To add your own command, look at [CommandEvent](/Vanilla/Events/Events/CommandEvent/)

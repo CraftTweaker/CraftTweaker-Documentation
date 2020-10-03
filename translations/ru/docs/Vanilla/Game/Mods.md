@@ -31,15 +31,15 @@ val mod = loadedMods["mcp"];
 
 ## Перебор списка модов
 
-Вы можете повторить через список загруженных модов:
+You can iterate through the list of loaded mods like this:
 
 ```zenscript
 //печатает все зарегистрированные определения предметов, не рекомендуется в больших сборках!
-//переменной мода будет IMod тип
-для мода в loadedMods {
-    print(mod. ame ~ ":");
-    для элемента в мод. tems {
-        print("\t\t" ~ элемент. isplayName);
+//the mod variable will be an IMod type
+for mod in loadedMods {
+    print(mod.name ~ ":");
+    for item in mod.items {
+        print("\t\t" ~ item.displayName);
     }
 }
 ```

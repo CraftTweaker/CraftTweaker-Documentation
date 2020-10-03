@@ -116,7 +116,7 @@ Du kannst folgende Operatoren verwenden. Alle gegebenen Beispiele ergeben true.
 | Kleiner als         | `<`       | Prüft, ob der Wert davor kleiner ist als der Wert danach                                                 | 1 < 2         |
 | Kleiner oder gleich | `<=`      | Prüft, ob der Wert davor kleiner oder gleich klein wie der Wert danach ist                               | 1 <= 1        |
 | AND (UND)           | `&`      | Prüft, ob der Wert davor und danach gleich ist                                                           | true & true   |
-| OR (ODER)           | `&#124;` | Prüft, ob mindestens einer der beiden Werte wahr ist. Ergibt true, wenn beide wahr sind                  | wahr \| wahr |
+| OR (ODER)           | `&#124;` | Prüft, ob mindestens einer der beiden Werte wahr ist. Ergibt true, wenn beide wahr sind                  | true \| true |
 | XOR (Exklusiv-ODER) | `^`          | Prüft, ob genau einer der beiden Werte wahr ist. Wenn keiner oder beide Werte wahr sind, ergibt es false | true ^ false  |
 
 ## Der in/has-Operator

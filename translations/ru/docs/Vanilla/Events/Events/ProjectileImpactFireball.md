@@ -1,27 +1,27 @@
-# Эффект снаряда
+# ProjectileImpactFireball
 
-Это событие запускается, когда огненный шар воздействует на объект, но до повреждения и т. д. рассчитывается. Это **отменимый**, и в случае отмены влияние не будет обработано.
+This event is fired whenever a fireball impacts an entity but before damage, etc, is calculated. It is **cancelable**, and if canceled, the impact will not be processed.
 
-Значения ускорения от огненной части доступны через зонгеттеры.
+Acceleration values from the fireball entity are available through zengetters.
 
 ## Импорт класса
-Может потребоваться [импортировать](/AdvancedFunctions/Import/) класс, чтобы избежать ошибок.  
-`импорт crafttweaker.event.ProjectileImpactFireballEvent;`
+It might be required to [import](/AdvancedFunctions/Import/) the class to avoid errors.  
+`import crafttweaker.event.ProjectileImpactFireballEvent;`
 
-## Расширение IEntityEvent
-События ProjectileImpactFireball реализуют следующие интерфейсы и также могут вызвать все их методы/getters/setters:
+## Extending IEntityEvent
+ProjectileImpactFireball Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
 
-- [Событие снаряда](/Vanilla/Events/Events/IProjectileEvent/)
+- [IProjectileEvent](/Vanilla/Events/Events/IProjectileEvent/)
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 
-## ZenGetters и ZenSetters
+## ZenGetters and ZenSetters
 
 Следующая информация может быть получена от события:
 
 | ZenGetter       | ZenSetter       | Тип                                                       |
 | --------------- | --------------- | --------------------------------------------------------- |
-| `Огненный шар`  |                 | [IEntity](/Vanilla/Entities/IEntity/)                     |
-| `стрелок`       |                 | [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) |
-| `ускорениеX`    | `ускорениеX`    | double                                                    |
-| `ускорение Y`   | `ускорение Y`   | double                                                    |
+| `fireball`      |                 | [IEntity](/Vanilla/Entities/IEntity/)                     |
+| `shooter`       |                 | [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) |
+| `accelerationX` | `accelerationX` | double                                                    |
+| `accelerationY` | `accelerationY` | double                                                    |
 | `accelerationZ` | `accelerationZ` | double                                                    |

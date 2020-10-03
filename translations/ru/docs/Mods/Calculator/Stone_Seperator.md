@@ -1,23 +1,23 @@
-# Каменный разделитель
+# Stone Separator
 
-## Пакет
+## Package
 ```zenscript
-импорт mods.calculator.stoneSeparator;
+import mods.calculator.stoneSeparator;
 ```
 
 ## Методы
 
 - **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input** The input.
-- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) output[1-2]** Выходы.
+- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) output[1-2]** The outputs.
 
 
-## Добавить
+## Additon
 
 ```zenscript
 stoneSeparator.addRecipe(IIngredient input, IIngredient output1, IIngredient output2);
 ```
 
-## Удаление
+## Removal
 ```zenscript
 stoneSeparator.removeRecipe(IIngredient output, IIngredient output2);
 ```

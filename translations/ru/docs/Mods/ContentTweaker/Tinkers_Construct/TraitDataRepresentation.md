@@ -1,32 +1,32 @@
-# Представление данных о симптомах
+# Trait Data Representation
 
-Представление данных симптомов представляет собой данные трюков конструирования и является предметом.  
-Такой объект можно получить из существующего объекта [симптома](/Mods/ContentTweaker/Tinkers_Construct/Trait/) поставив IItemStack к методу `getData`.
+A Trait data representation represents a Tinkers' Construct Trait's Data and is ItemBound.  
+You can get such an object from an existing [Trait](/Mods/ContentTweaker/Tinkers_Construct/Trait/) object by supplying an IItemStack to the `getData` method.
 
 ## Импорт класса
 
-Возможно, вам потребуется импортировать класс, если вы столкнетесь с какими-либо проблемами (например, наложение [массива](/AdvancedFunctions/Arrays_and_Loops/)), так что лучше быть безопасным, чем извините и добавить импорт.  
+It might be required for you to import the class if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
 `import mods.contenttweaker.tconstruct.TraitDataRepresentation`
 
-## ZenGetter и ZenSetter
+## ZenGetter and ZenSetter
 
-| Название                  | Геттер | ZenSetter | Тип    |
-| ------------------------- | ------ | --------- | ------ |
-| цвет                      | ✔      | ✔         | int    |
-| текущий                   | ✔      | ✔         | int    |
-| дополнительная информация | ✔      | ✔         | string |
-| identifier                | ✔      | ✔         | string |
-| уровень                   | ✔      | ✔         | int    |
-| макс                      | ✔      | ✔         | int    |
-| инфо                      | ✔      |           | string |
-| цветная строка            | ✔      |           | string |
+| Название    | Геттер | ZenSetter | Тип    |
+| ----------- | ------ | --------- | ------ |
+| color       | ✔      | ✔         | int    |
+| current     | ✔      | ✔         | int    |
+| extraInfo   | ✔      | ✔         | string |
+| identifier  | ✔      | ✔         | string |
+| level       | ✔      | ✔         | int    |
+| max         | ✔      | ✔         | int    |
+| info        | ✔      |           | string |
+| colorString | ✔      |           | string |
 
 ## Методы ZenScript
 
 ```zenscript
-//Содержит то же самое, что и myTraitData.info;
+//Does the same as myTraitData.info;
 myTraitData.calcInfo();
 
-//Содержит то же самое, что и myTraitData.colorString;
+//Does the same as myTraitData.colorString;
 myTraitData.getColorString();
 ```

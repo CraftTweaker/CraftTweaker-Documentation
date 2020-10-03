@@ -1,55 +1,55 @@
 # IEntityCreature
 
-Una Creatura.
+A Creature.
 
-## Importazione del pacchetto
+## Importing the package
 
-Potrebbe essere necessario importare il pacchetto se si incontrano problemi (come lanciare un [Array](/AdvancedFunctions/Arrays_and_Loops/)), quindi meglio essere sicuri che spiacenti e aggiungere l'importazione.  
+It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
 `import crafttweaker.entity.IEntityCreature;`
 
-## Estendere [IEntityLiving](/Vanilla/Entities/IEntityLiving/)
+## Extending [IEntityLiving](/Vanilla/Entities/IEntityLiving/)
 
-IEntityCreature estende [IEntityLiving](/Vanilla/Entities/IEntityLiving/). Ciò significa che tutte le funzioni disponibili per gli oggetti [IEntityLiving](/Vanilla/Entities/IEntityLiving/) sono disponibili anche per IEntityCreature.
+IEntityCreature extends [IEntityLiving](/Vanilla/Entities/IEntityLiving/). That means all functions available to [IEntityLiving](/Vanilla/Entities/IEntityLiving/) objects also are available to IEntityCreature.
 
-## Metodi
+## Methods
 
 ### ZenGetters/Setters
 
-| ZenGetter            | Tipo                                   |
+| ZenGetter            | Type                                   |
 | -------------------- | -------------------------------------- |
 | hasPath              | bool                                   |
-| isWithinHomeDistanza | bool                                   |
+| isWithinHomeDistance | bool                                   |
 | homePosition         | [IBlockPos](/Vanilla/World/IBlockPos/) |
-| maximumHomeDistance  | galleggiante                           |
+| maximumHomeDistance  | float                                  |
 | hasHome              | bool                                   |
 
 ### ZenMethods
 
-#### riproduci suono vivente
+#### play living sound
 
-Metodo non si aspetta nulla.  
-Restituisce nulla.
+Method expects nothing.  
+Returns nothing.
 
 ```zenscript
 entCreObj.playLivingSound();
 ```
 
-#### Imposta o scollega la casa
+#### Set or detach home
 
-Il primo metodo prevede un oggetto [IBlockPos](/Vanilla/World/IBlockPos/) e un int.  
-Secondo metodo non prevede nulla.  
-Entrambi i metodi non restituiscono niente.
+First method expects an [IBlockPos](/Vanilla/World/IBlockPos/) object and an int.  
+Second method expects nothing.  
+Both methods return nothing.
 
 ```zenscript
-entAnObj.setHomePosizioneAndDistance(IBlockPos pos, int distance);
+entAnObj.setHomePositionAndDistance(IBlockPos pos, int distance);
 entAnObj.detachHome();
 ```
 
-#### Verifica se una posizione si trova entro la distanza della casa
+#### Check if a position is within the home distance
 
-Metodo prevede un [IBlockPos](/Vanilla/World/IBlockPos/) object.  
-Restituisce un bool.
+Method expects an [IBlockPos](/Vanilla/World/IBlockPos/) object.  
+Returns a bool.
 
 ```zenscript
-entAnObj.isPositionWithinHomeDistanza
+entAnObj.isPositionWithinHomeDistance
 ```

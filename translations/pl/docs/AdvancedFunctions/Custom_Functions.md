@@ -1,81 +1,81 @@
-# Funkcje niestandardowe
+# Custom Functions
 
-Czasami funkcje dostarczane przez CT i dodatki po prostu tego nie robią. Oto jak napisać własne funkcje! Możesz nawet zagnieżdżać funkcje w funkcjach
+Sometimes the functions supplied by CT and addons just won't do it. Here's how to write your own functions! You can even nest functions in functions
 
-## Podstawowa składnia
+## Basic Syntax
 
-Zasadniczo deklaruje się statyczne użycie:
+Generally, you declare a static using:
 
 ```zenscript
-funkcja NAZWA ([arguments[as type]]) [as returnType]{
+function NAME ([arguments[as type]]) [as returnType]{
     [Statements]
-    [return VALUE]
+    [return VALUE;]
 }
 ```
 
-Elementy w nawiasach są opcjonalne, w zależności od tego, co chcesz osiągnąć. Przyjrzyjmy się bliżej konkretnym funkcjom.
+The things in brackets are optional, depending on what you want to achieve. Let's take a closer look at specific functions.
 
-## Funkcje statyczne
+## Static Functions
 
-Funkcje statyczne są tworzone przed uruchomieniem skryptu i mogą być dostępne z dowolnego miejsca w skrypcie.  
-Możesz mieć dostęp nawet do funkcji zadeklarowanych poza skryptem za pomocą [międzyskryptów](/AdvancedFunctions/Cross-Script_Reference).
+Static functions are created before the script is run and can be accessed from anywhere in the script.  
+You can even access functions declared outside the script using the [cross-script reference](/AdvancedFunctions/Cross-Script_Reference).
 
-### Unieważnienie funkcji
+### Void functions
 
-Unieważnione funkcje to funkcje, które nie zwrócą żadnej wartości.
+Void functions are functions that will not return any value.
 
 ```zenscript
-//wywołuje funkcję tens() bez argumentów
+//calls the function tens() without arguments
 tens();
 
-//wywołuje funkcję RealTens() za pomocą String "Hello World!" jako argumentu
-RealTens("Witaj światu! );
+//calls the function realTens() with the String "Hello World!" as argument
+realTens("Hello World!");
 
 
-//crates function tens() bez wymaganych argumentów
+//crates function tens() with no required arguments
 function tens(){
-    //Ccall function realTens() z "" jako argumentem
-    RealTens("");
+    //Calls function realTens() with "" as argument
+    realTens("");
 }
 
 
-//tworzy funkcję RealTens() z jednym ciągiem wymaganym jako argument
-funkcja RealTens(a jako string){
-    //drukuje argument 10 razy
-    dla i in 1 do 11{
+//creates function realTens() with one string required as argument
+function realTens(a as string){
+    //prints the argument 10 times
+    for i in 1 to 11{
         print(a);
     }
 }
 ```
 
-### Funkcje zwrotne
+### Return functions
 
-Możesz również określić wartość, która powinna być zwrócona przez funkcję. Zaleca się użycie słowa kluczowego `jako` do zdefiniowania typu zwrotu.
+You can also specify a value that should be returned by a function. It is recommended using the `as` keyword to define the return type.
 
 ```zenscript
-//wywołania dodają funkcję z 1 i 99 jako parametry
-wynik owalny = add(1,99);
-print(wynik);
+//calls add function with 1 and 99 as parameters
+val result = add(1,99);
+print(result);
 
-//możesz umieścić funkcję dodawania również wewnątrz funkcji drukowania
+//you can place the add function inside the print function as well
 print(add(2,64));
 
-//definiuje dodatek funkcji() z a i b jako parametry (oba ustawione jako liczby całkowite! i ustawia zwracany typ na Integer
-dodatek funkcji (jako int, jako int{
-    //zwraca sumę a i b
-    zwraca a+b;
+//defines function add() with a and b as parameters (both set to be Integers!) and sets the return type to Integer
+function add(a as int,b as int) as int{
+    //returns the sum of a and b
+    return a+b;
 }
 ```
 
-## Funkcje jako zmienne
+## Functions as variables
 
-Możesz również używać funkcji takich jak zmienne. W takim przypadku będą one tworzone jako oddzielne klasy. Other than that, they work pretty much the same as static functions, you call them by their variable name.  
+You can also use functions like variables. In this case, they will be created as separate classes. Other than that, they work pretty much the same as static functions, you call them by their variable name.  
 You can even use them as [global variables](/AdvancedFunctions/Global_Static_Variables/) this way.
 
-Jeśli chcesz rzucić metodę (tak jak w przypadku globalności), możesz użyć:
+If you need to cast the method (as you do for globals) you can use this:
 
-    dodawanie globalne jako funkcja(int, int)int = funkcja (a int, b as int) jako int {
-        zwraca a + b;
+    global addition as function(int, int)int = function (a as int, b as int) as int {
+        return a + b;
     };
     
     print(addition(1,2));

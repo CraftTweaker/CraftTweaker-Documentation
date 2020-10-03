@@ -1,35 +1,35 @@
 # IBlockColorSupplier
 
-Die IBlockColorSupplier Funktion kann verwendet werden, um das [Farbobjekt](/Mods/ContentTweaker/Vanilla/Types/Color/Color/) für was auch immer zu verwenden.
+The IBlockColorSupplier function can be used to provide the [Color Object](/Mods/ContentTweaker/Vanilla/Types/Color/Color/) to be used for whatever.
 
 ## Dieses Paket importieren
 
-Es kann erforderlich sein, dass Sie das Paket importieren, wenn Sie irgendwelche Probleme haben. Seien Sie also besser sicher als entschuldigen und fügen Sie den Import hinzu.  
-`importieren mods.contenttweaker.IBlockColorSupplier;`
+It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
+`import mods.contenttweaker.IBlockColorSupplier;`
 
-## Parameter
+## Parameters
 
-Die IBlockColorSupplier Funktion ist eine Funktion mit folgenden Parametern.
+The IBlockColorSupplier Function is a function with following parameters.
 
-- [ICTBlockState](/Mods/ContentTweaker/Vanilla/Types/Block/ICTBlockState/) Status → der Blockzustand des Blocks, dessen Farbe angefordert wird.
-- [IBlockAccess](/Vanilla/World/IBlockAccess/) Zugriff → Blockzugriff auf den Block, dessen Farbe angefordert wird.
-- [IBlockPos](/Mods/ContentTweaker/Vanilla/Types/Block/IBlockPos/) pos → die Position des Blocks, dessen Farbe angefordert wird.
-- int tintIndex → der Farbindex, verwenden Sie das, was Sie wollen. Die Funktion muss ein [Farbobjekt](/Mods/ContentTweaker/Vanilla/Types/Color/Color/) zurückgeben.
+- [ICTBlockState](/Mods/ContentTweaker/Vanilla/Types/Block/ICTBlockState/) state → the blockstate of the block whose color is being requested.
+- [IBlockAccess](/Vanilla/World/IBlockAccess/) access → the block access of the block whose color is being requested.
+- [IBlockPos](/Mods/ContentTweaker/Vanilla/Types/Block/IBlockPos/) pos → the position of the block whose color is being requested.
+- int tintIndex → the tint index, use that however you like. The function needs to return an [Color Object](/Mods/ContentTweaker/Vanilla/Types/Color/Color/).
 
 ## Beispiele
 
 ```zenscript
 #loader contenttweaker
 
-importiere mods.contenttweaker.IBlockColorSupplier;
-importiere mods.contenttweaker.BlockState;
-importiere mods.contenttweaker.BlockPos;
-importiere mods.contenttweaker.Color;
+import mods.contenttweaker.IBlockColorSupplier;
+import mods.contenttweaker.BlockState;
+import mods.contenttweaker.BlockPos;
+import mods.contenttweaker.Color;
 
-importiere crafttweaker. orld.IBlockAccess;
+import crafttweaker.world.IBlockAccess;
 
-Funktion getBlockColor(Status als BlockState, Zugriff als IBlockAccess, Pos als BlockPos, tintIndex als int) als Farbe {
-  //Gibt eine Kalkfarbe
-    zurück. romInt(0x00FF00);
+function getBlockColor(state as BlockState, access as IBlockAccess, pos as BlockPos, tintIndex as int) as Color {
+  //Returns a lime color
+    return Color.fromInt(0x00FF00);
 }
 ```

@@ -1,16 +1,16 @@
-# 热交换器
+# Heat Exchanger
 
-## 导入软件包
-`nuclearcraft.heat_exchanger`
+## Importing the Package
+`mods.nuclearcraft.heat_exchanger`
 
-## 添加配方
+## Adding Recipes
 ```zenscript
-mods.nuclearcraft.heat_exchanger.addRecipe([fluidInput, fluidOutput, 双加热, int temperatureIn, int temperatureOut]);
+mods.nuclearcraft.heat_exchanger.addRecipe([fluidInput, fluidOutput, double heatRequired, int temperatureIn, int temperatureOut]);
 ```
 
-## 删除配方
+## Removing Recipes
 ```zenscript
-mods.nuclearcraft.heat_exchanger.removeRecipeWidInput([fluidInput]);
-mods.nuclearcraft.heat_exchanger.removeRecipewOut([fluidOutput]);
+mods.nuclearcraft.heat_exchanger.removeRecipeWithInput([fluidInput]);
+mods.nuclearcraft.heat_exchanger.removeRecipeWithOutput([fluidOutput]);
 mods.nuclearcraft.heat_exchanger.removeAllRecipes();
 ```

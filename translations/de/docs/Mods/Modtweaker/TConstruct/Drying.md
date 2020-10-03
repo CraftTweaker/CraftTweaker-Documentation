@@ -1,21 +1,21 @@
-# Trocknen
+# Drying
 
-Das `Trocknen` Paket erlaubt dir, Trockenrezepte hinzuzufügen oder zu entfernen.
+The `Drying` package allows you to add or remove Drying recipes.
 
-## Anruf
+## Calling
 
-Du kannst das Trockenpaket mit `mods.tconstruct.Drying` aufrufen
+You can call the Drying package using `mods.tconstruct.Drying`
 
-## Hinzufügen
+## Adding
 
-Die Zeit ist in Ticks
+The time is in ticks
 
 ```zenscript
-//mods.tconstruct.Drying.addRecipe(IItemStack Output, IIngredient Input);
+//mods.tconstruct.Drying.addRecipe(IItemStack output, IIngredient input, int time);
 mods.tconstruct.Drying.addRecipe(<minecraft:leather>,<minecraft:rotten_flesh>, 100);
 ```
 
-## Entfernen
+## Removing
 
 ```zenscript
 //mods.tconstruct.Drying.removeRecipe(IItemStack output);

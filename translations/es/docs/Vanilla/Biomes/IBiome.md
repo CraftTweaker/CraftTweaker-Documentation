@@ -1,30 +1,30 @@
-# Ioma
+# IBiome
 
-La interfaz IBioma le permite recuperar información sobre un Bioma registrado.
+The IBiome interface allows you to retrieve information on a registered Biome.
 
-## Importando el paquete
+## Importing the package
 
-Podría ser necesario que importes el paquete si encuentras algún problema (como lanzar un [array](/AdvancedFunctions/Arrays_and_Loops/)), más vale estar seguro que lo siento y añadir la importación.  
-`importar crafttweaker.world.IBiome;`
+It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
+`import crafttweaker.world.IBiome;`
 
-## Llamar a un IBioma
+## Calling an IBiome
 
 You can get a list of all registered Biomes using `game.biomes` from [IGame](/Vanilla/Game/IGame/) That is currently the only way
 
 ## ZenGetters
 
-Atm, todo lo que se puede hacer con un objeto IBiome es obtener información de ello:
+Atm, all you can do with an IBiome object is retrieving some information out of it:
 
-| ZenGetter                       | Tipo de devolución |
-| ------------------------------- | ------------------ |
-| nombre                          | cadena             |
-| canRain                         | boolean            |
-| isSnowyBiome                    | boolean            |
-| alta humedad                    | boolean            |
-| posibilidad de generar          | flotante           |
-| altura base                     | flotante           |
-| altura Variación                | flotante           |
-| lluvia                          | flotante           |
-| multiplicador acuarela          | int                |
-| ignorarJugadorSpawnSuitabilidad | boolean            |
-| temperatura                     | flotante           |
+| ZenGetter                    | Return Type |
+| ---------------------------- | ----------- |
+| name                         | string      |
+| canRain                      | boolean     |
+| isSnowyBiome                 | boolean     |
+| highHumidity                 | boolean     |
+| spawningChance               | float       |
+| baseHeight                   | float       |
+| heightVariation              | float       |
+| rainfall                     | float       |
+| waterColorMultiplier         | int         |
+| ignorePlayerSpawnSuitability | boolean     |
+| temperature                  | float       |

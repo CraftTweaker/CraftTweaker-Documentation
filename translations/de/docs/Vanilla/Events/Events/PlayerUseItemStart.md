@@ -1,16 +1,16 @@
 # PlayerUseItemStart
 
-Das PlayerUseItemStart Event wird gefeuert, wenn ein Spieler anfängt, einen Gegenstand zu verwenden.
+The PlayerUseItemStart Event is fired whenever a player starts using an item.
 
 ## Event-Klasse
 
-Du musst das Ereignis als diese Klasse in den Funktionskopf verschieben:  
-`crafttweaker.event. layerUseItemStartEvent`  
-Sie können natürlich auch [die Klasse vor](/AdvancedFunctions/Import/) importieren und dann diesen Namen verwenden.
+You will need to cast the event in the function header as this class:  
+`crafttweaker.event.PlayerUseItemStartEvent`  
+You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
 
 ## Erweiterte Event-Schnittellen
 
-PlayerUseItemStart Events implementieren die folgenden Schnittstellen und können alle ihre Methoden/Getters/Setter auch aufrufen:
+PlayerUseItemStart Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
 
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 - [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
@@ -19,12 +19,12 @@ PlayerUseItemStart Events implementieren die folgenden Schnittstellen und könne
 
 Die folgenden Informationen lassen sich von diesem Event (Ereignis) abrufen:
 
-| ZenGetter     | Rückgabetyp                              |
-| ------------- | ---------------------------------------- |
-| `abgebrochen` | boolean                                  |
-| `player`      | [IPlayer](/Vanilla/Players/IPlayer/)     |
-| `eintrag`     | [IItemStack](/Vanilla/Items/IItemStack/) |
+| ZenGetter  | Rückgabetyp                              |
+| ---------- | ---------------------------------------- |
+| `canceled` | boolean                                  |
+| `player`   | [IPlayer](/Vanilla/Players/IPlayer/)     |
+| `item`     | [IItemStack](/Vanilla/Items/IItemStack/) |
 
-## ZenMethoden
+## ZenMethods
 
-- `event.cancel()` setzt das Ereignis als abgebrochen
+- `event.cancel()` sets the event as cancelled

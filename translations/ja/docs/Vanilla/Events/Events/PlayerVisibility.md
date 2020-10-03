@@ -1,29 +1,28 @@
 # PlayerVisibility
 
-このイベントは、プレイヤーの可視性を判断するために発生します。すなわち、攻撃者によって気づかれるほど近くにいるかどうかです。 このイベントの結果を計算するために使用されます(バニラのMinecraftからの修飾子をスニーキングのために使用します)。 など)プレイヤーが生き物を見る前に生き物にたどり着ける範囲。
+This event is fired to determine the visibility of a player, i.e., whether or not they are close enough to be noticed by an attacker. The result of this event is used to calculate (with modifiers from Vanilla Minecraft for sneaking, etc) the range a player can get to a creature before that creature sees them.
 
-これは、表示範囲を拡大するために使用することができますが、 (Minecraft や別の Mod によって減少した場合) 最大値(標準目標距離)を上回ることはできません。
+While this can be used to increase the visibility range (if it were decreased by Minecraft or another mod), it cannot be increased above its maximum value (the standard target distance).
 
-## イベントクラス
-関数ヘッダーのイベントをこのクラスとしてキャストする必要があります:  
-`crafttweaker.event. layerVisibilityEvent <br x-id="2" /> 
- <code>`  
-もちろん、 [インポート](/AdvancedFunctions/Import/) 前にそのクラスをインポートして、その名前を使用することもできます。
+## Event Class
+You will need to cast the event in the function header as this class:  
+`crafttweaker.event.PlayerVisibilityEvent`  
+You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
 
-## イベントインターフェースの拡張
-PlayerVisibilityEvent イベントは以下のインターフェイスを実装しており、すべてのメソッド/getter/setterを呼び出すこともできます。
+## Event interface extensions
+PlayerVisibilityEvent Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
 
 - [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
 
 
 ## ZenGetters/ZenSetters
-イベント中に以下の情報を取得/設定できます:
+The following information can be retrieved/set during the event:
 
-| ZenGetter | ZenSetter          | タイプ          |
-| --------- | ------------------ | ------------ |
-| `可視性`     |                    | double       |
-|           | `modifyVisibility` | メモを参照してください。 |
+| ZenGetter    | ZenSetter          | Type      |
+| ------------ | ------------------ | --------- |
+| `visibility` |                    | double    |
+|              | `modifyVisibility` | See note. |
 
-## メモ
+## Note
 
-この値は直接設定できません。 `modifyVisibility` を double 値で呼び出すと、修飾子は `modifiy * double value` の結果に置き換えられます。
+This value cannot be directly set. Calling `modifyVisibility` with a double value will replace the modifier with the result of `modifiy * double value`.

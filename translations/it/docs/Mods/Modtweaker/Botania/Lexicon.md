@@ -1,71 +1,71 @@
 # Lexica Botania
 
-Il pacchetto Lexicon viene utilizzato per aggiungere o rimuovere pagine, voci o intere categorie da/per Lexica Botania.
+The Lexicon package is used for adding or removing pages, entries or whole categories to/from the Lexica Botania.
 
-## Chiamata
+## Calling
 
-Puoi chiamare il pacchetto Lexicon usando `mods.botania.Lexicon`
+You can call the Lexicon package using `mods.botania.Lexicon`
 
-## Pagine
+## Pages
 
-### Addizione
+### Addition
 
 ```zenscript
-mods.botania.Lexicon.addBrewPage(Nome stringa, Voce stringa, Numero pagina, String brew, IIngredient[] recipe, String bottomText);
-mods.botania.Lexicon.addCraftingPage(Nome string, String entry, int page_number, String... nomi);
-mods.botania.Lexicon.addElvenPage(nome string, voce string, numero pagina, IItemStack[] outputs, IIngredient[][] inputs);
-mods.botania.Lexicon.addEntityPage(nome string, voce string, int page_number, entità string, int size);
-mods.botania.Lexicon. ddImagePage(String name, String entry, int page_number, String resource);
+mods.botania.Lexicon.addBrewPage(String name, String entry, int page_number, String brew, IIngredient[] recipe, String bottomText);
+mods.botania.Lexicon.addCraftingPage(String name, String entry, int page_number, String... recipeNames);
+mods.botania.Lexicon.addElvenPage(String name, String entry, int page_number, IItemStack[] outputs, IIngredient[][] inputs);
+mods.botania.Lexicon.addEntityPage(String name, String entry, int page_number, String entity, int size);
+mods.botania.Lexicon.addImagePage(String name, String entry, int page_number, String resource);
 mods.botania.Lexicon.addLorePage(String name, String entry, int page_number);
-mods. otania.Lexicon.addInfusionPage(String name, String entry, int page_number, IItemStack[] outputs, IIngredient[] inputs, int[] mana);
-mods.botania.Lexicon. ddAlchemyPage(String name, String entry, int page_number, IItemStack[] outputs, IIngredient[] inputs, int[] mana);
-mods.botania.Lexicon. ddConjurationPage(String name, String entry, int page_number, IItemStack[] outputs, IIngredient[] inputs, int[] mana);
-mods.botania.Lexicon. ddPetalPage(String name, String entry, int page_number, IItemStack[] outputs, IIngredient[][] inputs);
-mods.botania.Lexicon. ddRunePage(String name, String entry, int page_number, IItemStack[] outputs, IIngredient[][] inputs, int[] mana);
+mods.botania.Lexicon.addInfusionPage(String name, String entry, int page_number, IItemStack[] outputs, IIngredient[] inputs, int[] mana);
+mods.botania.Lexicon.addAlchemyPage(String name, String entry, int page_number, IItemStack[] outputs, IIngredient[] inputs, int[] mana);
+mods.botania.Lexicon.addConjurationPage(String name, String entry, int page_number, IItemStack[] outputs, IIngredient[] inputs, int[] mana);
+mods.botania.Lexicon.addPetalPage(String name, String entry, int page_number, IItemStack[] outputs, IIngredient[][] inputs);
+mods.botania.Lexicon.addRunePage(String name, String entry, int page_number, IItemStack[] outputs, IIngredient[][] inputs, int[] mana);
 mods.botania.Lexicon.addTextPage(String name, String entry, int page_number);
 ```
 
-### Rimozione
+### Removal
 
 ```zenscript
 mods.botania.Lexicon.removePage(String entry, int page_number);
 ```
 
-## Voci
+## Entries
 
-### Addizione
+### Addition
 
 ```zenscript
 mods.botania.Lexicon.addEntry(String entry, String catagory, IItemStack stack);
 ```
 
-### Rimozione
+### Removal
 
 ```zenscript
-mods.botania.Lexicon.removeEntry(voce stringa);
+mods.botania.Lexicon.removeEntry(String entry);
 ```
 
-## Categorie
+## Categories
 
-### Addizione
+### Addition
 
 ```zenscript
 mods.botania.Lexicon.addCategory(String name);
 ```
 
-### Rimozione
+### Removal
 
 ```zenscript
 mods.botania.Lexicon.removeCategory(String name);
 ```
 
-### Imposta
+### Set
 
 ```zenscript
-mods.botania.Lexicon.setCategoryIcon(nome stringa, icona stringa);
+mods.botania.Lexicon.setCategoryIcon(String name, String icon);
 ```
 
-## Mappatura Ricetta
+## Recipe Mapping
 
 ```zenscript
 mods.botania.Lexicon.addRecipeMapping(IItemStack stack, String Entry, int page);

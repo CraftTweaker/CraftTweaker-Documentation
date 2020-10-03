@@ -2,19 +2,19 @@
 
 ## Обработчики скобок
 
-### Обработчик Уровня Умений:
+### Skill Bracket Handler:
 
-    ## Пример:
+    ## Example:
     <skill:resourcelocation>
     
-    ## Рабочий пример:
+    ## Working Example:
     <skill:reskillable:agility>
     
 
-### Обработчик скобок симптома:
+### Trait Bracket Handler:
 
-    ## Пример:
+    ## Example:
     <trait:resourcelocation>
     
-    ## Рабочий пример:
+    ## Working Example:
     <trait:reskillable:sidestep>

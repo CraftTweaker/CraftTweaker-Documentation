@@ -1,12 +1,12 @@
-# Специальные типы рецептов
+# Special Recipe Types
 
 ## Дополнительная информация
 
-У арка-печи есть опциональный параметр строки под названием "specialRecipeType". Эта строка позволяет вам "Подтег" ваш рецепт для определенного типа рецепта. Это ни в коей мере не меняет поведения, он просто присваивает его подметке.
+The Arc-Furnace has an Optional String parameter called "specialRecipeType". This String allows you to "Sub-Tag" your Recipe to a specific Recipe Type. This does not alter behavior in any way, it just assigns it to a Sub-Tag.
 
-### Существующие типы
+### Existing Types
 
-| Типы рецептов: | Параметры |
-| -------------- | --------- |
-| Сплав          | "Сплавка" |
-| Ores           | "Оресов"  |
+| Recipe Types: | Параметры  |
+| ------------- | ---------- |
+| Alloying      | "Alloying" |
+| Ores          | "Ores"     |

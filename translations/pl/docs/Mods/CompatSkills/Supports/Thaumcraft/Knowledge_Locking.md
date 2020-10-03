@@ -1,16 +1,16 @@
-# Blokowanie wiedzy
+# Knowledge Locking
 
-## Funkcja:
+## Feature:
 
-Ta funkcja pozwala na zablokowanie zdobywania wiedzy obserwacyjnej lub teoretycznej w Thaumcraft.
+This feature allows you to lock the acquisition of Observational or Theoretical Knowledge acquisition in Thaumcraft.
 
-## Typy wiedzy:
+## Knowledge Types:
 
-Aktualne typy wiedzy to O dla obserwacji i T dla teorii.
+Current knowledge types are O for Observation and T for Theory.
 
-## Składnia:
+## Syntax:
 
-    mods.compatskills.Thaumcraft.addKnowledgeLock(String categoryName, String knowledge Type, String... wymagania);
+    mods.compatskills.Thaumcraft.addKnowledgeLock(String categoryName, String knowledgeType, String... requirements);
     
     mods.compatskills.Thaumcraft.addKnowledgeLock("UNLOCKAUROMANCY", "O", "dim|1");
     mods.compatskills.Thaumcraft.addKnowledgeLock("UNLOCKAUROMANCY", "T", "dim|1");

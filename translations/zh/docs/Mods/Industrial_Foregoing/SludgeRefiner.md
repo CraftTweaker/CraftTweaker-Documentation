@@ -3,21 +3,21 @@
 ### 导入
 
 ```zenscript
-进口方法.工业化; Sludg炼油厂;
+import mods.industrialforegoing.SludgeRefiner;
 ```
 
 ### 添加配方
 
 ```zenscript
-Sludge Refiner.add(IItemStack output, int ItemWeight);
+SludgeRefiner.add(IItemStack output, int ItemWeight);
 
-Sludge Refiner.add(<minecraft:wheat_seeds>, 10);
+SludgeRefiner.add(<minecraft:wheat_seeds>, 10);
 ```
 
 ### 移除配方
 
 ```zenscript
-Sludge Refiner.remove(IItemStack 输出);
+SludgeRefiner.remove(IItemStack output);
 
-Sludge Refiner.remove(<minecraft:wheat_seeds>);
+SludgeRefiner.remove(<minecraft:wheat_seeds>);
 ```

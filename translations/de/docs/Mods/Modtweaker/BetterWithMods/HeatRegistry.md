@@ -1,13 +1,13 @@
-# Hitzeregistry
+# HeatRegistry
 
-Die HeatRegistry erlaubt es, einem Block, der mit dem Cauldron, Crucible und Ofen interagiert, einen ganzzahligen Wert zuzuweisen.
+The HeatRegistry allows assigning an integer value to a block that interacts with the Cauldron, Crucible and Kiln.
 
 * Default Values: Vanilla fire | 1 Stoked Fire | 2
 
-# Eine Hitzequelle hinzufügen
+# Adding a Heat Source
 
 ```zenscript
-//Stack muss einen asssoziierten Blockzustand haben.
+//stack must have an asssociated block state.
 mods.betterwithmods.HeatRegistry.addHeatSource(IItemStack stack, int heat);
 
 mods.betterwithmods.HeatRegistry.addHeatSource(IBlockState stack, int heat);

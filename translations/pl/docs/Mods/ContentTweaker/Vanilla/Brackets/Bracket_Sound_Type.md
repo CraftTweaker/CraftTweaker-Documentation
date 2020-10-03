@@ -1,26 +1,26 @@
-# Obsługa wspornika dźwięku
+# SoundType Bracket Handler
 
-Obsługa wspornika SoundType daje Ci dostęp do SoundTypes w grze. Obecnie obsługiwane są jedyne typy dźwięków to:
+The SoundType Bracket Handler gives you access to the SoundTypes in the game. Currently the only soundTypes supported are:
 
 <details>
-    <summary>Kliknij, aby rozwinąć listę typów</summary>
+    <summary>Click to expand the type list</summary>
     <ul>
-        <li>Drewno</li>
-        <li>Sztaby i pręty drążone ze stali nierdzewnej</li>
-        <li>Roślina</li>
-        <li>Kamień</li>
-        <li>Metale</li>
-        <li>Szkło</li>
-        <li>Tkanina</li>
-        <li>Piasek</li>
-        <li>Śnieg</li>
-        <li>Drabina</li>
-        <li>Kowadło</li>
+        <li>Wood</li>
+        <li>Ground</li>
+        <li>Plant</li>
+        <li>Stone</li>
+        <li>Metal</li>
+        <li>Glass</li>
+        <li>Cloth</li>
+        <li>Sand</li>
+        <li>Snow</li>
+        <li>Ladder</li>
+        <li>Anvil</li>
         <li>Slime</li>
     </ul>
 </details>
 
-Typy dźwięków są przywoływane w uchwycie wspornika SoundType w ten sposób:
+SoundTypes are referenced in the SoundType Bracket handler this way:
 
 ```zenscript
 <soundtype:name>
@@ -28,4 +28,4 @@ Typy dźwięków są przywoływane w uchwycie wspornika SoundType w ten sposób:
 <soundtype:wood>
 ```
 
-Jeśli znaleziony zostanie typ dźwięku, zwróci to obiekt [ISoundTypeDefinition](/Mods/ContentTweaker/Vanilla/Types/Sound/ISoundTypeDefinition/).
+If the soundType is found, this will return an [ISoundTypeDefinition](/Mods/ContentTweaker/Vanilla/Types/Sound/ISoundTypeDefinition/) Object.

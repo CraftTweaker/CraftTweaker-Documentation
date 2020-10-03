@@ -1,6 +1,6 @@
-# ダイナミックソードスキル
+# Dynamic Sword Skills
 
-## 構文
+## Syntax
 
 ```zenscript
 dss|skillname|level

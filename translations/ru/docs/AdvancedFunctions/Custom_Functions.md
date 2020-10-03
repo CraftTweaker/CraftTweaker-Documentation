@@ -17,31 +17,31 @@ function имя([arguments[as тип данных]]) [as возвращаемы�
 
 ## Статические функции
 
-Статические функции создаются перед выполнением скрипта и могут быть доступны из любого места в скрипте.  
-Вы можете получить доступ к функциям, объявленным вне скрипта, используя [перекрестную ссылку](/AdvancedFunctions/Cross-Script_Reference).
+Static functions are created before the script is run and can be accessed from anywhere in the script.  
+You can even access functions declared outside the script using the [cross-script reference](/AdvancedFunctions/Cross-Script_Reference).
 
 ### Функции без возвращаемого значения
 
-Безграничные функции - это функции, которые не возвращают никакого значения.
+Void functions are functions that will not return any value.
 
 ```zenscript
-//вызывает функцию tens() без аргументов
+//calls the function tens() without arguments
 tens();
 
-//вызывает функцию realTens() со строкой "Hello World!" в качестве аргумента
-realTens("Hello World! );
+//calls the function realTens() with the String "Hello World!" as argument
+realTens("Hello World!");
 
 
-//crates function tens() без необходимых аргументов
+//crates function tens() with no required arguments
 function tens(){
-    //Calls function realTens() с "" в качестве аргумента
+    //Calls function realTens() with "" as argument
     realTens("");
 }
 
 
-//создает функцию realTens() с одной строкой, требуемой в качестве аргумента
+//creates function realTens() with one string required as argument
 function realTens(a as string){
-    //выводит аргумент 10 раз
+    //prints the argument 10 times
     for i in 1 to 11{
         print(a);
     }
@@ -50,29 +50,29 @@ function realTens(a as string){
 
 ### Функции с возвращаемым значением
 
-Вы также можете указать значение, которое должна быть возвращена функцией. Рекомендуется использовать ключевое слово `в качестве` для определения возвращаемого типа.
+You can also specify a value that should be returned by a function. It is recommended using the `as` keyword to define the return type.
 
 ```zenscript
-//вызывает добавление функции с 1 и 99 параметрами
-результата = add(1,99);
+//calls add function with 1 and 99 as parameters
+val result = add(1,99);
 print(result);
 
-//вы можете поместить функцию добавления внутри функции печати и
+//you can place the add function inside the print function as well
 print(add(2,64));
 
-//определяет функцию add() с параметрами и b (оба задаются как целые числа! и устанавливает тип возврата в целое число
-(как int, as int) as int{
-    //возвращает сумму a and b
+//defines function add() with a and b as parameters (both set to be Integers!) and sets the return type to Integer
+function add(a as int,b as int) as int{
+    //returns the sum of a and b
     return a+b;
 }
 ```
 
 ## Функции как переменные
 
-Вы также можете использовать функции как переменные. В этом случае, они будут создаваться как отдельные классы. Кроме того, они работают довольно точно так же, как статические функции, вы вызываете их по имени переменной.  
-Вы можете использовать их даже в качестве [глобальных переменных](/AdvancedFunctions/Global_Static_Variables/) таким образом.
+Вы также можете использовать функции как переменные. В этом случае, они будут создаваться как отдельные классы. Other than that, they work pretty much the same as static functions, you call them by their variable name.  
+You can even use them as [global variables](/AdvancedFunctions/Global_Static_Variables/) this way.
 
-Если вам нужно охарактеризовать метод (как для глобальных) вы можете использовать это:
+If you need to cast the method (as you do for globals) you can use this:
 
     global addition as function(int, int)int = function (a as int, b as int) as int {
         return a + b;

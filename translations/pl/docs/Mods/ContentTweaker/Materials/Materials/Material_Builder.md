@@ -1,55 +1,55 @@
-# Konstruktor materiałów
+# Material Builder
 
-Jeśli chcesz zbudować [materiał](/Mods/ContentTweaker/Materials/Materials/Material/), będziesz potrzebował Budowniczego Materiałów!  
-Nie brzmi tak mocno, prawda?
+If you want to build a [material](/Mods/ContentTweaker/Materials/Materials/Material/), you will need a Material Builder!  
+Doesn't sound that hard, does it?
 
-## Importowanie pakietu
+## Importing the package
 
-Może być wymagane zaimportowanie pakietu, jeśli napotkasz jakieś problemy, więc lepiej być bezpiecznym niż przepraszamy i dodać import.  
-`zaimportuj mods.contenttweaker.MaterialBuilder;`
+It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
+`import mods.contenttweaker.MaterialBuilder;`
 
-## Pobieranie takiego obiektu
+## Retrieving such an object
 
-Możesz pobrać nowy, wyczyść Konstruktor używając [Pakietu MaterialSystem](/Mods/ContentTweaker/Materials/MaterialSystem/):
+You can retrieve a new, clear Builder using the [MaterialSystem Package](/Mods/ContentTweaker/Materials/MaterialSystem/):
 
 ```zenscript
 var mBuilder = mods.contenttweaker.MaterialSystem.getMaterialBuilder();
 ```
 
-## Ustaw właściwości Material
+## Set the Material's Properties
 
-Możesz ustawić te właściwości
+You can set these Properties
 
-| Metoda ZenMethod        | Parametr                                                         |
+| ZenMethod               | Parameter                                                        |
 | ----------------------- | ---------------------------------------------------------------- |
-| setName(nazwa)          | nazwa ciągu                                                      |
-| setColor(color)         | kolor koloru                                                     |
+| setName(name)           | string name                                                      |
+| setColor(color)         | int color                                                        |
 | setColor(color)         | [CTColor](/Mods/ContentTweaker/Vanilla/Types/Color/Color/) color |
-| setHasEffect(hasEffect) | Efekt logiczny                                                   |
+| setHasEffect(hasEffect) | boolean hasEffect                                                |
 
-Wszystkie te metody robią 2 rzeczy: po pierwsze, zmieniają własność konstruktora, po drugie, zwracają zmodyfikowanego konstruktora.  
-W przykładowych skryptach poniżej możesz zobaczyć co to oznacza.
+All these Methods do 2 things: Firstly, they change the builder's Property, secondly they return the modified builder.  
+You can see in the example scripts below what this means.
 
-## W rzeczywistości buduj materiał
+## Actually build the Material
 
-Zanim będziesz mógł zbudować swój materiał, musisz go zbudować:
+Before you can build your material, you need to build it:
 
 ```zenscript
 mBuilder.build();
 ```
 
-To zwraca obiekt [IMaterial](/Mods/ContentTweaker/Materials/Materials/Material/)
+This returns an [IMaterial](/Mods/ContentTweaker/Materials/Materials/Material/) Object.
 
-## Przykładowy skrypt
+## Example Script
 
 ```zenscript
-importuj mods.contentTweaker.MaterialSystem;
+import mods.contentTweaker.MaterialSystem;
 
-var Builder = MaterialSystem.getMaterialBuilder();
+var builder = MaterialSystem.getMaterialBuilder();
 builder.setName("Urubuntu");
 builder.setColor(000151);
 builder.setHasEffect(false);
-val urubunt = builder.build();
+val urubuntu = builder.build();
 
 val arakantara = MaterialSystem.getMaterialBuilder().setName("Arakantara").setColor(15592941).setHasEffect(true).build();
 ```

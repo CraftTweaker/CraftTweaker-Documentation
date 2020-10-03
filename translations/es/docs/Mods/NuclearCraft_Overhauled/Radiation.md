@@ -1,114 +1,114 @@
-# Radiación
+# Radiation
 
-## Triturador de radiación
+## Radiation Scrubber
 
-### Importando el Paquete
-`mods.nuclearcraft.SupercoolerRadiación de goma`
+### Importing the Package
+`mods.nuclearcraft.RadiationScrubber`
 
-### Añadiendo recetas
+### Adding Recipes
 ```zenscript
-mods.nuclearcraft.Supercoolermods.nuclearcraft.RadiationScrubber.addRecipe(IIngredient itemInput, ILiquidStack fluidInput, IIngredient itemOutput, ILiquidStack fluidOutput, int processTime, int processPower, double processEfficiency);
+mods.nuclearcraft.mods.nuclearcraft.RadiationScrubber.addRecipe(IIngredient itemInput, ILiquidStack fluidInput, IIngredient itemOutput, ILiquidStack fluidOutput, int processTime, int processPower, double processEfficiency);
 ```
 
-### Eliminando recetas
+### Removing Recipes
 ```zenscript
-mods.nuclearcraft.SupercoolerRadiationScrubber.removeRecipeWithInput(IIngredient itemInput, ILiquidStack fluidInput);
+mods.nuclearcraft.RadiationScrubber.removeRecipeWithInput(IIngredient itemInput, ILiquidStack fluidInput);
 mods.nuclearcraft.mods.nuclearcraft.RadiationScrubber.removeRecipeWithInput(IIngredient itemInput, ILiquidStack fluidInput);
 mods.nuclearcraft.RadiationScrubber.removeRecipeWithOutput(IIngredient itemOutput, ILiquidStack fluidOutput);
-mods.nuclearcraft.RadiationScrubber.removeAllRecipes();RadiationScrubber.removeAll-Recipes();
+mods.nuclearcraft.RadiationScrubber.removeAllRecipes();RadiationScrubber.removeAllRecipes();
 ```
 
-## Bloquear mutación
+## Block Mutation
 
-### Importando el Paquete
-`mods.nuclearcraft.SupercoolerRadiationBlockmut`
+### Importing the Package
+`mods.nuclearcraft.RadiationBlockMutation`
 
-### Añadiendo recetas
+### Adding Recipes
 ```zenscript
-mods.nuclearcraft.Supercoolermods.nuclearcraft.RadiationBlockMutation.addRecipe(IIngredient blockInput, IIngredient blockOutput, double radiationThreshold);
+mods.nuclearcraft.mods.nuclearcraft.RadiationBlockMutation.addRecipe(IIngredient blockInput, IIngredient blockOutput, double radiationThreshold);
 ```
 
-### Eliminando recetas
+### Removing Recipes
 ```zenscript
-mods.nuclearcraft.SupercoolerRadiationBlockMutation.removeRecipeWithInput(IIngredient blockInput);
-mods.nuclearcraft.RadiationBlockMutation.removeRecipeWithOutput(IIngredient blockSalput);
-mods.nuclearcraft.RadiationBlockMutation.removeAlleccipes();
+mods.nuclearcraft.RadiationBlockMutation.removeRecipeWithInput(IIngredient blockInput);
+mods.nuclearcraft.RadiationBlockMutation.removeRecipeWithOutput(IIngredient blockOutput);
+mods.nuclearcraft.RadiationBlockMutation.removeAllRecipes();
 ```
 
-## Purificación de Bloques
+## Block Purification
 
-### Importando el Paquete
-`mods.nuclearcraft.Supercoolermods.nuclearcraft.RadiationBlockPurification`
+### Importing the Package
+`mods.nuclearcraft.mods.nuclearcraft.RadiationBlockPurification`
 
-### Añadiendo recetas
+### Adding Recipes
 ```zenscript
-mods.nuclearcraft.Supercoolermods.nuclearcraft.RadiationBlockPurification.addRecipe(IIngredient blockInput, IIngredient blockOutput, double radiationThreshold);
+mods.nuclearcraft.mods.nuclearcraft.RadiationBlockPurification.addRecipe(IIngredient blockInput, IIngredient blockOutput, double radiationThreshold);
 ```
 
-### Eliminando recetas
+### Removing Recipes
 ```zenscript
 mods.nuclearcraft.RadiationScrubberRadiationBlockPurification.removeRecipeWithInput(IIngredient blockInput);
-mods.nuclearcraft.RadiationBlockPurification.removeRecipeWithOutput(IIngredient blockSalput);
-mods.nuclearcraft.RadiationBlockPurification.remover todos los recetas ();
+mods.nuclearcraft.RadiationBlockPurification.removeRecipeWithOutput(IIngredient blockOutput);
+mods.nuclearcraft.RadiationBlockPurification.removeAllRecipes();
 ```
 
-## Radiación de entidades
+## Entity Radiation
 
-### Radiación
-`cantidad` es la cantidad de radiación añadida a la `IEntityLivingBase`. `useInmunity` controla si la función ocurre incluso la `IEntityLivingBase` es inmune.
+### Radiation
+`amount` is the amount of radiation added to the `IEntityLivingBase`. `useImmunity` controls whether the function occurs even the `IEntityLivingBase` is immune.
 ```zenscript
-IEntityLivingBase::addRadiation(doble monto, @Optional boolean useInmunity);
-IEntityLivingBase::setRadiation(doble monto, @Optional boolean useImmunity);
+IEntityLivingBase::addRadiation(double amount, @Optional boolean useImmunity);
+IEntityLivingBase::setRadiation(double amount, @Optional boolean useImmunity);
 IEntityLivingBase::getRadiation();
 ```
 
-### Búfer Radaway
-`cantidad` es la cantidad de Radaway Buffer añadido a la `IEntityLivingBase`. `lento Buffer` decide si el Radaway Buffer añadido es un búfer lento.
+### Radaway Buffer
+`amount` is the amount of Radaway Buffer added to the `IEntityLivingBase`. `slowBuffer` decides if the Radaway Buffer added is a slow buffer.
 ```zenscript
-IEntityLivingBase::addRadawayBuffer(doble monto, @Optional boolean slowBuffer);
-IEntityLivingBase::setRadawayBuffer(doble monto, @Optional boolean slowBuffer);
+IEntityLivingBase::addRadawayBuffer(double amount, @Optional boolean slowBuffer);
+IEntityLivingBase::setRadawayBuffer(double amount, @Optional boolean slowBuffer);
 IEntityLivingBase::getRadawayBuffer(boolean slowBuffer);
 ```
-**Note: Si `slowBuffer` es `true`, `getRadawayBuffer()` devolverá el búfer de eliminación de radiación de acción lenta en lugar del búfer normal.**
+**Note: If `slowBuffer` is `true`, `getRadawayBuffer()` will return the slow-acting radiation removal buffer instead of the normal one.**
 
-### Veneno
-`cantidad` es la cantidad de Búfer de Veneno añadido a la `IEntityLivingBase`.
+### Poison
+`amount` is the amount of Poison Buffer added to the `IEntityLivingBase`.
 ```zenscript
-IEntityLivingBase::addPoisonBuffer(doble cantidad);
-IEntityLivingBase::setPoisonBuffer(doble cantidad);
+IEntityLivingBase::addPoisonBuffer(double amount);
+IEntityLivingBase::setPoisonBuffer(double amount);
 IEntityLivingBase::getPoisonBuffer();
 ```
 
-### Resistencia a radiaciones
-`cantidad` es la cantidad de Resistencia a Radiación añadida a la `IEntityLivingBase`.
+### Radiation Resistance
+`amount` is the amount of Radiation Resistance added to the `IEntityLivingBase`.
 ```zenscript
-ItityLivingBase::addRadiationResistance(doble monto);
-IEntityLivingBase::setRadiationResistance(doble monto);
+IEntityLivingBase::addRadiationResistance(double amount);
+IEntityLivingBase::setRadiationResistance(double amount);
 IEntityLivingBase::getRadiationResistance();
 ```
 
-### Obtención de Nivel de Radiación
+### Radiation Level Getters
 
-#### Nivel de radiación rauda
-Este método devuelve la radiación de la `IEntityLivingBase` en rads.
+#### Raw Radiation Level
+This method returns the radiation of the `IEntityLivingBase` in rads.
 ```zenscript
 IEntityLivingBase::getRawRadiationLevel();
 ```
 
-### Nivel de radiación
-Este método devuelve el cambio en el nivel de radiación de la `IEntityLivingBase` en rads/tick.
+### Radiation Level
+This method returns the change in radiation level of the `IEntityLivingBase` in rads/tick.
 ```zenscript
 IEntityLivingBase::getRadiationLevel();
 ```
 
-## Radiación
-Este método obtiene la radiación de un `IIngrediente` en rads/tick.
+## Radiation
+This method gets the radiation of an `IIngredient` in rads/tick.
 ```zenscript
-mods.nuclearcraft.Supercoolermods.nuclearcraft.Radiation.getRadiationLevel(IIngredient itemInput);
+mods.nuclearcraft.mods.nuclearcraft.Radiation.getRadiationLevel(IIngredient itemInput);
 ```
 
-## Inmunidad por radiación
-Este método da la capacidad de controlar la inmunidad de los jugadores dependiendo del escenario. `defaultInmunity` es un booleano que especifica la inmunidad de los jugadores sin las etapas especificadas. `stageNames` es un array de los nombres de todas las etapas que pueden cambiar la inmunidad de los jugadores.
+## Radiation Immunity
+This method gives the ability to control the immunity of players depending on the stage. `defaultImmunity` is a boolean specifiying the players' immunity without the specified stages. `stageNames` is an array of the names of all stages that can toggle the immunity of players.
 ```zenscript
-mods.nuclearcraft.Supercoolermods.nuclearcraft.Radiation.setRadiationImmunityGameStages(boolean defaultImmunity, String[] stageNames);
+mods.nuclearcraft.mods.nuclearcraft.Radiation.setRadiationImmunityGameStages(boolean defaultImmunity, String[] stageNames);
 ```

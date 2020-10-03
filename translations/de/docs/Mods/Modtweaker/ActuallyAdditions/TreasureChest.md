@@ -1,6 +1,6 @@
-# Schatztruhe
+# Treasure Chest
 
-## Paket
+## Package
 
 `mods.actuallyadditions.TreasureChest`
 
@@ -11,7 +11,7 @@
 mods.actuallyadditions.TreasureChest.addLoot(<minecraft:dirt>, 50, 1, 64);
 ```
 
-## Entfernen
+## Removal
 
 ```zenscript
 //mods.actuallyadditions.TreasureChest.removeLoot(IItemStack returnItem);

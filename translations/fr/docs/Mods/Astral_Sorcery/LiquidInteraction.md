@@ -1,19 +1,19 @@
-# Interaction Liquid
+# LiquidInteraction
 
-Le paquet liquidInteraction est utilisé pour ajouter des interactions liquides (comme de la lave et de la lumière étoilée liquide) aux calices AS.
+The liquidInteraction package is used to add Liquid interactions (like lava and liquid starlight) to AS chalices.
 
-## Importation du paquet
+## Importing the package
 
-Si vous voulez importer le paquet, voici :
+If you want to import the package, here you go:
 
 ```zenscript
-Importer mods.astralsorcery.LiquidInteraction;
+import mods.astralsorcery.LiquidInteraction;
 ```
 
-## Supprimer l'interaction
+## Remove interaction
 
-Cette fonction supprime la première recette qu'elle trouve qui utilise les [liquides](/Vanilla/Liquids/ILiquidStack/) donnés et retourne la pile de sortie [donnée](/Vanilla/Items/IItemStack/).  
-Si vous omettez la sortie, elle supprimera la première recette qui utilise les deux liquides donnés indépendamment de leur sortie.
+This function removes the first recipe it finds that uses the given [liquids](/Vanilla/Liquids/ILiquidStack/) and returns the given output [stack](/Vanilla/Items/IItemStack/).  
+If you leave out the output, it will remove the first recipe that uses the two given liquids regardless of their output.
 
 ```zenscript
 //LiquidInteraction.removeInteraction(ILiquidStack liquid1, ILiquidStack liquid2, @Optional IItemStack output);
@@ -21,13 +21,13 @@ LiquidInteraction.removeInteraction(<liquid:lava>, <liquid:starlight>);
 LiquidInteraction.removeInteraction(<liquid:lava>, <liquid:starlight>, <minecraft:obsidian>);
 ```
 
-## Ajout de recette
+## Recipe addition
 
-Ajoute une interaction liquide aux interactions calicoles
+Adds a liquid interaction to the chalice-interactions
 
-[Les quantités](/Vanilla/Liquids/ILiquidStack/) de FluidStack comptent comme la quantité de liquide qui sera consommée en cas d'interaction.  
-chance1 et chance2 définissent les chances que les fluides d'entrée input1 et input2 soient consommés respectivement.  
-le poids détermine la probabilité que cela soit sélectionné par rapport aux autres interactions liquides enregistrées pour une paire donnée d'entrées de fluides
+[FluidStack](/Vanilla/Liquids/ILiquidStack/) amounts count as the amount of liquid that will be consumed if an interaction occurs.  
+chance1 and chance2 define the chances the input fluids input1 and input2 are consumed respectively.  
+weight determines how likely this is to be selected in comparison to the other liquid interactions registered for a given pair of fluid-inputs
 
 ```zenscript
 //LiquidInteraction.addInteraction(ILiquidStack liquidIn1, float chanceConsumption1, ILiquidStack liquidIn2, float chanceConsumption2, int weight, IItemStack output);

@@ -1,27 +1,27 @@
-# Banco Da Lavoro Arcano
+# Arcane Workbench
 
-Questo pacchetto consente di aggiungere e rimuovere ricette da/per il banco di lavoro Arcana.
+This package allows you to add and remove recipes to/from the Arcane Workbench.
 
-## Importazione del pacchetto
+## Importing the package
 
-È possibile [importare](/AdvancedFunctions/Import/) il pacchetto e i suoi metodi per facilitare il retrival dei metodi.
+You can [import](/AdvancedFunctions/Import/) the package and its methods to facilitate the retrival of the methods.
 
 ```zenscript
 import mods.thaumcraft.ArcaneWorkbench;
 ```
 
-## Aggiungere ricette
+## Adding recipes
 
 ```zenscript
-//mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe(Nome string, String Research, int vis, CTAspectStack[] aspectList, IItemStack output, IIngredient[][] input);
-mods. haumcraft.ArcaneWorkbench. egisterShapedRecipe("test", "", 20, [<aspect:aer>, <aspect:ignis>, <aspect:terra>], <minecraft:diamond>, [[<minecraft:dirt>], [<minecraft:stick>], [<minecraft:grass>]]);
+//mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe(String name, String research, int vis, CTAspectStack[] aspectList, IItemStack output, IIngredient[][] input);
+mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("test", "", 20, [<aspect:aer>, <aspect:ignis>, <aspect:terra>], <minecraft:diamond>, [[<minecraft:dirt>], [<minecraft:stick>], [<minecraft:grass>]]);
 
 
-//mods. haumcraft.ArcaneWorkbench.registerShapelessRecipe(String name, String Research, int vis, CTAspectStack[] aspectList, IItemStack output, IIngredient[] input);
-mods. haumcraft.ArcaneWorkbench.registerShapelessRecipe("tests", "", 20, [<aspect:aqua>, <aspect:ignis>, <aspect:terra>], <minecraft:diamond>, [<minecraft:sand>, <minecraft:stick>, <minecraft:grass>]);
+//mods.thaumcraft.ArcaneWorkbench.registerShapelessRecipe(String name, String research, int vis, CTAspectStack[] aspectList, IItemStack output, IIngredient[] input);
+mods.thaumcraft.ArcaneWorkbench.registerShapelessRecipe("tests", "", 20, [<aspect:aqua>, <aspect:ignis>, <aspect:terra>], <minecraft:diamond>, [<minecraft:sand>, <minecraft:stick>, <minecraft:grass>]);
 ```
 
-## Rimozione ricette
+## Removing recipes
 
 ```zenscript
 //mods.thaumcraft.ArcaneWorkbench.removeRecipe(String name);

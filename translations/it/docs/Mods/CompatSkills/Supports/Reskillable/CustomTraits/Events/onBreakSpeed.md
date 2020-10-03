@@ -1,15 +1,15 @@
 ### onBreakSpeed
 
-| Setter/Getter/Method | Nomi Metodo                  | Nomi                      | Input/Output                                               |
-|:-------------------- |:---------------------------- |:------------------------- | ---------------------------------------------------------- |
-| Getter               | getBlockState();             | blockState();             | Restituisce un [IBlockState](/Vanilla/Blocks/IBlockState/) |
-| Getter               | getBlock();                  | blocco();                 | Restituisce un [IBlock](/Vanilla/Blocks/IBlock/)           |
-| Getter               | getOriginalSpeed();          | originalSpeed();          | Restituisce un Fluttuante                                  |
-| Getter               | getNewSpeed();               | newSpeed();               | Restituisce un Fluttuante                                  |
-| Setter               | setNewSpeed(float newSpeed); | newSpeed(float newSpeed); | Prende un galleggiante                                     |
+| Setter/Getter/Method | Method Names                 | Names                     | Input/Output                                           |
+|:-------------------- |:---------------------------- |:------------------------- | ------------------------------------------------------ |
+| Getter               | getBlockState();             | blockState();             | Returns an [IBlockState](/Vanilla/Blocks/IBlockState/) |
+| Getter               | getBlock();                  | block();                  | Returns an [IBlock](/Vanilla/Blocks/IBlock/)           |
+| Getter               | getOriginalSpeed();          | originalSpeed();          | Returns an Float                                       |
+| Getter               | getNewSpeed();               | newSpeed();               | Returns an Float                                       |
+| Setter               | setNewSpeed(float newSpeed); | newSpeed(float newSpeed); | Takes an Float                                         |
 
-    var test = mods.compatskills.TraitCreator.createTrait("test", 2, 3, "compatskills:banana", 1, "compatskills:banana<unk> 5");
+    var test = mods.compatskills.TraitCreator.createTrait("test", 2, 3, "compatskills:banana", 1, "compatskills:banana|5");
     
     test.onBreakSpeed = function(event as crafttweaker.event.PlayerBreakSpeedEvent) {
-    ...
+        ...
     };

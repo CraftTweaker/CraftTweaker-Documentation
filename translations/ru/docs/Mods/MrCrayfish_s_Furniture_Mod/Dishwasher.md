@@ -1,31 +1,31 @@
-# Мебель
+# Dishwasher
 
-Dishwasher позволяет очистить грязные инструменты.
+The Dishwasher allows you to clean dirty tools.
 
-По умолчанию ремонт прочности ванильных инструментов и оружия.
+By default repairs durability of vanilla tools and weapons only.
 
-## Удаление
+## Removing
 
-## Удалить подходящие элементы.
+## Remove matching washable items.
 
 ```zenscript
 mods.cfm.Dishwasher.remove(@Optional final IIngredient item);
 
 mods.cfm.Dishwasher.remove(<minecraft:flint_and_steel>);
-// Удаляем все отнимаемые элементы.
+// Remove all washable items.
 mods.cfm.Dishwasher.remove();
 ```
 
-## Добавление
+## Adding
 
-## Добавить стилизованный элемент.
+## Add a washable item.
 
 ```zenscript
-mods.cfm.Dishwasher.add(@Nonnull final IItemStack);
+mods.cfm.Dishwasher.add(@Nonnull final IItemStack item);
 
 mods.cfm.Dishwasher.add(<minecraft:wooden_shovel>);
 mods.cfm.Dishwasher.add(<minecraft:stone_shovel>);
-mods.cfm. ishwasher.add(<minecraft:iron_shovel>);
+mods.cfm.Dishwasher.add(<minecraft:iron_shovel>);
 mods.cfm.Dishwasher.add(<minecraft:diamond_shovel>);
 mods.cfm.Dishwasher.add(<minecraft:shield>);
 mods.cfm.Dishwasher.add(<minecraft:bow>);

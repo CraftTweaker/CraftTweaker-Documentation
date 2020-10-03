@@ -1,32 +1,32 @@
-# Avancement des joueurs
+# PlayerAdvancement
 
-L'Evénement d'avancement des joueurs est lancé chaque fois qu'un joueur reçoit un Avancement.
+The PlayerAdvancement Event is fired whenever a player is awarded an Advancement.
 
-## Classe de l'événement
+## Event Class
 
-Vous devrez lancer l'événement dans l'en-tête de la fonction comme cette classe:  
-`crafttweaker.event. layerAdvancementEvent`  
-Vous pouvez, bien sûr, également [importer](/AdvancedFunctions/Import/) la classe avant et utiliser ce nom alors.
+You will need to cast the event in the function header as this class:  
+`crafttweaker.event.PlayerAdvancementEvent`  
+You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
 
-## Extensions d'interface de l'événement
+## Event interface extensions
 
-Les événements PlayerAdvancement implémentent les interfaces suivantes et peuvent également appeler toutes leurs méthodes/getters/setters :
+PlayerAdvancement Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
 
-- [Evénement IPlayer](/Vanilla/Events/Events/IPlayerEvent/)
+- [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
 
 ## ZenGetters
 
-Les informations suivantes peuvent être récupérées à partir de l'événement :
+The following information can be retrieved from the event:
 
-| ZenGetter | Type de retour       |
-| --------- | -------------------- |
-| `id`      | chaîne de caractères |
+| ZenGetter | Return Type |
+| --------- | ----------- |
+| `id`      | string      |
 
 ## Id
 
-En dehors de la fonctionnalité que le PlayerEvent expose vous pouvez obtenir l'ID de l'avancement en tant que chaîne.
+Apart from the functionality the PlayerEvent exposes you can get the advancement's ID as string.
 
-Cela peut par exemple être une chaîne de caractères comme
+This can for example be a string like
 
 ```zenscript
 "minecraft:story/mine_diamond"

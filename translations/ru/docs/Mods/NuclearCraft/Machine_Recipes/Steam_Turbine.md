@@ -1,14 +1,14 @@
-# Паровая турбина
+# Steam Turbine
 
-## Импортирование пакета
+## Importing the Package
 `mods.nuclearcraft.turbine`
 
-## Добавление рецептов
+## Adding Recipes
 ```zenscript
-mods.nuclearcraft.turbine.addRecipe([fluidInput, fluidOutput, double powerPerMB, double expansion]);
+mods.nuclearcraft.turbine.addRecipe([fluidInput, fluidOutput, double powerPerMB, double expansionLevel]);
 ```
 
-## Удаление рецептов
+## Removing Recipes
 ```zenscript
 mods.nuclearcraft.turbine.removeRecipeWithInput([fluidInput]);
 mods.nuclearcraft.turbine.removeRecipeWithOutput([fluidOutput]);

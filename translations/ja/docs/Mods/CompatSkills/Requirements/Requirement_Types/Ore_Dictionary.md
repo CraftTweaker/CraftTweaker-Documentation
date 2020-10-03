@@ -1,8 +1,8 @@
-# 鉱石辞書
+# Ore Dictionary
 
-鉱石辞書の要件はかなり新しいものであり、プレイヤーがメインハンドまたはオフハンドに一致する鉱石辞書の値を持つアイテムを持っている必要があります。
+Ore Dictionary Requirements are fairly new and requires the player to be holding either in their main-hand or in their off-hand an item with the matching ore-dictionary value.
 
-    例:
+    Example:
     ore|string
     
     Working Example:

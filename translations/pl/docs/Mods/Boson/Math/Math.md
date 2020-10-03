@@ -1,283 +1,283 @@
-# `Matematyka`
+# `Math`
 
-`Matematyka` jest klasą kontenera dla zestawu podstawowych funkcji matematycznych. Zobacz stronę [Koncepcja](/Mods/Boson/Math/Concept/) , aby uzyskać więcej informacji.
+`Math` is the container class for a set of basic mathematical functions. Refer to the [Concept](/Mods/Boson/Math/Concept/) page for more information.
 
-## Szczegóły klasy
-Jako część projektu ZenScriptX, w pełni kwalifikowana nazwa klasy to `zenscriptx.math.Math`.
+## Class Details
+Being part of the ZenScriptX Project, the fully qualified name for the class is `zenscriptx.math.Math`.
 
-## Tworzenie nowej instancji
-Ponieważ ta klasa jest tylko posiadaczem funkcji matematycznych, nie można utworzyć nowej instancji. Należy raczej powoływać się na wszystkie metody samej klasy.
+## Creating a New Instance
+Since this class is just a holder of mathematical functions, it is impossible to create a new instance. Rather, all methods should be invoked on the class itself.
 
-## Metody
-To save up on space, the methods will be presented in a single snippet, grouped according to the kind of operation they perform with a comment above outlining what the method is supposed to do and any other conditions that should be kept into consideration when using the method. Ponadto wiele metod może być pogrupowanych razem, jeśli są bliskimi przeciążeniami siebie nawzajem (tj. . robią to samo, ale mają inne argumenty lub typy zwrotu).
+## Methods
+To save up on space, the methods will be presented in a single snippet, grouped according to the kind of operation they perform with a comment above outlining what the method is supposed to do and any other conditions that should be kept into consideration when using the method. Moreover, multiple methods may be grouped together if they're close overloads of one another (i.e. they do the same thing, but they have different argument or return types).
 
 ```zenscript
-# ta metoda robi coś
-metody funkcji (argument jako podwójna, argument2 jako bool) jako podwójna;
-metoda funkcji (argument jako zmienna, argument2 jako bool) jako float;
+# this method does something
+function method(argument as double, argument2 as bool) as double;
+function method(argument as float, argument2 as bool) as float;
 
-# ta metoda robi coś innego i może zwrócić pustą
-metodę funkcji2() jako bool?;
+# this method does something else, and may return null
+function method2() as bool?;
 ```
 
-### Stałe matematyczne
-Metody te zapewniają dostęp do istotnych stałych matematycznych, które mogą być stosowane we wszystkich innych operacjach, w razie potrzeby. Ich precyzja jest jak największą precyzją zgodnie z zastosowaną reprezentacją wewnątrz komputerów (i. . najbardziej dokładna liczba jest reprezentatywna z `podwójnym`).
+### Mathematical Constants
+These methods provide access to notable mathematical constants that may be used across other operations, if needed. Their precision is the biggest possible precision according to the used representation inside computers (i.e. the most accurate number representable with a `double`).
 
 ```zenscript
-# Otrzymuje wartość PI, która jest stosunkiem obwodu okręgu do jego średnicy, około 3. 4159
-funkcja pi() jako podwójna;
+# Obtains the value of PI, which is the ratio of a circumpherence of a circle to its diameter, approximately 3.14159
+function pi() as double;
 
-# Uzyskuje wartość E, to jest podstawa logarytmu naturalnego, około 2. 1828
-funkcja e() jako podwójna;
+# Obtains the value of E, that is the base of the natural logarithm, approximately 2.71828
+function e() as double;
 ```
 
-### Funkcje trygonometryczne
-Funkcje trygonometryczne są funkcjami, które działają z kątami i odnoszą się do stosunku dwóch bocznych szyb trójkąta o kącie prostym, wraz ze wszystkimi ich odwrotnymi funkcjami.
+### Trigonometric Functions
+Trigonometric functions are functions that work with angles and relate them to the ratio of two side lenghts of a right-angled triangle, along with all their inverse functions.
 
 ```zenscript
-# Oblicza sinus przesunętego kąta, w którym MUSI znajdować się w RADIANS
-funkcja sin(x jako podwójna) jako dwukrotna;
-funkcja sin(x jako pływak) jako pływak;
+# Computes the sine of the angle passed in, which MUST be in RADIANS
+function sin(x as double) as double;
+function sin(x as float) as float;
 
-# Oblicza sinus przesunętego kąta, w którym MUSI znajdować się w funkcji BARDZIEJ
-(x jako podwójne) jako dwukrotnie;
-funkcja zwinięta (x jako pływak) jako pływak;
+# Computes the sine of the angle passed in, which MUST be in DEGREES
+function sind(x as double) as double;
+function sind(x as float) as float;
 
-# Oblicza cosinus przeszedł kąt, w którym MUSI być w RADIANS
-cos(x jako podwójny) jako dwukrotnie;
-funkcje cos(x jako pływak) jako pływak;
+# Computes the cosine of the angle passed in, which MUST be in RADIANS
+function cos(x as double) as double;
+function cos(x as float) as float;
 
-# Oblicza cosinus przeszedł kąt, w którym MUSI znajdować się w METEES
-funkcje cosd(x jako podwójne) jako dwukrotne;
-funkcja cosd(x jako pływak) jako pływak;
+# Computes the cosine of the angle passed in, which MUST be in DEGREES
+function cosd(x as double) as double;
+function cosd(x as float) as float;
 
-# Oblicza tangens przesunętego kąta, w którym MUSI znajdować się w RADIANS
-funkcja tan(x jako podwójne) jako dwukrotne;
-funkcja tan(x jako pływak) jako pływak;
+# Computes the tangent of the angle passed in, which MUST be in RADIANS
+function tan(x as double) as double;
+function tan(x as float) as float;
 
-# Oblicza tangens przesunętego kąta, w którym MUSI znajdować się w METEES
-funkcja tand(x jako podwójne) jako dwukrotne;
-funkcja tand(x jako pływak) jako pływak;
+# Computes the tangent of the angle passed in, which MUST be in DEGREES
+function tand(x as double) as double;
+function tand(x as float) as float;
 
-# Oblicza siemię łuku podanej wartości, zwracając wartość pomiędzy -PI/2 i PI/2 radianami
-funkcja asin(x jako podwójne) jako podwójna;
-funkcja asin(x jako pływak) jako pływak;
+# Computes the arc sine of the given value, returning a value between -PI/2 and PI/2 radians
+function asin(x as double) as double;
+function asin(x as float) as float;
 
-# Oblicza sinus podanej wartości, zwracając wartość pomiędzy -90 a 90 stopni
-funkcji asind(x jako podwójną) w postaci podwójnej;
-funkcja asind(x jako pływak) jako pływak;
+# Computes the arc sine of the given value, returning a value between -90 and 90 degrees
+function asind(x as double) as double;
+function asind(x as float) as float;
 
-# Oblicza koszynę łuku podanej wartości, zwracając wartość pomiędzy 0 i PI radianów
-funkcje acos(x jako podwójne) jako dwukrotne;
-funkcja acos(x jako pływak) jako pływak;
+# Computes the arc cosine of the given value, returning a value between 0 and PI radians
+function acos(x as double) as double;
+function acos(x as float) as float;
 
-# Oblicza kozynę łuku podanej wartości, zwracając wartość pomiędzy 0 a 180 stopni
-funkcję acosd(x jako podwójną) jako podwójną;
-funkcja asind(x jako pływak) jako pływak;
+# Computes the arc cosine of the given value, returning a value between 0 and 180 degrees
+function acosd(x as double) as double;
+function asind(x as float) as float;
 
-# Oblicza tangens łuku podanej wartości, zwracając wartość pomiędzy -PI/2 i PI/2 radianami
-funkcja atan(x jako podwójna) jako podwójna;
-funkcja atan(x jako pływak) jako pływak;
+# Computes the arc tangent of the given value, returning a value between -PI/2 and PI/2 radians
+function atan(x as double) as double;
+function atan(x as float) as float;
 
-# Oblicza styczność łuku podanej wartości, zwracając wartość między -90 a 90 stopni
-funkcja atand(x jako podwójna) jako podwójna;
-funkcja atand(x jako pływak) jako pływak;
+# Computes the arc tangent of the given value, returning a value between -90 and 90 degrees
+function atand(x as double) as double;
+function atand(x as float) as float;
 
-# Oblicza 'th' współrzędnych polarnych '(r, th)', które odpowiadają współrzędnym prostokątnym '(x, y)' poprzez obliczenie stycznego łuku wartości 'y/x', zwracanie wartości pomiędzy -pi i pi radianami
-funkcji atan2(y jako podwójne, x jako podwójne) jako dwukrotnie;
-funkcji atan2(y jako pływak, x jako pływak) jako pływak;
+# Computes 'th' of the polar coordinates '(r, th)' that correspond to the rectangular coordinates '(x, y)' via computing the arc tangent of the value 'y/x', returning a value between -pi and pi radians
+function atan2(y as double, x as double) as double;
+function atan2(y as float, x as float) as float;
 ```
 
-### Funkcje hiperboliczne
-Funkcje hiperboliczne są analogami funkcji trygonometrycznych, definiowanymi raczej dla hiperboli, niż na okręgu.
+### Hyperbolic Functions
+Hyperbolic functions are analogs of the trigonometric functions, defined for a hyperbola rather than on a circle.
 
 ```zenscript
-# Oblicza syn hiperboliczny danej wartości
-funkcji sinh(x jako podwójny);
-funkcja sinh(x jako pływak) jako pływak;
+# Computes the hyperbolic sine of the given value
+function sinh(x as double) as double;
+function sinh(x as float) as float;
 
-# Oblicza kozynę hiperboliczną podanej wartości
-krzepnięcia funkcji (x jako dwukrotnie) jako dwukrotnie;
-funkcja w postaci zmiennoprzecinkowej (x jako zmiennoprzecinkowa);
+# Computes the hyperbolic cosine of the given value
+function cosh(x as double) as double;
+function cosh(x as float) as float;
 
-# Oblicza styczność hiperboliczną podanej wartości
-funkcji tanh(x jako podwójną) jako podwójną;
-funkcja tanh(x jako pływak) jako pływak;
+# Computes the hyperbolic tangent of the given value
+function tanh(x as double) as double;
+function tanh(x as float) as float;
 
-# Oblicza odwrotny sinus danej wartości
-funkcji asinh(x jako podwójna);
-funkcji asinh(x jako pływak) jako pływaka;
+# Computes the inverse hyperbolic sine of the given value
+function asinh(x as double) as double;
+function asinh(x as float) as float;
 
-# Oblicz odwrotny cosinus hiperboliczny podanej wartości, zwracając ALWAYS wynik dodatni
-funkcji acosh(x jako podwójny) jako dwukrotnie;
-funkcja akosh(x jako pływak) jako pływak;
+# Computse the inverse hyperbolic cosine of the given value, returning ALWAYS a positive result
+function acosh(x as double) as double;
+function acosh(x as float) as float;
 
-# Oblicza odwrotną styczność hiperboliczną podanej wartości
-funkcji atanh(x jako podwójne) jako dwukrotnie;
-funkcja atanh(x jako pływak) jako pływak;
+# Computes the inverse hyperbolic tangent of the given value
+function atanh(x as double) as double;
+function atanh(x as float) as float;
 ```
 
-### Funkcje trójkąta prawostronnego
-Są to niektóre dodatkowe funkcje, które można obliczyć na trójkącie o kącie prostym, oprócz funkcji trygonometrycznych ale które nie działają na kąty trójkąta.
+### Right-Angled Triangle Functions
+These are some additional functions that can be computed on a right-angled triangle, in addition to the trigonometric functions, but that do not operate on the angles of the triangle.
 
 ```zenscript
-# Oblicza długość hipotezy trójkąta z teorerem Pythagoreana, upewnienie się, że podczas obliczeń
-nie nastąpi przepełnienie lub zanik funkcji niedociśnienia (x jako dwukrotne, y jako dwukrotnie) dwukrotnie;
-niedociśnienie funkcji (x jako pływak, y jako pływak) jako pływak;
+# Computes the length of the hypothenuse of the triangle with the Pythagorean's theorem, making sure no overflow or underflow happens during the computation
+function hypot(x as double, y as double) as double;
+function hypot(x as float, y as float) as float;
 ```
 
-### Moce i Korzenie
-Funkcje te pozwalają na obliczenie mocy i pierwiastków w szybszy i skuteczniejszy sposób niż standardowa metoda mnożenia lub późniejszego odejmowania.
+### Powers and Roots
+These functions allow to compute powers and roots in a quicker and more efficient way than the standard method of multiplications or subsequent subtraction.
 
 ```zenscript
-# Oblicza dodatni pierwiastek kwadratowy danej wartości
-funkcję sqrt(x jako podwójną) jako podwójną;
-funkcja sqrt(x jako zmienna zmienna);
+# Computes the positive square root of the given value
+function sqrt(x as double) as double;
+function sqrt(x as float) as float;
 
-# Oblicza ujemny pierwiastek kwadratowy danej wartości
-funkcję nsqrt(x jako podwójną) jako dwukrotnie;
-funkcja nsqrt(x jako zmienna zmienna);
+# Computes the negative square root of the given value
+function nsqrt(x as double) as double;
+function nsqrt(x as float) as float;
 
-# Kwadraty danej wartości
-funkcja sq(x jako podwójna);
-funkcja sq(x jako pływak) jako pływak;
+# Squares the given value
+function sq(x as double) as double;
+function sq(x as float) as float;
 
-# Podnosi podaną wartość bazową do funkcji exp
-powtórzeń (podstawa jako podwójna, exp jako podwójna);
-funkcja sproszkowana (podstawa w postaci podwójnej, exp w int) w postaci podwójnej;
-funkcja sproszkowana (podstawa w postaci zmiennoprzecinkowej, exp w postaci zmiennoprzecinkowej);
-funkcja sproszkowana (podstawa jako pływak, exp w int) jako pływak;
+# Raises the given base value to the exponent exp
+function pow(base as double, exp as double) as double;
+function pow(base as double, exp as int) as double;
+function pow(base as float, exp as float) as float;
+function pow(base as float, exp as int) as float;
 ```
 
 ### Exponential Functions
-Funkcja wykładnicza jest funkcją, która przyjmuje formę `y = a * b^x`.
+An exponential function is a function that takes the form of `y = a * b^x`.
 
 ```zenscript
-# Oblicza liczbę Eulera (e) zwiększoną do mocy funkcji x
-exp(x jako podwójne) jako podwójna;
-funkcja rozwija się (x jako pływak) jako pływak;
+# Computes Euler's number (e) raised to the power of x
+function exp(x as double) as double;
+function exp(x as float) as float;
 
-# Oblicza funkcję 'exp(x) - 1', z lepszą dokładnością dla liczb, które są bliższe zeru
-funkcji expm1(x jako podwójne) jako dwukrotne;
-funkcja expm1(x jako pływak) jako pływak;
+# Computes the function 'exp(x) - 1', with a better accuracy for numbers that are nearer to zero
+function expm1(x as double) as double;
+function expm1(x as float) as float;
 ```
 
-### Funkcje logarytmiczne
-Funkcja logarytmiczna, powszechnie znana jako logarytm, jest odwrotną funkcją funkcji wykładniczej. W inny sposób niż inne funkcje, logarytm jest definiowany zgodnie z bazą, która reprezentuje liczbę, którą należy podnieść do wynikającej z tego siły, aby otrzymać argument samego logarytmu.
+### Logarithimic Functions
+A logarithmic function, commonly known as logarithm, is the inverse function of the exponential function. Differently from other functions, a logarithm is defined according to a base, which represents the number which has to be raised to the resulting power to obtain the argument of the logarithm itself.
 
 ```zenscript
-# Oblicza logarytm x dla danej funkcji bazowej
-logn(x jako podwójne, bazowe jako podwójne) jako dwukrotne;
-funkcja logn(x jako zmienna, baza jako zmienna zmienna);
+# Computes the logarithm of x to the given base
+function logn(x as double, base as double) as double;
+function logn(x as float, base as float) as float;
 
-# Oblicza logarytm naturalny podanej wartości, i. . funkcja logarytmu x do podstawy e (numer Eulera)
-ln(x jako podwójna) jako dwukrotna;
-funkcja ln(x jako zmienna zmienna);
+# Computes the natural logarithm of the given value, i.e. the logarithm of x to the base e (Euler's number)
+function ln(x as double) as double;
+function ln(x as float) as float;
 
-# Oblicza wspólny logarytm podanej wartości, tj. logarytm x do funkcji bazowej 10
-log10(x jako podwójne) jako dwukrotnie;
-funkcja log10(x jako float) jako zmienna;
+# Computes the common logarithm of the given value, i.e. the logarithm of x to the base 10
+function log10(x as double) as double;
+function log10(x as float) as float;
 
-# Oblicza logarytm binarny podanej wartości, tj. logarytm x do funkcji bazowej 2
-log2(x jako podwojony) jako podwojony;
-funkcji log2(x jako pływak) jako pływak;
+# Computes the binary logarithm of the given value, i.e. the logarithm of x to the base 2
+function log2(x as double) as double;
+function log2(x as float) as float;
 
-# Oblicza 'ln(1 + x)', z lepszą dokładnością dla liczb, które są bliżej zera
-funkcji ln1p(x jako podwójne) jako podwójne;
-funkcja ln1p(x jako pływak) jako pływak;
+# Computes 'ln(1 + x)', with a better accuracy for numbers that are nearer to zero
+function ln1p(x as double) as double;
+function ln1p(x as float) as float;
 ```
 
-### Funkcje zaokrąglania
-Funkcja zaokrąglająca jest funkcją, która odwzorowuje liczbę rzeczywistą na określoną liczbę całkowitą zgodnie z zestawem zasad, w zależności od funkcji.
+### Rounding functions
+A rounding function is a function that maps a real number to a specific integer number according to a set of rules, depending to the function.
 
 ```zenscript
-# Zaokrągla podaną wartość w kierunku dodatniej nieskończoności, zwracanie najmniejszej liczby rzeczywistej, która jest większa lub równa x i jest liczbą całkowitą matematyczną
-sufitem funkcji (x jako dwukrotnie) w postaci dwukrotnej;
-funuj pułap (x jako pływak) jako pływak;
+# Rounds the given value towards positive infinity, returning the smallest real number that is greater than or equal to x and is a mathematical integer
+function ceil(x as double) as double;
+function ceil(x as float) as float;
 
-# zaokrągla podaną wartość w kierunku nieskończoności dodatniej, zwracanie najmniejszej liczby całkowitej, która jest większa lub równa x
-ceili(x jako podwójne) jak int;
-funkcja ceili(x jako pływak) jako int;
+# Rounds the given value towards positive infinity, returning the smallest integer that is greater than or equal to x
+function ceili(x as double) as int;
+function ceili(x as float) as int;
 
-# Zaokrągla podaną wartość w kierunku dodatniego nieskończoności, zwracając najmniejszą liczbę całkowitą, która jest większa lub równa x, rozszerzony na największą reprezentatywną liczbę całkowitą
-jako długość ceilla funkcji (x jako dwukrotność);
-funkcja ceill(x jako pływak) tak długo;
+# Rounds the given value towards positive infinity, returning the smallest integer that is greater than or equal to x, expanded to the biggest representable whole number
+function ceill(x as double) as long;
+function ceill(x as float) as long;
 
-# Zaokrągla podaną wartość w kierunku ujemnej nieskończoności, zwracanie największej liczby rzeczywistej, która jest mniejsza lub równa x i jest liczbą całkowitą matematyczną
-jako podwójna funkcja (x jako podwójna);
-funkcja podłogi (x jako pływak) jako pływak;
+# Rounds the given value towards negative infinity, returning the biggest real number that is less than or equal to x and is a mathematical integer
+function floor(x as double) as double;
+function floor(x as float) as float;
 
-# Zaokrągla podaną wartość w kierunku ujemnej nieskończoności, zwracanie największej liczby całkowitej, która jest mniejsza lub równa poziomi funkcji x
-(x jako dwukrotne) w int;
-funkcja podłogi (x jako pływak) jako int;
+# Rounds the given value towards negative infinity, returning the biggest integer that is less than or equal to x
+function floori(x as double) as int;
+function floori(x as float) as int;
 
-# Zaokrągla podaną wartość w kierunku ujemnego nieskończoności, zwracając największą liczbę całkowitą, która jest mniejsza lub równa x, powiększone do największej reprezentatywnej liczby całkowitej
-jako długość podłogi (x jako dwukrotnie);
-funkcja podłogi (x jako pływak) tak długo;
+# Rounds the given value towards negative infinity, returning the biggest integer that is less than or equal to x, expanded to the biggest representable whole number
+function floorl(x as double) as long;
+function floorl(x as float) as long;
 
-# Zaokrągla podaną wartość w kierunku zera, skutecznie obcinając część ułamkową i zwracając liczbę całkowitą matematyczną
-obcięcie funkcji (x jako podwójne) jako dwukrotne;
-funkcja obcięta (x jako pływak) jako pływak;
+# Rounds the given value towards zero, effectively truncating the fractional part and returning a mathematical integer
+function truncate(x as double) as double;
+function truncate(x as float) as float;
 
-# Zaokrągla podaną wartość względem najbliższej liczby matematycznej, z podwójnym ułamkiem funkcji
-jako funkcją zaokrągloną (x jako podwójną);
-funkcja zaokrąglona (x jako pływak) jako pływak;
+# Rounds the given value towards the closest mathematical integer, with a bias towards even numbers
+function round(x as double) as double;
+function round(x as float) as float;
 
-# Zaokrągla podaną wartość w kierunku najbliższej liczby całkowitej, przy czym uprzedzenie w kierunku liczby parzystej
-funkcja roundi(x jako podwójne) jest w intach;
-funkcji roundi(x jako float) jako int;
+# Rounds the given value towards the closest integer, with a bias towards even numbers
+function roundi(x as double) as int;
+function roundi(x as float) as int;
 
-# Zaokrągla podaną wartość w kierunku najbliższej liczby całkowitej, z tendencją w kierunku liczby parzystej, i rozszerzenie wyniku na największą reprezentatywną liczbę całkowitą
-zaokrąglenie funkcji (x jako dwukrotne) jako długie;
-funkcja roundl(x jako pływak) tak długo;
+# Rounds the given value towards the closest integer, with a bias towards even numbers, and expanding the result to the biggest representable whole number
+function roundl(x as double) as long;
+function roundl(x as float) as long;
 ```
 
-### Funkcje oparte na znakach
-Funkcje te działają głównie lub wyłącznie na oznaki argumentu.
+### Sign-based Functions
+These functions operate mostly or solely on the sign of the argument.
 
 ```zenscript
-# Zwraca wartość bezwzględną podanej wartości
-funkcji abs(x jako podwójne) jako dwukrotnie;
-funkcja abs(x as float) jako pływak;
-funkcja abs(x as int) jak int;
-funkcja abs(x as long) jako długa;
+# Returns the absolute value of the given value
+function abs(x as double) as double;
+function abs(x as float) as float;
+function abs(x as int) as int;
+function abs(x as long) as long;
 
-# Zwraca znak podanej wartości jako liczba: -1 dla liczb ujemnych, 0 dla zera, 1 dla liczb dodatnich
-znak funkcji (x jako podwójny) jako podwójny; znak funkcji
-(x jako pływacz) jako pływający; znak funkcji
-(x jako int) jako int; znak funkcji
-(x jako długie) jako długi;
+# Returns the sign of the given value as a number: -1 for negative numbers, 0 for zero, 1 for positive numbers
+function sign(x as double) as double;
+function sign(x as float) as float;
+function sign(x as int) as int;
+function sign(x as long) as long;
 ```
 
-### Funkcje porównawcze
-Funkcje te porównują różne argumenty i zwracają tylko jeden z nich zgodnie z określonym zestawem przepisów.
+### Comparison Functions
+These functions compare the various arguments and return only one of them according to a certain set of rules.
 
 ```zenscript
-# Zwraca mniejszą z dwóch podanych wartości
-funkcję min(jako podwójną, b jako podwójną) jako podwójną;
-funkcja min(jako pływak, b jako pływak) jako pływak;
-funkcja min(jak int, b jako int) jak int;
-funkcja min(tak długo, b jako długo) jako długa;
+# Returns the smaller of the two given values
+function min(a as double, b as double) as double;
+function min(a as float, b as float) as float;
+function min(a as int, b as int) as int;
+function min(a as long, b as long) as long;
 
-# Zwraca większą z dwóch podanych wartości
-funkcji max(jako podwójne, b jako podwójne) jako dwukrotnie;
-funkcja maksimum (jako zmiennoprzecinkowe, b jako zmiennoprzecinkowe) jako zmiennoprzecinkowa;
-funkcja maksimum (jak int, b jako int) jako int;
-funkcja max(tak długo, b najdłużej)
+# Returns the bigger of the two given values
+function max(a as double, b as double) as double;
+function max(a as float, b as float) as float;
+function max(a as int, b as int) as int;
+function max(a as long, b as long) as long;
 
-# Clampy o podanej wartości x pomiędzy dwiema granicami, skutecznie zwracając min, jeśli x jest mniejszy niż min, maks, jeśli x jest większy niż maks, x w przeciwnym razie
-zc funkcji (x jako podwójne, min jako podwójne, max jako podwójne) jako dwukrotnie;
-lampa funkcyjna (x jako pływak, min. jako pływak, maks. jako pływak);
-lampa funkcyjna (x jako int, min. jako int, max jako int) zgodnie z intami;
-lampa funkcyjna (x tak długo, min. długo, maks. długość) tak długo;
+# Clamps the given x value between two bounds, effectively returning min if x is smaller than min, max if x is bigger than max, x otherwise
+function clamp(x as double, min as double, max as double) as double;
+function clamp(x as float, min as float, max as float) as float;
+function clamp(x as int, min as int, max as int) as int;
+function clamp(x as long, min as long, max as long) as long;
 ```
 
-### Pozostałe funkcje
-Te funkcje obliczają pozostałą część pomiędzy dwoma argumentami zgodnie z zestawem reguł.
+### Remainder Functions
+These functions compute the remainder between two arguments according to a set of rules.
 
 ```zenscript
-# Oblicza pozostałą część podziału między wartością i div zgodnie ze standardem IEEE 754: 'r = wartość - (zaokrąglona / div) * div)'
-funkcja rem(wartość jako podwójna, podziel się dwukrotnie),
-funkcja rem(wartość jako zmienna, div jako pływak) jako pływak;
+# Computes the remainder of the division between value and div according to the IEEE 754 standard: 'r = value - (round(value / div) * div)'
+function rem(value as double, div as double) as double;
+function rem(value as float, div as float) as float;
 ```
 

@@ -2,8 +2,8 @@
 
 ## Дополнительная информация
 
-GregTech Community Edition - это полная перезапись GregTech для новых версий Minecraft с акцентом на производительность и баланс.
+GregTech Community Edition is a total rewrite of GregTech for newer versions of Minecraft made with focus on performance and balance.
 
-## Источник & отчёты об ошибках
+## Source & Bug reports
 
 https://github.com/GregTechCE/GregTech

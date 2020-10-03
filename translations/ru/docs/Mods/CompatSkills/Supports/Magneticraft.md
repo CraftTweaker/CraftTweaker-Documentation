@@ -1,17 +1,17 @@
-# Магнитный кран
+# Magneticraft
 
-## Пояснение:
+## Explaination:
 
-Поддержка Magneticraft в настоящее время состоит из:
+Magneticraft Support currently consists of:
 
-- Команда для сброса строк всех мультиблоков Magneticraft. 
-    - Команда: /ct magMultiBlocks
-- Многоблочные Ворота с помощью Crt-based синтаксиса.
+- A Command for dumping the string name of all Magneticraft Multiblocks. 
+    - Command is: /ct magMultiBlocks
+- Multiblock Gating using a Crt-based Syntax.
 
-### Синтаксис:
+### Syntax:
 
-    Пример пустого:
+    Blank Example:
     mods.compatskills.MagMultiBlockGates.addGate(String multiBlockName, String failureMessage, String... defaultRequirements);
     
-    Пример:
-    mods.compatskills.MagMultiBlockGates.addGate("solar_mirror", "Я боюсь, что это просто слишком сложно для таких идиотов, как вы!", "reskillable:building|15", "reskillable:magic|7", "adv|minecraft:husbandry/plant_seed", "stage|test");
+    Working Example:
+    mods.compatskills.MagMultiBlockGates.addGate("solar_mirror", "I'm afraid this is just too complex for an idiot like you!", "reskillable:building|15", "reskillable:magic|7", "adv|minecraft:husbandry/plant_seed", "stage|test");

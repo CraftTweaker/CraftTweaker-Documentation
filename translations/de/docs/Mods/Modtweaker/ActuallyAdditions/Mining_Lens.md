@@ -1,6 +1,6 @@
-# Minenlinse
+# Mining Lens
 
-## Paket
+## Package
 
 `mods.actuallyadditions.MiningLens`
 
@@ -15,7 +15,7 @@ mods.actuallyadditions.MiningLens.addStoneOre(<ore:oreIron>, 2);
 mods.actuallyadditions.MiningLens.addNetherOre(<ore:oreGold>, 5);
 ```
 
-## Entfernen
+## Removal
 
 ```zenscript
 //mods.actuallyadditions.MiningLens.removeStoneOre(IOreDictEntry ore)

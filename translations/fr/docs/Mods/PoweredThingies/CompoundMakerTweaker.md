@@ -1,28 +1,28 @@
-# Thingies Powered :: Compound Maker
+# Powered Thingies :: Compound Maker
 
-### Importation en cours
+### Importing
 
 ```zenscript
-Importer mods.poweredthingies.Tweaker.compoundTweaker comme ct;
+import mods.poweredthingies.Tweaker.compoundTweaker as ct;
 ```
 
-### Liste des clés, Suppression des recettes par clé, Effacement
+### Listing Keys, Removing Recipes by Key, Clearing
 
 ```zenscript
 ct().logKeys()
-ct().removeRecipe('minecraft:stone') // vérifie <logKeys> sortie pour les clés valides
+ct().removeRecipe('minecraft:stone') // check <logKeys> output for valid keys
 ct().clear()
 ```
 
-### Ajout de la recette
+### Adding Recipe
 
 ##### Signature
 
 ```zenscript
-addRecipe(output: IItemStack, left: ILiquidStack?, top: Array<IItemStack>?, right: ILiquidStack?, bottom: Tableau<IItemStack>?)
+addRecipe(output: IItemStack, left: ILiquidStack?, top: Array<IItemStack>?, right: ILiquidStack?, bottom: Array<IItemStack>?)
 ```
 
-##### Exemple
+##### Example
 
 ```zenscript
 ct().addRecipe(<minecraft:obsidian>, <liquid:lava> * 250, [<minecraft:cobblestone>, <minecraft:cobblestone>], null, [<minecraft:cobblestone>, <minecraft:cobblestone>]);
@@ -30,4 +30,4 @@ ct().addRecipe(<minecraft:obsidian>, <liquid:lava> * 250, [<minecraft:cobbleston
 
 ### Notes
 
-Toutes ces actions seront mises en cache et exécutées après que le registre par défaut de cette machine ait fini d'enregistrer toutes les recettes (y compris celles des jsons personnalisés).
+All of these actions will get cached and ran after the default registry for this machine has finished registering all recipes (including the ones from the custom jsons).

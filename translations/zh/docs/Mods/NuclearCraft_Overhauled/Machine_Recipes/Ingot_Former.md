@@ -1,16 +1,16 @@
-# 倒计时
+# Ingot Former
 
-## 导入软件包
-`nuclearcraft。IngotFormer`
+## Importing the Package
+`mods.nuclearcraft.IngotFormer`
 
-## 添加配方
+## Adding Recipes
 ```zenscript
-nuclearcraft。IngotFormer.addRecipe(ILiquidStack fluidInput, IIngredient itemOutput, @Optional double timeMultiplier, @Optional double powerMultiplier, @Optional double processRadi);
+mods.nuclearcraft.IngotFormer.addRecipe(ILiquidStack fluidInput, IIngredient itemOutput, @Optional double timeMultiplier, @Optional double powerMultiplier, @Optional double processRadiation);
 ```
 
-## 删除配方
+## Removing Recipes
 ```zenscript
-nuclearcraft。IngotFormer.removeRecipeWidInput(ILiquidStack fluidInput);
-mods.nuclearcraft.IngotFormer.removeRecipeWOutput(IIngredient itemOut)；
-mods.nuclearcraft。IngotFormer.removeAllRecipes();
+mods.nuclearcraft.IngotFormer.removeRecipeWithInput(ILiquidStack fluidInput);
+mods.nuclearcraft.IngotFormer.removeRecipeWithOutput(IIngredient itemOutput);
+mods.nuclearcraft.IngotFormer.removeAllRecipes();
 ```

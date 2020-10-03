@@ -1,70 +1,70 @@
-# スクイーザー
+# Squeezer
 
-Squeezerパッケージは、Immersive Engineering Sceezerにレシピを追加/削除するために使用できます。
+The Squeezer package can be used to add/remove recipes to/from the Immersive Engineering Squeezer.
 
-## パッケージの呼び出し
+## Calling The Package
 
-`mods.immysiveengineering.Squeezer` を使って、Squeezer パッケージを呼び出すことができます。
+You can call the Squeezer package using `mods.immersiveengineering.Squeezer`.
 
-## レシピを追加
+## Add Recipe
 
-| 必須 | タイプ   | データタイプ                                              |
-| -- | ----- | --------------------------------------------------- |
-| 必須 | 出力    | [IItemStack](/Vanilla/Items/IItemStack/)            |
-| 必須 | Fluid | [Fluidstack](/Vanilla/Liquids/ILiquidStack/)        |
-| 必須 | Input | [IIngredient](/Vanilla/Variable_Types/IIngredient/) |
-| 必須 | エネルギー | 整数                                                  |
+| Required | Type   | Data Type                                           |
+| -------- | ------ | --------------------------------------------------- |
+| Required | Output | [IItemStack](/Vanilla/Items/IItemStack/)            |
+| Required | Fluid  | [Fluidstack](/Vanilla/Liquids/ILiquidStack/)        |
+| Required | Input  | [IIngredient](/Vanilla/Variable_Types/IIngredient/) |
+| Required | Energy | Integer                                             |
 
 ### 例
 
 ```zenscript
-//例:
-mods.immysiveengineering.Squezer.addRecipe(IItemStack output, ILiquidStack fluid, Ingredient input, int energy);
+//Example:
+mods.immersiveengineering.Squeezer.addRecipe(IItemStack output, ILiquidStack fluid, IIngredient input, int energy);
 
-mods.immursiveengineering.Squezer.addRecipe(<minecraft:diamond>, <liquid:water>, <ore:logWood>, 2048);
+mods.immersiveengineering.Squeezer.addRecipe(<minecraft:diamond>, <liquid:water>, <ore:logWood>, 2048);
 ```
 
-## 流体レシピを削除
+## Remove Fluid Recipe
 
-| タイプ | データタイプ                                       |
-| --- | -------------------------------------------- |
-| 出力  | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
+| Type   | Data Type                                    |
+| ------ | -------------------------------------------- |
+| Output | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
 
 ### 例
 
 ```zenscript
-//例:
-mods.immersiveengineering.Squezer.removeFluidRecipe(ILiquidStack fluid);
+//Example:
+mods.immersiveengineering.Squeezer.removeFluidRecipe(ILiquidStack fluid);
 
-mods.immysiveengineering.Squezer.removeFluidRecipe(<liquid:water>);
+mods.immersiveengineering.Squeezer.removeFluidRecipe(<liquid:water>);
 ```
 
-## アイテムレシピを削除
+## Remove Item Recipe
 
-| タイプ | データタイプ                                   |
-| --- | ---------------------------------------- |
-| 出力  | [IItemstack](/Vanilla/Items/IItemStack/) |
+| Type   | Data Type                                |
+| ------ | ---------------------------------------- |
+| Output | [IItemstack](/Vanilla/Items/IItemStack/) |
 
 ### 例
 
 ```zenscript
-//例:
-mods.immersiveengineering.Squezer.removeItemRecipe(IItemStack stack);
+//Example:
+mods.immersiveengineering.Squeezer.removeItemRecipe(IItemStack stack);
 
-mods.immersiveengineering.Squezer.removeItemRecipe(<minecraft:diamond>);
+mods.immersiveengineering.Squeezer.removeItemRecipe(<minecraft:diamond>);
 ```
 
-## 入力で削除
+## Remove By Input
 
-| タイプ | データタイプ                                   |
-| --- | ---------------------------------------- |
-| 出力  | [IItemstack](/Vanilla/Items/IItemStack/) |
+| Type   | Data Type                                |
+| ------ | ---------------------------------------- |
+| Output | [IItemstack](/Vanilla/Items/IItemStack/) |
 
 ### 例
 
 ```zenscript
-//例:
-mods.immersiveengineering.Squezer.removeByInput(IItemStack stack);
+//Example:
+mods.immersiveengineering.Squeezer.removeByInput(IItemStack stack);
 
-mods.immersiveengineering.Squezer.removeByInput(<minecraft:log>);
+mods.immersiveengineering.Squeezer.removeByInput(<minecraft:log>);
 ```

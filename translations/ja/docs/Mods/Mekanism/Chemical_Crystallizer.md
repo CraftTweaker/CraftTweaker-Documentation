@@ -1,29 +1,29 @@
-# 化学Crystallizer
+# Chemical Crystallizer
 
-Mekanism 9.7.0 以降、 `/ct mekrecipes crystallizer` コマンドで化学Crystallizer のすべてのレシピ文字列を表示できるようになりました。
+As of Mekanism 9.7.0 it is now possible to view all recipe strings of the Chemical Crystallizer through the command `/ct mekrecipes crystallizer`
 
 ## 加算
 
 ```zenscript
 mods.mekanism.chemical.crystallizer.addRecipe(IGasStack inputGas, IItemStack outputStack);
 
-mods.mekanism.chemicarlizer.addRecipe(<gas:water>, <minecraft:ice>);
+mods.mekanism.chemical.crystallizer.addRecipe(<gas:water>, <minecraft:ice>);
 ```
 
-## 削除
+## Removal
 
 ```zenscript
 mods.mekanism.chemical.crystallizer.removeRecipe(IIngredient outputStack, @Optional IIngredient inputGas);
 
 mods.mekanism.chemical.crystallizer.removeRecipe(<mekanism:otherdust:4>, <gas:lithium>);
-mods.mekanism.chemical.removeRemoveRecipe(<mekanism:crystal:1>);
+mods.mekanism.chemical.crystallizer.removeRecipe(<mekanism:crystal:1>);
 ```
 
-input パラメータを指定すると、その入力を使用する特定のレシピのみが削除されます。 入力パラメータを省略すると、指定した出力を生成するすべてのレシピが削除されます。
+Specifying an input parameter will only remove the specific recipe that uses said input. Omitting the input parameter will remove all recipes that produce the specified output.
 
-## すべてのレシピを削除する
+## Removing all recipes
 
-Mekanism 9.7.0 以降、すべての Chemical Crystallizer レシピを削除できるようになりました。 （CraftTweaker経由で追加されたレシピは除外されます）
+As of Mekanism 9.7.0 it is now possible to remove all Chemical Crystallizer recipes. (This excludes any recipes added via CraftTweaker)
 
 ```zenscript
 mods.mekanism.chemical.crystallizer.removeAllRecipes();
