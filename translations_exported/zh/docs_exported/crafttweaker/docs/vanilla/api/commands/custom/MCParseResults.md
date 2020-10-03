@@ -11,15 +11,15 @@ craftminstrer.api.commands.custom.MCParseResults
 ## 方法
 ### equals #等于
 
-返回类型：布尔值
+Return type: boolean
 
 ```zenscript
 myMCParseResults.equals(o as Object);
 ```
 
-| 参数 | 类型 | 描述                      |
-| -- | -- | ----------------------- |
-| o  | 对象 | No description provided |
+| 参数 | 类型     | 描述                      |
+| -- | ------ | ----------------------- |
+| o  | Object | No description provided |
 
 
 ### getContext
@@ -48,7 +48,7 @@ myMCParseResults.getReader();
 
 ### hashCode
 
-返回类型：int
+Return type: int
 
 ```zenscript
 myMCParseResults.hashCode();
@@ -56,7 +56,7 @@ myMCParseResults.hashCode();
 
 ### toString
 
-返回类型：字符串
+Return type: String
 
 ```zenscript
 myMCParseResults.toString();
@@ -70,13 +70,13 @@ myMCParseResults.toString();
 myMCParseResults == o 为对象
 ```
 
-| 参数 | 类型 | 描述                      |
-| -- | -- | ----------------------- |
-| o  | 对象 | No description provided |
+| 参数 | 类型     | 描述                      |
+| -- | ------ | ----------------------- |
+| o  | Object | No description provided |
 
-## 卡斯特尔
+## Casters
 
-| 结果类型        | 是否隐藏 |
-| ----------- | ---- |
-| 字符串[string] | true |
+| 结果类型   | 是否隐藏 |
+| ------ | ---- |
+| String | true |
 

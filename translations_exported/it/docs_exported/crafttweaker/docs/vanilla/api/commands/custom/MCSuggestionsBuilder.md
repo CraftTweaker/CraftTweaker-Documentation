@@ -2,14 +2,14 @@
 
 Questa classe è stata aggiunta da una mod con ID `crafttweaker`. Perciò, è necessario avere questa mod installata per poter utilizzare questa funzione.
 
-## Importare la classe
+## Importing the class
 Potrebbe essere necessario importare il pacchetto, se si incontrano dei problemi (come castare un vettore), quindi meglio essere sicuri e aggiungere la direttiva di importazione.
 ```zenscript
 crafttweaker.api.commands.custom.MCSuggestionsBuilder
 ```
 
-## Metodi
-### aggiungi
+## Methods
+### add
 
 Tipo restituito: [crafttweaker.api.commands.custom.MCSuggestionsBuilder](/vanilla/api/commands/custom/MCSuggestionsBuilder)
 
@@ -17,9 +17,9 @@ Tipo restituito: [crafttweaker.api.commands.custom.MCSuggestionsBuilder](/vanill
 myMCSuggestionsBuilder.add(altro come crafttweaker.api.commands.custom.MCSuggestionsBuilder);
 ```
 
-| Parametro | Tipo                                                                                                       | Descrizione                 |
+| Parameter | Type                                                                                                       | Description                 |
 | --------- | ---------------------------------------------------------------------------------------------------------- | --------------------------- |
-| altri     | [crafttweaker.api.commands.custom.MCSuggestionsBuilder](/vanilla/api/commands/custom/MCSuggestionsBuilder) | Nessuna descrizione fornita |
+| other     | [crafttweaker.api.commands.custom.MCSuggestionsBuilder](/vanilla/api/commands/custom/MCSuggestionsBuilder) | Nessuna descrizione fornita |
 
 
 ### build
@@ -38,27 +38,27 @@ Tipo restituito: [crafttweaker.api.commands.custom.MCSuggestionsBuilder](/vanill
 myMCSuggestionsBuilder.createOffset(start as int);
 ```
 
-| Parametro | Tipo | Descrizione                 |
+| Parameter | Type | Description                 |
 | --------- | ---- | --------------------------- |
 | inizio    | int  | Nessuna descrizione fornita |
 
 
-### uguale
+### equals
 
-Tipo restituito: booleano
+Return type: boolean
 
 ```zenscript
 myMCSuggestionsBuilder.equals(o come Object);
 ```
 
-| Parametro | Tipo    | Descrizione                 |
-| --------- | ------- | --------------------------- |
-| o         | Oggetto | Nessuna descrizione fornita |
+| Parameter | Type   | Description                 |
+| --------- | ------ | --------------------------- |
+| o         | Object | Nessuna descrizione fornita |
 
 
 ### getInput
 
-Tipo di ritorno: Stringa
+Return type: String
 
 ```zenscript
 myMCSuggestionsBuilder.getInput();
@@ -66,7 +66,7 @@ myMCSuggestionsBuilder.getInput();
 
 ### ottiRimanente
 
-Tipo di ritorno: Stringa
+Return type: String
 
 ```zenscript
 myMCSuggestionsBuilder.getRemaining();
@@ -74,7 +74,7 @@ myMCSuggestionsBuilder.getRemaining();
 
 ### getStart
 
-Tipo di restituzione: int
+Return type: int
 
 ```zenscript
 myMCSuggestionsBuilder.getStart();
@@ -82,7 +82,7 @@ myMCSuggestionsBuilder.getStart();
 
 ### hashCode
 
-Tipo di restituzione: int
+Return type: int
 
 ```zenscript
 myMCSuggestionsBuilder.hashCode();
@@ -104,9 +104,9 @@ Tipo restituito: [crafttweaker.api.commands.custom.MCSuggestionsBuilder](/vanill
 myMCSuggestionsBuilder.suggest(text as String);
 ```
 
-| Parametro | Tipo    | Descrizione                 |
-| --------- | ------- | --------------------------- |
-| testo     | Stringa | Nessuna descrizione fornita |
+| Parameter | Type   | Description                 |
+| --------- | ------ | --------------------------- |
+| testo     | String | Nessuna descrizione fornita |
 
 
 
@@ -116,9 +116,9 @@ Tipo restituito: [crafttweaker.api.commands.custom.MCSuggestionsBuilder](/vanill
 myMCSuggestionsBuilder.suggest(value as int);
 ```
 
-| Parametro | Tipo | Descrizione                 |
+| Parameter | Type | Description                 |
 | --------- | ---- | --------------------------- |
-| valore    | int  | Nessuna descrizione fornita |
+| value     | int  | Nessuna descrizione fornita |
 
 
 
@@ -128,10 +128,10 @@ Tipo restituito: [crafttweaker.api.commands.custom.MCSuggestionsBuilder](/vanill
 myMCSuggestionsBuilder.suggest(testo come stringa, suggerimento come stringa);
 ```
 
-| Parametro | Tipo    | Descrizione                 |
-| --------- | ------- | --------------------------- |
-| testo     | Stringa | Nessuna descrizione fornita |
-| tooltip   | Stringa | Nessuna descrizione fornita |
+| Parameter | Type   | Description                 |
+| --------- | ------ | --------------------------- |
+| testo     | String | Nessuna descrizione fornita |
+| tooltip   | String | Nessuna descrizione fornita |
 
 
 
@@ -141,35 +141,35 @@ Tipo restituito: [crafttweaker.api.commands.custom.MCSuggestionsBuilder](/vanill
 myMCSuggestionsBuilder.suggest(value as int, tooltip as String);
 ```
 
-| Parametro | Tipo    | Descrizione                 |
-| --------- | ------- | --------------------------- |
-| valore    | int     | Nessuna descrizione fornita |
-| tooltip   | Stringa | Nessuna descrizione fornita |
+| Parameter | Type   | Description                 |
+| --------- | ------ | --------------------------- |
+| value     | int    | Nessuna descrizione fornita |
+| tooltip   | String | Nessuna descrizione fornita |
 
 
 ### toString
 
-Tipo di ritorno: Stringa
+Return type: String
 
 ```zenscript
 myMCSuggestionsBuilder.toString();
 ```
 
 
-## Operatori
-### EQUALI
+## Operators
+### EQUALS
 
 ```zenscript
 myMCSuggestionsBuilder == o come oggetto
 ```
 
-| Parametro | Tipo    | Descrizione                 |
-| --------- | ------- | --------------------------- |
-| o         | Oggetto | Nessuna descrizione fornita |
+| Parameter | Type   | Description                 |
+| --------- | ------ | --------------------------- |
+| o         | Object | Nessuna descrizione fornita |
 
 ## Caster
 
 | Tipo Risultato | Implicito |
 | -------------- | --------- |
-| Stringa        | vero      |
+| String         | true      |
 

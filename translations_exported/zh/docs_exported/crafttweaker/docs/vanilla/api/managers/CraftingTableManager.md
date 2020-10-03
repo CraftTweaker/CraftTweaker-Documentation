@@ -21,19 +21,19 @@ CraftingTableManager实现了以下接口。 这意味着对这个接口可用�
 基于提供的IData添加配方 提供的 IData 应该代表一个JSON数据包 ,这有效地允许您注册任何支持 IRecipeType 系统的 DataPack配方。
 
 ```zenscript
-craftingTable.addJSONRecipe(name as String, data as craftbiner.api.data.IData);
-craftingTable.addJSONRecipe("recipe_name", {component:{item:<item:minecraft:gold_ore>.registryName},result:<item:minecraft:cooked_porkchop>.registryName,experience:0.35 as float, cookingtime:100});
+craftingTable.addJSONRecipe(name as String, data as crafttweaker.api.data.IData);
+craftingTable.addJSONRecipe("recipe_name", {ingredient:{item:<item:minecraft:gold_ore>.registryName},result:<item:minecraft:cooked_porkchop>.registryName,experience:0.35 as float, cookingtime:100});
 ```
 
-| 参数   | 类型                                                     | 描述           |
-| ---- | ------------------------------------------------------ | ------------ |
-| 名称   | 字符串[string]                                            | 配方名称         |
-| data | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | 代表json 文件的数据 |
+| 参数   | 类型                                                     | 描述                              |
+| ---- | ------------------------------------------------------ | ------------------------------- |
+| name | String                                                 | name of the recipe              |
+| data | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | data representing the json file |
 
 
-### 添加了
+### addShaped
 
-将形状的配方添加到工作台中
+Adds a shaped recipe to the crafting table
 
 ```zenscript
 craftingTable.addShaped(recipeName as String, output as craftweer.api.item.IItemStack, components as craftwiner.api.item.IIngredient[], recipeFunctionMatrix;
@@ -41,17 +41,17 @@ craftingTable.addShaped("recipe_name", <item:minecraft:dirt>, [<item:minecraft:d
 craftingTable. ddShaped("recipe_name", <item:minecraft:dirt>, [[<item:minecraft:diamond>], [<tag:minecraft:wool>]], (用作IItemStack, 输入 IItemStack[]) => {if(input[0][0]. isplayname == "完全真实的钻石块" ){return usualOut;}return <item:minecraft:clay>.setDisplayName("Diamond");});
 ```
 
-| 参数         | 类型                                                                                         | 描述                                                                                                      | 可选的   | 默认值  |
-| ---------- | ------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------- | ----- | ---- |
-| 累计名称       | 字符串[string]                                                                                | 要添加的配方名称。                                                                                               | false | `空的` |
-| output（输出） | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)                          | output [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)                                | false | `空的` |
-| 成分：        | [craftbinstruer.api.item.Ingredient](/vanilla/api/items/IIngredient)[]                     | [craftmiliter.api.item.IIngredient](/vanilla/api/items/IIngredient) 数组供输入                               | false | `空的` |
-| 累犯功能       | [craftbinstruer.api.recipe.RecipeFunctionMatrix](/vanilla/api/recipe/RecipeFunctionMatrix) | 可选的 [craftbinstruer.api.recipe.RecipeFunctionMatrix](/vanilla/api/recipe/RecipeFunctionMatrix) 用于更高级的条件 | true  | `空的` |
+| 参数             | 类型                                                                                         | 描述                                                                                                      | 可选的   | Default Value |
+| -------------- | ------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------- | ----- | ------------- |
+| recipeName     | String                                                                                     | name of the recipe to add.                                                                              | false | `null`        |
+| output（输出）     | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)                          | output [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)                                | false | `null`        |
+| ingredients    | [crafttweaker.api.item.IIngredient](/vanilla/api/items/IIngredient)[][]                    | [craftmiliter.api.item.IIngredient](/vanilla/api/items/IIngredient) 数组供输入                               | false | `null`        |
+| recipeFunction | [craftbinstruer.api.recipe.RecipeFunctionMatrix](/vanilla/api/recipe/RecipeFunctionMatrix) | 可选的 [craftbinstruer.api.recipe.RecipeFunctionMatrix](/vanilla/api/recipe/RecipeFunctionMatrix) 用于更高级的条件 | true  | `null`        |
 
 
 ### addShapedMirrored
 
-将镜像形状配方添加到工作台中
+Adds a mirrored shaped recipe to the crafting table
 
 ```zenscript
 craftingTable.addShapedMirrored(recipeName as String, outcome as craftbiner.api.item.IItemStack, components as craftweeper.api.item.IIngredient[], recipe FunctionMatrix);
@@ -59,17 +59,17 @@ craftingTable.addShapedMirrored("recipe_name", <item:minecraft:dirt>[<item:minec
 craftingTable ddd ShapedMirrored("recipe_name", <item:minecraft:dirt>, [[<item:minecraft:diamond>], [<tag:minecraft:wool>]], (用作IItemStack, 输入 IItemStack[]) => {if(input[0][0]. isplayname == "完全真实的钻石块" ){return usualOut;}return <item:minecraft:clay>.setDisplayName("Diamond");});
 ```
 
-| 参数         | 类型                                                                                         | 描述                                                                                                      | 可选的   | 默认值  |
-| ---------- | ------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------- | ----- | ---- |
-| 累计名称       | 字符串[string]                                                                                | 要添加的配方名称。                                                                                               | false | `空的` |
-| output（输出） | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)                          | output [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)                                | false | `空的` |
-| 成分：        | [craftbinstruer.api.item.Ingredient](/vanilla/api/items/IIngredient)[]                     | [craftmiliter.api.item.IIngredient](/vanilla/api/items/IIngredient) 数组供输入                               | false | `空的` |
-| 累犯功能       | [craftbinstruer.api.recipe.RecipeFunctionMatrix](/vanilla/api/recipe/RecipeFunctionMatrix) | 可选的 [craftbinstruer.api.recipe.RecipeFunctionMatrix](/vanilla/api/recipe/RecipeFunctionMatrix) 用于更高级的条件 | true  | `空的` |
+| 参数             | 类型                                                                                         | 描述                                                                                                      | 可选的   | Default Value |
+| -------------- | ------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------- | ----- | ------------- |
+| recipeName     | String                                                                                     | name of the recipe to add.                                                                              | false | `null`        |
+| output（输出）     | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)                          | output [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)                                | false | `null`        |
+| ingredients    | [crafttweaker.api.item.IIngredient](/vanilla/api/items/IIngredient)[][]                    | [craftmiliter.api.item.IIngredient](/vanilla/api/items/IIngredient) 数组供输入                               | false | `null`        |
+| recipeFunction | [craftbinstruer.api.recipe.RecipeFunctionMatrix](/vanilla/api/recipe/RecipeFunctionMatrix) | 可选的 [craftbinstruer.api.recipe.RecipeFunctionMatrix](/vanilla/api/recipe/RecipeFunctionMatrix) 用于更高级的条件 | true  | `null`        |
 
 
 ### addShapeless
 
-在制造桌上添加一个无耻的配方
+Adds a shapeless recipe to the crafting table
 
 ```zenscript
 craftingTable.addShapeless(recipeName as String, output as craftwiner.api.item.IItemStack, components as craftbiner.api.item.IIngredient[], recipeFunctionArray;
@@ -77,12 +77,12 @@ craftingTable.addShapeless("recipe_name", <item:minecraft:dirt>, [<item:minecraf
 craftingTable ddShapeless("recipe_name", <item:minecraft:dirt>, [<item:minecraft:diamond>, <tag:minecraft:wool>], (usualOut as IItemStack, input as IItemStack[]) => {if(input[0]. isplayname == "完全真实的钻石块" ){return usualOut;}return <item:minecraft:clay>.setDisplayName("Diamond");});
 ```
 
-| 参数         | 类型                                                                                       | 描述                                                                                               | 可选的   | 默认值  |
-| ---------- | ---------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------ | ----- | ---- |
-| 累计名称       | 字符串[string]                                                                              | 要添加的配方名称。                                                                                        | false | `空的` |
-| output（输出） | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)                        | output [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)                         | false | `空的` |
-| 成分：        | [craftminstruer.api.item.IIngredient](/vanilla/api/items/IIngredient)[]                  | [craftmiliter.api.item.IIngredient](/vanilla/api/items/IIngredient) 的数组                          | false | `空的` |
-| 累犯功能       | [craftbinstruer.api.recipe.RecipeFunctionArray](/vanilla/api/recipe/RecipeFunctionArray) | 可选 [为更高级的条件的 craftbiner.api.recipe.RecipeFunctionArray](/vanilla/api/recipe/RecipeFunctionArray) | true  | `空的` |
+| 参数             | 类型                                                                                       | 描述                                                                                               | 可选的   | Default Value |
+| -------------- | ---------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------ | ----- | ------------- |
+| recipeName     | String                                                                                   | name of the recipe to add.                                                                       | false | `null`        |
+| output（输出）     | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)                        | output [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)                         | false | `null`        |
+| ingredients    | [crafttweaker.api.item.IIngredient](/vanilla/api/items/IIngredient)[]                    | [craftmiliter.api.item.IIngredient](/vanilla/api/items/IIngredient) 的数组                          | false | `null`        |
+| recipeFunction | [craftbinstruer.api.recipe.RecipeFunctionArray](/vanilla/api/recipe/RecipeFunctionArray) | 可选 [为更高级的条件的 craftbiner.api.recipe.RecipeFunctionArray](/vanilla/api/recipe/RecipeFunctionArray) | true  | `null`        |
 
 
 ### getRecipeByName
@@ -93,9 +93,9 @@ craftingTable ddShapeless("recipe_name", <item:minecraft:dirt>, [<item:minecraft
 craftingTable.getRecipeByname(名称为字符串)；
 ```
 
-| 参数 | 类型          | 描述                      |
-| -- | ----------- | ----------------------- |
-| 名称 | 字符串[string] | No description provided |
+| 参数   | 类型     | 描述                      |
+| ---- | ------ | ----------------------- |
+| name | String | No description provided |
 
 
 ### getRecipesBy输出
@@ -106,31 +106,31 @@ craftingTable.getRecipeByname(名称为字符串)；
 craftingTable.getRecipesByOutput(输出为 craftbiner.api.item.IIngredient);
 ```
 
-| 参数         | 类型                                                         | 描述                      |
-| ---------- | ---------------------------------------------------------- | ----------------------- |
-| output（输出） | [制造商.api.item.IIngredient](/vanilla/api/items/IIngredient) | No description provided |
+| 参数         | 类型                                                                  | 描述                      |
+| ---------- | ------------------------------------------------------------------- | ----------------------- |
+| output（输出） | [crafttweaker.api.item.IIngredient](/vanilla/api/items/IIngredient) | No description provided |
 
 
-### 全部移除
+### removeAll
 
-删除此注册表中的所有配方
+Remove all recipes in this registry
 
 ```zenscript
 craftingTable.removeAll();
 ```
 
-### 移除 ByModid
+### removeByModid
 
-删除基于注册表名称莫迪的配方
+Remove recipe based on Registry name modid
 
 ```zenscript
-craftingTable.removeByModed(modified as String);
-craftingTable.removeByModed("minecraft");
+craftingTable.removeByModid(modid as String);
+craftingTable.removeByModid("minecraft");
 ```
 
-| 参数  | 类型          | 描述          |
-| --- | ----------- | ----------- |
-| 莫多德 | 字符串[string] | 已删除配方的 modo |
+| 参数    | 类型     | 描述                             |
+| ----- | ------ | ------------------------------ |
+| modid | String | modid of the recipes to remove |
 
 
 
@@ -141,58 +141,58 @@ craftingTable.removeByModed(modian as String, exclusion as craftweapi.recipe.Rec
 craftingTable.removeByModed("minecraft", (name as string) => {return name == "orange_wool";});
 ```
 
-| 参数  | 类型                                                              | 描述          |
-| --- | --------------------------------------------------------------- | ----------- |
-| 莫多德 | 字符串[string]                                                     | 已删除配方的 modo |
-| 不包含 | [制作器.api.recipe.RecipeFilter](/vanilla/api/recipe/RecipeFilter) | 要避免被移除的配方。  |
+| 参数    | 类型                                                              | 描述                             |
+| ----- | --------------------------------------------------------------- | ------------------------------ |
+| modid | String                                                          | modid of the recipes to remove |
+| 不包含   | [制作器.api.recipe.RecipeFilter](/vanilla/api/recipe/RecipeFilter) | 要避免被移除的配方。                     |
 
 
 ### removeByName
 
-删除基于注册表名称的配方
+Remove recipe based on Registry name
 
 ```zenscript
-craftingTable.removeByname(名称为字符串);
-craftingTable.removeByname("minecraft:furchace");
+craftingTable.removeByName(name as String);
+craftingTable.removeByName("minecraft:furnace");
 ```
 
-| 参数 | 类型          | 描述           |
-| -- | ----------- | ------------ |
-| 名称 | 字符串[string] | 要删除的配方的注册表名称 |
+| 参数   | 类型     | 描述                                |
+| ---- | ------ | --------------------------------- |
+| name | String | registry name of recipe to remove |
 
 
 ### removeByRegex
 
-基于正则表达式删除配方
+Remove recipe based on regex
 
 ```zenscript
 craftingTable.removeByRegex(regex as String);
-craftingTable.removeByRegex("\d_\\d");
+craftingTable.removeByRegex("\\d_\\d");
 ```
 
-| 参数    | 类型          | 描述      |
-| ----- | ----------- | ------- |
-| 正则表达式 | 字符串[string] | 正则表达式匹配 |
+| 参数    | 类型     | 描述                     |
+| ----- | ------ | ---------------------- |
+| regex | String | regex to match against |
 
 
 ### 删除合成表
 
-移除基于其输出的配方。
+Remove a recipe based on it's output.
 
 ```zenscript
-craftingTable.removeRecipe(输出为 craftbiner.api.item.IItemStack);
+craftingTable.removeRecipe(output as crafttweaker.api.item.IItemStack);
 craftingTable.removeRecipe(<item:minecraft:glass>);
 ```
 
-| 参数         | 类型                                                                | 描述    |
-| ---------- | ----------------------------------------------------------------- | ----- |
-| output（输出） | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | 配方的输出 |
+| 参数         | 类型                                                                | 描述                   |
+| ---------- | ----------------------------------------------------------------- | -------------------- |
+| output（输出） | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | output of the recipe |
 
 
 
 ## 参数
 
-| 名称                   | 类型          | 可获得  | 可设置   |
-| -------------------- | ----------- | ---- | ----- |
-| commandString #命令字符串 | 字符串[string] | true | false |
+| 名称            | 类型     | 可获得  | 可设置   |
+| ------------- | ------ | ---- | ----- |
+| commandString | String | true | false |
 

@@ -10,28 +10,28 @@
 crafttweaker.api.data.IntData
 ```
 
-## Реализованные интерфейсы
-IntData реализует следующие интерфейсы. Следовательно, методы из них доступны в этом классе.
+## Implemented Interfaces
+IntData implements the following interfaces. That means any method available to them can also be used on this class.
 - [crafttweaker.api.data.INumberData](/vanilla/api/data/INumberData)
 
-## Конструкторы
+## Constructors
 ```zenscript
-new crafttweaker.api.data.IntData(внутренняя как int);
+new crafttweaker.api.data.IntData(internal as int);
 ```
-| Параметр   | Тип | Описание             |
-| ---------- | --- | -------------------- |
-| внутренняя | int | Описание отсутствует |
+| Параметр | Тип | Description          |
+| -------- | --- | -------------------- |
+| internal | int | Описание отсутствует |
 
 
 
-## Методы
+## Methods
 ### asList
 
-возвращает список<IData> представление этого IData, возвращает null на все, кроме [crafttweaker.api.data.ListData](/vanilla/api/data/ListData).
+Gets a List<IData> representation of this IData, returns null on anything but [crafttweaker.api.data.ListData](/vanilla/api/data/ListData).
 
- Возвращается: `аннулировать, если это IData не список.`
+ Returns: `null if this IData is not a list.`
 
-Возвращает список <[crafttweaker.api.data.IData](/vanilla/api/data/IData)>
+Returns List<[crafttweaker.api.data.IData](/vanilla/api/data/IData)>
 
 ```zenscript
 8192.asList();
@@ -39,11 +39,11 @@ new crafttweaker.api.data.IntData(внутренняя как int);
 
 ### asMap
 
-Получает карту<String, IData> представления этой IData, возвращает null на что-либо кроме [crafttweaker.api.data.MapData](/vanilla/api/data/MapData).
+Gets a Map<String, IData> representation of this IData, returns null on anything but [crafttweaker.api.data.MapData](/vanilla/api/data/MapData).
 
- Возвращается: `нулево, если этот IData не является картой.`
+ Returns: `null if this IData is not a map.`
 
-Возвращает [crafttweaker.api.data.IData](/vanilla/api/data/IData)[String]
+Returns [crafttweaker.api.data.IData](/vanilla/api/data/IData)[String]
 
 ```zenscript
 8192.asMap();
@@ -51,11 +51,11 @@ new crafttweaker.api.data.IntData(внутренняя как int);
 
 ### asString
 
-Получает строку представления этой IData
+Gets the String representation of this IData
 
- Возвращается: `Строка, которая представляет этот IData (значение и тип).`
+ Returns: `String that represents this IData (value and type).`
 
-Возвращает строку
+Returns String
 
 ```zenscript
 8192.asString();
@@ -63,29 +63,29 @@ new crafttweaker.api.data.IntData(внутренняя как int);
 
 ### contains
 
-Проверяет, содержит ли этот IData другую IData, в основном используется в подклассах [crafttweaker. pi.data.ICollectionData](/vanilla/api/data/ICollectionData)— это то же самое, что и проверка на другие типы IData
+Checks if this IData contains another IData, mainly used in subclasses of [crafttweaker.api.data.ICollectionData](/vanilla/api/data/ICollectionData), is the same as an equals check on other IData types
 
 Возвращает boolean
 
 ```zenscript
-8192.contains(данные как crafttweaker.api.data.IData);
+8192.contains(data as crafttweaker.api.data.IData);
 8192.contains("Display");
 ```
 
-| Параметр | Тип                                                    | Описание                    |
-| -------- | ------------------------------------------------------ | --------------------------- |
-| data     | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | для проверки наличия данных |
+| Параметр | Тип                                                    | Description                      |
+| -------- | ------------------------------------------------------ | -------------------------------- |
+| data     | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | data to check if it is contained |
 
 
 ### copy
 
-Создает копию этой IData.
+Makes a copy of this IData.
 
- По умолчанию IData неизменяемая, используйте это для создания соответствующей копии объекта.
+ IData is immutable by default, use this to create a proper copy of the object.
 
- Возвращается: `копия IData.`
+ Returns: `a copy of this IData.`
 
-Возвращает [crafttweaker.api.data.IData](/vanilla/api/data/IData)
+Returns [crafttweaker.api.data.IData](/vanilla/api/data/IData)
 
 ```zenscript
 8192.copy();
@@ -93,13 +93,13 @@ new crafttweaker.api.data.IntData(внутренняя как int);
 
 ### getId
 
-Получает идентификатор внутреннего NBT тега.
+Gets the ID of the internal NBT tag.
 
- Используется для определения того, какой тип NBT хранится (например, списк)
+ Used to determine what NBT type is stored (in a list for example)
 
- Возвращается: `ID NBT тега, который представляет эти данные.`
+ Returns: `ID of the NBT tag that this data represents.`
 
-Возвращает байт
+Returns byte
 
 ```zenscript
 8192.getId();
@@ -107,11 +107,11 @@ new crafttweaker.api.data.IntData(внутренняя как int);
 
 ### getString
 
-Получает строку внутреннего INBT тэга
+Gets the String representation of the internal INBT tag
 
- Возвращается: `Строка, представляющая внутренний INBT этого IData.`
+ Returns: `String that represents the internal INBT of this IData.`
 
-Возвращает строку
+Returns String
 
 ```zenscript
 8192.getString();

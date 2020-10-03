@@ -8,9 +8,9 @@
 craftminstrer.api.commands.custom.MCResultConsumer
 ```
 
-## 函数接口
+## Functional Interface
 
-此类是一个功能接口。 这意味着您可以使用 lambda 符号来创建一个实例。 Lambda 符号如下所示：
+This class is a functional interface. This means that you can use the lambda notation to create an instance of it. The lambda notation looks like:
 ```zenscript
 (命令上下文，成功，结果) =>{}
 ```
@@ -21,11 +21,11 @@ craftminstrer.api.commands.custom.MCResultConsumer
 myMCResultConsumer.onCommandComplete(commandContext as craftweaker.api.commands.custom.MCCommandContext, successfully as boolean, result as int);
 ```
 
-| 参数   | 类型                                                                                                  | 描述                      |
-| ---- | --------------------------------------------------------------------------------------------------- | ----------------------- |
-| 命令内容 | [craftminstrer.api.commands.custom.MCCommandContext](/vanilla/api/commands/custom/MCCommandContext) | No description provided |
-| 成功   | boolean                                                                                             | No description provided |
-| 结果   | 整数                                                                                                  | No description provided |
+| 参数      | 类型                                                                                                  | 描述                      |
+| ------- | --------------------------------------------------------------------------------------------------- | ----------------------- |
+| 命令内容    | [craftminstrer.api.commands.custom.MCCommandContext](/vanilla/api/commands/custom/MCCommandContext) | No description provided |
+| success | boolean                                                                                             | No description provided |
+| result  | int                                                                                                 | No description provided |
 
 
 

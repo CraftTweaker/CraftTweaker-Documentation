@@ -1,9 +1,9 @@
 # MCCommand
 
-crafttweakerのmod-idを持つmodによって追加されているクラスです。 従って、この機能を利用する場合はこのmodをインストールする必要があります。
+This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
 
-## クラスのインポート
-問題が発生した場合には、インポートが必要になります。とはいえ、お手数ですが予めインポートしておくほうが安全です。
+## Importing the class
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
 ```zenscript
 crafttweaker.api.commands.custom.MCCommand
 ```
@@ -12,29 +12,29 @@ crafttweaker.api.commands.custom.MCCommand
 ```zenscript
 new crafttweaker.api.commands.custom.MCCommand(function.Function<crafttweaker.api.commands.custom.MCCommandContext, Integer>);
 ```
-| パラメータ | タイプ                                                                                                                                              | 説明           |
-| ----- | ------------------------------------------------------------------------------------------------------------------------------------------------ | ------------ |
-| 楽しい   | function.Function&lt;[crafttweaker.api.commands.custom.MCCommandContext](/vanilla/api/commands/custom/MCCommandContext), Integer&gt; | 説明が提供されていません |
+| Parameter | Type                                                                                                                                             | Description             |
+| --------- | ------------------------------------------------------------------------------------------------------------------------------------------------ | ----------------------- |
+| 楽しい       | function.Function&lt;[crafttweaker.api.commands.custom.MCCommandContext](/vanilla/api/commands/custom/MCCommandContext), Integer&gt; | No description provided |
 
 
 
-## メソッド
-### 等しい
+## Methods
+### equals
 
-戻り値の型: boolean
+Return type: boolean
 
 ```zenscript
 myMCCommand.equals(o as Object);
 ```
 
-| パラメータ | タイプ    | 説明           |
-| ----- | ------ | ------------ |
-| o     | オブジェクト | 説明が提供されていません |
+| Parameter | Type   | Description             |
+| --------- | ------ | ----------------------- |
+| o         | Object | No description provided |
 
 
 ### hashCode
 
-戻り値の種類: int
+Return type: int
 
 ```zenscript
 myMCCommand.hashCode();
@@ -42,20 +42,20 @@ myMCCommand.hashCode();
 
 ### 実行する
 
-戻り値の種類: int
+Return type: int
 
 ```zenscript
 myMCCommand.run(context as crafttweaker.api.commands.custom.MCCommandContext);
 ```
 
-| パラメータ   | タイプ                                                                                                | 説明           |
-| ------- | -------------------------------------------------------------------------------------------------- | ------------ |
-| context | [crafttweaker.api.commands.custom.MCCommandContext](/vanilla/api/commands/custom/MCCommandContext) | 説明が提供されていません |
+| Parameter | Type                                                                                               | Description             |
+| --------- | -------------------------------------------------------------------------------------------------- | ----------------------- |
+| context   | [crafttweaker.api.commands.custom.MCCommandContext](/vanilla/api/commands/custom/MCCommandContext) | No description provided |
 
 
 ### toString
 
-戻り値の型: String
+Return type: String
 
 ```zenscript
 myMCCommand.toString();
@@ -69,13 +69,13 @@ myMCCommand.toString();
 myMCCommand == o as Object
 ```
 
-| パラメータ | タイプ    | 説明           |
-| ----- | ------ | ------------ |
-| o     | オブジェクト | 説明が提供されていません |
+| Parameter | Type   | Description             |
+| --------- | ------ | ----------------------- |
+| o         | Object | No description provided |
 
-## キャスト
+## Casters
 
-| 結果の種類 | 暗黙的  |
-| ----- | ---- |
-| 文字列型  | true |
+| Result type | Is Implicit |
+| ----------- | ----------- |
+| String      | true        |
 

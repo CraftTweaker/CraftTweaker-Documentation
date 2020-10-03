@@ -1,14 +1,14 @@
 # MCStringRange
 
-crafttweakerのmod-idを持つmodによって追加されているクラスです。 従って、この機能を利用する場合はこのmodをインストールする必要があります。
+This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
 
-## クラスのインポート
-問題が発生した場合には、インポートが必要になります。とはいえ、お手数ですが予めインポートしておくほうが安全です。
+## Importing the class
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
 ```zenscript
 crafttweaker.api.commands.custom.MCStringRange
 ```
 
-## メソッド
+## Methods
 ### に
 
 戻り値の型: [crafttweaker.api.commands.custom.MCStringRange](/vanilla/api/commands/custom/MCStringRange)
@@ -17,9 +17,9 @@ crafttweaker.api.commands.custom.MCStringRange
 crafttweaker.api.commands.custom.MCStringRange.at(pos as int);
 ```
 
-| パラメータ | タイプ | 説明           |
-| ----- | --- | ------------ |
-| pos   | int | 説明が提供されていません |
+| Parameter | Type | Description             |
+| --------- | ---- | ----------------------- |
+| pos       | int  | No description provided |
 
 
 ### の間
@@ -30,10 +30,10 @@ crafttweaker.api.commands.custom.MCStringRange.at(pos as int);
 crafttweaker.api.commands.custom.MCStringRange.between(int, end as int);
 ```
 
-| パラメータ | タイプ | 説明           |
-| ----- | --- | ------------ |
-| 開始    | int | 説明が提供されていません |
-| 終了    | int | 説明が提供されていません |
+| Parameter | Type | Description             |
+| --------- | ---- | ----------------------- |
+| 開始        | int  | No description provided |
+| 終了        | int  | No description provided |
 
 
 ### 包含すること
@@ -44,53 +44,53 @@ crafttweaker.api.commands.custom.MCStringRange.between(int, end as int);
 crafttweaker.api.commands.custom.MCStringRange.compassing(crafttweaker.api.commands.custom.MCStringRange, b as crafttweaker.api.commands.custom.MCStringRange);
 ```
 
-| パラメータ | タイプ                                                                                          | 説明           |
-| ----- | -------------------------------------------------------------------------------------------- | ------------ |
-| a     | [crafttweaker.api.commands.custom.MCStringRange](/vanilla/api/commands/custom/MCStringRange) | 説明が提供されていません |
-| b     | [crafttweaker.api.commands.custom.MCStringRange](/vanilla/api/commands/custom/MCStringRange) | 説明が提供されていません |
+| Parameter | Type                                                                                         | Description             |
+| --------- | -------------------------------------------------------------------------------------------- | ----------------------- |
+| a         | [crafttweaker.api.commands.custom.MCStringRange](/vanilla/api/commands/custom/MCStringRange) | No description provided |
+| b         | [crafttweaker.api.commands.custom.MCStringRange](/vanilla/api/commands/custom/MCStringRange) | No description provided |
 
 
-### 等しい
+### equals
 
-戻り値の型: boolean
+Return type: boolean
 
 ```zenscript
 myMCStringRange.equals(o as Object);
 ```
 
-| パラメータ | タイプ    | 説明           |
-| ----- | ------ | ------------ |
-| o     | オブジェクト | 説明が提供されていません |
+| Parameter | Type   | Description             |
+| --------- | ------ | ----------------------- |
+| o         | Object | No description provided |
 
 
-### 取得する
+### get
 
-戻り値の型: String
+Return type: String
 
 ```zenscript
 myMCStringRange.get(string as String);
 ```
 
-| パラメータ | タイプ  | 説明           |
-| ----- | ---- | ------------ |
-| 文字列   | 文字列型 | 説明が提供されていません |
+| Parameter | Type   | Description             |
+| --------- | ------ | ----------------------- |
+| string    | String | No description provided |
 
 
 
-戻り値の型: String
+Return type: String
 
 ```zenscript
 myMCStringRange.get(reader as crafttweaker.api.commands.custom.MCImmutableStringReader);
 ```
 
-| パラメータ | タイプ                                                                                                              | 説明           |
-| ----- | ---------------------------------------------------------------------------------------------------------------- | ------------ |
-| リーダー  | [crafttweaker.api.commands.custom.MCImmutableStringReader](/vanilla/api/commands/custom/MCImmutableStringReader) | 説明が提供されていません |
+| Parameter | Type                                                                                                             | Description             |
+| --------- | ---------------------------------------------------------------------------------------------------------------- | ----------------------- |
+| リーダー      | [crafttweaker.api.commands.custom.MCImmutableStringReader](/vanilla/api/commands/custom/MCImmutableStringReader) | No description provided |
 
 
 ### getEnd
 
-戻り値の種類: int
+Return type: int
 
 ```zenscript
 myMCStringRange.getEnd();
@@ -98,7 +98,7 @@ myMCStringRange.getEnd();
 
 ### getLength
 
-戻り値の種類: int
+Return type: int
 
 ```zenscript
 myMCStringRange.getLength();
@@ -106,7 +106,7 @@ myMCStringRange.getLength();
 
 ### getStart
 
-戻り値の種類: int
+Return type: int
 
 ```zenscript
 myMCStringRange.getStart();
@@ -114,7 +114,7 @@ myMCStringRange.getStart();
 
 ### hashCode
 
-戻り値の種類: int
+Return type: int
 
 ```zenscript
 myMCStringRange.hashCode();
@@ -122,7 +122,7 @@ myMCStringRange.hashCode();
 
 ### isEmpty
 
-戻り値の型: boolean
+Return type: boolean
 
 ```zenscript
 myMCStringRange.isEmpty();
@@ -130,7 +130,7 @@ myMCStringRange.isEmpty();
 
 ### toString
 
-戻り値の型: String
+Return type: String
 
 ```zenscript
 myMCStringRange.toString();

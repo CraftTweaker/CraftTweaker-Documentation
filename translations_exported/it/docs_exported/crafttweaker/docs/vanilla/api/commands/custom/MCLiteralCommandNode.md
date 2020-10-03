@@ -2,7 +2,7 @@
 
 Questa classe è stata aggiunta da una mod con ID `crafttweaker`. Perciò, è necessario avere questa mod installata per poter utilizzare questa funzione.
 
-## Importare la classe
+## Importing the class
 Potrebbe essere necessario importare il pacchetto, se si incontrano dei problemi (come castare un vettore), quindi meglio essere sicuri e aggiungere la direttiva di importazione.
 ```zenscript
 crafttweaker.api.commands.custom.MCLiteralCommandNode
@@ -12,7 +12,7 @@ crafttweaker.api.commands.custom.MCLiteralCommandNode
 MCLiteralCommandNode implementa le seguenti interfacce. Ciò significa che ogni metodo presente nell'interfaccia può essere usato anche per questa classe.
 - [crafttweaker.api.commands.custom.MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)
 
-## Metodi
+## Methods
 ### createBuilder
 
 Tipo restituito: [crafttweaker.api.commands.custom.MCLiteralArgumentBuilder](/vanilla/api/commands/custom/MCLiteralArgumentBuilder)
@@ -21,22 +21,22 @@ Tipo restituito: [crafttweaker.api.commands.custom.MCLiteralArgumentBuilder](/va
 myMCLiteralCommandNode.createBuilder();
 ```
 
-### uguale
+### equals
 
-Tipo restituito: booleano
+Return type: boolean
 
 ```zenscript
 myMCLiteralCommandNode.equals(o come oggetto);
 ```
 
-| Parametro | Tipo    | Descrizione                 |
-| --------- | ------- | --------------------------- |
-| o         | Oggetto | Nessuna descrizione fornita |
+| Parameter | Type   | Description                 |
+| --------- | ------ | --------------------------- |
+| o         | Object | Nessuna descrizione fornita |
 
 
 ### getLiteral
 
-Tipo di ritorno: Stringa
+Return type: String
 
 ```zenscript
 myMCLiteralCommandNode.getLiteral();
@@ -44,7 +44,7 @@ myMCLiteralCommandNode.getLiteral();
 
 ### hashCode
 
-Tipo di restituzione: int
+Return type: int
 
 ```zenscript
 myMCLiteralCommandNode.hashCode();
@@ -52,40 +52,40 @@ myMCLiteralCommandNode.hashCode();
 
 ### isValidInput
 
-Tipo restituito: booleano
+Return type: boolean
 
 ```zenscript
 myMCLiteralCommandNode.isValidInput(input as String);
 ```
 
-| Parametro | Tipo    | Descrizione                 |
-| --------- | ------- | --------------------------- |
-| input     | Stringa | Nessuna descrizione fornita |
+| Parameter | Type   | Description                 |
+| --------- | ------ | --------------------------- |
+| input     | String | Nessuna descrizione fornita |
 
 
 ### toString
 
-Tipo di ritorno: Stringa
+Return type: String
 
 ```zenscript
 myMCLiteralCommandNode.toString();
 ```
 
 
-## Operatori
-### EQUALI
+## Operators
+### EQUALS
 
 ```zenscript
 myMCLiteralCommandNode == o come oggetto
 ```
 
-| Parametro | Tipo    | Descrizione                 |
-| --------- | ------- | --------------------------- |
-| o         | Oggetto | Nessuna descrizione fornita |
+| Parameter | Type   | Description                 |
+| --------- | ------ | --------------------------- |
+| o         | Object | Nessuna descrizione fornita |
 
 ## Caster
 
 | Tipo Risultato | Implicito |
 | -------------- | --------- |
-| Stringa        | vero      |
+| String         | true      |
 

@@ -1,35 +1,35 @@
 # Styl MCSS
 
-Ta klasa została dodana przez moda z mod-id `crafttweaker`. Więc musisz zainstalować tę modyfikację, jeśli chcesz używać tej funkcji.
+This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
 
-## Importowanie klasy
-Może być wymagane zaimportowanie pakietu, jeśli napotkasz jakiekolwiek problemy (np. rzucanie tablicy), tak aby były bezpieczne niż przepraszamy i dodaj import.
+## Importing the class
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
 ```zenscript
 craftaweaker.api.util.text.MCStyle
 ```
 
-## Konstruktorzy
+## Constructors
 ```zenscript
 nowy crafttweaker.api.util.text.MCStyle();
 ```
 
-## Metody
-### równa się
+## Methods
+### equals
 
-Typ zwrotu: logiczny
+Return type: boolean
 
 ```zenscript
 myMCStyle.equals(inny jako obiekt);
 ```
 
-| Parametr | Typ    | Opis             |
-| -------- | ------ | ---------------- |
-| inne     | Obiekt | Nie podano opisu |
+| Parameter | Type   | Description             |
+| --------- | ------ | ----------------------- |
+| other     | Object | No description provided |
 
 
 ### getBold
 
-Typ zwrotu: logiczny
+Return type: boolean
 
 ```zenscript
 myMCStyle.getBold();
@@ -45,7 +45,7 @@ myMCStyle.getFontId();
 
 ### getsertion
 
-Typ zwrotu: Ciąg
+Return type: String
 
 ```zenscript
 myMCStyle.getInsertion();
@@ -53,7 +53,7 @@ myMCStyle.getInsertion();
 
 ### getItalic
 
-Typ zwrotu: logiczny
+Return type: boolean
 
 ```zenscript
 myMCStyle.getItalic();
@@ -61,7 +61,7 @@ myMCStyle.getItalic();
 
 ### getObfuscated
 
-Typ zwrotu: logiczny
+Return type: boolean
 
 ```zenscript
 myMCStyle.getObfuscated();
@@ -69,7 +69,7 @@ myMCStyle.getObfuscated();
 
 ### getStrikethrough
 
-Typ zwrotu: logiczny
+Return type: boolean
 
 ```zenscript
 myMCStyle.getStrikethrough();
@@ -77,7 +77,7 @@ myMCStyle.getStrikethrough();
 
 ### weź pod uwagę
 
-Typ zwrotu: logiczny
+Return type: boolean
 
 ```zenscript
 myMCStyle.getUnderlined();
@@ -85,7 +85,7 @@ myMCStyle.getUnderlined();
 
 ### hashCode
 
-Typ zwrotu: int
+Return type: int
 
 ```zenscript
 myMCStyle.hashCode();
@@ -95,7 +95,7 @@ myMCStyle.hashCode();
 
 Bez względu na to, czy ten styl jest pusty (odziedzicza wszystko od rodzica).
 
-Typ zwrotu: logiczny
+Return type: boolean
 
 ```zenscript
 myMCStyle.isEmpty();
@@ -109,9 +109,9 @@ Typ zwrotu: [crafttweaker.api.util.text.MCStyle](/vanilla/api/util/text/MCStyle)
 myMCStyle.mergeStyle(styl jak crafttweaker.api.util.text.MCStyle);
 ```
 
-| Parametr | Typ                                                                  | Opis             |
-| -------- | -------------------------------------------------------------------- | ---------------- |
-| styl     | [craftaweaker.api.util.text.MCStyle](/vanilla/api/util/text/MCStyle) | Nie podano opisu |
+| Parameter | Type                                                                 | Description             |
+| --------- | -------------------------------------------------------------------- | ----------------------- |
+| styl      | [craftaweaker.api.util.text.MCStyle](/vanilla/api/util/text/MCStyle) | No description provided |
 
 
 ### setPogrubienie
@@ -122,9 +122,9 @@ Typ zwrotu: [crafttweaker.api.util.text.MCStyle](/vanilla/api/util/text/MCStyle)
 myMCStyle.setBold(boldIn jako Boolean);
 ```
 
-| Parametr | Typ     | Opis             |
-| -------- | ------- | ---------------- |
-| boldIn   | Boolean | Nie podano opisu |
+| Parameter | Type    | Description             |
+| --------- | ------- | ----------------------- |
+| boldIn    | Boolean | No description provided |
 
 
 ### Kolor ustawienia
@@ -135,9 +135,9 @@ Typ zwrotu: [crafttweaker.api.util.text.MCStyle](/vanilla/api/util/text/MCStyle)
 myMCStyle.setColor(formatowanie jako crafttweaker.api.text.TextFormatting);
 ```
 
-| Parametr     | Typ                                                                    | Opis             |
-| ------------ | ---------------------------------------------------------------------- | ---------------- |
-| formatowanie | [Tworzenie formatowania tekstu](/crafttweaker/api/text/TextFormatting) | Nie podano opisu |
+| Parameter    | Type                                                                   | Description             |
+| ------------ | ---------------------------------------------------------------------- | ----------------------- |
+| formatowanie | [Tworzenie formatowania tekstu](/crafttweaker/api/text/TextFormatting) | No description provided |
 
 
 
@@ -147,9 +147,9 @@ Typ zwrotu: [crafttweaker.api.util.text.MCStyle](/vanilla/api/util/text/MCStyle)
 mojMCStyle.setColor(kolor jak inny);
 ```
 
-| Parametr | Typ    | Opis             |
-| -------- | ------ | ---------------- |
-| kolor    | odcień | Nie podano opisu |
+| Parameter | Type | Description             |
+| --------- | ---- | ----------------------- |
+| kolor     | int  | No description provided |
 
 
 ### setFontId
@@ -160,9 +160,9 @@ Typ zwrotu: [crafttweaker.api.util.text.MCStyle](/vanilla/api/util/text/MCStyle)
 myMCStyle.setFontId(lokalizacja jako crafttweaker.api.util.MCResourceLocation);
 ```
 
-| Parametr    | Typ                                                                                            | Opis             |
-| ----------- | ---------------------------------------------------------------------------------------------- | ---------------- |
-| lokalizacja | [[PLACEHOLDER] crafttweaker.api.util.MCResourceLocation](/vanilla/api/util/MCResourceLocation) | Nie podano opisu |
+| Parameter   | Type                                                                             | Description             |
+| ----------- | -------------------------------------------------------------------------------- | ----------------------- |
+| lokalizacja | [crafttweaker.api.util.MCResourceLocation](/vanilla/api/util/MCResourceLocation) | No description provided |
 
 
 ### ustawianie formatowania
@@ -173,9 +173,9 @@ Typ zwrotu: [crafttweaker.api.util.text.MCStyle](/vanilla/api/util/text/MCStyle)
 formatowanie myMCStyle.setmatting(formatowanie jako crafttweaker.api.text.TextFormatting);
 ```
 
-| Parametr     | Typ                                                                    | Opis             |
-| ------------ | ---------------------------------------------------------------------- | ---------------- |
-| formatowanie | [Tworzenie formatowania tekstu](/crafttweaker/api/text/TextFormatting) | Nie podano opisu |
+| Parameter    | Type                                                                   | Description             |
+| ------------ | ---------------------------------------------------------------------- | ----------------------- |
+| formatowanie | [Tworzenie formatowania tekstu](/crafttweaker/api/text/TextFormatting) | No description provided |
 
 
 ### setInsertion
@@ -188,9 +188,9 @@ Typ zwrotu: [crafttweaker.api.util.text.MCStyle](/vanilla/api/util/text/MCStyle)
 myMCStyle.setInsertion(insertion as String);
 ```
 
-| Parametr     | Typ         | Opis             |
-| ------------ | ----------- | ---------------- |
-| umieszczenie | Ciąg znaków | Nie podano opisu |
+| Parameter    | Type   | Description             |
+| ------------ | ------ | ----------------------- |
+| umieszczenie | String | No description provided |
 
 
 ### setItalic
@@ -201,9 +201,9 @@ Typ zwrotu: [crafttweaker.api.util.text.MCStyle](/vanilla/api/util/text/MCStyle)
 myMCStyle.setItalic (kursywą jako boolean);
 ```
 
-| Parametr | Typ     | Opis             |
-| -------- | ------- | ---------------- |
-| italic   | Boolean | Nie podano opisu |
+| Parameter | Type    | Description             |
+| --------- | ------- | ----------------------- |
+| italic    | Boolean | No description provided |
 
 
 ### setObuscated
@@ -214,9 +214,9 @@ Typ zwrotu: [crafttweaker.api.util.text.MCStyle](/vanilla/api/util/text/MCStyle)
 myMCStyle.setObfuscated(ukryte jako boolean);
 ```
 
-| Parametr | Typ     | Opis             |
-| -------- | ------- | ---------------- |
-| ukryte   | Boolean | Nie podano opisu |
+| Parameter  | Type    | Description             |
+| ---------- | ------- | ----------------------- |
+| obfuscated | Boolean | No description provided |
 
 
 ### setStrikethrough
@@ -227,9 +227,9 @@ Typ zwrotu: [crafttweaker.api.util.text.MCStyle](/vanilla/api/util/text/MCStyle)
 myMCStyle.setStrikethrough(strikethrough jako boolean);
 ```
 
-| Parametr      | Typ     | Opis             |
-| ------------- | ------- | ---------------- |
-| przestrajanie | Boolean | Nie podano opisu |
+| Parameter     | Type    | Description             |
+| ------------- | ------- | ----------------------- |
+| strikethrough | Boolean | No description provided |
 
 
 ### Ustawiony
@@ -240,9 +240,9 @@ Typ zwrotu: [crafttweaker.api.util.text.MCStyle](/vanilla/api/util/text/MCStyle)
 myMCStyle.setUnderlined(podkreślone jako Boolean);
 ```
 
-| Parametr    | Typ     | Opis             |
-| ----------- | ------- | ---------------- |
-| Podkreślony | Boolean | Nie podano opisu |
+| Parameter   | Type    | Description             |
+| ----------- | ------- | ----------------------- |
+| Podkreślony | Boolean | No description provided |
 
 
 
@@ -252,14 +252,14 @@ Typ zwrotu: [crafttweaker.api.util.text.MCStyle](/vanilla/api/util/text/MCStyle)
 myMCStyle.setUnderlined(podkreślone jako boolean);
 ```
 
-| Parametr    | Typ     | Opis             |
-| ----------- | ------- | ---------------- |
-| Podkreślony | boolean | Nie podano opisu |
+| Parameter   | Type    | Description             |
+| ----------- | ------- | ----------------------- |
+| Podkreślony | boolean | No description provided |
 
 
 ### toString
 
-Typ zwrotu: Ciąg
+Return type: String
 
 ```zenscript
 myMCStyle.toString();

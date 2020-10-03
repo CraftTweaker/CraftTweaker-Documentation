@@ -1,4 +1,4 @@
-# Фильтр рецептов
+# RecipeFilter
 
 Этот класс был добавлен модом с mod-id `crafttweaker`. Так что если вы хотите использовать эту функцию, вам нужно установить этот мод.
 
@@ -8,24 +8,24 @@
 crafttweaker.api.recipe.RecipeFilter
 ```
 
-## Функциональный интерфейс
+## Functional Interface
 
-Этот класс является функциональным интерфейсом. Это означает, что вы можете использовать нотацию lambda для создания экземпляра. Нотация лямбда выглядит так:
+This class is a functional interface. This means that you can use the lambda notation to create an instance of it. The lambda notation looks like:
 ```zenscript
-(имя) => ложь
+(name) => false
 ```
-## Методы
-### тест
+## Methods
+### test
 
-Тип возврата: логическое значение
+Return type: boolean
 
 ```zenscript
-myRecipeFilter.test(название как строка);
+myRecipeFilter.test(name as String);
 ```
 
-| Параметр | Тип    | Описание             |
+| Параметр | Тип    | Description          |
 | -------- | ------ | -------------------- |
-| имя      | String | Описание отсутствует |
+| name     | String | Описание отсутствует |
 
 
 

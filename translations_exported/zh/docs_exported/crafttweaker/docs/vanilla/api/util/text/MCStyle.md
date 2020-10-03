@@ -16,20 +16,20 @@ craftminstrer.api.util.text.MCStyle
 ## 方法
 ### equals #等于
 
-返回类型：布尔值
+Return type: boolean
 
 ```zenscript
 myMCStyle.equals(其它作为对象)；
 ```
 
-| 参数    | 类型 | 描述                      |
-| ----- | -- | ----------------------- |
-| other | 对象 | No description provided |
+| 参数    | 类型     | 描述                      |
+| ----- | ------ | ----------------------- |
+| other | Object | No description provided |
 
 
 ### getBold
 
-返回类型：布尔值
+Return type: boolean
 
 ```zenscript
 myMCStyle.getBold();
@@ -45,7 +45,7 @@ myMCStyle.getFontId();
 
 ### 获取插入
 
-返回类型：字符串
+Return type: String
 
 ```zenscript
 myMCStyle.get插入();
@@ -53,7 +53,7 @@ myMCStyle.get插入();
 
 ### getItalic
 
-返回类型：布尔值
+Return type: boolean
 
 ```zenscript
 myMCStyle.getItalic();
@@ -61,7 +61,7 @@ myMCStyle.getItalic();
 
 ### getObfuscated
 
-返回类型：布尔值
+Return type: boolean
 
 ```zenscript
 myMCStyle.getObfuscated();
@@ -69,7 +69,7 @@ myMCStyle.getObfuscated();
 
 ### getStrikefe
 
-返回类型：布尔值
+Return type: boolean
 
 ```zenscript
 a. myMCStyle.getStrikethrough();
@@ -77,7 +77,7 @@ a. myMCStyle.getStrikethrough();
 
 ### 获取下划线
 
-返回类型：布尔值
+Return type: boolean
 
 ```zenscript
 myMCStyle.getUnderlined();
@@ -85,7 +85,7 @@ myMCStyle.getUnderlined();
 
 ### hashCode
 
-返回类型：int
+Return type: int
 
 ```zenscript
 myMCStyle.hashCode();
@@ -95,7 +95,7 @@ myMCStyle.hashCode();
 
 此样式是否为空(继承父类的一切)。
 
-返回类型：布尔值
+Return type: boolean
 
 ```zenscript
 myMCStyle.isEmpty();
@@ -147,9 +147,9 @@ myMCStyle.setColor(格式化为 craftminstrer.api.text.TextFormating);
 myMCStyle.setColor(颜色为原样)；
 ```
 
-| 参数 | 类型 | 描述                      |
-| -- | -- | ----------------------- |
-| 颜色 | 整数 | No description provided |
+| 参数 | 类型  | 描述                      |
+| -- | --- | ----------------------- |
+| 颜色 | int | No description provided |
 
 
 ### setFontId
@@ -160,9 +160,9 @@ myMCStyle.setColor(颜色为原样)；
 myMCStyle.setFontId(位置为 craftweeper.api.util.MCResourceLocation);
 ```
 
-| 参数 | 类型                                                                                | 描述                      |
-| -- | --------------------------------------------------------------------------------- | ----------------------- |
-| 位置 | [craftminstrer.api.util.MCResourceLocation](/vanilla/api/util/MCResourceLocation) | No description provided |
+| 参数 | 类型                                                                               | 描述                      |
+| -- | -------------------------------------------------------------------------------- | ----------------------- |
+| 位置 | [crafttweaker.api.util.MCResourceLocation](/vanilla/api/util/MCResourceLocation) | No description provided |
 
 
 ### 设置格式
@@ -188,9 +188,9 @@ myMCStyle.setFormating(格式化为 craftbiner.api.text.TextFormating);
 myMCStyle.set插入(插入为字符串)；
 ```
 
-| 参数 | 类型          | 描述                      |
-| -- | ----------- | ----------------------- |
-| 插入 | 字符串[string] | No description provided |
+| 参数 | 类型     | 描述                      |
+| -- | ------ | ----------------------- |
+| 插入 | String | No description provided |
 
 
 ### setItalic
@@ -214,9 +214,9 @@ myMCStyle.setItalic(斜体为 Boolean)；
 myMCStyle.setObfuscated(混淆为 Boolean)；
 ```
 
-| 参数  | 类型      | 描述                      |
-| --- | ------- | ----------------------- |
-| 迷惑的 | Boolean | No description provided |
+| 参数         | 类型      | 描述                      |
+| ---------- | ------- | ----------------------- |
+| obfuscated | Boolean | No description provided |
 
 
 ### 设置删除线
@@ -227,9 +227,9 @@ myMCStyle.setObfuscated(混淆为 Boolean)；
 myMCStyle.setStrike-through (strikefy as Boolean)
 ```
 
-| 参数  | 类型      | 描述                      |
-| --- | ------- | ----------------------- |
-| 删除线 | Boolean | No description provided |
+| 参数            | 类型      | 描述                      |
+| ------------- | ------- | ----------------------- |
+| strikethrough | Boolean | No description provided |
 
 
 ### 下划线
@@ -259,7 +259,7 @@ myMCStyle.setUnlined(下划线为布尔值)；
 
 ### toString
 
-返回类型：字符串
+Return type: String
 
 ```zenscript
 myMCStyle.toString();

@@ -2,16 +2,16 @@
 
 Questa classe è stata aggiunta da una mod con ID `crafttweaker`. Perciò, è necessario avere questa mod installata per poter utilizzare questa funzione.
 
-## Importare la classe
+## Importing the class
 Potrebbe essere necessario importare il pacchetto, se si incontrano dei problemi (come castare un vettore), quindi meglio essere sicuri e aggiungere la direttiva di importazione.
 ```zenscript
 crafttweaker.api.commands.custom.MCCommandSource
 ```
 
-## Metodi
+## Methods
 ### getName
 
-Tipo di ritorno: Stringa
+Return type: String
 
 ```zenscript
 myMCCommandSource.getName();
@@ -51,20 +51,20 @@ myMCCommandSource.getTeamNames();
 
 ### hasPermissionLevel
 
-Tipo restituito: booleano
+Return type: boolean
 
 ```zenscript
 myMCCommandSource.hasPermissionLevel(p_197034_1_ as int);
 ```
 
-| Parametro     | Tipo | Descrizione                 |
+| Parameter     | Type | Description                 |
 | ------------- | ---- | --------------------------- |
 | p_197034_1_ | int  | Nessuna descrizione fornita |
 
 
 ### isPlayer
 
-Tipo restituito: booleano
+Return type: boolean
 
 ```zenscript
 myMCCommandSource.isPlayer();
@@ -76,9 +76,9 @@ myMCCommandSource.isPlayer();
 myMCCommandSource.sendErrorMessage(messaggio come Stringa);
 ```
 
-| Parametro | Tipo    | Descrizione                 |
-| --------- | ------- | --------------------------- |
-| messaggio | Stringa | Nessuna descrizione fornita |
+| Parameter | Type   | Description                 |
+| --------- | ------ | --------------------------- |
+| message   | String | Nessuna descrizione fornita |
 
 
 ### sendFeedback
@@ -87,9 +87,9 @@ myMCCommandSource.sendErrorMessage(messaggio come Stringa);
 myMCCommandSource.sendFeedback(feedback come stringa, allowLogging come boolean);
 ```
 
-| Parametro    | Tipo    | Descrizione                 |
+| Parameter    | Type    | Description                 |
 | ------------ | ------- | --------------------------- |
-| feedback     | Stringa | Nessuna descrizione fornita |
+| feedback     | String  | Nessuna descrizione fornita |
 | allowLogging | boolean | Nessuna descrizione fornita |
 
 
@@ -109,7 +109,7 @@ Tipo restituito: [crafttweaker.api.commands.custom.MCCommandSource](/vanilla/api
 myMCCommandSource.withMinPermissionLevel(p_197026_1_ as int);
 ```
 
-| Parametro     | Tipo | Descrizione                 |
+| Parameter     | Type | Description                 |
 | ------------- | ---- | --------------------------- |
 | p_197026_1_ | int  | Nessuna descrizione fornita |
 
@@ -122,7 +122,7 @@ Tipo restituito: [crafttweaker.api.commands.custom.MCCommandSource](/vanilla/api
 myMCCommandSource.withPermissionLevel(p_197033_1_ as int);
 ```
 
-| Parametro     | Tipo | Descrizione                 |
+| Parameter     | Type | Description                 |
 | ------------- | ---- | --------------------------- |
 | p_197033_1_ | int  | Nessuna descrizione fornita |
 

@@ -1,14 +1,14 @@
 # Contexto MCCommand
 
-Esta clase fue añadida por un mod con la ID  `crafttweaker`. Necesitas tener este mod instalado si quieres usar esta caracteristica.
+This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
 
-## Importar la clase
-Puede ser requerido que importes el paquete si encuentras algun problema (como crear un Array).
+## Importing the class
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
 ```zenscript
 crafttweaker.api.commands.custom.MCCommandContext
 ```
 
-## Métodos
+## Methods
 ### copyFor
 
 Tipo de retorno: [crafttweaker.api.commands.custom.MCCommandContext](/vanilla/api/commands/custom/MCCommandContext)
@@ -17,35 +17,35 @@ Tipo de retorno: [crafttweaker.api.commands.custom.MCCommandContext](/vanilla/ap
 myMCCommandContext.copyFor(fuente como crafttweaker.api.commands.custom.MCCommandSource);
 ```
 
-| Parámetro | Tipo                                                                                             | Descripción                   |
-| --------- | ------------------------------------------------------------------------------------------------ | ----------------------------- |
-| fuente    | [crafttweaker.api.commands.custom.MCCommandSource](/vanilla/api/commands/custom/MCCommandSource) | No se proporcionó descripción |
+| Parameter | Type                                                                                             | Description             |
+| --------- | ------------------------------------------------------------------------------------------------ | ----------------------- |
+| fuente    | [crafttweaker.api.commands.custom.MCCommandSource](/vanilla/api/commands/custom/MCCommandSource) | No description provided |
 
 
-### igual a
+### equals
 
-Tipo de retorno: booleano
+Return type: boolean
 
 ```zenscript
 myMCCommandContext.equals(o como objeto);
 ```
 
-| Parámetro | Tipo   | Descripción                   |
-| --------- | ------ | ----------------------------- |
-| o         | Objeto | No se proporcionó descripción |
+| Parameter | Type   | Description             |
+| --------- | ------ | ----------------------- |
+| o         | Object | No description provided |
 
 
 ### getArgumento
 
-Tipo de retorno: Cadena
+Return type: String
 
 ```zenscript
 myMCCommandContext.getArgument(nombre como cadena);
 ```
 
-| Parámetro | Tipo   | Descripción                   |
-| --------- | ------ | ----------------------------- |
-| nombre    | Cadena | No se proporcionó descripción |
+| Parameter | Type   | Description             |
+| --------- | ------ | ----------------------- |
+| name      | String | No description provided |
 
 
 ### getChild
@@ -66,7 +66,7 @@ myMCCommandContext.getCommand();
 
 ### getInput
 
-Tipo de retorno: Cadena
+Return type: String
 
 ```zenscript
 myMCCommandContext.getInput();
@@ -122,7 +122,7 @@ myMCCommandContext.getSource();
 
 ### hasNodes
 
-Tipo de retorno: booleano
+Return type: boolean
 
 ```zenscript
 myMCCommandContext.hasNodes();
@@ -130,7 +130,7 @@ myMCCommandContext.hasNodes();
 
 ### hashCode
 
-Tipo de retorno: int
+Return type: int
 
 ```zenscript
 myMCCommandContext.hashCode();
@@ -138,7 +138,7 @@ myMCCommandContext.hashCode();
 
 ### es bifurcado
 
-Tipo de retorno: booleano
+Return type: boolean
 
 ```zenscript
 myMCCommandContext.isForked();
@@ -146,27 +146,27 @@ myMCCommandContext.isForked();
 
 ### toString
 
-Tipo de retorno: Cadena
+Return type: String
 
 ```zenscript
 myMCCommandContext.toString();
 ```
 
 
-## Operadores
-### IGUALES
+## Operators
+### EQUALS
 
 ```zenscript
 myMCCommandContext == o como objeto
 ```
 
-| Parámetro | Tipo   | Descripción                   |
-| --------- | ------ | ----------------------------- |
-| o         | Objeto | No se proporcionó descripción |
+| Parameter | Type   | Description             |
+| --------- | ------ | ----------------------- |
+| o         | Object | No description provided |
 
 ## Casters
 
-| Tipo de resultado | Es implícito |
-| ----------------- | ------------ |
-| Cadena            | verdad       |
+| Result type | Is Implicit |
+| ----------- | ----------- |
+| String      | true        |
 

@@ -1,15 +1,15 @@
 # MCSuggestionsBuilder
 
-crafttweakerのmod-idを持つmodによって追加されているクラスです。 従って、この機能を利用する場合はこのmodをインストールする必要があります。
+This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
 
-## クラスのインポート
-問題が発生した場合には、インポートが必要になります。とはいえ、お手数ですが予めインポートしておくほうが安全です。
+## Importing the class
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
 ```zenscript
 crafttweaker.api.commands.custom.MCSuggestionsBuilder
 ```
 
-## メソッド
-### 追加
+## Methods
+### add
 
 戻り値の型: [crafttweaker.api.commands.custom.MCSuggestionsBuilder](/vanilla/api/commands/custom/MCSuggestionsBuilder)
 
@@ -17,12 +17,12 @@ crafttweaker.api.commands.custom.MCSuggestionsBuilder
 myMCSuggestionsBuilder.add(crafttweaker.api.commands.custom.MCSuggestionsBuilder);
 ```
 
-| パラメータ | タイプ                                                                                                        | 説明           |
-| ----- | ---------------------------------------------------------------------------------------------------------- | ------------ |
-| その他   | [crafttweaker.api.commands.custom.MCSuggestionsBuilder](/vanilla/api/commands/custom/MCSuggestionsBuilder) | 説明が提供されていません |
+| Parameter | Type                                                                                                       | Description             |
+| --------- | ---------------------------------------------------------------------------------------------------------- | ----------------------- |
+| other     | [crafttweaker.api.commands.custom.MCSuggestionsBuilder](/vanilla/api/commands/custom/MCSuggestionsBuilder) | No description provided |
 
 
-### ビルド
+### build
 
 戻り値の型: [crafttweaker.api.commands.custom.MCSuggestions](/vanilla/api/commands/custom/MCSuggestions)
 
@@ -38,27 +38,27 @@ myMCSuggestionsBuilder.build();
 myMCSuggestionsBuilder.createOffset(start as int);
 ```
 
-| パラメータ | タイプ | 説明           |
-| ----- | --- | ------------ |
-| 開始    | int | 説明が提供されていません |
+| Parameter | Type | Description             |
+| --------- | ---- | ----------------------- |
+| 開始        | int  | No description provided |
 
 
-### 等しい
+### equals
 
-戻り値の型: boolean
+Return type: boolean
 
 ```zenscript
 myMCSuggestionsBuilder.equals(o as Object);
 ```
 
-| パラメータ | タイプ    | 説明           |
-| ----- | ------ | ------------ |
-| o     | オブジェクト | 説明が提供されていません |
+| Parameter | Type   | Description             |
+| --------- | ------ | ----------------------- |
+| o         | Object | No description provided |
 
 
 ### getInput
 
-戻り値の型: String
+Return type: String
 
 ```zenscript
 myMCSuggestionsBuilder.getInput();
@@ -66,7 +66,7 @@ myMCSuggestionsBuilder.getInput();
 
 ### 残りの取得
 
-戻り値の型: String
+Return type: String
 
 ```zenscript
 myMCSuggestionsBuilder.getRemaining();
@@ -74,7 +74,7 @@ myMCSuggestionsBuilder.getRemaining();
 
 ### getStart
 
-戻り値の種類: int
+Return type: int
 
 ```zenscript
 myMCSuggestionsBuilder.getStart();
@@ -82,7 +82,7 @@ myMCSuggestionsBuilder.getStart();
 
 ### hashCode
 
-戻り値の種類: int
+Return type: int
 
 ```zenscript
 myMCSuggestionsBuilder.hashCode();
@@ -104,9 +104,9 @@ myMCSuggestionsBuilder.restart();
 myMCSuggestionsBuilder.sugg(text as String);
 ```
 
-| パラメータ | タイプ  | 説明           |
-| ----- | ---- | ------------ |
-| テキスト  | 文字列型 | 説明が提供されていません |
+| Parameter | Type   | Description             |
+| --------- | ------ | ----------------------- |
+| テキスト      | String | No description provided |
 
 
 
@@ -116,9 +116,9 @@ myMCSuggestionsBuilder.sugg(text as String);
 myMCSuggestionsBuilder.suggest(value as int);
 ```
 
-| パラメータ | タイプ | 説明           |
-| ----- | --- | ------------ |
-| 値     | int | 説明が提供されていません |
+| Parameter | Type | Description             |
+| --------- | ---- | ----------------------- |
+| value     | int  | No description provided |
 
 
 
@@ -128,10 +128,10 @@ myMCSuggestionsBuilder.suggest(value as int);
 myMCSuggestionsBuilder.sugg(text as String, tooltip as String);
 ```
 
-| パラメータ  | タイプ  | 説明           |
-| ------ | ---- | ------------ |
-| テキスト   | 文字列型 | 説明が提供されていません |
-| ツールチップ | 文字列型 | 説明が提供されていません |
+| Parameter | Type   | Description             |
+| --------- | ------ | ----------------------- |
+| テキスト      | String | No description provided |
+| ツールチップ    | String | No description provided |
 
 
 
@@ -141,15 +141,15 @@ myMCSuggestionsBuilder.sugg(text as String, tooltip as String);
 myMCSuggestionsBuilder.sugg(value as int, tooltip as String);
 ```
 
-| パラメータ  | タイプ  | 説明           |
-| ------ | ---- | ------------ |
-| 値      | int  | 説明が提供されていません |
-| ツールチップ | 文字列型 | 説明が提供されていません |
+| Parameter | Type   | Description             |
+| --------- | ------ | ----------------------- |
+| value     | int    | No description provided |
+| ツールチップ    | String | No description provided |
 
 
 ### toString
 
-戻り値の型: String
+Return type: String
 
 ```zenscript
 myMCSuggestionsBuilder.toString();
@@ -163,13 +163,13 @@ myMCSuggestionsBuilder.toString();
 myMCSuggestionsBuilder == o as Object
 ```
 
-| パラメータ | タイプ    | 説明           |
-| ----- | ------ | ------------ |
-| o     | オブジェクト | 説明が提供されていません |
+| Parameter | Type   | Description             |
+| --------- | ------ | ----------------------- |
+| o         | Object | No description provided |
 
-## キャスト
+## Casters
 
-| 結果の種類 | 暗黙的  |
-| ----- | ---- |
-| 文字列型  | true |
+| Result type | Is Implicit |
+| ----------- | ----------- |
+| String      | true        |
 

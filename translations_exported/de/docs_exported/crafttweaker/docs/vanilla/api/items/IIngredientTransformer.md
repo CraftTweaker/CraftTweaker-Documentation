@@ -1,9 +1,9 @@
 # IngredientTransformer
 
-Diese Klasse wurde von einer Mod mit mod-id `crafttweaker` hinzugefügt. Wenn Sie diese Funktion nutzen möchten, müssen Sie diese Mod installiert haben.
+This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
 
 ## Diese Klasse importieren
-Es kann erforderlich sein, dass Sie das Paket importieren, wenn Sie irgendwelche Probleme haben (wie zum Beispiel ein Array zu bearbeiten), also besser sicher sein als bedauern und fügen Sie den Import.
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
 ```zenscript
 crafttweaker.api.item.IIngredientTransformer
 ```
@@ -11,28 +11,28 @@ crafttweaker.api.item.IIngredientTransformer
 ## Methoden
 ### getCommandString
 
-Rückgabetyp: String
+Return type: String
 
 ```zenscript
-myIIngredientTransformer.getCommandString(transformedIngredient als T);
+myIIngredientTransformer.getCommandString(Zutat als T);
 ```
 
-| Parameter             | Type | Beschreibung                 |
-| --------------------- | ---- | ---------------------------- |
-| transformedIngredient | T    | Keine Beschreibung angegeben |
+| Parameter  | Type | Beschreibung            |
+| ---------- | ---- | ----------------------- |
+| ingredient | T    | No description provided |
 
 
-### transformieren
+### matches
 
-Rückgabetyp: [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
+Return type: boolean
 
 ```zenscript
-myIIngredientTransformer.transform(Stapel als crafttweaker.api.item.IItemStack);
+myIIngredientTransformer.matches(Stapel als crafttweaker.api.item.IItemStack);
 ```
 
-| Parameter | Type                                                              | Beschreibung                 |
-| --------- | ----------------------------------------------------------------- | ---------------------------- |
-| stapeln   | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | Keine Beschreibung angegeben |
+| Parameter | Type                                                              | Beschreibung            |
+| --------- | ----------------------------------------------------------------- | ----------------------- |
+| stack     | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | No description provided |
 
 
 

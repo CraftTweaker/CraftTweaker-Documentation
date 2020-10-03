@@ -1,17 +1,17 @@
 # MCCommandSource
 
-crafttweakerのmod-idを持つmodによって追加されているクラスです。 従って、この機能を利用する場合はこのmodをインストールする必要があります。
+This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
 
-## クラスのインポート
-問題が発生した場合には、インポートが必要になります。とはいえ、お手数ですが予めインポートしておくほうが安全です。
+## Importing the class
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
 ```zenscript
 crafttweaker.api.commands.custom.MCCommandSource
 ```
 
-## メソッド
+## Methods
 ### getName
 
-戻り値の型: String
+Return type: String
 
 ```zenscript
 myMCCommandSource.getName();
@@ -51,20 +51,20 @@ myMCCommandSource.getTeamNames();
 
 ### hasPermissionLevel
 
-戻り値の型: boolean
+Return type: boolean
 
 ```zenscript
 myMCCommandSource.hasPermissionLevel(p_197034_1_ を int);
 ```
 
-| パラメータ         | タイプ | 説明           |
-| ------------- | --- | ------------ |
-| p_197034_1_ | int | 説明が提供されていません |
+| Parameter     | Type | Description             |
+| ------------- | ---- | ----------------------- |
+| p_197034_1_ | int  | No description provided |
 
 
 ### isPlayer
 
-戻り値の型: boolean
+Return type: boolean
 
 ```zenscript
 myMCCommandSource.isPlayer();
@@ -76,9 +76,9 @@ myMCCommandSource.isPlayer();
 myMCCommandSource.sendErrorMessage(message as String);
 ```
 
-| パラメータ | タイプ  | 説明           |
-| ----- | ---- | ------------ |
-| メッセージ | 文字列型 | 説明が提供されていません |
+| Parameter | Type   | Description             |
+| --------- | ------ | ----------------------- |
+| message   | String | No description provided |
 
 
 ### sendFeedback
@@ -87,10 +87,10 @@ myMCCommandSource.sendErrorMessage(message as String);
 myMCCommandSource.sendFeedback(feedback as String, allowLogging as boolean);
 ```
 
-| パラメータ   | タイプ      | 説明           |
-| ------- | -------- | ------------ |
-| フィードバック | 文字列型     | 説明が提供されていません |
-| ログを許可   | boolean型 | 説明が提供されていません |
+| Parameter    | Type     | Description             |
+| ------------ | -------- | ----------------------- |
+| フィードバック      | String   | No description provided |
+| allowLogging | boolean型 | No description provided |
 
 
 ### withFeedback無効
@@ -109,9 +109,9 @@ myMCCommandSource.withFeedbackDisabled();
 myMCCommandSource.withMinPermissionLevel(p_197026_1_ を int);
 ```
 
-| パラメータ         | タイプ | 説明           |
-| ------------- | --- | ------------ |
-| p_197026_1_ | int | 説明が提供されていません |
+| Parameter     | Type | Description             |
+| ------------- | ---- | ----------------------- |
+| p_197026_1_ | int  | No description provided |
 
 
 ### withPermissionLevel
@@ -122,9 +122,9 @@ myMCCommandSource.withMinPermissionLevel(p_197026_1_ を int);
 myMCCommandSource.withPermissionLevel(p_197033_1_ を int);
 ```
 
-| パラメータ         | タイプ | 説明           |
-| ------------- | --- | ------------ |
-| p_197033_1_ | int | 説明が提供されていません |
+| Parameter     | Type | Description             |
+| ------------- | ---- | ----------------------- |
+| p_197033_1_ | int  | No description provided |
 
 
 

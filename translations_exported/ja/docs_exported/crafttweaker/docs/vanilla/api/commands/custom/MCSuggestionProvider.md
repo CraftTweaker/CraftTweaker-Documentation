@@ -1,9 +1,9 @@
 # MCSuggestionProvider
 
-crafttweakerのmod-idを持つmodによって追加されているクラスです。 従って、この機能を利用する場合はこのmodをインストールする必要があります。
+This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
 
-## クラスのインポート
-問題が発生した場合には、インポートが必要になります。とはいえ、お手数ですが予めインポートしておくほうが安全です。
+## Importing the class
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
 ```zenscript
 crafttweaker.api.commands.custom.MCSuggestionProvider
 ```
@@ -12,24 +12,24 @@ crafttweaker.api.commands.custom.MCSuggestionProvider
 ```zenscript
 new crafttweaker.api.commands.custom.MCSuggestionProvider(function.BiFunction<crafttweaker.api.commands.custom.MCCommandContext, crafttweaker.api.commands.custom.MCSuggestionsBuilder, crafttweaker.api.commands.custom.MCSuggestions>);
 ```
-| パラメータ | タイプ                                                                                                                                                                                                                                                                                                                                                 | 説明           |
-| ----- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ |
-| 楽しい   | function.BiFunction&lt;[crafttweaker.api.commands.custom.MCCommandContext](/vanilla/api/commands/custom/MCCommandContext), [crafttweaker.api.commands.custom.MCSuggestionsBuilder](/vanilla/api/commands/custom/MCSuggestionsBuilder), [crafttweaker.api.commands.custom.MCSuggestions](/vanilla/api/commands/custom/MCSuggestions)&gt; | 説明が提供されていません |
+| Parameter | Type                                                                                                                                                                                                                                                                                                                                                | Description             |
+| --------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------- |
+| 楽しい       | function.BiFunction&lt;[crafttweaker.api.commands.custom.MCCommandContext](/vanilla/api/commands/custom/MCCommandContext), [crafttweaker.api.commands.custom.MCSuggestionsBuilder](/vanilla/api/commands/custom/MCSuggestionsBuilder), [crafttweaker.api.commands.custom.MCSuggestions](/vanilla/api/commands/custom/MCSuggestions)&gt; | No description provided |
 
 
 
-## メソッド
-### 等しい
+## Methods
+### equals
 
-戻り値の型: boolean
+Return type: boolean
 
 ```zenscript
 myMCSuggestionProvider.equals(o as Object);
 ```
 
-| パラメータ | タイプ    | 説明           |
-| ----- | ------ | ------------ |
-| o     | オブジェクト | 説明が提供されていません |
+| Parameter | Type   | Description             |
+| --------- | ------ | ----------------------- |
+| o         | Object | No description provided |
 
 
 ### getSuggestions
@@ -40,15 +40,15 @@ myMCSuggestionProvider.equals(o as Object);
 myMCSuggestionProvider.getSuggestions(context as crafttweaker.api.commands.custom.MCCommandContext, builder as crafttweaker.api.commands.custom.MCSuggestionsBuilder);
 ```
 
-| パラメータ   | タイプ                                                                                                        | 説明           |
-| ------- | ---------------------------------------------------------------------------------------------------------- | ------------ |
-| context | [crafttweaker.api.commands.custom.MCCommandContext](/vanilla/api/commands/custom/MCCommandContext)         | 説明が提供されていません |
-| ビルダー:   | [crafttweaker.api.commands.custom.MCSuggestionsBuilder](/vanilla/api/commands/custom/MCSuggestionsBuilder) | 説明が提供されていません |
+| Parameter | Type                                                                                                       | Description             |
+| --------- | ---------------------------------------------------------------------------------------------------------- | ----------------------- |
+| context   | [crafttweaker.api.commands.custom.MCCommandContext](/vanilla/api/commands/custom/MCCommandContext)         | No description provided |
+| ビルダー:     | [crafttweaker.api.commands.custom.MCSuggestionsBuilder](/vanilla/api/commands/custom/MCSuggestionsBuilder) | No description provided |
 
 
 ### hashCode
 
-戻り値の種類: int
+Return type: int
 
 ```zenscript
 myMCSuggestionProvider.hashCode();
@@ -56,7 +56,7 @@ myMCSuggestionProvider.hashCode();
 
 ### toString
 
-戻り値の型: String
+Return type: String
 
 ```zenscript
 myMCSuggestionProvider.toString();
@@ -70,13 +70,13 @@ myMCSuggestionProvider.toString();
 myMCSuggestionProvider == o as Object
 ```
 
-| パラメータ | タイプ    | 説明           |
-| ----- | ------ | ------------ |
-| o     | オブジェクト | 説明が提供されていません |
+| Parameter | Type   | Description             |
+| --------- | ------ | ----------------------- |
+| o         | Object | No description provided |
 
-## キャスト
+## Casters
 
-| 結果の種類 | 暗黙的  |
-| ----- | ---- |
-| 文字列型  | true |
+| Result type | Is Implicit |
+| ----------- | ----------- |
+| String      | true        |
 

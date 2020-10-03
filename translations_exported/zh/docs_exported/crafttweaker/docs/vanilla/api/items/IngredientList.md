@@ -11,10 +11,10 @@
 ## 已实现的接口
 IngredientList 实现以下接口。 这意味着对这个接口可用的任何方法也可以在此类上使用。
 - [crafttweaker.api.brackets.CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
-- [制造商.api.item.IIngredient](/vanilla/api/items/IIngredient)
+- [crafttweaker.api.item.IIngredient](/vanilla/api/items/IIngredient)
 
 ## 方法
-### 任何伤害
+### anyDamage
 
 返回类型： [craftbiner.api.item.MCIngredientConditioned](/vanilla/api/items/MCIngredientConditioned)&lt;[craftbiner.api.item.IIngredient](/vanilla/api/items/IIngredient)&gt;
 
@@ -22,54 +22,54 @@ IngredientList 实现以下接口。 这意味着对这个接口可用的任何�
 空.任何损害();
 ```
 
-### getRemainingitem
+### getRemainingItem
 
-当这种成分堆栈被制造时，网格中还会有什么东西？ 不检查堆栈是否匹配！ 用于Ctrt's net.minecraft.item.crafting.ICraftingRecipe
+When this ingredient stack is crafted, what will remain in the grid? Does not check if the stack matches though! Used e.g. in CrT's net.minecraft.item.crafting.ICraftingRecipe
 
-返回类型： [craftbiner.api.item.IItemStack](/vanilla/api/items/IItemStack)
+Return type: [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
 
 ```zenscript
 null.getRemainingItem(stack as craftbiner.api.item.IItemStack);
 null.getRemainingItem(<item:minecraft:iron_ingot>);
 ```
 
-| 参数    | 类型                                                                | 描述         |
-| ----- | ----------------------------------------------------------------- | ---------- |
-| 堆栈... | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | 提供这种成分的堆栈。 |
+| 参数    | 类型                                                                | 描述                                        |
+| ----- | ----------------------------------------------------------------- | ----------------------------------------- |
+| stack | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | The stack to provide for this ingredient. |
 
 
-### 匹配
+### matches
 
-给定的堆栈是否与原料相符？
+Does the given stack match the ingredient?
 
-返回类型：布尔值
+Return type: boolean
 
 ```zenscript
 null.matches(堆栈为 craftbiner.api.item.IItemStack)；
 null.matches(<item:minecraft:iron_ingot>)；
 ```
 
-| 参数    | 类型                                                                | 描述      |
-| ----- | ----------------------------------------------------------------- | ------- |
-| 堆栈... | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | 要检查的堆栈。 |
+| 参数    | 类型                                                                | 描述                 |
+| ----- | ----------------------------------------------------------------- | ------------------ |
+| stack | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | The stack to check |
 
 
 
-给定的堆栈是否与原料相符？
+Does the given stack match the ingredient?
 
-返回类型：布尔值
+Return type: boolean
 
 ```zenscript
 null.matches(堆栈为 craftminstrer.api.item.IItemStack, 忽略损害为 boolean);
 ```
 
-| 参数    | 类型                                                                | 描述      |
-| ----- | ----------------------------------------------------------------- | ------- |
-| 堆栈... | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | 要检查的堆栈。 |
-| 忽略伤害  | boolean                                                           | 是否检查损坏？ |
+| 参数    | 类型                                                                | 描述                 |
+| ----- | ----------------------------------------------------------------- | ------------------ |
+| stack | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | The stack to check |
+| 忽略伤害  | boolean                                                           | 是否检查损坏？            |
 
 
-### 仅已损坏
+### onlyDamaged
 
 返回类型： [craftbiner.api.item.MCIngredientConditioned](/vanilla/api/items/MCIngredientConditioned)&lt;[craftbiner.api.item.IIngredient](/vanilla/api/items/IIngredient)&gt;
 
@@ -85,19 +85,19 @@ null.onlyDamaged();
 null.onlyIf(uid as String, function as function.Predicate<crafttweaker.api.item.IItemStack>);
 ```
 
-| 参数  | 类型                                                                                       | 描述                      | 可选的   | 默认值  |
-| --- | ---------------------------------------------------------------------------------------- | ----------------------- | ----- | ---- |
-| uid | 字符串[string]                                                                              | No description provided | false | `空的` |
-| 函数  | 预测&lt;[craftminstrer.api.item.IItemStack](/vanilla/api/items/IItemStack)&gt; | No description provided | true  | `空的` |
+| 参数       | 类型                                                                                       | 描述                      | 可选的   | Default Value |
+| -------- | ---------------------------------------------------------------------------------------- | ----------------------- | ----- | ------------- |
+| uid      | String                                                                                   | No description provided | false | `null`        |
+| function | 预测&lt;[craftminstrer.api.item.IItemStack](/vanilla/api/items/IItemStack)&gt; | No description provided | true  | `null`        |
 
 
 
 ## 参数
 
-| 名称                   | 类型                                                                  | 可获得  | 可设置   |
-| -------------------- | ------------------------------------------------------------------- | ---- | ----- |
-| commandString #命令字符串 | 字符串[string]                                                         | true | false |
-| 项目                   | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)[] | true | false |
+| 名称            | 类型                                                                  | 可获得  | 可设置   |
+| ------------- | ------------------------------------------------------------------- | ---- | ----- |
+| commandString | String                                                              | true | false |
+| items         | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)[] | true | false |
 
 ## 运算符
 ### 或
@@ -106,11 +106,11 @@ null.onlyIf(uid as String, function as function.Predicate<crafttweaker.api.item.
 <tag:ingotIron> | 其他为 craftbiner.api.item.IIngredient
 ```
 
-| 参数    | 类型                                                         | 描述                      |
-| ----- | ---------------------------------------------------------- | ----------------------- |
-| other | [制造商.api.item.IIngredient](/vanilla/api/items/IIngredient) | No description provided |
+| 参数    | 类型                                                                  | 描述                      |
+| ----- | ------------------------------------------------------------------- | ----------------------- |
+| other | [crafttweaker.api.item.IIngredient](/vanilla/api/items/IIngredient) | No description provided |
 
-## 卡斯特尔
+## Casters
 
 | 结果类型                                                        | 是否隐藏 |
 | ----------------------------------------------------------- | ---- |

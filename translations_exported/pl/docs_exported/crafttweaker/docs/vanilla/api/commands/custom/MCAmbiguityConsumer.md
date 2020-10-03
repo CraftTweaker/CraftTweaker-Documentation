@@ -1,32 +1,32 @@
 # MCAmbiguityConsumer
 
-Ta klasa została dodana przez moda z mod-id `crafttweaker`. Więc musisz zainstalować tę modyfikację, jeśli chcesz używać tej funkcji.
+This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
 
-## Importowanie klasy
-Może być wymagane zaimportowanie pakietu, jeśli napotkasz jakiekolwiek problemy (np. rzucanie tablicy), tak aby były bezpieczne niż przepraszamy i dodaj import.
+## Importing the class
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
 ```zenscript
 crafttweaker.api.commands.custom.MCAmbiguityConsumer
 ```
 
-## Interfejs funkcjonalny
+## Functional Interface
 
-Ta klasa jest funkcjonalnym interfejsem. Oznacza to, że możesz użyć notacji lambda do utworzenia instancji. Adnotacja lambda wygląda jako:
+This class is a functional interface. This means that you can use the lambda notation to create an instance of it. The lambda notation looks like:
 ```zenscript
 (rodzice, dziecko, rodzeństwo, dane wejściowe) =>{}
 ```
-## Metody
+## Methods
 ### niejednoznaczne
 
 ```zenscript
 myMCAmbiguityConsumer.ambiguous(rodzic jako crafttweaker.api.commands.custom.MCCommandNode, dziecko jako crafttweaker.api.commands.custom.MCCommandNode, rodzeństwo jako crafttweaker.api.commands.custom.MCCommandNode, wejścia jako Kolekcja<String>);
 ```
 
-| Parametr   | Typ                                                                                          | Opis             |
-| ---------- | -------------------------------------------------------------------------------------------- | ---------------- |
-| rodzic     | [crafttweaker.api.commands.custom.MCCommandNode](/vanilla/api/commands/custom/MCCommandNode) | Nie podano opisu |
-| dziecko    | [crafttweaker.api.commands.custom.MCCommandNode](/vanilla/api/commands/custom/MCCommandNode) | Nie podano opisu |
-| rodzeństwo | [crafttweaker.api.commands.custom.MCCommandNode](/vanilla/api/commands/custom/MCCommandNode) | Nie podano opisu |
-| inputs     | Kolekcja&lt;String&gt;                                                           | Nie podano opisu |
+| Parameter  | Type                                                                                         | Description             |
+| ---------- | -------------------------------------------------------------------------------------------- | ----------------------- |
+| parent     | [crafttweaker.api.commands.custom.MCCommandNode](/vanilla/api/commands/custom/MCCommandNode) | No description provided |
+| dziecko    | [crafttweaker.api.commands.custom.MCCommandNode](/vanilla/api/commands/custom/MCCommandNode) | No description provided |
+| rodzeństwo | [crafttweaker.api.commands.custom.MCCommandNode](/vanilla/api/commands/custom/MCCommandNode) | No description provided |
+| inputs     | Kolekcja&lt;String&gt;                                                           | No description provided |
 
 
 

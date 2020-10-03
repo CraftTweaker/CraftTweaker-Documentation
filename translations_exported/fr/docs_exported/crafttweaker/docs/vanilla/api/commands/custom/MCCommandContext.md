@@ -1,14 +1,14 @@
 # Contexte MCCommandContexte
 
-Cette classe a été ajoutée par un mod avec le mod-id `crafttweaker`. Vous devez donc avoir ce mod installé si vous voulez utiliser cette fonctionnalité.
+This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
 
-## Importation de la classe
-Il pourrait vous être nécessaire d'importer le paquet si vous rencontrez des problèmes (comme lancer un tableau), alors mieux être sûr que désolé et ajouter l'importation.
+## Importing the class
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
 ```zenscript
 crafttweaker.api.commands.custom.MCCommandContext
 ```
 
-## Méthodes
+## Methods
 ### copyFor
 
 Type de retour : [crafttweaker.api.commands.custom.MCCommandContext](/vanilla/api/commands/custom/MCCommandContext)
@@ -17,35 +17,35 @@ Type de retour : [crafttweaker.api.commands.custom.MCCommandContext](/vanilla/ap
 myMCCommandContext.copyFor(source as crafttweaker.api.commands.custom.MCCommandSource);
 ```
 
-| Paramètre | Type de texte                                                                                    | Libellé                    |
-| --------- | ------------------------------------------------------------------------------------------------ | -------------------------- |
-| source    | [crafttweaker.api.commands.custom.MCCommandSource](/vanilla/api/commands/custom/MCCommandSource) | Aucune description fournie |
+| Parameter | Type                                                                                             | Description             |
+| --------- | ------------------------------------------------------------------------------------------------ | ----------------------- |
+| source    | [crafttweaker.api.commands.custom.MCCommandSource](/vanilla/api/commands/custom/MCCommandSource) | No description provided |
 
 
-### est égal à
+### equals
 
-Type de retour: booléen
+Return type: boolean
 
 ```zenscript
 myMCCommandContext.equals(o en tant qu'objet);
 ```
 
-| Paramètre | Type de texte | Libellé                    |
-| --------- | ------------- | -------------------------- |
-| o         | Objet         | Aucune description fournie |
+| Parameter | Type   | Description             |
+| --------- | ------ | ----------------------- |
+| o         | Object | No description provided |
 
 
 ### getArgument
 
-Type de retour: chaîne de caractères
+Return type: String
 
 ```zenscript
 myMCCommandContext.getArgument(name as String);
 ```
 
-| Paramètre | Type de texte        | Libellé                    |
-| --------- | -------------------- | -------------------------- |
-| Nom       | Chaîne de caractères | Aucune description fournie |
+| Parameter | Type   | Description             |
+| --------- | ------ | ----------------------- |
+| name      | String | No description provided |
 
 
 ### getChild
@@ -66,7 +66,7 @@ myMCCommandContext.getCommand();
 
 ### getInput
 
-Type de retour: chaîne de caractères
+Return type: String
 
 ```zenscript
 myMCCommandContext.getInput();
@@ -122,7 +122,7 @@ myMCCommandContext.getSource();
 
 ### hasNodes
 
-Type de retour: booléen
+Return type: boolean
 
 ```zenscript
 myMCCommandContext.hasNodes();
@@ -130,7 +130,7 @@ myMCCommandContext.hasNodes();
 
 ### hashCode
 
-Type de retour: int
+Return type: int
 
 ```zenscript
 myMCCommandContext.hashCode();
@@ -138,7 +138,7 @@ myMCCommandContext.hashCode();
 
 ### isForked
 
-Type de retour: booléen
+Return type: boolean
 
 ```zenscript
 myMCCommandContext.isForked();
@@ -146,27 +146,27 @@ myMCCommandContext.isForked();
 
 ### toString
 
-Type de retour: chaîne de caractères
+Return type: String
 
 ```zenscript
 myMCCommandContext.toString();
 ```
 
 
-## Opérateurs
-### EQUALES
+## Operators
+### EQUALS
 
 ```zenscript
 myMCCommandContext == o en tant qu'objet
 ```
 
-| Paramètre | Type de texte | Libellé                    |
-| --------- | ------------- | -------------------------- |
-| o         | Objet         | Aucune description fournie |
+| Parameter | Type   | Description             |
+| --------- | ------ | ----------------------- |
+| o         | Object | No description provided |
 
-## Pistolet
+## Casters
 
-| Type de résultat     | Est implicite |
-| -------------------- | ------------- |
-| Chaîne de caractères | vrai          |
+| Result type | Is Implicit |
+| ----------- | ----------- |
+| String      | true        |
 

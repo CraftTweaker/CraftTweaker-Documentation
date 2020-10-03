@@ -8,18 +8,18 @@
 crafttweaker.api.commands.custom.MCParseResults
 ```
 
-## Методы
-### равно
+## Methods
+### equals
 
-Тип возврата: логическое значение
+Return type: boolean
 
 ```zenscript
 myMCParseResults.equals(o as Object);
 ```
 
-| Параметр | Тип    | Описание             |
+| Параметр | Тип    | Description          |
 | -------- | ------ | -------------------- |
-| о        | Объект | Описание отсутствует |
+| o        | Object | Описание отсутствует |
 
 
 ### getContext
@@ -48,7 +48,7 @@ myMCParseResults.getReader();
 
 ### hashCode
 
-Тип возврата: int
+Return type: int
 
 ```zenscript
 myMCParseResults.hashCode();
@@ -56,7 +56,7 @@ myMCParseResults.hashCode();
 
 ### toString
 
-Тип возврата: строка
+Return type: String
 
 ```zenscript
 myMCParseResults.toString();
@@ -70,9 +70,9 @@ myMCParseResults.toString();
 myMCParseResults == o как объект
 ```
 
-| Параметр | Тип    | Описание             |
+| Параметр | Тип    | Description          |
 | -------- | ------ | -------------------- |
-| о        | Объект | Описание отсутствует |
+| o        | Object | Описание отсутствует |
 
 ## Утилиты
 

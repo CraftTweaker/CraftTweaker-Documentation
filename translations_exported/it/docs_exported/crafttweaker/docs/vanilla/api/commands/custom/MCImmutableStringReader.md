@@ -2,36 +2,36 @@
 
 Questa classe è stata aggiunta da una mod con ID `crafttweaker`. Perciò, è necessario avere questa mod installata per poter utilizzare questa funzione.
 
-## Importare la classe
+## Importing the class
 Potrebbe essere necessario importare il pacchetto, se si incontrano dei problemi (come castare un vettore), quindi meglio essere sicuri e aggiungere la direttiva di importazione.
 ```zenscript
 crafttweaker.api.commands.custom.MCImmutableStringReader
 ```
 
-## Metodi
+## Methods
 ### canRead
 
-Tipo restituito: booleano
+Return type: boolean
 
 ```zenscript
 myMCImmutableStringReader.canRead();
 ```
 
 
-Tipo restituito: booleano
+Return type: boolean
 
 ```zenscript
 myMCImmutableStringReader.canRead(arg0 as int);
 ```
 
-| Parametro | Tipo | Descrizione                 |
+| Parameter | Type | Description                 |
 | --------- | ---- | --------------------------- |
 | arg0      | int  | Nessuna descrizione fornita |
 
 
 ### getCursor
 
-Tipo di restituzione: int
+Return type: int
 
 ```zenscript
 myMCImmutableStringReader.getCursor();
@@ -39,7 +39,7 @@ myMCImmutableStringReader.getCursor();
 
 ### getRead
 
-Tipo di ritorno: Stringa
+Return type: String
 
 ```zenscript
 myMCImmutableStringReader.getRead();
@@ -47,7 +47,7 @@ myMCImmutableStringReader.getRead();
 
 ### ottiRimanente
 
-Tipo di ritorno: Stringa
+Return type: String
 
 ```zenscript
 myMCImmutableStringReader.getRemaining();
@@ -55,7 +55,7 @@ myMCImmutableStringReader.getRemaining();
 
 ### getRemainingLength
 
-Tipo di restituzione: int
+Return type: int
 
 ```zenscript
 myMCImmutableStringReader.getRemainingLength();
@@ -63,7 +63,7 @@ myMCImmutableStringReader.getRemainingLength();
 
 ### getString
 
-Tipo di ritorno: Stringa
+Return type: String
 
 ```zenscript
 myMCImmutableStringReader.getString();
@@ -71,7 +71,7 @@ myMCImmutableStringReader.getString();
 
 ### getTotalLength
 
-Tipo di restituzione: int
+Return type: int
 
 ```zenscript
 myMCImmutableStringReader.getTotalLength();
@@ -92,7 +92,7 @@ Tipo restituito: carattere
 myMCImmutableStringReader.peek(arg0 as int);
 ```
 
-| Parametro | Tipo | Descrizione                 |
+| Parameter | Type | Description                 |
 | --------- | ---- | --------------------------- |
 | arg0      | int  | Nessuna descrizione fornita |
 

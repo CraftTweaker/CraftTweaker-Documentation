@@ -1,6 +1,6 @@
-# 方向
+# Direction
 
-表示主要方向（北部、南部、东部、西部）和（上下）。
+Represents a cardinal direction (north, south, east, west) and (up and down).
 
 这个类由mod-id为`crafttweaker`的模组添加. 因此，如果要使用此功能，则需要安装此mod。
 
@@ -13,9 +13,9 @@ crafttweaker.api.util.Direction
 ## 方法
 ### rotateY
 
-在 Y 轴上旋转此方向
+Rotates this direction on the Y axis
 
- 返回： `此方向的 Y 轴旋转的方向`
+ Returns: `the direction that rotated on the Y axis of this direction`
 
 返回类型： [craftbiner.api.util.Direction](/vanilla/api/util/Direction)
 
@@ -23,38 +23,38 @@ crafttweaker.api.util.Direction
 <direction:north>.rotateY();
 ```
 
-### 旋转YCCW
+### rotateYCCW
 
-在 Y 轴上顺时针旋转反时钟
+Rotates this direction counter-clock wise on the Y axis
 
- 返回： `在 Y 轴上逆时针的方向`
+ Returns: `the direction that is counter clockwise on the Y axis`
 
 返回类型： [craftbiner.api.util.Direction](/vanilla/api/util/Direction)
 
 ```zenscript
-<direction:north>.旋转YCCW();
+<direction:north>.rotateYCCW();
 ```
 
 
 ## 参数
 
-| 名称         | 类型                                                                     | 可获得  | 可设置   |
-| ---------- | ---------------------------------------------------------------------- | ---- | ----- |
-| 轴          | [craftbinvest.api.util.DirectionAxis](/vanilla/api/util/DirectionAxis) | true | false |
-| axisOffset | 整数                                                                     | true | false |
-| 向下         | [crafttweaker.api.util.Direction](/vanilla/api/util/Direction)         | true | true  |
-| 东部地区       | [crafttweaker.api.util.Direction](/vanilla/api/util/Direction)         | true | true  |
-| 水平角度       | 浮点数                                                                    | true | false |
-| 水平索引       | 整数                                                                     | true | false |
-| index      | 整数                                                                     | true | false |
-| 名称         | 字符串[string]                                                            | true | false |
-| 北区         | [crafttweaker.api.util.Direction](/vanilla/api/util/Direction)         | true | true  |
-| 相反的        | [crafttweaker.api.util.Direction](/vanilla/api/util/Direction)         | true | false |
-| 边          | [craftbinstruer.api.util.Direction](/vanilla/api/util/Direction)[]     | true | true  |
-| 南方         | [crafttweaker.api.util.Direction](/vanilla/api/util/Direction)         | true | true  |
-| 上          | [crafttweaker.api.util.Direction](/vanilla/api/util/Direction)         | true | true  |
-| 西部地区       | [crafttweaker.api.util.Direction](/vanilla/api/util/Direction)         | true | true  |
-| xOffset    | 整数                                                                     | true | false |
-| yOffset    | 整数                                                                     | true | false |
-| zOffset    | 整数                                                                     | true | false |
+| 名称              | 类型                                                                     | 可获得  | 可设置   |
+| --------------- | ---------------------------------------------------------------------- | ---- | ----- |
+| axis            | [crafttweaker.api.util.DirectionAxis](/vanilla/api/util/DirectionAxis) | true | false |
+| axisOffset      | int                                                                    | true | false |
+| down            | [crafttweaker.api.util.Direction](/vanilla/api/util/Direction)         | true | true  |
+| east            | [crafttweaker.api.util.Direction](/vanilla/api/util/Direction)         | true | true  |
+| horizontalAngle | float                                                                  | true | false |
+| horizontalIndex | int                                                                    | true | false |
+| index           | int                                                                    | true | false |
+| name            | String                                                                 | true | false |
+| north           | [crafttweaker.api.util.Direction](/vanilla/api/util/Direction)         | true | true  |
+| opposite        | [crafttweaker.api.util.Direction](/vanilla/api/util/Direction)         | true | false |
+| 边               | [craftbinstruer.api.util.Direction](/vanilla/api/util/Direction)[]     | true | true  |
+| south           | [crafttweaker.api.util.Direction](/vanilla/api/util/Direction)         | true | true  |
+| up              | [crafttweaker.api.util.Direction](/vanilla/api/util/Direction)         | true | true  |
+| west            | [crafttweaker.api.util.Direction](/vanilla/api/util/Direction)         | true | true  |
+| xOffset         | int                                                                    | true | false |
+| yOffset         | int                                                                    | true | false |
+| zOffset         | int                                                                    | true | false |
 

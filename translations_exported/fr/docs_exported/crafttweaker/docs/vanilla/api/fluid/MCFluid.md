@@ -1,18 +1,18 @@
 # MCFluid
 
-Cette classe a été ajoutée par un mod avec le mod-id `crafttweaker`. Vous devez donc avoir ce mod installé si vous voulez utiliser cette fonctionnalité.
+This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
 
-## Importation de la classe
-Il pourrait vous être nécessaire d'importer le paquet si vous rencontrez des problèmes (comme lancer un tableau), alors mieux être sûr que désolé et ajouter l'importation.
+## Importing the class
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
 ```zenscript
 crafttweaker.api.fluid.MCFluid
 ```
 
-## Interfaces implémentées
-MCFluid implémente les interfaces suivantes. Cela signifie que toutes les méthodes disponibles peuvent également être utilisées dans cette classe.
+## Implemented Interfaces
+MCFluid implémente les interfaces suivantes. That means any method available to them can also be used on this class.
 - [crafttweaker.api.brackets.CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
 
-## Méthodes
+## Methods
 ### format@@0 makeStack
 
 Crée un nouveau [crafttweaker.api.fluid.IFluidStack](/vanilla/api/fluid/IFluidStack) avec la quantité de liquide donnée.
@@ -26,19 +26,19 @@ myMCFluid.makeStack(montant comme int);
 myMCFluid.makeStack(1000);
 ```
 
-| Paramètre | Type de texte | Libellé                    |
-| --------- | ------------- | -------------------------- |
-| montant   | Indice        | Aucune description fournie |
+| Parameter | Type | Description             |
+| --------- | ---- | ----------------------- |
+| amount    | int  | No description provided |
 
 
 
-## Propriétés
+## Properties
 
-| Nom                | Type de texte        | A un Getter | A un Setter |
-| ------------------ | -------------------- | ----------- | ----------- |
-| Chaîne de commande | Chaîne de caractères | vrai        | Faux        |
+| Name          | Type   | Has Getter | Has Setter |
+| ------------- | ------ | ---------- | ---------- |
+| commandString | String | true       | false      |
 
-## Opérateurs
+## Operators
 ### MUL
 
 Crée un nouveau [crafttweaker.api.fluid.IFluidStack](/vanilla/api/fluid/IFluidStack) avec la quantité de liquide donnée.
@@ -50,7 +50,7 @@ myMCFluid * montant en int
 myMCFluid * 1000
 ```
 
-| Paramètre | Type de texte | Libellé                    |
-| --------- | ------------- | -------------------------- |
-| montant   | Indice        | Aucune description fournie |
+| Parameter | Type | Description             |
+| --------- | ---- | ----------------------- |
+| amount    | int  | No description provided |
 

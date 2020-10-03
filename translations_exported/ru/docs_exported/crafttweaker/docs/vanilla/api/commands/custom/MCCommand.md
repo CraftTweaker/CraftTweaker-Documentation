@@ -8,33 +8,33 @@
 crafttweaker.api.commands.custom.MCCommand
 ```
 
-## Конструкторы
+## Constructors
 ```zenscript
 new crafttweaker.api.commands.custom.MCCommand(fun as function.Function<crafttweaker.api.commands.custom.MCCommandContext, Integer>);
 ```
-| Параметр | Тип                                                                                                                                                  | Описание             |
+| Параметр | Тип                                                                                                                                                  | Description          |
 | -------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------- |
 | весело   | function.Function&lt;[crafttweaker.api.commands.custom.MCCommandContext](/vanilla/api/commands/custom/MCCommandContext), целое число&gt; | Описание отсутствует |
 
 
 
-## Методы
-### равно
+## Methods
+### equals
 
-Тип возврата: логическое значение
+Return type: boolean
 
 ```zenscript
 myMCCommand.equals(o as Object);
 ```
 
-| Параметр | Тип    | Описание             |
+| Параметр | Тип    | Description          |
 | -------- | ------ | -------------------- |
-| о        | Объект | Описание отсутствует |
+| o        | Object | Описание отсутствует |
 
 
 ### hashCode
 
-Тип возврата: int
+Return type: int
 
 ```zenscript
 myMCCommand.hashCode();
@@ -42,20 +42,20 @@ myMCCommand.hashCode();
 
 ### запуск
 
-Тип возврата: int
+Return type: int
 
 ```zenscript
 myMCCommand.run(context as crafttweaker.api.commands.custom.MCCommandContext);
 ```
 
-| Параметр | Тип                                                                                                | Описание             |
+| Параметр | Тип                                                                                                | Description          |
 | -------- | -------------------------------------------------------------------------------------------------- | -------------------- |
 | контекст | [crafttweaker.api.commands.custom.MCCommandContext](/vanilla/api/commands/custom/MCCommandContext) | Описание отсутствует |
 
 
 ### toString
 
-Тип возврата: строка
+Return type: String
 
 ```zenscript
 myMCCommand.toString();
@@ -69,9 +69,9 @@ myMCCommand.toString();
 myMCCommand == o как объект
 ```
 
-| Параметр | Тип    | Описание             |
+| Параметр | Тип    | Description          |
 | -------- | ------ | -------------------- |
-| о        | Объект | Описание отсутствует |
+| o        | Object | Описание отсутствует |
 
 ## Утилиты
 

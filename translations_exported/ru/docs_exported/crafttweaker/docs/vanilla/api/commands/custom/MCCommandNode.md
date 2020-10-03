@@ -8,23 +8,23 @@
 crafttweaker.api.commands.custom.MCCommandNode
 ```
 
-## Методы
-### равно
+## Methods
+### equals
 
-Тип возврата: логическое значение
+Return type: boolean
 
 ```zenscript
 myMCCommandNode.equals(o as Object);
 ```
 
-| Параметр | Тип    | Описание             |
+| Параметр | Тип    | Description          |
 | -------- | ------ | -------------------- |
-| о        | Объект | Описание отсутствует |
+| o        | Object | Описание отсутствует |
 
 
 ### hashCode
 
-Тип возврата: int
+Return type: int
 
 ```zenscript
 myMCCommandNode.hashCode();
@@ -32,7 +32,7 @@ myMCCommandNode.hashCode();
 
 ### toString
 
-Тип возврата: строка
+Return type: String
 
 ```zenscript
 myMCCommandNode.toString();
@@ -46,9 +46,9 @@ myMCCommandNode.toString();
 myMCCommandNode == o как объект
 ```
 
-| Параметр | Тип    | Описание             |
+| Параметр | Тип    | Description          |
 | -------- | ------ | -------------------- |
-| о        | Объект | Описание отсутствует |
+| o        | Object | Описание отсутствует |
 
 ## Утилиты
 

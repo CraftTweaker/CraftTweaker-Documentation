@@ -1,18 +1,18 @@
 # MCArgumentCommandNode
 
-Esta clase fue añadida por un mod con la ID  `crafttweaker`. Necesitas tener este mod instalado si quieres usar esta caracteristica.
+This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
 
-## Importar la clase
-Puede ser requerido que importes el paquete si encuentras algun problema (como crear un Array).
+## Importing the class
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
 ```zenscript
 crafttweaker.api.commands.custom.MCArgumentCommandNode
 ```
 
-## Interfaces implementadas
-MCArgumentCommandNode implementa las siguientes interfaces. Esto significa que cualquier método disponible también puede ser usado en esta clase.
+## Implemented Interfaces
+MCArgumentCommandNode implementa las siguientes interfaces. That means any method available to them can also be used on this class.
 - [crafttweaker.api.commands.custom.MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)
 
-## Métodos
+## Methods
 ### createBuilder
 
 Tipo de retorno: [crafttweaker.api.commands.custom.MCRequiredArgumentBuilder](/vanilla/api/commands/custom/MCRequiredArgumentBuilder)
@@ -21,17 +21,17 @@ Tipo de retorno: [crafttweaker.api.commands.custom.MCRequiredArgumentBuilder](/v
 myMCArgumentCommandNode.createBuilder();
 ```
 
-### igual a
+### equals
 
-Tipo de retorno: booleano
+Return type: boolean
 
 ```zenscript
 myMCArgumentCommandNode.equals(o como objeto);
 ```
 
-| Parámetro | Tipo   | Descripción                   |
-| --------- | ------ | ----------------------------- |
-| o         | Objeto | No se proporcionó descripción |
+| Parameter | Type   | Description             |
+| --------- | ------ | ----------------------- |
+| o         | Object | No description provided |
 
 
 ### Obtener sugerencias personalizadas
@@ -44,7 +44,7 @@ myMCArgumentCommandNode.getCustomSuggestions();
 
 ### hashCode
 
-Tipo de retorno: int
+Return type: int
 
 ```zenscript
 myMCArgumentCommandNode.hashCode();
@@ -52,27 +52,27 @@ myMCArgumentCommandNode.hashCode();
 
 ### toString
 
-Tipo de retorno: Cadena
+Return type: String
 
 ```zenscript
 myMCArgumentCommandNode.toString();
 ```
 
 
-## Operadores
-### IGUALES
+## Operators
+### EQUALS
 
 ```zenscript
 myMCArgumentCommandNode == o como objeto
 ```
 
-| Parámetro | Tipo   | Descripción                   |
-| --------- | ------ | ----------------------------- |
-| o         | Objeto | No se proporcionó descripción |
+| Parameter | Type   | Description             |
+| --------- | ------ | ----------------------- |
+| o         | Object | No description provided |
 
 ## Casters
 
-| Tipo de resultado | Es implícito |
-| ----------------- | ------------ |
-| Cadena            | verdad       |
+| Result type | Is Implicit |
+| ----------- | ----------- |
+| String      | true        |
 

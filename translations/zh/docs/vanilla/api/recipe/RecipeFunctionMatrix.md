@@ -1,4 +1,4 @@
-# 矩阵功能
+# RecipeFunctionMatrix
 
 这个类由mod-id为`crafttweaker`的模组添加. 因此，如果要使用此功能，则需要安装此mod。
 
@@ -8,25 +8,25 @@
 craftbinstruer.api.recipe.RecipeFunctionMatrix
 ```
 
-## 函数接口
+## Functional Interface
 
-此类是一个功能接口。 这意味着您可以使用 lambda 符号来创建一个实例。 Lambda 符号如下所示：
+This class is a functional interface. This means that you can use the lambda notation to create an instance of it. The lambda notation looks like:
 ```zenscript
-(平常关闭，输入) => <item:minecraft:dirt>
+(usualOut, inputs) => <item:minecraft:dirt>
 ```
 ## 方法
-### 进程
+### process
 
-返回类型： [craftbiner.api.item.IItemStack](/vanilla/api/items/IItemStack)
+Return type: [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
 
 ```zenscript
-myRecipeFunctionMatrix.process(usualOut as craftbiner.api.item.IItemStack, input as craftbiner.api.item.IItemStack[]);
+myRecipeFunctionMatrix.process(usualOut as crafttweaker.api.item.IItemStack, inputs as crafttweaker.api.item.IItemStack[][]);
 ```
 
-| 参数     | 类型                                                                    | 描述                      |
-| ------ | --------------------------------------------------------------------- | ----------------------- |
-| 常用退出   | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)     | No description provided |
-| inputs | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)[][] | No description provided |
+| 参数       | 类型                                                                    | 描述                      |
+| -------- | --------------------------------------------------------------------- | ----------------------- |
+| usualOut | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)     | No description provided |
+| inputs   | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)[][] | No description provided |
 
 
 

@@ -1,24 +1,24 @@
-# Klasyfikacja MCEntityClassification
+# MCEntityClassification
 
-Ta klasa została dodana przez moda z mod-id `crafttweaker`. Więc musisz zainstalować tę modyfikację, jeśli chcesz używać tej funkcji.
+This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
 
-## Importowanie klasy
-Może być wymagane zaimportowanie pakietu, jeśli napotkasz jakiekolwiek problemy (np. rzucanie tablicy), tak aby były bezpieczne niż przepraszamy i dodaj import.
+## Importing the class
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
 ```zenscript
 crafttweaker.api.entity.MCEntityClassification
 ```
 
-## Zaimplementowane interfejsy
-MCEntityClassification implementuje następujące interfejsy. Oznacza to, że każda dostępna dla nich metoda może być również stosowana w tej klasie.
+## Implemented Interfaces
+MCEntityClassification implements the following interfaces. That means any method available to them can also be used on this class.
 - [crafttweaker.api.brackets.CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
 
-## Właściwości
+## Properties
 
-| Nazwisko          | Typ         | Posiada Getter | Ma ustawienie |
-| ----------------- | ----------- | -------------- | ------------- |
-| polecenie         | Ciąg znaków | prawda         | fałszywy      |
-| isAnimal          | boolean     | prawda         | fałszywy      |
-| niepewny          | boolean     | prawda         | fałszywy      |
-| maxNumberOfEntity | odcień      | prawda         | fałszywy      |
-| Nazwa             | Ciąg znaków | prawda         | fałszywy      |
+| Name              | Type    | Has Getter | Has Setter |
+| ----------------- | ------- | ---------- | ---------- |
+| commandString     | String  | true       | false      |
+| isAnimal          | boolean | true       | false      |
+| isPeaceful        | boolean | true       | false      |
+| maxNumberOfEntity | int     | true       | false      |
+| name              | String  | true       | false      |
 

@@ -91,9 +91,9 @@ myMapData.contains("Hello");
 ```
 
 
-| 参数  | 类型          | 描述     |
-| --- | ----------- | ------ |
-| key | 字符串[string] | 要搜索的密钥 |
+| 参数  | 类型     | 描述     |
+| --- | ------ | ------ |
+| key | String | 要搜索的密钥 |
 
 
 
@@ -132,9 +132,9 @@ myMapData.get("Hello");
 ```
 
 
-| 参数  | 类型          | 描述     |
-| --- | ----------- | ------ |
-| key | 字符串[string] | 要搜索的密钥 |
+| 参数  | 类型     | 描述     |
+| --- | ------ | ------ |
+| key | String | 要搜索的密钥 |
 
 
 
@@ -214,7 +214,7 @@ myMapData.put("Hello", "Goodbye");
 
 | 参数    | 类型                                                     | 描述       |
 | ----- | ------------------------------------------------------ | -------- |
-| key   | 字符串[string]                                            | 要设置值的密钥。 |
+| key   | String                                                 | 要设置值的密钥。 |
 | value | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | 要设置的值    |
 
 
@@ -241,7 +241,7 @@ myMapData.putAll({Hello: "Goodbye", Item: "Bedrock"});
 
 
 
-### remove #移除
+### remove
 
 从地图中移除给定键的条目
 
@@ -253,9 +253,9 @@ myMapData.remove("Somewhere");
 ```
 
 
-| 参数  | 类型          | 描述        |
-| --- | ----------- | --------- |
-| key | 字符串[string] | 要删除的条目的密钥 |
+| 参数  | 类型     | 描述        |
+| --- | ------ | --------- |
+| key | String | 要删除的条目的密钥 |
 
 
 
@@ -264,11 +264,11 @@ myMapData.remove("Somewhere");
 
 ## 参数
 
-| 名称          | 类型         | 可获得  | 可设置   |
-| ----------- | ---------- | ---- | ----- |
-| isEmpty     | boolean    | true | false |
-| keySet #设置键 | 设置<String> | true | false |
-| 大小          | 整数         | true | false |
+| 名称          | 类型          | 可获得  | 可设置   |
+| ----------- | ----------- | ---- | ----- |
+| isEmpty     | boolean     | true | false |
+| keySet #设置键 | Set<String> | true | false |
+| size        | int         | true | false |
 
 
 
@@ -294,7 +294,7 @@ myMapData + data as crafttweaker.api.data.IData
 
 
 
-## 卡斯特尔
+## Casters
 
 | 结果类型                                                           | 是否隐藏 |
 | -------------------------------------------------------------- | ---- |

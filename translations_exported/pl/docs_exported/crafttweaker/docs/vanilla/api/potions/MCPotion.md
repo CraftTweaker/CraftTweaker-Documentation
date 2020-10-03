@@ -1,37 +1,37 @@
-# Mikstura
+# MCPotion
 
-Ta klasa została dodana przez moda z mod-id `crafttweaker`. Więc musisz zainstalować tę modyfikację, jeśli chcesz używać tej funkcji.
+This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
 
-## Importowanie klasy
-Może być wymagane zaimportowanie pakietu, jeśli napotkasz jakiekolwiek problemy (np. rzucanie tablicy), tak aby były bezpieczne niż przepraszamy i dodaj import.
+## Importing the class
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
 ```zenscript
-[PLACEHOLDER] crafttweaker.api.potion.MCPotion
+crafttweaker.api.potion.MCPotion
 ```
 
-## Zaimplementowane interfejsy
-MCMiksttion implementuje następujące interfejsy. Oznacza to, że każda dostępna dla nich metoda może być również stosowana w tej klasie.
+## Implemented Interfaces
+MCPotion implements the following interfaces. That means any method available to them can also be used on this class.
 - [crafttweaker.api.brackets.CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
 
-## Metody
+## Methods
 ### getNamePrefixed
 
-Typ zwrotu: Ciąg
+Return type: String
 
 ```zenscript
-myMCPotion.getNamePrefixed(nazwa jako String);
+myMCPotion.getNamePrefixed(name as String);
 ```
 
-| Parametr | Typ         | Opis             |
-| -------- | ----------- | ---------------- |
-| Nazwa    | Ciąg znaków | Nie podano opisu |
+| Parameter | Type   | Description             |
+| --------- | ------ | ----------------------- |
+| name      | String | No description provided |
 
 
 
-## Właściwości
+## Properties
 
-| Nazwisko         | Typ                                                                                                                    | Posiada Getter | Ma ustawienie |
-| ---------------- | ---------------------------------------------------------------------------------------------------------------------- | -------------- | ------------- |
-| polecenie        | Ciąg znaków                                                                                                            | prawda         | fałszywy      |
-| efekty           | Lista&lt;[crafttweaker.api.potion.MCPotionEffectInstance](/vanilla/api/potions/MCPotionEffectInstance)&gt; | prawda         | fałszywy      |
-| hasInstantEffect | boolean                                                                                                                | prawda         | fałszywy      |
+| Name             | Type                                                                                                                   | Has Getter | Has Setter |
+| ---------------- | ---------------------------------------------------------------------------------------------------------------------- | ---------- | ---------- |
+| commandString    | String                                                                                                                 | true       | false      |
+| effects          | Lista&lt;[crafttweaker.api.potion.MCPotionEffectInstance](/vanilla/api/potions/MCPotionEffectInstance)&gt; | true       | false      |
+| hasInstantEffect | boolean                                                                                                                | true       | false      |
 

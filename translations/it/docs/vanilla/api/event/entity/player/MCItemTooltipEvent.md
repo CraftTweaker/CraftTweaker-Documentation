@@ -2,28 +2,28 @@
 
 Questa classe è stata aggiunta da una mod con ID `crafttweaker`. Perciò, è necessario avere questa mod installata per poter utilizzare questa funzione.
 
-## Importare la classe
+## Importing the class
 Potrebbe essere necessario importare il pacchetto, se si incontrano dei problemi (come castare un vettore), quindi meglio essere sicuri e aggiungere la direttiva di importazione.
 ```zenscript
 crafttweaker.api.event.entity.player.MCItemTooltipEvent
 ```
 
-## Costruttori
+## Constructors
 ```zenscript
 new crafttweaker.api.event.entity.player.MCItemTooltipEvent(handler as function.Consumer<crafttweaker.api.event.entity.player.MCItemTooltipEvent>);
 ```
-| Parametro | Tipo                                                                                                                              | Descrizione                 |
+| Parameter | Type                                                                                                                              | Description                 |
 | --------- | --------------------------------------------------------------------------------------------------------------------------------- | --------------------------- |
 | handler   | function.Consumer<[crafttweaker.api.event.entity.player.MCItemTooltipEvent](/vanilla/api/event/entity/player/MCItemTooltipEvent)> | Nessuna descrizione fornita |
 
 
 
-## Metodi
+## Methods
 ### getEntityPlayer
 
-Questo evento è sparato con un giocatore nullo durante l'avvio quando si popolano gli alberi di ricerca per i suggerimenti degli strumenti.
+This event is fired with a null player during startup when populating search trees for tooltips.
 
-Restituisce [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
+Returns [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
 
 ```zenscript
 myMCItemTooltipEvent.getEntityPlayer();
@@ -31,9 +31,9 @@ myMCItemTooltipEvent.getEntityPlayer();
 
 ### getItemStack
 
-Il ItemStack con il suggerimento.
+The ItemStack with the tooltip.
 
-Restituisce [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
+Returns [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
 
 ```zenscript
 myMCItemTooltipEvent.getItemStack();
@@ -41,29 +41,29 @@ myMCItemTooltipEvent.getItemStack();
 
 ### getPlayer
 
-Restituisce: `Giocatore`
+Returns: `Player`
 
-Restituisce [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
+Returns [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
 
 ```zenscript
 myMCItemTooltipEvent.getPlayer();
 ```
 
-### hasRisultato
+### hasResult
 
-Determina se questo evento prevede un valore significativo del risultato. Nota: Gli eventi con l'annotazione HasResult avranno questo metodo automaticamente aggiunto per restituire true.
+Determines if this event expects a significant result value. Note: Events with the HasResult annotation will have this method automatically added to return true.
 
 Restituisce un booleano
 
 ```zenscript
-myMCItemTooltipEvent.hasRisultato();
+myMCItemTooltipEvent.hasResult();
 ```
 
-### isAnnullabile
+### isCancelable
 
-Determina se questa funzione è annullabile. Restituisce: `Se l'accesso a setAnnullato dovrebbe essere consentito
- Nota:
- Gli eventi con l'annotazione annullabile avranno questo metodo automaticamente aggiunto per restituire true.`
+Determine if this function is cancelable at all. Returns: `If access to setCanceled should be allowed
+ Note:
+ Events with the Cancelable annotation will have this method automatically added to return true.`
 
 Restituisce un booleano
 
@@ -71,9 +71,9 @@ Restituisce un booleano
 myMCItemTooltipEvent.isCancelable();
 ```
 
-### isAnnullato
+### isCanceled
 
-Determina se questo evento è stato annullato e dovrebbe interrompere l'esecuzione. Restituisce: `L'attuale stato annullato`
+Determine if this event is canceled and should stop executing. Returns: `The current canceled state`
 
 Restituisce un booleano
 
@@ -81,15 +81,15 @@ Restituisce un booleano
 myMCItemTooltipEvent.isCanceled();
 ```
 
-### setAnnullato
+### setCanceled
 
 ```zenscript
 myMCItemTooltipEvent.setCanceled(cancel as boolean);
 ```
 
-| Parametro | Tipo    | Descrizione                 |
+| Parameter | Type    | Description                 |
 | --------- | ------- | --------------------------- |
-| annulla   | boolean | Nessuna descrizione fornita |
+| cancel    | boolean | Nessuna descrizione fornita |
 
 
 

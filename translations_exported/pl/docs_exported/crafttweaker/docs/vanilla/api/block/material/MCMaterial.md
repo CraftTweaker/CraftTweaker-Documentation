@@ -1,23 +1,23 @@
 # MCMaterial
 
-Ta klasa została dodana przez moda z mod-id `crafttweaker`. Więc musisz zainstalować tę modyfikację, jeśli chcesz używać tej funkcji.
+This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
 
-## Importowanie klasy
-Może być wymagane zaimportowanie pakietu, jeśli napotkasz jakiekolwiek problemy (np. rzucanie tablicy), tak aby były bezpieczne niż przepraszamy i dodaj import.
+## Importing the class
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
 ```zenscript
 crafttweaker.api.block.material.MCMaterial
 ```
 
-## Zaimplementowane interfejsy
-MCMaterial implementuje następujące interfejsy. Oznacza to, że każda dostępna dla nich metoda może być również stosowana w tej klasie.
+## Implemented Interfaces
+MCMaterial implementuje następujące interfejsy. That means any method available to them can also be used on this class.
 - [crafttweaker.api.brackets.CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
 
-## Metody
+## Methods
 ### blocksMovement
 
-Zwraca, jeśli ten materiał jest uważany za stały lub nie
+Returns if this material is considered solid or not
 
-Typ zwrotu: logiczny
+Return type: boolean
 
 ```zenscript
 myMCMaterial.blocksMovement();
@@ -25,7 +25,7 @@ myMCMaterial.blocksMovement();
 
 ### getColor
 
-Pobiera indeks kolorów bloku. To jest ten sam kolor używany przez mapy wanilii do reprezentowania tego bloku.
+Retrieves the color index of the block. This is is the same color used by vanilla maps to represent this block.
 
 Typ zwrotu: MCMaterialColor
 
@@ -33,11 +33,11 @@ Typ zwrotu: MCMaterialColor
 myMCMaterial.getColor();
 ```
 
-### łatwopalny
+### isFlammable
 
-Zwraca jeśli blok może się palić lub nie.
+Returns if the block can burn or not.
 
-Typ zwrotu: logiczny
+Return type: boolean
 
 ```zenscript
 myMCMaterial.isFlammable();
@@ -45,29 +45,29 @@ myMCMaterial.isFlammable();
 
 ### isLiquid
 
-Zwraca, jeśli bloki tych materiałów są cieczami.
+Returns if blocks of these materials are liquids.
 
-Typ zwrotu: logiczny
+Return type: boolean
 
 ```zenscript
 myMCMaterial.isLiquid();
 ```
 
-### izOpak
+### isOpaque
 
-Wskazać, czy materiał jest nieprzezroczysty
+Indicate if the material is opaque
 
-Typ zwrotu: logiczny
+Return type: boolean
 
 ```zenscript
 myMCMaterial.isOpaque();
 ```
 
-### możliwe do zastąpienia
+### isReplaceable
 
-Zwraca czy materiał może zostać zastąpiony przez inne bloki po umieszczeniu - np. śnieg, wino i wysoka trawa.
+Returns whether the material can be replaced by other blocks when placed - eg snow, vines and tall grass.
 
-Typ zwrotu: logiczny
+Return type: boolean
 
 ```zenscript
 myMCMaterial.isReplaceable();
@@ -75,18 +75,18 @@ myMCMaterial.isReplaceable();
 
 ### isSolid
 
-Zwraca prawda, jeśli blok jest uważany za stały. To jest domyślnie prawda.
+Returns true if the block is a considered solid. This is true by default.
 
-Typ zwrotu: logiczny
+Return type: boolean
 
 ```zenscript
 myMCMaterial.isSolid();
 ```
 
 
-## Właściwości
+## Properties
 
-| Nazwisko  | Typ         | Posiada Getter | Ma ustawienie |
-| --------- | ----------- | -------------- | ------------- |
-| polecenie | Ciąg znaków | prawda         | fałszywy      |
+| Name          | Type   | Has Getter | Has Setter |
+| ------------- | ------ | ---------- | ---------- |
+| commandString | String | true       | false      |
 

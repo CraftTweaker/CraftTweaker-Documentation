@@ -28,14 +28,14 @@ myMCBlock.getDefaultState();
 
 ## 参数
 
-| 名称             | 类型          | 可获得  | 可设置   |
-| -------------- | ----------- | ---- | ----- |
-| lootTable      | 字符串[string] | true | false |
-| translationKey | 字符串[string] | true | false |
+| 名称             | 类型     | 可获得  | 可设置   |
+| -------------- | ------ | ---- | ----- |
+| lootTable      | String | true | false |
+| translationKey | String | true | false |
 
-## 卡斯特尔
+## Casters
 
-| 结果类型        | 是否隐藏  |
-| ----------- | ----- |
-| 字符串[string] | false |
+| 结果类型   | 是否隐藏  |
+| ------ | ----- |
+| String | false |
 

@@ -1,5 +1,7 @@
 # ModInfo
 
+Holds information about a loaded mod
+
 This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
 
 ## Importing the class
@@ -15,6 +17,7 @@ crafttweaker.api.mods.ModInfo
 | blocks      | List&lt;[crafttweaker.api.block.MCBlock](/vanilla/api/blocks/MCBlock)&gt;              | true       | false      |
 | displayName | String                                                                                             | true       | false      |
 | entitytypes | List&lt;[crafttweaker.api.entity.MCEntityType](/vanilla/api/entities/MCEntityType)&gt; | true       | false      |
+| fluids      | List&lt;[crafttweaker.api.fluid.MCFluid](/vanilla/api/fluid/MCFluid)&gt;               | true       | false      |
 | items       | List&lt;[crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)&gt;          | true       | false      |
 | modid       | String                                                                                             | true       | false      |
 | namespace   | String                                                                                             | true       | false      |

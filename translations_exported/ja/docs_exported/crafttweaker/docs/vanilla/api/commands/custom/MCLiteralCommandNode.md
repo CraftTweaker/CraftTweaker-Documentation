@@ -1,18 +1,18 @@
 # MCliiteralCommandNode
 
-crafttweakerのmod-idを持つmodによって追加されているクラスです。 従って、この機能を利用する場合はこのmodをインストールする必要があります。
+This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
 
-## クラスのインポート
-問題が発生した場合には、インポートが必要になります。とはいえ、お手数ですが予めインポートしておくほうが安全です。
+## Importing the class
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
 ```zenscript
 crafttweaker.api.commands.custom.MCLIiteralCommandNode
 ```
 
-## 実装されたインターフェース
-MCLIiteralCommandNode は以下のインターフェイスを実装します。 つまり、利用可能な任意のメソッドはこのクラスでも使用できます。
+## Implemented Interfaces
+MCLIiteralCommandNode は以下のインターフェイスを実装します。 That means any method available to them can also be used on this class.
 - [crafttweaker.api.commands.custom.MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)
 
-## メソッド
+## Methods
 ### createBuilder
 
 戻り値の型: [crafttweaker.api.commands.custom.MCLIiteralArgumentBuilder](/vanilla/api/commands/custom/MCLiteralArgumentBuilder)
@@ -21,22 +21,22 @@ MCLIiteralCommandNode は以下のインターフェイスを実装します。 
 myMCLIiteralCommandNode.createBuilder();
 ```
 
-### 等しい
+### equals
 
-戻り値の型: boolean
+Return type: boolean
 
 ```zenscript
 myMCliiteralCommandNode.equals(o as Object);
 ```
 
-| パラメータ | タイプ    | 説明           |
-| ----- | ------ | ------------ |
-| o     | オブジェクト | 説明が提供されていません |
+| Parameter | Type   | Description             |
+| --------- | ------ | ----------------------- |
+| o         | Object | No description provided |
 
 
 ### getLiteral
 
-戻り値の型: String
+Return type: String
 
 ```zenscript
 myMCLIiteralCommandNode.getLiteral();
@@ -44,7 +44,7 @@ myMCLIiteralCommandNode.getLiteral();
 
 ### hashCode
 
-戻り値の種類: int
+Return type: int
 
 ```zenscript
 myMCLIiteralCommandNode.hashCode();
@@ -52,20 +52,20 @@ myMCLIiteralCommandNode.hashCode();
 
 ### isValidInput
 
-戻り値の型: boolean
+Return type: boolean
 
 ```zenscript
 myMCLIiteralCommandNode.isValidInput(input as String);
 ```
 
-| パラメータ | タイプ  | 説明           |
-| ----- | ---- | ------------ |
-| input | 文字列型 | 説明が提供されていません |
+| Parameter | Type   | Description             |
+| --------- | ------ | ----------------------- |
+| input     | String | No description provided |
 
 
 ### toString
 
-戻り値の型: String
+Return type: String
 
 ```zenscript
 myMCLIiteralCommandNode.toString();
@@ -79,13 +79,13 @@ myMCLIiteralCommandNode.toString();
 myMCLIiteralCommandNode == o as Object
 ```
 
-| パラメータ | タイプ    | 説明           |
-| ----- | ------ | ------------ |
-| o     | オブジェクト | 説明が提供されていません |
+| Parameter | Type   | Description             |
+| --------- | ------ | ----------------------- |
+| o         | Object | No description provided |
 
-## キャスト
+## Casters
 
-| 結果の種類 | 暗黙的  |
-| ----- | ---- |
-| 文字列型  | true |
+| Result type | Is Implicit |
+| ----------- | ----------- |
+| String      | true        |
 

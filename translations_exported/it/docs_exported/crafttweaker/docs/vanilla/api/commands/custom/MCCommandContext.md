@@ -2,13 +2,13 @@
 
 Questa classe è stata aggiunta da una mod con ID `crafttweaker`. Perciò, è necessario avere questa mod installata per poter utilizzare questa funzione.
 
-## Importare la classe
+## Importing the class
 Potrebbe essere necessario importare il pacchetto, se si incontrano dei problemi (come castare un vettore), quindi meglio essere sicuri e aggiungere la direttiva di importazione.
 ```zenscript
 crafttweaker.api.commands.custom.MCCommandContext
 ```
 
-## Metodi
+## Methods
 ### copyFor
 
 Tipo restituito: [crafttweaker.api.commands.custom.MCCommandContext](/vanilla/api/commands/custom/MCCommandContext)
@@ -17,35 +17,35 @@ Tipo restituito: [crafttweaker.api.commands.custom.MCCommandContext](/vanilla/ap
 myMCCommandContext.copyFor(source as crafttweaker.api.commands.custom.MCCommandSource);
 ```
 
-| Parametro | Tipo                                                                                             | Descrizione                 |
+| Parameter | Type                                                                                             | Description                 |
 | --------- | ------------------------------------------------------------------------------------------------ | --------------------------- |
 | sorgente  | [crafttweaker.api.commands.custom.MCCommandSource](/vanilla/api/commands/custom/MCCommandSource) | Nessuna descrizione fornita |
 
 
-### uguale
+### equals
 
-Tipo restituito: booleano
+Return type: boolean
 
 ```zenscript
 myMCCommandContext.equals(o come oggetto);
 ```
 
-| Parametro | Tipo    | Descrizione                 |
-| --------- | ------- | --------------------------- |
-| o         | Oggetto | Nessuna descrizione fornita |
+| Parameter | Type   | Description                 |
+| --------- | ------ | --------------------------- |
+| o         | Object | Nessuna descrizione fornita |
 
 
 ### getArgomento
 
-Tipo di ritorno: Stringa
+Return type: String
 
 ```zenscript
 myMCCommandContext.getArgument(nome come stringa);
 ```
 
-| Parametro | Tipo    | Descrizione                 |
-| --------- | ------- | --------------------------- |
-| nome      | Stringa | Nessuna descrizione fornita |
+| Parameter | Type   | Description                 |
+| --------- | ------ | --------------------------- |
+| name      | String | Nessuna descrizione fornita |
 
 
 ### getChild
@@ -66,7 +66,7 @@ myMCCommandContext.getCommand();
 
 ### getInput
 
-Tipo di ritorno: Stringa
+Return type: String
 
 ```zenscript
 myMCCommandContext.getInput();
@@ -122,7 +122,7 @@ myMCCommandContext.getSource();
 
 ### hasNodes
 
-Tipo restituito: booleano
+Return type: boolean
 
 ```zenscript
 myMCCommandContext.hasNodes();
@@ -130,7 +130,7 @@ myMCCommandContext.hasNodes();
 
 ### hashCode
 
-Tipo di restituzione: int
+Return type: int
 
 ```zenscript
 myMCCommandContext.hashCode();
@@ -138,7 +138,7 @@ myMCCommandContext.hashCode();
 
 ### isForked
 
-Tipo restituito: booleano
+Return type: boolean
 
 ```zenscript
 myMCCommandContext.isForked();
@@ -146,27 +146,27 @@ myMCCommandContext.isForked();
 
 ### toString
 
-Tipo di ritorno: Stringa
+Return type: String
 
 ```zenscript
 myMCCommandContext.toString();
 ```
 
 
-## Operatori
-### EQUALI
+## Operators
+### EQUALS
 
 ```zenscript
 myMCCommandContext == o come oggetto
 ```
 
-| Parametro | Tipo    | Descrizione                 |
-| --------- | ------- | --------------------------- |
-| o         | Oggetto | Nessuna descrizione fornita |
+| Parameter | Type   | Description                 |
+| --------- | ------ | --------------------------- |
+| o         | Object | Nessuna descrizione fornita |
 
 ## Caster
 
 | Tipo Risultato | Implicito |
 | -------------- | --------- |
-| Stringa        | vero      |
+| String         | true      |
 

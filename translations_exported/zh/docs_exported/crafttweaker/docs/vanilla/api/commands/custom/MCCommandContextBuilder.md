@@ -9,7 +9,7 @@ crafttbower.api.commands.custom.MCCommandContextBuilder
 ```
 
 ## 方法
-### 构建中
+### build
 
 返回类型： [craftbiner.api.commands.custom.MCCommandContext](/vanilla/api/commands/custom/MCCommandContext)
 
@@ -17,9 +17,9 @@ crafttbower.api.commands.custom.MCCommandContextBuilder
 myMCCommandContextBuilder.build(输入为字符串)；
 ```
 
-| 参数        | 类型          | 描述                      |
-| --------- | ----------- | ----------------------- |
-| input（输入） | 字符串[string] | No description provided |
+| 参数        | 类型     | 描述                      |
+| --------- | ------ | ----------------------- |
+| input（输入） | String | No description provided |
 
 
 ### copy #复制
@@ -32,15 +32,15 @@ myMCCommandContextBuilder.copy();
 
 ### equals #等于
 
-返回类型：布尔值
+Return type: boolean
 
 ```zenscript
 myMCCommandContextBuilder.equals(ao as Object);
 ```
 
-| 参数 | 类型 | 描述                      |
-| -- | -- | ----------------------- |
-| o  | 对象 | No description provided |
+| 参数 | 类型     | 描述                      |
+| -- | ------ | ----------------------- |
+| o  | Object | No description provided |
 
 
 ### 查找建议内容
@@ -51,9 +51,9 @@ myMCCommandContextBuilder.equals(ao as Object);
 myMCCommandContextBuilder.findRecommendtionContext(光标为int)；
 ```
 
-| 参数     | 类型 | 描述                      |
-| ------ | -- | ----------------------- |
-| cursor | 整数 | No description provided |
+| 参数     | 类型  | 描述                      |
+| ------ | --- | ----------------------- |
+| cursor | int | No description provided |
 
 
 ### 获取参数
@@ -130,7 +130,7 @@ myMCCommandContextBuilder.getSource();
 
 ### hashCode
 
-返回类型：int
+Return type: int
 
 ```zenscript
 myMCCommandContextBuilder.hashCode();
@@ -138,7 +138,7 @@ myMCCommandContextBuilder.hashCode();
 
 ### toString
 
-返回类型：字符串
+Return type: String
 
 ```zenscript
 myMCCommandContextBuilder.toString();
@@ -152,10 +152,10 @@ myMCCommandContextBuilder.toString();
 myMCCommandContextBuilder.withArgumentation(name as String, articles as craftbiner.api.commands.custom.MCParsedArgument);
 ```
 
-| 参数 | 类型                                                                                                  | 描述                      |
-| -- | --------------------------------------------------------------------------------------------------- | ----------------------- |
-| 名称 | 字符串[string]                                                                                         | No description provided |
-| 参数 | [craftminstrer.api.commands.custom.MCParsedArgument](/vanilla/api/commands/custom/MCParsedArgument) | No description provided |
+| 参数   | 类型                                                                                                  | 描述                      |
+| ---- | --------------------------------------------------------------------------------------------------- | ----------------------- |
+| name | String                                                                                              | No description provided |
+| 参数   | [craftminstrer.api.commands.custom.MCParsedArgument](/vanilla/api/commands/custom/MCParsedArgument) | No description provided |
 
 
 ### 与子节点
@@ -179,9 +179,9 @@ myMCCommandContextBuilder.withChild(child as craftweeper.api.commands.custom.MCC
 myMCCommandContextBuilder.withCommand(command as craftbiner.api.commands.custom.MCCommand);
 ```
 
-| 参数 | 类型                                                                                    | 描述                      |
-| -- | ------------------------------------------------------------------------------------- | ----------------------- |
-| 命令 | [craftminstrer.api.commands.custom.MCCommand](/vanilla/api/commands/custom/MCCommand) | No description provided |
+| 参数      | 类型                                                                                    | 描述                      |
+| ------- | ------------------------------------------------------------------------------------- | ----------------------- |
+| command | [craftminstrer.api.commands.custom.MCCommand](/vanilla/api/commands/custom/MCCommand) | No description provided |
 
 
 ### withNode
@@ -219,13 +219,13 @@ myMCCommandContextBuilder.withSource(source as craftwiner.api.commands.custom.MC
 myMCCommandContextBuilder == o 为对象
 ```
 
-| 参数 | 类型 | 描述                      |
-| -- | -- | ----------------------- |
-| o  | 对象 | No description provided |
+| 参数 | 类型     | 描述                      |
+| -- | ------ | ----------------------- |
+| o  | Object | No description provided |
 
-## 卡斯特尔
+## Casters
 
-| 结果类型        | 是否隐藏 |
-| ----------- | ---- |
-| 字符串[string] | true |
+| 结果类型   | 是否隐藏 |
+| ------ | ---- |
+| String | true |
 

@@ -15,20 +15,20 @@ MCRootCommandNode 实现以下接口。 这意味着对这个接口可用的任�
 ## 方法
 ### equals #等于
 
-返回类型：布尔值
+Return type: boolean
 
 ```zenscript
 myMCRootCommandNode.equals(ao as Object);
 ```
 
-| 参数 | 类型 | 描述                      |
-| -- | -- | ----------------------- |
-| o  | 对象 | No description provided |
+| 参数 | 类型     | 描述                      |
+| -- | ------ | ----------------------- |
+| o  | Object | No description provided |
 
 
 ### hashCode
 
-返回类型：int
+Return type: int
 
 ```zenscript
 myMCRootCommandNode.hashCode();
@@ -36,20 +36,20 @@ myMCRootCommandNode.hashCode();
 
 ### isValidInput
 
-返回类型：布尔值
+Return type: boolean
 
 ```zenscript
 myMCRootCommandNode.isValidInput(输入为字符串)；
 ```
 
-| 参数        | 类型          | 描述                      |
-| --------- | ----------- | ----------------------- |
-| input（输入） | 字符串[string] | No description provided |
+| 参数        | 类型     | 描述                      |
+| --------- | ------ | ----------------------- |
+| input（输入） | String | No description provided |
 
 
 ### toString
 
-返回类型：字符串
+Return type: String
 
 ```zenscript
 myMCRootCommandNode.toString();
@@ -63,13 +63,13 @@ myMCRootCommandNode.toString();
 myMCRootCommandNode == o 为对象
 ```
 
-| 参数 | 类型 | 描述                      |
-| -- | -- | ----------------------- |
-| o  | 对象 | No description provided |
+| 参数 | 类型     | 描述                      |
+| -- | ------ | ----------------------- |
+| o  | Object | No description provided |
 
-## 卡斯特尔
+## Casters
 
-| 结果类型        | 是否隐藏 |
-| ----------- | ---- |
-| 字符串[string] | true |
+| 结果类型   | 是否隐藏 |
+| ------ | ---- |
+| String | true |
 

@@ -8,30 +8,30 @@
 crafttweaker.api.commands.custom.MCImmutableStringReader
 ```
 
-## Методы
+## Methods
 ### canRead
 
-Тип возврата: логическое значение
+Return type: boolean
 
 ```zenscript
 myMCImmutableStringReader.canRead();
 ```
 
 
-Тип возврата: логическое значение
+Return type: boolean
 
 ```zenscript
 myMCImmutableReader.canRead(arg0 как int);
 ```
 
-| Параметр | Тип | Описание             |
+| Параметр | Тип | Description          |
 | -------- | --- | -------------------- |
 | arg0     | int | Описание отсутствует |
 
 
 ### getCursor
 
-Тип возврата: int
+Return type: int
 
 ```zenscript
 myMCImmutableStringReader.getCursor();
@@ -39,7 +39,7 @@ myMCImmutableStringReader.getCursor();
 
 ### getRead
 
-Тип возврата: строка
+Return type: String
 
 ```zenscript
 myMCImmutableStringReader.getRead();
@@ -47,7 +47,7 @@ myMCImmutableStringReader.getRead();
 
 ### получить оставшееся
 
-Тип возврата: строка
+Return type: String
 
 ```zenscript
 myMCImmutableReader.getRemain();
@@ -55,7 +55,7 @@ myMCImmutableReader.getRemain();
 
 ### получить оставшуюся длину
 
-Тип возврата: int
+Return type: int
 
 ```zenscript
 myMCImmutableReader.getRemainLength();
@@ -63,7 +63,7 @@ myMCImmutableReader.getRemainLength();
 
 ### getString
 
-Тип возврата: строка
+Return type: String
 
 ```zenscript
 myMCImmutableReader.getString();
@@ -71,7 +71,7 @@ myMCImmutableReader.getString();
 
 ### getTotalLength
 
-Тип возврата: int
+Return type: int
 
 ```zenscript
 myMCImmutableReader.getTotalLength();
@@ -92,7 +92,7 @@ myMCImmutableReader.peek();
 myMCImmutableReader.peek(arg0 как int);
 ```
 
-| Параметр | Тип | Описание             |
+| Параметр | Тип | Description          |
 | -------- | --- | -------------------- |
 | arg0     | int | Описание отсутствует |
 

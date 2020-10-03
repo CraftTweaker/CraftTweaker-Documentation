@@ -15,7 +15,7 @@ BlastFurnaceManager实现了以下接口。 这意味着对这个接口可用的
 - [crafttweaker.api.registries.ICookingRecipeManager](/vanilla/api/managers/ICookingRecipeManager)
 
 ## 方法
-### 添加配方
+### addRecipe
 
 添加基于给定参数的合成表
 
@@ -26,13 +26,13 @@ blastFurnace.addRecipe("wool2diamond", <item:diamond>, <tag:minecraft:wool>, 1.0
 #示例显示了如何实现将羊毛在高炉中烧制成钻石并且获得1.0的经验
 ```
 
-| 参数             | 类型                                                                | 描述         |
-| -------------- | ----------------------------------------------------------------- | ---------- |
-| 名称             | 字符串[string]                                                       | 新的合成表名称    |
-| output（输出）     | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | 合成表的输出物品id |
-| input（输入）      | [制造商.api.item.IIngredient](/vanilla/api/items/IIngredient)        | 合成表的输入成分   |
-| xp             | 浮点数                                                               | 玩家获得多少经验   |
-| cookTime #烧制时间 | 整数                                                                | 烧制需要多长时间   |
+| 参数             | 类型                                                                  | 描述         |
+| -------------- | ------------------------------------------------------------------- | ---------- |
+| name           | String                                                              | 新的合成表名称    |
+| output（输出）     | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)   | 合成表的输出物品id |
+| input（输入）      | [crafttweaker.api.item.IIngredient](/vanilla/api/items/IIngredient) | 合成表的输入成分   |
+| xp             | float                                                               | 玩家获得多少经验   |
+| cookTime #烧制时间 | int                                                                 | 烧制需要多长时间   |
 
 
 ### 删除合成表
@@ -46,10 +46,10 @@ blastFurnace.removeRecipe(<item:minecraft:diamond>, <tag:minecraft:wool>);
 #由输入为羊毛输出为钻石的方式定位并且删除这个合成表
 ```
 
-| 参数         | 类型                                                                | 描述          |
-| ---------- | ----------------------------------------------------------------- | ----------- |
-| output（输出） | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | 合成表的输出物品id. |
-| input（输入）  | [制造商.api.item.IIngredient](/vanilla/api/items/IIngredient)        | 要移除的配方的成分。  |
+| 参数         | 类型                                                                  | 描述          |
+| ---------- | ------------------------------------------------------------------- | ----------- |
+| output（输出） | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)   | 合成表的输出物品id. |
+| input（输入）  | [crafttweaker.api.item.IIngredient](/vanilla/api/items/IIngredient) | 要移除的配方的成分。  |
 
 
 

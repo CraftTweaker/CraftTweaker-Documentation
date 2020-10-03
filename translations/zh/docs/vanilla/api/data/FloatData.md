@@ -18,9 +18,9 @@ FloatData实现了以下接口。 这意味着对这个接口可用的任何方�
 ```zenscript
 new crafttweaker.api.data.FloatData(internal as float);
 ```
-| 参数   | 类型  | 描述                      |
-| ---- | --- | ----------------------- |
-| 内部设置 | 浮点数 | No description provided |
+| 参数       | 类型    | 描述                      |
+| -------- | ----- | ----------------------- |
+| internal | float | No description provided |
 
 
 

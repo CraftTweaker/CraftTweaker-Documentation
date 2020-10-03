@@ -1,14 +1,14 @@
 # MCSuggestions
 
-crafttweakerのmod-idを持つmodによって追加されているクラスです。 従って、この機能を利用する場合はこのmodをインストールする必要があります。
+This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
 
-## クラスのインポート
-問題が発生した場合には、インポートが必要になります。とはいえ、お手数ですが予めインポートしておくほうが安全です。
+## Importing the class
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
 ```zenscript
 crafttweaker.api.commands.custom.MCSuggestions
 ```
 
-## メソッド
+## Methods
 ### 作成
 
 戻り値の型: [crafttweaker.api.commands.custom.MCSuggestions](/vanilla/api/commands/custom/MCSuggestions)
@@ -17,13 +17,13 @@ crafttweaker.api.commands.custom.MCSuggestions
 crafttweaker.api.commands.custom.MCSuggestions.create(command as String, suggestions as Collection<crafttweaker.api.commands.custom.MCSuggestion>);
 ```
 
-| パラメータ     | タイプ                                                                                                                  | 説明           |
-| --------- | -------------------------------------------------------------------------------------------------------------------- | ------------ |
-| (Command) | 文字列型                                                                                                                 | 説明が提供されていません |
-| 提案        | コレクション&lt;[crafttweaker.api.commands.custom.MCSuggestion](/vanilla/api/commands/custom/MCSuggestion)&gt; | 説明が提供されていません |
+| Parameter | Type                                                                                                                 | Description             |
+| --------- | -------------------------------------------------------------------------------------------------------------------- | ----------------------- |
+| command   | String                                                                                                               | No description provided |
+| 提案        | コレクション&lt;[crafttweaker.api.commands.custom.MCSuggestion](/vanilla/api/commands/custom/MCSuggestion)&gt; | No description provided |
 
 
-### 空
+### empty
 
 戻り値の型: [crafttweaker.api.commands.custom.MCSuggestions](/vanilla/api/commands/custom/MCSuggestions)
 
@@ -31,17 +31,17 @@ crafttweaker.api.commands.custom.MCSuggestions.create(command as String, suggest
 crafttweaker.api.commands.custom.MCSuggestions.empty();
 ```
 
-### 等しい
+### equals
 
-戻り値の型: boolean
+Return type: boolean
 
 ```zenscript
 myMCSuggestions.equals(o as Object);
 ```
 
-| パラメータ | タイプ    | 説明           |
-| ----- | ------ | ------------ |
-| o     | オブジェクト | 説明が提供されていません |
+| Parameter | Type   | Description             |
+| --------- | ------ | ----------------------- |
+| o         | Object | No description provided |
 
 
 ### getList
@@ -62,7 +62,7 @@ myMCSuggestions.getRange();
 
 ### hashCode
 
-戻り値の種類: int
+Return type: int
 
 ```zenscript
 myMCSuggestions.hashCode();
@@ -70,13 +70,13 @@ myMCSuggestions.hashCode();
 
 ### isEmpty
 
-戻り値の型: boolean
+Return type: boolean
 
 ```zenscript
 myMCSuggestions.isEmpty();
 ```
 
-### マージ
+### merge
 
 戻り値の型: [crafttweaker.api.commands.custom.MCSuggestions](/vanilla/api/commands/custom/MCSuggestions)
 
@@ -84,15 +84,15 @@ myMCSuggestions.isEmpty();
 crafttweaker.api.commands.custom.MCSuggestions.merge(command as String, input as Collection<crafttweaker.api.commands.custom.MCSuggestions>);
 ```
 
-| パラメータ     | タイプ                                                                                                                    | 説明           |
-| --------- | ---------------------------------------------------------------------------------------------------------------------- | ------------ |
-| (Command) | 文字列型                                                                                                                   | 説明が提供されていません |
-| input     | コレクション&lt;[crafttweaker.api.commands.custom.MCSuggestions](/vanilla/api/commands/custom/MCSuggestions)&gt; | 説明が提供されていません |
+| Parameter | Type                                                                                                                   | Description             |
+| --------- | ---------------------------------------------------------------------------------------------------------------------- | ----------------------- |
+| command   | String                                                                                                                 | No description provided |
+| input     | コレクション&lt;[crafttweaker.api.commands.custom.MCSuggestions](/vanilla/api/commands/custom/MCSuggestions)&gt; | No description provided |
 
 
 ### toString
 
-戻り値の型: String
+Return type: String
 
 ```zenscript
 myMCSuggestions.toString();
@@ -106,13 +106,13 @@ myMCSuggestions.toString();
 myMCSuggestions == o as Object
 ```
 
-| パラメータ | タイプ    | 説明           |
-| ----- | ------ | ------------ |
-| o     | オブジェクト | 説明が提供されていません |
+| Parameter | Type   | Description             |
+| --------- | ------ | ----------------------- |
+| o         | Object | No description provided |
 
-## キャスト
+## Casters
 
-| 結果の種類 | 暗黙的  |
-| ----- | ---- |
-| 文字列型  | true |
+| Result type | Is Implicit |
+| ----------- | ----------- |
+| String      | true        |
 

@@ -1,39 +1,39 @@
 # MCPotionEffectInstance
 
-Esta clase fue añadida por un mod con la ID  `crafttweaker`. Necesitas tener este mod instalado si quieres usar esta caracteristica.
+This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
 
-## Importar la clase
-Puede ser requerido que importes el paquete si encuentras algun problema (como crear un Array).
+## Importing the class
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
 ```zenscript
 crafttweaker.api.potion.MCPotionEffectInstance
 ```
 
-## Métodos
-### añadir elemento curativo
+## Methods
+### addCurativeItem
 
 ```zenscript
-myMCPotionEffectInstance.addCurativeItem(pila como crafttweaker.api.item.IItemStack);
+myMCPotionEffectInstance.addCurativeItem(stack as crafttweaker.api.item.IItemStack);
 ```
 
-| Parámetro | Tipo                                                              | Descripción                   |
-| --------- | ----------------------------------------------------------------- | ----------------------------- |
-| pila      | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | No se proporcionó descripción |
+| Parameter | Type                                                              | Description             |
+| --------- | ----------------------------------------------------------------- | ----------------------- |
+| stack     | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | No description provided |
 
 
-### combinar
+### combine
 
-Tipo de retorno: booleano
+Return type: boolean
 
 ```zenscript
-myMCPotionEffectInstance.combine(efecto as crafttweaker.api.potion.MCPotionEffectInstance);
+myMCPotionEffectInstance.combine(effect as crafttweaker.api.potion.MCPotionEffectInstance);
 ```
 
-| Parámetro | Tipo                                                                                          | Descripción                   |
-| --------- | --------------------------------------------------------------------------------------------- | ----------------------------- |
-| efecto    | [crafttweaker.api.potion.MCPotionEffectInstance](/vanilla/api/potions/MCPotionEffectInstance) | No se proporcionó descripción |
+| Parameter | Type                                                                                          | Description             |
+| --------- | --------------------------------------------------------------------------------------------- | ----------------------- |
+| effect    | [crafttweaker.api.potion.MCPotionEffectInstance](/vanilla/api/potions/MCPotionEffectInstance) | No description provided |
 
 
-### Obtener artículos curativos
+### getCurativeItems
 
 Tipo de retorno: Lista&lt;[crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)&gt;
 
@@ -43,38 +43,38 @@ myMCPotionEffectInstance.getCurativeItems();
 
 ### isCurativeItem
 
-Tipo de retorno: booleano
+Return type: boolean
 
 ```zenscript
-myMCPotionEffectInstance.isCurativeItem(pila como crafttweaker.api.item.IIItemStack);
+myMCPotionEffectInstance.isCurativeItem(stack as crafttweaker.api.item.IItemStack);
 ```
 
-| Parámetro | Tipo                                                              | Descripción                   |
-| --------- | ----------------------------------------------------------------- | ----------------------------- |
-| pila      | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | No se proporcionó descripción |
+| Parameter | Type                                                              | Description             |
+| --------- | ----------------------------------------------------------------- | ----------------------- |
+| stack     | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | No description provided |
 
 
-### setear artículos curativos
+### setCurativeItems
 
 ```zenscript
 myMCPotionEffectInstance.setCurativeItems(items as crafttweaker.api.item.IItemStack[]);
 ```
 
-| Parámetro | Tipo                                                                | Descripción                   |
-| --------- | ------------------------------------------------------------------- | ----------------------------- |
-| objetos   | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)[] | No se proporcionó descripción |
+| Parameter | Type                                                                | Description             |
+| --------- | ------------------------------------------------------------------- | ----------------------- |
+| items     | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)[] | No description provided |
 
 
 
-## Propiedades
+## Properties
 
-| Nombre             | Tipo                                                                          | Tiene Obtén | Tiene Setter |
-| ------------------ | ----------------------------------------------------------------------------- | ----------- | ------------ |
-| ambiente           | boolean                                                                       | verdad      | falso        |
-| amplificador       | int                                                                           | verdad      | falso        |
-| duración           | int                                                                           | verdad      | falso        |
-| effectName         | Cadena                                                                        | verdad      | falso        |
-| poción             | [crafttweaker.api.potion.MCPotionEffect](/vanilla/api/potions/MCPotionEffect) | verdad      | falso        |
-| icono              | boolean                                                                       | verdad      | falso        |
-| mostrar partículas | boolean                                                                       | verdad      | falso        |
+| Name          | Type                                                                          | Has Getter | Has Setter |
+| ------------- | ----------------------------------------------------------------------------- | ---------- | ---------- |
+| ambient       | boolean                                                                       | true       | false      |
+| amplifier     | int                                                                           | true       | false      |
+| duration      | int                                                                           | true       | false      |
+| effectName    | String                                                                        | true       | false      |
+| potion        | [crafttweaker.api.potion.MCPotionEffect](/vanilla/api/potions/MCPotionEffect) | true       | false      |
+| showIcon      | boolean                                                                       | true       | false      |
+| showParticles | boolean                                                                       | true       | false      |
 

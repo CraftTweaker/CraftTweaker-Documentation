@@ -2,13 +2,13 @@
 
 Questa classe è stata aggiunta da una mod con ID `crafttweaker`. Perciò, è necessario avere questa mod installata per poter utilizzare questa funzione.
 
-## Importare la classe
+## Importing the class
 Potrebbe essere necessario importare il pacchetto, se si incontrano dei problemi (come castare un vettore), quindi meglio essere sicuri e aggiungere la direttiva di importazione.
 ```zenscript
 crafttweaker.api.commands.custom.MCSuggestions
 ```
 
-## Metodi
+## Methods
 ### crea
 
 Tipo restituito: [crafttweaker.api.commands.custom.MCSuggestions](/vanilla/api/commands/custom/MCSuggestions)
@@ -17,13 +17,13 @@ Tipo restituito: [crafttweaker.api.commands.custom.MCSuggestions](/vanilla/api/c
 crafttweaker.api.commands.custom.MCSuggestions.create(comando come stringa, suggerimenti come raccolta<crafttweaker.api.commands.custom.MCSuggestion>);
 ```
 
-| Parametro    | Tipo                                                                                                                     | Descrizione                 |
+| Parameter    | Type                                                                                                                     | Description                 |
 | ------------ | ------------------------------------------------------------------------------------------------------------------------ | --------------------------- |
-| comando      | Stringa                                                                                                                  | Nessuna descrizione fornita |
+| command      | String                                                                                                                   | Nessuna descrizione fornita |
 | suggerimenti | Collezione&lt;[crafttweaker.api.commands.custom.MCSuggestion](/vanilla/api/commands/custom/MCSuggestion)&gt; | Nessuna descrizione fornita |
 
 
-### vuoto
+### empty
 
 Tipo restituito: [crafttweaker.api.commands.custom.MCSuggestions](/vanilla/api/commands/custom/MCSuggestions)
 
@@ -31,17 +31,17 @@ Tipo restituito: [crafttweaker.api.commands.custom.MCSuggestions](/vanilla/api/c
 crafttweaker.api.commands.custom.MCSuggestions.empty();
 ```
 
-### uguale
+### equals
 
-Tipo restituito: booleano
+Return type: boolean
 
 ```zenscript
 myMCSuggestions.equals(o come oggetto);
 ```
 
-| Parametro | Tipo    | Descrizione                 |
-| --------- | ------- | --------------------------- |
-| o         | Oggetto | Nessuna descrizione fornita |
+| Parameter | Type   | Description                 |
+| --------- | ------ | --------------------------- |
+| o         | Object | Nessuna descrizione fornita |
 
 
 ### getList
@@ -62,7 +62,7 @@ myMCSuggestions.getRange();
 
 ### hashCode
 
-Tipo di restituzione: int
+Return type: int
 
 ```zenscript
 myMCSuggestions.hashCode();
@@ -70,13 +70,13 @@ myMCSuggestions.hashCode();
 
 ### isEmpty
 
-Tipo restituito: booleano
+Return type: boolean
 
 ```zenscript
 myMCSuggestions.isEmpty();
 ```
 
-### unisci
+### merge
 
 Tipo restituito: [crafttweaker.api.commands.custom.MCSuggestions](/vanilla/api/commands/custom/MCSuggestions)
 
@@ -84,35 +84,35 @@ Tipo restituito: [crafttweaker.api.commands.custom.MCSuggestions](/vanilla/api/c
 crafttweaker.api.commands.custom.MCSuggestions.merge(comando come stringa, input come raccolta<crafttweaker.api.commands.custom.MCSuggestions>);
 ```
 
-| Parametro | Tipo                                                                                                                       | Descrizione                 |
+| Parameter | Type                                                                                                                       | Description                 |
 | --------- | -------------------------------------------------------------------------------------------------------------------------- | --------------------------- |
-| comando   | Stringa                                                                                                                    | Nessuna descrizione fornita |
+| command   | String                                                                                                                     | Nessuna descrizione fornita |
 | input     | Collezione&lt;[crafttweaker.api.commands.custom.MCSuggestions](/vanilla/api/commands/custom/MCSuggestions)&gt; | Nessuna descrizione fornita |
 
 
 ### toString
 
-Tipo di ritorno: Stringa
+Return type: String
 
 ```zenscript
 myMCSuggestions.toString();
 ```
 
 
-## Operatori
-### EQUALI
+## Operators
+### EQUALS
 
 ```zenscript
 myMCSuggestions == o come oggetto
 ```
 
-| Parametro | Tipo    | Descrizione                 |
-| --------- | ------- | --------------------------- |
-| o         | Oggetto | Nessuna descrizione fornita |
+| Parameter | Type   | Description                 |
+| --------- | ------ | --------------------------- |
+| o         | Object | Nessuna descrizione fornita |
 
 ## Caster
 
 | Tipo Risultato | Implicito |
 | -------------- | --------- |
-| Stringa        | vero      |
+| String         | true      |
 

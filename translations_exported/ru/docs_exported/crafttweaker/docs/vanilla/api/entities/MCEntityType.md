@@ -8,22 +8,22 @@
 crafttweaker.api.entity.MCEntityType
 ```
 
-## Реализованные интерфейсы
-MCEntityType реализует следующие интерфейсы. Следовательно, методы из них доступны в этом классе.
+## Implemented Interfaces
+MCEntityType implements the following interfaces. That means any method available to them can also be used on this class.
 - [crafttweaker.api.brackets.CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
 
 ## Свойства
 
-| Название         | Тип                                                                                            | Имеет Getter | Имеет Setter |
-| ---------------- | ---------------------------------------------------------------------------------------------- | ------------ | ------------ |
-| классификация    | [crafttweaker.api.entity.MCEntityClassification](/vanilla/api/entities/MCEntityClassification) | true         | false        |
-| командная строка | String                                                                                         | true         | false        |
-| height           | float                                                                                          | true         | false        |
-| immuneToFire     | boolean                                                                                        | true         | false        |
-| lootTable        | String                                                                                         | true         | false        |
-| имя              | String                                                                                         | true         | false        |
-| serializable     | boolean                                                                                        | true         | false        |
-| вызываемый       | boolean                                                                                        | true         | false        |
-| translationKey   | String                                                                                         | true         | false        |
-| width            | float                                                                                          | true         | false        |
+| Название       | Тип                                                                                            | Имеет Getter | Имеет Setter |
+| -------------- | ---------------------------------------------------------------------------------------------- | ------------ | ------------ |
+| classification | [crafttweaker.api.entity.MCEntityClassification](/vanilla/api/entities/MCEntityClassification) | true         | false        |
+| commandString  | String                                                                                         | true         | false        |
+| height         | float                                                                                          | true         | false        |
+| immuneToFire   | boolean                                                                                        | true         | false        |
+| lootTable      | String                                                                                         | true         | false        |
+| name           | String                                                                                         | true         | false        |
+| serializable   | boolean                                                                                        | true         | false        |
+| summonable     | boolean                                                                                        | true         | false        |
+| translationKey | String                                                                                         | true         | false        |
+| width          | float                                                                                          | true         | false        |
 

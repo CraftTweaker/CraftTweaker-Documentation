@@ -1,19 +1,19 @@
 # IFluidStack
 
-crafttweakerのmod-idを持つmodによって追加されているクラスです。 従って、この機能を利用する場合はこのmodをインストールする必要があります。
+This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
 
-## クラスのインポート
-問題が発生した場合には、インポートが必要になります。とはいえ、お手数ですが予めインポートしておくほうが安全です。
+## Importing the class
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
 ```zenscript
 crafttweaker.api.fluid.IFluidStack
 ```
 
-## 実装されたインターフェース
-IFluidStackは以下のインターフェースを実装しています。 つまり、利用可能な任意のメソッドはこのクラスでも使用できます。
-- [craftweaker.api.brackets.CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
+## Implemented Interfaces
+IFluidStackは以下のインターフェースを実装しています。 That means any method available to them can also be used on this class.
+- [crafttweaker.api.brackets.CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
 
-## メソッド
-### コピー
+## Methods
+### copy
 
 スタックをコピーする。 変更可能なスタックが関与している場合にのみ必要です。
 
@@ -50,69 +50,18 @@ myIFluidStack.setAmount(amount as int);
 myIFluidStack.setAmount(1000);
 ```
 
-| パラメータ | タイプ | 説明          |
-| ----- | --- | ----------- |
-| 金額    | int | このスタックを掛ける量 |
+| Parameter | Type | Description |
+| --------- | ---- | ----------- |
+| amount    | int  | このスタックを掛ける量 |
 
 
 
-## プロパティー
+## Properties
 
-<table spaces-before="0" line-breaks-before="2">
-  <tr>
-    <th>
-      名称
-    </th>
-    
-    <th>
-      タイプ
-    </th>
-    
-    <th>
-      ゲッターあり
-    </th>
-    
-    <th>
-      セッターあり
-    </th>
-  </tr>
-  
-  <tr>
-    <td>
-      commandString
-    </td>
-    
-    <td>
-      文字列型
-    </td>
-    
-    <td>
-      true
-    </td>
-    
-    <td>
-      false
-    </td>
-  </tr>
-  
-  <tr>
-    <td>
-      <unk>
-    </td>
-    
-    <td>
-      <a href="/vanilla/api/fluid/MCFluid">crafttweaker.api.fluid.MCFluid</a>
-    </td>
-    
-    <td>
-      true
-    </td>
-    
-    <td>
-      false
-    </td>
-  </tr>
-</table>
+| 名称            | Type                                                         | Has Getter | Has Setter |
+| ------------- | ------------------------------------------------------------ | ---------- | ---------- |
+| commandString | String                                                       | true       | false      |
+| fluid         | [crafttweaker.api.fluid.MCFluid](/vanilla/api/fluid/MCFluid) | true       | false      |
 
 ## 演算子
 ### MUL
@@ -126,7 +75,7 @@ myIFluidStack * amount as int
 myIFluidStack * 1000
 ```
 
-| パラメータ | タイプ | 説明          |
-| ----- | --- | ----------- |
-| 金額    | int | このスタックを掛ける量 |
+| Parameter | Type | Description |
+| --------- | ---- | ----------- |
+| amount    | int  | このスタックを掛ける量 |
 

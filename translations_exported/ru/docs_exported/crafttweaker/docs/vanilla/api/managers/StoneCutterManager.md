@@ -10,41 +10,41 @@
 crafttweaker.api.StoneCutterManager
 ```
 
-## Реализованные интерфейсы
-StoneCutterManager реализует следующие интерфейсы. Следовательно, методы из них доступны в этом классе.
+## Implemented Interfaces
+StoneCutterManager implements the following interfaces. That means any method available to them can also be used on this class.
 - [crafttweaker.api.brackets.CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
 - [crafttweaker.api.registries.IRecipeManager](/vanilla/api/managers/IRecipeManager)
 
-## Методы
+## Methods
 ### addJSONRecipe
 
-Добавляет рецепт на основе предоставленной IData. Предоставленная IData должна представлять JSON DataPack DataPack это позволяет эффективно регистрировать рецепты для любого набора данных, поддерживающего системы IRecipeType.
+Adds a recipe based on a provided IData. The provided IData should represent a DataPack JSON, this effectively allows you to register recipes for any DataPack supporting IRecipeType systems.
 
 ```zenscript
-stoneCutter.addJSONRecipe(название как строка, данные как crafttweaker.api.data.IData);
-stoneCutter.addJSONRecipe("recipe_name", {ingredient:{item:<item:minecraft:gold_ore>.registryName},результат:<item:minecraft:cooked_porkchop>.registryName,experience:0.35 как float, кулинари:100});
+stoneCutter.addJSONRecipe(name as String, data as crafttweaker.api.data.IData);
+stoneCutter.addJSONRecipe("recipe_name", {ingredient:{item:<item:minecraft:gold_ore>.registryName},result:<item:minecraft:cooked_porkchop>.registryName,experience:0.35 as float, cookingtime:100});
 ```
 
-| Параметр | Тип                                                    | Описание                         |
-| -------- | ------------------------------------------------------ | -------------------------------- |
-| имя      | String                                                 | название рецепта                 |
-| data     | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | данные, представляющие файл json |
+| Параметр | Тип                                                    | Description                     |
+| -------- | ------------------------------------------------------ | ------------------------------- |
+| name     | String                                                 | name of the recipe              |
+| data     | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | data representing the json file |
 
 
-### Добавить рецепт
+### addRecipe
 
-Добавляет рецепт в каменный резак
+Adds a recipe to the stone cutter
 
 ```zenscript
-stoneCutter.addRecipe(Рецепт как строка, вывод как crafttweaker.api.item.IItemStack, ввод как crafttweaker.api.item.Igredient);
+stoneCutter.addRecipe(recipeName as String, output as crafttweaker.api.item.IItemStack, input as crafttweaker.api.item.IIngredient);
 stoneCutter.addRecipe("recipe_name", <item:minecraft:grass>, <tag:minecraft:wool>);
 ```
 
-| Параметр    | Тип                                                                 | Описание                                                                    |
-| ----------- | ------------------------------------------------------------------- | --------------------------------------------------------------------------- |
-| имя рецепта | String                                                              | название рецепта                                                            |
-| вывод       | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)   | output [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)    |
-| input       | [crafttweaker.api.item.IIngredient](/vanilla/api/items/IIngredient) | вводите [crafttweaker.api.item.IIngredient](/vanilla/api/items/IIngredient) |
+| Параметр   | Тип                                                                 | Description                                                                 |
+| ---------- | ------------------------------------------------------------------- | --------------------------------------------------------------------------- |
+| recipeName | String                                                              | name of the recipe                                                          |
+| output     | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)   | output [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)    |
+| input      | [crafttweaker.api.item.IIngredient](/vanilla/api/items/IIngredient) | вводите [crafttweaker.api.item.IIngredient](/vanilla/api/items/IIngredient) |
 
 
 ### getRecipeByName
@@ -55,9 +55,9 @@ stoneCutter.addRecipe("recipe_name", <item:minecraft:grass>, <tag:minecraft:wool
 stoneCutter.getRecipeByName(название в качестве строки);
 ```
 
-| Параметр | Тип    | Описание             |
+| Параметр | Тип    | Description          |
 | -------- | ------ | -------------------- |
-| имя      | String | Описание отсутствует |
+| name     | String | Описание отсутствует |
 
 
 ### getRecipesByFrom
@@ -68,31 +68,31 @@ stoneCutter.getRecipeByName(название в качестве строки);
 stoneCutter.getRecipesByOutput(вывод как crafttweaker.api.item.IIngredient);
 ```
 
-| Параметр | Тип                                                                 | Описание             |
+| Параметр | Тип                                                                 | Description          |
 | -------- | ------------------------------------------------------------------- | -------------------- |
-| вывод    | [crafttweaker.api.item.IIngredient](/vanilla/api/items/IIngredient) | Описание отсутствует |
+| output   | [crafttweaker.api.item.IIngredient](/vanilla/api/items/IIngredient) | Описание отсутствует |
 
 
-### удалить все
+### removeAll
 
-Удалить все рецепты в реестре
+Remove all recipes in this registry
 
 ```zenscript
 stoneCutter.removeAll();
 ```
 
-### удалил Modid
+### removeByModid
 
-Удалить рецепт на основе модификации имени реестра
+Remove recipe based on Registry name modid
 
 ```zenscript
 stoneCutter.removeByModid(modid as String);
 stoneCutter.removeByModid("minecraft");
 ```
 
-| Параметр | Тип    | Описание                  |
-| -------- | ------ | ------------------------- |
-| мод      | String | мод рецептов для удаления |
+| Параметр | Тип    | Description                    |
+| -------- | ------ | ------------------------------ |
+| modid    | String | modid of the recipes to remove |
 
 
 
@@ -103,58 +103,58 @@ stoneCutter.removeByModid(modid as String, exclude as crafttweaker.api.recipe.Re
 stoneCutter.removeByModid("minecraft", (название как строка) => {return name == "orange_wool";});
 ```
 
-| Параметр  | Тип                                                                      | Описание                            |
+| Параметр  | Тип                                                                      | Description                         |
 | --------- | ------------------------------------------------------------------------ | ----------------------------------- |
-| мод       | String                                                                   | мод рецептов для удаления           |
+| modid     | String                                                                   | modid of the recipes to remove      |
 | исключить | [crafttweaker.api.recipe.RecipeFilter](/vanilla/api/recipe/RecipeFilter) | рецепты для exlude от быть удалены. |
 
 
 ### removeByName
 
-Удалить рецепт на основе названия реестра
+Remove recipe based on Registry name
 
 ```zenscript
-stoneCutter.removeByName(название как строка);
+stoneCutter.removeByName(name as String);
 stoneCutter.removeByName("minecraft:furnace");
 ```
 
-| Параметр | Тип    | Описание                 |
-| -------- | ------ | ------------------------ |
-| имя      | String | имя реестра для удаления |
+| Параметр | Тип    | Description                       |
+| -------- | ------ | --------------------------------- |
+| name     | String | registry name of recipe to remove |
 
 
 ### removeByRegex
 
-Удалить рецепт, основанный на регулярном выражении
+Remove recipe based on regex
 
 ```zenscript
-stoneCutter.removeByRegex(регулярные в виде строки);
+stoneCutter.removeByRegex(regex as String);
 stoneCutter.removeByRegex("\\d_\\d");
 ```
 
-| Параметр   | Тип    | Описание                 |
-| ---------- | ------ | ------------------------ |
-| регулярные | String | выражать до совпадения с |
+| Параметр | Тип    | Description            |
+| -------- | ------ | ---------------------- |
+| regex    | String | regex to match against |
 
 
-### удалить рецепт
+### removeRecipe
 
-Удалите рецепт, основанный на его результате.
+Remove a recipe based on it's output.
 
 ```zenscript
-stoneCutter.removeRecipe(вывод как crafttweaker.api.item.IItemStack);
+stoneCutter.removeRecipe(output as crafttweaker.api.item.IItemStack);
 stoneCutter.removeRecipe(<item:minecraft:glass>);
 ```
 
-| Параметр | Тип                                                               | Описание      |
-| -------- | ----------------------------------------------------------------- | ------------- |
-| вывод    | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | вывод рецепта |
+| Параметр | Тип                                                               | Description          |
+| -------- | ----------------------------------------------------------------- | -------------------- |
+| output   | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | output of the recipe |
 
 
 
 ## Свойства
 
-| Название         | Тип    | Имеет Getter | Имеет Setter |
-| ---------------- | ------ | ------------ | ------------ |
-| командная строка | String | true         | false        |
+| Название      | Тип    | Имеет Getter | Имеет Setter |
+| ------------- | ------ | ------------ | ------------ |
+| commandString | String | true         | false        |
 

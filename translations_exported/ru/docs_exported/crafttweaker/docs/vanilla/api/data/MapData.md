@@ -10,29 +10,29 @@
 crafttweaker.api.data.MapData
 ```
 
-## Реализованные интерфейсы
-MapData реализует следующие интерфейсы. Следовательно, методы из них доступны в этом классе.
+## Implemented Interfaces
+MapData implements the following interfaces. That means any method available to them can also be used on this class.
 - [crafttweaker.api.data.IData](/vanilla/api/data/IData)
 
-## Конструкторы
+## Constructors
 ```zenscript
 new crafttweaker.api.data.MapData();
 ```
 ```zenscript
-new crafttweaker.api.data.MapData(карта как crafttweaker.api.data.IData[String]);
+new crafttweaker.api.data.MapData(map as crafttweaker.api.data.IData[String]);
 ```
-| Параметр | Тип                                                            | Описание             |
+| Параметр | Тип                                                            | Description          |
 | -------- | -------------------------------------------------------------- | -------------------- |
-| карта    | [crafttweaker.api.data.IData](/vanilla/api/data/IData)[String] | Описание отсутствует |
+| map      | [crafttweaker.api.data.IData](/vanilla/api/data/IData)[String] | Описание отсутствует |
 
 
 
-## Методы
+## Methods
 ### asList
 
-возвращает список<IData> представление этого IData, возвращает null на все, кроме [crafttweaker.api.data.ListData](/vanilla/api/data/ListData).
+Gets a List<IData> representation of this IData, returns null on anything but [crafttweaker.api.data.ListData](/vanilla/api/data/ListData).
 
- Возвращается: `аннулировать, если это IData не список.`
+ Returns: `null if this IData is not a list.`
 
 Тип возврата: Список&lt;[crafttweaker.api.data.IData](/vanilla/api/data/IData)&gt;
 
@@ -42,9 +42,9 @@ myMapData.asList();
 
 ### asMap
 
-Получает карту<String, IData> представления этой IData, возвращает null на что-либо кроме [crafttweaker.api.data.MapData](/vanilla/api/data/MapData).
+Gets a Map<String, IData> representation of this IData, returns null on anything but [crafttweaker.api.data.MapData](/vanilla/api/data/MapData).
 
- Возвращается: `нулево, если этот IData не является картой.`
+ Returns: `null if this IData is not a map.`
 
 Возврат типа: [crafttweaker.api.data.IData](/vanilla/api/data/IData)[String]
 
@@ -54,11 +54,11 @@ myMapData.asMap();
 
 ### asString
 
-Получает строку представления этой IData
+Gets the String representation of this IData
 
- Возвращается: `Строка, которая представляет этот IData (значение и тип).`
+ Returns: `String that represents this IData (value and type).`
 
-Тип возврата: строка
+Return type: String
 
 ```zenscript
 myMapData.asString();
@@ -66,46 +66,46 @@ myMapData.asString();
 
 ### contains
 
-Проверяет, содержит ли карта заданный ключ.
+Checks if the Map contains the given key.
 
  Возвращается: `Верно, если карта содержит ключ`
 
-Тип возврата: логическое значение
+Return type: boolean
 
 ```zenscript
 myMapData.contains(key as String);
 myMapData.contains("Hello");
 ```
 
-| Параметр | Тип    | Описание        |
-| -------- | ------ | --------------- |
-| ключ     | String | Ключ для поиска |
+| Параметр | Тип    | Description           |
+| -------- | ------ | --------------------- |
+| key      | String | The key to search for |
 
 
 
-Проверяет, содержит ли этот IData другую IData, в основном используется в подклассах [crafttweaker. pi.data.ICollectionData](/vanilla/api/data/ICollectionData)— это то же самое, что и проверка на другие типы IData
+Checks if this IData contains another IData, mainly used in subclasses of [crafttweaker.api.data.ICollectionData](/vanilla/api/data/ICollectionData), is the same as an equals check on other IData types
 
  Возвращается: `истина, если указанная IData содержится в этой IData`
 
-Тип возврата: логическое значение
+Return type: boolean
 
 ```zenscript
 myMapData.contains(данные как crafttweaker.api.data.IData);
 myMapData.contains("Отображать");
 ```
 
-| Параметр | Тип                                                    | Описание                    |
-| -------- | ------------------------------------------------------ | --------------------------- |
-| data     | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | для проверки наличия данных |
+| Параметр | Тип                                                    | Description                      |
+| -------- | ------------------------------------------------------ | -------------------------------- |
+| data     | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | data to check if it is contained |
 
 
 ### copy
 
-Создает копию этой IData.
+Makes a copy of this IData.
 
- По умолчанию IData неизменяемая, используйте это для создания соответствующей копии объекта.
+ IData is immutable by default, use this to create a proper copy of the object.
 
- Возвращается: `копия IData.`
+ Returns: `a copy of this IData.`
 
 Тип возврата: [crafttweaker.api.data.IData](/vanilla/api/data/IData)
 
@@ -113,31 +113,31 @@ myMapData.contains("Отображать");
 myMapData.copy();
 ```
 
-### получить
+### get
 
-Получает значение, связанное с ключом
+Retrieves the value associated with the key
 
  Возвращается: `Значение, если существует, null иначе`
 
 Тип возврата: [crafttweaker.api.data.IData](/vanilla/api/data/IData)
 
 ```zenscript
-myMapData.get(ключ как String);
+myMapData.get(key as String);
 myMapData.get("Hello");
 ```
 
-| Параметр | Тип    | Описание        |
-| -------- | ------ | --------------- |
-| ключ     | String | Ключ для поиска |
+| Параметр | Тип    | Description           |
+| -------- | ------ | --------------------- |
+| key      | String | The key to search for |
 
 
 ### getId
 
-Получает идентификатор внутреннего NBT тега.
+Gets the ID of the internal NBT tag.
 
- Используется для определения того, какой тип NBT хранится (например, списк)
+ Used to determine what NBT type is stored (in a list for example)
 
- Возвращается: `ID NBT тега, который представляет эти данные.`
+ Returns: `ID of the NBT tag that this data represents.`
 
 Тип возврата: байт
 
@@ -147,79 +147,79 @@ myMapData.getId();
 
 ### getString
 
-Получает строку внутреннего INBT тэга
+Gets the String representation of the internal INBT tag
 
- Возвращается: `Строка, представляющая внутренний INBT этого IData.`
+ Returns: `String that represents the internal INBT of this IData.`
 
-Тип возврата: строка
+Return type: String
 
 ```zenscript
 myMapData.getString();
 ```
 
-### слияние
+### merge
 
-Объединить эту карту и другую карту. Если записи с этой карты и с другой карты разделяются, значения пытаются. Если это не сработало, то используется значение с другой карты.
+Merges this map and the other map. If entries from this map and the other map share the values are tried to be merged. If that does not work, then the value from the other map is used.
 
  Возвращается: `Эта карта после слияния`
 
 Возврат типа: [crafttweaker.api.data.MapData](/vanilla/api/data/MapData)
 
 ```zenscript
-myMapData.merge(другие как crafttweaker.api.data.MapData);
+myMapData.merge(other as crafttweaker.api.data.MapData);
 myMapData.merge({Doodle: "Do});
 ```
 
-| Параметр | Тип                                                        | Описание      |
-| -------- | ---------------------------------------------------------- | ------------- |
-| другой   | [crafttweaker.api.data.MapData](/vanilla/api/data/MapData) | Другая карта. |
+| Параметр | Тип                                                        | Description    |
+| -------- | ---------------------------------------------------------- | -------------- |
+| other    | [crafttweaker.api.data.MapData](/vanilla/api/data/MapData) | The other map. |
 
 
-### положить
+### put
 
-Добавляет значение для заданного ключа или создает новую запись, если она не существовала ранее.
+Adds sets the value for the given key or creates a new entry if it did not exist before.
 
  Возвращается: `Предыдущее значение, если существует, null иначе`
 
 Тип возврата: [crafttweaker.api.data.IData](/vanilla/api/data/IData)
 
 ```zenscript
-myMapData.put(ключ как строка, значение как crafttweaker.api.data.IData);
-myMapData.put("Привет", "Хорошо");
+myMapData.put(key as String, value as crafttweaker.api.data.IData);
+myMapData.put("Hello", "Goodbye");
 ```
 
-| Параметр | Тип                                                    | Описание                   |
-| -------- | ------------------------------------------------------ | -------------------------- |
-| ключ     | String                                                 | Ключ для задания значения. |
-| value    | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | Значение для установки.    |
+| Параметр | Тип                                                    | Description                   |
+| -------- | ------------------------------------------------------ | ----------------------------- |
+| key      | String                                                 | The key to set the value for. |
+| value    | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | The value to set.             |
 
 
 ### putAll
 
-Добавляет в эту карту все записи из заданной карты. Может переопределить существующие ключи.
+Adds all entries from the given map into this one. Can override existing keys.
 
 ```zenscript
 myMapData.putAll(map as crafttweaker.api.data.IData[String]);
 myMapData.putAll({Hello: "Goodbye", Item: "Bedrock"});
 ```
 
-| Параметр | Тип                                                            | Описание                                  |
+| Параметр | Тип                                                            | Description                               |
 | -------- | -------------------------------------------------------------- | ----------------------------------------- |
-| карта    | [crafttweaker.api.data.IData](/vanilla/api/data/IData)[String] | Другие записи для добавления на эту карту |
+| map      | [crafttweaker.api.data.IData](/vanilla/api/data/IData)[String] | The other entries to be added to this map |
 
 
-### удалить
+### remove
 
-Удаляет запись с заданного ключа с карты
+Removes the entry with the given key from the Map
 
 ```zenscript
-myMapData.remove(ключ как String);
-myMapData.remove("Гнего");
+myMapData.remove(key as String);
+myMapData.remove("Somewhere");
 ```
 
-| Параметр | Тип    | Описание                 |
-| -------- | ------ | ------------------------ |
-| ключ     | String | Ключ для удаления записи |
+| Параметр | Тип    | Description                    |
+| -------- | ------ | ------------------------------ |
+| key      | String | The key of the entry to remove |
 
 
 
@@ -234,13 +234,13 @@ myMapData.remove("Гнего");
 ## Операторы
 ### ADD
 
-Добавляет все записи из заданного IData в эту запись
+Adds all entries from the given IData to this entry
 
 ```zenscript
-myMapData + данные как crafttweaker.api.data.IData
+myMapData + data as crafttweaker.api.data.IData
 ```
 
-| Параметр | Тип                                                    | Описание             |
+| Параметр | Тип                                                    | Description          |
 | -------- | ------------------------------------------------------ | -------------------- |
 | data     | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | Описание отсутствует |
 

@@ -1,14 +1,14 @@
 # MCStringRange
 
-Cette classe a été ajoutée par un mod avec le mod-id `crafttweaker`. Vous devez donc avoir ce mod installé si vous voulez utiliser cette fonctionnalité.
+This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
 
-## Importation de la classe
-Il pourrait vous être nécessaire d'importer le paquet si vous rencontrez des problèmes (comme lancer un tableau), alors mieux être sûr que désolé et ajouter l'importation.
+## Importing the class
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
 ```zenscript
 crafttweaker.api.commands.custom.MCStringRange
 ```
 
-## Méthodes
+## Methods
 ### à
 
 Type de retour : [crafttweaker.api.commands.custom.MCStringRange](/vanilla/api/commands/custom/MCStringRange)
@@ -17,9 +17,9 @@ Type de retour : [crafttweaker.api.commands.custom.MCStringRange](/vanilla/api/c
 crafttweaker.api.commands.custom.MCStringRange.at(pos as int);
 ```
 
-| Paramètre | Type de texte | Libellé                    |
-| --------- | ------------- | -------------------------- |
-| pos       | Indice        | Aucune description fournie |
+| Parameter | Type | Description             |
+| --------- | ---- | ----------------------- |
+| pos       | int  | No description provided |
 
 
 ### entre
@@ -30,10 +30,10 @@ Type de retour : [crafttweaker.api.commands.custom.MCStringRange](/vanilla/api/c
 crafttweaker.api.commands.custom.MCStringRange.between(start as int, end as int);
 ```
 
-| Paramètre | Type de texte | Libellé                    |
-| --------- | ------------- | -------------------------- |
-| Début     | Indice        | Aucune description fournie |
-| fin       | Indice        | Aucune description fournie |
+| Parameter | Type | Description             |
+| --------- | ---- | ----------------------- |
+| Début     | int  | No description provided |
+| fin       | int  | No description provided |
 
 
 ### englobant
@@ -44,53 +44,53 @@ Type de retour : [crafttweaker.api.commands.custom.MCStringRange](/vanilla/api/c
 crafttweaker.api.commands.custom.MCStringRange.encompassing(a as crafttweaker.api.commands.custom.MCStringRange, b as crafttweaker.api.commands.custom.MCStringRange);
 ```
 
-| Paramètre | Type de texte                                                                                | Libellé                    |
-| --------- | -------------------------------------------------------------------------------------------- | -------------------------- |
-| a         | [crafttweaker.api.commands.custom.MCStringRange](/vanilla/api/commands/custom/MCStringRange) | Aucune description fournie |
-| b         | [crafttweaker.api.commands.custom.MCStringRange](/vanilla/api/commands/custom/MCStringRange) | Aucune description fournie |
+| Parameter | Type                                                                                         | Description             |
+| --------- | -------------------------------------------------------------------------------------------- | ----------------------- |
+| a         | [crafttweaker.api.commands.custom.MCStringRange](/vanilla/api/commands/custom/MCStringRange) | No description provided |
+| b         | [crafttweaker.api.commands.custom.MCStringRange](/vanilla/api/commands/custom/MCStringRange) | No description provided |
 
 
-### est égal à
+### equals
 
-Type de retour: booléen
+Return type: boolean
 
 ```zenscript
 myMCStringRange.equals(o en tant qu'objet);
 ```
 
-| Paramètre | Type de texte | Libellé                    |
-| --------- | ------------- | -------------------------- |
-| o         | Objet         | Aucune description fournie |
+| Parameter | Type   | Description             |
+| --------- | ------ | ----------------------- |
+| o         | Object | No description provided |
 
 
-### obtenir
+### get
 
-Type de retour: chaîne de caractères
+Return type: String
 
 ```zenscript
 myMCStringRange.get(string as String);
 ```
 
-| Paramètre            | Type de texte        | Libellé                    |
-| -------------------- | -------------------- | -------------------------- |
-| chaîne de caractères | Chaîne de caractères | Aucune description fournie |
+| Parameter | Type   | Description             |
+| --------- | ------ | ----------------------- |
+| string    | String | No description provided |
 
 
 
-Type de retour: chaîne de caractères
+Return type: String
 
 ```zenscript
 myMCStringRange.get(reader as crafttweaker.api.commands.custom.MCImmutableStringReader);
 ```
 
-| Paramètre | Type de texte                                                                                                    | Libellé                    |
-| --------- | ---------------------------------------------------------------------------------------------------------------- | -------------------------- |
-| lecteur   | [crafttweaker.api.commands.custom.MCImmutableStringReader](/vanilla/api/commands/custom/MCImmutableStringReader) | Aucune description fournie |
+| Parameter | Type                                                                                                             | Description             |
+| --------- | ---------------------------------------------------------------------------------------------------------------- | ----------------------- |
+| lecteur   | [crafttweaker.api.commands.custom.MCImmutableStringReader](/vanilla/api/commands/custom/MCImmutableStringReader) | No description provided |
 
 
 ### getEnd
 
-Type de retour: int
+Return type: int
 
 ```zenscript
 myMCStringRange.getEnd();
@@ -98,7 +98,7 @@ myMCStringRange.getEnd();
 
 ### getLength
 
-Type de retour: int
+Return type: int
 
 ```zenscript
 myMCStringRange.getLength();
@@ -106,7 +106,7 @@ myMCStringRange.getLength();
 
 ### getStart
 
-Type de retour: int
+Return type: int
 
 ```zenscript
 myMCStringRange.getStart();
@@ -114,7 +114,7 @@ myMCStringRange.getStart();
 
 ### hashCode
 
-Type de retour: int
+Return type: int
 
 ```zenscript
 myMCStringRange.hashCode();
@@ -122,7 +122,7 @@ myMCStringRange.hashCode();
 
 ### isEmpty
 
-Type de retour: booléen
+Return type: boolean
 
 ```zenscript
 myMCStringRange.isEmpty();
@@ -130,7 +130,7 @@ myMCStringRange.isEmpty();
 
 ### toString
 
-Type de retour: chaîne de caractères
+Return type: String
 
 ```zenscript
 myMCStringRange.toString();

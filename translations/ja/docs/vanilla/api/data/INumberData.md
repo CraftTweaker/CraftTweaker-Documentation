@@ -1,27 +1,27 @@
 # INumberData
 
-[crafttweaker.api.data.IData](/vanilla/api/data/IData)の形式の数値を表します。型間の変換に便利です (例えば double から int / long など)。
+Represents a Number in the form of an [crafttweaker.api.data.IData](/vanilla/api/data/IData), useful for converting between types (double to int / long for example).
 
-crafttweakerのmod-idを持つmodによって追加されているクラスです。 従って、この機能を利用する場合はこのmodをインストールする必要があります。
+This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
 
-## クラスのインポート
-問題が発生した場合には、インポートが必要になります。とはいえ、お手数ですが予めインポートしておくほうが安全です。
+## Importing the class
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
 ```zenscript
 crafttweaker.api.data.INumberData
 ```
 
-## 実装されたインターフェース
-INumberData は、以下のインターフェイスを実装しています。 つまり、利用可能な任意のメソッドはこのクラスでも使用できます。
+## Implemented Interfaces
+INumberData implements the following interfaces. That means any method available to them can also be used on this class.
 - [crafttweaker.api.data.IData](/vanilla/api/data/IData)
 
-## メソッド
+## Methods
 ### asList
 
-リストを取得<IData> この IData の表現は、 [crafttweaker.api.data.ListData](/vanilla/api/data/ListData) 以外の場合は null を返します。
+Gets a List<IData> representation of this IData, returns null on anything but [crafttweaker.api.data.ListData](/vanilla/api/data/ListData).
 
- 戻り値: `この IData がリストでない場合は null です。`
+ Returns: `null if this IData is not a list.`
 
-戻り値 List<[crafttweaker.api.data.IData](/vanilla/api/data/IData)>
+Returns List<[crafttweaker.api.data.IData](/vanilla/api/data/IData)>
 
 ```zenscript
 1.asList();
@@ -29,11 +29,11 @@ INumberData は、以下のインターフェイスを実装しています。 �
 
 ### asMap
 
-この IData のマップ<String, IData> 表現を取得します。 [crafttweaker.api.data.MapData](/vanilla/api/data/MapData) 以外の場合は null を返します。
+Gets a Map<String, IData> representation of this IData, returns null on anything but [crafttweaker.api.data.MapData](/vanilla/api/data/MapData).
 
- 戻り値: `この IData がマップでない場合は null です。`
+ Returns: `null if this IData is not a map.`
 
-戻り値 [crafttweaker.api.data.IData](/vanilla/api/data/IData)[String]
+Returns [crafttweaker.api.data.IData](/vanilla/api/data/IData)[String]
 
 ```zenscript
 1.asMap();
@@ -41,41 +41,41 @@ INumberData は、以下のインターフェイスを実装しています。 �
 
 ### asString
 
-この IData の文字列表現を取得します
+Gets the String representation of this IData
 
- 戻り値: `この IData (値と型) を表す文字列。`
+ Returns: `String that represents this IData (value and type).`
 
-戻り値の文字列
+Returns String
 
 ```zenscript
 1.asString();
 ```
 
-### を含む
+### contains
 
 Checks if this IData contains another IData, mainly used in subclasses of [crafttweaker.api.data.ICollectionData](/vanilla/api/data/ICollectionData), is the same as an equals check on other IData types
 
-戻り値ブール値
+Returns boolean
 
 ```zenscript
 1.contains(data as crafttweaker.api.data.IData);
 1.contains("Display");
 ```
 
-| パラメータ | タイプ                                                    | 説明                    |
-| ----- | ------------------------------------------------------ | --------------------- |
-| データ   | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | それが含まれているかどうかを確認するデータ |
+| Parameter | Type                                                   | Description                      |
+| --------- | ------------------------------------------------------ | -------------------------------- |
+| data      | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | data to check if it is contained |
 
 
-### コピー
+### copy
 
-このIDataのコピーを作成します。
+Makes a copy of this IData.
 
- IData はデフォルトで変更不能です。これを使用してオブジェクトの適切なコピーを作成します。
+ IData is immutable by default, use this to create a proper copy of the object.
 
- 戻り値: `この IData のコピー`
+ Returns: `a copy of this IData.`
 
-戻り値 [crafttweaker.api.data.IData](/vanilla/api/data/IData)
+Returns [crafttweaker.api.data.IData](/vanilla/api/data/IData)
 
 ```zenscript
 1.copy();
@@ -83,13 +83,13 @@ Checks if this IData contains another IData, mainly used in subclasses of [craft
 
 ### getId
 
-内部 NBT タグの ID を取得します。
+Gets the ID of the internal NBT tag.
 
- どの種類の NBT が格納されているかを決定するために使用されます(例えばリスト)
+ Used to determine what NBT type is stored (in a list for example)
 
- 戻り値: `このデータが表現する NBT タグの ID。`
+ Returns: `ID of the NBT tag that this data represents.`
 
-バイトを返します
+Returns byte
 
 ```zenscript
 1.getId();
@@ -97,11 +97,11 @@ Checks if this IData contains another IData, mainly used in subclasses of [craft
 
 ### getString
 
-内部 INBT タグの文字列表現を取得します。
+Gets the String representation of the internal INBT tag
 
- 戻り値: `この IData の内部 INBT を表す文字列。`
+ Returns: `String that represents the internal INBT of this IData.`
 
-戻り値の文字列
+Returns String
 
 ```zenscript
 1.getString();

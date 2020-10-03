@@ -8,17 +8,17 @@
 crafttweaker.api.commands.custom.MCRedirectModifier
 ```
 
-## Конструкторы
+## Constructors
 ```zenscript
 new crafttweaker.api.commands.custom.MCRedirectModifier(fun as function.Function<crafttweaker.api.commands.custom.MCCommandContext, Collection<crafttweaker.api.commands.custom.MCCommandSource>>);
 ```
-| Параметр | Тип                                                                                                                                                                                                                                                                     | Описание             |
+| Параметр | Тип                                                                                                                                                                                                                                                                     | Description          |
 | -------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------- |
 | весело   | function.Function&lt;[crafttweaker.api.commands.custom.MCCommandContext](/vanilla/api/commands/custom/MCCommandContext), Collection&lt;[crafttweaker.api.commands.custom.MCCommandSource](/vanilla/api/commands/custom/MCCommandSource)&gt;&gt; | Описание отсутствует |
 
 
 
-## Методы
+## Methods
 ### применить
 
 Тип возврата: Коллекция&lt;[crafttweaker.api.commands.custom.MCCommandSource](/vanilla/api/commands/custom/MCCommandSource)&gt;
@@ -27,27 +27,27 @@ new crafttweaker.api.commands.custom.MCRedirectModifier(fun as function.Function
 myMCRedirectModifier.apply(context as crafttweaker.api.commands.custom.MCCommandContext);
 ```
 
-| Параметр | Тип                                                                                                | Описание             |
+| Параметр | Тип                                                                                                | Description          |
 | -------- | -------------------------------------------------------------------------------------------------- | -------------------- |
 | контекст | [crafttweaker.api.commands.custom.MCCommandContext](/vanilla/api/commands/custom/MCCommandContext) | Описание отсутствует |
 
 
-### равно
+### equals
 
-Тип возврата: логическое значение
+Return type: boolean
 
 ```zenscript
 myMCRedirectModifier.equals(o как объект);
 ```
 
-| Параметр | Тип    | Описание             |
+| Параметр | Тип    | Description          |
 | -------- | ------ | -------------------- |
-| о        | Объект | Описание отсутствует |
+| o        | Object | Описание отсутствует |
 
 
 ### hashCode
 
-Тип возврата: int
+Return type: int
 
 ```zenscript
 myMCRedirectModifier.hashCode();
@@ -55,7 +55,7 @@ myMCRedirectModifier.hashCode();
 
 ### toString
 
-Тип возврата: строка
+Return type: String
 
 ```zenscript
 myMCRedirectModifier.toString();
@@ -69,9 +69,9 @@ myMCRedirectModifier.toString();
 myMCRedirectModifier == o как объект
 ```
 
-| Параметр | Тип    | Описание             |
+| Параметр | Тип    | Description          |
 | -------- | ------ | -------------------- |
-| о        | Объект | Описание отсутствует |
+| o        | Object | Описание отсутствует |
 
 ## Утилиты
 

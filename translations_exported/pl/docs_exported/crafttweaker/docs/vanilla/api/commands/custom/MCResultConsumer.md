@@ -1,31 +1,31 @@
 # MCResultKonsument
 
-Ta klasa została dodana przez moda z mod-id `crafttweaker`. Więc musisz zainstalować tę modyfikację, jeśli chcesz używać tej funkcji.
+This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
 
-## Importowanie klasy
-Może być wymagane zaimportowanie pakietu, jeśli napotkasz jakiekolwiek problemy (np. rzucanie tablicy), tak aby były bezpieczne niż przepraszamy i dodaj import.
+## Importing the class
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
 ```zenscript
 crafttweaker.api.commands.custom.MCResultConsumer
 ```
 
-## Interfejs funkcjonalny
+## Functional Interface
 
-Ta klasa jest funkcjonalnym interfejsem. Oznacza to, że możesz użyć notacji lambda do utworzenia instancji. Adnotacja lambda wygląda jako:
+This class is a functional interface. This means that you can use the lambda notation to create an instance of it. The lambda notation looks like:
 ```zenscript
 (CommContext, sukces, wynik) =>{}
 ```
-## Metody
+## Methods
 ### onCommandcomplete
 
 ```zenscript
 myMCResultConsumer.onCommandComplete(komenda jako crafttweaker.api.commands.custom.MCCommandContext, udany jako logiczny, wynik jako int);
 ```
 
-| Parametr         | Typ                                                                                                | Opis             |
-| ---------------- | -------------------------------------------------------------------------------------------------- | ---------------- |
-| Kontekst komendy | [crafttweaker.api.commands.custom.MCCommandContext](/vanilla/api/commands/custom/MCCommandContext) | Nie podano opisu |
-| sukces           | boolean                                                                                            | Nie podano opisu |
-| wynik            | odcień                                                                                             | Nie podano opisu |
+| Parameter        | Type                                                                                               | Description             |
+| ---------------- | -------------------------------------------------------------------------------------------------- | ----------------------- |
+| Kontekst komendy | [crafttweaker.api.commands.custom.MCCommandContext](/vanilla/api/commands/custom/MCCommandContext) | No description provided |
+| success          | boolean                                                                                            | No description provided |
+| result           | int                                                                                                | No description provided |
 
 
 

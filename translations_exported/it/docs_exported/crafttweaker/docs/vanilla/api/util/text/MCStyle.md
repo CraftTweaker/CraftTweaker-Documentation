@@ -2,34 +2,34 @@
 
 Questa classe è stata aggiunta da una mod con ID `crafttweaker`. Perciò, è necessario avere questa mod installata per poter utilizzare questa funzione.
 
-## Importare la classe
+## Importing the class
 Potrebbe essere necessario importare il pacchetto, se si incontrano dei problemi (come castare un vettore), quindi meglio essere sicuri e aggiungere la direttiva di importazione.
 ```zenscript
 crafttweaker.api.util.text.MCStyle
 ```
 
-## Costruttori
+## Constructors
 ```zenscript
 new crafttweaker.api.util.text.MCStyle();
 ```
 
-## Metodi
-### uguale
+## Methods
+### equals
 
-Tipo restituito: booleano
+Return type: boolean
 
 ```zenscript
 myMCStyle.equals(altro come oggetto);
 ```
 
-| Parametro | Tipo    | Descrizione                 |
-| --------- | ------- | --------------------------- |
-| altri     | Oggetto | Nessuna descrizione fornita |
+| Parameter | Type   | Description                 |
+| --------- | ------ | --------------------------- |
+| other     | Object | Nessuna descrizione fornita |
 
 
 ### getBold
 
-Tipo restituito: booleano
+Return type: boolean
 
 ```zenscript
 myMCStyle.getBold();
@@ -45,7 +45,7 @@ myMCStyle.getFontId();
 
 ### getInserzione
 
-Tipo di ritorno: Stringa
+Return type: String
 
 ```zenscript
 myMCStyle.getInsertion();
@@ -53,7 +53,7 @@ myMCStyle.getInsertion();
 
 ### getItalic
 
-Tipo restituito: booleano
+Return type: boolean
 
 ```zenscript
 myMCStyle.getItalic();
@@ -61,7 +61,7 @@ myMCStyle.getItalic();
 
 ### getObfuscated
 
-Tipo restituito: booleano
+Return type: boolean
 
 ```zenscript
 myMCStyle.getObfuscated();
@@ -69,7 +69,7 @@ myMCStyle.getObfuscated();
 
 ### getStrikethrough
 
-Tipo restituito: booleano
+Return type: boolean
 
 ```zenscript
 myMCStyle.getStrikethrough();
@@ -77,7 +77,7 @@ myMCStyle.getStrikethrough();
 
 ### ottoSottolineato
 
-Tipo restituito: booleano
+Return type: boolean
 
 ```zenscript
 myMCStyle.getUnderlined();
@@ -85,7 +85,7 @@ myMCStyle.getUnderlined();
 
 ### hashCode
 
-Tipo di restituzione: int
+Return type: int
 
 ```zenscript
 myMCStyle.hashCode();
@@ -95,7 +95,7 @@ myMCStyle.hashCode();
 
 Se questo stile è vuoto (eredita tutto dal genitore).
 
-Tipo restituito: booleano
+Return type: boolean
 
 ```zenscript
 myMCStyle.isEmpty();
@@ -109,7 +109,7 @@ Tipo di restituzione: [crafttweaker.api.util.text.MCStyle](/vanilla/api/util/tex
 myMCStyle.mergeStyle(stile come crafttweaker.api.util.text.MCStyle);
 ```
 
-| Parametro | Tipo                                                                 | Descrizione                 |
+| Parameter | Type                                                                 | Description                 |
 | --------- | -------------------------------------------------------------------- | --------------------------- |
 | stile     | [crafttweaker.api.util.text.MCStyle](/vanilla/api/util/text/MCStyle) | Nessuna descrizione fornita |
 
@@ -122,7 +122,7 @@ Tipo di restituzione: [crafttweaker.api.util.text.MCStyle](/vanilla/api/util/tex
 myMCStyle.setBold(boldIn come Boolean);
 ```
 
-| Parametro | Tipo    | Descrizione                 |
+| Parameter | Type    | Description                 |
 | --------- | ------- | --------------------------- |
 | boldIn    | Boolean | Nessuna descrizione fornita |
 
@@ -135,7 +135,7 @@ Tipo di restituzione: [crafttweaker.api.util.text.MCStyle](/vanilla/api/util/tex
 myMCStyle.setColor(formattazione come crafttweaker.api.text.TextFormatting);
 ```
 
-| Parametro     | Tipo                                                                          | Descrizione                 |
+| Parameter     | Type                                                                          | Description                 |
 | ------------- | ----------------------------------------------------------------------------- | --------------------------- |
 | formattazione | [crafttweaker.api.text.TextFormatting](/crafttweaker/api/text/TextFormatting) | Nessuna descrizione fornita |
 
@@ -147,7 +147,7 @@ Tipo di restituzione: [crafttweaker.api.util.text.MCStyle](/vanilla/api/util/tex
 myMCStyle.setColor(colore come int);
 ```
 
-| Parametro | Tipo | Descrizione                 |
+| Parameter | Type | Description                 |
 | --------- | ---- | --------------------------- |
 | colore    | int  | Nessuna descrizione fornita |
 
@@ -160,7 +160,7 @@ Tipo di restituzione: [crafttweaker.api.util.text.MCStyle](/vanilla/api/util/tex
 myMCStyle.setFontId(posizione come crafttweaker.api.util.MCResourceLocation);
 ```
 
-| Parametro | Tipo                                                                             | Descrizione                 |
+| Parameter | Type                                                                             | Description                 |
 | --------- | -------------------------------------------------------------------------------- | --------------------------- |
 | posizione | [crafttweaker.api.util.MCResourceLocation](/vanilla/api/util/MCResourceLocation) | Nessuna descrizione fornita |
 
@@ -173,7 +173,7 @@ Tipo di restituzione: [crafttweaker.api.util.text.MCStyle](/vanilla/api/util/tex
 myMCStyle.setFormatting(formattazione come crafttweaker.api.text.TextFormatting);
 ```
 
-| Parametro     | Tipo                                                                          | Descrizione                 |
+| Parameter     | Type                                                                          | Description                 |
 | ------------- | ----------------------------------------------------------------------------- | --------------------------- |
 | formattazione | [crafttweaker.api.text.TextFormatting](/crafttweaker/api/text/TextFormatting) | Nessuna descrizione fornita |
 
@@ -188,9 +188,9 @@ Tipo di restituzione: [crafttweaker.api.util.text.MCStyle](/vanilla/api/util/tex
 myMCStyle.setInsertion(inserzione come stringa);
 ```
 
-| Parametro   | Tipo    | Descrizione                 |
-| ----------- | ------- | --------------------------- |
-| inserimento | Stringa | Nessuna descrizione fornita |
+| Parameter   | Type   | Description                 |
+| ----------- | ------ | --------------------------- |
+| inserimento | String | Nessuna descrizione fornita |
 
 
 ### setItalic
@@ -201,7 +201,7 @@ Tipo di restituzione: [crafttweaker.api.util.text.MCStyle](/vanilla/api/util/tex
 myMCStyle.setItalic(corsivo come Boolean);
 ```
 
-| Parametro | Tipo    | Descrizione                 |
+| Parameter | Type    | Description                 |
 | --------- | ------- | --------------------------- |
 | italic    | Boolean | Nessuna descrizione fornita |
 
@@ -214,9 +214,9 @@ Tipo di restituzione: [crafttweaker.api.util.text.MCStyle](/vanilla/api/util/tex
 myMCStyle.setObfuscated(offuscato come Boolean);
 ```
 
-| Parametro | Tipo    | Descrizione                 |
-| --------- | ------- | --------------------------- |
-| offuscato | Boolean | Nessuna descrizione fornita |
+| Parameter  | Type    | Description                 |
+| ---------- | ------- | --------------------------- |
+| obfuscated | Boolean | Nessuna descrizione fornita |
 
 
 ### setStrikethrough
@@ -227,9 +227,9 @@ Tipo di restituzione: [crafttweaker.api.util.text.MCStyle](/vanilla/api/util/tex
 myMCStyle.setStrikethrough(strikethrough come Boolean);
 ```
 
-| Parametro | Tipo    | Descrizione                 |
-| --------- | ------- | --------------------------- |
-| barrato   | Boolean | Nessuna descrizione fornita |
+| Parameter     | Type    | Description                 |
+| ------------- | ------- | --------------------------- |
+| strikethrough | Boolean | Nessuna descrizione fornita |
 
 
 ### setSottolineato
@@ -240,7 +240,7 @@ Tipo di restituzione: [crafttweaker.api.util.text.MCStyle](/vanilla/api/util/tex
 myMCStyle.setUnderlined(sottolineato come Boolean);
 ```
 
-| Parametro    | Tipo    | Descrizione                 |
+| Parameter    | Type    | Description                 |
 | ------------ | ------- | --------------------------- |
 | sottolineato | Boolean | Nessuna descrizione fornita |
 
@@ -252,14 +252,14 @@ Tipo di restituzione: [crafttweaker.api.util.text.MCStyle](/vanilla/api/util/tex
 myMCStyle.setUnderlined(sottolineato come boolean);
 ```
 
-| Parametro    | Tipo    | Descrizione                 |
+| Parameter    | Type    | Description                 |
 | ------------ | ------- | --------------------------- |
 | sottolineato | boolean | Nessuna descrizione fornita |
 
 
 ### toString
 
-Tipo di ritorno: Stringa
+Return type: String
 
 ```zenscript
 myMCStyle.toString();

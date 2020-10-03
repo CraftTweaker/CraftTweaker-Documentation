@@ -1,15 +1,15 @@
 # MCSuggestionsBuilder
 
-Ta klasa została dodana przez moda z mod-id `crafttweaker`. Więc musisz zainstalować tę modyfikację, jeśli chcesz używać tej funkcji.
+This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
 
-## Importowanie klasy
-Może być wymagane zaimportowanie pakietu, jeśli napotkasz jakiekolwiek problemy (np. rzucanie tablicy), tak aby były bezpieczne niż przepraszamy i dodaj import.
+## Importing the class
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
 ```zenscript
 crafttweaker.api.commands.custom.MCSuggestionsBuilder
 ```
 
-## Metody
-### dodaj
+## Methods
+### add
 
 Typ zwrotu: [crafttweaker.api.commands.custom.MCSuggestionsBuilder](/vanilla/api/commands/custom/MCSuggestionsBuilder)
 
@@ -17,12 +17,12 @@ Typ zwrotu: [crafttweaker.api.commands.custom.MCSuggestionsBuilder](/vanilla/api
 myMCSuggestionsBuilder.add(inne jak crafttweaker.api.commands.custom.MCSuggestionsBuilder);
 ```
 
-| Parametr | Typ                                                                                                        | Opis             |
-| -------- | ---------------------------------------------------------------------------------------------------------- | ---------------- |
-| inne     | [crafttweaker.api.commands.custom.MCSuggestionsBuilder](/vanilla/api/commands/custom/MCSuggestionsBuilder) | Nie podano opisu |
+| Parameter | Type                                                                                                       | Description             |
+| --------- | ---------------------------------------------------------------------------------------------------------- | ----------------------- |
+| other     | [crafttweaker.api.commands.custom.MCSuggestionsBuilder](/vanilla/api/commands/custom/MCSuggestionsBuilder) | No description provided |
 
 
-### kompilacja
+### build
 
 Typ zwrotu: [crafttweaker.api.commands.custom.MCSuggestions](/vanilla/api/commands/custom/MCSuggestions)
 
@@ -38,27 +38,27 @@ Typ zwrotu: [crafttweaker.api.commands.custom.MCSuggestionsBuilder](/vanilla/api
 myMCSuggestionsBuilder.createOffset(start as int);
 ```
 
-| Parametr | Typ    | Opis             |
-| -------- | ------ | ---------------- |
-| początek | odcień | Nie podano opisu |
+| Parameter | Type | Description             |
+| --------- | ---- | ----------------------- |
+| początek  | int  | No description provided |
 
 
-### równa się
+### equals
 
-Typ zwrotu: logiczny
+Return type: boolean
 
 ```zenscript
 myMCSuggestionsBuilder.equals(o jako obiekt);
 ```
 
-| Parametr | Typ    | Opis             |
-| -------- | ------ | ---------------- |
-| ob       | Obiekt | Nie podano opisu |
+| Parameter | Type   | Description             |
+| --------- | ------ | ----------------------- |
+| o         | Object | No description provided |
 
 
 ### getInput
 
-Typ zwrotu: Ciąg
+Return type: String
 
 ```zenscript
 myMCSuggestionsBuilder.getInput();
@@ -66,7 +66,7 @@ myMCSuggestionsBuilder.getInput();
 
 ### Pozostało
 
-Typ zwrotu: Ciąg
+Return type: String
 
 ```zenscript
 myMCSuggestionsBuilder.getRemaining();
@@ -74,7 +74,7 @@ myMCSuggestionsBuilder.getRemaining();
 
 ### getStart
 
-Typ zwrotu: int
+Return type: int
 
 ```zenscript
 myMCSuggestionsBuilder.getStart();
@@ -82,7 +82,7 @@ myMCSuggestionsBuilder.getStart();
 
 ### hashCode
 
-Typ zwrotu: int
+Return type: int
 
 ```zenscript
 myMCSuggestionsBuilder.hashCode();
@@ -104,9 +104,9 @@ Typ zwrotu: [crafttweaker.api.commands.custom.MCSuggestionsBuilder](/vanilla/api
 myMCSuggestionsBuilder.suggest(tekst jako String);
 ```
 
-| Parametr | Typ         | Opis             |
-| -------- | ----------- | ---------------- |
-| tekst    | Ciąg znaków | Nie podano opisu |
+| Parameter | Type   | Description             |
+| --------- | ------ | ----------------------- |
+| tekst     | String | No description provided |
 
 
 
@@ -116,9 +116,9 @@ Typ zwrotu: [crafttweaker.api.commands.custom.MCSuggestionsBuilder](/vanilla/api
 myMCSuggestionsBuilder.suggest(wartość jak int);
 ```
 
-| Parametr | Typ    | Opis             |
-| -------- | ------ | ---------------- |
-| wartość  | odcień | Nie podano opisu |
+| Parameter | Type | Description             |
+| --------- | ---- | ----------------------- |
+| value     | int  | No description provided |
 
 
 
@@ -128,10 +128,10 @@ Typ zwrotu: [crafttweaker.api.commands.custom.MCSuggestionsBuilder](/vanilla/api
 myMCSuggestionsBuilder.suggest(tekst jako String, tooltip jako String);
 ```
 
-| Parametr   | Typ         | Opis             |
-| ---------- | ----------- | ---------------- |
-| tekst      | Ciąg znaków | Nie podano opisu |
-| podpowiedź | Ciąg znaków | Nie podano opisu |
+| Parameter  | Type   | Description             |
+| ---------- | ------ | ----------------------- |
+| tekst      | String | No description provided |
+| podpowiedź | String | No description provided |
 
 
 
@@ -141,35 +141,35 @@ Typ zwrotu: [crafttweaker.api.commands.custom.MCSuggestionsBuilder](/vanilla/api
 myMCSuggestionsBuilder.suggest(wartość jako int, tooltip jako String);
 ```
 
-| Parametr   | Typ         | Opis             |
-| ---------- | ----------- | ---------------- |
-| wartość    | odcień      | Nie podano opisu |
-| podpowiedź | Ciąg znaków | Nie podano opisu |
+| Parameter  | Type   | Description             |
+| ---------- | ------ | ----------------------- |
+| value      | int    | No description provided |
+| podpowiedź | String | No description provided |
 
 
 ### toString
 
-Typ zwrotu: Ciąg
+Return type: String
 
 ```zenscript
 myMCSuggestionsBuilder.toString();
 ```
 
 
-## Operatorzy
-### RÓŻNE
+## Operators
+### EQUALS
 
 ```zenscript
 myMCSuggestionsBuilder == o jako obiekt
 ```
 
-| Parametr | Typ    | Opis             |
-| -------- | ------ | ---------------- |
-| ob       | Obiekt | Nie podano opisu |
+| Parameter | Type   | Description             |
+| --------- | ------ | ----------------------- |
+| o         | Object | No description provided |
 
-## Szafy na akta, szafy na kartoteki, kasety na papiery, podpórki na papiery, pojemniki na przybory do pisania, stojaki na stemple biurowe i podobne wyposażenie biurowe lub biurkowe, z metali nieszlachetnych
+## Casters
 
-| Typ wyniku  | Jest niedomniemany |
-| ----------- | ------------------ |
-| Ciąg znaków | prawda             |
+| Result type | Is Implicit |
+| ----------- | ----------- |
+| String      | true        |
 

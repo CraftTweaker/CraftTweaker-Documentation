@@ -2,7 +2,7 @@
 
 Questa classe è stata aggiunta da una mod con ID `crafttweaker`. Perciò, è necessario avere questa mod installata per poter utilizzare questa funzione.
 
-## Importare la classe
+## Importing the class
 Potrebbe essere necessario importare il pacchetto, se si incontrano dei problemi (come castare un vettore), quindi meglio essere sicuri e aggiungere la direttiva di importazione.
 ```zenscript
 crafttweaker.api.fluid.IFluidStack
@@ -12,8 +12,8 @@ crafttweaker.api.fluid.IFluidStack
 IFluidStack implementa le seguenti interfacce. Ciò significa che ogni metodo presente nell'interfaccia può essere usato anche per questa classe.
 - [crafttweaker.api.brackets.CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
 
-## Metodi
-### copia
+## Methods
+### copy
 
 Copia la pila. Necessario solo quando sono coinvolti pile mutevoli.
 
@@ -50,20 +50,20 @@ myIFluidStack.setAmount(amount as int);
 myIFluidStack.setAmount(1000);
 ```
 
-| Parametro | Tipo | Descrizione                            |
+| Parameter | Type | Description                            |
 | --------- | ---- | -------------------------------------- |
-| importo   | int  | L'importo per moltiplicare questa pila |
+| amount    | int  | L'importo per moltiplicare questa pila |
 
 
 
-## Proprietà
+## Properties
 
-| Nome          | Tipo                                                         | Ha Getter | Ha Setter |
+| Name          | Type                                                         | Ha Getter | Ha Setter |
 | ------------- | ------------------------------------------------------------ | --------- | --------- |
-| commandString | Stringa                                                      | vero      | falso     |
-| fluido        | [crafttweaker.api.fluid.MCFluid](/vanilla/api/fluid/MCFluid) | vero      | falso     |
+| commandString | String                                                       | true      | false     |
+| fluid         | [crafttweaker.api.fluid.MCFluid](/vanilla/api/fluid/MCFluid) | true      | false     |
 
-## Operatori
+## Operators
 ### MUL
 
 Imposta la quantità di fluido in MilliBuckets (MB)
@@ -75,7 +75,7 @@ myIFluidStack * amount as int
 myIFluidStack * 1000
 ```
 
-| Parametro | Tipo | Descrizione                            |
+| Parameter | Type | Description                            |
 | --------- | ---- | -------------------------------------- |
-| importo   | int  | L'importo per moltiplicare questa pila |
+| amount    | int  | L'importo per moltiplicare questa pila |
 

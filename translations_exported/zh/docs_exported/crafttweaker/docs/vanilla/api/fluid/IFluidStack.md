@@ -37,7 +37,7 @@ myIFluidStack.copy();
 myIFluidStack.mutable();
 ```
 
-### 设置金额
+### setAmount
 
 设置流体量单位为百万桶(MB)
 
@@ -50,18 +50,18 @@ myIFluidStack.setAmount(含量)；
 myIFluidStack.setAmount(1000)；
 ```
 
-| 参数 | 类型 | 描述         |
-| -- | -- | ---------- |
-| 金额 | 整数 | 要乘积这个堆栈的金额 |
+| 参数     | 类型  | 描述         |
+| ------ | --- | ---------- |
+| amount | int | 要乘积这个堆栈的金额 |
 
 
 
 ## 参数
 
-| 名称                   | 类型                                                           | 可获得  | 可设置   |
-| -------------------- | ------------------------------------------------------------ | ---- | ----- |
-| commandString #命令字符串 | 字符串[string]                                                  | true | false |
-| 流体                   | [crafttweaker.api.fluid.MCFluid](/vanilla/api/fluid/MCFluid) | true | false |
+| 名称            | 类型                                                           | 可获得  | 可设置   |
+| ------------- | ------------------------------------------------------------ | ---- | ----- |
+| commandString | String                                                       | true | false |
+| fluid         | [crafttweaker.api.fluid.MCFluid](/vanilla/api/fluid/MCFluid) | true | false |
 
 ## 运算符
 ### MUL
@@ -75,7 +75,7 @@ myIFluidStack * 金额为 int
 myIFluidStack * 1000
 ```
 
-| 参数 | 类型 | 描述         |
-| -- | -- | ---------- |
-| 金额 | 整数 | 要乘积这个堆栈的金额 |
+| 参数     | 类型  | 描述         |
+| ------ | --- | ---------- |
+| amount | int | 要乘积这个堆栈的金额 |
 

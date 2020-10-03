@@ -8,18 +8,18 @@
 crafttweaker.api.tag.MCTag
 ```
 
-## Реализованные интерфейсы
-MCTag реализует следующие интерфейсы. Следовательно, методы из них доступны в этом классе.
+## Implemented Interfaces
+MCTag implements the following interfaces. That means any method available to them can also be used on this class.
 - [crafttweaker.api.item.IIngredient](/vanilla/api/items/IIngredient)
 
-## Методы
+## Methods
 ### addBlocks
 
 ```zenscript
-myMCTag.addBlocks(блоки как crafttweaker.api.block.MCBlock[]);
+myMCTag.addBlocks(blocks as crafttweaker.api.block.MCBlock[]);
 ```
 
-| Параметр | Тип                                                             | Описание             |
+| Параметр | Тип                                                             | Description          |
 | -------- | --------------------------------------------------------------- | -------------------- |
 | blocks   | [crafttweaker.api.block.MCBlock](/vanilla/api/blocks/MCBlock)[] | Описание отсутствует |
 
@@ -27,28 +27,28 @@ myMCTag.addBlocks(блоки как crafttweaker.api.block.MCBlock[]);
 ### addEntityTypes
 
 ```zenscript
-myMCTag.addEntityTypes(сущности как crafttweaker.api.entity.MCEntityType[]);
+myMCTag.addEntityTypes(entities as crafttweaker.api.entity.MCEntityType[]);
 ```
 
-| Параметр | Тип                                                                          | Описание             |
+| Параметр | Тип                                                                          | Description          |
 | -------- | ---------------------------------------------------------------------------- | -------------------- |
 | entities | [crafttweaker.api.entity.MCEntityType](/vanilla/api/entities/MCEntityType)[] | Описание отсутствует |
 
 
-### добавить элементы
+### addItems
 
 ```zenscript
-myMCTag.addItems(предметы как crafttweaker.api.item.IItemStack[]);
+myMCTag.addItems(items as crafttweaker.api.item.IItemStack[]);
 ```
 
-| Параметр | Тип                                                                 | Описание             |
+| Параметр | Тип                                                                 | Description          |
 | -------- | ------------------------------------------------------------------- | -------------------- |
-| элементы | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)[] | Описание отсутствует |
+| items    | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)[] | Описание отсутствует |
 
 
 ### createBlockTag
 
-Возвращает [crafttweaker.api.tag.MCTag](/vanilla/api/tags/MCTag)
+Returns [crafttweaker.api.tag.MCTag](/vanilla/api/tags/MCTag)
 
 ```zenscript
 myMCTag.createBlockTag();
@@ -56,7 +56,7 @@ myMCTag.createBlockTag();
 
 ### createEntityTypeTag
 
-Возвращает [crafttweaker.api.tag.MCTag](/vanilla/api/tags/MCTag)
+Returns [crafttweaker.api.tag.MCTag](/vanilla/api/tags/MCTag)
 
 ```zenscript
 myMCTag.createEntityTypeTag();
@@ -64,86 +64,86 @@ myMCTag.createEntityTypeTag();
 
 ### createItemTag
 
-Возвращает [crafttweaker.api.tag.MCTag](/vanilla/api/tags/MCTag)
+Returns [crafttweaker.api.tag.MCTag](/vanilla/api/tags/MCTag)
 
 ```zenscript
 myMCTag.createItemTag();
 ```
 
-### получить оставшиеся предметы
+### getRemainingItem
 
-Когда создан этот ингредиент, что останется в сетке? Не проверяет, совпадает ли стек! Используется например, в net.minecraft.item.crafting.ICraftingRecipe
+When this ingredient stack is crafted, what will remain in the grid? Does not check if the stack matches though! Used e.g. in CrT's net.minecraft.item.crafting.ICraftingRecipe
 
-Возвращает [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
+Returns [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
 
 ```zenscript
-myMCTag.getRemainingItem(стек как crafttweaker.api.item.IItemStack);
+myMCTag.getRemainingItem(stack as crafttweaker.api.item.IItemStack);
 myMCTag.getRemainingItem(<item:minecraft:iron_ingot>);
 ```
 
-| Параметр | Тип                                                               | Описание                    |
-| -------- | ----------------------------------------------------------------- | --------------------------- |
-| stack    | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | Стак для этого ингредиента. |
+| Параметр | Тип                                                               | Description                               |
+| -------- | ----------------------------------------------------------------- | ----------------------------------------- |
+| stack    | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | The stack to provide for this ingredient. |
 
 
 ### matches
 
-Соответствует ли данный стек ингредиенту?
+Does the given stack match the ingredient?
 
 Возвращает boolean
 
 ```zenscript
-myMCTag.matches(стек как crafttweaker.api.item.IItemStack);
+myMCTag.matches(stack as crafttweaker.api.item.IItemStack);
 myMCTag.matches(<item:minecraft:iron_ingot>);
 ```
 
-| Параметр | Тип                                                               | Описание          |
-| -------- | ----------------------------------------------------------------- | ----------------- |
-| stack    | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | Стек для проверки |
+| Параметр | Тип                                                               | Description        |
+| -------- | ----------------------------------------------------------------- | ------------------ |
+| stack    | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | The stack to check |
 
 
-### убрать Блоки
+### removeBlocks
 
 ```zenscript
-myMCTag.removeBlocks(блоки как crafttweaker.api.block.MCBlock[]);
+myMCTag.removeBlocks(blocks as crafttweaker.api.block.MCBlock[]);
 ```
 
-| Параметр | Тип                                                             | Описание             |
+| Параметр | Тип                                                             | Description          |
 | -------- | --------------------------------------------------------------- | -------------------- |
 | blocks   | [crafttweaker.api.block.MCBlock](/vanilla/api/blocks/MCBlock)[] | Описание отсутствует |
 
 
-### удалить типы сущностей
+### removeEntityTypes
 
 ```zenscript
-myMCTag.removeEntityTypes(сущности как crafttweaker.api.entity.MCEntityType[]);
+myMCTag.removeEntityTypes(entities as crafttweaker.api.entity.MCEntityType[]);
 ```
 
-| Параметр | Тип                                                                          | Описание             |
+| Параметр | Тип                                                                          | Description          |
 | -------- | ---------------------------------------------------------------------------- | -------------------- |
 | entities | [crafttweaker.api.entity.MCEntityType](/vanilla/api/entities/MCEntityType)[] | Описание отсутствует |
 
 
-### удалить элементы
+### removeItems
 
 ```zenscript
-myMCTag.removeItems(предметы как crafttweaker.api.item.IItemStack[]);
+myMCTag.removeItems(items as crafttweaker.api.item.IItemStack[]);
 ```
 
-| Параметр | Тип                                                                 | Описание             |
+| Параметр | Тип                                                                 | Description          |
 | -------- | ------------------------------------------------------------------- | -------------------- |
-| элементы | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)[] | Описание отсутствует |
+| items    | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)[] | Описание отсутствует |
 
 
 
 ## Свойства
 
-| Название         | Тип                                                                          | Имеет Getter | Имеет Setter |
-| ---------------- | ---------------------------------------------------------------------------- | ------------ | ------------ |
-| blocks           | [crafttweaker.api.block.MCBlock](/vanilla/api/blocks/MCBlock)[]              | true         | false        |
-| командная строка | String                                                                       | true         | false        |
-| типы сущностей   | [crafttweaker.api.entity.MCEntityType](/vanilla/api/entities/MCEntityType)[] | true         | false        |
-| элементы         | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)[]          | true         | false        |
+| Название      | Тип                                                                          | Имеет Getter | Имеет Setter |
+| ------------- | ---------------------------------------------------------------------------- | ------------ | ------------ |
+| blocks        | [crafttweaker.api.block.MCBlock](/vanilla/api/blocks/MCBlock)[]              | true         | false        |
+| commandString | String                                                                       | true         | false        |
+| entityTypes   | [crafttweaker.api.entity.MCEntityType](/vanilla/api/entities/MCEntityType)[] | true         | false        |
+| items         | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)[]          | true         | false        |
 
 ## Утилиты
 

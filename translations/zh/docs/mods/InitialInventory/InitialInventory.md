@@ -11,50 +11,50 @@
 
 将会在玩家加入世界时给予一个物品。
 
-这些参数是：
+The parameters are:
 
 
 参数：`key`
 
 类型：`String`
 
-描述：
+Description:
 
 用于确定是否应该给予一个物品。 键值可以是任何字符串，关键是确定玩家以前是否获得了一组物品。
 
 它对以后通过使用不同的键值添加更多起始项目的模组包很有用， 已经开始玩的玩家仍然可以收到这些物品。 一个例子是：
 
-添加钻石作为一个起始项目，键"1"，加入世界，玩家将获得钻石。
+Add a diamond as a starting item with key "1", join the world, the player will get the diamond.
 
-添加苹果作为一个起始项目，键"2"，加入世界，玩家将获得苹果，但不会再次获得钻石。
+Add an apple as a starting item with key "2", join the world, the player will get the apple, but not the diamond again.
 
-创建一个新世界，玩家将收到一个苹果和一个钻石。
+Make a new world, the player will receive both an apple and a diamond.
 
 param: `item`
 
 Type `IItemStack`
 
-描述：
+Description:
 
-加入时给予玩家的物品。
+The item to give to the player when they join.
 
-参数： `索引`
+Param: `index`
 
-类型： `int`
+Type: `int`
 
-描述：
+Description:
 
-可选整数来定义物品将在哪里给出，可以用来将物品放在物品栏栏位中，就像装甲栏位。
+Optional integer to define where the item will be given, can be used to put an item in a inventory slot like an armor slot.
 
-如果被遗漏，默认为-1，这意味着它会放在第一个可用的位置， 或将其与可能已列入清单的其他项目结合起来。
+If left out, will default to -1, which means it will put it in the first available slot, or combine it with other items that may already be in the inventory.
 
 
 ## 例子
 
 ```zenscript
 //mods.initialinventory.InvHandler.addStartingItem(String key, IItemStack item, Optional int index);
-mods.initialinventory.Invhandler.addStartingItem("apples", <item:minecraft:apple>);
-mods.initialinventory.Invhandler.addStartingItem("apples", <item:minecraft:golden_apple>, 5)
+mods.initialinventory.InvHandler.addStartingItem("apples", <item:minecraft:apple>);
+mods.initialinventory.InvHandler.addStartingItem("apples", <item:minecraft:golden_apple>, 5);
 ```
 
 

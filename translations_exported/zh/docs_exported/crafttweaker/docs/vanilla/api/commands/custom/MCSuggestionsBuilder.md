@@ -9,7 +9,7 @@ crafttweeper.api.commands.custom.MCSuggestionsBuilder
 ```
 
 ## 方法
-### 添加
+### add
 
 返回类型： [craftbiner.api.commands.custom.MCSuggesBuilder](/vanilla/api/commands/custom/MCSuggestionsBuilder)
 
@@ -22,7 +22,7 @@ myMCSuggestionsBuilder.add(其他 craftweeper.api.commands.custom.MCSuggesBuilde
 | other | [crafttweeper.api.commands.custom.MCSuggestionsBuilder](/vanilla/api/commands/custom/MCSuggestionsBuilder) | No description provided |
 
 
-### 构建中
+### build
 
 返回类型： [craftbiner.api.commands.custom.MCSuggestions](/vanilla/api/commands/custom/MCSuggestions)
 
@@ -38,27 +38,27 @@ myMCSuggestionsBuilder.build();
 myMCSuggestionsBuilder.createOffset(起点为int)；
 ```
 
-| 参数 | 类型 | 描述                      |
-| -- | -- | ----------------------- |
-| 开始 | 整数 | No description provided |
+| 参数 | 类型  | 描述                      |
+| -- | --- | ----------------------- |
+| 开始 | int | No description provided |
 
 
 ### equals #等于
 
-返回类型：布尔值
+Return type: boolean
 
 ```zenscript
 myMCSuggestionsBuilder.equals(ao as Object);
 ```
 
-| 参数 | 类型 | 描述                      |
-| -- | -- | ----------------------- |
-| o  | 对象 | No description provided |
+| 参数 | 类型     | 描述                      |
+| -- | ------ | ----------------------- |
+| o  | Object | No description provided |
 
 
 ### getInput
 
-返回类型：字符串
+Return type: String
 
 ```zenscript
 myMCSuggestionsBuilder.getInput();
@@ -66,7 +66,7 @@ myMCSuggestionsBuilder.getInput();
 
 ### 剩余时间
 
-返回类型：字符串
+Return type: String
 
 ```zenscript
 myMCSuggestionsBuilder.getRemaining();
@@ -74,7 +74,7 @@ myMCSuggestionsBuilder.getRemaining();
 
 ### getStart
 
-返回类型：int
+Return type: int
 
 ```zenscript
 myMCSuggestionsBuilder.getStart();
@@ -82,7 +82,7 @@ myMCSuggestionsBuilder.getStart();
 
 ### hashCode
 
-返回类型：int
+Return type: int
 
 ```zenscript
 myMCSuggestionsBuilder.hashCode();
@@ -104,9 +104,9 @@ myMCSuggestionsBuilder.rest();
 myMCSuggestionsBuilder.sinest(文本作为字符串)；
 ```
 
-| 参数 | 类型          | 描述                      |
-| -- | ----------- | ----------------------- |
-| 文本 | 字符串[string] | No description provided |
+| 参数 | 类型     | 描述                      |
+| -- | ------ | ----------------------- |
+| 文本 | String | No description provided |
 
 
 
@@ -116,9 +116,9 @@ myMCSuggestionsBuilder.sinest(文本作为字符串)；
 myMCSuggestionsBuilder.sinest(值为int)；
 ```
 
-| 参数    | 类型 | 描述                      |
-| ----- | -- | ----------------------- |
-| value | 整数 | No description provided |
+| 参数    | 类型  | 描述                      |
+| ----- | --- | ----------------------- |
+| value | int | No description provided |
 
 
 
@@ -128,10 +128,10 @@ myMCSuggestionsBuilder.sinest(值为int)；
 myMCSuggestionsBuilder.sinest(文本作为字符串，工具提示作为字符串)；
 ```
 
-| 参数   | 类型          | 描述                      |
-| ---- | ----------- | ----------------------- |
-| 文本   | 字符串[string] | No description provided |
-| 工具提示 | 字符串[string] | No description provided |
+| 参数   | 类型     | 描述                      |
+| ---- | ------ | ----------------------- |
+| 文本   | String | No description provided |
+| 工具提示 | String | No description provided |
 
 
 
@@ -141,15 +141,15 @@ myMCSuggestionsBuilder.sinest(文本作为字符串，工具提示作为字符�
 myMCSuggestionsBuilder.sinest(作为整数值、工具提示作为字符串)；
 ```
 
-| 参数    | 类型          | 描述                      |
-| ----- | ----------- | ----------------------- |
-| value | 整数          | No description provided |
-| 工具提示  | 字符串[string] | No description provided |
+| 参数    | 类型     | 描述                      |
+| ----- | ------ | ----------------------- |
+| value | int    | No description provided |
+| 工具提示  | String | No description provided |
 
 
 ### toString
 
-返回类型：字符串
+Return type: String
 
 ```zenscript
 myMCSuggestionsBuilder.toString();
@@ -163,13 +163,13 @@ myMCSuggestionsBuilder.toString();
 myMCSuggestionsBuilder == o 为对象
 ```
 
-| 参数 | 类型 | 描述                      |
-| -- | -- | ----------------------- |
-| o  | 对象 | No description provided |
+| 参数 | 类型     | 描述                      |
+| -- | ------ | ----------------------- |
+| o  | Object | No description provided |
 
-## 卡斯特尔
+## Casters
 
-| 结果类型        | 是否隐藏 |
-| ----------- | ---- |
-| 字符串[string] | true |
+| 结果类型   | 是否隐藏 |
+| ------ | ---- |
+| String | true |
 

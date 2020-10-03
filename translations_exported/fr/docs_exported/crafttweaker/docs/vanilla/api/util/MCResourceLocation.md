@@ -1,58 +1,58 @@
 # format@@0 MCRessourceLocation
 
-Cette classe a été ajoutée par un mod avec le mod-id `crafttweaker`. Vous devez donc avoir ce mod installé si vous voulez utiliser cette fonctionnalité.
+This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
 
-## Importation de la classe
-Il pourrait vous être nécessaire d'importer le paquet si vous rencontrez des problèmes (comme lancer un tableau), alors mieux être sûr que désolé et ajouter l'importation.
+## Importing the class
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
 ```zenscript
-format@@0 crafttweaker.api.util.MCResourceLocation
+crafttweaker.api.util.MCResourceLocation
 ```
 
-## Interfaces implémentées
-MCResourceLocation implémente les interfaces suivantes. Cela signifie que toutes les méthodes disponibles peuvent également être utilisées dans cette classe.
+## Implemented Interfaces
+MCResourceLocation implémente les interfaces suivantes. That means any method available to them can also be used on this class.
 - [crafttweaker.api.brackets.CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
 
-## Constructeurs
+## Constructors
 ```zenscript
 new crafttweaker.api.util.MCResourceLocation(namespace as String, path as String);
 ```
-| Paramètre      | Type de texte        | Libellé                    |
-| -------------- | -------------------- | -------------------------- |
-| espace de noms | Chaîne de caractères | Aucune description fournie |
-| chemin d'accès | Chaîne de caractères | Aucune description fournie |
+| Parameter      | Type   | Description             |
+| -------------- | ------ | ----------------------- |
+| espace de noms | String | No description provided |
+| path           | String | No description provided |
 
 
 
-## Méthodes
+## Methods
 ### comparer à
 
-Type de retour: int
+Return type: int
 
 ```zenscript
 myMCResourceLocation.compareTo(p_compareTo_1_ comme crafttweaker.api.util.MCResourceLocation);
 ```
 
-| Paramètre    | Type de texte                                                                              | Libellé                    |
-| ------------ | ------------------------------------------------------------------------------------------ | -------------------------- |
-| Comparé à 1_ | [format@@0 crafttweaker.api.util.MCResourceLocation](/vanilla/api/util/MCResourceLocation) | Aucune description fournie |
+| Parameter    | Type                                                                             | Description             |
+| ------------ | -------------------------------------------------------------------------------- | ----------------------- |
+| Comparé à 1_ | [crafttweaker.api.util.MCResourceLocation](/vanilla/api/util/MCResourceLocation) | No description provided |
 
 
-### est égal à
+### equals
 
-Type de retour: booléen
+Return type: boolean
 
 ```zenscript
 myMCResourceLocation.equals(autre que l'objet);
 ```
 
-| Paramètre | Type de texte | Libellé                    |
-| --------- | ------------- | -------------------------- |
-| autres    | Objet         | Aucune description fournie |
+| Parameter | Type   | Description             |
+| --------- | ------ | ----------------------- |
+| other     | Object | No description provided |
 
 
 ### getNamespace
 
-Type de retour: chaîne de caractères
+Return type: String
 
 ```zenscript
 myMCResourceLocation.getNamespace();
@@ -60,7 +60,7 @@ myMCResourceLocation.getNamespace();
 
 ### getPath
 
-Type de retour: chaîne de caractères
+Return type: String
 
 ```zenscript
 myMCResourceLocation.getPath();
@@ -68,7 +68,7 @@ myMCResourceLocation.getPath();
 
 ### hashCode
 
-Type de retour: int
+Return type: int
 
 ```zenscript
 myMCResourceLocation.hashCode();
@@ -76,18 +76,18 @@ myMCResourceLocation.hashCode();
 
 ### toString
 
-Type de retour: chaîne de caractères
+Return type: String
 
 ```zenscript
 myMCResourceLocation.toString();
 ```
 
 
-## Propriétés
+## Properties
 
-| Nom                | Type de texte        | A un Getter | A un Setter |
-| ------------------ | -------------------- | ----------- | ----------- |
-| Chaîne de commande | Chaîne de caractères | vrai        | Faux        |
-| espace de noms     | Chaîne de caractères | vrai        | Faux        |
-| chemin d'accès     | Chaîne de caractères | vrai        | Faux        |
+| Name           | Type   | Has Getter | Has Setter |
+| -------------- | ------ | ---------- | ---------- |
+| commandString  | String | true       | false      |
+| espace de noms | String | true       | false      |
+| path           | String | true       | false      |
 

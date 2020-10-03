@@ -26,13 +26,13 @@ blastFurnace.addJSONRecipe(name as String, data as craftweaker.api.data.IData);
 blastFurnace.addJSONRecipe("recipe_name", {component:{item:<item:minecraft:gold_ore>.registryName},result:<item:minecraft:cooked_porkchop>.registryName,experience:0.35 as float, cookingtime:100});
 ```
 
-| 参数   | 类型                                                     | 描述           |
-| ---- | ------------------------------------------------------ | ------------ |
-| 名称   | 字符串[string]                                            | 配方名称         |
-| data | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | 代表json 文件的数据 |
+| 参数   | 类型                                                     | 描述                              |
+| ---- | ------------------------------------------------------ | ------------------------------- |
+| name | String                                                 | name of the recipe              |
+| data | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | data representing the json file |
 
 
-### 添加配方
+### addRecipe
 
 添加基于给定参数的合成表
 
@@ -43,13 +43,13 @@ blastFurnace.addRecipe("wool2diamond", <item:diamond>, <tag:minecraft:wool>, 1.0
 #示例显示了如何实现将羊毛在高炉中烧制成钻石并且获得1.0的经验
 ```
 
-| 参数             | 类型                                                                | 描述         |
-| -------------- | ----------------------------------------------------------------- | ---------- |
-| 名称             | 字符串[string]                                                       | 新的合成表名称    |
-| output（输出）     | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | 合成表的输出物品id |
-| input（输入）      | [制造商.api.item.IIngredient](/vanilla/api/items/IIngredient)        | 合成表的输入成分   |
-| xp             | 浮点数                                                               | 玩家获得多少经验   |
-| cookTime #烧制时间 | 整数                                                                | 烧制需要多长时间   |
+| 参数             | 类型                                                                  | 描述         |
+| -------------- | ------------------------------------------------------------------- | ---------- |
+| name           | String                                                              | 新的合成表名称    |
+| output（输出）     | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)   | 合成表的输出物品id |
+| input（输入）      | [crafttweaker.api.item.IIngredient](/vanilla/api/items/IIngredient) | 合成表的输入成分   |
+| xp             | float                                                               | 玩家获得多少经验   |
+| cookTime #烧制时间 | int                                                                 | 烧制需要多长时间   |
 
 
 ### getRecipeByName
@@ -60,9 +60,9 @@ blastFurnace.addRecipe("wool2diamond", <item:diamond>, <tag:minecraft:wool>, 1.0
 blastFurnace.getRecipeByname(名称为字符串)；
 ```
 
-| 参数 | 类型          | 描述                      |
-| -- | ----------- | ----------------------- |
-| 名称 | 字符串[string] | No description provided |
+| 参数   | 类型     | 描述                      |
+| ---- | ------ | ----------------------- |
+| name | String | No description provided |
 
 
 ### getRecipesBy输出
@@ -73,31 +73,31 @@ blastFurnace.getRecipeByname(名称为字符串)；
 blastFurnace.getRecipesByOutput(输出为 craftweeper.api.item.IIngredient);
 ```
 
-| 参数         | 类型                                                         | 描述                      |
-| ---------- | ---------------------------------------------------------- | ----------------------- |
-| output（输出） | [制造商.api.item.IIngredient](/vanilla/api/items/IIngredient) | No description provided |
+| 参数         | 类型                                                                  | 描述                      |
+| ---------- | ------------------------------------------------------------------- | ----------------------- |
+| output（输出） | [crafttweaker.api.item.IIngredient](/vanilla/api/items/IIngredient) | No description provided |
 
 
-### 全部移除
+### removeAll
 
-删除此注册表中的所有配方
+Remove all recipes in this registry
 
 ```zenscript
 blastFurnace.removeAll();
 ```
 
-### 移除 ByModid
+### removeByModid
 
-删除基于注册表名称莫迪的配方
+Remove recipe based on Registry name modid
 
 ```zenscript
 blastFurnace.removeByModed(modand as String);
 blastFurnace.removeByModed("minecraft");
 ```
 
-| 参数  | 类型          | 描述          |
-| --- | ----------- | ----------- |
-| 莫多德 | 字符串[string] | 已删除配方的 modo |
+| 参数    | 类型     | 描述                             |
+| ----- | ------ | ------------------------------ |
+| modid | String | modid of the recipes to remove |
 
 
 
@@ -108,52 +108,52 @@ blastFurnace.removeByModed(modian as String, exclusion as craftweepe.RecipeFilte
 blastFurnace.removeByModed("minecraft", (name as string) => {return name == "orange_wool";});
 ```
 
-| 参数  | 类型                                                              | 描述          |
-| --- | --------------------------------------------------------------- | ----------- |
-| 莫多德 | 字符串[string]                                                     | 已删除配方的 modo |
-| 不包含 | [制作器.api.recipe.RecipeFilter](/vanilla/api/recipe/RecipeFilter) | 要避免被移除的配方。  |
+| 参数    | 类型                                                              | 描述                             |
+| ----- | --------------------------------------------------------------- | ------------------------------ |
+| modid | String                                                          | modid of the recipes to remove |
+| 不包含   | [制作器.api.recipe.RecipeFilter](/vanilla/api/recipe/RecipeFilter) | 要避免被移除的配方。                     |
 
 
 ### removeByName
 
-删除基于注册表名称的配方
+Remove recipe based on Registry name
 
 ```zenscript
 blastFurnace.removeByname(名称为字符串);
 blastFurnace.removeByname("minecraft:furnace");
 ```
 
-| 参数 | 类型          | 描述           |
-| -- | ----------- | ------------ |
-| 名称 | 字符串[string] | 要删除的配方的注册表名称 |
+| 参数   | 类型     | 描述                                |
+| ---- | ------ | --------------------------------- |
+| name | String | registry name of recipe to remove |
 
 
 ### removeByRegex
 
-基于正则表达式删除配方
+Remove recipe based on regex
 
 ```zenscript
 blastFurnace.removeByRegex(regex as String);
 blastFurnace.removeByRegex("\d_\\d");
 ```
 
-| 参数    | 类型          | 描述      |
-| ----- | ----------- | ------- |
-| 正则表达式 | 字符串[string] | 正则表达式匹配 |
+| 参数    | 类型     | 描述                     |
+| ----- | ------ | ---------------------- |
+| regex | String | regex to match against |
 
 
 ### 删除合成表
 
-移除基于其输出的配方。
+Remove a recipe based on it's output.
 
 ```zenscript
 blastFurnace.removeRecipe(输出为 craftweeper.api.item.IItemStack);
 blastFurnace.removeRecipe(<item:minecraft:glass>);
 ```
 
-| 参数         | 类型                                                                | 描述    |
-| ---------- | ----------------------------------------------------------------- | ----- |
-| output（输出） | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | 配方的输出 |
+| 参数         | 类型                                                                | 描述                   |
+| ---------- | ----------------------------------------------------------------- | -------------------- |
+| output（输出） | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | output of the recipe |
 
 
 
@@ -166,16 +166,16 @@ blastFurnace.removeRecipe(<item:minecraft:diamond>, <tag:minecraft:wool>);
 #由输入为羊毛输出为钻石的方式定位并且删除这个合成表
 ```
 
-| 参数         | 类型                                                                | 描述          |
-| ---------- | ----------------------------------------------------------------- | ----------- |
-| output（输出） | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | 合成表的输出物品id. |
-| input（输入）  | [制造商.api.item.IIngredient](/vanilla/api/items/IIngredient)        | 要移除的配方的成分。  |
+| 参数         | 类型                                                                  | 描述          |
+| ---------- | ------------------------------------------------------------------- | ----------- |
+| output（输出） | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)   | 合成表的输出物品id. |
+| input（输入）  | [crafttweaker.api.item.IIngredient](/vanilla/api/items/IIngredient) | 要移除的配方的成分。  |
 
 
 
 ## 参数
 
-| 名称                   | 类型          | 可获得  | 可设置   |
-| -------------------- | ----------- | ---- | ----- |
-| commandString #命令字符串 | 字符串[string] | true | false |
+| 名称            | 类型     | 可获得  | 可设置   |
+| ------------- | ------ | ---- | ----- |
+| commandString | String | true | false |
 

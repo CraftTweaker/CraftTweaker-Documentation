@@ -1,6 +1,6 @@
-# Иингредиент
+# IIngredient
 
-Это IIngredient!!!
+This is IIngredient!!!
 
 Этот класс был добавлен модом с mod-id `crafttweaker`. Так что если вы хотите использовать эту функцию, вам нужно установить этот мод.
 
@@ -10,12 +10,12 @@
 crafttweaker.api.item.IIngredient
 ```
 
-## Реализованные интерфейсы
-IIngredient реализует следующие интерфейсы. Следовательно, методы из них доступны в этом классе.
+## Implemented Interfaces
+IIngredient implements the following interfaces. That means any method available to them can also be used on this class.
 - [crafttweaker.api.brackets.CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
 
-## Методы
-### любой урон
+## Methods
+### anyDamage
 
 Тип возврата: [crafttweaker.api.item.MCIngredientConditioned](/vanilla/api/items/MCIngredientConditioned)&lt;[crafttweaker.api.item.IIngredient](/vanilla/api/items/IIngredient)&gt;
 
@@ -23,54 +23,54 @@ IIngredient реализует следующие интерфейсы. След
 <tag:ingotIron>.anyDamage();
 ```
 
-### получить оставшиеся предметы
+### getRemainingItem
 
-Когда создан этот ингредиент, что останется в сетке? Не проверяет, совпадает ли стек! Используется например, в net.minecraft.item.crafting.ICraftingRecipe
+When this ingredient stack is crafted, what will remain in the grid? Does not check if the stack matches though! Used e.g. in CrT's net.minecraft.item.crafting.ICraftingRecipe
 
-Возвратный тип: [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
+Return type: [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
 
 ```zenscript
-<tag:ingotIron>.getRemainingItem(стек как crafttweaker.api.item.IItemStack);
+<tag:ingotIron>.getRemainingItem(stack as crafttweaker.api.item.IItemStack);
 <tag:ingotIron>.getRemainingItem(<item:minecraft:iron_ingot>);
 ```
 
-| Параметр | Тип                                                               | Описание                    |
-| -------- | ----------------------------------------------------------------- | --------------------------- |
-| stack    | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | Стак для этого ингредиента. |
+| Параметр | Тип                                                               | Description                               |
+| -------- | ----------------------------------------------------------------- | ----------------------------------------- |
+| stack    | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | The stack to provide for this ingredient. |
 
 
 ### matches
 
-Соответствует ли данный стек ингредиенту?
+Does the given stack match the ingredient?
 
-Тип возврата: логическое значение
+Return type: boolean
 
 ```zenscript
-<tag:ingotIron>.matches(стек как crafttweaker.api.item.IItemStack);
+<tag:ingotIron>.matches(stack as crafttweaker.api.item.IItemStack);
 <tag:ingotIron>.matches(<item:minecraft:iron_ingot>);
 ```
 
-| Параметр | Тип                                                               | Описание          |
-| -------- | ----------------------------------------------------------------- | ----------------- |
-| stack    | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | Стек для проверки |
+| Параметр | Тип                                                               | Description        |
+| -------- | ----------------------------------------------------------------- | ------------------ |
+| stack    | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | The stack to check |
 
 
 
-Соответствует ли данный стек ингредиенту?
+Does the given stack match the ingredient?
 
-Тип возврата: логическое значение
+Return type: boolean
 
 ```zenscript
 <tag:ingotIron>.matches(стек как crafttweaker.api.item.IItemStack, игнорировать как boolean);
 ```
 
-| Параметр      | Тип                                                               | Описание                  |
+| Параметр      | Тип                                                               | Description               |
 | ------------- | ----------------------------------------------------------------- | ------------------------- |
-| stack         | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | Стек для проверки         |
+| stack         | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | The stack to check        |
 | Игнорирование | boolean                                                           | Проверять ли повреждение? |
 
 
-### только поврежден
+### onlyDamaged
 
 Тип возврата: [crafttweaker.api.item.MCIngredientConditioned](/vanilla/api/items/MCIngredientConditioned)&lt;[crafttweaker.api.item.IIngredient](/vanilla/api/items/IIngredient)&gt;
 
@@ -86,19 +86,19 @@ IIngredient реализует следующие интерфейсы. След
 <tag:ingotIron>.onlyIf(uid как строка, функция как функция.Predicate<crafttweaker.api.item.IItemStack>);
 ```
 
-| Параметр | Тип                                                                                                     | Описание             | Необязательный | Значение по умолчанию |
-| -------- | ------------------------------------------------------------------------------------------------------- | -------------------- | -------------- | --------------------- |
-| uid      | String                                                                                                  | Описание отсутствует | false          | `null`                |
-| function | function.Predicate&lt;[crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)&gt; | Описание отсутствует | true           | `null`                |
+| Параметр | Тип                                                                                                     | Description          | IsOptional | Default Value |
+| -------- | ------------------------------------------------------------------------------------------------------- | -------------------- | ---------- | ------------- |
+| uid      | String                                                                                                  | Описание отсутствует | false      | `null`        |
+| function | function.Predicate&lt;[crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)&gt; | Описание отсутствует | true       | `null`        |
 
 
 
 ## Свойства
 
-| Название         | Тип                                                                 | Имеет Getter | Имеет Setter |
-| ---------------- | ------------------------------------------------------------------- | ------------ | ------------ |
-| командная строка | String                                                              | true         | false        |
-| элементы         | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)[] | true         | false        |
+| Название      | Тип                                                                 | Имеет Getter | Имеет Setter |
+| ------------- | ------------------------------------------------------------------- | ------------ | ------------ |
+| commandString | String                                                              | true         | false        |
+| items         | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)[] | true         | false        |
 
 ## Операторы
 ### ИЛИ
@@ -107,9 +107,9 @@ IIngredient реализует следующие интерфейсы. След
 <tag:ingotIron> | Другое как crafttweaker.api.item.IIngredient
 ```
 
-| Параметр | Тип                                                                 | Описание             |
+| Параметр | Тип                                                                 | Description          |
 | -------- | ------------------------------------------------------------------- | -------------------- |
-| другой   | [crafttweaker.api.item.IIngredient](/vanilla/api/items/IIngredient) | Описание отсутствует |
+| other    | [crafttweaker.api.item.IIngredient](/vanilla/api/items/IIngredient) | Описание отсутствует |
 
 ## Утилиты
 

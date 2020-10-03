@@ -1,9 +1,9 @@
 # MCCommandSource
 
-Diese Klasse wurde von einer Mod mit mod-id `crafttweaker` hinzugefügt. Wenn Sie diese Funktion nutzen möchten, müssen Sie diese Mod installiert haben.
+This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
 
 ## Diese Klasse importieren
-Es kann erforderlich sein, dass Sie das Paket importieren, wenn Sie irgendwelche Probleme haben (wie zum Beispiel ein Array zu bearbeiten), also besser sicher sein als bedauern und fügen Sie den Import.
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
 ```zenscript
 crafttweaker.api.commands.custom.MCCommandSource
 ```
@@ -11,7 +11,7 @@ crafttweaker.api.commands.custom.MCCommandSource
 ## Methoden
 ### getName
 
-Rückgabetyp: String
+Return type: String
 
 ```zenscript
 myMCCommandSource.getName();
@@ -51,20 +51,20 @@ myMCCommandSource.getTeamNames();
 
 ### hasPermissionLevel
 
-Rückgabetyp: boolesch
+Return type: boolean
 
 ```zenscript
 myMCCommandSource.hasPermissionLevel(p_197034_1_ als int);
 ```
 
-| Parameter     | Type | Beschreibung                 |
-| ------------- | ---- | ---------------------------- |
-| p_197034_1_ | int  | Keine Beschreibung angegeben |
+| Parameter     | Type | Beschreibung            |
+| ------------- | ---- | ----------------------- |
+| p_197034_1_ | int  | No description provided |
 
 
 ### isPlayer
 
-Rückgabetyp: boolesch
+Return type: boolean
 
 ```zenscript
 myMCCommandSource.isPlayer();
@@ -76,9 +76,9 @@ myMCCommandSource.isPlayer();
 myMCCommandSource.sendErrorMessage(Nachricht als String);
 ```
 
-| Parameter | Type   | Beschreibung                 |
-| --------- | ------ | ---------------------------- |
-| nachricht | String | Keine Beschreibung angegeben |
+| Parameter | Type   | Beschreibung            |
+| --------- | ------ | ----------------------- |
+| message   | String | No description provided |
 
 
 ### sendFeedback
@@ -87,10 +87,10 @@ myMCCommandSource.sendErrorMessage(Nachricht als String);
 myMCCommandSource.sendFeedback(Feedback als Zeichenkette, erlaubt Logging als boolean);
 ```
 
-| Parameter                | Type    | Beschreibung                 |
-| ------------------------ | ------- | ---------------------------- |
-| rezension                | String  | Keine Beschreibung angegeben |
-| erlaubte Protokollierung | boolean | Keine Beschreibung angegeben |
+| Parameter    | Type    | Beschreibung            |
+| ------------ | ------- | ----------------------- |
+| rezension    | String  | No description provided |
+| allowLogging | boolean | No description provided |
 
 
 ### ohne Feedbackdeaktiviert
@@ -109,9 +109,9 @@ Rückgabetyp: [craftweaker.api.commands.custom.MCCommandSource](/vanilla/api/com
 myMCCommandSource.withMinPermissionLevel(p_197026_1_ als int);
 ```
 
-| Parameter     | Type | Beschreibung                 |
-| ------------- | ---- | ---------------------------- |
-| p_197026_1_ | int  | Keine Beschreibung angegeben |
+| Parameter     | Type | Beschreibung            |
+| ------------- | ---- | ----------------------- |
+| p_197026_1_ | int  | No description provided |
 
 
 ### withPermissionLevel
@@ -122,9 +122,9 @@ Rückgabetyp: [craftweaker.api.commands.custom.MCCommandSource](/vanilla/api/com
 myMCCommandSource.withPermissionLevel(p_197033_1_ als int);
 ```
 
-| Parameter     | Type | Beschreibung                 |
-| ------------- | ---- | ---------------------------- |
-| p_197033_1_ | int  | Keine Beschreibung angegeben |
+| Parameter     | Type | Beschreibung            |
+| ------------- | ---- | ----------------------- |
+| p_197033_1_ | int  | No description provided |
 
 
 

@@ -8,16 +8,16 @@
 crafttweaker.api.block.material.MCMaterial
 ```
 
-## Реализованные интерфейсы
-MCMaterial реализует следующие интерфейсы. Следовательно, методы из них доступны в этом классе.
+## Implemented Interfaces
+MCMaterial реализует следующие интерфейсы. That means any method available to them can also be used on this class.
 - [crafttweaker.api.brackets.CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
 
-## Методы
+## Methods
 ### blocksMovement
 
 Возвращает, если этот материал считается твёрдым или нет.
 
-Тип возврата: логическое значение
+Return type: boolean
 
 ```zenscript
 myMCMaterial.blocksMovement();
@@ -37,7 +37,7 @@ myMCMaterial.getColor();
 
 Возвращает, если блок может гореть или нет.
 
-Тип возврата: логическое значение
+Return type: boolean
 
 ```zenscript
 myMCMaterial.isFlammable();
@@ -47,7 +47,7 @@ myMCMaterial.isFlammable();
 
 Возвращает, если блоки из этих материалов являются жидкостями.
 
-Тип возврата: логическое значение
+Return type: boolean
 
 ```zenscript
 myMCMaterial.isLiquid();
@@ -57,7 +57,7 @@ myMCMaterial.isLiquid();
 
 Укажите, является ли материал непрозрачным
 
-Тип возврата: логическое значение
+Return type: boolean
 
 ```zenscript
 myMCMaterial.isOpaque();
@@ -67,7 +67,7 @@ myMCMaterial.isOpaque();
 
 Возвращает, можно ли заменить материал другими блоками при размещении - например, снегом, лозой или высокой травой.
 
-Тип возврата: логическое значение
+Return type: boolean
 
 ```zenscript
 myMCMaterial.isReplaceable();
@@ -77,7 +77,7 @@ myMCMaterial.isReplaceable();
 
 Возвращает true, если блок считается твёрдым. По умолчанию это true.
 
-Тип возврата: логическое значение
+Return type: boolean
 
 ```zenscript
 myMCMaterial.isSolid();
@@ -86,7 +86,7 @@ myMCMaterial.isSolid();
 
 ## Свойства
 
-| Название         | Тип    | Имеет Getter | Имеет Setter |
-| ---------------- | ------ | ------------ | ------------ |
-| командная строка | String | true         | false        |
+| Название      | Тип    | Имеет Getter | Имеет Setter |
+| ------------- | ------ | ------------ | ------------ |
+| commandString | String | true         | false        |
 

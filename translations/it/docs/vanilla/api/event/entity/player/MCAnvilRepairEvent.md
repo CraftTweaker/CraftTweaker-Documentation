@@ -2,26 +2,26 @@
 
 Questa classe è stata aggiunta da una mod con ID `crafttweaker`. Perciò, è necessario avere questa mod installata per poter utilizzare questa funzione.
 
-## Importare la classe
+## Importing the class
 Potrebbe essere necessario importare il pacchetto, se si incontrano dei problemi (come castare un vettore), quindi meglio essere sicuri e aggiungere la direttiva di importazione.
 ```zenscript
 crafttweaker.api.event.entity.player.MCAnvilRepairEvent
 ```
 
-## Costruttori
+## Constructors
 ```zenscript
 new crafttweaker.api.event.entity.player.MCAnvilRepairEvent(handler as function.Consumer<crafttweaker.api.event.entity.player.MCAnvilRepairEvent>);
 ```
-| Parametro | Tipo                                                                                                                              | Descrizione                 |
+| Parameter | Type                                                                                                                              | Description                 |
 | --------- | --------------------------------------------------------------------------------------------------------------------------------- | --------------------------- |
 | handler   | function.Consumer<[crafttweaker.api.event.entity.player.MCAnvilRepairEvent](/vanilla/api/event/entity/player/MCAnvilRepairEvent)> | Nessuna descrizione fornita |
 
 
 
-## Metodi
+## Methods
 ### getBreakChance
 
-Restituisce fluttuante
+Returns float
 
 ```zenscript
 myMCAnvilRepairEvent.getBreakChance();
@@ -29,7 +29,7 @@ myMCAnvilRepairEvent.getBreakChance();
 
 ### getEntityPlayer
 
-Restituisce [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
+Returns [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
 
 ```zenscript
 myMCAnvilRepairEvent.getEntityPlayer();
@@ -37,9 +37,9 @@ myMCAnvilRepairEvent.getEntityPlayer();
 
 ### getIngredientInput
 
-Ottieni il secondo input nell'incudine Restituisce: `il secondo slot di input`
+Get the second item input into the anvil Returns: `the second input slot`
 
-Restituisce [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
+Returns [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
 
 ```zenscript
 myMCAnvilRepairEvent.getIngredientInput();
@@ -47,9 +47,9 @@ myMCAnvilRepairEvent.getIngredientInput();
 
 ### getItemInput
 
-Ottieni il primo input dell'oggetto nell'incudine Restituisce: `il primo slot di input`
+Get the first item input into the anvil Returns: `the first input slot`
 
-Restituisce [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
+Returns [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
 
 ```zenscript
 myMCAnvilRepairEvent.getItemInput();
@@ -57,9 +57,9 @@ myMCAnvilRepairEvent.getItemInput();
 
 ### getItemResult
 
-Ottieni il risultato dell'uscita dall'incudine Restituisce: `l'output`
+Get the output result from the anvil Returns: `the output`
 
-Restituisce [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
+Returns [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
 
 ```zenscript
 myMCAnvilRepairEvent.getItemResult();
@@ -67,29 +67,29 @@ myMCAnvilRepairEvent.getItemResult();
 
 ### getPlayer
 
-Restituisce: `Giocatore`
+Returns: `Player`
 
-Restituisce [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
+Returns [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
 
 ```zenscript
 myMCAnvilRepairEvent.getPlayer();
 ```
 
-### hasRisultato
+### hasResult
 
-Determina se questo evento prevede un valore significativo del risultato. Nota: Gli eventi con l'annotazione HasResult avranno questo metodo automaticamente aggiunto per restituire true.
+Determines if this event expects a significant result value. Note: Events with the HasResult annotation will have this method automatically added to return true.
 
 Restituisce un booleano
 
 ```zenscript
-myMCAnvilRepairEvent.hasRisultato();
+myMCAnvilRepairEvent.hasResult();
 ```
 
-### isAnnullabile
+### isCancelable
 
-Determina se questa funzione è annullabile. Restituisce: `Se l'accesso a setAnnullato dovrebbe essere consentito
- Nota:
- Gli eventi con l'annotazione annullabile avranno questo metodo automaticamente aggiunto per restituire true.`
+Determine if this function is cancelable at all. Returns: `If access to setCanceled should be allowed
+ Note:
+ Events with the Cancelable annotation will have this method automatically added to return true.`
 
 Restituisce un booleano
 
@@ -97,9 +97,9 @@ Restituisce un booleano
 myMCAnvilRepairEvent.isCancelable();
 ```
 
-### isAnnullato
+### isCanceled
 
-Determina se questo evento è stato annullato e dovrebbe interrompere l'esecuzione. Restituisce: `L'attuale stato annullato`
+Determine if this event is canceled and should stop executing. Returns: `The current canceled state`
 
 Restituisce un booleano
 
@@ -113,20 +113,20 @@ myMCAnvilRepairEvent.isCanceled();
 myMCAnvilRepairEvent.setBreakChance(breakChance as float);
 ```
 
-| Parametro   | Tipo         | Descrizione                 |
-| ----------- | ------------ | --------------------------- |
-| breakChance | galleggiante | Nessuna descrizione fornita |
+| Parameter   | Type  | Description                 |
+| ----------- | ----- | --------------------------- |
+| breakChance | float | Nessuna descrizione fornita |
 
 
-### setAnnullato
+### setCanceled
 
 ```zenscript
 myMCAnvilRepairEvent.setCanceled(cancel as boolean);
 ```
 
-| Parametro | Tipo    | Descrizione                 |
+| Parameter | Type    | Description                 |
 | --------- | ------- | --------------------------- |
-| annulla   | boolean | Nessuna descrizione fornita |
+| cancel    | boolean | Nessuna descrizione fornita |
 
 
 

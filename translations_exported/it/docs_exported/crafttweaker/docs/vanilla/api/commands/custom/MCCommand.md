@@ -2,39 +2,39 @@
 
 Questa classe è stata aggiunta da una mod con ID `crafttweaker`. Perciò, è necessario avere questa mod installata per poter utilizzare questa funzione.
 
-## Importare la classe
+## Importing the class
 Potrebbe essere necessario importare il pacchetto, se si incontrano dei problemi (come castare un vettore), quindi meglio essere sicuri e aggiungere la direttiva di importazione.
 ```zenscript
 crafttweaker.api.commands.custom.MCCommand
 ```
 
-## Costruttori
+## Constructors
 ```zenscript
 new crafttweaker.api.commands.custom.MCCommand(fun as function.Function<crafttweaker.api.commands.custom.MCCommandContext, Integer>);
 ```
-| Parametro  | Tipo                                                                                                                                             | Descrizione                 |
+| Parameter  | Type                                                                                                                                             | Description                 |
 | ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------ | --------------------------- |
 | divertente | function.Function&lt;[crafttweaker.api.commands.custom.MCCommandContext](/vanilla/api/commands/custom/MCCommandContext), Integer&gt; | Nessuna descrizione fornita |
 
 
 
-## Metodi
-### uguale
+## Methods
+### equals
 
-Tipo restituito: booleano
+Return type: boolean
 
 ```zenscript
 myMCCommand.equals(o come oggetto);
 ```
 
-| Parametro | Tipo    | Descrizione                 |
-| --------- | ------- | --------------------------- |
-| o         | Oggetto | Nessuna descrizione fornita |
+| Parameter | Type   | Description                 |
+| --------- | ------ | --------------------------- |
+| o         | Object | Nessuna descrizione fornita |
 
 
 ### hashCode
 
-Tipo di restituzione: int
+Return type: int
 
 ```zenscript
 myMCCommand.hashCode();
@@ -42,40 +42,40 @@ myMCCommand.hashCode();
 
 ### esegui
 
-Tipo di restituzione: int
+Return type: int
 
 ```zenscript
 myMCCommand.run(context as crafttweaker.api.commands.custom.MCCommandContext);
 ```
 
-| Parametro | Tipo                                                                                               | Descrizione                 |
+| Parameter | Type                                                                                               | Description                 |
 | --------- | -------------------------------------------------------------------------------------------------- | --------------------------- |
 | contesto  | [crafttweaker.api.commands.custom.MCCommandContext](/vanilla/api/commands/custom/MCCommandContext) | Nessuna descrizione fornita |
 
 
 ### toString
 
-Tipo di ritorno: Stringa
+Return type: String
 
 ```zenscript
 myMCCommand.toString();
 ```
 
 
-## Operatori
-### EQUALI
+## Operators
+### EQUALS
 
 ```zenscript
 myMCCommand == o come oggetto
 ```
 
-| Parametro | Tipo    | Descrizione                 |
-| --------- | ------- | --------------------------- |
-| o         | Oggetto | Nessuna descrizione fornita |
+| Parameter | Type   | Description                 |
+| --------- | ------ | --------------------------- |
+| o         | Object | Nessuna descrizione fornita |
 
 ## Caster
 
 | Tipo Risultato | Implicito |
 | -------------- | --------- |
-| Stringa        | vero      |
+| String         | true      |
 

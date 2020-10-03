@@ -2,114 +2,114 @@
 
 
 
-crafttweakerのmod-idを持つmodによって追加されているクラスです。 従って、この機能を利用する場合はこのmodをインストールする必要があります。
+This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
 
-## クラスのインポート
-問題が発生した場合には、インポートが必要になります。とはいえ、お手数ですが予めインポートしておくほうが安全です。
+## Importing the class
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
 ```zenscript
 crafttweaker.api.data.ByteArrayData
 ```
 
-## 実装されたインターフェース
-ByteArrayData は以下のインターフェースを実装しています。 つまり、利用可能な任意のメソッドはこのクラスでも使用できます。
+## Implemented Interfaces
+ByteArrayData implements the following interfaces. That means any method available to them can also be used on this class.
 - [crafttweaker.api.data.ICollectionData](/vanilla/api/data/ICollectionData)
 
 ## Constructors
 ```zenscript
-new crafttweaker.api.data.ByteArrayData(internal as byte[] );
+new crafttweaker.api.data.ByteArrayData(internal as byte[]);
 ```
-| パラメータ | タイプ    | 説明           |
-| ----- | ------ | ------------ |
-| 内部    | byte[] | 説明が提供されていません |
+| Parameter | Type   | Description             |
+| --------- | ------ | ----------------------- |
+| internal  | byte[] | No description provided |
 
 
 
-## メソッド
-### 追加
+## Methods
+### add
 
 ```zenscript
 [4, 1, 2].add(value as crafttweaker.api.data.IData);
 [4, 1, 2].add("today");
 ```
 
-| パラメータ | タイプ                                                    | 説明        |
-| ----- | ------------------------------------------------------ | --------- |
-| 値     | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | リストに追加する値 |
+| Parameter | Type                                                   | Description                  |
+| --------- | ------------------------------------------------------ | ---------------------------- |
+| value     | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | The value to add to the list |
 
 
 
 ```zenscript
-[4, 1, 2].add(index as int, crafttweaker.api.data.IData);
+[4, 1, 2].add(index as int, value as crafttweaker.api.data.IData);
 [4, 1, 2].add(1, "beautiful");
 ```
 
-| パラメータ  | タイプ                                                    | 説明                                   |
-| ------ | ------------------------------------------------------ | ------------------------------------ |
-| インデックス | int                                                    | 追加するインデックス 後続のアイテムは1つ高いインデックスに移動されます |
-| 値      | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | リストに追加する値                            |
+| Parameter | Type                                                   | Description                                                          |
+| --------- | ------------------------------------------------------ | -------------------------------------------------------------------- |
+| index     | int                                                    | The index to add to. Subsequent items will be moved one index higher |
+| value     | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | The value to add to the list                                         |
 
 
-### クリア
+### clear
 
-リスト内のすべての要素を削除します
+Removes every element in the list
 
 ```zenscript
 [4, 1, 2].clear();
 ```
 
-### 取得する
+### get
 
-指定したインデックスに保存されている [crafttweaker.api.data.IData](/vanilla/api/data/IData) を取得します。
+Retrieves the [crafttweaker.api.data.IData](/vanilla/api/data/IData) stored at the given index.
 
-戻り値 [crafttweaker.api.data.IData](/vanilla/api/data/IData)
+Returns [crafttweaker.api.data.IData](/vanilla/api/data/IData)
 
 ```zenscript
 [4, 1, 2].get(index as int);
 [4, 1, 2].get(0);
 ```
 
-| パラメータ  | タイプ | 説明           |
-| ------ | --- | ------------ |
-| インデックス | int | インデックス（0ベース） |
+| Parameter | Type | Description         |
+| --------- | ---- | ------------------- |
+| index     | int  | The index (0-based) |
 
 
-### 削除
+### remove
 
-指定したインデックスに保存されている [crafttweaker.api.data.IData](/vanilla/api/data/IData) を削除します。
+Removes the [crafttweaker.api.data.IData](/vanilla/api/data/IData) stored at the given index.
 
-戻り値 [crafttweaker.api.data.IData](/vanilla/api/data/IData)
+Returns [crafttweaker.api.data.IData](/vanilla/api/data/IData)
 
 ```zenscript
 [4, 1, 2].remove(index as int);
 [4, 1, 2].remove(0);
 ```
 
-| パラメータ  | タイプ | 説明           |
-| ------ | --- | ------------ |
-| インデックス | int | インデックス（0ベース） |
+| Parameter | Type | Description         |
+| --------- | ---- | ------------------- |
+| index     | int  | The index (0-based) |
 
 
-### セット
+### set
 
-指定されたインデックスの項目を指定された値に設定します。
+Sets the item at the provided index to the given value
 
-戻り値 [crafttweaker.api.data.IData](/vanilla/api/data/IData)
+Returns [crafttweaker.api.data.IData](/vanilla/api/data/IData)
 
 ```zenscript
 [4, 1, 2].set(index as int, value as crafttweaker.api.data.IData);
 [4, 1, 2].set(0, "Bye");
 ```
 
-| パラメータ  | タイプ                                                    | 説明                   |
-| ------ | ------------------------------------------------------ | -------------------- |
-| インデックス | int                                                    | 設定するインデックス (0-based) |
-| 値      | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | 新しい値                 |
+| Parameter | Type                                                   | Description                |
+| --------- | ------------------------------------------------------ | -------------------------- |
+| index     | int                                                    | The index to set (0-based) |
+| value     | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | The new Value              |
 
 
 
-## プロパティー
+## Properties
 
-| 名称  | タイプ | ゲッターあり | セッターあり |
-| --- | --- | ------ | ------ |
-| サイズ | int | true   | false  |
+| 名称   | Type | Has Getter | Has Setter |
+| ---- | ---- | ---------- | ---------- |
+| size | int  | true       | false      |
 

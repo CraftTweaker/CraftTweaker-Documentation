@@ -8,7 +8,7 @@
 crafttweaker.api.commands.custom.MCSuggestions
 ```
 
-## Методы
+## Methods
 ### создать
 
 Тип возврата: [crafttweaker.api.commands.custom.MCSuggestions](/vanilla/api/commands/custom/MCSuggestions)
@@ -17,13 +17,13 @@ crafttweaker.api.commands.custom.MCSuggestions
 crafttweaker.api.commands.custom.MCSuggestions.create(команда "Строка", предложения Коллекция<crafttweaker.api.commands.custom.MCSuggestion>);
 ```
 
-| Параметр    | Тип                                                                                                                     | Описание             |
+| Параметр    | Тип                                                                                                                     | Description          |
 | ----------- | ----------------------------------------------------------------------------------------------------------------------- | -------------------- |
-| команда     | String                                                                                                                  | Описание отсутствует |
+| command     | String                                                                                                                  | Описание отсутствует |
 | предложения | Коллекция&lt;[crafttweaker.api.commands.custom.MCSuggestion](/vanilla/api/commands/custom/MCSuggestion)&gt; | Описание отсутствует |
 
 
-### пустой
+### empty
 
 Тип возврата: [crafttweaker.api.commands.custom.MCSuggestions](/vanilla/api/commands/custom/MCSuggestions)
 
@@ -31,17 +31,17 @@ crafttweaker.api.commands.custom.MCSuggestions.create(команда "Строк
 crafttweaker.api.commands.custom.MCSuggestions.empty();
 ```
 
-### равно
+### equals
 
-Тип возврата: логическое значение
+Return type: boolean
 
 ```zenscript
 myMCSuggestions.equals(o as Object);
 ```
 
-| Параметр | Тип    | Описание             |
+| Параметр | Тип    | Description          |
 | -------- | ------ | -------------------- |
-| о        | Объект | Описание отсутствует |
+| o        | Object | Описание отсутствует |
 
 
 ### getList
@@ -62,7 +62,7 @@ myMCSuggestions.getRange();
 
 ### hashCode
 
-Тип возврата: int
+Return type: int
 
 ```zenscript
 myMCSuggestions.hashCode();
@@ -70,13 +70,13 @@ myMCSuggestions.hashCode();
 
 ### isEmpty
 
-Тип возврата: логическое значение
+Return type: boolean
 
 ```zenscript
 myMCSuggestions.isEmpty();
 ```
 
-### слияние
+### merge
 
 Тип возврата: [crafttweaker.api.commands.custom.MCSuggestions](/vanilla/api/commands/custom/MCSuggestions)
 
@@ -84,15 +84,15 @@ myMCSuggestions.isEmpty();
 crafttweaker.api.commands.custom.MCSuggestions.merge(command as String, input as Collection<crafttweaker.api.commands.custom.MCSuggestions>);
 ```
 
-| Параметр | Тип                                                                                                                       | Описание             |
+| Параметр | Тип                                                                                                                       | Description          |
 | -------- | ------------------------------------------------------------------------------------------------------------------------- | -------------------- |
-| команда  | String                                                                                                                    | Описание отсутствует |
+| command  | String                                                                                                                    | Описание отсутствует |
 | input    | Коллекция&lt;[crafttweaker.api.commands.custom.MCSuggestions](/vanilla/api/commands/custom/MCSuggestions)&gt; | Описание отсутствует |
 
 
 ### toString
 
-Тип возврата: строка
+Return type: String
 
 ```zenscript
 myMCSuggestions.toString();
@@ -106,9 +106,9 @@ myMCSuggestions.toString();
 myMCSuggestions == o как объект
 ```
 
-| Параметр | Тип    | Описание             |
+| Параметр | Тип    | Description          |
 | -------- | ------ | -------------------- |
-| о        | Объект | Описание отсутствует |
+| o        | Object | Описание отсутствует |
 
 ## Утилиты
 

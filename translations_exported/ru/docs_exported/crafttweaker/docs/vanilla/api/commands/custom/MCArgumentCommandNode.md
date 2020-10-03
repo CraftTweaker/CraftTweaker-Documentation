@@ -8,11 +8,11 @@
 crafttweaker.api.commands.custom.MCArgumentCommandNode
 ```
 
-## Реализованные интерфейсы
-MCArgumentCommandNode реализует следующие интерфейсы. Следовательно, методы из них доступны в этом классе.
+## Implemented Interfaces
+MCArgumentCommandNode реализует следующие интерфейсы. That means any method available to them can also be used on this class.
 - [crafttweaker.api.commands.custom.MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)
 
-## Методы
+## Methods
 ### createBuilder
 
 Тип возврата: [crafttweaker.api.commands.custom.MCRequiredArgumentBuilder](/vanilla/api/commands/custom/MCRequiredArgumentBuilder)
@@ -21,17 +21,17 @@ MCArgumentCommandNode реализует следующие интерфейсы
 myMCArgumentCommandNode.createBuilder();
 ```
 
-### равно
+### equals
 
-Тип возврата: логическое значение
+Return type: boolean
 
 ```zenscript
 myMCArgumentCommandNode.equals(o as Object);
 ```
 
-| Параметр | Тип    | Описание             |
+| Параметр | Тип    | Description          |
 | -------- | ------ | -------------------- |
-| о        | Объект | Описание отсутствует |
+| o        | Object | Описание отсутствует |
 
 
 ### getCustomSuggestions
@@ -44,7 +44,7 @@ myMCArgumentCommandNode.getCustomSuggestion();
 
 ### hashCode
 
-Тип возврата: int
+Return type: int
 
 ```zenscript
 myMCArgumentCommandNode.hashCode();
@@ -52,7 +52,7 @@ myMCArgumentCommandNode.hashCode();
 
 ### toString
 
-Тип возврата: строка
+Return type: String
 
 ```zenscript
 myMCArgumentCommandNode.toString();
@@ -66,9 +66,9 @@ myMCArgumentCommandNode.toString();
 myMCArgumentCommandNode == o как объект
 ```
 
-| Параметр | Тип    | Описание             |
+| Параметр | Тип    | Description          |
 | -------- | ------ | -------------------- |
-| о        | Объект | Описание отсутствует |
+| o        | Object | Описание отсутствует |
 
 ## Утилиты
 

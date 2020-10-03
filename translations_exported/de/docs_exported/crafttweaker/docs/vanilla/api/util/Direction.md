@@ -1,21 +1,21 @@
-# Richtung
+# Direction
 
-Stellt eine Kardinalrichtung (Norden, Süden, Osten, Westen) und (oben und unten).
+Represents a cardinal direction (north, south, east, west) and (up and down).
 
-Diese Klasse wurde von einer Mod mit mod-id `crafttweaker` hinzugefügt. Wenn Sie diese Funktion nutzen möchten, müssen Sie diese Mod installiert haben.
+This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
 
 ## Diese Klasse importieren
-Es kann erforderlich sein, dass Sie das Paket importieren, wenn Sie irgendwelche Probleme haben (wie zum Beispiel ein Array zu bearbeiten), also besser sicher sein als bedauern und fügen Sie den Import.
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
 ```zenscript
-crafttweaker.api.util.Richtung
+crafttweaker.api.util.Direction
 ```
 
 ## Methoden
 ### rotateY
 
-Dreht diese Richtung auf die Y-Achse
+Rotates this direction on the Y axis
 
- Gibt `die Richtung zurück, die auf der Y-Achse dieser Richtung gedreht wurde`
+ Returns: `the direction that rotated on the Y axis of this direction`
 
 Rückgabetyp: [craftweaker.api.util.Direction](/vanilla/api/util/Direction)
 
@@ -25,9 +25,9 @@ Rückgabetyp: [craftweaker.api.util.Direction](/vanilla/api/util/Direction)
 
 ### rotateYCCW
 
-Dreht diese Richtung gegen die Uhr auf der Y-Achse
+Rotates this direction counter-clock wise on the Y axis
 
- Gibt `die Richtung zurück, die im Uhrzeigersinn auf der Y-Achse ist`
+ Returns: `the direction that is counter clockwise on the Y axis`
 
 Rückgabetyp: [craftweaker.api.util.Direction](/vanilla/api/util/Direction)
 
@@ -36,25 +36,25 @@ Rückgabetyp: [craftweaker.api.util.Direction](/vanilla/api/util/Direction)
 ```
 
 
-## Eigenschaften
+## Properties
 
-| Name             | Type                                                                   | Hat Getter | Hat Setter |
-| ---------------- | ---------------------------------------------------------------------- | ---------- | ---------- |
-| achse            | [crafttweaker.api.util.DirectionAxis](/vanilla/api/util/DirectionAxis) | true       | false      |
-| axisOffset       | int                                                                    | true       | false      |
-| runter           | [crafttweaker.api.util.Richtung](/vanilla/api/util/Direction)          | true       | true       |
-| östlich          | [crafttweaker.api.util.Richtung](/vanilla/api/util/Direction)          | true       | true       |
-| horizontalwinkel | float                                                                  | true       | false      |
-| horizontalIndex  | int                                                                    | true       | false      |
-| indexieren       | int                                                                    | true       | false      |
-| name             | String                                                                 | true       | false      |
-| nördlich         | [crafttweaker.api.util.Richtung](/vanilla/api/util/Direction)          | true       | true       |
-| entgegengesetzt  | [crafttweaker.api.util.Richtung](/vanilla/api/util/Direction)          | true       | false      |
-| Seiten           | [craftweaker.api.util.Richtung](/vanilla/api/util/Direction)[]         | true       | true       |
-| süd              | [crafttweaker.api.util.Richtung](/vanilla/api/util/Direction)          | true       | true       |
-| oben             | [crafttweaker.api.util.Richtung](/vanilla/api/util/Direction)          | true       | true       |
-| westlich         | [crafttweaker.api.util.Richtung](/vanilla/api/util/Direction)          | true       | true       |
-| xOffset          | int                                                                    | true       | false      |
-| yOffset          | int                                                                    | true       | false      |
-| zOffset          | int                                                                    | true       | false      |
+| Name            | Type                                                                   | Has Getter | Has Setter |
+| --------------- | ---------------------------------------------------------------------- | ---------- | ---------- |
+| axis            | [crafttweaker.api.util.DirectionAxis](/vanilla/api/util/DirectionAxis) | true       | false      |
+| axisOffset      | int                                                                    | true       | false      |
+| down            | [crafttweaker.api.util.Direction](/vanilla/api/util/Direction)         | true       | true       |
+| east            | [crafttweaker.api.util.Direction](/vanilla/api/util/Direction)         | true       | true       |
+| horizontalAngle | float                                                                  | true       | false      |
+| horizontalIndex | int                                                                    | true       | false      |
+| index           | int                                                                    | true       | false      |
+| name            | String                                                                 | true       | false      |
+| north           | [crafttweaker.api.util.Direction](/vanilla/api/util/Direction)         | true       | true       |
+| opposite        | [crafttweaker.api.util.Direction](/vanilla/api/util/Direction)         | true       | false      |
+| Seiten          | [craftweaker.api.util.Richtung](/vanilla/api/util/Direction)[]         | true       | true       |
+| south           | [crafttweaker.api.util.Direction](/vanilla/api/util/Direction)         | true       | true       |
+| up              | [crafttweaker.api.util.Direction](/vanilla/api/util/Direction)         | true       | true       |
+| west            | [crafttweaker.api.util.Direction](/vanilla/api/util/Direction)         | true       | true       |
+| xOffset         | int                                                                    | true       | false      |
+| yOffset         | int                                                                    | true       | false      |
+| zOffset         | int                                                                    | true       | false      |
 

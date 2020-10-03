@@ -1,9 +1,9 @@
 # MCStyle
 
-crafttweakerのmod-idを持つmodによって追加されているクラスです。 従って、この機能を利用する場合はこのmodをインストールする必要があります。
+This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
 
-## クラスのインポート
-問題が発生した場合には、インポートが必要になります。とはいえ、お手数ですが予めインポートしておくほうが安全です。
+## Importing the class
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
 ```zenscript
 crafttweaker.api.util.text.MCStyle
 ```
@@ -13,23 +13,23 @@ crafttweaker.api.util.text.MCStyle
 new crafttweaker.api.util.text.MCStyle();
 ```
 
-## メソッド
-### 等しい
+## Methods
+### equals
 
-戻り値の型: boolean
+Return type: boolean
 
 ```zenscript
 myMCStyle.equals(other as Object);
 ```
 
-| パラメータ | タイプ    | 説明           |
-| ----- | ------ | ------------ |
-| その他   | オブジェクト | 説明が提供されていません |
+| Parameter | Type   | Description             |
+| --------- | ------ | ----------------------- |
+| other     | Object | No description provided |
 
 
 ### getBold
 
-戻り値の型: boolean
+Return type: boolean
 
 ```zenscript
 myMCStyle.getBold();
@@ -45,7 +45,7 @@ myMCStyle.getFontId();
 
 ### getInsertion
 
-戻り値の型: String
+Return type: String
 
 ```zenscript
 myMCStyle.getInsertion();
@@ -53,7 +53,7 @@ myMCStyle.getInsertion();
 
 ### getItalic
 
-戻り値の型: boolean
+Return type: boolean
 
 ```zenscript
 myMCStyle.getItalic();
@@ -61,7 +61,7 @@ myMCStyle.getItalic();
 
 ### getObfuscated
 
-戻り値の型: boolean
+Return type: boolean
 
 ```zenscript
 myMCStyle.get難読化();
@@ -69,7 +69,7 @@ myMCStyle.get難読化();
 
 ### getStrikethrough
 
-戻り値の型: boolean
+Return type: boolean
 
 ```zenscript
 myMCStyle.getStrikethrough ();
@@ -77,7 +77,7 @@ myMCStyle.getStrikethrough ();
 
 ### getUnderlined
 
-戻り値の型: boolean
+Return type: boolean
 
 ```zenscript
 myMCStyle.getUnderlined();
@@ -85,7 +85,7 @@ myMCStyle.getUnderlined();
 
 ### hashCode
 
-戻り値の種類: int
+Return type: int
 
 ```zenscript
 myMCStyle.hashCode();
@@ -95,7 +95,7 @@ myMCStyle.hashCode();
 
 このスタイルが空であるかどうか(親からすべてを継承します)。
 
-戻り値の型: boolean
+Return type: boolean
 
 ```zenscript
 myMCStyle.isEmpty();
@@ -109,9 +109,9 @@ myMCStyle.isEmpty();
 myMCStyle.mergeStyle(crafttweaker.api.util.text.MCStyle);
 ```
 
-| パラメータ | タイプ                                                                  | 説明           |
-| ----- | -------------------------------------------------------------------- | ------------ |
-| スタイル  | [crafttweaker.api.util.text.MCStyle](/vanilla/api/util/text/MCStyle) | 説明が提供されていません |
+| Parameter | Type                                                                 | Description             |
+| --------- | -------------------------------------------------------------------- | ----------------------- |
+| スタイル      | [crafttweaker.api.util.text.MCStyle](/vanilla/api/util/text/MCStyle) | No description provided |
 
 
 ### setBold
@@ -122,9 +122,9 @@ myMCStyle.mergeStyle(crafttweaker.api.util.text.MCStyle);
 myMCStyle.setBold(boldIn as Boolean);
 ```
 
-| パラメータ  | タイプ     | 説明           |
-| ------ | ------- | ------------ |
-| boldIn | Boolean | 説明が提供されていません |
+| Parameter | Type    | Description             |
+| --------- | ------- | ----------------------- |
+| boldIn    | Boolean | No description provided |
 
 
 ### setColor
@@ -135,9 +135,9 @@ myMCStyle.setBold(boldIn as Boolean);
 myMCStyle.setColor(crafttweaker.api.text.TextFormating);
 ```
 
-| パラメータ | タイプ                                                                           | 説明           |
-| ----- | ----------------------------------------------------------------------------- | ------------ |
-| 書式設定  | [crafttweaker.api.text.TextFormatting](/crafttweaker/api/text/TextFormatting) | 説明が提供されていません |
+| Parameter | Type                                                                          | Description             |
+| --------- | ----------------------------------------------------------------------------- | ----------------------- |
+| 書式設定      | [crafttweaker.api.text.TextFormatting](/crafttweaker/api/text/TextFormatting) | No description provided |
 
 
 
@@ -147,9 +147,9 @@ myMCStyle.setColor(crafttweaker.api.text.TextFormating);
 myMCStyle.setColor(color as int);
 ```
 
-| パラメータ | タイプ | 説明           |
-| ----- | --- | ------------ |
-| 色     | int | 説明が提供されていません |
+| Parameter | Type | Description             |
+| --------- | ---- | ----------------------- |
+| 色         | int  | No description provided |
 
 
 ### setFontId
@@ -160,9 +160,9 @@ myMCStyle.setColor(color as int);
 myMCStyle.setFontId(location as crafttweaker.api.util.MCResourceLocation);
 ```
 
-| パラメータ | タイプ                                                                              | 説明           |
-| ----- | -------------------------------------------------------------------------------- | ------------ |
-| 場所    | [crafttweaker.api.util.MCResourceLocation](/vanilla/api/util/MCResourceLocation) | 説明が提供されていません |
+| Parameter | Type                                                                             | Description             |
+| --------- | -------------------------------------------------------------------------------- | ----------------------- |
+| 場所        | [crafttweaker.api.util.MCResourceLocation](/vanilla/api/util/MCResourceLocation) | No description provided |
 
 
 ### 設定フォーマット
@@ -173,9 +173,9 @@ myMCStyle.setFontId(location as crafttweaker.api.util.MCResourceLocation);
 myMCStyle.setFormatting(crafttweaker.api.text.TextFormating);
 ```
 
-| パラメータ | タイプ                                                                           | 説明           |
-| ----- | ----------------------------------------------------------------------------- | ------------ |
-| 書式設定  | [crafttweaker.api.text.TextFormatting](/crafttweaker/api/text/TextFormatting) | 説明が提供されていません |
+| Parameter | Type                                                                          | Description             |
+| --------- | ----------------------------------------------------------------------------- | ----------------------- |
+| 書式設定      | [crafttweaker.api.text.TextFormatting](/crafttweaker/api/text/TextFormatting) | No description provided |
 
 
 ### setInsertion
@@ -188,9 +188,9 @@ myMCStyle.setFormatting(crafttweaker.api.text.TextFormating);
 myMCStyle.setInsertion(insertion as String);
 ```
 
-| パラメータ | タイプ  | 説明           |
-| ----- | ---- | ------------ |
-| 挿入    | 文字列型 | 説明が提供されていません |
+| Parameter | Type   | Description             |
+| --------- | ------ | ----------------------- |
+| 挿入        | String | No description provided |
 
 
 ### setItalic
@@ -201,9 +201,9 @@ myMCStyle.setInsertion(insertion as String);
 myMCStyle.setItalic(italic as Boolean);
 ```
 
-| パラメータ  | タイプ     | 説明           |
-| ------ | ------- | ------------ |
-| italic | Boolean | 説明が提供されていません |
+| Parameter | Type    | Description             |
+| --------- | ------- | ----------------------- |
+| italic    | Boolean | No description provided |
 
 
 ### setObfuscated
@@ -214,9 +214,9 @@ myMCStyle.setItalic(italic as Boolean);
 myMCStyle.setObfuscated(obfuscated as Boolean);
 ```
 
-| パラメータ | タイプ     | 説明           |
-| ----- | ------- | ------------ |
-| 難読化   | Boolean | 説明が提供されていません |
+| Parameter  | Type    | Description             |
+| ---------- | ------- | ----------------------- |
+| obfuscated | Boolean | No description provided |
 
 
 ### setStrikethrough
@@ -227,9 +227,9 @@ myMCStyle.setObfuscated(obfuscated as Boolean);
 myMCStyle.setStrikethrough(Booleanとしての取り消し);
 ```
 
-| パラメータ | タイプ     | 説明           |
-| ----- | ------- | ------------ |
-| 取り消し線 | Boolean | 説明が提供されていません |
+| Parameter     | Type    | Description             |
+| ------------- | ------- | ----------------------- |
+| strikethrough | Boolean | No description provided |
 
 
 ### setUnderlined
@@ -240,9 +240,9 @@ myMCStyle.setStrikethrough(Booleanとしての取り消し);
 myMCStyle.setUnderlined(Booleanとして下線を引く);
 ```
 
-| パラメータ | タイプ     | 説明           |
-| ----- | ------- | ------------ |
-| 下線付き  | Boolean | 説明が提供されていません |
+| Parameter | Type    | Description             |
+| --------- | ------- | ----------------------- |
+| 下線付き      | Boolean | No description provided |
 
 
 
@@ -252,14 +252,14 @@ myMCStyle.setUnderlined(Booleanとして下線を引く);
 myMCStyle.setUnderlined(underlined)
 ```
 
-| パラメータ | タイプ      | 説明           |
-| ----- | -------- | ------------ |
-| 下線付き  | boolean型 | 説明が提供されていません |
+| Parameter | Type     | Description             |
+| --------- | -------- | ----------------------- |
+| 下線付き      | boolean型 | No description provided |
 
 
 ### toString
 
-戻り値の型: String
+Return type: String
 
 ```zenscript
 myMCStyle.toString();

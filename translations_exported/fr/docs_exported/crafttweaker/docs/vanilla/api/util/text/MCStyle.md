@@ -1,35 +1,35 @@
 # MCStyle
 
-Cette classe a été ajoutée par un mod avec le mod-id `crafttweaker`. Vous devez donc avoir ce mod installé si vous voulez utiliser cette fonctionnalité.
+This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
 
-## Importation de la classe
-Il pourrait vous être nécessaire d'importer le paquet si vous rencontrez des problèmes (comme lancer un tableau), alors mieux être sûr que désolé et ajouter l'importation.
+## Importing the class
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
 ```zenscript
 crafttweaker.api.util.text.MCStyle
 ```
 
-## Constructeurs
+## Constructors
 ```zenscript
 new crafttweaker.api.util.text.MCStyle();
 ```
 
-## Méthodes
-### est égal à
+## Methods
+### equals
 
-Type de retour: booléen
+Return type: boolean
 
 ```zenscript
 myMCStyle.equals(other as Object);
 ```
 
-| Paramètre | Type de texte | Libellé                    |
-| --------- | ------------- | -------------------------- |
-| autres    | Objet         | Aucune description fournie |
+| Parameter | Type   | Description             |
+| --------- | ------ | ----------------------- |
+| other     | Object | No description provided |
 
 
 ### getBold
 
-Type de retour: booléen
+Return type: boolean
 
 ```zenscript
 myMCStyle.getBold();
@@ -45,7 +45,7 @@ myMCStyle.getFontId();
 
 ### Obtenir l'insertion
 
-Type de retour: chaîne de caractères
+Return type: String
 
 ```zenscript
 myMCStyle.getInsertion();
@@ -53,7 +53,7 @@ myMCStyle.getInsertion();
 
 ### getItalic
 
-Type de retour: booléen
+Return type: boolean
 
 ```zenscript
 myMCStyle.getItalic();
@@ -61,7 +61,7 @@ myMCStyle.getItalic();
 
 ### format@@0 getObfuscated
 
-Type de retour: booléen
+Return type: boolean
 
 ```zenscript
 myMCStyle.getObfuscated();
@@ -69,7 +69,7 @@ myMCStyle.getObfuscated();
 
 ### format@@0 getStrikethrough
 
-Type de retour: booléen
+Return type: boolean
 
 ```zenscript
 myMCStyle.getStrikethrough();
@@ -77,7 +77,7 @@ myMCStyle.getStrikethrough();
 
 ### devenez souligné
 
-Type de retour: booléen
+Return type: boolean
 
 ```zenscript
 myMCStyle.getUnderlined();
@@ -85,7 +85,7 @@ myMCStyle.getUnderlined();
 
 ### hashCode
 
-Type de retour: int
+Return type: int
 
 ```zenscript
 myMCStyle.hashCode();
@@ -95,7 +95,7 @@ myMCStyle.hashCode();
 
 Si ce style est vide ou non (hérite de tout le parent).
 
-Type de retour: booléen
+Return type: boolean
 
 ```zenscript
 myMCStyle.isEmpty();
@@ -109,9 +109,9 @@ Type de retour : [crafttweaker.api.util.text.MCStyle](/vanilla/api/util/text/MCS
 myMCStyle.mergeStyle(style comme crafttweaker.api.util.text.MCStyle);
 ```
 
-| Paramètre | Type de texte                                                        | Libellé                    |
-| --------- | -------------------------------------------------------------------- | -------------------------- |
-| style     | [crafttweaker.api.util.text.MCStyle](/vanilla/api/util/text/MCStyle) | Aucune description fournie |
+| Parameter | Type                                                                 | Description             |
+| --------- | -------------------------------------------------------------------- | ----------------------- |
+| style     | [crafttweaker.api.util.text.MCStyle](/vanilla/api/util/text/MCStyle) | No description provided |
 
 
 ### setBold
@@ -122,9 +122,9 @@ Type de retour : [crafttweaker.api.util.text.MCStyle](/vanilla/api/util/text/MCS
 myMCStyle.setBold(boldIn comme booléen);
 ```
 
-| Paramètre | Type de texte | Libellé                    |
-| --------- | ------------- | -------------------------- |
-| boldIn    | Boolean       | Aucune description fournie |
+| Parameter | Type    | Description             |
+| --------- | ------- | ----------------------- |
+| boldIn    | Boolean | No description provided |
 
 
 ### définir la couleur
@@ -135,9 +135,9 @@ Type de retour : [crafttweaker.api.util.text.MCStyle](/vanilla/api/util/text/MCS
 myMCStyle.setColor(formatage comme crafttweaker.api.text.TextFormatting);
 ```
 
-| Paramètre     | Type de texte                                                                 | Libellé                    |
-| ------------- | ----------------------------------------------------------------------------- | -------------------------- |
-| mise en forme | [crafttweaker.api.text.TextFormatting](/crafttweaker/api/text/TextFormatting) | Aucune description fournie |
+| Parameter     | Type                                                                          | Description             |
+| ------------- | ----------------------------------------------------------------------------- | ----------------------- |
+| mise en forme | [crafttweaker.api.text.TextFormatting](/crafttweaker/api/text/TextFormatting) | No description provided |
 
 
 
@@ -147,9 +147,9 @@ Type de retour : [crafttweaker.api.util.text.MCStyle](/vanilla/api/util/text/MCS
 myMCStyle.setColor(color as int);
 ```
 
-| Paramètre | Type de texte | Libellé                    |
-| --------- | ------------- | -------------------------- |
-| couleur   | Indice        | Aucune description fournie |
+| Parameter | Type | Description             |
+| --------- | ---- | ----------------------- |
+| couleur   | int  | No description provided |
 
 
 ### setFontId
@@ -160,9 +160,9 @@ Type de retour : [crafttweaker.api.util.text.MCStyle](/vanilla/api/util/text/MCS
 myMCStyle.setFontId(emplacement comme emplacement crafttweaker.api.util.MCResourceLocation);
 ```
 
-| Paramètre    | Type de texte                                                                              | Libellé                    |
-| ------------ | ------------------------------------------------------------------------------------------ | -------------------------- |
-| Localisation | [format@@0 crafttweaker.api.util.MCResourceLocation](/vanilla/api/util/MCResourceLocation) | Aucune description fournie |
+| Parameter    | Type                                                                             | Description             |
+| ------------ | -------------------------------------------------------------------------------- | ----------------------- |
+| Localisation | [crafttweaker.api.util.MCResourceLocation](/vanilla/api/util/MCResourceLocation) | No description provided |
 
 
 ### format@@0 setFormatting
@@ -173,9 +173,9 @@ Type de retour : [crafttweaker.api.util.text.MCStyle](/vanilla/api/util/text/MCS
 myMCStyle.setFormatting(mise en forme comme crafttweaker.api.text.TextFormatting);
 ```
 
-| Paramètre     | Type de texte                                                                 | Libellé                    |
-| ------------- | ----------------------------------------------------------------------------- | -------------------------- |
-| mise en forme | [crafttweaker.api.text.TextFormatting](/crafttweaker/api/text/TextFormatting) | Aucune description fournie |
+| Parameter     | Type                                                                          | Description             |
+| ------------- | ----------------------------------------------------------------------------- | ----------------------- |
+| mise en forme | [crafttweaker.api.text.TextFormatting](/crafttweaker/api/text/TextFormatting) | No description provided |
 
 
 ### setInsertion
@@ -188,9 +188,9 @@ Type de retour : [crafttweaker.api.util.text.MCStyle](/vanilla/api/util/text/MCS
 myMCStyle.setInsertion(insertion en tant que String);
 ```
 
-| Paramètre | Type de texte        | Libellé                    |
-| --------- | -------------------- | -------------------------- |
-| insertion | Chaîne de caractères | Aucune description fournie |
+| Parameter | Type   | Description             |
+| --------- | ------ | ----------------------- |
+| insertion | String | No description provided |
 
 
 ### setItalic
@@ -201,9 +201,9 @@ Type de retour : [crafttweaker.api.util.text.MCStyle](/vanilla/api/util/text/MCS
 myMCStyle.setItalic(italique comme booléen);
 ```
 
-| Paramètre | Type de texte | Libellé                    |
-| --------- | ------------- | -------------------------- |
-| italic    | Boolean       | Aucune description fournie |
+| Parameter | Type    | Description             |
+| --------- | ------- | ----------------------- |
+| italic    | Boolean | No description provided |
 
 
 ### format@@0 setObfuscated
@@ -214,9 +214,9 @@ Type de retour : [crafttweaker.api.util.text.MCStyle](/vanilla/api/util/text/MCS
 myMCStyle.setObfuscated(obfusqué comme Boolean);
 ```
 
-| Paramètre | Type de texte | Libellé                    |
-| --------- | ------------- | -------------------------- |
-| obfusqué  | Boolean       | Aucune description fournie |
+| Parameter  | Type    | Description             |
+| ---------- | ------- | ----------------------- |
+| obfuscated | Boolean | No description provided |
 
 
 ### setStrikethrough
@@ -227,9 +227,9 @@ Type de retour : [crafttweaker.api.util.text.MCStyle](/vanilla/api/util/text/MCS
 myMCStyle.setStrikethrough(strikethrough as Boolean);
 ```
 
-| Paramètre | Type de texte | Libellé                    |
-| --------- | ------------- | -------------------------- |
-| barré     | Boolean       | Aucune description fournie |
+| Parameter     | Type    | Description             |
+| ------------- | ------- | ----------------------- |
+| strikethrough | Boolean | No description provided |
 
 
 ### soulignée
@@ -240,9 +240,9 @@ Type de retour : [crafttweaker.api.util.text.MCStyle](/vanilla/api/util/text/MCS
 myMCStyle.setUnderlined(souligné comme booléen);
 ```
 
-| Paramètre | Type de texte | Libellé                    |
-| --------- | ------------- | -------------------------- |
-| souligné  | Boolean       | Aucune description fournie |
+| Parameter | Type    | Description             |
+| --------- | ------- | ----------------------- |
+| souligné  | Boolean | No description provided |
 
 
 
@@ -252,14 +252,14 @@ Type de retour : [crafttweaker.api.util.text.MCStyle](/vanilla/api/util/text/MCS
 myMCStyle.setUnderlined(souligné comme booléen);
 ```
 
-| Paramètre | Type de texte | Libellé                    |
-| --------- | ------------- | -------------------------- |
-| souligné  | boolean       | Aucune description fournie |
+| Parameter | Type    | Description             |
+| --------- | ------- | ----------------------- |
+| souligné  | boolean | No description provided |
 
 
 ### toString
 
-Type de retour: chaîne de caractères
+Return type: String
 
 ```zenscript
 myMCStyle.toString();

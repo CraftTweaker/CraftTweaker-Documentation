@@ -8,8 +8,8 @@
 crafttweaker.api.commands.custom.MCSuggestionsBuilder
 ```
 
-## Методы
-### Добавить
+## Methods
+### add
 
 Тип возврата: [crafttweaker.api.commands.custom.MCSuggestionsBuilder](/vanilla/api/commands/custom/MCSuggestionsBuilder)
 
@@ -17,12 +17,12 @@ crafttweaker.api.commands.custom.MCSuggestionsBuilder
 myMCSuggestionsBuilder.add(другой как crafttweaker.api.commands.custom.MCSuggestionsBuilder);
 ```
 
-| Параметр | Тип                                                                                                        | Описание             |
+| Параметр | Тип                                                                                                        | Description          |
 | -------- | ---------------------------------------------------------------------------------------------------------- | -------------------- |
-| другой   | [crafttweaker.api.commands.custom.MCSuggestionsBuilder](/vanilla/api/commands/custom/MCSuggestionsBuilder) | Описание отсутствует |
+| other    | [crafttweaker.api.commands.custom.MCSuggestionsBuilder](/vanilla/api/commands/custom/MCSuggestionsBuilder) | Описание отсутствует |
 
 
-### сборка
+### build
 
 Тип возврата: [crafttweaker.api.commands.custom.MCSuggestions](/vanilla/api/commands/custom/MCSuggestions)
 
@@ -38,27 +38,27 @@ myMCSuggestionsBuilder.build();
 myMCSuggestionsBuilder.createOffset(стартовать как int);
 ```
 
-| Параметр | Тип | Описание             |
+| Параметр | Тип | Description          |
 | -------- | --- | -------------------- |
 | старт    | int | Описание отсутствует |
 
 
-### равно
+### equals
 
-Тип возврата: логическое значение
+Return type: boolean
 
 ```zenscript
 myMCSuggestionsBuilder.equals(o as Object);
 ```
 
-| Параметр | Тип    | Описание             |
+| Параметр | Тип    | Description          |
 | -------- | ------ | -------------------- |
-| о        | Объект | Описание отсутствует |
+| o        | Object | Описание отсутствует |
 
 
 ### getInput
 
-Тип возврата: строка
+Return type: String
 
 ```zenscript
 myMCSuggestionsBuilder.getInput();
@@ -66,7 +66,7 @@ myMCSuggestionsBuilder.getInput();
 
 ### получить оставшееся
 
-Тип возврата: строка
+Return type: String
 
 ```zenscript
 myMCSuggestionsBuilder.getRemaining();
@@ -74,7 +74,7 @@ myMCSuggestionsBuilder.getRemaining();
 
 ### getStart
 
-Тип возврата: int
+Return type: int
 
 ```zenscript
 myMCSuggestionsBuilder.getStart();
@@ -82,7 +82,7 @@ myMCSuggestionsBuilder.getStart();
 
 ### hashCode
 
-Тип возврата: int
+Return type: int
 
 ```zenscript
 myMCSuggestionsBuilder.hashCode();
@@ -104,7 +104,7 @@ myMCSuggestionsBuilder.restart();
 myMCSuggestionsBuilder.proposest(текст как строка);
 ```
 
-| Параметр | Тип    | Описание             |
+| Параметр | Тип    | Description          |
 | -------- | ------ | -------------------- |
 | текст    | String | Описание отсутствует |
 
@@ -116,7 +116,7 @@ myMCSuggestionsBuilder.proposest(текст как строка);
 myMCSuggestionsBuilder.proposest(value as int);
 ```
 
-| Параметр | Тип | Описание             |
+| Параметр | Тип | Description          |
 | -------- | --- | -------------------- |
 | value    | int | Описание отсутствует |
 
@@ -128,7 +128,7 @@ myMCSuggestionsBuilder.proposest(value as int);
 myMCSuggestionsBuilder.proposest(text as String, tooltip as String);
 ```
 
-| Параметр  | Тип    | Описание             |
+| Параметр  | Тип    | Description          |
 | --------- | ------ | -------------------- |
 | текст     | String | Описание отсутствует |
 | подсказка | String | Описание отсутствует |
@@ -141,7 +141,7 @@ myMCSuggestionsBuilder.proposest(text as String, tooltip as String);
 myMCSuggestionsBuilder.proposest(value as int, tooltip as String);
 ```
 
-| Параметр  | Тип    | Описание             |
+| Параметр  | Тип    | Description          |
 | --------- | ------ | -------------------- |
 | value     | int    | Описание отсутствует |
 | подсказка | String | Описание отсутствует |
@@ -149,7 +149,7 @@ myMCSuggestionsBuilder.proposest(value as int, tooltip as String);
 
 ### toString
 
-Тип возврата: строка
+Return type: String
 
 ```zenscript
 myMCSuggestionsBuilder.toString();
@@ -163,9 +163,9 @@ myMCSuggestionsBuilder.toString();
 myMCSuggestionsBuilder == o как объект
 ```
 
-| Параметр | Тип    | Описание             |
+| Параметр | Тип    | Description          |
 | -------- | ------ | -------------------- |
-| о        | Объект | Описание отсутствует |
+| o        | Object | Описание отсутствует |
 
 ## Утилиты
 

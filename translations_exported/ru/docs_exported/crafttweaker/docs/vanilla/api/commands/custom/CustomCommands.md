@@ -8,7 +8,7 @@
 crafttweaker.api.commands.custom.CustomCommands
 ```
 
-## Методы
+## Methods
 ### аргумент
 
 Тип возврата: [crafttweaker.api.commands.custom.MCRequiredArgumentBuilder](/vanilla/api/commands/custom/MCRequiredArgumentBuilder)
@@ -17,9 +17,9 @@ crafttweaker.api.commands.custom.CustomCommands
 crafttweaker.api.commands.custom.CustomCommands.argument(name as String);
 ```
 
-| Параметр | Тип    | Описание             |
+| Параметр | Тип    | Description          |
 | -------- | ------ | -------------------- |
-| имя      | String | Описание отсутствует |
+| name     | String | Описание отсутствует |
 
 
 ### литерал
@@ -30,9 +30,9 @@ crafttweaker.api.commands.custom.CustomCommands.argument(name as String);
 crafttweaker.api.commands.custom.CustomCommands.literal(name as String);
 ```
 
-| Параметр | Тип    | Описание             |
+| Параметр | Тип    | Description          |
 | -------- | ------ | -------------------- |
-| имя      | String | Описание отсутствует |
+| name     | String | Описание отсутствует |
 
 
 ### registerCommand
@@ -41,7 +41,7 @@ crafttweaker.api.commands.custom.CustomCommands.literal(name as String);
 crafttweaker.api.commands.custom.CustomCommands.registerCommand(builder as crafttweaker.api.commands.custom.MCLiteralArgumentBuilder);
 ```
 
-| Параметр    | Тип                                                                                                                | Описание             |
+| Параметр    | Тип                                                                                                                | Description          |
 | ----------- | ------------------------------------------------------------------------------------------------------------------ | -------------------- |
 | конструктор | [crafttweaker.api.commands.custom.MCLiteralArgumentBuilder](/vanilla/api/commands/custom/MCLiteralArgumentBuilder) | Описание отсутствует |
 

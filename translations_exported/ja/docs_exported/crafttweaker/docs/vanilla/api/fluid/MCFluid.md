@@ -1,18 +1,18 @@
 # MCFluid
 
-crafttweakerのmod-idを持つmodによって追加されているクラスです。 従って、この機能を利用する場合はこのmodをインストールする必要があります。
+This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
 
-## クラスのインポート
-問題が発生した場合には、インポートが必要になります。とはいえ、お手数ですが予めインポートしておくほうが安全です。
+## Importing the class
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
 ```zenscript
 crafttweaker.api.fluid.MCFluid
 ```
 
-## 実装されたインターフェース
-MCFluid は以下のインタフェースを実装しています。 つまり、利用可能な任意のメソッドはこのクラスでも使用できます。
-- [craftweaker.api.brackets.CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
+## Implemented Interfaces
+MCFluid は以下のインタフェースを実装しています。 That means any method available to them can also be used on this class.
+- [crafttweaker.api.brackets.CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
 
-## メソッド
+## Methods
 ### makeStack
 
 指定した流体の量で新しい [crafttweaker.api.fluid.IFluidStack](/vanilla/api/fluid/IFluidStack) を作成します。
@@ -26,17 +26,17 @@ myMCFluid.makeStack(amount as int);
 myMCFluid.makeStack(1000);
 ```
 
-| パラメータ | タイプ | 説明           |
-| ----- | --- | ------------ |
-| 金額    | int | 説明が提供されていません |
+| Parameter | Type | Description             |
+| --------- | ---- | ----------------------- |
+| amount    | int  | No description provided |
 
 
 
-## プロパティー
+## Properties
 
-| 名称            | タイプ  | ゲッターあり | セッターあり |
-| ------------- | ---- | ------ | ------ |
-| commandString | 文字列型 | true   | false  |
+| 名称            | Type   | Has Getter | Has Setter |
+| ------------- | ------ | ---------- | ---------- |
+| commandString | String | true       | false      |
 
 ## 演算子
 ### MUL
@@ -50,7 +50,7 @@ myMCFluid * amount as int
 myMCFluid * 1000
 ```
 
-| パラメータ | タイプ | 説明           |
-| ----- | --- | ------------ |
-| 金額    | int | 説明が提供されていません |
+| Parameter | Type | Description             |
+| --------- | ---- | ----------------------- |
+| amount    | int  | No description provided |
 

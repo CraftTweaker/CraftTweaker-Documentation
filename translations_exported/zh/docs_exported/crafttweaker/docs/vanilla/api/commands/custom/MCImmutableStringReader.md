@@ -11,27 +11,27 @@ craftminstruer.api.commands.custom.MCImmutableStringReader
 ## 方法
 ### canRead
 
-返回类型：布尔值
+Return type: boolean
 
 ```zenscript
 myMCImmutableStringReader.canRead();
 ```
 
 
-返回类型：布尔值
+Return type: boolean
 
 ```zenscript
 myMCImmutableStringReader.canReader.myMCenRetable(含有500个)；
 ```
 
-| 参数   | 类型 | 描述                      |
-| ---- | -- | ----------------------- |
-| arg0 | 整数 | No description provided |
+| 参数   | 类型  | 描述                      |
+| ---- | --- | ----------------------- |
+| arg0 | int | No description provided |
 
 
 ### getCursor
 
-返回类型：int
+Return type: int
 
 ```zenscript
 myMCImmutableStringReader.getCursor();
@@ -39,7 +39,7 @@ myMCImmutableStringReader.getCursor();
 
 ### getRead
 
-返回类型：字符串
+Return type: String
 
 ```zenscript
 myMCImmutableStringReader.getRead();
@@ -47,7 +47,7 @@ myMCImmutableStringReader.getRead();
 
 ### 剩余时间
 
-返回类型：字符串
+Return type: String
 
 ```zenscript
 myMCImmutableStringReader.getRemaining();
@@ -55,7 +55,7 @@ myMCImmutableStringReader.getRemaining();
 
 ### getRemaining长度
 
-返回类型：int
+Return type: int
 
 ```zenscript
 myMCImmutableStringReader.getRemainingLength();
@@ -63,7 +63,7 @@ myMCImmutableStringReader.getRemainingLength();
 
 ### getString #获取字符串
 
-返回类型：字符串
+Return type: String
 
 ```zenscript
 myMCImmutableStringReader.getString();
@@ -71,7 +71,7 @@ myMCImmutableStringReader.getString();
 
 ### getTotalLength
 
-返回类型：int
+Return type: int
 
 ```zenscript
 myMCImmutableStringReader.getTotalLength();
@@ -92,9 +92,9 @@ myMCImmutableStringReader.peek();
 myMCImmutableStringReader.peek(包含)
 ```
 
-| 参数   | 类型 | 描述                      |
-| ---- | -- | ----------------------- |
-| arg0 | 整数 | No description provided |
+| 参数   | 类型  | 描述                      |
+| ---- | --- | ----------------------- |
+| arg0 | int | No description provided |
 
 
 

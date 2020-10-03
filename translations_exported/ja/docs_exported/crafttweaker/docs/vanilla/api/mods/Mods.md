@@ -1,14 +1,16 @@
 # Mods
 
-crafttweakerのmod-idを持つmodによって追加されているクラスです。 従って、この機能を利用する場合はこのmodをインストールする必要があります。
+登録されているすべてのModの情報を保持します。 `loadedMods` global keyword を使ってアクセスできます
 
-## クラスのインポート
-問題が発生した場合には、インポートが必要になります。とはいえ、お手数ですが予めインポートしておくほうが安全です。
+This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
+
+## Importing the class
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
 ```zenscript
 crafttweaker.api.mods.Mods
 ```
 
-## メソッド
+## Methods
 ### getMod
 
 特定のModを取得します
@@ -18,13 +20,13 @@ crafttweaker.api.mods.Mods
 戻り値の型: [crafttweaker.api.mods.ModInfo](/vanilla/api/mods/ModInfo)
 
 ```zenscript
-myMods.getMod(modid as String);
-myMods.getMod("minecraft");
+loadedMods.getMod(modid as String);
+loadedMods.getMod("minecraft");
 ```
 
-| パラメータ | タイプ  | 説明           |
-| ----- | ---- | ------------ |
-| modid | 文字列型 | 説明が提供されていません |
+| Parameter | Type   | Description             |
+| --------- | ------ | ----------------------- |
+| modid     | String | No description provided |
 
 
 ### isModLoaded
@@ -33,23 +35,23 @@ Modがローディングされているか確認します。
 
  戻り値: `Modがロードされている場合は true`
 
-戻り値の型: boolean
+Return type: boolean
 
 ```zenscript
-myMods.isModLoaded(modo as String);
-myMods.isModLoaded("minecraft");
+loadedMods.isModLoaded(modied as String);
+loadedModLoaded("minecraft");
 ```
 
-| パラメータ | タイプ  | 説明          |
-| ----- | ---- | ----------- |
-| modid | 文字列型 | 確認しなければならない |
+| Parameter | Type   | Description |
+| --------- | ------ | ----------- |
+| modid     | String | 確認しなければならない |
 
 
 
-## プロパティー
+## Properties
 
-| 名称  | タイプ                                                                                | ゲッターあり | セッターあり |
-| --- | ---------------------------------------------------------------------------------- | ------ | ------ |
-| Mod | List&lt;[crafttweaker.api.mods.ModInfo](/vanilla/api/mods/ModInfo)&gt; | true   | false  |
-| サイズ | int                                                                                | true   | false  |
+| 名称   | Type                                                                               | Has Getter | Has Setter |
+| ---- | ---------------------------------------------------------------------------------- | ---------- | ---------- |
+| Mod  | List&lt;[crafttweaker.api.mods.ModInfo](/vanilla/api/mods/ModInfo)&gt; | true       | false      |
+| size | int                                                                                | true       | false      |
 

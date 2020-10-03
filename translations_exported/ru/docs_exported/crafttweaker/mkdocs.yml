@@ -2,13 +2,13 @@
     - Api:
       - BracketHandlers: 'vanilla/api/BracketHandlers.md'
       - Блок:
-        - Материал:
+        - Material:
           - MCMaterial: 'vanilla/api/block/material/MCMaterial.md'
       - Блоки:
-        - MCBlock: 'ванильная/api/blocks/MCBlock.md'
-        - MCBlockState: 'ванильная/api/blocks/MCBlockState.md'
+        - MCBlock: 'vanilla/api/blocks/MCBlock.md'
+        - MCBlockState: 'vanilla/api/blocks/MCBlockState.md'
       - Скобки:
-        - Отображаемый команд: 'vanilla/api/brackets/CommandStringDisplayable.md'
+        - CommandStringDisplayable: 'vanilla/api/brackets/CommandStringDisplayable.md'
       - Команды:
         - Пользовательский:
           - Пользовательские команды: 'vanilla/api/commands/custom/CustomCommands.md'
@@ -53,31 +53,32 @@
         - LongData: 'vanilla/api/data/LongData.md'
         - MapData: 'vanilla/api/data/MapData.md'
         - ShortData: 'vanilla/api/data/ShortData.md'
-        - Строчные данные: 'ванилья/api/data/StringData.md'
+        - StringData: 'vanilla/api/data/StringData.md'
       - Сущности:
-        - Классификация MCEntityClassification: 'ванильная/api/entities/MCEntityClassification.md'
+        - MCEntityClassification: 'vanilla/api/entities/MCEntityClassification.md'
         - MCEntityType: 'vanilla/api/entities/MCEntityType.md'
       - Жидкость:
         - IFluidStack: 'vanilla/api/fluid/IFluidStack.md'
         - MCFluid: 'vanilla/api/fluid/MCFluid.md'
-      - Еда:
+      - Food:
         - MCFood: 'vanilla/api/food/MCFood.md'
       - Предметы:
-        - Ингредиент: 'ванильная/api/items/IIngredient.md'
+        - IIngredient: 'vanilla/api/items/IIngredient.md'
         - Преобразователь ингредиентов: ванильная/api/элементы/преобразователя.md'
         - Преобразователь ингредиентов: ванильная/api/элементы/преобразователя.md'
         - IItemStack: 'vanilla/api/items/IItemStack.md'
         - Список ингредиентов: 'ванильная/api/элементы/ингредиенты.md'
         - MCIngredientConditioned: 'ванильная/api/items/MCIngredientConditioned.md'
         - MCIngredientTransformed: 'ванильная/api/items/MCIngredientTransformed.md'
+        - MCWeightedItemStack: 'ванильная/api/items/MCWeightedItemStack.md'
       - Logger:
         - ILogger: 'vanilla/api/logger/ILogger.md'
-      - Менеджеры:
-        - Менеджер BlastFurnaceManager: 'ванилья/api/менеджеры/BlastFurnaceManager.md'
+      - Managers:
+        - BlastFurnaceManager: 'vanilla/api/managers/BlastFurnaceManager.md'
         - CampFireManager: 'vanilla/api/managers/CampFireManager.md'
         - CraftingTableManager: 'vanilla/api/managers/CraftingTableManager.md'
-        - Менеджер печей: 'ванильная/api/менеджеры/печка.md'
-        - Менеджер рецептов ICooking: "ванилья/api/менеджеры/ICookingRecipeManager.md"
+        - FurnaceManager: 'vanilla/api/managers/FurnaceManager.md'
+        - ICookingRecipeManager: 'vanilla/api/managers/ICookingRecipeManager.md'
         - IRecipeManager: 'vanilla/api/managers/IRecipeManager.md'
         - SmithingManager: 'vanilla/api/managers/SmithingManager.md'
         - SmokerManager: 'vanilla/api/managers/SmokerManager.md'
@@ -86,26 +87,26 @@
         - ModInfo: 'vanilla/api/mods/ModInfo.md'
         - Моды: 'vanilla/api/mods/Mods.md'
       - Зелья:
-        - MCPotion: 'ванильная/api/зелья/MCPotion.md'
-        - Эффект MCPotionEffect: 'ванильная/api/зелья/MCPotionEffect.md'
-        - Экземпляр MCPotionEffect: 'ванилья/api/potions/MCPotionEffectInstance.md'
-      - Рецепт:
-        - Рецепт: 'ванильная/api/рецепт/рецепт.md'
-        - Рецепт FunctionArray: 'ванильная/api/рецепт/рецептArray.md'
-        - Рецепт Матрицы: 'ванильная/api/рецепт/Рецептматрица.md'
-        - Функция рецепта: 'ванильная/api/рецепт/рецептFunctionSingle.md'
-      - Метки:
+        - MCPotion: 'vanilla/api/potions/MCPotion.md'
+        - MCPotionEffect: 'vanilla/api/potions/MCPotionEffect.md'
+        - MCPotionEffectInstance: 'vanilla/api/potions/MCPotionEffectInstance.md'
+      - Recipe:
+        - RecipeFilter: 'vanilla/api/recipe/RecipeFilter.md'
+        - RecipeFunctionArray: 'vanilla/api/recipe/RecipeFunctionArray.md'
+        - RecipeFunctionMatrix: 'vanilla/api/recipe/RecipeFunctionMatrix.md'
+        - RecipeFunctionSingle: 'vanilla/api/recipe/RecipeFunctionSingle.md'
+      - Tags:
         - MCTag: 'vanilla/api/tags/MCTag.md'
       - Util:
         - BlockPos: 'vanilla/api/util/BlockPos.md'
-        - Направление: 'ванильная/api/util/Direction.md'
-        - Направление: 'ванильная/api/util/DirectionAxis.md'
+        - Direction: 'vanilla/api/util/Direction.md'
+        - DirectionAxis: 'vanilla/api/util/DirectionAxis.md'
         - Расположение MCResource: 'vanilla/api/util/MCResourceLocation.md'
         - Текст:
           - MCStyle: 'vanilla/api/util/text/MCStyle.md'
           - MCTextComponent: 'vanilla/api/util/text/MCTextComponent.md'
       - Мир:
-        - MCBiome: 'ванильная/api/world/MCBiome.md'
+        - MCBiome: 'vanilla/api/world/MCBiome.md'
 
 - Crafttweaker:
     - Api:

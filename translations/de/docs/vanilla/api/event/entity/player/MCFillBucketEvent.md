@@ -1,27 +1,27 @@
 # MCFillBucketEvent
 
-Diese Klasse wurde von einer Mod mit mod-id `crafttweaker` hinzugefügt. Wenn Sie diese Funktion nutzen möchten, müssen Sie diese Mod installiert haben.
+This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
 
 ## Diese Klasse importieren
-Es kann erforderlich sein, dass Sie das Paket importieren, wenn Sie irgendwelche Probleme haben (wie zum Beispiel ein Array zu bearbeiten), also besser sicher sein als bedauern und fügen Sie den Import.
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
 ```zenscript
 crafttweaker.api.event.entity.player.MCFillBucketEvent
 ```
 
-## Konstrukteure
+## Constructors
 ```zenscript
-neue crafttweaker.api.event.entity.player.MCFillBucketEvent(Handler als Funktion.Verbraucher<crafttweaker.api.event.entity.player.MCFillBucketEvent>);
+new crafttweaker.api.event.entity.player.MCFillBucketEvent(handler as function.Consumer<crafttweaker.api.event.entity.player.MCFillBucketEvent>);
 ```
-| Parameter | Type                                                                                                                            | Beschreibung                 |
-| --------- | ------------------------------------------------------------------------------------------------------------------------------- | ---------------------------- |
-| handler   | function.Consumer<[crafttweaker.api.event.entity.player.MCFillBucketEvent](/vanilla/api/event/entity/player/MCFillBucketEvent)> | Keine Beschreibung angegeben |
+| Parameter | Type                                                                                                                            | Beschreibung            |
+| --------- | ------------------------------------------------------------------------------------------------------------------------------- | ----------------------- |
+| handler   | function.Consumer<[crafttweaker.api.event.entity.player.MCFillBucketEvent](/vanilla/api/event/entity/player/MCFillBucketEvent)> | No description provided |
 
 
 
 ## Methoden
 ### getEmptyBucket
 
-Gibt [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) zurück
+Returns [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
 
 ```zenscript
 myMCFillBucketEvent.getEmptyBucket();
@@ -29,7 +29,7 @@ myMCFillBucketEvent.getEmptyBucket();
 
 ### getEntityPlayer
 
-Gibt [craftweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity) zurück
+Returns [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
 
 ```zenscript
 myMCFillBucketEvent.getEntityPlayer();
@@ -37,7 +37,7 @@ myMCFillBucketEvent.getEntityPlayer();
 
 ### getFilledBucket
 
-Gibt [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) zurück
+Returns [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
 
 ```zenscript
 myMCFillBucketEvent.getFilledBucket();
@@ -45,55 +45,55 @@ myMCFillBucketEvent.getFilledBucket();
 
 ### getPlayer
 
-Rückgaben: `Spieler`
+Returns: `Player`
 
-Gibt [craftweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity) zurück
+Returns [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
 
 ```zenscript
 myMCFillBucketEvent.getPlayer();
 ```
 
-### hasergebnis
+### hasResult
 
-Legt fest, ob dieses Ereignis einen signifikanten Ergebniswert erwartet. Hinweis: Ereignisse mit der HasResult-Anmerkung werden diese Methode automatisch hinzugefügt, um wahr zurückzugeben.
+Determines if this event expects a significant result value. Note: Events with the HasResult annotation will have this method automatically added to return true.
 
-Rückgabewert boolesch
+Returns boolean
 
 ```zenscript
 myMCFillBucketEvent.hasResult();
 ```
 
-### isabbrechbar
+### isCancelable
 
-Legen Sie fest, ob diese Funktion überhaupt abgebrochen werden kann. Gibt zurück: `Wenn der Zugriff auf setCanceled erlaubt sein sollte
- Hinweis:
- Ereignisse mit der abbrechbaren Anmerkung werden diese Methode automatisch hinzugefügt, um true zurückzugeben.`
+Determine if this function is cancelable at all. Returns: `If access to setCanceled should be allowed
+ Note:
+ Events with the Cancelable annotation will have this method automatically added to return true.`
 
-Rückgabewert boolesch
+Returns boolean
 
 ```zenscript
 myMCFillBucketEvent.isCancelable();
 ```
 
-### ist abgebrochen
+### isCanceled
 
-Legen Sie fest, ob dieses Ereignis abgebrochen wird und nicht mehr ausgeführt werden soll. Rückgabe: `Der aktuell abgebrochene Status`
+Determine if this event is canceled and should stop executing. Returns: `The current canceled state`
 
-Rückgabewert boolesch
+Returns boolean
 
 ```zenscript
 myMCFillBucketEvent.isCanceled();
 ```
 
-### abgebrochen
+### setCanceled
 
 ```zenscript
-myMCFillBucketEvent.setCanceled(abbrechen als boolean);
+myMCFillBucketEvent.setCanceled(cancel as boolean);
 ```
 
-| Parameter | Type    | Beschreibung                 |
-| --------- | ------- | ---------------------------- |
-| abbrechen | boolean | Keine Beschreibung angegeben |
+| Parameter | Type    | Beschreibung            |
+| --------- | ------- | ----------------------- |
+| cancel    | boolean | No description provided |
 
 
 ### setFilledBucket
@@ -102,9 +102,9 @@ myMCFillBucketEvent.setCanceled(abbrechen als boolean);
 myMCFillBucketEvent.setFilledBucket(arg0 as crafttweaker.api.item.IItemStack);
 ```
 
-| Parameter | Type                                                              | Beschreibung                 |
-| --------- | ----------------------------------------------------------------- | ---------------------------- |
-| arg0      | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | Keine Beschreibung angegeben |
+| Parameter | Type                                                              | Beschreibung            |
+| --------- | ----------------------------------------------------------------- | ----------------------- |
+| arg0      | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | No description provided |
 
 
 

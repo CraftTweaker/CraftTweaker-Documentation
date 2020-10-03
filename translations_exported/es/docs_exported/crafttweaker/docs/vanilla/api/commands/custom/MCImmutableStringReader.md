@@ -1,37 +1,37 @@
 # Lector de cadena MCImmutable
 
-Esta clase fue añadida por un mod con la ID  `crafttweaker`. Necesitas tener este mod instalado si quieres usar esta caracteristica.
+This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
 
-## Importar la clase
-Puede ser requerido que importes el paquete si encuentras algun problema (como crear un Array).
+## Importing the class
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
 ```zenscript
 crafttweaker.api.commands.custom.MCImmutableStringReader
 ```
 
-## Métodos
+## Methods
 ### canRead
 
-Tipo de retorno: booleano
+Return type: boolean
 
 ```zenscript
 myMCImmutableStringReader.canRead();
 ```
 
 
-Tipo de retorno: booleano
+Return type: boolean
 
 ```zenscript
 myMCImmutableStringReader.canRead(arg0 as int);
 ```
 
-| Parámetro | Tipo | Descripción                   |
-| --------- | ---- | ----------------------------- |
-| arg0      | int  | No se proporcionó descripción |
+| Parameter | Type | Description             |
+| --------- | ---- | ----------------------- |
+| arg0      | int  | No description provided |
 
 
 ### getCursor
 
-Tipo de retorno: int
+Return type: int
 
 ```zenscript
 myMCImmutableStringReader.getCursor();
@@ -39,7 +39,7 @@ myMCImmutableStringReader.getCursor();
 
 ### getRead
 
-Tipo de retorno: Cadena
+Return type: String
 
 ```zenscript
 myMCImmutableStringReader.getRead();
@@ -47,7 +47,7 @@ myMCImmutableStringReader.getRead();
 
 ### Obtener restante
 
-Tipo de retorno: Cadena
+Return type: String
 
 ```zenscript
 myMCImmutableStringReader.getRemaining();
@@ -55,7 +55,7 @@ myMCImmutableStringReader.getRemaining();
 
 ### getRestante de longitud
 
-Tipo de retorno: int
+Return type: int
 
 ```zenscript
 myMCImmutableStringReader.getRemainingLength();
@@ -63,7 +63,7 @@ myMCImmutableStringReader.getRemainingLength();
 
 ### getString
 
-Tipo de retorno: Cadena
+Return type: String
 
 ```zenscript
 myMCImmutableStringReader.getString();
@@ -71,7 +71,7 @@ myMCImmutableStringReader.getString();
 
 ### getLongitud total
 
-Tipo de retorno: int
+Return type: int
 
 ```zenscript
 myMCImmutableStringReader.getTotalLength();
@@ -92,9 +92,9 @@ Tipo de retorno: caracteres
 myMCImmutableStringReader.peek(arg0 as int);
 ```
 
-| Parámetro | Tipo | Descripción                   |
-| --------- | ---- | ----------------------------- |
-| arg0      | int  | No se proporcionó descripción |
+| Parameter | Type | Description             |
+| --------- | ---- | ----------------------- |
+| arg0      | int  | No description provided |
 
 
 

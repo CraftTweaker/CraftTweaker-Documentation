@@ -21,9 +21,9 @@ MCBlockState实现了以下接口。 这意味着对这个接口可用的任何�
 myMCBlockState.getAllowedValuesForProperty(name as String);
 ```
 
-| 参数 | 类型          | 描述                      |
-| -- | ----------- | ----------------------- |
-| 名称 | 字符串[string] | No description provided |
+| 参数   | 类型     | 描述                      |
+| ---- | ------ | ----------------------- |
+| name | String | No description provided |
 
 
 ### getProperties #获取参数
@@ -44,28 +44,28 @@ myMCBlockState.getPropertyNames();
 
 ### getPropertyValue #获取参数值
 
-返回类型：字符串
+Return type: String
 
 ```zenscript
 myMCBlockState.getPropertyValue(name as String);
 ```
 
-| 参数 | 类型          | 描述                      |
-| -- | ----------- | ----------------------- |
-| 名称 | 字符串[string] | No description provided |
+| 参数   | 类型     | 描述                      |
+| ---- | ------ | ----------------------- |
+| name | String | No description provided |
 
 
 ### hasProperty #是否有参数存在
 
-返回类型：布尔值
+Return type: boolean
 
 ```zenscript
 myMCBlockState.hasProperty(name as String);
 ```
 
-| 参数 | 类型          | 描述                      |
-| -- | ----------- | ----------------------- |
-| 名称 | 字符串[string] | No description provided |
+| 参数   | 类型     | 描述                      |
+| ---- | ------ | ----------------------- |
+| name | String | No description provided |
 
 
 ### withProperty #参数数值
@@ -76,10 +76,10 @@ myMCBlockState.hasProperty(name as String);
 myMCBlockState.withProperty(name as String, value as String);
 ```
 
-| 参数    | 类型          | 描述                      |
-| ----- | ----------- | ----------------------- |
-| 名称    | 字符串[string] | No description provided |
-| value | 字符串[string] | No description provided |
+| 参数    | 类型     | 描述                      |
+| ----- | ------ | ----------------------- |
+| name  | String | No description provided |
+| value | String | No description provided |
 
 
 
@@ -87,19 +87,19 @@ myMCBlockState.withProperty(name as String, value as String);
 
 | 名称                     | 类型                                                            | 可获得  | 可设置   |
 | ---------------------- | ------------------------------------------------------------- | ---- | ----- |
-| 封禁                     | [crafttweaker.api.block.MCBlock](/vanilla/api/blocks/MCBlock) | true | false |
+| block                  | [crafttweaker.api.block.MCBlock](/vanilla/api/blocks/MCBlock) | true | false |
 | canProvidePower        | boolean                                                       | true | false |
-| commandString #命令字符串   | 字符串[string]                                                   | true | false |
+| commandString          | String                                                        | true | false |
 | hasTileEntity #具有方块实体  | boolean                                                       | true | false |
 | isSolid #是否为固体         | boolean                                                       | true | false |
 | isSticky #是否具有粘性       | boolean                                                       | true | false |
-| lightLevel             | 整数                                                            | true | false |
+| lightLevel             | int                                                           | true | false |
 | ticksRandomly #是否具有随机刻 | boolean                                                       | true | false |
 
-## 卡斯特尔
+## Casters
 
 | 结果类型                                                          | 是否隐藏  |
 | ------------------------------------------------------------- | ----- |
-| 字符串[string]                                                   | false |
+| String                                                        | false |
 | [crafttweaker.api.block.MCBlock](/vanilla/api/blocks/MCBlock) | true  |
 

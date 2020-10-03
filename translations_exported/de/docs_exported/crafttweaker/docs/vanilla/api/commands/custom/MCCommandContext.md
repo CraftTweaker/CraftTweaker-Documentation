@@ -1,9 +1,9 @@
 # MCCommandContext
 
-Diese Klasse wurde von einer Mod mit mod-id `crafttweaker` hinzugefügt. Wenn Sie diese Funktion nutzen möchten, müssen Sie diese Mod installiert haben.
+This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
 
 ## Diese Klasse importieren
-Es kann erforderlich sein, dass Sie das Paket importieren, wenn Sie irgendwelche Probleme haben (wie zum Beispiel ein Array zu bearbeiten), also besser sicher sein als bedauern und fügen Sie den Import.
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
 ```zenscript
 crafttweaker.api.commands.custom.MCCommandContext
 ```
@@ -17,35 +17,35 @@ Rückgabetyp: [craftweaker.api.commands.custom.MCCommandContext](/vanilla/api/co
 myMCCommandContext.copyFor(Quelle als crafttweaker.api.commands.custom.MCCommandSource);
 ```
 
-| Parameter | Type                                                                                             | Beschreibung                 |
-| --------- | ------------------------------------------------------------------------------------------------ | ---------------------------- |
-| quell     | [crafttweaker.api.commands.custom.MCCommandSource](/vanilla/api/commands/custom/MCCommandSource) | Keine Beschreibung angegeben |
+| Parameter | Type                                                                                             | Beschreibung            |
+| --------- | ------------------------------------------------------------------------------------------------ | ----------------------- |
+| quell     | [crafttweaker.api.commands.custom.MCCommandSource](/vanilla/api/commands/custom/MCCommandSource) | No description provided |
 
 
-### gleich
+### equals
 
-Rückgabetyp: boolesch
+Return type: boolean
 
 ```zenscript
 myMCCommandContext.equals(o als Objekt);
 ```
 
-| Parameter | Type   | Beschreibung                 |
-| --------- | ------ | ---------------------------- |
-| o         | Objekt | Keine Beschreibung angegeben |
+| Parameter | Type   | Beschreibung            |
+| --------- | ------ | ----------------------- |
+| o         | Object | No description provided |
 
 
 ### getArgument
 
-Rückgabetyp: String
+Return type: String
 
 ```zenscript
 myMCCommandContext.getArgument(Name als String);
 ```
 
-| Parameter | Type   | Beschreibung                 |
-| --------- | ------ | ---------------------------- |
-| name      | String | Keine Beschreibung angegeben |
+| Parameter | Type   | Beschreibung            |
+| --------- | ------ | ----------------------- |
+| name      | String | No description provided |
 
 
 ### getChild
@@ -66,7 +66,7 @@ myMCCommandContext.getCommand();
 
 ### getInput
 
-Rückgabetyp: String
+Return type: String
 
 ```zenscript
 myMCCommandContext.getInput();
@@ -122,7 +122,7 @@ myMCCommandContext.getSource();
 
 ### hasNodes
 
-Rückgabetyp: boolesch
+Return type: boolean
 
 ```zenscript
 myMCCommandContext.hasNodes();
@@ -130,7 +130,7 @@ myMCCommandContext.hasNodes();
 
 ### hashCode
 
-Rückgabetyp: int
+Return type: int
 
 ```zenscript
 myMCCommandContext.hashCode();
@@ -138,7 +138,7 @@ myMCCommandContext.hashCode();
 
 ### isForked
 
-Rückgabetyp: boolesch
+Return type: boolean
 
 ```zenscript
 myMCCommandContext.isForked();
@@ -146,7 +146,7 @@ myMCCommandContext.isForked();
 
 ### toString
 
-Rückgabetyp: String
+Return type: String
 
 ```zenscript
 myMCCommandContext.toString();
@@ -160,13 +160,13 @@ myMCCommandContext.toString();
 myMCCommandContext == o als Objekt
 ```
 
-| Parameter | Type   | Beschreibung                 |
-| --------- | ------ | ---------------------------- |
-| o         | Objekt | Keine Beschreibung angegeben |
+| Parameter | Type   | Beschreibung            |
+| --------- | ------ | ----------------------- |
+| o         | Object | No description provided |
 
-## Zauberer
+## Casters
 
-| Ergebnis-Typ | Ist Implizit |
-| ------------ | ------------ |
-| String       | true         |
+| Result type | Is Implicit |
+| ----------- | ----------- |
+| String      | true        |
 

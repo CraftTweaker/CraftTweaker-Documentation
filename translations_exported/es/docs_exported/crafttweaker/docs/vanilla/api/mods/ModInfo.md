@@ -1,22 +1,25 @@
 # Modificar
 
-Esta clase fue añadida por un mod con la ID  `crafttweaker`. Necesitas tener este mod instalado si quieres usar esta caracteristica.
+Información sobre un mod cargado
 
-## Importar la clase
-Puede ser requerido que importes el paquete si encuentras algun problema (como crear un Array).
+This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
+
+## Importing the class
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
 ```zenscript
 crafttweaker.api.mods.ModInfo
 ```
 
-## Propiedades
+## Properties
 
-| Nombre             | Tipo                                                                                                | Tiene Obtén | Tiene Setter |
-| ------------------ | --------------------------------------------------------------------------------------------------- | ----------- | ------------ |
-| bloques            | Lista&lt;[crafttweaker.api.block.MCBlock](/vanilla/api/blocks/MCBlock)&gt;              | verdad      | falso        |
-| nombre de pantalla | Cadena                                                                                              | verdad      | falso        |
-| tipos de entidades | Lista&lt;[crafttweaker.api.entity.MCEntityType](/vanilla/api/entities/MCEntityType)&gt; | verdad      | falso        |
-| objetos            | Lista&lt;[crafttweaker.api.item.ItemStack](/vanilla/api/items/IItemStack)&gt;           | verdad      | falso        |
-| modificar          | Cadena                                                                                              | verdad      | falso        |
-| namespace          | Cadena                                                                                              | verdad      | falso        |
-| versión            | Cadena                                                                                              | verdad      | falso        |
+| Name               | Type                                                                                                | Has Getter | Has Setter |
+| ------------------ | --------------------------------------------------------------------------------------------------- | ---------- | ---------- |
+| blocks             | Lista&lt;[crafttweaker.api.block.MCBlock](/vanilla/api/blocks/MCBlock)&gt;              | true       | false      |
+| displayName        | String                                                                                              | true       | false      |
+| tipos de entidades | Lista&lt;[crafttweaker.api.entity.MCEntityType](/vanilla/api/entities/MCEntityType)&gt; | true       | false      |
+| fluids             | Lista&lt;[crafttweaker.api.fluid.MCFluid](/vanilla/api/fluid/MCFluid)&gt;               | true       | false      |
+| items              | Lista&lt;[crafttweaker.api.item.ItemStack](/vanilla/api/items/IItemStack)&gt;           | true       | false      |
+| modid              | String                                                                                              | true       | false      |
+| namespace          | String                                                                                              | true       | false      |
+| version            | String                                                                                              | true       | false      |
 

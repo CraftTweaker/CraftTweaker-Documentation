@@ -1,64 +1,64 @@
 # MCCommandDispatcher
 
-crafttweakerのmod-idを持つmodによって追加されているクラスです。 従って、この機能を利用する場合はこのmodをインストールする必要があります。
+This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
 
-## クラスのインポート
-問題が発生した場合には、インポートが必要になります。とはいえ、お手数ですが予めインポートしておくほうが安全です。
+## Importing the class
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
 ```zenscript
 crafttweaker.api.commands.custom.MCCommandDispatch
 ```
 
-## メソッド
-### 等しい
+## Methods
+### equals
 
-戻り値の型: boolean
+Return type: boolean
 
 ```zenscript
 myMCCommandDispatcher.equals(o as Object);
 ```
 
-| パラメータ | タイプ    | 説明           |
-| ----- | ------ | ------------ |
-| o     | オブジェクト | 説明が提供されていません |
+| Parameter | Type   | Description             |
+| --------- | ------ | ----------------------- |
+| o         | Object | No description provided |
 
 
 ### 実行
 
-戻り値の種類: int
+Return type: int
 
 ```zenscript
 myMCCommandDispatcher.execute(parse as crafttweaker.api.commands.custom.MCParseResults);
 ```
 
-| パラメータ | タイプ                                                                                            | 説明           |
-| ----- | ---------------------------------------------------------------------------------------------- | ------------ |
-| parse | [crafttweaker.api.commands.custom.MCParseResults](/vanilla/api/commands/custom/MCParseResults) | 説明が提供されていません |
+| Parameter | Type                                                                                           | Description             |
+| --------- | ---------------------------------------------------------------------------------------------- | ----------------------- |
+| parse     | [crafttweaker.api.commands.custom.MCParseResults](/vanilla/api/commands/custom/MCParseResults) | No description provided |
 
 
 
-戻り値の種類: int
+Return type: int
 
 ```zenscript
 myMCCommandDispatcher.execute(input as String, source as crafttweaker.api.commands.custom.MCCommandSource);
 ```
 
-| パラメータ | タイプ                                                                                              | 説明           |
-| ----- | ------------------------------------------------------------------------------------------------ | ------------ |
-| input | 文字列型                                                                                             | 説明が提供されていません |
-| ソース   | [crafttweaker.api.commands.custom.MCCommandSource](/vanilla/api/commands/custom/MCCommandSource) | 説明が提供されていません |
+| Parameter | Type                                                                                             | Description             |
+| --------- | ------------------------------------------------------------------------------------------------ | ----------------------- |
+| input     | String                                                                                           | No description provided |
+| ソース       | [crafttweaker.api.commands.custom.MCCommandSource](/vanilla/api/commands/custom/MCCommandSource) | No description provided |
 
 
 
-戻り値の種類: int
+Return type: int
 
 ```zenscript
 myMCCommandDispatcher.execute(input as com.mojang.brigadier.StringReader, source as crafttweaker.api.commands.custom.MCCommandSource);
 ```
 
-| パラメータ | タイプ                                                                                              | 説明           |
-| ----- | ------------------------------------------------------------------------------------------------ | ------------ |
-| input | com.mojang.brigadier.StringReader                                                                | 説明が提供されていません |
-| ソース   | [crafttweaker.api.commands.custom.MCCommandSource](/vanilla/api/commands/custom/MCCommandSource) | 説明が提供されていません |
+| Parameter | Type                                                                                             | Description             |
+| --------- | ------------------------------------------------------------------------------------------------ | ----------------------- |
+| input     | com.mojang.brigadier.StringReader                                                                | No description provided |
+| ソース       | [crafttweaker.api.commands.custom.MCCommandSource](/vanilla/api/commands/custom/MCCommandSource) | No description provided |
 
 
 ### findAmbiguities
@@ -67,9 +67,9 @@ myMCCommandDispatcher.execute(input as com.mojang.brigadier.StringReader, source
 myMCCommandDispatcher.findAmbiguities(consumer as crafttweaker.api.commands.custom.MCAmbiguityConsumer);
 ```
 
-| パラメータ   | タイプ                                                                                                      | 説明           |
-| ------- | -------------------------------------------------------------------------------------------------------- | ------------ |
-| コンシューマー | [crafttweaker.api.commands.custom.MCAmbiguityConsumer](/vanilla/api/commands/custom/MCAmbiguityConsumer) | 説明が提供されていません |
+| Parameter | Type                                                                                                     | Description             |
+| --------- | -------------------------------------------------------------------------------------------------------- | ----------------------- |
+| コンシューマー   | [crafttweaker.api.commands.custom.MCAmbiguityConsumer](/vanilla/api/commands/custom/MCAmbiguityConsumer) | No description provided |
 
 
 ### findNode
@@ -80,9 +80,9 @@ myMCCommandDispatcher.findAmbiguities(consumer as crafttweaker.api.commands.cust
 myMCCommandDispatcher.findNode(path as Collection<String>);
 ```
 
-| パラメータ | タイプ                              | 説明           |
-| ----- | -------------------------------- | ------------ |
-| 小道    | コレクション&lt;String&gt; | 説明が提供されていません |
+| Parameter | Type                             | Description             |
+| --------- | -------------------------------- | ----------------------- |
+| path      | コレクション&lt;String&gt; | No description provided |
 
 
 ### getAllUsage
@@ -93,11 +93,11 @@ myMCCommandDispatcher.findNode(path as Collection<String>);
 myMCCommandDispatcher.getAllUsage(node as crafttweaker.api.commands.custom.MCCommandNode, source as crafttweaker.api.commands.custom.MCCommandSource, restricted as boolean);
 ```
 
-| パラメータ | タイプ                                                                                              | 説明           |
-| ----- | ------------------------------------------------------------------------------------------------ | ------------ |
-| ノード   | [crafttweaker.api.commands.custom.MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)     | 説明が提供されていません |
-| ソース   | [crafttweaker.api.commands.custom.MCCommandSource](/vanilla/api/commands/custom/MCCommandSource) | 説明が提供されていません |
-| 制限あり  | boolean型                                                                                         | 説明が提供されていません |
+| Parameter | Type                                                                                             | Description             |
+| --------- | ------------------------------------------------------------------------------------------------ | ----------------------- |
+| ノード       | [crafttweaker.api.commands.custom.MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)     | No description provided |
+| ソース       | [crafttweaker.api.commands.custom.MCCommandSource](/vanilla/api/commands/custom/MCCommandSource) | No description provided |
+| 制限あり      | boolean型                                                                                         | No description provided |
 
 
 ### getCompletionSuggestions
@@ -108,9 +108,9 @@ myMCCommandDispatcher.getAllUsage(node as crafttweaker.api.commands.custom.MCCom
 myMCCommandDispatcher.getCompletionSuggestions(crafttweaker.api.commands.custom.MCParseResults);
 ```
 
-| パラメータ | タイプ                                                                                            | 説明           |
-| ----- | ---------------------------------------------------------------------------------------------- | ------------ |
-| parse | [crafttweaker.api.commands.custom.MCParseResults](/vanilla/api/commands/custom/MCParseResults) | 説明が提供されていません |
+| Parameter | Type                                                                                           | Description             |
+| --------- | ---------------------------------------------------------------------------------------------- | ----------------------- |
+| parse     | [crafttweaker.api.commands.custom.MCParseResults](/vanilla/api/commands/custom/MCParseResults) | No description provided |
 
 
 
@@ -120,10 +120,10 @@ myMCCommandDispatcher.getCompletionSuggestions(crafttweaker.api.commands.custom.
 myMCCommandDispatcher.getCompletionSuggestions(crafttweaker.api.commands.custom.MCParseResults, cursor as int);
 ```
 
-| パラメータ  | タイプ                                                                                            | 説明           |
-| ------ | ---------------------------------------------------------------------------------------------- | ------------ |
-| parse  | [crafttweaker.api.commands.custom.MCParseResults](/vanilla/api/commands/custom/MCParseResults) | 説明が提供されていません |
-| cursor | int                                                                                            | 説明が提供されていません |
+| Parameter | Type                                                                                           | Description             |
+| --------- | ---------------------------------------------------------------------------------------------- | ----------------------- |
+| parse     | [crafttweaker.api.commands.custom.MCParseResults](/vanilla/api/commands/custom/MCParseResults) | No description provided |
+| cursor    | int                                                                                            | No description provided |
 
 
 ### getPath
@@ -134,9 +134,9 @@ myMCCommandDispatcher.getCompletionSuggestions(crafttweaker.api.commands.custom.
 myMCCommandDispatcher.getPath(target as crafttweaker.api.commands.custom.MCCommandNode);
 ```
 
-| パラメータ  | タイプ                                                                                          | 説明           |
-| ------ | -------------------------------------------------------------------------------------------- | ------------ |
-| target | [crafttweaker.api.commands.custom.MCCommandNode](/vanilla/api/commands/custom/MCCommandNode) | 説明が提供されていません |
+| Parameter | Type                                                                                         | Description             |
+| --------- | -------------------------------------------------------------------------------------------- | ----------------------- |
+| target    | [crafttweaker.api.commands.custom.MCCommandNode](/vanilla/api/commands/custom/MCCommandNode) | No description provided |
 
 
 ### getRoot
@@ -155,15 +155,15 @@ myMCCommandDispatcher.getRoot();
 myMCCommandDispatcher.getSmartUsage(node as crafttweaker.api.commands.custom.MCCommandNode, source as crafttweaker.api.commands.custom.MCCommandSource);
 ```
 
-| パラメータ | タイプ                                                                                              | 説明           |
-| ----- | ------------------------------------------------------------------------------------------------ | ------------ |
-| ノード   | [crafttweaker.api.commands.custom.MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)     | 説明が提供されていません |
-| ソース   | [crafttweaker.api.commands.custom.MCCommandSource](/vanilla/api/commands/custom/MCCommandSource) | 説明が提供されていません |
+| Parameter | Type                                                                                             | Description             |
+| --------- | ------------------------------------------------------------------------------------------------ | ----------------------- |
+| ノード       | [crafttweaker.api.commands.custom.MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)     | No description provided |
+| ソース       | [crafttweaker.api.commands.custom.MCCommandSource](/vanilla/api/commands/custom/MCCommandSource) | No description provided |
 
 
 ### hashCode
 
-戻り値の種類: int
+Return type: int
 
 ```zenscript
 myMCCommandDispatcher.hashCode();
@@ -177,10 +177,10 @@ myMCCommandDispatcher.hashCode();
 myMCCommandDispatcher.parse(command as String, source as crafttweaker.api.commands.custom.MCCommandSource);
 ```
 
-| パラメータ     | タイプ                                                                                              | 説明           |
-| --------- | ------------------------------------------------------------------------------------------------ | ------------ |
-| (Command) | 文字列型                                                                                             | 説明が提供されていません |
-| ソース       | [crafttweaker.api.commands.custom.MCCommandSource](/vanilla/api/commands/custom/MCCommandSource) | 説明が提供されていません |
+| Parameter | Type                                                                                             | Description             |
+| --------- | ------------------------------------------------------------------------------------------------ | ----------------------- |
+| command   | String                                                                                           | No description provided |
+| ソース       | [crafttweaker.api.commands.custom.MCCommandSource](/vanilla/api/commands/custom/MCCommandSource) | No description provided |
 
 
 
@@ -190,10 +190,10 @@ myMCCommandDispatcher.parse(command as String, source as crafttweaker.api.comman
 myMCCommandDispatcher.parse(com.mojang.brigadier.StringReader, source as crafttweaker.api.commands.custom.MCCommandSource);
 ```
 
-| パラメータ     | タイプ                                                                                              | 説明           |
-| --------- | ------------------------------------------------------------------------------------------------ | ------------ |
-| (Command) | com.mojang.brigadier.StringReader                                                                | 説明が提供されていません |
-| ソース       | [crafttweaker.api.commands.custom.MCCommandSource](/vanilla/api/commands/custom/MCCommandSource) | 説明が提供されていません |
+| Parameter | Type                                                                                             | Description             |
+| --------- | ------------------------------------------------------------------------------------------------ | ----------------------- |
+| command   | com.mojang.brigadier.StringReader                                                                | No description provided |
+| ソース       | [crafttweaker.api.commands.custom.MCCommandSource](/vanilla/api/commands/custom/MCCommandSource) | No description provided |
 
 
 ### 登録
@@ -204,9 +204,9 @@ myMCCommandDispatcher.parse(com.mojang.brigadier.StringReader, source as crafttw
 myMCCommandDispatcher.register(command as crafttweaker.api.commands.custom.MCLIiteralArgumentBuilder);
 ```
 
-| パラメータ     | タイプ                                                                                                                 | 説明           |
-| --------- | ------------------------------------------------------------------------------------------------------------------- | ------------ |
-| (Command) | [crafttweaker.api.commands.custom.MCLIiteralArgumentBuilder](/vanilla/api/commands/custom/MCLiteralArgumentBuilder) | 説明が提供されていません |
+| Parameter | Type                                                                                                                | Description             |
+| --------- | ------------------------------------------------------------------------------------------------------------------- | ----------------------- |
+| command   | [crafttweaker.api.commands.custom.MCLIiteralArgumentBuilder](/vanilla/api/commands/custom/MCLiteralArgumentBuilder) | No description provided |
 
 
 ### セットコンシューマー
@@ -215,14 +215,14 @@ myMCCommandDispatcher.register(command as crafttweaker.api.commands.custom.MCLIi
 myMCCommandDispatcher.setConsumer(crafttweaker.api.commands.custom.MCResultConsumer);
 ```
 
-| パラメータ   | タイプ                                                                                                | 説明           |
-| ------- | -------------------------------------------------------------------------------------------------- | ------------ |
-| コンシューマー | [crafttweaker.api.commands.custom.MCResultConsumer](/vanilla/api/commands/custom/MCResultConsumer) | 説明が提供されていません |
+| Parameter | Type                                                                                               | Description             |
+| --------- | -------------------------------------------------------------------------------------------------- | ----------------------- |
+| コンシューマー   | [crafttweaker.api.commands.custom.MCResultConsumer](/vanilla/api/commands/custom/MCResultConsumer) | No description provided |
 
 
 ### toString
 
-戻り値の型: String
+Return type: String
 
 ```zenscript
 myMCCommandDispatcher.toString();
@@ -236,13 +236,13 @@ myMCCommandDispatcher.toString();
 myMCCommandDispatcher == o をオブジェクトとして
 ```
 
-| パラメータ | タイプ    | 説明           |
-| ----- | ------ | ------------ |
-| o     | オブジェクト | 説明が提供されていません |
+| Parameter | Type   | Description             |
+| --------- | ------ | ----------------------- |
+| o         | Object | No description provided |
 
-## キャスト
+## Casters
 
-| 結果の種類 | 暗黙的  |
-| ----- | ---- |
-| 文字列型  | true |
+| Result type | Is Implicit |
+| ----------- | ----------- |
+| String      | true        |
 

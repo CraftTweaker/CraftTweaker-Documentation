@@ -8,12 +8,12 @@
 crafttweaker.api.commands.custom.MCLiteralArgumentBuilder
 ```
 
-## Реализованные интерфейсы
-MCLiteralArgumentBuilder реализует следующие интерфейсы. Следовательно, методы из них доступны в этом классе.
+## Implemented Interfaces
+MCLiteralArgumentBuilder реализует следующие интерфейсы. That means any method available to them can also be used on this class.
 - [crafttweaker.api.commands.custom.MCArgumentBuilder](/vanilla/api/commands/custom/MCArgumentBuilder)
 
-## Методы
-### сборка
+## Methods
+### build
 
 Возвращаемый тип: [crafttweaker.api.commands.custom.MCLiteralCommandNode](/vanilla/api/commands/custom/MCLiteralCommandNode)
 
@@ -21,17 +21,17 @@ MCLiteralArgumentBuilder реализует следующие интерфей�
 myMCLiteralArgumentBuilder.build();
 ```
 
-### равно
+### equals
 
-Тип возврата: логическое значение
+Return type: boolean
 
 ```zenscript
 myMCLiteralArgumentBuilder.equals(o as Object);
 ```
 
-| Параметр | Тип    | Описание             |
+| Параметр | Тип    | Description          |
 | -------- | ------ | -------------------- |
-| о        | Объект | Описание отсутствует |
+| o        | Object | Описание отсутствует |
 
 
 ### выполняет
@@ -42,9 +42,9 @@ myMCLiteralArgumentBuilder.equals(o as Object);
 myMCLiteralArgumentBuilder.executes(command as crafttweaker.api.commands.custom.MCCommand);
 ```
 
-| Параметр | Тип                                                                                  | Описание             |
+| Параметр | Тип                                                                                  | Description          |
 | -------- | ------------------------------------------------------------------------------------ | -------------------- |
-| команда  | [crafttweaker.api.commands.custom.MCCommand](/vanilla/api/commands/custom/MCCommand) | Описание отсутствует |
+| command  | [crafttweaker.api.commands.custom.MCCommand](/vanilla/api/commands/custom/MCCommand) | Описание отсутствует |
 
 
 ### fork
@@ -55,7 +55,7 @@ myMCLiteralArgumentBuilder.executes(command as crafttweaker.api.commands.custom.
 myMCLiteralArgumentBuilder.fork(цель как crafttweaker.api.commands.custom.MCCommandNode, модификатор как crafttweaker.api.commands.custom.MCRedirectModifier);
 ```
 
-| Параметр | Тип                                                                                                    | Описание             |
+| Параметр | Тип                                                                                                    | Description          |
 | -------- | ------------------------------------------------------------------------------------------------------ | -------------------- |
 | target   | [crafttweaker.api.commands.custom.MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)           | Описание отсутствует |
 | modifier | [crafttweaker.api.commands.custom.MCRedirectModifier](/vanilla/api/commands/custom/MCRedirectModifier) | Описание отсутствует |
@@ -69,7 +69,7 @@ myMCLiteralArgumentBuilder.fork(цель как crafttweaker.api.commands.custom
 myMCLiteralArgumentBuilder.forward(цель как crafttweaker.api.commands.custom.MCCommandNode, модификатор как crafttweaker.api.commands.custom.MCRedirectModifier, форка как boolean);
 ```
 
-| Параметр | Тип                                                                                                    | Описание             |
+| Параметр | Тип                                                                                                    | Description          |
 | -------- | ------------------------------------------------------------------------------------------------------ | -------------------- |
 | target   | [crafttweaker.api.commands.custom.MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)           | Описание отсутствует |
 | modifier | [crafttweaker.api.commands.custom.MCRedirectModifier](/vanilla/api/commands/custom/MCRedirectModifier) | Описание отсутствует |
@@ -94,7 +94,7 @@ myMCLiteralArgumentBuilder.getCommand();
 
 ### getLiteral
 
-Тип возврата: строка
+Return type: String
 
 ```zenscript
 myMCLiteralArgumentBuilder.getLiteral();
@@ -126,7 +126,7 @@ myMCLiteralArgumentBuilder.getRequirement();
 
 ### hashCode
 
-Тип возврата: int
+Return type: int
 
 ```zenscript
 myMCLiteralArgumentBuilder.hashCode();
@@ -134,7 +134,7 @@ myMCLiteralArgumentBuilder.hashCode();
 
 ### isFork
 
-Тип возврата: логическое значение
+Return type: boolean
 
 ```zenscript
 myMCLiteralArgumentBuilder.isFork();
@@ -148,7 +148,7 @@ myMCLiteralArgumentBuilder.isFork();
 myMCLiteralArgumentBuilder.redirect(цель как crafttweaker.api.commands.custom.MCCommandNode);
 ```
 
-| Параметр | Тип                                                                                          | Описание             |
+| Параметр | Тип                                                                                          | Description          |
 | -------- | -------------------------------------------------------------------------------------------- | -------------------- |
 | target   | [crafttweaker.api.commands.custom.MCCommandNode](/vanilla/api/commands/custom/MCCommandNode) | Описание отсутствует |
 
@@ -160,7 +160,7 @@ myMCLiteralArgumentBuilder.redirect(цель как crafttweaker.api.commands.cu
 myMCLiteralArgumentBuilder.redirect(цель как crafttweaker.api.commands.custom.MCCommandNode, модификатор как crafttweaker.api.commands.custom.MCSingleRedirectModifier);
 ```
 
-| Параметр | Тип                                                                                                                | Описание             |
+| Параметр | Тип                                                                                                                | Description          |
 | -------- | ------------------------------------------------------------------------------------------------------------------ | -------------------- |
 | target   | [crafttweaker.api.commands.custom.MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)                       | Описание отсутствует |
 | modifier | [crafttweaker.api.commands.custom.MCSingleRedirectModifier](/vanilla/api/commands/custom/MCSingleRedirectModifier) | Описание отсутствует |
@@ -174,7 +174,7 @@ myMCLiteralArgumentBuilder.redirect(цель как crafttweaker.api.commands.cu
 myMCLiteralArgumentBuilder.requires(requirement as function.Predicate<crafttweaker.api.commands.custom.MCCommandSource>);
 ```
 
-| Параметр   | Тип                                                                                                                                    | Описание             |
+| Параметр   | Тип                                                                                                                                    | Description          |
 | ---------- | -------------------------------------------------------------------------------------------------------------------------------------- | -------------------- |
 | требование | function.Predicate&lt;[crafttweaker.api.commands.custom.MCCommandSource](/vanilla/api/commands/custom/MCCommandSource)&gt; | Описание отсутствует |
 
@@ -187,7 +187,7 @@ myMCLiteralArgumentBuilder.requires(requirement as function.Predicate<crafttweak
 myMCLiteralArgumentBuilder.then(аргумент как crafttweaker.api.commands.custom.MCArgumentBuilder);
 ```
 
-| Параметр | Тип                                                                                                  | Описание             |
+| Параметр | Тип                                                                                                  | Description          |
 | -------- | ---------------------------------------------------------------------------------------------------- | -------------------- |
 | аргумент | [crafttweaker.api.commands.custom.MCArgumentBuilder](/vanilla/api/commands/custom/MCArgumentBuilder) | Описание отсутствует |
 
@@ -199,14 +199,14 @@ myMCLiteralArgumentBuilder.then(аргумент как crafttweaker.api.command
 myMCLiteralArgumentBuilder.then(аргумент как crafttweaker.api.commands.custom.MCCommandNode);
 ```
 
-| Параметр | Тип                                                                                          | Описание             |
+| Параметр | Тип                                                                                          | Description          |
 | -------- | -------------------------------------------------------------------------------------------- | -------------------- |
 | аргумент | [crafttweaker.api.commands.custom.MCCommandNode](/vanilla/api/commands/custom/MCCommandNode) | Описание отсутствует |
 
 
 ### toString
 
-Тип возврата: строка
+Return type: String
 
 ```zenscript
 myMCLiteralArgumentBuilder.toString();
@@ -220,9 +220,9 @@ myMCLiteralArgumentBuilder.toString();
 myMCLiteralArgumentBuilder == o как объект
 ```
 
-| Параметр | Тип    | Описание             |
+| Параметр | Тип    | Description          |
 | -------- | ------ | -------------------- |
-| о        | Объект | Описание отсутствует |
+| o        | Object | Описание отсутствует |
 
 ## Утилиты
 

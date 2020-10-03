@@ -1,14 +1,14 @@
 # Commandes personnalisées
 
-Cette classe a été ajoutée par un mod avec le mod-id `crafttweaker`. Vous devez donc avoir ce mod installé si vous voulez utiliser cette fonctionnalité.
+This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
 
-## Importation de la classe
-Il pourrait vous être nécessaire d'importer le paquet si vous rencontrez des problèmes (comme lancer un tableau), alors mieux être sûr que désolé et ajouter l'importation.
+## Importing the class
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
 ```zenscript
 crafttweaker.api.commands.custom.CustomCommands
 ```
 
-## Méthodes
+## Methods
 ### Argument
 
 Type de retour : [crafttweaker.api.commands.custom.MCRequiredArgumentBuilder](/vanilla/api/commands/custom/MCRequiredArgumentBuilder)
@@ -17,9 +17,9 @@ Type de retour : [crafttweaker.api.commands.custom.MCRequiredArgumentBuilder](/v
 crafttweaker.api.commands.custom.CustomCommands.argument(name as String);
 ```
 
-| Paramètre | Type de texte        | Libellé                    |
-| --------- | -------------------- | -------------------------- |
-| Nom       | Chaîne de caractères | Aucune description fournie |
+| Parameter | Type   | Description             |
+| --------- | ------ | ----------------------- |
+| name      | String | No description provided |
 
 
 ### littéral
@@ -30,9 +30,9 @@ Type de retour : [crafttweaker.api.commands.custom.MCLiteralArgumentBuilder](/va
 crafttweaker.api.commands.custom.CustomCommands.literal(name as String);
 ```
 
-| Paramètre | Type de texte        | Libellé                    |
-| --------- | -------------------- | -------------------------- |
-| Nom       | Chaîne de caractères | Aucune description fournie |
+| Parameter | Type   | Description             |
+| --------- | ------ | ----------------------- |
+| name      | String | No description provided |
 
 
 ### Enregistrer la commande
@@ -41,9 +41,9 @@ crafttweaker.api.commands.custom.CustomCommands.literal(name as String);
 crafttweaker.api.commands.custom.CustomCommands.registerCommand(builder comme crafttweaker.api.commands.custom.MCLiteralArgumentBuilder);
 ```
 
-| Paramètre    | Type de texte                                                                                                      | Libellé                    |
-| ------------ | ------------------------------------------------------------------------------------------------------------------ | -------------------------- |
-| constructeur | [crafttweaker.api.commands.custom.MCLiteralArgumentBuilder](/vanilla/api/commands/custom/MCLiteralArgumentBuilder) | Aucune description fournie |
+| Parameter    | Type                                                                                                               | Description             |
+| ------------ | ------------------------------------------------------------------------------------------------------------------ | ----------------------- |
+| constructeur | [crafttweaker.api.commands.custom.MCLiteralArgumentBuilder](/vanilla/api/commands/custom/MCLiteralArgumentBuilder) | No description provided |
 
 
 

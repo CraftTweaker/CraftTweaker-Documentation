@@ -1,14 +1,14 @@
 # カスタムコマンド
 
-crafttweakerのmod-idを持つmodによって追加されているクラスです。 従って、この機能を利用する場合はこのmodをインストールする必要があります。
+This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
 
-## クラスのインポート
-問題が発生した場合には、インポートが必要になります。とはいえ、お手数ですが予めインポートしておくほうが安全です。
+## Importing the class
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
 ```zenscript
 crafttweaker.api.commands.custom.CustomCommands
 ```
 
-## メソッド
+## Methods
 ### 引数
 
 戻り値の型: [crafttweaker.api.commands.custom.MCRequiredArgumentBuilder](/vanilla/api/commands/custom/MCRequiredArgumentBuilder)
@@ -17,9 +17,9 @@ crafttweaker.api.commands.custom.CustomCommands
 crafttweaker.api.commands.customCommands.argument(name as String);
 ```
 
-| パラメータ | タイプ  | 説明           |
-| ----- | ---- | ------------ |
-| 名前    | 文字列型 | 説明が提供されていません |
+| Parameter | Type   | Description             |
+| --------- | ------ | ----------------------- |
+| name      | String | No description provided |
 
 
 ### リテラル
@@ -30,9 +30,9 @@ crafttweaker.api.commands.customCommands.argument(name as String);
 crafttweaker.api.commands.customCommands.literal(name as String);
 ```
 
-| パラメータ | タイプ  | 説明           |
-| ----- | ---- | ------------ |
-| 名前    | 文字列型 | 説明が提供されていません |
+| Parameter | Type   | Description             |
+| --------- | ------ | ----------------------- |
+| name      | String | No description provided |
 
 
 ### registerCommand
@@ -41,9 +41,9 @@ crafttweaker.api.commands.customCommands.literal(name as String);
 crafttweaker.api.commands.custom.CustomCommands.registerCommand(builder as crafttweaker.api.commands.custom.MCLIiteralArgumentBuilder);
 ```
 
-| パラメータ | タイプ                                                                                                                 | 説明           |
-| ----- | ------------------------------------------------------------------------------------------------------------------- | ------------ |
-| ビルダー: | [crafttweaker.api.commands.custom.MCLIiteralArgumentBuilder](/vanilla/api/commands/custom/MCLiteralArgumentBuilder) | 説明が提供されていません |
+| Parameter | Type                                                                                                                | Description             |
+| --------- | ------------------------------------------------------------------------------------------------------------------- | ----------------------- |
+| ビルダー:     | [crafttweaker.api.commands.custom.MCLIiteralArgumentBuilder](/vanilla/api/commands/custom/MCLiteralArgumentBuilder) | No description provided |
 
 
 

@@ -1,9 +1,9 @@
-# MCMaterialfarbe
+# MCMaterialColor
 
-Diese Klasse wurde von einer Mod mit mod-id `crafttweaker` hinzugefügt. Wenn Sie diese Funktion nutzen möchten, müssen Sie diese Mod installiert haben.
+This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
 
 ## Diese Klasse importieren
-Es kann erforderlich sein, dass Sie das Paket importieren, wenn Sie irgendwelche Probleme haben (wie zum Beispiel ein Array zu bearbeiten), also besser sicher sein als bedauern und fügen Sie den Import.
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
 ```zenscript
 crafttweaker.api.block.material.MCMaterialColor
 ```
@@ -11,15 +11,15 @@ crafttweaker.api.block.material.MCMaterialColor
 ## Methoden
 ### getMapColor
 
-Retouren Int
+Returns int
 
 ```zenscript
-myMCMaterialColor.getMapColor(Index als int);
+myMCMaterialColor.getMapColor(index as int);
 ```
 
-| Parameter  | Type | Beschreibung                 |
-| ---------- | ---- | ---------------------------- |
-| indexieren | int  | Keine Beschreibung angegeben |
+| Parameter | Type | Beschreibung            |
+| --------- | ---- | ----------------------- |
+| index     | int  | No description provided |
 
 
 

@@ -8,7 +8,7 @@
 crafttweaker.api.util.text.MCTextComponent
 ```
 
-## Методы
+## Methods
 ### добавление
 
 Тип возврата: [crafttweaker.api.util.text.MCTextComponent](/vanilla/api/util/text/MCTextComponent)
@@ -17,7 +17,7 @@ crafttweaker.api.util.text.MCTextComponent
 myMCTextComponent.appendSibling(компонент как crafttweaker.api.util.text.MCTextComponent);
 ```
 
-| Параметр  | Тип                                                                                  | Описание             |
+| Параметр  | Тип                                                                                  | Description          |
 | --------- | ------------------------------------------------------------------------------------ | -------------------- |
 | компонент | [crafttweaker.api.util.text.MCTextComponent](/vanilla/api/util/text/MCTextComponent) | Описание отсутствует |
 
@@ -30,7 +30,7 @@ myMCTextComponent.appendSibling(компонент как crafttweaker.api.util.
 myMCTextComponent.appendText(текст в виде строки);
 ```
 
-| Параметр | Тип    | Описание             |
+| Параметр | Тип    | Description          |
 | -------- | ------ | -------------------- |
 | текст    | String | Описание отсутствует |
 
@@ -53,7 +53,7 @@ myMCTextComponent.deepCopy();
 
 ### getString
 
-Тип возврата: строка
+Return type: String
 
 ```zenscript
 myMCTextComponent.getString();
@@ -61,20 +61,20 @@ myMCTextComponent.getString();
 
 ### getStringTruncated
 
-Тип возврата: строка
+Return type: String
 
 ```zenscript
 myMCTextComponent.getStringTruncated(maxLen как int);
 ```
 
-| Параметр | Тип | Описание             |
+| Параметр | Тип | Description          |
 | -------- | --- | -------------------- |
 | maxLen   | int | Описание отсутствует |
 
 
 ### getUnformattedComponentText
 
-Тип возврата: строка
+Return type: String
 
 ```zenscript
 myMCTextComponent.getUnformattedComponentText();
@@ -88,7 +88,7 @@ myMCTextComponent.getUnformattedComponentText();
 myMCTextComponent.setStyle(style as crafttweaker.api.util.text.MCStyle);
 ```
 
-| Параметр | Тип                                                                  | Описание             |
+| Параметр | Тип                                                                  | Description          |
 | -------- | -------------------------------------------------------------------- | -------------------- |
 | стиль    | [crafttweaker.api.util.text.MCStyle](/vanilla/api/util/text/MCStyle) | Описание отсутствует |
 
@@ -109,7 +109,7 @@ myMCTextComponent.setStyle(style as crafttweaker.api.util.text.MCStyle);
 myMCTextComponent + компонент как crafttweaker.api.util.text.MCTextComponent
 ```
 
-| Параметр  | Тип                                                                                  | Описание             |
+| Параметр  | Тип                                                                                  | Description          |
 | --------- | ------------------------------------------------------------------------------------ | -------------------- |
 | компонент | [crafttweaker.api.util.text.MCTextComponent](/vanilla/api/util/text/MCTextComponent) | Описание отсутствует |
 ### CAT
@@ -118,7 +118,7 @@ myMCTextComponent + компонент как crafttweaker.api.util.text.MCTextC
 myMCTextComponent ~ компонент как crafttweaker.api.util.text.MCTextComponent
 ```
 
-| Параметр  | Тип                                                                                  | Описание             |
+| Параметр  | Тип                                                                                  | Description          |
 | --------- | ------------------------------------------------------------------------------------ | -------------------- |
 | компонент | [crafttweaker.api.util.text.MCTextComponent](/vanilla/api/util/text/MCTextComponent) | Описание отсутствует |
 ### ШЛ
@@ -127,7 +127,7 @@ myMCTextComponent ~ компонент как crafttweaker.api.util.text.MCTextC
 myMCTextComponent << компонент как crafttweaker.api.util.text.MCTextComponent
 ```
 
-| Параметр  | Тип                                                                                  | Описание             |
+| Параметр  | Тип                                                                                  | Description          |
 | --------- | ------------------------------------------------------------------------------------ | -------------------- |
 | компонент | [crafttweaker.api.util.text.MCTextComponent](/vanilla/api/util/text/MCTextComponent) | Описание отсутствует |
 

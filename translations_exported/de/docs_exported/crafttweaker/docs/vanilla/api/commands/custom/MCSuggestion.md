@@ -1,9 +1,9 @@
 # MCSuggestion
 
-Diese Klasse wurde von einer Mod mit mod-id `crafttweaker` hinzugefügt. Wenn Sie diese Funktion nutzen möchten, müssen Sie diese Mod installiert haben.
+This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
 
 ## Diese Klasse importieren
-Es kann erforderlich sein, dass Sie das Paket importieren, wenn Sie irgendwelche Probleme haben (wie zum Beispiel ein Array zu bearbeiten), also besser sicher sein als bedauern und fügen Sie den Import.
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
 ```zenscript
 crafttweaker.api.commands.custom.MCSuggestion
 ```
@@ -11,54 +11,54 @@ crafttweaker.api.commands.custom.MCSuggestion
 ## Methoden
 ### bewerben
 
-Rückgabetyp: String
+Return type: String
 
 ```zenscript
 myMCSuggestion.apply(Eingabe als String);
 ```
 
-| Parameter | Type   | Beschreibung                 |
-| --------- | ------ | ---------------------------- |
-| input     | String | Keine Beschreibung angegeben |
+| Parameter | Type   | Beschreibung            |
+| --------- | ------ | ----------------------- |
+| input     | String | No description provided |
 
 
 ### vergleichen
 
-Rückgabetyp: int
+Return type: int
 
 ```zenscript
 myMCSuggestion.compareTo(o as crafttweaker.api.commands.custom.MCSuggestion);
 ```
 
-| Parameter | Type                                                                                       | Beschreibung                 |
-| --------- | ------------------------------------------------------------------------------------------ | ---------------------------- |
-| o         | [crafttweaker.api.commands.custom.MCSuggestion](/vanilla/api/commands/custom/MCSuggestion) | Keine Beschreibung angegeben |
+| Parameter | Type                                                                                       | Beschreibung            |
+| --------- | ------------------------------------------------------------------------------------------ | ----------------------- |
+| o         | [crafttweaker.api.commands.custom.MCSuggestion](/vanilla/api/commands/custom/MCSuggestion) | No description provided |
 
 
 ### vergleicheToIgnorieren-Fall
 
-Rückgabetyp: int
+Return type: int
 
 ```zenscript
 myMCSuggestion.compareToIgnoreCase(b as crafttweaker.api.commands.custom.MCSuggestion);
 ```
 
-| Parameter | Type                                                                                       | Beschreibung                 |
-| --------- | ------------------------------------------------------------------------------------------ | ---------------------------- |
-| b         | [crafttweaker.api.commands.custom.MCSuggestion](/vanilla/api/commands/custom/MCSuggestion) | Keine Beschreibung angegeben |
+| Parameter | Type                                                                                       | Beschreibung            |
+| --------- | ------------------------------------------------------------------------------------------ | ----------------------- |
+| b         | [crafttweaker.api.commands.custom.MCSuggestion](/vanilla/api/commands/custom/MCSuggestion) | No description provided |
 
 
-### gleich
+### equals
 
-Rückgabetyp: boolesch
+Return type: boolean
 
 ```zenscript
 myMCSuggestion.equals(o als Objekt);
 ```
 
-| Parameter | Type   | Beschreibung                 |
-| --------- | ------ | ---------------------------- |
-| o         | Objekt | Keine Beschreibung angegeben |
+| Parameter | Type   | Beschreibung            |
+| --------- | ------ | ----------------------- |
+| o         | Object | No description provided |
 
 
 ### ausklappen
@@ -69,10 +69,10 @@ Rückgabetyp: [craftweaker.api.commands.custom.MCSuggestion](/vanilla/api/comman
 myMCSuggestion.expand(Befehl als String, Bereich als crafttweaker.api.commands.custom.MCStringRange);
 ```
 
-| Parameter | Type                                                                                         | Beschreibung                 |
-| --------- | -------------------------------------------------------------------------------------------- | ---------------------------- |
-| befehl    | String                                                                                       | Keine Beschreibung angegeben |
-| range     | [crafttweaker.api.commands.custom.MCStringRange](/vanilla/api/commands/custom/MCStringRange) | Keine Beschreibung angegeben |
+| Parameter | Type                                                                                         | Beschreibung            |
+| --------- | -------------------------------------------------------------------------------------------- | ----------------------- |
+| command   | String                                                                                       | No description provided |
+| range     | [crafttweaker.api.commands.custom.MCStringRange](/vanilla/api/commands/custom/MCStringRange) | No description provided |
 
 
 ### getBereich
@@ -85,7 +85,7 @@ myMCSuggestion.getRange();
 
 ### getText
 
-Rückgabetyp: String
+Return type: String
 
 ```zenscript
 myMCSuggestion.getText();
@@ -93,7 +93,7 @@ myMCSuggestion.getText();
 
 ### getTooltip
 
-Rückgabetyp: String
+Return type: String
 
 ```zenscript
 myMCSuggestion.getTooltip();
@@ -101,7 +101,7 @@ myMCSuggestion.getTooltip();
 
 ### hashCode
 
-Rückgabetyp: int
+Return type: int
 
 ```zenscript
 myMCSuggestion.hashCode();
@@ -109,7 +109,7 @@ myMCSuggestion.hashCode();
 
 ### toString
 
-Rückgabetyp: String
+Return type: String
 
 ```zenscript
 myMCSuggestion.toString();
@@ -123,13 +123,13 @@ myMCSuggestion.toString();
 myMCSuggestion == o als Objekt
 ```
 
-| Parameter | Type   | Beschreibung                 |
-| --------- | ------ | ---------------------------- |
-| o         | Objekt | Keine Beschreibung angegeben |
+| Parameter | Type   | Beschreibung            |
+| --------- | ------ | ----------------------- |
+| o         | Object | No description provided |
 
-## Zauberer
+## Casters
 
-| Ergebnis-Typ | Ist Implizit |
-| ------------ | ------------ |
-| String       | true         |
+| Result type | Is Implicit |
+| ----------- | ----------- |
+| String      | true        |
 

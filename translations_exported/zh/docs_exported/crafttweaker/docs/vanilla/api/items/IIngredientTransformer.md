@@ -11,28 +11,28 @@ craftminstruer.api.item.IIngredientTransformer
 ## 方法
 ### getCommandString
 
-返回类型：字符串
+Return type: String
 
 ```zenscript
-myIIngredientTransformer.getCommandString(transformmedIngredient as T)；
+myIIngredientTransformer.getCommandString(成分为 T)；
 ```
 
-| 参数   | 类型 | 描述                      |
-| ---- | -- | ----------------------- |
-| 变形属性 | T  | No description provided |
+| 参数         | 类型 | 描述                      |
+| ---------- | -- | ----------------------- |
+| ingredient | T  | No description provided |
 
 
-### 转换
+### matches
 
-返回类型： [craftbiner.api.item.IItemStack](/vanilla/api/items/IItemStack)
+Return type: boolean
 
 ```zenscript
-myIIngredientTransformer.transformer (stack as craftbiner.api.item.IItemStack);
+myIIngredientTransformer.matches(堆栈为 craftbiner.api.item.IItemStack);
 ```
 
 | 参数    | 类型                                                                | 描述                      |
 | ----- | ----------------------------------------------------------------- | ----------------------- |
-| 堆栈... | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | No description provided |
+| stack | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | No description provided |
 
 
 

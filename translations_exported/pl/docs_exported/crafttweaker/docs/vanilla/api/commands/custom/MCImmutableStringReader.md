@@ -1,37 +1,37 @@
 # Czytnik MCImmutableStringReader
 
-Ta klasa została dodana przez moda z mod-id `crafttweaker`. Więc musisz zainstalować tę modyfikację, jeśli chcesz używać tej funkcji.
+This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
 
-## Importowanie klasy
-Może być wymagane zaimportowanie pakietu, jeśli napotkasz jakiekolwiek problemy (np. rzucanie tablicy), tak aby były bezpieczne niż przepraszamy i dodaj import.
+## Importing the class
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
 ```zenscript
 crafttweaker.api.commands.custom.MCImmutableStringReader
 ```
 
-## Metody
+## Methods
 ### canRead
 
-Typ zwrotu: logiczny
+Return type: boolean
 
 ```zenscript
 myMCImmutableStringReader.canRead();
 ```
 
 
-Typ zwrotu: logiczny
+Return type: boolean
 
 ```zenscript
 myMCImmutableStringReader.canRead(arg0 as int);
 ```
 
-| Parametr | Typ    | Opis             |
-| -------- | ------ | ---------------- |
-| arg0     | odcień | Nie podano opisu |
+| Parameter | Type | Description             |
+| --------- | ---- | ----------------------- |
+| arg0      | int  | No description provided |
 
 
 ### getCursor
 
-Typ zwrotu: int
+Return type: int
 
 ```zenscript
 myMCImmutableStringReader.getCursor();
@@ -39,7 +39,7 @@ myMCImmutableStringReader.getCursor();
 
 ### getRead
 
-Typ zwrotu: Ciąg
+Return type: String
 
 ```zenscript
 myMCImmutableStringReader.getRead();
@@ -47,7 +47,7 @@ myMCImmutableStringReader.getRead();
 
 ### Pozostało
 
-Typ zwrotu: Ciąg
+Return type: String
 
 ```zenscript
 myMCImmutableStringReader.getRemaining();
@@ -55,7 +55,7 @@ myMCImmutableStringReader.getRemaining();
 
 ### Długość getPozostałości
 
-Typ zwrotu: int
+Return type: int
 
 ```zenscript
 myMCImmutableStringReader.getRemainingLength();
@@ -63,7 +63,7 @@ myMCImmutableStringReader.getRemainingLength();
 
 ### getString
 
-Typ zwrotu: Ciąg
+Return type: String
 
 ```zenscript
 myMCImmutableStringReader.getString();
@@ -71,7 +71,7 @@ myMCImmutableStringReader.getString();
 
 ### długość getTotalLength
 
-Typ zwrotu: int
+Return type: int
 
 ```zenscript
 myMCImmutableStringReader.getTotalLength();
@@ -92,9 +92,9 @@ Typ zwrotu: znak
 myMCImmutableStringReader.peek(arg0 as int);
 ```
 
-| Parametr | Typ    | Opis             |
-| -------- | ------ | ---------------- |
-| arg0     | odcień | Nie podano opisu |
+| Parameter | Type | Description             |
+| --------- | ---- | ----------------------- |
+| arg0      | int  | No description provided |
 
 
 

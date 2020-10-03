@@ -8,10 +8,10 @@
 crafttweaker.api.block.MCBlock
 ```
 
-## Методы
+## Methods
 ### canSpawnInBlock
 
-Тип возврата: логическое значение
+Return type: boolean
 
 ```zenscript
 myMCBlock.canSpawnInBlock();

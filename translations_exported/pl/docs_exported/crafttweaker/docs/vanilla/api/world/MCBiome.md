@@ -1,14 +1,14 @@
 # MCBiome
 
-Ta klasa została dodana przez moda z mod-id `crafttweaker`. Więc musisz zainstalować tę modyfikację, jeśli chcesz używać tej funkcji.
+This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
 
-## Importowanie klasy
-Może być wymagane zaimportowanie pakietu, jeśli napotkasz jakiekolwiek problemy (np. rzucanie tablicy), tak aby były bezpieczne niż przepraszamy i dodaj import.
+## Importing the class
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
 ```zenscript
 crafttweaker.api.world.MCBiome
 ```
 
-## Metody
+## Methods
 ### getTemperature
 
 Typ zwrotu: zmienna
@@ -17,24 +17,24 @@ Typ zwrotu: zmienna
 myMCBiome.getTemperature(pos as crafttweaker.api.util.BlockPos);
 ```
 
-| Parametr | Typ                                                          | Opis             |
-| -------- | ------------------------------------------------------------ | ---------------- |
-| poz.     | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | Nie podano opisu |
+| Parameter | Type                                                         | Description             |
+| --------- | ------------------------------------------------------------ | ----------------------- |
+| pos       | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | No description provided |
 
 
 
-## Właściwości
+## Properties
 
-| Nazwisko          | Typ                | Posiada Getter | Ma ustawienie |
-| ----------------- | ------------------ | -------------- | ------------- |
-| kategoria         | Ciąg znaków        | prawda         | fałszywy      |
-| głębokość         | zmiennoprzecinkowe | prawda         | fałszywy      |
-| Deszcz            | boolean            | prawda         | fałszywy      |
-| Śnieg             | boolean            | prawda         | fałszywy      |
-| upadek            | zmiennoprzecinkowe | prawda         | fałszywy      |
-| Wysoka wilgotność | boolean            | prawda         | fałszywy      |
-| Typ deszczu       | Ciąg znaków        | prawda         | fałszywy      |
-| skala             | zmiennoprzecinkowe | prawda         | fałszywy      |
-| Wodny Kolor       | odcień             | prawda         | fałszywy      |
-| Kolor WodnoFogera | odcień             | prawda         | fałszywy      |
+| Name           | Type    | Has Getter | Has Setter |
+| -------------- | ------- | ---------- | ---------- |
+| category       | String  | true       | false      |
+| depth          | float   | true       | false      |
+| doesRain       | boolean | true       | false      |
+| doesSnow       | boolean | true       | false      |
+| downfall       | float   | true       | false      |
+| isHighHumidity | boolean | true       | false      |
+| rainType       | String  | true       | false      |
+| scale          | float   | true       | false      |
+| waterColor     | int     | true       | false      |
+| waterFogColor  | int     | true       | false      |
 

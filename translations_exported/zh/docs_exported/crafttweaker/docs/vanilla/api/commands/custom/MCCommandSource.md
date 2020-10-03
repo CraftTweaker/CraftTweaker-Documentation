@@ -11,7 +11,7 @@ craftminstrer.api.commands.custom.MCCommandSource
 ## 方法
 ### getName
 
-返回类型：字符串
+Return type: String
 
 ```zenscript
 myMCCommandSource.getName();
@@ -49,22 +49,22 @@ myMCCommandSource.getTargetedEntity();
 myMCCommandSource.getTeamNames();
 ```
 
-### hasmission级别
+### hasPermissionLevel
 
-返回类型：布尔值
+Return type: boolean
 
 ```zenscript
 myMCCommandSource.hasPermissionLevel(p_197034_1_int)；
 ```
 
-| 参数            | 类型 | 描述                      |
-| ------------- | -- | ----------------------- |
-| p_197034_1_ | 整数 | No description provided |
+| 参数            | 类型  | 描述                      |
+| ------------- | --- | ----------------------- |
+| p_197034_1_ | int | No description provided |
 
 
 ### isPlayer
 
-返回类型：布尔值
+Return type: boolean
 
 ```zenscript
 myMCCommandSource.isPlayer();
@@ -76,9 +76,9 @@ myMCCommandSource.isPlayer();
 myMCCommandSource.sendErrorMessage(message as String);
 ```
 
-| 参数 | 类型          | 描述                      |
-| -- | ----------- | ----------------------- |
-| 留言 | 字符串[string] | No description provided |
+| 参数      | 类型     | 描述                      |
+| ------- | ------ | ----------------------- |
+| message | String | No description provided |
 
 
 ### sendFeedback
@@ -87,10 +87,10 @@ myMCCommandSource.sendErrorMessage(message as String);
 myMCCommandSource.send反馈(作为字符串反馈，允许日志作为布尔值)；
 ```
 
-| 参数                   | 类型          | 描述                      |
-| -------------------- | ----------- | ----------------------- |
-| 反馈                   | 字符串[string] | No description provided |
-| allowLogging #允许记录日志 | boolean     | No description provided |
+| 参数                   | 类型      | 描述                      |
+| -------------------- | ------- | ----------------------- |
+| 反馈                   | String  | No description provided |
+| allowLogging #允许记录日志 | boolean | No description provided |
 
 
 ### 反馈已禁用
@@ -109,9 +109,9 @@ myMCCommandSource.with反馈已禁用();
 myMCCommandSource.withMinPermissionLevel(p_197026_1_int)；
 ```
 
-| 参数            | 类型 | 描述                      |
-| ------------- | -- | ----------------------- |
-| p_197026_1_ | 整数 | No description provided |
+| 参数            | 类型  | 描述                      |
+| ------------- | --- | ----------------------- |
+| p_197026_1_ | int | No description provided |
 
 
 ### 拒绝权限级别
@@ -122,9 +122,9 @@ myMCCommandSource.withMinPermissionLevel(p_197026_1_int)；
 myMCCommandSource.withPermissionLevel(p_197033_1_int)；
 ```
 
-| 参数            | 类型 | 描述                      |
-| ------------- | -- | ----------------------- |
-| p_197033_1_ | 整数 | No description provided |
+| 参数            | 类型  | 描述                      |
+| ------------- | --- | ----------------------- |
+| p_197033_1_ | int | No description provided |
 
 
 

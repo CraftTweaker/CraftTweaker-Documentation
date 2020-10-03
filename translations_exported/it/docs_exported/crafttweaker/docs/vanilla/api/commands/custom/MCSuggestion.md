@@ -2,63 +2,63 @@
 
 Questa classe è stata aggiunta da una mod con ID `crafttweaker`. Perciò, è necessario avere questa mod installata per poter utilizzare questa funzione.
 
-## Importare la classe
+## Importing the class
 Potrebbe essere necessario importare il pacchetto, se si incontrano dei problemi (come castare un vettore), quindi meglio essere sicuri e aggiungere la direttiva di importazione.
 ```zenscript
 crafttweaker.api.commands.custom.MCSuggestion
 ```
 
-## Metodi
+## Methods
 ### applica
 
-Tipo di ritorno: Stringa
+Return type: String
 
 ```zenscript
 myMCSuggestion.apply(input as String);
 ```
 
-| Parametro | Tipo    | Descrizione                 |
-| --------- | ------- | --------------------------- |
-| input     | Stringa | Nessuna descrizione fornita |
+| Parameter | Type   | Description                 |
+| --------- | ------ | --------------------------- |
+| input     | String | Nessuna descrizione fornita |
 
 
 ### confrontaA
 
-Tipo di restituzione: int
+Return type: int
 
 ```zenscript
 myMCSuggestion.compareTo(o as crafttweaker.api.commands.custom.MCSuggestion);
 ```
 
-| Parametro | Tipo                                                                                       | Descrizione                 |
+| Parameter | Type                                                                                       | Description                 |
 | --------- | ------------------------------------------------------------------------------------------ | --------------------------- |
 | o         | [crafttweaker.api.commands.custom.MCSuggestion](/vanilla/api/commands/custom/MCSuggestion) | Nessuna descrizione fornita |
 
 
 ### confrontaToIgnoreCase
 
-Tipo di restituzione: int
+Return type: int
 
 ```zenscript
 myMCSuggestion.compareToIgnoreCase(b come crafttweaker.api.commands.custom.MCSuggestion);
 ```
 
-| Parametro | Tipo                                                                                       | Descrizione                 |
+| Parameter | Type                                                                                       | Description                 |
 | --------- | ------------------------------------------------------------------------------------------ | --------------------------- |
 | b         | [crafttweaker.api.commands.custom.MCSuggestion](/vanilla/api/commands/custom/MCSuggestion) | Nessuna descrizione fornita |
 
 
-### uguale
+### equals
 
-Tipo restituito: booleano
+Return type: boolean
 
 ```zenscript
 myMCSuggestion.equals(o come oggetto);
 ```
 
-| Parametro | Tipo    | Descrizione                 |
-| --------- | ------- | --------------------------- |
-| o         | Oggetto | Nessuna descrizione fornita |
+| Parameter | Type   | Description                 |
+| --------- | ------ | --------------------------- |
+| o         | Object | Nessuna descrizione fornita |
 
 
 ### espandi
@@ -69,9 +69,9 @@ Tipo restituito: [crafttweaker.api.commands.custom.MCSuggestion](/vanilla/api/co
 myMCSuggestion.expand(comando come String, intervallo come crafttweaker.api.commands.custom.MCStringRange);
 ```
 
-| Parametro | Tipo                                                                                         | Descrizione                 |
+| Parameter | Type                                                                                         | Description                 |
 | --------- | -------------------------------------------------------------------------------------------- | --------------------------- |
-| comando   | Stringa                                                                                      | Nessuna descrizione fornita |
+| command   | String                                                                                       | Nessuna descrizione fornita |
 | range     | [crafttweaker.api.commands.custom.MCStringRange](/vanilla/api/commands/custom/MCStringRange) | Nessuna descrizione fornita |
 
 
@@ -85,7 +85,7 @@ myMCSuggestion.getRange();
 
 ### getText
 
-Tipo di ritorno: Stringa
+Return type: String
 
 ```zenscript
 myMCSuggestion.getText();
@@ -93,7 +93,7 @@ myMCSuggestion.getText();
 
 ### getTooltip
 
-Tipo di ritorno: Stringa
+Return type: String
 
 ```zenscript
 myMCSuggestion.getTooltip();
@@ -101,7 +101,7 @@ myMCSuggestion.getTooltip();
 
 ### hashCode
 
-Tipo di restituzione: int
+Return type: int
 
 ```zenscript
 myMCSuggestion.hashCode();
@@ -109,27 +109,27 @@ myMCSuggestion.hashCode();
 
 ### toString
 
-Tipo di ritorno: Stringa
+Return type: String
 
 ```zenscript
 myMCSuggestion.toString();
 ```
 
 
-## Operatori
-### EQUALI
+## Operators
+### EQUALS
 
 ```zenscript
 myMCSuggestion == o come oggetto
 ```
 
-| Parametro | Tipo    | Descrizione                 |
-| --------- | ------- | --------------------------- |
-| o         | Oggetto | Nessuna descrizione fornita |
+| Parameter | Type   | Description                 |
+| --------- | ------ | --------------------------- |
+| o         | Object | Nessuna descrizione fornita |
 
 ## Caster
 
 | Tipo Risultato | Implicito |
 | -------------- | --------- |
-| Stringa        | vero      |
+| String         | true      |
 

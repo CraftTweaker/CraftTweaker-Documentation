@@ -8,27 +8,27 @@
 crafttweaker.api.commands.custom.MCRootCommandNode
 ```
 
-## Реализованные интерфейсы
-MCRootCommandNode реализует следующие интерфейсы. Следовательно, методы из них доступны в этом классе.
+## Implemented Interfaces
+MCRootCommandNode реализует следующие интерфейсы. That means any method available to them can also be used on this class.
 - [crafttweaker.api.commands.custom.MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)
 
-## Методы
-### равно
+## Methods
+### equals
 
-Тип возврата: логическое значение
+Return type: boolean
 
 ```zenscript
 myMCRootCommandNode.equals(o as Object);
 ```
 
-| Параметр | Тип    | Описание             |
+| Параметр | Тип    | Description          |
 | -------- | ------ | -------------------- |
-| о        | Объект | Описание отсутствует |
+| o        | Object | Описание отсутствует |
 
 
 ### hashCode
 
-Тип возврата: int
+Return type: int
 
 ```zenscript
 myMCRootCommandNode.hashCode();
@@ -36,20 +36,20 @@ myMCRootCommandNode.hashCode();
 
 ### isValidInput
 
-Тип возврата: логическое значение
+Return type: boolean
 
 ```zenscript
 myMCRootCommandNode.isValidInput(input as String);
 ```
 
-| Параметр | Тип    | Описание             |
+| Параметр | Тип    | Description          |
 | -------- | ------ | -------------------- |
 | input    | String | Описание отсутствует |
 
 
 ### toString
 
-Тип возврата: строка
+Return type: String
 
 ```zenscript
 myMCRootCommandNode.toString();
@@ -63,9 +63,9 @@ myMCRootCommandNode.toString();
 myMCRootCommandNode == o как объект
 ```
 
-| Параметр | Тип    | Описание             |
+| Параметр | Тип    | Description          |
 | -------- | ------ | -------------------- |
-| о        | Объект | Описание отсутствует |
+| o        | Object | Описание отсутствует |
 
 ## Утилиты
 

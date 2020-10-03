@@ -1,25 +1,25 @@
 # MCParsedCommandNode
 
-crafttweakerのmod-idを持つmodによって追加されているクラスです。 従って、この機能を利用する場合はこのmodをインストールする必要があります。
+This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
 
-## クラスのインポート
-問題が発生した場合には、インポートが必要になります。とはいえ、お手数ですが予めインポートしておくほうが安全です。
+## Importing the class
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
 ```zenscript
 crafttweaker.api.commands.custom.MCParsedCommandNode
 ```
 
-## メソッド
-### 等しい
+## Methods
+### equals
 
-戻り値の型: boolean
+Return type: boolean
 
 ```zenscript
 myMCParsedCommandNode.equals(o as Object);
 ```
 
-| パラメータ | タイプ    | 説明           |
-| ----- | ------ | ------------ |
-| o     | オブジェクト | 説明が提供されていません |
+| Parameter | Type   | Description             |
+| --------- | ------ | ----------------------- |
+| o         | Object | No description provided |
 
 
 ### getNode
@@ -40,7 +40,7 @@ myMCParsedCommandNode.getRange();
 
 ### hashCode
 
-戻り値の種類: int
+Return type: int
 
 ```zenscript
 myMCParsedCommandNode.hashCode();
@@ -48,7 +48,7 @@ myMCParsedCommandNode.hashCode();
 
 ### toString
 
-戻り値の型: String
+Return type: String
 
 ```zenscript
 myMCParsedCommandNode.toString();
@@ -62,13 +62,13 @@ myMCParsedCommandNode.toString();
 myMCParsedCommandNode == o as Object
 ```
 
-| パラメータ | タイプ    | 説明           |
-| ----- | ------ | ------------ |
-| o     | オブジェクト | 説明が提供されていません |
+| Parameter | Type   | Description             |
+| --------- | ------ | ----------------------- |
+| o         | Object | No description provided |
 
-## キャスト
+## Casters
 
-| 結果の種類 | 暗黙的  |
-| ----- | ---- |
-| 文字列型  | true |
+| Result type | Is Implicit |
+| ----------- | ----------- |
+| String      | true        |
 

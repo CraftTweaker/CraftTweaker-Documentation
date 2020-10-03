@@ -1,14 +1,16 @@
 # Mods
 
-Cette classe a été ajoutée par un mod avec le mod-id `crafttweaker`. Vous devez donc avoir ce mod installé si vous voulez utiliser cette fonctionnalité.
+Contient des informations sur tous les mods qui sont enregistrés. Accessible en utilisant le mot-clé global `loadedMods`
 
-## Importation de la classe
-Il pourrait vous être nécessaire d'importer le paquet si vous rencontrez des problèmes (comme lancer un tableau), alors mieux être sûr que désolé et ajouter l'importation.
+This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
+
+## Importing the class
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
 ```zenscript
 crafttweaker.api.mods.Mods
 ```
 
-## Méthodes
+## Methods
 ### getMod
 
 Obtient un mod spécifique
@@ -18,13 +20,13 @@ Obtient un mod spécifique
 Type de retour : [crafttweaker.api.mods.ModInfo](/vanilla/api/mods/ModInfo)
 
 ```zenscript
-monMods.getMod(modid comme String);
-monMods.getMod("minecraft");
+loadedMods.getMod(modid comme String);
+loadedMods.getMod("minecraft");
 ```
 
-| Paramètre | Type de texte        | Libellé                    |
-| --------- | -------------------- | -------------------------- |
-| modifier  | Chaîne de caractères | Aucune description fournie |
+| Parameter | Type   | Description             |
+| --------- | ------ | ----------------------- |
+| modid     | String | No description provided |
 
 
 ### isModLoaded
@@ -33,23 +35,23 @@ Vérifie si un mod est laodé
 
  Renvoie : `vrai si le mod est chargé`
 
-Type de retour: booléen
+Return type: boolean
 
 ```zenscript
-monMods.isModLoaded(modid comme String);
-monMods.isModLoaded("minecraft");
+loadedMods.isModLoaded(modid as String);
+loadedMods.isModLoaded("minecraft");
 ```
 
-| Paramètre | Type de texte        | Libellé                |
-| --------- | -------------------- | ---------------------- |
-| modifier  | Chaîne de caractères | modifier pour vérifier |
+| Parameter | Type   | Description            |
+| --------- | ------ | ---------------------- |
+| modid     | String | modifier pour vérifier |
 
 
 
-## Propriétés
+## Properties
 
-| Nom    | Type de texte                                                                       | A un Getter | A un Setter |
-| ------ | ----------------------------------------------------------------------------------- | ----------- | ----------- |
-| mods   | Liste&lt;[crafttweaker.api.mods.ModInfo](/vanilla/api/mods/ModInfo)&gt; | vrai        | Faux        |
-| taille | Indice                                                                              | vrai        | Faux        |
+| Name | Type                                                                                | Has Getter | Has Setter |
+| ---- | ----------------------------------------------------------------------------------- | ---------- | ---------- |
+| mods | Liste&lt;[crafttweaker.api.mods.ModInfo](/vanilla/api/mods/ModInfo)&gt; | true       | false      |
+| size | int                                                                                 | true       | false      |
 

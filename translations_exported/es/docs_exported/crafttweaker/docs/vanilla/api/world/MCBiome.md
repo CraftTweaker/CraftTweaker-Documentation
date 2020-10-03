@@ -1,40 +1,40 @@
 # MCBiome
 
-Esta clase fue añadida por un mod con la ID  `crafttweaker`. Necesitas tener este mod instalado si quieres usar esta caracteristica.
+This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
 
-## Importar la clase
-Puede ser requerido que importes el paquete si encuentras algun problema (como crear un Array).
+## Importing the class
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
 ```zenscript
 crafttweaker.api.world.MCBiome
 ```
 
-## Métodos
-### getTemperatura
+## Methods
+### getTemperature
 
 Tipo de retorno: flotante
 
 ```zenscript
-myMCBiome.getTemperature(pos como crafttweaker.api.util.BlockPos);
+myMCBiome.getTemperature(pos as crafttweaker.api.util.BlockPos);
 ```
 
-| Parámetro | Tipo                                                         | Descripción                   |
-| --------- | ------------------------------------------------------------ | ----------------------------- |
-| pos       | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | No se proporcionó descripción |
+| Parameter | Type                                                         | Description             |
+| --------- | ------------------------------------------------------------ | ----------------------- |
+| pos       | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | No description provided |
 
 
 
-## Propiedades
+## Properties
 
-| Nombre          | Tipo     | Tiene Obtén | Tiene Setter |
-| --------------- | -------- | ----------- | ------------ |
-| categoría       | Cadena   | verdad      | falso        |
-| profundidad     | flotante | verdad      | falso        |
-| Lluvia          | boolean  | verdad      | falso        |
-| Nieve           | boolean  | verdad      | falso        |
-| caída           | flotante | verdad      | falso        |
-| es alta humedad | boolean  | verdad      | falso        |
-| tipo de lluvia  | Cadena   | verdad      | falso        |
-| escala          | flotante | verdad      | falso        |
-| acuarela        | int      | verdad      | falso        |
-| color del agua  | int      | verdad      | falso        |
+| Name           | Type    | Has Getter | Has Setter |
+| -------------- | ------- | ---------- | ---------- |
+| category       | String  | true       | false      |
+| depth          | float   | true       | false      |
+| doesRain       | boolean | true       | false      |
+| doesSnow       | boolean | true       | false      |
+| downfall       | float   | true       | false      |
+| isHighHumidity | boolean | true       | false      |
+| rainType       | String  | true       | false      |
+| scale          | float   | true       | false      |
+| waterColor     | int     | true       | false      |
+| waterFogColor  | int     | true       | false      |
 

@@ -7,11 +7,11 @@
 ## 导入相关包
 如果遇到任何问题（例如强制转换数组），则可能需要导入软件包，因此，最好的方式就是导入包支持。
 ```zenscript
-craftbinvest.api.StoneCutterManager
+crafttweaker.api.StoneCutterManager
 ```
 
 ## 已实现的接口
-StoneCutterManager 实现以下接口。 这意味着对这个接口可用的任何方法也可以在此类上使用。
+StoneCutterManager implements the following interfaces. 这意味着对这个接口可用的任何方法也可以在此类上使用。
 - [crafttweaker.api.brackets.CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
 - [crafttweaker.api.registries.IRecipeManager](/vanilla/api/managers/IRecipeManager)
 
@@ -21,30 +21,30 @@ StoneCutterManager 实现以下接口。 这意味着对这个接口可用的任
 基于提供的IData添加配方 提供的 IData 应该代表一个JSON数据包 ,这有效地允许您注册任何支持 IRecipeType 系统的 DataPack配方。
 
 ```zenscript
-stoneCutter.addJSONRecipe(name as String, data as craftbiner.api.data.IData);
-stoneCutter.addJSONRecipe("recipe_name", {component:{item:<item:minecraft:gold_ore>.registryName},result:<item:minecraft:cooked_porkchop>.registryName,experience:0.35 as float, cookingtime:100});
+stoneCutter.addJSONRecipe(name as String, data as crafttweaker.api.data.IData);
+stoneCutter.addJSONRecipe("recipe_name", {ingredient:{item:<item:minecraft:gold_ore>.registryName},result:<item:minecraft:cooked_porkchop>.registryName,experience:0.35 as float, cookingtime:100});
 ```
 
-| 参数   | 类型                                                     | 描述           |
-| ---- | ------------------------------------------------------ | ------------ |
-| 名称   | 字符串[string]                                            | 配方名称         |
-| data | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | 代表json 文件的数据 |
+| 参数   | 类型                                                     | 描述                              |
+| ---- | ------------------------------------------------------ | ------------------------------- |
+| name | String                                                 | name of the recipe              |
+| data | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | data representing the json file |
 
 
-### 添加配方
+### addRecipe
 
-将配方添加到石头切割器
+Adds a recipe to the stone cutter
 
 ```zenscript
-stoneCutter.addRecipe(recipeName as String, output as craftbiner.api.item.IItemStack, input as craftbiner.api.item.IIngredient);
+stoneCutter.addRecipe(recipeName as String, output as crafttweaker.api.item.IItemStack, input as crafttweaker.api.item.IIngredient);
 stoneCutter.addRecipe("recipe_name", <item:minecraft:grass>, <tag:minecraft:wool>);
 ```
 
-| 参数         | 类型                                                                | 描述                                                                       |
-| ---------- | ----------------------------------------------------------------- | ------------------------------------------------------------------------ |
-| 累计名称       | 字符串[string]                                                       | 配方名称                                                                     |
-| output（输出） | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | output [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) |
-| input（输入）  | [制造商.api.item.IIngredient](/vanilla/api/items/IIngredient)        | 输入 [craftbinstruer.api.item.IIngredient](/vanilla/api/items/IIngredient) |
+| 参数         | 类型                                                                  | 描述                                                                       |
+| ---------- | ------------------------------------------------------------------- | ------------------------------------------------------------------------ |
+| recipeName | String                                                              | name of the recipe                                                       |
+| output（输出） | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)   | output [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) |
+| input（输入）  | [crafttweaker.api.item.IIngredient](/vanilla/api/items/IIngredient) | 输入 [craftbinstruer.api.item.IIngredient](/vanilla/api/items/IIngredient) |
 
 
 ### getRecipeByName
@@ -55,9 +55,9 @@ stoneCutter.addRecipe("recipe_name", <item:minecraft:grass>, <tag:minecraft:wool
 stoneCutter.getRecipeByname(名字为字符串)；
 ```
 
-| 参数 | 类型          | 描述                      |
-| -- | ----------- | ----------------------- |
-| 名称 | 字符串[string] | No description provided |
+| 参数   | 类型     | 描述                      |
+| ---- | ------ | ----------------------- |
+| name | String | No description provided |
 
 
 ### getRecipesBy输出
@@ -68,31 +68,31 @@ stoneCutter.getRecipeByname(名字为字符串)；
 stoneCutter.getRecipesByOutput(输出为craftbiner.api.item.IIngredient);
 ```
 
-| 参数         | 类型                                                         | 描述                      |
-| ---------- | ---------------------------------------------------------- | ----------------------- |
-| output（输出） | [制造商.api.item.IIngredient](/vanilla/api/items/IIngredient) | No description provided |
+| 参数         | 类型                                                                  | 描述                      |
+| ---------- | ------------------------------------------------------------------- | ----------------------- |
+| output（输出） | [crafttweaker.api.item.IIngredient](/vanilla/api/items/IIngredient) | No description provided |
 
 
-### 全部移除
+### removeAll
 
-删除此注册表中的所有配方
+Remove all recipes in this registry
 
 ```zenscript
 stoneCutter.removeAll();
 ```
 
-### 移除 ByModid
+### removeByModid
 
-删除基于注册表名称莫迪的配方
+Remove recipe based on Registry name modid
 
 ```zenscript
-stoneCutter.removeByModed(modand as String);
-stoneCutter.removeByModed(“minecraft”);
+stoneCutter.removeByModid(modid as String);
+stoneCutter.removeByModid("minecraft");
 ```
 
-| 参数  | 类型          | 描述          |
-| --- | ----------- | ----------- |
-| 莫多德 | 字符串[string] | 已删除配方的 modo |
+| 参数    | 类型     | 描述                             |
+| ----- | ------ | ------------------------------ |
+| modid | String | modid of the recipes to remove |
 
 
 
@@ -103,58 +103,58 @@ stoneCutter.removeByModed(modian as String, exclusion as craftweer.api.recipe.Re
 stoneCutter.removeByModed("minecraft", (name as string) => {return name == "orange_wool";});
 ```
 
-| 参数  | 类型                                                              | 描述          |
-| --- | --------------------------------------------------------------- | ----------- |
-| 莫多德 | 字符串[string]                                                     | 已删除配方的 modo |
-| 不包含 | [制作器.api.recipe.RecipeFilter](/vanilla/api/recipe/RecipeFilter) | 要避免被移除的配方。  |
+| 参数    | 类型                                                              | 描述                             |
+| ----- | --------------------------------------------------------------- | ------------------------------ |
+| modid | String                                                          | modid of the recipes to remove |
+| 不包含   | [制作器.api.recipe.RecipeFilter](/vanilla/api/recipe/RecipeFilter) | 要避免被移除的配方。                     |
 
 
 ### removeByName
 
-删除基于注册表名称的配方
+Remove recipe based on Registry name
 
 ```zenscript
-stoneCutter.removeByname(名称为字符串);
-stoneCutter.removeByname(“minecraft:furnace”);
+stoneCutter.removeByName(name as String);
+stoneCutter.removeByName("minecraft:furnace");
 ```
 
-| 参数 | 类型          | 描述           |
-| -- | ----------- | ------------ |
-| 名称 | 字符串[string] | 要删除的配方的注册表名称 |
+| 参数   | 类型     | 描述                                |
+| ---- | ------ | --------------------------------- |
+| name | String | registry name of recipe to remove |
 
 
 ### removeByRegex
 
-基于正则表达式删除配方
+Remove recipe based on regex
 
 ```zenscript
 stoneCutter.removeByRegex(regex as String);
-stoneCutter.removeByRegex("\d_\\d");
+stoneCutter.removeByRegex("\\d_\\d");
 ```
 
-| 参数    | 类型          | 描述      |
-| ----- | ----------- | ------- |
-| 正则表达式 | 字符串[string] | 正则表达式匹配 |
+| 参数    | 类型     | 描述                     |
+| ----- | ------ | ---------------------- |
+| regex | String | regex to match against |
 
 
 ### 删除合成表
 
-移除基于其输出的配方。
+Remove a recipe based on it's output.
 
 ```zenscript
-stoneCutter.removeRecipe(输出为 craftbiner.api.item.IItemStack);
+stoneCutter.removeRecipe(output as crafttweaker.api.item.IItemStack);
 stoneCutter.removeRecipe(<item:minecraft:glass>);
 ```
 
-| 参数         | 类型                                                                | 描述    |
-| ---------- | ----------------------------------------------------------------- | ----- |
-| output（输出） | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | 配方的输出 |
+| 参数         | 类型                                                                | 描述                   |
+| ---------- | ----------------------------------------------------------------- | -------------------- |
+| output（输出） | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | output of the recipe |
 
 
 
 ## 参数
 
-| 名称                   | 类型          | 可获得  | 可设置   |
-| -------------------- | ----------- | ---- | ----- |
-| commandString #命令字符串 | 字符串[string] | true | false |
+| 名称            | 类型     | 可获得  | 可设置   |
+| ------------- | ------ | ---- | ----- |
+| commandString | String | true | false |
 
