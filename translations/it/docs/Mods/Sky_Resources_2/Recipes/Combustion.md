@@ -1,19 +1,19 @@
-# Combustione
+# Combustion
 
-Il pacchetto *combustione* viene utilizzato per aggiungere o rimuovere ricette da/per il processo di combustione.
+The *combustion* package is used for adding or removing recipes to/from the Combustion process.
 
-## Chiamata
+## Calling
 
-Puoi chiamare il pacchetto *combustion* utilizzando `mods.skyresources.combustion`
+You can call the *combustion* package using `mods.skyresources.combustion`
 
-## Aggiunta Ricetta
+## Recipe Addition
 
 ```zenscript
 //mods.skyresources.combustion.addRecipe(IItemStack output, IItemStack[] input, int temperature);
 mods.skyresources.combustion.addRecipe(<minecraft:diamond>, [<minecraft:dirt>, <minecraft:sand> * 2], 420);
 ```
 
-## Rimozione Ricetta
+## Recipe Removal
 
 ```zenscript
 //mods.skyresources.combustion.removeRecipe(IItemStack output);

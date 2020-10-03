@@ -1,11 +1,11 @@
-# ツール収穫-レベル
+# Tool Harvest-Level
 
-これにより、プレイヤーは収穫レベルが指定されたレベル以上であるアイテムツールを保持する必要があります。
+This requires the player to be holding an itemTool whose harvest level is equal or higher than the level specified.
 
-    例:
-    収穫|integer
+    Example:
+    harvest|integer
     
-    作業例:
-    収穫|1
-    収穫|2
-    収穫|3
+    Working Example:
+    harvest|1
+    harvest|2
+    harvest|3

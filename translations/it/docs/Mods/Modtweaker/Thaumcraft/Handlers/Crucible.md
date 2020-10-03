@@ -1,23 +1,23 @@
-# Crogiolo
+# Crucible
 
-Questo pacchetto ti permette di aggiungere e rimuovere ricette da/per il Crogiolo.
+This package allows you to add and remove recipes to/from the Crucible.
 
-## Importazione del pacchetto
+## Importing the package
 
-È possibile [importare](/AdvancedFunctions/Import/) il pacchetto e i suoi metodi per facilitare il retrival dei metodi.
+You can [import](/AdvancedFunctions/Import/) the package and its methods to facilitate the retrival of the methods.
 
 ```zenscript
 import mods.thaumcraft.Crucible;
 ```
 
-## Aggiungere ricette
+## Adding recipes
 
 ```zenscript
-//mods.thaumcraft.Crucible.registerRecipe(Nome string, String researchKey, IItemStack output, IIngredient input, CTAspectStack[] aspects);
+//mods.thaumcraft.Crucible.registerRecipe(String name, String researchKey, IItemStack output, IIngredient input, CTAspectStack[] aspects);
 mods.thaumcraft.Crucible.registerRecipe("crucibleTest", "", <minecraft:diamond>, <minecraft:stick>, [<aspect:aer>]);
 ```
 
-## Rimozione ricette
+## Removing recipes
 
 ```zenscript
 //mods.thaumcraft.Crucible.removeRecipe(String name);

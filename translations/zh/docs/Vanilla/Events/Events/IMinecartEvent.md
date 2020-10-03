@@ -1,12 +1,12 @@
-# Imminecart事件
+# IMinecartEvent
 
-此事件扩展到所有涉及地雷的事件。
+This event is extended by all events involving Minecarts.
 
 ## 导入类
-可能需要 [导入](/AdvancedFunctions/Import/) 类以避免错误。  
-`导入craftminstruer.eventIMinecartEvent;`
+It might be required to [import](/AdvancedFunctions/Import/) the class to avoid errors.  
+`import crafttweaker.event.IMinecartEvent;`
 
-## 他们能够做些什么？
+## What can be done with them?
 
 | 名称       | 类型                                    |
 | -------- | ------------------------------------- |

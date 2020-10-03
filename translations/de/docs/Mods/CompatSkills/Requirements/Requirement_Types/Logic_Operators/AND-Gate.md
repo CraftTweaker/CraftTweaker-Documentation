@@ -1,15 +1,15 @@
-# UND Operator
+# AND Operator
 
-Ein **UND** Tor kombiniert zwei Eingänge und gibt `TRUE` nur zurück, wenn beide Eingänge auch `TRUE` sind.
+An **AND** gate combines two inputs and returns `TRUE` only if both inputs are also `TRUE`.
 
-| Input 1 | Input 2 | Ausgang |
-| ------- | ------- | -------:|
-| 0       | 0       |       0 |
-| 0       | 1       |       0 |
-| 1       | 0       |       0 |
-| 1       | 1       |       1 |
+| Input 1 | Input 2 | Output |
+| ------- | ------- | ------:|
+| 0       | 0       |      0 |
+| 0       | 1       |      0 |
+| 1       | 0       |      0 |
+| 1       | 1       |      1 |
 
-Die AND-Anforderung ist im Gegensatz zu den anderen logischen Anforderungen vor allem für verschachtelte Logikanforderungen nützlich. als Sperre eines Gegenstands oder eines anderen Objekts mit mehreren Anforderungen erfordert, dass alle angegebenen Anforderungen erfüllt werden. Dies ist die gleiche wie die UND-Funktionalität, sollte daher wenn möglich verwendet werden so dass der Tooltip einfacher zu lesen ist.
+The AND requirement unlike the other logic requirements is mainly useful for nested logic requirements, as locking an item or other object with multiple requirements requires all of the given requirements to be met. This is the same as the AND functionality, so should be used when possible, as it will make the tooltip be formatted in an easier to read manner.
 
-    Leeres Beispiel:
-    UND|[]~[]
+    Empty Example:
+    AND|[]~[]

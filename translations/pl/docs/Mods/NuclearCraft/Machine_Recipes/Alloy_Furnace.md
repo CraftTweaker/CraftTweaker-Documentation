@@ -1,14 +1,14 @@
-# Stop pieca
+# Alloy Furnace
 
-## Importowanie pakietu
-`[PLACEHOLDER] mods.nuclearcraft.alloy_furnace`
+## Importing the Package
+`mods.nuclearcraft.alloy_furnace`
 
-## Dodawanie przepisów
+## Adding Recipes
 ```zenscript
-mods.nuclearcraft.alloy_furnace.addRecipe([itemInput1, itemInput2, itemOutput, @Opcjonalny podwójny timeMultiplier, @Opcjonalny podwójny nośnik, @Opcjonalny podwójny proces]);
+mods.nuclearcraft.alloy_furnace.addRecipe([itemInput1, itemInput2, itemOutput, @Optional double timeMultiplier, @Optional double powerMultiplier, @Optional double processRadiation]);
 ```
 
-## Usuwanie przepisów
+## Removing Recipes
 ```zenscript
 mods.nuclearcraft.alloy_furnace.removeRecipeWithInput([itemInput1, itemInput2]);
 mods.nuclearcraft.alloy_furnace.removeRecipeWithOutput([itemOutput1]);

@@ -1,23 +1,23 @@
-# El concepto
+# The Concept
 
-El bucle es un concepto antiguo y una de las bases de la programación: repetir el mismo conjunto de acciones sobre un grupo de elementos , mientras se filtraban algunos de ellos o se convertían conjuntos. O incluso encontrar el primer elemento en una lista que satisfaga una condición determinada o contar los elementos en un conjunto recursivamente.
+Looping is an old concept and one of the basis of programming: repeating the same set of actions over a group of elements, while filtering some of them out or converting sets. Or even finding the first item in a list that satisfies a certain condition or a count the items in a set recursively.
 
-En programación imperiosa y procedimental, la mayor parte de eso se ha hecho con viejos bucles viejos `para` y una serie de sentencias condicionales con su relativo `continuar` y `romper` proposiciones. Si bien esto puede parecer más sencillo de seguir, it requiere un montón de código para operaciones simples, como el filtrado y puede producir cadenas de anidación que pueden prolongarse más tiempo. Además, no expresa la intención a menos que el código lo especifique con comentarios.
+In procedural and imperative programming, most of that has been done with plain old `for` loops and a series of conditional statements with their relative `continue` and `break` statements. While this may seem simpler to follow, it requires a lot of code for simple operations such as filtering and may produce nesting chains that can go on for longer. Moreover, it doesn't express the intent unless the code specifies it with comments.
 
-Considere el siguiente código de ZenScript:
+Consider the following ZenScript code:
 
 ```zenscript
-var TexttForMc = false;
+var nbtForMc = false;
 
-para receta en recetas. ll {
+for recipe in recipes.all {
     if (recipe.shaped) {
-        val output = recetas. utput;
-        if (! sNull(output)) {
-            if (output. efinition.owner == "minecraft") {
-                val hasData = salida. asTag;
+        val output = recipes.output;
+        if (!isNull(output)) {
+            if (output.definition.owner == "minecraft") {
+                val hasData = output.hasTag;
                 if (hasData) {
-                    TexttForMc = true; interrumpir
-
+                    nbtForMc = true;
+                    break;
                 }
             }
         }
@@ -25,19 +25,19 @@ para receta en recetas. ll {
 }
 ```
 
-Lo que hace este código no es obvio a primera vista y requiere que el usuario lea la lógica para entender. Considere este equivalente construido a través de secuencias:
+What this code does isn't obvious from a first glance and requires the user to read the logic to understand. Consider this equivalent one constructed via sequences:
 
 ```zenscript
-val TexttForMc = <sequence:ICraftingRecipe>(recipes.all)
-    .filter(function (recipe) { return recipe. haped; })
+val nbtForMc = <sequence:ICraftingRecipe>(recipes.all)
+    .filter(function (recipe) { return recipe.shaped; })
     .map(function (recipe) { return recipe.output; })
-    . ilterNot(function (output) { return isNull(output); })
-    .filter(function (output) { return output. efinition.owner == "minecraft"; })
+    .filterNot(function (output) { return isNull(output); })
+    .filter(function (output) { return output.definition.owner == "minecraft"; })
     .any(function (output) { return output.hasTag; });
 ```
 
-Este código hace exactamente lo mismo y no sólo es más conciso, pero también transmite más significado que una cadena de sentencias anidadas `si`. Por supuesto, esto no parece una mejora general, debido a la simplicidad del código en cuestión. pero puede resultar útil para piezas de lógica más complicadas.
+This code does the exact same and not only it's more concise, but also conveys more meaning that a chain of nested `if` statements. Granted, this does not seem like a general improvement, due to the simplicity of the code in question, but it may prove useful for more complicated pieces of logic.
 
-Otro profesional del código anterior es que la evaluación no se realiza hasta `cualquier` llamada, lo que significa que la secuencia puede ser extendida mediante llamadas de métodos adicionales a lo largo del tiempo y no se resolverá hasta que se llame un método "terminal" (i. . un método que no devuelve una `secuencia` en sí mismo). Esto resulta extremadamente útil ya que no es necesario evaluar el arreglo entero `recetas.all`.
+Another pro of the above code is that evaluation is not performed until the `any` call, meaning that the sequence can be extended via additional method calls over time and it won't be resolved until a "terminal" method is called (i.e. a method that does not return a `Sequence` itself). This proves extremely useful since it is not necessary to evaluate the whole `recipes.all` array.
 
-Para comenzar y aprovechar las Secuencias, puede consultar la [documentación de la clase](/Mods/Boson/Sequences/Docs/) y [cómo obtener un](/Mods/Boson/Sequences/Obtaining/) páginas de documentación.
+To get started and leverage Sequences, you can consult both the [class documentation](/Mods/Boson/Sequences/Docs/) and [how to obtain one](/Mods/Boson/Sequences/Obtaining/) documentation pages.

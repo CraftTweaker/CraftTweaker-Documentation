@@ -1,17 +1,17 @@
-# Salzspaltung
-**Hinweis: Teilweise kaputt**
+# Salt Fission
+**Note: Partially Broken**
 
-## Paket wird importiert
-`mods.nuclearcraft.Salzspaltung`
+## Importing the Package
+`mods.nuclearcraft.SaltFission`
 
-## Rezepte hinzufügen
+## Adding Recipes
 ```zenscript
 mods.nuclearcraft.SaltFission.addRecipe(ILiquidStack fluidInput, ILiquidStack fluidOutput, double baseTime, double basePower, @Optional double processRadiation);
 ```
 
-## Rezepte entfernen
+## Removing Recipes
 ```zenscript
 mods.nuclearcraft.SaltFission.removeRecipeWithInput(ILiquidStack fluidInput);
 mods.nuclearcraft.SaltFission.removeRecipeWithOutput(ILiquidStack fluidOutput);
-mods.nuclearcraft.SaltFission.removeAllRezept();
+mods.nuclearcraft.SaltFission.removeAllRecipes();
 ```

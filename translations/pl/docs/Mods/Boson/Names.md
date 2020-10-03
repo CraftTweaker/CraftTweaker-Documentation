@@ -1,54 +1,54 @@
-# Nazwiska w Boson
+# Names in Boson
 
-W Minecrafcie większość obiektów jest identyfikowana za pomocą unikalnych nazw. Np. elementy używają ich nazwy rejestru, aby być unikalnie zidentyfikowane i nie może istnieć więcej niż jedna pozycja o tej samej nazwie rejestru.
+In Minecraft, most objects are identified by unique names. E.g., items use their registry name to be uniquely identified and there can't exist more than one item with the same registry name.
 
-Większość nazw w Minecraft podąża za sztywną strukturą, zidentyfikowaną przez ciąg znaków z przestrzenią nazw i ścieżką oddzieloną dwukropkiem (np. `minecraft:iron_ingot`, gdzie `minecraft` jest przestrzenią nazw a `iron_ingot` jest ścieżką). W CraftTweaker większość z tych nazw przedstawia się jako surowe ciągi, ale w Boson jest to mrożone. W rzeczywistości użycie surowego ciągu `` może mylić ludzi co do tego, czy wywołanie metody oczekuje ciągu znaków z przestrzenią nazw lub bez. Z tego powodu Boson oddzielił użycie ciągów nienazwanych od ciągów nazw.
+Most names in Minecraft follow a rigid structure, identified by a string with a namespace and a path separated by a colon (e.g. `minecraft:iron_ingot`, where `minecraft` is the namespace and `iron_ingot` is the path). In CraftTweaker, most of these names are represented as raw strings, but within Boson this is frowned upon. In fact, the usage of a raw `string` may confuse people on whether a method call expects a string with a namespace or without. For this reason, Boson separated the usage of non-namespaced strings and namespaced ones.
 
-Ciągi nienazwane są reprezentowane jako instancje `string`, wśród wszystkich bośniackich API. Aby uzyskać więcej informacji, zapoznaj się z dokumentacją ZenScript.
+Non-namespaced strings are represented as instances of `string`, among all the Boson APIs. For more information, refer to the ZenScript documentation.
 
-Ciągi nazw są reprezentowane jako instancje `NameSpacedString`, wśród wszystkich bośniackich API. Aby uzyskać więcej informacji o tym, jak uzyskać takie ciągi, zapoznaj się z następną sekcją.
+Namespaced strings are represented as instances of `NameSpacedString`, among all the Boson APIs. For more information on how to obtain such strings, refer to the next section.
 
-## `NameSpacedString` Dokumentacja
-Klasa `NameSpacedString` znajduje się w pakiecie `net.thesilkminer.mc.boson.zen.naming`.
+## `NameSpacedString` Documentation
+The `NameSpacedString` class resides in the `net.thesilkminer.mc.boson.zen.naming` package.
 
-### Tworzenie nowej instancji
-Istnieją dwa sposoby na utworzenie `NameSpacedString`: przy użyciu metody fabrycznej lub za pomocą ciągu ``.
+### Creating a new instance
+There are two ways of creating a `NameSpacedString`: using the factory method or casting a `string`.
 
-Sugerowane podejście stanowi metodę fabryczną. Ze względu na to, że jest to metoda statyczna, można ją powoływać bezpośrednio na instancję klasy . Poniżej przedstawiono podpis metody i przykład jej zastosowania:
+The factory method is the suggested approach. Due to it being a static method, it can be invoked directly on the class instance. The following is the method signature and an example of its usage:
 
 ```zenscript
-funkcja z(nazwaSpacja jako ciąg?, ścieżka jako ciąg) jako nazwaSpacedString;
+function from(nameSpace as string?, path as string) as NameSpacedString;
 ```
 
 ```zenscript
-NazwaSpacedString.from("minecraft", "iron_ingot"); // odpowiednik minecraft:iron_ingot
-NameSpacedString.from(null, "iron_ingot"); // używa domyślnej przestrzeni nazw 'minecraft'
+NameSpacedString.from("minecraft", "iron_ingot"); // equivalent to minecraft:iron_ingot
+NameSpacedString.from(null, "iron_ingot"); // uses default namespace 'minecraft'
 ```
 
-Przetwarzanie drogi opiera się raczej na jawnym przekazie z `ciągu` do `NameSpacedString` , używając `jako` operatora w ZenScript:
+The casting way relies instead on an explicit cast from a `string` to a `NameSpacedString` using the `as` operator in ZenScript:
 
 ```zenscript
-"minecraft:iron_ingot" jako nazwaSpacedString;
+"minecraft:iron_ingot" as NameSpacedString;
 ```
 
-### Właściwości
-`NameSpacedString` zapewnia dostęp tylko do odczytu zarówno do jej przestrzeni nazw jak i jej ścieżki poprzez właściwości:
+### Properties
+A `NameSpacedString` provides read-only access to both its namespace and its path via properties:
 
-| Nazwa Właściwości  | Typ           | Opis                                                                |
-| ------------------ | ------------- | ------------------------------------------------------------------- |
-| `Przestrzeń nazwy` | `ciąg znaków` | Pobiera część przestrzeni nazw `NameSpacedString` (np. `minecraft`) |
-| `ścieżka`          | `ciąg znaków` | Pobiera część ścieżki `NameSpacedString` (np. `iron_ingot`)         |
+| Property Name | Type     | Description                                                             |
+| ------------- | -------- | ----------------------------------------------------------------------- |
+| `nameSpace`   | `string` | Gets the namespace portion of the `NameSpacedString` (e.g. `minecraft`) |
+| `path`        | `string` | Gets the path portion of the `NameSpacedString` (e.g. `iron_ingot`)     |
 
-### Metody
+### Methods
 
 #### `asString`
-`NameSpacedString` można przekształcić z powrotem w regularny `ciąg` za pomocą metody `asString`. Poniżej znajduje się podpis metody i przykład jej użycia:
+A `NameSpacedString` can be converted back into a regular `string` by using the `asString` method. The following is the method signature and an example of its usage:
 
 ```zenscript
-funkcja asString() jako ciąg;
+function asString() as string;
 ```
 
 ```zenscript
-val nss = NazwaSpacedString("minecraft", "iron_ingot");
-println(nss.asString()); // Drukuje 'minecraft:iron_ingot' do dziennika
+val nss = NameSpacedString("minecraft", "iron_ingot");
+println(nss.asString()); // Prints 'minecraft:iron_ingot' to the log
 ```

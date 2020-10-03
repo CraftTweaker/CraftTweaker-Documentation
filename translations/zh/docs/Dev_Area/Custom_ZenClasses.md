@@ -13,55 +13,55 @@ Zen 类本质上就是一个 java 类，但你也可以用 ZenScript 来定义�
 | 名称             | 说明                                         |
 | -------------- | ------------------------------------------ |
 | zenClass       | 开始一个新类，需要在后面加上名称。                          |
-| 瓦尔/瓦尔          | 创建一个实例变量，val 关键字使用了 final。                 |
-| 静态的            | 创建一个类（静态）变量。 它们不能是 final 的。                |
+| var/val        | 创建一个实例变量，val 关键字使用了 final。                 |
+| static         | 创建一个类（静态）变量。 它们不能是 final 的。                |
 | zenConstructor | 为类创建构造器。                                   |
-| 函数             | 创建一个实例方法。 无法创建静态方法，因为你也可以在类外使用。            |
-| 这个             | 引用向目前正在进行的对象。 仅可在方法和构造器中使用。 例如在参数中隐藏了一个字段。 |
+| function       | 创建一个实例方法。 无法创建静态方法，因为你也可以在类外使用。            |
+| this           | 引用向目前正在进行的对象。 仅可在方法和构造器中使用。 例如在参数中隐藏了一个字段。 |
 
 ## 例子
 
 反面例子：
 
 ```zenscript
-<br />//Creates a classe nom 'name', you can accessed it using scripts.scriptPath.name
+<br />//Creates a class named 'name', you can also access it using scripts.scriptPath.name
 
 
-zenClass name }
+zenClass name {
 
-    // 每个变量需要设置类型。 
-    ///Variables 不需要初始化，但如果您确实如此，初始化就像在 Java 中。
-
-
-    ///statics 是在 <clinit>中初始化的，即当类是第一个定义时。
-    静态mystatic as string = "value";
-    静态otherstatic as string = "value";
-
-    //如果一个实例 varaible 有初始化器，它将在第一次构造函数调用之前初始化。
-    val non-static as string = "123";
-
-    ///如果一个实例变量没有初始化器，您可以在构造函数中初始化，即使是最终变量。
-    以字符串形式呈现非静态二次；
+    //Each variable needs a type set. 
+    //Variables don't need to be initialized, but if you do, initialization is as in Java.
 
 
-    ///A 构造函数需要所有参数 (明确键入)
-    zenConstructor(参数作为字符串， 参数2 以字符串形式显示。
-        打印("TETETE")；
-        打印(参数)；
+    //Statics are initialized in <clinit>, i.e. when the class is first defined.
+    static myStatic as string = "value";
+    static otherStatic as string = "value";
+
+    //If an instance varaible has an initializer, it will be initialized after before the first constructor call.
+    val nonStatic as string = "123";
+
+    //If an instance variable has no initializer, you can initialize it in the constructor if necessary, even if final.
+    val nonStaticTwo as string;
 
 
-        non-StaticTwo = 参数2;
+    //A constructor requires all parameters (explicitly typed)
+    zenConstructor(parameter as string, parameter2 as string) {
+        print("TETETE");
+        print(parameter);
+
+
+        nonStaticTwo = parameter2;
     }
 
 
-    //您可以有几个构造函数，但是没有任何构造函数链。
-    zenConstructor(参数作为字符串) 然后
-        print("FFFF");
+    //You can have several constructors, but there is no way of constructor chaining.
+    zenConstructor(parameter as string) {
+        print("FFFFFF");
     }
 
 
-    /It is recommended that you clearly state method's return types
-    function myMethod(arg as string, arg1 as string) as stringed 然后
+    //It is recommended that you explicitly state method's return types as well.
+    function myMethod(arg as string, arg1 as string) as string {
         return "value" + arg ~ arg1;
     }
 
@@ -69,20 +69,20 @@ zenClass name }
 
 
 
-//您调用类类型/名称
-var test = name("NOPE")；
+//You call a constructor by calling the class type/name
+var test = name("NOPE");
 test = name("nope", "noper");
-print(test). yMethod("one", "two");
+print(test.myMethod("one", "two"));
 
 print("");
 
-//you can calling statics by the class type/name
-print(name. yStatic);
+//You can call statics by the use of the class type/name
+print(name.myStatic);
 print(name("parameter1", "parameter2").nonStatic);
 
 val ttt = name("t");
 
-///您也可以通过使用类实例来呼叫static。
+//You can also call statics by the use of a class instance.
 ttt.myStatic = "1";
 print(ttt.myStatic);
 ```

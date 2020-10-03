@@ -1,16 +1,16 @@
-# Felsenkreuzer
+# Rock Crusher
 
-## Paket wird importiert
+## Importing the Package
 `mods.nuclearcraft.RockCrusher`
 
-## Rezepte hinzufügen
+## Adding Recipes
 ```zenscript
 mods.nuclearcraft.RockCrusher.addRecipe(IIngredient itemInput, IIngredient itemOutput1, IIngredient itemOutput2, IIngredient itemOutput3, @Optional double timeMultiplier, @Optional double powerMultiplier, @Optional double processRadiation);
 ```
 
-## Rezepte entfernen
+## Removing Recipes
 ```zenscript
 mods.nuclearcraft.RockCrusher.removeRecipeWithInput(IIngredient itemInput);
 mods.nuclearcraft.RockCrusher.removeRecipeWithOutput(IIngredient itemOutput1, IIngredient itemOutput2, IIngredient itemOutput3);
-mods.nuclearcraft.RockCrusher.removeAllRezept();
+mods.nuclearcraft.RockCrusher.removeAllRecipes();
 ```

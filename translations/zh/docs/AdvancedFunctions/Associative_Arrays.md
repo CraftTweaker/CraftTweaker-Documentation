@@ -1,6 +1,6 @@
 # 关联数组
 
-关联数组 (有时也称为地图或词典) 就像普通的 [数组](/AdvancedFunctions/Arrays_and_Loops/) 一样，它能够存储多个条目。 然而，与 [不同的数组](/AdvancedFunctions/Arrays_and_Loops/) 不同，您可以选择你想要索引的类型，或者(我们在地图中称它) 键值是什么！
+An Associative Array (sometimes also called a Map or a Dictionary) is like a normal [Array](/AdvancedFunctions/Arrays_and_Loops/) in the way that it is able to store multiple entries. Unlike [Arrays](/AdvancedFunctions/Arrays_and_Loops/) however, you can choose what type you want the index, or (as we call it in maps) key, to be!
 
 ## 声明关联数组
 
@@ -30,9 +30,9 @@ val myAssocArray = {
 
 ## 引用关联数组中的项
 
-你指的是关联数组内的项目，你指的是正常的 [数组](/AdvancedFunctions/Arrays_and_Loops/)中的项目:  
-`数组[index]`  
-只有这种情况才是不同的 你不一定需要使用整数作为索引，但无论你声明数组是哪种类型！
+You refer to items inside an Associative Array the same way you refer to items inside a normal [Array](/AdvancedFunctions/Arrays_and_Loops/):  
+`Array[index]`  
+Only difference is this time, you don't necessarily need to use an Integer as index, but whatever type you declared your Array to be!
 
 ```zenscript
 <br />val dirt = <minecraft:dirt>;

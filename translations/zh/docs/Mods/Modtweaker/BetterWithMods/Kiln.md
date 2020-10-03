@@ -1,64 +1,64 @@
-# 基尔文
+# Kiln
 
-## 基本配方
+## Basic Recipe
 
-* 添加 Kiln 配方 - 输入 *MUST* 有一个与他们相关联的方块。
-
-```zenscript
-mods.betterwithmods.Kiln.add(IIngredient input, IItemStack[…]输出);
-//examps
-mods.betterwithmods.Kiln.add(<minecraft:fence>[<minecraft:stick>,<minecraft:stick>]);
-```
-
-## 通过输入删除
-
-* 删除基于输入成分的配方
+* Adds Kiln Recipe - inputs *MUST* have a block associated with them.
 
 ```zenscript
-mods.betterwithmods.Kiln.remove(IIngredient 输入)；
+mods.betterwithmods.Kiln.add(IIngredient input, IItemStack[] output);
+//Examples
+mods.betterwithmods.Kiln.add(<minecraft:fence>,[<minecraft:stick>,<minecraft:stick>]);
 ```
 
-## 按输出移除
+## Removal by input
 
-* 移除基于输出的配方
+* Remove a recipe based on the input ingredient
+
+```zenscript
+mods.betterwithmods.Kiln.remove(IIngredient input);
+```
+
+## Removal by output
+
+* Remove a recipe based on the output
 
 ```zenscript
 mods.betterwithmods.Kiln.remove(IItemStack[] outputs);
 ```
 
-## 移除所有
+## Remove all
 
-* 删除所有配方
+* Remove all recipes
 
 ```zenscript
 mods.betterwithmods.Kiln.removeAll();
 ```
 
-## 构建器
+## Builder
 
-玉米有一个配方生成器，可以更准确地控制配方。 所有以前的方法都是使用构建器的简单捷径。
+The Kiln has a recipe builder that allows more precise control over the recipes. All previous methods are simply short cuts to using the builder.
 
-* 创建一个新的 Kiln 构建器。 `mods.betterwithmods.Kiln.builder()`
+* To create a new Kiln builder. `mods.betterwithmods.Kiln.builder()`
 
-* 公斤法
+* Kiln methods
      
-     * 设置配方的输入和输出  
+     * Sets up the inputs and outputs of the recipe  
               zenscript
-              buildRecipe(IIngredient[…]输入, IItemStack[…]输出)
+              buildRecipe(IIngredient[] inputs, IItemStack[] outputs)
      
-     * 设置配方的热量要求。 热能用来检查配方是否可以用炉灶或未炉灶。 无炉热=1，存储热=2。 您可以使用 [热注册表](/Mods/Modtweaker/BetterWithMods/HeatRegistry/) 添加自定义的热源，甚至自定义的热量。  
+     * Set the Heat requirements of the recipe. Heat is used to check if the recipe can be made in a stoked or unstoked cauldron. Unstoked heat = 1, Stoked heat = 2. You can add custom heat sources, and even custom heat levels using the [Heat Registry](/Mods/Modtweaker/BetterWithMods/HeatRegistry/).  
               zenscript
               setHeat(int heat)
      
-     * 设置配方以忽略热值和制作任何方式  
+     * Set the recipe to ignore the heat value and craft anyways  
               zenscript
-              setIgnoreHeat(布尔值忽略热)
+              setIgnoreHeat(boolean ignoreHeat)
      
-     * 完成配方并将其添加到游戏  
+     * Finalize the recipe and add it to the game  
               zenscript
               build()
 
-### 示例生成器使用情况
+### Example builder usage
 
 ```zenscript
 mods.betterwithmods.Kiln.builder()
@@ -67,14 +67,14 @@ mods.betterwithmods.Kiln.builder()
 .build();
 ```
 
-## 结构块
+## Structure Block
 
-基尔是一个基于它的方块的多方块； 这允许注册一个可以用于创建结构的模块。
+The Kiln is a multiblock based on the block it is made of; This allows registering a block that can be used to create the structure.
 
-输入必须是 *块*
+Input MUST be a *Block*
 
 ```zenscript
-   mods.betterwithmods.Kiln.registerBlock(IItemStack 输入);
+   mods.betterwithmods.Kiln.registerBlock(IItemStack input);
 
    mods.betterwithmods.Kiln.registerBlock(<minecraft:stonebrick>);
 ```

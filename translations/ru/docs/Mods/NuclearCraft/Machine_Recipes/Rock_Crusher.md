@@ -1,16 +1,16 @@
-# Каменная дробилка
+# Rock Crusher
 
-## Импортирование пакета
-`nuclearcraft.rock_crusher`
+## Importing the Package
+`mods.nuclearcraft.rock_crusher`
 
-## Добавление рецептов
+## Adding Recipes
 ```zenscript
-mods.nuclearcraft.rock_crusher.addRecipe([itemInput, itemOutput1, itemput2, itemOutput3, @Optional double timeMultiplier, @Optional double powerMultiplier, @Optional double processRadiation]);
+mods.nuclearcraft.rock_crusher.addRecipe([itemInput, itemOutput1, itemOutput2, itemOutput3, @Optional double timeMultiplier, @Optional double powerMultiplier, @Optional double processRadiation]);
 ```
 
-## Удаление рецептов
+## Removing Recipes
 ```zenscript
 mods.nuclearcraft.rock_crusher.removeRecipeWithInput([itemInput]);
-mods.nuclearcraft.rock_crusher.removeRecipeWithOutput([itemput1, itemOutput2, itemOutput3]);
+mods.nuclearcraft.rock_crusher.removeRecipeWithOutput([itemOutput1, itemOutput2, itemOutput3]);
 mods.nuclearcraft.rock_crusher.removeAllRecipes();
 ```

@@ -1,75 +1,75 @@
 # ICTBlockState
 
-ICTBlockState オブジェクトはブロックの現在の状態を表します。
+An ICTBlockState object represents a block's current state.
 
 ## パッケージのインポート
 
-問題が発生した場合は、パッケージをインポートする必要があるかもしれませんので、申し訳ありませんし、インポートを追加してください。  
+It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
 `import mods.contenttweaker.BlockState;`
 
-## ICTBlockState を呼び出す
+## Calling an ICTBlockState
 
-ICTBlockState は、 [IBlockAction 関数](/Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IBlockAction/) 内のパラメータとして、または [Block Bracket Handler](/Mods/ContentTweaker/Vanilla/Brackets/Bracket_Blocks/) から取得できます。
+You can get an ICTBlockState either as a parameter in an [IBlockAction function](/Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IBlockAction/) or from the [Block Bracket Handler](/Mods/ContentTweaker/Vanilla/Brackets/Bracket_Blocks/)
 
 `<block:minecraft:dirt>`
 
-## ZenMethodsとZenGetters
+## ZenMethods and ZenGetters
 
-| ZenMethod         | ZenGetter | 戻り値                                                              | 説明                                  |
-| ----------------- | --------- | ---------------------------------------------------------------- | ----------------------------------- |
-| getBlock()        | ブロック      | [IBlock](/Vanilla/Blocks/IBlock/)                                | 参照されたブロックを返します                      |
-| getMeta()         | meta      | int                                                              | 参照されたブロックのメタデータを返します                |
-| canProvidePower() |           | boolean型                                                         | 参照されたブロックがレッドストーンパワーを与えられるかどうかを返します |
-| getMobilityFlag() |           | [プッシュ反応](/Mods/ContentTweaker/Vanilla/Types/Block/PushReaction/) | プッシュリアクションフラグを返します。                 |
+| ZenMethod         | ZenGetter | 戻り値                                                                    | Description                                             |
+| ----------------- | --------- | ---------------------------------------------------------------------- | ------------------------------------------------------- |
+| getBlock()        | block     | [IBlock](/Vanilla/Blocks/IBlock/)                                      | Returns the refered block                               |
+| getMeta()         | meta      | int                                                                    | Returns the refered block's metadata                    |
+| canProvidePower() |           | boolean型                                                               | Returns if the refered block can provide Redstone Power |
+| getMobilityFlag() |           | [PushReaction](/Mods/ContentTweaker/Vanilla/Types/Block/PushReaction/) | Returns the push reaction flag                          |
 
 ## ZenMethods
 
 ### isReplacable
 
 `boolean isReplaceable(IWorld world, IBlockPos pos);`  
-パラメータ:
+Parameters:
 
-- [IWorld](/Mods/ContentTweaker/Vanilla/Types/World/IWorld/) ワールド → チェックインするワールド
-- [IBlockPos](/Mods/ContentTweaker/Vanilla/Types/Block/IBlockPos/) pos → ブロックの位置
+- [IWorld](/Mods/ContentTweaker/Vanilla/Types/World/IWorld/) world → The world to be checked in
+- [IBlockPos](/Mods/ContentTweaker/Vanilla/Types/Block/IBlockPos/) pos → The Block's position
 
-ブロックを置き換えられるかどうかを sais のブール値を返します。
+Returns a boolean that sais whether the block can be replaced or not.
 
 ### getLightValue
 
 `int getLightValue(IWorld world, IBlockPos blockPos);`  
-パラメータ:
+Parameters:
 
-- [IWorld](/Mods/ContentTweaker/Vanilla/Types/World/IWorld/) ワールド → チェックインするワールド
-- [IBlockPos](/Mods/ContentTweaker/Vanilla/Types/Block/IBlockPos/) pos → ブロックの位置
+- [IWorld](/Mods/ContentTweaker/Vanilla/Types/World/IWorld/) world → The world to be checked in
+- [IBlockPos](/Mods/ContentTweaker/Vanilla/Types/Block/IBlockPos/) pos → The Block's position
 
-指定された位置の現在の光の値を表す int を返します。
+Returns an int representing the current light value at the given location.
 
 ### getWeakPower
 
 `int getWeakPower(IWorld world, IBlockPos blockPos, Facing facing);`  
-パラメータ:
+Parameters:
 
-- [IWorld](/Mods/ContentTweaker/Vanilla/Types/World/IWorld/) ワールド → チェックインするワールド
-- [IBlockPos](/Mods/ContentTweaker/Vanilla/Types/Block/IBlockPos/) pos → ブロックの位置
-- [Facing](/Mods/ContentTweaker/Vanilla/Types/Block/Facing/) → チェックする側
+- [IWorld](/Mods/ContentTweaker/Vanilla/Types/World/IWorld/) world → The world to be checked in
+- [IBlockPos](/Mods/ContentTweaker/Vanilla/Types/Block/IBlockPos/) pos → The Block's position
+- [Facing](/Mods/ContentTweaker/Vanilla/Types/Block/Facing/) facing → The side to be checked
 
-こちら側の現在のレッドストーン電力を表す int を返します。
+Returns an int representing the current redstone power on this side.
 
 ### getComparatorInputOverride
 
 `int getComparatorInputOverride(IWorld world, IBlockPos blockPos);`
 
-パラメータ:
+Parameters:
 
-- [IWorld](/Mods/ContentTweaker/Vanilla/Types/World/IWorld/) ワールド → チェックインするワールド
-- [IBlockPos](/Mods/ContentTweaker/Vanilla/Types/Block/IBlockPos/) pos → ブロックの位置
+- [IWorld](/Mods/ContentTweaker/Vanilla/Types/World/IWorld/) world → The world to be checked in
+- [IBlockPos](/Mods/ContentTweaker/Vanilla/Types/Block/IBlockPos/) pos → The Block's position
 
-ブロックのレッドストーンコンパレータ入力オーバーライド型を表す int を返します。
+Returns an int representing the block's redstone comparator input override type.
 
-### 2つの ICTBlockState オブジェクトの比較
+### Comparing two ICTBlockState objects
 
 You can either use `int compare(ICTBlockState other);` or the ZenCompare Tokens `==` `!=`.  
 The return different types though:
 
-- `state.compare(other)` は、等しい場合は 0 の整数を返します
-- `state == other` は同じ値を持つ bool を返す
+- `state.compare(other)` returns an int that is 0 if they are equal
+- `state == other` returns a bool that is true of they are equal

@@ -1,16 +1,16 @@
-# ロッククラッシャー
+# Rock Crusher
 
-## パッケージのインポート
-`mods.nuclearcraft.RockCrusherロッククラッシャー`
+## Importing the Package
+`mods.nuclearcraft.RockCrusherRockCrusher`
 
-## レシピを追加中
+## Adding Recipes
 ```zenscript
-mods.nuclearcraft.Supercoolermods.nuclearcraft.RockCrusher.addRecipe(IIngredient itemInput, IIngredient itemOutput1, IIngredient itemOutput2, IIngredient itemOutput3, @Optional double timeMultiplier, @Optional double powerMultiplier, @Optional double processRadiation);
+mods.nuclearcraft.mods.nuclearcraft.RockCrusher.addRecipe(IIngredient itemInput, IIngredient itemOutput1, IIngredient itemOutput2, IIngredient itemOutput3, @Optional double timeMultiplier, @Optional double powerMultiplier, @Optional double processRadiation);
 ```
 
-## レシピを削除
+## Removing Recipes
 ```zenscript
-mods.nuclearcraft.SupercoolerRockCrusher.removeRecipeWithInput(IInput));
+mods.nuclearcraft.RockCrusher.removeRecipeWithInput(IIngredient itemInput);
 mods.nuclearcraft.mods.nuclearcraft.RockCrusher.removeRecipeWithInput(IIngredient itemInput);
 mods.nuclearcraft.RockCrusher.removeRecipeWithOutput(IIngredient itemOutput1, IIngredient itemOutput2, IIngredient itemOutput3);
 mods.nuclearcraft.RockCrusher.removeAllRecipes();RockCrusher.removeAllRecipes();

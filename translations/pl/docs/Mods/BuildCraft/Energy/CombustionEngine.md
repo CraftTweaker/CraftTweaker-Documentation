@@ -1,38 +1,38 @@
-# Silnik spalinowy
+# Combustion Engine
 
-*Wymaga Energii Budowlanej*
+*Requires BuildCraft Energy*
 
-Ścieżka klasy: `mods.buildcraft.CombustionEngine`
+Class path: `mods.buildcraft.CombustionEngine`
 
-## Użycie
+## Use
 
-Aby użyć, zaimportuj klasę z `importuj mods.buildcraft.Silnik spalinowy;` na początku skryptu.
+To use, import the class with `import mods.buildcraft.CombustionEngine;` at the beginning of your script.
 
-## Dodawanie czystego paliwa
+## Adding a Clean Fuel
 
-`Silniki spalinowe.addCleanFuel(ciecz, Power PerTick, timePercket);`
+`CombustionEngine.addCleanFuel(liquid, powerPerTick, timePerBucket);`
 
-- `ciecz` <[ILiquidStack](/Vanilla/Liquids/ILiquidStack)> Ciecz do użycia jako paliwo
-- `powerPerTick` &lt;podwójny> Moc wyjściowa w MJ na tick
-- `timePerBucket` &lt;int> Ilość ticków, dla których powinno działać 1000 mB (1 wiadra)
+- `liquid` <[ILiquidStack](/Vanilla/Liquids/ILiquidStack)> The liquid to be used as fuel
+- `powerPerTick` &lt;double> Power output in MJ per tick
+- `timePerBucket` &lt;int> Amount of ticks that 1,000 mB (1 bucket) should run for
 
 ```zenscript
-importuj mods.buildcraft.CombustionEngine;
+import mods.buildcraft.CombustionEngine;
 
 CombustionEngine.addCleanFuel(<liquid:iron>, 32.0, 1200);
 ```
 
-## Dodawanie brudnego paliwa
+## Adding a Dirty Fuel
 
-`»Technologia«, zgodnie z uwagą ogólną do technologii, służąca do »rozwoju«, »produkcji« lub »użytkowania« sprzętu lub »oprogramowania« wyszczególnionych w pozycji 1B001 lub 1B003.`
+`CombustionEngine.addDirtyFuel(lFuel, powerPerTick, timePerBucket, lResidue);`
 
-- `lFuel` <[ILiquidStack](/Vanilla/Liquids/ILiquidStack)> Ciecz do użycia jako paliwo
-- `powerPerTick` &lt;podwójny> Moc wyjściowa w MJ na tick
-- `timePerBucket` &lt;int> Ilość ticków, dla których powinno działać 1000 mB (1 wiadra)
-- `lPozostałość` <[ILiquidStack](/Vanilla/Liquids/ILiquidStack)> Pozostałość płynu na wiadro oryginalnego paliwa
+- `lFuel` <[ILiquidStack](/Vanilla/Liquids/ILiquidStack)> The liquid to be used as fuel
+- `powerPerTick` &lt;double> Power output in MJ per tick
+- `timePerBucket` &lt;int> Amount of ticks that 1,000 mB (1 bucket) should run for
+- `lResidue` <[ILiquidStack](/Vanilla/Liquids/ILiquidStack)> The residue fluid, per bucket of the original fuel
 
 ```zenscript
-importuj mods.buildcraft.CombustionEngine;
+import mods.buildcraft.CombustionEngine;
 
 CombustionEngine.addDirtyFuel(<liquid:iron>, 32.0, 1200, <liquid:water>);
 ```

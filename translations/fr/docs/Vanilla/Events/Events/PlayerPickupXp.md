@@ -1,31 +1,31 @@
-# format@@0 PlayerPickupXp
+# PlayerPickupXp
 
-L'événement PlayerPickupXp est lancé chaque fois qu'un joueur récupère des orbes d'expérience.
+The PlayerPickupXp Event is fired whenever a player picks up experience orbs.
 
-## Classe de l'événement
+## Event Class
 
-Vous devrez lancer l'événement dans l'en-tête de la fonction comme cette classe:  
-`crafttweaker.event. layerPickupXpEvent`  
-Vous pouvez, bien sûr, également [importer](/AdvancedFunctions/Import/) la classe avant et utiliser ce nom alors.
+You will need to cast the event in the function header as this class:  
+`crafttweaker.event.PlayerPickupXpEvent`  
+You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
 
-## Extensions d'interface de l'événement
+## Event interface extensions
 
-Les événements PlayerPickupXp implémentent les interfaces suivantes et peuvent également appeler toutes leurs méthodes/getters/setters :
+PlayerPickupXp Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
 
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
-- [Evénement IPlayer](/Vanilla/Events/Events/IPlayerEvent/)
+- [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
 
 ## ZenGetters
 
-Les informations suivantes peuvent être récupérées à partir de l'événement :
+The following information can be retrieved from the event:
 
-| ZenGetter  | Type de retour                            |
+| ZenGetter  | Return Type                               |
 | ---------- | ----------------------------------------- |
-| `annulé`   | boolean                                   |
-| `Joueur`   | [IPlayer](/Vanilla/Players/IPlayer/)      |
-| `entitéXp` | [IEntityXp](/Vanilla/Entities/IEntityXp/) |
-| `xp`       | flottant                                  |
+| `canceled` | boolean                                   |
+| `player`   | [IPlayer](/Vanilla/Players/IPlayer/)      |
+| `entityXp` | [IEntityXp](/Vanilla/Entities/IEntityXp/) |
+| `xp`       | float                                     |
 
-## Méthodes Zen
+## ZenMethods
 
-- `event.cancel()` définit l'événement comme annulé.
+- `event.cancel()` sets the event as cancelled.

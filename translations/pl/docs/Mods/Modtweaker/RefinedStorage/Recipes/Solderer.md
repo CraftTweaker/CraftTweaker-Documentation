@@ -1,23 +1,23 @@
-# Ładowarka
+# Solderer
 
-Pakiet Solderer jest używany do dodawania lub usuwania receptur do/z Soldere'a Rafinowanego Magazynu.
+The Solderer package is used for adding or removing recipes to/from the Refined Storage Solderer.
 
-## Dzwonienie
+## Calling
 
-Możesz wywołać pakiet Solderer używając `mods.refinedstorage.Solderer`
+You can call the Solderer package using `mods.refinedstorage.Solderer`
 
-## Dodanie przepisu
+## Recipe addition
 
-Tablica wierszy **musi** mieć trzy! Użyj `null` jeśli potrzebujesz pustych stosów.
+The Rows array **must** have a length of three! Use `null` if you need empty stacks.
 
 ```zenscript
-//mods.refinedstorage.Solderer.addRecipe(wyjście IItemStack, czas int, IItemStack[] wiersze);
+//mods.refinedstorage.Solderer.addRecipe(IItemStack output, int time, IItemStack[] rows);
 mods.refinedstorage.Solderer.addRecipe(<minecraft:gold_ingot>, 100, [<minecraft:iron_ingot>, <minecraft:iron_ingot>, <minecraft:iron_ingot>]);
 ```
 
-## Usuwanie przepisów
+## Recipe removal
 
 ```zenscript
-//mods.refinedstorage.Solderer.removeRecipe(wyjście IItemStack);
+//mods.refinedstorage.Solderer.removeRecipe(IItemStack output);
 mods.refinedstorage.Solderer.removeRecipe(<minecraft:iron_ingot>);
 ```

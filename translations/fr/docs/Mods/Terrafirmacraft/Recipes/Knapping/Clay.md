@@ -1,24 +1,24 @@
-# Coup d'argile
+# Clay Knapping
 
-## Paquet
+## Package
 ```zenscript
-Importer mods.terrafirmacraft.ClayKnapping ;
+import mods.terrafirmacraft.ClayKnapping;
 ```
 
-## Ajouter
+## Addition
 
 ```zenscript
-ClayKnapping.addRecipe(String registryName, IItemStack sortie, String... pattern);
+ClayKnapping.addRecipe(String registryName, IItemStack output, String... pattern);
 ```
 
-## Retirer
+## Removal
 
 ```zenscript
-ClayKnapping.removeRecipe(IItemStack sortie);
+ClayKnapping.removeRecipe(IItemStack output);
 ClayKnapping.removeRecipe(String registryName);
 ```
 
-## Exemple
+## Example
 ```zenscript
-ClayKnapping.addRecipe("unfired_vaisel", <tfc:ceramics/unfired/vessel>, " XXX ", "XXXXX", "XXXXX", "XXXXX", " XXX ");
+ClayKnapping.addRecipe("unfired_vessel", <tfc:ceramics/unfired/vessel>, " XXX ", "XXXXX", "XXXXX", "XXXXX", " XXX ");
 ```

@@ -4,47 +4,47 @@ A MaterialPart Object is, as the name suggests a combination of a [Material](/Mo
 
 ## パッケージのインポート
 
-問題が発生した場合は、パッケージをインポートする必要があるかもしれませんので、申し訳ありませんし、インポートを追加してください。  
+It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
 `import mods.contenttweaker.MaterialPart;`
 
-## そのようなオブジェクトを取得しています
+## Retrieving such an object
 
-このようなオブジェクトをリストまたは単一のオブジェクトとしてリトレインする方法はいくつかあります。
+There are several ways of retreiving such an object, either as list or as single object.
 
-単一オブジェクト:
+Single Object:
 
-- [マテリアル部品ブラケットハンドラ](/Mods/ContentTweaker/Materials/Brackets/Bracket_MaterialPart/) の使用
-- [マテリアルの](/Mods/ContentTweaker/Materials/Materials/Material/) registerPartMethodの使用
-- [部品の](/Mods/ContentTweaker/Materials/Parts/Part/) registerToMaterial メソッドの使用
+- Using the [Material Part Bracket Handler](/Mods/ContentTweaker/Materials/Brackets/Bracket_MaterialPart/)
+- Using a [Material's](/Mods/ContentTweaker/Materials/Materials/Material/) registerPart Method
+- Using a [Part's](/Mods/ContentTweaker/Materials/Parts/Part/) registerToMaterial Method
 
-リスト:
+List:
 
-- [MaterialSystem の](/Mods/ContentTweaker/Materials/MaterialSystem/) registerPartsForMaterial Method の使用
-- [Material's](/Mods/ContentTweaker/Materials/Materials/Material/) registerParts Method の使用
-- [部品の](/Mods/ContentTweaker/Materials/Parts/Part/) registerToMaterialsメソッドの使用
+- Using [MaterialSystem's](/Mods/ContentTweaker/Materials/MaterialSystem/) registerPartsForMaterial Method
+- Using a [Material's](/Mods/ContentTweaker/Materials/Materials/Material/) registerParts Method
+- Using a [Part's](/Mods/ContentTweaker/Materials/Parts/Part/) registerToMaterials Method
 
-## フィールド
+## Fields
 
-MaterialPartから次の情報を取得できます:
+You can retrieve the following information from a MaterialPart:
 
 | ZenMethod            | 戻り値                                                                             |
 | -------------------- | ------------------------------------------------------------------------------- |
-| getName()            | 文字列                                                                             |
-| getLocalizedName()   | 文字列                                                                             |
+| getName()            | string                                                                          |
+| getLocalizedName()   | string                                                                          |
 | hasEffect()          | boolean型                                                                        |
 | hasOverlay()         | boolean型                                                                        |
 | getMaterial()        | [IMaterial](/Mods/ContentTweaker/Materials/Materials/Material/)                 |
 | getPart()            | [IPart](/Mods/ContentTweaker/Materials/Parts/Part/)                             |
 | getItemStack()       | [IItemStack](/Vanilla/Items/IItemStack/)                                        |
-| getTextureLocation() | 文字列                                                                             |
-| getCTColor()         | [色](/Mods/ContentTweaker/Vanilla/Types/Color/Color/)                            |
+| getTextureLocation() | string                                                                          |
+| getCTColor()         | [Color](/Mods/ContentTweaker/Vanilla/Types/Color/Color/)                        |
 | getColor()           | int                                                                             |
 | isColorized()        | boolean型                                                                        |
 | getData()            | [IMaterialPartData](/Mods/ContentTweaker/Materials/Materials/MaterialPartData/) |
 
-MaterialPartの以下の情報を設定することもできます。
+You can also set the following information of a MaterialPart:
 
-| ZenMethod                           | パラメータ              | 説明                                                |
-| ----------------------------------- | ------------------ | ------------------------------------------------- |
-| setColorized(colorized)             | ブーリアンカラー化          | アイテムのカラーコードを適用するかどうかを設定します。                       |
-| setTextureLocation(textureLocation) | 文字列textureLocation | アイテムのテクスチャパスを設定します。 たとえば、1つのギアに残りのギアと異なる外観を求める場合。 |
+| ZenMethod                           | Parameter              | Description                                                                                     |
+| ----------------------------------- | ---------------------- | ----------------------------------------------------------------------------------------------- |
+| setColorized(colorized)             | boolean colorized      | Sets if the item's color code is applied                                                        |
+| setTextureLocation(textureLocation) | string textureLocation | Sets the item's texure path. For example, if you want one Gear to look different from the rest. |

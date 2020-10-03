@@ -1,39 +1,39 @@
-# 因子化器
+# Factorizer
 
-Factorizer Manager 允许您将配方添加到插件制造商。
+The Factorizer Manager allows you to add recipes to the factorizer.
 
-## 导入软件包
+## Import the package
 
 To shorten method calls you can [import](/AdvancedFunctions/Import/) the package like so:
 
 ```zenscript
-导入mods.thermalexten.Factorizer;
+import mods.thermalexpansion.Factorizer;
 ```
 
-## 添加配方
+## Add Recipes
 
-您可以添加一条路分割/组合配方或双向绑定。
+You can add oneway split/combine recipes or two-way bindings.
 
 ```zenscript
-//mods.thermalrepl.Factorizer.addRecipeSplit(IItemStack in IItemStack out);
-mods.thermalex.Factorizer.addRecipeSplit(<minecraft:dirt>, <minecraft:grass> * 5);
+//mods.thermalexpansion.Factorizer.addRecipeSplit(IItemStack in, IItemStack out);
+mods.thermalexpansion.Factorizer.addRecipeSplit(<minecraft:dirt>, <minecraft:grass> * 5);
 
-///mods.thermalres.Factorizer.addRecipeCombine(IItemStack in IItemStack out);
-mods. Factorizer.addRecipeCombine(<minecraft:grass> * 5, <minecraft:dirt>);
+//mods.thermalexpansion.Factorizer.addRecipeCombine(IItemStack in, IItemStack out);
+mods.thermalexpansion.Factorizer.addRecipeCombine(<minecraft:grass> * 5, <minecraft:dirt>);
 
-//mods.thermal扩张.Factorizer.addRecipeBoth(IItemStack 组合, IItemStack 分割);
-mods.thermalabov.Factorizer.addRecipeBoth(<minecraft:trapped_chest>, <minecraft:chest> * 13);
+//mods.thermalexpansion.Factorizer.addRecipeBoth(IItemStack combined, IItemStack split);
+mods.thermalexpansion.Factorizer.addRecipeBoth(<minecraft:trapped_chest>, <minecraft:chest> * 13);
 ```
 
-## 删除配方
+## Remove Recipes
 
-当然，您也可以删除配方。  
-如果您想要删除双向绑定的话，您将需要两次呼叫。
+You can of course also remove recipes.  
+If you want to remove a two-way binding you'll need two calls, though.
 
 ```zenscript
-//mods.thermallipl.Factorizer.removeRecipeSplit(StemStack in);
-mods.thermalext.Factorizer.removeRecipeSplit(<minecraft:iron_block>);
+//mods.thermalexpansion.Factorizer.removeRecipeSplit(IItemStack in);
+mods.thermalexpansion.Factorizer.removeRecipeSplit(<minecraft:iron_block>);
 
-///mods.thermalexpl.Factorizer.removeRecipeipeCombine(IItemStack in);
-mods.thermalexpl.Factorizer.removeRecipeCombine(<minecraft:iron_ingot> * 9);
+//mods.thermalexpansion.Factorizer.removeRecipeCombine(IItemStack in);
+mods.thermalexpansion.Factorizer.removeRecipeCombine(<minecraft:iron_ingot> * 9);
 ```

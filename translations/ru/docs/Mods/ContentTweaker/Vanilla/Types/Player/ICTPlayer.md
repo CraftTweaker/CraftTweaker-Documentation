@@ -1,19 +1,19 @@
-# МТП
+# ICTPlayer
 
-ICTPlayer — это специальный [IPlayer](/Vanilla/Players/IPlayer/) объект.  
-Это означает, что все [методы IPlayer](/Vanilla/Players/IPlayer/) также доступны на этом объекте!
+An ICTPlayer is ContentTweaker's special [IPlayer](/Vanilla/Players/IPlayer/) object.  
+That means all of [IPlayer's](/Vanilla/Players/IPlayer/) methods are also available on this object!
 
 ## Импорт пакета
 
-Возможно, вам потребуется импортировать пакет, если вы столкнетесь с какими-либо проблемами (например, наложение [массива](/AdvancedFunctions/Arrays_and_Loops/)), так что лучше быть безопасным, чем извините и добавить импорт.  
-`импорт mods.contenttweaker.Player;`
+It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
+`import mods.contenttweaker.Player;`
 
 ## ZenMethods
 
 `IMutableItemStack getHeldItem(Hand hand);`
 
-Параметры:
+Parameters:
 
-- [Рука](/Mods/ContentTweaker/Vanilla/Types/Player/Hand/) → Главный или Выключен рукой
+- [Hand](/Mods/ContentTweaker/Vanilla/Types/Player/Hand/) hand → Main or Off Hand
 
-Возвращает [IMutableItemStack](/Mods/ContentTweaker/Vanilla/Types/Item/IMutableItemStack/) удерживаемый в данной [руке](/Mods/ContentTweaker/Vanilla/Types/Player/Hand/).
+Returns the [IMutableItemStack](/Mods/ContentTweaker/Vanilla/Types/Item/IMutableItemStack/) held at the given [Hand](/Mods/ContentTweaker/Vanilla/Types/Player/Hand/).

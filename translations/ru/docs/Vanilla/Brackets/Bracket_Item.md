@@ -1,51 +1,51 @@
-# Обработчик скобок предметов
+# Item Bracket Handler
 
-Обработчик предмета дает вам доступ к предметам в игре. Можно получить только зарегистрированные в игре, , так что добавление или удаление модов могут вызвать проблемы, если вы ссылаетесь на элементы мода в обработчике ITem Bracket Handler.
+The Item Bracket Handler gives you access to the Items in the game. It is only possible to get items registered in the game, so adding or removing mods may cause issues if you reference the mod's items in an ITem Bracket Handler.
 
-Элементы ссылаются в обработчике элемента по следующим причинам:
+Items are referenced in the Item Bracket Handler by like so:
 
 ```zenscript
 <modid:itemname>
 ```
 
-Используя мод `` , будучи модератором мода, к которому принадлежит Предмет, и `имя предмета` как имя предмета, Для получения правильного имени товара рекомендуется использовать `/ct hand`.
+With the `modid` being the modid of the mod that the Item belongs to, and `itemname` being the name of the item, It is recommended to use `/ct hand` to get the correct name of the item.
 
-Как правило, это похоже на это:
+Generally it is like this though:
 
 ```zenscript
 <item:modid:itemname:meta>
 ```
 
-С `пунктом` в качестве первой записи, он конкретно говорит: "Это должен быть элемент!" в CT.  
-Как вы видели выше: необязательно.  
-Обычно вам это не понадобится, если вы не столкнетесь с несколькими пользовательскими обработчиками скобок.  
-`моды` — это мод модификации, к которому принадлежит предмет.  
-`имя предмета` является именем предмета, используйте /ct руку, чтобы получить правильное имя.  
-`meta` - это метазначение предмета (например, значение урона, типы и т.д.). Это целое число.  
-Вы также можете использовать маску `*` для адреса всех метазначений.  
-Также опционально: Если оставить это значение будет 0.
+With `item` as first entry, it specifically says "This has to be an item!" to CT.  
+As you've seen above: Optional.  
+Usually you will never need this, unless dealing with several custom bracket handlers.  
+`modid` is the modid of the mod that the Item belongs to.  
+`itemname` is the name of the item, use /ct hand to get the correct name.  
+`meta` is the meta value of the item (e.g. Damage value, types, etc.). This is an Integer.  
+You can also use a wildcard `*` to address all meta values.  
+Also optional: If left out it will be 0.
 
-Обычно это возвращает объект IItemStack.  
-Пожалуйста, обратитесь к [соответствующей вики](/Vanilla/Items/IItemStack/) за дополнительной информацией.
+Normally, this will return an IItemStack Object.  
+Please refer to [the respective wiki entry](/Vanilla/Items/IItemStack/) for further information.
 
 ## Примеры
 
-Примером обработчика товарных категорий являются:
+An example of the Item Bracket Handler would be:
 
 ```zenscript
-//яблоко
+//apple
 <minecraft:apple>
 
-//уголь
+//coal
 <minecraft:coal>
 <minecraft:coal:0>
 
-//уголь
+//charcoal
 <minecraft:coal:1>
 
-//Оба, уголь и уголь
+//both, coal and charcoal
 <minecraft:coal:*>
 <item:minecraft:coal:*>
 ```
 
-Это даст вам доступ к элементу `Apple`.
+This will give you access to the `Apple` item.

@@ -1,6 +1,6 @@
 # ZenClass
 
-ZenClass - это java класс, который был подвергнут ZenScript.
+A ZenClass is a java class that has been exposed to ZenScript.
 
 ## Пример
 
@@ -9,15 +9,15 @@ ZenClass - это java класс, который был подвергнут Ze
 ```java
 @ZenClass("crafttweaker.item.IItemStack")
 @ZenRegister
-публичный интерфейс IItemStack расширяет IIngredient {
-    //Вырезать, чтобы держать страницу короткой
+public interface IItemStack extends IIngredient {
+    //Cut out to keep the page short
 }
 ```
 
-Фактическая реализация не нуждается в аннотации.
+The actual implementation does not need to be annotated.
 
 ## Какие классы должны быть помечены || Дополнительная информация
 
-- Вы можете аннотировать все классы Java
-- Вы должны дать аннотации значение строки (например, `crafttweaker.item.IItemStack`). Это будет внутреннее имя ZS для класса.
-- После объявления класса ZenClass, необходимо зарегистрировать его. Рекомендуется использовать [`@ZenRegister`](/Dev_Area/ZenAnnotations/Annotation_ZenRegister/) для этого
+- You can annotate all Java Classes
+- You should give the annotation a String value (e.g. `crafttweaker.item.IItemStack`). This will be the ZS internal name for the class.
+- After declaring a class a ZenClass, you still need to register it. It is recommended that you use [`@ZenRegister`](/Dev_Area/ZenAnnotations/Annotation_ZenRegister/) for that

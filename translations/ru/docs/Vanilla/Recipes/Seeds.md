@@ -1,54 +1,54 @@
-# Сиды
+# Seeds
 
-Семена - это то, что вы получаете от пробивания высокой травы.
+Seeds are things you get from punching tall grass.
 
-## Печатать все сиды в журнал
+## Print all seeds to the log
 
-Эта команда выведет все зарегистрированные сиды в лог.
+This command will print all registered seeds to the log.
 
-Необходимо, чтобы игрок или консоль не могли быть записаны в zs-файл.
+Needs to be performed by a player or console, cannot be written in a zs-file.
 
     1.12
-    /ct семена
+    /ct seeds
     
-    пред1.12
-    /mt
+    pre-1.12
+    /mt seeds
     
 
-## Добавить семантику
+## Add a seed drop
 
-Добавляет `предмет` в виде выпадения семян.  
-**Вес относительно семенного материала, вес которого составляет 10 (<unk> 10%)!**
+Adds `item` as seed drop.  
+**Weights are relative to grass seed, which has a weight of 10 (≙ 10%)!**
 
 ```zenscript
 vanilla.seeds.addSeed(item);
 ```
 
-`элемент` является [взвешенный ItemStack](/Vanilla/Items/WeightedItemStack/). Что это значит? Это просто означает, что вам нужно дать ему такой процентный показатель:
+`item` is a [weightedItemStack](/Vanilla/Items/WeightedItemStack/). What does that mean? It simply means that you need to give it a percentage like this:
 
 ```zenscript
 //adds carrots with a weight of 1
 vanilla.seeds.addSeed(<minecraft:carrot> % 1);
 ```
 
-## Удалить семантику
+## Remove a seed drop
 
-Останавливает `предмет` от того, чтобы стать капельницей семян.
+Stops `item` from being a seed drop.
 
 ```zenscript
 vanilla.seeds.removeSeed(item);
 ```
 
-`элемент` является [IIngredient](/Vanilla/Variable_Types/IIngredient/).
+`item` is an [IIngredient](/Vanilla/Variable_Types/IIngredient/).
 
-## Получить все зарегистрированные семена
+## Retrieve all registered Seeds
 
-Возвращает все предметы как [взвешенный список ItemStack](/Vanilla/Items/WeightedItemStack/).
+Returns all items as a [weightedItemStack](/Vanilla/Items/WeightedItemStack/) List.
 
 ```zenscript
 val seedList = vanilla.seeds.seeds;
 
-для элемента в seedList {
-    print("Item: " ~ пункт. tack.displayName ~ " || Шанс: " ~ элемент в процентах ~ "%");
+for item in seedList {
+    print("Item: " ~ item.stack.displayName ~ " || Chance: " ~ item.percent ~ "%");
 }
 ```

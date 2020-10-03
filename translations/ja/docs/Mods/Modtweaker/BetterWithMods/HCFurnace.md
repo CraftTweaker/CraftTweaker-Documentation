@@ -1,12 +1,12 @@
 # HCFurnace
 
-HCFurnace機能により、炉のレシピは製錬中のアイテムに応じて様々な時間を要することができます。 これは、燃料がどのように働くかに影響しません、つまり、いくつかのレシピは、多かれ少なかれ燃料を取ることを意味します。
+The HCFurnace feature makes it so that furnace recipes can take varied amount of time depending on the item that is smelting. This does not effect how fuel works, meaning some recipes will take more or less fuel.
 
-指定した炉のレシピを入力項目に基づいて精錬する時間を設定できます。
+Allows setting the time, in ticks, that it takes a specific furnace recipe to smelt based on its input item
 
 ```zenscript
-  mods.betterwithmods.Misc.setFurnaceSmeltingTime(IIngredient 食材, int time)
+  mods.betterwithmods.Misc.setFurnaceSmeltingTime(IIngredient ingredient, int time)
 
-  //ジャガイモを製錬するには約83分かかります。なぜなら、なぜ
+  //Make a potato take about 83 minutes to smelt, because why not
   mods.betterwithmods.Misc.setFurnaceSmeltingTime(<minecraft:potato>,100000); 
 ```

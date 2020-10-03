@@ -1,13 +1,13 @@
-# Блокировка OreDictionary
+# OreDictionary Locking
 
-## Свойство:
+## Feature:
 
-Этот замок добавляет возможность блокировать все предметы под определенным словарным тегом. Это означает, что если вы заблокирудный словарь Записи "Руды" любой предмет/блок с тегом "РудСталь" будет заблокирован за установленными требованиями. Этот тип блокировки также поддерживает параметр [IData](/Vanilla/Data/IData/) , что означает, что он влияет только на вещи под Ore-Dict тэгом ЕСЛИ у них есть соответствующий IDATA тэг для блокировки.
+This lock adds the ability to lock any and all items that are under a certain Ore Dictionary Tag. This means that if you lock the Ore Dictionary Entry of "oreIron" any item/block with the tag "oreIron" would be locked behind the set requirements. This type of lock also supports an [IData](/Vanilla/Data/IData/) Parameter which means that it only affects things under the Ore-Dict tag IF they have a matching IDATA tag to the one provided to the lock.
 
-## Синтаксис:
+## Syntax:
 
-    Download full movie? Click site -> http://download-dvd-video.com/movie/?movie=404016 Site info: watch The online divx The hd The hd The download ipod... OreDictLock.addNBTOreDictLock;
-    mods.compatskills.OreDictLock.addNBTOreDictLock(IOreDictEntry запись, тег IDat... Заблокирован);
+    mods.compatskills.OreDictLock.addOreDictLock(IOreDictEntry entry, String... locked);
+    mods.compatskills.OreDictLock.addNBTOreDictLock(IOreDictEntry entry, IData tag, String... locked);
     
     mods.compatskills.OreDictLock.addOreDictLock(<ore:ingotIron>, "dim|1");
     mods.compatskills.OreDictLock.addNBTOreDictLock(<ore:oreIron>, IData tag, "dim|1");

@@ -1,16 +1,16 @@
-# グラインダー
+# Grinder
 
-グラインダーは蒸気を使って入力項目を出力項目に変換する機械です。
+The Grinder is a machine that converts an input item into an output item using steam.
 
-## パッケージ
-`mods.steamerevolution.Grinder`
+## Package
+`mods.steamagerevolution.Grinder`
 
-## メソッド
+## Methods
 
-- **[IItemStack](/Vanilla/Items/IItemStack/) 出力** レシピの結果。
-- **[IItemStack](/Vanilla/Items/IItemStack/) input** レシピの入力。
-- **int craftTime** マシンの加工時間
-- **int steamCost** 機械が処理する蒸気のコスト
+- **[IItemStack](/Vanilla/Items/IItemStack/) output** The result of the recipe.
+- **[IItemStack](/Vanilla/Items/IItemStack/) input** The input of the recipe.
+- **int craftTime** Crafting time for machine to process
+- **int steamCost** Cost of Steam for machine to process
 
 ## 加算
 
@@ -19,7 +19,7 @@ mods.steamagerevolution.Grinder.addRecipe(IIngredient input, IItemStack output, 
 mods.steamagerevolution.Grinder.addRecipe(<ore:cobblestone>, <minecraft:gravel>, 200, 200);
 ```
 
-## 削除中
+## Removing
 
 ```zenscript
 mods.steamagerevolution.Grinder.removeRecipe(IItemStack output);

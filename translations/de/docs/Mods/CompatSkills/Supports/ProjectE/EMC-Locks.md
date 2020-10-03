@@ -1,23 +1,23 @@
 # ProjectE
 
-## EMC-Schlösser
+## EMC-Locks
 
-Ab 1.5.0 unterstützt CompatSkills EMC Locks für Artikel.
+As of 1.5.0 CompatSkills supports EMC Locks for items.
 
-## HINWEISE
+## NOTICE
 
-Seit 1.9.0 wurde EMC Locks geändert:
+As of 1.9.0 EMC Locks has been modified:
 
-    Modifizierte ProjektE-Unterstützung zur Sperre des Transmutationslernens und Kondensatormultiplikation.
-    Die Syntax ist die gleiche wie vor mods.compatskills.EMCLock.addEMCLock(int emc, String... erforderlich);
-    Spieler werden Gegenstände verwenden können, die nicht die Sperre des emc erfüllen, aber diesen Gegenstand nicht lernen oder duplizieren können. Lernen und Duplizieren erfordert nun auch, dass der Spieler alle Anforderungen erfüllt, die der Gegenstand an ihn stellt.
-    Hinweis: Wenn du Gegenstände in die Transmutationstabelle legst, erhältst du den emc aber nicht wieder heraus.
+    Modified ProjectE support to lock transmutation learning and condenser multiplication.
+    The syntax is the same as before mods.compatskills.EMCLock.addEMCLock(int emc, String... requirements);
+    Players will be able to use items that do not meet the emc lock but will not be able to learn or duplicate that item. Learning and duplication now also requires the player to meet any requirements the item has on it.
+    Note: For putting items in the transmutation table you will still gain the emc but will not be able to get the item back out.
     
 
 ### Syntax:
 
-    // Leeres Beispiel:
-    mods.compatskills.EMCLock.addEMCLock(int emc, String... gesperrt)
+    // Blank Example:
+    mods.compatskills.EMCLock.addEMCLock(int emc, String... locked)
     
-    // Beispiel:
+    // Example:
     mods.compatskills.EMCLock.addEMCLock(8192, "reskillable:mining|5", "reskillable:magic|7")

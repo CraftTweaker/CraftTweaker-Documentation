@@ -1,23 +1,23 @@
-# Аспект CTAspect
+# CTAspect
 
-CTAspect — это аспект, лежащий в основе [стека сторон](/Mods/Modtweaker/Thaumcraft/Aspects/CTAspectStack/), похожий на [IItemDefinition](/Vanilla/Items/IItemDefinition/) лежит в основе [IItemStack](/Vanilla/Items/IItemStack/).
+A CTAspect is the aspect underlying an [Aspect Stack](/Mods/Modtweaker/Thaumcraft/Aspects/CTAspectStack/), much like an [IItemDefinition](/Vanilla/Items/IItemDefinition/) underlies an [IItemStack](/Vanilla/Items/IItemStack/).
 
 ## Импорт пакета
 
-Возможно, вам потребуется импортировать пакет, если вы столкнетесь с какими-либо проблемами, так что лучше быть безопасным чем извините и добавьте импорт.  
-`импорт thaumcraft.aspect.CTAspect;`
+It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
+`import thaumcraft.aspect.CTAspect;`
 
-## Получение такого объекта
+## Retrieving such an object
 
-Вы можете получить объект CTAspect от [CTAspectStack](/Mods/Modtweaker/Thaumcraft/Aspects/CTAspectStack/):
+You can retrieve a CTAspect object from a [CTAspectStack](/Mods/Modtweaker/Thaumcraft/Aspects/CTAspectStack/) object:
 
 ```zenscript
 val aspect = <aspect:ignis>.internal;
 ```
 
-## ZenGetters и ZenSetters
+## ZenGetters and ZenSetters
 
-| Название      | isGetter | isSetter | Тип    |
-| ------------- | -------- | -------- | ------ |
-| ЧатКоло**у**р | ✔        | ✔        | string |
-| имя           | ✔        |          | string |
+| Название       | isGetter | isSetter | Тип    |
+| -------------- | -------- | -------- | ------ |
+| chatColo**u**r | ✔        | ✔        | string |
+| name           | ✔        |          | string |

@@ -1,108 +1,108 @@
-# Радиация
-**Примечание: Двойной набор скобок `([...])` не требуется здесь!**
+# Radiation
+**Note: The double set of brackets `([...])` is not required here!**
 
-## Радиация
-Этот метод получает излучение `IIngredient` в радах/тике.
+## Radiation
+This method gets the radiation of an `IIngredient` in rads/tick.
 ```zenscript
-mods.nuclearcraft.radiation.getRadiationLevel(«радиационный уровень»)
+mods.nuclearcraft.radiation.getRadiationLevel(itemInput);
 ```
-## Мутации блока
-Этот метод добавляет мутацию блока. Блок не будет мутировать, когда радиация ниже `радиационного порога`.
+## Block Mutations
+This method adds a block mutation. The Block will not mutate when the radiation is below `radiationThreshold`.
 ```zenscript
-mods.nuclearcraft.radiation.addBlockMutation(blockInput, blockOutput, двойное радиационное излучениеThreshold);
+mods.nuclearcraft.radiation.addBlockMutation(blockInput, blockOutput, double radiationThreshold);
 ```
 
-## Радиационная иммунитет
-Этот метод дает возможность контролировать иммунитет игроков в зависимости от стадии. `по умолчанию` является логическим символом, указывающим иммунитет игроков без указанных стадий. `stageNames` представляет собой массив имен всех этапов, которые могут переключать иммунитет игроков.
+## Radiation Immunity
+This method gives the ability to control the immunity of players depending on the stage. `defaultImmunity` is a boolean specifiying the players' immunity without the specified stages. `stageNames` is an array of the names of all stages that can toggle the immunity of players.
 ```zenscript
 mods.nuclearcraft.radiation.setRadiationImmunityGameStages(boolean defaultImmunity, string[] stageNames);
 ```
 
-## Радиационные Полутчики/Сетчики
+## Radiation Getters/Setters
 
-### Добавление радиации
-`сумма` - это количество радиации, добавленной в `IEntityLivingBase`. `useImmunity` контролирует возникновение функции даже `IEntityLivingBase` иммунитет.
+### Adding Radiation
+`amount` is the amount of radiation added to the `IEntityLivingBase`. `useImmunity` controls whether the function occurs even the `IEntityLivingBase` is immune.
 ```zenscript
-IEntityLivingBase.addRadiation(двойная сумма, @Optional boolean useImmunity);
+IEntityLivingBase.addRadiation(double amount, @Optional boolean useImmunity);
 ```
 
-### Настройка излучения
-`значение` — это уровень радиации, применяемый к `IEntityLivingBase`. `useImmunity` контролирует возникновение функции даже `IEntityLivingBase` иммунитет.
+### Setting Radiation
+`amount` is the level of radiation that is applied to the `IEntityLivingBase`. `useImmunity` controls whether the function occurs even the `IEntityLivingBase` is immune.
 ```zenscript
-IEntityLivingBase.setRadiation(двойная сумма, @Optional boolean useImmunity);
+IEntityLivingBase.setRadiation(double amount, @Optional boolean useImmunity);
 ```
 
-### Получение Радиации
-Этот метод возвращает уровень радиации `IEntityLivingBase`.
+### Getting Radiation
+This method returns the level of radiation of the `IEntityLivingBase`.
 ```zenscript
 IEntityLivingBase.getRadiation();
 ```
 
-## Получатели буфера радаута
+## Radaway Buffer Getters/Setters
 
-### Добавление буфера Радаута
-`сумма` - это количество буфера, добавленное в `IEntityLivingBase`. `slowBuffer` решит, если добавленный Radaway буфер является медленным буфером.
+### Adding Radaway Buffer
+`amount` is the amount of Radaway Buffer added to the `IEntityLivingBase`. `slowBuffer` decides if the Radaway Buffer added is a slow buffer.
 ```zenscript
-IEntityLivingBase.addRadiationResistance(двойная сумма, @Optional boolean slowBuffer);
+IEntityLivingBase.addRadiationResistance(double amount, @Optional boolean slowBuffer);
 ```
-### Установка буфера Радаута
-`сумма` - это количество буфера Радаута, которое применяется к `IEntityLivingBase`. `slowBuffer` решит, если добавленный Radaway буфер является медленным буфером.
+### Setting Radaway Buffer
+`amount` is the amount of Radaway Buffer that is applied to the `IEntityLivingBase`. `slowBuffer` decides if the Radaway Buffer added is a slow buffer.
 ```zenscript
-IEntityLivingBase.setRadiationResistance(двойная сумма, @Optional boolean slowBuffer);
+IEntityLivingBase.setRadiationResistance(double amount, @Optional boolean slowBuffer);
 ```
 
-### Получение буфера Радау
-Этот метод возвращает буфер Radaway `IEntityLivingBase`. `slowBuffer` определяет, включен ли медленный буфер в возвращаемое значение.
+### Getting Radaway Buffer
+This method returns the Radaway Buffer of the `IEntityLivingBase`. `slowBuffer` determines whether slow buffer is included in the returned value.
 ```zenscript
 IEntityLivingBase.getRadiationResistance(@Optional boolean slowBuffer);
 ```
 
-## Ядовитые Геттеры/Наборы
+## Poison Buffer Getters/Setters
 
-### Добавление буфера яда
-`сумма` - это количество ядовитых буферов в `IEntityLivingBase`.
+### Adding Poison Buffer
+`amount` is the amount of Poison Buffer added to the `IEntityLivingBase`.
 ```zenscript
-IEntityLivingBase.addPoisonBuffer(двойная сумма);
+IEntityLivingBase.addPoisonBuffer(double amount);
 ```
-### Настройка буфера яда
-`сумма` - это количество ядовитого буфера, которое применяется к `IEntityLivingBase`.
+### Setting Poison Buffer
+`amount` is the amount of Poison Buffer that is applied to the `IEntityLivingBase`.
 ```zenscript
-IEntityLivingBase.setPoisonBuffer(двойная сумма);
+IEntityLivingBase.setPoisonBuffer(double amount);
 ```
 
-### Получение яда буфера
-Этот метод возвращает яд буфер `IEntityLivingBase`.
+### Getting Poison Buffer
+This method returns the Poison Buffer of the `IEntityLivingBase`.
 ```zenscript
 IEntityLivingBase.getPoisonBuffer();
 ```
 
-## Получатели / Сетчики сопротивления радиации
-### Сопротивление добавлению радиации
-`сумма` - количество сопротивления радиации, добавленное к `IEntityLivingBase`.
+## Radiation Resistance Getters/Setters
+### Adding Radiation Resistance
+`amount` is the amount of Radiation Resistance added to the `IEntityLivingBase`.
 ```zenscript
-IEntityLivingBase.addRadawayBuffer(двойная сумма);
+IEntityLivingBase.addRadawayBuffer(double amount);
 ```
-## Установка сопротивления радиации
-`сумма` — это количество сопротивления радиации, которое применяется к `IEntityLivingBase`.
+## Setting Radiation Resistance
+`amount` is the amount of Radiation Resistance that is applied to the `IEntityLivingBase`.
 ```zenscript
-IEntityLivingBase.setRadawayBuffer(двойная сумма);
+IEntityLivingBase.setRadawayBuffer(double amount);
 ```
 
-## Получение сопротивления радиации
-Этот метод возвращает сопротивление радиации `IEntityLivingBase`.
+## Getting Radiation Resistance
+This method returns the Radiation Resistance of the `IEntityLivingBase`.
 ```zenscript
 IEntityLivingBase.getRadawayBuffer();
 ```
-## Получатели уровня радиации
+## Radiation Level Getters
 
-### Сырье Радиации
-Этот метод возвращает излучение `IEntityLivingBase` в радарах.
+### Raw Radiation Level
+This method returns the radiation of the `IEntityLivingBase` in rads.
 ```zenscript
 IEntityLivingBase.getRawRadiationLevel();
 ```
 
-### Уровень Радиации
-Этот метод возвращает изменение уровня излучения `IEntityLivingBase` в радах/тике.
+### Radiation Level
+This method returns the change in radiation level of the `IEntityLivingBase` in rads/tick.
 ```zenscript
 IEntityLivingBase.getRadiationLevel();
 ```

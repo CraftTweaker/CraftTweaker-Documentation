@@ -1,12 +1,12 @@
-# 抽出器
+# Water Extractor
 
-*waterextractor* パッケージは、ウォーター抽出プロセスへのレシピの追加または削除に使用されます。
+The *waterextractor* package is used for adding or removing recipes to/from the Water Extractor Insert and Extract process.
 
-## 発信中
+## Calling
 
-*mods.skyresources.waterextractor* を使って `waterextractor` パッケージを呼び出すことができます。
+You can call the *waterextractor* package using `mods.skyresources.waterextractor`
 
-## レシピの追加
+## Recipe Addition
 
 ```zenscript
 //mods.skyresources.waterextractor.extract.addRecipe(int waterOut, IItemStack output, IIngredient input);
@@ -16,12 +16,12 @@ mods.skyresources.waterextractor.extract.addRecipe(500, <minecraft:dirt>, <minec
 mods.skyresources.waterextractor.insert.addRecipe(<minecraft:dirt>, <minecraft:cobblestone>, 100);
 ```
 
-## レシピの削除
+## Recipe Removal
 
 ```zenscript
-//mods.skyresources.waterextractor.extractor.removeRecipe(int waterOut, IItemStack 出力, IIngredient input);
-mods.skyresources.waterveRecipe(50, null, <minecraft:snow>);
+//mods.skyresources.waterextractor.extract.removeRecipe(int waterOut, IItemStack output, IIngredient input);
+mods.skyresources.waterextractor.extract.removeRecipe(50, null, <minecraft:snow>);
 
-//mods.skyresources.waterextractor.inserveRecipe(IItemStack 出力);
-mods.skyresources.waterextractor.removeRecipe(<minecraft:clay>);
+//mods.skyresources.waterextractor.insert.removeRecipe(IItemStack output);
+mods.skyresources.waterextractor.insert.removeRecipe(<minecraft:clay>);
 ```

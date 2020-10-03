@@ -1,30 +1,30 @@
-# Knapping de arcilla de fuego
+# FireClay Knapping
 
-## Paquete
+## Package
 ```zenscript
 import mods.terrafirmacraft.FireClayKnapping;FireClayKnapping;
 ```
 
-## Adicional
+## Addition
 
 ```zenscript
-FireClayKnapping.addRecipe(String registryName, ItemStack output, String... patrón)
+FireClayKnapping.addRecipe(String registryName, IItemStack output, String... pattern)
 ```
 
-## Eliminar
+## Removal
 
 ```zenscript
-FireClayKnapping.removeRecipe(salida ItemStack);
+FireClayKnapping.removeRecipe(IItemStack output);
 FireClayKnapping.removeRecipe(String registryName);
 ```
 
-## Ejemplo
+## Example
 ```zenscript
-// añade la receta de afeitado de fireClay para el binder de conductos enderio
-FireClayKnapping. ddRecipe("enderio/item_conduit_binder", <enderio:item_material:22>*2, 
-" X",
-" XX",
-" XXX",
+// add fireClay knapping recipe for enderio conduit binder
+FireClayKnapping.addRecipe("enderio/item_conduit_binder", <enderio:item_material:22>*2, 
+"    X",
+"   XX",
+"  XXX",
 " XXXX",
 "XXXXX");
 ```

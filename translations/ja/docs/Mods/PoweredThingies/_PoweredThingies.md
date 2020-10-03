@@ -1,18 +1,18 @@
-# パワードThingies
+# Powered Thingies
 
-動力Thingiesの非農業機械CraftTweakerサポート。
+Powered Thingies's non-farming machines CraftTweaker support.
 
 ### Mod Info
 
-Curseforge: [https://minecraft.cursseforge.com/projects/powered-thingies](https://minecraft.curseforge.com/projects/powered-thingies)
+Curseforge: <https://minecraft.curseforge.com/projects/powered-thingies>
 
 Github: <https://github.com/faceofcat/Tesla-Powered-Thingies>
 
-ウェブサイト: [https://www.modcrafters.net](https://www.modcrafters.net/?mod=thingies)
+Website: [https://www.modcrafters.net](https://www.modcrafters.net/?mod=thingies)
 
-### CT 積分方法
+### CT integration methods
 
-CTと統合されたすべてのマシンは以下の方法をサポートしています:
+All machines integrated with CT support these methods:
 
 ```zenscript
 XYZ.clear() // will clear the entire recipe registry
@@ -21,4 +21,4 @@ XYZ.removeRecipe(key: String)) // will remove the recipe with that key from regi
 XYZ.addRecipe(...) // adds a new recipe
 ```
 
-マシンごとに `Tweaker` クラスを取得するには、静的な `mods.poweredthingies.Tweaker` クラスを使用します。
+To retrieve the `Tweaker` class for each machine you have to use the static `mods.poweredthingies.Tweaker` class.

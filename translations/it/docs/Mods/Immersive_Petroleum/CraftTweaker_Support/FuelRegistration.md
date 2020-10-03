@@ -1,32 +1,32 @@
-# Registrazione Carburante
+# Fuel Registration
 
-## Motoscafo
+## Motorboat
 
-### registrazioneMotoreCarburante
+### registerMotorboatFuel
 
-| Tipo  | Tipo Di Dati                                 |
+| Type  | Data Type                                    |
 | ----- | -------------------------------------------- |
 | Input | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
-| mB/t  | Intero                                       |
+| mB/t  | Integer                                      |
 
-#### Esempio Di Codice:
+#### Code Example:
 
 ```zenscript
 mods.immersivepetroleum.Motorboat.registerMotorboatFuel(ILiquidStack fuelEntry, int mbPerTick);
 mods.immersivepetroleum.Motorboat.registerMotorboatFuel(<liquid:water>, 5);
 ```
 
-## Generatore Portatile
+## Portable Generator
 
 ### registerPortableGenFuel
 
-| Tipo   | Tipo Di Dati                                 |
+| Type   | Data Type                                    |
 | ------ | -------------------------------------------- |
 | Input  | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
-| Flux/t | Intero                                       |
-| mB/t   | Intero                                       |
+| Flux/t | Integer                                      |
+| mB/t   | Integer                                      |
 
-#### Esempio Di Codice:
+#### Code Example:
 
 ```zenscript
 mods.immersivepetroleum.PortableGenerator.registerPortableGenFuel(ILiquidStack fuelEntry, int fluxPerTick, int mbPerTick);

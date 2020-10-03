@@ -1,15 +1,15 @@
-# Le projet ZenScriptX
+# The ZenScriptX Project
 
-Le projet ZenScriptX est un projet non officiel que Boson a lancé et qui vise à étendre les possibilités du langage ZenScript, ajout d'éléments tels que l'évaluation paresseuse de boucles, Réflexion et interfaces fonctionnelles, de sorte que les fonctions peuvent être stockées dans une variable.
+The ZenScriptX Project is an unofficial project that Boson started and that aims to expand the possibilities of the ZenScript language, adding elements such as lazy evaluation of loops, Reflection, and functional interfaces, so that functions can be stored into a variable.
 
-L'utilisation de ces fonctionnalités nécessite une meilleure connaissance des paradigmes de programmation plus avancés, tels que la programmation fonctionnelle et la représentation appropriée de programmation orientée objet. Bien qu'il soit probable que cela empêchera une grande partie de la démographie de ZenScript de faire réellement usage de ces fonctionnalités, ceci conduira également à une meilleure qualité de code pour les personnes ayant des connaissances en scripting plus avancées.
+The usage of this features requires stronger knowledge of more advanced programming paradigms, such as Functional Programming and proper Object Oriented Programming representation. While it's likely that this will prevent a lot of the demographic of ZenScript from actually making use of these functionalities, this will also lead to better quality code for people with more advanced scripting knowledge.
 
-Ce projet est toujours en cours, mais à partir de 1. 5, il est très probable qu'il soit déplacé dans son propre module ZenCode, pour faciliter le développement et la dépendance.
+This project is still ongoing, but as of 1.15, it is highly likely it will be moved in its own separate ZenCode module, for ease of development and dependency.
 
-À partir de maintenant, le projet ZenScriptX est responsable de l'ajout des fonctionnalités suivantes :
+As of now, the ZenScriptX Project is responsbile for adding the following set of functionalities:
 
-- [Directive sur le prétraitement des drapeaux expérimentaux](/Mods/Boson/Preprocessor/Exp/)
-- [Interfaces Fonctionnelles](/Mods/Boson/Functions/Concept/)
-- [Fonctions mathématiques](/Mods/Boson/Math/Concept/)
-- [Séquences](/Mods/Boson/Sequences/Concept/)
-- [Réflexion](/Mods/Boson/Reflection/Concept/)
+- [Experimental Flags Preprocessor Directive](/Mods/Boson/Preprocessor/Exp/)
+- [Functional Interfaces](/Mods/Boson/Functions/Concept/)
+- [Math Functions](/Mods/Boson/Math/Concept/)
+- [Sequences](/Mods/Boson/Sequences/Concept/)
+- [Reflection](/Mods/Boson/Reflection/Concept/)

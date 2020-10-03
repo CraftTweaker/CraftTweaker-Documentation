@@ -1,23 +1,23 @@
-# マイニングベイ
+# Mine Bay
 
-Minebayでアイテムと交換できます。
+You can trade for items on minebay.
 
-## 既定の取引
+## Default Trades
 
-- 1x Emerald のための硬化した粘土。
-- エメラルドの8倍の頭骨
-- サドル（エメラルド4倍）
-- エメラルドの8倍の卵（メタ100、何もしない）を出現させる
-- ダイヤモンドの馬アーマー
-- 1倍の鉄のインゴットをエンチャントするボトル
-- 1倍鉄インゴット用4倍花火
-- シルクタッチエンチャントされた本 (8倍エメラルド)
-- 2x 暗視のポーション (3:00) 1x Emerald
-- レシピ本1x エメラルド（エメラルド）
+- Hardened Clay for 1x Emerald
+- Skull for 8x Emerald
+- Saddle for 4x Emerald
+- Spawn Egg (meta 100, does nothing) for 8x Emerald
+- Diamond Horse Armor for 8x Diamond
+- Bottle o' Enchanting for 1x Iron Ingot
+- 4x Fireworks for 1x Iron Ingot
+- Silk Touch Enchanted Book for 8x Emerald
+- 2x Night Vision Potion (3:00) for 1x Emerald
+- Recipe Book given 1x Emerald
 
-## 削除中
+## Removing
 
-## マッチする取引を削除します。
+## Remove matching trades.
 
 ```zenscript
 mods.cfm.MineBay.remove(@Optional IIngredient item);
@@ -28,11 +28,11 @@ mods.cfm.MineBay.remove(<minecraft:potion>.withTag({Potion: "night_vision"}));
 mods.cfm.MineBay.remove();
 ```
 
-現在、貿易の結果によってのみ削除をサポートしています。
+Currently only supports removing by trade result.
 
-## 追加中
+## Adding
 
-## 注文を追加
+## Add a trade.
 
 ```zenscript
 mods.cfm.MineBay.addTrade(@Nonnull IItemStack item, @Nonnull IItemStack currency);

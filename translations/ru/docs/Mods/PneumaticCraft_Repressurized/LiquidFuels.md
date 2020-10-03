@@ -1,35 +1,35 @@
-# Жидкое топливо
+# Liquid Fuels
 
-Жидкое топливо используется в PneumaticCraft: Repressure in (Advanced) Liquid Compressor для создания сжатого воздуха и (необязательно) в Лампе Керосина для производства света. По умолчанию жидкости, производимые в переработке, определяются как топливо, а также жидкость выше температуры 305 градусов Кельвина.
+Liquid Fuels are used in PneumaticCraft: Repressurized in the (Advanced) Liquid Compressor to create compressed air, and (optionally) in the Kerosene Lamp to produce light. By default the liquids produced in the Refinery are defined as fuel, as well as any liquid above a temperature of 305 degrees Kelvin.
 
-## Звонок
+## Calling
 
-Вы можете вызвать пакет жидкого топлива, используя `mods.pneumaticcraft.liquidfuel`.
+You can call the Liquid Fuels package using `mods.pneumaticcraft.liquidfuel`.
 
-## Удаление
+## Removing
 
-Эта функция дерегистрирует [ILiquidStack](/Vanilla/Liquids/ILiquidStack/) `жидкости` в качестве топлива:
+This function deregisters the [ILiquidStack](/Vanilla/Liquids/ILiquidStack/) `fluid` as a fuel:
 
 ```zenscript
 mods.pneumaticcraft.liquidfuel.removeFuel(ILiquidStack fluid);
-// Пример
+// Example
 mods.pneumaticcraft.liquidfuel.removeFuel(<liquid:lpg>);
 ```
 
-Эта функция дерегистрирует *все* зарегистрированное топливо:
+This function deregisters *all* registered fuels:
 
 ```zenscript
 mods.pneumaticcraft.liquidfuel.removeAllFuels();
 ```
 
-## Добавление
+## Adding
 
-Для добавления жидкости в реестр топлива могут использоваться следующие функции:
+The following functions can be used to add fluids to the fuel registry:
 
 ```zenscript
-// Регистрируем определенную жидкость как топливо. mlPerBucket определяет количество сжатого воздуха, произведенного на единицу топлива. Для справки 16000mL воздуха изготавливается из кусочка угля в воздушном компрессоре.
-mods.pneumaticcraft.liquidfuel.addFuel(ILiquidStack жидкость, двойной mlPerBucket);
+// Register a certain liquid as a fuel. mlPerBucket defines the amount of compressed air produced per bucket of fuel. For reference, 16000mL of air is produced from a piece of Coal in an Air Compressor.
+mods.pneumaticcraft.liquidfuel.addFuel(ILiquidStack fluid, double mlPerBucket);
 
-// Пример: зарегистрировать воду как топливо, которое производит 16000мл воздуха на корзине.
+// Example: register water as a fuel which produces 16000mL air per bucket.
 mods.pneumaticcraft.liquidfuel.addFuel(<liquid:water>, 16000);
 ```

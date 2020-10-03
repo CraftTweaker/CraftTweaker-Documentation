@@ -1,22 +1,22 @@
-# `ТагиИнгредиент`
+# `TagIngredient`
 
-`TagIngredient` - это реализация `IIngredient` , позволяющая использовать [`Tag`](/Mods/Boson/Tags/Tag/) в рецептах. You can only access this data from outside the [`tags` loader](/Mods/Boson/Loaders/Tags/). Для получения дополнительной информации относительно тегов и их получения обратитесь к [этой странице](/Mods/Boson/Tags/Concept/).
+A `TagIngredient` is an `IIngredient` implementation that allows you to use a [`Tag`](/Mods/Boson/Tags/Tag/) in recipes. You can only access this data from outside the [`tags` loader](/Mods/Boson/Loaders/Tags/). For more information regarding tags and how to obtain them, refer to [this page](/Mods/Boson/Tags/Concept/).
 
-## Детали урока
-Класс находится в пакете `net.thesilkminer.mc.boson.zen.tag` , в результате чего пакет `net.thesilkminer.mc.boson.zen.tag.TagIngredient` его полное имя для импорта.
+## Class Details
+The class is situated in the `net.thesilkminer.mc.boson.zen.tag` package, making `net.thesilkminer.mc.boson.zen.tag.TagIngredient` its fully qualified name for importing.
 
-## Создание нового экземпляра
-См. [документацию обработчика скобок](/Mods/Boson/Tags/BracketHandler/).
+## Creating a New Instance
+Refer to [the bracket handler documentation](/Mods/Boson/Tags/BracketHandler/).
 
-## `Иингредиент`
-Так как `TagIngredient` является `IIngredient`, он предоставляет доступ ко всем свойствам и методам интерфейса. Обратитесь к к [`IIngredient`странице документации](/Vanilla/Variable_Types/IIngredient/) для получения более подробной информации. Эта страница документации содержит только сведения о добавлениях и приютах, которые являются особенностями этого класса.
+## `IIngredient`
+Since `TagIngredient` is an `IIngredient`, it provides access to all the properties and methods of that interface. Refer to [`IIngredient`'s documentation page](/Vanilla/Variable_Types/IIngredient/) for more details. This documentation page only outlines additions and quirks that are particular of this class.
 
 ## Свойства
-`TagIngredient` предоставляет доступ только для чтения дополнительного набора свойств, как указано в следующей таблице:
+A `TagIngredient` provides read-only access to an additional set of properties, as outlined in the following table:
 
-| Название свойства | Тип                                  | Описание                                                                        |
-| ----------------- | ------------------------------------ | ------------------------------------------------------------------------------- |
-| `tagName`         | [`Пробел имени`](/Mods/Boson/Names/) | Название, которое уникально идентифицирует тег, к которому относится ингредиент |
+| Property Name | Тип                                      | Описание                                                        |
+| ------------- | ---------------------------------------- | --------------------------------------------------------------- |
+| `tagName`     | [`NameSpacedString`](/Mods/Boson/Names/) | Name that uniquely identifies the tag this ingredient refers to |
 
 ## Пример
 

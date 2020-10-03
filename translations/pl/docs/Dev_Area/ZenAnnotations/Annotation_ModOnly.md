@@ -1,25 +1,25 @@
-# Tylko Modyfikacja
+# ModOnly
 
-Adnotacja `@ModOnly` jest tak prosta, jak sugerowana nazwa:  
-Rejestruje tylko ZenClass jeśli podany mod jest załadowany.
+The `@ModOnly` annotation is as simple as the name suggests:  
+It only registers a ZenClass if the provided mod is loaded.
 
-## Przykład
+## Example
 
-[Modyfikacja projektu testowego CraftTweaker](https://github.com/jaredlll08/CraftTweaker/tree/1.12/CraftTweaker2-MC1120-Tests/src/main/java/crafttweaker/tests/wiki/ModOnlyWiki.java)
+[CraftTweaker Test Project ModOnly](https://github.com/jaredlll08/CraftTweaker/tree/1.12/CraftTweaker2-MC1120-Tests/src/main/java/crafttweaker/tests/wiki/ModOnlyWiki.java)
 
 ```java
 @ModOnly(value = "mcp")
-@ZenClass(wartość = "crafttweaker.tests. odOnly")
+@ZenClass(value = "crafttweaker.tests.modOnly")
 @ZenRegister
-klasa publiczna ModOnlyWiki {
+public class ModOnlyWiki {
     @ZenMethod
-    public statstatic void print() {
-        CraftTweakerAPI. ogInfo("print issued");
+    public static void print() {
+        CraftTweakerAPI.logInfo("print issued");
     }
 }
 ```
 
-## Jakie klasy mogą być opatrzone || Dodatkowe informacje
+## What classes can be annotated || Additional Info
 
-- Możesz opatrzyć wszystkie klasy Java, które mają również adnotację [`@ZenRegister`](/Dev_Area/ZenAnnotations/Annotation_ZenRegister/). Technicznie możesz zarejestrować wszystkie klasy, ale tylko tam będzie to miało wpływ.
-- Adnotacja wymaga wartości ciągu, która reprezentuje modName (`isModLoaded(annotation.getValue())` musi zwracać true moda jest załadowany)
+- You can annotate all Java Classes that also have the [`@ZenRegister` Annotation](/Dev_Area/ZenAnnotations/Annotation_ZenRegister/). Technically, you can register all classes, but only there it will have an impact.
+- The Annotation requires a String value that represents the modName (`isModLoaded(annotation.getValue())` has to return true of the mod is loaded)

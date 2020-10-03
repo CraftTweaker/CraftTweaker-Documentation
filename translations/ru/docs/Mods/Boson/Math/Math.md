@@ -1,27 +1,27 @@
-# `Математика`
+# `Math`
 
-`Математика` — это класс контейнера для набора основных математических функций. Обратитесь к странице [Концепция](/Mods/Boson/Math/Concept/) для получения дополнительной информации.
+`Math` is the container class for a set of basic mathematical functions. Refer to the [Concept](/Mods/Boson/Math/Concept/) page for more information.
 
-## Детали урока
-Являясь частью проекта ZenScriptX, полное имя для класса `zenscriptx.math.Math`.
+## Class Details
+Being part of the ZenScriptX Project, the fully qualified name for the class is `zenscriptx.math.Math`.
 
-## Создание нового экземпляра
-Поскольку этот класс является просто обладателем математических функций, создать новый экземпляр невозможно. Напротив, все методы должны быть вызваны самим классом.
+## Creating a New Instance
+Since this class is just a holder of mathematical functions, it is impossible to create a new instance. Rather, all methods should be invoked on the class itself.
 
 ## Методы
-Для экономии места методы будут представлены в одном сниппете, сгруппированы в соответствии с теми операциями, которые они выполняют с комментарием выше и описанием, что должен делать метод, и любыми другими условиями, которые следует сохранить при использовании метода. Более того, несколько методов могут быть сгруппированы вместе, если они близки к перегрузкам друг друга (i. , они делают то же самое, но имеют разные аргументы или возвратные типы).
+To save up on space, the methods will be presented in a single snippet, grouped according to the kind of operation they perform with a comment above outlining what the method is supposed to do and any other conditions that should be kept into consideration when using the method. Moreover, multiple methods may be grouped together if they're close overloads of one another (i.e. they do the same thing, but they have different argument or return types).
 
 ```zenscript
-# этот метод делает что-то
-метод функции(аргумент как двойный, argument2 как bool) двойным;
-метод функции (аргумент как float, argument2 как bool) как float;
+# this method does something
+function method(argument as double, argument2 as bool) as double;
+function method(argument as float, argument2 as bool) as float;
 
-# этот метод выполняет что-то еще, и может возвращать null
-функции method2() как bool?;
+# this method does something else, and may return null
+function method2() as bool?;
 ```
 
-### Математические константы
-Эти методы обеспечивают доступ к заметным математическим константам, которые при необходимости могут быть использованы в других операциях. Their precision is the biggest possible precision according to the used representation inside computers (i.e. the most accurate number representable with a `double`).
+### Mathematical Constants
+These methods provide access to notable mathematical constants that may be used across other operations, if needed. Their precision is the biggest possible precision according to the used representation inside computers (i.e. the most accurate number representable with a `double`).
 
 ```zenscript
 # Obtains the value of PI, which is the ratio of a circumpherence of a circle to its diameter, approximately 3.14159
@@ -31,8 +31,8 @@ function pi() as double;
 function e() as double;
 ```
 
-### Тригонометрические функции
-Тригонометрические функции - это функции, которые работают с углами и связывают их с отношением двух сторон длины треугольника справа углом, вместе со всеми их обратными функциями.
+### Trigonometric Functions
+Trigonometric functions are functions that work with angles and relate them to the ratio of two side lenghts of a right-angled triangle, along with all their inverse functions.
 
 ```zenscript
 # Computes the sine of the angle passed in, which MUST be in RADIANS
@@ -88,8 +88,8 @@ function atan2(y as double, x as double) as double;
 function atan2(y as float, x as float) as float;
 ```
 
-### Гиперболические функции
-Гиперболические функции - это аналоговые тригонометрические функции, определяемые скорее для гиперболы, чем по кругу.
+### Hyperbolic Functions
+Hyperbolic functions are analogs of the trigonometric functions, defined for a hyperbola rather than on a circle.
 
 ```zenscript
 # Computes the hyperbolic sine of the given value
@@ -117,53 +117,53 @@ function atanh(x as double) as double;
 function atanh(x as float) as float;
 ```
 
-### Функции треугольника правого угла
-Это некоторые дополнительные функции, которые могут быть рассчитаны под правым углом треугольника, в дополнение к тригонометрическим функциям , но они не работают над углами треугольника.
+### Right-Angled Triangle Functions
+These are some additional functions that can be computed on a right-angled triangle, in addition to the trigonometric functions, but that do not operate on the angles of the triangle.
 
 ```zenscript
-# Рассчитывает длину гипотезы треугольника с помощью теоремы Pythagorean, убедитесь, что переполнение или переполнение не происходит во время вычисления
-функции hypot(x как двойная, y как двойное) как двойное;
-функция hypot(x как float, y как float) как плавущие;
+# Computes the length of the hypothenuse of the triangle with the Pythagorean's theorem, making sure no overflow or underflow happens during the computation
+function hypot(x as double, y as double) as double;
+function hypot(x as float, y as float) as float;
 ```
 
-### Силы и корни
-Эти функции позволяют быстрее и эффективнее вычислять мощности и корни по сравнению со стандартным методом умножения или последующего вычитания.
+### Powers and Roots
+These functions allow to compute powers and roots in a quicker and more efficient way than the standard method of multiplications or subsequent subtraction.
 
 ```zenscript
-# Вычисляет положительный квадратный корень из данного значения
-функции sqrt(x как двойное) как двойное;
-функция sqrt(x как плавущий) как плавущие;
+# Computes the positive square root of the given value
+function sqrt(x as double) as double;
+function sqrt(x as float) as float;
 
-# Рассчитывает отрицательный квадратный корень из заданного значения
-функции nsqrt(x как double) как double;
-функции nsqrt(x as float) в качестве плавающего процесса;
+# Computes the negative square root of the given value
+function nsqrt(x as double) as double;
+function nsqrt(x as float) as float;
 
-# квадратирует данное значение
-функции sq(x как двойное);
-функция sq(x как float) как float;
+# Squares the given value
+function sq(x as double) as double;
+function sq(x as float) as float;
 
-# Повышает данное базовое значение экспоненциальному exp
-функциональной порошке (базисная порошка как двойная, exp как двойная) как двойная;
-функциональная порошка (основа, как двойная, exp как int) в два раза;
-функция (базовая как float, как float) как float;
-функция порошка (основа с плавающей точкой, выражена как int) как плавная;
+# Raises the given base value to the exponent exp
+function pow(base as double, exp as double) as double;
+function pow(base as double, exp as int) as double;
+function pow(base as float, exp as float) as float;
+function pow(base as float, exp as int) as float;
 ```
 
 ### Exponential Functions
-Экспоненциальная функция — это функция, которая принимает форму `y = a * b^x`.
+An exponential function is a function that takes the form of `y = a * b^x`.
 
 ```zenscript
-# Вычисляет число Эйлера ((e), увеличенное до мощности x
-функции exp(x как удвоенное) в два раза;
-функция exp(x as float) как плавущие;
+# Computes Euler's number (e) raised to the power of x
+function exp(x as double) as double;
+function exp(x as float) as float;
 
-# Вычисляет функцию 'exp(x) - 1', с лучшей точностью для чисел, которые близки к нулю
-функции expm1(x как двойное), как двойное;
-функция expm1(x как float) как float;
+# Computes the function 'exp(x) - 1', with a better accuracy for numbers that are nearer to zero
+function expm1(x as double) as double;
+function expm1(x as float) as float;
 ```
 
-### Логарифмические функции
-Логарифмическая функция, широко известная как логарифм, представляет собой обратную функцию экспоненциальной функции. Differently from other functions, a logarithm is defined according to a base, which represents the number which has to be raised to the resulting power to obtain the argument of the logarithm itself.
+### Logarithimic Functions
+A logarithmic function, commonly known as logarithm, is the inverse function of the exponential function. Differently from other functions, a logarithm is defined according to a base, which represents the number which has to be raised to the resulting power to obtain the argument of the logarithm itself.
 
 ```zenscript
 # Computes the logarithm of x to the given base
@@ -187,8 +187,8 @@ function ln1p(x as double) as double;
 function ln1p(x as float) as float;
 ```
 
-### Функции округления
-Скругляющая функция - это функция, которая сопоставляет реальное число с определенным целым числом согласно набору правил, в зависимости от функции.
+### Rounding functions
+A rounding function is a function that maps a real number to a specific integer number according to a set of rules, depending to the function.
 
 ```zenscript
 # Rounds the given value towards positive infinity, returning the smallest real number that is greater than or equal to x and is a mathematical integer
@@ -232,8 +232,8 @@ function roundl(x as double) as long;
 function roundl(x as float) as long;
 ```
 
-### Функции подписи
-Эти функции функционируют в основном или только на знаке аргумента.
+### Sign-based Functions
+These functions operate mostly or solely on the sign of the argument.
 
 ```zenscript
 # Returns the absolute value of the given value
@@ -249,35 +249,35 @@ function sign(x as int) as int;
 function sign(x as long) as long;
 ```
 
-### Функции сравнения
-Эти функции сравнивают различные аргументы и возвращают только один из них в соответствии с определенным набором правил.
+### Comparison Functions
+These functions compare the various arguments and return only one of them according to a certain set of rules.
 
 ```zenscript
-# Возвращает меньшее из двух заданных значений функции min
-(как двойное, b двойное) как двойное;
-функция min(a as float, b as float) как float;
-функция min(a as int, b as int) как int;
-функция min(a как длинная, b как долгое);
+# Returns the smaller of the two given values
+function min(a as double, b as double) as double;
+function min(a as float, b as float) as float;
+function min(a as int, b as int) as int;
+function min(a as long, b as long) as long;
 
-# возвращает больше двух заданных значений
-функции max(a as double, b as double) как double;
-max(a as float, b as float) as float;
+# Returns the bigger of the two given values
+function max(a as double, b as double) as double;
+function max(a as float, b as float) as float;
 function max(a as int, b as int) as int;
-max(a as long, b as long) длинно;
+function max(a as long, b as long) as long;
 
-# Зажигает заданное значение x между двумя границами, эффективно возвращая минуту, если x меньше минуты, max if x is more than max, x otherwise
-function clamp(x as double, min as double), as double;
-функция clamp(x как float, мин. как float, макс. float) как float;
-функция зажигание (x как int, мин. как int, max int) как int;
-зажигание функции (x длинной, не менее длинной, максимум длинной)
+# Clamps the given x value between two bounds, effectively returning min if x is smaller than min, max if x is bigger than max, x otherwise
+function clamp(x as double, min as double, max as double) as double;
+function clamp(x as float, min as float, max as float) as float;
+function clamp(x as int, min as int, max as int) as int;
+function clamp(x as long, min as long, max as long) as long;
 ```
 
-### Остальные функции
-Эти функции вычисляют остаток между двумя аргументами в соответствии с набором правил.
+### Remainder Functions
+These functions compute the remainder between two arguments according to a set of rules.
 
 ```zenscript
-# Вычисляет оставшуюся часть деления между значением и div в соответствии со стандартом IEEE 754: 'r = значение - (округление / div) * div)'
-функция rem(значение двойное, div как двойное) в два раза;
-функция rem(значение как float, div as float) как float;
+# Computes the remainder of the division between value and div according to the IEEE 754 standard: 'r = value - (round(value / div) * div)'
+function rem(value as double, div as double) as double;
+function rem(value as float, div as float) as float;
 ```
 

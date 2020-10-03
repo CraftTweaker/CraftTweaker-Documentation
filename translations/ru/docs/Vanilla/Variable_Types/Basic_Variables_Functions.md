@@ -1,53 +1,53 @@
-# Функциональность базовой переменной
+# Basic variable functionality
 
-Наиболее основными переменными типами ZenScript являются Strings, Integers и booleans.
+The most basic variable types of ZenScript are Strings, Integers and booleans.
 
-## Большинство одиночных типов
+## Most single types
 
-`true == true` Вы можете проверить, совпадают ли два значения.  
-`"Привет" != "Мир"` Также можно проверить, неодинаковы ли два значения.
+`true == true` You can check if two values are the same.  
+`"Hello" != "World"` You can also check if two values are unequal.
 
-## Строки
+## Strings
 
-Строки обеспечивают некоторые функции
+Strings provide some functionality
 
-`"Hello".length` Возвращает длину строки как int.  
-`"Привет"[1]` Возвращает символ в заданном индексе строки как другую строку.  
-`"Hello" в "Hell"` проверяет строку до `в` содержит строку после нее как булев. Вы можете заменить `в` на `имеет` , если вам это понравится.  
-`"Hel" ~ "lo " + "World"` Вы также можете добавлять/объединять строки. `строка += "assignAdd"` , вы также можете использовать операторы assignAdd/assignConcatenate.
+`"Hello".length` Returns the string's length as int.  
+`"Hello"[1]` Returns the character at the string's given index as another string.  
+`"Hello" in "Hell"` checks if the string before `in` contains the string after it as boolean. You can replace the `in` with `has` if you like that better.  
+`"Hel" ~ "lo " + "World"` You also can add/concatenate strings. `string += "assignAdd"` you can also use the assignAdd/assignConcatenate operators.
 
-Помимо этого, все методы, доступные [Java Strings](https://docs.oracle.com/javase/8/docs/api/java/lang/String.html) и не использующие тип `char` также доступны для строк ZenScript!  
-Это включает:
+Aside from these, all methods that are available to [Java Strings](https://docs.oracle.com/javase/8/docs/api/java/lang/String.html) and do not use the `char` type are also available to ZenScript strings!  
+This includes:
 
-- нижний регистр
+- toLowerCase
 - toUpperCase
 - getBytes
 - hashCode
-- интерн
+- intern
 - isEmpty
-- чарт
-- обрезка
-- разделить
+- toCharArray
+- trim
+- split
 
-## Целые
+## Integers
 
-Функциональность некоторых целых чисел
+Integers provide some functionality
 
-`+-*/%` Основные математические операторы (проверьте [типы переменных](/Vanilla/Variable_Types/Variable_Types) страниц). Вы также можете использовать токены operatorAssign  
-`0 to 10` Возвращает целые диапазоны от 0 до 10.  
-`1~10` объединяет целые числа (возвращает "110").
+`+-*/%` Basic mathematic operators (check the [variable Types](/Vanilla/Variable_Types/Variable_Types) page). You can also use the operatorAssign tokens  
+`0 to 10` Returns an Integer Range ranging from 0 to 10.  
+`1~10` Concatenates the Integers (returns "110").
 
-## Логические значения
+## Booleans
 
-Логические выражения предоставляют некоторые функции
+Booleans provide some functionality
 
-`true ~ false` объединяет логические выражения (возвращает "truefalse").  
-`& | ^` логические операторы (и/или/xor).
+`true ~ false` Concatenates the booleans (returns "truefalse").  
+`& | ^` Boolean operators (and/or/xor).
 
-## Массивы/Списки массивов
+## Arrays/ArrayLists
 
-Массивы и списки массивов обеспечивают общие функции
+Arrays and ArrayLists provide common functions
 
-`массив[1]` возвращает элемент по заданному индексу.  
-`array[1] = "Привет"` Устанавливает элемент по заданному индексу.  
-`массивов. Длина массива` возвращает длину массивов
+`array[1]` returns the item at the given index.  
+`array[1] = "Hello"` Sets the item at the given index.  
+`array.length` returns the arrays length

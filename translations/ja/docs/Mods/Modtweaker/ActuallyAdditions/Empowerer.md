@@ -1,6 +1,6 @@
-# 強化者
+# Empowerer
 
-## パッケージ
+## Package
 
 `mods.actuallyadditions.Empowerer`
 
@@ -14,9 +14,9 @@ mods.actuallyadditions.Empowerer.addRecipe(<minecraft:iron_ingot>, <minecraft:le
 mods.actuallyadditions.Empowerer.addRecipe(<minecraft:gold_ingot>, <minecraft:iron_ingot>, <minecraft:redstone>, <minecraft:redstone>, <minecraft:redstone>, <minecraft:redstone>, 500, 100, [0.5, 0.3, 0.2]);
 ```
 
-## 削除
+## Removal
 
 ```zenscript
 //mods.actuallyadditions.Empowerer.removeRecipe(IItemStack output);
-mods.actuallyadditions.Empower.removeRecipe(<actuallyadditions:item_crystal_empowered:5>);
+mods.actuallyadditions.Empowerer.removeRecipe(<actuallyadditions:item_crystal_empowered:5>);
 ```

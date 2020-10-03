@@ -1,100 +1,100 @@
 # Fission
 
-## Modérateur de Fission
+## Fission Moderator
 
-### Importation du paquet en cours
+### Importing the Package
 `mods.nuclearcraft.FissionModerator`
 
-### Ajout de recettes
+### Adding Recipes
 ```zenscript
-mods.nuclearcraft.FissionModerator.add(bloc IIngrédient, int fluxFactor, double efficacité) ;
+mods.nuclearcraft.FissionModerator.add(IIngredient block, int fluxFactor, double efficiency);
 ```
 
-### Suppression des recettes
+### Removing Recipes
 ```zenscript
 mods.nuclearcraft.mods.nuclearcraft.FissionModerator.remove(IIngredient block);
 mods.nuclearcraft.
 ```
 
-## Réflecteur de Fission
+## Fission Reflector
 
-### Importation du paquet en cours
-`mods.nuclearcraft.Réflecteur de la fiscalité`
+### Importing the Package
+`mods.nuclearcraft.FissionReflector`
 
-### Ajout de recettes
+### Adding Recipes
 ```zenscript
-mods.nuclearcraft.FissionReflector.add(bloc IIngrédient, double efficacité, double réflectivité) ;
+mods.nuclearcraft.FissionReflector.add(IIngredient block, double efficiency, double reflectivity);
 ```
 
-### Suppression des recettes
+### Removing Recipes
 ```zenscript
 mods.nuclearcraft.FissionReflector.remove(IIngredient block);
-mods.nuclearcraft.Reflecteur Fission.removeAll();
+mods.nuclearcraft.FissionReflector.removeAll();
 ```
 
-## Irradiateur de Fission
+## Fission Irradiator
 
-### Importation du paquet en cours
-`mods.nuclearcraft.Irradiateur de Fission`
+### Importing the Package
+`mods.nuclearcraft.FissionIrradiator`
 
-### Ajout de recettes
+### Adding Recipes
 ```zenscript
-mods.nuclearcraft.FissionIrradiator.add(IIngredient itemInput, IIngredient itemOutput, int fluxRequired, double heatPerFlux, double efficacité, double radiation);
+mods.nuclearcraft.FissionIrradiator.add(IIngredient itemInput, IIngredient itemOutput, int fluxRequired, double heatPerFlux, double efficiency, double radiation);
 ```
 
-### Suppression des recettes
+### Removing Recipes
 ```zenscript
 mods.nuclearcraft.mods.nuclearcraft.FissionIrradiator.removeRecipeWithInput(IIngredient itemInput);
 mods.nuclearcraft.FissionIrradiator.removeRecipeWithOutput(IIngredient itemOutput);
 mods.nuclearcraft.
 ```
 
-## Fission de lit de Pebble
+## Pebble Bed Fission
 
-### Importation du paquet en cours
+### Importing the Package
 `mods.nuclearcraft.PebbleFission`
 
-### Ajout de recettes
+### Adding Recipes
 ```zenscript
-mods.nuclearcraft.PebbleFission.addRecipe(IIngredient itemInput, IIngredient itemOutput, temps d'allumage, temps d'allumage, temps d'allumage, double efficacité, critique des intes, auto-amorçage booléen, double radiation);
+mods.nuclearcraft.PebbleFission.addRecipe(IIngredient itemInput, IIngredient itemOutput, int time, int heat, double efficiency, int criticality, boolean selfPriming, double radiation);
 ```
 
-### Suppression des recettes
+### Removing Recipes
 ```zenscript
 mods.nuclearcraft.mods.nuclearcraft.PebbleFission.removeRecipeWithInput(IIngredient itemInput);
 mods.nuclearcraft.PebbleFission.removeRecipeWithOutput(IIngredient itemOutput);
 mods.nuclearcraft.
 ```
 
-## Fission de carburant solide
+## Solid Fuel Fission
 
-### Importation du paquet en cours
-`mods.nuclearcraft.Fission Solide`
+### Importing the Package
+`mods.nuclearcraft.SolidFission`
 
-### Ajout de recettes
+### Adding Recipes
 ```zenscript
-mods.nuclearcraft.SolidFission.addRecipe(IIngredient itemInput, IIngredient itemOutput, temps d'allumage, temps d'allumage, chaleur d'intestin, double efficacité, critique de l'intestin, autoPriming, double radiation);
+mods.nuclearcraft.SolidFission.addRecipe(IIngredient itemInput, IIngredient itemOutput, int time, int heat, double efficiency, int criticality, boolean selfPriming, double radiation);
 
 ```
 
-### Suppression des recettes
+### Removing Recipes
 ```zenscript
 mods.nuclearcraft.SolidFission.removeRecipeWithInput(IIngredient itemInput);
 mods.nuclearcraft.SolidFission.removeRecipeWithOutput(IIngredient itemOutput);
-mods.nuclearcraft.Supprimer toutes les recettes ();
+mods.nuclearcraft.SolidFission.removeAllRecipes();
 ```
 
-## Chauffage fiscal
+## Fission Heating
 
-### Importation du paquet en cours
-`mods.nuclearcraft.FissionChauffage`
+### Importing the Package
+`mods.nuclearcraft.FissionHeating`
 
-### Ajout de recettes
+### Adding Recipes
 ```zenscript
 mods.nuclearcraft.FissionHeating.addRecipe(ILiquidStack fluidInput, ILiquidStack fluidOutput, int heatPerInputMB);
 ```
 
-### Suppression des recettes
+### Removing Recipes
 ```zenscript
 mods.nuclearcraft.FissionHeating.removeRecipeWithInput(ILiquidStack fluidInput);
 mods.nuclearcraft.FissionHeating.removeRecipeWithOutput(ILiquidStack fluidOutput);

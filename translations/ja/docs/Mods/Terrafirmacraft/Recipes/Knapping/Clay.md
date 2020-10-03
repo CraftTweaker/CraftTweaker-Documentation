@@ -1,6 +1,6 @@
-# 粘土ナイフ
+# Clay Knapping
 
-## パッケージ
+## Package
 ```zenscript
 import mods.terrafirmacraft.ClayKnapping;ClayKnapping;
 ```
@@ -8,14 +8,14 @@ import mods.terrafirmacraft.ClayKnapping;ClayKnapping;
 ## 追加
 
 ```zenscript
-ClayKnapping.addRecipe(レジストリ名の文字列、IItemStack output, String... pattern);
+ClayKnapping.addRecipe(String registryName, IItemStack output, String... pattern);
 ```
 
 ## 削除
 
 ```zenscript
-ClayNnapping.removeRecipe(IItemStack output);
-ClayNnapping.removeRecipe(String registryName);
+ClayKnapping.removeRecipe(IItemStack output);
+ClayKnapping.removeRecipe(String registryName);
 ```
 
 ## 例

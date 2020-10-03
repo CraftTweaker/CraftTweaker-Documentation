@@ -1,15 +1,15 @@
-# Yunque
+# Anvil
 
-El yunque es una simple mesa de creación 4x4 con las mismas opciones.
+The Anvil is a simple 4x4 Crafting Table with the same options.
 
-## Forjado
+## Shaped
 
-### Adicional
+### Addition
 
 ```zenscript
-mods.betterwithmods.Anvil.addShaped(salida IItemStack, entradas IIngredient[][]);
+mods.betterwithmods.Anvil.addShaped(IItemStack output, IIngredient[][] inputs);
 
-mods.betterwithmods.Anvil. ddShaped(<minecraft:dirt>, [
+mods.betterwithmods.Anvil.addShaped(<minecraft:dirt>, [
    [<minecraft:stone>, <minecraft:stone>, <minecraft:stone>, <minecraft:stone>],
    [<minecraft:stone>, <minecraft:stone>, <minecraft:stone>, <minecraft:stone>],
    [<minecraft:stone>, <minecraft:stone>, <minecraft:stone>, <minecraft:stone>],
@@ -17,7 +17,7 @@ mods.betterwithmods.Anvil. ddShaped(<minecraft:dirt>, [
 ]);
 ```
 
-### Eliminar
+### Removal
 
 ```zenscript
 mods.betterwithmods.Anvil.removeShaped(IItemStack output, @Optional IIngredient[][] inputs);
@@ -28,14 +28,14 @@ mods.betterwithmods.Anvil.removeShaped(<minecraft:dirt>,[[<minecraft:stone>]]);
 
 ```
 
-## Sin forma
+## Shapeless
 
-### Adicional
+### Addition
 
 ```zenscript
-mods.betterwithmods.Anvil.addShapeless(salida ItemStack, entradas IIngredient[]);
+mods.betterwithmods.Anvil.addShapeless(IItemStack output, IIngredient[] inputs);
 
-mods.betterwithmods.Yvil. ddShapeless(<minecraft:dirt>, [
+mods.betterwithmods.Anvil.addShapeless(<minecraft:dirt>, [
 <minecraft:dirt>, <minecraft:dirt>, <minecraft:dirt>, <minecraft:dirt>,
 <minecraft:dirt>, <minecraft:dirt>, <minecraft:dirt>, <minecraft:dirt>,
 <minecraft:dirt>, <minecraft:dirt>, <minecraft:dirt>, <minecraft:dirt>,
@@ -43,19 +43,19 @@ mods.betterwithmods.Yvil. ddShapeless(<minecraft:dirt>, [
 ]);
 ```
 
-### Eliminar
+### Removal
 
 ```zenscript
-mods.betterwithmods.Anvil.removeShapeless(salida IItemStack, @entradas IIngredient[]);
+mods.betterwithmods.Anvil.removeShapeless(IItemStack output, @Optional IIngredient[] inputs);
 
 mods.betterwithmods.Anvil.removeShapeless(<minecraft:dirt>);
 
-mods.betterwithmods.Anvil. emoveShapeless(<minecraft:dirt>, [
+mods.betterwithmods.Anvil.removeShapeless(<minecraft:dirt>, [
 <minecraft:dirt>, <minecraft:dirt>, <minecraft:dirt>, <minecraft:dirt>,
 <minecraft:dirt>, <minecraft:dirt>, <minecraft:dirt>, <minecraft:dirt>,
 <minecraft:dirt>, <minecraft:dirt>, <minecraft:dirt>, <minecraft:dirt>,
 <minecraft:dirt>, <minecraft:dirt>, <minecraft:dirt>, <minecraft:dirt>
 ]);
 
-mods. etterwithmods.Anvil.removeAll();
+mods.betterwithmods.Anvil.removeAll();
 ```

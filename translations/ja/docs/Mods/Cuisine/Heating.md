@@ -12,7 +12,7 @@ BasinHeating.add(<liquid:lava> * 1000, <item:minecraft:diamond>);
 BasinHeating.add(<liquid:water> * 1000, <item:minecraft:diamond>, 100);
 ```
 
-## 削除
+## Removal
 
 ```zenscript
 import mods.cuisine.BasinHeating;
@@ -22,11 +22,11 @@ BasinHeating.remove(ILiquidStack input);
 
 BasinHeating.remove(<liquid:lava> * 1000);
 
-// 識別子で削除
+// Remove by identifier.
 BasinHeating.remove(String id);
 
 BasinHeating.remove("recipe_name");
 
-// すべてを削除！
+// Remove everything!
 BasinHeating.removeAll();
 ```

@@ -1,31 +1,31 @@
 # CTAspectStack
 
-Ein CTAspectStack ist ein [CTAspect](/Mods/Modtweaker/Thaumcraft/Aspects/CTAspect/) kombiniert mit einem Betrag, der zeigt, wie viele Aspektspunkte der Stapel erhalten wird.
+A CTAspectStack is a [CTAspect](/Mods/Modtweaker/Thaumcraft/Aspects/CTAspect/) combined with an amount that shows how many aspect points the stack will be made of.
 
 ## Dieses Paket importieren
 
-Es kann erforderlich sein, dass Sie das Paket importieren, wenn Sie irgendwelche Probleme haben. Seien Sie also besser sicher als entschuldigen und fügen Sie den Import hinzu.  
-`thaumcraft.aspect.CTAspectStack;`
+It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
+`import thaumcraft.aspect.CTAspectStack;`
 
-## Ein solches Objekt wird abgerufen
+## Retrieving such an object
 
-Sie können ein CTAspectStack Objekt vom [CTAspectStack Bracket Handler](/Mods/Modtweaker/Thaumcraft/Brackets/Bracket_Aspect/) Objekt abrufen:
+You can retrieve a CTAspectStack object from the [CTAspectStack Bracket Handler](/Mods/Modtweaker/Thaumcraft/Brackets/Bracket_Aspect/) object:
 
 ```zenscript
-val Aspekt = <aspect:ignis>;
+val aspect = <aspect:ignis>;
 ```
 
 ## ZenGetter
 
-| Name    | Type                                                      |
-| ------- | --------------------------------------------------------- |
-| beträge | int                                                       |
-| intern  | [KTAspekt](/Mods/Modtweaker/Thaumcraft/Aspects/CTAspect/) |
+| Name     | Type                                                      |
+| -------- | --------------------------------------------------------- |
+| amount   | int                                                       |
+| internal | [CTAspect](/Mods/Modtweaker/Thaumcraft/Aspects/CTAspect/) |
 
-## Betrag einstellen
+## Setting the amount
 
 ```zenscript
-//Sie geben beide einen neuen CTAspectStack
+//They do the same, both return a new CTAspectStack
 val aspect = <aspect:ignis> * 10;
 
 val aspect1 = <aspect:ignis>.setAmount(10);

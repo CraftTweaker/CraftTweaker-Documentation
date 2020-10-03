@@ -1,24 +1,24 @@
-# Запитанные вещи
+# Powered Thingies
 
-Поддержка нефермерских машин под управлением нефермерских машин CraftTweaker.
+Powered Thingies's non-farming machines CraftTweaker support.
 
 ### Mod Info
 
-Курсефор: <https://minecraft.curseforge.com/projects/powered-thingies>
+Curseforge: <https://minecraft.curseforge.com/projects/powered-thingies>
 
 Github: <https://github.com/faceofcat/Tesla-Powered-Thingies>
 
-Веб-сайт: [https://www.modcrafters.net](https://www.modcrafters.net/?mod=thingies)
+Website: [https://www.modcrafters.net](https://www.modcrafters.net/?mod=thingies)
 
-### Методы интеграции ТТ
+### CT integration methods
 
-Все машины, интегрированные с ТТ, поддерживают эти методы:
+All machines integrated with CT support these methods:
 
 ```zenscript
-XYZ.clear() // очистит весь реестр рецептов
-XYZ.logKeys() // выведет все ключи в журнале CT's
-XYZ. emoveRecipe(key: String)) // удалит рецепт с этим ключом из реестра
-XYZ.addRecipe(...) // добавляет новый рецепт
+XYZ.clear() // will clear the entire recipe registry
+XYZ.logKeys() // will output all keys in that registry to CT's log
+XYZ.removeRecipe(key: String)) // will remove the recipe with that key from registry
+XYZ.addRecipe(...) // adds a new recipe
 ```
 
-Чтобы получить класс `Tweaker` для каждой машины, вы должны использовать статические `mods.poweredthingies.Tweaker` класса.
+To retrieve the `Tweaker` class for each machine you have to use the static `mods.poweredthingies.Tweaker` class.

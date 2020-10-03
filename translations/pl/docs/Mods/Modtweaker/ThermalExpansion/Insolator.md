@@ -1,18 +1,18 @@
-# Rozpylacz
+# Insolator
 
-## Pakiet
+## Package
 
-`[PLACEHOLDER] mods.thermalexpansion`
+`mods.thermalexpansion.Insolator`
 
-## Dodanie
+## Addition
 
 ```zenscript
-//mods.thermalexpansion.Insolator.addRecipe(IItemStack primaryOutput, IItemStack primaryInput, IItemStack secondaryInput, int energy @Optional IItemStack secondaryOutput, @Optional int secondaryChance);
+//mods.thermalexpansion.Insolator.addRecipe(IItemStack primaryOutput, IItemStack primaryInput, IItemStack secondaryInput, int energy, @Optional IItemStack secondaryOutput, @Optional int secondaryChance);
 
-mods. hermalexpansion.Insolator.addRecipe(<minecraft:diamond>, <minecraft:stick>, <minecraft:iron_ore>, 1500, <minecraft:stone>, 20);
+mods.thermalexpansion.Insolator.addRecipe(<minecraft:diamond>, <minecraft:stick>, <minecraft:iron_ore>, 1500, <minecraft:stone>, 20);
 ```
 
-## Usuwanie
+## Removal
 
 ```zenscript
 //mods.thermalexpansion.Insolator.removeRecipe(IItemStack primaryInput, IItemStack secondaryInput);

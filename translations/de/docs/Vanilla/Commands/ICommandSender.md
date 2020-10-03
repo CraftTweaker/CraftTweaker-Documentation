@@ -1,11 +1,11 @@
 # ICommandSender
 
-Das ICommandSender-Interface wird als Basis für jede Entität und auch für einige andere Typen in CraftTweaker verwendet.  
-Jede [IEntity](/Vanilla/Entities/IEntity/) und [IPlayer](/Vanilla/Players/IPlayer/) implementiert diese!
+The ICommandSender interface is used the base of each Entity and also some other types in CraftTweaker.  
+Each [IEntity](/Vanilla/Entities/IEntity/) and [IPlayer](/Vanilla/Players/IPlayer/) implements this!
 
 ## Dieses Paket importieren
 
-Möglicherweise ist es erforderlich, dass Sie das Paket importieren, wenn Sie irgendwelche Probleme haben (z.B. [Array](/AdvancedFunctions/Arrays_and_Loops/)), also besser sicher sein als bedauern und fügen Sie den Import.  
+It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
 `import crafttweaker.command.ICommandSender;`
 
 ## ZenGetter
@@ -14,15 +14,15 @@ Möglicherweise ist es erforderlich, dass Sie das Paket importieren, wenn Sie ir
 | ----------- | -------------------------------------- |
 | displayName | string                                 |
 | position    | [IBlockPos](/Vanilla/World/IBlockPos/) |
-| Welt        | [IWorld](/Vanilla/World/IWorld/)       |
+| world       | [IWorld](/Vanilla/World/IWorld/)       |
 | server      | [IServer](/Vanilla/Game/IServer/)      |
 
-## ZenMethoden
+## ZenMethods
 
-#### Nachricht senden
+#### Send Message
 
-Nimmt einen String. Gibt nichtig zurück (nichts).
+Takes a String. Returns void (nothing).
 
 ```zenscript
-sender.sendMessage(String Text);
+sender.sendMessage(String text);
 ```

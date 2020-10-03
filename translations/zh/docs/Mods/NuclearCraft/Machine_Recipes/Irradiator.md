@@ -1,16 +1,16 @@
 # Irradiator
 
-## 导入软件包
-`nuclearcraft.irradator`
+## Importing the Package
+`mods.nuclearcraft.irradiator`
 
-## 添加配方
+## Adding Recipes
 ```zenscript
-mods.nuclearcraft.irradiator.addRecipe([fluidInput1, fluidInput2, fluidOutt1, fluidOutput2,@Optional double timeMultipuer, @Optional double powerMultiplier, @Optional double processRadiation]);
+mods.nuclearcraft.irradiator.addRecipe([fluidInput1, fluidInput2, fluidOutput1, fluidOutput2, @Optional double timeMultiplier, @Optional double powerMultiplier, @Optional double processRadiation]);
 ```
 
-## 删除配方
+## Removing Recipes
 ```zenscript
-mods.nuclearcraft.irradiator.removeRecipewidInput([fluidInput1, fluidInput2]);
-mods.nuclearcraft.irrradiator.removeReciputput[fluidOut1,fluidOut2]);
-mods.nuclearcraft.irradator.removeAllRecipes();
+mods.nuclearcraft.irradiator.removeRecipeWithInput([fluidInput1, fluidInput2]);
+mods.nuclearcraft.irradiator.removeRecipeWithOutput([fluidOutput1, fluidOutput2]);
+mods.nuclearcraft.irradiator.removeAllRecipes();
 ```

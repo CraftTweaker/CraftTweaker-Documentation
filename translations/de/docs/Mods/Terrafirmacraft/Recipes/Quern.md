@@ -1,19 +1,19 @@
 # Quern
 
-## Paket
+## Package
 ```zenscript
-importieren Sie mods.terrafirmacraft.Quern;
+import mods.terrafirmacraft.Quern;
 ```
 
 ## Addition
 
 ```zenscript
-Quern.addRecipe(String RegistryName, IIngredient Eingabe, IItemStack Ausgabe);
+Quern.addRecipe(String registryName, IIngredient input, IItemStack output);
 ```
 
-## Entfernen
+## Removal
 
 ```zenscript
-Quern.removeRecipe(IItemStack Ausgabe);
-Quern.removeRecipe(String RegistryName);
+Quern.removeRecipe(IItemStack output);
+Quern.removeRecipe(String registryName);
 ```

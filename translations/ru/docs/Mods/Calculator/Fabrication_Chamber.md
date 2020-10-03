@@ -1,5 +1,5 @@
-# Чамбер
-## Не полностью упрощено, только принимает один вход.
+# Fabrication Chamber
+## Not fully implimented, only takes one input.
 
 ## Package
 ```zenscript
@@ -8,15 +8,15 @@ import mods.calculator.fabricationChamber;
 
 ## Методы
 - **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input** The input.
-- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) output** Выходы.
+- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) output** The outputs.
 
 
 ## Сложение
 ```zenscript
-fabricationChamber.addRecipe(IIngredient input, Ingredient output);
+fabricationChamber.addRecipe(IIngredient input, IIngredient output);
 ```
 
-## Удаление
+## Removal
 ```zenscript
 fabricationChamber.removeRecipe(IIngredient input);
 ```

@@ -1,12 +1,12 @@
-# Продвижение:
+# Advancements:
 
-Продвижение является одним из первоначальных типов требований, поддерживаемых в Skillable (Original Mod) и теперь усовершенствовано в коде, чтобы быть более надежным для крыльев. Ниже приводится синтаксис с улучшением:
+Advancements is one of the original requirement types supported in Skillable (Original Mod) and has now been improved in the code to be more reliable for gating. The Advancement Syntax is as follows:
 
-    Пример:
+    Example:
     adv|ResourceLocation
     
-    Пример:
+    Working Example:
     adv|minecraft:husbandry/plant_seed
     
 
-Это работает для любых и всех Advancements даже тех, которые добавлены другими модами, кроме minecraft, однако правильное расположение ресурсов должно быть указано.
+This works for any and all Advancements even those added by other mods than minecraft, however the correct Resource Location needs to be specified.

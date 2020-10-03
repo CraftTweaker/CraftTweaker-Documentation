@@ -1,25 +1,25 @@
 # PlayerPickupEntity
 
-Das PlayerPickupEntity Event wird gefeuert, wenn ein Spieler mit einer Entität interagiert.
+The PlayerPickupEntity Event is fired whenever a player interacts with an Entity.
 
 ## Event-Klasse
 
-Du musst das Ereignis als diese Klasse in den Funktionskopf verschieben:  
-`crafttweaker.event. layerPickupEvent`  
-Sie können natürlich auch [die Klasse vor](/AdvancedFunctions/Import/) importieren und dann diesen Namen verwenden.
+You will need to cast the event in the function header as this class:  
+`crafttweaker.event.PlayerPickupEvent`  
+You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
 
 ## ZenGetter
 
 Die folgenden Informationen lassen sich von diesem Event (Ereignis) abrufen:
 
-| ZenGetter     | Rückgabetyp                           |
-| ------------- | ------------------------------------- |
-| `abgebrochen` | boolean                               |
-| `bearbeitet`  | boolean                               |
-| `player`      | [IPlayer](/Vanilla/Players/IPlayer/)  |
-| `objekt`      | [IEntity](/Vanilla/Entities/IEntity/) |
+| ZenGetter   | Rückgabetyp                           |
+| ----------- | ------------------------------------- |
+| `canceled`  | boolean                               |
+| `processed` | boolean                               |
+| `player`    | [IPlayer](/Vanilla/Players/IPlayer/)  |
+| `entity`    | [IEntity](/Vanilla/Entities/IEntity/) |
 
-## ZenMethoden
+## ZenMethods
 
-- `event.cancel()` setzt das Ereignis als abgebrochen.
-- `event.process()` legt das Ereignis als verarbeitet fest.
+- `event.cancel()` sets the event as cancelled.
+- `event.process()` sets the event as processed.

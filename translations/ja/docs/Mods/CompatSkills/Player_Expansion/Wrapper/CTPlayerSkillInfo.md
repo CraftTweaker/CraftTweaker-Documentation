@@ -1,66 +1,66 @@
 # CTPlayerSkillInfo
 
-## メソッド
+## Methods
 
 ### getLevel()
 
-    例:
+    Example:
     event.player.skillData.getSkillInfo(<skill:reskillable:agility>).getLevel();
     
-    これはスキルのレベルを返します。
+    This returns the level of the Skill.
     
 
 ### getSkillPoints()
 
-    例:
+    Example:
     event.player.skillData.getSkillInfo(<skill:reskillable:agility>).getSkillPoints();
     
-    これは、そのスキルに使用できるスキルポイントの数を返します。
+    This return the number of Skill Points available to spend for that Skill.
     
 
 ### getLevelUpCost()
 
-    例:
+    Example:
     event.player.skillData.getSkillInfo(<skill:reskillable:agility>).getLevelUpCost();
     
-    これはスキルのレベルアップコストを返します。
+    This returns the Level-Up Cost for the Skill.
     
 
 ### getRank()
 
-    例:
+    Example:
     event.player.skillData.getSkillInfo(<skill:reskillable:agility>).getRank();
     
-    これはスキルの現在のランク文字列を返します。
+    This returns the current Rank String for the Skill.
     
 
 ### getSkill()
 
-    例:
+    Example:
     event.player.skillData.getSkillInfo(<skill:reskillable:agility>).getSkill();
     
-    これは現在情報を取得しているスキルを返します。
+    This returns the Skill you're currently getting info from.
     
 
 ### levelUp()
 
-    例:
+    Example:
     event.player.skillData.getSkillInfo(<skill:reskillable:agility>).levelUp();
     
-    プレイヤーのスキルをレベルアップします。
+    This levels up the Skill for the player.
     
 
 ### respec()
 
-    例:
+    Example:
     event.player.skillData.getSkillInfo(<skill:reskillable:agility>).respec();
     
-    この特定のスキルのすべての特性を「購入を解除」し、すべてのスキルポイントを返金します。
+    This "un-purchases" all traits in this specific Skill and refunds all Skill Points.
     
 
-### ロック解除(CTUnlockable ctUnlockable, IPlayer player)
+### unlock(CTUnlockable ctUnlockable, IPlayer player)
 
-    例:
+    Example:
     event.player.skillData.getSkillInfo(<skill:reskillable:agility>).unlock(<trait:reskillable:sidestep>, event.player);
     
-    指定されたプレーヤーにスキルの下で利用可能な場合、与えられたトレイトをロック解除します。
+    This unlocks the provided trait if available under the skill to the provided player.

@@ -1,16 +1,16 @@
-# Wytopiony
+# Melter
 
-## Importowanie pakietu
-`mods.nuclearcraft.Wytopiony`
+## Importing the Package
+`mods.nuclearcraft.Melter`
 
-## Dodawanie przepisów
+## Adding Recipes
 ```zenscript
-mods.nuclearcraft.Melter.addRecipe(IIngredient itemInput, ILiquidStack fluidOutput, @Opcjonalny podwójny timeMultiplier, @Opcjonalny mnożnik podwójnej mocy, @Opcjonalny podwójny proces);
+mods.nuclearcraft.Melter.addRecipe(IIngredient itemInput, ILiquidStack fluidOutput, @Optional double timeMultiplier, @Optional double powerMultiplier, @Optional double processRadiation);
 ```
 
-## Usuwanie przepisów
+## Removing Recipes
 ```zenscript
-mods.nuclearcraft.Melter.removeRecipeWithInput(ISkładnik itemInput);
+mods.nuclearcraft.Melter.removeRecipeWithInput(IIngredient itemInput);
 mods.nuclearcraft.Melter.removeRecipeWithOutput(ILiquidStack fluidOutput);
-mods.nuclearcraft.»Technologia«, zgodnie z uwagą ogólną do technologii, służąca do »rozwoju«, »produkcji« lub »użytkowania« sprzętu lub »oprogramowania« wyszczególnionych w pozycji 1B003.
+mods.nuclearcraft.Melter.removeAllRecipes();
 ```

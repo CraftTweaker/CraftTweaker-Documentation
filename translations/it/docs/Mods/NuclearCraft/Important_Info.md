@@ -1,13 +1,13 @@
 # NuclearCraft
 
-**Nota:La doppia serie di parentesi nelle funzioni, `([...])` è necessaria.** Questo è fondamentalmente perché tutti i metodi NuclearCraft CraftTweaker richiedono una serie di oggetti, siano essi ingredienti, stringhe, interi o doppi.
+**Note:The double set of brackets in functions, `([...])` is necessary.** This is basically because all NuclearCraft CraftTweaker methods require an array of objects, be they ingredients, strings, integers or doubles.
 
-Tutte le ricette coinvolgono cinque serie di informazioni - input dell'elemento, input del fluido, output dell'elemento, uscite del fluido e informazioni aggiuntive. I primi quattro sono chiaramente gli ingredienti e i prodotti coinvolti nella ricetta, e le informazioni extra contengono dati come tempo di elaborazione e potenza per le macchine, la vita di base, la variabile di energia e calore dei combo di fusione, ecc.
+All recipes involve five sets of information - item inputs, fluid inputs, item outputs, fluid outputs and extra info. The first four are clearly the ingredients and products involved in the recipe, and the extra info contains data such as processing time and power for machines, the base lifetime, power and heat variable of fusion combos, etc.
 
-Tutte le parti della ricetta sono semplicemente elencate nel metodo - il codice interno NuclearCraft si occuperà di suddividere in quelle cinque categorie e confezionare le informazioni in una ricetta.
+All parts of the recipe are simply listed in the method - the internal NuclearCraft code will deal with splitting it up into those five categories and packaging the information up into a recipe.
 
-## Aggiunte Ricetta
-I metodi di ricetta specificheranno `itemInput` per gli input di oggetto. <br/> I metodi della ricetta specificheranno `itemOutput` per gli output dell'articolo. <br/> I metodi di ricetta specificheranno `fluidInput` per gli input fluidi. <br/> I metodi di ricetta specificheranno `fluidOutput` per le uscite di fluido. <br/> I metodi di ricetta specificheranno `blockInput` per gli input di blocco. <br/> I metodi di ricetta specificheranno `blockOutput` per le uscite di blocco. <br/> **Nota: `blockInput` e `blockOutput` deve essere `IItemStack`/`IIngrediente` versioni di blocchi**
+## Recipe Additions
+Recipe Methods will specify `itemInput` for Item Inputs. <br/> Recipe Methods will specify `itemOutput` for Item Outputs. <br/> Recipe Methods will specify `fluidInput` for Fluid Inputs. <br/> Recipe Methods will specify `fluidOutput` for Fluid Outputs. <br/> Recipe Methods will specify `blockInput` for Block Inputs. <br/> Recipe Methods will specify `blockOutput` for Block Outputs. <br/> **Note: `blockInput` and `blockOutput` must be the `IItemStack`/`IIngredient` versions of blocks**
 
 ### Item Inputs
 `IItemStack`: `<minecraft:gunpowder>` * 4 <br/> `IOreDictEntry`: `<ore:ingotIron>` * 2 <br/> `null`: null
@@ -15,38 +15,38 @@ I metodi di ricetta specificheranno `itemInput` per gli input di oggetto. <br/> 
 ### Item Outputs
 `IItemStack`: `<minecraft:gunpowder>` * 4 <br/> `ChanceItemStack`: `<minecraft:diamond>` * 3, 50, 1 <br/> `IOreDictEntry`: `<ore:ingotIron>` * 2 <br/> `ChanceIOreDictEntry`: `<ore:gemDiamond>` * 5, 75 <br/> `null`: null
 
-### Ingressi Fluidi
+### Fluid Inputs
 `ILiquidStack`: `<liquid:lava>` * 1500 <br/> `null`: null
 
 ### Fluid Outputs
 `ILiquidStack`: `<liquid:lava>` * 1500 <br/> `ChanceLiquidStack` : `<liquid:water>` * 2000, 40, 250, 500 <br/> `null`: null
 
-### Input Blocco
+### Block Inputs
 `IItemStack`: `<minecraft:dirt>` * 4 <br/> `IOreDictEntry`: `<ore:blockIron>` * 2 <br/> `null`: null
 
-### Blocca Uscite
+### Block Outputs
 `IItemStack`: `<minecraft:dirt>` * 4 <br/> `IOreDictEntry`: `<ore:blockIron>` * 2 <br/> `null`: null
 
-## Rimozione Ricetta
-Quando si specifica una ricetta da rimuovere, tutto ciò che è necessario è per specificare tutti gli ingredienti di input o di output. Non sono richiesti dati sulle possibilità degli ingredienti. Ancora una volta, gli elementi devono venire per primi, seguiti dai fluidi.
+## Recipe Removals
+When specifying a recipe to remove, all that is required is for either all input or output ingredients to be specified. Ingredient chance data is not required. Again, the items must come first, followed by the fluids.
 
-Potresti anche voler rimuovere tutto di un certo tipo di ricetta - per fare questo, basta usare il metodo `removeAllRicette()`.
+You may also want to remove all of a certain type of recipe - to do this, simply use the `removeAllRecipes()` method.
 
-## Probabilità Ingredienti
-Gli output di elemento e fluido possono avere ulteriori informazioni attaccate a loro - in particolare, informazioni che possono randomizzare la dimensione dello stack di uscita in qualche modo. Questa informazione aggiuntiva è semplicemente contrassegnata alla fine dell'ingrediente specificato. <br/>
+## Chance Ingredients
+Item and fluid outputs can have additional info attached to them - specifically, info that can randomise the output stack size somewhat. This additional info is simply tagged onto the end of the specified ingredient. <br/>
 
-La dimensione dello stack prodotto su ogni processo viene assegnata in modo casuale da una distribuzione binomiale specificata dalla possibilità informazioni. La percentuale e la dimensione dello stack degli ingredienti giocano i ruoli della probabilità e del numero di prove, rispettivamente. <br/>
+The size of the stack produced on each process is randomly assigned from a binomial distribution specified by the chance info. The percentage and ingredient stack size play the roles of the probability and number of trials, respectively. <br/>
 
-Per ChanceFluidStacks, deve essere specificata anche una 'differenza di pila', che determina la differenza di dimensione tra le pile possibili (per ChanceItemStack e ChanceOreStacks, questo è effettivamente 1). Ad esempio, un ChanceFluidStack per un ingrediente di dimensione 500, con una differenza dello stack di 150 e dimensioni minime dello stack di 50, produrrà 50, 200, 350 o 500 millibuckets del fluido.
+For ChanceFluidStacks, a 'stack difference' must also be specified, which determines the difference in size between the possible stacks (for ChanceItemStacks and ChanceOreStacks, this is effectively 1). For example, a ChanceFluidStack for an ingredient of size 500, with a stack difference of 150 and minimum stack size of 50, will produce 50, 200, 350 or 500 millibuckets of the fluid.
 
 ### ChanceItemStack
-La forma di un `ChanceItemStack` è `IItemStack output, int percentage, @Optional int minimumStackSize`. <br/> La possibilità di produrre l' `output` è `percentuale`. <br/> Se non specificato, `minimumStackSize` è 0.
+The form of a `ChanceItemStack` is `IItemStack output, int percentage, @Optional int minimumStackSize`. <br/> The chance for the `output` to be produced is `percentage`. <br/> If not specified, `minimumStackSize` is 0.
 
 ### ChanceOreDictEntry
-La forma di un `ChanceOreDictEntry` è `IOreDictEntry output, int percentage, @Optional int minimumStackSize`. <br/> La possibilità di produrre l' `output` è `percentuale`. <br/> La dimensione minima dello stack per l'output è `minimumStackSize`. Se non specificato, il valore predefinito è 0.
+The form of a `ChanceOreDictEntry` is `IOreDictEntry output, int percentage, @Optional int minimumStackSize`. <br/> The chance for the `output` to be produced is `percentage`. <br/> The minimum stack size for the output is `minimumStackSize`. If not specified, it defaults to 0.
 
 ### ChanceLiquidStack
-La forma di un `ChanceLiquidStack` è `ILiquidStack, int percentage, int stackDifference, @Optional int minimumStackSize`. <br/> La possibilità di produrre l'output è `percentuale`. <br/> La differenza tra le possibili dimensioni dello stack è `stackDifference`. La dimensione minima dello stack per l'output è `minimumStackSize`. Se non specificato, il valore predefinito è 0.
+The form of a `ChanceLiquidStack` is `ILiquidStack, int percentage, int stackDifference, @Optional int minimumStackSize`. <br/> The chance for the output to be produced is `percentage`. <br/> The difference between possible stack sizes is `stackDifference`. The minimum stack size for the output is `minimumStackSize`. If not specified, it defaults to 0.
 
-- Esempio: ``<liquid:ethanol>` * 500, 100, 150, 50
-    - La macchina produrrà 50, 200, 350 o 500 millibuckets di etanolo
+- Example: ``<liquid:ethanol>` * 500, 100, 150, 50
+    - The Machine will produce 50, 200, 350 or 500 millibuckets of ethanol

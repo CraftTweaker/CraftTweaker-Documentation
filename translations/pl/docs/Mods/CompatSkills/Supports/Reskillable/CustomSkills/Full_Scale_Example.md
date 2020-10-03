@@ -1,8 +1,8 @@
-# Przykład pełnej skali
+# Full Scale Example
 
-## Kredyty
+## Credit
 
-Kredyt wychodzi z pupnewfster wiodącego programisty na poniższy przykład!
+Credit goes out to Lead Developer pupnewfster for the below example!
 
     #modloaded compatskills reskillable
     #priority 1000

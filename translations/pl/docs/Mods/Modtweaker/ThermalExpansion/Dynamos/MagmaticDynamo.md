@@ -1,23 +1,23 @@
-# Dynamo magnetyczne
+# Magmatic Dynamo
 
-## Importuj pakiet
+## Import the package
 
-Aby skrócić połączenia metodą, możesz [zaimportować](/AdvancedFunctions/Import/) pakiet taki jak tak:
+To shorten method calls you can [import](/AdvancedFunctions/Import/) the package like so:
 
 ```zenscript
-importuj mods.thermalexpansion.MagmaticDynamo;
+import mods.thermalexpansion.MagmaticDynamo;
 ```
 
-## Dodaj paliwo
+## Add Fuel
 
 ```zenscript
 //mods.thermalexpansion.MagmaticDynamo.addFuel(ILiquidStack stack, int energy);
 mods.thermalexpansion.MagmaticDynamo.addFuel(<liquid:water>, 13);
 ```
 
-## Usuń paliwo
+## Remove Fuel
 
 ```zenscript
-//mods.thermalexpansion.MagmaticDynamo.removeFuel(ILiquidStack);
+//mods.thermalexpansion.MagmaticDynamo.removeFuel(ILiquidStack stack);
 mods.thermalexpansion.MagmaticDynamo.removeFuel(<liquid:water>);
 ```

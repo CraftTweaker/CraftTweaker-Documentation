@@ -1,6 +1,6 @@
 # AND Operator
 
-Un cancello **AND** combina due ingressi e restituisce `VERO` solo se entrambi gli ingressi sono anche `VERO`.
+An **AND** gate combines two inputs and returns `TRUE` only if both inputs are also `TRUE`.
 
 | Input 1 | Input 2 | Output |
 | ------- | ------- | ------:|
@@ -9,7 +9,7 @@ Un cancello **AND** combina due ingressi e restituisce `VERO` solo se entrambi g
 | 1       | 0       |      0 |
 | 1       | 1       |      1 |
 
-Il requisito AND a differenza degli altri requisiti logici è principalmente utile per esigenze logiche annidate, per bloccare un elemento o un altro oggetto con più requisiti richiede che tutti i requisiti indicati siano soddisfatti. Questo è lo stesso della funzione AND, quindi dovrebbe essere utilizzato quando possibile, in quanto renderà il suggerimento essere formattato in modo più facile da leggere.
+The AND requirement unlike the other logic requirements is mainly useful for nested logic requirements, as locking an item or other object with multiple requirements requires all of the given requirements to be met. This is the same as the AND functionality, so should be used when possible, as it will make the tooltip be formatted in an easier to read manner.
 
-    Esempio vuoto:
-    AND<unk> []~[]
+    Empty Example:
+    AND|[]~[]

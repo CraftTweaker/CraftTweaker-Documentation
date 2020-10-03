@@ -1,14 +1,14 @@
-# Жидкий словарь
+# Fluid Dictionary
 
-### Импорт
+### Importing
 
 ```zenscript
 import mods.industrialforegoing.FluidDictionary;
 ```
 
-### Добавление
+### Adding
 
-Ему нужно ввести имя жидкости, имя жидкости в качестве вывода и коэффициент конверсии. Скорость — сколько мб от начала будет преобразовано в выходной результат. (Расход InputMB * = Вывод MB)
+It needs the Fluid Name as an input, the Fluid Name as an output and a conversion rate. The rate is how many mb from the origin will be transformed into the output. (InputMB * rate = OutputMB)
 
 ```zenscript
 FluidDictionary.add(String input, String output, double rate);
@@ -16,9 +16,9 @@ FluidDictionary.add(String input, String output, double rate);
 FluidDictionary.add("essence", "xpjuice", 1);
 ```
 
-### Удаление
+### Removing
 
-Ему требуется имя жидкости в качестве входного элемента, имя жидкости в качестве выхода.
+It needs the Fluid Name as an input, the Fluid Name as an output.
 
 ```zenscript
 FluidDictionary.remove(String input, String output);

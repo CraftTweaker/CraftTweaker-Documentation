@@ -1,22 +1,22 @@
-# 让它们获得动力:: 液体复合生产者
+# Powered Thingies :: Fluid Compound Producer
 
 ### 导入
 
 ```zenscript
-导入mods.poweredthingies.Tweeper.fluidCompoundTinfine为fct;
+import mods.poweredthingies.Tweaker.fluidCompoundTweaker as fct;
 ```
 
-### 列出密钥，按键删除配方
+### Listing Keys, Removing Recipes by Key, Clearing
 
 ```zenscript
 fct().logKeys()
-fct().removeRecipe('液体:fluid_tf-molten_tesla') // 检查 <logKeys> 输出有效密钥
+fct().removeRecipe('liquid:fluid_tf-molten_tesla') // check <logKeys> output for valid keys
 fct().clear()
 ```
 
-### 添加配方
+### Adding Recipe
 
-##### 签名
+##### Signature
 
 ```zenscript
 addRecipe(output: ILiquidStack, inputA: ILiquidStack, inputB: ILiquidStack)
@@ -25,9 +25,9 @@ addRecipe(output: ILiquidStack, inputA: ILiquidStack, inputB: ILiquidStack)
 ##### 例子
 
 ```zenscript
-fct().addRecipe(<liquid:tf-sewage> * 150, <liquid:water> * 300, <liquid:lava> * 100)；
+fct().addRecipe(<liquid:tf-sewage> * 150, <liquid:water> * 300, <liquid:lava> * 100);
 ```
 
-### 注
+### Notes
 
-所有这些操作都会被缓存并运行在这台机器的默认注册表完成注册后所有配方(包括来自自定义jsons的配方)。
+All of these actions will get cached and ran after the default registry for this machine has finished registering all recipes (including the ones from the custom jsons).

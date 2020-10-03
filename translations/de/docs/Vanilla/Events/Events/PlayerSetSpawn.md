@@ -1,17 +1,17 @@
-# Spieler-Set-Spawn
+# PlayerSetSpawn
 
-Das PlayerSetSpawn Event wird abgefeuert, wenn sich der Spawn-Standort eines Spielers ändert.  
-Es kann abgebrochen werden, um weitere Verarbeitung zu verhindern.
+The PlayerSetSpawn Event is fired whenever a player's spawn location changes.  
+It can be canceled to prevent further processing.
 
 ## Event-Klasse
 
-Du musst das Ereignis als diese Klasse in den Funktionskopf verschieben:  
-`crafttweaker.event. layerSetSpawnEvent`  
-Sie können natürlich auch [die Klasse vor](/AdvancedFunctions/Import/) importieren und dann diesen Namen verwenden.
+You will need to cast the event in the function header as this class:  
+`crafttweaker.event.PlayerSetSpawnEvent`  
+You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
 
 ## Erweiterte Event-Schnittellen
 
-PlayerSetSpawn Events implementieren die folgenden Schnittstellen und können auch alle ihre Methoden/Getters/Setter aufrufen:
+PlayerSetSpawn Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
 
 - [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
@@ -24,4 +24,4 @@ Die folgenden Informationen lassen sich von diesem Event (Ereignis) abrufen:
 | ---------- | -------------------------------------- |
 | `player`   | [IPlayer](/Vanilla/Players/IPlayer/)   |
 | `isForced` | bool                                   |
-| `neuSpawn` | [IBlockPos](/Vanilla/World/IBlockPos/) |
+| `newSpawn` | [IBlockPos](/Vanilla/World/IBlockPos/) |

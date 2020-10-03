@@ -1,12 +1,12 @@
-# Приоритет Препроцессора
+# PriorityPreprocessor
 
-Препроцессор Приоритета позволяет задать скриптам приоритет загрузки.
+The Priority Preprocessor allows you to give your scripts a loading priority.
 
 ## Вызов
 
-Вы вызываете препроцессор Приоритета, добавляя `#priority number` к вашему скрипту с `номером` как номер приоритета, который вы хотите установить.
+You call the Priority Preprocessor by adding `#priority number` to your script with `number` being the priority number you want to set.
 
 ## Что он делает
 
-Чем выше приоритет скрипта, тем раньше он выполняется.  
-Скрипты с тем же приоритетом будут сортированы по алфавиту с его пути.
+The higher a script's priority the earlier it is getting executed.  
+Scripts with the same priority will be sorted alphabetically using their pathname.

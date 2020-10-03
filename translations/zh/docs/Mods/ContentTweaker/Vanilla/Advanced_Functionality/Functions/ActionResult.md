@@ -1,20 +1,20 @@
-# 操作结果
+# ActionResult
 
-ActionResults is a number of a [IItemUse 功能的](/Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemUse/) 可能结果。
+An ActionResult is an enumeration of a [IItemUse Function's](/Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemUse/) possible results.
 
 ## 导入相关包
 
-如果您遇到任何问题，可能需要导入软件包，所以比抱歉更安全并添加导入。  
-`导入 mods.contenttweaker.ActionResult;`
+It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
+`import mods.contenttweaker.ActionResult;`
 
-## 枚举数
+## Enumerations
 
-面对这三种价值：
+Facing can be of those three values:
 
-- 失败
-- 通过
-- 成功
+- fail
+- pass
+- success
 
-## 使用
+## Uses
 
-手的主要用途是 [IItemUse 函数](/Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemUse/)。
+A Hand's main use is in a [IItemUse Function](/Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemUse/).

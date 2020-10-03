@@ -1,22 +1,22 @@
-# 建設計画
+# Blueprint
 
-設計図作成パッケージは、Immersive Engineering Blueprint作成のレシピを追加/削除するために使用できます。
+The Blueprint crafting package can be used to add/remove recipes to/from the Immersive Engineering Blueprint crafting.
 
 ## PSA
 
-[カテゴリ](/Mods/Immersive_Engineering/Variables/Categories/) 文字列は特別です。 確立されたカテゴリを持っていない入力された文字列に対して、新しいカテゴリと新しいブループリントが作成されます。 つまり、「食品レシピ」を提供する「バナナパンケーキ」というブループリントカテゴリーを追加できます。 最初のエントリが見つかると、生成されたカテゴリの下に、そのカテゴリ文字列に関するすべてのレシピが生成されます。
+The [Category](/Mods/Immersive_Engineering/Variables/Categories/) String is quite special. For any string entered that doesn't already have an established Category, it'll create a new Category and thus a new Blueprint. This means that you could add a Blueprint Category called "Banana Pancakes" that provides "Food Recipes". After the first entry found it'll generate all additional recipes for that Category String under the generated Category.
 
-## パッケージの呼び出し
+## Calling The Package
 
-`mods.immersiveengineering.Blueprint` を使って、ブループリントパッケージを呼び出すことができます。
+You can call the Blueprint package using `mods.immersiveengineering.Blueprint`.
 
-## レシピを追加
+## Add Recipe
 
-| 必須 | タイプ    | データタイプ                                                           |
-| -- | ------ | ---------------------------------------------------------------- |
-| 必須 | カテゴリ   | String [カテゴリ](/Mods/Immersive_Engineering/Variables/Categories/) |
-| 必須 | 出力     | [IItemstack](/Vanilla/Items/IItemStack/)                         |
-| 必須 | Inputs | [IIngredient](/Vanilla/Variable_Types/IIngredient/)              |
+| Required | Type     | Data Type                                                            |
+| -------- | -------- | -------------------------------------------------------------------- |
+| Required | Category | String [Category](/Mods/Immersive_Engineering/Variables/Categories/) |
+| Required | Output   | [IItemstack](/Vanilla/Items/IItemStack/)                             |
+| Required | Inputs   | [IIngredient](/Vanilla/Variable_Types/IIngredient/)                  |
 
 ### 例
 
@@ -31,16 +31,16 @@ mods.immersiveengineering.Blueprint.addRecipe("components", <minecraft:diamond>,
 mods.immersiveengineering.Blueprint.addRecipe("Banana Pancakes", <minecraft:diamond>, [<ore:logWood>, <minecraft:dirt>]);
 ```
 
-## レシピを削除
+## Remove Recipe
 
-| タイプ | データタイプ                                   |
-| --- | ---------------------------------------- |
-| 出力  | [IItemstack](/Vanilla/Items/IItemStack/) |
+| Type   | Data Type                                |
+| ------ | ---------------------------------------- |
+| Output | [IItemstack](/Vanilla/Items/IItemStack/) |
 
-### 例
+### Example:
 
 ```zenscript
-//例:
+//Example:
 mods.immersiveengineering.Blueprint.removeRecipe(IItemStack output);
 mods.immersiveengineering.Blueprint.removeRecipe(<minecraft:diamond>);
 ```

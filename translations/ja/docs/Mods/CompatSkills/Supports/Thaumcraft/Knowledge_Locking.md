@@ -1,16 +1,16 @@
-# ナレッジロック
+# Knowledge Locking
 
-## 機能:
+## Feature:
 
-この機能を使用すると、Thaumcraftで観察または理論的知識獲得の取得をロックできます。
+This feature allows you to lock the acquisition of Observational or Theoretical Knowledge acquisition in Thaumcraft.
 
-## ナレッジタイプ:
+## Knowledge Types:
 
-現在の知識タイプは観測用O、理論用Tです。
+Current knowledge types are O for Observation and T for Theory.
 
-## 構文
+## Syntax:
 
     mods.compatskills.Thaumcraft.addKnowledgeLock(String categoryName, String knowledgeType, String... requirements);
     
     mods.compatskills.Thaumcraft.addKnowledgeLock("UNLOCKAUROMANCY", "O", "dim|1");
-    mods.compatskills.Thaumcraft.addKnowledgeLock("UNLOCKAUROMANCY", "dim|1");
+    mods.compatskills.Thaumcraft.addKnowledgeLock("UNLOCKAUROMANCY", "T", "dim|1");

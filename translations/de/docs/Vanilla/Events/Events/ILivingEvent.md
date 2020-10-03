@@ -1,18 +1,18 @@
 # ILivingEvent
 
-Diese Schnittstelle wird um alle Events erweitert, die eine zentrale Wohneinheit haben können.
+This interface is extended by all Events that can have a central living entity.
 
 ## Diese Klasse importieren
 
-Es könnte erforderlich sein, [die Klasse](/AdvancedFunctions/Import/) zu importieren, um Fehler zu vermeiden.  
-`Crafttweaker.event.ILivingEvent;`
+It might be required to [import](/AdvancedFunctions/Import/) the class to avoid errors.  
+`import crafttweaker.event.ILivingEvent;`
 
-## IEntityEvent wird erweitert
+## Extending IEntityEvent
 
-Diese Schnittstelle erweitert [IEntityEvent](/Vanilla/Events/Events/IEntityEvent/), was bedeutet, dass alle Funktionen, die IEntityEvent bietet, auch in ILivingEvent vorhanden sind
+This interface extends [IEntityEvent](/Vanilla/Events/Events/IEntityEvent/), which means that all functionality that IEntityEvent offers is also present in ILivingEvent
 
 ## ZenGetter
 
-| name             | typ                                                       |
+| name             | type                                                      |
 | ---------------- | --------------------------------------------------------- |
 | entityLivingBase | [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) |

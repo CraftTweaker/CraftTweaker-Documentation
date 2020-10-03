@@ -1,14 +1,14 @@
-# Покинуть инфоблока
+# Decay Infuser
 
-## Импортирование пакета
+## Importing the Package
 `mods.nuclearcraft.infuser`
 
-## Добавление рецептов
+## Adding Recipes
 ```zenscript
 mods.nuclearcraft.infuser.addRecipe([itemInput, fluidInput, itemOutput, @Optional double timeMultiplier, @Optional double powerMultiplier, @Optional double processRadiation]);
 ```
 
-## Удаление рецептов
+## Removing Recipes
 ```zenscript
 mods.nuclearcraft.infuser.removeRecipeWithInput([itemInput, fluidInput]);
 mods.nuclearcraft.infuser.removeRecipeWithOutput([itemOutput]);

@@ -1,14 +1,14 @@
-# Explosion Detonieren
+# ExplosionDetonate
 
-Das ExplosionDetonate Event wird kurz vor dem Start einer Explosion abgefeuert. Es kann nicht aufgehoben werden.
+The ExplosionDetonate Event is fired shortly before an explosion starts. It cannot be canceled.
 
 ## Event-Klasse
-Du musst das Ereignis als diese Klasse in den Funktionskopf verschieben:  
-`crafttweaker.event. xplosionDetonateEvent`  
-Sie können natürlich auch [die Klasse vor](/AdvancedFunctions/Import/) importieren und dann diesen Namen verwenden.
+You will need to cast the event in the function header as this class:  
+`crafttweaker.event.ExplosionDetonateEvent`  
+You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
 
 ## Erweiterte Event-Schnittellen
-ExplosionDetonate Events implementieren die folgenden Schnittstellen und können auch alle ihre Methoden/Getters/Setter aufrufen:
+ExplosionDetonate Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
 
 - [IExplosionEvent](/Vanilla/Events/Events/IExplosionEvent/)
 
@@ -16,7 +16,7 @@ ExplosionDetonate Events implementieren die folgenden Schnittstellen und können
 ## ZenGetter
 Die folgenden Informationen lassen sich von diesem Event (Ereignis) abrufen:
 
-| ZenGetter               | ZenSetter | Type                                           |
-| ----------------------- | --------- | ---------------------------------------------- |
-| `betroffenen Entitäten` |           | [IEntität](/Vanilla/Entities/IEntity/)[]       |
-| `affectedPositions`     |           | [IBlockPos](/Vanilla/Blocks/IBlockPosition/)[] |
+| ZenGetter           | ZenSetter | Type                                           |
+| ------------------- | --------- | ---------------------------------------------- |
+| `affectedEntities`  |           | [IEntity](/Vanilla/Entities/IEntity/)[]        |
+| `affectedPositions` |           | [IBlockPos](/Vanilla/Blocks/IBlockPosition/)[] |

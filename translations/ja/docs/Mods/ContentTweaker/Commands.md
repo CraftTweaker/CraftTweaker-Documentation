@@ -3,52 +3,52 @@
 ContentTweaker extends the command palette provided by CraftTweaker.  
 To access these commands you do the same as you do for CraftTweaker commands, you use the `/crafttweaker` prefix
 
-# ContentTweaker コマンドのリスト
+# List of ContentTweaker Commands
 
 ## blockmaterial
 
-使用方法:
+Usage:
 
 `/crafttweaker blockmaterial`
 
 `/ct blockmaterial`
 
-説明:
+Description:
 
-ゲーム内のすべてのブロック素材のリストをcrafttweaker.logファイルに出力します。
+Outputs a list of all the block materials in the game to the crafttweaker.log file.
 
-## creatietab
+## creativetab
 
-使用方法:
+Usage:
 
 `/crafttweaker creativetab`
 
-`/ct creatietab`
+`/ct creativetab`
 
-説明:
+Description:
 
-ゲーム内のすべてのクリエイティブタブのリストをcrafttweaker.logファイルに出力します。
+Outputs a list of all the creative tabs in the game to the crafttweaker.log file.
 
 ## soundevent
 
-使用方法:
+Usage:
 
 `/crafttweaker soundevent`
 
 `/ct soundevent`
 
-説明:
+Description:
 
-ゲーム内のすべてのサウンドイベントのリストをcrafttweaker.logファイルに出力します。
+Outputs a list of all the sound events in the game to the crafttweaker.log file.
 
-## サウンドタイプ
+## soundtype
 
-使用方法:
+Usage:
 
-`/crafttweaker sound type`
+`/crafttweaker soundtype`
 
 `/ct soundtype`
 
-説明:
+Description:
 
-ゲーム内のすべてのサウンドタイプのリストをcrafttweaker.logファイルに出力します。
+Outputs a list of all the sound types in the game to the crafttweaker.log file.

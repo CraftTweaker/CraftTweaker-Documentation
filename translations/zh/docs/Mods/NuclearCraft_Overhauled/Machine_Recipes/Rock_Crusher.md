@@ -1,16 +1,16 @@
-# 摇滚龙胸甲
+# Rock Crusher
 
-## 导入软件包
-`nuclearcraft。罗克十字勋章`
+## Importing the Package
+`mods.nuclearcraft.RockCrusher`
 
-## 添加配方
+## Adding Recipes
 ```zenscript
-nuclearcraft。RockCrusher.addRecipe(IIngredient itemInput, IIngredient itemOutput1,IIngredient itemOutput2,IIngredient itemOutput3,@Optional double timeMultiplier, @Optional double powerMultiplier, @Optional double processRadiation);
+mods.nuclearcraft.RockCrusher.addRecipe(IIngredient itemInput, IIngredient itemOutput1, IIngredient itemOutput2, IIngredient itemOutput3, @Optional double timeMultiplier, @Optional double powerMultiplier, @Optional double processRadiation);
 ```
 
-## 删除配方
+## Removing Recipes
 ```zenscript
-nuclearcraft。RockCrusher.removeRecipeWidInput(IIngredient itemInput);
-mods.nuclearcraft.RockCrusher.removeRecipeWOutput(IIngredient itemOutt1,IIngredient itemOutput2,IIngredient itemOutput3);
-mods.nuclearcraft.a. RockCrusher.removeAllRecipes();
+mods.nuclearcraft.RockCrusher.removeRecipeWithInput(IIngredient itemInput);
+mods.nuclearcraft.RockCrusher.removeRecipeWithOutput(IIngredient itemOutput1, IIngredient itemOutput2, IIngredient itemOutput3);
+mods.nuclearcraft.RockCrusher.removeAllRecipes();
 ```

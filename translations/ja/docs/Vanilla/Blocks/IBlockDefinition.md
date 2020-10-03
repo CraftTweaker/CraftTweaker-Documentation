@@ -1,61 +1,61 @@
 # IBlockDefinition
 
-IBlockDefinition オブジェクトは、ブロックに関する追加情報を提供します。
+The IBlockDefinition objects provide additional information on blocks.
 
 ## パッケージのインポート
 
 It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
 `import crafttweaker.block.IBlockDefinition;`
 
-## IBlockDefinition オブジェクトの呼び出し
+## Calling an IBlockDefinition object
 
-* `定義` の ZenGetter を [IBlock](/Vanilla/Blocks/IBlock/) オブジェクトに使用する。
+* Using the `definition` ZenGetter on an [IBlock](/Vanilla/Blocks/IBlock/) object.
 
-## IBlockDefinition Listの呼び出し
+## Calling an IBlockDefinition List
 
-* `game.blocks` を使用して、ゲーム内のすべてのブロック定義のリストを取得します。
+* Using `game.blocks` to get a list of all block definition in the game.
 
 ## ZenGetters/ZenSetters
 
-| ZenGetter       | ZenSetter           | 何をするか                           | タイプ                                                 |
-| --------------- | ------------------- | ------------------------------- | --------------------------------------------------- |
-|                 | canSpawnInBlock     | このブロックにエンティティがスポーンできるかどうかを返します。 | bool                                                |
-| creativeTab     | creativeTab         |                                 | [ICreativeTab](/Vanilla/CreativeTabs/ICreativeTab/) |
-| defaultState    |                     |                                 | [IBlockState](/Vanilla/Blocks/IBlockState/)         |
-|                 | defaultSlipperiness |                                 | float型                                              |
-| id              |                     | ブロック ID を返します                   | 文字列                                                 |
-| displayName     |                     | ブロックの DisplayName を返します。        | 文字列                                                 |
-|                 | 硬さ                  |                                 | int                                                 |
-| 収穫レベル           |                     | ブロックの収穫レベルを返します。                | int                                                 |
-| harvestTool     |                     | ブロックの収穫ツールを返します                 | 文字列                                                 |
-|                 | lightOpacity        |                                 | int                                                 |
-|                 | lightLevel          |                                 | int                                                 |
-|                 | 抵抗                  |                                 | int                                                 |
-| unlocalizedName |                     | ブロックのローカライズされていない名前を返します        | 文字列                                                 |
-| tickRandomly    | tickRandomly        |                                 | bool                                                |
+| ZenGetter       | ZenSetter           | What does it do                              | Type                                                |
+| --------------- | ------------------- | -------------------------------------------- | --------------------------------------------------- |
+|                 | canSpawnInBlock     | Returns if an entity can spawn in this block | bool                                                |
+| creativeTab     | creativeTab         |                                              | [ICreativeTab](/Vanilla/CreativeTabs/ICreativeTab/) |
+| defaultState    |                     |                                              | [IBlockState](/Vanilla/Blocks/IBlockState/)         |
+|                 | defaultSlipperiness |                                              | float                                               |
+| id              |                     | Returns the block ID                         | string                                              |
+| displayName     |                     | Returns the block's DisplayName              | string                                              |
+|                 | hardness            |                                              | int                                                 |
+| harvestLevel    |                     | Returns the block's harvest level            | int                                                 |
+| harvestTool     |                     | Returns the block's harvest tool             | string                                              |
+|                 | lightOpacity        |                                              | int                                                 |
+|                 | lightLevel          |                                              | int                                                 |
+|                 | resistance          |                                              | int                                                 |
+| unlocalizedName |                     | Returns the block's unlocalized Name         | string                                              |
+| tickRandomly    | tickRandomly        |                                              | bool                                                |
 
 ## ZenMethods
 
-### ブロックを壊れないように設定
+### Set Block unbreakable
 
-  
-何も返さない。  
-`hardness = -1;` と同じ。
+Uses no paramaeters.  
+Returns nothing.  
+Does the same as `hardness = -1;`
 
 ```zenscript
 defObj.setUnbreakable();
 ```
 
-### 特定のワールドでティックレートを取得する
+### Get tickrate in a specific world
 
-[IWorld](/Vanilla/World/IWorld/) オブジェクトを使用します。  
-intを返します。
+Uses an [IWorld](/Vanilla/World/IWorld/) object.  
+Returns an int.
 
 ```zenscript
 defObj.getTickRate(IWorld world);
 ```
 
-### ブロックを別のブロックに配置できるかどうかを確認します
+### Check if the block can be placed on another block
 
 Uses an [IWorld](/Vanilla/World/IWorld/) object, an [IBlockPos](/Vanilla/World/IBlockPos/) object and, depending on the method used, also an [IFacing](/Vanilla/World/IFacing/) object.  
 Returns a bool.
@@ -65,19 +65,19 @@ defObj.canPlaceBlockOnSide(IWorld world, IBlockPos pos, IFacing facing);
 defObj.canPlaceBlockAt(IWorld world, IBlockPos pos);
 ```
 
-### ブロックの滑りやすさを得る
+### Get the block's slipperiness
 
 Uses an [IBlockState](/Vanilla/Blocks/IBlockState/), an [IBlockAccess](/Vanilla/World/IBlockAccess/) object, an [IBlockPos](/Vanilla/World/IBlockPos/) and an optional [IEntity](/Vanilla/Entities/IEntity/) object.  
 Returns a float.
 
 ```zenscript
-defObj.getSlipperiness(IBlockState 状態, IBlockAccess アクセス, IBlockPos pos, @Optional IEntityエンティティ);
+defObj.getSlipperiness(IBlockState state, IBlockAccess access, IBlockPos pos, @Optional IEntity entity);
 ```
 
-### ブロックの収穫量のレベルを設定する
+### Set the block's harvest level
 
-文字列と int を使用します。  
-void (nothing) を返します。
+Uses a string and an int.  
+Returns void (nothing).
 
 ```zenscript
 defObj.setHarvestLevel(string toolclass, int level);

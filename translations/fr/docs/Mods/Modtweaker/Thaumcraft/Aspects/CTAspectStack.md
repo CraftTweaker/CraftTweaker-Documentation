@@ -1,32 +1,32 @@
 # CTAspectStack
 
-Une CTAspectStack est un [CTAspect](/Mods/Modtweaker/Thaumcraft/Aspects/CTAspect/) combiné à un montant qui montre le nombre de points d'aspect dont la pile sera composée.
+A CTAspectStack is a [CTAspect](/Mods/Modtweaker/Thaumcraft/Aspects/CTAspect/) combined with an amount that shows how many aspect points the stack will be made of.
 
-## Importation du paquet
+## Importing the package
 
-Il pourrait vous être nécessaire d'importer le paquet si vous rencontrez des problèmes, donc mieux vaut être sûr que désolé et ajouter l'importation.  
-`importer thaumcraft.aspect.CTAspectStack ;`
+It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
+`import thaumcraft.aspect.CTAspectStack;`
 
-## Récupération d'un tel objet
+## Retrieving such an object
 
-Vous pouvez récupérer un objet CTAspectStack depuis l'objet [CTAspectStack Bracket Handler](/Mods/Modtweaker/Thaumcraft/Brackets/Bracket_Aspect/):
+You can retrieve a CTAspectStack object from the [CTAspectStack Bracket Handler](/Mods/Modtweaker/Thaumcraft/Brackets/Bracket_Aspect/) object:
 
 ```zenscript
-aspect val = <aspect:ignis>;
+val aspect = <aspect:ignis>;
 ```
 
 ## ZenGetters
 
-| Nom     | Type de texte                                                       |
-| ------- | ------------------------------------------------------------------- |
-| montant | Indice                                                              |
-| interne | [format@@0 CTAspect](/Mods/Modtweaker/Thaumcraft/Aspects/CTAspect/) |
+| Name     | Type                                                      |
+| -------- | --------------------------------------------------------- |
+| amount   | int                                                       |
+| internal | [CTAspect](/Mods/Modtweaker/Thaumcraft/Aspects/CTAspect/) |
 
-## Définition du montant
+## Setting the amount
 
 ```zenscript
-//Ils font la même chose, retournent tous deux un nouvel aspect
-CTAspectStack = <aspect:ignis> * 10 ;
+//They do the same, both return a new CTAspectStack
+val aspect = <aspect:ignis> * 10;
 
-aspect val 1 = <aspect:ignis>.setAmount(10);
+val aspect1 = <aspect:ignis>.setAmount(10);
 ```

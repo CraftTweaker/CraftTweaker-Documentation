@@ -1,16 +1,16 @@
-# 工業用ブラスト炉
+# Industrial Blast Furnace
 
-## パッケージのインポート
+## Importing the Package
 `mods.techreborn.blastFurnace`
 
-## レシピを追加中
+## Adding Recipes
 ```zenscript
-mods.techreborn.blastFurnace.addRecipe(IItemStack output1, IItemStack output2, IIngredient input1, IInput2, int ticktime, int euTick, int neededHeat);
+mods.techreborn.blastFurnace.addRecipe(IItemStack output1, IItemStack output2, IIngredient input1, IIngredient input2, int ticktime, int euTick, int neededHeat);
 ```
 
-## レシピを削除
+## Removing Recipes
 ```zenscript
-mods.techreborn.blastFurnace.removeInputRecipe(IIngredient 食材);
+mods.techreborn.blastFurnace.removeInputRecipe(IIngredient ingredient);
 mods.techreborn.blastFurnace.removeRecipe(IItemStack output);
 mods.techreborn.blastFurnace.removeAll();
 ```

@@ -1,6 +1,6 @@
 # Chisel
 
-## パッケージ
+## Package
 ```zenscript
 import mods.terrafirmacraft.Chisel;Chisel;
 ```

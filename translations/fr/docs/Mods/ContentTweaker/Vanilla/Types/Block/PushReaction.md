@@ -1,23 +1,23 @@
 # PushReaction
 
-Une réaction de poussée est ce qui se passe quand un piston tente de pousser un bloc.
+A push reaction is what happens when a piston tries to push a block.
 
-# Importation du paquet
+# Importing the package
 
-Il pourrait vous être nécessaire d'importer le paquet si vous rencontrez des problèmes, donc mieux vaut être sûr que désolé et ajouter l'importation.  
-`importer mods.contenttweaker.PushReaction ;`
+It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
+`import mods.contenttweaker.PushReaction;`
 
-## Comparaison de deux réactions
+## Comparing two reactions
 
-Vous pouvez voir si deux réactions sont égales en utilisant l'opérateur `==`.
+You can see if two reactions are equal by using the `==` operator.
 
 ```zenscript
 if(a == b){}
 ```
 
-## Méthodes statiques
+## Static methods
 
-Vous pouvez utiliser ces méthodes pour obtenir des objets PushReaction :
+You can use these methods to get PushReaction Objects:
 
 ```zenscript
 mods.contenttweaker.PushReaction.normal();

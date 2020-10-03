@@ -1,17 +1,17 @@
 # Quern
 
-## Pacchetto
+## Package
 ```zenscript
 import mods.terrafirmacraft.Quern;
 ```
 
-## Addizione
+## Addition
 
 ```zenscript
 Quern.addRecipe(String registryName, IIngredient input, IItemStack output);
 ```
 
-## Rimozione
+## Removal
 
 ```zenscript
 Quern.removeRecipe(IItemStack output);

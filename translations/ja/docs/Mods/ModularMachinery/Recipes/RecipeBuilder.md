@@ -1,20 +1,20 @@
 # RecipeBuilder
 
-RecipeBuilder クラスには、1 つの目的しかありません: 新しい [RecipePrimer](/Mods/ModularMachinery/Recipes/RecipePrimer/) オブジェクトの作成。
+The RecipeBuilder class only has one objective: Creating a new [RecipePrimer](/Mods/ModularMachinery/Recipes/RecipePrimer/) Object for you.
 
-## 発信中
+## Calling
 
-`mods.modarmachinery.RecipeBuilder` を使用してBrewパッケージを呼び出すことができます。
+You can call the Brew package using `mods.modularmachinery.RecipeBuilder`
 
-## RecipePrimer を作成します。
+## Creating a RecipePrimer.
 
-これらはクラスで見つけられる唯一の関数であり、両方とも新しい [RecipePrimer](/Mods/ModularMachinery/Recipes/RecipePrimer/) Object を返します。
+These are the only functions to be found in the class, they both return a new [RecipePrimer](/Mods/ModularMachinery/Recipes/RecipePrimer/) Object.
 
 ```zenscript
-//mods.moduarmachiner.RecipeBuilder.newBuilder(String recipeRegistryName, String associatedMachineRegistryName, int processingTickTime);
+//mods.modularmachinery.RecipeBuilder.newBuilder(String recipeRegistryName, String associatedMachineRegistryName, int processingTickTime);
 
 
-//mods.moduramachinery.RecipeBuilder.newBuilder(String recipeRegistryName, String associatedMachineRegistryint Name, processingTicke, int sortingPriority);
+//mods.modularmachinery.RecipeBuilder.newBuilder(String recipeRegistryName, String associatedMachineRegistryName, int processingTickTime, int sortingPriority);
 
 
 ```

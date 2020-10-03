@@ -1,26 +1,26 @@
 # Evaporator
 
-# Pakiet
+# Package
 ```zenscript
 mods.alchemistry.Evaporator
 ```
 
-## Metody
-**[IItemStack](/Vanilla/Items/IItemStack/) wyjście** - Wyjście receptury.
+## Methods
+**[IItemStack](/Vanilla/Items/IItemStack/) output** - The output of the recipe.
 
-**[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) wejście** - Wprowadzenie przepisu.
+**[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) input** - The input of the recipe.
 
 
-## Dodanie
+## Addition
 ```zenscript
 mods.alchemistry.Evaporator.addRecipe(IItemStack output, ILiquidStack input);
 mods.alchemistry.Evaporator.addRecipe(<minecraft:stone>,<liquid:lava>*250);
 ```
 
-## Usuwanie
+## Removal
 ```zenscript
-mods.alchemistry.Evaporator.removeRecipe(ILiquidStack); //W/Wy będzie działać niezależnie od ilości
+mods.alchemistry.Evaporator.removeRecipe(ILiquidStack input); //Will work regardless of quantity
 mods.alchemistry.Evaporator.removeRecipe(<liquid:milk>);
 
-mods.alchemistry.wyparowator.removeAllRecipes();
+mods.alchemistry.Evaporator.removeAllRecipes();
 ```

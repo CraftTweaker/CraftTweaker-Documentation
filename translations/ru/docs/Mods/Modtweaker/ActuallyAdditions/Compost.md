@@ -1,6 +1,6 @@
-# Компост
+# Compost
 
-## Пакет
+## Package
 
 `mods.actuallyadditions.Compost`
 
@@ -11,9 +11,9 @@
 mods.actuallyadditions.Compost.addRecipe(<minecraft:dirt>, <minecraft:dirt>, <minecraft:sugar>, <minecraft:snow>);
 ```
 
-## Удаление
+## Removal
 
 ```zenscript
-//mods.actuallyadditions.Compost.removeRecipe(IItemStack);
+//mods.actuallyadditions.Compost.removeRecipe(IItemStack output);
 mods.actuallyadditions.Compost.removeRecipe(<actuallyadditions:item_canola_seed>);
 ```

@@ -1,16 +1,16 @@
-# 蒸留塔
+# Distillation Tower
 
-## パッケージのインポート
+## Importing the Package
 `mods.techreborn.distillationTower`
 
-## レシピを追加中
+## Adding Recipes
 ```zenscript
-mods.techreborn.distillationTower.addRecipe(IItemStack output1, IItemStack output2, IItemStack output3, IItemStack output4, IIngredient input1, IInput2, int ticktime, int euTick);
+mods.techreborn.distillationTower.addRecipe(IItemStack output1, IItemStack output2, IItemStack output3, IItemStack output4, IIngredient input1, IIngredient input2, int ticktime, int euTick);
 ```
 
-## レシピを削除
+## Removing Recipes
 ```zenscript
-mods.techreborn.distillationTower.removeInputRecipe(IIngredient 食材);
+mods.techreborn.distillationTower.removeInputRecipe(IIngredient ingredient);
 mods.techreborn.distillationTower.removeRecipe(IItemStack output);
 mods.techreborn.distillationTower.removeAll();
 ```

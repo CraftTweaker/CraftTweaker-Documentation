@@ -1,14 +1,14 @@
-# Wytopiony
+# Melter
 
-## Importowanie pakietu
-`Mods.nuclearcraft.melter`
+## Importing the Package
+`mods.nuclearcraft.melter`
 
-## Dodawanie przepisów
+## Adding Recipes
 ```zenscript
-mods.nuclearcraft.melter.addRecipe([itemInput, fluidOutput, @Opcjonalny podwójny timeMultiplier, @Opcjonalny podwójny nośnik, @Opcjonalny podwójny proces, Radiation]);
+mods.nuclearcraft.melter.addRecipe([itemInput, fluidOutput, @Optional double timeMultiplier, @Optional double powerMultiplier, @Optional double processRadiation]);
 ```
 
-## Usuwanie przepisów
+## Removing Recipes
 ```zenscript
 mods.nuclearcraft.melter.removeRecipeWithInput([itemInput]);
 mods.nuclearcraft.melter.removeRecipeWithOutput([fluidOutput]);

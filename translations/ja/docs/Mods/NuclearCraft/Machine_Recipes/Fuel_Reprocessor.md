@@ -1,16 +1,16 @@
-# 燃料のリプロセッサ
+# Fuel Reprocessor
 
-## パッケージのインポート
-`mods.naturcraft.fuel_reprocessor`
+## Importing the Package
+`mods.nuclearcraft.fuel_reprocessor`
 
-## レシピを追加中
+## Adding Recipes
 ```zenscript
-mods.numercraft.fuel_reprocessor.addRecipe([itemInput, itemOutput1, itemOutput2, itemOutput3, itemOutput4, @Optional double powerMultiplier, @Optional double processRadiation]);
+mods.nuclearcraft.fuel_reprocessor.addRecipe([itemInput, itemOutput1, itemOutput2, itemOutput3, itemOutput4, @Optional double timeMultiplier, @Optional double powerMultiplier, @Optional double processRadiation]);
 ```
 
-## レシピを削除
+## Removing Recipes
 ```zenscript
-mods.numercraft.fuel_reprocessor.removeRecipeWithInput([itemInput]);
-mods.nuclecraft.fuel_reprocessor.removeRecipeWithOutput([itemOutput1, itemOutput2, itemOutput3, itemOutput4]);
-mods.nuclecraft.fuel_reprocessor.removeAllRecipes();
+mods.nuclearcraft.fuel_reprocessor.removeRecipeWithInput([itemInput]);
+mods.nuclearcraft.fuel_reprocessor.removeRecipeWithOutput([itemOutput1, itemOutput2, itemOutput3, itemOutput4]);
+mods.nuclearcraft.fuel_reprocessor.removeAllRecipes();
 ```

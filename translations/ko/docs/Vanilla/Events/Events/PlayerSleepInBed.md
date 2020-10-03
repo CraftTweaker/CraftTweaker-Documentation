@@ -1,6 +1,6 @@
 # PlayerSleepInBed
 
-The PlayerSleepInBed Event is fired whenever a player sleeps.
+The PlayerSleepInBed Event is fired whenever a player sleeps. This event can control whether the player is able to sleep by setting `result`.
 
 ## Event Class
 
@@ -12,12 +12,21 @@ You can, of course, also [import](/AdvancedFunctions/Import/) the class before a
 
 PlayerSleepInBed Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
 
-- [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
-- [IEventPositionable](/Vanilla/Events/Events/IEventPositionable/)
+* [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
+* [IEventPositionable](/Vanilla/Events/Events/IEventPositionable/)
+
+## Result Types
+
+* NOT_POSSIBLE_HERE 
+* NOT_POSSIBLE_NOW 
+* NOT_SAFE 
+* OK 
+* OTHER_PROBLEM 
+* TOO_FAR_AWAY 
 
 ## ZenGetters
 
-다음 정보들은 이벤트를 통해서 얻을 수 있습니다.
+The following information can be retrieved from the event:
 
 | ZenGetter | 반환 타입                                |
 | --------- | ------------------------------------ |
@@ -25,3 +34,12 @@ PlayerSleepInBed Events implement the following interfaces and are able to call 
 | `y`       | int                                  |
 | `z`       | int                                  |
 | `player`  | [IPlayer](/Vanilla/Players/IPlayer/) |
+| `result`  | string (possible values are above)   |
+
+## ZenSetters
+
+The following can be set in the event:
+
+| ZenSetter | Parameter Type                     |
+| --------- | ---------------------------------- |
+| `result`  | string (possible values are above) |

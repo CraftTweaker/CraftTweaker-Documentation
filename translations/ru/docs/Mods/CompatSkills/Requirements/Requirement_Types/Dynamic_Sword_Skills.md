@@ -1,9 +1,9 @@
-# Навыки динамического меча
+# Dynamic Sword Skills
 
-## Синтаксис
+## Syntax
 
 ```zenscript
-dss|skillname|Уровень
+dss|skillname|level
 
 dss|
 ```

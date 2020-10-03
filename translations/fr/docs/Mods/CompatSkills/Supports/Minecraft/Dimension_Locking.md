@@ -1,13 +1,13 @@
-# Verrouillage des dimensions
+# Dimension Locking
 
-## Verrouillage des dimensions
+## Dimension Locking
 
-Cette fonction permet de verrouiller la possibilité de voyager à des dimensions spécifiques, à moins que les exigences ne soient remplies!
+This feature allows for locking the ability to travel to specific dimensions unless requirements are met!
 
-### Syntaxe
+### Syntax
 
-    Exemple:
+    Blank Example:
     mods.compatskills.DimensionLock.addDimensionLock(int dimension, String... defaultRequirements);
     
-    Exemple de travail :
+    Working Example:
     mods.compatskills.DimensionLock.addDimensionLock(-1, "reskillable:mining|5", "reskillable:magic|7");

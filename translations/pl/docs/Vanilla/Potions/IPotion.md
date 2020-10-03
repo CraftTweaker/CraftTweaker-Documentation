@@ -1,15 +1,15 @@
-# Mikstura
+# IPotion
 
-Obiekt IMikstura odnosi miksturę w grze.
+An IPotion object refers a potion in the game.
 
-## Importowanie pakietu
+## Importing the package
 
-Może być wymagane zaimportowanie pakietu, jeśli napotkasz jakiekolwiek problemy (takie jak przesyłanie [Array](/AdvancedFunctions/Arrays_and_Loops/)), tak aby były bezpieczne niż przepraszamy i dodaj import.  
-`zaimportuj crafttweaker.potions.IPoation;`
+It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
+`import crafttweaker.potions.IPotion;`
 
-## Otrzymywanie obiektu IMikstura
+## Getting an IPotion object
 
-Możesz uzyskać taki obiekt za pomocą [Obsługi Mikstur](/Vanilla/Brackets/Bracket_Potion/)
+You can get such an object through the use of the [Potion Bracket handler](/Vanilla/Brackets/Bracket_Potion/)
 
 ```zenscript
 <potion:minecraft:strength>;
@@ -17,28 +17,28 @@ Możesz uzyskać taki obiekt za pomocą [Obsługi Mikstur](/Vanilla/Brackets/Bra
 
 ## Zengetters
 
-Obecnie wszystko, co możesz zrobić z miksturami to pobieranie pewnych informacji na ich temat.  
-Przykład `<potion:minecraft:strength>.name`
+Currently, all you can do with potions is retrieving some information on them.  
+Example `<potion:minecraft:strength>.name`
 
-| Zengetter            | Co to robi                                                   | Typ zwrotu                                      |
-| -------------------- | ------------------------------------------------------------ | ----------------------------------------------- |
-| Nazwa                | Zwraca wewnętrzną nazwę mikstur                              | ciąg znaków                                     |
-| badEffect            | Zwraca, jeśli efekt mikstury jest zły                        | bool                                            |
-| Kolor cieczy         | Zwraca kolor mikstury                                        | odcień                                          |
-| Kolor cieczy         | Zwraca kolor mikstury                                        | odcień                                          |
-| Przedmioty kuratywne | Zwraca listę wszystkich przedmiotów kuratywnych dla mikstury | Lista<[IItemStack](/Vanilla/Items/IItemStack/)> |
-| Ikona Statusu        | Zwraca czy mikstura ma ikonę statusu                         | bool                                            |
-| korzystny            | Zwraca, czy mikstura jest korzystna                          | bool                                            |
-| Błyskawiczny         | Zwraca czy mikstura jest natychmiastowa                      | bool                                            |
+| Zengetter     | What does it do                                     | Return Type                                    |
+| ------------- | --------------------------------------------------- | ---------------------------------------------- |
+| name          | Returns the potion's internal name                  | string                                         |
+| badEffect     | Returns if the potion effect is bad                 | bool                                           |
+| liquidColor   | Returns the potion's color                          | int                                            |
+| liquidColour  | Returns the potion's colour                         | int                                            |
+| curativeItems | Returns a list of all curative Items for the potion | List<[IItemStack](/Vanilla/Items/IItemStack/)> |
+| hasStatusIcon | Returns whether the potion has a status icon        | bool                                           |
+| isBeneficial  | Returns whether the potion is beneficial            | bool                                           |
+| isInstant     | Returns whether the potion is instant               | bool                                           |
 
-## Metody ZenMethods
+## ZenMethods
 
-### Stwórz Efekt Mikstur
+### Make PotionEffect
 
-[Efekt IPotionEffect](/Vanilla/Potions/IPotionEffect/) to mikstura o czasie trwania i amplifikatorze. Możesz użyć tych dwóch metod, aby uzyskać jedną z IMikstur:  
-Jako że można się zgadzać, obydwa zwracają obiekt [IPotionEffect](/Vanilla/Potions/IPotionEffect/).
+An [IPotionEffect](/Vanilla/Potions/IPotionEffect/) is a Potion that has a duration and amplifier. You can use these two methods to get one from an IPotion:  
+As one might guess, both return an [IPotionEffect](/Vanilla/Potions/IPotionEffect/) object.
 
 ```zenscript
-pot.makePotionEffect(czas trwania int, amplifier);
-pot.makePotionEffect(czas trwania int, amplifier, boolean ambientEffect, cząstkiboolean particlesShown);
+pot.makePotionEffect(int duration, int amplifier);
+pot.makePotionEffect(int duration, int amplifier, boolean ambientEffect, boolean particlesShown);
 ```

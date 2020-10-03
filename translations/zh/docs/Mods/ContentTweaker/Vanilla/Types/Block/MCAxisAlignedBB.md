@@ -1,32 +1,32 @@
 # MCAxisAlignedBB
 
-MineCraft 轴对齐边界框对象允许你将 [块的](/Mods/ContentTweaker/Vanilla/Creatable_Content/Block/) 边界边界变成给定的立方形状.
+A MineCraft Axis Aligned Boundary Box object allows you change a [Block's](/Mods/ContentTweaker/Vanilla/Creatable_Content/Block/) Boundary borders to a given cuboid shape.
 
 ## 导入相关包
 
-如果您遇到任何问题，可能需要导入软件包，所以比抱歉更安全并添加导入。  
-`导入 mods.contenttweaker.AxisAlignedBB；`
+It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
+`import mods.contenttweaker.AxisAlignedBB;`
 
-## 调用 MCAxisAlignedBB 对象
+## Calling an MCAxisAlignedBB object
 
-您可以使用 [块的](/Mods/ContentTweaker/Vanilla/Creatable_Content/Block/) `轴对齐BB` 属性获得这样一个对象。  
-或者，您可以使用此软件包创建一个新的 MCAxisAlignedBB 对象：
+You can get such an object using a [Block's](/Mods/ContentTweaker/Vanilla/Creatable_Content/Block/) `axisAlignedBB` Property.  
+Alternatively, you can use this package to create a new MCAxisAlignedBB object:
 
 ```zenscript
-AxisalignedBB.create(双分钟、双分钟、双分钟、双最大X、双倍最大Y、双倍最大Z)；
+AxisAlignedBB.create(double minX, double minY, double minZ, double maxX, double maxY, double maxZ);
 ```
 
-此函数的所有参数在 0 和 1 之间加倍!
+All parameters for this function are doubles between 0 and 1!
 
 ## ZenProperties
 
-您可以使用 `getProperty()` 或 `object.property` 获取和设置每个属性。
+You can get and set each Property using `getProperty()` or `object.property`.
 
-| ZenProperty | 类型  |
-| ----------- | --- |
-| 最小值         | 双精度 |
-| minY        | 双精度 |
-| minZ        | 双精度 |
-| maxX        | 双精度 |
-| 最大 Y        | 双精度 |
-| 最大Z         | 双精度 |
+| ZenProperty | 类型     |
+| ----------- | ------ |
+| minX        | double |
+| minY        | double |
+| minZ        | double |
+| maxX        | double |
+| maxY        | double |
+| maxZ        | double |

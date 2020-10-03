@@ -1,10 +1,10 @@
 # ICommand
 
-Ein ICommand Object repräsentiert ein Befehlsname.
+An ICommand Object represents a command ingame.
 
 ## Dieses Paket importieren
 
-Möglicherweise ist es erforderlich, dass Sie das Paket importieren, wenn Sie irgendwelche Probleme haben (z.B. [Array](/AdvancedFunctions/Arrays_and_Loops/)), also besser sicher sein als bedauern und fügen Sie den Import.  
+It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
 `import crafttweaker.command.ICommand;`
 
 ## ZenGetter
@@ -32,20 +32,20 @@ Möglicherweise ist es erforderlich, dass Sie das Paket importieren, wenn Sie ir
   
   <tr>
     <td>
-      Aliase
+      aliases
     </td>
     
     <td>
-      Liste<String\>
+      List<String\>
     </td>
   </tr>
 </table>
 
-## ZenMethoden
+## ZenMethods
 
 - String getUsage([ICommandSender](/Vanilla/Commands/ICommandSender/) sender);
-- Ausführung ungültig ([IServer](/Vanilla/Game/IServer/) Server, [ICommandSender](/Vanilla/Commands/ICommandSender/) Absender, String[] args);
-- boolean checkPermission([IServer](/Vanilla/Game/IServer/) Server, [ICommandSender](/Vanilla/Commands/ICommandSender/) Absender);
-- Liste<string> getTabCompletions([IServer](/Vanilla/Game/IServer/) Server, [ICommandSender](/Vanilla/Commands/ICommandSender/) Absender, String[] args, @Optional [IBlockPos](/Vanilla/World/IBlockPos/) targetPos);
+- void execute([IServer](/Vanilla/Game/IServer/) server, [ICommandSender](/Vanilla/Commands/ICommandSender/) sender, String[] args);
+- boolean checkPermission([IServer](/Vanilla/Game/IServer/) server, [ICommandSender](/Vanilla/Commands/ICommandSender/) sender);
+- List<string> getTabCompletions([IServer](/Vanilla/Game/IServer/) server, [ICommandSender](/Vanilla/Commands/ICommandSender/) sender, String[] args, @Optional [IBlockPos](/Vanilla/World/IBlockPos/) targetPos);
 - boolean isUsernameIndex(String[] args, int index);
-- command1 != command2; → Sie können sie vergleichen!
+- command1 != command2; → You can compare them!

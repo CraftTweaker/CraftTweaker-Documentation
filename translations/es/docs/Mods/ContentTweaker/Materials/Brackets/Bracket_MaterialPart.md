@@ -1,8 +1,8 @@
-# Manejador de partes de material
+# Material Part Bracket Handler
 
-The Material Part Bracket Handler allows you access to the Material Parts in the game. Sólo es posible registrar Material Parts en el juego, por lo que debes tener cuidado con el orden de carga de los scripts.
+The Material Part Bracket Handler gives you access to the Material Parts in the game. It is only possible to get Material Parts registered in the game, so you need to be careful of the loading order of scripts.
 
-Las Partes de Material son referenciadas en el manejador de Partes de Material de esta manera:
+Material Parts are referenced in the Material Part Bracket handler this way:
 
 ```zenscript
 <materialpart:material:part>
@@ -10,5 +10,5 @@ Las Partes de Material son referenciadas en el manejador de Partes de Material d
 <materialpart:platinum:gear>
 ```
 
-Si se encuentra la Pieza de Material, se devolverá un Objeto Definición de MaterialPart.  
-Este es un objeto que actúa como ambos, una [IMaterialPart](/Mods/ContentTweaker/Materials/Materials/MaterialPart/) así como un objeto [ItemStack](/Vanilla/Items/IItemStack/) , para que los métodos de ambas interfaces funcionen en la definición devuelta.
+If the Material Part is found, this will return a MaterialPartDefinition Object.  
+This is an object that acts as both, an [IMaterialPart](/Mods/ContentTweaker/Materials/Materials/MaterialPart/) as well as an [IItemStack](/Vanilla/Items/IItemStack/) object, so methods of both interfaces will work on the returned definition.

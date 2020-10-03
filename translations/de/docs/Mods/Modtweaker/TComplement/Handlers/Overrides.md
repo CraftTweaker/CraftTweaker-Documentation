@@ -1,12 +1,12 @@
-# Überschreibungen
+# Overrides
 
-Das Overrides Paket wird zum Hinzufügen/Entfernen von Rezepten von / zu den Schmelzüberschreibungen verwendet.
+The Overrides package is used for adding/removing recipes from/to the melter Overrides.
 
-## Anruf
+## Calling
 
-Du kannst das Overrides Paket mit `mods.tcomplement.Overrides` aufrufen
+You can call the Overrides package using `mods.tcomplement.Overrides`
 
-## Überschreibt Eintragszusatz
+## Overrides entry addition
 
 ```zenscript
 //mods.tcomplement.Overrides.addRecipe(ILiquidStack output, IItemStack input, @Optional int temp);
@@ -14,10 +14,10 @@ mods.tcomplement.Overrides.addRecipe(<liquid:gold> * 100, <minecraft:gold_ingot>
 mods.tcomplement.Overrides.addRecipe(<liquid:gold> * 100, <minecraft:gold_ingot>, 1000);
 ```
 
-## Überschreibt die Entfernung des Eintrags
+## Overrides entry removal
 
 ```zenscript
 //mods.tcomplement.Overrides.removeRecipe(ILiquidStack output, @Optional IItemStack input);
 mods.tcomplement.Overrides.removeRecipe(<liquid:gold>);
-mods.tcomplement.overrides.removeRecipe(<liquid:gold>, <minecraft:gold_ore>);
+mods.tcomplement.Overrides.removeRecipe(<liquid:gold>, <minecraft:gold_ore>);
 ```

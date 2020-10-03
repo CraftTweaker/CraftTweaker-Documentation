@@ -1,14 +1,14 @@
-# Rozszczepienie
+# Fission
 
-## Importowanie pakietu
-`Rozszczepienie`
+## Importing the Package
+`mods.nuclearcraft.fission`
 
-## Dodawanie przepisów
+## Adding Recipes
 ```zenscript
 mods.nuclearcraft.fission.addRecipe([itemInput, itemOutput, double baseTime, double basePower, double baseHeat, String guiName, @Optional double processRadiation]);
 ```
 
-## Usuwanie przepisów
+## Removing Recipes
 ```zenscript
 mods.nuclearcraft.fission.removeRecipeWithInput([itemInput]);
 mods.nuclearcraft.fission.removeRecipeWithOutput([itemOutput]);

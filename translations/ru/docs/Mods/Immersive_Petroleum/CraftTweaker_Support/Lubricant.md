@@ -1,13 +1,13 @@
-# Регистрация смазки
+# Lubricant Registration
 
-## регистрЛюбрикант
+## registerLubricant
 
-| Тип     | Тип данных                                   |
-| ------- | -------------------------------------------- |
-| Input   | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
-| мБ/4тик | Целое                                        |
+| Тип      | Data Type                                    |
+| -------- | -------------------------------------------- |
+| Input    | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
+| mB/4tick | Integer                                      |
 
-### Пример кода:
+### Code Example:
 
 ```zenscript
 mods.immersivepetroleum.Lubricant.registerLubricant(ILiquidStack lubricantEntry, int amount);

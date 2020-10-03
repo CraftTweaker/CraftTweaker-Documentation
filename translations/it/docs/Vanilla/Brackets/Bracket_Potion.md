@@ -1,8 +1,8 @@
-# Gestore Parentesi Pozioni
+# Potion Bracket Handler
 
-Il gestore di parentesi pozione ti dà accesso alle pozioni nel gioco. È solo possibile ottenere Pozioni registrate nel gioco, quindi l'aggiunta o la rimozione di mod può causare problemi se fai riferimento alle pozioni della mod in un Gestore di parentesi di pozioni.
+The Potion Bracket Handler gives you access to the Potions in the game. It is only possible to get Potions registered in the game, so adding or removing mods may cause issues if you reference the mod's Potions in a Potion Bracket Handler.
 
-Le pozioni sono riferite nel gestore di parentesi pozione così:
+Potions are referenced in the Potion Bracket Handler like so:
 
 ```zenscript
 <potion:modname:potionname>
@@ -10,11 +10,11 @@ Le pozioni sono riferite nel gestore di parentesi pozione così:
 <potion:minecraft:strength>
 ```
 
-Se la Pozione è trovata, questo restituirà un oggetto IPotion. Si prega di fare riferimento alla voce [Wiki](/Vanilla/Potions/IPotion/) per ulteriori informazioni su ciò che si può fare con questi.
+If the Potion is found, this will return an IPotion Object. Please refer to the [respective Wiki entry](/Vanilla/Potions/IPotion/) for further information on what you can do with these.
 
-# Ottenere tutte le Pozioni registrate
+# Getting all Registered Potions
 
-È possibile utilizzare il seguente comando per produrre tutte le pozioni registrate nel registro CraftTweaker
+You can use the following command to output all registered Potions to the CraftTweaker log
 
-    /ct pozioni
-    /crafttweaker pozioni
+    /ct potions
+    /crafttweaker potions

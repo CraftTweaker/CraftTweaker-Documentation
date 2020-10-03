@@ -1,66 +1,66 @@
-# Drehtisch
+# Turntable
 
-## Einfaches Rezept
+## Basic Recipe
 
-* Fügt Turntable Rezept hinzu - Eingaben *MÜSSEN* haben einen Block zugeordnet. Der Produktstatus ist der Block, der platziert wird, nachdem das Rezept fertig ist
+* Adds Turntable Recipe - inputs *MUST* have a block associated with them. The product state is the block that will be placed after the recipe finishes
 
 ```zenscript
-mods.betterwithmods.Turntable.add(IIngredient Eingabe, IItemStack productState, IItemStack[] Ausgabe);
+mods.betterwithmods.Turntable.add(IIngredient input, IItemStack productState, IItemStack[] output);
 
-mods.betterwithmods.Turntable.add(IIngredient Eingabe, IItemStack[] Ausgabe);
+mods.betterwithmods.Turntable.add(IIngredient input, IItemStack[] output);
 
-//Beispiele
-mods. etterwithmods.Turntable.add(<minecraft:grass>, <minecraft:dirt>, [<minecraft:seed>]);
+//Examples
+mods.betterwithmods.Turntable.add(<minecraft:grass>, <minecraft:dirt>, [<minecraft:seed>]);
 
 mods.betterwithmods.Turntable.add(<minecraft:gravel>, [<minecraft:flint>]);
 ```
 
-## Entfernen durch Eingabe
+## Removal by input
 
-* Entfernen Sie ein Rezept basierend auf der Eingabezutat
-
-```zenscript
-mods.betterwithmods.Turntable.remove(IIngredient Eingabe);
-```
-
-## Nach Ausgabe entfernen
-
-* Ein Rezept basierend auf der Ausgabe entfernen
+* Remove a recipe based on the input ingredient
 
 ```zenscript
-mods.betterwithmods.Turntable.remove(IItemStack[] Ausgänge);
+mods.betterwithmods.Turntable.remove(IIngredient input);
 ```
 
-## Alle entfernen
+## Removal by output
 
-* Alle Rezepte entfernen
+* Remove a recipe based on the output
+
+```zenscript
+mods.betterwithmods.Turntable.remove(IItemStack[] outputs);
+```
+
+## Remove all
+
+* Remove all recipes
 
 ```zenscript
 mods.betterwithmods.Turntable.removeAll();
 ```
 
-## Nach Produkt entfernen
+## Remove by product
 
-* Entferne ein Rezept vom Produktstatus 
+* Remove a recipe by the productState 
 
 ```zenscript
 mods.betterwithmods.Turntable.removeRecipe(IItemStack productState);
 ```
 
-## Erbauer
+## Builder
 
-The Turntable has a recipe builder that allows more precise control over the recipes. Alle bisherigen Methoden sind einfach kurze Abschnitte zur Verwendung des Builders.
+The Turntable has a recipe builder that allows more precise control over the recipes. All previous methods are simply short cuts to using the builder.
 
-* Um einen neuen Turntable Builder zu erstellen. `mods.betterwithmods.Turntable.builder()`
+* To create a new Turntable builder. `mods.betterwithmods.Turntable.builder()`
 
-* Turntable Methoden
+* Turntable methods
      
      * Sets up the inputs and outputs of the recipe  
           zenscript buildRecipe(IIngredient[] inputs, IItemStack[] outputs)  
               zenscript
-              buildRecipe(IIngredient[] Eingänge, IItemStack[] Ausgaben)
+              buildRecipe(IIngredient[] inputs, IItemStack[] outputs)
      
-     * Setzt die Drehungen, die benötigt werden, um das Rezept zu beenden. This defaults to 8.  
+     * Sets the rotations required for the recipe to finish. This defaults to 8.  
           zenscript setRotations(int rotations)  
               zenscript
               setRotations(int rotations)
@@ -75,7 +75,7 @@ The Turntable has a recipe builder that allows more precise control over the rec
               zenscript
               build()
 
-### Beispiel-Builder-Nutzung
+### Example builder usage
 
 ```zenscript
 mods.betterwithmods.Turntable.builder()

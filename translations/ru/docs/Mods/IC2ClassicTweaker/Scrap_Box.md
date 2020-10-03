@@ -1,17 +1,17 @@
-## Коробка с ломом
+## Scrap Box
 
-## Пакет
+## Package
 
 ```zenscript
-импорт mods.ic2.ScrapBox;
+import mods.ic2.ScrapBox;
 ```
 
-### Методы
+### Methods
 
-- Смотрите [ScrapBox (From IC2 Tweaker)](/Mods/IC2Tweaker/Scrap_Box/) для информации о других методах.
-- **[ItemStack](/Vanilla/Items/IItemStack/) Элемент** Запись удаляется из пула лома коробки. Появится вероятность падения всех других симуляций для пересчета.
+- See [ScrapBox (From IC2 Tweaker)](/Mods/IC2Tweaker/Scrap_Box/) for info on other methods.
+- **[ItemStack](/Vanilla/Items/IItemStack/) item** The entry being removed from the scrap box drop pool. Will cause drop chances of all other tiems to be recalculated.
 
-## Удалить Drop (IItemStack)
+## Remove Drop (IItemStack)
 
 ```zenscript
     ScrapBox.removeDrop(IItemStack item);

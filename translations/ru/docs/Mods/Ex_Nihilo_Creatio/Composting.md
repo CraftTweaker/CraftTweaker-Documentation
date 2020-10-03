@@ -1,6 +1,6 @@
-# Компостинг
+# Composting
 
-## Пакет
+## Package
 ```zenscript
 mods.exnihilocreatio.Compost
 ```
@@ -8,13 +8,13 @@ mods.exnihilocreatio.Compost
 ## Методы
 
 - **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input** The input.
-- **Шанс плавающего** Шанс должен быть от 0 до 1.
-- **Цвет строки** Цвет шестнадцатеричный.
-- **[IItemStack](/Vanilla/Items/IItemStack/) output** Результат рецепта.
+- **Float chance** The chance should be between 0-1.
+- **String color** The color is hex.
+- **[IItemStack](/Vanilla/Items/IItemStack/) output** The result of the recipe.
 
 ## Сложение
 
-Не принимает массивы для IIngredient.
+Does not take arrays in for IIngredient.
 
 ```zenscript
 mods.exnihilocreatio.Compost.addRecipe(IIngredient, Float chance, String color, IItemStack);
@@ -22,7 +22,7 @@ mods.exnihilocreatio.Compost.addRecipe(IIngredient, Float chance, String color, 
 mods.exnihilocreatio.Compost.addRecipe(<ore:woodPlank>, 0.25, "63452D", <minecraft:log>);
 ```
 
-## Удаление
+## Removal
 
 ```zenscript
 Compost.removeAll();

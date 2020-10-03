@@ -1,14 +1,14 @@
 # Fusion
 
-## Importation du paquet en cours
-`fusion`
+## Importing the Package
+`mods.nuclearcraft.fusion`
 
-## Ajout de recettes
+## Adding Recipes
 ```zenscript
 mods.nuclearcraft.fusion.addRecipe([fluidInput1, fluidInput2, fluidOutput1, fluidOutput2, fluidOutput3, fluidOutput4, double comboTime, double comboPower, double comboHeatVar, @Optional double processRadiation]);
 ```
 
-## Suppression des recettes
+## Removing Recipes
 ```zenscript
 mods.nuclearcraft.fusion.removeRecipeWithInput([fluidInput1, fluidInput2]);
 mods.nuclearcraft.fusion.removeRecipeWithOutput([fluidOutput1, fluidOutput2, fluidOutput3, fluidOutput4]);

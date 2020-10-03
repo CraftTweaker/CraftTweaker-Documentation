@@ -1,10 +1,10 @@
-### クラス
+### Class
 
 ```zenscript
 import mods.roots.Ritual;
 ```
 
-#### メソッド
+#### Methods
 
 ```zenscript
 void modifyRitual(

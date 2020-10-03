@@ -3,11 +3,11 @@
 ModTweaker's Thaumcraft integration extends the command palette provided by CraftTweaker.  
 To access these commands you do the same as you do for CraftTweaker commands, you use the `/crafttweaker` prefix
 
-# Thaumcraft のコマンド一覧
+# List of Thaumcraft's Commands
 
 ## thaumcraftDump
 
-使用方法:
+Usage:
 
 `/crafttweaker thaumcraftDump`
 

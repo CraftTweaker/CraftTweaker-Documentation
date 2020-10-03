@@ -1,14 +1,14 @@
-# ソリッドキャンニングマシン
+# Solid Canning Machine
 
-## パッケージのインポート
+## Importing the Package
 `mods.techreborn.solidCanningMachine`
 
-## レシピを追加中
+## Adding Recipes
 ```zenscript
-mods.techreborn.solidCanningMachine.addRecipe(IItemStack output1, IIngredient input1, IInput2, int ticktime, int euTick);
+mods.techreborn.solidCanningMachine.addRecipe(IItemStack output1, IIngredient input1, IIngredient input2, int ticktime, int euTick);
 ```
 
-## レシピを削除
+## Removing Recipes
 ```zenscript
 mods.techreborn.solidCanningMachine.removeRecipe(IItemStack output);
 mods.techreborn.solidCanningMachine.removeAll();

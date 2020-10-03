@@ -1,10 +1,10 @@
-# IExplosion-событие
+# IExplosionEvent
 
-Этот интерфейс расширен всеми взрывовыми событиями. Это означает, что вы можете использовать получатели ниже для доступа к данным о позиции.
+This interface is extended by all explosion events. That means you can use the getters below to access the position details.
 
 ## Импорт класса
-Может потребоваться [импортировать](/AdvancedFunctions/Import/) класс, чтобы избежать ошибок.  
-`импорт crafttweaker.event.IExplosionEvent;`
+It might be required to [import](/AdvancedFunctions/Import/) the class to avoid errors.  
+`import crafttweaker.event.IExplosionEvent;`
 
 ## Геттеры
 
@@ -12,6 +12,6 @@
 | -------- | -------------------------------------- |
 | world    | [IWorld](/Vanilla/World/IWorld/)       |
 | position | [IBlockPos](/Vanilla/World/IBlockPos/) |
-| х        | double                                 |
-| у        | double                                 |
+| x        | double                                 |
+| y        | double                                 |
 | z        | double                                 |

@@ -1,18 +1,18 @@
 # IEntityXp
 
-Представляет собой сферу опыта в мире.
+Represents an XP Orb in the world.
 
 ## Импорт пакета
 
-Возможно, вам потребуется импортировать пакет, если вы столкнетесь с какими-либо проблемами (например, наложение [массива](/AdvancedFunctions/Arrays_and_Loops/)), так что лучше быть безопасным, чем извините и добавить импорт.  
-`импорт crafttweaker.entity.IEntityXp;`
+It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
+`import crafttweaker.entity.IEntityXp;`
 
-## Расширение [IEntity](/Vanilla/Entities/IEntity/)
+## Extending [IEntity](/Vanilla/Entities/IEntity/)
 
-IEntityXp расширяет [IEntity](/Vanilla/Entities/IEntity/). Это означает, что все функции, доступные [IEntities](/Vanilla/Entities/IEntity/) , также доступны для IEntityXp.
+IEntityXp extends [IEntity](/Vanilla/Entities/IEntity/). That means all functions available to [IEntities](/Vanilla/Entities/IEntity/) also are available to IEntityXp.
 
 ## ZenGetters
 
-| Геттеры | Возвращаемый тип |
-| ------- | ---------------- |
-| xp      | float            |
+| ZenGetter | Возвращаемый тип |
+| --------- | ---------------- |
+| xp        | float            |

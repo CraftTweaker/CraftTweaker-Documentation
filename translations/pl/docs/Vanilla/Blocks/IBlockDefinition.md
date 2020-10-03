@@ -1,86 +1,86 @@
-# Definicja IBlock'a
+# IBlockDefinition
 
-Obiekty IBlockDefinition dostarczają dodatkowych informacji o blokach.
+The IBlockDefinition objects provide additional information on blocks.
 
-## Importowanie pakietu
+## Importing the package
 
-Może być wymagane zaimportowanie pakietu, jeśli napotkasz jakiekolwiek problemy (takie jak przesyłanie [Array](/AdvancedFunctions/Arrays_and_Loops/)), tak aby były bezpieczne niż przepraszamy i dodaj import.  
-`zaimportuj crafttweaker.block.IBlockDefiniation;`
+It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
+`import crafttweaker.block.IBlockDefinition;`
 
-## Wywołanie obiektu IBlockDefinition
+## Calling an IBlockDefinition object
 
-* Używanie `definition` ZenGetter na obiekcie [IBlock](/Vanilla/Blocks/IBlock/).
+* Using the `definition` ZenGetter on an [IBlock](/Vanilla/Blocks/IBlock/) object.
 
-## Wywołanie listy definicji IBlockDefinition
+## Calling an IBlockDefinition List
 
-* Użyj `game.block` aby uzyskać listę wszystkich definicji bloku w grze.
+* Using `game.blocks` to get a list of all block definition in the game.
 
 ## ZenGetters/ZenSetters
 
-| ZenGetter            | ZenSetter             | Co to robi                                        | Typ                                                    |
-| -------------------- | --------------------- | ------------------------------------------------- | ------------------------------------------------------ |
-|                      | canSpawnInBlock       | Zwraca, jeśli obiekt może pojawić się w tym bloku | bool                                                   |
-| kreatywna zakładka   | kreatywna zakładka    |                                                   | [Karta ICreative](/Vanilla/CreativeTabs/ICreativeTab/) |
-| domyślny stan        |                       |                                                   | [Stan IBlocka](/Vanilla/Blocks/IBlockState/)           |
-|                      | domyślnaPoślizgnięcie |                                                   | zmiennoprzecinkowe                                     |
-| id                   |                       | Zwraca identyfikator bloku                        | ciąg znaków                                            |
-| nazwa wyświetlacza   |                       | Zwraca wyświetlaną nazwę bloku                    | ciąg znaków                                            |
-|                      | twardość              |                                                   | odcień                                                 |
-| poziom zbierania     |                       | Zwraca poziom zbiorów bloku                       | odcień                                                 |
-| Narzędzie zbierające |                       | Zwraca narzędzie zbierania bloku                  | ciąg znaków                                            |
-|                      | jasna przezroczystość |                                                   | odcień                                                 |
-|                      | Poziom światła        |                                                   | odcień                                                 |
-|                      | odporność             |                                                   | odcień                                                 |
-| unlocalizedName      |                       | Zwraca niezlokalizowaną nazwę bloku               | ciąg znaków                                            |
-| tykkRlosowo          | tykkRlosowo           |                                                   | bool                                                   |
+| ZenGetter       | ZenSetter           | What does it do                              | Type                                                |
+| --------------- | ------------------- | -------------------------------------------- | --------------------------------------------------- |
+|                 | canSpawnInBlock     | Returns if an entity can spawn in this block | bool                                                |
+| creativeTab     | creativeTab         |                                              | [ICreativeTab](/Vanilla/CreativeTabs/ICreativeTab/) |
+| defaultState    |                     |                                              | [IBlockState](/Vanilla/Blocks/IBlockState/)         |
+|                 | defaultSlipperiness |                                              | float                                               |
+| id              |                     | Returns the block ID                         | string                                              |
+| displayName     |                     | Returns the block's DisplayName              | string                                              |
+|                 | hardness            |                                              | int                                                 |
+| harvestLevel    |                     | Returns the block's harvest level            | int                                                 |
+| harvestTool     |                     | Returns the block's harvest tool             | string                                              |
+|                 | lightOpacity        |                                              | int                                                 |
+|                 | lightLevel          |                                              | int                                                 |
+|                 | resistance          |                                              | int                                                 |
+| unlocalizedName |                     | Returns the block's unlocalized Name         | string                                              |
+| tickRandomly    | tickRandomly        |                                              | bool                                                |
 
-## Metody ZenMethods
+## ZenMethods
 
-### Ustaw blok niezniszczalny
+### Set Block unbreakable
 
-Nie używa żadnych paramaeterów.  
-Nic nie zwraca.  
-To samo co `twardość = -1;`
+Uses no paramaeters.  
+Returns nothing.  
+Does the same as `hardness = -1;`
 
 ```zenscript
 defObj.setUnbreakable();
 ```
 
-### Zdobądź tickrate w określonym świecie
+### Get tickrate in a specific world
 
-Używa obiektu [IWorld](/Vanilla/World/IWorld/) .  
-Zwraca int.
+Uses an [IWorld](/Vanilla/World/IWorld/) object.  
+Returns an int.
 
 ```zenscript
-defObj.getTickRate(Świat Światy);
+defObj.getTickRate(IWorld world);
 ```
 
-### Sprawdź, czy blok może być umieszczony na innym bloku
+### Check if the block can be placed on another block
 
-Używa obiektu [IWorld](/Vanilla/World/IWorld/) , obiektu [IBlockPos](/Vanilla/World/IBlockPos/) oraz W zależności od zastosowanej metody, również obiekt [IFacing](/Vanilla/World/IFacing/) .  
-Zwraca bool.
+Uses an [IWorld](/Vanilla/World/IWorld/) object, an [IBlockPos](/Vanilla/World/IBlockPos/) object and, depending on the method used, also an [IFacing](/Vanilla/World/IFacing/) object.  
+Returns a bool.
 
 ```zenscript
-defObj.canPlaceBlockOnSide(IWorld Świat, IBlockPos pos, IFacing facing);
-defObj.canPlaceBlockAt(Świat Świata, IBlockPos pos);
+defObj.canPlaceBlockOnSide(IWorld world, IBlockPos pos, IFacing facing);
+defObj.canPlaceBlockAt(IWorld world, IBlockPos pos);
 ```
 
-### Zdobądź śliskość bloku
+### Get the block's slipperiness
 
-Używa [IBlockState](/Vanilla/Blocks/IBlockState/), [IBlockAccess](/Vanilla/World/IBlockAccess/) obiektu, [IBlockPos](/Vanilla/World/IBlockPos/) i opcjonalny obiekt [IEntity](/Vanilla/Entities/IEntity/) .  
-Zwraca float.
+Uses an [IBlockState](/Vanilla/Blocks/IBlockState/), an [IBlockAccess](/Vanilla/World/IBlockAccess/) object, an [IBlockPos](/Vanilla/World/IBlockPos/) and an optional [IEntity](/Vanilla/Entities/IEntity/) object.  
+Returns a float.
 
 ```zenscript
-defObj.getSlipperiness(IBlockState stan, IBlockAccess access, IBlockPos pos, @Optional IEntity entity);
+defObj.getSlipperiness(IBlockState state, IBlockAccess access, IBlockPos pos, @Optional IEntity entity);
 ```
 
-### Ustaw poziom zbiorów bloku
+### Set the block's harvest level
 
-Używa ciągu znaków i int.  
-Zwraca unieważnienie (nie ma znaczenia).
+Uses a string and an int.  
+Returns void (nothing).
 
 ```zenscript
-defObj.setHarvestLevel(klasa stringu, poziom intów);
+defObj.setHarvestLevel(string toolclass, int level);
 ```
 
 ### Uzyskaj stan bloku przez metadane

@@ -1,22 +1,22 @@
 # Logger
 
-Wenn die Druckfunktion für Sie nicht ausreicht, können Sie das Logger-Objekt verwenden, um Befehle, Informationswarnungen und mehr zu protokollieren.
+If the print-function is not enough for you, then you can use the logger Object to log Commands, information warnings and more.
 
-## Zugriff auf den Logging Handler
+## Accessing the Logging Handler
 
-Sie können auf den Formatierungs-Handler mit dem `-Logger` [globalen Schlüsselwort](/Vanilla/Global_Functions/) zugreifen.
+You can access the Formatting Handler using the `logger` [global keyword](/Vanilla/Global_Functions/).
 
-## Protokollierung
+## Logging
 
-- logCommand(String-Nachricht);
-- logInfo(Zeichenketten);
-- logWarnung(String-Nachricht);
-- logError(Zeichenketten);
+- logCommand(String message);
+- logInfo(String message);
+- logWarning(String message);
+- logError(String message);
 
-## Barrierefreie, aber nutzlose Methoden
+## Accessible, but useless Methods
 
-- logError(String-Nachricht, werfbare Ausnahme);
-- logPlayer ([IPlayer](/Vanilla/Players/IPlayer/) Spieler);
+- logError(String message, Throwable exception);
+- logPlayer([IPlayer](/Vanilla/Players/IPlayer/) player);
 
-Du kannst Javas Werfer nicht verwenden, daher ist die erste Methode nutzlos.  
-Die zweite Methode macht absolut nichts. Die Implementierung ist buchstäblich leer!
+You can not use Java's throwables so the first Method is useless.  
+The second Method does absolutely nothing. Literally, the implementation is empty!

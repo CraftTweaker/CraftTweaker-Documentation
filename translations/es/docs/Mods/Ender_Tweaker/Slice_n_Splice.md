@@ -1,33 +1,33 @@
-# Cortar 'n' Splice
+# Slice 'n' Splice
 
-## Paquete
+## Package
 
-`importar mods.enderio.SliceNSplice;`
+`import mods.enderio.SliceNSplice;`
 
-## Métodos
+## Methods
 
-**- [ItemStack](/Vanilla/Items/IItemStack/) salida** El resultado de la receta.
+**- [IItemStack](/Vanilla/Items/IItemStack/) output** The result of the recipe.
 
-**- [IIngrediente](/Vanilla/Variable_Types/IIngredient/)[] entrada** Los ingredientes. Debe estar entre 1 y 6 ingredientes.
+**- [IIngredient](/Vanilla/Variable_Types/IIngredient/)[] input** The ingredients. Must be between 1 and 6 ingredients.
 
-**- int energyCost** Cuánto utiliza la receta. Por defecto es 5000.
+**- int energyCost** How much FE the recipe uses. Defaults to 5000.
 
-**- xp float** El xp se concede de esta receta. Puede no ser negativo.
+**- float xp** The xp is granted from this recipe. May not be negative.
 
-## Adicional
+## Addition
 
 ```zenscript
 mods.enderio.SliceNSplice.  
-addRecipe(Salida ItemStack, entrada IIngredient[], @Optional int energyCost, @Optional float xp);
+addRecipe(IItemStack output, IIngredient[] input, @Optional int energyCost, @Optional float xp);
 
 mods.enderio.SliceNSplice.  
 addRecipe(<minecraft:emerald>, [<minecraft:diamond>, <minecraft:gold_ingot>, <minecraft:iron_ingot>], 5000, 0);
 ```
 
-## Eliminar
+## Removal
 
 ```zenscript
-mods.enderio.SliceNSplice.removeRecipe(salida IItemStack);
+mods.enderio.SliceNSplice.removeRecipe(IItemStack output);
 
 mods.enderio.SliceNSplice.removeRecipe(<enderio:block_enderman_skull:2>);
 ```

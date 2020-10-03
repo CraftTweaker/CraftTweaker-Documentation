@@ -1,14 +1,14 @@
-# 发酵器
+# Fermenter
 
 ## 所属包名
 
-`导入 mods.ic2.Fermenter;`
+`import mods.ic2.Fermenter;`
 
 ## 方法
 
-- **[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) 输出** 发酵液体
+- **[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) output** The fermented fluid
 - **[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) input** The input fluid
-- **整流** 发酵所需的热量
+- **int heat** The amount of heat required for fermentation
 
 ## 添加配方
 

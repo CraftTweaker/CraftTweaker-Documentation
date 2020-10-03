@@ -1,15 +1,15 @@
-# Y Operador
+# AND Operator
 
-Una compuerta **AND** combina dos entradas y devuelve `TRUE` sólo si ambas entradas también son `TRUE`.
+An **AND** gate combines two inputs and returns `TRUE` only if both inputs are also `TRUE`.
 
-| Input 1 | Input 2 | Salida |
+| Input 1 | Input 2 | Output |
 | ------- | ------- | ------:|
 | 0       | 0       |      0 |
 | 0       | 1       |      0 |
 | 1       | 0       |      0 |
 | 1       | 1       |      1 |
 
-El requerimiento AND a diferencia de los otros requisitos lógicos es principalmente útil para requerimientos lógicos anidados. como bloqueo de un elemento u otro objeto con múltiples requisitos requiere que se cumplan todos los requisitos dados. Esto es lo mismo que la funcionalidad AND, así que debe ser usado cuando sea posible, ya que hará que la descripción sea formateada de una manera más fácil de leer.
+The AND requirement unlike the other logic requirements is mainly useful for nested logic requirements, as locking an item or other object with multiple requirements requires all of the given requirements to be met. This is the same as the AND functionality, so should be used when possible, as it will make the tooltip be formatted in an easier to read manner.
 
-    Ejemplo vacío:
-    Y|[]~[]
+    Empty Example:
+    AND|[]~[]

@@ -1,35 +1,35 @@
-# Raffreddante
+# Coolant
 
-Il gestore di raffreddamento non appartiene ad alcuna macchina specifica, ma gestisce i valori del refrigerante per tutte le altre macchine.  
-Per esempio la dinamo di ervazione utilizza i valori del refrigerante, così come la dinamo magmatica con l'incremento del serbatoio entropo fornito.
+The Coolant manager does not belong to any specific machine but manages coolant values for all other machines.  
+For example the Enervation Dynamo uses the coolant values, as does the Magmatic Dynamo with the Ientropic Reservoir augment provided.
 
-## Importa il pacchetto
+## Import the package
 
-Per abbreviare le chiamate di metodo è possibile [importare](/AdvancedFunctions/Import/) il pacchetto in questo modo:
+To shorten method calls you can [import](/AdvancedFunctions/Import/) the package like so:
 
 ```zenscript
 import mods.thermalexpansion.Coolant;
 ```
 
-## Aggiungi Raffreddante
+## Add Coolant
 
-Usalo per registrare un nuovo refrigerante al manager.  
-CoolantRF deve essere non negativo e il fattore di raffreddamento deve essere compreso tra 1 e 100 (incluso).  
-Se questi intervalli non sono soddisfatti, il refrigerante non sarà registrato!
+Use this to register a new coolant to the manager.  
+CoolantRF needs to be non-negative, and the coolant factor needs to be between 1 and 100 (inclusive).  
+If those ranges are not met, the coolant will not be registered!
 
 ```zenscript
 //mods.thermalexpansion.Coolant.addCoolant(ILiquidStack fluid, int coolantRf, int coolantFactor);
 mods.thermalexpansion.Coolant.addCoolant(<liquid:lava>, 0, 1);
 
 
-//Questi sono due dei valori che TE utilizza di default:
-//mods. hermalexpansion.Coolant.addCoolant(<liquid:water>, 250000, 20);
+//These are two of the values TE uses by default:
+//mods.thermalexpansion.Coolant.addCoolant(<liquid:water>, 250000, 20);
 //mods.thermalexpansion.Coolant.addCoolant(<liquid:cryotheum>, 3000000, 60);
 ```
 
-## Rimuovi Raffreddante
+## Remove Coolant
 
-Usalo per eliminare un refrigerante esistente dal manager.
+Use this to deregister an existing coolant from the manager.
 
 ```zenscript
 //mods.thermalexpansion.Coolant.removeCoolant(ILiquidStack fluid);

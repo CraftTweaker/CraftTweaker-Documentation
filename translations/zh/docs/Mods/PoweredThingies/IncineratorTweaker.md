@@ -1,28 +1,28 @@
-# 驱动器 :: 焚烧器
+# Powered Thingies :: Incinerator
 
 ### 导入
 
 ```zenscript
-导入mods.poweredthingies.Tweeper.incineratorTinflow;
+import mods.poweredthingies.Tweaker.incineratorTweaker as it;
 ```
 
-### 列出密钥，按键删除配方
+### Listing Keys, Removing Recipes by Key, Clearing
 
 ```zenscript
 it().logKeys()
-it().removeRecipe('minecraft:log') // 检查 <logKeys> 输出有效密钥
+it().removeRecipe('minecraft:log') // check <logKeys> output for valid keys
 it().clear()
 ```
 
-### 添加配方
+### Adding Recipe
 
-##### 签名
+##### Signature
 
 ```zenscript
-addRecipe(输入: IItemStack, power: Long, outputs: 数组<WeightedItemStack>)
+addRecipe(input: IItemStack, power: Long, outputs: Array<WeightedItemStack>)
 ```
 
-`功率` 表示输入项将生成的总电源数量 (RF, T, 或 FE).
+`power` represents the total number of power units (RF, T, or FE) the input item will generate.
 
 ##### 例子
 
@@ -30,6 +30,6 @@ addRecipe(输入: IItemStack, power: Long, outputs: 数组<WeightedItemStack>)
 it().addRecipe(<minecraft:bucket>, 3600, [<minecraft:iron_ingot> % 15]);
 ```
 
-### 注
+### Notes
 
-所有这些操作都会被缓存并运行在这台机器的默认注册表完成注册后所有配方(包括来自自定义jsons的配方)。
+All of these actions will get cached and ran after the default registry for this machine has finished registering all recipes (including the ones from the custom jsons).

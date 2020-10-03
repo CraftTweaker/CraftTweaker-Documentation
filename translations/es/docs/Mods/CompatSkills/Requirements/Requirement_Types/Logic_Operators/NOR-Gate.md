@@ -1,25 +1,25 @@
-# Operador NOR
+# NOR Operator
 
-Una compuerta **NOR** es una compuerta invertida **O**. Esto es lo mismo que usar la salida de la compuerta **OR** que la entrada a la compuerta **NOT**. Esto significa que la compuerta **NOR** devuelve `TRUE` sólo cuando ambas entradas son `FALSE`.
+A **NOR** gate is an inverted **OR** gate. This is the same as using the output of the **OR** gate as the input to the **NOT** gate. This means that the **NOR** gate returns `TRUE` only when both inputs are `FALSE`.
 
-| Input 1 | Input 2 | Salida |
+| Input 1 | Input 2 | Output |
 | ------- | ------- | ------:|
 | 0       | 0       |      1 |
 | 0       | 1       |      0 |
 | 1       | 0       |      0 |
 | 1       | 1       |      0 |
 
-    Ejemplo vacío:
+    Empty Example:
     nor|[]~[]
     
-    Ejemplo rellenado:
-    nor|[reskillable:mining|5]~[reskillable:collecting|5]
+    Filled-In Example:
+    nor|[reskillable:mining|5]~[reskillable:gathering|5]
     
 
-## Caso de uso
+## Use-Case
 
-Solo permite usar una pala de madera hasta que el jugador consiga minar o recolectar nivel 5:
+Only allow using a wooden shovel until the player gets mining or gathering level 5:
 
 ```zenscript
-addRequirement(<minecraft:wooden_shovel:*>, "nor|[reskillable:mining|5]~[reskillable:collecting|5]");
+addRequirement(<minecraft:wooden_shovel:*>, "nor|[reskillable:mining|5]~[reskillable:gathering|5]");
 ```

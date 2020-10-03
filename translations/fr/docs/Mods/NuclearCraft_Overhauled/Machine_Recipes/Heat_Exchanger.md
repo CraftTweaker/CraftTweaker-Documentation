@@ -1,15 +1,15 @@
-# Échangeur de chaleur
-**Note : partiellement cassé**
+# Heat Exchanger
+**Note: Partially Broken**
 
-## Importation du paquet en cours
-`mods.nuclearcraft.Échangeur de chaleur`
+## Importing the Package
+`mods.nuclearcraft.HeatExchanger`
 
-## Ajout de recettes
+## Adding Recipes
 ```zenscript
 mods.nuclearcraft.HeatExchanger.addRecipe(ILiquidStack fluidInput, ILiquidStack fluidOutput, double heatRequired, int temperatureIn, int temperatureOut);
 ```
 
-## Suppression des recettes
+## Removing Recipes
 ```zenscript
 mods.nuclearcraft.mods.nuclearcraft.HeatExchanger.removeRecipeWithInput(ILiquidStack fluidInput);
 mods.nuclearcraft.HeatExchanger.removeRecipeWithOutput(ILiquidStack fluidOutput);

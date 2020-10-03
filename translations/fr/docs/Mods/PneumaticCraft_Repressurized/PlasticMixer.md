@@ -1,37 +1,37 @@
-# Mixeur en plastique
+# Plastic Mixer
 
-Le mélangeur en plastique est une machine avec deux fonctions :
+The Plastic Mixer is a machine with two functions:
 
-* Pour solidifier le liquide plastique liquide vers les feuilles en plastique solide, en utilisant des teintures rouges, vertes et bleues pour colorier les feuilles.
-* Faire fondre des feuilles en plastique solide en plastique liquide. Cela nécessite une température minimale de 150°C (423K).
+* To solidify Liquid Plastic fluid to solid Plastic sheets, using red, green and blue dyes to colour the sheets.
+* To melt solid Plastic sheets into Liquid Plastic. This requires a minimum temperature of 150°C (423K).
 
-Le support CraftTweaker ajoute la possibilité de spécifier n'importe quelle combinaison d'articles et de liquides à des fins de fusion et/ou de solidification. Il est possible de spécifier que les articles ne doivent être fondus, que les liquides doivent être solidifiés ou pour permettre un processus bidirectionnel.
+CraftTweaker support adds the ability to specify any item and liquid combination for melting and/or solidifying purposes. It is possible to specify that items should only be melted, fluids should only be solidified, or to allow a two-way process.
 
-Bien que l'objet de solidification puisse être n'importe quel objet, il est plus logique d'utiliser ici des objets colombes puisque les teintures sont toujours utilisées, que l'élément de sortie soit colorable ou non.
+While the solidification target item can be any item, it makes most sense to use colourable items here, since dyes are always used, regardless of whether or not the output item is colourable.
 
-## Appel en cours
+## Calling
 
-Vous pouvez appeler le package Plastic Mixer en utilisant `mods.pneumaticcraft.plasticmixer`.
+You can call the Plastic Mixer package using `mods.pneumaticcraft.plasticmixer`.
 
-## Enlèvement
+## Removing
 
 This function removes the first recipe it finds with the given [ILiquidStack](/Vanilla/Liquids/ILiquidStack/) `input`:
 
 ```zenscript
 mods.pneumaticcraft.plasticmixer.removeRecipe(ILiquidStack fluid);
-// Exemple
+// Example
 mods.pneumaticcraft.plasticmixer.removeRecipe(<liquid:plastic>);
 ```
 
-Cette fonction supprime *toutes les recettes* de mélangeurs en plastique :
+This function removes *all* Plastic Mixer recipes:
 
 ```zenscript
 mods.pneumaticcraft.plasticmixer.removeAllRecipes();
 ```
 
-## Ajout en cours
+## Adding
 
-Les fonctions suivantes peuvent être utilisées pour ajouter des recettes au TPP :
+The following functions can be used to add recipes to the TPP:
 
 ```zenscript
 // Add a two-way recipe (temperature in Kelvin)

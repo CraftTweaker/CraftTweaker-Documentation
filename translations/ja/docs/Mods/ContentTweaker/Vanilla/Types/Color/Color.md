@@ -1,25 +1,25 @@
-# 色
+# Color
 
-Color int オブジェクトの作成方法が不明な場合は、Color Object を代わりに使用できます。
+If you are uncertain on how to create the colour int object, you can use the Color Object instead.
 
 ## パッケージのインポート
 
-問題が発生した場合は、パッケージをインポートする必要があるかもしれませんので、申し訳ありませんし、インポートを追加してください。  
+It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
 `import mods.contenttweaker.Color;`
 
-## 静的メソッド
+## Static Methods
 
-Static Methods は、Object 自体ではなくパッケージ名で呼び出されます。  
-これらのメソッドはすべて、Color Object を返します。
+Static Methods are called on the package name and not on the Object itself.  
+All these Methods return a Color Object.
 
-| ZenMethod      | パラメータタイプ |
-| -------------- | -------- |
-| fromInt(color) | int      |
-| fromHex(color) | 文字列      |
+| ZenMethod      | Parameter Type |
+| -------------- | -------------- |
+| fromInt(color) | int            |
+| fromHex(color) | string         |
 
-## 非静的メソッド
+## Nonstatic Methods
 
-Nonstatic メソッドはパッケージ名ではなく、Object 自体で呼び出されます。
+Nonstatic Methods are not called on the package name but on the Object itself.
 
 | ZenMethod     | 戻り値 |
 | ------------- | --- |

@@ -1,37 +1,37 @@
 # Toaster
 
-Der Toaster bittet um Nahrung, um den Tag zu beginnen.
+The Toaster crips up food to start your day.
 
-## Standard Toaster-Rezepte
+## Default Toaster Recipes
 
-- Rindfleisch -> Gekochtes Rindfleisch
-- Wurst -> Gekochter Wurst
-- Kebab -> Gekochtes Kebab
+- Beef -> Cooked Beef
+- Sausage -> Cooked Sausage
+- Kebab -> Cooked Kebab
 
-## Entfernen
+## Removing
 
-## Entfernen Sie passende Toaster-Rezepte.
+## Remove matching toaster recipes.
 
 ```zenscript
-mods.cfm.Toaster.remove(@Optionale endgültige IIngredient-Ausgabe, @Optionale endgültige IIngredienteneingabe);
+mods.cfm.Toaster.remove(@Optional final IIngredient output, @Optional final IIngredient input);
 
-// Entferne Rezepte, die Toast machen, aus einem BrotSlice
-mods. fm.Toaster.remove(<cfm:item_toast>,<cfm:item_bread_slice>);
-// Alle Rezepte entfernen
+// Remove recipes that make Toast from a Bread Slice
+mods.cfm.Toaster.remove(<cfm:item_toast>,<cfm:item_bread_slice>);
+// Remove all recipes
 mods.cfm.Toaster.remove();
 ```
 
-## Hinzufügen
+## Adding
 
-Toaster-Rezept hinzufügen.
+Add a toaster recipe.
 
-## Unterstützt nur Eingaben der Größe 1.
+## Only supports inputs of size 1.
 
 ```zenscript
-mods.cfm.Toaster.addRecipe(@Nonnull letzte IItemStack-Ausgabe, @Nonnull endgültige IItemStack-Eingabe);
+mods.cfm.Toaster.addRecipe(@Nonnull final IItemStack output, @Nonnull final IItemStack input);
 
-// Füge ein Rezept hinzu, das Brot aus Weizen
-mods.cfm macht. oaster.addRecipe(<minecraft:bread>,<minecraft:wheat>);
-// Füge ein Rezept hinzu, das gekochtes Rindfleisch aus Rindfleisch herstellt
+// Add a recipe that makes Bread from Wheat
+mods.cfm.Toaster.addRecipe(<minecraft:bread>,<minecraft:wheat>);
+// Add a recipe that makes Cooked Beef from Beef
 mods.cfm.Toaster.addRecipe(<minecraft:cooked_beef>,<minecraft:beef>);
 ```

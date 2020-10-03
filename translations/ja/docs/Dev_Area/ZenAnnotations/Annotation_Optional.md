@@ -1,4 +1,4 @@
-# 省略可能
+# Optional
 
 `@Optional` can be given to a Method parameter to declare it as being optional.  
 Optional Parameters can be omitted when calling the method:
@@ -12,7 +12,7 @@ Optional Parameters can be omitted when calling the method:
     void remove(IIngredient output, @Optional IIngredient input);
 ```
 
-[MCFurnaceManager(実装)](https://github.com/jaredlll08/CraftTweaker/blob/1.12/CraftTweaker2-MC1120-Main/src/main/java/crafttweaker/mc1120/furnace/MCFurnaceManager.java)
+[MCFurnaceManager (Implementation)](https://github.com/jaredlll08/CraftTweaker/blob/1.12/CraftTweaker2-MC1120-Main/src/main/java/crafttweaker/mc1120/furnace/MCFurnaceManager.java)
 
 ```java
     @Override
@@ -24,34 +24,34 @@ Optional Parameters can be omitted when calling the method:
     }
 ```
 
-技術的には、実装に `@Optional` は必要ありませんが、確認したい場合は追加できます。 次のいずれかを使用してこのメソッドを呼び出すことができます：
+Technically, you don't need the `@Optional` in the implementation but you can add it if you want to be sure. You can now call this method using either one:
 
 ```java
-furnace.remove(output); ///Input は null
+furnace.remove(output); //Input will be set to null
 furnace.remove(output, input);
 ```
 
-## 省略されたパラメータにはどのような値が挿入されますか?
+## What values are inserted for omited parameters?
 
-### 注釈のみを使用
+### Using only the annotation
 
-Inserted is either `0 0`, `false` or `null`, depending on the annotated Type:
+Inserted is either `0`, `false` or `null`, depending on the annotated Type:
 
 Primitives will be `0` (except bool, which will be false, so technically 0 as well)  
 All Objects will be `null`
 
-### アノテーションメンバの使用
+### Using annotation members
 
-| メンバー        | タイプ             | 既定値              |
+| Member      | Type            | Default value    |
 | ----------- | --------------- | ---------------- |
-| 値           | 文字列             | `""`             |
+| value       | string          | `""`             |
 | methodClass | java.lang.Class | `Optional.class` |
-| methodName  | 文字列             | `"getValue"`     |
+| methodName  | string          | `"getValue"`     |
 
 The Optional annotation also supports default values.  
 If you want to provide a default value, you can do that by giving the `value` member a String representing the parameter.
 
-デフォルトのプリミティブだけが欲しい場合は、あなたが設定されます。
+If you only want a default primitive, then you are set.
 
 ```java
 @ZenMethod
@@ -66,7 +66,7 @@ public static void print3(@Optional("1") int value) {
 }
 ```
 
-If you want a default object or a default primitive that is not a compiletime constant (all annotation members need to be compiletime constants!), you can set the other two members: This will replace the parameter with a call to the given (static) method `methodClass.methodName(value)`. そのようなメソッドが見つからない場合はエラーが発生し、null を挿入します。
+If you want a default object or a default primitive that is not a compiletime constant (all annotation members need to be compiletime constants!), you can set the other two members: This will replace the parameter with a call to the given (static) method `methodClass.methodName(value)`. If no such method is found, will error and insert null.
 
 ```java
 @ZenMethod
@@ -80,12 +80,12 @@ public static IItemStack getFromString(String value) {
 }
 ```
 
-## どのパラメータに注釈を付けることができますか？
+## What parameters can be annotated?
 
-すべてのパラメータに注釈を付けることができますが、注釈付きのパラメータは最後にある必要があることを覚えておく必要があります。 技術的にはうまくいきますがメソッド呼び出しは失敗します
+All parameters can be annotated, but you need to remember that annotated parameters need to be at the end, so while this would technically work, method calls would fail:
 
 ```java
 myMethod(@Optional String name, int number)
 ```
 
-intのみでこのメソッドを呼び出すと常に失敗します！
+Calling this method with only an int will always fail!

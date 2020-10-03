@@ -1,30 +1,30 @@
-# 爆発の作成
+# Explosion Crafting
 
-爆発クラフトは、地面にあるアイテムであるときに爆発にさらすことで、他のアイテムに変換するために使用されます。 設定可能な(ランダム)損失率を指定できます。 デフォルトでは、これは20%の損失率で鉄インゴットを圧縮された鉄インゴットに変換するために使用されます。
+Explosion Crafting is used to transform one item into another by exposing it to an explosion when it is an item on the ground. A configurable (random) loss rate can be specified. By default, this is used to convert Iron Ingots into Compressed Iron Ingots with a 20% loss rate.
 
-## 発信中
+## Calling
 
-`mods.emeraticcraft.explosioncrafting` を使って爆発製作パッケージを呼び出すことができます。
+You can call the Explosion Crafting package using `mods.pneumaticcraft.explosioncrafting`
 
-## 削除中
+## Removing
 
-この関数は、与えられた [IIngredient](/Vanilla/Variable_Types/IIngredient/) `出力` で見つけた最初のレシピを削除します。
+This function removes the first recipe it finds with the given [IIngredient](/Vanilla/Variable_Types/IIngredient/) `output`:
 
 ```zenscript
-mods.emeraticcraft.expulsioncraft.removeRecipe(IIngredient output);
+mods.pneumaticcraft.explosioncrafting.removeRecipe(IIngredient output);
 // Example
-mods.emeraticcraft.explosioncraft.removeRecipe(<pneumaticcraft:ingot_iron_compressed>);
+mods.pneumaticcraft.explosioncrafting.removeRecipe(<pneumaticcraft:ingot_iron_compressed>);
 ```
 
-この機能は、 *個の* 個の爆破製作レシピを削除します。
+This function removes *all* Explosion Crafting recipes:
 
 ```zenscript
-mods.emeraticcraft.expulsioncraft.removeAllRecipes();
+mods.pneumaticcraft.explosioncrafting.removeAllRecipes();
 ```
 
-## 追加中
+## Adding
 
-これらの機能は、新たな爆発製作レシピを追加するために使用されます。
+These functions are used to add new Explosion Crafting recipes:
 
 ```zenscript
 mods.pneumaticcraft.explosioncrafting.addRecipe(IItemStack input, IItemStack output, int loss_rate);

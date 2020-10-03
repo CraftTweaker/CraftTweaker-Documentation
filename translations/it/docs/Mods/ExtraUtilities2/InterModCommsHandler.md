@@ -1,20 +1,20 @@
 # InterModCommsHandler
 
-InterModComms sono piccoli messaggi inviati tra le mod per consentire contenuti aggiuntivi.  
-Ad esempio ModA invia un messaggio alla struttura di Tinkers per dire a TiCon di creare materiali aggiuntivi per la fonderia.
+InterModComms are small messages sent between mods to allow for additional content.  
+For example ModA sends a message to Tinkers' Construct to tell TiCon to create additional materials for the smeltery.
 
-## Importazione del pacchetto
+## Importing the package
 
-Se si desidera abbreviare le chiamate di metodo o incontrare eventuali problemi si potrebbe aver bisogno di [importare](/AdvancedFunctions/Import) il pacchetto.  
-Puoi farlo usando
+If you want to shorten method calls or encounter any issues you might need to [import](/AdvancedFunctions/Import) the package.  
+You can do so using
 
 ```zenscript
-importazione extrautilities2.Tweaker.InterModCommsHandler;
+import extrautilities2.Tweaker.InterModCommsHandler;
 ```
 
-## Invio messaggi
+## Sending messages
 
-È possibile inviare il messaggio subito o in esecuzione. Puoi inviare NBT come [IData Map](/Vanilla/Data/IData), una semplice stringa, un [IItemStack](/Vanilla/Items/IItemStack) o una posizione delle risorse.
+You can either send the message right away or at runtime. You can either send NBT as [IData Map](/Vanilla/Data/IData), a simple string, an [IItemStack](/Vanilla/Items/IItemStack) or a resource location.
 
 ```zenscript
 sendMessageNBT(String mod, String key, DataMap dataMap);

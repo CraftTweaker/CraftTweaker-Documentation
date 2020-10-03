@@ -1,44 +1,44 @@
 # IWorldInfo
 
-L'interfaccia World Info viene utilizzata per ottenere ancora più informazioni da un oggetto [IWorld](/Vanilla/World/IWorld/).
+The World Info interface is used to get even more information out of an [IWorld](/Vanilla/World/IWorld/) object.
 
-## Importazione del pacchetto
+## Importing the package
 
-Potrebbe essere necessario per importare il pacchetto se si verificano problemi, in modo da essere più sicuri di spiacenti e aggiungere l'importazione.  
+It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
 `import crafttweaker.world.IWorldInfo;`
 
-## ZenMetodi senza parametri e ZenGetters
+## ZenMethods without parameters and ZenGetters
 
-| ZenGetter             | ZenMethod                  | Tipo Di Reso |
-| --------------------- | -------------------------- | ------------ |
-| ComandiConsentiti     | isCommandsAllowed()        | bool         |
-| borderCenterX         | getBorderCenterX()         | doppia       |
-| borderCenterZ         | getBorderCenterZ()         | doppia       |
-| borderDamagePerBlock  | getBorderDamagePerBlock()  | doppia       |
-| borderSafeZone        | getBorderSafeZone()        | doppia       |
-| borderSize            | getBorderSize()            | doppia       |
-| borderWarningDistanza | getBorderWarningDistance() | int          |
-| borderWarningTime     | getBorderWarningTime()     | int          |
-| cleanWeatherTime      | getCleanWeatherTime()      | doppia       |
-| difficoltà            | getDifficulty()            | stringa      |
-| generatorOptions      | getGeneratorOptions()      | stringa      |
-| lastTimePlayed        | getLastTimePlayed()        | lungo        |
-| tempo di pioggia      | getRainTime()              | int          |
-| saveVersion           | getSaveVersion()           | int          |
-| seme                  | getSeed()                  | lungo        |
-| spawnX                | getSpawnX()                | int          |
-| spawnY                | getSpawnY()                | int          |
-| spawnZ                | getSpawnZ()                | int          |
-| ThunderTime           | getThunderTime()           | int          |
-| versionId             | getVersionId()             | int          |
-| versionName           | getVersionName()           | stringa      |
-| worldName             | getWorldName()             | stringa      |
-| worldTotalTime        | getWorldTotalTime()        | lungo        |
-| boderLerpTarget       | getBoderLerpTarget()       | doppia       |
-| boderLerpTime         | getBoderLerpTime()         | lungo        |
-| DifficoltàBloccato    | isDifficultyLocked()       | bool         |
-| hardcoreModeAbilitato | isHardcoreModeEnabled()    | bool         |
-| inizializzato         | isInitialized()            | bool         |
-| mapFeaturesAbilitato  | isMapFeaturesEnabled()     | bool         |
-| tuono                 | isThundering()             | bool         |
-| versionSnapshot       | isVersionnapshot()         | bool         |
+| ZenGetter             | ZenMethod                  | Return Type |
+| --------------------- | -------------------------- | ----------- |
+| commandsAllowed       | isCommandsAllowed()        | bool        |
+| borderCenterX         | getBorderCenterX()         | double      |
+| borderCenterZ         | getBorderCenterZ()         | double      |
+| borderDamagePerBlock  | getBorderDamagePerBlock()  | double      |
+| borderSafeZone        | getBorderSafeZone()        | double      |
+| borderSize            | getBorderSize()            | double      |
+| borderWarningDistance | getBorderWarningDistance() | int         |
+| borderWarningTime     | getBorderWarningTime()     | int         |
+| cleanWeatherTime      | getCleanWeatherTime()      | double      |
+| difficulty            | getDifficulty()            | string      |
+| generatorOptions      | getGeneratorOptions()      | string      |
+| lastTimePlayed        | getLastTimePlayed()        | long        |
+| rainTime              | getRainTime()              | int         |
+| saveVersion           | getSaveVersion()           | int         |
+| seed                  | getSeed()                  | long        |
+| spawnX                | getSpawnX()                | int         |
+| spawnY                | getSpawnY()                | int         |
+| spawnZ                | getSpawnZ()                | int         |
+| thunderTime           | getThunderTime()           | int         |
+| versionId             | getVersionId()             | int         |
+| versionName           | getVersionName()           | string      |
+| worldName             | getWorldName()             | string      |
+| worldTotalTime        | getWorldTotalTime()        | long        |
+| boderLerpTarget       | getBoderLerpTarget()       | double      |
+| boderLerpTime         | getBoderLerpTime()         | long        |
+| difficultyLocked      | isDifficultyLocked()       | bool        |
+| hardcoreModeEnabled   | isHardcoreModeEnabled()    | bool        |
+| initialized           | isInitialized()            | bool        |
+| mapFeaturesEnabled    | isMapFeaturesEnabled()     | bool        |
+| thundering            | isThundering()             | bool        |
+| versionSnapshot       | isVersionSnapshot()        | bool        |

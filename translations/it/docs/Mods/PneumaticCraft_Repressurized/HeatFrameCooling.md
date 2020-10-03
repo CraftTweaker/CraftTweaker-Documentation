@@ -1,14 +1,14 @@
-# Raffreddamento Cornice Di Calore
+# Heat Frame Cooling
 
-Il raffreddamento del telaio termico può essere utilizzato per trasformare un oggetto in un altro posizionando gli oggetti in un petto o in un altro inventario con un telaio termico collegato, e raffreddare ad una temperatura inferiore a 0°C (comunemente utilizzando un tubo Vortice).
+Heat Frame Cooling can be used to transform one item into another by placing items in a chest or other inventory with a Heat Frame attached, and cooling it to below 0°C (commonly using a Vortex Tube).
 
-## Chiamata
+## Calling
 
-È possibile chiamare il pacchetto Heat Frame Cooling utilizzando `mods.pneumaticcraft.heatframecooling`
+You can call the Heat Frame Cooling package using `mods.pneumaticcraft.heatframecooling`
 
-## Rimozione
+## Removing
 
-Questa funzione rimuove la prima ricetta che trova con l'output [IIngrediente](/Vanilla/Variable_Types/IIngredient/) `dato`:
+This function removes the first recipe it finds with the given [IIngredient](/Vanilla/Variable_Types/IIngredient/) `output`:
 
 ```zenscript
 mods.pneumaticcraft.heatframecooling.removeRecipe(IIngredient output);
@@ -16,15 +16,15 @@ mods.pneumaticcraft.heatframecooling.removeRecipe(IIngredient output);
 mods.pneumaticcraft.heatframecooling.removeRecipe(<minecraft:obsidian>);
 ```
 
-Questa funzione rimuove *tutte le* ricette di raffreddamento del telaio termico:
+This function removes *all* Heat Frame Cooling recipes:
 
 ```zenscript
-mods.pneumaticcraft.heatframecooling.removeAllRicette();
+mods.pneumaticcraft.heatframecooling.removeAllRecipes();
 ```
 
-## Aggiunta
+## Adding
 
-Queste funzioni sono utilizzate per aggiungere nuove ricette per il sistema di raffreddamento a telaio termico:
+These functions are used to add new recipes for the Heat Frame Cooling system:
 
 ```zenscript
 mods.pneumaticcraft.heatframecooling.addRecipe(IItemStack input, IItemStack output);

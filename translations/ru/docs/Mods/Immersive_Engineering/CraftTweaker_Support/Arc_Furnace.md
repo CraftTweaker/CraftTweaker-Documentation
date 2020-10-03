@@ -1,45 +1,45 @@
-# Печь дуги
+# Arc Furnace
 
-С помощью упаковки можно добавить/удалить рецепты из печи дуги погружения.
+The Arc Furnace package can be used to add/remove recipes to/from the Immersive Engineering Arc Furnace.
 
-## Вызов пакета
+## Calling The Package
 
-Вы можете вызвать пакет ArcFurnace с помощью `mods.immersiveengineering.ArcFurnace`.
+You can call the ArcFurnace package using `mods.immersiveengineering.ArcFurnace`.
 
-## Добавить рецепт
+## Add Recipe
 
-| Требуется | Тип                | Тип данных                                                                             |
-| --------- | ------------------ | -------------------------------------------------------------------------------------- |
-| Требуется | Вывод              | [IItemStack](/Vanilla/Items/IItemStack/)                                               |
-| Требуется | Input              | [Иингредиент](/Vanilla/Variable_Types/IIngredient/)                                    |
-| Требуется | Slag               | [IItemStack](/Vanilla/Items/IItemStack/)                                               |
-| Требуется | Время              | Целое                                                                                  |
-| Требуется | Энергия за выбор   | Целое                                                                                  |
-| Optional  | Добавки            | [Ингредиент](/Vanilla/Variable_Types/IIngredient/) массив[]                            |
-| Optional  | Особый тип рецепта | Строка [specialRecipeTypes](/Mods/Immersive_Engineering/Variables/SpecialRecipeTypes/) |
+| Required | Тип                 | Data Type                                                                              |
+| -------- | ------------------- | -------------------------------------------------------------------------------------- |
+| Required | Output              | [IItemStack](/Vanilla/Items/IItemStack/)                                               |
+| Required | Input               | [IIngredient](/Vanilla/Variable_Types/IIngredient/)                                    |
+| Required | Slag                | [IItemStack](/Vanilla/Items/IItemStack/)                                               |
+| Required | Time                | Integer                                                                                |
+| Required | Energy Per Tick     | Integer                                                                                |
+| Optional | Additives           | [IIngredient](/Vanilla/Variable_Types/IIngredient/) Array[]                            |
+| Optional | Special Recipe Type | String [specialRecipeTypes](/Mods/Immersive_Engineering/Variables/SpecialRecipeTypes/) |
 
 ### Пример
 
 ```zenscript
-//Пример:
+//Example:
 mods.immersiveengineering.ArcFurnace.addRecipe(IItemStack output, IIngredient input, IItemStack slag, int time, int energyPerTick, @Optional IIngredient[] additives, @Optional String specialRecipeType);
 
-mods. mmersiveengineering.ArcFurnace.addRecipe(<minecraft:diamond>, <ore:logWood>, <minecraft:dirt>, 2000, 2048);
-mods.immersiveengineering.ArcFurnace. ddRecipe(<minecraft:diamond>, <ore:logWood>, <minecraft:dirt>, 2000, 2048, [<ore:oreIron>, <ore:oreGold>]);
-mods.immersiveengineering. rcFurnace.addRecipe(<minecraft:diamond>, <ore:logWood>, <minecraft:dirt>, 2000, 2048, [<ore:oreIron>, <ore:oreGold>], "Руда");
-мод. mmersiveengineering.ArcFurnace.addRecipe(<minecraft:diamond>, <ore:logWood>, <minecraft:dirt>, 2000, 2048, [<ore:oreIron>, <ore:oreGold>], "Alloying");
+mods.immersiveengineering.ArcFurnace.addRecipe(<minecraft:diamond>, <ore:logWood>, <minecraft:dirt>, 2000, 2048);
+mods.immersiveengineering.ArcFurnace.addRecipe(<minecraft:diamond>, <ore:logWood>, <minecraft:dirt>, 2000, 2048, [<ore:oreIron>, <ore:oreGold>]);
+mods.immersiveengineering.ArcFurnace.addRecipe(<minecraft:diamond>, <ore:logWood>, <minecraft:dirt>, 2000, 2048, [<ore:oreIron>, <ore:oreGold>], "Ores");
+mods.immersiveengineering.ArcFurnace.addRecipe(<minecraft:diamond>, <ore:logWood>, <minecraft:dirt>, 2000, 2048, [<ore:oreIron>, <ore:oreGold>], "Alloying");
 ```
 
-## Удалить рецепт
+## Remove Recipe
 
-| Тип   | Тип данных                               |
-| ----- | ---------------------------------------- |
-| Вывод | [IItemstack](/Vanilla/Items/IItemStack/) |
+| Тип    | Data Type                                |
+| ------ | ---------------------------------------- |
+| Output | [IItemstack](/Vanilla/Items/IItemStack/) |
 
 ### Пример
 
 ```zenscript
-//Пример:
-mods.immersiveengineering.ArcFurnace.removeRecipe(выход IItemstack);
+//Example:
+mods.immersiveengineering.ArcFurnace.removeRecipe(IItemstack output);
 mods.immersiveengineering.ArcFurnace.removeRecipe(<minecraft:diamond>);
 ```

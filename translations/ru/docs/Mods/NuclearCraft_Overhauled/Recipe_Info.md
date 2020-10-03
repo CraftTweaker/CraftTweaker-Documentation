@@ -1,24 +1,24 @@
-# Информация о рецепте
+# Recipe Info
 
-## Обработчики рецептов
-Если вы хотите получить обработчик рецепта, связанный с типом рецепта, используйте `getRecipeHandler()`. Например, если вы хотите получить ручку с рецептом Топливного действия, используйте `mods.nuclearcraft.SolidFission.getRecipeHandler()`.
+## Recipe Handlers
+If you want to get the recipe handler associated with a recipe type, use `getRecipeHandler()`. For example, if you want toget the Solid Fuel Fission recipe handler, use `mods.nuclearcraft.SolidFission.getRecipeHandler()`.
 
-## Методы обработчика рецептов
+## Recipe Handler Methods
 ```zenscript
 RecipeHandler::getRecipeName();
-Обработчик рецепта::getRecipeList();
+RecipeHandler::getRecipeList();
 
-Обработчик рецепта: :getItemInputSize();
-Обработчик рецепта::getFluidInputSize();
-Обработчик рецепта:getItemOutputSize();
-Обработчик рецепта::getFluidOutputSize();
-Обработчик рецепта:::isShapeless();
+RecipeHandler::getItemInputSize();
+RecipeHandler::getFluidInputSize();
+RecipeHandler::getItemOutputSize();
+RecipeHandler::getFluidOutputSize();
+RecipeHandler::isShapeless();
 ```
 
-## Методы рецепта
+## Recipe Methods
 ```zenscript
-Рецепт::getItemIngredient(int index);
-Рецепт::getFluidIngredient(int index);
-Рецепт::getItemProduct(int index);
-Рецепт::getFluidProduct(int index);
+Recipe::getItemIngredient(int index);
+Recipe::getFluidIngredient(int index);
+Recipe::getItemProduct(int index);
+Recipe::getFluidProduct(int index);
 ```

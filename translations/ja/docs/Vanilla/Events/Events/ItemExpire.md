@@ -1,26 +1,25 @@
-# アイテムの有効期限
+# ItemExpire
 
-ItemExpire Event は、アイテムの有効期限が切れるたびに発生します(そのマキムの寿命に達する)。  
-項目がデッドとしてマークされるのを防ぐため、キャンセルすることができます。   
-  
-キャンセルされた場合は、アイテムの寿命に `extralife` を追加します。
+The ItemExpire Event is fired whenever an Item expires (reaches its macimum lifespan).  
+It can be canceled to prevent the item from being flagged as dead.  
+If canceled it will add `extralife` to the item's lifetime.
 
-## イベントクラス
+## Event Class
 
 You will need to cast the event in the function header as this class:  
 `crafttweaker.event.ItemExpireEvent`  
 You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
 
-## イベントインターフェースの拡張
+## Event interface extensions
 
-PlayerDeathDrops イベントは以下のインターフェイスを実装しており、それらのメソッド/getters/settersもすべてコールできます。
+PlayerDeathDrops Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
 
 - [IEntityEvent](/Vanilla/Events/Events/IEntityEvent/)
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 
 ## ZenGetter/ZenSetter
 
-| ZenGetter | ZenSetter | タイプ                                           |
+| ZenGetter | ZenSetter | Type                                          |
 | --------- | --------- | --------------------------------------------- |
-| 項目        |           | [IEntityItem](/Vanilla/Entities/IEntityItem/) |
+| item      |           | [IEntityItem](/Vanilla/Entities/IEntityItem/) |
 | extraLife | extraLife | int                                           |

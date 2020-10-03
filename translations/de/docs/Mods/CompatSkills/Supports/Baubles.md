@@ -1,5 +1,5 @@
 # Baubles
 
-## Baubles-Unterstützung
+## Baubles Support
 
-Baubles-Support ist Teil der Standard-ItemStack-Anforderungssperre. Das bedeutet, dass alle Artikel, für die Sie nicht die erforderlichen Anforderungen in Ihrem Baubles Inventar haben, automatisch ausgeworfen und eine Fehlermeldung ausgedruckt wird!
+Baubles-Support is part of the standard ItemStack-Requirement locks. This means that any Item you do not have the required requirements for in your Baubles Inventory will be automatically-ejected and a error message will be printed!

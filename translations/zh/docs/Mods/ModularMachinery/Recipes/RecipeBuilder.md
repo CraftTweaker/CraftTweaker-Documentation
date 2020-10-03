@@ -1,24 +1,24 @@
-# 累积生成器
+# RecipeBuilder
 
-RecipeBuilder类仅有一个目标: 为你创建一个新的 [食谱原始](/Mods/ModularMachinery/Recipes/RecipePrimer/) 对象。
+The RecipeBuilder class only has one objective: Creating a new [RecipePrimer](/Mods/ModularMachinery/Recipes/RecipePrimer/) Object for you.
 
 ## 导入包
 
-您可以使用 `mods.modularmachinery.RecipeBuilder 调用 Brew 软件包`
+You can call the Brew package using `mods.modularmachinery.RecipeBuilder`
 
-## 创建食谱。
+## Creating a RecipePrimer.
 
-这些是类中唯一找到的函数，它们都返回了一个新的 [食谱原始](/Mods/ModularMachinery/Recipes/RecipePrimer/) 对象。
+These are the only functions to be found in the class, they both return a new [RecipePrimer](/Mods/ModularMachinery/Recipes/RecipePrimer/) Object.
 
 ```zenscript
 //mods.modularmachinery.RecipeBuilder.newBuilder(String recipeRegistryName, String associatedMachineRegistryName, int processingTickTime);
 
 
-/mods.armachinery.RecipeBuilder.newBuilder(String recipeRegistryName, String associatedMachineRegistryName, int processingTickTime, int sortingPriority);
+//mods.modularmachinery.RecipeBuilder.newBuilder(String recipeRegistryName, String associatedMachineRegistryName, int processingTickTime, int sortingPriority);
 
 
 ```
 
 ```zenscript
-var 项目 = <item:minecraft:gold_ingot>;
+var item = <item:minecraft:gold_ingot>;
 ```

@@ -1,28 +1,28 @@
 # IEnchantment
 
-Eine IEnchantment ist im Wesentlichen eine [IEnchantmentDefinition](/Vanilla/Enchantments/IEnchantmentDefinition/) und eine Verzauberungsstufe.
+An IEnchantment essentially is an [IEnchantmentDefinition](/Vanilla/Enchantments/IEnchantmentDefinition/) and an enchantment level.
 
 ## Dieses Paket importieren
 
-Möglicherweise ist es erforderlich, dass Sie das Paket importieren, wenn Sie irgendwelche Probleme haben (z.B. [Array](/AdvancedFunctions/Arrays_and_Loops/)), also besser sicher sein als bedauern und fügen Sie den Import.  
-`importiere crafttweaker.enchantments.IEnchantment;`
+It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
+`import crafttweaker.enchantments.IEnchantment;`
 
 ## ZenGetter/ZenSetter
 
 | ZenGetter   | ZenSetter   | Type                                                                    |
 | ----------- | ----------- | ----------------------------------------------------------------------- |
 | definition  |             | [IEnchantmentDefinition](/Vanilla/Enchantments/IEnchantmentDefinition/) |
-| Level       |             | int                                                                     |
+| level       |             | int                                                                     |
 | displayName | displayName | string                                                                  |
 
-## ZenMethoden
+## ZenMethods
 
-### Die Verzauberung als NBT abrufen
+### Retrieve the Enchantment as NBT
 
-Möglicherweise möchten Sie das NBT-Tag des Verzauberungszaubers erhalten.  
-Sie können es entweder als [IData](/Vanilla/Data/IData/) übertragen oder die Methode verwenden:
+You might want to get the Enchantment's NBT-Tag.  
+You can either cast it as [IData](/Vanilla/Data/IData/) or use the method:
 
 ```zenscript
 ench.makeTag();
-ench als crafttweaker.data.IData;
+ench as crafttweaker.data.IData;
 ```

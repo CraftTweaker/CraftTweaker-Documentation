@@ -1,32 +1,32 @@
-# Обработчик скобок повреждения
+# DamageSource Bracket Handler
 
-Обработчик исходных скобок урона позволяет ссылаться на [IDamageSources](/Vanilla/Damage/IDamageSource/) в игре.
+The Damage Source Bracket Handler allows you to refer to [IDamageSources](/Vanilla/Damage/IDamageSource/) in the game.
 
-Если источник повреждения не является одним из предопределенных, то это создаст новый источник с заданным именем.
+If the Damage source is not one of the predefined ones, this will create a new one with the given name.
 
 <details>
-    <summary>Предварительно зарегистрированные типы источников урона</summary>
+    <summary>Preregistered Damage Source Types</summary>
     <ul>
-        <li>В начало</li>
-        <li>LIGNING_BOLT</li>
+        <li>IN_FIRE</li>
+        <li>LIGHTNING_BOLT</li>
         <li>ON_FIRE</li>
         <li>LAVA</li>
         <li>HOT_FLOOR</li>
-        <li>В WALL</li>
-        <li>СОЗДАНИЕ</li>
-        <li>БРОНИРОВАНИЕ</li>
-        <li>НАЧАТЬ</li>
+        <li>IN_WALL</li>
+        <li>CRAMMING</li>
+        <li>DROWN</li>
+        <li>STARVE</li>
         <li>CACTUS</li>
-        <li>СНОЙ</li>
+        <li>FALL</li>
         <li>FLY_INTO_WALL</li>
-        <li>OUT_WORLD</li>
+        <li>OUT_OF_WORLD</li>
         <li>GENERIC</li>
-        <li>МАГИЧЕСКИЙ</li>
-        <li>СВОБОДА</li>
-        <li>ПРИГЛАСИТЬ</li>
-        <li>FALLING BLOCK</li>
-        <li>ДЕРЖАНИЕ_СТАНДАРТЫ</li>
-        <li>ПОДРОБНО</li>
+        <li>MAGIC</li>
+        <li>WITHER</li>
+        <li>ANVIL</li>
+        <li>FALLING_BLOCK</li>
+        <li>DRAGON_BREATH</li>
+        <li>FIREWORKS</li>
     </ul>
 </details>
 

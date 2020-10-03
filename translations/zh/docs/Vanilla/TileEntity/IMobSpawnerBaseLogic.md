@@ -1,25 +1,25 @@
 # IMobSpawnerBaseLogic
 
-IMobSpawnerBaseLogic 对象包含关于如何和在哪里生成东西的所有信息。
+The IMobSpawnerBaseLogic object contains all kinds of information on how and where to spawn something.
 
 ## 导入类
 
-可能需要 [导入](/AdvancedFunctions/Import/) 类以避免错误。  
-`导入craftminstruer.tileentity.IMobSpawnerBaseLogic；`
+It might be required to [import](/AdvancedFunctions/Import/) the class to avoid errors.  
+`import crafttweaker.tileentity.IMobSpawnerBaseLogic;`
 
 ## ZenGetters
 
-| ZenGetter  | ZenSetter |                                       |
-| ---------- | --------- | ------------------------------------- |
-| `nbtData`  | `nbtData` | [IData](/Vanilla/Data/IData/)         |
-|            | `实体定义`    | [IPlayer](/Vanilla/Players/IPlayer/)  |
-| `世界`       |           | [IWorld](/Vanilla/World/IWorld)       |
-| `blockPos` |           | [IBlockPos](/Vanilla/World/IBlockPos) |
+| ZenGetter  | ZenSetter          |                                       |
+| ---------- | ------------------ | ------------------------------------- |
+| `nbtData`  | `nbtData`          | [IData](/Vanilla/Data/IData/)         |
+|            | `entityDefinition` | [IPlayer](/Vanilla/Players/IPlayer/)  |
+| `world`    |                    | [IWorld](/Vanilla/World/IWorld)       |
+| `blockPos` |                    | [IBlockPos](/Vanilla/World/IBlockPos) |
 
 ## ZenMethods
 
 ```zenscript
-无效的updateSpawner();
+void updateSpawner();
 
-无效的 setDelayToMin();
+void setDelayToMin();
 ```

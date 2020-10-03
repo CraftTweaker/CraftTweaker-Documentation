@@ -1,16 +1,16 @@
-# Stop hutniczy
+# Alloy Smelter
 
-## Importowanie pakietu
+## Importing the Package
 `mods.techreborn.alloySmelter`
 
-## Dodawanie przepisów
+## Adding Recipes
 ```zenscript
-mods.techreborn.alloySmelter.addRecipe(wyjście IItemStack input1, IIngredient input2, int ticktime, int euTick);
+mods.techreborn.alloySmelter.addRecipe(IItemStack output, IIngredient input1, IIngredient input2, int ticktime, int euTick);
 ```
 
-## Usuwanie przepisów
+## Removing Recipes
 ```zenscript
-mods.techreborn.alloySmelter.removeInputRecipe(ISkładnik Składnikowy, ISkładnik ISkładnikaB);
-mods.techreborn.alloySmelter.removeRecipe(wyjście IItemStack);
+mods.techreborn.alloySmelter.removeInputRecipe(IIngredient ingredientA, IIngredient ingredientB);
+mods.techreborn.alloySmelter.removeRecipe(IItemStack output);
 mods.techreborn.alloySmelter.removeAll();
 ```

@@ -1,34 +1,33 @@
 # LivingKnockBack
 
-このイベントはエンティティがノックバックされたときに発生します。 イベントは **キャンセル可能** で、エンティティがノックバックされるのを防ぎます。 代わりに、XとZ比に加えてノックバックの強度を調整することができます。
+This event is fired whenever an entity is knocked back. The event is **cancelable** and doing so will prevent the entity from being knocked back. Alternately, the strength of the knockback in addition to the X and Z ratios can be adjusted.
 
-## イベントクラス
-関数ヘッダーのイベントをこのクラスとしてキャストする必要があります:  
-`crafttweaker.event. ivingKnockBackEvent <br x-id="2" /> 
- <code>`  
-もちろん、 [インポート](/AdvancedFunctions/Import/) 前にそのクラスをインポートして、その名前を使用することもできます。
+## Event Class
+You will need to cast the event in the function header as this class:  
+`crafttweaker.event.LivingKnockBackEvent`  
+You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
 
-## イベントインターフェースの拡張
-LivingKnockBack Eventsは以下のインターフェースを実装し、それらのメソッド/ゲッター/セッターをすべて呼び出すことができます。
+## Event interface extensions
+LivingKnockBack Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
 
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 - [ILivingEvent](/Vanilla/Events/Events/ILivingEvent/)
 
 
 ## ZenGetters/ZenSetters
-イベント中に以下の情報を取得/設定できます:
+The following information can be retrieved/set during the event:
 
-| ZenGetter          | ZenSetter | タイプ                                   |
-| ------------------ | --------- | ------------------------------------- |
-| `攻撃`               | `攻撃`      | [IEntity](/Vanilla/Entities/IEntity/) |
-| `オリジナル・アタッカー`      |           | [IEntity](/Vanilla/Entities/IEntity/) |
-| `強度`               | `強度`      | float型                                |
-| `originalStrength` |           | float型                                |
-| `ratioX`           | `ratioX`  | double型                               |
-| `レシオZ`             | `レシオZ`    | double型                               |
-| `originalRatioX`   |           | double型                               |
-| `OriginalRatioZ`   |           | double                                |
+| ZenGetter          | ZenSetter  | Type                                  |
+| ------------------ | ---------- | ------------------------------------- |
+| `attacker`         | `attacker` | [IEntity](/Vanilla/Entities/IEntity/) |
+| `originalAttacker` |            | [IEntity](/Vanilla/Entities/IEntity/) |
+| `strength`         | `strength` | float型                                |
+| `originalStrength` |            | float型                                |
+| `ratioX`           | `ratioX`   | double型                               |
+| `ratioZ`           | `ratioZ`   | double型                               |
+| `originalRatioX`   |            | double型                               |
+| `originalRatioZ`   |            | double                                |
 
-## メモ
+## Notes
 
-When the event arrives, it's possible that the `attacker`, `strength`, or the various `ratio`s have already been modified. これらの値は、 `original*` 変数で確認できます。
+When the event arrives, it's possible that the `attacker`, `strength`, or the various `ratio`s have already been modified. You can find these values in the `original*` variables.

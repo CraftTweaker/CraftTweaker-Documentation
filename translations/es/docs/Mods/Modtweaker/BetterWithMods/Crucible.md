@@ -1,46 +1,46 @@
-# Crisol
+# Crucible
 
-## Receta básica
+## Basic Recipe
 
-* Añade una Receta Crucible no estocada 
+* Adds a Unstoked Crucible Recipe 
 
 ```zenscript
-mods.betterwithmods.Crucible.addUnstoked(IIngredient[] entradas, ItemStack[] salidas);
-//Ejemplos
+mods.betterwithmods.Crucible.addUnstoked(IIngredient[] inputs, IItemStack[] outputs);
+//Examples
 mods.betterwithmods.Crucible.addUnstoked([<ore:cobblestone>],[<minecraft:stone>]);
 mods.betterwithmods.Crucible.addUnstoked([<minecraft:dirt>],[<minecraft:grass>]);
 ```
 
-* Añade una receta de Crucible acechada 
+* Adds a Stoked Crucible Recipe 
 
 ```zenscript
-mods.betterwithmods.Crucible.addStoked(IIngredient[] entradas, ItemStack[] salidas);
-//Ejemplos
+mods.betterwithmods.Crucible.addStoked(IIngredient[] inputs, IItemStack[] outputs);
+//Examples
 mods.betterwithmods.Crucible.addStoked([<ore:cobblestone>],[<minecraft:stone>]);
 mods.betterwithmods.Crucible.addStoked([<minecraft:dirt>],[<minecraft:grass>]);
 ```
 
-## Eliminar
+## Removal
 
-* Elimina una receta de Crisol basada en la salida
+* Remove a Crucible recipe based on the output
 
 ```zenscript
-mods.betterwithmods.Crucible.remove(ItemStack[] salidas);
+mods.betterwithmods.Crucible.remove(IItemStack[] outputs);
 ```
 
-* Quitar todas las recetas de Crucible
+* Remove all Crucible recipes
 
 ```zenscript
 mods.betterwithmods.Crucible.removeAll();
 ```
 
-## Constructor
+## Builder
 
-El Crisol tiene un constructor de recetas que permite un control más preciso de las recetas. Todos los métodos anteriores son simplemente atajos al uso del constructor.
+The Crucible has a recipe builder that allows more precise control over the recipes. All previous methods are simply short cuts to using the builder.
 
-* Crear un nuevo constructor Crucible. `mods.betterwithmods.Crucible.builder()`
+* To create a new Crucible builder. `mods.betterwithmods.Crucible.builder()`
 
-* Métodos Crucibles
+* Crucible methods
      
      * Sets up the inputs and outputs of the recipe  
           zenscript buildRecipe(IIngredient[] inputs, IItemStack[] outputs)  
@@ -48,12 +48,12 @@ El Crisol tiene un constructor de recetas que permite un control más preciso de
                     zenscript
                     buildRecipe(IIngredient[] inputs, IItemStack[] outputs)
      
-     * Establece la prioridad de la receta, cuanto más baja sea la prioridad, más pronto será fabricada. Default=0.  
+     * Sets the priority of the recipe, the lower the priority the sooner it will be crafted. Default=0.  
           zenscript setPriority(int priority)  
               zenscript
               setPriority(int priority)
      
-     * Establecer los requisitos de calor de la receta. Set the Heat requirements of the recipe. Calor no ahumado = 1, Calor almacenado = 2. You can add custom heat sources, and even custom heat levels using the [Heat Registry](/Mods/Modtweaker/BetterWithMods/HeatRegistry/).  
+     * Set the Heat requirements of the recipe. Set the Heat requirements of the recipe. Unstoked heat = 1, Stoked heat = 2. You can add custom heat sources, and even custom heat levels using the [Heat Registry](/Mods/Modtweaker/BetterWithMods/HeatRegistry/).  
           zenscript setHeat(int heat)  
               zenscript
               setHeat(int heat)
@@ -70,7 +70,7 @@ El Crisol tiene un constructor de recetas que permite un control más preciso de
                     zenscript
                     build()
 
-### Ejemplo de uso del constructor
+### Example builder usage
 
 ```zenscript
 mods.betterwithmods.Crucible.builder()

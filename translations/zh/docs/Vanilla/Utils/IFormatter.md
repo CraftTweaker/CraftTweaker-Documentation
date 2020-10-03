@@ -1,38 +1,38 @@
 # IFormatter
 
-## 访问文本格式化处理程序
+## Accessing the text formatting Handler
 
-您可以使用 `格式` [全局关键字](/Vanilla/Global_Functions/) 访问格式化处理器。
+You can access the Formatting Handler using the `format` [global keyword](/Vanilla/Global_Functions/).
 
-## 正在格式化文本
+## Formatting a text
 
-### 颜色
+### Color
 
-您可以使用以下颜色之一给一个 IFormatedText 颜色：
+You can give an IFormattedText a color using one of the following Colors:
 
-- 黑色
+- black
 - darkBlue
-- 深青色
-- 深色水管
-- 深红色
-- 深紫色
-- 金币
-- 灰度
-- 深灰度
-- 蓝色
-- 绿色的
-- 水管
-- 红色的
-- 浅紫色
-- 黄色
-- 白色的
+- darkGreen
+- darkAqua
+- darkRed
+- darkPurple
+- gold
+- gray
+- darkGray
+- blue
+- green
+- aqua
+- red
+- lightPurple
+- yellow
+- white
 
-### 样式
+### Style
 
-您可以给以下格式化样式提供一个 IFormatText (或更多)：
+You can give an IFormattedText one (or more) of the following formatting styles:
 
-- 迷惑的
+- obfuscated
 - bold
-- 删除线
-- 下划线
+- strikethrough
+- underline
 - italic

@@ -1,34 +1,34 @@
-# IMaterial定義
+# IMaterialDefinition
 
-IMaterialDefinitionオブジェクトは、ゲーム内の材料定義を表します。 新しいブロックを作成するには、マテリアル定義が必要です。
+An IMaterialDefinition object represents a material definition in the game. A Material Definition is needed if you want to create a new block.
 
 # パッケージのインポート
 
-問題が発生した場合は、パッケージをインポートする必要があるかもしれませんので、申し訳ありませんし、インポートを追加してください。  
+It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
 `import mods.contenttweaker.BlockMaterial;`
 
-## IMaterialDefinition オブジェクトの呼び出し
+## Calling an IMaterialDefinition object
 
-このようなオブジェクトは、 [Block Material Bracket Handler](/Mods/ContentTweaker/Vanilla/Brackets/Bracket_Block_Material/):  
-`<blockmaterial:wood>` を使用して取得できます。
+You can get such an object using the [Block Material Bracket Handler](/Mods/ContentTweaker/Vanilla/Brackets/Bracket_Block_Material/):  
+`<blockmaterial:wood>`
 
-## パラメータのない ZenGetters/ZenMethods
+## ZenGetters/ZenMethods without parameters
 
-| ZenGetter       | ZenMethod           | Return Type                                                      |
-| --------------- | ------------------- | ---------------------------------------------------------------- |
-| blocksLight     | blocksLight()       | bool                                                             |
-| blocksMovement  | blocksMovement()    | bool                                                             |
-| canBurn         | getCanBurn()        | bool                                                             |
-| mobilityFlag    | getMobilityFlag()   | [プッシュ反応](/Mods/ContentTweaker/Vanilla/Types/Block/PushReaction/) |
-| 液体|<unk>        | isLiquid()          | bool                                                             |
-| 不透明な            | isOpaque()          | bool                                                             |
-| 交換可能            | isReplaceable()     | bool                                                             |
-| solid           | isSolid()           | bool                                                             |
-| toolNotRequired | isToolNotRequired() | bool                                                             |
+| ZenGetter       | ZenMethod           | Return Type                                                            |
+| --------------- | ------------------- | ---------------------------------------------------------------------- |
+| blocksLight     | blocksLight()       | bool                                                                   |
+| blocksMovement  | blocksMovement()    | bool                                                                   |
+| canBurn         | getCanBurn()        | bool                                                                   |
+| mobilityFlag    | getMobilityFlag()   | [PushReaction](/Mods/ContentTweaker/Vanilla/Types/Block/PushReaction/) |
+| liquid          | isLiquid()          | bool                                                                   |
+| opaque          | isOpaque()          | bool                                                                   |
+| replaceable     | isReplaceable()     | bool                                                                   |
+| solid           | isSolid()           | bool                                                                   |
+| toolNotRequired | isToolNotRequired() | bool                                                                   |
 
-## 2つのブロック材料を比較
+## Compare two BlockMaterials
 
-`==` 演算子を使用して、2 つの MaterialDefinitions が等しいかどうかを確認できます。
+You can use the `==` operator to see if two MaterialDefinitions are equal
 
 ```zenscript
 if(materialA == materialB)

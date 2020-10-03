@@ -1,6 +1,6 @@
 # Quern
 
-## パッケージ
+## Package
 ```zenscript
 import mods.terrafirmacraft.Quern;Quern;
 ```
@@ -8,7 +8,7 @@ import mods.terrafirmacraft.Quern;Quern;
 ## 追加
 
 ```zenscript
-Quern.addRecipe(RegistryName, IIngredient input, IItemStack output);
+Quern.addRecipe(String registryName, IIngredient input, IItemStack output);
 ```
 
 ## 削除

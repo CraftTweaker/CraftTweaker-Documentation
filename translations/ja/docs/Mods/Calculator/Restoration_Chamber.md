@@ -1,21 +1,21 @@
 # Restoration Chamber
 
-## パッケージ
+## Package
 ```zenscript
 import mods.calculator.restorationChamber;
 ```
 
-## メソッド
+## Methods
 
-- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input** 入力。
-- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) output** 出力。
+- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input** The input.
+- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) output** The output.
 
 ## 加算
 ```zenscript
-restorationChamber.addRecipe(IIngredient入力, IIngredient出力);
+restorationChamber.addRecipe(IIngredient input, IIngredient output);
 ```
 
-## 削除
+## Removal
 ```zenscript
-restorationChamber.removeRecipe(IIngredient出力);
+restorationChamber.removeRecipe(IIngredient output);
 ```

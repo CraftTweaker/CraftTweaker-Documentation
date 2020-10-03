@@ -1,21 +1,21 @@
-# Condenador
+# Condenser
 
-El paquete *condensador* se utiliza para añadir o eliminar recetas de/al Condenador.
+The *condenser* package is used for adding or removing recipes to/from the Condenser.
 
-## Llamando
+## Calling
 
-Puedes llamar al paquete *condenser* usando `mods.skyresources.condenser`
+You can call the *condenser* package using `mods.skyresources.condenser`
 
-## Adición de receta
+## Recipe Addition
 
 ```zenscript
-//mods.skyresources.condenser.addRecipe(salida IIItemStack, int tickTime, ItemStack catalyst, ILiquidStack inputFluid);
+//mods.skyresources.condenser.addRecipe(IItemStack output, int tickTime, IItemStack catalyst, ILiquidStack inputFluid);
 mods.skyresources.condenser.addRecipe(<minecraft:obsidian>, 300, <minecraft:ice>, <liquid:lava>);
 ```
 
-## Receta eliminada
+## Recipe Removal
 
 ```zenscript
-//mods.skyresources.condenser.removeRecipe(salida IItemStack);
+//mods.skyresources.condenser.removeRecipe(IItemStack output);
 mods.skyresources.condenser.removeRecipe(<minecraft:iron_ingot>);
 ```

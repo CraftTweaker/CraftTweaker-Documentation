@@ -1,16 +1,16 @@
-# Definición ITICMaterial
+# ITICMaterialDefinition
 
-Un ITICMaterialDefinition es una definición de [ITICMaterial](/Mods/Modtweaker/TConstruct/Materials/ITICMaterial/) .  
-Puede usar esto para recuperar alguna información sobre el objeto [ITICMaterial](/Mods/Modtweaker/TConstruct/Materials/ITICMaterial/).
+An ITICMaterialDefinition is an [ITICMaterial's](/Mods/Modtweaker/TConstruct/Materials/ITICMaterial/) definition.  
+You can use this to retrieve some information on the [ITICMaterial](/Mods/Modtweaker/TConstruct/Materials/ITICMaterial/) object.
 
-## Importando el paquete
+## Importing the package
 
-Podría ser necesario que importes el paquete si encuentras algún problema, así que más vale estar seguro que lo sentimos y añadir la importación.  
-`importar modtweaker.tconstruct.ITICMaterialDefinition;`
+It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
+`import modtweaker.tconstruct.ITICMaterialDefinition;`
 
-## Recuperando tal objeto
+## Retrieving such an object
 
-Puede recuperar una Definición ITICMaterialDefinición de un [ITICMaterial](/Mods/Modtweaker/TConstruct/Materials/ITICMaterial/) `definición` ZenGetter:
+You can retrieve an ITICMaterialDefinition from an [ITICMaterial's](/Mods/Modtweaker/TConstruct/Materials/ITICMaterial/) `definition` ZenGetter:
 
 ```zenscript
 val def = <ticmat:stone>.definition;
@@ -18,7 +18,7 @@ val def = <ticmat:stone>.definition;
 
 ## ZenGetters
 
-| ZenGetter          | Tipo de devolución | Descripción                    |
-| ------------------ | ------------------ | ------------------------------ |
-| nombre             | cadena             | Nombre interno del material    |
-| nombre de pantalla | cadena             | Nombre localizado del material |
+| ZenGetter   | Return Type | Description                   |
+| ----------- | ----------- | ----------------------------- |
+| name        | string      | The material's internal name  |
+| displayName | string      | The material's localized name |

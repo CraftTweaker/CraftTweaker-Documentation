@@ -1,19 +1,19 @@
-# Coltello Di Taglio
+# Cutting Knife
 
-Il pacchetto *coltello* viene utilizzato per aggiungere o rimuovere ricette da/per il coltello da taglio.
+The *knife* package is used for adding or removing recipes to/from the Cutting Knife.
 
-## Chiamata
+## Calling
 
-Puoi chiamare il pacchetto *coltello* usando `mods.skyresources.knife`
+You can call the *knife* package using `mods.skyresources.knife`
 
-## Aggiunta Ricetta
+## Recipe Addition
 
 ```zenscript
 //mods.skyresources.knife.addRecipe(IItemStack output, IItemStack input);
 mods.skyresources.knife.addRecipe(<minecraft:diamond>, <minecraft:stone>);
 ```
 
-## Rimozione Ricetta
+## Recipe Removal
 
 ```zenscript
 //mods.skyresources.knife.removeRecipe(IItemStack output);

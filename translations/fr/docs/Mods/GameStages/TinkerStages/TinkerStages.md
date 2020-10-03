@@ -1,84 +1,84 @@
-# Etapes de Bricoleur
+# Tinker Stages
 
-Ce mod est un addon pour l'API [GameStages](https://minecraft.curseforge.com/projects/game-stages). Les étapes de Tinker permettent aux aspects du mod Construct de Tinkers d'être mis dans un système de progression personnalisé configuré par l'auteur du modpack. Pour plus d'informations, consultez la page des mods [ici](https://minecraft.curseforge.com/projects/tinkerstages)
+This mod is an addon for the [GameStages API](https://minecraft.curseforge.com/projects/game-stages). Tinker Stages allows aspects of the Tinkers Construct mod to be put into a custom progression system set up by the modpack author. For more info, check out the mod page [here](https://minecraft.curseforge.com/projects/tinkerstages)
 
-## Restrictions générales
+## General Restrictions
 
-Restreint la fabrication des outils à une étape. Si plusieurs étapes sont ajoutées en utilisant cette méthode, le joueur aura besoin d'au moins une d'entre elles.
+Restricts tool crafting to a stage. If multiple stages are added using this method, the player will need at least one of them.
 
 ```zenscript
 // mods.TinkerStages.addGeneralCraftingStage(String stage);
-mods.TinkerStages.addGeneralCraftingStage("un");
+mods.TinkerStages.addGeneralCraftingStage("one");
 ```
 
-Restreint le remplacement de la pièce à une étape. Si plusieurs étapes sont ajoutées en utilisant cette méthode, le joueur aura besoin d'au moins une d'entre elles.
+Restricts part replacing to a stage. If multiple stages are added using this method, the player will need at least one of them.
 
 ```zenscript
 // mods.TinkerStages.addGeneralPartReplacingStage(String stage);
-mods.TinkerStages.addGeneralPartReplacingStage("une");
+mods.TinkerStages.addGeneralPartReplacingStage("one");
 ```
 
-Restreint la construction de pièces à une étape. Si plusieurs étapes sont ajoutées en utilisant cette méthode, le joueur aura besoin d'au moins une d'entre elles.
+Restricts part building to a stage. If multiple stages are added using this method, the player will need at least one of them.
 
 ```zenscript
 // mods.TinkerStages.addGeneralPartBuildingStage(String stage);
-mods.TinkerStages.addGeneralPartBuildingStage("une");
+mods.TinkerStages.addGeneralPartBuildingStage("one");
 ```
 
-Restreint l'application des modificateurs à une étape. Si plusieurs étapes sont ajoutées en utilisant cette méthode, le joueur aura besoin d'au moins une d'entre elles.
+Restricts applying modifiers to a stage. If multiple stages are added using this method, the player will need at least one of them.
 
 ```zenscript
 // mods.TinkerStages.addGeneralModifierStage(String stage);
-mods.TinkerStages.addGeneralModifierStage("une");
+mods.TinkerStages.addGeneralModifierStage("one");
 ```
 
-## Restrictions spécifiques
+## Specific Restrictions
 
-Empêche un type d'outil spécifique d'être fabriqué à la station d'outils. Par exemple, vous pouvez restreindre l'artisanat des marteaux jusqu'à une étape spécifique.
+Prevents a specific tool type from being crafted at the tool station. For example, you can restrict the crafting of hammers until a specific stage.
 
 ```zenscript
 // mods.TinkerStages.addToolTypeStage(String stage, String toolId);
 mods.TinkerStages.addToolTypeStage(String "one", "tconstruct:pickaxe");
 ```
 
-Empêche un matériau d'être utilisé par le joueur. Y compris la fabrication, la construction de pièces et l'utilisation de l'outil.
+Prevents a material from being used by the player. Including crafting, part building, and using the tool.
 
 ```zenscript
 // mods.TinkerStages.addMaterialStage(String stage, String material);
-mods.TinkerStages.addMaterialStage("une", "stone");
+mods.TinkerStages.addMaterialStage("one", "stone");
 ```
 
-Empêche un modificateur spécifique d'être appliqué à un outil ou utilisé.
+Prevents a specific modifier from being applied to a tool or used.
 
 ```zenscript
 // mods.TinkerStages.addModifierStage(String stage, String modifier);
 mods.TinkerStages.addModifierStage("two", "mending_moss");
 ```
 
-## Exemple de script
+## Example Script
 
 ```zenscript
-//RESTRICTIONS GENERALES
-//Empêche tous les outils sauf si l'étape est débloquée.
-mods.TinkerStages.addGeneralCraftingStage("une");
+//GENERAL RESTRICTIONS
+//Prevents all tools unless the stage is unlocked.
+mods.TinkerStages.addGeneralCraftingStage("one");
 
-//Empêche tout échange d'outils, sauf si l'étape est détachée.
-mods.TinkerStages.addGeneralPartReplacingStage("une");
+//Prevents all tool swapping unless the stage is unlcoked.
+mods.TinkerStages.addGeneralPartReplacingStage("one");
 
-//Prends tout le bâtiment de pièce à moins que l'étape ne soit débloquée.
-mods.TinkerStages.addGeneralPartBuildingStage("une");
+//Prvents all part building unless the stage is unlocked.
+mods.TinkerStages.addGeneralPartBuildingStage("one");
 
-//Empêche l'application de tout modificateur d'outil sauf si l'étape est déverrouillée.
-mods.TinkerStages.addGeneralModifierStage("une");
+//Prevents applying any tool modifiers unless the stage is unlocked.
+mods.TinkerStages.addGeneralModifierStage("one");
 
 
-//RESTRICTIONS SPECIFIQUES
-//Empêche la fabrication de pioches à moins que la scène ne soit débloquée.
+//SPECIFIC RESTRICTIONS
+//Prevents crafting pickaxes unless the stage is unlocked.
 mods.TinkerStages.addToolTypeStage("two", "tconstruct:pickaxe");
 
-//Empêche l'utilisation du matériel. 
+//Prevents the material from being used. 
 mods.TinkerStages.addMaterialStage("two", "stone");
 
-//Empêche le modificateur d'être appliqué.
+//Prevents the modifier from being applied.
 mods.TinkerStages.addModifierStage("two", "mending_moss");
 ```

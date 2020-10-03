@@ -1,29 +1,29 @@
-# 热蒸发。
+# Thermal Evaporation
 
-到Mekanism 9.7.0 现在可以通过命令 `/ct mek配方热蒸发` 查看热蒸发的所有配方字符串。
+As of Mekanism 9.7.0 it is now possible to view all recipe strings of the Thermal Evaporation through the command `/ct mekrecipes thermalevaporation`
 
 ## 加
 
 ```zenscript
-mods.mekanism.thermalevaporation.addRecipe(ILiquidStack 液体输入, ILiquidStack 液体输出);
+mods.mekanism.thermalevaporation.addRecipe(ILiquidStack liquidInput, ILiquidStack liquidOutput);
 
 mods.mekanism.thermalevaporation.addRecipe(<liquid:liquidfusionfuel>, <liquid:lava>);
 ```
 
-## 移除
+## Removal
 
 ```zenscript
-mods.mekanism.thermalevaporation.removeRecipe(IIngredient life Input, @Optional IIngredient 液体输出);
+mods.mekanism.thermalevaporation.removeRecipe(IIngredient liquidInput, @Optional IIngredient liquidOutput);
 
 mods.mekanism.thermalevaporation.removeRecipe(<liquid:water>, <liquid:brine>);
 mods.mekanism.thermalevaporation.removeRecipe(<liquid:brine>);
 ```
 
-指定输出参数只会移除从该输入产生该输出的特定配方。 忽略输出参数将删除输入项能够生成的所有配方。
+Specifying an output parameter will only remove the specific recipe that results in that output from that input. Omitting the output parameter will remove all recipes that the input item can produce.
 
-## 删除所有配方
+## Removing all recipes
 
-到Mekanism 9.7.0，现在可以消除所有热蒸发植物配方。 (这排除了任何通过 CraftTweaker 添加的配方
+As of Mekanism 9.7.0 it is now possible to remove all Thermal Evaporation Plant recipes. (This excludes any recipes added via CraftTweaker)
 
 ```zenscript
 mods.mekanism.thermalevaporation.removeAllRecipes();

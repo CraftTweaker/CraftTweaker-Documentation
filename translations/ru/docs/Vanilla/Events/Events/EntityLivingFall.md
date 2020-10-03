@@ -1,7 +1,7 @@
 # EntityLivingFall
 
-Событие EntityLivingFall запускается всякий раз, когда сущность падает.  
-Событие может быть отменено, чтобы вывести сущность из падения.
+The EntityLivingFall Event is fired whenever an entity is set to be falling.  
+It can be canceled to preven the entity from falling.
 
 ## Класс события
 
@@ -18,7 +18,7 @@ PlayerDeathDrops реализует следующие интерфейсы и �
 
 ## ZenGetter/ZenSetter
 
-| Геттеры         | ZenSetter       | Тип   |
-| --------------- | --------------- | ----- |
-| негодование     | негодование     | float |
-| Множитель урона | Множитель урона | float |
+| ZenGetter        | ZenSetter        | Тип   |
+| ---------------- | ---------------- | ----- |
+| disance          | disance          | float |
+| damageMultiplier | damageMultiplier | float |

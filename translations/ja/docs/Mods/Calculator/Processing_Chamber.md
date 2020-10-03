@@ -1,21 +1,21 @@
-# 処理チャンバー
+# Processing Chamber
 
-## パッケージ
+## Package
 ```zenscript
 import mods.calculator.processingChamber;
 ```
 
-## メソッド
+## Methods
 
-- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input** 入力。
-- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) output** 出力。
+- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input** The input.
+- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) output** The output.
 
 ## 加算
 ```zenscript
-processingChamber.addRecipe(IIngredient入力, IIngredient出力);
+processingChamber.addRecipe(IIngredient input, IIngredient output);
 ```
 
-## 削除
+## Removal
 ```zenscript
-processingChamber.removeRecipe(IIngredient出力);
+processingChamber.removeRecipe(IIngredient output);
 ```

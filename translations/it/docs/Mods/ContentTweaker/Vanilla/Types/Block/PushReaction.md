@@ -1,23 +1,23 @@
 # PushReaction
 
-Una reazione di spinta è ciò che accade quando un pistone cerca di spingere un blocco.
+A push reaction is what happens when a piston tries to push a block.
 
-# Importazione del pacchetto
+# Importing the package
 
-Potrebbe essere necessario per importare il pacchetto se si verificano problemi, in modo da essere più sicuri di spiacenti e aggiungere l'importazione.  
+It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
 `import mods.contenttweaker.PushReaction;`
 
-## Confronto tra due reazioni
+## Comparing two reactions
 
-Puoi vedere se due reazioni sono uguali usando l'operatore `==`.
+You can see if two reactions are equal by using the `==` operator.
 
 ```zenscript
 if(a == b){}
 ```
 
-## Metodi statici
+## Static methods
 
-È possibile utilizzare questi metodi per ottenere oggetti PushReazione:
+You can use these methods to get PushReaction Objects:
 
 ```zenscript
 mods.contenttweaker.PushReaction.normal();

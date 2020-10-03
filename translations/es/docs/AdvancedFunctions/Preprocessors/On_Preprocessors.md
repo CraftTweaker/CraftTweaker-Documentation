@@ -1,17 +1,17 @@
-# En preprocesadores
+# On Preprocessors
 
-## Qué son los preprocesadores
+## What are preprocessors
 
-Como el nombre sugiere, los preprocesadores se ejecutan antes de que el script se ejecute.  
-Pueden realizar varias acciones como activar el modo de depuración o Suprimir errores de corchete.
+As the name suggests, preprocessors are executed before the script is executed.  
+They can perform various actions like enabling Debug Mode or Supress Bracket Errors.
 
-## Llamando a un preprocesador
+## Calling a preprocessor
 
-Se puede llamar a un preprocesador usando la función #comment .  
-Tenga cuidado con los comentarios, aunque ya que puede iniciar uno con una palabra clave preprocesador.
+A preprocessor can be called using the #comment function.  
+Be careful with the comments though as you might start one with a preprocessor keyword.
 
 ```zenscript
-#debug es mi palabra favorita que me gusta añadirla en todas partes como comentario
+#debug is my favorite word I like to add it everywhere as a comment
 ```
 
-☆ Se activaría el modo de depuración como `#debug` se encuentra. Si realmente quieres asegurarte de que un caso tan raro no suceda, usa `//` para comentarios.
+↑ Would enable debug mode as `#debug` is found. If you really want to ensure such a rare case doesn't happen, use `//` for comments.

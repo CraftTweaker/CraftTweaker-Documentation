@@ -1,19 +1,19 @@
 ### onBlockDrops
 
-| 设置/获取/方法 | 方法名称                                                 | 名称                                                 | Input/Output                                      |
-|:-------- |:---------------------------------------------------- |:-------------------------------------------------- | ------------------------------------------------- |
-| 获取器      | getDropChance();                                     | dropChance();                                      | 返回浮点数                                             |
-| Setter   | setDropChance(浮点下拉机)；                                | dropChance(浮动投递机会)；                                | 领取浮点数                                             |
-| 获取器      | getFortuneLevel();                                   | 幸运级别();                                            | 返回整数                                              |
-| 获取器      | getDrops();                                          | drops();                                           | 返回 [IItemStack](/Vanilla/Items/IItemStack/) 的列表   |
-| Setter   | 设置Drops(列表)<iitemstack> 5. 请秘书长向大会第五十八届会议报告本决议的执行情况。 | drops(列表)<iitemstack> 5. 请秘书长向大会第五十八届会议报告本决议的执行情况。 | 取出 [IItemStack](/Vanilla/Items/IItemStack/) 的列表   |
-| 方法       | addItem(IItemStack itemStack);                       | addItem(IItemStack itemStack);                     | Takes an [IItemStack](/Vanilla/Items/IItemStack/) |
-| 获取器      | (ii) isSilkTouch);                                   | silkTouch();                                       | 返回一个布尔值                                           |
-| 获取器      | isPlayer();                                          | isPlayer();                                        | 返回一个布尔值                                           |
-| 获取器      | getPlayer();                                         | 玩家();                                              | 返回 [IPlayer](/Vanilla/Players/IPlayer/)           |
+| Setter/Getter/Method | Method Names                      | Names                          | Input/Output                                               |
+|:-------------------- |:--------------------------------- |:------------------------------ | ---------------------------------------------------------- |
+| Getter               | getDropChance();                  | dropChance();                  | Returns a Float                                            |
+| Setter               | setDropChance(float dropChance);  | dropChance(float dropChance);  | Takes a Float                                              |
+| Getter               | getFortuneLevel();                | fortuneLevel();                | Returns an Integer                                         |
+| Getter               | getDrops();                       | drops();                       | Returns a List of [IItemStack](/Vanilla/Items/IItemStack/) |
+| Setter               | setDrops(List<iitemstack> drops); | drops(List<iitemstack> drops); | Takes an List of [IItemStack](/Vanilla/Items/IItemStack/)  |
+| 方法                   | addItem(IItemStack itemStack);    | addItem(IItemStack itemStack); | Takes an [IItemStack](/Vanilla/Items/IItemStack/)          |
+| Getter               | isSilkTouch();                    | silkTouch();                   | Returns a Boolean                                          |
+| Getter               | isPlayer();                       | isPlayer();                    | Returns a Boolean                                          |
+| Getter               | getPlayer();                      | player();                      | Returns a [IPlayer](/Vanilla/Players/IPlayer/)             |
 
     var test = mods.compatskills.TraitCreator.createTrait("test", 2, 3, "compatskills:banana", 1, "compatskills:banana|5");
     
-    test.onBlockDrops = function(event as craftbinstrer.event.BlockHarvestDropsEvent)
-    ...
+    test.onBlockDrops = function(event as crafttweaker.event.BlockHarvestDropsEvent) {
+        ...
     };

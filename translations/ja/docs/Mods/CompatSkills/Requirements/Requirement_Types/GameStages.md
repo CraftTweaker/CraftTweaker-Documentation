@@ -1,9 +1,9 @@
-# ゲームステージ:
+# GameStages:
 
-GameStagesはCompatSkillsによって導入された要件であり、GameStagesの背後にあるアイテムをゲートすることができます。 GameStage 構文は次のとおりです。
+GameStages is a Requirement introduced by CompatSkills and allows you to gate items behind GameStages. The GameStage Syntax is as follows:
 
-    例:
+    Example:
     stage|stageName
     
-    作業例:
+    Working Example:
     stage|test

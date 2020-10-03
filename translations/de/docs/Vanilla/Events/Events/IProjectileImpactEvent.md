@@ -1,16 +1,16 @@
 # IProjectileImpactEvent
 
-Diese Schnittstelle wird um alle Ereignisse erweitert, die sich auf Projektile beziehen (solche wie Feuerbälle, Pfeile und werfbare Gegenstände).
+This interface is extended by all Events that relate to projectiles (suchs as fireballs, arrows and throwable items).
 
 ## Diese Klasse importieren
-Es könnte erforderlich sein, [die Klasse](/AdvancedFunctions/Import/) zu importieren, um Fehler zu vermeiden.  
-`importieren Sie crafttweaker.event.IProjectileImpactEvent;`
+It might be required to [import](/AdvancedFunctions/Import/) the class to avoid errors.  
+`import crafttweaker.event.IProjectileImpactEvent;`
 
-## IEntityEvent wird erweitert
-Diese Schnittstelle erweitert [IEntityEvent](/Vanilla/Events/Events/IEntityEvent/), was bedeutet, dass alle Funktionen, die IEntityEvent bietet, auch im IProjectileImpactEvent vorhanden sind.
+## Extending IEntityEvent
+This interface extends [IEntityEvent](/Vanilla/Events/Events/IEntityEvent/), which means that all functionality that IEntityEvent offers is also present in IProjectileImpactEvent.
 
 ## ZenGetter
 
-| name       | typ                                                |
+| name       | type                                               |
 | ---------- | -------------------------------------------------- |
 | `rayTrace` | [IRayTraceResult](/Vanilla/World/IRayTraceResult/) |

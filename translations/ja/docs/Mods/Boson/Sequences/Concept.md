@@ -1,10 +1,10 @@
-# コンセプト
+# The Concept
 
-Loopingは古い概念であり、プログラミングの基礎の一つである: 要素のグループに対して同じ一連のアクションを繰り返す。 いくつかのセットをフィルタリングしたり変換したりしています Or even finding the first item in a list that satisfies a certain condition or a count the items in a set recursively.
+Looping is an old concept and one of the basis of programming: repeating the same set of actions over a group of elements, while filtering some of them out or converting sets. Or even finding the first item in a list that satisfies a certain condition or a count the items in a set recursively.
 
-手続き型および命令型プログラミングで そのほとんどは、 `ループのプレーン古い` と、 相対的な `条件文の一連の` と `break` で行われています。 これは従う方が簡単に見えるかもしれませんが、 はフィルタリングのような単純な操作には多くのコードを必要とし、さらに長く続くことができるネストチェーンを生成する可能性があります。 さらに、コードがコメントで指定しない限り、インテントを表しません。
+In procedural and imperative programming, most of that has been done with plain old `for` loops and a series of conditional statements with their relative `continue` and `break` statements. While this may seem simpler to follow, it requires a lot of code for simple operations such as filtering and may produce nesting chains that can go on for longer. Moreover, it doesn't express the intent unless the code specifies it with comments.
 
-以下の ZenScript コードを検討してください。
+Consider the following ZenScript code:
 
 ```zenscript
 var nbtForMc = false;
@@ -25,7 +25,7 @@ for recipe in recipes.all {
 }
 ```
 
-このコードが一見すると明らかではなく、理解するためにロジックを読み取る必要があります。 シーケンスを介して構築されたこの等価なもの を考えてみましょう:
+What this code does isn't obvious from a first glance and requires the user to read the logic to understand. Consider this equivalent one constructed via sequences:
 
 ```zenscript
 val nbtForMc = <sequence:ICraftingRecipe>(recipes.all)
@@ -36,8 +36,8 @@ val nbtForMc = <sequence:ICraftingRecipe>(recipes.all)
     .any(function (output) { return output.hasTag; });
 ```
 
-This code does the exact same and not only it's more concise, but also conveys more meaning that a chain of nested `if` statements. 確かに、これは問題のコードのシンプルさのために一般的な改善のようには思えません。 しかし、より複雑な論理に有用である可能性がある。
+This code does the exact same and not only it's more concise, but also conveys more meaning that a chain of nested `if` statements. Granted, this does not seem like a general improvement, due to the simplicity of the code in question, but it may prove useful for more complicated pieces of logic.
 
-Another pro of the above code is that evaluation is not performed until the `any` call, meaning that the sequence can be extended via additional method calls over time and it won't be resolved until a "terminal" method is called (i.e. a method that does not return a `Sequence` itself). これは、 全体の `recipes.all` 配列を評価する必要がないため、非常に有用であることを証明します。
+Another pro of the above code is that evaluation is not performed until the `any` call, meaning that the sequence can be extended via additional method calls over time and it won't be resolved until a "terminal" method is called (i.e. a method that does not return a `Sequence` itself). This proves extremely useful since it is not necessary to evaluate the whole `recipes.all` array.
 
-シーケンスを始めて活用するには、 [クラスドキュメント](/Mods/Boson/Sequences/Docs/) と [](/Mods/Boson/Sequences/Obtaining/) ドキュメント ページを1つ取得する方法を参照してください。
+To get started and leverage Sequences, you can consult both the [class documentation](/Mods/Boson/Sequences/Docs/) and [how to obtain one](/Mods/Boson/Sequences/Obtaining/) documentation pages.

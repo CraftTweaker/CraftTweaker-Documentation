@@ -1,14 +1,14 @@
-# Décomposition de l'Infuser
+# Decay Infuser
 
-## Importation du paquet en cours
-`Informer les utilisateurs`
+## Importing the Package
+`mods.nuclearcraft.infuser`
 
-## Ajout de recettes
+## Adding Recipes
 ```zenscript
 mods.nuclearcraft.infuser.addRecipe([itemInput, fluidInput, itemOutput, @Optional double timeMultiplier, @Optional double powerMultiplier, @Optional double processRadiation]);
 ```
 
-## Suppression des recettes
+## Removing Recipes
 ```zenscript
 mods.nuclearcraft.infuser.removeRecipeWithInput([itemInput, fluidInput]);
 mods.nuclearcraft.infuser.removeRecipeWithOutput([itemOutput]);

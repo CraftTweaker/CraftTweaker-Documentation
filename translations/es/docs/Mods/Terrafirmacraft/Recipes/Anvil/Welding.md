@@ -1,20 +1,20 @@
-# Soldadura del yunque
+# Anvil Welding
 
-## Paquete
+## Package
 ```zenscript
-import mods.terrafirmacraft.Welding;Soldado;
+import mods.terrafirmacraft.Welding;Welding;
 ```
 
-## Adicional
+## Addition
 
 ```zenscript
-Welding.addRecipe(String registryName, IIngredient input1, IIngredient input2, ItemStack output, int minTier);
+Welding.addRecipe(String registryName, IIngredient input1, IIngredient input2, IItemStack output, int minTier);
 ```
 
-## Eliminar
+## Removal
 
 ```zenscript
-Solding.removeRecipe(salida IItemStack);
+Welding.removeRecipe(IItemStack output);
 Welding.removeRecipe(String registryName);
 ```
-- Como en el caso de las recetas de yunque, aquí se aplican las mismas reglas para los insumos. El valor de entrada debe ser forgeable (ver [ItemRegistry](/Mods/Terrafirmacraft/ItemRegistry) para registrar la capacidad de forja a un artículo) y no puede ser apilado.
+- As with anvil recipes, the same rules for input applies here. The input must be forgeable(see [ItemRegistry](/Mods/Terrafirmacraft/ItemRegistry) for registering forging capability to an item) and can't be stacked.

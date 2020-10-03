@@ -1,14 +1,14 @@
-# Слиток Превышен
+# Ingot Former
 
-## Импортирование пакета
-`former mods.nuclearcraft.ingot_`
+## Importing the Package
+`mods.nuclearcraft.ingot_former`
 
-## Добавление рецептов
+## Adding Recipes
 ```zenscript
 mods.nuclearcraft.ingot_former.addRecipe([fluidInput, itemOutput, @Optional double timeMultiplier, @Optional double powerMultiplier, @Optional double processRadiation]);
 ```
 
-## Удаление рецептов
+## Removing Recipes
 ```zenscript
 mods.nuclearcraft.ingot_former.removeRecipeWithInput([fluidInput]);
 mods.nuclearcraft.ingot_former.removeRecipeWithOutput([itemOutput]);

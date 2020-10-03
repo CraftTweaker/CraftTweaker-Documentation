@@ -5,31 +5,31 @@
 To shorten method calls you can [import](/AdvancedFunctions/Import/) the package like so:
 
 ```zenscript
-importieren mods.thermalexpansion.ReactantDynamo;
+import mods.thermalexpansion.ReactantDynamo;
 ```
 
-## Reaktion hinzufügen
+## Add Reaction
 
 ```zenscript
 //mods.thermalexpansion.ReactantDynamo.addReaction(IItemStack item, ILiquidStack liquid, int energy);
 mods.thermalexpansion.ReactantDynamo.addReaction(<minecraft:bedrock>, <liquid:water>, 13);
 ```
 
-## Elementarreaktion hinzufügen
+## Add Elemental Reaction
 
 ```zenscript
 //mods.thermalexpansion.ReactantDynamo.addElementalReaction(IItemStack item, ILiquidStack liquid, int energy);
 mods.thermalexpansion.ReactantDynamo.addElementalReaction(<minecraft:bedrock>, <liquid:water>, 13);
 ```
 
-## Reaktion entfernen
+## Remove Reaction
 
 ```zenscript
 //mods.thermalexpansion.ReactantDynamo.removeReaction(IItemStack item, ILiquidStack liquid);
 mods.thermalexpansion.ReactantDynamo.removeReaction(<minecraft:bedrock>, <liquid:water>);
 ```
 
-## Elementarreaktion entfernen
+## Remove Elemental Reaction
 
 ```zenscript
 //mods.thermalexpansion.ReactantDynamo.removeElementalReaction(IItemStack item, ILiquidStack liquid);

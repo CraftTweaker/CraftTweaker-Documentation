@@ -1,22 +1,22 @@
-# 驱动器 :: 项目复合生产者
+# Powered Thingies :: Item Compound Producer
 
 ### 导入
 
 ```zenscript
-导入mods.poweredthingies.Tweeper.itemCompoundProducerTinflow为icp;
+import mods.poweredthingies.Tweaker.itemCompoundProducerTweaker as icp;
 ```
 
-### 列出密钥，按键删除配方
+### Listing Keys, Removing Recipes by Key, Clearing
 
 ```zenscript
 icp().logKeys()
-icp().removeRecipe('minecraft:mossy_cobblestone') // 检查 <logKeys> 输出有效密钥 
+icp().removeRecipe('minecraft:mossy_cobblestone') // check <logKeys> output for valid keys 
 icp().clear()
 ```
 
-### 添加配方
+### Adding Recipe
 
-##### 签名
+##### Signature
 
 ```zenscript
 addRecipe(inputStack: IItemStack, inputFluid: ILiquidStack, result: IItemStack)
@@ -28,6 +28,6 @@ addRecipe(inputStack: IItemStack, inputFluid: ILiquidStack, result: IItemStack)
 icp().addRecipe(<minecraft:cobblestone>, <liquid:water> * 125, <minecraft:mossy_cobblestone>);
 ```
 
-### 注
+### Notes
 
-所有这些操作都会被缓存并运行在这台机器的默认注册表完成注册后所有配方(包括来自自定义jsons的配方)。
+All of these actions will get cached and ran after the default registry for this machine has finished registering all recipes (including the ones from the custom jsons).

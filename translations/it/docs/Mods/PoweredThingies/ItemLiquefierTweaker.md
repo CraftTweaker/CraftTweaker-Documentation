@@ -1,33 +1,33 @@
-# Thingies Powered :: Articolo Liquefier
+# Powered Thingies :: Item Liquefier
 
-### Importazione
+### Importing
 
 ```zenscript
 import mods.poweredthingies.Tweaker.itemLiquefierTweaker as ilt;
 ```
 
-### Elencando le chiavi, la rimozione delle ricette dalla chiave, la cancellazione
+### Listing Keys, Removing Recipes by Key, Clearing
 
 ```zenscript
 ilt().logKeys()
-ilt().removeRecipe('liquid:fluid_lava') // controlla <logKeys> output per chiavi valide
+ilt().removeRecipe('liquid:fluid_lava') // check <logKeys> output for valid keys
 ilt().clear()
 ```
 
-### Aggiunta Ricetta
+### Adding Recipe
 
-##### Firma
+##### Signature
 
 ```zenscript
 addRecipe(input: IItemStack, output: ILiquidStack)
 ```
 
-##### Esempio
+##### Example
 
 ```zenscript
 ilt().addRecipe(<minecraft:bucket>, <liquid:lava> * 125);
 ```
 
-### Note
+### Notes
 
-Tutte queste azioni verranno memorizzate nella cache e eseguite dopo che il registro di default per questa macchina ha finito di registrare tutte le ricette (comprese quelle dei json personalizzati).
+All of these actions will get cached and ran after the default registry for this machine has finished registering all recipes (including the ones from the custom jsons).

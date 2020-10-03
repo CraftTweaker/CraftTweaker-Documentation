@@ -1,68 +1,68 @@
-# ディーゼルヘルパー
+# Diesel Helper
 
-ディーゼルハンドラーパッケージは、IEの燃料を変更するために使用することができます。
+The Diesel Handler package can be used to change IE fuels.
 
-## パッケージの呼び出し
+## Calling The Package
 
-`mods.immysiveengineering.DieselHandler` を使用して、DieselHandler パッケージを呼び出すことができます。
+You can call the DieselHandler package using `mods.immersiveengineering.DieselHandler`.
 
-## 燃料を追加
+## Add Fuel
 
-| 必須 | タイプ   | データタイプ                                       |
-| -- | ----- | -------------------------------------------- |
-| 必須 | 出力    | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
-| 必須 | Input | 整数                                           |
+| Required | Type   | Data Type                                    |
+| -------- | ------ | -------------------------------------------- |
+| Required | Output | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
+| Required | Input  | Integer                                      |
 
 ### 例
 
 ```zenscript
-//例:
+//Example:
 mods.immersiveengineering.DieselHandler.addFuel(ILiquidStack fuel, int time);
 
 mods.immersiveengineering.DieselHandler.addFuel(<liquid:water>, 2000);
 ```
 
-## 燃料を取り除く
+## Remove Fuel
 
-| 必須 | タイプ | データタイプ                                       |
-| -- | --- | -------------------------------------------- |
-| 必須 | 出力  | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
+| Required | Type   | Data Type                                    |
+| -------- | ------ | -------------------------------------------- |
+| Required | Output | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
 
 ### 例
 
 ```zenscript
-//例:
+//Example:
 mods.immersiveengineering.DieselHandler.removeFuel(ILiquidStack fuel);
 
 mods.immersiveengineering.DieselHandler.removeFuel(<liquid:water>);
 ```
 
-## ドリル燃料を追加
+## Add Drill Fuel
 
-| 必須 | タイプ | データタイプ                                       |
-| -- | --- | -------------------------------------------- |
-| 必須 | 出力  | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
+| Required | Type   | Data Type                                    |
+| -------- | ------ | -------------------------------------------- |
+| Required | Output | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
 
 ### 例
 
 ```zenscript
-//例:
+//Example:
 mods.immersiveengineering.DieselHandler.addDrillFuel(ILiquidStack fuel);
 
 mods.immersiveengineering.DieselHandler.addDrillFuel(<liquid:water>);
 ```
 
-## ドリル燃料を取り除く
+## Remove Drill Fuel
 
-| 必須 | タイプ | データタイプ                                       |
-| -- | --- | -------------------------------------------- |
-| 必須 | 出力  | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
+| Required | Type   | Data Type                                    |
+| -------- | ------ | -------------------------------------------- |
+| Required | Output | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
 
 ### 例
 
 ```zenscript
-//例:
-mods.immysiveengineering.DieselHandler.removeDrillFuel(ILiquidStack fuel);
+//Example:
+mods.immersiveengineering.DieselHandler.removeDrillFuel(ILiquidStack fuel);
 
 mods.immersiveengineering.DieselHandler.removeDrillFuel(<liquid:water>);
 ```

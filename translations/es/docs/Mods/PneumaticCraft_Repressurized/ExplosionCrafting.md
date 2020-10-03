@@ -1,38 +1,38 @@
-# Fabricación de explosiones
+# Explosion Crafting
 
-La Fabricación de Explosión se utiliza para transformar un objeto en otro exponiendo a una explosión cuando es un objeto en el suelo. Una tasa de pérdida configurable (aleatoria) puede ser especificada. De forma predeterminada, esto se utiliza para convertir Lingote de Hierro en Lingote Comprimido con una tasa de pérdida del 20%.
+Explosion Crafting is used to transform one item into another by exposing it to an explosion when it is an item on the ground. A configurable (random) loss rate can be specified. By default, this is used to convert Iron Ingots into Compressed Iron Ingots with a 20% loss rate.
 
-## Llamando
+## Calling
 
-Puedes llamar al paquete de Creación de Explosión usando `mods.pneumaticcraft.explosioncrafting`
+You can call the Explosion Crafting package using `mods.pneumaticcraft.explosioncrafting`
 
-## Eliminando
+## Removing
 
-Esta función elimina la primera receta que encuentra con la salida [IIngrediente](/Vanilla/Variable_Types/IIngredient/) `dada`:
+This function removes the first recipe it finds with the given [IIngredient](/Vanilla/Variable_Types/IIngredient/) `output`:
 
 ```zenscript
-mods.pneumaticcraft.explosioncrafting.removeRecipe(salida IIngrediente);
-// Ejemplo
+mods.pneumaticcraft.explosioncrafting.removeRecipe(IIngredient output);
+// Example
 mods.pneumaticcraft.explosioncrafting.removeRecipe(<pneumaticcraft:ingot_iron_compressed>);
 ```
 
-Esta función elimina *todas las* recetas de fabricación de explosiones:
+This function removes *all* Explosion Crafting recipes:
 
 ```zenscript
 mods.pneumaticcraft.explosioncrafting.removeAllRecipes();
 ```
 
-## Agregando
+## Adding
 
-Estas funciones se utilizan para añadir nuevas recetas de fabricación de explosiones:
+These functions are used to add new Explosion Crafting recipes:
 
 ```zenscript
-mods.pneumaticcraft.explosioncrafting.addRecipe(entrada ItemStack, salida IItemStack, int loss_rate);
-mods.pneumaticcraft.explosioncrafting.addRecipe(entrada IOreDictEntry, salida ItemStack, int loss_rate);
+mods.pneumaticcraft.explosioncrafting.addRecipe(IItemStack input, IItemStack output, int loss_rate);
+mods.pneumaticcraft.explosioncrafting.addRecipe(IOreDictEntry input, IItemStack output, int loss_rate);
 
-// Ejemplo
-mods. neumaticcraft.explosioncrafting.removeAllRecipes();
-// Un paquete de modo experto podría hacer de hierro plano una elección muy pobre, y el acero mucho mejor.
+// Example
+mods.pneumaticcraft.explosioncrafting.removeAllRecipes();
+// An expert-mode pack might make plain iron a very poor choice, and steel much better.
 mods.pneumaticcraft.explosioncrafting.addRecipe(<ore:ingotIron>, <pneumaticcraft:ingot_iron_compressed>, 95);
 mods.pneumaticcraft.explosioncrafting.addRecipe(<ore:ingotSteel>, <pneumaticcraft:ingot_iron_compressed>, 10);
 // A way to make lots of Nether Brick, for (on average) 4x the cost of Netherrack

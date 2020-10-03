@@ -1,40 +1,40 @@
-# Refinería
+# Refinery
 
-El paquete Refinery se puede usar para añadir/quitar recetas para/de la Refinería de Ingeniería Inmersiva.
+The Refinery package can be used to add/remove recipes to/from the Immersive Engineering Refinery.
 
-## Llamar al paquete
+## Calling The Package
 
-Puede llamar al paquete Refinery usando `mods.immersiveengineering.Refinery`.
+You can call the Refinery package using `mods.immersiveengineering.Refinery`.
 
-## Añadir Receta
+## Add Recipe
 
-| Requerido | Tipo    | Tipo de Datos                                |
-| --------- | ------- | -------------------------------------------- |
-| Requerido | Salida  | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
-| Requerido | Input 1 | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
-| Requerido | Input 2 | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
-| Requerido | Energía | Entero                                       |
+| Required | Type    | Data Type                                    |
+| -------- | ------- | -------------------------------------------- |
+| Required | Output  | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
+| Required | Input 1 | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
+| Required | Input 2 | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
+| Required | Energy  | Integer                                      |
 
-### Ejemplo
+### Example
 
 ```zenscript
-//Ejemplo
-mods.immersiveengineering.Refinery.addRecipe(salida ILiquidStack, ILiquidStack input0, ILiquidStack input1, energía de int);
+//Example
+mods.immersiveengineering.Refinery.addRecipe(ILiquidStack output, ILiquidStack input0, ILiquidStack input1, int energy);
 
 mods.immersiveengineering.Refinery.addRecipe(<liquid:iron>, <liquid:water>, <liquid:lava>, 2048);
 ```
 
-## Eliminar receta
+## Remove Recipe
 
-| Tipo   | Tipo de Datos                                |
+| Type   | Data Type                                    |
 | ------ | -------------------------------------------- |
-| Salida | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
+| Output | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
 
-### Ejemplo
+### Example
 
 ```zenscript
-//Ejemplo
-mods.immersiveengineering.Refinery.removeRecipe(salida ILiquidStack);
+//Example
+mods.immersiveengineering.Refinery.removeRecipe(ILiquidStack output);
 
 mods.immersiveengineering.Refinery.removeRecipe(<liquid:iron>);
 ```

@@ -1,16 +1,16 @@
-# 离心机
+# Centrifuge
 
-## 导入软件包
-`mods.techreborn.centrifue`
+## Importing the Package
+`mods.techreborn.centrifuge`
 
-## 添加配方
+## Adding Recipes
 ```zenscript
-mods.techreborn.centrifirm.addRecipe(IItemStack outputt1, IItemStack output2, IItemStack output3, IItemStack output4, Igredient input1, Ingredient input2, int ticktime, int euTick)；
+mods.techreborn.centrifuge.addRecipe(IItemStack output1, IItemStack output2, IItemStack output3, IItemStack output4, IIngredient input1, IIngredient input2, int ticktime, int euTick);
 ```
 
-## 删除配方
+## Removing Recipes
 ```zenscript
-mods.techreborn.centrifirm.removeInputRecipe(IIngredient iIngredient);
-mods.techreborn.centrifirm.removeRecipe(IItemStack 输出);
-mods.techreborn.centrifile.removeAll();
+mods.techreborn.centrifuge.removeInputRecipe(IIngredient iIngredient);
+mods.techreborn.centrifuge.removeRecipe(IItemStack output);
+mods.techreborn.centrifuge.removeAll();
 ```

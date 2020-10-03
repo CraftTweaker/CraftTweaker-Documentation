@@ -1,12 +1,12 @@
-# スキル:
+# Skills:
 
-Advancementsと一緒のスキルは、Skillableによって追加された元のロックタイプの1つであり、それ以来、他のModに多くのスキルを追加するために洗練されています。 スキルの構文は次のとおりです。
+Skills alongside Advancements was one of the original lock types added by Skillable and has since then been refined to support other mods adding more Skills. The Skill Syntax is as follows:
 
-    例:
+    Example:
     ResourceLocation|Level
     
-    作業例:
+    Working Example:
     reskillable:building|15
     
 
-Reskillableのリリース以来、スキル名システムからリソースロケーション名システムに移行しました。 これにより、複数のスキルが同じ内部名でスキルを追加できますが、リソースの場所に異なるmod IDを追加できます。 You can find the Skill's ResourceLocations under: [Skills & Traits](/Mods/CompatSkills/Requirements/Skills_Traits/)
+Since the release of Reskillable we've moved from a skill name system to a resource location name system. This allows for several skills to add skills with the same internal name but different mod id's for the Resource Location. You can find the Skill's ResourceLocations under: [Skills & Traits](/Mods/CompatSkills/Requirements/Skills_Traits/)

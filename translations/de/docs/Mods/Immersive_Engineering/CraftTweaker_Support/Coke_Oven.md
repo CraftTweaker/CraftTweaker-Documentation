@@ -1,23 +1,23 @@
-# Kokofen
+# Coke Oven
 
 ## Hinzufügen des Packages
 
-Sie können das CokeOven Paket mit `mods.immersiveengineering.CokeOven` anrufen.
+You can call the CokeOven package using `mods.immersiveengineering.CokeOven`.
 
 ## Rezept hinzufügen
 
-| Benötigt | Type              | Datentyp                                            |
-| -------- | ----------------- | --------------------------------------------------- |
-| Benötigt | Output            | [IItemstack](/Vanilla/Items/IItemStack/)            |
-| Benötigt | Brennstoffausgabe | Ganzzahl                                            |
-| Benötigt | Input             | [IIngredient](/Vanilla/Variable_Types/IIngredient/) |
-| Benötigt | Time              | Integer                                             |
+| Benötigt | Type        | Datentyp                                            |
+| -------- | ----------- | --------------------------------------------------- |
+| Benötigt | Output      | [IItemstack](/Vanilla/Items/IItemStack/)            |
+| Benötigt | Fuel Output | Integer                                             |
+| Benötigt | Input       | [IIngredient](/Vanilla/Variable_Types/IIngredient/) |
+| Benötigt | Time        | Integer                                             |
 
 ### Beispiel
 
 ```zenscript
-//Beispiel:
-mods.immersiveengineering.CokeOven.addRecipe(IItemStack Output, int fuelOutput, IIngredient Input, int time);
+//Example:
+mods.immersiveengineering.CokeOven.addRecipe(IItemStack output, int fuelOutput, IIngredient input, int time);
 mods.immersiveengineering.CokeOven.addRecipe(<minecraft:coal>, 2, <ore:logWood>, 2000);
 ```
 
@@ -30,7 +30,7 @@ mods.immersiveengineering.CokeOven.addRecipe(<minecraft:coal>, 2, <ore:logWood>,
 ### Beispiel:
 
 ```zenscript
-//Beispiel:
+//Example:
 mods.immersiveengineering.CokeOven.removeRecipe(IItemStack output);
 mods.immersiveengineering.CokeOven.removeRecipe(<minecraft:diamond>);
 ```

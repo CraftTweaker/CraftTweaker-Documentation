@@ -1,16 +1,16 @@
 # LiquidInteraction
 
-液体相互作用パッケージは、溶岩や液体スターライトなどの液体相互作用をASのシャリックに追加するために使用されます。
+The liquidInteraction package is used to add Liquid interactions (like lava and liquid starlight) to AS chalices.
 
 ## パッケージのインポート
 
-パッケージをインポートしたい場合は、次のようにします。
+If you want to import the package, here you go:
 
 ```zenscript
 import mods.astralsorcery.LiquidInteraction;
 ```
 
-## 相互作用を削除
+## Remove interaction
 
 This function removes the first recipe it finds that uses the given [liquids](/Vanilla/Liquids/ILiquidStack/) and returns the given output [stack](/Vanilla/Items/IItemStack/).  
 If you leave out the output, it will remove the first recipe that uses the two given liquids regardless of their output.
@@ -21,9 +21,9 @@ LiquidInteraction.removeInteraction(<liquid:lava>, <liquid:starlight>);
 LiquidInteraction.removeInteraction(<liquid:lava>, <liquid:starlight>, <minecraft:obsidian>);
 ```
 
-## レシピの追加
+## Recipe addition
 
-カリス相互作用に液体の相互作用を加える。
+Adds a liquid interaction to the chalice-interactions
 
 [FluidStack](/Vanilla/Liquids/ILiquidStack/) amounts count as the amount of liquid that will be consumed if an interaction occurs.  
 chance1 and chance2 define the chances the input fluids input1 and input2 are consumed respectively.  

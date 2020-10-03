@@ -1,23 +1,23 @@
-# オーバーライド
+# Overrides
 
-Overridesパッケージは、メルターオーバーライドへのレシピの追加/削除に使用されます。
+The Overrides package is used for adding/removing recipes from/to the melter Overrides.
 
-## 発信中
+## Calling
 
-`mods.tcomplement.Overrides`を使ってOverridesパッケージを呼び出すことができます。
+You can call the Overrides package using `mods.tcomplement.Overrides`
 
-## エントリ追加をオーバーライドする
+## Overrides entry addition
 
 ```zenscript
-//mods.tcomplement.Overrides.addRecipe(ILiquidStack 出力, IItemStack 入力, @Optional int temp);
+//mods.tcomplement.Overrides.addRecipe(ILiquidStack output, IItemStack input, @Optional int temp);
 mods.tcomplement.Overrides.addRecipe(<liquid:gold> * 100, <minecraft:gold_ingot>);
 mods.tcomplement.Overrides.addRecipe(<liquid:gold> * 100, <minecraft:gold_ingot>, 1000);
 ```
 
-## エントリの削除をオーバーライドする
+## Overrides entry removal
 
 ```zenscript
-//mods.tcomplement.Overrides.removeRecipe(ILiquidStack 出力, @Optional IItemStack input);
+//mods.tcomplement.Overrides.removeRecipe(ILiquidStack output, @Optional IItemStack input);
 mods.tcomplement.Overrides.removeRecipe(<liquid:gold>);
 mods.tcomplement.Overrides.removeRecipe(<liquid:gold>, <minecraft:gold_ore>);
 ```

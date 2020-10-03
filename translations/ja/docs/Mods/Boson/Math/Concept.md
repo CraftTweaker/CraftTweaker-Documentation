@@ -1,11 +1,11 @@
-# コンセプト
+# The Concept
 
-ZenScriptでの算術のほとんどの用途は、加算、減算、 乗算、除算の4つの基本演算でカバーできます。 また、ZenScriptはパワー操作を行う `pow` 関数へのアクセスを提供します。 でもそれだけです より高度な数学演算を実行することはできません そして、 ルックアップテーブルを備えた完全な再実装を必要とし、特に現代のCPUにとって、ハードウェアの最適化から恩恵を受けることはありません。
+Most of the uses of Math in ZenScript can be covered via the four basic operations: addition, subtraction, multiplication, and division. ZenScript also provides access to the `pow` function, which performs the power operation. But that's it. More advanced mathematical operations cannot be performed, and would require a full reimplementation with lookup tables and wouldn't benefit from the hardware's optimizations in that regard, especially for modern CPUs.
 
 This is where ZenScriptX Math comes in, providing a set of classes and some basic arithmetic operations that may be of general usefulness, while also benefitting in the most part from hardware optimizations, since most of those are implemented on a native level (via a couple of indirections due to the VM ZenScript runs on).
 
-すべてのドキュメントセクションでは、ユーザーに提供される関数と動作のリストを提供します。
+Every documentation section will provide the user with a list of provided functions and their behavior.
 
-現在実装されている提供されたクラスのリストは次のとおりです。
+The current list of provided classes that are implemented are:
 
 - [Math](/Mods/Boson/Math/Math/) for common mathematical functions (e.g., sine, cosine, logarithm...)

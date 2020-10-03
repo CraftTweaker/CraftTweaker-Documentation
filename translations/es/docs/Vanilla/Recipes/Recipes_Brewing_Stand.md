@@ -1,35 +1,35 @@
-# Manejador de recetas
+# Brewing Recipe Handler
 
-## Acceder al Manejador de Pociones
+## Access the Brewing Handler
 
-Puedes acceder al Manejador de Pecheros usando la palabra clave `para preparar` [global](/Vanilla/Global_Functions/).
+You can access the Brewing Handler using the `brewing` [global keyword](/Vanilla/Global_Functions/).
 
-## Métodos de Receta
+## Recipe Methods
 
-Una receta de elaboración consta de 3 partes:
+A Brewing Recipe consists of 3 Parts:
 
-1. Una entrada (Qué hay en las 3 "Espacios de botella")
-2. Uno o más ingredientes posibles (Lo que puede ir a la ranura superior a donde va el infierno)
-3. La salida (Lo que retorna la receta)
+1. An Input (What is in the 3 "Bottle Slots")
+2. One or more possible Ingredients (What can go into the upper slot where netherwart goes)
+3. The output (What the recipe returns)
 
-### Añadir recetas de Pociones
+### Add Brewing Recipes
 
 ```zenscript
-//brewing.addBrew(Ingredient input, IIngredient ingredient, ItemStack output, @Optional boolean hidden);
-brewing. ddBrew(<ore:blockGlass>, <ore:logWood>, <minecraft:beacon>);
+//brewing.addBrew(IIngredient input, IIngredient ingredient, IItemStack output, @Optional boolean hidden);
+brewing.addBrew(<ore:blockGlass>, <ore:logWood>, <minecraft:beacon>);
 brewing.addBrew(<ore:ingotGold>, <minecraft:obsidian>, <minecraft:wool:3>, true);
 
 
-//brewing. ddBrew(Entrada IIngrediente, IIngredient[] ingredientes, salida ItemStack, @Optional boolean hidden);
-elaboración. ddBrew(<minecraft:bedrock>, [<minecraft:lapis_ore>], <minecraft:sponge:1>);
+//brewing.addBrew(IIngredient input, IIngredient[] ingredients, IItemStack output, @Optional boolean hidden);
+brewing.addBrew(<minecraft:bedrock>, [<minecraft:lapis_ore>], <minecraft:sponge:1>);
 brewing.addBrew(<minecraft:gold_block>, [<minecraft:iron_block>, <minecraft:lapis_block>], <minecraft:sponge:1>, true);
 ```
 
-### Quitar recetas de Pociones
+### Remove Brewing Recipes
 
-Sólo funciona con JEI versión 4.15.0.275 o superior.
+Only works with JEI version 4.15.0.275 or higher.
 
 ```zenscript
-//brewing.removeRecipe(Inputación ItemStack, ingrediente ItemStack);
+//brewing.removeRecipe(IItemStack input, IItemStack ingredient);
 brewing.removeRecipe(<minecraft:potion>.withTag({Potion: "minecraft:water"}), <minecraft:gunpowder>);
 ```

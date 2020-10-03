@@ -1,53 +1,53 @@
 # XUTweaker
 
-XUTweaker パッケージは、いくつかの静的ユーティリティメソッドを追加します。
+The XUTweaker package adds several static utility methods.
 
 ## パッケージのインポート
 
-メソッド呼び出しを短縮したり、パッケージをインポートする必要があるかもしれない問題が発生する場合。  
-使用することができます。
+If you want to shorten method calls or encounter any issues you might need to import the package.  
+You can do so using
 
 ```zenscript
-import extraautilities2.Tweaker.XUTweaker;
+import extrautilities2.Tweaker.XUTweaker;
 ```
 
-## メソッド
+## Methods
 
-### サバイバル飛行を許可
+### Allow survival flight
 
 Allows Flight for all players, permanently.
 
 ```zenscript
-extraautilities2.Tweaker.XUTweaker.allowSurvivalFlight();
+extrautilities2.Tweaker.XUTweaker.allowSurvivalFlight();
 ```
 
-### ネザーポータルを無効にする
+### Disable Nether Portals
 
-ネザーポータル(およびPortalSpawnEventを使用するすべてのポータル)が永久にスポーンすることを防ぎます。
+Prevents Nether portals (and all portals that use the PortalSpawnEvent) from spawning, permanently.
 
 ```zenscript
-extraautilities2.Tweaker.XUTweaker.disableNetherPortals();
+extrautilities2.Tweaker.XUTweaker.disableNetherPortals();
 ```
 
-### プレイヤーが偽のプレイヤーであるかどうかを確認する
+### Check if a player is a fake Player
 
-プレイヤーが偽のプレイヤーであるかどうかを示すブール値を返します。
+Returns a boolean stating if the player is a fake Player.
 
-[IPlayer](/Vanilla/Players/IPlayer) 引数が必要です。
+Requires an [IPlayer](/Vanilla/Players/IPlayer) argument.
 
 ```zenscript
-extraautilities2.Tweaker.XUTweaker.isPlayerFake(player);
+extrautilities2.Tweaker.XUTweaker.isPlayerFake(player);
 ```
 
-### プレイヤーの本画面を開く
+### Open a books screen for the player
 
-指定したプレイヤーに書かれた本の画面を開こうとします。
+Tries to open the written book screen to the given player.
 
 Returns a boolean stating if the command was executed correctly.  
 Requires an [IPlayer](/Vanilla/Players/IPlayer) argument.  
 Also requires a string[] argument that will be the pages.
 
 ```zenscript
-extraautilities2.Tweaker.XUTweaker.openBookScreen(player, pages);
-extraautilities2.Tweaker.XUTweaker.openBookScreen(player, ["Page 1", "Page 2"]);
+extrautilities2.Tweaker.XUTweaker.openBookScreen(player, pages);
+extrautilities2.Tweaker.XUTweaker.openBookScreen(player, ["Page 1", "Page 2"]);
 ```

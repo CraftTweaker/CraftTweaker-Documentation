@@ -1,11 +1,11 @@
-# Polecenie ICommand
+# ICommand
 
-Obiekt ICommand reprezentuje nazwę polecenia.
+An ICommand Object represents a command ingame.
 
-## Importowanie pakietu
+## Importing the package
 
-Może być wymagane zaimportowanie pakietu, jeśli napotkasz jakiekolwiek problemy (takie jak przesyłanie [Array](/AdvancedFunctions/Arrays_and_Loops/)), tak aby były bezpieczne niż przepraszamy i dodaj import.  
-`zaimportuj crafttweaker.command.ICommand;`
+It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
+`import crafttweaker.command.ICommand;`
 
 ## ZenGetters
 
@@ -16,36 +16,36 @@ Może być wymagane zaimportowanie pakietu, jeśli napotkasz jakiekolwiek proble
     </th>
     
     <th>
-      Typ zwrotu
+      Return Type
     </th>
   </tr>
   
   <tr>
     <td>
-      Nazwa
+      name
     </td>
     
     <td>
-      ciąg znaków
+      string
     </td>
   </tr>
   
   <tr>
     <td>
-      aliasy
+      aliases
     </td>
     
     <td>
-      Lista<String\>
+      List<String\>
     </td>
   </tr>
 </table>
 
-## Metody ZenMethods
+## ZenMethods
 
 - String getUsage([ICommandSender](/Vanilla/Commands/ICommandSender/) sender);
-- unieważnij wykonanie([Serwer IServer](/Vanilla/Game/IServer/) , [SendandSender](/Vanilla/Commands/ICommandSender/) nadawca, String[] args);
-- boolean checkPermission([serwer IServer](/Vanilla/Game/IServer/) , [nadawca ICommandSender](/Vanilla/Commands/ICommandSender/));
-- Lista<string> getTabCompletions([IServer](/Vanilla/Game/IServer/) serwer, [ICommandSender](/Vanilla/Commands/ICommandSender/) nadawca, String[] args, @Optional [IBlockPos](/Vanilla/World/IBlockPos/) targetPos);
+- void execute([IServer](/Vanilla/Game/IServer/) server, [ICommandSender](/Vanilla/Commands/ICommandSender/) sender, String[] args);
+- boolean checkPermission([IServer](/Vanilla/Game/IServer/) server, [ICommandSender](/Vanilla/Commands/ICommandSender/) sender);
+- List<string> getTabCompletions([IServer](/Vanilla/Game/IServer/) server, [ICommandSender](/Vanilla/Commands/ICommandSender/) sender, String[] args, @Optional [IBlockPos](/Vanilla/World/IBlockPos/) targetPos);
 - boolean isUsernameIndex(String[] args, int index);
-- komenda1 != komenda2; → Możesz je porównać!
+- command1 != command2; → You can compare them!

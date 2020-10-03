@@ -1,46 +1,46 @@
-# Schéma
+# Blueprint
 
-Le pack d'artisanat de plans peut être utilisé pour ajouter/retirer des recettes à/de l'artisanat de plans de génie immersif.
+The Blueprint crafting package can be used to add/remove recipes to/from the Immersive Engineering Blueprint crafting.
 
-## PPS
+## PSA
 
-La chaîne [Catégorie](/Mods/Immersive_Engineering/Variables/Categories/) est assez spéciale. Pour toute chaîne saisie qui n'a pas encore de catégorie établie, elle créera une nouvelle catégorie et donc un nouveau plan. Cela signifie que vous pouvez ajouter une catégorie de plans appelée « Crêpes de bananes » qui fournit des « Recettes alimentaires ». Après la première entrée trouvée, il générera toutes les recettes supplémentaires pour cette chaîne de catégorie sous la catégorie générée.
+The [Category](/Mods/Immersive_Engineering/Variables/Categories/) String is quite special. For any string entered that doesn't already have an established Category, it'll create a new Category and thus a new Blueprint. This means that you could add a Blueprint Category called "Banana Pancakes" that provides "Food Recipes". After the first entry found it'll generate all additional recipes for that Category String under the generated Category.
 
-## Appeler le paquet
+## Calling The Package
 
-Vous pouvez appeler le Pack de Plan en utilisant `mods.immersiveengineering.Blueprint`.
+You can call the Blueprint package using `mods.immersiveengineering.Blueprint`.
 
-## Ajouter une recette
+## Add Recipe
 
-| Requis | Type de texte | Type de données                                                       |
-| ------ | ------------- | --------------------------------------------------------------------- |
-| Requis | Catégorie     | Chaîne [Catégorie](/Mods/Immersive_Engineering/Variables/Categories/) |
-| Requis | Sortie        | [IItemstack](/Vanilla/Items/IItemStack/)                              |
-| Requis | Inputs        | [Ingrédient](/Vanilla/Variable_Types/IIngredient/)                    |
+| Required | Type     | Data Type                                                            |
+| -------- | -------- | -------------------------------------------------------------------- |
+| Required | Category | String [Category](/Mods/Immersive_Engineering/Variables/Categories/) |
+| Required | Output   | [IItemstack](/Vanilla/Items/IItemStack/)                             |
+| Required | Inputs   | [IIngredient](/Vanilla/Variable_Types/IIngredient/)                  |
 
-### Exemple
+### Example
 
 ```zenscript
-//Exemple:
+//Example:
 mods.immersiveengineering.Blueprint.addRecipe(String category, IItemStack output, IIngredient[] inputs);
 
 //Using an existing Category String
-mods.immersiveengineering.Blueprint. ddRecipe("composents", <minecraft:diamond>, [<ore:logWood>, <minecraft:dirt>]);
+mods.immersiveengineering.Blueprint.addRecipe("components", <minecraft:diamond>, [<ore:logWood>, <minecraft:dirt>]);
 
-//Utiliser une nouvelle chaîne de catégories (Cela génère un nouvel élément de plan)
-mods. mmersiveengineering.Blueprint.addRecipe("Banana Pances", <minecraft:diamond>, [<ore:logWood>, <minecraft:dirt>]);
+//Using a new Category String (This generates a new Blueprint item)
+mods.immersiveengineering.Blueprint.addRecipe("Banana Pancakes", <minecraft:diamond>, [<ore:logWood>, <minecraft:dirt>]);
 ```
 
-## Supprimer la recette
+## Remove Recipe
 
-| Type de texte | Type de données                          |
-| ------------- | ---------------------------------------- |
-| Sortie        | [IItemstack](/Vanilla/Items/IItemStack/) |
+| Type   | Data Type                                |
+| ------ | ---------------------------------------- |
+| Output | [IItemstack](/Vanilla/Items/IItemStack/) |
 
-### Exemple:
+### Example:
 
 ```zenscript
-//Exemple:
+//Example:
 mods.immersiveengineering.Blueprint.removeRecipe(IItemStack output);
 mods.immersiveengineering.Blueprint.removeRecipe(<minecraft:diamond>);
 ```

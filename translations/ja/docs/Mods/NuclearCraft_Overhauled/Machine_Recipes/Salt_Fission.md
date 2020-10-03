@@ -1,17 +1,17 @@
-# 塩の<unk>
-**注意：部分的に壊れている**
+# Salt Fission
+**Note: Partially Broken**
 
-## パッケージのインポート
+## Importing the Package
 `mods.nuclearcraft.SaltFissionSaltFission`
 
-## レシピを追加中
+## Adding Recipes
 ```zenscript
-mods.nuclearcraft.Supercoolermods.nuclearcraft.SaltFission.addRecipe(ILiquidStack fluidInput, ILiquidStack fluidOutput, double baseTime, double basePower, @Optional double processRadiation);
+mods.nuclearcraft.mods.nuclearcraft.SaltFission.addRecipe(ILiquidStack fluidInput, ILiquidStack fluidOutput, double baseTime, double basePower, @Optional double processRadiation);
 ```
 
-## レシピを削除
+## Removing Recipes
 ```zenscript
-mods.nuclearcraft.SupercoolerSaltFission.removeRecipeWithInput(ILiquidStack fluidInput);
+mods.nuclearcraft.SaltFission.removeRecipeWithInput(ILiquidStack fluidInput);
 mods.nuclearcraft.mods.nuclearcraft.SaltFission.removeRecipeWithInput(ILiquidStack fluidInput);
 mods.nuclearcraft.SaltFission.removeRecipeWithOutput(ILiquidStack fluidOutput);
 mods.nuclearcraft.SaltFission.removeAllRecipes();SaltFission.removeAllRecipes();

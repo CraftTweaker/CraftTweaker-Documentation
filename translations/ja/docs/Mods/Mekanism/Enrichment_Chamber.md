@@ -1,6 +1,6 @@
 # Enrichment Chamber
 
-Mekanism 9.7.0 以降、コマンド `/ct meckrecipes enrichment でエンリッチメントチャンバーのすべてのレシピ文字列を表示できるようになりました`
+As of Mekanism 9.7.0 it is now possible to view all recipe strings of the Enrichment Chamber through the command `/ct mekrecipes enrichment`
 
 ## 加算
 
@@ -10,11 +10,11 @@ mods.mekanism.enrichment.addRecipe(IIngredient inputStack, IItemStack outputStac
 mods.mekanism.enrichment.addRecipe(<minecraft:coal_block>, <mekanism:compressedcarbon> * 9);
 ```
 
-Mekanism9.7.0では、IIngredientsをIItemStackの代わりにinputStackとして使用することができます。
+As of Mekanism 9.7.0 it is possible to use IIngredients as the inputStack instead of only IItemStacks.
 
-注意: 現在、これらはすべて、ZenScriptで行うのではなく、Javaのさまざまな可能性をループしながら追加しています。 現在、機械自体に複合成分や鉱石辞書をサポートする構築はありません。
+Note: Currently all this does is loop over the different possibilities in java while adding instead of you having to do it in ZenScript. Currently there is no built in support for compound ingredients or oredictionary in the machines themselves.
 
-## 削除
+## Removal
 
 ```zenscript
 mods.mekanism.enrichment.removeRecipe(IIngredient inputStack, @Optional IIngredient outputStack);
@@ -23,11 +23,11 @@ mods.mekanism.enrichment.removeRecipe(<minecraft:mossy_cobblestone>, <minecraft:
 mods.mekanism.enrichment.removeRecipe(<minecraft:stonebrick:1>);
 ```
 
-出力パラメータを指定すると、その入力から出力される特定のレシピのみが削除されます。 出力パラメータを省略すると、入力項目が生成できるすべてのレシピが削除されます。
+Specifying an output parameter will only remove the specific recipe that results in that output from that input. Omitting the output parameter will remove all recipes that the input item can produce.
 
-## すべてのレシピを削除する
+## Removing all recipes
 
-Mekanism 9.7.0 以降、エンリッチメントチャンバーのすべてのレシピを削除することが可能になりました。 （CraftTweaker経由で追加されたレシピは除外されます）
+As of Mekanism 9.7.0 it is now possible to remove all Enrichment Chamber recipes. (This excludes any recipes added via CraftTweaker)
 
 ```zenscript
 mods.mekanism.enrichment.removeAllRecipes();

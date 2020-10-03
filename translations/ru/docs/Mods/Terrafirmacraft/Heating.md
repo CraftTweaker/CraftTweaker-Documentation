@@ -1,21 +1,21 @@
-# Отопление
+# Heating
 
-## Пакет
+## Package
 ```zenscript
-import mods.terrafirmacraft.Отопление;
+import mods.terrafirmacraft.Heating;
 ```
 
 ## Сложение
 
 ```zenscript
-Heating.addRecipe(String registryName, IItemStack input, IItemStack output, float transformTemp);
+Heating.addRecipe(String registryName, IItemStack input, IItemStack output, float transformTemp, float maxTemp);
 ```
-- Температура преобразователя при которой рецепт полностью преобразует ввод в выходной стек.
-- maxTemp , при котором входная температура разрушается. Для получения полной информации обратитесь к [температурам отопления](/Mods/Terrafirmacraft/HeatingTemperatures)
+- transformTemp is at which temperature the recipe completely transform the input into the output stack.
+- maxTemp is at which temperature the input is destroyed. For a complete reference, check [Heating Temperatures](/Mods/Terrafirmacraft/HeatingTemperatures)
 
-## Удаление
+## Removal
 
 ```zenscript
-Heating.removeRecipe(IItemStack);
+Heating.removeRecipe(IItemStack output);
 Heating.removeRecipe(String registryName);
 ```

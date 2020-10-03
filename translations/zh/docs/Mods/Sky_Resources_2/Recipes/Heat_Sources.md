@@ -1,23 +1,23 @@
-# 热源
+# Heat Sources
 
-*热源* 包用于添加或移除某些机器/流程的热源。
+The *heatsources* package is used for adding or removing Heat Sources for certain machines/processes.
 
-**注意：这些函数仅适用于有方块表单的项目！**
+**Note: These functions only work for items that have a block form!**
 
 ## 导入包
 
-您可以使用 `mods.skyresources.heatsources` 调用 *热源* 包
+You can call the *heatsources* package using `mods.skyresources.heatsources`
 
-## 热源添加
+## Heat Source Addition
 
 ```zenscript
-//mods.skyresources.heatsources.add(IItemStack, int heatValue);
+//mods.skyresources.heatsources.add(IItemStack stack, int heatValue);
 mods.skyresources.heatsources.add(<minecraft:ice>, 3);
 ```
 
-## 热源删除
+## Heat Source Removal
 
 ```zenscript
-//mods.skyresources.heatsources.remove(IItemStack 输出);
+//mods.skyresources.heatsources.remove(IItemStack output);
 mods.skyresources.heatsources.remove(<minecraft:obsidian>);
 ```

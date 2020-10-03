@@ -1,22 +1,22 @@
-# Extracteur de pierre lumineuse
+# Glowstone Extractor
 
-## Paquet
+## Package
 ```zenscript
-Importer mods.calculator.glowstone;
+import mods.calculator.glowstone;
 ```
 
-## Méthodes
+## Methods
 
-- **[Ingrédient](/Vanilla/Variable_Types/IIngredient/) d'entrée** L'entrée.
-- **Valeur int** Le montant d'entrée ajoute à cette machine.
+- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input** The input.
+- **Int value** The amount of input adds to that machine.
 
 
-## Ajout
+## Additon
 ```zenscript
 glowstone.addRecipe(IIngredient input, int value);
 ```
 
-## Retirer
+## Removal
 ```zenscript
 glowstone.removeRecipe(IIngredient input);
 ```

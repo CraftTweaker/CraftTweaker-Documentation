@@ -1,27 +1,27 @@
 # IItemUseFinish
 
-Funkcja IItemUseFinish może być dodana do elementu [](/Mods/ContentTweaker/Vanilla/Creatable_Content/Item/) i będzie uruchamiana tylko wtedy, gdy użytkownik zakończy korzystanie z elementu (e. . kończy jedzenie).
+The IItemUseFinish function can be added to an [item](/Mods/ContentTweaker/Vanilla/Creatable_Content/Item/) and will be triggered only when a user finishes using the item (e.g. finishes eating).
 
-## Importowanie pakietu
+## Importing the package
 
-Może być wymagane zaimportowanie pakietu, jeśli napotkasz jakieś problemy, więc lepiej być bezpiecznym niż przepraszamy i dodać import.  
-`zaimportuj mods.contenttweaker.IItemUseFinish;`
+It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
+`import mods.contenttweaker.IItemUseFinish;`
 
-## Parametry
+## Parameters
 
-IItemRightClickFunction jest funkcją o następujących parametrach:
+The IItemRightClickFunction is a function with the following parameters:
 
-- [IMutableItemStack](/Mods/ContentTweaker/Vanilla/Types/Item/IMutableItemStack/) itemStack → Przedmiot, który jest używany
-- [IWorld](/Mods/ContentTweaker/Vanilla/Types/World/IWorld/) Świat → Świat, w którym gracz jest
-- [Obiekt IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) → Obiekt używając przedmiotu
+- [IMutableItemStack](/Mods/ContentTweaker/Vanilla/Types/Item/IMutableItemStack/) itemStack → The item that is used
+- [IWorld](/Mods/ContentTweaker/Vanilla/Types/World/IWorld/) world → The world the player is in
+- [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) entity → The entity using the item
 
-Funkcja musi zwrócić [IItemStack](/Vanilla/Items/IItemStack/).
+The function needs to return an [IItemStack](/Vanilla/Items/IItemStack/).
 
-## Przykład
+## Example
 
 ```zenscript
-zsItem.onItemUseFinish = function(stack, world player) {
-    stack.damage(1, gracz);
+zsItem.onItemUseFinish = function(stack, world, player) {
+    stack.damage(1, player);
     return stack;
 };
 ```

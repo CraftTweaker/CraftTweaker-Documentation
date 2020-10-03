@@ -1,16 +1,16 @@
-# フュージョン（Fusion）
+# Fusion
 
-## パッケージのインポート
-`mods.nuthcraft.fusion.`
+## Importing the Package
+`mods.nuclearcraft.fusion`
 
-## レシピを追加中
+## Adding Recipes
 ```zenscript
-mods.nuclearcraft.fusion.addRecipe([fluidInput1, fluidInput2, fluidOutput1, fluidOutput2, fluidOutput3, fluidOutput4, double comboTime, double comboHeatVar, @Optional double processRadiation]);
+mods.nuclearcraft.fusion.addRecipe([fluidInput1, fluidInput2, fluidOutput1, fluidOutput2, fluidOutput3, fluidOutput4, double comboTime, double comboPower, double comboHeatVar, @Optional double processRadiation]);
 ```
 
-## レシピを削除
+## Removing Recipes
 ```zenscript
 mods.nuclearcraft.fusion.removeRecipeWithInput([fluidInput1, fluidInput2]);
 mods.nuclearcraft.fusion.removeRecipeWithOutput([fluidOutput1, fluidOutput2, fluidOutput3, fluidOutput4]);
-mods.nurcraft.fusion.removeAllRecipes();
+mods.nuclearcraft.fusion.removeAllRecipes();
 ```

@@ -1,21 +1,21 @@
 # IBlockAction
 
-IBlockAction 関数は [ブロック](/Mods/ContentTweaker/Vanilla/Creatable_Content/Block/) に追加できます。 追加した場所に応じて、ブロックが置かれたり壊れたりした時にトリガーされます。
+The IBlockAction function can be added to a [Block](/Mods/ContentTweaker/Vanilla/Creatable_Content/Block/) and, depending on where you added it, will be triggered when the block is placed or broken.
 
 ## パッケージのインポート
 
-問題が発生した場合は、パッケージをインポートする必要があるかもしれませんので、申し訳ありませんし、インポートを追加してください。  
+It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
 `import mods.contenttweaker.IBlockAction;`
 
-## パラメータ
+## Parameters
 
-IBlockAction は以下のパラメータを持つ関数です。
+The IBlockAction is a function with the following parameters:
 
-- [IWorld](/Mods/ContentTweaker/Vanilla/Types/World/IWorld/) 世界 → ブロックのある世界
-- [IBlockPos](/Mods/ContentTweaker/Vanilla/Types/Block/IBlockPos/) の位置 → ブロックの位置
-- [ICTBlockState](/Mods/ContentTweaker/Vanilla/Types/Block/ICTBlockState/) の状態 → ブロック自体とそのメタデータなどのブロックに関する情報を含む
+- [IWorld](/Mods/ContentTweaker/Vanilla/Types/World/IWorld/) world → The world the block is in
+- [IBlockPos](/Mods/ContentTweaker/Vanilla/Types/Block/IBlockPos/) position → The Block's position
+- [ICTBlockState](/Mods/ContentTweaker/Vanilla/Types/Block/ICTBlockState/) state → Contains information on the block, such as the Block itself and its metadata
 
-関数は戻り値を持っていません！
+The function doesn't have a return value!
 
 ## 例
 

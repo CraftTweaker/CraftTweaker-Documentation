@@ -1,16 +1,16 @@
-# Elettrolyzer
+# Electrolyzer
 
-## Importazione del pacchetto
-`mods.nuclearcraft.Elettrolyzer`
+## Importing the Package
+`mods.nuclearcraft.Electrolyzer`
 
-## Aggiunta Di Ricette
+## Adding Recipes
 ```zenscript
 mods.nuclearcraft.Electrolyser.addRecipe(ILiquidStack fluidInput, ILiquidStack fluidOutput1, ILiquidStack fluidOutput2, ILiquidStack fluidOutput3, ILiquidStack fluidOutput4, @Optional double timeMultiplier, @Optional double powerMultiplier, @Optional double processRadiation);
 ```
 
-## Rimozione Ricette
+## Removing Recipes
 ```zenscript
 mods.nuclearcraft.Electrolyser.removeRecipeWithInput(ILiquidStack fluidInput);
 mods.nuclearcraft.Electrolyser.removeRecipeWithOutput(ILiquidStack fluidOutput1, ILiquidStack fluidOutput2, ILiquidStack fluidOutput3, ILiquidStack fluidOutput4);
-mods.nuclearcraft.Electrolyser.removeAllRicette();
+mods.nuclearcraft.Electrolyser.removeAllRecipes();
 ```

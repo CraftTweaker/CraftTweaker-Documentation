@@ -1,33 +1,33 @@
-# カスタムスキル
+# Custom Skills
 
-## クレジット:
+## Credits:
 
-クレジットは、カスタムコンテンツの実装のほとんどを書くためにKindlichに出ています!
+Credits goes out to Kindlich for writing most of the Custom Content implementation!
 
-## カスタムスキル:
+## Custom Skills:
 
-### 実装構文:
+### Implementation Syntax:
 
-    例:
+    Examples:
     mods.compatskills.SkillCreator.createSkill(String name, String backGroundLocation)
     mods.compatskills.SkillCreator.createNewSkill(String nameLocation, String backGroundLocation)
     
-    "createSkill" は名前リソースの場所に CompatSkills ModID を自動的に割り当てます。
-    例えば:
+    "createSkill" auto-assigns the CompatSkills ModID to the Name Resource Location.
+    So for example:
     mods.compatskills.SkillCreator.createSkill("banana", "textures/blocks/stonebrick.png");
     
-    内部でリターン:
-    "compatskills:banana" スキルのリソースロケーション名として。
+    Would internally return:
+    "compatskills:banana" as the resource location name for the skill.
     
-    2つ目にはModIDが割り当てられていないので、自分で挿入できます。
+    The second one has no assigned ModID meaning you can insert your own.
     mods.compatskills.SkillCreator.createNewSkill("pokemon:throwing", "textures/blocks/stonebrick.png")
     
 
 ### ZenProperties
 
-| 参照       | プロパティ名 | 実装        |
-|:-------- |:------ | --------- |
-| CrTSkill | 名前     | 以下をご覧ください |
+| Reference | Property Name | Implementation |
+|:--------- |:------------- | -------------- |
+| CrTSkill  | name          | See Below      |
 
     // Creates the skill as a variable
     var banana = mods.compatskills.SkillCreator.createSkill("banana", "textures/blocks/stonebrick.png");
@@ -39,22 +39,22 @@
 
 ### ZenSetters/ZenGetters
 
-| メソッドタイプ | メソッド名                 | 値                       |
-|:------- |:--------------------- | ----------------------- |
-| Setter  | setLevelCap           | 整数を取る                   |
-| Getter  | getLevelCap           | 整数を返す                   |
-| Setter  | setEnabled            | ブール値を取る                 |
-| Getter  | getEnabled            | ブール値を返す                 |
-| Setter  | setSkillPointInterval | 整数を取る                   |
-| Setter  | setBaseLevelCost      | 整数を取る                   |
-| Getter  | getBaseLevelCost      | 整数を返す                   |
-| Getter  | getName               | ローカライズされた文字列名を返します      |
-| Setter  | setLevelStaggering    | 文字列を取る[]、例の設定を参照してください。 |
-| Getter  | getLevelStaggering    | 文字列を返します[]              |
-| Setter  | setHidden             | ブール値を取る                 |
-| Getter  | isHidden              | ブール値を返す                 |
+| Method Type | Method Name           | Values                                   |
+|:----------- |:--------------------- | ---------------------------------------- |
+| Setter      | setLevelCap           | Takes an Integer                         |
+| Getter      | getLevelCap           | Returns an Integer                       |
+| Setter      | setEnabled            | Takes an Boolean                         |
+| Getter      | getEnabled            | Returns an Boolean                       |
+| Setter      | setSkillPointInterval | Takes an Integer                         |
+| Setter      | setBaseLevelCost      | Takes an Integer                         |
+| Getter      | getBaseLevelCost      | Returns an Integer                       |
+| Getter      | getName               | Returns the localized String Name        |
+| Setter      | setLevelStaggering    | Takes a String[], See Config for Example |
+| Getter      | getLevelStaggering    | Returns a String[]                       |
+| Setter      | setHidden             | Takes a Boolean                          |
+| Getter      | isHidden              | Returns a Boolean                        |
 
-### 地域化 & リソース場所の参照:
+### Localization & Resource Location References:
 
     Skill Icons:
     
@@ -76,4 +76,4 @@
     - customResourceLocation:lang/localeCode.lang
     
 
-このリンクに移動して、可能なすべてのLocale-Codeを表示します！ [GamepediaのMinecraft言語ページ](https://minecraft.gamepedia.com/Language "Gamepedia's Minecraft Language Page")
+Go to this link to see all possible Locale-Codes! [Gamepedia's Minecraft Language Page](https://minecraft.gamepedia.com/Language "Gamepedia's Minecraft Language Page")

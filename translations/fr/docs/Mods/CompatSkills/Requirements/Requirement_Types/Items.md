@@ -1,21 +1,21 @@
-# Éléments :
+# Items:
 
-Les objets sont des types d'exigences introduits par CompatSkills et vous permettent de porter des objets derrière la mainmise d'un objet spécifique/NBT-Valeur/Mod-Item dans votre Main ou Off-Hand. La syntaxe de l'objet est la suivante:
+Items is a Requirement-Type introduced by CompatSkills and allows you to gate things behind holding a specific Item/NBT-Value/Mod-Item in either your Main or Off-Hand. The Item Syntax is as follows:
 
-    Exemple:
-    // Ajoute l'exigence que vous déteniez N'IMPORTE QUEL élément du mod spécifié.
+    Example:
+    // Adds the requirement of you holding ANY item from the specified mod.
     stack|modid
     
-    // Ajoute l'exigence que vous mainteniez l'élément spécifié avec la pile Meta 0
+    // Adds the requirement of you holding the specified item with Meta 0
     stack|modid:item
     
-    // Ajoute l'exigence que vous déteniez l'élément spécifié avec la Meta (* = Meta Metadata Wildcard)
+    // Adds the requirement of you holding the specified item with the specified Meta (* = Wildcard Metadata)
     stack|modid:item:meta
     
-    // Ajoute l'exigence que vous déteniez un élément avec la pile de données NBT-
-    spécifiée||NBT en JSON
+    // Adds the requirement of you holding ANY item with the specified NBT-data
+    stack||NBT as JSON
     
-    // Ajoute l'exigence que vous déteniez n'importe quel élément du mod spécifié avec les données NBT spécifiées.
+    // Adds the requirement of you holding ANY item from the specified mod with the specified NBT-data.
     stack|modid|NBT as JSON
     
     // Ajoute l'obligation de détenir l'élément spécifié avec meta 0 et les données NBT spécifiées

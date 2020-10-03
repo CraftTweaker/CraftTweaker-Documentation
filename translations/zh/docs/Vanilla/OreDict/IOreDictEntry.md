@@ -1,36 +1,36 @@
-# IOREDictentre
+# IOreDictEntry
 
-当 [IOreDict](/Vanilla/OreDict/IOreDict/) 是词汇时，IOreDictEntries 是词汇中的条目。  
-它们由一个名称 (OreDictionary name) 和一个解释 (所有匹配项) 组成。
+When the [IOreDict](/Vanilla/OreDict/IOreDict/) is the lexicon, the IOreDictEntries are the lexicon's entries.  
+They consist of a name (OreDictionary name) and an explanation (all matching items).
 
 ## 导入相关包
 
-如果您遇到任何问题，可能需要导入软件包(例如铸造一个 [数组](/AdvancedFunctions/Arrays_and_Loops/)), 这样比抱歉更安全并添加导入。  
-`导入craftweeper.oredict.IOreDictEntry。`
+It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
+`import crafttweaker.oredict.IOreDictEntry;`
 
-## 检索此对象。
+## Retrieving such an Object.
 
-有多种方法获取一个 IOreDictEnterprise 对象： 如果您提到了一个尚不存在的oreDict ，它将被创建。
+There are multiple ways of getting an IOreDictEntry Object: If you refer to an oreDict that does not yet exist, it will be created.
 
-- 使用 [IOreDict](/Vanilla/OreDict/IOreDict/) 类。
-- 使用 [矿石块处理器](/Vanilla/Brackets/Bracket_Ore/)。
-- 使用 [IItemDefinitation's `ores` getter](/Vanilla/Items/IItemDefinition/).
+- Using the [IOreDict](/Vanilla/OreDict/IOreDict/) class.
+- Using the [ore Bracket Handler](/Vanilla/Brackets/Bracket_Ore/).
+- Using an [IItemDefinition's `ores` getter](/Vanilla/Items/IItemDefinition/).
 
 ## ZenGetters
 
-您可以使用这些getter来检索一些关于操作的信息：
+You can use these getters to retrieve some information on the oredict:
 
-| 名称    | 描述              | 退货类型                                     |
-| ----- | --------------- | ---------------------------------------- |
-| 名称    | 返回 oredict 的名称  | 字符串                                      |
-| 空的    | 如果oredict 为空    | 布尔值                                      |
-| 第一个项目 | 返回oreDict的第一个项目 | [IItemStack](/Vanilla/Items/IItemStack/) |
+| name      | 描述                                       | Return type                              |
+| --------- | ---------------------------------------- | ---------------------------------------- |
+| name      | Returns the oreDict's name               | string                                   |
+| empty     | Returns if the oreDict is empty          | bool                                     |
+| firstItem | Returns the first of the oreDict's items | [IItemStack](/Vanilla/Items/IItemStack/) |
 
 ## ZenMethods
 
-您可以在 IOreDictEnterprise 上使用这些甲型六氯环己烷：
+You can use these methos on an IOreDictEntry Object:
 
-### 添加/删除项目
+### Add/Remove items
 
 ```zenscript
 val oreDictEnt = <ore:ingotIron>;
@@ -47,60 +47,60 @@ oreDictEnt.addAll(<ore:ingotGold>);
 
 
 
-//oreDictEnt.remove(IItemStack... item_items;
+//oreDictEnt.remove(IItemStack... item_items);
 oreDictEnt.remove(<minecraft:grass>);
 oreDictEnt.remove(<minecraft:iron_ore>, <minecraft:dirt>);
 
-//oreDictEnt.removeItems(IItemStack[……]items);
-oredDictEnt.removeItems([<minecraft:redstone>, <minecraft:gold_ore>]);
+//oreDictEnt.removeItems(IItemStack[] items);
+oreDictEnt.removeItems([<minecraft:redstone>, <minecraft:gold_ore>]);
 ```
 
-### 检查IOreedDictentre 是否包含一个项目
+### Check if an IOreDictEntry contains an item
 
-您可以检查 IOreeDictEnterprise 是否包含一个使用</code> 或 `中的 <code>或` 关键字：
+You can check if an IOreDictEntry contains an item using either the `in` or `has` keywords:
 
 ```zenscript
-val oredictEnt = <ore:ingotIron>;
+val oreDictEnt = <ore:ingotIron>;
 
-//当使用时可能
-if(oredDictEnt in <minecraft:iron_ingot>)
-    print("铁是在oreDic! );
+//While using in is possible
+if(oreDictEnt in <minecraft:iron_ingot>){
+    print("Iron is in the oreDict!");
 }
 
-//many 更喜欢使用它可能更符合语法
-if(oreDictEnt 有 <minecraft:iron_ingot>)
-    print("铁仍在oreDic！ );
+//many prefer using has as it might make more sense grammar-wise
+if(oreDictEnt has <minecraft:iron_ingot>){
+    print("Iron still is in the oreDict!");
 }
 ```
 
-### 镜像IOreDictentre
+### Mirror an IOreDictEntry
 
-镜像IOreDictEnt意味着在另一个oreDictEnt中的所有项目将被oreDictEnt中的项目所取代，方法是在下列情况下执行的：
+Mirroring an IOreDictEntry means that all items in the other oreDictEntry will be replaced by the items in the oreDictEntry the method was executed on:
 
 ```zenscript
-//make 铁和铜当量
+//make iron and copper equivalent
 val iron = <ore:ingotIron>;
-val 铜= <ore:ingotCopper>;
+val copper = <ore:ingotCopper>;
 
-//将所有条目从铁添加到铜中，以便铜含有铁和铜矿的条目
-铁。 ddAll(copper)； 
+//adds all entries from iron to copper so that Copper contains both, the iron and copper oreDic entries
+iron.addAll(copper); 
 
 
-//mirross铜到铁，所以所有铁中的物品都将被铜中的物品所取代。
-//在这种情况下，这意味着所有铁和铜的矿石条目
-铜.mirror(铁)；
+//mirrors copper to iron, so all items in iron will be replaced by all the ones in copper.
+//In this case that means by all iron and copper oreDictEntries
+copper.mirror(iron);
 ```
 
-## 成分实现
+## IIngredient implementation
 
-IOreDictentre 扩展 [IIngredient](/Vanilla/Variable_Types/IIngredient/). 这意味着 [IIngradient](/Vanilla/Variable_Types/IIngredient/) 可用的所有方法也都可供IOreDictEntries 使用。 这也意味着你可以将 IOreedDictEntries 放入IIngredient 数组(例如在设计配方方法中的数组)。
+IOreDictEntry extends [IIngredient](/Vanilla/Variable_Types/IIngredient/). This means that all methods available to [IIngredient](/Vanilla/Variable_Types/IIngredient/) are also available to IOreDictEntries. It also means that you can put IOreDictEntries into IIngredient Arrays (such as the ones in crafting recipe methods).
 
-### 通过oredDictEntry的项目迭代中
+### Iterating through an oreDictEntry's items
 
 ```zenscript
-val iro = <ore:ingotIron>;
+val iron = <ore:ingotIron>;
 
-for item in iron.items□
-    recipe.remove(item)；
+for item in iron.items{
+    recipe.remove(item);
 }
 ```

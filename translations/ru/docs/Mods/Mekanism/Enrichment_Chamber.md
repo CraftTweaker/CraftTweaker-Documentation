@@ -1,20 +1,20 @@
-# Патронник обогащения
+# Enrichment Chamber
 
-Начиная с 9.7.0 меканизма теперь можно просматривать все рецептные строки Камеры обогащения через команду `/ct mekrecipes обогащения`
+As of Mekanism 9.7.0 it is now possible to view all recipe strings of the Enrichment Chamber through the command `/ct mekrecipes enrichment`
 
 ## Сложение
 
 ```zenscript
-mods.mekanism.enrichment.addRecipe(IIngredient inputStack, IItemStack);
+mods.mekanism.enrichment.addRecipe(IIngredient inputStack, IItemStack outputStack);
 
 mods.mekanism.enrichment.addRecipe(<minecraft:coal_block>, <mekanism:compressedcarbon> * 9);
 ```
 
-В соответствии с Mekanism 9.7.0 можно использовать IIngredients как inputStack, а не только IItemStacks.
+As of Mekanism 9.7.0 it is possible to use IIngredients as the inputStack instead of only IItemStacks.
 
-Замечание: В настоящее время все это повторяет различные возможности в java при добавлении вместо того, чтобы делать это в ZenScript. В настоящее время в машинах нет встроенной поддержки комбинированных ингредиентов или oredictionary .
+Note: Currently all this does is loop over the different possibilities in java while adding instead of you having to do it in ZenScript. Currently there is no built in support for compound ingredients or oredictionary in the machines themselves.
 
-## Удаление
+## Removal
 
 ```zenscript
 mods.mekanism.enrichment.removeRecipe(IIngredient inputStack, @Optional IIngredient outputStack);
@@ -23,11 +23,11 @@ mods.mekanism.enrichment.removeRecipe(<minecraft:mossy_cobblestone>, <minecraft:
 mods.mekanism.enrichment.removeRecipe(<minecraft:stonebrick:1>);
 ```
 
-Указание выходного параметра только удалит конкретный рецепт, который приводит к этому выводу. Пропуск выходного параметра удалит все рецепты, которые может генерировать входной элемент.
+Specifying an output parameter will only remove the specific recipe that results in that output from that input. Omitting the output parameter will remove all recipes that the input item can produce.
 
-## Удаление всех рецептов
+## Removing all recipes
 
-По данным Меканизма 9.7.0, теперь можно удалить все рецепты Камеры обогащения. (Это исключает любые рецепты, добавленные через CraftTweaker)
+As of Mekanism 9.7.0 it is now possible to remove all Enrichment Chamber recipes. (This excludes any recipes added via CraftTweaker)
 
 ```zenscript
 mods.mekanism.enrichment.removeAllRecipes();

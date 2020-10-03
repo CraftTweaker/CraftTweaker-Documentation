@@ -1,54 +1,54 @@
-# Mixer Di Plastica
+# Plastic Mixer
 
-Il mixer di plastica è una macchina con due funzioni:
+The Plastic Mixer is a machine with two functions:
 
-* Solidificare il liquido di plastica liquida in lastre di plastica solide, utilizzando coloranti rossi, verdi e blu per colorare i fogli.
-* Per fondere fogli di plastica solidi in plastica liquida. Ciò richiede una temperatura minima di 150°C (423K).
+* To solidify Liquid Plastic fluid to solid Plastic sheets, using red, green and blue dyes to colour the sheets.
+* To melt solid Plastic sheets into Liquid Plastic. This requires a minimum temperature of 150°C (423K).
 
-Il supporto CraftTweaker aggiunge la capacità di specificare qualsiasi elemento e combinazione liquida per scopi di fusione e/o solidificazione. È possibile specificare che gli elementi devono essere solo fusi, i fluidi devono essere solidificati o consentire un processo bidirezionale.
+CraftTweaker support adds the ability to specify any item and liquid combination for melting and/or solidifying purposes. It is possible to specify that items should only be melted, fluids should only be solidified, or to allow a two-way process.
 
-Mentre la solidificazione oggetto può essere qualsiasi oggetto, è più opportuno utilizzare oggetti colorabili qui, poiché i coloranti sono sempre utilizzati, indipendentemente dal fatto che l'oggetto in uscita sia o meno colorabile.
+While the solidification target item can be any item, it makes most sense to use colourable items here, since dyes are always used, regardless of whether or not the output item is colourable.
 
-## Chiamata
+## Calling
 
-È possibile chiamare il pacchetto Mixer di plastica utilizzando `mods.pneumaticcraft.plasticmixer`.
+You can call the Plastic Mixer package using `mods.pneumaticcraft.plasticmixer`.
 
-## Rimozione
+## Removing
 
-Questa funzione rimuove la prima ricetta che trova con il dato [ILiquidStack](/Vanilla/Liquids/ILiquidStack/) `input`:
+This function removes the first recipe it finds with the given [ILiquidStack](/Vanilla/Liquids/ILiquidStack/) `input`:
 
 ```zenscript
-mods.pneumaticcraft.plasticmixer.removeRecipe(ILiquidStack fluido);
-// Esempio
+mods.pneumaticcraft.plasticmixer.removeRecipe(ILiquidStack fluid);
+// Example
 mods.pneumaticcraft.plasticmixer.removeRecipe(<liquid:plastic>);
 ```
 
-Questa funzione rimuove *tutte le* ricette del mixer plastico:
+This function removes *all* Plastic Mixer recipes:
 
 ```zenscript
-mods.pneumaticcraft.plasticmixer.removeAllRicette();
+mods.pneumaticcraft.plasticmixer.removeAllRecipes();
 ```
 
-## Aggiunta
+## Adding
 
-Le seguenti funzioni possono essere utilizzate per aggiungere ricette al TPP:
+The following functions can be used to add recipes to the TPP:
 
 ```zenscript
-// Aggiungi una ricetta a due vie (temperatura in Kelvin)
+// Add a two-way recipe (temperature in Kelvin)
 mods.pneumaticcraft.plasticmixer.addRecipe(ILiquidStack liquid, IItemStack stack, int temperature);
 
-// Aggiungi una ricetta che consente solo la solidificazione
-mods.pneumaticcraft.plasticmixer. ddSolidifyOnlyRecipe(ILiquidStack liquidInput, IItemStack itemOutput);
+// Add a recipe allowing solidification only
+mods.pneumaticcraft.plasticmixer.addSolidifyOnlyRecipe(ILiquidStack liquidInput, IItemStack itemOutput);
 
-// Aggiungi una ricetta che permette di fondere solo (temperatura in Kelvin)
-mods.pneumaticcraft.plasticmixer. ddMeltOnlyRecipe(IItemStack itemInput, ILiquidStack fluidOutput, int temperature);
+// Add a recipe allowing melting only (temperature in Kelvin)
+mods.pneumaticcraft.plasticmixer.addMeltOnlyRecipe(IItemStack itemInput, ILiquidStack fluidOutput, int temperature);
 
-// Esempio: converte 100mB Lava a/da calcestruzzo (fondere a 573K)
-mods. neumaticcraft.plasticmixer.addRecipe(<liquid:lava> * 100, <minecraft:concrete>, 573);
+// Example: convert 100mB Lava to/from Concrete (melt at 573K)
+mods.pneumaticcraft.plasticmixer.addRecipe(<liquid:lava> * 100, <minecraft:concrete>, 573);
 
-// Esempio: convertire l'olio 2000mB in plastica (ma non consentire la fusione indietro)
-mods.pneumaticcraft.plasticmixer. ddSolidifyOnlyRecipe(<liquid:oil> * 2000, <pneumaticcraft:plastic>);
+// Example: convert 2000mB Oil to Plastic (but don't allow melting back)
+mods.pneumaticcraft.plasticmixer.addSolidifyOnlyRecipe(<liquid:oil> * 2000, <pneumaticcraft:plastic>);
 
-// Esempio: convertire Plastica in Olio 100mB a 473K (ma non consentire solidificazione)
-mods. neumaticcraft.plasticmixer.addMeltOnlyRecipe(<pneumaticcraft:plastic>, <liquid:oil> * 100, 473);
+// Example: convert Plastic to 100mB Oil at 473K (but don't allow solidifying)
+mods.pneumaticcraft.plasticmixer.addMeltOnlyRecipe(<pneumaticcraft:plastic>, <liquid:oil> * 100, 473);
 ```

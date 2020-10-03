@@ -1,38 +1,38 @@
-# Слот IEntityEquipmentSlot
+# IEntityEquipmentSlot
 
-Ячейка IEntityEquipmentSlot - это ячейка в инвентаре игрока. Это может быть mainHand или один из слотов брони.
+An IEntityEquipmentSlot is a slot in a player's inventory. That could for example be the mainHand or one of the armor slots.
 
 ## Импорт пакета
 
-Возможно, вам потребуется импортировать пакет, если вы столкнетесь с какими-либо проблемами, так что лучше быть безопасным чем извините и добавьте импорт.  
-`импорт crafttweaker.entity.IEntityEquipmentSlot;`
+It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
+`import crafttweaker.entity.IEntityEquipmentSlot;`
 
-## Способы ZenGetters/ZenMethods
+## ZenGetters/ZenMethods
 
 | Геттер    | Тип    |
 | --------- | ------ |
 | index     | int    |
 | slotIndex | int    |
-| имя       | string |
+| name      | string |
 
-### Сравнить
+### Compare
 
-Вы можете проверить, совпадают ли два IEntityEquipmentSlot объекты:  
-Возвращает доску.
+You can check if two IEntityEquipmentSlot objects are equal:  
+Returns a bool.
 
 ```zenscript
 slotOne == slotTwo;
 ```
 
-## Перечисление
+## Enumerations
 
-Интерфейс EntityEquipmentSlot содержит 6 статических методов, каждый из которых возвращает предмет IEntityEquipments(Ячейка IEntityEquipment).
+The EntityEquipmentSlot Interface has 6 static Methods, each returning the given IEntityEquipmentSlot object.
 
 ```zenscript
 crafttweaker.entity.IEntityEquipmentSlot.mainHand();
 crafttweaker.entity.IEntityEquipmentSlot.offhand();
 crafttweaker.entity.IEntityEquipmentSlot.feet();
-crafttweaker.entityEquipmentSlot.legs();
+crafttweaker.entity.IEntityEquipmentSlot.legs();
 crafttweaker.entity.IEntityEquipmentSlot.chest();
 crafttweaker.entity.IEntityEquipmentSlot.head();
 ```

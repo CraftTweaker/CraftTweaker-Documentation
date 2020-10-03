@@ -1,22 +1,21 @@
-# 项目：
+# Items:
 
-项目是由 Compatsky 引入的要求类型，允许您在您的主或非主体中将持有特定项目/NBT值/模式项目的背后门。 项目语法如下：
+Items is a Requirement-Type introduced by CompatSkills and allows you to gate things behind holding a specific Item/NBT-Value/Mod-Item in either your Main or Off-Hand. The Item Syntax is as follows:
 
-    示例：
-    // 添加您从指定的模组持有任何物品的要求。
-    moded
+    Example:
+    // Adds the requirement of you holding ANY item from the specified mod.
+    stack|modid
     
-    // 添加您使用Meta 0
-    stack|修改：项目
+    // Adds the requirement of you holding the specified item with Meta 0
+    stack|modid:item
     
-    // 添加使用指定元数据持有指定项目的要求
-    stack|修改：您使用指定元数据持有指定项目的要求 
-     stack|修改：item:meta
+    // Adds the requirement of you holding the specified item with the specified Meta (* = Wildcard Metadata)
+    stack|modid:item:meta
     
-    // 添加您使用指定的 NBT-数据持有指定项目的要求
-    stack|NBT 为 JSON
+    // Adds the requirement of you holding ANY item with the specified NBT-data
+    stack||NBT as JSON
     
-    // 添加您使用指定模组使用指定的 NBT数据持有指定项目的要求
+    // Adds the requirement of you holding ANY item from the specified mod with the specified NBT-data.
     stack|modid|NBT as JSON
     
     // Adds the requirement of you holding the specified item with meta 0 and the specified NBT-data

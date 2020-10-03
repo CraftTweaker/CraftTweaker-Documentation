@@ -1,8 +1,8 @@
-# エンチャントブラケットハンドラー
+# Enchantment Bracket Handler
 
-エンチャントブラケットハンドラーでは、ゲーム内のエンチャント定義にアクセスできます。
+The Enchantment Bracket Handler gives you access to the Enchantment definitions in the game.
 
-これらは次のようにエンチャントハンドラで参照されます:
+They are referenced in the Enchantment handler this way:
 
 ```zenscript
 <enchantment:modid:name>
@@ -10,4 +10,4 @@
 <enchantment:minecraft:protection>
 ```
 
-エンチャントが見つかった場合、IEnchantmentDefinition オブジェクトが返されます。 これらを使用して何ができるかについては、それぞれの [Wiki エントリ](/Vanilla/Enchantments/IEnchantmentDefinition/) を参照してください。
+If the Enchantment is found, this will return an IEnchantmentDefinition Object. Please refer to the [respective Wiki entry](/Vanilla/Enchantments/IEnchantmentDefinition/) for further information on what you can do with these.

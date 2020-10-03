@@ -1,16 +1,16 @@
-# Robotisches Montagesystem
+# Robotic Assembly System
 
-Das Robotic Assembly System ist ein Multiblock bestehend aus Montagekontrolleur, I/O-Einheiten, Montageplattform, Montagelaser und Montagebohr. Es wandelt Eingabeelemente in Ausgangselemente mit dem Laser und/oder Bohrer um.
+The Robotic Assembly System is a multiblock consisting of the Assembly Controller, Assembly I/O Units, Assembly Platform, Assembly Laser and Assembly Drill. It converts input items to output items using the laser and/or drill.
 
-Es gibt verschiedene Funktionen zum Hinzufügen und Entfernen von Rezepten, je nachdem, ob das Rezept den Laser, den Bohrer oder beides benötigt.
+There are several functions for adding and removing recipes, depending on whether the recipe requires use of the laser, the drill, or both.
 
-## Anruf
+## Calling
 
-Sie können das Assembly Paket mit `mods.pneumaticcraft.assembly` anrufen.
+You can call the Assembly package using `mods.pneumaticcraft.assembly`.
 
-## Entfernen
+## Removing
 
-Diese Funktionen entfernen das erste Rezept, das sie mit dem angegebenen [IItemStack finden](/Vanilla/Items/IItemStack/) `Ausgabe`:
+These functions remove the first recipe they find with the given [IItemStack](/Vanilla/Items/IItemStack/) `output`:
 
 ```zenscript
 mods.pneumaticcraft.assembly.removeLaserRecipe(IItemStack output);
@@ -22,7 +22,7 @@ mods.pneumaticcraft.assembly.removeLaserRecipe(<pneumaticcraft:aphorism_tile>);
 mods.pneumaticcraft.assembly.removeDrillRecipe(<pneumaticcraft:pressure_chamber_valve>);
 ```
 
-Diese Funktionen entfernen *alle* Rezepte, die derzeit für das Assembly-System definiert sind:
+These functions remove *all* recipes currently defined for the Assembly System:
 
 ```zenscript
 mods.pneumaticcraft.assembly.removeAllLaserRecipes();
@@ -30,9 +30,9 @@ mods.pneumaticcraft.assembly.removeAllDrillRecipes();
 mods.pneumaticcraft.assembly.removeAllDrillLaserRecipes();
 ```
 
-## Hinzufügen
+## Adding
 
-Diese Funktionen werden verwendet, um neue Rezepte für das Montagesystem hinzuzufügen:
+These functions are used to add new recipes for the assembly system:
 
 ```zenscript
 mods.pneumaticcraft.assembly.addLaserRecipe(IItemStack input, IItemStack output)

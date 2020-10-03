@@ -1,22 +1,22 @@
-# Powered Thingies :: Item Compound Erzeuger
+# Powered Thingies :: Item Compound Producer
 
 ### Importieren
 
 ```zenscript
-importiere mods.poweredthingies.Tweaker.itemCompoundProducerTweaker als icp;
+import mods.poweredthingies.Tweaker.itemCompoundProducerTweaker as icp;
 ```
 
-### Schlüssel auflisten, Rezepte nach Schlüssel entfernen, Clearing
+### Listing Keys, Removing Recipes by Key, Clearing
 
 ```zenscript
 icp().logKeys()
-icp().removeRecipe('minecraft:mossy_cobblestone') // <logKeys> Ausgabe auf gültige Schlüssel 
+icp().removeRecipe('minecraft:mossy_cobblestone') // check <logKeys> output for valid keys 
 icp().clear()
 ```
 
-### Rezept hinzufügen
+### Adding Recipe
 
-##### Signatur
+##### Signature
 
 ```zenscript
 addRecipe(inputStack: IItemStack, inputFluid: ILiquidStack, result: IItemStack)
@@ -28,6 +28,6 @@ addRecipe(inputStack: IItemStack, inputFluid: ILiquidStack, result: IItemStack)
 icp().addRecipe(<minecraft:cobblestone>, <liquid:water> * 125, <minecraft:mossy_cobblestone>);
 ```
 
-### Notizen
+### Notes
 
-Alle diese Aktionen werden zwischengespeichert und ausgeführt, nachdem die Standard-Registry für diese Maschine alle Rezepte (einschließlich der von den benutzerdefinierten Jsons) registriert hat.
+All of these actions will get cached and ran after the default registry for this machine has finished registering all recipes (including the ones from the custom jsons).

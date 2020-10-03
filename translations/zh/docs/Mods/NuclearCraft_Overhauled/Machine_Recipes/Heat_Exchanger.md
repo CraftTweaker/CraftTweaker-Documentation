@@ -1,17 +1,17 @@
-# 热交换器
-**注： 部分损坏**
+# Heat Exchanger
+**Note: Partially Broken**
 
-## 导入软件包
-`nuclearcraft。热交换器`
+## Importing the Package
+`mods.nuclearcraft.HeatExchanger`
 
-## 添加配方
+## Adding Recipes
 ```zenscript
-nuclearcraft。HeatExchanger.addRecipe(ILiquidStack fluidInput, ILiquidStack fluidOutput, 双加热所需，不含温度In, int temperatureOut)；
+mods.nuclearcraft.HeatExchanger.addRecipe(ILiquidStack fluidInput, ILiquidStack fluidOutput, double heatRequired, int temperatureIn, int temperatureOut);
 ```
 
-## 删除配方
+## Removing Recipes
 ```zenscript
-nuclearcraft。HeatExchanger.removeRecipeWidInput(ILiquidStack fluidInput);
-mods.nuclearcraft.HeatExchanger.removeRecipeWOutput(ILiquidStack fluidOut)；
-mods.nuclearcraft。HeatExchanger.removeAllRecipes();
+mods.nuclearcraft.HeatExchanger.removeRecipeWithInput(ILiquidStack fluidInput);
+mods.nuclearcraft.HeatExchanger.removeRecipeWithOutput(ILiquidStack fluidOutput);
+mods.nuclearcraft.HeatExchanger.removeAllRecipes();
 ```

@@ -1,53 +1,53 @@
 # XUTweaker
 
-El paquete XUTweaker añade varios métodos de utilidad estática.
+The XUTweaker package adds several static utility methods.
 
-## Importando el paquete
+## Importing the package
 
-Si desea acortar las llamadas a métodos o encontrar cualquier problema puede que necesite importar el paquete.  
-Puede hacerlo utilizando
+If you want to shorten method calls or encounter any issues you might need to import the package.  
+You can do so using
 
 ```zenscript
-importar extrauportunidades2.Tweaker.XUTweaker;
+import extrautilities2.Tweaker.XUTweaker;
 ```
 
-## Métodos
+## Methods
 
-### Permitir vuelo de supervivencia
+### Allow survival flight
 
-Permite volar para todos los jugadores, permanentemente.
+Allows Flight for all players, permanently.
 
 ```zenscript
-extrautionties2.Tweaker.XUTweaker.allowSurvivalFlight();
+extrautilities2.Tweaker.XUTweaker.allowSurvivalFlight();
 ```
 
-### Desactivar Portales del Nether
+### Disable Nether Portals
 
-Evita que los portales del Nether (y todos los portales que usan el PortalSpawnEvent) aparezcan permanentemente.
+Prevents Nether portals (and all portals that use the PortalSpawnEvent) from spawning, permanently.
 
 ```zenscript
-extrautionties2.Tweaker.XUTweaker.disable)[video] Portals();
+extrautilities2.Tweaker.XUTweaker.disableNetherPortals();
 ```
 
-### Comprueba si un jugador es un jugador falso
+### Check if a player is a fake Player
 
-Devuelve un booleano indicando si el jugador es un jugador falso.
+Returns a boolean stating if the player is a fake Player.
 
-Requiere un argumento [IPlayer](/Vanilla/Players/IPlayer).
+Requires an [IPlayer](/Vanilla/Players/IPlayer) argument.
 
 ```zenscript
-extrautionties2.Tweaker.XUTweaker.isPlayerFake(player);
+extrautilities2.Tweaker.XUTweaker.isPlayerFake(player);
 ```
 
-### Abrir una pantalla de libros para el reproductor
+### Open a books screen for the player
 
-Intenta abrir la pantalla del libro escrito al jugador dado.
+Tries to open the written book screen to the given player.
 
-Devuelve un booleano indicando si el comando fue ejecutado correctamente.  
-Requiere un argumento [IPlayer](/Vanilla/Players/IPlayer) .  
-También requiere un argumento de cadena[] que serán las páginas.
+Returns a boolean stating if the command was executed correctly.  
+Requires an [IPlayer](/Vanilla/Players/IPlayer) argument.  
+Also requires a string[] argument that will be the pages.
 
 ```zenscript
-extrauChancellas2.Tweaker.XUTweaker.openBookScreen(jugador, páginas);
-extrauutities2.Tweaker.XUTweaker.openBookScreen(player, ["Page 1", "Page 2"]);
+extrautilities2.Tweaker.XUTweaker.openBookScreen(player, pages);
+extrautilities2.Tweaker.XUTweaker.openBookScreen(player, ["Page 1", "Page 2"]);
 ```

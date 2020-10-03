@@ -1,14 +1,14 @@
 # Irradiator
 
-## Importation du paquet en cours
+## Importing the Package
 `mods.nuclearcraft.irradiator`
 
-## Ajout de recettes
+## Adding Recipes
 ```zenscript
 mods.nuclearcraft.irradiator.addRecipe([fluidInput1, fluidInput2, fluidOutput1, fluidOutput2, @Optional double timeMultiplier, @Optional double powerMultiplier, @Optional double processRadiation]);
 ```
 
-## Suppression des recettes
+## Removing Recipes
 ```zenscript
 mods.nuclearcraft.irradiator.removeRecipeWithInput([fluidInput1, fluidInput2]);
 mods.nuclearcraft.irradiator.removeRecipeWithOutput([fluidOutput1, fluidOutput2]);

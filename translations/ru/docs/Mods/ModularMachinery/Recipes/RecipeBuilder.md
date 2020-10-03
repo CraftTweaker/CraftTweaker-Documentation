@@ -1,24 +1,24 @@
-# Рецепт-строитель
+# RecipeBuilder
 
-Класс Рецепт имеет только одну цель: создать для вас новый [Рецепт](/Mods/ModularMachinery/Recipes/RecipePrimer/) объект.
+The RecipeBuilder class only has one objective: Creating a new [RecipePrimer](/Mods/ModularMachinery/Recipes/RecipePrimer/) Object for you.
 
-## Звонок
+## Calling
 
-Вы можете вызвать пакет пива, используя `mods.modularmachinery.RecipeBuilder`
+You can call the Brew package using `mods.modularmachinery.RecipeBuilder`
 
-## Создание рецепта.
+## Creating a RecipePrimer.
 
-Это единственные функции, которые будут найдены в классе, они оба возвращают новый объект [RecipePrimer](/Mods/ModularMachinery/Recipes/RecipePrimer/).
+These are the only functions to be found in the class, they both return a new [RecipePrimer](/Mods/ModularMachinery/Recipes/RecipePrimer/) Object.
 
 ```zenscript
-//mods.modularmachinery.RecipeBuilder.newBuilder(tring recipeRegistryName, String associatedMachineRegistryName, int processingTickTime);
+//mods.modularmachinery.RecipeBuilder.newBuilder(String recipeRegistryName, String associatedMachineRegistryName, int processingTickTime);
 
 
-//mods.modularmachinery.RecipeBuilder.newBuilder(tring recipeRegistryName, String associatedMachineRegistryName, int processingTickTime, int sortingPriority);
+//mods.modularmachinery.RecipeBuilder.newBuilder(String recipeRegistryName, String associatedMachineRegistryName, int processingTickTime, int sortingPriority);
 
 
 ```
 
 ```zenscript
-элемент вар = <item:minecraft:gold_ingot>;
+var item = <item:minecraft:gold_ingot>;
 ```

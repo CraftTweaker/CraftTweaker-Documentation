@@ -1,33 +1,33 @@
-# Доска для обрыва
+# Chopping Board
 
-Доска для кражи позволяет вам собрать предмет на много частей другого предмета.
+The Chopping Board allows you to chop up an item into many pieces of another item.
 
-По умолчанию вырезает только хлеб на 6 ломтиков.
+By default only cuts bread into 6 bread slices.
 
-## Удаление рецептов обломков
+## Removing Chopping Recipes
 
-## Удалить подходящие рецепты.
+## Remove matching chopping recipes.
 
 ```zenscript
 mods.cfm.ChoppingBoard.remove(@Optional final IIngredient output, @Optional final IIngredient input);
 
-// Удаляем рецепт с хлебом в качестве входного элемента
-mods.cfm.ChoppingBoard. emove(нулевый,<minecraft:bread>);
-// Удаляем рецепты, которые приводят к шести ломтикам хлеба (совпадения, что выше рецепта, так что не будет эффекта, если используется после)
-модов. fm.ChoppingBoard.remove(<cfm:item_bread_slice>.withAmount(6));
+// Remove recipe with bread as the input item
+mods.cfm.ChoppingBoard.remove(null,<minecraft:bread>);
+// Remove recipes that result in 6 bread slices (same match as above recipe, so will have no effect if used after)
+mods.cfm.ChoppingBoard.remove(<cfm:item_bread_slice>.withAmount(6));
 ```
 
-## Добавление рецептов ремесла
+## Adding Chopping Recipes
 
-Добавить отрезок рецепта.
+Add a chopping recipe.
 
-## Ввод требует размер стека 1.
+## Input requires stack size of 1.
 
 ```zenscript
-mods.cfm.ChoppingBoard.addRecipe(@Nonnull final IItemStack, @Nonnull final IItemStack input);
+mods.cfm.ChoppingBoard.addRecipe(@Nonnull final IItemStack output, @Nonnull final IItemStack input);
 
-// Добавить рецепт к пшенице в 2 палочки
-mods.cfm.ChoppingBoard. ddRecipe(<minecraft:stick>.withAmount(2),<minecraft:wheat>);
-// Добавить рецепт в хлеб в 3 пшеницу
+// Add a recipe to chop wheat into 2 sticks
+mods.cfm.ChoppingBoard.addRecipe(<minecraft:stick>.withAmount(2),<minecraft:wheat>);
+// Add a recipe to chop bread into 3 wheat
 mods.cfm.ChoppingBoard.addRecipe(<minecraft:wheat>.withAmount(3),<minecraft:bread>);
 ```

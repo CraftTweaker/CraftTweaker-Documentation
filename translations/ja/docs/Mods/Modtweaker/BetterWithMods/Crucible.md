@@ -1,8 +1,8 @@
-# るつぼ可能
+# Crucible
 
-## 基本的なレシピ
+## Basic Recipe
 
-* unstoked Crucable Recipe を追加する 
+* Adds a Unstoked Crucible Recipe 
 
 ```zenscript
 mods.betterwithmods.Crucible.addUnstoked(IIngredient[] inputs, IItemStack[] outputs);
@@ -11,7 +11,7 @@ mods.betterwithmods.Crucible.addUnstoked([<ore:cobblestone>],[<minecraft:stone>]
 mods.betterwithmods.Crucible.addUnstoked([<minecraft:dirt>],[<minecraft:grass>]);
 ```
 
-* 貯蔵されたるつぼレシピを追加する 
+* Adds a Stoked Crucible Recipe 
 
 ```zenscript
 mods.betterwithmods.Crucible.addStoked(IIngredient[] inputs, IItemStack[] outputs);
@@ -20,39 +20,39 @@ mods.betterwithmods.Crucible.addStoked([<ore:cobblestone>],[<minecraft:stone>]);
 mods.betterwithmods.Crucible.addStoked([<minecraft:dirt>],[<minecraft:grass>]);
 ```
 
-## 削除
+## Removal
 
-* 出力に基づいてるつぼレシピを削除
+* Remove a Crucible recipe based on the output
 
 ```zenscript
 mods.betterwithmods.Crucible.remove(IItemStack[] outputs);
 ```
 
-* すべてのるつぼレシピを削除
+* Remove all Crucible recipes
 
 ```zenscript
 mods.betterwithmods.Crucible.removeAll();
 ```
 
-## ビルダー
+## Builder
 
-るつぼにはレシピビルダーがあり、レシピをより正確に制御できます。 以前のすべてのメソッドはビルダーの使用に単純に短縮されます。
+The Crucible has a recipe builder that allows more precise control over the recipes. All previous methods are simply short cuts to using the builder.
 
-* 新しいるつぼビルダーを作成します。 `mods.betterwithmods.Crucible.builder()`
+* To create a new Crucible builder. `mods.betterwithmods.Crucible.builder()`
 
-* るつぼの方法
+* Crucible methods
      
      * Sets up the inputs and outputs of the recipe  
           zenscript buildRecipe(IIngredient[] inputs, IItemStack[] outputs)  
               zenscript
               buildRecipe(IIngredient[] inputs, IItemStack[] outputs)
      
-     * レシピの優先度を設定すると、作成される優先度が低いほど早くなります。 Default=0.  
+     * Sets the priority of the recipe, the lower the priority the sooner it will be crafted. Default=0.  
           zenscript setPriority(int priority)  
               zenscript
               setPriority(int priority)
      
-     * レシピの熱要件を設定します。 熱を使用して、レシピをストーズまたはストーズされていないCrucibleで作ることができるかどうかを確認します。 Unstoked heat = 1, Stoked heat = 2. You can add custom heat sources, and even custom heat levels using the [Heat Registry](/Mods/Modtweaker/BetterWithMods/HeatRegistry/).  
+     * Set the Heat requirements of the recipe. Heat is used to check if the recipe can be made in a stoked or unstoked Crucible. Unstoked heat = 1, Stoked heat = 2. You can add custom heat sources, and even custom heat levels using the [Heat Registry](/Mods/Modtweaker/BetterWithMods/HeatRegistry/).  
           zenscript setHeat(int heat)  
               zenscript
               setHeat(int heat)
@@ -67,7 +67,7 @@ mods.betterwithmods.Crucible.removeAll();
               zenscript
               build()
 
-### ビルダーの使用例
+### Example builder usage
 
 ```zenscript
 mods.betterwithmods.Crucible.builder()

@@ -1,14 +1,14 @@
-# Chemischer Kombinator
+# Chemical Combiner
 
-# Paket
+# Package
 ```zenscript
-mods.alchemistry.Kombinator
+mods.alchemistry.Combiner
 ```
 
 ## Methoden
-- **[IItemStack](/Vanilla/Items/IItemStack/) Ausgabe** - Ausgabe des Rezeptes.
+- **[IItemStack](/Vanilla/Items/IItemStack/) output** - The output of the recipe.
 
-- **[IItemStack](/Vanilla/Items/IItemStack/)[] Eingabe** - Die Eingaben des Rezeptes.
+- **[IItemStack](/Vanilla/Items/IItemStack/)[] input** - The inputs of the recipe.
 
 
 ## Addition
@@ -19,23 +19,23 @@ mods.alchemistry.Combiner.addRecipe(<minecraft:redstone>,
      <alchemistry:element:5>]);
 ```
 
-## Entfernen
+## Removal
 ```zenscript
 mods.alchemistry.Combiner.removeRecipe(IItemStack output);
 mods.alchemistry.Combiner.removeRecipe(<minecraft:gold_ingot>);
 
-mods.alchemistry.Kombinieren.removeAllRezept();
+mods.alchemistry.Combiner.removeAllRecipes();
 ```
 
 
-# Integration der Spielstadien
+# Game Stages Integration
 
-## Neue Rezepte
+## New Recipes
 ```zenscript
 mods.alchemistry.Combiner.addStagedRecipe(IItemStack output, IItemstack[] input, String stage);
 ```
 
-## Bestehendes Rezept
+## Existing Recipe
 
 ```zenscript
 mods.alchemistry.Combiner.setAsStaged(IItemStack output, String stage);

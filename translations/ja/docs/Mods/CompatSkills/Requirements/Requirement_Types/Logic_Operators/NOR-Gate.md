@@ -1,25 +1,25 @@
-# NOR演算子
+# NOR Operator
 
-NOR **ゲート** は逆 **または** ゲートです。 これは、 **NOT** ゲートへの入力として **OR** ゲートの出力を使用するのと同じです。 This means that the **NOR** gate returns `TRUE` only when both inputs are `FALSE`.
+A **NOR** gate is an inverted **OR** gate. This is the same as using the output of the **OR** gate as the input to the **NOT** gate. This means that the **NOR** gate returns `TRUE` only when both inputs are `FALSE`.
 
-| Input 1 | Input 2 | 出力 |
-| ------- | ------- | --:|
-| 0       | 0       |  1 |
-| 0       | 1       |  0 |
-| 1       | 0       |  0 |
-| 1       | 1       |  0 |
+| Input 1 | Input 2 | Output |
+| ------- | ------- | ------:|
+| 0       | 0       |      1 |
+| 0       | 1       |      0 |
+| 1       | 0       |      0 |
+| 1       | 1       |      0 |
 
-    例:
+    Empty Example:
     nor|[]~[]
     
-    filled-In Example:
-    nor|[reskillable:mining|5]~[reskillable:gating|5]
+    Filled-In Example:
+    nor|[reskillable:mining|5]~[reskillable:gathering|5]
     
 
-## ユースケース：
+## Use-Case
 
-プレイヤーが採掘または採集レベル5になるまで、木製のシャベルを使用することができます:
+Only allow using a wooden shovel until the player gets mining or gathering level 5:
 
 ```zenscript
-addRequirement(<minecraft:wooden_shovel:*>, "nor|[reskillable:mining|5]~[reskillable:gating|5]');
+addRequirement(<minecraft:wooden_shovel:*>, "nor|[reskillable:mining|5]~[reskillable:gathering|5]");
 ```

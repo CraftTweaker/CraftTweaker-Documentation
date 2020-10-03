@@ -1,8 +1,8 @@
-# Видимость игрока
+# PlayerVisibility
 
-Это событие запущено для определения видимости игрока, т.е. достаточно близко или нет для того, чтобы он был замечен нападающим. Результат этого события используется для вычисления (с модификаторами из ванильного Minecraft для крадывания, ) диапазон, который игрок может получить до существа до того, как оно видит его.
+This event is fired to determine the visibility of a player, i.e., whether or not they are close enough to be noticed by an attacker. The result of this event is used to calculate (with modifiers from Vanilla Minecraft for sneaking, etc) the range a player can get to a creature before that creature sees them.
 
-Хотя это может быть использовано для увеличения диапазона видимости (если он был уменьшен на Minecraft или другой мод), не может быть увеличен выше его максимального значения (стандартное целевое расстояние).
+While this can be used to increase the visibility range (if it were decreased by Minecraft or another mod), it cannot be increased above its maximum value (the standard target distance).
 
 ## Класс события
 You will need to cast the event in the function header as this class:  
@@ -10,19 +10,19 @@ You will need to cast the event in the function header as this class:
 You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
 
 ## Наследование от интерфейсов событий
-События PlayerVisibilityEvent реализуют следующие интерфейсы и также могут вызвать все методы/getters/setters:
+PlayerVisibilityEvent Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
 
 - [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
 
 
 ## Геттеры/сеттеры
-Во время события можно извлечь/задать следующую информацию:
+The following information can be retrieved/set during the event:
 
-| ZenGetter   | ZenSetter          | Тип             |
-| ----------- | ------------------ | --------------- |
-| `видимость` |                    | double          |
-|             | `modifyVisibility` | См. примечание. |
+| ZenGetter    | ZenSetter          | Тип       |
+| ------------ | ------------------ | --------- |
+| `visibility` |                    | double    |
+|              | `modifyVisibility` | See note. |
 
-## Примечание
+## Note
 
-Это значение не может быть установлено напрямую. Вызов `модификации` двойным значением заменит модификатор на результат `модификации * двойное значение`.
+This value cannot be directly set. Calling `modifyVisibility` with a double value will replace the modifier with the result of `modifiy * double value`.

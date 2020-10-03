@@ -1,21 +1,21 @@
-# KTAspekt
+# CTAspect
 
-Ein CTAspect ist der Aspekt, der einem [Aspect Stack](/Mods/Modtweaker/Thaumcraft/Aspects/CTAspectStack/)zugrunde liegt, ähnlich wie ein [IItemDefinition](/Vanilla/Items/IItemDefinition/) einem [IItemStack](/Vanilla/Items/IItemStack/) zugrunde liegt.
+A CTAspect is the aspect underlying an [Aspect Stack](/Mods/Modtweaker/Thaumcraft/Aspects/CTAspectStack/), much like an [IItemDefinition](/Vanilla/Items/IItemDefinition/) underlies an [IItemStack](/Vanilla/Items/IItemStack/).
 
 ## Dieses Paket importieren
 
-Es kann erforderlich sein, dass Sie das Paket importieren, wenn Sie irgendwelche Probleme haben. Seien Sie also besser sicher als entschuldigen und fügen Sie den Import hinzu.  
-`thaumcraft.aspect.CTAspect;`
+It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
+`import thaumcraft.aspect.CTAspect;`
 
-## Ein solches Objekt wird abgerufen
+## Retrieving such an object
 
-Du kannst ein CTAspect Objekt von einem [CTAspectStack](/Mods/Modtweaker/Thaumcraft/Aspects/CTAspectStack/) Objekt abrufen:
+You can retrieve a CTAspect object from a [CTAspectStack](/Mods/Modtweaker/Thaumcraft/Aspects/CTAspectStack/) object:
 
 ```zenscript
 val aspect = <aspect:ignis>.internal;
 ```
 
-## ZenGetters und ZenSetter
+## ZenGetters and ZenSetters
 
 | Name           | isGetter | isSetter | Type   |
 | -------------- | -------- | -------- | ------ |

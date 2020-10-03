@@ -1,27 +1,27 @@
 # IBlockDropHandler
 
-Функция IBlockDropHandler используется для расширенной обработки блоков с [Блоками](/Mods/ContentTweaker/Vanilla/Creatable_Content/Block/) , созданной с [Заводским Заводом](/Mods/ContentTweaker/Vanilla/Creatable_Content/VanillaFactory/).
+The IBlockDropHandler function is used to allow for advanced block drop handling for [Blocks](/Mods/ContentTweaker/Vanilla/Creatable_Content/Block/) created with the [Vanilla Factory](/Mods/ContentTweaker/Vanilla/Creatable_Content/VanillaFactory/).
 
 ## Импорт класса
 
-Вы хотите импортировать класс? Вот:
+You want to import the class? Here you go:
 
 ```zenscript
 import mods.contenttweaker.DropHandler;
 ```
 
-## Структура функции
+## Function structure
 
-Функция является недействительной функцией, которая принимает следующие параметры:
+The function is a void function that takes the following parameters:
 
-- [ICTItemList](/Mods/ContentTweaker/Vanilla/Types/Drops/ICTItemList/) выпадает.
-- [IBlockAccess](/Vanilla/World/IBlockAccess/) мир -> мир, в котором мы находимся, возможно, [IWorld](/Mods/ContentTweaker/Vanilla/Types/World/IWorld/), вы можете захотеть установить и спасти
-- [IBlockPos](/Vanilla/World/IBlockPos/) позиция -> позиция блока
-- [состояние ICTBlockState](/Mods/ContentTweaker/Vanilla/Types/Block/ICTBlockState/) -> blockstate блока
-- int fortune -> уровень счастья используемого инструмента
+- [ICTItemList](/Mods/ContentTweaker/Vanilla/Types/Drops/ICTItemList/) drops.
+- [IBlockAccess](/Vanilla/World/IBlockAccess/) world -> the world we are in, possible an [IWorld](/Mods/ContentTweaker/Vanilla/Types/World/IWorld/), you might want to instanceof and downcast
+- [IBlockPos](/Vanilla/World/IBlockPos/) position -> the position of the block
+- [ICTBlockState](/Mods/ContentTweaker/Vanilla/Types/Block/ICTBlockState/) state -> the blockstate of the block
+- int fortune -> the fortune level of the tool used
 
-Поскольку этот метод не возвращает ничего, все капли нужно добавить в список `сбросов` с использованием экспонированных методов.  
-О них [читайте здесь](/Mods/ContentTweaker/Vanilla/Types/Drops/ICTItemList/).
+As this method does not return anything, all drops need to be added to the `drops` list using the exposed methods.  
+Read about them [here](/Mods/ContentTweaker/Vanilla/Types/Drops/ICTItemList/).
 
 ## Пример
 

@@ -1,16 +1,16 @@
 # PlayerUseHoe
 
-PlayerUseHoe イベントはプレイヤーがホーを使用するたびに発生します。 私が何を言っているか分かっていれば。
+The PlayerUseHoe Event is fired whenever a player uses his hoe... If you know what I mean.
 
-## イベントクラス
+## Event Class
 
 You will need to cast the event in the function header as this class:  
 `crafttweaker.event.PlayerUseHoeEvent`  
 You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
 
-## イベントインターフェースの拡張
+## Event interface extensions
 
-PlayerUseHoe Eventsは以下のインターフェイスを実装し、それらのメソッド/getters/settersをすべて呼び出すことができます。
+PlayerUseHoe Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
 
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 - [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
@@ -19,23 +19,23 @@ PlayerUseHoe Eventsは以下のインターフェイスを実装し、それら�
 
 ## ZenGetters
 
-イベントから次の情報を取得できます。
+The following information can be retrieved from the event:
 
 | ZenGetter    | 戻り値                                         |
 | ------------ | ------------------------------------------- |
-| `キャンセル済み`    | boolean型                                    |
-| `処理されました`    | boolean型                                    |
+| `canceled`   | boolean型                                    |
+| `processed`  | boolean型                                    |
 | `x`          | int                                         |
 | `y`          | int                                         |
 | `z`          | int                                         |
-| `プレイヤー`      | [IPlayer](/Vanilla/Players/IPlayer/)        |
-| `世界`         | [IWorld](/Vanilla/World/IWorld/)            |
-| `ブロック`       | [IBlock](/Vanilla/Blocks/IBlock/)           |
+| `player`     | [IPlayer](/Vanilla/Players/IPlayer/)        |
+| `world`      | [IWorld](/Vanilla/World/IWorld/)            |
+| `block`      | [IBlock](/Vanilla/Blocks/IBlock/)           |
 | `blockState` | [IBlockState](/Vanilla/Blocks/IBlockState/) |
-| `寸法`         | int                                         |
-| `項目`         | [IItemStack](/Vanilla/Items/IItemStack/)    |
+| `dimension`  | int                                         |
+| `item`       | [IItemStack](/Vanilla/Items/IItemStack/)    |
 
 ## ZenMethods
 
-- `event.cancel()` はイベントをキャンセルとして設定します
-- `event.process()` は処理済みとしてイベントを設定します
+- `event.cancel()` sets the event as cancelled
+- `event.process()` sets the event as processed

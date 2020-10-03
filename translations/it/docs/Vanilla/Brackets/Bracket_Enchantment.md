@@ -1,8 +1,8 @@
-# Gestore Staffa Incantesimo
+# Enchantment Bracket Handler
 
-Il Gestore Staffa Incantesimo ti dà accesso alle definizioni di Incantesimo nel gioco.
+The Enchantment Bracket Handler gives you access to the Enchantment definitions in the game.
 
-Essi sono referenziati nel gestore Incantesimo in questo modo:
+They are referenced in the Enchantment handler this way:
 
 ```zenscript
 <enchantment:modid:name>
@@ -10,4 +10,4 @@ Essi sono referenziati nel gestore Incantesimo in questo modo:
 <enchantment:minecraft:protection>
 ```
 
-Se si trova l'Incantesimo, questo restituirà un oggetto Definizione Incantesimale. Si prega di fare riferimento alla voce [Wiki](/Vanilla/Enchantments/IEnchantmentDefinition/) per ulteriori informazioni su ciò che si può fare con questi.
+If the Enchantment is found, this will return an IEnchantmentDefinition Object. Please refer to the [respective Wiki entry](/Vanilla/Enchantments/IEnchantmentDefinition/) for further information on what you can do with these.

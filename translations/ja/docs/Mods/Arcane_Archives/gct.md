@@ -1,10 +1,10 @@
-### クラス
+### Class
 
 ```zenscript
 import mods.arcanearchives.GCT;
 ```
 
-#### メソッド
+#### Methods
 
 ```zenscript
 void addRecipe(
@@ -18,7 +18,7 @@ void addRecipe(
 
 ```zenscript
 void removeRecipe(
-  IItemStack 出力 // The output itemstack to be removed (quantity must match)
+  IItemStack output // the output itemstack to be removed (quantity must match)
 );
 ```
 

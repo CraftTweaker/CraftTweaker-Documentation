@@ -1,6 +1,6 @@
-# Пикап игрока
+# PlayerPickupXp
 
-Событие PlayerPickupXp запускается всякий раз, когда игрок выбирает сферы опыта.
+The PlayerPickupXp Event is fired whenever a player picks up experience orbs.
 
 ## Класс события
 
@@ -10,7 +10,7 @@ You can, of course, also [import](/AdvancedFunctions/Import/) the class before a
 
 ## Наследование от интерфейсов событий
 
-PlayerPickupXp События реализуют следующие интерфейсы и также могут вызвать все их методы/getters/setters:
+PlayerPickupXp Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
 
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 - [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
@@ -19,13 +19,13 @@ PlayerPickupXp События реализуют следующие интерф
 
 Следующая информация может быть получена от события:
 
-| Геттеры       | Возвращаемый тип                          |
-| ------------- | ----------------------------------------- |
-| `отменено`    | boolean                                   |
-| `player`      | [IPlayer](/Vanilla/Players/IPlayer/)      |
-| `сущность Xp` | [IEntityXp](/Vanilla/Entities/IEntityXp/) |
-| `xp`          | float                                     |
+| ZenGetter  | Возвращаемый тип                          |
+| ---------- | ----------------------------------------- |
+| `canceled` | boolean                                   |
+| `player`   | [IPlayer](/Vanilla/Players/IPlayer/)      |
+| `entityXp` | [IEntityXp](/Vanilla/Entities/IEntityXp/) |
+| `xp`       | float                                     |
 
 ## ZenMethods
 
-- `event.cancel()` устанавливает событие как отменено.
+- `event.cancel()` sets the event as cancelled.

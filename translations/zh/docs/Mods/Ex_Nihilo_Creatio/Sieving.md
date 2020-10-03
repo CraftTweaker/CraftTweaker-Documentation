@@ -2,47 +2,47 @@
 
 ## 所属包名
 
-要访问 `Sieve` 而不澄清整个路径，您可以以下列方式导入您脚本顶部的包：
+To access `Sieve` without clarifying the full path, you can import the package at the top of your Script with the following:
 
 ```zenscript
-导入 mods.exnihilocreatio。Sieve;
+import mods.exnihilocreatio.Sieve;
 ```
 
 ## 使用方式
 
-- **[Ingredient](/Vanilla/Variable_Types/IIngredient/) 块** 减去输出的块。
-- **[IItemStack](/Vanilla/Items/IItemStack/) 输出** 从方块中掉落的物品...
-- **浮动几率** 应在0-1之间。
+- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) block** The block that drops the output.
+- **[IItemStack](/Vanilla/Items/IItemStack/) output** The item that drops from the block..
+- **Float chance** The chance should be between 0-1.
 
-## 字符串网格
+## String Mesh
 
 ```zenscript
 Sieve.addStringMeshRecipe(IIngredient, IItemStack, Float chance);
 Sieve.addStringMeshRecipe(<minecraft:gravel>, <minecraft:diamond>, 0.001);
 ```
 
-## Flint 网格h
+## Flint Mesh
 
 ```zenscript
 Sieve.addFlintMeshRecipe(IIngredient, IItemStack, Float chance);
 Sieve.addFlintMeshRecipe(<minecraft:gravel>, <minecraft:diamond>, 0.01);
 ```
 
-## 铁网格
+## Iron Mesh
 
 ```zenscript
 Sieve.addIronMeshRecipe(IIngredient, IItemStack, Float chance);
-Sieve.addIRonMeshRecipe(<minecraft:gravel>, <minecraft:diamond>, 0.1);
+Sieve.addIronMeshRecipe(<minecraft:gravel>, <minecraft:diamond>, 0.1);
 ```
 
-## 钻石网格
+## Diamond Mesh
 
 ```zenscript
 Sieve.addDiamondMeshRecipe(IIngredient, IItemStack, Float chance);
-Sieve.addDiamondMeshRecipe(<minecraft:gravel>, <minecraft:diamond>, 1, );
+Sieve.addDiamondMeshRecipe(<minecraft:gravel>, <minecraft:diamond>, 1);
 ```
 
-## 移除
+## Removal
 
 ```zenscript
 Sieve.removeAll();

@@ -1,15 +1,15 @@
-# Máquina plegadora de placas
+# Plate Bending Machine
 
-## Importando el Paquete
+## Importing the Package
 `mods.techreborn.plateBendingMachine`
 
-## Añadiendo recetas
+## Adding Recipes
 ```zenscript
-mods.techreborn.plateBendingMachine.addRecipe(ItemStack output1, IIngredient input1, int ticktime, int euTick);
+mods.techreborn.plateBendingMachine.addRecipe(IItemStack output1, IIngredient input1, int ticktime, int euTick);
 ```
 
-## Eliminando recetas
+## Removing Recipes
 ```zenscript
-mods.techreborn.plateBendingMachine.removeRecipe(salida ItemStack);
+mods.techreborn.plateBendingMachine.removeRecipe(IItemStack output);
 mods.techreborn.plateBendingMachine.removeAll();
 ```

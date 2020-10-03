@@ -1,35 +1,35 @@
-# Umiejętności & Cechy
+# Skills & Traits
 
-## Lista umiejętności:
+## Skills List:
 
-| Umiejętności | Lokalizacja zasobu           |
-|:------------ |:---------------------------- |
-| Zniechęć     | przekwalifikowalne:łatwość   |
-| Atak         | przekwalifikowalne:atak      |
-| Budynek      | przekwalifikowalne:budynek   |
-| Obrona       | przekwalifikowalne:obrona    |
-| Rolnictwo    | przekwalifikowalne:rolnictwo |
-| Zbieranie    | przekwalifikowalne:zbieranie |
-| Magiczny     | przekwalifikowalne:magic     |
-| Górnictwo    | przekwalifikowalne:górnictwo |
+| Skills    | ResourceLocation      |
+|:--------- |:--------------------- |
+| Agility   | reskillable:agility   |
+| Attack    | reskillable:attack    |
+| Building  | reskillable:building  |
+| Defense   | reskillable:defense   |
+| Farming   | reskillable:farming   |
+| Gathering | reskillable:gathering |
+| Magic     | reskillable:magic     |
+| Mining    | reskillable:mining    |
 
-## Lista cech:
+## Traits List:
 
-| Umiejętność nadrzędna |        Cecha         | Lokalizacja zasobu                            |
-|:---------------------:|:--------------------:|:--------------------------------------------- |
-|       Zniechęć        |    Drogowy spacer    | przekwalifikowalne:chodzenie drogowe          |
-|       Zniechęć        |       Sidestep       | przekwalifikowalne:bodestep                   |
-|         Atak          |     Duchy Bojowe     | zdolne do przekwalifikowania:battle_spirit    |
-|         Atak          |     Neutralizse      | zdolne do przekwalifikowania:neutralizuj      |
-|        Budynek        | Transmutacja Chorusa | przekwalifikowalne:chorus_transmute           |
-|        Budynek        | Idealne odzyskiwanie | zdolne do przekwalifikowania:idealne_odzyskać |
-|        Obrona         |     Efekt Twist      | zdolne:efekt_wichr                            |
-|        Obrona         |     Podkoszulka      | przekwalifikowalne:koszulka                   |
-|       Rolnictwo       |    Zielony kciuk     | przekwalifikowalne:green_ciumb                |
-|       Rolnictwo       |   Więcej pszenicy    | przekwalifikowalne:więcej pszenicy            |
-|       Zbieranie       | Gwarancja wycofania  | przekwalifikowalne:drop_guarantee             |
-|       Zbieranie       |   Szczęśliwy rybak   | przekwalifikowalne:szczęśliwy_rybak           |
-|       Magiczny        |     Złota Osmoza     | zdolne do przekwalifikowania:golden_osmoza    |
-|       Magiczny        |   Bezpieczny port    | przekwalifikowalne:safe_port                  |
-|       Górnictwo       | Kopalny Kopalizator  | zdolne do przekwalifikowania:fossil_digger    |
-|       Górnictwo       |   Obsidian Smasher   | zdolne:obsidian_smasher                       |
+| Parent Skill |        Trait         | ResourceLocation             |
+|:------------:|:--------------------:|:---------------------------- |
+|   Agility    |      Road Walk       | reskillable:roadwalk         |
+|   Agility    |       Sidestep       | reskillable:sidestep         |
+|    Attack    |    Battle Spirit     | reskillable:battle_spirit    |
+|    Attack    |     Neutralissse     | reskillable:neutralissse     |
+|   Building   | Chorus Transmutation | reskillable:chorus_transmute |
+|   Building   |   Perfect Recovery   | reskillable:perfect_recover  |
+|   Defense    |     Effect Twist     | reskillable:effect_twist     |
+|   Defense    |      Undershirt      | reskillable:undershirt       |
+|   Farming    |     Green Thumb      | reskillable:green_thumb      |
+|   Farming    |      More Wheat      | reskillable:more_wheat       |
+|  Gathering   |    Drop Guarantee    | reskillable:drop_guarantee   |
+|  Gathering   |   Lucky Fisherman    | reskillable:lucky_fisherman  |
+|    Magic     |    Golden Osmosis    | reskillable:golden_osmosis   |
+|    Magic     |      Safe Port       | reskillable:safe_port        |
+|    Mining    |    Fossil Digger     | reskillable:fossil_digger    |
+|    Mining    |   Obsidian Smasher   | reskillable:obsidian_smasher |

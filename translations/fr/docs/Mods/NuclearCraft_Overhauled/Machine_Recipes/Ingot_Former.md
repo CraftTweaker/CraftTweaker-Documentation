@@ -1,16 +1,16 @@
-# Lingot ancien
+# Ingot Former
 
-## Importation du paquet en cours
+## Importing the Package
 `mods.nuclearcraft.IngotFormer`
 
-## Ajout de recettes
+## Adding Recipes
 ```zenscript
 mods.nuclearcraft.IngotFormer.addRecipe(ILiquidStack fluidInput, IIngredient itemOutput, @Optional double timeMultiplier, @Optional double powerMultiplier, @Optional double processRadiation);
 ```
 
-## Suppression des recettes
+## Removing Recipes
 ```zenscript
 mods.nuclearcraft.IngotFormer.removeRecipeWithInput(ILiquidStack fluidInput);
 mods.nuclearcraft.IngotFormer.removeRecipeWithOutput(IIngredient itemOutput);
-mods.nuclearcraft.Enlever toutes les recettes ();
+mods.nuclearcraft.IngotFormer.removeAllRecipes();
 ```

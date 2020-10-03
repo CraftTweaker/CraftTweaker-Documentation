@@ -1,38 +1,38 @@
-# 闪光器
+# Blender
 
-Blender将各种物品合并在一起，导致饮料恢复食物和饱和。
+The Blender combines items together, resulting in a drink that restores food and saturation.
 
-## 原版饮料
+## Vanilla Drinks
 
-- 4种食物的水果粉碎(2种苹果，4种梅龙)。
-- Veggie Juice(4x Carrot, 1x Potato, 2x Pumpkin Piie) for 6个食物。
-- Cookies and Cream Milkshake (2x Cookie , 1x Milk Bucket) for 4 food
-- 能量饮料(8×Redstone、1×Fire Charge、16×Sugar)为8种食物。
+- Fruit Crush (2x Apple, 4x Melon) for 4 food.
+- Veggie Juice (4x Carrot, 1x Potato, 2x Pumpkin Pie) for 6 food.
+- Cookies and Cream Milkshake (2x Cookie, 1x Milk Bucket) for 4 food.
+- Energy Drink (8x Redstone, 1x Fire Charge, 16x Sugar) for 8 food.
 
-## 移除饮料
+## Removing Drinks
 
-## 删除匹配的混合饮料。
+## Remove matching blended drinks.
 
 ```zenscript
-mods.cfm.Blender.remove(@Optional final String name, @Opinion final IItemStack[]components, @Optional final final Integer food, @Opidential final int[]colour);
+mods.cfm.Blender.remove(@Optional final String name, @Optional final IItemStack[] ingredients, @Optional final Integer food, @Optional final int[] colour);
 
-// 去除名为“水果粉碎”的饮料
-mods.cfm.Blender。 表情("水果粉碎")；
-// 去除需要一个胡萝卜、一个马铃薯和一个南瓜皮才能创建
-模组。 fm.Blender.remove(null, [<minecraft:carrot>,<minecraft:potato>,<minecraft:pumpkin_pie>]);
-// 移除所有饮料
+// Remove drink named "Fruit Crush"
+mods.cfm.Blender.remove("Fruit Crush");
+// Remove drinks that require one carrot, one potato and one pumpkin pie to create
+mods.cfm.Blender.remove(null, [<minecraft:carrot>,<minecraft:potato>,<minecraft:pumpkin_pie>]);
+// Remove all drinks
 mods.cfm.Blender.remove();
 ```
 
-## 添加饮料
+## Adding Drinks
 
-添加一个混合饮料。
+Add a blended drink.
 
-## 目前，饱和度和食物值不能独立确定。
+## Currently, saturation and food value cannot be set independently.
 
 ```zenscript
-mods.cfm.Blender。 ddDrink(@Nonnull final string name, @Nonnull final IItemStack[…]成分, final int food, @Nonnull final int[…]颜色)；
+mods.cfm.Blender.addDrink(@Nonnull final String name, @Nonnull final IItemStack[] ingredients, final int food, @Nonnull final int[] colour);
 
-// 添加一个叫做"Wermelon Snow"的饮料，它是彩色粉丝，恢复20种食物和20个饱和度，需要8个熔融切片和4个雪球来制作
-mod。 fm.Blender.addDrink("Wermelon Snow", [<minecraft:melon>.withamount(8),<minecraft:snowball>.withamount(4)], 20, [255,182,193])；
+// Add a drink named "Watermelon Snow" that is coloured pink and restores 20 food and 20 saturation requiring 8 melon slices and 4 snowballs to craft
+mods.cfm.Blender.addDrink("Watermelon Snow", [<minecraft:melon>.withAmount(8),<minecraft:snowball>.withAmount(4)], 20, [255,182,193]);
 ```

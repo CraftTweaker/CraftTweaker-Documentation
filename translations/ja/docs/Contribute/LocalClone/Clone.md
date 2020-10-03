@@ -1,41 +1,41 @@
-# 複製
+# Clone
 
 ## Summary
 
-このページでは、フォークしたリポジトリをローカルコンピュータにクローンする方法を説明します。
+This page shows you how to clone your forked repository to your local computer.
 
-## 前提条件
+## Prerequisites
 
 You should have [Forked the CrT-wiki repository](/Contribute/SetupGithub/) and you need to have [Git installed](/Contribute/LocalClone/InstallingGit/).
 
-## 最初のステップ
+## First steps
 
 First you need to create a folder on your local computer where you want the wiki to be cloned to.  
 Then you need to open either your command prompt or git bash in that folder.  
 I'm going to use git Bash but the same procedure should work for the CMD as well.
 
-git bashを開くには、フォルダに移動し、マウスの右キーでクリックします。  
-![gitBash オプションが選択されたエクスプローラーのコンテキスト メニュー](/Contribute/LocalClone/assets/ExplorerContextMenu_GitBash.png)
+To open git bash just navigate to the folder and click with the right mouse key:  
+![Explorer context menu with gitBash option selected](/Contribute/LocalClone/assets/ExplorerContextMenu_GitBash.png)
 
-## フォークをクローン中
+## Cloning your fork
 
-フォルダにgit Bashを開いたら、リポジトリのURLを取得する必要があります。  
-GitHubでフォークを確認する際にこのURLを見つけることができます：
+After you have opened git Bash in the folder, you need to get the repo url.  
+You can find this url when checking your fork on GitHub:
 
-![リポジトリのURLを特定する](/Contribute/LocalClone/assets/GitHub_CloneLink.png)
+![Locating the repo url](/Contribute/LocalClone/assets/GitHub_CloneLink.png)
 
-そのURLを使用する必要があります。 SSHの設定方法がわかっている場合は、おそらくこのガイドは必要ありません。  
-ボタンをクリックして文字列をクリップボードにコピーすることもできます。
+You need to use that URL. We will be using HTTPS for the cloning, if you know how to set up SSH you probably don't need this guide.  
+You can also click on the button to copy the string to your clipboard.
 
-`git clone <repo-Url>` を実行する必要があります。
+Now you need to run the command `git clone <repo-Url>`:
 
-![コマンドを複製](/Contribute/LocalClone/assets/GitBash_CloneCommand.png) ![コマンドの複製に成功](/Contribute/LocalClone/assets/GitBash_CloneCommandSuccess.png)
+![Clone command](/Contribute/LocalClone/assets/GitBash_CloneCommand.png) ![Clone command success](/Contribute/LocalClone/assets/GitBash_CloneCommandSuccess.png)
 
 Now you should have a new folder named `CraftTweaker-Documentation` in your directory.  
 Let's navigate to it and issue a `git status`:
 
-![ディレクトリの変更とgitの状態の発行](/Contribute/LocalClone/assets/GitBash_Clone_GitStatus.png)
+![Change directory and issue git status](/Contribute/LocalClone/assets/GitBash_Clone_GitStatus.png)
 
-## 続行方法
+## How to continue
 
-これでwikiのローカルクローンができたので、ファイルの作成と編集を開始し、 [コミット](/Contribute/LocalClone/CreateCommit/) を作成できます。
+Now that you have a local clone of the wiki you can start creating and editing files and eventually [create a commit](/Contribute/LocalClone/CreateCommit/).

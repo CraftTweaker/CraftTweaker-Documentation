@@ -1,16 +1,16 @@
-# コンセプト
+# The Concept
 
-リフレクションは英語の単語で、多くの意味があります。 しかし、特に「鏡で 画像の制作」([出典:Merriam-Webster Dictionary](https://www.merriam-webster.com/dictionary/reflection))があります。 同じ 概念がプログラミングに適用されます。
+Reflection is an English word that has many meanings, but one in particular is "the production of an image by or as if by a mirror" ([Source: Merriam-Webster Dictionary](https://www.merriam-webster.com/dictionary/reflection)). The same concept applies to programming.
 
-リフレクションは、実際には、プログラムが鏡の中で自分自身を見て、いくつかのイントロスペクションを実行することができるツールです。 例えば、 がオブジェクトの型を分析し、プログラムが公開したメソッドやプライベート変数などを呼び出します。 This is obviously a very powerful tool, but at the same time it is also extremely dangerous since reflection provides access to almost anything that is currently running inside a program.
+Reflection is, in fact, a tool that allows a program to see itself in the mirror and perform some introspection, like analyzing what type an object is, which methods the program exposes, invoking private variables etc. This is obviously a very powerful tool, but at the same time it is also extremely dangerous since reflection provides access to almost anything that is currently running inside a program.
 
-ZenScriptXプロジェクトは、「リフレクション」の可能性の一部をZenScriptにもたらすことを目指しています。 スクリプトユーザが ZenScript サンドボックスを回避することができません。 特に、ZenScriptXトーンダウンリフレクション の実装により、ユーザーは以下のことができます:
+The ZenScriptX project aims to bring a small subset of the possibilities of Reflection to ZenScript, without allowing script users to circumvent the ZenScript sandbox. In particular, the ZenScriptX toned-down implementation of reflection allows the user to do the following:
 
-- 任意のオブジェクトの型を調べます。変数または括弧ハンドラであれば;
-- ZenScriptサンドボックス内のクラスの単純で完全な修飾名を取得します。
-- ZenScriptサンドボックス外のクラスの単純で完全な修飾名を取得します。
-- ZenScriptクラスとネイティブ対応の間で変換する (例 `crafttweaker.item.IItemStack` は `crafttweaker.api.item.IItemStack` になります)。
+- inspect the type of any object, be it a variable or a bracket handler;
+- obtain the simple and fully qualified name of a class in the ZenScript sandbox;
+- obtain the simple and fully qualified name of a class outside the ZenScript sandbox;
+- convert between a ZenScript class and its native counterpart (i.e. `crafttweaker.item.IItemStack` becomes `crafttweaker.api.item.IItemStack`).
 
-スクリプトユーザーがクラスによって提供されるすべてのメソッドをリストしたり、ZenScriptによって課された 制限をこの反映で回避する方法はありません。 それは実際には、 CraftTweaker統合によって公開されている 型がスクリプトと実際のバックエンドの間で正しく変換されるようにするための、より便利な開発ツールです。
+And this is it: there is no way for a script user to list all the methods provided by a class or circumvent the restricitions imposed by ZenScript with this reflection. It is, in fact, more a useful developer tool to ensure that types exposed by a CraftTweaker integration get converted correctly between the script and the actual backend.
 
-始めるには、 [`NativeClass`](/Mods/Boson/Reflection/NativeClass/) または [`Class`](/Mods/Boson/Reflection/Class/) のドキュメントを参照してください。
+To get started, please look at the documentation for either [`NativeClass`](/Mods/Boson/Reflection/NativeClass/) or [`Class`](/Mods/Boson/Reflection/Class/).

@@ -1,54 +1,54 @@
-# Команды
+# Commands
 
-ContentTweaker расширяет командную палитру CraftTweaker.  
-Для доступа к этим командам вы делаете то же самое, что и для команд CraftTweaker, вы используете префикс `/crafttweaker`
+ContentTweaker extends the command palette provided by CraftTweaker.  
+To access these commands you do the same as you do for CraftTweaker commands, you use the `/crafttweaker` prefix
 
-# Список команд ContentTweaker
+# List of ContentTweaker Commands
 
-## блок-материал
+## blockmaterial
 
-Использование:
+Usage:
 
 `/crafttweaker blockmaterial`
 
-`/ст блок-материала`
+`/ct blockmaterial`
 
-Пояснение:
+Description:
 
-Выводит список всех блочных материалов в игре в файл crafttweaker.log.
+Outputs a list of all the block materials in the game to the crafttweaker.log file.
 
-## креативная вкладка
+## creativetab
 
-Использование:
+Usage:
 
 `/crafttweaker creativetab`
 
-`/ct креативная вкладка`
+`/ct creativetab`
 
-Пояснение:
+Description:
 
-Выводит список всех креативных вкладок в игре в файл crafttweaker.log.
+Outputs a list of all the creative tabs in the game to the crafttweaker.log file.
 
-## шутливый
+## soundevent
 
-Использование:
+Usage:
 
-`/crafttweaker щедрость`
+`/crafttweaker soundevent`
 
-`/ct щебет`
+`/ct soundevent`
 
-Пояснение:
+Description:
 
-Выводит список всех звуковых событий в игре в файл crafttweaker.log.
+Outputs a list of all the sound events in the game to the crafttweaker.log file.
 
-## звуковой тип
+## soundtype
 
-Использование:
+Usage:
 
-`/crafttweaker тип звука`
+`/crafttweaker soundtype`
 
-`/ct тип звука`
+`/ct soundtype`
 
-Пояснение:
+Description:
 
-Выводит список всех типов звуков в игре в файл crafttweaker.log.
+Outputs a list of all the sound types in the game to the crafttweaker.log file.

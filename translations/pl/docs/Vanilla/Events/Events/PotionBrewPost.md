@@ -1,14 +1,14 @@
-# Poczta Mikstury
+# PotionBrewPost
 
-To wydarzenie jest wystrzelone natychmiast po tym, jak mikstura została "wytworzona" przez parzystę stojaka, gdy wyjście zostało już wymienione. Jeśli [PotionBrewPreEvent](/Vanilla/Events/Events/PotionBrewPre/) został anulowany, ale przedmioty w stoisku piwowarskim zostały zmodyfikowane, to wydarzenie również zostanie uruchomione.
+This event is fired immediately after a potion has been "brewed" by the brewing stand tile entity, when the output items have already been replaced. If the [PotionBrewPreEvent](/Vanilla/Events/Events/PotionBrewPre/) has been cancelled but the itemstacks within the brewing stand have been modified, this event will also be fired.
 
 If the pre-event is cancelled without modifying itemstacks, this event will **not** be fired.
 
-## Klasa wydarzenia
-Musisz aktywować wydarzenie w nagłówku funkcji jako klasa:  
-`crafttweaker.event. otionBrewPostEvent` Możesz oczywiście również [zaimportować](/AdvancedFunctions/Import/) klasę przed i wtedy użyć tej nazwy.
+## Event Class
+You will need to cast the event in the function header as this class:  
+`crafttweaker.event.PotionBrewPostEvent` You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
 
-## Rozszerzenia interfejsu zdarzenia
-Wydarzenia PotionBrewPost zaimplementują następujące interfejsy i są w stanie wywołać wszystkie swoje metody/getters/setters:
+## Event interface extensions
+PotionBrewPost Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
 
-- [Wydarzenie IPotionBrewEvent](/Vanilla/Events/Events/IPotionBrewEvent/)
+- [IPotionBrewEvent](/Vanilla/Events/Events/IPotionBrewEvent/)

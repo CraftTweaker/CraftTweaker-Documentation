@@ -1,24 +1,24 @@
-# Пивоварение Ботании
+# Botania Brewing
 
-Пивоваренная упаковка используется для добавления или удаления рецептов пива Ботании.
+The Brew package is used for adding or removing recipes to/from the Botania Brewing Stand.
 
-## Звонок
+## Calling
 
-Вы можете вызвать пакет пива, используя `mods.botania.Brew`
+You can call the Brew package using `mods.botania.Brew`
 
-## Названия пива
+## Brew Names
 
-Чтобы использовать этот пакет, вам нужно знать зарегистрированные названия пива ботаны.  
-Их можно найти с помощью [`/ct botbrews`](/Mods/Modtweaker/Botania/Commands/).
+To use this Package, you need to know botania's registered Brew Names.  
+You can find them using [`/ct botbrews`](/Mods/Modtweaker/Botania/Commands/).
 
-## Добавление рецепта
+## Recipe addition
 
 ```zenscript
 //mods.botania.Brew.addRecipe(IIngredient[] input, String brewName);
 mods.botania.Brew.addRecipe([<minecraft:nether_wart>, <minecraft:reeds>, <minecraft:redstone>], "speed");
 ```
 
-## Удаление рецепта
+## Recipe removal
 
 ```zenscript
 //mods.botania.Brew.removeRecipe(String brewName);

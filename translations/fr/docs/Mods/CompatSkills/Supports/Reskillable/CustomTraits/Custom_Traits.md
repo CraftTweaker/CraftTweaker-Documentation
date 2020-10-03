@@ -1,82 +1,82 @@
-# Compétences & Caractéristiques personnalisées
+# Custom Skills & Traits
 
-## Crédits :
+## Credits:
 
-Les crédits sont distribués à Kindlich pour la rédaction de la plupart de l'implémentation de Contenu Personnalisé !
+Credits goes out to Kindlich for writing most of the Custom Content implementation!
 
-## Caractéristiques personnalisées :
+## Custom Traits:
 
-### Syntaxe d'implémentation :
+### Implementation Syntax:
 
-    Exemples:
+    Examples:
     mods.compatskills.TraitCreator.createTrait(String traitName, int x, int y, String skillLocation, int cost, @Optional String... requirements)
     mods.compatskills.TraitCreator.createTrait(String traitName, int x, int y, CrTSkill parentSkill, int cost, @Optional String... requirements)
     mods.compatskills.TraitCreator.createNewTrait(String traitLocation, int x, int y, String skillLocation, int cost, @Optional String... requirements)
-    mods.compatskills.TraitCreator.createNewTrait(String traitLocation, int x, int y, CrTSkill parentSkill, int cost, @Optional String... exigences)
+    mods.compatskills.TraitCreator.createNewTrait(String traitLocation, int x, int y, CrTSkill parentSkill, int cost, @Optional String... requirements)
     
     
-    "traitName" VS "traitLocation" est le même que dans les compétences.
+    "traitName" VS "traitLocation" is the same as in Skills.
     
-    « CrTSkill parentSkill » est le maître de la fourche de compétences.
+    "CrTSkill parentSkill" is the Skill Bracket Handler.
     
     
-    Donc un exemple fonctionnel serait :
+    So a functional Example would be:
     var test = mods.compatskills.TraitCreator.createTrait("test", 2, 3, "compatskills:banana", 1, "compatskills:banana|5");
-    var test1 = mods. ompatskills.TraitCreator.createTrait("test", 2, 3, "<skill:compatskills:banana>", 1, "compatskills:banana|5");
-    var test2 = mods. ompatskills.TraitCreator.createTrait("broken:test", 2, 3, "compatskills:banana", 1, "compatskills:banana|5");
+    var test1 = mods.compatskills.TraitCreator.createTrait("test", 2, 3, "<skill:compatskills:banana>", 1, "compatskills:banana|5");
+    var test2 = mods.compatskills.TraitCreator.createTrait("broken:test", 2, 3, "compatskills:banana", 1, "compatskills:banana|5");
     var test3 = mods.compatskills.TraitCreator.createTrait("broken:test", 2, 3, "<skill:compatskills:banana>", 1, "compatskills:banana|5");
     
 
-### Propriétés Zen
+### ZenProperties
 
-| Référence | Nom de la propriété | Implémentation  |
-|:--------- |:------------------- | --------------- |
-| CrTTrait  | Nom                 | Voir ci-dessous |
-| CrTTrait  | Libellé             | Voir ci-dessous |
+| Reference | Property Name | Implementation |
+|:--------- |:------------- | -------------- |
+| CrTTrait  | name          | See Below      |
+| CrTTrait  | description   | See Below      |
 
-    // Crée le trait en tant que variable
-    var trait = mods.compatskills.TraitCreator. reateTrait("test", 2, 3, "compatskills:banana", 1, "compatskills:banana|5");
+    // Creates the trait as a variable
+    var trait = mods.compatskills.TraitCreator.createTrait("test", 2, 3, "compatskills:banana", 1, "compatskills:banana|5");
     
-    // Hard-Définit le nom à "Test"
-    // Sachez que cela rend la localisation via des fichiers .lang impossible !
+    // Hard-Sets the name to "Test"
+    // Be aware this makes localization through .lang files not possible!
     trait.name = "Test"
     
-    // Hard-Sets la description à "Bonjour, je suis une Description"
-    // Soyez conscient que cela rend la localisation à travers des fichiers .lang impossible !
-    trait.description = "Bonjour, je suis une Description"
+    // Hard-Sets the description to "Hello, I'm a Description"
+    // Be aware this makes localization through .lang files not possible!
+    trait.description = "Hello, I'm a Description"
     
 
 ### ZenSetters/ZenGetters
 
-| Type de méthode | Nom de la méthode      | Valeurs                                                      |
-|:--------------- |:---------------------- | ------------------------------------------------------------ |
-| Setter          | Activé                 | Prend un booléen                                             |
-| Récupération    | Activé                 | Renvoie un booléen                                           |
-| Récupération    | getName                | Retourne le nom de la chaîne localisée de la Caractéristique |
-| Récupération    | Obtenir la description | Retourne la description de la Trait de la chaîne localisée   |
-| Récupération    | Récupérer l'icône      | Renvoie un emplacement de ressource                          |
-| Setter          | changer d'icône        | Prend une chaîne d'emplacement de ressource                  |
+| Method Type | Method Name    | Values                                                |
+|:----------- |:-------------- | ----------------------------------------------------- |
+| Setter      | setEnabled     | Takes a Boolean                                       |
+| Getter      | getEnabled     | Returns a Boolean                                     |
+| Getter      | getName        | Returns the localized String Name of the Trait        |
+| Getter      | getDescription | Returns the localized String Description of the Trait |
+| Getter      | retrieveIcon   | Returns an Resource Location                          |
+| Setter      | changeIcon     | Takes an Resource Location String                     |
 
-### Localisation & Références d'emplacement de ressource :
+### Localization & Resource Location References:
 
-    Icônes de Caractéristiques :
+    Trait Icons:
     
-    Soit :
+    Either:
     
-    - mods.compatskills.TraitCreator.createTrait(String traitName, int x, int x, int y, String skillLocation, int cost, @Optional String... requirements);
+    - mods.compatskills.TraitCreator.createTrait(String traitName, int x, int y, String skillLocation, int cost, @Optional String... requirements);
         - compatskills:textures/unlockables/traitname.png
     
-    - mods.compatskills.TraitCreator.createNewTrait(String traitLocation, int x, int y, String skillLocation, int cost, @Optional String... exigences);
+    - mods.compatskills.TraitCreator.createNewTrait(String traitLocation, int x, int y, String skillLocation, int cost, @Optional String... requirements);
         - customResourceLocation:/textures/unlockables/traitname.png
     
     
-    Les localisations sont placées dans:
+    Localizations are placed in:
     
     - compatskills:lang/localeCode.lang
     
-    ou
+    or
     
     - customResourceLocation:lang/localeCode.lang
     
 
-Allez à ce lien pour voir tous les codes locaux possibles! [Page de langue Minecraft de Gamepedia](https://minecraft.gamepedia.com/Language "Gamepedia's Minecraft Language Page")
+Go to this link to see all possible Locale-Codes! [Gamepedia's Minecraft Language Page](https://minecraft.gamepedia.com/Language "Gamepedia's Minecraft Language Page")

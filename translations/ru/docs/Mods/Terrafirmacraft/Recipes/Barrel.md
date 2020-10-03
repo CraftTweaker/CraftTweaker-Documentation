@@ -1,19 +1,19 @@
-# Ствол
+# Barrel
 
-## Пакет
+## Package
 ```zenscript
-import mods.terrafirmacraft.Ствол;
+import mods.terrafirmacraft.Barrel;
 ```
 
 ## Сложение
 ```zenscript
-Barrel.addRecipe(String registryName, @Optional IIngredient itemInput, ILiquidStack fluidInput, @Optional IItemStack itemOutput, @Optional ILiquidStack fluidOutput, int hour);
+Barrel.addRecipe(String registryName, @Optional IIngredient itemInput, ILiquidStack fluidInput, @Optional IItemStack itemOutput, @Optional ILiquidStack fluidOutput, int hours);
 ```
 
-## Удаление
+## Removal
 
 ```zenscript
 Barrel.removeRecipe(@Optional IItemStack outputItem, @Optional ILiquidStack outputLiquid)
-Barrel.removeRecipe(Название регистрации)
+Barrel.removeRecipe(String registryName)
 ```
-- Для удаления и добавления рецептов должен быть указан хотя бы один выходной вывод (жидкость или предмет).
+- At least one output(liquid or item) must be supplied, for both removing and adding recipes.

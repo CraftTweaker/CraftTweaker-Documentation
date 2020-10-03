@@ -1,18 +1,18 @@
 # IEventCancelable
 
-Diese Schnittstelle wird um alle abgebrochenen Ereignisse erweitert.  
-Das bedeutet, dass du sie mit CrT abbrechen oder überprüfen kannst, ob sie abgebrochen wurden.
+This interface is extended by all Events that can be cancelled.  
+That means you can cancel them using CrT or check if they have been canceled.
 
-Beachten Sie, dass Ereignisse, die abgebrochen wurden, bevor CrT sie empfängt, nicht von den Handlern überprüft werden.  
-Auch wenn Sie mehrere Handler registrieren und einer von ihnen das Ereignis abbrecht, werden die anderen CrT-Handler immer noch erhalten!
+Note that events that have been canceled before CrT receives them will not be checked by the handlers.  
+Also, if you register multiple handlers, and one of them cancels the event, the other CrT handlers will still receive it!
 
 ## Diese Klasse importieren
 
-Es könnte erforderlich sein, [die Klasse](/AdvancedFunctions/Import/) zu importieren, um Fehler zu vermeiden.  
-`importieren Sie crafttweaker.event.IEventCancelable;`
+It might be required to [import](/AdvancedFunctions/Import/) the class to avoid errors.  
+`import crafttweaker.event.IEventCancelable;`
 
-## Was kann mit ihnen geschehen?
+## What can be done with them?
 
-- `event.cancel();` Methode, liefert nichtig (nichts).
-- `Ereignis.abgebrochen;` Getter, gibt einen Bool.
+- `event.cancel();` Method, returns void (nothing).
+- `event.canceled;` Getter, returns a bool.
 - `event.canceled = true;` Setter

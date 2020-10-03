@@ -1,24 +1,24 @@
-# Wytwarzanie składników
+# Crafting Ingredients
 
-CraftTweaker wprowadza [ISkładnik](https://github.com/jaredlll08/CraftTweaker/blob/1.12/CraftTweaker2-API/src/main/java/crafttweaker/api/item/IIngredient.java) jako interfejs składnikowy.  
-Interfejsy rozszerzające ten super interfejs obejmują:
+CraftTweaker introduces [IIngredient](https://github.com/jaredlll08/CraftTweaker/blob/1.12/CraftTweaker2-API/src/main/java/crafttweaker/api/item/IIngredient.java) as ingredient interface.  
+Interfaces extending this super interface include:
 
 - [IItemStack](https://github.com/jaredlll08/CraftTweaker/blob/1.12/CraftTweaker2-API/src/main/java/crafttweaker/api/item/IItemStack.java)
 - [ILiquidStack](https://github.com/jaredlll08/CraftTweaker/blob/1.12/CraftTweaker2-API/src/main/java/crafttweaker/api/liquid/ILiquidStack.java)
-- [IOreDictentry](https://github.com/jaredlll08/CraftTweaker/blob/1.12/CraftTweaker2-API/src/main/java/crafttweaker/api/oredict/IOreDictEntry.java)
+- [IOreDictEntry](https://github.com/jaredlll08/CraftTweaker/blob/1.12/CraftTweaker2-API/src/main/java/crafttweaker/api/oredict/IOreDictEntry.java)
 
-## Które wybierać
+## Which to choose
 
-Najlepiej, aby zawsze stosować IIngredient. Dlaczego?  
-Ponieważ wielu użytkowników oczekuje, że wszystkie przepisy, które akceptują IItemStack również zaakceptują IOreDictEntry, to właśnie z tego powodu.  
-Ponadto niektóre funkcje, takie jak IngredientConditions zwracają IIngredient (np. `<mincraft:grass>.onlyDamaged()` lub `iron_ingot | gold_ingot`).
+Preferably, you always use IIngredient. Why?  
+Because a lot of users expect all recipes that accept an IItemStack to also accept an IOreDictEntry, that's why.  
+Also, some functions like IngredientConditions return an IIngredient (e.g. `<mincraft:grass>.onlyDamaged()` or `iron_ingot | gold_ingot`).
 
-## Jak pobrać przedmioty/płyny ze składnika?
+## How to get the items/fluids from the ingredient?
 
-Istnieje wiele sposobów na odzyskanie żądanego typu:  
-Możesz użyć `składnika. etItems()` aby uzyskać wszystkie pasujące elementy jako `List<IItemStack>`. Oznacza to jednak, że przedmiotowa pozycja straciłaby swoje warunki, gdyby miała jakieś warunki! Dla płynów można użyć `ingredients.getFluids()` aby uzyskać wszystkie pasujące płyny jako `Lista<ILiquidStack>`. Oznacza to jednak, że płynność straciłaby swoje warunki, gdyby miała jakieś miejsce!
+There are many ways to retrieve your wanted type:  
+You can use `ingredient.getItems()` to get all matching items as `List<IItemStack>`. This means however, that the item would lose its Conditions, if it had any! For fluids, you can use `ingredients.getFluids()` to get all matching fluids as `List<ILiquidStack>`. This means however, that the fluid would lose its Conditions, if it had any!
 
-## Jak uzyskać rzeczywisty ItemStack/FluidStack?
+## How to get the actual ItemStack/FluidStack?
 
 Depends: You could use [CraftTweakerMC](https://github.com/jaredlll08/CraftTweaker/blob/1.12/CraftTweaker2-MC1120-Main/src/main/java/crafttweaker/api/minecraft/CraftTweakerMC.java).  
 Alternatively, if you depend on MTLib, you can use its [input helper](https://github.com/jaredlll08/MTLib/blob/1.12/src/main/java/com/blamejared/mtlib/helpers/InputHelper.java).  

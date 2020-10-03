@@ -18,7 +18,7 @@ val test2 = game.getEntity("sheep");
 
 ## Функции
 
-Итак, здесь интересно: Что мы можем с ним сделать, теперь, когда мы создали это?
+So, this is where it gets interesting: What can we do with it, now that we created that thing?
 
 ### id
 
@@ -40,16 +40,16 @@ val test2 = game.getEntity("sheep");
 
 ### createEntity
 
-Первый метод создает сущность в указанном месте.  
-Второй метод также создает её.
+The first method only creates an entity on the given location.  
+The second one also spawns it.
 
 ```zenscript
 <entity:minecraft:sheep>.createEntity(world);
 <entity:minecraft:sheep>.spawnEntity(world, blockPos);
 ```
 
-`Мир` это объект [IWorld](/Vanilla/World/IWorld/) .  
-`blockPos` является [IBlockPos](/Vanilla/World/IBlockPos/) объектом.
+`world` is an [IWorld](/Vanilla/World/IWorld/) object.  
+`blockPos` is an [IBlockPos](/Vanilla/World/IBlockPos/) object.
 
 ## Дроп
 
@@ -57,7 +57,7 @@ val test2 = game.getEntity("sheep");
 
 ### addDrop
 
-Это добавляет нормальный капель, капель, которая может возникнуть всякий раз, когда моб убивает какими бы то ни было средствами.
+This adds a normal drop, a drop that can occur whenever the mob is killed by whatever means.
 
 ```zenscript
 val entity = <entity:minecraft:sheep>;
@@ -69,32 +69,32 @@ entity.addDrop(<minecraft:apple>);
 entity.addDrop(<minecraft:stone> % 20);
 ```
 
-`Элемент` — это предмет, который будет добавлен в качестве трофея и [IItemStack](/Vanilla/Items/IItemStack/) или [взвешенный ItemStack](/Vanilla/Items/WeightedItemStack/).  
-`мин.` - это минимальное количество выпавших и целых чисел. Это опционально.  
-`max` это максимальная сумма, которая будет отклонена и целое число. Это опционально.  
-`шанс` это шанс выброса. Это опционально. Не нужно, если вы используете [взвешенный ItemStack](/Vanilla/Items/WeightedItemStack/) вместо ``
+`item` is the item to be added as drop and an [IItemStack](/Vanilla/Items/IItemStack/) or a [WeightedItemStack](/Vanilla/Items/WeightedItemStack/).  
+`min` is the minimum amount that is dropped and an Integer. This is optional.  
+`max` is the maximum amount that is dropped and an Integer. This is optional.  
+`chance` is the drop chance. This is optional. Not needed if you use a [weightedItemStack](/Vanilla/Items/WeightedItemStack/) instead as `item`
 
 ### addPlayerOnlyDrop
 
-То же, что и в обычной капельнице, но только если сущность была убита игроком.
+Same as normal drops, but only if the entity was killed by a player.
 
 ```zenscript
 //addPlayerOnlyDrop(item,min,max,chance);
 entity.addPlayerOnlyDrop(<minecraft:gold_ingot>, 10,64);
 
 //addPlayerOnlyDrop(weightedItem, min, max);
-entity.addPlayerOnlyDrop(<minecraft:iron_ingot> 20, 1, 3);
+entity.addPlayerOnlyDrop(<minecraft:iron_ingot> % 20, 1, 3);
 ```
 
 ### addDropFunction
 
-Попадающая функция вызывается всякий раз, когда связанная сущность убивается. Вы можете использовать это, если вам нужно проверить требования прежде, чем вы что-то упадете, например, только в определенном биоме и предмете.  
-Вам понадобится [IEntityDropFunction](/Vanilla/Entities/IEntityDropFunction/):
+A drop function is called whenever the associated Entity is killed. You can use this if you need to check requirements for before you drop something, like only dropping in a certain biome and stuff.  
+You will need an [IEntityDropFunction](/Vanilla/Entities/IEntityDropFunction/):
 
 ```zenscript
 <entity:minecraft:sheep>.addDropFunction(function(entity, dmgSource) {
     return <minecraft:iron_ingot> * 10;
-});
+    });
 ```
 
 ### removeDrop
@@ -102,13 +102,13 @@ entity.addPlayerOnlyDrop(<minecraft:iron_ingot> 20, 1, 3);
 Удаляет дроп.
 
 ```zenscript
-val сущность = <entity:minecraft:sheep>;
+val entity = <entity:minecraft:sheep>;
 
 //removeDrop(item);
 entity.removeDrop(<minecraft:wool>);
 ```
 
-`Элемент` является предметом, который должен быть удален из капли и [IItemStack](/Vanilla/Items/IItemStack/).
+`item` is the item to be removed from being a drop and an [IItemStack](/Vanilla/Items/IItemStack/).
 
 ### clearDrops
 
@@ -123,7 +123,7 @@ entity.clearDrops();
 
 ### getDrops
 
-Это возвращает все капли, которые были добавлены в CT как список [IEntityDrop](/Vanilla/Entities/IEntityDrop/) объектов.
+This returns all drops that were added via CT as list of [IEntityDrop](/Vanilla/Entities/IEntityDrop/) Objects.
 
 ```zenscript
 val entity = <entity:minecraft:sheep>;

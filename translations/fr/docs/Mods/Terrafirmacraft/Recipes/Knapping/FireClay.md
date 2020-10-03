@@ -1,30 +1,30 @@
-# Coup d'argile de feu
+# FireClay Knapping
 
-## Paquet
+## Package
 ```zenscript
-Importer mods.terrafirmacraft.FireClayKnapping ;
+import mods.terrafirmacraft.FireClayKnapping;
 ```
 
-## Ajouter
+## Addition
 
 ```zenscript
-FireClayKnapping.addRecipe(String registryName, IItemStack sortie, String... pattern)
+FireClayKnapping.addRecipe(String registryName, IItemStack output, String... pattern)
 ```
 
-## Retirer
+## Removal
 
 ```zenscript
-FireClayKnapping.removeRecipe(sortie IItemStack);
+FireClayKnapping.removeRecipe(IItemStack output);
 FireClayKnapping.removeRecipe(String registryName);
 ```
 
-## Exemple
+## Example
 ```zenscript
-// ajoute une recette de tricotage en argile pour le lieur de conduit enderio
-FireClayKnapping. ddRecipe("enderio/item_conduit_binder", <enderio:item_material:22>*2, 
-" X",
-" XX",
-" XXX",
+// add fireClay knapping recipe for enderio conduit binder
+FireClayKnapping.addRecipe("enderio/item_conduit_binder", <enderio:item_material:22>*2, 
+"    X",
+"   XX",
+"  XXX",
 " XXXX",
 "XXXXX");
 ```

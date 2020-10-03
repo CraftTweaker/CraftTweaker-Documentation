@@ -1,17 +1,17 @@
-# 玩家断路速度
+# PlayerBreakSpeed
 
-每当玩家试图破坏一个方块时，玩家破碎速度事件都会被射击。  
-可以取消它来阻止玩家破坏那个方块。
+The PlayerBreakSpeed Event is fired whenever a player tries to break a block.  
+It can be canceled to stop theplayer from being able to break that block.
 
-## 事件类
+## Event Class
 
-您需要将事件投射到函数头作为这个类：  
-`craftminstruer.event。 layerBreakSpeedEvent`  
-你当然也可以 [导入课前的](/AdvancedFunctions/Import/) 然后使用该名称。
+You will need to cast the event in the function header as this class:  
+`crafttweaker.event.PlayerBreakSpeedEvent`  
+You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
 
-## 事件界面扩展
+## Event interface extensions
 
-玩家断路事件实现了以下接口，并且能够调用他们所有的方法/getter/setter：
+PlayerBreakSpeed Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
 
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 - [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
@@ -19,9 +19,9 @@
 
 ## ZenGetter/Setter
 
-| ZenGetter | ZenSetter | 类型                                          |
-| --------- | --------- | ------------------------------------------- |
-| 封禁状态      |           | [IBlockState](/Vanilla/Blocks/IBlockState/) |
-| 封禁        |           | [IBlock](/Vanilla/Blocks/IBlock/)           |
-| 原始速度      |           | 浮点数                                         |
-| 新速度       | 新速度       | 浮点数                                         |
+| ZenGetter     | ZenSetter | 类型                                          |
+| ------------- | --------- | ------------------------------------------- |
+| blockState    |           | [IBlockState](/Vanilla/Blocks/IBlockState/) |
+| block         |           | [IBlock](/Vanilla/Blocks/IBlock/)           |
+| originalSpeed |           | float                                       |
+| newSpeed      | newSpeed  | float                                       |

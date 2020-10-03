@@ -1,18 +1,18 @@
-# Generador de semi fluidos
+# Semi-Fluid Generator
 
-## Paquete
+## Package
 
-`importar mods.ic2.SemiFluidGenerator;`
+`import mods.ic2.SemiFluidGenerator;`
 
-## Métodos
+## Methods
 
-- **[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) líquido** El líquido que puede utilizarse como combustible en el generador de semi-líquido
+- **[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) liquid** The liquid which can be used as fuel in semi-fluid generator
 - **double powerOutput** The power output, measured in EU/tick
 
-## Añadir fluido
+## Add Fluid
 
 ```zenscript
-mods.ic2.SemiFluidGenerator.addFluid(ILiquidStack liquido, doble powerOutput;
+mods.ic2.SemiFluidGenerator.addFluid(ILiquidStack liquid, double powerOutput;
 
 mods.ic2.SemiFluidGenerator.addFluid(<liquid:water>, 2333.0D);
 ```

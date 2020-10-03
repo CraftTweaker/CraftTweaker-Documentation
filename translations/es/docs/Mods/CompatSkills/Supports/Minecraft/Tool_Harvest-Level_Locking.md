@@ -1,10 +1,10 @@
-# Bloqueo de Cosecha de Herramientas
+# Tool Harvest-Level Locking
 
-## Característica:
+## Feature:
 
-Este bloqueo añade la capacidad para que los autores del paquete bloqueen Herramientas en general o herramientas específicas "tipos" detrás de su nivel de cosecha. Esto significa que puedes bloquear todos los piquetes con un nivel de cosecha de "3" detrás de un conjunto de requisitos. O en general todas las herramientas con un nivel de cosecha de 3 detrás de un conjunto de requisitos!
+This lock adds the ability for pack authors to lock Tools in general or specific tool "types" behind their harvest level. This means that you can lock down all pickaxes with a harvest level of "3" behind a set of requirements. Or in general all tools with a harvest level of 3 behind a set of requirements!
 
-## Sintaxis:
+## Syntax:
 
     mods.compatskills.HarvestLock.addToolLevelLock(int level, String... requirements);
     mods.compatskills.HarvestLock.addToolLevelLock(String type, int level, String... requirements);

@@ -1,6 +1,6 @@
 # XOR Operator
 
-Un cancello **XOR** combina due ingressi e restituisce `TRUE` solo se uno degli ingressi è `TRUE` e l'altro è `FALSE`.
+An **XOR** gate combines two inputs and returns `TRUE` only if one of the inputs is `TRUE` and the other is `FALSE`.
 
 | Input 1 | Input 2 | Output |
 | ------- | ------- | ------:|

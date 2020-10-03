@@ -1,41 +1,41 @@
 # IMaterial
 
-Un objeto IMaterial representa el material del que está hecho un bloque.
+An IMaterial object represents the material a block is made of.
 
-## Importando el paquete
+## Importing the package
 
-Podría ser necesario que importes el paquete si encuentras algún problema, así que más vale estar seguro que lo sentimos y añadir la importación.  
-`importar crafttweaker.block.IMaterial;`
+It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
+`import crafttweaker.block.IMaterial;`
 
-## ZenGetters/ZenMethods sin parámetros
+## ZenGetters/ZenMethods without parameters
 
-| ZenGetter                | Método                          | Tipo de devolución |
-| ------------------------ | ------------------------------- | ------------------ |
-| blocksLight              | blocksLight()                   | pluma              |
-| bloquesMovimiento        | blocksMovement()                | pluma              |
-| canQuemar                | getCanBurn()                    | pluma              |
-| mobilityFlag             | getMobilityFlag()               | cadena             |
-| líquido                  | isLiquid()                      | pluma              |
-| opaco                    | isOpaque()                      | pluma              |
-| reemplazable             | es reemplazable()               | pluma              |
-| solid                    | isSolid()                       | pluma              |
-| herramienta no requerida | no se requiere la herramienta() | pluma              |
-|                          | setReplaceable()                | IMaterial          |
+| ZenGetter       | ZenMethod           | Return Type |
+| --------------- | ------------------- | ----------- |
+| blocksLight     | blocksLight()       | bool        |
+| blocksMovement  | blocksMovement()    | bool        |
+| canBurn         | getCanBurn()        | bool        |
+| mobilityFlag    | getMobilityFlag()   | string      |
+| liquid          | isLiquid()          | bool        |
+| opaque          | isOpaque()          | bool        |
+| replaceable     | isReplaceable()     | bool        |
+| solid           | isSolid()           | bool        |
+| toolNotRequired | isToolNotRequired() | bool        |
+|                 | setReplaceable()    | IMaterial   |
 
-## ZenMethods con parámetros
+## ZenMethods with parameters
 
-### Comprobar si dos IMaterials coinciden
+### Check if two IMaterials match
 
-Utiliza un IMaterial.  
-Devuelve un bool.
+Uses an IMaterial.  
+Returns a bool.
 
 ```zenscript
 materialObj.matches(IMaterial other);
 ```
 
-## Obtener materiales de Minecraft de Vanilla
+## Getting Vanilla Minecraft Materials
 
-Puedes usar estos métodos para obtener los materiales de minecraft de vainilla
+You can use these methods to get the vanilla minecraft materials
 
 ```zenscript
 crafttweaker.blocks.IMaterial.air();
@@ -47,7 +47,7 @@ crafttweaker.blocks.IMaterial.carpet();
 crafttweaker.blocks.IMaterial.circuits();
 crafttweaker.blocks.IMaterial.clay();
 crafttweaker.blocks.IMaterial.cloth();
-crafttweaker. locks.IMaterial.coral();
+crafttweaker.blocks.IMaterial.coral();
 crafttweaker.blocks.IMaterial.craftedSnow();
 crafttweaker.blocks.IMaterial.dragonEgg();
 crafttweaker.blocks.IMaterial.fire();
@@ -56,7 +56,7 @@ crafttweaker.blocks.IMaterial.gourd();
 crafttweaker.blocks.IMaterial.grass();
 crafttweaker.blocks.IMaterial.ground();
 crafttweaker.blocks.IMaterial.ice();
-crafttweaker. locks.IMaterial.iron();
+crafttweaker.blocks.IMaterial.iron();
 crafttweaker.blocks.IMaterial.lava();
 crafttweaker.blocks.IMaterial.leaves();
 crafttweaker.blocks.IMaterial.packedIce();
@@ -64,7 +64,7 @@ crafttweaker.blocks.IMaterial.piston();
 crafttweaker.blocks.IMaterial.plants();
 crafttweaker.blocks.IMaterial.portal();
 crafttweaker.blocks.IMaterial.redstoneLight();
-crafttweaker.blocks.IMaterial. ock();
+crafttweaker.blocks.IMaterial.rock();
 crafttweaker.blocks.IMaterial.sand();
 crafttweaker.blocks.IMaterial.snow();
 crafttweaker.blocks.IMaterial.sponge();

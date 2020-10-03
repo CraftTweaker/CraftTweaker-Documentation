@@ -1,13 +1,13 @@
-# Продвинутые мартары
+# Advanced Mortars
 
 ## Дополнительная информация
 
-Advanced Mortars добавляет 4 ступенчатых в мире Mortars и предназначен для использования авторами модпаков. В настоящее время он имеет как поддержку JEI, так и надежную интеграцию CraftTweaker.
+Advanced Mortars adds 4 tiered in-world Mortars and is intended as a tool to be used by modpack authors. It currently has both support for JEI as well as robust CraftTweaker Integration.
 
-### Для дополнительной информации
+### For More Information
 
 https://minecraft.curseforge.com/projects/advanced-mortars
 
-### Отчеты об ошибках
+### Bug Reports
 
-https://github.com/codetaylor/advancedmortars/замечания
+https://github.com/codetaylor/advancedmortars/issues

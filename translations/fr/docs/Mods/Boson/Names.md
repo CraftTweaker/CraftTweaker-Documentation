@@ -1,54 +1,54 @@
-# Noms dans Boson
+# Names in Boson
 
-Dans Minecraft, la plupart des objets sont identifiés par des noms uniques. Par exemple, les éléments utilisent leur nom de registre pour être identifiés de manière unique et il ne peut exister plus d'un élément avec le même nom de registre.
+In Minecraft, most objects are identified by unique names. E.g., items use their registry name to be uniquely identified and there can't exist more than one item with the same registry name.
 
-La plupart des noms dans Minecraft suivent une structure rigide, identifiée par une chaîne avec un espace de noms et un chemin séparés par un point virgule (par ex. `minecraft:iron_ingot`, où `minecraft` est l'espace de noms et `iron_ingot` est le chemin). Dans CraftTweaker, la plupart de ces noms sont représentés comme des chaînes brutes, mais au sein de Boson, cela est mal lu. En fait, l'utilisation d'une chaîne de caractères `brute` peut perturber la question de savoir si un appel de méthode attend une chaîne avec un espace de noms ou sans. Pour cette raison, Boson a séparé l'utilisation de chaînes non espacées de noms et d'espaces.
+Most names in Minecraft follow a rigid structure, identified by a string with a namespace and a path separated by a colon (e.g. `minecraft:iron_ingot`, where `minecraft` is the namespace and `iron_ingot` is the path). In CraftTweaker, most of these names are represented as raw strings, but within Boson this is frowned upon. In fact, the usage of a raw `string` may confuse people on whether a method call expects a string with a namespace or without. For this reason, Boson separated the usage of non-namespaced strings and namespaced ones.
 
-Les chaînes non espacées de noms sont représentées comme des instances de la chaîne ``, parmi toutes les API Boson. Pour plus d'informations, reportez-vous à la documentation ZenScript.
+Non-namespaced strings are represented as instances of `string`, among all the Boson APIs. For more information, refer to the ZenScript documentation.
 
-Les chaînes de noms sont représentées comme des instances de `NameSpacedString`, parmi toutes les API Boson. Pour plus d'informations sur la façon d'obtenir de telles chaînes, reportez-vous à la section suivante.
+Namespaced strings are represented as instances of `NameSpacedString`, among all the Boson APIs. For more information on how to obtain such strings, refer to the next section.
 
-## `Chaîne de noms` Documentation
-La classe `NameSpacedString` réside dans le paquet `net.thesilkminer.mc.boson.zen.naming`.
+## `NameSpacedString` Documentation
+The `NameSpacedString` class resides in the `net.thesilkminer.mc.boson.zen.naming` package.
 
-### Création d'une nouvelle instance
-Il y a deux façons de créer un `NameSpacedString`: utiliser la méthode usine ou lancer une chaîne de caractères ``.
+### Creating a new instance
+There are two ways of creating a `NameSpacedString`: using the factory method or casting a `string`.
 
-La méthode d'usine est l'approche suggérée. Étant donné qu'il s'agit d'une méthode statique, elle peut être appelée directement sur l'instance de la classe . Voici la signature de la méthode et un exemple de son utilisation:
+The factory method is the suggested approach. Due to it being a static method, it can be invoked directly on the class instance. The following is the method signature and an example of its usage:
 
 ```zenscript
-function from(nameSpace en tant que chaîne?, chemin en tant que chaîne) comme NameSpacedString;
+function from(nameSpace as string?, path as string) as NameSpacedString;
 ```
 
 ```zenscript
-NameSpacedString.from("minecraft", "iron_ingot"); // équivalent à minecraft:iron_ingot
-NameSpacedString.from(null, "iron_ingot"); // utilise l'espace de noms par défaut 'minecraft'
+NameSpacedString.from("minecraft", "iron_ingot"); // equivalent to minecraft:iron_ingot
+NameSpacedString.from(null, "iron_ingot"); // uses default namespace 'minecraft'
 ```
 
-La méthode de casting repose à la place sur un cast explicite d'une chaîne `` à un `NameSpacedString` utilisant l'opérateur `comme` dans ZenScript :
+The casting way relies instead on an explicit cast from a `string` to a `NameSpacedString` using the `as` operator in ZenScript:
 
 ```zenscript
-"minecraft:iron_ingot" en tant que NameSpacedString;
+"minecraft:iron_ingot" as NameSpacedString;
 ```
 
-### Propriétés
-Un `NameSpacedString` fournit un accès en lecture seule à ses espaces de noms et à son chemin via ses propriétés :
+### Properties
+A `NameSpacedString` provides read-only access to both its namespace and its path via properties:
 
-| Nom de la propriété | Type de texte          | Libellé                                                                                    |
-| ------------------- | ---------------------- | ------------------------------------------------------------------------------------------ |
-| `Espace de noms`    | `chaîne de caractères` | Récupère la portion de l'espace de noms de la `NameSpacedString` (par exemple `minecraft`) |
-| `chemin d'accès`    | `chaîne de caractères` | Récupère la portion de chemin de la `NameSpacedString` (par exemple `iron_ingot`)          |
+| Property Name | Type     | Description                                                             |
+| ------------- | -------- | ----------------------------------------------------------------------- |
+| `nameSpace`   | `string` | Gets the namespace portion of the `NameSpacedString` (e.g. `minecraft`) |
+| `path`        | `string` | Gets the path portion of the `NameSpacedString` (e.g. `iron_ingot`)     |
 
-### Méthodes
+### Methods
 
 #### `asString`
-Un `NameSpacedString` peut être reconverti en une chaîne de caractères normale `` en utilisant la méthode `asString`. Voici la signature de la méthode et un exemple de son utilisation:
+A `NameSpacedString` can be converted back into a regular `string` by using the `asString` method. The following is the method signature and an example of its usage:
 
 ```zenscript
-la fonction asString() en tant que chaîne ;
+function asString() as string;
 ```
 
 ```zenscript
 val nss = NameSpacedString("minecraft", "iron_ingot");
-println(nss.asString()); // Affiche 'minecraft:iron_ingot' dans le log
+println(nss.asString()); // Prints 'minecraft:iron_ingot' to the log
 ```

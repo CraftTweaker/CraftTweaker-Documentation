@@ -1,37 +1,37 @@
-# Мортар
+# Mortar
 
 ## Сложение
 
 ```zenscript
-Импортировать mods.cuisine.Mortar;
+import mods.cuisine.Mortar;
 
-// Третий параметр 'step' означает "сколько раз вам нужно протолкнуть вредитель"
-Mortar. dd(IItemStack[] inputs, IItemStack output, int step);
+// The third parameter 'step' means "how many times you need to push down the pestle"
+Mortar.add(IItemStack[] inputs, IItemStack output, int step);
 
 Mortar.add([<item:minecraft:dirt>, <item:minecraft:cobblestone>], <item:minecraft:diamond>, 3);
 ```
 
-## Удаление
+## Removal
 
 ```zenscript
 import mods.cuisine.Mortar;
 
-// Удаляем с ввода.
+// Remove by input.
 Mortar.remove(IItemStack[] input);
 
 Mortar.remove([<item:minecraft:dirt>, <item:minecraft:cobblestone>]);
 
-// Удаляем по выводу.
+// Remove by output.
 Mortar.removeByOutput(IIngredient output);
 
 Mortar.removeByOutput(<item:minecraft:diamond>);
 Mortar.removeByOutput(<ore:gemDiamond>);
 
-// Удаляем по идентификатору.
+// Remove by identifier.
 Mortar.remove(String id);
 
 Mortar.remove("recipe_name");
 
-// Удаляем все!
+// Remove everything!
 Mortar.removeAll();
 ```

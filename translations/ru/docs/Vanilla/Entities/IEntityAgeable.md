@@ -1,32 +1,32 @@
-# Возрастные единицы
+# IEntityAgeable
 
-Воздушная сущность - это единица, которая растет со временем, как корова.
+An Ageable Entity is one that grows over time, like a cow.
 
 ## Импорт пакета
 
-Возможно, вам потребуется импортировать пакет, если вы столкнетесь с какими-либо проблемами (например, наложение [массива](/AdvancedFunctions/Arrays_and_Loops/)), так что лучше быть безопасным, чем извините и добавить импорт.  
-`импорт crafttweaker.entity.IEntityAgeable;`
+It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
+`import crafttweaker.entity.IEntityAgeable;`
 
-## Расширение [IEntityCreature](/Vanilla/Entities/IEntityCreature/)
+## Extending [IEntityCreature](/Vanilla/Entities/IEntityCreature/)
 
-IEntityAgeable расширяет [IEntityCreature](/Vanilla/Entities/IEntityCreature/). Это означает, что все функции, доступные [IEntities](/Vanilla/Entities/IEntityCreature/) , также доступны для IEntityAgeable.
+IEntityAgeable extends [IEntityCreature](/Vanilla/Entities/IEntityCreature/). That means all functions available to [IEntities](/Vanilla/Entities/IEntityCreature/) also are available to IEntityAgeable.
 
 ## Методы
 
 ### ZenGetters/Setters
 
-| Геттер           | ZenSetter        | Тип  |
-| ---------------- | ---------------- | ---- |
-| возрастающий век | возрастающий век | int  |
-|                  | поиск по веку    | bool |
+| Геттер     | ZenSetter   | Тип  |
+| ---------- | ----------- | ---- |
+| growingAge | growingAge  | int  |
+|            | scaleForAge | bool |
 
 ### Методы
 
-#### добавить возраст
+#### add age
 
-Методы ожидают подсказки, а второй метод - необязательный щит.  
-оба метода ничего не возвращают.  
-Обычно, второй метод делает то же самое, что и первый с принудительным аргументом, который может отличаться от реализаций модификаций.
+Methods expect an int and the second method an optional bool.  
+Both methods return nothing.  
+Normally, the second method does the same as the first with false as forced argument, that may differ for mod implementations, though.
 
 ```zenscript
 entAgObj.ageUp(int seconds, @Optional boolean forced);

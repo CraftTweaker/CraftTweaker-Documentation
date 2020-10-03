@@ -1,29 +1,29 @@
-# Котел
+# Crucible
 
-Этот пакет позволяет добавлять и удалять рецепты в/из распятия.
+This package allows you to add and remove recipes to/from the Crucible.
 
 ## Импорт пакета
 
-Вы можете [импортировать](/AdvancedFunctions/Import/) пакет и его методы для облегчения извлечения методов.
+You can [import](/AdvancedFunctions/Import/) the package and its methods to facilitate the retrival of the methods.
 
 ```zenscript
 import mods.thaumcraft.Crucible;
 ```
 
-## Добавление рецептов
+## Adding recipes
 
 ```zenscript
-//mods.thaumcraft.Crucible.registerRecipe(String name, String researchKey, IItemStack, IIngredient input, CTAspectStack[]);
+//mods.thaumcraft.Crucible.registerRecipe(String name, String researchKey, IItemStack output, IIngredient input, CTAspectStack[] aspects);
 mods.thaumcraft.Crucible.registerRecipe("crucibleTest", "", <minecraft:diamond>, <minecraft:stick>, [<aspect:aer>]);
 ```
 
-## Удаление рецептов
+## Removing recipes
 
 ```zenscript
 //mods.thaumcraft.Crucible.removeRecipe(String name);
 mods.thaumcraft.Crucible.removeRecipe("recipeName");
 
 
-//mods.thaumcraft.Crucible.removeRecipe(выход IItemStack);
+//mods.thaumcraft.Crucible.removeRecipe(IItemStack output);
 mods.thaumcraft.Crucible.removeRecipe(<minecraft:leather>);
 ```

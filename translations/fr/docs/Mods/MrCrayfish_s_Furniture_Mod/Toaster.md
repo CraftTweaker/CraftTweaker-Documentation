@@ -1,37 +1,37 @@
-# Grille-pain
+# Toaster
 
-Le grille-pain dévoile la nourriture pour commencer la journée.
+The Toaster crips up food to start your day.
 
-## Recettes du grille-pain par défaut
+## Default Toaster Recipes
 
-- Boeuf -> Boeuf cuit
-- Saucisse -> Saucisse cuite
-- Kebab -> Kebab Cuit
+- Beef -> Cooked Beef
+- Sausage -> Cooked Sausage
+- Kebab -> Cooked Kebab
 
-## Enlèvement
+## Removing
 
-## Retirer les recettes de grille-pain correspondantes.
+## Remove matching toaster recipes.
 
 ```zenscript
-mods.cfm.Toaster.remove(@Optional final Igredient output, @Optional final Igredient input);
+mods.cfm.Toaster.remove(@Optional final IIngredient output, @Optional final IIngredient input);
 
-// Supprime les recettes qui font Toast à partir d'un mod
-de tranches de pain. fm.Toaster.remove(<cfm:item_toast>,<cfm:item_bread_slice>);
-// Supprime toutes les recettes
+// Remove recipes that make Toast from a Bread Slice
+mods.cfm.Toaster.remove(<cfm:item_toast>,<cfm:item_bread_slice>);
+// Remove all recipes
 mods.cfm.Toaster.remove();
 ```
 
-## Ajout en cours
+## Adding
 
-Ajouter une recette de grille-pain.
+Add a toaster recipe.
 
-## Ne prend en charge que les entrées de taille 1.
+## Only supports inputs of size 1.
 
 ```zenscript
 mods.cfm.Toaster.addRecipe(@Nonnull final IItemStack output, @Nonnull final IItemStack input);
 
-// Ajoute une recette qui fait du pain de blé
-mods.cfm. oaster.addRecipe(<minecraft:bread>,<minecraft:wheat>);
-// Ajoute une recette qui fait du boeuf cuit
+// Add a recipe that makes Bread from Wheat
+mods.cfm.Toaster.addRecipe(<minecraft:bread>,<minecraft:wheat>);
+// Add a recipe that makes Cooked Beef from Beef
 mods.cfm.Toaster.addRecipe(<minecraft:cooked_beef>,<minecraft:beef>);
 ```

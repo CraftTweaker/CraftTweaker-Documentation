@@ -1,8 +1,8 @@
-# Separatore Elettrolitico
+# Electrolytic Separator
 
-A partire dal Mekanism 9.7.0 è ora possibile visualizzare tutte le stringhe di ricetta del separatore elettrolitico attraverso il comando `/ct mekrecipes separatore`
+As of Mekanism 9.7.0 it is now possible to view all recipe strings of the Electrolytic Separator through the command `/ct mekrecipes separator`
 
-## Addizione
+## Addition
 
 ```zenscript
 mods.mekanism.separator.addRecipe(ILiquidStack inputFluid, double inputRF, IGasStack outputGas1, IGasStack outputGas2);
@@ -10,7 +10,7 @@ mods.mekanism.separator.addRecipe(ILiquidStack inputFluid, double inputRF, IGasS
 mods.mekanism.separator.addRecipe(<liquid:liquidfusionfuel>, 5000, <gas:deuterium>, <gas:tritium>);
 ```
 
-## Rimozione
+## Removal
 
 ```zenscript
 mods.mekanism.separator.removeRecipe(IIngredient inputFluid, @Optional IIngredient outputGas1, @Optional IIngredient outputGas2);
@@ -19,12 +19,12 @@ mods.mekanism.separator.removeRecipe(<liquid:heavywater>, <gas:deuterium>, <gas:
 mods.mekanism.separator.removeRecipe(<liquid:water>);
 ```
 
-Specificare un parametro di output rimuoverà solo la ricetta specifica che si traduce in quell'output da quell'input. L'esclusione del parametro di output rimuoverà tutte le ricette che l'elemento di input può produrre.
+Specifying an output parameter will only remove the specific recipe that results in that output from that input. Omitting the output parameter will remove all recipes that the input item can produce.
 
-## Rimozione di tutte le ricette
+## Removing all recipes
 
-A partire da Mekanism 9.7.0 è ora possibile rimuovere tutte le ricette separatore elettrolitico. (Questo esclude le ricette aggiunte tramite CraftTweaker)
+As of Mekanism 9.7.0 it is now possible to remove all Electrolytic Separator recipes. (This excludes any recipes added via CraftTweaker)
 
 ```zenscript
-mods.mekanism.separator.removeAllRicette();
+mods.mekanism.separator.removeAllRecipes();
 ```
