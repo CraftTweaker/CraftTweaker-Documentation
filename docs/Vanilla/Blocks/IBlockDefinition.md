@@ -93,7 +93,7 @@ Returns an [IBlockState](/Vanilla/Blocks/IBlockState/).
 defObj.getStateFromMeta(int meta);
 ```
 
-### Check if the block is effective for the tool
+### Block effective for the tool
 Uses a string and a [IBlockState](/Vanilla/Blocks/IBlockState/).  
 Returns a bool.
 ```zenscript
