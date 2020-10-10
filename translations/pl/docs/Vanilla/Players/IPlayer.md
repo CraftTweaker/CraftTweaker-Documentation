@@ -18,7 +18,7 @@ Zengetters are for retrieving information. Usually either assigned to a variable
 
 | Zengetter     | What does it do                                                                            | Return Type                                | Usage                  |
 | ------------- | ------------------------------------------------------------------------------------------ | ------------------------------------------ | ---------------------- |
-| id            | returns the player's id                                                                    | string                                     | `player.id`            |
+| uuid          | zwraca UUID gracza                                                                         | string                                     | `ID gracza`            |
 | name          | returns the player's name                                                                  | string                                     | `player.name`          |
 | data          | returns the player's data                                                                  | [IData](/Vanilla/Data/IData/)              | `player.data`          |
 | xp            | returns the player's experience level. Can also be used to set a player's experience level | int                                        | `player.xp`            |
@@ -35,7 +35,7 @@ Zengetters are for retrieving information. Usually either assigned to a variable
 
 ## ZenMethods
 
-Zenmethods are for doing things with other things, in this case with a player.
+ZenMethods mają robić rzeczy z innymi rzeczami, w tym przypadku z graczem.
 
 | ZenMethod                | Parameter Type(s)                        | What does it do                                                     | Example                                     |
 | ------------------------ | ---------------------------------------- | ------------------------------------------------------------------- | ------------------------------------------- |
@@ -47,3 +47,5 @@ Zenmethods are for doing things with other things, in this case with a player.
 | give(item)               | [IItemStack](/Vanilla/Items/IItemStack/) | Give the player the provided item. Item is an IItemStack.           | `player.give(<minecraft:gold_ingot>)` |
 | teleport(position)       | [Position3f](/Vanilla/Utils/Position3f/) | Teleports the player to the provided position in the same dimension | `player.teleport(position)`                 |
 | executeCommand(raw)      | string                                   | Executes the command as the player                                  | `player.executeCommand("kill")`             |
+| dropItem(dropAll)        | bool                                     | Upuszcza bieżący przedmiot (lub cały stos), który gracz trzyma.     | `Element gracza (false)`                    |
+| dropItem(itemToDrop)     | [IItemStack](/Vanilla/Items/IItemStack/) | Upuszcza podany przedmiot w pozycji gracza.                         | `player.dropItem(<minecraft:dirt>)`   |

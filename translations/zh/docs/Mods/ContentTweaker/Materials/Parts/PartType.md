@@ -34,7 +34,7 @@ You can retrieve the following information from a PartType:
 
 You can set the following information on a PartType:
 
-| ZenMethod                       | Parameter Type                                                               |
+| ZenMethod                       | 参数类型                                                                         |
 | ------------------------------- | ---------------------------------------------------------------------------- |
 | setData(IPartDataPiece[] data); | [IPartDataPiece](/Mods/ContentTweaker/Materials/Parts/PartDataPiece/)[] data |
 

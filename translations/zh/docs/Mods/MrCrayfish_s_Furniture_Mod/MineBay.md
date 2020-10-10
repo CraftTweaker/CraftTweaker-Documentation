@@ -30,7 +30,7 @@ mods.cfm.MineBay.remove();
 
 Currently only supports removing by trade result.
 
-## Adding
+## 添加
 
 ## Add a trade.
 

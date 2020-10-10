@@ -2,7 +2,7 @@
 
 The PlayerPickupEntity Event is fired whenever a player interacts with an Entity.
 
-## Event Class
+## Класс события
 
 You will need to cast the event in the function header as this class:  
 `crafttweaker.event.PlayerPickupEvent`  
@@ -10,9 +10,9 @@ You can, of course, also [import](/AdvancedFunctions/Import/) the class before a
 
 ## ZenGetters
 
-The following information can be retrieved from the event:
+Следующая информация может быть получена от события:
 
-| ZenGetter   | Return Type                           |
+| ZenGetter   | Возвращаемый тип                      |
 | ----------- | ------------------------------------- |
 | `canceled`  | boolean                               |
 | `processed` | boolean                               |

@@ -8,14 +8,14 @@ You can call the AlloySmelter package using `mods.immersiveengineering.AlloySmel
 
 ## Add Recipe
 
-| Required | Type    | Data Type                                           |
+| Required | Тип     | Data Type                                           |
 | -------- | ------- | --------------------------------------------------- |
 | Required | Output  | [IItemstack](/Vanilla/Items/IItemStack/)            |
 | Required | Input 1 | [IIngredient](/Vanilla/Variable_Types/IIngredient/) |
 | Required | Input 2 | [IIngredient](/Vanilla/Variable_Types/IIngredient/) |
 | Required | Time    | Integer                                             |
 
-### Example
+### Пример
 
 ```zenscript
 //Example:
@@ -25,11 +25,11 @@ mods.immersiveengineering.AlloySmelter.addRecipe(<minecraft:diamond>, <ore:ingot
 
 ## Remove Recipe
 
-| Type   | Data Type                                |
+| Тип    | Data Type                                |
 | ------ | ---------------------------------------- |
 | Output | [IItemstack](/Vanilla/Items/IItemStack/) |
 
-### Example
+### Пример
 
 ```zenscript
 //Example:

@@ -4,7 +4,7 @@
 
 `mods.thermalexpansion.InductionSmelter`
 
-## Addition
+## 加算
 
 ```zenscript
 mods.thermalexpansion.InductionSmelter.addRecipe(IItemStack primaryOutput, IItemStack primaryInput, IItemStack secondaryInput, int energy, @Optional IItemStack secondaryOutput, @Optional int secondaryChance);

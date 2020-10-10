@@ -2,7 +2,7 @@
 
 ## Package
 ```zenscript
-import mods.terrafirmacraft.FireClayKnapping;
+import mods.terrafirmacraft.FireClayKnapping;FireClayKnapping;
 ```
 
 ## Addition

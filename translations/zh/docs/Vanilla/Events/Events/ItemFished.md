@@ -21,7 +21,7 @@ ItemFished Events implement the following interfaces and are able to call all of
 ## ZenGetters/ZenSetters
 The following information can be retrieved/set during the event:
 
-| ZenGetter | ZenSetter          | Type                                       |
+| ZenGetter | ZenSetter          | 类型                                         |
 | --------- | ------------------ | ------------------------------------------ |
 | `damage`  |                    | int                                        |
 |           | `additionalDamage` | int                                        |

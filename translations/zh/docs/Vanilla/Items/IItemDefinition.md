@@ -39,7 +39,7 @@ val itemDefinitionList = game.items;
 
 ### ZenSetters and other void-Methods
 
-| ZenSetter/ZenMethod                    | Parameter Type                                      |
+| ZenSetter/ZenMethod                    | 参数类型                                                |
 | -------------------------------------- | --------------------------------------------------- |
 | creativeTab                            | [ICreativeTab](/Vanilla/CreativeTabs/ICreativeTab/) |
 | setNoRepair()                          | none                                                |

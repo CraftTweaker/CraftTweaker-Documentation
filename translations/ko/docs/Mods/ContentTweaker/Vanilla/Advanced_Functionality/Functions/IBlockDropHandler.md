@@ -23,7 +23,7 @@ The function is a void function that takes the following parameters:
 As this method does not return anything, all drops need to be added to the `drops` list using the exposed methods.  
 Read about them [here](/Mods/ContentTweaker/Vanilla/Types/Drops/ICTItemList/).
 
-## Example
+## 예제
 
 ```zenscript
 block.setDropHandler(function(drops, world, position, state, fortune) {

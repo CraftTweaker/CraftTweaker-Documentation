@@ -7,9 +7,9 @@
 | Name Identifier | String                                       |
 | Fluid           | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
 | Minimum Size    | 整型                                           |
-| Maximum Size    | Integer                                      |
-| Replenish Rate  | Integer                                      |
-| Weight          | Integer                                      |
+| Maximum Size    | 整型                                           |
+| Replenish Rate  | 整型                                           |
+| Weight          | 整型                                           |
 
 ### Weight
 

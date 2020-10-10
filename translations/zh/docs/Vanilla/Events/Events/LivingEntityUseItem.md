@@ -36,6 +36,6 @@ The following information can be retrieved/set during the event:
 | `item`     | [物品堆（IItemstack）](/Vanilla/Items/IItemStack/) |
 | `duration` | int                                           |
 
-| ZenSetter  | Parameter Type |
-| ---------- | -------------- |
-| `duration` | int            |
+| ZenSetter  | 参数类型 |
+| ---------- | ---- |
+| `duration` | int  |

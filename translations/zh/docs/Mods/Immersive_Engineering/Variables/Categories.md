@@ -1,6 +1,6 @@
 # Categories
 
-## Information
+## 信息
 
 The Blueprint has a Required String parameter called "Category". This String allows you to "Categorise" your recipes to a specific Blueprint Category.
 

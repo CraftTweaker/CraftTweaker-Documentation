@@ -2,7 +2,7 @@
 
 ## Package
 ```zenscript
-import mods.terrafirmacraft.ClayKnapping;
+import mods.terrafirmacraft.ClayKnapping;ClayKnapping;
 ```
 
 ## 追加
@@ -18,7 +18,7 @@ ClayKnapping.removeRecipe(IItemStack output);
 ClayKnapping.removeRecipe(String registryName);
 ```
 
-## Example
+## 例
 ```zenscript
 ClayKnapping.addRecipe("unfired_vessel", <tfc:ceramics/unfired/vessel>, " XXX ", "XXXXX", "XXXXX", "XXXXX", " XXX ");
 ```

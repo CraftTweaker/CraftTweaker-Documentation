@@ -4,7 +4,7 @@
 
 `mods.bloodmagic.TartaricForge`
 
-## Addition
+## 加算
 
 ```zenscript
 inputs has a max size of 4

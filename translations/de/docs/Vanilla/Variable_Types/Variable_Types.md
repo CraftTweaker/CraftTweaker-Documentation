@@ -31,7 +31,7 @@ recipes.remove(test);
 
 Here's an (incomplete) List of most variable types
 
-| Name (Name in CT)                                   | Explanation                                                                                           | Beispiel                                             | Import                                    |
+| Name (Name in CT)                                   | Erklärung                                                                                             | Beispiel                                             | Import                                    |
 | --------------------------------------------------- | ----------------------------------------------------------------------------------------------------- | ---------------------------------------------------- | ----------------------------------------- |
 | Integer (int)                                       | Integers are whole Numbers (e.g. 1,2,3,...), caps at 2 147 483 647                                    | `var test = 10 as int;`                              |                                           |
 | [IItemStack](/Vanilla/Items/IItemStack/)            | Single items                                                                                          | `var test = <minecraft:dirt> as IItemStack;`   | import crafttweaker.item.IItemStack;      |

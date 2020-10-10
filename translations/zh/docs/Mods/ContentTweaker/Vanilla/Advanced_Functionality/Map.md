@@ -2,7 +2,7 @@
 
 The Map Package allows you to set a waypoint using BASE's waypoint event handler.
 
-## Importing the package
+## 导入相关包
 
 You can import the package so that you don't have to retype it everytime.
 
@@ -17,6 +17,6 @@ It is a void method with the parameters:
 - string name
 - [IWorld](/Mods/ContentTweaker/Vanilla/Types/World/IWorld/)
 - [IBlockPos](/Mods/ContentTweaker/Vanilla/Types/Block/IBlockPos/)
-- [CTColor](/Mods/ContentTweaker/Vanilla/Types/Color/Color/)
+- [CT颜色（CTColor）](/Mods/ContentTweaker/Vanilla/Types/Color/Color/)
 
     Map.setWaypoint(String name, IWorld world, IBlockPos pos, CTColor color)

@@ -61,7 +61,7 @@ You can retrieve the following information from a Part:
 
 | ZenMethod                 | 戻り値                                                                           |
 | ------------------------- | ----------------------------------------------------------------------------- |
-| hasOverlay()              | boolean                                                                       |
+| hasOverlay()              | boolean型                                                                      |
 | getName()                 | string                                                                        |
 | getUnlocalizedName()      | string                                                                        |
 | getShortUnlocalizedName() | string                                                                        |

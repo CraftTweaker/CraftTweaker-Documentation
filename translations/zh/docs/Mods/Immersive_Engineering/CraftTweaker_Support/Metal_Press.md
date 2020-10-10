@@ -8,13 +8,13 @@ You can call the MetalPress package using `mods.immersiveengineering.MetalPress`
 
 ## 添加配方
 
-| Required | 类型         | Data Type                                           |
-| -------- | ---------- | --------------------------------------------------- |
-| 必要       | Output     | [IItemstack](/Vanilla/Items/IItemStack/)            |
-| 必要       | Input      | [IIngredient](/Vanilla/Variable_Types/IIngredient/) |
-| Required | Mold       | [IItemstack](/Vanilla/Items/IItemStack/)            |
-| 必要       | Energy     | Integer                                             |
-| 必要       | Input Size | Integer                                             |
+| Required | 类型         | 数据类型                                                    |
+| -------- | ---------- | ------------------------------------------------------- |
+| 必要       | 输出         | [物品堆（IItemstack）](/Vanilla/Items/IItemStack/)           |
+| 必要       | 输入         | [材料（IIngredient）](/Vanilla/Variable_Types/IIngredient/) |
+| Required | Mold       | [物品堆（IItemstack）](/Vanilla/Items/IItemStack/)           |
+| 必要       | Energy     | 整型                                                      |
+| 必要       | Input Size | 整型                                                      |
 
 ### 例子
 
@@ -28,11 +28,11 @@ mods.immersiveengineering.MetalPress.addRecipe(<minecraft:diamond>, <ore:logWood
 
 ## Remove Recipe
 
-| Type   | Data Type                                |
-| ------ | ---------------------------------------- |
-| Output | [IItemstack](/Vanilla/Items/IItemStack/) |
+| 类型 | 数据类型                                          |
+| -- | --------------------------------------------- |
+| 输出 | [物品堆（IItemstack）](/Vanilla/Items/IItemStack/) |
 
-### Example
+### 例子
 
 ```zenscript
 //Example:
@@ -43,11 +43,11 @@ mods.immersiveengineering.MetalPress.removeRecipe(<minecraft:diamond>);
 
 ## Remove By Mold
 
-| Type   | Data Type                                |
-| ------ | ---------------------------------------- |
-| Output | [IItemstack](/Vanilla/Items/IItemStack/) |
+| 类型 | 数据类型                                          |
+| -- | --------------------------------------------- |
+| 输出 | [物品堆（IItemstack）](/Vanilla/Items/IItemStack/) |
 
-### Example
+### 例子
 
 ```zenscript
 //Example:

@@ -8,7 +8,7 @@ You can call the Excavator package using `mods.immersiveengineering.Excavator`.
 
 | Required | Тип                 | Data Type |
 | -------- | ------------------- | --------- |
-| Required | Name                | string    |
+| Required | Название            | string    |
 | Required | Mineral Weight      | int       |
 | Required | Fail Chance         | double    |
 | Required | Ores                | string[]  |
@@ -16,7 +16,7 @@ You can call the Excavator package using `mods.immersiveengineering.Excavator`.
 | Optional | Dimension Whitelist | int []    |
 | Optional | Blacklist           | boolean   |
 
-### Example
+### Пример
 
 ```zenscript
 //Example:
@@ -29,11 +29,11 @@ mods.immersiveengineering.Excavator.addMineral("Iron Ore", 50, 0.005, ["oreIron"
 
 ## Remove Mineral
 
-| Required | Type | Data Type |
-| -------- | ---- | --------- |
-| Required | Name | String    |
+| Required | Тип      | Data Type |
+| -------- | -------- | --------- |
+| Required | Название | String    |
 
-### Example
+### Пример
 
 ```zenscript
 //Example:

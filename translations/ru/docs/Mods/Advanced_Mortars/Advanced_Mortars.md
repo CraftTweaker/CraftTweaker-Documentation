@@ -1,6 +1,6 @@
 # Advanced Mortars
 
-## Information
+## Дополнительная информация
 
 Advanced Mortars adds 4 tiered in-world Mortars and is intended as a tool to be used by modpack authors. It currently has both support for JEI as well as robust CraftTweaker Integration.
 

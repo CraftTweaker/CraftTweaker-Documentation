@@ -1,5 +1,5 @@
 
-### Class
+### Класс
 
 ```zenscript
 import mods.roots.SummonCreatures;
@@ -56,7 +56,7 @@ void clearLifeEssence();
 ---
 
 
-### Examples
+### Примеры
 
 ```zenscript
 import mods.roots.SummonCreatures;

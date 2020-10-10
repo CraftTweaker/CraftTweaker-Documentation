@@ -8,12 +8,12 @@ You can call the BlastFurnace package using `mods.immersiveengineering.BlastFurn
 
 ## Add Recipe:
 
-| Required | 类型     | Data Type                                           |
-| -------- | ------ | --------------------------------------------------- |
-| 必要       | Output | [IItemstack](/Vanilla/Items/IItemStack/)            |
-| 必要       | Input  | [IIngredient](/Vanilla/Variable_Types/IIngredient/) |
-| Required | Time   | Integer                                             |
-| Optional | Slag   | [IItemstack](/Vanilla/Items/IItemStack/)            |
+| Required | 类型   | 数据类型                                                    |
+| -------- | ---- | ------------------------------------------------------- |
+| 必要       | 输出   | [物品堆（IItemstack）](/Vanilla/Items/IItemStack/)           |
+| 必要       | 输入   | [材料（IIngredient）](/Vanilla/Variable_Types/IIngredient/) |
+| Required | Time | 整型                                                      |
+| 可选       | Slag | [物品堆（IItemstack）](/Vanilla/Items/IItemStack/)           |
 
 ### 例子
 
@@ -26,11 +26,11 @@ mods.immersiveengineering.BlastFurnace.addRecipe(<minecraft:diamond>, <ore:logWo
 
 ## Remove Recipe
 
-| Type   | Data Type                                |
-| ------ | ---------------------------------------- |
-| Output | [IItemstack](/Vanilla/Items/IItemStack/) |
+| 类型 | 数据类型                                          |
+| -- | --------------------------------------------- |
+| 输出 | [物品堆（IItemstack）](/Vanilla/Items/IItemStack/) |
 
-### Example:
+### 比如：
 
 ```zenscript
 //Example:
@@ -40,12 +40,12 @@ mods.immersiveengineering.BlastFurnace.removeRecipe(<minecraft:diamond>;
 
 ## Add Fuel
 
-| Required | 返回值类型 | Data Type                                           |
-| -------- | ----- | --------------------------------------------------- |
-| Required | Input | [IIngredient](/Vanilla/Variable_Types/IIngredient/) |
-| Required | Time  | Integer                                             |
+| Required | 返回值类型 | 数据类型                                                    |
+| -------- | ----- | ------------------------------------------------------- |
+| Required | 输入    | [材料（IIngredient）](/Vanilla/Variable_Types/IIngredient/) |
+| Required | Time  | 整型                                                      |
 
-### Example
+### 例子
 
 ```zenscript
 //Example:
@@ -55,11 +55,11 @@ mods.immersiveengineering.BlastFurnace.addFuel(<ore:plankWood>, 2000);
 
 ## Remove Fuel
 
-| Required | 返回值类型  | Data Type                                |
-| -------- | ------ | ---------------------------------------- |
-| Required | Output | [IItemstack](/Vanilla/Items/IItemStack/) |
+| Required | 返回值类型 | 数据类型                                          |
+| -------- | ----- | --------------------------------------------- |
+| Required | 输出    | [物品堆（IItemstack）](/Vanilla/Items/IItemStack/) |
 
-### Example
+### 例子
 
 ```zenscript
 //Example:

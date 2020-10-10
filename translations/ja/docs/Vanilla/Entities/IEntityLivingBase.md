@@ -3,7 +3,7 @@
 A living Entity is one that has health and that can die.  
 That means Monsters, Animals but also [IPlayers](/Vanilla/Players/IPlayer/).
 
-## Importing the package
+## パッケージのインポート
 
 It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
 `import crafttweaker.entity.IEntityLivingBase;`
@@ -20,11 +20,11 @@ IEntityLivingBase extends [IEntity](/Vanilla/Entities/IEntity/). That means all 
 | AIMovementSpeed        | float                                                  |
 | arrowsInEntity         | int                                                    |
 | attackingEntity        | *IEntityLivingBase*                                    |
-| canBreatheUnderwater   | boolean                                                |
+| canBreatheUnderwater   | boolean型                                               |
 | health                 | float                                                  |
-| isChild                | boolean                                                |
-| isOnLadder             | boolean                                                |
-| isUndead               | boolean                                                |
+| isChild                | boolean型                                               |
+| isOnLadder             | boolean型                                               |
+| isUndead               | boolean型                                               |
 | lastAttackedEntity     | *IEntityLivingBase*                                    |
 | lastAttackedEntityTime | int                                                    |
 | lastDamageSource       | [IDamageSource](/Vanilla/Damage/IDamageSource/)        |
@@ -56,8 +56,9 @@ IEntityLivingBase extends [IEntity](/Vanilla/Entities/IEntity/). That means all 
 - [IItemStack](/Vanilla/Items/IItemStack/) getItemInSlot([IEntityEquipmentSlot](/Vanilla/Entities/IEntityEquipmentSlot/) slot);
 - [IPotionEffect](/Vanilla/Potions/IPotionEffect/) getActivePotionEffect(IPotion potion);
 - void addPotionEffect([IPotionEffect](/Vanilla/Potions/IPotionEffect/) potionEffect);
-- void clearActivePotions() → Removes all active [potions](/Vanilla/Potions/IPotion/) from the Entity
-- void knockBack([IEntity](/Vanilla/Entities/IEntity/) entity, float one, double two, double three);
+- void removePotionEffect([IPotion](/Vanilla/Potions/IPotion/) potion);
+- void clearActivePotions() → エンティティから [ポーション](/Vanilla/Potions/IPotion/) をすべて削除する
+- void knockBack([IEntity](/Vanilla/Entities/IEntity/) エンティティ, float 1, double 2, double three);
 - void onDeath();
 - void onLivingUpdate();
 - void setItemToSlot([IEntityEquipmentSlot](/Vanilla/Entities/IEntityEquipmentSlot/) slot, [IItemStack](/Vanilla/Items/IItemStack/) itemStack);

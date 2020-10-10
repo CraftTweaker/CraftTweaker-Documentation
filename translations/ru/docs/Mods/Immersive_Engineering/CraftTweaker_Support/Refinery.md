@@ -8,14 +8,14 @@ You can call the Refinery package using `mods.immersiveengineering.Refinery`.
 
 ## Add Recipe
 
-| Required | Type    | Data Type                                    |
+| Required | Тип     | Data Type                                    |
 | -------- | ------- | -------------------------------------------- |
 | Required | Output  | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
 | Required | Input 1 | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
 | Required | Input 2 | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
 | Required | Energy  | Integer                                      |
 
-### Example
+### Пример
 
 ```zenscript
 //Example
@@ -26,11 +26,11 @@ mods.immersiveengineering.Refinery.addRecipe(<liquid:iron>, <liquid:water>, <liq
 
 ## Remove Recipe
 
-| Type   | Data Type                                    |
+| Тип    | Data Type                                    |
 | ------ | -------------------------------------------- |
 | Output | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
 
-### Example
+### Пример
 
 ```zenscript
 //Example

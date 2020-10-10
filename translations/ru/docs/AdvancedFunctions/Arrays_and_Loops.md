@@ -6,11 +6,11 @@
 
 Они объявляются с помощью ```[``` и ```]```.
 
-**Imortant**: you *must* initialize arrays to something, even if it's an empty array.
+**Важно**: вы *должны* инициализировать массивы любыми значениями, даже если это пустой массив.
 
-`var floatArray as float [];` won't give syntax errors, but upon reloading your game, you will get an error and your script won't work.
+`var floatArray as float [];` не вызовет синтаксические ошибки, но после перезагрузки игры вы получите ошибку и ваш скрипт не будет работать.
 
-Instead, initialize empty arrays like this `var floatArray as float [] = [];`
+Вместо этого, инициализируйте пустые массивы вот так `var floatArray as float [] = [];`
 
 ```zenscript
 //Массив, содержащий "Hello" и "World"
@@ -20,12 +20,12 @@ val stringArray = ["Hello", "World"] as string[];
 val intArray = [1,2,3] as int[];
 ```
 
-If you now think "wait, haven't I seen these brackets before?", you have. Remember ```recipes.add(out,[[],[],[]]);```? This uses three arrays with each containing up to three entries to define a crafting table recipe.
+Если вы сейчас подумали "подождите, разве я не видел эти скобки раньше?", то "да", вы их видели. Запомните ```recipes.add(out,[[],[],[]]);```? Здесь используются три массива, где каждый содержит по три объекта, чтобы определить рецепт крафта в верстаке.
 
 ## Приведение к типу массива
 
-You surely have noticed that all arrays here have the `as` statement appended.  
-Why you ask? This is because ZenScript sometimes cannot predict what type the items in the array are. This can be the cause of strange conversion error logs!  
+Вы наверняка заметили, что все эти массивы в конце имеют указание `as` .  
+Почему, спросите вы? This is because ZenScript sometimes cannot predict what type the items in the array are. This can be the cause of strange conversion error logs!  
 Better be safe than sorry and cast the Arrays to their correct types!  
 Also, if you cast to non-primitive types (everything except strings, ints and the same) be sure to [import](/AdvancedFunctions/Import/) the corresponding package and be sure to do so at the TOP of the script:
 
@@ -36,7 +36,7 @@ val IArray = [<minecraft:gold_ingot>, <minecraft:iron_ingot>] as IItemStack[];
 
 ## Вложенные массивы
 
-You can place Arrays in Arrays.
+Вы можете размещать массивы в массивах.
 
 ```zenscript
 val stringArray1 = ["Привет", "мир"] as string[];

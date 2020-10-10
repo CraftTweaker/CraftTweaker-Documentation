@@ -20,7 +20,7 @@ mods.botania.PureDaisy.addRecipe(<minecraft:dirt>,<minecraft:grass>);
 mods.botania.PureDaisy.addRecipe(<minecraft:planks>,<minecraft:grass>, 200);
 ```
 
-## Recipe removal
+## 删除配方
 
 ```zenscript
 //mods.botania.PureDaisy.removeRecipe(IIngredient output);

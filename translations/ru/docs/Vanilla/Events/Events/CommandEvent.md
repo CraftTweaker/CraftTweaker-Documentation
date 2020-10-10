@@ -15,7 +15,7 @@ Command event implements the following interfaces:
 
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 
-## ZenGetters/ZenSetters
+## Геттеры/сеттеры
 
 The following information ca be retrieved/set during the event:
 

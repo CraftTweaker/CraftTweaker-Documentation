@@ -5,7 +5,7 @@ The Distiller is a machine that converts an input fluid into an output fluid and
 ## 所属包名
 `mods.steamagerevolution.Distiller`
 
-## Methods
+## 方法
 
 - **[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) output** The result of the recipe.
 - **[IItemStack](/Vanilla/Items/IItemStack/) output** The result of the recipe.

@@ -4,7 +4,7 @@
 
 `mods.thermalexpansion.Crucible`
 
-## Addition
+## 加算
 
 ```zenscript
 mods.thermalexpansion.Crucible.addRecipe(ILiquidStack output, IItemStack input, int energy);

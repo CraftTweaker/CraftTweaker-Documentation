@@ -22,7 +22,7 @@ crafttweaker.world.IWorld.getFromID(int id);
 
 ## ZenMethods without parameters and ZenGetters
 
-| ZenMethod          | ZenGetter     | Return type                                      | Description                                                                                                                                                                             |
+| ZenMethod          | ZenGetter     | Return type                                      | 描述                                                                                                                                                                                      |
 | ------------------ | ------------- | ------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | isRemote()         | remote        | boolean                                          | True if the world is a "slave" client; changes will not be saved or propagated from this world. For example, server worlds have this set to false, client worlds have this set to true. |
 | isRaining()        | raining       | boolean                                          | Returns true if it is currently raining.                                                                                                                                                |
@@ -96,4 +96,16 @@ Only the last parameter is true by default.
 
 ```zenscript
 worldObj.rayTraceBlocks(IVector3d begin, IVector3d ray, @Optional boolean stopOnLiquid, @Optional boolean ignoreBlockWithoutBoundingBox, @Optional(true) boolean returnLastUncollidableBlock)
+```
+
+### 获取选中的块
+
+使用 [IBlockPos](/Vanilla/World/IBlockPos/), [IRayTraceResults 结果](/Vanilla/World/IRayTraceResult/) 和 [IPlayer](/Vanilla/Players/IPlayer/).  
+返回 [ItemStack](/Vanilla/Items/IItemStack/)。  
+**可以为空**
+
+获取可以通过在位置选择方块获取的IItemStack。
+
+```zenscript
+worldObj.getPickedBlock(IBlockPos pos，IRayTraceResult RayTraceResult，IPlayer player player)；
 ```

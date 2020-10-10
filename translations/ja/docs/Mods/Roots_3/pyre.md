@@ -35,7 +35,7 @@ void removeRecipe(
 
 * * *
 
-### Examples
+### 使用例
 
 ```zenscript
 import mods.roots.Pyre;

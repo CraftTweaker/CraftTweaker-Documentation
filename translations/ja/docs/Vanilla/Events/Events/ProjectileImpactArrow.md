@@ -24,7 +24,7 @@ The following information can be retrieved from the event:
 | `shooter`      |                     | [IEntity](/Vanilla/Entities/IEntity/) |
 | `damage`       | `damage`            | double型                               |
 |                | `knockbackStrength` | int (setter only, no getter)          |
-| `isCritical`   | `isCritical`        | boolean                               |
+| `isCritical`   | `isCritical`        | boolean型                              |
 | `pickupStatus` |                     | String                                |
 
 ## Additional methods

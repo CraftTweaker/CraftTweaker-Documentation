@@ -24,14 +24,14 @@ You can also call an [existing creative](/Mods/ContentTweaker/Vanilla/Brackets/B
 Why would you need this, you ask?  
 You will need this if you want to add a newly created block or item to an existing tab!
 
-## Properties
+## Свойства
 
 You can call and set all these properties using the normal ZenGetters and ZenSetters  
 `tab.unlocalizedName = "hh";`  
 Note that you will probably hardly ever need the Setters as these Properties are already initialized to your wanted values when you create the ICreativeTab object.  
 Also, you can neither set nor get properties from an existing ICreativeTab(one that you retrieved using the [Bracket handler](/Mods/ContentTweaker/Vanilla/Brackets/Bracket_Creative_Tab/))!
 
-| Property Name     | Type                                                                                                    | Required | Default Value | Description/Notes       |
+| Property Name     | Тип                                                                                                     | Required | Default Value | Description/Notes       |
 | ----------------- | ------------------------------------------------------------------------------------------------------- | -------- | ------------- | ----------------------- |
 | unlocalizedName   | string                                                                                                  | YES      |               | The Creative Tab's name |
 | iconStack         | [IItemStack](/Vanilla/Items/IItemStack/)                                                                | YES/NO   |               | The Creative Tab's icon |

@@ -1,4 +1,4 @@
-### Class
+### Класс
 
 ```zenscript
 import mods.roots.Fey;
@@ -35,7 +35,7 @@ void removeRecipe(
 
 * * *
 
-### Examples
+### Примеры
 
 ```zenscript
 import mods.roots.Fey;

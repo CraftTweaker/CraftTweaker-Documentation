@@ -35,7 +35,7 @@ item.getHealAmount();
 item.setHealAmount(64);
 ```
 
-| Property        | Type                                                                                            | Required | Default Value | Description/Notes                                           |
+| Property        | Тип                                                                                             | Required | Default Value | Description/Notes                                           |
 | --------------- | ----------------------------------------------------------------------------------------------- | -------- | ------------- | ----------------------------------------------------------- |
 | healAmount      | int                                                                                             | Yes      |               | How many food points are restored when eaten?               |
 | alwaysEdible    | bool                                                                                            | No       | false         | Can the food still be eaten if the user's food bar is full? |

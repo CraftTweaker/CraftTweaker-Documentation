@@ -5,7 +5,7 @@
 import mods.terrafirmacraft.FireClayKnapping;
 ```
 
-## Addition
+## Сложение
 
 ```zenscript
 FireClayKnapping.addRecipe(String registryName, IItemStack output, String... pattern)

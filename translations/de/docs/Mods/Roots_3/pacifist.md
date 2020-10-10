@@ -4,7 +4,7 @@
 import mods.roots.Pacifist;
 ```
 
-#### Methods
+#### Methoden
 
 ```zenscript
 void addEntity(
@@ -22,7 +22,7 @@ void removeEntity(
 
 * * *
 
-### Examples
+### Beispiele
 
 ```zenscript
 import mods.roots.Pacifist;

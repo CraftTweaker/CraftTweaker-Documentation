@@ -10,7 +10,7 @@ You can, of course, also [import](/AdvancedFunctions/Import/) the class before a
 
 ## Наследование от интерфейсов событий
 
-PlayerDeathDrops Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+PlayerDeathDrops реализует следующие интерфейсы и способно вызвать все их методы/геттеры/сеттеры:
 
 - [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
 

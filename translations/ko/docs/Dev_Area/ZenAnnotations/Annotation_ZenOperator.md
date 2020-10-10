@@ -2,7 +2,7 @@
 
 A Method annotated with `@ZenOperator` cannot be called by instance.method(parameters) but instead uses Tokens like `+`, `!` and the like.
 
-## Example
+## 예제
 
 [CraftTweaker's IData](https://github.com/jaredlll08/CraftTweaker/blob/1.12/CraftTweaker2-API/src/main/java/crafttweaker/api/data/IData.java)
 

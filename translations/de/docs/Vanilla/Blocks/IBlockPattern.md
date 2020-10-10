@@ -22,7 +22,7 @@ But there are cases when you explicitly get an IBlockPattern Object as return.
 | blocks      | Lists all possible blocks for this object      | List<[IBlock](/Vanilla/Blocks/IBlock/)> |
 | displayName | Returns the displayNames of the fitting blocks | string                                  |
 
-## OR
+## OR (ODER)
 
 You can OR two IBlockPattern Objects using the OR `|` Operator
 

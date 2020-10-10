@@ -15,7 +15,7 @@ As of Mekanism 9.7.0 it is now possible to view all registered gases (including 
 
 It is also possible as of Mekanism 9.7.1 to get a gas stack/bracket handler by string. Use `mods.mekanism.MekanismHelper.getGas(string);`
 
-## Example
+## 예제
 
 ```zenscript
 import mod.mekanism.gas.IGasStack;
@@ -50,10 +50,10 @@ var gas_amount_zenMethod = <gas:water>.withAmount(500);
 An IGasDefinition object contains information on a gas.  
 You can get such an object using `gasStack.definition` (check the table above)
 
-| ZenGetter   | Description                            | Return Type |
-| ----------- | -------------------------------------- | ----------- |
-| NAME        | Returns the referred gas' name         | string      |
-| displayName | Returns the referred gas' display name | string      |
+| ZenGetter   | Description                            | 반환 타입  |
+| ----------- | -------------------------------------- | ------ |
+| NAME        | Returns the referred gas' name         | string |
+| displayName | Returns the referred gas' display name | string |
 
 You can multiply a gasDefinition to return a new IGasStack with the given amount in millibuckets:
 

@@ -8,7 +8,7 @@ You can call the ArcFurnace package using `mods.immersiveengineering.ArcFurnace`
 
 ## Add Recipe
 
-| Required | Type                | Data Type                                                                              |
+| Required | Тип                 | Data Type                                                                              |
 | -------- | ------------------- | -------------------------------------------------------------------------------------- |
 | Required | Output              | [IItemStack](/Vanilla/Items/IItemStack/)                                               |
 | Required | Input               | [IIngredient](/Vanilla/Variable_Types/IIngredient/)                                    |
@@ -18,7 +18,7 @@ You can call the ArcFurnace package using `mods.immersiveengineering.ArcFurnace`
 | Optional | Additives           | [IIngredient](/Vanilla/Variable_Types/IIngredient/) Array[]                            |
 | Optional | Special Recipe Type | String [specialRecipeTypes](/Mods/Immersive_Engineering/Variables/SpecialRecipeTypes/) |
 
-### Example
+### Пример
 
 ```zenscript
 //Example:
@@ -32,11 +32,11 @@ mods.immersiveengineering.ArcFurnace.addRecipe(<minecraft:diamond>, <ore:logWood
 
 ## Remove Recipe
 
-| Type   | Data Type                                |
+| Тип    | Data Type                                |
 | ------ | ---------------------------------------- |
 | Output | [IItemstack](/Vanilla/Items/IItemStack/) |
 
-### Example
+### Пример
 
 ```zenscript
 //Example:

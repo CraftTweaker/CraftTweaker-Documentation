@@ -4,7 +4,7 @@
 import mods.roots.Ritual;
 ```
 
-#### Methods
+#### Methoden
 
 ```zenscript
 void modifyRitual(
@@ -15,7 +15,7 @@ void modifyRitual(
 
 * * *
 
-### Examples
+### Beispiele
 
 ```zenscript
 import mods.roots.Ritual;

@@ -22,7 +22,7 @@ This function deregisters *all* registered fuels:
 mods.pneumaticcraft.liquidfuel.removeAllFuels();
 ```
 
-## Adding
+## 添加
 
 The following functions can be used to add fluids to the fuel registry:
 

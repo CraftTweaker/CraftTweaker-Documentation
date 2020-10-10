@@ -23,7 +23,7 @@ mods.forestry.Fermenter.addRecipe(<liquid:lava>, <minecraft:obsidian>, <liquid:w
 
 Amount of fluid output: fermentationValue * fluidOutputModifier
 
-| Parameter           | Type                                           | description                                   |
+| Параметр            | Тип                                            | description                                   |
 | ------------------- | ---------------------------------------------- | --------------------------------------------- |
 | fluidOutput         | [ILiquidStack](/Vanilla/Liquids/ILiquidStack/) | The Recipe's output                           |
 | resource            | [IItemStack](/Vanilla/Items/IItemStack/)       | The Recipe's item input                       |
@@ -46,7 +46,7 @@ mods.forestry.Fermenter.removeFuel(<forestry:fertilizer_compound>);
 mods.forestry.Fermenter.addFuel(<minecraft:leaves:1>, 100, 5);
 ```
 
-| Parameter       | Type                                     | Description                                                                         |
+| Параметр        | Тип                                      | Description                                                                         |
 | --------------- | ---------------------------------------- | ----------------------------------------------------------------------------------- |
 | item            | [IItemStack](/Vanilla/Items/IItemStack/) | Item to become a valid fuel for the fermenter                                       |
 | fermentPerCycle | int                                      | How much is fermented per work cycle, i.e. how much fluid of the input is consumed. |

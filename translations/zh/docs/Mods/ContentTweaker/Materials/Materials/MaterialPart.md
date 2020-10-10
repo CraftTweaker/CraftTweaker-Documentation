@@ -44,7 +44,7 @@ You can retrieve the following information from a MaterialPart:
 
 You can also set the following information of a MaterialPart:
 
-| ZenMethod                           | Parameter              | 说明                                                                                              |
+| ZenMethod                           | 参数                     | 说明                                                                                              |
 | ----------------------------------- | ---------------------- | ----------------------------------------------------------------------------------------------- |
 | setColorized(colorized)             | boolean colorized      | Sets if the item's color code is applied                                                        |
 | setTextureLocation(textureLocation) | string textureLocation | Sets the item's texure path. For example, if you want one Gear to look different from the rest. |

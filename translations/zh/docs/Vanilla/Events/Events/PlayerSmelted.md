@@ -18,7 +18,7 @@ PlayerSmelted Events implement the following interfaces and are able to call all
 
 The following information can be retrieved from the event:
 
-| ZenGetter | Return Type                              |
-| --------- | ---------------------------------------- |
-| `player`  | [IPlayer](/Vanilla/Players/IPlayer/)     |
-| `output`  | [IItemStack](/Vanilla/Items/IItemStack/) |
+| ZenGetter    | 返回值类型                                    |
+| ------------ | ---------------------------------------- |
+| `player`     | [IPlayer](/Vanilla/Players/IPlayer/)     |
+| `output（输出）` | [IItemStack](/Vanilla/Items/IItemStack/) |

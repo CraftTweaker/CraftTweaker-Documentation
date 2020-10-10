@@ -23,7 +23,7 @@ mods.botania.ManaInfusion.addAlchemy(<minecraft:gold_ore>, <ore:stone>, 5000);
 mods.botania.ManaInfusion.addConjuration(<minecraft:stone>, <minecraft:stone>, 1000);
 ```
 
-## Recipe removal
+## 删除配方
 
 ```zenscript
 //mods.botania.ManaInfusion.removeRecipe(IIngredient output);

@@ -23,7 +23,7 @@ This function removes *all* recipes currently defined for the Steelworks:
 mods.steamagerevolution.Steelworks.removeAll();
 ```
 
-## Adding
+## 添加
 
 This function is used to add new recipes for the Steelworks:
 

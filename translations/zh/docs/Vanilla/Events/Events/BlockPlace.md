@@ -18,7 +18,7 @@ BlockPlace Events implement the following interfaces and are able to call all of
 ## ZenGetters
 The following information can be retrieved from the event:
 
-| ZenGetter       | ZenSetter | Type                                        |
+| ZenGetter       | ZenSetter | 类型                                          |
 | --------------- | --------- | ------------------------------------------- |
 | `player`        |           | [IPlayer](/Vanilla/Players/IPlayer/)        |
 | `current`       |           | [IBlockState](/Vanilla/Blocks/IBlockState/) |

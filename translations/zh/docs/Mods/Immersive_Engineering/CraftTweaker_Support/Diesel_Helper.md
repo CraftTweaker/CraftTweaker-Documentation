@@ -8,10 +8,10 @@ You can call the DieselHandler package using `mods.immersiveengineering.DieselHa
 
 ## Add Fuel
 
-| Required | 类型     | Data Type                                    |
-| -------- | ------ | -------------------------------------------- |
-| 必要       | Output | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
-| 必要       | Input  | Integer                                      |
+| Required | 类型 | 数据类型                                         |
+| -------- | -- | -------------------------------------------- |
+| 必要       | 输出 | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
+| 必要       | 输入 | 整型                                           |
 
 ### 例子
 
@@ -24,11 +24,11 @@ mods.immersiveengineering.DieselHandler.addFuel(<liquid:water>, 2000);
 
 ## Remove Fuel
 
-| Required | 类型     | Data Type                                    |
-| -------- | ------ | -------------------------------------------- |
-| Required | Output | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
+| Required | 类型 | 数据类型                                         |
+| -------- | -- | -------------------------------------------- |
+| Required | 输出 | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
 
-### Example
+### 例子
 
 ```zenscript
 //Example:
@@ -39,11 +39,11 @@ mods.immersiveengineering.DieselHandler.removeFuel(<liquid:water>);
 
 ## Add Drill Fuel
 
-| Required | Type   | Data Type                                    |
-| -------- | ------ | -------------------------------------------- |
-| Required | Output | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
+| Required | 类型 | 数据类型                                         |
+| -------- | -- | -------------------------------------------- |
+| Required | 输出 | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
 
-### Example
+### 例子
 
 ```zenscript
 //Example:
@@ -54,11 +54,11 @@ mods.immersiveengineering.DieselHandler.addDrillFuel(<liquid:water>);
 
 ## Remove Drill Fuel
 
-| Required | Type   | Data Type                                    |
-| -------- | ------ | -------------------------------------------- |
-| Required | Output | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
+| Required | 类型 | 数据类型                                         |
+| -------- | -- | -------------------------------------------- |
+| Required | 输出 | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
 
-### Example
+### 例子
 
 ```zenscript
 //Example:

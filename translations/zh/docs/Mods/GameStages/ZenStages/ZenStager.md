@@ -10,7 +10,7 @@ ZenStager : `import mods.zenstages.ZenStager;`
 
 Stage *(Recommended to import also)* : `import mods.zenstages.Stage;`
 
-## Methods
+## 方法
 
 ### Create Stage
 

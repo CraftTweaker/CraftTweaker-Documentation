@@ -10,7 +10,7 @@
 - **[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) input** The input fluid
 - **int heat** The amount of heat required for fermentation
 
-## Addition
+## Сложение
 
 ```zenscript
 mods.ic2.Fermenter.addRecipe(ILiquidStack output, ILiquidStack input, int heat);

@@ -119,7 +119,7 @@ Some of properties assignable to `.property()` method:
 
 These ones are **NOT IMPLEMENTED YET:**
 
-| Name          | Description                                     |
+| 이름            | Description                                     |
 | ------------- | ----------------------------------------------- |
 | amplifier     | UU Amplifier. Amount of UU Amplifier outputted. |
 | eu_to_start | Fusion Reactor, EU to start fusion              |

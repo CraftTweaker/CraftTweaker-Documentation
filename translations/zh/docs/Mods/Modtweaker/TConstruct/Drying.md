@@ -6,7 +6,7 @@ The `Drying` package allows you to add or remove Drying recipes.
 
 You can call the Drying package using `mods.tconstruct.Drying`
 
-## Adding
+## 添加
 
 The time is in ticks
 

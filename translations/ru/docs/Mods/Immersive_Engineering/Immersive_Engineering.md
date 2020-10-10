@@ -1,6 +1,6 @@
 # Immersive Engineering
 
-## Information
+## Дополнительная информация
 
 Immersive Engineering is a tech mod with a certain charm, based on the ideas and concepts, and with most assets created by Damien Hazard.
 

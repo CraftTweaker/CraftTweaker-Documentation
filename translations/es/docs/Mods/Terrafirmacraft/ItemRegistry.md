@@ -3,7 +3,7 @@
 ## Package
 ```zenscript
 // Imports ItemRegistry methods into your script
-import mods.terrafirmacraft.ItemRegistry;
+import mods.terrafirmacraft.ItemRegistry;ItemRegistry;
 ```
 
 ## Register Item Size

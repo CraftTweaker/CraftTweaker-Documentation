@@ -4,7 +4,7 @@
 
 `mods.actuallyadditions.OilGen`
 
-## Addition
+## 加算
 
 `genTime` defaults to 100 if omitted
 

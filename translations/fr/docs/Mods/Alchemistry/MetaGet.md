@@ -13,8 +13,8 @@ mods.alchemistry.Util.get`
 ## Syntax
 
 ```zenscript
-mods.alchemistry.Util.get(String name);
+mods.alchemistry.mods.alchemistry.Util.get(String name);
 
 val strontiumCarbonate = mods.alchemistry.Util.get("strontium_carbonate");
-val carbon = mods.alchemistry.Util.get("carbon");
+val carbon = mods.alchemistry.
 ```

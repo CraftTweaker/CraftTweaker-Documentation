@@ -29,7 +29,7 @@ This function removes *all* Plastic Mixer recipes:
 mods.pneumaticcraft.plasticmixer.removeAllRecipes();
 ```
 
-## Adding
+## 添加
 
 The following functions can be used to add recipes to the TPP:
 

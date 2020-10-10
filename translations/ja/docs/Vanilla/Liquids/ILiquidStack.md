@@ -27,7 +27,7 @@ val lavaWithAmount = <liquid:lava> * 1000;
 As an ILiquidStack represents a liquid, there surely must also be a way of retrieving the fluid's properties.  
 Check the table to see what you can retrieve from the ILiquidStack Object using ZenGetters.
 
-| Zengetter   | What is this?                                             | Return Type                                               | Example                                   |
+| Zengetter   | What is this?                                             | Return Type                                               | 例                                         |
 | ----------- | --------------------------------------------------------- | --------------------------------------------------------- | ----------------------------------------- |
 | name        | This returns the unlocalized liquid name                  | string                                                    | `test = <liquid:lava>.name;`        |
 | displayName | This returns the localized liquid name                    | string                                                    | `test = <liquid:lava>.displayName;` |
@@ -36,7 +36,7 @@ Check the table to see what you can retrieve from the ILiquidStack Object using 
 | density     | This returns the density of the referred liquid           | int型                                                      | `test = <liquid:lava>.density;`     |
 | temperature | This returns the temperature of the referred liquid       | int型                                                      | `test = <liquid:lava>.temperature;` |
 | viscosity   | This returns the viscosity of the referred liquid         | int                                                       | `test = <liquid:lava>.viscosity;`   |
-| gaseous     | This returns whether the referred liquid is gaseous       | boolean                                                   | `test = <liquid:lava>.gaseous;`     |
+| gaseous     | This returns whether the referred liquid is gaseous       | boolean型                                                  | `test = <liquid:lava>.gaseous;`     |
 | tag         | This returns the ILiquidObject's tag                      | [IData](/Vanilla/Data/IData/)                             | `test = <liquid:lava>.tag;`         |
 | definition  | This returns the referred liquid's definition (see below) | [ILiquid Definition](/Vanilla/Liquids/ILiquidDefinition/) | `test = <liquid:lava>.definition;`  |
 

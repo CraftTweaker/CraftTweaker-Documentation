@@ -5,7 +5,7 @@
 import mods.terrafirmacraft.ClayKnapping;
 ```
 
-## Addition
+## Сложение
 
 ```zenscript
 ClayKnapping.addRecipe(String registryName, IItemStack output, String... pattern);

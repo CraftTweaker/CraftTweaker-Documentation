@@ -16,7 +16,7 @@ ProjectileImpactArrow Events implement the following interfaces and are able to 
 
 ## ZenGetters and ZenSetters
 
-The following information can be retrieved from the event:
+Следующая информация может быть получена от события:
 
 | ZenGetter      | ZenSetter           | Тип                                   |
 | -------------- | ------------------- | ------------------------------------- |

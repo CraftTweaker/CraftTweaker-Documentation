@@ -4,7 +4,7 @@
 import mods.roots.Transmutation;
 ```
 
-#### Methods
+#### Methoden
 
 ```zenscript
 void removeRecipe(
@@ -34,7 +34,7 @@ void addBlockToItemRecipe(
 
 * * *
 
-### Examples
+### Beispiele
 
 ```zenscript
 import mods.roots.Transmutation;

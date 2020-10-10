@@ -57,7 +57,7 @@ That means all functionality that is available to [IIngredient](/Vanilla/Variabl
 
 Read how to use them [here](/UsingThisWiki/). Also, check out the examples below.
 
-| ZenGetter/ZenMethod | ZenSetter/ZenMethod | Type                                                        |
+| ZenGetter/ZenMethod | ZenSetter/ZenMethod | 类型                                                          |
 | ------------------- | ------------------- | ----------------------------------------------------------- |
 | definition          |                     | [IItemDefinition](/Vanilla/Items/IItemDefinition/)          |
 | name                |                     | string                                                      |
@@ -92,6 +92,7 @@ Read how to use them [here](/UsingThisWiki/). Also, check out the examples below
 | showsDurabilityBar  |                     | bool                                                        |
 | hasCustomEntity     |                     | bool                                                        |
 | enchantments        |                     | List<[IEnchantment](/Vanilla/Enchantments/IEnchantment/)\> |
+| 匹配标签精度              |                     | bool                                                        |
 
 #### Amount
 
@@ -120,12 +121,14 @@ Read how to use them [here](/UsingThisWiki/). Also, check out the examples below
 
 #### Tags
 
-| Method call                    | Returns                                    | ParameterTypes                |
-| ------------------------------ | ------------------------------------------ | ----------------------------- |
-| `stack.withEmtpyTag()`         | A new IItemStack with the changed property |                               |
-| `stack.withTag(IData tag)`     | A new IItemStack with the changed property | [IData](/Vanilla/Data/IData/) |
-| `stack.removeTag(String name)` | A new IItemStack with the changed property | string                        |
-| `stack.updateTag(IData tag)`   | A new IItemStack with the changed property | [IData](/Vanilla/Data/IData/) |
+| Method call                                      | Returns                                    | ParameterTypes                      |
+| ------------------------------------------------ | ------------------------------------------ | ----------------------------------- |
+| `stack.withEmtpyTag()`                           | A new IItemStack with the changed property |                                     |
+| `stack.withTag(IData tag)`                       | A new IItemStack with the changed property | [IData](/Vanilla/Data/IData/)       |
+| `stack.withTag(IData tag, bool matchTagExact)`   | A new IItemStack with the changed property | [IData](/Vanilla/Data/IData/), bool |
+| `移除标签(名称)`                                       | A new IItemStack with the changed property | string                              |
+| `更新标签(IData标签)`                                  | A new IItemStack with the changed property | [IData](/Vanilla/Data/IData/)       |
+| `stack.updateTag(IData tag, bool matchTagExact)` | A new IItemStack with the changed property | [IData](/Vanilla/Data/IData/), bool |
 
 #### Block Casting
 
@@ -171,7 +174,7 @@ You can find how to use these either in the [IIngredient](/Vanilla/Variable_Type
 [Item Conditions](/Vanilla/Items/Item_Conditions/)  
 [Item Transformers](/Vanilla/Items/Item_Transformers/)
 
-## Examples
+## 例子
 
 #### DisplayName
 

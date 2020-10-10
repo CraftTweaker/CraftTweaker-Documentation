@@ -50,7 +50,7 @@ item.setMaxStackSize(64);
 | onItemUseFinish       | [IItemUseFinish](/Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemUseFinish/)                 | No       | null          | Called when the player finishes using the item                                       |
 | rarity                | EnumRarity                                                                                                      | No       | COMMON        | How rare an item is, determines ToolTip color ("COMMON", "UNCOMMON", "RARE", "EPIC") |
 | smeltingExprerience   | float                                                                                                           | No       | -1            | How much experienve the player earns for smelting that item in a furnace?            |
-| textureLocation       | [CTResourceLocation](/Mods/ContentTweaker/Vanilla/Types/Resources/CTResourceLocation/)                          | No       | null          | The item's resource location, used for textures etc.                                 |
+| textureLocation（材质位置） | [CTResourceLocation](/Mods/ContentTweaker/Vanilla/Types/Resources/CTResourceLocation/)                          | No       | null          | The item's resource location, used for textures etc.                                 |
 | toolClass             | string                                                                                                          | No       |               | What block types the tool can break                                                  |
 | toolLevel             | int                                                                                                             | No       | -1            | The level of blocks can be broken                                                    |
 | unlocalizedName       | string                                                                                                          | Yes      |               | Name, should be all lowercase                                                        |
@@ -65,7 +65,7 @@ After you have called this function, you cannot un-register the item or change a
 item.register();
 ```
 
-## Example Script
+## 示例脚本
 
 ```zenscript
 #loader contenttweaker

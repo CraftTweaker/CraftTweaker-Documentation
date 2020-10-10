@@ -41,7 +41,7 @@ recipes.removeShaped(output, inputs);
 This one is more strict on which recipes to remove and will only remove shaped recipes that craft `output` with `input`.
 
 `output` is an [IIngredient](/Vanilla/Variable_Types/IIngredient/)  
-`inputs` is an [IIngredient](/Vanilla/Variable_Types/IIngredient/)\[][\] (e.g.[[iron,iron,iron],[iron,null,iron],[iron,null,iron]])
+`inputs` is an [IIngredient](/Vanilla/Variable_Types/IIngredient/)\[]\[\\] (e.g.[[iron,iron,iron],[iron,null,iron],[iron,null,iron]])
 
 Furthermore, `inputs` is optional. If omitted, the function will do the same as `recipe.remove`, though it will only remove shaped Recipes.  
 `inputs` can contain wildcard characters: `[[<*>,<*>,<*>],[<*>,<*>,<*>],[<*>,<*>,<*>]]` would refer a recipe whose items, as long as each slot is filled, don't matter.
@@ -113,7 +113,7 @@ If a `function` is added as third parameter, you can also use a function to dete
 If an `action` function is added as forth parameter, you can also determine, what will happen, if the item is crafted.
 
 `name` is a string and needs to be unique but is also optional `output` is an [IItemStack](/Vanilla/Items/IItemStack/)  
-`inputs` is an [IIngredient](/Vanilla/Variable_Types/IIngredient/)\[][\] (see below)  
+`inputs` is an [IIngredient](/Vanilla/Variable_Types/IIngredient/)\[]\[\\] (see below)  
 `function` is a IRecipeFunction. Please refer to the [respecting wiki entry](/Vanilla/Recipes/Crafting/Recipe_Functions/#irecipefunction) for more information on functions.  
 `action` is a IRecipeAction. Please refer to the [respecting wiki entry](/Vanilla/Recipes/Crafting/Recipe_Functions/#irecipeaction) for more information on actions.
 

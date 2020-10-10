@@ -97,3 +97,15 @@ Only the last parameter is true by default.
 ```zenscript
 worldObj.rayTraceBlocks(IVector3d begin, IVector3d ray, @Optional boolean stopOnLiquid, @Optional boolean ignoreBlockWithoutBoundingBox, @Optional(true) boolean returnLastUncollidableBlock)
 ```
+
+### Get the picked block
+
+Use an [IBlockPos](/Vanilla/World/IBlockPos/), an [IRayTraceResult](/Vanilla/World/IRayTraceResult/) and an [IPlayer](/Vanilla/Players/IPlayer/).  
+Returns an [IItemStack](/Vanilla/Items/IItemStack/).  
+**Can be null**
+
+Gets the IItemStack that would be obtained by picking the block at the position.
+
+```zenscript
+worldObj.getPickedBlock(IBlockPos pos, IRayTraceResult rayTraceResult, IPlayer player);
+```

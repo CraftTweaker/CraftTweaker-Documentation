@@ -4,7 +4,7 @@
 
 `mods.thermalexpansion.Insolator`
 
-## Addition
+## 加算
 
 ```zenscript
 //mods.thermalexpansion.Insolator.addRecipe(IItemStack primaryOutput, IItemStack primaryInput, IItemStack secondaryInput, int energy, @Optional IItemStack secondaryOutput, @Optional int secondaryChance);

@@ -2,7 +2,7 @@
 
 ## Package
 ```zenscript
-mods.naturesaura.AnimalSpawner
+mods.naturesaura.AnimalSpawnerAnimalSpawner
 ```
 
 ## Methods
@@ -12,14 +12,14 @@ mods.naturesaura.AnimalSpawner
 - **int time** The time processes take in ticks
 - **[IIngredient[]](/Vanilla/Variable_Types/IIngredient) ingredients** The inputs
 
-## Addition
+## 加算
 
 ```zenscript
-mods.naturesaura.AnimalSpawner.addRecipe(String name, String entity, int aura, int time, IIngredient[] ingredients)
+mods.naturesaura.AnimalSpawnermods.naturesaura.AnimalSpawner.addRecipe(String name, String entity, int aura, int time, IIngredient[] ingredients)
 ```
 
 ## Removal
 
 ```zenscript
-mods.naturesaura.AnimalSpawner.removeRecipe(String name)
+mods.naturesaura.AnimalSpawnermods.naturesaura.AnimalSpawner.removeRecipe(String name)
 ```

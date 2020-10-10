@@ -54,7 +54,7 @@ myTrait.removeItem(<item:minecraft:iron_pickaxe>);
 
 You can set and get these properties using the names given:
 
-| Name                 | Type   |
+| 名称                   | Type   |
 | -------------------- | ------ |
 | color                | int    |
 | countPerLevel        | int    |
@@ -447,7 +447,7 @@ myTrait.onToolRepair = function(trait, tool, amount) {
 };
 ```
 
-## Example
+## 例
 
 ```zenscript
 #loader contenttweaker

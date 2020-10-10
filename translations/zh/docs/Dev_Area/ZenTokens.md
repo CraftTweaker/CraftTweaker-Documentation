@@ -13,7 +13,7 @@
 | 5         | T_AOPEN             | `{`                                                         |
 | 6         | T_ACLOSE            | `}`                                                         |
 | 7         | T_SQBROPEN          | `[`                                                         |
-| 8         | T_SQBRCLOSE         | `]`                                                         |
+| 8         | T_SQBRCLOSE         | `]以声明数组`                                                    |
 | 9         | T_DOT2              | `..`                                                        |
 | 10        | T_DOT               | `.`                                                         |
 | 11        | T_COMMA             | `,`                                                         |

@@ -27,7 +27,7 @@ mods.cfm.Oven.remove(null,<minecraft:potato>);
 mods.cfm.Oven.remove();
 ```
 
-## Adding
+## 添加
 
 ## Add an oven recipe.
 

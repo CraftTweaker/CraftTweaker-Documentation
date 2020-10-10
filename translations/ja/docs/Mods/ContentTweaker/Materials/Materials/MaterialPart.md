@@ -39,7 +39,7 @@ You can retrieve the following information from a MaterialPart:
 | getTextureLocation() | string                                                                          |
 | getCTColor()         | [Color](/Mods/ContentTweaker/Vanilla/Types/Color/Color/)                        |
 | getColor()           | int                                                                             |
-| isColorized()        | boolean                                                                         |
+| isColorized()        | boolean型                                                                        |
 | getData()            | [IMaterialPartData](/Mods/ContentTweaker/Materials/Materials/MaterialPartData/) |
 
 You can also set the following information of a MaterialPart:

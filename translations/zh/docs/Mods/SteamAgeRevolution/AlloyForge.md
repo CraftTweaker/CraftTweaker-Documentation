@@ -5,7 +5,7 @@ The Alloy Forge is a machine that converts two input fluids into one output flui
 ## 所属包名
 `mods.steamagerevolution.AlloyForge`
 
-## Methods
+## 方法
 
 - **[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) output** The result of the recipe.
 - **[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) input** The input of the recipe.

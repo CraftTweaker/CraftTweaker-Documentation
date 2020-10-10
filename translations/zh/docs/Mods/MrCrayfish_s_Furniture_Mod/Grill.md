@@ -25,7 +25,7 @@ mods.cfm.Grill.remove(<cfm:item_sausage_cooked>);
 mods.cfm.Grill.remove();
 ```
 
-## Adding
+## 添加
 
 Add a grill recipe.
 

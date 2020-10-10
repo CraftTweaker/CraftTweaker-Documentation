@@ -6,12 +6,12 @@ You can call the CokeOven package using `mods.immersiveengineering.CokeOven`.
 
 ## 添加配方
 
-| Required | 类型          | Data Type                                           |
-| -------- | ----------- | --------------------------------------------------- |
-| 必要       | Output      | [IItemstack](/Vanilla/Items/IItemStack/)            |
-| 必要       | Fuel Output | Integer                                             |
-| Required | Input       | [IIngredient](/Vanilla/Variable_Types/IIngredient/) |
-| 必要       | Time        | Integer                                             |
+| Required | 类型          | 数据类型                                                    |
+| -------- | ----------- | ------------------------------------------------------- |
+| 必要       | 输出          | [物品堆（IItemstack）](/Vanilla/Items/IItemStack/)           |
+| 必要       | Fuel Output | 整型                                                      |
+| Required | 输入          | [材料（IIngredient）](/Vanilla/Variable_Types/IIngredient/) |
+| 必要       | Time        | 整型                                                      |
 
 ### 例子
 
@@ -23,11 +23,11 @@ mods.immersiveengineering.CokeOven.addRecipe(<minecraft:coal>, 2, <ore:logWood>,
 
 ## Remove Recipe
 
-| Type   | Data Type                                |
-| ------ | ---------------------------------------- |
-| Output | [IItemstack](/Vanilla/Items/IItemStack/) |
+| 类型 | 数据类型                                          |
+| -- | --------------------------------------------- |
+| 输出 | [物品堆（IItemstack）](/Vanilla/Items/IItemStack/) |
 
-### Example:
+### 比如：
 
 ```zenscript
 //Example:

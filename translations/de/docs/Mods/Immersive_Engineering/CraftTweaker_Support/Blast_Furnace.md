@@ -30,7 +30,7 @@ mods.immersiveengineering.BlastFurnace.addRecipe(<minecraft:diamond>, <ore:logWo
 | ------ | ---------------------------------------- |
 | Output | [IItemstack](/Vanilla/Items/IItemStack/) |
 
-### Example:
+### Beispiel:
 
 ```zenscript
 //Example:

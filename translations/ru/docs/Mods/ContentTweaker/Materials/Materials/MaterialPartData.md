@@ -29,11 +29,11 @@ Below you will find a list for CoT's basic Part Types:
 
 <table>
   <th>
-    Name
+    Название
   </th>
   
   <th>
-    Value
+    Параметры
   </th>
   
   <th>
@@ -59,11 +59,11 @@ Below you will find a list for CoT's basic Part Types:
 
 <table>
   <th>
-    Name
+    Название
   </th>
   
   <th>
-    Value
+    Параметры
   </th>
   
   <th>
@@ -129,7 +129,7 @@ Below you will find a list for CoT's basic Part Types:
 
 <details><summary>Block</summary> 
 
-| Name         | Value                     | Required? |
+| Название     | Параметры                 | Required? |
 | ------------ | ------------------------- | --------- |
 | hardness     | An "Integer" (e.g. "3")   | No        |
 | resistance   | An "Integer" (e.g. "15")  | No        |
@@ -138,7 +138,7 @@ Below you will find a list for CoT's basic Part Types:
 
 <details><summary>Fluid</summary> 
 
-| Name        | Value                      | Required? |
+| Название    | Параметры                  | Required? |
 | ----------- | -------------------------- | --------- |
 | temperature | An "Integer" (e.g. "300")  | No        |
 | density     | An "Integer" (e.g. "1000") | No        |
@@ -148,7 +148,7 @@ Below you will find a list for CoT's basic Part Types:
 
 <details><summary>Ore</summary> 
 
-| Name         | Value                                                          | Required? |
+| Название     | Параметры                                                      | Required? |
 | ------------ | -------------------------------------------------------------- | --------- |
 | drops        | An "itemList" (e.g. "minecraft:redstone,minecraft:gold_ingot") | No        |
 | variants     | A "Block List" (e.g. "minecraft:stone,minecraft:end_stone")    | No        |
@@ -159,7 +159,7 @@ Below you will find a list for CoT's basic Part Types:
 
 <details><summary>Minecart</summary> 
 
-| Name       | Value                  | Required? |
+| Название   | Параметры              | Required? |
 | ---------- | ---------------------- | --------- |
 | maxSpeed   | A "float" (e.g. "1.0") | No        |
 | drag       | A "float" (e.g. "1.0") | No        |

@@ -2,11 +2,11 @@
 
 *Requires BuildCraft Silicon*
 
-Class path: `mods.buildcraft.AssemblyTable`
+Class path: `mods.buildcraft.AssemblyTable`AssemblyTable</code>
 
 ## Use
 
-To use, import the class with `import mods.buildcraft.AssemblyTable;` at the beginning of your script.
+To use, import the class with `import mods.buildcraft.AssemblyTable;` at the beginning of your script.AssemblyTable;</code> at the beginning of your script.
 
 ## Adding a Recipe
 
@@ -18,7 +18,7 @@ To use, import the class with `import mods.buildcraft.AssemblyTable;` at the beg
 - `inputs` <[IIngredient](/vanilla/api/items/IIngredient)[]>
 
 ```zenscript
-import mods.buildcraft.AssemblyTable;
+import mods.buildcraft.import mods.buildcraft.AssemblyTable;
 
 AssemblyTable.addRecipe("example_recipe_for_diamonds", <minecraft:diamond>, 1000, [<minecraft:coal_block>, <minecraft:redstone>]);
 ```
@@ -30,7 +30,7 @@ AssemblyTable.addRecipe("example_recipe_for_diamonds", <minecraft:diamond>, 1000
 - `recipeName` &lt;string> The name of the recipe.
 
 ```zenscript
-import mods.buildcraft.AssemblyTable;
+import mods.buildcraft.import mods.buildcraft.AssemblyTable;
 
 AssemblyTable.removeByName("buildcraftsilicon:redstone_chipset");
 ```

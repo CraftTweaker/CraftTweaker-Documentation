@@ -8,12 +8,12 @@ You can call the Refinery package using `mods.immersiveengineering.Refinery`.
 
 ## 添加配方
 
-| Required | 类型      | Data Type                                    |
-| -------- | ------- | -------------------------------------------- |
-| 必要       | Output  | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
-| 必要       | Input 1 | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
-| Required | Input 2 | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
-| 必要       | Energy  | Integer                                      |
+| Required | 类型     | 数据类型                                         |
+| -------- | ------ | -------------------------------------------- |
+| 必要       | 输出     | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
+| 必要       | 输入1    | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
+| Required | 输入2    | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
+| 必要       | Energy | 整型                                           |
 
 ### 例子
 
@@ -26,11 +26,11 @@ mods.immersiveengineering.Refinery.addRecipe(<liquid:iron>, <liquid:water>, <liq
 
 ## Remove Recipe
 
-| Type   | Data Type                                    |
-| ------ | -------------------------------------------- |
-| Output | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
+| 类型 | 数据类型                                         |
+| -- | -------------------------------------------- |
+| 输出 | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
 
-### Example
+### 例子
 
 ```zenscript
 //Example

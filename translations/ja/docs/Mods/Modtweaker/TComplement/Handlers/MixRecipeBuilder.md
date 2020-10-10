@@ -35,7 +35,7 @@ var builder = HighOven.newMixRecipe(<liquid:steel> * 72, <liquid:iron> * 144, 13
 | purifiers   | `purifiers` | :x:                  | `List<IIngredient>` | the valid purifiers for the recipe at the time the attribute is accessed |
 
 
-## Methods
+Methods
 
 | Method                                                 | Return type        | Info                                                                                      |
 | ------------------------------------------------------ | ------------------ | ----------------------------------------------------------------------------------------- |
@@ -56,8 +56,8 @@ var builder = HighOven.newMixRecipe(<liquid:steel> * 72, <liquid:iron> * 144, 13
 
 All methods that return a `MixRecipeBuilder` return the same instance they were called on, allowing method chaining.
 
-## How to use Once you have a `MixRecipeBuilder`, add the oxidizers, reducers and purifiers for your new recipe to the builder, then `register()` a recipe. A `MixRecipeBuilder` can be used to register as many recipes as you want: each time you call `register()`, it adds a new recipe with the infos it has at the time you call the function. This makes it easy to add recipes variant or recipes tier by incrementally adding new additives and/or increasing yield etc.
+How to use Once you have a `MixRecipeBuilder`, add the oxidizers, reducers and purifiers for your new recipe to the builder, then `register()` a recipe. A `MixRecipeBuilder` can be used to register as many recipes as you want: each time you call `register()`, it adds a new recipe with the infos it has at the time you call the function. This makes it easy to add recipes variant or recipes tier by incrementally adding new additives and/or increasing yield etc.
 
 The additives supports all kind of `IIngredient`: `IOreDictEntry`, `IItemStack` and their transformations, liquid containers etc.
 
-## Warning Don't forget to **register** your recipe, the `MixRecipeBuilder` is just a builder to specify all the parts of the recipe !
+Warning Don't forget to **register** your recipe, the `MixRecipeBuilder` is just a builder to specify all the parts of the recipe !

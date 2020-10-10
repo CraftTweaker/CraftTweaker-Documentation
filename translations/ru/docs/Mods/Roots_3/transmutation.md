@@ -1,4 +1,4 @@
-### Class
+### Класс
 
 ```zenscript
 import mods.roots.Transmutation;
@@ -34,7 +34,7 @@ void addBlockToItemRecipe(
 
 * * *
 
-### Examples
+### Примеры
 
 ```zenscript
 import mods.roots.Transmutation;

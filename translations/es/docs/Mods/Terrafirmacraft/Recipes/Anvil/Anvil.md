@@ -2,7 +2,7 @@
 
 ## Package
 ```zenscript
-import mods.terrafirmacraft.Anvil;
+import mods.terrafirmacraft.Anvil;Anvil;
 ```
 
 ## Addition

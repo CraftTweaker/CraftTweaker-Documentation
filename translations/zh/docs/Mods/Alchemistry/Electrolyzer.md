@@ -1,6 +1,6 @@
 # Electrolyzer
 
-# Package
+# 所属包名
 ```zenscript
 `mods.alchemistry.Electrolyzer`
 ```

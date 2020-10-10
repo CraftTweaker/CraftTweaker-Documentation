@@ -140,7 +140,7 @@ myMat.addProjectileMaterialStats();
 myMat.removeProjectileMaterialStats();
 ```
 
-## Example
+## 例子
 
 ```zenscript
 #loader contenttweaker

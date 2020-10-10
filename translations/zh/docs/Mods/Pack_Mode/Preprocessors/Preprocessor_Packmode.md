@@ -17,6 +17,6 @@ import crafttweaker.items.IItemStack;
 print("If I appear on your CT-logs, packmode normal is enabled!");
 ```
 
-## What it does
+## 它的作用
 
 The Processor will only allow the script to be executed if a certain packmode is enabled.

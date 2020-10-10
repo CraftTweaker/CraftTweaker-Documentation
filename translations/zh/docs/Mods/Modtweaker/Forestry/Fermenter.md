@@ -46,7 +46,7 @@ mods.forestry.Fermenter.removeFuel(<forestry:fertilizer_compound>);
 mods.forestry.Fermenter.addFuel(<minecraft:leaves:1>, 100, 5);
 ```
 
-| Parameter       | 类型                                       | 说明                                                                                  |
+| 参数              | 类型                                       | 说明                                                                                  |
 | --------------- | ---------------------------------------- | ----------------------------------------------------------------------------------- |
 | item            | [IItemStack](/Vanilla/Items/IItemStack/) | Item to become a valid fuel for the fermenter                                       |
 | fermentPerCycle | int                                      | How much is fermented per work cycle, i.e. how much fluid of the input is consumed. |

@@ -6,10 +6,10 @@ You can call the Thermoelectric package using `mods.immersiveengineering.Thermoe
 
 ## Add Temperature Source
 
-| Required | 类型              | Data Type                                           |
-| -------- | --------------- | --------------------------------------------------- |
-| 必要       | Target Block    | [IIngredient](/Vanilla/Variable_Types/IIngredient/) |
-| 必要       | Temperature (K) | Integer                                             |
+| Required | 类型              | 数据类型                                                    |
+| -------- | --------------- | ------------------------------------------------------- |
+| 必要       | Target Block    | [材料（IIngredient）](/Vanilla/Variable_Types/IIngredient/) |
+| 必要       | Temperature (K) | 整型                                                      |
 
 ### 例子
 ```zenscript
@@ -22,11 +22,11 @@ mods.immersiveengineering.Thermoelectric.addTemperatureSource(<minecraft:obsidia
 
 ## Remove Temperature Source
 
-| Required | 类型           | Data Type                                           |
-| -------- | ------------ | --------------------------------------------------- |
-| Required | Target Block | [IIngredient](/Vanilla/Variable_Types/IIngredient/) |
+| Required | 类型           | 数据类型                                                    |
+| -------- | ------------ | ------------------------------------------------------- |
+| Required | Target Block | [材料（IIngredient）](/Vanilla/Variable_Types/IIngredient/) |
 
-### Example
+### 例子
 ```zenscript
 //Example:
 mods.immersiveengineering.Thermoelectric.removeTemperatureSource(IIngredient source);

@@ -11,11 +11,11 @@ It might be required for you to import the package if you encounter any issues (
 
 IEntityAgeable extends [IEntityCreature](/Vanilla/Entities/IEntityCreature/). That means all functions available to [IEntities](/Vanilla/Entities/IEntityCreature/) also are available to IEntityAgeable.
 
-## Methods
+## 方法
 
 ### ZenGetters/Setters
 
-| ZenGetter  | ZenSetter   | Type |
+| ZenGetter  | ZenSetter   | 类型   |
 | ---------- | ----------- | ---- |
 | growingAge | growingAge  | int  |
 |            | scaleForAge | bool |

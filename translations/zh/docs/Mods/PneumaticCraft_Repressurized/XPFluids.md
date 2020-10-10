@@ -30,7 +30,7 @@ This function deregisters *all* known XP fluids:
 mods.pneumaticcraft.xpfluid.removeAllXPFluids();
 ```
 
-## Adding
+## 添加
 
 This function can be used to register fluids as XP fluids:
 

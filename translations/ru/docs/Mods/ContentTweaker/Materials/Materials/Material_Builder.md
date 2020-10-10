@@ -20,7 +20,7 @@ var mBuilder = mods.contenttweaker.MaterialSystem.getMaterialBuilder();
 
 You can set these Properties
 
-| ZenMethod               | Parameter                                                        |
+| ZenMethod               | Параметр                                                         |
 | ----------------------- | ---------------------------------------------------------------- |
 | setName(name)           | string name                                                      |
 | setColor(color)         | int color                                                        |

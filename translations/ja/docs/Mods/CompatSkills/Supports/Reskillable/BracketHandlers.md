@@ -1,6 +1,6 @@
-# Bracket Handlers
+# ブラケット記法
 
-## Bracket Handlers
+## ブラケット記法
 
 ### Skill Bracket Handler:
 

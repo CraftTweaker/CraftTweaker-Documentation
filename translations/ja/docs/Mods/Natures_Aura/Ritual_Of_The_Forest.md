@@ -2,7 +2,7 @@
 
 ## Package
 ```zenscript
-mods.naturesaura.TreeRitual
+mods.naturesaura.TreeRitualTreeRitual
 ```
 
 ## Methods
@@ -12,14 +12,14 @@ mods.naturesaura.TreeRitual
 - **init time** The time the process takes in ticks
 - **[IIngredient[]](/Vanilla/Variable_Types/IIngredient) items** The required items for the ritual
 
-## Addition
+## 加算
 
 ```zenscript
-mods.naturesaura.TreeRitual.addRecipe(String name, IIngredient saplingType, IItemStack output, int time, IIngredient[] items)
+mods.naturesaura.AnimalSpawnermods.naturesaura.TreeRitual.addRecipe(String name, IIngredient saplingType, IItemStack output, int time, IIngredient[] items)
 ```
 
 ## Removal
 
 ```zenscript
-mods.naturesaura.TreeRitual.removeRecipe(IItemStack output)
+mods.naturesaura.AnimalSpawnermods.naturesaura.TreeRitual.removeRecipe(IItemStack output)
 ```

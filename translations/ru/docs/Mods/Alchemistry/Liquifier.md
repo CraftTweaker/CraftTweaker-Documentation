@@ -10,7 +10,7 @@ mods.alchemistry.Liquifier
 
 **[IItemStack](/Vanilla/Items/IItemStack/) input** - The input of the recipe.
 
-## Addition
+## Сложение
 ```zenscript
 mods.alchemistry.Liquifier.addRecipe(ILiquidStack output, IItemStack input);
 mods.alchemistry.Liquifier.addRecipe(<liquid:beryllium>*100,<alchemistry:element:5>);

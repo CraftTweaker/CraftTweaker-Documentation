@@ -10,7 +10,7 @@ There are 5 Terms that are important:
 - [MaterialPart](/Mods/ContentTweaker/Materials/Materials/MaterialPart/): Combination of Part and Material (e.g. Iron rod, Platinum Gear, etc) → Can be used to return the item as [IItemStack](/Vanilla/Items/IItemStack/) later on.
 - [MaterialPartData](/Mods/ContentTweaker/Materials/Materials/MaterialPartData/): Some configurations → Varies by part type, check the wiki page for further information.
 
-## Example Script
+## 示例脚本
 
 ```zenscript
     #loader contenttweaker

@@ -17,14 +17,14 @@ You can set the output to `null` to only search via the input stack
 mods.astralsorcery.Lightwell.removeLiquefaction(<astralsorcery:itemcraftingcomponent:0>, null);
 ```
 
-## Addition
+## Сложение
 
 ```zenscript
 //mods.astralsorcery.Lightwell.addLiquefaction(IItemStack input, ILiquidStack output, float productionMultiplier, float shatterMultiplier, int colorhex);
 mods.astralsorcery.Lightwell.addLiquefaction(<minecraft:dirt>, <liquid:water>, 1, 0.2, 0);
 ```
 
-| Parameter         | Parameter Type                                 | Description                                                                                                                                                                                  |
+| Параметр          | Parameter Type                                 | Description                                                                                                                                                                                  |
 | ----------------- | ---------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | input             | [IItemStack](/Vanilla/Items/IItemStack/)       | The input item                                                                                                                                                                               |
 | output            | [ILiquidStack](/Vanilla/Liquids/ILiquidStack/) | The returned Liquid. Only the type of the fluid counts, the amount will (like the default lightwell) depend on stuff like day/night and so on…                                               |

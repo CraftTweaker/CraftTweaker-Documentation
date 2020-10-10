@@ -17,7 +17,7 @@ val aspect = <aspect:ignis>;
 
 ## Геттеры
 
-| Название | Type                                                      |
+| Название | Тип                                                       |
 | -------- | --------------------------------------------------------- |
 | amount   | int                                                       |
 | internal | [CTAspect](/Mods/Modtweaker/Thaumcraft/Aspects/CTAspect/) |

@@ -2,7 +2,7 @@
 
 ## Package
 ```zenscript
-mods.naturesaura.Altar
+mods.naturesaura.AltarAltar
 ```
 
 ## Methods
@@ -13,14 +13,14 @@ mods.naturesaura.Altar
 - **int aura** The amount of Aura required for the completion of the recipe
 - **int time** The time processes take in ticks
 
-## Addition
+## 加算
 
 ```zenscript
-mods.naturesaura.Altar.addRecipe(String name, IIngredient input, IItemStack output, IIngredient catalyst, int aura, int time)
+mods.naturesaura.AnimalSpawnermods.naturesaura.Altar.addRecipe(String name, IIngredient input, IItemStack output, IIngredient catalyst, int aura, int time)
 ```
 
 ## Removal
 
 ```zenscript
-mods.naturesaura.Altar.removeRecipe(IItemStack output)
+mods.naturesaura.AnimalSpawnermods.naturesaura.Altar.removeRecipe(IItemStack output)
 ```

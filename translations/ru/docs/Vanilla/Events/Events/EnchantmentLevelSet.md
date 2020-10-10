@@ -8,12 +8,12 @@ The EnchantmentLevelSet Event is fired when the levels for the three potential e
 
 `event.level` can be arbitrarily modified to a value between 0 & 30.
 
-## Event Class
+## Класс события
 You will need to cast the event in the function header as this class:  
 `crafttweaker.event.EnchantmentLevelSetEvent`  
 You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
 
-## Event interface extensions
+## Наследование от интерфейсов событий
 EnchantmentLevelSet Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
 
 - [IEventPositionable](/Vanilla/Events/Events/IEventPositionable/)

@@ -10,7 +10,7 @@ That's why only those who are able to mess with it should ever find this.
 
 These are keywords that can be found in the class' body and they will initiate a certain action, like adding a member to the class.
 
-| Name           | 説明                                                                                                                                     |
+| 名称             | 説明                                                                                                                                     |
 | -------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
 | zenClass       | Starts a new class, needs to be followed by the name.                                                                                  |
 | var/val        | Creates an instance variable, final of the val keyword was used.                                                                       |
@@ -19,12 +19,12 @@ These are keywords that can be found in the class' body and they will initiate a
 | function       | Creates an instance method. There's no way of creating static methods, as you can do that outside the class as well.                   |
 | this           | Reference to the object we are currently in. Only useable in methods and constructors. Used if a parameter hides a field, for example. |
 
-## Example
+## 例
 
 A commented example:
 
 ```zenscript
-<br />//Creates a class named 'name', you can also access it using scripts.scriptPath.name
+<br /><br />//Creates a class named 'name', you can also access it using scripts.scriptPath.name
 
 
 zenClass name {

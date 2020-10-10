@@ -1,4 +1,4 @@
-# IIngredient
+# 材料（IIngredient）
 
 An IIngredient is an ingredient for recipes.  
 This could be [an item](/Vanilla/Items/IItemStack/), [an ore dictionary entry](/Vanilla/OreDict/IOreDictEntry/), [a liquid](/Vanilla/Liquids/ILiquidStack/) and much more.
@@ -175,7 +175,7 @@ conditionedItem = item.withTag({display: {Name: "Tomato"}});
 conditionedItem = item.onlyStack(32);
 ```
 
-### Matching
+### 匹配
 
 If you want to check if an IItemStack matches your IIngredient you can use the match method. This will return a boolean. If the IIngredient represents a liquid, it will check if the item is a valid container for this liquid.
 

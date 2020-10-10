@@ -21,10 +21,10 @@ PlayerBonemeal Events implement the following interfaces and are able to call al
 
 The following information can be retrieved from the event:
 
-| ZenGetter    | Return Type                                 |
+| ZenGetter    | 戻り値                                         |
 | ------------ | ------------------------------------------- |
-| `canceled`   | boolean                                     |
-| `processed`  | boolean                                     |
+| `canceled`   | boolean型                                    |
+| `processed`  | boolean型                                    |
 | `x`          | int                                         |
 | `y`          | int                                         |
 | `z`          | int                                         |

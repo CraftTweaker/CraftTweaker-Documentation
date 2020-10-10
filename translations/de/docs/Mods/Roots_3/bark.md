@@ -4,7 +4,7 @@
 import mods.roots.Bark;
 ```
 
-#### Methods
+#### Methoden
 
 ```zenscript
 void addRecipe(
@@ -24,7 +24,7 @@ void removeRecipe(
 
 * * *
 
-### Examples
+### Beispiele
 
 ```zenscript
 import mods.roots.Bark;

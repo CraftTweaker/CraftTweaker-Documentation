@@ -10,7 +10,7 @@ mods.alchemistry.Util.get`
 
 - **String Name** Element Name
 
-## Syntax
+## 语句
 
 ```zenscript
 mods.alchemistry.Util.get(String name);

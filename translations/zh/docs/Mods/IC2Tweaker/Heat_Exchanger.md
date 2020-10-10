@@ -4,7 +4,7 @@
 
 `import mods.ic2.HeatExchanger;`
 
-## Methods
+## 方法
 
 - **[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) output** The liquid after it's been heated up/cooled down
 - **[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) input** The liquid before it's been heated up/cooled down

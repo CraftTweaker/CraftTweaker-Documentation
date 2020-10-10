@@ -4,7 +4,7 @@
 
 `import mods.enderio.Vat;`
 
-## Method
+## 方法
 
 **[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) output** - The output fluid (right tank).
 

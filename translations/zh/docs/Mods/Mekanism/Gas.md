@@ -50,10 +50,10 @@ var gas_amount_zenMethod = <gas:water>.withAmount(500);
 An IGasDefinition object contains information on a gas.  
 You can get such an object using `gasStack.definition` (check the table above)
 
-| ZenGetter   | 说明                                     | Return Type |
-| ----------- | -------------------------------------- | ----------- |
-| NAME        | Returns the referred gas' name         | string      |
-| displayName | Returns the referred gas' display name | string      |
+| ZenGetter   | 说明                                     | 返回值类型  |
+| ----------- | -------------------------------------- | ------ |
+| NAME        | Returns the referred gas' name         | string |
+| displayName | Returns the referred gas' display name | string |
 
 You can multiply a gasDefinition to return a new IGasStack with the given amount in millibuckets:
 

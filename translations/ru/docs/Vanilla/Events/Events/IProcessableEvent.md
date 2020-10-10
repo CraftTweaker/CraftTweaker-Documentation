@@ -4,10 +4,10 @@ This interface is extended by all events that can be processed.
 These events are to be set as processed after everything they are made for has been completed and other event handlers should not change the event any more.  
 Bear in mind that they still can!
 
-## Importing the class
+## Импорт класса
 
-It might be required to [import](/AdvancedFunctions/Import/) the class to avoid errors.  
-`import crafttweaker.event.IPlayerEvent;`
+Может понадобиться [импортировать](/AdvancedFunctions/Import/) класс для избежания ошибок:  
+`import crafttweaker.event.IPlayerEvent`
 
 ## What can be done with these
 

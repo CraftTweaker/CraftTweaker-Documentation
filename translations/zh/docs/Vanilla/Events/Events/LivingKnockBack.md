@@ -17,7 +17,7 @@ LivingKnockBack Events implement the following interfaces and are able to call a
 ## ZenGetters/ZenSetters
 The following information can be retrieved/set during the event:
 
-| ZenGetter          | ZenSetter  | Type                                  |
+| ZenGetter          | ZenSetter  | 类型                                    |
 | ------------------ | ---------- | ------------------------------------- |
 | `attacker`         | `attacker` | [IEntity](/Vanilla/Entities/IEntity/) |
 | `originalAttacker` |            | [IEntity](/Vanilla/Entities/IEntity/) |

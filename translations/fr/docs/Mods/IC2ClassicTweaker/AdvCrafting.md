@@ -25,7 +25,7 @@ mods.ic2.AdvRecipes.addShaped(output,inputs);
 This creates a shaped recipe for `output` using `inputs` as Ingredients.
 
 `output` is an [IItemStack](/Vanilla/Items/IItemStack/)  
-`inputs` is an [IIngredient](/Vanilla/Variable_Types/IIngredient/)\[][\] (see below)
+`inputs` is an [IIngredient](/Vanilla/Variable_Types/IIngredient/)\[]\[\\] (see below)
 
 `inputs` is a 2 Dimensional [IIngredient](/Vanilla/Variable_Types/IIngredient/) Array.  
 So the recipe for Iron Leggings would be written as `[[iron,iron,iron],[iron,null,iron],[iron,null,iron]]`  

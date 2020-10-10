@@ -29,6 +29,6 @@ Afterwards restart your command prompt or your computer.
 
 Technically, this is not required but it makes some commands easier.
 
-## How to continue
+## 下一步该做什么
 
 Now that you have installed git you can [clone your forked repository](/Contribute/LocalClone/Clone/).

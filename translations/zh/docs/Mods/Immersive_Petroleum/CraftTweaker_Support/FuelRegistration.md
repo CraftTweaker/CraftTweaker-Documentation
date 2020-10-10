@@ -4,10 +4,10 @@
 
 ### registerMotorboatFuel
 
-| 类型    | 数据类型                                         |
-| ----- | -------------------------------------------- |
-| Input | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
-| mB/t  | Integer                                      |
+| 类型   | 数据类型                                         |
+| ---- | -------------------------------------------- |
+| 输入   | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
+| mB/t | 整型                                           |
 
 #### Code Example:
 
@@ -20,11 +20,11 @@ mods.immersivepetroleum.Motorboat.registerMotorboatFuel(<liquid:water>, 5);
 
 ### registerPortableGenFuel
 
-| Type   | Data Type                                    |
+| 类型     | 数据类型                                         |
 | ------ | -------------------------------------------- |
-| Input  | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
-| Flux/t | Integer                                      |
-| mB/t   | Integer                                      |
+| 输入     | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
+| Flux/t | 整型                                           |
+| mB/t   | 整型                                           |
 
 #### Code Example:
 

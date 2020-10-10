@@ -15,7 +15,7 @@ import extrautilities2.Tweaker.IMachineRegistry;
 
 There are two types of machines:
 
-- Machines
+- 机器
 - Generators
 
 Machines consume energy, generators emit energy, otherwise they behave almost identically.

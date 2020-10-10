@@ -2,7 +2,7 @@
 
 ## registerReservoir
 
-| Type            | Data Type                                    |
+| Тип             | Data Type                                    |
 | --------------- | -------------------------------------------- |
 | Name Identifier | String                                       |
 | Fluid           | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |

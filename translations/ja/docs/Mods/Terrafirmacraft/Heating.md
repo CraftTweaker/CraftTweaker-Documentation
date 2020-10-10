@@ -2,7 +2,7 @@
 
 ## Package
 ```zenscript
-import mods.terrafirmacraft.Heating;
+import mods.terrafirmacraft.Heating;Heating;
 ```
 
 ## 追加

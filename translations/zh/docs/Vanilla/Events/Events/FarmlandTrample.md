@@ -20,7 +20,7 @@ FarmlandTrample Events implement the following interfaces and are able to call a
 ## ZenGetters
 The following information can be retrieved from the event:
 
-| ZenGetter      | ZenSetter | Type                                  |
-| -------------- | --------- | ------------------------------------- |
-| `entity`       |           | [IEntity](/Vanilla/Entities/IEntity/) |
-| `fallDistance` |           | float                                 |
+| ZenGetter | ZenSetter | 类型                                    |
+| --------- | --------- | ------------------------------------- |
+| `entity`  |           | [IEntity](/Vanilla/Entities/IEntity/) |
+| `下落距离`    |           | float                                 |

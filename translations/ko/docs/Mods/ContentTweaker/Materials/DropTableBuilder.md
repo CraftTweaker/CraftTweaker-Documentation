@@ -25,7 +25,7 @@ DropTableBuilder.newSlot() will create a new builder. \<builder\>.newSlot() will
 
 #### `addItem(String itemStr[, int weight[, int count]])`
 
-`itemStr` can be an item's name like \<mod\>:\<item\>:\<meta\>, an ore dictionary entry like oredict:\<entry\>, or the word empty. `weight` controls how likely the item is to drop using the formula \<item weight\>/\<sum of item weights within slot\>. Defaults to 1 if omitted. `count` is how many of the item drop if selected. Defaults to 1 if omitted.
+`itemStr` can be an item's name like \<mod\>:\<item\>:\<meta\>, an ore dictionary entry like oredict:\<entry\>, or the word empty. `weight` controls how likely the item is to drop using the formula \<item weight\>/\<sum of item weights within slot\>을 이용하여 정의합니다. Defaults to 1 if omitted. `count` is how many of the item drop if selected. Defaults to 1 if omitted.
 
 #### `enableFortune()`
 

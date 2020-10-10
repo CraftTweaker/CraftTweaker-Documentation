@@ -3,7 +3,7 @@
 A living Entity is one that has health and that can die.  
 That means Monsters, Animals but also [IPlayers](/Vanilla/Players/IPlayer/).
 
-## Importing the package
+## Импорт пакета
 
 It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
 `import crafttweaker.entity.IEntityLivingBase;`
@@ -14,7 +14,7 @@ IEntityLivingBase extends [IEntity](/Vanilla/Entities/IEntity/). That means all 
 
 ## ZenGetters
 
-| ZenGetter              | Return Type (*can be null*)                            |
+| ZenGetter              | Возвращаемый тип (*может быть `null`*)                 |
 | ---------------------- | ------------------------------------------------------ |
 | activePotionEffects    | List<[IPotionEffect](/Vanilla/Potions/IPotionEffect/)> |
 | AIMovementSpeed        | float                                                  |
@@ -56,8 +56,9 @@ IEntityLivingBase extends [IEntity](/Vanilla/Entities/IEntity/). That means all 
 - [IItemStack](/Vanilla/Items/IItemStack/) getItemInSlot([IEntityEquipmentSlot](/Vanilla/Entities/IEntityEquipmentSlot/) slot);
 - [IPotionEffect](/Vanilla/Potions/IPotionEffect/) getActivePotionEffect(IPotion potion);
 - void addPotionEffect([IPotionEffect](/Vanilla/Potions/IPotionEffect/) potionEffect);
-- void clearActivePotions() → Removes all active [potions](/Vanilla/Potions/IPotion/) from the Entity
-- void knockBack([IEntity](/Vanilla/Entities/IEntity/) entity, float one, double two, double three);
+- void removePotionEffect([IPotion](/Vanilla/Potions/IPotion/) зелье);
+- void clearActivePotions() → Удаляет все активные [зелья](/Vanilla/Potions/IPotion/) из сущности
+- void knockBack([IEntity](/Vanilla/Entities/IEntity/) сущность, плавающая единица, двойной два, двойной три);
 - void onDeath();
 - void onLivingUpdate();
 - void setItemToSlot([IEntityEquipmentSlot](/Vanilla/Entities/IEntityEquipmentSlot/) slot, [IItemStack](/Vanilla/Items/IItemStack/) itemStack);

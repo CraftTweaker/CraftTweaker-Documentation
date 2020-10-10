@@ -1,6 +1,6 @@
 # 連想配列
 
-連想配列(しばしばMapやDictionaryとも称される)とは、複数の要素を格納できるという点において、通常の[配列](/AdvancedFunctions/Arrays_and_Loops/)と似ています。 [配列](/AdvancedFunctions/Arrays_and_Loops/)と異なる点は、好みの型をインデックス、もしくはキー(Mapではこう呼ぶ)に使うことができるところです。
+連想配列(しばしばMapやDictionaryとも称される)とは、複数の要素を格納できるという点において、通常の[配列](/AdvancedFunctions/Arrays_and_Loops/)と似ています。 [配列](/AdvancedFunctions/Arrays_and_Loops/)と異なる点は、好みの型をインデックス、もしくはキー(Mapではこう呼ぶ)に使うことができるところです。 [配列](/AdvancedFunctions/Arrays_and_Loops/)と異なる点は、好みの型をインデックス、もしくはキー(Mapではこう呼ぶ)に使うことができるところです。
 
 ## 連想配列の作り方
 
@@ -35,7 +35,7 @@ val myAssocArray = {
 違いは、インデックスには整数以外も使用できますが、配列を宣言する型は何でも可能です。
 
 ```zenscript
-<br />val dirt = <minecraft:dirt>;
+<br /><br />val dirt = <minecraft:dirt>;
 val assocArray = {
     <minecraft:dirt> : "This is me"
 } as string[IItemStack];
@@ -70,7 +70,7 @@ print(assocWithStrings["two"]);
 
 配列と同じく、`array[index] = newValue`を通して連想配列内の要素を操作することができます。  
 ただし、1つ大きな違いがあります。  
-配列は大きさが固定されていますが、連想配列はそうではありません。 すなわち、未使用のインデックスに要素を設定することによって、いつでもエントリを追加できます。
+配列は大きさが固定されていますが、連想配列はそうではありません。 すなわち、未使用のインデックスに要素を設定することによって、いつでもエントリを追加できます。 すなわち、未使用のインデックスに要素を設定することによって、いつでもエントリを追加できます。
 
 ```zenscript
 val changingArray = {
@@ -152,5 +152,6 @@ val myEntry = map.entrySet[0];
 
 
 myEntry.key;    //エントリのキーを返します
+myEntry.value;  //エントリの値を返します
 myEntry.value;  //エントリの値を返します
 ```

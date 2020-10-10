@@ -12,7 +12,7 @@ You can, of course, also [import](/AdvancedFunctions/Import/) the class before a
 
 The following information can be retrieved from the event:
 
-| ZenGetter   | Return Type                           |
+| ZenGetter   | 반환 타입                                 |
 | ----------- | ------------------------------------- |
 | `canceled`  | boolean                               |
 | `processed` | boolean                               |

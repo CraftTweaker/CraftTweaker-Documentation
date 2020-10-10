@@ -4,7 +4,7 @@
 
 `mods.actuallyadditions.MiningLens`
 
-## Addition
+## 加算
 
 ```zenscript
 //mods.actuallyadditions.MiningLens.addStoneOre(IOreDictEntry ore, int weight);

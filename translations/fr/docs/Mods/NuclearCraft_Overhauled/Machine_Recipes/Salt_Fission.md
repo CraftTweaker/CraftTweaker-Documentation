@@ -11,7 +11,7 @@ mods.nuclearcraft.SaltFission.addRecipe(ILiquidStack fluidInput, ILiquidStack fl
 
 ## Removing Recipes
 ```zenscript
-mods.nuclearcraft.SaltFission.removeRecipeWithInput(ILiquidStack fluidInput);
+mods.nuclearcraft.mods.nuclearcraft.SaltFission.removeRecipeWithInput(ILiquidStack fluidInput);
 mods.nuclearcraft.SaltFission.removeRecipeWithOutput(ILiquidStack fluidOutput);
-mods.nuclearcraft.SaltFission.removeAllRecipes();
+mods.nuclearcraft.
 ```

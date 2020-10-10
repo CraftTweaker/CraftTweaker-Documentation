@@ -107,14 +107,6 @@ val KArray = [<minecraft:wooden_axe>,<minecraft:golden_shovel>,<minecraft:emeral
 for item in IArray {
     //defines the variable "item" with each element of IArray (i.e. <minecraft:dirt>,<minecraft:planks>,<minecraft:diamond>)
     //Just use this variable now!
-    recipes.remove(item);
-}
-
-for i, item in IArray {
-    //defines the variable "i" with each element Number of IArray (i.e. 0,1,2,...)
-    //defines the variable "item" with each element of IArray (i.e. <minecraft:dirt>,<minecraft:planks>,<minecraft:diamond>)
-    //Just use these variables now!
-
     //Crafts Item of IArray using item of JArray and KArray (i.e. Dirt with grass and wooden axe, planks with wood and golden shovel, diamond with gold ingot and emerald)
     recipes.addShapeless(item,[JArray[i],KArray[i]]);
 }
@@ -124,7 +116,15 @@ for i in 0 to 10 {
     print(i);
 }
 
-for i in 10 .. 20 {
+for i in 10 ..
+
+    recipes.remove(item);
+}
+
+for i, item in IArray {
+    //defines the variable "i" with each element Number of IArray (i.e. 0,1,2,...)
+    //defines the variable "item" with each element of IArray (i.e. <minecraft:dirt>,<minecraft:planks>,<minecraft:diamond>)
+    //Just use these variables now! 20 {
     //defines the variable "i" with each number from 10 to 19 (i.e. 10,11,12,...,18,19)
     print(i);
 }

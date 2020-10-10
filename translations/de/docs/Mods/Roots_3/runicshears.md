@@ -4,7 +4,7 @@
 import mods.roots.RunicShears;
 ```
 
-#### Methods
+#### Methoden
 
 ```zenscript
 void addRecipe(
@@ -37,7 +37,7 @@ void removeRecipe(
 
 * * *
 
-### Examples
+### Beispiele
 
 ```zenscript
 import mods.roots.RunicShears;

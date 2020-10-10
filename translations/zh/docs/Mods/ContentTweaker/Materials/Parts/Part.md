@@ -24,7 +24,7 @@ You can either retrieve an existing Part using the [MaterialSystem](/Mods/Conten
             <li>Dense Plate (dense_plate)<img src="../Assets/dense_plate.png" alt="icon"></li>
             <li>Dirty Dust (dirty_dust)<img src="../Assets/dirty_dust.png" alt="icon"></li>
             <li>Dust<img src="../Assets/dust.png" alt="icon"></li>
-            <li>Gear<img src="../Assets/gear.png" alt="icon"></li>
+            <li>齿轮制作<img src="../Assets/gear.png" alt="icon"></li>
             <li>Ingot<img src="../Assets/ingot.png" alt="icon"></li>
             <li>Nugget<img src="../Assets/nugget.png" alt="icon"></li>
             <li>Plate<img src="../Assets/plate.png" alt="icon"></li>

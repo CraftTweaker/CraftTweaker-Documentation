@@ -10,7 +10,7 @@ If you ever feel the need to import this function's class, here you go:
 import mods.contenttweaker.IItemUpdate;
 ```
 
-## Syntax
+## 语句
 
 We have a void function that takes the following parameters (in order)
 

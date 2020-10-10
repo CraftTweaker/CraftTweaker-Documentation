@@ -38,11 +38,11 @@ This Annotation can have these arguments:
 You can even omit the getter/setter method alltogether if you use `@ZenProperty`.  
 If you do use those methods, however, you will need to add `@ZenMethod` should you want this functionality, if you omit the methods, they will be generated automatically.
 
-## Examples
+## Примеры
 
 ### ZenGetters Example
 
-[CraftTweaker's IOreDict](https://github.com/jaredlll08/CraftTweaker/blob/1.12/CraftTweaker2-API/src/main/java/crafttweaker/api/oredict/IOreDict.java)
+[IOreDict из CraftTweaker](https://github.com/jaredlll08/CraftTweaker/blob/1.12/CraftTweaker2-API/src/main/java/crafttweaker/api/oredict/IOreDict.java)
 
     @ZenClass("crafttweaker.oredict.IOreDict")
     @IterableSimple("crafttweaker.oredict.IOreDictEntry")

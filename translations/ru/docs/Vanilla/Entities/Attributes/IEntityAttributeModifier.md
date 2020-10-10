@@ -7,9 +7,9 @@ It might be required for you to import the package if you encounter any issues (
 
 ## ZenGetters
 
-| ZenGetter | GetterMethod   | Return Type |
-| --------- | -------------- | ----------- |
-| uuid      | getUUID()      | string      |
-| name      | getName()      | string      |
-| operation | getOperation() | int         |
-| amount    | getAmount()    | double      |
+| ZenGetter | GetterMethod   | Возвращаемый тип |
+| --------- | -------------- | ---------------- |
+| uuid      | getUUID()      | string           |
+| name      | getName()      | string           |
+| operation | getOperation() | int              |
+| amount    | getAmount()    | double           |

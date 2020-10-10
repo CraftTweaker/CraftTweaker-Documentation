@@ -21,7 +21,7 @@ PlayerFillBucket Events implement the following interfaces and are able to call 
 
 The following information can be retrieved from the event:
 
-| ZenGetter        | Return Type                                        |
+| ZenGetter        | 반환 타입                                              |
 | ---------------- | -------------------------------------------------- |
 | `canceled`       | boolean                                            |
 | `player`         | [IPlayer](/Vanilla/Players/IPlayer/)               |

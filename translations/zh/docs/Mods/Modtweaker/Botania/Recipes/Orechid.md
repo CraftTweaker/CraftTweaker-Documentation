@@ -22,7 +22,7 @@ mods.botania.Orechid.addOre(<ore:logWood>, 500);
 mods.botania.Orechid.addOre("logWood", 500);
 ```
 
-## Recipe removal
+## 删除配方
 
 You can either remove recipes using the returned [IOreDictEntry](/Vanilla/OreDict/IOreDictEntry/) as output parameter, or the name of said oreDictEntry as string.
 

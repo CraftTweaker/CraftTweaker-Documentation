@@ -60,7 +60,7 @@ worldObj.getBrightness(IBlockPos position);
 
 ### Get Block at specific Position
 
-Use either three ints or an [IBlockPos](/Vanilla/World/IBlockPos/) object. Returns an [IBlock](/Vanilla/Blocks/IBlock/) Object.
+Use either three ints or an [IBlockPos](/Vanilla/World/IBlockPos/) object. Use either three ints or an [IBlockPos](/Vanilla/World/IBlockPos/) object.
 
 ```zenscript
 worldObj.getBlock(int x, int y, int z);
@@ -96,4 +96,16 @@ Only the last parameter is true by default.
 
 ```zenscript
 worldObj.rayTraceBlocks(IVector3d begin, IVector3d ray, @Optional boolean stopOnLiquid, @Optional boolean ignoreBlockWithoutBoundingBox, @Optional(true) boolean returnLastUncollidableBlock)
+```
+
+### Récupère le bloc choisi
+
+Utilisez un [IBlockPos](/Vanilla/World/IBlockPos/), un [IRayTraceResult](/Vanilla/World/IRayTraceResult/) et un [IPlayer](/Vanilla/Players/IPlayer/).  
+Renvoie un [IItemStack](/Vanilla/Items/IItemStack/).  
+**Peut être null**
+
+Obtient la IItemStack qui serait obtenue en choisissant le bloc à la position.
+
+```zenscript
+worldObj.getPickedBlock(IBlockPos pos, IRayTraceResult rayTraceResult, joueur IPlayer) ;
 ```

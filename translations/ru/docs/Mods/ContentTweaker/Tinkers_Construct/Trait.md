@@ -10,7 +10,7 @@ It might be required for you to import the class if you encounter any issues (li
 
 ## ZenGetter
 
-| Геттер        | Type   |
+| Геттер        | Тип    |
 | ------------- | ------ |
 | identifier    | string |
 | commandString | string |

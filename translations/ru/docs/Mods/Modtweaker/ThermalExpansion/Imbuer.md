@@ -4,7 +4,7 @@
 
 `mods.thermalexpansion.Imbuer`
 
-## Addition
+## Сложение
 
 ```zenscript
 mods.thermalexpansion.Imbuer.addRecipe(ILiquidStack output, IItemStack input, ILiquidStack inputFluid, int energy);

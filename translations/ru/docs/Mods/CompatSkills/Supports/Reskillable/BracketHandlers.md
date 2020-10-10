@@ -1,6 +1,6 @@
-# Bracket Handlers
+# Обработчики скобок
 
-## Bracket Handlers
+## Обработчики скобок
 
 ### Skill Bracket Handler:
 

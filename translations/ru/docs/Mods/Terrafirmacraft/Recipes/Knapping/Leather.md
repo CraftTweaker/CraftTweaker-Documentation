@@ -5,7 +5,7 @@
 import mods.terrafirmacraft.leatherKnapping;
 ```
 
-## Addition
+## Сложение
 
 ```zenscript
 leatherKnapping.addRecipe(String registryName, IItemStack output, String... pattern);

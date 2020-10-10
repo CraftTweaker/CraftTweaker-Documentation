@@ -60,7 +60,7 @@ After you have called this function, you cannot un-register the fluid or change 
 fluid.register();
 ```
 
-## Example Script
+## 示例脚本
 
 ```zenscript
 #loader contenttweaker

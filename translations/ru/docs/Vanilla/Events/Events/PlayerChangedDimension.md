@@ -2,13 +2,13 @@
 
 The PlayerChangedDimension Event is fired whenever a [player's](/Vanilla/Players/IPlayer/) [dimension/world](/Vanilla/World/IWorld/) changes, for example upon entering/leaving the nether.
 
-## Event Class
+## Класс события
 
 You will need to cast the event in the function header as this class:  
 `crafttweaker.event.PlayerChangedDimensionEvent`  
 You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
 
-## Event interface extensions
+## Наследование от интерфейсов событий
 
 PlayerChandedDimension Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
 
@@ -16,9 +16,9 @@ PlayerChandedDimension Events implement the following interfaces and are able to
 
 ## ZenGetters
 
-The following information can be retrieved from the event:
+Следующая информация может быть получена от события:
 
-| ZenGetter   | Return Type                          |
+| ZenGetter   | Возвращаемый тип                     |
 | ----------- | ------------------------------------ |
 | `player`    | [IPlayer](/Vanilla/Players/IPlayer/) |
 | `from`      | int                                  |

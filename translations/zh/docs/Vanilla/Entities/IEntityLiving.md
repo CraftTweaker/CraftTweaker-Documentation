@@ -12,11 +12,11 @@ It might be required for you to import the package if you encounter any issues (
 
 IEntityLiving extends [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/). That means all functions available to [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) objects also are available to IEntityLiving objects.
 
-## Methods
+## 方法
 
 ### ZenGetters/ZenSetters
 
-| ZenGetter           | ZenSetter     | Type                                                      |
+| ZenGetter           | ZenSetter     | 类型                                                        |
 | ------------------- | ------------- | --------------------------------------------------------- |
 | attackInterval      |               | int                                                       |
 | attackTarget        | attackTarget  | [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) |

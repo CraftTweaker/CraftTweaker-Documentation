@@ -18,7 +18,7 @@ ProjectileImpactFireball Events implement the following interfaces and are able 
 
 The following information can be retrieved from the event:
 
-| ZenGetter       | ZenSetter       | Type                                                      |
+| ZenGetter       | ZenSetter       | 类型                                                        |
 | --------------- | --------------- | --------------------------------------------------------- |
 | `fireball`      |                 | [IEntity](/Vanilla/Entities/IEntity/)                     |
 | `shooter`       |                 | [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) |

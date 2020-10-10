@@ -4,7 +4,7 @@ The Washing Machine allows you to clean dirty clothes.
 
 By default repairs durability of vanilla armour, including the Elytra.
 
-## Removing
+## 移除配方
 
 ## Remove matching washable items.
 
@@ -20,7 +20,7 @@ mods.cfm.WashingMachine.remove(<minecraft:chainmail_boots>);
 mods.cfm.WashingMachine.remove();
 ```
 
-## Adding
+## 添加
 
 ## Add a washable item.
 

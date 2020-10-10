@@ -2,7 +2,7 @@
 
 ## Package
 ```zenscript
-import mods.terrafirmacraft.Barrel;
+import mods.terrafirmacraft.Barrel;Barrel;
 ```
 
 ## 追加

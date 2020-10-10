@@ -58,7 +58,7 @@ What the parameters do:
 You can get basic information from an IMachineSlot as well.  
 Don't expect these getters to magically return something different from what you set the slot when creating it, though.
 
-| Name          | Type   |
+| 이름            | Type   |
 | ------------- | ------ |
 | name          | string |
 | optional      | bool   |

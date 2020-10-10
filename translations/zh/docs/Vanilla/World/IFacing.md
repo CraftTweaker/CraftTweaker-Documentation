@@ -24,7 +24,7 @@ crafttweaker.world.Facing.up()
 crafttweaker.world.Facing.fromString(String name);
 ```
 
-## ZenGetters/ZenMethods without parameters
+## 不带参数的 ZenGetters/ZenMethods
 
 | ZenGetter | ZenMethod  | 返回值类型   |
 | --------- | ---------- | ------- |

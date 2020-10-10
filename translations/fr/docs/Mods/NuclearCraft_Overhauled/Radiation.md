@@ -29,9 +29,9 @@ mods.nuclearcraft.RadiationBlockMutation.addRecipe(IIngredient blockInput, IIngr
 
 ### Removing Recipes
 ```zenscript
-mods.nuclearcraft.RadiationBlockMutation.removeRecipeWithInput(IIngredient blockInput);
+mods.nuclearcraft.mods.nuclearcraft.RadiationBlockMutation.removeRecipeWithInput(IIngredient blockInput);
 mods.nuclearcraft.RadiationBlockMutation.removeRecipeWithOutput(IIngredient blockOutput);
-mods.nuclearcraft.RadiationBlockMutation.removeAllRecipes();
+mods.nuclearcraft.
 ```
 
 ## Block Purification
@@ -46,9 +46,9 @@ mods.nuclearcraft.RadiationBlockPurification.addRecipe(IIngredient blockInput, I
 
 ### Removing Recipes
 ```zenscript
-mods.nuclearcraft.RadiationBlockPurification.removeRecipeWithInput(IIngredient blockInput);
+mods.nuclearcraft.mods.nuclearcraft.RadiationBlockPurification.removeRecipeWithInput(IIngredient blockInput);
 mods.nuclearcraft.RadiationBlockPurification.removeRecipeWithOutput(IIngredient blockOutput);
-mods.nuclearcraft.RadiationBlockPurification.removeAllRecipes();
+mods.nuclearcraft.
 ```
 
 ## Entity Radiation

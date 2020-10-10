@@ -43,22 +43,27 @@ The Crucible has a recipe builder that allows more precise control over the reci
 * Crucible methods
      
      * Sets up the inputs and outputs of the recipe  
+          zenscript buildRecipe(IIngredient[] inputs, IItemStack[] outputs)  
               zenscript
               buildRecipe(IIngredient[] inputs, IItemStack[] outputs)
      
      * Sets the priority of the recipe, the lower the priority the sooner it will be crafted. Default=0.  
+          zenscript setPriority(int priority)  
               zenscript
               setPriority(int priority)
      
      * Set the Heat requirements of the recipe. Heat is used to check if the recipe can be made in a stoked or unstoked Crucible. Unstoked heat = 1, Stoked heat = 2. You can add custom heat sources, and even custom heat levels using the [Heat Registry](/Mods/Modtweaker/BetterWithMods/HeatRegistry/).  
+          zenscript setHeat(int heat)  
               zenscript
               setHeat(int heat)
      
      * Set the recipe to ignore the heat value and craft anyways  
+          zenscript setIgnoreHeat(boolean ignoreHeat)  
               zenscript
               setIgnoreHeat(boolean ignoreHeat)
      
      * Finalize the recipe and add it to the game  
+          zenscript build()  
               zenscript
               build()
 

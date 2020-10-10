@@ -50,7 +50,7 @@ myTrait.removeItem(<item:minecraft:iron_pickaxe>);
 - `amountMatched` is the amount of trait points added per `amountNeeded`. In the example above four iron blocks give two trait points. Defaults to 1.
 - If you use the `remove function`, it will remove all trait ingredients that match for the item.
 
-## Properties
+## 参数
 
 You can set and get these properties using the names given:
 
@@ -447,7 +447,7 @@ myTrait.onToolRepair = function(trait, tool, amount) {
 };
 ```
 
-## Example
+## 例子
 
 ```zenscript
 #loader contenttweaker

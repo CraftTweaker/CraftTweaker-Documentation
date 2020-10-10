@@ -1,4 +1,4 @@
-### Class
+### Класс
 
 ```zenscript
 import mods.arcanearchives.GCT;
@@ -34,7 +34,7 @@ void replaceRecipe(
 
 * * *
 
-### Examples
+### Примеры
 
 ```zenscript
 import mods.arcanearchives.GCT;

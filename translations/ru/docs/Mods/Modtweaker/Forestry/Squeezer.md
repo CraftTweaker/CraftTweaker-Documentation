@@ -24,7 +24,7 @@ mods.forestry.Squeezer.removeRecipe(<liquid:seed.oil>, [<minecraft:wheat_seeds>]
 mods.forestry.Squeezer.addRecipe(<liquid:lava>, [<minecraft:obsidian>], 120, <minecraft:redstone> % 20);
 ```
 
-| Parameter   | Type                                                   | description                                   |
+| Параметр    | Тип                                                    | description                                   |
 | ----------- | ------------------------------------------------------ | --------------------------------------------- |
 | fluidOutput | [ILiquidStack](/Vanilla/Liquids/ILiquidStack/)         | The Recipe's output                           |
 | ingredients | [IItemStack](/Vanilla/Items/IItemStack/)[]             | The Recipe's item input(s)                    |

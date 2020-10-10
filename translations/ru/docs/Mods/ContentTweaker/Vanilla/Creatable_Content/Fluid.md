@@ -32,7 +32,7 @@ fluid.getDensity();
 fluid.setDensity(1000);
 ```
 
-| Property Name   | Type                                                                                     | Required | Default Value                    | Description/Notes                                                                    |
+| Property Name   | Тип                                                                                      | Required | Default Value                    | Description/Notes                                                                    |
 | --------------- | ---------------------------------------------------------------------------------------- | -------- | -------------------------------- | ------------------------------------------------------------------------------------ |
 | unlocalizedName | string                                                                                   | Yes      |                                  | Name, should be all lowercase                                                        |
 | density         | int                                                                                      | No       | 1000                             | How fast you can walk in the fluid                                                   |

@@ -2,7 +2,7 @@
 
 ## registerLubricant
 
-| Type     | Data Type                                    |
+| Тип      | Data Type                                    |
 | -------- | -------------------------------------------- |
 | Input    | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
 | mB/4tick | Integer                                      |

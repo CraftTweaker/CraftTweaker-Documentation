@@ -25,7 +25,7 @@ var builder = HighOven.newMixRecipe(<liquid:steel> * 72, <liquid:iron> * 144, 13
 
 ## Attributes
 
-| Attribute   | ZenGetter   | ZenSetter            | Type                      | Info                                                                     |
+| Attribute   | ZenGetter   | ZenSetter            | Тип                       | Info                                                                     |
 | ----------- | ----------- | -------------------- | ------------------------- | ------------------------------------------------------------------------ |
 | output      | `output`    | :heavy_check_mark: | `ILiquidStack`            | the output produced by the MixRecipe                                     |
 | input       | `input`     | :heavy_check_mark: | `ILiquidStack`            | the input of the MixRecipe                                               |
@@ -37,7 +37,7 @@ var builder = HighOven.newMixRecipe(<liquid:steel> * 72, <liquid:iron> * 144, 13
 
 ## Methods
 
-| Method                                                 | Return type        | Info                                                                                      |
+| Метод                                                  | Return type        | Info                                                                                      |
 | ------------------------------------------------------ | ------------------ | ----------------------------------------------------------------------------------------- |
 | `getOxidizerChance(IIngredient oxidizer)`              | `int`              | The chance in percent that the oxidizer is consumed, or `-1` if the oxidizer is not valid |
 | `getReducerChance(IIngredient reducer)`                | `int`              | The chance in percent that the reducer is consumed, or `-1` if the reducer is not valid   |

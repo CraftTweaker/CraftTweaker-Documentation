@@ -22,7 +22,7 @@ ilt().clear()
 addRecipe(input: IItemStack, output: ILiquidStack)
 ```
 
-##### Example
+##### Пример
 
 ```zenscript
 ilt().addRecipe(<minecraft:bucket>, <liquid:lava> * 125);

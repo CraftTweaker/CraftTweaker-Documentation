@@ -4,7 +4,7 @@
 
 `mods.thermalexpansion.Enchanter`
 
-## Addition
+## 加算
 
 ```zenscript
 mods.thermalexpansion.Enchanter.addRecipe(IItemStack output, IItemStack input, IItemStack secondInput, int energy, int experience, boolean empowered);

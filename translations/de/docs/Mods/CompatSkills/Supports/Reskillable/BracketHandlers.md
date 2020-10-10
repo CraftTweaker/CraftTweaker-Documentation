@@ -1,6 +1,6 @@
-# Bracket Handlers
+# Bracket-Handler
 
-## Bracket Handlers
+## Bracket-Handler
 
 ### Skill Bracket Handler:
 

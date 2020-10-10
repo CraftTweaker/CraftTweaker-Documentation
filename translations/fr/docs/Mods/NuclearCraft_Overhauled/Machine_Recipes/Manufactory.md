@@ -10,7 +10,7 @@ mods.nuclearcraft.Manufactory.addRecipe(IIngredient itemInput, IIngredient itemO
 
 ## Removing Recipes
 ```zenscript
-mods.nuclearcraft.Manufactory.removeRecipeWithInput(IIngredient itemInput);
+mods.nuclearcraft.mods.nuclearcraft.Manufactory.removeRecipeWithInput(IIngredient itemInput);
 mods.nuclearcraft.Manufactory.removeRecipeWithOutput(IIngredient itemOutput);
-mods.nuclearcraft.Manufactory.removeAllRecipes();
+mods.nuclearcraft.
 ```

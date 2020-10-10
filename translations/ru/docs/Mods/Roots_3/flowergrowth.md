@@ -1,4 +1,4 @@
-### Class
+### Класс
 
 ```zenscript
 import mods.roots.FlowerGrowth;
@@ -33,7 +33,7 @@ void addRecipeBlock(
 
 * * *
 
-### Examples
+### Примеры
 
 ```zenscript
 import mods.roots.FlowerGrowth;

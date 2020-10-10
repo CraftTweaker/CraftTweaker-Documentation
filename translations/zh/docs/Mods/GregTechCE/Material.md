@@ -46,15 +46,15 @@
 
 `FluidMaterial` is a material which contains fluid features. Its superclass is `Material` so all members in `Material` is still available.
 
-Properties:
+参数：
 
-| Name             | Type | Description |
-| ---------------- | ---- | ----------- |
-| fluidTemperature | int  |             |
+| 名称               | 类型  | 描述 |
+| ---------------- | --- | -- |
+| fluidTemperature | int |    |
 
-Getters:
+取值器：
 
-| Name      | Type                                                       | Description           |
+| 名称        | 类型                                                         | 描述                    |
 | --------- | ---------------------------------------------------------- | --------------------- |
 | hasFluid  | bool                                                       |                       |
 | hasPlasma | bool                                                       |                       |
@@ -66,9 +66,9 @@ Getters:
 
 `DustMaterial` is a material which contains dust features. Its superclass is `FluidMaterial` so all members in `FluidMaterial` is still available.
 
-Properties:
+参数：
 
-| Name                | Type          | Description                                                                                                                                  |
+| 名称                  | 类型            | 描述                                                                                                                                           |
 | ------------------- | ------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
 | oreMultiplier       | int           | Crushed ore output amount multiplier during maceration                                                                                       |
 | byProductMultiplier | int           | Byproducts output amount multiplier during pulverization                                                                                     |
@@ -78,9 +78,9 @@ Properties:
 | separatedInto       | DustMaterial  | During electromagnetic separation, this material ore will be separated onto this material and material specified by this field               |
 | burnTime            | int           | Burn time of this material when used as fuel in furnace smelting, Zero or negative value indicates that this material cannot be used as fuel |
 
-Getters:
+取值器：
 
-| Name          | Type                | Description                                         |
+| 名称            | 类型                  | 描述                                                  |
 | ------------- | ------------------- | --------------------------------------------------- |
 | oreByProducts | List<fluidmaterial> | List of ore by products                             |
 | harvestLevel  | int                 | Tool level needed to harvest block of this material |
@@ -89,27 +89,27 @@ Getters:
 
 `SolidMaterial` is a material which contains solid features. Its superclass is `DustMaterial` so all members in `DustMaterial` is still available.
 
-Properties:
+参数：
 
-| Name           | Type          | Description                                                                                          |
+| 名称             | 类型            | 描述                                                                                                   |
 | -------------- | ------------- | ---------------------------------------------------------------------------------------------------- |
 | handleMaterial | SolidMaterial | Material specified here will be required as handle to make tool from this material                   |
 | macerateInto   | DustMaterial  | Macerating any item of this material will result material specified in this field, default to itself |
 
-Getters:
+取值器：
 
 <table>
   <tr>
     <th>
-      Name
+      名称
     </th>
     
     <th>
-      Type
+      类型
     </th>
     
     <th>
-      Description
+      描述
     </th>
   </tr>
   
@@ -188,7 +188,7 @@ material.addToolEnchantment(<enchantment:minecraft:fortune> * 1); // Create a en
 
 These flags are applicable to materials.
 
-| Name (case-insensitive)           | Description                                                                                                                                                                                                                                         |
+| Name (case-insensitive)           | 描述                                                                                                                                                                                                                                                  |
 | --------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | DECOMPOSITION_BY_ELECTROLYZING  | Enables electrolyzer decomposition recipe generation                                                                                                                                                                                                |
 | DECOMPOSITION_BY_CENTRIFUGING   | Enables centrifuge decomposition recipe generation                                                                                                                                                                                                  |
@@ -285,7 +285,7 @@ MaterialRegistry.createGemMaterial(int metaItemSubId, String name, int color, St
 MaterialRegistry.createIngotMaterial(int metaItemSubId, String name, int color, String iconSet, int harvestLevel, @Optional MaterialStack[] materialComponents, @Optional float toolSpeed, @Optional int toolDurability, @Optional int blastFurnaceTemperature);
 ```
 
-### Example
+### 例子
 
 ```zenscript
 #loader gregtech

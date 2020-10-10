@@ -18,7 +18,7 @@ StoneKnapping.removeRecipe(IItemStack output);
 StoneKnapping.removeRecipe(String registryName);
 ```
 
-## Examples
+## Beispiele
 
 ```zenscript
 // Gives a stone hoe in all rocks.

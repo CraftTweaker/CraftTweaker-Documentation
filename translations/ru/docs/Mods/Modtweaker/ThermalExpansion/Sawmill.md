@@ -4,7 +4,7 @@
 
 `mods.thermalexpansion.Sawmill`
 
-## Addition
+## Сложение
 
 ```zenscript
 mods.thermalexpansion.Sawmill.addRecipe(IItemStack output, IItemStack input, int energy, @Optional IItemStack secondaryOutput, @Optional int secondaryChance);

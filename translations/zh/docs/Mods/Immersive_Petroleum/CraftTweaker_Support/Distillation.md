@@ -6,18 +6,18 @@ The Distillation "addRecipe" method consists of:
 
 | 类型            | 数据类型                                                 |
 | ------------- | ---------------------------------------------------- |
-| Output        | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) Array[] |
+| 输出            | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) Array[] |
 | 输出            | [ItemStack](/Vanilla/Items/IItemStack/) Array[]      |
-| Input         | [Fluidstack](/Vanilla/Liquids/ILiquidStack/)         |
-| Flux/t        | Integer                                              |
-| Time in Ticks | Integer                                              |
+| 输入            | [Fluidstack](/Vanilla/Liquids/ILiquidStack/)         |
+| Flux/t        | 整型                                                   |
+| Time in Ticks | 整型                                                   |
 | Chance        | Float Array []                                       |
 
 ### Preface:
 
 Each ItemStack Entry is linked to the corresponding "Chance" array entry.
 
-Example:
+比如：
 
 ```zenscript
 [<minecraft:diamond>, <minecraft:leather> * 2]

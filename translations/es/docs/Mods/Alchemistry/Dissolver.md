@@ -1,7 +1,7 @@
 # Dissolver
 
 ## Package
-`mods.alchemistry.Dissolver`
+`mods.alchemistry.DissolverDissolver`
 
 ## Metodos
 - **[IItemStack](/Vanilla/Items/IItemStack/) input** - The input of the recipe.
@@ -11,7 +11,8 @@
 
 ## Addition
 ```zenscript
-mods.alchemistry.Dissolver.addRecipe(IIngredient input, boolean relativeProbability, int rolls, Object[][] probabilityGroups);
+mods.alchemistry.AtomizerDissolver.addRecipe(IIngredient input, boolean relativeProbability, int rolls, Object[][] probabilityGroups);
+mods.alchemistry.mods.alchemistry.Dissolver.addRecipe(IIngredient input, boolean relativeProbability, int rolls, Object[][] probabilityGroups);
 mods.alchemistry.Dissolver.addRecipe(<minecraft:dye:9>, false, 5,
 [[10, <minecraft:stone>], 
  [20, <minecraft:sand>,<minecraft:iron_ore>]]);
@@ -19,10 +20,11 @@ mods.alchemistry.Dissolver.addRecipe(<minecraft:dye:9>, false, 5,
 
 ## Removal
 ```zenscript
-mods.alchemistry.Dissolver.removeRecipe(IIngredient input);
+mods.alchemistry.AtomizerDissolver.removeRecipe(IIngredient input);
+mods.alchemistry.mods.alchemistry.Dissolver.removeRecipe(IIngredient input);
 mods.alchemistry.Dissolver.removeRecipe(<minecraft:ender_pearl>);
 
-mods.alchemistry.Dissolver.removeAllRecipes();
+mods.alchemistry.Dissolver.removeAllRecipes();Dissolver.removeAllRecipes();
 ```
 
 # Notes

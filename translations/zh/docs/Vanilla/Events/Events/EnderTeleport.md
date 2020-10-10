@@ -20,7 +20,7 @@ LivingEntityUseItem Events implement the following interfaces and are able to ca
 
 The following information can be retrieved/set during the event:
 
-| ZenGetter      | ZenSetter      | Type   |
+| ZenGetter      | ZenSetter      | 类型     |
 | -------------- | -------------- | ------ |
 | `targetX`      | `targetX`      | double |
 | `targetY`      | `targetY`      | double |

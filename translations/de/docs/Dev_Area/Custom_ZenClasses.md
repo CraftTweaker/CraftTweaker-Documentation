@@ -24,7 +24,7 @@ These are keywords that can be found in the class' body and they will initiate a
 A commented example:
 
 ```zenscript
-<br />//Creates a class named 'name', you can also access it using scripts.scriptPath.name
+<br /><br />//Creates a class named 'name', you can also access it using scripts.scriptPath.name
 
 
 zenClass name {

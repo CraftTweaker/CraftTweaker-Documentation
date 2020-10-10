@@ -19,7 +19,7 @@ val stone = <ticmat:stone>;
 
 You can get/set the following fields:
 
-| ZenGetter         | ZenSetter         | Return/Setter Type                                                                   | Description                                                       |
+| ZenGetter         | ZenSetter         | Return/Setter Type                                                                   | 描述                                                                |
 | ----------------- | ----------------- | ------------------------------------------------------------------------------------ | ----------------------------------------------------------------- |
 | getName           |                   | string                                                                               | The Material's Name                                               |
 | definition        |                   | [IMaterialDefinition](/Mods/Modtweaker/TConstruct/Materials/ITICMaterialDefinition/) | The Material's Definition                                         |
@@ -35,6 +35,6 @@ You can get/set the following fields:
 | fletchingModifier | fletchingModifier | float                                                                                | Fletchungs made from this material have this durability modifier  |
 | fletchingAccuracy | fletchingAccuracy | float                                                                                | Fletchungs made from this material provide this accuracy          |
 
-## Methods
+## 方法
 
 - boolean matches(ITICMaterial other); → returns if the given material is equal to `other`

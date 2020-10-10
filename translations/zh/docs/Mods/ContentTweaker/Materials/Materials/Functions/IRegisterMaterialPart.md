@@ -10,7 +10,7 @@ If you ever feel the need to import this function's class, here you go:
 import mods.contenttweaker.RegisterMaterialPart;
 ```
 
-## Syntax
+## 语句
 
 We have a void function, that takes a [Material Part](/Mods/ContentTweaker/Materials/Materials/MaterialPart/) as input.  
 This is the materialPart that should be registered.  

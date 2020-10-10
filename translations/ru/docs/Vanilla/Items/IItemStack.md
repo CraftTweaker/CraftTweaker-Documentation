@@ -57,41 +57,42 @@ That means all functionality that is available to [IIngredient](/Vanilla/Variabl
 
 Можете прочитать, как их использовать [здесь](/UsingThisWiki/). Также, можете проверить примеры ниже.
 
-| Геттер/метод       | Сеттер/метод | Тип                                                         |
-| ------------------ | ------------ | ----------------------------------------------------------- |
-| definition         |              | [IItemDefinition](/Vanilla/Items/IItemDefinition/)          |
-| name               |              | string                                                      |
-| displayName        | displayName  | string                                                      |
-| maxStackSize       | maxStackSize | int                                                         |
-| hardness           | hardness     | float                                                       |
-| damage             |              | int                                                         |
-| maxDamage          | maxDamage    | int                                                         |
-| hasTag             |              | bool                                                        |
-| tag                | withTag(tag) | [IData](/Vanilla/Data/IData/)                               |
-| ores               |              | List<[IOreDictEntry](/Vanilla/OreDict/IOreDictEntry/)\>    |
-| toolClasses        |              | List<string\>                                              |
-| itemEnchantability |              | int                                                         |
-| containerItem      |              | IItemStack                                                  |
-| hasContainerItem   |              | bool                                                        |
-| repairCost         | repairCost   | int                                                         |
-| canEditBlocks      |              | bool                                                        |
-| isOnItemFrame      |              | bool                                                        |
-| isEnchantable      |              | bool                                                        |
-| isEnchanted        |              | bool                                                        |
-| isDamaged          |              | bool                                                        |
-| isDamageable       |              | bool                                                        |
-| isItemBlock        |              | bool (if contained item is an itemblock)                    |
-| isStackable        |              | bool                                                        |
-| isBeaconPayment    |              | bool                                                        |
-| hasEffect          |              | bool                                                        |
-| hasDisplayName     |              | bool                                                        |
-| metadata           |              | int                                                         |
-| hasSubtypes        |              | bool                                                        |
-| isEmpty            |              | bool                                                        |
-| burnTime           |              | int                                                         |
-| showsDurabilityBar |              | bool                                                        |
-| hasCustomEntity    |              | bool                                                        |
-| enchantments       |              | List<[IEnchantment](/Vanilla/Enchantments/IEnchantment/)\> |
+| Геттер/метод          | Сеттер/метод | Тип                                                         |
+| --------------------- | ------------ | ----------------------------------------------------------- |
+| definition            |              | [IItemDefinition](/Vanilla/Items/IItemDefinition/)          |
+| name                  |              | string                                                      |
+| displayName           | displayName  | string                                                      |
+| maxStackSize          | maxStackSize | int                                                         |
+| hardness              | hardness     | float                                                       |
+| damage                |              | int                                                         |
+| maxDamage             | maxDamage    | int                                                         |
+| hasTag                |              | bool                                                        |
+| tag                   | withTag(tag) | [IData](/Vanilla/Data/IData/)                               |
+| ores                  |              | List<[IOreDictEntry](/Vanilla/OreDict/IOreDictEntry/)\>    |
+| toolClasses           |              | List<string\>                                              |
+| itemEnchantability    |              | int                                                         |
+| containerItem         |              | IItemStack                                                  |
+| hasContainerItem      |              | bool                                                        |
+| repairCost            | repairCost   | int                                                         |
+| canEditBlocks         |              | bool                                                        |
+| isOnItemFrame         |              | bool                                                        |
+| isEnchantable         |              | bool                                                        |
+| isEnchanted           |              | bool                                                        |
+| isDamaged             |              | bool                                                        |
+| isDamageable          |              | bool                                                        |
+| isItemBlock           |              | bool (if contained item is an itemblock)                    |
+| isStackable           |              | bool                                                        |
+| isBeaconPayment       |              | bool                                                        |
+| hasEffect             |              | bool                                                        |
+| hasDisplayName        |              | bool                                                        |
+| metadata              |              | int                                                         |
+| hasSubtypes           |              | bool                                                        |
+| isEmpty               |              | bool                                                        |
+| burnTime              |              | int                                                         |
+| showsDurabilityBar    |              | bool                                                        |
+| hasCustomEntity       |              | bool                                                        |
+| enchantments          |              | List<[IEnchantment](/Vanilla/Enchantments/IEnchantment/)\> |
+| совпадающий Тег Точно |              | bool                                                        |
 
 #### Количество
 
@@ -112,46 +113,48 @@ That means all functionality that is available to [IIngredient](/Vanilla/Variabl
 
 #### Damage
 
-| Method call                                    | Returns                                    | ParameterTypes                             |
-| ---------------------------------------------- | ------------------------------------------ | ------------------------------------------ |
-| `stack.anyDamage()`                            | A new IItemStack with the changed property |                                            |
-| `stack.withDamage(int damage)`                 | A new IItemStack with the changed property | int                                        |
-| `stack.damageItem(int amount, IEntity entity)` | void (nothing)                             | int, [IEntity](/Vanilla/Entities/IEntity/) |
+| Вызов метода                                   | Возвращает                              | Типы параметров                            |
+| ---------------------------------------------- | --------------------------------------- | ------------------------------------------ |
+| `stack.anyDamage()`                            | Новый IItemStack с измененным свойством |                                            |
+| `stack.withDamage(int damage)`                 | Новый IItemStack с измененным свойством | int                                        |
+| `stack.damageItem(int amount, IEntity entity)` | void                                    | int, [IEntity](/Vanilla/Entities/IEntity/) |
 
 #### Теги
 
-| Method call                    | Returns                                    | ParameterTypes                |
-| ------------------------------ | ------------------------------------------ | ----------------------------- |
-| `stack.withEmtpyTag()`         | A new IItemStack with the changed property |                               |
-| `stack.withTag(IData tag)`     | A new IItemStack with the changed property | [IData](/Vanilla/Data/IData/) |
-| `stack.removeTag(String name)` | A new IItemStack with the changed property | string                        |
-| `stack.updateTag(IData tag)`   | A new IItemStack with the changed property | [IData](/Vanilla/Data/IData/) |
+| Вызов метода                                     | Возвращает                              | Типы параметров                     |
+| ------------------------------------------------ | --------------------------------------- | ----------------------------------- |
+| `stack.withEmtpyTag()`                           | Новый IItemStack с измененным свойством |                                     |
+| `stack.withTag(IData tag)`                       | Новый IItemStack с измененным свойством | [IData](/Vanilla/Data/IData/)       |
+| `stack.withTag(IData tag, bool matchTagExact)`   | Новый IItemStack с измененным свойством | [IData](/Vanilla/Data/IData/), bool |
+| `stack.removeTag(String name)`                   | Новый IItemStack с измененным свойством | string                              |
+| `stack.updateTag(тег IDat)`                      | Новый IItemStack с измененным свойством | [IData](/Vanilla/Data/IData/)       |
+| `stack.updateTag(IData тег, bool matchTagExact)` | Новый IItemStack с измененным свойством | [IData](/Vanilla/Data/IData/), bool |
 
 #### Block Casting
 
-| Method call       | Returns                                         |
+| Вызов метода      | Возвращает                                      |
 | ----------------- | ----------------------------------------------- |
 | `stack.asBlock()` | A new [IBlock](/Vanilla/Blocks/IBlock/) object. |
 | `stack as IBlock` | A new [IBlock](/Vanilla/Blocks/IBlock/) object. |
 
 #### Lore/DisplayName
 
-| Method call                          | Returns                                                                                                           | ParameterTypes                           |
+| Вызов метода                         | Возвращает                                                                                                        | Типы параметров                          |
 | ------------------------------------ | ----------------------------------------------------------------------------------------------------------------- | ---------------------------------------- |
 | `stack.withDisplayName(String name)` | A new IItemStack with the changed property. Unlike the displayName setter, this only applies to this single item. | string (supports color codes with "§")   |
 | `stack.withLore(String[] lore)`      | A new IItemStack with the changed property.                                                                       | string[] (supports color codes with "§") |
-| `stack.clearCustomName()`            | void (nothing)                                                                                                    |                                          |
+| `stack.clearCustomName()`            | void                                                                                                              |                                          |
 
 #### Enchantments
 
-| Method call                                                         | Returns        | ParameterTypes                                                          |
-| ------------------------------------------------------------------- | -------------- | ----------------------------------------------------------------------- |
-| `stack.canApplyAtCraftingTable(IEnchantmentDefinition enchantment)` | A bool.        | [IEnchantmentDefinition](/Vanilla/Enchantments/IEnchantmentDefinition/) |
-| `stack.addEnchantment(IEnchantment enchantment)`                    | void (nothing) | [IEnchantment](/Vanilla/Enchantments/IEnchantment/)                     |
+| Вызов метода                                                        | Возвращает | Типы параметров                                                         |
+| ------------------------------------------------------------------- | ---------- | ----------------------------------------------------------------------- |
+| `stack.canApplyAtCraftingTable(IEnchantmentDefinition enchantment)` | A bool.    | [IEnchantmentDefinition](/Vanilla/Enchantments/IEnchantmentDefinition/) |
+| `stack.addEnchantment(IEnchantment enchantment)`                    | void       | [IEnchantment](/Vanilla/Enchantments/IEnchantment/)                     |
 
 #### canItem...
 
-| Method call                                        | Returns                                                        | ParameterTypes                                        |
+| Вызов метода                                       | Возвращает                                                     | Типы параметров                                       |
 | -------------------------------------------------- | -------------------------------------------------------------- | ----------------------------------------------------- |
 | `stack.canPlaceOn(IBlockDefinition block)`         | A bool that tells if the item can be placed on the block.      | [IBlockDefinition](/Vanilla/Blocks/IBlockDefinition/) |
 | `stack.canDestroy(IBlockDefinition block)`         | A bool that tells if the item can destroy the block.           | [IBlockDefinition](/Vanilla/Blocks/IBlockDefinition/) |
@@ -160,7 +163,7 @@ That means all functionality that is available to [IIngredient](/Vanilla/Variabl
 
 #### create IEntityItem
 
-| Method call                                                  | Returns                                                                                                     | Parameter Types                                                          |
+| Вызов метода                                                 | Возвращает                                                                                                  | Parameter Types                                                          |
 | ------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------ |
 | `stack.createEntityItem(IWorld world, int x, int y, int z);` | A new [IEntityItem](/Vanilla/Entities/IEntityItem/) that corresponds to the newly created item in the world | [IWorld](/Vanilla/World/IWorld/), int, int, int                          |
 | `stack.createEntityItem(IWorld world, IBlockPos pos);`       | A new [IEntityItem](/Vanilla/Entities/IEntityItem/) that corresponds to the newly created item in the world | [IWorld](/Vanilla/World/IWorld/), [IBlockPos](/Vanilla/World/IBlockPos/) |
@@ -171,7 +174,7 @@ You can find how to use these either in the [IIngredient](/Vanilla/Variable_Type
 [Item Conditions](/Vanilla/Items/Item_Conditions/)  
 [Item Transformers](/Vanilla/Items/Item_Transformers/)
 
-## Examples
+## Примеры
 
 #### DisplayName
 
@@ -297,7 +300,7 @@ val lav = <minecraft:lava_bucket>;
 print(lav.liquid.name);
 ```
 
-#### Amount
+#### Количество
 
 How many apples are there?
 

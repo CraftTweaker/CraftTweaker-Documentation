@@ -111,7 +111,7 @@ blast_furnace.recipeBuilder()
 
 Some of properties assignable to `.property()` method:
 
-| Name        | 説明                                                                 |
+| 名称          | 説明                                                                 |
 | ----------- | ------------------------------------------------------------------ |
 | explosives  | Implosion Compressor, amount of explosives                         |
 | circuit     | Integrated Circuit-configurable machines. Configuration of circuit |
@@ -119,7 +119,7 @@ Some of properties assignable to `.property()` method:
 
 These ones are **NOT IMPLEMENTED YET:**
 
-| Name          | Description                                     |
+| 名称            | Description                                     |
 | ------------- | ----------------------------------------------- |
 | amplifier     | UU Amplifier. Amount of UU Amplifier outputted. |
 | eu_to_start | Fusion Reactor, EU to start fusion              |

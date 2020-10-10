@@ -3,7 +3,7 @@
 A living Entity is one that has health and that can die.  
 That means Monsters, Animals but also [IPlayers](/Vanilla/Players/IPlayer/).
 
-## Importing the package
+## 导入相关包
 
 It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
 `import crafttweaker.entity.IEntityLivingBase;`
@@ -56,8 +56,9 @@ IEntityLivingBase extends [IEntity](/Vanilla/Entities/IEntity/). That means all 
 - [IItemStack](/Vanilla/Items/IItemStack/) getItemInSlot([IEntityEquipmentSlot](/Vanilla/Entities/IEntityEquipmentSlot/) slot);
 - [IPotionEffect](/Vanilla/Potions/IPotionEffect/) getActivePotionEffect(IPotion potion);
 - void addPotionEffect([IPotionEffect](/Vanilla/Potions/IPotionEffect/) potionEffect);
-- void clearActivePotions() → Removes all active [potions](/Vanilla/Potions/IPotion/) from the Entity
-- void knockBack([IEntity](/Vanilla/Entities/IEntity/) entity, float one, double two, double three);
-- void onDeath();
+- 无效移除药水效果([IPotion](/Vanilla/Potions/IPotion/) 药水)；
+- 无效 clearActivePotions() -> 从实体中移除所有活动的 [药剂](/Vanilla/Potions/IPotion/)
+- 无效的 kackback([IEnty](/Vanilla/Entities/IEntity/) 实体, 浮动一个, 双双倍, 三倍);
+- a. 在死亡时无效；
 - void onLivingUpdate();
 - void setItemToSlot([IEntityEquipmentSlot](/Vanilla/Entities/IEntityEquipmentSlot/) slot, [IItemStack](/Vanilla/Items/IItemStack/) itemStack);

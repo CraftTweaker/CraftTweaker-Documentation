@@ -18,7 +18,7 @@ Zengetters are for retrieving information. Usually either assigned to a variable
 
 | Геттер        | Что он делает                                                                              | Возвращаемый тип                           | Использование          |
 | ------------- | ------------------------------------------------------------------------------------------ | ------------------------------------------ | ---------------------- |
-| id            | returns the player's id                                                                    | string                                     | `player.id`            |
+| uuid          | возвращает UUID игрока                                                                     | string                                     | `игрок.uuid`           |
 | name          | returns the player's name                                                                  | string                                     | `player.name`          |
 | data          | returns the player's data                                                                  | [IData](/Vanilla/Data/IData/)              | `player.data`          |
 | xp            | returns the player's experience level. Can also be used to set a player's experience level | int                                        | `player.xp`            |
@@ -35,9 +35,9 @@ Zengetters are for retrieving information. Usually either assigned to a variable
 
 ## Методы
 
-Zenmethods are for doing things with other things, in this case with a player.
+Методы ZenMethods для действий с другими вещами, в этом случае с игроком.
 
-| ZenMethod                | Parameter Type(s)                        | What does it do                                                     | Example                                     |
+| ZenMethod                | Parameter Type(s)                        | What does it do                                                     | Пример                                      |
 | ------------------------ | ---------------------------------------- | ------------------------------------------------------------------- | ------------------------------------------- |
 | removeXP(XPtoRemove)     | int                                      | Removes the given experience levels from the player.                | `player.removeXP(1)`                        |
 | update(IData)            | [IData](/Vanilla/Data/IData/)            | Updates the playerdata to the provided IData.                       |                                             |
@@ -47,3 +47,5 @@ Zenmethods are for doing things with other things, in this case with a player.
 | give(item)               | [IItemStack](/Vanilla/Items/IItemStack/) | Give the player the provided item. Item is an IItemStack.           | `player.give(<minecraft:gold_ingot>)` |
 | teleport(position)       | [Position3f](/Vanilla/Utils/Position3f/) | Teleports the player to the provided position in the same dimension | `player.teleport(position)`                 |
 | executeCommand(raw)      | string                                   | Executes the command as the player                                  | `player.executeCommand("kill")`             |
+| dropItem(dropAll)        | bool                                     | Выбрасывает текущий предмет (или весь склад), который держит игрок. | `player.dropItem(false)`                    |
+| dropItem(itemToDrop)     | [IItemStack](/Vanilla/Items/IItemStack/) | Выбрасывает указанный предмет в положении игрока.                   | `player.dropItem(<minecraft:dirt>)`   |

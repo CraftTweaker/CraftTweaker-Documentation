@@ -11,7 +11,7 @@ mods.alchemistry.Combiner
 - **[IItemStack](/Vanilla/Items/IItemStack/)[] input** - The inputs of the recipe.
 
 
-## Addition
+## Сложение
 ```zenscript
 mods.alchemistry.Combiner.addRecipe(IItemStack output, IItemstack[] input);
 mods.alchemistry.Combiner.addRecipe(<minecraft:redstone>,

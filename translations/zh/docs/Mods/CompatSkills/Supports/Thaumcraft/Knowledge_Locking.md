@@ -1,6 +1,6 @@
 # Knowledge Locking
 
-## Feature:
+## 功能：
 
 This feature allows you to lock the acquisition of Observational or Theoretical Knowledge acquisition in Thaumcraft.
 

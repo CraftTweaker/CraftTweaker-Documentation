@@ -1,6 +1,6 @@
-# Bracket Handlers
+# 尖括号引用
 
-## Bracket Handlers
+## 尖括号引用
 
 ### Skill Bracket Handler:
 

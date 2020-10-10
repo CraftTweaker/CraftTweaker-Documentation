@@ -21,7 +21,7 @@ Properties:
 
 Getters:
 
-| Name            | Type   | Description                          |
+| 이름              | Type   | Description                          |
 | --------------- | ------ | ------------------------------------ |
 | radioactive     | bool   | True if this material is radioactive |
 | protons         | long   |                                      |
@@ -48,13 +48,13 @@ Methods:
 
 Properties:
 
-| Name             | Type | Description |
+| 이름               | Type | Description |
 | ---------------- | ---- | ----------- |
 | fluidTemperature | int  |             |
 
 Getters:
 
-| Name      | Type                                                       | Description           |
+| 이름        | Type                                                       | Description           |
 | --------- | ---------------------------------------------------------- | --------------------- |
 | hasFluid  | bool                                                       |                       |
 | hasPlasma | bool                                                       |                       |
@@ -68,7 +68,7 @@ Getters:
 
 Properties:
 
-| Name                | Type          | Description                                                                                                                                  |
+| 이름                  | Type          | Description                                                                                                                                  |
 | ------------------- | ------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
 | oreMultiplier       | int           | Crushed ore output amount multiplier during maceration                                                                                       |
 | byProductMultiplier | int           | Byproducts output amount multiplier during pulverization                                                                                     |
@@ -80,7 +80,7 @@ Properties:
 
 Getters:
 
-| Name          | Type                | Description                                         |
+| 이름            | Type                | Description                                         |
 | ------------- | ------------------- | --------------------------------------------------- |
 | oreByProducts | List<fluidmaterial> | List of ore by products                             |
 | harvestLevel  | int                 | Tool level needed to harvest block of this material |
@@ -91,7 +91,7 @@ Getters:
 
 Properties:
 
-| Name           | Type          | Description                                                                                          |
+| 이름             | Type          | Description                                                                                          |
 | -------------- | ------------- | ---------------------------------------------------------------------------------------------------- |
 | handleMaterial | SolidMaterial | Material specified here will be required as handle to make tool from this material                   |
 | macerateInto   | DustMaterial  | Macerating any item of this material will result material specified in this field, default to itself |
@@ -101,7 +101,7 @@ Getters:
 <table>
   <tr>
     <th>
-      Name
+      이름
     </th>
     
     <th>
@@ -285,7 +285,7 @@ MaterialRegistry.createGemMaterial(int metaItemSubId, String name, int color, St
 MaterialRegistry.createIngotMaterial(int metaItemSubId, String name, int color, String iconSet, int harvestLevel, @Optional MaterialStack[] materialComponents, @Optional float toolSpeed, @Optional int toolDurability, @Optional int blastFurnaceTemperature);
 ```
 
-### Example
+### 예제
 
 ```zenscript
 #loader gregtech

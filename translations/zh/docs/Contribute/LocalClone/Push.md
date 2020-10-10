@@ -4,7 +4,7 @@
 
 You need to know how to [create Commits](/Contribute/LocalClone/CreateCommit/) and you need to have created at least one of them.
 
-## What will we do
+## 我们将做什么
 
 We will use the commit(s) we have created (e.g. the example in [create Commits](/Contribute/LocalClone/CreateCommit/)) and push the changes to GitHub.
 
@@ -25,7 +25,7 @@ You might be asked for your GH username and password.
 
 To verify that the commit is actually on the fork, you can check the commit list that should now have the commit in there: ![Commit List with commit](/Contribute/LocalClone/assets/Example1_CommitList.png)
 
-## How to continue
+## 下一步该做什么
 
 Now that you have pushed your changes to your fork, you can use GH to [create a Pull request](/Contribute/PullRequest/).  
 This is the same procedure as if you were using the online editor to edit files.

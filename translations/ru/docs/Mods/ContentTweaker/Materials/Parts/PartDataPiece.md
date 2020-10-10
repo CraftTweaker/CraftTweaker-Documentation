@@ -26,7 +26,7 @@ Parameters:
 
 You can retrieve the following information from a PartType:
 
-| ZenMethod    | Return Type |
-| ------------ | ----------- |
-| getName()    | string      |
-| isRequired() | string      |
+| ZenMethod    | Возвращаемый тип |
+| ------------ | ---------------- |
+| getName()    | string           |
+| isRequired() | string           |

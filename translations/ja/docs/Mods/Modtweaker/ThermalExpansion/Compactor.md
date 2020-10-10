@@ -18,7 +18,7 @@ Mint修飾子は、Thermal Expansionのレシピマップにおける、`COIN`�
 
 これらのレシピ使うには、Numismatic Press Augmentが必要なことに注意してください。
 
-### Addition
+### 加算
 
 ```zenscript
 mods.thermalexpansion.Compactor.addMintRecipe(IItemStack output, IItemStack input, int energy);
@@ -40,7 +40,7 @@ Press修飾子は、Thermal Expansionのレシピマップにおける、`PLATE`
 
 これらのレシピは、特定のAugmentを必要としません。
 
-### Addition
+### 加算
 
 ```zenscript
 mods.thermalexpansion.Compactor.addPressRecipe(IItemStack output, IItemStack input, int energy);
@@ -58,11 +58,11 @@ mods.thermalexpansion.Compactor.removePressRecipe(<thermalfoundation:material:16
 
 ## Storage
 
-Storage修飾子は、Thermal Expansionのレシピマップにおける、`PLATE `に登録されているレシピを変更します。
+Storage修飾子は、Thermal Expansionのレシピマップにおける、`PLATE`に登録されているレシピを変更します。
 
 これらのレシピは特定のAugmentを必要とせず、どうやらプレート専用として使われているようです。
 
-### Addition
+### 加算
 
 ```zenscript
 mods.thermalexpansion.Compactor.addStorageRecipe(IItemStack output, IItemStack input, int energy);
@@ -84,7 +84,7 @@ Gear修飾子は、Thermal Expansionのレシピマップにおける、`GEAR`�
 
 これらのレシピ使うには、Gearworking Die Augmentが必要なことに注意してください。
 
-### Addition
+### 加算
 
 ```zenscript
 mods.thermalexpansion.Compactor.addGearRecipe(IItemStack output, IItemStack input, int energy);

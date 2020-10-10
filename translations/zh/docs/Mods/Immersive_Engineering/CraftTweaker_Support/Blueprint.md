@@ -10,13 +10,13 @@ The [Category](/Mods/Immersive_Engineering/Variables/Categories/) String is quit
 
 You can call the Blueprint package using `mods.immersiveengineering.Blueprint`.
 
-## Add Recipe
+## 添加配方
 
-| Required | 类型       | Data Type                                                            |
+| Required | 类型       | 数据类型                                                                 |
 | -------- | -------- | -------------------------------------------------------------------- |
 | 必要       | Category | String [Category](/Mods/Immersive_Engineering/Variables/Categories/) |
-| 必要       | Output   | [IItemstack](/Vanilla/Items/IItemStack/)                             |
-| Required | Inputs   | [IIngredient](/Vanilla/Variable_Types/IIngredient/)                  |
+| 必要       | 输出       | [物品堆（IItemstack）](/Vanilla/Items/IItemStack/)                        |
+| Required | 输入       | [材料（IIngredient）](/Vanilla/Variable_Types/IIngredient/)              |
 
 ### 例子
 
@@ -33,11 +33,11 @@ mods.immersiveengineering.Blueprint.addRecipe("Banana Pancakes", <minecraft:diam
 
 ## Remove Recipe
 
-| Type   | Data Type                                |
-| ------ | ---------------------------------------- |
-| Output | [IItemstack](/Vanilla/Items/IItemStack/) |
+| 类型 | 数据类型                                          |
+| -- | --------------------------------------------- |
+| 输出 | [物品堆（IItemstack）](/Vanilla/Items/IItemStack/) |
 
-### Example:
+### 比如：
 
 ```zenscript
 //Example:

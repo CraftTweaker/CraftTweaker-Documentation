@@ -4,7 +4,7 @@
 
 `import mods.enderio.Enchanter;`
 
-## Methods
+## 方法
 
 **- [IEnchantmentDefinition](/Vanilla/Enchantments/IEnchantmentDefinition/) output** The output enchantment.
 

@@ -4,7 +4,7 @@
 
 `import mods.ic2.BlockCutter;`
 
-## Methods
+## 方法
 
 - **[IItemStack](/Vanilla/Items/IItemStack/) output**
 - **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input**

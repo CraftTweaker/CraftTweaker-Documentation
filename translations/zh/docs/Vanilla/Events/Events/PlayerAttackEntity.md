@@ -19,7 +19,7 @@ PlayerAttackEntity Events implement the following interfaces and are able to cal
 
 The following information can be retrieved from the event:
 
-| ZenGetter  | Return Type                           |
+| ZenGetter  | 返回值类型                                 |
 | ---------- | ------------------------------------- |
 | `canceled` | boolean                               |
 | `player`   | [IPlayer](/Vanilla/Players/IPlayer/)  |

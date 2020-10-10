@@ -56,7 +56,7 @@ void clearLifeEssence();
 ---
 
 
-### Examples
+### 使用例
 
 ```zenscript
 import mods.roots.SummonCreatures;

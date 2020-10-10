@@ -1,7 +1,7 @@
 # Create Compound
 Custom Alchemistry Compound Generation
 
-# Package
+# 所属包名
 ```zenscript
 mods.alchemistry.Util.createCompound
 ```

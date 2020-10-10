@@ -18,6 +18,6 @@ PlayerLoggedIn Events implement the following interfaces and are able to call al
 
 The following information can be retrieved from the event:
 
-| ZenGetter | Return Type                          |
+| ZenGetter | 戻り値                                  |
 | --------- | ------------------------------------ |
 | `player`  | [IPlayer](/Vanilla/Players/IPlayer/) |

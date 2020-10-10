@@ -1,4 +1,4 @@
-### Class
+### Класс
 
 ```zenscript
 import mods.roots.AnimalHarvest;
@@ -40,7 +40,7 @@ void removeFish(
 
 * * *
 
-### Examples
+### Примеры
 
 ```zenscript
 import mods.roots.AnimalHarvest;

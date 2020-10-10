@@ -3,7 +3,7 @@
 An IBlock Object consists of a [IBlockDefinition](/Vanilla/Blocks/IBlockDefinition/), a metadata and a TileData.  
 It refers to a block in the game.
 
-## Importing the package
+## パッケージのインポート
 
 It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
 `import crafttweaker.block.IBlock;`
@@ -16,9 +16,11 @@ There are multiple ways thet return an IBlock object:
 * Using the getBlock(x,y,z) on an [IWorld](/Vanilla/World/IWorld/).
 * Using getBlock() on ContentTweaker's [ICTBlockState](/Mods/ContentTweaker/Vanilla/Types/Block/ICTBlockState/)
 
+警告: `data` ZenGetter が non-null IDataを返すことは、2つ目のメソッドのみを使用することができます。
+
 ## Zengetters
 
-| Getter     | What does it do                | Return Type                                           |
+| Getter     | What does it do                | 戻り値                                                   |
 | ---------- | ------------------------------ | ----------------------------------------------------- |
 | definition | Returns the Block's definition | [IBlockDefinition](/Vanilla/Blocks/IBlockDefinition/) |
 | meta       | Returns the Block's metadata   | int                                                   |
@@ -26,7 +28,7 @@ There are multiple ways thet return an IBlock object:
 
 # IBlockPattern
 
-IBlocks extend [IBlockPattern](/Vanilla/Blocks/IBlockPattern/) Objects. That means, all functions that are available to IBlockPattern objects can also be used for IBlock objects:
+IBlocks は [IBlockPattern](/Vanilla/Blocks/IBlockPattern/) オブジェクトを拡張します。 つまり、IBlockPattern オブジェクトに利用可能なすべての機能は、IBlock オブジェクトにも使用できます。
 
 * Use the `blocks` ZenGetter
 * OR'ing

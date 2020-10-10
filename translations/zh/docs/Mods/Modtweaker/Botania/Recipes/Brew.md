@@ -18,7 +18,7 @@ You can find them using [`/ct botbrews`](/Mods/Modtweaker/Botania/Commands/).
 mods.botania.Brew.addRecipe([<minecraft:nether_wart>, <minecraft:reeds>, <minecraft:redstone>], "speed");
 ```
 
-## Recipe removal
+## 删除配方
 
 ```zenscript
 //mods.botania.Brew.removeRecipe(String brewName);

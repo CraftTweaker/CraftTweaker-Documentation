@@ -21,7 +21,7 @@ Be careful though, as any changes done to this template after the the registerin
 
 You can change or get the current value of the properties either by `object.name = newValue` or by using the methods `object.setName(newValue);`
 
-Example:
+Пример:
 
 ```zenscript
 chickenRep.layItem = <minecraft:iron_ingot>;

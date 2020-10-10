@@ -3,6 +3,7 @@
 ## Package
 ```zenscript
 import mods.terrafirmacraft.Alloy;
+import mods.terrafirmacraft.AlloyRecipeBuilder;Alloy;
 import mods.terrafirmacraft.AlloyRecipeBuilder;
 ```
 

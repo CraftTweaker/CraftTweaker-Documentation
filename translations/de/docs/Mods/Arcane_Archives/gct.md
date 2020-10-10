@@ -4,7 +4,7 @@
 import mods.arcanearchives.GCT;
 ```
 
-#### Methods
+#### Methoden
 
 ```zenscript
 void addRecipe(
@@ -34,7 +34,7 @@ void replaceRecipe(
 
 * * *
 
-### Examples
+### Beispiele
 
 ```zenscript
 import mods.arcanearchives.GCT;

@@ -24,7 +24,7 @@ This function removes *all* TPP recipes:
 mods.pneumaticcraft.thermopneumaticprocessingplant.removeAllRecipes();
 ```
 
-## Adding
+## 添加
 
 The following functions can be used to add recipes to the TPP:
 

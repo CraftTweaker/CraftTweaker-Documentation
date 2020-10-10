@@ -12,13 +12,13 @@ You can call the Blueprint package using `mods.immersiveengineering.Blueprint`.
 
 ## Add Recipe
 
-| Required | Type     | Data Type                                                            |
+| Required | Тип      | Data Type                                                            |
 | -------- | -------- | -------------------------------------------------------------------- |
 | Required | Category | String [Category](/Mods/Immersive_Engineering/Variables/Categories/) |
 | Required | Output   | [IItemstack](/Vanilla/Items/IItemStack/)                             |
 | Required | Inputs   | [IIngredient](/Vanilla/Variable_Types/IIngredient/)                  |
 
-### Example
+### Пример
 
 ```zenscript
 //Example:
@@ -33,11 +33,11 @@ mods.immersiveengineering.Blueprint.addRecipe("Banana Pancakes", <minecraft:diam
 
 ## Remove Recipe
 
-| Type   | Data Type                                |
+| Тип    | Data Type                                |
 | ------ | ---------------------------------------- |
 | Output | [IItemstack](/Vanilla/Items/IItemStack/) |
 
-### Example:
+### Пример:
 
 ```zenscript
 //Example:

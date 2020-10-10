@@ -17,7 +17,7 @@ You can call the Mortar package using `mods.advancedmortars.Mortar`.
     </th>
     
     <th>
-      Examples
+      使用例
     </th>
   </tr>
   
@@ -78,7 +78,7 @@ You can call the Mortar package using `mods.advancedmortars.Mortar`.
   </tr>
 </table>
 
-### Example
+### 例
 
 ```zenscript
 ///// "Crushing"

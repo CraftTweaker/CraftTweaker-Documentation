@@ -9,7 +9,7 @@ Bevor wir beginnen, hier sind ein paar wichtige Begriffe, die man kennen sollte:
 
 ## ZenGetter
 
-Mit einem "ZenGetter" kannst du von bestimmten Objekten verschiedene Informationen abrufen. Beispiel: [IItemStack](/Vanilla/Items/IItemStack/) hat einen ZenGetter mit dem Namen "displayName".   
+Mit einem "ZenGetter" kannst du von bestimmten Objekten verschiedene Informationen abrufen. Beispiel: [IItemStack](/Vanilla/Items/IItemStack/) hat einen ZenGetter mit dem Namen "displayName".  
 So verwendet man einen ZenGetter:
 
 ```zenscript

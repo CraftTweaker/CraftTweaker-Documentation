@@ -24,14 +24,14 @@ crafttweaker.world.IWorld.getFromID(int id);
 
 | ZenMethod          | ZenGetter     | Return type                                      | Description                                                                                                                                                                             |
 | ------------------ | ------------- | ------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| isRemote()         | remote        | boolean                                          | True if the world is a "slave" client; changes will not be saved or propagated from this world. For example, server worlds have this set to false, client worlds have this set to true. |
-| isRaining()        | raining       | boolean                                          | Returns true if it is currently raining.                                                                                                                                                |
-| isThundering()     | thundering    | boolean                                          | Returns true if it is currently thundering.                                                                                                                                             |
+| isRemote()         | remote        | boolean型                                         | True if the world is a "slave" client; changes will not be saved or propagated from this world. For example, server worlds have this set to false, client worlds have this set to true. |
+| isRaining()        | raining       | boolean型                                         | Returns true if it is currently raining.                                                                                                                                                |
+| isThundering()     | thundering    | boolean型                                         | Returns true if it is currently thundering.                                                                                                                                             |
 | getMoonPhase()     | moonPhase     | int                                              | Returns the current moon phase.                                                                                                                                                         |
-| isDayTime()        | dayTime       | boolean                                          | Checks if it is daytime.                                                                                                                                                                |
+| isDayTime()        | dayTime       | boolean型                                         | Checks if it is daytime.                                                                                                                                                                |
 | getWorldTime()     | time          | long                                             | Returns the world's time.                                                                                                                                                               |
 | getDimension()     | dimension     | int型                                             | Returns the world's dimension.                                                                                                                                                          |
-| isSurfaceWorld()   | surfaceWorld  | boolean                                          | Returns whether you are in a surface world or not.                                                                                                                                      |
+| isSurfaceWorld()   | surfaceWorld  | boolean型                                         | Returns whether you are in a surface world or not.                                                                                                                                      |
 | getDimensionType() | dimensionType | String                                           | Returns the dimension's type name.                                                                                                                                                      |
 | getWorldType()     | worldType     | String                                           | Returns the world's type name.                                                                                                                                                          |
 | getWorldInfo()     | worldInfo     | [IWorldInfo](/Vanilla/World/IWorldInfo/)         | Returns the world's information. Can be used to retrieve even more info on the world.                                                                                                   |
@@ -96,4 +96,16 @@ Only the last parameter is true by default.
 
 ```zenscript
 worldObj.rayTraceBlocks(IVector3d begin, IVector3d ray, @Optional boolean stopOnLiquid, @Optional boolean ignoreBlockWithoutBoundingBox, @Optional(true) boolean returnLastUncollidableBlock)
+```
+
+### 選択したブロックを取得する
+
+Use an [IBlockPos](/Vanilla/World/IBlockPos/), an [IRayTraceResult](/Vanilla/World/IRayTraceResult/) and an [IPlayer](/Vanilla/Players/IPlayer/).  
+Returns an [IItemStack](/Vanilla/Items/IItemStack/).  
+**Can be null**
+
+位置にあるブロックを選択することで得られるIItemStackを取得します。
+
+```zenscript
+worldObj.getPickedBlock(IBlockPos pos, IRayTraceResult rayResult, IPlayer player);
 ```

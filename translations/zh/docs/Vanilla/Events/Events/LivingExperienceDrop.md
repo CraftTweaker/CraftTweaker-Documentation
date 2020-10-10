@@ -16,7 +16,7 @@ LivingExperienceDrop Events implement the following interfaces and are able to c
 ## ZenGetters/ZenSetters
 The following information can be retrieved/set during the event:
 
-| ZenGetter            | ZenSetter           | Type                                 |
+| ZenGetter            | ZenSetter           | 类型                                   |
 | -------------------- | ------------------- | ------------------------------------ |
 | `player`             |                     | [IPlayer](/Vanilla/Players/IPlayer/) |
 | `droppedExperience`  | `droppedExperience` | int                                  |

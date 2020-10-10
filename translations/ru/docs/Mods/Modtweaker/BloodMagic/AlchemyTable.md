@@ -4,7 +4,7 @@
 
 `mods.bloodmagic.AlchemyTable`
 
-## Addition
+## Сложение
 
 ```zenscript
 inputs has a max size of 6

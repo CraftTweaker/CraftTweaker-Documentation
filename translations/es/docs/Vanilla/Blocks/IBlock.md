@@ -16,6 +16,8 @@ There are multiple ways thet return an IBlock object:
 * Using the getBlock(x,y,z) on an [IWorld](/Vanilla/World/IWorld/).
 * Using getBlock() on ContentTweaker's [ICTBlockState](/Mods/ContentTweaker/Vanilla/Types/Block/ICTBlockState/)
 
+Advertencia: ¡Sólo usar el segundo método es posible que `data` ZenGetter devuelva un ID no null!
+
 ## Zengetters
 
 | Getter     | What does it do                | Return Type                                           |
@@ -26,7 +28,7 @@ There are multiple ways thet return an IBlock object:
 
 # IBlockPattern
 
-IBlocks extend [IBlockPattern](/Vanilla/Blocks/IBlockPattern/) Objects. That means, all functions that are available to IBlockPattern objects can also be used for IBlock objects:
+Los IBlocks extienden [Objetos IBlockPattern](/Vanilla/Blocks/IBlockPattern/). Esto significa que todas las funciones que están disponibles para los objetos IBlockPattern también pueden utilizarse para objetos de IBlock:
 
 * Use the `blocks` ZenGetter
 * OR'ing

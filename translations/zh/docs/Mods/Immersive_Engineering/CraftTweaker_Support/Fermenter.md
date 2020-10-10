@@ -8,12 +8,12 @@ You can call the Fermenter package using `mods.immersiveengineering.Fermenter`.
 
 ## 添加配方
 
-| Required | 类型     | Data Type                                           |
-| -------- | ------ | --------------------------------------------------- |
-| 必要       | Output | [IItemStack](/Vanilla/Items/IItemStack/)            |
-| 必要       | Fluid  | [Fluidstack](/Vanilla/Liquids/ILiquidStack/)        |
-| Required | Input  | [IIngredient](/Vanilla/Variable_Types/IIngredient/) |
-| 必要       | Energy | Integer                                             |
+| Required | 类型     | 数据类型                                                    |
+| -------- | ------ | ------------------------------------------------------- |
+| 必要       | 输出     | [IItemStack](/Vanilla/Items/IItemStack/)                |
+| 必要       | Fluid  | [Fluidstack](/Vanilla/Liquids/ILiquidStack/)            |
+| Required | 输入     | [材料（IIngredient）](/Vanilla/Variable_Types/IIngredient/) |
+| 必要       | Energy | 整型                                                      |
 
 ### 例子
 
@@ -24,11 +24,11 @@ mods.immersiveengineering.Fermenter.addRecipe(<minecraft:diamond>, <liquid:water
 
 ## Remove Fluid Recipe
 
-| Type   | Data Type                                    |
-| ------ | -------------------------------------------- |
-| Output | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
+| 类型 | 数据类型                                         |
+| -- | -------------------------------------------- |
+| 输出 | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
 
-### Example
+### 例子
 
 ```zenscript
 mods.immersiveengineering.Fermenter.removeFluidRecipe(ILiquidStack fluid);
@@ -37,11 +37,11 @@ mods.immersiveengineering.Fermenter.removeFluidRecipe(<liquid:water>);
 
 ## Remove Item Recipe
 
-| Type   | Data Type                                |
-| ------ | ---------------------------------------- |
-| Output | [IItemstack](/Vanilla/Items/IItemStack/) |
+| 类型 | 数据类型                                          |
+| -- | --------------------------------------------- |
+| 输出 | [物品堆（IItemstack）](/Vanilla/Items/IItemStack/) |
 
-### Example
+### 例子
 
 ```zenscript
 mods.immersiveengineering.Fermenter.removeItemRecipe(IItemstack output);
@@ -50,11 +50,11 @@ mods.immersiveengineering.Fermenter.removeItemRecipe(<minecraft:diamond>);
 
 ## Remove By Input
 
-| Type   | Data Type                                |
-| ------ | ---------------------------------------- |
-| Output | [IItemstack](/Vanilla/Items/IItemStack/) |
+| 类型 | 数据类型                                          |
+| -- | --------------------------------------------- |
+| 输出 | [物品堆（IItemstack）](/Vanilla/Items/IItemStack/) |
 
-### Example
+### 例子
 
 ```zenscript
 mods.immersiveengineering.Fermenter.removeByInput(IItemstack input);

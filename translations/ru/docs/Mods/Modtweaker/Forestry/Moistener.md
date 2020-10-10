@@ -13,7 +13,7 @@ You can call the package using `mods.forestry.Moistener`
 mods.forestry.Moistener.removeRecipe(<minecraft:stonebrick:1>);
 ```
 
-## Addition
+## Сложение
 
 ```zenscript
 //mods.forestry.Moistener.addRecipe(IItemStack output, IItemStack input, int packagingTime); 
@@ -35,7 +35,7 @@ mods.forestry.Moistener.removeFuel(<minecraft:wheat>);
 mods.forestry.Moistener.addFuel(<minecraft:gold_ingot>, <minecraft:iron_ingot>, 20, 2);
 ```
 
-| Parameter      | Type                                     | Description                                                                                  |
+| Параметр       | Тип                                      | Description                                                                                  |
 | -------------- | ---------------------------------------- | -------------------------------------------------------------------------------------------- |
 | item           | [IItemStack](/Vanilla/Items/IItemStack/) | Item to become a valid fuel for the Moistener                                                |
 | product        | [IItemStack](/Vanilla/Items/IItemStack/) | Item that will leave the moistener's working slot (e.g. mouldy wheat or mulch).              |

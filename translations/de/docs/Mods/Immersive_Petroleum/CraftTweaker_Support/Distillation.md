@@ -24,7 +24,7 @@ Beispiel:
 [1, 1]
 ```
 
-Der Float Wert des Typs Chance sollte zwischen 0 und 1 liegen. Da es sich von einen Float-Wert in einen Prozent Wert umrechnet. Das Bedeutet:
+Der Float Wert des Typs Chance sollte zwischen 0 und 1 liegen. Da es sich von einen Float-Wert in einen Prozent Wert umrechnet.
 
 ```zenscript
 0.5     = 50%

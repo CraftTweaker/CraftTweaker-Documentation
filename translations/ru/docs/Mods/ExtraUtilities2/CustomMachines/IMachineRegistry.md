@@ -48,7 +48,7 @@ extrautilities2.Tweaker.IMachineRegistry.createNewGenerator(
 As you can see, both methods accept the same parameters, the only difference is if they require or produce energy.  
 The parameters are:
 
-| Название            | Type                                                                |
+| Название            | Тип                                                                 |
 | ------------------- | ------------------------------------------------------------------- |
 | name                | string                                                              |
 | energyBufferSize    | int                                                                 |

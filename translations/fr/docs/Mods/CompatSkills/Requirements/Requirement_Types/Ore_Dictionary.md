@@ -1,11 +1,11 @@
-# Ore Dictionary
+# Dictionnaire de minerai
 
-Ore Dictionary Requirements are fairly new and requires the player to be holding either in their main-hand or in their off-hand an item with the matching ore-dictionary value.
+Les conditions de dictionnaire d'Ore sont relativement nouvelles et exigent que le joueur tienne dans sa main principale ou dans sa main un objet avec la valeur de dictionnaire de minerai correspondante.
 
-    Example:
+    Exemple:
     ore|string
     
-    Working Example:
-    ore|nuggetIron
+    Exemple de travail :
+    oreille|nuggetIron
     ore|ingotIron
-    ore|oreIron
+    mineur|oreIron

@@ -8,14 +8,14 @@ You can call the Squeezer package using `mods.immersiveengineering.Squeezer`.
 
 ## Add Recipe
 
-| Required | Type   | Data Type                                           |
+| Required | Тип    | Data Type                                           |
 | -------- | ------ | --------------------------------------------------- |
 | Required | Output | [IItemStack](/Vanilla/Items/IItemStack/)            |
 | Required | Fluid  | [Fluidstack](/Vanilla/Liquids/ILiquidStack/)        |
 | Required | Input  | [IIngredient](/Vanilla/Variable_Types/IIngredient/) |
 | Required | Energy | Integer                                             |
 
-### Example
+### Пример
 
 ```zenscript
 //Example:
@@ -26,11 +26,11 @@ mods.immersiveengineering.Squeezer.addRecipe(<minecraft:diamond>, <liquid:water>
 
 ## Remove Fluid Recipe
 
-| Type   | Data Type                                    |
+| Тип    | Data Type                                    |
 | ------ | -------------------------------------------- |
 | Output | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
 
-### Example
+### Пример
 
 ```zenscript
 //Example:
@@ -41,11 +41,11 @@ mods.immersiveengineering.Squeezer.removeFluidRecipe(<liquid:water>);
 
 ## Remove Item Recipe
 
-| Type   | Data Type                                |
+| Тип    | Data Type                                |
 | ------ | ---------------------------------------- |
 | Output | [IItemstack](/Vanilla/Items/IItemStack/) |
 
-### Example
+### Пример
 
 ```zenscript
 //Example:
@@ -56,11 +56,11 @@ mods.immersiveengineering.Squeezer.removeItemRecipe(<minecraft:diamond>);
 
 ## Remove By Input
 
-| Type   | Data Type                                |
+| Тип    | Data Type                                |
 | ------ | ---------------------------------------- |
 | Output | [IItemstack](/Vanilla/Items/IItemStack/) |
 
-### Example
+### Пример
 
 ```zenscript
 //Example:

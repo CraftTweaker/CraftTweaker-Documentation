@@ -366,7 +366,7 @@ Description:
 
 Outputs a list of all the furnace recipes in the game to the crafttweaker.log file.
 
-## Scripts
+## 脚本
 
 Usage:
 
@@ -391,7 +391,7 @@ Description:
 
 Outputs a list of all the items in the seed registry to the crafttweaker.log file.
 
-## Syntax
+## 语句
 
 Usage:
 

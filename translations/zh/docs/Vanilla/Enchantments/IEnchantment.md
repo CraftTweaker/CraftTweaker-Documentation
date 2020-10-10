@@ -9,7 +9,7 @@ It might be required for you to import the package if you encounter any issues (
 
 ## ZenGetters/ZenSetters
 
-| ZenGetter   | ZenSetter   | Type                                                                    |
+| ZenGetter   | ZenSetter   | 类型                                                                      |
 | ----------- | ----------- | ----------------------------------------------------------------------- |
 | definition  |             | [IEnchantmentDefinition](/Vanilla/Enchantments/IEnchantmentDefinition/) |
 | level       |             | int                                                                     |

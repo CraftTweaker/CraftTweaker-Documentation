@@ -21,4 +21,4 @@ The following information can be retrieved/set during the event:
 | `mountingEntity` | [IEntity](/Vanilla/Entities/IEntity/) |
 | `mountedEntity`  | [IEntity](/Vanilla/Entities/IEntity/) |
 | `isMounting`     | boolean型                              |
-| `isDismounting`  | boolean                               |
+| `isDismounting`  | boolean型                              |

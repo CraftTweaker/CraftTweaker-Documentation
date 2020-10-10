@@ -22,7 +22,7 @@ All parameters for this function are doubles between 0 and 1!
 
 You can get and set each Property using `getProperty()` or `object.property`.
 
-| ZenProperty | Type   |
+| ZenProperty | Тип    |
 | ----------- | ------ |
 | minX        | double |
 | minY        | double |

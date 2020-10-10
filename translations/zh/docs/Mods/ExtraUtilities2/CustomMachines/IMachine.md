@@ -63,7 +63,7 @@ There are two methods, one uses [IIngredient](/Vanilla/Variable_Types/IIngredien
 myMachine.removeRecipe(inputs);
 ```
 
-| Name   | Type                                                         |
+| 名称     | 类型                                                           |
 | ------ | ------------------------------------------------------------ |
 | inputs | [IIngredient](/Vanilla/Variable_Types/IIngredient)[string\] |
 
@@ -73,7 +73,7 @@ myMachine.removeRecipe(inputs);
 myMachine.removeRecipe(items, liquids);
 ```
 
-| Name    | Type                                                    |
+| 名称      | 类型                                                      |
 | ------- | ------------------------------------------------------- |
 | items   | [IItemStack](/Vanilla/Items/IItemStack)[string\]       |
 | liquids | [ILiquidStack](/Vanilla/Liquids/ILiquidStack)[string\] |

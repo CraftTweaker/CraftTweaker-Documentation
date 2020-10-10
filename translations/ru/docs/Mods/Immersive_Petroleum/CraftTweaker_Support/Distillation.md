@@ -4,7 +4,7 @@
 
 The Distillation "addRecipe" method consists of:
 
-| Type          | Data Type                                            |
+| Тип           | Data Type                                            |
 | ------------- | ---------------------------------------------------- |
 | Output        | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) Array[] |
 | Output        | [ItemStack](/Vanilla/Items/IItemStack/) Array[]      |
@@ -17,7 +17,7 @@ The Distillation "addRecipe" method consists of:
 
 Each ItemStack Entry is linked to the corresponding "Chance" array entry.
 
-Example:
+Пример:
 
 ```zenscript
 [<minecraft:diamond>, <minecraft:leather> * 2]

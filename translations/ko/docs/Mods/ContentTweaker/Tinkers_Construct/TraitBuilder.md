@@ -447,7 +447,7 @@ myTrait.onToolRepair = function(trait, tool, amount) {
 };
 ```
 
-## Example
+## 예제
 
 ```zenscript
 #loader contenttweaker

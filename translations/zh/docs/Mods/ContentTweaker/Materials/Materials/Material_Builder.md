@@ -20,7 +20,7 @@ var mBuilder = mods.contenttweaker.MaterialSystem.getMaterialBuilder();
 
 You can set these Properties
 
-| ZenMethod               | Parameter                                                        |
+| ZenMethod               | 参数                                                               |
 | ----------------------- | ---------------------------------------------------------------- |
 | setName(name)           | string name                                                      |
 | setColor(color)         | int color                                                        |
@@ -40,7 +40,7 @@ mBuilder.build();
 
 This returns an [IMaterial](/Mods/ContentTweaker/Materials/Materials/Material/) Object.
 
-## Example Script
+## 示例脚本
 
 ```zenscript
 import mods.contentTweaker.MaterialSystem;

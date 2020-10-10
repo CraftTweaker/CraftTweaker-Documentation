@@ -1,7 +1,7 @@
-# PlayerInteractBlock
+# Интерактивный Игрок
 
-The PlayerInteractBlock Event is fired whenever a player right clicks a block.  
-It can be canceled to prevent any other events from taking place. If the event is canceled, a specific result of success, fail or pass can be provided. By default, the result is pass.
+Событие PlayerInteractBlock запускается, когда игрок нажимает правой кнопкой мыши на блоке.  
+Это может быть отменено, чтобы предотвратить любые другие события. Если событие отменено, может быть предоставлен конкретный результат успеха, неудачи или прохождения. По умолчанию, результат выгружается.
 
 ## Класс события
 
@@ -11,7 +11,7 @@ You can, of course, also [import](/AdvancedFunctions/Import/) the class before a
 
 ## Наследование от интерфейсов событий
 
-PlayerInteractBlock Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+События PlayerInteractBlock реализуют следующие интерфейсы и также могут вызвать все их методы/getters/setters:
 
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 - [PlayerInteract](/Vanilla/Events/Events/PlayerInteract/)
@@ -21,12 +21,12 @@ PlayerInteractBlock Events implement the following interfaces and are able to ca
 
 Следующая информация может быть получена от события:
 
-| zengetter            | zengetter            | type                                   |
-| -------------------- | -------------------- | -------------------------------------- |
-| `hitvector`          |                      | [ivector3d](/vanilla/world/ivector3d/) |
-| `useblock`           | `useblock`           | string ("allow" / "deny" / "default")  |
-| `useitem`            | `useitem`            | string ("allow" / "deny" / "default")  |
-| `cancellationResult` | `cancellationResult` | string ("success" / "pass" / "fail")   |
+| zengetter           | зенсетер            | type                                   |
+| ------------------- | ------------------- | -------------------------------------- |
+| `hitvector`         |                     | [IVector3d](/Vanilla/World/IVector3d/) |
+| `использовать блок` | `использовать блок` | строка ("allow" / "deny" / "default")  |
+| `useitem`           | `useitem`           | строка ("allow" / "deny" / "default")  |
+| `Результат отмены`  | `Результат отмены`  | строка ("успеха" / "pass" / "fail")    |
 
 ## Методы
 

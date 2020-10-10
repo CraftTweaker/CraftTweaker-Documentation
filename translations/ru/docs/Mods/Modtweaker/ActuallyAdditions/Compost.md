@@ -4,7 +4,7 @@
 
 `mods.actuallyadditions.Compost`
 
-## Addition
+## Сложение
 
 ```zenscript
 //mods.actuallyadditions.Compost.addRecipe(IItemStack output, IItemStack outputDisplay, IItemStack input, IItemStack inputDisplay);

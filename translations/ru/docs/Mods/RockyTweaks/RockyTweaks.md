@@ -1,6 +1,6 @@
 # RockyTweaks
 
-## Information
+## Дополнительная информация
 
 Rocky Tweaks (formerly known as Rocky Core) adds the ability to tweak the Vanilla Anvil and Merchant (Villager) trades using CraftTweaker.
 

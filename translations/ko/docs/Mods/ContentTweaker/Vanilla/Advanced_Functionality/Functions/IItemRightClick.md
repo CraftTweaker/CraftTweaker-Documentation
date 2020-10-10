@@ -18,7 +18,7 @@ The IItemRightClick function is a function with the following parameters:
 
 The function needs to return either `"SUCCESS"`, `"PASS"` or `"FAIL"`
 
-## Example
+## 예제
 
 ```zenscript
 zsItem.itemRightClick = function(stack, world, player, hand) {

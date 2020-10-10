@@ -150,7 +150,7 @@ More useful methods:
 
 Removing a recipe is done by recipe instance itself, so you have to find a recipe first.
 
-Example:
+Beispiel:
 
 ```zenscript
 val compressor as RecipeMap = RecipeMap.getByName("compressor");

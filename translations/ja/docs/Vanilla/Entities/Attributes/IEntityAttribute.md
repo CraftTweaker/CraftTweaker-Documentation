@@ -11,7 +11,7 @@ It might be required for you to import the package if you encounter any issues (
 | ------------ | ----------------- | ---------------- |
 | name         | getName()         | string           |
 | defaultValue | getDefaultValue() | double           |
-| shouldWatch  | getShouldWatch()  | boolean          |
+| shouldWatch  | getShouldWatch()  | boolean型         |
 | parent       | getParent()       | IEntityAttribute |
 
 ## More ZenMethods

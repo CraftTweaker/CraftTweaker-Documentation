@@ -24,7 +24,7 @@ You can also call an [existing creative](/Mods/ContentTweaker/Vanilla/Brackets/B
 Why would you need this, you ask?  
 You will need this if you want to add a newly created block or item to an existing tab!
 
-## Properties
+## 参数
 
 You can call and set all these properties using the normal ZenGetters and ZenSetters  
 `tab.unlocalizedName = "hh";`  
@@ -47,7 +47,7 @@ After you have called this function, you cannot un-register the tab or change an
 tab.register();
 ```
 
-## Example Script
+## 示例脚本
 
 ```zenscript
 #loader contenttweaker

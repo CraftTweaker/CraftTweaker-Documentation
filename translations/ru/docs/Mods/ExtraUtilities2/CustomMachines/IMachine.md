@@ -25,7 +25,7 @@ myMachine.addRecipe(inputs, outputs, energy, time, probabilities);
 
 This method uses the following parameters:
 
-| Название      | Type                                                         |
+| Название      | Тип                                                          |
 | ------------- | ------------------------------------------------------------ |
 | inputs        | [IIngredient](/Vanilla/Variable_Types/IIngredient)[string\] |
 | outputs       | [IIngredient](/Vanilla/Variable_Types/IIngredient)[string\] |
@@ -44,12 +44,12 @@ myMachine.addRecipe(inputs, outputs, energy, time);
 
 This method uses the following parameters:
 
-| Name    | Type                                                         |
-| ------- | ------------------------------------------------------------ |
-| inputs  | [IIngredient](/Vanilla/Variable_Types/IIngredient)[string\] |
-| outputs | Object[string\]                                             |
-| energy  | int                                                          |
-| time    | int                                                          |
+| Название | Тип                                                          |
+| -------- | ------------------------------------------------------------ |
+| inputs   | [IIngredient](/Vanilla/Variable_Types/IIngredient)[string\] |
+| outputs  | Object[string\]                                             |
+| energy   | int                                                          |
+| time     | int                                                          |
 
 ## Remove recipes
 
@@ -63,9 +63,9 @@ There are two methods, one uses [IIngredient](/Vanilla/Variable_Types/IIngredien
 myMachine.removeRecipe(inputs);
 ```
 
-| Name   | Type                                                         |
-| ------ | ------------------------------------------------------------ |
-| inputs | [IIngredient](/Vanilla/Variable_Types/IIngredient)[string\] |
+| Название | Тип                                                          |
+| -------- | ------------------------------------------------------------ |
+| inputs   | [IIngredient](/Vanilla/Variable_Types/IIngredient)[string\] |
 
 ### Using separate maps for Items and Liquids
 
@@ -73,10 +73,10 @@ myMachine.removeRecipe(inputs);
 myMachine.removeRecipe(items, liquids);
 ```
 
-| Name    | Type                                                    |
-| ------- | ------------------------------------------------------- |
-| items   | [IItemStack](/Vanilla/Items/IItemStack)[string\]       |
-| liquids | [ILiquidStack](/Vanilla/Liquids/ILiquidStack)[string\] |
+| Название | Тип                                                     |
+| -------- | ------------------------------------------------------- |
+| items    | [IItemStack](/Vanilla/Items/IItemStack)[string\]       |
+| liquids  | [ILiquidStack](/Vanilla/Liquids/ILiquidStack)[string\] |
 
 ## Retrieving machine information
 

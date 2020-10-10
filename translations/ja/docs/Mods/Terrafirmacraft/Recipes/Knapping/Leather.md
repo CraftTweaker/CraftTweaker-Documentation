@@ -18,7 +18,7 @@ leatherKnapping.removeRecipe(IItemStack output);
 leatherKnapping.removeRecipe(String registryName);
 ```
 
-## Example
+## 例
 ```zenscript
 // quiver recipe
 leatherKnapping.addRecipe("recipe", <tfc:quiver>, " XXXX", "X XXX", "X XXX", "X XXX", " XXXX");

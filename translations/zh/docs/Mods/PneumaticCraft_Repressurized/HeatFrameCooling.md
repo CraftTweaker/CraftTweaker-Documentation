@@ -22,7 +22,7 @@ This function removes *all* Heat Frame Cooling recipes:
 mods.pneumaticcraft.heatframecooling.removeAllRecipes();
 ```
 
-## Adding
+## 添加
 
 These functions are used to add new recipes for the Heat Frame Cooling system:
 

@@ -5,7 +5,7 @@ The Steam Furnace is a machine that converts an input item into an output item u
 ## 所属包名
 `mods.steamagerevolution.SteamFurnace`
 
-## Methods
+## 方法
 
 - **[IItemStack](/Vanilla/Items/IItemStack/) output** The result of the recipe.
 - **[IItemStack](/Vanilla/Items/IItemStack/) input** The input of the recipe.

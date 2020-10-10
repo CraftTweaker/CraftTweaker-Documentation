@@ -17,7 +17,7 @@ You can find all registered ElvenTrade recipes using [`/ct botania trades`](/Mod
 mods.botania.ElvenTrade.addRecipe([<minecraft:iron_ingot>], [<minecraft:dirt>,<minecraft:grass>]);
 ```
 
-## Recipe removal
+## 删除配方
 
 ```zenscript
 //mods.botania.ElvenTrade.removeRecipe(IIngredient output);

@@ -21,7 +21,7 @@ public class ZenDocWiki {
 }
 ```
 
-## What methods can be annotated || Additional Info
+## Какие методы могут быть аннотированы || Дополнительная информация
 
 - You can annotate all methods, static and nonstatic.
 - Currently, this will only affect the generated HTML file when running [`/ct dumpzs`](/Vanilla/Commands/).

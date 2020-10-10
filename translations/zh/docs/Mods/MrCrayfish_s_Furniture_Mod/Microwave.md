@@ -22,7 +22,7 @@ mods.cfm.Microwave.remove(<minecraft:cooked_beef>);
 mods.cfm.Microwave.remove();
 ```
 
-## Adding
+## 添加
 
 ## Add a microwave recipe.
 

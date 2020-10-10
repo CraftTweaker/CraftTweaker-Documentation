@@ -9,7 +9,7 @@
 - **[IItemStack](/Vanilla/Items/IItemStack/) output**
 - **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input**
 
-## Addition
+## 加算
 
 ```zenscript
 mods.ic2.Macerator.addRecipe(IItemStack output, IIngredient input);

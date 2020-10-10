@@ -31,7 +31,7 @@ item.getMaxStackSize();
 item.setMaxStackSize(64);
 ```
 
-| Property Name         | Type                                                                                                            | Required | Default Value | Description/Notes                                                                    |
+| Property Name         | Тип                                                                                                             | Required | Default Value | Description/Notes                                                                    |
 | --------------------- | --------------------------------------------------------------------------------------------------------------- | -------- | ------------- | ------------------------------------------------------------------------------------ |
 | beaconPayment         | boolean                                                                                                         | No       | false         | Can be given to a beacon to enable bonuses                                           |
 | creativeTab           | [ICreativeTab](/Mods/ContentTweaker/Vanilla/Creatable_Content/Creative_Tab/)                                    | No       | Misc          | The Creative tab the item will be put in                                             |

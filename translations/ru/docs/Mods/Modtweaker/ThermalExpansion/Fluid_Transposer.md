@@ -4,7 +4,7 @@
 
 `mods.thermalexpansion.Transposer`
 
-## Addition
+## Сложение
 
 ```zenscript
 //mods.thermalexpansion.Transposer.addExtractRecipe(ILiquidStack output, IItemStack input, int energy);

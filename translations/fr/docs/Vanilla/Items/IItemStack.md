@@ -57,41 +57,42 @@ That means all functionality that is available to [IIngredient](/Vanilla/Variabl
 
 Read how to use them [here](/UsingThisWiki/). Also, check out the examples below.
 
-| ZenGetter/ZenMethod | ZenSetter/ZenMethod | Type                                                        |
-| ------------------- | ------------------- | ----------------------------------------------------------- |
-| definition          |                     | [IItemDefinition](/Vanilla/Items/IItemDefinition/)          |
-| name                |                     | string                                                      |
-| displayName         | displayName         | string                                                      |
-| maxStackSize        | maxStackSize        | int                                                         |
-| hardness            | hardness            | float                                                       |
-| damage              |                     | int                                                         |
-| maxDamage           | maxDamage           | int                                                         |
-| hasTag              |                     | bool                                                        |
-| tag                 | withTag(tag)        | [IData](/Vanilla/Data/IData/)                               |
-| ores                |                     | List<[IOreDictEntry](/Vanilla/OreDict/IOreDictEntry/)\>    |
-| toolClasses         |                     | List<string\>                                              |
-| itemEnchantability  |                     | int                                                         |
-| containerItem       |                     | IItemStack                                                  |
-| hasContainerItem    |                     | bool                                                        |
-| repairCost          | repairCost          | int                                                         |
-| canEditBlocks       |                     | bool                                                        |
-| isOnItemFrame       |                     | bool                                                        |
-| isEnchantable       |                     | bool                                                        |
-| isEnchanted         |                     | bool                                                        |
-| isDamaged           |                     | bool                                                        |
-| isDamageable        |                     | bool                                                        |
-| isItemBlock         |                     | bool (if contained item is an itemblock)                    |
-| isStackable         |                     | bool                                                        |
-| isBeaconPayment     |                     | bool                                                        |
-| hasEffect           |                     | bool                                                        |
-| hasDisplayName      |                     | bool                                                        |
-| metadata            |                     | int                                                         |
-| hasSubtypes         |                     | bool                                                        |
-| isEmpty             |                     | bool                                                        |
-| burnTime            |                     | int                                                         |
-| showsDurabilityBar  |                     | bool                                                        |
-| hasCustomEntity     |                     | bool                                                        |
-| enchantments        |                     | List<[IEnchantment](/Vanilla/Enchantments/IEnchantment/)\> |
+| ZenGetter/ZenMethod     | ZenSetter/ZenMethod | Type                                                        |
+| ----------------------- | ------------------- | ----------------------------------------------------------- |
+| definition              |                     | [IItemDefinition](/Vanilla/Items/IItemDefinition/)          |
+| name                    |                     | string                                                      |
+| displayName             | displayName         | string                                                      |
+| maxStackSize            | maxStackSize        | int                                                         |
+| hardness                | hardness            | float                                                       |
+| damage                  |                     | int                                                         |
+| maxDamage               | maxDamage           | int                                                         |
+| hasTag                  |                     | bool                                                        |
+| tag                     | withTag(tag)        | [IData](/Vanilla/Data/IData/)                               |
+| ores                    |                     | List<[IOreDictEntry](/Vanilla/OreDict/IOreDictEntry/)\>    |
+| toolClasses             |                     | List<string\>                                              |
+| itemEnchantability      |                     | int                                                         |
+| containerItem           |                     | IItemStack                                                  |
+| hasContainerItem        |                     | bool                                                        |
+| repairCost              | repairCost          | int                                                         |
+| canEditBlocks           |                     | bool                                                        |
+| isOnItemFrame           |                     | bool                                                        |
+| isEnchantable           |                     | bool                                                        |
+| isEnchanted             |                     | bool                                                        |
+| isDamaged               |                     | bool                                                        |
+| isDamageable            |                     | bool                                                        |
+| isItemBlock             |                     | bool (if contained item is an itemblock)                    |
+| isStackable             |                     | bool                                                        |
+| isBeaconPayment         |                     | bool                                                        |
+| hasEffect               |                     | bool                                                        |
+| hasDisplayName          |                     | bool                                                        |
+| metadata                |                     | int                                                         |
+| hasSubtypes             |                     | bool                                                        |
+| isEmpty                 |                     | bool                                                        |
+| burnTime                |                     | int                                                         |
+| showsDurabilityBar      |                     | bool                                                        |
+| hasCustomEntity         |                     | bool                                                        |
+| enchantments            |                     | List<[IEnchantment](/Vanilla/Enchantments/IEnchantment/)\> |
+| format@@0 matchTagExact |                     | bool                                                        |
 
 #### Amount
 
@@ -120,12 +121,14 @@ Read how to use them [here](/UsingThisWiki/). Also, check out the examples below
 
 #### Tags
 
-| Method call                    | Returns                                    | ParameterTypes                |
-| ------------------------------ | ------------------------------------------ | ----------------------------- |
-| `stack.withEmtpyTag()`         | A new IItemStack with the changed property |                               |
-| `stack.withTag(IData tag)`     | A new IItemStack with the changed property | [IData](/Vanilla/Data/IData/) |
-| `stack.removeTag(String name)` | A new IItemStack with the changed property | string                        |
-| `stack.updateTag(IData tag)`   | A new IItemStack with the changed property | [IData](/Vanilla/Data/IData/) |
+| Method call                                      | Returns                                    | ParameterTypes                      |
+| ------------------------------------------------ | ------------------------------------------ | ----------------------------------- |
+| `stack.withEmtpyTag()`                           | A new IItemStack with the changed property |                                     |
+| `stack.withTag(IData tag)`                       | A new IItemStack with the changed property | [IData](/Vanilla/Data/IData/)       |
+| `stack.withTag(tag IData, bool matchTagExact)`   | A new IItemStack with the changed property | [IData](/Vanilla/Data/IData/), bool |
+| `stack.removeTag(String nom)`                    | A new IItemStack with the changed property | string                              |
+| `format@@0 stack.updateTag(IData tag)`           | A new IItemStack with the changed property | [IData](/Vanilla/Data/IData/)       |
+| `stack.updateTag(tag IData, bool matchTagExact)` | A new IItemStack with the changed property | [IData](/Vanilla/Data/IData/), bool |
 
 #### Block Casting
 

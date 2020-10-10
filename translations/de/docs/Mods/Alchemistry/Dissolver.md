@@ -7,7 +7,7 @@
 - **[IItemStack](/Vanilla/Items/IItemStack/) input** - The input of the recipe.
 - **boolean relativeProbability** - Probability Calculation Boolean
 - **int rolls** -  Possibilty of Roles
-- **probabilityGroups** - An array of arrays with an double followed by any # of [IItemStack](/Vanilla/Items/IItemStack/)s. The double refers to the probability for its group.
+- **probabilityGroups** - An array of arrays with an double followed by any # of [IItemStack](/Vanilla/Items/IItemStack/)s. The double refers to the probability for its group. The double refers to the probability for its group.
 
 ## Addition
 ```zenscript

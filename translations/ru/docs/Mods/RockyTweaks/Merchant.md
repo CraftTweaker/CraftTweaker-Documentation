@@ -11,7 +11,7 @@ The following commands are added to retrieve information about the availible mer
 
 `mods.rockytweaks.Merchant`
 
-## Addition
+## Сложение
 
 Trades can be added to a specific merchant profession & carrer.
 

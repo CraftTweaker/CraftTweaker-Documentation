@@ -30,7 +30,7 @@ The following information can be retrieved from the event:
 | `target`            |                  | [IEntity](/Vanilla/Entities/IEntity/) |
 | `oldDamageModifier` |                  | float                                 |
 | `damageModifier`    | `damageModifier` | float型                                |
-| `isVanillaCrit`     |                  | boolean                               |
+| `isVanillaCrit`     |                  | boolean型                              |
 
 ## ZenMethods
 

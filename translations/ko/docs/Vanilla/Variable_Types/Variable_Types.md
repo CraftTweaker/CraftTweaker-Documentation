@@ -2,7 +2,7 @@
 
 As you surely already messed a bit with variables and values, you must've wondered, how CraftTweaker knows whether it's dealing with an Integer, an Item or an oreDic entry?
 
-The easiest way of declaring a variable is using ```var name = value;```. This creates the variable and casts it to the value it thinks is most fitting for the situation.
+The easiest way of declaring a variable is using ```var name = value;```을 이용하여 정의합니다. This creates the variable and casts it to the value it thinks is most fitting for the situation.
 
 ## Casting a variable to a specific type
 
@@ -31,7 +31,7 @@ recipes.remove(test);
 
 Here's an (incomplete) List of most variable types
 
-| Name (Name in CT)                                   | Explanation                                                                                           | Example                                              | Import                                    |
+| Name (Name in CT)                                   | 설명                                                                                                    | 예제                                                   | Import                                    |
 | --------------------------------------------------- | ----------------------------------------------------------------------------------------------------- | ---------------------------------------------------- | ----------------------------------------- |
 | Integer (int)                                       | Integers are whole Numbers (e.g. 1,2,3,...), caps at 2 147 483 647                                    | `var test = 10 as int;`                              |                                           |
 | [IItemStack](/Vanilla/Items/IItemStack/)            | Single items                                                                                          | `var test = <minecraft:dirt> as IItemStack;`   | import crafttweaker.item.IItemStack;      |

@@ -20,7 +20,7 @@ var pBuilder = mods.contenttweaker.MaterialSystem.getPartBuilder();
 
 You can set these Properties
 
-| ZenMethod                           | Parameter                                                           |
+| ZenMethod                           | 参数                                                                  |
 | ----------------------------------- | ------------------------------------------------------------------- |
 | setHasOverlay(hasOverlay)           | boolean hasOverlay                                                  |
 | setName(name)                       | string name                                                         |
@@ -41,7 +41,7 @@ pBuilder.build();
 
 This returns an [Part](/Mods/ContentTweaker/Materials/Parts/Part/) Object.
 
-## Example Script
+## 示例脚本
 
 ```zenscript
 var pBuilder = mods.contenttweaker.MaterialSystem.getPartBuilder();

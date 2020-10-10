@@ -27,7 +27,7 @@ There also is a third way of removing furnace recipes, though this one will remo
 furnace.removeAll();
 ```
 
-### Addition
+### Сложение
 
 There are 2 commands for adding furnace recipes:
 
@@ -59,7 +59,7 @@ This will set the burn value of `input` to `burnTime` in ticks. Minecraft coal b
 
 Setting the `burnTime` to `0` will stop the `input` from being a fuel item.
 
-### Get
+### getDrops
 
 The command for retrieving an item's fuel value is:
 
@@ -69,7 +69,7 @@ furnace.getFuel(IItemStack item);
 
 This will return the burn value as an Integer
 
-## Examples
+## Примеры
 
 ### Removal
 
@@ -85,7 +85,7 @@ This will remove all Furnace recipes `<minecraft:quartz>` that use `<minecraft:q
 furnace.remove(<minecraft:quartz>, <minecraft:quartz_ore>);
 ```
 
-### Addition
+### Сложение
 
 This will add a Furnace recipe that will output a `<minecraft:golden_apple>` when a `<minecraft:apple>` is smelted.
 

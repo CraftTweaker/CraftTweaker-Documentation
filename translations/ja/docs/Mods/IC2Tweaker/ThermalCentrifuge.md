@@ -10,7 +10,7 @@
 - **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input**
 - **@Optional int minHeat**
 
-## Addition
+## 加算
 
 ```zenscript
 mods.ic2.ThermalCentrifuge.addRecipe([IItemStack[] outputs, IIngredient input, @Optional int minHeat);

@@ -11,13 +11,13 @@ import mods.thermalexpansion.SteamDynamo;
 ## Add Fuel
 
 ```zenscript
-//mods.thermalexpansion.SteamDynamo.addFuel(ILiquidStack stack, int energy);
-mods.thermalexpansion.SteamDynamo.addFuel(<liquid:water>, 13);
+//mods.thermalexpansion.SteamDynamo.addFuel(IItemStack stack, int energy);
+mods.thermalexpansion.SteamDynamo.addFuel(<minecraft:stick>, 13);
 ```
 
 ## Remove Fuel
 
 ```zenscript
-//mods.thermalexpansion.SteamDynamo.removeFuel(ILiquidStack stack);
-mods.thermalexpansion.SteamDynamo.removeFuel(<liquid:water>);
+//mods.thermalexpansion.SteamDynamo.removeFuel(IItemStack stack);
+mods.thermalexpansion.SteamDynamo.removeFuel(<minecraft:stick>);
 ```

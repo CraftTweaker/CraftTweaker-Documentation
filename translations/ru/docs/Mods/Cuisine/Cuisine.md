@@ -1,6 +1,6 @@
 # Cuisine
 
-## Information
+## Дополнительная информация
 
 Cuisine is a mod about realistic culinary art. Cuisine has built-in support for CraftTweaker to allow modpack creator to change recipes for various devices from the Cuisine mod.
 

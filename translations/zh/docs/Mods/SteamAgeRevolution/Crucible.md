@@ -5,7 +5,7 @@ The Crucible is a machine that converts an input item into an output fluid using
 ## 所属包名
 `mods.steamagerevolution.Crucible`
 
-## Methods
+## 方法
 
 - **[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) output** The result of the recipe.
 - **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input** The input of the recipe.

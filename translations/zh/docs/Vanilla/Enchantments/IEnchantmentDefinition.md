@@ -13,7 +13,7 @@ You can retrieve such an object from the [Enchantment Bracket handler](/Vanilla/
 
 ## ZenGetters/ZenSetters
 
-| ZenGetter             | ZenSetter | Type    |
+| ZenGetter             | ZenSetter | 类型      |
 | --------------------- | --------- | ------- |
 | id                    |           | int     |
 | name                  | name      | string  |
@@ -76,7 +76,7 @@ if(enchA == enchB)
     print("Same!");
 ```
 
-## Example
+## 例子
 
 ```zenscript
 import crafttweaker.enchantments.IEnchantmentDefinition;

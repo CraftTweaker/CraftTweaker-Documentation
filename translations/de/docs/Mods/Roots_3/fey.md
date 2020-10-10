@@ -4,7 +4,7 @@
 import mods.roots.Fey;
 ```
 
-#### Methods
+#### Methoden
 
 ```zenscript
 void addRecipe(
@@ -35,7 +35,7 @@ void removeRecipe(
 
 * * *
 
-### Examples
+### Beispiele
 
 ```zenscript
 import mods.roots.Fey;

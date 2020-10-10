@@ -27,7 +27,7 @@ mods.immersiveengineering.CokeOven.addRecipe(<minecraft:coal>, 2, <ore:logWood>,
 | ------ | ---------------------------------------- |
 | Output | [IItemstack](/Vanilla/Items/IItemStack/) |
 
-### Example:
+### Beispiel:
 
 ```zenscript
 //Example:

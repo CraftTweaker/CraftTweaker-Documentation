@@ -8,13 +8,13 @@ You can call the Crusher package using `mods.immersiveengineering.Crusher`.
 
 ## 添加配方
 
-| Required | 类型               | Data Type                                           |
-| -------- | ---------------- | --------------------------------------------------- |
-| 必要       | Output           | [IItemStack](/Vanilla/Items/IItemStack/)            |
-| 必要       | Input            | [IIngredient](/Vanilla/Variable_Types/IIngredient/) |
-| Required | Energy           | int                                                 |
-| Optional | Secondary Output | [IItemStack](/Vanilla/Items/IItemStack/)            |
-| Optional | Secondary Chance | double                                              |
+| Required | 类型               | 数据类型                                                    |
+| -------- | ---------------- | ------------------------------------------------------- |
+| 必要       | 输出               | [IItemStack](/Vanilla/Items/IItemStack/)                |
+| 必要       | 输入               | [材料（IIngredient）](/Vanilla/Variable_Types/IIngredient/) |
+| Required | Energy           | int                                                     |
+| 可选       | Secondary Output | [IItemStack](/Vanilla/Items/IItemStack/)                |
+| 可选       | Secondary Chance | double                                                  |
 
 ### 例子
 
@@ -29,11 +29,11 @@ mods.immersiveengineering.Crusher.addRecipe(<minecraft:diamond>, <ore:logWood>, 
 
 ## Remove Recipe by Output
 
-| Type   | Data Type                                |
-| ------ | ---------------------------------------- |
-| Output | [IItemstack](/Vanilla/Items/IItemStack/) |
+| 类型 | 数据类型                                          |
+| -- | --------------------------------------------- |
+| 输出 | [物品堆（IItemstack）](/Vanilla/Items/IItemStack/) |
 
-### Example
+### 例子
 
 ```zenscript
 //Example:
@@ -44,11 +44,11 @@ mods.immersiveengineering.Crusher.removeRecipe(<minecraft:diamond>);
 
 ## Remove Recipe By Input
 
-| Type  | Data Type                                |
-| ----- | ---------------------------------------- |
-| Input | [IItemstack](/Vanilla/Items/IItemStack/) |
+| 类型 | 数据类型                                          |
+| -- | --------------------------------------------- |
+| 输入 | [物品堆（IItemstack）](/Vanilla/Items/IItemStack/) |
 
-### Example
+### 例子
 
 ```zenscript
 //Example:

@@ -8,7 +8,7 @@ You can call the MetalPress package using `mods.immersiveengineering.MetalPress`
 
 ## Add Recipe
 
-| Required | Type       | Data Type                                           |
+| Required | Тип        | Data Type                                           |
 | -------- | ---------- | --------------------------------------------------- |
 | Required | Output     | [IItemstack](/Vanilla/Items/IItemStack/)            |
 | Required | Input      | [IIngredient](/Vanilla/Variable_Types/IIngredient/) |
@@ -16,7 +16,7 @@ You can call the MetalPress package using `mods.immersiveengineering.MetalPress`
 | Required | Energy     | Integer                                             |
 | Required | Input Size | Integer                                             |
 
-### Example
+### Пример
 
 ```zenscript
 //Example:
@@ -28,11 +28,11 @@ mods.immersiveengineering.MetalPress.addRecipe(<minecraft:diamond>, <ore:logWood
 
 ## Remove Recipe
 
-| Type   | Data Type                                |
+| Тип    | Data Type                                |
 | ------ | ---------------------------------------- |
 | Output | [IItemstack](/Vanilla/Items/IItemStack/) |
 
-### Example
+### Пример
 
 ```zenscript
 //Example:
@@ -43,11 +43,11 @@ mods.immersiveengineering.MetalPress.removeRecipe(<minecraft:diamond>);
 
 ## Remove By Mold
 
-| Type   | Data Type                                |
+| Тип    | Data Type                                |
 | ------ | ---------------------------------------- |
 | Output | [IItemstack](/Vanilla/Items/IItemStack/) |
 
-### Example
+### Пример
 
 ```zenscript
 //Example:

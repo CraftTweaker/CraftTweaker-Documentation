@@ -25,7 +25,7 @@ If you call these functions, you will most likely do so to iterate through the r
 * Using the `itemArray` method on an [IIngredient](/Vanilla/Variable_Types/IIngredient/) returns a IItemStack[]: `<ore:ingotGold>.itemArray`
 * Using the `items` method on a [IMod](/Vanilla/Game/Mods/#imod) object returns a IItemStack[]: `loadedMods["minecraft"].items`
 
-## Functions
+## 関数
 
 So what can we do with that now?
 
@@ -92,6 +92,7 @@ Read how to use them [here](/UsingThisWiki/). Also, check out the examples below
 | showsDurabilityBar  |                     | bool型                                                       |
 | hasCustomEntity     |                     | bool                                                        |
 | enchantments        |                     | List<[IEnchantment](/Vanilla/Enchantments/IEnchantment/)\> |
+| matchTagExact       |                     | bool                                                        |
 
 #### Amount
 
@@ -120,12 +121,14 @@ Read how to use them [here](/UsingThisWiki/). Also, check out the examples below
 
 #### Tags
 
-| Method call                    | Returns                                    | ParameterTypes                |
-| ------------------------------ | ------------------------------------------ | ----------------------------- |
-| `stack.withEmtpyTag()`         | A new IItemStack with the changed property |                               |
-| `stack.withTag(IData tag)`     | A new IItemStack with the changed property | [IData](/Vanilla/Data/IData/) |
-| `stack.removeTag(String name)` | A new IItemStack with the changed property | string                        |
-| `stack.updateTag(IData tag)`   | A new IItemStack with the changed property | [IData](/Vanilla/Data/IData/) |
+| Method call                                      | Returns                                    | ParameterTypes                      |
+| ------------------------------------------------ | ------------------------------------------ | ----------------------------------- |
+| `stack.withEmtpyTag()`                           | A new IItemStack with the changed property |                                     |
+| `stack.withTag(IData tag)`                       | A new IItemStack with the changed property | [IData](/Vanilla/Data/IData/)       |
+| `stack.withTag(IData tag, bool matchTagExact)`   | A new IItemStack with the changed property | [IData](/Vanilla/Data/IData/), bool |
+| `stack.removeTag(String name)`                   | A new IItemStack with the changed property | string                              |
+| `stack.updateTag(IData tag)`                     | A new IItemStack with the changed property | [IData](/Vanilla/Data/IData/)       |
+| `stack.updateTag(IData tag, bool matchTagExact)` | A new IItemStack with the changed property | [IData](/Vanilla/Data/IData/), bool |
 
 #### Block Casting
 
@@ -171,7 +174,7 @@ You can find how to use these either in the [IIngredient](/Vanilla/Variable_Type
 [Item Conditions](/Vanilla/Items/Item_Conditions/)  
 [Item Transformers](/Vanilla/Items/Item_Transformers/)
 
-## Examples
+## 使用例
 
 #### DisplayName
 

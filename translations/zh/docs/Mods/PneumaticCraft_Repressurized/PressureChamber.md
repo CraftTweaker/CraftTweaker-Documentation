@@ -22,7 +22,7 @@ This function removes *all* Pressure Chamber recipes:
 mods.pneumaticcraft.pressurechamber.removeAllRecipes();
 ```
 
-## Adding
+## 添加
 
 This function is used to add new recipes to the Pressure Chamber:
 

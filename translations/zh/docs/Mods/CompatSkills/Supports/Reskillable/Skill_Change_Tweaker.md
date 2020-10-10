@@ -1,6 +1,6 @@
 # Skill_Change Tweaker
 
-## Feature:
+## 功能：
 
 This feature will allow you as the player to set a group of commands you want to run upon a player unlocking/locking a trait or reaching a specific Skill Level.
 

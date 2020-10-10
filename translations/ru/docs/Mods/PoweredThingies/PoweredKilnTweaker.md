@@ -22,7 +22,7 @@ pkt().clear()
 addRecipe(input: IItemStack, output: IItemStack)
 ```
 
-##### Example
+##### Пример
 
 ```zenscript
 pkt().addRecipe(<minecraft:bucket>, <minecraft:iron_ingot>);

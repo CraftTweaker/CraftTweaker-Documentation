@@ -21,7 +21,7 @@ mods.cfm.Toaster.remove(<cfm:item_toast>,<cfm:item_bread_slice>);
 mods.cfm.Toaster.remove();
 ```
 
-## Adding
+## 添加
 
 Add a toaster recipe.
 

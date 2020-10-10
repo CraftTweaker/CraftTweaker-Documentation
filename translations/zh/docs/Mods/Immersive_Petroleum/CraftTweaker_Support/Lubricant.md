@@ -4,8 +4,8 @@
 
 | 类型       | 数据类型                                         |
 | -------- | -------------------------------------------- |
-| Input    | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
-| mB/4tick | Integer                                      |
+| 输入       | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
+| mB/4tick | 整型                                           |
 
 ### Code Example:
 

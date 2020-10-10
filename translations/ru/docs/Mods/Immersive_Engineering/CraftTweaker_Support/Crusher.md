@@ -8,7 +8,7 @@ You can call the Crusher package using `mods.immersiveengineering.Crusher`.
 
 ## Add Recipe
 
-| Required | Type             | Data Type                                           |
+| Required | Тип              | Data Type                                           |
 | -------- | ---------------- | --------------------------------------------------- |
 | Required | Output           | [IItemStack](/Vanilla/Items/IItemStack/)            |
 | Required | Input            | [IIngredient](/Vanilla/Variable_Types/IIngredient/) |
@@ -16,7 +16,7 @@ You can call the Crusher package using `mods.immersiveengineering.Crusher`.
 | Optional | Secondary Output | [IItemStack](/Vanilla/Items/IItemStack/)            |
 | Optional | Secondary Chance | double                                              |
 
-### Example
+### Пример
 
 ```zenscript
 //Example:
@@ -29,11 +29,11 @@ mods.immersiveengineering.Crusher.addRecipe(<minecraft:diamond>, <ore:logWood>, 
 
 ## Remove Recipe by Output
 
-| Type   | Data Type                                |
+| Тип    | Data Type                                |
 | ------ | ---------------------------------------- |
 | Output | [IItemstack](/Vanilla/Items/IItemStack/) |
 
-### Example
+### Пример
 
 ```zenscript
 //Example:
@@ -44,11 +44,11 @@ mods.immersiveengineering.Crusher.removeRecipe(<minecraft:diamond>);
 
 ## Remove Recipe By Input
 
-| Type  | Data Type                                |
+| Тип   | Data Type                                |
 | ----- | ---------------------------------------- |
 | Input | [IItemstack](/Vanilla/Items/IItemStack/) |
 
-### Example
+### Пример
 
 ```zenscript
 //Example:

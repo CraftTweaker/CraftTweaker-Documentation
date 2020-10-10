@@ -23,7 +23,7 @@ See below for a quick list of links to each requirement type.
 | [Inverted Requirements](/Mods/CompatSkills/Requirements/Requirement_Types/Inverted_Requirements/)     |
 | [Items](/Mods/CompatSkills/Requirements/Requirement_Types/Items/)                                     |
 | [Logic Operators](/Mods/CompatSkills/Requirements/Requirement_Types/Logic_Operators/1_READ_ME_FIRST/) |
-| [Ore Dictionary](/Mods/CompatSkills/Requirements/Requirement_Types/Ore_Dictionary/)                   |
+| [Dictionnaire de minerai](/Mods/CompatSkills/Requirements/Requirement_Types/Ore_Dictionary/)          |
 | [Skills](/Mods/CompatSkills/Requirements/Requirement_Types/Skills/)                                   |
 | [Tool Harvest-Level](/Mods/CompatSkills/Requirements/Requirement_Types/Tool_Harvest-Level/)           |
 | [Traits](/Mods/CompatSkills/Requirements/Requirement_Types/Traits/)                                   |

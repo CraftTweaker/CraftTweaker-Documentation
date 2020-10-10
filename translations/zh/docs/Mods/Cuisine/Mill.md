@@ -1,6 +1,6 @@
 # Mill
 
-## Addition
+## 加
 
 ```zenscript
 import mods.cuisine.Mill;

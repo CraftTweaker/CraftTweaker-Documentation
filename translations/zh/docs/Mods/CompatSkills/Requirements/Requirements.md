@@ -18,12 +18,12 @@ See below for a quick list of links to each requirement type.
 | ----------------------------------------------------------------------------------------------------- |
 | [Advancements](/Mods/CompatSkills/Requirements/Requirement_Types/Advancements/)                       |
 | [Dimensions](/Mods/CompatSkills/Requirements/Requirement_Types/Dimensions/)                           |
-| [Dynamic Sword Skills](/Mods/CompatSkills/Requirements/Requirement_Types/Dynamic_Sword_Skills/)       |
+| [动态剑技](/Mods/CompatSkills/Requirements/Requirement_Types/Dynamic_Sword_Skills/)                       |
 | [GameStages](/Mods/CompatSkills/Requirements/Requirement_Types/GameStages/)                           |
 | [Inverted Requirements](/Mods/CompatSkills/Requirements/Requirement_Types/Inverted_Requirements/)     |
 | [Items](/Mods/CompatSkills/Requirements/Requirement_Types/Items/)                                     |
 | [Logic Operators](/Mods/CompatSkills/Requirements/Requirement_Types/Logic_Operators/1_READ_ME_FIRST/) |
-| [Ore Dictionary](/Mods/CompatSkills/Requirements/Requirement_Types/Ore_Dictionary/)                   |
+| [矿物词典](/Mods/CompatSkills/Requirements/Requirement_Types/Ore_Dictionary/)                             |
 | [Skills](/Mods/CompatSkills/Requirements/Requirement_Types/Skills/)                                   |
-| [Tool Harvest-Level](/Mods/CompatSkills/Requirements/Requirement_Types/Tool_Harvest-Level/)           |
+| [工具采掘等级](/Mods/CompatSkills/Requirements/Requirement_Types/Tool_Harvest-Level/)                       |
 | [Traits](/Mods/CompatSkills/Requirements/Requirement_Types/Traits/)                                   |

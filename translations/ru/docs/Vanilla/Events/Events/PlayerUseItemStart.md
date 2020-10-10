@@ -2,13 +2,13 @@
 
 The PlayerUseItemStart Event is fired whenever a player starts using an item.
 
-## Event Class
+## Класс события
 
 You will need to cast the event in the function header as this class:  
 `crafttweaker.event.PlayerUseItemStartEvent`  
 You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
 
-## Event interface extensions
+## Наследование от интерфейсов событий
 
 PlayerUseItemStart Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
 
@@ -17,9 +17,9 @@ PlayerUseItemStart Events implement the following interfaces and are able to cal
 
 ## ZenGetters
 
-The following information can be retrieved from the event:
+Следующая информация может быть получена от события:
 
-| ZenGetter  | Return Type                              |
+| ZenGetter  | Возвращаемый тип                         |
 | ---------- | ---------------------------------------- |
 | `canceled` | boolean                                  |
 | `player`   | [IPlayer](/Vanilla/Players/IPlayer/)     |

@@ -13,16 +13,16 @@ You can retrieve such an object from the [Enchantment Bracket handler](/Vanilla/
 
 ## ZenGetters/ZenSetters
 
-| ZenGetter             | ZenSetter | Type    |
-| --------------------- | --------- | ------- |
-| id                    |           | int型    |
-| name                  | name      | string  |
-| maxLevel              |           | int     |
-| minLevel              |           | int     |
-| isAllowedOnBooks      |           | boolean |
-| isTreasureEnchantment |           | boolean |
-| isCurse               |           | boolean |
-| registryName          |           | string  |
+| ZenGetter             | ZenSetter | Type     |
+| --------------------- | --------- | -------- |
+| id                    |           | int型     |
+| name                  | name      | string   |
+| maxLevel              |           | int      |
+| minLevel              |           | int      |
+| isAllowedOnBooks      |           | boolean型 |
+| isTreasureEnchantment |           | boolean型 |
+| isCurse               |           | boolean型 |
+| registryName          |           | string   |
 
 ## ZenMethods
 
@@ -76,7 +76,7 @@ if(enchA == enchB)
     print("Same!");
 ```
 
-## Example
+## 例
 
 ```zenscript
 import crafttweaker.enchantments.IEnchantmentDefinition;

@@ -7,7 +7,7 @@
 | Getter               | getFortuneLevel();                | fortuneLevel();                | Returns an Integer                                         |
 | Getter               | getDrops();                       | drops();                       | Returns a List of [IItemStack](/Vanilla/Items/IItemStack/) |
 | Setter               | setDrops(List<iitemstack> drops); | drops(List<iitemstack> drops); | Takes an List of [IItemStack](/Vanilla/Items/IItemStack/)  |
-| Method               | addItem(IItemStack itemStack);    | addItem(IItemStack itemStack); | Takes an [IItemStack](/Vanilla/Items/IItemStack/)          |
+| Метод                | addItem(IItemStack itemStack);    | addItem(IItemStack itemStack); | Takes an [IItemStack](/Vanilla/Items/IItemStack/)          |
 | Getter               | isSilkTouch();                    | silkTouch();                   | Returns a Boolean                                          |
 | Getter               | isPlayer();                       | isPlayer();                    | Returns a Boolean                                          |
 | Getter               | getPlayer();                      | player();                      | Returns a [IPlayer](/Vanilla/Players/IPlayer/)             |

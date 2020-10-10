@@ -18,7 +18,7 @@ ProjectileImpactArrow Events implement the following interfaces and are able to 
 
 The following information can be retrieved from the event:
 
-| ZenGetter      | ZenSetter           | Type                                  |
+| ZenGetter      | ZenSetter           | 类型                                    |
 | -------------- | ------------------- | ------------------------------------- |
 | `arrow`        |                     | [IEntity](/Vanilla/Entities/IEntity/) |
 | `shooter`      |                     | [IEntity](/Vanilla/Entities/IEntity/) |

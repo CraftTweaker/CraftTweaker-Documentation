@@ -6,13 +6,13 @@ You can call the BottlingMachine package using `mods.immersiveengineering.Bottli
 
 ## Add Recipe
 
-| Required | Type   | Data Type                                           |
+| Required | Тип    | Data Type                                           |
 | -------- | ------ | --------------------------------------------------- |
 | Required | Output | [IItemstack](/Vanilla/Items/IItemStack/)            |
 | Required | Input  | [IIngredient](/Vanilla/Variable_Types/IIngredient/) |
 | Required | Fluid  | [Fluidstack](/Vanilla/Liquids/ILiquidStack/)        |
 
-### Example
+### Пример
 
 ```zenscript
 //Example:
@@ -22,11 +22,11 @@ mods.immersiveengineering.BottlingMachine.addRecipe(<minecraft:diamond>, <ore:lo
 
 ## Remove Recipe
 
-| Type   | Data Type                                |
+| Тип    | Data Type                                |
 | ------ | ---------------------------------------- |
 | Output | [IItemstack](/Vanilla/Items/IItemStack/) |
 
-### Example
+### Пример
 
 ```zenscript
 //Example:

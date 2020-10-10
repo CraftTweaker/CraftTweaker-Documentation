@@ -28,7 +28,7 @@ mods.cfm.Freezer.remove(null,<minecraft:lava_bucket>);
 mods.cfm.Freezer.remove();
 ```
 
-## Adding
+## 添加
 
 Add a freezer recipe.
 

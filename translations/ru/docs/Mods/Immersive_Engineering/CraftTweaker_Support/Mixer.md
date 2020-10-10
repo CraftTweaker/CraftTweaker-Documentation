@@ -8,14 +8,14 @@ You can call the Mixer package using `mods.immersiveengineering.Mixer`.
 
 ## Add Recipe
 
-| Required | Type         | Data Type                                                    |
+| Required | Тип          | Data Type                                                    |
 | -------- | ------------ | ------------------------------------------------------------ |
 | Required | Fluid Output | [Fluidstack](/Vanilla/Liquids/ILiquidStack/)                 |
 | Required | Fluid Input  | [Fluidstack](/Vanilla/Liquids/ILiquidStack/)                 |
 | Required | Item Inputs  | [IIngredient](/Vanilla/Variable_Types/IIngredient/) as Array |
 | Required | Energy       | Integer                                                      |
 
-### Example
+### Пример
 
 ```zenscript
 //Example:
@@ -26,11 +26,11 @@ mods.immersiveengineering.Mixer.addRecipe(<liquid:lava>, <liquid:water>, [<ore:l
 
 ## Remove Recipe
 
-| Type   | Data Type                                    |
+| Тип    | Data Type                                    |
 | ------ | -------------------------------------------- |
 | Output | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
 
-### Example
+### Пример
 
 ```zenscript
 //Example:

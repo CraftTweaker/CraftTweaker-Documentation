@@ -13,7 +13,7 @@ You can call the Resonator package using `mods.extrautils2.Resonator`
 mods.extrautils2.Resonator.remove(<minecraft:redstone>);
 ```
 
-## Addition
+## Сложение
 
 ```zenscript
 <br />//1 GP = 100 energy

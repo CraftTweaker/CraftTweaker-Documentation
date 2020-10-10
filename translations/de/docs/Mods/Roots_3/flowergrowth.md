@@ -4,7 +4,7 @@
 import mods.roots.FlowerGrowth;
 ```
 
-#### Methods
+#### Methoden
 
 ```zenscript
 void removeRecipe(
@@ -33,7 +33,7 @@ void addRecipeBlock(
 
 * * *
 
-### Examples
+### Beispiele
 
 ```zenscript
 import mods.roots.FlowerGrowth;

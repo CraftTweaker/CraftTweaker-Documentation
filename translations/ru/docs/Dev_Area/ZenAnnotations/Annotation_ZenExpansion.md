@@ -30,4 +30,4 @@ This parameter will not be available in ZS.
 - All Methods need to begin with a parameter that represents the expanded class' instance. Also, all Methods inside the expansion must be static (... and public).
 - You can annotate all Java Classes
 - You must give the annotation a String value (e.g. `crafttweaker.item.IItemStack`). This String value must represent an already existing ZenClass' name.
-- After declaring a class a ZenExpansion, you still need to register it. It is recommended that you use [`@ZenRegister`](/Dev_Area/ZenAnnotations/Annotation_ZenRegister/) for that.
+- After declaring a class a ZenExpansion, you still need to register it. Рекомендуется, чтобы вы использовали для этого [`@ZenRegister`](/Dev_Area/ZenAnnotations/Annotation_ZenRegister/).

@@ -142,3 +142,4 @@ IEntity наследует от [ICommandSender](/Vanilla/Commands/ICommandSende
 - boolean isRidingSameEntity(IEntity other);
 - [IRayTraceResult](/Vanilla/World/IRayTraceResult/) getRayTrace(double blockReachDistance, float partialTicks, @Optional boolean stopOnLiquid, @Optional boolean ignoreBlockWithoutBoundingBox, @Optional(valueBoolean = true) boolean returnLastUncollidableBlock);
 - void update([IData](/Vanilla/Data/IData/) data);
+- boolean onGround(); → Returns true if the entity is on the ground, and false when in the air

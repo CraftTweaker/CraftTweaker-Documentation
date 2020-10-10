@@ -34,7 +34,7 @@ void replaceRecipe(
 
 * * *
 
-### Examples
+### 使用例
 
 ```zenscript
 import mods.arcanearchives.GCT;

@@ -46,7 +46,7 @@ val markedPick = <minecraft:diamond_pickaxe>.marked("Picky");
 print(markedPick.mark);
 ```
 
-### Amount
+### Количество
 
 If you want to use more than one of a given item, you can set an amount to an IIngredient.  
 This is as easy as multiplying the IIngredient with an Integer.  

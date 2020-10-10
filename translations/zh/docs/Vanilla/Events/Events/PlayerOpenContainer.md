@@ -12,19 +12,13 @@ You can, of course, also [import](/AdvancedFunctions/Import/) the class before a
 
 PlayerOpenContainer Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
 
-- [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 - [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
 
 ## ZenGetters
 
 The following information can be retrieved from the event:
 
-| ZenGetter   | Return Type                                  |
+| ZenGetter   | 返回值类型                                        |
 | ----------- | -------------------------------------------- |
-| `canceled`  | boolean                                      |
 | `player`    | [IPlayer](/Vanilla/Players/IPlayer/)         |
 | `container` | [IContainer](/Vanilla/Container/IContainer/) |
-
-## ZenMethods
-
-- `event.cancel()` sets the event as cancelled.

@@ -4,7 +4,7 @@
 
 `mods.actuallyadditions.Crusher`
 
-## Addition
+## Сложение
 
 ```zenscript
 //mods.actuallyadditions.Crusher.addRecipe(IItemStack output, IItemStack input, @Optional IItemStack outputSecondary, @Optional int outputSecondaryChance);

@@ -18,7 +18,7 @@ PlayerDeathDrops Events implement the following interfaces and are able to call 
 
 ## ZenGetter/ZenSetter
 
-| ZenGetter        | ZenSetter        | Type  |
+| ZenGetter        | ZenSetter        | 类型    |
 | ---------------- | ---------------- | ----- |
 | disance          | disance          | float |
 | damageMultiplier | damageMultiplier | float |

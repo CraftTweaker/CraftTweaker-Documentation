@@ -366,7 +366,7 @@ Beschreibung:
 
 Outputs a list of all the furnace recipes in the game to the crafttweaker.log file.
 
-## Scripts
+## Skripte
 
 Usage:
 

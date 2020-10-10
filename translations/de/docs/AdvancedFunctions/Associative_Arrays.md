@@ -35,7 +35,7 @@ You refer to items inside an Associative Array the same way you refer to items i
 Only difference is this time, you don't necessarily need to use an Integer as index, but whatever type you declared your Array to be!
 
 ```zenscript
-<br />val dirt = <minecraft:dirt>;
+<br /><br />val dirt = <minecraft:dirt>;
 val assocArray = {
     <minecraft:dirt> : "Das bin ich"
 } as string[IItemStack];
@@ -152,5 +152,6 @@ val myEntry = map.entrySet[0];
 
 
 myEntry.key;    //Gibt den Schlüssel des Eintrags aus
+myEntry.value;  //Gibt den Wert des Eintrags aus
 myEntry.value;  //Gibt den Wert des Eintrags aus
 ```

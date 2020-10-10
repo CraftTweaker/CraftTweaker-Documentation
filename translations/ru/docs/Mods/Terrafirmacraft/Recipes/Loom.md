@@ -5,7 +5,7 @@
 import mods.terrafirmacraft.Loom;
 ```
 
-## Addition
+## Сложение
 
 ```zenscript
 Loom.addRecipe(String registryName, IIngredient input, IItemStack output, int steps, String loomTexture);

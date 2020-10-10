@@ -16,6 +16,8 @@ It refers to a block in the game.
 * Using the getBlock(x,y,z) on an [IWorld](/Vanilla/World/IWorld/).
 * Using getBlock() on ContentTweaker's [ICTBlockState](/Mods/ContentTweaker/Vanilla/Types/Block/ICTBlockState/)
 
+Предупреждение: Только использование второго метода возможно для `данных` ZenGetter, чтобы вернуть ненулевую IData!
+
 ## Геттеры
 
 | Геттер     | Что он делает                      | Возвращаемый тип                                      |
@@ -26,7 +28,7 @@ It refers to a block in the game.
 
 # IBlockPattern
 
-IBlocks extend [IBlockPattern](/Vanilla/Blocks/IBlockPattern/) Objects. That means, all functions that are available to IBlockPattern objects can also be used for IBlock objects:
+IBlocks расширяют [IBlockPattern](/Vanilla/Blocks/IBlockPattern/) объекты. Это означает, что все функции, доступные объектам IBlockPattern, также могут быть использованы для IBlock объектов:
 
 * Use the `blocks` ZenGetter
 * OR'ing

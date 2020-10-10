@@ -8,13 +8,13 @@ You can call the ArcFurnace package using `mods.immersiveengineering.ArcFurnace`
 
 ## 添加配方
 
-| Required | 类型                  | Data Type                                                                              |
+| Required | 类型                  | 数据类型                                                                                   |
 | -------- | ------------------- | -------------------------------------------------------------------------------------- |
-| 必要       | Output              | [IItemStack](/Vanilla/Items/IItemStack/)                                               |
-| 必要       | Input               | [IIngredient](/Vanilla/Variable_Types/IIngredient/)                                    |
+| 必要       | 输出                  | [IItemStack](/Vanilla/Items/IItemStack/)                                               |
+| 必要       | 输入                  | [材料（IIngredient）](/Vanilla/Variable_Types/IIngredient/)                                |
 | Required | Slag                | [IItemStack](/Vanilla/Items/IItemStack/)                                               |
-| 必要       | Time                | Integer                                                                                |
-| 必要       | Energy Per Tick     | Integer                                                                                |
+| 必要       | Time                | 整型                                                                                     |
+| 必要       | Energy Per Tick     | 整型                                                                                     |
 | 可选       | Additives           | [IIngredient](/Vanilla/Variable_Types/IIngredient/) Array[]                            |
 | 可选       | Special Recipe Type | String [specialRecipeTypes](/Mods/Immersive_Engineering/Variables/SpecialRecipeTypes/) |
 
@@ -32,11 +32,11 @@ mods.immersiveengineering.ArcFurnace.addRecipe(<minecraft:diamond>, <ore:logWood
 
 ## Remove Recipe
 
-| Type   | Data Type                                |
-| ------ | ---------------------------------------- |
-| Output | [IItemstack](/Vanilla/Items/IItemStack/) |
+| 类型 | 数据类型                                          |
+| -- | --------------------------------------------- |
+| 输出 | [物品堆（IItemstack）](/Vanilla/Items/IItemStack/) |
 
-### Example
+### 例子
 
 ```zenscript
 //Example:

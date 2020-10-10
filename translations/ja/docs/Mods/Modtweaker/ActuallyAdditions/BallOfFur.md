@@ -4,7 +4,7 @@
 
 `mods.actuallyadditions.BallOfFur`
 
-## Addition
+## 加算
 
 ```zenscript
 //mods.actuallyadditions.BallOfFur.addReturn(IItemStack output, int chance);

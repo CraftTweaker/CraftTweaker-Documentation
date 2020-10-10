@@ -10,9 +10,9 @@ You can get and set the failchance for the Mineralmix using the failChance [ZenS
 
 ## Get Mineral
 
-| Required | Тип  | Data Type |
-| -------- | ---- | --------- |
-| Required | Name | string    |
+| Required | Тип      | Data Type |
+| -------- | -------- | --------- |
+| Required | Название | string    |
 
 ```zenscript
 //Example:
@@ -46,7 +46,7 @@ mineralMixObject.removeOre("oreIron");
 
 ## Fail Chance Getter/Setter
 
-### Example
+### Пример
 
 ```zenscript
 //Getter
