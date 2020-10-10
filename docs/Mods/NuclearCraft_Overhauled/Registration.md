@@ -24,7 +24,7 @@ It will also register a coolant port for with the registry name `nuclearcraft:co
 ```zenscript
 #loader preinit
 
-//mods.nuclearcraft.Registration.registerFissionHeater(string name, int coolingValue, string placementRule);
+//mods.nuclearcraft.Registration.registerFissionHeater(string name, string inputFluid, int inputFluidAmount, string outputFluid, int outputFluidAmount, int coolingValue, string placementRule);
 mods.nuclearcraft.Registration.registerFissionHeater("extreme", "tritium", 1, "deuterium", 1, 210, "exactly one sic_sic_cmc heater");
 mods.nuclearcraft.Registration.registerFissionHeater("sic_sic_cmc", "helium3", 1, "helium", 1, 215, "exactly one lead heater");
 ```
