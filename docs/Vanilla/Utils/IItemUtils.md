@@ -1,7 +1,7 @@
 # IItemUtils
 
 The ItemUtils interface provides various item utils.  
-It can be accessed using the `items` keyword.
+It can be accessed using the `itemUtils` keyword.
 
 ## Creating Potions
 The createPotions function allows you to create custom potions.  
