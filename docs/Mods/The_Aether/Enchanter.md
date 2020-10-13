@@ -14,5 +14,6 @@ Enchanter.registerEnchantment(IItemStack repair, int timeRequired); // Add an it
 
 Enchanter.registerEnchanterFuel(IItemStack input, int timeGiven); // Add an item as a fuel for repairing, timeGiven is in ticks
 
+// New in 1.5.2
 Enchanter.removeEnchantment(IItemStack input); // Removes enchanter recipes with the given input
 ```
