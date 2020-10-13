@@ -6,12 +6,12 @@ The IMobSpawnerBaseLogic object contains all kinds of information on how and whe
 It might be required to [import](/AdvancedFunctions/Import/) the class to avoid errors.  
 `import crafttweaker.tileentity.IMobSpawnerBaseLogic;`
 
-## ZenGetters
+## ZenGetters/ZenSetters
 
 | ZenGetter   | ZenSetter          | Description         | Type                                     |
 |-------------|--------------------|---------------------|------------------------------------------|
 | `nbtData`   | `nbtData`          | NBT Data for the spawner. (See below) | [IData](/Vanilla/Data/IData/)  |
-|             | `entityDefinition` | Entity Definition to be spawned. | [IPlayer](/Vanilla/Players/IPlayer/)  |
+| `entityDefinition` | `entityDefinition` | Entity Definition to be spawned. | [IEntityDefinition](/Vanilla/Entities/IEntityDefinition/)  |
 | `world`     |                    | World that the spawner belongs to. | [IWorld](/Vanilla/World/IWorld) |
 | `blockPos`  |                    | The position of the spawner block. | [IBlockPos](/Vanilla/World/IBlockPos) |
 
