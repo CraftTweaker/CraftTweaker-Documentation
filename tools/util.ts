@@ -1,15 +1,21 @@
 let fs = require('fs');
 let path = require('path');
 
-export const listFiles = (dir: string, filelist: string[]) => {
+export const listFiles = (dir: string, filelist: string[], extensionFilters: string[]) => {
+    let shouldFilter = extensionFilters.length > 0;
     let files = fs.readdirSync(dir);
     filelist = filelist || [];
     files.forEach(function (file: string) {
         if (fs.statSync(path.join(dir, file)).isDirectory()) {
-            filelist = listFiles(path.join(dir, file) + '/', filelist);
+            filelist = listFiles(path.join(dir, file) + '/', filelist, extensionFilters);
         } else {
-            if (file.endsWith(".md"))
+            if (!shouldFilter) {
                 filelist.push(path.join(dir, file));
+            } else {
+                for (let filter of extensionFilters) {
+                    if (file.endsWith("." + filter)) filelist.push(path.join(dir, file))
+                }
+            }
         }
     });
     return filelist;
