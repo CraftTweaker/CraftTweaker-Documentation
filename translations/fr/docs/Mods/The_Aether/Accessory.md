@@ -1,13 +1,13 @@
-# Accessory
+# Accessoire
 
 ## Package
 
 ```zenscript
-import mods.aether_legacy.Accessory;
+Importer mods.aether_legacy.Accessoires ;
 ```
 ## Usage
 
 ```zenscript
-Accessory.registerAccessory(IItemStack input, String accessory);
+// Les types possibles sont "anneau", "pendant", "cape", "bouclier", "gants" et "miscellaneous" (insensible à la casse)
+Accessoires. egisterAccessory(IItemStack, String type); // Enregistre un élément en tant qu'accessoire Aether
 ```
-- Accesory string can be "Ring", "Pendant", "Cape", "Shield", "Gloves", "Miscellaneous"
