@@ -28,7 +28,7 @@ craftingTable.addJSONRecipe("recipe_name", {ingredient:{item:<item:minecraft:gol
 | Parameter | Type                                                   | Description                     |
 | --------- | ------------------------------------------------------ | ------------------------------- |
 | name      | String                                                 | name of the recipe              |
-| data      | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | data representing the json file |
+| データ       | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | data representing the json file |
 
 
 ### addShaped
