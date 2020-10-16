@@ -1,48 +1,48 @@
-# IFacing
+# IFing
 
-The IFacing Interface allows you to get an [IBlockPos's](/Vanilla/World/IBlockPos/) possible directions.
+IFacing インターフェイスでは、 [IBlockPosの](/Vanilla/World/IBlockPos/) 可能な方向を取得できます。
 
 ## パッケージのインポート
 
-It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
+問題が発生した場合は、パッケージをインポートする必要があるかもしれませんので、申し訳ありませんし、インポートを追加してください。  
 `import crafttweaker.world.IFacing;`
 
 ## Enumerations
 
-The facing Interface has 7 static Methods, each returning the said direction.  
-The last one takes the direction as String input (e.g. `"NORTH"`)
+Facingインタフェースには、その方向を返す6つの静的メソッドがあります。  
+また、文字列入力として方向を取るもう1つを持っています(例: `"NORTH"`)
 
 ```zenscript
-crafttweaker.world.Facing.north()
-crafttweaker.world.Facing.east()
-crafttweaker.world.Facing.south()
-crafttweaker.world.Facing.west()
-crafttweaker.world.Facing.down()
-crafttweaker.world.Facing.up()
+crafttweaker.world.IFacing.north()
+crafttweaker.world.IFacing.east()
+crafttweaker.world.IFacing.south()
+crafttweaker.world.IFacing.west()
+crafttweaker.world.IFacing.down()
+crafttweaker.world.IFacing.up()
 
 
-crafttweaker.world.Facing.fromString(String name);
+crafttweaker.world.IFacing.fromString(String name);
 ```
 
 ## ZenGetters/ZenMethods without parameters
 
-| ZenGetter | ZenMethod  | Return Type |
-| --------- | ---------- | ----------- |
-| name      | getName()  | string      |
-| rotateY   | rotateY()  | IFacing     |
-| opposite  | opposite() | IFacing     |
+| ZenGetter | ZenMethod | Return Type |
+| --------- | --------- | ----------- |
+| name      | getName() | string      |
+| rotateY   | rotateY() | IFing       |
+| 正反対の      | 正反対()     | IFing       |
 
-## Other methods
+## その他の方法
 
-### Comparing two Facings
+### 2つの面の比較
 
 You can compare two facings using the standart comparing Operators `== != < > <= >=`  
 Alternatively, you can use the function, though the function returns an int that is 0 if they are equal.
 
 ```zenscript
-//Returns true or false
+//true または false
 facingOne == facingTwo;
 
-//Returns 0 if they are equal
+//0 が等しい場合は 0 を返す
 facingOne.compare(facingTwo);
 ```
