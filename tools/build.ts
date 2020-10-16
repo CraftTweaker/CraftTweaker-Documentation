@@ -141,26 +141,6 @@ const buildIndex = (folder: string) => {
 
 };
 
-const attemptMerge = (buildsDir: string, exportedDocs: string, dirs: string[]): string[] => {
-    let foundJsons: string[] = [];
-    dirs.forEach(relativeDir => {
-        let dir: string = path.join(exportedDocs, relativeDir);
-        fs.copySync(dir, buildsDir);
-        let fileList: string[] = [];
-        listFiles(dir, fileList, ["json"]);
-        let json = fileList.find((value: string, _i: number, _obj: string[]) => {
-            return value.endsWith("docs.json");
-        });
-        if (json !== undefined) {
-            fs.removeSync(path.join(buildsDir, 'docs.json'));
-            foundJsons.push(json);
-        } else {
-            console.error(`Directory '` + dir + `' does not define any 'docs.json' files: check your build script`);
-        }
-    });
-    return foundJsons;
-};
-
 const doJsonMerge = (jsonPaths: string[]): any => {
     let json: any = {};
     jsonPaths.forEach((path: string) => {
