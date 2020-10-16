@@ -1,7 +1,7 @@
 # If you add a page, you must add it to the index here
 nav:
   - Home: 'index.md'
-  - Le Basi dello Scripting: 'getting_started.md'
+  Le Basi dello Scripting: 'getting_started.md'
   - Comandi: "commands.md"
   - Esempi: "examples.md"
   - Recipes:
