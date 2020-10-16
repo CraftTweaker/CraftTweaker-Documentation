@@ -573,7 +573,7 @@ nav:
       - GregTech Community Edition: 'Mods/GregTechCE/GregTechCE.md'
       - Machines: 'Mods/GregTechCE/Machines.md'
       - Material: 'Mods/GregTechCE/Material.md'
-    - Heterorustichromia
+    - Heterorustichromia:
       - Recipes: 'Mods/Heterorustichromia/Recipes.md'
     - IC2 Tweaker:
       - Blast Furnace: 'Mods/IC2Tweaker/Blast_Furnace.md'
