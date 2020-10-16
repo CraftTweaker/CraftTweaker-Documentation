@@ -114,7 +114,7 @@ const buildIndex = (folder: string) => {
         });
     });
     if(linkError){
-        throw "Link check failed!";
+        throw new Error("Link check failed!");
     }
     // Convert to relative links that we can use
     docs = docs.map(value => {
