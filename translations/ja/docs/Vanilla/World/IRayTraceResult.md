@@ -20,4 +20,4 @@ Be careful though, since all getters that do not return a bool can return `null`
 | isBlock  | bool                                   |
 | entity   | [IEntity](/Vanilla/Entities/IEntity/)  |
 | blockPos | [IBlockPos](/Vanilla/World/IBlockPos/) |
-| sideHit  | [IFacing](/Vanilla/World/IFacing/)     |
+| sideHit  | [IFing](/Vanilla/World/IFacing/)       |
