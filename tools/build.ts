@@ -150,7 +150,7 @@ const build = async () => {
     fs.mkdirsSync(path.join(buildsDir, path.join("en", "docs")));
     fs.copySync("docs", path.join(buildsDir, path.join("en", "docs")));
     fs.copySync("mkdocs.yml", path.join(buildsDir, path.join(`en`, "mkdocs.yml")));
-    fs.copySync("docs.yml", path.join(buildsDir, path.join(`en`, "docs.yml")));
+    fs.copySync("docs.json", path.join(buildsDir, path.join(`en`, "docs.json")));
     console.log(`Copied translations!`);
     let languages = getLanguages(buildsDir);
     console.log("Building Search indices");
