@@ -195,11 +195,11 @@ const build = async () => {
                 let dstDir = path.join(buildsDir, path.join(lang, "docs"));
                 let dupes = checkForDuplicates(docsDir, dstDir, true);
                 if (dupes.length > 0) {
-                    console.error(`Duplicate files were identified: docs merging cannot proceed!`);
-                    throw new Error(`Duplicate files were identified for language ${lang}: ${dupes}`);
+                    console.error(`Duplicate files were identified for language ${lang}: docs merging will ignore these files!`);
+                    console.error(`Found files: ${dupes}`);
                 }
 
-                fs.copySync(docsDir, path.join(buildsDir, path.join(lang, "docs")), { overwrite: false, errorOnExist: true });
+                fs.copySync(docsDir, path.join(buildsDir, path.join(lang, "docs")), { overwrite: false, errorOnExist: false });
 
                 if (fs.existsSync(docsJson)) {
                     languageJsons.push(docsJson);
