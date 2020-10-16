@@ -29,7 +29,7 @@ blastFurnace.addJSONRecipe("recipe_name", {ingredient:{item:<item:minecraft:gold
 | Parameter | Type                                                   | Beschreibung                    |
 | --------- | ------------------------------------------------------ | ------------------------------- |
 | name      | String                                                 | name of the recipe              |
-| data      | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | data representing the json file |
+| daten     | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | data representing the json file |
 
 
 ### addRecipe
