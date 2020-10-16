@@ -96,7 +96,7 @@ myMapData.contains("Display");
 
 | Parameter | Type                                                   | Description                      |
 | --------- | ------------------------------------------------------ | -------------------------------- |
-| data      | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | data to check if it is contained |
+| dati      | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | data to check if it is contained |
 
 
 ### copy
@@ -242,7 +242,7 @@ myMapData + data as crafttweaker.api.data.IData
 
 | Parameter | Type                                                   | Description                 |
 | --------- | ------------------------------------------------------ | --------------------------- |
-| data      | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | Nessuna descrizione fornita |
+| dati      | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | Nessuna descrizione fornita |
 
 ## Caster
 
