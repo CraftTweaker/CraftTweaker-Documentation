@@ -1,4 +1,4 @@
-# IBlockDefinition
+# Définition IBlock
 
 The IBlockDefinition objects provide additional information on blocks.
 
