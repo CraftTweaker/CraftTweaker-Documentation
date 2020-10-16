@@ -76,7 +76,7 @@ new StringData("Hello").contains("Display");
 
 | Parameter | Type                                                   | Description                      |
 | --------- | ------------------------------------------------------ | -------------------------------- |
-| data      | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | data to check if it is contained |
+| データ       | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | data to check if it is contained |
 
 
 ### copy
@@ -134,5 +134,5 @@ new StringData("Hello") + new StringData("World")
 
 | Parameter | Type                                                             | Description              |
 | --------- | ---------------------------------------------------------------- | ------------------------ |
-| data      | [crafttweaker.api.data.StringData](/vanilla/api/data/StringData) | The other data to append |
+| データ       | [crafttweaker.api.data.StringData](/vanilla/api/data/StringData) | The other data to append |
 
