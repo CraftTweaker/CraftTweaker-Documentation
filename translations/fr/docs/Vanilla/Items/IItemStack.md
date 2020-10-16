@@ -154,12 +154,12 @@ Read how to use them [here](/UsingThisWiki/). Also, check out the examples below
 
 #### canItem...
 
-| Method call                                        | Returns                                                        | ParameterTypes                                        |
-| -------------------------------------------------- | -------------------------------------------------------------- | ----------------------------------------------------- |
-| `stack.canPlaceOn(IBlockDefinition block)`         | A bool that tells if the item can be placed on the block.      | [IBlockDefinition](/Vanilla/Blocks/IBlockDefinition/) |
-| `stack.canDestroy(IBlockDefinition block)`         | A bool that tells if the item can destroy the block.           | [IBlockDefinition](/Vanilla/Blocks/IBlockDefinition/) |
-| `stack.canHarvestBlock(IBlockState block)`         | A bool that tells if the item can harvest the block.           | [IBlockState](/Vanilla/Blocks/IBlockState/)           |
-| `stack.getStrengthAgainstBlock(IBlockState block)` | A float that represents the item's strength against the block. | [IBlockState](/Vanilla/Blocks/IBlockState/)           |
+| Method call                                        | Returns                                                        | ParameterTypes                                         |
+| -------------------------------------------------- | -------------------------------------------------------------- | ------------------------------------------------------ |
+| `stack.canPlaceOn(IBlockDefinition block)`         | A bool that tells if the item can be placed on the block.      | [Définition IBlock](/Vanilla/Blocks/IBlockDefinition/) |
+| `stack.canDestroy(IBlockDefinition block)`         | A bool that tells if the item can destroy the block.           | [Définition IBlock](/Vanilla/Blocks/IBlockDefinition/) |
+| `stack.canHarvestBlock(IBlockState block)`         | A bool that tells if the item can harvest the block.           | [IBlockState](/Vanilla/Blocks/IBlockState/)            |
+| `stack.getStrengthAgainstBlock(IBlockState block)` | A float that represents the item's strength against the block. | [IBlockState](/Vanilla/Blocks/IBlockState/)            |
 
 #### create IEntityItem
 
