@@ -142,35 +142,7 @@ const buildIndex = (folder: string) => {
 
 };
 
-const doJsonMerge = (jsonPaths: string[]): any => {
-    let json: any = {};
-    jsonPaths.forEach((path: string) => {
-        let jsonText = fs.readFileSync(path, 'utf8');
-        json = mergeJson.merge(json, JSON.parse(jsonText));
-        console.log(`Merged file '${path}'`);
-    });
-    return json;
-}
-
-const build = async () => {
-    let buildsDir = path.join(process.cwd(), `build`);
-    let exportedDocsDir = path.join(process.cwd(), `docs_exported`);
-    let translationsDir = path.join(process.cwd(), `translations`);
-    let exportedTranslationsDir = path.join(process.cwd(), `translations_exported`);
-
-    console.log(`Creating or emptying build directory!`);
-    fs.emptyDirSync(buildsDir);
-
-    console.log(`Copying translations!`);
-    fs.copySync(translationsDir, buildsDir);
-    fs.removeSync(path.join(buildsDir, `en`));
-    fs.mkdirsSync(path.join(buildsDir, path.join("en", "docs")));
-    fs.copySync("docs", path.join(buildsDir, path.join("en", "docs")));
-    fs.copySync("mkdocs.yml", path.join(buildsDir, path.join("en", "mkdocs.yml")));
-    fs.copySync("docs.json", path.join(buildsDir, path.join("en", "docs.json")));
-    console.log(`Copied translations!`);
-
-    let languages = getLanguages(buildsDir);
+const performDocumentationMerge = (buildsDir: string, exportedDocsDir: string, translationsDir: string, exportedTranslationsDir: string, languages: string[]): void => {
     const findDirectoryForLang = (lang: string, docs: string, translation: string): string => {
         if (lang == `en`) return docs;
         return path.join(translation, path.join(lang, `docs_exported`));
@@ -180,8 +152,7 @@ const build = async () => {
         return path.join(translation, path.join(lang, `docs.json`))
     }
 
-    console.log("Merging automated export files");
-    languages.forEach(lang => {
+    getLanguages(buildsDir).forEach(lang => {
         let docsExportedDirectoryForLang = findDirectoryForLang(lang, exportedDocsDir, exportedTranslationsDir);
 
         console.log(`Copying translated files for language '${lang}' to output directory`);
@@ -222,6 +193,44 @@ const build = async () => {
         let mergedJson: any = doJsonMerge(languageJsons);
         fs.writeFileSync(path.join(buildsDir, path.join(lang, "docs.json")), JSON.stringify(mergedJson));
     });
+};
+
+const doJsonMerge = (jsonPaths: string[]): any => {
+    let json: any = {};
+    jsonPaths.forEach((path: string) => {
+        let jsonText = fs.readFileSync(path, 'utf8');
+        json = mergeJson.merge(json, JSON.parse(jsonText));
+        console.log(`Merged file '${path}'`);
+    });
+    return json;
+}
+
+const build = async () => {
+    let buildsDir = path.join(process.cwd(), `build`);
+    let exportedDocsDir = path.join(process.cwd(), `docs_exported`);
+    let translationsDir = path.join(process.cwd(), `translations`);
+    let exportedTranslationsDir = path.join(process.cwd(), `translations_exported`);
+
+    console.log(`Creating or emptying build directory!`);
+    fs.emptyDirSync(buildsDir);
+
+    console.log(`Copying translations!`);
+    fs.copySync(translationsDir, buildsDir);
+    fs.removeSync(path.join(buildsDir, `en`));
+    fs.mkdirsSync(path.join(buildsDir, path.join("en", "docs")));
+    fs.copySync("docs", path.join(buildsDir, path.join("en", "docs")));
+    fs.copySync("mkdocs.yml", path.join(buildsDir, path.join("en", "mkdocs.yml")));
+    fs.copySync("docs.json", path.join(buildsDir, path.join("en", "docs.json")));
+    console.log(`Copied translations!`);
+
+    let languages = getLanguages(buildsDir);
+
+    console.log("Merging automated export files");
+    if (!fs.existsSync(exportedDocsDir) || !fs.existsSync(exportedTranslationsDir)) {
+        console.log(`One or more target directories '${exportedDocsDir}', '${exportedTranslationsDir}' weren't found: skipping merging`);
+    } else {
+        performDocumentationMerge(buildsDir, exportedDocsDir, translationsDir, exportedTranslationsDir, languages);
+    }
 
     console.log("Building Search indices and reverse index lookup");
     languages.forEach(lang => {
