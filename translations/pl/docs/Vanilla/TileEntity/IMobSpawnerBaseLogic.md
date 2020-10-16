@@ -1,25 +1,25 @@
 # IMobSpawnerBaseLogic
 
-The IMobSpawnerBaseLogic object contains all kinds of information on how and where to spawn something.
+Obiekt IMobSpawnerBaseLogic zawiera wszelkiego rodzaju informacje o tym, jak i gdzie stworzyć coś dla spawnerów potworów.
 
 ## Importing the class
 
-It might be required to [import](/AdvancedFunctions/Import/) the class to avoid errors.  
-`import crafttweaker.tileentity.IMobSpawnerBaseLogic;`
+Może być wymagane [zaimportowanie](/AdvancedFunctions/Import/) klasy, aby uniknąć błędów.  
+`zaimportuj crafttweaker.tileentity.IMobSpawnerBaseLogic;`
 
-## ZenGetters
+## ZenGetters/ZenSetters
 
-| ZenGetter  | ZenSetter          |                                       |
-| ---------- | ------------------ | ------------------------------------- |
-| `nbtData`  | `nbtData`          | [IData](/Vanilla/Data/IData/)         |
-|            | `entityDefinition` | [IPlayer](/Vanilla/Players/IPlayer/)  |
-| `world`    |                    | [IWorld](/Vanilla/World/IWorld)       |
-| `blockPos` |                    | [IBlockPos](/Vanilla/World/IBlockPos) |
+| ZenGetter            | ZenSetter            | Description                                     | Type                                                      |
+| -------------------- | -------------------- | ----------------------------------------------- | --------------------------------------------------------- |
+| `nbtData`            | `nbtData`            | Dane NBT dla spawnera. (Patrz poniżej)          | [IData](/Vanilla/Data/IData/)                             |
+| `Definicja podmiotu` | `Definicja podmiotu` | Definicja jednostki, która ma zostać utworzona. | [IEntityDefinition](/Vanilla/Entities/IEntityDefinition/) |
+| `world`              |                      | Świat, do którego należy spawner.               | [IWorld](/Vanilla/World/IWorld)                           |
+| `blockPos`           |                      | Położenie bloku spawnera.                       | [IBlockPos](/Vanilla/World/IBlockPos)                     |
 
 ## ZenMethods
 
 ```zenscript
-void updateSpawner();
+Unieważnij updateSpawner(); // Aktualizuje spawner do spawnowania obiektu i odznaczania licznika spawnu.
 
-void setDelayToMin();
+unieważnia setDelayToMin(); // ustawia opóźnienie spawnera na minimalne opóźnienie następnego spawnu.
 ```
