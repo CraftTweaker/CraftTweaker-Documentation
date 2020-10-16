@@ -28,4 +28,4 @@ Following Methods are available:
 
 The top left stack is position (0, 0), row and column are ints.  
 `inventory.getStack(row, column)` returns the [IItemStack](/Vanilla/Items/IItemStack/) at the given position or null if no item present.  
-`inventory.setStack(row, column, item)` sets the stack at the given position to the provided item. Item is an IItemStack. Use null if you want to clear the stack at that position.
+`inventory.setStack(row, column, item)` sets the stack at the given position to the provided item. Oggetto è un IItemStack. Use null if you want to clear the stack at that position.
