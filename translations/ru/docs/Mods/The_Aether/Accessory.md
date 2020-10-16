@@ -1,13 +1,13 @@
-# Accessory
+# Аксессуар
 
 ## Package
 
 ```zenscript
-import mods.aether_legacy.Accessory;
+import mods.aether_legacy.Аксессуары;
 ```
 ## Usage
 
 ```zenscript
-Accessory.registerAccessory(IItemStack input, String accessory);
+// Возможные типы - "ринг", "pendant", "cape", "shield", "gloves", и "miscellaneous" (без учета регистра)
+Accessory. egisterAccessory(IItemStack input, String type); // Регистрирует предмет как эфирный аксессуар
 ```
-- Accesory string can be "Ring", "Pendant", "Cape", "Shield", "Gloves", "Miscellaneous"
