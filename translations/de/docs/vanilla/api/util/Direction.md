@@ -62,7 +62,7 @@ Returns [crafttweaker.api.util.Direction](/vanilla/api/util/Direction)
 | horizontalIndex | int                                                                    | true       | false      |
 | index           | int                                                                    | true       | false      |
 | name            | String                                                                 | true       | false      |
-| opposite        | [crafttweaker.api.util.Direction](/vanilla/api/util/Direction)         | true       | false      |
+| entgegengesetzt | [crafttweaker.api.util.Direction](/vanilla/api/util/Direction)         | true       | false      |
 | xOffset         | int                                                                    | true       | false      |
 | yOffset         | int                                                                    | true       | false      |
 | zOffset         | int                                                                    | true       | false      |
