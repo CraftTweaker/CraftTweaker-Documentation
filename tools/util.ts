@@ -1,13 +1,13 @@
 let fs = require('fs');
 let path = require('path');
 
-export const listFiles = (dir: string, filelist: string[], extensionFilters: string[]) => {
+export const listFiles = (dir: string, filelist: string[], recursive: boolean, extensionFilters: string[]) => {
     let shouldFilter = extensionFilters.length > 0;
     let files = fs.readdirSync(dir);
     filelist = filelist || [];
     files.forEach(function (file: string) {
-        if (fs.statSync(path.join(dir, file)).isDirectory()) {
-            filelist = listFiles(path.join(dir, file) + '/', filelist, extensionFilters);
+        if (recursive && fs.statSync(path.join(dir, file)).isDirectory()) {
+            filelist = listFiles(path.join(dir, file) + '/', filelist, recursive, extensionFilters);
         } else {
             if (!shouldFilter) {
                 filelist.push(path.join(dir, file));
@@ -19,6 +19,26 @@ export const listFiles = (dir: string, filelist: string[], extensionFilters: str
         }
     });
     return filelist;
+};
+
+export const checkForDuplicates = (src: string, dst: string, recursive: boolean): string[] => {
+    const cleanse = (a: string[], prefix: string): void => {
+        for (let i = 0; i < a.length; ++i) {
+            a[i] = a[i].substr(prefix.length);
+        }
+    };
+
+    let srcFiles: string[] = [];
+    let dstFiles: string[] = [];
+    listFiles(src, srcFiles, recursive, []);
+    listFiles(dst, dstFiles, recursive, []);
+    cleanse(srcFiles, src);
+    cleanse(dstFiles, dst);
+
+    let dupes: string[] = [];
+    for (let file of srcFiles) if (dstFiles.includes(file)) dupes.push(file);
+
+    return dupes;
 };
 
 export const getLanguages = (buildDir: string): string[] => {

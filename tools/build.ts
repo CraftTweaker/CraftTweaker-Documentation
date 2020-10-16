@@ -3,7 +3,8 @@ import {Node} from "unist";
 import {
     getLanguages,
     listFiles,
-    walk
+    walk,
+    checkForDuplicates
 } from "./util";
 
 let result = require('dotenv').config();
@@ -28,7 +29,7 @@ interface Doc {
 const buildIndex = (folder: string) => {
 
     let fileList: string[] = [];
-    listFiles(folder, fileList, ["md"]);
+    listFiles(folder, fileList, true, ["md"]);
 
     let processor = unified().use(markdown, {});
     let docs: Doc[] = [];
@@ -191,6 +192,13 @@ const build = async () => {
             let docsJson = path.join(docsExportedDirectoryForLang, path.join(subDirectory, "docs.json"));
 
             if (fs.existsSync(docsDir)) {
+                let dstDir = path.join(buildsDir, path.join(lang, "docs"));
+                let dupes = checkForDuplicates(docsDir, dstDir, true);
+                if (dupes.length > 0) {
+                    console.error(`Duplicate files were identified: docs merging cannot proceed!`);
+                    throw new Error(`Duplicate files were identified for language ${lang}: ${dupes}`);
+                }
+
                 fs.copySync(docsDir, path.join(buildsDir, path.join(lang, "docs")), { overwrite: false, errorOnExist: true });
 
                 if (fs.existsSync(docsJson)) {
