@@ -68,7 +68,7 @@ IEntity extends [ICommandSender](/Vanilla/Commands/ICommandSender/). That means 
 | passengers               | getPassengers()   | List<IEntity\>                                             |
 | passengersRecursive      |                   | List<IEntity\>                                             |
 | portalCooldowne          |                   | int                                                         |
-| position3f               | getPosition3f()   | [Position3f](/Vanilla/Utils/Position3f/)                    |
+| position3f               | getPosition3f()   | [Posición 3f](/Vanilla/Utils/Position3f/)                   |
 | ridingEntity             | getRidingEntity() | *IEntity*                                                   |
 | shouldRiderSit           |                   | boolean                                                     |
 | tags                     |                   | List<string\>                                              |
