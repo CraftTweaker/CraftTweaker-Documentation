@@ -1,7 +1,7 @@
-# EntityLivingHurt
+# Ливинг сущности
 
-The EntityLivingHurt Event is fired whenever an Entity is about to get hurt.  
-It can be canceled to stop the entity from being hurt.
+Событие "ЛивингХерт" запускается каждый раз, когда Сущность вот-вот наступит.  
+Это может быть отменено для остановки повреждения сущности.
 
 ## Класс события
 
@@ -22,3 +22,9 @@ PlayerDeathDrops реализует следующие интерфейсы и �
 | ------------ | ----------------------------------------------- |
 | damageSource | [IDamageSource](/Vanilla/Damage/IDamageSource/) |
 | amount       | float                                           |
+
+## ZenSetters
+
+| ZenSetter | Тип   |
+| --------- | ----- |
+| amount    | float |
