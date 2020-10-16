@@ -1,7 +1,7 @@
-# EntityLivingHurt
+# L'entité est en vie
 
-The EntityLivingHurt Event is fired whenever an Entity is about to get hurt.  
-It can be canceled to stop the entity from being hurt.
+L'événement EntityLivingHurt est lancé chaque fois qu'une entité est sur le point d'être blessée.  
+Il peut être annulé pour empêcher l'entité d'être blessée.
 
 ## Event Class
 
@@ -22,3 +22,9 @@ PlayerDeathDrops Events implement the following interfaces and are able to call 
 | ------------ | ----------------------------------------------- |
 | damageSource | [IDamageSource](/Vanilla/Damage/IDamageSource/) |
 | amount       | float                                           |
+
+## ZenSetters
+
+| ZenSetter | Type  |
+| --------- | ----- |
+| amount    | float |
