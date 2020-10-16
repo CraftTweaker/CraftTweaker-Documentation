@@ -49,7 +49,7 @@ Rotates this direction counter-clock wise on the Y axis
 | index           | int                                                                    | true       | false      |
 | name            | String                                                                 | true       | false      |
 | north           | [crafttweaker.api.util.Direction](/vanilla/api/util/Direction)         | true       | true       |
-| opposite        | [crafttweaker.api.util.Direction](/vanilla/api/util/Direction)         | true       | false      |
+| 正反対の            | [crafttweaker.api.util.Direction](/vanilla/api/util/Direction)         | true       | false      |
 | 辺の方向            | [crafttweaker.api.util.Direction](/vanilla/api/util/Direction)[]       | true       | true       |
 | south           | [crafttweaker.api.util.Direction](/vanilla/api/util/Direction)         | true       | true       |
 | up              | [crafttweaker.api.util.Direction](/vanilla/api/util/Direction)         | true       | true       |
