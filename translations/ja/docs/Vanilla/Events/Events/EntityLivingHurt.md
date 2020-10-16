@@ -1,7 +1,7 @@
 # EntityLivingHurt
 
-The EntityLivingHurt Event is fired whenever an Entity is about to get hurt.  
-It can be canceled to stop the entity from being hurt.
+EntityLivingHurt イベントは、エンティティが怪我をしようとするたびに発生します。  
+エンティティが傷つくのを防ぐためにキャンセルすることができます。
 
 ## Event Class
 
@@ -22,3 +22,9 @@ PlayerDeathDrops Events implement the following interfaces and are able to call 
 | ------------ | ----------------------------------------------- |
 | damageSource | [IDamageSource](/Vanilla/Damage/IDamageSource/) |
 | amount       | float                                           |
+
+## ZenSetters
+
+| ZenSetter | Type  |
+| --------- | ----- |
+| amount    | float |
