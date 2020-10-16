@@ -19,11 +19,12 @@ Warning: Only using the second method is it possible for `data` ZenGetter to ret
 
 ## Zengetters
 
-| Getter     | 기능            | 반환 타입                                                 |
-| ---------- | ------------- | ----------------------------------------------------- |
-| definition | 블럭의 정의를 반환    | [IBlockDefinition](/Vanilla/Blocks/IBlockDefinition/) |
-| meta       | 블럭의 메타정보를 반환  | int                                                   |
-| data       | 블럭의 타일 정보를 반환 | [IData](/Vanilla/Data/IData/)                         |
+| Getter     | 기능                        | 반환 타입                                                    |
+| ---------- | ------------------------- | -------------------------------------------------------- |
+| definition | 블럭의 정의를 반환                | [IBlockDefinition](/Vanilla/Blocks/IBlockDefinition/)    |
+| meta       | 블럭의 메타정보를 반환              | int                                                      |
+| data       | 블럭의 타일 정보를 반환             | [IData](/Vanilla/Data/IData/)                            |
+| fluid      | Returns the Block's fluid | [ILiquidDefinition](/Vanilla/Liquids/ILiquidDefinition/) |
 
 # IBlockPattern
 
