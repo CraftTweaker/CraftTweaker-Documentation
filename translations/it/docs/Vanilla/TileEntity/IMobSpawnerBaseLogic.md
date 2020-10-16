@@ -1,25 +1,25 @@
 # IMobSpawnerBaseLogic
 
-The IMobSpawnerBaseLogic object contains all kinds of information on how and where to spawn something.
+L'oggetto IMobSpawnerBaseLogic contiene tutti i tipi di informazioni su come e dove generare qualcosa per i riproduttori di folle.
 
 ## Importing the class
 
-It might be required to [import](/AdvancedFunctions/Import/) the class to avoid errors.  
-`import crafttweaker.tileentity.IMobSpawnerBaseLogic;`
+Potrebbe essere necessario [importare](/AdvancedFunctions/Import/) la classe per evitare errori.  
+`importare crafttweaker.tileentity.IMobSpawnerBaseLogic;`
 
-## ZenGetters
+## ZenGetters/ZenSetters
 
-| ZenGetter  | ZenSetter          |                                       |
-| ---------- | ------------------ | ------------------------------------- |
-| `nbtData`  | `nbtData`          | [IData](/Vanilla/Data/IData/)         |
-|            | `entityDefinition` | [IPlayer](/Vanilla/Players/IPlayer/)  |
-| `world`    |                    | [IWorld](/Vanilla/World/IWorld)       |
-| `blockPos` |                    | [IBlockPos](/Vanilla/World/IBlockPos) |
+| ZenGetter          | ZenSetter          | Description                            | Type                                                      |
+| ------------------ | ------------------ | -------------------------------------- | --------------------------------------------------------- |
+| `nbtData`          | `nbtData`          | Dati NBT per lo spawner. (Vedi sotto)  | [IData](/Vanilla/Data/IData/)                             |
+| `entityDefinition` | `entityDefinition` | Definizione dell'entità da generare.   | [IEntityDefinition](/Vanilla/Entities/IEntityDefinition/) |
+| `world`            |                    | Mondo a cui appartiene lo spawner.     | [IWorld](/Vanilla/World/IWorld)                           |
+| `blockPos`         |                    | La posizione del blocco dello spawner. | [IBlockPos](/Vanilla/World/IBlockPos)                     |
 
 ## ZenMethods
 
 ```zenscript
-void updateSpawner();
+void updateSpawner(); // Aggiorna lo spawner per generare un'entità e barrare il timer di spawn.
 
-void setDelayToMin();
+void setDelayToMin(); // Imposta il ritardo dello spawner al ritardo minimo per lo spawn.
 ```
