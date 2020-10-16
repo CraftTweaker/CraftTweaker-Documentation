@@ -9,19 +9,19 @@
 
 ## Перечисление
 
-У этого интерфейса 7 статических методов, каждый возвращает соответствующее направление.  
-Последний принимает направление как строку (например, `NORTH`):
+Интерфейс "Facing" имеет 6 статических методов, которые возвращают указанное направление.  
+У него также есть еще одна строка, которая принимает направление ввода строки (например, `"НОРМ"`)
 
 ```zenscript
-crafttweaker.world.Facing.north()
-crafttweaker.world.Facing.east()
-crafttweaker.world.Facing.south()
-crafttweaker.world.Facing.west()
-crafttweaker.world.Facing.down()
-crafttweaker.world.Facing.up()
+crafttweaker.world.IFacing.north()
+crafttweaker.world.IFacing.east()
+crafttweaker.world.IFacing.south()
+crafttweaker.world.IFacing.west()
+crafttweaker.world.IFacing.down()
+crafttweaker.world.IFacing.up()
 
 
-crafttweaker.world.Facing.fromString(String name);
+crafttweaker.world.IFacing.fromString.(String name);
 ```
 
 ## Геттеры/методы без параметров
@@ -36,13 +36,13 @@ crafttweaker.world.Facing.fromString(String name);
 
 ### Сравнение двух направлений
 
-You can compare two facings using the standart comparing Operators `== != < > <= >=`  
-Alternatively, you can use the function, though the function returns an int that is 0 if they are equal.
+Вы можете сравнить две фракции, используя стандартные операторы `== ! < > <= >=`  
+Или можно использовать функцию, хотя функция возвращает подсказку, равную 0, если она равна.
 
 ```zenscript
-//Returns true or false
+//Возвращает true или false
 facingOne == facingTwo;
 
-//Returns 0 if they are equal
+//Возвращает 0, если он равен
 facingOne.compare(facingTwo);
 ```
