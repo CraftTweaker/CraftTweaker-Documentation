@@ -128,19 +128,30 @@ All the examples given evaluate to true.
 
 ### Difference between `|` and `||` (and `&` and `&&`)
 
-The main difference between the single and the double, with semantics aside, is that the double performs a check after each condition and exits early - this is called short-circuiting. However, the single goes through the entire chain of conditions, even if the first one would have cancelled the entire condition. This not only saves resources, but also allows for easier scripting such as null checks and chained conditions.
+The main difference between the single and the double, with semantics aside, is that the double performs a check after each condition and exits early - this is called short-circuiting. However, the single goes through the entire chain of conditions, even if the first one would have cancelled the entire condition. This not only saves resources, but also allows for easier scripting such as **null checks** and chained conditions.
 
 ```zenscript
 var a = 5;
+var item = ... as IItemStack;
 
 // Even though a is 5, it still goes through all of the conditions listed
 if (a == 5 | a == 3 | a == 10 | a == -1) {
-	
+	...
 }
 
 // Even though a is 5 and the condition is impossible (a variable can't be both 3 and 5), it still goes through all of the conditions listed
 if (a == 3 & a < 2 & a > 8 & a == 5) {
-	
+	...	
+}
+
+// Checks if item is not null before accessing variables from item
+if (!isNull(item) && item.amount == 1) {
+	...
+}
+
+// Checks if item is not null while accessing variables from a potentially null item, throwing an error if the item is null
+if (!isNull(item) & item.amount == 1) {
+	...
 }
 ```
 
