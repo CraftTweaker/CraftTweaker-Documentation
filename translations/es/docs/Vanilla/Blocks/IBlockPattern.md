@@ -1,4 +1,4 @@
-# IBlockPattern
+# Patrón de IBlock
 
 An IBlockPattern is an interface that allows for combining several blocks into one object.  
 It is comparable to what the [IIngredient](/Vanilla/Variable_Types/IIngredient/) Interface is to [IItemStacks](/Vanilla/Items/IItemStack/).
