@@ -1,17 +1,17 @@
 # IEventManager
 
-The IEventManager is what you're gonna need when dealing with event handlers.
+IEventManager は、イベントハンドラを扱う際に必要なものです。
 
 ## クラスのインポート
 
-It might be required for you to [import](/AdvancedFunctions/Import/) the class if you encounter any issues.  
+問題が発生した場合は、 [クラスを](/AdvancedFunctions/Import/) インポートする必要があります。  
 `import crafttweaker.events.IEventManager;`
 
-## Calling the event manager
+## イベントマネージャーを呼び出す
 
-You can access the event manager using the [global `events` field](/Vanilla/Global_Functions/)
+[グローバル `イベント` フィールド](/Vanilla/Global_Functions/) を使用してイベントマネージャにアクセスできます
 
-## How do events work?
+## イベントはどのように機能しますか?
 
 You can add a function that represents the event and from there on you can decide what you want CrT to do if such an event occurs.  
 The most important thing to remember is that you need to **CAST THE EVENT TO IT'S TYPE!** as otherwise you will not be able to access any if it's ZenGetters.  
@@ -31,20 +31,20 @@ events.onPlayerLoggedIn(function(event) {
 });
 ```
 
-## What events are available?
+## 利用可能なイベントは何ですか?
 
-The ZenMethods would be what you'll need to call on `events`, the Event Class would be what you need to cast the event as.
+ZenMethodsは `イベント`で呼び出す必要があります。 イベントクラスは、イベントをキャストするために必要なものです。
 
 | ZenMethod                   | Event Class                                                                                              |
 | --------------------------- | -------------------------------------------------------------------------------------------------------- |
 | onAllowDespawn              | [`crafttweaker.event.EntityLivingSpawnEvent`](/Vanilla/Events/Events/EntityLivingSpawn/)                 |
 | onAnimalTame                | [`crafttweaker.event.AnimalTameEvent`](/Vanilla/Events/Events/AnimalTame/)                               |
 | onBlockBreak                | [`crafttweaker.event.BlockBreak`](/Vanilla/Events/Events/BlockBreak/)                                    |
-| onBlockHarvestDrops         | [`crafttweaker.event.BlockHarvestDrops`](/Vanilla/Events/Events/BlockHarvestDrops/)                      |
+| onBlockHarvestDrops         | [`crafttweaker.event.BlockHarvestdrops`](/Vanilla/Events/Events/BlockHarvestDrops/)                      |
 | onBlockPlace                | [`crafttweaker.event.BlockPlaceEvent`](/Vanilla/Events/Events/BlockPlace/)                               |
 | onCheckSpawn                | [`crafttweaker.event.EntityLivingExtendedSpawnEvent`](/Vanilla/Events/Events/EntityLivingSpawn/)         |
-| onCommand                   | [`crafttweaker.event.CommandEvent`](/Vanilla/Events/Events/CommandEvent/)                                |
-| onCriticalHit               | [`crafttweaker.event.CriticalHitEvent`](/Vanilla/Events/Events/CriticalHit/)                             |
+| onCommand                   | [`crafttweaker.event.Command Event`](/Vanilla/Events/Events/CommandEvent/)                               |
+| onCriticalHit               | [`craftweaker.event.CriticalHitEvent`](/Vanilla/Events/Events/CriticalHit/)                              |
 | onCropGrowPost              | [`crafttweaker.event.CropGrowPostEvent`](/Vanilla/Events/Events/CropGrowPost/)                           |
 | onCropGrowPre               | [`crafttweaker.event.CropGrowPreEvent`](/Vanilla/Events/Events/CropGrowPre/)                             |
 | onEnchantmentLevelSet       | [`crafttweaker.event.EnchantmentLevelSetEvent`](/Vanilla/Events/Events/EnchantmentLevelSet/)             |
@@ -65,18 +65,18 @@ The ZenMethods would be what you'll need to call on `events`, the Event Class wo
 | onEntityStruckByLightning   | [`crafttweaker.event.EntityStruckByLightningEvent`](/Vanilla/Events/Events/EntityStruckByLightning/)     |
 | onExplosionDetonate         | [`crafttweaker.event.ExplosionDetonateEvent`](/Vanilla/Events/Events/ExplosionDetonate/)                 |
 | onExplosionStart            | [`crafttweaker.event.ExplosionStartEvent`](/Vanilla/Events/Events/ExplosionStart/)                       |
-| onFarmlandTrample           | [`crafttweaker.event.FarmlandTrampleEvent`](/Vanilla/Events/Events/FarmlandTrample/)                     |
+| onFarmlandTryample          | [`crafttweaker.event.FarmlandTrampleEvent`](/Vanilla/Events/Events/FarmlandTrample/)                     |
 | onItemExpire                | [`crafttweaker.event.ItemExpireEvent`](/Vanilla/Events/Events/ItemExpire/)                               |
 | onItemFished                | [`crafttweaker.event.ItemFishedEvent`](/Vanilla/Events/Events/ItemFished/)                               |
 | onItemToss                  | [`crafttweaker.event.ItemTossEvent`](/Vanilla/Events/Events/ItemToss/)                                   |
 | onLivingDestroyBlock        | [`crafttweaker.event.LivingDestroyBlockEvent`](/Vanilla/Events/Events/LivingDestroyBlock/)               |
 | onLivingExperienceDrop      | [`crafttweaker.event.LivingExperienceDropEvent`](/Vanilla/Events/Events/LivingExperienceDrop/)           |
-| onLivingKockBack            | [`crafttweaker.event.LivingKnockBackEvent`](/Vanilla/Events/Events/LivingKnockBack/)                     |
+| onLivingKnockBack           | [`crafttweaker.event.LivingKnockBackEvent`](/Vanilla/Events/Events/LivingKnockBack/)                     |
 | onLootingLevel              | [`crafttweaker.event.LootingLevelEvent`](/Vanilla/Events/Events/LootingLevel/)                           |
 | onMinecartCollision         | [`crafttweaker.event.MinecartCollisionEvent`](/Vanilla/Events/Events/MinecartCollision/)                 |
 | onMinecartInteract          | [`crafttweaker.event.MinecartInteractEvent`](/Vanilla/Events/Events/MinecartInteract/)                   |
 | onMobGriefing               | [`crafttweaker.event.MobGriefingEvent`](/Vanilla/Events/Events/MobGriefing/)                             |
-| onPlayerAdvancement         | [`crafttweaker.event.PlayerAdvancement`](/Vanilla/Events/Events/PlayerAdvancement/)                      |
+| onPlayerAdvancement         | [`crafttweaker.event.PlayerAdvance`](/Vanilla/Events/Events/PlayerAdvancement/)                          |
 | onPlayerAnvilRepair         | [`crafttweaker.event.PlayerAnvilRepairEvent`](/Vanilla/Events/Events/PlayerAnvilRepair/)                 |
 | onPlayerAnvilUpdate         | [`crafttweaker.event.PlayerAnvilUpdateEvent`](/Vanilla/Events/Events/PlayerAnvilUpdate/)                 |
 | onPlayerAttackEntity        | [`crafttweaker.event.PlayerAttackEntityEvent`](/Vanilla/Events/Events/PlayerAttackEntity/)               |
@@ -116,7 +116,7 @@ The ZenMethods would be what you'll need to call on `events`, the Event Class wo
 | onSleepingTimeCheck         | [`crafttweaker.event.SleepingTimeCheckEvent`](/Vanilla/Events/Events/SleepingTimeCheck/)                 |
 | スペシャルスポーン                   | [`crafttweaker.event.EntityLivingExtendedSpawnEvent`](/Vanilla/Events/Events/EntityLivingSpawn/)         |
 
-## Clear all event handlers
+## すべてのイベントハンドラーをクリア
 
 ```zenscript
 events.clear();
