@@ -49,7 +49,7 @@ Tipo de retorno: [crafttweaker.api.util.Direction](/vanilla/api/util/Direction)
 | index           | int                                                                    | true       | false      |
 | name            | String                                                                 | true       | false      |
 | north           | [crafttweaker.api.util.Direction](/vanilla/api/util/Direction)         | true       | true       |
-| opposite        | [crafttweaker.api.util.Direction](/vanilla/api/util/Direction)         | true       | false      |
+| opuesto         | [crafttweaker.api.util.Direction](/vanilla/api/util/Direction)         | true       | false      |
 | lados           | [crafttweaker.api.util.Direction](/vanilla/api/util/Direction)[]       | true       | true       |
 | south           | [crafttweaker.api.util.Direction](/vanilla/api/util/Direction)         | true       | true       |
 | up              | [crafttweaker.api.util.Direction](/vanilla/api/util/Direction)         | true       | true       |
