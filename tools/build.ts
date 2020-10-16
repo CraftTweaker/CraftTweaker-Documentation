@@ -2,7 +2,8 @@ import {Builder} from "lunr";
 import {Node} from "unist";
 import {
     getLanguages,
-    listFiles
+    listFiles,
+    walk
 } from "./util";
 
 let result = require('dotenv').config();
@@ -137,6 +138,7 @@ const buildIndex = (folder: string) => {
         docs,
         idx
     });
+
 };
 
 const build = async () => {
@@ -151,12 +153,15 @@ const build = async () => {
     fs.copySync("docs", path.join(buildsDir, path.join("en", "docs")));
     fs.copySync("mkdocs.yml", path.join(buildsDir, path.join(`en`, "mkdocs.yml")));
     fs.copySync("docs.json", path.join(buildsDir, path.join(`en`, "docs.json")));
-    console.log(`Copied translations!`);
     let languages = getLanguages(buildsDir);
-    console.log("Building Search indices");
+    console.log("Building Search indices and reverse doc lookup");
     languages.forEach(lang => {
         buildIndex(path.join(buildsDir, lang));
         console.log(`Done building an index for: "${lang}"`);
+
+        let reversed = walk(JSON.parse(fs.readFileSync(path.join(path.join(buildsDir, lang), "docs.json"), "utf-8"))["nav"], {}, [])
+        fs.writeJSONSync(path.join(path.join(buildsDir, lang), "docs_reverse_lookup.json"), reversed);
+        console.log(`Done building a reverse lookup for: "${lang}"`);
     });
 
     console.log("Copying files to folders");
