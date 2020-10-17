@@ -48,12 +48,20 @@ smithing.addRecipe("recipe_name", <item:minecraft:golden_apple>, <item:minecraft
 | aggiunta   | [crafttweaker.api.item.IIngredient](/vanilla/api/items/IIngredient) | L'elemento aggiunto all'elemento base. |
 
 
-### getRecipeByName
+### getAllRecipes
 
-Tipo di restituzione: [crafttweaker.api.recipes.WrapperRecipe](/crafttweaker/api/recipes/WrapperRecipe)
+Return type: List&lt;[crafttweaker.api.recipes.WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)&gt;
 
 ```zenscript
-smithing.getRecipeByName(nome come stringa);
+smithing.getAllRecipes();
+```
+
+### getRecipeByName
+
+Return type: [crafttweaker.api.recipes.WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)
+
+```zenscript
+smithing.getRecipeByName(name as String);
 ```
 
 | Parameter | Type   | Description                 |
@@ -63,10 +71,10 @@ smithing.getRecipeByName(nome come stringa);
 
 ### getRecipesByOutput
 
-Tipo di restituzione: Lista&lt;[crafttweaker.api.recipes.WrapperRecipe](/crafttweaker/api/recipes/WrapperRecipe)&gt;
+Return type: List&lt;[crafttweaker.api.recipes.WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)&gt;
 
 ```zenscript
-smithing.getRecipesByOutput(output come crafttweaker.api.item.IIngredient);
+smithing.getRecipesByOutput(output as crafttweaker.api.item.IIngredient);
 ```
 
 | Parameter | Type                                                                | Description                 |
@@ -115,7 +123,7 @@ smithing.removeByModid("minecraft", (name as string) => {return name == "orange_
 Remove recipe based on Registry name
 
 ```zenscript
-smithing.removeByName(nome come Stringa);
+smithing.removeByName(name as String);
 smithing.removeByName("minecraft:furnace");
 ```
 
