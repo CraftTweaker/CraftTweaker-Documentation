@@ -50,9 +50,17 @@ blastFurnace.addRecipe("wool2diamond", <item:diamond>, <tag:minecraft:wool>, 1.0
 | cookTime  | int                                                                 | how long it takes to cook       |
 
 
+### getAllRecipes
+
+Return type: List&lt;[crafttweaker.api.recipes.WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)&gt;
+
+```zenscript
+blastFurnace.getAllRecipes();
+```
+
 ### getRecipeByName
 
-戻り値の型: [crafttweaker.api.recipes.WrapperRecipe](/crafttweaker/api/recipes/WrapperRecipe)
+Return type: [crafttweaker.api.recipes.WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)
 
 ```zenscript
 blastFurnace.getRecipeByName(name as String);
@@ -65,7 +73,7 @@ blastFurnace.getRecipeByName(name as String);
 
 ### getRecipesByOutput
 
-戻り値の型: リスト&lt;[crafttweaker.api.recipes.WrapperRecipe](/crafttweaker/api/recipes/WrapperRecipe)&gt;
+Return type: List&lt;[crafttweaker.api.recipes.WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)&gt;
 
 ```zenscript
 blastFurnace.getRecipesByOutput(output as crafttweaker.api.item.IIngredient);
@@ -102,7 +110,7 @@ blastFurnace.removeByModid("minecraft");
 追加された除外チェック付きのレジストリ名modidに基づいてレシピを削除すると、いくつか指定された以外のMod全体を削除できます。
 
 ```zenscript
-blastFurnace.removeByModid(modied as String, exclude as crafttweaker.api.recipeFilter);
+blastFurnace.removeByModid(modid as String, exclude as crafttweaker.api.recipe.RecipeFilter);
 blastFurnace.removeByModid("minecraft", (name as string) => {return name == "orange_wool";});
 ```
 
@@ -118,7 +126,7 @@ Remove recipe based on Registry name
 
 ```zenscript
 blastFurnace.removeByName(name as String);
-blastFurnace.removeByName("minecraft:furnace');
+blastFurnace.removeByName("minecraft:furnace");
 ```
 
 | Parameter | Type   | Description                       |
