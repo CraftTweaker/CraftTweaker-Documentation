@@ -28,7 +28,7 @@ smithing.addJSONRecipe("recipe_name", {item:<item:minecraft:gold_ore>.registryNa
 | Parameter | Type                                                   | Description                     |
 | --------- | ------------------------------------------------------ | ------------------------------- |
 | name      | String                                                 | name of the recipe              |
-| データ       | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | data representing the json file |
+| data      | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | data representing the json file |
 
 
 ### addRecipe
