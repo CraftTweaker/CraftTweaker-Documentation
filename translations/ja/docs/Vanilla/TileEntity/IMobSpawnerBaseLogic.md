@@ -1,25 +1,25 @@
 # IMobSpawnerBaseLogic
 
-IMobSpawnerBaseLogicオブジェクトには、モブのスポーン方法と場所に関するあらゆる種類の情報が含まれています。
+The IMobSpawnerBaseLogic object contains all kinds of information on how and where to spawn something for mob spawners.
 
 ## Importing the class
 
-エラーを回避するには、 [クラスをインポート](/AdvancedFunctions/Import/) する必要があります。  
+It might be required to [import](/AdvancedFunctions/Import/) the class to avoid errors.  
 `import crafttweaker.tileentity.IMobSpawnerBaseLogic;`
 
 ## ZenGetters/ZenSetters
 
-| ZenGetter          | ZenSetter          | Description            | Type                                                      |
-| ------------------ | ------------------ | ---------------------- | --------------------------------------------------------- |
-| `nbtData`          | `nbtData`          | スポーナーの NBT データ。 （下記参照） | [IData](/Vanilla/Data/IData/)                             |
-| `entityDefinition` | `entityDefinition` | エンティティ定義を生成します。        | [IEntityDefinition](/Vanilla/Entities/IEntityDefinition/) |
-| `world`            |                    | スポーン地点のワールド。           | [IWorld](/Vanilla/World/IWorld)                           |
-| `blockPos`         |                    | スポナーブロックの位置            | [IBlockPos](/Vanilla/World/IBlockPos)                     |
+| ZenGetter          | ZenSetter          | Description                           | Type                                                      |
+| ------------------ | ------------------ | ------------------------------------- | --------------------------------------------------------- |
+| `nbtData`          | `nbtData`          | NBT Data for the spawner. (See below) | [IData](/Vanilla/Data/IData/)                             |
+| `entityDefinition` | `entityDefinition` | Entity Definition to be spawned.      | [IEntityDefinition](/Vanilla/Entities/IEntityDefinition/) |
+| `world`            |                    | World that the spawner belongs to.    | [IWorld](/Vanilla/World/IWorld)                           |
+| `blockPos`         |                    | The position of the spawner block.    | [IBlockPos](/Vanilla/World/IBlockPos)                     |
 
 ## ZenMethods
 
 ```zenscript
-void updateSpawner(); // エンティティをスポーンさせ、スポーンタイマーをティックダウンさせるためのスポーナーを更新します。
+void updateSpawner(); // Updates the spawner for spawning an entity and ticking down the spawn timer.
 
-void setDelayToMin(); // スポーナーの遅延を次のスポーンの最小の遅延に設定します。
+void setDelayToMin(); // Sets the delay of the spawner to the minimum delay for the next spawn.
 ```
