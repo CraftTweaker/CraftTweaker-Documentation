@@ -1,91 +1,91 @@
-# Conditional Statements
+# Dichiarazioni Condizionali
 
-You might want to include code that will only be executed if certain criteria are met (or if they are not). That's what you need conditional Statements for.
+Potresti voler includere il codice che verrà eseguito solo se determinati criteri sono soddisfatti (o se non lo sono). Questo è ciò per cui hai bisogno di dichiarazioni condizionali.
 
-## If
+## Se
 
-An If-Statement is the first part of a conditional statement. It declares the condition that must be true for the following code to be executed. Be careful, you need TWO EQUALS when comparing values (that's because one equal is for declaring values!)
+Una dichiarazione If è la prima parte di una dichiarazione condizionale. Dichiara la condizione che deve essere vera per l'esecuzione del seguente codice. **Attenzione, hai bisogno di DUE EQUALI quando si confrontano i valori! (Questo perché uno uguale è per dichiarare valori!)**
 
 ```zenscript
 val test = 0;
 
-if(test == 0){ //true
+if (test == 0) { //true
     print("Test is zero!");
 }
 ```
 
-## Else
+## Altrimenti
 
-An Else-Statement can be added to the end of a conditional Statement to declare what will be executed when the if-condition equals to false.
+Alla fine di una Dichiarazione condizionale può essere aggiunta una Dichiarazione Else-Statement per dichiarare ciò che verrà eseguito quando la condizione if-condition è uguale a false.
 
 ```zenscript
 var test = 0;
 
-if(test == 0){//true
+if (test == 0) { //true
     //will be executed when test is equal to 0
-    print("Test is zero!");
+    print("Test is zero! );
 } else {
-    //will be executed when test is not equal to 0
-    print("Test is NOT zero!");
+    //verrà eseguito quando il test non è uguale a 0
+    print("Il test NON è zero! );
 }
 
-test = 1
-if(test == 0){//false
-    //will be executed when test is equal to 0
-    print("Now, test is zero!");
+test = 1;
+se (test == 0) { //false
+    //verrà eseguito quando il test è uguale a 0
+    print("Now, test è zero! );
 } else {
-    //will be executed when test is not equal to 0
-    print("Now, test is NOT zero!");
+    //verrà eseguito quando il test non è uguale a 0
+    print("Now, test NON è zero! );
 }
 
 ```
 
-## Things to check for
+## Cose da controllare per
 
-Supported Calculations are `+`,`-`,`*`,`/`,`mod`,`concatenation(~)`
+I calcoli supportati sono `+`,`-`,`*`,`/`,`mod`,`concatenazione(~)`
 
-Supported Operands are `OR(|)`, `AND(&)`, `XOR(^)`
+Operandi supportati sono `Logical OR(<unk> <unk> )`, `Logical AND(&&)`, `Bitwise OR(<unk> )`, `Bitwise E (&)`e `Bitwise XOR(^)`
 
 ```zenscript
-//You can check for:
+//Puoi controllare per:
 
 
 //Number values
 val a = 0 as int;
-if(a==0){print("NumVal");}
+if (a == 0) { print("NumVal"); }
 
-//Calculated number values
+//Valori numerici calcolati
 val b = 1;
 val c = 5;
-//All evaluate to true
-if(b+c==6){print("Num1!");}
-if(b*c==5){print("Num2!");}
-if(b/c==0.2){print("Num3!");}
+//Tutti valutano a true
+if (b+c == 6) { print("Num1! ); }
+se (b*c == 5) { print("Num2!"); }
+se (b/c == 0. ) { print("Num3! ); }
 
 //OR, XOR, AND
 val d = "Hello";
 val e = "World";
-val f = d~e; //f = "HelloWorld", the Tilde just concatenates one thing to another
+val f = d~e; //f = "HelloWorld", la Tilde concatena una cosa all'altra
 
-//|(OR) means, as long as one of the criteria is met, it evaluates to true
-if(d=="Hello" | e == "Hello"){print("OR1!");}       //true
-if(d=="Hello" | e == "World"){print("OR2!");}       //true
+//<unk> <unk> (OR) significa, finché uno dei criteri è soddisfatto, valuta a true
+if (d == "Hello" <unk> <unk> e == "Hello") { print("OR1! ); } //true
+if (d == "Hello" <unk> <unk> e == "World") { print("OR2! ); } //true
 
-//^(XOR) means, ONLY ONE criteria may be met, otherwise it evaluates to false
-if(d=="Hello" ^ e == "Hello"){print("XOR1!");}      //true
-if(d=="Hello" ^ e == "World"){print("XOR2!");}      //false
+//^(XOR) significa, SOLO un criterio può essere rispettato, altrimenti valuta a false
+se (d == "Hello" ^ e == "Hello") { print("XOR1! ); } //true
+if (d == "Hello" ^ e == "World") { print("XOR2! ); } //false
 
-//&(AND) means, both criteria need to be met, otherwise it evaluates to false
-if(d=="Hello" & e == "Hello"){print("AND1!");}      //false
-if(d=="Hello" & e == "World"){print("AND2!");}      //true
+//&&(AND) significa, entrambi i criteri devono essere rispettati, altrimenti valuta a false
+se (d == "Hello" && e == "Hello") { print("AND1! ); } //false
+if (d == "Hello" && e == "World") { print("AND2! ); } //true
 ```
 
-## The ? Operator
+## Il ? Operatore
 
-Surely, always typing out an if/else structure can be annoying. Especially if you just want to do an either or condition. That's why the `?` operator was implemented. It follows the same logic as an if/else statement, it only is by far less code required. Syntax: `boolean ? if : else`
+Sicuramente, scrivere sempre una struttura if/else può essere fastidioso. Soprattutto se si vuole solo fare una o una condizione. Ecco perché l'operatore `?` è stato implementato. Segue la stessa logica di una dichiarazione if/else è solo di molto meno codice richiesto. Syntax: `boolean ? if : else`
 
 ```zenscript
-val switchy = false;
+val switchy = falso;
 
 //prints switchy state
 print("Switchy is " ~ switchy);
@@ -94,84 +94,338 @@ print("Switchy is " ~ switchy);
 val vInt = switchy ? 1 : 2;
 print(vInt);
 
-//Prints "Hello" if switchy is stue, otherwise prints "Bye"
+//Stampa "Hello" se switchy è stue, altrimenti stampa "Bye"
 print(switchy ? "Hello" : "Bye");
 
-//Prints "Bye" if switchy is true, otherwise prints "Hello"
+//Stampa "Bye" se la commutazione è vera, altrimenti stampa "Hello"
 switchy ? print("Bye") : print("Hello");
 
 ```
 
-## Operators
+## Operatori
 
-You can use these operators. All the examples given evaluate to true.
+È possibile utilizzare questi operatori. Tutti gli esempi forniti valutano a verità.
 
-| Name             | token    | Explanation                                                                          | Example       |
-| ---------------- | -------- | ------------------------------------------------------------------------------------ | ------------- |
-| Not              | `!`      | Inverts a boolean                                                                    | !false        |
-| Not Equal        | `!=`     | Checks if the value before and after are not equal                                   | 1 != 2        |
-| Equal            | `==`     | Checks if the value before and after are equal                                       | 1 == 1        |
-| Greater than     | `>`   | Checks if the value before is greater than after                                     | 1 > 2         |
-| Greater or Equal | `>=`  | Checks if the value before is greater than or equal with after                       | 1 >= 1        |
-| Lesser then      | `<`   | Checks if the value before is fewer than after                                       | 1 < 2         |
-| Lesser or Equal  | `<=`  | Checks if the value before is fewer than or equal with after                         | 1 <= 1        |
-| AND              | `&`  | Checks whether both, value before and after are true, false if one or both are false | true & true   |
-| OR               | `&#124;` | Checks if the value before or after is true. True, is both are true                  | true \| true |
-| XOR              | `^`      | Checks if either the value before or after is true, false if both or none is true    | true ^ false  |
+<table>
+  <tr>
+    <th>
+      Nome
+    </th>
+    
+    <th>
+      token
+    </th>
+    
+    <th>
+      Spiegazione
+    </th>
+    
+    <th>
+      Example
+    </th>
+  </tr>
+  
+  <tr>
+    <td>
+      Non
+    </td>
+    
+    <td>
+      <code>!</code>
+    </td>
+    
+    <td>
+      Inverte un booleano
+    </td>
+    
+    <td>
+      !false
+    </td>
+  </tr>
+  
+  <tr>
+    <td>
+      Non Uguale
+    </td>
+    
+    <td>
+      <code>!=</code>
+    </td>
+    
+    <td>
+      Controlla se il valore prima e dopo non è uguale
+    </td>
+    
+    <td>
+      1 != 2
+    </td>
+  </tr>
+  
+  <tr>
+    <td>
+      Uguale
+    </td>
+    
+    <td>
+      <code>==</code>
+    </td>
+    
+    <td>
+      Controlla se il valore prima e dopo è uguale
+    </td>
+    
+    <td>
+      1 == 1
+    </td>
+  </tr>
+  
+  <tr>
+    <td>
+      Maggiore di
+    </td>
+    
+    <td>
+      <code>&gt;</code>
+    </td>
+    
+    <td>
+      Controlla se il valore prima è maggiore di dopo
+    </td>
+    
+    <td>
+      1 > 2
+    </td>
+  </tr>
+  
+  <tr>
+    <td>
+      Maggiore o uguale
+    </td>
+    
+    <td>
+      <code>&gt;=</code>
+    </td>
+    
+    <td>
+      Controlla se il valore prima è maggiore o uguale con dopo
+    </td>
+    
+    <td>
+      1 >= 1
+    </td>
+  </tr>
+  
+  <tr>
+    <td>
+      Minore di
+    </td>
+    
+    <td>
+      <code>&lt;</code>
+    </td>
+    
+    <td>
+      Controlla se il valore prima è inferiore a dopo
+    </td>
+    
+    <td>
+      1 < 2
+    </td>
+  </tr>
+  
+  <tr>
+    <td>
+      Minore o uguale
+    </td>
+    
+    <td>
+      <code>&lt;=</code>
+    </td>
+    
+    <td>
+      Controlla se il valore prima è inferiore o uguale a dopo
+    </td>
+    
+    <td>
+      1 <= 1
+    </td>
+  </tr>
+  
+  <tr>
+    <td>
+      Logico E
+    </td>
+    
+    <td>
+      <code>&&</code>
+    </td>
+    
+    <td>
+      Controlla se entrambi i valori prima e dopo sono veri, falsi se uno o entrambi sono falsi
+    </td>
+    
+    <td>
+      true && true
+    </td>
+  </tr>
+  
+  <tr>
+    <td>
+      O Logico
+    </td>
+    
+    <td>
+      <code>\|\|</code>
+    </td>
+    
+    <td>
+      Controlla se il valore prima o dopo è vero, falso se non è vero
+    </td>
+    
+    <td>
+      false \<unk> \<unk> true
+    </td>
+  </tr>
+  
+  <tr>
+    <td>
+      Bitwise XOR
+    </td>
+    
+    <td>
+      <code>^</code>
+    </td>
+    
+    <td>
+      Controlla se è vero esattamente uno dei valori precedenti o successivi, falsi se entrambi o nessuno sono veri
+    </td>
+    
+    <td>
+      vero ^ falso
+    </td>
+  </tr>
+  
+  <tr>
+    <td>
+      Bitwise AND
+    </td>
+    
+    <td>
+      <code>&</code>
+    </td>
+    
+    <td>
+      Esegue un'operazione bitwise AND sui valori prima e dopo. Vedi <a href="https://stackoverflow.com/questions/4014535/differences-in-boolean-operators-vs-and-vs">questo</a> per ulteriori informazioni
+    </td>
+    
+    <td>
+      true && true
+    </td>
+  </tr>
+  
+  <tr>
+    <td>
+      O Bitwise
+    </td>
+    
+    <td>
+      <code>\|</code>
+    </td>
+    
+    <td>
+      Esegue un'operazione OR bitwise sui valori prima e dopo. Vedi <a href="https://stackoverflow.com/questions/4014535/differences-in-boolean-operators-vs-and-vs">questo</a> per ulteriori informazioni
+    </td>
+    
+    <td>
+      false \<unk> \<unk> true
+    </td>
+  </tr>
+</table>
 
-## The in/has Operator
+### Differenza tra `<unk>` e `<unk> <unk>` (e `&` e `&&`)
 
-The `in` and the `has` operator check if something is in something.  
-First you need the list you want to check in, then the `in`/`has` then the value you want to check for. `in` and `has` are the same keyword for ZS, but in most cases people use `has` for checking if a collection contains an item and in for loops as this represents the English grammar.
+La differenza principale tra il singolo e il doppio, con semantica a parte, è che il doppio esegue un controllo dopo ogni condizione ed esce presto - questo è chiamato cortocircuitazione. Tuttavia, il singolo passa attraverso l'intera catena di condizioni, anche se la prima avrebbe annullato l'intera condizione. Questo non solo consente di risparmiare risorse, ma consente anche uno script più facile come **null check** e condizioni incatenate.
 
-### in/has loadedMods
+```zenscript
+var a = 5;
+var elemento = ... come IItemStack;
 
-You can check, if a mod is loaded by checking if it's in the loadedMods list
+// Anche se a è 5, continua ad attraversare tutte le condizioni elencate
+se (a == 5 <unk> a == 3 <unk> a == 10 <unk> a == -1) {
+...
+}
+
+// Anche se a è 5 e la condizione è impossibile (una variabile non può essere 3 e 5), continua ad attraversare tutte le condizioni elencate
+se (a == 3 & a < 2 & a > 8 & a == 5) {
+... 
+}
+
+// Controlla se l'elemento non è null prima di accedere alle variabili dall'elemento
+se (!isNull(item) && item.amount == 1) {
+...
+}
+
+// Controlla se l'elemento non è nullo durante l'accesso alle variabili da un elemento potenzialmente nullo, lanciando un errore se l'elemento è null
+se (! sNull(item) & item. mount == 1) {
+...
+}
+```
+
+## L'operatore in/has
+
+Il `in` e il `ha` operatore controllare se qualcosa è in qualcosa.  
+Per prima cosa hai bisogno della lista che vuoi controllare, poi il `in`/`ha` quindi il valore che si desidera controllare. `in` e `ha` sono la stessa parola chiave per ZS, ma nella maggior parte dei casi le persone usano `ha` per controllare se una raccolta contiene un elemento e dentro per i cicli in quanto rappresenta la grammatica inglese.
+
+### in/has loadadedMods
+
+Puoi controllare, se una mod viene caricata controllando se è nella lista caricata.Mods
 
 ```zenscript
 //While contains checks can use in
-if(loadedMods in "mcp"){
+if (loadedMods in "mcp") {
     print("Minecraft Coder Pack loaded");
 }
 
-//Most people prefer using has
-if(loadedMods has "mcp"){
-    print("Minecraft Coder Pack loaded");
+//La maggior parte delle persone preferisce usare ha
+se (loadedMods ha "mcp") {
+    print("Minecraft Coder Pack caricato");
 }
 ```
 
 ### in/has IIngredient
 
-You can also check if an item matches a definition by comparing two IIngredients.  
-With this one you need to be a bit careful as not to confuse the two entries:  
-This is only true when the IIngredeint AFTER the `in` can also be found completely in the one BEFORE the `in`.  
-In most cases you will use the `has` keyword instead as it's intention is more clear and it does exactly the same.
+Puoi anche controllare se un elemento corrisponde a una definizione confrontando due IIngredienti.  
+Con questo devi essere un po' attento a non confondere le due voci:  
+Questo è vero solo quando l'IIngrediente DOPO il `in` può anche essere trovato completamente in quello PRIMA il `in`.  
+Nella maggior parte dei casi utilizzerai la `ha` parola chiave invece perché la sua intenzione è più chiara e fa esattamente lo stesso.
 
 ```zenscript
-if(<ore:ingotIron> in <minecraft:iron_ingot>){
-    print("Iron ingots are in the right oreDic");
+// Controlla se il lingotto di ferro è nel oreDict "ingotIron"
+if (<ore:ingotIron> in <minecraft:iron_ingot>) {
+    print("I lingotti di ferro sono nella giusta oreDict");
 }
 
-if(<ore:ingotIron> has <minecraft:iron_ingot>){
-    print("Iron ingots are in the right oreDic");
+// Preferito, la stessa funzione del precedente
+se (<ore:ingotIron> ha <minecraft:iron_ingot>) { 
+    print("I lingotti di ferro sono nell'oreDict");
 }
 ```
 
-This is only then true, when ALL matching items from the IIngredient AFTER the `has` can also be found in the IIngredient BEFORE `has`: Say we have an IIngredient that contains all dusts (e.g. redstone and glowstone dust):
+Questo vale solo quando TUTTI gli oggetti corrispondenti dell'IIngrediente DOPO che il `ha` possono essere trovati anche nella IIngrediente PRIMA `ha`: Dì che abbiamo un IIngrediente che contiene tutte le polveri (e. . polvere di pietra rossa e pietra luminosa):
 
 ```zenscript
 val redstone = <minecraft:redstone>;
-val glowstone = <minecraft:glowstone>
+val glowstone = <minecraft:glowstone>;
 val allDusts = <ore:dustAll>;
-allDusts.add(redstone, glowstone);
+allDusts. dd(redstone, glowstone);
 
-//True as redstone is a part of alldusts
-if(allDusts has redstone) {
+//True as redstone is a part of allpolvers
+if (allDusts has redstone) {
 
 }
 
-//False as allDusts consists of redstone and glowstone, and redstone only consists of redstone.
-if(redstone has allDusts) {
+//False as allDusts consists of redstone and glowstone, e redstone è costituito solo da redstone.
+if (redstone has allDusts) {
 
 }
 ```
