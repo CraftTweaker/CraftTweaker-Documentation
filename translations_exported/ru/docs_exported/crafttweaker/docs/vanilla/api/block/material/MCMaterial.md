@@ -27,7 +27,7 @@ myMCMaterial.blocksMovement();
 
 Извлекает цветовой индекс блока. Это тот же цвет, который используется ванильными картами для представления этого блока.
 
-Тип возврата: MCMaterialColor
+Return type: [crafttweaker.api.block.material.MCMaterialColor](/vanilla/api/block/material/MCMaterialColor)
 
 ```zenscript
 myMCMaterial.getColor();
