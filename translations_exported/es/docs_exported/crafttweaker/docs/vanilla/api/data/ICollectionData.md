@@ -98,7 +98,7 @@ new ListData(["Hello", "World"]).contains("Display");
 
 | Parameter | Type                                                   | Description                      |
 | --------- | ------------------------------------------------------ | -------------------------------- |
-| datos     | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | data to check if it is contained |
+| data      | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | data to check if it is contained |
 
 
 ### copy
