@@ -159,11 +159,27 @@ Creates a new BlockPos based on this BlockPos that is one block lower than this 
 
  Returns: `a new BlockPos that is one block lower than this BlockPos`
 
-Return type: net.minecraft.util.math.BlockPos
+Return type: [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos)
 
 ```zenscript
 new BlockPos(0, 1, 2).down();
 ```
+
+
+Creates a new BlockPos based on this BlockPos that is n block(s) lower than this BlockPos
+
+ Returns: `a new BlockPos that is n block(s) lower than this BlockPos`
+
+Return type: [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos)
+
+```zenscript
+new BlockPos(0, 1, 2).down(n as int);
+```
+
+| Parameter | Type | Description             |
+| --------- | ---- | ----------------------- |
+| n         | int  | No description provided |
+
 
 ### east
 
@@ -171,7 +187,7 @@ Creates a new BlockPos based on this BlockPos that is one block east of this Blo
 
  Returns: `a new BlockPos that is one block east of this BlockPos`
 
-Return type: net.minecraft.util.math.BlockPos
+Return type: [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos)
 
 ```zenscript
 new BlockPos(0, 1, 2).east();
@@ -182,7 +198,7 @@ Creates a new BlockPos based on this BlockPos that is n block(s) east of this Bl
 
  Returns: `a new BlockPos that is n block(s) east of this BlockPos`
 
-Return type: net.minecraft.util.math.BlockPos
+Return type: [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos)
 
 ```zenscript
 new BlockPos(0, 1, 2).east(n as int);
@@ -218,7 +234,7 @@ Creates a new BlockPos based on this BlockPos that is one block north of this Bl
 
  Returns: `a new BlockPos that is one block north of this BlockPos`
 
-Return type: net.minecraft.util.math.BlockPos
+Return type: [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos)
 
 ```zenscript
 new BlockPos(0, 1, 2).north();
@@ -229,7 +245,7 @@ Creates a new BlockPos based on this BlockPos that is n block(s) north of this B
 
  Returns: `a new BlockPos that is n block(s) north of this BlockPos`
 
-Return type: net.minecraft.util.math.BlockPos
+Return type: [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos)
 
 ```zenscript
 new BlockPos(0, 1, 2).north(n as int);
@@ -283,7 +299,7 @@ Creates a new BlockPos based on this BlockPos that is one block south of this Bl
 
  Returns: `a new BlockPos that is one block south of this BlockPos`
 
-Return type: net.minecraft.util.math.BlockPos
+Return type: [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos)
 
 ```zenscript
 new BlockPos(0, 1, 2).south();
@@ -294,7 +310,7 @@ Creates a new BlockPos based on this BlockPos that is n block(s) south of this B
 
  Returns: `a new BlockPos that is n block(s) south of this BlockPos`
 
-Return type: net.minecraft.util.math.BlockPos
+Return type: [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos)
 
 ```zenscript
 new BlockPos(0, 1, 2).south(n as int);
@@ -330,7 +346,7 @@ Creates a new BlockPos based on this BlockPos that is one block higher than this
 
  Returns: `a new BlockPos that is one block higher than this BlockPos`
 
-Return type: net.minecraft.util.math.BlockPos
+Return type: [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos)
 
 ```zenscript
 new BlockPos(0, 1, 2).up();
@@ -341,7 +357,7 @@ Creates a new BlockPos based on this BlockPos that is n block(s) higher than thi
 
  Returns: `a new BlockPos that is n block(s) higher than this BlockPos`
 
-Return type: net.minecraft.util.math.BlockPos
+Return type: [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos)
 
 ```zenscript
 new BlockPos(0, 1, 2).up(n as int);
@@ -359,7 +375,7 @@ Creates a new BlockPos based on this BlockPos that is one block west of this Blo
 
  Returns: `a new BlockPos that is one block west of this BlockPos`
 
-Return type: net.minecraft.util.math.BlockPos
+Return type: [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos)
 
 ```zenscript
 new BlockPos(0, 1, 2).west();
@@ -370,7 +386,7 @@ Creates a new BlockPos based on this BlockPos that is n block(s) west of this Bl
 
  Returns: `a new BlockPos that is n block(s) west of this BlockPos`
 
-Return type: net.minecraft.util.math.BlockPos
+Return type: [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos)
 
 ```zenscript
 new BlockPos(0, 1, 2).west(n as int);
