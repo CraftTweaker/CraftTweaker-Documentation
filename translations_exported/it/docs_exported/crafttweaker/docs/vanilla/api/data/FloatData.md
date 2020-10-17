@@ -77,7 +77,7 @@ Return type: boolean
 
 | Parameter | Type                                                   | Description                      |
 | --------- | ------------------------------------------------------ | -------------------------------- |
-| dati      | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | data to check if it is contained |
+| data      | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | data to check if it is contained |
 
 
 ### copy
