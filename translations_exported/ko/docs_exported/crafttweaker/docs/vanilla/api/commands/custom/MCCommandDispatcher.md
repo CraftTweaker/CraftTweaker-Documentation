@@ -48,19 +48,6 @@ myMCCommandDispatcher.execute(input as String, source as crafttweaker.api.comman
 | source    | [crafttweaker.api.commands.custom.MCCommandSource](/vanilla/api/commands/custom/MCCommandSource) | No description provided |
 
 
-
-Return type: int
-
-```zenscript
-myMCCommandDispatcher.execute(input as com.mojang.brigadier.StringReader, source as crafttweaker.api.commands.custom.MCCommandSource);
-```
-
-| Parameter | Type                                                                                             | Description             |
-| --------- | ------------------------------------------------------------------------------------------------ | ----------------------- |
-| input     | com.mojang.brigadier.StringReader                                                                | No description provided |
-| source    | [crafttweaker.api.commands.custom.MCCommandSource](/vanilla/api/commands/custom/MCCommandSource) | No description provided |
-
-
 ### findAmbiguities
 
 ```zenscript
@@ -180,19 +167,6 @@ myMCCommandDispatcher.parse(command as String, source as crafttweaker.api.comman
 | Parameter | Type                                                                                             | Description             |
 | --------- | ------------------------------------------------------------------------------------------------ | ----------------------- |
 | command   | String                                                                                           | No description provided |
-| source    | [crafttweaker.api.commands.custom.MCCommandSource](/vanilla/api/commands/custom/MCCommandSource) | No description provided |
-
-
-
-Return type: [crafttweaker.api.commands.custom.MCParseResults](/vanilla/api/commands/custom/MCParseResults)
-
-```zenscript
-myMCCommandDispatcher.parse(command as com.mojang.brigadier.StringReader, source as crafttweaker.api.commands.custom.MCCommandSource);
-```
-
-| Parameter | Type                                                                                             | Description             |
-| --------- | ------------------------------------------------------------------------------------------------ | ----------------------- |
-| command   | com.mojang.brigadier.StringReader                                                                | No description provided |
 | source    | [crafttweaker.api.commands.custom.MCCommandSource](/vanilla/api/commands/custom/MCCommandSource) | No description provided |
 
 
