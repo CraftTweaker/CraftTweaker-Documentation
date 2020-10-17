@@ -1,62 +1,62 @@
 # IItemUtils
 
-Interfejs ItemUtils dostarcza różne urządzenia towaru.  
-Można go uzyskać za pomocą słowa kluczowego `itemUtils`.
+The ItemUtils interface provides various item utils.  
+It can be accessed using the `itemUtils` keyword.
 
-## Tworzenie mikstur
+## Creating Potions
 
-Funkcja createPotions pozwala tworzyć niestandardowe mikstury.  
-Zwraca miksturę jako [IItemStack](/Vanilla/Items/IItemStack/).  
-Ponieważ parametr dla tej funkcji jest vararg, można podać jeden obiekt [][] lub wiele obiektów[].  
-W obu przypadkach każdy obiekt [] musi zawierać
+The createPotions function allows you to create custom potions.  
+Returns the potion as [IItemStack](/Vanilla/Items/IItemStack/).  
+As the Parameter for this function is a vararg, you can either provide one Object[][] or many Object[].  
+In both cases each Object[] needs to contain
 
-1. [Mikstura](/Vanilla/Potions/IPotion/)
-2. Barwa opisująca wzmacniacze/wytrzymałość
-3. Wycinek opisujący czas trwania efektu. 
+1. An [IPotion](/Vanilla/Potions/IPotion/)
+2. An int describing the effect amplifier/strength
+3. An int describing the effect duration. 
 
-Jeśli obiekt [] nie ma tej długości lub nie jest w tej kolejności, zostanie zignorowany.
+If an Object[] is not of this length or not in this order, it will be ignored.
 
 ```zenscript
 //createPotion(Object[]...);
 //createPotion([effect,strength,duration],[effect2, strength2,duration2],...);
 //createPotion([[effect,strength,duration],[effect2, strength2,duration2],...]);
-walna mikstura = itemUtils.createPotion([[<potion:minecraft:strength>, 1, 1]]);
+val potion = itemUtils.createPotion([[<potion:minecraft:strength>, 1, 1]]);
 ```
 
-## Pobierz przedmioty po nazwie
+## Get Items by name
 
-Te dwie funkcje zwracają [IItemStack](/Vanilla/Items/IItemStack/)[] zawierający wszystkie pasujące elementy.  
-Pierwsze sprawdzanie nazw rejestrów elementów, drugie używa niezlokalizowanych nazw.
+These two functions both return an [IItemStack](/Vanilla/Items/IItemStack/)[] containing all matching items.  
+The first checks against the items' registry names, the 2nd uses the unlocalized names.
 
 ```zenscript
-//getItemsByRegexRegistryName(Regex)
-itemUtils.getItemsByRegexRegistryName(".*sword.*"); // wszystkie rzeczy, które mają miecz w nazwie
-itemUtils.getItemsByRegexRegistryName(". termiczne*"); // wszystkie ekspansje termiczne/fundamenty/dynamiki
+//getItemsByRegexRegistryName(String Regex)
+itemUtils.getItemsByRegexRegistryName(".*sword.*"); // all things that have sword in the name
+itemUtils.getItemsByRegexRegistryName(".*thermal.*"); // all thermal expansion/foundation/dynamics items
 
-//getItemsByRegexUnlocalizedName(Regex)
-itemUtils.getItemsByRegexUnlocalizedName(".*pink.*"); // różowe!! <3
+//getItemsByRegexUnlocalizedName(String Regex)
+itemUtils.getItemsByRegexUnlocalizedName(".*pink.*"); // pink things!! <3
 ```
 
-## Imituj uchwyt wspornika przedmiotów
+## Imitate the Item Bracket Handler
 
-Ta metoda działa tak samo jak [Obsługa nawiasów Produktu](/Vanilla/Brackets/Bracket_Item/). Pozwala to na używanie zmiennych ciągu w nazwie przedmiotu przez konkatenowanie go.  
-W przeciwieństwie do uchwytu nawiasu, musisz jednak podać meta jako opcjonalny parametr.  
-Jeśli chcesz użyć wieloznacznego meta, użyj `32767`.
+This method does the same as the [Item Bracket Handler](/Vanilla/Brackets/Bracket_Item/). This allows you to use string variables in the item name by concatenating it in.  
+Unlike the bracket handler though, you need to provide the meta as optional parameter.  
+If you want to use the wildcard meta, use `32767`.
 
     //getItem(location, @Optional meta);
-    itemUtils.getItem("minecraft:iron_ingot"); //<minecraft:iron_ingot>
-    itemUtils.getItem("minecraft:dye", 1); //<minecraft:dye:1>
-    itemUtils.getItem("minecraft:wool", 32767); //<minecraft:wool:*>
+    itemUtils.getItem("minecraft:iron_ingot");    //<minecraft:iron_ingot>
+    itemUtils.getItem("minecraft:dye", 1);        //<minecraft:dye:1>
+    itemUtils.getItem("minecraft:wool", 32767);   //<minecraft:wool:*>
     
 
-## Utwórz jajko Spawn
+## Create Spawn Egg
 
-Funkcja createSpawnEgg pozwala na tworzenie niestandardowych jaj spawnu modów.  
-Niestandardowy NBT jest OPTIONAL i może zastąpić znacznik obiektu.  
-Zwraca jajko spawnu jako [IItemStack](/Vanilla/Items/IItemStack/).
+The createSpawnEgg function allows you to create custom mod spawn eggs.  
+The customNBT is OPTIONAL and can override the entity tag.  
+Returns the spawn egg as [IItemStack](/Vanilla/Items/IItemStack/).
 
 ```zenscript
 //createSpawnEgg(entity, @optional customNBT)
-//NBT nadpisuje obiekt (tworzy creeper egg!)
-jajko owalne = itemUtils.createSpawnEgg(<entity:minecraft:sheep>, {EntityTag:{id:"minecraft:creeper",NoAI:1 jako byte,PersistenceRequired:1 jako bajte}});
+//NBT overrides entity (this creates a creeper egg!)
+val egg = itemUtils.createSpawnEgg(<entity:minecraft:sheep>, {EntityTag:{id:"minecraft:creeper",NoAI:1 as byte,PersistenceRequired:1 as byte}});
 ```
