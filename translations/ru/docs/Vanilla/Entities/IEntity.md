@@ -68,7 +68,7 @@ IEntity наследует от [ICommandSender](/Vanilla/Commands/ICommandSende
 | passengers               | getPassengers()   | List<IEntity\>                                             |
 | passengersRecursive      |                   | List<IEntity\>                                             |
 | portalCooldowne          |                   | int                                                         |
-| position3f               | getPosition3f()   | [Позиция3f](/Vanilla/Utils/Position3f/)                     |
+| position3f               | getPosition3f()   | [Position3f](/Vanilla/Utils/Position3f/)                    |
 | ridingEntity             | getRidingEntity() | *IEntity*                                                   |
 | shouldRiderSit           |                   | boolean                                                     |
 | tags                     |                   | List<string\>                                              |
