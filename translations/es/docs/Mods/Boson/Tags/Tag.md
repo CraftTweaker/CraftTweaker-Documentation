@@ -156,7 +156,7 @@ Tags also provide some overloading of normal ZenScript operators, so that certai
 ### Unary operators
 Unary operators are operators that are applied to the tag itself and take no arguments.
 
-| Operador | Syntax | Method equivalent | Notes |
+| Operator | Syntax | Method equivalent | Notes |
 | -------- | ------ | ----------------- | ----- |
 | `-`      | `-TAG` | `clear`           | \-   |
 
@@ -178,7 +178,7 @@ val tag = <tag-items:forge:ingots>;
 tag = tag & [<minecraft:iron_ingot>] as IItemStack[];
 ```
 
-| Operador | Argument Type                            | Syntax           | Method Equivalent | Notes                                                                 |
+| Operator | Argument Type                            | Syntax           | Method Equivalent | Notes                                                                 |
 | -------- | ---------------------------------------- | ---------------- | ----------------- | --------------------------------------------------------------------- |
 | `+`      | `Tag`                                    | `TAG + ARG1`     | `addFrom`         | \-                                                                   |
 | `+`      | `any[]`                                  | `TAG + ARG1`     | `addAll`          | The array type must be the same as the tag's contents                 |
