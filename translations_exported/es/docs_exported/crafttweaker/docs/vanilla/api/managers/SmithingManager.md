@@ -48,12 +48,20 @@ smithing.addRecipe("recipe_name", <item:minecraft:golden_apple>, <item:minecraft
 | añadir     | [crafttweaker.api.item.IIngredient](/vanilla/api/items/IIngredient) | El elemento añadido al elemento base. |
 
 
-### getRecipeByName
+### getAllRecipes
 
-Tipo de devolución: [crafttweaker.api.recipes.WrapperRecipe](/crafttweaker/api/recipes/WrapperRecipe)
+Return type: List&lt;[crafttweaker.api.recipes.WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)&gt;
 
 ```zenscript
-smithing.getRecipeByName(nombre como String);
+smithing.getAllRecipes();
+```
+
+### getRecipeByName
+
+Return type: [crafttweaker.api.recipes.WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)
+
+```zenscript
+smithing.getRecipeByName(name as String);
 ```
 
 | Parameter | Type   | Description             |
@@ -63,10 +71,10 @@ smithing.getRecipeByName(nombre como String);
 
 ### Obtener recetas por salida
 
-Tipo de retorno: Lista&lt;[crafttweaker.api.recipes.WrapperRecipe](/crafttweaker/api/recipes/WrapperRecipe)&gt;
+Return type: List&lt;[crafttweaker.api.recipes.WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)&gt;
 
 ```zenscript
-smithing.getRecipesByOutput(salida como crafttweaker.api.item.IIngredient);
+smithing.getRecipesByOutput(output as crafttweaker.api.item.IIngredient);
 ```
 
 | Parameter | Type                                                                | Description             |
@@ -100,8 +108,8 @@ smithing.removeByModid("minecraft");
 Quitar receta basada en la modificación del nombre del registro con una comprobación de exclusión añadida, por lo que puede eliminar todo el mod además de unos pocos especificados.
 
 ```zenscript
-smithing.removeByModid(modid as String, excluir como crafttweaker.api.recipe.RecipeFilter);
-smithing.removeByModid("minecraft", (nombre como cadena) => {return name == "naranja_lana";});
+smithing.removeByModid(modid as String, exclude as crafttweaker.api.recipe.RecipeFilter);
+smithing.removeByModid("minecraft", (name as string) => {return name == "orange_wool";});
 ```
 
 | Parameter | Type                                                               | Description                            |
@@ -115,7 +123,7 @@ smithing.removeByModid("minecraft", (nombre como cadena) => {return name == "nar
 Remove recipe based on Registry name
 
 ```zenscript
-smithing.removeByName(nombre como String);
+smithing.removeByName(name as String);
 smithing.removeByName("minecraft:furnace");
 ```
 
