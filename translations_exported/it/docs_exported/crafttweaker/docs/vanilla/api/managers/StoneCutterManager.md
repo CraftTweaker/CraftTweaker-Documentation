@@ -47,12 +47,20 @@ stoneCutter.addRecipe("recipe_name", <item:minecraft:grass>, <tag:minecraft:wool
 | input      | [crafttweaker.api.item.IIngredient](/vanilla/api/items/IIngredient) | input [crafttweaker.api.item.IIngredient](/vanilla/api/items/IIngredient) |
 
 
-### getRecipeByName
+### getAllRecipes
 
-Tipo di restituzione: [crafttweaker.api.recipes.WrapperRecipe](/crafttweaker/api/recipes/WrapperRecipe)
+Return type: List&lt;[crafttweaker.api.recipes.WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)&gt;
 
 ```zenscript
-stoneCutter.getRecipeByName(nome come stringa);
+stoneCutter.getAllRecipes();
+```
+
+### getRecipeByName
+
+Return type: [crafttweaker.api.recipes.WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)
+
+```zenscript
+stoneCutter.getRecipeByName(name as String);
 ```
 
 | Parameter | Type   | Description                 |
@@ -62,10 +70,10 @@ stoneCutter.getRecipeByName(nome come stringa);
 
 ### getRecipesByOutput
 
-Tipo di restituzione: Lista&lt;[crafttweaker.api.recipes.WrapperRecipe](/crafttweaker/api/recipes/WrapperRecipe)&gt;
+Return type: List&lt;[crafttweaker.api.recipes.WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)&gt;
 
 ```zenscript
-stoneCutter.getRecipesByOutput(output come crafttweaker.api.item.IIngredient);
+stoneCutter.getRecipesByOutput(output as crafttweaker.api.item.IIngredient);
 ```
 
 | Parameter | Type                                                                | Description                 |
