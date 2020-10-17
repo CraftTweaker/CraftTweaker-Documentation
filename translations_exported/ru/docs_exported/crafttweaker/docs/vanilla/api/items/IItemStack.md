@@ -287,7 +287,7 @@ Sets the amount of the ItemStack
 | Параметр | Тип | Description          |
 | -------- | --- | -------------------- |
 | процент  | int | Описание отсутствует |
-### ИЛИ
+### OR
 
 ```zenscript
 <tag:ingotIron> | Другое как crafttweaker.api.item.IIngredient
