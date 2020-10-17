@@ -1,6 +1,6 @@
 # IMobSpawnerBaseLogic
 
-Объект IMobSpawnerBaseLogic содержит все виды информации о том, как и где создать что-то для мобов спавнов.
+The IMobSpawnerBaseLogic object contains all kinds of information on how and where to spawn something for mob spawners.
 
 ## Импорт класса
 
@@ -9,17 +9,17 @@
 
 ## Геттеры/сеттеры
 
-| Геттер             | Сеттер             | Description                                 | Тип                                                       |
-| ------------------ | ------------------ | ------------------------------------------- | --------------------------------------------------------- |
-| `nbtData`          | `nbtData`          | NBT данные для спавна. (см. ниже)           | [IData](/Vanilla/Data/IData/)                             |
-| `entityDefinition` | `entityDefinition` | Определение сущности, подлежащее появлению. | [IEntityDefinition](/Vanilla/Entities/IEntityDefinition/) |
-| `world`            |                    | Мир, к которому принадлежит спавн.          | [IWorld](/Vanilla/World/IWorld)                           |
-| `blockPos`         |                    | Позиция блока спавна.                       | [IBlockPos](/Vanilla/World/IBlockPos)                     |
+| Геттер             | Сеттер             | Description                           | Тип                                                       |
+| ------------------ | ------------------ | ------------------------------------- | --------------------------------------------------------- |
+| `nbtData`          | `nbtData`          | NBT Data for the spawner. (See below) | [IData](/Vanilla/Data/IData/)                             |
+| `entityDefinition` | `entityDefinition` | Entity Definition to be spawned.      | [IEntityDefinition](/Vanilla/Entities/IEntityDefinition/) |
+| `world`            |                    | World that the spawner belongs to.    | [IWorld](/Vanilla/World/IWorld)                           |
+| `blockPos`         |                    | The position of the spawner block.    | [IBlockPos](/Vanilla/World/IBlockPos)                     |
 
 ## Методы ZenScript
 
 ```zenscript
-unid updateSpawner(); // Обновление спавна сущности и деление таймера спавна.
+void updateSpawner(); // Updates the spawner for spawning an entity and ticking down the spawn timer.
 
-void setDelayToMin(); // Устанавливает задержку генератора на минимальную задержку на следующий спавн.
+void setDelayToMin(); // Sets the delay of the spawner to the minimum delay for the next spawn.
 ```
