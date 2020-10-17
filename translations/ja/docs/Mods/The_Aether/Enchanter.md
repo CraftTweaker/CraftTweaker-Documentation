@@ -3,7 +3,7 @@
 ## Package
 
 ```zenscript
-import mods.aether_legacy.Enchanter;エンチャンター;
+import mods.aether_legacy.Enchanter;Enchanter;
 ```
 ## Usage
 
