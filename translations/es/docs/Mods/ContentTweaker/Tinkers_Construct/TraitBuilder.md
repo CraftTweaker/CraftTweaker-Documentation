@@ -54,7 +54,7 @@ myTrait.removeItem(<item:minecraft:iron_pickaxe>);
 
 You can set and get these properties using the names given:
 
-| Name                 | Type   |
+| Nombre               | Type   |
 | -------------------- | ------ |
 | color                | int    |
 | countPerLevel        | int    |
