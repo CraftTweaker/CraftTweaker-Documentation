@@ -1,7 +1,7 @@
-# L'entité est en vie
+# EntityLivingHurt
 
-L'événement EntityLivingHurt est lancé chaque fois qu'une entité est sur le point d'être blessée.  
-Il peut être annulé pour empêcher l'entité d'être blessée.
+The EntityLivingHurt Event is fired whenever an Entity is about to get hurt.  
+It can be canceled to stop the entity from being hurt.
 
 ## Event Class
 
