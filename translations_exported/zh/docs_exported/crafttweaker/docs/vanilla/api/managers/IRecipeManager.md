@@ -30,9 +30,17 @@ craftingTable.addJSONRecipe("recipe_name", {ingredient:{item:<item:minecraft:gol
 | data | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | data representing the json file |
 
 
+### getAllRecipes
+
+Return type: List&lt;[crafttweaker.api.recipes.WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)&gt;
+
+```zenscript
+craftingTable.getAllRecipes();
+```
+
 ### getRecipeByName
 
-返回类型： [craftbiner.api.配方。WrapperRecipe](/crafttweaker/api/recipes/WrapperRecipe)
+Return type: [crafttweaker.api.recipes.WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)
 
 ```zenscript
 craftingTable.getRecipeByname(名称为字符串)；
@@ -45,7 +53,7 @@ craftingTable.getRecipeByname(名称为字符串)；
 
 ### getRecipesBy输出
 
-返回类型：列表&lt;[craftbinstrues.WrapperRecipe](/crafttweaker/api/recipes/WrapperRecipe)&gt;
+Return type: List&lt;[crafttweaker.api.recipes.WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)&gt;
 
 ```zenscript
 craftingTable.getRecipesByOutput(输出为 craftbiner.api.item.IIngredient);
