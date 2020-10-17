@@ -85,9 +85,17 @@ craftingTabla. ddShapeless("recipe_name", <item:minecraft:dirt>, [<item:minecraf
 | recipeFunction | [crafttweaker.api.receta.RecipeFunctionArray](/vanilla/api/recipe/RecipeFunctionArray) | opcional [crafttweaker.api.recipe.RecipeFunctionArray](/vanilla/api/recipe/RecipeFunctionArray) para condiciones más avanzadas | true       | `null`        |
 
 
+### getAllRecipes
+
+Return type: List&lt;[crafttweaker.api.recipes.WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)&gt;
+
+```zenscript
+craftingTable.getAllRecipes();
+```
+
 ### getRecipeByName
 
-Tipo de devolución: [crafttweaker.api.recipes.WrapperRecipe](/crafttweaker/api/recipes/WrapperRecipe)
+Return type: [crafttweaker.api.recipes.WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)
 
 ```zenscript
 craftingTable.getRecipeByName(nombre como cadena);
@@ -100,7 +108,7 @@ craftingTable.getRecipeByName(nombre como cadena);
 
 ### Obtener recetas por salida
 
-Tipo de retorno: Lista&lt;[crafttweaker.api.recipes.WrapperRecipe](/crafttweaker/api/recipes/WrapperRecipe)&gt;
+Return type: List&lt;[crafttweaker.api.recipes.WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)&gt;
 
 ```zenscript
 craftingTable.getRecipesByOutput(salida como crafttweaker.api.item.IIngredient);
