@@ -1,7 +1,7 @@
 # EntityLivingHurt
 
-EntityLivingHurt イベントは、エンティティが怪我をしようとするたびに発生します。  
-エンティティが傷つくのを防ぐためにキャンセルすることができます。
+The EntityLivingHurt Event is fired whenever an Entity is about to get hurt.  
+It can be canceled to stop the entity from being hurt.
 
 ## Event Class
 
