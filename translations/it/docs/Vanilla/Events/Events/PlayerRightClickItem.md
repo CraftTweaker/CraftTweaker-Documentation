@@ -1,6 +1,6 @@
 # PlayerRightClickItem
 
-The PlayerRightClickItem Event is fired shortly before an item's functionality is fired. It is not fired if the player is targetting a block or entity. It can be canceled to prevent any other events from taking place. If the event is canceled, a specific result of allow, deny, or pass can be provided. Per impostazione predefinita, il risultato è passato.
+The PlayerRightClickItem Event is fired shortly before an item's functionality is fired. It is not fired if the player is targetting a block or entity. It can be canceled to prevent any other events from taking place. If the event is canceled, a specific result of allow, deny, or pass can be provided. By default, the result is pass.
 
 ## Event Class
 You will need to cast the event in the function header as this class:  
@@ -16,6 +16,6 @@ PlayerRightClickItem Events implement the following interfaces and are able to c
 ## ZenGetters & ZenSetters
 The following information can be adjusted in the event.
 
-| ZenGetter                | ZenSetter                | type                                  |
-| ------------------------ | ------------------------ | ------------------------------------- |
-| `cancellazioneRisultato` | `cancellazioneRisultato` | string ("allow" / "deny" / "default") |
+| ZenGetter            | ZenSetter            | type                                  |
+| -------------------- | -------------------- | ------------------------------------- |
+| `cancellationResult` | `cancellationResult` | string ("allow" / "deny" / "default") |
