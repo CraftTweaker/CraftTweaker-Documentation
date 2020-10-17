@@ -50,12 +50,20 @@ campfire.addRecipe("wool2diamond", <item:diamond>, <tag:minecraft:wool>, 1.0, 0)
 | cookTime  | int                                                                 | how long it takes to cook       |
 
 
-### getRecipeByName
+### getAllRecipes
 
-Typ zwrotu: [crafttweaker.api.recipes.WrapperRecipe](/crafttweaker/api/recipes/WrapperRecipe)
+Return type: List&lt;[crafttweaker.api.recipes.WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)&gt;
 
 ```zenscript
-campfire.getRecipeByName(nazwa jako String);
+campfire.getAllRecipes();
+```
+
+### getRecipeByName
+
+Return type: [crafttweaker.api.recipes.WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)
+
+```zenscript
+campfire.getRecipeByName(name as String);
 ```
 
 | Parameter | Type   | Description             |
@@ -65,10 +73,10 @@ campfire.getRecipeByName(nazwa jako String);
 
 ### getRecipesByOutput
 
-Typ zwracania: Lista&lt;[crafttweaker.api.recipes.WrapperRecipe](/crafttweaker/api/recipes/WrapperRecipe)&gt;
+Return type: List&lt;[crafttweaker.api.recipes.WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)&gt;
 
 ```zenscript
-campfire.getRecipesByOutput(wyjście jako crafttweaker.api.item.IIngredient);
+campfire.getRecipesByOutput(output as crafttweaker.api.item.IIngredient);
 ```
 
 | Parameter | Type                                                                | Description             |
@@ -89,7 +97,7 @@ campfire.removeAll();
 Remove recipe based on Registry name modid
 
 ```zenscript
-campfire.removeByModid(modid jako String);
+campfire.removeByModid(modid as String);
 campfire.removeByModid("minecraft");
 ```
 
@@ -102,8 +110,8 @@ campfire.removeByModid("minecraft");
 Usuń przepis na podstawie modida nazwy rejestru z dodanym sprawdzianem wykluczenia, dzięki czemu możesz usunąć cały mod poza kilkoma określonymi.
 
 ```zenscript
-campfire.removeByModid(modid jako string, wyklucz jako crafttweaker.api.recipe.RecipeFilter);
-campfire.removeByModid("minecraft", (nazwa jako string) => {return name == "orange_wool";});
+campfire.removeByModid(modid as String, exclude as crafttweaker.api.recipe.RecipeFilter);
+campfire.removeByModid("minecraft", (name as string) => {return name == "orange_wool";});
 ```
 
 | Parameter | Type                                                               | Description                      |
@@ -117,7 +125,7 @@ campfire.removeByModid("minecraft", (nazwa jako string) => {return name == "oran
 Remove recipe based on Registry name
 
 ```zenscript
-campfire.removeByName(nazwa jako String);
+campfire.removeByName(name as String);
 campfire.removeByName("minecraft:furnace");
 ```
 
@@ -145,7 +153,7 @@ campfire.removeByRegex("\\d_\\d");
 Remove a recipe based on it's output.
 
 ```zenscript
-campfire.removeRecipe(wyjście jako crafttweaker.api.item.IItemStack);
+campfire.removeRecipe(output as crafttweaker.api.item.IItemStack);
 campfire.removeRecipe(<item:minecraft:glass>);
 ```
 
