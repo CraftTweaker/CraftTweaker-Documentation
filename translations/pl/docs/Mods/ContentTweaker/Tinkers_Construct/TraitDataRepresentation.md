@@ -10,7 +10,7 @@ It might be required for you to import the class if you encounter any issues (li
 
 ## ZenGetter and ZenSetter
 
-| Nazwisko    | ZenGetter | ZenSetter | Type   |
+| Name        | ZenGetter | ZenSetter | Type   |
 | ----------- | --------- | --------- | ------ |
 | color       | ✔         | ✔         | int    |
 | current     | ✔         | ✔         | int    |
