@@ -1,13 +1,13 @@
-# アクセサリー
+# Accessory
 
 ## Package
 
 ```zenscript
-import mods.aether_legacy.Accessory;付属品;
+import mods.aether_legacy.Accessory;Accessory;
 ```
 ## Usage
 
 ```zenscript
-// 可能な型は "ring", "pendant", "cape", "shield", "gloves", and "miscellaneous" (case insensitive)
-Accessory. egisterAccessory(IItemStack input, String type); // エーテルアクセサリとしてアイテムを登録
+// Possible types are "ring", "pendant", "cape", "shield", "gloves", and "miscellaneous" (case insensitive)
+Accessory.registerAccessory(IItemStack input, String type); // Registers an item as an Aether accessory
 ```
