@@ -287,7 +287,7 @@ Sets the amount of the ItemStack
 | 参数  | 类型  | 描述                      |
 | --- | --- | ----------------------- |
 | 百分比 | int | No description provided |
-### 或
+### OR
 
 ```zenscript
 <tag:ingotIron> | 其他为 craftbiner.api.item.IIngredient
