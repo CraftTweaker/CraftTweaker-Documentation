@@ -50,12 +50,20 @@ smoker.addRecipe("wool2diamond", <item:diamond>, <tag:minecraft:wool>, 1.0, 0);
 | cookTime | int                                                                 | how long it takes to cook       |
 
 
-### getRecipeByName
+### getAllRecipes
 
-Тип возврата: [crafttweaker.api.recipes.WrapperRecipe](/crafttweaker/api/recipes/WrapperRecipe)
+Return type: List&lt;[crafttweaker.api.recipes.WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)&gt;
 
 ```zenscript
-smoker.getRecipeByName(название как строка);
+smoker.getAllRecipes();
+```
+
+### getRecipeByName
+
+Return type: [crafttweaker.api.recipes.WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)
+
+```zenscript
+smoker.getRecipeByName(name as String);
 ```
 
 | Параметр | Тип    | Description          |
@@ -65,10 +73,10 @@ smoker.getRecipeByName(название как строка);
 
 ### getRecipesByFrom
 
-Тип возврата: Список&lt;[crafttweaker.api.recipes.WrapperRecipe](/crafttweaker/api/recipes/WrapperRecipe)&gt;
+Return type: List&lt;[crafttweaker.api.recipes.WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)&gt;
 
 ```zenscript
-smoker.getRecipesByOutput(выход как crafttweaker.api.item.IIngredient);
+smoker.getRecipesByOutput(output as crafttweaker.api.item.IIngredient);
 ```
 
 | Параметр | Тип                                                                 | Description          |
@@ -103,7 +111,7 @@ smoker.removeByModid("minecraft");
 
 ```zenscript
 smoker.removeByModid(modid as String, exclude as crafttweaker.api.recipe.RecipeFilter);
-smoker.removeByModid("minecraft", (название как строка) => {return name == "orange_wool";});
+smoker.removeByModid("minecraft", (name as string) => {return name == "orange_wool";});
 ```
 
 | Параметр  | Тип                                                                      | Description                         |
