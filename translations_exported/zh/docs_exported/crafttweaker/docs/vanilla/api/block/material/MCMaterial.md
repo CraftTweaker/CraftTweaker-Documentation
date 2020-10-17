@@ -28,7 +28,7 @@ myMCMaterial.blocksMovement();
 
 获取方块的颜色索引。 输出与原版地图表示此方块的相同颜色
 
-返回类型：MCMaterialColor
+Return type: [crafttweaker.api.block.material.MCMaterialColor](/vanilla/api/block/material/MCMaterialColor)
 
 ```zenscript
 myMCMaterial.getColor();
