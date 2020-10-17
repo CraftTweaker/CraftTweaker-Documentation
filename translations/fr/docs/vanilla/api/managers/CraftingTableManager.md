@@ -27,7 +27,7 @@ craftingTable.addJSONRecipe("Nom_de_la_recette", {ingredient:{item:<item:minecra
 | Parameter | Type                                                   | Description                     |
 | --------- | ------------------------------------------------------ | ------------------------------- |
 | name      | String                                                 | name of the recipe              |
-| données   | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | data representing the json file |
+| data      | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | data representing the json file |
 
 
 ### addShaped
