@@ -159,11 +159,27 @@ Creates a new BlockPos based on this BlockPos that is one block lower than this 
 
  Returns: `a new BlockPos that is one block lower than this BlockPos`
 
-Tipo di restituzione: net.minecraft.util.math.BlockPos
+Tipo di restituzione: [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos)
 
 ```zenscript
 new BlockPos(0, 1, 2).down();
 ```
+
+
+Creates a new BlockPos based on this BlockPos that is n block(s) lower than this BlockPos
+
+ Returns: `a new BlockPos that is n block(s) lower than this BlockPos`
+
+Tipo di restituzione: [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos)
+
+```zenscript
+new BlockPos(0, 1, 2).down(n as int);
+```
+
+| Parameter | Type | Description                 |
+| --------- | ---- | --------------------------- |
+| n         | int  | Nessuna descrizione fornita |
+
 
 ### east
 
@@ -171,7 +187,7 @@ Creates a new BlockPos based on this BlockPos that is one block east of this Blo
 
  Returns: `a new BlockPos that is one block east of this BlockPos`
 
-Tipo di restituzione: net.minecraft.util.math.BlockPos
+Tipo di restituzione: [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos)
 
 ```zenscript
 new BlockPos(0, 1, 2).east();
@@ -182,7 +198,7 @@ Creates a new BlockPos based on this BlockPos that is n block(s) east of this Bl
 
  Returns: `a new BlockPos that is n block(s) east of this BlockPos`
 
-Tipo di restituzione: net.minecraft.util.math.BlockPos
+Tipo di restituzione: [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos)
 
 ```zenscript
 new BlockPos(0, 1, 2).east(n as int);
@@ -198,7 +214,7 @@ new BlockPos(0, 1, 2).east(2);
 
 Gets the Manhattan Distance of this pos compared to a different position
 
- Restituisce: `La distanza manhattan delle posizioni`
+ Returns: `The manhattan distance of the positions`
 
 Return type: int
 
@@ -218,7 +234,7 @@ Creates a new BlockPos based on this BlockPos that is one block north of this Bl
 
  Returns: `a new BlockPos that is one block north of this BlockPos`
 
-Tipo di restituzione: net.minecraft.util.math.BlockPos
+Tipo di restituzione: [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos)
 
 ```zenscript
 new BlockPos(0, 1, 2).north();
@@ -229,7 +245,7 @@ Creates a new BlockPos based on this BlockPos that is n block(s) north of this B
 
  Returns: `a new BlockPos that is n block(s) north of this BlockPos`
 
-Tipo di restituzione: net.minecraft.util.math.BlockPos
+Tipo di restituzione: [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos)
 
 ```zenscript
 new BlockPos(0, 1, 2).north(n as int);
@@ -283,7 +299,7 @@ Creates a new BlockPos based on this BlockPos that is one block south of this Bl
 
  Returns: `a new BlockPos that is one block south of this BlockPos`
 
-Tipo di restituzione: net.minecraft.util.math.BlockPos
+Tipo di restituzione: [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos)
 
 ```zenscript
 new BlockPos(0, 1, 2).south();
@@ -294,7 +310,7 @@ Creates a new BlockPos based on this BlockPos that is n block(s) south of this B
 
  Returns: `a new BlockPos that is n block(s) south of this BlockPos`
 
-Tipo di restituzione: net.minecraft.util.math.BlockPos
+Tipo di restituzione: [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos)
 
 ```zenscript
 new BlockPos(0, 1, 2).south(n as int);
@@ -310,7 +326,7 @@ new BlockPos(0, 1, 2).south(12);
 
 Subtracts two positions together and returns the result.
 
- Restituisce: `new [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) con i valori rimossi.`
+ Returns: `new [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) with the removed values.`
 
 Tipo di restituzione: [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos)
 
@@ -330,7 +346,7 @@ Creates a new BlockPos based on this BlockPos that is one block higher than this
 
  Returns: `a new BlockPos that is one block higher than this BlockPos`
 
-Tipo di restituzione: net.minecraft.util.math.BlockPos
+Tipo di restituzione: [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos)
 
 ```zenscript
 new BlockPos(0, 1, 2).up();
@@ -341,7 +357,7 @@ Creates a new BlockPos based on this BlockPos that is n block(s) higher than thi
 
  Returns: `a new BlockPos that is n block(s) higher than this BlockPos`
 
-Tipo di restituzione: net.minecraft.util.math.BlockPos
+Tipo di restituzione: [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos)
 
 ```zenscript
 new BlockPos(0, 1, 2).up(n as int);
@@ -359,7 +375,7 @@ Creates a new BlockPos based on this BlockPos that is one block west of this Blo
 
  Returns: `a new BlockPos that is one block west of this BlockPos`
 
-Tipo di restituzione: net.minecraft.util.math.BlockPos
+Tipo di restituzione: [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos)
 
 ```zenscript
 new BlockPos(0, 1, 2).west();
@@ -370,7 +386,7 @@ Creates a new BlockPos based on this BlockPos that is n block(s) west of this Bl
 
  Returns: `a new BlockPos that is n block(s) west of this BlockPos`
 
-Tipo di restituzione: net.minecraft.util.math.BlockPos
+Tipo di restituzione: [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos)
 
 ```zenscript
 new BlockPos(0, 1, 2).west(n as int);
@@ -386,7 +402,7 @@ new BlockPos(0, 1, 2).west(120);
 
 Checks if the given BlockPos is within the specified distance of this BlockPos (this uses the middle of the BlockPos)
 
- Restituisce: `vero se il BlockPos dato è entro la distanza data di questo BlockPos`
+ Returns: `true if the given BlockPos is within the given distance of this BlockPos`
 
 Return type: boolean
 
@@ -429,7 +445,7 @@ new BlockPos(0, 1, 2) + new BlockPos(3, 2, 1)
 
 Subtracts two positions together and returns the result.
 
- Restituisce: `new [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) con i valori rimossi.`
+ Returns: `new [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) with the removed values.`
 
 ```zenscript
 new BlockPos(0, 1, 2) - pos as crafttweaker.api.util.BlockPos
