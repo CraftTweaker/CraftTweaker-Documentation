@@ -1,25 +1,25 @@
 # IMobSpawnerBaseLogic
 
-L'objet IMobSpawnerBaseLogic contient toutes sortes d'informations sur comment et où faire apparaître quelque chose pour les créatures.
+The IMobSpawnerBaseLogic object contains all kinds of information on how and where to spawn something for mob spawners.
 
 ## Importing the class
 
-Il pourrait être nécessaire de [importer](/AdvancedFunctions/Import/) la classe pour éviter les erreurs.  
-`importer crafttweaker.tileentity.IMobSpawnerBaseLogic;`
+It might be required to [import](/AdvancedFunctions/Import/) the class to avoid errors.  
+`import crafttweaker.tileentity.IMobSpawnerBaseLogic;`
 
 ## ZenGetters/ZenSetters
 
-| ZenGetter                | ZenSetter                | Description                                    | Type                                                      |
-| ------------------------ | ------------------------ | ---------------------------------------------- | --------------------------------------------------------- |
-| `Données nbt`            | `Données nbt`            | Données NBT pour le spawner. (Voir ci-dessous) | [IData](/Vanilla/Data/IData/)                             |
-| `Définition de l'entité` | `Définition de l'entité` | Définition de l'entité à créer.                | [IEntityDefinition](/Vanilla/Entities/IEntityDefinition/) |
-| `world`                  |                          | Monde auquel appartient le spawner.            | [IWorld](/Vanilla/World/IWorld)                           |
-| `blockPos`               |                          | La position du bloc spawner.                   | [IBlockPos](/Vanilla/World/IBlockPos)                     |
+| ZenGetter          | ZenSetter          | Description                           | Type                                                      |
+| ------------------ | ------------------ | ------------------------------------- | --------------------------------------------------------- |
+| `nbtData`          | `nbtData`          | NBT Data for the spawner. (See below) | [IData](/Vanilla/Data/IData/)                             |
+| `entityDefinition` | `entityDefinition` | Entity Definition to be spawned.      | [IEntityDefinition](/Vanilla/Entities/IEntityDefinition/) |
+| `world`            |                    | World that the spawner belongs to.    | [IWorld](/Vanilla/World/IWorld)                           |
+| `blockPos`         |                    | The position of the spawner block.    | [IBlockPos](/Vanilla/World/IBlockPos)                     |
 
 ## ZenMethods
 
 ```zenscript
-void updateSpawner(); // Met à jour le spawner pour faire apparaître une entité et cocher la minuterie du spawner.
+void updateSpawner(); // Updates the spawner for spawning an entity and ticking down the spawn timer.
 
-void setDelayToMin(); // Définit le délai du spawner à un délai minimum pour le prochain spawn.
+void setDelayToMin(); // Sets the delay of the spawner to the minimum delay for the next spawn.
 ```
