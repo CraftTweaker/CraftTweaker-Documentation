@@ -27,7 +27,7 @@ myMCMaterial.blocksMovement();
 
 Retrieves the color index of the block. This is is the same color used by vanilla maps to represent this block.
 
-Typ zwrotu: MCMaterialColor
+Return type: [crafttweaker.api.block.material.MCMaterialColor](/vanilla/api/block/material/MCMaterialColor)
 
 ```zenscript
 myMCMaterial.getColor();
