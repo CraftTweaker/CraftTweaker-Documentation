@@ -1,7 +1,7 @@
 # IBlock
 
-Объект IBlock состоит из [IBlockDefinition](/Vanilla/Blocks/IBlockDefinition/), метаданных и TileData.  
-Он относится к блоку в игре.
+An IBlock Object consists of a [IBlockDefinition](/Vanilla/Blocks/IBlockDefinition/), a metadata and a TileData.  
+It refers to a block in the game.
 
 ## Импорт пакета
 
@@ -12,9 +12,9 @@
 
 Есть несколько способов получить объект IBlock:
 
-* Разложение [IItemStack](/Vanilla/Items/IItemStack/) в качестве IBlock (используя ключевое слово `AS` или метод `asBlock()`)
-* Используя getBlock(x,y,z) на [IWorld](/Vanilla/World/IWorld/).
-* Использование getBlock() на ContentTweaker [ICTBlockState](/Mods/ContentTweaker/Vanilla/Types/Block/ICTBlockState/)
+* Casting a [IItemStack](/Vanilla/Items/IItemStack/) as IBlock (using the `AS` keyword, or the `asBlock()` method)
+* Using the getBlock(x,y,z) on an [IWorld](/Vanilla/World/IWorld/).
+* Using getBlock() on ContentTweaker's [ICTBlockState](/Mods/ContentTweaker/Vanilla/Types/Block/ICTBlockState/)
 
 Предупреждение: Только использование второго метода возможно для `данных` ZenGetter, чтобы вернуть ненулевую IData!
 
@@ -25,13 +25,13 @@
 | definition | Возвращает определение этого блока | [IBlockDefinition](/Vanilla/Blocks/IBlockDefinition/)    |
 | meta       | Возвращает метаданные этого блока  | int                                                      |
 | data       | Возвращает tileData этого блока    | [IData](/Vanilla/Data/IData/)                            |
-| fluid      | Возвращает жидкость блока          | [ILiquidDefinition](/Vanilla/Liquids/ILiquidDefinition/) |
+| fluid      | Returns the Block's fluid          | [ILiquidDefinition](/Vanilla/Liquids/ILiquidDefinition/) |
 
 # IBlockPattern
 
 IBlocks расширяют [IBlockPattern](/Vanilla/Blocks/IBlockPattern/) объекты. Это означает, что все функции, доступные объектам IBlockPattern, также могут быть использованы для IBlock объектов:
 
-* Используйте блоки `` ZenGetter
+* Use the `blocks` ZenGetter
 * OR'ing
-* Сопоставление с использованием ключевого слова `в`
-* Используйте `displayName` ZenGetter
+* Matching using the `in` keyword
+* Use the `displayName` ZenGetter
