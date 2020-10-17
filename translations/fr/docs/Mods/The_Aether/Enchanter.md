@@ -3,17 +3,17 @@
 ## Package
 
 ```zenscript
-Importer mods.aether_legacy.Enchanteur;
+import mods.aether_legacy.Enchanter;
 ```
 ## Usage
 
 ```zenscript
-Enchanter.registerEnchantment(entrée IItemStack, sortie IItemStack, int timeRequired); // Ajoute une recette d'enchanteur, le temps requis est en ticks
+Enchanter.registerEnchantment(IItemStack input, IItemStack output, int timeRequired); // Add an enchanter recipe, timeRequired is in ticks
 
-Enchanter. egisterEnchantment(IItemStack réparation, int timeRequired); // Ajoute un élément à réparer, le temps Requis est en ticks
+Enchanter.registerEnchantment(IItemStack repair, int timeRequired); // Add an item to be repaired, timeRequired is in ticks
 
-Enchanter. egisterEnchanterFuel(IItemStack input, int timeGiven); // Ajoute un objet en tant que carburant à réparer, timeGiven est en ticks
+Enchanter.registerEnchanterFuel(IItemStack input, int timeGiven); // Add an item as a fuel for repairing, timeGiven is in ticks
 
-// Nouveau dans 1. .2
-Enchanter.removeEnchantment(IItemStack input); // Supprime les recettes d'enchanteur avec l'entrée donnée
+// New in 1.5.2
+Enchanter.removeEnchantment(IItemStack input); // Removes enchanter recipes with the given input
 ```
