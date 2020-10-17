@@ -48,9 +48,17 @@ smithing.addRecipe("recipe_name", <item:minecraft:golden_apple>, <item:minecraft
 | addition   | [crafttweaker.api.item.IIngredient](/vanilla/api/items/IIngredient) | The item added to the base item.       |
 
 
+### getAllRecipes
+
+Return type: List&lt;[crafttweaker.api.recipes.WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)&gt;
+
+```zenscript
+smithing.getAllRecipes();
+```
+
 ### getRecipeByName
 
-Return type: [crafttweaker.api.recipes.WrapperRecipe](/crafttweaker/api/recipes/WrapperRecipe)
+Return type: [crafttweaker.api.recipes.WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)
 
 ```zenscript
 smithing.getRecipeByName(name as String);
@@ -63,7 +71,7 @@ smithing.getRecipeByName(name as String);
 
 ### getRecipesByOutput
 
-Return type: List&lt;[crafttweaker.api.recipes.WrapperRecipe](/crafttweaker/api/recipes/WrapperRecipe)&gt;
+Return type: List&lt;[crafttweaker.api.recipes.WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)&gt;
 
 ```zenscript
 smithing.getRecipesByOutput(output as crafttweaker.api.item.IIngredient);
