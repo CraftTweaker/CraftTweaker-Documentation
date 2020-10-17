@@ -217,7 +217,7 @@ myMapData + data as crafttweaker.api.data.IData
 
 | Parameter | Type                                                   | Description             |
 | --------- | ------------------------------------------------------ | ----------------------- |
-| datos     | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | No description provided |
+| data      | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | No description provided |
 
 ## Casters
 
