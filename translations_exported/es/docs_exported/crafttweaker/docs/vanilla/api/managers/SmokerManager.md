@@ -50,12 +50,20 @@ smoker.addRecipe("wool2diamond", <item:diamond>, <tag:minecraft:wool>, 1.0, 0);
 | cookTime  | int                                                                 | how long it takes to cook       |
 
 
-### getRecipeByName
+### getAllRecipes
 
-Tipo de devolución: [crafttweaker.api.recipes.WrapperRecipe](/crafttweaker/api/recipes/WrapperRecipe)
+Return type: List&lt;[crafttweaker.api.recipes.WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)&gt;
 
 ```zenscript
-smoker.getRecipeByName(nombre como cadena);
+smoker.getAllRecipes();
+```
+
+### getRecipeByName
+
+Return type: [crafttweaker.api.recipes.WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)
+
+```zenscript
+smoker.getRecipeByName(name as String);
 ```
 
 | Parameter | Type   | Description             |
@@ -65,10 +73,10 @@ smoker.getRecipeByName(nombre como cadena);
 
 ### Obtener recetas por salida
 
-Tipo de retorno: Lista&lt;[crafttweaker.api.recipes.WrapperRecipe](/crafttweaker/api/recipes/WrapperRecipe)&gt;
+Return type: List&lt;[crafttweaker.api.recipes.WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)&gt;
 
 ```zenscript
-smoker.getRecipesByOutput(salida como crafttweaker.api.item.IIngredient);
+smoker.getRecipesByOutput(output as crafttweaker.api.item.IIngredient);
 ```
 
 | Parameter | Type                                                                | Description             |
@@ -102,8 +110,8 @@ smoker.removeByModid("minecraft");
 Quitar receta basada en la modificación del nombre del registro con una comprobación de exclusión añadida, por lo que puede eliminar todo el mod además de unos pocos especificados.
 
 ```zenscript
-smoker.removeByModid(modid as String, excluir como crafttweaker.api.recipe.RecipeFilter);
-smoker.removeByModid("minecraft", (nombre como cadena) => {return name == "naranja_lana";});
+smoker.removeByModid(modid as String, exclude as crafttweaker.api.recipe.RecipeFilter);
+smoker.removeByModid("minecraft", (name as string) => {return name == "orange_wool";});
 ```
 
 | Parameter | Type                                                               | Description                            |
