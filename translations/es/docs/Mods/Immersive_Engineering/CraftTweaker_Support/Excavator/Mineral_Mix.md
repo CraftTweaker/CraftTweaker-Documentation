@@ -10,9 +10,9 @@ You can get and set the failchance for the Mineralmix using the failChance [ZenS
 
 ## Get Mineral
 
-| Required | Type | Data Type |
-| -------- | ---- | --------- |
-| Required | Name | string    |
+| Required | Type   | Data Type |
+| -------- | ------ | --------- |
+| Required | Nombre | string    |
 
 ```zenscript
 //Example:
