@@ -4,7 +4,7 @@
 
 ## If
 
-If文とは、条件分の最初の要素です。 それに続くコードを実行するのにtrueと評価されるべき条件を記述します。 **値を比較するには2つのイコールが必要です！ (等しいのは値を宣言するためです!)**
+If文とは、条件分の最初の要素です。 それに続くコードを実行するのにtrueと評価されるべき条件を記述します。 **Be careful, you need TWO EQUALS when comparing values! (That's because one equal is for declaring values!)**
 
 ```zenscript
 val test = 0;
@@ -106,24 +106,24 @@ switchy ?
 
 これらの演算子が使用可能です。 ここにある全ての例文はtrueと評価されます。
 
-| 名称          | 演算子          | 詳細                                                                                                                                               | 例文                |
-| ----------- | ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------ | ----------------- |
-| Not         | `!`          | booleanを反転します                                                                                                                                    | !false            |
-| 不等価         | `!=`         | 前後の値が等しくないかどうかを評価します                                                                                                                             | 1 != 2            |
-| 等価          | `==`         | 前後の値が等しいかどうかを評価します                                                                                                                               | 1 == 1            |
-| 大なり         | `>`       | 前の値が後ろの値より大きいかどうかを評価します                                                                                                                          | 1 > 2             |
-| 大なりイコール     | `>=`      | 前の値が後ろの値以上かどうかを評価します                                                                                                                             | 1 >= 1            |
-| より小さい       | `<`       | 前の値が後ろの値未満かどうかを評価します                                                                                                                             | 1 < 2             |
-| 小なりイコール     | `<=`      | 前の値が後ろの値以下かどうかを評価します                                                                                                                             | 1 <= 1            |
-| 論理と         | `&&` | 値の前と後の両方が true かどうかをチェックします。一方または両方が false の場合は false                                                                                            | true && true      |
-| 論理的 OR      | `\|\|`     | 前または後の値が true であるかどうかをチェックします。どちらもtrue でない場合は false                                                                                              | false \|\| true |
-| Bitwise XOR | `^`          | 両方が true の場合は before または after の値が true の場合は false であるかどうかをチェックします。                                                                              | true ^ false      |
-| ビット方向と      | `&`      | beforeとafterの値に対してビット単位のAND演算を行います。 詳しくは [この](https://stackoverflow.com/questions/4014535/differences-in-boolean-operators-vs-and-vs) を参照してください。 | true && true      |
-| ビットワイズ OR   | `\|`        | beforeとafterの値に対してビット単位のOR演算を行います。 詳しくは [この](https://stackoverflow.com/questions/4014535/differences-in-boolean-operators-vs-and-vs) を参照してください。  | false \|\| true |
+| 名称          | 演算子          | 詳細                                                                                                                                                                           | 例文                |
+| ----------- | ------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------- |
+| Not         | `!`          | booleanを反転します                                                                                                                                                                | !false            |
+| 不等価         | `!=`         | 前後の値が等しくないかどうかを評価します                                                                                                                                                         | 1 != 2            |
+| 等価          | `==`         | 前後の値が等しいかどうかを評価します                                                                                                                                                           | 1 == 1            |
+| 大なり         | `>`       | 前の値が後ろの値より大きいかどうかを評価します                                                                                                                                                      | 1 > 2             |
+| 大なりイコール     | `>=`      | 前の値が後ろの値以上かどうかを評価します                                                                                                                                                         | 1 >= 1            |
+| Lesser than | `<`       | 前の値が後ろの値未満かどうかを評価します                                                                                                                                                         | 1 < 2             |
+| 小なりイコール     | `<=`      | 前の値が後ろの値以下かどうかを評価します                                                                                                                                                         | 1 <= 1            |
+| Logical AND | `&&` | Checks if both before and after values are true, false if one or both are false                                                                                              | true && true      |
+| Logical OR  | `\|\|`     | Checks if either the value before or after are true, false if neither are true                                                                                               | false \|\| true |
+| Bitwise XOR | `^`          | Checks if exactly one of the before or after values is true, false if both or none are true                                                                                  | true ^ false      |
+| Bitwise AND | `&`      | Performs a bitwise AND operation on the before and after values. See [this](https://stackoverflow.com/questions/4014535/differences-in-boolean-operators-vs-and-vs) for more | true && true      |
+| Bitwise OR  | `\|`        | Performs a bitwise OR operation on the before and after values. See [this](https://stackoverflow.com/questions/4014535/differences-in-boolean-operators-vs-and-vs) for more  | false \|\| true |
 
-### `|` と `|||` (と `&` と `&&`)
+### Difference between `|` and `||` (and `&` and `&&`)
 
-単一と二重の主な違い, セマンティクスはさておき. ダブルは、各条件の後にチェックを実行し、早期に終了することです - これは短絡と呼ばれます。 しかし、たとえ最初のものが全体の状態をキャンセルしていたとしても、単一は条件のチェーン全体を通過します。 これはリソースを節約するだけでなく、 **null チェック** やチェーン状態などのスクリプトを簡単に実行できます。
+The main difference between the single and the double, with semantics aside, is that the double performs a check after each condition and exits early - this is called short-circuiting. However, the single goes through the entire chain of conditions, even if the first one would have cancelled the entire condition. This not only saves resources, but also allows for easier scripting such as **null checks** and chained conditions.
 
 ```zenscript
 var a = 5;
@@ -139,9 +139,9 @@ if (a == 3 & a < 2 & a > 8 & a == 5) {
     ... 
 }
 
-// 項目が null でない場合は、項目から変数にアクセスする前に
+// Checks if item is not null before accessing variables from item
 if (!isNull(item) && item.amount == 1) {
-...
+    ...
 }
 
 // Checks if item is not null while accessing variables from a potentially null item, throwing an error if the item is null
@@ -157,7 +157,7 @@ First you need the list you want to check in, then the `in`/`has` then the value
 
 ### in/has loadedMods
 
-loadedModリストにあるかどうかを確認することで、Modがロードされているかを確認できます。
+You can check, if a mod is loaded by checking if it's in the loadedMods list
 
 ```zenscript
 //While contains checks can use in
@@ -171,7 +171,7 @@ if (loadedMods has "mcp") {
 }
 ```
 
-### In/has IIngredient
+### in/has IIngredient
 
 You can also check if an item matches a definition by comparing two IIngredients.  
 With this one you need to be a bit careful as not to confuse the two entries:  
@@ -190,7 +190,7 @@ if (<ore:ingotIron> has <minecraft:iron_ingot>) {
 }
 ```
 
-これは、 `が` の後にあるIIngredientのすべての一致するアイテムが `が`を持っている場合にのみ当てはまります : すべてのほこりを含むIIngredientを持っていると言います(e. . レッドストーンとグロウストーンの塵:
+This is only true when ALL matching items from the IIngredient AFTER the `has` can also be found in the IIngredient BEFORE `has`: Say we have an IIngredient that contains all dusts (e.g. redstone and glowstone dust):
 
 ```zenscript
 val redstone = <minecraft:redstone>;
