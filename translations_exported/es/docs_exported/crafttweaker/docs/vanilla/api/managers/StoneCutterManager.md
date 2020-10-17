@@ -47,12 +47,20 @@ stoneCutter.addRecipe("recipe_name", <item:minecraft:grass>, <tag:minecraft:wool
 | input      | [crafttweaker.api.item.IIngredient](/vanilla/api/items/IIngredient) | entrada [crafttweaker.api.item.IIngredient](/vanilla/api/items/IIngredient) |
 
 
-### getRecipeByName
+### getAllRecipes
 
-Tipo de devolución: [crafttweaker.api.recipes.WrapperRecipe](/crafttweaker/api/recipes/WrapperRecipe)
+Return type: List&lt;[crafttweaker.api.recipes.WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)&gt;
 
 ```zenscript
-stoneCutter.getRecipeByName(nombre como cadena);
+stoneCutter.getAllRecipes();
+```
+
+### getRecipeByName
+
+Return type: [crafttweaker.api.recipes.WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)
+
+```zenscript
+stoneCutter.getRecipeByName(name as String);
 ```
 
 | Parameter | Type   | Description             |
@@ -62,10 +70,10 @@ stoneCutter.getRecipeByName(nombre como cadena);
 
 ### Obtener recetas por salida
 
-Tipo de retorno: Lista&lt;[crafttweaker.api.recipes.WrapperRecipe](/crafttweaker/api/recipes/WrapperRecipe)&gt;
+Return type: List&lt;[crafttweaker.api.recipes.WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)&gt;
 
 ```zenscript
-stoneCutter.getRecipesByOutput(salida como crafttweaker.api.item.IIngredient);
+stoneCutter.getRecipesByOutput(output as crafttweaker.api.item.IIngredient);
 ```
 
 | Parameter | Type                                                                | Description             |
@@ -99,8 +107,8 @@ stoneCutter.removeByModid("minecraft");
 Quitar receta basada en la modificación del nombre del registro con una comprobación de exclusión añadida, por lo que puede eliminar todo el mod además de unos pocos especificados.
 
 ```zenscript
-stoneCutter.removeByModid(modid as String, excluir como crafttweaker.api.recipe.RecipeFilter);
-stoneCutter.removeByModid("minecraft", (nombre como cadena) => {return name == "narange_wool";});
+stoneCutter.removeByModid(modid as String, exclude as crafttweaker.api.recipe.RecipeFilter);
+stoneCutter.removeByModid("minecraft", (name as string) => {return name == "orange_wool";});
 ```
 
 | Parameter | Type                                                               | Description                            |
