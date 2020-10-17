@@ -17,7 +17,7 @@ val aspect = <aspect:ignis>;
 
 ## ZenGetters
 
-| Name     | Type                                                      |
+| Nazwisko | Type                                                      |
 | -------- | --------------------------------------------------------- |
 | amount   | int                                                       |
 | internal | [CTAspect](/Mods/Modtweaker/Thaumcraft/Aspects/CTAspect/) |
