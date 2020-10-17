@@ -8,7 +8,7 @@ You can call the Excavator package using `mods.immersiveengineering.Excavator`.
 
 | Required | Type                | Data Type |
 | -------- | ------------------- | --------- |
-| Required | Name                | string    |
+| Required | Nom                 | string    |
 | Required | Mineral Weight      | int       |
 | Required | Fail Chance         | double    |
 | Required | Ores                | string[]  |
@@ -31,7 +31,7 @@ mods.immersiveengineering.Excavator.addMineral("Iron Ore", 50, 0.005, ["oreIron"
 
 | Required | Type | Data Type |
 | -------- | ---- | --------- |
-| Required | Name | String    |
+| Required | Nom  | String    |
 
 ### Example
 
