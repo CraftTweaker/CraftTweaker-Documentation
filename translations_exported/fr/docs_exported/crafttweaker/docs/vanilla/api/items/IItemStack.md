@@ -124,9 +124,9 @@ Return type: boolean
 <item:minecraft:dirt>.modifyTooltip(fonction comme crafttweaker.api.item.tooltip.ITooltipFunction);
 ```
 
-| Parameter | Type                                                                                                        | Description             |
-| --------- | ----------------------------------------------------------------------------------------------------------- | ----------------------- |
-| function  | [format@@0 crafttweaker.api.item.tooltip.ITooltipFunction](/crafttweaker/api/item/tooltip/ITooltipFunction) | No description provided |
+| Parameter | Type                                                                                            | Description             |
+| --------- | ----------------------------------------------------------------------------------------------- | ----------------------- |
+| function  | [format@@0 crafttweaker.api.item.tooltip.ITooltipFunction](/vanilla/api/items/ITooltipFunction) | No description provided |
 
 
 ### mutable
@@ -299,8 +299,9 @@ Sets the amount of the ItemStack
 
 ## Casters
 
-| Result type                                                | Is Implicit |
-| ---------------------------------------------------------- | ----------- |
-| [crafttweaker.api.data.IData](/vanilla/api/data/IData)     | true        |
-| [crafttweaker.api.data.MapData](/vanilla/api/data/MapData) | true        |
+| Result type                                                                                   | Is Implicit |
+| --------------------------------------------------------------------------------------------- | ----------- |
+| [crafttweaker.api.data.IData](/vanilla/api/data/IData)                                        | true        |
+| [crafttweaker.api.data.MapData](/vanilla/api/data/MapData)                                    | true        |
+| [format@@0 crafttweaker.api.item.MCWeightedItemStack](/vanilla/api/items/MCWeightedItemStack) | true        |
 
