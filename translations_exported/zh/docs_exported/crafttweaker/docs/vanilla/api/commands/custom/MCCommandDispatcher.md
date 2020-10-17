@@ -48,23 +48,10 @@ myMCCommandDispatcher.execute(输入 String, source as craftbiner.api.commands.c
 | 来源        | [craftminstrer.api.commands.custom.MCCommandSource](/vanilla/api/commands/custom/MCCommandSource) | No description provided |
 
 
-
-Return type: int
-
-```zenscript
-myMCCommandDispatcher.execute(input as com.mojang.brigadier.StringReader, source as craftweeper.api.commands.custom.MCCommandSource);
-```
-
-| 参数        | 类型                                                                                                | 描述                      |
-| --------- | ------------------------------------------------------------------------------------------------- | ----------------------- |
-| input（输入） | com.mojang.brigadier.StringReader                                                                 | No description provided |
-| 来源        | [craftminstrer.api.commands.custom.MCCommandSource](/vanilla/api/commands/custom/MCCommandSource) | No description provided |
-
-
 ### 查找模糊性
 
 ```zenscript
-myMCCommandDispatcher.findAmbiguities(消费者为craftweeper.api.commands.custom.MCAmbiguityConsumer)；
+myMCCommandDispatcher.findAmbiguities(consumer as crafttweaker.api.commands.custom.MCAmbiguityConsumer);
 ```
 
 | 参数  | 类型                                                                                                        | 描述                      |
@@ -77,7 +64,7 @@ myMCCommandDispatcher.findAmbiguities(消费者为craftweeper.api.commands.custo
 返回类型： [crafttweeper.api.commands.custom.MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)
 
 ```zenscript
-myMCCommandDispatcher.findNode(路径作为收藏集<String>)；
+myMCCommandDispatcher.findNode(path as Collection<String>);
 ```
 
 | 参数   | 类型                           | 描述                      |
@@ -87,17 +74,17 @@ myMCCommandDispatcher.findNode(路径作为收藏集<String>)；
 
 ### getAllUsage
 
-返回类型：字符串 []
+Return type: String[]
 
 ```zenscript
-myMCCommandDispatcher.getAllUsage(节点为 craftmilever.api.commands.custom.MCCommandNode, 源为 craftmilever.api.commands.custom.MCCommandSource, 被限制为 boolean);
+myMCCommandDispatcher.getAllUsage(node as crafttweaker.api.commands.custom.MCCommandNode, source as crafttweaker.api.commands.custom.MCCommandSource, restricted as boolean);
 ```
 
-| 参数  | 类型                                                                                                | 描述                      |
-| --- | ------------------------------------------------------------------------------------------------- | ----------------------- |
-| 节点  | [craftminstrer.api.commands.custom.MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)     | No description provided |
-| 来源  | [craftminstrer.api.commands.custom.MCCommandSource](/vanilla/api/commands/custom/MCCommandSource) | No description provided |
-| 已限制 | boolean                                                                                           | No description provided |
+| 参数         | 类型                                                                                                | 描述                      |
+| ---------- | ------------------------------------------------------------------------------------------------- | ----------------------- |
+| 节点         | [craftminstrer.api.commands.custom.MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)     | No description provided |
+| 来源         | [craftminstrer.api.commands.custom.MCCommandSource](/vanilla/api/commands/custom/MCCommandSource) | No description provided |
+| restricted | boolean                                                                                           | No description provided |
 
 
 ### getCompltion建议
@@ -105,7 +92,7 @@ myMCCommandDispatcher.getAllUsage(节点为 craftmilever.api.commands.custom.MCC
 返回类型： [craftbiner.api.commands.custom.MCSuggestions](/vanilla/api/commands/custom/MCSuggestions)
 
 ```zenscript
-myMCCommandDispatcher.getComplitionProcommendations(parse as craftbiner.api.commands.custom.MCParseResults)；
+myMCCommandDispatcher.getCompletionSuggestions(parse as crafttweaker.api.commands.custom.MCParseResults);
 ```
 
 | 参数    | 类型                                                                                              | 描述                      |
@@ -117,7 +104,7 @@ myMCCommandDispatcher.getComplitionProcommendations(parse as craftbiner.api.comm
 返回类型： [craftbiner.api.commands.custom.MCSuggestions](/vanilla/api/commands/custom/MCSuggestions)
 
 ```zenscript
-myMCCommandDispatcher.getComplitionPropositions(parse as craftmilever.api.commands.custom.MCParsetResults, cursor as int)；
+myMCCommandDispatcher.getCompletionSuggestions(parse as crafttweaker.api.commands.custom.MCParseResults, cursor as int);
 ```
 
 | 参数     | 类型                                                                                              | 描述                      |
@@ -131,7 +118,7 @@ myMCCommandDispatcher.getComplitionPropositions(parse as craftmilever.api.comman
 返回类型：收藏&lt;String&gt;
 
 ```zenscript
-myMCCommandDispatcher.getPath(目标 as craftweeper.api.commands.custom.MCCommandNode)；
+myMCCommandDispatcher.getPath(target as crafttweaker.api.commands.custom.MCCommandNode);
 ```
 
 | 参数     | 类型                                                                                            | 描述                      |
@@ -141,7 +128,7 @@ myMCCommandDispatcher.getPath(目标 as craftweeper.api.commands.custom.MCComman
 
 ### getRoot
 
-返回类型： [craftbiner.api.commands.custom.MCRootCommandNode](/vanilla/api/commands/custom/MCRootCommandNode)
+Return type: [crafttweaker.api.commands.custom.MCRootCommandNode](/vanilla/api/commands/custom/MCRootCommandNode)
 
 ```zenscript
 myMCCommandDispatcher.getRoot();
@@ -149,10 +136,10 @@ myMCCommandDispatcher.getRoot();
 
 ### getSmartUsage
 
-返回类型：字符串 [[craftminstrer.api.commands.custom.MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)]
+Return type: String[[crafttweaker.api.commands.custom.MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)]
 
 ```zenscript
-myMCCommandDispatcher.getSmartUsage(节点为 craftmilever.api.commands.custom.MCCommandNode, 源为 craftweeper.api.commands.custom.MCCommandSource);
+myMCCommandDispatcher.getSmartUsage(node as crafttweaker.api.commands.custom.MCCommandNode, source as crafttweaker.api.commands.custom.MCCommandSource);
 ```
 
 | 参数 | 类型                                                                                                | 描述                      |
@@ -171,10 +158,10 @@ myMCCommandDispatcher.hashCode();
 
 ### parse
 
-返回类型： [craftmilower.api.commands.custom.MCParseResults](/vanilla/api/commands/custom/MCParseResults)
+Return type: [crafttweaker.api.commands.custom.MCParseResults](/vanilla/api/commands/custom/MCParseResults)
 
 ```zenscript
-myMCCommandDispatcher.parse(命令 String, source as craftwiner.api.commands.custom.MCCommandSource);
+myMCCommandDispatcher.parse(command as String, source as crafttweaker.api.commands.custom.MCCommandSource);
 ```
 
 | 参数      | 类型                                                                                                | 描述                      |
@@ -183,25 +170,12 @@ myMCCommandDispatcher.parse(命令 String, source as craftwiner.api.commands.cus
 | 来源      | [craftminstrer.api.commands.custom.MCCommandSource](/vanilla/api/commands/custom/MCCommandSource) | No description provided |
 
 
-
-返回类型： [craftmilower.api.commands.custom.MCParseResults](/vanilla/api/commands/custom/MCParseResults)
-
-```zenscript
-myMCCommandDispatcher.parse(command as com.mojang.brigadier.StringReader, source as craftweeper.api.commands.custom.MCCommandSource);
-```
-
-| 参数      | 类型                                                                                                | 描述                      |
-| ------- | ------------------------------------------------------------------------------------------------- | ----------------------- |
-| command | com.mojang.brigadier.StringReader                                                                 | No description provided |
-| 来源      | [craftminstrer.api.commands.custom.MCCommandSource](/vanilla/api/commands/custom/MCCommandSource) | No description provided |
-
-
 ### 注册
 
 返回类型： [craftbiner.api.commands.custom.MCLiteralCommandNode](/vanilla/api/commands/custom/MCLiteralCommandNode)
 
 ```zenscript
-myMCCommandDispatcher.register(命令作为craftmilever.api.commands.custom.MCLiteralArgumentBuilder);
+myMCCommandDispatcher.register(command as crafttweaker.api.commands.custom.MCLiteralArgumentBuilder);
 ```
 
 | 参数      | 类型                                                                                                                | 描述                      |
@@ -212,7 +186,7 @@ myMCCommandDispatcher.register(命令作为craftmilever.api.commands.custom.MCLi
 ### 用户设置
 
 ```zenscript
-myMCCommandDispatcher.setConsumer(消费者为craftweeper.api.commands.custom.MCResultConsumer)；
+myMCCommandDispatcher.setConsumer(consumer as crafttweaker.api.commands.custom.MCResultConsumer);
 ```
 
 | 参数  | 类型                                                                                                  | 描述                      |
@@ -233,7 +207,7 @@ myMCCommandDispatcher.toString();
 ### EQUALS
 
 ```zenscript
-myMCCommandDispatcher == o 为对象
+myMCCommandDispatcher == o as Object
 ```
 
 | 参数 | 类型     | 描述                      |
