@@ -50,12 +50,20 @@ blastFurnace.addRecipe("wool2diamond", <item:diamond>, <tag:minecraft:wool>, 1.0
 | cookTime  | int                                                                 | how long it takes to cook       |
 
 
-### getRecipeByName
+### getAllRecipes
 
-Tipo di restituzione: [crafttweaker.api.recipes.WrapperRecipe](/crafttweaker/api/recipes/WrapperRecipe)
+Return type: List&lt;[crafttweaker.api.recipes.WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)&gt;
 
 ```zenscript
-blastFurnace.getRecipeByName(nome come stringa);
+blastFurnace.getAllRecipes();
+```
+
+### getRecipeByName
+
+Return type: [crafttweaker.api.recipes.WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)
+
+```zenscript
+blastFurnace.getRecipeByName(name as String);
 ```
 
 | Parameter | Type   | Description                 |
@@ -65,10 +73,10 @@ blastFurnace.getRecipeByName(nome come stringa);
 
 ### getRecipesByOutput
 
-Tipo di restituzione: Lista&lt;[crafttweaker.api.recipes.WrapperRecipe](/crafttweaker/api/recipes/WrapperRecipe)&gt;
+Return type: List&lt;[crafttweaker.api.recipes.WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)&gt;
 
 ```zenscript
-blastFurnace.getRicetteByOutput(output as crafttweaker.api.item.IIngredient);
+blastFurnace.getRecipesByOutput(output as crafttweaker.api.item.IIngredient);
 ```
 
 | Parameter | Type                                                                | Description                 |
@@ -117,7 +125,7 @@ blastFurnace.removeByModid("minecraft", (name as string) => {return name == "ora
 Remove recipe based on Registry name
 
 ```zenscript
-blastFurnace.removeByName(nome come stringa);
+blastFurnace.removeByName(name as String);
 blastFurnace.removeByName("minecraft:furnace");
 ```
 
