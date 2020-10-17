@@ -1,13 +1,13 @@
-# La entidad está dañando
+# EntityLivingHurt
 
-El evento EntityLivingHurt se dispara cada vez que una Entidad está a punto de resultar dañada.  
-Se puede cancelar para evitar que la entidad sufra daños.
+The EntityLivingHurt Event is fired whenever an Entity is about to get hurt.  
+It can be canceled to stop the entity from being hurt.
 
 ## Event Class
 
-Necesitarás lanzar el evento en la cabecera de la función como esta clase:  
-`crafttweaker.event. ntityLivingHurtEvent`  
-Puede, por supuesto, también [importar](/AdvancedFunctions/Import/) la clase antes y utilizar ese nombre entonces.
+You will need to cast the event in the function header as this class:  
+`crafttweaker.event.EntityLivingHurtEvent`  
+You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
 
 ## Event interface extensions
 
