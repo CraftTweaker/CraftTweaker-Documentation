@@ -1,7 +1,7 @@
 # EntityLivingHurt
 
-每当一个实体要受伤时，都会发射EntityLivingHurt事件。  
-可以取消它来阻止实体受到伤害。
+The EntityLivingHurt Event is fired whenever an Entity is about to get hurt.  
+It can be canceled to stop the entity from being hurt.
 
 ## Event Class
 
