@@ -3,17 +3,17 @@
 ## Package
 
 ```zenscript
-import mods.aether_legacy.Enchanter;Aplast;
+import mods.aether_legacy.Enchanter;Enchanter;
 ```
 ## Usage
 
 ```zenscript
-Eneguter.registerEnchantment(entrada de ItemStack, salida de ItemStack, int timeRequired); // Agregue una receta de encantador, timeRequired está en ticks
+Enchanter.registerEnchantment(IItemStack input, IItemStack output, int timeRequired); // Add an enchanter recipe, timeRequired is in ticks
 
-Acertador. egisterEnchantment(Reparar IItemStack, int timeRequired); // Agregar un objeto para ser reparado, timeRequired está en ticks
+Enchanter.registerEnchantment(IItemStack repair, int timeRequired); // Add an item to be repaired, timeRequired is in ticks
 
-Entero. egisterEn(0)[video] terFuel(IItemStack entrada, int timeGiven); // Agregar un objeto como combustible para reparación, timeGiven está en ticks
+Enchanter.registerEnchanterFuel(IItemStack input, int timeGiven); // Add an item as a fuel for repairing, timeGiven is in ticks
 
-// Nuevo en 1. .2
-EnTodayter.removeEnchantment(IItemStack input); // Elimina las recetas del encantador con la entrada dada
+// New in 1.5.2
+Enchanter.removeEnchantment(IItemStack input); // Removes enchanter recipes with the given input
 ```
