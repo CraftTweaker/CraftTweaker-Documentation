@@ -1,62 +1,62 @@
 # IItemUtils
 
-ItemUtils 接口提供了各种项目工具。  
-它可以使用 `itemutils` 关键字访问。
+The ItemUtils interface provides various item utils.  
+It can be accessed using the `itemUtils` keyword.
 
-## 创建药水
+## Creating Potions
 
-CreatePotions函数允许您创建自定义药水。  
-返回药水为 [IItemStack](/Vanilla/Items/IItemStack/)。  
-由于此函数的参数是一个变量，您可以提供一个对象[] 或许多对象[]。  
-在这两种情况下，每个对象都需要包含
+The createPotions function allows you to create custom potions.  
+Returns the potion as [IItemStack](/Vanilla/Items/IItemStack/).  
+As the Parameter for this function is a vararg, you can either provide one Object[][] or many Object[].  
+In both cases each Object[] needs to contain
 
-1. 一个 [IPotion](/Vanilla/Potions/IPotion/)
-2. 一个整数型变量，说明效果的放大/强度
-3. 一个整数型变量，描述效果持续时间。 
+1. An [IPotion](/Vanilla/Potions/IPotion/)
+2. An int describing the effect amplifier/strength
+3. An int describing the effect duration. 
 
-如果对象[…]不符合此长度或不符合此顺序，它将被忽略。
+If an Object[] is not of this length or not in this order, it will be ignored.
 
 ```zenscript
 //createPotion(Object[]...);
-/// createPotion([effect,strengthen,duration],,[effect,strengthen,duration2],...);
-///createPotion([effect,strengthen,duration],[effect2,strenge2,duration2],...]);
-val potation = itemUtils.createPotion[[<potion:minecraft:strength>, 1, 1]]);
+//createPotion([effect,strength,duration],[effect2, strength2,duration2],...);
+//createPotion([[effect,strength,duration],[effect2, strength2,duration2],...]);
+val potion = itemUtils.createPotion([[<potion:minecraft:strength>, 1, 1]]);
 ```
 
-## 按名称获取项目
+## Get Items by name
 
-这两个函数都返回了 [IItemStack](/Vanilla/Items/IItemStack/)[]，其中包含所有匹配的物品。  
-对项目注册表名称的初步检查，第二个使用未本地化名称。
+These two functions both return an [IItemStack](/Vanilla/Items/IItemStack/)[] containing all matching items.  
+The first checks against the items' registry names, the 2nd uses the unlocalized names.
 
 ```zenscript
-//getItemsByRegexRegexRegistryName(String Regex)
-itemUtils.getItemsByRegexRegexRegistryName(".*sword.*"); // 所有名字中有剑的
-itemutils.getItemsByRegexRegexRegistryName("). thermal.*"); // 所有热扩张/foundation/dyname项目
+//getItemsByRegexRegistryName(String Regex)
+itemUtils.getItemsByRegexRegistryName(".*sword.*"); // all things that have sword in the name
+itemUtils.getItemsByRegexRegistryName(".*thermal.*"); // all thermal expansion/foundation/dynamics items
 
-//getItemsByRegexunlocalizedName(String Regex)
-itemUtils.getItemsByRegexUnlocalizedName(".*pink.*"); // 粉红色东西!! <3
+//getItemsByRegexUnlocalizedName(String Regex)
+itemUtils.getItemsByRegexUnlocalizedName(".*pink.*"); // pink things!! <3
 ```
 
-## 模拟物品栏处理器
+## Imitate the Item Bracket Handler
 
-此方法与 [条物品处理器](/Vanilla/Brackets/Bracket_Item/) 一样. 这允许您在项目名称中使用字符串变量。  
-与括号处理程序不同，您需要提供元数据作为可选参数。  
-如果您想使用通配符，请使用 `32767`
+This method does the same as the [Item Bracket Handler](/Vanilla/Brackets/Bracket_Item/). This allows you to use string variables in the item name by concatenating it in.  
+Unlike the bracket handler though, you need to provide the meta as optional parameter.  
+If you want to use the wildcard meta, use `32767`.
 
-    //getItem(位置，@Opidema);
-    itemUtils.getItem("minecraft:iron_ingot"); //<minecraft:iron_ingot>
-    itemuss.getItem("minecraft:dye"), 1//<minecraft:dye:1>
-    items.utItem("minecraft:wool", 32767); //<minecraft:wool:*>
+    //getItem(location, @Optional meta);
+    itemUtils.getItem("minecraft:iron_ingot");    //<minecraft:iron_ingot>
+    itemUtils.getItem("minecraft:dye", 1);        //<minecraft:dye:1>
+    itemUtils.getItem("minecraft:wool", 32767);   //<minecraft:wool:*>
     
 
-## 创建出生蛋
+## Create Spawn Egg
 
-createSpawnEgg 函数允许您创建自定义的模组生成蛋。  
-定制NBT 是OPTIA而且可以覆盖实体标签。  
-返回生成的蛋为 [IItemStack](/Vanilla/Items/IItemStack/)。
+The createSpawnEgg function allows you to create custom mod spawn eggs.  
+The customNBT is OPTIONAL and can override the entity tag.  
+Returns the spawn egg as [IItemStack](/Vanilla/Items/IItemStack/).
 
 ```zenscript
-//createSpawnEgg(entity, @opulatory customNBT)
-/NBT overties entity (这样创建了爬行者蛋！)
-val egg = itemUtils.createSpawnEgg(<entity:minecraft:sheep>, {EntityTag:{id:"minecraft:creeper",NoAI:1 as byte,PersistenceRequire:1 as byte});
+//createSpawnEgg(entity, @optional customNBT)
+//NBT overrides entity (this creates a creeper egg!)
+val egg = itemUtils.createSpawnEgg(<entity:minecraft:sheep>, {EntityTag:{id:"minecraft:creeper",NoAI:1 as byte,PersistenceRequired:1 as byte}});
 ```
