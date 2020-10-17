@@ -1,7 +1,7 @@
-# Ливинг сущности
+# EntityLivingHurt
 
-Событие "ЛивингХерт" запускается каждый раз, когда Сущность вот-вот наступит.  
-Это может быть отменено для остановки повреждения сущности.
+The EntityLivingHurt Event is fired whenever an Entity is about to get hurt.  
+It can be canceled to stop the entity from being hurt.
 
 ## Класс события
 
