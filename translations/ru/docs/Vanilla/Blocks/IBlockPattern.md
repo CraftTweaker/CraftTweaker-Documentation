@@ -22,7 +22,7 @@ But there are cases when you explicitly get an IBlockPattern Object as return.
 | blocks      | Перечисляет весе возможные блоки для этого объекта | List<[IBlock](/Vanilla/Blocks/IBlock/)> |
 | displayName | Returns the displayNames of the fitting blocks     | string                                  |
 
-## ИЛИ
+## OR
 
 You can OR two IBlockPattern Objects using the OR `|` Operator
 
