@@ -3,15 +3,15 @@
 ## Package
 
 ```zenscript
-import mods.aether_legacy.Freerzer;
+import mods.aether_legacy.Freezer;
 ```
 ## Usage
 
 ```zenscript
-Freezer.registerFreezable(IItemStack input, IItemStack output, int timeRequired); // Aggiungi una ricetta freezer, timeRequired is in ticks
+Freezer.registerFreezable(IItemStack input, IItemStack output, int timeRequired); // Add a freezer recipe, timeRequired is in ticks
 
-Freezer. egisterFreezerFuel(IItemStack input, int timeGiven); // Aggiungi un elemento come combustibile congelatore, tempoDato è in zecche
+Freezer.registerFreezerFuel(IItemStack input, int timeGiven); // Add an item as freezer fuel, timeGiven is in ticks
 
-// Nuovo in 1. .2
-Freezer.removeFreezable(IItemStack input); // Rimuove le ricette del congelatore con l'input dato
+// New in 1.5.2
+Freezer.removeFreezable(IItemStack input); // Removes freezer recipes with the given input
 ```
