@@ -1,16 +1,16 @@
 # IFacing
 
-Interfejs IFacing pozwala na uzyskanie możliwych kierunków [IBlockPos'a](/Vanilla/World/IBlockPos/).
+The IFacing Interface allows you to get an [IBlockPos's](/Vanilla/World/IBlockPos/) possible directions.
 
 ## Importing the package
 
-Może być wymagane zaimportowanie pakietu, jeśli napotkasz jakieś problemy, więc lepiej być bezpiecznym niż przepraszamy i dodać import.  
-`zaimportuj crafttweaker.world.IFacing;`
+It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
+`import crafttweaker.world.IFacing;`
 
 ## Enumerations
 
-Interfejs frontu ma 6 metod statycznych, które zwracają ten kierunek.  
-Posiada również jeden kierunek, który przyjmuje kierunek jako wejście ciągu (np. `"NORTH"`)
+The Facing interface has 6 static methods that return the said direction.  
+It also has one more that takes the direction as String input (e.g. `"NORTH"`)
 
 ```zenscript
 crafttweaker.world.IFacing.north()
@@ -21,28 +21,28 @@ crafttweaker.world.IFacing.down()
 crafttweaker.world.IFacing.up()
 
 
-crafttweaker.world.IFacing.fromString(nazwa ciągu);
+crafttweaker.world.IFacing.fromString(String name);
 ```
 
 ## ZenGetters/ZenMethods without parameters
 
-| ZenGetter  | ZenMethod  | Return Type |
-| ---------- | ---------- | ----------- |
-| name       | getName()  | string      |
-| rotateY    | rotateY()  | IFacing     |
-| przeciwnie | odwrotna() | IFacing     |
+| ZenGetter | ZenMethod  | Return Type |
+| --------- | ---------- | ----------- |
+| name      | getName()  | string      |
+| rotateY   | rotateY()  | IFacing     |
+| opposite  | opposite() | IFacing     |
 
-## Inne metody
+## Other methods
 
-### Porównanie dwóch kierunków
+### Comparing two Facings
 
-Możesz porównać dwa kierunki za pomocą standaryzowanego porównywania Operatorów `== ! < > <= >=`  
-Alternatywnie, możesz użyć funkcji, chociaż funkcja zwraca odcisk równy 0, jeśli jest równy.
+You can compare two facings using the standart comparing Operators `== != < > <= >=`  
+Alternatively, you can use the function, though the function returns an int that is 0 if they are equal.
 
 ```zenscript
-//Zwraca true lub false
-facingOne == facingDwa;
+//Returns true or false
+facingOne == facingTwo;
 
-//Zwraca 0 jeśli są równe
-facingOne.compare(facingDwa);
+//Returns 0 if they are equal
+facingOne.compare(facingTwo);
 ```
