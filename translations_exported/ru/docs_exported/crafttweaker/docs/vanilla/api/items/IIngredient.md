@@ -101,7 +101,7 @@ Return type: boolean
 | items         | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)[] | true         | false        |
 
 ## Операторы
-### ИЛИ
+### OR
 
 ```zenscript
 <tag:ingotIron> | Другое как crafttweaker.api.item.IIngredient
