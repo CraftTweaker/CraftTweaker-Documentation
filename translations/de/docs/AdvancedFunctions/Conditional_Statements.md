@@ -4,13 +4,13 @@ Manche Codezeilen sollten nur ausgeführt werden, wenn bestimmte Kriterien erfü
 
 ## If (Wenn)
 
-Eine bedingte Anweisung beginnt immer mit einer If-Abfrage. Sie prüft, ob das gegebene Statement wahr (true) ist und führt ggf. den folgenden Code in der Klammer aus. **Sei vorsichtig, du brauchst zwei EQUALS um Werte zu vergleichen! (Das liegt daran, dass eine Stufe für die Deklaration von Werten ist!)**
+Eine bedingte Anweisung beginnt immer mit einer If-Abfrage. Sie prüft, ob das gegebene Statement wahr (true) ist und führt ggf. den folgenden Code in der Klammer aus. **Be careful, you need TWO EQUALS when comparing values! (That's because one equal is for declaring values!)**
 
 ```zenscript
 val test = 0;
 
 if (test == 0) { //true
-    print("Test ist Null!");
+    print("Test is zero!");
 }
 ```
 
@@ -22,20 +22,20 @@ Ein Else-Statement kann an eine If-Abfrage angehängt werden und wird ausgeführ
 var test = 0;
 
 if (test == 0) { //true
-    //wird ausgeführt, wenn der Test gleich 0
-    print("Test ist Null! );
+    //will be executed when test is equal to 0
+    print("Test is zero!");
 } else {
-    //wird ausgeführt, wenn der Test nicht 0
-    print("Test ist NICHT Null! );
+    //will be executed when test is not equal to 0
+    print("Test is NOT zero!");
 }
 
 test = 1;
 if (test == 0) { //false
-    //wird ausgeführt, wenn Test gleich 0
-    ist ("Jetzt, test ist null! );
+    //will be executed when test is equal to 0
+    print("Now, test is zero!");
 } else {
-    //wird ausgeführt, wenn Test nicht gleich 0
-    ist ("Jetzt, test ist NICHT Null! );
+    //will be executed when test is not equal to 0
+    print("Now, test is NOT zero!");
 }
 
 ```
@@ -44,40 +44,40 @@ if (test == 0) { //false
 
 Berechnungen: `+`,`-`,`*`,`/`,`mod`,`verkettung(~)`
 
-Unterstützte Operationen sind `Logical OR(||)`, `Logical AND(&&)`, `Bitweise OR(|)`, `Bitweise UND(&)`und `Bitweise XOR(^)`
+Supported Operands are `Logical OR(||)`, `Logical AND(&&)`, `Bitwise OR(|)`, `Bitwise AND(&)`, and `Bitwise XOR(^)`
 
 ```zenscript
-//Sie können nachfragen:
+//You can check for:
 
 
-//Zahlenwerte
+//Number values
 val a = 0 as int;
 if (a == 0) { print("NumVal"); }
 
-//Berechnete Zahlenwerte
+//Calculated number values
 val b = 1;
 val c = 5;
-//Alle evaluieren zu true
-if (b+c == 6) { print("Num1! ); }
+//All evaluate to true
+if (b+c == 6) { print("Num1!"); }
 if (b*c == 5) { print("Num2!"); }
-if (b/c == 0. ) { print("Num3! ); }
+if (b/c == 0.2) { print("Num3!"); }
 
 //OR, XOR, AND
-val d = "Hallo";
-val e = "Welt";
-val f = d~e; //f = "HelloWorld", die Tilde verkettet nur eine Sache an die andere
+val d = "Hello";
+val e = "World";
+val f = d~e; //f = "HelloWorld", the Tilde just concatenates one thing to another
 
-//|(OR) bedeutet solange eines der Kriterien erfüllt ist, wertet es auf true
-if (d == "Hallo" || e == "Hallo") { print("OR1! ); } //true
-if (d == "Hallo" || e == "World") { print("OR2! ); } //true
+//||(OR) means, as long as one of the criteria is met, it evaluates to true
+if (d == "Hello" || e == "Hello") { print("OR1!"); }        //true
+if (d == "Hello" || e == "World") { print("OR2!"); }        //true
 
-//^(XOR) bedeutet, dass NUR ONE Kriterien erfüllt werden können sonst wertet es auf false
-if (d == "Hallo" ^ e == "Hallo") { print("XOR1! ); } //true
-if (d == "Hallo" ^ e == "World") { print("XOR2! ); } //false
+//^(XOR) means, ONLY ONE criteria may be met, otherwise it evaluates to false
+if (d == "Hello" ^ e == "Hello") { print("XOR1!"); }        //true
+if (d == "Hello" ^ e == "World") { print("XOR2!"); }        //false
 
-//&&(AND) bedeutet, beide Kriterien müssen erfüllt sein ansonsten wertet es auf false
-if (d == "Hallo" && e == "Hallo") { print("AND1! ); } //false
-if (d == "Hallo" && e == "World") { print("AND2! ); } //true
+//&&(AND) means, both criteria need to be met, otherwise it evaluates to false
+if (d == "Hello" && e == "Hello") { print("AND1!"); }       //false
+if (d == "Hello" && e == "World") { print("AND2!"); }       //true
 ```
 
 ## Der ? Operator
@@ -106,87 +106,87 @@ switchy ?
 
 Du kannst folgende Operatoren verwenden. Alle gegebenen Beispiele ergeben true.
 
-| Name                | Zeichen      | Erklärung                                                                                                                                                                           | Beispiel          |
-| ------------------- | ------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------- |
-| Nicht               | `!`          | Invertiert ein Boolean (true/false)                                                                                                                                                 | !false            |
-| Nicht gleich        | `!=`         | Prüft, ob der Wert davor und danach nicht gleich ist                                                                                                                                | 1 != 2            |
-| Gleich              | `==`         | Prüft, ob der Wert davor und danach gleich ist                                                                                                                                      | 1 == 1            |
-| Größer als          | `>`       | Prüft, ob der Wert davor größer ist als der Wert danach                                                                                                                             | 2 > 1             |
-| Größer oder gleich  | `>=`      | Prüft, ob der Wert davor größer oder gleich groß wie der Wert danach ist                                                                                                            | 1 >= 1            |
-| Weniger als         | `<`       | Prüft, ob der Wert davor kleiner ist als der Wert danach                                                                                                                            | 1 < 2             |
-| Kleiner oder gleich | `<=`      | Prüft, ob der Wert davor kleiner oder gleich klein wie der Wert danach ist                                                                                                          | 1 <= 1            |
-| Logisch UND         | `&&` | Prüft, ob sowohl vor als auch nach den Werten wahr sind, falsch, wenn eine oder beide falsch sind                                                                                   | wahr && true      |
-| Logisch ODER        | `\|\|`     | Prüft, ob der Wert vor oder nach wahr ist, falsch, wenn keiner wahr ist                                                                                                             | false \|\| true |
-| Bitwise XOR         | `^`          | Prüft, ob genau einer der Vor- oder Nach-Werte wahr ist, ob beide oder keine wahr sind                                                                                              | true ^ false      |
-| Bitweise UND        | `&`      | Führt eine bitweise UND Operation an den Vor- und Nach-Werten aus. Siehe [dieses](https://stackoverflow.com/questions/4014535/differences-in-boolean-operators-vs-and-vs) für mehr  | wahr && true      |
-| Bitweise ODER       | `\|`        | Führt eine bitweise ODER Operation an den Vor- und Nach-Werten aus. Siehe [dieses](https://stackoverflow.com/questions/4014535/differences-in-boolean-operators-vs-and-vs) für mehr | false \|\| true |
+| Name                | Zeichen      | Erklärung                                                                                                                                                                    | Beispiel          |
+| ------------------- | ------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------- |
+| Nicht               | `!`          | Invertiert ein Boolean (true/false)                                                                                                                                          | !false            |
+| Nicht gleich        | `!=`         | Prüft, ob der Wert davor und danach nicht gleich ist                                                                                                                         | 1 != 2            |
+| Gleich              | `==`         | Prüft, ob der Wert davor und danach gleich ist                                                                                                                               | 1 == 1            |
+| Größer als          | `>`       | Prüft, ob der Wert davor größer ist als der Wert danach                                                                                                                      | 2 > 1             |
+| Größer oder gleich  | `>=`      | Prüft, ob der Wert davor größer oder gleich groß wie der Wert danach ist                                                                                                     | 1 >= 1            |
+| Lesser than         | `<`       | Prüft, ob der Wert davor kleiner ist als der Wert danach                                                                                                                     | 1 < 2             |
+| Kleiner oder gleich | `<=`      | Prüft, ob der Wert davor kleiner oder gleich klein wie der Wert danach ist                                                                                                   | 1 <= 1            |
+| Logical AND         | `&&` | Checks if both before and after values are true, false if one or both are false                                                                                              | true && true      |
+| Logical OR          | `\|\|`     | Checks if either the value before or after are true, false if neither are true                                                                                               | false \|\| true |
+| Bitwise XOR         | `^`          | Checks if exactly one of the before or after values is true, false if both or none are true                                                                                  | true ^ false      |
+| Bitwise AND         | `&`      | Performs a bitwise AND operation on the before and after values. See [this](https://stackoverflow.com/questions/4014535/differences-in-boolean-operators-vs-and-vs) for more | true && true      |
+| Bitwise OR          | `\|`        | Performs a bitwise OR operation on the before and after values. See [this](https://stackoverflow.com/questions/4014535/differences-in-boolean-operators-vs-and-vs) for more  | false \|\| true |
 
-### Unterschied zwischen `|` und `||` (und `&` und `&&`)
+### Difference between `|` and `||` (and `&` and `&&`)
 
-Der Hauptunterschied zwischen dem einzelnen und dem Doppelten, abgesehen von der Semantik, ist, dass das Doppelte eine Überprüfung nach jeder Bedingung durchführt und frühzeitig beendet wird - das nennt man Kurzschluss. Die Einzelne durchläuft jedoch die gesamte Kette von Bedingungen, auch wenn der erste den gesamten Zustand annulliert hätte. Dies spart nicht nur Ressourcen, sondern ermöglicht auch einfacheres Skripting wie **null prüft** und verkettete Bedingungen.
+The main difference between the single and the double, with semantics aside, is that the double performs a check after each condition and exits early - this is called short-circuiting. However, the single goes through the entire chain of conditions, even if the first one would have cancelled the entire condition. This not only saves resources, but also allows for easier scripting such as **null checks** and chained conditions.
 
 ```zenscript
 var a = 5;
-var item = ... als IItemStack;
+var item = ... as IItemStack;
 
-// Auch wenn 5 es geht immer noch durch alle Bedingungen aufgelistet
+// Even though a is 5, it still goes through all of the conditions listed
 if (a == 5 | a == 3 | a == 10 | a == -1) {
-...
+    ...
 }
 
-// Auch wenn eine 5 ist und die Bedingung unmöglich ist (eine Variable kann nicht 3 und 5 sein), es geht immer noch durch alle aufgelisteten Bedingungen
+// Even though a is 5 and the condition is impossible (a variable can't be both 3 and 5), it still goes through all of the conditions listed
 if (a == 3 & a < 2 & a > 8 & a == 5) {
-... 
+    ... 
 }
 
-// Prüft, ob das Element nicht null ist, bevor es auf Variablen von Element
+// Checks if item is not null before accessing variables from item
 if (!isNull(item) && item.amount == 1) {
-...
+    ...
 }
 
-// Prüft, ob Artikel nicht null ist, während auf Variablen von einem potentiell null Element zugegriffen wird, Werfe einen Fehler, wenn das Element null
-if (! sNull(item) & item. mount == 1) {
-...
+// Checks if item is not null while accessing variables from a potentially null item, throwing an error if the item is null
+if (!isNull(item) & item.amount == 1) {
+    ...
 }
 ```
 
 ## Der in/has-Operator
 
-Der `in` und der `hat` Operator überprüft, ob etwas drin ist.  
-Zuerst benötigen Sie die Liste, in der Sie einchecken möchten dann hat der `in`/`` dann den Wert, auf den Sie überprüfen möchten. `in` and `has` are the same keyword for ZS, but in most cases people use `has` for checking if a collection contains an item and in for loops as this represents the English grammar.
+The `in` and the `has` operator check if something is in something.  
+First you need the list you want to check in, then the `in`/`has` then the value you want to check for. `in` and `has` are the same keyword for ZS, but in most cases people use `has` for checking if a collection contains an item and in for loops as this represents the English grammar.
 
-### in/hat geladene Mods
+### in/has loadedMods
 
-Du kannst überprüfen, ob ein Mod geladen wird, indem du überprüfst, ob es in der LoadedMods Liste ist
+You can check, if a mod is loaded by checking if it's in the loadedMods list
 
 ```zenscript
-//enthält Prüfungen können in
-verwendet werden, wenn (loadedMods in "mcp") {
-    print("Minecraft Coder Pack geladen");
+//While contains checks can use in
+if (loadedMods in "mcp") {
+    print("Minecraft Coder Pack loaded");
 }
 
-//Die meisten Leute bevorzugen die Verwendung hat
-if (loadedMods hat "mcp") {
-    print("Minecraft Coder Pack geladen");
+//Most people prefer using has
+if (loadedMods has "mcp") {
+    print("Minecraft Coder Pack loaded");
 }
 ```
 
-### in/hat IIngredient
+### in/has IIngredient
 
-Sie können auch überprüfen, ob ein Artikel mit einer Definition übereinstimmt, indem Sie zwei IIngredients vergleichen.  
-Mit diesem müssen Sie ein bisschen vorsichtig sein, um die beiden Einträge nicht zu verwechseln:  
-Dies ist nur der Fall, wenn der IIngredient NACH `in` auch vollständig in dem einen VOR des `in`gefunden werden kann.  
-In den meisten Fällen verwenden Sie das `Schlüsselwort stattdessen` , da die Absicht klarer ist und es genau dasselbe tut.
+You can also check if an item matches a definition by comparing two IIngredients.  
+With this one you need to be a bit careful as not to confuse the two entries:  
+This is only true when the IIngredient AFTER the `in` can also be found completely in the one BEFORE the `in`.  
+In most cases you will use the `has` keyword instead as it's intention is more clear and it does exactly the same.
 
 ```zenscript
-// Prüft, ob sich der Eisenbarren in der OreDict "ingotIron"
-befindet, ob (<ore:ingotIron> in <minecraft:iron_ingot>) {
-    Drucken ("Eisenbarren sind in der rechten OreDict");
+// Checks if the iron ingot is in the oreDict "ingotIron"
+if (<ore:ingotIron> in <minecraft:iron_ingot>) {
+    print("Iron ingots are in the right oreDict");
 }
 
-// Bevorzugt, die gleiche Funktion wie vorherige
-wenn (<ore:ingotIron> hat <minecraft:iron_ingot>) { 
-    Drucken ("Eisenbarren sind in der rechten OreDict");
+// Preferred, same function as previous
+if (<ore:ingotIron> has <minecraft:iron_ingot>) { 
+    print("Iron ingots are in the right oreDict");
 }
 ```
 
@@ -196,15 +196,15 @@ This is only true when ALL matching items from the IIngredient AFTER the `has` c
 val redstone = <minecraft:redstone>;
 val glowstone = <minecraft:glowstone>;
 val allDusts = <ore:dustAll>;
-allDusts. dd(redstone, glowstone);
+allDusts.add(redstone, glowstone);
 
 //True as redstone is a part of alldusts
 if (allDusts has redstone) {
 
 }
 
-//False as allDusts consists of redstone and glowstone, und Rotstein besteht nur aus Rotstein.
-if (redstone hat allDusts) {
+//False as allDusts consists of redstone and glowstone, and redstone only consists of redstone.
+if (redstone has allDusts) {
 
 }
 ```
