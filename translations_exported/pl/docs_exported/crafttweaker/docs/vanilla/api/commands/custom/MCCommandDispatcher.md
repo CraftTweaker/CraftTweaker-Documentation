@@ -48,23 +48,10 @@ myMCCommandDispatcher.execute(wprowadzanie jako String, źródło jako crafttwea
 | źródło    | [crafttweaker.api.commands.custom.MCCommandSource](/vanilla/api/commands/custom/MCCommandSource) | No description provided |
 
 
-
-Return type: int
-
-```zenscript
-myMCCommandDispatcher.execute(wejście jako com.mojang.brigadier.StringReader, źródło jako crafttweaker.api.commands.custom.MCCommandSource);
-```
-
-| Parameter | Type                                                                                             | Description             |
-| --------- | ------------------------------------------------------------------------------------------------ | ----------------------- |
-| input     | com.mojang.brigadier.StringReader                                                                | No description provided |
-| źródło    | [crafttweaker.api.commands.custom.MCCommandSource](/vanilla/api/commands/custom/MCCommandSource) | No description provided |
-
-
 ### Rozmiary wyników
 
 ```zenscript
-myMCCommandDispatcher.findAmbiguities(konsument jako crafttweaker.api.commands.custom.MCAmbiguityConsumer);
+myMCCommandDispatcher.findAmbiguities(consumer as crafttweaker.api.commands.custom.MCAmbiguityConsumer);
 ```
 
 | Parameter | Type                                                                                                     | Description             |
@@ -77,7 +64,7 @@ myMCCommandDispatcher.findAmbiguities(konsument jako crafttweaker.api.commands.c
 Typ zwrotu: [crafttweaker.api.commands.custom.MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)
 
 ```zenscript
-myMCCommandDispatcher.findNode(ścieżka jako Kolekcja<String>);
+myMCCommandDispatcher.findNode(path as Collection<String>);
 ```
 
 | Parameter | Type                               | Description             |
@@ -87,17 +74,17 @@ myMCCommandDispatcher.findNode(ścieżka jako Kolekcja<String>);
 
 ### getAllUsage
 
-Typ zwrotu: String[]
+Return type: String[]
 
 ```zenscript
-myMCCommandDispatcher.getAllUsage(node as crafttweaker.api.commands.custom.MCCommandNode, source as crafttweaker.api.commands.custom.MCCommandSource, ograniczone jako boolean);
+myMCCommandDispatcher.getAllUsage(node as crafttweaker.api.commands.custom.MCCommandNode, source as crafttweaker.api.commands.custom.MCCommandSource, restricted as boolean);
 ```
 
-| Parameter   | Type                                                                                             | Description             |
-| ----------- | ------------------------------------------------------------------------------------------------ | ----------------------- |
-| węzeł       | [crafttweaker.api.commands.custom.MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)     | No description provided |
-| źródło      | [crafttweaker.api.commands.custom.MCCommandSource](/vanilla/api/commands/custom/MCCommandSource) | No description provided |
-| ograniczony | boolean                                                                                          | No description provided |
+| Parameter  | Type                                                                                             | Description             |
+| ---------- | ------------------------------------------------------------------------------------------------ | ----------------------- |
+| węzeł      | [crafttweaker.api.commands.custom.MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)     | No description provided |
+| źródło     | [crafttweaker.api.commands.custom.MCCommandSource](/vanilla/api/commands/custom/MCCommandSource) | No description provided |
+| restricted | boolean                                                                                          | No description provided |
 
 
 ### sugestie getCompletionSuggestions
@@ -117,7 +104,7 @@ myMCCommandDispatcher.getCompletionSuggestions(parse as crafttweaker.api.command
 Typ zwrotu: [crafttweaker.api.commands.custom.MCSuggestions](/vanilla/api/commands/custom/MCSuggestions)
 
 ```zenscript
-myMCCommandDispatcher.getCompletionSuggestions(parse as crafttweaker.api.commands.custom.MCParseResults, kursor as int);
+myMCCommandDispatcher.getCompletionSuggestions(parse as crafttweaker.api.commands.custom.MCParseResults, cursor as int);
 ```
 
 | Parameter | Type                                                                                           | Description             |
@@ -131,7 +118,7 @@ myMCCommandDispatcher.getCompletionSuggestions(parse as crafttweaker.api.command
 Typ zwrotu: Kolekcja&lt;String&gt;
 
 ```zenscript
-myMCCommandDispatcher.getPath(cel jako crafttweaker.api.commands.custom.MCCommandNode);
+myMCCommandDispatcher.getPath(target as crafttweaker.api.commands.custom.MCCommandNode);
 ```
 
 | Parameter | Type                                                                                         | Description             |
@@ -141,7 +128,7 @@ myMCCommandDispatcher.getPath(cel jako crafttweaker.api.commands.custom.MCComman
 
 ### getRoot
 
-Typ zwrotu: [crafttweaker.api.commands.custom.MCRootCommandNode](/vanilla/api/commands/custom/MCRootCommandNode)
+Return type: [crafttweaker.api.commands.custom.MCRootCommandNode](/vanilla/api/commands/custom/MCRootCommandNode)
 
 ```zenscript
 myMCCommandDispatcher.getRoot();
@@ -149,10 +136,10 @@ myMCCommandDispatcher.getRoot();
 
 ### getSmartUsage
 
-Typ zwrotu: String[[crafttweaker.api.commands.custom.MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)]
+Return type: String[[crafttweaker.api.commands.custom.MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)]
 
 ```zenscript
-myMCCommandDispatcher.getSmartUsage(node as crafttweaker.api.commands.custom.MCCommandNode, źródło jako crafttweaker.api.commands.custom.MCCommandSource);
+myMCCommandDispatcher.getSmartUsage(node as crafttweaker.api.commands.custom.MCCommandNode, source as crafttweaker.api.commands.custom.MCCommandSource);
 ```
 
 | Parameter | Type                                                                                             | Description             |
@@ -171,10 +158,10 @@ myMCCommandDispatcher.hashCode();
 
 ### parse
 
-Typ zwrotu: [crafttweaker.api.commands.custom.MCParseResults](/vanilla/api/commands/custom/MCParseResults)
+Return type: [crafttweaker.api.commands.custom.MCParseResults](/vanilla/api/commands/custom/MCParseResults)
 
 ```zenscript
-myMCCommandDispatcher.parse(komenda jako String, źródło jako crafttweaker.api.commands.custom.MCCommandSource);
+myMCCommandDispatcher.parse(command as String, source as crafttweaker.api.commands.custom.MCCommandSource);
 ```
 
 | Parameter | Type                                                                                             | Description             |
@@ -183,25 +170,12 @@ myMCCommandDispatcher.parse(komenda jako String, źródło jako crafttweaker.api
 | źródło    | [crafttweaker.api.commands.custom.MCCommandSource](/vanilla/api/commands/custom/MCCommandSource) | No description provided |
 
 
-
-Typ zwrotu: [crafttweaker.api.commands.custom.MCParseResults](/vanilla/api/commands/custom/MCParseResults)
-
-```zenscript
-myMCCommandDispatcher.parse(polecenie jako com.mojang.brigadier.StringReader, źródło jako crafttweaker.api.commands.custom.MCCommandSource);
-```
-
-| Parameter | Type                                                                                             | Description             |
-| --------- | ------------------------------------------------------------------------------------------------ | ----------------------- |
-| command   | com.mojang.brigadier.StringReader                                                                | No description provided |
-| źródło    | [crafttweaker.api.commands.custom.MCCommandSource](/vanilla/api/commands/custom/MCCommandSource) | No description provided |
-
-
 ### zarejestruj
 
 Typ zwrotu: [crafttweaker.api.commands.custom.MCLiteralCommandNode](/vanilla/api/commands/custom/MCLiteralCommandNode)
 
 ```zenscript
-myMCCommandDispatcher.register(komenda jako crafttweaker.api.commands.custom.MCLiteralArgumentBuilder);
+myMCCommandDispatcher.register(command as crafttweaker.api.commands.custom.MCLiteralArgumentBuilder);
 ```
 
 | Parameter | Type                                                                                                               | Description             |
@@ -212,7 +186,7 @@ myMCCommandDispatcher.register(komenda jako crafttweaker.api.commands.custom.MCL
 ### setKonsument
 
 ```zenscript
-myMCCommandDispatcher.setConsumer(konsument jako crafttweaker.api.commands.custom.MCResultConsumer);
+myMCCommandDispatcher.setConsumer(consumer as crafttweaker.api.commands.custom.MCResultConsumer);
 ```
 
 | Parameter | Type                                                                                               | Description             |
@@ -233,7 +207,7 @@ myMCCommandDispatcher.toString();
 ### EQUALS
 
 ```zenscript
-myMCCommandDispatcher == o jako obiekt
+myMCCommandDispatcher == o as Object
 ```
 
 | Parameter | Type   | Description             |
