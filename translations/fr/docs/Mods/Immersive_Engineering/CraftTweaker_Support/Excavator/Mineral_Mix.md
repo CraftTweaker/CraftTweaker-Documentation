@@ -12,7 +12,7 @@ You can get and set the failchance for the Mineralmix using the failChance [ZenS
 
 | Required | Type | Data Type |
 | -------- | ---- | --------- |
-| Required | Name | string    |
+| Required | Nom  | string    |
 
 ```zenscript
 //Example:
