@@ -100,7 +100,7 @@ null.onlyIf(uid как строка, функционировать как фу�
 | трансформатор  | [crafttweaker.api.item.IIngredientTransformer](/vanilla/api/items/IIngredientTransformer)&lt;T&gt; | true         | false        |
 
 ## Операторы
-### ИЛИ
+### OR
 
 ```zenscript
 <tag:ingotIron> | Другое как crafttweaker.api.item.IIngredient
