@@ -48,12 +48,20 @@ smithing.addRecipe("recipe_name", <item:minecraft:golden_apple>, <item:minecraft
 | zusatz     | [crafttweaker.api.item.IIngredient](/vanilla/api/items/IIngredient) | Das Element, das zum Basiselement hinzugefügt wurde. |
 
 
-### getRecipeByName
+### getAllRecipes
 
-Rückgabetyp: [craftweaker.api.recipes.WrapperRezept](/crafttweaker/api/recipes/WrapperRecipe)
+Return type: List&lt;[crafttweaker.api.recipes.WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)&gt;
 
 ```zenscript
-smithing.getRecipeByName(Name als String);
+smithing.getAllRecipes();
+```
+
+### getRecipeByName
+
+Return type: [crafttweaker.api.recipes.WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)
+
+```zenscript
+smithing.getRecipeByName(name as String);
 ```
 
 | Parameter | Type   | Beschreibung            |
@@ -63,10 +71,10 @@ smithing.getRecipeByName(Name als String);
 
 ### getRecipesByAusgabe
 
-Retourentyp: Liste&lt;[crafttweaker.api.recipes.WrapperRezept](/crafttweaker/api/recipes/WrapperRecipe)&gt;
+Return type: List&lt;[crafttweaker.api.recipes.WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)&gt;
 
 ```zenscript
-smithing.getRecipesByOutput(Ausgabe als crafttweaker.api.item.IIngredient);
+smithing.getRecipesByOutput(output as crafttweaker.api.item.IIngredient);
 ```
 
 | Parameter | Type                                                                | Beschreibung            |
@@ -79,7 +87,7 @@ smithing.getRecipesByOutput(Ausgabe als crafttweaker.api.item.IIngredient);
 Remove all recipes in this registry
 
 ```zenscript
-schmieden.removeAll();
+smithing.removeAll();
 ```
 
 ### removeByModid
@@ -115,8 +123,8 @@ smithing.removeByModid("minecraft", (name as string) => {return name == "orange_
 Remove recipe based on Registry name
 
 ```zenscript
-smithing.removeByName(Name als String);
-schmieding.removeByName("minecraft:furnace");
+smithing.removeByName(name as String);
+smithing.removeByName("minecraft:furnace");
 ```
 
 | Parameter | Type   | Beschreibung                      |
@@ -129,8 +137,8 @@ schmieding.removeByName("minecraft:furnace");
 Remove recipe based on regex
 
 ```zenscript
-smithing.removeByRegex(regex als String);
-smithing.removeByRegex("\\d_\d");
+smithing.removeByRegex(regex as String);
+smithing.removeByRegex("\\d_\\d");
 ```
 
 | Parameter | Type   | Beschreibung           |
@@ -143,7 +151,7 @@ smithing.removeByRegex("\\d_\d");
 Remove a recipe based on it's output.
 
 ```zenscript
-smithing.removeRecipe(Ausgabe als crafttweaker.api.item.IItemStack);
+smithing.removeRecipe(output as crafttweaker.api.item.IItemStack);
 smithing.removeRecipe(<item:minecraft:glass>);
 ```
 
