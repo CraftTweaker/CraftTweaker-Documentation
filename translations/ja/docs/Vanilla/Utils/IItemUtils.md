@@ -1,20 +1,20 @@
 # IItemUtils
 
-ItemUtils インターフェイスには様々なアイテムユーティリティが用意されています。  
-`itemUtils` キーワードを使用してアクセスできます。
+The ItemUtils interface provides various item utils.  
+It can be accessed using the `itemUtils` keyword.
 
-## ポーションを作成中
+## Creating Potions
 
 The createPotions function allows you to create custom potions.  
 Returns the potion as [IItemStack](/Vanilla/Items/IItemStack/).  
 As the Parameter for this function is a vararg, you can either provide one Object[][] or many Object[].  
 In both cases each Object[] needs to contain
 
-1. [アイポーション](/Vanilla/Potions/IPotion/)
-2. エフェクトアンプ/強度を記述するint
-3. 効果の継続時間を記述する整数。 
+1. An [IPotion](/Vanilla/Potions/IPotion/)
+2. An int describing the effect amplifier/strength
+3. An int describing the effect duration. 
 
-Object[] がこの長さでない場合、またはこの順序では無視されます。
+If an Object[] is not of this length or not in this order, it will be ignored.
 
 ```zenscript
 //createPotion(Object[]...);
@@ -23,7 +23,7 @@ Object[] がこの長さでない場合、またはこの順序では無視さ�
 val potion = itemUtils.createPotion([[<potion:minecraft:strength>, 1, 1]]);
 ```
 
-## アイテムを名前で取得
+## Get Items by name
 
 These two functions both return an [IItemStack](/Vanilla/Items/IItemStack/)[] containing all matching items.  
 The first checks against the items' registry names, the 2nd uses the unlocalized names.
@@ -37,19 +37,19 @@ itemUtils.getItemsByRegexRegistryName(".*thermal.*"); // all thermal expansion/f
 itemUtils.getItemsByRegexUnlocalizedName(".*pink.*"); // pink things!! <3
 ```
 
-## 項目ブラケットハンドラを模倣する
+## Imitate the Item Bracket Handler
 
-このメソッドは、 [アイテムブラケットハンドラ](/Vanilla/Brackets/Bracket_Item/)と同じことをします。 This allows you to use string variables in the item name by concatenating it in.  
+This method does the same as the [Item Bracket Handler](/Vanilla/Brackets/Bracket_Item/). This allows you to use string variables in the item name by concatenating it in.  
 Unlike the bracket handler though, you need to provide the meta as optional parameter.  
 If you want to use the wildcard meta, use `32767`.
 
     //getItem(location, @Optional meta);
-    itemUtils.getItem("minecraft:iron_ingot"); //<minecraft:iron_ingot>
-    itemUtils.getItem("minecraft:dye", 1); //<minecraft:dye:1>
-    itemUtils.getItem("minecraft:wool", 32767); //<minecraft:wool:*>
+    itemUtils.getItem("minecraft:iron_ingot");    //<minecraft:iron_ingot>
+    itemUtils.getItem("minecraft:dye", 1);        //<minecraft:dye:1>
+    itemUtils.getItem("minecraft:wool", 32767);   //<minecraft:wool:*>
     
 
-## スポーン エッグを作成
+## Create Spawn Egg
 
 The createSpawnEgg function allows you to create custom mod spawn eggs.  
 The customNBT is OPTIONAL and can override the entity tag.  
@@ -57,6 +57,6 @@ Returns the spawn egg as [IItemStack](/Vanilla/Items/IItemStack/).
 
 ```zenscript
 //createSpawnEgg(entity, @optional customNBT)
-//NBT がエンティティを上書きします(これはクリーパーの卵を作成します!)
+//NBT overrides entity (this creates a creeper egg!)
 val egg = itemUtils.createSpawnEgg(<entity:minecraft:sheep>, {EntityTag:{id:"minecraft:creeper",NoAI:1 as byte,PersistenceRequired:1 as byte}});
 ```
