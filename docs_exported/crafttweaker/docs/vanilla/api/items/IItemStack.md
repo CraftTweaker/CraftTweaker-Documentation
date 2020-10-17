@@ -130,7 +130,7 @@ Return type: boolean
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| function | [crafttweaker.api.item.tooltip.ITooltipFunction](/crafttweaker/api/item/tooltip/ITooltipFunction) | No description provided |
+| function | [crafttweaker.api.item.tooltip.ITooltipFunction](/vanilla/api/items/ITooltipFunction) | No description provided |
 
 
 ### mutable
@@ -307,4 +307,5 @@ Sets the amount of the ItemStack
 |-------------|-------------|
 | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | true |
 | [crafttweaker.api.data.MapData](/vanilla/api/data/MapData) | true |
+| [crafttweaker.api.item.MCWeightedItemStack](/vanilla/api/items/MCWeightedItemStack) | true |
 
