@@ -244,7 +244,7 @@ crafttweaker.api.BracketHandlers.getTag("tag:minecraft:wool");
 
 ### Formatage de texte
 
-Type de retour : [crafttweaker.api.text.TextFormatting](/crafttweaker/api/text/TextFormatting)
+Return type: [crafttweaker.api.text.TextFormatting](/vanilla/api/util/text/TextFormatting)
 
 ```zenscript
 <formatting:tokens>
