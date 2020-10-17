@@ -46,7 +46,7 @@ myMCSuggestions.equals(o as Object);
 
 ### getList
 
-戻り値の種類: リスト&lt;com.mojang.brigadier.suggestion.Suggestion&gt;
+Return type: List&lt;[crafttweaker.api.commands.custom.MCSuggestion](/vanilla/api/commands/custom/MCSuggestion)&gt;
 
 ```zenscript
 myMCSuggestions.getList();
