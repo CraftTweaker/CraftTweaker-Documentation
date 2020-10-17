@@ -1,16 +1,16 @@
 # IFacing
 
-L'interface IFacing vous permet d'obtenir les directions possibles d'un [IBlockPoss](/Vanilla/World/IBlockPos/).
+The IFacing Interface allows you to get an [IBlockPos's](/Vanilla/World/IBlockPos/) possible directions.
 
 ## Importing the package
 
-Il pourrait vous être nécessaire d'importer le paquet si vous rencontrez des problèmes, donc mieux vaut être sûr que désolé et ajouter l'importation.  
-`importer crafttweaker.world.IFac ;`
+It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
+`import crafttweaker.world.IFacing;`
 
 ## Enumerations
 
-L'interface Facing a 6 méthodes statiques qui retournent cette direction.  
-Il a aussi un autre qui prend la direction en tant que chaîne d'entrée (par exemple `"NORTH"`)
+The Facing interface has 6 static methods that return the said direction.  
+It also has one more that takes the direction as String input (e.g. `"NORTH"`)
 
 ```zenscript
 crafttweaker.world.IFacing.north()
@@ -26,23 +26,23 @@ crafttweaker.world.IFacing.fromString(String name);
 
 ## ZenGetters/ZenMethods without parameters
 
-| ZenGetter | ZenMethod | Return Type |
-| --------- | --------- | ----------- |
-| name      | getName() | string      |
-| rotateY   | rotateY() | IFacing     |
-| opposé    | opposé()  | IFacing     |
+| ZenGetter | ZenMethod  | Return Type |
+| --------- | ---------- | ----------- |
+| name      | getName()  | string      |
+| rotateY   | rotateY()  | IFacing     |
+| opposite  | opposite() | IFacing     |
 
-## Autres méthodes
+## Other methods
 
-### Comparer deux faces
+### Comparing two Facings
 
-Vous pouvez comparer deux faces en utilisant le standard comparant les Opérateurs `== ! < > <= >=`  
-Alternativement, vous pouvez utiliser la fonction, même si la fonction retourne un entier égal à 0.
+You can compare two facings using the standart comparing Operators `== != < > <= >=`  
+Alternatively, you can use the function, though the function returns an int that is 0 if they are equal.
 
 ```zenscript
-//Renvoie vrai ou faux
+//Returns true or false
 facingOne == facingTwo;
 
-//Renvoie 0 s'ils sont égaux
+//Returns 0 if they are equal
 facingOne.compare(facingTwo);
 ```
