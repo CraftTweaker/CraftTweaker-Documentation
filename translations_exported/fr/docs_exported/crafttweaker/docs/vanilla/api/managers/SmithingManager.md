@@ -48,9 +48,17 @@ smithing.addRecipe("recipe_name", <item:minecraft:golden_apple>, <item:minecraft
 | ajout      | [crafttweaker.api.item.IIngredient](/vanilla/api/items/IIngredient) | L'élément ajouté à l'élément de base. |
 
 
+### getAllRecipes
+
+Return type: List&lt;[crafttweaker.api.recipes.WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)&gt;
+
+```zenscript
+smithing.getAllRecipes();
+```
+
 ### getRecipeByName
 
-Type de retour : [crafttweaker.api.recipes.WrapperRecipe](/crafttweaker/api/recipes/WrapperRecipe)
+Return type: [crafttweaker.api.recipes.WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)
 
 ```zenscript
 smithing.getRecipeByName(name as String);
@@ -63,10 +71,10 @@ smithing.getRecipeByName(name as String);
 
 ### Obtenir des recettes par sortie
 
-Type de retour : Liste&lt;[crafttweaker.api.recipes.WrapperRecipe](/crafttweaker/api/recipes/WrapperRecipe)&gt;
+Return type: List&lt;[crafttweaker.api.recipes.WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)&gt;
 
 ```zenscript
-smithing.getRecipesByOutput(sortie en tant que crafttweaker.api.item.Igredient);
+smithing.getRecipesByOutput(output as crafttweaker.api.item.IIngredient);
 ```
 
 | Parameter | Type                                                                | Description             |
@@ -87,7 +95,7 @@ smithing.removeAll();
 Supprimer la recette basée sur la modification du nom du Registre.
 
 ```zenscript
-smithing.removeByModid(modifie comme String);
+smithing.removeByModid(modid as String);
 smithing.removeByModid("minecraft");
 ```
 
@@ -143,7 +151,7 @@ smithing.removeByRegex("\\d_\\d");
 Remove a recipe based on it's output.
 
 ```zenscript
-smithing.removeRecipe(affiche en tant que crafttweaker.api.item.IItemStack);
+smithing.removeRecipe(output as crafttweaker.api.item.IItemStack);
 smithing.removeRecipe(<item:minecraft:glass>);
 ```
 
