@@ -244,7 +244,7 @@ craftmiliter.api.BraketHandlers.getTag ("tag:minecraft:wool");
 
 ### getTextFormating
 
-返回类型： [craftbiner.api.text.TextFormating](/crafttweaker/api/text/TextFormatting)
+Return type: [crafttweaker.api.text.TextFormatting](/vanilla/api/util/text/TextFormatting)
 
 ```zenscript
 <formatting:tokens>
