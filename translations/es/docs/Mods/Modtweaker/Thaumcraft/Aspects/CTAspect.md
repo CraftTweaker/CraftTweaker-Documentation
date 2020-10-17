@@ -17,7 +17,7 @@ val aspect = <aspect:ignis>.internal;
 
 ## ZenGetters and ZenSetters
 
-| Name           | isGetter | isSetter | Type   |
+| Nombre         | isGetter | isSetter | Type   |
 | -------------- | -------- | -------- | ------ |
 | chatColo**u**r | ✔        | ✔        | string |
 | name           | ✔        |          | string |
