@@ -50,12 +50,20 @@ smoker.addRecipe("wool2diamond", <item:diamond>, <tag:minecraft:wool>, 1.0, 0);
 | cookTime  | int                                                                 | how long it takes to cook       |
 
 
-### getRecipeByName
+### getAllRecipes
 
-Typ zwrotu: [crafttweaker.api.recipes.WrapperRecipe](/crafttweaker/api/recipes/WrapperRecipe)
+Return type: List&lt;[crafttweaker.api.recipes.WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)&gt;
 
 ```zenscript
-smoker.getRecipeByName(nazwa jako String);
+smoker.getAllRecipes();
+```
+
+### getRecipeByName
+
+Return type: [crafttweaker.api.recipes.WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)
+
+```zenscript
+smoker.getRecipeByName(name as String);
 ```
 
 | Parameter | Type   | Description             |
@@ -65,10 +73,10 @@ smoker.getRecipeByName(nazwa jako String);
 
 ### getRecipesByOutput
 
-Typ zwracania: Lista&lt;[crafttweaker.api.recipes.WrapperRecipe](/crafttweaker/api/recipes/WrapperRecipe)&gt;
+Return type: List&lt;[crafttweaker.api.recipes.WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)&gt;
 
 ```zenscript
-smoker.getRecipesByOutput(wyjście jako crafttweaker.api.item.IIngredient);
+smoker.getRecipesByOutput(output as crafttweaker.api.item.IIngredient);
 ```
 
 | Parameter | Type                                                                | Description             |
@@ -102,8 +110,8 @@ smoker.removeByModid("minecraft");
 Usuń przepis na podstawie modida nazwy rejestru z dodanym sprawdzianem wykluczenia, dzięki czemu możesz usunąć cały mod poza kilkoma określonymi.
 
 ```zenscript
-smoker.removeByModid(modid jako string wykluczaj jako crafttweaker.api.recipe.RecipeFilter);
-smoker.removeByModid("minecraft", (nazwa jako string) => {return name == "orange_wool";});
+smoker.removeByModid(modid as String, exclude as crafttweaker.api.recipe.RecipeFilter);
+smoker.removeByModid("minecraft", (name as string) => {return name == "orange_wool";});
 ```
 
 | Parameter | Type                                                               | Description                      |
