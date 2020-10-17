@@ -13,12 +13,36 @@ MCLiteralCommandNode implémente les interfaces suivantes. That means any method
 - [crafttweaker.api.commands.custom.MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)
 
 ## Methods
+### addChild
+
+```zenscript
+myMCLiteralCommandNode.addChild(node as crafttweaker.api.commands.custom.MCCommandNode);
+```
+
+| Parameter | Type                                                                                         | Description             |
+| --------- | -------------------------------------------------------------------------------------------- | ----------------------- |
+| Nœud      | [crafttweaker.api.commands.custom.MCCommandNode](/vanilla/api/commands/custom/MCCommandNode) | No description provided |
+
+
+### canUse
+
+Return type: boolean
+
+```zenscript
+myMCLiteralCommandNode.canUse(source as crafttweaker.api.commands.custom.MCCommandSource);
+```
+
+| Parameter | Type                                                                                             | Description             |
+| --------- | ------------------------------------------------------------------------------------------------ | ----------------------- |
+| source    | [crafttweaker.api.commands.custom.MCCommandSource](/vanilla/api/commands/custom/MCCommandSource) | No description provided |
+
+
 ### createBuilder
 
 Type de retour : [crafttweaker.api.commands.custom.MCLiteralArgumentBuilder](/vanilla/api/commands/custom/MCLiteralArgumentBuilder)
 
 ```zenscript
-monMCLiteralCommandNode.createBuilder();
+myMCLiteralCommandNode.createBuilder();
 ```
 
 ### equals
@@ -26,7 +50,7 @@ monMCLiteralCommandNode.createBuilder();
 Return type: boolean
 
 ```zenscript
-monMCLiteralCommandNode.equals(o en tant qu'objet);
+myMCLiteralCommandNode.equals(o as Object);
 ```
 
 | Parameter | Type   | Description             |
@@ -34,12 +58,113 @@ monMCLiteralCommandNode.equals(o en tant qu'objet);
 | o         | Object | No description provided |
 
 
+### trouver des Ambiguités
+
+```zenscript
+myMCLiteralCommandNode.findAmbiguities(consumer as crafttweaker.api.commands.custom.MCAmbiguityConsumer);
+```
+
+| Parameter    | Type                                                                                                     | Description             |
+| ------------ | -------------------------------------------------------------------------------------------------------- | ----------------------- |
+| consommateur | [crafttweaker.api.commands.custom.MCAmbiguityConsumer](/vanilla/api/commands/custom/MCAmbiguityConsumer) | No description provided |
+
+
+### getChild
+
+Type de retour : [crafttweaker.api.commands.custom.MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)
+
+```zenscript
+myMCLiteralCommandNode.getChild(name as String);
+```
+
+| Parameter | Type   | Description             |
+| --------- | ------ | ----------------------- |
+| name      | String | No description provided |
+
+
+### getChildren
+
+Type de retour : Collection&lt;[crafttweaker.api.commands.custom.MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)&gt;
+
+```zenscript
+myMCLiteralCommandNode.getChildren();
+```
+
+### getCommand
+
+Type de retour : [crafttweaker.api.commands.custom.MCCommand](/vanilla/api/commands/custom/MCCommand)
+
+```zenscript
+myMCLiteralCommandNode.getCommand();
+```
+
+### getExamples
+
+Type de retour : Collection&lt;String&gt;
+
+```zenscript
+myMCLiteralCommandNode.getExamples();
+```
+
 ### getLiteral
 
 Return type: String
 
 ```zenscript
-monMCLiteralCommandNode.getLiteral();
+myMCLiteralCommandNode.getLiteral();
+```
+
+### getName
+
+Return type: String
+
+```zenscript
+myMCLiteralCommandNode.getName();
+```
+
+### getRedirect
+
+Type de retour : [crafttweaker.api.commands.custom.MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)
+
+```zenscript
+myMCLiteralCommandNode.getRedirect();
+```
+
+### Obtenir le modificateur de redirection
+
+Type de retour : [crafttweaker.api.commands.custom.MCRedirectModifier](/vanilla/api/commands/custom/MCRedirectModifier)
+
+```zenscript
+myMCLiteralCommandNode.getRedirectModifier();
+```
+
+### getRelevantNodes
+
+Type de retour : Collection&lt;[crafttweaker.api.commands.custom.MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)&gt;
+
+```zenscript
+myMCLiteralCommandNode.getRelevantNodes(input as String);
+```
+
+| Parameter | Type   | Description             |
+| --------- | ------ | ----------------------- |
+| input     | String | No description provided |
+
+
+### Obtenir les conditions requises
+
+Type de retour : function.Predicate&lt;[crafttweaker.api.commands.custom.MCCommandSource](/vanilla/api/commands/custom/MCCommandSource)&gt;
+
+```zenscript
+myMCLiteralCommandNode.getRequirement();
+```
+
+### getUsageText
+
+Return type: String
+
+```zenscript
+myMCLiteralCommandNode.getUsageText();
 ```
 
 ### hashCode
@@ -50,12 +175,20 @@ Return type: int
 myMCLiteralCommandNode.hashCode();
 ```
 
+### isFork
+
+Return type: boolean
+
+```zenscript
+myMCLiteralCommandNode.isFork();
+```
+
 ### isValidInput
 
 Return type: boolean
 
 ```zenscript
-monMCLiteralCommandNode.isValidInput(input as String);
+myMCLiteralCommandNode.isValidInput(input as String);
 ```
 
 | Parameter | Type   | Description             |
@@ -63,20 +196,55 @@ monMCLiteralCommandNode.isValidInput(input as String);
 | input     | String | No description provided |
 
 
+### listSuggestions
+
+Type de retour : [crafttweaker.api.commands.custom.MCSuggestions](/vanilla/api/commands/custom/MCSuggestions)
+
+```zenscript
+myMCLiteralCommandNode.listSuggestions(context as crafttweaker.api.commands.custom.MCCommandContext, builder as crafttweaker.api.commands.custom.MCSuggestionsBuilder);
+```
+
+| Parameter    | Type                                                                                                       | Description             |
+| ------------ | ---------------------------------------------------------------------------------------------------------- | ----------------------- |
+| Contexte     | [crafttweaker.api.commands.custom.MCCommandContext](/vanilla/api/commands/custom/MCCommandContext)         | No description provided |
+| constructeur | [crafttweaker.api.commands.custom.MCSuggestionsBuilder](/vanilla/api/commands/custom/MCSuggestionsBuilder) | No description provided |
+
+
+### parse
+
+```zenscript
+myMCLiteralCommandNode.parse(input as String, contextBuilder as crafttweaker.api.commands.custom.MCCommandContextBuilder);
+```
+
+| Parameter      | Type                                                                                                             | Description             |
+| -------------- | ---------------------------------------------------------------------------------------------------------------- | ----------------------- |
+| input          | String                                                                                                           | No description provided |
+| contextBuilder | [crafttweaker.api.commands.custom.MCCommandContextBuilder](/vanilla/api/commands/custom/MCCommandContextBuilder) | No description provided |
+
+
 ### toString
 
 Return type: String
 
 ```zenscript
-monMCLiteralCommandNode.toString();
+myMCLiteralCommandNode.toString();
 ```
 
 
 ## Operators
+### COMPARE
+
+```zenscript
+myMCCommandNode compare o as crafttweaker.api.commands.custom.MCCommandNode
+```
+
+| Parameter | Type                                                                                         | Description             |
+| --------- | -------------------------------------------------------------------------------------------- | ----------------------- |
+| o         | [crafttweaker.api.commands.custom.MCCommandNode](/vanilla/api/commands/custom/MCCommandNode) | No description provided |
 ### EQUALS
 
 ```zenscript
-myMCLiteralCommandNode == o en tant qu'objet
+myMCLiteralCommandNode == o as Object
 ```
 
 | Parameter | Type   | Description             |
