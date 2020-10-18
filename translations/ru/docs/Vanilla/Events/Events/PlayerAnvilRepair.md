@@ -24,5 +24,5 @@ PlayerAnvilRepair Events implement the following interfaces and are able to call
 | `player`         |               | [IPlayer](/Vanilla/Players/IPlayer/)     |
 | `itemInput`      |               | [IItemStack](/Vanilla/Items/IItemStack/) |
 | `itemIngredient` |               | [IItemStack](/Vanilla/Items/IItemStack/) |
-| `itenResult`     |               | [IItemStack](/Vanilla/Items/IItemStack/) |
+| `itemResult`     |               | [IItemStack](/Vanilla/Items/IItemStack/) |
 | `breakChance`    | `breakChance` | float                                    |
