@@ -24,5 +24,5 @@ Die folgenden Informationen lassen sich von diesem Event (Ereignis) abrufen:
 | `player`         |               | [IPlayer](/Vanilla/Players/IPlayer/)     |
 | `itemInput`      |               | [IItemStack](/Vanilla/Items/IItemStack/) |
 | `itemIngredient` |               | [IItemStack](/Vanilla/Items/IItemStack/) |
-| `itenResult`     |               | [IItemStack](/Vanilla/Items/IItemStack/) |
+| `itemResult`     |               | [IItemStack](/Vanilla/Items/IItemStack/) |
 | `breakChance`    | `breakChance` | float                                    |
