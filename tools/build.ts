@@ -244,17 +244,18 @@ const build = async () => {
 
     console.log("Copying files to folders");
     if (process.env.docsSiteDir === undefined || process.env.VERSION === undefined) {
-        throw new Error(`Unable to copy files because variables are missing! docsSiteDir is '${process.env.docsSiteDir}', VERSION is '${process.env.VERSION}'`);
+        console.log(`Unable to deploy build because variables are missing! docsSiteDir is '${process.env.docsSiteDir}', VERSION is '${process.env.VERSION}'`);
+    } else {
+        let docsPath = path.join(process.env.docsSiteDir, process.env.VERSION);
+        if (fs.existsSync(docsPath)) {
+            // can't remove a non empty dir?
+            fs.emptyDirSync(docsPath);
+            fs.rmdirSync(docsPath);
+        }
+        fs.mkdirSync(docsPath);
+        fs.copySync(buildsDir, docsPath);
+        console.log("Copied files!")
     }
-    let docsPath = path.join(process.env.docsSiteDir, process.env.VERSION);
-    if (fs.existsSync(docsPath)) {
-        // can't remove a non empty dir?
-        fs.emptyDirSync(docsPath);
-        fs.rmdirSync(docsPath);
-    }
-    fs.mkdirSync(docsPath);
-    fs.copySync(buildsDir, docsPath);
-    console.log("Copied files!")
 };
 
 
