@@ -1,49 +1,49 @@
-# Obsługa nawiasów
+# The Bracket Handler
 
-Obsługa nawiasów jest jedynym sposobem na uzyskanie tagu.
+The Bracket Handler is the only way to obtain a tag.
 
-## Składnia
-Składnia tego uchwytu nawiasów jest niezwykle łatwa do podążania, a jednocześnie umożliwia wiele różnych możliwości, w których znacznik powinien być zwracany przez uchwyt nawiasu.
+## Syntax
+The syntax of this bracket handler is extremely easy to follow, and at the same time it allows for a huge variety of possibilities in which tag it should be returned by the bracket handler.
 
 ```zenscript
 <tag-TYPE:NAMESPACE:NAME>
 ```
 
-W powyższym fragmencie kodu części we wszystkich kapslach są bitami, które są konfigurowalne przez dewelopera i reprezentują cel , który zostanie zwrócony.
+In the above code snippet, the parts in all caps are the bits that are customizable by the developer and represent the target that will be returned.
 
-`TYPE` identyfikuje [typ tagu](/Mods/Boson/Tags/TagType/) , który zostanie utworzony. Typ musi być jednym z mnemoników identyfikujących typ tagu. Odnieś się do połączonej strony listy ważnych typów tagów.
+`TYPE` identifies the [type of tag](/Mods/Boson/Tags/TagType/) that will be created. The type has to be one of the mnemonics that identify a tag type. Refer to the linked page for a list of valid tag types.
 
-`NAMESPACE` identyfikuje przestrzeń nazwy tagu, tj. identyfikator modyfikacji który posiada tag. W większości przypadków przestrzeń nazw będzie `wykuć` lub `minecraft`, ale możliwe jest również użycie innych spacji nazwowych. . dla tagów specyficznych dla moda.
+`NAMESPACE` identifies the name space of a tag, i.e. the mod ID that owns the tag. In most cases, the namespace will be either `forge` or `minecraft`, but it is also possible to use other name spaces, e.g. for mod-specific tags.
 
-`NAZWA` reprezentuje nazwę tagu, który powinien zostać uzyskany.
+`NAME` represents the name of the tag that should be obtained.
 
-Zobacz sekcję zachowania, aby wiedzieć, co zwróci ten uchwyt nawiasu.
+Refer to the Behavior section to know what this bracket handler returns.
 
-## Zachowanie
-W odróżnieniu od innych uchwytów nawiasu, które są obecne w CraftTweaker, zachowanie tego uchwytu nawiasów różni się od się w zależności od tego, który ładujący obsługuje skrypt, w którym znajduje się uchwyt nawiasu.
+## Behavior
+Differently from other bracket handlers that are present in CraftTweaker, the behavior of this bracket handler differs according to which loader is processing the script the bracket handler is in.
 
-### Obciążenie `tagów`
-If the bracket handler is referenced in a script loaded by the [`tags` loader](/Mods/Boson/Loaders/Tags/), it will return a [`Tag`](/Mods/Boson/Tags/Tag/). Pozwala to na manipulację elementami, które znajdują się w samym tagu . Aby uzyskać więcej informacji, należy zapoznać się z dokumentacją klasy.
+### The `tags` loader
+If the bracket handler is referenced in a script loaded by the [`tags` loader](/Mods/Boson/Loaders/Tags/), it will return a [`Tag`](/Mods/Boson/Tags/Tag/). This allows for manipulation of the elements that are contained in the tag itself. Refer to the class documentation for more information.
 
-### Obciążenie `preinit`
-Jeśli uchwyt nawiasów jest odwołany do skryptu załadowanego przez ładowarkę `preinit` , to zrzuci wyjątek, ponieważ tagi są ładowane później w cyklu życia Minecraft, a mianowicie tuż przed rejestracją receptur.
+### The `preinit` loader
+If the bracket handler is referenced in a script loaded by the `preinit` loader, it will throw an exception, since tags are loaded later on in the Minecraft lifecycle, namely just before recipes are registered.
 
-### Co drugi ładunek
-Jeśli uchwyt nawiasów jest odsyłany w skrypcie załadowanym przez któregokolwiek z pozostałych ładujących, łącznie z domyślnym `epizodem przepis` , a następnie zwróci [`TagSkładnik`](/Mods/Boson/Tags/TagIngredient/). To nie pozwala na manipulację zawartością tagu, ale pozwala na użycie tagu w recepturach i innych metodach, które wymagają instancji [`ISkładnik`](/Vanilla/Variable_Types/IIngredient/) jako parametru.
+### Every other loader
+If the bracket handler is referenced in a script loaded by any of the other loaders, including the default `recipeevent` one, then it will return a [`TagIngredient`](/Mods/Boson/Tags/TagIngredient/). This does not allow for manipulation of the tag contents, but allows the tag to be used in recipes and other method invocations that require an instance of [`IIngredient`](/Vanilla/Variable_Types/IIngredient/) as a parameter.
 
-## Przykładowe użycie
+## Example usage
 
-Ten pierwszy przykład pokazuje użycie `TagSkładnika` do dodania nowego przepisu. Zauważ, że użyto tagu `elementów` :
+This first example demonstrates the usage of a `TagIngredient` to add a new recipe. Note the usage of the `items` tag type:
 
 ```zenscript
-Val tagIngredient = <tag-items:forge:ingots/iron>;
+val tagIngredient = <tag-items:forge:ingots/iron>;
 recipes.addShapelessRecipe("test", <minecraft:iron_ingot> * 3, [tagIngredient, tagIngredient, tagIngredient]);
 ```
 
-Ten drugi przykład pokazuje manipulację blokami `tagu` typu ``:
+This second example shows the manipulation of a `Tag` of type `blocks`:
 
 ```zenscript
-#tagi loadera
-tag val = <tag-blocks:minecraft:enderman_holdable>;
-tag.add("minecraft:iron_block" jako NameSpacedString);
+#loader tags
+val tag = <tag-blocks:minecraft:enderman_holdable>;
+tag.add("minecraft:iron_block" as NameSpacedString);
 ```

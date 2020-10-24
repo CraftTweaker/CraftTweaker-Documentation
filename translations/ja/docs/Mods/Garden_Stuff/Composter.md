@@ -1,24 +1,24 @@
-# <unk>
-## パッケージ
+# Composter
+## Package
 `import mods.gardenstuff.CompostBin;CompostBin;`
 
-## メソッド
-- **[IItemStack](/Vanilla/Liquids/IItemStack/) アイテム** 堆肥化するアイテム。
-- **int processTime** ベースラインマシンでティックあたりに生成されるエネルギー量。
-- **[IOreDictEntry](/Vanilla/OreDict/IOreDictEntry) oredictKey** oreDictionary entry.
+## Methods
+- **[IItemStack](/Vanilla/Liquids/IItemStack/) item** The item to be composted.
+- **int processTime** Amount of energy created per tick in a base-line machine.
+- **[IOreDictEntry](/Vanilla/OreDict/IOreDictEntry) oredictKey** An oreDictionary entry.
 
-## コンポスタブルアイテムを追加
+## Add Compostable Item
 ```zenscript
-モッズ・ガーデナーCompostBin.add(IItemStack項目, int processTime);
+mods.gardenstuff.CompostBin.add(IItemStack item, int processTime);
 
-mods.gardenstak.mods.gardenstuff.CompostBin.add(IItemStack item, int processTime);
+mods.gardenstuff.mods.gardenstuff.CompostBin.add(IItemStack item, int processTime);
 
 mods.gardenstuff.CompostBin.add(<minecraft:carrot>, 150);
 ```
 
-## コンポスト可能な oreDictionary エントリを追加
+## Add Compostable oreDictionary Entry
 ```zenscript
-モッズ・ガーデナーmods.gardenstuff.CompostBin.add(oredictKey, int processTime);
+mods.gardenstuff.mods.gardenstuff.CompostBin.add(oredictKey, int processTime);
 
 mods.gardenstuff.CompostBin.add(<ore:cropCarrot>, 150);CompostBin.add(<ore:cropCarrot>, 150);
 ```

@@ -1,23 +1,23 @@
-# Altare Rune
+# Rune Altar
 
-Il pacchetto RuneAltar viene utilizzato per aggiungere o rimuovere ricette da/per l'altare Rune Botania.
+The RuneAltar package is used for adding or removing recipes to/from the Botania Rune Altar.
 
-## Chiamata
+## Calling
 
-Puoi chiamare il pacchetto RuneAltar usando `mods.botania.RuneAltar`
+You can call the RuneAltar package using `mods.botania.RuneAltar`
 
-## Trova tutte le ricette registrate
+## Find all registered Recipes
 
-Puoi trovare tutte le ricette di Altare Runa registrate usando [`/ct botania altare`](/Mods/Modtweaker/Botania/Commands/).
+You can find all registered Rune Altar recipes using [`/ct botania altar`](/Mods/Modtweaker/Botania/Commands/).
 
-## Aggiunta ricetta
+## Recipe addition
 
 ```zenscript
 //mods.botania.RuneAltar.addRecipe(IItemStack output, IIngredient[] input, int mana);
 mods.botania.RuneAltar.addRecipe(<minecraft:planks>,[<minecraft:grass>, <minecraft:dirt>], 200);
 ```
 
-## Rimozione ricetta
+## Recipe removal
 
 ```zenscript
 //mods.botania.RuneAltar.removeRecipe(IIngredient output);

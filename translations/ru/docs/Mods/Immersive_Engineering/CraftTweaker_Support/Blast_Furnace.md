@@ -1,68 +1,68 @@
-# Доменная печь
+# Blast Furnace
 
-Доменная печь может быть использована для добавления/удаления рецептов/топлива в доменную печку.
+The Blast Furnace package can be used to add/remove recipes/fuels to/from the Immersive Engineering Blast Furnace.
 
-## Вызов пакета
+## Calling The Package
 
-Вы можете вызвать пакет BlastFurnace с помощью `mods.immersiveengineering.BlastFurnace`.
+You can call the BlastFurnace package using `mods.immersiveengineering.BlastFurnace`.
 
-## Добавить Рецепт:
+## Add Recipe:
 
-| Требуется | Тип   | Тип данных                                          |
-| --------- | ----- | --------------------------------------------------- |
-| Требуется | Вывод | [IItemstack](/Vanilla/Items/IItemStack/)            |
-| Требуется | Input | [Иингредиент](/Vanilla/Variable_Types/IIngredient/) |
-| Требуется | Время | Целое                                               |
-| Optional  | Slag  | [IItemstack](/Vanilla/Items/IItemStack/)            |
+| Required | Тип    | Data Type                                           |
+| -------- | ------ | --------------------------------------------------- |
+| Required | Output | [IItemstack](/Vanilla/Items/IItemStack/)            |
+| Required | Input  | [IIngredient](/Vanilla/Variable_Types/IIngredient/) |
+| Required | Time   | Integer                                             |
+| Optional | Slag   | [IItemstack](/Vanilla/Items/IItemStack/)            |
 
 ### Пример
 
 ```zenscript
-//Пример:
+//Example:
 mods.immersiveengineering.BlastFurnace.addRecipe(IItemStack output, IIngredient input, int time, @Optional IItemStack slag);
-mods.immersiveengineering. lastFurnace.addRecipe(<minecraft:diamond>, <ore:logWood>, 2000);
+mods.immersiveengineering.BlastFurnace.addRecipe(<minecraft:diamond>, <ore:logWood>, 2000);
 mods.immersiveengineering.BlastFurnace.addRecipe(<minecraft:diamond>, <ore:logWood>, 2000, <minecraft:dirt>);
 ```
 
-## Удалить рецепт
+## Remove Recipe
 
-| Тип   | Тип данных                               |
-| ----- | ---------------------------------------- |
-| Вывод | [IItemstack](/Vanilla/Items/IItemStack/) |
+| Тип    | Data Type                                |
+| ------ | ---------------------------------------- |
+| Output | [IItemstack](/Vanilla/Items/IItemStack/) |
 
 ### Пример:
 
 ```zenscript
-//Пример:
-mods.immersiveengineering.BlastFurnace.removeRecipe(IItemStack);
+//Example:
+mods.immersiveengineering.BlastFurnace.removeRecipe(IItemStack output);
 mods.immersiveengineering.BlastFurnace.removeRecipe(<minecraft:diamond>;
 ```
 
-## Добавить топливо
+## Add Fuel
 
-| Требуется | Тип   | Тип данных                                          |
-| --------- | ----- | --------------------------------------------------- |
-| Требуется | Input | [Иингредиент](/Vanilla/Variable_Types/IIngredient/) |
-| Требуется | Время | Целое                                               |
+| Required | Тип   | Data Type                                           |
+| -------- | ----- | --------------------------------------------------- |
+| Required | Input | [IIngredient](/Vanilla/Variable_Types/IIngredient/) |
+| Required | Time  | Integer                                             |
 
 ### Пример
 
 ```zenscript
-//Пример:
+//Example:
 mods.immersiveengineering.BlastFurnace.addFuel(IIngredient input, int time);
 mods.immersiveengineering.BlastFurnace.addFuel(<ore:plankWood>, 2000);
 ```
 
-## Снимите топливо
+## Remove Fuel
 
-| Требуется | Тип   | Тип данных                               |
-| --------- | ----- | ---------------------------------------- |
-| Требуется | Вывод | [IItemstack](/Vanilla/Items/IItemStack/) |
+| Required | Тип    | Data Type                                |
+| -------- | ------ | ---------------------------------------- |
+| Required | Output | [IItemstack](/Vanilla/Items/IItemStack/) |
 
 ### Пример
 
 ```zenscript
-//Пример:
-mods.immersiveengineering.BlastFurnace.removeFuel(IItemStack);
+//Example:
+mods.immersiveengineering.BlastFurnace.removeFuel(IItemStack output);
 mods.immersiveengineering.BlastFurnace.removeFuel(<minecraft:planks>);
 ```

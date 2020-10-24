@@ -1,23 +1,23 @@
-# Interacto de Minecarta
+# MinecartInteract
 
-El MinecartInteractEvent se activa cada vez que un jugador comienza a interactuar con una minecarta. El evento es **cancelable**y hacer esto evitará que el contenedor se abra.
+MinecartInteractEvent is fired whenever a player begins to interact with a minecart. The event is **cancelable**, and doing so will prevent the container from being opened.
 
-## Clase de evento
-Necesitarás lanzar el evento en la cabecera de la función como esta clase:  
-`crafttweaker.event. inecartInteractEvent`  
-Puede, por supuesto, también [importar](/AdvancedFunctions/Import/) la clase antes y usar ese nombre entonces.
+## Event Class
+You will need to cast the event in the function header as this class:  
+`crafttweaker.event.MinecartInteractEvent`  
+You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
 
-## Extensiones de la interfaz de eventos
-Los eventos MinecartInteract implementan las siguientes interfaces y son capaces de llamar a todos sus métodos/getters/setters también:
+## Event interface extensions
+MinecartInteract Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
 
-- [Evento IMinecart](/Vanilla/Events/Events/IMinecartEvent/)
+- [IMinecartEvent](/Vanilla/Events/Events/IMinecartEvent/)
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 
 
 ## ZenGetters
 
-| ZenGetter | Tipo                                     |
+| ZenGetter | Type                                     |
 | --------- | ---------------------------------------- |
-| `jugador` | [IPlayer](/Vanilla/Players/IPlayer/)     |
-| `objeto`  | [IItemStack](/Vanilla/Items/IItemStack/) |
-| `mano`    | Cadena                                   |
+| `player`  | [IPlayer](/Vanilla/Players/IPlayer/)     |
+| `item`    | [IItemStack](/Vanilla/Items/IItemStack/) |
+| `hand`    | String                                   |

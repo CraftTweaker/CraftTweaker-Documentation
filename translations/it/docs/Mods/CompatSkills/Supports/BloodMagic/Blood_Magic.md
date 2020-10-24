@@ -1,28 +1,28 @@
-# Magia Del Sangue
+# Blood Magic
 
-**Questo supporto è WIP** **Se qualcosa si rompe, si prega di aprire un problema sul tracker del problema!** [Issue-Tracker Link](https://github.com/Coders-After-Dark/CompatSkills/issues)
+**This Support is WIP** **If Something Breaks, please open an issue on the issue tracker!** [Issue-Tracker Link](https://github.com/Coders-After-Dark/CompatSkills/issues)
 
-## Legatura:
+## Binding:
 
-Questo annullerà l'Obbligazione nella Magia del Sangue per detto oggetto specifico se il giocatore non soddisfa i requisiti.
+This will cancel the Item Binding in Blood Magic for said specific item if the player doesn't meet the requirements.
 
-### Sintassi:
+### Syntax:
 
-    Esempio vuoto:
-    mods.compatskills.BindHandler.addBindLock(String failureMessage, IItemStack stack, String... requisiti);
+    Blank Example:
+    mods.compatskills.BindHandler.addBindLock(String failureMessage, IItemStack stack, String... requirements);
     
-    Esempio di prova:
-    mods.compatskills.BindHandler.addBindLock("Untold Dark Energies ruotano intorno a te e poi si sottomettono", <bloodmagic:blood_orb>.withTag({orb: "bloodmagic:weak"}), "reskillable:building<unk> 15", "reskillable:magic<unk> 7", "stage<unk> test", "adv<unk> minecraft:husbandry/plant_seed");
+    Test Example:
+    mods.compatskills.BindHandler.addBindLock("Untold Dark Energies swirl around you and then subside", <bloodmagic:blood_orb>.withTag({orb: "bloodmagic:weak"}), "reskillable:building|15", "reskillable:magic|7", "stage|test", "adv|minecraft:husbandry/plant_seed");
     
 
-## Rituali:
+## Rituals:
 
-Questo annullerà l'attivazione di un rituale se il giocatore non soddisfa i requisiti.
+This will cancel the activation of a ritual if the player doesn't meet the requirements.
 
-### Sintassi:
+### Syntax:
 
-    Esempio vuoto:
-    mods.compatskills.RitualHandler.addRitualLock(String failureMessage, String ritual, String... requisiti)
+    Blank Example:
+    mods.compatskills.RitualHandler.addRitualLock(String failureMessage, String ritual, String... requirements)
     
-    Esempio di prova:
-    mods.compatskills.RitualHandler.addRitualLock("As the ritual activates, you don't achieve the expected result", "ritualCrushing", "reskillable:building<unk> 15", "reskillable:magic<unk> 7", "stage<unk> test", "adv<unk> minecraft:husbandry/plant_seed")
+    Test Example:
+    mods.compatskills.RitualHandler.addRitualLock("As the ritual activates, you don't achieve the expected result", "ritualCrushing", "reskillable:building|15", "reskillable:magic|7", "stage|test", "adv|minecraft:husbandry/plant_seed")

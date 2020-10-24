@@ -1,30 +1,24 @@
 # PlayerOpenContainer
 
-Il PlayerOpenContainer Event viene sparato ogni volta che un giocatore apre un contenitore.
+The PlayerOpenContainer Event is fired whenever a player opens a container.
 
-## Classe Evento
+## Event Class
 
-Dovrai lanciare l'evento nell'intestazione della funzione come questa classe:  
-`crafttweaker.event. layerOpenContainerEvent`  
-È possibile, naturalmente, anche [importare](/AdvancedFunctions/Import/) la classe prima e utilizzare quel nome allora.
+You will need to cast the event in the function header as this class:  
+`crafttweaker.event.PlayerOpenContainerEvent`  
+You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
 
-## Estensioni dell'interfaccia evento
+## Event interface extensions
 
-PlayerOpenContainer Events implementare le seguenti interfacce e sono in grado di chiamare anche tutti i loro metodi/getter/setter:
+PlayerOpenContainer Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
 
-- [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 - [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
 
 ## ZenGetters
 
-Le seguenti informazioni possono essere ricavate dall'evento:
+The following information can be retrieved from the event:
 
-| ZenGetter     | Tipo Di Reso                                 |
-| ------------- | -------------------------------------------- |
-| `annullato`   | boolean                                      |
-| `giocatore`   | [IPlayer](/Vanilla/Players/IPlayer/)         |
-| `contenitore` | [IContainer](/Vanilla/Container/IContainer/) |
-
-## ZenMethods
-
-- `event.cancel()` imposta l'evento come annullato.
+| ZenGetter   | Return Type                                  |
+| ----------- | -------------------------------------------- |
+| `player`    | [IPlayer](/Vanilla/Players/IPlayer/)         |
+| `container` | [IContainer](/Vanilla/Container/IContainer/) |

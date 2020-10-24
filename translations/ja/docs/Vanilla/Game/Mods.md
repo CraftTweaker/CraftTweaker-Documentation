@@ -3,15 +3,15 @@
 You can use the [global keyword](/Vanilla/Global_Functions/) `loadedMods` to access all currently loaded mods.  
 If needed you can import the class using `import crafttweaker.mods.ILoadedMods;`
 
-## Modがロードされているか確認する
+## Check if a mod is loaded
 
-`関数の` を使用して、Modがロードされているかどうかを確認します。  
-`contains` メソッドも使用できます。
+Use the `in` function to check if a mod is loaded;  
+You can also use the `contains` method:
 
 ```zenscript
 //if MinecraftCoderPack is loaded
 if(loadedMods in "mcp"){
-    print("success!);
+    print("success!");
 }
 
 //if MinecraftCoderPack is loaded
@@ -20,21 +20,21 @@ if(loadedMods.contains("mcp")){
 }
 ```
 
-## 特定のModを取得します
+## Retrieve a specific mod
 
-IDがある限り、特定のModをIModとして取得できます
+You can retrieve a specific mod as IMod as long as you have it's ID
 
 ```zenscript
-//minecraftCoderPack mod
-val mod = loadedMod["mcp"]; を取得する
+//retrieves the minecraftCoderPack mod
+val mod = loadedMods["mcp"];
 ```
 
-## ModListを通して繰り返します
+## Iterate through the modList
 
-読み込まれた Mod のリストを以下のように反復できます：
+You can iterate through the list of loaded mods like this:
 
 ```zenscript
-//より大きなパックでは推奨されない、登録されたアイテムの定義をすべて出力します！
+//prints all registred item definitions, not recommended in larger packs!
 //the mod variable will be an IMod type
 for mod in loadedMods {
     print(mod.name ~ ":");
@@ -46,13 +46,13 @@ for mod in loadedMods {
 
 # IMod
 
-IModインターフェースは、特定のModに関する一般的な情報を提供します。  
-必要に応じて、 `import crafttweaker.mods.IMod;` を使用してインポートできます。
+The IMod Interface provides you with some general information on a specific mod.  
+If needed, it can be imported using `import crafttweaker.mods.IMod;`
 
-| Zengetter | 何をするか                     | Return Type                                | 使用法               |
-| --------- | ------------------------- | ------------------------------------------ | ----------------- |
-| id        | Mod の id を返します。           | 文字列                                        | `mod.id`          |
-| 名前        | Modの内部名を返します              | 文字列                                        | `mod.name`        |
-| バージョン     | Modのバージョンを返します            | 文字列                                        | `mod.version`     |
-| 説明        | Modの説明を返します。              | 文字列                                        | `mod.description` |
-| 項目        | Modによって追加されたすべてのアイテムを返します | [IItemStack](/Vanilla/Items/IItemStack/)[] | `mod.items`       |
+| Zengetter   | What does it do                    | Return Type                                | Usage             |
+| ----------- | ---------------------------------- | ------------------------------------------ | ----------------- |
+| id          | Returns the mod's id               | string                                     | `mod.id`          |
+| name        | Returns the mod's internal name    | string                                     | `mod.name`        |
+| version     | Returns the mod's version          | string                                     | `mod.version`     |
+| description | Returns the mod description        | string                                     | `mod.description` |
+| items       | Returns all items added by the mod | [IItemStack](/Vanilla/Items/IItemStack/)[] | `mod.items`       |

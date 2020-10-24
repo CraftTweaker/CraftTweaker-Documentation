@@ -1,47 +1,47 @@
-# Globale Funktionen
+# Global Functions
 
-Globale Funktionen sind Funktionen, die ohne [importiert werden können](/AdvancedFunctions/Import/).  
-Hier ist die Liste:
+Global functions are functions that can be called without being [imported](/AdvancedFunctions/Import/).  
+Here's the list:
 
-## drucken
+## print
 
-Gibt die Zeichenkette in das Handwerksprotokoll als Information aus.
+Prints the string to the crafttweaker log as information.
 
 ```zenscript
 //print(String message);
-print("Hallo Welt!");
+print("Hello World!");
 ```
 
-Gibt nichts zurück
+Returns nothing
 
-## Gesamte Aktionen
+## totalActions
 
 ```zenscript
 //totalActions();
 totalActions();
 ```
 
-Gibt eine Int zurück, die zeigt, wie viele globale Funktionen registriert sind.
+Returns an int that shows how many global functions are registered.
 
 ## enableDebug
 
-Aktiviert den Debug-Modus.  
-Verwendung des [Debug-Präprozessors](/AdvancedFunctions/Preprocessors/DebugPreprocessor/) wird jedoch bevorzugt.
+Enables Debug mode.  
+Use of the [Debug Preprocessor](/AdvancedFunctions/Preprocessors/DebugPreprocessor/) is preferred though.
 
 ```zenscript
 //enableDebug();
 enableDebug();
 ```
 
-Gibt nichts zurück
+Returns nothing
 
 ## isNull
 
-Prüft, ob ein bestimmtes Objekt null ist.  
-Funktioniert nicht auf Primitiven!
+Checks if a given object is null.  
+Doesn't work on primitives!
 
 ```zenscript
-//isNull(Objekt o);
+//isNull(Object o);
 isNull(<minecraft:dirt>);
 ```
 
@@ -54,7 +54,7 @@ Returns a boolean Note: If this does not work for you, try casting the object to
 max(10, 11);
 ```
 
-Gibt eine Int zurück
+Returns an int
 
 ## min
 
@@ -63,31 +63,31 @@ Gibt eine Int zurück
 min(10, 11);
 ```
 
-Gibt eine Int zurück
+Returns an int
 
 ## pow
 
 ```zenscript
-//pow(double number 1, double number 2);
+//pow(double number1, double number2);
 pow(2.0, 4.0);
 ```
 
-Gibt ein Doppeltes zurück
+Returns a double
 
-## Globale Felder
+## Global Fields
 
-| Feld            | Beschreibung                                                                                    |
-| --------------- | ----------------------------------------------------------------------------------------------- |
-| brauen          | Zugriff auf den [Brauer Handler](/Vanilla/Recipes/Recipes_Brewing_Stand/)                       |
-| klient          | Zugriff auf [Client-Methoden](/Vanilla/Game/IClient/)                                           |
-| veranstaltungen | Zugriff auf den [Event-Handler](/Vanilla/Events/IEventManager/)                                 |
-| formatieren     | Zugriff auf den [Formatierungs-Handler](/Vanilla/Utils/IFormatter/)                             |
-| ofen            | Zugriff auf den [Ofenhandler](/Vanilla/Recipes/Furnace/Recipes_Furnace/)                        |
-| spiel           | Zugriff auf [Spielfunktionen](/Vanilla/Game/IGame/)                                             |
-| itemUtils       | Zugriff auf den [Artikel Handler](/Vanilla/Utils/IItemUtils/)                                   |
-| geladene Mods   | Zugriff auf die [geladene Mods Liste](/Vanilla/Game/Mods/)                                      |
-| logger          | Zugriff auf den [Logger](/Vanilla/Utils/Logger/)                                                |
-| oreDict         | Zugriff auf den [OreDictionary Handler](/Vanilla/OreDict/IOreDict/)                             |
-| rezepte         | Zugriff auf den [Rezept-Handler](/Vanilla/Recipes/Crafting/Recipes_Crafting_Table/)             |
-| server          | Zugriff auf [Server-Methoden](/Vanilla/Game/IServer/)                                           |
-| vanilla         | Zugriff auf Vanille-Funktionen (derzeit nur [vanilla.seeds](/Vanilla/Recipes/Seeds/) verfügbar) |
+| Field      | Beschreibung                                                                                   |
+| ---------- | ---------------------------------------------------------------------------------------------- |
+| brewing    | Accesses the [Brewing Handler](/Vanilla/Recipes/Recipes_Brewing_Stand/)                        |
+| client     | Accesses [client Methods](/Vanilla/Game/IClient/)                                              |
+| events     | Accesses the [Event Handler](/Vanilla/Events/IEventManager/)                                   |
+| format     | Accesses the [Formatting Handler](/Vanilla/Utils/IFormatter/)                                  |
+| furnace    | Accesses the [Furnace Handler](/Vanilla/Recipes/Furnace/Recipes_Furnace/)                      |
+| game       | Accesses [Game functions](/Vanilla/Game/IGame/)                                                |
+| itemUtils  | Accesses the [ItemUtils Handler](/Vanilla/Utils/IItemUtils/)                                   |
+| loadedMods | Accesses the [loaded Mods list](/Vanilla/Game/Mods/)                                           |
+| logger     | Accesses the [logger](/Vanilla/Utils/Logger/)                                                  |
+| oreDict    | Accesses the [oreDictionary Handler](/Vanilla/OreDict/IOreDict/)                               |
+| recipes    | Accesses the [Recipe Handler](/Vanilla/Recipes/Crafting/Recipes_Crafting_Table/)               |
+| server     | Accesses [server Methods](/Vanilla/Game/IServer/)                                              |
+| vanilla    | Accesses vanilla functions (currently only [vanilla.seeds](/Vanilla/Recipes/Seeds/) available) |

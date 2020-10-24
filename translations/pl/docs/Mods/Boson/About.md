@@ -1,15 +1,15 @@
-# O Boson
+# About Boson
 
-Boson jest modem biblioteki w rdzeniu, co oznacza, że nie zapewnia żadnych nowych funkcji gry ani specjalnych mechaników, ale działa raczej jako kręgosłup niektórych innych modów, zmniejszenie obciążeń i uproszczenie niektórych powtarzających się lub trudnych do wykonania zadań podczas procesu pisania.
+Boson is a library mod at its core, meaning it does not provide any new gameplay features or special mechanics, but rather acts as the backbone of some other mods, easing the burden and simplifying some repetitive or hard-to-master tasks during the writing process.
 
-Niemniej jednak Boson zawiera kilka dodatkowych funkcji, które mogą zainteresować twórcę paczek lub bardziej ogólnego użytkownika, jak szczegółowe wskazówki, które mogą pokazywać dane NBT lub wpisy słownika rudy. Zobacz listę funkcjonalności później na tej stronie , aby sprawdzić, które z tych funkcji są kompatybilne z CraftTweaker.
+Nevertheless, Boson contains some additional features that may interest the pack maker or a more general user, like detailed tooltips that can show NBT data or ore dictionary entries. Refer to the functionality list later in this page to find which of these features are compatible with CraftTweaker.
 
-Ponadto Boson dostarcza również klasy stanowiące część (nieoficjalnie) [ZenScriptX Project](/Mods/Boson/ZenScriptX/), które są zestawem narzędzi, które znacznie zwiększają potencjał języka ZenScript. Aby uzyskać więcej informacji, zapoznaj się z połączoną stroną.
+Moreover, Boson also provides some classes that are part of the (unofficial) [ZenScriptX Project](/Mods/Boson/ZenScriptX/), which are a set of tools that greatly expand the potential of the ZenScript language. Refer to the linked page for more information.
 
-Przed przejściem do funkcji zaleca się przeczytanie strony [Nazw w Boson](/Mods/Boson/Names/) , dla niektórych szczegółów jak nazwy są obsługiwane w interakcjach tego modu CraftTweaker.
+Before delving into the features, it is highly suggested to read the [Names in Boson](/Mods/Boson/Names/) page, for some details in how names are handled in this mod's CraftTweaker interactions.
 
-## Funkcje kompatybilne z CraftTweaker
-- [Tagi](/Mods/Boson/Tags/Concept/)
+## CraftTweaker-compatible features
+- [Tags](/Mods/Boson/Tags/Concept/)
 
-## Kod źródłowy
-Kod źródłowy integracji CraftTweaker dostarczonej przez Bosona jest dostępny przez [GitHub](https://github.com/TheSilkMiner/Boson/tree/1.12.2/src/main/kotlin/net/thesilkminer/mc/boson/compatibility/crafttweaker).
+## Source code
+The source code for the CraftTweaker integration provided by Boson is available over on [GitHub](https://github.com/TheSilkMiner/Boson/tree/1.12.2/src/main/kotlin/net/thesilkminer/mc/boson/compatibility/crafttweaker).

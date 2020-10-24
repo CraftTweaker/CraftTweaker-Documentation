@@ -1,42 +1,42 @@
 # ProjectileImpactArrow
 
-Questo evento viene sparato ogni volta che un proiettile di freccia ha un impatto su un'entità ma prima del danno, ecc, viene calcolato. È **annullabile**e, se annullato, l'impatto non sarà elaborato.
+This event is fired whenever an arrow projectile impacts an entity but before damage, etc, is calculated. It is **cancelable**, and if canceled, the impact will not be processed.
 
-Vari valori dall'entità freccia sono disponibili attraverso zengetter, e possono essere modificati al fine di regolare i danni, forza di respingimento, stato di pickup, e determinare (o forza) un colpo critico.
+Various values from the arrow entity are available through zengetters, and can be modified in order to adjust damage, knockback strength, pickup status, and determine (or force) a critical hit.
 
-## Importare la classe
-Potrebbe essere necessario [importare](/AdvancedFunctions/Import/) la classe per evitare errori.  
-`importare crafttweaker.event.ProjectileImpactArrowEvent;`
+## Importing the class
+It might be required to [import](/AdvancedFunctions/Import/) the class to avoid errors.  
+`import crafttweaker.event.ProjectileImpactArrowEvent;`
 
-## Estendere IEntityEvent
-ProjectileImpactArrow Events implementano le seguenti interfacce e sono in grado di chiamare tutti i loro metodi/getter/setter:
+## Extending IEntityEvent
+ProjectileImpactArrow Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
 
 - [IProjectileEvent](/Vanilla/Events/Events/IProjectileEvent/)
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 
-## ZenGetters e ZenSetters
+## ZenGetters and ZenSetters
 
-Le seguenti informazioni possono essere ricavate dall'evento:
+The following information can be retrieved from the event:
 
-| ZenGetter      | ZenSetter        | Tipo                                  |
-| -------------- | ---------------- | ------------------------------------- |
-| `freccia`      |                  | [IEntity](/Vanilla/Entities/IEntity/) |
-| `tiratore`     |                  | [IEntity](/Vanilla/Entities/IEntity/) |
-| `danno`        | `danno`          | doppia                                |
-|                | `knockbackForza` | int (solo setter, nessun getter)      |
-| `isCritico`    | `isCritico`      | boolean                               |
-| `pickupStatus` |                  | Stringa                               |
+| ZenGetter      | ZenSetter           | Type                                  |
+| -------------- | ------------------- | ------------------------------------- |
+| `arrow`        |                     | [IEntity](/Vanilla/Entities/IEntity/) |
+| `shooter`      |                     | [IEntity](/Vanilla/Entities/IEntity/) |
+| `damage`       | `damage`            | double                                |
+|                | `knockbackStrength` | int (setter only, no getter)          |
+| `isCritical`   | `isCritical`        | boolean                               |
+| `pickupStatus` |                     | String                                |
 
-## Metodi aggiuntivi
+## Additional methods
 
 - `setPickupDisallowed()`
 
-Impedisce alla freccia di essere presa in qualsiasi circostanza.
+Prevents the arrow from being picked up under any circumstances.
 
 - `setPickupAllowed()`
 
-Consente di prelevare la freccia da dove l'entità è atterrata.
+Allows the arrow to be picked up from where the entity landed.
 
 - `setPickupCreative()`
 
-Permette di raccogliere la freccia solo se il giocatore è in modalità creativa.
+Only allows the arrow to be picked up if the player is in creative mode.

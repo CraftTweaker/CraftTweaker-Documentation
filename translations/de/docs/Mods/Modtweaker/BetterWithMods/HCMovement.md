@@ -1,10 +1,10 @@
-# HKW Bewegung
+# HCMovement
 
-HCMovement wirkt auf die Geschwindigkeit, mit der der Spieler sich bewegen kann, während er bestimmte Blöcke oder innerhalb eines bestimmten Blocks angreift. Zum Beispiel gehen Sie standardmäßig langsamer auf Gras, aber schneller auf Stein.
+HCMovement effects the speed at which the Player can move while on or inside certain blocks. For example by default you walk slower on grass but faster on stone.
 
-Wert ist eine Dezimalzahl zwischen 0 und 2, wobei 1 die normale Geschwindigkeit ohne HCMovement ist, weniger als 1 ist langsamer, größer als 1 ist schneller.
+Value is a decimal number between 0 and 2, where 1 is the normal speed without HCMovement, less than 1 is slower, greater than 1 is faster.
 
-NUR HCMovement akzeptiert Blöcke als Eingänge.
+HCMovement ONLY accepts Blocks as inputs.
 
 ```zenscript
 mods.betterwithmods.Movement.set(IItemStack stack, float value);

@@ -1,21 +1,21 @@
-# 没入型エンジニアリング
+# Immersive Engineering
 
-## クレジット:
+## Credits:
 
-これを通して私を助けてくれたり、MultiblockStagesから彼のコードの一部をリワークできるようにしてくれたので、クレジットはSkysomに出て行きます。
+Credits goes out to Skysom for helping guide me through this and for allowing me to rework some of his code from MultiblockStages!
 
-## 説明:
+## Explaination:
 
-没入型エンジニアリングサポートは現在以下のもので構成されています:
+Immersive Engineering-Support currently consists of:
 
-- すべての IE マルチブロックの文字列名をダンプするためのコマンド。 
-    - コマンド: /ct ieMultiBlocks
-- Crt-based Syntaxを使用したマルチブロック ゲート。
+- A Command for dumping the string name of all IE Multiblocks. 
+    - Command is: /ct ieMultiBlocks
+- Multiblock Gating using a Crt-based Syntax.
 
-### 構文
+### Syntax:
 
-    空白の例:
-    mods.compatskills.IEMTIBlockGate.addGate(String multiBlockName, String failureMessage, String... defaultRequirements);
+    Blank Example:
+    mods.compatskills.IEMultiBlockGate.addGate(String multiBlockName, String failureMessage, String... defaultRequirements);
     
-    作業例:
-    mods.compatskills.IEMmultiBlockGate.addGate("IE:DieselGenerator", "これはあなたのような馬鹿にはあまりにも複雑すぎると思う!", "reskillable:building|15", "reskillable:magic|7", "stage|test", "adv|minecraft:fusry/plant_seed");
+    Working Example:
+    mods.compatskills.IEMultiBlockGate.addGate("IE:DieselGenerator", "I'm afraid this is just too complex for an idiot like you!", "reskillable:building|15", "reskillable:magic|7", "stage|test", "adv|minecraft:husbandry/plant_seed");

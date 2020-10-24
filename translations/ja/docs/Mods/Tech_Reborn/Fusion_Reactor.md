@@ -1,17 +1,17 @@
-# 核融合リアクターformat@@0
+# Fusion Reactor
 
-## パッケージのインポート
+## Importing the Package
 `mods.techreborn.fusionReactor`
 
-## レシピを追加中
+## Adding Recipes
 ```zenscript
-mods.techreborn.fusionReactor.addRecipe(IIngredient topInput, IInput, IItemStack出力, int startEU, int euTick, int tickTime);
+mods.techreborn.fusionReactor.addRecipe(IIngredient topInput, IIngredient bottomInput, IItemStack output, int startEU, int euTick, int tickTime);
 ```
 
-## レシピを削除
+## Removing Recipes
 ```zenscript
 mods.techreborn.fusionReactor.removeTopInputRecipe(IIngredient iIngredient);
-mods.techreborn.fusionReactor.removeBottomInputRecipe);
+mods.techreborn.fusionReactor.removeBottomInputRecipe(IIngredient iIngredient);
 mods.techreborn.fusionReactor.removeRecipe(IItemStack output);
-mods.techreborn.fusionReactor.removeAllveAll();
+mods.techreborn.fusionReactor.removeAll();
 ```

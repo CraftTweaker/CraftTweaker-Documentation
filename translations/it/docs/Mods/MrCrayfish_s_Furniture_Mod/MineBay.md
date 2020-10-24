@@ -1,46 +1,46 @@
 # Mine Bay
 
-Puoi scambiare oggetti su minebay.
+You can trade for items on minebay.
 
-## Trades Predefinite
+## Default Trades
 
-- Argilla indurita per 1x Smeraldo
-- Teschio per 8x Smeraldo
-- Sella per 4x Smeraldo
-- Uovo di Uovo (meta 100, non fa nulla) per 8x Smeraldo
-- Armatura di Cavallo di Diamante per 8 x Diamante
-- Bottiglia Incantata per 1x Lingotto di Ferro
-- 4x Fuochi d'artificio per 1x Lingotto di Ferro
-- Libro incantato tocco di seta per 8x Smeraldo
-- 2x Pozione di visione notturna (3:00) per 1x Smeraldo
-- Ricetta libro dato 1x Smeraldo
+- Hardened Clay for 1x Emerald
+- Skull for 8x Emerald
+- Saddle for 4x Emerald
+- Spawn Egg (meta 100, does nothing) for 8x Emerald
+- Diamond Horse Armor for 8x Diamond
+- Bottle o' Enchanting for 1x Iron Ingot
+- 4x Fireworks for 1x Iron Ingot
+- Silk Touch Enchanted Book for 8x Emerald
+- 2x Night Vision Potion (3:00) for 1x Emerald
+- Recipe Book given 1x Emerald
 
-## Rimozione
+## Removing
 
-## Rimuovi gli scambi corrispondenti.
+## Remove matching trades.
 
 ```zenscript
 mods.cfm.MineBay.remove(@Optional IIngredient item);
 
-// Rimuovere il commercio risultante nella pozione di visione notturna (con qualsiasi quantità)
-mods. fm.MineBay.remove(<minecraft:potion>.withTag({Potenza: "night_vision"}));
-// Rimuovi tutti gli scambi
+// Remove trade resulting in the nightvision potion (with any amount)
+mods.cfm.MineBay.remove(<minecraft:potion>.withTag({Potion: "night_vision"}));
+// Remove all trades
 mods.cfm.MineBay.remove();
 ```
 
-Attualmente supporta solo la rimozione dal risultato commerciale.
+Currently only supports removing by trade result.
 
-## Aggiunta
+## Adding
 
-## Aggiungi un'operazione.
+## Add a trade.
 
 ```zenscript
 mods.cfm.MineBay.addTrade(@Nonnull IItemStack item, @Nonnull IItemStack currency);
 
-// Aggiungi un commercio per 42 bastoni dati 13 diamanti
-mods.cfm.MineBay.addTrade(<minecraft:stick>.withAmount(42),<minecraft:diamond>. ithAmount(13));
-// Aggiungere un commercio per 16 mele dato 3 smeraldi
-mods.cfm.MineBay.addTrade(<minecraft:apple>.withAmount(16),<minecraft:emerald>. ithAmount(3));
-// Aggiungere un commercio per 1 carota dato 1 smeraldo
+// Add a trade for 42 sticks given 13 diamonds
+mods.cfm.MineBay.addTrade(<minecraft:stick>.withAmount(42),<minecraft:diamond>.withAmount(13));
+// Add a trade for 16 apples given 3 emeralds
+mods.cfm.MineBay.addTrade(<minecraft:apple>.withAmount(16),<minecraft:emerald>.withAmount(3));
+// Add a trade for 1 carrot given 1 emerald
 mods.cfm.MineBay.addTrade(<minecraft:carrot>,<minecraft:emerald>);
 ```

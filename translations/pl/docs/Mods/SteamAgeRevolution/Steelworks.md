@@ -1,35 +1,35 @@
-# Stalownie
+# Steelworks
 
-Stalownie to maszyna, która przekształca element wejściowy i płyn w element wyjściowy za pomocą pary.
+The Steelworks is a machine that converts an input item and fluid into an output item using steam.
 
-## Dzwonienie
+## Calling
 
-Możesz wywołać pakiet Steelworks używając `mods.steamagerevolution.Steelworks`.
+You can call the Steelworks package using `mods.steamagerevolution.Steelworks`.
 
-## Usuwanie
+## Removing
 
-Ta funkcja usuwa pierwszy przepis z podanym [IItemStack](/Vanilla/Items/IItemStack/) `wyjście`:
+This function removes the first recipe they find with the given [IItemStack](/Vanilla/Items/IItemStack/) `output`:
 
 ```java
-mods.steamagerevolution.Steelworks.removeRecipe(wyjście IItemStack);
+mods.steamagerevolution.Steelworks.removeRecipe(IItemStack output);
 
-// Przykłady
+// Examples
 mods.steamagerevolution.Steelworks.removeRecipe(<ore:ingotSteel>.firstItem);
 ```
 
-Ta funkcja usuwa *wszystkie* przepisy obecnie zdefiniowane dla stalownicy:
+This function removes *all* recipes currently defined for the Steelworks:
 
 ```java
 mods.steamagerevolution.Steelworks.removeAll();
 ```
 
-## Dodawanie
+## Adding
 
-Ta funkcja jest używana do dodawania nowych przepisów dla stalownicy:
+This function is used to add new recipes for the Steelworks:
 
 ```java
-mods.steamagerevolution.Steelworks.addRecipe(ILiquidStack input2, IItemStack output, int craftTime, int steamCost);
+mods.steamagerevolution.Steelworks.addRecipe(ILiquidStack input, IIngredient input2, IItemStack output, int craftTime, int steamCost);
 
-// Przykłady
+// Examples
 mods.steamagerevolution.Steelworks.addRecipe(<liquid:iron>, <ore:coal>, <ore:ingotSteel>.firstItem, 200, 200);
 ```

@@ -1,6 +1,6 @@
-# Плавка игрока
+# PlayerSmelted
 
-Событие PlayerSmelted запускается, когда игрок выводит что-нибудь из печи.
+The PlayerSmelted Event is fired whenever a player takes something out of a furnace.
 
 ## Класс события
 
@@ -10,7 +10,7 @@ You can, of course, also [import](/AdvancedFunctions/Import/) the class before a
 
 ## Наследование от интерфейсов событий
 
-PlayerSmelted События реализуют следующие интерфейсы и также могут вызвать все их методы/getters/setters:
+PlayerSmelted Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
 
 - [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
 
@@ -18,7 +18,7 @@ PlayerSmelted События реализуют следующие интерф�
 
 Следующая информация может быть получена от события:
 
-| Геттеры  | Возвращаемый тип                         |
-| -------- | ---------------------------------------- |
-| `player` | [IPlayer](/Vanilla/Players/IPlayer/)     |
-| `вывод`  | [IItemStack](/Vanilla/Items/IItemStack/) |
+| ZenGetter | Возвращаемый тип                         |
+| --------- | ---------------------------------------- |
+| `player`  | [IPlayer](/Vanilla/Players/IPlayer/)     |
+| `output`  | [IItemStack](/Vanilla/Items/IItemStack/) |

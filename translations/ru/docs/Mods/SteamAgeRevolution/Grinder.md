@@ -1,28 +1,28 @@
-# Мельница
+# Grinder
 
-Мельница - это машина, которая преобразует входной элемент в выходной элемент с помощью пара.
+The Grinder is a machine that converts an input item into an output item using steam.
 
-## Пакет
+## Package
 `mods.steamagerevolution.Grinder`
 
-## Методы
+## Methods
 
-- **[IItemStack](/Vanilla/Items/IItemStack/) output** Результат рецепта.
-- **[IItemStack](/Vanilla/Items/IItemStack/) ввода** Ввод рецепта.
-- **int Time** время создания машины для обработки
-- **int SteamCost** Стоимость Пара на машине для обработки
+- **[IItemStack](/Vanilla/Items/IItemStack/) output** The result of the recipe.
+- **[IItemStack](/Vanilla/Items/IItemStack/) input** The input of the recipe.
+- **int craftTime** Crafting time for machine to process
+- **int steamCost** Cost of Steam for machine to process
 
 ## Сложение
 
 ```zenscript
-mods.steamagerevolution.Grinder.addRecipe(IIngredient input, IItemStack, int craftTime, int steamCost);
+mods.steamagerevolution.Grinder.addRecipe(IIngredient input, IItemStack output, int craftTime, int steamCost);
 mods.steamagerevolution.Grinder.addRecipe(<ore:cobblestone>, <minecraft:gravel>, 200, 200);
 ```
 
-## Удаление
+## Removing
 
 ```zenscript
-mods.steamagerevolution.Grinder.removeRecipe(IItemStack);
+mods.steamagerevolution.Grinder.removeRecipe(IItemStack output);
 mods.steamagerevolution.Grinder.removeRecipe(<minecraft:sand>);
 
 mods.steamagerevolution.Grinder.removeAll();

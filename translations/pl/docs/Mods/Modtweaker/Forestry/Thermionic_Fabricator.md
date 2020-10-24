@@ -1,37 +1,37 @@
-# Termioniczna Fabricator
+# Thermionic Fabricator
 
-ModTweaker pozwala na dodanie lub usunięcie z leśnych przepisw termiotycznych Fabricator
+ModTweaker allows you to add or remove forestry Thermionic Fabricator Recipes
 
-## Dzwonienie
+## Calling
 
-Możesz wywołać pakiet używając `mods.forestry.ThermionicFabricator`
+You can call the package using `mods.forestry.ThermionicFabricator`
 
-## Przepis/Usuwanie
+## Recipe/Cast Removal
 
 ```zenscript
-//mods.forestry.ThermionicFabricator.removeCast(produkt typu IIngredient);
+//mods.forestry.ThermionicFabricator.removeCast(IIngredient product);
 mods.forestry.ThermionicFabricator.removeCast(<forestry:thermionic_tubes:5>);
 ```
 
-## Przepis / Dodanie do Obsady
+## Recipe/Cast Addition
 
 ```zenscript
-//mods.forestry.ThermionicFabricator.addCast(wyjście IItemStack, IIngredient[][] składniki, ILiquidStack liquidStack, @Optional IItemStack);
-mods.forestry.ThermionicFabricator. ddCast(<minecraft:glass_pane> * 4, [[<minecraft:dirt>,null,null],[null,null,null],[null,null,null]], <liquid: glass> * 200);
-mods.forestry. hermionicFabricator.addCast(<minecraft:stained_glass:3>, [[<ore:dyeLightBlue>,null,null],[null,null,null],[null,null,null]], <liquid: glass> * 144, <forestry:wax_cast>);
+//mods.forestry.ThermionicFabricator.addCast(IItemStack output, IIngredient[][] ingredients, ILiquidStack liquidStack, @Optional IItemStack plan);
+mods.forestry.ThermionicFabricator.addCast(<minecraft:glass_pane> * 4, [[<minecraft:dirt>,null,null],[null,null,null],[null,null,null]], <liquid: glass> * 200);
+mods.forestry.ThermionicFabricator.addCast(<minecraft:stained_glass:3>, [[<ore:dyeLightBlue>,null,null],[null,null,null],[null,null,null]], <liquid: glass> * 144, <forestry:wax_cast>);
 ```
 
-## Wytapianie
+## Smelting Removal
 
 ```zenscript
-//mods.forestry.ThermionicFabricator.removeSmelting(ISkładniki itemInput);
+//mods.forestry.ThermionicFabricator.removeSmelting(IIngredient itemInput);
 mods.forestry.ThermionicFabricator.removeSmelting(<minecraft:sand>);
 
 ```
 
-## Dodanie do Przetapiania
+## Smelting Addition
 
-Możesz dodać każdą ciecz w grze w wyniku wytapiania, ale obecnie zalecane jest tylko `<liquid:glass>` z powodu błędów z innymi płynami.
+You can add every liquid in the game as the result of the smelting, but currently only `<liquid:glass>` is recommended due to bugs occuring with other liquids.
 
 ```zenscript
 //mods.forestry.ThermionicFabricator.addSmelting(ILiquidStack liquidStack, IItemStack itemInput, int meltingPoint);

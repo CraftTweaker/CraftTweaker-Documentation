@@ -1,18 +1,18 @@
-# Maszyny do butelek
+# Bottling Machine
 
-## Wezwanie do pakietu
+## Calling The Package
 
-Pakiet BottlingMachine można wywołać używając `mods.immersiveengineering.BottlingMachine`.
+You can call the BottlingMachine package using `mods.immersiveengineering.BottlingMachine`.
 
-## Dodaj przepis
+## Add Recipe
 
-| Wymagane | Typ     | Typ danych                                       |
-| -------- | ------- | ------------------------------------------------ |
-| Wymagane | Wyjście | [IItemstack](/Vanilla/Items/IItemStack/)         |
-| Wymagane | Input   | [Składnik](/Vanilla/Variable_Types/IIngredient/) |
-| Wymagane | Płyn    | [Fluidstack](/Vanilla/Liquids/ILiquidStack/)     |
+| Required | Type   | Data Type                                           |
+| -------- | ------ | --------------------------------------------------- |
+| Required | Output | [IItemstack](/Vanilla/Items/IItemStack/)            |
+| Required | Input  | [IIngredient](/Vanilla/Variable_Types/IIngredient/) |
+| Required | Fluid  | [Fluidstack](/Vanilla/Liquids/ILiquidStack/)        |
 
-### Przykład
+### Example
 
 ```zenscript
 //Example:
@@ -20,13 +20,13 @@ mods.immersiveengineering.BottlingMachine.addRecipe(IItemStack output, IIngredie
 mods.immersiveengineering.BottlingMachine.addRecipe(<minecraft:diamond>, <ore:logWood>, <liquid:water>);
 ```
 
-## Usuń przepis
+## Remove Recipe
 
-| Typ     | Typ danych                               |
-| ------- | ---------------------------------------- |
-| Wyjście | [IItemstack](/Vanilla/Items/IItemStack/) |
+| Type   | Data Type                                |
+| ------ | ---------------------------------------- |
+| Output | [IItemstack](/Vanilla/Items/IItemStack/) |
 
-### Przykład
+### Example
 
 ```zenscript
 //Example:

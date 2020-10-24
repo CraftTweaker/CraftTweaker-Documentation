@@ -1,29 +1,29 @@
-# 太阳中子激活器
+# Solar Neutron Activator
 
-截至Mekanism 9.7。 现在可以通过命令 `/ct mek配方solarneutronactivator` 查看太阳中子激活器的所有配方字符串。
+As of Mekanism 9.7.0 it is now possible to view all recipe strings of the Solar Neutron Activator through the command `/ct mekrecipes solarneutronactivator`
 
 ## 加
 
 ```zenscript
 mods.mekanism.solarneutronactivator.addRecipe(IGasStack gasInput, IGasStack gasOutput);
 
-mods.mekanis.solarneuactivator.addRecipe(<gas:sulfurdioxide>, <gas:sulfurtrioxide>);
+mods.mekanism.solarneutronactivator.addRecipe(<gas:sulfurdioxide>, <gas:sulfurtrioxide>);
 ```
 
-## 移除
+## Removal
 
 ```zenscript
-mods.mekanism.solarneutractivator.removeRecipe(IIngredient gasInput, @Optional IIngredient gasOutput);
+mods.mekanism.solarneutronactivator.removeRecipe(IIngredient gasInput, @Optional IIngredient gasOutput);
 
-mods.mekanism.solarneutractivator.removeRecipe(<gas:lithium>, <gas:tritium>);
+mods.mekanism.solarneutronactivator.removeRecipe(<gas:lithium>, <gas:tritium>);
 mods.mekanism.solarneutronactivator.removeRecipe(<gas:lithium>);
 ```
 
-指定输出参数只会移除从该输入产生该输出的特定配方。 忽略输出参数将删除输入项能够生成的所有配方。
+Specifying an output parameter will only remove the specific recipe that results in that output from that input. Omitting the output parameter will remove all recipes that the input item can produce.
 
-## 删除所有配方
+## Removing all recipes
 
-由于Mekanism 9.7.0，现在可以移除所有太阳中子激活器配方。 (这排除了任何通过 CraftTweaker 添加的配方
+As of Mekanism 9.7.0 it is now possible to remove all Solar Neutron Activator recipes. (This excludes any recipes added via CraftTweaker)
 
 ```zenscript
 mods.mekanism.solarneutronactivator.removeAllRecipes();

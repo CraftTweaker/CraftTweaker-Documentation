@@ -1,24 +1,24 @@
-# Мойка руды
+# Ore Washer
 
-## Пакет
+## Package
 
-`импорт mods.ic2.OreWasher;`
+`import mods.ic2.OreWasher;`
 
-## Методы
+## Methods
 
 - **[IItemStack](/Vanilla/Items/IItemStack/)[] outputs**
-- **[Ingredient](/Vanilla/Variable_Types/IIngredient/) ввод**
-- **@Optional int water** Количество воды, необходимой для одного раунда обработки этого рецепта, измеренное в мб. По умолчанию 1000 если не указано.
+- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input**
+- **@Optional int water** Amount of water required for one round of processing of this recipe, measured in mB. Default to 1000 if not given.
 
 ## Сложение
 
 ```zenscript
-mods.ic2.OreWasher.addRecipe(IItemStack[] Выход, IIngredient input, @Optional int water);
+mods.ic2.OreWasher.addRecipe(IItemStack[] outputs, IIngredient input, @Optional int water);
 
 mods.ic2.OreWasher.addRecipe([<minecraft:diamond>, <minecraft:emerald>, <minecraft:nether_star>], <minecraft:dirt>);
 ```
 
-## Удаление
+## Removal
 
-- При использовании Ic2 экспериментальный, чтобы удалить рецепт, просто удалите соответствующую строку в `config/ic2/ore_washer.ini`
-- При использовании Классических и Ic2c экстрактов для удаления рецепта просто отключите соответствующий рецепт в `config/ic2/ic2machineRecipes.json`.
+- If using Ic2 Experimental, to remove a recipe, simply remove the corresponding line in `config/ic2/ore_washer.ini`
+- If using Ic2 Classic and Ic2c Extras, to remove a recipe, simply disable the corresponding recipe in `config/ic2/ic2machineRecipes.json`.

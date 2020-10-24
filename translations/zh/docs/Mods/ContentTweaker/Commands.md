@@ -1,54 +1,54 @@
-# 命令
+# Commands
 
-ContentTinflow扩展了由CraftTweaker提供的调色板命令。  
-要访问这些命令，您的行为与您对CraftTinventer 命令的行为相同， 您使用 `/craftbinter` 前缀
+ContentTweaker extends the command palette provided by CraftTweaker.  
+To access these commands you do the same as you do for CraftTweaker commands, you use the `/crafttweaker` prefix
 
-# ContentTinfinder 命令列表
+# List of ContentTweaker Commands
 
-## 块材料
+## blockmaterial
 
-用法：
+Usage:
 
 `/crafttweaker blockmaterial`
 
-`/ct 块材料`
+`/ct blockmaterial`
 
-描述：
+Description:
 
-将游戏中所有方块材料的列表导出到 crafttweaper.log 文件。
+Outputs a list of all the block materials in the game to the crafttweaker.log file.
 
-## 创建标签
+## creativetab
 
-用法：
+Usage:
 
 `/crafttweaker creativetab`
 
-`/ctt 创建标签`
+`/ct creativetab`
 
-描述：
+Description:
 
-将游戏中所有创造性选项卡的列表导出到craftweaker.log 文件。
+Outputs a list of all the creative tabs in the game to the crafttweaker.log file.
 
-## 音频转发器
+## soundevent
 
-用法：
+Usage:
 
-`/craftbinder soundevent`
+`/crafttweaker soundevent`
 
 `/ct soundevent`
 
-描述：
+Description:
 
-将游戏中所有声音事件的列表导出到 craftminstrer.log 文件。
+Outputs a list of all the sound events in the game to the crafttweaker.log file.
 
-## 声音类型
+## soundtype
 
-用法：
+Usage:
 
-`/craftbelower 声音类型`
+`/crafttweaker soundtype`
 
-`/ct 声音类型`
+`/ct soundtype`
 
-描述：
+Description:
 
-将游戏中所有声音类型的列表导出到craftminstrer.log 文件。
+Outputs a list of all the sound types in the game to the crafttweaker.log file.

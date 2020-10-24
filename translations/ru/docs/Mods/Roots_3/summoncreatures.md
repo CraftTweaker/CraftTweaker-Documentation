@@ -2,15 +2,15 @@
 ### Класс
 
 ```zenscript
-импорт mods.roots.SummonCreatures;
+import mods.roots.SummonCreatures;
 ```
 
-#### Методы
+#### Methods
 
 ```zenscript
 void addEntity(
-  IEntityDefinition сущность, // сущность, которая будет вызвана
-  IIngredient[] ingredients // список ингредиентов, используемых для вызвания
+  IEntityDefinition entity, // the entity to be summoned
+  IIngredient[] ingredients // a list of ingredients used for the summoning
 );
 ```
 
@@ -20,7 +20,7 @@ void addEntity(
 
 ```zenscript
 void removeEntity(
-  IEntityDefinition entity // entity to remove from summoning via recipe
+  IEntityDefinition entity // the entity to remove from summoning via recipe
 );
 ```
 
@@ -30,7 +30,7 @@ void removeEntity(
 
 ```zenscript
 void removeLifeEssence(
-  IEntityDefinition entity // сущность для удаления жизненной сущности для
+  IEntityDefinition entity // the entity to remove life essence for
 );
 ```
 
@@ -40,7 +40,7 @@ void removeLifeEssence(
 
 ```zenscript
 void addLifeEssence(
-  IEntityDefinition entity // entity to add life essence for
+  IEntityDefinition entity // the entity to add life essence for
 );
 ```
 
@@ -61,20 +61,20 @@ void clearLifeEssence();
 ```zenscript
 import mods.roots.SummonCreatures;
 
-// Очистить все автоматически сгенерированные Life Essences added by
-// карта Живого Урока
-SummonCreatures. learLifeEssence();
+// Clear all automatically generated Life Essences added by
+// the Animal Harvest map
+SummonCreatures.clearLifeEssence();
 
-// Добавить рецепт, чтобы вызвать курицу, используя 3 предмета
-SummonCreatures. ddEntity(<entity:minecraft:chicken>, [<minecraft:wheat_seeds>, <minecraft:wheat>, <ore:ingotIron>]);
+// Add a recipe to summon a Chicken using 3 items
+SummonCreatures.addEntity(<entity:minecraft:chicken>, [<minecraft:wheat_seeds>, <minecraft:wheat>, <ore:ingotIron>]);
 
-// Удаляем эндермен, добавляемый примером "Животный урожай"
-// из списка Life Essence (предполагая, что он не был очищен)
-SummonCreatures. emoveLifeEssence(<entity:minecraft:enderman>);
+// Remove the enderman added by the Animal Harvest example
+// from the Life Essence list (presuming it hasn't been cleared)
+SummonCreatures.removeLifeEssence(<entity:minecraft:enderman>);
 
-// Вручную добавляем возможность сброса жизненной сути для Денежного дракона
-Суммонических существ. ddLifeEssence(<entity:minecraft:ender_dragon>);
+// Manually add a life-essence drop capability for an ender dragon
+SummonCreatures.addLifeEssence(<entity:minecraft:ender_dragon>);
 
-// Удаляем рецепт по умолчанию для коров
+// Remove the default recipe for cows
 SummonCreatures.removeEntity(<entity:minecraft:cow>);
 ```

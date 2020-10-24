@@ -1,32 +1,32 @@
-# Manejador de brazaletes de Daño
+# DamageSource Bracket Handler
 
-El Manejador de Bracket Origen Daño te permite referirte a [IDamageSources](/Vanilla/Damage/IDamageSource/) en el juego.
+The Damage Source Bracket Handler allows you to refer to [IDamageSources](/Vanilla/Damage/IDamageSource/) in the game.
 
-Si la fuente de daño no es una de las predefinidas, creará una nueva con el nombre dado.
+If the Damage source is not one of the predefined ones, this will create a new one with the given name.
 
 <details>
-    <summary>Tipos de Fuente de Daño Preegurado</summary>
+    <summary>Preregistered Damage Source Types</summary>
     <ul>
         <li>IN_FIRE</li>
-        <li>IGHTNING_LABEL</li>
-        <li>ON_FIRE_DESC</li>
+        <li>LIGHTNING_BOLT</li>
+        <li>ON_FIRE</li>
         <li>LAVA</li>
         <li>HOT_FLOOR</li>
         <li>IN_WALL</li>
-        <li>CRAMING</li>
-        <li>DESARROLLO</li>
-        <li>INICIAR</li>
+        <li>CRAMMING</li>
+        <li>DROWN</li>
+        <li>STARVE</li>
         <li>CACTUS</li>
         <li>FALL</li>
-        <li>FLY_INT_WALL</li>
-        <li>Malla</li>
+        <li>FLY_INTO_WALL</li>
+        <li>OUT_OF_WORLD</li>
         <li>GENERIC</li>
-        <li>MÁGICO</li>
-        <li>SEGURO</li>
+        <li>MAGIC</li>
+        <li>WITHER</li>
         <li>ANVIL</li>
-        <li>Bloque</li>
-        <li>DRAGON</li>
-        <li>ARCHIVOS</li>
+        <li>FALLING_BLOCK</li>
+        <li>DRAGON_BREATH</li>
+        <li>FIREWORKS</li>
     </ul>
 </details>
 

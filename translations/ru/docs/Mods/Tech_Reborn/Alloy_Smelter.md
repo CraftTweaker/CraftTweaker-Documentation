@@ -1,16 +1,16 @@
-# Металлургический сплав
+# Alloy Smelter
 
-## Импортирование пакета
-`mods.techreborn.alloyPlelter`
+## Importing the Package
+`mods.techreborn.alloySmelter`
 
-## Добавление рецептов
+## Adding Recipes
 ```zenscript
-mods.techreborn.alloySmelter.addRecipe(IItemStack, IIngredient input1, IIngredient input2, int ticktime, int euTick);
+mods.techreborn.alloySmelter.addRecipe(IItemStack output, IIngredient input1, IIngredient input2, int ticktime, int euTick);
 ```
 
-## Удаление рецептов
+## Removing Recipes
 ```zenscript
-mods.techreborn.alloySmelter.removeInputRecipe(IIngredient ingredientB);
-mods.techreborn.alloySmelter.removeRecipe(выход IItemStack);
+mods.techreborn.alloySmelter.removeInputRecipe(IIngredient ingredientA, IIngredient ingredientB);
+mods.techreborn.alloySmelter.removeRecipe(IItemStack output);
 mods.techreborn.alloySmelter.removeAll();
 ```

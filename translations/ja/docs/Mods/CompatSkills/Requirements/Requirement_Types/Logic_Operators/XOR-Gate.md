@@ -1,10 +1,10 @@
 # XOR Operator
 
-**XOR** ゲートは、2 つの入力を組み合わせて、 `TRUE` を返します。入力の 1 つが `TRUE` で、もう一方が `FALSE` である場合に限ります。
+An **XOR** gate combines two inputs and returns `TRUE` only if one of the inputs is `TRUE` and the other is `FALSE`.
 
-| Input 1 | Input 2 | 出力 |
-| ------- | ------- | --:|
-| 0       | 0       |  0 |
-| 0       | 1       |  1 |
-| 1       | 0       |  1 |
-| 1       | 1       |  0 |
+| Input 1 | Input 2 | Output |
+| ------- | ------- | ------:|
+| 0       | 0       |      0 |
+| 0       | 1       |      1 |
+| 1       | 0       |      1 |
+| 1       | 1       |      0 |

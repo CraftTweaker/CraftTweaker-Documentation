@@ -1,24 +1,24 @@
-# Оператор NOR
+# NOR Operator
 
-**NOR** ворота являются обратными **ИЛИ** воротами. Это то же самое, что и использование вывода **ИЛИ** ворот в качестве входного элемента **НЕ** ворот. Это означает, что **NOR** ворота возвращают `TRUE` только тогда, когда оба входа `ЗАГРУЗКИ`.
+A **NOR** gate is an inverted **OR** gate. This is the same as using the output of the **OR** gate as the input to the **NOT** gate. This means that the **NOR** gate returns `TRUE` only when both inputs are `FALSE`.
 
-| Input 1 | Input 2 | Вывод |
-| ------- | ------- | -----:|
-| 0       | 0       |     1 |
-| 0       | 1       |     0 |
-| 1       | 0       |     0 |
-| 1       | 1       |     0 |
+| Input 1 | Input 2 | Output |
+| ------- | ------- | ------:|
+| 0       | 0       |      1 |
+| 0       | 1       |      0 |
+| 1       | 0       |      0 |
+| 1       | 1       |      0 |
 
-    Пустой Пример:
+    Empty Example:
     nor|[]~[]
     
-    Заполнил Пример:
+    Filled-In Example:
     nor|[reskillable:mining|5]~[reskillable:gathering|5]
     
 
-## Вариант использования
+## Use-Case
 
-Можно использовать только деревянную лопату до тех пор, пока игрок не начнет добывать или собирать 5:
+Only allow using a wooden shovel until the player gets mining or gathering level 5:
 
 ```zenscript
 addRequirement(<minecraft:wooden_shovel:*>, "nor|[reskillable:mining|5]~[reskillable:gathering|5]");

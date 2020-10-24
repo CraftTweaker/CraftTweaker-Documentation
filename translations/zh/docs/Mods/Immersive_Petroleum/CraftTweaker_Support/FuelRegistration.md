@@ -1,6 +1,6 @@
-# 燃料注册
+# Fuel Registration
 
-## 摩托船
+## Motorboat
 
 ### registerMotorboatFuel
 
@@ -9,14 +9,14 @@
 | 输入   | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
 | mB/t | 整型                                           |
 
-#### 代码示例：
+#### Code Example:
 
 ```zenscript
-mods.immersivepetolleum.Motorboat.registerMotorboatFuel(ILiquidStack fuel Entry,int mbPerTick)；
-mods.immersivepetroleum.Motorboat.registerMotorboatFuel(<liquid:water>,5)；
+mods.immersivepetroleum.Motorboat.registerMotorboatFuel(ILiquidStack fuelEntry, int mbPerTick);
+mods.immersivepetroleum.Motorboat.registerMotorboatFuel(<liquid:water>, 5);
 ```
 
-## 便携式生成器
+## Portable Generator
 
 ### registerPortableGenFuel
 
@@ -26,7 +26,7 @@ mods.immersivepetroleum.Motorboat.registerMotorboatFuel(<liquid:water>,5)；
 | Flux/t | 整型                                           |
 | mB/t   | 整型                                           |
 
-#### 代码示例：
+#### Code Example:
 
 ```zenscript
 mods.immersivepetroleum.PortableGenerator.registerPortableGenFuel(ILiquidStack fuelEntry, int fluxPerTick, int mbPerTick);

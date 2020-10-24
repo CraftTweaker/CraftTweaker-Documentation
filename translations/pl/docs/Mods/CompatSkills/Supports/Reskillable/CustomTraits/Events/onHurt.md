@@ -1,12 +1,12 @@
-### crwdns74545:0crwdne74545:0
+### onHurt
 
-| Ustawienie/Getter/Metoda   | Nazwy metod        | Nazwisko              | Input/Output                                           |
-|:-------------------------- |:------------------ |:--------------------- | ------------------------------------------------------ |
-| crwdns74646:0crwdne74646:0 | getDamageSource(); | Źródło uszkodzenia(); | Zwraca [IDamageSource](/Vanilla/Damage/IDamageSource/) |
-| crwdns74646:0crwdne74646:0 | getAmount();       | kwota();              | Zwraca zmienną                                         |
+| Setter/Getter/Method | Method Names       | Names           | Input/Output                                               |
+|:-------------------- |:------------------ |:--------------- | ---------------------------------------------------------- |
+| Getter               | getDamageSource(); | damageSource(); | Returns an [IDamageSource](/Vanilla/Damage/IDamageSource/) |
+| Getter               | getAmount();       | amount();       | Returns an Float                                           |
 
-    test var = mods.compatskills.TraitCreator.createTrait("test", 2, 3, "compatskills:banana", 1, "compatskills:banana|5");
+    var test = mods.compatskills.TraitCreator.createTrait("test", 2, 3, "compatskills:banana", 1, "compatskills:banana|5");
     
     test.onHurt = function(event as crafttweaker.event.EntityLivingHurtEvent) {
-    ...
+        ...
     };

@@ -1,17 +1,17 @@
-# Скорость Разрушения II
+# IItemDestroySpeed
 
-Функция IItemDestroySpeed можно добавить к [предмету](/Mods/ContentTweaker/Vanilla/Creatable_Content/Item/) и определить скорость разрушения предмета.
+The IItemDestroySpeed function can be added to an [Item](/Mods/ContentTweaker/Vanilla/Creatable_Content/Item/) and will determine the item's block breaking speed.
 
 ## Импорт пакета
 
-Возможно, вам потребуется импортировать пакет, если вы столкнетесь с какими-либо проблемами, так что лучше быть безопасным чем извините и добавьте импорт.  
-`импорт mods.contenttweaker.IItemDestroySpeed;`
+It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
+`import mods.contenttweaker.IItemDestroySpeed;`
 
-## Параметры
+## Parameters
 
-IItemDestroySpeed является функцией со следующими параметрами:
+The IItemDestroySpeed is a function with the following parameters:
 
-- [IMutableItemStack](/Mods/ContentTweaker/Vanilla/Types/Item/IMutableItemStack/) mutableStack → предмет.
-- [ICTBlockState](/Mods/ContentTweaker/Vanilla/Types/Block/ICTBlockState/) blockState → Состояние добываемого блока.
+- [IMutableItemStack](/Mods/ContentTweaker/Vanilla/Types/Item/IMutableItemStack/) mutableItemStack → The item.
+- [ICTBlockState](/Mods/ContentTweaker/Vanilla/Types/Block/ICTBlockState/) blockState → The state of the block that is being mined.
 
-Функция должна возвращать плавающее значение.
+The function needs to return a float value.

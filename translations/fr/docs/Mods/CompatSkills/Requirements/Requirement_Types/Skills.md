@@ -1,12 +1,12 @@
-# Compétences:
+# Skills:
 
-Les Compétences aux côtés des Avancements étaient l'un des types de verrous originaux ajoutés par Compétences et ont depuis été affinés pour soutenir d'autres mods en ajoutant plus de Compétences. La Syntaxe des Compétences est la suivante:
+Skills alongside Advancements was one of the original lock types added by Skillable and has since then been refined to support other mods adding more Skills. The Skill Syntax is as follows:
 
-    Exemple:
-    RessourceLocation|Niveau
+    Example:
+    ResourceLocation|Level
     
-    Exemple de travail :
+    Working Example:
     reskillable:building|15
     
 
-Depuis la publication de Reskillable, nous sommes passés d'un système de noms de compétences à un système de noms de ressources. Cela permet à plusieurs compétences d'ajouter des compétences avec le même nom interne mais des identifiants de mods différents pour l'emplacement des ressources. You can find the Skill's ResourceLocations under: [Skills & Traits](/Mods/CompatSkills/Requirements/Skills_Traits/)
+Since the release of Reskillable we've moved from a skill name system to a resource location name system. This allows for several skills to add skills with the same internal name but different mod id's for the Resource Location. You can find the Skill's ResourceLocations under: [Skills & Traits](/Mods/CompatSkills/Requirements/Skills_Traits/)

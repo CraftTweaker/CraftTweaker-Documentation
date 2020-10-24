@@ -1,16 +1,16 @@
-# 燃料处理器
+# Fuel Reprocessor
 
-## 导入软件包
-`nuclearcraft.fuel_reprocessor`
+## Importing the Package
+`mods.nuclearcraft.fuel_reprocessor`
 
-## 添加配方
+## Adding Recipes
 ```zenscript
-mods.nuclearcraft.fuel_reprocessor.addRecipe([itemInput, itemOutt1, itemOutput2, itemOut3itemOutput4, @Optional double timeMultiplier, @Opinion double processRadiation]);
+mods.nuclearcraft.fuel_reprocessor.addRecipe([itemInput, itemOutput1, itemOutput2, itemOutput3, itemOutput4, @Optional double timeMultiplier, @Optional double powerMultiplier, @Optional double processRadiation]);
 ```
 
-## 删除配方
+## Removing Recipes
 ```zenscript
-mods.nuclearcraft.fuel_reprocessor.removeRecipeWidInput([itemInput]);
-mods.nuclearcraft.fuel_reprocessor.removeRecipeWOutput([itemOutput1, itemOutput2, itemOutput3, itemOutput4]);
+mods.nuclearcraft.fuel_reprocessor.removeRecipeWithInput([itemInput]);
+mods.nuclearcraft.fuel_reprocessor.removeRecipeWithOutput([itemOutput1, itemOutput2, itemOutput3, itemOutput4]);
 mods.nuclearcraft.fuel_reprocessor.removeAllRecipes();
 ```

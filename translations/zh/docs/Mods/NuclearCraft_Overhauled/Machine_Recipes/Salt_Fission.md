@@ -1,17 +1,17 @@
-# 盐度
-**注： 部分损坏**
+# Salt Fission
+**Note: Partially Broken**
 
-## 导入软件包
-`nuclearcraft。盐度`
+## Importing the Package
+`mods.nuclearcraft.SaltFission`
 
-## 添加配方
+## Adding Recipes
 ```zenscript
-nuclearcraft。SaltFission.addRecipe(ILiquidStack fluidInput, ILiquidStack fluidOutput, two baseTime, two basePower, @Optional double processRadiation);
+mods.nuclearcraft.SaltFission.addRecipe(ILiquidStack fluidInput, ILiquidStack fluidOutput, double baseTime, double basePower, @Optional double processRadiation);
 ```
 
-## 删除配方
+## Removing Recipes
 ```zenscript
-nuclearcraft。SaltFission.removeRecipeWidInput(ILiquidStack fluidInput);
-mods.nuclearcraft.SaltFission.removeRecipeWOutput(ILiquidStack fluidOut)；
-mods.nuclearcraft。SaltFission.removeAllRecipes();
+mods.nuclearcraft.SaltFission.removeRecipeWithInput(ILiquidStack fluidInput);
+mods.nuclearcraft.SaltFission.removeRecipeWithOutput(ILiquidStack fluidOutput);
+mods.nuclearcraft.SaltFission.removeAllRecipes();
 ```

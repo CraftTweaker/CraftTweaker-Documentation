@@ -1,24 +1,24 @@
-# Tick gracza
+# PlayerTick
 
-Wydarzenie Tick Gracza jest uruchamiane po każdym zaznaczeniu dla każdego gracza.
+The PlayerTick Event is fired each tick for each player.
 
-## Klasa wydarzenia
+## Event Class
 
-Musisz aktywować wydarzenie w nagłówku funkcji jako klasa:  
-`crafttweaker.event. layerTickEvent`  
-Możesz oczywiście również [zaimportować](/AdvancedFunctions/Import/) klasę przed i wtedy użyć tej nazwy.
+You will need to cast the event in the function header as this class:  
+`crafttweaker.event.PlayerTickEvent`  
+You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
 
-## Rozszerzenia interfejsu zdarzenia
+## Event interface extensions
 
-Zdarzenia PlayerTick zaimplementują następujące interfejsy i są w stanie wywołać wszystkie swoje metody/getters/setters:
+PlayerTick Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
 
-- [Wydarzenie IPlayer](/Vanilla/Events/Events/IPlayerEvent/)
+- [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
 
 ## ZenGetters
 
-Z wydarzenia można uzyskać następujące informacje:
+The following information can be retrieved from the event:
 
-| ZenGetter | Typ zwrotu                           |
+| ZenGetter | Return Type                          |
 | --------- | ------------------------------------ |
-| `gracz`   | [IPlayer](/Vanilla/Players/IPlayer/) |
-| `Faza`    | ciąg znaków                          |
+| `player`  | [IPlayer](/Vanilla/Players/IPlayer/) |
+| `phase`   | string                               |

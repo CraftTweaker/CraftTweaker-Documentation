@@ -1,29 +1,29 @@
-# Młot parowy
+# Steam Hammer
 
-Steam Hammer to maszyna, która przekształca dwa wejścia w element wyjściowy za pomocą pary.
+The Steam Hammer is a machine that converts two input items into an output item using steam.
 
-## Pakiet
+## Package
 `mods.steamagerevolution.SteamHammer`.
 
-## Metody
+## Methods
 
-- **[IItemStack](/Vanilla/Items/IItemStack/) wyjście** wynik przepisu.
-- **[IItemStack](/Vanilla/Items/IItemStack/) wejście** Wprowadzenie przepisu.
-- **int craftTime** Czas tworzenia maszyny do przetworzenia
-- **int SteamCost** Koszt Steam dla maszyny do przetworzenia
+- **[IItemStack](/Vanilla/Items/IItemStack/) output** The result of the recipe.
+- **[IItemStack](/Vanilla/Items/IItemStack/) input** The input of the recipe.
+- **int craftTime** Crafting time for machine to process
+- **int steamCost** Cost of Steam for machine to process
 
-## Dodanie
+## Addition
 
 ```zenscript
-mods.steamagerevolution.SteamHammer.addRecipe(IIngredient inputt, IIngredient input, IItemStack output, int craftTime, int steamCost);
+mods.steamagerevolution.SteamHammer.addRecipe(IIngredient input, IIngredient input, IItemStack output, int craftTime, int steamCost);
 mods.steamagerevolution.SteamHammer.addRecipe(<ore:ingotIron>, <ore:ingotIron>, <ore:plateIron>.firstItem, 200, 200);
 ```
 
 
-## Usuwanie
+## Removal
 
 ```zenscript
-mods.steamagerevolution.SteamHammer.removeRecipe(wyjście IItemStack);
+mods.steamagerevolution.SteamHammer.removeRecipe(IItemStack output);
 mods.steamagerevolution.SteamHammer.removeRecipe(<ore:plateIron>.firstItem);
 
 mods.steamagerevolution.SteamHammer.removeAll();

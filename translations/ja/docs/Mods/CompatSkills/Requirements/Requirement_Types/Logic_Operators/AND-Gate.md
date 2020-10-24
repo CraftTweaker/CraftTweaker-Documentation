@@ -1,15 +1,15 @@
-# AND 演算子
+# AND Operator
 
 An **AND** gate combines two inputs and returns `TRUE` only if both inputs are also `TRUE`.
 
-| Input 1 | Input 2 | 出力 |
-| ------- | ------- | --:|
-| 0       | 0       |  0 |
-| 0       | 1       |  0 |
-| 1       | 0       |  0 |
-| 1       | 1       |  1 |
+| Input 1 | Input 2 | Output |
+| ------- | ------- | ------:|
+| 0       | 0       |      0 |
+| 0       | 1       |      0 |
+| 1       | 0       |      0 |
+| 1       | 1       |      1 |
 
-他のロジック要件とは異なり、AND要件は主にネストされたロジック要件に役立ちます。 複数の要件を持つアイテムや他のオブジェクトをロックするためには、特定の要件をすべて満たす必要があります。 これはAND機能と同じですので、可能な場合は使用してください。 ツールチップを読みやすくするためです
+The AND requirement unlike the other logic requirements is mainly useful for nested logic requirements, as locking an item or other object with multiple requirements requires all of the given requirements to be met. This is the same as the AND functionality, so should be used when possible, as it will make the tooltip be formatted in an easier to read manner.
 
-    例:
+    Empty Example:
     AND|[]~[]

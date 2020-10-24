@@ -1,27 +1,27 @@
-# Блок разливки
+# Casting Block
 
-Заливной блок - это машина, которая преобразует входную жидкость в выходной элемент.
+The Casting Block is a machine that converts an input fluid into an output item.
 
-## Пакет
+## Package
 `mods.steamagerevolution.CastingBlock`
 
-## Методы
+## Methods
 
-- **[IItemStack](/Vanilla/Items/IItemStack/) output** Результат рецепта.
-- **[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) ввода** Ввод рецепта.
-- **int Time** время создания машины для обработки
+- **[IItemStack](/Vanilla/Items/IItemStack/) output** The result of the recipe.
+- **[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) input** The input of the recipe.
+- **int craftTime** Crafting time for machine to process
 
 ## Сложение
 
 ```zenscript
-mods.steamagerevolution.CastingBlock.addRecipe(ILiquidStack input, IItemStack, int craftTime);
+mods.steamagerevolution.CastingBlock.addRecipe(ILiquidStack input, IItemStack output, int craftTime);
 mods.steamagerevolution.CastingBlock.addRecipe(<liquid:lava>*1000, <minecraft:obsidian>, 200);
 ```
 
-## Удаление
+## Removal
 
 ```zenscript
-mods.steamagerevolution.CastingBlock.removeRecipe(выход IItemStack);
+mods.steamagerevolution.CastingBlock.removeRecipe(IItemStack output);
 mods.steamagerevolution.CastingBlock.removeRecipe(<minecraft:iron_block>);
 
 mods.steamagerevolution.CastingBlock.removeAll();

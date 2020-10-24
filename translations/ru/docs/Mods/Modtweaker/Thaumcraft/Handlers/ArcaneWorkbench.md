@@ -1,33 +1,33 @@
-# Мистический верстак
+# Arcane Workbench
 
-Этот пакет позволяет добавлять и удалять рецепты в/из Arcane Workbench.
+This package allows you to add and remove recipes to/from the Arcane Workbench.
 
 ## Импорт пакета
 
-Вы можете [импортировать](/AdvancedFunctions/Import/) пакет и его методы для облегчения извлечения методов.
+You can [import](/AdvancedFunctions/Import/) the package and its methods to facilitate the retrival of the methods.
 
 ```zenscript
 import mods.thaumcraft.ArcaneWorkbench;
 ```
 
-## Добавление рецептов
+## Adding recipes
 
 ```zenscript
-//mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe(String name, String research, int vis, CTAspectStack[] aspectList, IItemStack outpuput, IIngredient[][] input);
-mods. haumcraft.ArcaneWorkbench. egisterShapedRecipe("test", "", 20, [<aspect:aer>, <aspect:ignis>, <aspect:terra>], <minecraft:diamond>, [[<minecraft:dirt>], [<minecraft:stick>], [<minecraft:grass>]);
+//mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe(String name, String research, int vis, CTAspectStack[] aspectList, IItemStack output, IIngredient[][] input);
+mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("test", "", 20, [<aspect:aer>, <aspect:ignis>, <aspect:terra>], <minecraft:diamond>, [[<minecraft:dirt>], [<minecraft:stick>], [<minecraft:grass>]]);
 
 
-//моды. haumcraft.ArcaneWorkbench.registerShapelessRecipe(String name, String research, int vis, CTAspectStack[] aspectList, IItemStack outpuput, IIngredient[] input);
-mods. haumcraft.ArcaneWorkbench.registerShapelessRecipe("тесты", "", 20, [<aspect:aqua>, <aspect:ignis>, <aspect:terra>], <minecraft:diamond>, [<minecraft:sand>, <minecraft:stick>, <minecraft:grass>]);
+//mods.thaumcraft.ArcaneWorkbench.registerShapelessRecipe(String name, String research, int vis, CTAspectStack[] aspectList, IItemStack output, IIngredient[] input);
+mods.thaumcraft.ArcaneWorkbench.registerShapelessRecipe("tests", "", 20, [<aspect:aqua>, <aspect:ignis>, <aspect:terra>], <minecraft:diamond>, [<minecraft:sand>, <minecraft:stick>, <minecraft:grass>]);
 ```
 
-## Удаление рецептов
+## Removing recipes
 
 ```zenscript
 //mods.thaumcraft.ArcaneWorkbench.removeRecipe(String name);
 mods.thaumcraft.ArcaneWorkbench.removeRecipe("recipeName");
 
 
-//mods.thaumcraft.ArcaneWorkbench.removeRecipe(IItemStack);
+//mods.thaumcraft.ArcaneWorkbench.removeRecipe(IItemStack output);
 mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumcraft:goggles>);
 ```

@@ -1,15 +1,15 @@
 # IEntityXp
 
-Stellt eine XP Orb in der Welt dar.
+Represents an XP Orb in the world.
 
 ## Dieses Paket importieren
 
-Möglicherweise ist es erforderlich, dass Sie das Paket importieren, wenn Sie irgendwelche Probleme haben (z.B. [Array](/AdvancedFunctions/Arrays_and_Loops/)), also besser sicher sein als bedauern und fügen Sie den Import.  
-`importiere crafttweaker.entity.IEntityXp;`
+It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
+`import crafttweaker.entity.IEntityXp;`
 
-## [IEntität wird erweitert](/Vanilla/Entities/IEntity/)
+## Extending [IEntity](/Vanilla/Entities/IEntity/)
 
-IEntityXp erweitert [IEntity](/Vanilla/Entities/IEntity/). Das bedeutet, dass alle Funktionen, die [IEntities](/Vanilla/Entities/IEntity/) zur Verfügung stehen, auch für IEntityX verfügbar sind.
+IEntityXp extends [IEntity](/Vanilla/Entities/IEntity/). That means all functions available to [IEntities](/Vanilla/Entities/IEntity/) also are available to IEntityXp.
 
 ## ZenGetter
 

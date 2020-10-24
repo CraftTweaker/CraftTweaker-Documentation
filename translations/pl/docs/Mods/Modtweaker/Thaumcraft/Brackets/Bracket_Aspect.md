@@ -1,8 +1,8 @@
-# Obsługa wspornika aspektów
+# Aspect Bracket handler
 
-Aspekt Handler pozwala Ci pobrać Thaumcraft [Aspect Stack](/Mods/Modtweaker/Thaumcraft/Aspects/CTAspectStack/) na wypadek potrzeby.
+The aspect Bracket Handler allows you to retrieve a Thaumcraft [Aspect Stack](/Mods/Modtweaker/Thaumcraft/Aspects/CTAspectStack/) in case you need one.
 
-Aspekty są przywoływane w uchwycie Aspektu w ten sposób:
+Aspects are referenced in the Aspect Bracket handler this way:
 
 ```zenscript
 <aspect:name>

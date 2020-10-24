@@ -41,6 +41,7 @@ The ZenMethods would be what you'll need to call on `events`, the Event Class wo
 | onBlockHarvestDrops             | [`crafttweaker.event.BlockHarvestDrops`](/Vanilla/Events/Events/BlockHarvestDrops/)                        |
 | onBlockPlace                    | [`crafttweaker.event.BlockPlaceEvent`](/Vanilla/Events/Events/BlockPlace/)                                 |
 | onCheckSpawn                    | [`crafttweaker.event.EntityLivingExtendedSpawnEvent`](/Vanilla/Events/Events/EntityLivingSpawn/)           |
+| onClientTick                    | [`crafttweaker.event.ClientTickEvent`](/Vanilla/Events/Events/ClientTick/)                                 |
 | onCommand                       | [`crafttweaker.event.CommandEvent`](/Vanilla/Events/Events/CommandEvent/)                                  |
 | onCriticalHit                   | [`crafttweaker.event.CriticalHitEvent`](/Vanilla/Events/Events/CriticalHit/)                               |
 | onCropGrowPost                  | [`crafttweaker.event.CropGrowPostEvent`](/Vanilla/Events/Events/CropGrowPost/)                             | 
@@ -73,13 +74,14 @@ The ZenMethods would be what you'll need to call on `events`, the Event Class wo
 | onItemToss                      | [`crafttweaker.event.ItemTossEvent`](/Vanilla/Events/Events/ItemToss/)                                     |
 | onLivingDestroyBlock            | [`crafttweaker.event.LivingDestroyBlockEvent`](/Vanilla/Events/Events/LivingDestroyBlock/)                 |
 | onLivingExperienceDrop          | [`crafttweaker.event.LivingExperienceDropEvent`](/Vanilla/Events/Events/LivingExperienceDrop/)             |
-| onLivingKockBack                | [`crafttweaker.event.LivingKnockBackEvent`](/Vanilla/Events/Events/LivingKnockBack/)                       |
+| onLivingKnockBack                | [`crafttweaker.event.LivingKnockBackEvent`](/Vanilla/Events/Events/LivingKnockBack/)                       |
 | onLootingLevel                  | [`crafttweaker.event.LootingLevelEvent`](/Vanilla/Events/Events/LootingLevel/)                             |
 | onMinecartCollision             | [`crafttweaker.event.MinecartCollisionEvent`](/Vanilla/Events/Events/MinecartCollision/)                   |
 | onMinecartInteract              | [`crafttweaker.event.MinecartInteractEvent`](/Vanilla/Events/Events/MinecartInteract/)                     |
 | onMobGriefing                   | [`crafttweaker.event.MobGriefingEvent`](/Vanilla/Events/Events/MobGriefing/)                               |
 | onPlayerAdvancement             | [`crafttweaker.event.PlayerAdvancement`](/Vanilla/Events/Events/PlayerAdvancement/)                        |
-| onPlayerAnvilRepair             | [`crafttweaker.event.PlayerAnvilRepair`](/Vanilla/Events/Events/PlayerAnvilRepair/)                        |
+| onPlayerAnvilRepair             | [`crafttweaker.event.PlayerAnvilRepairEvent`](/Vanilla/Events/Events/PlayerAnvilRepair/)                   |
+| onPlayerAnvilUpdate             | [`crafttweaker.event.PlayerAnvilUpdateEvent`](/Vanilla/Events/Events/PlayerAnvilUpdate/)                   |
 | onPlayerAttackEntity            | [`crafttweaker.event.PlayerAttackEntityEvent`](/Vanilla/Events/Events/PlayerAttackEntity/)                 |
 | onPlayerBonemeal                | [`crafttweaker.event.PlayerBonemealEvent`](/Vanilla/Events/Events/PlayerBonemeal/)                         |
 | onPlayerBreakSpeed              | [`crafttweaker.event.PlayerBreakSpeed`](/Vanilla/Events/Events/PlayerBreakSpeed/)                          |
@@ -113,9 +115,12 @@ The ZenMethods would be what you'll need to call on `events`, the Event Class wo
 | onProjectileImpactArrow         | [`crafttweaker.event.ProjectileImpactArrowEvent`](/Vanilla/Events/Events/ProjectileImpactArrow/)           |
 | onProjectileImpactFireball      | [`crafttweaker.event.ProjectileImpactFireballEvent`](/Vanilla/Events/Events/ProjectileImpactFireball/)     |
 | onProjectileImpactThrowable     | [`crafttweaker.event.ProjectileImpactThrowableEvent`](/Vanilla/Events/Events/ProjectileImpactThrowable/)   |
+| onRenderTick                    | [`crafttweaker.event.RenderTickEvent`](/Vanilla/Events/Events/RenderTick/)                                 |
+| onServerTick                    | [`crafttweaker.event.ServerTickEvent`](/Vanilla/Events/Events/ServerTick/)                                 |
 | onSleepingLocationCheck         | [`crafttweaker.event.SleepingLocationCheckEvent`](/Vanilla/Events/Events/SleepingLocationCheck/)           |
 | onSleepingTimeCheck             | [`crafttweaker.event.SleepingTimeCheckEvent`](/Vanilla/Events/Events/SleepingTimeCheck/)                   |
 | onSpecialSpawn                  | [`crafttweaker.event.EntityLivingExtendedSpawnEvent`](/Vanilla/Events/Events/EntityLivingSpawn/)           |
+| onWorldTick                     | [`crafttweaker.event.WorldTickEvent`](/Vanilla/Events/Events/WorldTick/)                                   |
 
 
 ## Clear all event handlers

@@ -1,28 +1,28 @@
 # ICommandSender
 
-Interfejs ICommandSender jest używany jako baza każdej jednostki, a także inne typy w CraftTweaker.  
-Każdy [IEntity](/Vanilla/Entities/IEntity/) i [IPlayer](/Vanilla/Players/IPlayer/) to implementuje!
+The ICommandSender interface is used the base of each Entity and also some other types in CraftTweaker.  
+Each [IEntity](/Vanilla/Entities/IEntity/) and [IPlayer](/Vanilla/Players/IPlayer/) implements this!
 
-## Importowanie pakietu
+## Importing the package
 
-Może być wymagane zaimportowanie pakietu, jeśli napotkasz jakiekolwiek problemy (takie jak przesyłanie [Array](/AdvancedFunctions/Arrays_and_Loops/)), tak aby były bezpieczne niż przepraszamy i dodaj import.  
-`zaimportuj crafttweaker.command.ICommandSender;`
+It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
+`import crafttweaker.command.ICommandSender;`
 
 ## ZenGetter
 
-| ZenGetter          | Typ zwrotu                             |
-| ------------------ | -------------------------------------- |
-| nazwa wyświetlacza | ciąg znaków                            |
-| pozycja            | [IBlockPos](/Vanilla/World/IBlockPos/) |
-| świat              | [IWorld](/Vanilla/World/IWorld/)       |
-| serwer             | [IServer](/Vanilla/Game/IServer/)      |
+| ZenGetter   | Return Type                            |
+| ----------- | -------------------------------------- |
+| displayName | string                                 |
+| position    | [IBlockPos](/Vanilla/World/IBlockPos/) |
+| world       | [IWorld](/Vanilla/World/IWorld/)       |
+| server      | [IServer](/Vanilla/Game/IServer/)      |
 
-## Metody ZenMethods
+## ZenMethods
 
-#### Wyślij wiadomość
+#### Send Message
 
-Zajmuje ciąg znaków. Zwraca unieważnienie (nie ma znaczenia).
+Takes a String. Returns void (nothing).
 
 ```zenscript
-sender.sendMessage(tekst ciągu);
+sender.sendMessage(String text);
 ```

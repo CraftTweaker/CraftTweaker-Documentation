@@ -1,15 +1,15 @@
-# Wymiennik ciepła
-**Uwaga: Częściowo uszkodzone**
+# Heat Exchanger
+**Note: Partially Broken**
 
-## Importowanie pakietu
-`mods.nuclearcraft.Wymiennik ciepła`
+## Importing the Package
+`mods.nuclearcraft.HeatExchanger`
 
-## Dodawanie przepisów
+## Adding Recipes
 ```zenscript
-mods.nuclearcraft.HeatExchanger.addRecipe(ILiquidStack fluidInput, ILiquidStack FluidStack Output, podwójne ogrzewanie, temperatura intreIn, temperatura int);
+mods.nuclearcraft.HeatExchanger.addRecipe(ILiquidStack fluidInput, ILiquidStack fluidOutput, double heatRequired, int temperatureIn, int temperatureOut);
 ```
 
-## Usuwanie przepisów
+## Removing Recipes
 ```zenscript
 mods.nuclearcraft.HeatExchanger.removeRecipeWithInput(ILiquidStack fluidInput);
 mods.nuclearcraft.HeatExchanger.removeRecipeWithOutput(ILiquidStack fluidOutput);

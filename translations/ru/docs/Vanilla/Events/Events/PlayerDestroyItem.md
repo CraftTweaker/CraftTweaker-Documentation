@@ -1,6 +1,6 @@
 # PlayerDestroyItem
 
-Событие Предмет Разрушения Игрока запускается всякий раз, когда игрок уничтожает предмет.
+The PlayerDestroyItem Event is fired whenever a player destroys an item.
 
 ## Класс события
 
@@ -10,7 +10,7 @@ You can, of course, also [import](/AdvancedFunctions/Import/) the class before a
 
 ## Наследование от интерфейсов событий
 
-События PlayerDestroyItem реализуют следующие интерфейсы и также могут вызвать все их методы/getters/setters:
+PlayerDestroyItem Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
 
 - [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
 
@@ -18,8 +18,8 @@ You can, of course, also [import](/AdvancedFunctions/Import/) the class before a
 
 Следующая информация может быть получена от события:
 
-| Геттеры                | Возвращаемый тип                         |
-| ---------------------- | ---------------------------------------- |
-| `player`               | [IPlayer](/Vanilla/Players/IPlayer/)     |
-| `оригинальный элемент` | [IItemStack](/Vanilla/Items/IItemStack/) |
-| `рука`                 | string                                   |
+| ZenGetter      | Возвращаемый тип                         |
+| -------------- | ---------------------------------------- |
+| `player`       | [IPlayer](/Vanilla/Players/IPlayer/)     |
+| `originalItem` | [IItemStack](/Vanilla/Items/IItemStack/) |
+| `hand`         | string                                   |

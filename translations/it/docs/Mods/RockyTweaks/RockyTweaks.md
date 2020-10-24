@@ -1,13 +1,13 @@
 # RockyTweaks
 
-## Informazioni
+## Information
 
-Rocky Tweaks (precedentemente noto come Rocky Core) aggiunge la capacità di modificare le incudine di vaniglia e mercante (Villaggio) con CraftTweaker.
+Rocky Tweaks (formerly known as Rocky Core) adds the ability to tweak the Vanilla Anvil and Merchant (Villager) trades using CraftTweaker.
 
-### Per Ulteriori Informazioni
+### For More Information
 
-Pagina del progetto: [https://minecraft.curseforge.com/projects/rocky-tweaks](https://minecraft.curseforge.com/projects/rocky-tweaks)
+Project Page: [https://minecraft.curseforge.com/projects/rocky-tweaks](https://minecraft.curseforge.com/projects/rocky-tweaks)
 
-### Segnalazioni Di Bug
+### Bug Reports
 
 Issue Tracker: [https://github.com/DevOnTheRocks/RockyTweaks/issues](https://github.com/DevOnTheRocks/RockyTweaks/issues)

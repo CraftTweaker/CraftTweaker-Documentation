@@ -1,46 +1,46 @@
-# Miner la Baie
+# Mine Bay
 
-Vous pouvez échanger des objets contre des objets sur minebay.
+You can trade for items on minebay.
 
-## Échanges par défaut
+## Default Trades
 
-- Argile durcie pour 1 x Émeraude
-- Crâne pour 8x Émeraude
-- Selle pour 4x Émeraude
-- Œuf d'apparition (méta 100, ne fait rien) pour 8x Émeraude
-- Armure de cheval en diamant pour 8x Diamant
-- Bouteille d'enchantement pour 1x Lingots de Fer
-- 4x Feux d'artifice pour 1x Lingots de Fer
-- Livre enchanté Toucher de soie pour 8x Émeraude
-- 2x Potion de Vision Nocturne (3:00) pour 1 x Émeraude
-- Livre de recettes 1x Emeraude
+- Hardened Clay for 1x Emerald
+- Skull for 8x Emerald
+- Saddle for 4x Emerald
+- Spawn Egg (meta 100, does nothing) for 8x Emerald
+- Diamond Horse Armor for 8x Diamond
+- Bottle o' Enchanting for 1x Iron Ingot
+- 4x Fireworks for 1x Iron Ingot
+- Silk Touch Enchanted Book for 8x Emerald
+- 2x Night Vision Potion (3:00) for 1x Emerald
+- Recipe Book given 1x Emerald
 
-## Enlèvement
+## Removing
 
-## Supprimer les ordres correspondants.
+## Remove matching trades.
 
 ```zenscript
 mods.cfm.MineBay.remove(@Optional IIngredient item);
 
-// Supprime l'échange qui donne lieu à la potion de vision nocturne (avec n'importe quel montant)
-mods. fm.MineBay.remove(<minecraft:potion>.withTag({Potion: "night_vision"}));
-// Supprime toutes les transactions
+// Remove trade resulting in the nightvision potion (with any amount)
+mods.cfm.MineBay.remove(<minecraft:potion>.withTag({Potion: "night_vision"}));
+// Remove all trades
 mods.cfm.MineBay.remove();
 ```
 
-Actuellement ne prend en charge que la suppression par résultat d'échange.
+Currently only supports removing by trade result.
 
-## Ajout en cours
+## Adding
 
-## Ajouter une négociation.
+## Add a trade.
 
 ```zenscript
 mods.cfm.MineBay.addTrade(@Nonnull IItemStack item, @Nonnull IItemStack currency);
 
-// Ajoute une négociation pour 42 bâtons donnés 13 diamants
-mods.cfm.MineBay.addTrade(<minecraft:stick>.withAmount(42),<minecraft:diamond>. ithAmount(13));
-// Ajoute une négociation pour 16 pommes données 3 émeraudes
-mods.cfm.MineBay.addTrade(<minecraft:apple>.withAmount(16),<minecraft:emerald>. ithAmount(3));
-// Ajoute une négociation pour 1 carotte donnée 1 émeraude
+// Add a trade for 42 sticks given 13 diamonds
+mods.cfm.MineBay.addTrade(<minecraft:stick>.withAmount(42),<minecraft:diamond>.withAmount(13));
+// Add a trade for 16 apples given 3 emeralds
+mods.cfm.MineBay.addTrade(<minecraft:apple>.withAmount(16),<minecraft:emerald>.withAmount(3));
+// Add a trade for 1 carrot given 1 emerald
 mods.cfm.MineBay.addTrade(<minecraft:carrot>,<minecraft:emerald>);
 ```

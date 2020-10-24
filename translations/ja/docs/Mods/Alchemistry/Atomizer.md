@@ -1,14 +1,14 @@
 # Atomizer
 
-# パッケージ
+# Package
 ```zenscript
 mods.alchemistry.AtomizerAtomizer
 ```
 
-## メソッド
-**[IItemStack](/Vanilla/Items/IItemStack/) 出力** - レシピの出力。
+## Methods
+**[IItemStack](/Vanilla/Items/IItemStack/) output** - The output of the recipe.
 
-**[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) input** - レシピの入力。
+**[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) input** - The input of the recipe.
 
 
 ## 追加

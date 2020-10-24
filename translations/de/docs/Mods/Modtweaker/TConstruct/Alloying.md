@@ -1,19 +1,19 @@
-# Legende
+# Alloying
 
-Das `Legierungs-` Paket erlaubt das Hinzufügen oder Entfernen von Legierungsrezepten.
+The `Alloy` package allows you to add or remove Alloy recipes.
 
-## Anruf
+## Calling
 
-Sie können das Legierungspaket mit `mods.tconstruct.Alloy` aufrufen
+You can call the Alloy package using `mods.tconstruct.Alloy`
 
-## Legierungsrezepte hinzufügen
+## Add Alloy Recipes
 
 ```zenscript
-//mods.tconstruct.Alloy.addRecipe(ILiquidStack-Ausgabe, ILiquidStack[] Eingänge);
+//mods.tconstruct.Alloy.addRecipe(ILiquidStack output, ILiquidStack[] inputs);
 mods.tconstruct.Alloy.addRecipe(<liquid:water> * 10, [<liquid:lava> * 10, <liquid:molten_iron> * 5]);
 ```
 
-## Entferne Legierungsrezepte
+## Removing Alloy Recipes
 
 ```zenscript
 //mods.tconstruct.Alloy.removeRecipe(ILiquidStack output);

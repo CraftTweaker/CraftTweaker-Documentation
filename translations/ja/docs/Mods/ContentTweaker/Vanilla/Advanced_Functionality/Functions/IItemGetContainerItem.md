@@ -7,13 +7,13 @@ This function can be used to calculate the containerItem, so you can go crazy wi
 
 ## パッケージのインポート
 
-問題が発生した場合は、パッケージをインポートする必要があるかもしれませんので、申し訳ありませんし、インポートを追加してください。  
+It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
 `import mods.contenttweaker.IItemGetContainerItem;`
 
-## パラメータ
+## Parameters
 
-IItemGetContainerItem は、以下のパラメータを持つ関数です。
+The IItemGetContainerItem is a function with the following parameters:
 
-- [IItemStack](/Vanilla/Items/IItemStack/) stack → 項目。
+- [IItemStack](/Vanilla/Items/IItemStack/) stack → The item.
 
-関数は、新しい [IItemStack](/Vanilla/Items/IItemStack/) オブジェクト、または null を返す必要があります。
+The Function needs to return a new [IItemStack](/Vanilla/Items/IItemStack/) object, or null, if the item should not leave anything behind.

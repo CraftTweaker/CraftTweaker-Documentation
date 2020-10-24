@@ -1,30 +1,30 @@
 # IBlockPos
 
-IBlockPos 对象代表着游戏中的一个位置。
+An IBlockPos object represents a position in the game.
 
 ## 导入相关包
 
-如果您遇到任何问题，可能需要导入软件包，所以比抱歉更安全并添加导入。  
-`导入craftweaper.world.IBlockPos;`
+It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
+`import crafttweaker.world.IBlockPos;`
 
-## ZenMethods 没有参数
+## ZenMethods without parameters
 
-| ZenMethod（ZenMethod） | ZenGetter/Caster | 返回值类型                                     | 描述                   |
-| -------------------- | ---------------- | ----------------------------------------- | -------------------- |
-| getX()               | x                | 整数                                        | 返回位置的 X 值            |
-| getY()               | 年                | 整数                                        | 返回位置的 Y 值            |
-| getZ()               | z                | 整数                                        | 返回位置的 Z 值            |
-| asPosition3f         | 作为 IPosition3f   | [IPosition3f](/Vanilla/Utils/Position3f/) | 返回位置为 Position3f 对象。 |
+| ZenMethod    | ZenGetter/Caster | 返回值类型                                     | 描述                                         |
+| ------------ | ---------------- | ----------------------------------------- | ------------------------------------------ |
+| getX()       | x                | int                                       | Returns the position's X value             |
+| getY()       | y                | int                                       | Returns the position's Y value             |
+| getZ()       | z                | int                                       | Returns the position's Z value             |
+| asPosition3f | as IPosition3f   | [IPosition3f](/Vanilla/Utils/Position3f/) | Returns the position as Position3f Object. |
 
-## 带参数的 ZenMethods
+## ZenMethods with parameters
 
-### 获取偏移
+### Get Offset
 
-返回一个新的 IBlockPos , 它是 `偏移` 个方块到 `方向` 方向。
+Returns a new IBlockPos that is `offset` blocks into the `direction` direction.
 
-`IBlockPos getOffset（IFacing directives, int offset）；`
+`IBlockPos getOffset(IFacing direction, int offset);`
 
-或者，你可以直接获得使用 [Ifacing](/Vanilla/World/IFacing/) 对象，使用那里提供的静态方法。
+Alternatively you can directly get the [IFacing](/Vanilla/World/IFacing/) objects using the static methods provided there.
 
-- [将](/Vanilla/World/IFacing/) 方向抚平char@@1的方向
-- 整条偏移 -> 该方向有多少块？
+- [IFacing](/Vanilla/World/IFacing/) direction → The direction
+- int offset → how many blocks in that direction?

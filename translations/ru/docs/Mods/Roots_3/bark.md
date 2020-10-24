@@ -1,16 +1,16 @@
 ### Класс
 
 ```zenscript
-импортировать mods.roots.Bark;
+import mods.roots.Bark;
 ```
 
-#### Методы
+#### Methods
 
 ```zenscript
 void addRecipe(
-  string name, // название рецепта
-  IItemStack woodLog, // эквивалент itemstack деревянного лога, сломанного
-  кора IItemStack // itemstack of the type of bark this log produces (including stack count)
+  string name,        // the name of the recipe
+  IItemStack woodLog, // the itemstack equivalent of the wood log being broken
+  IItemStack bark     // the itemstack of the type of bark this log produces (including stack count)
 );
 ```
 
@@ -18,7 +18,7 @@ void addRecipe(
 
 ```zenscript
 void removeRecipe(
-  IItemStack bark // предметный стек типа коры для удаления (исключая размер стека)
+  IItemStack bark // the itemstack of the type of bark to remove (excluding stack size)
 );
 ```
 
@@ -27,11 +27,11 @@ void removeRecipe(
 ### Примеры
 
 ```zenscript
-Импортируйте mods.roots.Bark;
+import mods.roots.Bark;
 
-// Выпускаем 2 песка из блока дыни, сломанного ножом.
-Bark.addRecipe("дын", <minecraft:melon_block>, <minecraft:sand>*2);
+// Will produce 2 sand from a melon block broken by a knife.
+Bark.addRecipe("melon", <minecraft:melon_block>, <minecraft:sand>*2);
 
-// Удаляет кору дикого дерева из списка по умолчанию
+// Removes wildwood bark from the default list
 Bark.removeRecipe(<roots:bark_wildwood>);
 ```

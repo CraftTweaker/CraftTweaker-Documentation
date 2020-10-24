@@ -1,10 +1,10 @@
-# Imbuer Alchemico
+# Alchemical Imbuer
 
-## Pacchetto
+## Package
 
 `mods.thermalexpansion.Imbuer`
 
-## Addizione
+## Addition
 
 ```zenscript
 mods.thermalexpansion.Imbuer.addRecipe(ILiquidStack output, IItemStack input, ILiquidStack inputFluid, int energy);
@@ -12,7 +12,7 @@ mods.thermalexpansion.Imbuer.addRecipe(ILiquidStack output, IItemStack input, IL
 mods.thermalexpansion.Imbuer.addRecipe(<liquid:lava>, <minecraft:dirt>, <liquid:water>, 2048);
 ```
 
-## Rimozione
+## Removal
 
 ```zenscript
 mods.thermalexpansion.Imbuer.removeRecipe(IItemStack input, ILiquidStack secondInput);

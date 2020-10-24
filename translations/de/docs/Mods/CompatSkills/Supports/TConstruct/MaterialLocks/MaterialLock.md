@@ -1,20 +1,20 @@
-# Materialsperren
+# Material Locks
 
-## Materialsperre
+## Material-Lock
 
 With the implementation of TConstruct support in CompatSkills 1.5.0. You now have the ability to lock:
 
-    - Werkzeugherstellung
-    - Teileherstellung
-    - Ersatzteilersatz
+    - Tool Crafting
+    - Part Crafting
+    - Part Replacement
     
 
-Für bestimmte Materialien des Tinker Construct's Materials.
+For specific Tinker Construct's Materials.
 
 ### Syntax:
 
-    // Leeres Beispiel:
-    mods.compatskills.MaterialLock.addMaterialLock(String Identifier, String... requirements);
+    // Blank Example:
+    mods.compatskills.MaterialLock.addMaterialLock(String identifier, String... requirements);
     
-    // Beispiel:
+    // Example:
     mods.compatskills.MaterialLock.addMaterialLock("wood", "reskillable:mining|5", "reskillable:magic|7");

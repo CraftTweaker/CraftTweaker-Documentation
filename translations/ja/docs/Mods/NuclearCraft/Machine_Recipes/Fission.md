@@ -1,16 +1,16 @@
-# <unk>
+# Fission
 
-## パッケージのインポート
+## Importing the Package
 `mods.nuclearcraft.fission`
 
-## レシピを追加中
+## Adding Recipes
 ```zenscript
-mods.numeric.fision.addRecipe([itemInput, itemOutput, double baseTime, double basePower, double baseHeat, String guiName, @Optional double processRadiation]);
+mods.nuclearcraft.fission.addRecipe([itemInput, itemOutput, double baseTime, double basePower, double baseHeat, String guiName, @Optional double processRadiation]);
 ```
 
-## レシピを削除
+## Removing Recipes
 ```zenscript
-mods.nukraft.fision.removeRecipeWithInput([itemInput]);
-mods.nuclecraft.fision.removeRecipeWithOutput([itemOutput]);
-mods.nuclecraft.fision.removeAllRecipes();
+mods.nuclearcraft.fission.removeRecipeWithInput([itemInput]);
+mods.nuclearcraft.fission.removeRecipeWithOutput([itemOutput]);
+mods.nuclearcraft.fission.removeAllRecipes();
 ```

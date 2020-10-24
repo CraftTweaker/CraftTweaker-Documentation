@@ -1,28 +1,28 @@
-# プッシュ反応
+# PushReaction
 
-プッシュ反応とは、ピストンがブロックをプッシュしようとした時に起こる反応です。
+A push reaction is what happens when a piston tries to push a block.
 
 # パッケージのインポート
 
-問題が発生した場合は、パッケージをインポートする必要があるかもしれませんので、申し訳ありませんし、インポートを追加してください。  
+It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
 `import mods.contenttweaker.PushReaction;`
 
-## 2つの反応の比較
+## Comparing two reactions
 
-`==` 演算子を使用して、2つの反応が等しいかどうかを確認できます。
+You can see if two reactions are equal by using the `==` operator.
 
 ```zenscript
 if(a == b){}
 ```
 
-## 静的メソッド
+## Static methods
 
-これらのメソッドを使用して、PushReaction オブジェクトを取得できます。
+You can use these methods to get PushReaction Objects:
 
 ```zenscript
 mods.contenttweaker.PushReaction.normal();
 mods.contenttweaker.PushReaction.destroy();
 mods.contenttweaker.PushReaction.block();
-mods.contentReaction.ignore();
-mods.contenttweaker.PushReaction.pushReaction.pushOnly();
+mods.contenttweaker.PushReaction.ignore();
+mods.contenttweaker.PushReaction.pushOnly();
 ```

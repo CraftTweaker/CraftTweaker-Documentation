@@ -1,46 +1,46 @@
-# 儀式的なサポート
+# Ritual Support
 
-## 儀式:
+## Rituals:
 
-これは儀式の活性化のための特定の要件を満たしていない場合、儀式の活性化をキャンセルします。
+This will cancel the activation of a ritual if the specific requirements aren't met for the rituals activation.
 
-### コマンド:
+### Command:
 
-現在、儀式ハンドラーによって使用される儀式的な文字列をすべてダンプするためのゲーム内コマンドがあります。 コマンドは以下の通りです: /ct ritialDump そしてすべての儀式の文字列を CraftTweaker.logに出力します。
+There is currently an in-game command for dumping all of the Ritual Strings for use by the Ritual Handler. The command is: /ct ritualDump and it'll output all of the ritual strings to the "CraftTweaker.log".
 
-### 1.4.0より前:
+### Pre-1.4.0:
 
-#### 構文
+#### Syntax:
 
-    空白の例:
-    mods.compatskills.RitualHandler.addRitualLock(失敗メッセージ、文字列の儀式、文字列... 要件)
+    Blank Example:
+    mods.compatskills.RitualHandler.addRitualLock(String failureMessage, String ritual, String... requirements)
     
-    テスト例:
-    mods.compatskills.RitualHandler.addRitualLock(「儀式が有効になると、期待される結果を達成することはできません」、「儀式Crushing」、「reskillable:building|15」、「reskillable:magic|7」、「stage|test」、「adv|minecraft:fusry/plant_seed」)
+    Test Example:
+    mods.compatskills.RitualHandler.addRitualLock("As the ritual activates, you don't achieve the expected result", "ritualCrushing", "reskillable:building|15", "reskillable:magic|7", "stage|test", "adv|minecraft:husbandry/plant_seed")
     
 
 ### Post-1.4.0:
 
-CompatSkills 1.4.0の時点で、いくつかの新しいZenMethodsが追加され、既存の構文に変更が加えられています。 また、儀式サポートとバインディングサポートが正常に機能しない問題も修正しました。
+As of CompatSkills 1.4.0 a few new ZenMethods have been added as well as some changes has been done to the existing syntax. We've also fixed an issue that made Ritual Support and Binding Support not work properly!
 
-#### 構文
+#### Syntax:
 
-    空白の例:
-    mods.compatskills.RitualHandler.addRitualLock(String儀式, String... requirements);
+    Blank Example:
+    mods.compatskills.RitualHandler.addRitualLock(String ritual, String... requirements);
     mods.compatskills.RitualHandler.addRitualCostLock(int activationCost, String... requirements);
     mods.compatskills.RitualHandler.addRitualCrystalLock(int crystalLevel, String... requirements);
     
-    テスト例:
+    Test Example:
     mods.compatskills.RitualHandler.addRitualLock("ritualCrushing", "reskillable:magic|7");
-    mods.RitualHandler.addRitualCostLock(500, "reskillable:magic|7");
-    mods.RitualHandler.addRitualCrystalLock(1, "reskillable:magic|7");
+    mods.compatskills.RitualHandler.addRitualCostLock(500, "reskillable:magic|7";
+    mods.compatskills.RitualHandler.addRitualCrystalLock(1, "reskillable:magic|7");
     
 
-#### エラー メッセージ
+#### Error Message
 
-バインディングのサポートと同様に、エラーメッセージは CrT メソッドで設定された文字列の代わりにローカライズ可能な文字列に移動されました。 これにより、リソースパックの作成者が、希望する文字列をより簡単にローカライズして変更できるようになります。
+As with the binding support, the error message has been moved over to a localizable string instead of a string set in the CrT Method. This will make it so resource pack authors can localize and change the strings as they'd like much easier.
 
-    compatskills.bloodmagic.ritialError=儀式が起動すると、期待される結果は得られません
+    compatskills.bloodmagic.ritualError=As the ritual activates, you don't achieve the expected result
     
 
-他のいくつかの変更は、例えば、デフォルトのエラーメッセージがプレーヤーにステータスチャットメッセージの一部として表示されるようになりました。 これは、メッセージがプレイヤーにのみ表示され、誰もが見ることができるチャットで印刷されていないことを意味します。 これはまた、チャットで要件とともに表示されることを意味します。 これにより、プレイヤーはロックから何が欠けているのかを識別しやすくなります。
+Some other changes are for example that the default error message now displays as part of a status chat message to the player. This means that the message is only shown to the player and not printed in chat for everyone to see. This also means that it will now display alongside requirements in the chat. Which makes it easier for the player to identify what they are missing from the lock.

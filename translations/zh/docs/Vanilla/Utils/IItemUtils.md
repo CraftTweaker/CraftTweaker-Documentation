@@ -1,7 +1,7 @@
 # IItemUtils
 
 ItemUtils 接口提供了各种项目工具。  
-它可以使用 `项目` 关键字访问。
+它可以使用 `itemutils` 关键字访问。
 
 ## 创建药水
 
@@ -39,8 +39,8 @@ itemUtils.getItemsByRegexUnlocalizedName(".*pink.*"); // 粉红色东西!! <3
 
 ## 模拟物品栏处理器
 
-此方法与 [条物品处理器](/Vanilla/Brackets/Bracket_Item/)一样.  
-与波黑不同的是，您需要提供元数据作为可选参数。  
+此方法与 [条物品处理器](/Vanilla/Brackets/Bracket_Item/) 一样. 这允许您在项目名称中使用字符串变量。  
+与括号处理程序不同，您需要提供元数据作为可选参数。  
 如果您想使用通配符，请使用 `32767`
 
     //getItem(位置，@Opidema);
@@ -49,11 +49,11 @@ itemUtils.getItemsByRegexUnlocalizedName(".*pink.*"); // 粉红色东西!! <3
     items.utItem("minecraft:wool", 32767); //<minecraft:wool:*>
     
 
-## 创建生成蛋
+## 创建出生蛋
 
 createSpawnEgg 函数允许您创建自定义的模组生成蛋。  
 定制NBT 是OPTIA而且可以覆盖实体标签。  
-返回生成的eff为 [IItemStack](/Vanilla/Items/IItemStack/)
+返回生成的蛋为 [IItemStack](/Vanilla/Items/IItemStack/)。
 
 ```zenscript
 //createSpawnEgg(entity, @opulatory customNBT)

@@ -1,19 +1,19 @@
 # MaterialPartData
 
-Material Part Data は、 [MaterialPart](/Mods/ContentTweaker/Materials/Materials/MaterialPart/) に追加できるデータで、さらにいくつかのプロパティを提供します。
+Material Part Data is data that can be added to a [MaterialPart](/Mods/ContentTweaker/Materials/Materials/MaterialPart/) to give it some more properties.
 
 ## パッケージのインポート
 
-問題が発生した場合は、パッケージをインポートする必要があるかもしれませんので、申し訳ありませんし、インポートを追加してください。  
+It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
 `import mods.contenttweaker.MaterialPartData;`
 
-## そのようなオブジェクトを取得しています
+## Retrieving such an object
 
-MaterialPartData オブジェクトは、 `MaterialPart` オブジェクトの [getData()](/Mods/ContentTweaker/Materials/Materials/MaterialPart/) メソッドを使用して取得できます。
+You can get a MaterialPartData object by using the `getData()` Method on a [MaterialPart](/Mods/ContentTweaker/Materials/Materials/MaterialPart/) object.
 
-## メソッド
+## Methods
 
-MaterialPartDataでできることは、より多くのデータを追加し、保存されたデータを取得することです。 以下のようにします。
+All you can do with MaterialPartData is add more Data and retrieve stored data! You do that like so:
 
 ```zenscript
 MPD.addDataValue(String name, String value);
@@ -25,7 +25,7 @@ Now, what to put in as name or value?
 Well, that depends on the parttype of the tool you are using.  
 Below you will find a list for CoT's basic Part Types:
 
-<details><summary>アイテム</summary> 
+<details><summary>Items</summary> 
 
 <table>
   <th>
@@ -33,29 +33,29 @@ Below you will find a list for CoT's basic Part Types:
   </th>
   
   <th>
-    値
+    Value
   </th>
   
   <th>
-    必須？
+    Required?
   </th></tr> 
   
   <tr>
     <td>
-      書き込み中
+      burn
     </td>
     
     <td>
-      "Integer" (例: "100")
+      An "Integer" (e.g. "100")
     </td>
     
     <td>
-      いいえ
+      No
     </td>
   </tr>
 </table></details>
 
-<details><summary>よろいかぶと</summary> 
+<details><summary>Armor</summary> 
 
 <table>
   <th>
@@ -63,44 +63,44 @@ Below you will find a list for CoT's basic Part Types:
   </th>
   
   <th>
-    値
+    Value
   </th>
   
   <th>
-    必須？
+    Required?
   </th></tr> 
   
   <tr>
     <td>
-      耐久度
+      durability
     </td>
     
     <td>
-      "Integer" (例: "10")
+      An "Integer" (e.g. "10")
     </td>
     
     <td>
-      いいえ
+      No
     </td>
   </tr>
   
   <tr>
     <td>
-      エンチャント性
+      enchantability
     </td>
     
     <td>
-      "Integer" (例: "10")
+      An "Integer" (e.g. "10")
     </td>
     
     <td>
-      いいえ
+      No
     </td>
   </tr>
   
   <tr>
     <td>
-      減少
+      reduction
     </td>
     
     <td>
@@ -108,62 +108,62 @@ Below you will find a list for CoT's basic Part Types:
     </td>
     
     <td>
-      いいえ
+      No
     </td>
   </tr>
   
   <tr>
     <td>
-      タフネス
+      toughness
     </td>
     
     <td>
-      "float" (例: "2.4")
+      A "float" (e.g. "2.4")
     </td>
     
     <td>
-      いいえ
+      No
     </td>
   </tr>
 </table></details>
 
-<details><summary>ブロック</summary> 
+<details><summary>Block</summary> 
 
-| 名称          | 値                     | 必須？ |
-| ----------- | --------------------- | --- |
-| 硬さ          | "Integer" (例: "3")    | いいえ |
-| 抵抗          | "Integer" (例: "15")   | いいえ |
-| 収穫レベル       | "Integer" (例: "1")    | いいえ |
-| harvestTool | "tool" (例: "pickaxe") | いいえ |</details>
+| 名称           | Value                     | Required? |
+| ------------ | ------------------------- | --------- |
+| hardness     | An "Integer" (e.g. "3")   | No        |
+| resistance   | An "Integer" (e.g. "15")  | No        |
+| harvestLevel | An "Integer" (e.g. "1")   | No        |
+| harvestTool  | A "tool" (e.g. "pickaxe") | No        |</details>
 
 <details><summary>Fluid</summary> 
 
-| 名称      | 値                         | 必須？ |
-| ------- | ------------------------- | --- |
-| 温度      | "Integer" (例: "300")      | いいえ |
-| density | "Integer" (例: "1000")     | いいえ |
-| 明るさ     | "Integer" (例: "0")        | いいえ |
-| 粘度|粘度   | "Integer" (例: "100")      | いいえ |
-| 気化する    | A "boolean" (e.g. "true") | いいえ |</details>
+| 名称          | Value                      | Required? |
+| ----------- | -------------------------- | --------- |
+| temperature | An "Integer" (e.g. "300")  | No        |
+| density     | An "Integer" (e.g. "1000") | No        |
+| luminosity  | An "Integer" (e.g. "0")    | No        |
+| viscosity   | An "Integer" (e.g. "100")  | No        |
+| vaporize    | A "boolean" (e.g. "true")  | No        |</details>
 
-<details><summary>鉱石</summary> 
+<details><summary>Ore</summary> 
 
-| 名称          | 値                                                         | 必須？ |
-| ----------- | --------------------------------------------------------- | --- |
-| ドロップ        | "itemList" (例: "minecraft:redstone,minecraft:gold_ingot") | いいえ |
-| variant     | "ブロックリスト" (例: "minecraft:stone,minecraft:end_stone")      | いいえ |
-| 硬さ          | "整数リスト" (例: "3,3")                                        | いいえ |
-| 抵抗          | "Integer list" (例: "15,15")                               | いいえ |
-| 収穫レベル       | "整数リスト" (例: "1,1")                                        | いいえ |
-| harvestTool | "toolList" (例: "pickaxe,pickaxe")                         | いいえ |</details>
+| 名称           | Value                                                          | Required? |
+| ------------ | -------------------------------------------------------------- | --------- |
+| drops        | An "itemList" (e.g. "minecraft:redstone,minecraft:gold_ingot") | No        |
+| variants     | A "Block List" (e.g. "minecraft:stone,minecraft:end_stone")    | No        |
+| hardness     | An "Integer list" (e.g. "3,3")                                 | No        |
+| resistance   | An "Integer list" (e.g. "15,15")                               | No        |
+| harvestLevel | An "Integer list" (e.g. "1,1")                                 | No        |
+| harvestTool  | A "toolList" (e.g. "pickaxe,pickaxe")                          | No        |</details>
 
 <details><summary>Minecart</summary> 
 
-| 名称         | 値                  | 必須？ |
-| ---------- | ------------------ | --- |
-| 最大速度       | "float" (例: "1.0") | いいえ |
-| ドラッグ       | "float" (例: "1.0") | いいえ |
-| riddenDrag | "float" (例: "1.0") | いいえ |</details>
+| 名称         | Value                  | Required? |
+| ---------- | ---------------------- | --------- |
+| maxSpeed   | A "float" (e.g. "1.0") | No        |
+| drag       | A "float" (e.g. "1.0") | No        |
+| riddenDrag | A "float" (e.g. "1.0") | No        |</details>
 
 ## 例
 

@@ -1,30 +1,30 @@
-# Directive sur le prétraitement des drapeaux expérimentaux
+# Experimental Flags Preprocessor Directive
 
-Cette directive de préprocesseur permet des comportements expérimentaux pour certaines fonctionnalités de ZenScript.
+This preprocessor directive enables some experimental behavior for certain ZenScript functionalities.
 
-Faire partie du projet ZenScriptX, et en raison de la nature expérimentale du projet en soi, certaines fonctionnalités peuvent nécessiter des tests approfondis du côté du compilateur ou causer d'autres effets secondaires indésirables. Pour ces raisons, certaines fonctionnalités ont été considérées comme expérimentales et ne sont pas activées par défaut lors de la compilation d'un script.
+Being part of the ZenScriptX project, and due to the experimental nature of the project in itself, some features may require extensive testing on the compiler side or cause other unintended side effects. For these reasons, some features have been deemed experimental and are not enabled by default when compiling a script.
 
-De plus, certains paramètres expérimentaux peuvent totalement ne pas fonctionner, et ne sont fournis que comme indices de fonctionnalités à venir. Vous devriez toujours vous référer à la documentation pour savoir si un certain drapeau est utilisé ou non. D'un autre côté, les drapeaux expérimentaux ne seront jamais supprimés, ce qui signifie que les fonctionnalités qui sont intégrées dans la partie "non-expérimentale" de ZenScriptX ne seront pas désactivées. Cela permet aux scripts d'être compatibles avec les dernières versions du projet ZenScriptX sans nécessitant une réécriture.
+Moreover, some experimental flags may outright not work, and are provided only as hints of upcoming features. You should always refer to the documentation to know whether a certain flag is used or not. On the other hand, experimental flags will never be removed, meaning that features that are integrated into the "non-experimental" part of ZenScriptX won't have their flags disabled. This allows scripts to be compatible with newer releases of the ZenScriptX project without requiring a rewrite.
 
-## Utilisation de la directive
-Utiliser la directive est aussi simple que d'ajouter `#experimental` au début du fichier, et en spécifiant une liste de drapeaux qui représentent le comportement à activer juste après la déclaration.
+## Using the directive
+Using the directive is as simple as adding `#experimental` to the beginning of the file, and specifying a list of flags that represent behavior to enable right after the declaration.
 
-Chaque drapeau doit être séparé par les autres avec des espaces et il doit **commencer par** par `-E`. Ceci identifie le drapeau comme un drapeau expérimental. Suite à cette déclaration, une série de lettres et de chiffres qui identifient le drapeau spécifique devrait être saisie. Reportez-vous à la liste de cette documentation pour connaître tous les drapeaux disponibles.
+Every flag must be separated by the others with spaces and it **has to** begin with `-E`. This identifies the flag as an experimental flag. Following that declaration, a series of letters and numbers that identify the specific flag should be entered. Refer to the list in this documentation to know all the available flags.
 
-Par exemple, imaginez que nous voulions activer les drapeaux `soo` et `wd4`. La ligne correspondante serait :
+As an example, imagine we wanted to enable the `soo` and `wd4` flags. The corresponding line would be:
 ```zenscript
-#expérimental -Esoo -Ewd4
+#experimental -Esoo -Ewd4
 ```
 
-## Liste des drapeaux
-| Nom du drapeau | Statut actuel | Libellé                                                                                        |
-| -------------- | ------------- | ---------------------------------------------------------------------------------------------- |
-| `soo`          | Désactivé     | Active la surcharge de l'opérateur pour les séquences                                          |
-| `saia`         | Désactivé     | Fournit un argument automatique `il` à des fonctions avec un seul paramètre dans les séquences |
-| `sao`          | Activé        | Permet la création de `Séquences` à partir des arguments de la table                           |
+## List of flags
+| Flag name | Current Status | Description                                                                           |
+| --------- | -------------- | ------------------------------------------------------------------------------------- |
+| `soo`     | Disabled       | Enables operator overloading for Sequences                                            |
+| `saia`    | Disabled       | Provides an automatic `it` argument to functions with a single parameter in Sequences |
+| `sao`     | Enabled        | Allows creation of `Sequences` from array arguments                                   |
 
-La signification pour le statut actuel est ce qui suit :
+The meaning for Current Status are the following:
 
-- **Désactivé** identifie un drapeau qui existe mais n'a aucune action correspondante en raison du fait que le backend n'est pas prêt. C'est fourni simplement en raison de la "roadmap", permettant aux développeurs de savoir quelles nouvelles fonctionnalités seront disponibles dans un avenir proche.
-- **Activé** identifie un drapeau qui existe et a un effet sur le fichier.
-- **Déprécié** identifie un drapeau qui ne doit plus être utilisé à cause d'une fonctionnalité atteignant la maturité et n'étant plus considérée comme expérimentale. Il est néanmoins fourni comme une forme de rétrocompatibilité.
+- **Disabled** identifies a flag that exists but has no corresponding actions due to the backend not being ready. It is provided merely due to "roadmap", allowing developers to know what new features will be available in the near future.
+- **Enabled** identifies a flag that exists and has an effect on the file.
+- **Deprecated** identifies a flag that shouldn't be used anymore due to a feature reaching maturity and not being considered experimental anymore. It is nevertheless provided as a form of backwards compatibility.

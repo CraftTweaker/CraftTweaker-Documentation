@@ -1,26 +1,26 @@
 # Pure Daisy
 
-Le paquet PureDaisy est utilisé pour ajouter ou enlever des recettes de/vers la marguerite de la botanique.
+The PureDaisy package is used for adding or removing recipes to/from the Botania Pure Daisy.
 
-## Appel en cours
+## Calling
 
-Vous pouvez appeler le paquet PureDaisy en utilisant `mods.botania.PureDaisy`
+You can call the PureDaisy package using `mods.botania.PureDaisy`
 
-## Trouver toutes les recettes enregistrées
+## Find all registered Recipes
 
-Vous pouvez trouver toutes les recettes enregistrées de Marguerite Pure en utilisant [`/ct botania marguerite`](/Mods/Modtweaker/Botania/Commands/).
+You can find all registered Pure Daisy recipes using [`/ct botania daisy`](/Mods/Modtweaker/Botania/Commands/).
 
-## Ajout de recette
+## Recipe addition
 
-L'heure par défaut est de 150 ticks
+The time defaults to 150 ticks
 
 ```zenscript
-//mods.botania.PureDaisy.addRecipe(IIngredient blockInput, IItemStack blockOutput, @Temps d'int optionnel);
+//mods.botania.PureDaisy.addRecipe(IIngredient blockInput, IItemStack blockOutput, @Optional int time);
 mods.botania.PureDaisy.addRecipe(<minecraft:dirt>,<minecraft:grass>);
 mods.botania.PureDaisy.addRecipe(<minecraft:planks>,<minecraft:grass>, 200);
 ```
 
-## Suppression de la recette
+## Recipe removal
 
 ```zenscript
 //mods.botania.PureDaisy.removeRecipe(IIngredient output);

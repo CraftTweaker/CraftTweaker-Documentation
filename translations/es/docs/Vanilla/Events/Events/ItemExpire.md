@@ -1,25 +1,25 @@
-# Expira
+# ItemExpire
 
-El Evento de Objeto de Expiración se dispara cada vez que un objeto expira (alcanza su vida útil).  
-Se puede cancelar para evitar que el objeto sea marcado como muerto.  
-Si se cancela, añadirá `extralife` a la vida útil del artículo.
+The ItemExpire Event is fired whenever an Item expires (reaches its macimum lifespan).  
+It can be canceled to prevent the item from being flagged as dead.  
+If canceled it will add `extralife` to the item's lifetime.
 
-## Clase de evento
+## Event Class
 
-Necesitarás lanzar el evento en la cabecera de la función como esta clase:  
-`crafttweaker.event. temExpireEvent`  
-Puede, por supuesto, también [importar](/AdvancedFunctions/Import/) la clase antes y usar ese nombre entonces.
+You will need to cast the event in the function header as this class:  
+`crafttweaker.event.ItemExpireEvent`  
+You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
 
-## Extensiones de la interfaz de eventos
+## Event interface extensions
 
-PlayerDeathDrops Events implementan las siguientes interfaces y son capaces de llamar a todos sus métodos/getters/setters también:
+PlayerDeathDrops Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
 
-- [Evento de Itidad](/Vanilla/Events/Events/IEntityEvent/)
+- [IEntityEvent](/Vanilla/Events/Events/IEntityEvent/)
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 
 ## ZenGetter/ZenSetter
 
-| ZenGetter | Ajuste    | Tipo                                          |
+| ZenGetter | ZenSetter | Type                                          |
 | --------- | --------- | --------------------------------------------- |
-| objeto    |           | [IEntityItem](/Vanilla/Entities/IEntityItem/) |
+| item      |           | [IEntityItem](/Vanilla/Entities/IEntityItem/) |
 | extraLife | extraLife | int                                           |

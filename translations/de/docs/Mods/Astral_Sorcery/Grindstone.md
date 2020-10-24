@@ -1,15 +1,15 @@
 # Grindstone
 
-Du kannst CrT verwenden, um Rezepte aus dem AS Schleifstein hinzuzufügen oder zu entfernen.
+You can use CrT to add or remove recipes form the AS grindstone.
 
-## Anruf
+## Calling
 
-Sie können das InfusionRecipe Paket mit `mods.astralsorcery.Grindstone` aufrufen.
+You can call the InfusionRecipe package using `mods.astralsorcery.Grindstone`.
 
-## Entfernen
+## Removing
 
-Dadurch wird das erste Schleifrezept entfernt, das das zur Verfügung gestellte [IItemStack](/Vanilla/Items/IItemStack/) `Ausgabe`erzeugt.  
-Wenn es mehrere Rezepte gibt, die die angegebene Ausgabe zurückgeben, müssen Sie diese Methode mehrmals aufrufen!
+This will remove the first grinding recipe it finds that creates the provided [IItemStack](/Vanilla/Items/IItemStack/) `output`.  
+If there are multiple recipes that return the provided output, you need to call this method multiple times!
 
 ```zenscript
 //mods.astralsorcery.Grindstone.removeRecipe(IItemStack output);

@@ -1,23 +1,23 @@
-# Reakcja pchana
+# PushReaction
 
-Reakcja wypychająca jest tym, co się dzieje, gdy tłok próbuje wypchnąć blok.
+A push reaction is what happens when a piston tries to push a block.
 
-# Importowanie pakietu
+# Importing the package
 
-Może być wymagane zaimportowanie pakietu, jeśli napotkasz jakieś problemy, więc lepiej być bezpiecznym niż przepraszamy i dodać import.  
-`zaimportuj mods.contenttweaker.PushReaction;`
+It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
+`import mods.contenttweaker.PushReaction;`
 
-## Porównanie dwóch reakcji
+## Comparing two reactions
 
-Możesz sprawdzić, czy dwie reakcje są równe przez użycie operatora `==`.
+You can see if two reactions are equal by using the `==` operator.
 
 ```zenscript
-if(a = b) {}
+if(a == b){}
 ```
 
-## Metody statyczne
+## Static methods
 
-Możesz użyć tych metod, aby uzyskać obiekty PushReaction:
+You can use these methods to get PushReaction Objects:
 
 ```zenscript
 mods.contenttweaker.PushReaction.normal();

@@ -1,29 +1,29 @@
-# WażonyLiquidStack
+# WeightedLiquidStack
 
-Ważony stos płynny jest jak normalny [ILiquidStack](/Vanilla/Liquids/ILiquidStack/) , ale ma do niego dodany procent.  
-Zwykle używasz ich, gdy zajmujesz się działaniami opartymi na procentach, takimi jak krople lub drugorzędne wyjście.
+A Weighted Liquid Stack is like a normal [ILiquidStack](/Vanilla/Liquids/ILiquidStack/) but has a percentage added to it.  
+You normally use them when dealing with percentage based actions like drops or secondary outputs.
 
-## Importowanie pakietu
+## Importing the package
 
-Może być wymagane zaimportowanie pakietu, jeśli napotkasz jakiekolwiek problemy (takie jak przesyłanie [Array](/AdvancedFunctions/Arrays_and_Loops/)), tak aby były bezpieczne niż przepraszamy i dodaj import.  
-`zaimportuj crafttweaker.item.WeightedLiquidStack;`
+It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
+`import crafttweaker.item.WeightedLiquidStack;`
 
-## Wywołanie ważonegoLiquidStack
+## Calling a weightedLiquidStack
 
-Możesz uzyskać ważonąLiquidStack z [ILiquidStack](/Vanilla/Liquids/ILiquidStack/) za pomocą operatora modulo lub jego funkcji.
+You can derive a weightedLiquidStack from an [ILiquidStack](/Vanilla/Liquids/ILiquidStack/) by either using the modulo operator or the weight function on it.
 
 ```zenscript
-walny stos płynny = <liquid:lava>;
+val liquidStack = <liquid:lava>;
 
-//oba tworzą obiekt ważonyPłynny z szansą na 20%
-walny stos płynny = % stos płynny 20;
-val wLiquidStack2 = liquidStack. osiem (0,2);
+//both create a weightedLiquidstack object with a chance of 20%
+val wLiquidStack = liquidStack % 20;
+val wLiquidStack2 = liquidStack.weight(0.2);
 ```
 
 ## ZenGetters
 
-| ZenGetter | Co to robi                                           | Typ zwrotu                                     |
+| ZenGetter | What does it do                                      | Return Type                                    |
 | --------- | ---------------------------------------------------- | ---------------------------------------------- |
-| stos      | Zwraca powiązany LiquidStack                         | [ILiquidStack](/Vanilla/Liquids/ILiquidStack/) |
-| szansa    | Zwraca szansę stosu jako ułamek dziesiętny (np. 0.2) | zmiennoprzecinkowe                             |
-| procent   | Zwraca szansę stosu jako procent (np. 20.0)          | zmiennoprzecinkowe                             |
+| stack     | Returns the associated LiquidStack                   | [ILiquidStack](/Vanilla/Liquids/ILiquidStack/) |
+| chance    | Returns the stack's chance as decimal (e.g. 0.2)     | float                                          |
+| percent   | Returns the stack's chance as percentage (e.g. 20.0) | float                                          |

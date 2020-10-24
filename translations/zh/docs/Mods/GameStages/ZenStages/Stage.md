@@ -1,37 +1,37 @@
-# 阶段
+# Stage
 
-Stage is the class you are given when you create a new "Stage" the class contains all the main method you need to stage an entry to that *Stage*. 这么简单！ 一旦您添加了您需要的所有条目。 别忘了建造这个阶段！
+Stage is the class you are given when you create a new "Stage" the class contains all the main method you need to stage an entry to that *Stage*. It's as simple as that! Once you have added all the entries you need. Don't forget to build the stage!
 
 ## 导入相关包
 
-`导入 mods.zenstages.stage.stage`
+`import mods.zenstages.Stage;`
 
-## 如何处理
+## What to do with it
 
-### ZenGetters 和无参数ZenMethods
+### ZenGetters and parameterless ZenMethods
 
-| ZenGetter | 功能     | 返回值类型 |
-| --------- | ------ | ----- |
-| 阶段        | 返回阶段名称 | 字符串   |
+| ZenGetter | 功能                     | 返回值类型  |
+| --------- | ---------------------- | ------ |
+| stage     | Returns the stage name | string |
 
-### 待发布方法
+### Staging Methods
 
-**注意：所有这些方法只适用于使用 [ZenStager](/Mods/GameStages/ZenStages/ZenStager/) 创建一个阶段时给出的阶段类，以便将这些方法保存到静态状态，这样您可以在需要时从其他类引用。**
+**Note: All these methods will only work with the Stage class given when you create a Stage using [ZenStager](/Mods/GameStages/ZenStages/ZenStager/) so save these to a static so you can reference from other classes if need be.**
 
-检查是否有 [个自定义类型](/Mods/GameStages/ZenStages/CustomType/) 已经发布到这个阶段。
+Check to see if a [Custom Type](/Mods/GameStages/ZenStages/CustomType/) has been Staged to this Stage.
 
 ```zenscript
-// CustomStaged(String slug, String value);
-// isCustomStaged(String slug, String[…]值);
+// isCustomStaged(String slug, String value);
+// isCustomStaged(String slug, String[] values);
 // isCustomStaged(String slug, int value);
-// CustomStaged(String slug, int[…]值)；
-// isCustomStaged(String slug, IIngredient 值)；
-// isCustomStaged(String slug, IIngredient[…]值)；
-TestStage. sCustomStaged("blockBreak", <minecraft:stone>);
+// isCustomStaged(String slug, int[] values);
+// isCustomStaged(String slug, IIngredient value);
+// isCustomStaged(String slug, IIngredient[] values);
+TestStage.isCustomStaged("blockBreak", <minecraft:stone>);
 TestStage.isCustomStaged("container", "com.test");
 ```
 
-将成分添加到一个阶段。 默认设置为可选参数为指定的属性。
+Add an Ingredient to a stage. Defaulted to true the optional parameter to stage the recipe for said Ingredient.
 
 ```zenscript
 // addIngredient(IIngredient ingredient, @Optional(valueBoolean = true) boolean recipeStage);
@@ -41,54 +41,54 @@ TestStage.addIngredient(<ore:wool>);
 TestStage.addIngredients([<minecraft:boat>, <minecraft:string>], false);
 ```
 
-添加属性覆盖。 当你通过ModId发布整个模组时使用这个方法，但你需要将一些项目从模组重新设计到另一个 [阶段](/Mods/GameStages/ZenStages/Stage/)， 这样您就可以重新安排项目。
+Add an Ingredient Override. This is used when you're Staging an entire mod via the ModId but you need to re-stage some items from the mod to another [Stage](/Mods/GameStages/ZenStages/Stage/), so this allows you to re-stage items.
 
 ```zenscript
-// addIngredientOverride(Ingredient component, @Optional(valueBoolia = true) 布尔累犯Stage);
+// addIngredientOverride(IIngredient ingredient, @Optional(valueBoolean = true) boolean recipeStage);
 TestStage.addIngredientOverride(<myawesomemod:generator>, true);
 ```
 
-将ModId添加到一个阶段。 这将舞台上所有被提供给阶段的 modId 注册的项目。 您还可以提供一个IIngredients 数组，提供的项目将不会被分派。
+Add a ModId to a stage. This will stage all the items found which are registered by the modId provided to the Stage. You can also provide an array of IIngredients which the provided items won't be staged.
 
 ```zenscript
-// 添加ModId(Stroing modId)；
-// addModId(String[…]modId)；
-// addModId(String modid, IIngredient[…]ignoreStaging)；
-TestStage.addModId("blemic")；
-TestStage.addModId("blematiic", [<bloodmagic:someitem>])；
+// addModId(String modId);
+// addModId(String[] modIds);
+// addModId(String modId, IIngredient[] ignoreStaging);
+TestStage.addModId("bloodmagic");
+TestStage.addModId("bloodmagic", [<bloodmagic:someitem>]);
 ```
 
-添加一个 ILiquidStack 到一个阶段。
+Add an ILiquidStack to a stage.
 
 ```zenscript
-// addLiquid(ILiquidStack 液体堆栈)；
-// addLiquids(ILiquidStack[……]液体堆栈)；
-TestStage.addLiquid(<liquid:water>)；
-TestStage.addLiquids[<minecraft:water>, <minecraft:lava>])；
+// addLiquid(ILiquidStack liquidStack);
+// addLiquids(ILiquidStack[] liquidStacks);
+TestStage.addLiquid(<liquid:water>);
+TestStage.addLiquids([<minecraft:water>, <minecraft:lava>]);
 ```
 
-将一个尺寸添加到一个舞台。 需要安装 [DimStages](/Mods/GameStages/DimensionStages/DimensionStages/)。
+Add a dimension to a stage. Requires [DimStages](/Mods/GameStages/DimensionStages/DimensionStages/) to be installed.
 
 ```zenscript
-// 添加维度 (int dimId);
+// addDimension(int dimId);
 TestStage.addDimension(-1);
 ```
 
-添加配方名称到一个阶段。 需要 [累积阶段](/Mods/GameStages/RecipeStages/RecipeStages/) 安装。
-
-```zenscript
-// addRecipeName(字符串累计名称);
-TestStage.addRecipeName("minecraft:boat");
-```
-
-添加配方名称到一个阶段。 需要 [累积阶段](/Mods/GameStages/RecipeStages/RecipeStages/) 安装。
+Add a recipe name to a stage. Requires [RecipeStages](/Mods/GameStages/RecipeStages/RecipeStages/) to be installed.
 
 ```zenscript
 // addRecipeName(string recipeName);
-TestStage.addRecipeRegex("crafttweeper:test_.*");
+TestStage.addRecipeName("minecraft:boat");
 ```
 
-将生物添加到一个阶段。 需要安装 [MobStages](/Mods/GameStages/MobStages/MobStages/)。
+Add a recipe name to a stage. Requires [RecipeStages](/Mods/GameStages/RecipeStages/RecipeStages/) to be installed.
+
+```zenscript
+// addRecipeName(string recipeName);
+TestStage.addRecipeRegex("crafttweaker:test_.*");
+```
+
+Add a mob to a stage. Requires [MobStages](/Mods/GameStages/MobStages/MobStages/) to be installed.
 
 ```zenscript
 // addMob(string mobName);
@@ -101,38 +101,38 @@ TestStage.addMob("minecraft:skeleton", 0);
 TestStage.addMobs(["minecraft:skeleton", "minecraft:skeleton_horse"], 9);
 ```
 
-添加一个TiC材料名称到舞台。 需要安装 [TinkerStage](/Mods/GameStages/TinkerStages/TinkerStages/)。
+Add a TiC material name to a stage. Requires [TinkerStages](/Mods/GameStages/TinkerStages/TinkerStages/) to be installed.
 
 ```zenscript
-// addTiCMaterial(字符串材料名称)；
-// addTiCMaterials(字符串材料名称)；
-TestStage.addTiCMaterial("iron")；
-TestStage.addTiCMaterials(["bronze", "iron"])；
+// addTiCMaterial(string materialName);
+// addTiCMaterials(string materialNames);
+TestStage.addTiCMaterial("iron");
+TestStage.addTiCMaterials(["bronze", "iron"]);
 ```
 
-添加一个TiC修饰符到一个阶段。 需要安装 [TinkerStage](/Mods/GameStages/TinkerStages/TinkerStages/)。
+Add a TiC modifier to a stage. Requires [TinkerStages](/Mods/GameStages/TinkerStages/TinkerStages/) to be installed.
 
 ```zenscript
-// addTiCModifier(字符串修改者名称);
+// addTiCModifier(string modifierName);
 TestStage.addTiCModifier("mending_moss");
 ```
 
-将IE 多块添加到一个阶段。 需要安装 [多块阶段](https://github.com/The-Acronym-Coders/MultiBlock-Stages/)。
+Add a IE Multiblock to a stage. Requires [Multi Block Stages](https://github.com/The-Acronym-Coders/MultiBlock-Stages/) to be installed.
 
 ```zenscript
 // addIEMultiBlock(string multiblock);
 // addIEMultiBlocks(string multiblocks);
 TestStage.addIEMultiBlock("IE:ArcFurnace");
-TestStage.addIEMultiBlocks["IE:Mixer", "IE:SheetmetalTank"]);
+TestStage.addIEMultiBlocks(["IE:Mixer", "IE:SheetmetalTank"]);
 ```
 
-添加矿石替换到一个阶段。 需要 [OreStages](https://github.com/Darkhax-Minecraft/Ore-Stages/#crafttweaker-methods) 安装。
+Add an Ore Replacment to a stage. Requires [OreStages](https://github.com/Darkhax-Minecraft/Ore-Stages/#crafttweaker-methods) to be installed.
 
 ```zenscript
-// addOreplacement(IIngredient blockToHide, @Optional(valueBoolia = false) boolie isNonDefaulting);
-// addOreplacement(IIngredient blockToHide, IItemStack blockToShow, @Optional(valueBoolian = false) boolie isNonDefaulting);
-TestStage. ddOreplacement(<minecraft:iron_bars:*>);
-TestStage.addOreplacement(<minecraft:iron_bars:*>, true);
-TestStage.addOreplacement(<chisel:redstone>, <chisel:granite>);
-TestStage.addOreplacement(<chisel:redstone>, <chisel:granite>, true);
+// addOreReplacement(IIngredient blockToHide, @Optional(valueBoolean = false) boolean isNonDefaulting);
+// addOreReplacement(IIngredient blockToHide, IItemStack blockToShow, @Optional(valueBoolean = false) boolean isNonDefaulting);
+TestStage.addOreReplacement(<minecraft:iron_bars:*>);
+TestStage.addOreReplacement(<minecraft:iron_bars:*>, true);
+TestStage.addOreReplacement(<chisel:redstone>, <chisel:granite>);
+TestStage.addOreReplacement(<chisel:redstone>, <chisel:granite>, true);
 ```

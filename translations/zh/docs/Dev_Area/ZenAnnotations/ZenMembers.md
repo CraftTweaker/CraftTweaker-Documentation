@@ -27,7 +27,7 @@ ZenGetter 有两种类型：ZenGetters 和 ZenMemberGetters。
 
 - `String value`：属性名称（在 ZS 中你调用 object.value）。 当忽略时，则使用字段名。
 - `String getter`：对应 getter 方法的名称（它可能不带有 ZenGetter 注解）。 
-    - 如果未设置或 `""`, 它将使用它 
+    - If not set or `""`, it will use use 
         - 当被注解的字段不是 boolean 类型时为 `get + value`
         - 当被注解的字段是 boolean 类型或 Boolean 类型时为 `is + value`
     - 当为 `null` 时，将不会注册 ZenGetter
@@ -44,23 +44,23 @@ ZenGetter 有两种类型：ZenGetters 和 ZenMemberGetters。
 
 [CraftTweaker 的 IOreDict](https://github.com/jaredlll08/CraftTweaker/blob/1.12/CraftTweaker2-API/src/main/java/crafttweaker/api/oredict/IOreDict.java)
 
-    @ZenClass("crafttweeper.oredict.IORDict")
-    @IterableSimple("craftmiliner.oredict. OreDictEntry")
-    @ZenRegistry
-    公共接口IOreDict extensive Iterable<IOreDictEntry> ~
+    @ZenClass("crafttweaker.oredict.IOreDict")
+    @IterableSimple("crafttweaker.oredict.IOreDictEntry")
+    @ZenRegister
+    public interface IOreDict extends Iterable<IOreDictEntry> {
     
     
         @ZenMemberGetter
-        @ZenOperator(OperatorType) NDEXGET
+        @ZenOperator(OperatorType.INDEXGET)
         @ZenMethod
         IOreDictEntry get(String name);
     
-        @ZenGetter("条目")
+        @ZenGetter("entries")
         List<IOreDictEntry> getEntries();
     
-        @ZenOperator(运营商类型) ONTAINS
+        @ZenOperator(OperatorType.CONTAINS)
         @ZenMethod
-        boolian contains(String name);
+        boolean contains(String name);
     }
     
 
@@ -68,13 +68,13 @@ ZenGetter 有两种类型：ZenGetters 和 ZenMemberGetters。
 
 [ContentTweaker 的 MCAxisAlignedBB](https://github.com/The-Acronym-Coders/ContentTweaker/blob/develop/1.12/src/main/java/com/teamacronymcoders/contenttweaker/api/ctobjects/aabb/MCAxisAlignedBB.java)
 
-    @Zenregistration
-    @ZenClass("mods.contenttweeper.AxisAlignedBB")
-    公共类 MCAxisAlignedBB implement ICTObject<AxisAlignedBB>
+    @ZenRegister
+    @ZenClass("mods.contenttweaker.AxisAlignedBB")
+    public class MCAxisAlignedBB implements ICTObject<AxisAlignedBB> {
         @ZenProperty
         public double minX = 0.0;
     
-    ...
+        ...
     
         @ZenMethod
         public double getMinX() {

@@ -1,30 +1,30 @@
-# チャコールパイル
+# Charcoal Pile
 
-ModTweakerを使用すると、森林伐採用の木炭ウォールレシピを追加または削除できます。
+ModTweaker allows you to add or remove forestry Charcoal Wall Recipes
 
-## 発信中
+## Calling
 
 You can call the package using `mods.forestry.CharcoalWall`
 
-## レシピの削除
+## Recipe Removal
 
 ```zenscript
 //mods.forestry.CharcoalWall.removeWall(IBlock block);
 mods.forestry.CharcoalWall.removeWall(<minecraft:bedrock>.asBlock());
 
 
-//mods.forestry.CharcoalWall.removeWallState(IBlockState State);
+//mods.forestry.CharcoalWall.removeWallState(IBlockState state);
 mods.forestry.CharcoalWall.removeWallState(<blockstate:minecraft:bedrock>);
 
 
-///スタックがブロックに変換できないと失敗します！
+//Will fail if the stack cannot be converted to a block!
 //mods.forestry.CharcoalWall.removeWallStack(IItemStack stack);
 mods.forestry.CharcoalWall.removeWallStack(<minecraft:bedrock>);
 ```
 
 ## Reipe Addition
 
-`` は、壁が提供する炭の量を示しています。
+`amount` states the amount of charcoal the wall will provide.
 
 ```zenscript
 //mods.forestry.CharcoalWall.addWall(IBlock block, int amount);

@@ -1,15 +1,15 @@
 # IItemColorSupplier
 
-IItemColorSupplier 函数可以用于提供 [色彩对象](/Mods/ContentTweaker/Vanilla/Types/Color/Color/) 用于任何东西。
+The IItemColorSupplier function can be used to provide the [Color Object](/Mods/ContentTweaker/Vanilla/Types/Color/Color/) to be used for whatever.
 
 ## 导入相关包
 
-如果您遇到任何问题，可能需要导入软件包，所以比抱歉更安全并添加导入。  
-`导入 mods.contenttweaker.IItemColorSupplier;`
+It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
+`import mods.contenttweaker.IItemColorSupplier;`
 
-## 参数
+## Parameters
 
-IItemColorSupplier 功能具有以下参数的函数。
+The IItemColorSupplier Function is a function with following parameters.
 
-- [IItemStack](/Vanilla/Items/IItemStack/) itemStack → 正在请求颜色的物品。
-- int tintIndex → 色调索引，使用你喜欢的方式。 函数需要返回一个 [颜色对象](/Mods/ContentTweaker/Vanilla/Types/Color/Color/)。
+- [IItemStack](/Vanilla/Items/IItemStack/) itemStack → the item whose color is being requested.
+- int tintIndex → the tint index, use that however you like. The function needs to return an [Color Object](/Mods/ContentTweaker/Vanilla/Types/Color/Color/).

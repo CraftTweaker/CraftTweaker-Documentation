@@ -1,21 +1,21 @@
-# 雕像
+# Carving
 
 ## 所属包名
 
-`chisel.Caring`
+`mods.chisel.Carving`
 
 ## 添加配方
 
 ```zenscript
 //mods.chisel.Carving.addGroup(String name);
-/mods.chisel.Carving.addVariation(String groupName, IItemStack stack);
+//mods.chisel.Carving.addVariation(String groupName, IItemStack stack);
 mods.chisel.Carving.addGroup("test");
 mods.chisel.Carving.addVariation("test", <minecraft:stone>);
 ```
 
 ## 删除配方
 
-您可以通过运行 `/ct chiselGroups` 获取群组名称 </code>
+You can get the names of the groups by running `/ct chiselGroups`
 
 ```zenscript
 //mods.chisel.Carving.removeGroup(String name);

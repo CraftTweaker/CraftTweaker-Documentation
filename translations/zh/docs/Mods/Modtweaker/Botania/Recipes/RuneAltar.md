@@ -1,20 +1,20 @@
-# 神经神器
+# Rune Altar
 
-RuneAltar包用于添加或删除配方到或从Botania Rune Altar。
+The RuneAltar package is used for adding or removing recipes to/from the Botania Rune Altar.
 
 ## 导入包
 
-您可以使用 `mods.botania.RuneAltar 调用 RuneAltar 包`
+You can call the RuneAltar package using `mods.botania.RuneAltar`
 
-## 查找所有注册的配方
+## Find all registered Recipes
 
-您可以使用 [`/ct botania altar`](/Mods/Modtweaker/Botania/Commands/) 找到所有注册的 Rune Altar 配方。
+You can find all registered Rune Altar recipes using [`/ct botania altar`](/Mods/Modtweaker/Botania/Commands/).
 
 ## 添加配方
 
 ```zenscript
-//mods.botania.RuneAltar.addRecipe(IItemStack output, IIngredient[……]input, int mana);
-mods.botania.RuneAltar.addRecipe(<minecraft:planks>[<minecraft:grass>, <minecraft:dirt>], 200);
+//mods.botania.RuneAltar.addRecipe(IItemStack output, IIngredient[] input, int mana);
+mods.botania.RuneAltar.addRecipe(<minecraft:planks>,[<minecraft:grass>, <minecraft:dirt>], 200);
 ```
 
 ## 删除配方

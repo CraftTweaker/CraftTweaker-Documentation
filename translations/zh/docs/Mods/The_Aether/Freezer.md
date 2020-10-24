@@ -3,11 +3,11 @@
 ## 所属包名
 
 ```zenscript
-导入 mods.aether_legacy.Freezer；
+import mods.aether_legacy.Freezer;
 ```
-## 用法
+## Usage
 
 ```zenscript
-Freezer.register冻结(StemStack input, IItemStack output, int time Requireed);
-Freezer.registerFreezerFuel(ItemStack input, int timeGiven);
+Freezer.registerFreezable(IItemStack input, IItemStack output, int timeRequired);
+Freezer.registerFreezerFuel(IItemStack input, int timeGiven);
 ```

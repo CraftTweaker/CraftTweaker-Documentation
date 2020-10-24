@@ -1,24 +1,24 @@
-# Rituale della foresta
+# Ritual of the Forest
 
-## Pacchetto
+## Package
 ```zenscript
 mods.naturesaura.TreeRitual
 ```
 
-## Metodi
-- **Nome Stringa**
-- **[IIngrediente](/Vanilla/Variable_Types/IIngredient) SaplingType** La rappresentazione dell'articolo dell'alberello che deve essere posizionato e coltivato in un albero
-- **[IItemStack](/Vanilla/Items/IItemStack) output** Il risultato dei rituali
+## Methods
+- **String Name**
+- **[IIngredient](/Vanilla/Variable_Types/IIngredient) saplingType** The item representation of the sapling that needs to be placed and grown into a tree
+- **[IItemStack](/Vanilla/Items/IItemStack) output** The rituals result
 - **init time** The time the process takes in ticks
-- **[IIngrediente[]](/Vanilla/Variable_Types/IIngredient) elementi** Gli elementi richiesti per il rituale
+- **[IIngredient[]](/Vanilla/Variable_Types/IIngredient) items** The required items for the ritual
 
-## Addizione
+## Addition
 
 ```zenscript
-mods.naturesaura.TreeRitual.addRecipe(Nome stringa, IIngrediente SaplingType, IItemStack output, int time, IIngredient[] elementi)
+mods.naturesaura.TreeRitual.addRecipe(String name, IIngredient saplingType, IItemStack output, int time, IIngredient[] items)
 ```
 
-## Rimozione
+## Removal
 
 ```zenscript
 mods.naturesaura.TreeRitual.removeRecipe(IItemStack output)

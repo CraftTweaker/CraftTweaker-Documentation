@@ -1,26 +1,26 @@
-# Cambiar el nombre
+# Renaming
 
-Siempre leer 'cofre es molesto, ¿no es así?
+Always reading 'chest' is annoying, isn't it?
 
-Por eso existe la posibilidad de cambiar el nombre de las cosas.
+That's why there's the possibility to rename stuff.
 
-## Cambiando el nombre de la pantalla
+## Changing the display name
 
-Esta es probablemente la manera más fácil de conseguir un nombre de objeto o bloque diferente. Has renombrado `elemento` a `nuevoNombre`:
+This is probably the easiest way to achieve a different item or block name. You rename `item` to `newName`:
 
 ```zenscript
 item.displayName = newName;
 
-//Ejemplo
+//Example
 <minecraft:chest>.displayName = "Storage Box Deluxe";
 ```
 
-`elemento` es un [ItemStack](/Vanilla/Items/IItemStack/).  
-`newName` es una cadena.
+`item` is an [IItemStack](/Vanilla/Items/IItemStack/).  
+`newName` is a String.
 
-## Cambiando la localización
+## Changing the localization
 
-Si algunos inventarios modeados todavía muestran el antiguo nombre del objeto en lugar del nuevo, necesita cambiar la localización. Puedes leer lo que eso significa en la entrada `del juego`.
+If some modded inventories still show the item's old name instead of the new one, you need to change the localization. You can read what that means on the `game` entry.
 
 ```zenscript
 game.setLocalization(languageCode,unlocalizedName,newName);
@@ -28,6 +28,6 @@ game.setLocalization(languageCode,unlocalizedName,newName);
 game.setLocalization("tile.chest.name","StorageBox Deluxe")
 ```
 
-`languageCode` es una cadena y opcional. Si lo omite, se aplicará la localización independientemente del idioma definido por el cliente.  
-`unlocaLizedName` es una cadena.  
-`newName` es una cadena.
+`languageCode` is a string and optional. If you omit it, it will apply the localization regardless of the client's set language.  
+`unlocaLizedName` is a string.  
+`newName` is a string.

@@ -1,16 +1,16 @@
-# Piec przemysłowy
+# Industrial Blast Furnace
 
-## Importowanie pakietu
+## Importing the Package
 `mods.techreborn.blastFurnace`
 
-## Dodawanie przepisów
+## Adding Recipes
 ```zenscript
 mods.techreborn.blastFurnace.addRecipe(IItemStack output1, IItemStack output2, IIngredient input1, IIngredient input2, int ticktime, int euTick, int neededHeat);
 ```
 
-## Usuwanie przepisów
+## Removing Recipes
 ```zenscript
-mods.techreborn.blastFurnace.removeInputRecipe(Składnik składnika);
-mods.techreborn.blastFurnace.removeRecipe(wyjście IItemStack);
+mods.techreborn.blastFurnace.removeInputRecipe(IIngredient ingredient);
+mods.techreborn.blastFurnace.removeRecipe(IItemStack output);
 mods.techreborn.blastFurnace.removeAll();
 ```

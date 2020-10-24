@@ -1,28 +1,28 @@
-# Soczewki górnicze
+# Mining Lens
 
-## Pakiet
+## Package
 
-`mods.rzeczywiścieadditions.MiningLens`
+`mods.actuallyadditions.MiningLens`
 
-## Dodanie
+## Addition
 
 ```zenscript
-//mods.rzeczywiścieadditions.MiningLens.addStoneOre(IOreDictEntry ore, int weight);
-mods.actuyadditions.MiningLens.addStoneOre(<ore:oreIron>, 2);
+//mods.actuallyadditions.MiningLens.addStoneOre(IOreDictEntry ore, int weight);
+mods.actuallyadditions.MiningLens.addStoneOre(<ore:oreIron>, 2);
 
 
-//mods.actuyadditions.MiningLens.addżelOre(IOreReReRe.IOre(IOreDictEntry ore, int weight);
-mods.rzeczywiścieadditions.MiningLens.addżelOre(<ore:oreGold>, 5);
+//mods.actuallyadditions.MiningLens.addNetherOre(IOreDictEntry ore, int weight);
+mods.actuallyadditions.MiningLens.addNetherOre(<ore:oreGold>, 5);
 ```
 
-## Usuwanie
+## Removal
 
 ```zenscript
-//mods.rzeczywiścieadditions.MiningLens.removeStoneOre(IOreDictEntry ore)
-mods.rzeczywiścieadditions.MiningLens.removeStoneOre(<ore:oreIron>
+//mods.actuallyadditions.MiningLens.removeStoneOre(IOreDictEntry ore)
+mods.actuallyadditions.MiningLens.removeStoneOre(<ore:oreIron>)
 
 
 
-//mods.Rzeczywiście.MiningLens.removeNetherOre(IOre(IOreDictEntry ore)
-mods.Rzeczywiście miaadditions.MiningLens.removeOre(<ore:oreGold>)
+//mods.actuallyadditions.MiningLens.removeNetherOre(IOreDictEntry ore)
+mods.actuallyadditions.MiningLens.removeNetherOre(<ore:oreGold>)
 ```

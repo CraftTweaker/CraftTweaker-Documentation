@@ -1,16 +1,16 @@
 # MechanicalSqueezer
 
-このパッケージでは、メカニカルスクイーザーのレシピを変更できます。
+This package allows you to modify recipes for the Mechanical Squeezer.
 
 ## パッケージのインポート
 
-このパッケージをインポートしたい場合は、次のようにします。
+If you want to import this package, here you go:
 
 ```zenscript
 import mods.integrateddynamics.MechanicalSqueezer;
 ```
 
-## レシピを追加中
+## Adding Recipes
 
 ```zenscript
 //MechanicalSqueezer.addRecipe(IItemStack inputStack, @Optional IItemStack outputStack, @Optional ILiquidStack outputFluid, @Optional(10) int duration);
@@ -31,7 +31,7 @@ MechanicalSqueezer.addRecipe(<minecraft:pumpkin>,
     <liquid:water> * 100, 20);
 ```
 
-## レシピを削除
+## Removing Recipes
 
 ```zenscript
 //MechanicalSqueezer.removeRecipe(IItemStack inputStack, @Optional IItemStack outputStack, @Optional ILiquidStack outputFluid, @Optional(10) int duration);

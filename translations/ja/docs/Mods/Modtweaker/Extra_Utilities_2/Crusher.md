@@ -1,16 +1,16 @@
-# クラッシャー
+# Crusher
 
-ModTweakerを使用すると、2つのクラッシャーレシピを追加または削除できます。
+ModTweaker allows you to add or remove Extra Utilities 2 Crusher Recipes
 
-## 発信中
+## Calling
 
-`mods.extrautils2.Crusher` を使ってクラッシャーパッケージを呼び出すことができます。
+You can call the Crusher package using `mods.extrautils2.Crusher`
 
-## 削除中
+## Removing
 
 ```zenscript
-//mods.extraautils2.Crusher.remove(IItemStack outout);
-mods.extraautils2.Crusher.remove(<minecraft:redstone>);
+//mods.extrautils2.Crusher.remove(IItemStack outout);
+mods.extrautils2.Crusher.remove(<minecraft:redstone>);
 ```
 
 ## 加算

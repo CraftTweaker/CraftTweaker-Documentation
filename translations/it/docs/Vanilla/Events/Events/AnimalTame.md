@@ -1,24 +1,24 @@
 # AnimalTame
 
-Questo evento è sparato per determinare se un animale sta per essere addomesticato. Se annullato, **la domatura non riesce**. In caso contrario, serve semplicemente come una notifica della doma in corso.
+This event is fired to determine if an animal is going to be tamed. If canceled, **the tame does not succeed**. Otherwise, it simply serves as a notification of the tame taking place.
 
-## Classe Evento
-Dovrai lanciare l'evento nell'intestazione della funzione come questa classe:  
-`crafttweaker.event. nimalTameEvent`  
-È possibile, naturalmente, anche [importare](/AdvancedFunctions/Import/) la classe prima e utilizzare quel nome allora.
+## Event Class
+You will need to cast the event in the function header as this class:  
+`crafttweaker.event.AnimalTameEvent`  
+You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
 
-## Estensioni dell'interfaccia evento
-AnimalTame Events implementano le seguenti interfacce e sono in grado di chiamare tutti i loro metodi/getter/setter:
+## Event interface extensions
+AnimalTame Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
 
 - [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 
 
 ## ZenGetters/ZenSetters
-Le seguenti informazioni possono essere recuperate/impostate durante l'evento:
+The following information can be retrieved/set during the event:
 
-| ZenGetter   | ZenSetter | Tipo                                              |
-| ----------- | --------- | ------------------------------------------------- |
-| `animale`   |           | [IEntityAnimal](/Vanilla/Entities/IEntityAnimal/) |
-| `animale`   |           | [IEntityAnimal](/Vanilla/Entities/IEntityAnimal/) |
-| `giocatore` |           | [IPlayer](/Vanilla/Players/IPlayer/)              |
+| ZenGetter | ZenSetter | Type                                              |
+| --------- | --------- | ------------------------------------------------- |
+| `animal`  |           | [IEntityAnimal](/Vanilla/Entities/IEntityAnimal/) |
+| `animal`  |           | [IEntityAnimal](/Vanilla/Entities/IEntityAnimal/) |
+| `player`  |           | [IPlayer](/Vanilla/Players/IPlayer/)              |

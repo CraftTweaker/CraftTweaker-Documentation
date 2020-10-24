@@ -1,35 +1,35 @@
 # Numistic Dynamo
 
-## Importuj pakiet
+## Import the package
 
-Aby skrócić połączenia metodą, możesz [zaimportować](/AdvancedFunctions/Import/) pakiet taki jak tak:
+To shorten method calls you can [import](/AdvancedFunctions/Import/) the package like so:
 
 ```zenscript
-importuj mods.thermalexpansion.NumisticDynamo;
+import mods.thermalexpansion.NumisticDynamo;
 ```
 
-## Dodaj paliwo
+## Add Fuel
 
 ```zenscript
 //mods.thermalexpansion.NumisticDynamo.addFuel(IItemStack stack, int energy);
 mods.thermalexpansion.NumisticDynamo.addFuel(<minecraft:stick>, 13);
 ```
 
-## Dodaj Paliwo do Klejnoty
+## Add Gem Fuel
 
 ```zenscript
 //mods.thermalexpansion.NumisticDynamo.addGemFuel(IItemStack stack, int energy);
 mods.thermalexpansion.NumisticDynamo.addGemFuel(<minecraft:stick>, 13);
 ```
 
-## Usuń paliwo
+## Remove Fuel
 
 ```zenscript
 //mods.thermalexpansion.NumisticDynamo.removeFuel(IItemStack stack);
 mods.thermalexpansion.NumisticDynamo.removeFuel(<minecraft:stick>);
 ```
 
-## Usuń Klejnot Paliwo
+## Remove Gem Fuel
 
 ```zenscript
 //mods.thermalexpansion.NumisticDynamo.removeGemFuel(IItemStack stack);

@@ -1,12 +1,12 @@
-# 詳細:
+# Advancements:
 
-進歩は、Skillable (Original Mod) でサポートされているオリジナルの要求タイプの1つであり、ゲートの信頼性を向上させるためにコード内で改善されました。 進歩構文は次のとおりです。
+Advancements is one of the original requirement types supported in Skillable (Original Mod) and has now been improved in the code to be more reliable for gating. The Advancement Syntax is as follows:
 
-    例:
+    Example:
     adv|ResourceLocation
     
-    作業例 :
-    adv|minecraft:fusrry/plant_seed
+    Working Example:
+    adv|minecraft:husbandry/plant_seed
     
 
-これは、Minecraft 以外の Mod によって追加されたものであっても、全てのAdvancements に対しても機能しますが、正しいResource Location を指定する必要があります。
+This works for any and all Advancements even those added by other mods than minecraft, however the correct Resource Location needs to be specified.

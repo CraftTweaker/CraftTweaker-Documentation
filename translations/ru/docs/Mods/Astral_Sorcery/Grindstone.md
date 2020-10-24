@@ -1,18 +1,18 @@
 # Grindstone
 
-Вы можете использовать CrT для добавления или удаления рецептов из AS grindstone.
+You can use CrT to add or remove recipes form the AS grindstone.
 
-## Звонок
+## Calling
 
-Вы можете вызвать пакет InfusionRecipe с помощью `mods.astralsorcery.Grindstone`.
+You can call the InfusionRecipe package using `mods.astralsorcery.Grindstone`.
 
-## Удаление
+## Removing
 
-Это удалит первый шлифовальный рецепт, который обнаруживает, что создаёт предоставленный [IItemStack](/Vanilla/Items/IItemStack/) `вывод`.  
-Если есть несколько рецептов, возвращающих предоставленный выход, вам нужно вызвать этот метод несколько раз!
+This will remove the first grinding recipe it finds that creates the provided [IItemStack](/Vanilla/Items/IItemStack/) `output`.  
+If there are multiple recipes that return the provided output, you need to call this method multiple times!
 
 ```zenscript
-//mods.astralsorcery.Grindstone.removeRecipe(IItemStack);
+//mods.astralsorcery.Grindstone.removeRecipe(IItemStack output);
 mods.astralsorcery.Grindstone.removeRecipe(<minecraft:redstone>);
 ```
 

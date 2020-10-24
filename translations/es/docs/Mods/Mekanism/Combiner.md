@@ -1,21 +1,21 @@
-# Combinador
+# Combiner
 
-A partir del Mekanism 9.7.0 ahora es posible ver todas las cadenas de recetas del Combiner a través del comando `/ct mekrecipes combiner`
+As of Mekanism 9.7.0 it is now possible to view all recipe strings of the Combiner through the command `/ct mekrecipes combiner`
 
-## Adicional
+## Addition
 
 ```zenscript
-mods.mekanism.combiner.addRecipe(IIngredient itemInput, @Optional IIngredient extraInput, ItemStack itemOutput);
+mods.mekanism.combiner.addRecipe(IIngredient itemInput, @Optional IIngredient extraInput, IItemStack itemOutput);
 
 mods.mekanism.combiner.addRecipe(<minecraft:stone> * 4, <minecraft:cobblestone>, <minecraft:stonebrick>);
 mods.mekanism.combiner.addRecipe(<minecraft:torch> * 4, <minecraft:stick>);
 ```
 
-A partir de Mekanism 9.7.0 es posible utilizar IIngredients como el itemInput y extraInput en lugar de sólo ItemStacks.
+As of Mekanism 9.7.0 it is possible to use IIngredients as the itemInput and extraInput instead of only IItemStacks.
 
-Nota: Actualmente todo esto es bucle sobre las diferentes posibilidades en java mientras se añade en lugar de tener que hacerlo en ZenScript. Actualmente no hay soporte para ingredientes compuestos o orediccionarios en las propias máquinas.
+Note: Currently all this does is loop over the different possibilities in java while adding instead of you having to do it in ZenScript. Currently there is no built in support for compound ingredients or oredictionary in the machines themselves.
 
-## Eliminar
+## Removal
 
 ```zenscript
 mods.mekanism.combiner.removeRecipe(IIngredient outputStack, @Optional IIngredient inputStack, @Optional IIngredient extraInput);
@@ -24,11 +24,11 @@ mods.mekanism.combiner.removeRecipe(<minecraft:gravel>, <minecraft:flint>, <mine
 mods.mekanism.combiner.removeRecipe(<minecraft:iron_ore>);
 ```
 
-Especificar un parámetro de entrada sólo eliminará la receta específica que usa dicha entrada. Omitir el parámetro de entrada eliminará todas las recetas que producen la salida especificada.
+Specifying an input parameter will only remove the specific recipe that uses said input. Omitting the input parameter will remove all recipes that produce the specified output.
 
-## Eliminando todas las recetas
+## Removing all recipes
 
-A partir del Mekanism 9.7.0 ahora es posible eliminar todas las recetas de Combiner. (Esto excluye cualquier receta añadida mediante CraftTweaker)
+As of Mekanism 9.7.0 it is now possible to remove all Combiner recipes. (This excludes any recipes added via CraftTweaker)
 
 ```zenscript
 mods.mekanism.combiner.removeAllRecipes();

@@ -1,36 +1,36 @@
-# Forno Di Coke
+# Coke Oven
 
-## Chiamare Il Pacchetto
+## Calling The Package
 
-Puoi chiamare il pacchetto CokeOven utilizzando `mods.immersiveengineering.CokeOven`.
+You can call the CokeOven package using `mods.immersiveengineering.CokeOven`.
 
-## Aggiungi Ricetta
+## Add Recipe
 
-| Richiesto | Tipo              | Tipo Di Dati                                         |
-| --------- | ----------------- | ---------------------------------------------------- |
-| Richiesto | Output            | [IItemstack](/Vanilla/Items/IItemStack/)             |
-| Richiesto | Uscita Carburante | Intero                                               |
-| Richiesto | Input             | [IIngrediente](/Vanilla/Variable_Types/IIngredient/) |
-| Richiesto | Tempo             | Intero                                               |
+| Required | Type        | Data Type                                           |
+| -------- | ----------- | --------------------------------------------------- |
+| Required | Output      | [IItemstack](/Vanilla/Items/IItemStack/)            |
+| Required | Fuel Output | Integer                                             |
+| Required | Input       | [IIngredient](/Vanilla/Variable_Types/IIngredient/) |
+| Required | Time        | Integer                                             |
 
-### Esempio
+### Example
 
 ```zenscript
-//Esempio:
+//Example:
 mods.immersiveengineering.CokeOven.addRecipe(IItemStack output, int fuelOutput, IIngredient input, int time);
 mods.immersiveengineering.CokeOven.addRecipe(<minecraft:coal>, 2, <ore:logWood>, 2000);
 ```
 
-## Rimuovi Ricetta
+## Remove Recipe
 
-| Tipo   | Tipo Di Dati                             |
+| Type   | Data Type                                |
 | ------ | ---------------------------------------- |
 | Output | [IItemstack](/Vanilla/Items/IItemStack/) |
 
-### Esempio:
+### Example:
 
 ```zenscript
-//Esempio:
+//Example:
 mods.immersiveengineering.CokeOven.removeRecipe(IItemStack output);
 mods.immersiveengineering.CokeOven.removeRecipe(<minecraft:diamond>);
 ```

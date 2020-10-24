@@ -1,31 +1,31 @@
-# Lave-vaisselle
+# Dishwasher
 
-Le lave-vaisselle vous permet de nettoyer les outils sales.
+The Dishwasher allows you to clean dirty tools.
 
-Par défaut, les réparations de la durabilité des outils et des armes en vanille uniquement.
+By default repairs durability of vanilla tools and weapons only.
 
-## Enlèvement
+## Removing
 
-## Retirer les objets lavables assortis.
+## Remove matching washable items.
 
 ```zenscript
 mods.cfm.Dishwasher.remove(@Optional final IIngredient item);
 
 mods.cfm.Dishwasher.remove(<minecraft:flint_and_steel>);
-// Supprime tous les objets lavables.
+// Remove all washable items.
 mods.cfm.Dishwasher.remove();
 ```
 
-## Ajout en cours
+## Adding
 
-## Ajouter un article lavable.
+## Add a washable item.
 
 ```zenscript
 mods.cfm.Dishwasher.add(@Nonnull final IItemStack item);
 
 mods.cfm.Dishwasher.add(<minecraft:wooden_shovel>);
 mods.cfm.Dishwasher.add(<minecraft:stone_shovel>);
-mods.cfm. ishwasher.add(<minecraft:iron_shovel>);
+mods.cfm.Dishwasher.add(<minecraft:iron_shovel>);
 mods.cfm.Dishwasher.add(<minecraft:diamond_shovel>);
 mods.cfm.Dishwasher.add(<minecraft:shield>);
 mods.cfm.Dishwasher.add(<minecraft:bow>);

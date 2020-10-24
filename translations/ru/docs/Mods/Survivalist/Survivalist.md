@@ -1,11 +1,11 @@
-# Выживание
+# Survivalist
 
-## Обрушивающий блок
+## Chopping Block
 
 ### InputStack, OutputStack, {outputMultiplier}, {hitCountMultiplier}
 
 ```zenscript
-gigaherz.survivalist.Choppable.addRecipe(IIngredient input, IItemStack, outputMultiplier, hitCountMultiplier);
+gigaherz.survivalist.Choppable.addRecipe(IIngredient input,  IItemStack output, outputMultiplier, hitCountMultiplier);
 ```
 
 ##### Пример
@@ -14,10 +14,10 @@ gigaherz.survivalist.Choppable.addRecipe(IIngredient input, IItemStack, outputMu
 gigaherz.survivalist.Choppable.addRecipe(<minecraft:bone>,<minecraft:dye:15>, 1.0, 1.0);
 ```
 
-### ВыходStack, {InputStack}
+### OutputStack, {InputStack}
 
 ```zenscript
-Гигагерц выживания.Chopable.removeRecipe(IIngredient output, Ingredient input);
+gigaherz.survivalist.Choppable.removeRecipe(IIngredient output, IIngredient input);
 ```
 
 ##### Пример
@@ -26,12 +26,12 @@ gigaherz.survivalist.Choppable.addRecipe(<minecraft:bone>,<minecraft:dye:15>, 1.
 gigaherz.survivalist.Choppable.removeRecipe(<minecraft:stick>);
 ```
 
-## Стойка для сушки
+## Drying Rack
 
 ### InputStack, OutputStack, Time in Ticks
 
 ```zenscript
-gigaherz.survivalist.Dryable.addRecipe(IIngredient input, IItemStack, int time);
+gigaherz.survivalist.Dryable.addRecipe(IIngredient input, IItemStack output, int time);
 ```
 
 ##### Пример
@@ -40,10 +40,10 @@ gigaherz.survivalist.Dryable.addRecipe(IIngredient input, IItemStack, int time);
 gigaherz.survivalist.Dryable.addRecipe(<minecraft:rotten_flesh>, <minecraft:leather>, 300);
 ```
 
-### ВыходStack, {InputStack}
+### OutputStack, {InputStack}
 
 ```zenscript
-Гигагерц выживания.Dryable.removeRecipe(IIngredient output, Ingredient input);
+gigaherz.survivalist.Dryable.removeRecipe(IIngredient output, IIngredient input);
 ```
 
 ##### Пример
@@ -52,4 +52,4 @@ gigaherz.survivalist.Dryable.addRecipe(<minecraft:rotten_flesh>, <minecraft:leat
 gigaherz.survivalist.Dryable.removeRecipe(<minecraft:leather>, <minecraft:rotten_flesh>);
 ```
 
-#### InputStack может быть ore словарь и все окружённые {} необязательным
+#### InputStack can be ore dictionary and anything surrounded by {} is optional

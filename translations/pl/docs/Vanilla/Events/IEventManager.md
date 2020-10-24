@@ -2,7 +2,7 @@
 
 IEventManager jest tym, czego potrzebujesz podczas obsługi zdarzeń.
 
-## Importowanie klasy
+## Importing the class
 
 Może być wymagane, abyś [zaimportował](/AdvancedFunctions/Import/) klasę, jeśli napotkasz jakiekolwiek problemy.  
 `zaimportuj crafttweaker.events.IEventManager;`
@@ -35,13 +35,13 @@ zdarzeń. nPlayerLoggedIn(function(event) {
 
 ZenMethods będą tym, do czego będziesz musiał dzwonić `wydarzeń`, Klasa Wydarzenia będzie tym, czego potrzebujesz by wysłać wydarzenie jako
 
-| Metoda ZenMethod                         | Klasa wydarzenia                                                                                                       |
+| ZenMethod                                | Event Class                                                                                                            |
 | ---------------------------------------- | ---------------------------------------------------------------------------------------------------------------------- |
 | onAllowDespawn                           | [`[PLACEHOLDER] crafttweaker.event.EntityLivingSpawnEvent`](/Vanilla/Events/Events/EntityLivingSpawn/)                 |
 | onAnimalTame                             | [`Zdarzenie zwierzęcia`](/Vanilla/Events/Events/AnimalTame/)                                                           |
-| [PLACEHOLDER] onBlockBreak               | [`[PLACEHOLDER] craft weaker.event.BlockBreak`](/Vanilla/Events/Events/BlockBreak/)                                    |
+| onBlockBreak                             | [`[PLACEHOLDER] craft weaker.event.BlockBreak`](/Vanilla/Events/Events/BlockBreak/)                                    |
 | onBlockHarvestDrops                      | [`crafttweaker.event.BlockHarvestDrops`](/Vanilla/Events/Events/BlockHarvestDrops/)                                    |
-| Miejsce onBlock'a                        | [`[PLACEHOLDER] crafttweaker.event.BlockPlaceEvent`](/Vanilla/Events/Events/BlockPlace/)                               |
+| onBlockPlace                             | [`[PLACEHOLDER] crafttweaker.event.BlockPlaceEvent`](/Vanilla/Events/Events/BlockPlace/)                               |
 | onCheckSpawn                             | [`[PLACEHOLDER] crafttweaker.event.EntityLivingExtendedSpawnEvent`](/Vanilla/Events/Events/EntityLivingSpawn/)         |
 | onCommand                                | [`[PLACEHOLDER] crafttweaker.event.CommandEvent`](/Vanilla/Events/Events/CommandEvent/)                                |
 | onCriticalHit                            | [`[PLACEHOLDER] crafttweaker.event.CriticalHitEvent`](/Vanilla/Events/Events/CriticalHit/)                             |
@@ -71,13 +71,14 @@ ZenMethods będą tym, do czego będziesz musiał dzwonić `wydarzeń`, Klasa Wy
 | onItemToss                               | [`[PLACEHOLDER] crafttweaker.event.ItemTossEvent`](/Vanilla/Events/Events/ItemToss/)                                   |
 | [PLACEHOLDER] onLivingDestroyBlock       | [`[PLACEHOLDER] crafttweaker.event.LivingDestroyBlockEvent`](/Vanilla/Events/Events/LivingDestroyBlock/)               |
 | onLivingExperienceDrop                   | [`[PLACEHOLDER] crafttweaker.event.LivingExperienceDropEvent`](/Vanilla/Events/Events/LivingExperienceDrop/)           |
-| onLivingKockBack                         | [`[PLACEHOLDER] crafttweaker.event.LivingKnockBackEvent`](/Vanilla/Events/Events/LivingKnockBack/)                     |
+| onLivingKnockBack                        | [`[PLACEHOLDER] crafttweaker.event.LivingKnockBackEvent`](/Vanilla/Events/Events/LivingKnockBack/)                     |
 | Poziom onLooting                         | [`Zdarzenie LootingLevelEvent`](/Vanilla/Events/Events/LootingLevel/)                                                  |
 | onMinecartCollision                      | [`crafttweaker.event.MinecartCollisionEvent`](/Vanilla/Events/Events/MinecartCollision/)                               |
 | onMinecartInteract                       | [`crafttweaker.event.MinecartInteractEvent`](/Vanilla/Events/Events/MinecartInteract/)                                 |
 | onMobGriefing                            | [`Zdarzenie MobGriefing`](/Vanilla/Events/Events/MobGriefing/)                                                         |
 | onPlayerAdvancement                      | [`crafttweaker.event.Gracza Advancement`](/Vanilla/Events/Events/PlayerAdvancement/)                                   |
-| onPlayerAnvilRepair                      | [`crafttweaker.event.PlayerAnvilRepair`](/Vanilla/Events/Events/PlayerAnvilRepair/)                                    |
+| onPlayerAnvilRepair                      | [`Zdarzenie gracza AnvilRepair`](/Vanilla/Events/Events/PlayerAnvilRepair/)                                            |
+| onPlayerAnvilUpdate                      | [`[PLACEHOLDER] crafttweaker.event.PlayerAnvilUpdateEvent`](/Vanilla/Events/Events/PlayerAnvilUpdate/)                 |
 | onPlayerAttackEntity                     | [`Zdarzenie Zdarzenia Gracza Ataku`](/Vanilla/Events/Events/PlayerAttackEntity/)                                       |
 | [PLACEHOLDER] onPlayerBonemeal           | [`crafttweaker.event.PlayerBonemealEvent`](/Vanilla/Events/Events/PlayerBonemeal/)                                     |
 | Szybkość łamania gracza                  | [`crafttweaker.event.PlayerBreakSpeed`](/Vanilla/Events/Events/PlayerBreakSpeed/)                                      |

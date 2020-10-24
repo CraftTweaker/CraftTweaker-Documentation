@@ -1,28 +1,28 @@
 # IEntityAgeable
 
-老化したエンティティは、牛のように時間が経つにつれて成長するエンティティです。
+An Ageable Entity is one that grows over time, like a cow.
 
 ## パッケージのインポート
 
 It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
 `import crafttweaker.entity.IEntityAgeable;`
 
-## 拡張する [IEntityCreature](/Vanilla/Entities/IEntityCreature/)
+## Extending [IEntityCreature](/Vanilla/Entities/IEntityCreature/)
 
-IEntityAgeable extends [IEntityCreature](/Vanilla/Entities/IEntityCreature/). つまり、 [IEntities](/Vanilla/Entities/IEntityCreature/) で利用可能なすべての関数は、IEntityAgeable でも利用できるということです。
+IEntityAgeable extends [IEntityCreature](/Vanilla/Entities/IEntityCreature/). That means all functions available to [IEntities](/Vanilla/Entities/IEntityCreature/) also are available to IEntityAgeable.
 
-## メソッド
+## Methods
 
 ### ZenGetters/Setters
 
-| ZenGetter  | ZenSetter   | タイプ  |
+| ZenGetter  | ZenSetter   | Type |
 | ---------- | ----------- | ---- |
 | growingAge | growingAge  | int型 |
 |            | scaleForAge | bool |
 
 ### ZenMethods
 
-#### 年齢を追加
+#### add age
 
 Methods expect an int and the second method an optional bool.  
 Both methods return nothing.  

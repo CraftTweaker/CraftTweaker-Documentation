@@ -1,15 +1,15 @@
-# Verrouillage de l'apprivoisement
+# Taming Locking
 
-## Verrouillage des animaux
+## Animal-Tame Locking
 
-Cette fonctionnalité vous permet d'ajouter des verrous d'exigences à l'apprivoisement d'entités spécifiques.
+This feature allows for you to add requirement locks to taming specific entities.
 
-### Syntaxe
+### Syntax
 
-[Lien vers IEntityDefinition](/Vanilla/Entities/IEntityDefinition/)
+[Link to IEntityDefinition](/Vanilla/Entities/IEntityDefinition/)
 
-    # Exemple:
+    # Blank Example:
     mods.compatskills.AnimalTameLock.addTameLock(IEntityDefinition definition, String... defaultRequirements);
     
-    # Exemple de Travail :
+    # Working Example:
     mods.compatskills.AnimalTameLock.addTameLock(<entity:minecraft:wolf>, "reskillable:mining|5", "reskillable:magic|7");

@@ -1,11 +1,11 @@
 # Теги
 
-Теги - это мощная концепция, которая присутствует в Vanilla Minecraft начиная с 1.13. Он позволяет игрокам и создателям датапака определить набор элементов для того, чтобы они считались одинаковыми в определенном контексте, удаление некоторых хардкодов блоков и предметов в коде.
+Tags are a powerful concept that has been present in Vanilla Minecraft since 1.13. It allows players and datapack makers to define a set of elements to be considered the same in a certain context, removing some of the hardcoding of blocks and items in code.
 
-Теги представлены как набор файлов JSON, размещенных в папке `данные/<namespace>/tags/<tag-type>` , где `пространства имён` идентифицирует пространство имён, принадлежащее тэгам, и `<tag-type>` тип элементов, которые группы тегов.
+Tags are represented as a set of JSON files placed in the `data/<namespace>/tags/<tag-type>` directory, where `namespace` identifies the namespace the tags belong to, and `<tag-type>` the type of elements that the tag groups.
 
-Эта концепция может показаться похожей в концепции словаря руды, и на самом деле она почти одинакова. Однако, в отличие от словаря , тэги также могут ссылаться друг на друга, а некоторые выступают в качестве групп для других. Более того, в то время как руда в словаре работает только с элементами (т.е. вещи, которые могут быть помещены в ваш инвентарь), тэги также работают с блоками, жидкостью и другими типами, если это необходимо.
+This concept may seem similar in concept to the Ore Dictionary, and in fact, it is almost the same. Differently from the ore dictionary, though, tags can also reference one another, with some acting as groups for others. Moreover, while the ore dictionary only works with items (i.e. things that can be placed in your inventory), tags also work with blocks, fluids, and other types if needed.
 
-Внедрение Босона отличается от применения Ваниллы в силу огромных различий во внутренних изменениях в 1. 3, но он работает почти так же, за исключением возможности более легкого расширения модов с новыми типами тегов. По этой причине интеграция CraftTweaker также отличается друг от друга.
+Boson's implementation differs from Vanilla's due to the huge difference in internal changes in 1.13, but it works almost the same, except for allowing easier mod extension with new tag types. For this reason, the CraftTweaker integration is also different.
 
-Чтобы начать работу, прочитайте, как [получить тег через обработчик скобки](/Mods/Boson/Tags/BracketHandler/).
+To get started, read how to [obtain a tag via a bracket handler](/Mods/Boson/Tags/BracketHandler/).

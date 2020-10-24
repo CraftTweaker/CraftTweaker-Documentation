@@ -1,4 +1,4 @@
-# Пакетный режим
+# Packmode
 
-Пакетный мод является аддоном CraftTweaker, который позволяет создавать различные режимы наборов с помощью пользовательского препроцессора.  
-Для достижения этой цели вам нужно будет изменить конфигурационный файл, а затем *полностью перезапустить игру*
+The Packmode mod is a CraftTweaker addon that lets you create different pack modes using a custom preprocessor.  
+To achieve this, you will need to change a config file and then *fully restart your game*

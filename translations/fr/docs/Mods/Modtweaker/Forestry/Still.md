@@ -1,12 +1,12 @@
-# En cours
+# Still
 
-ModTweaker vous permet d'ajouter ou de supprimer des recettes encore en bois
+ModTweaker allows you to add or remove forestry Still Recipes
 
-## Appel en cours
+## Calling
 
 You can call the package using `mods.forestry.Still`
 
-## Suppression de la recette
+## Recipe Removal
 
 ```zenscript
 //mods.forestry.Still.removeRecipe(ILiquidStack output, @Optional ILiquidStack fluidInput);
@@ -14,7 +14,7 @@ mods.forestry.Still.removeRecipe(<liquid:bio.ethanol>);
 mods.forestry.Still.removeRecipe(<liquid:refinedcanolaoil>,<liquid:canolaoil>);
 ```
 
-## Ajout de recette
+## Recipe Addition
 
 ```zenscript
 //mods.forestry.Still.addRecipe(ILiquidStack fluidOutput, ILiquidStack fluidInput, int timePerUnit);

@@ -1,6 +1,6 @@
 # Tartaric Forge
 
-## パッケージ
+## Package
 
 `mods.bloodmagic.TartaricForge`
 
@@ -12,10 +12,10 @@ inputs has a max size of 4
 mods.bloodmagic.TartaricForge.addRecipe(<minecraft:diamond>,[<minecraft:dirt>, <minecraft:dirt>, <minecraft:dirt>, <minecraft:dirt>], 10,10);
 ```
 
-## 削除
+## Removal
 
 ```zenscript
 inputs has a max size of 4
 //mods.bloodmagic.TartaricForge.removeRecipe(IItemStack[] inputs);
-mods.bloodmagic.TartartaricForge.removeRecipe([<minecraft:ghast_tear>,<minecraft:feather>, <minecraft:feather>]);
+mods.bloodmagic.TartaricForge.removeRecipe([<minecraft:ghast_tear>,<minecraft:feather>, <minecraft:feather>]);
 ```

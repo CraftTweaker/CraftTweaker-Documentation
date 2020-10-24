@@ -1,16 +1,16 @@
-# Stop pieca
+# Alloy Furnace
 
-## Importowanie pakietu
-`mods.nuclearcraft.Piec Stalowy`
+## Importing the Package
+`mods.nuclearcraft.AlloyFurnace`
 
-## Dodawanie przepisów
+## Adding Recipes
 ```zenscript
-mods.nuclearcraft.AlloyFurnace.addRecipe(IInput1, IInInput2, IIngredient itemOutput, @Opcjonalny podwójny timeMultiplier, @Opcjonalny podwójny nośnik, @Opcjonalny podwójny proces);
+mods.nuclearcraft.AlloyFurnace.addRecipe(IIngredient itemInput1, IIngredient itemInput2, IIngredient itemOutput, @Optional double timeMultiplier, @Optional double powerMultiplier, @Optional double processRadiation);
 ```
 
-## Usuwanie przepisów
+## Removing Recipes
 ```zenscript
-mods.nuclearcraft.AlloyFurnace.removeRecipeWithInput(ISkładnik itemInput1, ISkładnik itemInput2);
-mods.nuclearcraft.[PLACEHOLDER] AlloyFurnace.removeRecipeWithOutput(IIngredient itemOutput);
-mods.nuclearcraft.c. „oprogramowanie” specjalnie zaprojektowane lub zmodyfikowane do „rozwoju”, „produkcji” lub „użytkowania” sprzętu wyszczególnionego w pozycjach 2B001, 2B006, 2B009, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109,
+mods.nuclearcraft.AlloyFurnace.removeRecipeWithInput(IIngredient itemInput1, IIngredient itemInput2);
+mods.nuclearcraft.AlloyFurnace.removeRecipeWithOutput(IIngredient itemOutput);
+mods.nuclearcraft.AlloyFurnace.removeAllRecipes();
 ```

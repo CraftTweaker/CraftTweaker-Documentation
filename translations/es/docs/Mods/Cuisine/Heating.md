@@ -1,32 +1,32 @@
-# Calefacción de cuencas
+# Basin Heating
 
-## Adicional
+## Addition
 
 ```zenscript
 import mods.cuisine.BasinHeating;
 
-BasinHeating.add(entrada ILiquidStack, salida ItemStack); // Usar 1 como valor de calor
-BasinHeating. dd(entrada ILiquidStack, salida ItemStack, valor de calor interno);
+BasinHeating.add(ILiquidStack input, IItemStack output); // Use 1 as heat value
+BasinHeating.add(ILiquidStack input, IItemStack output, int heatValue);
 
 BasinHeating.add(<liquid:lava> * 1000, <item:minecraft:diamond>);
 BasinHeating.add(<liquid:water> * 1000, <item:minecraft:diamond>, 100);
 ```
 
-## Eliminar
+## Removal
 
 ```zenscript
 import mods.cuisine.BasinHeating;
 
-// Elimina por entrada.
-BasinHeating.remove(entrada ILiquidStack);
+// Remove by input.
+BasinHeating.remove(ILiquidStack input);
 
 BasinHeating.remove(<liquid:lava> * 1000);
 
-// Elimina por identificador.
+// Remove by identifier.
 BasinHeating.remove(String id);
 
 BasinHeating.remove("recipe_name");
 
-// ¡Elimina todo!
+// Remove everything!
 BasinHeating.removeAll();
 ```

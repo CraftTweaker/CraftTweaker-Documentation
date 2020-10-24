@@ -1,11 +1,11 @@
 # IFurnaceRecipe
 
-ICraftingRecipeは、ZSがそれを見る方法を炉テーブルのレシピです。
+An ICraftingRecipe is a furnace table recipe the way ZS sees it.
 
-## クラスのインポート
+## Importing the class
 
-エラーを避けるためにクラスを [インポート](/AdvancedFunctions/Import/) する必要があるかもしれません。  
-`import crafttweaker.recipe.IFurnaceRecipe`
+It might be required to [import](/AdvancedFunctions/Import/) the class to avoid errors.  
+`import crafttweaker.recipes.IFurnaceRecipe`
 
 ## ZenMethods/Getters
 
@@ -16,7 +16,7 @@ rec.commandString;
 rec.toCommandString();
 ```
 
-### その他の取得
+### Other getters
 
 ```zenscript
 rec.input;

@@ -1,53 +1,53 @@
-# Teil
+# Part
 
-Ein Teil ist das Formular, in dem ein Gegenstand ist, zum Beispiel ein Getriebe oder ein Erz.
+A Part is the form an item is in, for example a gear or an ore.
 
 ## Dieses Paket importieren
 
-Es kann erforderlich sein, dass Sie das Paket importieren, wenn Sie irgendwelche Probleme haben. Seien Sie also besser sicher als entschuldigen und fügen Sie den Import hinzu.  
-`mods.contenttweaker importieren.Teil;`
+It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
+`import mods.contenttweaker.Part;`
 
-## Ein solches Objekt wird abgerufen
+## Retrieving such an object
 
-Sie können entweder ein bestehendes Bauteil mit dem [Materialsystem](/Mods/ContentTweaker/Materials/MaterialSystem/) abrufen oder ein völlig neues mit dem [Bauteilbauer](/Mods/ContentTweaker/Materials/Parts/Part_Builder/) erstellen
+You can either retrieve an existing Part using the [MaterialSystem](/Mods/ContentTweaker/Materials/MaterialSystem/) or create an entirely new one using the [Part Builder](/Mods/ContentTweaker/Materials/Parts/Part_Builder/)
 
 <details>
-    <summary>Folgende Typen sind vorab registriert (Schlagzeilen sind die <a href="../PartType">Teilentypen</a>):</summary>
-    <h4>Artikel:</h4>
+    <summary>Following types are pre-registered (Headlines are the <a href="../PartType">Part types</a>):</summary>
+    <h4>Items:</h4>
         <ul>
-            <li>Strahl<img src="../Assets/beam.png" alt="symbol"></li>
-            <li>Bolzen<img src="../Assets/bolt.png" alt="symbol"></li>
-            <li>Gehäuse<img src="../Assets/casing.png" alt="symbol"></li>
-            <li>Klumpen<img src="../Assets/clump.png" alt="symbol"></li>
-            <li>Kristall<img src="../Assets/crystal.png" alt="symbol"></li>
-            <li>Zerkleinertes Erz (zerkleinert)<img src="../Assets/crushed_ore.png" alt="symbol"></li>
-            <li>Dichte Platte (dense_plate)<img src="../Assets/dense_plate.png" alt="symbol"></li>
-            <li>Schmutziger Staub (dirty_staub)<img src="../Assets/dirty_dust.png" alt="symbol"></li>
-            <li>Staub<img src="../Assets/dust.png" alt="symbol"></li>
-            <li>Ausrüstung<img src="../Assets/gear.png" alt="symbol"></li>
-            <li>Ingot<img src="../Assets/ingot.png" alt="symbol"></li>
-            <li>Nugget<img src="../Assets/nugget.png" alt="symbol"></li>
-            <li>Platte<img src="../Assets/plate.png" alt="symbol"></li>
-            <li>Stange<img src="../Assets/rod.png" alt="symbol"></li>
-            <li>Scherbe<img src="../Assets/shard.png" alt="symbol"></li>
+            <li>Beam<img src="../Assets/beam.png" alt="icon"></li>
+            <li>Bolt<img src="../Assets/bolt.png" alt="icon"></li>
+            <li>Casing<img src="../Assets/casing.png" alt="icon"></li>
+            <li>Clump<img src="../Assets/clump.png" alt="icon"></li>
+            <li>Crystal Crystal<img src="../Assets/crystal.png" alt="icon"></li>
+            <li>Crushed Ore (crushed_ore)<img src="../Assets/crushed_ore.png" alt="icon"></li>
+            <li>Dense Plate (dense_plate)<img src="../Assets/dense_plate.png" alt="icon"></li>
+            <li>Dirty Dust (dirty_dust)<img src="../Assets/dirty_dust.png" alt="icon"></li>
+            <li>Dust<img src="../Assets/dust.png" alt="icon"></li>
+            <li>Gear<img src="../Assets/gear.png" alt="icon"></li>
+            <li>Ingot<img src="../Assets/ingot.png" alt="icon"></li>
+            <li>Nugget<img src="../Assets/nugget.png" alt="icon"></li>
+            <li>Plate<img src="../Assets/plate.png" alt="icon"></li>
+            <li>Rod<img src="../Assets/rod.png" alt="icon"></li>
+            <li>Shard<img src="../Assets/shard.png" alt="icon"></li>
         </ul>
     <h4>Blocks:</h4>
         <ul>
-            <li>Blockieren<img src="../Assets/block.png" alt="symbol"></li>
+            <li>Block<img src="../Assets/block.png" alt="icon"></li>
         </ul>
     <h4>Ores:</h4>
         <ul>
-            <li>Erz</li>
-            <li>Dichte Erz (dense_Erz)</li>
-            <li>Armer Ore(arm_ore)</li>
+            <li>Ore</li>
+            <li>Dense Ore (dense_ore)</li>
+            <li>Poor Ore(poor_ore)</li>
         </ul>
-    <h4>Flüssigkeiten:</h4>
+    <h4>Fluids:</h4>
         <ul>
             <li>Molten</li>
         </ul><br />
     <h4>Armor:</h4>
         <ul>
-            <li>Rüstung <img src="../Assets/armor_head.png" alt="kopfsymbol"><img src="../Assets/armor_chest.png" alt="Truhensymbol"><img src="../Assets/armor_legs.png" alt="Beinsymbol"><img src="../Assets/armor_feet.png" alt="Füße Symbol"></li>
+            <li>Armor <img src="../Assets/armor_head.png" alt="head icon"><img src="../Assets/armor_chest.png" alt="chest icon"><img src="../Assets/armor_legs.png" alt="legs icon"><img src="../Assets/armor_feet.png" alt="feet icon"></li>
         </ul>
     <h4>Minecart</h4>
         <ul>
@@ -55,28 +55,28 @@ Sie können entweder ein bestehendes Bauteil mit dem [Materialsystem](/Mods/Cont
         </ul>
 </details>
 
-## Felder
+## Fields
 
-Sie können die folgenden Informationen von einem Teil abrufen:
+You can retrieve the following information from a Part:
 
-| ZenMethode                | Rückgabetyp                                                                     |
-| ------------------------- | ------------------------------------------------------------------------------- |
-| hasOverlay()              | boolean                                                                         |
-| getName()                 | string                                                                          |
-| getUnlocalizedName()      | string                                                                          |
-| getShortUnlocalizedName() | string                                                                          |
-| getPartType()             | [Bauteiltyp](/Mods/ContentTweaker/Materials/Parts/PartType/)                    |
-| getPartTypeName()         | string                                                                          |
-| getOreDictPrefix()        | string                                                                          |
-| getData()                 | Liste <[IPartDataPiece](/Mods/ContentTweaker/Materials/Parts/PartDataPiece/)\> |
+| ZenMethod                 | Rückgabetyp                                                                   |
+| ------------------------- | ----------------------------------------------------------------------------- |
+| hasOverlay()              | boolean                                                                       |
+| getName()                 | string                                                                        |
+| getUnlocalizedName()      | string                                                                        |
+| getShortUnlocalizedName() | string                                                                        |
+| getPartType()             | [PartType](/Mods/ContentTweaker/Materials/Parts/PartType/)                    |
+| getPartTypeName()         | string                                                                        |
+| getOreDictPrefix()        | string                                                                        |
+| getData()                 | List<[IPartDataPiece](/Mods/ContentTweaker/Materials/Parts/PartDataPiece/)\> |
 
-## Bei Material(s) registrieren
+## Register to Material(s)
 
-Sie können dies verwenden, um ein oder mehrere Materialien zu diesem Teil zu registrieren
+You can use this to register one or several Materials to this part
 
 ```zenscript
-part.registerToMaterial(Material);
-part.registerToMaterials(Material[] Material);
+part.registerToMaterial(Material material);
+part.registerToMaterials(Material[] materials);
 ```
 
-Die Funktion gibt entweder ein einzelnes [MaterialPart](/Mods/ContentTweaker/Materials/Materials/MaterialPart/) Objekt oder eine Liste davon zurück je nachdem, ob Sie ein oder mehrere Materialien gleichzeitig registriert haben.
+The function will either return a single [MaterialPart](/Mods/ContentTweaker/Materials/Materials/MaterialPart/) object or a List of them, depending on whether you registered one or multiple materials at once.

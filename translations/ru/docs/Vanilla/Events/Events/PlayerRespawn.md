@@ -1,6 +1,6 @@
-# Возрождение игрока
+# PlayerRespawn
 
-Событие Восстановления Игрока запускается при возрождении игрока.
+The PlayerRespawn Event is fired whenever a player respawns.
 
 ## Класс события
 
@@ -10,7 +10,7 @@ You can, of course, also [import](/AdvancedFunctions/Import/) the class before a
 
 ## Наследование от интерфейсов событий
 
-PlayerRespawn События реализуют следующие интерфейсы и также могут вызвать все их методы/getters/setters:
+PlayerRespawn Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
 
 - [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
 
@@ -18,7 +18,7 @@ PlayerRespawn События реализуют следующие интерф�
 
 Следующая информация может быть получена от события:
 
-| Геттер           | Возвращаемый тип                                      |
-| ---------------- | ----------------------------------------------------- |
-| `player`         | [IPlayer](/Vanilla/Players/IPlayer/)                  |
-| `isEndConquered` | bool (государства, если респаун из конечного портала) |
+| Геттер           | Возвращаемый тип                                          |
+| ---------------- | --------------------------------------------------------- |
+| `player`         | [IPlayer](/Vanilla/Players/IPlayer/)                      |
+| `isEndConquered` | bool (states if the respawn is because of the end portal) |

@@ -1,23 +1,23 @@
 # ZenClass
 
-Una clase ZenClass es una clase java que ha sido expuesta a ZenScript.
+A ZenClass is a java class that has been exposed to ZenScript.
 
-## Ejemplo
+## Example
 
 [CraftTweaker's IItemStack](https://github.com/jaredlll08/CraftTweaker/blob/1.12/CraftTweaker2-API/src/main/java/crafttweaker/api/item/IItemStack.java)
 
 ```java
-@ZenClass("crafttweaker.item.ItemStack")
+@ZenClass("crafttweaker.item.IItemStack")
 @ZenRegister
-interfaz pública IItemStack extends IIngredient {
-    //Cut out para mantener la página corta
+public interface IItemStack extends IIngredient {
+    //Cut out to keep the page short
 }
 ```
 
-La aplicación real no necesita ser anotada.
+The actual implementation does not need to be annotated.
 
-## Qué clases se pueden anotar || Información adicional
+## What classes can be annotated || Additional Info
 
-- Puede anotar todas las clases Java
-- Debe dar a la anotación un valor de cadena (por ejemplo, `crafttweaker.item.IItemStack`). Este será el nombre interno de ZS para la clase.
-- Después de declarar una clase ZenClass, todavía necesita registrarla. Se recomienda que utilice [`@ZenRegister`](/Dev_Area/ZenAnnotations/Annotation_ZenRegister/) para eso
+- You can annotate all Java Classes
+- You should give the annotation a String value (e.g. `crafttweaker.item.IItemStack`). This will be the ZS internal name for the class.
+- After declaring a class a ZenClass, you still need to register it. It is recommended that you use [`@ZenRegister`](/Dev_Area/ZenAnnotations/Annotation_ZenRegister/) for that

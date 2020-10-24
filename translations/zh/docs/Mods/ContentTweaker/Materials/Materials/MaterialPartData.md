@@ -1,61 +1,31 @@
-# 材料合作伙伴数据
+# MaterialPartData
 
-材质零件数据是可以添加到一个 [MaterialPart](/Mods/ContentTweaker/Materials/Materials/MaterialPart/) 的数据，以给它一些更多的属性。
+Material Part Data is data that can be added to a [MaterialPart](/Mods/ContentTweaker/Materials/Materials/MaterialPart/) to give it some more properties.
 
 ## 导入相关包
 
-如果您遇到任何问题，可能需要导入软件包，所以比抱歉更安全并添加导入。  
-`导入 mods.contenttweaker.MaterialPartData;`
+It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
+`import mods.contenttweaker.MaterialPartData;`
 
-## 正在获取此对象
+## Retrieving such an object
 
-您可以通过使用 `getData()` 方法在一个 [MaterialPart](/Mods/ContentTweaker/Materials/Materials/MaterialPart/) 对象上获得一个 MaterialPartData 对象。
+You can get a MaterialPartData object by using the `getData()` Method on a [MaterialPart](/Mods/ContentTweaker/Materials/Materials/MaterialPart/) object.
 
 ## 方法
 
-您只能使用 MateralPartData 添加更多数据并检索存储的数据！ 你这样做：
+All you can do with MaterialPartData is add more Data and retrieve stored data! You do that like so:
 
 ```zenscript
-MPD.addDataValue(名字，字符串值)；
-MPD.getIntValue(字符串值)；
-MPD.GetStringValue(字符串默认值)；
+MPD.addDataValue(String name, String value);
+MPD.getIntValue(String name, int defaultValue);
+MPD.getStringValue(String name, String defaultValue);
 ```
 
-现在，什么是名字或值？  
-好的，这取决于你正在使用的工具的部件。  
-下面您会找到一个 CoT 基本部件类型的列表：
+Now, what to put in as name or value?  
+Well, that depends on the parttype of the tool you are using.  
+Below you will find a list for CoT's basic Part Types:
 
-<details><summary>项目</summary> 
-
-<table>
-  <th>
-    名称
-  </th>
-  
-  <th>
-    值
-  </th>
-  
-  <th>
-    必填？
-  </th></tr> 
-  
-  <tr>
-    <td>
-      刻录
-    </td>
-    
-    <td>
-      一个"整数"(例如"100")
-    </td>
-    
-    <td>
-      否
-    </td>
-  </tr>
-</table></details>
-
-<details><summary>盔甲</summary> 
+<details><summary>Items</summary> 
 
 <table>
   <th>
@@ -67,117 +37,147 @@ MPD.GetStringValue(字符串默认值)；
   </th>
   
   <th>
-    必填？
+    Required?
   </th></tr> 
   
   <tr>
     <td>
-      耐久性
+      burn
     </td>
     
     <td>
-      一个"整数"(例如"10")
+      An "Integer" (e.g. "100")
     </td>
     
     <td>
-      否
-    </td>
-  </tr>
-  
-  <tr>
-    <td>
-      附魔性
-    </td>
-    
-    <td>
-      一个"整数"(例如"10")
-    </td>
-    
-    <td>
-      否
-    </td>
-  </tr>
-  
-  <tr>
-    <td>
-      减少
-    </td>
-    
-    <td>
-      四个“整数”（如："2、5、6、2") <br />表示足迹、护腿、胸甲、头位
-    </td>
-    
-    <td>
-      否
-    </td>
-  </tr>
-  
-  <tr>
-    <td>
-      强度
-    </td>
-    
-    <td>
-      一个"浮点" (例如"2.4")
-    </td>
-    
-    <td>
-      否
+      No
     </td>
   </tr>
 </table></details>
 
-<details><summary>封禁</summary> 
+<details><summary>Armor</summary> 
 
-| 名称   | 值              | 必填？ |
-| ---- | -------------- | --- |
-| 硬度   | 一个"整数"(例如"3")  | 否   |
-| 抗性   | 一个"整数"(例如"15") | 否   |
-| 收获级别 | 一个"整数"(例如"1")  | 否   |
-| 收获工具 | "工具"(例如"选轴")   | 否   |</details>
+<table>
+  <th>
+    名称
+  </th>
+  
+  <th>
+    值
+  </th>
+  
+  <th>
+    Required?
+  </th></tr> 
+  
+  <tr>
+    <td>
+      durability
+    </td>
+    
+    <td>
+      An "Integer" (e.g. "10")
+    </td>
+    
+    <td>
+      No
+    </td>
+  </tr>
+  
+  <tr>
+    <td>
+      enchantability
+    </td>
+    
+    <td>
+      An "Integer" (e.g. "10")
+    </td>
+    
+    <td>
+      No
+    </td>
+  </tr>
+  
+  <tr>
+    <td>
+      reduction
+    </td>
+    
+    <td>
+      Four "Integers" (e.g. "2, 5, 6, 2") <br />Representing Footwear, Leggins, Chestplate, Headslot
+    </td>
+    
+    <td>
+      No
+    </td>
+  </tr>
+  
+  <tr>
+    <td>
+      toughness
+    </td>
+    
+    <td>
+      A "float" (e.g. "2.4")
+    </td>
+    
+    <td>
+      No
+    </td>
+  </tr>
+</table></details>
 
-<details><summary>流体</summary> 
+<details><summary>Block</summary> 
 
-| 名称  | 值                         | 必填？ |
-| --- | ------------------------- | --- |
-| 温度  | 一个“整数”(例如"300")           | 否   |
-| 密度： | 一个"整数"(例如"1000")          | 否   |
-| 亮度  | 一个"整数"(例如"0")             | 否   |
-| 视觉性 | 一个"整数"(例如"100")           | 否   |
-| 蒸发量 | A "boolean" (e.g. "true") | 否   |</details>
+| 名称           | 值                         | Required? |
+| ------------ | ------------------------- | --------- |
+| hardness     | An "Integer" (e.g. "3")   | No        |
+| resistance   | An "Integer" (e.g. "15")  | No        |
+| harvestLevel | An "Integer" (e.g. "1")   | No        |
+| harvestTool  | A "tool" (e.g. "pickaxe") | No        |</details>
 
-<details><summary>矿石</summary> 
+<details><summary>Fluid</summary> 
 
-| 名称   | 值                                                     | 必填？ |
-| ---- | ----------------------------------------------------- | --- |
-| 掉落数  | 一个“项目列表”(例如"minecraft:redstone,minecraft:gold_ingot") | 否   |
-| 变体   | "方块列表"(例如"minecraft:stone,minecraft:end_stone")       | 否   |
-| 硬度   | "整数列表"(例如"3,3")                                       | 否   |
-| 抗性   | "整数列表"(例如"15,15")                                     | 否   |
-| 收获级别 | "整数列表"(例如"1,1")                                       | 否   |
-| 收获工具 | "工具列表" (例如"选择轴,选择轴")                                  | 否   |</details>
+| 名称          | 值                          | Required? |
+| ----------- | -------------------------- | --------- |
+| temperature | An "Integer" (e.g. "300")  | No        |
+| density     | An "Integer" (e.g. "1000") | No        |
+| luminosity  | An "Integer" (e.g. "0")    | No        |
+| viscosity   | An "Integer" (e.g. "100")  | No        |
+| vaporize    | A "boolean" (e.g. "true")  | No        |</details>
+
+<details><summary>Ore</summary> 
+
+| 名称           | 值                                                              | Required? |
+| ------------ | -------------------------------------------------------------- | --------- |
+| drops        | An "itemList" (e.g. "minecraft:redstone,minecraft:gold_ingot") | No        |
+| variants     | A "Block List" (e.g. "minecraft:stone,minecraft:end_stone")    | No        |
+| hardness     | An "Integer list" (e.g. "3,3")                                 | No        |
+| resistance   | An "Integer list" (e.g. "15,15")                               | No        |
+| harvestLevel | An "Integer list" (e.g. "1,1")                                 | No        |
+| harvestTool  | A "toolList" (e.g. "pickaxe,pickaxe")                          | No        |</details>
 
 <details><summary>Minecart</summary> 
 
-| 名称         | 值                | 必填？ |
-| ---------- | ---------------- | --- |
-| 最大速度       | 一个"浮点" (例如"1.0") | 否   |
-| 拖动         | 一个"浮点" (例如"1.0") | 否   |
-| riddenDrag | 一个"浮点" (例如"1.0") | 否   |</details>
+| 名称         | 值                      | Required? |
+| ---------- | ---------------------- | --------- |
+| maxSpeed   | A "float" (e.g. "1.0") | No        |
+| drag       | A "float" (e.g. "1.0") | No        |
+| riddenDrag | A "float" (e.g. "1.0") | No        |</details>
 
 ## 例子
 
 ```zenscript
-Import mods.contenttweeper.MaterialSystem;
+import mods.contenttweaker.MaterialSystem;
 
 val oreData = MaterialSystem.getMaterialBuilder().setName("Lawrencium").setColor(15426660).build().registerPart("ore").getData();
 oreData.addDataValue("drops", "minecraft:redstone,minecraft:gold_ingot");
-ore.addDataValue("variants", "minecraft:stone,minecraft:end_stone");
-oreData. ddDataValue("hardness", "3,3");
+oreData.addDataValue("variants", "minecraft:stone,minecraft:end_stone");
+oreData.addDataValue("hardness", "3,3");
 oreData.addDataValue("resistance", "15,15");
 oreData.addDataValue("harvestLevel", "1,1");
 oreData.addDataValue("harvestTool", "pickaxe,shovel");
 
-oreData.addDataValue("test", 1");
-print(oreData.getValue("test", 1");
+oreData.addDataValue("test", 1);
+print(oreData.getIntValue("test", -1));
 ```

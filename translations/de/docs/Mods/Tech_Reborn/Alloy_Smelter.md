@@ -1,14 +1,14 @@
-# Legierungsschmelzer
+# Alloy Smelter
 
-## Paket wird importiert
+## Importing the Package
 `mods.techreborn.alloySmelter`
 
-## Rezepte hinzufügen
+## Adding Recipes
 ```zenscript
-mods.techreborn.alloySmelter.addRecipe(IItemStack Output, IIngredient input1, IIngredient input2, int ticktime, int euTick);
+mods.techreborn.alloySmelter.addRecipe(IItemStack output, IIngredient input1, IIngredient input2, int ticktime, int euTick);
 ```
 
-## Rezepte entfernen
+## Removing Recipes
 ```zenscript
 mods.techreborn.alloySmelter.removeInputRecipe(IIngredient ingredientA, IIngredient ingredientB);
 mods.techreborn.alloySmelter.removeRecipe(IItemStack output);

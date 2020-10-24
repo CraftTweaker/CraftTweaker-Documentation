@@ -1,21 +1,21 @@
-# 科学計算ツール
+# Scientific Calculator
 
-## パッケージ
+## Package
 ```zenscript
 import mods.calculator.scientific;
 ```
 
-## メソッド
+## Methods
 
-- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input[1-2]** 入力.
-- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) output** 出力。
+- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input[1-2]** The inputs.
+- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) output** The output.
 
 ## 加算
 ```zenscript
-scientific.addRecipe(IInput1, IIngredient input2, IIngredient output);
+scientific.addRecipe(IIngredient input1, IIngredient input2, IIngredient output);
 ```
 
-## 削除
+## Removal
 ```zenscript
-scientific.removeRecipe(IIngredient出力);
+scientific.removeRecipe(IIngredient output);
 ```

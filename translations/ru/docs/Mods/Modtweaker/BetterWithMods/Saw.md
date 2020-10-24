@@ -1,56 +1,56 @@
-# Пила
+# Saw
 
-## Базовый рецепт
+## Basic Recipe
 
-* Добавляет Saw Recipepe. Входы *ДОЛЖНЫ* имеют связанный с ними блок.
+* Adds Saw Recipe - inputs *MUST* have a block associated with them.
 
 ```zenscript
-mods.betterwithmods.Saw.add(IIngredient input, IItemStack[] вывод);
-//Примеры
+mods.betterwithmods.Saw.add(IIngredient input, IItemStack[] output);
+//Examples
 mods.betterwithmods.Saw.add(<minecraft:fence>,[<minecraft:stick>,<minecraft:stick>]);
 ```
 
-## Удаление по вводу
+## Removal by input
 
-* Удалить рецепт на основе вводимого ингредиента
+* Remove a recipe based on the input ingredient
 
 ```zenscript
 mods.betterwithmods.Saw.remove(IIngredient input);
 ```
 
-## Удаление по выходу
+## Removal by output
 
-* Удалить рецепт на основе вывода
+* Remove a recipe based on the output
 
 ```zenscript
-mods.betterwithmods.Saw.remove(IItemStack[]);
+mods.betterwithmods.Saw.remove(IItemStack[] outputs);
 ```
 
-## Удалить все
+## Remove all
 
-* Удалить все рецепты
+* Remove all recipes
 
 ```zenscript
 mods.betterwithmods.Saw.removeAll();
 ```
 
-## Строитель
+## Builder
 
-У пилы есть конструктор рецептов. В связи с природой пилы на данный момент у нее нет специальных методов конструктора, я задокументирую ее не меньше.
+The Saw has a recipe builder. Due to the nature of the saw it currently has no special builder methods, I will document it none-the-less.
 
-* Создавать новый Saw конструктор. `mods.betterwithmods.Saw.builder()`
+* To create a new Saw builder. `mods.betterwithmods.Saw.builder()`
 
-* Методы пилы
+* Saw methods
      
-     * Настраивает входы и выходные данные рецепта  
+     * Sets up the inputs and outputs of the recipe  
               zenscript
-              buildRecipe(IIngredient[] входов, IItemStack[] вывод)
+              buildRecipe(IIngredient[] inputs, IItemStack[] outputs)
      
-     * Завершить рецепт и добавить его в игру  
+     * Finalize the recipe and add it to the game  
               zenscript
               build()
 
-### Пример использования конструктора
+### Example builder usage
 
     mods.betterwithmods.Saw.builder()
     .buildRecipe([<minecraft:oak_fence>], [<minecraft:stick>*6])

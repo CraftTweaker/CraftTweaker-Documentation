@@ -1,40 +1,40 @@
 # Ores
 
-**Musi być w `#loader preinit` lub `#loader contenttweaker`**
+**Needs to be in the `#loader preinit` or `#loader contenttweaker`**
 
 
-## Pakiet
+## Package
 ```zenscript
-`mods.exnihilocreo.Ore`
+`mods.exnihilocreatio.Ore`
 ```
 
-## Metody
+## Methods
 
-- **Nazwa ciągu** Nazwij fragmenty rudy/piece/dust/ingot
-- **Kolor ciągu** Kolor materiału w sześciu.
-- **[IItemStack](/Vanilla/Items/IItemStack/) wyjście** wymaga oredict.firstItem lub błędów.
-- **Mapuj ciąg[string]** Kod języka, a następnie tłumaczenie.
-- **String oreDict** The name of the oreDict you want
+- **String name** Name the ore chunks/piece/dust/ingot
+- **String color** Color of material in hex.
+- **[IItemStack](/Vanilla/Items/IItemStack/) output** requires an oredict.firstItem or errors out.
+- **Map string[string]** Language code then translation.
+- **String oreDict** The name of the oreDict you want.
 
-## Dodanie
+## Addition
 
 ```zenscript
-mods.exnihilocreo.Ore. ddRecipe(String,
+mods.exnihilocreatio.Ore.addRecipe(String,
     String,
     @Optional IItemStack,
     @Optional Map<string, String>,
     @Optional String);
 
-modów. xnihilocreatio.Ore.addRecipe("Kamień",
+mods.exnihilocreatio.Ore.addRecipe("Stone",
     "63452D",
-    <ore:stone>. irstItem,
+    <ore:stone>.firstItem,
     {
     "en_au": "StoneDownUnder"
     },
-    "Kamień");
+    "Stone");
 ```
 
-## Usuwanie
+## Removal
 
 ```zenscript
 mods.exnihilocreatio.Ore.removeAll();

@@ -1,28 +1,28 @@
 # `TagType`
 
-Un `TagType` identifica il tipo di elementi che possono essere memorizzati all'interno di un dato [`Tag`](/Mods/Boson/Tags/Tag/). Ospita anche alcuni dati aggiuntivi di sola lettura che identificano un certo set di mnemonici che aiutano a identificare un tipo in un modo più umano-amichevole.
+A `TagType` identifies the kind of items that can be stored inside a given [`Tag`](/Mods/Boson/Tags/Tag/). It also hosts some additional read-only data that identifies a certain set of mnemonics that help identify a type in a more human-friendly way.
 
-## Dettagli Classe
-La classe è situata nel pacchetto `net.thesilkminer.mc.boson.zen.tag` , rendendo `net.thesilkminer.mc.boson.zen.tag.TagType` il suo nome completamente qualificato per l'importazione.
+## Class Details
+The class is situated in the `net.thesilkminer.mc.boson.zen.tag` package, making `net.thesilkminer.mc.boson.zen.tag.TagType` its fully qualified name for importing.
 
-## Creare una nuova istanza
-Non è possibile creare una nuova istanza di un tipo di tag grezzo da CraftTweaker. È tuttavia possibile ottenere il tipo di un determinato tag `` tramite le sue proprietà. Fare riferimento alla documentazione [per `Tag`](/Mods/Boson/Tags/Tag/) per ulteriori informazioni.
+## Creating a New Instance
+It is not possible to create a new instance of a raw tag type from CraftTweaker. It is nevertheless possible to obtain the type of a given `Tag` via its properties. Refer to the [documentation for `Tag`](/Mods/Boson/Tags/Tag/) for more information.
 
-### Istanze conosciute `TagType`
-Boson per impostazione predefinita crea già un certo insieme di tipi di tag, che può essere utilizzato in [staffe handlers](/Mods/Boson/Tags/BracketHandler/) per ottenere istanze di `Tag`s o `TagIngredient`s. Questi mnemonici sono scritti nella tabella che segue:
+### Known `TagType` instances
+Boson by default already creates a certain set of tag types, which can be used in [bracket handlers](/Mods/Boson/Tags/BracketHandler/) to obtain instances of `Tag`s or `TagIngredient`s. These mnemonics are written in the table that follows:
 
-| Mnemonico  | Oggetti Memorizzati                                |
-| ---------- | -------------------------------------------------- |
-| `blocchi`  | [`IBlockState`](/Vanilla/Blocks/IBlockState/)      |
-| `fluidi`   | (non attualmente accessibile tramite CraftTweaker) |
-| `elementi` | [`IItemStack`](/Vanilla/Items/IItemStack/)         |
+| Mnemonic | Stored Objects                                |
+| -------- | --------------------------------------------- |
+| `blocks` | [`IBlockState`](/Vanilla/Blocks/IBlockState/) |
+| `fluids` | (not currently accessible via CraftTweaker)   |
+| `items`  | [`IItemStack`](/Vanilla/Items/IItemStack/)    |
 
-## Proprietà
-Un `TagType` fornisce accesso in sola lettura a un certo insieme di proprietà, come illustrato nella tabella seguente:
+## Properties
+A `TagType` provides read-only access to a certain set of properties, as outlined in the following table:
 
-| Nome Proprietà      | Tipo                                                                   | Descrizione                                                                                        |
-| ------------------- | ---------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- |
-| `directoryName`     | `stringa`                                                              | Nome della directory in cui il tag JSONs è in un data-pack                                         |
-| `nome`              | `stringa`                                                              | Mnemonica che identifica il tipo di tag specificato; utilizzata nei gestori delle parentesi di tag |
-| `classType`         | [`Classe`](/Mods/Boson/Reflection/Class/)                              | Tipo di oggetti memorizzati nel tag                                                                |
-| `converterFunction` | [`Funzione<NameSpacedString, any>`](/Mods/Boson/Functions/List/) | Converte i nomi in elementi tag                                                                    |
+| Property Name       | Type                                                                   | Description                                                               |
+| ------------------- | ---------------------------------------------------------------------- | ------------------------------------------------------------------------- |
+| `directoryName`     | `string`                                                               | Name of the directory where tag JSONs are in a data-pack                  |
+| `name`              | `string`                                                               | Mnemonic that identifies the given tag type; used in tag bracket handlers |
+| `classType`         | [`Class`](/Mods/Boson/Reflection/Class/)                               | Type of objects stored in the tag                                         |
+| `converterFunction` | [`Function<NameSpacedString, any>`](/Mods/Boson/Functions/List/) | Converts names into tag elements                                          |

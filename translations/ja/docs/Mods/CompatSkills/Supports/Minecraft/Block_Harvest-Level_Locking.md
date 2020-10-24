@@ -1,10 +1,10 @@
-# 収穫レベルのロックをブロック
+# Block Harvest-Level Locking
 
-## 機能:
+## Feature:
 
-このロックは、要件のセットが満たされていない限り、セットのHarvest-Levelでブロックを壊すことができないようにします。 以下の例では、Harvest-Level 3 のブロックは、終了時にのみ壊すことができることがわかります。 この例は実際にはそれほど素晴らしいものではありませんが、このタイプのロックが何を行うことができるかを示しています。
+This lock makes it so the player can't break a block with the set Harvest-Level unless a set of Requirements are met. For example below, you can see that Blocks with a Harvest-Level of 3 can only be broken in the End. This example is not really that great in practice, but it does show what this type of lock is capable of doing.
 
-## 構文
+## Syntax:
 
     mods.compatskills.HarvestLock.addBlockLevelLock(int level, String... requirements);
     

@@ -1,7 +1,7 @@
-# Ogród
-Ta modyfikacja jest kolekcją modów ogrodniczych pierwotnie opartych na modułowym doniczku.
+# Garden Stuff
+This mod is a collection of garden-related mods originally based on Modular Flower Pots.
 
 
-## Integracja CraftTweaker
+## CraftTweaker Integration
 
-Ogród jest wyposażony w natywną integrację rzemieślników. Oznacza to, że problemy z dodanymi metodami powinny być omówione w [Garden Stuff Issue-Tracker](https://github.com/jaquadro/GardenCollection/issues)
+Garden Stuff comes with Native CraftTweaker Integration. This means that issues with the added methods should be discussed at the [Garden Stuff Issue-Tracker](https://github.com/jaquadro/GardenCollection/issues)

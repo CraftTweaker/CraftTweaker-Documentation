@@ -1,13 +1,13 @@
-# OreDictionary Sperren
+# OreDictionary Locking
 
-## Merkmal:
+## Feature:
 
-Diese Sperre fügt die Fähigkeit hinzu, alle Elemente zu sperren, die unter einem bestimmten Wörterbuch-Tag liegen. Dies bedeutet, dass wenn du den Eintrag des Erzwortbuchs von "oreIron" blockierst, jeder Baustein mit dem Tag "oreIron" hinter den festgelegten Anforderungen gesperrt wäre. Dieser Sperrungstyp unterstützt auch einen [IData](/Vanilla/Data/IData/) Parameter, was bedeutet, dass er nur die Dinge unter dem Ore-Dict Tag IF beeinflusst. Sie haben ein passendes IDATA Tag zu dem der Sperre zur Verfügung steht.
+This lock adds the ability to lock any and all items that are under a certain Ore Dictionary Tag. This means that if you lock the Ore Dictionary Entry of "oreIron" any item/block with the tag "oreIron" would be locked behind the set requirements. This type of lock also supports an [IData](/Vanilla/Data/IData/) Parameter which means that it only affects things under the Ore-Dict tag IF they have a matching IDATA tag to the one provided to the lock.
 
 ## Syntax:
 
-    mods.compatskills.OreDictLock.addOreDictLock(IOreDictEntry entry, String... gesperrt);
-    mods.compatskills.OreDictLock.addNBTOreDictLock(IOreDictEntry Eintrag, IData Tag, String... gesperrt);
+    mods.compatskills.OreDictLock.addOreDictLock(IOreDictEntry entry, String... locked);
+    mods.compatskills.OreDictLock.addNBTOreDictLock(IOreDictEntry entry, IData tag, String... locked);
     
     mods.compatskills.OreDictLock.addOreDictLock(<ore:ingotIron>, "dim|1");
-    mods.compatskills.OreDictLock.addNBTOreDictLock(<ore:oreIron>, IData Tag, "dim|1");
+    mods.compatskills.OreDictLock.addNBTOreDictLock(<ore:oreIron>, IData tag, "dim|1");

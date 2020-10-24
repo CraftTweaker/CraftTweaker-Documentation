@@ -1,26 +1,26 @@
-# Atomizzatore
+# Atomizer
 
-# Pacchetto
+# Package
 ```zenscript
-mods.alchimia.Atomizzatore
+mods.alchemistry.Atomizer
 ```
 
-## Metodi
-**[IItemStack](/Vanilla/Items/IItemStack/) output** - L'output della ricetta.
+## Methods
+**[IItemStack](/Vanilla/Items/IItemStack/) output** - The output of the recipe.
 
-**[Ingresso ILiquidStack](/Vanilla/Liquids/ILiquidStack/)** - L'ingresso della ricetta.
+**[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) input** - The input of the recipe.
 
 
-## Addizione
+## Addition
 ```zenscript
-mods.alchimia.Atomizer.addRecipe(IItemStack output, ILiquidStack input);
+mods.alchemistry.Atomizer.addRecipe(IItemStack output, ILiquidStack input);
 mods.alchemistry.Atomizer.addRecipe(<minecraft:redstone>,<liquid:beryllium>*500);
 ```
 
-## Rimozione
+## Removal
 ```zenscript
-mods.alchimia.Atomizer.removeRecipe(ingresso ILiquidStack); //Funzionerà indipendentemente dalla quantità
+mods.alchemistry.Atomizer.removeRecipe(ILiquidStack input); //Will work regardless of quantity
 
 mods.alchemistry.Atomizer.removeRecipe(<liquid:iron>);
-mods.alchemistry.Atomizer.removeAllRicette();
+mods.alchemistry.Atomizer.removeAllRecipes();
 ```

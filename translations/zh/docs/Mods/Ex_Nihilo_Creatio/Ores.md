@@ -1,6 +1,6 @@
 # Ores
 
-**需要在 `#loader 前缀` 或 `#loader contentbiner`**
+**Needs to be in the `#loader preinit` or `#loader contenttweaker`**
 
 
 ## 所属包名
@@ -10,31 +10,31 @@
 
 ## 使用方式
 
-- **字符串名称** 核心块/块/dust/ingot 名称
-- **六边材料的字符串颜色**。
-- **[IItemStack](/Vanilla/Items/IItemStack/) 输出** 需要修复.firstItem 项目或错误。
-- **映射字符串[string]** 语言代码然后翻译。
-- **String oredDict** The name of the oreDict you want
+- **String name** Name the ore chunks/piece/dust/ingot
+- **String color** Color of material in hex.
+- **[IItemStack](/Vanilla/Items/IItemStack/) output** requires an oredict.firstItem or errors out.
+- **Map string[string]** Language code then translation.
+- **String oreDict** The name of the oreDict you want.
 
 ## 添加配方
 
 ```zenscript
-mods.exnihilocreatio.Ore. ddRecipe(String,
+mods.exnihilocreatio.Ore.addRecipe(String,
     String,
     @Optional IItemStack,
     @Optional Map<string, String>,
     @Optional String);
 
-模组。 xnihilocreatio.Ore.addRecipe("Stone",
+mods.exnihilocreatio.Ore.addRecipe("Stone",
     "63452D",
-    <ore:stone>. irstItem,
-    ~
-    "en_au": "StoneDowning"
+    <ore:stone>.firstItem,
+    {
+    "en_au": "StoneDownUnder"
     },
-    "石头";
+    "Stone");
 ```
 
-## 移除
+## Removal
 
 ```zenscript
 mods.exnihilocreatio.Ore.removeAll();

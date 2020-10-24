@@ -1,83 +1,83 @@
-# Macchina Di Scatola
+# Canning Machine
 
-## Pacchetto
+## Package
 
 ```zenscript
 import mods.ic2.CanningMachine;
 ```
 
-### Elenco degli effetti id
-* 1: Fame (Carne di Carne) (80% possibilità)
-* 2: Veleno (Occhio Di Spider)
-* 3: Fame (Raw Chicken) (30% possibilità)
-* 4: Mela D'Oro
-* 5: Mela Di Notch
+### List of effect ids
+* 1: Hunger (Rotten Flesh) (80% chance)
+* 2: Poison (Spider Eye)
+* 3: Hunger (Raw Chicken) (30% chance)
+* 4: Golden Apple
+* 5: Notch Apple
 * 6: Corus Fruit
 
-## Metodi
+## Methods
 
-### Registra Oggetti Effetto (int id, IItemstack... inputs)
+### Register Items For Effect (int id, IItemstack... inputs)
 
 
 ```zenscript
-mods.ic2.CanningMachine.registerItemsForEffect(int id, IItemstack... input);    
+mods.ic2.CanningMachine.registerItemsForEffect(int id, IItemstack... inputs);    
 
 mods.ic2.CanningMachine.registerItemsForEffect(4, <minecraft:fish>);
 ```
 
-- **[IItemStack](/Vanilla/Items/IItemStack/)... ingressi** Gli input che ottengono il cibo possono avere effetto.
-- **int id** L'effectID che vuoi applicare agli elementi specificati. Gli id con effetto valido sono i seguenti:
+- **[IItemStack](/Vanilla/Items/IItemStack/)... inputs** The inputs getting the food can effect.
+- **int id** The effectID you want to apply to the specified items. Valid effect ids are as follows:
 
-### Elimina ID effetto (int id, boolean deleteItems)
+### Delete Effect Id (int id, boolean deleteItems)
 ```zenscript    
 mods.ic2.CanningMachine.deleteEffectId(int id, boolean deleteItems);
 
 mods.ic2.CanningMachine.deleteEffectId(5, false);
 ```
 
-- **int id** L'effectID che si desidera rimuovere dal riempito può. Fare riferimento a sopra per gli id di effetto validi.
-- **boolean deleteItems** Se rimuovere gli elementi con quell'effetto anche dalle lattine archiviate. Attualmente questo booleano potrebbe non funzionare.
+- **int id** The effectID you want to remove from filled can. Refer to above for valid effect ids.
+- **boolean deleteItems** Whether to remove items with that effect from filed cans too. Currently this boolean may not work.
 
-### Registrare il valore del carburante (int fuelValue, IItemStack input)
+### Register Fuel Value (int fuelValue, IItemStack input)
 ```zenscript
 mods.ic2.CanningMachine.registerFuelValue(int fuelValue, IItemStack input);
 
 mods.ic2.CanningMachine.registerFuelValue(10, <minecraft:diamond_block>);
 
-mods.ic2.CanningMachine.registerFuelValue(1274, <ic2:itemmisc:102>); //Precedentemente aveva un valore di 2548.
+mods.ic2.CanningMachine.registerFuelValue(1274, <ic2:itemmisc:102>); //Formerly had a value of 2548.
 ```
 
-- **int fuelValue** Quanto carburante vale l'articolo specificato.
-- **[IItemStack](/Vanilla/Items/IItemStack/) input** L'elemento per registrare il valore del carburante per. Può anche essere oggetti con valori esistenti, nel qual caso il valore precedentemente specificato verrà sovrascritto. Nota: deve essere un itemstack, nessun editto permesso.
+- **int fuelValue** How much fuel the specified item is worth.
+- **[IItemStack](/Vanilla/Items/IItemStack/) input** The item to register that fuel value for. It can even be items with existing values, in which case the previously specified value will be overwritten. Note: must be an itemstack, no oredicts allowed.
 
-### Registra Moltiplicatore di carburante (carburante galleggianteMoltiplicatore, IItemStack input)
+### Register Fuel Multiplier (float fuelMultiplier, IItemStack input)
 ```zenscript
 mods.ic2.CanningMachine.registerFuelMultiplier(float fuelMultiplier, IItemStack input);
 
 mods.ic2.CanningMachine.registerFuelMultiplier(0.5f, <minecraft:diamond>);
 ```
 
-- **float fuelMoltiplicatore** Quale percentuale è aumentata in precedenza il valore in ingresso. per esempio 1 = 100%, 0.5 = 50%, 0 = 0%, ect.
-- **[IItemStack](/Vanilla/Items/IItemStack/) input** L'elemento per cui registrare quel moltiplicatore di carburante. Può anche essere elementi con moltiplicatori esistenti, nel qual caso il moltiplicatore precedentemente specificato sarà sovrascritto. Nota: deve essere un itemstack, nessun editto permesso.
+- **float fuelMultiplier** What percentage the previously input value is increased by. for example 1 = 100%, 0.5 = 50%, 0 = 0%, ect.
+- **[IItemStack](/Vanilla/Items/IItemStack/) input** The item to register that fuel multiplier for. It can even be items with existing multipliers, in which case the previously specified multiplier will be overwritten. Note: must be an itemstack, no oredicts allowed.
 
-### Elimina il carburante oggetto (IItemstack input)
+### Delete Item Fuel (IItemStack input)
 ```zenscript
 mods.ic2.CanningMachine.deleteItemFuel(IItemStack input);
 
 mods.ic2.CanningMachine.deleteItemFuel(<ic2:itemmisc:102>);
 ```
 
-- **[IItemStack](/Vanilla/Items/IItemStack/) input** L'elemento da rimuovere dall'essere un ingresso per il carburante può.
+- **[IItemStack](/Vanilla/Items/IItemStack/) input** The item to be removed from being an input for the fuel can.
 
-Vedi [qui](https://github.com/TinyModularThings/IC2Classic/wiki/Fuel-Cans) per informazioni su come funzionano le lattine di carburante.
+See [here](https://github.com/TinyModularThings/IC2Classic/wiki/Fuel-Cans) for info on how fuel cans work.
 
-### Aggiungi ricetta in scatola (uscita IItemStack, filler IIngrediente, contenitore IItemStack)
+### Add Canning Recipe (IItemStack output, IIngredient filler, IItemStack container)
 ```zenscript
 mods.ic2.CanningMachine.addCanningRecipe(IItemStack output, IIngredient filler, IItemStack container);  
 
 mods.ic2.CanningMachine.addCanningRecipe(<minecraft:emerald>, <minecraft:diamond>, <minecraft:bucket>);
 ```
-- **[IItemStack](/Vanilla/Items/IItemStack/) output** Il prodotto
-- **[IItemStack](/Vanilla/Items/IItemStack/) contenitore** Il itemstack da "riempire"
-- **[filler IIngrediente](/Vanilla/Variable_Types/IIngredient/)** L'ingrediente con cui viene riempito nel contenitore
+- **[IItemStack](/Vanilla/Items/IItemStack/) output** The product
+- **[IItemStack](/Vanilla/Items/IItemStack/) container** The itemstack to be "filled"
+- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) filler** The ingredient with which is filled into the container
 

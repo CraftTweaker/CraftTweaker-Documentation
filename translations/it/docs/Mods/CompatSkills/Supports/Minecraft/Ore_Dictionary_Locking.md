@@ -1,13 +1,13 @@
-# Blocco OreDictionary
+# OreDictionary Locking
 
-## Caratteristica:
+## Feature:
 
-Questo blocco aggiunge la possibilità di bloccare tutti gli elementi che sono sotto un certo Tag Dizionario Minerale. Ciò significa che se si blocca la voce del dizionario minerario di "oreIron" qualsiasi oggetto/blocco con il tag "oreIron" sarebbe bloccato dietro i requisiti impostati. Questo tipo di blocco supporta anche un parametro [IData](/Vanilla/Data/IData/) che significa che influisce solo sulle cose sotto il tag Ore-Dict se hanno un tag IDATA corrispondente a quello fornito al blocco.
+This lock adds the ability to lock any and all items that are under a certain Ore Dictionary Tag. This means that if you lock the Ore Dictionary Entry of "oreIron" any item/block with the tag "oreIron" would be locked behind the set requirements. This type of lock also supports an [IData](/Vanilla/Data/IData/) Parameter which means that it only affects things under the Ore-Dict tag IF they have a matching IDATA tag to the one provided to the lock.
 
-## Sintassi:
+## Syntax:
 
-    mods.compatskills.OreDictLock.addOreDictLock(IOreDictEntrata, String... bloccato);
-    mods.compatskills.OreDictLock.addNBTOreDictLock(IOreDictEntry, IData tag, String... locked);
+    mods.compatskills.OreDictLock.addOreDictLock(IOreDictEntry entry, String... locked);
+    mods.compatskills.OreDictLock.addNBTOreDictLock(IOreDictEntry entry, IData tag, String... locked);
     
-    mods.compatskills.OreDictLock.addOreDictLock(<ore:ingotIron>, "dim<unk> 1");
-    mods.compatskills.OreDictLock.addNBTOreDictLock(<ore:oreIron>, IData tag, "dim<unk> 1");
+    mods.compatskills.OreDictLock.addOreDictLock(<ore:ingotIron>, "dim|1");
+    mods.compatskills.OreDictLock.addNBTOreDictLock(<ore:oreIron>, IData tag, "dim|1");

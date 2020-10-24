@@ -1,12 +1,12 @@
-### 点亮
+### onHurt
 
-| 设置/获取/方法 | 方法名称                | 名称         | Input/Output                                       |
-|:-------- |:------------------- |:---------- | -------------------------------------------------- |
-| 获取器      | gettDamageSource(); | 1. 损害源码(); | 返回 [IDamageSource](/Vanilla/Damage/IDamageSource/) |
-| 获取器      | getAmount();        | 数量()；      | 返回浮点数                                              |
+| Setter/Getter/Method | Method Names       | Names           | Input/Output                                               |
+|:-------------------- |:------------------ |:--------------- | ---------------------------------------------------------- |
+| Getter               | getDamageSource(); | damageSource(); | Returns an [IDamageSource](/Vanilla/Damage/IDamageSource/) |
+| Getter               | getAmount();       | amount();       | Returns an Float                                           |
 
     var test = mods.compatskills.TraitCreator.createTrait("test", 2, 3, "compatskills:banana", 1, "compatskills:banana|5");
     
-    test.onHurt = function(event as craftweeper.event.EntityLivingHurt事件)
-    ...
+    test.onHurt = function(event as crafttweaker.event.EntityLivingHurtEvent) {
+        ...
     };

@@ -1,8 +1,8 @@
-# Osmium Compresseur
+# Osmium Compressor
 
-Depuis le Mékanisme 9.7.0 il est maintenant possible de voir toutes les chaînes de recettes de l'Osmium Compressor à travers la commande `compresseur /ct mekrecipes`
+As of Mekanism 9.7.0 it is now possible to view all recipe strings of the Osmium Compressor through the command `/ct mekrecipes compressor`
 
-## Ajouter
+## Addition
 
 ```zenscript
 mods.mekanism.compressor.addRecipe(IIngredient inputStack, @Optional IGasStack inputGas, IItemStack outputStack);
@@ -11,26 +11,26 @@ mods.mekanism.compressor.addRecipe(<mekanism:basicblock:3>, <gas:liquidosmium>, 
 mods.mekanism.compressor.addRecipe(<mekanism:basicblock:1>, <minecraft:netherrack>);
 ```
 
-Depuis le Mékanisme 9.7.0 inputGas n'est plus limité à l'osmium.
+As of Mekanism 9.7.0 inputGas is no longer restricted to only osmium.
 
-Aussi depuis Mekanism 9.7.0 il est possible d'utiliser IIngredients comme la inputStack au lieu de IItemStacks.
+Also as of Mekanism 9.7.0 it is possible to use IIngredients as the inputStack instead of only IItemStacks.
 
-Note: Actuellement tout cela fait une boucle sur les différentes possibilités de java tout en ajoutant au lieu de vous avoir à le faire dans ZenScript. Actuellement, il n'y a pas de support pour les composants composés ou oredictionnaire dans les machines elles-mêmes.
+Note: Currently all this does is loop over the different possibilities in java while adding instead of you having to do it in ZenScript. Currently there is no built in support for compound ingredients or oredictionary in the machines themselves.
 
-## Retirer
+## Removal
 
 ```zenscript
-mods.mekanism.compressor.removeRecipe(IIngredient outputStack, @Optional IIngredient inputStack, @Optional Igredient inputGas);
+mods.mekanism.compressor.removeRecipe(IIngredient outputStack, @Optional IIngredient inputStack, @Optional IIngredient inputGas);
 
 mods.mekanism.compressor.removeRecipe(<mekanism:ingot>, <mekanism:otherdust:5>, <gas:liquidosmium>);
 mods.mekanism.compressor.removeRecipe(<mekanism:ingot:3>);
 ```
 
-Spécifier un paramètre d'entrée ne supprimera que la recette spécifique qui utilise cette entrée. L'omission du paramètre d'entrée supprimera toutes les recettes qui produisent la sortie spécifiée.
+Specifying an input parameter will only remove the specific recipe that uses said input. Omitting the input parameter will remove all recipes that produce the specified output.
 
-## Suppression de toutes les recettes
+## Removing all recipes
 
-Depuis le Mekanism 9.7.0 il est maintenant possible de supprimer toutes les recettes Osmium Compressor. (Ceci exclut toutes les recettes ajoutées via CraftTweaker)
+As of Mekanism 9.7.0 it is now possible to remove all Osmium Compressor recipes. (This excludes any recipes added via CraftTweaker)
 
 ```zenscript
 mods.mekanism.compressor.removeAllRecipes();

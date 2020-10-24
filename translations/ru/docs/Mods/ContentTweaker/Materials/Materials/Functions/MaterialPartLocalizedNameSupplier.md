@@ -1,18 +1,18 @@
-# Поставщик материалов для локализации
+# MaterialPartLocalizedNameSupplier
 
-Вы можете создать в форме MaterialPartLocalizedNameSupplier объект [MaterialPart](/Mods/ContentTweaker/Materials/Materials/MaterialPart/) , который будет использоваться по запросу.</p> 
+You can create a MaterialPartLocalizedNameSupplier form a [MaterialPart](/Mods/ContentTweaker/Materials/Materials/MaterialPart/) object, which will then be used whenever requested.
 
 ## Импорт класса
 
-Если вам нужно импортировать его класс, то здесь вы следуете:
+Should you need to import he class, here you go:
 
 ```zenscript
 import mods.contenttweaker.MaterialPartLocalizedNameSupplier;
 ```
 
-## Статические методы
+## Static methods
 
-Статические методы можно вызвать на пакет, а не на экземпляры класса.
+Static methods can be called upon the package, not upon instances of the class.
 
 ```zenscript
 //mods.contenttweaker.MaterialPartLocalizedNameSupplier.create(IMaterialPart materialPart);

@@ -1,24 +1,24 @@
-# オイルジェネレーター
+# Oil Generator
 
-## パッケージ
+## Package
 
 `mods.actuallyadditions.OilGen`
 
 ## 加算
 
-`genTime` が省略された場合、デフォルトは 100 に設定されています
+`genTime` defaults to 100 if omitted
 
 ```zenscript
 //mods.actuallyadditions.OilGen.addRecipe(ILiquidStack fluid, int genAmount);
 //mods.actuallyadditions.OilGen.addRecipe(ILiquidStack fluid, int genAmount, int genTime);
 
-mods.actuallyaddRecipe(<liquid:water>, 100);
-mods.OilGen.addRepipe(<liquid:lava>, 1000, 10);
+mods.actuallyadditions.OilGen.addRecipe(<liquid:water>, 100);
+mods.actuallyadditions.OilGen.addRecipe(<liquid:lava>, 1000, 10);
 ```
 
-## 削除
+## Removal
 
 ```zenscript
-//mods.actuallyadditions.OilGen.removeRecipe(ILiquidStack出力);
+//mods.actuallyadditions.OilGen.removeRecipe(ILiquidStack output);
 mods.actuallyadditions.OilGen.removeRecipe(<liquid:water>);
 ```

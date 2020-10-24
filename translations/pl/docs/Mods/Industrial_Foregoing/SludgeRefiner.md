@@ -1,23 +1,23 @@
 # Sludge Refiner
 
-### Importowanie
+### Importing
 
 ```zenscript
-import mods.industrialforegoing.SludgeRefiner,
+import mods.industrialforegoing.SludgeRefiner;
 ```
 
-### Dodawanie
+### Adding
 
 ```zenscript
-SludgeRefiner.add(wyjście IItemStack, int ItemWeight);
+SludgeRefiner.add(IItemStack output, int ItemWeight);
 
 SludgeRefiner.add(<minecraft:wheat_seeds>, 10);
 ```
 
-### Usuwanie
+### Removing
 
 ```zenscript
-SludgeRefiner.remove(wyjście IItemStack);
+SludgeRefiner.remove(IItemStack output);
 
 SludgeRefiner.remove(<minecraft:wheat_seeds>);
 ```

@@ -1,18 +1,18 @@
-# Blocchi Materiale
+# Material Locks
 
 ## Material-Lock
 
-Con l'implementazione del supporto TConstruct in CompatSkills 1.5.0. Ora hai la possibilità di bloccare:
+With the implementation of TConstruct support in CompatSkills 1.5.0. You now have the ability to lock:
 
-    - Aggiunta Modificatore
+    - Modifier Addition
     
 
-Per specifici modificatori di Tinker Costrutt.
+For specific Tinker Construct's Modifiers.
 
-### Sintassi:
+### Syntax:
 
-    // Esempio vuoto:
-    mods.compatskills.ModifierLock.addModifierLock(Identificatore string, String... requisiti);
+    // Blank Example:
+    mods.compatskills.ModifierLock.addModifierLock(String identifier, String... requirements);
     
-    // Esempio:
-    mods.compatskills.ModifierLock.addModifierLock("harvestwidth", "reskillable:mining<unk> 5", "reskillable:magic<unk> 7");
+    // Example:
+    mods.compatskills.ModifierLock.addModifierLock("harvestwidth", "reskillable:mining|5", "reskillable:magic|7");

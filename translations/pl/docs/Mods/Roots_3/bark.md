@@ -1,37 +1,37 @@
-### Klasa
+### Class
 
 ```zenscript
-importuj mods.roots.Bark;
+import mods.roots.Bark;
 ```
 
-#### Metody
+#### Methods
 
 ```zenscript
-Unieważnij addRecype(
-  nazwa ciągu, // nazwa przepisu
-  IItemStack woodLog, // odpowiednik stołu przedmiotów z kłody drewna łamanego
-  IItemStack kora// stos przedmiotów typu kory, którą wytwarza ta kłoda (w tym liczba stosów)
+void addRecipe(
+  string name,        // the name of the recipe
+  IItemStack woodLog, // the itemstack equivalent of the wood log being broken
+  IItemStack bark     // the itemstack of the type of bark this log produces (including stack count)
 );
 ```
 
 * * *
 
 ```zenscript
-usuń przepis(
-  IItemStack kora // stos przedmiotów typu kory do usunięcia (z wyłączeniem rozmiaru stosu)
+void removeRecipe(
+  IItemStack bark // the itemstack of the type of bark to remove (excluding stack size)
 );
 ```
 
 * * *
 
-### Przykłady
+### Examples
 
 ```zenscript
-importuj mods.roots.Bark;
+import mods.roots.Bark;
 
-// będzie produkował 2 piaski z bloku melona uszkodzonego nożem.
+// Will produce 2 sand from a melon block broken by a knife.
 Bark.addRecipe("melon", <minecraft:melon_block>, <minecraft:sand>*2);
 
-// usuwa dziką korę z domyślnej listy
+// Removes wildwood bark from the default list
 Bark.removeRecipe(<roots:bark_wildwood>);
 ```

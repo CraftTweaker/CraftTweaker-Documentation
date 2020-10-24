@@ -1,21 +1,21 @@
-# Entitätsaspekte
+# Entity Aspects
 
-Die Thaumcraft-Integration von Modtweaker erweitert [IEntityDefinition](/Vanilla/Entities/IEntityDefinition/).  
-Das bedeutet, dass Sie die folgenden Methoden für jedes IEntityDefinition-Objekt verwenden können:
+Modtweaker's Thaumcraft integration extends [IEntityDefinition](/Vanilla/Entities/IEntityDefinition/).  
+That means that you can use the methods below on any IEntityDefinition object:
 
-## Aspekte setzen
+## Set aspects
 
-Hiermit kannst du überschreiben, welche Aspekte eine Entität normalerweise haben würde.  
-Benötigt einen [CTAspectStack](/Mods/Modtweaker/Thaumcraft/Aspects/CTAspect/)[] oder viele [CTAspectStack](/Mods/Modtweaker/Thaumcraft/Aspects/CTAspect/) Objekte.
+You can use this to override what aspects an entity would normally have.  
+Requires a [CTAspectStack](/Mods/Modtweaker/Thaumcraft/Aspects/CTAspect/)[] or many [CTAspectStack](/Mods/Modtweaker/Thaumcraft/Aspects/CTAspect/) objects.
 
 ```zenscript
 <entity:sheep>.setAspects(<aspect:terra>*5);
 ```
 
-## Aspekte entfernen
+## Remove aspects
 
-Hiermit können Sie verhindern, dass bestimmte Aspekte einer Entität hinzugefügt werden.  
-Benötigt einen [CTAspectStack](/Mods/Modtweaker/Thaumcraft/Aspects/CTAspect/)[] oder viele [CTAspectStack](/Mods/Modtweaker/Thaumcraft/Aspects/CTAspect/) Objekte.
+You can use this to prevent certain aspects from being added to an entity.  
+Requires a [CTAspectStack](/Mods/Modtweaker/Thaumcraft/Aspects/CTAspect/)[] or many [CTAspectStack](/Mods/Modtweaker/Thaumcraft/Aspects/CTAspect/) objects.
 
 ```zenscript
 <entity:blaze>.removeAspects(<aspect:ignis>);

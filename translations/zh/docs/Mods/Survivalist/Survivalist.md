@@ -1,46 +1,46 @@
-# 生存者
+# Survivalist
 
-## 切换块
+## Chopping Block
 
 ### InputStack, OutputStack, {outputMultiplier}, {hitCountMultiplier}
 
 ```zenscript
-gigaherz.sivalist.Choppable.addRecipe(IIngredient input, IItemStack output, outputMultiplier, hitCountMultiplier);
+gigaherz.survivalist.Choppable.addRecipe(IIngredient input,  IItemStack output, outputMultiplier, hitCountMultiplier);
 ```
 
 ##### 例子
 
 ```zenscript
-gigaherz.survivalist.Choppable.addRecipe(<minecraft:bone>,<minecraft:dye:15>, 1.0);
+gigaherz.survivalist.Choppable.addRecipe(<minecraft:bone>,<minecraft:dye:15>, 1.0, 1.0);
 ```
 
-### 输出堆栈， {InputStack}
+### OutputStack, {InputStack}
 
 ```zenscript
-gigaherz.sivalist.Choppable.removeRecipe(IIngredient output, IIngredient input);
+gigaherz.survivalist.Choppable.removeRecipe(IIngredient output, IIngredient input);
 ```
 
 ##### 例子
 
 ```zenscript
-gigaherz.sivalist.Choppable.removeRecipe(<minecraft:stick>)；
+gigaherz.survivalist.Choppable.removeRecipe(<minecraft:stick>);
 ```
 
-## 干燥机架
+## Drying Rack
 
-### 输入Stack, 输出Stack, 工单中的时间
+### InputStack, OutputStack, Time in Ticks
 
 ```zenscript
-gigaherz.survivalist.Dryable.addRecipe(IIngredient input, IItemStack output, int time)；
+gigaherz.survivalist.Dryable.addRecipe(IIngredient input, IItemStack output, int time);
 ```
 
 ##### 例子
 
 ```zenscript
-gigaherz.sivalist.Dryable.addRecipe(<minecraft:rotten_flesh>, <minecraft:leather>, 300)；
+gigaherz.survivalist.Dryable.addRecipe(<minecraft:rotten_flesh>, <minecraft:leather>, 300);
 ```
 
-### 输出堆栈， {InputStack}
+### OutputStack, {InputStack}
 
 ```zenscript
 gigaherz.survivalist.Dryable.removeRecipe(IIngredient output, IIngredient input);
@@ -49,7 +49,7 @@ gigaherz.survivalist.Dryable.removeRecipe(IIngredient output, IIngredient input)
 ##### 例子
 
 ```zenscript
-gigaherz.sivalist.Dryable.removeRecipe(<minecraft:leather>, <minecraft:rotten_flesh>);
+gigaherz.survivalist.Dryable.removeRecipe(<minecraft:leather>, <minecraft:rotten_flesh>);
 ```
 
-#### InputStack 可以是矿石字典，任何被{} 包围的东西都是可选的
+#### InputStack can be ore dictionary and anything surrounded by {} is optional

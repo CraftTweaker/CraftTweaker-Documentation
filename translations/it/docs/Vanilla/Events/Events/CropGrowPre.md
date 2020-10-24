@@ -1,27 +1,27 @@
 # CropGrowPreEvent
 
-L'evento CropGrowPre viene sparato quando le colture tentano di crescere. Ha un **risultato** che determina se il comportamento predefinito si verifica o meno:
+The CropGrowPre Event is fired when crops attempt to grow. It has a **result** which determines whether the default behaviour occurs or not:
 
 - **allow**: the crop is forced to grow.
-- **deny**: la coltura è impedita di crescere.
-- **default**: l'attacco utilizza comportamento Vanilla predefinito.
+- **deny**: the crop is prevented from growing.
+- **default**: the attack uses default Vanilla behaviour.
 
-## Classe Evento
-Dovrai lanciare l'evento nell'intestazione della funzione come questa classe:  
-`crafttweaker.event. ropGrowPreEvent`  
-È possibile, naturalmente, anche [importare](/AdvancedFunctions/Import/) la classe prima e utilizzare quel nome allora.
+## Event Class
+You will need to cast the event in the function header as this class:  
+`crafttweaker.event.CropGrowPreEvent`  
+You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
 
-## Estensioni dell'interfaccia evento
-Gli eventi CropGrowPost implementano le seguenti interfacce e sono in grado di chiamare tutti i loro metodi/getters/setters pure:
+## Event interface extensions
+CropGrowPost Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
 
 - [IBlockEvent](/Vanilla/Events/Events/IBlockEvent/)
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 
 
 ## ZenGetters
-Le seguenti informazioni possono essere ricavate dall'evento:
+The following information can be retrieved from the event:
 
-| ZenGetter            | ZenSetter | Tipo                                        |
+| ZenGetter            | ZenSetter | Type                                        |
 | -------------------- | --------- | ------------------------------------------- |
 | `originalBlockState` |           | [IBlockState](/Vanilla/Blocks/IBlockState/) |
 | `originalBlock`      |           | [IBlock](/Vanilla/Blocks/IBlock/)           |

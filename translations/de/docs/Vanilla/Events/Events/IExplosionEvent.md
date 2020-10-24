@@ -1,16 +1,16 @@
 # IExplosionEvent
 
-Diese Schnittstelle wird um alle Explosionsereignisse erweitert. Das bedeutet, dass Sie die folgenden Getter verwenden können, um auf die Positionsdetails zuzugreifen.
+This interface is extended by all explosion events. That means you can use the getters below to access the position details.
 
 ## Diese Klasse importieren
-Es könnte erforderlich sein, [die Klasse](/AdvancedFunctions/Import/) zu importieren, um Fehler zu vermeiden.  
-`Crafttweaker.event.IExplosionEvent;`
+It might be required to [import](/AdvancedFunctions/Import/) the class to avoid errors.  
+`import crafttweaker.event.IExplosionEvent;`
 
 ## ZenGetter
 
-| name     | typ                                    |
+| name     | type                                   |
 | -------- | -------------------------------------- |
-| Welt     | [IWorld](/Vanilla/World/IWorld/)       |
+| world    | [IWorld](/Vanilla/World/IWorld/)       |
 | position | [IBlockPos](/Vanilla/World/IBlockPos/) |
 | x        | double                                 |
 | y        | double                                 |

@@ -1,23 +1,23 @@
-### Clase
+### Class
 
 ```zenscript
-importar mods.roots.Flower.th;
+import mods.roots.FlowerGrowth;
 ```
 
-#### Métodos
+#### Methods
 
 ```zenscript
 void removeRecipe(
-  nombre de cadena // El nombre de la receta que desea eliminar
+  string name // The name of the recipe you wish to remove
 );
 ```
 
 * * *
 
 ```zenscript
-anular addRecipeBlockState(
-  nombre de cadena, // El nombre de la receta que estás agregando
-  estado de IBlockState // El estado del bloque de la flor
+void addRecipeBlockState(
+  string name,      // The name of the recipe that you're adding
+  IBlockState state // The state of the block of the flower
 );
 ```
 
@@ -25,29 +25,29 @@ anular addRecipeBlockState(
 
 ```zenscript
 void addRecipeBlock(
-  nombre de cadena, // El nombre de la receta que estás añadiendo
-  bloque IBlock, // El bloque de la flor a ser colocado
-  int meta // El meta del estado del bloque de flores
+  string name,  // The name of the recipe that you're adding
+  IBlock block, // The block of the flower to be placed
+  int meta      // The meta of the state of the flower block
 );
 ```
 
 * * *
 
-### Ejemplos
+### Examples
 
 ```zenscript
-import mods.roots.Flower th;
+import mods.roots.FlowerGrowth;
 
-// Elimina la receta por defecto para el león
-Flower.removeRecipe("dandelion");
+// Removes the default recipe for dandelion
+FlowerGrowth.removeRecipe("dandelion");
 
-// Añade una flor blanca de Botania usando el estado del bloque
-Flowercth. ddRecipeBlockState("mystical_white_flower", <blockstate:botania:flower:color=white>);
+// Adds a Botania white flower using block state
+FlowerGrowth.addRecipeBlockState("mystical_white_flower", <blockstate:botania:flower:color=white>);
 
-// Añade una flor magenta de Botania usando el bloque + meta
-Flower.addRecipeBlock("mystical_green_flower", <botania:flower>.asBlock(), 2);
+// Adds a Botania magenta flower using block + meta
+FlowerGrowth.addRecipeBlock("mystical_green_flower", <botania:flower>.asBlock(), 2);
 ```
 
-### Notas
+### Notes
 
-Actualmente no se ha probado con flores de doble altura.
+Currently untested with double-tall flowers.

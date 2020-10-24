@@ -1,32 +1,32 @@
-# Ogrzewanie basenów
+# Basin Heating
 
-## Dodanie
+## Addition
 
 ```zenscript
-importuj mods.cuisine.BasinHeating;
+import mods.cuisine.BasinHeating;
 
-BasinHeating.add(ILiquidStack, wyjście IItemStack); // Użyj 1 jako wartości ciepła
-BasinHeating. dd(ILiquidStack, moc wyjściowa IItemStack, wartość opałowa);
+BasinHeating.add(ILiquidStack input, IItemStack output); // Use 1 as heat value
+BasinHeating.add(ILiquidStack input, IItemStack output, int heatValue);
 
 BasinHeating.add(<liquid:lava> * 1000, <item:minecraft:diamond>);
 BasinHeating.add(<liquid:water> * 1000, <item:minecraft:diamond>, 100);
 ```
 
-## Usuwanie
+## Removal
 
 ```zenscript
-importuj mods.cuisine.BasinHeating;
+import mods.cuisine.BasinHeating;
 
-// Usuń przez wejście.
-BasinHeating.remove(ILiquidStack);
+// Remove by input.
+BasinHeating.remove(ILiquidStack input);
 
 BasinHeating.remove(<liquid:lava> * 1000);
 
-// Usuń przez identyfikator.
+// Remove by identifier.
 BasinHeating.remove(String id);
 
 BasinHeating.remove("recipe_name");
 
-// Usuń wszystko!
-c. „oprogramowanie” specjalnie zaprojektowane lub zmodyfikowane do „rozwoju”, „produkcji” lub „użytkowania” sprzętu wyszczególnionego w pozycji 2B001;
+// Remove everything!
+BasinHeating.removeAll();
 ```

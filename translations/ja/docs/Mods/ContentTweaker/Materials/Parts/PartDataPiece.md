@@ -1,32 +1,32 @@
 # PartDataPiece
 
-パーツデータピースは [パーツタイプ](/Mods/ContentTweaker/Materials/Parts/PartType/) に追加することで、 [パーツデータ](/Mods/ContentTweaker/Materials/Materials/MaterialPartData/) を [パーツ](/Mods/ContentTweaker/Materials/Materials/MaterialPart/) で作成された [パーツ](/Mods/ContentTweaker/Materials/Parts/Part/) この [パーツタイプ](/Mods/ContentTweaker/Materials/Parts/PartType/)に追加することができます。
+A part Data piece can be added to a [PartType](/Mods/ContentTweaker/Materials/Parts/PartType/) to be able to add some [MaterialPartData](/Mods/ContentTweaker/Materials/Materials/MaterialPartData/) to [MaterialParts](/Mods/ContentTweaker/Materials/Materials/MaterialPart/) created with [Parts](/Mods/ContentTweaker/Materials/Parts/Part/) that are of this [PartType](/Mods/ContentTweaker/Materials/Parts/PartType/).
 
 ## パッケージのインポート
 
-問題が発生した場合は、パッケージをインポートする必要があるかもしれませんので、申し訳ありませんし、インポートを追加してください。  
+It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
 `import mods.contenttweaker.PartDataPiece;`
 
-## そのようなオブジェクトを取得しています
+## Retrieving such an object
 
-[パート](/Mods/ContentTweaker/Materials/Parts/Part/) の `getData()` を [パート](/Mods/ContentTweaker/Materials/Parts/Part/) で取得できます。
+You can get a List of a [Parts](/Mods/ContentTweaker/Materials/Parts/Part/) DataPieces using `getData()` on a [Part](/Mods/ContentTweaker/Materials/Parts/Part/).
 
-代わりに、 [MaterialSystem](/Mods/ContentTweaker/Materials/MaterialSystem/) を使用して新しいPartDataPieceを登録することもできます:
+Alternatively, you can register a new PartDataPiece using the [MaterialSystem](/Mods/ContentTweaker/Materials/MaterialSystem/):
 
 ```zenscript
 mods.contenttweaker.MaterialSystem.createPartDataPiece(String name, boolean required)
 ```
 
-パラメータ:
+Parameters:
 
-- 文字列名: 新しい部品データピースの名前
-- boolean required: PartDataPiece は [MaterialParts](/Mods/ContentTweaker/Materials/Materials/MaterialPart/) に登録するために必要ですか?
+- String name: The new PartDataPiece's name
+- boolean required: Is the PartDataPiece required to be present on a [MaterialParts](/Mods/ContentTweaker/Materials/Materials/MaterialPart/) in order to register it?
 
 ## ZenMethods
 
-PartType から次の情報を取得できます:
+You can retrieve the following information from a PartType:
 
-| ZenMethod    | 戻り値 |
-| ------------ | --- |
-| getName()    | 文字列 |
-| isRequired() | 文字列 |
+| ZenMethod    | 戻り値    |
+| ------------ | ------ |
+| getName()    | string |
+| isRequired() | string |

@@ -1,22 +1,22 @@
-# Máscara de conductor
+# Conductor Mast
 
-## Paquete
+## Package
 ```zenscript
-importar mods.calculator.conductorMast;
+import mods.calculator.conductorMast;
 ```
 
 ## Metodos
 
-- **[IIngrediente](/Vanilla/Variable_Types/IIngredient/) entrada** La entrada.
-- **[IIngrediente](/Vanilla/Variable_Types/IIngredient/) salida** La salida.
-- **Int power cost** The cost of power per process.
+- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input** The input.
+- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) output** The output.
+- **Int powercost** The cost of power per process.
 
-## Añadido
+## Additon
 ```zenscript
-conductorMast.addRecipe(entrada IIngredient, int powercost, salida IIngredient);
+conductorMast.addRecipe(IIngredient input, int powercost, IIngredient output);
 ```
 
-## Eliminar
+## Removal
 ```zenscript
-conductorMast.removeRecipe(salida IIngredient);
+conductorMast.removeRecipe(IIngredient output);
 ```

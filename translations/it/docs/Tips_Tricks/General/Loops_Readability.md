@@ -1,15 +1,15 @@
-# Usa i cicli per rendere il tuo script migliore
+# Use Loops to make your script look better
 
-## Problema
+## Problem
 
-Lo abbiamo visto tutti: Script con più di 500 righe dove si dice 500 volte `recipes.remove(item1);recipes.remove(item2),...`  
-Non solo questo è un dolore da scrivere, ma è possibile che si trascorra ore a debuggare un po 'di battitura quando l'unica eccezione che si ottiene è `errore nelle ricette. s: null`
+We all have seen it: Scripts with more than 500 lines where it says 500 times `recipes.remove(item1);recipes.remove(item2),...`  
+Not only is this a pain to write, but it is possible that you spend hours debugging a little typo when the only exception you get is `error in recipes.zs: null`
 
-## Soluzione
+## Solution
 
-La mia regola di miniatura: Quando si scrive esattamente lo stesso comando più di 10 volte, con solo 1 cambiamento di parametro, userò un ciclo.
+My rule of thumb: When writing the exactly same command more than 10 times, with only 1 Parameter changing, I'll use a loop.
 
-Quindi, invece di scrivere sempre le funzioni, dichiaro un array contenente tutti gli elementi e iterare attraverso quello.
+So, instead of always typing out the functions, I declare one array containing all items and iterate through that one.
 
 ```zenscript
 import crafttweaker.item.IIngredient;
@@ -18,24 +18,24 @@ val Array = [
     item1,
     item2,
     item3,
-...
-] come IIngredient[];
+    ...
+] as IIngredient[];
 
 
-per l'elemento in Array{
+for item in Array{
     recipes.remove(item);
 }
 ```
 
-## Vantaggi
+## Advantages
 
-- Il tuo script diventa (a mio giudizio) più facile da leggere
-- Sai esattamente dove si avviva il tuo script
-- Le modifiche dell'ultimo minuto sono davvero facili come tutto quello che devi fare è aggiungere o rimuovere l'elemento dall'array.
+- Your script becomes (in my opinion) easier to read
+- You know exactly where your script screws up
+- Last minute changes are really easy as all you need to do is adding or removing the item from the array.
 
-## Svantaggi
+## Disadvantages
 
-- Funziona solo quando ci sono solo alcuni parametri che cambiano
-- Si potrebbe avvitare il vostro copione senza saperlo, per esempio, gettare l'array sbagliato
-- Un errore nell'array fa fallire l'intero array e nulla sarà fatto affatto.
-- Potresti ricevere messaggi di errore criptico a causa della creazione dell'array in modo sbagliato.
+- Only works when there's only a few parameters changing
+- You could screw up your script without knowing it, by say, casting the array wrong
+- One error in the array makes the whole array fail and nothing will be done at all.
+- You might receive cryptic error messages because of the array being created the wrong way.

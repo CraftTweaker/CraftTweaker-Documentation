@@ -1,37 +1,37 @@
 # IBlockAccess
 
-BlockAccess 对象是一个可以通过坐标进入的块组。 它们主要是连接到 [IWorld](/Vanilla/World/IWorld/)的超级接口，这意味着所有这些函数都可以提供给所有 [IWorld](/Vanilla/World/IWorld/) 对象。
+BlockAccess objects are a group of blocks accessible via coordinates. They mainly serves as superinterface to [IWorld](/Vanilla/World/IWorld/), that means all these functions are also available to all [IWorld](/Vanilla/World/IWorld/) objects.
 
 ## 导入类
 
-可能需要 [导入](/AdvancedFunctions/Import/) 类以避免错误。  
-`导入craftminstruer.world.IBlockAccess`
+It might be required to [import](/AdvancedFunctions/Import/) the class to avoid errors.  
+`import crafttweaker.world.IBlockAccess`
 
 ## ZenMethods
 
-### 在指定位置获取或设置方块状态
+### Get or Set a blockState at a specific Position
 
-使用 [IBlockPos](/Vanilla/World/IBlockPos/) 对象和 [IBlockState](/Vanilla/Blocks/IBlockState/) 对象。  
-返回一个 [IBlockState](/Vanilla/Blocks/IBlockState/)。
+Use an [IBlockPos](/Vanilla/World/IBlockPos/) Object and an [IBlockState](/Vanilla/Blocks/IBlockState/) Object.  
+Returns an [IBlockState](/Vanilla/Blocks/IBlockState/).
 
 ```zenscript
 accObj.getBlockState(IBlockPos pos);
 ```
 
-### 检查一个方块是否为空气方块。
+### Check if a block is an air block.
 
-使用 [IBlockPos](/Vanilla/World/IBlockPos/) 对象。  
-返回一个布尔值。
+Use an [IBlockPos](/Vanilla/World/IBlockPos/) object.  
+Returns a bool.
 
 ```zenscript
-accObj.isAirBlock(IBlockPos 姿势)；
+accObj.isAirBlock(IBlockPos pos);
 ```
 
-### 在方块一侧获得强大的功率
+### Get strong Power at a block's side
 
-使用 [IBlockPos](/Vanilla/World/IBlockPos/) 对象和 [IFacing](/Vanilla/World/IFacing/) 对象。  
-返回一个 int.
+Use an [IBlockPos](/Vanilla/World/IBlockPos/) object and an [IFacing](/Vanilla/World/IFacing/) object.  
+Returns an int.
 
 ```zenscript
-accObj.getStrongPower(BlockPos var1, EnumFacing var2)；
+accObj.getStrongPower(BlockPos var1, EnumFacing var2);
 ```

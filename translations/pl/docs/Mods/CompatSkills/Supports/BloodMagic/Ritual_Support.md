@@ -1,46 +1,46 @@
-# Wsparcie rytualne
+# Ritual Support
 
-## Rytuały:
+## Rituals:
 
-Spowoduje to anulowanie aktywacji rytuału, jeśli określone wymagania nie są spełnione dla aktywacji rytuałów.
+This will cancel the activation of a ritual if the specific requirements aren't met for the rituals activation.
 
-### Polecenie:
+### Command:
 
-Obecnie w grze jest komenda do wyrzucenia wszystkich ciągów rytualnych do użycia przez Ritual Handler. Polecenie to: /ct rytualDump i wyśle wszystkie ciągi rytualne do "CraftTweaker.log".
+There is currently an in-game command for dumping all of the Ritual Strings for use by the Ritual Handler. The command is: /ct ritualDump and it'll output all of the ritual strings to the "CraftTweaker.log".
 
-### Przedmiot 1.4.0:
+### Pre-1.4.0:
 
-#### Składnia:
+#### Syntax:
 
-    Pusty przykład:
-    mods.compatskills.RitualHandler.addRitualLock(String failureMessage, String ritual, String... Wymagania)
+    Blank Example:
+    mods.compatskills.RitualHandler.addRitualLock(String failureMessage, String ritual, String... requirements)
     
-    Test Przykład:
-    mods.compatskills.RitualHandler.addRitualLock ("Ponieważ rytuał aktywuje, nie osiągasz oczekiwanego wyniku", "rytualCrushing", "reskillable:building|15", "reskillable:magic|7", "stage|test", "adv|minecraft:husbandry/plant_seed")
+    Test Example:
+    mods.compatskills.RitualHandler.addRitualLock("As the ritual activates, you don't achieve the expected result", "ritualCrushing", "reskillable:building|15", "reskillable:magic|7", "stage|test", "adv|minecraft:husbandry/plant_seed")
     
 
-### Po 1.4.0:
+### Post-1.4.0:
 
-Od wersji CompatSkills 1.4.0 dodano kilka nowych metod ZenMethods oraz dokonano pewnych zmian w istniejącej składni. Naprawiliśmy również problem, który sprawił, że wsparcie rytualne i wiążące wsparcie nie działają poprawnie!
+As of CompatSkills 1.4.0 a few new ZenMethods have been added as well as some changes has been done to the existing syntax. We've also fixed an issue that made Ritual Support and Binding Support not work properly!
 
-#### Składnia:
+#### Syntax:
 
-    Pusty przykład:
-    mods.compatskills.RitualHandler.addRitualLock(String rytual, String... Wymagania);
-    mods.compatskills.RitualHandler.addRitualCostLock(int activationCost, String... Wymagania);
-    mods.compatskills.RitualHandler.addRitualCrystalLock(int krystaliczny, string... Wymagania
+    Blank Example:
+    mods.compatskills.RitualHandler.addRitualLock(String ritual, String... requirements);
+    mods.compatskills.RitualHandler.addRitualCostLock(int activationCost, String... requirements);
+    mods.compatskills.RitualHandler.addRitualCrystalLock(int crystalLevel, String... requirements);
     
-    Test Przykład:
-    mods.compatskills.RitualHandler.addRitualLock("rytualCrushing", "reskillable:magic|7");
+    Test Example:
+    mods.compatskills.RitualHandler.addRitualLock("ritualCrushing", "reskillable:magic|7");
     mods.compatskills.RitualHandler.addRitualCostLock(500, "reskillable:magic|7";
     mods.compatskills.RitualHandler.addRitualCrystalLock(1, "reskillable:magic|7");
     
 
-#### Komunikat o błędzie
+#### Error Message
 
-Podobnie jak w przypadku wsparcia wiążącego, komunikat o błędzie został przeniesiony do tłumaczalnego ciągu zamiast ciągu ustawionego w metodzie CrT. To sprawi, że twórcy paczek zasobów będą mogli zlokalizować i zmieniać ciągi w taki sposób, jak to będzie o wiele łatwiejsze.
+As with the binding support, the error message has been moved over to a localizable string instead of a string set in the CrT Method. This will make it so resource pack authors can localize and change the strings as they'd like much easier.
 
-    compatskills.bloodmagic.rytualError=Ponieważ rytuał aktywuje, nie osiągniesz oczekiwanego wyniku
+    compatskills.bloodmagic.ritualError=As the ritual activates, you don't achieve the expected result
     
 
-Niektóre inne zmiany to na przykład, że domyślny komunikat o błędzie wyświetla się graczowi jako część wiadomości o czacie statusu. Oznacza to, że wiadomość jest pokazywana tylko graczowi i nie jest drukowana na czacie, aby wszyscy mogli ją zobaczyć. Oznacza to również, że będzie on wyświetlany obok wymagań na czacie. To, co ułatwia graczowi zidentyfikowanie tego, czego brakuje w zamku.
+Some other changes are for example that the default error message now displays as part of a status chat message to the player. This means that the message is only shown to the player and not printed in chat for everyone to see. This also means that it will now display alongside requirements in the chat. Which makes it easier for the player to identify what they are missing from the lock.

@@ -1,40 +1,40 @@
 # EntityLivingSpawnEvent
 
-Wydarzenie EntityLivingSpawn jest uruchamiane za każdym razem, gdy podmiot próbuje dołączyć lub opuścić świat.  
-Ma jedną podklasę, EnityLivingExtendedSpawnEvent zawierający odniesienie [IMobSpawnerBaseLogic](/Vanilla/TileEntity/IMobSpawnerBaseLogic).
+The EntityLivingSpawn Event is fired whenever an entity tries to join or leave a world.  
+It has one subclass, the EntityLivingExtendedSpawnEvent that also contains an [IMobSpawnerBaseLogic](/Vanilla/TileEntity/IMobSpawnerBaseLogic) reference.
 
-## Klasa wydarzenia
+## Event Class
 
-Będziesz musiał aktywować wydarzenie w nagłówku funkcji jako klasa:  
-`stwórz słabszy. vent.EntityLivingSpawnEvent`  
-`crafttweaker. vent.EntityLivingExtendedSpawnEvent`  
-Możesz oczywiście również [zaimportować](/AdvancedFunctions/Import/) klasę przed i użyć tej nazwy.
+You will need to cast the event in the function header as this class:  
+`crafttweaker.event.EntityLivingSpawnEvent`  
+`crafttweaker.event.EntityLivingExtendedSpawnEvent`  
+You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
 
-## Rozszerzenia interfejsu zdarzenia
+## Event interface extensions
 
-Events EntityLivingSpawn implementuje następujące interfejsy i są w stanie wywołać wszystkie swoje metody/getters/setters:
+EntityLivingSpawn Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
 
 - [ILivingEvent](/Vanilla/Events/Events/ILivingEvent/)
 
 ## ZenGetters
 
-Z wydarzenia można uzyskać następujące informacje:
+The following information can be retrieved from the event:
 
-| ZenGetter                     | Typ                                                              |
-| ----------------------------- | ---------------------------------------------------------------- |
-| `świat`                       | [IWorld](/Vanilla/World/IWorld/)                                 |
-| `x`                           | zmiennoprzecinkowe                                               |
-| `y`                           | zmiennoprzecinkowe                                               |
-| `z`                           | zmiennoprzecinkowe                                               |
-|                               |                                                                  |
-| `spawner` (Tylko rozszerzone) | [IMobSpawnerBaseLogic](/Vanilla/TileEntity/IMobSpawnerBaseLogic) |
+| ZenGetter                 | Type                                                             |
+| ------------------------- | ---------------------------------------------------------------- |
+| `world`                   | [IWorld](/Vanilla/World/IWorld/)                                 |
+| `x`                       | float                                                            |
+| `y`                       | float                                                            |
+| `z`                       | float                                                            |
+|                           |                                                                  |
+| `spawner` (Extended Only) | [IMobSpawnerBaseLogic](/Vanilla/TileEntity/IMobSpawnerBaseLogic) |
 
-## Funkcje zdarzenia
+## Event functions
 
-Wydarzenie despawn oferuje również trzy funkcje do zmiany wyniku wydarzenia:
+The despawn event also offers three functions to change the event outcome:
 
-| Metoda ZenMethod | Opis                                        |
-| ---------------- | ------------------------------------------- |
-| `zezwól`         | Zmusza obiekt do (de)spawn                  |
-| `odrzuć`         | Zmusza obiekt do nie uruchamiania (de)spawn |
-| `przejdź`        | Ustawia wynik wydarzenia na domyślny stan   |
+| ZenMethod | Description                                |
+| --------- | ------------------------------------------ |
+| `allow`   | Forces the entity to (de)spawn             |
+| `deny`    | Forces the entity not to (de)spawn         |
+| `pass`    | Sets the event result to the default state |

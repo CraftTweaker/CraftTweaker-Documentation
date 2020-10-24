@@ -1,15 +1,15 @@
-# Скрапбокс
+# Scrapbox
 
-## Импортирование пакета
+## Importing the Package
 `mods.techreborn.scrapbox`
 
-## Добавление капли
+## Adding Drops
 ```zenscript
 mods.techreborn.scrapbox.addScrapboxDrop(IIngredient input);
 ```
 
-## Удаление капли
+## Removing Drops
 ```zenscript
-mods.techreborn.scrapbox.removeRecipe(IItemStack);
+mods.techreborn.scrapbox.removeRecipe(IItemStack output);
 mods.techreborn.scrapbox.removeAll();
 ```

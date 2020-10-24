@@ -1,20 +1,20 @@
-# Saldatura Incudine
+# Anvil Welding
 
-## Pacchetto
+## Package
 ```zenscript
-import mods.terrafirmacraft.Saldatura;
+import mods.terrafirmacraft.Welding;
 ```
 
-## Addizione
+## Addition
 
 ```zenscript
 Welding.addRecipe(String registryName, IIngredient input1, IIngredient input2, IItemStack output, int minTier);
 ```
 
-## Rimozione
+## Removal
 
 ```zenscript
 Welding.removeRecipe(IItemStack output);
 Welding.removeRecipe(String registryName);
 ```
-- Come per le ricette di incudin, qui si applicano le stesse regole per l'input. L'input deve essere forgeable(vedi [ItemRegistry](/Mods/Terrafirmacraft/ItemRegistry) per registrare la capacità di forgiatura a un elemento) e non può essere impilato.
+- As with anvil recipes, the same rules for input applies here. The input must be forgeable(see [ItemRegistry](/Mods/Terrafirmacraft/ItemRegistry) for registering forging capability to an item) and can't be stacked.

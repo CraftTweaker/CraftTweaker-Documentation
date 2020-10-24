@@ -1,17 +1,17 @@
-# Seltener Erdextraktor
+# Rare Earth Extractor
 
-## Paket
+## Package
 
 ```zenscript
-importieren mods.ic2.RareEarthExtractor;
+import mods.ic2.RareEarthExtractor;
 ```
 
 ## Methode
 
-- **float Wert**
-- **[IItemStack](/Vanilla/Items/IItemStack/)... Eingaben** Kann mehr als einen für die Eingabe angegeben haben. In diesem Fall geben alle angegebenen Elemente den gleichen Wert an.
+- **float value**
+- **[IItemStack](/Vanilla/Items/IItemStack/)... inputs** Can have more then one specified for the input. If so all the specified items give the same specified value.
 
-### Seltene Erdeinträge hinzufügen
+### Add Rare Earth Entries
 
 ```zenscript
 mods.ic2.RareEarthExtractor.addRareEarthEntries(float value, IItemStack... input);

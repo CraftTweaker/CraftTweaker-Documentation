@@ -1,17 +1,17 @@
-# Fissione Di Sale
-**Nota: Parzialmente Rotto**
+# Salt Fission
+**Note: Partially Broken**
 
-## Importazione del pacchetto
+## Importing the Package
 `mods.nuclearcraft.SaltFission`
 
-## Aggiunta Di Ricette
+## Adding Recipes
 ```zenscript
-mods.nuclearcraft.SaltFission.addRecipe(ILiquidStack fluidInput, ILiquidStack fluidOutput, doppia baseTime, doppia basePower, @Optional double processRadiation);
+mods.nuclearcraft.SaltFission.addRecipe(ILiquidStack fluidInput, ILiquidStack fluidOutput, double baseTime, double basePower, @Optional double processRadiation);
 ```
 
-## Rimozione Ricette
+## Removing Recipes
 ```zenscript
 mods.nuclearcraft.SaltFission.removeRecipeWithInput(ILiquidStack fluidInput);
 mods.nuclearcraft.SaltFission.removeRecipeWithOutput(ILiquidStack fluidOutput);
-mods.nuclearcraft.SaltFission.removeAllRicette();
+mods.nuclearcraft.SaltFission.removeAllRecipes();
 ```

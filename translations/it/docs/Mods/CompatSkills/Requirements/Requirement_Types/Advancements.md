@@ -1,12 +1,12 @@
-# Avanzamenti:
+# Advancements:
 
-I progressi sono uno dei tipi di requisiti originali supportati in Skillable (Original Mod) ed è stato ora migliorato nel codice per essere più affidabile per il cancello. La Sintassi di Avanzamento è la seguente:
+Advancements is one of the original requirement types supported in Skillable (Original Mod) and has now been improved in the code to be more reliable for gating. The Advancement Syntax is as follows:
 
-    Esempio:
-    adv<unk> ResourceLocation
+    Example:
+    adv|ResourceLocation
     
-    Esempio di lavoro:
-    adv<unk> minecraft:husbandry/plant_seed
+    Working Example:
+    adv|minecraft:husbandry/plant_seed
     
 
-Questo funziona per tutti e tutti i progressi anche quelli aggiunti da altre mod oltre minecraft, tuttavia la corretta Posizione Risorse deve essere specificata.
+This works for any and all Advancements even those added by other mods than minecraft, however the correct Resource Location needs to be specified.

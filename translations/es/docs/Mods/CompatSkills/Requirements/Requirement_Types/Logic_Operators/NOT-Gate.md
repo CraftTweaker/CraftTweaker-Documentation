@@ -1,10 +1,10 @@
-# NO Operador
+# NOT Operator
 
-Una **compuerta NOT** cambia el estado de la entrada. Así que si la entrada es `TRUE` entonces la salida será `FALSE` y viceversa.
+A **NOT** gate switches the state of the input. So if the input is `TRUE` then the output will be `FALSE` and vice versa.
 
-| Input | Salida |
+| Input | Output |
 | ----- | ------:|
 | 0     |      1 |
 | 1     |      0 |
 
-El requisito lógico más simple que Reskillable soporta es la capacidad de invertir un requerimiento. Hace esto usando una compuerta NOT y la sintaxis para que no se|requerimiento. Como se describe anteriormente en la sección sobre Gotas Lógicas, este requisito lógico sólo se marcará como cumplido si el requerimiento especificado no se cumple.
+The simplest logic requirement that Reskillable supports is the ability to invert a requirement. It does this using a NOT gate and the syntax for it is not|requirement. As described above in the section about Logic Gates, this logic requirement will only be marked as met if the specified requirement is not met.

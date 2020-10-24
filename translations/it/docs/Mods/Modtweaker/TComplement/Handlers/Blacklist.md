@@ -1,19 +1,19 @@
 # Blacklist
 
-Il pacchetto Blacklist è usato per aggiungere/rimuovere ricette da/alla blacklist melter.
+The Blacklist package is used for adding/removing recipes from/to the melter Blacklist.
 
-## Chiamata
+## Calling
 
-Puoi chiamare il pacchetto Blacklist usando `mods.tcomplement.Blacklist`
+You can call the Blacklist package using `mods.tcomplement.Blacklist`
 
-## Aggiunta voce blacklist
+## Blacklist entry addition
 
 ```zenscript
 //mods.tcomplement.Blacklist.addRecipe(ILiquidStack output, IItemStack input);
 mods.tcomplement.Blacklist.addRecipe(<liquid:seared_stone>, <minecraft:stone>);
 ```
 
-## Rimozione voce blacklist
+## Blacklist entry removal
 
 ```zenscript
 //mods.tcomplement.Blacklist.removeRecipe(IItemStack input);

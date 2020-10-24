@@ -1,12 +1,12 @@
-# Smerigliatrice Rock
+# Rock Grinder
 
-Il pacchetto *rockgrinder* viene utilizzato per aggiungere o rimuovere ricette a/da Rock Grinder.
+The *rockgrinder* package is used for adding or removing recipes to/from the Rock Grinder.
 
-## Chiamata
+## Calling
 
-Puoi chiamare il pacchetto *rockgrinder* usando `mods.skyresources.rockgrinder`
+You can call the *rockgrinder* package using `mods.skyresources.rockgrinder`
 
-## Aggiunta Ricetta
+## Recipe Addition
 
 ```zenscript
 //mods.skyresources.rockgrinder.addRecipe(IItemStack output, IItemStack input);
@@ -16,7 +16,7 @@ mods.skyresources.rockgrinder.addRecipe(<minecraft:diamond>, <minecraft:stone>);
 mods.skyresources.rockgrinder.addRecipe(<minecraft:emerald>, <minecraft:stone>, 0.50);
 ```
 
-## Rimozione Ricetta
+## Recipe Removal
 
 ```zenscript
 //mods.skyresources.rockgrinder.removeRecipe(IItemStack output);

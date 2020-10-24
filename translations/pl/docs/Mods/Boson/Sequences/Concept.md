@@ -1,23 +1,23 @@
-# Koncepcja
+# The Concept
 
-Pętla jest starą koncepcją i jedną z podstaw programowania: powtarzanie tego samego zestawu działań w grupie elementów, podczas filtrowania niektórych z nich lub konwersji zestawów. Lub nawet znalezienie pierwszego elementu na liście, która spełnia określony warunek lub zlicza elementy z zestawu rekursywnie.
+Looping is an old concept and one of the basis of programming: repeating the same set of actions over a group of elements, while filtering some of them out or converting sets. Or even finding the first item in a list that satisfies a certain condition or a count the items in a set recursively.
 
-W zakresie programowania proceduralnego i koniecznego, większość z nich została wykonana z prostym starem `dla pętli` i serią instrukcji warunkowych z ich względnymi `kontynuuj` i `przerwać`. Chociaż może to być prostsze do naśladowania, wymaga dużo kodu do prostych operacji, takich jak filtrowanie i może wytwarzać zagnieżdżone łańcuchy które mogą trwać dłużej. Ponadto nie wyraża zamiaru, chyba że w kodzie określono go z komentarzami.
+In procedural and imperative programming, most of that has been done with plain old `for` loops and a series of conditional statements with their relative `continue` and `break` statements. While this may seem simpler to follow, it requires a lot of code for simple operations such as filtering and may produce nesting chains that can go on for longer. Moreover, it doesn't express the intent unless the code specifies it with comments.
 
-Rozważ następujący kod ZenScript:
+Consider the following ZenScript code:
 
 ```zenscript
-var nbtForMc = fałsz;
+var nbtForMc = false;
 
-dla receptury w przepisach. ll {
-    jeśli (recipe.shaped) {
-        wyjście wału = przepisy. utput;
-        jeśli (! sNull(wyjście)) {
-            jeżeli (wyjście. efinition.owner == "minecraft") {
-                val hasData = wyjście. Znacznik;
-                jeśli (hasData) {
-                    nbtForMc = true; przerwa
-                    ;
+for recipe in recipes.all {
+    if (recipe.shaped) {
+        val output = recipes.output;
+        if (!isNull(output)) {
+            if (output.definition.owner == "minecraft") {
+                val hasData = output.hasTag;
+                if (hasData) {
+                    nbtForMc = true;
+                    break;
                 }
             }
         }
@@ -25,19 +25,19 @@ dla receptury w przepisach. ll {
 }
 ```
 
-To, co ten kod nie jest oczywiste na pierwszy rzut oka i wymaga od użytkownika przeczytania logiki do zrozumienia. Weź pod uwagę ten równoważnik zbudowany za pomocą sekwencji:
+What this code does isn't obvious from a first glance and requires the user to read the logic to understand. Consider this equivalent one constructed via sequences:
 
 ```zenscript
 val nbtForMc = <sequence:ICraftingRecipe>(recipes.all)
-    .filter(function (recipe) { return recipe. haped; })
+    .filter(function (recipe) { return recipe.shaped; })
     .map(function (recipe) { return recipe.output; })
-    . ilterNot(function (output) { return isNull(output); })
-    .filter(function (output) { return output. efinition.owner== "minecraft"; })
+    .filterNot(function (output) { return isNull(output); })
+    .filter(function (output) { return output.definition.owner == "minecraft"; })
     .any(function (output) { return output.hasTag; });
 ```
 
-Ten kod działa dokładnie tak samo i nie tylko jest bardziej zwięzły, ale również przekazuje więcej znaczenia, że łańcuch zagnieżdżonych instrukcji `jeśli`. Przyznana nie wydaje się ogólna poprawa, ze względu na prostotę przedmiotowego kodeksu, ale może okazać się przydatny dla bardziej skomplikowanych elementów logicznych.
+This code does the exact same and not only it's more concise, but also conveys more meaning that a chain of nested `if` statements. Granted, this does not seem like a general improvement, due to the simplicity of the code in question, but it may prove useful for more complicated pieces of logic.
 
-Innym pro z powyższego kodu jest to, że ocena nie jest wykonywana do `żadnego` połączenia, co oznacza, że sekwencja może być przedłużona za pomocą dodatkowych wywołań metody i nie zostanie rozwiązana dopóki nie zostanie wywołana metoda "terminalowa" (i. . metoda , która nie zwraca `sekwencji`. To okazuje się niezwykle użyteczne, ponieważ nie ma potrzeby oceniania całości `przepisów. Wszystkie` tablice.
+Another pro of the above code is that evaluation is not performed until the `any` call, meaning that the sequence can be extended via additional method calls over time and it won't be resolved until a "terminal" method is called (i.e. a method that does not return a `Sequence` itself). This proves extremely useful since it is not necessary to evaluate the whole `recipes.all` array.
 
-Aby rozpocząć i lewarować sekwencje, możesz zapoznać się zarówno z [dokumentacją klasy](/Mods/Boson/Sequences/Docs/) jak i [jak uzyskać jedną](/Mods/Boson/Sequences/Obtaining/) stron dokumentacji.
+To get started and leverage Sequences, you can consult both the [class documentation](/Mods/Boson/Sequences/Docs/) and [how to obtain one](/Mods/Boson/Sequences/Obtaining/) documentation pages.

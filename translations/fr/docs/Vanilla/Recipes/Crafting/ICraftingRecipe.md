@@ -1,17 +1,17 @@
-# Recette de fabrication
+# ICraftingRecipe
 
-Une recette ICraftingRecipe est une recette de table artisanale de la façon dont ZS la voit.
+An ICraftingRecipe is a crafting table recipe the way ZS sees it.
 
-## Importation de la classe
+## Importing the class
 
-Il peut être nécessaire de [importer](/AdvancedFunctions/Import/) la classe pour éviter les erreurs.  
-`importer crafttweaker.recipes.ICraftingRecipe`
+It might be required to [import](/AdvancedFunctions/Import/) the class to avoid errors.  
+`import crafttweaker.recipes.ICraftingRecipe`
 
-## Méthodes Zen/Getters
+## ZenMethods/Getters
 
-### Obtenir des ingrédients
+### Get Ingredients
 
-Renvoie un [Igredient](/Vanilla/Variable_Types/IIngredient/)[] ou un Ingrédient [](/Vanilla/Variable_Types/IIngredient/)[][]
+Either returns an [IIngredient](/Vanilla/Variable_Types/IIngredient/)[] or an [IIngredient](/Vanilla/Variable_Types/IIngredient/)[][]
 
 ```zenscript
 rec.ingredients1D
@@ -20,15 +20,15 @@ rec.ingredients2D
 
 ### Get standart output
 
-Retourne l'ouptut comme [IItemStack](/Vanilla/Items/IItemStack/). Attention, peut être null !
+Returns the ouptut as [IItemStack](/Vanilla/Items/IItemStack/). Careful, can be null!
 
 ```zenscript
-Sortie rec.fr
+rec.output
 ```
 
-### Vérifier les conditions
+### Check for conditions
 
-Chacun d'entre eux renvoie un booléen
+Each of these returns a boolean
 
 ```zenscript
 rec.hasTransformers;
@@ -38,33 +38,33 @@ rec.hidden;
 rec.shaped;
 ```
 
-### Domaine de la ressource
+### resourceDomain
 
-Fondamentalement, la modification du mod qui a ajouté la recette.
+Basically, the modid of the mod that added the recipe.
 
 ```zenscript
 rec.resourceDomain;
 rec.fullResourceDomain;
 ```
 
-### Ingrédients
+### Ingredients
 
-Retourne la liste des ingrédients comme [IIngrédient](/Vanilla/Variable_Types/IIngredient/)\[] ou [IIngrédient](/Vanilla/Variable_Types/IIngredient/)\[]\[] respectivement.
+Returns the ingredients list as [IIngredient](/Vanilla/Variable_Types/IIngredient/)\[] or [IIngredient](/Vanilla/Variable_Types/IIngredient/)\[]\[] respectively.
 
 ```zenscript
 rec.ingredients1D;
 rec.ingredients2D;
 ```
 
-### Sortie
+### Output
 
-La sortie [IItemStack](/Vanilla/Items/IItemStack/) de la recette.
+The [IItemStack](/Vanilla/Items/IItemStack/) output of the recipe.
 
 ```zenscript
 rec.output;
 ```
 
-### À la chaîne de caractères
+### To String
 
 ```zenscript
 rec.commandString;

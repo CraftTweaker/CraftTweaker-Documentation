@@ -1,14 +1,14 @@
-# Теплообменник
+# Heat Exchanger
 
-## Импортирование пакета
+## Importing the Package
 `mods.nuclearcraft.heat_exchanger`
 
-## Добавление рецептов
+## Adding Recipes
 ```zenscript
-mods.nuclearcraft.heat_exchanger.addRecipe([fluidInput, fluidOutput, двойной нагрев, Внутренняя температура, Внутренняя температура]);
+mods.nuclearcraft.heat_exchanger.addRecipe([fluidInput, fluidOutput, double heatRequired, int temperatureIn, int temperatureOut]);
 ```
 
-## Удаление рецептов
+## Removing Recipes
 ```zenscript
 mods.nuclearcraft.heat_exchanger.removeRecipeWithInput([fluidInput]);
 mods.nuclearcraft.heat_exchanger.removeRecipeWithOutput([fluidOutput]);

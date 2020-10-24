@@ -1,35 +1,35 @@
-# Chambre d'injection chimique
+# Chemical Injection Chamber
 
-Depuis le Mékanisme 9.7. il est maintenant possible de voir toutes les chaînes de recettes de la chambre d'injection chimique via la commande `/ct mekrecipes injection`
+As of Mekanism 9.7.0 it is now possible to view all recipe strings of the Chemical Injection Chamber through the command `/ct mekrecipes injection`
 
-## Ajouter
+## Addition
 
 ```zenscript
 mods.mekanism.chemical.injection.addRecipe(IIngredient inputStack, IGasStack inputGas, IItemStack outputStack);
 
-mods.mekanism.chemical.injection.addpe(<minecraft:hardened_clay:1>, <gas:water>, <minecraft:clay>);
+mods.mekanism.chemical.injection.addRecipe(<minecraft:hardened_clay:1>, <gas:water>, <minecraft:clay>);
 ```
 
-Depuis le Mékanisme 9.7.0 l'entrée de gaz n'est plus limitée à l'acide sulfurique, à l'eau ou au chlorure d'hydrogène
+As of Mekanism 9.7.0 inputGas is no longer restricted to just sulfuric acid, water, or hydrogen chloride
 
-Aussi depuis Mekanism 9.7.0 il est possible d'utiliser IIngredients comme la inputStack au lieu de IItemStacks.
+Also as of Mekanism 9.7.0 it is possible to use IIngredients as the inputStack instead of only IItemStacks.
 
-Note: Actuellement tout cela fait une boucle sur les différentes possibilités de java tout en ajoutant au lieu de vous avoir à le faire dans ZenScript. Actuellement, il n'y a pas de support pour les composants composés ou oredictionnaire dans les machines elles-mêmes.
+Note: Currently all this does is loop over the different possibilities in java while adding instead of you having to do it in ZenScript. Currently there is no built in support for compound ingredients or oredictionary in the machines themselves.
 
-## Retirer
+## Removal
 
 ```zenscript
-mods.mekanism.chemical.injection.removeRecipe(IIngredient outputStack, @Optional Igredient inputStack, @Optional IIngredient inputGas);
+mods.mekanism.chemical.injection.removeRecipe(IIngredient outputStack, @Optional IIngredient inputStack, @Optional IIngredient inputGas);
 
 mods.mekanism.chemical.injection.removeRecipe(<mekanism:shard:2>, <mekanism:oreblock>, <gas:hydrogenchloride>);
 mods.mekanism.chemical.injection.removeRecipe(<mekanism:shard:1>);
 ```
 
-Spécifier un paramètre d'entrée ne supprimera que la recette spécifique qui utilise cette entrée. L'omission du paramètre d'entrée supprimera toutes les recettes qui produisent la sortie spécifiée.
+Specifying an input parameter will only remove the specific recipe that uses said input. Omitting the input parameter will remove all recipes that produce the specified output.
 
-## Suppression de toutes les recettes
+## Removing all recipes
 
-Depuis le Mékanisme 9.7.0, il est maintenant possible de supprimer toutes les recettes de la chambre d'injection chimique. (Ceci exclut toutes les recettes ajoutées via CraftTweaker)
+As of Mekanism 9.7.0 it is now possible to remove all Chemical Injection Chamber recipes. (This excludes any recipes added via CraftTweaker)
 
 ```zenscript
 mods.mekanism.chemical.injection.removeAllRecipes();

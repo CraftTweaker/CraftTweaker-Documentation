@@ -1,7 +1,7 @@
 # IItemUtils
 
 L'interfaccia ItemUtils fornisce vari elementi utili.  
-È possibile accedere tramite la parola chiave `elementi`.
+È accessibile tramite la parola chiave `itemUtils`.
 
 ## Creare Pozioni
 
@@ -39,9 +39,9 @@ itemUtils.getItemsByRegexUnlocalizedName(".*pink.*"); // pink things!! <3
 
 ## Imitare il gestore parentesi oggetto
 
-Questo metodo fa lo stesso del [Item Bracket Handler](/Vanilla/Brackets/Bracket_Item/).  
-A differenza di BH però, è necessario fornire il meta come parametro opzionale.  
-Se vuoi usare il meta wildcard, usa `32767`.
+Questo metodo fa lo stesso del [Item Bracket Handler](/Vanilla/Brackets/Bracket_Item/). Questo ti permette di usare le variabili di stringa nel nome dell'elemento concatenandolo.  
+A differenza del gestore di staffe, è necessario fornire il meta come parametro opzionale.  
+Se si desidera utilizzare il meta wildcard, utilizzare `32767`.
 
     //getItem(location, @Optional meta);
     itemUtils.getItem("minecraft:iron_ingot"); //<minecraft:iron_ingot>
@@ -49,11 +49,11 @@ Se vuoi usare il meta wildcard, usa `32767`.
     itemUtils.getItem("minecraft:wool", 32767); //<minecraft:wool:*>
     
 
-## Crea uovo di Uovo
+## Crea Uovo Di Uovo
 
 La funzione createSpawnEgg consente di creare uova di spawn di mod personalizzate.  
 Il customNBT è FACOLTATIVO e può sovrascrivere il tag dell'entità.  
-Restituisce lo spawn eff come [IItemStack](/Vanilla/Items/IItemStack/).
+Restituisce lo spawn egg come [IItemStack](/Vanilla/Items/IItemStack/).
 
 ```zenscript
 //createSpawnEgg(entity, @optional customNBT)

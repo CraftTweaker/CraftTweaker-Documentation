@@ -1,6 +1,6 @@
 # LivingKnockBack
 
-Это событие запускается, когда сущность отталкивается. Событие **отменено** и это не позволит отозвать сущность. Попеременно можно изменить силу отталкивания в дополнение к соотношениям X и Z.
+This event is fired whenever an entity is knocked back. The event is **cancelable** and doing so will prevent the entity from being knocked back. Alternately, the strength of the knockback in addition to the X and Z ratios can be adjusted.
 
 ## Класс события
 You will need to cast the event in the function header as this class:  
@@ -8,26 +8,26 @@ You will need to cast the event in the function header as this class:
 You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
 
 ## Наследование от интерфейсов событий
-LivingKnockBack События реализуют следующие интерфейсы и также могут вызвать все их методы/getters/setters:
+LivingKnockBack Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
 
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 - [ILivingEvent](/Vanilla/Events/Events/ILivingEvent/)
 
 
 ## Геттеры/сеттеры
-Во время события можно извлечь/задать следующую информацию:
+The following information can be retrieved/set during the event:
 
-| ZenGetter                    | ZenSetter       | Тип                                   |
-| ---------------------------- | --------------- | ------------------------------------- |
-| `атакующий`                  | `атакующий`     | [IEntity](/Vanilla/Entities/IEntity/) |
-| `оригинальный атакующий`     |                 | [IEntity](/Vanilla/Entities/IEntity/) |
-| `сила`                       | `сила`          | float                                 |
-| `оригинальная Сила`          |                 | float                                 |
-| `соотношение X`              | `соотношение X` | double                                |
-| `соотношение Z`              | `соотношение Z` | double                                |
-| `оригинальное соотношение`   |                 | double                                |
-| `оригинальное соотношение Z` |                 | double                                |
+| ZenGetter          | ZenSetter  | Тип                                   |
+| ------------------ | ---------- | ------------------------------------- |
+| `attacker`         | `attacker` | [IEntity](/Vanilla/Entities/IEntity/) |
+| `originalAttacker` |            | [IEntity](/Vanilla/Entities/IEntity/) |
+| `strength`         | `strength` | float                                 |
+| `originalStrength` |            | float                                 |
+| `ratioX`           | `ratioX`   | double                                |
+| `ratioZ`           | `ratioZ`   | double                                |
+| `originalRatioX`   |            | double                                |
+| `originalRatioZ`   |            | double                                |
 
-## Примечания
+## Notes
 
-По прибытии события, возможно, что `атакующий`, `сила`, или различные `пропорции`s уже были изменены. Эти значения можно найти в `original*` переменных.
+When the event arrives, it's possible that the `attacker`, `strength`, or the various `ratio`s have already been modified. You can find these values in the `original*` variables.

@@ -1,6 +1,6 @@
 # RecipePrimer
 
-RecipePrimer オブジェクトは実際のレシピです。 [RecipeBuilder](/Mods/ModularMachinery/Recipes/RecipeBuilder/) からこのようなオブジェクトを取得し、そのメソッドを使用してレシピのインやアウトなどを実際に提供することができます。
+A RecipePrimer Object is the actual recipe. You can get such an object from the [RecipeBuilder](/Mods/ModularMachinery/Recipes/RecipeBuilder/) and use its methods to actually give the recipe ins and outs and stuff.
 
 ## パッケージのインポート
 
@@ -9,29 +9,29 @@ It might be required for you to import the package if you encounter any issues (
 
 ## ZenMethods
 
-これらのメソッドはそれぞれ2つのことを行います: 最初にオブジェクトを変更し、次にオブジェクト自体を(別の RecipePrimer として)返します。  
-これは、各メソッドを単独で呼び出すことができることを意味します。 または、コードの各断片を追加する呼び出しを行います(以下の例)。
+Each of these methods does two things: First, it modifies the object, then it returns the object itself (as another RecipePrimer).  
+This means you can either call each method on its own, or make one call where you append each pieces of code (example below).
 
-### 確率の設定
+### Setting the chance
 
 ```zenscript
 setChance(float chance);
 ```
 
-### エネルギーと燃料の追加要件
+### Adding Energy and fuel requirements
 
 ```zenscript
 addEnergyPerTickInput(int perTick);
 addEnergyPerTickOutput(int perTick);
 
 
-//typo? これは、sourcecode sais、try Input
+//Typo? This is what the sourcecode sais, if it doesn't work try Input
 addFuelItemInout(int requiredTotalBurnTime);
 ```
 
-### 入力を追加中
+### Adding inputs
 
-[IItemStacks](/Vanilla/Items/IItemStack/), [IOreDictEntity](/Vanilla/OreDict/IOreDictEntry/) または [ILiquidStacks](/Vanilla/Liquids/ILiquidStack/) を入力として追加できます。
+You can add [IItemStacks](/Vanilla/Items/IItemStack/), [IOreDictEntries](/Vanilla/OreDict/IOreDictEntry/) or [ILiquidStacks](/Vanilla/Liquids/ILiquidStack/) as input.
 
 ```zenscript
 addItemInput(IItemStack stack);
@@ -45,7 +45,7 @@ addFluidInput(ILiquidStack stack);
 
 ### Adding outputs
 
-[IItemStacks](/Vanilla/Items/IItemStack/), [IOreDictEntity](/Vanilla/OreDict/IOreDictEntry/) または [ILiquidStacks](/Vanilla/Liquids/ILiquidStack/) を出力として追加できます。
+You can add [IItemStacks](/Vanilla/Items/IItemStack/), [IOreDictEntries](/Vanilla/OreDict/IOreDictEntry/) or [ILiquidStacks](/Vanilla/Liquids/ILiquidStack/) as output.
 
 ```zenscript
 addItemOutput(IItemStack stack);
@@ -57,9 +57,9 @@ addItemOutput(IOreDictEntry oreDict, int amount);
 addFluidOutput(ILiquidStack stack);
 ```
 
-### レシピを構築
+### Building the recipe
 
-上記の変更を行った後、実際に何かを行うようにレシピを構築する必要があります。
+After you have done your changes above, you need to build the recipe so that it will actually do something.
 
 ```zenscript
 build();
@@ -67,7 +67,7 @@ build();
 
 ## 例
 
-それぞれのメソッドを単独で呼び出すことも、codegolf を再生することもできます。
+You can either call each method on its own, or play codegolf:
 
 ```zenscript
 val reci = mods.modularmachinery.RecipeBuilder.newBuilder("recipeRegistryName", "associatedMachineRegistryName", 1000, 0);

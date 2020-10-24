@@ -1,21 +1,21 @@
-# Ararystyczny Kuźnia
+# Tartaric Forge
 
-## Pakiet
+## Package
 
-`mods.blood magic.TartaricForge`
+`mods.bloodmagic.TartaricForge`
 
-## Dodanie
+## Addition
 
 ```zenscript
-wejścia mają maksymalny rozmiar 4
-//mods.bloodmagic.TartaricForge.addRecipe(wyjścia IItemStack IItemStack, IItemStack[] wejść, podwójna minSouls, podwójna ducha,
-mody. loodmagic.TartaricForge.addRecipe(<minecraft:diamond>,[<minecraft:dirt>, <minecraft:dirt>, <minecraft:dirt>, <minecraft:dirt>], 10,10);
+inputs has a max size of 4
+//mods.bloodmagic.TartaricForge.addRecipe(IItemStack output, IItemStack[] inputs, double minSouls, double soulDrain);
+mods.bloodmagic.TartaricForge.addRecipe(<minecraft:diamond>,[<minecraft:dirt>, <minecraft:dirt>, <minecraft:dirt>, <minecraft:dirt>], 10,10);
 ```
 
-## Usuwanie
+## Removal
 
 ```zenscript
-wejścia mają maksymalny rozmiar 4
-//mods.bloodmagic.TartaricForge.removeRecipe(IItemStack[] wejścia);
+inputs has a max size of 4
+//mods.bloodmagic.TartaricForge.removeRecipe(IItemStack[] inputs);
 mods.bloodmagic.TartaricForge.removeRecipe([<minecraft:ghast_tear>,<minecraft:feather>, <minecraft:feather>]);
 ```

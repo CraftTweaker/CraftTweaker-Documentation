@@ -1,7 +1,7 @@
 # IItemUtils
 
-Das ItemUtils Interface bietet verschiedene Artikelwerkzeuge.  
-Es kann mit den `Elementen` Schlüsselwörtern aufgerufen werden.
+Die ItemUtils Schnittstelle bietet verschiedene Artikelwerkzeuge.  
+Sie kann mit dem `ItemUtils` Schlüsselwort aufgerufen werden.
 
 ## Tränke erstellen
 
@@ -39,8 +39,8 @@ itemUtils.getItemsByRegexUnlocalizedName(".*pink.*"); // rosa Ding!! <3
 
 ## Imitate den Item Klammerhandler
 
-Diese Methode entspricht dem [Item Bracket Handler](/Vanilla/Brackets/Bracket_Item/).  
-Im Gegensatz zum BH müssen Sie den Meta als optionalen Parameter angeben.  
+Diese Methode entspricht dem [Item Bracket Handler](/Vanilla/Brackets/Bracket_Item/). Dies erlaubt Ihnen die Verwendung von String-Variablen im Namen des Elements, indem Sie ihn in einen verketten.  
+Im Gegensatz zum Klammerhandler müssen Sie den Meta als optionalen Parameter angeben.  
 Wenn Sie die Platzhalter-Meta verwenden möchten, verwenden Sie `32767`.
 
     //getItem(location, @Optional meta);
@@ -53,7 +53,7 @@ Wenn Sie die Platzhalter-Meta verwenden möchten, verwenden Sie `32767`.
 
 Die createSpawnEgg Funktion erlaubt dir, benutzerdefinierte Mod Spawn Eier zu erstellen.  
 Das customNBT ist OPTIONAL und kann das Entitäts-Tag überschreiben.  
-Gibt den Spawn eff als [IItemStack](/Vanilla/Items/IItemStack/) zurück.
+Gibt das Spawn-Ei als [IItemStack](/Vanilla/Items/IItemStack/) zurück.
 
 ```zenscript
 //createSpawnEgg(entity, @optional customNBT)

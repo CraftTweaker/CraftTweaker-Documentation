@@ -1,8 +1,8 @@
 # Токены ZenScript
 
-This is the internal tokens only listed so I have a place to list them somewhere for devs to point...
+These are internal tokens only listed so I have a place to list them somewhere for devs to point to...
 
-| Значение токена | Имя токена          | Строка токена                                               |
+| Значение токена | Имя токена          | Token String                                                |
 | --------------- | ------------------- | ----------------------------------------------------------- |
 | 1               | T_ID                | `[a-zA-Z_][a-zA-Z_0-9]*`                                    |
 | 2               | T_INTVALUE          | `\-?(0|[1-9][0-9]*)`                                       |
@@ -84,4 +84,4 @@ This is the internal tokens only listed so I have a place to list them somewhere
 | 123456789       | T_ZEN_CLASS       | `zenClass`                                                  |
 | 123456789       | T_ZEN_CLASS       | `frigginClass`                                              |
 | 987654321       | T_ZEN_CONSTRUCTOR | `zenConstructor`                                            |
-| 987654321       | T_ZEN_CONSTRUCTOR | `фригинКонструктор`                                         |
+| 987654321       | T_ZEN_CONSTRUCTOR | `frigginConstructor`                                        |

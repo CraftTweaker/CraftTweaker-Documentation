@@ -1,31 +1,31 @@
 # IEntityAttributeInstance
 
-## Importation du paquet
+## Importing the package
 
-Il pourrait vous être nécessaire d'importer le paquet si vous rencontrez des problèmes (comme lancer un [Tableau](/AdvancedFunctions/Arrays_and_Loops/)), alors mieux être sûr que désolé et ajouter l'importation.  
-`importer crafttweaker.entity.AttributeInstance ;`
+It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
+`import crafttweaker.entity.AttributeInstance;`
 
 ## ZenGetters
 
-| ZenGetter            | Méthode d'obtention | Type de retour                                                     |
-| -------------------- | ------------------- | ------------------------------------------------------------------ |
-| attribut             | getAttribute()      | [IEntityAttribute](/Vanilla/Entities/Attributes/IEntityAttribute/) |
-| valeur de base       | getBaseValue()      | double                                                             |
-| modificateurs        | getModifiers()      | `Liste<IEntityAttrubuteModifier>`                            |
-| Valeur de l'attribut | getAttributeValue() | double                                                             |
+| ZenGetter      | GetterMethod        | Return Type                                                        |
+| -------------- | ------------------- | ------------------------------------------------------------------ |
+| attribute      | getAttribute()      | [IEntityAttribute](/Vanilla/Entities/Attributes/IEntityAttribute/) |
+| baseValue      | getBaseValue()      | double                                                             |
+| modifiers      | getModifiers()      | `List<IEntityAttrubuteModifier>`                             |
+| attributeValue | getAttributeValue() | double                                                             |
 
 ## ZenSetters
 
-| ZenSetter      | Méthode de réglage   | Type de paramètre |
-| -------------- | -------------------- | ----------------- |
-| valeur de base | setBaseValue(valeur) | double            |
+| ZenSetter | SetterMethod        | Parameter Type |
+| --------- | ------------------- | -------------- |
+| baseValue | setBaseValue(value) | double         |
 
-## Méthodes de modification
+## Modifier Methods
 
-- `Liste<IEntityAttrubuteModifier>` getModifiersByOperation(int opération)
+- `List<IEntityAttrubuteModifier>` getModifiersByOperation(int operation)
 - boolean hasModifier([IEntityAttributeModifier](/Vanilla/Entities/Attributes/IEntityAttributeModifier/) modifier)
 - [IEntityAttributeModifier](/Vanilla/Entities/Attributes/IEntityAttributeModifier/) getModifier(String uuid);
-- void applyModifier([modificateur IEntityAttributeModifier](/Vanilla/Entities/Attributes/IEntityAttributeModifier/) ) ;
+- void applyModifier([IEntityAttributeModifier](/Vanilla/Entities/Attributes/IEntityAttributeModifier/) modifier);
 - void removeModifier([IEntityAttributeModifier](/Vanilla/Entities/Attributes/IEntityAttributeModifier/) modifier);
 - void removeModifier(String uuid);
 - void removeAllModifiers();

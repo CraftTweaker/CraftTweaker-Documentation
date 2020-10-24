@@ -1,24 +1,24 @@
-# 配方信息
+# Recipe Info
 
-## 配方处理
-如果您想要获得与配方类型关联的配方处理程序，请使用 `getRecipehandler()`。 例如，如果你想同时使用固体燃料裂变处理器，请使用 `mods.nuclearcraft。SolidFission.getRecipehandler()`.
+## Recipe Handlers
+If you want to get the recipe handler associated with a recipe type, use `getRecipeHandler()`. For example, if you want toget the Solid Fuel Fission recipe handler, use `mods.nuclearcraft.SolidFission.getRecipeHandler()`.
 
-## 配方处理方法
+## Recipe Handler Methods
 ```zenscript
-RecipeHandler:::getRecipepeName();
-Recipehandler:::getRecipeList();
+RecipeHandler::getRecipeName();
+RecipeHandler::getRecipeList();
 
-Recipehandler::getItemInputSize();
-Recipehandler::getFluidInputSize();
-Recipehandler:::getItemOutputSize();
-Recipehandler::getFluidOutputSize();
-Recipehandler:::isShapeless();
+RecipeHandler::getItemInputSize();
+RecipeHandler::getFluidInputSize();
+RecipeHandler::getItemOutputSize();
+RecipeHandler::getFluidOutputSize();
+RecipeHandler::isShapeless();
 ```
 
-## 配方方法
+## Recipe Methods
 ```zenscript
-累积::getItemIngredient(int index);
-累积::getFluidIngredient(int index);
-累积::getItItemProduct(int index);
-累积::getFluidProduct(int index);
+Recipe::getItemIngredient(int index);
+Recipe::getFluidIngredient(int index);
+Recipe::getItemProduct(int index);
+Recipe::getFluidProduct(int index);
 ```

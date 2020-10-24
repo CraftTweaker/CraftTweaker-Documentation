@@ -1,26 +1,26 @@
-# Requisiti Invertiti:
+# Inverted Requirements:
 
 ## [NOTICE]
 
-I requisiti invertiti sono obsoleti e sono sostituiti internamente dall'operatore non logico. Ciò significa che i requisiti invertiti vengono automaticamente convertiti in codice in un operatore NO. Si prega di astenersi dall'utilizzare questo tipo di requisito, sono ancora inclusi per **Supporto legacy!**
+Inverted Requirements are Deprecated and is replaced internally by the NOT-Logical Operator. This means that the inverted requirements are automatically converted in-code into a NOT-Operator. Please refrain from using this requirement type, they are still included for **Legacy Support!**
 
-## Requisiti Invertiti
+## Inverted-Requirements
 
-I requisiti invertiti sono solo 1.4.0 + Compatibilità! I requisiti invertiti sono sbloccati finché non hai il componente richiesto. Un requisito di abilità invertito è sbloccato fintanto che non si ha il livello specificato dell'abilità o superiore.
+Inverted requirements are a 1.4.0+ CompatSkills feature only! Inverted requirements are unlocked as long as you do not have the required component. An Inverted Skill Requirement is unlocked as long as you do not have the specified level of the skill or higher.
 
-Le Sintassi Invertite sono le seguenti:
+The Inverted-Syntaxes are as follows:
 
-    Esempio:
-    !adv<unk>
-    !dim<unk>
-    !stage<unk>
-    !skill<unk>
-    !trait<unk>
+    Example:
+    !adv|
+    !dim|
+    !stage|
+    !skill|
+    !trait|
     
     
-    Esempio di lavoro:
-    !adv<unk> minecraft:husbandry/plant_seed
-    !dim<unk> 0
-    !stage<unk> test
-    !skill<unk> reskillable:building<unk> 15
-    !trait<unk> reskillable:battle_spirit
+    Working Example:
+    !adv|minecraft:husbandry/plant_seed
+    !dim|0
+    !stage|test
+    !skill|reskillable:building|15
+    !trait|reskillable:battle_spirit

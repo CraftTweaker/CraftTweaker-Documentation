@@ -1,20 +1,20 @@
-# Composición
+# Composting
 
-## Paquete
+## Package
 ```zenscript
 mods.exnihilocreatio.Compost
 ```
 
-## Métodos
+## Methods
 
-- **[IIngrediente](/Vanilla/Variable_Types/IIngredient/) entrada** La entrada.
-- **Probabilidad flotante** La probabilidad debe estar entre 0-1.
-- **Color de cadena** El color es hex.
-- **[ItemStack](/Vanilla/Items/IItemStack/) muestra** El resultado de la receta.
+- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input** The input.
+- **Float chance** The chance should be between 0-1.
+- **String color** The color is hex.
+- **[IItemStack](/Vanilla/Items/IItemStack/) output** The result of the recipe.
 
-## Adicional
+## Addition
 
-No toma arreglos para IIngredient.
+Does not take arrays in for IIngredient.
 
 ```zenscript
 mods.exnihilocreatio.Compost.addRecipe(IIngredient, Float chance, String color, IItemStack);
@@ -22,7 +22,7 @@ mods.exnihilocreatio.Compost.addRecipe(IIngredient, Float chance, String color, 
 mods.exnihilocreatio.Compost.addRecipe(<ore:woodPlank>, 0.25, "63452D", <minecraft:log>);
 ```
 
-## Eliminar
+## Removal
 
 ```zenscript
 Compost.removeAll();

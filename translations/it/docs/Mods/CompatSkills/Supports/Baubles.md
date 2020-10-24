@@ -1,5 +1,5 @@
 # Baubles
 
-## Supporto Baubles
+## Baubles Support
 
-Baubles-Support fa parte dei blocchi standard ItemStack-Requirement. Ciò significa che qualsiasi Oggetto per il quale non hai i requisiti richiesti nel tuo Inventario Baubles verrà automaticamente espulso e verrà stampato un messaggio di errore!
+Baubles-Support is part of the standard ItemStack-Requirement locks. This means that any Item you do not have the required requirements for in your Baubles Inventory will be automatically-ejected and a error message will be printed!

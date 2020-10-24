@@ -1,42 +1,42 @@
-# 死の宝箱の防御力
+# Death Chest Defense
 
 ## パッケージのインポート
 
 `import mods.vanilladeathchest.DeathChestDefense;`
 
-## ロック解除アイテム
+## Unlocker item
 
 ```zenscript
 //DeathChestDefense.setUnlocker(string stage, IItemStack unlocker);
 DeathChestDefense.setUnlocker("example_stage", <minecraft:diamond_axe> * 1000);
 ```
 
-上記のようなスタックサイズを指定することで、消費量/損傷量を設定することができます。
+A consumption/damage amount can be set by specifying a stack size like above.
 
-## アンロッカーアイテムを消費するのではなくダメージを与える
+## Damage the unlocker item rather than consuming it
 
 ```zenscript
 //DeathChestDefense.setDamageUnlockerInsteadOfConsume(string stage, bool flag);
 DeathChestDefense.setDamageUnlockerInsteadOfConsume("example_stage", true);
 ```
 
-## チャットメッセージのロック解除に失敗しました
+## Unlock failed chat message
 
 ```zenscript
 //DeathChestDefense.setUnlockFailedChatMessage(string stage, string message);
-DeathChestDefense.setUnlockFailedChatMessage("example_stage", "You need to get a %2$s to unnamed@@2to unnamed@@3unnamed@@4!")
+DeathChestDefense.setUnlockFailedChatMessage("example_stage", "You need to get a %2$s to unlock your chest!");
 ```
 
-文字列は2つの引数をとります: 必要なアイテムの量と表示名です。
+The string takes two arguments: the amount and display name of the required items.
 
-## ディフェンスエンティティ
+## Defense entity
 
 ```zenscript
 //DeathChestDefense.setDefenseEntity(string stage, IEntityDefinition defenseEntity);
 DeathChestDefense.setDefenseEntity("example_stage", <entity:minecraft:zombie_pigman>);
 ```
 
-## 防衛エンティティNBT
+## Defense entity NBT
 
 ```zenscript
 //DeathChestDefense.setDefenseEntityNBT(string stage, IData nbt);
@@ -50,9 +50,9 @@ DeathChestDefense.setDefenseEntityNBT("example_stage", {
 });
 ```
 
-`nbt` は [DataMap](/Vanilla/Data/DataMap/) でなければなりません。
+`nbt` should be a [DataMap](/Vanilla/Data/DataMap/).
 
-## 防衛施設のスポーン回数
+## Defense entity spawn count
 
 ```zenscript
 //DeathChestDefense.setDefenseEntitySpawnCount(string stage, int count);

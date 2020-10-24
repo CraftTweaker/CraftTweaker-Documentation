@@ -1,36 +1,36 @@
-# 弧炉子
+# Arc Furnace
 
-Arc Furnace包可以用来添加/移除沉浸式工程弧炉配方。
+The Arc Furnace package can be used to add/remove recipes to/from the Immersive Engineering Arc Furnace.
 
-## 调用包
+## Calling The Package
 
-您可以使用 `mods.immersiveengineering.ArcFurnace` 调用ArcFurnace 包.
+You can call the ArcFurnace package using `mods.immersiveengineering.ArcFurnace`.
 
 ## 添加配方
 
-| 必填 | 类型     | 数据类型                                                                          |
-| -- | ------ | ----------------------------------------------------------------------------- |
-| 必要 | 输出     | [IItemStack](/Vanilla/Items/IItemStack/)                                      |
-| 必要 | 输入     | [材料（IIngredient）](/Vanilla/Variable_Types/IIngredient/)                       |
-| 必填 | Slag   | [IItemStack](/Vanilla/Items/IItemStack/)                                      |
-| 必要 | 时间     | 整型                                                                            |
-| 必要 | 每刻度能量数 | 整型                                                                            |
-| 可选 | 添加剂    | [元素](/Vanilla/Variable_Types/IIngredient/) 数组 []                              |
-| 可选 | 特殊配方类型 | 字符串 [特殊Recipetype](/Mods/Immersive_Engineering/Variables/SpecialRecipeTypes/) |
+| Required | 类型                  | 数据类型                                                                                   |
+| -------- | ------------------- | -------------------------------------------------------------------------------------- |
+| 必要       | 输出                  | [IItemStack](/Vanilla/Items/IItemStack/)                                               |
+| 必要       | 输入                  | [材料（IIngredient）](/Vanilla/Variable_Types/IIngredient/)                                |
+| Required | Slag                | [IItemStack](/Vanilla/Items/IItemStack/)                                               |
+| 必要       | Time                | 整型                                                                                     |
+| 必要       | Energy Per Tick     | 整型                                                                                     |
+| 可选       | Additives           | [IIngredient](/Vanilla/Variable_Types/IIngredient/) Array[]                            |
+| 可选       | Special Recipe Type | String [specialRecipeTypes](/Mods/Immersive_Engineering/Variables/SpecialRecipeTypes/) |
 
 ### 例子
 
 ```zenscript
-//示例：
-mods.immersiveengineering.ArcFurnace.addRecipe(IItemStack output, IIngredient input, IItemStack slag, int time, int energyPerTick, @Optional IIngredient[additters, @Optional String specialRecipetypeType);
+//Example:
+mods.immersiveengineering.ArcFurnace.addRecipe(IItemStack output, IIngredient input, IItemStack slag, int time, int energyPerTick, @Optional IIngredient[] additives, @Optional String specialRecipeType);
 
-mods. mersiveengineering.ArcFurnace.addRecipe(<minecraft:diamond>, <ore:logWood>, <minecraft:dirt>, 2000, 2048);
-mods.immersiveengineering.ArcFurnace. ddRecipe(<minecraft:diamond>, <ore:logWood>, <minecraft:dirt>, 2000, 2048, [<ore:oreIron>, <ore:oreGold>]);
-mods.immersiveengineering. rcFurnace.addRecipe(<minecraft:diamond>, <ore:logWood>, <minecraft:dirt>, 2000, 2048, [<ore:oreIron>, <ore:oreGold>], "Ores");
-mods. mmersiveengineering.ArcFurnace.addRecipe(<minecraft:diamond>, <ore:logWood>, <minecraft:dirt>, 2000, 2048, [<ore:oreIron>, <ore:oreGold>], "合金");
+mods.immersiveengineering.ArcFurnace.addRecipe(<minecraft:diamond>, <ore:logWood>, <minecraft:dirt>, 2000, 2048);
+mods.immersiveengineering.ArcFurnace.addRecipe(<minecraft:diamond>, <ore:logWood>, <minecraft:dirt>, 2000, 2048, [<ore:oreIron>, <ore:oreGold>]);
+mods.immersiveengineering.ArcFurnace.addRecipe(<minecraft:diamond>, <ore:logWood>, <minecraft:dirt>, 2000, 2048, [<ore:oreIron>, <ore:oreGold>], "Ores");
+mods.immersiveengineering.ArcFurnace.addRecipe(<minecraft:diamond>, <ore:logWood>, <minecraft:dirt>, 2000, 2048, [<ore:oreIron>, <ore:oreGold>], "Alloying");
 ```
 
-## 删除配方
+## Remove Recipe
 
 | 类型 | 数据类型                                          |
 | -- | --------------------------------------------- |
@@ -39,7 +39,7 @@ mods. mmersiveengineering.ArcFurnace.addRecipe(<minecraft:diamond>, <ore:logWood
 ### 例子
 
 ```zenscript
-//示例：
-mods.immersiveengineering.ArcFurnace.removeRecipe(IItemstack 输出)；
-mods.immersiveengineering.ArcFurnace.removeRecipe(<minecraft:diamond>)；
+//Example:
+mods.immersiveengineering.ArcFurnace.removeRecipe(IItemstack output);
+mods.immersiveengineering.ArcFurnace.removeRecipe(<minecraft:diamond>);
 ```

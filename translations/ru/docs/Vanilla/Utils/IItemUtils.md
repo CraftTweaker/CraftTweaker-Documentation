@@ -1,7 +1,7 @@
 # IItemUtils
 
-Интерфейс ItemUtils предоставляет различные утилиты для работы с предметами.  
-Можно получить к нему доступ с помощью `items`.
+Интерфейс ItemUtils предоставляет различные утилиты.  
+Вы можете получить доступ к ним, используя `itemUtils` ключевое слово.
 
 ## Создание зелий
 
@@ -39,9 +39,9 @@ itemUtils.getItemsByRegexlocalizedName(".*pink.*"); // розовые вещи!!
 
 ## Имитирование обработчика скобок
 
-This method does the same as the [Item Bracket Handler](/Vanilla/Brackets/Bracket_Item/).  
-Unlike the BH though, you need to provide the meta as optional parameter.  
-If you want to use the wildcard meta, use `32767`.
+This method does the same as the [Item Bracket Handler](/Vanilla/Brackets/Bracket_Item/). Это позволяет использовать строковые переменные в названии элемента, объединив их в название.  
+Однако, в отличие от обработчика скобок, вы должны предоставить meta в качестве необязательного параметра.  
+Если вы хотите использовать подстановочную мету, используйте `32767`.
 
     //getItem(location, @Optional meta);
     itemUtils.getItem("minecraft:iron_ingot"); //<minecraft:iron_ingot>
@@ -49,11 +49,11 @@ If you want to use the wildcard meta, use `32767`.
     itemUtils.getItem("minecraft:wol", 32767); //<minecraft:wool:*>
     
 
-## Создание яиц призыва
+## Создать яйцо появления
 
 Функция createSpawnEgg позволяет создать пользовательские яйца спавна модов.  
 customNBT опционально и может переопределить тег сущности.  
-Возвращает порождающий eff как [IItemStack](/Vanilla/Items/IItemStack/).
+Возвращает яйцо спавна как [IItemStack](/Vanilla/Items/IItemStack/).
 
 ```zenscript
 //createSpawnEgg(сущность, @optional customNBT)

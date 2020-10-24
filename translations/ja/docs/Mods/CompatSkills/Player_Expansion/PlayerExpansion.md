@@ -2,10 +2,10 @@
 
 ## getSkillData
 
-getSkillData は直接使用されていない ZenGetter です。 しかし、むしろ以下を行うことでアクセスできます。
+getSkillData is a ZenGetter that is not directly used. But rather you access it by doing:
 
-    例:
+    Example:
     event.player.skillData
     
 
-これにより、スキルデータの深いところで進歩するために使用される「CTPlayerData」が提供されます。
+This provides you with the "CTPlayerData" which is used to progress deeper into the Skill Data.

@@ -1,14 +1,14 @@
-# 製鋼所
+# Refinery
 
-## パッケージ
+## Package
 
 `mods.thermalexpansion.Refinery`
 
-## レシピを追加
+## Adding a Recipe
 
 `Refinery.addRecipe(output, outputItem, input, energy);`
 
-- `出力` <[ILiquidStack](/Vanilla/Liquids/ILiquidStack)>
+- `output` <[ILiquidStack](/Vanilla/Liquids/ILiquidStack)>
 - `outputItem` <[WeightedItemStack](/Vanilla/Items/WeightedItemStack)>
 - `input` <[ILiquidStack](/Vanilla/Liquids/ILiquidStack)>
 - `energy` &lt;int> The total energy cost
@@ -23,13 +23,13 @@ Refinery.addRecipe(<liquid:lava>, <minecraft:diamond>, <liquid:water>, 50);
 Refinery.addRecipe(<liquid:lava> * 5, <minecraft:diamond> % 1, <liquid:water> * 100, 50);
 ```
 
-### ポーションレシピを追加する
+### Adding a Potion Recipe
 
-錬金術リポート拡張に使用するレシピを追加します。
+Adds a recipe to be used with the Alchemical Retort Augmentation
 
 `Refinery.addRecipePotion(output, input, energy);`
 
-- `出力` <[ILiquidStack](/Vanilla/Liquids/ILiquidStack)>
+- `output` <[ILiquidStack](/Vanilla/Liquids/ILiquidStack)>
 - `input` <[ILiquidStack](/Vanilla/Liquids/ILiquidStack)>
 - `energy` &lt;int> The total energy cost
 
@@ -39,7 +39,7 @@ import mods.thermalexpansion.Refinery;
 Refinery.addRecipePotion(<liquid:potion>.withTag({Potion: "minecraft:mundane"}) * 500, <liquid:potion>.withTag({Potion: "cofhcore:leaping4"}) * 100, 100);
 ```
 
-## レシピを削除する
+## Removing a Recipe
 
 `Refinery.removeRecipe(input);`
 
@@ -51,7 +51,7 @@ import mods.thermalexpansion.Refinery;
 Refinery.removeRecipe(<liquid:resin>);
 ```
 
-### ポーションレシピを削除する
+### Removing a Potion Recipe
 
 `Refinery.removeRecipePotion(input);`
 
@@ -60,5 +60,5 @@ Refinery.removeRecipe(<liquid:resin>);
 ```zenscript
 import mods.thermalexpansion.Refinery;
 
-Refinery.removeRecipePotion(<liquid:potion_lingering>.withTag({Potion: "cofhcore:hearing3"}));
+Refinery.removeRecipePotion(<liquid:potion_lingering>.withTag({Potion: "cofhcore:healing3"}));
 ```

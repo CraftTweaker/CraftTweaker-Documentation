@@ -1,11 +1,11 @@
-# Морозильник
+# Freezer
 
-## Пакет
+## Package
 
 ```zenscript
-import mods.aether_legacy.заморожено;
+import mods.aether_legacy.Freezer;
 ```
-## Использование
+## Usage
 
 ```zenscript
 Freezer.registerFreezable(IItemStack input, IItemStack output, int timeRequired);

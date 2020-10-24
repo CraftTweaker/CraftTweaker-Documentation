@@ -1,10 +1,10 @@
-# Sprengöfen
+# Blast Furnace
 
-Mit dem Sprengofenpaket können Rezepte/Treibstoffe zum Immersive Ingenieurstofen hinzugefügt bzw. entfernt werden.
+The Blast Furnace package can be used to add/remove recipes/fuels to/from the Immersive Engineering Blast Furnace.
 
 ## Hinzufügen des Packages
 
-Sie können das BlastFurnace Paket mit `mods.immersiveengineering.BlastFurnace` aufrufen.
+You can call the BlastFurnace package using `mods.immersiveengineering.BlastFurnace`.
 
 ## Rezept hinzufügen:
 
@@ -12,15 +12,15 @@ Sie können das BlastFurnace Paket mit `mods.immersiveengineering.BlastFurnace` 
 | -------- | ------ | --------------------------------------------------- |
 | Benötigt | Output | [IItemstack](/Vanilla/Items/IItemStack/)            |
 | Benötigt | Input  | [IIngredient](/Vanilla/Variable_Types/IIngredient/) |
-| Benötigt | Time   | Ganzzahl                                            |
+| Benötigt | Time   | Integer                                             |
 | Optional | Slag   | [IItemstack](/Vanilla/Items/IItemStack/)            |
 
 ### Beispiel
 
 ```zenscript
-//Beispiel:
-mods.immersiveengineering.BlastFurnace.addRecipe(IItemStack Output, IIngredient Input, Int, @Optional IItemStack slag);
-mods.immersiveengineering. lastFurnace.addRecipe(<minecraft:diamond>, <ore:logWood>, 2000);
+//Example:
+mods.immersiveengineering.BlastFurnace.addRecipe(IItemStack output, IIngredient input, int time, @Optional IItemStack slag);
+mods.immersiveengineering.BlastFurnace.addRecipe(<minecraft:diamond>, <ore:logWood>, 2000);
 mods.immersiveengineering.BlastFurnace.addRecipe(<minecraft:diamond>, <ore:logWood>, 2000, <minecraft:dirt>);
 ```
 
@@ -33,36 +33,36 @@ mods.immersiveengineering.BlastFurnace.addRecipe(<minecraft:diamond>, <ore:logWo
 ### Beispiel:
 
 ```zenscript
-//Beispiel:
+//Example:
 mods.immersiveengineering.BlastFurnace.removeRecipe(IItemStack output);
 mods.immersiveengineering.BlastFurnace.removeRecipe(<minecraft:diamond>;
 ```
 
-## Brennstoff hinzufügen
+## Add Fuel
 
-| Benötigt | Type  | Datentyp                                            |
+| Required | Type  | Datentyp                                            |
 | -------- | ----- | --------------------------------------------------- |
-| Benötigt | Input | [IIngredient](/Vanilla/Variable_Types/IIngredient/) |
-| Benötigt | Time  | Ganzzahl                                            |
+| Required | Input | [IIngredient](/Vanilla/Variable_Types/IIngredient/) |
+| Required | Time  | Integer                                             |
 
 ### Beispiel
 
 ```zenscript
-//Beispiel:
-mods.immersiveengineering.BlastFurnace.addFuel(IIngredient Input, int time);
+//Example:
+mods.immersiveengineering.BlastFurnace.addFuel(IIngredient input, int time);
 mods.immersiveengineering.BlastFurnace.addFuel(<ore:plankWood>, 2000);
 ```
 
-## Treibstoff entfernen
+## Remove Fuel
 
-| Benötigt | Type    | Datentyp                                 |
-| -------- | ------- | ---------------------------------------- |
-| Benötigt | Ausgang | [IItemstack](/Vanilla/Items/IItemStack/) |
+| Required | Type   | Datentyp                                 |
+| -------- | ------ | ---------------------------------------- |
+| Required | Output | [IItemstack](/Vanilla/Items/IItemStack/) |
 
 ### Beispiel
 
 ```zenscript
-//Beispiel:
+//Example:
 mods.immersiveengineering.BlastFurnace.removeFuel(IItemStack output);
 mods.immersiveengineering.BlastFurnace.removeFuel(<minecraft:planks>);
 ```

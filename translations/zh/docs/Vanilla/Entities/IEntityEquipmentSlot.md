@@ -1,32 +1,32 @@
-# IEntity装备槽位
+# IEntityEquipmentSlot
 
-IEntity装备槽是玩家物品栏中的一个槽。 例如，这可以是干燥箱或装甲箱之一。
+An IEntityEquipmentSlot is a slot in a player's inventory. That could for example be the mainHand or one of the armor slots.
 
 ## 导入相关包
 
-如果您遇到任何问题，可能需要导入软件包，所以比抱歉更安全并添加导入。  
-`导入 craftweaker.entity.IEntityEquipment 槽；`
+It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
+`import crafttweaker.entity.IEntityEquipmentSlot;`
 
 ## ZenGetters/ZenMethods
 
-| Getter    | 类型  |
-| --------- | --- |
-| index     | int |
-| slotIndex | int |
-| 名称        | 字符串 |
+| Getter    | 类型     |
+| --------- | ------ |
+| index     | int    |
+| slotIndex | int    |
+| name      | string |
 
-### 比较
+### Compare
 
-您可以检查两个IEntity装备槽对象是否相同：  
-返回了一个布尔。
+You can check if two IEntityEquipmentSlot objects are equal:  
+Returns a bool.
 
 ```zenscript
-slotone == slottwo;
+slotOne == slotTwo;
 ```
 
 ## 枚举
 
-实体装备槽接口有6个静态方法，每个方法返回给定的 IEntityEquipmentSlot 对象。
+The EntityEquipmentSlot Interface has 6 static Methods, each returning the given IEntityEquipmentSlot object.
 
 ```zenscript
 crafttweaker.entity.IEntityEquipmentSlot.mainHand();

@@ -1,6 +1,6 @@
 # PlayerTick
 
-The PlayerTick Event is fired each tick for each player.
+The PlayerTick Event is fired each tick for each player on both client and server.
 
 ## Event Class
 You will need to cast the event in the function header as this class:  
@@ -11,11 +11,7 @@ You can, of course, also [import](/AdvancedFunctions/Import/) the class before a
 PlayerTick Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
 
 - [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
+- [ITickEvent](/Vanilla/Events/Events/ITickEvent/)
 
 ## ZenGetters
-The following information can be retrieved from the event:
-
-| ZenGetter | Return Type                         |
-|-----------|-------------------------------------|
-| `player`  | [IPlayer](/Vanilla/Players/IPlayer/) |
-| `phase`  | string |
+There is no additional information provided that is not already in the interfaces above.

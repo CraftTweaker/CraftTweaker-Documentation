@@ -1,28 +1,28 @@
-# Puste Apotecary
+# Petal Apothecary
 
-Opakowanie Apothecary jest używane do dodawania lub usuwania przepisów do/z Botania Petal Apothecary.
+The Apothecary package is used for adding or removing recipes to/from the Botania Petal Apothecary.
 
-## Dzwonienie
+## Calling
 
-Możesz wywołać pakiet Apothecary używając `mods.botania.Apothecary`
+You can call the Apothecary package using `mods.botania.Apothecary`
 
-## Dodanie przepisu
+## Recipe addition
 
-Możesz dodać receptury używając zwróconego [IItemStack](/Vanilla/Items/IItemStack/) jako parametru wyjściowego lub nazwy botanii jako ciągu. nazwa ciągu działa tylko dla kwiatów botanicznych.  
-Pamiętaj jednak jedną rzecz:  
-Apothecary jest **kodowany aby akceptować tylko płatki**, więc gdy możesz dodawać przepisy z dowolnymi składnikami, powinieneś używać tylko przedmiotów, które możesz wyrzucić do apothecary.
+You can either add recipes using the returned [IItemStack](/Vanilla/Items/IItemStack/) as output parameter, or the name of the botania flower as string. the string name only works for botania flowers.  
+Remember one thing though:  
+The Apothecary is **hardcoded to only accept petals**, so while you can add recipes with any ingredients, you should only use items that you can throw in the apothecary.
 
 ```zenscript
 //mods.botania.Apothecary.addRecipe(IItemStack output, IIngredient[] input);
 mods.botania.Apothecary.addRecipe(<minecraft:melon>, [<ore:petalLime>, <ore:petalLime>, <ore:petalLime>]);
 
-//mods. otania.Apothecary.addRecipe(String output, IIngredient[] input);
+//mods.botania.Apothecary.addRecipe(String output, IIngredient[] input);
 mods.botania.Apothecary.addRecipe("daybloom", [<ore:petalLime>, <ore:petalLime>, <ore:petalLime>, <ore:petalRed>]);
 ```
 
-## Usuwanie przepisów
+## Recipe removal
 
-Możesz usunąć przepisy używając zwróconego [IItemStack](/Vanilla/Items/IItemStack/) jako parametru wyjściowego lub nazwy botania jako ciągu. nazwa ciągu działa tylko dla kwiatów botanicznych.
+You can either remove recipes using the returned [IItemStack](/Vanilla/Items/IItemStack/) as output parameter, or the name of the botania flower as string. the string name only works for botania flowers.
 
 ```zenscript
 //mods.botania.Apothecary.removeRecipe(IItemStack output);

@@ -1,9 +1,9 @@
-# Abilità Spada Dinamica
+# Dynamic Sword Skills
 
-## Sintassi
+## Syntax
 
 ```zenscript
-dss<unk> skillname<unk> level
+dss|skillname|level
 
-dss<unk>
+dss|
 ```

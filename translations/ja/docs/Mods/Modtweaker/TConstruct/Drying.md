@@ -1,21 +1,21 @@
-# 乾燥中
+# Drying
 
-`乾燥` パッケージでは、ドライレシピを追加または削除できます。
+The `Drying` package allows you to add or remove Drying recipes.
 
-## 発信中
+## Calling
 
-`mods.tconstruct.Drying` を使ってドライビングパッケージを呼び出すことができます。
+You can call the Drying package using `mods.tconstruct.Drying`
 
-## 追加中
+## Adding
 
-時間はダニです
+The time is in ticks
 
 ```zenscript
-//mods.tconstruct.Drying.addRecipe(IItemStack 出力, IIngredient input, int time);
+//mods.tconstruct.Drying.addRecipe(IItemStack output, IIngredient input, int time);
 mods.tconstruct.Drying.addRecipe(<minecraft:leather>,<minecraft:rotten_flesh>, 100);
 ```
 
-## 削除中
+## Removing
 
 ```zenscript
 //mods.tconstruct.Drying.removeRecipe(IItemStack output);

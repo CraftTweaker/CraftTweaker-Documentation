@@ -1,12 +1,12 @@
 # IItemStackSupplier
 
-Функция IItemStackSupplier может быть добавлена в [Креативную вкладку](/Mods/ContentTweaker/Vanilla/Creatable_Content/Creative_Tab/) , и используется для придания значка [IItemStack](/Vanilla/Items/IItemStack/) , используемого в качестве значка вкладки.
+The IItemStackSupplier function can be added to a [Creative Tab](/Mods/ContentTweaker/Vanilla/Creatable_Content/Creative_Tab/) and is used to provide the [IItemStack](/Vanilla/Items/IItemStack/) to be used as the tab's icon.
 
 ## Импорт пакета
 
-Возможно, вам потребуется импортировать пакет, если вы столкнетесь с какими-либо проблемами, так что лучше быть безопасным чем извините и добавьте импорт.  
-`импортировать mods.contenttweaker.IItemStackSupplier;`
+It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
+`import mods.contenttweaker.IItemStackSupplier;`
 
-## Параметры
+## Parameters
 
-Функция IItemStackSupplier - это функция без параметров. Функция должна возвращать [IItemStack](/Vanilla/Items/IItemStack/).
+The IItemStackSupplier Function is a function with no parameters. The function needs to return an [IItemStack](/Vanilla/Items/IItemStack/).

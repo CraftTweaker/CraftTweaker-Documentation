@@ -1,9 +1,9 @@
-# Стадии игры:
+# GameStages:
 
-Игровые Этапы — это обязательство, введенное навыками Compatt и позволяющее вращать предметы за игровыми стадиями. Синтаксис GameStage является следующим:
+GameStages is a Requirement introduced by CompatSkills and allows you to gate items behind GameStages. The GameStage Syntax is as follows:
 
-    Пример:
+    Example:
     stage|stageName
     
-    рабочий пример:
+    Working Example:
     stage|test

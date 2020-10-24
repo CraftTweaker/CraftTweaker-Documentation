@@ -1,6 +1,6 @@
-# 焦炭压缩机
+# Osmium Compressor
 
-到Mekanism 9.7.0 现在可以通过命令 `/ct mek配方压缩机` 查看所有处方字符串。
+As of Mekanism 9.7.0 it is now possible to view all recipe strings of the Osmium Compressor through the command `/ct mekrecipes compressor`
 
 ## 加
 
@@ -11,26 +11,26 @@ mods.mekanism.compressor.addRecipe(<mekanism:basicblock:3>, <gas:liquidosmium>, 
 mods.mekanism.compressor.addRecipe(<mekanism:basicblock:1>, <minecraft:netherrack>);
 ```
 
-由于Mekanis，9.7.0输入气体不再仅仅局限于粘合剂。
+As of Mekanism 9.7.0 inputGas is no longer restricted to only osmium.
 
-另外，由于Mekanism 9.7.0，可以使用IIngredients 作为输入堆栈，而不仅仅是IItemStack。
+Also as of Mekanism 9.7.0 it is possible to use IIngredients as the inputStack instead of only IItemStacks.
 
-注意：目前所有这一切都是在java的不同可能性上循环的，而不是在ZenScript中添加。 目前，机器本身没有用于支持复合成份或修复术。
+Note: Currently all this does is loop over the different possibilities in java while adding instead of you having to do it in ZenScript. Currently there is no built in support for compound ingredients or oredictionary in the machines themselves.
 
-## 移除
+## Removal
 
 ```zenscript
 mods.mekanism.compressor.removeRecipe(IIngredient outputStack, @Optional IIngredient inputStack, @Optional IIngredient inputGas);
 
-mods.mekanis.compressor.removeRecipe(<mekanism:ingot>, <mekanism:otherdust:5>, <gas:liquidosmium>);
+mods.mekanism.compressor.removeRecipe(<mekanism:ingot>, <mekanism:otherdust:5>, <gas:liquidosmium>);
 mods.mekanism.compressor.removeRecipe(<mekanism:ingot:3>);
 ```
 
-指定输入参数只会删除使用所述输入的特定配方。 忽略输入参数将删除所有生成指定输出的配方。
+Specifying an input parameter will only remove the specific recipe that uses said input. Omitting the input parameter will remove all recipes that produce the specified output.
 
-## 删除所有配方
+## Removing all recipes
 
-由于Mekanism 9.7.0，现在可以移除所有的铁丝压缩机配方。 (这排除了任何通过 CraftTweaker 添加的配方
+As of Mekanism 9.7.0 it is now possible to remove all Osmium Compressor recipes. (This excludes any recipes added via CraftTweaker)
 
 ```zenscript
 mods.mekanism.compressor.removeAllRecipes();

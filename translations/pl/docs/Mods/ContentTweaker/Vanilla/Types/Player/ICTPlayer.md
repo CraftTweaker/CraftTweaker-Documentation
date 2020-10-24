@@ -1,19 +1,19 @@
-# Warstwa ICTP
+# ICTPlayer
 
-ICTPlayer jest specjalnym obiektem [IPlayer](/Vanilla/Players/IPlayer/) ContentTweakera.  
-Oznacza to, że wszystkie metody [IPlayera](/Vanilla/Players/IPlayer/) są również dostępne na tym obiekcie!
+An ICTPlayer is ContentTweaker's special [IPlayer](/Vanilla/Players/IPlayer/) object.  
+That means all of [IPlayer's](/Vanilla/Players/IPlayer/) methods are also available on this object!
 
-## Importowanie pakietu
+## Importing the package
 
-Może być wymagane zaimportowanie pakietu, jeśli napotkasz jakiekolwiek problemy (takie jak przesyłanie [Array](/AdvancedFunctions/Arrays_and_Loops/)), tak aby były bezpieczne niż przepraszamy i dodaj import.  
-`zaimportuj mods.contenttweaker.Player;`
+It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
+`import mods.contenttweaker.Player;`
 
-## Metody ZenMethods
+## ZenMethods
 
 `IMutableItemStack getHeldItem(Hand hand);`
 
-Parametry:
+Parameters:
 
-- [Dłoń](/Mods/ContentTweaker/Vanilla/Types/Player/Hand/) dłoń → Główna lub wyłączona ręka
+- [Hand](/Mods/ContentTweaker/Vanilla/Types/Player/Hand/) hand → Main or Off Hand
 
-Zwraca [IMutableItemStack](/Mods/ContentTweaker/Vanilla/Types/Item/IMutableItemStack/) trzymany w podanej [ręce](/Mods/ContentTweaker/Vanilla/Types/Player/Hand/).
+Returns the [IMutableItemStack](/Mods/ContentTweaker/Vanilla/Types/Item/IMutableItemStack/) held at the given [Hand](/Mods/ContentTweaker/Vanilla/Types/Player/Hand/).

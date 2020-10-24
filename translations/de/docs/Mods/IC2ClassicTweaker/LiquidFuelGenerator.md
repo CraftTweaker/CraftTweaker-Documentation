@@ -1,18 +1,18 @@
-# Flüssigbrennstoffgenerator
+# Liquid Fuel Generator
 
-## Paket
+## Package
 
 ```zemscript
-importieren mods.ic2.LiquidFuelGenerator;
+import mods.ic2.LiquidFuelGenerator;
 ```
 
 ## Methoden
 
-- **[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) liquide** Die Flüssigkeit, die als Treibstoff in Flüssigbrennstoffgeneratoren verwendet werden kann. Die angegebene Menge an Flüssigkeit macht keinen Unterschied; sie verwendet 100 mb.
-- **int Ticks** Die Zeit in Ticks, für die die Flüssigkeit brennt.
-- **int powerOutput** EU/Tick, produziert von der Flüssigkeit.
+- **[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) liquid** The liquid which can be used as fuel in liquid fuel generators. The amount of fluid specified will make no difference; it uses 100 mb.
+- **int ticks** The time in ticks the liquid will burn for.
+- **int powerOutput** EU/tick produced by the liquid.
 
-### Fluid hinzufügen
+### Add Fluid
 
 ```zenscript
 mods.ic2.LiquidFuelGenerator.addFluid(ILiquidStack liquid, int ticks, int powerOutput);

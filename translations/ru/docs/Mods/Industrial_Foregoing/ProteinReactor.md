@@ -1,20 +1,20 @@
-# Белковый реактор
+# Protein Reactor
 
-### Импорт
+### Importing
 
 ```zenscript
 import mods.industrialforegoing.ProteinReactor;
 ```
 
-### Добавление
+### Adding
 
 ```zenscript
-ProteinReactor.add(IItemStack);
+ProteinReactor.add(IItemStack input);
 
 ProteinReactor.add(<minecraft:diamond>);
 ```
 
-### Удаление
+### Removing
 
 ```zenscript
 ProteinReactor.remove(IItemStack input);

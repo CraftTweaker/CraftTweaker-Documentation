@@ -7,11 +7,11 @@ Wenn diese allerdings ein mal deklariert sind, können diese nicht mehr geänder
 
 ## Unterschied zwischen globalen und statischen Variablen
 
-Sowohl die Statik als auch die Globale sind Skripte gebunden und instanziiert, bevor das Skript ausgeführt wird.  
-Beide können nicht geändert werden.  
-Der Unterschied besteht darin, wie sie aufgerufen werden:  
-Globals können von überall aus einfach mit ihrem Namen aufgerufen werden, es sei denn, Sie haben bereits eine lokale Variable, die den gleichen Namen hat.  
-Statics auf der anderen Seite müssen die [Cross-Script-Referenz](/AdvancedFunctions/Cross-Script_Reference/) verwenden, um darauf zuzugreifen.
+Both, statics and globals are scriptbound and instantiated before the script is executed.  
+Both cannot be changed.  
+The difference is how they are called:  
+Globals can be called from everywhere simply by their name unless you already have a local variable that has the same name.  
+Statics on the other hand, need to use the [cross-script reference](/AdvancedFunctions/Cross-Script_Reference/) to be accessed.
 
 Globale Variablen werden mit dem `global`-Schlüsselwort erstellt.  
 Statische werden mit dem `static`-Schlüsselwort erstellt.

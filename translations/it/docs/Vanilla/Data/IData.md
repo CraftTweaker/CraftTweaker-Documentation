@@ -1,22 +1,22 @@
 # IData
 
-L'interfaccia IData è un'interfaccia generica per la gestione dei dati come NBT.  
-È possibile lanciare su tutti i primitivi (breve, doppio, stringa, int, ...) così come alcuni array di IData.  
-Ricorda che mentre offrono funzionalità simili, Gli IData e le loro controparti NON sono uguali, per questo saranno denominati DataTypes (e. . DataBool).
+The IData interface is a generic Interface for handling Data like NBT.  
+You can cast about all primitives (short, double, string, int, ...) as well as certain arrays to IData.  
+Remember that while they offer similar features, IData and their counterparts are NOT the same, which is why they will be referred to as DataTypes (e.g. DataBool).
 
-## Importazione del pacchetto
+## Importing the package
 
-Potrebbe essere necessario importare il pacchetto se si incontrano problemi (come lanciare un [Array](/AdvancedFunctions/Arrays_and_Loops/)), quindi meglio essere sicuri che spiacenti e aggiungere l'importazione.  
+It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
 `import crafttweaker.data.IData;`
 
-## Panoramica
+## Overview
 
-| Operatori Binari                  | `+` | `-` | `*` | `/` | `%` | `&` | `|` | `^` | `in` | `==` | `<, >, <=, >=` |
+| Binary Operators                  | `+` | `-` | `*` | `/` | `%` | `&` | `|` | `^` | `in` | `==` | `<, >, <=, >=` |
 | --------------------------------- | --- | --- | --- | --- | --- | ------- | --- | --- | ---- | ---- | -------------------------- |
 | DataBool                          | ✘   | ✘   | ✘   | ✘   | ✘   | ✔       | ✔   | ✔   | ✔    | ✔    | ✘                          |
 | DataByte                          | ✔   | ✔   | ✔   | ✔   | ✔   | ✔       | ✔   | ✔   | ✔    | ✔    | ✔                          |
 | DataByte[]                        | ✘   | ✘   | ✘   | ✘   | ✘   | ✘       | ✘   | ✘   | ✔    | ✔    | ✘                          |
-| DataDoppio                        | ✔   | ✔   | ✔   | ✔   | ✔   | ✘       | ✘   | ✘   | ✔    | ✔    | ✔                          |
+| DataDouble                        | ✔   | ✔   | ✔   | ✔   | ✔   | ✘       | ✘   | ✘   | ✔    | ✔    | ✔                          |
 | DataFloat                         | ✔   | ✔   | ✔   | ✔   | ✔   | ✘       | ✘   | ✘   | ✔    | ✔    | ✔                          |
 | DataInt                           | ✔   | ✔   | ✔   | ✔   | ✔   | ✔       | ✔   | ✔   | ✔    | ✔    | ✔                          |
 | DataInt[]                         | ✔   | ✘   | ✘   | ✘   | ✘   | ✘       | ✘   | ✘   | ✔    | ✔    | ✘                          |
@@ -26,50 +26,50 @@ Potrebbe essere necessario importare il pacchetto se si incontrano problemi (com
 | DataShort                         | ✔   | ✔   | ✔   | ✔   | ✔   | ✔       | ✔   | ✔   | ✔    | ✔    | ✔                          |
 | DataString                        | ✔   | ✘   | ✘   | ✘   | ✘   | ✘       | ✘   | ✘   | ✔    | ✔    | ✔                          |
 
-| Oparatori Unari                   | `-` nega | `!` non |
-| --------------------------------- | -------- | ------- |
-| DataBool                          | ✘        | ✔       |
-| DataByte                          | ✔        | ✔       |
-| DataByte[]                        | ✘        | ✘       |
-| DataDoppio                        | ✔        | ✘       |
-| DataFloat                         | ✔        | ✘       |
-| DataInt                           | ✔        | ✔       |
-| DataInt[]                         | ✘        | ✘       |
-| DataList                          | ✘        | ✘       |
-| DataLong                          | ✔        | ✔       |
-| [DataMap](/Vanilla/Data/DataMap/) | ✘        | ✘       |
-| DataShort                         | ✔        | ✔       |
-| DataString                        | ✘        | ✘       |
+| Unary Oparators                   | `-` negate | `!` not |
+| --------------------------------- | ---------- | ------- |
+| DataBool                          | ✘          | ✔       |
+| DataByte                          | ✔          | ✔       |
+| DataByte[]                        | ✘          | ✘       |
+| DataDouble                        | ✔          | ✘       |
+| DataFloat                         | ✔          | ✘       |
+| DataInt                           | ✔          | ✔       |
+| DataInt[]                         | ✘          | ✘       |
+| DataList                          | ✘          | ✘       |
+| DataLong                          | ✔          | ✔       |
+| [DataMap](/Vanilla/Data/DataMap/) | ✘          | ✘       |
+| DataShort                         | ✔          | ✔       |
+| DataString                        | ✘          | ✘       |
 
-| Indice e membri                   | `[i]` | `[i]=v` | `.member` | `.member=v` | `.length`       | `.immutabile` | `.update(v)` |
-| --------------------------------- | ----- | ------- | --------- | ----------- | --------------- | ------------- | ------------ |
-| DataBool                          | ✘     | ✘       | ✘         | ✘           | restituisce `0` | ✔             | ✔            |
-| DataByte                          | ✘     | ✘       | ✘         | ✘           | restituisce `0` | ✔             | ✔            |
-| DataByte[]                        | ✔     | ✔       | ✘         | ✘           | ✔               | ✔             | ✔            |
-| DataDoppio                        | ✘     | ✘       | ✘         | ✘           | restituisce `0` | ✔             | ✔            |
-| DataFloat                         | ✘     | ✘       | ✘         | ✘           | restituisce `0` | ✔             | ✔            |
-| DataInt                           | ✘     | ✘       | ✘         | ✘           | restituisce `0` | ✔             | ✔            |
-| DataInt[]                         | ✔     | ✔       | ✘         | ✘           | ✔               | ✔             | ✔            |
-| DataList                          | ✔     | ✔       | ✘         | ✘           | ✔               | ✔             | ✔            |
-| DataLong                          | ✘     | ✘       | ✘         | ✘           | restituisce `0` | ✔             | ✔            |
-| [DataMap](/Vanilla/Data/DataMap/) | ✘     | ✘       | ✔         | ✔           | ✔               | ✔             | ✔            |
-| DataShort                         | ✘     | ✘       | ✘         | ✘           | restituisce `0` | ✔             | ✔            |
-| DataString                        | ✔     | ✘       | ✘         | ✘           | ✔               | ✔             | ✔            |
+| Index and Members                 | `[i]` | `[i]=v` | `.member` | `.member=v` | `.length`   | `.immutable` | `.update(v)` |
+| --------------------------------- | ----- | ------- | --------- | ----------- | ----------- | ------------ | ------------ |
+| DataBool                          | ✘     | ✘       | ✘         | ✘           | returns `0` | ✔            | ✔            |
+| DataByte                          | ✘     | ✘       | ✘         | ✘           | returns `0` | ✔            | ✔            |
+| DataByte[]                        | ✔     | ✔       | ✘         | ✘           | ✔           | ✔            | ✔            |
+| DataDouble                        | ✘     | ✘       | ✘         | ✘           | returns `0` | ✔            | ✔            |
+| DataFloat                         | ✘     | ✘       | ✘         | ✘           | returns `0` | ✔            | ✔            |
+| DataInt                           | ✘     | ✘       | ✘         | ✘           | returns `0` | ✔            | ✔            |
+| DataInt[]                         | ✔     | ✔       | ✘         | ✘           | ✔           | ✔            | ✔            |
+| DataList                          | ✔     | ✔       | ✘         | ✘           | ✔           | ✔            | ✔            |
+| DataLong                          | ✘     | ✘       | ✘         | ✘           | returns `0` | ✔            | ✔            |
+| [DataMap](/Vanilla/Data/DataMap/) | ✘     | ✘       | ✔         | ✔           | ✔           | ✔            | ✔            |
+| DataShort                         | ✘     | ✘       | ✘         | ✘           | returns `0` | ✔            | ✔            |
+| DataString                        | ✔     | ✘       | ✘         | ✘           | ✔           | ✔            | ✔            |
 
-È possibile convertire IData a un tipo specifico utilizzando i dati `data.asType()` → `. sInt();`  
-È anche possibile utilizzare l'interfaccia IData per convertire i tipi: `("1" come IData).asInt();`
+You can cast IData to a specific type using `data.asType()` → `data.asInt();`  
+You can also use the IData Interface to convert types: `("1" as IData).asInt();`
 
-| Casts da ↓ a →                    | bool | byte | byte[] | doppia | galleggiante | int | int[]  | elenco | lungo | [Mappa](/AdvancedFunctions/Associative_Arrays/) | breve | stringa |
-| --------------------------------- | ---- | ---- | ------ | ------ | ------------ | --- | ------ | ------ | ----- | ----------------------------------------------- | ----- | ------- |
-| DataBool                          | `≡`  | ✔    | `null` | ✔      | ✔            | ✔   | `null` | `null` | ✔     | `null`                                          | ✔     | ✔       |
-| DataByte                          | ✘    | `≡`  | `null` | ✔      | ✔            | ✔   | `null` | `null` | ✔     | `null`                                          | ✔     | ✔       |
-| DataByte[]                        | ✘    | ✘    | `≡`    | ✘      | ✘            | ✘   | ✔      | ✔      | ✘     | `null`                                          | ✘     | ✔       |
-| DataDoppio                        | ✘    | ✔    | `null` | `≡`    | ✔            | ✔   | `null` | `null` | ✔     | `null`                                          | ✔     | ✔       |
-| DataFloat                         | ✘    | ✔    | `null` | ✔      | `≡`          | ✔   | `null` | `null` | ✔     | `null`                                          | ✔     | ✔       |
-| DataInt                           | ✘    | ✔    | `null` | ✔      | ✔            | `≡` | `null` | `null` | ✔     | `null`                                          | ✔     | ✔       |
-| DataInt[]                         | ✘    | ✘    | ✔      | ✘      | ✘            | ✘   | `≡`    | ✔      | ✘     | `null`                                          | ✘     | ✔       |
-| DataList                          | ✘    | ✘    | ✔      | ✘      | ✘            | ✘   | ✔      | `≡`    | ✘     | `null`                                          | ✘     | ✔       |
-| DataLong                          | ✘    | ✔    | `null` | ✔      | ✔            | ✔   | `null` | `null` | `≡`   | `null`                                          | ✔     | ✔       |
-| [DataMap](/Vanilla/Data/DataMap/) | ✘    | ✘    | `null` | ✘      | ✘            | ✘   | `null` | `null` | ✘     | `≡`                                             | ✘     | ✔       |
-| DataShort                         | ✘    | ✔    | `null` | ✔      | ✔            | ✔   | `null` | `null` | ✔     | `null`                                          | `≡`   | ✔       |
-| DataString                        | ✘    | ✔    | `null` | ✔      | ✔            | ✔   | `null` | `null` | ✔     | `null`                                          | ✔     | `≡`     |
+| Casts from ↓ to →                 | bool | byte | byte[] | double | float | int | int[]  | list   | long | [Map](/AdvancedFunctions/Associative_Arrays/) | short | string |
+| --------------------------------- | ---- | ---- | ------ | ------ | ----- | --- | ------ | ------ | ---- | --------------------------------------------- | ----- | ------ |
+| DataBool                          | `≡`  | ✔    | `null` | ✔      | ✔     | ✔   | `null` | `null` | ✔    | `null`                                        | ✔     | ✔      |
+| DataByte                          | ✘    | `≡`  | `null` | ✔      | ✔     | ✔   | `null` | `null` | ✔    | `null`                                        | ✔     | ✔      |
+| DataByte[]                        | ✘    | ✘    | `≡`    | ✘      | ✘     | ✘   | ✔      | ✔      | ✘    | `null`                                        | ✘     | ✔      |
+| DataDouble                        | ✘    | ✔    | `null` | `≡`    | ✔     | ✔   | `null` | `null` | ✔    | `null`                                        | ✔     | ✔      |
+| DataFloat                         | ✘    | ✔    | `null` | ✔      | `≡`   | ✔   | `null` | `null` | ✔    | `null`                                        | ✔     | ✔      |
+| DataInt                           | ✘    | ✔    | `null` | ✔      | ✔     | `≡` | `null` | `null` | ✔    | `null`                                        | ✔     | ✔      |
+| DataInt[]                         | ✘    | ✘    | ✔      | ✘      | ✘     | ✘   | `≡`    | ✔      | ✘    | `null`                                        | ✘     | ✔      |
+| DataList                          | ✘    | ✘    | ✔      | ✘      | ✘     | ✘   | ✔      | `≡`    | ✘    | `null`                                        | ✘     | ✔      |
+| DataLong                          | ✘    | ✔    | `null` | ✔      | ✔     | ✔   | `null` | `null` | `≡`  | `null`                                        | ✔     | ✔      |
+| [DataMap](/Vanilla/Data/DataMap/) | ✘    | ✘    | `null` | ✘      | ✘     | ✘   | `null` | `null` | ✘    | `≡`                                           | ✘     | ✔      |
+| DataShort                         | ✘    | ✔    | `null` | ✔      | ✔     | ✔   | `null` | `null` | ✔    | `null`                                        | `≡`   | ✔      |
+| DataString                        | ✘    | ✔    | `null` | ✔      | ✔     | ✔   | `null` | `null` | ✔    | `null`                                        | ✔     | `≡`    |

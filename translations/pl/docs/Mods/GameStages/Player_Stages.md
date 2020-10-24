@@ -1,46 +1,46 @@
-# Etapy gracza
+# Player Stages
 
-API GameStages rozszerza funkcje [IPlayer CraftTweakera](/Vanilla/Players/IPlayer/) , aby umożliwić sprawdzenie i modyfikację etapów gracza.
+The GameStages API expands CraftTweaker's [IPlayer](/Vanilla/Players/IPlayer/) functionality to allow you to check and modify a player's stages.
 
-## Wezwanie do metod
+## Calling the methods
 
-Jako że jest to [ZenExpansion](/Dev_Area/ZenAnnotations/Annotation_ZenExpansion/), możesz po prostu wywołać metody na dowolnym obiekcie [IPlayer](/Vanilla/Players/IPlayer/) lub na którymkolwiek z jego podtypów.
+As this is a [ZenExpansion](/Dev_Area/ZenAnnotations/Annotation_ZenExpansion/), you can simply call the methods on any [IPlayer](/Vanilla/Players/IPlayer/) object, or any of it's subtypes.
 
-## Metody
+## Methods
 
-### Sprawdzaj gry
+### Check for gamestages
 
-Metody zwracają wartości logiczne.
+The methods return booleans.
 
 ```zenscript
-// Sprawdza, czy gracz ma ukończony etap.
+// Checks if the player has the passed stage.
 //player.hasGameStage(String stage);
 player.hasGameStage("one");
 
 
 
-// Sprawdza, czy gracz ma którykolwiek z przerywanych etapów. Potrzebują tylko jednego.
-//gracz.hasAnyGameStages(String... etapy);
-gracz.hasAnyGameStages("jeden, "dwa");
+// Checks if the player has any of the passed stages. They only need one.
+//player.hasAnyGameStages(String... stages);
+player.hasAnyGameStages("one", "two");
 
 
 
-// Sprawdza, czy gracz ma wszystkie etapy przekazania.
-//gracz.hasAllGameStages (String... etapy);
-gracz.hasAllGameStages ("jeden, "dwa");
+// Checks if the player has all of the passed stages.
+//player.hasAllGameStages (String... stages);
+player.hasAllGameStages ("one", "two");
 ```
 
-### Dodaj lub usuń grę
+### Add or remove a gamestage
 
-Metody zwracają nieważną (nic).
+The methods return void (nothing).
 
 ```zenscript
-// Odblokowuje etap dla gracza.
+// Unlocks a stage for a player.
 //addGameStage(String stage);
 addGameStage(String stage);
 
 
-// blokuje etap dla gracza.
-//removeGameStage(etap string);
-removeGameStage(etap string);
+// Locks a stage for a player.
+//removeGameStage(String stage);
+removeGameStage(String stage);
 ```

@@ -1,42 +1,42 @@
-# Seperator odśrodkowy
+# Centrifugal Seperator
 
-## Pakiet
+## Package
 
-`[PLACEHOLDER] mods.thermalexpansion.Centrifuge`
+`mods.thermalexpansion.Centrifuge`
 
-## Dodanie
+## Addition
 
 ```zenscript
-//mods.thermalexpansion.Centrifuge.addRecipe(WeightedItemStack[] wyjścia IItemStack, ILiquidStack płynne, int energy);
+//mods.thermalexpansion.Centrifuge.addRecipe(WeightedItemStack[] outputs, IItemStack input, ILiquidStack fluid, int energy);
 mods.thermalexpansion.Centrifuge.addRecipe([(<minecraft:gold_ingot> * 5) % 10, <minecraft:iron_ingot> % 50], <minecraft:gold_ore>, <liquid:lava>, 2000);
 
 ```
 
-## Dodanie mobów
+## Mob addition
 
-`płyn` może być null, w którym to przypadku zostanie użyty domyślny rozkład termiczny, kwota obliczona z pola `xp` przy użyciu domyślnej `XP_TO_MB` stałej z rozmieszczenia termicznego. Gdy używasz niestandardowego płynu, pole `xp` jest ignorowane.
+`fluid` can be null, in which case the default Thermal Expansion experience liquid will be used, the amount calculated from the `xp` field using the default `XP_TO_MB` constant from Thermal Expansion. When using a custom liquid, the `xp` field is ignored.
 
-**Brak niestandardowego płynu**:
+**No custom fluid**:
 
 ```zenscript
-//mods.thermalexpansion.Centrifuge.addRecipeMob(IEntityDefinition entity, WeightedItemStack[] outputs, @Nullable ILiquidStack fluid, int Energie, int xp);
+//mods.thermalexpansion.Centrifuge.addRecipeMob(IEntityDefinition entity, WeightedItemStack[] outputs, @Nullable ILiquidStack fluid, int energy, int xp);
 mods.thermalexpansion.Centrifuge.addRecipeMob(<entity:minecraft:slime>, [<minecraft:clay_ball>%50, <minecraft:ghast_tear>%10], null, 2000, 5);
 ```
 
-**Niestandardowy płyn**:
+**Custom fluid**:
 
 ```zenscript
 mods.thermalexpansion.Centrifuge.addRecipeMob(<entity:minecraft:slime>, [<minecraft:gunpowder>%100], <liquid:lava>*20, 2000, 0);
 ```
 
-## Usuwanie
+## Removal
 
 ```zenscript
-//mods.thermalexpansion.Centrifuge.removeRecipe(IItemStack);
+//mods.thermalexpansion.Centrifuge.removeRecipe(IItemStack input);
 mods.thermalexpansion.Centrifuge.removeRecipe(<minecraft:gold_ore>);
 ```
 
-## Usuwanie mobów
+## Mob removal
 
 ```zenscript
 //mods.thermalexpansion.Centrifuge.removeRecipeMob(IEntityDefinition entity);

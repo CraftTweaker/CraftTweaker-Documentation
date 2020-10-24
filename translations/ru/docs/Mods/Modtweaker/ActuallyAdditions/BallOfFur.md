@@ -1,6 +1,6 @@
-# Мяч меха
+# Ball of Fur
 
-## Пакет
+## Package
 
 `mods.actuallyadditions.BallOfFur`
 
@@ -11,7 +11,7 @@
 mods.actuallyadditions.BallOfFur.addReturn(<minecraft:string>, 5);
 ```
 
-## Удаление
+## Removal
 
 ```zenscript
 //mods.actuallyadditions.BallOfFur.removeReturn(IItemStack output);

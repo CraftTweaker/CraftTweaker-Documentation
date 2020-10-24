@@ -1,17 +1,17 @@
-# Bola de piel
+# Ball of Fur
 
-## Paquete
+## Package
 
 `mods.actuallyadditions.BallOfFur`
 
-## Adicional
+## Addition
 
 ```zenscript
-//mods.actuallyadditions.BallOfFur.addReturn(Salida IItemStack, int chance);
+//mods.actuallyadditions.BallOfFur.addReturn(IItemStack output, int chance);
 mods.actuallyadditions.BallOfFur.addReturn(<minecraft:string>, 5);
 ```
 
-## Eliminar
+## Removal
 
 ```zenscript
 //mods.actuallyadditions.BallOfFur.removeReturn(IItemStack output);

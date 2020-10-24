@@ -1,6 +1,6 @@
 # Ассоциативные массивы
 
-Объединенный массив (иногда называемый картой или словарь) является нормальным [массивом](/AdvancedFunctions/Arrays_and_Loops/) таким образом, чтобы он мог хранить несколько записей. Однако, в отличие от [массивов](/AdvancedFunctions/Arrays_and_Loops/) , вы можете выбрать, какой тип вы хотите индексировать или (как мы называем его на картах), чтобы быть!
+An Associative Array (sometimes also called a Map or a Dictionary) is like a normal [Array](/AdvancedFunctions/Arrays_and_Loops/) in the way that it is able to store multiple entries. Unlike [Arrays](/AdvancedFunctions/Arrays_and_Loops/) however, you can choose what type you want the index, or (as we call it in maps) key, to be!
 
 ## Объявление ассоциативного массива
 
@@ -18,139 +18,139 @@ val myAssocArray = {
 - `val myAssocArray =` — стандартное объявление переменной,
 - `{` — ассоциативный массив, сэр!
 - `dirt : <minecraft:dirt>` — мы присваиваем значение `<minecraft:dirt>` к ключу `dirt`,
-- `,` подождите, пришло больше
-- `Золото : <minecraft:gold_ingot>` мы карту `<minecraft:gold_ingot>` под строкой `золото`
-- `}` мы достигли конца массива, господин!
-- `в качестве IItemStack[string];` это ассоциативный массив, который использует строки в качестве индикаторов и IItemStacks в качестве значений.
+- `,` wait, there's more to come
+- `gold : <minecraft:gold_ingot>` we map `<minecraft:gold_ingot>` under the string `gold`
+- `}` we have reached the end of the Array, Sir!
+- `as IItemStack[string];` this is an Associative Array that uses strings as indices and IItemStacks as values.
 
 Окей, что мне нужно подумать насчет использования всего этого?
 
-- Вы можете использовать около каждого типа, доступного Zenscript как ключ или значение.
-- Вы не можете использовать переменные для определения ключа в начальном объявлении (тот, который использует `{}`), как строку!
+- You can use about every type available to Zenscript as either key or value.
+- You cannot use variables for key declaration in the initial Declaration (the one that uses `{}`) as clear Text is interpreted as string!
 
 ## Обращение к элементам ассоциативного массива
 
-Вы ссылаетесь на предметы внутри ассоциативного массива так же как вы относитесь к предметам внутри обычного [массива](/AdvancedFunctions/Arrays_and_Loops/):  
-`Массив[index]`  
-Только разница в это время, вам не обязательно использовать целое число в качестве индекса, но какой бы тип вы назвали ваш массив!
+You refer to items inside an Associative Array the same way you refer to items inside a normal [Array](/AdvancedFunctions/Arrays_and_Loops/):  
+`Array[index]`  
+Only difference is this time, you don't necessarily need to use an Integer as index, but whatever type you declared your Array to be!
 
 ```zenscript
 <br />val dirt = <minecraft:dirt>;
 val assocArray = {
-    <minecraft:dirt> : "Это я"
-} как строка[IItemStack];
+    <minecraft:dirt> : "This is me"
+} as string[IItemStack];
 
-//массив[index]
+//array[index]
 print(assocArray[<minecraft:dirt>]);
 
-//Вы также можете использовать переменную переменной
+//You can also use varaibles here, as long as the variable is of the correct type
 print(assocArray[dirt]);
 ```
 
-Существует один особый случай, то есть когда вы используете строки как indecs:  
-В этом случае вы можете также использовать memberGetter как таковый:
+There is one special case, that is when you use strings as indeces:  
+In this case you can also use the memberGetter like this:
 
 ```zenscript
 val assocWithStrings = {
-    //вы можете использовать "" если хотите
-    "один" : "1",
+    //you can use "" if you want
+    "one" : "1",
 
-    //но вам не нужно
-    два : "2"
-} как строка[string];
+    //but you don't have to
+    two : "2"
+} as string[string];
 
-//Вы можете использовать memberGetter
-print(assocWithStrings. ne);
+//You can either use the memberGetter
+print(assocWithStrings.one);
 
-//Или стандартный индекс Getter
+//Or the standard index Getter
 print(assocWithStrings["two"]);
 ```
 
 ## Манипулирование элементами внутри ассоциативного массива
 
-Как и в массивах, вы можете манипулировать предметами внутри ассоциативного массива, используя `массив[index] = newValue`.  
-Существует одно существенное различие:  
-Хотя массивы имеют фиксированный размер, карты не поддерживаются. Это означает, что вы всегда можете добавить запись, установив индекс, который ранее не был установлен!
+As in Arrays, you can manipulate items inside an Associative Array using `array[index] = newValue`.  
+There is one major differenc though:  
+While Arrays have a fixed size, maps don't. That means you can always add an entry by setting to an index that has previously not been set!
 
 ```zenscript
 val changingArray = {
-    <minecraft:dirt> : "это я",
-    <minecraft:gold_ingot> : "и я ненавижу его"
-} как строка[IItemStack];
+    <minecraft:dirt> : "this is me",
+    <minecraft:gold_ingot> : "and I hate it"
+} as string[IItemStack];
 
 val gg = <minecraft:gold>;
 
-//Переопределяет значение gold_ingot
-changingArray[gg] = "и мне нравится";
+//Overrides the value of gold_ingot
+changingArray[gg] = "and I love it";
 
-//добавляет новую запись
+//adds a new entry
 changingArray[<minecraft:grass>] = "Power!";
 ```
 
-## Получение ключа и входов в ассоциированный массив
+## Retrieving an Associative Array's Key and Entrysets
 
-KeySet - это массив, содержащий все ключи карты.  
-valueSet - массив, содержащий все значения карты.  
-Набор записей представляет собой массив, содержащий все записи карты (см. ниже).
+The KeySet is an array containing all the map's keys.  
+The valueSet is an array containing all the map's values.  
+The entrySet is an array containing all the map's entries (see below).
 
 ```zenscript
-myAssocArray.keySet //keySet
-myAssocArray.keys //keySet
-myAssocArray.values //valueSet
+myAssocArray.keySet   //keySet
+myAssocArray.keys     //keySet
+myAssocArray.values   //valueSet
 myAssocArray.valueSet //valueSet
 myAssocArray.entrySet //entrySet
 ```
 
 ## Перебор ассоциативного массива
 
-Есть два итератора, которые позволяют вам повторить над ассоциативным массивом:
+There are two Iterators that allow you to iterate over an Associative Array:
 
-- Ключ-итератор: Итерация поверх клавиш, использует одну переменную
-- Ключевое значение-Iterator: Итерация над ключами и значениями, использует две переменные
+- The key-Iterator: Iterates over the keys, uses one variable
+- The key-value-Iterator: Iterates over the keys and values, uses two variables
 
-Давайте добавим ассоциативный массив, в котором хранится рецепты создания для итерации:
+Let's add an Associative Array that stores crafting recipes to be iterated over:
 
-- Ключи должны быть выходом ремесла как [IItemStack](/Vanilla/Items/IItemStack/)
-- Значения должны быть компонентами создания как [IIngredient](/Vanilla/Variable_Types/IIngredient/)
-- Мы будем использовать ключ Итератор, который построен так: `для ключа assocArray {doSth;}`
-- Мы также будем использовать ключ-value-Iterator, который построен как это `для ключа, значение в assocArray {doSth;}`
+- Keys shall be the crafting output as [IItemStack](/Vanilla/Items/IItemStack/)
+- Values shall be the crafting ingredients as [IIngredient](/Vanilla/Variable_Types/IIngredient/)
+- We shall use the key-Iterator that is built like this: `for key in assocArray {doSth;}`
+- We shall also use the key-value-Iterator that is built like this `for key, value in assocArray {doSth;}`
 
 ```zenscript
-импорт crafttweaker.item.IItemStack;
-import crafttweaker.item. Ингредиент;
+import crafttweaker.item.IItemStack;
+import crafttweaker.item.IIngredient;
 
 val dirt = <minecraft:dirt>;
 val recipeMapShaped = {
-    <minecraft:grass> : [[dirt, dirt, dirt],[dirt, dirt],[dirt, dirt, dirt]],
-    <minecraft:gold_ingot> : [[грязь, грязь, грязь],[грязь, <minecraft:gold_ingot>, грязь],[грязь, грязь, грязь]]
-} как IIngredient[][][IItemStack];
+    <minecraft:grass> : [[dirt, dirt, dirt],[dirt, dirt, dirt],[dirt, dirt, dirt]],
+    <minecraft:gold_ingot> : [[dirt, dirt, dirt],[dirt, <minecraft:gold_ingot>, dirt],[dirt, dirt, dirt]]
+} as IIngredient[][][IItemStack];
 
-recipeMapShaped[dirt] = [[dirt, dirt, dirt],[dirt, null, dirt],[dirt, dirt]];
+recipeMapShaped[dirt] = [[dirt, dirt, dirt],[dirt, null, dirt],[dirt, dirt, dirt]];
 
-//ключом будет трава, goldIngot, грязь
-для ключа в рецептах recipeMapShaped {
-    . ddShaped(ключ, рецепт формы[key]);
+//key will be grass, goldIngot, dirt
+for key in recipeMapShaped {
+    recipes.addShaped(key, recipeMapShaped[key]);
 }
 
 
-//ключи будут травами, goldIngot, грязью, значениями будут рецепты для них
-для ключа, значение в рецепте recipeMapShaped {
-    рецептов. ddShaped(ключ, значение);
+//keys will be grass, goldIngot, dirt, values will be the recipes for them
+for key, value in recipeMapShaped {
+    recipes.addShaped(key, value);
 }
 ```
 
-# Запись ZenType
+# ZenType Entry
 
-Запись карты состоит из ключа и значения.  
-В настоящее время единственным способом получения такого объекта является метод entrySet карты.
+A map Entry consists of a key and a value.  
+Currently the only way to get such an object is via a map's entrySet method.
 
-Вы можете использовать getters чтобы получить `ключ` и `значение`
+You can use the getters to get `key` and `value`
 
 ```zenscript
-//Замените карту ссылкой на существующий массив карты/ассоциативный
-myEntry = map.entrySet[0];
+//Replace map with a reference to an existing map/associative array
+val myEntry = map.entrySet[0];
 
 
-myEntry.key; //Возвращает ключ записи.
-myEntry.value; //Возвращает значение записи.
+myEntry.key;    //Returns the entry's key.
+myEntry.value;  //Returns the entry's value.
 ```

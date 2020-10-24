@@ -1,17 +1,17 @@
-# Broyeur
+# Crusher
 
-## Paquet
+## Package
 
-`Concasseur`
+`mods.actuallyadditions.Crusher`
 
-## Ajouter
+## Addition
 
 ```zenscript
-//mods.actuallyadditions.Crusher.addRecipe(sortie IItemStack, entrée IItemStack, @Optional IItemStack outputSecondary, @Optional int outputSecondaryChance);
+//mods.actuallyadditions.Crusher.addRecipe(IItemStack output, IItemStack input, @Optional IItemStack outputSecondary, @Optional int outputSecondaryChance);
 mods.actuallyadditions.Crusher.addRecipe(<minecraft:iron_ingot>, <minecraft:iron_ore>, <minecraft:stone>, 50);
 ```
 
-## Retirer
+## Removal
 
 ```zenscript
 //mods.actuallyadditions.Crusher.removeRecipe(IItemStack output);

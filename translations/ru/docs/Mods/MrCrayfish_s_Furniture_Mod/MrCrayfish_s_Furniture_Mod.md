@@ -1,9 +1,9 @@
-# Мебельный мод мистера Крайрыба
+# MrCrayfish's Furniture Mod
 
-Мебель MrCrayfish's мод добавляет уникальные предметы мебели, которые вы можете использовать для декорирования ваших зданий, некоторые из них являются полезными приборами и приборами.
+MrCrayfish's Furniture Mod adds unique pieces of furniture that you can use to decorate your builds, some of them are useable appliances and implements.
 
-Хотя документация содержит рецепты по умолчанию, обратитесь к книге рецептов модов для актуальных рецептов.
+Although the documentation includes default recipes, please refer to the mod recipe book for the up to date recipes.
 
-# Важная заметка
+# Important Note
 
-Входы соответствуют только идентификатору элемента и метаданным, nbt игнорируется.
+Inputs are matched only on item id and metadata, nbt is ignored.

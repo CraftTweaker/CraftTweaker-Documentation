@@ -1,40 +1,40 @@
 # MaterialSystem
 
-Il MaterialSystem viene utilizzato per creare nuovi materiali o recuperare materiali esistenti dall'interno di CT.
+The MaterialSystem is used to create new or retrieve existing Materials from within CT.
 
-## Importazione del pacchetto
+## Importing the package
 
-Potrebbe essere necessario per importare il pacchetto se si verificano problemi, in modo da essere più sicuri di spiacenti e aggiungere l'importazione.  
+It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
 `import mods.contenttweaker.MaterialSystem;`
 
 ## [IPartType](/Mods/ContentTweaker/Materials/Parts/PartType/)
 
-### Crea
+### Create
 
 ```zenscript
-createPartType(Nome stringa, IRegisterMaterialPart registerMaterialPart)
+createPartType(String name, IRegisterMaterialPart registerMaterialPart)
 ```
 
-Parametri Richiesti:
+Required Parameters:
 
-- Nome stringa: Il nome del tipo di parte → es. "dense_gear"
-- [IRegisterMaterialPart](/Mods/ContentTweaker/Materials/Materials/Functions/IRegisterMaterialPart/) registerMaterialPart → Una funzione che gestisce il modo in cui le parti del materiale saranno create.
+- String name: The part type's name → e.g. "dense_gear"
+- [IRegisterMaterialPart](/Mods/ContentTweaker/Materials/Materials/Functions/IRegisterMaterialPart/) registerMaterialPart → A function that handles how the Material parts will be created.
 
-### Recupera
+### Retrieve
 
 ```zenscript
-getPartType(nome string);
+getPartType(String name);
 ```
 
-Parametri Richiesti:
+Required Parameters:
 
-- Nome stringa: Il nome del tipo di parte → es. "ingranaggio" Per un elenco di tutti i tipi di parti disponibili, controlla [la pagina del tipo di parte](/Mods/ContentTweaker/Materials/Parts/PartType/).
+- String name: The part type's name → e.g. "gear" For a list of all available part types check [the part type page](/Mods/ContentTweaker/Materials/Parts/PartType/).
 
-## [IMateriale](/Mods/ContentTweaker/Materials/Materials/Material/)
+## [IMaterial](/Mods/ContentTweaker/Materials/Materials/Material/)
 
-### Crea
+### Create
 
-A differenza del PartType, non puoi creare direttamente un Materiale, invece devi usare un MaterialBuilder. Controlla la voce [MaterialBuilder](/Mods/ContentTweaker/Materials/Materials/Material_Builder/) per informazioni su cosa fare esattamente con questi.
+Unlike the PartType, you cannot directly create a Material, instead you need to use a MaterialBuilder. Check the [MaterialBuilder entry](/Mods/ContentTweaker/Materials/Materials/Material_Builder/) for info on what exactly to do with these.
 
 ```zenscript
 val MB MaterialSystem.getMaterialBuilder();
@@ -44,71 +44,71 @@ MB.setHasEffect(false);
 var builtMaterial = MB.build();
 ```
 
-### Recupera
+### Retrieve
 
 ```zenscript
-getMaterial(nome stringa);
+getMaterial(String name);
 ```
 
-Parametri Richiesti:
+Required Parameters:
 
-- Nome stringa: Il nome del materiale → es. "Platinum"
+- String name: The Material's name → e.g. "Platinum"
 
 ## [IPart](/Mods/ContentTweaker/Materials/Parts/Part/)
 
-### Crea
+### Create
 
-A differenza del PartType, non è possibile creare direttamente una Part, invece è necessario utilizzare un PartBuilder. Controlla la voce [Part](/Mods/ContentTweaker/Materials/Parts/Part/) per informazioni su cosa fare esattamente con questi.
+Unlike the PartType, you cannot directly create a Part, instead you need to use a PartBuilder. Check the [Part entry](/Mods/ContentTweaker/Materials/Parts/Part/) for info on what exactly to do with these.
 
 ```zenscript
 val PB = MaterialSystem.getPartBuilder();
 ```
 
-### Recupera
+### Retrieve
 
 ```zenscript
-getPart(nome stringa);
+getPart(String name);
 ```
 
-Parametri Richiesti:
+Required Parameters:
 
-- Nome stringa: Il nome della parte
+- String name: The Part's name
 
 ## [IPartDataPiece](/Mods/ContentTweaker/Materials/Parts/PartDataPiece/)
 
-### Crea
+### Create
 
-    createPartDataPiece(nome stringa, booleano richiesto)
+    createPartDataPiece(String name, boolean required)
     
 
-Parametri Richiesti:
+Required Parameters:
 
-- Nome stringa: Il nome del pezzo di dati
-- boolean richiesto: È richiesto il datece?
+- String name: The Data Piece's name
+- boolean required: Is the data piece required?
 
-## Registra più MaterialParts
+## Register multiple MaterialParts
 
 Even though you can also do this using the [Material's](/Mods/ContentTweaker/Materials/Materials/Material/) own functionality, this Method allows you to register [Parts](/Mods/ContentTweaker/Materials/Parts/Part/) for a given Material
 
 ```zenscript
-registerPartsForMaterial(Materiale materiale, String[] partNames);
+registerPartsForMaterial(Material material, String[] partNames);
 ```
 
-Parametri Richiesti:
+Required Parameters:
 
-- [Materiale](/Mods/ContentTweaker/Materials/Materials/Material/) materiale: Il materiale che le parti registrate devono essere fatte di
-- Stringa[] partNames: I nomi delle parti che dovrebbero essere registrate → e.g. ["gear", "ingot"]
+- [Material](/Mods/ContentTweaker/Materials/Materials/Material/) material: The material that the registered parts should be made of
+- String[] partNames: The names of the parts that should be registered → e.g. ["gear", "ingot"]
 
-## Recupera cose già registrate:
+## Retrieve already registered things:
 
-È possibile utilizzare questi metodi per recuperare una mappa utilizzando le stringhe come chiavi e l'oggetto come valori:
+You can use these methods to retrieve a map using strings as keys and the object as values:
 
-| Nome Metodo        | Tipo Di Reso                                                                                   |
-| ------------------ | ---------------------------------------------------------------------------------------------- |
-| getMaterialParts() | [`Mappa<String, IMaterialPart>`](/Mods/ContentTweaker/Materials/Materials/MaterialPart/) |
-| getMaterials()     | [`Mappa<String, IMaterial>`](/Mods/ContentTweaker/Materials/Materials/Material/)         |
-| getParts()         | [`Mappa<String, IPart>`](/Mods/ContentTweaker/Materials/Parts/Part/)                     |
-| getPartType()      | [`Mappa<String, IPartType>`](/Mods/ContentTweaker/Materials/Parts/PartType/)             |
+| Method Name        | Return Type                                                                                  |
+| ------------------ | -------------------------------------------------------------------------------------------- |
+| getMaterialParts() | [`Map<String, IMaterialPart>`](/Mods/ContentTweaker/Materials/Materials/MaterialPart/) |
+| getMaterials()     | [`Map<String, IMaterial>`](/Mods/ContentTweaker/Materials/Materials/Material/)         |
+| getParts()         | [`Map<String, IPart>`](/Mods/ContentTweaker/Materials/Parts/Part/)                     |
+| getPartType()      | [`Map<String, IPartType>`](/Mods/ContentTweaker/Materials/Parts/PartType/)             |
 
     import mods.contenttweaker.MaterialPart;
     

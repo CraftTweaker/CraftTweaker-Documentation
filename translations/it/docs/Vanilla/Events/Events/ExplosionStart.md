@@ -1,14 +1,14 @@
-# EsplosionStart
+# ExplosionStart
 
-L'Evento EsplosionStart viene lanciato poco prima che inizi un'esplosione. Se annullata, l'esplosione non accadrà.
+The ExplosionStart Event is fired shortly before an explosion starts. If canceled, the explosion will not happen.
 
-## Classe Evento
-Dovrai lanciare l'evento nell'intestazione della funzione come questa classe:  
-`crafttweaker.event. xplosionStartEvent`  
-È possibile, naturalmente, anche [importare](/AdvancedFunctions/Import/) la classe prima e utilizzare quel nome allora.
+## Event Class
+You will need to cast the event in the function header as this class:  
+`crafttweaker.event.ExplosionStartEvent`  
+You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
 
-## Estensioni dell'interfaccia evento
-ExplosionStart Events implementare le seguenti interfacce e sono in grado di chiamare anche tutti i loro metodi/getters/setter:
+## Event interface extensions
+ExplosionStart Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
 
 - [IExplosionEvent](/Vanilla/Events/Events/IExplosionEvent/)
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)

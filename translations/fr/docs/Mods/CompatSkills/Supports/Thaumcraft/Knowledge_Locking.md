@@ -1,16 +1,16 @@
-# Verrouillage des connaissances
+# Knowledge Locking
 
-## Caractéristique:
+## Feature:
 
-Cette fonctionnalité vous permet de verrouiller l'acquisition de connaissances observationnelles ou théoriques dans Thaumcraft.
+This feature allows you to lock the acquisition of Observational or Theoretical Knowledge acquisition in Thaumcraft.
 
-## Types de connaissances:
+## Knowledge Types:
 
-Les types de connaissances actuels sont O pour l'observation et T pour la théorie.
+Current knowledge types are O for Observation and T for Theory.
 
-## Syntaxe :
+## Syntax:
 
-    mods.compatskills.Thaumcraft.addKnowledgeLock(String categoryName, String knowledgeType, String... exigences);
+    mods.compatskills.Thaumcraft.addKnowledgeLock(String categoryName, String knowledgeType, String... requirements);
     
     mods.compatskills.Thaumcraft.addKnowledgeLock("UNLOCKAUROMANCY", "O", "dim|1");
     mods.compatskills.Thaumcraft.addKnowledgeLock("UNLOCKAUROMANCY", "T", "dim|1");

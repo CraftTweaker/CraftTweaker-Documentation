@@ -1,21 +1,21 @@
-# Ensorcellator Arcano (también conocido como Energiador Arcano)
+# Arcane Ensorcellator (a.k.a Enchanter)
 
-## Paquete
+## Package
 
 `mods.thermalexpansion.Enchanter`
 
-## Adicional
+## Addition
 
 ```zenscript
-mods.thermalexpansion.Eneguter.addRecipe(Salida de ItemStack, entrada de ItemStack, segundo ItemStack de ItemStack, energía de int, experiencia de int, empoderado booleano);
+mods.thermalexpansion.Enchanter.addRecipe(IItemStack output, IItemStack input, IItemStack secondInput, int energy, int experience, boolean empowered);
 
-mods. hermalexpansion.Eneguter.addRecipe(<minecraft:enchanted_book>.withTag({StoredEnchantments: [{id: 35}]}), <minecraft:book>, <minecraft:diamond>, 12000, 3000, false);
+mods.thermalexpansion.Enchanter.addRecipe(<minecraft:enchanted_book>.withTag({StoredEnchantments: [{id: 35}]}), <minecraft:book>, <minecraft:diamond>, 12000, 3000, false);
 ```
 
-## Eliminar
+## Removal
 
 ```zenscript
-mods.thermalexpansion.Eneguter.removeRecipe(entrada IItemStack Iput, ItemStack secondInput);
+mods.thermalexpansion.Enchanter.removeRecipe(IItemStack input, IItemStack secondInput);
 
-mods.thermalexpansion.Eneguter.removeRecipe(<minecraft:book>, <minecraft:diamond>);
+mods.thermalexpansion.Enchanter.removeRecipe(<minecraft:book>, <minecraft:diamond>);
 ```

@@ -1,11 +1,11 @@
-# Poziom Zbioru Narzędzi
+# Tool Harvest-Level
 
-Wymaga to od gracza trzymania przedmiotu, którego poziom zbiorów jest równy lub wyższy od określonego poziomu.
+This requires the player to be holding an itemTool whose harvest level is equal or higher than the level specified.
 
-    Przykład:
-    plon|liczba całkowita
+    Example:
+    harvest|integer
     
-    Przykład:
-    plon|1
-    plon|2
-    plon|3
+    Working Example:
+    harvest|1
+    harvest|2
+    harvest|3

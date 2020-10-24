@@ -1,51 +1,51 @@
 # IFoodStats
 
-Интерфейс IPlayer позволяет просматривать информацию о параметрах еды игрока.
+The IPlayer interface allows you to view certain information on a player's food Stats.
 
 ## Импорт пакета
 
-Возможно, вам потребуется импортировать пакет, если вы столкнетесь с какими-либо проблемами (например, наложение [массива](/AdvancedFunctions/Arrays_and_Loops/)), так что лучше быть безопасным, чем извините и добавить импорт.  
-`импорт crafttweaker.player.IFoodStats;`
+It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
+`import crafttweaker.player.IFoodStats;`
 
 ## ZenGetter/ZenSetters
 
-| Геттеры              | ZenSetter            | Тип     |
-| -------------------- | -------------------- | ------- |
-| Уровень еды          | Уровень еды          | int     |
-| уровень насыщенности | уровень насыщенности | float   |
-| еда                  |                      | boolean |
+| ZenGetter       | ZenSetter       | Тип     |
+| --------------- | --------------- | ------- |
+| foodLevel       | foodLevel       | int     |
+| saturationLevel | saturationLevel | float   |
+| needFood        |                 | boolean |
 
 ## ZenMethods
 
-#### Добавление статистики
+#### Adding Stats
 
-Процедура Бездны. Принимает int и float в качестве параметра intput .
+Void Function. Takes an int and a float as intput parameters.
 
 ```zenscript
-stats.addStats(int food Value, float saturationLevel);
+stats.addStats(int foodValue, float saturationLevel);
 ```
 
 #### onUpdate
 
-Процедура Бездны. В качестве входного параметра принимает объект [IPlayer](/Vanilla/Players/IPlayer/).
+Void Function. Takes an [IPlayer](/Vanilla/Players/IPlayer/) object as input parameter.
 
 ```zenscript
-stats.onUpdate(IPlayer игрока);
+stats.onUpdate(IPlayer player);
 ```
 
-#### асНБТ
+#### asNBT
 
-Возвращает объект IData представляющий статистику еды.
+Returns an IData Object representing the foodStats.
 
 ```zenscript
 stats.asNBT();
-статистика как crafttweaker.data.IData;
+stats as crafttweaker.data.IData;
 ```
 
-#### Добавить выдержку
+#### Add Exhaustion
 
-Функция Бездна. принимает значение с плавающей точкой в качестве входного параметра.
+Void Funtion. takes a float as input parameter.
 
 ```zenscript
-stats.addExhaustion(истощение с плавающей запятой);
+stats.addExhaustion(float exhaustion);
 ```

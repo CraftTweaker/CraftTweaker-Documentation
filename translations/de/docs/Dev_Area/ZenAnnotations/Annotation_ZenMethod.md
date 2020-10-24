@@ -1,24 +1,24 @@
-# ZenMethode
+# ZenMethod
 
-Eine ZenMethod ist eine Java-Methode, die ZenScript ausgesetzt wurde.
+A ZenMethod is a java method that has been exposed to ZenScript.
 
-Statische Methoden können mit dem [ZenClass' Name](/Dev_Area/ZenAnnotations/Annotation_ZenClass/)aufgerufen werden, Nichtstatiker verwenden `object.methodName(arguments,..);`.  
-Die ZenMethod-Anmerkung kann neben anderen [Anmerkungen](/Dev_Area/ZenAnnotations/ZenAnnotation/)stehen, wie die [ZenOperator-Anmerkung](/Dev_Area/ZenAnnotations/Annotation_ZenOperator/).
+Static Methods can be accessed using the [ZenClass' Name](/Dev_Area/ZenAnnotations/Annotation_ZenClass/), nonstatics use `object.methodName(arguments,..);`.  
+The ZenMethod annotation can stand alongside other [Annotations](/Dev_Area/ZenAnnotations/ZenAnnotation/), like the [ZenOperator Annotation](/Dev_Area/ZenAnnotations/Annotation_ZenOperator/).
 
-## Welche Methoden können kommentiert werden || Zusätzliche Informationen
+## What methods can be annotated || Additional Info
 
-- Sie können alle Methoden, statisch und nichtstatisch, kommentieren. 
-- Annotierte Methoden benötigen einen zusätzlichen Parameter, wenn sie in einer [ZenExpansion](/Dev_Area/ZenAnnotations/Annotation_ZenExpansion/) enthalten sind. Dieser Parameter ist die Instanz der erweiterten Klasse
-- Wenn Sie eine statische Methode in einer [ZenExpansion](/Dev_Area/ZenAnnotations/Annotation_ZenExpansion/) (zum Beispiel eine Fabrikmethode) kommentieren, müssen Sie stattdessen [ZenMethodStatic](/Dev_Area/ZenAnnotations/Annotation_ZenMethodStatic/) verwenden.
+- You can annotate all methods, static and nonstatic. 
+- Annotated Methods need one additional parameter when in a [ZenExpansion](/Dev_Area/ZenAnnotations/Annotation_ZenExpansion/). That parameter is the expanded class' instance
+- When annotating a static Method in a [ZenExpansion](/Dev_Area/ZenAnnotations/Annotation_ZenExpansion/) (for example a factory method) you will need to use [ZenMethodStatic](/Dev_Area/ZenAnnotations/Annotation_ZenMethodStatic/) instead.
 
-## Beispielklasse
+## Example Class
 
 ```java
 @ZenClass(value = "crafttweaker.tests.devWikiTest")
 @ZenRegister
 public class DevWikiTest {
 
-    //statics die mittels crafttweaker.tests.devWikiTest aufgerufen werden. ethodName(Argumente);
+    //statics which will be called using crafttweaker.tests.devWikiTest.methodName(arguments);
     @ZenMethod
     public static DevWikiTest staticMethod(int arg1) {
         return new DevWikiTest(arg1);
@@ -26,17 +26,17 @@ public class DevWikiTest {
 
     @ZenMethod
     public static void staticMethod2() {
-        CraftTweakerAPI. ogInfo("staticMethod2 genannt!");
+        CraftTweakerAPI.logInfo("staticMethod2 called!");
     }
 
     @ZenMethod
-    public static void staticMethodVarArg(in... args) {
-        CraftTweakerAPI.logInfo("staticMethod3 mit " + args. ength + " Argumente ");
+    public static void staticMethodVarArg(int... args) {
+        CraftTweakerAPI.logInfo("staticMethod3 called with " + args.length + " arguments");
     }
 
 
 
-    //nonstatics which sill be called using instance. ethodName(Argumente);
+    //nonstatics which sill be called using instance.methodName(arguments);
     @ZenMethod
     public int getValue() {
         return value;
@@ -44,24 +44,24 @@ public class DevWikiTest {
 
     @ZenMethod
     public void print() {
-        CraftTweakerAPI. ogInfo("DevWikiTest Objekt mit dem Wert " + Wert);
+        CraftTweakerAPI.logInfo("DevWikiTest Object with value " + value);
     }
 
     @ZenMethod
-    public void printWithVarArg(in... args) {
-        CraftTweakerAPI.logInfo("Nicht statisch aufgerufen mit " + args. ength + " Argumente ");
+    public void printWithVarArg(int... args) {
+        CraftTweakerAPI.logInfo("Nonstatic called with " + args.length + " arguments");
     }
 
 
-    private Endeintenwert;
+    private final int value;
 
     public DevWikiTest(int value) {
-        dies. alue = value;
+        this.value = value;
     }
 }
 ```
 
-ZS-Skript
+ZS Script
 
 ```zenscript
 val instance = crafttweaker.tests.devWikiTest.staticMethod(10);

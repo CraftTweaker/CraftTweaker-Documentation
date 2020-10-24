@@ -1,22 +1,22 @@
-# Extracteur de fécule
+# Starch Extractor
 
-## Paquet
+## Package
 ```zenscript
-Importer mods.calculator.starch;
+import mods.calculator.starch;
 ```
 
-## Méthodes
+## Methods
 
-- **[Ingrédient](/Vanilla/Variable_Types/IIngredient/) d'entrée** L'entrée.
-- **valeur int** La quantité d'entrée ajoute à cette machine.
+- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input** The input.
+- **int value** The amount of input adds to that machine.
 
 
-## Ajout
+## Additon
 ```zenscript
-starch.addRecipe(IIngrédient, valeur intestinale);
+starch.addRecipe(IIngredient input, int value);
 ```
 
-## Retirer
+## Removal
 ```zenscript
-starch.removeRecipe(IIngrédient entrée) ;
+starch.removeRecipe(IIngredient input);
 ```

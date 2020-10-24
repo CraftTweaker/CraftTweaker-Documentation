@@ -1,7 +1,7 @@
 
 # BlockPlaceEvent
 
-Событие BlockBreak запускается при размещении блока. Вы можете отменить событие, чтобы предотвратить размещение блока.
+The BlockBreak Event is fired whenever a block is being placed. You can cancel the event to prevent the block from being placed.
 
 ## Класс события
 You will need to cast the event in the function header as this class:  
@@ -9,7 +9,7 @@ You will need to cast the event in the function header as this class:
 You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
 
 ## Наследование от интерфейсов событий
-BlockPlace Events реализуют следующие интерфейсы и могут также вызвать все их методы/getters/setters:
+BlockPlace Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
 
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 - [IBlockEvent](/Vanilla/Events/Events/IBlockEvent/)
@@ -18,9 +18,9 @@ BlockPlace Events реализуют следующие интерфейсы и 
 ## Геттеры
 Следующая информация может быть получена от события:
 
-| ZenGetter           | ZenSetter | Тип                                         |
-| ------------------- | --------- | ------------------------------------------- |
-| `player`            |           | [IPlayer](/Vanilla/Players/IPlayer/)        |
-| `текущий`           |           | [IBlockState](/Vanilla/Blocks/IBlockState/) |
-| `поставлено против` |           | [IBlockState](/Vanilla/Blocks/IBlockState/) |
-| `рука`              |           | String                                      |
+| ZenGetter       | ZenSetter | Тип                                         |
+| --------------- | --------- | ------------------------------------------- |
+| `player`        |           | [IPlayer](/Vanilla/Players/IPlayer/)        |
+| `current`       |           | [IBlockState](/Vanilla/Blocks/IBlockState/) |
+| `placedAgainst` |           | [IBlockState](/Vanilla/Blocks/IBlockState/) |
+| `hand`          |           | String                                      |

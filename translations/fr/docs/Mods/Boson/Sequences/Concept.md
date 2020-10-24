@@ -1,23 +1,23 @@
-# Le concept
+# The Concept
 
-La boucle est un vieux concept et une des bases de la programmation : répéter le même ensemble d'actions sur un groupe d'éléments , tout en filtrant certains d'entre eux ou en convertissant des sets. Ou même trouver le premier élément dans une liste qui satisfait une certaine condition ou un nombre d'éléments dans un ensemble récursivement.
+Looping is an old concept and one of the basis of programming: repeating the same set of actions over a group of elements, while filtering some of them out or converting sets. Or even finding the first item in a list that satisfies a certain condition or a count the items in a set recursively.
 
-En programmation procédurale et impérative, la plupart de cela a été fait avec de simples vieux `pour les boucles` et une série d'instructions conditionnelles avec leur relative `continuez` et `brisez`. Bien que cela puisse paraître plus simple à suivre, cela nécessite beaucoup de code pour des opérations simples telles que le filtrage et peut produire des chaînes d'imbrication qui peuvent durer plus longtemps. De plus, il n'exprime pas l'intention à moins que le code ne la spécifie avec des commentaires.
+In procedural and imperative programming, most of that has been done with plain old `for` loops and a series of conditional statements with their relative `continue` and `break` statements. While this may seem simpler to follow, it requires a lot of code for simple operations such as filtering and may produce nesting chains that can go on for longer. Moreover, it doesn't express the intent unless the code specifies it with comments.
 
-Considérez le code ZenScript suivant :
+Consider the following ZenScript code:
 
 ```zenscript
 var nbtForMc = false;
 
-pour la recette dans les recettes. sera {
+for recipe in recipes.all {
     if (recipe.shaped) {
-        sortie val = recettes. utput;
-        si (! sNull(output)) {
-            if (output. efinition.owner == "minecraft") {
-                val hasData = output. étiquette;
+        val output = recipes.output;
+        if (!isNull(output)) {
+            if (output.definition.owner == "minecraft") {
+                val hasData = output.hasTag;
                 if (hasData) {
                     nbtForMc = true;
-                    pause;
+                    break;
                 }
             }
         }
@@ -25,19 +25,19 @@ pour la recette dans les recettes. sera {
 }
 ```
 
-Ce que fait ce code n'est pas évident d'un premier coup d'œil et demande à l'utilisateur de lire la logique pour comprendre. Considérez cet équivalent construit via des séquences:
+What this code does isn't obvious from a first glance and requires the user to read the logic to understand. Consider this equivalent one constructed via sequences:
 
 ```zenscript
-val nbtForMc = <sequence:ICraftingRecipe>(recettes.all)
-    .filter(function (recettes) { return recipe. haped; })
+val nbtForMc = <sequence:ICraftingRecipe>(recipes.all)
+    .filter(function (recipe) { return recipe.shaped; })
     .map(function (recipe) { return recipe.output; })
-    . ilterNot(function (output) { return isNull(output); })
-    .filter(function (output) { return output. efinition.owner == "minecraft"; })
+    .filterNot(function (output) { return isNull(output); })
+    .filter(function (output) { return output.definition.owner == "minecraft"; })
     .any(function (output) { return output.hasTag; });
 ```
 
-Ce code fait exactement la même chose et non seulement il est plus concis, mais transmet aussi plus de sens qu'une chaîne d'instructions imbriquées `si` sont imbriquées. Certes, cela ne semble pas être une amélioration générale, en raison de la simplicité du code en question, mais cela peut s'avérer utile pour des éléments de logique plus complexes.
+This code does the exact same and not only it's more concise, but also conveys more meaning that a chain of nested `if` statements. Granted, this does not seem like a general improvement, due to the simplicity of the code in question, but it may prove useful for more complicated pieces of logic.
 
-Un autre pro du code ci-dessus est que l'évaluation n'est pas effectuée jusqu'au `aucun appel` , ce qui signifie que la séquence peut être étendue via des appels de méthodes supplémentaires au fil du temps et qu'elle ne sera pas résolue tant qu'une méthode "terminale" n'est pas appelée (i. . une méthode qui ne renvoie pas une `Séquence` elle-même). Cela s'avère extrêmement utile car il n'est pas nécessaire d'évaluer les recettes entières de `. Tout le tableau`.
+Another pro of the above code is that evaluation is not performed until the `any` call, meaning that the sequence can be extended via additional method calls over time and it won't be resolved until a "terminal" method is called (i.e. a method that does not return a `Sequence` itself). This proves extremely useful since it is not necessary to evaluate the whole `recipes.all` array.
 
-Pour démarrer et tirer parti des séquences, vous pouvez consulter à la fois la [documentation de classe](/Mods/Boson/Sequences/Docs/) et la [comment obtenir une](/Mods/Boson/Sequences/Obtaining/) pages de documentation.
+To get started and leverage Sequences, you can consult both the [class documentation](/Mods/Boson/Sequences/Docs/) and [how to obtain one](/Mods/Boson/Sequences/Obtaining/) documentation pages.

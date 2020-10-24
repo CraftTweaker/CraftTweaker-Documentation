@@ -1,10 +1,10 @@
-# Sculpter
+# Carving
 
-## Paquet
+## Package
 
-`Sculpture`
+`mods.chisel.Carving`
 
-## Ajouter
+## Addition
 
 ```zenscript
 //mods.chisel.Carving.addGroup(String name);
@@ -13,9 +13,9 @@ mods.chisel.Carving.addGroup("test");
 mods.chisel.Carving.addVariation("test", <minecraft:stone>);
 ```
 
-## Retirer
+## Removal
 
-Vous pouvez obtenir les noms des groupes en exécutant `/ct chiselGroups`
+You can get the names of the groups by running `/ct chiselGroups`
 
 ```zenscript
 //mods.chisel.Carving.removeGroup(String name);

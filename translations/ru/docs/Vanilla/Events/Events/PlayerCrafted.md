@@ -1,16 +1,16 @@
-# Создан игроком
+# PlayerCrafted
 
-Создаваемое событие запускается каждый раз, когда игрок что-то создает.
+The PlayerCrafted Event is fired whenever a player crafts something.
 
 ## Класс события
 
-Вам нужно оформить событие в заголовке функции как этот класс:  
-`crafttweaker.event. layerCraftedEvent`  
-, Вы можете, конечно, импортировать класс и [затем импортировать](/AdvancedFunctions/Import/).
+You will need to cast the event in the function header as this class:  
+`crafttweaker.event.PlayerCraftedEvent`  
+You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
 
 ## Наследование от интерфейсов событий
 
-PlayerCrafted Events реализуют следующие интерфейсы и могут также вызвать все их методы/getters/setters:
+PlayerCrafted Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
 
 - [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
 
@@ -18,8 +18,8 @@ PlayerCrafted Events реализуют следующие интерфейсы 
 
 Следующая информация может быть получена от события:
 
-| Геттеры     | Возвращаемый тип                                                     |
-| ----------- | -------------------------------------------------------------------- |
-| `player`    | [IPlayer](/Vanilla/Players/IPlayer/)                                 |
-| `вывод`     | [IItemStack](/Vanilla/Items/IItemStack/)                             |
-| `инвентарь` | [Инвентарь ICrafting](/Vanilla/Recipes/Crafting/ICraftingInventory/) |
+| ZenGetter   | Возвращаемый тип                                                    |
+| ----------- | ------------------------------------------------------------------- |
+| `player`    | [IPlayer](/Vanilla/Players/IPlayer/)                                |
+| `output`    | [IItemStack](/Vanilla/Items/IItemStack/)                            |
+| `inventory` | [ICraftingInventory](/Vanilla/Recipes/Crafting/ICraftingInventory/) |

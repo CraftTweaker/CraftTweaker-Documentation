@@ -1,15 +1,15 @@
 # Compactor
 
-## パッケージ
+## Package
 
 `mods.thermalexpansion.Compactor`
 
 Compactorでは、4種類の修飾子をサポートしています。
 
-    ミント
-    
-    のストレージ
-    を押す
+    Mint
+    Press
+    Storage
+    Gear
     
 
 ## Mint(造幣)
@@ -26,7 +26,7 @@ mods.thermalexpansion.Compactor.addMintRecipe(IItemStack output, IItemStack inpu
 mods.thermalexpansion.Compactor.addMintRecipe(<minecraft:sand>, <minecraft:stick>, 1500);
 ```
 
-### 削除
+### Removal
 
 ```zenscript
 mods.thermalexpansion.Compactor.removeMintRecipe(IItemStack input);
@@ -34,7 +34,7 @@ mods.thermalexpansion.Compactor.removeMintRecipe(IItemStack input);
 mods.thermalexpansion.Compactor.removeMintRecipe(<thermalfoundation:material:167>);
 ```
 
-## プレス
+## Press
 
 Press修飾子は、Thermal Expansionのレシピマップにおける、`PLATE`, `COIN`, または`GEAR`に登録されていないレシピを変更させます。
 
@@ -48,7 +48,7 @@ mods.thermalexpansion.Compactor.addPressRecipe(IItemStack output, IItemStack inp
 mods.thermalexpansion.Compactor.addPressRecipe(<minecraft:sand>, <minecraft:apple>, 1500);
 ```
 
-### 削除
+### Removal
 
 ```zenscript
 mods.thermalexpansion.Compactor.removePressRecipe(IItemStack input);
@@ -56,7 +56,7 @@ mods.thermalexpansion.Compactor.removePressRecipe(IItemStack input);
 mods.thermalexpansion.Compactor.removePressRecipe(<thermalfoundation:material:167>);
 ```
 
-## ストレージ
+## Storage
 
 Storage修飾子は、Thermal Expansionのレシピマップにおける、`PLATE`に登録されているレシピを変更します。
 
@@ -70,7 +70,7 @@ mods.thermalexpansion.Compactor.addStorageRecipe(IItemStack output, IItemStack i
 mods.thermalexpansion.Compactor.addStorageRecipe(<minecraft:sand>, <minecraft:arrow>, 1500);
 ```
 
-### 削除
+### Removal
 
 ```zenscript
 mods.thermalexpansion.Compactor.removeStorageRecipe(IItemStack input);
@@ -78,7 +78,7 @@ mods.thermalexpansion.Compactor.removeStorageRecipe(IItemStack input);
 mods.thermalexpansion.Compactor.removeStorageRecipe(<thermalfoundation:material:167>);
 ```
 
-## 装備
+## Gear
 
 Gear修飾子は、Thermal Expansionのレシピマップにおける、`GEAR`に登録されているレシピを変更します。
 
@@ -92,7 +92,7 @@ mods.thermalexpansion.Compactor.addGearRecipe(IItemStack output, IItemStack inpu
 mods.thermalexpansion.Compactor.addGearRecipe(<minecraft:sand>, <minecraft:arrow>, 1500);
 ```
 
-### 削除
+### Removal
 
 ```zenscript
 mods.thermalexpansion.Compactor.removeGearRecipe(IItemStack input);

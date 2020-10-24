@@ -1,41 +1,41 @@
-# 材料代表
+# Material Representation
 
-材料表现为Tinkers制造材料。  
-您可以从 [材质构造器](/Mods/ContentTweaker/Tinkers_Construct/MaterialBuilder/) 或从 [材质套装处理器](/Mods/ContentTweaker/Tinkers_Construct/Brackets/Bracket_Material/) 获取这样一个对象。
+A Material representation represents a Tinkers' Construct Material.  
+You can get such an object either from the [Material Builder](/Mods/ContentTweaker/Tinkers_Construct/MaterialBuilder/) or from the [Material Bracket Handler](/Mods/ContentTweaker/Tinkers_Construct/Brackets/Bracket_Material/).
 
 ## 导入类
 
-如果您遇到任何问题，可能需要导入类 (例如铸造一个 [数组](/AdvancedFunctions/Arrays_and_Loops/)) 这样比抱歉更安全并添加导入。  
-`导入mods.contenttweaker.tconstruct.Material`
+It might be required for you to import the class if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
+`import mods.contenttweaker.tconstruct.Material`
 
 ## ZenGetter
 
-| ZenGetter            | 类型     |
-| -------------------- | ------ |
-| identifier           | string |
-| commandString #命令字符串 | string |
+| ZenGetter     | 类型     |
+| ------------- | ------ |
+| identifier    | string |
+| commandString | string |
 
-## 添加材料项
+## Adding material items
 
-如果您在部件构建器中使用给定的项目， 你可以设置将提供多少材料点或修复多少物品。
+If you use the given item in the part builder, you can set how many materialpoints that will give, or how much the item will repair.
 
-    ///myMaterial.addItem(Ingredient item, @Optional(1) int amountNeed, @Optional(144) int amountMatched));
+    //myMaterial.addItem(IIngredient item, @Optional(1) int amountNeeded, @Optional(144) int amountMatched));
     myMaterial.addItem(<item:minecraft:iron_pickaxe>);
     myMaterial.addItem(<item:minecraft:iron_block>, 4, 288);
     
 
-- `项目` 是匹配的物品。 您可以使用 [项目条件](/Vanilla/Items/Item_Conditions/) 但没有变压器。 
-- `数量` 是匹配的项目数量。 你可以将它们拆分到工具构造提供的所有位置，这也允许你超过64。 在上面的第二个例子中，你需要每个添加4个铁块。 默认值为 1。
-- `数量匹配` 是按 `数量添加的物质点数。需要`。 在上面的第二个例子中，铁块给出了两个重要点。 默认值为144(1个英寸/1个物料值)。
+- `item` is the item that is matched against. You can use [Item Conditions](/Vanilla/Items/Item_Conditions/) but no Transformers. 
+- `amountNeeded` is the amount of items that is matched against. You can split them over all the slots the toolforge provides, which also allows you to go above 64. In the second example above, you need 4 iron blocks per addition. Defaults to 1.
+- `amountMatched` is the amount of material points added per `amountNeeded`. In the second example above four iron blocks give two material points. Defaults to 144 (one ingot/one Material value).
 
-## 添加材料特性
+## Adding Material Traits
 
-您可以将特性添加到材料中。  
-此材料制作的所有项目都将具有此特性。  
-使用一个 [属性表示](/Mods/ContentTweaker/Tinkers_Construct/Trait/) 或一个带标识符的字符串 (推荐)，返回无效。  
-您也可以提供依赖字符串， 这将导致特性仅用于某些类型，例如头等。 忽略该参数将注入空， 这将导致特性仅在零件类型上，当该部分还没有其他非空依赖修饰符。
+You can add a trait to the material.  
+All items made from this material will then have this trait.  
+Uses a [Trait Representation](/Mods/ContentTweaker/Tinkers_Construct/Trait/) or a String with the identifier (recommended), returns void.  
+You can also provide a dependency String, that will cause the trait to only be available for certain part types, like heads, for example. Omitting that parameter will inject null, which will cause the trait to only be on the part type when no other nonnull dependency modifiers are on that part already.
 
-建议使用字符串变换，因为在CoT运行时，大多数特性尚不可用，甚至在CrT运行时也是如此。 并非所有这些材料都已初始化，但如果你使用了字符串，添加材料将推迟到可用材料后进行。 仍然不是错误证明，也没有简单的方法来检查打字，所以请注意错误消息告诉您哪些特性尚未找到.
+The string varaint is recommended, since by the time CoT runs, most Traits aren't yet available, and even by the time CrT runs, not all of them have been initialized, but if you use the strings, the addition of the materials is postponed until they are available. Still it's not errorproof and there's no easy way of checking for typos, so beware the error messages telling you which traits haven't been findable.
 
 ```zenscript
 myMaterial.addTrait("fiery", "head");

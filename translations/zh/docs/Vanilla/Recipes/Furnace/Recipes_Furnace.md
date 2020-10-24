@@ -1,118 +1,118 @@
-# 转炉类
+# Furnace
 
-CraftTfinde允许您添加 `添加` 和 `删除` 熔炉配方并更改项目的燃料值。
+CraftTweaker allows you to `Add` and `Remove` Furnace recipes and change the fuel value of items.
 
-## 配方
+## Recipes
 
-### 移除
+### Removal
 
-有两种方法去除熔炉配方：
+There are 2 ways to remove Furnace recipes, being:
 
 ```zenscript
-熔炉.remove(Ingredient 输出)
+furnace.remove(IIngredient output)
 ```
 
-和
+And
 
 ```zenscript
-炉.remove.remove(I成分输出, IIngredient 输入)；
+furnace.remove(IIngredient output, IIngredient input);
 ```
 
-第一个语法更灵活，会删除所有输出 `给定输出` 的熔炉配方。  
-第二个语法对被删除的配方更加严格，会移除输出 `输出` 并输入 `输入`的所有熔炉配方。
+The first syntax is more flexible with the recipes that are removed and will remove all Furnace recipes that output the `output` given.  
+The second syntax is more strict with the recipes that are removed and will remove all Furnace recipes that output the `output` given and has an input of `input`.
 
-还有第三种方法去除熔炉配方，但这种方法将删除在游戏中注册的所有熔炉配方。
+There also is a third way of removing furnace recipes, though this one will remove ALL furnace recipes registered in the game.
 
 ```zenscript
-熔炉.移除所有();
+furnace.removeAll();
 ```
 
 ### 加
 
-添加熔炉配方有两个命令：
+There are 2 commands for adding furnace recipes:
 
 ```zenscript
-furace.addRecipe(IItemStack 输出, Ingredient 输入)；
+furnace.addRecipe(IItemStack output, IIngredient input);
 ```
 
-和
+And
 
 ```zenscript
-furace.addRecipe(IItemStack 输出, Ingredient 输入, 双倍xp)；
+furnace.addRecipe(IItemStack output, IIngredient input, double xp);
 ```
 
-第一个语法将添加一个熔炉配方，会给熔炼提供0xp。
+The first syntax will add a Furnace recipe that will give 0 xp on smelt.
 
-第二个语法将添加一个熔炉配方，在熔炼中给予 `xp` xp 。
+The second syntax will add a Furnace recipe that will give `xp` xp on smelt.
 
-## 燃料
+## Fuel
 
-### 设置
+### Set
 
-设置燃料值的命令是：
+The command for setting fuel values is:
 
 ```zenscript
-furace.setFuel(Ingredient input, int burning Time)；
+furnace.setFuel(IIngredient input, int burnTime);
 ```
 
-这将把 `输入` 的燃烧值设置为 `燃烧时间` 刻录。 Minecraft煤烧焦1600秒，80秒，8个物品。 Minecraft炉中的1个物品需要200个勾才能完成。
+This will set the burn value of `input` to `burnTime` in ticks. Minecraft coal burns for 1600 ticks, 80 seconds, 8 items. 1 item in a minecraft furnace takes 200 ticks to complete.
 
-将 `燃烧时间` 设置为 `0` 将停止 `输入` 将不再是燃料物品。
+Setting the `burnTime` to `0` will stop the `input` from being a fuel item.
 
-### 获取
+### Get
 
-检索物品燃料值的命令是：
+The command for retrieving an item's fuel value is:
 
 ```zenscript
 furnace.getFuel(IItemStack item); 
 ```
 
-这将作为整数返回刻录值
+This will return the burn value as an Integer
 
 ## 例子
 
-### 移除
+### Removal
 
-这将移除输出的所有熔炉配方 `<minecraft:glass>`
+This will remove all Furnace recipes that outputs `<minecraft:glass>`.
 
 ```zenscript
-炉.移除(<minecraft:glass>)；
+furnace.remove(<minecraft:glass>);
 ```
 
-这将移除所有熔炉配方 `<minecraft:quartz>` 这些配方使用 `<minecraft:quartz_ore>` 作为输入。
+This will remove all Furnace recipes `<minecraft:quartz>` that use `<minecraft:quartz_ore>` as an input.
 
 ```zenscript
-转炉.移除(<minecraft:quartz>, <minecraft:quartz_ore>)；
+furnace.remove(<minecraft:quartz>, <minecraft:quartz_ore>);
 ```
 
 ### 加
 
-这将添加一个熔炉配方，在熔炼 `<minecraft:apple>` 时输出一个 `<minecraft:golden_apple>`
+This will add a Furnace recipe that will output a `<minecraft:golden_apple>` when a `<minecraft:apple>` is smelted.
 
 ```zenscript
-furace.addRecipe(<minecraft:golden_apple>, <minecraft:apple>);
+furnace.addRecipe(<minecraft:golden_apple>, <minecraft:apple>);
 ```
 
-这将添加一个熔炉配方，在一个 `<minecraft:melon>` 被熔化时输出一个 `<minecraft:speckled_melon>` ，并将给玩家1500 xp 点数。
+This will add a Furnace recipe that will output a `<minecraft:speckled_melon>` when a `<minecraft:melon>` is smelted and will give the player 1500 xp points.
 
 ```zenscript
-furace.addRecipe(<minecraft:speckled_melon>, <minecraft:melon>, 1500)；
+furnace.addRecipe(<minecraft:speckled_melon>, <minecraft:melon>, 1500);
 ```
 
-### 燃料
+### Fuel
 
-这将把燃料值设置为 `<minecraft:rotten_flesh>` 到 `100`.
+This will set the Fuel value of `<minecraft:rotten_flesh>` to `100`.
 
 ```zenscript
 furnace.setFuel(<minecraft:rotten_flesh>, 100);
 ```
 
-## 其他功能
+## Other Functionality
 
-### 获取所有注册转炉配方
+### Getting all registered Furnace Recipes
 
 ```zenscript
-所有炉；
+furnace.all;
 ```
 
-返回 [`列表<IFurnaceRecipe>`](/Vanilla/Recipes/Furnace/IFurnaceRecipe/)。
+Returns a [`List<IFurnaceRecipe>`](/Vanilla/Recipes/Furnace/IFurnaceRecipe/).

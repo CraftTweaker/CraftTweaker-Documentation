@@ -1,41 +1,41 @@
-# Matériel
+# Material
 
-Un matériau est ce dont un objet est composé, par exemple Platinum.
+A Material is what an item is made of, for example Platinum.
 
-## Importation du paquet
+## Importing the package
 
-Il pourrait vous être nécessaire d'importer le paquet si vous rencontrez des problèmes, donc mieux vaut être sûr que désolé et ajouter l'importation.  
-`importer mods.contenttweaker.Material;`
+It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
+`import mods.contenttweaker.Material;`
 
-## Récupération d'un tel objet
+## Retrieving such an object
 
-Vous pouvez soit récupérer un Matériel existant en utilisant le [MaterialSystem](/Mods/ContentTweaker/Materials/MaterialSystem/) ou en créer un tout nouveau en utilisant le [Matériel Constructeur de Matériaux](/Mods/ContentTweaker/Materials/Materials/Material_Builder/)
+You can either retrieve an existing Material using the [MaterialSystem](/Mods/ContentTweaker/Materials/MaterialSystem/) or create an entirely new one using the [Material Builder](/Mods/ContentTweaker/Materials/Materials/Material_Builder/)
 
-## Champs
+## Fields
 
-Vous pouvez récupérer les informations suivantes d'un Matériel :
+You can retrieve the following information from a Material:
 
-| Méthode Zen          | Type de retour       | Libellé                                   |
-| -------------------- | -------------------- | ----------------------------------------- |
-| getName()            | chaîne de caractères | Renvoie le nom du Matériel                |
-| getColor()           | Indice               | Renvoie la couleur du Matériel            |
-| isHasEffect()        | boolean              | Renvoie si le matériau a l'effet lumineux |
-| getUnlocalizedName() | chaîne de caractères | Renvoie le nom non localisé du Matériel   |
+| ZenMethod            | Return Type | Description                                    |
+| -------------------- | ----------- | ---------------------------------------------- |
+| getName()            | string      | Returns the Material's name                    |
+| getColor()           | int         | Returns the Material's color                   |
+| isHasEffect()        | boolean     | Returns if the material has the glowing effect |
+| getUnlocalizedName() | string      | Returns the Material's unlocalized name        |
 
-## Enregistrer [Pièces de Matériel](/Mods/ContentTweaker/Materials/Materials/MaterialPart/)
+## Register [Material Parts](/Mods/ContentTweaker/Materials/Materials/MaterialPart/)
 
-Vous pouvez soit enregistrer des parties en utilisant l'objet [partie](/Mods/ContentTweaker/Materials/Parts/Part/) ou sa chaîne de nom.  
-Vous pouvez aussi enregistrer une seule partie ou plusieurs à la fois.  
-Donc vous avez 4 options au total :
+You can either register parts using the [part object](/Mods/ContentTweaker/Materials/Parts/Part/) or it's name string.  
+You can also either register a single part or multiple at once.  
+So you got 4 options in total:
 
 ```zenscript
-registerParts(String[] noms de partie);
-registerParts(IPart[] parties);
+registerParts(String[] partNames);
+registerParts(IPart[] parts);
 
 
 registerPart(String partName);
 registerPart(IPart part);
 ```
 
-Les méthodes registerPart retournent un seul objet [MaterialPart](/Mods/ContentTweaker/Materials/Materials/MaterialPart/) .  
-Les méthodes registerParts retournent une liste [MaterialPart](/Mods/ContentTweaker/Materials/Materials/MaterialPart/).
+The registerPart Methods return a single [MaterialPart](/Mods/ContentTweaker/Materials/Materials/MaterialPart/) object.  
+The registerParts Methods return a [MaterialPart](/Mods/ContentTweaker/Materials/Materials/MaterialPart/) list.

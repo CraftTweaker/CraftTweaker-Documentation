@@ -1,14 +1,14 @@
-# Fonderie d'Alliage
+# Alloy Smelter
 
-## Importation du paquet en cours
+## Importing the Package
 `mods.techreborn.alloySmelter`
 
-## Ajout de recettes
+## Adding Recipes
 ```zenscript
-mods.techreborn.alloySmelter.addRecipe(IItemStack sortie, IIngredient input1, IIngredient input2, int euTick) ;
+mods.techreborn.alloySmelter.addRecipe(IItemStack output, IIngredient input1, IIngredient input2, int ticktime, int euTick);
 ```
 
-## Suppression des recettes
+## Removing Recipes
 ```zenscript
 mods.techreborn.alloySmelter.removeInputRecipe(IIngredient ingredientA, IIngredient ingredientB);
 mods.techreborn.alloySmelter.removeRecipe(IItemStack output);

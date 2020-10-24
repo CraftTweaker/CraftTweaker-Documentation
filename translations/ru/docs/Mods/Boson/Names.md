@@ -1,54 +1,54 @@
-# Имена в Босоне
+# Names in Boson
 
-В Minecraft большинство объектов идентифицируются по уникальным именам. Например, элементы используют свое имя реестра для уникальной идентификации и не могут существовать более одного элемента с тем же именем реестра.
+In Minecraft, most objects are identified by unique names. E.g., items use their registry name to be uniquely identified and there can't exist more than one item with the same registry name.
 
-Большинство имен в Minecraft следуют за жесткой структурой, идентифицированной строкой с пространством имён и путем, разделенным двоеточием (например, `minecraft:iron_ingot`, где `minecraft` - пространство имён и `iron_ingot` - путь). В CraftTweaker, большинство из этих имен представлены как сырые строки, но внутри Босна это затоплено. Фактически, использование необработанной `строки` может запутать людей в том, ожидает ли метод строку пробелом имён или нет. По этой причине Босон разделяет использование строк, не относящихся к именам, и пространств имён.
+Most names in Minecraft follow a rigid structure, identified by a string with a namespace and a path separated by a colon (e.g. `minecraft:iron_ingot`, where `minecraft` is the namespace and `iron_ingot` is the path). In CraftTweaker, most of these names are represented as raw strings, but within Boson this is frowned upon. In fact, the usage of a raw `string` may confuse people on whether a method call expects a string with a namespace or without. For this reason, Boson separated the usage of non-namespaced strings and namespaced ones.
 
-Строки, не связанные с пространством имён, представлены как экземпляры `строки`, среди всех Boson API. Для получения дополнительной информации обратитесь к к документации ZenScript.
+Non-namespaced strings are represented as instances of `string`, among all the Boson APIs. For more information, refer to the ZenScript documentation.
 
-Пространственные строки представлены как экземпляры `NameSpacedString`, среди всех Boson API. Для получения дополнительной информации о том, как получить такие строки, обратитесь к следующему разделу.
+Namespaced strings are represented as instances of `NameSpacedString`, among all the Boson APIs. For more information on how to obtain such strings, refer to the next section.
 
-## `Наименование пробелов` документация
-Класс `NameSpacedString` находится в пакете `net.thesilkminer.mc.boson.zen.naming`.
+## `NameSpacedString` Documentation
+The `NameSpacedString` class resides in the `net.thesilkminer.mc.boson.zen.naming` package.
 
-### Создание нового экземпляра
-Существует два способа создания `NameSpacedString`: используя заводский метод или накладывая `строку`.
+### Creating a new instance
+There are two ways of creating a `NameSpacedString`: using the factory method or casting a `string`.
 
-Предложенным подходом является заводский метод. Из-за того, что он является статическим методом, он может быть вызван непосредственно в экземпляре класса . Ниже приведена подпись метода и пример его использования:
+The factory method is the suggested approach. Due to it being a static method, it can be invoked directly on the class instance. The following is the method signature and an example of its usage:
 
 ```zenscript
-функции from(nameSpace как строка?, путь как строка) как пробел имя;
+function from(nameSpace as string?, path as string) as NameSpacedString;
 ```
 
 ```zenscript
-NameSpacedString.from("minecraft", "iron_ingot"); // эквивалент minecraft:iron_ingot
-NameSpacedString.from(null, "iron_ingot"); // использует стандартное пространство имен 'minecraft'
+NameSpacedString.from("minecraft", "iron_ingot"); // equivalent to minecraft:iron_ingot
+NameSpacedString.from(null, "iron_ingot"); // uses default namespace 'minecraft'
 ```
 
 The casting way relies instead on an explicit cast from a `string` to a `NameSpacedString` using the `as` operator in ZenScript:
 
 ```zenscript
-"minecraft:iron_ingot" как имя пробела;
+"minecraft:iron_ingot" as NameSpacedString;
 ```
 
 ### Свойства
-`Строка пространства имён` предоставляет только для чтения доступ к пространству имён и пути через свойства:
+A `NameSpacedString` provides read-only access to both its namespace and its path via properties:
 
-| Название свойства | Тип      | Описание                                                                   |
-| ----------------- | -------- | -------------------------------------------------------------------------- |
-| `пробел имени`    | `string` | Получает часть пространства имен `NameSpacedString` (например `minecraft`) |
-| `путь`            | `string` | Получает часть пути `пространства имён` (например, `iron_ingot`)           |
+| Property Name | Тип      | Описание                                                                |
+| ------------- | -------- | ----------------------------------------------------------------------- |
+| `nameSpace`   | `string` | Gets the namespace portion of the `NameSpacedString` (e.g. `minecraft`) |
+| `path`        | `string` | Gets the path portion of the `NameSpacedString` (e.g. `iron_ingot`)     |
 
-### Методы
+### Methods
 
 #### `asString`
-`Пространство имён` может быть преобразовано обратно в обычную `строку` , используя метод `asString`. Ниже приведена подпись метода и пример его использования:
+A `NameSpacedString` can be converted back into a regular `string` by using the `asString` method. The following is the method signature and an example of its usage:
 
 ```zenscript
-функция asString() как строка;
+function asString() as string;
 ```
 
 ```zenscript
 val nss = NameSpacedString("minecraft", "iron_ingot");
-println(nss.asString()); // Вывод 'minecraft:iron_ingot' в журнал
+println(nss.asString()); // Prints 'minecraft:iron_ingot' to the log
 ```

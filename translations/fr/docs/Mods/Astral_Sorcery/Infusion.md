@@ -1,24 +1,24 @@
-# Recettes d'infusion de la lumière des étoiles
+# Starlight Infusion Recipes
 
-Vous pouvez ajouter et supprimer des perfusions d'artisanat.
+You can add and remove crafting infusions.
 
-## Appel en cours
+## Calling
 
-Vous pouvez appeler le package InfusionRecipe en utilisant `mods.astralsorcery.StarlightInfusion`.
+You can call the InfusionRecipe package using `mods.astralsorcery.StarlightInfusion`.
 
-## Enlèvement
+## Removing
 
-Cela supprimera la première perfusion qu'il trouve qui crée la sortie [IItemStack](/Vanilla/Items/IItemStack/) ``.  
-S'il y a plusieurs recettes qui retournent la sortie fournie, vous devez appeler cette méthode plusieurs fois !
+This will remove the first infusion it finds that creates the provided [IItemStack](/Vanilla/Items/IItemStack/) `output`.  
+If there are multiple recipes that return the provided output, you need to call this method multiple times!
 
 ```zenscript
-//mods.astralsorcery.StarlightInfusion.removeInfusion(sortie IItemStack);
+//mods.astralsorcery.StarlightInfusion.removeInfusion(IItemStack output);
 mods.astralsorcery.StarlightInfusion.removeInfusion(<minecraft:ice>);
 ```
 
-## Ajouter
+## Addition
 
 ```zenscript
-//mods.astralsorcery.StarlightInfusion.addInfusion(entrée IItemStack, sortie IItemStack, boolean consumeMultiple, float consumptionChance, int craftingTickTime);
+//mods.astralsorcery.StarlightInfusion.addInfusion(IItemStack input, IItemStack output, boolean consumeMultiple, float consumptionChance, int craftingTickTime);
 mods.astralsorcery.StarlightInfusion.addInfusion(<astralsorcery:itemjournal>, <minecraft:bow>, false, 0.7, 200);
 ```

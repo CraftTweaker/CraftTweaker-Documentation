@@ -1,39 +1,39 @@
-# Tela termiónica
+# Thermionic Fabricator
 
-ModTweaker te permite añadir o eliminar recetas de tejidos termiónicos forestales
+ModTweaker allows you to add or remove forestry Thermionic Fabricator Recipes
 
-## Llamando
+## Calling
 
-Puedes llamar al paquete usando `mods.forestry.ThermionicFabricator`
+You can call the package using `mods.forestry.ThermionicFabricator`
 
-## Receta/Eliminación del reparto
+## Recipe/Cast Removal
 
 ```zenscript
-//mods.forestry.ThermionicFabricator.removeCast(producto IIngredient);
+//mods.forestry.ThermionicFabricator.removeCast(IIngredient product);
 mods.forestry.ThermionicFabricator.removeCast(<forestry:thermionic_tubes:5>);
 ```
 
-## Adición de receta/reparto
+## Recipe/Cast Addition
 
 ```zenscript
-//mods.forestry.ThermionicFabricator.addCast(Salida ItemStack, IIngredient[][] ingredientes, ILiquidStack liquidStack, @Plan opcional ItemStack);
-mods.forestry.ThermionicFabricator. ddCast(<minecraft:glass_pane> * 4, [[<minecraft:dirt>,null,null],[null,null,null],[null,null,null]], <liquid: glass> * 200);
-mods.forestry. hermionicFabricator.addCast(<minecraft:stained_glass:3>, [[<ore:dyeLightBlue>,null,null],[null,null,null],[null,null,null]], <liquid: glass> * 144, <forestry:wax_cast>);
+//mods.forestry.ThermionicFabricator.addCast(IItemStack output, IIngredient[][] ingredients, ILiquidStack liquidStack, @Optional IItemStack plan);
+mods.forestry.ThermionicFabricator.addCast(<minecraft:glass_pane> * 4, [[<minecraft:dirt>,null,null],[null,null,null],[null,null,null]], <liquid: glass> * 200);
+mods.forestry.ThermionicFabricator.addCast(<minecraft:stained_glass:3>, [[<ore:dyeLightBlue>,null,null],[null,null,null],[null,null,null]], <liquid: glass> * 144, <forestry:wax_cast>);
 ```
 
-## Eliminación de Fundición
+## Smelting Removal
 
 ```zenscript
-//mods.forestry.ThermionicFabricator.removeFunditing(IIngredient itemInput);
-mods.forestry.ThermionicFabricator.removeFundition(<minecraft:sand>);
+//mods.forestry.ThermionicFabricator.removeSmelting(IIngredient itemInput);
+mods.forestry.ThermionicFabricator.removeSmelting(<minecraft:sand>);
 
 ```
 
-## Adición de Fundición
+## Smelting Addition
 
-Puedes añadir cada líquido en el juego como resultado de la fundición, pero actualmente sólo `<liquid:glass>` es recomendado debido a errores que ocurren con otros líquidos.
+You can add every liquid in the game as the result of the smelting, but currently only `<liquid:glass>` is recommended due to bugs occuring with other liquids.
 
 ```zenscript
-//mods.forestry.ThermionicFabricator.addFunting(ILiquidStack liquidStack, ItemStack itemInput, int meltingPoint);
-mods.forestry.ThermionicFabricator.addworelting(<liquid:glass> * 120, <minecraft:stone>, 500);
+//mods.forestry.ThermionicFabricator.addSmelting(ILiquidStack liquidStack, IItemStack itemInput, int meltingPoint);
+mods.forestry.ThermionicFabricator.addSmelting(<liquid:glass> * 120, <minecraft:stone>, 500);
 ```

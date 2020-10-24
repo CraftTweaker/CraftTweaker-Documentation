@@ -1,22 +1,22 @@
-# Detonar Explosión
+# ExplosionDetonate
 
-El evento ExplosionDetonate se dispara poco antes de que comience una explosión. No se puede cancelar.
+The ExplosionDetonate Event is fired shortly before an explosion starts. It cannot be canceled.
 
-## Clase de evento
-Necesitarás lanzar el evento en la cabecera de la función como esta clase:  
-`crafttweaker.event. xplosionDetonateEvent`  
-Puede, por supuesto, también [importar](/AdvancedFunctions/Import/) la clase antes y utilizar ese nombre entonces.
+## Event Class
+You will need to cast the event in the function header as this class:  
+`crafttweaker.event.ExplosionDetonateEvent`  
+You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
 
-## Extensiones de la interfaz de eventos
-ExplosionDetonate Events implementan las siguientes interfaces y son capaces de llamar a todos sus métodos/getters/setters también:
+## Event interface extensions
+ExplosionDetonate Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
 
-- [Evento de Explosión](/Vanilla/Events/Events/IExplosionEvent/)
+- [IExplosionEvent](/Vanilla/Events/Events/IExplosionEvent/)
 
 
 ## ZenGetters
-La siguiente información puede ser recuperada del evento:
+The following information can be retrieved from the event:
 
-| ZenGetter             | Ajuste | Tipo                                           |
-| --------------------- | ------ | ---------------------------------------------- |
-| `entidades afectadas` |        | [Itidad](/Vanilla/Entities/IEntity/)[]         |
-| `affectedPositions`   |        | [IBlockPos](/Vanilla/Blocks/IBlockPosition/)[] |
+| ZenGetter           | ZenSetter | Type                                           |
+| ------------------- | --------- | ---------------------------------------------- |
+| `affectedEntities`  |           | [IEntity](/Vanilla/Entities/IEntity/)[]        |
+| `affectedPositions` |           | [IBlockPos](/Vanilla/Blocks/IBlockPosition/)[] |

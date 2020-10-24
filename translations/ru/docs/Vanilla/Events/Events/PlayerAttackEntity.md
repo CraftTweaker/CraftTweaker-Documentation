@@ -1,6 +1,6 @@
-# Атака Игрока
+# PlayerAttackEntity
 
-Событие Атака Игрока запускается каждый раз, когда игрок атакует сущность.
+The PlayerAttackEntity Event is fired whenever a player attacks an Entity.
 
 ## Класс события
 
@@ -10,7 +10,7 @@ You can, of course, also [import](/AdvancedFunctions/Import/) the class before a
 
 ## Наследование от интерфейсов событий
 
-PlayerAttackEntity События реализуют следующие интерфейсы и также могут вызвать все их методы/getters/setters:
+PlayerAttackEntity Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
 
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 - [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
@@ -19,12 +19,12 @@ PlayerAttackEntity События реализуют следующие инте
 
 Следующая информация может быть получена от события:
 
-| Геттеры    | Возвращаемый тип                      |
+| ZenGetter  | Возвращаемый тип                      |
 | ---------- | ------------------------------------- |
-| `отменено` | boolean                               |
+| `canceled` | boolean                               |
 | `player`   | [IPlayer](/Vanilla/Players/IPlayer/)  |
-| `сущность` | [IEntity](/Vanilla/Entities/IEntity/) |
+| `entity`   | [IEntity](/Vanilla/Entities/IEntity/) |
 
 ## ZenMethods
 
-- `event.cancel()` устанавливает событие как отменено.
+- `event.cancel()` sets the event as cancelled.

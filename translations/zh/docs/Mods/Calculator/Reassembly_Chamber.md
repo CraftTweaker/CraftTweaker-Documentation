@@ -1,21 +1,21 @@
-# 复合分庭
+# Reassembly Chamber
 
 ## 所属包名
 ```zenscript
-导入 mods.calculator.reassemblyChamber;
+import mods.calculator.reassemblyChamber;
 ```
 
 ## 使用方式
 
-- **[Ingredient](/Vanilla/Variable_Types/IIngredient/) 输入** 输入.
-- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) 输出** 输出.
+- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input** The input.
+- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) output** The output.
 
 ## 添加配方
 ```zenscript
 reassemblyChamber.addRecipe(IIngredient input, IIngredient output);
 ```
-## 移除
+## Removal
 ```zenscript
 
-reassemblyChamber.removeRecipe(IIngredient 输出)；
+reassemblyChamber.removeRecipe(IIngredient output);
 ```

@@ -1,29 +1,29 @@
-# Взвешенная LiquidStack
+# WeightedLiquidStack
 
-Весомый стек жидкости — это как обычный [ILiquidStack](/Vanilla/Liquids/ILiquidStack/) , но имеет к нему добавленный процент.  
-Вы обычно используете их при работе с такими действиями, как сбрасывание или вторичные выводы.
+A Weighted Liquid Stack is like a normal [ILiquidStack](/Vanilla/Liquids/ILiquidStack/) but has a percentage added to it.  
+You normally use them when dealing with percentage based actions like drops or secondary outputs.
 
 ## Импорт пакета
 
-Возможно, вам потребуется импортировать пакет, если вы столкнетесь с какими-либо проблемами (например, наложение [массива](/AdvancedFunctions/Arrays_and_Loops/)), так что лучше быть безопасным, чем извините и добавить импорт.  
+It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
 `import crafttweaker.item.WeightedLiquidStack;`
 
-## Вызов взвешенного LiquidStack
+## Calling a weightedLiquidStack
 
-Вы можете получить взвешенный LiquidStack из [ILiquidStack](/Vanilla/Liquids/ILiquidStack/) , используя либо оператор модулей, либо функцию веса.
+You can derive a weightedLiquidStack from an [ILiquidStack](/Vanilla/Liquids/ILiquidStack/) by either using the modulo operator or the weight function on it.
 
 ```zenscript
 val liquidStack = <liquid:lava>;
 
-//Создание объекта взвешенной Liquidstack с шансом 20%
-val wLiquidStack = % 20;
-val wLiquidStack2 = liquidStack. восемьдесят (0.2);
+//both create a weightedLiquidstack object with a chance of 20%
+val wLiquidStack = liquidStack % 20;
+val wLiquidStack2 = liquidStack.weight(0.2);
 ```
 
 ## Геттеры
 
-| Геттер    | Что он делает                                                        | Возвращаемый тип                               |
-| --------- | -------------------------------------------------------------------- | ---------------------------------------------- |
-| stack     | Возвращает связанный файл LiquidStack                                | [ILiquidStack](/Vanilla/Liquids/ILiquidStack/) |
-| chance    | Возвращает вероятность стека в виде десятичной дроби (например, 0.2) | float                                          |
-| процентов | Возвращает вероятность стека в процентах (например, 20.0)            | float                                          |
+| Геттер  | Что он делает                                        | Возвращаемый тип                               |
+| ------- | ---------------------------------------------------- | ---------------------------------------------- |
+| stack   | Returns the associated LiquidStack                   | [ILiquidStack](/Vanilla/Liquids/ILiquidStack/) |
+| chance  | Returns the stack's chance as decimal (e.g. 0.2)     | float                                          |
+| percent | Returns the stack's chance as percentage (e.g. 20.0) | float                                          |

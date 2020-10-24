@@ -1,6 +1,6 @@
-# Зелье питомца игрока
+# PlayerBrewedPotion
 
-Событие "Зелье пивоварения" запускается, когда игрок вытягивает зелье из стола пива.
+The PlayerBrewedPotion Event is fired whenever a player takes out a potion from the brewing stand.
 
 ## Класс события
 
@@ -10,7 +10,7 @@ You can, of course, also [import](/AdvancedFunctions/Import/) the class before a
 
 ## Наследование от интерфейсов событий
 
-PlayerBrewedPotion Events реализуют следующие интерфейсы и также могут вызвать все их методы/getters/setters:
+PlayerBrewedPotion Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
 
 - [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
 
@@ -18,8 +18,8 @@ PlayerBrewedPotion Events реализуют следующие интерфей
 
 Следующая информация может быть получена от события:
 
-| Геттеры  | Возвращаемый тип                         |
-| -------- | ---------------------------------------- |
-| `player` | [IPlayer](/Vanilla/Players/IPlayer/)     |
-| `зелье`  | [IItemStack](/Vanilla/Items/IItemStack/) |
-| `рука`   | string                                   |
+| ZenGetter | Возвращаемый тип                         |
+| --------- | ---------------------------------------- |
+| `player`  | [IPlayer](/Vanilla/Players/IPlayer/)     |
+| `potion`  | [IItemStack](/Vanilla/Items/IItemStack/) |
+| `hand`    | string                                   |

@@ -1,30 +1,30 @@
-# Директива о препроцессоре флагов
+# Experimental Flags Preprocessor Directive
 
-Данная директива позволяет использовать экспериментальное поведение для определенных функций ZenScript.
+This preprocessor directive enables some experimental behavior for certain ZenScript functionalities.
 
-Являясь частью проекта ZenScriptX, и учитывая экспериментальную природу самого проекта в себе, некоторые функции могут потребовать интенсивного тестирования на стороне компилятора или других непреднамеренных побочных эффектов. По этим причинам некоторые функции были сочтены экспериментальными и не включены по умолчанию при компиляции сценария.
+Being part of the ZenScriptX project, and due to the experimental nature of the project in itself, some features may require extensive testing on the compiler side or cause other unintended side effects. For these reasons, some features have been deemed experimental and are not enabled by default when compiling a script.
 
-Кроме того, некоторые экспериментальные флаги могут не работать, и они предоставляются только в качестве подсказок предстоящих функций. Вы должны всегда ссылаться на документацию, чтобы узнать, используется ли определенный флаг или нет. С другой стороны, экспериментальные флаги никогда не будут удалены, означает, что функции, интегрированные в "неэкспериментальную" часть ZenScriptX, не будут иметь флаги отключены. This allows scripts to be compatible with newer releases of the ZenScriptX project without requiring a rewrite.
+Moreover, some experimental flags may outright not work, and are provided only as hints of upcoming features. You should always refer to the documentation to know whether a certain flag is used or not. On the other hand, experimental flags will never be removed, meaning that features that are integrated into the "non-experimental" part of ZenScriptX won't have their flags disabled. This allows scripts to be compatible with newer releases of the ZenScriptX project without requiring a rewrite.
 
-## Использование директивы
-Использование директивы так же просто, как добавление `#experimental` в начало файла, и задание списка флагов , представляющих поведение для включения сразу после объявления.
+## Using the directive
+Using the directive is as simple as adding `#experimental` to the beginning of the file, and specifying a list of flags that represent behavior to enable right after the declaration.
 
-Каждый флаг должен быть разделен пробелами **и должен** начинаться с `-E`. Это определяет флаг как экспериментальный флаг . После этого должно быть введено несколько букв и цифр, определяющих конкретный флаг . Обратитесь к списку в этой документации, чтобы узнать все доступные флаги.
+Every flag must be separated by the others with spaces and it **has to** begin with `-E`. This identifies the flag as an experimental flag. Following that declaration, a series of letters and numbers that identify the specific flag should be entered. Refer to the list in this documentation to know all the available flags.
 
-В качестве примера мы хотели включить флаги `soo` и `wd4`. Соответствующей линией являются:
+As an example, imagine we wanted to enable the `soo` and `wd4` flags. The corresponding line would be:
 ```zenscript
-#экспериментальное -Esoo -Ewd4
+#experimental -Esoo -Ewd4
 ```
 
-## Список флагов
-| Название флага | Текущий статус | Описание                                                                                    |
-| -------------- | -------------- | ------------------------------------------------------------------------------------------- |
-| `soo`          | Отключено      | Включает перегрузку оператора для последовательностей                                       |
-| `saia`         | Отключено      | Обеспечивает автоматический `аргумент` для функций с одним параметром в последовательностях |
-| `sao`          | Включено       | Позволяет создавать `Последовательности` из аргументов массива                              |
+## List of flags
+| Flag name | Current Status | Описание                                                                              |
+| --------- | -------------- | ------------------------------------------------------------------------------------- |
+| `soo`     | Disabled       | Enables operator overloading for Sequences                                            |
+| `saia`    | Disabled       | Provides an automatic `it` argument to functions with a single parameter in Sequences |
+| `sao`     | Enabled        | Allows creation of `Sequences` from array arguments                                   |
 
-Нынешний статус имеет следующее значение:
+The meaning for Current Status are the following:
 
-- **Отключено** определяет флаг, который существует, но не имеет соответствующих действий из-за неготового бекенда. Он предоставлен только за счет "дорожной карты", позволяющей разработчикам знать, какие новые функции будут доступны в ближайшем будущем.
-- **Включено** идентифицирует существующий флаг и имеет эффект на файл.
-- **Deprecated** identifies a flag that shouldn't be used anymore due to a feature reaching maturity and not being considered experimental anymore. Тем не менее он предоставляется в виде обратной совместимости.
+- **Disabled** identifies a flag that exists but has no corresponding actions due to the backend not being ready. It is provided merely due to "roadmap", allowing developers to know what new features will be available in the near future.
+- **Enabled** identifies a flag that exists and has an effect on the file.
+- **Deprecated** identifies a flag that shouldn't be used anymore due to a feature reaching maturity and not being considered experimental anymore. It is nevertheless provided as a form of backwards compatibility.

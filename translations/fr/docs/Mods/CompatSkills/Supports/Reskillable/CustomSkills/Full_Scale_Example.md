@@ -1,8 +1,8 @@
-# Exemple d'écailles pleines
+# Full Scale Example
 
-## Crédit
+## Credit
 
-Le crédit est attribué à l'élève développeur principal pour l'exemple ci-dessous!
+Credit goes out to Lead Developer pupnewfster for the below example!
 
     #modloaded compatskills reskillable
     #priority 1000

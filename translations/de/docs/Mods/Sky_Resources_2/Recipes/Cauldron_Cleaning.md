@@ -1,12 +1,12 @@
-# Kessel Reinigung
+# Cauldron Cleaning
 
-Das *Kessel Reinigung* wird zum Hinzufügen oder Entfernen von Rezepten nach/aus dem Kessel verwendet.
+The *cauldroncleaning* package is used for adding or removing recipes to/from the Cauldron.
 
-## Anruf
+## Calling
 
-Sie können das *Kesselreinigung* Paket mit `mods.skyresources.cauldronclean aufrufen`
+You can call the *cauldroncleaning* package using `mods.skyresources.cauldronclean`
 
-## Rezeptzusatz
+## Recipe Addition
 
 ```zenscript
 //mods.skyresources.cauldronclean.addRecipe(IItemStack output, IItemStack input);
@@ -16,9 +16,9 @@ mods.skyresources.cauldronclean.addRecipe(<minecraft:diamond>, <minecraft:dirt>)
 mods.skyresources.cauldronclean.addRecipe(<minecraft:emerald>, <minecraft:dirt>, 0.50);
 ```
 
-## Rezept entfernen
+## Recipe Removal
 
 ```zenscript
-//mods.skyresources.cauldronclean.removeRecipe(IItemStack Ausgabe);
+//mods.skyresources.cauldronclean.removeRecipe(IItemStack output);
 mods.skyresources.cauldronclean.removeRecipe(<minecraft:diamond>);
 ```

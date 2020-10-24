@@ -1,78 +1,78 @@
-# 集合表
+# Assembly Table
 
-*需要建造合成硅图标*
+*Requires BuildCraft Silicon*
 
-类路径： `mods.buildcraft。AssemblyTable`
+Class path: `mods.buildcraft.AssemblyTable`
 
-## 使用
+## Use
 
-要使用，导入使用 `导入mods.buildcraft的类。编程；` 在你的脚本开头。
+To use, import the class with `import mods.buildcraft.AssemblyTable;` at the beginning of your script.
 
-## 添加配方
+## Adding a Recipe
 
-`AssemblyTable.addRecipe(recipeName, output, power, inputes)；`
+`AssemblyTable.addRecipe(recipeName, output, power, inputs);`
 
-- `recipeName` (可选) &lt;字符串> 该配方的名称。 *必须是唯一的！*
-- `输出` <[IItemStack](/Vanilla/Items/IItemStack)>
-- `电源` &lt;int> 总电源成本
-- `输入` <[IIngredient](/Vanilla/Variable_Types/IIngredient)[]>
+- `recipeName` (Optional) &lt;string> The name of the recipe. *Must be unique!*
+- `output` <[IItemStack](/Vanilla/Items/IItemStack)>
+- `power` &lt;int> Total power cost in MJ
+- `inputs` <[IIngredient](/Vanilla/Variable_Types/IIngredient)[]>
 
 ```zenscript
-导入 mods.buildcraft。Assembly;
+import mods.buildcraft.AssemblyTable;
 
 AssemblyTable.addRecipe("example_recipe_for_diamonds", <minecraft:diamond>, 1000, [<minecraft:coal_block>, <minecraft:redstone>]);
 ```
 
-## 删除配方
+## Removing a Recipe
 
 `AssemblyTable.removeByName(name);`
 
-- `recipeName` &lt;字符串> 该配方的名称。
+- `recipeName` &lt;string> The name of the recipe.
 
 ```zenscript
-导入 mods.buildcraft。AssemblyTable;
+import mods.buildcraft.AssemblyTable;
 
 AssemblyTable.removeByName("buildcraftsilicon:redstone_chipset");
 ```
 
-## 现有配方
+## Existing Recipes
 
-### 芯片：
+### Chipsets:
 
-- `建造手工艺: redstone_chipset`
+- `buildcraftsilicon:redstone_chipset`
 - `buildcraftsilicon:iron_chipset`
 - `buildcraftsilicon:gold_chipset`
 - `buildcraftsilicon:quartz_chipset`
 - `buildcraftsilicon:diamond_chipset`
 
-### 行李：
+### Pluggables:
 
 - `buildcraftsilicon:plug_pulsar`
 - `buildcraftsilicon:light-sensor`
-- `buildcrafttransport:faceditions`
+- `buildcrafttransport:facaderecipes`
 
-### 镜头：
+### Lenses:
 
-- `构建手工艺: lens-regular`
-- `构建手工艺: lens-filter`
-- `buildcraftsilicon:lens-regulatory -<color>`
+- `buildcraftsilicon:lens-regular`
+- `buildcraftsilicon:lens-filter`
+- `buildcraftsilicon:lens-regular-<color>`
 - `buildcraftsilicon:lens-filter-<color>`
 
-*将 `<color>` 替换成以下任一内容： `白色` `橙色`, `洋红色`, `浅蓝色`, `黄色`, `lime`, `粉红色`, `灰色`, `silver`, `cyan`, `purple`, `Blue`, `brown`, `green`, `red`, `black`*
+*Replace `<color>` with any of the following: `white`, `orange`, `magenta`, `lightblue`, `yellow`, `lime`, `pink`, `gray`, `silver`, `cyan`, `purple`, `blue`, `brown`, `green`, `red`, `black`*
 
-### 线路：
+### Wires:
 
-- `构建手工传输:wire-<color>`
+- `buildcrafttransport:wire-<color>`
 
-*将 `<color>` 替换成以下任一内容： `白色` `橙色`, `洋红色`, `浅蓝色`, `黄色`, `lime`, `粉红色`, `灰色`, `silver`, `cyan`, `purple`, `Blue`, `brown`, `green`, `red`, `black`*
+*Replace `<color>` with any of the following: `white`, `orange`, `magenta`, `lightblue`, `yellow`, `lime`, `pink`, `gray`, `silver`, `cyan`, `purple`, `blue`, `brown`, `green`, `red`, `black`*
 
-### 网关：
+### Gates:
 
 - `buildcraftsilicon:gate-<operation>-<material>-no_modifier`
 - `buildcraftsilicon:gate-modifier-<operation>-<material>-<modifier>`
 
-参数：
+Parameters:
 
-- `<operation>`: `和` 或 `或`
-- `<material>`: `iron`, `nether_积木`, 或 `gold`
-- `<modifier>`: `lapis`, `quartz`, 或 `diamond`
+- `<operation>`: `and` or `or`
+- `<material>`: `iron`, `nether_brick`, or `gold`
+- `<modifier>`: `lapis`, `quartz`, or `diamond`

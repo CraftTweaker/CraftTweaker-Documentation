@@ -1,30 +1,30 @@
 # IBlockPos
 
-IBlockPos объект представляет позицию в игре.
+An IBlockPos object represents a position in the game.
 
 ## Импорт пакета
 
-Возможно, вам потребуется импортировать пакет, если вы столкнетесь с какими-либо проблемами, так что лучше быть безопасным чем извините и добавьте импорт.  
-`импортировать crafttweaker.world.IBlockPos;`
+It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
+`import crafttweaker.world.IBlockPos;`
 
-## Методы ZenMethods без параметров
+## ZenMethods without parameters
 
-| ZenMethod    | ZenGetter/Caster | Возвращаемый тип                          | Описание                                  |
-| ------------ | ---------------- | ----------------------------------------- | ----------------------------------------- |
-| getX()       | х                | int                                       | Возвращает X значение позиции             |
-| getY()       | у                | int                                       | Возвращает значение Y позиции             |
-| getZ()       | z                | int                                       | Возвращает значение Z позиции             |
-| asPosition3f | как IPosition3f  | [IPosition3f](/Vanilla/Utils/Position3f/) | Возвращает позицию как объект Position3f. |
+| ZenMethod    | ZenGetter/Caster | Возвращаемый тип                          | Description                                |
+| ------------ | ---------------- | ----------------------------------------- | ------------------------------------------ |
+| getX()       | x                | int                                       | Returns the position's X value             |
+| getY()       | y                | int                                       | Returns the position's Y value             |
+| getZ()       | z                | int                                       | Returns the position's Z value             |
+| asPosition3f | as IPosition3f   | [IPosition3f](/Vanilla/Utils/Position3f/) | Returns the position as Position3f Object. |
 
-## Методы с параметрами
+## ZenMethods with parameters
 
-### Смещение
+### Get Offset
 
-Возвращает новые IBlockPos `смещения` блоков в направлении ``.
+Returns a new IBlockPos that is `offset` blocks into the `direction` direction.
 
 `IBlockPos getOffset(IFacing direction, int offset);`
 
-Кроме того, вы можете получить объекты [IFacing](/Vanilla/World/IFacing/) , используя статические методы, предоставленные там.
+Alternatively you can directly get the [IFacing](/Vanilla/World/IFacing/) objects using the static methods provided there.
 
-- [Надо](/Vanilla/World/IFacing/) направления → Направление
-- int смещение → сколько блоков в этом направлении?
+- [IFacing](/Vanilla/World/IFacing/) direction → The direction
+- int offset → how many blocks in that direction?

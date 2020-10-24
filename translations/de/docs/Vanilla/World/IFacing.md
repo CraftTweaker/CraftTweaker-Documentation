@@ -1,21 +1,21 @@
 # IFacing
 
-Mit dem IFacing Interface können Sie [IBlockPos](/Vanilla/World/IBlockPos/) mögliche Richtungen erhalten.
+The IFacing Interface allows you to get an [IBlockPos's](/Vanilla/World/IBlockPos/) possible directions.
 
 ## Dieses Paket importieren
 
-Es kann erforderlich sein, dass Sie das Paket importieren, wenn Sie irgendwelche Probleme haben. Seien Sie also besser sicher als entschuldigen und fügen Sie den Import hinzu.  
-`importiere craftweaker.world.IFacing;`
+It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
+`import crafttweaker.world.IFacing;`
 
-## Aufzählungen
+## Enumerations
 
-Das Factory Interface hat 7 statische Methoden, jede gibt die besagte Richtung zurück.  
-Die letzte Richtung nimmt die Richtung als Zeichenfolge ein (z.B. `"NORTH"`)
+The facing Interface has 7 static Methods, each returning the said direction.  
+The last one takes the direction as String input (e.g. `"NORTH"`)
 
 ```zenscript
 crafttweaker.world.Facing.north()
 crafttweaker.world.Facing.east()
-crafttweaker.world.world.Facing.south()
+crafttweaker.world.Facing.south()
 crafttweaker.world.Facing.west()
 crafttweaker.world.Facing.down()
 crafttweaker.world.Facing.up()
@@ -24,25 +24,25 @@ crafttweaker.world.Facing.up()
 crafttweaker.world.Facing.fromString(String name);
 ```
 
-## ZenGetters/ZenMethoden ohne Parameter
+## ZenGetters/ZenMethods without parameters
 
-| ZenGetter       | ZenMethode | Rückgabetyp |
-| --------------- | ---------- | ----------- |
-| name            | getName()  | string      |
-| rotateY         | rotateY()  | IFacing     |
-| entgegengesetzt | opposite() | IFacing     |
+| ZenGetter | ZenMethod  | Rückgabetyp |
+| --------- | ---------- | ----------- |
+| name      | getName()  | string      |
+| rotateY   | rotateY()  | IFacing     |
+| opposite  | opposite() | IFacing     |
 
-## Andere Methoden
+## Other methods
 
-### Vergleiche zwei Verkleidungen
+### Comparing two Facings
 
-Du kannst zwei Verkleidungen mit den Standartvergleichern `== vergleichen! < > <= >=`  
-Alternativ können Sie die Funktion verwenden, obwohl die Funktion eine Inte zurückgibt, die 0 ist, wenn sie gleich sind.
+You can compare two facings using the standart comparing Operators `== != < > <= >=`  
+Alternatively, you can use the function, though the function returns an int that is 0 if they are equal.
 
 ```zenscript
-//Gibt true oder false
+//Returns true or false
 facingOne == facingTwo;
 
-//Gibt 0 zurück, wenn sie gleich
+//Returns 0 if they are equal
 facingOne.compare(facingTwo);
 ```

@@ -1,44 +1,44 @@
-# Fonctions globales
+# Global Functions
 
-Les fonctions globales sont des fonctions qui peuvent être appelées sans être [importées](/AdvancedFunctions/Import/).  
-Voici la liste :
+Global functions are functions that can be called without being [imported](/AdvancedFunctions/Import/).  
+Here's the list:
 
-## imprimé
+## print
 
-Affiche la chaîne dans le log crafttweaker sous forme d'informations.
+Prints the string to the crafttweaker log as information.
 
 ```zenscript
 //print(String message);
 print("Hello World!");
 ```
 
-Ne retourne rien
+Returns nothing
 
-## Total des actions
+## totalActions
 
 ```zenscript
 //totalActions();
 totalActions();
 ```
 
-Retourne une int qui montre combien de fonctions globales sont enregistrées.
+Returns an int that shows how many global functions are registered.
 
 ## enableDebug
 
-Active le mode débogage.  
-Il est préférable d'utiliser le [Préprocesseur de débogage](/AdvancedFunctions/Preprocessors/DebugPreprocessor/).
+Enables Debug mode.  
+Use of the [Debug Preprocessor](/AdvancedFunctions/Preprocessors/DebugPreprocessor/) is preferred though.
 
 ```zenscript
 //enableDebug();
 enableDebug();
 ```
 
-Ne retourne rien
+Returns nothing
 
 ## isNull
 
-Vérifie si un objet donné est nul.  
-Ne fonctionne pas sur les primitives !
+Checks if a given object is null.  
+Doesn't work on primitives!
 
 ```zenscript
 //isNull(Object o);
@@ -54,7 +54,7 @@ Returns a boolean Note: If this does not work for you, try casting the object to
 max(10, 11);
 ```
 
-Renvoie un entier
+Returns an int
 
 ## min
 
@@ -63,19 +63,31 @@ Renvoie un entier
 min(10, 11);
 ```
 
-Renvoie un entier
+Returns an int
 
 ## pow
 
 ```zenscript
-//pow(double nombre1, double nombre2);
+//pow(double number1, double number2);
 pow(2.0, 4.0);
 ```
 
-Renvoie un double
+Returns a double
 
-## Champs globaux
+## Global Fields
 
-Accéde au Gestionnaire des [ ItemUtils](/Vanilla/Utils/IItemUtils/)</td> </tr> 
-
-</tbody> </table>
+| Field      | Description                                                                                    |
+| ---------- | ---------------------------------------------------------------------------------------------- |
+| brewing    | Accesses the [Brewing Handler](/Vanilla/Recipes/Recipes_Brewing_Stand/)                        |
+| client     | Accesses [client Methods](/Vanilla/Game/IClient/)                                              |
+| events     | Accesses the [Event Handler](/Vanilla/Events/IEventManager/)                                   |
+| format     | Accesses the [Formatting Handler](/Vanilla/Utils/IFormatter/)                                  |
+| furnace    | Accesses the [Furnace Handler](/Vanilla/Recipes/Furnace/Recipes_Furnace/)                      |
+| game       | Accesses [Game functions](/Vanilla/Game/IGame/)                                                |
+| itemUtils  | Accesses the [ItemUtils Handler](/Vanilla/Utils/IItemUtils/)                                   |
+| loadedMods | Accesses the [loaded Mods list](/Vanilla/Game/Mods/)                                           |
+| logger     | Accesses the [logger](/Vanilla/Utils/Logger/)                                                  |
+| oreDict    | Accesses the [oreDictionary Handler](/Vanilla/OreDict/IOreDict/)                               |
+| recipes    | Accesses the [Recipe Handler](/Vanilla/Recipes/Crafting/Recipes_Crafting_Table/)               |
+| server     | Accesses [server Methods](/Vanilla/Game/IServer/)                                              |
+| vanilla    | Accesses vanilla functions (currently only [vanilla.seeds](/Vanilla/Recipes/Seeds/) available) |

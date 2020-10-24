@@ -1,6 +1,6 @@
-# Подарки игрока
+# PlayerPickupEntity
 
-Событие "Пикапсущность" запускается каждый раз, когда игрок взаимодействует с сущностью.
+The PlayerPickupEntity Event is fired whenever a player interacts with an Entity.
 
 ## Класс события
 
@@ -12,14 +12,14 @@ You can, of course, also [import](/AdvancedFunctions/Import/) the class before a
 
 Следующая информация может быть получена от события:
 
-| Геттеры      | Возвращаемый тип                      |
-| ------------ | ------------------------------------- |
-| `отменено`   | boolean                               |
-| `обработано` | boolean                               |
-| `player`     | [IPlayer](/Vanilla/Players/IPlayer/)  |
-| `сущность`   | [IEntity](/Vanilla/Entities/IEntity/) |
+| ZenGetter   | Возвращаемый тип                      |
+| ----------- | ------------------------------------- |
+| `canceled`  | boolean                               |
+| `processed` | boolean                               |
+| `player`    | [IPlayer](/Vanilla/Players/IPlayer/)  |
+| `entity`    | [IEntity](/Vanilla/Entities/IEntity/) |
 
 ## ZenMethods
 
-- `event.cancel()` устанавливает событие как отменено.
-- `event.process()` устанавливает событие как обработанное.
+- `event.cancel()` sets the event as cancelled.
+- `event.process()` sets the event as processed.

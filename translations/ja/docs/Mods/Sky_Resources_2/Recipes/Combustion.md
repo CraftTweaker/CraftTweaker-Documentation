@@ -1,21 +1,21 @@
 # Combustion
 
-燃焼 *燃焼* パッケージは、燃焼プロセスへのレシピの追加や削除に使用されます。
+The *combustion* package is used for adding or removing recipes to/from the Combustion process.
 
-## 発信中
+## Calling
 
-*燃焼* パッケージは、 `mods.skyresources.燃焼`を使用して呼び出すことができます。
+You can call the *combustion* package using `mods.skyresources.combustion`
 
-## レシピの追加
+## Recipe Addition
 
 ```zenscript
-//mods.skyresources.comberion.addRecipe(IItemStack 出力, IItemStack[] input, int temperature);
-mods.skyresources.comberion.addRecipe(<minecraft:diamond>, [<minecraft:dirt>, <minecraft:sand> * 2], 420);
+//mods.skyresources.combustion.addRecipe(IItemStack output, IItemStack[] input, int temperature);
+mods.skyresources.combustion.addRecipe(<minecraft:diamond>, [<minecraft:dirt>, <minecraft:sand> * 2], 420);
 ```
 
-## レシピの削除
+## Recipe Removal
 
 ```zenscript
-//mods.skyresources.comberion.removeRecipe(IItemStack output);
-mods.skyresources.燃焼.removeRecipe(<minecraft:diamond>);
+//mods.skyresources.combustion.removeRecipe(IItemStack output);
+mods.skyresources.combustion.removeRecipe(<minecraft:diamond>);
 ```

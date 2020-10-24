@@ -1,15 +1,15 @@
-# マウントロック
+# Mount Locking
 
-## マウントロック
+## Mount Locks
 
-この機能により、特定の実装エンティティに要件ロックを追加できます!
+This feature allows you to add a requirement lock to Mounting specific entities!
 
-### 構文
+### Syntax
 
-[IEntityDefinition へのリンク](/Vanilla/Entities/IEntityDefinition/)
+[Link to IEntityDefinition](/Vanilla/Entities/IEntityDefinition/)
 
-    # 空白の例:
-    mods.compatskills.AnimalTamLock.addTameLock(IEntityDefinition definition, String... defaultRequirements)
+    # Blank Example:
+    mods.compatskills.AnimalTameLock.addTameLock(IEntityDefinition definition, String... defaultRequirements)
     
-    # 作業例:
+    # Working Example:
     mods.compatskills.AnimalTameLock.addTameLock(<entity:minecraft:pig>, "reskillable:mining|5", "reskillable:magic|7")

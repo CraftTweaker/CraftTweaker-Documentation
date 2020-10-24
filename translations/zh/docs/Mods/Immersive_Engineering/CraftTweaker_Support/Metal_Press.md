@@ -1,32 +1,32 @@
-# 金属按
+# Metal Press
 
-金属新闻包可以用来添加/移除沉浸式工程金属压载机配方。
+The Metal Press package can be used to add/remove recipes to/from the Immersive Engineering Metal Press.
 
-## 调用包
+## Calling The Package
 
-您可以使用 `mods.immersiveengineering.MetalPress` 来调用MetalPress 包。
+You can call the MetalPress package using `mods.immersiveengineering.MetalPress`.
 
 ## 添加配方
 
-| 必填 | 类型         | 数据类型                                                    |
-| -- | ---------- | ------------------------------------------------------- |
-| 必要 | 输出         | [物品堆（IItemstack）](/Vanilla/Items/IItemStack/)           |
-| 必要 | 输入         | [材料（IIngredient）](/Vanilla/Variable_Types/IIngredient/) |
-| 必填 | 最小值        | [物品堆（IItemstack）](/Vanilla/Items/IItemStack/)           |
-| 必要 | 能源         | 整型                                                      |
-| 必要 | Input Size | 整型                                                      |
+| Required | 类型         | 数据类型                                                    |
+| -------- | ---------- | ------------------------------------------------------- |
+| 必要       | 输出         | [物品堆（IItemstack）](/Vanilla/Items/IItemStack/)           |
+| 必要       | 输入         | [材料（IIngredient）](/Vanilla/Variable_Types/IIngredient/) |
+| Required | Mold       | [物品堆（IItemstack）](/Vanilla/Items/IItemStack/)           |
+| 必要       | Energy     | 整型                                                      |
+| 必要       | Input Size | 整型                                                      |
 
 ### 例子
 
 ```zenscript
-//示例：
+//Example:
 mods.immersiveengineering.MetalPress.addRecipe(IItemStack output, IIngredient input, IItemStack mold, int energy, @Optional int inputSize);
 
-mods. mmersiveengineering.MetalPress.addRecipe(<minecraft:diamond>, <ore:logWood>, <minecraft:emerald>, , 2000);
+mods.immersiveengineering.MetalPress.addRecipe(<minecraft:diamond>, <ore:logWood>, <minecraft:emerald>, 2000);
 mods.immersiveengineering.MetalPress.addRecipe(<minecraft:diamond>, <ore:logWood>, <minecraft:emerald>, 2000, 16);
 ```
 
-## 删除配方
+## Remove Recipe
 
 | 类型 | 数据类型                                          |
 | -- | --------------------------------------------- |
@@ -35,13 +35,13 @@ mods.immersiveengineering.MetalPress.addRecipe(<minecraft:diamond>, <ore:logWood
 ### 例子
 
 ```zenscript
-//示例：
-mods.immersiveengineering.MetalPress.removeRecipe(IItemstack 输出)；
+//Example:
+mods.immersiveengineering.MetalPress.removeRecipe(IItemstack output);
 
-mods.immersiveengineering.MetalPress.removeRecipe(<minecraft:diamond>)；
+mods.immersiveengineering.MetalPress.removeRecipe(<minecraft:diamond>);
 ```
 
-## 按Mold删除
+## Remove By Mold
 
 | 类型 | 数据类型                                          |
 | -- | --------------------------------------------- |
@@ -50,8 +50,8 @@ mods.immersiveengineering.MetalPress.removeRecipe(<minecraft:diamond>)；
 ### 例子
 
 ```zenscript
-//示例：
-mods.immersiveengineering.MetalPress.removeRecipeByMold(Itemstack output)；
+//Example:
+mods.immersiveengineering.MetalPress.removeRecipeByMold(IItemstack output);
 
-mods.immersiveengineering.MetalPress.removeRecipeByMold(<minecraft:diamond>)；
+mods.immersiveengineering.MetalPress.removeRecipeByMold(<minecraft:diamond>);
 ```

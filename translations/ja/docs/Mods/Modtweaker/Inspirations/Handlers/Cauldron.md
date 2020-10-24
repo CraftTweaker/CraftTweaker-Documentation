@@ -1,22 +1,22 @@
-# 大釜（大釜）
+# Cauldron
 
-大釜のレシピを追加/削除するために大釜パッケージを使用します。 設定で `シンプル` に設定されている場合に注意してください。 水を使ったレシピのみが作れますが、JEIではすべてのレシピが表示されます。
+The Cauldron package is used for adding/removing recipes for the cauldron. Note that if the cauldron is set to `simple` in the config, only recipes using water will be able to be crafted but all recipes will still show in JEI.
 
-## 発信中
+## Calling
 
-`mods.influction.Cauldron` を使って大釜パッケージを呼び出すことができます。
+You can call the Cauldron package using `mods.inspirations.Cauldron`
 
 ## Fluids
 
-インスピレーションは、流体を使用して3種類のレシピを備えています:流体を使用してアイテムを変換するもの。 アイテムを使って流体を変形させたり、アイテムを使って流体でいっぱいにしたりします。 すべてのハンドラーが流体スタックを取る間、流体タイプのみがレシピに影響を与えます。 インスピレーションの大釜は大釜で3本のバニラシステムを使用するので、量は別のパラメータで処理されます。
+Inspirations features three types of recipes using fluids: ones to transform an item using a fluid, ones to transform a fluid using an item, and ones to add fill with a fluid using an item. While all the handlers take on a fluid stack, only the fluid type will affect the recipe. Inspirations cauldrons use the vanilla system of three bottles in a cauldron so amounts are handled in another parameter.
 
-### 流体の追加
+### Fluid adding
 
-流体を使用して、入力項目を出力項目に変換するレシピを追加します。
+Adds a recipe converting the input item to the output item using the fluid.
 
-* 入力項目はスタックサイズに対応しており、保持されたスタックを一定サイズにする必要があります。
-* レベルはレシピによって消費されるレベルの数を決定します。 0-3に対応しており、1に既定で設定しています
-* 沸騰は、レシピのために大釜を火の上に置く必要があるかどうかを決定します。 必要に応じて false を指定することができます。火のない場合は false を、無視する場合は null (デフォルト) を指定します。
+* Input item supports stack sizes to require the held stack to be a certain size.
+* Levels determines how many levels are consumed by the recipe. Supports 0-3, defaulting to 1
+* Boiling determines if the cauldron must be placed above fire for the recipe. Can be true to require it, false to require not having fire, or null (default) to ignore it.
 
 ```zenscript
 //mods.inspirations.Cauldron.addFluidRecipe(IItemStack output, IIngredient input, ILiquidStack fluid, @Optional int levels, @Optional boolean boiling);
@@ -24,127 +24,127 @@ mods.inspirations.Cauldron.addFluidRecipe(<minecraft:blaze_rod>, <minecraft:blaz
 mods.inspirations.Cauldron.addFluidRecipe(<minecraft:water_bucket>, <minecraft:ice>, <liquid:lava>, 1, true);
 ```
 
-### 流体除去
+### Fluid removal
 
-大釜から既存の流体レシピを削除します。
+Removes an existing fluid recipe from the cauldron.
 
 ```zenscript
-//mods.infludron.removeFluidRecipe(IIngredient出力, @Optional ILiquidStack流体)
-mods.infludron.Cauldron.removeFluidRecipe(<minecraft:beetroot_soup>);
+//mods.inspirations.Cauldron.removeFluidRecipe(IIngredient output, @Optional IIngredient input, @Optional ILiquidStack fluid)
+mods.inspirations.Cauldron.removeFluidRecipe(<minecraft:beetroot_soup>);
 ```
 
-### 流体変換の追加
+### Fluid transform adding
 
-アイテムを使用して流体を出力流体に変換するレシピを追加します。
+Adds a recipe converting the fluid to the output fluid using the item.
 
-* 入力項目はスタックサイズに対応しており、保持されたスタックを一定サイズにする必要があります。
-* 最大レベルは、この変換を行うために許容される最大流体量を決定します。 大釜が少ない流体を含んでいる場合、より安いバージョンを持つために使用されます。
-* 沸騰は、レシピのために大釜を火の上に置く必要があるかどうかを決定します。 必要に応じて false を指定することができます。火のない場合は false を、無視する場合は null (デフォルト) を指定します。
+* Input item supports stack sizes to require the held stack to be a certain size.
+* Max level determines the maximum amount of fluid allowed for this transformation to happen. Used to allow recipes to have a cheaper version if the cauldron contains less fluid.
+* Boiling determines if the cauldron must be placed above fire for the recipe. Can be true to require it, false to require not having fire, or null (default) to ignore it.
 
 ```zenscript
-//mods.infludron.addFluidTransform(ILiquidStack出力, IIngredient入力, ILiquidStack流体, @Optional int maxLevels, @Optional boolean boiling);
-mods.auldron.addFluidTransform(<liquid:lava>, <minecraft:blaze_powder>, <liquid:water>, 2, false);
+//mods.inspirations.Cauldron.addFluidTransform(ILiquidStack output, IIngredient input, ILiquidStack fluid, @Optional int maxLevels, @Optional boolean boiling);
+mods.inspirations.Cauldron.addFluidTransform(<liquid:lava>, <minecraft:blaze_powder>, <liquid:water>, 2, false);
 ```
 
-### 流体変換除去
+### Fluid transform removal
 
-大釜から既存の流体変換レシピを削除します。 出力は `IIngredient` ですが、流体スタックまたはワイルドカードのみをサポートします。
+Removes an existing fluid transform recipe from the cauldron. Output is `IIngredient` but only supports a fluid stack or wildcard.
 
 ```zenscript
-//mods.infludron.removeFluidTransform(IIngredient output, [IIngredient input, [IFluidStack fluid]]);
+//mods.inspirations.Cauldron.removeFluidTransform(IIngredient output, [IIngredient input, [IFluidStack fluid]]);
 mods.inspirations.Cauldron.removeFluidTransform(<liquid:beetroot_soup>, <minecraft:beetroot>, <liquid:water>);
 ```
 
-### レシピの追加情報を入力
+### Fill recipe adding
 
-用意された液体でコルドロンを充填するレシピを追加します。
+Adds a recipe filling the cauldron with the provided fluid..
 
-* 入力項目はスタックサイズに対応しており、保持されたスタックを一定サイズにする必要があります。
-* レベルは、レシピがコルドロンを満たす量を決定します。 指定されていない場合、デフォルトは 1 です。
-* コンテナは、このレシピを実行した後に返されるアイテムを決定します。 何も指定されていない場合は、何も返さないようにします。
+* Input item supports stack sizes to require the held stack to be a certain size.
+* Levels determines how much the recipe fills the cauldron by. Defaults to 1 if not provided.
+* Container determines the item returned after performing this recipe. If none is provided defaults to returning nothing.
 
 ```zenscript
-//mods.infludron.addFillRecipe(IIngredient input, ILiquidStack fluid, @Optional int levels, @Optional IItemStack container);
+//mods.inspirations.Cauldron.addFillRecipe(IIngredient input, ILiquidStack fluid, @Optional int levels, @Optional IItemStack container);
 mods.inspirations.Cauldron.addFillRecipe(<ore:gemDiamond>, <liquid:water>, 2, <minecraft:emerald>);
-mods.auldron.addFillRecipe(<minecraft:emerald>, <liquid:lava>);
+mods.inspirations.Cauldron.addFillRecipe(<minecraft:emerald>, <liquid:lava>);
 ```
 
-### レシピを削除する
+### Fill recipe removal
 
-大釜から既存の充填レシピを削除します。
+Removes an existing fill recipe from the cauldron.
 
 ```zenscript
 //mods.inspirations.Cauldron.removeFillRecipe(IIngredient input, @Optional ILiquidStack fluid);
-mods.spiels.Cauldron.removeFillRecipe(<minecraft:beetroot_soup>);
-mods.speibe.Cauldron.removeFillRemipe(<*>, <liquid:mushroom_stew>);
+mods.inspirations.Cauldron.removeFillRecipe(<minecraft:beetroot_soup>);
+mods.inspirations.Cauldron.removeFillRecipe(<*>, <liquid:mushroom_stew>);
 ```
 
-## 醸造とポーション
+## Brewing and Potions
 
-インスピレーションはポーションを使用してポーションのレシピの2種類を備えています: あるタイプから別のタイプにポーションを変更する醸造レシピ。 ポーションを使ってアイテムを変えるポーションのレシピです
+Inspirations features two types of potion recipes using potions: brewing recipes that change a potion from one type into another, and potion recipes that change an item using a potion.
 
-レシピは `ポーション`の代わりに `ポーションタイプ`の代わりにformat@@4をとるので、ポーションパラメータは文字列です。 すべてのポーションの種類のリストは、コマンド `/ct インスピレーションのポーション` を使用して取得できます。
+Since the recipes take on `PotionType`'s instead of `Potion`'s directly, potion parameters are strings. A list of all potion types can be obtained using the command `/ct inspirations potions`.
 
-### 醸造所の追加
+### Brewing adding
 
-試薬を使用して、入力ポーションを出力ポーションに変換するレシピを追加します。
+Adds a recipe converting the input potion to the output potion using the reagent.
 
 ```zenscript
-//mods.spights.Cauldron.addBrewingRecipe(String出力, 文字列入力, IIngredient試薬);
-mods.inspirations.Cauldron.addBrewingRecipe("minecraft:invisibility", "minecraft:thickert", <minecraft:diamond>);
-mods.auldron.addBrewingRecipe("minecraft:healing", "minecraft:th厚", <ore:gemEmerald>);
+//mods.inspirations.Cauldron.addBrewingRecipe(String output, String input, IIngredient reagent);
+mods.inspirations.Cauldron.addBrewingRecipe("minecraft:invisibility", "minecraft:thick", <minecraft:diamond>);
+mods.inspirations.Cauldron.addBrewingRecipe("minecraft:healing", "minecraft:thick", <ore:gemEmerald>);
 ```
 
-### 醸造所の除去
+### Brewing removal
 
-大釜から既存の醸造レシピを削除します。 入力と出力の両方が null に設定でき、ワイルドカードとして動作します。
+Removes an existing brewing recipe from the cauldron. Both input and output can be set to null to act as a wildcard.
 
 ```zenscript
-//mods.inspirations.Cauldron.removeBrewingRecipe(出力, @Optional IIngredient 試薬),
-mods.spipation.Cauldron.removeBrewingRecipe("spimations:haste");
-mods.indexs.Cauldron.removeBrewingRecipe("minecraft:awd", "minecraft:water", <minecraft:nether_wart>);
+//mods.inspirations.Cauldron.removeBrewingRecipe(String output, @Optional String input, @Optional IIngredient reagent);
+mods.inspirations.Cauldron.removeBrewingRecipe("inspirations:haste");
+mods.inspirations.Cauldron.removeBrewingRecipe("minecraft:awkward", "minecraft:water", <minecraft:nether_wart>);
 ```
 
-### ポーションレシピの追加
+### Potion recipe adding
 
-ポーションを使用して、入力アイテムを出力アイテムに変換するレシピを追加します。
+Adds a recipe converting the input item to the output item using the potion.
 
-* レベルはレシピによって消費されるレベルの数を決定します。 0-3に対応しており、1に既定で設定しています
-* 沸騰は、レシピのために大釜を火の上に置く必要があるかどうかを決定します。 必要に応じて false を指定することができます。火のない場合は false を、無視する場合は null (デフォルト) を指定します。
+* Levels determines how many levels are consumed by the recipe. Supports 0-3, defaulting to 1
+* Boiling determines if the cauldron must be placed above fire for the recipe. Can be true to require it, false to require not having fire, or null (default) to ignore it.
 
 ```zenscript
-//mods.influstrations.Cauldron.addPotionRecipe(IItemStack output, IIngredient input, String point, @Optional int level, @Optional boolean boiling);
-mods.influstrations.Cauldron.addPotionRecipe(<minecraft:golden_apple>, <minecraft:apple>, "minecraft:regeneration", 2); 
+//mods.inspirations.Cauldron.addPotionRecipe(IItemStack output, IIngredient input, String potion, @Optional int levels, @Optional boolean boiling);
+mods.inspirations.Cauldron.addPotionRecipe(<minecraft:golden_apple>, <minecraft:apple>, "minecraft:regeneration", 2); 
 ```
 
-### ポーションレシピの除去
+### Potion recipe removal
 
-大釜から既存のポーションのレシピを削除します。 デフォルトでは、ポーションのレシピは存在しませんが、アドオンはレシピを追加する可能性があります。
+Removes an existing potion recipe from the cauldron. By default no potion recipes exist but addons may add a recipe.
 
 ```zenscript
-//mods.auldron.removePotionRecipe(IIngredient出力, @Optional IIngredient入力, @Optional String potion);
+//mods.inspirations.Cauldron.removePotionRecipe(IIngredient output, @Optional IIngredient input, @Optional String potion);
 ```
 
-## 染料
+## Dyes
 
-インスピレーションは、染料を使ってアイテムを変えるための1種類の染料レシピのみを備えています。 染料レシピは、 `EnumDyeColor` の値を表すストリング染料の色を取ります。 すべての値のリストを取得するには、 `/ct インスピレーションが` に表示されます。
+Inspirations features only one type of dye recipe to transform an item using a dye. Dye recipes take on a string dye color which represents a value from `EnumDyeColor`. To get a list of all values, the command `/ct inspirations dyes` is provided.
 
-### 追加中
+### Adding
 
-染められた水の単一レベルを消費する染料を使用して、インプットを出力に変換するレシピを追加します。
+Adds a recipe converting the input to the output using the dye consuming a single level of dyed water.
 
 ```zenscript
-//mods.auldron.addDyeRecipe(IItemStack 出力, IIngredient input, String dye);
-mods.auldron.addDyeRecipe(<minecraft:diamond>, <minecraft:emerald>, "blue");
-mods.auldron.addDyeRecipe(<minecraft:emerald>, <minecraft:diamond>, "lime");
+//mods.inspirations.Cauldron.addDyeRecipe(IItemStack output, IIngredient input, String dye);
+mods.inspirations.Cauldron.addDyeRecipe(<minecraft:diamond>, <minecraft:emerald>, "blue");
+mods.inspirations.Cauldron.addDyeRecipe(<minecraft:emerald>, <minecraft:diamond>, "lime");
 ```
 
-### 削除
+### Removal
 
-コルドロンから既存の染料のレシピを削除します。
+Removes an existing dye recipe from the cauldron.
 
 ```zenscript
-//mods.auldron.removeDyeRecipe(IIngredient output, @Optional IIngredient input, @Optional String dye)
-mods.auldron.removeDyeRecipe(<*>, <*>, "blue");
-mods.auldron.removeDyeRecipe(<inspirations:carpeted_trapdoor_white>);
+//mods.inspirations.Cauldron.removeDyeRecipe(IIngredient output, @Optional IIngredient input, @Optional String dye)
+mods.inspirations.Cauldron.removeDyeRecipe(<*>, <*>, "blue");
+mods.inspirations.Cauldron.removeDyeRecipe(<inspirations:carpeted_trapdoor_white>);
 ```

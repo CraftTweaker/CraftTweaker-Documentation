@@ -21,14 +21,14 @@ public class Expansion {
 }
 ```
 
-誰かがこれを呼び出すと、以下のようになります。
+If someone now would call this, they would get an oreDictEntry:
 
 ```zenscript
 val oreDict = <minecraft:iron_ingot> as IOreDictEntry;
 ```
 
-## どのようなメソッドに注釈を付けることができますか|| 追加情報
+## What methods can be annotated || Additional Info
 
-- すべての非静的メソッドに注釈を付けることができます (ZenExpansionでは静的なメソッドのみで構成されている場合を除きます)
-- 注釈付きメソッドは、 [ZenExpansion](/Dev_Area/ZenAnnotations/Annotation_ZenExpansion/)内にある場合は、 [ZenClass](/Dev_Area/ZenAnnotations/Annotation_ZenClass/) 内にある場合は、1 つのパラメータを必要とします。
-- [ZenClasses](/Dev_Area/ZenAnnotations/Annotation_ZenClass/)では、ZenCasters に依存しないでください。 [ZenExpansions](/Dev_Area/ZenAnnotations/Annotation_ZenExpansion/) でのみ確実に動作します。
+- You can annotate all nonstatic methods (unless in a ZenExpansion, as they only consist of statics)
+- Annotated Methods need one parameter when in a [ZenExpansion](/Dev_Area/ZenAnnotations/Annotation_ZenExpansion/), none if they are in a [ZenClass](/Dev_Area/ZenAnnotations/Annotation_ZenClass/).
+- Don't rely on ZenCasters in [ZenClasses](/Dev_Area/ZenAnnotations/Annotation_ZenClass/), they only work reliably in [ZenExpansions](/Dev_Area/ZenAnnotations/Annotation_ZenExpansion/).

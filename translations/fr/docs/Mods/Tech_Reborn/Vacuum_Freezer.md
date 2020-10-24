@@ -1,14 +1,14 @@
-# Congélateur d'aspirateur
+# Vacuum Freezer
 
-## Importation du paquet en cours
-`Congélateur d'aspirateur`
+## Importing the Package
+`mods.techreborn.vacuumFreezer`
 
-## Ajout de recettes
+## Adding Recipes
 ```zenscript
-mods.techreborn.vacuumFreezer.addRecipe(sortie IItemStack, entrée IIngredient, temps int euTick);
+mods.techreborn.vacuumFreezer.addRecipe(IItemStack output, IIngredient input, int ticktime, int euTick);
 ```
 
-## Suppression des recettes
+## Removing Recipes
 ```zenscript
 mods.techreborn.vacuumFreezer.removeInputRecipe(IIngredient ingredient);
 mods.techreborn.vacuumFreezer.removeRecipe(IItemStack output);

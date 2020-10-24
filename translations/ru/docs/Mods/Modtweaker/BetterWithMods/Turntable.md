@@ -1,77 +1,77 @@
-# Сверкаемый
+# Turntable
 
-## Базовый рецепт
+## Basic Recipe
 
-* Добавляет Поворачиваемый Рецепт - входы *ДОЛЖНЫ* имеют связанный с ним блок. Состояние продукта - это блок, который будет помещен после завершения рецепта
+* Adds Turntable Recipe - inputs *MUST* have a block associated with them. The product state is the block that will be placed after the recipe finishes
 
 ```zenscript
-mods.betterwithmods.Turntable.add(IIngredient input, IItemStack productState, IItemStack[]);
+mods.betterwithmods.Turntable.add(IIngredient input, IItemStack productState, IItemStack[] output);
 
 mods.betterwithmods.Turntable.add(IIngredient input, IItemStack[] output);
 
-//Примеры
-модов. etterwithmods.Turntable.add(<minecraft:grass>, <minecraft:dirt>, [<minecraft:seed>]);
+//Examples
+mods.betterwithmods.Turntable.add(<minecraft:grass>, <minecraft:dirt>, [<minecraft:seed>]);
 
 mods.betterwithmods.Turntable.add(<minecraft:gravel>, [<minecraft:flint>]);
 ```
 
-## Удаление по вводу
+## Removal by input
 
-* Удалить рецепт на основе вводимого ингредиента
-
-```zenscript
-mods.betterwithmods.Turntable.remove(Ввод Ingredient);
-```
-
-## Удаление по выходу
-
-* Удалить рецепт на основе вывода
+* Remove a recipe based on the input ingredient
 
 ```zenscript
-mods.betterwithmods.Turntable.remove(IItemStack[]);
+mods.betterwithmods.Turntable.remove(IIngredient input);
 ```
 
-## Удалить все
+## Removal by output
 
-* Удалить все рецепты
+* Remove a recipe based on the output
+
+```zenscript
+mods.betterwithmods.Turntable.remove(IItemStack[] outputs);
+```
+
+## Remove all
+
+* Remove all recipes
 
 ```zenscript
 mods.betterwithmods.Turntable.removeAll();
 ```
 
-## Удалить по товару
+## Remove by product
 
-* Удалить рецепт продукта 
+* Remove a recipe by the productState 
 
 ```zenscript
-mods.betterwithmods.Turntable.removeRecipe(продукт IItemStack);
+mods.betterwithmods.Turntable.removeRecipe(IItemStack productState);
 ```
 
-## Строитель
+## Builder
 
-В музее можно использовать конструктор рецептов, который позволяет более точно контролировать рецепты. Все предыдущие методы являются просто короткими отрезками для использования конструктора.
+The Turntable has a recipe builder that allows more precise control over the recipes. All previous methods are simply short cuts to using the builder.
 
-* Создавать новый поворачиваемый конструктор. `mods.betterwithmods.Turntable.builder()`
+* To create a new Turntable builder. `mods.betterwithmods.Turntable.builder()`
 
-* Оборотные методы
+* Turntable methods
      
-     * Настраивает входы и выходные данные рецепта  
+     * Sets up the inputs and outputs of the recipe  
               zenscript
-              buildRecipe(IIngredient[] входов, IItemStack[] вывод)
+              buildRecipe(IIngredient[] inputs, IItemStack[] outputs)
      
-     * Устанавливает требуемые вращения для завершения рецепта. По умолчанию 8  
+     * Sets the rotations required for the recipe to finish. This defaults to 8.  
               zenscript
-              setRotations(int оборот)
+              setRotations(int rotations)
      
-     * Установите блок, который устанавливается после завершения рецепта.  
+     * Set the block that is placed when the recipe is finished.  
               zenscript
               setProductState(IItemStack productState)
      
-     * Завершить рецепт и добавить его в игру  
+     * Finalize the recipe and add it to the game  
               zenscript
               build()
 
-### Пример использования конструктора
+### Example builder usage
 
 ```zenscript
 mods.betterwithmods.Turntable.builder()

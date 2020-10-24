@@ -2,24 +2,24 @@
 
 ## コマンド
 
-以下のコマンドは、利用可能な商人の職業についての情報を取得するために追加されます & carrers:
+The following commands are added to retrieve information about the availible merchant professions & carrers:
 
-- `/ct merchant professions` - 有効な商人の職業のログを出力します。
-- `/ct merchant careers [profession]` - すべてまたは指定された職業に対して有効なキャリアのログを出力します。
+- `/ct merchant professions` - outputs a log of valid merchant professions
+- `/ct merchant careers [profession]` - outputs a log of valid careers for all or the specified profession
 
-## パッケージ
+## Package
 
 `mods.rockytweaks.Merchant`
 
 ## 加算
 
-取引は特定の商人の職業 & carrerに追加できます。
+Trades can be added to a specific merchant profession & carrer.
 
 ```zenscript
-// addTrade(String profession, String career, IItemstack input1, @Optional IItemstack input2, int level);
+// addTrade(String profession, String career, IItemstack input1, @Optional IItemstack input2, IItemstack output, int level);
 mods.rockytweaks.Merchant.addTrade("minecraft:nitwit", "nitwit", <minecraft:emerald>, <minecraft:diamond>, <minecraft:cobblestone>, 1);
 ```
 
-## 削除
+## Removal
 
-マーチャント貿易削除は現在不可能です。
+Merchant trade removal is currently not possible.

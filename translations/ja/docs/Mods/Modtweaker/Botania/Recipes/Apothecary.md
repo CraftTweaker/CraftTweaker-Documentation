@@ -1,28 +1,28 @@
-# 花弁Apothecary
+# Petal Apothecary
 
-Apothecaryパッケージは、ボタニア花弁Apothecaryへの/からのレシピの追加または削除に使用されます。
+The Apothecary package is used for adding or removing recipes to/from the Botania Petal Apothecary.
 
-## 発信中
+## Calling
 
-`mods.botania.Apothecary` を使用してApothecaryパッケージを呼び出すことができます。
+You can call the Apothecary package using `mods.botania.Apothecary`
 
-## レシピの追加
+## Recipe addition
 
-返された [IItemStack](/Vanilla/Items/IItemStack/) を出力パラメータとして使用するか、またはボタニアフラワーの名前を文字列として追加することができます。 文字列名は植物花にしか使えない  
-一つ覚えておいてください:  
-薬剤師は **花びらのみ受け入れるようにハードコードされています**. どんな材料でもレシピを加えられるのに使うべきだな
+You can either add recipes using the returned [IItemStack](/Vanilla/Items/IItemStack/) as output parameter, or the name of the botania flower as string. the string name only works for botania flowers.  
+Remember one thing though:  
+The Apothecary is **hardcoded to only accept petals**, so while you can add recipes with any ingredients, you should only use items that you can throw in the apothecary.
 
 ```zenscript
 //mods.botania.Apothecary.addRecipe(IItemStack output, IIngredient[] input);
 mods.botania.Apothecary.addRecipe(<minecraft:melon>, [<ore:petalLime>, <ore:petalLime>, <ore:petalLime>]);
 
-//mods. otania.Apothecary.addRecipe(String output, IIngredient[] input);
+//mods.botania.Apothecary.addRecipe(String output, IIngredient[] input);
 mods.botania.Apothecary.addRecipe("daybloom", [<ore:petalLime>, <ore:petalLime>, <ore:petalLime>, <ore:petalRed>]);
 ```
 
-## レシピの削除
+## Recipe removal
 
-出力パラメータとして返された [IItemStack](/Vanilla/Items/IItemStack/) を使用するか、またはボタニアフラワーの名前を文字列として使用してレシピを削除できます。 文字列名は植物花にしか使えない
+You can either remove recipes using the returned [IItemStack](/Vanilla/Items/IItemStack/) as output parameter, or the name of the botania flower as string. the string name only works for botania flowers.
 
 ```zenscript
 //mods.botania.Apothecary.removeRecipe(IItemStack output);

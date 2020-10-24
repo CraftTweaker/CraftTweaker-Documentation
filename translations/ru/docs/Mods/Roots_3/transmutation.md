@@ -1,14 +1,14 @@
 ### Класс
 
 ```zenscript
-Импортировать mods.roots.Transmutation;
+import mods.roots.Transmutation;
 ```
 
-#### Методы
+#### Methods
 
 ```zenscript
 void removeRecipe(
-  string name // название рецепта, который будет удален
+  string name // the name of the recipe being removed
 );
 ```
 
@@ -16,9 +16,9 @@ void removeRecipe(
 
 ```zenscript
 void addBlockToBlockRecipe(
-  строковое имя, // имя добавляемого рецепта (должно быть уникальным)
-  IBlockState state1, // исходное состояние блока, определенного как блокирующее состояние
-  IBlockState state2 // состояние, в котором исходное состояние должно быть преобразовано в
+  string name,        // the name of the recipe being added (must be unique)
+  IBlockState state1, // the initial state of the block as defined as a blockstate
+  IBlockState state2  // the state that the initial state should be converted into
 );
 ```
 
@@ -26,9 +26,9 @@ void addBlockToBlockRecipe(
 
 ```zenscript
 void addBlockToItemRecipe(
-  имя строки, // имя добавляемого рецепта (должен быть уникальным)
-  состояние IBlockState // исходное состояние, которое ищется при преобразовании (в виде состояния блока)
-  IItemStack стека // стек элементов, заменяющий состояние блока
+  string name,       // the name of the recipe being added (must be unique)
+  IBlockState state, // the initial state that is looked for when converting (as a block state)
+  IItemStack stack   // the item stack that replaces the block state
 );
 ```
 
@@ -37,26 +37,26 @@ void addBlockToItemRecipe(
 ### Примеры
 
 ```zenscript
-импортируем mods.roots.Transmutation;
+import mods.roots.Transmutation;
 
-// Удаляем рецепт по умолчанию тыквен-овер-арк-дыня
+// Removes the default pumpkin-over-water-to-melon recipe
 Transmutation.removeRecipe("pumpkin_melon");
 
-// Добавляет рецепт, преобразующий конечный камень в блоки костной ткани
-Трансмутации. ddBlockToBlockRecipe("end_stone_to_bone", <blockstate:minecraft:end_stone>, <blockstate:minecraft:bone_block:axis=y>);
+// Adds a recipe which converts end stone into bone blocks
+Transmutation.addBlockToBlockRecipe("end_stone_to_bone", <blockstate:minecraft:end_stone>, <blockstate:minecraft:bone_block:axis=y>);
 
-// Добавляет рецепт, который преобразует высокие травы по умолчанию в снежки
-Трансмутацию. ddBlockToItemRecipe("tallgrass_to_snowball", <blockstate:minecraft:tallgrass:type=tall_grass>, <minecraft:snowball>*3);
+// Adds a recipe which converts default tallgrass into snowballs
+Transmutation.addBlockToItemRecipe("tallgrass_to_snowball", <blockstate:minecraft:tallgrass:type=tall_grass>, <minecraft:snowball>*3);
 ```
 
-### Примечания
+### Notes
 
-**Примечание: функции сложных состояний в настоящее время не доступны через CraftTweaker (например, проверка окружения).**
+**Note: complex state functions are not currently acessible through CraftTweaker (i.e., checking surroundings).**
 
-Можно найти информацию о блоке и его вариантах и состояниях с помощью функции отладки F3 и таргетинга по нему. В правой части экрана будет отображено имя реестра блока, а затем все указанные ниже состояния.
+It is possible to find the information about the block and its variants and states by using the F3 debug functionality and targeting it. On the right side of the screen it will display the block's registry name, and then any states below that.
 
-Например, `bone_block` имеет следующее:
+For example, `bone_block` has the following:
 
-    оси: у
+    axis: y
 
-Это может быть преобразовано в блочное состояние, заменив `:` на `=` как: `axis=y`, означает, что конечным блокстати (для лобового блока вверх) будет `<blockstate:minecraft:bone_block:axis=y>`.
+This can be converted into a blockstate by replacing the `:` with `=` like so: `axis=y`, meaning that the final blockstate (for an upwards facing bone block) would be `<blockstate:minecraft:bone_block:axis=y>`.

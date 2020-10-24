@@ -1,30 +1,30 @@
-# <unk>
+# Distillation
 
 ## addRecipe
 
-蒸留"addRecipe"メソッドは以下から構成されています。
+The Distillation "addRecipe" method consists of:
 
-| タイプ     | データタイプ                                            |
-| ------- | ------------------------------------------------- |
-| 出力      | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) 配列[] |
-| 出力      | [ItemStack](/Vanilla/Items/IItemStack/) 配列 []     |
-| Input   | [Fluidstack](/Vanilla/Liquids/ILiquidStack/)      |
-| Flux/t  | 整数                                                |
-| 開始までの時間 | 整数                                                |
-| チャンス    | Float Array []                                    |
+| Type          | Data Type                                            |
+| ------------- | ---------------------------------------------------- |
+| Output        | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) Array[] |
+| Output        | [ItemStack](/Vanilla/Items/IItemStack/) Array[]      |
+| Input         | [Fluidstack](/Vanilla/Liquids/ILiquidStack/)         |
+| Flux/t        | Integer                                              |
+| Time in Ticks | Integer                                              |
+| Chance        | Float Array []                                       |
 
-### 前面:
+### Preface:
 
-各 ItemStack エントリは、対応する "Chance" 配列エントリにリンクされます。
+Each ItemStack Entry is linked to the corresponding "Chance" array entry.
 
-例
+Example:
 
 ```zenscript
 [<minecraft:diamond>, <minecraft:leather> * 2]
 [1, 1]
 ```
 
-確率"浮動小数点"の値は0から1の間でなければなりません。 Since it converts it from a float value to a percentage value between 0% and 100% I.E:
+The Chance "Float" value should be between 0 and 1. Since it converts it from a float value to a percentage value between 0% and 100% I.E:
 
 ```zenscript
 0.5     = 50%
@@ -32,9 +32,9 @@
 1       = 100%
 ```
 
-1 より高いフロートを送信できますが、値が 100% 以上になることはありません。
+While you can submit a float higher than 1, it'll never yield a value over 100%
 
-### コード例:
+### Code Example:
 
 ```zenscript
 //mods.immersivepetroleum.Distillation.addRecipe(ILiquidStack[] fluidOutputs, IItemStack[] itemOutputs, ILiquidStack fluidInput, int energy, int time, float[] chance)

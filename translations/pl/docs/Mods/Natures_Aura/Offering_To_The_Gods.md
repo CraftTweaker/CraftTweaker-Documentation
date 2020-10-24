@@ -1,25 +1,25 @@
-# Oferowanie Bogów
+# Offering to the Gods
 
-## Pakiet
+## Package
 ```zenscript
-mods.naturesaura.Oferta
+mods.naturesaura.Offering
 ```
 
-## Metody
-- **Nazwa ciągu znaków**
-- **[Składnik](/Vanilla/Variable_Types/IIngredient) wejścia** Oferta
-- **int ininputAmount** Ilość elementów wymaganych do wprowadzenia danych. Zauważ, że oznacza to, że kwota zmiennej wejściowej jest ignorowana
-- **[Składnik](/Vanilla/Variable_Types/IIngredient) element startowy** element wymagany do rozpoczęcia oferty
-- **[IItemStack](/Vanilla/Items/IItemStack) wyjście** Prezent Oferty
+## Methods
+- **String Name**
+- **[IIngredient](/Vanilla/Variable_Types/IIngredient) input** The offering
+- **int ininputAmount** The amount of items required for the input. Note that this means that the amount of the input variable is ignored
+- **[IIngredient](/Vanilla/Variable_Types/IIngredient) startItem** the item required to start the offering
+- **[IItemStack](/Vanilla/Items/IItemStack) output** The gift of the Offering
 
-## Dodanie
+## Addition
 
 ```zenscript
-mods.naturesaura.Oferta.addRecipe(Nazwa ciągu, Wejście IIngredient, int inputAmount, IIngredient startItem, wyjście IItemStack)
+mods.naturesaura.Offering.addRecipe(String name, IIngredient input, int inputAmount, IIngredient startItem, IItemStack output)
 ```
 
-## Usuwanie
+## Removal
 
 ```zenscript
-mods.naturesaura.Oferta.removeRecipe(wyjście IItemStack)
+mods.naturesaura.Offering.removeRecipe(IItemStack output)
 ```

@@ -1,17 +1,17 @@
-# Пушка
+# Cannon
 
-### Импорт
+### Importing
 
 ```zenscript
 import mods.appliedenergistics2.Cannon;
 ```
 
-### Добавление
+### Adding
 
-Добавляет типы боеприпасов для пушки материи. Вес относится к (засушливым) атомарному весу материала.
+Adds ammo types for the matter cannon. Weight refers to (roughly) the atomic weight of the material.
 
 ```zenscript
-Cannon.registerAmmo(умение IItemStack, двойной вес);
+Cannon.registerAmmo(IItemStack ammo, double weight);
 
 Cannon.registerAmmo(<minecraft:bone>, 40.07);
 ```

@@ -1,5 +1,5 @@
-# Inspiracje
+# Inspirations
 
-Zestaw Inspiracji jest używany wyłącznie do zmiany inspiracji rozszerzonego kocioła.
+The Inspirations Package is used solely for altering the Inspirations extended Cauldron.
 
-Wszystkie przepisy są dodawane za pomocą uchwytu [kocioł](/Mods/Modtweaker/Inspirations/Handlers/Cauldron).
+All recipes are added using the [cauldron](/Mods/Modtweaker/Inspirations/Handlers/Cauldron) handler.

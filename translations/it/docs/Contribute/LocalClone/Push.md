@@ -1,31 +1,31 @@
 # Push
 
-## Prerequisiti
+## Prerequisites
 
-Devi sapere come [creare Commits](/Contribute/LocalClone/CreateCommit/) e devi aver creato almeno uno di essi.
+You need to know how to [create Commits](/Contribute/LocalClone/CreateCommit/) and you need to have created at least one of them.
 
-## Cosa faremo
+## What will we do
 
-Useremo i commit che abbiamo creato (ad esempio l'esempio in [create Commits](/Contribute/LocalClone/CreateCommit/)) e spingeremo le modifiche a GitHub.
+We will use the commit(s) we have created (e.g. the example in [create Commits](/Contribute/LocalClone/CreateCommit/)) and push the changes to GitHub.
 
-## Controlla lo stato corrente
+## Check the current status
 
-Se esegui `stato git` puoi vedere quanti commit il tuo clone locale è avanti/dietro il tuo fork.
+If you run `git status` you can see how many commits your local clone is ahead/behind your fork.
 
-In questo caso siamo in attesa di un impegno:  
-![chiamata di stato git](/Contribute/LocalClone/assets/Example1_Bash_GitStatus3.png)
+In this case we are ahead by 1 commit:  
+![git status call](/Contribute/LocalClone/assets/Example1_Bash_GitStatus3.png)
 
 ## Git push
 
-Ora eseguiamo `git push` per inviare le nostre modifiche al ramo remoto.  
-Ti potrebbe essere richiesto il tuo nome utente e password GH.  
-**Attenzione:** Quando si utilizza l'autorizzazione a due fattori (2FA) è necessario creare e utilizzare un *Token di accesso personale* invece della password GH!
+Now we run `git push` to push our changes to the remote branch.  
+You might be asked for your GH username and password.  
+**Careful:** When you use TwoFactor Authorization (2FA) you need to create and use a *Personal Access Token* instead of your GH password!
 
-![Dialogo credenziali](/Contribute/LocalClone/assets/Example1_Bash_GitPush_Credentials.png)
+![Credentials dialog](/Contribute/LocalClone/assets/Example1_Bash_GitPush_Credentials.png)
 
-Per verificare che il commit sia effettivamente sul fork, è possibile controllare la lista di commit che dovrebbe ora avere il commit in lì: ![Lista di commit con commit](/Contribute/LocalClone/assets/Example1_CommitList.png)
+To verify that the commit is actually on the fork, you can check the commit list that should now have the commit in there: ![Commit List with commit](/Contribute/LocalClone/assets/Example1_CommitList.png)
 
-## Come continuare
+## How to continue
 
-Ora che hai spinto le tue modifiche al fork, puoi usare GH per [creare una richiesta Pull](/Contribute/PullRequest/).  
-Questa è la stessa procedura che se stavi usando l'editor online per modificare i file.
+Now that you have pushed your changes to your fork, you can use GH to [create a Pull request](/Contribute/PullRequest/).  
+This is the same procedure as if you were using the online editor to edit files.

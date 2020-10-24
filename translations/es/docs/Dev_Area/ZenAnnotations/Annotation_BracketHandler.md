@@ -1,40 +1,40 @@
 # BracketHandler
 
-Un manejador de corchetes se utiliza para resolver [ZenTokens](/Dev_Area/ZenTokens/) dentro de `<tokens>`.  
-para hacer eso ZS añadirá todos los tokens dentro de los corchetes a una lista y pasará por todos los manejadores de brazos registrados para encontrar uno que no devuelva `null`.  
-La clase anotada simplemente necesita implementar [IBracketHandler](https://github.com/jaredlll08/CraftTweaker/blob/1.12/CraftTweaker2-API/src/main/java/crafttweaker/zenscript/IBracketHandler.java).
+A bracket handler is used to resolve [ZenTokens](/Dev_Area/ZenTokens/) inside `<tokens>`.  
+In order to do that, ZS will add all tokens inside the brackets to a list and go through all registered bracket handlers to find one that does not return `null`.  
+The annotated class simply need to implement [IBracketHandler](https://github.com/jaredlll08/CraftTweaker/blob/1.12/CraftTweaker2-API/src/main/java/crafttweaker/zenscript/IBracketHandler.java).
 
-## Ejemplo:
+## Example:
 
-[Manejador de brazaletes de prueba de CraftTweaker](https://github.com/jaredlll08/CraftTweaker/blob/1.12/CraftTweaker2-MC1120-Tests/src/main/java/crafttweaker/tests/wiki/BracketWiki.java)
+[CraftTweaker Test Project Bracket Handler](https://github.com/jaredlll08/CraftTweaker/blob/1.12/CraftTweaker2-MC1120-Tests/src/main/java/crafttweaker/tests/wiki/BracketWiki.java)
 
 ```java
 @BracketHandler(priority = 34)
 @ZenRegister
-public class BracketWiki implementa IBracketHandler{
+public class BracketWiki implements IBracketHandler{
 
     @Override
-    public IZenSymbol resolve(IEnvironmentGlobal environment, Lista<Token> tokens) {
-        if (tokens. ize() < 3)) return null; 
-        if (!tokens.get(0).getValue(). qualsIgnoreCase("devBracket")) return null;
-        if (!tokens.get(1).getValue(). quals(":")) return null;
+    public IZenSymbol resolve(IEnvironmentGlobal environment, List<Token> tokens) {
+        if ((tokens.size() < 3)) return null; 
+        if (!tokens.get(0).getValue().equalsIgnoreCase("devBracket")) return null;
+        if (!tokens.get(1).getValue().equals(":")) return null;
 
         return new devSymbol(tokens);
     }
 
 
-    clase privada devSymbol implementa IZenSymbol {
+    private class devSymbol implements IZenSymbol {
 
-        valor final privado de cadena;
+        private final String value;
         public devSymbol(List<Token> tokens) {
             StringBuilder sB = new StringBuilder();
-            tokens. tream(). ap(Token::getValue).forEach(sB::append);
-            this.value = sB.toString(). eplaceAll(":", " ");
+            tokens.stream().map(Token::getValue).forEach(sB::append);
+            this.value = sB.toString().replaceAll(":", " ");
         }
 
         @Override
         public IPartialExpression instance(ZenPosition position) {
-            return new ExpressionString(position, "DevSymbol: ". oncat(valor));
+            return new ExpressionString(position, "DevSymbol: ".concat(value));
         }
 
     }
@@ -42,9 +42,9 @@ public class BracketWiki implementa IBracketHandler{
 }
 ```
 
-## Qué clases se pueden anotar || Información adicional
+## What classes can be annotated || Additional Info
 
-- Puede anotar todas las clases de Java que son una instancia de [IBracketHandler](https://github.com/jaredlll08/CraftTweaker/blob/1.12/CraftTweaker2-API/src/main/java/crafttweaker/zenscript/IBracketHandler.java).
-- Puede dar a la anotación un valor de prioridad (por ejemplo, `prioridad = 100`). Cuanto más alto el prio más temprano se comprueba el manejador de brazos específico: CrT Bracket Handlers normalmente tienen una prioridad de 100.
-- Después de declarar una clase un ZenBracketHandler, todavía necesita registrarlo. Se recomienda que utilice [`@ZenRegister`](/Dev_Area/ZenAnnotations/Annotation_ZenRegister/) para eso.
-- Si el bracket Handler no puede resolver los corchetes o no está pensado para resolver el corchete, debe devolver `null`
+- You can annotate all Java Classes that are an instance of [IBracketHandler](https://github.com/jaredlll08/CraftTweaker/blob/1.12/CraftTweaker2-API/src/main/java/crafttweaker/zenscript/IBracketHandler.java).
+- You can give the annotation a priority value (e.g. `priority = 100`). The higher the prio the earlier that specific bracket handler is checked: CrT Bracket Handlers normally have a priority of 100.
+- After declaring a class a ZenBracketHandler, you still need to register it. It is recommended that you use [`@ZenRegister`](/Dev_Area/ZenAnnotations/Annotation_ZenRegister/) for that.
+- If your bracket Handler cannot resolve the brackets or is not meant to resolve the bracket, you should return `null`

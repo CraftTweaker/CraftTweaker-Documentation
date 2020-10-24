@@ -1,31 +1,31 @@
 # IEntityAttributeInstance
 
-## Importazione del pacchetto
+## Importing the package
 
-Potrebbe essere necessario importare il pacchetto se si incontrano problemi (come lanciare un [Array](/AdvancedFunctions/Arrays_and_Loops/)), quindi meglio essere sicuri che spiacenti e aggiungere l'importazione.  
+It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
 `import crafttweaker.entity.AttributeInstance;`
 
 ## ZenGetters
 
-| ZenGetter      | GetterMethod        | Tipo Di Reso                                                       |
+| ZenGetter      | GetterMethod        | Return Type                                                        |
 | -------------- | ------------------- | ------------------------------------------------------------------ |
-| attributo      | getAttribute()      | [IEntityAttribute](/Vanilla/Entities/Attributes/IEntityAttribute/) |
-| baseValue      | getBaseValue()      | doppia                                                             |
-| modificatori   | getModifiers()      | `Elenco<IEntityAttrubuteModifier>`                           |
-| attributeValue | getAttributeValue() | doppia                                                             |
+| attribute      | getAttribute()      | [IEntityAttribute](/Vanilla/Entities/Attributes/IEntityAttribute/) |
+| baseValue      | getBaseValue()      | double                                                             |
+| modifiers      | getModifiers()      | `List<IEntityAttrubuteModifier>`                             |
+| attributeValue | getAttributeValue() | double                                                             |
 
 ## ZenSetters
 
-| ZenSetter | SetterMethod        | Tipo Parametro |
+| ZenSetter | SetterMethod        | Parameter Type |
 | --------- | ------------------- | -------------- |
-| baseValue | setBaseValue(value) | doppia         |
+| baseValue | setBaseValue(value) | double         |
 
-## Metodi Modificatori
+## Modifier Methods
 
 - `List<IEntityAttrubuteModifier>` getModifiersByOperation(int operation)
 - boolean hasModifier([IEntityAttributeModifier](/Vanilla/Entities/Attributes/IEntityAttributeModifier/) modifier)
 - [IEntityAttributeModifier](/Vanilla/Entities/Attributes/IEntityAttributeModifier/) getModifier(String uuid);
-- void applicyModifier([modificatore IEntityAttributeModifier](/Vanilla/Entities/Attributes/IEntityAttributeModifier/));
+- void applyModifier([IEntityAttributeModifier](/Vanilla/Entities/Attributes/IEntityAttributeModifier/) modifier);
 - void removeModifier([IEntityAttributeModifier](/Vanilla/Entities/Attributes/IEntityAttributeModifier/) modifier);
 - void removeModifier(String uuid);
 - void removeAllModifiers();

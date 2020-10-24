@@ -1,15 +1,15 @@
-### Classe
+### Class
 
 ```zenscript
 import mods.roots.Mortar;
 ```
 
-#### Metodi
+#### Methods
 
 ```zenscript
 void addRecipe(
-  IItemStack output, // l'output dell'oggetto di questa ricetta
-  IIngrediente[] ingressi // una serie di ingredienti che sono 5 lunghi o 1 lunghi
+  IItemStack output,   // the item output of this recipe
+  IIngredient[] inputs // an array of ingredients that is either 5 long or 1 long
 );
 ```
 
@@ -17,8 +17,8 @@ void addRecipe(
 
 ```zenscript
 void changeSpell(
-  string spellName, // il nome dell' incantesimo come nel registro degli incantesimi
-  IIngredient[] input // una serie di 5 elementi che sono i nuovi ingredienti per la ricetta
+  string spellName,    // the name of the spell as in the spell registry
+  IIngredient[] inputs // an array of 5 items that are the new ingredients for the recipe
 );
 ```
 
@@ -26,31 +26,31 @@ void changeSpell(
 
 ```zenscript
 void removeRecipe(
-  IItemStack output // l'elemento stack prodotto dalla ricetta
+  IItemStack output // the item stack produced by the recipe
 );
 ```
 
 * * *
 
-### Esempi
+### Examples
 
 ```zenscript
-import mods.roots. ortar;
+import mods.roots.Mortar;
 
-// Aggiunge una ricetta che rende la polvere da sparo di selce
-// Poiché la ricetta ha un solo input, genererà automaticamente
-// 5 ricette, aumentando il numero di ingressi e
-// la quantità dell'uscita.
+// Adds a recipe that makes gunpowder out of flint
+// As the recipe only has one input, it will automatically
+// generate 5 recipes, increasing the number of inputs and
+// the quantity of the output respectively.
 Mortar.addRecipe(<minecraft:gunpowder>, [<minecraft:flint>]);
 
-// Questa ricetta utilizza cinque ingredienti per creare un letto.
-Mortar. ddRecipe(<minecraft:bed>, [<minecraft:wool>, <minecraft:wool>, <minecraft:planks>, <minecraft:planks>, <minecraft:planks>]);
+// This recipe uses five ingredients to create one bed.
+Mortar.addRecipe(<minecraft:bed>, [<minecraft:wool>, <minecraft:wool>, <minecraft:planks>, <minecraft:planks>, <minecraft:planks>]);
 
-// Questo rimuoverà tutte le ricette che hanno la farina di Radice come output
-// incluse eventuali ricette multi-ingrediente
-Mortar. emoveRecipe(<roots:flour>);
+// This will remove all recipes that have Root's flour as an output
+// including any multi-ingredient recipes
+Mortar.removeRecipe(<roots:flour>);
 
-// Questo cambierà la ricetta per l'incantesimo di supplica del boschetto a
-// richiede semplicemente cinque pezzi di zucchero.
+// This will change the recipe for the grove supplication spell to
+// simply require five pieces of sugar.
 Mortar.changeSpell("spell_supplication", [<minecraft:sugar>, <minecraft:sugar>, <minecraft:sugar>, <minecraft:sugar>, <minecraft:sugar>]);
 ```

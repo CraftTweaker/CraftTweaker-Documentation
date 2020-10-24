@@ -4,20 +4,20 @@ The IBlockDropHandler function is used to allow for advanced block drop handling
 
 ## Diese Klasse importieren
 
-Möchten Sie die Klasse importieren? Hier geht's:
+You want to import the class? Here you go:
 
 ```zenscript
-importieren mods.contenttweaker.DropHandler;
+import mods.contenttweaker.DropHandler;
 ```
 
-## Funktionsstruktur
+## Function structure
 
-Die Funktion ist eine ungültige Funktion, die die folgenden Parameter nimmt:
+The function is a void function that takes the following parameters:
 
 - [ICTItemList](/Mods/ContentTweaker/Vanilla/Types/Drops/ICTItemList/) drops.
-- [IBlockAccess](/Vanilla/World/IBlockAccess/) Welt -> die Welt, in der wir uns befinden, möglich eine [IWorld](/Mods/ContentTweaker/Vanilla/Types/World/IWorld/), du möchtest vielleicht Instanzen und Downcast
-- [IBlockPos](/Vanilla/World/IBlockPos/) Position -> Position des Blocks
-- [ICTBlockState](/Mods/ContentTweaker/Vanilla/Types/Block/ICTBlockState/) Status -> Blockstatus des Blocks
+- [IBlockAccess](/Vanilla/World/IBlockAccess/) world -> the world we are in, possible an [IWorld](/Mods/ContentTweaker/Vanilla/Types/World/IWorld/), you might want to instanceof and downcast
+- [IBlockPos](/Vanilla/World/IBlockPos/) position -> the position of the block
+- [ICTBlockState](/Mods/ContentTweaker/Vanilla/Types/Block/ICTBlockState/) state -> the blockstate of the block
 - int fortune -> the fortune level of the tool used
 
 As this method does not return anything, all drops need to be added to the `drops` list using the exposed methods.  
@@ -26,7 +26,7 @@ Read about them [here](/Mods/ContentTweaker/Vanilla/Types/Drops/ICTItemList/).
 ## Beispiel
 
 ```zenscript
-block.setDropHandler(function(drops, world, position, position, state, fortune) {
+block.setDropHandler(function(drops, world, position, state, fortune) {
 
     drops.add(<item:minecraft:bedrock>);
     drops.add(<item:minecraft:carrot> % 50);

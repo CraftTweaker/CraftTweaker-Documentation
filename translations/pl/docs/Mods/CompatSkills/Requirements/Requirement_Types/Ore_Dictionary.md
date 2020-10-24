@@ -1,11 +1,11 @@
-# Słownik rudy
+# Ore Dictionary
 
-Wymagania słownika rudy są dość nowe i wymagają, aby gracz trzymał albo w głównej ręce, albo poza ręką przedmiot o dopasowanej wartości ore-słownika.
+Ore Dictionary Requirements are fairly new and requires the player to be holding either in their main-hand or in their off-hand an item with the matching ore-dictionary value.
 
-    Przykład:
+    Example:
     ore|string
     
-    Working Przykład:
+    Working Example:
     ore|nuggetIron
     ore|ingotIron
     ore|oreIron

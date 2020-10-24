@@ -2,30 +2,30 @@
 
 ## 导入相关包
 
-如果您遇到任何问题，可能需要导入软件包(例如铸造一个 [数组](/AdvancedFunctions/Arrays_and_Loops/)), 这样比抱歉更安全并添加导入。  
-`导入craftweaper.IServer;`
+It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
+`import crafttweaker.server.IServer;`
 
-## 扩展 ICommander
+## Extending ICommandSender
 
-IServer extension [ICommandSender](/Vanilla/Commands/ICommandSender), 所以对于一个 [ICommandSender](/Vanilla/Commands/ICommandSender) 对象所有可用的方法也可以用于 IServer 对象。
+IServer extends [ICommandSender](/Vanilla/Commands/ICommandSender), so all methods that are available for an [ICommandSender](/Vanilla/Commands/ICommandSender) object are also available for an IServer object.
 
-## 访问服务器处理程序
+## Access the Server Handler
 
-您可以使用 `服务器` [全局关键字](/Vanilla/Global_Functions/)访问服务器处理程序。  
-或者，您可以从任意 [ICommandSender](/Vanilla/Commands/ICommandSender/) 获取服务器。
+You can access the Server Handler using the `server` [global keyword](/Vanilla/Global_Functions/).  
+Alternatively you can get the server from any [ICommandSender](/Vanilla/Commands/ICommandSender/).
 
-## 检查 [玩家](/Vanilla/Players/IPlayer/) 是否是OP
+## Check if a [player](/Vanilla/Players/IPlayer/) is OP
 
-您可以使用它来检查一个 [IPlayer](/Vanilla/Players/IPlayer/) 是否拥有OP 权限：
+You can use this to check if an [IPlayer](/Vanilla/Players/IPlayer/) has the OP permission:
 
 ```zenscript
-server.isOP(玩家)；
+server.isOP(player);
 ```
 
-## 获取命令管理器
+## Get the command manager
 
-您可以使用它来获取 [ICommandManager](/Vanilla/Commands/ICommandManager/)
+You can use this to get the [ICommandManager](/Vanilla/Commands/ICommandManager/)
 
 ```zenscript
-server.commander;
+server.commandManager;
 ```

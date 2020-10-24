@@ -1,27 +1,27 @@
 # PlayerSetSpawn
 
-L'evento PlayerSetSpawn viene sparato ogni volta che la posizione dello spawn di un giocatore cambia.  
-Può essere annullato per impedire l'ulteriore elaborazione.
+The PlayerSetSpawn Event is fired whenever a player's spawn location changes.  
+It can be canceled to prevent further processing.
 
-## Classe Evento
+## Event Class
 
-Dovrai lanciare l'evento nell'intestazione della funzione come questa classe:  
-`crafttweaker.event. layerSetSpawnEvent`  
-È possibile, naturalmente, anche [importare](/AdvancedFunctions/Import/) la classe prima e utilizzare quel nome allora.
+You will need to cast the event in the function header as this class:  
+`crafttweaker.event.PlayerSetSpawnEvent`  
+You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
 
-## Estensioni dell'interfaccia evento
+## Event interface extensions
 
-Gli eventi PlayerSetSpawn implementano le seguenti interfacce e sono in grado di chiamare anche tutti i loro metodi/getters/setter:
+PlayerSetSpawn Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
 
 - [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 
 ## ZenGetters
 
-Le seguenti informazioni possono essere ricavate dall'evento:
+The following information can be retrieved from the event:
 
-| ZenGetter   | Tipo Di Reso                           |
-| ----------- | -------------------------------------- |
-| `giocatore` | [IPlayer](/Vanilla/Players/IPlayer/)   |
-| `isForced`  | bool                                   |
-| `newSpawn`  | [IBlockPos](/Vanilla/World/IBlockPos/) |
+| ZenGetter  | Return Type                            |
+| ---------- | -------------------------------------- |
+| `player`   | [IPlayer](/Vanilla/Players/IPlayer/)   |
+| `isForced` | bool                                   |
+| `newSpawn` | [IBlockPos](/Vanilla/World/IBlockPos/) |

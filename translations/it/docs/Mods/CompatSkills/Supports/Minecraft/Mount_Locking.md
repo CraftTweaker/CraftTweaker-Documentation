@@ -1,15 +1,15 @@
-# Monta Blocco
+# Mount Locking
 
-## Monta Blocchi
+## Mount Locks
 
-Questa funzione consente di aggiungere un blocco requisito per il montaggio di entità specifiche!
+This feature allows you to add a requirement lock to Mounting specific entities!
 
-### Sintassi
+### Syntax
 
-[Link a IEntityDefinition](/Vanilla/Entities/IEntityDefinition/)
+[Link to IEntityDefinition](/Vanilla/Entities/IEntityDefinition/)
 
-    # Esempio vuoto:
+    # Blank Example:
     mods.compatskills.AnimalTameLock.addTameLock(IEntityDefinition definition, String... defaultRequirements)
     
-    # Esempio di lavoro:
-    mods.compatskills.AnimalTameLock.addTameLock(<entity:minecraft:pig>, "reskillable:mining<unk> 5", "reskillable:magic<unk> 7")
+    # Working Example:
+    mods.compatskills.AnimalTameLock.addTameLock(<entity:minecraft:pig>, "reskillable:mining|5", "reskillable:magic|7")

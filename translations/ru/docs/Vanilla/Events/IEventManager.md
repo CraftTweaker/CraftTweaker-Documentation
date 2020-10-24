@@ -48,7 +48,7 @@ events.onPlayerCrafted(function(event as crafttweaker.event.PlayerCraftedEvent){
 | Рост на крючке                                    | [`crafttweaker.event.CropGrowPostEvent`](/Vanilla/Events/Events/CropGrowPost/)                           |
 | Растение                                          | [`crafttweaker.event.CropGrowEvent`](/Vanilla/Events/Events/CropGrowPre/)                                |
 | набор зачарований                                 | [`crafttweaker.event.EnchantmentLevel SetEvent`](/Vanilla/Events/Events/EnchantmentLevelSet/)            |
-| ЭндерТелепорт                                     | [`crafttweaker.event.EnderTeleportEvent`](/Vanilla/Events/Events/EnderTeleport/)                         |
+| onEnderTeleport                                   | [`crafttweaker.event.EnderTeleportEvent`](/Vanilla/Events/Events/EnderTeleport/)                         |
 | onEntityLivingАтакуется                           | [`crafttweaker.event.EntityLivingAttackedEvent`](/Vanilla/Events/Events/EntityLivingAttacked/)           |
 | onEntityLivingDeath                               | [`crafttweaker.event.EntityLivingDeathEvent`](/Vanilla/Events/Events/EntityLivingDeath/)                 |
 | onEntityLivingDeathDrops                          | [`crafttweaker.event.EntityLivingDeathDropsEvent`](/Vanilla/Events/Events/EntityLivingDeathDrops/)       |
@@ -71,13 +71,14 @@ events.onPlayerCrafted(function(event as crafttweaker.event.PlayerCraftedEvent){
 | onItemToss                                        | [`crafttweaker.event.ItemTossEvent`](/Vanilla/Events/Events/ItemToss/)                                   |
 | уничтожениеБлок ОнлайвингБлок                     | [`crafttweaker.event.LivingDestroyBlockEvent`](/Vanilla/Events/Events/LivingDestroyBlock/)               |
 | onLivingExperienceDrop                            | [`crafttweaker.event.LivingExperienceDropEvent`](/Vanilla/Events/Events/LivingExperienceDrop/)           |
-| onLivingKockBack                                  | [`crafttweaker.event.LivingKnockBackEvent`](/Vanilla/Events/Events/LivingKnockBack/)                     |
+| onLivingKnockBack                                 | [`crafttweaker.event.LivingKnockBackEvent`](/Vanilla/Events/Events/LivingKnockBack/)                     |
 | уровень грабежа                                   | [`crafttweaker.event.LootingLevelEvent`](/Vanilla/Events/Events/LootingLevel/)                           |
 | onMinecartCollision                               | [`crafttweaker.event.MinecartCollisionEvent`](/Vanilla/Events/Events/MinecartCollision/)                 |
 | Взаимодействие на Minecartact                     | [`crafttweaker.event.MinecartInteractEvent`](/Vanilla/Events/Events/MinecartInteract/)                   |
 | onMobGriefing                                     | [`crafttweaker.event.MobGriefingEvent`](/Vanilla/Events/Events/MobGriefing/)                             |
 | прогресс игрока                                   | [`crafttweaker.event.Player.Advancement`](/Vanilla/Events/Events/PlayerAdvancement/)                     |
-| Восстановление Игрового Аудиа                     | [`crafttweaker.event.PlayerAnvilRepair`](/Vanilla/Events/Events/PlayerAnvilRepair/)                      |
+| Восстановление Игрового Аудиа                     | [`crafttweaker.event.PlayerAnvilRepairEvent`](/Vanilla/Events/Events/PlayerAnvilRepair/)                 |
+| onPlayerAnvilUpdate                               | [`crafttweaker.event.PlayerAnvilUpdateEvent`](/Vanilla/Events/Events/PlayerAnvilUpdate/)                 |
 | атакующий Игрок                                   | [`crafttweaker.event.PlayerAttackEntityEvent`](/Vanilla/Events/Events/PlayerAttackEntity/)               |
 | onPlayerBonemeal                                  | [`crafttweaker.event.PlayerBonemealEvent`](/Vanilla/Events/Events/PlayerBonemeal/)                       |
 | скорость разрыва игроков                          | [`crafttweaker.event.PlayerBreakSpeed`](/Vanilla/Events/Events/PlayerBreakSpeed/)                        |

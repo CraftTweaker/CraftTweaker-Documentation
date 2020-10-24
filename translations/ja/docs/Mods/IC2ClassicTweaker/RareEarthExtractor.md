@@ -1,17 +1,17 @@
-# レアアース抽出器
+# Rare Earth Extractor
 
-## パッケージ
+## Package
 
 ```zenscript
 import mods.ic2.RareEarthExtractor;
 ```
 
-## 方法
+## Method
 
-- **float の値**
-- **[IItemStack](/Vanilla/Items/IItemStack/)... 入力** 入力に複数の指定を行うことができます。 その場合、指定されたすべてのアイテムは同じ値を与えます。
+- **float value**
+- **[IItemStack](/Vanilla/Items/IItemStack/)... inputs** Can have more then one specified for the input. If so all the specified items give the same specified value.
 
-### レアアースエントリーを追加
+### Add Rare Earth Entries
 
 ```zenscript
 mods.ic2.RareEarthExtractor.addRareEarthEntries(float value, IItemStack... input);

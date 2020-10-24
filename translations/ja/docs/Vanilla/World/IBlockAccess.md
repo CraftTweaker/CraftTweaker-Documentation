@@ -1,36 +1,36 @@
 # IBlockAccess
 
-BlockAccess オブジェクトは座標を介してアクセス可能なブロックのグループです。 これらは主に [IWorld](/Vanilla/World/IWorld/)のスーパーインターフェイスとして機能します。つまり、これらの関数はすべての [IWorld](/Vanilla/World/IWorld/) オブジェクトでも使用できます。
+BlockAccess objects are a group of blocks accessible via coordinates. They mainly serves as superinterface to [IWorld](/Vanilla/World/IWorld/), that means all these functions are also available to all [IWorld](/Vanilla/World/IWorld/) objects.
 
-## クラスのインポート
+## Importing the class
 
-エラーを避けるには、クラスを [インポート](/AdvancedFunctions/Import/) する必要があります。  
+It might be required to [import](/AdvancedFunctions/Import/) the class to avoid errors.  
 `import crafttweaker.world.IBlockAccess`
 
 ## ZenMethods
 
-### 特定の位置で blockState を取得または設定
+### Get or Set a blockState at a specific Position
 
-[IBlockPos](/Vanilla/World/IBlockPos/) オブジェクトと [IBlockState](/Vanilla/Blocks/IBlockState/) オブジェクトを使用します。  
-[IBlockState](/Vanilla/Blocks/IBlockState/) を返します。
+Use an [IBlockPos](/Vanilla/World/IBlockPos/) Object and an [IBlockState](/Vanilla/Blocks/IBlockState/) Object.  
+Returns an [IBlockState](/Vanilla/Blocks/IBlockState/).
 
 ```zenscript
 accObj.getBlockState(IBlockPos pos);
 ```
 
-### ブロックがエアブロックであるかどうかを確認します。
+### Check if a block is an air block.
 
-[IBlockPos](/Vanilla/World/IBlockPos/) オブジェクトを使用する。  
-ブールを返す。
+Use an [IBlockPos](/Vanilla/World/IBlockPos/) object.  
+Returns a bool.
 
 ```zenscript
 accObj.isAirBlock(IBlockPos pos);
 ```
 
-### ブロック側で強力な戦闘力を得る
+### Get strong Power at a block's side
 
-[IBlockPos](/Vanilla/World/IBlockPos/) オブジェクトと [IFacing](/Vanilla/World/IFacing/) オブジェクトを使用します。  
-intを返します。
+Use an [IBlockPos](/Vanilla/World/IBlockPos/) object and an [IFacing](/Vanilla/World/IFacing/) object.  
+Returns an int.
 
 ```zenscript
 accObj.getStrongPower(BlockPos var1, EnumFacing var2);

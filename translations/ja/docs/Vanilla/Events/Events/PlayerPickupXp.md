@@ -1,32 +1,31 @@
 # PlayerPickupXp
 
-PlayerPickupXp イベントは、プレイヤーが経験値オーブを拾うたびに発生します。
+The PlayerPickupXp Event is fired whenever a player picks up experience orbs.
 
-## イベントクラス
+## Event Class
 
-関数ヘッダーのイベントをこのクラスとしてキャストする必要があります:  
-`crafttweaker.event. layerPickupXpEvent <br /> 
- <code>`  
-もちろん、 [インポート](/AdvancedFunctions/Import/) 前にそのクラスをインポートして、その名前を使用することもできます。
+You will need to cast the event in the function header as this class:  
+`crafttweaker.event.PlayerPickupXpEvent`  
+You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
 
-## イベントインターフェースの拡張
+## Event interface extensions
 
-PlayerPickupXp Eventsは以下のインターフェイスを実装しており、それらのメソッド/getters/settersもすべて呼び出すことができます。
+PlayerPickupXp Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
 
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 - [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
 
 ## ZenGetters
 
-イベントから次の情報を取得できます。
+The following information can be retrieved from the event:
 
 | ZenGetter  | 戻り値                                       |
 | ---------- | ----------------------------------------- |
-| `キャンセル済み`  | boolean型                                  |
-| `プレイヤー`    | [IPlayer](/Vanilla/Players/IPlayer/)      |
+| `canceled` | boolean型                                  |
+| `player`   | [IPlayer](/Vanilla/Players/IPlayer/)      |
 | `entityXp` | [IEntityXp](/Vanilla/Entities/IEntityXp/) |
-| `xp`       | float型                                    |
+| `xp`       | float                                     |
 
 ## ZenMethods
 
-- `event.cancel()` はイベントをキャンセルとして設定します。
+- `event.cancel()` sets the event as cancelled.

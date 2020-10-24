@@ -1,17 +1,17 @@
-# Infusuario
+# Infuser
 
-## Importando el Paquete
-`mods.nuclearcraft.InfuserInfusuario`
+## Importing the Package
+`mods.nuclearcraft.InfuserInfuser`
 
-## Añadiendo recetas
+## Adding Recipes
 ```zenscript
-mods.nuclearcraft.Supercoolermods.nuclearcraft.Infuser.addRecipe(IIngredient itemInput, ILiquidStack fluidInput, IIngredient itemOutput, @Optional double timeMultiplier, @Optional double powerMultiplier, @Optional double processRadiation);
+mods.nuclearcraft.mods.nuclearcraft.Infuser.addRecipe(IIngredient itemInput, ILiquidStack fluidInput, IIngredient itemOutput, @Optional double timeMultiplier, @Optional double powerMultiplier, @Optional double processRadiation);
 ```
 
-## Eliminando recetas
+## Removing Recipes
 ```zenscript
-mods.nuclearcraft.Supercoolermods.nuclearcraft.Infuser.removeRecipeWithInput(IIngredient itemInput, ILiquidStack fluidInput);
+mods.nuclearcraft.mods.nuclearcraft.Infuser.removeRecipeWithInput(IIngredient itemInput, ILiquidStack fluidInput);
 mods.nuclearcraft.Infuser.removeRecipeWithOutput(IIngredient itemOutput);
 mods.nuclearcraft.Infuser.removeAllRecipes();Infuser.removeRecipeWithOutput(IIngredient itemOutput);
-mods.nuclearcraft.Infuser.removeTodos();
+mods.nuclearcraft.Infuser.removeAllRecipes();
 ```

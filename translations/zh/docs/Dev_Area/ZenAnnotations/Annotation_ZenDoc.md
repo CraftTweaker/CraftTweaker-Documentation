@@ -7,16 +7,16 @@
 
 ## 例子
 
-[CraftTinfine测试项目 ZenDoc](https://github.com/jaredlll08/CraftTweaker/tree/1.12/CraftTweaker2-MC1120-Tests/src/main/java/crafttweaker/tests/wiki/ZenDocWiki.java)
+[CraftTweaker Test Project ZenDoc](https://github.com/jaredlll08/CraftTweaker/tree/1.12/CraftTweaker2-MC1120-Tests/src/main/java/crafttweaker/tests/wiki/ZenDocWiki.java)
 
 ```java
-@ZenClass(value = "crafttweeper.tests). enDoc")
-@Zenregistry
-public class ZenDocWiki v.
+@ZenClass(value = "crafttweaker.tests.zenDoc")
+@ZenRegister
+public class ZenDocWiki {
     @ZenMethod
     @ZenDoc("This prints a warning")
-    public 静态无效print() }
-        CraftTweinerAPI。 ogWarning("打印引用!");
+    public static void print() {
+        CraftTweakerAPI.logWarning("Print invoked!");
     }
 }
 ```

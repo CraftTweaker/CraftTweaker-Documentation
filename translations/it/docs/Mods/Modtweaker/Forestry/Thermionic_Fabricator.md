@@ -1,27 +1,27 @@
-# Fabricatore Termionico
+# Thermionic Fabricator
 
-ModTweaker consente di aggiungere o rimuovere ricette di Fabricatore Termionico forestale
+ModTweaker allows you to add or remove forestry Thermionic Fabricator Recipes
 
-## Chiamata
+## Calling
 
-Puoi chiamare il pacchetto usando `mods.forestry.ThermionicFabricator`
+You can call the package using `mods.forestry.ThermionicFabricator`
 
-## Rimozione Ricetta/Trasmissione
+## Recipe/Cast Removal
 
 ```zenscript
 //mods.forestry.ThermionicFabricator.removeCast(IIngredient product);
 mods.forestry.ThermionicFabricator.removeCast(<forestry:thermionic_tubes:5>);
 ```
 
-## Ricetta/Aggiunta Getto
+## Recipe/Cast Addition
 
 ```zenscript
-//mods.forestry.ThermionicFabricator.addCast(IItemStack output, IIngredient[][] ingredienti, ILiquidStack liquidStack, @Optional IItemStack plan);
-mods.forestry.ThermionicFabricator. ddCast(<minecraft:glass_pane> * 4, [[<minecraft:dirt>,null,null],[null,null,null],[null,null,null]], <liquid: glass> * 200);
-mods.forestry. hermionicFabricator.addCast(<minecraft:stained_glass:3>, [[<ore:dyeLightBlue>,null,null],[null,null,null],[null,null,null]], <liquid: glass> * 144, <forestry:wax_cast>);
+//mods.forestry.ThermionicFabricator.addCast(IItemStack output, IIngredient[][] ingredients, ILiquidStack liquidStack, @Optional IItemStack plan);
+mods.forestry.ThermionicFabricator.addCast(<minecraft:glass_pane> * 4, [[<minecraft:dirt>,null,null],[null,null,null],[null,null,null]], <liquid: glass> * 200);
+mods.forestry.ThermionicFabricator.addCast(<minecraft:stained_glass:3>, [[<ore:dyeLightBlue>,null,null],[null,null,null],[null,null,null]], <liquid: glass> * 144, <forestry:wax_cast>);
 ```
 
-## Rimozione Fusione
+## Smelting Removal
 
 ```zenscript
 //mods.forestry.ThermionicFabricator.removeSmelting(IIngredient itemInput);
@@ -29,9 +29,9 @@ mods.forestry.ThermionicFabricator.removeSmelting(<minecraft:sand>);
 
 ```
 
-## Aggiunta Di Fusione
+## Smelting Addition
 
-È possibile aggiungere ogni liquido nel gioco come risultato della fusione, ma attualmente solo `<liquid:glass>` è raccomandato a causa di bug che si verificano con altri liquidi.
+You can add every liquid in the game as the result of the smelting, but currently only `<liquid:glass>` is recommended due to bugs occuring with other liquids.
 
 ```zenscript
 //mods.forestry.ThermionicFabricator.addSmelting(ILiquidStack liquidStack, IItemStack itemInput, int meltingPoint);

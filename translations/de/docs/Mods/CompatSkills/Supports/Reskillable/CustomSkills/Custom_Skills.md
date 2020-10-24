@@ -1,69 +1,69 @@
-# Eigene Fähigkeiten
+# Custom Skills
 
 ## Credits:
 
-Das Credits geht an Kindlich für das Schreiben der meisten Custom-Content-Implementierung!
+Credits goes out to Kindlich for writing most of the Custom Content implementation!
 
-## Eigene Fähigkeiten:
+## Custom Skills:
 
-### Implementierungs-Syntax:
+### Implementation Syntax:
 
-    Beispiele:
+    Examples:
     mods.compatskills.SkillCreator.createSkill(String name, String backGroundLocation)
     mods.compatskills.SkillCreator.createNewSkill(String nameLocation, String backGroundLocation)
     
-    "createSkill" automatisch die CompatSkills ModID der Name Resource Location.
-    So zum Beispiel:
+    "createSkill" auto-assigns the CompatSkills ModID to the Name Resource Location.
+    So for example:
     mods.compatskills.SkillCreator.createSkill("banana", "textures/blocks/stonebrick.png");
     
-    würde intern zurückgeben:
-    "compatskills:banana" als Ressourcenstandort für die Fertigkeit.
+    Would internally return:
+    "compatskills:banana" as the resource location name for the skill.
     
-    Die zweite hat keine zugewiesene ModID, d.h. Sie können Ihre eigene eingeben.
+    The second one has no assigned ModID meaning you can insert your own.
     mods.compatskills.SkillCreator.createNewSkill("pokemon:throwing", "textures/blocks/stonebrick.png")
     
 
-### Zeneigenschaften
+### ZenProperties
 
-| Referenz | Eigenschaftsname | Implementierung |
-|:-------- |:---------------- | --------------- |
-| CrTSkill | name             | Siehe unten     |
+| Reference | Property Name | Implementation |
+|:--------- |:------------- | -------------- |
+| CrTSkill  | name          | See Below      |
 
-    // Erstellt die Fähigkeit als Variable
-    var banana = mods.compatskills.SkillCreator.createSkill("banana", "textures/blocks/stonebrick. ng");
+    // Creates the skill as a variable
+    var banana = mods.compatskills.SkillCreator.createSkill("banana", "textures/blocks/stonebrick.png");
     
-    // Hard-Sets den Namen "Banana"
-    // Beachten Sie, dass dies die Lokalisierung durch .lang Dateien unmöglich macht!
+    // Hard-Sets the name to "Banana"
+    // Be aware this makes localization through .lang files not possible!
     banana.name = "Banana"
     
 
 ### ZenSetters/ZenGetters
 
-| Methodentyp | Methodenname          | Werte                                                  |
-|:----------- |:--------------------- | ------------------------------------------------------ |
-| Setter      | setLevelCap           | Nimmt eine Ganzzahl                                    |
-| Getriebe    | getLevelCap           | Gibt eine Ganzzahl zurück                              |
-| Setter      | gesetzt               | Nimmt eine Boolesche                                   |
-| Getriebe    | getEnabled            | Gibt einen Booleschen zurück                           |
-| Setter      | setSkillPointInterval | Nimmt eine Ganzzahl                                    |
-| Setter      | setBaseLevelCost      | Nimmt eine Ganzzahl                                    |
-| Getriebe    | getBaseLevelCost      | Gibt eine Ganzzahl zurück                              |
-| Getriebe    | getName               | Gibt den lokalisierten Zeichenkettennamen zurück       |
-| Setter      | setLevelStaggering    | Nimmt einen String[], siehe Konfiguration für Beispiel |
-| Getriebe    | getLevelStaggering    | Gibt einen String[] zurück                             |
-| Setter      | setHidden             | Nimmt eine Boolesche                                   |
-| Getriebe    | isHidden              | Gibt einen Booleschen zurück                           |
+| Methodentyp | Methodenname          | Values                                   |
+|:----------- |:--------------------- | ---------------------------------------- |
+| Setter      | setLevelCap           | Takes an Integer                         |
+| Getter      | getLevelCap           | Returns an Integer                       |
+| Setter      | setEnabled            | Takes an Boolean                         |
+| Getter      | getEnabled            | Returns an Boolean                       |
+| Setter      | setSkillPointInterval | Takes an Integer                         |
+| Setter      | setBaseLevelCost      | Takes an Integer                         |
+| Getter      | getBaseLevelCost      | Returns an Integer                       |
+| Getter      | getName               | Returns the localized String Name        |
+| Setter      | setLevelStaggering    | Takes a String[], See Config for Example |
+| Getter      | getLevelStaggering    | Returns a String[]                       |
+| Setter      | setHidden             | Takes a Boolean                          |
+| Getter      | isHidden              | Returns a Boolean                        |
 
-### Lokalisierung & Ressourcen-Standortreferenzen:
+### Localization & Resource Location References:
 
-    Skill-Icons:
+    Skill Icons:
     
-    Entweder
+    Either:
     
     - mods.compatskills.SkillCreator.createSkill(String name, String backGroundLocation);
         - compatskills:textures/skills/skillname.png
     
-    - mods.compatskills.SkillCreator. reateNewSkill(String nameLocation, String backGroundLocation);
+    - mods.compatskills.SkillCreator.createNewSkill(String nameLocation, String backGroundLocation);
         - customResourceLocation:/textures/skills/skillname.png
     
     
@@ -76,4 +76,4 @@ Das Credits geht an Kindlich für das Schreiben der meisten Custom-Content-Imple
     - customResourceLocation:lang/localeCode.lang
     
 
-Gehen Sie zu diesem Link, um alle möglichen Locale-Codes zu sehen! [Minecraft-Sprachseite von Gamepedia's](https://minecraft.gamepedia.com/Language "Gamepedia's Minecraft Language Page")
+Go to this link to see all possible Locale-Codes! [Gamepedia's Minecraft Language Page](https://minecraft.gamepedia.com/Language "Gamepedia's Minecraft Language Page")

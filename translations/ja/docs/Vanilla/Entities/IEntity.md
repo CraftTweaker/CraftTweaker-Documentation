@@ -1,18 +1,18 @@
 # IEntity
 
-エンティティインターフェース。 情報エンティティのデータの取得と変更に使用されます。  
-エンティティは、プレイヤー、モンスター、地面にあるアイテムなど、世界中で自由に動かせるすべてのものです。
+Entity Interface. Used to obtain and modify information entities' data.  
+Entities are everything that is freely movable in the world such as players, monsters, items on the ground any many more.
 
 ## パッケージのインポート
 
 It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
 `import crafttweaker.entity.IEntity;`
 
-## 拡張する ICommandSender
+## Extending ICommandSender
 
-IEntity extends [ICommandSender](/Vanilla/Commands/ICommandSender/). つまり、 [ICommandSender](/Vanilla/Commands/ICommandSender/) オブジェクトが利用可能なすべてのメソッドが IEntity オブジェクトにも利用可能であるということです。
+IEntity extends [ICommandSender](/Vanilla/Commands/ICommandSender/). That means that all methods that are availabel to [ICommandSender](/Vanilla/Commands/ICommandSender/) Objects also are available to IEntity Objects!
 
-<details><summary>派生メソッド</summary> 
+<details><summary>Derived Methods</summary> 
 
 - entity.displayName
 - entity.position
@@ -22,23 +22,23 @@ IEntity extends [ICommandSender](/Vanilla/Commands/ICommandSender/). つまり�
 
 ## ZenGetters
 
-| GetterName               | GetterMethod      | 戻り値の型（*は null* にできます）                                       |
+| GetterName               | GetterMethod      | Return Type (*can be null*)                                 |
 | ------------------------ | ----------------- | ----------------------------------------------------------- |
-| 空気                       | getAir()          | int型                                                        |
+| air                      | getAir()          | int型                                                        |
 | alive                    | isAlive()         | boolean型                                                    |
 | alwaysRenderNameTag      |                   | boolean型                                                    |
-| アーマーインベントリformat@@0      |                   | List<[IItemStack](/Vanilla/Items/IItemStack/)               |
+| armorInventory           |                   | List<[IItemStack](/Vanilla/Items/IItemStack/)               |
 | canBeAttackedWithItem    |                   | boolean型                                                    |
 | canBeCollidedWith        |                   | boolean型                                                    |
 | canPassengerSteer        |                   | boolean型                                                    |
 | canRiderInteract         |                   | boolean型                                                    |
 | controllingPassenger     |                   | *IEntity*                                                   |
 | customName               | getCustomName()   | 文字列型                                                        |
-| 定義                       |                   | *[IEntityDefinition](/Vanilla/Entities/IEntityDefinition/)* |
-| 寸法                       | getDimension()    | int                                                         |
+| definition               |                   | *[IEntityDefinition](/Vanilla/Entities/IEntityDefinition/)* |
+| dimension                | getDimension()    | int                                                         |
 | doesTriggerPressurePlate |                   | boolean型                                                    |
 | equipmentAndArmor        |                   | List<[IItemStack](/Vanilla/Items/IItemStack/)               |
-| eyeHeight                |                   | float型                                                      |
+| eyeHeight                |                   | float                                                       |
 | hasCustomName            |                   | boolean型                                                    |
 | hasNoGravity             |                   | boolean型                                                    |
 | heldEquipment            |                   | List<[IItemStack](/Vanilla/Items/IItemStack/)               |
@@ -64,17 +64,17 @@ IEntity extends [ICommandSender](/Vanilla/Commands/ICommandSender/). つまり�
 | lowestRidingEntity       |                   | *IEntity*                                                   |
 | maxFallHeight            |                   | int                                                         |
 | maxInPortalTime          |                   | int                                                         |
-| 部品                       |                   | IEntity[]                                                   |
-| 乗客の皆さん                   | getPassengers()   | リスト<IEntity\>                                              |
-| passengersRecursive      |                   | リスト<IEntity\>                                              |
+| parts                    |                   | IEntity[]                                                   |
+| passengers               | getPassengers()   | List<IEntity\>                                             |
+| passengersRecursive      |                   | List<IEntity\>                                             |
 | portalCooldowne          |                   | int                                                         |
 | position3f               | getPosition3f()   | [Position3f](/Vanilla/Utils/Position3f/)                    |
 | ridingEntity             | getRidingEntity() | *IEntity*                                                   |
 | shouldRiderSit           |                   | boolean型                                                    |
-| タグ                       |                   | リスト<string\>                                               |
-| チーム                      |                   | *[ITeam](/Vanilla/Game/ITeam/)*                             |
-| 濡れている                    | isWet()           | boolean型                                                    |
-| 世界                       |                   | [IWorld](/Vanilla/World/IWorld/)                            |
+| tags                     |                   | List<string\>                                              |
+| team                     |                   | *[ITeam](/Vanilla/Game/ITeam/)*                             |
+| wet                      | isWet()           | boolean型                                                    |
+| world                    |                   | [IWorld](/Vanilla/World/IWorld/)                            |
 | x                        | getX()            | double                                                      |
 | y                        | getY()            | double                                                      |
 | z                        | getZ()            | double                                                      |
@@ -84,19 +84,19 @@ IEntity extends [ICommandSender](/Vanilla/Commands/ICommandSender/). つまり�
 | posX                     |                   | double                                                      |
 | posY                     |                   | double                                                      |
 | posZ                     |                   | double                                                      |
-| rotationYaw              |                   | float型                                                      |
-| rotationPitch            |                   | float型                                                      |
+| rotationYaw              |                   | float                                                       |
+| rotationPitch            |                   | float                                                       |
 | lookingDirection         |                   | [IVector3d](/Vanilla/World/IVector3d/)                      |
 
 ## ZenSetters
 
-| SetterName          | SetterMethod        | パラメータタイプ                               |
+| SetterName          | SetterMethod        | Parameter Type                         |
 | ------------------- | ------------------- | -------------------------------------- |
-| 空気                  | setAir(seconds)     | int                                    |
+| air                 | setAir(seconds)     | int                                    |
 | alwaysRenderNameTag |                     | boolean型                               |
-| customName          | setCustomName(name) | 文字列                                    |
-| 寸法                  | setDimension(id)    | int                                    |
-| ファイヤー...            | setFire(秒)          | int                                    |
+| customName          | setCustomName(name) | string                                 |
+| dimension           | setDimension(id)    | int                                    |
+| fire                | setFire(seconds)    | int                                    |
 | hasNoGravity        |                     | boolean型                               |
 | id                  |                     | int                                    |
 | isGlowing           |                     | boolean型                               |
@@ -105,9 +105,9 @@ IEntity extends [ICommandSender](/Vanilla/Commands/ICommandSender/). つまり�
 | isSilent            |                     | boolean型                               |
 | isSneaking          |                     | boolean型                               |
 | isSprinting         |                     | boolean型                               |
-| 位置                  | setPosition(pos)    | [IBlockPos](/Vanilla/World/IBlockPos/) |
-| rotationYaw         |                     | float型                                 |
-| rotationPitch       |                     | float型                                 |
+| position            | setPosition(pos)    | [IBlockPos](/Vanilla/World/IBlockPos/) |
+| rotationYaw         |                     | float                                  |
+| rotationPitch       |                     | float                                  |
 | motionX             |                     | double                                 |
 | motionY             |                     | double                                 |
 | motionZ             |                     | double                                 |
@@ -115,21 +115,21 @@ IEntity extends [ICommandSender](/Vanilla/Commands/ICommandSender/). つまり�
 | posY                |                     | double                                 |
 | posZ                |                     | double                                 |
 
-## その他のZenMethods
+## More ZenMethods
 
 - boolean attackEntityFrom([IDamageSource](/Vanilla/Damage/IDamageSource/) source, float amount);
 - boolean canTrample([IWorld](/Vanilla/World/IWorld/) world, [IBlockDefinition](/Vanilla/Blocks/IBlockDefinition/) block, [IBlockPos](/Vanilla/World/IBlockPos/) pos, float fall);
 - boolean isInsideOfMaterial([IMaterial](/Vanilla/Blocks/IMaterial/) material);
-- double getDistanceSqToEntity(entity); → 指定されたエンティティまでの距離を返す
+- double getDistanceSqToEntity(entity); → Returns the distance to the given Entity
 - [IData](/Vanilla/Data/IData/) getNBT();
-- [IItemStack](/Vanilla/Items/IItemStack/) getPickedResult(); → エンティティを取得する [アイテム](/Vanilla/Items/IItemStack/) を返します (e. をクリックします。エンティティIDはアイテムまたはトロッコアイテムです。
+- [IItemStack](/Vanilla/Items/IItemStack/) getPickedResult(); → Returns the [item](/Vanilla/Items/IItemStack/) that picking up the entity would return (e.g. the item id the entity is an item or the minecart item)
 - void addTag(String tag);
-- void 消火(); → 火災時にエンティティを消火する
+- void extinguish(); → Extinguishes the entity, if on fire
 - void onEntityUpdate();
 - void onKillCommand();
 - void onUpdate();
 - void removeTag(String tag);
-- void setDead(); → エンティティをキルする
+- void setDead(); → Kills the entity
 - void spawnRunningParticles();
 - void removePassengers();
 - void dismountRidingEntity();
@@ -140,6 +140,6 @@ IEntity extends [ICommandSender](/Vanilla/Commands/ICommandSender/). つまり�
 - boolean shouldRiderDismountInWater(IEntity rider)
 - boolean boolean isPassenger(IEntity entity);
 - boolean isRidingSameEntity(IEntity other);
-- [IRayTraceResult](/Vanilla/World/IRayTraceResult/) getRayTrace(double blockReachDistance, float partialTicks, @Optional boolean stopOnLiquid, @Optional boolean ignoreBlockWithoutBox, @Optional(valueBoolean = true) boolean returnLastUncollidableBlock);
+- [IRayTraceResult](/Vanilla/World/IRayTraceResult/) getRayTrace(double blockReachDistance, float partialTicks, @Optional boolean stopOnLiquid, @Optional boolean ignoreBlockWithoutBoundingBox, @Optional(valueBoolean = true) boolean returnLastUncollidableBlock);
 - void update([IData](/Vanilla/Data/IData/) data);
-- boolean onGround(); → エンティティが地上にある場合は true を、空中にある場合は false を返します。
+- boolean onGround(); → Returns true if the entity is on the ground, and false when in the air

@@ -1,16 +1,16 @@
 
-### Clase
+### Class
 
 ```zenscript
-importar mods.roots.InvmonCreatures;
+import mods.roots.SummonCreatures;
 ```
 
-#### Métodos
+#### Methods
 
 ```zenscript
 void addEntity(
-  IEntityDefinition entity, // la entidad a invocar
-  IIngredient[] ingredientes // una lista de ingredientes utilizados para la invocación
+  IEntityDefinition entity, // the entity to be summoned
+  IIngredient[] ingredients // a list of ingredients used for the summoning
 );
 ```
 
@@ -20,7 +20,7 @@ void addEntity(
 
 ```zenscript
 void removeEntity(
-  entidad IEntityDefinition // la entidad a remover de invocar vía receta
+  IEntityDefinition entity // the entity to remove from summoning via recipe
 );
 ```
 
@@ -29,8 +29,8 @@ void removeEntity(
 
 
 ```zenscript
-evite removeLifeEssence(
-  entidad IEntityDefinition // la entidad para eliminar la esencia de vida para
+void removeLifeEssence(
+  IEntityDefinition entity // the entity to remove life essence for
 );
 ```
 
@@ -40,7 +40,7 @@ evite removeLifeEssence(
 
 ```zenscript
 void addLifeEssence(
-  entidad IEntityDefinition // la entidad para agregar esencia de vida para
+  IEntityDefinition entity // the entity to add life essence for
 );
 ```
 
@@ -56,25 +56,25 @@ void clearLifeEssence();
 ---
 
 
-### Ejemplos
+### Examples
 
 ```zenscript
-import mods.roots.InvmonCreatures;
+import mods.roots.SummonCreatures;
 
-// Limpia todas las Esencias de Vida generadas automáticamente por
-// el mapa de Cosecha Animal
-Invocaciones. learfeEssence();
+// Clear all automatically generated Life Essences added by
+// the Animal Harvest map
+SummonCreatures.clearLifeEssence();
 
-// Añade una receta para invocar un pollo usando 3 objetos
-Invocaciones. ddEntidad(<entity:minecraft:chicken>, [<minecraft:wheat_seeds>, <minecraft:wheat>, <ore:ingotIron>]);
+// Add a recipe to summon a Chicken using 3 items
+SummonCreatures.addEntity(<entity:minecraft:chicken>, [<minecraft:wheat_seeds>, <minecraft:wheat>, <ore:ingotIron>]);
 
-// Elimina el enderman añadido por el ejemplo de la Cosecha de Animal
-// de la lista de Esencia de Vida (presumiendo que no ha sido limpiado)
-Invocaciones. emoveLifeEssence(<entity:minecraft:enderman>);
+// Remove the enderman added by the Animal Harvest example
+// from the Life Essence list (presuming it hasn't been cleared)
+SummonCreatures.removeLifeEssence(<entity:minecraft:enderman>);
 
-// Agrega manualmente una capacidad de soltar esencia de vida para un dragón ender
-Invocaciones. ddLifeEssence(<entity:minecraft:ender_dragon>);
+// Manually add a life-essence drop capability for an ender dragon
+SummonCreatures.addLifeEssence(<entity:minecraft:ender_dragon>);
 
-// Quita la receta predeterminada para las vacas
-Invocaciones.removeEntity(<entity:minecraft:cow>);
+// Remove the default recipe for cows
+SummonCreatures.removeEntity(<entity:minecraft:cow>);
 ```

@@ -1,16 +1,16 @@
 # DataMap
 
-Un mapa, a veces también llamado Arreglo Asociativo es una estructura de datos que le permite almacenar varios elementos.  
-A diferencia de un Array, sin embargo, también puedes dar a cada uno de estos elementos una clave a la que llamar.  
-El DataMap expande [IData](/Vanilla/Data/IData/), así que cada DataMap es IData, puede necesitar esta información más tarde.
+A Map, sometimes also called an Associative Array is a data structure that allows you to store multiple items.  
+Unlike an Array however, you can also give each of these item a key to call upon.  
+The DataMap expands [IData](/Vanilla/Data/IData/), so each DataMap is IData, you might need this info later.
 
-## Creando un mapa:
+## Creating a map:
 
-Un Mapa es un tipo especial de [IData](/Vanilla/Data/IData/), así que en el último momento tendrás que importar esa interfaz:  
-`importar crafttweaker. ata.IData;`
+A Map is a special kind of [IData](/Vanilla/Data/IData/), so at the very last you'll need to import that interface:  
+`import crafttweaker.data.IData;`
 
-Puede que hayas notado que ningún tipo puede ser convertido en un mapa (ni puede ser convertido a cualquier tipo además de cadenas), ¡así que tiene que haber otra forma de crearlos!  
-Allí está:
+You may have noticed that no type can be converted into a map (nor can map be converted to any type besides Strings), so there has to be another way of creating them!  
+There is:
 
 ```zenscript
 import crafttweaker.data.IData;
@@ -20,47 +20,47 @@ val myFirstMap = {key1: "value1",
                   key3: 3} as IData;
 ```
 
-Lo que hay que recordar es:  
-Maps son manejados como `Mapa<String,IData>`!  
-Esto significa que las claves no deben contener caracteres que las cadenas CT normales no pueden manejar.  
-También significa que mientras la clave es una cadena, el valor es otro [objeto IData](/Vanilla/Data/IData/) .  
-Puedes anidar mapas dentro de mapas (eso es lo que hacen muchos NBT-Data):
+The thing to remember is:  
+Maps are handled as `Map<String,IData>`!  
+That means your keys should not contain characters that normal CT strings can't handle.  
+It also means that while the key is a string, the value is another [IData](/Vanilla/Data/IData/) object.  
+You can even nest maps inside maps (that's what a lot of NBT-Data do):
 
 ```zenscript
 val nestedMap = { key1: 
                     {
-                        key1: "hola"
+                        key1: "hello"
                     }
                 } as IData;
 ```
 
-## Recuperando Miembros
+## Retrieving Members
 
-Desafortunadamente, los mapas creados como arriba son inmutables, por lo que no se puede cambiar a sus miembros.  
-Para recuperar el miembro del Mapa necesitas conocer su nombre de clave. Entonces puedes hacer esto:
+Unfortunately, Maps created as above are immutable, so you cannot change their members.  
+To retrieve a Map's member you need to know its key name. Then you can do this:
 
 ```zenscript
-val myseconddMap = {key1: "value1",
+val mySecondMap = {key1: "value1",
                    key2: "value2",
-                   key3: 3} como IData;
+                   key3: 3} as IData;
 
-//Recupera el miembro llamado "key1"
-var k1 = mySecondMap. ey1 as IData;
+//Retrieves the member called "key1"
+var k1 = mySecondMap.key1 as IData;
 print(k1.asString());
 
-//Obtiene el miembro llamado "key2"
+//Retrieves the member called "key2"
 var k2 = mySecondMap.memberGet("key2") as IData;
 print(k2.asString());
 ```
 
-## Modificando mapas
+## Modifying maps
 
-Puedes añadir o sustraer mapas unos de otros para obtener un nuevo mapa con valores cambiados.  
-¡Esto incluso funciona para mapas anidados!
+You can add or substract maps from each other to get a new map with changed values.  
+This even works for nested maps!
 
 ```zenscript
-val map1 como IData = {
-    key1 : "hola"
+val map1 as IData = {
+    key1 : "hello"
     key3 : "test"
 };
 
@@ -69,21 +69,21 @@ val map2 as IData = {
     key3 : "override"
 };
 
-print(map1 + map2). sString()); //Imprime {key1 : "hola", key2 : "bye", key3 : "override"}
+print((map1 + map2).asString()); //Prints {key1 : "hello", key2 : "bye", key3 : "override"}
 
 
 
 val map3 as IData = {
-    key1 : "dos",
-    key2 : "dos",
-    key3 : "tres"
+    key1 : "two",
+    key2 : "two",
+    key3 : "three"
 };
 
-print((map3 - "key1"). sString()); //Imprime {key2 : "dos", key3 : "three"}
+print((map3 - "key1").asString()); //Prints {key2 : "two", key3 : "three"}
 
 val map4 as IData = {
     key3 : "anything"
 };
 
-print((map3 - map4). sString()); //Imprime {key1 : "dos", key2 : "dos"}
+print((map3 - map4).asString()); //Prints {key1 : "two", key2 : "two"}
 ```

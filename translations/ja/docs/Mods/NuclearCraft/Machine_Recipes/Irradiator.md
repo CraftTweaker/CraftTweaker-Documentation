@@ -1,16 +1,16 @@
 # Irradiator
 
-## パッケージのインポート
-`mods.naturcraft.irradiator`
+## Importing the Package
+`mods.nuclearcraft.irradiator`
 
-## レシピを追加中
+## Adding Recipes
 ```zenscript
-mods.nuclearcraft.irradiator.addRecipe([fluidInput1, fluidInput2, fluidOutput1, fluidOutput2, @Optional double timeMultiplier, @Optional door processRadiation]);
+mods.nuclearcraft.irradiator.addRecipe([fluidInput1, fluidInput2, fluidOutput1, fluidOutput2, @Optional double timeMultiplier, @Optional double powerMultiplier, @Optional double processRadiation]);
 ```
 
-## レシピを削除
+## Removing Recipes
 ```zenscript
-mods.nuclearcraft.irradiator.removeRecipeInput([fluidInput1, fluidInput2]);
+mods.nuclearcraft.irradiator.removeRecipeWithInput([fluidInput1, fluidInput2]);
 mods.nuclearcraft.irradiator.removeRecipeWithOutput([fluidOutput1, fluidOutput2]);
-mods.nuclecraft.irradiator.removeAllRecipes();
+mods.nuclearcraft.irradiator.removeAllRecipes();
 ```

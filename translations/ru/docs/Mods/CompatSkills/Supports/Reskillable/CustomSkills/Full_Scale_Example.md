@@ -1,8 +1,8 @@
-# Пример полного масштаба
+# Full Scale Example
 
-## Кредит
+## Credit
 
-Кредит выходит в Ведущий разработчик pupnewfster для примера ниже!
+Credit goes out to Lead Developer pupnewfster for the below example!
 
     #modloaded compatskills reskillable
     #priority 1000

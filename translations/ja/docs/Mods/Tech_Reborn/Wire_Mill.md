@@ -1,14 +1,14 @@
-# ワイヤーミル
+# Wire Mill
 
-## パッケージのインポート
+## Importing the Package
 `mods.techreborn.wireMill`
 
-## レシピを追加中
+## Adding Recipes
 ```zenscript
 mods.techreborn.wireMill.addRecipe(IItemStack output1, IIngredient input1, int ticktime, int euTick);
 ```
 
-## レシピを削除
+## Removing Recipes
 ```zenscript
 mods.techreborn.wireMill.removeRecipe(IItemStack output);
 mods.techreborn.wireMill.removeAll();

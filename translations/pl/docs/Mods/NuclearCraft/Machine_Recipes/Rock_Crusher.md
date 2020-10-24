@@ -1,14 +1,14 @@
-# Kamień Kruszący
+# Rock Crusher
 
-## Importowanie pakietu
-`[PLACEHOLDER] mods.nuclearcraft.rock_crusher`
+## Importing the Package
+`mods.nuclearcraft.rock_crusher`
 
-## Dodawanie przepisów
+## Adding Recipes
 ```zenscript
-mods.nuclearcraft.rock_crusher.addRecipe([itemInput, itemOutput1, itemOutput2, itemOutput3, @Opcjonalny podwójny timeMultiplier, @Opcjonalny podwójny powerMultiplier, @Opcjonalny podwójny proces]);
+mods.nuclearcraft.rock_crusher.addRecipe([itemInput, itemOutput1, itemOutput2, itemOutput3, @Optional double timeMultiplier, @Optional double powerMultiplier, @Optional double processRadiation]);
 ```
 
-## Usuwanie przepisów
+## Removing Recipes
 ```zenscript
 mods.nuclearcraft.rock_crusher.removeRecipeWithInput([itemInput]);
 mods.nuclearcraft.rock_crusher.removeRecipeWithOutput([itemOutput1, itemOutput2, itemOutput3]);

@@ -1,12 +1,12 @@
-# グローバル変数と静的変数
+# Global and Static Variables
 
-確かにあなたは、それぞれのスクリプトで同じ変数を何度も宣言した状況にあります。  
-「なぜ、すべてのスクリプトでそれらを利用できるようにする方法がないのですか?」そのような時にあなたの頭の中で行われたものです。
+Sure you have been in the situation where you declared the same variable in each and every script over and over again.  
+"Why is there no way to make them available in every script?" Is what went through your head at such times.
 
-そこに今安心してグローバルとスクリプトバウンド(静的)値を宣言し、アクセスする手段が追加されました!  
-それらは変更できません。
+Be relieved now for there has been added a means of declaring and accessing global and scriptbound (static) values!  
+They cannot be changed, though.
 
-## 静的とグローバルの違い
+## Difference between statics and globals
 
 Both, statics and globals are scriptbound and instantiated before the script is executed.  
 Both cannot be changed.  
@@ -14,33 +14,33 @@ The difference is how they are called:
 Globals can be called from everywhere simply by their name unless you already have a local variable that has the same name.  
 Statics on the other hand, need to use the [cross-script reference](/AdvancedFunctions/Cross-Script_Reference/) to be accessed.
 
-グローバルは、 `global` キーワードを使用して作成されます。  
-静的 `キーワードを使用して静的` スタティックを作成します。
+Globals are created using the `global` keyword.  
+Statics are created using the `static` keyword.
 
-それとは別に、彼らは同じです!
+Aside from that, they are identical!
 
-## グローバル値の宣言
+## Declaring a global value
 
-グローバル値を宣言することは、ローカル値を宣言するのと同じくらい簡単です。
+Declaring a global value is as simple as declaring a local value:
 
 ```zenscript
 import crafttweaker.item.IItemStack;
 
 
-globalValue as IItemStack = <minecraft:dirt>;
+global myGlobalValue as IItemStack = <minecraft:dirt>;
 static myStaticValue as IItemStack = <minecraft:sand>;
 ```
 
-では、それを分解しましょう。
+Okay, let's break it down, shall we?
 
-1. `グローバル値の宣言を示すグローバル` キーワード
-2. `myGlobalValue` 値の名前
+1. `global` keyword that indicates the declaration of a global value
+2. `myGlobalValue` the name of the value
 3. `as IItemStack` the type of the value (It is recommended to [import](/AdvancedFunctions/Import/) the types before casting the variable)
-4. `= <minecraft:dirt>;` 値の初期化。 グローバル値が最終的な値なので、宣言中に初期化する必要があります。
+4. `= <minecraft:dirt>;` value initialization. As global values are final, you need to initialize them whilst declaring them!
 
-## アドバイスの言葉
+## Words of advice
 
-- 既に宣言されているグローバルにのみアクセスできます。 Use the [Priority Preprocessor](/AdvancedFunctions/Preprocessors/PriorityPreprocessor/) to make sure the scripts in which global are declared are executed first.
-- グローバルはサブフォルダ内のスクリプトで宣言することはできません！ それはコンパイルされますが、巨大な FieldNotFound Exception が残されます。
-- `を` 部分として省略することは技術的に可能ですが、 IAny インターフェイスはまだ完全に機能していないため、残しておくことをお勧めします。 また、スクリプトを読んだりデバッグしたりすることで、宣言をより明確にすることができます。
-- ローカル変数/値 CAN オーバーシャドウグローバル変数。 スクリプトは常に変数の最も内側のスコープを検索し、キーワードを検索するときにグローバルに到達するまで外に出ます!
+- You can only access globals that have already been declared. Use the [Priority Preprocessor](/AdvancedFunctions/Preprocessors/PriorityPreprocessor/) to make sure the scripts in which global are declared are executed first.
+- Globals cannot be declared in scripts that are inside subfolders! It will compile but you will be left with a huge FieldNotFound Exception.
+- While it is technically possible to omit the `as` part, it is recommended leaving it in, as the IAny interface is not fully functional yet. Also, it makes your declaration more clear for people reading/debugging your script!
+- Local variables/values CAN overshadow global variables. The script will always search the innermost scope for variables and go outwards until it hits global when searching for keywords!

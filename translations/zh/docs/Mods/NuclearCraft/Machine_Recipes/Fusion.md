@@ -1,16 +1,16 @@
-# 融合模式
+# Fusion
 
-## 导入软件包
-`nuclearcraft.life`
+## Importing the Package
+`mods.nuclearcraft.fusion`
 
-## 添加配方
+## Adding Recipes
 ```zenscript
-mods.nuclearcraft.fusion.addRecipe([fluidInput1, fluidInput2, fluidOutt1, fluidOut2,fluidOutput3, fluidOutput4, douboTime, douboPower, douboHeatVar, @Optional double processRadiation]);
+mods.nuclearcraft.fusion.addRecipe([fluidInput1, fluidInput2, fluidOutput1, fluidOutput2, fluidOutput3, fluidOutput4, double comboTime, double comboPower, double comboHeatVar, @Optional double processRadiation]);
 ```
 
-## 删除配方
+## Removing Recipes
 ```zenscript
-mods.nuclearcraft.fusion.removeRecipewidInput([fluidInput1, fluidInput2]);
-mods.nuclecraft.fusion.removeRecipeWOutputt([fluidOutput1, fluidOutput2,fluidOut3, fluidOutput4]);
+mods.nuclearcraft.fusion.removeRecipeWithInput([fluidInput1, fluidInput2]);
+mods.nuclearcraft.fusion.removeRecipeWithOutput([fluidOutput1, fluidOutput2, fluidOutput3, fluidOutput4]);
 mods.nuclearcraft.fusion.removeAllRecipes();
 ```

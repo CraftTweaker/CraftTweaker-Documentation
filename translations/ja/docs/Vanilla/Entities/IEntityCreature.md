@@ -1,54 +1,54 @@
 # IEntityCreature
 
-創造物。
+A Creature.
 
 ## パッケージのインポート
 
 It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
 `import crafttweaker.entity.IEntityCreature;`
 
-## 拡張する [IEntityLiving](/Vanilla/Entities/IEntityLiving/)
+## Extending [IEntityLiving](/Vanilla/Entities/IEntityLiving/)
 
-IEntityCreature extends [IEntityLiving](/Vanilla/Entities/IEntityLiving/). つまり、 [IEntityLiving](/Vanilla/Entities/IEntityLiving/) オブジェクトで利用可能なすべての関数は、IEntityCreatureでも利用できます。
+IEntityCreature extends [IEntityLiving](/Vanilla/Entities/IEntityLiving/). That means all functions available to [IEntityLiving](/Vanilla/Entities/IEntityLiving/) objects also are available to IEntityCreature.
 
-## メソッド
+## Methods
 
 ### ZenGetters/Setters
 
-| ZenGetter            | タイプ                                    |
+| ZenGetter            | Type                                   |
 | -------------------- | -------------------------------------- |
 | hasPath              | bool                                   |
 | isWithinHomeDistance | bool                                   |
 | homePosition         | [IBlockPos](/Vanilla/World/IBlockPos/) |
-| maximumHomeDistance  | float型                                 |
+| maximumHomeDistance  | float                                  |
 | hasHome              | bool                                   |
 
 ### ZenMethods
 
-#### ライブサウンドを再生する
+#### play living sound
 
-メソッドは何も期待しません。  
-何も返しません。
+Method expects nothing.  
+Returns nothing.
 
 ```zenscript
 entCreObj.playLivingSound();
 ```
 
-#### ホームを設定または切り離します
+#### Set or detach home
 
-最初のメソッドは [IBlockPos](/Vanilla/World/IBlockPos/) オブジェクトと int を期待します。  
-2番目のメソッドは何も期待しません。  
-両方のメソッドは何も返しません。
+First method expects an [IBlockPos](/Vanilla/World/IBlockPos/) object and an int.  
+Second method expects nothing.  
+Both methods return nothing.
 
 ```zenscript
 entAnObj.setHomePositionAndDistance(IBlockPos pos, int distance);
 entAnObj.detachHome();
 ```
 
-#### ホームからの距離内に位置があるかどうかを確認します
+#### Check if a position is within the home distance
 
-メソッドは [IBlockPos](/Vanilla/World/IBlockPos/) オブジェクトを期待します。  
-ブールを返します。
+Method expects an [IBlockPos](/Vanilla/World/IBlockPos/) object.  
+Returns a bool.
 
 ```zenscript
 entAnObj.isPositionWithinHomeDistance

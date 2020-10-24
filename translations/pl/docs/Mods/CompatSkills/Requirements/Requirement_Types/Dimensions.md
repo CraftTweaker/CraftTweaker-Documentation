@@ -1,12 +1,12 @@
-# Wymiary:
+# Dimensions:
 
-Wymiary są wymaganiem wprowadzonym przez CompatSkills i pozwalają na bramienie rzeczy:
+Dimensions is a Requirement introduced by CompatSkills and allows you to gate things behind either:
 
-- Znajduje się w **określonym wymiarze**.
-- Znajduje się w **dowolnym** wymiarze **poza** określonym wymiarem.
+- Being in a **Specific** dimension.
+- Being in **any** dimension **other than** the one specified.
 
-    Przykład:
+    Example:
     dim|integer
     
-    Praca Przykład:
+    Working Example:
     dim|0

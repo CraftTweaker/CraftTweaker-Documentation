@@ -1,18 +1,18 @@
-# Generatore Di Combustione
+# Combustion Generator
 
-## Pacchetto
+## Package
 
 `import mods.enderio.CombustionGen;`
 
-## Metodi
+## Methods
 
-- **[ILiquididStack](/Vanilla/Liquids/ILiquidStack/) fuel** Il combustibile fluido da aggiungere.
-- **int powerPerCycleRF** Quantità di energia creata per tick in una macchina di linea di base.
-- **int totalBurnTime** Tempo di combustione totale di un secchio di carburante.
-- **[ILiquididStack](/Vanilla/Liquids/ILiquidStack/) coolant** The fluid coolant to add.
-- **float degreesCoolingPerMB** Quanto calore nel generatore può assorbire un mB del refrigerante aggiunto fino a quando non si riscalda tutto il modo?
+- **[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) fuel** The fluid fuel to add.
+- **int powerPerCycleRF** Amount of energy created per tick in a base-line machine.
+- **int totalBurnTime** Total burn time of one bucket of fuel.
+- **[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) coolant** The fluid coolant to add.
+- **float degreesCoolingPerMB** How much heat in the generator can one mB of the added coolant absorb until it heats up all the way?
 
-## Aggiungi Carburante
+## Add Fuel
 
 ```zenscript
 mods.enderio.CombustionGen.addFuel(ILiquidStack fuel, int powerPerCycleRF, int totalBurnTime);
@@ -20,15 +20,15 @@ mods.enderio.CombustionGen.addFuel(ILiquidStack fuel, int powerPerCycleRF, int t
 mods.enderio.CombustionGen.addFuel(<liquid:lava>, 25, 40);
 ```
 
-## Aggiungi Raffreddante
+## Add Coolant
 
 ```zenscript
-mods.enderio.CombustionGen.addCoolant(ILiquidStack fluido refrigerante, float degreesCoolingPerMB);
+mods.enderio.CombustionGen.addCoolant(ILiquidStack fluid coolant, float degreesCoolingPerMB);
 
 mods.enderio.CombustionGen.addCoolant(<liquid:liquid_sunshine>, 100);
 ```
 
-## Rimuovi Carburante
+## Remove Fuel
 
 ```zenscript
 mods.enderio.CombustionGen.removeFuel(ILiquidStack fuel);
@@ -36,7 +36,7 @@ mods.enderio.CombustionGen.removeFuel(ILiquidStack fuel);
 mods.enderio.CombustionGen.removeFuel(<liquid:fire_water>);
 ```
 
-## Rimuovi Raffreddante
+## Remove Coolant
 
 ```zenscript
 mods.enderio.AlloySmelter.removeCoolant(ILiquidStack coolant);

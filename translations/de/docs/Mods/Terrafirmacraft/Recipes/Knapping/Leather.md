@@ -1,25 +1,25 @@
-# Lederknabe
+# Leather Knapping
 
-## Paket
+## Package
 ```zenscript
-importieren mods.terrafirmacraft.leatherKnapping;
+import mods.terrafirmacraft.leatherKnapping;
 ```
 
 ## Addition
 
 ```zenscript
-letherKnapping.addRecipe(String RegistryName, IItemStack Ausgabe, String... Muster);
+leatherKnapping.addRecipe(String registryName, IItemStack output, String... pattern);
 ```
 
-## Entfernen
+## Removal
 
 ```zenscript
-letherKnapping.removeRecipe(IItemStack Output);
-letherKnapping.removeRecipe(String RegistryName);
+leatherKnapping.removeRecipe(IItemStack output);
+leatherKnapping.removeRecipe(String registryName);
 ```
 
 ## Beispiel
 ```zenscript
-// Köcher Rezept
+// quiver recipe
 leatherKnapping.addRecipe("recipe", <tfc:quiver>, " XXXX", "X XXX", "X XXX", "X XXX", " XXXX");
 ```

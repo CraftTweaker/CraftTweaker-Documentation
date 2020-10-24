@@ -1,31 +1,31 @@
-# Maquina de Laguna
+# Washing Machine
 
-La máquina de trabajo te permite limpiar ropa sucia.
+The Washing Machine allows you to clean dirty clothes.
 
-Por defecto repara la durabilidad de la armadura de vainilla, incluyendo el Elytra.
+By default repairs durability of vanilla armour, including the Elytra.
 
-## Eliminando
+## Removing
 
-## Eliminar elementos lavables coincidentes.
+## Remove matching washable items.
 
 ```zenscript
 mods.cfm.WashingMachine.remove(@Optional final IIngredient item);
 
 mods.cfm.WashingMachine.add(<minecraft:elytra>);
 mods.cfm.WashingMachine.remove(<minecraft:chainmail_helmet>);
-mods. fm.WashingMachine.remove(<minecraft:chainmail_chestplate>);
+mods.cfm.WashingMachine.remove(<minecraft:chainmail_chestplate>);
 mods.cfm.WashingMachine.remove(<minecraft:chainmail_leggings>);
 mods.cfm.WashingMachine.remove(<minecraft:chainmail_boots>);
-// Eliminar todos los elementos lavables.
+// Remove all washable items.
 mods.cfm.WashingMachine.remove();
 ```
 
-## Agregando
+## Adding
 
-## Añadir un elemento lavable.
+## Add a washable item.
 
 ```zenscript
-mods.cfm.WashingMachine.add(@Nonnull final ItemStack);
+mods.cfm.WashingMachine.add(@Nonnull final IItemStack item);
 
 mods.cfm.WashingMachine.add(<minecraft:elytra>);
 mods.cfm.WashingMachine.add(<minecraft:leather_helmet>);

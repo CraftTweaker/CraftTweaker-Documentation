@@ -1,52 +1,52 @@
-# 部品タイプ
+# PartType
 
-PartType は、複数の部品が適合するグループとして見ることができます。例えば、 `アイテム`
+A PartType can be seen as a group that several parts fit in, e.g. `items`
 
 ## パッケージのインポート
 
-問題が発生した場合は、パッケージをインポートする必要があるかもしれませんので、申し訳ありませんし、インポートを追加してください。  
+It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
 `import mods.contenttweaker.PartType;`
 
-## そのようなオブジェクトを取得しています
+## Retrieving such an object
 
 You can use the [MaterialSystem](/Mods/ContentTweaker/Materials/MaterialSystem/) to either retrieve an existing PartType object or create an entirely new one.  
 Check out below entry to learn how to create a new PartType.
 
 <details>
-    <summary>以下のタイプが事前登録されています:</summary>
+    <summary>Following types are pre-registered:</summary>
     <ul>
-        <li>項目</li>
-        <li>ブロック</li>
-        <li>鉱石</li>
-        <li><unk></li>
-        <li>アーマー</li>
+        <li>item</li>
+        <li>block</li>
+        <li>ore</li>
+        <li>fluid</li>
+        <li>armor</li>
         <li>minecart</li>
     </ul>
 </details>
 
 ## ZenMethods
 
-PartType から次の情報を取得できます:
+You can retrieve the following information from a PartType:
 
-| ZenMethod | 戻り値 |
-| --------- | --- |
-| getName() | 文字列 |
+| ZenMethod | 戻り値    |
+| --------- | ------ |
+| getName() | string |
 
-PartType: では、以下の情報を設定できます。
+You can set the following information on a PartType:
 
-| ZenMethod                       | パラメータタイプ                                                                     |
+| ZenMethod                       | Parameter Type                                                               |
 | ------------------------------- | ---------------------------------------------------------------------------- |
 | setData(IPartDataPiece[] data); | [IPartDataPiece](/Mods/ContentTweaker/Materials/Parts/PartDataPiece/)[] data |
 
-## 新しい部品タイプを作成
+## Create a new PartType
 
-何らかの理由で新しいPartTypeを登録する必要がある場合は、次の2つのことを知る必要があります:
+If you, for whatever reason would ever need to register a new PartType, you will need to know two things:
 
-- 新しいpartTypeの名前は何ですか？
-- How [MaterialParts](/Mods/ContentTweaker/Materials/Materials/MaterialPart/) created from [Parts](/Mods/ContentTweaker/Materials/Parts/Part/) that are of this type will be registred
+- What name the new partType will have
+- How [MaterialParts](/Mods/ContentTweaker/Materials/Materials/MaterialPart/) created from [Parts](/Mods/ContentTweaker/Materials/Parts/Part/) that are of this type will be registered
 
-1つ目はシンプルで、文字列です。  
-2つ目は少しトリッキーで、MaterialPartを入力として受け取る関数です。
+The first is simple, it's a string.  
+The second is a bit trickier, it's a function that takes a MaterialPart as input:
 
 ```zenscript
 #loader contenttweaker

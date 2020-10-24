@@ -1,25 +1,25 @@
 # Setting up GitHub
 
-開始するには、 [Github](https://github.com)の無料アカウントが必要です。  
-まだ登録していない場合は、登録手順に従ってください。
+In order to start, you need a free Account for [Github](https://github.com).  
+Follow the registration steps if you have none already.
 
-## リポジトリの場所
+## Locating the repository
 
-Wikiリポジトリは <https://github.com/CraftTweaker/CraftTweaker-Documentation> で見つけることができます。
+The wiki repository can be found at <https://github.com/CraftTweaker/CraftTweaker-Documentation>
 
-## Wikiをフォーク中
+## Forking the wiki
 
 In order for you to do any changes, you need to copy the whole CrT-Wiki Repository to your Github Account.  
 This action is called forking.  
 You can fork the repository by clicking on the "fork" button in the wiki's GH page: ![Inputs Order](/Contribute/assets/SetupGitHub_ForkButton.png)
 
-Github 組織にいる場合は、リポジトリをフォークする場所を指定する必要があります。
+In case you are in a Github organization you might need to specify where you want to fork the repository to.
 
-## フォークの場所
+## Locating your fork
 
-プロファイルのページ/リポジトリを確認する際に、「CraftTweaker-Documentation」と呼ばれる新しいリポジトリを見つけることができます。  
-または、 `github.com/yourUserName/CraftTweaker-Documentation` に移動することもできます。
+You can now find a new repository called "CraftTweaker-Documentation" when checking your profile page/repositories.  
+Alternatively, you can go to `github.com/yourUserName/CraftTweaker-Documentation`.
 
-## 続行方法
+## How to continue
 
-CraftTweaker-Documentation リポジトリを自分の GitHub アカウントにフォークしました。 [オンライン エディター](/Contribute/OnlineEditor_Edit/) または [をコンピューターにクローンする](/Contribute/LocalClone/Clone/) を使用して、ローカルで編集できます。
+Now that you have successfully forked the CraftTweaker-Documentation repository to your own GitHub account, you can [use the online Editor](/Contribute/OnlineEditor_Edit/) or [clone to your computer](/Contribute/LocalClone/Clone/) and edit locally.

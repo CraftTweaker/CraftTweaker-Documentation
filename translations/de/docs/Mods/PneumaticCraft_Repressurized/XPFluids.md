@@ -1,43 +1,43 @@
-# XP Flüssigkeiten
+# XP Fluids
 
-XP Fluiden werden in PneumaticCraft: Repressurized by the Aerial Interface, ein mächtiger Block, der ferngesteuert mit einem verbundenen Spieler verbunden werden kann. XP Flüssigkeiten, die in die Luftschnittstelle gepumpt werden, werden in Spielererfahrungen umgewandelt, und XP Flüssigkeiten werden aus der Erfahrung des Spielers gezogen.
+XP Fluids are used in PneumaticCraft: Repressurized by the Aerial Interface, a powerful block which can remotely interface with a linked player. XP Fluids pumped into the Aerial Interface are converted to player experience levels, and XP Fluids pumped out are drawn from the player's experience.
 
-Standardmäßig werden die folgenden Flüssigkeiten von der Luftschnittstelle erkannt:
+By default, the following fluids are recognized by the Aerial Interface:
 
-* XP Saft (EnderIO, Cyklisch, Openblocks)
-* Essenz des Wissens (thermische Erweiterung)
-* Mob-Essenz (Industrielle Foregoing)
+* XP Juice (EnderIO, Cyclic, Openblocks)
+* Essence of Knowledge (Thermal Expansion)
+* Mob Essence (Industrial Foregoing)
 
-Dieses Paket ermöglicht die Verwendung beliebiger anderer Flüssigkeiten durch die Luftschnittstelle als XP-Flüssigkeiten oder die Deregulierung bestehender XP-Flüssigkeiten.
+This package allows arbitrary other fluids to be used by the Aerial Interface as XP fluids, or for existing XP fluids to be deregistered.
 
-## Anruf
+## Calling
 
-Sie können das XP Fluids Paket mit `mods.pneumaticcraft.xpfluid` aufrufen.
+You can call the XP Fluids package using `mods.pneumaticcraft.xpfluid`.
 
-## Entfernen
+## Removing
 
-Diese Funktion dereguliert den [ILiquidStack](/Vanilla/Liquids/ILiquidStack/) `Flüssigkeit`:
+This function deregisters the [ILiquidStack](/Vanilla/Liquids/ILiquidStack/) `fluid`:
 
 ```zenscript
-mods.pneumaticcraft.xpfluid.removeXPFluid(ILiquidStack Fluid);
-// Beispiel
+mods.pneumaticcraft.xpfluid.removeXPFluid(ILiquidStack fluid);
+// Example
 mods.pneumaticcraft.xpfluid.removeXPFluid(<liquid:xpjuice>);
 ```
 
-Diese Funktion Dereguliert *alle* bekannten XP Flüssigkeiten:
+This function deregisters *all* known XP fluids:
 
 ```zenscript
 mods.pneumaticcraft.xpfluid.removeAllXPFluids();
 ```
 
-## Hinzufügen
+## Adding
 
-Diese Funktion kann verwendet werden, um Flüssigkeiten als XP-Flüssigkeiten zu registrieren:
+This function can be used to register fluids as XP fluids:
 
 ```zenscript
-// Registrieren Sie eine Flüssigkeit als XP Flüssigkeit. xpRatio definiert die Menge des Spielers XP pro Millibucket Flüssigkeit.
-mods.pneumaticcraft.xpfluid.addXPFluid(ILiquidStack Flüssigkeit);
+// Register a liquid as an XP fluid. xpRatio defines the amount of player XP per millibucket of fluid.
+mods.pneumaticcraft.xpfluid.addXPFluid(ILiquidStack fluid, double ratio);
 
-// Beispiel: Registriere LPG als XP Flüssigkeit im Wert von 10 XP pro mB
+// Example: register LPG as an XP fluid worth 10 XP per mB
 mods.pneumaticcraft.xpfluid.addXPFluid(<liquid:lpg>, 10);
 ```

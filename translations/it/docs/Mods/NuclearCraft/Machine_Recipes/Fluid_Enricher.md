@@ -1,16 +1,16 @@
-# Fluido Arricchito
+# Fluid Enricher
 
-## Importazione del pacchetto
-`mods.nuclearcraft.dissolutore`
+## Importing the Package
+`mods.nuclearcraft.dissolver`
 
-## Aggiunta Di Ricette
+## Adding Recipes
 ```zenscript
 mods.nuclearcraft.dissolver.addRecipe([itemInput, fluidInput, fluidOutput, @Optional double timeMultiplier, @Optional double powerMultiplier, @Optional double processRadiation]);
 ```
 
-## Rimozione Ricette
+## Removing Recipes
 ```zenscript
 mods.nuclearcraft.dissolver.removeRecipeWithInput([itemInput, fluidInput]);
 mods.nuclearcraft.dissolver.removeRecipeWithOutput([fluidOutput]);
-mods.nuclearcraft.dissolver.removeAllRicette();
+mods.nuclearcraft.dissolver.removeAllRecipes();
 ```

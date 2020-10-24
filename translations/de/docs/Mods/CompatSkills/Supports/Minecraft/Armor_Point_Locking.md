@@ -1,11 +1,11 @@
-# Rüstungswert-Sperre
+# Armor-Value Locking
 
-## Merkmal:
+## Feature:
 
-Diese Art von Schloß sperrt die Fähigkeit Rüstung, die eine bestimmte Anzahl an Rüstungspunkten hinter einer Reihe von Anforderungen bietet. Das bedeutet, wenn eine Rüstung 0 zur Verfügung stellt. 5 Rüstungspunkte, wie im Beispiel unten, kannst du ihn sperren, wenn du nur am Ende (Aka Dim 1)!
+This type of lock, locks the ability to use armor that provides a certain amount of Armor Points behind a set of requirements. This means that if an armor provides 0.75 armor point, as in the example below, you can lock it behind only being useable in the End (Aka Dim 1)!
 
 ## Syntax:
 
-    mods.compatskills.ArmorLock.addArmorLock(double Rüstung, String... erforderlich);
+    mods.compatskills.ArmorLock.addArmorLock(double armor, String... requirements);
     
     mods.compatskills.ArmorLock.addArmorLock(0.75, "dim|1");

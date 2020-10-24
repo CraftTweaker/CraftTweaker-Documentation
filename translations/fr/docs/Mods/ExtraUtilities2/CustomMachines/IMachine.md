@@ -1,103 +1,103 @@
 # IMachine
 
-Un IMachine est l'objet machine réel, vous pouvez l'obtenir dans le [IMachineRegistry](/Mods/ExtraUtilities2/CustomMachines/IMachineRegistry).
+An IMachine is the actual machine object, you can get it from the [IMachineRegistry](/Mods/ExtraUtilities2/CustomMachines/IMachineRegistry).
 
-## Importation du paquet
+## Importing the package
 
-Il peut être nécessaire pour vous de [importer](/AdvancedFunctions/Import) la classe.  
-Généralement, vous n'avez besoin d'importer une classe que si vous utilisez directement le nom, comme dans le casting ou [Déclaration de tableaux](/AdvancedFunctions/Arrays_and_Loops) mais mieux vaut être sûr que désolé et ajouter l'importation.
-
-```zenscript
-importer extrautilities2.Tweaker.IMachine ;
-```
-
-## Ajouter des recettes
-
-Il y a deux méthodes pour ajouter des recettes, l'une utilise une carte de probabilité pour les sorties, on autorise l'utilisation des objets [WeightedItemStack](/Vanilla/Items/WeightedItemStack) et [WeightedLiquidStack](/Vanilla/Liquids/WeightedLiquidStack) .  
-Les deux méthodes utilisent [des cartes](/AdvancedFunctions/Associative_Arrays) avec des chaînes comme indices.  
-Ces chaînes seront les noms des slots d'entrée/sortie donnés, c'est pourquoi vous ne devriez pas avoir deux emplacements avec le même nom dans une machine.
-
-### Utiliser une carte de probabilité
+It might be required for you to [import](/AdvancedFunctions/Import) the class.  
+You usually only need to import a class when directly using the name, such as in casting or [Array Declarations](/AdvancedFunctions/Arrays_and_Loops) but better be safe than sorry and add the import.
 
 ```zenscript
-myMachine.addRecipe(entrées, sorties, énergie, temps, probabilités) ;
+import extrautilities2.Tweaker.IMachine;
 ```
 
-Cette méthode utilise les paramètres suivants :
+## Add Recipes
 
-| Nom          | Type de texte                                               |
-| ------------ | ----------------------------------------------------------- |
-| inputs       | [Ingrédient](/Vanilla/Variable_Types/IIngredient)[chaîne\] |
-| outputs      | [Ingrédient](/Vanilla/Variable_Types/IIngredient)[chaîne\] |
-| Énergie      | Indice                                                      |
-| Heure        | Indice                                                      |
-| probabilités | float[chaîne\]                                             |
+There are two methods for adding recipes, one uses a probability map for the outputs, one allows for the use of [WeightedItemStack](/Vanilla/Items/WeightedItemStack) and [WeightedLiquidStack](/Vanilla/Liquids/WeightedLiquidStack) objects.  
+Both methods use [maps](/AdvancedFunctions/Associative_Arrays) with strings as indices.  
+These strings will be the names of the input/output slots given, which is why you should not have two slots with the same name in a machine.
 
-### Utiliser uniquement la carte des sorties
-
-Vous ne pouvez également utiliser que la carte de sortie, alors ExtUtils2 vérifiera tous les objets [WeightedItemStack](/Vanilla/Items/WeightedItemStack) et [WeightedLiquidStack](/Vanilla/Liquids/WeightedLiquidStack) et utilisera leurs chances.  
-Rappelez-vous qu'ajouter autre chose que ces deux ou [IIngrédient](/Vanilla/Variable_Types/IIngredient) en tant que valeur mappée, n'aura aucun effet.
+### Using a probability map
 
 ```zenscript
-myMachine.addRecipe(entrées, sorties, énergie, temps) ;
+myMachine.addRecipe(inputs, outputs, energy, time, probabilities);
 ```
 
-Cette méthode utilise les paramètres suivants :
+This method uses the following parameters:
 
-| Nom     | Type de texte                                               |
-| ------- | ----------------------------------------------------------- |
-| inputs  | [Ingrédient](/Vanilla/Variable_Types/IIngredient)[chaîne\] |
-| outputs | Objet[Chaîne\]                                             |
-| Énergie | Indice                                                      |
-| Heure   | Indice                                                      |
+| Name          | Type                                                         |
+| ------------- | ------------------------------------------------------------ |
+| inputs        | [IIngredient](/Vanilla/Variable_Types/IIngredient)[string\] |
+| outputs       | [IIngredient](/Vanilla/Variable_Types/IIngredient)[string\] |
+| energy        | int                                                          |
+| time          | int                                                          |
+| probabilities | float[string\]                                              |
 
-## Retirer des recettes
+### Using only the outputs map
 
-Vous pouvez également supprimer des recettes. Encore une fois, vous utilisez [maps](/AdvancedFunctions/Associative_Arrays) avec des chaînes comme indices.
-
-Il y a deux méthodes, on utilise [Ingrédient](/Vanilla/Variable_Types/IIngredient) comme valeurs, et une qui accepte une carte avec [IItemStack](/Vanilla/Items/IItemStack) et une carte avec les valeurs [ILiquidStack](/Vanilla/Liquids/ILiquidStack).
-
-### Utiliser IIngrédient
+You can also only use the outputs map, then ExtUtils2 will check for any [WeightedItemStack](/Vanilla/Items/WeightedItemStack) and [WeightedLiquidStack](/Vanilla/Liquids/WeightedLiquidStack) objects and use their chances.  
+Remember, that adding anything other than those two or [IIngredient](/Vanilla/Variable_Types/IIngredient) as mapped value, will have no effect.
 
 ```zenscript
-monMachine.removeRecipe(entrées) ;
+myMachine.addRecipe(inputs, outputs, energy, time);
 ```
 
-| Nom    | Type de texte                                               |
-| ------ | ----------------------------------------------------------- |
-| inputs | [Ingrédient](/Vanilla/Variable_Types/IIngredient)[chaîne\] |
+This method uses the following parameters:
 
-### Utiliser des cartes séparées pour les objets et les liquides
+| Name    | Type                                                         |
+| ------- | ------------------------------------------------------------ |
+| inputs  | [IIngredient](/Vanilla/Variable_Types/IIngredient)[string\] |
+| outputs | Object[string\]                                             |
+| energy  | int                                                          |
+| time    | int                                                          |
+
+## Remove recipes
+
+You can also remove recipes. Again, you use [maps](/AdvancedFunctions/Associative_Arrays) with strings as indices.
+
+There are two methods, one uses [IIngredient](/Vanilla/Variable_Types/IIngredient) as values, and one that accepts a map with [IItemStack](/Vanilla/Items/IItemStack) and a map with [ILiquidStack](/Vanilla/Liquids/ILiquidStack) values.
+
+### Using IIngredient
 
 ```zenscript
-myMachine.removeRecipe(articles, liquides);
+myMachine.removeRecipe(inputs);
 ```
 
-| Nom      | Type de texte                                           |
-| -------- | ------------------------------------------------------- |
-| Eléments | [IItemStack](/Vanilla/Items/IItemStack)[string\]       |
-| liquides | [ILiquidStack](/Vanilla/Liquids/ILiquidStack)[chaîne\] |
+| Name   | Type                                                         |
+| ------ | ------------------------------------------------------------ |
+| inputs | [IIngredient](/Vanilla/Variable_Types/IIngredient)[string\] |
 
-## Récupération des informations de la machine
-
-Vous pouvez également récupérer quelques informations sur la machine en utilisant les méthodes suivantes :
-
-- `getInputSlots()`: Retourne tous les slots d'entrée en tant que liste de [IMachineSlot](/Mods/ExtraUtilities2/CustomMachines/IMachineSlot).
-- `getOutputSlots()`: Retourne tous les slots de sortie en tant que liste de [IMachineSlot](/Mods/ExtraUtilities2/CustomMachines/IMachineSlot).
-- `getSlot()`: Retourne le [IMachineSlot](/Mods/ExtraUtilities2/CustomMachines/IMachineSlot) correspondant au nom.
-
-## Nommer la machine
-
-Jusqu'à présent, toutes nos machines seront nommées `machine.crafttweaker:your_machine_name` où `votre_machine_name` est le nom que vous avez utilisé pour créer la machine.
-
-Si vous voulez que le nom de la machine soit localisé, utilisez soit les capacités [IGame](/Vanilla/Game/IGame) de CrT, soit un fichier de lang personnalisé.
-
-Donc, si le nom de votre machine était `time_machine`, vous devrez l'appeler dans un script :
+### Using separate maps for Items and Liquids
 
 ```zenscript
-game.setLocalization("machine.crafttweaker:time_machine", "Space Time distorter (machine à temps)");
+myMachine.removeRecipe(items, liquids);
 ```
 
-Ou ajouter ceci à un fichier de langue :
+| Name    | Type                                                    |
+| ------- | ------------------------------------------------------- |
+| items   | [IItemStack](/Vanilla/Items/IItemStack)[string\]       |
+| liquids | [ILiquidStack](/Vanilla/Liquids/ILiquidStack)[string\] |
 
-    machine.crafttweaker:time_machine=Space Time distorter (machine temporelle)
+## Retrieving machine information
+
+You can also retrieve some information on the machine using the following methods:
+
+- `getInputSlots()`: Returns all input slots as a List of [IMachineSlot](/Mods/ExtraUtilities2/CustomMachines/IMachineSlot).
+- `getOutputSlots()`: Returns all output slots as a List of [IMachineSlot](/Mods/ExtraUtilities2/CustomMachines/IMachineSlot).
+- `getSlot()`: Returns the [IMachineSlot](/Mods/ExtraUtilities2/CustomMachines/IMachineSlot) matching the name.
+
+## Naming the machine
+
+So far, all our machines will be named `machine.crafttweaker:your_machine_name` where `your_machine_name` is whatever name you used to create the machine.
+
+If you want the machine name localized, use either CrT's [IGame](/Vanilla/Game/IGame) capabilities or a custom lang file.
+
+So if your machine name was `time_machine`, you would need to either call this in a script:
+
+```zenscript
+game.setLocalization("machine.crafttweaker:time_machine", "Space Time distorter (Time machine)");
+```
+
+Or add this to a lang file:
+
+    machine.crafttweaker:time_machine=Space Time distorter (Time machine)

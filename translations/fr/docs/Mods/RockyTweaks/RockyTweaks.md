@@ -2,12 +2,12 @@
 
 ## Information
 
-Les améliorations rocheuses (anciennement connues sous le nom de Noyau de Roche) ajoutent la possibilité de modifier les échanges de l'enclume Vanilla et de Marchand (Villageoir) avec CraftTweaker.
+Rocky Tweaks (formerly known as Rocky Core) adds the ability to tweak the Vanilla Anvil and Merchant (Villager) trades using CraftTweaker.
 
-### Pour plus d'information
+### For More Information
 
-Page du projet : [https://minecraft.curseforge.com/projects/rocky-tweaks](https://minecraft.curseforge.com/projects/rocky-tweaks)
+Project Page: [https://minecraft.curseforge.com/projects/rocky-tweaks](https://minecraft.curseforge.com/projects/rocky-tweaks)
 
-### Rapports de bugs
+### Bug Reports
 
-Suivi des problèmes: [https://github.com/DevOnTheRocks/RockyTweaks/issues](https://github.com/DevOnTheRocks/RockyTweaks/issues)
+Issue Tracker: [https://github.com/DevOnTheRocks/RockyTweaks/issues](https://github.com/DevOnTheRocks/RockyTweaks/issues)

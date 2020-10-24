@@ -1,5 +1,5 @@
-# 保普尔斯
+# Baubles
 
-## 泡沫支持
+## Baubles Support
 
-Bautbles-Support 是标准条目Stack-Requirement 锁的一部分。 这意味着任何物品在您的泡沫库存中没有必要的要求，都将被自动弹出，并且一个错误消息将被打印！
+Baubles-Support is part of the standard ItemStack-Requirement locks. This means that any Item you do not have the required requirements for in your Baubles Inventory will be automatically-ejected and a error message will be printed!

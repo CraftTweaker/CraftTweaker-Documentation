@@ -1,8 +1,8 @@
-# Rondella Chimica
+# Chemical Washer
 
-A partire dal Mekanism 9.7.0 è ora possibile visualizzare tutte le stringhe di ricetta della Rondella Chimica attraverso il comando `/ct Rondella mekrecipes`
+As of Mekanism 9.7.0 it is now possible to view all recipe strings of the Chemical Washer through the command `/ct mekrecipes washer`
 
-## Addizione
+## Addition
 
 ```zenscript
 mods.mekanism.chemical.washer.addRecipe(IGasStack inputGas, IGasStack outputGas);
@@ -10,7 +10,7 @@ mods.mekanism.chemical.washer.addRecipe(IGasStack inputGas, IGasStack outputGas)
 mods.mekanism.chemical.washer.addRecipe(<gas:deuterium>, <gas:tritium>);
 ```
 
-## Rimozione
+## Removal
 
 ```zenscript
 mods.mekanism.chemical.washer.removeRecipe(IIngredient outputGas, @Optional IIngredient inputGas);
@@ -19,12 +19,12 @@ mods.mekanism.chemical.washer.removeRecipe(<gas:cleanLead>, <gas:lead>);
 mods.mekanism.chemical.washer.removeRecipe(<gas:cleanOsmium>);
 ```
 
-Specificare un parametro di input rimuoverà solo la ricetta specifica che utilizza detto input. L'esclusione del parametro di input rimuoverà tutte le ricette che producono l'output specificato.
+Specifying an input parameter will only remove the specific recipe that uses said input. Omitting the input parameter will remove all recipes that produce the specified output.
 
-## Rimozione di tutte le ricette
+## Removing all recipes
 
-A partire da Mekanism 9.7.0 è ora possibile rimuovere tutte le ricette di lavatrice chimica. (Questo esclude le ricette aggiunte tramite CraftTweaker)
+As of Mekanism 9.7.0 it is now possible to remove all Chemical Washer recipes. (This excludes any recipes added via CraftTweaker)
 
 ```zenscript
-mods.mekanism.chemical.washer.removeAllRicette();
+mods.mekanism.chemical.washer.removeAllRecipes();
 ```

@@ -1,40 +1,40 @@
 # Ores
 
-**Necesita estar en `#loader preinit` o `#loader contenttweaker`**
+**Needs to be in the `#loader preinit` or `#loader contenttweaker`**
 
 
-## Paquete
+## Package
 ```zenscript
 `mods.exnihilocreatio.Ore`
 ```
 
-## Métodos
+## Methods
 
-- **Nombre de la cadena** Nombre de los trozos de mineral/piece/polvo/ingot
-- **Color de cuerda** Color del material en hex.
-- **[ItemStack](/Vanilla/Items/IItemStack/) salida** requiere un oredict.firstItem o errores.
-- **Mapa la cadena[string]** Código de idioma y traducción.
-- **Cadena oreDict** El nombre del dict que quieres.
+- **String name** Name the ore chunks/piece/dust/ingot
+- **String color** Color of material in hex.
+- **[IItemStack](/Vanilla/Items/IItemStack/) output** requires an oredict.firstItem or errors out.
+- **Map string[string]** Language code then translation.
+- **String oreDict** The name of the oreDict you want.
 
-## Adicional
+## Addition
 
 ```zenscript
-mods.exnihilocreatio.Ore. ddReceta(String,
-    Cadena,
-    @Pila de objetos opcional,
+mods.exnihilocreatio.Ore.addRecipe(String,
+    String,
+    @Optional IItemStack,
     @Optional Map<string, String>,
     @Optional String);
 
-mods. xnihilocreatio.Ore.addRecipe("Piedra",
+mods.exnihilocreatio.Ore.addRecipe("Stone",
     "63452D",
-    <ore:stone>. irstItem,
+    <ore:stone>.firstItem,
     {
-    "es_au": "StoneDownUnder"
+    "en_au": "StoneDownUnder"
     },
-    "Piedra");
+    "Stone");
 ```
 
-## Eliminar
+## Removal
 
 ```zenscript
 mods.exnihilocreatio.Ore.removeAll();

@@ -1,20 +1,20 @@
-# Manejadores de brazos
+# Bracket Handlers
 
-## Manejadores de brazos
+## Bracket Handlers
 
-### Manejador de brazaletes de habilidad:
+### Skill Bracket Handler:
 
-    ## Ejemplo:
+    ## Example:
     <skill:resourcelocation>
     
-    ## Ejemplo de trabajo:
+    ## Working Example:
     <skill:reskillable:agility>
     
 
-### Manejador de brazaletes de rasgo:
+### Trait Bracket Handler:
 
-    ## Ejemplo:
+    ## Example:
     <trait:resourcelocation>
     
-    ## Ejemplo de trabajo:
+    ## Working Example:
     <trait:reskillable:sidestep>

@@ -1,35 +1,35 @@
-# 电源线索 :: Fluid Burner :: 冷却器
+# Powered Thingies :: Fluid Burner :: Coolant
 
 ### 导入
 
 ```zenscript
-导入mods.poweredthingies.Tweeper.fluidBurnerCoolantTinflow作为冷却器；
+import mods.poweredthingies.Tweaker.fluidBurnerCoolantTweaker as coolant;
 ```
 
-### 列出密钥，按键删除配方
+### Listing Keys, Removing Recipes by Key, Clearing
 
 ```zenscript
-colotant().logKeys()
-colotant().removeRecipe('teslathingies:fluid_tf-molten_tesla') // 检查 <logKeys> 输出有效密钥
-colot().clear()
+coolant().logKeys()
+coolant().removeRecipe('teslathingies:fluid_tf-molten_tesla') // check <logKeys> output for valid keys
+coolant().clear()
 ```
 
-### 添加配方
+### Adding Recipe
 
-##### 签名
+##### Signature
 
 ```zenscript
-addCoolant(fluid: ILiquidStack, tiplier: Float)
+addCoolant(fluid: ILiquidStack, timeMultiplier: Float)
 ```
 
-`时间倍增器` 是用于增加(或减少)燃料燃烧时的数量的值。
+`timeMultiplier` is the value that will be used to increase (or decrease) the number ticks a fuel will burn for.
 
 ##### 例子
 
 ```zenscript
-冷却().addCoolant(<liquid:tf-sewage> * 50, 1.1);
+coolant().addCoolant(<liquid:tf-sewage> * 50, 1.1);
 ```
 
-### 注
+### Notes
 
-所有这些操作都会被缓存并运行在这台机器的默认注册表完成注册后所有配方(包括来自自定义jsons的配方)。
+All of these actions will get cached and ran after the default registry for this machine has finished registering all recipes (including the ones from the custom jsons).

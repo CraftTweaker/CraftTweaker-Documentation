@@ -1,27 +1,27 @@
-# Gestori Parentesi
+# Bracket Handlers
 
-ZenScript utilizza parentesi per fare riferimento agli oggetti di gioco come Oggetti, Entità e Oredict.
+ZenScript uses Brackets to reference game objects such as Items, Entities and Oredict.
 
-## Come usare Bracket Handlers
+## How to use Bracket Handlers
 
-Le parentesi in ZenScript sono definite usando i caratteri `<` e `>` , qualsiasi cosa all'interno di questi caratteri è considerata una parentesi.
+Brackets in ZenScript are defined using the `<` and `>` characters, anything inside these characters are considered a Bracket.
 
-Un esempio di Gestore di parentesi sarebbe il Gestore di parentesi di oggetti, che ti dà accesso agli oggetti all'interno del gioco.
+An example of a Bracket Handler would be the Item Bracket Handler, which gives you access to the items inside the game.
 
-## Esempi
+## Examples
 
-Un esempio del [Item Bracket Handler](/Vanilla/Brackets/Bracket_Item/) sarebbe:
+An example of the [Item Bracket Handler](/Vanilla/Brackets/Bracket_Item/) would be:
 
 ```zenscript
 <minecraft:apple>
 ```
 
-Questo ti darà accesso all'elemento `Apple` [](/Vanilla/Items/IItemStack/).
+This will give you access to the `Apple` [item](/Vanilla/Items/IItemStack/).
 
-Un esempio di [OreDictEntry Bracket Handler](/Vanilla/Brackets/Bracket_Ore/) sarebbe:
+An example of the [OreDictEntry Bracket Handler](/Vanilla/Brackets/Bracket_Ore/) would be:
 
 ```zenscript
 <ore:ingotIron>
 ```
 
-Questo ti darà accesso al [IOreDictEntry](/Vanilla/OreDict/IOreDictEntry/) per `ingotIron`.
+This will give you access to the [IOreDictEntry](/Vanilla/OreDict/IOreDictEntry/) for `ingotIron`.

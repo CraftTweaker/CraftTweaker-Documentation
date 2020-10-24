@@ -36,7 +36,7 @@ val IArray = [<minecraft:gold_ingot>, <minecraft:iron_ingot>] as IItemStack[];
 
 ## Verschachtelte Arrays
 
-Du kannst Arrays in Arrays platzieren.
+You can place Arrays in Arrays.
 
 ```zenscript
 val stringArray1 = ["Hallo","Welt"] as string[];
@@ -47,9 +47,9 @@ val stringArrayAll = [stringArray1,stringArray2,stringArray3,["Schmetterling","!
 
 ## Auf Elemente innerhalb eines Arrays zugreifen
 
-Sie können auf ein Element innerhalb eines Arrays verweisen, indem Sie dessen Platz in der Liste verwenden. Das erste Element in einem Array ist Nein. 0, die 2. Nr. 1 und so weiter.
+You can refer to an element within an array by using it's place in the list. The first item in an Array is No. 0, the 2nd No.1 and so on.
 
-Wenn du auf ein Element in einem verschachtelten Array verweisen möchtest, Sie benötigen zwei oder mehr Referenten, da jeder eine Ebene der Listen entfernt.
+If you want to refer to an item in a nested Array, you need two or more referers, as each removes one layer of the lists.
 
 ```zenscript
 /*
@@ -87,12 +87,12 @@ print(stringArrayAll[0][1]);
 
 # Schleifen
 
-Eine Schleife ist eine Funktion, die sich wiederholt. Du kannst Schleifen verwenden, um eine Aktion auf alle Elemente eines Arrays anzuwenden
+A loop is a function that repeats itself. You can use loops to apply an action to all elements in an Array
 
 ## For-Schleifen
 
-Die Hauptnutzung der For-Schleife ist durch ein Array iteriert. Iterieren bedeutet, eine Aktion für alle Elemente eines Arrays durchzuführen.  
-Sie können das Schlüsselwort `break` verwenden, um die Schleife vorzeitig zu brechen.
+The main use of the for-loop is iterating through an array. Iterating means doing an action to all elements of an array.  
+You can use the `break` keyword to break the loop prematurely.
 
 ```zenscript
 import crafttweaker.item.IItemStack;
@@ -137,8 +137,8 @@ for item in loadedMods["minecraft"].items {
 
 ## While-Schleife
 
-Die während der Schleife führt den angegebenen Code aus, solange die angegebene Bedingung `true`auswertet.  
-Alternativ können Sie ihn mit dem `Pause` Schlüsselwort stoppen.
+The while loop executes the given code as long as the given condition evaluates to `true`.  
+Alternatively, you can stop it using the `break` keyword.
 
 ```zenscript
 var i = 0; 
@@ -172,9 +172,9 @@ for k in 1 .. 10 {
 
 # Elemente in ein Array hinzufügen
 
-Obwohl dies nicht empfohlen wird, ist es möglich, einige Objekte zu Arrays hinzuzufügen.  
-Sie können nur einzelne Objekte zu einem Array hinzufügen, Sie können nicht zwei Arrays hinzufügen.  
-Sie verwenden den `+` Operator für Arrayzusatz:
+While it is not recommended to do so, it is possible to add some Objects to Arrays.  
+You can only add single Objects to an array, you cannot add two arrays.  
+You use the `+` operator for array Addition:
 
 ```zenscript
 import crafttweaker.item.IItemStack;

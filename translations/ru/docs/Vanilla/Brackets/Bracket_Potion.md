@@ -1,8 +1,8 @@
-# Обработчик Значков
+# Potion Bracket Handler
 
-Обработчик с Зельями дает вам доступ к Зельям в игре. Можно получить только Зелья зарегистрированные в игре, так что добавление или удаление модов могут вызвать проблемы, если вы ссылаетесь на зелья мода в обработчике зелий.
+The Potion Bracket Handler gives you access to the Potions in the game. It is only possible to get Potions registered in the game, so adding or removing mods may cause issues if you reference the mod's Potions in a Potion Bracket Handler.
 
-Зелья упоминаются на обработчике зелий типа так:
+Potions are referenced in the Potion Bracket Handler like so:
 
 ```zenscript
 <potion:modname:potionname>
@@ -10,11 +10,11 @@
 <potion:minecraft:strength>
 ```
 
-Если определено зелье, то будет возвращено Зелье. Пожалуйста, обратитесь к [соответствующей вики](/Vanilla/Potions/IPotion/) для получения дополнительной информации о том, что вы можете сделать с этим.
+If the Potion is found, this will return an IPotion Object. Please refer to the [respective Wiki entry](/Vanilla/Potions/IPotion/) for further information on what you can do with these.
 
-# Получение всех зарегистрированных зелий
+# Getting all Registered Potions
 
-Вы можете использовать следующую команду для вывода всех зарегистрированных зелий в CraftTweaker лог
+You can use the following command to output all registered Potions to the CraftTweaker log
 
-    /ct зелий
-    /crafttweaker зелья
+    /ct potions
+    /crafttweaker potions

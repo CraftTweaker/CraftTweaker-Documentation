@@ -1,22 +1,22 @@
 # ProjectileImpactThrowable
 
-Questo evento viene sparato ogni volta che un proiettile lanciabile ha un impatto su un'entità ma prima del danno, ecc, viene calcolato. È **annullabile**e, se annullato, l'impatto non sarà elaborato.
+This event is fired whenever a throwable projectile impacts an entity but before damage, etc, is calculated. It is **cancelable**, and if canceled, the impact will not be processed.
 
-## Importare la classe
-Potrebbe essere necessario [importare](/AdvancedFunctions/Import/) la classe per evitare errori.  
-`importare crafttweaker.event.ProjectileImpactThrowableEvent;`
+## Importing the class
+It might be required to [import](/AdvancedFunctions/Import/) the class to avoid errors.  
+`import crafttweaker.event.ProjectileImpactThrowableEvent;`
 
-## Estendere IEntityEvent
-ProjectileImpactThrowable Events implementare le seguenti interfacce e sono in grado di chiamare anche tutti i loro metodi/getter/setter:
+## Extending IEntityEvent
+ProjectileImpactThrowable Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
 
 - [IProjectileEvent](/Vanilla/Events/Events/IProjectileEvent/)
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 
-## ZenGetters e ZenSetters
+## ZenGetters and ZenSetters
 
-Le seguenti informazioni possono essere ricavate dall'evento:
+The following information can be retrieved from the event:
 
-| ZenGetter        | ZenSetter | Tipo                                                      |
-| ---------------- | --------- | --------------------------------------------------------- |
-| `palla di fuoco` |           | [IEntity](/Vanilla/Entities/IEntity/)                     |
-| `tiratore`       |           | [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) |
+| ZenGetter  | ZenSetter | Type                                                      |
+| ---------- | --------- | --------------------------------------------------------- |
+| `fireball` |           | [IEntity](/Vanilla/Entities/IEntity/)                     |
+| `shooter`  |           | [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) |

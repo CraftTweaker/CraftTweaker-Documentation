@@ -1,10 +1,10 @@
-# Блокировка сбора урожая
+# Block Harvest-Level Locking
 
-## Свойство:
+## Feature:
 
-Этот замок делает так, что игрок не может сломать блок с установленным на Harvest-Level до тех пор, пока не будет удовлетворен набор требований. Например, ниже можно увидеть, что блоки с уровнем урожая 3 могут быть разбиты только на конце. Этот пример на самом деле не очень хорош на практике, но он показывает, что этот тип замка способен делать.
+This lock makes it so the player can't break a block with the set Harvest-Level unless a set of Requirements are met. For example below, you can see that Blocks with a Harvest-Level of 3 can only be broken in the End. This example is not really that great in practice, but it does show what this type of lock is capable of doing.
 
-## Синтаксис:
+## Syntax:
 
     mods.compatskills.HarvestLock.addBlockLevelLock(int level, String... requirements);
     

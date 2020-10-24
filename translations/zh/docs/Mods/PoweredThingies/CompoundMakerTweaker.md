@@ -1,33 +1,33 @@
-# 驱动器 :: 复合Maker
+# Powered Thingies :: Compound Maker
 
 ### 导入
 
 ```zenscript
-导入mods.poweredthingies.Tweeper.compoundTinfate as ct;
+import mods.poweredthingies.Tweaker.compoundTweaker as ct;
 ```
 
-### 列出密钥，按键删除配方
+### Listing Keys, Removing Recipes by Key, Clearing
 
 ```zenscript
 ct().logKeys()
-ct().removeRecipe('minecraft:stone') // 检查 <logKeys> 输出有效密钥
-ct().ct().clear()
+ct().removeRecipe('minecraft:stone') // check <logKeys> output for valid keys
+ct().clear()
 ```
 
-### 添加配方
+### Adding Recipe
 
-##### 签名
+##### Signature
 
 ```zenscript
-addRecipe(输出: IItemStack, 左: ILiquidStack?, 顶: 数组<IItemStack>?, 右: ILiquidStack?, 底: 数组<IItemStack>?)
+addRecipe(output: IItemStack, left: ILiquidStack?, top: Array<IItemStack>?, right: ILiquidStack?, bottom: Array<IItemStack>?)
 ```
 
 ##### 例子
 
 ```zenscript
-ct().addRecipe(<minecraft:obsidian>, <liquid:lava> * 250, [<minecraft:cobblestone>, <minecraft:cobblestone>], 空, [<minecraft:cobblestone>, <minecraft:cobblestone>]);
+ct().addRecipe(<minecraft:obsidian>, <liquid:lava> * 250, [<minecraft:cobblestone>, <minecraft:cobblestone>], null, [<minecraft:cobblestone>, <minecraft:cobblestone>]);
 ```
 
-### 注
+### Notes
 
-所有这些操作都会被缓存并运行在这台机器的默认注册表完成注册后所有配方(包括来自自定义jsons的配方)。
+All of these actions will get cached and ran after the default registry for this machine has finished registering all recipes (including the ones from the custom jsons).

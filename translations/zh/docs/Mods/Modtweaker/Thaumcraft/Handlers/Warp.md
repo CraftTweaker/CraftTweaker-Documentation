@@ -1,18 +1,18 @@
 # Warp
 
-这个软件包允许您设置物品的Warp。
+This package allows you to set items' Warp.
 
 ## 导入相关包
 
-您可以 [导入](/AdvancedFunctions/Import/) 个软件包及其方法来方便检索这些方法。
+You can [import](/AdvancedFunctions/Import/) the package and its methods to facilitate the retrival of the methods.
 
 ```zenscript
-导入 mods.thaumcraft.Warp;
+import mods.thaumcraft.Warp;
 ```
 
-## 设置Warp
+## Setting Warp
 
 ```zenscript
-//mods.thaumcraft.Warp.setWarp(StemStack, int amount);
+//mods.thaumcraft.Warp.setWarp(IItemStack stack, int amount);
 mods.thaumcraft.Warp.setWarp(<minecraft:dirt>, 500);
 ```

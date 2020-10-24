@@ -1,38 +1,38 @@
 # Iterable
 
-La IterableAnnotation se puede aplicar a una clase para permitir a ZS Iterando sobre ella.  
-Hay tres tipos de IterableAnnotations:
+The IterableAnnotation can be applied to a class to allow ZS Iterating over it.  
+There are three kinds of IterableAnnotations:
 
-- `@IterableSimple` (necesita implementar `Iterable`)
-- `@IterableList` (necesita implementar `Lista`)
-- `@IterableMap` (necesita implementar `Mapa`)
+- `@IterableSimple` (needs to implement `Iterable`)
+- `@IterableList` (needs to implement `List`)
+- `@IterableMap` (needs to implement `Map`)
 
-## Ejemplo
+## Example
 
-[IOreDict de CraftTweaker](https://github.com/jaredlll08/CraftTweaker/blob/1.12/CraftTweaker2-API/src/main/java/crafttweaker/api/oredict/IOreDict.java)
+[CraftTweaker's IOreDict](https://github.com/jaredlll08/CraftTweaker/blob/1.12/CraftTweaker2-API/src/main/java/crafttweaker/api/oredict/IOreDict.java)
 
 ```java
 @ZenClass("crafttweaker.oredict.IOreDict")
-@IterableSimple("crafttweaker.oredict. OreDictEntry")
+@IterableSimple("crafttweaker.oredict.IOreDictEntry")
 @ZenRegister
 public interface IOreDict extends Iterable<IOreDictEntry> {
 
 
     @ZenMemberGetter
-    @ZenOperator(OperatorType. NDEXGET)
+    @ZenOperator(OperatorType.INDEXGET)
     @ZenMethod
     IOreDictEntry get(String name);
 
-    @ZenGetter("entradas")
-    Lista<IOreDictEntry> getEntries();
+    @ZenGetter("entries")
+    List<IOreDictEntry> getEntries();
 
-    @ZenOperator(OperatorType. ONTAINS)
+    @ZenOperator(OperatorType.CONTAINS)
     @ZenMethod
-    contains booleanos (nombre de búsqueda);
+    boolean contains(String name);
 }
 ```
 
-[MCOreDict (implementación)](https://github.com/jaredlll08/CraftTweaker/blob/1.12/CraftTweaker2-MC1120-Main/src/main/java/crafttweaker/mc1120/oredict/MCOreDict.java)
+[MCOreDict (implementation)](https://github.com/jaredlll08/CraftTweaker/blob/1.12/CraftTweaker2-MC1120-Main/src/main/java/crafttweaker/mc1120/oredict/MCOreDict.java)
 
 ```java
     @Override
@@ -42,10 +42,10 @@ public interface IOreDict extends Iterable<IOreDictEntry> {
                 .map(CraftTweakerMC::getOreDict)
                 .iterator();
 
-}
+    }
 ```
 
-## ¿Cómo sería útil esto en ZS?
+## How would that be useable in ZS?
 
 ```zenscript
 for oreDictEntry in oreDict {
@@ -53,7 +53,7 @@ for oreDictEntry in oreDict {
 }
 ```
 
-## Qué clases se pueden anotar || Información adicional
+## What Classes can be annotated || Additional Info
 
-Puede anotar todas las clases que implementen la interfaz requerida.  
-Debe proporcionar un valor de cadena que se refiere al nombre de clase de ZenScript [Iterado.](/Dev_Area/ZenAnnotations/Annotation_ZenClass/).
+You can annotate all classes that implement the required interface.  
+You need to provide a String value that refers to the Iterated [ZenScript's class name](/Dev_Area/ZenAnnotations/Annotation_ZenClass/).

@@ -1,17 +1,17 @@
 # IUser
 
-Interfejs IUser jest używany wewnętrznie do łączenia różnych typów użytkowników, takich jak konsola minecraft, normalny użytkownik i bloki poleceń jednego typu.  
-Prawdopodobnie rzadko tego potrzebujesz.
+The IUser interface is used internally to combine different userTypes, like the minecraft console, a normal user and command blocks in one type.  
+You will probably seldomly need this.
 
-## Importowanie pakietu
+## Importing the package
 
-Może być wymagane zaimportowanie pakietu, jeśli napotkasz jakiekolwiek problemy (takie jak przesyłanie [Array](/AdvancedFunctions/Arrays_and_Loops/)), tak aby były bezpieczne niż przepraszamy i dodaj import.  
-`zaimportuj crafttweaker.player.IUser;`
+It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
+`import crafttweaker.player.IUser;`
 
-## Rozszerzenie ICommandSender
+## Extending ICommandSender
 
-IUser rozszerza [ICommandSender](/Vanilla/Commands/ICommandSender/). Oznacza to, że wszystkie funkcje dostępne dla [ICommandSender](/Vanilla/Commands/ICommandSender/) obiekty są również dostępne dla obiektów IUser.
+IUser extends [ICommandSender](/Vanilla/Commands/ICommandSender/). That means all functions available to [ICommandSender](/Vanilla/Commands/ICommandSender/) Objects also are available to IUser Objects.
 
-## Metody
+## Methods
 
-Obecnie nie ma odrębnych funkcji dla obiektów IUser.
+Currently there are no distinct functions for IUser objects.

@@ -1,46 +1,46 @@
-# Congelador
+# Freezer
 
-El congelador es el compendio inferior del frigorífico.
+The Freezer is the bottom compartment of the Fridge.
 
-Se puede utilizar para congelar objetos, pero requiere que el hielo funcione.
+It can be used to freeze items, but requires Ice to operate.
 
-## Recetas por defecto de congelador
+## Default Freezer Recipes
 
-- Cubo de agua -> Hielo
-- Hielo » Hielo empaquetado
-- Cubo de lava -> Obsidiana
-- Slimeball -> Bola de nieve
-- Potato venenoso -> Potato
-- Carne podrida -> Carne
+- Water Bucket -> Ice
+- Ice -> Packed Ice
+- Lava Bucket -> Obsidian
+- Slimeball -> Snowball
+- Poisonous Potato -> Potato
+- Rotten Flesh -> Flesh
 
-## Eliminando
+## Removing
 
-## Quitar recetas de congelador coincidentes.
+## Remove matching freezer recipes.
 
 ```zenscript
 mods.cfm.Freezer.remove(@Optional final IIngredient output, @Optional final IIngredient input);
 
-// Elimina las recetas que resultan en Hielo
-mods.cfm.Freezer. emove(<minecraft:ice>);
-// Elimina las recetas que requieren un cubo de Lava
+// Remove recipes that result in Ice
+mods.cfm.Freezer.remove(<minecraft:ice>);
+// Remove recipes that require a Lava Bucket
 mods.cfm.Freezer.remove(null,<minecraft:lava_bucket>);
-// Elimina todas las recetas
+// Remove all recipes
 mods.cfm.Freezer.remove();
 ```
 
-## Agregando
+## Adding
 
-Añade una receta de congelador.
+Add a freezer recipe.
 
-## Sólo soporta entradas de tamaño 1.
+## Only supports inputs of size 1.
 
 ```zenscript
-mods.cfm.Freezer.addRecipe(@Nonnull final ItemStack output, @Nonnull final ItemStack input);
+mods.cfm.Freezer.addRecipe(@Nonnull final IItemStack output, @Nonnull final IItemStack input);
 
-// Agrega una receta que hace 16 hielos desde un cubo de Lava
-mods.cfm.Freezer.addRecipe(<minecraft:ice>. ithAmount(16),<minecraft:lava_bucket>);
-// Añade una receta que hace 16 Obsidianas de un cubo de agua
-mods.cfm.Freezer.addRecipe(<minecraft:obsidian>. ithAmount(16),<minecraft:water_bucket>);
-// Añade una receta que hace un cubo de agua de un cubo
+// Add a recipe that makes 16 Ice from a Lava Bucket
+mods.cfm.Freezer.addRecipe(<minecraft:ice>.withAmount(16),<minecraft:lava_bucket>);
+// Adds a recipe that makes 16 Obsidian from a Water Bucket
+mods.cfm.Freezer.addRecipe(<minecraft:obsidian>.withAmount(16),<minecraft:water_bucket>);
+// Adds a recipe that makes a Water Bucket from a Bucket
 mods.cfm.Freezer.addRecipe(<minecraft:water_bucket>,<minecraft:bucket>);
 ```

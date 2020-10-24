@@ -1,17 +1,17 @@
-# Cañón
+# Cannon
 
-### Importando
+### Importing
 
 ```zenscript
-importar mods.appliedenergistics2.Cannon;
+import mods.appliedenergistics2.Cannon;
 ```
 
-### Agregando
+### Adding
 
-Añade tipos de munición para el cañón de la materia. Peso se refiere a (ásperamente) el peso atómico del material.
+Adds ammo types for the matter cannon. Weight refers to (roughly) the atomic weight of the material.
 
 ```zenscript
-Cannon.registerAmmo(munición ItemStack, doble peso);
+Cannon.registerAmmo(IItemStack ammo, double weight);
 
 Cannon.registerAmmo(<minecraft:bone>, 40.07);
 ```

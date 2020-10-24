@@ -1,11 +1,11 @@
-# 概念
+# The Concept
 
-ZenScript 中的数学大部分使用可以通过四个基本操作来覆盖：添加、减去、 乘数和除法。 ZenScript 还提供对 `pow` 函数的访问，这些函数执行电源操作。 但情况确实如此。 无法进行更先进的数学操作， 并且需要完全重新实现使用 查找表，不会从硬件在这方面的优化中受益，特别是现代CPU。
+Most of the uses of Math in ZenScript can be covered via the four basic operations: addition, subtraction, multiplication, and division. ZenScript also provides access to the `pow` function, which performs the power operation. But that's it. More advanced mathematical operations cannot be performed, and would require a full reimplementation with lookup tables and wouldn't benefit from the hardware's optimizations in that regard, especially for modern CPUs.
 
-这里是 ZenScriptX 数学，提供了一组类和一些基本的算术操作，可能是 的普遍有用性， 同时也从硬件优化中受益， 因为其中大多数是在本地一级执行的 (通过VM ZenScript 运行的几个间接) 。
+This is where ZenScriptX Math comes in, providing a set of classes and some basic arithmetic operations that may be of general usefulness, while also benefitting in the most part from hardware optimizations, since most of those are implemented on a native level (via a couple of indirections due to the VM ZenScript runs on).
 
-每个文档部分将为用户提供一个提供的函数和行为列表。
+Every documentation section will provide the user with a list of provided functions and their behavior.
 
-当前提供的已执行的类包括：
+The current list of provided classes that are implemented are:
 
-- [数学函数](/Mods/Boson/Math/Math/) 用于常见的数学函数(例如sin、cos、对数...)
+- [Math](/Mods/Boson/Math/Math/) for common mathematical functions (e.g., sine, cosine, logarithm...)

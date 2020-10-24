@@ -1,63 +1,63 @@
 # Material Builder
 
-このパッケージを使用すると、ツールを作成することができます!
+Using this package you can create materials that you can then create tools with!
 
 ## クラスのインポート
 
 It might be required for you to import the class if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
 `import mods.contenttweaker.tconstruct.MaterialBuilder;`
 
-## マテリアルの作成
+## Creating a Material
 
-何よりもまず、Material Builderを作成する必要があります。  
-これは静的作成メソッドを使用して行うことができます。
+First and foremost you will need to create a Material Builder.  
+This can be done using the static create method.
 
 ```zenscript
 //mods.contenttweaker.tconstruct.MaterialBuilder.create(String identifier);
 val myMat = mods.contenttweaker.tconstruct.MaterialBuilder.create("kindlich_mat");
 ```
 
-覚えておいてください, あなたはあなたの変更を行った後、材料を登録する必要があります.  
-これは、新しいマテリアルの `マテリアル表現` [を返す](/Mods/ContentTweaker/Tinkers_Construct/Material/) メソッドで行うことができます。
+Remember, that you will need to register the material after you've done your changes.  
+This can be done with the `register` method which will return a [Material Representation](/Mods/ContentTweaker/Tinkers_Construct/Material/) of the new Material.
 
 ```zenscript
 myMat.register();
 ```
 
-## プロパティー
+## Properties
 
-`myMaterial.name` を使用して、これらのプロパティを設定して取得できます。
+You can set and get these properties using `myMaterial.name`.
 
-| 属性            | タイプ                                              | 追加メモ                             |
-| ------------- | ------------------------------------------------ | -------------------------------- |
-| identifier    | 文字列                                              | ユニークな名前                          |
-| 色             | int                                              |                                  |
-| hidden        | bool                                             |                                  |
-| 液体|<unk>      | [ILiquidStack](/Vanilla/Liquids/ILiquidStack/)   | 製錬所出力                            |
-| クラフト可能        | bool                                             | パーツビルダーで作成可能                     |
-| キャスト可能        | bool                                             | キャストを使用して作成できます。 液体を設定する必要があります! |
-| 代表アイテム        | [IItemStack](/Vanilla/Items/IItemStack/)         | ティンカーマニュアルにアイテムを表示               |
-| 代表者鉱石         | [IOreDictEntry](/Vanilla/OreDict/IOreDictEntry/) | 代表アイテムが null の場合に表示されます          |
-| シャード          | [IItemStack](/Vanilla/Items/IItemStack/)         | パーツビルダーのティンカーの破片アイテムの代わりに使用されます。 |
-| localizedName | 文字列                                              | 表示される名前                          |
+| Property           | Type                                             | Additional notes                                             |
+| ------------------ | ------------------------------------------------ | ------------------------------------------------------------ |
+| identifier         | string                                           | Unique name                                                  |
+| color              | int                                              |                                                              |
+| hidden             | bool                                             |                                                              |
+| liquid             | [ILiquidStack](/Vanilla/Liquids/ILiquidStack/)   | Smeltery output                                              |
+| craftable          | bool                                             | Can be created in the part builder                           |
+| castable           | bool                                             | Can be created using casts. Requires liquid to be set!       |
+| representativeItem | [IItemStack](/Vanilla/Items/IItemStack/)         | Shown item in the tinkers' manual                            |
+| representativeOre  | [IOreDictEntry](/Vanilla/OreDict/IOreDictEntry/) | Shown if representativeItem is null                          |
+| shard              | [IItemStack](/Vanilla/Items/IItemStack/)         | Used instead of the tinker's shard item in the part builder. |
+| localizedName      | string                                           | The shown name                                               |
 
-## 計算されたプロパティ
+## Calculated Properties
 
 ### ItemLocalizer
 
-この関数を使用して、必要に応じて材料名を計算できます。  
-このマテリアルの [マテリアル表現](/Mods/ContentTweaker/Tinkers_Construct/Material/) と名前を変更されているツールの名前を使用します (例: "Mattock")
+You can use this function to calculate the material names if you need that to be the case.  
+Uses a [Material Representation](/Mods/ContentTweaker/Tinkers_Construct/Material/) of this material and the name of the tool that's being renamed (e.g. "Mattock")
 
 ```zenscript
-myMAT.itemLocalizer = function(thisMaterial, itemName){return "Cool " + itemName;};
+myMAt.itemLocalizer = function(thisMaterial, itemName){return "Cool " + itemName;};
 ```
 
-## 材料アイテムを追加
+## Add Material Items
 
-部品ビルダーで指定されたアイテムを使用する場合 材料ポイントの数や修理の量を決めることができます
+If you use the given item in the part builder, you can set how many materialpoints that will give, or how much the item will repair.
 
 ```zenscript
-//myMaterial.addItem(IIngredient item, @Optional(1) int amountNeed, @Optional(144) int amountMatched));
+//myMaterial.addItem(IIngredient item, @Optional(1) int amountNeeded, @Optional(144) int amountMatched));
 myMaterial.addItem(<item:minecraft:iron_pickaxe>);
 myMaterial.addItem(<item:minecraft:iron_block>, 4, 288);
 
@@ -65,26 +65,26 @@ myMaterial.addItem(<item:minecraft:iron_block>, 4, 288);
 myMaterial.removeItem(<minecraft:iron_block>);
 ```
 
-- `アイテム` はマッチングされたアイテムです。 [アイテム条件](/Vanilla/Items/Item_Conditions/) は使用できますが、トランスフォーマーは使用できません。 
-- `amountNeeded` は一致するアイテムの量です。 toolforgeが提供するすべてのスロットでそれらを分割することができ、64を超えることもできます。 上記の2つ目の例では、鉄ブロックを4つ追加する必要があります。 デフォルトは 1 です。
-- `amountMatched` は、 `amountNeeded` あたりの材料ポイントの量です。 2番目の例では、4つの鉄のブロックは2つの材料ポイントを与えます。 デフォルトは 144 (1 インゴット/1 つのマテリアル値) です。
-- `remove function`を使用すると、アイテムに一致するすべてのトレイト成分が削除されます。
+- `item` is the item that is matched against. You can use [Item Conditions](/Vanilla/Items/Item_Conditions/) but no Transformers. 
+- `amountNeeded` is the amount of items that is matched against. You can split them over all the slots the toolforge provides, which also allows you to go above 64. In the second example above, you need 4 iron blocks per addition. Defaults to 1.
+- `amountMatched` is the amount of material points added per `amountNeeded`. In the second example above four iron blocks give two material points. Defaults to 144 (one ingot/one Material value).
+- If you use the `remove function`, it will remove all trait ingredients that match for the item.
 
-## 材料特性
+## Material Traits
 
 You can add a trait to the material.  
 All items made from this material will then have this trait.  
 Uses a String with the identifier of the trait, and an optional `dependency` string which will tell you which itemTypes should be affected by the trait.  
-Alternatively, you can use a [Trait Representation](/Mods/ContentTweaker/Tinkers_Construct/Trait/), though that only works if the trait is already initialized by the time CoT runs (so most likely only for custom traits). `依存関係` の使用可能な値は以下のとおりです。
+Alternatively, you can use a [Trait Representation](/Mods/ContentTweaker/Tinkers_Construct/Trait/), though that only works if the trait is already initialized by the time CoT runs (so most likely only for custom traits). Possible values for `dependency` are:
 
-- `null` (デフォルト) → すべてのアイテム。
+- `null` (default) → All items, unless that dep already has other traits.
 - `"head"`
 - `"handle"`
 - `"extra"`
-- `"弓"`
-- `"弓文字列"`
-- `"投射物"`
-- `"シャフト"`
+- `"bow"`
+- `"bowstring"`
+- `"projectile"`
+- `"shaft"`
 - `"fletching"`
 
 ```zenscript
@@ -102,10 +102,10 @@ myMaterial.remove("cactus");
 myMaterial.remove("cactus", "bowstring");
 ```
 
-## 材料統計
+## Material Stats
 
-TiConが材料を作るためには、材料の統計を知る必要があります。  
-ステータスが追加されたツールタイプのみ構築されます！
+In order for TiCon to build your materials, it needs to know the material stats.  
+Only tooltypes whose stat has been added will be built!
 
 ```zenscript
 <br /><br />myMat.addHeadMaterialStats(int durability, float miningSpeed, float attackDamage, int harvestLevel);
@@ -165,10 +165,10 @@ testMat.addMaterialTrait("blasting", "head");
 
 //null (or not specifying that parameter at all) means that this is a default trait.
 //Default traits are only queried when no other traits are added to that material type.
-//この場合、ボーストリングやヘッドは既に他の特性を持っているため、密度の高いトレイトはツールロッド上にのみ存在します。
+//In this case, the dense trait will only be on toolrods, because bowstrings and heads already have other traits.
 testMat.addMaterialTrait("dense", null);
 
-//Faultyはinit時のみエラーとなりますが、文字列はチェックされます。
+//Faulty, should error, though only during init, as then the strings will be checked.
 testMat.addMaterialTrait("dance", null);
 
 testMat.itemLocalizer = function(thisMaterial, itemName){return "Cool " + itemName;};

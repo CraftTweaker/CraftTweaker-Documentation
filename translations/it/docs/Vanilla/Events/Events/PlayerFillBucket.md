@@ -1,16 +1,16 @@
 # PlayerFillBucket
 
-L'evento PlayerFillBucket viene sparato ogni volta che un giocatore riempie un secchio.
+The PlayerFillBucket Event is fired whenever a player fills a bucket.
 
-## Classe Evento
+## Event Class
 
-Dovrai lanciare l'evento nell'intestazione della funzione come questa classe:  
-`crafttweaker.event. layerFillBucketEvent`  
-È possibile, naturalmente, anche [importare](/AdvancedFunctions/Import/) la classe prima e utilizzare quel nome allora.
+You will need to cast the event in the function header as this class:  
+`crafttweaker.event.PlayerFillBucketEvent`  
+You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
 
-## Estensioni dell'interfaccia evento
+## Event interface extensions
 
-PlayerFillBucket Events implementano le seguenti interfacce e sono in grado di chiamare anche tutti i loro metodi/getter/setter:
+PlayerFillBucket Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
 
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 - [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
@@ -19,27 +19,27 @@ PlayerFillBucket Events implementano le seguenti interfacce e sono in grado di c
 
 ## ZenGetters
 
-Le seguenti informazioni possono essere ricavate dall'evento:
+The following information can be retrieved from the event:
 
-| ZenGetter        | Tipo Di Reso                                       |
+| ZenGetter        | Return Type                                        |
 | ---------------- | -------------------------------------------------- |
-| `annullato`      | boolean                                            |
-| `giocatore`      | [IPlayer](/Vanilla/Players/IPlayer/)               |
-| `risultato`      | [IItemStack](/Vanilla/Items/IItemStack/)           |
-| `Secchio`        | [IItemStack](/Vanilla/Items/IItemStack/)           |
+| `canceled`       | boolean                                            |
+| `player`         | [IPlayer](/Vanilla/Players/IPlayer/)               |
+| `result`         | [IItemStack](/Vanilla/Items/IItemStack/)           |
+| `emptyBucket`    | [IItemStack](/Vanilla/Items/IItemStack/)           |
 | `x`              | int                                                |
 | `y`              | int                                                |
 | `z`              | int                                                |
-| `mondo`          | [IWorld](/Vanilla/World/IWorld/)                   |
+| `world`          | [IWorld](/Vanilla/World/IWorld/)                   |
 | `blockState`     | [IBlockState](/Vanilla/Blocks/IBlockState/)        |
-| `blocco`         | [IBlock](/Vanilla/Blocks/IBlock/)                  |
-| `dimensione`     | int                                                |
+| `block`          | [IBlock](/Vanilla/Blocks/IBlock/)                  |
+| `dimension`      | int                                                |
 | `rayTraceResult` | [IRayTraceResult](/Vanilla/World/IRayTraceResult/) |
 
 ## ZenMethods
 
-- `event.cancel()` imposta l'evento come annullato.
+- `event.cancel()` sets the event as cancelled.
 
-## Impostatori
+## Setters
 
-- `event.result = <minecraft:ender_pearl>` Questo elaborerà anche l'evento!
+- `event.result = <minecraft:ender_pearl>` This will also process the event!

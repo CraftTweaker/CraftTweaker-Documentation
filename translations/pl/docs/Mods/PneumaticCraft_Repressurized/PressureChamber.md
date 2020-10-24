@@ -1,34 +1,34 @@
-# Komora ciśnieniowa
+# Pressure Chamber
 
-Komora ciśnieniowa jest konstrukcją wieloblokową, która wykorzystuje sprężone powietrze do konwersji jednego lub więcej elementów wejściowych na jeden lub więcej elementów wyjściowych. Przepisy komory ciśnieniowej mają odpowiednią wartość ciśnieniową, czyli ciśnienie powietrza w barach wymagane do przeprowadzenia konwersji.
+The Pressure Chamber is a multiblock structure which uses compressed air to convert one or more input items into one or more output items. Pressure Chamber recipes have an associated pressure value, which is the air pressure in bar required to perform the conversion.
 
-## Dzwonienie
+## Calling
 
-Pakiet komory ciśnieniowej można wywołać za pomocą `mods.pneumaticcraft.pressure`.
+You can call the Pressure Chamber package using `mods.pneumaticcraft.pressurechamber`.
 
-## Usuwanie
+## Removing
 
 This function removes the first recipe it finds with the given [IItemStack](/Vanilla/Items/IItemStack/) `outputs` array:
 
 ```zenscript
-mods.pneumaticcraft.pressurechamber.removeRecipe(IItemStack[] wyjście);
-// Przykład
+mods.pneumaticcraft.pressurechamber.removeRecipe(IItemStack[] outputs);
+// Example
 mods.pneumaticcraft.pressurechamber.removeRecipe([<pneumaticcraft:ingot_iron_compressed>]);
 ```
 
-Ta funkcja usuwa *wszystkie* przepisy komory ciśnieniowej:
+This function removes *all* Pressure Chamber recipes:
 
 ```zenscript
 mods.pneumaticcraft.pressurechamber.removeAllRecipes();
 ```
 
-## Dodawanie
+## Adding
 
-Ta funkcja służy do dodawania nowych przepisów do komory ciśnieniowej:
+This function is used to add new recipes to the Pressure Chamber:
 
 ```zenscript
-mods.pneumaticcraft.pressurechamber.addRecipe(IIngredient[] wejść, podwójne ciśnienie, IItemStack[] wyjście);
+mods.pneumaticcraft.pressurechamber.addRecipe(IIngredient[] inputs, double pressure, IItemStack[] outputs);
 
-// Przykład
+// Example
 mods.pneumaticcraft.pressurechamber.addRecipe([<minecraft:gold_ingot> * 2,<minecraft:apple>], 2.0, [<minecraft:golden_apple>]);
 ```

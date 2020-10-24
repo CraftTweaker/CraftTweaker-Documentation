@@ -1,27 +1,27 @@
 # ProjectileImpactFireball
 
-このイベントは、ファイアーボールがエンティティに影響を与えてもダメージの前などが計算されるたびに発生します。 **キャンセル可能**であり、キャンセルされた場合、影響は処理されません。
+This event is fired whenever a fireball impacts an entity but before damage, etc, is calculated. It is **cancelable**, and if canceled, the impact will not be processed.
 
-ファイヤーボールエンティティからの加速値はzengettersを通じて利用できます。
+Acceleration values from the fireball entity are available through zengetters.
 
-## クラスのインポート
-エラーを避けるには、クラスを [インポート](/AdvancedFunctions/Import/) する必要があります。  
+## Importing the class
+It might be required to [import](/AdvancedFunctions/Import/) the class to avoid errors.  
 `import crafttweaker.event.ProjectileImpactFireballEvent;`
 
-## IEntityEvent の拡張
-ProjectileImpactFireball イベントは以下のインターフェイスを実装し、それらのメソッド/getters/setters/settersも同様に呼び出すことができます。
+## Extending IEntityEvent
+ProjectileImpactFireball Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
 
 - [IProjectileEvent](/Vanilla/Events/Events/IProjectileEvent/)
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 
-## ZenGettersとZenSetters
+## ZenGetters and ZenSetters
 
-イベントから次の情報を取得できます。
+The following information can be retrieved from the event:
 
-| ZenGetter       | ZenSetter       | タイプ                                                       |
+| ZenGetter       | ZenSetter       | Type                                                      |
 | --------------- | --------------- | --------------------------------------------------------- |
-| `ファイアーボール`      |                 | [IEntity](/Vanilla/Entities/IEntity/)                     |
-| `シューティング`       |                 | [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) |
-| `アクセラレーションX`    | `アクセラレーションX`    | double型                                                   |
-| `アクセラレーションY`    | `アクセラレーションY`    | double型                                                   |
+| `fireball`      |                 | [IEntity](/Vanilla/Entities/IEntity/)                     |
+| `shooter`       |                 | [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) |
+| `accelerationX` | `accelerationX` | double型                                                   |
+| `accelerationY` | `accelerationY` | double型                                                   |
 | `accelerationZ` | `accelerationZ` | double型                                                   |

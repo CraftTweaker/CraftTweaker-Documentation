@@ -1,32 +1,32 @@
 # MCAxisAlignedBB
 
-MineCraft Axis Aligned Boxオブジェクトを使用すると、 [Blockの](/Mods/ContentTweaker/Vanilla/Creatable_Content/Block/) 境界線を指定した立方体形状に変更できます。
+A MineCraft Axis Aligned Boundary Box object allows you change a [Block's](/Mods/ContentTweaker/Vanilla/Creatable_Content/Block/) Boundary borders to a given cuboid shape.
 
 ## パッケージのインポート
 
-問題が発生した場合は、パッケージをインポートする必要があるかもしれませんので、申し訳ありませんし、インポートを追加してください。  
+It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
 `import mods.contenttweaker.AxisAlignedBB;`
 
-## MCAxisAlignedBBBオブジェクトの呼び出し
+## Calling an MCAxisAlignedBB object
 
 You can get such an object using a [Block's](/Mods/ContentTweaker/Vanilla/Creatable_Content/Block/) `axisAlignedBB` Property.  
 Alternatively, you can use this package to create a new MCAxisAlignedBB object:
 
 ```zenscript
-AxisAlignedBB.create(double minX, double minY, double minZ, double maxX, double maxZ);
+AxisAlignedBB.create(double minX, double minY, double minZ, double maxX, double maxY, double maxZ);
 ```
 
-この関数のすべてのパラメータは0から1の間で倍になります!
+All parameters for this function are doubles between 0 and 1!
 
 ## ZenProperties
 
-`getProperty()` または `object.property` を使用して、それぞれのプロパティを取得して設定できます。
+You can get and set each Property using `getProperty()` or `object.property`.
 
-| ZenProperty | タイプ    |
+| ZenProperty | Type   |
 | ----------- | ------ |
 | minX        | double |
 | minY        | double |
 | minZ        | double |
 | maxX        | double |
-| 最大Y         | double |
+| maxY        | double |
 | maxZ        | double |

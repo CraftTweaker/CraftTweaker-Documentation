@@ -1,34 +1,34 @@
-# 燃料登録
+# Fuel Registration
 
-## モーターボート
+## Motorboat
 
 ### registerMotorboatFuel
 
-| タイプ   | データタイプ                                       |
+| Type  | Data Type                                    |
 | ----- | -------------------------------------------- |
 | Input | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
-| mb/t  | 整数                                           |
+| mB/t  | Integer                                      |
 
-#### コード例:
+#### Code Example:
 
 ```zenscript
-mods.immersivetroleum.MotorboatFuel(ILiquidStack fuelEntry, int mbPerTick);
-mods.immersivetroleum.Motorboat.registerMotorboatFuel(<liquid:water>, 5);
+mods.immersivepetroleum.Motorboat.registerMotorboatFuel(ILiquidStack fuelEntry, int mbPerTick);
+mods.immersivepetroleum.Motorboat.registerMotorboatFuel(<liquid:water>, 5);
 ```
 
-## ポータブルジェネレーター
+## Portable Generator
 
 ### registerPortableGenFuel
 
-| タイプ    | データタイプ                                       |
+| Type   | Data Type                                    |
 | ------ | -------------------------------------------- |
 | Input  | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
-| Flux/t | 整数                                           |
-| mb/t   | 整数                                           |
+| Flux/t | Integer                                      |
+| mB/t   | Integer                                      |
 
-#### コード例:
+#### Code Example:
 
 ```zenscript
-mods.immysivepetroleum.PortableGenerator.registerPortPortableGenFuel(ILiquidStack fuelEntry, int fluxPerTick, int mbPerTick);
-mods.immersivetroleum.PortableGenerator.registerPortPortPortableGenFuel(<liquid:water>, 2048, 50);
+mods.immersivepetroleum.PortableGenerator.registerPortableGenFuel(ILiquidStack fuelEntry, int fluxPerTick, int mbPerTick);
+mods.immersivepetroleum.PortableGenerator.registerPortableGenFuel(<liquid:water>, 2048, 50);
 ```

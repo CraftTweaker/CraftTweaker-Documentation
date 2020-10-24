@@ -1,22 +1,22 @@
 # Powered Thingies :: Powered Kiln
 
-### インポート中
+### Importing
 
 ```zenscript
 import mods.poweredthingies.Tweaker.poweredKilnTweaker as pkt;
 ```
 
-### キーによるレシピの削除、キーのリスト化、クリア
+### Listing Keys, Removing Recipes by Key, Clearing
 
 ```zenscript
 pkt().logKeys()
-pkt().removeRecipe('minecraft:planks') // <logKeys> の有効なキーの出力をチェック
+pkt().removeRecipe('minecraft:planks') // check <logKeys> output for valid keys
 pkt().clear()
 ```
 
-### レシピを追加中
+### Adding Recipe
 
-##### 署名
+##### Signature
 
 ```zenscript
 addRecipe(input: IItemStack, output: IItemStack)
@@ -28,6 +28,6 @@ addRecipe(input: IItemStack, output: IItemStack)
 pkt().addRecipe(<minecraft:bucket>, <minecraft:iron_ingot>);
 ```
 
-### メモ
+### Notes
 
-これらのアクションはすべてキャッシュされ、このマシンのデフォルトレジストリがすべてのレシピを登録し終えた後に実行されます (カスタム json からのものを含む)。
+All of these actions will get cached and ran after the default registry for this machine has finished registering all recipes (including the ones from the custom jsons).

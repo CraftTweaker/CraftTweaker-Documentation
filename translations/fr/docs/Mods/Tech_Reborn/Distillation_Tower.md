@@ -1,14 +1,14 @@
-# Tour de distillation
+# Distillation Tower
 
-## Importation du paquet en cours
+## Importing the Package
 `mods.techreborn.distillationTower`
 
-## Ajout de recettes
+## Adding Recipes
 ```zenscript
 mods.techreborn.distillationTower.addRecipe(IItemStack output1, IItemStack output2, IItemStack output3, IItemStack output4, IIngredient input1, IIngredient input2, int ticktime, int euTick);
 ```
 
-## Suppression des recettes
+## Removing Recipes
 ```zenscript
 mods.techreborn.distillationTower.removeInputRecipe(IIngredient ingredient);
 mods.techreborn.distillationTower.removeRecipe(IItemStack output);

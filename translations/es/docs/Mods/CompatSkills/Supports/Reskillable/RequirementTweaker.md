@@ -1,33 +1,33 @@
-# Requerir Tweaker
+# Requirement Tweaker
 
 ## PSA:
 
-A partir de 1.2.0 y adelante, Reskillable está siendo desarrollado activamente para mejorar los internos de los Sistemas de Bloqueo de Reskillable y CompatSkill. Se trata de un esfuerzo por permitir mecanismos de bloqueo más poderosos en el futuro.
+As of 1.2.0 and forward, Reskillable is being actively developed to improve on the internals of Reskillable and CompatSkill's Locking Systems. This is in an effort to allow for more powerful locking mechanisms in the future.
 
-## Bloqueo requerido:
+## Requirement-Locking:
 
-Actualmente el soporte principal de CrT es para el bloqueo de requerimientos. Esto también se puede conseguir a través del sistema de configuración. ¡Sin embargo, el sistema de configuración **NO** soporta NBT!
+Currently the main CrT support is for Requirement Locking. This can also be accomplished through the config system. However the Config System does **NOT** support NBT!
 
-### Sintaxis:
+### Syntax:
 
-    // Ejemplo en blanco:
-    mods.compatskills.Requirement.addRequirement(IItemStack item, String... bloqueado)
+    // Blank Example:
+    mods.compatskills.Requirement.addRequirement(IItemStack item, String... locked)
     
-    Ejemplos de trabajo:
+    Working Examples:
     
-    // Añade un bloqueo para el Pico de Diamante con un comodín Metadata
-    mods.compatskills. equirement.addRequirement(<minecraft:diamond_pickaxe:*>, "reskillable:mining|4");
+    // Adds a lock for the Diamond Pickaxe with a Wildcard Metadata
+    mods.compatskills.Requirement.addRequirement(<minecraft:diamond_pickaxe:*>, "reskillable:mining|4");
     
-    // Añade un bloqueo NBT para Efficiencia 5
-    mods. ompatskills.Requirement.addRequirement(<minecraft:diamond_pickaxe:*>.withTag({ench: [{lvl: 5 as short, id: 32 as short}]}), "reskillable:mining|5", "reskillable:magic|7");
+    // Adds a NBT Lock for Efficiency 5
+    mods.compatskills.Requirement.addRequirement(<minecraft:diamond_pickaxe:*>.withTag({ench: [{lvl: 5 as short, id: 32 as short}]}), "reskillable:mining|5", "reskillable:magic|7");
     
-    // Añade un bloqueo NBT para Toque de Seda
-    mods. ompatskills.Requirement.addRequirement(<minecraft:diamond_pickaxe:*>.withTag({ench: [{lvl: 1 as short, id: 33 as short}]}), "reskillable:mining|6", "reskillable:agility|7");
+    // Adds a NBT Lock for Silk Touch
+    mods.compatskills.Requirement.addRequirement(<minecraft:diamond_pickaxe:*>.withTag({ench: [{lvl: 1 as short, id: 33 as short}]}), "reskillable:mining|6", "reskillable:agility|7");
     
-    // Añade un bloqueo NBT para Unbreaking 3
-    mods. ompatskills.Requirement.addRequirement(<minecraft:diamond_pickaxe:*>.withTag({ench: [{lvl: 3 as short, id: 34 as short}]}), "reskillable:mining|7", "reskillable:attack|7");
+    // Adds a NBT Lock for Unbreaking 3
+    mods.compatskills.Requirement.addRequirement(<minecraft:diamond_pickaxe:*>.withTag({ench: [{lvl: 3 as short, id: 34 as short}]}), "reskillable:mining|7", "reskillable:attack|7");
     
 
-Ejemplo de 3 candados de encantamiento que se combinan en una sola cerradura:
+Example of the 3 Enchantment Locks being Combined into a single lock:
 
-![Bloqueo impresionante](https://i.imgur.com/gCfETAh.png)
+![Awesome Lock](https://i.imgur.com/gCfETAh.png)

@@ -1,12 +1,12 @@
-# レゾネーター
+# Resonator
 
-ModTweakerを使用すると、追加ユーティリティ2レゾネーターレシピを追加または削除できます。
+ModTweaker allows you to add or remove Extra Utilities 2 Resonator Recipes
 
-## 発信中
+## Calling
 
-`mods.extrautils2.Resonator` を使用して Resonator パッケージを呼び出すことができます。
+You can call the Resonator package using `mods.extrautils2.Resonator`
 
-## 削除中
+## Removing
 
 ```zenscript
 //mods.extrautils2.Resonator.remove(IItemStack outout);

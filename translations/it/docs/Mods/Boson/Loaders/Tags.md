@@ -1,13 +1,13 @@
 # `tags` Loader
 
-Il caricatore `tags` è uno speciale caricatore che spara in una fase successiva nel processo di caricamento di Minecraft e consente la manipolazione di [Tags](/Mods/Boson/Tags/Concept/). Il gestore delle parentesi Tag ha un significato diverso quando usato in un file caricato da questo caricatore: fare riferimento alla documentazione dei tag per ulteriori informazioni.
+The `tags` loader is a special Loader that fires at a later stage in the Minecraft loading process and allows manipulation of [Tags](/Mods/Boson/Tags/Concept/). The Tag bracket handler has a different meaning when used in a file loaded by this loader: refer to the Tags documentation for more information.
 
-## Usare questo caricatore
-Questo caricatore può essere abilitato tramite la direttiva [`#loader` del preprocessore](/AdvancedFunctions/Preprocessors/LoaderPreprocessor/) specificandone il nome accanto a la dichiarazione, come nell'esempio seguente:
+## Using this loader
+This loader can be enabled via the [`#loader` preprocessor directive](/AdvancedFunctions/Preprocessors/LoaderPreprocessor/) by specifying its name next to the declaration, as in the following example:
 
 ```zenscript
 #loader tags
 ```
 
-## Motivo di questo caricatore
-Fare riferimento alla documentazione per il gestore [tag bracket](/Mods/Boson/Tags/BracketHandler/) e alla pagina relativa al [concetto effettivo](/Mods/Boson/Tags/Concept/) per maggiori informazioni.
+## Reason for this loader
+Refer to the documentation for the [tag bracket handler](/Mods/Boson/Tags/BracketHandler/) and the page related to the [actual concept](/Mods/Boson/Tags/Concept/) for more information.

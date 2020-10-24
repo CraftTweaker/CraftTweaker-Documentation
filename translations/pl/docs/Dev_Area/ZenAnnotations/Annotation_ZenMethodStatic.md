@@ -1,4 +1,4 @@
-# ZenMethodStatatic
+# ZenMethodStatic
 
-Adnotacje `@ZenMethodStatic` mogą być używane tylko w [ZenExpansions](/Dev_Area/ZenAnnotations/Annotation_ZenExpansion/).  
-Jest to metoda statyczna, która, w przeciwieństwie do [ZenMethods](/Dev_Area/ZenAnnotations/Annotation_ZenMethod/) w rozszerzeniach, nie wymaga instancji jako pierwszego parametru, ponieważ są statyczne.
+The `@ZenMethodStatic` annotations can only be used in [ZenExpansions](/Dev_Area/ZenAnnotations/Annotation_ZenExpansion/).  
+It exposes a static method that, unlike [ZenMethods](/Dev_Area/ZenAnnotations/Annotation_ZenMethod/) in Expansions, dont need an instance as first parameter, since they are static.

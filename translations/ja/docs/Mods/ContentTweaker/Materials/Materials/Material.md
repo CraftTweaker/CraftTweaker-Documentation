@@ -1,28 +1,28 @@
-# 材料
+# Material
 
-材料は、例えばプラチナで作られているものです。
+A Material is what an item is made of, for example Platinum.
 
 ## パッケージのインポート
 
-問題が発生した場合は、パッケージをインポートする必要があるかもしれませんので、申し訳ありませんし、インポートを追加してください。  
+It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
 `import mods.contenttweaker.Material;`
 
-## そのようなオブジェクトを取得しています
+## Retrieving such an object
 
-[MaterialSystem](/Mods/ContentTweaker/Materials/MaterialSystem/) を使用して既存のマテリアルを取得するか、 [Material Builder](/Mods/ContentTweaker/Materials/Materials/Material_Builder/) を使用してまったく新しいマテリアルを作成することができます。
+You can either retrieve an existing Material using the [MaterialSystem](/Mods/ContentTweaker/Materials/MaterialSystem/) or create an entirely new one using the [Material Builder](/Mods/ContentTweaker/Materials/Materials/Material_Builder/)
 
-## フィールド
+## Fields
 
-材料から以下の情報を取得できます：
+You can retrieve the following information from a Material:
 
-| ZenMethod            | 戻り値      | 説明                     |
-| -------------------- | -------- | ---------------------- |
-| getName()            | 文字列      | 材料の名前を返します             |
-| getColor()           | int      | 材料の色を返します              |
-| isHasEffect()        | boolean型 | 材料に輝き効果がある場合に返します。     |
-| getUnlocalizedName() | 文字列      | 材料のローカライズされていない名前を返します |
+| ZenMethod            | 戻り値      | Description                                    |
+| -------------------- | -------- | ---------------------------------------------- |
+| getName()            | string   | Returns the Material's name                    |
+| getColor()           | int      | Returns the Material's color                   |
+| isHasEffect()        | boolean型 | Returns if the material has the glowing effect |
+| getUnlocalizedName() | string   | Returns the Material's unlocalized name        |
 
-## [材料パーツ](/Mods/ContentTweaker/Materials/Materials/MaterialPart/) を登録する
+## Register [Material Parts](/Mods/ContentTweaker/Materials/Materials/MaterialPart/)
 
 You can either register parts using the [part object](/Mods/ContentTweaker/Materials/Parts/Part/) or it's name string.  
 You can also either register a single part or multiple at once.  
@@ -37,5 +37,5 @@ registerPart(String partName);
 registerPart(IPart part);
 ```
 
-registerPart メソッドは、単一の [MaterialPart](/Mods/ContentTweaker/Materials/Materials/MaterialPart/) オブジェクトを返します。  
-registerParts メソッドは、 [MaterialPart](/Mods/ContentTweaker/Materials/Materials/MaterialPart/) リストを返します。
+The registerPart Methods return a single [MaterialPart](/Mods/ContentTweaker/Materials/Materials/MaterialPart/) object.  
+The registerParts Methods return a [MaterialPart](/Mods/ContentTweaker/Materials/Materials/MaterialPart/) list.

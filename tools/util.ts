@@ -18,3 +18,28 @@ export const listFiles = (dir: string, filelist: string[]) => {
 export const getLanguages = (buildDir: string): string[] => {
     return fs.readdirSync(buildDir);
 };
+
+
+export const walk = function (doc: object[], done: any, parents: string[]) {
+
+    done = done || {};
+
+    for (let docKey in doc) {
+        if (!doc.hasOwnProperty(docKey)) {
+            // whatever webstorm
+            continue;
+        }
+        let val: any = doc[docKey];
+        if (typeof val === "object") {
+            done = walk(val, done, [...parents, docKey]);
+        } else {
+            done[val] = parents
+        }
+    }
+    return done;
+};
+
+export interface NavObject {
+    key: string
+    value: string[]
+}

@@ -1,33 +1,33 @@
-# Échangeur de chaleur
+# Heat Exchanger
 
-## Paquet
+## Package
 
-`Importer mods.ic2.HeatExchanger;`
+`import mods.ic2.HeatExchanger;`
 
-## Méthodes
+## Methods
 
-- **[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) sortie** Le liquide après avoir été chauffé/refroidi
-- **[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) entrée** Le liquide avant qu'il ne soit chauffé/refroidi
-- **int de chaleur** La chaleur requise pour chauffer le fluide ou gagné en le refroidissant vers le bas
+- **[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) output** The liquid after it's been heated up/cooled down
+- **[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) input** The liquid before it's been heated up/cooled down
+- **int heat** The heat required to heat the fluid or gained by cooling it down
 
-Vous pouvez également utiliser les objets [ILiquidDefinition](/Vanilla/Liquids/ILiquidDefinition) au lieu des objets [ILiquidStack](/Vanilla/Liquids/ILiquidStack/).
+Alternatively you can use [ILiquidDefinition](/Vanilla/Liquids/ILiquidDefinition) objects instead of the [ILiquidStack](/Vanilla/Liquids/ILiquidStack/) objects.
 
-## Ajouter un refroidissement fluide vers le bas
+## Add Fluid Cool Down
 
 ```zenscript
-mods.ic2.HeatExchanger.addFluidCoolDown(ILiquidStack, ILiquidStack input, int heat);
+mods.ic2.HeatExchanger.addFluidCoolDown(ILiquidStack output, ILiquidStack input, int heat);
 mods.ic2.HeatExchanger.addFluidCoolDown(ILiquidDefinition output, ILiquidDefinition input, int heat);
 
-mods. c2.HeatExchanger.addFluidCoolDown(<liquid:lava>, <liquid:water>, 10);
+mods.ic2.HeatExchanger.addFluidCoolDown(<liquid:lava>, <liquid:water>, 10);
 mods.ic2.HeatExchanger.addFluidCoolDown(<liquid:lava>.definition, <liquid:water>.definition, 10);
 ```
 
-## Ajouter une chaleur fluide vers le haut
+## Add Fluid Heat Up
 
 ```zenscript
-mods.ic2.HeatExchanger.addFluidHeatUp(ILiquidStack, ILiquidStack input, int heat);
+mods.ic2.HeatExchanger.addFluidHeatUp(ILiquidStack output, ILiquidStack input, int heat);
 mods.ic2.HeatExchanger.addFluidHeatUp(ILiquidDefinition output, ILiquidDefinition input, int heat);
 
-mods. c2.HeatExchanger.addFluidHeatUp(<liquid:lava>, <liquid:water>, 10);
+mods.ic2.HeatExchanger.addFluidHeatUp(<liquid:lava>, <liquid:water>, 10);
 mods.ic2.HeatExchanger.addFluidHeatUp(<liquid:lava>.definition, <liquid:water>.definition, 10);
 ```

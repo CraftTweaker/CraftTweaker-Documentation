@@ -1,4 +1,4 @@
-# 材料ロック
+# Material Locks
 
 ## Material-Lock
 
@@ -11,8 +11,8 @@ Tinker Construct'sにおける特定のモディファイアに関して。
 
 ### 構文:
 
-    // 空白の例:
+    // Blank Example:
     mods.compatskills.ModifierLock.addModifierLock(String identifier, String... requirements);
     
-    // 例:
-    mods.compatskills.ModifierLock.addModifierLock("harvestwidth", "reskillable:mining|5", "reskillable:magic|7');
+    // Example:
+    mods.compatskills.ModifierLock.addModifierLock("harvestwidth", "reskillable:mining|5", "reskillable:magic|7");

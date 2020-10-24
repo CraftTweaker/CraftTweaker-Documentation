@@ -1,21 +1,21 @@
-# Сжигание
+# Combustion
 
-Пакет *для сжигания* используется для добавления или удаления рецептов в/в процесс сжигания.
+The *combustion* package is used for adding or removing recipes to/from the Combustion process.
 
-## Звонок
+## Calling
 
-Вы можете вызвать пакет *сгорания* с помощью `mods.skyresources.combustion`
+You can call the *combustion* package using `mods.skyresources.combustion`
 
-## Добавление рецепта
+## Recipe Addition
 
 ```zenscript
-//mods.skyresources.combustion.addRecipe(IItemStack, IItemStack[] ввод, int temperature);
+//mods.skyresources.combustion.addRecipe(IItemStack output, IItemStack[] input, int temperature);
 mods.skyresources.combustion.addRecipe(<minecraft:diamond>, [<minecraft:dirt>, <minecraft:sand> * 2], 420);
 ```
 
-## Удаление рецепта
+## Recipe Removal
 
 ```zenscript
-//mods.skyresources.combustion.removeRecipe(IItemStack);
+//mods.skyresources.combustion.removeRecipe(IItemStack output);
 mods.skyresources.combustion.removeRecipe(<minecraft:diamond>);
 ```

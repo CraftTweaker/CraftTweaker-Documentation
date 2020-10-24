@@ -1,27 +1,27 @@
-# 热离子肥料
+# Thermionic Fabricator
 
-ModTinflow允许您添加或移除林业肥料配方
+ModTweaker allows you to add or remove forestry Thermionic Fabricator Recipes
 
 ## 导入包
 
-您可以使用 `mods.forestry.ThermionicFabricator` 来调用软件包。
+You can call the package using `mods.forestry.ThermionicFabricator`
 
-## 矩形/过去删除
+## Recipe/Cast Removal
 
 ```zenscript
 //mods.forestry.ThermionicFabricator.removeCast(IIngredient product);
 mods.forestry.ThermionicFabricator.removeCast(<forestry:thermionic_tubes:5>);
 ```
 
-## 食谱/过去添加
+## Recipe/Cast Addition
 
 ```zenscript
-//mods.forestry.ThermionicFabricator.addCast(IItemStack output, IIngredient[] components, ILiquidStack like Stack, @Optional IItemStack Plan);
-mods.forestry.ThermionicFabricator. ddcast(<minecraft:glass_pane> * 4, [<minecraft:dirt>,null,null],[null,null,null],,[null,null,null]], <liquid: glass> * 200);
-mods.forestry. hermionicFabricator.addCast(<minecraft:stained_glass:3>[<ore:dyeLightBlue>null,null,null],[null,null,null],[null,null,null]], <liquid: glass> * 144, <forestry:wax_cast>);
+//mods.forestry.ThermionicFabricator.addCast(IItemStack output, IIngredient[][] ingredients, ILiquidStack liquidStack, @Optional IItemStack plan);
+mods.forestry.ThermionicFabricator.addCast(<minecraft:glass_pane> * 4, [[<minecraft:dirt>,null,null],[null,null,null],[null,null,null]], <liquid: glass> * 200);
+mods.forestry.ThermionicFabricator.addCast(<minecraft:stained_glass:3>, [[<ore:dyeLightBlue>,null,null],[null,null,null],[null,null,null]], <liquid: glass> * 144, <forestry:wax_cast>);
 ```
 
-## 熔炼删除
+## Smelting Removal
 
 ```zenscript
 //mods.forestry.ThermionicFabricator.removeSmelting(IIngredient itemInput);
@@ -29,11 +29,11 @@ mods.forestry.ThermionicFabricator.removeSmelting(<minecraft:sand>);
 
 ```
 
-## 冶炼添加剂
+## Smelting Addition
 
-由于熔炼，您可以在游戏中添加所有液体， 但目前只有 `<liquid:glass>` 因为在其他液体上出现了漏洞。
+You can add every liquid in the game as the result of the smelting, but currently only `<liquid:glass>` is recommended due to bugs occuring with other liquids.
 
 ```zenscript
-//mods.forestry.ThermionicFabricator.addSmelting(ILiquidStack 液体Stack, IItemStack itemInput, int meltingPoint);
+//mods.forestry.ThermionicFabricator.addSmelting(ILiquidStack liquidStack, IItemStack itemInput, int meltingPoint);
 mods.forestry.ThermionicFabricator.addSmelting(<liquid:glass> * 120, <minecraft:stone>, 500);
 ```

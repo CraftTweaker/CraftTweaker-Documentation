@@ -1,37 +1,37 @@
-# Redstone-Ofen
+# Redstone Furnace
 
-## Paket
+## Package
 
 `mods.thermalexpansion.RedstoneFurnace`
 
 ## Addition
 
 ```zenscript
-//mods.thermalexpansion.RedstoneFurnace.addRecipe(IItemStack-Ausgabe, IItemStack-Eingabe, Int-Energie);
+//mods.thermalexpansion.RedstoneFurnace.addRecipe(IItemStack output, IItemStack input, int energy);
 mods.thermalexpansion.RedstoneFurnace.addRecipe(<minecraft:gold_ingot>, <minecraft:iron_ingot>, 3600);
 ```
 
-## Entfernen
+## Removal
 
 ```zenscript
-//mods.thermalexpansion.RedstoneFurnace.removeRecipe(IItemStack Eingabe);
+//mods.thermalexpansion.RedstoneFurnace.removeRecipe(IItemStack input);
 mods.thermalexpansion.RedstoneFurnace.removeRecipe(<minecraft:gold_ore>);
 ```
 
-## Pyrolitische Erweiterung
+## Pyrolitic Augment Addition
 
-***Beachte, dass die Energie mit `1.5` multipliziert wird. Wenn du `2000` Energie angibst, kostet das Rezept tatsächlich `3000` RF. Wenn Sie `1500`angeben, kostet dies ebenfalls `2250` RF.***
+***Note that the energy is multiplied by `1.5`. If you specify `2000` energy, the recipe will actually cost `3000` RF. Likewise if you specify `1500`, it will cost `2250` RF.***
 
-Beispielrezept zur Umwandlung von Kohle in Kohle und erzeugt dabei 250 MB Kreosot Öl.
+Example recipe to turn charcoal into coal coke, producing 250mb of creosote oil in the process.
 
 ```zenscript
-//mods.thermalexpansion.RedstoneFurnace.addPyrolysisRecipe(IItemStack Output, IItemStack Input, int Energie, int creosote);
+//mods.thermalexpansion.RedstoneFurnace.addPyrolysisRecipe(IItemStack output, IItemStack input, int energy, int creosote);
 mods.thermalexpansion.RedstoneFurnace.addPyrolysisRecipe(<thermalfoundation:material:802>, <minecraft:coal:1>, 2000, 250);
 ```
 
-## Pyrolitische Augment-Entfernung
+## Pyrolitic Augment Removal
 
-Entfernt das Rezept um Kohle in Kohle umzuwandeln.
+Removes the recipe to convert coal into coal coke.
 
 ```zenscript
 //mods.thermalexpansion.RedstoneFurnace.removePyrolysisRecipe(IItemStack input);

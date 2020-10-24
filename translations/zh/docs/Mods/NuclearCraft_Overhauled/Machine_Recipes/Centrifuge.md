@@ -1,16 +1,16 @@
-# 离心机
+# Centrifuge
 
-## 导入软件包
-`nuclearcraft。离心机`
+## Importing the Package
+`mods.nuclearcraft.Centrifuge`
 
-## 添加配方
+## Adding Recipes
 ```zenscript
-nuclearcraft。离心机.addRecipe(ILiquidStack fluidInput, ILiquidStack fluidOutt1,ILiquidStack fluidOutput2,ILiquidStack fluidOutput3,ILiquidStack fluidOutput4,, @Optional double power倍增器,@Optional double processRadimal);
+mods.nuclearcraft.Centrifuge.addRecipe(ILiquidStack fluidInput, ILiquidStack fluidOutput1, ILiquidStack fluidOutput2, ILiquidStack fluidOutput3, ILiquidStack fluidOutput4 , @Optional double timeMultiplier, @Optional double powerMultiplier, @Optional double processRadiation);
 ```
 
-## 删除配方
+## Removing Recipes
 ```zenscript
-nuclearcraft。离心机.移除RecipeWidInput(ILiquidStack fluidInput);
-mods.nuclearcraft.离心机.removeRecipeWOutput(ILiquidStack fluidOutt1,ILiquidStack fluidOutput2,ILiquidStack fluidOutput3,ILiquidStack fluidOutput4);
-mods.nuclearcraft。a. 离心机.移除AllRecipes();
+mods.nuclearcraft.Centrifuge.removeRecipeWithInput(ILiquidStack fluidInput);
+mods.nuclearcraft.Centrifuge.removeRecipeWithOutput(ILiquidStack fluidOutput1, ILiquidStack fluidOutput2, ILiquidStack fluidOutput3, ILiquidStack fluidOutput4);
+mods.nuclearcraft.Centrifuge.removeAllRecipes();
 ```

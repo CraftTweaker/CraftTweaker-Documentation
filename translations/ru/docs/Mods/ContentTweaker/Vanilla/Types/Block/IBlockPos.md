@@ -1,38 +1,38 @@
 # IBlockPos
 
-IBlockPos объект представляет позицию в игре.
+An IBlockPos object represents a position in the game.
 
 ## Импорт пакета
 
-Возможно, вам потребуется импортировать пакет, если вы столкнетесь с какими-либо проблемами, так что лучше быть безопасным чем извините и добавьте импорт.  
-`импорт mods.contenttweaker.BlockPos;`
+It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
+`import mods.contenttweaker.BlockPos;`
 
-## Методы ZenMethods без параметров
+## ZenMethods without parameters
 
-| ZenMethod | Геттеры | Возвращаемый тип | Описание                      |
-| --------- | ------- | ---------------- | ----------------------------- |
-| getX()    | х       | int              | Возвращает X значение позиции |
-| getY()    | у       | int              | Возвращает значение Y позиции |
-| getZ()    | z       | int              | Возвращает значение Z позиции |
+| ZenMethod | ZenGetter | Возвращаемый тип | Description                    |
+| --------- | --------- | ---------------- | ------------------------------ |
+| getX()    | x         | int              | Returns the position's X value |
+| getY()    | y         | int              | Returns the position's Y value |
+| getZ()    | z         | int              | Returns the position's Z value |
 
-## Методы с параметрами
+## ZenMethods with parameters
 
-### Смещение
+### Get Offset
 
-Возвращает новые IBlockPos `смещения` блоков в `название направления` или `направление`.
+Returns a new IBlockPos that is `offset` blocks into the `directionName` or `facing` direction.
 
 `IBlockPos getOffset(String directionName, int offset);`
 
-`direction Название` может принять эти значения:
+`directionName` can take these values:
 
-- "вниз"
-- "вверх"
-- "Север"
-- "юг"
-- "восток"
-- "запад"
+- "down"
+- "up"
+- "north"
+- "south"
+- "east"
+- "west"
 
-`IBlockPos getOffset(Facing facing, int offset)` Параметры:
+`IBlockPos getOffset(Facing facing, int offset)` Parameters:
 
-- [лицом](/Vanilla/World/IFacing/) перед → Направление
-- int смещение → сколько блоков в этом направлении?
+- [Facing](/Vanilla/World/IFacing/) facing → The direction
+- int offset → how many blocks in that direction?

@@ -1,7 +1,7 @@
-# Садовая вещь
-Этот мод является коллекцией модов, связанных с садом, изначально основанных на модульных горшках цветов.
+# Garden Stuff
+This mod is a collection of garden-related mods originally based on Modular Flower Pots.
 
 
-## Интеграция CraftTweaker
+## CraftTweaker Integration
 
-Садовые вещи поставляются с коренной интеграцией Craftweaker. Это означает, что проблемы с добавленными методами должны обсуждаться на [Garden Stuff Issue-Tracker](https://github.com/jaquadro/GardenCollection/issues)
+Garden Stuff comes with Native CraftTweaker Integration. This means that issues with the added methods should be discussed at the [Garden Stuff Issue-Tracker](https://github.com/jaquadro/GardenCollection/issues)

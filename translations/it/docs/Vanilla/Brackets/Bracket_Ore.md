@@ -1,19 +1,19 @@
-# Gestore Parentesi Del Dizionario Minerario
+# Ore Dictionary Bracket Handler
 
-Il Gestore di parentesi del dizionario del dizionario del reo ti dà accesso ai dizionari del gioco.
+The Ore Dictionary Bracket Handler gives you access to the Ore Dictionaries in the game.
 
-Ore Dictionarys sono citati in Ore Dictionary Bracket Handler da così:
+Ore Dictionarys are referenced in the Ore Dictionary Bracket Handler by like so:
 
 ```zenscript
 <ore:orename>
 <ore:ingotIron>
 ```
 
-Restituisce un [IOreDictEntry](/Vanilla/OreDict/IOreDictEntry/), finché nessun `*` è nella chiamata, altrimenti restituisce un `Lista<IOreDictEntry>` Se l'oreDictionary non è ancora nel gioco, creerà un nuovo e vuoto oreDictionary con il nome dato e restituirà quello. Si prega di fare riferimento al [Dizionario Minerario](/Vanilla/OreDict/IOreDictEntry/) Voce per ulteriori informazioni su cosa fare con loro.
+Returns an [IOreDictEntry](/Vanilla/OreDict/IOreDictEntry/), as long as no `*` is in the call, otherwise returns a `List<IOreDictEntry>` If the oreDictionary is not yet in the game, will create a new and empty oreDictionary with the given name and return that. Please refer to the [Ore Dictionary](/Vanilla/OreDict/IOreDictEntry/) Entry for further information on what to do with them.
 
-# Ottenere tutti i Dizionari Ore registrati
+# Getting all Registered ore Dictionaries
 
-È possibile utilizzare il seguente comando per visualizzare tutti i dizionari registrati nel registro CraftTweaker
+You can use the following command to output all registered ore Dictionaries to the CraftTweaker log
 
     /ct oredict
     /crafttweaker oredict

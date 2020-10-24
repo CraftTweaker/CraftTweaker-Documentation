@@ -2,7 +2,7 @@
 
 Le IEventManager est ce dont vous aurez besoin lorsque vous traiterez avec les gestionnaires d'événements.
 
-## Importation de la classe
+## Importing the class
 
 Il peut être nécessaire pour vous de [importer](/AdvancedFunctions/Import/) la classe si vous rencontrez des problèmes.  
 `importer crafttweaker.events.IEventManager ;`
@@ -35,11 +35,11 @@ events.onPlayerCrafted(function(event as crafttweaker.event.PlayerCraftedEvent){
 
 Les méthodes Zen seraient ce dont vous aurez besoin pour appeler les `événements`, la classe d'événement serait ce dont vous avez besoin pour lancer l'événement comme.
 
-| Méthode Zen                            | Classe de l'événement                                                                                            |
+| ZenMethod                              | Event Class                                                                                                      |
 | -------------------------------------- | ---------------------------------------------------------------------------------------------------------------- |
 | onAllowDespawn                         | [`format@@0 crafttweaker.event.EntityLivingSpawnEvent`](/Vanilla/Events/Events/EntityLivingSpawn/)               |
 | onAnimalTame                           | [`AnimalTameEvent`](/Vanilla/Events/Events/AnimalTame/)                                                          |
-| format@@0 onBlockBreak                 | [`format@@0 crafttweaker.event.BlockBreak`](/Vanilla/Events/Events/BlockBreak/)                                  |
+| onBlockBreak                           | [`format@@0 crafttweaker.event.BlockBreak`](/Vanilla/Events/Events/BlockBreak/)                                  |
 | onBlockHarvestDrops                    | [`BlockHarvestDrops`](/Vanilla/Events/Events/BlockHarvestDrops/)                                                 |
 | onBlockPlace                           | [`format@@0 crafttweaker.event.BlockPlaceEvent`](/Vanilla/Events/Events/BlockPlace/)                             |
 | onCheckSpawn                           | [`format@@0 crafttweaker.event.EntityLivingExtendedSpawnEvent`](/Vanilla/Events/Events/EntityLivingSpawn/)       |
@@ -48,7 +48,7 @@ Les méthodes Zen seraient ce dont vous aurez besoin pour appeler les `événeme
 | format@@0 onCropGrowPost               | [`format@@0 crafttweaker.event.CropGrowPostEvent`](/Vanilla/Events/Events/CropGrowPost/)                         |
 | format@@0 onCropGrowPre                | [`format@@0 crafttweaker.event.CropGrowPreEvent`](/Vanilla/Events/Events/CropGrowPre/)                           |
 | format@@0 onEnchantmentLevel           | [`format@@0 crafttweaker.event.EnchantmentLevelSetEvent`](/Vanilla/Events/Events/EnchantmentLevelSet/)           |
-| format@@0 onEnderTeleport              | [`Événement d'EnderTeleportation`](/Vanilla/Events/Events/EnderTeleport/)                                        |
+| onEnderTeleport                        | [`Événement d'EnderTeleportation`](/Vanilla/Events/Events/EnderTeleport/)                                        |
 | format@@0 onEntityLivingLivingAttacked | [`format@@0 crafttweaker.event.EntityLivingAttackedEvent`](/Vanilla/Events/Events/EntityLivingAttacked/)         |
 | format@@0 onEntityLivingDeath          | [`format@@0 crafttweaker.event.EntityLivingDeathEvent`](/Vanilla/Events/Events/EntityLivingDeath/)               |
 | format@@0 onEntityLivingDeathDrops     | [`format@@0 crafttweaker.event.EntityLivingDeathDropsEvent`](/Vanilla/Events/Events/EntityLivingDeathDrops/)     |
@@ -71,13 +71,14 @@ Les méthodes Zen seraient ce dont vous aurez besoin pour appeler les `événeme
 | onItemToss                             | [`format@@0 crafttweaker.event.ItemTossEvent`](/Vanilla/Events/Events/ItemToss/)                                 |
 | format@@0 onLivingDestroyBlock         | [`Évènement format@@0LivingDestroyBlockformat@@1`](/Vanilla/Events/Events/LivingDestroyBlock/)                   |
 | onLivingExperienceDrop                 | [`Événement « crafttweaker.» LivingExperience DropEvent`](/Vanilla/Events/Events/LivingExperienceDrop/)          |
-| onLivingKockBack                       | [`format@@0 crafttweaker.event.LivingKnockBackEvent`](/Vanilla/Events/Events/LivingKnockBack/)                   |
+| onLivingKnockBack                      | [`format@@0 crafttweaker.event.LivingKnockBackEvent`](/Vanilla/Events/Events/LivingKnockBack/)                   |
 | niveau de butin                        | [`Evénement de niveau de butin`](/Vanilla/Events/Events/LootingLevel/)                                           |
 | onMinecartCollision                    | [`MinecartCollisionEvent`](/Vanilla/Events/Events/MinecartCollision/)                                            |
 | sur MinecartInteract                   | [`Événement MinecartInteractEvent`](/Vanilla/Events/Events/MinecartInteract/)                                    |
 | onMobGriefing                          | [`Événement MobGriefingEvent`](/Vanilla/Events/Events/MobGriefing/)                                              |
 | format@@0 onPlayerAdvancement          | [`format@@0 crafttweaker.event.PlayerAdvancement`](/Vanilla/Events/Events/PlayerAdvancement/)                    |
-| format@@0 onPlayerAnvilRepair          | [`format@@0 crafttweaker.event.PlayerAnvilRepair`](/Vanilla/Events/Events/PlayerAnvilRepair/)                    |
+| format@@0 onPlayerAnvilRepair          | [`format@@0 crafttweaker.event.PlayerAnvilRepairEvent`](/Vanilla/Events/Events/PlayerAnvilRepair/)               |
+| onPlayerAnvilUpdate                    | [`format@@0 crafttweaker.event.PlayerAnvilUpdateEvent`](/Vanilla/Events/Events/PlayerAnvilUpdate/)               |
 | onPlayerAttackEntity                   | [`format@@0 crafttweaker.event.PlayerAttackEntityEvent`](/Vanilla/Events/Events/PlayerAttackEntity/)             |
 | farine d'os de joueur                  | [`format@@0 crafttweaker.event.PlayerBonemealEvent`](/Vanilla/Events/Events/PlayerBonemeal/)                     |
 | format@@0 onPlayerBreakSpeed           | [`format@@0 crafttweaker.event.PlayerBreakSpeed`](/Vanilla/Events/Events/PlayerBreakSpeed/)                      |
@@ -103,7 +104,7 @@ Les méthodes Zen seraient ce dont vous aurez besoin pour appeler les `événeme
 | format@@0 onPlayerSetSpawn             | [`format@@0 crafttweaker.event.PlayerSetSpawn`](/Vanilla/Events/Events/PlayerSetSpawn/)                          |
 | onPlayerSleepInBed                     | [`format@@0 crafttweaker.event.PlayerSleepInBedEvent`](/Vanilla/Events/Events/PlayerSleepInBed/)                 |
 | onPlayerSmelted                        | [`format@@0 crafttweaker.event.PlayerSmeltedEvent`](/Vanilla/Events/Events/PlayerSmelted/)                       |
-| format@@0 onPlayerTick                 | [`format@@0 crafttweaker.event.PlayerTickEvent`](/Vanilla/Events/Events/PlayerTick/)                             |
+| onPlayerTick                           | [`format@@0 crafttweaker.event.PlayerTickEvent`](/Vanilla/Events/Events/PlayerTick/)                             |
 | onPlayerUseHoe                         | [`format@@0 crafttweaker.event.PlayerUseHoeEvent`](/Vanilla/Events/Events/PlayerUseHoe/)                         |
 | onPlayerVisibility                     | [`Événement de Visibilité des joueurs`](/Vanilla/Events/Events/PlayerVisibility/)                                |
 | format@@0 onPotionBrewPost             | [`format@@0 crafttweaker.event.PotionBrewPostEvent`](/Vanilla/Events/Events/PotionBrewPost/)                     |

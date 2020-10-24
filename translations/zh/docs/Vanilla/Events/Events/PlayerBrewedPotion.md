@@ -1,25 +1,25 @@
-# 玩家酿酒药水
+# PlayerBrewedPotion
 
-当玩家从酿造台拿出药水时，玩家会被发射。
+The PlayerBrewedPotion Event is fired whenever a player takes out a potion from the brewing stand.
 
-## 事件类
+## Event Class
 
 You will need to cast the event in the function header as this class:  
 `crafttweaker.event.PlayerBrewedPotionEvent`  
 You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
 
-## 事件界面扩展
+## Event interface extensions
 
-玩家酿酒活动实现了以下接口，并且能够调用他们所有的方法/getter/setter：
+PlayerBrewedPotion Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
 
 - [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
 
 ## ZenGetters
 
-以下信息可以从事件中检索：
+The following information can be retrieved from the event:
 
 | ZenGetter | 返回值类型                                    |
 | --------- | ---------------------------------------- |
-| `播放器`     | [IPlayer](/Vanilla/Players/IPlayer/)     |
-| `药水`      | [IItemStack](/Vanilla/Items/IItemStack/) |
-| `手`       | 字符串                                      |
+| `player`  | [IPlayer](/Vanilla/Players/IPlayer/)     |
+| `potion`  | [IItemStack](/Vanilla/Items/IItemStack/) |
+| `hand`    | string                                   |

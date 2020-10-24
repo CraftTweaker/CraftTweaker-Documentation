@@ -1,24 +1,24 @@
-# Очистка котлов
+# Cauldron Cleaning
 
-Котелок ** используется для добавления или удаления рецептов из котла.
+The *cauldroncleaning* package is used for adding or removing recipes to/from the Cauldron.
 
-## Звонок
+## Calling
 
-Вы можете вызвать пакет *cauldroncleaning* с помощью `mods.skyresources.cauldronclean`
+You can call the *cauldroncleaning* package using `mods.skyresources.cauldronclean`
 
-## Добавление рецепта
+## Recipe Addition
 
 ```zenscript
 //mods.skyresources.cauldronclean.addRecipe(IItemStack output, IItemStack input);
 mods.skyresources.cauldronclean.addRecipe(<minecraft:diamond>, <minecraft:dirt>);
 
-//mods.skyresources.cauldronclean.addRecipe(IItemStack, IItemStack input, float chance);
+//mods.skyresources.cauldronclean.addRecipe(IItemStack output, IItemStack input, float chance);
 mods.skyresources.cauldronclean.addRecipe(<minecraft:emerald>, <minecraft:dirt>, 0.50);
 ```
 
-## Удаление рецепта
+## Recipe Removal
 
 ```zenscript
-//mods.skyresources.cauldronclean.removeRecipe(IItemStack);
+//mods.skyresources.cauldronclean.removeRecipe(IItemStack output);
 mods.skyresources.cauldronclean.removeRecipe(<minecraft:diamond>);
 ```

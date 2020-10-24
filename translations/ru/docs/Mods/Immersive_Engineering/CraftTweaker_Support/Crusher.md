@@ -1,58 +1,58 @@
-# Дробитель
+# Crusher
 
-Пакет дробилки может быть использован для добавления/удаления рецептов из дешёвой машины.
+The Crusher package can be used to add/remove recipes to/from the Immersive Engineering Crusher.
 
-## Вызов пакета
+## Calling The Package
 
-Вы можете вызвать пакет дробилки с помощью `mods.immersiveengineering.Crusher`.
+You can call the Crusher package using `mods.immersiveengineering.Crusher`.
 
-## Добавить рецепт
+## Add Recipe
 
-| Требуется | Тип             | Тип данных                                          |
-| --------- | --------------- | --------------------------------------------------- |
-| Требуется | Вывод           | [IItemStack](/Vanilla/Items/IItemStack/)            |
-| Требуется | Input           | [Иингредиент](/Vanilla/Variable_Types/IIngredient/) |
-| Требуется | Энергия         | int                                                 |
-| Optional  | Вторичный вывод | [IItemStack](/Vanilla/Items/IItemStack/)            |
-| Optional  | Вторичный шанс  | double                                              |
+| Required | Тип              | Data Type                                           |
+| -------- | ---------------- | --------------------------------------------------- |
+| Required | Output           | [IItemStack](/Vanilla/Items/IItemStack/)            |
+| Required | Input            | [IIngredient](/Vanilla/Variable_Types/IIngredient/) |
+| Required | Energy           | int                                                 |
+| Optional | Secondary Output | [IItemStack](/Vanilla/Items/IItemStack/)            |
+| Optional | Secondary Chance | double                                              |
 
 ### Пример
 
 ```zenscript
-//Пример:
+//Example:
 mods.immersiveengineering.Crusher.addRecipe(IItemStack output, IIngredient input, int energy, @Optional IItemStack secondaryOutput, @Optional double secondaryChance);
 
-mods.immersiveengineering.Crusher. ddRecipe(<minecraft:diamond>, <ore:logWood>2048);
+mods.immersiveengineering.Crusher.addRecipe(<minecraft:diamond>, <ore:logWood>, 2048);
 mods.immersiveengineering.Crusher.addRecipe(<minecraft:diamond>, <ore:logWood>, 2048, <minecraft:dirt>);
-модов. mmersiveengineering.Crusher.addRecipe(<minecraft:diamond>, <ore:logWood>, 2048, <minecraft:dirt>, 0.5);
+mods.immersiveengineering.Crusher.addRecipe(<minecraft:diamond>, <ore:logWood>, 2048, <minecraft:dirt>, 0.5);
 ```
 
-## Удалить рецепт по выводу
+## Remove Recipe by Output
 
-| Тип   | Тип данных                               |
-| ----- | ---------------------------------------- |
-| Вывод | [IItemstack](/Vanilla/Items/IItemStack/) |
+| Тип    | Data Type                                |
+| ------ | ---------------------------------------- |
+| Output | [IItemstack](/Vanilla/Items/IItemStack/) |
 
 ### Пример
 
 ```zenscript
-//Пример:
-mods.immersiveengineering.Crusher.removeRecipe(IItemstack);
+//Example:
+mods.immersiveengineering.Crusher.removeRecipe(IItemstack output);
 
 mods.immersiveengineering.Crusher.removeRecipe(<minecraft:diamond>);
 ```
 
-## Удалить рецепт по вводу
+## Remove Recipe By Input
 
-| Тип   | Тип данных                               |
+| Тип   | Data Type                                |
 | ----- | ---------------------------------------- |
 | Input | [IItemstack](/Vanilla/Items/IItemStack/) |
 
 ### Пример
 
 ```zenscript
-//Пример:
-mods.immersiveengineering.Crusher.removeRecipesForInput(IItemstack);
+//Example:
+mods.immersiveengineering.Crusher.removeRecipesForInput(IItemstack input);
 
-mods.immersiveengineering.Crusher.removeRecipesInput(<minecraft:diamond>);
+mods.immersiveengineering.Crusher.removeRecipesForInput(<minecraft:diamond>);
 ```

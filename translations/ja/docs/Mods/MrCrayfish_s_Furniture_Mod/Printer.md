@@ -1,24 +1,24 @@
 # Printer
 
-format@@0では、アイテムのコピーを作成できます。
+The Print allows you to make a copy of an item.
 
-デフォルトでは、書き込まれた本やエンチャントされた本をコピーできます。
+By default can copy written books and enchanted books.
 
-## 削除中
+## Removing
 
-## 一致するコピー可能な項目を削除します。
+## Remove matching copyable items.
 
 ```zenscript
 mods.cfm.Printer.remove(@Optional final IIngredient item);
 
 mods.cfm.Printer.remove(<minecraft:enchanted_book>);
-// すべての印刷可能なアイテムを削除します。
+// Remove all printable items.
 mods.cfm.Printer.remove();
 ```
 
-## 追加中
+## Adding
 
-## コピー可能なアイテムを追加
+## Add a copyable item.
 
 ```zenscript
 mods.cfm.Printer.add(@Nonnull final IItemStack item);

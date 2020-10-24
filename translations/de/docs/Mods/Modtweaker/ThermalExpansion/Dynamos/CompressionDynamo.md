@@ -1,23 +1,23 @@
-# Komprimierungsdynamo
+# Compression Dynamo
 
 ## Dieses Paket importieren
 
 To shorten method calls you can [import](/AdvancedFunctions/Import/) the package like so:
 
 ```zenscript
-importieren mods.thermalexpansion.CompressionDynamo;
+import mods.thermalexpansion.CompressionDynamo;
 ```
 
-## Brennstoff hinzufügen
+## Add Fuel
 
 ```zenscript
 //mods.thermalexpansion.CompressionDynamo.addFuel(ILiquidStack stack, int energy);
 mods.thermalexpansion.CompressionDynamo.addFuel(<liquid:water>, 13);
 ```
 
-## Treibstoff entfernen
+## Remove Fuel
 
 ```zenscript
-//mods.thermalexpansion.Compression.removeFuel(ILiquidStack Stack);
+//mods.thermalexpansion.Compression.removeFuel(ILiquidStack stack);
 mods.thermalexpansion.Compression.removeFuel(<liquid:water>);
 ```

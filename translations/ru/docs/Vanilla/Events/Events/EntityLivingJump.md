@@ -1,6 +1,6 @@
-# Полностью LivingJump
+# EntityLivingJump
 
-Событие EntityLivingJump запускается при прыжке сущности.
+The EntityLivingJump Event is fired whenver an entity jumps.
 
 ## Класс события
 

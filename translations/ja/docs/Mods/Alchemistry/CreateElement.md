@@ -1,20 +1,20 @@
-# 要素を作成
-Alchemistryのカスタム要素の作成
+# Create Element
+Custom Element Creation for Alchemistry
 
-# パッケージ
+# Package
 `mods.alchemistry.Util.createElementUtil.createElement`
 ## Loader
-これは `#loader alchemistry` でロードする必要があります。
+This needs to be loaded with `#loader alchemistry`
 
-## メソッド
+## Methods
 - **int atomicNumber** ID for new Element
-- **文字列名** 新しい要素名
-- **文字列 Abbrebiation** 新しい要素 Abbrebiation
+- **String Name** New Elements Name
+- **String Abbrebiation** New Elements Abbrebiation
 - **int red** Element red shade, RGB
-- **int 緑** 緑色のシェーディング, RGB
+- **int green** Element green shade, RGB
 - **int blue** Element blue shade, RGB
 
-## 作成
+## Creation
 ```zenscript
 mods.alchemistry.Atomizermods.alchemistry.Util.createElement(int atomicNumber, String name, String abbreviation, int red, int green, int blue);
 
@@ -23,9 +23,9 @@ mods.alchemistry.Util.createElement(151,"unobtanium","Uno",30,54,69);Util.create
 mods.alchemistry.Util.createElement(151,"unobtanium","Uno",30,54,69);
 ```
 
-## メモ
+## Notes
 
-- 小文字の名前を使用してください
-- 既存の原子番号は上書きできません
-- ファイルの先頭に '#loader alchemistry' 行が必要です。 このファイルは要素や化合物を作成するためにのみ使用でき、他のレシピは他のファイルに入れる必要があります。
-- 注: v1.0.2 以降では、カスタム要素の model json と画像を含めるには、mod のリソースローダーを使用する必要があります。 これらのリソースを自動生成したい場合は、ここでコマンドラインJARプログラム [を作成しました](https://github.com/al132mc/alchemistry-resource-creator/releases)。
+- Please use lowercase names
+- Pre-existing atomic numbers cannot be overwritten
+- The '#loader alchemistry' line is required at the top of the file. This file can only be used to create elements and compounds, other recipes must be put in other files.
+- NOTE: As of v1.0.2, The mod Resource Loader must be used to include the image and model json for custom elements. If you would like to auto-generate these resources I have created a command-line JAR program [here](https://github.com/al132mc/alchemistry-resource-creator/releases) to do so.

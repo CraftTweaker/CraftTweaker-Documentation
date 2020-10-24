@@ -1,12 +1,12 @@
-# Симптомы:
+# Traits:
 
-Черты являются новым дополнением для Убийства и делает его так, что теперь вы можете блокировать вещи за требуемым симптомом. Характеристики похожи на навыки, которые мы переместили их вместо названия для более надежной расширяемости. Синтаксис симптомов является следующим:
+Traits is a new addition for Reskillable and makes it so you now can lock things behind a required Trait. Traits are similar to Skills in the way that we've moved them over to a Resource Location instead of a name to allow for more robust extendability. The Trait Syntax is as follows:
 
-    Пример:
+    Example:
     trait|ResourceLocation
     
-    Рабочий пример:
+    Working Example:
     trait|reskillable:battle_spirit
     
 
-Вы можете найти ресурсы симптомов под: [Навыки & Черты](/Mods/CompatSkills/Requirements/Skills_Traits/)
+You can find the Traits's ResourceLocations under: [Skills & Traits](/Mods/CompatSkills/Requirements/Skills_Traits/)

@@ -1,44 +1,44 @@
-# 位置 3f
+# Position 3f
 
-Minecraft中的位置包含三个值：x、y和z。  
-一个位置3f 对象存储了一个使用这三个值的位置。
+A Position in Minecraft consists of 3 values: x, y and z.  
+A Position3f Object stores a position using those three values.
 
 ## 导入相关包
 
-如果遇到任何问题，您可能需要 [导入](/AdvancedFunctions/Import/) 软件包(例如铸造 [数组](/AdvancedFunctions/Arrays_and_Loops/))， 这样比抱歉更安全并添加导入。  
-`导入craftweaper.util.position3f;`
+It might be required for you to [import](/AdvancedFunctions/Import/) the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
+`import crafttweaker.util.Position3f;`
 
-## 正在获取位置3f 对象
+## Getting a Position3f object
 
-您可以使用以下方式获得这样一个对象：
+You can get such an object using:
 
-- `位置` ZenGetter 在 [IPlayer](/Vanilla/Players/IPlayer/) 对象
-- 下方位置3f 构造函数
-- [IBlockPos](/Vanilla/World/IBlockPos/) 位置3f caster。
+- The `position` ZenGetter on a [IPlayer](/Vanilla/Players/IPlayer/) object
+- The Position3f constructor below
+- The [IBlockPos](/Vanilla/World/IBlockPos/) Position3f caster.
 
-## 位置3f 构造函数
+## Position3f constructor
 
-您可以使用以下方法创建您自己的位置3f对象：
+You can create a Position3f object yourself by using the following method:
 
 ```zenscript
-craftbinefer.util.Position3f.create(float x, float y, float z);
+crafttweaker.util.Position3f.create(float x, float y, float z);
 ```
 
-第一个方法允许您在给定坐标处创建一个位置。
+The First method allows you to create a position at the given coordinates.
 
-## ZenGetters 和 ZenSettters
+## ZenGetters and ZenSetters
 
-| ZenGetter | ZenSetter | 描述        |
-| --------- | --------- | --------- |
-| x         | x         | 返回位置的x值   |
-| 年         | 年         | 返回位置的 y 值 |
-| z         | z         | 返回位置的 z 值 |
+| ZenGetter | ZenSetter | 描述                             |
+| --------- | --------- | ------------------------------ |
+| x         | x         | Returns the position's x value |
+| y         | y         | Returns the position's y value |
+| z         | z         | Returns the position's z value |
 
-## 以 IBlockPos 投射中
+## Casting as IBlockPos
 
 You can use the two ways below to cast a Position3f Object to an [IBlockPos](/Vanilla/World/IBlockPos/) Object: Remember, for casting you need to [import](/AdvancedFunctions/Import/) the type you want to cast to unless you use the full name.
 
 ```zenscript
 posThree.asBlockPos();
-posthree as IBlockPos;
+posThree as IBlockPos;
 ```

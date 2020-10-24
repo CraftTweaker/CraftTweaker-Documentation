@@ -1,16 +1,16 @@
-# Критическое событие HitEvent
+# CriticalHitEvent
 
-Событие Критического Удара запускается всякий раз, когда игрок атакует другое существо. У него есть **результат** , который определяет, происходит ли критика по умолчанию:
+The CriticalHit Event is fired whenever a player attacks another creature. It has a **result** which determines whether or not default crit behaviour occurs:
 
-- **разрешить**: атака должна быть критической
-- **отрицает**: атака не может быть критической
-- **По умолчанию**: атака использует стандартное поведение Vanilla для определения крит.
+- **allow**: the attack is forced to be a critical
+- **deny**: the attack is prevented from being a critical
+- **default**: the attack uses default Vanilla behaviour to determine if it's a crit.
 
-Вы также можете настроить модификатор повреждений для критического удара.
+You can also adjust the damage modifier for the critical hit.
 
-## Примечания
+## Notes
 
-`event.oldDamageModifier` содержит исходный модификатор урона события `. sVanillaCrit` - это логическое значение, которое определяет, является ли это значение уже критическим хитом.
+`event.oldDamageModifier` contains the original damage modifier of the event, while `event.isVanillaCrit` is a boolean value that determines whether or not this is actually already a critical hit.
 
 ## Класс события
 You will need to cast the event in the function header as this class:  
@@ -18,22 +18,22 @@ You will need to cast the event in the function header as this class:
 You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
 
 ## Наследование от интерфейсов событий
-CriticalHit Events реализуют следующие интерфейсы и могут также вызвать все их методы/getters/setters:
+CriticalHit Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
 
 - [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
 
 ## ZenGetters
 Следующая информация может быть получена от события:
 
-| ZenGetter                  | ZenSetter                  | Возвращаемый тип                      |
-| -------------------------- | -------------------------- | ------------------------------------- |
-| `target`                   |                            | [IEntity](/Vanilla/Entities/IEntity/) |
-| `oldDamageModifier`        |                            | float                                 |
-| `повреждающий модификатор` | `повреждающий модификатор` | float                                 |
-| `isVanillaCrit`            |                            | boolean                               |
+| ZenGetter           | ZenSetter        | Возвращаемый тип                      |
+| ------------------- | ---------------- | ------------------------------------- |
+| `target`            |                  | [IEntity](/Vanilla/Entities/IEntity/) |
+| `oldDamageModifier` |                  | float                                 |
+| `damageModifier`    | `damageModifier` | float                                 |
+| `isVanillaCrit`     |                  | boolean                               |
 
 ## Методы
 
-- `event.deny()` устанавливает результат на отрицание.
-- `event.allow()` устанавливает допустимый результат.
-- `event.default()` устанавливает результат по умолчанию.
+- `event.deny()` sets the result to deny.
+- `event.allow()` sets the result to allow.
+- `event.default()` sets the result to default.

@@ -1,17 +1,17 @@
 # IEntityDropFunction
 
-IEntityDropFunction は、関連エンティティが殺されるたびに呼び出されます。 これでできることは想像力に任せてください。
+An IEntityDropFunction is called whenever the associated entity is killed. Leave it up to your imagination what you can do with this:
 
-## pacakge をインポートしています
+## Importing the pacakge
 
-問題が発生した場合は、パッケージをインポートする必要があるかもしれませんので、申し訳ありませんし、インポートを追加してください。  
+It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
 `import crafttweaker.entity.IEntityDropFunction;`
 
-## パラメータ
+## Parameters
 
-IEntityDropFunction は以下のパラメータを持つ関数です。
+The IEntityDropFunction is a function with the following parameters:
 
-- [IEntity](/Vanilla/Entities/IEntity/) エンティティ → 死亡したばかりのエンティティ。
-- [IDamageSource](/Vanilla/Damage/IDamageSource/) dmgSourve → エンティティの死源。
+- [IEntity](/Vanilla/Entities/IEntity/) entity → The entity that just died.
+- [IDamageSource](/Vanilla/Damage/IDamageSource/) dmgSourve → The source of the entitie's death.
 
-関数は [IItemStack](/Vanilla/Items/IItemStack/)、または `null` を返す必要があります。
+The Function needs to return an [IItemStack](/Vanilla/Items/IItemStack/), or `null`.

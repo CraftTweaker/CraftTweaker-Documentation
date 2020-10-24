@@ -1,24 +1,23 @@
 # PlayerLoggedIn
 
-PlayerLoggedInイベントは、プレイヤーがログインするたびに発生します。
+The PlayerLoggedIn Event is fired whenever a player logs in.
 
-## イベントクラス
+## Event Class
 
-関数ヘッダーのイベントをこのクラスとしてキャストする必要があります:  
-`crafttweaker.event. layerLoggedInEvent <br /> 
- <code>`  
-もちろん、 [インポート](/AdvancedFunctions/Import/) 前にそのクラスをインポートして、その名前を使用することもできます。
+You will need to cast the event in the function header as this class:  
+`crafttweaker.event.PlayerLoggedInEvent`  
+You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
 
-## イベントインターフェースの拡張
+## Event interface extensions
 
-PlayerLoggedIn Events 以下のインターフェイスを実装し、それらのメソッド/getters/settersをすべて呼び出すことができます。
+PlayerLoggedIn Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
 
 - [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
 
 ## ZenGetters
 
-イベントから次の情報を取得できます。
+The following information can be retrieved from the event:
 
 | ZenGetter | 戻り値                                  |
 | --------- | ------------------------------------ |
-| `プレイヤー`   | [IPlayer](/Vanilla/Players/IPlayer/) |
+| `player`  | [IPlayer](/Vanilla/Players/IPlayer/) |

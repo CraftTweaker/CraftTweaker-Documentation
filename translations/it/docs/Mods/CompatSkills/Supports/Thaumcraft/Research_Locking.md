@@ -1,11 +1,11 @@
-# Ricerca Di Blocco
+# Research Locking
 
-## Caratteristica:
+## Feature:
 
-Questa funzione consente di bloccare l'acquisizione di Ricerca dietro un gruppo di requisiti impostati. Ciò significa, ad esempio, che è possibile impostare l'acquisizione di "Golem Research" dietro l'esigenza di essere in una certa dimensione (come si vede nell'esempio qui sotto). Questo significa che devi essere in quella dimensione per acquisire la ricerca, tuttavia una volta che hai la ricerca che hai ottenuto. Non "resetta" né "disimparare" lasciando la dimensione o non soddisfacendo più i requisiti in generale!
+This feature allows you to lock the acquisition of Research behind a set group of requirements. This means for example that you can set the acquisition of "Golem Research" behind the requirement of being in a certain dimension (as seen in the example below). This does mean that you have to be in that dimension to acquire the research, however once you've got the research you've got it. It doesn't "reset" or get "unlearnt" by leaving the dimension or no longer meeting the requirements in general!
 
-## Sintassi:
+## Syntax:
 
-    mods.compatskills.Thaumcraft.addResearchLock(String researchKey, String... requisiti);
+    mods.compatskills.Thaumcraft.addResearchLock(String researchKey, String... requirements);
     
-    mods.compatskills.Thaumcraft.addResearchLock("GOLEMVISION", "dim<unk> 1");
+    mods.compatskills.Thaumcraft.addResearchLock("GOLEMVISION", "dim|1");

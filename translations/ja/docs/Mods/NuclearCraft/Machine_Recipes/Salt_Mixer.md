@@ -1,16 +1,16 @@
 # Salt Mixer
 
-## パッケージのインポート
-`mods.nuclecraft.salt_mixer`
+## Importing the Package
+`mods.nuclearcraft.salt_mixer`
 
-## レシピを追加中
+## Adding Recipes
 ```zenscript
-mods.nuthcraft.salt_mixer.addRecipe([fluidInput1, fluidInput2, fluidOutput, @Optional double powerMultiplier, @Optional door processRadiation]);
+mods.nuclearcraft.salt_mixer.addRecipe([fluidInput1, fluidInput2, fluidOutput, @Optional double timeMultiplier, @Optional double powerMultiplier, @Optional double processRadiation]);
 ```
 
-## レシピを削除
+## Removing Recipes
 ```zenscript
-mods.numercraft.salt_mixer.removeRecipeWithInput([fluidInput1, fluidInput2]);
-mods.nuclecraft.salt_mixer.removeRecipeWithOutput([fluidOutput]);
-mods.nuclecraft.salt_mixer.removeAllRecipes();
+mods.nuclearcraft.salt_mixer.removeRecipeWithInput([fluidInput1, fluidInput2]);
+mods.nuclearcraft.salt_mixer.removeRecipeWithOutput([fluidOutput]);
+mods.nuclearcraft.salt_mixer.removeAllRecipes();
 ```

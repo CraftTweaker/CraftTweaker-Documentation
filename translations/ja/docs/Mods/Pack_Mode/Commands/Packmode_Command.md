@@ -1,10 +1,10 @@
-# Packmode コマンド
+# Packmode Command
 
-## 発信中
+## Calling
 
-`/packmode newMode` を使って `newMode` を新しいpackModeの名前として呼び出します。
+You call the Command using `/packmode newMode` with `newMode` being the name of the new packMode
 
-## 使用法
+## Usage
 
-ゲームのパックモードを設定するためにコマンドを使用します。  
-変更を行うには、ゲームを再起動する必要がありますのでご注意ください!
+You use the command to set your game's packmode.  
+Please note that you will need to restart your game in order for the changes to occur!

@@ -1,19 +1,19 @@
-# Creusable
+# Crucible
 
-Le paquet *creuset* est utilisé pour ajouter ou supprimer des recettes de/vers le Crucible.
+The *crucible* package is used for adding or removing recipes to/from the Crucible.
 
-## Appel en cours
+## Calling
 
-Vous pouvez appeler le paquet *crucible* en utilisant `mods.skyresources.crucible`
+You can call the *crucible* package using `mods.skyresources.crucible`
 
-## Ajout de recette
+## Recipe Addition
 
 ```zenscript
-//mods.skyresources.crucible.addRecipe(ILiquidStack sortie, IItemStack input);
+//mods.skyresources.crucible.addRecipe(ILiquidStack output, IItemStack input);
 mods.skyresources.crucible.addRecipe(<liquid:lava> * 500, <minecraft:cobblestone>);
 ```
 
-## Suppression de la recette
+## Recipe Removal
 
 ```zenscript
 //mods.skyresources.crucible.removeRecipe(ILiquidStack output);

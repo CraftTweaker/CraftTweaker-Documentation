@@ -1,23 +1,23 @@
-# iPotionBrewEvent
+# IPotionBrewEvent
 
-このイベントは、醸造スタンドからアイテムを抽出するためのプレイヤーベースの機能ではないが、醸造スタンドに関わるすべてのイベントによって延長される。
+This event is extended by all events involving the brewing stand, although not the player-based function for extracting items from the brewing stand.
 
-## クラスのインポート
-エラーを避けるためにクラスを [インポート](/AdvancedFunctions/Import/) する必要があるかもしれません。  
+## Importing the class
+It might be required to [import](/AdvancedFunctions/Import/) the class to avoid errors.  
 `import crafttweaker.event.IPotionBrewEvent;`
 
-## 何が彼らを使って行うことができますか?
+## What can be done with them?
 
-| ZenGetter | ZenSetter | タイプ  |
+| ZenGetter | ZenSetter | type |
 | --------- | --------- | ---- |
-| `長さ`      |           | int型 |
+| `length`  |           | int型 |
 
-## メソッド
+## Methods
 
 - [IItemStack](/Vanilla/Items/IItemStack/) `getItem()`
 
-指定された配列の項目のリストに含まれる IItemStack を返します。 指定されたインデックスが `長さ` より大きい場合、空の IItemStack が返されます。
+Returns the IItemStack contained in the list of items at the specified array. Will return an empty IItemStack if the specified index is greater than `length`.
 
 - `setItem(int,` [`IItemStack`](/Vanilla/Items/IItemStack/) `)`
 
-指定したインデックスの itemstack を指定した項目に置き換えます。 番目のインデックスがアイテム配列の長さよりも大きい場合、何も起こりません。
+Replaces the itemstack at the specified index with the specified item. If th index is greater than the length of the item array, nothing will happen.

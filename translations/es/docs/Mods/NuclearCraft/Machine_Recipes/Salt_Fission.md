@@ -1,14 +1,14 @@
-# Fission de la sal
+# Salt Fission
 
-## Importando el Paquete
-`mods.nuclearcraft.salt_fisión`
+## Importing the Package
+`mods.nuclearcraft.salt_fission`
 
-## Añadiendo recetas
+## Adding Recipes
 ```zenscript
 mods.nuclearcraft.salt_fission.addRecipe([fluidInput, fluidOutput, double baseTime, double basePower, @Optional double processRadiation]);
 ```
 
-## Eliminando recetas
+## Removing Recipes
 ```zenscript
 mods.nuclearcraft.salt_fission.removeRecipeWithInput([fluidInput]);
 mods.nuclearcraft.salt_fission.removeRecipeWithOutput([fluidOutput]);

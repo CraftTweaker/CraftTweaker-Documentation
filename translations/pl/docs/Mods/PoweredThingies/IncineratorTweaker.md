@@ -1,35 +1,35 @@
-# Zasilane rzeczy :: Spalarnia
+# Powered Thingies :: Incinerator
 
-### Importowanie
+### Importing
 
 ```zenscript
-importuj mods.poweredthingies.Tweaker.incineratorTweaker jako ten;
+import mods.poweredthingies.Tweaker.incineratorTweaker as it;
 ```
 
-### Lista kluczy, usuwanie przepisów przez klucz, czyszczenie
+### Listing Keys, Removing Recipes by Key, Clearing
 
 ```zenscript
 it().logKeys()
-it().removeRecipe('minecraft:log') // sprawdź wyjście <logKeys> dla prawidłowych kluczy
+it().removeRecipe('minecraft:log') // check <logKeys> output for valid keys
 it().clear()
 ```
 
-### Dodawanie przepisu
+### Adding Recipe
 
-##### Podpis
+##### Signature
 
 ```zenscript
-addRecipe(wejście: IItemStack, power: Long, wyjście: Array<WeightedItemStack>)
+addRecipe(input: IItemStack, power: Long, outputs: Array<WeightedItemStack>)
 ```
 
-`moc` reprezentuje całkowitą liczbę jednostek mocy (RF, T lub FE), które element wejściowy będzie generował.
+`power` represents the total number of power units (RF, T, or FE) the input item will generate.
 
-##### Przykład
+##### Example
 
 ```zenscript
 it().addRecipe(<minecraft:bucket>, 3600, [<minecraft:iron_ingot> % 15]);
 ```
 
-### Uwagi
+### Notes
 
-Wszystkie te działania zostaną zapisane w pamięci podręcznej i uruchomione po zakończeniu rejestracji domyślnego rejestru dla tego komputera (w tym tych z niestandardowych jsonów).
+All of these actions will get cached and ran after the default registry for this machine has finished registering all recipes (including the ones from the custom jsons).

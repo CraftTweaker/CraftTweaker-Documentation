@@ -1,12 +1,12 @@
-# Types de recettes spéciaux
+# Special Recipe Types
 
 ## Information
 
-L'Arc-Furnace a un paramètre Optional String appelé "specialRecipeType". Cette chaîne vous permet de "sous-étiqueter" votre recette à un type de recette spécifique. Cela ne modifie en rien le comportement, il suffit de l'assigner à un sous-tag.
+The Arc-Furnace has an Optional String parameter called "specialRecipeType". This String allows you to "Sub-Tag" your Recipe to a specific Recipe Type. This does not alter behavior in any way, it just assigns it to a Sub-Tag.
 
-### Types existants
+### Existing Types
 
-| Types de recettes: | Valeur      |
-| ------------------ | ----------- |
-| Alliage            | « Alliance» |
-| Ores               | « Mines»    |
+| Recipe Types: | Value      |
+| ------------- | ---------- |
+| Alloying      | "Alloying" |
+| Ores          | "Ores"     |

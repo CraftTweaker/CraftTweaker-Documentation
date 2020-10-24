@@ -1,16 +1,16 @@
-# Fluido Arricchito
+# Fluid Enricher
 
-## Importazione del pacchetto
+## Importing the Package
 `mods.nuclearcraft.Enricher`
 
-## Aggiunta Di Ricette
+## Adding Recipes
 ```zenscript
 mods.nuclearcraft.Enricher.addRecipe(IIngredient itemInput, ILiquidStack fluidInput, ILiquidStack fluidOutput, @Optional double timeMultiplier, @Optional double powerMultiplier, @Optional double processRadiation);
 ```
 
-## Rimozione Ricette
+## Removing Recipes
 ```zenscript
 mods.nuclearcraft.Enricher.removeRecipeWithInput(IIngredient itemInput, ILiquidStack fluidInput);
 mods.nuclearcraft.Enricher.removeRecipeWithOutput(ILiquidStack fluidOutput);
-mods.nuclearcraft.Enricher.removeAllRicette();
+mods.nuclearcraft.Enricher.removeAllRecipes();
 ```

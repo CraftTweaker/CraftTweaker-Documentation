@@ -1,24 +1,24 @@
-# Molino de roca
+# Rock Grinder
 
-El paquete *rockgrinder* se utiliza para añadir o quitar recetas para/de la Roca Grinder.
+The *rockgrinder* package is used for adding or removing recipes to/from the Rock Grinder.
 
-## Llamando
+## Calling
 
-Puedes llamar al paquete *rockgrinder* usando `mods.skyresources.rockgrinder`
+You can call the *rockgrinder* package using `mods.skyresources.rockgrinder`
 
-## Adición de receta
+## Recipe Addition
 
 ```zenscript
-//mods.skyresources.rockgrinder.addRecipe(salida ItemStack, entrada ItemStack);
+//mods.skyresources.rockgrinder.addRecipe(IItemStack output, IItemStack input);
 mods.skyresources.rockgrinder.addRecipe(<minecraft:diamond>, <minecraft:stone>);
 
-//mods.skyresources.rockgrinder.addRecipe(salida ItemStack, entrada ItemStack, oportunidad flota);
+//mods.skyresources.rockgrinder.addRecipe(IItemStack output, IItemStack input, float chance);
 mods.skyresources.rockgrinder.addRecipe(<minecraft:emerald>, <minecraft:stone>, 0.50);
 ```
 
-## Receta eliminada
+## Recipe Removal
 
 ```zenscript
-//mods.skyresources.rockgrinder.removeRecipe(salida ItemStack);
+//mods.skyresources.rockgrinder.removeRecipe(IItemStack output);
 mods.skyresources.rockgrinder.removeRecipe(<minecraft:gravel>);
 ```

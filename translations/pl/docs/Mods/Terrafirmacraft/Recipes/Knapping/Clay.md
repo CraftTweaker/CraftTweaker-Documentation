@@ -1,24 +1,24 @@
-# Gliniany Wykrywanie
+# Clay Knapping
 
-## Pakiet
+## Package
 ```zenscript
-importuj mods.terrafirmacraft.ClayKpieping;
+import mods.terrafirmacraft.ClayKnapping;
 ```
 
-## Dodanie
+## Addition
 
 ```zenscript
 ClayKnapping.addRecipe(String registryName, IItemStack output, String... pattern);
 ```
 
-## Usuwanie
+## Removal
 
 ```zenscript
-ClayKnapping.removeRecipe(wyjście IItemStack);
-ClayKnapping.removeRecipe(RejeststryName);
+ClayKnapping.removeRecipe(IItemStack output);
+ClayKnapping.removeRecipe(String registryName);
 ```
 
-## Przykład
+## Example
 ```zenscript
 ClayKnapping.addRecipe("unfired_vessel", <tfc:ceramics/unfired/vessel>, " XXX ", "XXXXX", "XXXXX", "XXXXX", " XXX ");
 ```

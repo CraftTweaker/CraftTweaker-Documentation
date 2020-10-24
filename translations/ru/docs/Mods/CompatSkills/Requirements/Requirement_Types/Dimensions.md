@@ -1,12 +1,12 @@
-# Размеры:
+# Dimensions:
 
-Размеры - это требование, введенное CompatSkills и позволяющее вращать вещи позади либо:
+Dimensions is a Requirement introduced by CompatSkills and allows you to gate things behind either:
 
-- Находиться в измерении **Specific**.
-- Находясь в **любом измерении** **отличном от** указанного измерения.
+- Being in a **Specific** dimension.
+- Being in **any** dimension **other than** the one specified.
 
-    Пример:
+    Example:
     dim|integer
     
-    Рабочий пример:
+    Working Example:
     dim|0

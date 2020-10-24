@@ -1,21 +1,21 @@
-# Chambre de traitement
+# Processing Chamber
 
-## Paquet
+## Package
 ```zenscript
-Importer mods.calculator.processingChamber;
+import mods.calculator.processingChamber;
 ```
 
-## Méthodes
+## Methods
 
-- **[Ingrédient](/Vanilla/Variable_Types/IIngredient/) d'entrée** L'entrée.
-- **[Ingrédient](/Vanilla/Variable_Types/IIngredient/) sortie** La sortie.
+- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input** The input.
+- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) output** The output.
 
-## Ajouter
+## Addition
 ```zenscript
-processingChamber.addRecipe(IIngrédient, sortie IIngrédient);
+processingChamber.addRecipe(IIngredient input, IIngredient output);
 ```
 
-## Retirer
+## Removal
 ```zenscript
-processingChamber.removeRecipe(IIngredient sortie);
+processingChamber.removeRecipe(IIngredient output);
 ```

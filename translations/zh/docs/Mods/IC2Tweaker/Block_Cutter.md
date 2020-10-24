@@ -1,23 +1,23 @@
-# 阻止切特
+# Block Cutter
 
 ## 所属包名
 
-`导入 mods.ic2.BlockCutter;`
+`import mods.ic2.BlockCutter;`
 
 ## 方法
 
 - **[IItemStack](/Vanilla/Items/IItemStack/) output**
-- **[Igredient](/Vanilla/Variable_Types/IIngredient/) 输入**
-- **@Optional int hardness** 最低耐受性要求。
+- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input**
+- **@Optional int hardness** Minimum hardness requirement for blade.
 
 ## 添加配方
 
 ```zenscript
-mods.ic2.BlockCutter.addRecipe(StemStack output, IIngredient input, @Opinent hardness default 0);
+mods.ic2.BlockCutter.addRecipe(IItemStack output, IIngredient input, @Optional int hardness default 0);
 
 mods.ic2.BlockCutter.addRecipe(<minecraft:diamond>, <minecraft:dirt>);
 ```
 
-## 移除
+## Removal
 
-现在只需删除 `config/ic2/block_cutter.ini` 中的相应行.
+For now simply remove the corresponding line in `config/ic2/block_cutter.ini`.

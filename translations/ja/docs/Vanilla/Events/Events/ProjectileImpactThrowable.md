@@ -1,22 +1,22 @@
 # ProjectileImpactThrowable
 
-このイベントは、投げられた投射物がエンティティに影響を与えてもダメージ前などが計算されるたびに発生します。 **キャンセル可能**であり、キャンセルされた場合、影響は処理されません。
+This event is fired whenever a throwable projectile impacts an entity but before damage, etc, is calculated. It is **cancelable**, and if canceled, the impact will not be processed.
 
-## クラスのインポート
-エラーを避けるには、クラスを [インポート](/AdvancedFunctions/Import/) する必要があります。  
+## Importing the class
+It might be required to [import](/AdvancedFunctions/Import/) the class to avoid errors.  
 `import crafttweaker.event.ProjectileImpactThrowableEvent;`
 
-## IEntityEvent の拡張
-ProjectileImpactThrowable Eventsは以下のインターフェースを実装し、それらのメソッド/getters/settersもすべて呼び出すことができます。
+## Extending IEntityEvent
+ProjectileImpactThrowable Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
 
 - [IProjectileEvent](/Vanilla/Events/Events/IProjectileEvent/)
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 
-## ZenGettersとZenSetters
+## ZenGetters and ZenSetters
 
-イベントから次の情報を取得できます。
+The following information can be retrieved from the event:
 
-| ZenGetter  | ZenSetter | タイプ                                                       |
+| ZenGetter  | ZenSetter | Type                                                      |
 | ---------- | --------- | --------------------------------------------------------- |
-| `ファイアーボール` |           | [IEntity](/Vanilla/Entities/IEntity/)                     |
-| `シューティング`  |           | [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) |
+| `fireball` |           | [IEntity](/Vanilla/Entities/IEntity/)                     |
+| `shooter`  |           | [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) |

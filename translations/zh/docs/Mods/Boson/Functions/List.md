@@ -1,102 +1,102 @@
-# 可用接口
+# Available Interfaces
 
 All interfaces are part of the `zenscriptx.fun` package, meaning that the fully qualified name for a class `X` is `zenscriptx.fun.X`, which is useful for importing.
 
-在下面的列表中，职能分为代表其一般用途的类别。 另外，在所有 函数定义中，字母 `T`, `U`, and `R` define general types, i. 。可以由 开发者指定的类型。
+In the following list, functions are split into categories that represent what their general use is. Also, in all of the functions definitions, the letters `T`, `U`, and `R` define generic types, i.e. types that can be specified by the developer.
 
-## 生物Consumers
-一个 BiConsumer 接受两个元素，这两个元素可以是不同类型的，并消耗它们，意味着使用它们来进行内部 的处理和什么都不返回.
+## BiConsumers
+A BiConsumer accepts two elements, which can be of different types, and consumes them, meaning uses them for internal processing and returns nothing.
 
-| 类名                  | 函数签名                                             | 注   |
-| ------------------- | ------------------------------------------------ | --- |
-| `BiConsumer`        | `(b) 函数接受(t as T, u as U) 为无效；`                  | \- |
-| `ObjDoubleConsumer` | `a. 函数接受(t as T, 值加倍) 为无效；`                      | \- |
-| `ObjIntConsumer`    | `function access(t as T, value as int) as void;` | \- |
-| `ObjLongConsumer`   | `(b) 函数接受(t为T，数值为长)无效；`                          | \- |
+| Class Name          | Function Signature                                  | Notes |
+| ------------------- | --------------------------------------------------- | ----- |
+| `BiConsumer`        | `function accept(t as T, u as U) as void;`          | \-   |
+| `ObjDoubleConsumer` | `function accept(t as T, value as double) as void;` | \-   |
+| `ObjIntConsumer`    | `function accept(t as T, value as int) as void;`    | \-   |
+| `ObjLongConsumer`   | `function accept(t as T, value as long) as void;`   | \-   |
 
 ## BiFunctions
-“生物功能”对两个元素适用函数，这两个元素可以是不同的类型， 返回一个元素，它也可以是 的不同类型。 它可以用数学方式拍摄为 `r = f(s, t)`, 其中 `f` 是生物功能。
+A BiFunction applies a function to two elements, which can be of different types, returning a single element, which can also be of a different type. It can be pictured mathematically as `r = f(s, t)`, where `f` is the bifunction.
 
-| 类名                 | 函数签名                    | 注   |
-| ------------------ | ----------------------- | --- |
-| `生物功能`             | `函数应用(以T类，u as U) 为R；`  | \- |
-| `TooubleBifiction` | `a. 运算符号(T, u as U)加倍；` | \- |
-| `ToIntBiFunction`  | `a. 适用函数(以T类，U类为单位)；`   | \- |
-| `ToLongBiFunction` | `函数应用(以T类，U类为单位)`       | \- |
+| Class Name           | Function Signature                          | Notes |
+| -------------------- | ------------------------------------------- | ----- |
+| `BiFunction`         | `function apply(t as T, u as U) as R;`      | \-   |
+| `ToDoubleBiFunction` | `function apply(t as T, u as U) as double;` | \-   |
+| `ToIntBiFunction`    | `function apply(t as T, u as U) as int;`    | \-   |
+| `ToLongBiFunction`   | `function apply(t as T, u as U) as long;`   | \-   |
 
-## 二进制运算符
-二进制操作员对 **同类类型**的两个元素应用函数， 返回另一个元素，它有 **与输入相同的类型** 它可以用数学方式拍摄为 `r = s opt t`, 其中 `op` 是二进制操作员。
+## Binary Operators
+A Binary Operator applies a function to two elements of the **same type**, returning another element, which has the **same type** as the inputs. It can be mathematically pictured as `r = s op t`, where `op` is the binary operator.
 
-| 类名                   | 函数签名                           | 注                           |
-| -------------------- | ------------------------------ | --------------------------- |
-| `BinaryOperator`     | `a. 函数应用(t as T, u as T) 为T；`  | `双运营商` extends `BiFunction` |
-| `双胞胎操作符`             | `函数为双倍(左双倍，右双倍)；`              | \-                         |
-| `IntBinaryOperator`  | `如下函数： applyAsInt(左为整数，右为整数)；` | \-                         |
-| `LongBinaryOperator` | `a. 函数应用AsLong(左长度，右长)为长；`     | \-                         |
+| Class Name             | Function Signature                                                   | Notes                                 |
+| ---------------------- | -------------------------------------------------------------------- | ------------------------------------- |
+| `BinaryOperator`       | `function apply(t as T, u as T) as T;`                               | `BinaryOperator` extends `BiFunction` |
+| `DoubleBinaryOperator` | `function applyAsDouble(left as double, right as double) as double;` | \-                                   |
+| `IntBinaryOperator`    | `function applyAsInt(left as int, right as int) as int;`             | \-                                   |
+| `LongBinaryOperator`   | `function applyAsLong(left as long, right as long) as long;`         | \-                                   |
 
-## 生物预测器
-生物预测系统测试两种可能不同类型的输入， 然后返回一个布尔值，表示他们是否通过了测试。
+## BiPredicates
+A BiPredicate tests the two given inputs, which may be of different types, and returns a boolean, representing whether they passed the test or not.
 
-| 类名            | 函数签名                        | 注   |
-| ------------- | --------------------------- | --- |
-| `BiPredicate` | `函数测试(t as T, u as U) 为布尔；` | \- |
+| Class Name    | Function Signature                       | Notes |
+| ------------- | ---------------------------------------- | ----- |
+| `BiPredicate` | `function test(t as T, u as U) as bool;` | \-   |
 
 ## Consumers
-消费者接受一个单一元素并消耗它，意味着它使用它进行内部处理并且什么也不返回任何东西。
+A Consumer accepts a single element and consumes it, meaning it uses it for internal processing and returns nothing.
 
-| 类名               | 函数签名                  | 注   |
-| ---------------- | --------------------- | --- |
-| `消费者`            | `(b) 函数接受(以T类作为) 无效；` | \- |
-| `DoubleConsumer` | `函数接受(双倍值)；`          | \- |
-| `IntConsumer`    | `函数接受(原始值)为无效；`       | \- |
-| `LongConsumer`   | `函数接受(按长值计算)为无效；`     | \- |
+| Class Name       | Function Signature                          | Notes |
+| ---------------- | ------------------------------------------- | ----- |
+| `Consumer`       | `function accept(t as T) as void;`          | \-   |
+| `DoubleConsumer` | `function accept(value as double) as void;` | \-   |
+| `IntConsumer`    | `function accept(value as int) as void;`    | \-   |
+| `LongConsumer`   | `function accept(value as long) as void;`   | \-   |
 
-## 职能
-函数对一个元素适用函数，返回另一个元素，这个元素可以是不同于 输入的类型。 它可以用数学方式映像为 `r = f(t)`, 其中 `f` 是函数。
+## Functions
+A Function applies a function to a single element, returning another element, which can be a different type from the inputs. It can be pictured mathematically as `r = f(t)`, where `f` is the function.
 
-| 类名                  | 函数签名                          | 注   |
-| ------------------- | ----------------------------- | --- |
-| `功能`                | `以R形式应用函数(t as T)；`           | \- |
-| `双重函数`              | `函数应用(双倍值) 与 R;`              | \- |
-| `双精度函数`             | `如下所示的函数：`                    | \- |
-| `双轨延伸函数`            | `a. 函数应用AsLong(双倍值)；`         | \- |
-| `IntFunction`       | `函数应用(原始值) 为 R;`              | \- |
-| `IntTo双重函数`         | `函数为双倍；`                      | \- |
-| `IntToLong功能`       | `函数应用AsLong(按原样值)为长度；`        | \- |
-| `延伸函数`              | `函数应用(作为长值) 与 R;`             | \- |
-| `LongTo双重函数`        | `函数为双倍；`                      | \- |
-| `LongToIntfunction` | `如下所示的函数： applyAsInt(按长值计算)；` | \- |
-| `双精度函数`             | `函数应用(为 T) 双倍；`               | \- |
-| `ToIntFunction`     | `函数应用(为 T) 的值;`               | \- |
-| `ToLong功能`          | `函数应用(以T值为最大值)；`              | \- |
+| Class Name             | Function Signature                                 | Notes |
+| ---------------------- | -------------------------------------------------- | ----- |
+| `功能`                   | `function apply(t as T) as R;`                     | \-   |
+| `DoubleFunction`       | `function apply(value as double) as R;`            | \-   |
+| `DoubleToIntFunction`  | `function applyAsInt(value as double) as int;`     | \-   |
+| `DoubleToLongFunction` | `function applyAsLong(value as double) as long;`   | \-   |
+| `IntFunction`          | `function apply(value as int) as R;`               | \-   |
+| `IntToDoubleFunction`  | `function applyAsDouble(value as int) as double;`  | \-   |
+| `IntToLongFunction`    | `function applyAsLong(value as int) as long;`      | \-   |
+| `LongFunction`         | `function apply(value as long) as R;`              | \-   |
+| `LongToDoubleFunction` | `function applyAsDouble(value as long) as double;` | \-   |
+| `LongToIntFunction`    | `function applyAsInt(value as long) as int;`       | \-   |
+| `ToDoubleFunction`     | `function apply(value as T) as double;`            | \-   |
+| `ToIntFunction`        | `function apply(value as T) as int;`               | \-   |
+| `ToLongFunction`       | `function apply(value as T) as long;`              | \-   |
 
-## 预测数
-预测测试给定输入并返回布尔值，表示是否通过测试。
+## Predicates
+A Predicate tests the given input and returns a boolean, representing whether it passed the test or not.
 
-| 类名              | 函数签名                   | 注   |
-| --------------- | ---------------------- | --- |
-| `Predicate`     | `函数测试(t as T) 为 bool;` | \- |
-| `双精度预测`         | `函数测试(双倍值)；`           | \- |
-| `IntPredicate`  | `函数测试(原始值)为布尔值；`       | \- |
-| `LongPredicate` | `函数测试(作为布尔值)；`         | \- |
+| Class Name        | Function Signature                        | Notes |
+| ----------------- | ----------------------------------------- | ----- |
+| `Predicate`       | `function test(t as T) as bool;`          | \-   |
+| `DoublePredicate` | `function test(value as double) as bool;` | \-   |
+| `IntPredicate`    | `function test(value as int) as bool;`    | \-   |
+| `LongPredicate`   | `function test(value as long) as bool;`   | \-   |
 
-## 供货商
-供应商输出给定类型的实例，不管是在实时创建还是缓存。
+## Suppliers
+A Supplier outputs an instance of a given type, be it either created on the fly or cached.
 
-| 类名        | 函数签名                            | 注   |
-| --------- | ------------------------------- | --- |
-| `供货商`     | `function get() as T;`          | \- |
-| `布尔值`     | `函数 getAsBoolean() 为 bool;`     | \- |
-| `供货商`     | `function getAsDouble() 为 加倍；`  | \- |
-| `内部提供商`   | `函数getAsInt() 如下所示；`            | \- |
-| `较长期的供应商` | `function getAsLong() as long;` | \- |
+| Class Name        | Function Signature                  | Notes |
+| ----------------- | ----------------------------------- | ----- |
+| `Supplier`        | `function get() as T;`              | \-   |
+| `BooleanSupplier` | `function getAsBoolean() as bool;`  | \-   |
+| `DoubleSupplier`  | `function getAsDouble() as double;` | \-   |
+| `IntSupplier`     | `function getAsInt() as int;`       | \-   |
+| `LongSupplier`    | `function getAsLong() as long;`     | \-   |
 
-## 无用运算符
-Unary 运营商将函数应用于给定类型的元素，返回另一元素， 必须为 **类型** 与输入相同。 它可以用数学方式拍摄为 `r = op t`, 在那里， `op` 是不必要的操作者。
+## Unary Operators
+A Unary operator applies a function to an element of a given type, returning another element, which has to be of the **same type** as the inputs. It can be pictured mathematically as `r = op t`, where `op` is the unary operator.
 
-| 类名                    | 函数签名                       | 注                            |
-| --------------------- | -------------------------- | ---------------------------- |
-| `UnaryOperator`       | `以T形式应用函数(t as T)；`        | `unaryOperator` extends `函数` |
-| `DoubleUnaryOperator` | `a. 运算符双倍；`                | \-                          |
-| `IntUnaryOperator`    | `如下所示的函数：`                 | \-                          |
-| `LongUnaryOperator`   | `a. 函数应用AsLong(操作数视长)为长度；` | \-                          |
+| Class Name            | Function Signature                                     | Notes                              |
+| --------------------- | ------------------------------------------------------ | ---------------------------------- |
+| `UnaryOperator`       | `function apply(t as T) as T;`                         | `UnaryOperator` extends `Function` |
+| `DoubleUnaryOperator` | `function applyAsDouble(operand as double) as double;` | \-                                |
+| `IntUnaryOperator`    | `function applyAsInt(operand as int) as int;`          | \-                                |
+| `LongUnaryOperator`   | `function applyAsLong(operand as long) as long;`       | \-                                |

@@ -1,41 +1,41 @@
-# `Klasa`
+# `Class`
 
-`Klasa` identyfikuje pojedynczą instancję typu, która jest narażona na ZenScript. Prawie wszystko w ZenScript jest w instancją klasy, czy jest to `IItemStack` (który jest instancją tej klasy) lub tablica ciągów ( jest instancją ciągu `string[]`).
+A `Class` identifies a single instance of a type that is exposed to ZenScript. Almost everything in ZenScript is, in fact, an instance of a class, be it an `IItemStack` (which is an instance of that class) or an array of strings (which is an instance of `string[]`).
 
-## Szczegóły klasy
-Klasa znajduje się w pakiecie `zenscriptx.reflect` , dzięki czemu `zenscriptx.reflect.Class` w pełni kwalifikowaną nazwę do importu.
+## Class details
+The class is situated in the `zenscriptx.reflect` package, making `zenscriptx.reflect.Class` the fully qualified name for importing.
 
-## Tworzenie nowej instancji
-Jedynym możliwym sposobem utworzenia nowej instancji klasy `` jest jedna z dwóch metod statycznych. które przyjmują nazwę klasy lub przedmiot do sprawdzenia. Poniższy fragment pokazuje podpisy dwóch metod, które mogą być użyte :
-
-```zenscript
-funkcjaNazwa(nazwa jako ciąg) jako klasa?;
-funkcja od(instancja jako dowolna) jako klasa?;
-```
-
-Obie metody mogą zwrócić `null` (jak pokazują `?` na końcu typu) ponieważ istnieje możliwość , aby niektóre klasy nie miały odpowiednika ZenScript lub nie są w stanie być reprezentowane jako instancje klasy ``.
-
-Poniżej przedstawiono przykłady wykorzystania dwóch metod fabrycznych:
+## Creating a new Instance
+The only possible way to create a new `Class` instance is through one of the two static methods, which take either the name of the class or an object to inspect. The snippe that follows shows the signatures of the two methods that can be used:
 
 ```zenscript
-Klasa .byName("crafttweaker.item.IItemStack"); # zwraca klasę, która reprezentuje klasę IItemStack
-. rom(<blockstate:minecraft:pumpkin>); # zwraca klasę, która reprezentuje klasę IBlockState
-. yName("123"); # zwraca puste, ponieważ żadna klasa o tej nazwie nie istnieje (lub może istnieć, w tym znaczeniu)
+function byName(name as string) as Class?;
+function from(instance as any) as Class?;
 ```
 
-## Właściwości
-`Klasa` zapewnia dostęp tylko do odczytu do określonego zestawu właściwości, jak przedstawiono w poniższej tabeli:
+Both methods are allowed to return `null` (as shown by the `?` at the end of the type) because there is the possibility for some classes not to have a ZenScript equivalent or are literally unable to be represented as instances of `Class`.
 
-| Nazwa Właściwości     | Typ           | Opis                                                                                                                                            |
-| --------------------- | ------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
-| `simpleName`          | `ciąg znaków` | Nazwa "Krótka", która może być użyta do odniesienia do klasy (tj. `IItemStack` dla `słabszego rzemieślnika. tem.IItemStack`, `ciąg` dla `ciąg`) |
-| `nazwa kwalifikowana` | `ciąg znaków` | Pełna nazwa, która jednoznacznie identyfikuje tę klasę w środowisku ZenScript (tj. `crafttweaker.item.IItemStack` lub `ciąg`)                   |
-
-## Metody
-`Klasa` zapewnia również dostęp do jednej metody, która pozwala na konwersję na odpowiednik "natywny" (zob. [`NativeClass`](/Mods/Boson/Reflection/NativeClass/) po więcej informacji). Podpis metody jest następujący:
+The following are some examples of usage of the two factory methods:
 
 ```zenscript
-Funkcja toNativeClass() jako NativeClass?;
+Class.byName("crafttweaker.item.IItemStack"); # returns a Class that represents IItemStack
+Class.from(<blockstate:minecraft:pumpkin>); # returns a Class that represents IBlockState
+Class.byName("123"); # returns null because no class with that name exists (or can exist, for that matter)
 ```
 
-Metoda może zwracać `null` , ponieważ nie wszystkie typy ZenScript mogą mieć natywny odpowiednik, np. niektóre tablice stowarzyszeniowe mogą nie być idealnie reprezentowane w środowisku rodzimym, co wymaga pewnego opanowania.
+## Properties
+A `Class` provides read-only access to a certain set of properties, as outlined in the following table:
+
+| Property Name   | Type     | Description                                                                                                                          |
+| --------------- | -------- | ------------------------------------------------------------------------------------------------------------------------------------ |
+| `simpleName`    | `string` | "Shortest" name that can be used to refer to the class (i.e. `IItemStack` for `crafttweaker.item.IItemStack`, `string` for `string`) |
+| `qualifiedName` | `string` | Full name that uniquely identifies this class in the ZenScript environment (i.e. `crafttweaker.item.IItemStack` or `string`)         |
+
+## Methods
+`Class` also provides access to a single method that allows conversion to the "native" equivalent (refer to [`NativeClass`](/Mods/Boson/Reflection/NativeClass/) for more information). The signature of the method is as follows:
+
+```zenscript
+function toNativeClass() as NativeClass?;
+```
+
+The method may return `null` because not all ZenScript types may have a native equivalent, e.g. certain associative arrays may not be perfectly represented in a native environment, requiring some mangling.

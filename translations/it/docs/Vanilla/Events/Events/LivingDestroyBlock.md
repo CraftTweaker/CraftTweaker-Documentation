@@ -1,14 +1,14 @@
 # LivingDestroyBlock
 
-Questo evento viene sparato ogni volta che un Wither o Ender Dragon tenta di distruggere blocchi, o quando uno zombie tenta di rompere una porta. Questo evento è **annullabile**e, se annullato, il blocco non sarà rotto.
+This event is fired whenever a Wither or Ender Dragon attempts to destroy blocks, or when a zombie attempts to break a door. This event is **cancelable**, and if canceled, the block will not be broken.
 
-## Classe Evento
-Dovrai lanciare l'evento nell'intestazione della funzione come questa classe:  
-`crafttweaker.event. ivingDestroyBlockEvent`  
-È possibile, naturalmente, anche [importare](/AdvancedFunctions/Import/) la classe prima e utilizzare quel nome allora.
+## Event Class
+You will need to cast the event in the function header as this class:  
+`crafttweaker.event.LivingDestroyBlockEvent`  
+You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
 
-## Estensioni dell'interfaccia evento
-LivingDestroyBlock Events implementare le seguenti interfacce e sono in grado di chiamare tutti i loro metodi/getter/setter:
+## Event interface extensions
+LivingDestroyBlock Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
 
 - [IEventPositionable](/Vanilla/Events/Events/IEventPositionable/)
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
@@ -16,9 +16,9 @@ LivingDestroyBlock Events implementare le seguenti interfacce e sono in grado di
 
 
 ## ZenGetters/ZenSetters
-Le seguenti informazioni possono essere recuperate/impostate durante l'evento:
+The following information can be retrieved/set during the event:
 
-| ZenGetter | ZenSetter | Tipo                                        |
+| ZenGetter | ZenSetter | Type                                        |
 | --------- | --------- | ------------------------------------------- |
-| `stato`   |           | [IBlockState](/Vanilla/Blocks/IBlockState/) |
+| `state`   |           | [IBlockState](/Vanilla/Blocks/IBlockState/) |
 

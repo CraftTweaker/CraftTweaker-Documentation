@@ -1,13 +1,13 @@
 # SleepingTimeCheck
 
-Это событие запущено при проверке, может ли спящий игрок продолжать спать в указанное время. Если есть **результат** определяет действие.
+This event is fired when checking if a sleeping player can continue to sleep at a specified time. If has a **result** which determines the action.
 
-Результат:
-- **По умолчанию**, с логикой `Мира::isDaytime` можно ознакомиться с ванильной логикой.
-- **Разрешить**, позволяет продолжать спящий режим независимо от
-- **Запретить** конкретно ***игнорировать*** в данном экземпляре и ничего не делает.
+Result:
+- **Default**, causes the Vanilla logic of `World::isDaytime` to be consulted.
+- **Allow**, allows the player to continue sleeping regardless
+- **Deny** is specifically ***ignored*** in this instance and does nothing.
 
-Таким образом, это событие позволяет держать игрока в спящем режиме, но оно не позволяет вам специально остановить его от сна.
+Thus, this event allows you to keep the player sleeping, but it does not allow you to specifically stop them from sleeping.
 
 ## Класс события
 You will need to cast the event in the function header as this class:  
@@ -15,8 +15,8 @@ You will need to cast the event in the function header as this class:
 You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
 
 ## Наследование от интерфейсов событий
-События SleepingTimeCheck реализуют следующие интерфейсы и также могут вызвать все их методы/getters/setters:
+SleepingTimeCheck Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
 
-- [Событие доступно](/Vanilla/Events/Events/IEventPositionable/)
+- [IEventPositionable](/Vanilla/Events/Events/IEventPositionable/)
 - [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
 - [IEventHasResult](/Vanilla/Events/Events/IEventHasResult/)

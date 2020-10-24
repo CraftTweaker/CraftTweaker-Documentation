@@ -1,12 +1,12 @@
 ### onHurt
 
-| Setter/Getter/Methode | Methodennamen      | Namen           | Input/Output                                                     |
-|:--------------------- |:------------------ |:--------------- | ---------------------------------------------------------------- |
-| Getriebe              | getDamageSource(); | damageSource(); | Gibt eine [IDamageSource](/Vanilla/Damage/IDamageSource/) zurück |
-| Getriebe              | getAmount();       | betrag();       | Gibt einen Float zurück                                          |
+| Setter/Getter/Method | Methodennamen      | Names           | Input/Output                                               |
+|:-------------------- |:------------------ |:--------------- | ---------------------------------------------------------- |
+| Getter               | getDamageSource(); | damageSource(); | Returns an [IDamageSource](/Vanilla/Damage/IDamageSource/) |
+| Getter               | getAmount();       | amount();       | Returns an Float                                           |
 
     var test = mods.compatskills.TraitCreator.createTrait("test", 2, 3, "compatskills:banana", 1, "compatskills:banana|5");
     
     test.onHurt = function(event as crafttweaker.event.EntityLivingHurtEvent) {
-    ...
+        ...
     };

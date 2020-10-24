@@ -1,11 +1,11 @@
-# Das Konzept
+# The Concept
 
-Die meisten Verwendungen von Mathematik in ZenScript können über die vier grundlegenden Operationen abgedeckt werden: Hinzufügen, Subtraktion, Multiplikation und Division. ZenScript bietet auch Zugriff auf die `pow` Funktion, die den Strombetrieb ausführt. Aber das ist es. Erweiterte mathematische Operationen können nicht ausgeführt werden, und würde eine vollständige Reimplementierung mit Suchtabellen erfordern und würde in dieser Hinsicht nicht von den Optimierungen der Hardware profitieren, insbesondere nicht für moderne CPUs.
+Most of the uses of Math in ZenScript can be covered via the four basic operations: addition, subtraction, multiplication, and division. ZenScript also provides access to the `pow` function, which performs the power operation. But that's it. More advanced mathematical operations cannot be performed, and would require a full reimplementation with lookup tables and wouldn't benefit from the hardware's optimizations in that regard, especially for modern CPUs.
 
-Hier kommt ZenScriptX Math hinein, bietet eine Reihe von Klassen und einige grundlegende Rechenoperationen, die von allgemeiner Nützlichkeit sein können. während sie in den meisten Fällen von Hardware-Optimierungen profitieren, da die meisten von ihnen auf einer nativen Ebene implementiert sind (über ein paar Indirects auf Grund des VM ZenScript läuft).
+This is where ZenScriptX Math comes in, providing a set of classes and some basic arithmetic operations that may be of general usefulness, while also benefitting in the most part from hardware optimizations, since most of those are implemented on a native level (via a couple of indirections due to the VM ZenScript runs on).
 
-Jeder Dokumentationsabschnitt wird dem Benutzer eine Liste der zur Verfügung gestellten Funktionen und deren Verhalten zur Verfügung stellen.
+Every documentation section will provide the user with a list of provided functions and their behavior.
 
-Die aktuelle Liste der implementierten Klassen ist:
+The current list of provided classes that are implemented are:
 
-- [Mathematik](/Mods/Boson/Math/Math/) für gängige mathematische Funktionen (z.B. Sinus, Kosinus, Logarithmus...)
+- [Math](/Mods/Boson/Math/Math/) for common mathematical functions (e.g., sine, cosine, logarithm...)

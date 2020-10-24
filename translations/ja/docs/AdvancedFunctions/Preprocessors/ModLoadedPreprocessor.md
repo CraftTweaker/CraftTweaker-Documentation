@@ -1,8 +1,8 @@
 # ModLoaderPreprocessor
 
-modLoaded Preprocessorは、特定のModが存在する場合にのみスクリプトを実行します。
+The modLoaded Preprocessor only executes a script, if a certain mod is present.
 
-## 電話
+## Call
 
 You call the modLoaded Preprocessor by adding `#modloaded modID` to your script file, with `modID` being the modId you want to check for:  
 Example: `#modloaded minecraft`
@@ -12,6 +12,6 @@ You can also provide multiple modID's:
 
 You can also invert a mod condition so that the mod is only loaded if the mod is NOT loaded: `#modloaded !tconstruct minecraft` will only be executed if minecraft is present and tconstruct is NOT present
 
-## 何をするか
+## What it does
 
-このプリプロセッサをスクリプトに追加した場合、与えられたmodIDが存在する場合にのみ実行されます。 言い換えれば尊重されるモッドがロードされれば
+If you added this preprocessor to a script, it will only be executed if the provided modID's are present, in other words if the respecting mods are loaded.

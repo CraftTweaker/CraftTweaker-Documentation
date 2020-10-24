@@ -1,26 +1,26 @@
 # IEnchantment
 
-Un IEnchantment è essenzialmente un [IEnchantmentDefinition](/Vanilla/Enchantments/IEnchantmentDefinition/) e un livello di incantesimo.
+An IEnchantment essentially is an [IEnchantmentDefinition](/Vanilla/Enchantments/IEnchantmentDefinition/) and an enchantment level.
 
-## Importazione del pacchetto
+## Importing the package
 
-Potrebbe essere necessario importare il pacchetto se si incontrano problemi (come lanciare un [Array](/AdvancedFunctions/Arrays_and_Loops/)), quindi meglio essere sicuri che spiacenti e aggiungere l'importazione.  
+It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
 `import crafttweaker.enchantments.IEnchantment;`
 
 ## ZenGetters/ZenSetters
 
-| ZenGetter   | ZenSetter   | Tipo                                                                                 |
-| ----------- | ----------- | ------------------------------------------------------------------------------------ |
-| definizione |             | [Definizione IEnchantmentDefinizione](/Vanilla/Enchantments/IEnchantmentDefinition/) |
-| livello     |             | int                                                                                  |
-| displayName | displayName | stringa                                                                              |
+| ZenGetter   | ZenSetter   | Type                                                                    |
+| ----------- | ----------- | ----------------------------------------------------------------------- |
+| definition  |             | [IEnchantmentDefinition](/Vanilla/Enchantments/IEnchantmentDefinition/) |
+| level       |             | int                                                                     |
+| displayName | displayName | string                                                                  |
 
 ## ZenMethods
 
-### Recupera l'Incantesimo come NBT
+### Retrieve the Enchantment as NBT
 
-Potresti voler ottenere l'NBT-Tag dell'Incantesimo.  
-Puoi inserirlo come [IData](/Vanilla/Data/IData/) o usare il metodo:
+You might want to get the Enchantment's NBT-Tag.  
+You can either cast it as [IData](/Vanilla/Data/IData/) or use the method:
 
 ```zenscript
 ench.makeTag();

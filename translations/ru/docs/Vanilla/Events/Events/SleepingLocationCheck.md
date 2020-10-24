@@ -1,13 +1,13 @@
-# Проверка местоположения
+# SleepingLocationCheck
 
-Это событие запущено при проверке, может ли спящий игрок продолжать спать в текущем месте. Если есть **результат** определяет действие.
+This event is fired when checking if a sleeping player can continue to sleep in the current location. If has a **result** which determines the action.
 
-Результат:
-- **По умолчанию**возвращает стандартный ответ Vanilla в клетке Bed
-- **Разрешить**, позволяет продолжать спящий режим независимо от
-- **Запретить** конкретно ***игнорировать*** в данном экземпляре и ничего не делает.
+Result:
+- **Default**, returns the default Vanilla response as found in the Bed tile entity
+- **Allow**, allows the player to continue sleeping regardless
+- **Deny** is specifically ***ignored*** in this instance and does nothing.
 
-Таким образом, это событие позволяет держать игрока в спящем режиме, но оно не позволяет вам обойти стандартную логику.
+Thus, this event allows you to keep the player sleeping, but it does not allow you to bypass the default bed logic.
 
 ## Класс события
 You will need to cast the event in the function header as this class:  
@@ -15,8 +15,8 @@ You will need to cast the event in the function header as this class:
 You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
 
 ## Наследование от интерфейсов событий
-SleepingLocationCheck События реализуют следующие интерфейсы и могут также вызвать все их методы/getters/setter:
+SleepingLocationCheck Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
 
-- [Событие доступно](/Vanilla/Events/Events/IEventPositionable/)
+- [IEventPositionable](/Vanilla/Events/Events/IEventPositionable/)
 - [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
 - [IEventHasResult](/Vanilla/Events/Events/IEventHasResult/)

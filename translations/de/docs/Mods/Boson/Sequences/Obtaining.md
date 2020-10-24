@@ -1,48 +1,48 @@
-# `Sequenz erhalten`s
+# Obtaining `Sequence`s
 
-## Übersicht
-Eine `Sequenz` zu erhalten ist ein zweistufiger Prozess: Es ist zuerst notwendig, eine Referenz auf einen Sequenz-Konstruktor von zu erhalten, den korrekten Typ, aufrufen, indem Sie entweder eine Liste der Elemente des angegebenen Typs oder ein fertiges Array des angegebenen Typs übergeben, um den Konstruktionsprozess abzuschließen.
+## Overview
+Obtaining a `Sequence` is a two step process: it is first necessary to obtain a reference to a sequence constructor of the correct type, then invoking the constructor by passing either a list of elements of the given type or a ready-made array of the given type will complete the construction process.
 
-Einige CraftTweaker Integrationen können auch eine Möglichkeit bieten, eine `-Sequenz` direkt oder mittels einer Methode zu erhalten. In diesem Fall gibt es keine Notwendigkeit, einen Konstruktor anzufordern. Auf der anderen Seite wird der generische Typ nicht explizit spezifiziert, wodurch der Benutzer eine mentale Notiz vom Rückgabetyp machen muss.
+Some CraftTweaker integrations may also provide a way to obtain a `Sequence` either directly or via a method. In this case, there is no need to do any constructor invocation. On the other hand, the generic type will not be specified explicitly, requiring the user to make a mental note of the return type.
 
-## Schritt 1: Der Konstrukteur
-Die Referenzierung einer `Sequenz` Konstruktor wird über einen speziellen Klammer-Handler durchgeführt, der folgende Syntax hat:
+## Step 1: The Constructor
+Referencing a `Sequence` constructor is done via a special bracket handler, that has the following syntax:
 
 ```zenscript
 <sequence:CLASSNAME>
 ```
 
-Im obigen Snippet, `CLASSNAME` repräsentiert entweder den kurzen oder den vollqualifizierten Namen der Klasse, für die diese Sequenz generisch sein wird. In einfacheren Worten wird definiert, welche Art von Elementen die Sequenz speichern kann, wenn der Konstruktor aufgerufen wird.
+In the above snippet, `CLASSNAME` represents either the short or the fully-qualified name of the class that this sequence will be generic for. In simpler words, that will define what type of elements the sequence will be able to store when the constructor is invoked.
 
-Betrachten Sie folgende zwei Beispiele:
+Consider the following two examples:
 
 ```zenscript
 <sequence:IItemStack> # 1
 <sequence:crafttweaker.item.IIngredient> # 2
 ```
 
-The sequence expression marked with `# 1` will return a reference to a constructor for a sequence that will be able to hold instances of `IItemStack`. Beachten Sie, dass dies erfordert, dass die Klasse in das aktuelle Skript importiert wird, um zu funktionieren.
+The sequence expression marked with `# 1` will return a reference to a constructor for a sequence that will be able to hold instances of `IItemStack`. Note that this require the class to be imported in the current script to work.
 
-Der mit `# 2` markierte Sequenzausdruck gibt eine Referenz an einen Konstruktor für eine Sequenz zurück, die jede Art von `IIngredient`halten kann bedeutet, dass es `IItemStack`s akzeptiert aber auch `IOreDictEntr`ies oder jede andere benutzerdefinierte `IIngredient` Implementation.
+The sequence expression marked with `# 2` will return a reference to a constructor for a sequence that will be able to hold any type of `IIngredient`, meaning that it will accept `IItemStack`s, but also `IOreDictEntr`ies or any other custom `IIngredient` implementation.
 
-**WICHTIG:** Dieser initiale Typ wird nur den aktuellen Sequenztyp beeinflussen. Es ist immer möglich, den Typ zu ändern, der in dieser Sequenz gespeichert ist, später über jede `Sequenz`-typ-konvertierende Anrufe, zum Beispiel `Karte`. Weitere Informationen finden Sie in der [Klassendokumentation](/Mods/Boson/Sequences/Docs/).
+**IMPORTANT:** This initial type will only influence the current sequence type. It is always possible to change the type stored in this sequence later on via any `Sequence`-type-converting calls, such as `map`. More information are available in the [class documentation](/Mods/Boson/Sequences/Docs/).
 
-## Schritt 2: Den Konstrukteur aufrufen
-Da die Klammerhandler den Konstruktor nicht aufrufen, sondern nur referenzieren, ist es nun notwendig, den Konstruktor direkt aufzurufen. Dies kann über eine normale Methoden-Invokationssyntax geschehen, außer über einen Klammer-Handler und nicht über einen Methodennamen.
+## Step 2: Invoking the Constructor
+Since the bracket handlers doesn't invoke the constructor, but simply references it, it is now necessary to invoke the constructor directly. This can be done via a normal method invocation syntax, except it gets done over a bracket handler and not a method name.
 
-Der Konstruktor einer Sequenz ist ein vararg, was bedeutet, dass er jede Menge Argumente akzeptieren kann solange es sich um alle generischen Typen handelt, die in der Konstruktor Referenz angegeben wurden. E.g., the bracket handler `<sequence:IItemStack>` will not be able to accept a `<ore:ingotCopper>` in its constructor, since an `IOreDictEntry` is not an `IItemStack`.
+The constructor of a sequence is a vararg, meaning it can accept any amount of arguments, as long as they're all of the generic type given in the constructor reference. E.g., the bracket handler `<sequence:IItemStack>` will not be able to accept a `<ore:ingotCopper>` in its constructor, since an `IOreDictEntry` is not an `IItemStack`.
 
-Es ist möglich, dem Konstruktor keine Argumente anzugeben. In diesem Fall ist die Sequenz leer.
+It is possible to provide no arguments to the constructor, in which case the sequence will be empty.
 
-Es ist auch möglich, ein Array selbst oder einen Verweis auf ein Array zu liefern, entweder in Form einer Methode oder einer Variable. In this case, the array will be accepted only if the type matches `CLASSNAME[]`, where `CLASSNAME` is the name of the type of objects in the sequence. Beachten Sie, dass dieses Verhalten **** eine experimentelle Flagge erfordert, um aktiviert zu sein. Weitere Informationen finden Sie unter im [Experimental Flags Preprocessor](/Mods/Boson/Preprocessor/Exp/).
+It is also possible to provide an array itself or a reference to an array, either in the form of a method or a variable. In this case, the array will be accepted only if the type matches `CLASSNAME[]`, where `CLASSNAME` is the name of the type of objects in the sequence. Note that this behavior **may require** an experimental flag to be enabled. Refer to the [Experimental Flags Preprocessor](/Mods/Boson/Preprocessor/Exp/) for more information.
 
-Das folgende ist ein Snippet von Code, das zeigt, wie das obige im Code angewendet wird.
+The following is a snippet of code that shows how the above is applied in-code.
 
 ```zenscript
 val emptySequence = <sequence:string>();
 val sequenceWithStacks = <sequence:IItemStack>(<minecraft:iron_ingot>, <minecraft:gold_nugget>, <minecraft:apple>);
-val sequenceOfRezepte = <sequence:ICraftingRecipe>(Rezepte. ll); # erfordert -Esao spezifiziert
+val sequenceOfRecipes = <sequence:ICraftingRecipe>(recipes.all); # requires -Esao to be specified
 ```
 
-## Was ist als Nächstes?
-Nachdem die `Sequenz` erstellt wurde, finden Sie unter [der Klassendokumentation](/Mods/Boson/Sequences/Docs/) eine Liste der unterstützten Methoden.
+## What's next?
+Now that the `Sequence` has been buily, refer to [the class documentation](/Mods/Boson/Sequences/Docs/) for a list of supported methods.

@@ -1,13 +1,13 @@
-# Tiefkühler
+# Freezer
 
-## Paket
+## Package
 
 ```zenscript
-importieren mods.aether_legacy.Freezer;
+import mods.aether_legacy.Freezer;
 ```
-## Auslastung
+## Usage
 
 ```zenscript
-Freezer.registerFreezable(IItemStack Eingabe, IItemStack Ausgabe, Int Zeiterforder);
-Freezer.registerFreezerFuel(IItemStack Eingabe, Int timeGiven);
+Freezer.registerFreezable(IItemStack input, IItemStack output, int timeRequired);
+Freezer.registerFreezerFuel(IItemStack input, int timeGiven);
 ```

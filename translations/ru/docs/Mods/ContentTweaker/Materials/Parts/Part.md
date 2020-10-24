@@ -1,53 +1,53 @@
-# Часть
+# Part
 
-Часть — это форма предмета, в которой находится предмет, например передача или руда.
+A Part is the form an item is in, for example a gear or an ore.
 
 ## Импорт пакета
 
-Возможно, вам потребуется импортировать пакет, если вы столкнетесь с какими-либо проблемами, так что лучше быть безопасным чем извините и добавьте импорт.  
-`импорт mods.contenttweaker.Part;`
+It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
+`import mods.contenttweaker.Part;`
 
-## Получение такого объекта
+## Retrieving such an object
 
-Вы можете получить существующую часть с помощью [MaterialSystem](/Mods/ContentTweaker/Materials/MaterialSystem/) или создать новую с помощью [Builder Part Part](/Mods/ContentTweaker/Materials/Parts/Part_Builder/)
+You can either retrieve an existing Part using the [MaterialSystem](/Mods/ContentTweaker/Materials/MaterialSystem/) or create an entirely new one using the [Part Builder](/Mods/ContentTweaker/Materials/Parts/Part_Builder/)
 
 <details>
-    <summary>Следующие типы были предварительно зарегистрированы (заголовки <a href="../PartType">типов частей</a>):</summary>
-    <h4>Элементы:</h4>
+    <summary>Following types are pre-registered (Headlines are the <a href="../PartType">Part types</a>):</summary>
+    <h4>Items:</h4>
         <ul>
-            <li>Луч<img src="../Assets/beam.png" alt="иконка"></li>
-            <li>Болт<img src="../Assets/bolt.png" alt="иконка"></li>
-            <li>Корпус<img src="../Assets/casing.png" alt="иконка"></li>
-            <li>Кольцо<img src="../Assets/clump.png" alt="иконка"></li>
-            <li>Хрустальный кристалл<img src="../Assets/crystal.png" alt="иконка"></li>
-            <li>Дробленная руда (дробленная_руда)<img src="../Assets/crushed_ore.png" alt="иконка"></li>
-            <li>Плотная пластина (плотная пластина)<img src="../Assets/dense_plate.png" alt="иконка"></li>
-            <li>Грязная пыль (dirty_dust)<img src="../Assets/dirty_dust.png" alt="иконка"></li>
-            <li>Пыль<img src="../Assets/dust.png" alt="иконка"></li>
-            <li>Снаряжение<img src="../Assets/gear.png" alt="иконка"></li>
-            <li>Ingot<img src="../Assets/ingot.png" alt="иконка"></li>
-            <li>Ногетская<img src="../Assets/nugget.png" alt="иконка"></li>
-            <li>Пластинчатый<img src="../Assets/plate.png" alt="иконка"></li>
-            <li>Жезл<img src="../Assets/rod.png" alt="иконка"></li>
-            <li>Осколок<img src="../Assets/shard.png" alt="иконка"></li>
+            <li>Beam<img src="../Assets/beam.png" alt="icon"></li>
+            <li>Bolt<img src="../Assets/bolt.png" alt="icon"></li>
+            <li>Casing<img src="../Assets/casing.png" alt="icon"></li>
+            <li>Clump<img src="../Assets/clump.png" alt="icon"></li>
+            <li>Crystal Crystal<img src="../Assets/crystal.png" alt="icon"></li>
+            <li>Crushed Ore (crushed_ore)<img src="../Assets/crushed_ore.png" alt="icon"></li>
+            <li>Dense Plate (dense_plate)<img src="../Assets/dense_plate.png" alt="icon"></li>
+            <li>Dirty Dust (dirty_dust)<img src="../Assets/dirty_dust.png" alt="icon"></li>
+            <li>Dust<img src="../Assets/dust.png" alt="icon"></li>
+            <li>Gear<img src="../Assets/gear.png" alt="icon"></li>
+            <li>Ingot<img src="../Assets/ingot.png" alt="icon"></li>
+            <li>Nugget<img src="../Assets/nugget.png" alt="icon"></li>
+            <li>Plate<img src="../Assets/plate.png" alt="icon"></li>
+            <li>Rod<img src="../Assets/rod.png" alt="icon"></li>
+            <li>Shard<img src="../Assets/shard.png" alt="icon"></li>
         </ul>
-    <h4>Блоки:</h4>
+    <h4>Blocks:</h4>
         <ul>
-            <li>Блок<img src="../Assets/block.png" alt="иконка"></li>
+            <li>Block<img src="../Assets/block.png" alt="icon"></li>
         </ul>
     <h4>Ores:</h4>
         <ul>
-            <li>Руда</li>
-            <li>Плотная руда (dense_ore)</li>
-            <li>Плохая руда (плохо руда)</li>
+            <li>Ore</li>
+            <li>Dense Ore (dense_ore)</li>
+            <li>Poor Ore(poor_ore)</li>
         </ul>
-    <h4>Флюиды:</h4>
+    <h4>Fluids:</h4>
         <ul>
             <li>Molten</li>
         </ul><br />
     <h4>Armor:</h4>
         <ul>
-            <li>Броня <img src="../Assets/armor_head.png" alt="значок головы"><img src="../Assets/armor_chest.png" alt="значок сундука"><img src="../Assets/armor_legs.png" alt="значок ног"><img src="../Assets/armor_feet.png" alt="значок ног"></li>
+            <li>Armor <img src="../Assets/armor_head.png" alt="head icon"><img src="../Assets/armor_chest.png" alt="chest icon"><img src="../Assets/armor_legs.png" alt="legs icon"><img src="../Assets/armor_feet.png" alt="feet icon"></li>
         </ul>
     <h4>Minecart</h4>
         <ul>
@@ -55,28 +55,28 @@
         </ul>
 </details>
 
-## Поля
+## Fields
 
-Вы можете получить следующую информацию из части:
+You can retrieve the following information from a Part:
 
-| ZenMethod                 | Возвращаемый тип                                                                |
-| ------------------------- | ------------------------------------------------------------------------------- |
-| hasOverlay()              | boolean                                                                         |
-| getName()                 | string                                                                          |
-| getUnlocalizedName()      | string                                                                          |
-| getShortUnlocalizedName() | string                                                                          |
-| getPartType()             | [Тип частицы](/Mods/ContentTweaker/Materials/Parts/PartType/)                   |
-| getPartTypeName()         | string                                                                          |
-| getOreDictPrefix()        | string                                                                          |
-| getData()                 | Список<[IPartDataPiece](/Mods/ContentTweaker/Materials/Parts/PartDataPiece/)\> |
+| ZenMethod                 | Возвращаемый тип                                                              |
+| ------------------------- | ----------------------------------------------------------------------------- |
+| hasOverlay()              | boolean                                                                       |
+| getName()                 | string                                                                        |
+| getUnlocalizedName()      | string                                                                        |
+| getShortUnlocalizedName() | string                                                                        |
+| getPartType()             | [PartType](/Mods/ContentTweaker/Materials/Parts/PartType/)                    |
+| getPartTypeName()         | string                                                                        |
+| getOreDictPrefix()        | string                                                                        |
+| getData()                 | List<[IPartDataPiece](/Mods/ContentTweaker/Materials/Parts/PartDataPiece/)\> |
 
-## Зарегистрироваться на материал(ы)
+## Register to Material(s)
 
-Вы можете использовать это для регистрации одного или нескольких материалов в этой части
+You can use this to register one or several Materials to this part
 
 ```zenscript
 part.registerToMaterial(Material material);
-part.registerToMaterials(Material[] material);
+part.registerToMaterials(Material[] materials);
 ```
 
-Функция либо возвращает один объект [MaterialPart](/Mods/ContentTweaker/Materials/Materials/MaterialPart/) или список из них, в зависимости от того, зарегистрировали ли Вы один или несколько материалов одновременно.
+The function will either return a single [MaterialPart](/Mods/ContentTweaker/Materials/Materials/MaterialPart/) object or a List of them, depending on whether you registered one or multiple materials at once.

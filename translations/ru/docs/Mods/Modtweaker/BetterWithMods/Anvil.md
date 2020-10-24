@@ -1,15 +1,15 @@
-# Наковальня
+# Anvil
 
-Anvil - это простой верстак 4x4 с теми же настройками.
+The Anvil is a simple 4x4 Crafting Table with the same options.
 
-## Форма
+## Shaped
 
 ### Сложение
 
 ```zenscript
-mods.betterwithmods.Anvil.addShaped(IItemStack, IIngredient[][] входов);
+mods.betterwithmods.Anvil.addShaped(IItemStack output, IIngredient[][] inputs);
 
-mods.betterwithmods.Anvil. ddShaped(<minecraft:dirt>, [
+mods.betterwithmods.Anvil.addShaped(<minecraft:dirt>, [
    [<minecraft:stone>, <minecraft:stone>, <minecraft:stone>, <minecraft:stone>],
    [<minecraft:stone>, <minecraft:stone>, <minecraft:stone>, <minecraft:stone>],
    [<minecraft:stone>, <minecraft:stone>, <minecraft:stone>, <minecraft:stone>],
@@ -17,25 +17,25 @@ mods.betterwithmods.Anvil. ddShaped(<minecraft:dirt>, [
 ]);
 ```
 
-### Удаление
+### Removal
 
 ```zenscript
 mods.betterwithmods.Anvil.removeShaped(IItemStack output, @Optional IIngredient[][] inputs);
 
 mods.betterwithmods.Anvil.removeShaped(<minecraft:dirt>);
 
-mods.betterwithmods.Anvil.removeShaped(<minecraft:dirt>,[[<minecraft:stone>]);
+mods.betterwithmods.Anvil.removeShaped(<minecraft:dirt>,[[<minecraft:stone>]]);
 
 ```
 
-## Бесформенный
+## Shapeless
 
 ### Сложение
 
 ```zenscript
-mods.betterwithmods.Anvil.addShapeless(IItemStack, IIngredient[] входов);
+mods.betterwithmods.Anvil.addShapeless(IItemStack output, IIngredient[] inputs);
 
-mods.betterwithmods.Anvil. ddShapeless(<minecraft:dirt>, [
+mods.betterwithmods.Anvil.addShapeless(<minecraft:dirt>, [
 <minecraft:dirt>, <minecraft:dirt>, <minecraft:dirt>, <minecraft:dirt>,
 <minecraft:dirt>, <minecraft:dirt>, <minecraft:dirt>, <minecraft:dirt>,
 <minecraft:dirt>, <minecraft:dirt>, <minecraft:dirt>, <minecraft:dirt>,
@@ -43,19 +43,19 @@ mods.betterwithmods.Anvil. ddShapeless(<minecraft:dirt>, [
 ]);
 ```
 
-### Удаление
+### Removal
 
 ```zenscript
 mods.betterwithmods.Anvil.removeShapeless(IItemStack output, @Optional IIngredient[] inputs);
 
 mods.betterwithmods.Anvil.removeShapeless(<minecraft:dirt>);
 
-mods.betterwithmods.Anvil. emoveShapeless(<minecraft:dirt>, [
+mods.betterwithmods.Anvil.removeShapeless(<minecraft:dirt>, [
 <minecraft:dirt>, <minecraft:dirt>, <minecraft:dirt>, <minecraft:dirt>,
 <minecraft:dirt>, <minecraft:dirt>, <minecraft:dirt>, <minecraft:dirt>,
 <minecraft:dirt>, <minecraft:dirt>, <minecraft:dirt>, <minecraft:dirt>,
 <minecraft:dirt>, <minecraft:dirt>, <minecraft:dirt>, <minecraft:dirt>
 ]);
 
-модов. etterwithmods.Anvil.removeAll();
+mods.betterwithmods.Anvil.removeAll();
 ```

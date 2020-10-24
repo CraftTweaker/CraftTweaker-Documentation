@@ -1,14 +1,14 @@
-# キャノン
+# Cannon
 
-### インポート中
+### Importing
 
 ```zenscript
-import mods.appledenergistics2.Cannon;
+import mods.appliedenergistics2.Cannon;
 ```
 
-### 追加中
+### Adding
 
-マターキャノンの弾薬タイプを追加します。 重量は、材料の(大体)原子量を指します。
+Adds ammo types for the matter cannon. Weight refers to (roughly) the atomic weight of the material.
 
 ```zenscript
 Cannon.registerAmmo(IItemStack ammo, double weight);

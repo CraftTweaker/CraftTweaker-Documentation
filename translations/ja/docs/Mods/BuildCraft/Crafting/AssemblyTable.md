@@ -1,43 +1,43 @@
 # Assembly Table
 
-*シリコンを構築する必要があります*
+*Requires BuildCraft Silicon*
 
 Class path: `mods.buildcraft.AssemblyTable`AssemblyTable</code>
 
-## 使用
+## Use
 
-To use, import the class with `import mods.buildcraft.AssemblyTable;` at the beginning of your script.アセンブリテーブル;</code> スクリプトの先頭にあります。
+To use, import the class with `import mods.buildcraft.AssemblyTable;` at the beginning of your script.AssemblyTable;</code> at the beginning of your script.
 
-## レシピを追加
+## Adding a Recipe
 
-`AssemblyTable.addRecipe(recipeName, output, power inputs);`
+`AssemblyTable.addRecipe(recipeName, output, power, inputs);`
 
-- `recipeName` (オプション) &lt;string> レシピの名前。 *ユニークでなければなりません！*
+- `recipeName` (Optional) &lt;string> The name of the recipe. *Must be unique!*
 - `output` <[IItemStack](/vanilla/api/items/IItemStack)>
-- `電力` &lt;int> 総電力コスト
+- `power` &lt;int> Total power cost in MJ
 - `inputs` <[IIngredient](/vanilla/api/items/IIngredient)[]>
 
 ```zenscript
-import mods.buildcraftimport mods.buildcraft.AssemblyTable;
+import mods.buildcraft.import mods.buildcraft.AssemblyTable;
 
 AssemblyTable.addRecipe("example_recipe_for_diamonds", <minecraft:diamond>, 1000, [<minecraft:coal_block>, <minecraft:redstone>]);
 ```
 
-## レシピを削除する
+## Removing a Recipe
 
 `AssemblyTable.removeByName(name);`
 
-- `recipeName` &lt;string> レシピの名前。
+- `recipeName` &lt;string> The name of the recipe.
 
 ```zenscript
-import mods.buildcraftimport mods.buildcraft.AssemblyTable;
+import mods.buildcraft.import mods.buildcraft.AssemblyTable;
 
 AssemblyTable.removeByName("buildcraftsilicon:redstone_chipset");
 ```
 
-## 既存のレシピ
+## Existing Recipes
 
-### チップセット:
+### Chipsets:
 
 - `buildcraftsilicon:redstone_chipset`
 - `buildcraftsilicon:iron_chipset`
@@ -45,13 +45,13 @@ AssemblyTable.removeByName("buildcraftsilicon:redstone_chipset");
 - `buildcraftsilicon:quartz_chipset`
 - `buildcraftsilicon:diamond_chipset`
 
-### プラグラブル:
+### Pluggables:
 
 - `buildcraftsilicon:plug_pulsar`
-- `buildcraftsilicon:ライトセンサー`
+- `buildcraftsilicon:light-sensor`
 - `buildcrafttransport:facaderecipes`
 
-### レンズ:
+### Lenses:
 
 - `buildcraftsilicon:lens-regular`
 - `buildcraftsilicon:lens-filter`
@@ -60,19 +60,19 @@ AssemblyTable.removeByName("buildcraftsilicon:redstone_chipset");
 
 *Replace `<color>` with any of the following: `white`, `orange`, `magenta`, `lightblue`, `yellow`, `lime`, `pink`, `gray`, `silver`, `cyan`, `purple`, `blue`, `brown`, `green`, `red`, `black`*
 
-### ワイヤー:
+### Wires:
 
 - `buildcrafttransport:wire-<color>`
 
 *Replace `<color>` with any of the following: `white`, `orange`, `magenta`, `lightblue`, `yellow`, `lime`, `pink`, `gray`, `silver`, `cyan`, `purple`, `blue`, `brown`, `green`, `red`, `black`*
 
-### ゲート:
+### Gates:
 
 - `buildcraftsilicon:gate-<operation>-<material>-no_modifier`
 - `buildcraftsilicon:gate-modifier-<operation>-<material>-<modifier>`
 
-パラメータ:
+Parameters:
 
-- `<operation>`: `と` または `または`
-- `<material>`: `鉄`, `nether_brick`, または `金`
-- `<modifier>`: `ラピス`, `クォーツ`, または `ダイヤモンド`
+- `<operation>`: `and` or `or`
+- `<material>`: `iron`, `nether_brick`, or `gold`
+- `<modifier>`: `lapis`, `quartz`, or `diamond`

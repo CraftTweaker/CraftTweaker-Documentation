@@ -1,19 +1,19 @@
-# Tłumacz usuwania
+# Removal Tweaker
 
-## Lista ZenMethod
+## ZenMethod List:
 
-    // Usuwa wpis odpowiadający stanowi początkowemu z określonego modyfikatora
-    mods.compatskills.transmutations.removals.removeStartStateFromReagent(Odczynnik IItemStack II, IItemStack start State)
-    . ompatskills.transmutations.removals.removeStartStateFromReagent(odczynnik IItemStac, crafttweaker.api.block.IBlockStatus)
+    // Removes the Entry corresponding to the Starting State from the specified Reagent
+    mods.compatskills.transmutations.removals.removeStartStateFromReagent(IItemStack reagent, IItemStack startState)
+    mods.compatskills.transmutations.removals.removeStartStateFromReagent(IItemStack reagent, crafttweaker.api.block.IBlockState state)
     
-    // Usuwa wpis odpowiadający Państwu Początkowemu z WSZYSTKICH Reagentów!
-    mods.compatskills.transmutations.removals.removeStartStateReagentAgnostic(IItemStack)
-    mods.compatskills.transmutations.removeStartStateReagentAgnostic(crafttweaker.api.block.IBlockStatuse)
+    // Removes the Entry corresponding to the Starting State from ALL Reagents!
+    mods.compatskills.transmutations.removals.removeStartStateReagentAgnostic(IItemStack state)
+    mods.compatskills.transmutations.removals.removeStartStateReagentAgnostic(crafttweaker.api.block.IBlockState state)
     
-    // Usuwa wpis dotyczący państwa końcowego z określonego Reagentu.
-    mods.compatskills.transmutations.removals.removeEndStateFromReagent(odczynnik IItemStack IItemStack stack, stan IItemStack)
-    mods.compatskills.transmutations.removals.removeEndStateFromReagent(odczynnik IItemStack, crafttweaker.api.block.IBlockState
+    // Removes the Entry corresponding to the End State from the specified Reagent.
+    mods.compatskills.transmutations.removals.removeEndStateFromReagent(IItemStack reagent, IItemStack state)
+    mods.compatskills.transmutations.removals.removeEndStateFromReagent(IItemStack reagent, crafttweaker.api.block.IBlockState state)
     
-    // / Usuwa wpis odpowiadający Stanowi Kresu z WSZYSTKICH Reagentów!
-    mods.compatskills.transmutations.removals.removeEndStateAgnostic(IItemStack)
-    mods.compatskills.transmutations.removeEndStateReagentAgnostic(crafttweaker.api.block.IBlockState
+    // Removes the Entry corresponding to the End State from ALL Reagents!
+    mods.compatskills.transmutations.removals.removeEndStateReagentAgnostic(IItemStack state)
+    mods.compatskills.transmutations.removals.removeEndStateReagentAgnostic(crafttweaker.api.block.IBlockState state)

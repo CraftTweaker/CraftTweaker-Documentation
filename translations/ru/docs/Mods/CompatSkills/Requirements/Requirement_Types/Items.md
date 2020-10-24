@@ -1,21 +1,21 @@
-# Элементы:
+# Items:
 
-Предметы - это требуемый тип, представленный CompatSkills и позволяющий вращать вещи, стоящие за хранением конкретного предмета/NBT-Value/Mod-Item в вашем главном или вне помещений. Пункт синтаксис является следующим:
+Items is a Requirement-Type introduced by CompatSkills and allows you to gate things behind holding a specific Item/NBT-Value/Mod-Item in either your Main or Off-Hand. The Item Syntax is as follows:
 
-    Пример:
-    // Добавляет требование о том, что вы имеете ЛЮБОЙ элемент из указанного мода.
+    Example:
+    // Adds the requirement of you holding ANY item from the specified mod.
     stack|modid
     
-    // Добавляет требование о наличии указанного элемента с Meta 0
+    // Adds the requirement of you holding the specified item with Meta 0
     stack|modid:item
     
-    // Добавляет требование о наличии указанного элемента с указанным Meta (* = Wildcard Metadata)
+    // Adds the requirement of you holding the specified item with the specified Meta (* = Wildcard Metadata)
     stack|modid:item:meta
     
-    // Добавляет требование о том, чтобы вы обладали ЛЮБЫМ пунктом с указанными NBT-данными
-    stack|||NBT as JSON
+    // Adds the requirement of you holding ANY item with the specified NBT-data
+    stack||NBT as JSON
     
-    // Добавляет требование о том, что вы держите ЛЮБЫЙ элемент из указанного мода с указанными NBT-данными.
+    // Adds the requirement of you holding ANY item from the specified mod with the specified NBT-data.
     stack|modid|NBT as JSON
     
     // Adds the requirement of you holding the specified item with meta 0 and the specified NBT-data

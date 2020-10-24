@@ -1,50 +1,50 @@
 # MaterialPart
 
-Un oggetto MaterialPart è, come il nome suggerisce una combinazione di un [Materiale](/Mods/ContentTweaker/Materials/Materials/Material/) e una [Parte](/Mods/ContentTweaker/Materials/Parts/Part/), such as `platinum gear`.
+A MaterialPart Object is, as the name suggests a combination of a [Material](/Mods/ContentTweaker/Materials/Materials/Material/) and a [Part](/Mods/ContentTweaker/Materials/Parts/Part/), such as `platinum gear`.
 
-## Importazione del pacchetto
+## Importing the package
 
-Potrebbe essere necessario per importare il pacchetto se si verificano problemi, in modo da essere più sicuri di spiacenti e aggiungere l'importazione.  
+It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
 `import mods.contenttweaker.MaterialPart;`
 
-## Recupero di un tale oggetto
+## Retrieving such an object
 
-Ci sono diversi modi di ritrasmettere un tale oggetto, sia come lista che come singolo oggetto.
+There are several ways of retreiving such an object, either as list or as single object.
 
-Oggetto Singolo:
+Single Object:
 
-- Utilizzando il [Material Part Bracket Handler](/Mods/ContentTweaker/Materials/Brackets/Bracket_MaterialPart/)
-- Usare un [Material's](/Mods/ContentTweaker/Materials/Materials/Material/) registerPart Method
-- Utilizzando un [Part's](/Mods/ContentTweaker/Materials/Parts/Part/) registerToMaterial Method
+- Using the [Material Part Bracket Handler](/Mods/ContentTweaker/Materials/Brackets/Bracket_MaterialPart/)
+- Using a [Material's](/Mods/ContentTweaker/Materials/Materials/Material/) registerPart Method
+- Using a [Part's](/Mods/ContentTweaker/Materials/Parts/Part/) registerToMaterial Method
 
-Lista:
+List:
 
-- Utilizzando [MaterialSystem](/Mods/ContentTweaker/Materials/MaterialSystem/) registerPartsForMaterial Method
-- Utilizzando un [Material's](/Mods/ContentTweaker/Materials/Materials/Material/) registerParts Method
-- Utilizzando un metodo [Part's](/Mods/ContentTweaker/Materials/Parts/Part/) registerToMaterials
+- Using [MaterialSystem's](/Mods/ContentTweaker/Materials/MaterialSystem/) registerPartsForMaterial Method
+- Using a [Material's](/Mods/ContentTweaker/Materials/Materials/Material/) registerParts Method
+- Using a [Part's](/Mods/ContentTweaker/Materials/Parts/Part/) registerToMaterials Method
 
-## Campi
+## Fields
 
-È possibile recuperare le seguenti informazioni da un MaterialPart:
+You can retrieve the following information from a MaterialPart:
 
-| ZenMethod            | Tipo Di Reso                                                                    |
+| ZenMethod            | Return Type                                                                     |
 | -------------------- | ------------------------------------------------------------------------------- |
-| getName()            | stringa                                                                         |
-| getLocalizedName()   | stringa                                                                         |
+| getName()            | string                                                                          |
+| getLocalizedName()   | string                                                                          |
 | hasEffect()          | boolean                                                                         |
 | hasOverlay()         | boolean                                                                         |
-| getMaterial()        | [IMateriale](/Mods/ContentTweaker/Materials/Materials/Material/)                |
+| getMaterial()        | [IMaterial](/Mods/ContentTweaker/Materials/Materials/Material/)                 |
 | getPart()            | [IPart](/Mods/ContentTweaker/Materials/Parts/Part/)                             |
 | getItemStack()       | [IItemStack](/Vanilla/Items/IItemStack/)                                        |
-| getTextureLocation() | stringa                                                                         |
-| getCTColor()         | [Colore](/Mods/ContentTweaker/Vanilla/Types/Color/Color/)                       |
+| getTextureLocation() | string                                                                          |
+| getCTColor()         | [Color](/Mods/ContentTweaker/Vanilla/Types/Color/Color/)                        |
 | getColor()           | int                                                                             |
 | isColorized()        | boolean                                                                         |
 | getData()            | [IMaterialPartData](/Mods/ContentTweaker/Materials/Materials/MaterialPartData/) |
 
-È inoltre possibile impostare le seguenti informazioni di un MaterialPart:
+You can also set the following information of a MaterialPart:
 
-| ZenMethod                           | Parametro         | Descrizione                                                                                                                |
-| ----------------------------------- | ----------------- | -------------------------------------------------------------------------------------------------------------------------- |
-| setColorized(colorato)              | colorato booleano | Imposta se il codice colore dell'elemento è applicato                                                                      |
-| setTextureLocation(textureLocation) | textureLocation   | Imposta il percorso della texture dell'oggetto. Ad esempio, se si desidera che un Gear abbia un aspetto diverso dal resto. |
+| ZenMethod                           | Parameter              | Description                                                                                     |
+| ----------------------------------- | ---------------------- | ----------------------------------------------------------------------------------------------- |
+| setColorized(colorized)             | boolean colorized      | Sets if the item's color code is applied                                                        |
+| setTextureLocation(textureLocation) | string textureLocation | Sets the item's texure path. For example, if you want one Gear to look different from the rest. |

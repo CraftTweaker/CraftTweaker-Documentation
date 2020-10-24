@@ -1,8 +1,8 @@
-# Kreatywny uchwyt kartek
+# Creative Tab Bracket Handler
 
-Obsługa kartek kreatywnych daje Ci dostęp do kreatywnych kart w grze.
+The Creative Tab Bracket Handler gives you access to the creative Tabs in the game.
 
-Odwołuje się je w programie obsługi kart kreatywnych w ten sposób:
+They are referenced in the Creative Tab handler this way:
 
 ```zenscript
 <creativetab:name>
@@ -10,4 +10,4 @@ Odwołuje się je w programie obsługi kart kreatywnych w ten sposób:
 <creativetab:misc>
 ```
 
-Jeśli karta Kreatywna zostanie znaleziona, to zwróci obiekt ICreativeTab. Please refer to the [respective Wiki entry](/Vanilla/CreativeTabs/ICreativeTab/) for further information on what you can do with these.
+If the Creative Tab is found, this will return an ICreativeTab Object. Please refer to the [respective Wiki entry](/Vanilla/CreativeTabs/ICreativeTab/) for further information on what you can do with these.

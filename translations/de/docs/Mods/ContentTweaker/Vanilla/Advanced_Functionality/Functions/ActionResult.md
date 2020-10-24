@@ -1,20 +1,20 @@
-# Aktionsergebnis
+# ActionResult
 
 An ActionResult is an enumeration of a [IItemUse Function's](/Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemUse/) possible results.
 
 ## Dieses Paket importieren
 
-Es kann erforderlich sein, dass Sie das Paket importieren, wenn Sie irgendwelche Probleme haben. Seien Sie also besser sicher als entschuldigen und fügen Sie den Import hinzu.  
-`mods.contenttweaker.ActionResult;`
+It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
+`import mods.contenttweaker.ActionResult;`
 
-## Aufzählungen
+## Enumerations
 
-Angesichts dieser drei Werte kann es sein:
+Facing can be of those three values:
 
-- versagen
-- passieren
-- erfolgreich
+- fail
+- pass
+- success
 
-## Verwendungen
+## Uses
 
-Hauptverwendung einer Hand ist in einer [IItemUse Funktion](/Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemUse/).
+A Hand's main use is in a [IItemUse Function](/Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemUse/).

@@ -1,25 +1,25 @@
 # PlayerDestroyItem
 
-当玩家摧毁物品时，玩家会被发射。
+The PlayerDestroyItem Event is fired whenever a player destroys an item.
 
-## 事件类
+## Event Class
 
 You will need to cast the event in the function header as this class:  
 `crafttweaker.event.PlayerDestroyItemEvent`  
 You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
 
-## 事件界面扩展
+## Event interface extensions
 
-玩家破坏项目事件实现了以下接口，并且能够调用他们所有的方法/getter/setter：
+PlayerDestroyItem Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
 
 - [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
 
 ## ZenGetters
 
-以下信息可以从事件中检索：
+The following information can be retrieved from the event:
 
-| ZenGetter | 返回值类型                                    |
-| --------- | ---------------------------------------- |
-| `播放器`     | [IPlayer](/Vanilla/Players/IPlayer/)     |
-| `原始项目`    | [IItemStack](/Vanilla/Items/IItemStack/) |
-| `手`       | 字符串                                      |
+| ZenGetter      | 返回值类型                                    |
+| -------------- | ---------------------------------------- |
+| `player`       | [IPlayer](/Vanilla/Players/IPlayer/)     |
+| `originalItem` | [IItemStack](/Vanilla/Items/IItemStack/) |
+| `hand`         | string                                   |

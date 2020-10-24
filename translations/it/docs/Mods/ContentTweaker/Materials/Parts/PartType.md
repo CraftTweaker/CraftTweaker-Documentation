@@ -1,52 +1,52 @@
 # PartType
 
-Un PartType può essere visto come un gruppo in cui più parti si inseriscono, ad esempio `elementi`
+A PartType can be seen as a group that several parts fit in, e.g. `items`
 
-## Importazione del pacchetto
+## Importing the package
 
-Potrebbe essere necessario per importare il pacchetto se si verificano problemi, in modo da essere più sicuri di spiacenti e aggiungere l'importazione.  
+It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
 `import mods.contenttweaker.PartType;`
 
-## Recupero di un tale oggetto
+## Retrieving such an object
 
-È possibile utilizzare il [MaterialSystem](/Mods/ContentTweaker/Materials/MaterialSystem/) per recuperare un oggetto PartType esistente o crearne uno completamente nuovo.  
-Dai un'occhiata qui sotto per imparare a creare un nuovo PartType.
+You can use the [MaterialSystem](/Mods/ContentTweaker/Materials/MaterialSystem/) to either retrieve an existing PartType object or create an entirely new one.  
+Check out below entry to learn how to create a new PartType.
 
 <details>
-    <summary>I seguenti tipi sono pre-registrati:</summary>
+    <summary>Following types are pre-registered:</summary>
     <ul>
-        <li>elemento</li>
-        <li>blocco</li>
-        <li>minerale</li>
-        <li>fluido</li>
-        <li>armatura</li>
+        <li>item</li>
+        <li>block</li>
+        <li>ore</li>
+        <li>fluid</li>
+        <li>armor</li>
         <li>minecart</li>
     </ul>
 </details>
 
 ## ZenMethods
 
-È possibile recuperare le seguenti informazioni da un Partito:
+You can retrieve the following information from a PartType:
 
-| ZenMethod | Tipo Di Reso |
-| --------- | ------------ |
-| getName() | stringa      |
+| ZenMethod | Return Type |
+| --------- | ----------- |
+| getName() | string      |
 
-È possibile impostare le seguenti informazioni su un Partito:
+You can set the following information on a PartType:
 
-| ZenMethod                       | Tipo Parametro                                                               |
+| ZenMethod                       | Parameter Type                                                               |
 | ------------------------------- | ---------------------------------------------------------------------------- |
-| setData(IPartDataPiece[] data); | [IPartDataPiece](/Mods/ContentTweaker/Materials/Parts/PartDataPiece/)[] dati |
+| setData(IPartDataPiece[] data); | [IPartDataPiece](/Mods/ContentTweaker/Materials/Parts/PartDataPiece/)[] data |
 
-## Crea un nuovo PartType
+## Create a new PartType
 
-Se per qualsiasi motivo dovessi mai registrare un nuovo PartType, dovrai conoscere due cose:
+If you, for whatever reason would ever need to register a new PartType, you will need to know two things:
 
-- Quale nome avrà la nuova partType
-- Come saranno registrati [MaterialParts](/Mods/ContentTweaker/Materials/Materials/MaterialPart/) creati da [Parti](/Mods/ContentTweaker/Materials/Parts/Part/) che sono di questo tipo
+- What name the new partType will have
+- How [MaterialParts](/Mods/ContentTweaker/Materials/Materials/MaterialPart/) created from [Parts](/Mods/ContentTweaker/Materials/Parts/Part/) that are of this type will be registered
 
-Il primo è semplice, è una stringa.  
-Il secondo è un po' più complicato, è una funzione che prende un MaterialPart come input:
+The first is simple, it's a string.  
+The second is a bit trickier, it's a function that takes a MaterialPart as input:
 
 ```zenscript
 #loader contenttweaker
@@ -54,14 +54,14 @@ Il secondo è un po' più complicato, è una funzione che prende un MaterialPart
 
 import mods.contenttweaker.MaterialSystem;
 
-val ourType = MaterialSystem. reatePartType("cool_type", function(materialPart){
+val ourType = MaterialSystem.createPartType("cool_type", function(materialPart){
 
 });
 
-//Usa il nuovo tipo per creare una Parte
-val ourPart = mods. ontenttweaker.MaterialSystem.getPartBuilder().setName("cool_part").setPartType(ourType).build();
+//Use the new type to create a Part
+val ourPart = mods.contenttweaker.MaterialSystem.getPartBuilder().setName("cool_part").setPartType(ourType).build();
 
-//Creare un nuovo Materiale e registrare la nuova parte creata.
+//Create a new Material and register the newly created part.
 val ourMaterial = MaterialSystem.getMaterialBuilder().setName("Lawrencium").setColor(15426660).build();
 ourMaterial.registerPart(ourPart);
 

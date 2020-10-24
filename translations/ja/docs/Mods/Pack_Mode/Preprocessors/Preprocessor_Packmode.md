@@ -1,14 +1,14 @@
-# Packmode プリプロセッサ
+# Packmode Preprocessor
 
-Packmode プリプロセッサーは、packmode の設定ファイルで特定の packmode が有効になっている場合にのみスクリプトを実行するように変更します。
+The Packmode Preprocessor will change the script to only be executed if a certain packmode is enabled in the packmode config file
 
-## 電話
+## Call
 
 You call the Packmode Preprocessor by adding `#packmode mode(s)` to your script file, with `mode(s)` being the pack mode(s) you want the script to run in
 
 ## 例
 
-`#packmode normal expert` を使用すると、通常モードとエキスパートモードでスクリプトが有効になります
+`#packmode normal expert` would enable the script in normal and expert mode
 
 ```zenscript
 #packmode normal
@@ -17,6 +17,6 @@ import crafttweaker.items.IItemStack;
 print("If I appear on your CT-logs, packmode normal is enabled!");
 ```
 
-## 何をするか
+## What it does
 
-プロセッサーは、特定のパックモードが有効になっている場合にのみ、スクリプトを実行することを許可します。
+The Processor will only allow the script to be executed if a certain packmode is enabled.

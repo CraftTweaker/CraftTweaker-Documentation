@@ -1,6 +1,6 @@
 # ZenClass
 
-ZenClass は、ZenScript に公開されている Java クラスです。
+A ZenClass is a java class that has been exposed to ZenScript.
 
 ## 例
 
@@ -10,14 +10,14 @@ ZenClass は、ZenScript に公開されている Java クラスです。
 @ZenClass("crafttweaker.item.IItemStack")
 @ZenRegister
 public interface IItemStack extends IIngredient {
-    //ページを短く保つために切り取り
+    //Cut out to keep the page short
 }
 ```
 
-実際の実装に注釈を付ける必要はありません。
+The actual implementation does not need to be annotated.
 
-## どのクラスに注釈を付けることができますか|| 追加情報
+## What classes can be annotated || Additional Info
 
-- すべてのJavaクラスに注釈を付けることができます。
-- 注釈に文字列の値(例: `crafttweaker.item.IItemStack` )を与える必要があります。 これはクラスのZS内部名になります。
-- クラスにZenClassを宣言した後でも登録する必要があります。 [`@ZenRegister`](/Dev_Area/ZenAnnotations/Annotation_ZenRegister/) を使用することをお勧めします
+- You can annotate all Java Classes
+- You should give the annotation a String value (e.g. `crafttweaker.item.IItemStack`). This will be the ZS internal name for the class.
+- After declaring a class a ZenClass, you still need to register it. It is recommended that you use [`@ZenRegister`](/Dev_Area/ZenAnnotations/Annotation_ZenRegister/) for that

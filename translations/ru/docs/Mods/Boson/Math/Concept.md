@@ -1,11 +1,11 @@
-# Концепция
+# The Concept
 
-Большая часть использования математики в ZenScript может быть покрыта четырьмя основными операциями: добавление, вычитание, умножение и деление. Также ZenScript предоставляет доступ к функции `pow` , выполняющей операцию питания. Но это так. Более сложные математические операции не могут быть выполнены, и потребует полной реализации с таблицами поиска и не принесет пользы от оптимизации аппаратного обеспечения в этом отношении, особенно для современных процессоров.
+Most of the uses of Math in ZenScript can be covered via the four basic operations: addition, subtraction, multiplication, and division. ZenScript also provides access to the `pow` function, which performs the power operation. But that's it. More advanced mathematical operations cannot be performed, and would require a full reimplementation with lookup tables and wouldn't benefit from the hardware's optimizations in that regard, especially for modern CPUs.
 
 This is where ZenScriptX Math comes in, providing a set of classes and some basic arithmetic operations that may be of general usefulness, while also benefitting in the most part from hardware optimizations, since most of those are implemented on a native level (via a couple of indirections due to the VM ZenScript runs on).
 
-Каждый раздел документации предоставит пользователю список предоставленных функций и их поведение.
+Every documentation section will provide the user with a list of provided functions and their behavior.
 
-Текущим списком реализуемых классов являются:
+The current list of provided classes that are implemented are:
 
-- [Математика](/Mods/Boson/Math/Math/) для общих математических функций (например, синус, косин, логарифм...)
+- [Math](/Mods/Boson/Math/Math/) for common mathematical functions (e.g., sine, cosine, logarithm...)

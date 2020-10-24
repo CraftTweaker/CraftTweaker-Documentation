@@ -2,10 +2,10 @@
 
 ## 特性：
 
-此功能允许您将研究的获取锁定在一组要求的背后。 例如，这意味着你可以将获得的“高尔姆研究”置于某种程度的要求之后(如下面的例子所示)。 这确实意味着你必须在这个层面获得研究，但是一旦你完成了研究，你就得到了它了。 它不会通过离开尺寸或不再满足一般要求来“重置”或获取“未学习”！
+This feature allows you to lock the acquisition of Research behind a set group of requirements. This means for example that you can set the acquisition of "Golem Research" behind the requirement of being in a certain dimension (as seen in the example below). This does mean that you have to be in that dimension to acquire the research, however once you've got the research you've got it. It doesn't "reset" or get "unlearnt" by leaving the dimension or no longer meeting the requirements in general!
 
-## 语法：
+## Syntax:
 
-    mods.compatskills.Thaumcraft.addResearchLock(String researchKey, String... (ii)
+    mods.compatskills.Thaumcraft.addResearchLock(String researchKey, String... requirements);
     
     mods.compatskills.Thaumcraft.addResearchLock("GOLEMVISION", "dim|1");

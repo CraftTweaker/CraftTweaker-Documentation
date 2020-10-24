@@ -1,8 +1,8 @@
-# Operador XNOR
+# XNOR Operator
 
-Una compuerta **XNOR** es una compuerta **XOR** invertida. Esto es lo mismo que usar la salida de la compuerta **XOR** que la entrada a la compuerta **NOT**. Esto significa que la compuerta **XNOR** devuelve `TRUE` sólo cuando ambas entradas son el mismo estado. Ambos son `TRUE` o ambos son `FALSE`.
+An **XNOR** gate is an inverted **XOR** gate. This is the same as using the output of the **XOR** gate as the input to the **NOT** gate. This means that the **XNOR** gate returns `TRUE` only when both inputs are the same state. Either both are `TRUE` or both are `FALSE`.
 
-| Input 1 | Input 2 | Salida |
+| Input 1 | Input 2 | Output |
 | ------- | ------- | ------:|
 | 0       | 0       |      1 |
 | 0       | 1       |      0 |

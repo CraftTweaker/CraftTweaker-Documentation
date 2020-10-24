@@ -1,36 +1,36 @@
-# Four à coke
+# Coke Oven
 
-## Appeler le paquet
+## Calling The Package
 
-Vous pouvez appeler le package CokeOven en utilisant `mods.immersiveengineering.CokeOven`.
+You can call the CokeOven package using `mods.immersiveengineering.CokeOven`.
 
-## Ajouter une recette
+## Add Recipe
 
-| Requis | Type de texte       | Type de données                                    |
-| ------ | ------------------- | -------------------------------------------------- |
-| Requis | Sortie              | [IItemstack](/Vanilla/Items/IItemStack/)           |
-| Requis | Sortie de Carburant | Nombre entier                                      |
-| Requis | Input               | [Ingrédient](/Vanilla/Variable_Types/IIngredient/) |
-| Requis | Date et heure       | Nombre entier                                      |
+| Required | Type        | Data Type                                           |
+| -------- | ----------- | --------------------------------------------------- |
+| Required | Output      | [IItemstack](/Vanilla/Items/IItemStack/)            |
+| Required | Fuel Output | Integer                                             |
+| Required | Input       | [IIngredient](/Vanilla/Variable_Types/IIngredient/) |
+| Required | Time        | Integer                                             |
 
-### Exemple
+### Example
 
 ```zenscript
-//Exemple:
-mods.immersiveengineering.CokeOven.addRecipe(IItemStack, int fuelOutput, IIngredient input, int time);
+//Example:
+mods.immersiveengineering.CokeOven.addRecipe(IItemStack output, int fuelOutput, IIngredient input, int time);
 mods.immersiveengineering.CokeOven.addRecipe(<minecraft:coal>, 2, <ore:logWood>, 2000);
 ```
 
-## Supprimer la recette
+## Remove Recipe
 
-| Type de texte | Type de données                          |
-| ------------- | ---------------------------------------- |
-| Sortie        | [IItemstack](/Vanilla/Items/IItemStack/) |
+| Type   | Data Type                                |
+| ------ | ---------------------------------------- |
+| Output | [IItemstack](/Vanilla/Items/IItemStack/) |
 
-### Exemple:
+### Example:
 
 ```zenscript
-//Exemple:
+//Example:
 mods.immersiveengineering.CokeOven.removeRecipe(IItemStack output);
 mods.immersiveengineering.CokeOven.removeRecipe(<minecraft:diamond>);
 ```

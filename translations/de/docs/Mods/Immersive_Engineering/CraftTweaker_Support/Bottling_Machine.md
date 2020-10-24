@@ -1,22 +1,22 @@
-# Flaschenmaschine
+# Bottling Machine
 
 ## Hinzufügen des Packages
 
-Sie können das Paket BottlingMachine mit `mods.immersiveengineering.BottlingMachine` anrufen.
+You can call the BottlingMachine package using `mods.immersiveengineering.BottlingMachine`.
 
 ## Rezept hinzufügen
 
-| Benötigt | Type        | Datentyp                                            |
-| -------- | ----------- | --------------------------------------------------- |
-| Benötigt | Output      | [IItemstack](/Vanilla/Items/IItemStack/)            |
-| Benötigt | Input       | [IIngredient](/Vanilla/Variable_Types/IIngredient/) |
-| Benötigt | Flüssigkeit | [Fluidstack](/Vanilla/Liquids/ILiquidStack/)        |
+| Benötigt | Type   | Datentyp                                            |
+| -------- | ------ | --------------------------------------------------- |
+| Benötigt | Output | [IItemstack](/Vanilla/Items/IItemStack/)            |
+| Benötigt | Input  | [IIngredient](/Vanilla/Variable_Types/IIngredient/) |
+| Benötigt | Fluid  | [Fluidstack](/Vanilla/Liquids/ILiquidStack/)        |
 
 ### Beispiel
 
 ```zenscript
-//Beispiel:
-mods.immersiveengineering.BottlingMachine.addRecipe(IItemStack Output, IIngredient Input, ILiquidStack Fluid);
+//Example:
+mods.immersiveengineering.BottlingMachine.addRecipe(IItemStack output, IIngredient input, ILiquidStack fluid);
 mods.immersiveengineering.BottlingMachine.addRecipe(<minecraft:diamond>, <ore:logWood>, <liquid:water>);
 ```
 
@@ -29,7 +29,7 @@ mods.immersiveengineering.BottlingMachine.addRecipe(<minecraft:diamond>, <ore:lo
 ### Beispiel
 
 ```zenscript
-//Beispiel:
+//Example:
 mods.immersiveengineering.BottlingMachine.removeRecipe(IItemStack output);
 mods.immersiveengineering.BottlingMachine.removeRecipe(<minecraft:diamond>);
 ```

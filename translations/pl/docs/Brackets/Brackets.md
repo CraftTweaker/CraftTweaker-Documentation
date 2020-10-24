@@ -1,27 +1,27 @@
-# Obsługa nawiasów
+# Bracket Handlers
 
-ZenScript używa nawiasów do odniesienia obiektów gry, takich jak Przedmioty, Jednostki i O­ct.
+ZenScript uses Brackets to reference game objects such as Items, Entities and Oredict.
 
-## Jak używać uchwytów z nawiasem
+## How to use Bracket Handlers
 
-nawiasy w ZenScript są zdefiniowane przy użyciu znaków `<` i `>` , cokolwiek wewnątrz tych znaków jest uważane za nawias.
+Brackets in ZenScript are defined using the `<` and `>` characters, anything inside these characters are considered a Bracket.
 
-Przykładem obsługi nawiasów będzie obsługa nawiasów przedmiotów, która daje Ci dostęp do przedmiotów wewnątrz gry.
+An example of a Bracket Handler would be the Item Bracket Handler, which gives you access to the items inside the game.
 
-## Przykłady
+## Examples
 
-Przykładem [uchwytu przedmiotów](/Vanilla/Brackets/Bracket_Item/) byłoby:
+An example of the [Item Bracket Handler](/Vanilla/Brackets/Bracket_Item/) would be:
 
 ```zenscript
 <minecraft:apple>
 ```
 
-To da Ci dostęp do `Apple` [element](/Vanilla/Items/IItemStack/).
+This will give you access to the `Apple` [item](/Vanilla/Items/IItemStack/).
 
-Przykładem [Obsługi nawiasów OreDictEntry](/Vanilla/Brackets/Bracket_Ore/) byłoby:
+An example of the [OreDictEntry Bracket Handler](/Vanilla/Brackets/Bracket_Ore/) would be:
 
 ```zenscript
 <ore:ingotIron>
 ```
 
-To da Ci dostęp do [IOreDictEntry](/Vanilla/OreDict/IOreDictEntry/) dla `ingotIron`.
+This will give you access to the [IOreDictEntry](/Vanilla/OreDict/IOreDictEntry/) for `ingotIron`.

@@ -1,8 +1,8 @@
-# Verzauberung Klammerhandler
+# Enchantment Bracket Handler
 
-Der Zauber Bracket-Handler gibt dir Zugriff auf die Verzauberungsdefinitionen im Spiel.
+The Enchantment Bracket Handler gives you access to the Enchantment definitions in the game.
 
-Sie werden auf diese Weise im Zauberhandler referenziert:
+They are referenced in the Enchantment handler this way:
 
 ```zenscript
 <enchantment:modid:name>
@@ -10,4 +10,4 @@ Sie werden auf diese Weise im Zauberhandler referenziert:
 <enchantment:minecraft:protection>
 ```
 
-Wird die Verzauberung gefunden, wird ein IEnchantmentDefinition-Objekt zurückgegeben. Weitere Informationen dazu finden Sie im [entsprechenden Wiki-Eintrag](/Vanilla/Enchantments/IEnchantmentDefinition/).
+If the Enchantment is found, this will return an IEnchantmentDefinition Object. Please refer to the [respective Wiki entry](/Vanilla/Enchantments/IEnchantmentDefinition/) for further information on what you can do with these.

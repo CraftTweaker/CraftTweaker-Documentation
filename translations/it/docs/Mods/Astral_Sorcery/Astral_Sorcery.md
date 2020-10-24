@@ -1,12 +1,12 @@
-# Stregoneria Astrale
+# Astral Sorcery
 
-Stregoneria Astrale è una mod magica concentrata intorno a sfruttare i poteri della luce stellare e le costellazioni. Esplora e scopri il mondo e il cielo sopra di te; concentrati la luce stellare sulla tua volontà, rafforzandoti o migliorando il mondo che ti circonda.
+Astral Sorcery is a magic mod focused around harnessing the powers of starlight and the constellations. Explore and discover the world and the sky above you; focus starlight to your will, strengthening yourself or enhancing the world around you.
 
-## Integrazione CraftTweaker
+## CraftTweaker integration
 
-Stregoneria Astrale viene fornito con integrazione NATIVE crafttweaker.  
-Questo significa che i problemi con i metodi aggiunti dovrebbero essere discussi presso il [tracker dei problemi Astral stregoneria](https://github.com/HellFirePvP/AstralSorcery/issues).
+Astral Sorcery comes with NATIVE crafttweaker integration.  
+This means that issues with the added methods should be discussed at the [Astral sorcery issue tracker](https://github.com/HellFirePvP/AstralSorcery/issues).
 
-## Metodi CraftTweaker rimossi
+## Removed CraftTweaker methods
 
-- L'integrazione CraftTweaker di Stregeria Astrale una volta presentava un Rituale di Minerali. Questo è ora gestito da un'opzione di configurazione!
+- Astral Sorcery's CraftTweaker integration once featured a Mineralis Ritual. This is now handled by a config option!

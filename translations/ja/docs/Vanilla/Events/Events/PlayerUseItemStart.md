@@ -1,30 +1,30 @@
 # PlayerUseItemStart
 
-PlayerUseItemStart イベントは、プレイヤーがアイテムを使用し始めるたびに発生します。
+The PlayerUseItemStart Event is fired whenever a player starts using an item.
 
-## イベントクラス
+## Event Class
 
 You will need to cast the event in the function header as this class:  
 `crafttweaker.event.PlayerUseItemStartEvent`  
 You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
 
-## イベントインターフェースの拡張
+## Event interface extensions
 
-PlayerUseItemStart Eventsは以下のインターフェイスを実装し、それらのメソッド/getters/settersをすべて呼び出すことができます。
+PlayerUseItemStart Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
 
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 - [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
 
 ## ZenGetters
 
-イベントから次の情報を取得できます。
+The following information can be retrieved from the event:
 
-| ZenGetter | 戻り値                                      |
-| --------- | ---------------------------------------- |
-| `キャンセル済み` | boolean型                                 |
-| `プレイヤー`   | [IPlayer](/Vanilla/Players/IPlayer/)     |
-| `項目`      | [IItemStack](/Vanilla/Items/IItemStack/) |
+| ZenGetter  | 戻り値                                      |
+| ---------- | ---------------------------------------- |
+| `canceled` | boolean型                                 |
+| `player`   | [IPlayer](/Vanilla/Players/IPlayer/)     |
+| `item`     | [IItemStack](/Vanilla/Items/IItemStack/) |
 
 ## ZenMethods
 
-- `event.cancel()` はイベントをキャンセルとして設定します
+- `event.cancel()` sets the event as cancelled

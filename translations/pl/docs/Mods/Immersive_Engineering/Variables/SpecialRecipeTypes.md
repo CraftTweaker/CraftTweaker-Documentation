@@ -1,12 +1,12 @@
-# Specjalne typy przepisów
+# Special Recipe Types
 
-## Informacje
+## Information
 
-Opcjonalny parametr String o nazwie "specialRecipeType". Ten ciąg pozwala Ci na "Pod-Tag" przepis, do określonego typu przepisu. Nie zmienia to w żaden sposób zachowania, po prostu przypisuje je do subznacznika.
+The Arc-Furnace has an Optional String parameter called "specialRecipeType". This String allows you to "Sub-Tag" your Recipe to a specific Recipe Type. This does not alter behavior in any way, it just assigns it to a Sub-Tag.
 
-### Istniejące typy
+### Existing Types
 
-| Typy przepisów: | Wartość      |
-| --------------- | ------------ |
-| Stopień         | „Stopywanie” |
-| Ores            | "Rudy"       |
+| Recipe Types: | Value      |
+| ------------- | ---------- |
+| Alloying      | "Alloying" |
+| Ores          | "Ores"     |

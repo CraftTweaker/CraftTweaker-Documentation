@@ -1,51 +1,51 @@
 # ZenAnnotation
 
-ZenAnnotation は、クラスまたはメソッドに ZenScript に公開することができます。
+A ZenAnnotation can be given to a Class or its Methods to expose it to ZenScript
 
-## クラスのアノテーション（注釈）
+## Class annotations
 
-これらの注釈は ZenClasses に渡すことができます。
+These annotations can be given to ZenClasses
 
-| 注釈                                                                       | 値                                                                          | Target | 情報                                                                           |
-| ------------------------------------------------------------------------ | -------------------------------------------------------------------------- | ------ | ---------------------------------------------------------------------------- |
-| [`@ZenClass`](/Dev_Area/ZenAnnotations/Annotation_ZenClass/)             | ZenClass 名（例： `crafttweaker.item.IItemStack`）は、クラスの正式名称と異なる場合があります。        | クラス    | 名前は一意である必要があります                                                              |
-| [`@ZenExpansion`](/Dev_Area/ZenAnnotations/Annotation_ZenExpansion/)     | 拡張されたZenType名 (例: `crafttweaker.item.IItemStack`)                          | クラス    | 名前が既に存在している必要があります（存在しないものを拡張することはできません）                                     |
-| [`@ZenRegister`](/Dev_Area/ZenAnnotations/Annotation_ZenRegister/)       |                                                                            | クラス    | クラスの自動登録や拡張に使用されます                                                           |
-| [`@IterableList`](/Dev_Area/ZenAnnotations/Annotation_Iterable/)         | Iterable タイプの ZenClass 名 (例: `crafttweaker.mods.IMod`)                     | クラス    | クラスを `反復可能な<Type>`に割り当てる必要があります                                        |
-| [`@IterableMap`](/Dev_Area/ZenAnnotations/Annotation_Iterable/)          | Iterable キーと Type 値の ZenClass 名 (例: `文字列`, `crafttweaker.item.IItemStack`) | クラス    | `リスト<Type>` にクラスを割り当てる必要があります                                          |
-| [`@IterableSimple`](/Dev_Area/ZenAnnotations/Annotation_Iterable/)       | Iterable タイプの ZenClass 名 (例: `crafttweaker.mods.IMod`)                     | クラス    | `マップ<KeyType, ValueType>`にクラスを割り当てる必要があります                             |
-| [`@BracketHandler`](/Dev_Area/ZenAnnotations/Annotation_BracketHandler/) | ブラケットハンドラの優先度 (例: `priority = 19`)                                         | クラス    | `IBracketHandler` にクラスを割り当てる必要があります                                          |
-| [`@ModOnly`](/Dev_Area/ZenAnnotations/Annotation_ModOnly/)               | 必要なmodの名前 (`isModLoaded(annotation.getValue())` は eval to true)            | クラス    | [`@ZenRegister`](/Dev_Area/ZenAnnotations/Annotation_ZenRegister/) と組み合わせて使用 |
+| Annotation                                                               | Value                                                                                            | Target | Information                                                                                 |
+| ------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------ | ------ | ------------------------------------------------------------------------------------------- |
+| [`@ZenClass`](/Dev_Area/ZenAnnotations/Annotation_ZenClass/)             | ZenClass Name (e.g. `crafttweaker.item.IItemStack`), can differ from class' formal name          | Class  | Name has to be unique                                                                       |
+| [`@ZenExpansion`](/Dev_Area/ZenAnnotations/Annotation_ZenExpansion/)     | Expanded ZenType name (e.g. `crafttweaker.item.IItemStack`)                                      | Class  | Name has to exist already (you cant extend something nonexistant)                           |
+| [`@ZenRegister`](/Dev_Area/ZenAnnotations/Annotation_ZenRegister/)       |                                                                                                  | Class  | Used to Automatically register the class or expansion                                       |
+| [`@IterableList`](/Dev_Area/ZenAnnotations/Annotation_Iterable/)         | ZenClass name of the Iterable Type (e.g. `crafttweaker.mods.IMod`)                               | Class  | Class needs to be assignable to `Iterable<Type>`                                      |
+| [`@IterableMap`](/Dev_Area/ZenAnnotations/Annotation_Iterable/)          | ZenClass name of the Iterable key and value Type (e.g. `string`, `crafttweaker.item.IItemStack`) | Class  | Class needs to be assignable to `List<Type>`                                          |
+| [`@IterableSimple`](/Dev_Area/ZenAnnotations/Annotation_Iterable/)       | ZenClass name of the Iterable Type (e.g. `crafttweaker.mods.IMod`)                               | Class  | Class needs to be assignable to `Map<KeyType, ValueType>`                             |
+| [`@BracketHandler`](/Dev_Area/ZenAnnotations/Annotation_BracketHandler/) | Bracket Handler Priority (e.g. `priority = 19`)                                                  | Class  | Class needs to be assignable to `IBracketHandler`                                           |
+| [`@ModOnly`](/Dev_Area/ZenAnnotations/Annotation_ModOnly/)               | Required mod's name (`isModLoaded(annotation.getValue())` needs to eval to true)                 | Class  | Used in combination with [`@ZenRegister`](/Dev_Area/ZenAnnotations/Annotation_ZenRegister/) |
 
-## パラメータアノテーション：
+## Parameter annotations
 
-これらのアノテーションはメソッドパラメータに与えることができます。
+These annotations can be given to Method Parameters
 
-| 注釈                                                           | Target | 情報                                             |
-| ------------------------------------------------------------ | ------ | ---------------------------------------------- |
-| `@NotNull`                                                   | パラメータ  | 何もしない (NYI)                                    |
-| [`@Optional`](/Dev_Area/ZenAnnotations/Annotation_Optional/) | パラメータ  | パラメータをオプションとして示します。 関数を呼び出すときは、任意のパラメータを省略できます |
+| Annotation                                                   | Target    | Information                                                                                   |
+| ------------------------------------------------------------ | --------- | --------------------------------------------------------------------------------------------- |
+| `@NotNull`                                                   | Parameter | Does nothing (NYI)                                                                            |
+| [`@Optional`](/Dev_Area/ZenAnnotations/Annotation_Optional/) | Parameter | Denotes a Parameter as optional. Optional parameters can be omitted when calling the function |
 
-## メソッド注釈
+## Method annotations
 
-これらのアノテーションは、メソッド (静的および非静的) に与えることができます。
+These annotations can be given to Methods (both static and nonstatic)
 
-| 注釈                                                                         | 値                                                       | Target |
-| -------------------------------------------------------------------------- | ------------------------------------------------------- | ------ |
-| [`@ZenCaster`](/Dev_Area/ZenAnnotations/Annotation_ZenCaster/)             |                                                         | 方法     |
-| [`@ZenOperator`](/Dev_Area/ZenAnnotations/Annotation_ZenOperator/)         | [演算子タイプ](/Dev_Area/ZenOperators/)                       | 方法     |
-| [`@ZenGetter`](/Dev_Area/ZenAnnotations/ZenMembers/)                       | 省略した場合はgetter name (例: "name") メソッド名を () なしで使用します。      | 方法     |
-| [`@ZenSetter`](/Dev_Area/ZenAnnotations/ZenMembers/)                       | 省略した場合はsetter name (例: "name") メソッド名 without () が使用されます | 方法     |
-| [`@ZenMemberGetter`](/Dev_Area/ZenAnnotations/ZenMembers/)                 |                                                         | 方法     |
-| [`@ZenMemberSetter`](/Dev_Area/ZenAnnotations/ZenMembers/)                 |                                                         | 方法     |
-| [`@ZenMethod`](/Dev_Area/ZenAnnotations/Annotation_ZenMethod/)             |                                                         | 方法     |
-| [`@ZenMethodStatic`](/Dev_Area/ZenAnnotations/Annotation_ZenMethodStatic/) |                                                         | 方法     |
-| [`@ZenDoc`](/Dev_Area/ZenAnnotations/Annotation_ZenDoc/)                   | `dumpZS`の追加メソッド情報                                       | 方法     |
+| Annotation                                                                 | Value                                                                    | Target |
+| -------------------------------------------------------------------------- | ------------------------------------------------------------------------ | ------ |
+| [`@ZenCaster`](/Dev_Area/ZenAnnotations/Annotation_ZenCaster/)             |                                                                          | Method |
+| [`@ZenOperator`](/Dev_Area/ZenAnnotations/Annotation_ZenOperator/)         | [OperatorType](/Dev_Area/ZenOperators/)                                  | Method |
+| [`@ZenGetter`](/Dev_Area/ZenAnnotations/ZenMembers/)                       | getter name (e.g. "name") if omited, method name without () will be used | Method |
+| [`@ZenSetter`](/Dev_Area/ZenAnnotations/ZenMembers/)                       | setter name (e.g. "name") if omited, method name without () will be used | Method |
+| [`@ZenMemberGetter`](/Dev_Area/ZenAnnotations/ZenMembers/)                 |                                                                          | Method |
+| [`@ZenMemberSetter`](/Dev_Area/ZenAnnotations/ZenMembers/)                 |                                                                          | Method |
+| [`@ZenMethod`](/Dev_Area/ZenAnnotations/Annotation_ZenMethod/)             |                                                                          | Method |
+| [`@ZenMethodStatic`](/Dev_Area/ZenAnnotations/Annotation_ZenMethodStatic/) |                                                                          | Method |
+| [`@ZenDoc`](/Dev_Area/ZenAnnotations/Annotation_ZenDoc/)                   | The Additional Method info for `dumpZS`                                  | Method |
 
-## フィールド注釈
+## Field annotations
 
-これらのアノテーションは、パブリックフィールド(静的フィールドと非静的フィールドの両方)に与えることができます。
+These annotations can be given to public fields (both static and nonstatic)
 
-| 注釈                                                     | Target | 情報                                   |
-| ------------------------------------------------------ | ------ | ------------------------------------ |
-| [`@ZenProperty`](/Dev_Area/ZenAnnotations/ZenMembers/) | フィールド  | `@ZenSetter` と `@ZenGetter` を組み合わせる。 |
+| Annotation                                             | Target | Information                            |
+| ------------------------------------------------------ | ------ | -------------------------------------- |
+| [`@ZenProperty`](/Dev_Area/ZenAnnotations/ZenMembers/) | Field  | Combines `@ZenSetter` and `@ZenGetter` |

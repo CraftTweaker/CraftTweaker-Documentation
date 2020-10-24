@@ -12,20 +12,20 @@ Sie können natürlich auch [die Klasse vor](/AdvancedFunctions/Import/) importi
 PlayerLeftClickBlock Events implementieren die folgenden Schnittstellen und können alle ihre Methoden/Getters/Setter auch aufrufen:
 
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
-- [Spieler-Interact](/Vanilla/Events/Events/PlayerInteract/)
+- [PlayerInteract](/Vanilla/Events/Events/PlayerInteract/)
 - [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
 
 
-## ZenGetters & ZenSetter
+## ZenGetters & ZenSetters
 Die folgenden Informationen lassen sich von diesem Event (Ereignis) abrufen:
 
-| ZenGetter              | ZenSetter              | typ                                            |
+| ZenGetter              | ZenSetter              | type                                           |
 | ---------------------- | ---------------------- | ---------------------------------------------- |
-| `hitvector`            |                        | [ivector3d](/vanilla/world/ivector3d/)         |
+| `hitvector`            |                        | [IVector3d](/Vanilla/World/IVector3d/)         |
 | `useblock`             | `useblock`             | string ("erlaubt" / "verweigern" / "Standard") |
 | `useitem`              | `useitem`              | string ("erlaubt" / "verweigern" / "Standard") |
 | `Stornierungsresultat` | `Stornierungsresultat` | string ("success" / "pass" / "fail")           |
 
-## ZenMethoden
+## ZenMethods
 
-- `event.cancel()` setzt das Ereignis als abgebrochen.
+- `event.cancel()` sets the event as cancelled.

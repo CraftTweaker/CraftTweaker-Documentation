@@ -1,12 +1,12 @@
-# Pile de charbon de bois
+# Charcoal Pile
 
-ModTweaker vous permet d'ajouter ou de supprimer des recettes du mur de bois de bois
+ModTweaker allows you to add or remove forestry Charcoal Wall Recipes
 
-## Appel en cours
+## Calling
 
 You can call the package using `mods.forestry.CharcoalWall`
 
-## Suppression de la recette
+## Recipe Removal
 
 ```zenscript
 //mods.forestry.CharcoalWall.removeWall(IBlock block);
@@ -17,25 +17,25 @@ mods.forestry.CharcoalWall.removeWall(<minecraft:bedrock>.asBlock());
 mods.forestry.CharcoalWall.removeWallState(<blockstate:minecraft:bedrock>);
 
 
-//échouera si la pile ne peut pas être convertie en un bloc !
+//Will fail if the stack cannot be converted to a block!
 //mods.forestry.CharcoalWall.removeWallStack(IItemStack stack);
 mods.forestry.CharcoalWall.removeWallStack(<minecraft:bedrock>);
 ```
 
-## Ajout de Reipe
+## Reipe Addition
 
-`amount` indique la quantité de charbon que le mur fournira.
+`amount` states the amount of charcoal the wall will provide.
 
 ```zenscript
 //mods.forestry.CharcoalWall.addWall(IBlock block, int amount);
 mods.forestry.CharcoalWall.addWall(<minecraft:bedrock>.asBlock(), 10);
 
 
-//mods.forestry.CharcoalWall. ddWallState(IBlockState state, int amount);
+//mods.forestry.CharcoalWall.addWallState(IBlockState state, int amount);
 mods.forestry.CharcoalWall.addWallState(<blockstate:minecraft:bedrock>, 10);
 
 
-//échouera si la pile ne peut pas être convertie en bloc!
+//Will fail if the stack cannot be converted to a block!
 //mods.forestry.CharcoalWall.addWallStack(IItemStack stack, int amount);
 mods.forestry.CharcoalWall.addWallStack(<minecraft:bedrock>, 10);
 ```

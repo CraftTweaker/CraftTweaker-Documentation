@@ -1,15 +1,15 @@
-# 激光机
+# Laser Drill
 
 ### 导入
 
 ```zenscript
-1. 进口模式.工业化;
+import mods.industrialforegoing.LaserDrill;
 ```
 
 ### 添加配方
 
 ```zenscript
-LaserDrill.add(int itemlensMetaColor, IItemStack output, int ItemWeight);
+LaserDrill.add(int itemLensMetaColor, IItemStack output, int ItemWeight);
 
 LaserDrill.add(1, <minecraft:stone>, 10);
 ```
@@ -17,7 +17,7 @@ LaserDrill.add(1, <minecraft:stone>, 10);
 ### 移除配方
 
 ```zenscript
-LaserDrill.remove(IItemStack 输出);
+LaserDrill.remove(IItemStack output);
 
 LaserDrill.remove(<minecraft:stone>);
 ```

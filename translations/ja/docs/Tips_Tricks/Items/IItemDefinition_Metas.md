@@ -1,19 +1,19 @@
-# IItemDefinitions を使用してメタアイテムを参照するときに多くの時間を節約します
+# Using IItemDefinitions to save a lot of time when referring meta-items
 
 ## 問題
 
-いくつかの特定の色のウールのレシピを削除したいとしましょう。  
-白のウールにはメタ0があり、メタ1からメタ15までのすべての色範囲があるため、合計で16個あります。
+Let's say we want to remove the recipes of some specific colors of wool.  
+White wool has the metadata 0, all colors range from meta 1 to meta 15, so there are 16 in total.
 
-メタ3から12のウールを削除します。 What do we do?  
+We want to remove the wools with meta 3 to 12. What do we do?  
 We can't just remove all of them (in other words, use `<minecraft:wool:*>`), but we also don't want to write 10 times the same thing.  
 While in this example this would totally work, in large scale this becomes pretty annoying!
 
-## 私たちが知るべきこと/知るべきこと
+## What do we know/need to know
 
-- recipes.remove には [IIngredient](/Vanilla/Variable_Types/IIngredient/) オブジェクトが必要です
-- [IItemStack](/Vanilla/Items/IItemStack/) は [IIngredient](/Vanilla/Variable_Types/IIngredient/) として [IItemstack](/Vanilla/Items/IItemStack/) 拡張 [IIngredient](/Vanilla/Variable_Types/IIngredient/) として使用できます。
-- [IItemDefinitions](/Vanilla/Items/IItemDefinition/) を使用して [IItemStacks](/Vanilla/Items/IItemStack/) を作成することができます
+- recipes.remove requires an [IIngredient](/Vanilla/Variable_Types/IIngredient/) Object
+- An [IItemStack](/Vanilla/Items/IItemStack/) can be used as [IIngredient](/Vanilla/Variable_Types/IIngredient/) as [IItemstack](/Vanilla/Items/IItemStack/) extends [IIngredient](/Vanilla/Variable_Types/IIngredient/)
+- We can use [IItemDefinitions](/Vanilla/Items/IItemDefinition/) to create [IItemStacks](/Vanilla/Items/IItemStack/)
 
 ## 対応
 

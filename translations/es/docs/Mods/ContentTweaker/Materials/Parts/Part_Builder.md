@@ -1,47 +1,47 @@
-# Constructor de partes
+# Part Builder
 
-Si quieres construir una [Parte](/Mods/ContentTweaker/Materials/Parts/Part/), ¡necesitarás un Constructor de Partes!  
-¿No suena tan difícil, ¿verdad?
+If you want to build a [Part](/Mods/ContentTweaker/Materials/Parts/Part/), you will need a Part Builder!  
+Doesn't sound that hard, does it?
 
-## Importando el paquete
+## Importing the package
 
-Podría ser necesario que importes el paquete si encuentras algún problema, así que más vale estar seguro que lo sentimos y añadir la importación.  
-`importar mods.contenttweaker.PartBuilder;`
+It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
+`import mods.contenttweaker.PartBuilder;`
 
-## Recuperando tal objeto
+## Retrieving such an object
 
-Puedes recuperar un nuevo y claro Constructor usando el paquete [MaterialSystem](/Mods/ContentTweaker/Materials/MaterialSystem/):
+You can retrieve a new, clear Builder using the [MaterialSystem Package](/Mods/ContentTweaker/Materials/MaterialSystem/):
 
 ```zenscript
 var pBuilder = mods.contenttweaker.MaterialSystem.getPartBuilder();
 ```
 
-## Establecer las propiedades de la pieza
+## Set the Part's Properties
 
-Puede establecer estas propiedades
+You can set these Properties
 
-| Método                                    | Parámetro                                                       |
-| ----------------------------------------- | --------------------------------------------------------------- |
-| setHasOverlay(hasOverlay)                 | boolean hasOverlay                                              |
-| setName(nombre)                           | nombre de cadena                                                |
-| setPartType(partType)                     | [Tipo de pieza](/Mods/ContentTweaker/Materials/Parts/PartType/) |
-| setOreDictName(prefix)                    | prefijo de cadena                                               |
-| establecer nombres OreDictados (prefijos) | cadena... prefixes                                              |
+| ZenMethod                           | Parameter                                                           |
+| ----------------------------------- | ------------------------------------------------------------------- |
+| setHasOverlay(hasOverlay)           | boolean hasOverlay                                                  |
+| setName(name)                       | string name                                                         |
+| setPartType(partType)               | [PartType](/Mods/ContentTweaker/Materials/Parts/PartType/) partType |
+| setOreDictName(prefix)              | string prefix                                                       |
+| setAdditionalOreDictNames(prefixes) | string... prefixes                                                  |
 
-Todos estos métodos hacen dos cosas: en primer lugar, cambian la Propiedad del constructor, en segundo lugar, devuelven el constructor modificado.  
-Puede ver en los scripts de ejemplo abajo lo que esto significa.
+All these Methods do 2 things: Firstly, they change the builder's Property, secondly they return the modified builder.  
+You can see in the example scripts below what this means.
 
-## Construir el material en realidad
+## Actually build the Material
 
-Antes de poder construir tu material, necesitas construirlo:
+Before you can build your material, you need to build it:
 
 ```zenscript
 pBuilder.build();
 ```
 
-Esto devuelve un objeto [Parte](/Mods/ContentTweaker/Materials/Parts/Part/).
+This returns an [Part](/Mods/ContentTweaker/Materials/Parts/Part/) Object.
 
-## Ejemplo de script
+## Example Script
 
 ```zenscript
 var pBuilder = mods.contenttweaker.MaterialSystem.getPartBuilder();
@@ -49,23 +49,23 @@ pBuilder.setName("dense_gear");
 pBuilder.setPartType(MaterialSystem.getPartType("item"));
 var denseGearPart = pBuilder.build();
 
-var denseIngotPart = mods.contenttweaker.MaterialSystem.getPartBuilder().setName("dense_ingot").setPartType(mods.contenttweaker.MaterialSystem.getPartType("item").setOreDictName(").build();
+var denseIngotPart = mods.contenttweaker.MaterialSystem.getPartBuilder().setName("dense_ingot").setPartType(mods.contenttweaker.MaterialSystem.getPartType("item")).setOreDictName("superIngot").build();
 ```
 
-## Información destacada
+## Noteworthy information
 
-### Localización de las Partes Materiales
+### Localizing the MaterialParts
 
-Los elementos que crees con tu nueva parte generalmente se llamarán `contenttweaker.part. artname`  
-Si quieres que tu elemento incluya el nombre del material, necesitarás traducirlo, preferiblemente en los archivos de idioma de CoT que se pueden encontrar en `Recursos/contenttweaker/lang`.  
-En lugar del nombre del material que escribes `%s`, así que nombrar los engranajes densos que se crean arriba se verían así:
+The items you create with your new part will generally be named `contenttweaker.part.partname`  
+If you want your item to include the material name, you will need to localize it, preferably in CoT's language files which can be found at `Resources/contenttweaker/lang`.  
+Instead of the material name you write `%s`, so naming the dense gears ans ingots created above would look like this:
 
-    contenttweaker.part.dense_gear=Dense %s Equipo
-    contenttweaker.part.dense_ingot=Dense %s Lingote
+    contenttweaker.part.dense_gear=Dense %s Gear
+    contenttweaker.part.dense_ingot=Dense %s Ingot
     
 
-### Agregando una textura
+### Adding a texture
 
-Los objetos que creas con tu nueva parte te parecerán un poco arriesgados.  
-Si quieres que tu parte tenga un icono específico, tendrás que añadir un nombre de partamento `. ng` archivo a `Recursos/contenttweaker/textures/items`.  
-Por lo tanto, dar a las densas engranajes una textura requeriría que agregáramos un archivo llamado `gear_dense. ng` a esa carpeta.
+The items you create with your new part will look a bit edgy to you.  
+If you want your part to have a specific icon you will need to add a `partname.png` file to `Resources/contenttweaker/textures/items`.  
+So, giving the dense gears a texture would require us to add a file called `gear_dense.png` to that folder.

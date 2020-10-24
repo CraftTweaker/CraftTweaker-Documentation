@@ -1,11 +1,11 @@
-# 研究ロック
+# Research Locking
 
-## 機能:
+## Feature:
 
-この機能を使用すると、Researchの取得を一定の要件グループの背後にロックできます。 これは例えば、(下の例で示すように)特定の次元にあるという要件の背後にある「Golem Research」の取得を設定することができます。 これは研究を得るためにはその次元にいる必要があるということです しかし研究を得ることができれば それは次元を離れることによって"リセット"や"学ばない"またはもはや一般的な要件を満たしていません!
+This feature allows you to lock the acquisition of Research behind a set group of requirements. This means for example that you can set the acquisition of "Golem Research" behind the requirement of being in a certain dimension (as seen in the example below). This does mean that you have to be in that dimension to acquire the research, however once you've got the research you've got it. It doesn't "reset" or get "unlearnt" by leaving the dimension or no longer meeting the requirements in general!
 
-## 構文
+## Syntax:
 
-    mods.compatskills.Thaumcraft.addResearchLock(ResearchKey, String... requirements);
+    mods.compatskills.Thaumcraft.addResearchLock(String researchKey, String... requirements);
     
     mods.compatskills.Thaumcraft.addResearchLock("GOLEMVISION", "dim|1");

@@ -1,8 +1,8 @@
-# Obsługa mikstury
+# Potion Bracket Handler
 
-Słuchacz Mikstur daje Ci dostęp do Mikstur w grze. Możliwe jest tylko zarejestrowanie Mikstur w grze, więc dodawanie lub usuwanie modów może powodować problemy, jeśli odwołujesz się do mikstury moda w uchwycie mikstury.
+The Potion Bracket Handler gives you access to the Potions in the game. It is only possible to get Potions registered in the game, so adding or removing mods may cause issues if you reference the mod's Potions in a Potion Bracket Handler.
 
-Mikstury są przywoływane w uchwycie mikstury jak tak:
+Potions are referenced in the Potion Bracket Handler like so:
 
 ```zenscript
 <potion:modname:potionname>
@@ -10,11 +10,11 @@ Mikstury są przywoływane w uchwycie mikstury jak tak:
 <potion:minecraft:strength>
 ```
 
-Jeśli zostanie znaleziona mikstura to zwróci obiekt IMikstura. Please refer to the [respective Wiki entry](/Vanilla/Potions/IPotion/) for further information on what you can do with these.
+If the Potion is found, this will return an IPotion Object. Please refer to the [respective Wiki entry](/Vanilla/Potions/IPotion/) for further information on what you can do with these.
 
-# Uzyskiwanie wszystkich zarejestrowanych mikstur
+# Getting all Registered Potions
 
-Możesz użyć następującej komendy, aby wysłać wszystkie zarejestrowane mikstury do dziennika rzemieślniczego
+You can use the following command to output all registered Potions to the CraftTweaker log
 
-    /ct mikstury
-    /crafttweaker mikstury
+    /ct potions
+    /crafttweaker potions

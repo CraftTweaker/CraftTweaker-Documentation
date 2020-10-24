@@ -1,14 +1,14 @@
-# Flüssigkeits-Replikator
+# Fluid Replicator
 
-## Paket wird importiert
+## Importing the Package
 `mods.techreborn.fluidReplicator`
 
-## Rezepte hinzufügen
+## Adding Recipes
 ```zenscript
 mods.techreborn.fluidReplicator.addRecipe(int input, ILiquidStack output, int ticks, int euPerTick);
 ```
 
-## Rezepte entfernen
+## Removing Recipes
 ```zenscript
-mods.techreborn.fluidReplicator.removeRecipe(ILiquidStack Fluid)
+mods.techreborn.fluidReplicator.removeRecipe(ILiquidStack fluid)
 ```

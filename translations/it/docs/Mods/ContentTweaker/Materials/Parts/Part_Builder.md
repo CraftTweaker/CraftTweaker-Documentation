@@ -1,47 +1,47 @@
-# Costruttore Di Parti
+# Part Builder
 
-Se vuoi costruire una [Parte](/Mods/ContentTweaker/Materials/Parts/Part/), avrai bisogno di un Part Builder!  
-Non sembra così difficile, vero?
+If you want to build a [Part](/Mods/ContentTweaker/Materials/Parts/Part/), you will need a Part Builder!  
+Doesn't sound that hard, does it?
 
-## Importazione del pacchetto
+## Importing the package
 
-Potrebbe essere necessario per importare il pacchetto se si verificano problemi, in modo da essere più sicuri di spiacenti e aggiungere l'importazione.  
+It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
 `import mods.contenttweaker.PartBuilder;`
 
-## Recupero di un tale oggetto
+## Retrieving such an object
 
-È possibile recuperare un nuovo costruttore chiaro utilizzando il [Pacchetto MaterialSystem](/Mods/ContentTweaker/Materials/MaterialSystem/):
+You can retrieve a new, clear Builder using the [MaterialSystem Package](/Mods/ContentTweaker/Materials/MaterialSystem/):
 
 ```zenscript
 var pBuilder = mods.contenttweaker.MaterialSystem.getPartBuilder();
 ```
 
-## Imposta le proprietà della parte
+## Set the Part's Properties
 
-È possibile impostare queste proprietà
+You can set these Properties
 
-| ZenMethod                           | Parametro                                                           |
+| ZenMethod                           | Parameter                                                           |
 | ----------------------------------- | ------------------------------------------------------------------- |
 | setHasOverlay(hasOverlay)           | boolean hasOverlay                                                  |
-| setName(name)                       | nome stringa                                                        |
+| setName(name)                       | string name                                                         |
 | setPartType(partType)               | [PartType](/Mods/ContentTweaker/Materials/Parts/PartType/) partType |
-| setOreDictName(prefix)              | prefisso stringa                                                    |
-| setAdditionalOreDictNames(prefissi) | stringa... prefixes                                                 |
+| setOreDictName(prefix)              | string prefix                                                       |
+| setAdditionalOreDictNames(prefixes) | string... prefixes                                                  |
 
-Tutti questi metodi fanno 2 cose: in primo luogo, cambiano la proprietà del costruttore, in secondo luogo restituiscono il costruttore modificato.  
-Puoi vedere negli script di esempio qui sotto cosa significa.
+All these Methods do 2 things: Firstly, they change the builder's Property, secondly they return the modified builder.  
+You can see in the example scripts below what this means.
 
-## Realmente costruisci il Materiale
+## Actually build the Material
 
-Prima di poter costruire il vostro materiale, dovete costruirlo:
+Before you can build your material, you need to build it:
 
 ```zenscript
 pBuilder.build();
 ```
 
-Questo restituisce un oggetto [Part](/Mods/ContentTweaker/Materials/Parts/Part/).
+This returns an [Part](/Mods/ContentTweaker/Materials/Parts/Part/) Object.
 
-## Script Di Esempio
+## Example Script
 
 ```zenscript
 var pBuilder = mods.contenttweaker.MaterialSystem.getPartBuilder();
@@ -52,20 +52,20 @@ var denseGearPart = pBuilder.build();
 var denseIngotPart = mods.contenttweaker.MaterialSystem.getPartBuilder().setName("dense_ingot").setPartType(mods.contenttweaker.MaterialSystem.getPartType("item")).setOreDictName("superIngot").build();
 ```
 
-## Informazioni interessanti
+## Noteworthy information
 
-### Localizzazione delle parti di materiale
+### Localizing the MaterialParts
 
-Gli elementi che crei con la tua nuova parte saranno generalmente chiamati `contenttweaker.part. artname`  
-Se vuoi che il tuo articolo includa il nome del materiale, dovrai localizzarlo, preferibilmente nei file di lingua di CoT che possono essere trovati a `Resources/contenttweaker/lang`.  
-Invece del nome materiale che scrivi `%s`, così nominare gli ingranaggi densi e lingotti creati sopra assomiglierebbe a questo:
+The items you create with your new part will generally be named `contenttweaker.part.partname`  
+If you want your item to include the material name, you will need to localize it, preferably in CoT's language files which can be found at `Resources/contenttweaker/lang`.  
+Instead of the material name you write `%s`, so naming the dense gears ans ingots created above would look like this:
 
     contenttweaker.part.dense_gear=Dense %s Gear
     contenttweaker.part.dense_ingot=Dense %s Ingot
     
 
-### Aggiungere una texture
+### Adding a texture
 
-Gli oggetti che crei con la tua nuova parte ti sembreranno un po' spigolosi.  
-Se vuoi che la tua parte abbia un'icona specifica dovrai aggiungere un `nome parte. ng` file a `Resources/contenttweaker/textures/items`.  
-Quindi, dare agli ingranaggi densi una texture ci richiederebbe di aggiungere un file chiamato `gear_dense. ng` in quella cartella.
+The items you create with your new part will look a bit edgy to you.  
+If you want your part to have a specific icon you will need to add a `partname.png` file to `Resources/contenttweaker/textures/items`.  
+So, giving the dense gears a texture would require us to add a file called `gear_dense.png` to that folder.

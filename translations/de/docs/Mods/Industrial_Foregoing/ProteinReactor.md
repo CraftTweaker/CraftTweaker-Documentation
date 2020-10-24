@@ -1,4 +1,4 @@
-# Eiweißreaktor
+# Protein Reactor
 
 ### Importieren
 
@@ -6,18 +6,18 @@
 import mods.industrialforegoing.ProteinReactor;
 ```
 
-### Hinzufügen
+### Adding
 
 ```zenscript
-ProteinReactor.add(IItemStack Eingabe);
+ProteinReactor.add(IItemStack input);
 
 ProteinReactor.add(<minecraft:diamond>);
 ```
 
-### Entfernen
+### Removing
 
 ```zenscript
-ProteinReactor.remove(IItemStack Eingang);
+ProteinReactor.remove(IItemStack input);
 
 ProteinReactor.remove(<minecraft:diamond>);
 ```

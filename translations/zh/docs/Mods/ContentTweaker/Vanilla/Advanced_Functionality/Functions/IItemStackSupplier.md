@@ -1,12 +1,12 @@
 # IItemStackSupplier
 
-IItemStackSupplier 函数可以添加到 [创造性标签](/Mods/ContentTweaker/Vanilla/Creatable_Content/Creative_Tab/) 并用于提供 [IItemStack](/Vanilla/Items/IItemStack/) 作为标签图标。
+The IItemStackSupplier function can be added to a [Creative Tab](/Mods/ContentTweaker/Vanilla/Creatable_Content/Creative_Tab/) and is used to provide the [IItemStack](/Vanilla/Items/IItemStack/) to be used as the tab's icon.
 
 ## 导入相关包
 
-如果您遇到任何问题，可能需要导入软件包，所以比抱歉更安全并添加导入。  
-`导入mods.contenttweaker.IItemStackSupplier；`
+It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
+`import mods.contenttweaker.IItemStackSupplier;`
 
-## 参数
+## Parameters
 
-IItemStackSupplier 功能是一个没有参数的函数。 函数需要返回 [IItemStack](/Vanilla/Items/IItemStack/)。
+The IItemStackSupplier Function is a function with no parameters. The function needs to return an [IItemStack](/Vanilla/Items/IItemStack/).

@@ -1,16 +1,16 @@
-# 液体提取器
+# Fluid Extractor
 
-## 导入软件包
-`nuclearcraft.提取器`
+## Importing the Package
+`mods.nuclearcraft.extractor`
 
-## 添加配方
+## Adding Recipes
 ```zenscript
-mods.nuclearcraft.extractor.addRecipe([itemInput, itemOut, fluidOutput, @Optional double timeMultipier, @Optional double powerMultiplier, @Optional double processRadiation]);
+mods.nuclearcraft.extractor.addRecipe([itemInput, itemOutput, fluidOutput, @Optional double timeMultiplier, @Optional double powerMultiplier, @Optional double processRadiation]);
 ```
 
-## 删除配方
+## Removing Recipes
 ```zenscript
-mods.nuclearcraft.extractor.removeRecipeWidInput([itemInput]);
-mods.nuclearcraft.extractor.removeRecipeWOutput([itemOut, fluidOutput]);
+mods.nuclearcraft.extractor.removeRecipeWithInput([itemInput]);
+mods.nuclearcraft.extractor.removeRecipeWithOutput([itemOutput, fluidOutput]);
 mods.nuclearcraft.extractor.removeAllRecipes();
 ```

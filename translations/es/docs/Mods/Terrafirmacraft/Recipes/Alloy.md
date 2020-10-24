@@ -1,28 +1,28 @@
 # Alloy
 
-## Paquete
+## Package
 ```zenscript
 import mods.terrafirmacraft.Alloy;
-import mods.terrafirmacraft.AlloyRecipeBuilder;Aleación;
-importar mods.terrafirmacraft.AlloyRecipeBuilder;
+import mods.terrafirmacraft.AlloyRecipeBuilder;Alloy;
+import mods.terrafirmacraft.AlloyRecipeBuilder;
 ```
 
-## Adicional
-- Para manipular las recetas de Aleación se proporciona un constructor de recetas
+## Addition
+- For manipulating Alloy recipes a recipe builder is provided
 ```zenscript
-constructor de AleyRecipeBuilder = Alloy.addAlloy(String Metal);
+AlloyRecipeBuilder builder = Alloy.addAlloy(String metal);
 builder.addMetal(String input, double min, double max);
 builder.build();
 ```
 
-## Eliminar
+## Removal
 
 ```zenscript
-Aleación.removeAleación (String metal);
+Alloy.removeAlloy(String metal);
 ```
 
-## Scripts de ejemplo
-- Consulte [Metal](/Mods/Terrafirmacraft/Metal) para obtener una referencia completa sobre metales TFC.
+## Example scripts
+- Please refer to [Metal](/Mods/Terrafirmacraft/Metal) for a complete reference on TFC Metals.
 ```zenscript
 Alloy.addAlloy("BRONZE").addMetal("COPPER", 0.88, 0.92).addMetal("TIN", 0.08, 0.12).build();
 Alloy.addAlloy("BISMUTH_BRONZE").addMetal("COPPER", 0.5, 0.65).addMetal("BISMUTH", 0.1, 0.2).addMetal("zinc", 0.2, 0.3).build();

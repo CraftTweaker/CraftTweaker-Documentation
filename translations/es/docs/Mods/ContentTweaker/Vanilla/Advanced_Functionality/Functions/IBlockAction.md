@@ -1,23 +1,23 @@
-# Acción de IBlock
+# IBlockAction
 
-La función IBlockAction puede añadirse a un bloque [](/Mods/ContentTweaker/Vanilla/Creatable_Content/Block/) y, dependiendo de donde lo hayas añadido, se activará cuando el bloque se coloque o se rompa.
+The IBlockAction function can be added to a [Block](/Mods/ContentTweaker/Vanilla/Creatable_Content/Block/) and, depending on where you added it, will be triggered when the block is placed or broken.
 
-## Importando el paquete
+## Importing the package
 
-Podría ser necesario que importes el paquete si encuentras algún problema, así que más vale estar seguro que lo sentimos y añadir la importación.  
-`importar mods.contenttweaker.IBlockAction;`
+It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
+`import mods.contenttweaker.IBlockAction;`
 
-## Parámetros
+## Parameters
 
-El IBlockAction es una función con los siguientes parámetros:
+The IBlockAction is a function with the following parameters:
 
-- [Mundo](/Mods/ContentTweaker/Vanilla/Types/World/IWorld/) mundo → El mundo en el que está el bloque
-- [Posición de IBlockPos](/Mods/ContentTweaker/Vanilla/Types/Block/IBlockPos/) → Posición del bloque
-- [ICTBlockState](/Mods/ContentTweaker/Vanilla/Types/Block/ICTBlockState/) estado → Contiene información sobre el bloque, como el propio bloque y sus metadatos
+- [IWorld](/Mods/ContentTweaker/Vanilla/Types/World/IWorld/) world → The world the block is in
+- [IBlockPos](/Mods/ContentTweaker/Vanilla/Types/Block/IBlockPos/) position → The Block's position
+- [ICTBlockState](/Mods/ContentTweaker/Vanilla/Types/Block/ICTBlockState/) state → Contains information on the block, such as the Block itself and its metadata
 
-¡La función no tiene un valor de retorno!
+The function doesn't have a return value!
 
-## Ejemplo
+## Example
 
 ```zenscript
 zsBlock.onBlockBreak = function(world, blockPos, blockState){

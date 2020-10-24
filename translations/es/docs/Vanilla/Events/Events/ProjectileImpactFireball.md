@@ -1,27 +1,27 @@
-# ProyectileImpactFireball
+# ProjectileImpactFireball
 
-Este evento se dispara cuando una bola de fuego afecta a una entidad pero antes de daño, etc, se calcula. Es **cancelable**y, si se cancela, el impacto no será procesado.
+This event is fired whenever a fireball impacts an entity but before damage, etc, is calculated. It is **cancelable**, and if canceled, the impact will not be processed.
 
-Los valores de aceleración de la entidad de bola de fuego están disponibles a través de zengetters.
+Acceleration values from the fireball entity are available through zengetters.
 
-## Importar la clase
+## Importing the class
 It might be required to [import](/AdvancedFunctions/Import/) the class to avoid errors.  
 `import crafttweaker.event.ProjectileImpactFireballEvent;`
 
-## Extendiendo IEntityEvent
-ProjectileImpactFireball Events implementan las siguientes interfaces y son capaces de llamar a todos sus métodos/getters/setters también:
+## Extending IEntityEvent
+ProjectileImpactFireball Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
 
-- [Evento Iproyectil](/Vanilla/Events/Events/IProjectileEvent/)
+- [IProjectileEvent](/Vanilla/Events/Events/IProjectileEvent/)
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 
-## ZenGetters y ZenSetters
+## ZenGetters and ZenSetters
 
-La siguiente información puede ser recuperada del evento:
+The following information can be retrieved from the event:
 
-| ZenGetter       | Ajuste          | Tipo                                                      |
+| ZenGetter       | ZenSetter       | Type                                                      |
 | --------------- | --------------- | --------------------------------------------------------- |
-| `bola de fuego` |                 | [IEntity](/Vanilla/Entities/IEntity/)                     |
-| `tirador`       |                 | [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) |
-| `aceleraciónX`  | `aceleraciónX`  | doble                                                     |
-| `aceleración`   | `aceleración`   | doble                                                     |
-| `accelerationZ` | `accelerationZ` | doble                                                     |
+| `fireball`      |                 | [IEntity](/Vanilla/Entities/IEntity/)                     |
+| `shooter`       |                 | [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) |
+| `accelerationX` | `accelerationX` | double                                                    |
+| `accelerationY` | `accelerationY` | double                                                    |
+| `accelerationZ` | `accelerationZ` | double                                                    |

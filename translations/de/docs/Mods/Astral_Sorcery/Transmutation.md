@@ -1,15 +1,15 @@
-# Starlight-Übertragung
+# Starlight Transmutation
 
-Sie können Starlight-Transmutationen hinzufügen und entfernen
+You can add and remove Starlight Transmutations
 
-## Anruf
+## Calling
 
-Sie können das LightTransmutations-Paket mit `mods.astralsorcery.LightTransmutation` aufrufen.
+You can call the LightTransmutations package using `mods.astralsorcery.LightTransmutation`.
 
-## Entfernen
+## Removing
 
-Diese Funktion entfernt das erste Rezept das sie findet, das [IItemStack](/Vanilla/Items/IItemStack/) `Ausgabe` zurückgibt und verwendet `MatchStack` , um festzustellen, ob es auch Metadaten entsprechen soll.  
-Wenn es mehrere Rezepte gibt, die die angegebene Ausgabe zurückgeben, müssen Sie diese Methode mehrmals aufrufen!
+This function removes the first recipe it finds that returns provided [IItemStack](/Vanilla/Items/IItemStack/) `output` and uses `matchStack` to determine whether it should also match Metadata.  
+If there are multiple recipes that return the provided output, you need to call this method multiple times!
 
 ```zenscript
 //mods.astralsorcery.LightTransmutation.removeTransmutation(IItemStack stackToRemove, boolean matchMeta);
@@ -19,6 +19,6 @@ mods.astralsorcery.LightTransmutation.removeTransmutation(<minecraft:end_stone>,
 ## Addition
 
 ```zenscript
-//mods.astralsorcery.LightTransmutation.addTransmutation(IItemStack stackIn, IItemStack stackOut, Doppelkosten);
+//mods.astralsorcery.LightTransmutation.addTransmutation(IItemStack stackIn, IItemStack stackOut, double cost);
 mods.astralsorcery.LightTransmutation.addTransmutation(<minecraft:grass>, <minecraft:gold_ore>, 10);
 ```

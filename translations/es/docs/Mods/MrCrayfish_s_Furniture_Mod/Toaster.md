@@ -1,37 +1,37 @@
-# Tostadora
+# Toaster
 
-La tostadora agarra la comida para empezar el día.
+The Toaster crips up food to start your day.
 
-## Recetas de tostadora por defecto
+## Default Toaster Recipes
 
-- Carne de vacuno » Carne Cocinada
-- Salchicha » Salchicha cocinada
-- Kebab » Kebab cocinado
+- Beef -> Cooked Beef
+- Sausage -> Cooked Sausage
+- Kebab -> Cooked Kebab
 
-## Eliminando
+## Removing
 
-## Quitar recetas de tostadora similares.
+## Remove matching toaster recipes.
 
 ```zenscript
 mods.cfm.Toaster.remove(@Optional final IIngredient output, @Optional final IIngredient input);
 
-// Elimina las recetas que hacen Toast de un trozo
-mods. fm.Toaster.remove(<cfm:item_toast>,<cfm:item_bread_slice>);
-// Eliminar todas las recetas
+// Remove recipes that make Toast from a Bread Slice
+mods.cfm.Toaster.remove(<cfm:item_toast>,<cfm:item_bread_slice>);
+// Remove all recipes
 mods.cfm.Toaster.remove();
 ```
 
-## Agregando
+## Adding
 
-Añade una receta de tostador.
+Add a toaster recipe.
 
-## Sólo soporta entradas de tamaño 1.
+## Only supports inputs of size 1.
 
 ```zenscript
-mods.cfm.Toaster.addRecipe(@Nonnull final ItemStack output, @Nonnull final ItemStack input);
+mods.cfm.Toaster.addRecipe(@Nonnull final IItemStack output, @Nonnull final IItemStack input);
 
-// Agrega una receta que hace pan de trigo
-mods.cfm. oaster.addRecipe(<minecraft:bread>,<minecraft:wheat>);
-// Añadir una receta que hace carne cocinada de carne de vacuno
+// Add a recipe that makes Bread from Wheat
+mods.cfm.Toaster.addRecipe(<minecraft:bread>,<minecraft:wheat>);
+// Add a recipe that makes Cooked Beef from Beef
 mods.cfm.Toaster.addRecipe(<minecraft:cooked_beef>,<minecraft:beef>);
 ```

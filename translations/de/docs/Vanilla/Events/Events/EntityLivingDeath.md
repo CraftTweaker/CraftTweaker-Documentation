@@ -1,23 +1,23 @@
 # EntityLivingDeath
 
-Das EntityLivingDeath Event wird gefeuert, wenn eine Entität sterben wird.  
-Es kann abgebrochen werden, um die Entität leben zu lassen.
+The EntityLivingDeath event is fired whenever an Entity is about to die.  
+It can be canceled to let the entity live.
 
 ## Event-Klasse
 
-Du musst das Ereignis als diese Klasse in den Funktionskopf verschieben:  
-`crafttweaker.event. ntityLivingDeathEvent`  
-Sie können natürlich auch [die Klasse vor](/AdvancedFunctions/Import/) importieren und dann diesen Namen verwenden.
+You will need to cast the event in the function header as this class:  
+`crafttweaker.event.EntityLivingDeathEvent`  
+You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
 
 ## Erweiterte Event-Schnittellen
 
-PlayerDeathDrops Events implementieren die folgenden Schnittstellen und können alle ihre Methoden/Getters/Setter auch aufrufen:
+PlayerDeathDrops Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
 
 - [ILivingEvent](/Vanilla/Events/Events/ILivingEvent/)
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 
 ## ZenGetter
 
-| ZenGetter      | Type                                            |
-| -------------- | ----------------------------------------------- |
-| Schadensquelle | [IDamageSource](/Vanilla/Damage/IDamageSource/) |
+| ZenGetter    | Type                                            |
+| ------------ | ----------------------------------------------- |
+| damageSource | [IDamageSource](/Vanilla/Damage/IDamageSource/) |

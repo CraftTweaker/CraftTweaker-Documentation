@@ -1,22 +1,22 @@
-# ProjektileImpactThrowable
+# ProjectileImpactThrowable
 
-Dieses Ereignis wird abgefeuert, wenn ein werfbares Projektil eine Entität berührt, aber vor dem Schaden, etc, berechnet wird. Es ist **widerrufbar**, und wenn abgebrochen, wird der Effekt nicht bearbeitet.
+This event is fired whenever a throwable projectile impacts an entity but before damage, etc, is calculated. It is **cancelable**, and if canceled, the impact will not be processed.
 
 ## Diese Klasse importieren
-Möglicherweise muss [](/AdvancedFunctions/Import/) die Klasse importieren, um Fehler zu vermeiden.  
-`Crafttweaker.event.ProjectileImpactThrowableEvent;`
+It might be required to [import](/AdvancedFunctions/Import/) the class to avoid errors.  
+`import crafttweaker.event.ProjectileImpactThrowableEvent;`
 
-## IEntityEvent wird erweitert
-ProjectileImpactThrowable Events implementieren die folgenden Schnittstellen und können alle ihre Methoden/Getters/Setter auch aufrufen:
+## Extending IEntityEvent
+ProjectileImpactThrowable Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
 
 - [IProjectileEvent](/Vanilla/Events/Events/IProjectileEvent/)
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 
-## ZenGetters und ZenSetter
+## ZenGetters and ZenSetters
 
 Die folgenden Informationen lassen sich von diesem Event (Ereignis) abrufen:
 
 | ZenGetter  | ZenSetter | Type                                                      |
 | ---------- | --------- | --------------------------------------------------------- |
 | `fireball` |           | [IEntity](/Vanilla/Entities/IEntity/)                     |
-| `schießen` |           | [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) |
+| `shooter`  |           | [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) |

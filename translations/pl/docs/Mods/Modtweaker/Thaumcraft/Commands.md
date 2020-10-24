@@ -1,16 +1,16 @@
-# Polecenia
+# Commands
 
-Integracja Thaumcraft ModTweakera rozszerza paletę poleceń dostarczoną przez CraftTweaker.  
-Aby uzyskać dostęp do tych poleceń, robisz to samo co dla poleceń CraftTweaker, używasz prefiksu `/crafttweaker`
+ModTweaker's Thaumcraft integration extends the command palette provided by CraftTweaker.  
+To access these commands you do the same as you do for CraftTweaker commands, you use the `/crafttweaker` prefix
 
-# Lista poleceń Thaumcraft
+# List of Thaumcraft's Commands
 
 ## thaumcraftDump
 
-Użycie:
+Usage:
 
 `/crafttweaker thaumcraftDump`
 
 `/ct thaumcraftDump`
 
-Opis: Zrzuca wszystkie informacje Thaumcraft do pliku crafttweaker.log.
+Description: Dumps all the Thaumcraft information to the crafttweaker.log file.

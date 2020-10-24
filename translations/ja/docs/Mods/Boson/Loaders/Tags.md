@@ -1,13 +1,13 @@
 # `tags` Loader
 
-`タグ` ローダーは、Minecraft の読み込みプロセスの後の段階で発生し、 [タグ](/Mods/Boson/Tags/Concept/) を操作できる特別なローダーです。 このローダーによってロードされたファイル で使用されている場合、タグブラケットハンドラは異なる意味を持ちます。詳細はタグのドキュメントを参照してください。
+The `tags` loader is a special Loader that fires at a later stage in the Minecraft loading process and allows manipulation of [Tags](/Mods/Boson/Tags/Concept/). The Tag bracket handler has a different meaning when used in a file loaded by this loader: refer to the Tags documentation for more information.
 
-## このローダーを使用する
+## Using this loader
 This loader can be enabled via the [`#loader` preprocessor directive](/AdvancedFunctions/Preprocessors/LoaderPreprocessor/) by specifying its name next to the declaration, as in the following example:
 
 ```zenscript
 #loader tags
 ```
 
-## このローダーの理由
-詳細については、 [タグブラケットハンドラ](/Mods/Boson/Tags/BracketHandler/) のドキュメントと、 [実際の概念](/Mods/Boson/Tags/Concept/) に関連するページを参照してください。
+## Reason for this loader
+Refer to the documentation for the [tag bracket handler](/Mods/Boson/Tags/BracketHandler/) and the page related to the [actual concept](/Mods/Boson/Tags/Concept/) for more information.

@@ -1,78 +1,78 @@
-# Fábrica de Vanilla
+# Vanilla Factory
 
-La Fábrica de Vanilla te permite crear [Bloques](/Mods/ContentTweaker/Vanilla/Creatable_Content/Block/), [Elementos](/Mods/ContentTweaker/Vanilla/Creatable_Content/Item/) y [Pestañas creativas](/Mods/ContentTweaker/Vanilla/Creatable_Content/Creative_Tab/) que puedes añadir al juego.
+The Vanilla Factory allows you to create [Blocks](/Mods/ContentTweaker/Vanilla/Creatable_Content/Block/), [Items](/Mods/ContentTweaker/Vanilla/Creatable_Content/Item/) and [Creative Tabs](/Mods/ContentTweaker/Vanilla/Creatable_Content/Creative_Tab/) that you can then add to the game.
 
-## Llamando
+## Calling
 
-Puede encontrar el paquete en `mods.contenttweaker.VanillaFactory`
+You can find the package at `mods.contenttweaker.VanillaFactory`
 
-## Creando contenido
+## Creating Content
 
-### Crear bloques
+### Create Blocks
 
 ```zenscript
 mods.contenttweaker.VanillaFactory.createBlock(String unlocalizedName, IMaterialDefinition material);
 ```
 
-Parámetros:
+Parameters:
 
-- String unlocalizedName: El nombre no traducido del bloque.
-- [IMaterialDefinition](/Mods/ContentTweaker/Vanilla/Types/Block/IMaterialDefinition/) material: El material base del que está hecho el bloque.
+- String unlocalizedName: The Block's unlocalized name.
+- [IMaterialDefinition](/Mods/ContentTweaker/Vanilla/Types/Block/IMaterialDefinition/) material: The base material the block is made of.
 
-Devuelve un objeto de [BlockRepresentation](/Mods/ContentTweaker/Vanilla/Creatable_Content/Block/). ¡Consulta la página de [Bloquear](/Mods/ContentTweaker/Vanilla/Creatable_Content/Block/) para más información y un script de ejemplo!
+Returns a [BlockRepresentation](/Mods/ContentTweaker/Vanilla/Creatable_Content/Block/) object. Check the [Block page](/Mods/ContentTweaker/Vanilla/Creatable_Content/Block/) for further information and an example script!
 
-### Crear artículos
+### Create Items
 
 ```zenscript
 mods.contenttweaker.VanillaFactory.createItem(String unlocalizedName);
 ```
 
-Parámetros:
+Parameters:
 
-- Cadena unlocalizedName: El nombre del elemento no localizado.
+- String unlocalizedName: The item's unlocalized name.
 
-Devuelve un objeto de [ItemRepresentation](/Mods/ContentTweaker/Vanilla/Creatable_Content/Item/). ¡Consulta la página de [artículo](/Mods/ContentTweaker/Vanilla/Creatable_Content/Item/) para más información y un script de ejemplo!
+Returns an [ItemRepresentation](/Mods/ContentTweaker/Vanilla/Creatable_Content/Item/) object. Check the [Item page](/Mods/ContentTweaker/Vanilla/Creatable_Content/Item/) for further information and an example script!
 
-### Crear Pestañas Creativas
+### Create Creative Tabs
 
 ```zenscript
-mods.contenttweaker.VanillaFactory.createCreativeTab(String unlocalizedName, ItemStack iItemStack);
+mods.contenttweaker.VanillaFactory.createCreativeTab(String unlocalizedName, IItemStack iItemStack);
 mods.contenttweaker.VanillaFactory.createCreativeTab(String unlocalizedName, ItemRepresentation iItem);
 mods.contenttweaker.VanillaFactory.createCreativeTab(String unlocalizedName, BlockRepresentation iBlock);
-mods.contenttweaker.VanillaFactory.createCreativeTab(String unlocalizedName, ItemStackSupplier
+mods.contenttweaker.VanillaFactory.createCreativeTab(String unlocalizedName, IItemStackSupplier supplier);
 ```
 
-Parámetros:
+Parameters:
 
-- String unlocalizedName: El nombre de la pestaña no localizado.
-- Representación de objetos o bloques: El ítem/bloque que se mostrará como el símbolo de la pestaña. También puede utilizar una función [de ItemStackSupplier](/Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemStackSupplier/).
+- String unlocalizedName: The Tab's unlocalized Name.
+- Item or Block representation: The Item/Block to be displayed as the Tab's symbol. Alternatively you can use an [IItemStackSupplier function](/Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemStackSupplier/).
 
-Devuelve un objeto [ICreativeTab](/Mods/ContentTweaker/Vanilla/Creatable_Content/Creative_Tab/). ¡Consulta la página de [Creative Tab](/Mods/ContentTweaker/Vanilla/Creatable_Content/Creative_Tab/) para más información y un script de ejemplo!
+Returns a [ICreativeTab](/Mods/ContentTweaker/Vanilla/Creatable_Content/Creative_Tab/) object. Check the [Creative Tab page](/Mods/ContentTweaker/Vanilla/Creatable_Content/Creative_Tab/) for further information and an example script!
 
-### Crear fluidos
+### Create Fluids
 
 ```zenscript
 mods.contenttweaker.VanillaFactory.createFluid(String unlocalizedName, int color);
 mods.contenttweaker.VanillaFactory.createFluid(String unlocalizedName, CTColor color);
 ```
 
-Parámetros:
+Parameters:
 
-- String unlocalizedName: El nombre no traducido del fluido.
-- Color int: Código de color del fluido.
-- [Color CTColor](/Mods/ContentTweaker/Vanilla/Types/Color/Color/) : El color del fluido como objeto de color.
+- String unlocalizedName: The Fluid's unlocalized name.
+- int color: The fluid's color-code.
+- [CTColor](/Mods/ContentTweaker/Vanilla/Types/Color/Color/) color: The fluid's color as color-Object.
 
-Devuelve un objeto de [FluidRepresentation](/Mods/ContentTweaker/Vanilla/Creatable_Content/Fluid/). Consulta la página [de fluidos](/Mods/ContentTweaker/Vanilla/Creatable_Content/Fluid/) para más información y un script de ejemplo.
+Returns a [FluidRepresentation](/Mods/ContentTweaker/Vanilla/Creatable_Content/Fluid/) object. Check the [Fluid page](/Mods/ContentTweaker/Vanilla/Creatable_Content/Fluid/) for further information and an example script.
 
-### Crear artículos de comida
+### Create Food Items
 
 ```zenscript
 mods.contenttweaker.VanillaFactory.createItemFood(String unlocalizedName, int healAmount);
 ```
 
-Parámetros:
+Parameters:
 
-- String unlocalizedName: El nombre del elemento no localizado.
-- int healAmount: El Valor de Alimento
+- String unlocalizedName: The item's unlocalized Name.
+- int healAmount: The Food Value
 
-Devuelve un objeto de [ItemFoodRepresentation](/Mods/ContentTweaker/Vanilla/Creatable_Content/ItemFood/). Echa un vistazo a la página de [Comida](/Mods/ContentTweaker/Vanilla/Creatable_Content/ItemFood/) para más información y un script de ejemplo.
+Returns an [ItemFoodRepresentation](/Mods/ContentTweaker/Vanilla/Creatable_Content/ItemFood/) object. Check out the [Food page](/Mods/ContentTweaker/Vanilla/Creatable_Content/ItemFood/) for further information and an example script.

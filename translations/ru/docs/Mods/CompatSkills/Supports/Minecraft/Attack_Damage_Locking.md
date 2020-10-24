@@ -1,13 +1,13 @@
-# Заблокировать урон от атаки
+# Attack Damage Locking
 
-## Свойство:
+## Feature:
 
-Эта функция блокирует возможность для игрока использовать оружие/инструмент со значением урона от атаки, равным или превышающим указанное количество. Это означает, как в примере ниже, любое оружие с атаковым уроном 0.75 или больше будет использоваться только в конце.
+This feature locks the ability for the player to use a weapon/tool with an attack damage value equal to or greater than the set amount. This means like in the example below, any weapon with Attack Damage 0.75 or greater will only be useable in the end.
 
-Для справки: 1 Damage = 0.5 Hearts Вы можете увидеть быстрый справочник по повреждению в соответствии с [Эта ссылка](https://minecraft.gamepedia.com/Damage#Dealing_damage)
+For reference: 1 Damage = 0.5 Hearts You can see a quick reference guide to damage under [This Link](https://minecraft.gamepedia.com/Damage#Dealing_damage)
 
-## Синтаксис:
+## Syntax:
 
-    mods.compatskills.DamageLock.addDamageLock(двойной урон, строка... requirements;
+    mods.compatskills.DamageLock.addDamageLock(double damage, String... requirements);
     
-    mods.compatskills.DamageLock.addDamageLock((0.75, "dim|1");
+    mods.compatskills.DamageLock.addDamageLock(0.75, "dim|1");

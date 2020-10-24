@@ -1,11 +1,11 @@
-# Урожай Инструмента
+# Tool Harvest-Level
 
-Это требует, чтобы игрок располагал предметом, уровень сбора урожая которого равен указанному уровню.
+This requires the player to be holding an itemTool whose harvest level is equal or higher than the level specified.
 
-    Пример:
-    урожай|целое число
+    Example:
+    harvest|integer
     
-    рабочий пример:
-    урожай|1
-    урожай|2
-    урожай|3
+    Working Example:
+    harvest|1
+    harvest|2
+    harvest|3

@@ -1,24 +1,24 @@
-# Tirador de arcilla
+# Clay Knapping
 
-## Paquete
+## Package
 ```zenscript
 import mods.terrafirmacraft.ClayKnapping;ClayKnapping;
 ```
 
-## Adicional
+## Addition
 
 ```zenscript
 ClayKnapping.addRecipe(String registryName, IItemStack output, String... pattern);
 ```
 
-## Eliminar
+## Removal
 
 ```zenscript
-ClayKnapping.removeRecipe(salida ItemStack);
+ClayKnapping.removeRecipe(IItemStack output);
 ClayKnapping.removeRecipe(String registryName);
 ```
 
-## Ejemplo
+## Example
 ```zenscript
-ClayKnapping.addRecipe("unfired_(0)[video] ", <tfc:ceramics/unfired/vessel>, " XXX ", "XXXXX", "XXXXX", "XXXXX", " XXX ");
+ClayKnapping.addRecipe("unfired_vessel", <tfc:ceramics/unfired/vessel>, " XXX ", "XXXXX", "XXXXX", "XXXXX", " XXX ");
 ```

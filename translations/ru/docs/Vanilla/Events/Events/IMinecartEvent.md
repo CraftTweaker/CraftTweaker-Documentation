@@ -1,12 +1,12 @@
 # IMinecartEvent
 
-Это событие продлевается всеми событиями, связанными с Minecarts.
+This event is extended by all events involving Minecarts.
 
 ## Импорт класса
-Может потребоваться [импортировать](/AdvancedFunctions/Import/) класс, чтобы избежать ошибок.  
-`импорт crafttweaker.event.IMinecartEvent;`
+It might be required to [import](/AdvancedFunctions/Import/) the class to avoid errors.  
+`import crafttweaker.event.IMinecartEvent;`
 
-## Что можно сделать с ними?
+## What can be done with them?
 
 | name     | type                                  |
 | -------- | ------------------------------------- |

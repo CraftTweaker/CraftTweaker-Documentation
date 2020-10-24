@@ -1,16 +1,16 @@
-# Reprocesor paliwa
+# Fuel Reprocessor
 
-## Importowanie pakietu
-`mods.nuclearcraft.Reaktor paliwowy`
+## Importing the Package
+`mods.nuclearcraft.FuelReprocessor`
 
-## Dodawanie przepisów
+## Adding Recipes
 ```zenscript
-mods.nuclearcraft.FuelReprocessor.addRecipe(IIngredient itemInput, IIngredient itemOutput1, IIngredient itemOutput2, IIngredient itemOutput3, IIngredient temOutput4, @Opcjonalny podwójny timeMnożnik, @Opcjonalny podwójny proces, @Opcjonalny podwójny proces);
+mods.nuclearcraft.FuelReprocessor.addRecipe(IIngredient itemInput, IIngredient itemOutput1, IIngredient itemOutput2, IIngredient itemOutput3, IIngredient temOutput4, @Optional double timeMultiplier, @Optional double powerMultiplier, @Optional double processRadiation);
 ```
 
-## Usuwanie przepisów
+## Removing Recipes
 ```zenscript
-mods.nuclearcraft.FuelReprocessor.removeRecipeWithInput(IInput(ISkładnik itemInput);
+mods.nuclearcraft.FuelReprocessor.removeRecipeWithInput(IIngredient itemInput);
 mods.nuclearcraft.FuelReprocessor.removeRecipeWithOutput(IIngredient itemOutput1, IIngredient itemOutput2, IIngredient itemOutput3, IIngredient itemOutput4);
-mods.nuclearcraft.Paliwo Reprocessor.removeAllRecipes();
+mods.nuclearcraft.FuelReprocessor.removeAllRecipes();
 ```

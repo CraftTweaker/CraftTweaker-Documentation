@@ -1,46 +1,46 @@
-# Congelatore
+# Freezer
 
-Il congelatore è lo scomparto inferiore del frigo.
+The Freezer is the bottom compartment of the Fridge.
 
-Può essere usato per congelare gli oggetti, ma richiede il ghiaccio per funzionare.
+It can be used to freeze items, but requires Ice to operate.
 
-## Ricette Congelatore Predefinite
+## Default Freezer Recipes
 
-- Secchio D'Acqua -> Ghiaccio
-- Ghiaccio -> Ghiaccio Imballato
-- Secchio Di Lava -> Ossidiana
-- Slimeball -> Palla di neve
-- Patata Velenosa -> Patata
-- Carne Marcata -> Carne
+- Water Bucket -> Ice
+- Ice -> Packed Ice
+- Lava Bucket -> Obsidian
+- Slimeball -> Snowball
+- Poisonous Potato -> Potato
+- Rotten Flesh -> Flesh
 
-## Rimozione
+## Removing
 
-## Rimuovere le ricette del congelatore corrispondente.
+## Remove matching freezer recipes.
 
 ```zenscript
-mods.cfm.Freezer.remove(@Optional final IIngredient output, @Optional final IIngredient);
+mods.cfm.Freezer.remove(@Optional final IIngredient output, @Optional final IIngredient input);
 
-// Rimuovi le ricette che producono il ghiaccio
-mods.cfm.Freezer. emove(<minecraft:ice>);
-// Rimuovi ricette che richiedono un secchio di lava
+// Remove recipes that result in Ice
+mods.cfm.Freezer.remove(<minecraft:ice>);
+// Remove recipes that require a Lava Bucket
 mods.cfm.Freezer.remove(null,<minecraft:lava_bucket>);
-// Rimuovi tutte le ricette
+// Remove all recipes
 mods.cfm.Freezer.remove();
 ```
 
-## Aggiunta
+## Adding
 
-Aggiungi una ricetta freezer.
+Add a freezer recipe.
 
-## Supporta solo ingressi di dimensione 1.
+## Only supports inputs of size 1.
 
 ```zenscript
-mods.cfm.Freezer.addRecipe(@Nonnull finale IItemStack output, @Nonnull finale IItemStack input);
+mods.cfm.Freezer.addRecipe(@Nonnull final IItemStack output, @Nonnull final IItemStack input);
 
-// Aggiungi una ricetta che fa 16 Ghiaccio da un secchio di lava
-mods.cfm.Freezer.addRecipe(<minecraft:ice>. ithAmount(16),<minecraft:lava_bucket>);
-// Aggiunge una ricetta che rende 16 Ossidiana da un Secchio Acqua
-mods.cfm.Freezer.addRecipe(<minecraft:obsidian>. ithAmount(16),<minecraft:water_bucket>);
-// Aggiunge una ricetta che fa un secchio d'acqua da un secchio
+// Add a recipe that makes 16 Ice from a Lava Bucket
+mods.cfm.Freezer.addRecipe(<minecraft:ice>.withAmount(16),<minecraft:lava_bucket>);
+// Adds a recipe that makes 16 Obsidian from a Water Bucket
+mods.cfm.Freezer.addRecipe(<minecraft:obsidian>.withAmount(16),<minecraft:water_bucket>);
+// Adds a recipe that makes a Water Bucket from a Bucket
 mods.cfm.Freezer.addRecipe(<minecraft:water_bucket>,<minecraft:bucket>);
 ```

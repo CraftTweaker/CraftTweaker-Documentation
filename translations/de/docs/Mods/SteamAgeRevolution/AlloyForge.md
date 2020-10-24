@@ -1,28 +1,28 @@
-# Schmiede Legierungen
+# Alloy Forge
 
-Die Legierung Schmiede ist eine Maschine, die zwei Eingangsflüssigkeiten in eine Ausgangsflüssigkeit umwandelt.
+The Alloy Forge is a machine that converts two input fluids into one output fluid.
 
-## Paket
+## Package
 `mods.steamagerevolution.AlloyForge`
 
 ## Methoden
 
-- **[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) Ausgabe** Das Ergebnis des Rezeptes.
-- **[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) Eingabe** Die Eingabe des Rezeptes.
-- **int CraftTime** Herstellungszeit für Maschine zum Verarbeiten
+- **[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) output** The result of the recipe.
+- **[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) input** The input of the recipe.
+- **int craftTime** Crafting time for machine to process
 
 ## Addition
 
 ```zenscript
-mods.steamagerevolution.AlloyForge.addRecipe(ILiquidStack-Eingabe, ILiquidStack-Eingabe, ILiquidStack-Ausgabe, int craftTime);
+mods.steamagerevolution.AlloyForge.addRecipe(ILiquidStack input, ILiquidStack input, ILiquidStack output, int craftTime);
 mods.steamagerevolution.AlloyForge.addRecipe(<liquid:water>*100, <liquid:lava>*100, <liquid:obsidian>*200, 200);
 ```
 
 
-## Entfernen
+## Removal
 
 ```zenscript
-mods.steamagerevolution.AlloyForge.removeRecipe(ILiquidStack Ausgabe);
+mods.steamagerevolution.AlloyForge.removeRecipe(ILiquidStack output);
 mods.steamagerevolution.AlloyForge.removeRecipe(<liquid:bronze>);
 
 mods.steamagerevolution.AlloyForge.removeAll();

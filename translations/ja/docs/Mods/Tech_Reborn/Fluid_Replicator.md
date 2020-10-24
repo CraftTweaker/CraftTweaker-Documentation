@@ -1,14 +1,14 @@
 # Fluid Replicator
 
-## パッケージのインポート
+## Importing the Package
 `mods.techreborn.fluidReplicator`
 
-## レシピを追加中
+## Adding Recipes
 ```zenscript
 mods.techreborn.fluidReplicator.addRecipe(int input, ILiquidStack output, int ticks, int euPerTick);
 ```
 
-## レシピを削除
+## Removing Recipes
 ```zenscript
 mods.techreborn.fluidReplicator.removeRecipe(ILiquidStack fluid)
 ```

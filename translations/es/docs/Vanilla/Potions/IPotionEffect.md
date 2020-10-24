@@ -1,42 +1,42 @@
-# Efecto de IPoción
+# IPotionEffect
 
-Un IPotionEffect es un [Ipoción](/Vanilla/Potions/IPotion/) que también tiene una duración y un parámetro de amplificador (fuerza).  
-Puedes obtenerlos de un objeto [IPotion](/Vanilla/Potions/IPotion/).
+An IPotionEffect is an [IPotion](/Vanilla/Potions/IPotion/) that also has a duration and an amplifier (strength) parameter.  
+You can get them from an [IPotion](/Vanilla/Potions/IPotion/) object.
 
-## Importando el paquete
+## Importing the package
 
-Podría ser necesario que importes el paquete si encuentras algún problema (como lanzar un [array](/AdvancedFunctions/Arrays_and_Loops/)), más vale estar seguro que lo siento y añadir la importación.  
-`importar crafttweaker.potions.IPotionEffect;`
+It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
+`import crafttweaker.potions.IPotionEffect;`
 
 ## ZenGetter
 
-| ZenGetter                                              | Tipo                                            |
-| ------------------------------------------------------ | ----------------------------------------------- |
-| duración                                               | int                                             |
-| poción                                                 | [Ipoción](/Vanilla/Potions/IPotion/)            |
-| No muestra partículas                                  | pluma                                           |
-| amplificador                                           | int                                             |
-| artículos curativos                                    | Lista <[ItemStack](/Vanilla/Items/IItemStack/)> |
-| effectName                                             | pluma                                           |
-| isAmbient                                              | pluma                                           |
-| es duración máxima de la poción (también un ZenSetter) | pluma                                           |
+| ZenGetter                              | Type                                           |
+| -------------------------------------- | ---------------------------------------------- |
+| duration                               | int                                            |
+| potion                                 | [IPotion](/Vanilla/Potions/IPotion/)           |
+| doesShowParticles                      | bool                                           |
+| amplifier                              | int                                            |
+| curativeItems                          | List<[IItemStack](/Vanilla/Items/IItemStack/)> |
+| effectName                             | string                                         |
+| isAmbient                              | bool                                           |
+| isPotionDurationMax (also a ZenSetter) | bool                                           |
 
-## Métodos
+## ZenMethods
 
-### Es un elemento curativo
+### Is an item a curative item
 
-Utiliza un [ItemStack](/Vanilla/Items/IItemStack/).  
-Devuelve un bool
+Uses an [IItemStack](/Vanilla/Items/IItemStack/).  
+Returns a bool
 
 ```zenscript
 isCurativeItem(IItemStack item);
 ```
 
-### Realiza el efecto en una entidad
+### Perform Effect on an Entity
 
-Utiliza una [IEntity](/Vanilla/Entities/IEntity/) o cualquiera de sus subclases (por ejemplo, [IPlayer](/Vanilla/Players/IPlayer/)).  
-Devuelve void (nada).
+Uses an [IEntity](/Vanilla/Entities/IEntity/) or any of its subclasses (e.g. [IPlayer](/Vanilla/Players/IPlayer/)).  
+Returns void (nothing).
 
 ```zenscript
-performEffect(Entidad Itidad);
+performEffect(IEntity Entity);
 ```

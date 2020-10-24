@@ -1,71 +1,71 @@
-# Kreator części
+# Part Builder
 
-Jeśli chcesz zbudować [Część](/Mods/ContentTweaker/Materials/Parts/Part/), będziesz potrzebował Budowniczego Części!  
-Nie brzmi tak ciężko, prawda?
+If you want to build a [Part](/Mods/ContentTweaker/Materials/Parts/Part/), you will need a Part Builder!  
+Doesn't sound that hard, does it?
 
-## Importowanie pakietu
+## Importing the package
 
-Może być wymagane zaimportowanie pakietu, jeśli napotkasz jakieś problemy, więc lepiej być bezpiecznym niż przepraszamy i dodać import.  
-`zaimportuj mods.contenttweaker.PartBuilder;`
+It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
+`import mods.contenttweaker.PartBuilder;`
 
-## Pobieranie takiego obiektu
+## Retrieving such an object
 
-Możesz pobrać nowy, wyczyść Konstruktor używając [Pakietu MaterialSystem](/Mods/ContentTweaker/Materials/MaterialSystem/):
+You can retrieve a new, clear Builder using the [MaterialSystem Package](/Mods/ContentTweaker/Materials/MaterialSystem/):
 
 ```zenscript
 var pBuilder = mods.contenttweaker.MaterialSystem.getPartBuilder();
 ```
 
-## Ustaw właściwości części
+## Set the Part's Properties
 
-Możesz ustawić te właściwości
+You can set these Properties
 
-| Metoda ZenMethod                    | Parametr                                                             |
-| ----------------------------------- | -------------------------------------------------------------------- |
-| setHasOverlay(hasOverlay)           | boolean hasOverlay                                                   |
-| setName(nazwa)                      | nazwa ciągu                                                          |
-| setPartType(partType)               | [PartType](/Mods/ContentTweaker/Materials/Parts/PartType/) partyType |
-| setOreDictName(prefix)              | prefiks ciągu znaków                                                 |
-| setAdditionalOreDictNames(prefiksy) | ciąg znaków... prefixes                                              |
+| ZenMethod                           | Parameter                                                           |
+| ----------------------------------- | ------------------------------------------------------------------- |
+| setHasOverlay(hasOverlay)           | boolean hasOverlay                                                  |
+| setName(name)                       | string name                                                         |
+| setPartType(partType)               | [PartType](/Mods/ContentTweaker/Materials/Parts/PartType/) partType |
+| setOreDictName(prefix)              | string prefix                                                       |
+| setAdditionalOreDictNames(prefixes) | string... prefixes                                                  |
 
-Wszystkie te metody robią 2 rzeczy: po pierwsze, zmieniają własność konstruktora, po drugie, zwracają zmodyfikowanego konstruktora.  
-W przykładowych skryptach poniżej możesz zobaczyć co to oznacza.
+All these Methods do 2 things: Firstly, they change the builder's Property, secondly they return the modified builder.  
+You can see in the example scripts below what this means.
 
-## W rzeczywistości buduj materiał
+## Actually build the Material
 
-Zanim będziesz mógł zbudować swój materiał, musisz go zbudować:
+Before you can build your material, you need to build it:
 
 ```zenscript
 pBuilder.build();
 ```
 
-To zwraca obiekt [Część](/Mods/ContentTweaker/Materials/Parts/Part/).
+This returns an [Part](/Mods/ContentTweaker/Materials/Parts/Part/) Object.
 
-## Przykładowy skrypt
+## Example Script
 
 ```zenscript
 var pBuilder = mods.contenttweaker.MaterialSystem.getPartBuilder();
 pBuilder.setName("dense_gear");
 pBuilder.setPartType(MaterialSystem.getPartType("item"));
-denseGearPart = pBuilder.build();
+var denseGearPart = pBuilder.build();
 
 var denseIngotPart = mods.contenttweaker.MaterialSystem.getPartBuilder().setName("dense_ingot").setPartType(mods.contenttweaker.MaterialSystem.getPartType("item")).setOreDictName("superIngot").build();
 ```
 
-## Informacja godna uwagi
+## Noteworthy information
 
-### Lokalizacja Części Materiałowych
+### Localizing the MaterialParts
 
-Elementy, które tworzysz w nowej części, będą na ogół nazwane `contenttweaker.part. artname`  
-Jeśli chcesz, aby Twój przedmiot zawierał nazwę materiału, musisz go zlokalizować, najlepiej w plikach językowych CoT, które można znaleźć pod adresem `Zasoby/contenttweaker/lang`.  
-Zamiast nazwy materiału, którą wpisujesz `%s`więc nazewnictwo gęstych narzędzi utworzonych powyżej wyglądałoby tak:
+The items you create with your new part will generally be named `contenttweaker.part.partname`  
+If you want your item to include the material name, you will need to localize it, preferably in CoT's language files which can be found at `Resources/contenttweaker/lang`.  
+Instead of the material name you write `%s`, so naming the dense gears ans ingots created above would look like this:
 
     contenttweaker.part.dense_gear=Dense %s Gear
-    contenttweaker.part.dense_ingot=Dense %s Sztabka
+    contenttweaker.part.dense_ingot=Dense %s Ingot
     
 
-### Dodawanie tekstury
+### Adding a texture
 
-Przedmioty, które tworzysz w nowej części, będą dla Ciebie nieco edycyjne.  
-Jeśli chcesz, aby Twoja część miała określoną ikonę, musisz dodać `nazwę części.` plik do `Zasoby/contenttweaker/textures/items`.  
-Tak więc nadanie gęstych narzędzi teksturze wymagałoby dodania pliku o nazwie `gear_dense.` do tego folderu.
+The items you create with your new part will look a bit edgy to you.  
+If you want your part to have a specific icon you will need to add a `partname.png` file to `Resources/contenttweaker/textures/items`.  
+So, giving the dense gears a texture would require us to add a file called `gear_dense.png` to that folder.

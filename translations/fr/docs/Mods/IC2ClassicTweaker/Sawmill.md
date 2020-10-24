@@ -1,24 +1,24 @@
-# Scierie
+# Sawmill
 
-## Paquet
+## Package
 
 ```java
-Importer mods.ic2.Sawmill;
+import mods.ic2.Sawmill;
 ```
 
-## Méthodes
+## Methods
 
 - **[IItemStack](/Vanilla/Items/IItemStack/) output**
-- **[Ingrédient](/Vanilla/Variable_Types/IIngredient/) entrée**
+- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input**
 
-### Ajouter
+### Addition
 
 ```zenscript
-mods.ic2.Sawmill.addRecipe(sortie IItemStack, entrée IIngredient);
+mods.ic2.Sawmill.addRecipe(IItemStack output, IIngredient input);
 
 mods.ic2.Sawmill.addRecipe(<minecraft:diamond_block>, <minecraft:dirt> * 64);
 ```
 
-### Retirer
+### Removal
 
-Pour supprimer une recette déjà existante, désactivez simplement la recette correspondante dans `config/ic2/ic2machineRecipes.json`.
+To remove an already existing recipe, simply disable the corresponding recipe in `config/ic2/ic2machineRecipes.json`.

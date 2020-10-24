@@ -1,8 +1,8 @@
-# Activateur de Neutron Solaire
+# Solar Neutron Activator
 
-Depuis le Mékanisme 9.7. il est maintenant possible de voir toutes les chaînes de recettes de l'Activateur Neutre Solaire via la commande `/ct mekrecipes solarneutronactivator`
+As of Mekanism 9.7.0 it is now possible to view all recipe strings of the Solar Neutron Activator through the command `/ct mekrecipes solarneutronactivator`
 
-## Ajouter
+## Addition
 
 ```zenscript
 mods.mekanism.solarneutronactivator.addRecipe(IGasStack gasInput, IGasStack gasOutput);
@@ -10,21 +10,21 @@ mods.mekanism.solarneutronactivator.addRecipe(IGasStack gasInput, IGasStack gasO
 mods.mekanism.solarneutronactivator.addRecipe(<gas:sulfurdioxide>, <gas:sulfurtrioxide>);
 ```
 
-## Retirer
+## Removal
 
 ```zenscript
-mods.mekanism.solarneutronactivator.removeRecipe(IIngredient gasInput, @Optional Igredient gasOutput);
+mods.mekanism.solarneutronactivator.removeRecipe(IIngredient gasInput, @Optional IIngredient gasOutput);
 
 mods.mekanism.solarneutronactivator.removeRecipe(<gas:lithium>, <gas:tritium>);
 mods.mekanism.solarneutronactivator.removeRecipe(<gas:lithium>);
 ```
 
-Spécifier un paramètre de sortie ne supprimera que la recette spécifique qui résulte de cette sortie. En omettant le paramètre de sortie, vous supprimerez toutes les recettes que l'élément d'entrée peut produire.
+Specifying an output parameter will only remove the specific recipe that results in that output from that input. Omitting the output parameter will remove all recipes that the input item can produce.
 
-## Suppression de toutes les recettes
+## Removing all recipes
 
-Depuis le Mékanisme 9.7.0, il est maintenant possible de supprimer toutes les recettes de l'Activateur Solar Neutron. (Ceci exclut toutes les recettes ajoutées via CraftTweaker)
+As of Mekanism 9.7.0 it is now possible to remove all Solar Neutron Activator recipes. (This excludes any recipes added via CraftTweaker)
 
 ```zenscript
-mod mekanism.solarneutronactivator.removeAllRecipes();
+mods.mekanism.solarneutronactivator.removeAllRecipes();
 ```

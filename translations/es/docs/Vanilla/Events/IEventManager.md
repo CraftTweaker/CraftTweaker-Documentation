@@ -35,13 +35,13 @@ eventos. nPlayerLoggedIn(function(event) {
 
 Los métodos ZenMethods serían lo que necesitarás llamar a `eventos`, la Clase de Eventos sería lo que usted necesita para lanzar el evento.
 
-| Método                               | Clase de evento                                                                                           |
+| ZenMethod                            | Event Class                                                                                               |
 | ------------------------------------ | --------------------------------------------------------------------------------------------------------- |
 | onAllowDespawn                       | [`crear un evento`](/Vanilla/Events/Events/EntityLivingSpawn/)                                            |
 | onAnimalTame                         | [`crear un evento de error`](/Vanilla/Events/Events/AnimalTame/)                                          |
-| en BlockBreak                        | [`rotura de bloques`](/Vanilla/Events/Events/BlockBreak/)                                                 |
+| onBlockBreak                         | [`rotura de bloques`](/Vanilla/Events/Events/BlockBreak/)                                                 |
 | onBlockHarvestDrops                  | [`crafttweaker.event.BlockHarvestDrops`](/Vanilla/Events/Events/BlockHarvestDrops/)                       |
-| en BlockPlace                        | [`programar un evento`](/Vanilla/Events/Events/BlockPlace/)                                               |
+| onBlockPlace                         | [`programar un evento`](/Vanilla/Events/Events/BlockPlace/)                                               |
 | onCheckSpawn                         | [`crear un evento`](/Vanilla/Events/Events/EntityLivingSpawn/)                                            |
 | onCommand                            | [`commandEvent`](/Vanilla/Events/Events/CommandEvent/)                                                    |
 | onCriticalHit                        | [`crafttweaker.event.Evento crítico`](/Vanilla/Events/Events/CriticalHit/)                                |
@@ -71,13 +71,14 @@ Los métodos ZenMethods serían lo que necesitarás llamar a `eventos`, la Clase
 | onItemToss                           | [`Evento de objetos`](/Vanilla/Events/Events/ItemToss/)                                                   |
 | al activar el bloqueo                | [`Evento de bloqueo`](/Vanilla/Events/Events/LivingDestroyBlock/)                                         |
 | onLivingExperienceDrop               | [`crafttweaker.event.LivingExperience enceDropEvent`](/Vanilla/Events/Events/LivingExperienceDrop/)       |
-| onLivingKockBack                     | [`crafttweaker.event.LivingKnockBackEvent`](/Vanilla/Events/Events/LivingKnockBack/)                      |
+| onLivingKnockBack                    | [`crafttweaker.event.LivingKnockBackEvent`](/Vanilla/Events/Events/LivingKnockBack/)                      |
 | nivel de saqueo                      | [`crafttweaker.event.LootingLevelEvent`](/Vanilla/Events/Events/LootingLevel/)                            |
 | onMinecartCollision                  | [`crafttweaker.event.MinecartCollisionEvent`](/Vanilla/Events/Events/MinecartCollision/)                  |
 | en MinecartInteracto                 | [`crafttweaker.event.MinecartInteractEvento`](/Vanilla/Events/Events/MinecartInteract/)                   |
 | onMobGriefing                        | [`crafttweaker.event.MobGriefingEvent`](/Vanilla/Events/Events/MobGriefing/)                              |
 | en Avance del Jugador                | [`crafttweaker.event.PlayerAdvancement`](/Vanilla/Events/Events/PlayerAdvancement/)                       |
-| en Reparacion de Jugador             | [`crafttweaker.event.PlayerAnvilRepair`](/Vanilla/Events/Events/PlayerAnvilRepair/)                       |
+| en Reparacion de Jugador             | [`crafttweaker.event.PlayerAnvilRepairEvent`](/Vanilla/Events/Events/PlayerAnvilRepair/)                  |
+| onPlayerAnvilUpdate                  | [`crafttweaker.event.PlayerAnvilUpdateEvent`](/Vanilla/Events/Events/PlayerAnvilUpdate/)                  |
 | en la entidad de ataque              | [`crafttweaker.event.PlayerAttackEntityEvento`](/Vanilla/Events/Events/PlayerAttackEntity/)               |
 | onBonemeal                           | [`crafttweaker.event.PlayerBonemealEvento`](/Vanilla/Events/Events/PlayerBonemeal/)                       |
 | en la velocidad de descanso          | [`crafttweaker.event.PlayerBreakSpeed`](/Vanilla/Events/Events/PlayerBreakSpeed/)                         |
@@ -103,7 +104,7 @@ Los métodos ZenMethods serían lo que necesitarás llamar a `eventos`, la Clase
 | Spawn del jugador                    | [`desovar un jugador`](/Vanilla/Events/Events/PlayerSetSpawn/)                                            |
 | en la cama del jugador               | [`crafttweaker.event.PlayerSleepInBedEvent`](/Vanilla/Events/Events/PlayerSleepInBed/)                    |
 | onJayerFundeado                      | [`crafttweaker.event.PlayersmalleltedEvent`](/Vanilla/Events/Events/PlayerSmelted/)                       |
-| en Tick de jugador                   | [`crafttweaker.event.PlayerTickEvent`](/Vanilla/Events/Events/PlayerTick/)                                |
+| onPlayerTick                         | [`crafttweaker.event.PlayerTickEvent`](/Vanilla/Events/Events/PlayerTick/)                                |
 | en el juego de azada                 | [`crafttweaker.event.PlayerUseHoeEvento`](/Vanilla/Events/Events/PlayerUseHoe/)                           |
 | en la visibilidad del jugador        | [`crafttweaker.event.PlayerVisibilityEvento`](/Vanilla/Events/Events/PlayerVisibility/)                   |
 | en el post de la cerveza             | [`evento de PotionBrewPostEvent`](/Vanilla/Events/Events/PotionBrewPost/)                                 |

@@ -1,21 +1,21 @@
-# Dynamo energii
+# Enervation Dynamo
 
-## Importuj pakiet
+## Import the package
 
-Aby skrócić połączenia metodą, możesz [zaimportować](/AdvancedFunctions/Import/) pakiet taki jak tak:
+To shorten method calls you can [import](/AdvancedFunctions/Import/) the package like so:
 
 ```zenscript
-importuj mods.thermalexpansion.EnervationDynamo;
+import mods.thermalexpansion.EnervationDynamo;
 ```
 
-## Dodaj paliwo
+## Add Fuel
 
 ```zenscript
 //mods.thermalexpansion.EnervationDynamo.addFuel(IItemStack stack, int energy);
 mods.thermalexpansion.EnervationDynamo.addFuel(<minecraft:stick>, 13);
 ```
 
-## Usuń paliwo
+## Remove Fuel
 
 ```zenscript
 //mods.thermalexpansion.EnervationDynamo.removeFuel(IItemStack stack);

@@ -21,7 +21,7 @@ PlayerLeftClickBlock Events implement the following interfaces and are able to c
 
 | ZenGetter            | ZenSetter            | type                                   |
 | -------------------- | -------------------- | -------------------------------------- |
-| `hitvector`          |                      | [ivector3d](/vanilla/world/ivector3d/) |
+| `hitvector`          |                      | [IVector3d](/Vanilla/World/IVector3d/) |
 | `useblock`           | `useblock`           | string ("allow" / "deny" / "default")  |
 | `useitem`            | `useitem`            | string ("allow" / "deny" / "default")  |
 | `cancellationResult` | `cancellationResult` | string ("success" / "pass" / "fail")   |

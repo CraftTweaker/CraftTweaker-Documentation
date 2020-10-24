@@ -1,34 +1,34 @@
-# Dissolutore
+# Dissolver
 
-## Pacchetto
-`mods.alchimia.Dissolutore`
+## Package
+`mods.alchemistry.Dissolver`
 
-## Metodi
-- **[IItemStack](/Vanilla/Items/IItemStack/) input** - L'ingresso della ricetta.
-- **boolean relativeProbability** - Calcolo di Probabilità Booleano
-- **int rolls** - Possibiltà di Ruoli
-- **probabilityGroups** - Un array di array con un doppio seguito da qualsiasi # di [IItemStack](/Vanilla/Items/IItemStack/)s. Il doppio si riferisce alla probabilità per il suo gruppo.
+## Methods
+- **[IItemStack](/Vanilla/Items/IItemStack/) input** - The input of the recipe.
+- **boolean relativeProbability** - Probability Calculation Boolean
+- **int rolls** -  Possibilty of Roles
+- **probabilityGroups** - An array of arrays with an double followed by any # of [IItemStack](/Vanilla/Items/IItemStack/)s. The double refers to the probability for its group.
 
-## Addizione
+## Addition
 ```zenscript
-mods.alchimia.Dissolver.addRecipe(IIngredient input, boolean relativeProbabilità, int rolls, Object[][] probabilityGroups);
+mods.alchemistry.Dissolver.addRecipe(IIngredient input, boolean relativeProbability, int rolls, Object[][] probabilityGroups);
 mods.alchemistry.Dissolver.addRecipe(<minecraft:dye:9>, false, 5,
 [[10, <minecraft:stone>], 
  [20, <minecraft:sand>,<minecraft:iron_ore>]]);
 ```
 
-## Rimozione
+## Removal
 ```zenscript
-mods.alchimia.Dissolver.removeRecipe(IIngredient input);
+mods.alchemistry.Dissolver.removeRecipe(IIngredient input);
 mods.alchemistry.Dissolver.removeRecipe(<minecraft:ender_pearl>);
 
-mods.alchemistry.Dissolver.removeAllRicette();
+mods.alchemistry.Dissolver.removeAllRecipes();
 ```
 
-# Note
-Per facilitare lo sviluppo di modificare le ricette di dissolutore esistenti c'è un comando, semplicemente /dissolver che recupererà la ricetta crafttweaker per l'oggetto che si sta tenendo e copiarlo negli appunti
+# Notes
+To ease in the development of modifying existing dissolver recipes there is a command, simply /dissolver that will fetch the crafttweaker recipe for the item that you are holding and copy it into your clipboard
 
-Se la probabilità relativa è vera, ogni probabilità sarà calcolata in base alla somma di tutte le probabilità. Nell'esempio di cui sopra ciò significherebbe che vi è una probabilità del 33,3% di uscita di pietra ogni rotolo e un 66. % di possibilità di emettere una sabbia e un minerale di ferro ogni rotolo.
+If relative probability is true, then each probability will be calculated based on the sum of all of the probabilities. In the example above that would mean there is a 33.3% chance of outputting stone each roll and a 66.6% chance of outputting a sand and an iron ore each roll.
 
-Se la probabilità relativa è falsa, allora questi numeri sono percentuali assolute cioè un 10% di possibilità di uscita di pietra e un 20% di possibilità di uscita di sabbia e minerale di ferro (a prescindere dal fatto che la pietra sia stata o meno fuoriuscita). Le probabilità di virgola mobile sono supportate, quindi 4.5 significherebbe 4,5%
+If relative probability is false, then these numbers are absolute percentages i.e. a 10% chance of outputting stone and a 20% chance of outputting sand and iron ore (regardless of whether or not stone was outputted). Floating-point probabilities are supported, so 4.5 would mean 4.5%
 

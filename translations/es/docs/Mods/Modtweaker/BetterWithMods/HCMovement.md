@@ -1,12 +1,12 @@
-# HCMovimiento
+# HCMovement
 
-HCMovimiento efectúa la velocidad a la que el Jugador puede moverse dentro o fuera de ciertos bloques. Por ejemplo, por defecto camina más lento en hierba, pero más rápido en piedra.
+HCMovement effects the speed at which the Player can move while on or inside certain blocks. For example by default you walk slower on grass but faster on stone.
 
-El valor es un número decimal entre 0 y 2, donde 1 es la velocidad normal sin HCMovement, menos de 1 es más lento, mayor que 1 es más rápido.
+Value is a decimal number between 0 and 2, where 1 is the normal speed without HCMovement, less than 1 is slower, greater than 1 is faster.
 
-HCMovement SÓLO acepta bloques como entradas.
+HCMovement ONLY accepts Blocks as inputs.
 
 ```zenscript
-mods.betterwithmods.Movement.set(ItemStack stack, valor flotante);
+mods.betterwithmods.Movement.set(IItemStack stack, float value);
 
 ```

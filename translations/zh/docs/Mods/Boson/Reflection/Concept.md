@@ -1,16 +1,16 @@
-# 概念
+# The Concept
 
-Reflection is an English word that has many meanings, but one in particular is "the production of an image by or as if by a mirror" ([Source: Merriam-Webster Dictionary](https://www.merriam-webster.com/dictionary/reflection)). 同样的 概念也适用于方案拟订。
+Reflection is an English word that has many meanings, but one in particular is "the production of an image by or as if by a mirror" ([Source: Merriam-Webster Dictionary](https://www.merriam-webster.com/dictionary/reflection)). The same concept applies to programming.
 
-反思事实上是一种工具，它允许程序在镜像中看到自己并进行一些反思， 像 分析对象的类型，程序暴露哪种方法，引用私人变量等。 这显然是一个非常强大的工具 但同时也是极其危险的，因为反思提供了几乎 个当前在程序中运行的任何东西的访问权限。
+Reflection is, in fact, a tool that allows a program to see itself in the mirror and perform some introspection, like analyzing what type an object is, which methods the program exposes, invoking private variables etc. This is obviously a very powerful tool, but at the same time it is also extremely dangerous since reflection provides access to almost anything that is currently running inside a program.
 
-ZenScriptX项目旨在将一组小的反思可能性带到ZenScript。 不允许 脚本用户避开ZenScript 沙盒。 尤其是，ZenScriptX 调制反射器 允许用户做以下事情：
+The ZenScriptX project aims to bring a small subset of the possibilities of Reflection to ZenScript, without allowing script users to circumvent the ZenScript sandbox. In particular, the ZenScriptX toned-down implementation of reflection allows the user to do the following:
 
-- 检查任何对象的类型，无论是变量还是括号处理；
-- 在 ZenScript 沙盒中获取一个类的简单和完全合格的名字；
-- 获取ZenScript 沙盒以外的类的简单和完全合格的名字；
-- ZenScript 类与其原生对应的 (即 `craftbiner.item.IItemStack` 变成 `craftbiner.api.IItemStack`)。
+- inspect the type of any object, be it a variable or a bracket handler;
+- obtain the simple and fully qualified name of a class in the ZenScript sandbox;
+- obtain the simple and fully qualified name of a class outside the ZenScript sandbox;
+- convert between a ZenScript class and its native counterpart (i.e. `crafttweaker.item.IItemStack` becomes `crafttweaker.api.item.IItemStack`).
 
-这是它：脚本用户没有办法列出类提供的所有方法或规避ZenScript 使用这种考虑施加的 限制。 事实上是这样。 更多有用的开发者工具来确保由 CraftTinfle 集成曝光的 类型在脚本和实际后端之间得到正确转换。
+And this is it: there is no way for a script user to list all the methods provided by a class or circumvent the restricitions imposed by ZenScript with this reflection. It is, in fact, more a useful developer tool to ensure that types exposed by a CraftTweaker integration get converted correctly between the script and the actual backend.
 
-若要开始，请查看 [`NativeClass`](/Mods/Boson/Reflection/NativeClass/) 或 [`class`](/Mods/Boson/Reflection/Class/) 的文档。
+To get started, please look at the documentation for either [`NativeClass`](/Mods/Boson/Reflection/NativeClass/) or [`Class`](/Mods/Boson/Reflection/Class/).

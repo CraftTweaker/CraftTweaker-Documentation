@@ -1,16 +1,16 @@
-# 组装机
+# Assembling Machine
 
-## 导入软件包
+## Importing the Package
 `mods.techreborn.assemblingMachine`
 
-## 添加配方
+## Adding Recipes
 ```zenscript
-mods.techreborn.assembringMachine.addRecipe(IItemStack output, IIngredient input1, IIngredient input2, int ticktime, int euTick)；
+mods.techreborn.assemblingMachine.addRecipe(IItemStack output, IIngredient input1, IIngredient input2, int ticktime, int euTick);
 ```
 
-## 删除配方
+## Removing Recipes
 ```zenscript
-mods.techreborn.assemboringMachine.removeInputRecipe(IIngredient componentA, IIngredient componentB);
+mods.techreborn.assemblingMachine.removeInputRecipe(IIngredient ingredientA, IIngredient ingredientB);
 mods.techreborn.assemblingMachine.removeRecipe(IItemStack output);
-mods.techreborn.assemborn.assembingMachine.removeAll();
+mods.techreborn.assemblingMachine.removeAll();
 ```

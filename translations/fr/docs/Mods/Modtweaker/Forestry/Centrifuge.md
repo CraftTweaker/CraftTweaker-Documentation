@@ -1,12 +1,12 @@
 # Centrifuge
 
-ModTweaker vous permet d'ajouter ou de supprimer des recettes centrifuges forestières
+ModTweaker allows you to add or remove forestry Centrifuge Recipes
 
-## Appel en cours
+## Calling
 
 You can call the package using `mods.forestry.Centrifuge`
 
-## Suppression de la recette
+## Recipe Removal
 
 ```zenscript
 //mods.forestry.Centrifuge.removeRecipe(IIngredient input);
@@ -14,7 +14,7 @@ mods.forestry.Centrifuge.removeRecipe(<forestry:bee_combs:*>);
 
 ```
 
-## Ajout de Reipe
+## Reipe Addition
 
 ```zenscript
 //mods.forestry.Centrifuge.addRecipe(WeightedItemStack[] output, IItemStack ingredients, int packagingTime);

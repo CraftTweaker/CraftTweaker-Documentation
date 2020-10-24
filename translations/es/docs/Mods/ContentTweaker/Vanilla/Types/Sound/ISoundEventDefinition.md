@@ -1,19 +1,19 @@
 # ISoundEventDefinition
 
-Un objeto ISoundEventDefinition representa un evento de sonido en el juego. Un evento de sonido se activa cuando un sonido está a punto de reproducirse.
+An ISoundEventDefinition object represents a sound event in the game. A sound event is triggered when a sound is about to be played.
 
-## Importando el paquete
+## Importing the package
 
-Podría ser necesario que importes el paquete si encuentras algún problema, así que más vale estar seguro que lo sentimos y añadir la importación.  
-`importar mods.contenttweaker.SoundEvent;`
+It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
+`import mods.contenttweaker.SoundEvent;`
 
-## Llamando a un objeto ISoundEventDefinition
+## Calling an ISoundEventDefinition object
 
-Puede obtener tal objeto usando el [Manejador de eventos de sonido](/Mods/ContentTweaker/Vanilla/Brackets/Bracket_Sound_Event/):  
+You can get such an object using the [Sound Event Bracket Handler](/Mods/ContentTweaker/Vanilla/Brackets/Bracket_Sound_Event/):  
 `<soundevent:ambient.cave>`
 
-## ZenMethods sin parámetros
+## ZenMethods without parameters
 
-| Método         | Tipo de devolución | Definición                               |
-| -------------- | ------------------ | ---------------------------------------- |
-| getSoundName() | Cadena             | Devuelve el nombre del sonido del evento |
+| ZenMethod      | Return type | Definition                       |
+| -------------- | ----------- | -------------------------------- |
+| getSoundName() | String      | Returns the event's sound's name |

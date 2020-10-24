@@ -1,52 +1,52 @@
-# Definicja płynności
+# ILiquidDefinition
 
-ILiquidDefinition definiuje ciecz [ILiquidStack](/Vanilla/Liquids/ILiquidStack/) składa się z: W przeciwieństwie do ILiquidStack, ten interfejs pozwala na zmianę właściwości płynu.
+The ILiquidDefinition defines the liquid an [ILiquidStack](/Vanilla/Liquids/ILiquidStack/) consists of. Unlike the ILiquidStack, this interface allows you to change fluid properties.
 
-## Importowanie pakietu
+## Importing the package
 
-Może być wymagane zaimportowanie pakietu, jeśli napotkasz jakiekolwiek problemy (takie jak przesyłanie [Array](/AdvancedFunctions/Arrays_and_Loops/)), tak aby były bezpieczne niż przepraszamy i dodaj import.  
-`zaimportuj crafttweaker.płyn.ILiquidDefiniation;`
+It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
+`import crafttweaker.liquid.ILiquidDefinition;`
 
-## Metody
+## Methods
 
-Co więc możemy z tym zrobić?
+So, what can we do with it?
 
-### Mnożenie
+### Multiplication
 
-Mnożenie ILiquidDefinition skutkuje nowym [ILiquidStack](/Vanilla/Liquids/ILiquidStack/) z określoną ilością w milibucketach
+Multiplying a ILiquidDefinition results in a new [ILiquidStack](/Vanilla/Liquids/ILiquidStack/) with the specified amount in millibuckets
 
 ```zenscript
-val def = <liquid:lava>.definiation;
+val def = <liquid:lava>.definition;
 
-//zasadniczo ten sam
-walowy bucketOfLava = def * 1000;
+//essentially the same
+val bucketOfLava = def * 1000;
 val bucketOfLava1 = <liquid:lava> * 1000;
 ```
 
-## Pobierz i ustaw właściwości płynu
+## Get and Set fluid properties
 
-Jako że ILiquidDefinition reprezentuje ciecz, możesz dostać, ale także ustawić jego właściwości. Więcej informacji znajduje się w poniższej tabeli.
+As an ILiquidDefinition represents a liquid, you can get, but also set it's properties. Check the table below for further information.
 
-Podobnie jak w powyższej tabeli, ustawiono Zengetter/Setter na końcu ILiquidDefinition. Niektóre ZenGetters nie mają zgodnie z ZenSetter, musisz polegać na innych sposobach, aby zmienić te właściwości.
+Like in the table above, you set the Zengetter/Setter at the end of the ILiquidDefinition. Some ZenGetters have no according ZenSetter, you will need to rely on other means to alter these properties.
 
-Zachowaj ostrożność podczas stosowania Zensetterów, zmieniają one jedynie rejestr płynów i nie mają wpływu na płyny na świecie. Prawdopodobnie będziesz potrzebował ustawienia temperatury tylko podczas wysyłania wiadomości z [Wytapiania Paliw Tinkers](/Mods/Modtweaker/TConstruct/Fuel/).
+Be careful with Zensetters though, they only alter the fluid registry and have no effect on fluids in the world. You will probably only need the temperature setter when messing with [Tinkers' Construct Smeltery fuels](/Mods/Modtweaker/TConstruct/Fuel/).
 
 ```zenscript
-Definicja walna = <liquid:lava>.definiation;
+val definition = <liquid:lava>.definition;
 
 //Zengetter: luminosity
-lavaL = definicja.luminosity;
+val lavaL = definition.luminosity;
 
 //Zensetter: luminosity
-definicja.luminosity = 0;
+definition.luminosity = 0;
 ```
 
-| Zengetter          | Zensetter   | Co to jest?                                      | Zwróć/Ustaw typ |
-| ------------------ | ----------- | ------------------------------------------------ | --------------- |
-| Nazwa              |             | Zwraca niezlokalizowaną nazwę płynu              | ciąg znaków     |
-| nazwa wyświetlacza |             | Zwraca zlokalizowaną nazwę płynu                 | ciąg znaków     |
-| luminancja         | luminancja  | Zwrot / ustawia luminescencję badanej cieczy     | odcień          |
-| gęstość            | gęstość     | Zwrot / ustawia gęstość wskazanej cieczy         | odcień          |
-| temperatura        | temperatura | Zwraca/ustawia temperaturę podanej cieczy        | odcień          |
-| lepkość            | lepkość     | Zwraca/ustawia lepkość podanej cieczy            | odcień          |
-| gazowe             | gazowe      | Zwrot / ustala, czy wspomniana ciecz jest gazowa | boolean         |
+| Zengetter   | Zensetter   | What is this?                                            | Return/Set Type |
+| ----------- | ----------- | -------------------------------------------------------- | --------------- |
+| name        |             | This returns the unlocalized liquid name                 | string          |
+| displayName |             | This returns the localized liquid name                   | string          |
+| luminosity  | luminosity  | This returns/sets the luminosity of the referred liquid  | int             |
+| density     | density     | This returns/sets the density of the referred liquid     | int             |
+| temperature | temperature | This returns/sets the temperature of the referred liquid | int             |
+| viscosity   | viscosity   | This returns/sets the viscosity of the referred liquid   | int             |
+| gaseous     | gaseous     | This returns/sets whether the referred liquid is gaseous | boolean         |

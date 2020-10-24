@@ -1,26 +1,26 @@
 
-# BlockPlace事件
+# BlockPlaceEvent
 
-每当方块放置时，方块会被发射。 您可以取消该事件以防止方块被放置.
+The BlockBreak Event is fired whenever a block is being placed. You can cancel the event to prevent the block from being placed.
 
-## 事件类
+## Event Class
 You will need to cast the event in the function header as this class:  
 `crafttweaker.event.BlockPlaceEvent`  
 You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
 
-## 事件界面扩展
-BlockPlace Events 实现了以下接口，并且能够同时调用他们的所有方法/getter/setter：
+## Event interface extensions
+BlockPlace Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
 
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 - [IBlockEvent](/Vanilla/Events/Events/IBlockEvent/)
 
 
 ## ZenGetters
-以下信息可以从事件中检索：
+The following information can be retrieved from the event:
 
-| ZenGetter | ZenSetter | 类型                                          |
-| --------- | --------- | ------------------------------------------- |
-| `播放器`     |           | [IPlayer](/Vanilla/Players/IPlayer/)        |
-| `当前的`     |           | [IBlockState](/Vanilla/Blocks/IBlockState/) |
-| `放置对齐`    |           | [IBlockState](/Vanilla/Blocks/IBlockState/) |
-| `手`       |           | 字符串[string]                                 |
+| ZenGetter       | ZenSetter | 类型                                          |
+| --------------- | --------- | ------------------------------------------- |
+| `player`        |           | [IPlayer](/Vanilla/Players/IPlayer/)        |
+| `current`       |           | [IBlockState](/Vanilla/Blocks/IBlockState/) |
+| `placedAgainst` |           | [IBlockState](/Vanilla/Blocks/IBlockState/) |
+| `hand`          |           | String                                      |

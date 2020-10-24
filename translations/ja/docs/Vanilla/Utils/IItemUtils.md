@@ -1,7 +1,7 @@
 # IItemUtils
 
-ItemUtils インターフェイスは様々なアイテムユーティリティを提供します。  
-これは、 `items` キーワードを使用してアクセスできます。
+ItemUtils インターフェイスには様々なアイテムユーティリティが用意されています。  
+`itemUtils` キーワードを使用してアクセスできます。
 
 ## ポーションを作成中
 
@@ -39,8 +39,8 @@ itemUtils.getItemsByRegexUnlocalizedName(".*pink.*"); // pink things!! <3
 
 ## 項目ブラケットハンドラを模倣する
 
-This method does the same as the [Item Bracket Handler](/Vanilla/Brackets/Bracket_Item/).  
-Unlike the BH though, you need to provide the meta as optional parameter.  
+このメソッドは、 [アイテムブラケットハンドラ](/Vanilla/Brackets/Bracket_Item/)と同じことをします。 This allows you to use string variables in the item name by concatenating it in.  
+Unlike the bracket handler though, you need to provide the meta as optional parameter.  
 If you want to use the wildcard meta, use `32767`.
 
     //getItem(location, @Optional meta);
@@ -53,7 +53,7 @@ If you want to use the wildcard meta, use `32767`.
 
 The createSpawnEgg function allows you to create custom mod spawn eggs.  
 The customNBT is OPTIONAL and can override the entity tag.  
-Returns the spawn eff as [IItemStack](/Vanilla/Items/IItemStack/).
+Returns the spawn egg as [IItemStack](/Vanilla/Items/IItemStack/).
 
 ```zenscript
 //createSpawnEgg(entity, @optional customNBT)

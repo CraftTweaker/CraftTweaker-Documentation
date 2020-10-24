@@ -1,45 +1,45 @@
-# Difesa Scrigno Morte
+# Death Chest Defense
 
-## Importazione del pacchetto
+## Importing the package
 
 `import mods.vanilladeathchest.DeathChestDefense;`
 
 ## Unlocker item
 
 ```zenscript
-//DeathChestDefense.setUnlocker(stringa stage, IItemStack unlocker);
+//DeathChestDefense.setUnlocker(string stage, IItemStack unlocker);
 DeathChestDefense.setUnlocker("example_stage", <minecraft:diamond_axe> * 1000);
 ```
 
-Una quantità di consumo/danno può essere impostata specificando una dimensione dello stack come sopra.
+A consumption/damage amount can be set by specifying a stack size like above.
 
-## Danneggia l'oggetto di sblocco invece di consumarlo
+## Damage the unlocker item rather than consuming it
 
 ```zenscript
-//DeathChestDefense.setDamageUnlockerInsteadOfConsume(stringa stage, bool flag);
+//DeathChestDefense.setDamageUnlockerInsteadOfConsume(string stage, bool flag);
 DeathChestDefense.setDamageUnlockerInsteadOfConsume("example_stage", true);
 ```
 
-## Sblocco messaggio chat fallito
+## Unlock failed chat message
 
 ```zenscript
-//DeathChestDefense.setUnlockFailedChatMessage(stringa stage, stringa message);
+//DeathChestDefense.setUnlockFailedChatMessage(string stage, string message);
 DeathChestDefense.setUnlockFailedChatMessage("example_stage", "You need to get a %2$s to unlock your chest!");
 ```
 
-La stringa prende due argomenti: la quantità e il nome visualizzato degli elementi richiesti.
+The string takes two arguments: the amount and display name of the required items.
 
-## Entità di difesa
+## Defense entity
 
 ```zenscript
-//DeathChestDefense.setDefenseEntity(stringa stage, IEntityDefinition defenseEntity);
+//DeathChestDefense.setDefenseEntity(string stage, IEntityDefinition defenseEntity);
 DeathChestDefense.setDefenseEntity("example_stage", <entity:minecraft:zombie_pigman>);
 ```
 
-## Entità di difesa NBT
+## Defense entity NBT
 
 ```zenscript
-//DeathChestDefense.setDefenseEntityNBT(stringa stage, IData nbt);
+//DeathChestDefense.setDefenseEntityNBT(string stage, IData nbt);
 DeathChestDefense.setDefenseEntityNBT("example_stage", {
     HandItems: [
         {
@@ -50,11 +50,11 @@ DeathChestDefense.setDefenseEntityNBT("example_stage", {
 });
 ```
 
-`nbt` dovrebbe essere una [DataMap](/Vanilla/Data/DataMap/).
+`nbt` should be a [DataMap](/Vanilla/Data/DataMap/).
 
-## Numero di spawn dell'entità difesa
+## Defense entity spawn count
 
 ```zenscript
-//DeathChestDefense.setDefenseEntitySpawnCount(stringa stage, int count);
+//DeathChestDefense.setDefenseEntitySpawnCount(string stage, int count);
 DeathChestDefense.setDefenseEntitySpawnCount("example_stage", 500);
 ```

@@ -1,6 +1,6 @@
-# Raffineria
+# Refinery
 
-## Pacchetto
+## Package
 
 `mods.thermalexpansion.Refinery`
 
@@ -11,32 +11,32 @@
 - `output` <[ILiquidStack](/Vanilla/Liquids/ILiquidStack)>
 - `outputItem` <[WeightedItemStack](/Vanilla/Items/WeightedItemStack)>
 - `input` <[ILiquidStack](/Vanilla/Liquids/ILiquidStack)>
-- `energia` &lt;int> Il costo totale dell'energia
+- `energy` &lt;int> The total energy cost
 
 ```zenscript
 import mods.thermalexpansion.Refinery;
 
-// Aggiunge una ricetta che produce 1mB di lava e un diamante (a una probabilità del 100%) per 1mB di acqua
-Raffineria. ddRecipe(<liquid:lava>, <minecraft:diamond>, <liquid:water>, 50);
+// Adds a recipe that outputs 1mB of lava and a diamond (at a 100% chance) per 1mB of water
+Refinery.addRecipe(<liquid:lava>, <minecraft:diamond>, <liquid:water>, 50);
 
-// Aggiunge una ricetta che produce 5mB di lava e un diamante (a una probabilità dell'1%) per 100mB di acqua
-Raffineria. ddRecipe(<liquid:lava> * 5, <minecraft:diamond> % 1, <liquid:water> * 100, 50);
+// Adds a recipe that outputs 5mB of lava and a diamond (at a 1% chance) per 100mB of water
+Refinery.addRecipe(<liquid:lava> * 5, <minecraft:diamond> % 1, <liquid:water> * 100, 50);
 ```
 
-### Aggiungere una ricetta pozione
+### Adding a Potion Recipe
 
-Aggiunge una ricetta da usare con l'Aumento Ritorta Alchemica
+Adds a recipe to be used with the Alchemical Retort Augmentation
 
-`Refinery.addRecipePotion(output, input, energia);`
+`Refinery.addRecipePotion(output, input, energy);`
 
 - `output` <[ILiquidStack](/Vanilla/Liquids/ILiquidStack)>
 - `input` <[ILiquidStack](/Vanilla/Liquids/ILiquidStack)>
-- `energia` &lt;int> Il costo totale dell'energia
+- `energy` &lt;int> The total energy cost
 
 ```zenscript
 import mods.thermalexpansion.Refinery;
 
-Refinery.addRecipePotion(<liquid:potion>.withTag({Potion: "minecraft:mundane"}) * 500, <liquid:potion>.withTag({Pozione: "cofhcore:leaping4"}) * 100, 100);
+Refinery.addRecipePotion(<liquid:potion>.withTag({Potion: "minecraft:mundane"}) * 500, <liquid:potion>.withTag({Potion: "cofhcore:leaping4"}) * 100, 100);
 ```
 
 ## Rimuovere una RIcetta
@@ -51,7 +51,7 @@ import mods.thermalexpansion.Refinery;
 Refinery.removeRecipe(<liquid:resin>);
 ```
 
-### Rimozione di una ricetta pozione
+### Removing a Potion Recipe
 
 `Refinery.removeRecipePotion(input);`
 

@@ -1,16 +1,16 @@
 
-### クラス
+### Class
 
 ```zenscript
 import mods.roots.SummonCreatures;
 ```
 
-#### メソッド
+#### Methods
 
 ```zenscript
 void addEntity(
-  IEntityDefinition entity, // the entity to be 召喚されるエンティティ
-  IIngredient[] mators // a list of method used for the 召喚に使用される食材
+  IEntityDefinition entity, // the entity to be summoned
+  IIngredient[] ingredients // a list of ingredients used for the summoning
 );
 ```
 
@@ -20,7 +20,7 @@ void addEntity(
 
 ```zenscript
 void removeEntity(
-  IEntityDefinition entity // the entity to remove from 召喚からレシピ
+  IEntityDefinition entity // the entity to remove from summoning via recipe
 );
 ```
 
@@ -29,7 +29,7 @@ void removeEntity(
 
 
 ```zenscript
-void removeLifeEssentence(
+void removeLifeEssence(
   IEntityDefinition entity // the entity to remove life essence for
 );
 ```
@@ -39,7 +39,7 @@ void removeLifeEssentence(
 
 
 ```zenscript
-void addLifeessence(
+void addLifeEssence(
   IEntityDefinition entity // the entity to add life essence for
 );
 ```
@@ -49,7 +49,7 @@ void addLifeessence(
 
 
 ```zenscript
-void clearLifeessence();
+void clearLifeEssence();
 ```
 
 

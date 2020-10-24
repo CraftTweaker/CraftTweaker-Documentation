@@ -1,17 +1,17 @@
-# 関数をインポート
+# Import Function
 
-関数名全体を常に入力するのではなく、必要に応じて関数をインポートするだけです。 mod 関数を使用する場合に便利です。
+Instead of typing the whole function name all the time, you can just import a function to serve your needs. Useful when using mod functions.
 
-## 1.12 以前のインポートについての注意
+## Note on pre 1.12 imports
 
-CraftTweaker 1.12 では、多くのコードが変更されました。  
-以前は、すべての内部関数は `minetweaker.package.function` を使用して呼び出されていました。 Now, `minetweaker` has been replaced by `crafttweaker`, so now it sais `crafttweaker.name.function`!
+With CraftTweaker 1.12, a lot of code has changed.  
+Before, all internal functions were called using `minetweaker.package.function`. Now, `minetweaker` has been replaced by `crafttweaker`, so now it sais `crafttweaker.name.function`!
 
-このWikiからのスクリプトのインポートに問題が発生した場合は、MCのバージョンが1.12以下であるかどうかを確認することができます。
+Should you ever experience any importing issues with scripts from this wiki, you may want to check if your MC version is below 1.12.
 
-## 基本的なインポート
+## Basic Import
 
-インポートはスクリプトの先頭で宣言する必要があります。 スクリプトごとに個別にインポートを宣言する必要があります。 同じ名前の2つの関数をインポートしないように注意してください。AS関数を使用してください
+Imports have to be declared at the top of a Script. You will have to declare imports for each scripts separately. Be careful not to import two functions with the same name, use the AS function for that
 
 ```zenscript
 //This will import the hide function from JEI
@@ -27,9 +27,9 @@ removeAndHide(<minecraft:dirt>);
 JEI.hide(<minecraft:diamond>);
 ```
 
-## 次としてインポート：
+## Import as
 
-同じ名前の関数を2つインポートしたい場合や、カスタム名を使用してスクリプトをよりよく見せたい場合もあります。 インポートの最後に AS 文を追加する場合は、インポートがリッスンする名前を指定できます。
+Sometimes you want to import two functions with the same name or just want to keep your scripts look better by using custom names. When adding the AS statement at the end of the import, you can specify the name that the import should listen to.
 
 ```zenscript
 //This will import the hide function from JEI and make it available under the name "h"

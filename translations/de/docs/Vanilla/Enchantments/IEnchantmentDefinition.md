@@ -1,15 +1,15 @@
 # IEnchantmentDefinition
 
-Eine IEnchantmentDefinition ist die eigentliche Verzauberung, sie setzt kein Level ein, aber Sie können diese verwenden, um Informationen über die Verzauberung zu erhalten.
+An IEnchantmentDefinition is the actual Enchantment, it does not posess a level, but you can use this to retrieve information on the Enchantment.
 
 ## Dieses Paket importieren
 
-Möglicherweise ist es erforderlich, dass Sie das Paket importieren, wenn Sie irgendwelche Probleme haben (z.B. [Array](/AdvancedFunctions/Arrays_and_Loops/)), also besser sicher sein als bedauern und fügen Sie den Import.  
-`importiere crafttweaker.enchantments.IEnchantmentDefinition;`
+It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
+`import crafttweaker.enchantments.IEnchantmentDefinition;`
 
-## Ein solches Objekt wird abgerufen
+## Retrieving such an object
 
-Sie können ein solches Objekt vom [Verzauberungs-Bracket-Handler](/Vanilla/Brackets/Bracket_Enchantment/) oder von einem [IEnchantment](/Vanilla/Enchantments/IEnchantment/) Objekt abrufen.
+You can retrieve such an object from the [Enchantment Bracket handler](/Vanilla/Brackets/Bracket_Enchantment/) or from an [IEnchantment](/Vanilla/Enchantments/IEnchantment/) object.
 
 ## ZenGetter/ZenSetter
 
@@ -17,20 +17,20 @@ Sie können ein solches Objekt vom [Verzauberungs-Bracket-Handler](/Vanilla/Brac
 | --------------------- | --------- | ------- |
 | id                    |           | int     |
 | name                  | name      | string  |
-| maximaler Level       |           | int     |
+| maxLevel              |           | int     |
 | minLevel              |           | int     |
 | isAllowedOnBooks      |           | boolean |
 | isTreasureEnchantment |           | boolean |
 | isCurse               |           | boolean |
 | registryName          |           | string  |
 
-## ZenMethoden
+## ZenMethods
 
-### Kanon anwenden
+### CanApply
 
-Prüft, ob die Verzauberung auf den Gegenstand gesetzt werden kann.  
-Die erste Methode überprüft im Allgemeinen, die zweite überprüft, ob der Gegenstand mit Hilfe der Verzauberungstabelle verzaubert werden kann.  
-Beide geben einen Bool zurück und benötigen einen [IItemStack](/Vanilla/Items/IItemStack/) als Eingabeparameter.
+Checks if the enchantment can be put on the item.  
+First method checks in general, second checks if the item can be enchanted to this enchantment using the enchantment Table.  
+Both return a bool and require an [IItemStack](/Vanilla/Items/IItemStack/) as input parameter.
 
 ```zenscript
 ench.canApply(IItemStack item);
@@ -39,55 +39,55 @@ ench.canApplyAtEnchantmentTable(IItemStack item);
 
 ### getEnchantability
 
-Überprüft, welche Verzauberung der Gegenstand auf der angegebenen Ebene haben soll.  
-Beide Methoden geben eine Inte zurück und nehmen die Stufe der Verzauberung als Int Parameter.
+Checks what enchantability the item must have for the Enchantment at the given level.  
+Both methods return an int and take the level of the enchantment as int parameter.
 
 ```zenscript
 ench.getMinEnchantability(int level);
 ench.getMaxEnchantability(int level);
 ```
 
-### Übersetzter Name
+### TranslatedName
 
-Gibt den übersetzten Namen (z.B. "smite IV") zurück.  
-Gibt einen String zurück und benötigt die Stufe der Verzauberung als Int-Parameter.  
-identisch mit [IEnchantments](/Vanilla/Enchantments/IEnchantment/) `.displayName` ZenGetter!
+Returns the translated name (e.g. "smite IV").  
+Returns a string and requires the level of the enchantment as int parameter.  
+Does the same as [IEnchantment's](/Vanilla/Enchantments/IEnchantment/) `.displayName` ZenGetter!
 
 ```objectzenscriptivec
 ench.getTranslatedName(int level);
 ```
 
-### verzaubern
+### make Enchantment
 
-Wenn du einer Verzauberungsdefinition ein Level gibst, kannst du eine [Verzauberung](/Vanilla/Enchantments/IEnchantment/) daraus machen:
+By giving an EnchantmentDefinition a level you can make an [IEnchantment](/Vanilla/Enchantments/IEnchantment/) out of it:
 
 ```zenscript
 ench.makeEnchantment(int level);
 ench * level;
 ```
 
-### Vergleiche mit anderen IEnchantmentDefinition-Objekten
+### Compare with other IEnchantmentDefinition objects
 
-Sie können den `==` Operator verwenden, um zu überprüfen, ob zwei Verzauberungen identisch sind.  
-Das bedeutet, wenn sie die gleiche ID haben.
+You can use the `==` operator to check if two enchantments are the same.  
+This means if they have the same id.
 
 ```zenscript
 if(enchA == enchB)
-    drucken ("Same!");
+    print("Same!");
 ```
 
 ## Beispiel
 
 ```zenscript
 import crafttweaker.enchantments.IEnchantmentDefinition;
-import crafttweaker.data. Data;
+import crafttweaker.data.IData;
 
 val array as IEnchantmentDefinition[] = [<enchantment:minecraft:protection>,<enchantment:minecraft:fire_protection>,<enchantment:minecraft:feather_falling>,<enchantment:minecraft:blast_protection>,<enchantment:minecraft:projectile_protection>,<enchantment:minecraft:respiration>,<enchantment:minecraft:aqua_affinity>];
 
 var map as IData = {};
 
 for ench in array {
-    map += ench. akeEnchantment(3).makeTag();
+    map += ench.makeEnchantment(3).makeTag();
 }
 
 print(map.asString());

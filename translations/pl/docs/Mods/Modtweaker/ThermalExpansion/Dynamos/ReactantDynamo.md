@@ -1,37 +1,37 @@
-# [PLACEHOLDER] ReactantDynamo
+# ReactantDynamo
 
-## Importuj pakiet
+## Import the package
 
-Aby skrócić połączenia metodą, możesz [zaimportować](/AdvancedFunctions/Import/) pakiet taki jak tak:
+To shorten method calls you can [import](/AdvancedFunctions/Import/) the package like so:
 
 ```zenscript
-importuj mods.thermalexpansion.ReactantDynamo;
+import mods.thermalexpansion.ReactantDynamo;
 ```
 
-## Dodaj reakcję
+## Add Reaction
 
 ```zenscript
-//mods.thermalexpansion.ReactantDynamo.addReaction(element IItemStack, ciecz ILiquidStack, energia int);
+//mods.thermalexpansion.ReactantDynamo.addReaction(IItemStack item, ILiquidStack liquid, int energy);
 mods.thermalexpansion.ReactantDynamo.addReaction(<minecraft:bedrock>, <liquid:water>, 13);
 ```
 
-## Dodaj Reakcję Żywiołową
+## Add Elemental Reaction
 
 ```zenscript
-//mods.thermalexpansion.ReactantDynamo.addElementalReaction(element IItemStack, ciecz ILiquidStack, energia int);
+//mods.thermalexpansion.ReactantDynamo.addElementalReaction(IItemStack item, ILiquidStack liquid, int energy);
 mods.thermalexpansion.ReactantDynamo.addElementalReaction(<minecraft:bedrock>, <liquid:water>, 13);
 ```
 
-## Usuń reakcję
+## Remove Reaction
 
 ```zenscript
-//mods.thermalexpansion.ReactantDynamo.removeReaction(element IItemStack, ciecz ILiquidStack);
+//mods.thermalexpansion.ReactantDynamo.removeReaction(IItemStack item, ILiquidStack liquid);
 mods.thermalexpansion.ReactantDynamo.removeReaction(<minecraft:bedrock>, <liquid:water>);
 ```
 
-## Usuń Reakcję Żywiołową
+## Remove Elemental Reaction
 
 ```zenscript
-//mods.thermalexpansion.ReactantDynamo.removeElementalReaction(element IItemStack, ciecz ILiquidStack);
+//mods.thermalexpansion.ReactantDynamo.removeElementalReaction(IItemStack item, ILiquidStack liquid);
 mods.thermalexpansion.ReactantDynamo.removeElementalReaction(<minecraft:bedrock>, <liquid:water>);
 ```

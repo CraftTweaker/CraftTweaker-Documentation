@@ -1,22 +1,22 @@
-# Maszt łącznika
+# Conductor Mast
 
-## Pakiet
+## Package
 ```zenscript
-importuj mods.calculator.conductorMast;
+import mods.calculator.conductorMast;
 ```
 
-## Metody
+## Methods
 
-- **[Składnik](/Vanilla/Variable_Types/IIngredient/) wejście** Wejście
-- **[Składnik](/Vanilla/Variable_Types/IIngredient/) wyjście** Wyjście </strong>
-- **Int powercost** Koszt energii przypadający na proces.
+- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input** The input.
+- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) output** The output.
+- **Int powercost** The cost of power per process.
 
-## Dodatek
+## Additon
 ```zenscript
-przewodnik Mast.addRecipe(dane wejściowe, koszt mocy IIngredient output);
+conductorMast.addRecipe(IIngredient input, int powercost, IIngredient output);
 ```
 
-## Usuwanie
+## Removal
 ```zenscript
-conductorMast.removeRecipe(wyjście typu »Ingredient«);
+conductorMast.removeRecipe(IIngredient output);
 ```

@@ -1,15 +1,15 @@
-# 板甲送货机
+# Plate Bending Machine
 
-## 导入软件包
+## Importing the Package
 `mods.techreborn.plateBendingMachine`
 
-## 添加配方
+## Adding Recipes
 ```zenscript
-mods.techreborn.plateBendingMachine.addRecipe(IItemStack output1，IIngredient input1，int ticktime，int euTick)；
+mods.techreborn.plateBendingMachine.addRecipe(IItemStack output1, IIngredient input1, int ticktime, int euTick);
 ```
 
-## 删除配方
+## Removing Recipes
 ```zenscript
-mods.techreborn.plateBendingMachine.removeRecipe(IItemStack 输出);
+mods.techreborn.plateBendingMachine.removeRecipe(IItemStack output);
 mods.techreborn.plateBendingMachine.removeAll();
 ```

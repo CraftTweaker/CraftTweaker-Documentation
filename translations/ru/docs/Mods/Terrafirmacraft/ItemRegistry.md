@@ -1,48 +1,48 @@
-# Реестр предметов
+# Item Registry
 
-## Пакет
+## Package
 ```zenscript
-// Импортируем методы ItemRegistry в ваш скрипт
-импорта mods.terrafirmacraft.Реестр товаров;
+// Imports ItemRegistry methods into your script
+import mods.terrafirmacraft.ItemRegistry;
 ```
 
-## Размер элемента регистрации
-- Регистрировать размер предмета и вес. Это меняет сколько стека может удерживаться.
-- Размеры [TINY, VERY_SMALL, SMALL, NORMAL, LARGE, VERY_LARGE , HUGE]
-- Вес [VERY_LIGHT, LIGHT, MEDIUM, HEAVY, VERY_HEAVY]
+## Register Item Size
+- Register item size and weight. This changes how much a stack can hold.
+- Sizes [TINY, VERY_SMALL, SMALL, NORMAL, LARGE, VERY_LARGE , HUGE]
+- Weights [VERY_LIGHT, LIGHT, MEDIUM, HEAVY, VERY_HEAVY]
 ```zenscript
-ItemRegistry.registerItemSize(IIngredient input, Размер строки, вес строки);
+ItemRegistry.registerItemSize(IIngredient input, String size, String weight);
 ```
 
-## Тепловая регистрация
-- Регистрировать теплоспособность предмета и если этот предмет кузнечный (например, может быть использован в наковальне).
-- Тепловая мощность определяет скорость охлаждения предмета. Кованый железо - 0,35.
-- Температура плавления при температуре расплавляется. Кованое железо 1535 бриллиантовый белый в то время как бронза 950 оранжевый. Для получения полной информации обратитесь к [температурам отопления](/Mods/Terrafirmacraft/HeatingTemperatures)
+## Register Item Heat
+- Register item heat capability and if this item is forgeable (eg: can be used in anvil).
+- Heat capacity determines how fast an item cools down/heat up. Wrought Iron is 0.35.
+- Melt temperature is at which temperature the item is melt. Wrought Iron is 1535 Brilliant White while Bronze is 950 Orange. For a complete reference, check [Heating Temperatures](/Mods/Terrafirmacraft/HeatingTemperatures)
 ```zenscript
-ItemRegistry.registerItemHeat(IIngredient input, float heatCapacity, float meltTemp, ковка булавки);
+ItemRegistry.registerItemHeat(IIngredient input, float heatCapacity, float meltTemp, bool forgeable);
 ```
 
-## Зарегистрировать предмет Металл
-- Зарегистрировать предмет как металлический предмет. Обратите внимание, что это автоматически добавляет возможность нагрева и форжинга. Если нельзя расплавить ложь, этот предмет не выдает напрямую (например, железной руде требуется цвет/доменная печь)
-- Зарегистрированные металлические слитки не регистрируются автоматически в качестве входных данных для инструментов (например, стальной слиток из других модов, зарегистрированных методом registerMetalItem не будет автоматически срабатывать в голову кирки TFC сталь)
+## Register Item Metal
+- Register item as a metal item. Note that this automatically adds heating and forging capability. If canMelt is false this item won't bear the output directly (like iron ore needs bloomery/blast furnace)
+- Registered metal ingot items aren't automatically registered as a valid input for tools (eg: Steel ingot from other mods registered by registerMetalItem method won't be automatically workable to TFC steel pickaxe head)
 ```zenscript
 ItemRegistry.registerItemMetal(IIngredient input, String metal, int units, bool canMelt);
 ```
 
-## Зарегистрировать еду
-- Регистрировать данные о продукте питания (не работает на TFC едах), Это принимает приоритет по сравнению с существующими значениями. Параметр Decay на 0 останавливает процесс распада.
+## Register Food
+- Register item food stats (Does not work on TFC Foods), This takes priority over existing values. Setting Decay to 0 stops decay from happening.
 ```zenscript
-Регистрация ItemRegistry.registerFood(IIngredient input, int hunger, float water, float saturation, float decay, float grain, float veg, float fruit, float meat, float dairy);
+ItemRegistry.registerFood(IIngredient input, int hunger, float water, float saturation, float decay, float grain, float veg, float fruit, float meat, float dairy);
 ```
 
-## Регистрация брони
-- Регистрация статистики брони
+## Register Armor
+- Register armor stats
 ```zenscript
 ItemRegistry.registerArmor(IIngredient input, float crushingModifier, float piercingModifier, float slashingModifier);
 ```
 
-## Регистрация топлива
-- Зарегистрировать предмет в качестве топлива для огненной ямы, ковки или цветения
+## Register Fuel
+- Register item as a fuel for fire pit, forge or bloomery
 ```zenscript
 ItemRegistry.registerFuel(IItemStack itemStack, int burnTicks, float temperature, bool forgeFuel, bool bloomeryFuel);
 ```

@@ -1,79 +1,79 @@
-# Condizioni Articolo
+# Item Conditions
 
-A volte gli oggetti normali non lo taglieranno:
+Sometimes normal items won't cut it:
 
-A volte vogliamo essere in grado di specificare ricette che funzionano solo quando l'elemento di input soddisfa alcune condizioni.
+Sometimes we want to be able to specify recipes that only work when the input item fulfills some conditions.
 
-A volte vogliamo essere in grado di specificare ricette che produrranno un elemento speciale, sia con NBT-Tag o valore di Danno o altro.
+Sometimes we want to be able to specify recipes that will produce a special item, be it with NBT-Tag or Damage value or otherwise.
 
-## Importazione del pacchetto
+## Importing the package
 
-Potrebbe essere necessario importare il pacchetto se si incontrano problemi (come lanciare un [Array](/AdvancedFunctions/Arrays_and_Loops/)), quindi meglio essere sicuri che spiacenti e aggiungere l'importazione.  
+It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
 `import crafttweaker.item.IItemCondition;`
 
-## Condizioni Di Ingresso
+## Input Conditions
 
-Questi influenzeranno gli elementi che è possibile utilizzare per creare l'oggetto risultante. Ricorda, è possibile mescolare modificatori, per miscelare Danno e NBT-Tag, per esempio
+These will affect the items that you can use to craft the resulting item. Remember, you can mix modifiers, to mix Damage and NBT-Tag, for example
 
 ```zenscript
-<minecraft:iron_pickaxe>.onlyDamaged().withTag({display: {Lore: "Non siamo tutti farfalle?"}});
+<minecraft:iron_pickaxe>.onlyDamaged().withTag({display: {Lore: "Aren't we all butterflies?"}});
 ```
 
-### Danno
+### Damage
 
 #### anyDamage
 
-Il valore di danno dell'elemento in ingresso non importa per la ricetta
+The input item's damage value does not matter for the recipe
 
 ```zenscript
 item.anyDamage()
 ```
 
-#### Solo Danneggiato
+#### onlyDamaged
 
-L'elemento in ingresso deve essere danneggiato
+The input item needs to be damaged
 
 ```zenscript
 item.onlyDamaged();
 ```
 
-#### Danneggiato almeno
+#### Damaged at least
 
-Il valore del danno dell'elemento di input deve essere almeno il valore `specificato`  
-`Valore` è un int
+Input item's damage value needs to be at least the specified `value`  
+`Value` is an int
 
 ```zenscript
 item.onlyDamageAtLeast(value);
 ```
 
-#### Danno al massimo
+#### Damage at most
 
-Il valore del danno dell'oggetto in ingresso deve essere al massimo il valore `specificato`  
-`Valore` è un int
+Input item's damage value needs to be at max the specified `value`  
+`Value` is an int
 
 ```zenscript
 item.onlyDamageAtMost(value);
 ```
 
-#### Danno tra
+#### Damage between
 
-Il valore del danno dell'elemento di input deve essere compreso tra il `valore specializzato 1` e `valore2`  
-`Valore1` è un int  
-`Valore2` è un int
+Input item's damage value needs to be between the speciefied `value1` and `value2`  
+`Value1` is an int  
+`Value2` is an int
 
 ```zenscript
 item.onlyDamageBetween(value1, value2);
 ```
 
-### Ottieni gli articoli indietro o vieta esplicitamente la riutilizzabilità di un articolo
+### Get Items back or explicitly forbid an item's reusability
 
-A volte avete bisogno di una ricetta in cui si ottiene alcuni dei vostri elementi di input indietro.  
-Applicando `transformDamage(int)` puoi creare tali ricette.
+Sometimes you need a recipe where you get some of your input items back.  
+By applying `transformDamage(int)` you can create such recipes.
 
 #### transformDamage
 
-L'elemento in ingresso riceverà `valore` punti di danno e lo otterrai indietro, a meno che non si rompa durante il processo di creazione.  
-`Valore` è un int
+The input item will receive `value` damage points and you will get it back, unless it breaks during the crafting process.  
+`Value` is an int
 
 ```zenscript
 item.transformDamage(value);
@@ -81,28 +81,28 @@ item.transformDamage(value);
 
 ### NBT-Tags
 
-A volte vuoi che i tuoi ingredienti abbiano bisogno di una specifica NBT-Tag. La ricetta non importa se il tuo articolo ha NBT-Tags diversi da quelli specificati, Così un piccone con un lore specifico può anche essere incantato!
+Sometimes you want your ingredients to need a specific NBT-Tag. The recipe doesn't care if your item has NBT-Tags other than the ones specified, So a pickaxe with a specific lore may also be enchanted!
 
-Se si utilizza `withTag` jei verrà visualizzato correttamente, se si utilizza `soloWithTag`, jei mostrerà solo un elemento senza tag!
+If you use `withTag` jei will display it properly, if you use `onlyWithTag`, jei will only display a tagless item!
 
-Ecco come si fa: `NBTTag` è il tuo dati NBT
+Here's how you do it: `NBTTag` is your NBT Data
 
 ```zenscript
 item.withTag(NBTData);
 item.onlyWithTag(NBTTag);
 
-<minecraft.iron_pickaxe>.onlyWithTag({display: {Name: "Pickleberry"}});
+<minecraft.iron_pickaxe>.onlyWithTag({display: {Name: "Pickle the Pickleberry"}});
 <minecraft.iron_pickaxe>.withTag({display: {Name: "Pickle the Pickleberry"}});
 ```
 
-## Modificatori di output
+## Output modifiers
 
-Se è possibile specificare le condizioni di input, non è così difficile definire anche le condizioni di output, o meglio, i modificatori di output.
+If you can specify input conditions, it's not so hard to also define output conditions, or rather, output modifiers.
 
-### Danno
+### Damage
 
-Il tuo oggetto in uscita avrà `valore` punti di danno.  
-`Valore` è un int.
+Your output item will have `value` damage points.  
+`Value` is an int.
 
 ```zenscript
 item.withDamage(value);
@@ -110,21 +110,21 @@ item.withDamage(value);
 
 ### NBT-Tags
 
-Il tuo articolo in uscita avrà `NBTTag` come NBT-Tag.  
-`NBTTag` è il tuo dati NBT
+Your output item will have `NBTTag` as NBT-Tag.  
+`NBTTag` is your NBT Data
 
 ```zenscript
 item.withTag(NBTTag);
 
-<minecraft:iron_pickaxe>.withTag({display: {Name: "Pickleberry"}})
+<minecraft:iron_pickaxe>.withTag({display: {Name: "Pickle the Pickleberry"}})
 ```
 
-## Registrazione delle condizioni della propria voce
+## Registering own item Conditions
 
-Puoi anche aggiungere i tuoi oggettiCondizioni. Queste sono funzioni speciali che accettano lo stesso articolo [](/Vanilla/Items/IItemStack/) come singolo parametro.
+You can also add your own itemConditions. These are special functions that accept the [item](/Vanilla/Items/IItemStack/) itself as single parameter.
 
 ```zenscript
 conditionedItem = item.only(function(item) {return true;});
 ```
 
-La funzione deve restituire un branco che è vero se l'elemento corrisponde alla condizione.
+The function needs to return a bool that is true if the item matches the condition.

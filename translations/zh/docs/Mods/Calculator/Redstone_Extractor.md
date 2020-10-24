@@ -1,22 +1,22 @@
-# 红石提取器
+# Redstone Extractor
 
 ## 所属包名
 ```zenscript
-导入 mods.calculator.redstone;
+import mods.calculator.redstone;
 ```
 
 ## 使用方式
 
-- **[Ingredient](/Vanilla/Variable_Types/IIngredient/) 输入** 输入.
-- **整数值** 输入数量添加到该机上。
+- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input** The input.
+- **int value** The amount of input adds to that machine.
 
 
-## 附加组件
+## Additon
 ```zenscript
-redstone.addRecipe(I成分输入, int value)；
+redstone.addRecipe(IIngredient input, int value);
 ```
 
-## 移除
+## Removal
 ```zenscript
-Redston.removeRecipe(I成分输入)；
+redstone.removeRecipe(IIngredient input);
 ```

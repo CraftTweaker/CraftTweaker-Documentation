@@ -1,26 +1,26 @@
-# 颜色
+# Color
 
-如果你不确定如何创建彩色整形物体，你可以使用彩色对象。
+If you are uncertain on how to create the colour int object, you can use the Color Object instead.
 
 ## 导入相关包
 
-如果您遇到任何问题，可能需要导入软件包，所以比抱歉更安全并添加导入。  
-`导入mods.contenttweiner.Color；`
+It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
+`import mods.contenttweaker.Color;`
 
-## 静态方法
+## Static Methods
 
-静态方法被调用到包名而不是对象本身。  
-所有这些方法都返回了颜色对象。
+Static Methods are called on the package name and not on the Object itself.  
+All these Methods return a Color Object.
 
-| ZenMethod（ZenMethod） | 参数类型   |
-| -------------------- | ------ |
-| 从 Int(颜色)            | int    |
-| 从十六进制(颜色)            | string |
+| ZenMethod      | 参数类型   |
+| -------------- | ------ |
+| fromInt(color) | int    |
+| fromHex(color) | string |
 
-## 非静态方法
+## Nonstatic Methods
 
-非静态方法不是在软件包名称上调用的，而是在对象本身。
+Nonstatic Methods are not called on the package name but on the Object itself.
 
-| ZenMethod（ZenMethod） | 返回值类型 |
-| -------------------- | ----- |
-| getIntColor()        | 整数    |
+| ZenMethod     | 返回值类型 |
+| ------------- | ----- |
+| getIntColor() | int   |

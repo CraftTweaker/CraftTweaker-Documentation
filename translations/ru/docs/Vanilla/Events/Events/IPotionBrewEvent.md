@@ -1,23 +1,23 @@
 # IPotionBrewEvent
 
-Событие продлевается всеми событиями, связанными с винтовой стендой, хотя и не на основе игрока, можно извлечь предметы из пивоварняной стенды.
+This event is extended by all events involving the brewing stand, although not the player-based function for extracting items from the brewing stand.
 
 ## Импорт класса
-Возможно, потребуется [импортировать](/AdvancedFunctions/Import/) класс, чтобы избежать ошибок.  
-`импортировать crafttweaker.event.IPotionBrewEvent;`
+It might be required to [import](/AdvancedFunctions/Import/) the class to avoid errors.  
+`import crafttweaker.event.IPotionBrewEvent;`
 
-## Что можно сделать с ними?
+## What can be done with them?
 
 | ZenGetter | ZenSetter | type |
 | --------- | --------- | ---- |
-| `длина`   |           | int  |
+| `length`  |           | int  |
 
 ## Методы
 
 - [IItemStack](/Vanilla/Items/IItemStack/) `getItem()`
 
-Возвращает IItemStack, содержащийся в списке элементов в указанном массиве. Возвращает пустой IItemStack, если указанный индекс превышает `длину`.
+Returns the IItemStack contained in the list of items at the specified array. Will return an empty IItemStack if the specified index is greater than `length`.
 
 - `setItem(int,` [`IItemStack`](/Vanilla/Items/IItemStack/) `)`
 
-Заменяет элемент в указанном индексе на указанный элемент. Если индекс больше длины массива предметов, ничего не произойдет.
+Replaces the itemstack at the specified index with the specified item. If th index is greater than the length of the item array, nothing will happen.

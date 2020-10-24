@@ -1,36 +1,36 @@
-# Entrada IreDictada
+# IOreDictEntry
 
-Cuando el [IOreDict](/Vanilla/OreDict/IOreDict/) es el léxico, el IOreDictEntries son las entradas del léxico.  
-Consisten en un nombre (nombre del OreDiccionario) y una explicación (todos los elementos coincidentes).
+When the [IOreDict](/Vanilla/OreDict/IOreDict/) is the lexicon, the IOreDictEntries are the lexicon's entries.  
+They consist of a name (OreDictionary name) and an explanation (all matching items).
 
-## Importando el paquete
+## Importing the package
 
-Podría ser necesario que importes el paquete si encuentras algún problema (como lanzar un [array](/AdvancedFunctions/Arrays_and_Loops/)), más vale estar seguro que lo siento y añadir la importación.  
-`importar crafttweaker.oredict.IOreDictEntry;`
+It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
+`import crafttweaker.oredict.IOreDictEntry;`
 
-## Recuperando tal objeto.
+## Retrieving such an Object.
 
 There are multiple ways of getting an IOreDictEntry Object: If you refer to an oreDict that does not yet exist, it will be created.
 
-- Usando la clase [IOreDict](/Vanilla/OreDict/IOreDict/).
-- Usando el mandador de bloques de mineral [](/Vanilla/Brackets/Bracket_Ore/).
+- Using the [IOreDict](/Vanilla/OreDict/IOreDict/) class.
+- Using the [ore Bracket Handler](/Vanilla/Brackets/Bracket_Ore/).
 - Using an [IItemDefinition's `ores` getter](/Vanilla/Items/IItemDefinition/).
 
 ## ZenGetters
 
-Puedes usar estos getters para recuperar información sobre el orédico:
+You can use these getters to retrieve some information on the oredict:
 
-| nombre      | Descripción                                     | Tipo de devolución                       |
-| ----------- | ----------------------------------------------- | ---------------------------------------- |
-| nombre      | Devuelve el nombre de oreDict                   | cadena                                   |
-| vacío       | Devuelve si el oreDict está vacío               | pluma                                    |
-| primer ítem | Devuelve el primero de los elementos de oreDict | [IItemStack](/Vanilla/Items/IItemStack/) |
+| name      | Description                              | Return type                              |
+| --------- | ---------------------------------------- | ---------------------------------------- |
+| name      | Returns the oreDict's name               | string                                   |
+| empty     | Returns if the oreDict is empty          | bool                                     |
+| firstItem | Returns the first of the oreDict's items | [IItemStack](/Vanilla/Items/IItemStack/) |
 
-## Métodos
+## ZenMethods
 
-Puede utilizar estos métodos en un objeto IOreDictEntry :
+You can use these methos on an IOreDictEntry Object:
 
-### Añadir/Quitar elementos
+### Add/Remove items
 
 ```zenscript
 val oreDictEnt = <ore:ingotIron>;
@@ -51,54 +51,54 @@ oreDictEnt.addAll(<ore:ingotGold>);
 oreDictEnt.remove(<minecraft:grass>);
 oreDictEnt.remove(<minecraft:iron_ore>, <minecraft:dirt>);
 
-//oreDictEnt.removeItems(ItemStack[] elementos);
+//oreDictEnt.removeItems(IItemStack[] items);
 oreDictEnt.removeItems([<minecraft:redstone>, <minecraft:gold_ore>]);
 ```
 
-### Comprobar si un IOreDictEntrada contiene un elemento
+### Check if an IOreDictEntry contains an item
 
-Puede comprobar si un IOreDictEntry contiene un elemento usando `in` o `tiene` palabras clave:
+You can check if an IOreDictEntry contains an item using either the `in` or `has` keywords:
 
 ```zenscript
 val oreDictEnt = <ore:ingotIron>;
 
-//Mientras usas es posible
-if(oreDictEnt en <minecraft:iron_ingot>){
-    print("¡Hierro está en el oreDict! );
+//While using in is possible
+if(oreDictEnt in <minecraft:iron_ingot>){
+    print("Iron is in the oreDict!");
 }
 
-//muchos prefieren usar tiene ya que podría tener más sentido grammar-wise
-if(oreDictEnt tiene <minecraft:iron_ingot>){
-    print("¡Hierro todavía está en el oreDict! );
+//many prefer using has as it might make more sense grammar-wise
+if(oreDictEnt has <minecraft:iron_ingot>){
+    print("Iron still is in the oreDict!");
 }
 ```
 
-### Ordena una Entrada IOreDictosa
+### Mirror an IOreDictEntry
 
-La corrección de una entrada IOreDictEntry significa que todos los elementos en el otro oreDictEntry serán reemplazados por los elementos en la entrada oreDictEntry que el método fue ejecutado en:
+Mirroring an IOreDictEntry means that all items in the other oreDictEntry will be replaced by the items in the oreDictEntry the method was executed on:
 
 ```zenscript
-//hacer hierro y cobre equivalente
+//make iron and copper equivalent
 val iron = <ore:ingotIron>;
-val cobre = <ore:ingotCopper>;
+val copper = <ore:ingotCopper>;
 
-//agrega todas las entradas del hierro al cobre para que el cobre contenga las entradas de hierro y cobre oreDic
-de hierro. ddAll(cobre); 
+//adds all entries from iron to copper so that Copper contains both, the iron and copper oreDic entries
+iron.addAll(copper); 
 
 
-//espeja cobre a hierro, por lo que todos los objetos en hierro serán reemplazados por todos los en cobre.
-//En este caso eso significa por todos los hierro y cobre oreDictEntries
-coper.mirror(iron);
+//mirrors copper to iron, so all items in iron will be replaced by all the ones in copper.
+//In this case that means by all iron and copper oreDictEntries
+copper.mirror(iron);
 ```
 
-## Implementación de IIngredient
+## IIngredient implementation
 
-IOreDictEntry extiende [IIngrediente](/Vanilla/Variable_Types/IIngredient/). Esto significa que todos los métodos disponibles para [IIngredient](/Vanilla/Variable_Types/IIngredient/) también están disponibles para IOreDictEntries. También significa que usted puede colocar IOreDictEntries en los arreglos de IIngredient (tales como los métodos de elaboración de recetas).
+IOreDictEntry extends [IIngredient](/Vanilla/Variable_Types/IIngredient/). This means that all methods available to [IIngredient](/Vanilla/Variable_Types/IIngredient/) are also available to IOreDictEntries. It also means that you can put IOreDictEntries into IIngredient Arrays (such as the ones in crafting recipe methods).
 
-### Iterando a través de elementos de un oreDictEntry
+### Iterating through an oreDictEntry's items
 
 ```zenscript
-val hierro = <ore:ingotIron>;
+val iron = <ore:ingotIron>;
 
 for item in iron.items{
     recipe.remove(item);

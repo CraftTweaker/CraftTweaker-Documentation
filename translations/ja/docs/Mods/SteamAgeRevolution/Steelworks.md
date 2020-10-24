@@ -1,35 +1,35 @@
 # Steelworks
 
-Steelworksは、蒸気を使用して入力項目と流体を出力項目に変換する機械です。
+The Steelworks is a machine that converts an input item and fluid into an output item using steam.
 
-## 発信中
+## Calling
 
-`mods.steamagerevolution.Steelworks` を使ってSteelworksパッケージを呼び出すことができます。
+You can call the Steelworks package using `mods.steamagerevolution.Steelworks`.
 
-## 削除中
+## Removing
 
-この関数は、与えられた [IItemStack](/Vanilla/Items/IItemStack/) `出力` で見つけた最初のレシピを削除します。
+This function removes the first recipe they find with the given [IItemStack](/Vanilla/Items/IItemStack/) `output`:
 
 ```java
 mods.steamagerevolution.Steelworks.removeRecipe(IItemStack output);
 
-// 例
+// Examples
 mods.steamagerevolution.Steelworks.removeRecipe(<ore:ingotSteel>.firstItem);
 ```
 
-この関数は、現在スチールワークに定義されているすべての *レシピを* 削除します。
+This function removes *all* recipes currently defined for the Steelworks:
 
 ```java
 mods.steamagerevolution.Steelworks.removeAll();
 ```
 
-## 追加中
+## Adding
 
-この機能は、製鋼所の新しいレシピを追加するために使用されます。
+This function is used to add new recipes for the Steelworks:
 
 ```java
 mods.steamagerevolution.Steelworks.addRecipe(ILiquidStack input, IIngredient input2, IItemStack output, int craftTime, int steamCost);
 
-// 例
-mods.steamagerevolution.Steelworks.addRecipe(<liquid:iron>, <ore:coal>, <ore:ingotSteel>.first, Item, 200, 200);
+// Examples
+mods.steamagerevolution.Steelworks.addRecipe(<liquid:iron>, <ore:coal>, <ore:ingotSteel>.firstItem, 200, 200);
 ```

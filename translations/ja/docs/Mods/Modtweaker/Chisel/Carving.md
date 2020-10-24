@@ -1,6 +1,6 @@
-# 彫刻中
+# Carving
 
-## パッケージ
+## Package
 
 `mods.chisel.Carving`
 

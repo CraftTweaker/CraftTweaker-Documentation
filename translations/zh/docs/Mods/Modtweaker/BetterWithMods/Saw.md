@@ -1,56 +1,56 @@
-# 锯子
+# Saw
 
-## 基本配方
+## Basic Recipe
 
-* 添加锯齿配方 - 输入 *MUST* 有一个与他们相关联的方块。
+* Adds Saw Recipe - inputs *MUST* have a block associated with them.
 
 ```zenscript
-mods.betterwithmods.Saw.add(IIngredient input, IItemStack[…]output);
-//examps
-mods.betterwithmods.Saw.add(<minecraft:fence>[<minecraft:stick>,<minecraft:stick>]);
+mods.betterwithmods.Saw.add(IIngredient input, IItemStack[] output);
+//Examples
+mods.betterwithmods.Saw.add(<minecraft:fence>,[<minecraft:stick>,<minecraft:stick>]);
 ```
 
-## 通过输入删除
+## Removal by input
 
-* 删除基于输入成分的配方
+* Remove a recipe based on the input ingredient
 
 ```zenscript
 mods.betterwithmods.Saw.remove(IIngredient input);
 ```
 
-## 按输出移除
+## Removal by output
 
-* 移除基于输出的配方
+* Remove a recipe based on the output
 
 ```zenscript
-mods.betterwithmods.Saw.remove(IItemStack[…]输出);
+mods.betterwithmods.Saw.remove(IItemStack[] outputs);
 ```
 
-## 移除所有
+## Remove all
 
-* 删除所有配方
+* Remove all recipes
 
 ```zenscript
 mods.betterwithmods.Saw.removeAll();
 ```
 
-## 构建器
+## Builder
 
-圣有一个配方构造器。 由于看到它的性质，目前它没有特殊的构造方法，我将记载这种方法。
+The Saw has a recipe builder. Due to the nature of the saw it currently has no special builder methods, I will document it none-the-less.
 
-* 创建一个新的锯齿构建器。 `mods.betterwithmods.Saw.builder()`
+* To create a new Saw builder. `mods.betterwithmods.Saw.builder()`
 
-* 锯齿方法
+* Saw methods
      
-     * 设置配方的输入和输出  
+     * Sets up the inputs and outputs of the recipe  
               zenscript
-              buildRecipe(IIngredient[…]输入, IItemStack[…]输出)
+              buildRecipe(IIngredient[] inputs, IItemStack[] outputs)
      
-     * 完成配方并将其添加到游戏  
+     * Finalize the recipe and add it to the game  
               zenscript
               build()
 
-### 示例生成器使用情况
+### Example builder usage
 
     mods.betterwithmods.Saw.builder()
     .buildRecipe([<minecraft:oak_fence>], [<minecraft:stick>*6])

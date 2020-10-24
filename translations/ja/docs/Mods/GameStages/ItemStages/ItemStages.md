@@ -1,72 +1,72 @@
-# アイテムステージ
+# Item Stages
 
-この mod は [GameStages API](https://minecraft.curseforge.com/projects/game-stages) のアドオンです。 Item Stagesを使用すると、Modpack作成者が設定したカスタム進行システムにアイテムとブロックを配置することができます。 プレイヤーが必要なステージを持っていない場合、プレイヤーはアイテムの使用に問題があります。 これを行う方法の詳細については、こちらをご覧ください [](https://minecraft.curseforge.com/projects/item-stages)
+This mod is an addon for the [GameStages API](https://minecraft.curseforge.com/projects/game-stages). Item Stages allows access for items and blocks to be placed into a custom progression system set by the modpack creator. If a player does not have the required stage, the player will have trouble using the item. To learn more about how it does this, check out the mod page [here](https://minecraft.curseforge.com/projects/item-stages)
 
-## アイテムをステージングする
+## Staging an Item
 
-このModに制限される項目には、ステージに関連付ける必要があります。 これはいくつかの異なる方法で行うことができます。
+For an item to be restricted with this mod, it needs to be associated with a stage. This can be done in a few different ways.
 
 ```zenscript
 // Stages a single block or item. 
 mods.ItemStages.addItemStage("stage_name", <minecraft:stone>);
 
-// 部分NBTを持つアイテムをステージングします。 たとえば、この段階では、すべてのLV5エンチャント本。
-mods.ItemStages.addItemStage("stage_name", <minecraft:enchanted_book>.withTag({StoredEnchants: [{lvl: 5 as short}]}));
+// Stages an item with partial NBT. For example this stage all LV 5 enchantment books.
+mods.ItemStages.addItemStage("stage_name", <minecraft:enchanted_book>.withTag({StoredEnchantments: [{lvl: 5 as short}]}));
 
-// 鉱石辞書タグを持つすべてのアイテムをステージします。
+// Stages all items with an ore dictionary tag.
 mods.ItemStages.addItemStage("stage_name", <ore:dye>);
 
-// 特定の Mod によって追加されたすべてのアイテムをステージングします。
+// Stages all items that are added by a specific mod.
 mods.ItemStages.stageModItems("stage_name", "modid");
 
-// 特定のアイテムからステージを削除し、stageModItemsとペアリングするとスクリプトのサイズを小さくするのに便利です。
+// Removes a stage from a specific item, useful when paired with stageModItems to reduce script size.
 mods.ItemStages.removeItemStage(<minecraft:stone>);
 ```
 
-## ステージング液体format@@0
+## Staging Liquids
 
-あなたは液体をステージングしたい場合があります、これは主にJEIにそれらを隠すために行われます。
+You may want to stage liquids, this is primarily done to hide them in JEI.
 
 ```zenscript
-// Steages a single fluid, like water.
+// Stages a single fluid, like water.
 mods.ItemStages.stageLiquid("stage_name", <liquid:water>);
 ```
 
-## ステージングエンチャント数
+## Staging Enchantments
 
-エンチャントを設定すると、エンチャントが付いているアイテムを使用できなくなります。
+You can stage enchantments to prevent players from using items that have the enchantment on them.
 
 ```zenscript
-// Stages a specific enchantment この場合の保護。
+// Stages a specific enchantment. In this case protection.
 mods.ItemStages.stageEnchant("stage_name", <enchantment:minecraft:protection>);
 
-// 特定のエンチャントをステージングします。 この場合の保護 II 。
+// Stages a specific enchantment, at a specific level. In this case Protection II.
 mods.ItemStages.stageEnchantByLevel("stage_name", <enchantment:minecraft:protection>.makeEnchantment(2));
 ```
 
-## なじみのないアイテム名を変更します。
+## Changing the Unfamiliar Item Name.
 
-非表示の間、制限されたアイテムに新しい名前を付けることができます。 これは、あなたのパックにジョークや微妙な伝承を追加するために使用することができます。
+You may want to give your restricted items a new name while they are hidden. This can be used to add jokes and subtle lore to your pack.
 
 ```zenscript
-// Sets all wool to be name "Clump of Fur" for players who have the right stage.
-mods.ItemStages.setUnindiarName("Kump of Fur", <minecraft:wool:*>);
+// Sets all wool to be named "Clump of Fur" for players who don't have the right stage.
+mods.ItemStages.setUnfamiliarName("Clump of Fur", <minecraft:wool:*>);
 ```
 
-## ツールチップをステージングする
+## Staging a tooltip
 
-ツールチップの一部をステージングして情報を非表示にできます。 これは、ほとんどのアイテムに「EMC:」ツールチップを追加するプロジェクト E のようなモッドをステージングしようとするときに特に便利です。
+You can stage parts of tooltips to hide information. This is especially useful when trying to stage mods like Project E which add an "EMC:" tooltip to most items.
 
 ```zenscript
-// Removes any line in a tooltip that starts with "EMC:)
+// Removes any line in a tooltip that starts with "EMC:"
 mods.ItemStages.stageTooltip("stage_name", "EMC:");
 ```
 
-## レシピカテゴリをステージングする
+## Staging a Recipe Category
 
-JEIを使用すると、レシピカテゴリ全体にアクセスできます。 たとえば、炉のカテゴリをステージングしていて、プレイヤーがステージを持っていない場合、炉のレシピを見ることはできません。
+You can stage access to an entire recipe category with JEI. For example if you stage the furnace category and a player does not have the stage, they will not be able to see furnace recipes.
 
 ```zenscript
-// 特定のレシピカテゴリをステージングします。 この例では、アンビルカテゴリーを上演しています。
+// Stages a specific recipe category. In this example we are staging the anvil category.
 mods.ItemStages.stageRecipeCategory("stage_name", "minecraft.anvil");
 ```

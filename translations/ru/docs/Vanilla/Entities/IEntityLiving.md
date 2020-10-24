@@ -1,16 +1,16 @@
 # IEntityLiving
 
-Живой объект — это объект, который может погибнуть.  
-Однако, в отличие от [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) игроки не являются IEniyLiving объектами!
+A living Entity is one that has health and that can die.  
+Unlike [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) however, players don't are IEnitiyLiving objects!
 
 ## Импорт пакета
 
-Возможно, вам потребуется импортировать пакет, если вы столкнетесь с какими-либо проблемами (например, наложение [массива](/AdvancedFunctions/Arrays_and_Loops/)), так что лучше быть безопасным, чем извините и добавить импорт.  
-`импорт crafttweaker.entity.IEntityLiving;`
+It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
+`import crafttweaker.entity.IEntityLiving;`
 
-## Расширение [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/)
+## Extending [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/)
 
-IEntityLiving extends [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/). Это означает, что все функции, доступные для объектов [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) , также доступны для объектов IEntityLiving .
+IEntityLiving extends [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/). That means all functions available to [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) objects also are available to IEntityLiving objects.
 
 ## Методы
 
@@ -38,49 +38,49 @@ IEntityLiving extends [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/).
 
 ### Методы
 
-#### Воспроизвести живой звук
+#### Play living sound
 
-Не требует параметров.  
-ничего не возвращает.
+Requires no parameters.  
+Returns nothing.
 
 ```zenscript
 ebtLiv.playLivingSound();
 ```
 
-#### Создать частицы взрыва
+#### Spawn explosion particles
 
-Не требует параметров.  
-ничего не возвращает.
+Requires no parameters.  
+Returns nothing.
 
 ```zenscript
 ebtLiv.spawnExplosionParticle();
 ```
 
-#### Шанс выпадения ячейки снаряжения
+#### Set the drop chance for an Equipment Slot
 
-Требуется объект [IEntityEquipmentSlot](/Vanilla/Entities/IEntityEquipmentSlot/) и плавающий слот.  
-ничего не возвращает.
+Requires an [IEntityEquipmentSlot](/Vanilla/Entities/IEntityEquipmentSlot/) object and a float.  
+Returns nothing.
 
 ```zenscript
-ebtLiv.setChance(IEntityEquipmentSlot слот, свободный от плавания);
+ebtLiv.setDropChance(IEntityEquipmentSlot slot, float chance);
 ```
 
-#### Включить стойкость
+#### Enable Persistence
 
-Не требует параметров.  
-ничего не возвращает.
+Requires no parameters.  
+Returns nothing.
 
 ```zenscript
 ebtLiv.enablePersistence();
 ```
 
-#### Смешивает
+#### Lashes
 
-Первый метод требует объект [IEntity](/Vanilla/Entities/IEntity/) , логическое значение и ничего не возвращает. Второй метод требует два логических значения и ничего не возвращает.  
-Третий метод требует объект [IPlayer](/Vanilla/Players/IPlayer/) и возвращает бул.
+First method requires an [IEntity](/Vanilla/Entities/IEntity/) object, a boolean and returns nothing. Second method requires two booleans and returns nothing.  
+Third method requires an [IPlayer](/Vanilla/Players/IPlayer/) object and returns a bool.
 
 ```zenscript
 ebtLiv.setLeashedToEntity(IEntity enttiy, boolean sendAttachNotification);
 ebtLiv.clearLeashed(boolean sendPacket, boolean dropLead);
-ebtLiv.canBeLeashedTo(IPlayer игрока);
+ebtLiv.canBeLeashedTo(IPlayer player);
 ```

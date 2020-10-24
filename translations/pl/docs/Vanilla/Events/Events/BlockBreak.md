@@ -1,27 +1,27 @@
-# Wydarzenie BlockBreakcji
+# BlockBreakEvent
 
-Wydarzenie BlockBreak jest uruchamiane za każdym razem, gdy blok jest uszkodzony.  
-Możesz anulować wydarzenie, aby zapobiec jego uszkodzeniu.
+The BlockBreak Event is fired whenever a block is being broken.  
+You can cancel the event to prevent the block from being broken.
 
-## Klasa wydarzenia
+## Event Class
 
-Musisz aktywować wydarzenie w nagłówku funkcji jako klasa:  
-`crafttweaker.event. lockBreakEvent`  
-Oczywiście możesz również [zaimportować](/AdvancedFunctions/Import/) klasę przed i wtedy użyć tej nazwy.
+You will need to cast the event in the function header as this class:  
+`crafttweaker.event.BlockBreakEvent`  
+You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
 
-## Rozszerzenia interfejsu zdarzenia
+## Event interface extensions
 
-Zdarzenia BlockBreak implementują następujące interfejsy i są w stanie również wywołać wszystkie swoje metody/getters/setters:
+BlockBreak Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
 
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
-- [Wydarzenie IBlock'a](/Vanilla/Events/Events/IBlockEvent/)
+- [IBlockEvent](/Vanilla/Events/Events/IBlockEvent/)
 
 ## ZenGetters
 
-Z wydarzenia można uzyskać następujące informacje:
+The following information can be retrieved from the event:
 
-| ZenGetter       | ZenSetter       | Typ                                  |
-| --------------- | --------------- | ------------------------------------ |
-| `gracz`         |                 | [IPlayer](/Vanilla/Players/IPlayer/) |
-| `isPlayer`      |                 | bool                                 |
-| `doświadczenie` | `doświadczenie` | odcień                               |
+| ZenGetter    | ZenSetter    | Type                                 |
+| ------------ | ------------ | ------------------------------------ |
+| `player`     |              | [IPlayer](/Vanilla/Players/IPlayer/) |
+| `isPlayer`   |              | bool                                 |
+| `experience` | `experience` | int                                  |

@@ -4,11 +4,11 @@
 import mods.roots.AnimalHarvest;
 ```
 
-#### Методы
+#### Methods
 
 ```zenscript
 void addEntity(
-  IEntityDefinition entity // entity to generate drops for
+  IEntityDefinition entity // the entity to generate drops for
 );
 ```
 
@@ -16,7 +16,7 @@ void addEntity(
 
 ```zenscript
 void removeEntity(
-  IEntityDefinition entity // entity to stop generation drops for
+  IEntityDefinition entity // the entity to stop generating drops for
 );
 ```
 
@@ -24,9 +24,9 @@ void removeEntity(
 
 ```zenscript
 void addFish(
-  string name, // название типа рыбы
-  IItemStack fish, // тип рыбы в виде единичного веса
-  дюйма // вес рыбы как целочисленного числа
+  string name,     // the name of the type of fish
+  IItemStack fish, // the type of fish as an item stack
+  int weight       // the weight of the fish as an integer
 );
 ```
 
@@ -34,7 +34,7 @@ void addFish(
 
 ```zenscript
 void removeFish(
-  IItemStack fish // тип рыбы, который можно удалить в виде предмета
+  IItemStack fish // the type of fish to remove as an item stack
 );
 ```
 
@@ -45,8 +45,8 @@ void removeFish(
 ```zenscript
 import mods.roots.AnimalHarvest;
 
-// Добавляет enderman в качестве цели для ритуала урожая животных.
-// Как правило, лучше использовать животных.
+// Adds an enderman as a target for the Animal Harvest ritual.
+// Generally it would be better to use animals.
 AnimalHarvest.addEntity(<entity:minecraft:enderman>);
 
 // Prevents the entity from giving drops during the ritual

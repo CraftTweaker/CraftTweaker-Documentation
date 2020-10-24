@@ -1,13 +1,13 @@
 # RockyTweaks
 
-## Informationen
+## Information
 
-Rocky Tweaks (früher bekannt als Rocky Core) erweitert die Fähigkeit, den Handel mit Vanilla Amboss und Händlern mit CraftTweaker zu optimieren.
+Rocky Tweaks (formerly known as Rocky Core) adds the ability to tweak the Vanilla Anvil and Merchant (Villager) trades using CraftTweaker.
 
-### Für weitere Informationen
+### For More Information
 
-Projektseite: [https://minecraft.curseforge.com/projects/rocky-tweaks](https://minecraft.curseforge.com/projects/rocky-tweaks)
+Project Page: [https://minecraft.curseforge.com/projects/rocky-tweaks](https://minecraft.curseforge.com/projects/rocky-tweaks)
 
-### Fehlerberichte
+### Bug Reports
 
 Issue Tracker: [https://github.com/DevOnTheRocks/RockyTweaks/issues](https://github.com/DevOnTheRocks/RockyTweaks/issues)

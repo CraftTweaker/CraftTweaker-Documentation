@@ -1,6 +1,6 @@
 # PlayerInteractEntity
 
-Событие "Игрок InteractEntity" запускается, когда игрок взаимодействует с сущностью. Это может быть отменено, чтобы предотвратить взаимодействие происходящего. Если событие отменено, может быть предоставлен конкретный результат успеха, неудачи или прохождения. По умолчанию, результат выгружается.
+The PlayerInteractEntity Event is fired whenever a player interacts with an Entity. It can be canceled to prevent the interaction from taking place. Если событие отменено, может быть предоставлен конкретный результат успеха, неудачи или прохождения. По умолчанию, результат выгружается.
 
 ## Класс события
 
@@ -10,10 +10,10 @@ You can, of course, also [import](/AdvancedFunctions/Import/) the class before a
 
 ## Наследование от интерфейсов событий
 
-PlayerInteractEntity Events реализуют следующие интерфейсы и также могут вызвать все методы/getters/setters:
+PlayerInteractEntity Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
 
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
-- [Взаимодействие игрока](/Vanilla/Events/Events/PlayerInteract/)
+- [PlayerInteract](/Vanilla/Events/Events/PlayerInteract/)
 - [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
 
 ## ZenGetters & ZenSetters
@@ -28,4 +28,4 @@ PlayerInteractEntity Events реализуют следующие интерфе
 
 ## Методы
 
-- `event.cancel()` устанавливает событие как отменено.
+- `event.cancel()` sets the event as cancelled.

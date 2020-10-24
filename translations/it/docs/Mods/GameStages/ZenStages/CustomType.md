@@ -1,20 +1,20 @@
-# Tipi Personalizzati
+# Custom Types
 
-I Tipi Personalizzati sono un nuovo modo potente per creare le tue *cose personalizzate* da mettere in scena. Essenzialmente ciò che questo consente di fare è, ad esempio mettere in scena un evento da Minecraft o Stage una lista di blocchi per impedire a un giocatore di interagire o rompere. Utilizzando gli [Eventi](/Vanilla/Events/IEventManager/) CraftTweaker fornisce. Questo ti dà la possibilità di bloccare più cose. Creare un'esperienza personalizzata completa nel gioco senza la necessità di ulteriori mods. Come tutto ciò che serve è ZenStages e CraftTweaker suoni abbastanza fresco, eh?
+Custom Types are a new powerful way for you to create your own *custom* things to stage. Essentially what this allows you to do is, say for example stage an Event from Minecraft or Stage a list of Blocks to prevent a player from interacting or breaking. Using the [Events](/Vanilla/Events/IEventManager/) CraftTweaker provides. This gives you the ability to lock more things down. Creating a complete custom experience in the game without the need for additional mods. As all you need is ZenStages and CraftTweaker sounds pretty cool, huh?
 
-Questo è un sistema ancora abbastanza nuovo e *può* avere alcuni bug. Se noti qualche per favore segnalale a [Il nostro Repo](https://github.com/DarkPacks/ZenStages/issues) così possiamo esaminarlo!
+This is a still a fairly new system and *may* have some bugs. If you notice any please report them to [Our Repo](https://github.com/DarkPacks/ZenStages/issues) so we can look into it!
 
-Nota: Questo è un tipo personalizzato completo nulla controllerà contro questo internamente. Dovrai creare e ascoltare gli [Eventi](/Vanilla/Events/IEventManager/) per chiamare i metodi forniti in [ZenStager](/Mods/GameStages/ZenStages/ZenStager/) per eseguire i controlli. Quindi il nome *slug/name* che usi per il tipo devi annotare da qualche parte in modo da sapere cosa fa cosa.
+Note: This is a complete custom type nothing will check against this internally. You'll need to create and listen to the [Events](/Vanilla/Events/IEventManager/) to then call the provided methods in [ZenStager](/Mods/GameStages/ZenStages/ZenStager/) to perform the checks. So the *slug/name* name you use for the type you'll need to note down somewhere so you know what does what.
 
-Nota: È anche uno standard ripetuto che utilizzi nomi univoci per **tutti** i tuoi tipi personalizzati.
+Note: It is also a recomended standard that you use unique names for **all** your Custom Types.
 
-## Importazione del pacchetto
+## Importing the package
 
 `import mods.zenstages.type.CustomStageType;`
 
-## Come crearli
+## How to create them
 
-I tipi personalizzati vengono creati tramite [ZenStager](/Mods/GameStages/ZenStages/ZenStager/) utilizzando il seguente metodo.
+Custom Types are created via [ZenStager](/Mods/GameStages/ZenStages/ZenStager/) using the following method.
 
 ```zenscript
 // initCustomType(string name, string value);
@@ -23,20 +23,20 @@ I tipi personalizzati vengono creati tramite [ZenStager](/Mods/GameStages/ZenSta
 // initCustomType(string name, int[] values);
 // initCustomType(string name, IIngredient value);
 // initCustomType(string name, IIngredient[] values);
-var MyCustomType come CustomStageType = ZenStager. nitCustomType("blockBreak", [<minecraft:stone>]);
+var MyCustomType as CustomStageType = ZenStager.initCustomType("blockBreak", [<minecraft:stone>]);
 ZenStager.initCustomType("disallowedDimension", 14);
 ```
 
-Una volta creato il Tipo Personalizzato è ora possibile assegnare tale Tipo a una [Fase](/Mods/GameStages/ZenStages/Stage/). Chiamando il seguente.
+Once you have created the Custom Type you can now assign that Type to a [Stage](/Mods/GameStages/ZenStages/Stage/). By calling the following.
 
 ```zenscript
 // setStage(Stage stage);
 MyCustomType.setStage(TestStage);
 ```
 
-## Come eseguire un controllo per un tipo personalizzato
+## How to perform a check to a Custom Type
 
-Questo metodo richiede che tu abbia impostato una fase su un tipo. Usando il metodo di cui sopra. Altrimenti restituisce nulla.
+This method requires that you have set a stage to a type. Using the above method. Otherwise it returns null.
 
 ```zenscript
 // getCustomStage(string name, string value);
@@ -45,7 +45,7 @@ Questo metodo richiede che tu abbia impostato una fase su un tipo. Usando il met
 ZenStager.getCustomStage("blockBreak", [<minecraft:stone>]);
 ```
 
-Questo metodo non richiede che un tipo personalizzato sia *Staged* a uno stadio.
+This method does not require a Custom Type to be *Staged* to a stage.
 
 ```zenscript
 // getCustomType(String name);

@@ -1,14 +1,14 @@
 # Liquifier
 
-# Paket
+# Package
 ```zenscript
 mods.alchemistry.Liquifier
 ```
 
 ## Methoden
-**[IItemStack](/Vanilla/Liquids/ILiquidStack/) Ausgabe** - Ausgabe des Rezeptes.
+**[IItemStack](/Vanilla/Liquids/ILiquidStack/) output** - The output of the recipe.
 
-**[IItemStack](/Vanilla/Items/IItemStack/) Eingabe** - Die Eingabe des Rezeptes.
+**[IItemStack](/Vanilla/Items/IItemStack/) input** - The input of the recipe.
 
 ## Addition
 ```zenscript
@@ -16,9 +16,9 @@ mods.alchemistry.Liquifier.addRecipe(ILiquidStack output, IItemStack input);
 mods.alchemistry.Liquifier.addRecipe(<liquid:beryllium>*100,<alchemistry:element:5>);
 ```
 
-## Entfernen
+## Removal
 ```zenscript
 mods.alchemistry.Liquifier.removeRecipe(IItemStack input);
 
-mods.alchemistry.Liquifier.removeAllRezept();
+mods.alchemistry.Liquifier.removeAllRecipes();
 ```

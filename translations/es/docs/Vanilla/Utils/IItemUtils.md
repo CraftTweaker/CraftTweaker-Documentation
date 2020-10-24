@@ -1,7 +1,7 @@
 # IItemUtils
 
-La interfaz de ItemUtils proporciona varias utilidades de elementos.  
-Se puede acceder usando la palabra clave `elementos`.
+La interfaz ItemUtils proporciona varias utilidades de elementos.  
+Se puede acceder usando la palabra clave `itemUtils`.
 
 ## Creando pociones
 
@@ -39,8 +39,8 @@ itemUtils.getItemsByRegexUnlocalizedName(".*pink.*"); // ¡¡¡¡¡¡¡¡¡¡Las
 
 ## Imita el Manejador de Bracket Objeto
 
-Este método hace lo mismo que el [Manejador de Bracket](/Vanilla/Brackets/Bracket_Item/)del artículo.  
-A diferencia del BH, necesita proporcionar el meta como parámetro opcional.  
+Este método hace lo mismo que el [Manejador de Bracket](/Vanilla/Brackets/Bracket_Item/) del artículo. Esto le permite usar variables de cadena en el nombre del elemento concatenándola.  
+A diferencia del manejador de corchetes, necesita proporcionar el meta como parámetro opcional.  
 Si desea utilizar el meta, utilice `32767`.
 
     //getItem(location, @Optional meta);
@@ -49,11 +49,11 @@ Si desea utilizar el meta, utilice `32767`.
     itemUtils.getItem("minecraft:wool", 32767); //<minecraft:wool:*>
     
 
-## Crear huevo de Spawn
+## Crear Huevo de Spawn
 
 La función createSpawnEgg le permite crear huevos de aparición de mod personalizados.  
 La función customNBT es OPCIONAL y puede sobrescribir la etiqueta de entidad.  
-Devuelve el spawn eff como [ItemStack](/Vanilla/Items/IItemStack/).
+Devuelve el huevo de spawn como [ItemStack](/Vanilla/Items/IItemStack/).
 
 ```zenscript
 //createSpawnEgg(entity, @opcional customNBT)

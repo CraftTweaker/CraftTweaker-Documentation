@@ -1,7 +1,7 @@
 # IItemUtils
 
 L'interface ItemUtils fournit divers utils d'éléments.  
-Il est accessible en utilisant le mot-clé `éléments`.
+Il est accessible en utilisant le mot-clé `itemUtils`.
 
 ## Création de potions
 
@@ -39,8 +39,8 @@ itemUtils.getItemsByRegexUnlocalizedName(".*pink.*"); // pink things!! <3
 
 ## Imiter le gestionnaire de la fourchette d'objet
 
-Cette méthode fait la même chose que le [Gestionnaire de brackets d'article](/Vanilla/Brackets/Bracket_Item/).  
-Contrairement au BH, vous devez fournir la méta en tant que paramètre optionnel.  
+Cette méthode fait la même chose que le [Gestionnaire de brackets d'article](/Vanilla/Brackets/Bracket_Item/). Cela vous permet d'utiliser des variables de chaîne dans le nom de l'élément en le concaténant.  
+Contrairement au gestionnaire d'accolades cependant, vous devez fournir la méta en tant que paramètre optionnel.  
 Si vous voulez utiliser la méta joker, utilisez `32767`.
 
     //getItem(location, @Optional meta);
@@ -53,7 +53,7 @@ Si vous voulez utiliser la méta joker, utilisez `32767`.
 
 La fonction createSpawnOg vous permet de créer des œufs d'apparition de mods personnalisés.  
 Le customNBT est OPTIONAL et peut remplacer le tag de l'entité.  
-Renvoie le spawn eff en tant que [IItemStack](/Vanilla/Items/IItemStack/).
+Renvoie l'oeuf d'apparition comme [IItemStack](/Vanilla/Items/IItemStack/).
 
 ```zenscript
 //createSpawnEgg(entity, @optional customNBT)

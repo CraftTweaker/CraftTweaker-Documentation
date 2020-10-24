@@ -1,10 +1,10 @@
 # Mortars
 
-## Импортирование пакета
+## Importing The Package
 
-Вы можете вызвать пакет Mortar используя `mods.advancedmortars.Mortar`.
+You can call the Mortar package using `mods.advancedmortars.Mortar`.
 
-## Добавить рецепт
+## Add Recipe
 
 <table>
   <tr>
@@ -13,7 +13,7 @@
     </th>
     
     <th>
-      Тип данных
+      Data Type
     </th>
     
     <th>
@@ -23,21 +23,21 @@
   
   <tr>
     <td>
-      Типы минометов
+      Mortar Types
     </td>
     
     <td>
-      Строка[]
+      String[]
     </td>
     
     <td>
-      ["дерево", "камень", "чугун", "алмаз"]
+      ["wooden", "stone", "iron", "diamond"]
     </td>
   </tr>
   
   <tr>
     <td>
-      Вывод
+      Output
     </td>
     
     <td>
@@ -51,11 +51,11 @@
   
   <tr>
     <td>
-      Продолжительность
+      Duration
     </td>
     
     <td>
-      Целое
+      Integer
     </td>
     
     <td>
@@ -69,7 +69,7 @@
     </td>
     
     <td>
-      <a href="/Vanilla/Variable_Types/IIngredient/">Иингредиент</a>
+      <a href="/Vanilla/Variable_Types/IIngredient/">IIngredient</a>
     </td>
     
     <td>

@@ -1,18 +1,18 @@
 # Factorizer
 
-Factorizer Managerを使用すると、ファクトライザにレシピを追加できます。
+The Factorizer Manager allows you to add recipes to the factorizer.
 
-## パッケージをインポート
+## Import the package
 
-メソッド呼び出しを短くするには、 [パッケージを](/AdvancedFunctions/Import/) インポートすることができます。
+To shorten method calls you can [import](/AdvancedFunctions/Import/) the package like so:
 
 ```zenscript
 import mods.thermalexpansion.Factorizer;
 ```
 
-## レシピを追加
+## Add Recipes
 
-レシピの一方向分割/組み合わせ、または双方向バインディングを追加できます。
+You can add oneway split/combine recipes or two-way bindings.
 
 ```zenscript
 //mods.thermalexpansion.Factorizer.addRecipeSplit(IItemStack in, IItemStack out);
@@ -25,10 +25,10 @@ mods.thermalexpansion.Factorizer.addRecipeCombine(<minecraft:grass> * 5, <minecr
 mods.thermalexpansion.Factorizer.addRecipeBoth(<minecraft:trapped_chest>, <minecraft:chest> * 13);
 ```
 
-## レシピを削除
+## Remove Recipes
 
-もちろんレシピを削除することもできます。  
-双方向バインディングを削除したい場合は、2つのコールが必要です。
+You can of course also remove recipes.  
+If you want to remove a two-way binding you'll need two calls, though.
 
 ```zenscript
 //mods.thermalexpansion.Factorizer.removeRecipeSplit(IItemStack in);

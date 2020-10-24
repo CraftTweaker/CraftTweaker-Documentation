@@ -2,7 +2,7 @@
 
 ## Требования
 
-Вам нужно знать, как [создать коммиты](/Contribute/LocalClone/CreateCommit/) и вы должны создать хотя бы один из них.
+You need to know how to [create Commits](/Contribute/LocalClone/CreateCommit/) and you need to have created at least one of them.
 
 ## Что мы сделаем
 

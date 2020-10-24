@@ -12,7 +12,7 @@ You can, of course, also [import](/AdvancedFunctions/Import/) the class before a
 События PlayerLeftClickBlock реализуют следующие интерфейсы и также могут вызвать все их методы/getters/setters:
 
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
-- [Взаимодействие игрока](/Vanilla/Events/Events/PlayerInteract/)
+- [PlayerInteract](/Vanilla/Events/Events/PlayerInteract/)
 - [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
 
 
@@ -21,11 +21,11 @@ You can, of course, also [import](/AdvancedFunctions/Import/) the class before a
 
 | ZenGetter           | ZenSetter           | type                                   |
 | ------------------- | ------------------- | -------------------------------------- |
-| `hitvector`         |                     | [ivector3d](/vanilla/world/ivector3d/) |
+| `hitvector`         |                     | [IVector3d](/Vanilla/World/IVector3d/) |
 | `использовать блок` | `использовать блок` | строка ("allow" / "deny" / "default")  |
 | `useitem`           | `useitem`           | строка ("allow" / "deny" / "default")  |
 | `Результат отмены`  | `Результат отмены`  | строка ("успеха" / "pass" / "fail")    |
 
 ## Методы
 
-- `event.cancel()` устанавливает событие как отменено.
+- `event.cancel()` sets the event as cancelled.

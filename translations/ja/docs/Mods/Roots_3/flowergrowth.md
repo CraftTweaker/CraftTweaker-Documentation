@@ -1,14 +1,14 @@
-### クラス
+### Class
 
 ```zenscript
 import mods.roots.FlowerGrowth;
 ```
 
-#### メソッド
+#### Methods
 
 ```zenscript
 void removeRecipe(
-  string name // 削除したいレシピの名前
+  string name // The name of the recipe you wish to remove
 );
 ```
 
@@ -48,6 +48,6 @@ FlowerGrowth.addRecipeBlockState("mystical_white_flower", <blockstate:botania:fl
 FlowerGrowth.addRecipeBlock("mystical_green_flower", <botania:flower>.asBlock(), 2);
 ```
 
-### メモ
+### Notes
 
-現在、二重背の高い花でテストされていません。
+Currently untested with double-tall flowers.

@@ -1,34 +1,34 @@
-# プレッシャーチャンバー
+# Pressure Chamber
 
-プレッシャーチャンバーは、圧縮空気を使用して、1つまたは複数の入力項目を1つ以上の出力項目に変換するマルチブロック構造です。 圧力チャンバーレシピは、変換を実行するために必要なバー内の空気圧である圧力値に関連付けられています。
+The Pressure Chamber is a multiblock structure which uses compressed air to convert one or more input items into one or more output items. Pressure Chamber recipes have an associated pressure value, which is the air pressure in bar required to perform the conversion.
 
-## 発信中
+## Calling
 
-`mods.emeraticcraft.pressurechamber` を使用して、Pressure Chamber パッケージに電話することができます。
+You can call the Pressure Chamber package using `mods.pneumaticcraft.pressurechamber`.
 
-## 削除中
+## Removing
 
-この関数は、与えられた [IItemStack](/Vanilla/Items/IItemStack/) `で見つけた最初のレシピを` 配列から削除します。
+This function removes the first recipe it finds with the given [IItemStack](/Vanilla/Items/IItemStack/) `outputs` array:
 
 ```zenscript
-mods.emeraticcraft.pressurechamber.removeRecipe(IItemStack[] outputs);
+mods.pneumaticcraft.pressurechamber.removeRecipe(IItemStack[] outputs);
 // Example
-mods.emeraticcraft.pressurechamber.removeRecipe([<pneumaticcraft:ingot_iron_compressed>]);
+mods.pneumaticcraft.pressurechamber.removeRecipe([<pneumaticcraft:ingot_iron_compressed>]);
 ```
 
-この関数は *個の* 気圧チャンバーのレシピをすべて削除します。
+This function removes *all* Pressure Chamber recipes:
 
 ```zenscript
-mods.emeraticcraft.pressurechamber.removeAllRecipes();
+mods.pneumaticcraft.pressurechamber.removeAllRecipes();
 ```
 
-## 追加中
+## Adding
 
-この機能は、プレッシャーチャンバーに新しいレシピを追加するために使用されます。
+This function is used to add new recipes to the Pressure Chamber:
 
 ```zenscript
-mods.emeraticcraft.pressurechamber.addRecipe(IIngredient[] inputs, double press, IItemStack[] outputs);
+mods.pneumaticcraft.pressurechamber.addRecipe(IIngredient[] inputs, double pressure, IItemStack[] outputs);
 
 // Example
-mods.emeraticcraft.pressurechamber.addRecipe([<minecraft:gold_ingot> * 2,<minecraft:apple>], 2.0, [<minecraft:golden_apple>]);
+mods.pneumaticcraft.pressurechamber.addRecipe([<minecraft:gold_ingot> * 2,<minecraft:apple>], 2.0, [<minecraft:golden_apple>]);
 ```

@@ -1,14 +1,14 @@
 # Orechid Ignem
 
-Das Paket OrechidIgnem wird zum Hinzufügen oder Entfernen generierter Erze zu/von den Ignem Blumen von Botania Orechid verwendet.
+The OrechidIgnem package is used for adding or removing generated ores to/from the Botania Orechid Ignem Flowers.
 
-## Anruf
+## Calling
 
-Du kannst das OrechidIgnee-Paket mit `mods.botania.OrechidIgnem` aufrufen
+You can call the OrechidIgnem package using `mods.botania.OrechidIgnem`
 
-## Rezeptzusatz
+## Recipe addition
 
-Sie können entweder Rezepte mit dem zurückgegebenen [IOreDictEntry](/Vanilla/OreDict/IOreDictEntry/) als Ausgabeparameter hinzufügen oder den Namen des besagten oreDictEntry als String.
+You can either add recipes using the returned [IOreDictEntry](/Vanilla/OreDict/IOreDictEntry/) as output parameter, or the name of said oreDictEntry as string.
 
 ```zenscript
 //mods.botania.OrechidIgnem.addOre(IOreDictEntry oreDict, int weight);
@@ -18,9 +18,9 @@ mods.botania.OrechidIgnem.addOre(<ore:logWood>, 500);
 mods.botania.OrechidIgnem.addOre("logWood", 500);
 ```
 
-## Rezept-Entfernung
+## Recipe removal
 
-Sie können entweder Rezepte mit dem zurückgegebenen [IOreDictEntry](/Vanilla/OreDict/IOreDictEntry/) als Ausgabeparameter entfernen oder den Namen des genannten oreDictEntry als String.
+You can either remove recipes using the returned [IOreDictEntry](/Vanilla/OreDict/IOreDictEntry/) as output parameter, or the name of said oreDictEntry as string.
 
 ```zenscript
 //mods.botania.OrechidIgnem.removeOre(IOreDictEntry oreDict);

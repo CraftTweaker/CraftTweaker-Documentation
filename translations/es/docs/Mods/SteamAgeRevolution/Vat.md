@@ -1,28 +1,28 @@
 # Vat
 
-El Vat es una máquina que convierte los elementos de entrada y los fluidos en un fluido de salida.
+The Vat is a machine that converts input items and fluids into an output fluid.
 
-## Paquete
+## Package
 `mods.steamagerevolution.Vat`
 
-## Métodos
+## Methods
 
-- **[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) tiene salida** El resultado de la receta.
-- **[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) entrada** Entrada fluida de la receta.
-- **[IIngrediente](/Vanilla/Variable_Types/IIngredient/) inputItems** Artículos a introducir la receta.
-- **tiempo de fabricación** tiempo de fabricación de la máquina para procesar
+- **[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) output** The result of the recipe.
+- **[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) input** Fluid input of the recipe.
+- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) inputItems** Items to input of the recipe.
+- **int craftTime** Crafting time for machine to process
 
-## Agregando
+## Adding
 
 ```zenscript
-mods.steamagerevolution.Vat.addRecipe(entrada ILiquidStack[], IIngredient[] inputItems, salida ILiquidStack, int craftTime);
+mods.steamagerevolution.Vat.addRecipe(ILiquidStack[] input, IIngredient[] inputItems, ILiquidStack output, int craftTime);
 mods.steamagerevolution.Vat.addRecipe([<liquid:tin>*144, <liquid:copper>*144], [<ore:coal>, <ore:cobblestone>], <liquid:steel>*288, 200, 200);
 ```
 
-## Eliminando
+## Removing
 
 ```zenscript
-mods.steamagerevolution.Vat.removeRecipe(salida ILiquidStack);
+mods.steamagerevolution.Vat.removeRecipe(ILiquidStack output);
 mods.steamagerevolution.Vat.removeRecipe(<liquid:lava>);
 
 mods.steamagerevolution.Vat.removeAll();

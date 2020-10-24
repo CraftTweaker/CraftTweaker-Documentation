@@ -1,22 +1,22 @@
-# Recortar Posteo
+# CropGrowPostEvent
 
-El evento Cortar Cultivos se dispara una vez que un bloque de recorte ha crecido **con éxito**. No se puede cancelar y sirve simplemente como una notificación del crecimiento de los cultivos.
+The CropGrowPost Event is fired once a crop block has **successfully** grown. It cannot be canceled, and merely serves as a notification of crop growth.
 
-## Clase de evento
-Necesitarás lanzar el evento en la cabecera de la función como esta clase:  
-`crafttweaker.event. rop PostEvent`  
-Puede, por supuesto, también [importar](/AdvancedFunctions/Import/) la clase antes y usar ese nombre entonces.
+## Event Class
+You will need to cast the event in the function header as this class:  
+`crafttweaker.event.CropGrowPostEvent`  
+You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
 
-## Extensiones de la interfaz de eventos
-Los eventos de Crop Post implementan las siguientes interfaces y son capaces de llamar a todos sus métodos/getters/setters también:
+## Event interface extensions
+CropGrowPost Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
 
-- [Evento IBlock](/Vanilla/Events/Events/IBlockEvent/)
+- [IBlockEvent](/Vanilla/Events/Events/IBlockEvent/)
 
 
 ## ZenGetters
-La siguiente información puede ser recuperada del evento:
+The following information can be retrieved from the event:
 
-| ZenGetter                    | Ajuste | Tipo                                             |
-| ---------------------------- | ------ | ------------------------------------------------ |
-| `Estado de bloqueo original` |        | [Estado de IBlock](/Vanilla/Blocks/IBlockState/) |
-| `bloque original`            |        | [IBlock](/Vanilla/Blocks/IBlock/)                |
+| ZenGetter            | ZenSetter | Type                                        |
+| -------------------- | --------- | ------------------------------------------- |
+| `originalBlockState` |           | [IBlockState](/Vanilla/Blocks/IBlockState/) |
+| `originalBlock`      |           | [IBlock](/Vanilla/Blocks/IBlock/)           |

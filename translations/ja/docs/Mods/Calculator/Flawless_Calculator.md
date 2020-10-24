@@ -1,20 +1,20 @@
-# 完璧な計算ツール
+# Flawless Calculator
 
-## パッケージ
+## Package
 ```zenscript
-import mods.calculator.woopless;
+import mods.calculator.flawless;
 ```
 
-## メソッド
+## Methods
 
-- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input[1-4]** 入力.
-- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) output** 出力。
+- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input[1-4]** The inputs.
+- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) output** The output.
 ## 加算
 ```zenscript
-whobless.addRecipe(IInput1, IIngredient input2, IIngredient input3, IInput4, IIngredient output);
+flawless.addRecipe(IIngredient input1, IIngredient input2, IIngredient input3, IIngredient input4, IIngredient output);
 ```
 
-## 削除
+## Removal
 ```zenscript
-whobless.removeRecipe(IIngredient出力);
+flawless.removeRecipe(IIngredient output);
 ```

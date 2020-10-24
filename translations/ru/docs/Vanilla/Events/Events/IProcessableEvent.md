@@ -1,15 +1,15 @@
 # IProcessableEvent
 
-Этот интерфейс расширен всеми событиями, которые могут быть обработаны.  
-Эти события должны быть установлены как обработанные после того, как все, что они сделаны, было завершено, и другие обработчики событий больше не должны изменять событие.  
-Имейте в виду, что они все еще могут!
+This interface is extended by all events that can be processed.  
+These events are to be set as processed after everything they are made for has been completed and other event handlers should not change the event any more.  
+Bear in mind that they still can!
 
 ## Импорт класса
 
 Может понадобиться [импортировать](/AdvancedFunctions/Import/) класс для избежания ошибок:  
 `import crafttweaker.event.IPlayerEvent`
 
-## Что можно сделать с этими
+## What can be done with these
 
-- `event.process();` метод, возвращает недействительный (ничего)
-- `event.process;` getter, возвращает бул
+- `event.process();` method, returns void (nothing)
+- `event.processed;` getter, returns a bool

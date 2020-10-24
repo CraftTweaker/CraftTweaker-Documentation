@@ -1,13 +1,13 @@
-# Befehle
+# Commands
 
-ContentTweaker erweitert die Kommandopalette von CraftTweaker.  
-Um auf diese Befehle zuzugreifen, tun Sie dasselbe wie bei CraftTweaker-Befehlen, du das `/crafttweaker` Präfix benutzt
+ContentTweaker extends the command palette provided by CraftTweaker.  
+To access these commands you do the same as you do for CraftTweaker commands, you use the `/crafttweaker` prefix
 
-# Liste der ContentTweaker Befehle
+# List of ContentTweaker Commands
 
 ## blockmaterial
 
-Verwendung:
+Usage:
 
 `/crafttweaker blockmaterial`
 
@@ -15,11 +15,11 @@ Verwendung:
 
 Beschreibung:
 
-Gibt eine Liste aller Blockmaterialien im Spiel in die crafttweaker.log Datei aus.
+Outputs a list of all the block materials in the game to the crafttweaker.log file.
 
-## kreativetab
+## creativetab
 
-Verwendung:
+Usage:
 
 `/crafttweaker creativetab`
 
@@ -27,28 +27,28 @@ Verwendung:
 
 Beschreibung:
 
-Gibt eine Liste aller kreativen Tabs des Spiels in die crafttweaker.log Datei aus.
+Outputs a list of all the creative tabs in the game to the crafttweaker.log file.
 
-## schmierend
+## soundevent
 
-Verwendung:
+Usage:
 
 `/crafttweaker soundevent`
 
-`/ct Klang`
+`/ct soundevent`
 
 Beschreibung:
 
-Gibt eine Liste aller Sound-Ereignisse im Spiel in die crafttweaker.log Datei aus.
+Outputs a list of all the sound events in the game to the crafttweaker.log file.
 
-## soundtyp
+## soundtype
 
-Verwendung:
+Usage:
 
 `/crafttweaker soundtype`
 
-`/ct Soundtyp`
+`/ct soundtype`
 
 Beschreibung:
 
-Gibt eine Liste aller Soundtypen im Spiel in die crafttweaker.log Datei aus.
+Outputs a list of all the sound types in the game to the crafttweaker.log file.

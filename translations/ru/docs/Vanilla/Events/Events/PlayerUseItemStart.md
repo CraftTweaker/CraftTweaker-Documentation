@@ -1,6 +1,6 @@
 # PlayerUseItemStart
 
-Событие Начало игрока запускается всякий раз, когда игрок начинает использовать предмет.
+The PlayerUseItemStart Event is fired whenever a player starts using an item.
 
 ## Класс события
 
@@ -10,7 +10,7 @@ You can, of course, also [import](/AdvancedFunctions/Import/) the class before a
 
 ## Наследование от интерфейсов событий
 
-PlayerUseItemStart События реализуют следующие интерфейсы и также могут вызвать все методы/getters/setters:
+PlayerUseItemStart Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
 
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 - [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
@@ -19,12 +19,12 @@ PlayerUseItemStart События реализуют следующие инте
 
 Следующая информация может быть получена от события:
 
-| Геттеры    | Возвращаемый тип                         |
+| ZenGetter  | Возвращаемый тип                         |
 | ---------- | ---------------------------------------- |
-| `отменено` | boolean                                  |
+| `canceled` | boolean                                  |
 | `player`   | [IPlayer](/Vanilla/Players/IPlayer/)     |
-| `элемент`  | [IItemStack](/Vanilla/Items/IItemStack/) |
+| `item`     | [IItemStack](/Vanilla/Items/IItemStack/) |
 
 ## ZenMethods
 
-- `event.cancel()` устанавливает событие, как отменено
+- `event.cancel()` sets the event as cancelled

@@ -1,24 +1,24 @@
-# Limpieza de caldero
+# Cauldron Cleaning
 
-El paquete *de limpieza de caldera* se utiliza para añadir o quitar recetas para/del caldero.
+The *cauldroncleaning* package is used for adding or removing recipes to/from the Cauldron.
 
-## Llamando
+## Calling
 
-Puede llamar al paquete *cauldroncleaning* usando `mods.skyresources.cauldronclean`
+You can call the *cauldroncleaning* package using `mods.skyresources.cauldronclean`
 
-## Adición de receta
+## Recipe Addition
 
 ```zenscript
-//mods.skyresources.cauldronclean.addRecipe(salida ItemStack, entrada ItemStack);
+//mods.skyresources.cauldronclean.addRecipe(IItemStack output, IItemStack input);
 mods.skyresources.cauldronclean.addRecipe(<minecraft:diamond>, <minecraft:dirt>);
 
-//mods.skyresources.cauldronclean.addRecipe(salida ItemStack, entrada ItemStack, oportunidad flota);
+//mods.skyresources.cauldronclean.addRecipe(IItemStack output, IItemStack input, float chance);
 mods.skyresources.cauldronclean.addRecipe(<minecraft:emerald>, <minecraft:dirt>, 0.50);
 ```
 
-## Receta eliminada
+## Recipe Removal
 
 ```zenscript
-//mods.skyresources.cauldronclean.removeRecipe(Salida ItemStack);
+//mods.skyresources.cauldronclean.removeRecipe(IItemStack output);
 mods.skyresources.cauldronclean.removeRecipe(<minecraft:diamond>);
 ```

@@ -1,32 +1,32 @@
 # CTAspectStack
 
-CTAspectStack は [CTAspect](/Mods/Modtweaker/Thaumcraft/Aspects/CTAspect/) であり、スタックが作られるアスペクト数を示す量と組み合わせています。
+A CTAspectStack is a [CTAspect](/Mods/Modtweaker/Thaumcraft/Aspects/CTAspect/) combined with an amount that shows how many aspect points the stack will be made of.
 
 ## パッケージのインポート
 
-問題が発生した場合は、パッケージをインポートする必要があるかもしれませんので、申し訳ありませんし、インポートを追加してください。  
+It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
 `import thaumcraft.aspect.CTAspectStack;`
 
-## そのようなオブジェクトを取得しています
+## Retrieving such an object
 
-CTAspectStack オブジェクトは [CTAspectStack Bracket Handler](/Mods/Modtweaker/Thaumcraft/Brackets/Bracket_Aspect/) オブジェクトから取得できます。
+You can retrieve a CTAspectStack object from the [CTAspectStack Bracket Handler](/Mods/Modtweaker/Thaumcraft/Brackets/Bracket_Aspect/) object:
 
 ```zenscript
-val アスペクト = <aspect:ignis>;
+val aspect = <aspect:ignis>;
 ```
 
 ## ZenGetters
 
-| 名称 | タイプ                                                       |
-| -- | --------------------------------------------------------- |
-| 金額 | int                                                       |
-| 内部 | [CTAspect](/Mods/Modtweaker/Thaumcraft/Aspects/CTAspect/) |
+| 名称       | Type                                                      |
+| -------- | --------------------------------------------------------- |
+| amount   | int                                                       |
+| internal | [CTAspect](/Mods/Modtweaker/Thaumcraft/Aspects/CTAspect/) |
 
-## 金額の設定
+## Setting the amount
 
 ```zenscript
-//これらは同じことを行います。両方とも新しい CTAspectStack
-val アスペクト = <aspect:ignis> * 10;
+//They do the same, both return a new CTAspectStack
+val aspect = <aspect:ignis> * 10;
 
-val アスペクト1 = <aspect:ignis>.setAmount(10);
+val aspect1 = <aspect:ignis>.setAmount(10);
 ```

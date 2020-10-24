@@ -1,28 +1,28 @@
-# Speziale Petalo
+# Petal Apothecary
 
-La confezione Speziale viene utilizzata per aggiungere o rimuovere ricette da/per l'Speziale Botania Petal.
+The Apothecary package is used for adding or removing recipes to/from the Botania Petal Apothecary.
 
-## Chiamata
+## Calling
 
-Puoi chiamare il pacchetto Apothecary usando `mods.botania.Apothecary`
+You can call the Apothecary package using `mods.botania.Apothecary`
 
-## Aggiunta ricetta
+## Recipe addition
 
-È possibile aggiungere ricette utilizzando il restituito [IItemStack](/Vanilla/Items/IItemStack/) come parametro di output, o il nome del fiore botania come stringa. il nome stringa funziona solo per i fiori di botania.  
-Ricordati di una cosa però:  
-L'Speziale è **codificato a chiave per accettare solo petali**, così mentre è possibile aggiungere ricette con qualsiasi ingrediente, si dovrebbe utilizzare solo gli elementi che è possibile gettare nella Spezia.
+You can either add recipes using the returned [IItemStack](/Vanilla/Items/IItemStack/) as output parameter, or the name of the botania flower as string. the string name only works for botania flowers.  
+Remember one thing though:  
+The Apothecary is **hardcoded to only accept petals**, so while you can add recipes with any ingredients, you should only use items that you can throw in the apothecary.
 
 ```zenscript
 //mods.botania.Apothecary.addRecipe(IItemStack output, IIngredient[] input);
-mods.botania.Apothecary.addRecipe(<minecraft:melon>, [<ore:petalLime>, <ore:petalLime> <ore:petalLime>]);
+mods.botania.Apothecary.addRecipe(<minecraft:melon>, [<ore:petalLime>, <ore:petalLime>, <ore:petalLime>]);
 
-//mods. otania.Apothecary.addRecipe(String output, IIngredient[] input);
+//mods.botania.Apothecary.addRecipe(String output, IIngredient[] input);
 mods.botania.Apothecary.addRecipe("daybloom", [<ore:petalLime>, <ore:petalLime>, <ore:petalLime>, <ore:petalRed>]);
 ```
 
-## Rimozione ricetta
+## Recipe removal
 
-È possibile rimuovere le ricette utilizzando il restituito [IItemStack](/Vanilla/Items/IItemStack/) come parametro di output, o il nome del fiore botania come stringa. il nome stringa funziona solo per i fiori di botania.
+You can either remove recipes using the returned [IItemStack](/Vanilla/Items/IItemStack/) as output parameter, or the name of the botania flower as string. the string name only works for botania flowers.
 
 ```zenscript
 //mods.botania.Apothecary.removeRecipe(IItemStack output);

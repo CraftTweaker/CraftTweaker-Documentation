@@ -1,25 +1,25 @@
-# Forgia Leghe Metalliche
+# Alloy Forge
 
-La forgia in lega è una macchina che converte due fluidi di ingresso in un fluido di uscita.
+The Alloy Forge is a machine that converts two input fluids into one output fluid.
 
-## Pacchetto
+## Package
 `mods.steamagerevolution.AlloyForge`
 
-## Metodi
+## Methods
 
-- **[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) output** Il risultato della ricetta.
-- **[Ingresso ILiquidStack](/Vanilla/Liquids/ILiquidStack/)** L'ingresso della ricetta.
-- **int craftTime** Tempo di lavorazione della macchina da elaborare
+- **[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) output** The result of the recipe.
+- **[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) input** The input of the recipe.
+- **int craftTime** Crafting time for machine to process
 
-## Addizione
+## Addition
 
 ```zenscript
-mods.steamagerevolution.AlloyForge.addRecipe(ingresso ILiquidStack, ingresso ILiquidStack, uscita ILiquidStack, int craftTime);
+mods.steamagerevolution.AlloyForge.addRecipe(ILiquidStack input, ILiquidStack input, ILiquidStack output, int craftTime);
 mods.steamagerevolution.AlloyForge.addRecipe(<liquid:water>*100, <liquid:lava>*100, <liquid:obsidian>*200, 200);
 ```
 
 
-## Rimozione
+## Removal
 
 ```zenscript
 mods.steamagerevolution.AlloyForge.removeRecipe(ILiquidStack output);

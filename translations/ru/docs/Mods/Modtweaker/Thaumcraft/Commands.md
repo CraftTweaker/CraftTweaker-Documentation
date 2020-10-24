@@ -1,16 +1,16 @@
-# Команды
+# Commands
 
-Интеграция с Thaumcraft ModTweaker расширяет командную палитру от CraftTweaker.  
-Для доступа к этим командам вы делаете то же самое, что и для команд CraftTweaker, вы используете префикс `/crafttweaker`
+ModTweaker's Thaumcraft integration extends the command palette provided by CraftTweaker.  
+To access these commands you do the same as you do for CraftTweaker commands, you use the `/crafttweaker` prefix
 
-# Список команд Thaumcraft
+# List of Thaumcraft's Commands
 
 ## thaumcraftDump
 
-Использование:
+Usage:
 
 `/crafttweaker thaumcraftDump`
 
 `/ct thaumcraftDump`
 
-Описание: Дампы всей информации Thaumcraft в файл crafttweaker.log.
+Description: Dumps all the Thaumcraft information to the crafttweaker.log file.

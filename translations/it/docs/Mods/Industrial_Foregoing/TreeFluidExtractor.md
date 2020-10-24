@@ -1,12 +1,12 @@
-# Estrattore Di Fluido Albero
+# Tree Fluid Extractor
 
-### Importazione
+### Importing
 
 ```zenscript
 import mods.industrialforegoing.Extractor;
 ```
 
-### Aggiunta
+### Adding
 
 ```zenscript
 Extractor.add(IItemStack output, ILiquidStack fluid);
@@ -14,7 +14,7 @@ Extractor.add(IItemStack output, ILiquidStack fluid);
 Extractor.add(<minecraft:cobblestone>, <liquid:lava> * 3);
 ```
 
-### Rimozione
+### Removing
 
 ```zenscript
 Extractor.remove(IItemStack input);

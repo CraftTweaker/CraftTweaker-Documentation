@@ -1,24 +1,24 @@
-# 旱盆地
+# DryingBasin
 
-此软件包允许您修改干燥盆地的配方。
+This package allows you to modify recipes for the Drying Basin.
 
 ## 导入相关包
 
-如果您想导入这个包，您可以在这里：
+If you want to import this package, here you go:
 
 ```zenscript
-导入 mods.integrateddynamics.DryingBasin;
+import mods.integrateddynamics.DryingBasin;
 ```
 
-## 添加配方
+## Adding Recipes
 
 ```zenscript
-/DryingBasin.addRecipe(@Optional IItemStack inputStack, @Optional ILiquidStack inputFluid, @Optional IItemStack outputStack, @Optional ILiquidStack outputFluid, @Optional(10) int duration);
+//DryingBasin.addRecipe(@Optional IItemStack inputStack, @Optional ILiquidStack inputFluid, @Optional IItemStack outputStack, @Optional ILiquidStack outputFluid, @Optional(10) int duration);
 
-DryingBasin. ddRecipe(<minecraft:melon>, <liquid:lava> * 100, <minecraft:stick>, <liquid:water> * 100, 10)；
+DryingBasin.addRecipe(<minecraft:melon>, <liquid:lava> * 100, <minecraft:stick>, <liquid:water> * 100, 10);
 ```
 
-## 删除配方
+## Removing Recipes
 
 ```zenscript
 //DryingBasin.removeRecipe(@Optional IItemStack inputStack, @Optional ILiquidStack inputFluid, @Optional IItemStack outputStack, @Optional ILiquidStack outputFluid, @Optional(10) int duration);

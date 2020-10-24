@@ -1,37 +1,37 @@
-# Kühler
+# Coolant
 
-Der Coolant Manager gehört nicht zu einer bestimmten Maschine, sondern verwaltet Kühlmittelwerte für alle anderen Maschinen.  
-Zum Beispiel verwendet der Enervation Dynamo die Kühlmittelwerte, ebenso wie der Magmatische Dynamo mit der Ientropischen Reservoir-Erweiterung.
+The Coolant manager does not belong to any specific machine but manages coolant values for all other machines.  
+For example the Enervation Dynamo uses the coolant values, as does the Magmatic Dynamo with the Ientropic Reservoir augment provided.
 
 ## Dieses Paket importieren
 
 To shorten method calls you can [import](/AdvancedFunctions/Import/) the package like so:
 
 ```zenscript
-importieren mods.thermalexpansion.Coolant;
+import mods.thermalexpansion.Coolant;
 ```
 
-## Kühlmittel hinzufügen
+## Add Coolant
 
-Verwende dies, um ein neues Kühlmittel für den Manager zu registrieren.  
-CoolantRF muss nicht negativ sein, und der Kühlmittelfaktor muss zwischen 1 und 100 liegen (inklusiv).  
-Wenn diese Bereiche nicht erfüllt sind, wird das Kühlmittel nicht registriert!
+Use this to register a new coolant to the manager.  
+CoolantRF needs to be non-negative, and the coolant factor needs to be between 1 and 100 (inclusive).  
+If those ranges are not met, the coolant will not be registered!
 
 ```zenscript
 //mods.thermalexpansion.Coolant.addCoolant(ILiquidStack fluid, int coolantRf, int coolantFactor);
 mods.thermalexpansion.Coolant.addCoolant(<liquid:lava>, 0, 1);
 
 
-//Dies sind zwei der Werte, die TE standardmäßig verwendet:
-//mods. hermalexpansion.Coolant.addCoolant(<liquid:water>, 250000, 20);
+//These are two of the values TE uses by default:
+//mods.thermalexpansion.Coolant.addCoolant(<liquid:water>, 250000, 20);
 //mods.thermalexpansion.Coolant.addCoolant(<liquid:cryotheum>, 3000000, 60);
 ```
 
-## Kühlmittel entfernen
+## Remove Coolant
 
-Benutzen Sie dies, um ein bestehendes Kühlmittel des Managers zu deregulieren.
+Use this to deregister an existing coolant from the manager.
 
 ```zenscript
-//mods.thermalexpansion.Coolant.removeCoolant(ILiquidStack Fluid);
+//mods.thermalexpansion.Coolant.removeCoolant(ILiquidStack fluid);
 mods.thermalexpansion.Coolant.removeCoolant(<liquid:water>);
 ```

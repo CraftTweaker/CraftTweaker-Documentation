@@ -1,5 +1,5 @@
-# Inspiraciones
+# Inspirations
 
-El Paquete de Inspiraciones se utiliza únicamente para alterar el Caldero extendido de las Inspiraciones.
+The Inspirations Package is used solely for altering the Inspirations extended Cauldron.
 
 All recipes are added using the [cauldron](/Mods/Modtweaker/Inspirations/Handlers/Cauldron) handler.

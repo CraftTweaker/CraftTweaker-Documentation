@@ -1,11 +1,11 @@
-# Blocco Raccolta-Livello Blocco
+# Block Harvest-Level Locking
 
-## Caratteristica:
+## Feature:
 
-Questo blocco lo rende così il giocatore non può rompere un blocco con il set Harvest-Level a meno che non sia soddisfatta una serie di requisiti. Ad esempio sotto puoi vedere che i blocchi con un livello di raccolta di 3 possono essere rotti solo nella Fine. Questo esempio non è davvero così grande in pratica, ma mostra che cosa questo tipo di serratura è in grado di fare.
+This lock makes it so the player can't break a block with the set Harvest-Level unless a set of Requirements are met. For example below, you can see that Blocks with a Harvest-Level of 3 can only be broken in the End. This example is not really that great in practice, but it does show what this type of lock is capable of doing.
 
-## Sintassi:
+## Syntax:
 
-    mods.compatskills.HarvestLock.addBlockLevelLock(int level, String... requisiti);
+    mods.compatskills.HarvestLock.addBlockLevelLock(int level, String... requirements);
     
-    mods.compatskills.HarvestLock.addBlockLevelLock(3, "dim<unk> 1");
+    mods.compatskills.HarvestLock.addBlockLevelLock(3, "dim|1");

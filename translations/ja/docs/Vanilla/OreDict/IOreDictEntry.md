@@ -8,29 +8,29 @@ They consist of a name (OreDictionary name) and an explanation (all matching ite
 It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
 `import crafttweaker.oredict.IOreDictEntry;`
 
-## そのようなオブジェクトを取得しています。
+## Retrieving such an Object.
 
-IOreDictEntry オブジェクトを取得するには複数の方法があります: まだ存在しないoreDictを参照すると、作成されます。
+There are multiple ways of getting an IOreDictEntry Object: If you refer to an oreDict that does not yet exist, it will be created.
 
-- [IOreDict](/Vanilla/OreDict/IOreDict/) クラスを使用する。
-- [鉱石ブラケットハンドラ](/Vanilla/Brackets/Bracket_Ore/)を使用する。
-- [IItemDefinitionの `は` ゲッター](/Vanilla/Items/IItemDefinition/)を使用します。
+- Using the [IOreDict](/Vanilla/OreDict/IOreDict/) class.
+- Using the [ore Bracket Handler](/Vanilla/Brackets/Bracket_Ore/).
+- Using an [IItemDefinition's `ores` getter](/Vanilla/Items/IItemDefinition/).
 
 ## ZenGetters
 
-これらのゲッターを使用して、オレディクの情報を取得できます:
+You can use these getters to retrieve some information on the oredict:
 
-| 名前        | 説明                    | 戻り値の種類                                   |
-| --------- | --------------------- | ---------------------------------------- |
-| 名前        | オレディクトの名前を返します        | 文字列                                      |
-| 空         | oreDict が空の場合に返します。   | bool                                     |
-| firstItem | オレディクトの項目の最初の項目を返します。 | [IItemStack](/Vanilla/Items/IItemStack/) |
+| name      | Description                              | Return type                              |
+| --------- | ---------------------------------------- | ---------------------------------------- |
+| name      | Returns the oreDict's name               | string                                   |
+| empty     | Returns if the oreDict is empty          | bool                                     |
+| firstItem | Returns the first of the oreDict's items | [IItemStack](/Vanilla/Items/IItemStack/) |
 
 ## ZenMethods
 
-IOreDictEntry オブジェクトでこれらのメソッドを使用できます。
+You can use these methos on an IOreDictEntry Object:
 
-### アイテムの追加/削除
+### Add/Remove items
 
 ```zenscript
 val oreDictEnt = <ore:ingotIron>;
@@ -55,9 +55,9 @@ oreDictEnt.remove(<minecraft:iron_ore>, <minecraft:dirt>);
 oreDictEnt.removeItems([<minecraft:redstone>, <minecraft:gold_ore>]);
 ```
 
-### IOreDictEntry に項目が含まれているかどうかを確認します。
+### Check if an IOreDictEntry contains an item
 
-IOreDictEntry に `の` または `に` キーワードがあるかを確認できます:
+You can check if an IOreDictEntry contains an item using either the `in` or `has` keywords:
 
 ```zenscript
 val oreDictEnt = <ore:ingotIron>;
@@ -73,9 +73,9 @@ if(oreDictEnt has <minecraft:iron_ingot>){
 }
 ```
 
-### IOreDictEntry をミラーする
+### Mirror an IOreDictEntry
 
-IOreDictEntry をミラーリングすることは、他の oreDictEntry 内のすべての項目が oreDictEntry 内の項目に置き換えられることを意味します。
+Mirroring an IOreDictEntry means that all items in the other oreDictEntry will be replaced by the items in the oreDictEntry the method was executed on:
 
 ```zenscript
 //make iron and copper equivalent
@@ -87,15 +87,15 @@ iron.addAll(copper);
 
 
 //mirrors copper to iron, so all items in iron will be replaced by all the ones in copper.
-//この場合は、すべての鉄と銅の oreDictEntries
+//In this case that means by all iron and copper oreDictEntries
 copper.mirror(iron);
 ```
 
-## IIngredient実装
+## IIngredient implementation
 
-IOreDictEntry extends [IIngredient](/Vanilla/Variable_Types/IIngredient/). これは、 [IIngredient](/Vanilla/Variable_Types/IIngredient/) で利用可能なすべてのメソッドが、IOreDictEntries でも利用できることを意味します。 IIngredient配列(レシピメソッドの作成時など)にIOreDictEntryを入れることもできます。
+IOreDictEntry extends [IIngredient](/Vanilla/Variable_Types/IIngredient/). This means that all methods available to [IIngredient](/Vanilla/Variable_Types/IIngredient/) are also available to IOreDictEntries. It also means that you can put IOreDictEntries into IIngredient Arrays (such as the ones in crafting recipe methods).
 
-### oreDictEntryのアイテムを繰り返しています
+### Iterating through an oreDictEntry's items
 
 ```zenscript
 val iron = <ore:ingotIron>;

@@ -1,20 +1,20 @@
-# Замок материала
+# Material Locks
 
-## Блокировка материала
+## Material-Lock
 
-С реализацией поддержки TConstruct в CompatSkills 1.5.0. Теперь у вас есть возможность блокировать:
+With the implementation of TConstruct support in CompatSkills 1.5.0. You now have the ability to lock:
 
-    - Создание инструмента
-    - Часть создания
-    - Замена части
+    - Tool Crafting
+    - Part Crafting
+    - Part Replacement
     
 
-Материалы для Конструкции Тинкера.
+For specific Tinker Construct's Materials.
 
-### Синтаксис:
+### Syntax:
 
-    // Пример пусто:
-    mods.compatskills.MaterialLock.addMaterialLock(String identifier, строка... requirements);
+    // Blank Example:
+    mods.compatskills.MaterialLock.addMaterialLock(String identifier, String... requirements);
     
-    // Пример:
+    // Example:
     mods.compatskills.MaterialLock.addMaterialLock("wood", "reskillable:mining|5", "reskillable:magic|7");

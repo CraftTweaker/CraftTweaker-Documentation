@@ -3,7 +3,7 @@
 ### 导入
 
 ```zenscript
-2. 进口方式.工业化;
+import mods.industrialforegoing.BioReactor;
 ```
 
 ### 添加配方

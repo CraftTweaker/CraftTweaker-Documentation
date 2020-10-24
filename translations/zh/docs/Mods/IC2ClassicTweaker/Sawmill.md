@@ -1,15 +1,15 @@
-# 锯木厂
+# Sawmill
 
 ## 所属包名
 
 ```java
-导入 mods.ic2.Sawmill;
+import mods.ic2.Sawmill;
 ```
 
 ## 使用方式
 
 - **[IItemStack](/Vanilla/Items/IItemStack/) output**
-- **[Igredient](/Vanilla/Variable_Types/IIngredient/) 输入**
+- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input**
 
 ### 添加配方
 
@@ -21,4 +21,4 @@ mods.ic2.Sawmill.addRecipe(<minecraft:diamond_block>, <minecraft:dirt> * 64);
 
 ### 删除配方
 
-要删除已经存在的配方，只需在 `config/ic2/ic2machineRecipes.json` 中禁用相应的配方。
+To remove an already existing recipe, simply disable the corresponding recipe in `config/ic2/ic2machineRecipes.json`.

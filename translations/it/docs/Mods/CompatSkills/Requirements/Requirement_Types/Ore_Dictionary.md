@@ -1,11 +1,11 @@
-# Dizionario Minerario
+# Ore Dictionary
 
-I requisiti di dizionario grezzo sono abbastanza nuovi e richiede che il giocatore sia in mano principale o in mano fuori mano un oggetto con il valore corrispondente ore-dizionario.
+Ore Dictionary Requirements are fairly new and requires the player to be holding either in their main-hand or in their off-hand an item with the matching ore-dictionary value.
 
-    Esempio:
-    ore<unk> string
+    Example:
+    ore|string
     
-    Esempio di lavoro:
-    ore<unk> nuggetIron
-    ore<unk> ingotIron
-    ore<unk> oreIron
+    Working Example:
+    ore|nuggetIron
+    ore|ingotIron
+    ore|oreIron

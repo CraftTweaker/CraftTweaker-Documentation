@@ -1,16 +1,16 @@
-# Прокрутка машины
+# Rolling_Machine
 
-## Импортирование пакета
+## Importing the Package
 `mods.techreborn.rollingMachine`
 
-## Добавление рецептов
+## Adding Recipes
 ```zenscript
-mods.techreborn.rollingMachine.addShaped(IItemStack, IIngredient[][] ингредиенты);
-mods.techreborn.rollingMachine.addShapeless(IItemStack, IIngredient[] ингредиенты);
+mods.techreborn.rollingMachine.addShaped(IItemStack output, IIngredient[][] ingredients);
+mods.techreborn.rollingMachine.addShapeless(IItemStack output, IIngredient[] ingredients);
 ```
 
-## Удаление рецептов
+## Removing Recipes
 ```zenscript
-mods.techreborn.rollingMachine.removeRecipe(выход IItemStack);
+mods.techreborn.rollingMachine.removeRecipe(IItemStack output);
 mods.techreborn.rollingMachine.removeAll();
 ```

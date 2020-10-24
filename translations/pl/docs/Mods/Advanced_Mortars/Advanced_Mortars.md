@@ -1,13 +1,13 @@
-# Zaawansowane moździerze
+# Advanced Mortars
 
-## Informacje
+## Information
 
-Zaawansowane moździerze dodają 4 wielopoziomowe moździerze na świecie i są przeznaczone jako narzędzie do użycia przez autorów modpaczki. Obecnie wspiera ona zarówno JEI, jak i solidną integrację CraftTweaker.
+Advanced Mortars adds 4 tiered in-world Mortars and is intended as a tool to be used by modpack authors. It currently has both support for JEI as well as robust CraftTweaker Integration.
 
-### Więcej informacji
+### For More Information
 
-https://minecraft.curseforge.com/projects/advanced-motars
+https://minecraft.curseforge.com/projects/advanced-mortars
 
-### Raporty błędów
+### Bug Reports
 
 https://github.com/codetaylor/advancedmortars/issues

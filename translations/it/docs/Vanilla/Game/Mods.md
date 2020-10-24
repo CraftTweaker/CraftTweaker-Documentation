@@ -1,58 +1,58 @@
-# Mods Caricati
+# LoadedMods
 
-È possibile utilizzare la parola chiave globale [](/Vanilla/Global_Functions/) `caricata Mods` per accedere a tutte le mod attualmente caricate.  
-Se necessario, puoi importare la classe usando `import crafttweaker.mods.ILoadedMods;`
+You can use the [global keyword](/Vanilla/Global_Functions/) `loadedMods` to access all currently loaded mods.  
+If needed you can import the class using `import crafttweaker.mods.ILoadedMods;`
 
-## Controlla se una mod è caricata
+## Check if a mod is loaded
 
-Usa la funzione `in` per controllare se una mod è caricata;  
-Puoi anche usare il metodo `contiene`:
+Use the `in` function to check if a mod is loaded;  
+You can also use the `contains` method:
 
 ```zenscript
-//if MinecraftCoderPack è caricato
+//if MinecraftCoderPack is loaded
 if(loadedMods in "mcp"){
     print("success!");
 }
 
-//if MinecraftCoderPack è caricato
-if(loadedMods.contains("mcp"){
+//if MinecraftCoderPack is loaded
+if(loadedMods.contains("mcp")){
     print("success!!!");
 }
 ```
 
-## Recupera una mod specifica
+## Retrieve a specific mod
 
-È possibile recuperare una mod specifica come IMod fintanto che hai il suo ID
+You can retrieve a specific mod as IMod as long as you have it's ID
 
 ```zenscript
-//recupera la mod minecraftCoderPack
+//retrieves the minecraftCoderPack mod
 val mod = loadedMods["mcp"];
 ```
 
-## Itera attraverso la modList
+## Iterate through the modList
 
-È possibile iterare attraverso l'elenco delle mod caricate in questo modo:
+You can iterate through the list of loaded mods like this:
 
 ```zenscript
-//stampa tutte le definizioni di articolo registed, non consigliate in pacchetti più grandi!
-//la variabile mod sarà un tipo IMod
-per mod in loadedMods {
-    print(mod. ame ~ ":");
-    per l'articolo in mod. tems {
-        print("\t\t" ~ item. isplayName);
+//prints all registred item definitions, not recommended in larger packs!
+//the mod variable will be an IMod type
+for mod in loadedMods {
+    print(mod.name ~ ":");
+    for item in mod.items {
+        print("\t\t" ~ item.displayName);
     }
 }
 ```
 
 # IMod
 
-L'interfaccia IMod fornisce alcune informazioni generali su una mod specifica.  
-Se necessario, può essere importato usando `import crafttweaker.mods.IMod;`
+The IMod Interface provides you with some general information on a specific mod.  
+If needed, it can be imported using `import crafttweaker.mods.IMod;`
 
-| Zengetter   | Che cosa fa                                       | Tipo Di Reso                               | Utilizzo          |
-| ----------- | ------------------------------------------------- | ------------------------------------------ | ----------------- |
-| id          | Restituisce l'id della mod                        | stringa                                    | `mod.id`          |
-| nome        | Restituisce il nome interno della mod             | stringa                                    | `mod.name`        |
-| versione    | Restituisce la versione della mod                 | stringa                                    | `mod.version`     |
-| descrizione | Restituisce la descrizione della mod              | stringa                                    | `mod.description` |
-| elementi    | Restituisce tutti gli elementi aggiunti dalla mod | [IItemStack](/Vanilla/Items/IItemStack/)[] | `mod.items`       |
+| Zengetter   | What does it do                    | Return Type                                | Usage             |
+| ----------- | ---------------------------------- | ------------------------------------------ | ----------------- |
+| id          | Returns the mod's id               | string                                     | `mod.id`          |
+| name        | Returns the mod's internal name    | string                                     | `mod.name`        |
+| version     | Returns the mod's version          | string                                     | `mod.version`     |
+| description | Returns the mod description        | string                                     | `mod.description` |
+| items       | Returns all items added by the mod | [IItemStack](/Vanilla/Items/IItemStack/)[] | `mod.items`       |

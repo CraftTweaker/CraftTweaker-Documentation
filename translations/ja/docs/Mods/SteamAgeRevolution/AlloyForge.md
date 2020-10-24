@@ -1,28 +1,28 @@
-# 合金炉
+# Alloy Forge
 
-Alloy Forgeは、2つの入力流体を1つの出力流体に変換する機械です。
+The Alloy Forge is a machine that converts two input fluids into one output fluid.
 
-## パッケージ
+## Package
 `mods.steamagerevolution.AlloyForge`
 
-## メソッド
+## Methods
 
-- **[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) 出力** レシピの結果。
-- **[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) input** レシピの入力。
-- **int craftTime** マシンの加工時間
+- **[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) output** The result of the recipe.
+- **[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) input** The input of the recipe.
+- **int craftTime** Crafting time for machine to process
 
 ## 加算
 
 ```zenscript
-mods.steamagerevolution.AlloyForge.addRecipe(ILiquidStack input, ILiquidStack input, int craftTime);
+mods.steamagerevolution.AlloyForge.addRecipe(ILiquidStack input, ILiquidStack input, ILiquidStack output, int craftTime);
 mods.steamagerevolution.AlloyForge.addRecipe(<liquid:water>*100, <liquid:lava>*100, <liquid:obsidian>*200, 200);
 ```
 
 
-## 削除
+## Removal
 
 ```zenscript
-mods.steamagerevolution.AlloyForge.removeRecipe(ILiquidStack出力);
+mods.steamagerevolution.AlloyForge.removeRecipe(ILiquidStack output);
 mods.steamagerevolution.AlloyForge.removeRecipe(<liquid:bronze>);
 
 mods.steamagerevolution.AlloyForge.removeAll();

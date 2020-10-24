@@ -1,15 +1,15 @@
-# エンチャンター
+# Enchanter
 
-## パッケージ
+## Package
 
 ```zenscript
-import mods.aether_legacy.Enchanter;エンチャンター;
+import mods.aether_legacy.Enchanter;Enchanter;
 ```
-## 使用法
+## Usage
 
 ```zenscript
 Enchanter.registerEnchantment(IItemStack input, IItemStack output, int timeRequired);
-// ツールとものの修復
+// repairing tools and stuff
 Enchanter.registerEnchantment(IItemStack repair, int timeRequired);
-EnchanterFuel(IItemStack input, int timeGiven);
+Enchanter.registerEnchanterFuel(IItemStack input, int timeGiven);
 ```

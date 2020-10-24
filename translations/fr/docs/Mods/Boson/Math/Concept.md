@@ -1,11 +1,11 @@
-# Le concept
+# The Concept
 
-La plupart des utilisations de Maths dans ZenScript peuvent être couvertes via les quatre opérations de base : ajout, soustraction, multiplication et division. ZenScript fournit également l'accès à la fonction `pow` qui effectue l'opération d'alimentation. Mais c'est tout. Des opérations mathématiques plus avancées ne peuvent pas être effectuées, et nécessiterait une réimplémentation complète avec les tables de recherche et ne profiterait pas des optimisations matérielles à cet égard, en particulier pour les processeurs modernes.
+Most of the uses of Math in ZenScript can be covered via the four basic operations: addition, subtraction, multiplication, and division. ZenScript also provides access to the `pow` function, which performs the power operation. But that's it. More advanced mathematical operations cannot be performed, and would require a full reimplementation with lookup tables and wouldn't benefit from the hardware's optimizations in that regard, especially for modern CPUs.
 
-C'est là que ZenScriptX Math entre en jeu, fournissant un ensemble de classes et quelques opérations arithmétiques de base qui peuvent être d'utilité générale, tout en profitant en grande partie des optimisations matérielles, car la plupart d'entre elles sont implémentées au niveau natif (via quelques indirections dues à l'exécution du ZenScript VM).
+This is where ZenScriptX Math comes in, providing a set of classes and some basic arithmetic operations that may be of general usefulness, while also benefitting in the most part from hardware optimizations, since most of those are implemented on a native level (via a couple of indirections due to the VM ZenScript runs on).
 
-Chaque section de documentation fournira à l'utilisateur une liste des fonctions fournies et leur comportement.
+Every documentation section will provide the user with a list of provided functions and their behavior.
 
-La liste actuelle des classes fournies qui sont implémentées sont:
+The current list of provided classes that are implemented are:
 
-- [Maths](/Mods/Boson/Math/Math/) pour des fonctions mathématiques courantes (par exemple, péché, cosine, logarithme...)
+- [Math](/Mods/Boson/Math/Math/) for common mathematical functions (e.g., sine, cosine, logarithm...)

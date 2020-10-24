@@ -1,14 +1,14 @@
-### クラス
+### Class
 
 ```zenscript
 import mods.roots.AnimalHarvest;
 ```
 
-#### メソッド
+#### Methods
 
 ```zenscript
 void addEntity(
-  IEntityDefinition entity // the entity to generate drop for
+  IEntityDefinition entity // the entity to generate drops for
 );
 ```
 
@@ -16,7 +16,7 @@ void addEntity(
 
 ```zenscript
 void removeEntity(
-  IEntityDefinition entity // the entity to stop drop for
+  IEntityDefinition entity // the entity to stop generating drops for
 );
 ```
 
@@ -45,8 +45,8 @@ void removeFish(
 ```zenscript
 import mods.roots.AnimalHarvest;
 
-// Adds an enderman as a target for the Animal Harvest rital.
-// 一般的にそれは動物を使用する方が良いでしょう。
+// Adds an enderman as a target for the Animal Harvest ritual.
+// Generally it would be better to use animals.
 AnimalHarvest.addEntity(<entity:minecraft:enderman>);
 
 // Prevents the entity from giving drops during the ritual

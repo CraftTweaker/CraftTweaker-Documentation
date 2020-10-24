@@ -1,24 +1,24 @@
-# スターライト変換
+# Starlight Transmutation
 
-Starlight Transmutationsの追加と削除ができます。
+You can add and remove Starlight Transmutations
 
-## 発信中
+## Calling
 
-`mods.astalsorcery.LightTransmutions` を使って LightTransmutations パッケージを呼び出すことができます。
+You can call the LightTransmutations package using `mods.astralsorcery.LightTransmutation`.
 
-## 削除中
+## Removing
 
 This function removes the first recipe it finds that returns provided [IItemStack](/Vanilla/Items/IItemStack/) `output` and uses `matchStack` to determine whether it should also match Metadata.  
 If there are multiple recipes that return the provided output, you need to call this method multiple times!
 
 ```zenscript
-//mods.astalsorcery.LightTransmutation.removeTransmutation(IItemStack stackToRemove, boolean matchMeta);
-mods.astalsorcery.LightTransmutation.removeTransmutation(<minecraft:end_stone>, false);
+//mods.astralsorcery.LightTransmutation.removeTransmutation(IItemStack stackToRemove, boolean matchMeta);
+mods.astralsorcery.LightTransmutation.removeTransmutation(<minecraft:end_stone>, false);
 ```
 
 ## 加算
 
 ```zenscript
-//mods.astalsorcery.LightTransmutation.addTransmutation(IItemStack stackIn, IItemStack stackOut, double cost);
+//mods.astralsorcery.LightTransmutation.addTransmutation(IItemStack stackIn, IItemStack stackOut, double cost);
 mods.astralsorcery.LightTransmutation.addTransmutation(<minecraft:grass>, <minecraft:gold_ore>, 10);
 ```

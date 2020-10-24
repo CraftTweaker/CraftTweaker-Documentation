@@ -1,8 +1,8 @@
-# Обломки секиры
+# Axe Chopping
 
-## Доступность
+## Availability
 
-Перед тем как делать что-нибудь, нужно проверить, включена ли осевая рубка или нет:
+Before doing anything, you should check whether axe-chopping is enabled or not:
 
 ```zenscript
 import mods.cuisine.AxeChopping;
@@ -17,48 +17,48 @@ if (AxeChopping.isEnabled()) {
 ## Сложение
 
 ```zenscript
-Импортируйте mods.cuisine.AxeChopping;
+import mods.cuisine.AxeChopping;
 
-AxeChopping.add(IItemStack input, IItemStack);
+AxeChopping.add(IItemStack input, IItemStack output);
 
 AxeChopping.add(<item:minecraft:dirt>, <item:minecraft:diamond>);
 
-// При необходимости также можно использовать ore dictionary.
-AxeChopping.add(IOreEntry input, IItemStack);
+// If necessary, it is also possible to use ore dictionary.
+AxeChopping.add(IOreEntry input, IItemStack output);
 
 AxeChopping.add(<ore:cobblestone>, <item:minecraft:diamond>);
 ```
 
-## Удаление
+## Removal
 
 ```zenscript
 import mods.cuisine.AxeChopping;
 
-// Удаляем по вводу.
-AxeChopping.remove(IItemStack);
+// Remove by input.
+AxeChopping.remove(IItemStack input);
 
 AxeChopping.remove(<item:minecraft:log>);
 
-// Удаляем по выводу.
-AxeChopping.removeByOutput(IItemStack);
+// Remove by output.
+AxeChopping.removeByOutput(IItemStack output);
 
 AxeChopping.removeByOutput(<item:minecraft:plank>);
 
-// Удаляем по идентификатору.
-AxeChopping.remove(tring id);
+// Remove by identifier.
+AxeChopping.remove(String id);
 
 AxeChopping.remove("recipe_name");
 
-// Удаляем все!
+// Remove everything!
 AxeChopping.removeAll();
 ```
 
 ## Misc.
 
 ```zenscript
-импортировать mods.cuisine.AxeChopp;
+import mods.cuisine.AxeChopping;
 
-defaultPlanksOutput в качестве int = AxeChopping.getDefaultPlanksOutput();
+val defaultPlanksOutput as int = AxeChopping.getDefaultPlanksOutput();
 
-defaultStickOutput как int = AxeChopping.getDefaultStickOutput();
+val defaultStickOutput as int = AxeChopping.getDefaultStickOutput();
 ```

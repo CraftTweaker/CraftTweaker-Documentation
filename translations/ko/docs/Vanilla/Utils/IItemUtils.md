@@ -1,7 +1,7 @@
 # IItemUtils
 
 The ItemUtils interface provides various item utils.  
-It can be accessed using the `items` keyword.
+It can be accessed using the `itemUtils` keyword.
 
 ## Creating Potions
 
@@ -39,8 +39,8 @@ itemUtils.getItemsByRegexUnlocalizedName(".*pink.*"); // pink things!! <3
 
 ## Imitate the Item Bracket Handler
 
-This method does the same as the [Item Bracket Handler](/Vanilla/Brackets/Bracket_Item/).  
-Unlike the BH though, you need to provide the meta as optional parameter.  
+This method does the same as the [Item Bracket Handler](/Vanilla/Brackets/Bracket_Item/). This allows you to use string variables in the item name by concatenating it in.  
+Unlike the bracket handler though, you need to provide the meta as optional parameter.  
 If you want to use the wildcard meta, use `32767`.
 
     //getItem(location, @Optional meta);
@@ -49,11 +49,11 @@ If you want to use the wildcard meta, use `32767`.
     itemUtils.getItem("minecraft:wool", 32767);   //<minecraft:wool:*>
     
 
-## Create Spawn egg
+## Create Spawn Egg
 
 The createSpawnEgg function allows you to create custom mod spawn eggs.  
 The customNBT is OPTIONAL and can override the entity tag.  
-Returns the spawn eff as [IItemStack](/Vanilla/Items/IItemStack/).
+Returns the spawn egg as [IItemStack](/Vanilla/Items/IItemStack/).
 
 ```zenscript
 //createSpawnEgg(entity, @optional customNBT)

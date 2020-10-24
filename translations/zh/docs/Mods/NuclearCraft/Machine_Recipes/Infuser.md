@@ -1,16 +1,16 @@
-# 衰变感染者
+# Decay Infuser
 
-## 导入软件包
-`nuclearcraft.infuser`
+## Importing the Package
+`mods.nuclearcraft.infuser`
 
-## 添加配方
+## Adding Recipes
 ```zenscript
 mods.nuclearcraft.infuser.addRecipe([itemInput, fluidInput, itemOutput, @Optional double timeMultiplier, @Optional double powerMultiplier, @Optional double processRadiation]);
 ```
 
-## 删除配方
+## Removing Recipes
 ```zenscript
-mods.nuclearcraft.infuser.removeRecipeWidInput([itemInput, fluidInput]);
-mods.nuclearcraft.infuser.removeRecipuet([itemOutput]);
+mods.nuclearcraft.infuser.removeRecipeWithInput([itemInput, fluidInput]);
+mods.nuclearcraft.infuser.removeRecipeWithOutput([itemOutput]);
 mods.nuclearcraft.infuser.removeAllRecipes();
 ```

@@ -1,428 +1,428 @@
-# Polecenia
+# Commands
 
-CraftTweaker dodaje polecenia, które pomogą Ci w tworzeniu skryptów, są one dostarczane w celu skrócenia czasu tworzenia skryptów.
+CraftTweaker adds commands that will help you with the creation of scripts, they are provided to help reduce the development time of writing scripts.
 
-Prefiks dla poleceń to: `/crafttweaker` lub `/ct`
+The prefix for commands are: `/crafttweaker` or `/ct`
 
-Możesz również użyć jednego z tych aliasów: `/minetweaker` lub `/mt`
+You can also use one of these aliases: `/minetweaker` or `/mt`
 
-Wszystkie komendy można znaleźć w nazwie przez wykonanie:
+All the commands can be found ingame by doing:
 
 `/crafttweaker help`
 
-lub
+or
 
-`/daj pomoc`
+`/ct help`
 
-# Lista poleceń
+# List of commands
 
-## Biomasy
+## Biomes
 
-Użycie:
+Usage:
 
 `/crafttweaker biomes`
 
-`/g biomy`
+`/ct biomes`
 
-Opis:
+Description:
 
-Wyświetla wszystkie biomy, które są w grze.
+Lists all of the biomes that are in the game.
 
-## Typy biomów
+## BiomeTypes
 
-Użycie:
+Usage:
 
-`/stwórz biomeTypy słabszego`
+`/crafttweaker biomeTypes`
 
-`/uj biomeTypy`
+`/ct biomeTypes`
 
-Opis:
+Description:
 
-Wyświetla listę wszystkich biomeTypów, które są w grze.
+Lists all of the biomeTypes that are in the game.
 
 ## BlockInfo
 
-Użycie:
+Usage:
 
 `/crafttweaker blockinfo`
 
-`/dlaj informacje o blokadzie`
+`/ct blockinfo`
 
-Opis:
+Description:
 
-Aktywuje lub wyłącza czytnik bloków. W trybie informacji o bloku kliknij prawym przyciskiem myszy blok poda nazwę, metadane i dane jednostki kafelka, jeśli dotyczy.
+Activates or deactivates the block reader. In block info mode, right-clicking a block will tell you it's name, metadata and Tile Entity data if applicable.
 
-## Bloki
+## Blocks
 
-Użycie:
+Usage:
 
-`/stwórz słabsze bloki`
+`/crafttweaker blocks`
 
-`/ct bloki`
+`/ct blocks`
 
-Opis:
+Description:
 
-Wyświetla listę wszystkich bloków w grze do pliku crafttweaker.log.
+Outputs a list of all the blocks in the game to the crafttweaker.log file.
 
-## Błędy
+## Bugs
 
-Użycie:
+Usage:
 
 `/crafttweaker bugs`
 
-`/Wyczyść błędy`
+`/ct bugs`
 
-Opis:
+Description:
 
-Otwiera przeglądarkę za pomocą trackera błędów GitHub.
+Opens your browser with the GitHub bug tracker.
 
-## Konflikt
+## Conflict
 
-Użycie:
+Usage:
 
 `/crafttweaker conflict`
 
-`/ct konflikt`
+`/ct conflict`
 
-Opis:
+Description:
 
-Wyświetla listę wszystkich sprzecznych przepisów stołu rzemieślniczego do pliku crafttweaker.log.  
-Zauważ, że działa tylko na CLIENT z zainstalowanym JEI!
+Outputs a list of all conflicting crafting table recipes to the crafttweaker.log file.  
+Note that this only works on a CLIENT with JEI installed!
 
 ## Discord
 
-Użycie:
+Usage:
 
 `/crafttweaker discord`
 
 `/ct discord`
 
-Opis:
+Description:
 
-Otwiera przeglądarkę z linkiem do [serwera Discorda](https://www.discord.blamejared.com).
+Opens your browser with a link to [the Discord server](https://www.discord.blamejared.com).
 
-## Dokumentacja
+## Docs
 
-Użycie:
+Usage:
 
 `/crafttweaker docs`
 
-`/uj dokumenty`
+`/ct docs`
 
-Opis:
+Description:
 
-Otwiera przeglądarkę do tej strony dokumentacji (tak samo jak `/ct wiki`).
+Opens your browser to this docs page (same as `/ct wiki`).
 
-## Kopie zapasowe
+## DumpZs
 
-Użycie:
+Usage:
 
 `/crafttweaker dumpzs`
 
 `/ct dumpzs`
 
-Opis:
+Description:
 
-Wystawia zrzut ZenScript do folderu crafttweaker_zrzut w katalogu minecraft jako plik HTML.  
-Możesz użyć jednego lub więcej celów zrzutu, które będą wykonywane kolejno (jeśli podasz cel dwukrotnie zostanie uruchomiony dwukrotnie).  
-Cele można znaleźć przy użyciu automatycznego uzupełnienia (klawisza karty).  
-Domyślnie `log`, `html` i `json` są zarejestrowane jako cele.  
-Obejmie to wszystkie zarejestrowane uchwyty nawiasów, ZenTypy, funkcje globalne, ZenExpansions wszystkie zarejestrowane pakiety, w tym ich metody.  
-Zauważ, że nie wszystkie z nich mogą być używane w skryptach!
+Outputs a ZenScript dump to a crafttweaker_dump folder within your minecraft directory as HTML file.  
+You can use one or more dump targets that will be executed consecutively (if you provide a target twice it will run twice).  
+The targets can be found using auto-complete (tab key).  
+By default `log`, `html` and `json` are registered as targets.  
+This will include all registered Bracket Handlers, ZenTypes, Global Functions, ZenExpansions an all Registered Packages including their methods.  
+Note that not all of these can be used from within the scripts!
 
-## Podmioty
+## Entities
 
-Użycie:
+Usage:
 
-`/stwórz słabsze obiekty`
+`/crafttweaker entities`
 
-`/g byty`
+`/ct entities`
 
-Opis:
+Description:
 
-Wyświetla listę wszystkich obiektów w grze do pliku crafttweaker.log.
+Outputs a list of all the entities in the game to the crafttweaker.log file.
 
-## Daj przedmiot
+## Give Item
 
-Użycie:
+Usage:
 
-`/crafttweaker dla <minecraft:bedrock>`
+`/crafttweaker give <minecraft:bedrock>`
 
-`/ct daj <minecraft:bedrock>`
+`/ct give <minecraft:bedrock>`
 
-Opis:
+Description:
 
-Daje graczowi przedmiot za pomocą składni obsługi nawiasów CrT.  
-Możesz również zastosować tagi przez dołączenie `. ithTag()` wywołanie.  
-Zauważ, że jest to całkiem prosty analizator i może nie działać dla każdego przypadku!
+Gives the player the item using CrT's Bracket handler syntax.  
+You can also apply tags by appending a `.withTag()` call.  
+Note that this is a pretty simple parser and may not work for every case!
 
-## Dłoń
+## Hand
 
-Użycie:
+Usage:
 
 `/crafttweaker hand`
 
-`/ct dłoń`
+`/ct hand`
 
-Opis:
+Description:
 
-Wyświetla nazwę przedmiotu w dłoni na czacie.
+Prints the name of the item in your hand to the chat.
 
-Skopiuje również nazwę do schowka i wydrukuje wpisy.
+Also copies the name to clipboard and prints oredict entries.
 
-## Ekwipunek
+## Inventory
 
-Użycie:
+Usage:
 
-`/stwórz słabsze zapasy`
+`/crafttweaker inventory`
 
-`/l ekwipunek`
+`/ct inventory`
 
-Opis:
+Description:
 
-Wyświetla listę wszystkich przedmiotów w twoim ekwipunku do pliku crafttweaker.log.
+Outputs a list of all the items in your inventory to the crafttweaker.log file.
 
-## JeiKategorie
+## JeiCategories
 
-Użycie:
+Usage:
 
-`/stwórz słabsze jeiKategorie`
+`/crafttweaker jeiCategories`
 
-`/ct_jeiCategories`
+`/ct jeiCategories`
 
-Opis:
+Description:
 
-Wyświetla listę wszystkich zarejestrowanych kategorii jei do pliku crafttweaker.log.  
-Wymaga JEI do zainstalowania (zaskoczenie)!
+Outputs a list of all registered jei categories to the crafttweaker.log file.  
+Requires JEI to be installed (surprise)!
 
 ## Json
 
-Użycie:
+Usage:
 
-`/crafttweaker json` `/crafttweaker json uciekł`
+`/crafttweaker json` `/crafttweaker json escaped`
 
-`/ct json` `/ct json uciekł`
+`/ct json` `/ct json escaped`
 
-Opis:
+Description:
 
-Wyświetla nbt przedmiotu w dłoni jako JSON na czacie.  
-Ten format różni się od formatowania IData CraftTweaker.  
-Możesz kliknąć go aby skopiować do schowka.  
-Możesz również dumować `uciekł argumetn` , aby automatycznie uciec z powstałego ciągu.
+Prints the nbt of the item in your hand as JSON to the chat.  
+This format differs from the IData formatting CraftTweaker uses.  
+You can click it to be copied to your clipboard.  
+You can also privide the `escaped` argumetn to automatically escape the resulting string.
 
-## Płyny
+## Liquids
 
-Użycie:
+Usage:
 
 `/crafttweaker liquids`
 
-`/l ciecze`
+`/ct liquids`
 
-Opis:
+Description:
 
-Wystawia listę wszystkich cieczy w grze do pliku crafttweaker.log.
+Outputs a list of all the liquids in the game to the crafttweaker.log file.
 
-## Logi
+## Log
 
-Użycie:
+Usage:
 
 `/crafttweaker log`
 
-`/g dziennika`
+`/ct log`
 
-Opis:
+Description:
 
-Wysyła klikalny link, aby otworzyć crafttweaker.log.
+Sends a clickable link to open the crafttweaker.log.
 
-## Modyfikacje
+## Mods
 
-Użycie:
+Usage:
 
 `/crafttweaker mods`
 
-`/uj modyfikacje`
+`/ct mods`
 
-Opis:
+Description:
 
-Wyświetla listę wszystkich modyfikacji i ich wersji w grze do pliku crafttweaker.log i drukuje ją na czacie.
+Outputs a list of all the mods and their versions in the game to the crafttweaker.log file and prints it in chat.
 
-## Nazwisko
+## Names
 
-Użycie:
+Usage:
 
 `/crafttweaker names [category]`
 
 `/ct names [category]`
 
-Opis:
+Description:
 
-Wyświetla listę wszystkich przedmiotów w grze do pliku crafttweaker.log.  
-Argument `kategorii` jest opcjonalny i rozszerzy listę o odpowiednie informacje:
+Outputs a list of all the items in the game to the crafttweaker.log file.  
+The `category` argument is optional and will extend the list with the according information:
 
-* spalanie
-* tabulatory kreatywne
-* Uszkodzone
-* wyświetlanie
-* zdolność zaklęcia
-* wartość jedzenia
+* burntime
+* creativetabs
+* damageable
+* display
+* enchantability
+* foodvalue
 * maxdamage
-* maksstack
+* maxstack
 * maxuse
 * modid
-* rzadkość
-* naprawialne
-* koszt napraw
-* wartość nasycenia
+* rarity
+* repairable
+* repaircost
+* saturationvalue
 * unloc
 
-Możesz również zobaczyć wszystkie dostępne parametry za pomocą funkcji autouzupełniania klawiszy TAB.
+You can also see all the available parameters using the TAB-Key autocompletion feature.
 
 ## Nbt
 
-Użycie:
+Usage:
 
 `/crafttweaker nbt`
 
-`/pl/nbt`
+`/ct nbt`
 
-Opis:
+Description:
 
-Wyjścia NBT bloku, którego patrzysz lub który trzymasz do pliku crafttweaker.log.
+Outputs the NBT of the block you are looking at or the item you are holding to the crafttweaker.log file.
 
 ## OreDict
 
-Użycie:
+Usage:
 
 `/crafttweaker oredict <name>`
 
 `/ct oredict <name>`
 
-Opis:
+Description:
 
-Wyświetla listę wszystkich wpisów OreDict w grze do pliku crafttweaker.log.
+Outputs a list of all the OreDict entries in the game to the crafttweaker.log file.
 
-Jeśli podana jest nazwa, nazwy wszystkich elementów zarejestrowanych do oredict zostaną wysłane do pliku crafttweaker.log.
+If a name is supplied, the names of all the items registered to the oredict will be outputted to the crafttweaker.log file.
 
-## Mikstury
+## Potions
 
-Użycie:
+Usage:
 
-`/stwórz mikstury słabszych`
+`/crafttweaker potions`
 
-`/uj mikstury`
+`/ct potions`
 
-Opis:
+Description:
 
-Wyświetla listę wszystkich mikstur w grze do pliku crafttweaker.log.
+Outputs a list of all the potions in the game to the crafttweaker.log file.
 
-## Nazwy przepisów
+## RecipeNames
 
-Użycie:
+Usage:
 
-`/crafttttweaker recipeNames`  
+`/crafttweaker recipeNames`  
 `/crafttweaker recipeNames [modid]`
 
 `/ct recipeNames`  
 `/ct recipeNames [modid]`
 
-Opis:
+Description:
 
-Wyświetla listę wszystkich nazw receptur w grze do pliku crafttweaker.log.  
-Można podać modid do filtrowania wyników.
+Outputs a list of all recipe names in the game to the crafttweaker.log file.  
+A modid can be provided to filter results.
 
-## Przepisy
+## Recipes
 
-Użycie:
+Usage:
 
-`/stwórz słabsze przepisy`
+`/crafttweaker recipes`
 
-`/wyłącz przepisy`
+`/ct recipes`
 
-Opis:
+Description:
 
-Wyswietla listę wszystkich przepisów w grze do pliku crafttweaker.log.
+Outputs a list of all the crafting recipes in the game to the crafttweaker.log file.
 
-## Receptury (Hand)
+## Recipes (Hand)
 
-Użycie:
+Usage:
 
-`/stwórz słabsze receptury`
+`/crafttweaker recipes hand`
 
-`/wyślij receptury`
+`/ct recipes hand`
 
-Opis:
+Description:
 
-Wyswietla listę wszystkich przepisów rzemieślniczych dla przedmiotu w ręce gracza w grze do pliku crafttweaker.log.
+Outputs a list of all the crafting recipes for the item in the player's hand in the game to the crafttweaker.log file.
 
-## Receptury (piec)
+## Recipes (Furnace)
 
-Użycie:
+Usage:
 
-`/stwórz słabsze piece`
+`/crafttweaker recipes furnace`
 
-`/wyłącz piece receptury`
+`/ct recipes furnace`
 
-Opis:
+Description:
 
-Wyswietla listę wszystkich receptur pieca w grze do pliku crafttweaker.log.
+Outputs a list of all the furnace recipes in the game to the crafttweaker.log file.
 
-## Skrypty
+## Scripts
 
-Użycie:
+Usage:
 
 `/crafttweaker scripts`
 
-`/wyłącz skrypty`
+`/ct scripts`
 
-Opis:
+Description:
 
-Wysyła klikalny link, aby otworzyć katalog skryptów.  
-Można również wykonać z wiersza poleceń, które zamiast tego drukuje ścieżkę bezwzględną do katalogu do logu.
+Sends a clickable link to open the scripts directory.  
+Can also be executed from a command line which instead prints the absolute path to the directory to the log.
 
-## Nasiona
+## Seeds
 
-Użycie:
+Usage:
 
-`/stwórz słabsze nasiona`
+`/crafttweaker seeds`
 
-`/g nasiona`
+`/ct seeds`
 
-Opis:
+Description:
 
-Wyświetla listę wszystkich pozycji w rejestrze seed do pliku crafttweaker.log.
+Outputs a list of all the items in the seed registry to the crafttweaker.log file.
 
-## Składnia
+## Syntax
 
-Użycie:
+Usage:
 
 `/crafttweaker syntax`
 
-`/e składnia`
+`/ct syntax`
 
-Opis:
+Description:
 
-Odczytuje wszystkie skrypty i wyśle wszystkie błędy, które znajdziesz w składniach. Zauważ, że nie zastosuje się zmian w twoim skrypcie, musisz zrestartować swoją grę, aby je zobaczyć.
+Reads through all your scripts and will output all errors it finds in your syntaxes. Note that this won't apply your script changes, you need to restart your game to see them in effect.
 
 ## Wiki
 
-Użycie:
+Usage:
 
 `/crafttweaker wiki`
 
-`/wiki`
+`/ct wiki`
 
-Opis:
+Description:
 
-Otwiera przeglądarkę do tej strony wiki (tak samo jak `/ct docs`).
+Opens your browser to this wiki page (same as `/ct docs`).
 
 ## ZsLint
 
-Użycie:
+Usage:
 
 `/crafttweaker zslint`
 
-`/e zslint`
+`/ct zslint`
 
-Opis:
+Description:
 
-Uruchamia gniazdo zslint.
+Starts the zslint socket.

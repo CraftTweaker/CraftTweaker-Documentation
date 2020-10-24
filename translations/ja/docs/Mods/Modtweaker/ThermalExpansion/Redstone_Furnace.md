@@ -1,6 +1,6 @@
-# レッドストーン炉
+# Redstone Furnace
 
-## パッケージ
+## Package
 
 `mods.thermalexpansion.RedstoneFurnace`
 
@@ -18,14 +18,14 @@ mods.thermalexpansion.RedstoneFurnace.addRecipe(<minecraft:gold_ingot>, <minecra
 mods.thermalexpansion.RedstoneFurnace.removeRecipe(<minecraft:gold_ore>);
 ```
 
-## Pyrolitic Augmentの追加
+## Pyrolitic Augment Addition
 
 ***エネルギーが`1.5`倍されていることに注意してください。 エネルギーが`1.5`倍されていることに注意してください。 `2000`のエネルギーを指定すると、実際のレシピにおけるコストは、`3000` RFになります。 同様に、`1500`を指定すると、`2250` RFのコストが必要になります。 同様に、`1500`を指定すると、`2250` RFのコストが必要になります。***
 
 木炭をcoal cokeに変え、250mbのcreosote oilを製造するレシピの例です。
 
 ```zenscript
-//mods.thermalexpansion.RedstoneFurnace.addPyrolysisRecipe(IItemStack 出力, IItemStack 入力, int エネルギー, int creosote);
+//mods.thermalexpansion.RedstoneFurnace.addPyrolysisRecipe(IItemStack output, IItemStack input, int energy, int creosote);
 mods.thermalexpansion.RedstoneFurnace.addPyrolysisRecipe(<thermalfoundation:material:802>, <minecraft:coal:1>, 2000, 250);
 ```
 

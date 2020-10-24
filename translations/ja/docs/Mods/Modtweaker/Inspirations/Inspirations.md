@@ -1,5 +1,5 @@
-# インスピレーション(インスピレーション)
+# Inspirations
 
-インスピレーションパッケージは、拡張された大釜を変更するためにのみ使用されます。
+The Inspirations Package is used solely for altering the Inspirations extended Cauldron.
 
 All recipes are added using the [cauldron](/Mods/Modtweaker/Inspirations/Handlers/Cauldron) handler.

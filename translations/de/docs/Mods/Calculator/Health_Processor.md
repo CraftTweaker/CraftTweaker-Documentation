@@ -1,21 +1,21 @@
-# Gesundheitsprozessor
+# Health Processor
 
-## Paket
+## Package
 ```zenscript
-importieren mods.calculator.health;
+import mods.calculator.health;
 ```
 
 ## Methoden
 
-- **[Ingredient](/Vanilla/Variable_Types/IIngredient/) Input** Die Eingabe.
-- **Int Wert** Die Menge der Eingaben fügt dieser Maschine hinzu.
+- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input** The input.
+- **Int value** The amount of input adds to that machine.
 
 ## Additon
 ```zenscript
-health.addRecipe(IZutateneingabe, Int Wert);
+health.addRecipe(IIngredient input, int value);
 ```
 
-## Entfernen
+## Removal
 ```zenscript
-health.removeRecipe(IZutaten-Eingabe);
+health.removeRecipe(IIngredient input);
 ```

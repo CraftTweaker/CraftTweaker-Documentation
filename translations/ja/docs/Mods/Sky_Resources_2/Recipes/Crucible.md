@@ -1,21 +1,21 @@
-# るつぼ可能
+# Crucible
 
-*るつぼ* パッケージは、レシピをCrucibleに追加または削除するために使用されます。
+The *crucible* package is used for adding or removing recipes to/from the Crucible.
 
-## 発信中
+## Calling
 
-*crutible* パッケージは `mods.skyresources.cutible` で呼び出すことができます。
+You can call the *crucible* package using `mods.skyresources.crucible`
 
-## レシピの追加
+## Recipe Addition
 
 ```zenscript
-//mods.skyresources.crucible.addRecipe(ILiquidStack 出力, IItemStack input);
+//mods.skyresources.crucible.addRecipe(ILiquidStack output, IItemStack input);
 mods.skyresources.crucible.addRecipe(<liquid:lava> * 500, <minecraft:cobblestone>);
 ```
 
-## レシピの削除
+## Recipe Removal
 
 ```zenscript
-//mods.skyresources.crucible.removeRecipe(ILiquidStack出力);
+//mods.skyresources.crucible.removeRecipe(ILiquidStack output);
 mods.skyresources.crucible.removeRecipe(<liquid:lava>);
 ```

@@ -1,8 +1,8 @@
-# アスペクトブラケットハンドラ（アスペクト）
+# Aspect Bracket handler
 
-アスペクトブラケットハンドラでは、必要に応じてThaumcraft [アスペクトスタック](/Mods/Modtweaker/Thaumcraft/Aspects/CTAspectStack/) を取得できます。
+The aspect Bracket Handler allows you to retrieve a Thaumcraft [Aspect Stack](/Mods/Modtweaker/Thaumcraft/Aspects/CTAspectStack/) in case you need one.
 
-アスペクトは、アスペクトブラケットハンドラで次のように参照されます。
+Aspects are referenced in the Aspect Bracket handler this way:
 
 ```zenscript
 <aspect:name>

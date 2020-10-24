@@ -6,17 +6,17 @@ ZenCaster 可用于将一种类型转换为另一种（如[String 转 IData](htt
 ## 例子
 
 ```java
-@ZenExpansion("craftminstrer.item ItemStack")
-@Zenregistry
-public class Expansion @un.org
+@ZenExpansion("crafttweaker.item.IItemStack")
+@ZenRegister
+public class Expansion {
     @ZenMethod
-    public static invent print(ItemStack stack) v.
-        CraftTweeperAPI。 ogInfo("STACKKKKKKKKK: " + 堆栈。 etDisplayName() )；
+    public static void print(IItemStack stack) {
+        CraftTweakerAPI.logInfo("STACKKKKK: " + stack.getDisplayName());
     }
 
     @ZenCaster
-    public static IOreDictEntry asOreDict(IItemStack stack) @un.org
-        return stack. etOres().get(0)；
+    public static IOreDictEntry asOreDict(IItemStack stack) {
+        return stack.getOres().get(0);
     }
 }
 ```
@@ -24,7 +24,7 @@ public class Expansion @un.org
 如果现在有人调用这个方法，他们就会获得一个 oreDictEntry：
 
 ```zenscript
-val oredict = <minecraft:iron_ingot> as IOreDictEntry;
+val oreDict = <minecraft:iron_ingot> as IOreDictEntry;
 ```
 
 ## 什么方法可以被注解 || 额外信息

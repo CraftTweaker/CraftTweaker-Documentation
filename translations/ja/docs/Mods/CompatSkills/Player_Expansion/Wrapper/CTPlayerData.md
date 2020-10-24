@@ -1,18 +1,18 @@
 # CTPlayerData
 
-## メソッド
+## Methods
 
 ### getHasAnyAbilities()
 
-    例:
+    Example:
     event.player.skillData.getHasAnyAbilities;
     
-    これは、プレイヤーがUnlockablesの種類の能力を持つ場合に基づいて、ブール値を返します。
+    This returns a Boolean based on if the player has any abilties which are a type of Unlockables.
     
 
 ### getSkillInfo(CTSkill skill)
 
-    例:
+    Example:
     event.player.skillData.getSkillInfo(<skill:reskillable:agility>);
     
-    特定のスキルの PlayerSkillInfo を返します！
+    This returns the PlayerSkillInfo for that specific skill!

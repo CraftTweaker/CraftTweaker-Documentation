@@ -1,23 +1,23 @@
-# Блок-режущий
+# Block Cutter
 
-## Пакет
+## Package
 
-`импорт mods.ic2.BlockCutter;`
+`import mods.ic2.BlockCutter;`
 
-## Методы
+## Methods
 
 - **[IItemStack](/Vanilla/Items/IItemStack/) output**
-- **[Ingredient](/Vanilla/Variable_Types/IIngredient/) ввод**
-- **@Optional int hardness** Минимальная жесткость для лезвия.
+- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input**
+- **@Optional int hardness** Minimum hardness requirement for blade.
 
 ## Сложение
 
 ```zenscript
-mods.ic2.BlockCutter.addRecipe(IItemStack, IIngredient input, @Optional int hardness default 0);
+mods.ic2.BlockCutter.addRecipe(IItemStack output, IIngredient input, @Optional int hardness default 0);
 
 mods.ic2.BlockCutter.addRecipe(<minecraft:diamond>, <minecraft:dirt>);
 ```
 
-## Удаление
+## Removal
 
-Сейчас просто удалите соответствующую строку в `config/ic2/block_cutter.ini`.
+For now simply remove the corresponding line in `config/ic2/block_cutter.ini`.

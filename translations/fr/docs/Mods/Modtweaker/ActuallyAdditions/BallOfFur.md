@@ -1,17 +1,17 @@
-# Boule de fourrure
+# Ball of Fur
 
-## Paquet
+## Package
 
-`format@@0 mods.actuallyadditions.BallOfFur`
+`mods.actuallyadditions.BallOfFur`
 
-## Ajouter
+## Addition
 
 ```zenscript
-//mods.actuallyadditions.BallOfFur.addReturn(IItemStack sortie, int chance);
+//mods.actuallyadditions.BallOfFur.addReturn(IItemStack output, int chance);
 mods.actuallyadditions.BallOfFur.addReturn(<minecraft:string>, 5);
 ```
 
-## Retirer
+## Removal
 
 ```zenscript
 //mods.actuallyadditions.BallOfFur.removeReturn(IItemStack output);

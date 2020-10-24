@@ -1,27 +1,27 @@
 # ZenClasses
 
-Ich setze das hier so, dass nur diejenigen, die zumindest einige Dinge auf ZS wissen wollen, es finden werden.
+I am putting this here so only those who want to know at least some things on ZS will find it.
 
-Eine ZenClass ist im Wesentlichen eine Java-Klasse, aber Sie können sie innerhalb von ZS definieren.  
-Wenn du denkst 'Das passt nicht wirklich zum Thema einer Skriptsprache', dann hast du Recht.  
-Aus diesem Grund sollten nur diejenigen gefunden werden, die mit ihm durcheinander kommen können.
+A ZenClass is essentially a java class but you can define it from within ZS.  
+If you think 'That does not really fit the theme of a scripting language' you are right.  
+That's why only those who are able to mess with it should ever find this.
 
-## Stichwörter
+## Keywords
 
-Dies sind Schlüsselwörter, die im Körper der Klasse gefunden werden können und sie werden eine bestimmte Aktion auslösen, wie zum Beispiel ein Mitglied zur Klasse hinzuzufügen.
+These are keywords that can be found in the class' body and they will initiate a certain action, like adding a member to the class.
 
-| Name           | Beschreibung                                                                                                                                                    |
-| -------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| zenClass       | Startet eine neue Klasse, muss der Name folgen.                                                                                                                 |
-| var/val        | Erzeugt eine Instanzvariable, das Endergebnis des Valt-Schlüsselwortes wurde verwendet.                                                                         |
-| statisch       | Erstellt eine Klasse (static) Variable. Sie können nicht endgültig sein.                                                                                        |
-| zenConstructor | Erstellt einen Konstruktor für die Klasse.                                                                                                                      |
-| funktion       | Erstellt eine Instanzmethode. Es gibt keine Möglichkeit, statische Methoden zu erstellen, wie Sie das auch außerhalb der Klasse tun können.                     |
-| dieses         | Bezugnahme auf das Objekt, in dem wir uns gerade befinden. Nur in Methoden und Konstruktoren verwendbar. Wird verwendet, wenn ein Parameter ein Feld versteckt. |
+| Name           | Beschreibung                                                                                                                           |
+| -------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
+| zenClass       | Starts a new class, needs to be followed by the name.                                                                                  |
+| var/val        | Creates an instance variable, final of the val keyword was used.                                                                       |
+| static         | Creates a class (static) variable. They can't be final.                                                                                |
+| zenConstructor | Creates a constructor for the class.                                                                                                   |
+| function       | Creates an instance method. There's no way of creating static methods, as you can do that outside the class as well.                   |
+| this           | Reference to the object we are currently in. Only useable in methods and constructors. Used if a parameter hides a field, for example. |
 
 ## Beispiel
 
-Ein kommentiertes Beispiel:
+A commented example:
 
 ```zenscript
 <br /><br />//Creates a class named 'name', you can also access it using scripts.scriptPath.name
@@ -30,23 +30,23 @@ Ein kommentiertes Beispiel:
 zenClass name {
 
     //Each variable needs a type set. 
-    //Variablen müssen nicht initialisiert werden, aber wenn Sie dies tun, ist die Initialisierung wie in Java.
+    //Variables don't need to be initialized, but if you do, initialization is as in Java.
 
 
-    //Statics werden in <clinit>initialisiert, d.h. wenn die Klasse zuerst definiert wurde.
+    //Statics are initialized in <clinit>, i.e. when the class is first defined.
     static myStatic as string = "value";
-    statisch otherStatic als string = "value";
+    static otherStatic as string = "value";
 
-    //Wenn eine Instanz varaible einen Initialisierer hat, wird sie vor dem ersten Konstruktor initialisiert.
-    val nonstatic als string = "123";
+    //If an instance varaible has an initializer, it will be initialized after before the first constructor call.
+    val nonStatic as string = "123";
 
-    //Falls eine Instanzvariable keinen Initialisierer hat, können Sie sie gegebenenfalls im Konstruktor initialisieren, auch wenn sie endgültig ist.
-    val nonStaticTwo als String;
+    //If an instance variable has no initializer, you can initialize it in the constructor if necessary, even if final.
+    val nonStaticTwo as string;
 
 
-    //Ein Konstruktor benötigt alle Parameter (explizit eingegeben)
-    zenConstructor(Parameter als String, parameter2 als string) {
-        print("TETETETE");
+    //A constructor requires all parameters (explicitly typed)
+    zenConstructor(parameter as string, parameter2 as string) {
+        print("TETETE");
         print(parameter);
 
 
@@ -54,14 +54,14 @@ zenClass name {
     }
 
 
-    //Sie können mehrere Konstruktoren haben, aber es gibt keine Möglichkeit zur Verkettung von Konstruktoren.
+    //You can have several constructors, but there is no way of constructor chaining.
     zenConstructor(parameter as string) {
         print("FFFFFF");
     }
 
 
-    //Es wird empfohlen, explizit auch die Rückgabetypen der Methode anzugeben.
-    Funktion myMethod(arg as string, arg1 as string) als string {
+    //It is recommended that you explicitly state method's return types as well.
+    function myMethod(arg as string, arg1 as string) as string {
         return "value" + arg ~ arg1;
     }
 
@@ -69,20 +69,20 @@ zenClass name {
 
 
 
-//Sie rufen einen Konstruktor auf, indem Sie den Klassentyp/Namen
+//You call a constructor by calling the class type/name
 var test = name("NOPE");
 test = name("nope", "noper");
-print(test. yMethod("one", "two"));
+print(test.myMethod("one", "two"));
 
 print("");
 
-//Sie können mit dem Klassentyp/Name
-print(name statics aufrufen. yStatic);
+//You can call statics by the use of the class type/name
+print(name.myStatic);
 print(name("parameter1", "parameter2").nonStatic);
 
 val ttt = name("t");
 
-//Sie können auch Statics mit Hilfe einer Klasseninstanz aufrufen.
+//You can also call statics by the use of a class instance.
 ttt.myStatic = "1";
 print(ttt.myStatic);
 ```

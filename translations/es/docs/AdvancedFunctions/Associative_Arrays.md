@@ -1,38 +1,38 @@
-# Arreglos Asociados
+# Associative Arrays
 
-Un Arreglo Asociativo (a veces llamado Mapa o Diccionario) es como un [Arreglo normal](/AdvancedFunctions/Arrays_and_Loops/) en la forma en que es capaz de almacenar múltiples entradas. A diferencia de [Arrays](/AdvancedFunctions/Arrays_and_Loops/) , sin embargo, puedes elegir qué tipo quieres que sea el índice, o (como lo llamamos en mapas), ¡ser!
+An Associative Array (sometimes also called a Map or a Dictionary) is like a normal [Array](/AdvancedFunctions/Arrays_and_Loops/) in the way that it is able to store multiple entries. Unlike [Arrays](/AdvancedFunctions/Arrays_and_Loops/) however, you can choose what type you want the index, or (as we call it in maps) key, to be!
 
-## Declarando un Arreglo Asociativo
+## Declaring an Associative Array
 
-Declaras Arrays Asociativos usando llaves `{}` y dos puntos `:`
+You declare Associative Arrays using curly brackets `{}` and colons `:`
 
 ```zenscript
 val myAssocArray = {
     dirt : <minecraft:dirt>,
     gold : <minecraft:gold_ingot>
-} as ItemStack[string];
+} as IItemStack[string];
 ```
 
-Separémoslo, ¿no?
+Let's break this down, shall we?
 
-- `val myAssocArray =` declaración de variable estándar
-- `{` esto es un Array Asociado, Señor!
-- `dirt : <minecraft:dirt>` mapeamos `<minecraft:dirt>` bajo la cadena `dirt`
-- `,` espera, hay más por venir
-- `de oro: <minecraft:gold_ingot>` mapeamos `<minecraft:gold_ingot>` bajo la cadena `de oro`
-- `}` ¡Hemos llegado al final del Array, Señor!
-- `como ItemStack[string];` este es un Arreglo Asociativo que utiliza cadenas como índices e ItemStacks como valores.
+- `val myAssocArray =` standard variable declaration
+- `{` this is an Associative Array, Sir!
+- `dirt : <minecraft:dirt>` we map `<minecraft:dirt>` under the string `dirt`
+- `,` wait, there's more to come
+- `gold : <minecraft:gold_ingot>` we map `<minecraft:gold_ingot>` under the string `gold`
+- `}` we have reached the end of the Array, Sir!
+- `as IItemStack[string];` this is an Associative Array that uses strings as indices and IItemStacks as values.
 
-Vale, entonces ¿qué tengo que pensar al usarlos?
+Okay, so what do I need to think of when using these?
 
-- Puede utilizar sobre todos los tipos disponibles para Zenscript como clave o valor.
-- No puedes usar variables para la declaración clave en la declaración inicial (la que usa `{}`) como texto claro se interpreta como cadena!
+- You can use about every type available to Zenscript as either key or value.
+- You cannot use variables for key declaration in the initial Declaration (the one that uses `{}`) as clear Text is interpreted as string!
 
-## Refiriendo a los artículos dentro de un Array Asociativo.
+## Refering to Items inside an Associative Array.
 
-Usted se refiere a los elementos dentro de un Arreglo Asociativo de la misma manera que usted se refiere a los elementos dentro de un Arreglo normal [](/AdvancedFunctions/Arrays_and_Loops/):  
-`Arreglo[index]`  
-Sólo la diferencia es esta vez, no necesita necesariamente usar un entero como índice, ¡pero cualquier tipo que haya declarado que es su matriz!
+You refer to items inside an Associative Array the same way you refer to items inside a normal [Array](/AdvancedFunctions/Arrays_and_Loops/):  
+`Array[index]`  
+Only difference is this time, you don't necessarily need to use an Integer as index, but whatever type you declared your Array to be!
 
 ```zenscript
 <br /><br />val dirt = <minecraft:dirt>;
@@ -47,110 +47,110 @@ print(assocArray[<minecraft:dirt>]);
 print(assocArray[dirt]);
 ```
 
-Hay un caso especial que es cuando usas cadenas como indeces:  
-En este caso también puedes usar el memberGetter como este:
+There is one special case, that is when you use strings as indeces:  
+In this case you can also use the memberGetter like this:
 
 ```zenscript
 val assocWithStrings = {
     //you can use "" if you want
     "one" : "1",
 
-    //pero no tienes que
-    dos : "2"
-} como cadena[string];
+    //but you don't have to
+    two : "2"
+} as string[string];
 
-//Puedes usar la impresión
-de memberGetter (assocWithStrings. ne);
+//You can either use the memberGetter
+print(assocWithStrings.one);
 
-//O el índice estándar Getter
-print(assocWithStrings["dos"]);
+//Or the standard index Getter
+print(assocWithStrings["two"]);
 ```
 
-## Manipulando elementos dentro de un Arreglo Asociativo
+## Manipulating items inside an Associative Array
 
-Como en Arrays, puede manipular elementos dentro de un Arreglo Asociativo usando `array[index] = newValue`.  
-Sin embargo, hay una diferencia importante:  
-Mientras que los matrices tienen un tamaño fijo, los mapas no lo hacen. Esto significa que siempre puede agregar una entrada configurando un índice que no ha sido previamente establecido!
+As in Arrays, you can manipulate items inside an Associative Array using `array[index] = newValue`.  
+There is one major differenc though:  
+While Arrays have a fixed size, maps don't. That means you can always add an entry by setting to an index that has previously not been set!
 
 ```zenscript
 val changingArray = {
     <minecraft:dirt> : "this is me",
-    <minecraft:gold_ingot> : "y lo odio"
-} como cadena[IItemStack];
+    <minecraft:gold_ingot> : "and I hate it"
+} as string[IItemStack];
 
 val gg = <minecraft:gold>;
 
-///Sobreescribe el valor de gold_ingot
-changingArray[gg] = "y me encanta";
+//Overrides the value of gold_ingot
+changingArray[gg] = "and I love it";
 
-//añade una nueva entrada
-changingArray[<minecraft:grass>] = "¡Poder!";
+//adds a new entry
+changingArray[<minecraft:grass>] = "Power!";
 ```
 
-## Recuperar una llave y entradas de un Array Asociativo
+## Retrieving an Associative Array's Key and Entrysets
 
-El conjunto de claves es un array que contiene todas las claves del mapa.  
-El conjunto de valores es un array que contiene todos los valores del mapa.  
-El entrySet es un array que contiene todas las entradas del mapa (ver abajo).
+The KeySet is an array containing all the map's keys.  
+The valueSet is an array containing all the map's values.  
+The entrySet is an array containing all the map's entries (see below).
 
 ```zenscript
-myAssocArray.keySet //keySet
-myAssocArray.keys //keySet
-myAssocArray.values //valueSet
+myAssocArray.keySet   //keySet
+myAssocArray.keys     //keySet
+myAssocArray.values   //valueSet
 myAssocArray.valueSet //valueSet
 myAssocArray.entrySet //entrySet
 ```
 
-## Iterando sobre un Arreglo Asociativo
+## Iterating over an Associative Array
 
-Hay dos iteradores que te permiten iterar sobre un Array Asociado:
+There are two Iterators that allow you to iterate over an Associative Array:
 
-- La clave-iterador: Iteriza sobre las claves, utiliza una variable
-- El clave-valor-Iterador: Iteriza sobre las claves y valores, utiliza dos variables
+- The key-Iterator: Iterates over the keys, uses one variable
+- The key-value-Iterator: Iterates over the keys and values, uses two variables
 
-Añadamos un Arreglo Asociativo que almacena recetas de fabricación para iterarse:
+Let's add an Associative Array that stores crafting recipes to be iterated over:
 
-- Las claves deben ser la salida de fabricación como [ItemStack](/Vanilla/Items/IItemStack/)
-- Los valores deben ser los ingredientes de fabricación como [IIngrediente](/Vanilla/Variable_Types/IIngredient/)
-- Utilizaremos la clave-Iterator que está construida así: `para la clave en assocArray {doSth;}`
-- También usaremos la clave-valor-Iterator que está construida como esta `para clave, valor en assocArray {doSth;}`
+- Keys shall be the crafting output as [IItemStack](/Vanilla/Items/IItemStack/)
+- Values shall be the crafting ingredients as [IIngredient](/Vanilla/Variable_Types/IIngredient/)
+- We shall use the key-Iterator that is built like this: `for key in assocArray {doSth;}`
+- We shall also use the key-value-Iterator that is built like this `for key, value in assocArray {doSth;}`
 
 ```zenscript
-importar crafttweaker.item.IItemStack;
-importar crafttweaker.item. Ingrediente;
+import crafttweaker.item.IItemStack;
+import crafttweaker.item.IIngredient;
 
-dirt val = <minecraft:dirt>;
+val dirt = <minecraft:dirt>;
 val recipeMapShaped = {
-    <minecraft:grass> : [[dirt, dirt],[dirt, dirt, dirt],[dirt, dirt, dirt]],
-    <minecraft:gold_ingot> : [[dirt, dirt],[dirt, <minecraft:gold_ingot>, dirt],[dirt, dirt, dirt]]
+    <minecraft:grass> : [[dirt, dirt, dirt],[dirt, dirt, dirt],[dirt, dirt, dirt]],
+    <minecraft:gold_ingot> : [[dirt, dirt, dirt],[dirt, <minecraft:gold_ingot>, dirt],[dirt, dirt, dirt]]
 } as IIngredient[][][IItemStack];
 
-Forma de receta[dirt] = [[suciedad, suciedad, sucio],[suciedad, suciedad, sucio],[suciedad, suciedad, sucio]];
+recipeMapShaped[dirt] = [[dirt, dirt, dirt],[dirt, null, dirt],[dirt, dirt, dirt]];
 
-///key will be grass, goldIngot, dirt
+//key will be grass, goldIngot, dirt
 for key in recipeMapShaped {
-    recipes. ddShaped(key, recipeMapShaped[key]);
+    recipes.addShaped(key, recipeMapShaped[key]);
 }
 
 
-///keys serán hierba, goldIngot, suciedad, los valores serán las recetas para ellas
-para la clave, valor en receta MapShaped {
-    recetas. ddShaped(llave, valor);
+//keys will be grass, goldIngot, dirt, values will be the recipes for them
+for key, value in recipeMapShaped {
+    recipes.addShaped(key, value);
 }
 ```
 
-# Entrada ZenType
+# ZenType Entry
 
-Una entrada de mapa consiste en una clave y un valor.  
-Actualmente la única forma de obtener dicho objeto es mediante el método entrySet de un mapa.
+A map Entry consists of a key and a value.  
+Currently the only way to get such an object is via a map's entrySet method.
 
-Puedes usar los getters para obtener `clave` y `valor`
+You can use the getters to get `key` and `value`
 
 ```zenscript
-//Reemplazar el mapa con una referencia a un array asociativo existente
+//Replace map with a reference to an existing map/associative array
 val myEntry = map.entrySet[0];
 
 
-myEntry.key; //Devuelve la clave de la entrada.
-myEntry.value; //Devuelve el valor de la entrada.
+myEntry.key;    //Returns the entry's key.
+myEntry.value;  //Returns the entry's value.
 ```

@@ -1,33 +1,33 @@
 # LivingKnockBack
 
-Dieses Ereignis wird abgefeuert, wenn eine Einheit zurückgestoßen wird. Das Ereignis ist **abbrechbar** und dadurch wird verhindert, dass die Entität zurückgeworfen wird. Alternativ kann die Stärke des Rückstoßes zusätzlich zum X- und Z-Verhältnis angepasst werden.
+This event is fired whenever an entity is knocked back. The event is **cancelable** and doing so will prevent the entity from being knocked back. Alternately, the strength of the knockback in addition to the X and Z ratios can be adjusted.
 
 ## Event-Klasse
-Du musst das Ereignis als diese Klasse in den Funktionskopf verschieben:  
-`crafttweaker.event. ivingKnockBackEvent`  
-Sie können natürlich auch [die Klasse vor](/AdvancedFunctions/Import/) importieren und dann diesen Namen verwenden.
+You will need to cast the event in the function header as this class:  
+`crafttweaker.event.LivingKnockBackEvent`  
+You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
 
 ## Erweiterte Event-Schnittellen
-LivingKnockBack Events implementieren die folgenden Schnittstellen und können auch alle ihre Methoden/Getters/Setter aufrufen:
+LivingKnockBack Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
 
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 - [ILivingEvent](/Vanilla/Events/Events/ILivingEvent/)
 
 
 ## ZenGetter/ZenSetter
-Folgende Informationen können während der Veranstaltung abgerufen bzw. eingestellt werden:
+The following information can be retrieved/set during the event:
 
-| ZenGetter          | ZenSetter   | Type                                  |
-| ------------------ | ----------- | ------------------------------------- |
-| `angreifer`        | `angreifer` | [IEntity](/Vanilla/Entities/IEntity/) |
-| `originalAttacker` |             | [IEntity](/Vanilla/Entities/IEntity/) |
-| `kräftig`          | `kräftig`   | float                                 |
-| `originalstärke`   |             | float                                 |
-| `ratioX`           | `ratioX`    | double                                |
-| `quooZ`            | `quooZ`     | double                                |
-| `originalRatioX`   |             | double                                |
-| `originalRatioZ`   |             | double                                |
+| ZenGetter          | ZenSetter  | Type                                  |
+| ------------------ | ---------- | ------------------------------------- |
+| `attacker`         | `attacker` | [IEntity](/Vanilla/Entities/IEntity/) |
+| `originalAttacker` |            | [IEntity](/Vanilla/Entities/IEntity/) |
+| `strength`         | `strength` | float                                 |
+| `originalStrength` |            | float                                 |
+| `ratioX`           | `ratioX`   | double                                |
+| `ratioZ`           | `ratioZ`   | double                                |
+| `originalRatioX`   |            | double                                |
+| `originalRatioZ`   |            | double                                |
 
-## Notizen
+## Notes
 
-Wenn das Ereignis eintrifft, ist es möglich, dass der `Angreifer`, `Stärke`, oder das verschiedene `Verhältnis`s wurden bereits geändert. Diese Werte finden Sie in den `original*` Variablen.
+When the event arrives, it's possible that the `attacker`, `strength`, or the various `ratio`s have already been modified. You can find these values in the `original*` variables.

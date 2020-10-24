@@ -1,6 +1,6 @@
-# Дробитель
+# Crusher
 
-## Пакет
+## Package
 
 `mods.actuallyadditions.Crusher`
 
@@ -11,9 +11,9 @@
 mods.actuallyadditions.Crusher.addRecipe(<minecraft:iron_ingot>, <minecraft:iron_ore>, <minecraft:stone>, 50);
 ```
 
-## Удаление
+## Removal
 
 ```zenscript
-//mods.actuallyadditions.Crusher.removeRecipe(IItemStack);
+//mods.actuallyadditions.Crusher.removeRecipe(IItemStack output);
 mods.actuallyadditions.Crusher.removeRecipe(<minecraft:gold_ore>);
 ```

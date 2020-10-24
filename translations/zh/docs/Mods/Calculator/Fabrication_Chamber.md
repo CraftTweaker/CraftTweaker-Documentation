@@ -1,22 +1,22 @@
-# 摩擦分庭
-## 不完全隐藏，只需要一个输入。
+# Fabrication Chamber
+## Not fully implimented, only takes one input.
 
 ## 所属包
 ```zenscript
-导入mods.calculator.fragationChamber;
+import mods.calculator.fabricationChamber;
 ```
 
 ## 方法
-- **[Ingredient](/Vanilla/Variable_Types/IIngredient/) 输入** 输入.
-- **[Ingredient](/Vanilla/Variable_Types/IIngredient/) 输出** 输出.
+- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input** The input.
+- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) output** The outputs.
 
 
 ## 加
 ```zenscript
-fulationChamber.addRecipe(I成分输入, IIngredient 输出)；
+fabricationChamber.addRecipe(IIngredient input, IIngredient output);
 ```
 
-## 移除
+## Removal
 ```zenscript
-(ii) fulationChamber.removeRecipe(I成分输入)；
+fabricationChamber.removeRecipe(IIngredient input);
 ```

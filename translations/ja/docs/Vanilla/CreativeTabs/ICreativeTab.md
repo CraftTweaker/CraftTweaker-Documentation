@@ -1,30 +1,30 @@
 # ICreativeTab
 
-ICreativeTabObject は、創造的なインベントリタブを表します。
+An ICreativeTabObject represents a creative inventory tab.
 
 ## パッケージのインポート
 
-問題が発生した場合は、パッケージをインポートする必要があるかもしれませんので、申し訳ありませんし、インポートを追加してください。  
+It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
 `import crafttweaker.creativetabs.ICreativeTab;`
 
-## このようなオブジェクトを取得する
+## Getting such an Object
 
-ICreativeTab は、 [Creative tab Bracket Handler](/Vanilla/Brackets/Bracket_CreativeTab/) から取得できます。
+You can retrieve an ICreativeTab from the [Creative tab Bracket Handler](/Vanilla/Brackets/Bracket_CreativeTab/).
 
-## パラメータのない ZenGetters と ZenMethods
+## ZenGetters and ZenMethods without parameters
 
-| ZenGetter/ZenMethod | 戻り値    |
-| ------------------- | ------ |
-| searchBarWidth      | int    |
-| tabLabel            | 文字列    |
-| setNoScrollBar()    | 無効（なし） |
-| setNoTitle()        | 無効（なし） |
+| ZenGetter/ZenMethod | 戻り値            |
+| ------------------- | -------------- |
+| searchBarWidth      | int            |
+| tabLabel            | string         |
+| setNoScrollBar()    | void (nothing) |
+| setNoTitle()        | void (nothing) |
 
 ## ZenMethod
 
-#### 背景画像の名前を設定
+#### Set Background image Name
 
-Use a string (e.g. `"item_search.png"`).  
+Uses a string (e.g. `"item_search.png"`).  
 Returns void (nothing).
 
 ```zenscript

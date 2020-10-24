@@ -9,16 +9,16 @@ It might be required for you to import the package if you encounter any issues (
 
 ## ZenGetter
 
-| ZenGetter                              | Type                                         |
-|----------------------------------------|----------------------------------------------|
-| duration                               | int                                          |
-| potion                                 | [IPotion](/Vanilla/Potions/IPotion/)         |
-| doesShowParticles                      | bool                                         |
-| amplifier                              | int                                          |
+| ZenGetter                              | Type                                           |
+|----------------------------------------|------------------------------------------------|
+| duration                               | int                                            |
+| potion                                 | [IPotion](/Vanilla/Potions/IPotion/)           |
+| doesShowParticles                      | bool                                           |
+| amplifier                              | int                                            |
 | curativeItems                          | List<[IItemStack](/Vanilla/Items/IItemStack/)> |
-| effectName                             | bool                                         |
-| isAmbient                              | bool                                         |
-| isPotionDurationMax (also a ZenSetter) | bool                                         |
+| effectName                             | string                                         |
+| isAmbient                              | bool                                           |
+| isPotionDurationMax (also a ZenSetter) | bool                                           |
 
 
 ## ZenMethods
