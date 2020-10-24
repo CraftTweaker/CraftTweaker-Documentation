@@ -71,7 +71,7 @@ worldObj.setBlockState(IBlockState state, IBlockPos pos);
 worldObj.setBlockState(IBlockState state, IData tileEntityData, IBlockPos pos);
 ```
 
-### Spawn entity
+### Spawn Entity
 Use an [IEntity](/Vanilla/Entities/IEntity/) object.  
 Returns a bool that states if the spawn was successful.
 ```zenscript
@@ -89,6 +89,13 @@ Use an [IEntity](/Vanilla/Entities/IEntity/) object.
 Returns a bool that states if the spawn was successful.
 ```zenscript
 worldObj.addWeatherEffect(IEntity entity);
+```
+
+### Remove Entity
+Use an [IEntity](/Vanilla/Entities/IEntity/) object.  
+Returns a bool that states if the spawn was successful.
+```zenscript
+worldObj.removeEntity(IEntity entity);
 ```
 
 ### Get a raytrace result  
