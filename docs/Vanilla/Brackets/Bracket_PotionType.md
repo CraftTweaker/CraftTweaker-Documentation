@@ -7,7 +7,9 @@ PotionType are referenced in the PotionType Bracket Handler like so:
 ```zenscript
 <potiontype:modname:potionname>
 
+<potiontype:minecraft:strength>
 <potiontype:minecraft:long_strength>
+<potiontype:minecraft:strong_strength>
 ```
 
 If the PotionType is found, this will return an PotionType Object.
