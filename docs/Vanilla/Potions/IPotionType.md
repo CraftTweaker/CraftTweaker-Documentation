@@ -21,8 +21,7 @@ You can get such an object through the use of the [PotionType Bracket handler](/
 | effects                        | List<[IPotionEffect](/Vanilla/Potions/IPotionEffect/)> |
 
 ## ZenMethods
-
-## Imitate the Item Bracket Handler
+## Imitate the PotionType Bracket Handler
 This method does the same as the [PotionType Bracket Handler](/Vanilla/Brackets/Bracket_PotionType/).
 ```
 //fromString(String potiontype);
