@@ -22,6 +22,6 @@ The following information can be retrieved from the event:
 
 | ZenGetter   | Return Type                               |
 |-------------|-------------------------------------------|
-| item        | [IItemStack](/Vanilla/Items/IItemStack/)  |
-| olditem     | [IItemStack](/Vanilla/Items/IItemStack/)  |
+| newItem     | [IItemStack](/Vanilla/Items/IItemStack/)  |
+| oldItem     | [IItemStack](/Vanilla/Items/IItemStack/)  |
 | slot        | [IEntityEquipmentSlot](/Vanilla/Entities/IEntityEquipmentSlot/)|
