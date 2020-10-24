@@ -51,10 +51,10 @@ crafttweaker.damage.IDamageSource.createPlayerDamage(IPlayer player)
 crafttweaker.damage.IDamageSource.createThrownDamage(IEntity source, @Optional IEntity indirectEntityIn)
 crafttweaker.damage.IDamageSource.createIndirectMagicDamage(IEntity source, @Optional IEntity indirectEntityIn)
 crafttweaker.damage.IDamageSource.createThornsDamage(IEntity source)
-crafttweaker.damage.IDamageSource.createExplosionDamage(@Optional IEntityLivingBase entityLivingBaseIn)
+crafttweaker.damage.IDamageSource.createExplosionDamage(@Optional IEntityLivingBase trueSource)
 crafttweaker.damage.IDamageSource.createOfType(String type)
 crafttweaker.damage.IDamageSource.createEntityDamage(String type, IEntity source)
-crafttweaker.damage.IDamageSource.createIndirectDamage(String type, IEntity truesource, @Optional IEntity immediateSource)
+crafttweaker.damage.IDamageSource.createIndirectDamage(String type, IEntity trueSource, @Optional IEntity immediateSource)
 
 //Preregistered Damage Types
 crafttweaker.damage.IDamageSource.IN_FIRE()
