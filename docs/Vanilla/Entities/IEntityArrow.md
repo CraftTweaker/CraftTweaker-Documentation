@@ -23,7 +23,7 @@ IEntityArrow implement the following interfaces and are able to call all of thei
 
 ## Additional methods
 
-- void `shoot(IEntity shooter, float pitch, float yaw, float p_184547_4_, float velocity, float inaccuracy)`
+- void `shoot(IEntity shooter, float pitch, float yaw, float roll, float velocity, float inaccuracy)`
 
 - void `setPickupDisallowed()`
 
