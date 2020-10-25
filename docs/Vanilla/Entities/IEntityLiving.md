@@ -65,7 +65,7 @@ Returns nothing.
 ebtLiv.enablePersistence();
 ```
 
-#### Lashes
+#### Leashes
 First method requires an [IEntity](/Vanilla/Entities/IEntity/) object, a boolean and returns nothing.
 Second method requires two booleans and returns nothing.  
 Third method requires an [IPlayer](/Vanilla/Players/IPlayer/) object and returns a bool.
