@@ -1,7 +1,7 @@
 # IEntityLiving
 
 A living Entity is one that has health and that can die.  
-Unlike [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) however, players don't are IEnitiyLiving objects!
+Unlike [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) however, players aren't IEnitiyLiving objects!
 
 
 ## Importing the package
