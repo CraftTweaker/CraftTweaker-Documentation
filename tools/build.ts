@@ -197,18 +197,12 @@ const performDocumentationMerge = (buildsDir: string, exportedDocsDir: string, t
 
 const doJsonMerge = (jsonPaths: string[]): any => {
     let json: any = {};
-    jsonPaths.forEach((path: string) => {
+    jsonPaths.reverse().forEach((path: string) => {
         let jsonText = fs.readFileSync(path, 'utf8');
         json = mergeJson.merge(json, JSON.parse(jsonText));
         console.log(`Merged file '${path}'`);
     });
-    const ordered: any = {};
-    ordered["nav"] = {}
-    Object.keys(json["nav"]).sort().forEach(function (key) {
-        console.log(key);
-        ordered["nav"][key] = json["nav"][key];
-    });
-    return ordered;
+    return json;
 }
 
 const build = async () => {
