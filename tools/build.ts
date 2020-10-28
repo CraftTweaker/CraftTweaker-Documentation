@@ -33,7 +33,7 @@ const buildIndex = (folder: string) => {
 
     let processor = unified().use(markdown, {});
     let docs: Doc[] = [];
-    let linkError:boolean = false;
+    let linkError: boolean = false;
     fileList.forEach(value => {
         let processedFile = processor.parse(vfile.readSync(value));
         processedFile.children.forEach((child: Node) => {
@@ -113,7 +113,7 @@ const buildIndex = (folder: string) => {
 
         });
     });
-    if(linkError){
+    if (linkError) {
         throw new Error("Link check failed!");
     }
     // Convert to relative links that we can use
@@ -170,7 +170,7 @@ const performDocumentationMerge = (buildsDir: string, exportedDocsDir: string, t
                     console.error(`Found files: ${dupes}`);
                 }
 
-                fs.copySync(docsDir, path.join(buildsDir, path.join(lang, "docs")), { overwrite: false, errorOnExist: false });
+                fs.copySync(docsDir, path.join(buildsDir, path.join(lang, "docs")), {overwrite: false, errorOnExist: false});
 
                 if (fs.existsSync(docsJson)) {
                     languageJsons.push(docsJson);
@@ -202,7 +202,13 @@ const doJsonMerge = (jsonPaths: string[]): any => {
         json = mergeJson.merge(json, JSON.parse(jsonText));
         console.log(`Merged file '${path}'`);
     });
-    return json;
+    const ordered: any = {};
+    ordered["nav"] = {}
+    Object.keys(json["nav"]).sort().forEach(function (key) {
+        console.log(key);
+        ordered["nav"][key] = json["nav"][key];
+    });
+    return ordered;
 }
 
 const build = async () => {
