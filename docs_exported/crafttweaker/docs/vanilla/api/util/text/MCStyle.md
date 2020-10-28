@@ -137,7 +137,7 @@ myMCStyle.setColor(formatting as crafttweaker.api.text.TextFormatting);
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| formatting | [crafttweaker.api.text.TextFormatting](/crafttweaker/api/text/TextFormatting) | No description provided |
+| formatting | [crafttweaker.api.text.TextFormatting](/vanilla/api/util/text/TextFormatting) | No description provided |
 
 
 
@@ -175,7 +175,7 @@ myMCStyle.setFormatting(formatting as crafttweaker.api.text.TextFormatting);
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| formatting | [crafttweaker.api.text.TextFormatting](/crafttweaker/api/text/TextFormatting) | No description provided |
+| formatting | [crafttweaker.api.text.TextFormatting](/vanilla/api/util/text/TextFormatting) | No description provided |
 
 
 ### setInsertion

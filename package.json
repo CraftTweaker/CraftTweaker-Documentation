@@ -7,7 +7,8 @@
 	"scripts": {
 		"build": "tsc && node out/build.js",
 		"test": "tsc && node out/test.js",
-		"serve": "tsc && node out/serve.js"
+        "generate-reverse-lookup": "tsc && node out/generate_reverse_lookup.js",
+		"serve": "tsc && node out/generate_reverse_lookup.js && node out/serve.js"
 	},
 	"repository": {
 		"type": "git",
