@@ -101,7 +101,7 @@ Return type: boolean
 | items         | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)[] | true | false |
 
 ## 运算符
-### 或
+### OR
 
 ```zenscript
 <tag:ingotIron> | 其他为 craftbiner.api.item.IIngredient

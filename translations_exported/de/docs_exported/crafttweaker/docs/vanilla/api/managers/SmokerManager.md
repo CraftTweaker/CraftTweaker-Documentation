@@ -50,12 +50,20 @@ smoker.addRecipe("wool2diamond", <item:diamond>, <tag:minecraft:wool>, 1.0, 0);
 | cookTime  | int                                                                 | how long it takes to cook       |
 
 
-### getRecipeByName
+### getAllRecipes
 
-Rückgabetyp: [craftweaker.api.recipes.WrapperRezept](/crafttweaker/api/recipes/WrapperRecipe)
+Return type: List&lt;[crafttweaker.api.recipes.WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)&gt;
 
 ```zenscript
-smoker.getRecipeByName(Name als String);
+smoker.getAllRecipes();
+```
+
+### getRecipeByName
+
+Return type: [crafttweaker.api.recipes.WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)
+
+```zenscript
+smoker.getRecipeByName(name as String);
 ```
 
 | Parameter | Type   | Beschreibung            |
@@ -65,10 +73,10 @@ smoker.getRecipeByName(Name als String);
 
 ### getRecipesByAusgabe
 
-Retourentyp: Liste&lt;[crafttweaker.api.recipes.WrapperRezept](/crafttweaker/api/recipes/WrapperRecipe)&gt;
+Return type: List&lt;[crafttweaker.api.recipes.WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)&gt;
 
 ```zenscript
-smoker.getRecipesByOutput(Ausgabe als crafttweaker.api.item.IIngredient);
+smoker.getRecipesByOutput(output as crafttweaker.api.item.IIngredient);
 ```
 
 | Parameter | Type                                                                | Beschreibung            |
@@ -102,7 +110,7 @@ smoker.removeByModid("minecraft");
 Entfernen Sie Rezept basierend auf Registry-Name Modid mit einer zusätzlichen Ausschluss-Prüfung, so dass Sie die ganze Mod neben einigen angegebenen entfernt können.
 
 ```zenscript
-smoker.removeByModid(modid as String, except as crafttweaker.api.recipeFilter);
+smoker.removeByModid(modid as String, exclude as crafttweaker.api.recipe.RecipeFilter);
 smoker.removeByModid("minecraft", (name as string) => {return name == "orange_wool";});
 ```
 

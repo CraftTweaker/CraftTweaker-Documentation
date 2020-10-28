@@ -48,12 +48,20 @@ smithing.addRecipe("recipe_name", <item:minecraft:golden_apple>, <item:minecraft
 | dodaj      | [crafttweaker.api.item.IIngredient](/vanilla/api/items/IIngredient) | Element dodany do pozycji bazowej. |
 
 
-### getRecipeByName
+### getAllRecipes
 
-Typ zwrotu: [crafttweaker.api.recipes.WrapperRecipe](/crafttweaker/api/recipes/WrapperRecipe)
+Return type: List&lt;[crafttweaker.api.recipes.WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)&gt;
 
 ```zenscript
-smithing.getRecipeByName(nazwa jako String);
+smithing.getAllRecipes();
+```
+
+### getRecipeByName
+
+Return type: [crafttweaker.api.recipes.WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)
+
+```zenscript
+smithing.getRecipeByName(name as String);
 ```
 
 | Parameter | Type   | Description             |
@@ -63,7 +71,7 @@ smithing.getRecipeByName(nazwa jako String);
 
 ### getRecipesByOutput
 
-Typ zwracania: Lista&lt;[crafttweaker.api.recipes.WrapperRecipe](/crafttweaker/api/recipes/WrapperRecipe)&gt;
+Return type: List&lt;[crafttweaker.api.recipes.WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)&gt;
 
 ```zenscript
 smithing.getRecipesByOutput(output as crafttweaker.api.item.IIngredient);
@@ -79,7 +87,7 @@ smithing.getRecipesByOutput(output as crafttweaker.api.item.IIngredient);
 Remove all recipes in this registry
 
 ```zenscript
-Smothing.removeAll();
+smithing.removeAll();
 ```
 
 ### removeByModid
@@ -87,8 +95,8 @@ Smothing.removeAll();
 Remove recipe based on Registry name modid
 
 ```zenscript
-smithing.removeByModid(modid jako String);
-uśmiech.removeModid("minecraft");
+smithing.removeByModid(modid as String);
+smithing.removeByModid("minecraft");
 ```
 
 | Parameter | Type   | Description                    |
@@ -100,8 +108,8 @@ uśmiech.removeModid("minecraft");
 Usuń przepis na podstawie modida nazwy rejestru z dodanym sprawdzianem wykluczenia, dzięki czemu możesz usunąć cały mod poza kilkoma określonymi.
 
 ```zenscript
-smithing.removeByModid(modid jako string, wykluczyć jako crafttweaker.api.recipe.RecipeFilter);
-smithing.removeByModid("minecraft", (nazwa jako string) => {return name == "orange_wool";});
+smithing.removeByModid(modid as String, exclude as crafttweaker.api.recipe.RecipeFilter);
+smithing.removeByModid("minecraft", (name as string) => {return name == "orange_wool";});
 ```
 
 | Parameter | Type                                                               | Description                      |
@@ -115,8 +123,8 @@ smithing.removeByModid("minecraft", (nazwa jako string) => {return name == "oran
 Remove recipe based on Registry name
 
 ```zenscript
-smithing.removeByName(nazwa jako String);
-smith.removeByName("minecraft:furnace");
+smithing.removeByName(name as String);
+smithing.removeByName("minecraft:furnace");
 ```
 
 | Parameter | Type   | Description                       |
@@ -130,7 +138,7 @@ Remove recipe based on regex
 
 ```zenscript
 smithing.removeByRegex(regex as String);
-uśmiech.removeByRegex("\\d_\\d");
+smithing.removeByRegex("\\d_\\d");
 ```
 
 | Parameter | Type   | Description            |

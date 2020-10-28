@@ -30,9 +30,17 @@ craftingTable.addJSONRecipe("recipe_name", {ingredient:{item:<item:minecraft:gol
 | data      | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | data representing the json file |
 
 
+### getAllRecipes
+
+Return type: List&lt;[crafttweaker.api.recipes.WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)&gt;
+
+```zenscript
+craftingTable.getAllRecipes();
+```
+
 ### getRecipeByName
 
-戻り値の型: [crafttweaker.api.recipes.WrapperRecipe](/crafttweaker/api/recipes/WrapperRecipe)
+Return type: [crafttweaker.api.recipes.WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)
 
 ```zenscript
 craftingTable.getRecipeByName(name as String);
@@ -45,7 +53,7 @@ craftingTable.getRecipeByName(name as String);
 
 ### getRecipesByOutput
 
-戻り値の型: リスト&lt;[crafttweaker.api.recipes.WrapperRecipe](/crafttweaker/api/recipes/WrapperRecipe)&gt;
+Return type: List&lt;[crafttweaker.api.recipes.WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)&gt;
 
 ```zenscript
 craftingTable.getRecipesByOutput(crafttweaker.api.item.IIngredient);

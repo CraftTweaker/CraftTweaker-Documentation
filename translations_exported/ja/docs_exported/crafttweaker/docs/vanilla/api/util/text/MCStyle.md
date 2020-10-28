@@ -137,7 +137,7 @@ myMCStyle.setColor(crafttweaker.api.text.TextFormating);
 
 | Parameter | Type                                                                          | Description             |
 | --------- | ----------------------------------------------------------------------------- | ----------------------- |
-| 書式設定      | [crafttweaker.api.text.TextFormatting](/crafttweaker/api/text/TextFormatting) | No description provided |
+| 書式設定      | [crafttweaker.api.text.TextFormatting](/vanilla/api/util/text/TextFormatting) | No description provided |
 
 
 
@@ -175,7 +175,7 @@ myMCStyle.setFormatting(crafttweaker.api.text.TextFormating);
 
 | Parameter | Type                                                                          | Description             |
 | --------- | ----------------------------------------------------------------------------- | ----------------------- |
-| 書式設定      | [crafttweaker.api.text.TextFormatting](/crafttweaker/api/text/TextFormatting) | No description provided |
+| 書式設定      | [crafttweaker.api.text.TextFormatting](/vanilla/api/util/text/TextFormatting) | No description provided |
 
 
 ### setInsertion

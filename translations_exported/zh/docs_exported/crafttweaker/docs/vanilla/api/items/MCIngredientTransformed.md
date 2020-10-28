@@ -100,7 +100,7 @@ null.onlyIf(uid as String, function as function.Predicate<crafttweaker.api.item.
 | 变压器           | [craftminstruer.api.item.IIngredientTransformer](/vanilla/api/items/IIngredientTransformer)&lt;T&gt; | true | false |
 
 ## 运算符
-### 或
+### OR
 
 ```zenscript
 <tag:ingotIron> | 其他为 craftbiner.api.item.IIngredient

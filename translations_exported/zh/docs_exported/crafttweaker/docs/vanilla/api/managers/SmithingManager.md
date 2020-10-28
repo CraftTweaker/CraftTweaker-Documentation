@@ -48,12 +48,20 @@ smithing.addRecipe("recipe_name", <item:minecraft:golden_apple>, <item:minecraft
 | 添加         | [crafttweaker.api.item.IIngredient](/vanilla/api/items/IIngredient) | 该项目添加到基本项目。 |
 
 
-### getRecipeByName
+### getAllRecipes
 
-返回类型： [craftbiner.api.配方。WrapperRecipe](/crafttweaker/api/recipes/WrapperRecipe)
+Return type: List&lt;[crafttweaker.api.recipes.WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)&gt;
 
 ```zenscript
-smithing.getRecipeByname(名称为字符串)；
+smithing.getAllRecipes();
+```
+
+### getRecipeByName
+
+Return type: [crafttweaker.api.recipes.WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)
+
+```zenscript
+smithing.getRecipeByName(name as String);
 ```
 
 | 参数   | 类型     | 描述                      |
@@ -63,10 +71,10 @@ smithing.getRecipeByname(名称为字符串)；
 
 ### getRecipesBy输出
 
-返回类型：列表&lt;[craftbinstrues.WrapperRecipe](/crafttweaker/api/recipes/WrapperRecipe)&gt;
+Return type: List&lt;[crafttweaker.api.recipes.WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)&gt;
 
 ```zenscript
-smithing.getRecipesByOutput(输出为 craftweeper.api.item.IIngredient);
+smithing.getRecipesByOutput(output as crafttweaker.api.item.IIngredient);
 ```
 
 | 参数         | 类型                                                                  | 描述                      |
@@ -87,8 +95,8 @@ smithing.removeAll();
 Remove recipe based on Registry name modid
 
 ```zenscript
-smithing.removeByModed(modand as String);
-smithing.removeByModed("minecraft");
+smithing.removeByModid(modid as String);
+smithing.removeByModid("minecraft");
 ```
 
 | 参数    | 类型     | 描述                             |
@@ -100,8 +108,8 @@ smithing.removeByModed("minecraft");
 通过添加排除检查，删除基于注册表名称的配方，这样除了指定的几个选项之外，您可以删除整个模组。
 
 ```zenscript
-smithing.removeByModed(modid as String, exclusion as craftweapi.recipe.RecipeFilter);
-smithing.removeByModed("minecraft", (name as string) => {return name == "orange_wool";});
+smithing.removeByModid(modid as String, exclude as crafttweaker.api.recipe.RecipeFilter);
+smithing.removeByModid("minecraft", (name as string) => {return name == "orange_wool";});
 ```
 
 | 参数    | 类型                                                              | 描述                             |
@@ -115,8 +123,8 @@ smithing.removeByModed("minecraft", (name as string) => {return name == "orange_
 Remove recipe based on Registry name
 
 ```zenscript
-smithing.removeByname(名称为字符串);
-smithing.removeByname("minecraft:furchace");
+smithing.removeByName(name as String);
+smithing.removeByName("minecraft:furnace");
 ```
 
 | 参数   | 类型     | 描述                                |
@@ -130,7 +138,7 @@ Remove recipe based on regex
 
 ```zenscript
 smithing.removeByRegex(regex as String);
-smithing.removeByRegex("\d_\\d");
+smithing.removeByRegex("\\d_\\d");
 ```
 
 | 参数    | 类型     | 描述                     |
@@ -143,7 +151,7 @@ smithing.removeByRegex("\d_\\d");
 Remove a recipe based on it's output.
 
 ```zenscript
-smithing.removeRecipe(输出为 craftbiner.api.item.IItemStack);
+smithing.removeRecipe(output as crafttweaker.api.item.IItemStack);
 smithing.removeRecipe(<item:minecraft:glass>);
 ```
 

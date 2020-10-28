@@ -50,9 +50,17 @@ furnace.addRecipe("wool2diamond", <item:diamond>, <tag:minecraft:wool>, 1.0, 0);
 | cookTime  | int                                                                 | how long it takes to cook       |
 
 
+### getAllRecipes
+
+Return type: List&lt;[crafttweaker.api.recipes.WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)&gt;
+
+```zenscript
+furnace.getAllRecipes();
+```
+
 ### getRecipeByName
 
-Tipo de devolución: [crafttweaker.api.recipes.WrapperRecipe](/crafttweaker/api/recipes/WrapperRecipe)
+Return type: [crafttweaker.api.recipes.WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)
 
 ```zenscript
 furnace.getRecipeByName(nombre como String);
@@ -65,7 +73,7 @@ furnace.getRecipeByName(nombre como String);
 
 ### Obtener recetas por salida
 
-Tipo de retorno: Lista&lt;[crafttweaker.api.recipes.WrapperRecipe](/crafttweaker/api/recipes/WrapperRecipe)&gt;
+Return type: List&lt;[crafttweaker.api.recipes.WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)&gt;
 
 ```zenscript
 furnace.getRecipesByOutput(output as crafttweaker.api.item.IIngredient);

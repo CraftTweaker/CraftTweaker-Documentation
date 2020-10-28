@@ -19,7 +19,7 @@ myMCCommandSource.getName();
 
 ### getPlayer
 
-Tipo de retorno: (@org.openzen.zencode.java.ZenCodeType.Nullable :: MCPlayerEntity)
+Return type: [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
 
 ```zenscript
 myMCCommandSource.getPlayer();

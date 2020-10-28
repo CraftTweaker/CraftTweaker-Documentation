@@ -50,12 +50,20 @@ campfire.addRecipe("wool2diamond", <item:diamond>, <tag:minecraft:wool>, 1.0, 0)
 | cookTime | int                                                                 | how long it takes to cook       |
 
 
-### getRecipeByName
+### getAllRecipes
 
-Тип возврата: [crafttweaker.api.recipes.WrapperRecipe](/crafttweaker/api/recipes/WrapperRecipe)
+Return type: List&lt;[crafttweaker.api.recipes.WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)&gt;
 
 ```zenscript
-Лагерь.getRecipeByName(название как строка);
+campfire.getAllRecipes();
+```
+
+### getRecipeByName
+
+Return type: [crafttweaker.api.recipes.WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)
+
+```zenscript
+campfire.getRecipeByName(name as String);
 ```
 
 | Параметр | Тип    | Description          |
@@ -65,10 +73,10 @@ campfire.addRecipe("wool2diamond", <item:diamond>, <tag:minecraft:wool>, 1.0, 0)
 
 ### getRecipesByFrom
 
-Тип возврата: Список&lt;[crafttweaker.api.recipes.WrapperRecipe](/crafttweaker/api/recipes/WrapperRecipe)&gt;
+Return type: List&lt;[crafttweaker.api.recipes.WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)&gt;
 
 ```zenscript
-campfire.getRecipesByOutput(вывод как crafttweaker.api.item.IIngredient);
+campfire.getRecipesByOutput(output as crafttweaker.api.item.IIngredient);
 ```
 
 | Параметр | Тип                                                                 | Description          |
@@ -81,7 +89,7 @@ campfire.getRecipesByOutput(вывод как crafttweaker.api.item.IIngredient)
 Remove all recipes in this registry
 
 ```zenscript
-лагерь.removeAll();
+campfire.removeAll();
 ```
 
 ### removeByModid
@@ -89,7 +97,7 @@ Remove all recipes in this registry
 Remove recipe based on Registry name modid
 
 ```zenscript
-костер.removeByModid(modid as String);
+campfire.removeByModid(modid as String);
 campfire.removeByModid("minecraft");
 ```
 
@@ -103,7 +111,7 @@ campfire.removeByModid("minecraft");
 
 ```zenscript
 campfire.removeByModid(modid as String, exclude as crafttweaker.api.recipe.RecipeFilter);
-campfire.removeByModid("minecraft", (название как строка) => {return name == "orange_wool";});
+campfire.removeByModid("minecraft", (name as string) => {return name == "orange_wool";});
 ```
 
 | Параметр  | Тип                                                                      | Description                         |
@@ -117,8 +125,8 @@ campfire.removeByModid("minecraft", (название как строка) => {r
 Remove recipe based on Registry name
 
 ```zenscript
-имя лагеря (название как строка);
-лагерь.removeByName("minecraft:furnace");
+campfire.removeByName(name as String);
+campfire.removeByName("minecraft:furnace");
 ```
 
 | Параметр | Тип    | Description                       |
@@ -131,7 +139,7 @@ Remove recipe based on Registry name
 Remove recipe based on regex
 
 ```zenscript
-campfire.removeByRegex(regex как строка);
+campfire.removeByRegex(regex as String);
 campfire.removeByRegex("\\d_\\d");
 ```
 
@@ -145,8 +153,8 @@ campfire.removeByRegex("\\d_\\d");
 Remove a recipe based on it's output.
 
 ```zenscript
-лагерь.removeRecipe(выход как crafttweaker.api.item.IItemStack);
-лагерь.removeRecipe(<item:minecraft:glass>);
+campfire.removeRecipe(output as crafttweaker.api.item.IItemStack);
+campfire.removeRecipe(<item:minecraft:glass>);
 ```
 
 | Параметр | Тип                                                               | Description          |

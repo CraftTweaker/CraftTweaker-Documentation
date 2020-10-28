@@ -50,9 +50,17 @@ campfire.addRecipe("wool2diamond", <item:diamond>, <tag:minecraft:wool>, 1.0, 0)
 | cookTime  | int                                                                 | how long it takes to cook       |
 
 
+### getAllRecipes
+
+Return type: List&lt;[crafttweaker.api.recipes.WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)&gt;
+
+```zenscript
+campfire.getAllRecipes();
+```
+
 ### getRecipeByName
 
-戻り値の型: [crafttweaker.api.recipes.WrapperRecipe](/crafttweaker/api/recipes/WrapperRecipe)
+Return type: [crafttweaker.api.recipes.WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)
 
 ```zenscript
 campfire.getRecipeByName(name as String);
@@ -65,10 +73,10 @@ campfire.getRecipeByName(name as String);
 
 ### getRecipesByOutput
 
-戻り値の型: リスト&lt;[crafttweaker.api.recipes.WrapperRecipe](/crafttweaker/api/recipes/WrapperRecipe)&gt;
+Return type: List&lt;[crafttweaker.api.recipes.WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)&gt;
 
 ```zenscript
-campfire.getRecipesByOutput(crafttweaker.api.item.IIngredient);
+campfire.getRecipesByOutput(output as crafttweaker.api.item.IIngredient);
 ```
 
 | Parameter | Type                                                                | Description             |
@@ -102,7 +110,7 @@ campfire.removeByModid("minecraft");
 追加された除外チェック付きのレジストリ名modidに基づいてレシピを削除すると、いくつか指定された以外のMod全体を削除できます。
 
 ```zenscript
-campfire.removeByModid(modied as String, exclude as crafttweaker.api.recipeFilter);
+campfire.removeByModid(modid as String, exclude as crafttweaker.api.recipe.RecipeFilter);
 campfire.removeByModid("minecraft", (name as string) => {return name == "orange_wool";});
 ```
 
@@ -145,7 +153,7 @@ campfire.removeByRegex("\\d_\\d");
 Remove a recipe based on it's output.
 
 ```zenscript
-campfire.removeRecipe(crafttweaker.api.item.IItemStack);
+campfire.removeRecipe(output as crafttweaker.api.item.IItemStack);
 campfire.removeRecipe(<item:minecraft:glass>);
 ```
 

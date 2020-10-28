@@ -47,12 +47,20 @@ stoneCutter.addRecipe("recipe_name", <item:minecraft:grass>, <tag:minecraft:wool
 | input      | [crafttweaker.api.item.IIngredient](/vanilla/api/items/IIngredient) | вводите [crafttweaker.api.item.IIngredient](/vanilla/api/items/IIngredient) |
 
 
-### getRecipeByName
+### getAllRecipes
 
-Тип возврата: [crafttweaker.api.recipes.WrapperRecipe](/crafttweaker/api/recipes/WrapperRecipe)
+Return type: List&lt;[crafttweaker.api.recipes.WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)&gt;
 
 ```zenscript
-stoneCutter.getRecipeByName(название в качестве строки);
+stoneCutter.getAllRecipes();
+```
+
+### getRecipeByName
+
+Return type: [crafttweaker.api.recipes.WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)
+
+```zenscript
+stoneCutter.getRecipeByName(name as String);
 ```
 
 | Параметр | Тип    | Description          |
@@ -62,10 +70,10 @@ stoneCutter.getRecipeByName(название в качестве строки);
 
 ### getRecipesByFrom
 
-Тип возврата: Список&lt;[crafttweaker.api.recipes.WrapperRecipe](/crafttweaker/api/recipes/WrapperRecipe)&gt;
+Return type: List&lt;[crafttweaker.api.recipes.WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)&gt;
 
 ```zenscript
-stoneCutter.getRecipesByOutput(вывод как crafttweaker.api.item.IIngredient);
+stoneCutter.getRecipesByOutput(output as crafttweaker.api.item.IIngredient);
 ```
 
 | Параметр | Тип                                                                 | Description          |
@@ -100,7 +108,7 @@ stoneCutter.removeByModid("minecraft");
 
 ```zenscript
 stoneCutter.removeByModid(modid as String, exclude as crafttweaker.api.recipe.RecipeFilter);
-stoneCutter.removeByModid("minecraft", (название как строка) => {return name == "orange_wool";});
+stoneCutter.removeByModid("minecraft", (name as string) => {return name == "orange_wool";});
 ```
 
 | Параметр  | Тип                                                                      | Description                         |

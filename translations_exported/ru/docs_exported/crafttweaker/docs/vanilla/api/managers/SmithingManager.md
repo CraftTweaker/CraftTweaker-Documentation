@@ -48,12 +48,20 @@ smithing.addRecipe("recipe_name", <item:minecraft:golden_apple>, <item:minecraft
 | добавление | [crafttweaker.api.item.IIngredient](/vanilla/api/items/IIngredient) | Элемент добавлен к базовому элементу. |
 
 
-### getRecipeByName
+### getAllRecipes
 
-Тип возврата: [crafttweaker.api.recipes.WrapperRecipe](/crafttweaker/api/recipes/WrapperRecipe)
+Return type: List&lt;[crafttweaker.api.recipes.WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)&gt;
 
 ```zenscript
-smithing.getRecipeByName(название как строка);
+smithing.getAllRecipes();
+```
+
+### getRecipeByName
+
+Return type: [crafttweaker.api.recipes.WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)
+
+```zenscript
+smithing.getRecipeByName(name as String);
 ```
 
 | Параметр | Тип    | Description          |
@@ -63,10 +71,10 @@ smithing.getRecipeByName(название как строка);
 
 ### getRecipesByFrom
 
-Тип возврата: Список&lt;[crafttweaker.api.recipes.WrapperRecipe](/crafttweaker/api/recipes/WrapperRecipe)&gt;
+Return type: List&lt;[crafttweaker.api.recipes.WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)&gt;
 
 ```zenscript
-smithing.getRecipesByOutput(вывод как crafttweaker.api.item.IIngredient);
+smithing.getRecipesByOutput(output as crafttweaker.api.item.IIngredient);
 ```
 
 | Параметр | Тип                                                                 | Description          |
@@ -101,7 +109,7 @@ smithing.removeByModid("minecraft");
 
 ```zenscript
 smithing.removeByModid(modid as String, exclude as crafttweaker.api.recipe.RecipeFilter);
-smithing.removeByModid("minecraft", (название как строка) => {return name == "orange_wool";});
+smithing.removeByModid("minecraft", (name as string) => {return name == "orange_wool";});
 ```
 
 | Параметр  | Тип                                                                      | Description                         |
@@ -115,7 +123,7 @@ smithing.removeByModid("minecraft", (название как строка) => {r
 Remove recipe based on Registry name
 
 ```zenscript
-smithing.removeByName(имя как строка);
+smithing.removeByName(name as String);
 smithing.removeByName("minecraft:furnace");
 ```
 
@@ -129,7 +137,7 @@ smithing.removeByName("minecraft:furnace");
 Remove recipe based on regex
 
 ```zenscript
-smithing.removeByRegex(регулярное выражение);
+smithing.removeByRegex(regex as String);
 smithing.removeByRegex("\\d_\\d");
 ```
 
@@ -143,7 +151,7 @@ smithing.removeByRegex("\\d_\\d");
 Remove a recipe based on it's output.
 
 ```zenscript
-smithing.removeRecipe(выход как crafttweaker.api.item.IItemStack);
+smithing.removeRecipe(output as crafttweaker.api.item.IItemStack);
 smithing.removeRecipe(<item:minecraft:glass>);
 ```
 

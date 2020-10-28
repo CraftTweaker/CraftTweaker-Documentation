@@ -50,12 +50,20 @@ smoker.addRecipe("wool2diamond", <item:diamond>, <tag:minecraft:wool>, 1.0, 0);
 | cookTime #烧制时间 | int                                                                 | 烧制需要多长时间   |
 
 
-### getRecipeByName
+### getAllRecipes
 
-返回类型： [craftbiner.api.配方。WrapperRecipe](/crafttweaker/api/recipes/WrapperRecipe)
+Return type: List&lt;[crafttweaker.api.recipes.WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)&gt;
 
 ```zenscript
-smoker.getRecipeByname(名称为字符串)；
+smoker.getAllRecipes();
+```
+
+### getRecipeByName
+
+Return type: [crafttweaker.api.recipes.WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)
+
+```zenscript
+smoker.getRecipeByName(name as String);
 ```
 
 | 参数   | 类型     | 描述                      |
@@ -65,10 +73,10 @@ smoker.getRecipeByname(名称为字符串)；
 
 ### getRecipesBy输出
 
-返回类型：列表&lt;[craftbinstrues.WrapperRecipe](/crafttweaker/api/recipes/WrapperRecipe)&gt;
+Return type: List&lt;[crafttweaker.api.recipes.WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)&gt;
 
 ```zenscript
-smoker.getRecipesByOutput(输出为 craftweeper.api.item.IIngredient);
+smoker.getRecipesByOutput(output as crafttweaker.api.item.IIngredient);
 ```
 
 | 参数         | 类型                                                                  | 描述                      |
@@ -102,8 +110,8 @@ smoker.removeByModid("minecraft");
 通过添加排除检查，删除基于注册表名称的配方，这样除了指定的几个选项之外，您可以删除整个模组。
 
 ```zenscript
-smoker.removeByModed(modid as String, exclusion as craftweapi.recipe.RecipeFilter);
-smoker.removeByModed("minecraft", (name as string) => {return name == "orange_wool";});
+smoker.removeByModid(modid as String, exclude as crafttweaker.api.recipe.RecipeFilter);
+smoker.removeByModid("minecraft", (name as string) => {return name == "orange_wool";});
 ```
 
 | 参数    | 类型                                                              | 描述                             |

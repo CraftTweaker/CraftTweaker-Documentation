@@ -124,9 +124,9 @@ Return type: boolean
 <item:minecraft:dirt>.modifyTooltip(function as craftbiner.api.item.tooltip.ITooltipFunction);
 ```
 
-| 参数       | 类型                                                                                              | 描述                      |
-| -------- | ----------------------------------------------------------------------------------------------- | ----------------------- |
-| function | [craftbiner.api.item.tooltip.ITooltipfunction](/crafttweaker/api/item/tooltip/ITooltipFunction) | No description provided |
+| 参数       | 类型                                                                                  | 描述                      |
+| -------- | ----------------------------------------------------------------------------------- | ----------------------- |
+| function | [craftbiner.api.item.tooltip.ITooltipfunction](/vanilla/api/items/ITooltipFunction) | No description provided |
 
 
 ### 可变的
@@ -287,7 +287,7 @@ Sets the amount of the ItemStack
 | 参数  | 类型  | 描述                      |
 | --- | --- | ----------------------- |
 | 百分比 | int | No description provided |
-### 或
+### OR
 
 ```zenscript
 <tag:ingotIron> | 其他为 craftbiner.api.item.IIngredient
@@ -299,8 +299,9 @@ Sets the amount of the ItemStack
 
 ## Casters
 
-| 结果类型                                                        | 是否隐藏 |
-| ----------------------------------------------------------- | ---- |
-| [crafttweaker.api.data.IData](/vanilla/api/data/IData)      | true |
-| [craftminstrer.api.data.MapData](/vanilla/api/data/MapData) | true |
+| 结果类型                                                                        | 是否隐藏 |
+| --------------------------------------------------------------------------- | ---- |
+| [crafttweaker.api.data.IData](/vanilla/api/data/IData)                      | true |
+| [craftminstrer.api.data.MapData](/vanilla/api/data/MapData)                 | true |
+| [制作工具.api.item.MCweightedItemStack](/vanilla/api/items/MCWeightedItemStack) | true |
 

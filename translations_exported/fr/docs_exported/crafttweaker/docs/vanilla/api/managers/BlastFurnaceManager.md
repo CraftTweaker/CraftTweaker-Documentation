@@ -50,9 +50,17 @@ blastFurnace.addRecipe("wool2diamond", <item:diamond>, <tag:minecraft:wool>, 1.0
 | cookTime  | int                                                                 | how long it takes to cook       |
 
 
+### getAllRecipes
+
+Return type: List&lt;[crafttweaker.api.recipes.WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)&gt;
+
+```zenscript
+blastFurnace.getAllRecipes();
+```
+
 ### getRecipeByName
 
-Type de retour : [crafttweaker.api.recipes.WrapperRecipe](/crafttweaker/api/recipes/WrapperRecipe)
+Return type: [crafttweaker.api.recipes.WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)
 
 ```zenscript
 blastFurnace.getRecipeByName(name as String);
@@ -65,10 +73,10 @@ blastFurnace.getRecipeByName(name as String);
 
 ### Obtenir des recettes par sortie
 
-Type de retour : Liste&lt;[crafttweaker.api.recipes.WrapperRecipe](/crafttweaker/api/recipes/WrapperRecipe)&gt;
+Return type: List&lt;[crafttweaker.api.recipes.WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)&gt;
 
 ```zenscript
-blastFurnace.getRecipesByOutput(affiche comme crafttweaker.api.item.IIngredient);
+blastFurnace.getRecipesByOutput(output as crafttweaker.api.item.IIngredient);
 ```
 
 | Parameter | Type                                                                | Description             |
@@ -89,7 +97,7 @@ blastFurnace.removeAll();
 Supprimer la recette basée sur la modification du nom du Registre.
 
 ```zenscript
-blastFurnace.removeByModid(modifiez en tant que chaîne);
+blastFurnace.removeByModid(modid as String);
 blastFurnace.removeByModid("minecraft");
 ```
 
@@ -145,7 +153,7 @@ blastFurnace.removeByRegex("\\d_\\d");
 Remove a recipe based on it's output.
 
 ```zenscript
-blastFurnace.removeRecipe(affiche en tant que crafttweaker.api.item.IItemStack);
+blastFurnace.removeRecipe(output as crafttweaker.api.item.IItemStack);
 blastFurnace.removeRecipe(<item:minecraft:glass>);
 ```
 

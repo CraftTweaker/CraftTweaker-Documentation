@@ -47,12 +47,20 @@ stoneCutter.addRecipe("recipe_name", <item:minecraft:grass>, <tag:minecraft:wool
 | input      | [crafttweaker.api.item.IIngredient](/vanilla/api/items/IIngredient) | wejścia [crafttweaker.api.item.IIngredient](/vanilla/api/items/IIngredient) |
 
 
-### getRecipeByName
+### getAllRecipes
 
-Typ zwrotu: [crafttweaker.api.recipes.WrapperRecipe](/crafttweaker/api/recipes/WrapperRecipe)
+Return type: List&lt;[crafttweaker.api.recipes.WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)&gt;
 
 ```zenscript
-stoneCutter.getRecipeByName(nazwa jako String);
+stoneCutter.getAllRecipes();
+```
+
+### getRecipeByName
+
+Return type: [crafttweaker.api.recipes.WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)
+
+```zenscript
+stoneCutter.getRecipeByName(name as String);
 ```
 
 | Parameter | Type   | Description             |
@@ -62,10 +70,10 @@ stoneCutter.getRecipeByName(nazwa jako String);
 
 ### getRecipesByOutput
 
-Typ zwracania: Lista&lt;[crafttweaker.api.recipes.WrapperRecipe](/crafttweaker/api/recipes/WrapperRecipe)&gt;
+Return type: List&lt;[crafttweaker.api.recipes.WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)&gt;
 
 ```zenscript
-[PLACEHOLDER] stoneCutter.getRecipesByOutput(output as crafttweaker.api.item.IIngredient);
+stoneCutter.getRecipesByOutput(output as crafttweaker.api.item.IIngredient);
 ```
 
 | Parameter | Type                                                                | Description             |
@@ -99,7 +107,7 @@ stoneCutter.removeByModid("minecraft");
 Usuń przepis na podstawie modida nazwy rejestru z dodanym sprawdzianem wykluczenia, dzięki czemu możesz usunąć cały mod poza kilkoma określonymi.
 
 ```zenscript
-[PLACEHOLDER] stoneCutter.removeByModid(modid as String, excluas crafttweaker.api.recipe.RecipeFilter];
+stoneCutter.removeByModid(modid as String, exclude as crafttweaker.api.recipe.RecipeFilter);
 stoneCutter.removeByModid("minecraft", (name as string) => {return name == "orange_wool";});
 ```
 

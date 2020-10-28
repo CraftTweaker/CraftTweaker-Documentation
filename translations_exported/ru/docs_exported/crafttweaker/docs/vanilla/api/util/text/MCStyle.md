@@ -137,7 +137,7 @@ myMCStyle.setColor(форматирование как crafttweaker.api.text.Tex
 
 | Параметр       | Тип                                                                           | Description          |
 | -------------- | ----------------------------------------------------------------------------- | -------------------- |
-| форматирование | [crafttweaker.api.text.TextFormatting](/crafttweaker/api/text/TextFormatting) | Описание отсутствует |
+| форматирование | [crafttweaker.api.text.TextFormatting](/vanilla/api/util/text/TextFormatting) | Описание отсутствует |
 
 
 
@@ -175,7 +175,7 @@ myMCStyle.setFormatting(форматирование как crafttweaker.api.tex
 
 | Параметр       | Тип                                                                           | Description          |
 | -------------- | ----------------------------------------------------------------------------- | -------------------- |
-| форматирование | [crafttweaker.api.text.TextFormatting](/crafttweaker/api/text/TextFormatting) | Описание отсутствует |
+| форматирование | [crafttweaker.api.text.TextFormatting](/vanilla/api/util/text/TextFormatting) | Описание отсутствует |
 
 
 ### вставка

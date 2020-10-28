@@ -47,9 +47,17 @@ stoneCutter.addRecipe("recipe_name", <item:minecraft:grass>, <tag:minecraft:wool
 | input      | [crafttweaker.api.item.IIngredient](/vanilla/api/items/IIngredient) | input [crafttweaker.api.item.IIngredient](/vanilla/api/items/IIngredient) |
 
 
+### getAllRecipes
+
+Return type: List&lt;[crafttweaker.api.recipes.WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)&gt;
+
+```zenscript
+stoneCutter.getAllRecipes();
+```
+
 ### getRecipeByName
 
-戻り値の型: [crafttweaker.api.recipes.WrapperRecipe](/crafttweaker/api/recipes/WrapperRecipe)
+Return type: [crafttweaker.api.recipes.WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)
 
 ```zenscript
 stoneCutter.getRecipeByName(name as String);
@@ -62,10 +70,10 @@ stoneCutter.getRecipeByName(name as String);
 
 ### getRecipesByOutput
 
-戻り値の型: リスト&lt;[crafttweaker.api.recipes.WrapperRecipe](/crafttweaker/api/recipes/WrapperRecipe)&gt;
+Return type: List&lt;[crafttweaker.api.recipes.WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)&gt;
 
 ```zenscript
-stoneCutter.getRecipesByOutput(crafttweaker.api.item.IIngredient);
+stoneCutter.getRecipesByOutput(output as crafttweaker.api.item.IIngredient);
 ```
 
 | Parameter | Type                                                                | Description             |
@@ -99,7 +107,7 @@ stoneCutter.removeByModid("minecraft");
 追加された除外チェック付きのレジストリ名modidに基づいてレシピを削除すると、いくつか指定された以外のMod全体を削除できます。
 
 ```zenscript
-stoneCutter.removeByModid(modied as String, exclude as crafttweaker.api.recipe.RecipeFilter);
+stoneCutter.removeByModid(modid as String, exclude as crafttweaker.api.recipe.RecipeFilter);
 stoneCutter.removeByModid("minecraft", (name as string) => {return name == "orange_wool";});
 ```
 

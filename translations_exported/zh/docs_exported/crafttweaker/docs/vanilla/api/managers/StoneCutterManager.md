@@ -47,12 +47,20 @@ stoneCutter.addRecipe("recipe_name", <item:minecraft:grass>, <tag:minecraft:wool
 | input（输入）  | [crafttweaker.api.item.IIngredient](/vanilla/api/items/IIngredient) | 输入 [craftbinstruer.api.item.IIngredient](/vanilla/api/items/IIngredient) |
 
 
-### getRecipeByName
+### getAllRecipes
 
-返回类型： [craftbiner.api.配方。WrapperRecipe](/crafttweaker/api/recipes/WrapperRecipe)
+Return type: List&lt;[crafttweaker.api.recipes.WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)&gt;
 
 ```zenscript
-stoneCutter.getRecipeByname(名字为字符串)；
+stoneCutter.getAllRecipes();
+```
+
+### getRecipeByName
+
+Return type: [crafttweaker.api.recipes.WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)
+
+```zenscript
+stoneCutter.getRecipeByName(name as String);
 ```
 
 | 参数   | 类型     | 描述                      |
@@ -62,10 +70,10 @@ stoneCutter.getRecipeByname(名字为字符串)；
 
 ### getRecipesBy输出
 
-返回类型：列表&lt;[craftbinstrues.WrapperRecipe](/crafttweaker/api/recipes/WrapperRecipe)&gt;
+Return type: List&lt;[crafttweaker.api.recipes.WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)&gt;
 
 ```zenscript
-stoneCutter.getRecipesByOutput(输出为craftbiner.api.item.IIngredient);
+stoneCutter.getRecipesByOutput(output as crafttweaker.api.item.IIngredient);
 ```
 
 | 参数         | 类型                                                                  | 描述                      |
@@ -99,8 +107,8 @@ stoneCutter.removeByModid("minecraft");
 通过添加排除检查，删除基于注册表名称的配方，这样除了指定的几个选项之外，您可以删除整个模组。
 
 ```zenscript
-stoneCutter.removeByModed(modian as String, exclusion as craftweer.api.recipe.RecipeFilter);
-stoneCutter.removeByModed("minecraft", (name as string) => {return name == "orange_wool";});
+stoneCutter.removeByModid(modid as String, exclude as crafttweaker.api.recipe.RecipeFilter);
+stoneCutter.removeByModid("minecraft", (name as string) => {return name == "orange_wool";});
 ```
 
 | 参数    | 类型                                                              | 描述                             |

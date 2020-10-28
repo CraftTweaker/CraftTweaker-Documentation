@@ -50,12 +50,20 @@ blastFurnace.addRecipe("wool2diamond", <item:diamond>, <tag:minecraft:wool>, 1.0
 | cookTime  | int                                                                 | how long it takes to cook       |
 
 
-### getRecipeByName
+### getAllRecipes
 
-Typ zwrotu: [crafttweaker.api.recipes.WrapperRecipe](/crafttweaker/api/recipes/WrapperRecipe)
+Return type: List&lt;[crafttweaker.api.recipes.WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)&gt;
 
 ```zenscript
-blastFurnace.getRecipeByName(nazwa jako String);
+blastFurnace.getAllRecipes();
+```
+
+### getRecipeByName
+
+Return type: [crafttweaker.api.recipes.WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)
+
+```zenscript
+blastFurnace.getRecipeByName(name as String);
 ```
 
 | Parameter | Type   | Description             |
@@ -65,7 +73,7 @@ blastFurnace.getRecipeByName(nazwa jako String);
 
 ### getRecipesByOutput
 
-Typ zwracania: Lista&lt;[crafttweaker.api.recipes.WrapperRecipe](/crafttweaker/api/recipes/WrapperRecipe)&gt;
+Return type: List&lt;[crafttweaker.api.recipes.WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)&gt;
 
 ```zenscript
 blastFurnace.getRecipesByOutput(output as crafttweaker.api.item.IIngredient);
@@ -89,7 +97,7 @@ blastFurnace.removeAll();
 Remove recipe based on Registry name modid
 
 ```zenscript
-blastFurnace.removeByModid(modid jako String);
+blastFurnace.removeByModid(modid as String);
 blastFurnace.removeByModid("minecraft");
 ```
 
@@ -102,8 +110,8 @@ blastFurnace.removeByModid("minecraft");
 Usuń przepis na podstawie modida nazwy rejestru z dodanym sprawdzianem wykluczenia, dzięki czemu możesz usunąć cały mod poza kilkoma określonymi.
 
 ```zenscript
-blastFurnace.removeByModid(modid jako string wykluczaj jako crafttweaker.api.recipe.RecipeFilter);
-blastFurnace.removeByModid("minecraft", (nazwa jako string) => {return name == "orange_wool";});
+blastFurnace.removeByModid(modid as String, exclude as crafttweaker.api.recipe.RecipeFilter);
+blastFurnace.removeByModid("minecraft", (name as string) => {return name == "orange_wool";});
 ```
 
 | Parameter | Type                                                               | Description                      |
@@ -117,7 +125,7 @@ blastFurnace.removeByModid("minecraft", (nazwa jako string) => {return name == "
 Remove recipe based on Registry name
 
 ```zenscript
-blastFurnace.removeByName(nazwa jako String);
+blastFurnace.removeByName(name as String);
 blastFurnace.removeByName("minecraft:furnace");
 ```
 
@@ -145,7 +153,7 @@ blastFurnace.removeByRegex("\\d_\\d");
 Remove a recipe based on it's output.
 
 ```zenscript
-blastFurnace.removeRecipe(wyjścia jako crafttweaker.api.item.IItemStack);
+blastFurnace.removeRecipe(output as crafttweaker.api.item.IItemStack);
 blastFurnace.removeRecipe(<item:minecraft:glass>);
 ```
 

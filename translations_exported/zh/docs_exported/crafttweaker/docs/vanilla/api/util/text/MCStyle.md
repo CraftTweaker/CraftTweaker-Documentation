@@ -137,7 +137,7 @@ myMCStyle.setColor(格式化为 craftminstrer.api.text.TextFormating);
 
 | 参数  | 类型                                            | 描述                      |
 | --- | --------------------------------------------- | ----------------------- |
-| 格式化 | [文本格式](/crafttweaker/api/text/TextFormatting) | No description provided |
+| 格式化 | [文本格式](/vanilla/api/util/text/TextFormatting) | No description provided |
 
 
 
@@ -175,7 +175,7 @@ myMCStyle.setFormating(格式化为 craftbiner.api.text.TextFormating);
 
 | 参数  | 类型                                            | 描述                      |
 | --- | --------------------------------------------- | ----------------------- |
-| 格式化 | [文本格式](/crafttweaker/api/text/TextFormatting) | No description provided |
+| 格式化 | [文本格式](/vanilla/api/util/text/TextFormatting) | No description provided |
 
 
 ### 设置插入

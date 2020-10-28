@@ -85,9 +85,17 @@ craftingTable ddShapeless("recipe_name", <item:minecraft:dirt>, [<item:minecraft
 | recipeFunction | [craftbinstruer.api.recipe.RecipeFunctionArray](/vanilla/api/recipe/RecipeFunctionArray) | 可选 [为更高级的条件的 craftbiner.api.recipe.RecipeFunctionArray](/vanilla/api/recipe/RecipeFunctionArray) | true  | `null`        |
 
 
+### getAllRecipes
+
+Return type: List&lt;[crafttweaker.api.recipes.WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)&gt;
+
+```zenscript
+craftingTable.getAllRecipes();
+```
+
 ### getRecipeByName
 
-返回类型： [craftbiner.api.配方。WrapperRecipe](/crafttweaker/api/recipes/WrapperRecipe)
+Return type: [crafttweaker.api.recipes.WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)
 
 ```zenscript
 craftingTable.getRecipeByname(名称为字符串)；
@@ -100,7 +108,7 @@ craftingTable.getRecipeByname(名称为字符串)；
 
 ### getRecipesBy输出
 
-返回类型：列表&lt;[craftbinstrues.WrapperRecipe](/crafttweaker/api/recipes/WrapperRecipe)&gt;
+Return type: List&lt;[crafttweaker.api.recipes.WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)&gt;
 
 ```zenscript
 craftingTable.getRecipesByOutput(输出为 craftbiner.api.item.IIngredient);

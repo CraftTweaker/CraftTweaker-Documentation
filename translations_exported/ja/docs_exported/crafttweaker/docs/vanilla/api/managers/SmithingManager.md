@@ -48,9 +48,17 @@ smithing.addRecipe("recipe_name", <item:minecraft:golden_apple>, <item:minecraft
 | 追加         | [crafttweaker.api.item.IIngredient](/vanilla/api/items/IIngredient) | 基本アイテムに追加されたアイテム。 |
 
 
+### getAllRecipes
+
+Return type: List&lt;[crafttweaker.api.recipes.WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)&gt;
+
+```zenscript
+smithing.getAllRecipes();
+```
+
 ### getRecipeByName
 
-戻り値の型: [crafttweaker.api.recipes.WrapperRecipe](/crafttweaker/api/recipes/WrapperRecipe)
+Return type: [crafttweaker.api.recipes.WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)
 
 ```zenscript
 smithing.getRecipeByName(name as String);
@@ -63,10 +71,10 @@ smithing.getRecipeByName(name as String);
 
 ### getRecipesByOutput
 
-戻り値の型: リスト&lt;[crafttweaker.api.recipes.WrapperRecipe](/crafttweaker/api/recipes/WrapperRecipe)&gt;
+Return type: List&lt;[crafttweaker.api.recipes.WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)&gt;
 
 ```zenscript
-smithing.getRecipesByOutput(crafttweaker.api.item.IIngredient);
+smithing.getRecipesByOutput(output as crafttweaker.api.item.IIngredient);
 ```
 
 | Parameter | Type                                                                | Description             |
@@ -100,7 +108,7 @@ smithing.removeByModid("minecraft");
 追加された除外チェック付きのレジストリ名modidに基づいてレシピを削除すると、いくつか指定された以外のMod全体を削除できます。
 
 ```zenscript
-smithing.removeByModid(modied as String, exclude as crafttweaker.api.recipeFilter);
+smithing.removeByModid(modid as String, exclude as crafttweaker.api.recipe.RecipeFilter);
 smithing.removeByModid("minecraft", (name as string) => {return name == "orange_wool";});
 ```
 
