@@ -23,9 +23,6 @@ It might be required for you to import the package if you encounter any issues (
 
 ## More ZenMethods
 
-- IEntityAttributeModifier createModifier(String name, double amount, int operation, @Optional String uuid);
-
-
 ### Create Modifier
    for operation:
     0 = add: Increment X by Amount
