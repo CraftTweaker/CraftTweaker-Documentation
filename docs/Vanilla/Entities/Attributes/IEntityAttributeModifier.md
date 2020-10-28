@@ -24,7 +24,7 @@ It might be required for you to import the package if you encounter any issues (
 ## More ZenMethods
 
 ### Create Modifier
-   for operation:
+    for operation:
     0 = add: Increment X by Amount
     1 = multiply_base: Increment Y by X * Amount
     2 = multiply: Y = Y * (1 + Amount) (equivalent to Increment Y by Y * Amount).
