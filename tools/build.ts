@@ -3,7 +3,8 @@ import {Node} from "unist";
 import {
     getLanguages,
     listFiles,
-    walk
+    walk,
+    checkForDuplicates
 } from "./util";
 
 let result = require('dotenv').config();
@@ -17,6 +18,7 @@ let lunr = require("lunr");
 let unified = require('unified');
 let markdown = require('remark-parse');
 let vfile = require('to-vfile');
+let mergeJson = require("merge-json");
 
 interface Doc {
     location: string,
@@ -24,11 +26,10 @@ interface Doc {
     text: string
 }
 
-
 const buildIndex = (folder: string) => {
 
     let fileList: string[] = [];
-    listFiles(folder, fileList);
+    listFiles(folder, fileList, true, ["md"]);
 
     let processor = unified().use(markdown, {});
     let docs: Doc[] = [];
@@ -113,7 +114,7 @@ const buildIndex = (folder: string) => {
         });
     });
     if(linkError){
-        throw "Link check failed!";
+        throw new Error("Link check failed!");
     }
     // Convert to relative links that we can use
     docs = docs.map(value => {
@@ -141,20 +142,97 @@ const buildIndex = (folder: string) => {
 
 };
 
+const performDocumentationMerge = (buildsDir: string, exportedDocsDir: string, translationsDir: string, exportedTranslationsDir: string, languages: string[]): void => {
+    const findDirectoryForLang = (lang: string, docs: string, translation: string): string => {
+        if (lang == `en`) return docs;
+        return path.join(translation, path.join(lang, `docs_exported`));
+    };
+    const findUserJsonForLang = (lang: string, translation: string): string => {
+        if (lang == `en`) return `docs.json`;
+        return path.join(translation, path.join(lang, `docs.json`))
+    }
+
+    getLanguages(buildsDir).forEach(lang => {
+        let docsExportedDirectoryForLang = findDirectoryForLang(lang, exportedDocsDir, exportedTranslationsDir);
+
+        console.log(`Copying translated files for language '${lang}' to output directory`);
+        let exportsSubDirs: string[] = fs.readdirSync(docsExportedDirectoryForLang);
+        let languageJsons: string[] = [];
+        exportsSubDirs.forEach(subDirectory => {
+            let docsDir = path.join(docsExportedDirectoryForLang, path.join(subDirectory, "docs"));
+            let docsJson = path.join(docsExportedDirectoryForLang, path.join(subDirectory, "docs.json"));
+
+            if (fs.existsSync(docsDir)) {
+                let dstDir = path.join(buildsDir, path.join(lang, "docs"));
+                let dupes = checkForDuplicates(docsDir, dstDir, true);
+                if (dupes.length > 0) {
+                    console.error(`Duplicate files were identified for language ${lang}: docs merging will ignore these files!`);
+                    console.error(`Found files: ${dupes}`);
+                }
+
+                fs.copySync(docsDir, path.join(buildsDir, path.join(lang, "docs")), { overwrite: false, errorOnExist: false });
+
+                if (fs.existsSync(docsJson)) {
+                    languageJsons.push(docsJson);
+                } else {
+                    console.error(`Directory ${docsDir} does not define any 'docs.json' files: check your automated export script!`);
+                }
+            } else {
+                console.log(`Subdirectory ${subDirectory} does not host docs for language ${lang}: skipping`);
+            }
+        });
+
+        let mainJson = findUserJsonForLang(lang, translationsDir);
+        if (fs.existsSync(mainJson)) {
+            languageJsons.push(findUserJsonForLang(lang, translationsDir));
+        } else {
+            console.error(`Language ${lang} does not define a main 'docs.json' in directory ${mainJson}: this is a serious error!`);
+        }
+
+        console.log(`Merging 'docs.json' files for language '${lang}': found ${languageJsons.length} files`);
+        let mergedJson: any = doJsonMerge(languageJsons);
+        fs.writeFileSync(path.join(buildsDir, path.join(lang, "docs.json")), JSON.stringify(mergedJson));
+    });
+};
+
+const doJsonMerge = (jsonPaths: string[]): any => {
+    let json: any = {};
+    jsonPaths.forEach((path: string) => {
+        let jsonText = fs.readFileSync(path, 'utf8');
+        json = mergeJson.merge(json, JSON.parse(jsonText));
+        console.log(`Merged file '${path}'`);
+    });
+    return json;
+}
+
 const build = async () => {
     let buildsDir = path.join(process.cwd(), `build`);
+    let exportedDocsDir = path.join(process.cwd(), `docs_exported`);
     let translationsDir = path.join(process.cwd(), `translations`);
+    let exportedTranslationsDir = path.join(process.cwd(), `translations_exported`);
+
     console.log(`Creating or emptying build directory!`);
     fs.emptyDirSync(buildsDir);
+
     console.log(`Copying translations!`);
     fs.copySync(translationsDir, buildsDir);
     fs.removeSync(path.join(buildsDir, `en`));
     fs.mkdirsSync(path.join(buildsDir, path.join("en", "docs")));
     fs.copySync("docs", path.join(buildsDir, path.join("en", "docs")));
-    fs.copySync("mkdocs.yml", path.join(buildsDir, path.join(`en`, "mkdocs.yml")));
-    fs.copySync("docs.json", path.join(buildsDir, path.join(`en`, "docs.json")));
+    fs.copySync("mkdocs.yml", path.join(buildsDir, path.join("en", "mkdocs.yml")));
+    fs.copySync("docs.json", path.join(buildsDir, path.join("en", "docs.json")));
+    console.log(`Copied translations!`);
+
     let languages = getLanguages(buildsDir);
-    console.log("Building Search indices and reverse doc lookup");
+
+    console.log("Merging automated export files");
+    if (!fs.existsSync(exportedDocsDir) || !fs.existsSync(exportedTranslationsDir)) {
+        console.log(`One or more target directories '${exportedDocsDir}', '${exportedTranslationsDir}' weren't found: skipping merging`);
+    } else {
+        performDocumentationMerge(buildsDir, exportedDocsDir, translationsDir, exportedTranslationsDir, languages);
+    }
+
+    console.log("Building Search indices and reverse index lookup");
     languages.forEach(lang => {
         buildIndex(path.join(buildsDir, lang));
         console.log(`Done building an index for: "${lang}"`);
@@ -165,21 +243,26 @@ const build = async () => {
     });
 
     console.log("Copying files to folders");
-    let docsPath = path.join(process.env.docsSiteDir, process.env.VERSION);
-    if (fs.existsSync(docsPath)) {
-        // can't remove a non empty dir?
-        fs.emptyDirSync(docsPath);
-        fs.rmdirSync(docsPath);
+    if (process.env.docsSiteDir === undefined || process.env.VERSION === undefined) {
+        console.log(`Unable to deploy build because variables are missing! docsSiteDir is '${process.env.docsSiteDir}', VERSION is '${process.env.VERSION}'`);
+    } else {
+        let docsPath = path.join(process.env.docsSiteDir, process.env.VERSION);
+        if (fs.existsSync(docsPath)) {
+            // can't remove a non empty dir?
+            fs.emptyDirSync(docsPath);
+            fs.rmdirSync(docsPath);
+        }
+        fs.mkdirSync(docsPath);
+        fs.copySync(buildsDir, docsPath);
+        console.log("Copied files!")
     }
-    fs.mkdirSync(docsPath);
-    fs.copySync(buildsDir, docsPath);
-    console.log("Copied files!")
 };
 
 
-build().then(value => {
+build().then(_value => {
     console.log(`Build done!`);
 }).catch(reason => {
-    console.log(`Build failed! Reason: "${reason}"`);
+    console.error(`Build failed! Reason: "${reason}"`);
+    console.error(reason.stack);
     process.exit(1);
 });
