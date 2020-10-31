@@ -26,4 +26,4 @@ The following information can be retrieved/set during the event:
 | `damage`           |                    | int                                               |
 |                    | `additionalDamage` | int                                               | 
 | `drops`            |                    | [IItemStack](/Vanilla/Items/IItemStack/)[]        |
-| `fishHook`         |                    | [IEntityFishHook](/Vanilla/Entities/IEntityFishHook/)[] |
+| `fishHook`         |                    | [IEntityFishHook](/Vanilla/Entities/IEntityFishHook/) |
