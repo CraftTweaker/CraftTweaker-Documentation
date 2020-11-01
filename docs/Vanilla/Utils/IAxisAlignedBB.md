@@ -6,7 +6,6 @@
 It might be required for you to [import](/AdvancedFunctions/Import/) the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
 `import crafttweaker.util.IAxisAlignedBB;`
 
-## Getting a Position3f object
 ## IAxisAlignedBB constructor
 You can create a IAxisAlignedBB object yourself by using the following methods:
 
@@ -29,5 +28,5 @@ The First method allows you to create a position at the given coordinates.
 | maxX         | double |
 | maxY         | double |
 | maxZ         | double |
-| IVector3d       | [IPosition3f](/Vanilla/World/IVector3d/) |
+| IVector3d       | [IVector3d](/Vanilla/World/IVector3d/) |
 
