@@ -28,5 +28,5 @@ The First method allows you to create a position at the given coordinates.
 | maxX         | double |
 | maxY         | double |
 | maxZ         | double |
-| IVector3d       | [IVector3d](/Vanilla/World/IVector3d/) |
+| center       | [IVector3d](/Vanilla/World/IVector3d/) |
 
