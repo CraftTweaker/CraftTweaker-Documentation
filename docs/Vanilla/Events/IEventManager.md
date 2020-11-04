@@ -57,6 +57,7 @@ The ZenMethods would be what you'll need to call on `events`, the Event Class wo
 | onEntityLivingHeal              | [`crafttweaker.event.EntityLivingHealEvent`](/Vanilla/Events/Events/EntityLivingHeal/)                     |
 | onEntityLivingHurt              | [`crafttweaker.event.EntityLivingHurtEvent`](/Vanilla/Events/Events/EntityLivingHurt/)                     |
 | onEntityLivingJump              | [`crafttweaker.event.EntityLivingJumpEvent`](/Vanilla/Events/Events/EntityLivingJump/)                     |
+| onEntityLivingUpdate            | [`crafttweaker.event.EntityLivingUpdateEvent`](/Vanilla/Events/Events/EntityLivingUpdateEvent/)            |
 | onEntityLivingUseItem           | [`crafttweaker.event.EntityLivingUseItemEvent.All`](/Vanilla/Events/Events/LivingEntityUseItem/)           |
 | onEntityLivingUseItemFinish     | [`crafttweaker.event.EntityLivingUseItemEvent.Finish`](/Vanilla/Events/Events/LivingEntityUseItem/)        |
 | onEntityLivingUseItemStart      | [`crafttweaker.event.EntityLivingUseItemEvent.Start`](/Vanilla/Events/Events/LivingEntityUseItem/)         |
