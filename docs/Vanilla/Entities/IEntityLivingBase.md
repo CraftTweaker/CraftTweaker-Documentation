@@ -15,25 +15,26 @@ IEntityLivingBase extends [IEntity](/Vanilla/Entities/IEntity/). That means all 
 
 | ZenGetter                                              | Return Type (*can be null*)                           |
 |--------------------------------------------------------|-------------------------------------------------------|
-| activeHand                                             | String (MAIN_HAND or OFF_HAND)                         |
-| activeItemStackBlocking                                | boolean                                               |
+| activeHand                                             | String (MAIN_HAND or OFF_HAND)                        |
+| activeItemStack                                        | [IItemStack](/Vanilla/Items/IItemStack/)              |
 | activePotionEffects                                    | List<[IPotionEffect](/Vanilla/Potions/IPotionEffect/)> |
 | AIMovementSpeed                                        | float                                                 |
 | arrowsInEntity                                         | int                                                   |
-| attackingEntity                                        | *IEntityLivingBase*                                   |
+| attackingEntity                                        | [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) |
 | canBreatheUnderwater                                   | boolean                                               |
-| elytraFlying                                           | boolean                                               |
 | health                                                 | float                                                 |
+| isActiveItemStackBlocking                              | boolean                                               |
 | isChild                                                | boolean                                               |
+| isElytraFlying                                         | boolean                                               |
 | isOnLadder                                             | boolean                                               |
 | isUndead                                               | boolean                                               |
-| lastAttackedEntity                                     | *IEntityLivingBase*                                   |
+| lastAttackedEntity                                     | [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) |
 | lastAttackedEntityTime                                 | int                                                   |
-| lastDamageSource                                       | [IDamageSource](/Vanilla/Damage/IDamageSource/)        |
-| mainHandHeldItem                                       | [IItemStack](/Vanilla/Items/IItemStack/)               |
+| lastDamageSource                                       | [IDamageSource](/Vanilla/Damage/IDamageSource/)       |
+| mainHandHeldItem                                       | [IItemStack](/Vanilla/Items/IItemStack/)              |
 | maxHealth                                              | float                                                 |
-| offHandHeldItem                                        | [IItemStack](/Vanilla/Items/IItemStack/)               |
-| revengeTarget                                          | *IEntityLivingBase*                                   |
+| offHandHeldItem                                        | [IItemStack](/Vanilla/Items/IItemStack/)              |
+| revengeTarget                                          | [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) |
 | swingInProgress                                        | boolean                                               |
 | totalArmorValue                                        | int                                                   |
 
@@ -45,8 +46,9 @@ IEntityLivingBase extends [IEntity](/Vanilla/Entities/IEntity/). That means all 
 | AIMovementSpeed                                        | float                                                 |
 | arrowsInEntity                                         | int                                                   |
 | health                                                 | float                                                 |
-| lastAttackedEntity                                     | *IEntityLivingBase*                                   |
-| revengeTarget                                          | *IEntityLivingBase*                                   |
+| lastAttackedEntity                                     | [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) |
+| revengeTarget                                          | [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) |
+| swingProgress                                          | int                                                 |
 
 
 ## More ZenMethods
@@ -67,3 +69,5 @@ IEntityLivingBase extends [IEntity](/Vanilla/Entities/IEntity/). That means all 
 - void onDeath();
 - void onLivingUpdate();
 - void setItemToSlot([IEntityEquipmentSlot](/Vanilla/Entities/IEntityEquipmentSlot/) slot, [IItemStack](/Vanilla/Items/IItemStack/) itemStack);
+- void resetActiveHand();
+- void stopActiveHand();
