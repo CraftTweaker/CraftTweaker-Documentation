@@ -66,6 +66,7 @@ IEntity extends [ICommandSender](/Vanilla/Commands/ICommandSender/). That means 
 | lowestRidingEntity          |                     | *IEntity*                                    |
 | maxFallHeight               |                     | int                                          |
 | maxInPortalTime             |                     | int                                          |
+| onGround                    | onGround()          | boolean                                      |
 | parts                       |                     | IEntity[]                                    |
 | passengers                  | getPassengers()     | List<IEntity\>                               |
 | passengersRecursive         |                     | List<IEntity\>                               |
@@ -89,7 +90,6 @@ IEntity extends [ICommandSender](/Vanilla/Commands/ICommandSender/). That means 
 | rotationYaw                 |                     | float                                        |
 | rotationPitch               |                     | float                                        |
 | lookingDirection            |                     | [IVector3d](/Vanilla/World/IVector3d/)        |
-| onGround                    | onGround()          | boolean                                      |
 | nbt                         | getNBT()            | [IData](/Vanilla/Data/IData/)                  |
 
 
@@ -119,6 +119,7 @@ IEntity extends [ICommandSender](/Vanilla/Commands/ICommandSender/). That means 
 | posX                        |                     | double                                       |
 | posY                        |                     | double                                       |
 | posZ                        |                     | double                                       |
+| nbt                         | setNBT()            | [IData](/Vanilla/Data/IData/)                  |
 
 
 ## More ZenMethods
@@ -146,4 +147,3 @@ IEntity extends [ICommandSender](/Vanilla/Commands/ICommandSender/). That means 
 - boolean boolean isPassenger(IEntity entity);
 - boolean isRidingSameEntity(IEntity other);
 - [IRayTraceResult](/Vanilla/World/IRayTraceResult/) getRayTrace(double blockReachDistance, float partialTicks, @Optional boolean stopOnLiquid, @Optional boolean ignoreBlockWithoutBoundingBox, @Optional(valueBoolean = true) boolean returnLastUncollidableBlock);
-- void update([IData](/Vanilla/Data/IData/) data);
