@@ -43,6 +43,45 @@ Rückgabetyp: [crafttweaker.api.util.text.MCTextComponent](/vanilla/api/util/tex
 myMCTextComponent.copyRaw();
 ```
 
+### createStringTextComponent
+
+Rückgabetyp: [crafttweaker.api.util.text.MCTextComponent](/vanilla/api/util/text/MCTextComponent)
+
+```zenscript
+crafttweaker.api.util.text.MCTextComponent.createStringTextComponent(text as String);
+```
+
+| Parameter | Type   | Beschreibung            |
+| --------- | ------ | ----------------------- |
+| text      | String | No description provided |
+
+
+### createTranslationTextComponent
+
+Rückgabetyp: [crafttweaker.api.util.text.MCTextComponent](/vanilla/api/util/text/MCTextComponent)
+
+```zenscript
+crafttweaker.api.util.text.MCTextComponent.createTranslationTextComponent(translationKey as String);
+```
+
+| Parameter      | Type   | Beschreibung            |
+| -------------- | ------ | ----------------------- |
+| translationKey | String | No description provided |
+
+
+
+Rückgabetyp: [crafttweaker.api.util.text.MCTextComponent](/vanilla/api/util/text/MCTextComponent)
+
+```zenscript
+crafttweaker.api.util.text.MCTextComponent.createTranslationTextComponent(translationKey as String, args as Object[]);
+```
+
+| Parameter      | Type     | Beschreibung            |
+| -------------- | -------- | ----------------------- |
+| translationKey | String   | No description provided |
+| args           | Object[] | No description provided |
+
+
 ### deepCopy
 
 Rückgabetyp: [crafttweaker.api.util.text.MCTextComponent](/vanilla/api/util/text/MCTextComponent)
@@ -64,7 +103,7 @@ myMCTextComponent.getString();
 Return type: String
 
 ```zenscript
-myMCTextComponent.getStringTruncated(maxLen als int);
+myMCTextComponent.getStringTruncated(maxLen as int);
 ```
 
 | Parameter | Type | Beschreibung            |
@@ -98,15 +137,15 @@ myMCTextComponent.setStyle(style as crafttweaker.api.util.text.MCStyle);
 
 | Name                     | Type                                                                                                          | Has Getter | Has Setter |
 | ------------------------ | ------------------------------------------------------------------------------------------------------------- | ---------- | ---------- |
-| formatierter Text        | String                                                                                                        | true       | false      |
-| Geschwister              | Liste&lt;[crafttweaker.api.util.text.MCTextComponent](/vanilla/api/util/text/MCTextComponent)&gt; | true       | false      |
+| formattedText            | String                                                                                                        | true       | false      |
+| siblings                 | Liste&lt;[crafttweaker.api.util.text.MCTextComponent](/vanilla/api/util/text/MCTextComponent)&gt; | true       | false      |
 | unformattedComponentText | String                                                                                                        | true       | false      |
 
 ## Operatoren
 ### ADD
 
 ```zenscript
-myMCTextComponent + Komponente als crafttweaker.api.util.text.MCTextComponent
+myMCTextComponent + component as crafttweaker.api.util.text.MCTextComponent
 ```
 
 | Parameter  | Type                                                                                 | Beschreibung            |
@@ -115,7 +154,7 @@ myMCTextComponent + Komponente als crafttweaker.api.util.text.MCTextComponent
 ### CAT
 
 ```zenscript
-myMCTextComponent ~ Komponente als crafttweaker.api.util.text.MCTextComponent
+myMCTextComponent ~ component as crafttweaker.api.util.text.MCTextComponent
 ```
 
 | Parameter  | Type                                                                                 | Beschreibung            |
@@ -124,7 +163,7 @@ myMCTextComponent ~ Komponente als crafttweaker.api.util.text.MCTextComponent
 ### SHL
 
 ```zenscript
-myMCTextComponent << Komponente als crafttweaker.api.util.text.MCTextComponent
+myMCTextComponent << component as crafttweaker.api.util.text.MCTextComponent
 ```
 
 | Parameter  | Type                                                                                 | Beschreibung            |
