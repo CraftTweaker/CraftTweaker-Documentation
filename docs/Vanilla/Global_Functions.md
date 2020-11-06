@@ -45,13 +45,21 @@ Returns a boolean
 Note: If this does not work for you, try casting the object to bool `<minecraft:dirt> as bool`
 
 
+## instanceof
+
+```zenscript
+entity instanceof IEntity;
+```
+Returns a boolean
+
+
 ## max
 
 ```zenscript
 //max(int number1, int number2);
 max(10, 11);
 ```
-Returns an int
+Returns the larger number
 
 ## min
 
@@ -59,7 +67,7 @@ Returns an int
 //min(int number1, int number2);
 min(10, 11);
 ```
-Returns an int
+Returns the lower number
 
 ## pow
 
