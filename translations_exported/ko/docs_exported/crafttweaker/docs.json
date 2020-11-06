@@ -83,6 +83,9 @@
         "Food": {
           "MCFood": "vanilla/api/food/MCFood.md"
         },
+        "Game": {
+          "MCGame": "vanilla/api/game/MCGame.md"
+        },
         "Items": {
           "IIngredient": "vanilla/api/items/IIngredient.md",
           "IIngredientTransformer": "vanilla/api/items/IIngredientTransformer.md",
@@ -138,7 +141,8 @@
           }
         },
         "World": {
-          "MCBiome": "vanilla/api/world/MCBiome.md"
+          "MCBiome": "vanilla/api/world/MCBiome.md",
+          "MCWorld": "vanilla/api/world/MCWorld.md"
         }
       }
     }
