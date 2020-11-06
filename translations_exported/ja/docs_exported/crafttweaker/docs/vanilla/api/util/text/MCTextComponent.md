@@ -43,6 +43,45 @@ myMCTTextComponent.appendText(text as String);
 myMCTTextComponent.copyRaw();
 ```
 
+### createStringTextComponent
+
+戻り値の型: [crafttweaker.api.util.text.MCTextComponent](/vanilla/api/util/text/MCTextComponent)
+
+```zenscript
+crafttweaker.api.util.text.MCTextComponent.createStringTextComponent(text as String);
+```
+
+| Parameter | Type   | Description             |
+| --------- | ------ | ----------------------- |
+| テキスト      | String | No description provided |
+
+
+### createTranslationTextComponent
+
+戻り値の型: [crafttweaker.api.util.text.MCTextComponent](/vanilla/api/util/text/MCTextComponent)
+
+```zenscript
+crafttweaker.api.util.text.MCTextComponent.createTranslationTextComponent(translationKey as String);
+```
+
+| Parameter      | Type   | Description             |
+| -------------- | ------ | ----------------------- |
+| translationKey | String | No description provided |
+
+
+
+戻り値の型: [crafttweaker.api.util.text.MCTextComponent](/vanilla/api/util/text/MCTextComponent)
+
+```zenscript
+crafttweaker.api.util.text.MCTextComponent.createTranslationTextComponent(translationKey as String, args as Object[]);
+```
+
+| Parameter      | Type     | Description             |
+| -------------- | -------- | ----------------------- |
+| translationKey | String   | No description provided |
+| args           | Object[] | No description provided |
+
+
 ### deepCopy
 
 戻り値の型: [crafttweaker.api.util.text.MCTextComponent](/vanilla/api/util/text/MCTextComponent)
@@ -56,7 +95,7 @@ myMCTextComponent.deepCopy();
 Return type: String
 
 ```zenscript
-myMCTTextComponent.getString();
+myMCTextComponent.getString();
 ```
 
 ### getStringTruncated
@@ -64,7 +103,7 @@ myMCTTextComponent.getString();
 Return type: String
 
 ```zenscript
-myMCTextComponent.getStringTruncated(maxLen)
+myMCTextComponent.getStringTruncated(maxLen as int);
 ```
 
 | Parameter | Type | Description             |
@@ -98,8 +137,8 @@ myMCTextComponent.setStyle(style as crafttweaker.api.util.text.MCStyle);
 
 | 名称                       | Type                                                                                                         | Has Getter | Has Setter |
 | ------------------------ | ------------------------------------------------------------------------------------------------------------ | ---------- | ---------- |
-| 書式設定されたテキスト              | String                                                                                                       | true       | false      |
-| 兄弟要素                     | List&lt;[crafttweaker.api.util.text.MCTextComponent](/vanilla/api/util/text/MCTextComponent)&gt; | true       | false      |
+| formattedText            | String                                                                                                       | true       | false      |
+| siblings                 | List&lt;[crafttweaker.api.util.text.MCTextComponent](/vanilla/api/util/text/MCTextComponent)&gt; | true       | false      |
 | unformattedComponentText | String                                                                                                       | true       | false      |
 
 ## 演算子
