@@ -9,6 +9,48 @@ crafttweaker.api.world.MCBiome
 ```
 
 ## Methods
+### doesSnowFreeze
+
+Return type: boolean
+
+```zenscript
+myMCBiome.doesSnowFreeze(world as crafttweaker.api.world.MCWorld, pos as crafttweaker.api.util.BlockPos);
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| world | [crafttweaker.api.world.MCWorld](/vanilla/api/world/MCWorld) | No description provided |
+| pos | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | No description provided |
+
+
+### doesWaterFreeze
+
+Return type: boolean
+
+```zenscript
+myMCBiome.doesWaterFreeze(world as crafttweaker.api.world.MCWorld, pos as crafttweaker.api.util.BlockPos);
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| world | [crafttweaker.api.world.MCWorld](/vanilla/api/world/MCWorld) | No description provided |
+| pos | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | No description provided |
+
+
+
+Return type: boolean
+
+```zenscript
+myMCBiome.doesWaterFreeze(world as crafttweaker.api.world.MCWorld, pos as crafttweaker.api.util.BlockPos, mustBeAtEdge as boolean);
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| world | [crafttweaker.api.world.MCWorld](/vanilla/api/world/MCWorld) | No description provided |
+| pos | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | No description provided |
+| mustBeAtEdge | boolean | No description provided |
+
+
 ### getTemperature
 
 Return type: float

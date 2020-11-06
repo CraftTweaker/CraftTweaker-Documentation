@@ -43,6 +43,45 @@ Return type: [crafttweaker.api.util.text.MCTextComponent](/vanilla/api/util/text
 myMCTextComponent.copyRaw();
 ```
 
+### createStringTextComponent
+
+Return type: [crafttweaker.api.util.text.MCTextComponent](/vanilla/api/util/text/MCTextComponent)
+
+```zenscript
+crafttweaker.api.util.text.MCTextComponent.createStringTextComponent(text as String);
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| text | String | No description provided |
+
+
+### createTranslationTextComponent
+
+Return type: [crafttweaker.api.util.text.MCTextComponent](/vanilla/api/util/text/MCTextComponent)
+
+```zenscript
+crafttweaker.api.util.text.MCTextComponent.createTranslationTextComponent(translationKey as String);
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| translationKey | String | No description provided |
+
+
+
+Return type: [crafttweaker.api.util.text.MCTextComponent](/vanilla/api/util/text/MCTextComponent)
+
+```zenscript
+crafttweaker.api.util.text.MCTextComponent.createTranslationTextComponent(translationKey as String, args as Object[]);
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| translationKey | String | No description provided |
+| args | Object[] | No description provided |
+
+
 ### deepCopy
 
 Return type: [crafttweaker.api.util.text.MCTextComponent](/vanilla/api/util/text/MCTextComponent)
