@@ -9,9 +9,51 @@ crafttweaker.api.world.MCBiome
 ```
 
 ## Methods
+### doesSnowFreeze
+
+Return type: boolean
+
+```zenscript
+myMCBiome.doesSnowFreeze(world as crafttweaker.api.world.MCWorld, pos as crafttweaker.api.util.BlockPos);
+```
+
+| Parameter | Type                                                         | Description                 |
+| --------- | ------------------------------------------------------------ | --------------------------- |
+| world     | [crafttweaker.api.world.MCWorld](/vanilla/api/world/MCWorld) | Nessuna descrizione fornita |
+| pos       | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | Nessuna descrizione fornita |
+
+
+### doesWaterFreeze
+
+Return type: boolean
+
+```zenscript
+myMCBiome.doesWaterFreeze(world as crafttweaker.api.world.MCWorld, pos as crafttweaker.api.util.BlockPos);
+```
+
+| Parameter | Type                                                         | Description                 |
+| --------- | ------------------------------------------------------------ | --------------------------- |
+| world     | [crafttweaker.api.world.MCWorld](/vanilla/api/world/MCWorld) | Nessuna descrizione fornita |
+| pos       | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | Nessuna descrizione fornita |
+
+
+
+Return type: boolean
+
+```zenscript
+myMCBiome.doesWaterFreeze(world as crafttweaker.api.world.MCWorld, pos as crafttweaker.api.util.BlockPos, mustBeAtEdge as boolean);
+```
+
+| Parameter    | Type                                                         | Description                 |
+| ------------ | ------------------------------------------------------------ | --------------------------- |
+| world        | [crafttweaker.api.world.MCWorld](/vanilla/api/world/MCWorld) | Nessuna descrizione fornita |
+| pos          | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | Nessuna descrizione fornita |
+| mustBeAtEdge | boolean                                                      | Nessuna descrizione fornita |
+
+
 ### getTemperature
 
-Tipo di restituzione: float
+Return type: float
 
 ```zenscript
 myMCBiome.getTemperature(pos as crafttweaker.api.util.BlockPos);
