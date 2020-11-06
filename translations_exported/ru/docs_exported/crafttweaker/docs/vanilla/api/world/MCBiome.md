@@ -9,9 +9,51 @@ crafttweaker.api.world.MCBiome
 ```
 
 ## Methods
+### doesSnowFreeze
+
+Return type: boolean
+
+```zenscript
+myMCBiome.doesSnowFreeze(world as crafttweaker.api.world.MCWorld, pos as crafttweaker.api.util.BlockPos);
+```
+
+| Параметр | Тип                                                          | Description          |
+| -------- | ------------------------------------------------------------ | -------------------- |
+| world    | [crafttweaker.api.world.MCWorld](/vanilla/api/world/MCWorld) | Описание отсутствует |
+| pos      | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | Описание отсутствует |
+
+
+### doesWaterFreeze
+
+Return type: boolean
+
+```zenscript
+myMCBiome.doesWaterFreeze(world as crafttweaker.api.world.MCWorld, pos as crafttweaker.api.util.BlockPos);
+```
+
+| Параметр | Тип                                                          | Description          |
+| -------- | ------------------------------------------------------------ | -------------------- |
+| world    | [crafttweaker.api.world.MCWorld](/vanilla/api/world/MCWorld) | Описание отсутствует |
+| pos      | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | Описание отсутствует |
+
+
+
+Return type: boolean
+
+```zenscript
+myMCBiome.doesWaterFreeze(world as crafttweaker.api.world.MCWorld, pos as crafttweaker.api.util.BlockPos, mustBeAtEdge as boolean);
+```
+
+| Параметр     | Тип                                                          | Description          |
+| ------------ | ------------------------------------------------------------ | -------------------- |
+| world        | [crafttweaker.api.world.MCWorld](/vanilla/api/world/MCWorld) | Описание отсутствует |
+| pos          | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | Описание отсутствует |
+| mustBeAtEdge | boolean                                                      | Описание отсутствует |
+
+
 ### getTemperature
 
-Тип возврата: число с плавающей точкой
+Return type: float
 
 ```zenscript
 myMCBiome.getTemperature(pos as crafttweaker.api.util.BlockPos);
