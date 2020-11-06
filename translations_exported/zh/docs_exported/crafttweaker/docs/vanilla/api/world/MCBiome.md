@@ -9,9 +9,51 @@ crafttweaker.api.world.MCBiome
 ```
 
 ## 方法
+### doesSnowFreeze
+
+Return type: boolean
+
+```zenscript
+myMCBiome.doesSnowFreeze(world as crafttweaker.api.world.MCWorld, pos as crafttweaker.api.util.BlockPos);
+```
+
+| 参数    | 类型                                                           | 描述                      |
+| ----- | ------------------------------------------------------------ | ----------------------- |
+| world | [crafttweaker.api.world.MCWorld](/vanilla/api/world/MCWorld) | No description provided |
+| 点     | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | No description provided |
+
+
+### doesWaterFreeze
+
+Return type: boolean
+
+```zenscript
+myMCBiome.doesWaterFreeze(world as crafttweaker.api.world.MCWorld, pos as crafttweaker.api.util.BlockPos);
+```
+
+| 参数    | 类型                                                           | 描述                      |
+| ----- | ------------------------------------------------------------ | ----------------------- |
+| world | [crafttweaker.api.world.MCWorld](/vanilla/api/world/MCWorld) | No description provided |
+| 点     | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | No description provided |
+
+
+
+Return type: boolean
+
+```zenscript
+myMCBiome.doesWaterFreeze(world as crafttweaker.api.world.MCWorld, pos as crafttweaker.api.util.BlockPos, mustBeAtEdge as boolean);
+```
+
+| 参数           | 类型                                                           | 描述                      |
+| ------------ | ------------------------------------------------------------ | ----------------------- |
+| world        | [crafttweaker.api.world.MCWorld](/vanilla/api/world/MCWorld) | No description provided |
+| 点            | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | No description provided |
+| mustBeAtEdge | boolean                                                      | No description provided |
+
+
 ### getTemperature
 
-返回类型：浮点数
+Return type: float
 
 ```zenscript
 myMCBiome.getTemperature(pos as crafttweaker.api.util.BlockPos);
