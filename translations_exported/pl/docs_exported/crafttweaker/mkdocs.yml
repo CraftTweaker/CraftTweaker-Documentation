@@ -68,6 +68,8 @@
           MCFluid: 'vanilla/api/fluid/MCFluid.md'
         Food:
           MCFood: 'vanilla/api/food/MCFood.md'
+        Game:
+          MCGame: 'vanilla/api/game/MCGame.md'
         Items:
           IIngredient: 'vanilla/api/items/IIngredient.md'
           IIngredientTransformer: 'vanilla/api/items/IIngredientTransformer.md'
@@ -116,4 +118,5 @@
             TextFormatting: 'vanilla/api/util/text/TextFormatting.md'
         World:
           MCBiome: 'vanilla/api/world/MCBiome.md'
+          MCWorld: 'vanilla/api/world/MCWorld.md'
 
