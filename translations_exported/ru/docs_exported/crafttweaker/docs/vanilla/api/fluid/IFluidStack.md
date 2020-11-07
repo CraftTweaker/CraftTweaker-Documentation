@@ -39,7 +39,7 @@ myIFluidStack.mutable();
 
 ### setAmount
 
-Задает количество жидкости в вехах (MB)
+Sets the fluid amount in MilliBuckets (mB)
 
  Возвращается: `Новый стек или этот стек, в зависимости от того, является ли этот стек мутируемым`
 
@@ -58,10 +58,13 @@ myIFluidStack.setAmount(1000);
 
 ## Свойства
 
-| Название      | Тип                                                          | Имеет Getter | Имеет Setter |
-| ------------- | ------------------------------------------------------------ | ------------ | ------------ |
-| commandString | String                                                       | true         | false        |
-| fluid         | [crafttweaker.api.fluid.MCFluid](/vanilla/api/fluid/MCFluid) | true         | false        |
+| Название      | Тип                                                                              | Имеет Getter | Имеет Setter |
+| ------------- | -------------------------------------------------------------------------------- | ------------ | ------------ |
+| amount        | int                                                                              | true         | false        |
+| commandString | String                                                                           | true         | false        |
+| empty         | boolean                                                                          | true         | false        |
+| fluid         | [crafttweaker.api.fluid.MCFluid](/vanilla/api/fluid/MCFluid)                     | true         | false        |
+| registryName  | [crafttweaker.api.util.MCResourceLocation](/vanilla/api/util/MCResourceLocation) | true         | false        |
 
 ## Операторы
 ### MUL
