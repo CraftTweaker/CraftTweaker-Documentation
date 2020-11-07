@@ -39,7 +39,7 @@ myIFluidStack.mutable();
 
 ### setAmount
 
-设置流体量单位为百万桶(MB)
+Sets the fluid amount in MilliBuckets (mB)
 
  返回： `一个新的堆栈或这个堆栈，取决于这个堆栈是否可变`
 
@@ -58,10 +58,13 @@ myIFluidStack.setAmount(1000)；
 
 ## 参数
 
-| 名称            | 类型                                                           | 可获得  | 可设置   |
-| ------------- | ------------------------------------------------------------ | ---- | ----- |
-| commandString | String                                                       | true | false |
-| fluid         | [crafttweaker.api.fluid.MCFluid](/vanilla/api/fluid/MCFluid) | true | false |
+| 名称            | 类型                                                                               | 可获得  | 可设置   |
+| ------------- | -------------------------------------------------------------------------------- | ---- | ----- |
+| amount        | int                                                                              | true | false |
+| commandString | String                                                                           | true | false |
+| empty         | boolean                                                                          | true | false |
+| fluid         | [crafttweaker.api.fluid.MCFluid](/vanilla/api/fluid/MCFluid)                     | true | false |
+| registryName  | [crafttweaker.api.util.MCResourceLocation](/vanilla/api/util/MCResourceLocation) | true | false |
 
 ## 运算符
 ### MUL
