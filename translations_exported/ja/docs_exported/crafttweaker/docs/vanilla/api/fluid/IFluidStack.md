@@ -39,7 +39,7 @@ myIFluidStack.mutable();
 
 ### setAmount
 
-MilliBuckets (MB) に流体量を設定する
+Sets the fluid amount in MilliBuckets (mB)
 
  戻り値: `このスタックが可変であるかどうかに応じて、新しいスタックまたはこのスタック`
 
@@ -58,10 +58,13 @@ myIFluidStack.setAmount(1000);
 
 ## Properties
 
-| 名称            | Type                                                         | Has Getter | Has Setter |
-| ------------- | ------------------------------------------------------------ | ---------- | ---------- |
-| commandString | String                                                       | true       | false      |
-| fluid         | [crafttweaker.api.fluid.MCFluid](/vanilla/api/fluid/MCFluid) | true       | false      |
+| 名称            | Type                                                                             | Has Getter | Has Setter |
+| ------------- | -------------------------------------------------------------------------------- | ---------- | ---------- |
+| amount        | int                                                                              | true       | false      |
+| commandString | String                                                                           | true       | false      |
+| empty         | boolean型                                                                         | true       | false      |
+| fluid         | [crafttweaker.api.fluid.MCFluid](/vanilla/api/fluid/MCFluid)                     | true       | false      |
+| registryName  | [crafttweaker.api.util.MCResourceLocation](/vanilla/api/util/MCResourceLocation) | true       | false      |
 
 ## 演算子
 ### MUL
