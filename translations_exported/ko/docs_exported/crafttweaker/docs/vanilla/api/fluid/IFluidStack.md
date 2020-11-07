@@ -39,7 +39,7 @@ myIFluidStack.mutable();
 
 ### setAmount
 
-Sets the fluid amount in MilliBuckets (MB)
+Sets the fluid amount in MilliBuckets (mB)
 
  Returns: `A new stack, or this stack, depending if this stack is mutable`
 
@@ -58,10 +58,13 @@ myIFluidStack.setAmount(1000);
 
 ## Properties
 
-| 이름            | Type                                                         | Has Getter | Has Setter |
-| ------------- | ------------------------------------------------------------ | ---------- | ---------- |
-| commandString | String                                                       | true       | false      |
-| fluid         | [crafttweaker.api.fluid.MCFluid](/vanilla/api/fluid/MCFluid) | true       | false      |
+| 이름            | Type                                                                             | Has Getter | Has Setter |
+| ------------- | -------------------------------------------------------------------------------- | ---------- | ---------- |
+| amount        | int                                                                              | true       | false      |
+| commandString | String                                                                           | true       | false      |
+| empty         | boolean                                                                          | true       | false      |
+| fluid         | [crafttweaker.api.fluid.MCFluid](/vanilla/api/fluid/MCFluid)                     | true       | false      |
+| registryName  | [crafttweaker.api.util.MCResourceLocation](/vanilla/api/util/MCResourceLocation) | true       | false      |
 
 ## 연산자
 ### MUL
