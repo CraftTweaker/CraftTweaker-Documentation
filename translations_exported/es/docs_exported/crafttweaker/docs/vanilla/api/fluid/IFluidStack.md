@@ -39,7 +39,7 @@ myIFluidStack.mutable();
 
 ### setAmount
 
-Establece la cantidad de fluido en MilliBuckets (MB)
+Sets the fluid amount in MilliBuckets (mB)
 
  Devuelve: `Una pila nueva, o esta pila, dependiendo de si esta pila es mutable`
 
@@ -58,10 +58,13 @@ myIFluidStack.setAmount(1000);
 
 ## Properties
 
-| Name          | Type                                                         | Has Getter | Has Setter |
-| ------------- | ------------------------------------------------------------ | ---------- | ---------- |
-| commandString | String                                                       | true       | false      |
-| fluid         | [crafttweaker.api.fluid.MCFluid](/vanilla/api/fluid/MCFluid) | true       | false      |
+| Name          | Type                                                                             | Has Getter | Has Setter |
+| ------------- | -------------------------------------------------------------------------------- | ---------- | ---------- |
+| amount        | int                                                                              | true       | false      |
+| commandString | String                                                                           | true       | false      |
+| empty         | boolean                                                                          | true       | false      |
+| fluid         | [crafttweaker.api.fluid.MCFluid](/vanilla/api/fluid/MCFluid)                     | true       | false      |
+| registryName  | [crafttweaker.api.util.MCResourceLocation](/vanilla/api/util/MCResourceLocation) | true       | false      |
 
 ## Operators
 ### MUL
