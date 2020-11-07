@@ -39,7 +39,7 @@ myIFluidStack.mutable();
 
 ### setAmount
 
-Legt den Flüssigkeitswert in MilliBuckets (MB) fest
+Sets the fluid amount in MilliBuckets (mB)
 
  Gibt zurück: `Ein neuer Stapel oder dieser Stapel je nachdem, ob dieser Stapel veränderbar ist`
 
@@ -58,10 +58,13 @@ myIFluidStack.setAmount(1000);
 
 ## Properties
 
-| Name          | Type                                                         | Has Getter | Has Setter |
-| ------------- | ------------------------------------------------------------ | ---------- | ---------- |
-| commandString | String                                                       | true       | false      |
-| fluid         | [crafttweaker.api.fluid.MCFluid](/vanilla/api/fluid/MCFluid) | true       | false      |
+| Name          | Type                                                                             | Has Getter | Has Setter |
+| ------------- | -------------------------------------------------------------------------------- | ---------- | ---------- |
+| amount        | int                                                                              | true       | false      |
+| commandString | String                                                                           | true       | false      |
+| empty         | boolean                                                                          | true       | false      |
+| fluid         | [crafttweaker.api.fluid.MCFluid](/vanilla/api/fluid/MCFluid)                     | true       | false      |
+| registryName  | [crafttweaker.api.util.MCResourceLocation](/vanilla/api/util/MCResourceLocation) | true       | false      |
 
 ## Operatoren
 ### MUL
