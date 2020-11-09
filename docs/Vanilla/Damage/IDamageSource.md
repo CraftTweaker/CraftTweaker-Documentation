@@ -46,10 +46,10 @@ You can either use these methods or the [Damage Source Bracket Handler](/Vanilla
 
 ```zenscript
 crafttweaker.damage.IDamageSource.createMobDamage(IEntityLivingBase mob)
-crafttweaker.damage.IDamageSource.createIndirectDamage(IEntity source, IEntityLivingBase indirectEntityIn)
+crafttweaker.damage.IDamageSource.createIndirectDamage(IEntity trueSource, IEntityLivingBase immediateSource)
 crafttweaker.damage.IDamageSource.createPlayerDamage(IPlayer player)
-crafttweaker.damage.IDamageSource.createThrownDamage(IEntity source, @Optional IEntity indirectEntityIn)
-crafttweaker.damage.IDamageSource.createIndirectMagicDamage(IEntity source, @Optional IEntity indirectEntityIn)
+crafttweaker.damage.IDamageSource.createThrownDamage(IEntity trueSource, @Optional IEntity immediateSource)
+crafttweaker.damage.IDamageSource.createIndirectMagicDamage(IEntity trueSource, @Optional IEntity immediateSource)
 crafttweaker.damage.IDamageSource.createThornsDamage(IEntity source)
 crafttweaker.damage.IDamageSource.createExplosionDamage(@Optional IEntityLivingBase trueSource)
 crafttweaker.damage.IDamageSource.createOfType(String type)
