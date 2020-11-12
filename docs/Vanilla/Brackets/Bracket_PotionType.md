@@ -1,6 +1,6 @@
 # PotionType Bracket Handler
 
-The PotionType Bracket Handler gives you access to the PotionType in the game. It is only possible to get PotionType registered in the game, so adding or removing mods may cause issues if you reference the mod's Potions in a Potion Bracket Handler.
+The PotionType Bracket Handler gives you access to the PotionType in the game. It is only possible to get PotionTypes registered in the game, so adding or removing mods may cause issues if you reference the mod's PotionType.
 
 PotionType are referenced in the PotionType Bracket Handler like so:
 
