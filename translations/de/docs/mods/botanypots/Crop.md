@@ -1,16 +1,16 @@
-# Crops
+# Pflanzen
 
-Class path: `mods.botanypots.Crop`
+Klassenpfad: `mods.botanypots.Crop`
 
 ## Use
 
-To use, import the class with `import mods.botanypots.Crop;` at the beginning of your script.
+Importiere die Klasse mit `import mods.botanypots.Crop;` am Anfang deines Skripts.
 
-## Create A Crop
+## Erstelle eine Pflanze
 
 `Crop.create(id, seed, display, tickRate, categories);`
 
-- `id` &lt;string> The id of the crop. This is a namespaced id an must be in the valid `namespace:path` format.
+- `id` &lt;String> Die ID der Pflanze. Dies ist die ID für den Namensraum und muss im Format `namensraum:pfad` sein.
 - `seed` <[IIngredient](/vanilla/api/items/IIngredient)> The item used to plant the crop.
 - `display` <[MCBlockState](/vanilla/api/blocks/MCBlockState)> The block to display when rendering the crop.
 - `tickRate` &lt;int> One of the factors for how long a crop takes to grow.
@@ -26,7 +26,7 @@ Crop.create("examplepack:gold", <item:minecraft:gold_nugget>, <blockstate:minecr
 
 `Crop.remove(id);`
 
-- `id` &lt;string> The id of the crop to remove. This is a namespaced id an must be in the valid `namespace:path` format.
+- `id` &lt;string> The id of the crop to remove. Dies ist die ID für den Namensraum und muss im Format `namensraum:pfad` sein.
 
 Removes a crop based on it's id.
 
@@ -38,7 +38,7 @@ Crop.remove("botanypots:crop/wheat");
 
 `Crop.setSeed(id, seed);`
 
-- `id` &lt;string> The id of the crop. This is a namespaced id an must be in the valid `namespace:path` format.
+- `id` &lt;String> Die ID der Pflanze. Dies ist die ID für den Namensraum und muss im Format `namensraum:pfad` sein.
 - `seed` <[IIngredient](/vanilla/api/items/IIngredient)> The item used to plant the crop.
 
 Sets the item used to plant the crop.
@@ -51,7 +51,7 @@ Crop.setSeed("botanypots:crop/wheat", <item:minecraft:diamond>);
 
 `Crop.setDisplay(id, state);`
 
-- `id` &lt;string> The id of the crop. This is a namespaced id an must be in the valid `namespace:path` format.
+- `id` &lt;String> Die ID der Pflanze. Dies ist die ID für den Namensraum und muss im Format `namensraum:pfad` sein.
 - `display` <[MCBlockState](/vanilla/api/blocks/MCBlockState)> The block to display when rendering the crop.
 
 Sets the block rendered for the crop.
@@ -64,7 +64,7 @@ Crop.setDisplay("botanypots:crop/wheat", <blockstate:minecraft:snow_block>);
 
 `Crop.setTickRate(id, tickRate);`
 
-- `id` &lt;string> The id of the crop. This is a namespaced id an must be in the valid `namespace:path` format.
+- `id` &lt;String> Die ID der Pflanze. Dies ist die ID für den Namensraum und muss im Format `namensraum:pfad` sein.
 - `tickRate` &lt;int> The updated tick rate. One of the factors for how long a crop takes to grow.
 
 Sets the crop tick factor.
@@ -81,7 +81,7 @@ Changes the categories associated with the crop. Categories are used to match th
 
 `Crop.addCategory(id, categoriesToAdd);`
 
-- `id` &lt;string> The id of the crop. This is a namespaced id an must be in the valid `namespace:path` format.
+- `id` &lt;String> Die ID der Pflanze. Dies ist die ID für den Namensraum und muss im Format `namensraum:pfad` sein.
 - `categoriesToAdd` &lt;string[]> An array of categories to associate with the crop.
 
 ```zenscript
@@ -92,7 +92,7 @@ Crop.addCategory("botanypots:crop/wheat", ["stone", "snow"]);
 
 `Crop.removeCategory(id, categoriesToRemove);`
 
-- `id` &lt;string> The id of the crop. This is a namespaced id an must be in the valid `namespace:path` format.
+- `id` &lt;String> Die ID der Pflanze. Dies ist die ID für den Namensraum und muss im Format `namensraum:pfad` sein.
 - `categoriesToRemove` &lt;string[]> An array of categories to dissociate with the crop.
 
 ```zenscript
@@ -103,7 +103,7 @@ Crop.removeCategory("botanypots:crop/wheat", ["dirt"]);
 
 `Crop.clearCategories(id);`
 
-- `id` &lt;string> The id of the crop. This is a namespaced id an must be in the valid `namespace:path` format.
+- `id` &lt;String> Die ID der Pflanze. Dies ist die ID für den Namensraum und muss im Format `namensraum:pfad` sein.
 
 ```zenscript
 Crop.clearCategories("botanypots:crop/wheat");
@@ -115,7 +115,7 @@ Crop.clearCategories("botanypots:crop/wheat");
 
 `Crop.addDrop(id, drop, chance, min, max);`
 
-- `id` &lt;string> The id of the crop to add a drop to. This is a namespaced id an must be in the valid `namespace:path` format.
+- `id` &lt;string> The id of the crop to add a drop to. Dies ist die ID für den Namensraum und muss im Format `namensraum:pfad` sein.
 - `drop` <[IItemStack](/vanilla/api/items/IItemStack)> The item to drop.
 - `chance` &lt;float> The chance it drops.
 - `min` &lt;int> The min amount of that item to give.
@@ -131,7 +131,7 @@ Crop.addDrop("botanypots:crop/wheat", <item:minecraft:diamond>, 0.05, 1, 1);
 
 `Crop.removeDrop(id, toRemove);`
 
-- `id` &lt;string> The id of the crop to remove a drop from. This is a namespaced id an must be in the valid `namespace:path` format.
+- `id` &lt;string> The id of the crop to remove a drop from. Dies ist die ID für den Namensraum und muss im Format `namensraum:pfad` sein.
 - `toRemove` <[IIngredient](/vanilla/api/items/IIngredient)> The ingredient to match against for removal
 
 Removes any drops that have a matching item.
