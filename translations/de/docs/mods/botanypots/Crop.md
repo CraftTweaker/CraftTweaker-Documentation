@@ -11,85 +11,85 @@ Importiere die Klasse mit `import mods.botanypots.Crop;` am Anfang deines Skript
 `Crop.create(id, seed, display, tickRate, multiplier, categories);`
 
 - `id` &lt;String> Die ID der Pflanze. Dies ist die ID für den Namensraum und muss im Format `namensraum:pfad` sein.
-- `seed` <[IIngredient](/vanilla/api/items/IIngredient)> The item used to plant the crop.
-- `display` <[MCBlockState](/vanilla/api/blocks/MCBlockState)> The block to display when rendering the crop.
-- `tickRate` &lt;int> One of the factors for how long a crop takes to grow.
-- `multiplier` &lt;float> Another factor for how long the crop takes to grow.
-- `categories` &lt;string[]> An array of soil categories this crop can be grown in.
+- `seed` <[IIngredient](/vanilla/api/items/IIngredient)> Das Element, womit die Pflanze gesetzt werden kann
+- `display` <[MCBlockState](/vanilla/api/blocks/MCBlockState)> Der Block, der beim Rendern angezeigt werden soll
+- `tickRate` &lt;int> Ein Faktor, wie lange die Pflanze braucht zum Wachsen
+- `multiplier` &lt;float> Ein weiterer Faktor, wie lange die Pflanze braucht zum Wachsen
+- `categories` &lt;string[]> Eine Auswahl an Erdkategorien, auf der die Pflanze wachsen kann
 
-This can be used to create a new crop. Keep in mind that drops need to be added separately.
+Dies kann verwendet werden, um eine neue Pflanze zu erstellen. Beachte, dass der Pflanzendrop separat hinzugefügt werden muss!
 
 ```zenscript
-Crop.create("examplepack:gold", <item:minecraft:gold_nugget>, <blockstate:minecraft:gold_block>, 3000, 2, ["stone"]);
+Bsp.: Crop.create("examplepack:gold", <item:minecraft:gold_nugget>, <blockstate:minecraft:gold_block>, 3000, 2, ["stone"]);
 ```
 
-## Remove A Crop
+## Eine Pflanze entfernen
 
 `Crop.remove(id);`
 
-- `id` &lt;string> The id of the crop to remove. Dies ist die ID für den Namensraum und muss im Format `namensraum:pfad` sein.
+- `id` &lt;String> Die ID der Pflanze, die du entfernen willst. Dies ist die ID für den Namensraum und muss im Format `namensraum:pfad` sein.
 
-Removes a crop based on it's id.
+Entfernt einer Pflanze basierend auf ihrer ID.
 
 ```zenscript
-Crop.remove("botanypots:crop/wheat");
+Bsp.: Crop.remove("botanypots:crop/wheat");
 ```
 
-## Set Seed Item
+## Setze Pflanzenelement
 
 `Crop.setSeed(id, seed);`
 
 - `id` &lt;String> Die ID der Pflanze. Dies ist die ID für den Namensraum und muss im Format `namensraum:pfad` sein.
-- `seed` <[IIngredient](/vanilla/api/items/IIngredient)> The item used to plant the crop.
+- `seed` <[IIngredient](/vanilla/api/items/IIngredient)> Das Element, womit die Pflanze gesetzt werden kann
 
-Sets the item used to plant the crop.
+Legt das Element fest, das verwendet wird, um die Pflanze einzupflanzen.
 
 ```zenscript
-Crop.setSeed("botanypots:crop/wheat", <item:minecraft:diamond>);
+Bsp.: Crop.setSeed("botanypots:crop/wheat", <item:minecraft:diamond>);
 ```
 
-## Set Display Block
+## Setze Renderblock
 
 `Crop.setDisplay(id, state);`
 
 - `id` &lt;String> Die ID der Pflanze. Dies ist die ID für den Namensraum und muss im Format `namensraum:pfad` sein.
-- `display` <[MCBlockState](/vanilla/api/blocks/MCBlockState)> The block to display when rendering the crop.
+- `display` <[MCBlockState](/vanilla/api/blocks/MCBlockState)> Der Block, der beim Rendern angezeigt werden soll
 
-Sets the block rendered for the crop.
+Legt den zu renderten Block fest.
 
 ```zenscript
-Crop.setDisplay("botanypots:crop/wheat", <blockstate:minecraft:snow_block>);
+Bsp.: Crop.setDisplay("botanypots:crop/wheat", <blockstate:minecraft:snow_block>);
 ```
 
-## Set Tick Rate
+## Setze Tickrate
 
 `Crop.setTickRate(id, tickRate);`
 
 - `id` &lt;String> Die ID der Pflanze. Dies ist die ID für den Namensraum und muss im Format `namensraum:pfad` sein.
-- `tickRate` &lt;int> The updated tick rate. One of the factors for how long a crop takes to grow.
+- `tickRate` &lt;int> Die zu aktualisierenden Tickrate Ein Faktor, wie lange die Pflanze braucht zum Wachsen
 
-Sets the crop tick factor.
+Setzt die Tickrate der Pflanze fest
 
 ```zenscript
-Crop.setTickRate("botanypots:crop/wheat", 5000);
+Bsp.: Crop.setTickRate("botanypots:crop/wheat", 5000);
 ```
 
-## Set Growth Multiplier
+## Setze Wachstumsmultiplikator
 
 `Crop.setGrowthModifier(id, multiplier);`
 
 - `id` &lt;String> Die ID der Pflanze. Dies ist die ID für den Namensraum und muss im Format `namensraum:pfad` sein.
-- `multiplier` &lt;float> The updated multiplier. Another factor for how long the crop takes to grow.
+- `Multiplikator` &lt;float> Der zu aktualisiernde Multiplikator Ein weiterer Faktor, wie lange die Pflanze braucht zum Wachsen
 
-Sets the growth multiplier/modifier for the crop.
+Legt den Wachstumsmultiplikator/Modifikator für die Pflanze fest.
 
 ```zenscript
-Crop.setGrowthMofieir("botanypots:crop/wheat", 1.8);
+Bsp.: Crop.setGrowthMofieir("botanypots:crop/wheat", 1.8);
 ```
 
-## Changing Crop Categories
+## Pflanzenkategorie ändern
 
-Changes the categories associated with the crop. Categories are used to match the valid soils to the crop.
+Ändert die mit der Pflanze verbundenen Kategorien. Categories are used to match the valid soils to the crop.
 
 ### Add a Category to a Crop
 
