@@ -82,82 +82,82 @@ Bsp.: Crop.setTickRate("botanypots:crop/wheat", 5000);
 `Crop.addCategory(id, categoriesToAdd);`
 
 - `id` &lt;String> Die ID der Pflanze. Dies ist die ID für den Namensraum und muss im Format `namensraum:pfad` sein.
-- `categoriesToAdd` &lt;string[]> An array of categories to associate with the crop.
+- `categoriesToAdd` &lt;string[]> Eine Auswahl an Kategorien, die der Pflanze zugeordnet werden sollen
 
 ```zenscript
-Crop.addCategory("botanypots:crop/wheat", ["stone", "snow"]);
+Bsp.: Crop.addCategory("botanypots:crop/wheat", ["stone", "snow"]);
 ```
 
-### Remove a Category From a Crop
+### Entferne eine Kategorie von einer Pflanze
 
 `Crop.removeCategory(id, categoriesToRemove);`
 
 - `id` &lt;String> Die ID der Pflanze. Dies ist die ID für den Namensraum und muss im Format `namensraum:pfad` sein.
-- `categoriesToRemove` &lt;string[]> An array of categories to dissociate with the crop.
+- `categoriesToRemove` &lt;string[]> Eine Auswahl an Kategorien, die von der Pflanze entfernt werden sollen
 
 ```zenscript
-Crop.removeCategory("botanypots:crop/wheat", ["dirt"]);
+Bsp.: Crop.removeCategory("botanypots:crop/wheat", ["dirt"]);
 ```
 
-### Clear All Categories From a Crop
+### Alle Kategorien einer Pflanze entfernen
 
 `Crop.clearCategories(id);`
 
 - `id` &lt;String> Die ID der Pflanze. Dies ist die ID für den Namensraum und muss im Format `namensraum:pfad` sein.
 
 ```zenscript
-Crop.clearCategories("botanypots:crop/wheat");
+Bsp.: Crop.clearCategories("botanypots:crop/wheat");
 ```
 
-## Crop Drops
+## Pflanzendrops
 
 ### Adding Drops
 
 `Crop.addDrop(id, drop, chance, min, max);`
 
-- `id` &lt;string> The id of the crop to add a drop to. Dies ist die ID für den Namensraum und muss im Format `namensraum:pfad` sein.
-- `drop` <[IItemStack](/vanilla/api/items/IItemStack)> The item to drop.
-- `chance` &lt;float> The chance it drops.
-- `min` &lt;int> The min amount of that item to give.
-- `max` &lt;int> The max amount of that item to give.
+- `id` &lt;String> Die ID der Pflanze, zu dem ein Drop hinzugefügt werden soll Dies ist die ID für den Namensraum und muss im Format `namensraum:pfad` sein.
+- `drop` <[IItemStack](/vanilla/api/items/IItemStack)> Das hinzuzufügende Item
+- `chance` &lt;float> Die Chance, dass das Item fällt.
+- `min` &lt;int> Der minimale Betrag des zu gebenden Items.
+- `max` &lt;int> Der maximale Betrag des zu gebenden Elements.
 
-This adds a new potential drop to the crop.
+Dies fügt der Pflanze einen neuen Drop hinzu.
 
 ```zenscript
-Crop.addDrop("botanypots:crop/wheat", <item:minecraft:diamond>, 0.05, 1, 1);
+Bsp.: Crop.addDrop("botanypots:crop/wheat", <item:minecraft:diamond>, 0.05, 1, 1);
 ```
 
 ### Removing Drops
 
 `Crop.removeDrop(id, toRemove);`
 
-- `id` &lt;string> The id of the crop to remove a drop from. Dies ist die ID für den Namensraum und muss im Format `namensraum:pfad` sein.
-- `toRemove` <[IIngredient](/vanilla/api/items/IIngredient)> The ingredient to match against for removal
+- `id` &lt;String> Die ID der Pflanze, von dem ein Drop entfernt werden soll Dies ist die ID für den Namensraum und muss im Format `namensraum:pfad` sein.
+- `toRemove` <[IIngredient](/vanilla/api/items/IIngredient)> Der Drop, der entfernt werden soll
 
-Removes any drops that have a matching item.
+Entfernt den Drop vom zutreffenden Item
 
 ```zenscript
-Crop.removeDrop("botanypots:crop/wheat", <item:minecraft:wheat_seeds>);
+Bsp.: Crop.removeDrop("botanypots:crop/wheat", <item:minecraft:wheat_seeds>);
 ```
 
-## Getting All Ids
+## Alle ID abfragen
 
 `Crop.getAllIds();`
 
-- Returns: &lt;string[]> An array of all known crop ids at the time this is ran.
+- Gibt folgende Werte zurück: &lt;string[]> Eine Auswahl aller bekannten Pflanzen-IDs zur Zeit der Abfrage.
 
-This will give you an array of all the known crop ids at the time.
+Dies gibt eine Auswahl aller bekannten Pflanzen-IDs zur Zeit der Abfrage.
 
 ```zenscript
-// Log all ids to the crafttweaker.log file
+// Logge alle IDs in der crafttweaker.log Datei
 for cropId in Crop.getAllIds() {
     println(cropId);
 }
 ```
 
-## Removing All Crops
+## Entferne alle Pflanzen
 
-This will completely remove all the crops currently registered. This is useful for if you want to recreate all the data from scratch through scripts.
+Dadurch werden alle derzeit registrierten Pflanzen vollständig entfernt. Dies ist nützlich, wenn du alle Daten von Grund auf durch Skripte neu erstellen möchten.
 
 ```zenscript
 Crop.removeAll();
