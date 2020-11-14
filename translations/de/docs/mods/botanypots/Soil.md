@@ -118,15 +118,15 @@ Bsp.: Soil.clearCategories("botanypots:soil/farmland");
 Dies gibt eine Auswahl aller bekannten Erd-IDs zur Zeit der Abfrage.
 
 ```zenscript
-// Log all ids to the crafttweaker.log file
+// Logge alle IDs in der crafttweaker.log Datei
 for soilId in Soil.getAllIds() {
     println(soilId);
 }
 ```
 
-## Removing All Soil
+## Alle Erden entfernen
 
-This will completely remove all the soils currently registered. Dies ist nützlich, wenn du alle Daten von Grund auf durch Skripte neu erstellen möchten.
+Dadurch werden alle derzeit registrierten Erden vollständig entfernt. Dies ist nützlich, wenn du alle Daten von Grund auf durch Skripte neu erstellen möchten.
 
 ```zenscript
 Soil.removeAll();
