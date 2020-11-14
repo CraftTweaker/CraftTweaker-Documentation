@@ -1,12 +1,12 @@
-# Fertilizers
+# Dünger
 
-Class path: `mods.botanypots.Fertilizer`
+Klassenpfad: `mods.botanypots.Fertilizer`
 
 ## Use
 
-To use, import the class with `import mods.botanypots.Fertilizer;` at the beginning of your script.
+Importiere die Klasse mit `import mods.botanypots.Fertilizer;` am Anfang deines Skripts.
 
-## Creating Fertilizers
+## Erstelle Düngemittel
 
 `Fertilizer.create(id, ingredient, minTick, maxTick);`
 
@@ -60,7 +60,7 @@ Sets the ingredient item that is the fertilizer.
 Fertilizer.setIngredient("botanypots:fertilizers/bone_meal", <item:minecraft:sugar>);
 ```
 
-## Getting All Ids
+## Alle ID abfragen
 
 `Fertilizer.getAllIds();`
 
@@ -77,7 +77,7 @@ for fertilizerId in Fertilizer.getAllIds() {
 
 ## Removing All Fertilizers
 
-This will completely remove all the fertilizers currently registered. This is useful for if you want to recreate all the data from scratch through scripts.
+This will completely remove all the fertilizers currently registered. Dies ist nützlich, wenn du alle Daten von Grund auf durch Skripte neu erstellen möchten.
 
 ```zenscript
 Fertilizer.removeAll();
