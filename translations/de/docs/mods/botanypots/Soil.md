@@ -1,19 +1,19 @@
-# Soils
+# Erden
 
-Class path: `mods.botanypots.Soil`
+Klassenpfad: `mods.botanypots.Soil`
 
 ## Use
 
-To use, import the class with `import mods.botanypots.Soil;` at the beginning of your script.
+Importiere die Klasse mit `import mods.botanypots.Soil;` am Anfang deines Skripts.
 
-## Creating New Soils
+## Erstelle neue Erden
 
 `Soil.create(id, ingredient, displayState, tickRate, categories);`
 
-- `id` &lt;string> The id of the new soil. Dies ist die ID für den Namensraum und muss im Format `namensraum:pfad` sein.
+- `id` &lt;String> Die ID der neuen Erde. Dies ist die ID für den Namensraum und muss im Format `namensraum:pfad` sein.
 - `ingredient` <[IIngredient](/vanilla/api/items/IIngredient)> The ingredient used to determine which items/blocks are used to put the soil in a pot.
-- `displayState` <[MCBlockState](/vanilla/api/blocks/MCBlockState)> The block state to display for the soil in the pot.
-- `tickRate` &lt;int> The tick rate for the soil.
+- `displayState` <[MCBlockState](/vanilla/api/blocks/MCBlockState)> Der Blockstatus, der im Topf angezeigt werden soll
+- `tickRate` &lt;int> Die Tickrate der Erde
 - `categories` &lt;string[]> An array of categories associated with the new soil.
 
 Creates a new soil entry that players can use in the botany pot.
@@ -65,7 +65,7 @@ Soil.setIngredient("botanypots:soil/soul_sand", <item:minecraft:sand>);
 `Soil.setDisplayState(id, displayState);`
 
 - `id` &lt;string> The id of the soil. Dies ist die ID für den Namensraum und muss im Format `namensraum:pfad` sein.
-- `displayState` <[MCBlockState](/vanilla/api/blocks/MCBlockState)> The block state to display for the soil in the pot.
+- `displayState` <[MCBlockState](/vanilla/api/blocks/MCBlockState)> Der Blockstatus, der im Topf angezeigt werden soll
 
 Changes the block displayed for the soil.
 
