@@ -1,24 +1,24 @@
-# Fertilizers
+# Dünger
 
-Class path: `mods.botanypots.Fertilizer`
+Klassenpfad: `mods.botanypots.Fertilizer`
 
 ## Use
 
-To use, import the class with `import mods.botanypots.Fertilizer;` at the beginning of your script.
+Importiere die Klasse mit `import mods.botanypots.Fertilizer;` am Anfang deines Skripts.
 
-## Creating Fertilizers
+## Erstelle Düngemittel
 
 `Fertilizer.create(id, ingredient, minTick, maxTick);`
 
-- `id` &lt;string> The id of the new fertilizer. Dies ist die ID für den Namensraum und muss im Format `namensraum:pfad` sein.
-- `ingredient` <[IIngredient](/vanilla/api/items/IIngredient)> The item used for the fertilizer.
-- `minTick` &lt;int> The minimum amount of ticks added by the fertilizer.
-- `maxTick` &lt;int> The maximum amount of ticks added by the fertilizer.
+- `id` &lt;String> Die ID des neuen Düngers. Dies ist die ID für den Namensraum und muss im Format `namensraum:pfad` sein.
+- `seed` <[IIngredient](/vanilla/api/items/IIngredient)> Das Item, womit die Dünger gesetzt werden kann
+- `minTick` &lt;int> Der Mindestbetrag an Ticks, der vom Dünger hinzugefügt wurde.
+- `maxTick` &lt;int> Die maximale Menge an Ticks, die vom Dünger hinzugefügt wurde.
 
-Creates a new fertilizer. These can be used to grow crops faster.
+Erzeugt einen neuen Dünger. Diese können genutzt werden, um Pflanzen schneller wachsen zu lassen.
 
 ```zenscript
-Fertilizer.create("examplepack:stick", <item:minecraft:stick>, 250, 550);
+Bsp.: Fertilizer.create("examplepack:stick", <item:minecraft:stick>, 250, 550);
 ```
 
 ## Removing Fertilizers
@@ -60,7 +60,7 @@ Sets the ingredient item that is the fertilizer.
 Fertilizer.setIngredient("botanypots:fertilizers/bone_meal", <item:minecraft:sugar>);
 ```
 
-## Getting All Ids
+## Alle ID abfragen
 
 `Fertilizer.getAllIds();`
 
@@ -77,7 +77,7 @@ for fertilizerId in Fertilizer.getAllIds() {
 
 ## Removing All Fertilizers
 
-This will completely remove all the fertilizers currently registered. This is useful for if you want to recreate all the data from scratch through scripts.
+This will completely remove all the fertilizers currently registered. Dies ist nützlich, wenn du alle Daten von Grund auf durch Skripte neu erstellen möchten.
 
 ```zenscript
 Fertilizer.removeAll();
