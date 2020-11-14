@@ -109,7 +109,7 @@ Soil.removeCategory("botanypots:soil/soul_sand", ["soul_sand"]);
 Soil.clearCategories("botanypots:soil/farmland");
 ```
 
-## Getting All Ids
+## Alle ID abfragen
 
 `Soil.getAllIds();`
 
@@ -126,7 +126,7 @@ for soilId in Soil.getAllIds() {
 
 ## Removing All Soil
 
-This will completely remove all the soils currently registered. This is useful for if you want to recreate all the data from scratch through scripts.
+This will completely remove all the soils currently registered. Dies ist nützlich, wenn du alle Daten von Grund auf durch Skripte neu erstellen möchten.
 
 ```zenscript
 Soil.removeAll();
