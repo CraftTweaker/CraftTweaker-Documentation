@@ -21,8 +21,6 @@ It might be required for you to import the package if you encounter any issues (
 |-----------------------------|-------------------------|-----------------|
 | saved                       | setSaved(boolean)       | boolean         |
 
-## More ZenMethods
-
 ### Create Modifier
     for operation:
     0 = add: Increment X by Amount
@@ -30,5 +28,5 @@ It might be required for you to import the package if you encounter any issues (
     2 = multiply: Y = Y * (1 + Amount) (equivalent to Increment Y by Y * Amount).
 
 ```zenscript
-IEntityAttributeModifier.createModifier(String name, double amount, int operation, @Optional String uuid);
+AttributeModifier.createModifier(String name, double amount, int operation, @Optional String uuid);
 ```
