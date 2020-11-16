@@ -88,6 +88,7 @@ The ZenMethods would be what you'll need to call on `events`, the Event Class wo
 | onPlayerBreakSpeed              | [`crafttweaker.event.PlayerBreakSpeed`](/Vanilla/Events/Events/PlayerBreakSpeed/)                          |
 | onPlayerBrewedPotion            | [`crafttweaker.event.PlayerBrewedPotion`](/Vanilla/Events/Events/PlayerBrewedPotion/)                      |
 | onPlayerChangedDimension        | [`crafttweaker.event.PlayerChangedDimensionEvent`](/Vanilla/Events/Events/PlayerChangedDimension/)         |
+| onPlayerClone                   | [`crafttweaker.event.PlayerCloneEvent`](/Vanilla/Events/Events/PlayerClone/)                               |
 | onPlayerCloseContainer          | [`crafttweaker.event.PlayerCloseContainerEvent`](/Vanilla/Events/Events/PlayerCloseContainer/)             |
 | onPlayerCrafted                 | [`crafttweaker.event.PlayerCraftedEvent`](/Vanilla/Events/Events/PlayerCrafted/)                           |
 | onPlayerDeathDrops              | [`crafttweaker.event.PlayerDeathDropsEvent`](/Vanilla/Events/Events/PlayerDeathDrops/)                     |
