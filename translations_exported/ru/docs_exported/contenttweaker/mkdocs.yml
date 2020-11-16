@@ -11,6 +11,8 @@
             - BlockBuilderBasic: 'mods/contenttweaker/API/block/basic/BlockBuilderBasic.md'
           - Pillar:
             - BlockBuilderPillarRotatable: 'mods/contenttweaker/API/block/pillar/BlockBuilderPillarRotatable.md'
+          - Slab:
+            - BlockBuilderSlab: 'mods/contenttweaker/API/block/slab/BlockBuilderSlab.md'
           - Stairs:
             - BlockBuilderStairs: 'mods/contenttweaker/API/block/stairs/BlockBuilderStairs.md'
         - Предмет:
