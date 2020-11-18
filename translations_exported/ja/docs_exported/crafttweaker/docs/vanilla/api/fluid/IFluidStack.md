@@ -13,11 +13,28 @@ IFluidStackは以下のインターフェースを実装しています。 That 
 - [crafttweaker.api.brackets.CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
 
 ## Methods
+### containsOther
+
+Checks if this IFluidStack, contains the given IFluidStack by checking if the fluids are the same, and if this fluid's amount is bigger than the given fluid's amount
+
+ Returns: `true if this fluid contains the other fluid`
+
+Return type: boolean
+
+```zenscript
+myIFluidStack.containsOther(other as crafttweaker.api.fluid.IFluidStack);
+```
+
+| Parameter | Type                                                                 | Description                          |
+| --------- | -------------------------------------------------------------------- | ------------------------------------ |
+| other     | [crafttweaker.api.fluid.IFluidStack](/vanilla/api/fluid/IFluidStack) | other IFluidStack to compare against |
+
+
 ### copy
 
-スタックをコピーする。 変更可能なスタックが関与している場合にのみ必要です。
+Copies the stack. Only needed when mutable stacks are involved.
 
- 戻り値: `このスタックと同じ情報を含む新しいスタック`
+ Returns: `A new stack, that contains the same info as this one`
 
 戻り値の型: [crafttweaker.api.fluid.IFluidStack](/vanilla/api/fluid/IFluidStack)
 
@@ -27,9 +44,9 @@ myIFluidStack.copy();
 
 ### ミュータブル
 
-このスタックを変更可能にする
+Makes this stack mutable
 
- 戻り値: `変更可能な新しいスタック。`
+ Returns: `A new Stack, that is mutable.`
 
 戻り値の型: [crafttweaker.api.fluid.IFluidStack](/vanilla/api/fluid/IFluidStack)
 
@@ -50,9 +67,9 @@ myIFluidStack.setAmount(amount as int);
 myIFluidStack.setAmount(1000);
 ```
 
-| Parameter | Type | Description |
-| --------- | ---- | ----------- |
-| amount    | int  | このスタックを掛ける量 |
+| Parameter | Type | Description                       |
+| --------- | ---- | --------------------------------- |
+| amount    | int  | The amount to multiply this stack |
 
 
 
@@ -69,7 +86,7 @@ myIFluidStack.setAmount(1000);
 ## 演算子
 ### MUL
 
-MilliBuckets (MB) に流体量を設定する
+Sets the fluid amount in MilliBuckets (MB)
 
  戻り値: `このスタックが可変であるかどうかに応じて、新しいスタックまたはこのスタック`
 
@@ -78,7 +95,20 @@ myIFluidStack * amount as int
 myIFluidStack * 1000
 ```
 
-| Parameter | Type | Description |
-| --------- | ---- | ----------- |
-| amount    | int  | このスタックを掛ける量 |
+| Parameter | Type | Description                       |
+| --------- | ---- | --------------------------------- |
+| amount    | int  | The amount to multiply this stack |
+### CONTAINS
+
+Checks if this IFluidStack, contains the given IFluidStack by checking if the fluids are the same, and if this fluid's amount is bigger than the given fluid's amount
+
+ Returns: `true if this fluid contains the other fluid`
+
+```zenscript
+myIFluidStack in other as crafttweaker.api.fluid.IFluidStack
+```
+
+| Parameter | Type                                                                 | Description                          |
+| --------- | -------------------------------------------------------------------- | ------------------------------------ |
+| other     | [crafttweaker.api.fluid.IFluidStack](/vanilla/api/fluid/IFluidStack) | other IFluidStack to compare against |
 
