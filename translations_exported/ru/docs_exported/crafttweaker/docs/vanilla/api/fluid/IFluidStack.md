@@ -13,11 +13,28 @@ IFluidStack реализует следующие интерфейсы. That mea
 - [crafttweaker.api.brackets.CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
 
 ## Methods
+### containsOther
+
+Checks if this IFluidStack, contains the given IFluidStack by checking if the fluids are the same, and if this fluid's amount is bigger than the given fluid's amount
+
+ Returns: `true if this fluid contains the other fluid`
+
+Return type: boolean
+
+```zenscript
+myIFluidStack.containsOther(other as crafttweaker.api.fluid.IFluidStack);
+```
+
+| Параметр | Тип                                                                  | Description                          |
+| -------- | -------------------------------------------------------------------- | ------------------------------------ |
+| other    | [crafttweaker.api.fluid.IFluidStack](/vanilla/api/fluid/IFluidStack) | other IFluidStack to compare against |
+
+
 ### copy
 
-Копирует стек. Необходимы только тогда, когда задействованы мутирующие стеки.
+Copies the stack. Only needed when mutable stacks are involved.
 
- Возвращается: `Новый стек, содержащий ту же информацию, что и данный`
+ Returns: `A new stack, that contains the same info as this one`
 
 Возвратный тип: [crafttweaker.api.fluid.IFluidStack](/vanilla/api/fluid/IFluidStack)
 
@@ -27,9 +44,9 @@ myIFluidStack.copy();
 
 ### изменяемый
 
-Делает этот стек мутации
+Makes this stack mutable
 
- Возвращается: `Новый Стек, который является мутным.`
+ Returns: `A new Stack, that is mutable.`
 
 Возвратный тип: [crafttweaker.api.fluid.IFluidStack](/vanilla/api/fluid/IFluidStack)
 
@@ -46,13 +63,13 @@ Sets the fluid amount in MilliBuckets (mB)
 Возвратный тип: [crafttweaker.api.fluid.IFluidStack](/vanilla/api/fluid/IFluidStack)
 
 ```zenscript
-myIFluidStack.setAmount(сумма как int);
+myIFluidStack.setAmount(amount as int);
 myIFluidStack.setAmount(1000);
 ```
 
-| Параметр | Тип | Description              |
-| -------- | --- | ------------------------ |
-| amount   | int | Сумма умножить этот стек |
+| Параметр | Тип | Description                       |
+| -------- | --- | --------------------------------- |
+| amount   | int | The amount to multiply this stack |
 
 
 
@@ -69,16 +86,29 @@ myIFluidStack.setAmount(1000);
 ## Операторы
 ### MUL
 
-Задает количество жидкости в вехах (MB)
+Sets the fluid amount in MilliBuckets (MB)
 
  Возвращается: `Новый стек или этот стек, в зависимости от того, является ли этот стек мутируемым`
 
 ```zenscript
-myIFluidStack * сумма как int
+myIFluidStack * amount as int
 myIFluidStack * 1000
 ```
 
-| Параметр | Тип | Description              |
-| -------- | --- | ------------------------ |
-| amount   | int | Сумма умножить этот стек |
+| Параметр | Тип | Description                       |
+| -------- | --- | --------------------------------- |
+| amount   | int | The amount to multiply this stack |
+### CONTAINS
+
+Checks if this IFluidStack, contains the given IFluidStack by checking if the fluids are the same, and if this fluid's amount is bigger than the given fluid's amount
+
+ Returns: `true if this fluid contains the other fluid`
+
+```zenscript
+myIFluidStack in other as crafttweaker.api.fluid.IFluidStack
+```
+
+| Параметр | Тип                                                                  | Description                          |
+| -------- | -------------------------------------------------------------------- | ------------------------------------ |
+| other    | [crafttweaker.api.fluid.IFluidStack](/vanilla/api/fluid/IFluidStack) | other IFluidStack to compare against |
 
