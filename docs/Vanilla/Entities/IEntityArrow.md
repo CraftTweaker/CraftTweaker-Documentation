@@ -16,7 +16,7 @@ IEntityArrow implement the following interfaces and are able to call all of thei
 |----------------|-------------------|--------------------------------------------------------------------|
 | shooter        | shooter           | [IEntity](/Vanilla/Entities/IEntity/)                              |
 | damage         | damage            | double                                                             |
-|                | knockbackStrength | int                                                                |
+| knockbackStrength | knockbackStrength | int                                                                |
 | isCritical     | isCritical        | boolean                                                            |
 | pickupStatus   | pickupStatus      | String                                                             |
 | shake          |                   | int                                                                |
