@@ -13,11 +13,28 @@ IFluidStack implementuje następujące interfejsy. That means any method availab
 - [crafttweaker.api.brackets.CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
 
 ## Methods
+### containsOther
+
+Checks if this IFluidStack, contains the given IFluidStack by checking if the fluids are the same, and if this fluid's amount is bigger than the given fluid's amount
+
+ Returns: `true if this fluid contains the other fluid`
+
+Return type: boolean
+
+```zenscript
+myIFluidStack.containsOther(other as crafttweaker.api.fluid.IFluidStack);
+```
+
+| Parameter | Type                                                                 | Description                          |
+| --------- | -------------------------------------------------------------------- | ------------------------------------ |
+| other     | [crafttweaker.api.fluid.IFluidStack](/vanilla/api/fluid/IFluidStack) | other IFluidStack to compare against |
+
+
 ### copy
 
-Kopiuje stos. Wymagane tylko wtedy, gdy stosowane są zmienne stosy.
+Copies the stack. Only needed when mutable stacks are involved.
 
- Zwraca: `Nowy stos, który zawiera te same informacje co ten`
+ Returns: `A new stack, that contains the same info as this one`
 
 Typ zwrotu: [crafttweaker.api.fluid.IFluidStack](/vanilla/api/fluid/IFluidStack)
 
@@ -27,14 +44,14 @@ myIFluidStack.copy();
 
 ### zmienny
 
-Sprawia, że ten stos może być zmienny
+Makes this stack mutable
 
- Zwraca: `Nowy Stack, który jest zmienny.`
+ Returns: `A new Stack, that is mutable.`
 
 Typ zwrotu: [crafttweaker.api.fluid.IFluidStack](/vanilla/api/fluid/IFluidStack)
 
 ```zenscript
-miIFluidStack.mutable();
+myIFluidStack.mutable();
 ```
 
 ### setAmount
@@ -46,13 +63,13 @@ Sets the fluid amount in MilliBuckets (mB)
 Typ zwrotu: [crafttweaker.api.fluid.IFluidStack](/vanilla/api/fluid/IFluidStack)
 
 ```zenscript
-myIFluidStack.setAmount(ilość jak int);
+myIFluidStack.setAmount(amount as int);
 myIFluidStack.setAmount(1000);
 ```
 
-| Parameter | Type | Description               |
-| --------- | ---- | ------------------------- |
-| amount    | int  | Ilość mnożenia tego stosu |
+| Parameter | Type | Description                       |
+| --------- | ---- | --------------------------------- |
+| amount    | int  | The amount to multiply this stack |
 
 
 
@@ -69,16 +86,29 @@ myIFluidStack.setAmount(1000);
 ## Operators
 ### MUL
 
-Ustawia ilość płynów w mililitrach (MB)
+Sets the fluid amount in MilliBuckets (MB)
 
  Zwraca: `Nowy stos lub ten stos, w zależności od tego, czy ten stos jest zmienny`
 
 ```zenscript
-myIFluidStack * ilość jako int
+myIFluidStack * amount as int
 myIFluidStack * 1000
 ```
 
-| Parameter | Type | Description               |
-| --------- | ---- | ------------------------- |
-| amount    | int  | Ilość mnożenia tego stosu |
+| Parameter | Type | Description                       |
+| --------- | ---- | --------------------------------- |
+| amount    | int  | The amount to multiply this stack |
+### CONTAINS
+
+Checks if this IFluidStack, contains the given IFluidStack by checking if the fluids are the same, and if this fluid's amount is bigger than the given fluid's amount
+
+ Returns: `true if this fluid contains the other fluid`
+
+```zenscript
+myIFluidStack in other as crafttweaker.api.fluid.IFluidStack
+```
+
+| Parameter | Type                                                                 | Description                          |
+| --------- | -------------------------------------------------------------------- | ------------------------------------ |
+| other     | [crafttweaker.api.fluid.IFluidStack](/vanilla/api/fluid/IFluidStack) | other IFluidStack to compare against |
 
