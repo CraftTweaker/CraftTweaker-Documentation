@@ -13,11 +13,28 @@ IFluidStack 实现以下接口。 这意味着对这个接口可用的任何方�
 - [crafttweaker.api.brackets.CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
 
 ## 方法
+### containsOther
+
+Checks if this IFluidStack, contains the given IFluidStack by checking if the fluids are the same, and if this fluid's amount is bigger than the given fluid's amount
+
+ Returns: `true if this fluid contains the other fluid`
+
+Return type: boolean
+
+```zenscript
+myIFluidStack.containsOther(other as crafttweaker.api.fluid.IFluidStack);
+```
+
+| 参数    | 类型                                                                   | 描述                                   |
+| ----- | -------------------------------------------------------------------- | ------------------------------------ |
+| other | [crafttweaker.api.fluid.IFluidStack](/vanilla/api/fluid/IFluidStack) | other IFluidStack to compare against |
+
+
 ### copy #复制
 
-复制堆栈。 只有当涉及可变堆栈时才需要。
+Copies the stack. Only needed when mutable stacks are involved.
 
- 返回： `一个新的堆栈，包含与这个堆栈相同的信息`
+ Returns: `A new stack, that contains the same info as this one`
 
 返回类型： [craftbinstruer.api.fluid.IFluidStack](/vanilla/api/fluid/IFluidStack)
 
@@ -27,9 +44,9 @@ myIFluidStack.copy();
 
 ### 可变的
 
-使这个堆栈变为可变的
+Makes this stack mutable
 
- 返回： `一个新的堆栈，是可变的。`
+ Returns: `A new Stack, that is mutable.`
 
 返回类型： [craftbinstruer.api.fluid.IFluidStack](/vanilla/api/fluid/IFluidStack)
 
@@ -46,13 +63,13 @@ Sets the fluid amount in MilliBuckets (mB)
 返回类型： [craftbinstruer.api.fluid.IFluidStack](/vanilla/api/fluid/IFluidStack)
 
 ```zenscript
-myIFluidStack.setAmount(含量)；
-myIFluidStack.setAmount(1000)；
+myIFluidStack.setAmount(amount as int);
+myIFluidStack.setAmount(1000);
 ```
 
-| 参数     | 类型  | 描述         |
-| ------ | --- | ---------- |
-| amount | int | 要乘积这个堆栈的金额 |
+| 参数     | 类型  | 描述                                |
+| ------ | --- | --------------------------------- |
+| amount | int | The amount to multiply this stack |
 
 
 
@@ -69,16 +86,29 @@ myIFluidStack.setAmount(1000)；
 ## 运算符
 ### MUL
 
-设置流体量单位为百万桶(MB)
+Sets the fluid amount in MilliBuckets (MB)
 
  返回： `一个新的堆栈或这个堆栈，取决于这个堆栈是否可变`
 
 ```zenscript
-myIFluidStack * 金额为 int
+myIFluidStack * amount as int
 myIFluidStack * 1000
 ```
 
-| 参数     | 类型  | 描述         |
-| ------ | --- | ---------- |
-| amount | int | 要乘积这个堆栈的金额 |
+| 参数     | 类型  | 描述                                |
+| ------ | --- | --------------------------------- |
+| amount | int | The amount to multiply this stack |
+### CONTAINS
+
+Checks if this IFluidStack, contains the given IFluidStack by checking if the fluids are the same, and if this fluid's amount is bigger than the given fluid's amount
+
+ Returns: `true if this fluid contains the other fluid`
+
+```zenscript
+myIFluidStack in other as crafttweaker.api.fluid.IFluidStack
+```
+
+| 参数    | 类型                                                                   | 描述                                   |
+| ----- | -------------------------------------------------------------------- | ------------------------------------ |
+| other | [crafttweaker.api.fluid.IFluidStack](/vanilla/api/fluid/IFluidStack) | other IFluidStack to compare against |
 
