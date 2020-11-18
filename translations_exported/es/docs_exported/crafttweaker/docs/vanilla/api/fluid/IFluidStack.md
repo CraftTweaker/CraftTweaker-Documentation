@@ -13,11 +13,28 @@ IFluidStack implementa las siguientes interfaces. That means any method availabl
 - [crafttweaker.api.brackets.CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
 
 ## Methods
+### containsOther
+
+Checks if this IFluidStack, contains the given IFluidStack by checking if the fluids are the same, and if this fluid's amount is bigger than the given fluid's amount
+
+ Returns: `true if this fluid contains the other fluid`
+
+Return type: boolean
+
+```zenscript
+myIFluidStack.containsOther(other as crafttweaker.api.fluid.IFluidStack);
+```
+
+| Parameter | Type                                                                 | Description                          |
+| --------- | -------------------------------------------------------------------- | ------------------------------------ |
+| other     | [crafttweaker.api.fluid.IFluidStack](/vanilla/api/fluid/IFluidStack) | other IFluidStack to compare against |
+
+
 ### copy
 
-Copia la pila. Sólo es necesario cuando se trata de pilas mutables.
+Copies the stack. Only needed when mutable stacks are involved.
 
- Devuelve: `Una nueva pila que contiene la misma información que esta`
+ Returns: `A new stack, that contains the same info as this one`
 
 Tipo de retorno: [crafttweaker.api.fluid.IFluidStack](/vanilla/api/fluid/IFluidStack)
 
@@ -27,9 +44,9 @@ myIFluidStack.copy();
 
 ### mutable
 
-Hace esta pila mutable
+Makes this stack mutable
 
- Devuelve: `Una nueva pila, que es mutable.`
+ Returns: `A new Stack, that is mutable.`
 
 Tipo de retorno: [crafttweaker.api.fluid.IFluidStack](/vanilla/api/fluid/IFluidStack)
 
@@ -50,9 +67,9 @@ myIFluidStack.setAmount(amount as int);
 myIFluidStack.setAmount(1000);
 ```
 
-| Parameter | Type | Description                         |
-| --------- | ---- | ----------------------------------- |
-| amount    | int  | La cantidad a multiplicar esta pila |
+| Parameter | Type | Description                       |
+| --------- | ---- | --------------------------------- |
+| amount    | int  | The amount to multiply this stack |
 
 
 
@@ -69,16 +86,29 @@ myIFluidStack.setAmount(1000);
 ## Operators
 ### MUL
 
-Establece la cantidad de fluido en MilliBuckets (MB)
+Sets the fluid amount in MilliBuckets (MB)
 
  Devuelve: `Una pila nueva, o esta pila, dependiendo de si esta pila es mutable`
 
 ```zenscript
-myIFluidStack * cantidad como int
+myIFluidStack * amount as int
 myIFluidStack * 1000
 ```
 
-| Parameter | Type | Description                         |
-| --------- | ---- | ----------------------------------- |
-| amount    | int  | La cantidad a multiplicar esta pila |
+| Parameter | Type | Description                       |
+| --------- | ---- | --------------------------------- |
+| amount    | int  | The amount to multiply this stack |
+### CONTAINS
+
+Checks if this IFluidStack, contains the given IFluidStack by checking if the fluids are the same, and if this fluid's amount is bigger than the given fluid's amount
+
+ Returns: `true if this fluid contains the other fluid`
+
+```zenscript
+myIFluidStack in other as crafttweaker.api.fluid.IFluidStack
+```
+
+| Parameter | Type                                                                 | Description                          |
+| --------- | -------------------------------------------------------------------- | ------------------------------------ |
+| other     | [crafttweaker.api.fluid.IFluidStack](/vanilla/api/fluid/IFluidStack) | other IFluidStack to compare against |
 
