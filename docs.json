@@ -149,6 +149,9 @@
       }
     },
     "Mods": {
+      "Botany Pots": {
+        "Botany Pots": "mods/BotanyPots/BotanyPots.md"
+      },
       "ContentTweaker": {
         "Simple Walkthrough": "mods/contenttweaker/SimpleWalkthrough.md",
         "API": {
