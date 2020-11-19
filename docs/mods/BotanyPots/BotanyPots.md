@@ -27,10 +27,10 @@ val ironCrop = crops.create("examplepack:iron", <item:minecraft:iron_nugget>, [<
 This crop will have no drops. You need to add some for the crop to work properly. Information about this is in the next section.
 
 ### Modifying Crops
-To modify a crop you will need to get a ZenCrop value. This is provided when you create the crop but can also be retrieved using `crops.get("cropid");`.
+To modify a crop you will need to get a ZenCrop value. This is provided when you create the crop but can also be retrieved using `crops.getCrop("cropid");`.
 
 ```zenscript
-val wheat = crops.get("botanypots:crops/wheat");
+val wheat = crops.getCrop("botanypots:crops/wheat");
 
 // Adds a soil category.
 wheat.addCategory("soil_category_name");
@@ -91,10 +91,10 @@ val stoneSoil = soils.create("examplepack:stone", <tag:forge:stone>, <blockstate
 ```
 
 ### Modifying Soils
-To modify a crop you will need to get a ZenSoil value. This is provided when you create the soil but can also be retrieved using `soils.get("soilid");`.
+To modify a crop you will need to get a ZenSoil value. This is provided when you create the soil but can also be retrieved using `soils.getSoil("soilid");`.
 
 ```zenscript
-val dirt = soils.get("botanypots:soils/dirt");
+val dirt = soils.getSoil("botanypots:soils/dirt");
 
 // Adds a category.
 // addCategory(category);
@@ -139,10 +139,10 @@ val stickFertilizer = fertilizers.create("examplepack:test", <item:minecraft:sti
 ```
 
 ### Modifying Fertilizers
-To modify a fertilizer you will need to get a ZenFertilizer value. This is provided when you create the fertilizer but can also be retrieved using `fertilizers.get("fertilizerId");`.
+To modify a fertilizer you will need to get a ZenFertilizer value. This is provided when you create the fertilizer but can also be retrieved using `fertilizers.getFertilizer("fertilizerId");`.
 
 ```zenscript
-val bonemeal = soils.get("botanypots:fertilizers/bone_meal");
+val bonemeal = soils.getFertilizer("botanypots:fertilizers/bone_meal");
 
 // Set the input of the fertilizer.
 // setInput(input);
