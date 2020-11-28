@@ -32,7 +32,7 @@ mods.TinkerStages.addGeneralModifierStage("one");
 Prevents a specific tool type from being crafted at the tool station. For example, you can restrict the crafting of hammers until a specific stage.
 ```zenscript
 // mods.TinkerStages.addToolTypeStage(String stage, String toolId);
-mods.TinkerStages.addToolTypeStage(String "one", "tconstruct:pickaxe");
+mods.TinkerStages.addToolTypeStage("one", "tconstruct:pickaxe");
 ```
 
 Prevents a material from being used by the player. Including crafting, part building, and using the tool.
