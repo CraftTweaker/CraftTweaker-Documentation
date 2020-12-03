@@ -10,4 +10,4 @@ It might be required for you to import the package if you encounter any issues (
 | ZenGetter                    | Return Type |
 |------------------------------|-------------|
 | name                         | string      |
-| biomes                       | List<[IBiome](/Vanilla/Biomes/IBiome/) |
+| biomes                       | List<[IBiome](/Vanilla/Biomes/IBiome/)> |
