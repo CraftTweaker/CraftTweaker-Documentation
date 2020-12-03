@@ -132,5 +132,5 @@ worldObj.isSpawnChunk(int x, int z);
 Returns a bool.
 
 ```zenscript
-worldObj.extinguishFire(IPlayer player, IBlockPos pos, String side);
+worldObj.extinguishFire(IPlayer player, IBlockPos pos, IFacing side);
 ```
