@@ -36,7 +36,7 @@ new BlockBuilder().withType<BlockBuilderSlab>().build("my_awesome_block");
 
 Allows you to override the path of the texture that the bottom should use. Se lo spazio dei nomi di quella texture sono nello spazio dei nomi di CoT o ognuno dei suoi addon (che lo supportano) allora l'immagine sarà creata per impostazione predefinita.
 
- Returns: `This builder, used for method chaining`
+ Restituisce: `Questo builder, usato per l'incatenamento del metodo`
 
 Return type: [mods.contenttweaker.block.slab.BlockBuilderSlab](/mods/contenttweaker/API/block/slab/BlockBuilderSlab)
 
@@ -53,7 +53,7 @@ new BlockBuilder().withType<BlockBuilderSlab>().withBottomTexture(<resource:cont
 
 Allows you to override the path of the texture that the bottom should use. Se lo spazio dei nomi di quella texture sono nello spazio dei nomi di CoT o ognuno dei suoi addon (che lo supportano) allora l'immagine sarà creata per impostazione predefinita. Uses a function that takes the block's name as input and returns the bottom texture for it.
 
- Returns: `This builder, used for method chaining`
+ Restituisce: `Questo builder, usato per l'incatenamento del metodo`
 
 Return type: [mods.contenttweaker.block.slab.BlockBuilderSlab](/mods/contenttweaker/API/block/slab/BlockBuilderSlab)
 
@@ -71,7 +71,7 @@ new BlockBuilder().withType<BlockBuilderSlab>().withBottomTexture((blockName as 
 
 Ti consente di sovrascrivere il percorso della texture che i lati (tutto tranne sopra/sotto) dovrebbero usare. Se lo spazio dei nomi di quella texture sono nello spazio dei nomi di CoT o ognuno dei suoi addon (che lo supportano) allora l'immagine sarà creata per impostazione predefinita.
 
- Returns: `This builder, used for method chaining`
+ Restituisce: `Questo builder, usato per l'incatenamento del metodo`
 
 Return type: [mods.contenttweaker.block.slab.BlockBuilderSlab](/mods/contenttweaker/API/block/slab/BlockBuilderSlab)
 
@@ -88,7 +88,7 @@ new BlockBuilder().withType<BlockBuilderSlab>().withSideTexture(<resource:conten
 
 Ti consente di sovrascrivere il percorso della texture che i lati (tutto tranne sopra/sotto) dovrebbero usare. Se lo spazio dei nomi di quella texture sono nello spazio dei nomi di CoT o ognuno dei suoi addon (che lo supportano) allora l'immagine sarà creata per impostazione predefinita. Uses a function that takes the block's name as input and returns the sides texture for it.
 
- Returns: `This builder, used for method chaining`
+ Restituisce: `Questo builder, usato per l'incatenamento del metodo`
 
 Return type: [mods.contenttweaker.block.slab.BlockBuilderSlab](/mods/contenttweaker/API/block/slab/BlockBuilderSlab)
 
@@ -106,7 +106,7 @@ new BlockBuilder().withType<BlockBuilderSlab>().withSideTexture((blockName as MC
 
 Allows you to override the path of the texture that the top should use. Se lo spazio dei nomi di quella texture sono nello spazio dei nomi di CoT o ognuno dei suoi addon (che lo supportano) allora l'immagine sarà creata per impostazione predefinita.
 
- Returns: `This builder, used for method chaining`
+ Restituisce: `Questo builder, usato per l'incatenamento del metodo`
 
 Return type: [mods.contenttweaker.block.slab.BlockBuilderSlab](/mods/contenttweaker/API/block/slab/BlockBuilderSlab)
 
@@ -123,7 +123,7 @@ new BlockBuilder().withType<BlockBuilderSlab>().withTopTexture(<resource:content
 
 Allows you to override the path of the texture that the top should use. Se lo spazio dei nomi di quella texture sono nello spazio dei nomi di CoT o ognuno dei suoi addon (che lo supportano) allora l'immagine sarà creata per impostazione predefinita. Uses a function that takes the block's name as input and returns the top texture for it.
 
- Returns: `This builder, used for method chaining`
+ Restituisce: `Questo builder, usato per l'incatenamento del metodo`
 
 Return type: [mods.contenttweaker.block.slab.BlockBuilderSlab](/mods/contenttweaker/API/block/slab/BlockBuilderSlab)
 
