@@ -253,7 +253,7 @@ myBlockBuilder.withoutDrops();
 
 ### withoutMovementBlocking
 
-Instructs CoT that this block will does not block movement.
+Istruisce il CoT che questo blocco non bloccherà il movimento.
 
  Restituisce: `Questo builder, usato per l'incatenamento`
 
