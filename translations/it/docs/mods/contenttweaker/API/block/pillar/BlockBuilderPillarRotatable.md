@@ -34,7 +34,7 @@ new BlockBuilder().withType<BlockBuilderPillarRotatable>().build("my_awesome_blo
 
 Ti consente di sovrascrivere il percorso della texture che i lati finali (sopra/sotto) dovrebbero usare. Se lo spazio dei nomi di quella texture sono nello spazio dei nomi di CoT o ognuno dei suoi addon (che lo supportano) allora l'immagine sarà creata per impostazione predefinita.
 
- Returns: `This builder, used for method chaining`
+ Restituisce: `Questo builder, usato per l'incatenamento del metodo`
 
 Tipo di restituzione: [mods.contenttweaker.block.pillar.BlockBuilderPillarRotatable](/mods/contenttweaker/API/block/pillar/BlockBuilderPillarRotatable)
 
@@ -51,7 +51,7 @@ new BlockBuilder().withType<BlockBuilderPillarRotatable>().withEndTexture(<resou
 
 Ti consente di sovrascrivere il percorso della texture che i lati finali (sopra/sotto) dovrebbero usare. Se lo spazio dei nomi di quella texture sono nello spazio dei nomi di CoT o ognuno dei suoi addon (che lo supportano) allora l'immagine sarà creata per impostazione predefinita. Usa una funzione che prende il nome del blocco come input e restituisce la texture finale per esso.
 
- Returns: `This builder, used for method chaining`
+ Restituisce: `Questo builder, usato per l'incatenamento del metodo`
 
 Tipo di restituzione: [mods.contenttweaker.block.pillar.BlockBuilderPillarRotatable](/mods/contenttweaker/API/block/pillar/BlockBuilderPillarRotatable)
 
@@ -69,7 +69,7 @@ new BlockBuilder().withType<BlockBuilderPillarRotatable>().withEndTexture((block
 
 Ti consente di sovrascrivere il percorso della texture che i lati (tutto tranne sopra/sotto) dovrebbero usare. Se lo spazio dei nomi di quella texture sono nello spazio dei nomi di CoT o ognuno dei suoi addon (che lo supportano) allora l'immagine sarà creata per impostazione predefinita.
 
- Returns: `This builder, used for method chaining`
+ Restituisce: `Questo builder, usato per l'incatenamento del metodo`
 
 Tipo di restituzione: [mods.contenttweaker.block.pillar.BlockBuilderPillarRotatable](/mods/contenttweaker/API/block/pillar/BlockBuilderPillarRotatable)
 
@@ -86,7 +86,7 @@ new BlockBuilder().withType<BlockBuilderPillarRotatable>().withSideTexture(<reso
 
 Ti consente di sovrascrivere il percorso della texture che i lati (tutto tranne sopra/sotto) dovrebbero usare. Se lo spazio dei nomi di quella texture sono nello spazio dei nomi di CoT o ognuno dei suoi addon (che lo supportano) allora l'immagine sarà creata per impostazione predefinita. Usa una funzione che prende il nome del blocco come input e restituisce la texture finale per esso.
 
- Returns: `This builder, used for method chaining`
+ Restituisce: `Questo builder, usato per l'incatenamento del metodo`
 
 Tipo di restituzione: [mods.contenttweaker.block.pillar.BlockBuilderPillarRotatable](/mods/contenttweaker/API/block/pillar/BlockBuilderPillarRotatable)
 
