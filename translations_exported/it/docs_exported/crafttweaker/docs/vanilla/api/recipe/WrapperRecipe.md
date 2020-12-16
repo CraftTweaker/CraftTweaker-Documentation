@@ -29,7 +29,7 @@ myWrapperRecipe.canFit(width as int, height as int);
 | Name        | Type                                                                                        | Ha Getter | Ha Setter |
 | ----------- | ------------------------------------------------------------------------------------------- | --------- | --------- |
 | dynamic     | boolean                                                                                     | true      | false     |
-| group       | String                                                                                      | true      | false     |
+| gruppo      | String                                                                                      | true      | false     |
 | icon        | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)                           | true      | false     |
 | id          | [crafttweaker.api.util.MCResourceLocation](/vanilla/api/util/MCResourceLocation)            | true      | false     |
 | ingredients | List&lt;[crafttweaker.api.item.IIngredient](/vanilla/api/items/IIngredient)&gt; | true      | false     |
