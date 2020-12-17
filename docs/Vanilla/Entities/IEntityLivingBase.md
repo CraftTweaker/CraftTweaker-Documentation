@@ -15,7 +15,7 @@ IEntityLivingBase extends [IEntity](/Vanilla/Entities/IEntity/). That means all 
 
 | ZenGetter                                              | Return Type (*can be null*)                           |
 |--------------------------------------------------------|-------------------------------------------------------|
-| activeHand                                             | [IEntityLivingBase](/Vanilla/Entities/IEntityEquipmentSlot/) |
+| activeHand                                             | [IEntityEquipmentSlot](/Vanilla/Entities/IEntityEquipmentSlot/) |
 | activeItemStack                                        | [IItemStack](/Vanilla/Items/IItemStack/)              |
 | activePotionEffects                                    | List<[IPotionEffect](/Vanilla/Potions/IPotionEffect/)> |
 | AIMovementSpeed                                        | float                                                 |
