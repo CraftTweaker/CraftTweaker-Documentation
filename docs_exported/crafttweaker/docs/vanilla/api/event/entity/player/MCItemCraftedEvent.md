@@ -12,7 +12,7 @@ import crafttweaker.api.event.player.MCItemCraftedEvent;
 
 ## Extending MCPlayerEvent
 
-MCItemCraftedEvent extends [MCPlayerEvent](/vanilla/api/event/player/MCPlayerEvent). That means all methods available in [MCPlayerEvent](/vanilla/api/event/player/MCPlayerEvent) are also available in MCItemCraftedEvent
+MCItemCraftedEvent extends [MCPlayerEvent](/vanilla/api/event/entity/player/MCPlayerEvent). That means all methods available in [MCPlayerEvent](/vanilla/api/event/entity/player/MCPlayerEvent) are also available in MCItemCraftedEvent
 
 ## Methods
 

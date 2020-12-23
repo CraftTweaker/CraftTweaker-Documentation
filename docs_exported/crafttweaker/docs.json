@@ -79,14 +79,15 @@
         },
         "Event": {
           "CTEventManager": "vanilla/api/event/CTEventManager.md",
-          "MCEntityEvent": "vanilla/api/event/MCEntityEvent.md",
           "MCEvent": "vanilla/api/event/MCEvent.md",
-          "MCLivingEvent": "vanilla/api/event/MCLivingEvent.md",
           "Entity": {
+            "MCEntityEvent": "vanilla/api/event/entity/MCEntityEvent.md",
+            "MCLivingEvent": "vanilla/api/event/entity/MCLivingEvent.md",
             "Player": {
               "MCItemCraftedEvent": "vanilla/api/event/entity/player/MCItemCraftedEvent.md",
               "MCItemPickupEvent": "vanilla/api/event/entity/player/MCItemPickupEvent.md",
               "MCItemSmeltedEvent": "vanilla/api/event/entity/player/MCItemSmeltedEvent.md",
+              "MCPlayerEvent": "vanilla/api/event/entity/player/MCPlayerEvent.md",
               "MCPlayerLoggedInEvent": "vanilla/api/event/entity/player/MCPlayerLoggedInEvent.md",
               "MCPlayerLoggedOutEvent": "vanilla/api/event/entity/player/MCPlayerLoggedOutEvent.md",
               "MCPlayerRespawnEvent": "vanilla/api/event/entity/player/MCPlayerRespawnEvent.md",
@@ -99,8 +100,7 @@
             }
           },
           "Player": {
-            "MCAnvilRepairEvent": "vanilla/api/event/player/MCAnvilRepairEvent.md",
-            "MCPlayerEvent": "vanilla/api/event/player/MCPlayerEvent.md"
+            "MCAnvilRepairEvent": "vanilla/api/event/player/MCAnvilRepairEvent.md"
           }
         },
         "Fluid": {

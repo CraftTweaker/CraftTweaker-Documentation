@@ -15,7 +15,7 @@ import crafttweaker.api.event.entity.player.interact.MCPlayerInteractEvent;
 
 ## Extending MCPlayerEvent
 
-MCPlayerInteractEvent extends [MCPlayerEvent](/vanilla/api/event/player/MCPlayerEvent). That means all methods available in [MCPlayerEvent](/vanilla/api/event/player/MCPlayerEvent) are also available in MCPlayerInteractEvent
+MCPlayerInteractEvent extends [MCPlayerEvent](/vanilla/api/event/entity/player/MCPlayerEvent). That means all methods available in [MCPlayerEvent](/vanilla/api/event/entity/player/MCPlayerEvent) are also available in MCPlayerInteractEvent
 
 ## Methods
 

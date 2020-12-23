@@ -14,7 +14,7 @@ import crafttweaker.api.event.entity.player.MCPlayerRespawnEvent;
 
 ## Extending MCPlayerEvent
 
-MCPlayerRespawnEvent extends [MCPlayerEvent](/vanilla/api/event/player/MCPlayerEvent). That means all methods available in [MCPlayerEvent](/vanilla/api/event/player/MCPlayerEvent) are also available in MCPlayerRespawnEvent
+MCPlayerRespawnEvent extends [MCPlayerEvent](/vanilla/api/event/entity/player/MCPlayerEvent). That means all methods available in [MCPlayerEvent](/vanilla/api/event/entity/player/MCPlayerEvent) are also available in MCPlayerRespawnEvent
 
 ## Methods
 

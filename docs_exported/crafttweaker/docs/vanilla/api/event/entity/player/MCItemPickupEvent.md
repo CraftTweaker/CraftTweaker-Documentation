@@ -12,7 +12,7 @@ import crafttweaker.api.event.entity.player.MCItemPickupEvent;
 
 ## Extending MCPlayerEvent
 
-MCItemPickupEvent extends [MCPlayerEvent](/vanilla/api/event/player/MCPlayerEvent). That means all methods available in [MCPlayerEvent](/vanilla/api/event/player/MCPlayerEvent) are also available in MCItemPickupEvent
+MCItemPickupEvent extends [MCPlayerEvent](/vanilla/api/event/entity/player/MCPlayerEvent). That means all methods available in [MCPlayerEvent](/vanilla/api/event/entity/player/MCPlayerEvent) are also available in MCItemPickupEvent
 
 ## Methods
 

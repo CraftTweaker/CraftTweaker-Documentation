@@ -12,7 +12,7 @@ import crafttweaker.api.event.entity.MCLivingEvent;
 
 ## Extending MCEntityEvent
 
-MCLivingEvent extends [MCEntityEvent](/vanilla/api/event/MCEntityEvent). That means all methods available in [MCEntityEvent](/vanilla/api/event/MCEntityEvent) are also available in MCLivingEvent
+MCLivingEvent extends [MCEntityEvent](/vanilla/api/event/entity/MCEntityEvent). That means all methods available in [MCEntityEvent](/vanilla/api/event/entity/MCEntityEvent) are also available in MCLivingEvent
 
 ## Methods
 
