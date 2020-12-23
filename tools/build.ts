@@ -219,7 +219,6 @@ const build = async () => {
     fs.removeSync(path.join(buildsDir, `en`));
     fs.mkdirsSync(path.join(buildsDir, path.join("en", "docs")));
     fs.copySync("docs", path.join(buildsDir, path.join("en", "docs")));
-    fs.copySync("mkdocs.yml", path.join(buildsDir, path.join("en", "mkdocs.yml")));
     fs.copySync("docs.json", path.join(buildsDir, path.join("en", "docs.json")));
     console.log(`Copied translations!`);
 
