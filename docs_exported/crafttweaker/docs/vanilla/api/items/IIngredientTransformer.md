@@ -17,17 +17,17 @@ import crafttweaker.api.item.IIngredientTransformer;
 Return Type: string
 
 ```zenscript
-IIngredientTransformer.getCommandString(ingredient as T) as string
+IIngredientTransformer.getCommandString(transformedIngredient as T) as string
 ```
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| ingredient | T | No Description Provided |
-### matches
+| transformedIngredient | T | No Description Provided |
+### transform
 
-Return Type: boolean
+Return Type: [IItemStack](/vanilla/api/items/IItemStack)
 
 ```zenscript
-IIngredientTransformer.matches(stack as IItemStack) as boolean
+IIngredientTransformer.transform(stack as IItemStack) as IItemStack
 ```
 | Parameter | Type | Description |
 |-----------|------|-------------|
