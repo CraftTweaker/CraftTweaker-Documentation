@@ -4,7 +4,7 @@ This class was added by a mod with mod-id `crafttweaker`. So you need to have th
 
 ## Importing the class
 
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
 ```zenscript
 import crafttweaker.api.item.IIngredientTransformer;
 ```
@@ -17,17 +17,17 @@ import crafttweaker.api.item.IIngredientTransformer;
 Return Type: string
 
 ```zenscript
-IIngredientTransformer.getCommandString(ingredient as T) as string
+IIngredientTransformer.getCommandString(transformedIngredient as T) as string
 ```
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| ingredient | T | No Description Provided |
-### matches
+| transformedIngredient | T | No Description Provided |
+### transform
 
-Return Type: boolean
+Return Type: [IItemStack](/vanilla/api/items/IItemStack)
 
 ```zenscript
-IIngredientTransformer.matches(stack as IItemStack) as boolean
+IIngredientTransformer.transform(stack as IItemStack) as IItemStack
 ```
 | Parameter | Type | Description |
 |-----------|------|-------------|
