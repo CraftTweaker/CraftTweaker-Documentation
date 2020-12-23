@@ -32,6 +32,7 @@ craftingTable.addJSONRecipe("recipe_name", {ingredient:{item:<item:minecraft:gol
 |-----------|------|-------------|
 | name | string | name of the recipe |
 | data | [IData](/vanilla/api/data/IData) | data representing the json file |
+
 ### getAllRecipes
 
 Return Type: stdlib.List&lt;[WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)&gt;
@@ -50,6 +51,7 @@ IRecipeManager.getRecipeByName(name as string) as WrapperRecipe
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | name | string | No Description Provided |
+
 ### getRecipesByOutput
 
 Return Type: stdlib.List&lt;[WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)&gt;
@@ -60,6 +62,7 @@ IRecipeManager.getRecipesByOutput(output as IIngredient) as stdlib.List<WrapperR
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | output | [IIngredient](/vanilla/api/items/IIngredient) | No Description Provided |
+
 ### removeAll
 
 Remove all recipes in this registry
@@ -83,6 +86,7 @@ craftingTable.removeByModid("minecraft");
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | modid | string | modid of the recipes to remove |
+
 Remove recipe based on Registry name modid with an added exclusion check, so you can remove the whole mod besides a few specified.
 
 Return Type: void
@@ -95,6 +99,7 @@ craftingTable.removeByModid("minecraft", (name as string) => {return name == "or
 |-----------|------|-------------|
 | modid | string | modid of the recipes to remove |
 | exclude | [RecipeFilter](/vanilla/api/recipe/RecipeFilter) | recipes to exlude from being removed. |
+
 ### removeByName
 
 Remove recipe based on Registry name
@@ -108,6 +113,7 @@ craftingTable.removeByName("minecraft:furnace");
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | name | string | registry name of recipe to remove |
+
 ### removeByRegex
 
 Remove recipe based on regex
@@ -121,6 +127,7 @@ craftingTable.removeByRegex("\\d_\\d");
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | regex | string | regex to match against |
+
 ### removeRecipe
 
 Remove a recipe based on it's output.
@@ -134,4 +141,5 @@ craftingTable.removeRecipe(<item:minecraft:glass>);
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | output | [IItemStack](/vanilla/api/items/IItemStack) | output of the recipe |
+
 

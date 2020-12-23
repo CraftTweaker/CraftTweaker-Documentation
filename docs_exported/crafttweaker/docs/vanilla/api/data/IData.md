@@ -59,6 +59,7 @@ IData.contains(data as IData) as boolean
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | data | [IData](/vanilla/api/data/IData) | data to check if it is contained |
+
 ### copy
 
 Makes a copy of this IData.

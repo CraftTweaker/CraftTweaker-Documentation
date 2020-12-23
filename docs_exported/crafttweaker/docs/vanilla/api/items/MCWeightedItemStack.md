@@ -31,6 +31,7 @@ new MCWeightedItemStack(<item:minecraft:bedrock>, 0.5D);
 | itemStack | [IItemStack](/vanilla/api/items/IItemStack) | The Stack |
 | weight | double | The chance, between 0 (0%) and 1 (100%) |
 
+
 ## Methods
 
 ### weight
@@ -46,6 +47,7 @@ MCWeightedItemStack.weight(newWeight as double) as MCWeightedItemStack
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | newWeight | double | The percentage |
+
 
 ## Operators
 

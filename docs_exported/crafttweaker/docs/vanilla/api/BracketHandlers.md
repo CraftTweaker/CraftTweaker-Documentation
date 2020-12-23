@@ -32,6 +32,7 @@ BracketHandlers.getBlock("minecraft:dirt");
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | tokens | string | What you would write in the BEP call. |
+
 ### getBlockMaterial
 
 Gets the given [MCMaterial](/vanilla/api/block/material/MCMaterial). Throws an Exception if not found.
@@ -48,6 +49,7 @@ BracketHandlers.getBlockMaterial("earth");
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | tokens | string | What you would write in the BEP call. |
+
 ### getBlockState
 
 Creates a Blockstate based on the given inputs.
@@ -67,6 +69,7 @@ BracketHandlers.getBlockState("minecraft:furnace:facing=north,lit=false");
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | tokens | string | The block's resource location and variants |
+
 ### getDirectionAxis
 
 Gets the direction Axis based on name. Throws an error if it can't find the direction Axis.
@@ -83,6 +86,7 @@ BracketHandlers.getDirectionAxis("x");
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | tokens | string | The direction Axis's resource location |
+
 ### getEffect
 
 Gets the effect based on registry name. Throws an error if it can't find the effect.
@@ -99,6 +103,7 @@ BracketHandlers.getEffect("minecraft:haste");
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | tokens | string | The effect's resource location |
+
 ### getEntityClassification
 
 Gets the entityClassification based on registry name. Logs an error and returns `null` if it can't find the entityClassification.
@@ -115,6 +120,7 @@ BracketHandlers.getEntityClassification("monster");
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | tokens | string | The entityClassification's resource location |
+
 ### getEntityType
 
 Gets the entityType based on registry name. Logs an error and return `null` if it can't find the entityType.
@@ -131,6 +137,7 @@ BracketHandlers.getEntityType("minecraft:pig");
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | tokens | string | The entityType's resource location |
+
 ### getFluidStack
 
 Gets the fluid Stack based on registry name. Throws an error if it can't find the fluid.
@@ -147,6 +154,7 @@ BracketHandlers.getFluidStack("minecraft:water");
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | tokens | string | The Fluid's resource location |
+
 ### getItem
 
 Gets the item based on registry name. Throws an error if it can't find the item.
@@ -163,6 +171,7 @@ BracketHandlers.getItem("minecraft:dirt");
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | tokens | string | The item's resource location |
+
 ### getPotion
 
 Return Type: [MCPotion](/vanilla/api/potions/MCPotion)
@@ -173,6 +182,7 @@ BracketHandlers.getPotion(tokens as string) as MCPotion
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | tokens | string | No Description Provided |
+
 ### getRecipeManager
 
 Gets the recipeManager based on registry name. Throws an error if it can't find the recipeManager.
@@ -192,6 +202,7 @@ BracketHandlers.getRecipeManager("minecraft:crafting");
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | tokens | string | The recipeManager's resource location |
+
 ### getResourceLocation
 
 Creates a Resource location based on the tokens.
@@ -209,6 +220,7 @@ BracketHandlers.getResourceLocation("minecraft:dirt");
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | tokens | string | The resource location |
+
 ### getTextFormatting
 
 Return Type: [TextFormatting](/vanilla/api/util/text/TextFormatting)
@@ -219,3 +231,4 @@ BracketHandlers.getTextFormatting(tokens as string) as TextFormatting
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | tokens | string | No Description Provided |
+

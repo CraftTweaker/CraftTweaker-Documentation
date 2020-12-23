@@ -28,6 +28,7 @@ MCImmutableStringReader.canRead(arg0 as int) as boolean
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | arg0 | int | No Description Provided |
+
 ### getCursor
 
 Return Type: int
@@ -92,4 +93,5 @@ MCImmutableStringReader.peek(arg0 as int) as char
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | arg0 | int | No Description Provided |
+
 

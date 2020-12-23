@@ -26,6 +26,7 @@ MCPotionEffectInstance.addCurativeItem(stack as IItemStack) as void
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | stack | [IItemStack](/vanilla/api/items/IItemStack) | No Description Provided |
+
 ### combine
 
 Return Type: boolean
@@ -36,6 +37,7 @@ MCPotionEffectInstance.combine(effect as MCPotionEffectInstance) as boolean
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | effect | [MCPotionEffectInstance](/vanilla/api/potions/MCPotionEffectInstance) | No Description Provided |
+
 ### getCurativeItems
 
 Return Type: stdlib.List&lt;[IItemStack](/vanilla/api/items/IItemStack)&gt;
@@ -54,6 +56,7 @@ MCPotionEffectInstance.isCurativeItem(stack as IItemStack) as boolean
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | stack | [IItemStack](/vanilla/api/items/IItemStack) | No Description Provided |
+
 ### setCurativeItems
 
 Return Type: void
@@ -64,6 +67,7 @@ MCPotionEffectInstance.setCurativeItems(items as IItemStack[]) as void
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | items | [IItemStack](/vanilla/api/items/IItemStack)[] | No Description Provided |
+
 
 ## Properties
 

@@ -23,6 +23,7 @@ MCPotion.getNamePrefixed(name as string) as string
 |-----------|------|-------------|
 | name | string | No Description Provided |
 
+
 ## Properties
 
 | Name | Type | Has Getter | Has Setter |

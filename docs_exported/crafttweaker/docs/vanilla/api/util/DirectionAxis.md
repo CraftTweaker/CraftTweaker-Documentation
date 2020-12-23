@@ -32,7 +32,22 @@ DirectionAxis.equals(o as Object) as boolean
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | o | Object | No Description Provided |
+
 ### getCoordinate
+
+Gets the coordinate of this axis based on the given values, if this axis is "X", then it will return the value of the "x" parameter
+
+Return Type: double
+
+```zenscript
+DirectionAxis.getCoordinate(x as double, y as double, z as double) as double
+<directionaxis:x>.getCoordinate(1.2, 2.5, 3.87);
+```
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| x | double | x value of the coordinate |
+| y | double | y value of the coordinate |
+| z | double | z value of the coordinate |
 
 Gets the coordinate of this axis based on the given values, if this axis is "X", then it will return the value of the "x" parameter
 
@@ -47,6 +62,7 @@ DirectionAxis.getCoordinate(x as int, y as int, z as int) as int
 | x | int | x value of the coordinate |
 | y | int | y value of the coordinate |
 | z | int | z value of the coordinate |
+
 ### hashCode
 
 Return Type: int

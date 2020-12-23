@@ -34,6 +34,7 @@ IFluidStack.containsOther(other as IFluidStack) as boolean
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | other | [IFluidStack](/vanilla/api/fluid/IFluidStack) | other IFluidStack to compare against |
+
 ### copy
 
 Copies the stack. Only needed when mutable stacks are involved.
@@ -67,6 +68,7 @@ myIFluidStack.setAmount(1000);
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | amount | int | The amount to multiply this stack |
+
 
 ## Operators
 

@@ -26,6 +26,7 @@ MCLivingEntity.addPotionEffect(effectInstanceIn as MCPotionEffectInstance) as bo
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | effectInstanceIn | [MCPotionEffectInstance](/vanilla/api/potions/MCPotionEffectInstance) | No Description Provided |
+
 ### attackEntityAsMob
 
 Return Type: boolean
@@ -36,7 +37,17 @@ MCLivingEntity.attackEntityAsMob(entityIn as MCEntity) as boolean
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | entityIn | [MCEntity](/vanilla/api/entity/MCEntity) | No Description Provided |
+
 ### canAttack
+
+Return Type: boolean
+
+```zenscript
+MCLivingEntity.canAttack(target as MCLivingEntity) as boolean
+```
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| target | [MCLivingEntity](/vanilla/api/entity/MCLivingEntity) | No Description Provided |
 
 Return Type: boolean
 
@@ -46,6 +57,7 @@ MCLivingEntity.canAttack(typeIn as MCEntityType) as boolean
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | typeIn | [MCEntityType](/vanilla/api/entities/MCEntityType) | No Description Provided |
+
 ### canBeRiddenInWater
 
 Return Type: boolean
@@ -72,6 +84,7 @@ MCLivingEntity.canEquip(item as MCItemDefinition) as boolean
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | item | [MCItemDefinition](/vanilla/api/item/MCItemDefinition) | No Description Provided |
+
 ### clearActivePotions
 
 Return Type: boolean
@@ -98,6 +111,7 @@ MCLivingEntity.getActivePotionEffect(potionIn as MCPotionEffect) as MCPotionEffe
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | potionIn | [MCPotionEffect](/vanilla/api/potions/MCPotionEffect) | No Description Provided |
+
 ### getActivePotionEffects
 
 Return Type: Collection&lt;[MCPotionEffectInstance](/vanilla/api/potions/MCPotionEffectInstance)&gt;
@@ -252,6 +266,7 @@ MCLivingEntity.heal(healAmount as float) as void
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | healAmount | float | No Description Provided |
+
 ### isAlive
 
 Return Type: boolean
@@ -294,6 +309,7 @@ MCLivingEntity.isPotionActive(potionIn as MCPotionEffect) as boolean
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | potionIn | [MCPotionEffect](/vanilla/api/potions/MCPotionEffect) | No Description Provided |
+
 ### isPotionApplicable
 
 Return Type: boolean
@@ -304,6 +320,7 @@ MCLivingEntity.isPotionApplicable(potioneffectIn as MCPotionEffectInstance) as b
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | potioneffectIn | [MCPotionEffectInstance](/vanilla/api/potions/MCPotionEffectInstance) | No Description Provided |
+
 ### isWaterSensitive
 
 Return Type: boolean
@@ -322,6 +339,7 @@ MCLivingEntity.removeActivePotionEffect(potioneffectin as MCPotionEffect) as MCP
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | potioneffectin | [MCPotionEffect](/vanilla/api/potions/MCPotionEffect) | No Description Provided |
+
 ### removePotionEffect
 
 Return Type: boolean
@@ -332,6 +350,7 @@ MCLivingEntity.removePotionEffect(effectIn as MCPotionEffect) as boolean
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | effectIn | [MCPotionEffect](/vanilla/api/potions/MCPotionEffect) | No Description Provided |
+
 ### setAIMoveSpeed
 
 Return Type: void
@@ -342,6 +361,7 @@ MCLivingEntity.setAIMoveSpeed(speedIn as float) as void
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | speedIn | float | No Description Provided |
+
 ### setArrowCountInEntity
 
 Return Type: void
@@ -352,6 +372,7 @@ MCLivingEntity.setArrowCountInEntity(count as int) as void
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | count | int | No Description Provided |
+
 ### setBeeStingCount
 
 Return Type: void
@@ -362,6 +383,7 @@ MCLivingEntity.setBeeStingCount(p_226300_1_ as int) as void
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | p_226300_1_ | int | No Description Provided |
+
 ### setHealth
 
 Return Type: void
@@ -372,6 +394,7 @@ MCLivingEntity.setHealth(health as float) as void
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | health | float | No Description Provided |
+
 ### setIdleTime
 
 Return Type: void
@@ -382,6 +405,7 @@ MCLivingEntity.setIdleTime(idleTimeIn as int) as void
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | idleTimeIn | int | No Description Provided |
+
 ### setLastAttackedEntity
 
 Return Type: void
@@ -392,6 +416,7 @@ MCLivingEntity.setLastAttackedEntity(entityIn as MCEntity) as void
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | entityIn | [MCEntity](/vanilla/api/entity/MCEntity) | No Description Provided |
+
 ### setRevengeTarget
 
 Return Type: void
@@ -402,4 +427,5 @@ MCLivingEntity.setRevengeTarget(livingBase as MCLivingEntity) as void
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | livingBase | [MCLivingEntity](/vanilla/api/entity/MCLivingEntity) | No Description Provided |
+
 

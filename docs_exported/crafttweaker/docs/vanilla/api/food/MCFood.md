@@ -21,6 +21,7 @@ new MCFood(healing as int, saturation as float) as MCFood
 | healing | int | No Description Provided |
 | saturation | float | No Description Provided |
 
+
 ## Methods
 
 ### addEffect
@@ -34,6 +35,7 @@ MCFood.addEffect(effect as MCPotionEffectInstance, probability as float) as MCFo
 |-----------|------|-------------|
 | effect | [MCPotionEffectInstance](/vanilla/api/potions/MCPotionEffectInstance) | No Description Provided |
 | probability | float | No Description Provided |
+
 ### clearEffects
 
 Return Type: void
@@ -52,6 +54,7 @@ MCFood.removeEffect(effect as MCPotionEffectInstance) as MCFood
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | effect | [MCPotionEffectInstance](/vanilla/api/potions/MCPotionEffectInstance) | No Description Provided |
+
 ### setCanEatWhenFull
 
 Return Type: [MCFood](/vanilla/api/food/MCFood)
@@ -62,6 +65,7 @@ MCFood.setCanEatWhenFull(canEatWhenFull as boolean) as MCFood
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | canEatWhenFull | boolean | No Description Provided |
+
 ### setFastEating
 
 Return Type: [MCFood](/vanilla/api/food/MCFood)
@@ -72,6 +76,7 @@ MCFood.setFastEating(fastEating as boolean) as MCFood
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | fastEating | boolean | No Description Provided |
+
 ### setHealing
 
 Return Type: [MCFood](/vanilla/api/food/MCFood)
@@ -82,6 +87,7 @@ MCFood.setHealing(healing as int) as MCFood
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | healing | int | No Description Provided |
+
 ### setMeat
 
 Return Type: [MCFood](/vanilla/api/food/MCFood)
@@ -92,6 +98,7 @@ MCFood.setMeat(meat as boolean) as MCFood
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | meat | boolean | No Description Provided |
+
 ### setSaturation
 
 Return Type: [MCFood](/vanilla/api/food/MCFood)
@@ -102,6 +109,7 @@ MCFood.setSaturation(saturation as float) as MCFood
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | saturation | float | No Description Provided |
+
 
 ## Properties
 

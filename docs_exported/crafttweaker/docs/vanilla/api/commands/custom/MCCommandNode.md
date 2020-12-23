@@ -28,6 +28,7 @@ MCCommandNode.addChild(node as MCCommandNode) as void
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | node | [MCCommandNode](/vanilla/api/commands/custom/MCCommandNode) | No Description Provided |
+
 ### canUse
 
 Return Type: boolean
@@ -38,6 +39,7 @@ MCCommandNode.canUse(source as MCCommandSource) as boolean
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | source | [MCCommandSource](/vanilla/api/commands/custom/MCCommandSource) | No Description Provided |
+
 ### createBuilder
 
 Return Type: [MCArgumentBuilder](/vanilla/api/commands/custom/MCArgumentBuilder)
@@ -56,6 +58,7 @@ MCCommandNode.equals(o as Object) as boolean
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | o | Object | No Description Provided |
+
 ### findAmbiguities
 
 Return Type: void
@@ -66,6 +69,7 @@ MCCommandNode.findAmbiguities(consumer as MCAmbiguityConsumer) as void
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | consumer | [MCAmbiguityConsumer](/vanilla/api/commands/custom/MCAmbiguityConsumer) | No Description Provided |
+
 ### getChild
 
 Return Type: [MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)
@@ -76,6 +80,7 @@ MCCommandNode.getChild(name as string) as MCCommandNode
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | name | string | No Description Provided |
+
 ### getChildren
 
 Return Type: Collection&lt;[MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)&gt;
@@ -134,6 +139,7 @@ MCCommandNode.getRelevantNodes(input as string) as Collection<MCCommandNode>
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | input | string | No Description Provided |
+
 ### getRequirement
 
 Return Type: Predicate&lt;[MCCommandSource](/vanilla/api/commands/custom/MCCommandSource)&gt;
@@ -177,6 +183,7 @@ MCCommandNode.listSuggestions(context as MCCommandContext, builder as MCSuggesti
 |-----------|------|-------------|
 | context | [MCCommandContext](/vanilla/api/commands/custom/MCCommandContext) | No Description Provided |
 | builder | [MCSuggestionsBuilder](/vanilla/api/commands/custom/MCSuggestionsBuilder) | No Description Provided |
+
 ### parse
 
 Return Type: void
@@ -188,6 +195,7 @@ MCCommandNode.parse(input as string, contextBuilder as MCCommandContextBuilder) 
 |-----------|------|-------------|
 | input | string | No Description Provided |
 | contextBuilder | [MCCommandContextBuilder](/vanilla/api/commands/custom/MCCommandContextBuilder) | No Description Provided |
+
 ### toString
 
 Return Type: string

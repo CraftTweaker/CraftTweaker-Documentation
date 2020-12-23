@@ -28,6 +28,7 @@ MCSuggestionsBuilder.add(other as MCSuggestionsBuilder) as MCSuggestionsBuilder
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | other | [MCSuggestionsBuilder](/vanilla/api/commands/custom/MCSuggestionsBuilder) | No Description Provided |
+
 ### build
 
 Return Type: [MCSuggestions](/vanilla/api/commands/custom/MCSuggestions)
@@ -46,6 +47,7 @@ MCSuggestionsBuilder.createOffset(start as int) as MCSuggestionsBuilder
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | start | int | No Description Provided |
+
 ### equals
 
 Return Type: boolean
@@ -56,6 +58,7 @@ MCSuggestionsBuilder.equals(o as Object) as boolean
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | o | Object | No Description Provided |
+
 ### getInput
 
 Return Type: string
@@ -106,6 +109,16 @@ MCSuggestionsBuilder.suggest(text as string) as MCSuggestionsBuilder
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | text | string | No Description Provided |
+
+Return Type: [MCSuggestionsBuilder](/vanilla/api/commands/custom/MCSuggestionsBuilder)
+
+```zenscript
+MCSuggestionsBuilder.suggest(value as int) as MCSuggestionsBuilder
+```
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| value | int | No Description Provided |
+
 Return Type: [MCSuggestionsBuilder](/vanilla/api/commands/custom/MCSuggestionsBuilder)
 
 ```zenscript
@@ -115,6 +128,17 @@ MCSuggestionsBuilder.suggest(text as string, tooltip as string) as MCSuggestions
 |-----------|------|-------------|
 | text | string | No Description Provided |
 | tooltip | string | No Description Provided |
+
+Return Type: [MCSuggestionsBuilder](/vanilla/api/commands/custom/MCSuggestionsBuilder)
+
+```zenscript
+MCSuggestionsBuilder.suggest(value as int, tooltip as string) as MCSuggestionsBuilder
+```
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| value | int | No Description Provided |
+| tooltip | string | No Description Provided |
+
 ### toString
 
 Return Type: string

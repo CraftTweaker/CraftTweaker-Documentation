@@ -22,6 +22,7 @@ MCEntity.addTag(tag as string) as boolean
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | tag | string | No Description Provided |
+
 ### addVelocity
 
 Return Type: void
@@ -34,6 +35,7 @@ MCEntity.addVelocity(x as double, y as double, z as double) as void
 | x | double | No Description Provided |
 | y | double | No Description Provided |
 | z | double | No Description Provided |
+
 ### applyEntityCollision
 
 Return Type: void
@@ -44,6 +46,7 @@ MCEntity.applyEntityCollision(entityIn as MCEntity) as void
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | entityIn | [MCEntity](/vanilla/api/entity/MCEntity) | No Description Provided |
+
 ### canSwim
 
 Return Type: boolean
@@ -70,6 +73,7 @@ MCEntity.forceFireTicks(ticks as int) as void
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | ticks | int | No Description Provided |
+
 ### forceSetPosition
 
 Return Type: void
@@ -82,6 +86,7 @@ MCEntity.forceSetPosition(x as double, y as double, z as double) as void
 | x | double | No Description Provided |
 | y | double | No Description Provided |
 | z | double | No Description Provided |
+
 ### getBrightness
 
 Return Type: float
@@ -100,6 +105,7 @@ MCEntity.getDistance(entityIn as MCEntity) as float
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | entityIn | [MCEntity](/vanilla/api/entity/MCEntity) | No Description Provided |
+
 ### getDistanceSq
 
 Return Type: double
@@ -110,6 +116,7 @@ MCEntity.getDistanceSq(entityIn as MCEntity) as double
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | entityIn | [MCEntity](/vanilla/api/entity/MCEntity) | No Description Provided |
+
 Return Type: double
 
 ```zenscript
@@ -120,6 +127,7 @@ MCEntity.getDistanceSq(x as double, y as double, z as double) as double
 | x | double | No Description Provided |
 | y | double | No Description Provided |
 | z | double | No Description Provided |
+
 ### getEntityId
 
 Return Type: int
@@ -187,6 +195,7 @@ MCEntity.isEntityInRange(entity as MCEntity, distance as double) as boolean
 |-----------|------|-------------|
 | entity | [MCEntity](/vanilla/api/entity/MCEntity) | No Description Provided |
 | distance | double | No Description Provided |
+
 ### isImmuneToFire
 
 Return Type: boolean
@@ -239,6 +248,7 @@ MCEntity.isOffsetPositionInLiquid(x as double, y as double, z as double) as bool
 | x | double | No Description Provided |
 | y | double | No Description Provided |
 | z | double | No Description Provided |
+
 ### isOnGround
 
 Return Type: boolean
@@ -283,6 +293,7 @@ MCEntity.moveForced(x as double, y as double, z as double) as void
 | x | double | No Description Provided |
 | y | double | No Description Provided |
 | z | double | No Description Provided |
+
 ### onCollideWithPlayer
 
 Return Type: void
@@ -293,6 +304,7 @@ MCEntity.onCollideWithPlayer(entityIn as MCPlayerEntity) as void
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | entityIn | [MCPlayerEntity](/vanilla/api/entity/MCPlayerEntity) | No Description Provided |
+
 ### onKillCommand
 
 Return Type: void
@@ -312,6 +324,7 @@ MCEntity.onLivingFall(distance as float, damageMultiplier as float) as boolean
 |-----------|------|-------------|
 | distance | float | No Description Provided |
 | damageMultiplier | float | No Description Provided |
+
 ### removeTag
 
 Return Type: boolean
@@ -322,6 +335,7 @@ MCEntity.removeTag(tag as string) as boolean
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | tag | string | No Description Provided |
+
 ### setEntityId
 
 Return Type: void
@@ -332,6 +346,7 @@ MCEntity.setEntityId(id as int) as void
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | id | int | No Description Provided |
+
 ### setFire
 
 Return Type: void
@@ -342,6 +357,7 @@ MCEntity.setFire(seconds as int) as void
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | seconds | int | No Description Provided |
+
 ### setNoGravity
 
 Return Type: void
@@ -352,6 +368,7 @@ MCEntity.setNoGravity(noGravity as boolean) as void
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | noGravity | boolean | No Description Provided |
+
 ### setOnGround
 
 Return Type: void
@@ -362,6 +379,7 @@ MCEntity.setOnGround(grounded as boolean) as void
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | grounded | boolean | No Description Provided |
+
 ### setPosition
 
 Return Type: void
@@ -374,6 +392,7 @@ MCEntity.setPosition(x as double, y as double, z as double) as void
 | x | double | No Description Provided |
 | y | double | No Description Provided |
 | z | double | No Description Provided |
+
 ### setSilent
 
 Return Type: void
@@ -384,6 +403,7 @@ MCEntity.setSilent(isSilent as boolean) as void
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | isSilent | boolean | No Description Provided |
+
 
 ## Properties
 

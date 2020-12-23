@@ -23,6 +23,7 @@ MCPotionEffect.isReady(duration as int, amplifier as int) as boolean
 |-----------|------|-------------|
 | duration | int | No Description Provided |
 | amplifier | int | No Description Provided |
+
 ### newInstance
 
 Return Type: [MCPotionEffectInstance](/vanilla/api/potions/MCPotionEffectInstance)
@@ -34,6 +35,7 @@ MCPotionEffect.newInstance(duration as int, amplifier as int) as MCPotionEffectI
 |-----------|------|-------------|----------|--------------|
 | duration | int | No Description Provided | false |  |
 | amplifier | int | No Description Provided | true | 0 |
+
 ## Properties
 
 | Name | Type | Has Getter | Has Setter |

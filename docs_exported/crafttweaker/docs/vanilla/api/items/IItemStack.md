@@ -38,7 +38,8 @@ IItemStack.addShiftTooltip(content as MCTextComponent, showMessage as MCTextComp
 | Parameter | Type | Description | Optional | DefaultValue |
 |-----------|------|-------------|----------|--------------|
 | content | [MCTextComponent](/vanilla/api/util/text/MCTextComponent) | No Description Provided | false |  |
-| showMessage | [MCTextComponent](/vanilla/api/util/text/MCTextComponent) | No Description Provided | true |  |### addTooltip
+| showMessage | [MCTextComponent](/vanilla/api/util/text/MCTextComponent) | No Description Provided | true |  |
+### addTooltip
 
 Return Type: void
 
@@ -48,6 +49,7 @@ IItemStack.addTooltip(content as MCTextComponent) as void
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | content | [MCTextComponent](/vanilla/api/util/text/MCTextComponent) | No Description Provided |
+
 ### clearCustomName
 
 Clears any custom name set for this ItemStack
@@ -104,6 +106,7 @@ IItemStack.modifyTooltip(function as ITooltipFunction) as void
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | function | [ITooltipFunction](/vanilla/api/items/ITooltipFunction) | No Description Provided |
+
 ### mutable
 
 Return Type: [IItemStack](/vanilla/api/items/IItemStack)
@@ -122,6 +125,7 @@ IItemStack.removeTooltip(regex as string) as void
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | regex | string | No Description Provided |
+
 ### setDisplayName
 
 Sets the display name of the ItemStack
@@ -135,6 +139,7 @@ IItemStack.setDisplayName(name as string) as IItemStack
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | name | string | New name of the stack. |
+
 ### weight
 
 Return Type: [MCWeightedItemStack](/vanilla/api/items/MCWeightedItemStack)
@@ -145,6 +150,7 @@ IItemStack.weight(weight as double) as MCWeightedItemStack
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | weight | double | No Description Provided |
+
 ### withDamage
 
 Sets the damage of the ItemStack
@@ -158,6 +164,7 @@ IItemStack.withDamage(damage as int) as IItemStack
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | damage | int | the new damage value |
+
 ### withTag
 
 Sets the tag for the ItemStack.
@@ -171,6 +178,7 @@ IItemStack.withTag(tag as IData) as IItemStack
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | tag | [IData](/vanilla/api/data/IData) | The tag to set. |
+
 
 ## Operators
 

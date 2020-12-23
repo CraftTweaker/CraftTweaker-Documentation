@@ -31,6 +31,7 @@ new MapData(map as IData[string]) as MapData
 |-----------|------|-------------|
 | map | [IData](/vanilla/api/data/IData)[string] | No Description Provided |
 
+
 ## Casters
 
 | Result type | Is Implicit |
@@ -52,6 +53,7 @@ MapData.contains(key as string) as boolean
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | key | string | The key to search for |
+
 ### getAt
 
 Retrieves the value associated with the key
@@ -65,6 +67,7 @@ MapData.getAt(key as string) as IData
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | key | string | The key to search for |
+
 ### merge
 
 Merges this map and the other map.
@@ -80,6 +83,7 @@ MapData.merge(other as MapData) as MapData
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | other | [MapData](/vanilla/api/data/MapData) | The other map. |
+
 ### put
 
 Adds sets the value for the given key or creates a new entry if it did not exist before.
@@ -94,6 +98,7 @@ MapData.put(key as string, value as IData) as IData
 |-----------|------|-------------|
 | key | string | The key to set the value for. |
 | value | [IData](/vanilla/api/data/IData) | The value to set. |
+
 ### putAll
 
 Adds all entries from the given map into this one.
@@ -108,6 +113,7 @@ MapData.putAll(map as IData[string]) as void
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | map | [IData](/vanilla/api/data/IData)[string] | The other entries to be added to this map |
+
 ### remove
 
 Removes the entry with the given key from the Map
@@ -121,6 +127,7 @@ MapData.remove(key as string) as void
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | key | string | The key of the entry to remove |
+
 
 ## Operators
 

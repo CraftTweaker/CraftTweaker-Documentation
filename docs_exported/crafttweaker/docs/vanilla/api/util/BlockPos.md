@@ -24,6 +24,7 @@ new BlockPos(x as int, y as int, z as int) as BlockPos
 | y | int | No description provided |
 | z | int | No description provided |
 
+
 ## Casters
 
 | Result type | Is Implicit |
@@ -45,6 +46,7 @@ new BlockPos(0, 1, 2).add(new BlockPos(3, 2, 1));
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | pos | [BlockPos](/vanilla/api/util/BlockPos) | other position to add |
+
 Adds the given values to this position, and returns a new position with the new values.
 
 Return Type: [BlockPos](/vanilla/api/util/BlockPos)
@@ -58,6 +60,21 @@ new BlockPos(0, 1, 2).add(50.21, -20.8, -25.2);
 | x | double | x value to add |
 | y | double | y value to add |
 | z | double | z value to add |
+
+Adds the given values to this position, and returns a new position with the new values.
+
+Return Type: [BlockPos](/vanilla/api/util/BlockPos)
+
+```zenscript
+BlockPos.add(x as int, y as int, z as int) as BlockPos
+new BlockPos(0, 1, 2).add(50, -20, -25);
+```
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| x | int | x value to add |
+| y | int | y value to add |
+| z | int | z value to add |
+
 ### crossProduct
 
 Creates a new BlockPos based on the cross product of this position, and the given position
@@ -71,6 +88,7 @@ new BlockPos(0, 1, 2).crossProduct(new BlockPos(5, 8, 2););
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | pos | [BlockPos](/vanilla/api/util/BlockPos) | BlockPos to cross product |
+
 ### distanceSq
 
 Gets the squared distance of this position to the specified BlockPos, using the center of the BlockPos
@@ -84,6 +102,7 @@ new BlockPos(0, 1, 2).distanceSq(new BlockPos(256, 128, 10););
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | to | [BlockPos](/vanilla/api/util/BlockPos) | BlockPos to check against |
+
 Gets the squared distance of this position to the specified BlockPos
 
 Return Type: double
@@ -96,6 +115,7 @@ new BlockPos(0, 1, 2).distanceSq(new BlockPos(256, 128, 10);, true);
 |-----------|------|-------------|
 | to | [BlockPos](/vanilla/api/util/BlockPos) | BlockPos to check against |
 | useCenter | boolean | should the center of the coordinate be used? (adds 0.5 to each value) |
+
 Gets the squared distance of this position to the specified coordinates
 
 Return Type: double
@@ -110,6 +130,7 @@ new BlockPos(0, 1, 2).distanceSq(500.25, 250.75, 100.20, false);
 | y | double | y position to check against |
 | z | double | z position to check against |
 | useCenter | boolean | should the center of the coordinate be used? (adds 0.5 to each value) |
+
 ### down
 
 Creates a new BlockPos based on this BlockPos that is one block lower than this BlockPos
@@ -130,6 +151,7 @@ BlockPos.down(n as int) as BlockPos
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | n | int | No Description Provided |
+
 ### east
 
 Creates a new BlockPos based on this BlockPos that is one block east of this BlockPos
@@ -151,6 +173,7 @@ new BlockPos(0, 1, 2).east(2);
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | n | int | No Description Provided |
+
 ### manhattanDistance
 
 Gets the Manhattan Distance of this pos compared to a different position
@@ -164,6 +187,7 @@ new BlockPos(0, 1, 2).manhattanDistance(new BlockPos(4, 5, 6));
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | other | [BlockPos](/vanilla/api/util/BlockPos) | other position to get the distance to |
+
 ### north
 
 Creates a new BlockPos based on this BlockPos that is one block north of this BlockPos
@@ -185,6 +209,7 @@ new BlockPos(0, 1, 2).north(10);
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | n | int | No Description Provided |
+
 ### offset
 
 Creates a new BlockPos based on this BlockPos that is one block offset of this BlockPos based on the given [Direction](/vanilla/api/util/Direction)
@@ -198,6 +223,7 @@ new BlockPos(0, 1, 2).offset(<direction:east>);
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | direction | [Direction](/vanilla/api/util/Direction) | No Description Provided |
+
 Creates a new BlockPos based on this BlockPos that is n block(s) offset of this BlockPos based on the given [Direction](/vanilla/api/util/Direction)
 
 Return Type: [BlockPos](/vanilla/api/util/BlockPos)
@@ -210,6 +236,7 @@ new BlockPos(0, 1, 2).offset(<direction:south>, 3);
 |-----------|------|-------------|
 | direction | [Direction](/vanilla/api/util/Direction) | No Description Provided |
 | n | int | No Description Provided |
+
 ### south
 
 Creates a new BlockPos based on this BlockPos that is one block south of this BlockPos
@@ -231,6 +258,7 @@ new BlockPos(0, 1, 2).south(12);
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | n | int | No Description Provided |
+
 ### subtract
 
 Subtracts two positions together and returns the result.
@@ -244,6 +272,7 @@ new BlockPos(0, 1, 2).subtract(new BlockPos(2, 1, 3));
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | pos | [BlockPos](/vanilla/api/util/BlockPos) | other position to remove |
+
 ### up
 
 Creates a new BlockPos based on this BlockPos that is one block higher than this BlockPos
@@ -265,6 +294,7 @@ new BlockPos(0, 1, 2).up(45);
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | n | int | No Description Provided |
+
 ### west
 
 Creates a new BlockPos based on this BlockPos that is one block west of this BlockPos
@@ -286,6 +316,7 @@ new BlockPos(0, 1, 2).west(120);
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | n | int | No Description Provided |
+
 ### withinDistance
 
 Checks if the given BlockPos is within the specified distance of this BlockPos (this uses the middle of the BlockPos)
@@ -300,6 +331,7 @@ new BlockPos(0, 1, 2).withinDistance(new BlockPos(80, 75, 54);, 10);
 |-----------|------|-------------|
 | pos | [BlockPos](/vanilla/api/util/BlockPos) | BlockPos to check if it is within the distance |
 | distance | double | distance to check within |
+
 
 ## Properties
 

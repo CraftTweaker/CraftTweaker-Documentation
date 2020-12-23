@@ -24,6 +24,7 @@ IIngredient.transform(transformer as IIngredientTransformer<IIngredient>) as MCI
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | transformer | [IIngredientTransformer](/vanilla/api/items/IIngredientTransformer)&lt;[IIngredient](/vanilla/api/items/IIngredient)&gt; | No Description Provided |
+
 ### transformCustom
 
 Return Type: [MCIngredientTransformed](/vanilla/api/items/MCIngredientTransformed)&lt;[IIngredient](/vanilla/api/items/IIngredient)&gt;
@@ -34,7 +35,8 @@ IIngredient.transformCustom(uid as string, function as Function<IItemStack,IItem
 | Parameter | Type | Description | Optional | DefaultValue |
 |-----------|------|-------------|----------|--------------|
 | uid | string | No Description Provided | false |  |
-| function | Function&lt;[IItemStack](/vanilla/api/items/IItemStack),[IItemStack](/vanilla/api/items/IItemStack)&gt; | No Description Provided | true |  |### transformDamage
+| function | Function&lt;[IItemStack](/vanilla/api/items/IItemStack),[IItemStack](/vanilla/api/items/IItemStack)&gt; | No Description Provided | true |  |
+### transformDamage
 
 Return Type: [MCIngredientTransformed](/vanilla/api/items/MCIngredientTransformed)&lt;[IIngredient](/vanilla/api/items/IIngredient)&gt;
 
@@ -43,7 +45,8 @@ IIngredient.transformDamage(amount as int) as MCIngredientTransformed<IIngredien
 ```
 | Parameter | Type | Description | Optional | DefaultValue |
 |-----------|------|-------------|----------|--------------|
-| amount | int | No Description Provided | true | 1 |### transformReplace
+| amount | int | No Description Provided | true | 1 |
+### transformReplace
 
 Return Type: [MCIngredientTransformed](/vanilla/api/items/MCIngredientTransformed)&lt;[IIngredient](/vanilla/api/items/IIngredient)&gt;
 
@@ -53,4 +56,5 @@ IIngredient.transformReplace(replaceWith as IItemStack) as MCIngredientTransform
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | replaceWith | [IItemStack](/vanilla/api/items/IItemStack) | No Description Provided |
+
 

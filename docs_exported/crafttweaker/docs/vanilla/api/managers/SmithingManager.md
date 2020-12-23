@@ -35,3 +35,4 @@ smithing.addRecipe("recipe_name", <item:minecraft:golden_apple>, <item:minecraft
 | base | [IIngredient](/vanilla/api/items/IIngredient) | The initial ingredient for the recipe. |
 | addition | [IIngredient](/vanilla/api/items/IIngredient) | The item added to the base item. |
 
+

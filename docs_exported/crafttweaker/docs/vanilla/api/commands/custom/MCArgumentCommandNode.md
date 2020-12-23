@@ -40,6 +40,7 @@ MCArgumentCommandNode.equals(o as Object) as boolean
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | o | Object | No Description Provided |
+
 ### getCustomSuggestions
 
 Return Type: [MCSuggestionProvider](/vanilla/api/commands/custom/MCSuggestionProvider)

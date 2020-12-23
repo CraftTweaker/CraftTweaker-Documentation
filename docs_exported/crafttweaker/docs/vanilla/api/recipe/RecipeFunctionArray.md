@@ -24,3 +24,4 @@ RecipeFunctionArray.process(usualOut as IItemStack, inputs as IItemStack[]) as I
 | usualOut | [IItemStack](/vanilla/api/items/IItemStack) | No Description Provided |
 | inputs | [IItemStack](/vanilla/api/items/IItemStack)[] | No Description Provided |
 
+

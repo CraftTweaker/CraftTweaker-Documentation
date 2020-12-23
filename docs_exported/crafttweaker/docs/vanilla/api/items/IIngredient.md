@@ -59,6 +59,7 @@ IIngredient.getRemainingItem(stack as IItemStack) as IItemStack
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | stack | [IItemStack](/vanilla/api/items/IItemStack) | The stack to provide for this ingredient. |
+
 ### matches
 
 Does the given stack match the ingredient?
@@ -72,6 +73,7 @@ IIngredient.matches(stack as IItemStack) as boolean
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | stack | [IItemStack](/vanilla/api/items/IItemStack) | The stack to check |
+
 Does the given stack match the ingredient?
 
 Return Type: boolean
@@ -83,6 +85,7 @@ IIngredient.matches(stack as IItemStack, ignoreDamage as boolean) as boolean
 |-----------|------|-------------|
 | stack | [IItemStack](/vanilla/api/items/IItemStack) | The stack to check |
 | ignoreDamage | boolean | Should damage be checked? |
+
 ### onlyDamaged
 
 Return Type: [MCIngredientConditioned](/vanilla/api/items/MCIngredientConditioned)&lt;[IIngredient](/vanilla/api/items/IIngredient)&gt;
@@ -102,6 +105,7 @@ IIngredient.onlyIf(uid as string, function as Predicate<IItemStack>) as MCIngred
 |-----------|------|-------------|----------|--------------|
 | uid | string | No Description Provided | false |  |
 | function | Predicate&lt;[IItemStack](/vanilla/api/items/IItemStack)&gt; | No Description Provided | true |  |
+
 ## Operators
 
 ### OR

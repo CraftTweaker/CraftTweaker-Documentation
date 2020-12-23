@@ -26,6 +26,7 @@ myMCFluid.makeStack(1000);
 |-----------|------|-------------|
 | amount | int | No Description Provided |
 
+
 ## Properties
 
 | Name | Type | Has Getter | Has Setter |

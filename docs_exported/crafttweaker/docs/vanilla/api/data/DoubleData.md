@@ -26,3 +26,4 @@ new DoubleData(internal as double) as DoubleData
 |-----------|------|-------------|
 | internal | double | No Description Provided |
 
+

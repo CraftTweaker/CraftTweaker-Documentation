@@ -35,6 +35,7 @@ furnace.addRecipe("wool2diamond", <item:diamond>, <tag:minecraft:wool>, 1.0, 0);
 | input | [IIngredient](/vanilla/api/items/IIngredient) | IIngredient input of the recipe |
 | xp | float | how much xp the player gets |
 | cookTime | int | how long it takes to cook |
+
 ### removeRecipe
 
 Removes a recipe based on it's output and input.
@@ -49,4 +50,5 @@ furnace.removeRecipe(<item:minecraft:diamond>, <tag:minecraft:wool>);
 |-----------|------|-------------|
 | output | [IItemStack](/vanilla/api/items/IItemStack) | IItemStack output of the recipe. |
 | input | [IIngredient](/vanilla/api/items/IIngredient) | IIngredient of the recipe to remove. |
+
 

@@ -32,6 +32,7 @@ MCRootCommandNode.equals(o as Object) as boolean
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | o | Object | No Description Provided |
+
 ### hashCode
 
 Return Type: int
@@ -50,6 +51,7 @@ MCRootCommandNode.isValidInput(input as string) as boolean
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | input | string | No Description Provided |
+
 ### toString
 
 Return Type: string

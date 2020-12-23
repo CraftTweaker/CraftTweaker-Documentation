@@ -20,6 +20,7 @@ new MCSingleRedirectModifier(fun as Function<MCCommandContext,MCCommandSource>) 
 |-----------|------|-------------|
 | fun | Function&lt;[MCCommandContext](/vanilla/api/commands/custom/MCCommandContext),[MCCommandSource](/vanilla/api/commands/custom/MCCommandSource)&gt; | No Description Provided |
 
+
 ## Casters
 
 | Result type | Is Implicit |
@@ -38,6 +39,7 @@ MCSingleRedirectModifier.apply(context as MCCommandContext) as MCCommandSource
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | context | [MCCommandContext](/vanilla/api/commands/custom/MCCommandContext) | No Description Provided |
+
 ### equals
 
 Return Type: boolean
@@ -48,6 +50,7 @@ MCSingleRedirectModifier.equals(o as Object) as boolean
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | o | Object | No Description Provided |
+
 ### hashCode
 
 Return Type: int

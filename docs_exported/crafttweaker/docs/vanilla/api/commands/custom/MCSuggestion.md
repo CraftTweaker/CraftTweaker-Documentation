@@ -28,6 +28,7 @@ MCSuggestion.apply(input as string) as string
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | input | string | No Description Provided |
+
 ### compareTo
 
 Return Type: int
@@ -38,6 +39,7 @@ MCSuggestion.compareTo(o as MCSuggestion) as int
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | o | [MCSuggestion](/vanilla/api/commands/custom/MCSuggestion) | No Description Provided |
+
 ### compareToIgnoreCase
 
 Return Type: int
@@ -48,6 +50,7 @@ MCSuggestion.compareToIgnoreCase(b as MCSuggestion) as int
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | b | [MCSuggestion](/vanilla/api/commands/custom/MCSuggestion) | No Description Provided |
+
 ### equals
 
 Return Type: boolean
@@ -58,6 +61,7 @@ MCSuggestion.equals(o as Object) as boolean
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | o | Object | No Description Provided |
+
 ### expandWith
 
 Return Type: [MCSuggestion](/vanilla/api/commands/custom/MCSuggestion)
@@ -69,6 +73,7 @@ MCSuggestion.expandWith(command as string, range as MCStringRange) as MCSuggesti
 |-----------|------|-------------|
 | command | string | No Description Provided |
 | range | [MCStringRange](/vanilla/api/commands/custom/MCStringRange) | No Description Provided |
+
 ### getRange
 
 Return Type: [MCStringRange](/vanilla/api/commands/custom/MCStringRange)

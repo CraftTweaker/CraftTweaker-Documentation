@@ -28,6 +28,7 @@ MCCommandContext.copyFor(source as MCCommandSource) as MCCommandContext
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | source | [MCCommandSource](/vanilla/api/commands/custom/MCCommandSource) | No Description Provided |
+
 ### equals
 
 Return Type: boolean
@@ -38,6 +39,7 @@ MCCommandContext.equals(o as Object) as boolean
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | o | Object | No Description Provided |
+
 ### getArgument
 
 Return Type: string
@@ -48,6 +50,7 @@ MCCommandContext.getArgument(name as string) as string
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | name | string | No Description Provided |
+
 ### getChild
 
 Return Type: [MCCommandContext](/vanilla/api/commands/custom/MCCommandContext)

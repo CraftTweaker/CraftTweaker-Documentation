@@ -30,6 +30,7 @@ MCStyle.equals(other as Object) as boolean
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | other | Object | No Description Provided |
+
 ### getBold
 
 Return Type: boolean
@@ -114,6 +115,7 @@ MCStyle.mergeStyle(style as MCStyle) as MCStyle
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | style | [MCStyle](/vanilla/api/util/text/MCStyle) | No Description Provided |
+
 ### setBold
 
 Return Type: [MCStyle](/vanilla/api/util/text/MCStyle)
@@ -124,6 +126,7 @@ MCStyle.setBold(boldIn as Boolean) as MCStyle
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | boldIn | Boolean | No Description Provided |
+
 ### setColor
 
 Return Type: [MCStyle](/vanilla/api/util/text/MCStyle)
@@ -134,6 +137,16 @@ MCStyle.setColor(colour as int) as MCStyle
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | colour | int | No Description Provided |
+
+Return Type: [MCStyle](/vanilla/api/util/text/MCStyle)
+
+```zenscript
+MCStyle.setColor(formatting as TextFormatting) as MCStyle
+```
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| formatting | [TextFormatting](/vanilla/api/util/text/TextFormatting) | No Description Provided |
+
 ### setFontId
 
 Return Type: [MCStyle](/vanilla/api/util/text/MCStyle)
@@ -144,6 +157,7 @@ MCStyle.setFontId(location as MCResourceLocation) as MCStyle
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | location | [MCResourceLocation](/vanilla/api/util/MCResourceLocation) | No Description Provided |
+
 ### setFormatting
 
 Return Type: [MCStyle](/vanilla/api/util/text/MCStyle)
@@ -154,6 +168,7 @@ MCStyle.setFormatting(formatting as TextFormatting) as MCStyle
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | formatting | [TextFormatting](/vanilla/api/util/text/TextFormatting) | No Description Provided |
+
 ### setInsertion
 
 Set a text to be inserted into Chat when the component is shift-clicked
@@ -166,6 +181,7 @@ MCStyle.setInsertion(insertion as string) as MCStyle
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | insertion | string | No Description Provided |
+
 ### setItalic
 
 Return Type: [MCStyle](/vanilla/api/util/text/MCStyle)
@@ -176,6 +192,7 @@ MCStyle.setItalic(italic as Boolean) as MCStyle
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | italic | Boolean | No Description Provided |
+
 ### setObfuscated
 
 Return Type: [MCStyle](/vanilla/api/util/text/MCStyle)
@@ -186,6 +203,7 @@ MCStyle.setObfuscated(obfuscated as Boolean) as MCStyle
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | obfuscated | Boolean | No Description Provided |
+
 ### setStrikethrough
 
 Return Type: [MCStyle](/vanilla/api/util/text/MCStyle)
@@ -196,6 +214,7 @@ MCStyle.setStrikethrough(strikethrough as Boolean) as MCStyle
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | strikethrough | Boolean | No Description Provided |
+
 ### setUnderlined
 
 Return Type: [MCStyle](/vanilla/api/util/text/MCStyle)
@@ -206,6 +225,7 @@ MCStyle.setUnderlined(underlined as Boolean) as MCStyle
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | underlined | Boolean | No Description Provided |
+
 ### toString
 
 Return Type: string

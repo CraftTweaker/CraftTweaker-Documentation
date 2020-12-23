@@ -28,6 +28,7 @@ MCCommandContextBuilder.build(input as string) as MCCommandContext
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | input | string | No Description Provided |
+
 ### copy
 
 Return Type: [MCCommandContextBuilder](/vanilla/api/commands/custom/MCCommandContextBuilder)
@@ -46,6 +47,7 @@ MCCommandContextBuilder.equals(o as Object) as boolean
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | o | Object | No Description Provided |
+
 ### findSuggestionContext
 
 Return Type: [MCSuggestionContext](/vanilla/api/commands/custom/MCSuggestionContext)
@@ -56,6 +58,7 @@ MCCommandContextBuilder.findSuggestionContext(cursor as int) as MCSuggestionCont
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | cursor | int | No Description Provided |
+
 ### getArguments
 
 Return Type: [MCParsedArgument](/vanilla/api/commands/custom/MCParsedArgument)[string]
@@ -155,6 +158,7 @@ MCCommandContextBuilder.withArgument(name as string, argument as MCParsedArgumen
 |-----------|------|-------------|
 | name | string | No Description Provided |
 | argument | [MCParsedArgument](/vanilla/api/commands/custom/MCParsedArgument) | No Description Provided |
+
 ### withChild
 
 Return Type: [MCCommandContextBuilder](/vanilla/api/commands/custom/MCCommandContextBuilder)
@@ -165,6 +169,7 @@ MCCommandContextBuilder.withChild(child as MCCommandContextBuilder) as MCCommand
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | child | [MCCommandContextBuilder](/vanilla/api/commands/custom/MCCommandContextBuilder) | No Description Provided |
+
 ### withCommand
 
 Return Type: [MCCommandContextBuilder](/vanilla/api/commands/custom/MCCommandContextBuilder)
@@ -175,6 +180,7 @@ MCCommandContextBuilder.withCommand(command as MCCommand) as MCCommandContextBui
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | command | [MCCommand](/vanilla/api/commands/custom/MCCommand) | No Description Provided |
+
 ### withNode
 
 Return Type: [MCCommandContextBuilder](/vanilla/api/commands/custom/MCCommandContextBuilder)
@@ -186,6 +192,7 @@ MCCommandContextBuilder.withNode(node as MCCommandNode, range as MCStringRange) 
 |-----------|------|-------------|
 | node | [MCCommandNode](/vanilla/api/commands/custom/MCCommandNode) | No Description Provided |
 | range | [MCStringRange](/vanilla/api/commands/custom/MCStringRange) | No Description Provided |
+
 ### withSource
 
 Return Type: [MCCommandContextBuilder](/vanilla/api/commands/custom/MCCommandContextBuilder)
@@ -196,6 +203,7 @@ MCCommandContextBuilder.withSource(source as MCCommandSource) as MCCommandContex
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | source | [MCCommandSource](/vanilla/api/commands/custom/MCCommandSource) | No Description Provided |
+
 
 ## Operators
 

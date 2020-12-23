@@ -28,6 +28,7 @@ new BoolData(internal as boolean) as BoolData
 |-----------|------|-------------|
 | internal | boolean | No Description Provided |
 
+
 ## Casters
 
 | Result type | Is Implicit |

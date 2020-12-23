@@ -40,6 +40,7 @@ MCLiteralCommandNode.equals(o as Object) as boolean
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | o | Object | No Description Provided |
+
 ### getLiteral
 
 Return Type: string
@@ -66,6 +67,7 @@ MCLiteralCommandNode.isValidInput(input as string) as boolean
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | input | string | No Description Provided |
+
 ### toString
 
 Return Type: string

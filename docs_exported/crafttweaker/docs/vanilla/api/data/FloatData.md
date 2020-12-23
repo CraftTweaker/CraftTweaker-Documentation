@@ -26,3 +26,4 @@ new FloatData(internal as float) as FloatData
 |-----------|------|-------------|
 | internal | float | No Description Provided |
 
+

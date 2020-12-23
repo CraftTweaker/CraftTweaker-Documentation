@@ -29,6 +29,7 @@ MCBlockState.getAllowedValuesForProperty(name as string) as stdlib.List<string>
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | name | string | No Description Provided |
+
 ### getProperties
 
 Return Type: string[string]
@@ -55,6 +56,7 @@ MCBlockState.getPropertyValue(name as string) as string
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | name | string | No Description Provided |
+
 ### hasProperty
 
 Return Type: boolean
@@ -65,6 +67,7 @@ MCBlockState.hasProperty(name as string) as boolean
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | name | string | No Description Provided |
+
 ### withProperty
 
 Return Type: [MCBlockState](/vanilla/api/blocks/MCBlockState)
@@ -76,6 +79,7 @@ MCBlockState.withProperty(name as string, value as string) as MCBlockState
 |-----------|------|-------------|
 | name | string | No Description Provided |
 | value | string | No Description Provided |
+
 
 ## Properties
 

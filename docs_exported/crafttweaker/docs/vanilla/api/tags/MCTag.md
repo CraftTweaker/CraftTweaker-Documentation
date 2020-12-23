@@ -33,11 +33,21 @@ MCTag implements the following interfaces. That means all methods defined in the
 Return Type: void
 
 ```zenscript
+MCTag.add(items as stdlib.List<T>) as void
+```
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| items | stdlib.List&lt;T&gt; | No Description Provided |
+
+Return Type: void
+
+```zenscript
 MCTag.add(items as T[]) as void
 ```
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | items | T[] | No Description Provided |
+
 ### contains
 
 Return Type: boolean
@@ -48,6 +58,7 @@ MCTag.contains(element as T) as boolean
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | element | T | No Description Provided |
+
 ### exists
 
 Return Type: boolean
@@ -85,11 +96,21 @@ myMCTag.getManager();
 Return Type: void
 
 ```zenscript
+MCTag.remove(items as stdlib.List<T>) as void
+```
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| items | stdlib.List&lt;T&gt; | No Description Provided |
+
+Return Type: void
+
+```zenscript
 MCTag.remove(items as T[]) as void
 ```
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | items | T[] | No Description Provided |
+
 
 ## Operators
 

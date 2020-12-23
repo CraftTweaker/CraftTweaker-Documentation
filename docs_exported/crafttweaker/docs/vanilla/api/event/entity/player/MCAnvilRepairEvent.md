@@ -59,6 +59,7 @@ MCAnvilRepairEvent.setBreakChance(breakChance as float) as void
 |-----------|------|-------------|
 | breakChance | float | No Description Provided |
 
+
 ## Properties
 
 | Name | Type | Has Getter | Has Setter |

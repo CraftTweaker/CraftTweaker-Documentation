@@ -26,6 +26,7 @@ MCWorld.getBiome(pos as BlockPos) as MCBiome
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | pos | [BlockPos](/vanilla/api/util/BlockPos) | No Description Provided |
+
 ### getBlockState
 
 Return Type: [MCBlockState](/vanilla/api/blocks/MCBlockState)
@@ -36,6 +37,7 @@ MCWorld.getBlockState(pos as BlockPos) as MCBlockState
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | pos | [BlockPos](/vanilla/api/util/BlockPos) | No Description Provided |
+
 ### getRedstonePower
 
 Return Type: int
@@ -47,6 +49,7 @@ MCWorld.getRedstonePower(pos as BlockPos, direction as Direction) as int
 |-----------|------|-------------|
 | pos | [BlockPos](/vanilla/api/util/BlockPos) | No Description Provided |
 | direction | [Direction](/vanilla/api/util/Direction) | No Description Provided |
+
 ### getRedstonePowerFromNeighbors
 
 Return Type: int
@@ -57,6 +60,7 @@ MCWorld.getRedstonePowerFromNeighbors(pos as BlockPos) as int
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | pos | [BlockPos](/vanilla/api/util/BlockPos) | No Description Provided |
+
 ### getStrongPower
 
 Return Type: int
@@ -67,6 +71,7 @@ MCWorld.getStrongPower(pos as BlockPos) as int
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | pos | [BlockPos](/vanilla/api/util/BlockPos) | No Description Provided |
+
 ### getTileData
 
 Return Type: [IData](/vanilla/api/data/IData)
@@ -77,6 +82,7 @@ MCWorld.getTileData(pos as BlockPos) as IData
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | pos | [BlockPos](/vanilla/api/util/BlockPos) | No Description Provided |
+
 ### isBlockPowered
 
 Return Type: boolean
@@ -87,6 +93,7 @@ MCWorld.isBlockPowered(pos as BlockPos) as boolean
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | pos | [BlockPos](/vanilla/api/util/BlockPos) | No Description Provided |
+
 ### isRainingAt
 
 Return Type: boolean
@@ -97,6 +104,7 @@ MCWorld.isRainingAt(pos as BlockPos) as boolean
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | pos | [BlockPos](/vanilla/api/util/BlockPos) | No Description Provided |
+
 ### isRemote
 
 Return Type: boolean
@@ -116,6 +124,7 @@ MCWorld.setBlockState(pos as BlockPos, state as MCBlockState) as boolean
 |-----------|------|-------------|
 | pos | [BlockPos](/vanilla/api/util/BlockPos) | No Description Provided |
 | state | [MCBlockState](/vanilla/api/blocks/MCBlockState) | No Description Provided |
+
 
 ## Properties
 

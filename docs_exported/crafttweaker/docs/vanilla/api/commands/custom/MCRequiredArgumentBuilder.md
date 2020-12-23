@@ -40,6 +40,7 @@ MCRequiredArgumentBuilder.equals(o as Object) as boolean
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | o | Object | No Description Provided |
+
 ### executes
 
 Return Type: [MCRequiredArgumentBuilder](/vanilla/api/commands/custom/MCRequiredArgumentBuilder)
@@ -50,6 +51,7 @@ MCRequiredArgumentBuilder.executes(command as MCCommand) as MCRequiredArgumentBu
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | command | [MCCommand](/vanilla/api/commands/custom/MCCommand) | No Description Provided |
+
 ### fork
 
 Return Type: [MCRequiredArgumentBuilder](/vanilla/api/commands/custom/MCRequiredArgumentBuilder)
@@ -61,6 +63,7 @@ MCRequiredArgumentBuilder.fork(target as MCCommandNode, modifier as MCRedirectMo
 |-----------|------|-------------|
 | target | [MCCommandNode](/vanilla/api/commands/custom/MCCommandNode) | No Description Provided |
 | modifier | [MCRedirectModifier](/vanilla/api/commands/custom/MCRedirectModifier) | No Description Provided |
+
 ### forward
 
 Return Type: [MCRequiredArgumentBuilder](/vanilla/api/commands/custom/MCRequiredArgumentBuilder)
@@ -73,6 +76,7 @@ MCRequiredArgumentBuilder.forward(target as MCCommandNode, modifier as MCRedirec
 | target | [MCCommandNode](/vanilla/api/commands/custom/MCCommandNode) | No Description Provided |
 | modifier | [MCRedirectModifier](/vanilla/api/commands/custom/MCRedirectModifier) | No Description Provided |
 | fork | boolean | No Description Provided |
+
 ### getArguments
 
 Return Type: Collection&lt;[MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)&gt;
@@ -123,6 +127,7 @@ MCRequiredArgumentBuilder.redirect(target as MCCommandNode) as MCRequiredArgumen
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | target | [MCCommandNode](/vanilla/api/commands/custom/MCCommandNode) | No Description Provided |
+
 Return Type: [MCRequiredArgumentBuilder](/vanilla/api/commands/custom/MCRequiredArgumentBuilder)
 
 ```zenscript
@@ -132,6 +137,7 @@ MCRequiredArgumentBuilder.redirect(target as MCCommandNode, modifier as MCSingle
 |-----------|------|-------------|
 | target | [MCCommandNode](/vanilla/api/commands/custom/MCCommandNode) | No Description Provided |
 | modifier | [MCSingleRedirectModifier](/vanilla/api/commands/custom/MCSingleRedirectModifier) | No Description Provided |
+
 ### requires
 
 Return Type: [MCRequiredArgumentBuilder](/vanilla/api/commands/custom/MCRequiredArgumentBuilder)
@@ -142,6 +148,7 @@ MCRequiredArgumentBuilder.requires(requirement as Predicate<MCCommandSource>) as
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | requirement | Predicate&lt;[MCCommandSource](/vanilla/api/commands/custom/MCCommandSource)&gt; | No Description Provided |
+
 ### suggests
 
 Return Type: [MCRequiredArgumentBuilder](/vanilla/api/commands/custom/MCRequiredArgumentBuilder)
@@ -152,7 +159,17 @@ MCRequiredArgumentBuilder.suggests(provider as MCSuggestionProvider) as MCRequir
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | provider | [MCSuggestionProvider](/vanilla/api/commands/custom/MCSuggestionProvider) | No Description Provided |
+
 ### then
+
+Return Type: [MCRequiredArgumentBuilder](/vanilla/api/commands/custom/MCRequiredArgumentBuilder)
+
+```zenscript
+MCRequiredArgumentBuilder.then(argument as MCCommandNode) as MCRequiredArgumentBuilder
+```
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| argument | [MCCommandNode](/vanilla/api/commands/custom/MCCommandNode) | No Description Provided |
 
 Return Type: [MCRequiredArgumentBuilder](/vanilla/api/commands/custom/MCRequiredArgumentBuilder)
 
@@ -162,6 +179,7 @@ MCRequiredArgumentBuilder.then(argument as MCRequiredArgumentBuilder) as MCRequi
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | argument | [MCRequiredArgumentBuilder](/vanilla/api/commands/custom/MCRequiredArgumentBuilder) | No Description Provided |
+
 ### toString
 
 Return Type: string

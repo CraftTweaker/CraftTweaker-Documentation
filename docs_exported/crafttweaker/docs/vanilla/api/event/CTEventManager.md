@@ -39,3 +39,4 @@ CTEventManager.register<crafttweaker.api.event.MCEvent>((event) => {
 |-----------|------|-------------|
 | consumer | Consumer&lt;T&gt; | The event handler as consumer |
 | T | [MCEvent](/vanilla/api/event/MCEvent) | The type of the event |
+

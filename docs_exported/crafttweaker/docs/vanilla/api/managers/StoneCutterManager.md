@@ -34,3 +34,4 @@ stoneCutter.addRecipe("recipe_name", <item:minecraft:grass>, <tag:minecraft:wool
 | output | [IItemStack](/vanilla/api/items/IItemStack) | output [IItemStack](/vanilla/api/items/IItemStack) |
 | input | [IIngredient](/vanilla/api/items/IIngredient) | input [IIngredient](/vanilla/api/items/IIngredient) |
 
+

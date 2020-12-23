@@ -26,11 +26,23 @@ Checks if a tag already exists. Does the same as calling `.exists` on a tag dire
 Return Type: boolean
 
 ```zenscript
+TagManager.exists(location as MCResourceLocation) as boolean
+```
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| location | [MCResourceLocation](/vanilla/api/util/MCResourceLocation) | The resource location to check for |
+
+Checks if a tag already exists. Does the same as calling `.exists` on a tag directly
+
+Return Type: boolean
+
+```zenscript
 TagManager.exists(name as string) as boolean
 ```
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | name | string | The resource location to check for |
+
 ### getAllTags
 
 Retrieves a list of all tags currently registered.
@@ -53,7 +65,23 @@ TagManager.getAllTagsFor(element as T) as stdlib.List<MCTag<T>>
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | element | T | The element whose tags should be returned |
+
 ### getTag
+
+Retrieves a tag by its name.
+ Will also be called by the BEP.
+ <p>
+ Note that this method does _not_ yet create the tag if it does not exist.
+ Adding something to the object created by this tag will create it for the game.
+
+Return Type: [MCTag](/vanilla/api/tags/MCTag)&lt;T&gt;
+
+```zenscript
+TagManager.getTag(location as MCResourceLocation) as MCTag<T>
+```
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| location | [MCResourceLocation](/vanilla/api/util/MCResourceLocation) | The Resource location of the tag |
 
 Retrieves a tag by its name.
  Will also be called by the BEP.
@@ -69,6 +97,7 @@ TagManager.getTag(name as string) as MCTag<T>
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | name | string | The Resource location of the tag |
+
 ### getTagFolder
 
 Get the tag type. In a Bracket call, this will used to determine which TagManager to use.

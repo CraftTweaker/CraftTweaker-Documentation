@@ -20,6 +20,7 @@ new MCSuggestionProvider(fun as BiFunction<MCCommandContext,MCSuggestionsBuilder
 |-----------|------|-------------|
 | fun | BiFunction&lt;[MCCommandContext](/vanilla/api/commands/custom/MCCommandContext),[MCSuggestionsBuilder](/vanilla/api/commands/custom/MCSuggestionsBuilder),[MCSuggestions](/vanilla/api/commands/custom/MCSuggestions)&gt; | No Description Provided |
 
+
 ## Casters
 
 | Result type | Is Implicit |
@@ -38,6 +39,7 @@ MCSuggestionProvider.equals(o as Object) as boolean
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | o | Object | No Description Provided |
+
 ### getSuggestions
 
 Return Type: [MCSuggestions](/vanilla/api/commands/custom/MCSuggestions)
@@ -49,6 +51,7 @@ MCSuggestionProvider.getSuggestions(context as MCCommandContext, builder as MCSu
 |-----------|------|-------------|
 | context | [MCCommandContext](/vanilla/api/commands/custom/MCCommandContext) | No Description Provided |
 | builder | [MCSuggestionsBuilder](/vanilla/api/commands/custom/MCSuggestionsBuilder) | No Description Provided |
+
 ### hashCode
 
 Return Type: int

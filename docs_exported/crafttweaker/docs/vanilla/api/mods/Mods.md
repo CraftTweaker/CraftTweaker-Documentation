@@ -28,6 +28,7 @@ loadedMods.getMod("minecraft");
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | modid | string | No Description Provided |
+
 ### isModLoaded
 
 Checks if a mod is laoded
@@ -41,6 +42,7 @@ loadedMods.isModLoaded("minecraft");
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | modid | string | modid to check |
+
 
 ## Properties
 

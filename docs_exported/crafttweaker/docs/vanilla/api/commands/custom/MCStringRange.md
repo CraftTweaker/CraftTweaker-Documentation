@@ -22,6 +22,7 @@ MCStringRange.at(pos as int) as MCStringRange
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | pos | int | No Description Provided |
+
 ### between
 
 Return Type: [MCStringRange](/vanilla/api/commands/custom/MCStringRange)
@@ -33,6 +34,7 @@ MCStringRange.between(start as int, end as int) as MCStringRange
 |-----------|------|-------------|
 | start | int | No Description Provided |
 | end | int | No Description Provided |
+
 ### encompassing
 
 Return Type: [MCStringRange](/vanilla/api/commands/custom/MCStringRange)
@@ -44,6 +46,7 @@ MCStringRange.encompassing(a as MCStringRange, b as MCStringRange) as MCStringRa
 |-----------|------|-------------|
 | a | [MCStringRange](/vanilla/api/commands/custom/MCStringRange) | No Description Provided |
 | b | [MCStringRange](/vanilla/api/commands/custom/MCStringRange) | No Description Provided |
+
 ## Methods
 
 ### equals
@@ -56,6 +59,7 @@ MCStringRange.equals(o as Object) as boolean
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | o | Object | No Description Provided |
+
 ### getEnd
 
 Return Type: int
@@ -74,6 +78,16 @@ MCStringRange.getFrom(reader as MCImmutableStringReader) as string
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | reader | [MCImmutableStringReader](/vanilla/api/commands/custom/MCImmutableStringReader) | No Description Provided |
+
+Return Type: string
+
+```zenscript
+MCStringRange.getFrom(string as string) as string
+```
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| string | string | No Description Provided |
+
 ### getLength
 
 Return Type: int

@@ -34,6 +34,7 @@ MCPlayerEntity.drop(p_225609_1_ as boolean) as boolean
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | p_225609_1_ | boolean | No Description Provided |
+
 ### getLuck
 
 Return Type: float
@@ -124,6 +125,7 @@ MCPlayerEntity.unlockRecipes(p_193102_1_ as MCResourceLocation[]) as void
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | p_193102_1_ | [MCResourceLocation](/vanilla/api/util/MCResourceLocation)[] | No Description Provided |
+
 ### wakeUp
 
 Return Type: void

@@ -84,6 +84,7 @@
             "MCEntityEvent": "vanilla/api/event/entity/MCEntityEvent.md",
             "MCLivingEvent": "vanilla/api/event/entity/MCLivingEvent.md",
             "Player": {
+              "MCAnvilRepairEvent": "vanilla/api/event/entity/player/MCAnvilRepairEvent.md",
               "MCItemCraftedEvent": "vanilla/api/event/entity/player/MCItemCraftedEvent.md",
               "MCItemPickupEvent": "vanilla/api/event/entity/player/MCItemPickupEvent.md",
               "MCItemSmeltedEvent": "vanilla/api/event/entity/player/MCItemSmeltedEvent.md",
@@ -98,9 +99,6 @@
                 "MCRightClickItemEvent": "vanilla/api/event/entity/player/interact/MCRightClickItemEvent.md"
               }
             }
-          },
-          "Player": {
-            "MCAnvilRepairEvent": "vanilla/api/event/player/MCAnvilRepairEvent.md"
           }
         },
         "Fluid": {

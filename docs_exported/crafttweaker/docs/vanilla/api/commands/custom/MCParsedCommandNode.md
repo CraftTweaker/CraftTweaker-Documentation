@@ -28,6 +28,7 @@ MCParsedCommandNode.equals(o as Object) as boolean
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | o | Object | No Description Provided |
+
 ### getNode
 
 Return Type: [MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)

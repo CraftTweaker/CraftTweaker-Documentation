@@ -26,6 +26,7 @@ new StringData(internal as string) as StringData
 |-----------|------|-------------|
 | internal | string | No Description Provided |
 
+
 ## Operators
 
 ### ADD

@@ -20,6 +20,7 @@ new MCCommand(fun as Function<MCCommandContext,Integer>) as MCCommand
 |-----------|------|-------------|
 | fun | Function&lt;[MCCommandContext](/vanilla/api/commands/custom/MCCommandContext),Integer&gt; | No Description Provided |
 
+
 ## Casters
 
 | Result type | Is Implicit |
@@ -38,6 +39,7 @@ MCCommand.equals(o as Object) as boolean
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | o | Object | No Description Provided |
+
 ### hashCode
 
 Return Type: int
@@ -56,6 +58,7 @@ MCCommand.run(context as MCCommandContext) as int
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | context | [MCCommandContext](/vanilla/api/commands/custom/MCCommandContext) | No Description Provided |
+
 ### toString
 
 Return Type: string

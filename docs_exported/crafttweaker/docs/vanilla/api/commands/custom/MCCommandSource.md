@@ -62,6 +62,7 @@ MCCommandSource.hasPermissionLevel(p_197034_1_ as int) as boolean
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | p_197034_1_ | int | No Description Provided |
+
 ### isPlayer
 
 Return Type: boolean
@@ -80,6 +81,7 @@ MCCommandSource.sendErrorMessage(message as string) as void
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | message | string | No Description Provided |
+
 ### sendFeedback
 
 Return Type: void
@@ -91,6 +93,7 @@ MCCommandSource.sendFeedback(feedback as string, allowLogging as boolean) as voi
 |-----------|------|-------------|
 | feedback | string | No Description Provided |
 | allowLogging | boolean | No Description Provided |
+
 ### withFeedbackDisabled
 
 Return Type: [MCCommandSource](/vanilla/api/commands/custom/MCCommandSource)
@@ -109,6 +112,7 @@ MCCommandSource.withMinPermissionLevel(p_197026_1_ as int) as MCCommandSource
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | p_197026_1_ | int | No Description Provided |
+
 ### withPermissionLevel
 
 Return Type: [MCCommandSource](/vanilla/api/commands/custom/MCCommandSource)
@@ -119,4 +123,5 @@ MCCommandSource.withPermissionLevel(p_197033_1_ as int) as MCCommandSource
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | p_197033_1_ | int | No Description Provided |
+
 

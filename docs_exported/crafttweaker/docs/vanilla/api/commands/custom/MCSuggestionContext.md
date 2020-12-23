@@ -28,6 +28,7 @@ MCSuggestionContext.equals(o as Object) as boolean
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | o | Object | No Description Provided |
+
 ### getParent
 
 Return Type: [MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)

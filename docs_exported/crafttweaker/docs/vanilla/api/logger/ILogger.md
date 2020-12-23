@@ -27,6 +27,7 @@ logger.debug("message");
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | message | string | message to be logged. |
+
 ### error
 
 Logs an error message.
@@ -40,6 +41,7 @@ logger.error("message");
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | message | string | message to be logged. |
+
 ### info
 
 Logs an info message.
@@ -53,6 +55,7 @@ logger.info("message");
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | message | string | message to be logged. |
+
 ### trace
 
 Logs a trace message.
@@ -66,6 +69,7 @@ logger.trace("message");
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | message | string | message to be logged |
+
 ### warning
 
 Logs a warning message.
@@ -79,4 +83,5 @@ logger.warning("message");
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | message | string | message to be logged. |
+
 

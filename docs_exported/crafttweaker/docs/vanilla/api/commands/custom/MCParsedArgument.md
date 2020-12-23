@@ -28,6 +28,7 @@ MCParsedArgument.equals(o as Object) as boolean
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | o | Object | No Description Provided |
+
 ### getRange
 
 Return Type: [MCStringRange](/vanilla/api/commands/custom/MCStringRange)

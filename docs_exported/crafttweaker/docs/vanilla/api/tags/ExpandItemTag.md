@@ -26,6 +26,7 @@ MCTag.add(items as stdlib.List<IItemStack>) as void
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | items | stdlib.List&lt;[IItemStack](/vanilla/api/items/IItemStack)&gt; | No Description Provided |
+
 ### asIData
 
 Return Type: [IData](/vanilla/api/data/IData)

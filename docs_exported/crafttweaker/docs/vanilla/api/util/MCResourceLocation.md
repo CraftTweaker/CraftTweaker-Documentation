@@ -25,6 +25,7 @@ new MCResourceLocation(namespace as string, path as string) as MCResourceLocatio
 | namespace | string | Usually a ModId |
 | path | string | May only contain lower-cased alphanumeric values, as well as / and _ |
 
+
 ## Casters
 
 | Result type | Is Implicit |
@@ -52,6 +53,7 @@ MCResourceLocation.compareTo(other as MCResourceLocation) as int
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | other | [MCResourceLocation](/vanilla/api/util/MCResourceLocation) | No Description Provided |
+
 ### equals
 
 Return Type: boolean
@@ -62,6 +64,7 @@ MCResourceLocation.equals(other as Object) as boolean
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | other | Object | No Description Provided |
+
 ### getNamespace
 
 Return Type: string

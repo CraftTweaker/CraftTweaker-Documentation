@@ -47,6 +47,7 @@ MCEvent.setCanceled(cancel as boolean) as void
 |-----------|------|-------------|
 | cancel | boolean | No Description Provided |
 
+
 ## Properties
 
 | Name | Type | Has Getter | Has Setter |

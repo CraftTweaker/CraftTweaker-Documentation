@@ -22,6 +22,7 @@ CustomCommands.argument(name as string) as MCRequiredArgumentBuilder
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | name | string | No Description Provided |
+
 ### literal
 
 Return Type: [MCLiteralArgumentBuilder](/vanilla/api/commands/custom/MCLiteralArgumentBuilder)
@@ -32,6 +33,7 @@ CustomCommands.literal(name as string) as MCLiteralArgumentBuilder
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | name | string | No Description Provided |
+
 ### registerCommand
 
 Return Type: void
@@ -42,3 +44,4 @@ CustomCommands.registerCommand(builder as MCLiteralArgumentBuilder) as void
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | builder | [MCLiteralArgumentBuilder](/vanilla/api/commands/custom/MCLiteralArgumentBuilder) | No Description Provided |
+

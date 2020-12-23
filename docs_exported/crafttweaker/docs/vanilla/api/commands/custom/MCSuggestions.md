@@ -23,6 +23,7 @@ MCSuggestions.create(command as string, suggestions as Collection<MCSuggestion>)
 |-----------|------|-------------|
 | command | string | No Description Provided |
 | suggestions | Collection&lt;[MCSuggestion](/vanilla/api/commands/custom/MCSuggestion)&gt; | No Description Provided |
+
 ### empty
 
 Return Type: [MCSuggestions](/vanilla/api/commands/custom/MCSuggestions)
@@ -42,6 +43,7 @@ MCSuggestions.merge(command as string, input as Collection<MCSuggestions>) as MC
 |-----------|------|-------------|
 | command | string | No Description Provided |
 | input | Collection&lt;[MCSuggestions](/vanilla/api/commands/custom/MCSuggestions)&gt; | No Description Provided |
+
 ## Casters
 
 | Result type | Is Implicit |
@@ -60,6 +62,7 @@ MCSuggestions.equals(o as Object) as boolean
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | o | Object | No Description Provided |
+
 ### getList
 
 Return Type: stdlib.List&lt;[MCSuggestion](/vanilla/api/commands/custom/MCSuggestion)&gt;

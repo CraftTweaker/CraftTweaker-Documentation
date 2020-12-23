@@ -33,6 +33,7 @@ new ListData(["Hello", "World"]).add("today");
 | value | [IData](/vanilla/api/data/IData) | The value to add to the list |
 
 
+
 Return Type: void
 
 ```zenscript
@@ -43,6 +44,7 @@ new ListData(["Hello", "World"]).add(1, "beautiful");
 |-----------|------|-------------|
 | index | int | The index to add to. Subsequent items will be moved one index higher |
 | value | [IData](/vanilla/api/data/IData) | The value to add to the list |
+
 ### clear
 
 Removes every element in the list
@@ -66,6 +68,7 @@ new ListData(["Hello", "World"]).getAt(0);
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | index | int | The index (0-based) |
+
 ### remove
 
 Removes the [IData](/vanilla/api/data/IData) stored at the given index.
@@ -79,6 +82,7 @@ new ListData(["Hello", "World"]).remove(0);
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | index | int | The index (0-based) |
+
 ### setAt
 
 Sets the item at the provided index to the given value
@@ -93,6 +97,7 @@ new ListData(["Hello", "World"]).setAt(0, "Bye");
 |-----------|------|-------------|
 | index | int | The index to set (0-based) |
 | value | [IData](/vanilla/api/data/IData) | The new Value |
+
 
 ## Properties
 

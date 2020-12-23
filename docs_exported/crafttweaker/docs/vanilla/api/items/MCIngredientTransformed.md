@@ -35,6 +35,7 @@ MCIngredientTransformed.matches(stack as IItemStack, ignoreDamage as boolean) as
 | stack | [IItemStack](/vanilla/api/items/IItemStack) | No Description Provided |
 | ignoreDamage | boolean | No Description Provided |
 
+
 ## Properties
 
 | Name | Type | Has Getter | Has Setter |

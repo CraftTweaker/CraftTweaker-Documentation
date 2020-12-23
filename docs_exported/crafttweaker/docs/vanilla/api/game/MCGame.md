@@ -28,6 +28,7 @@ MCGame.localize(translationKey as string) as string
 |-----------|------|-------------|
 | translationKey | string | No Description Provided |
 
+
 ## Properties
 
 | Name | Type | Has Getter | Has Setter |
