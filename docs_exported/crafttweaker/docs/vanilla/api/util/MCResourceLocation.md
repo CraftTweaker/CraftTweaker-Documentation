@@ -29,10 +29,19 @@ new MCResourceLocation(namespace as string, path as string) as MCResourceLocatio
 
 | Result type | Is Implicit |
 |-------------|-------------|
+| [IData](/vanilla/api/data/IData) | true |
 | string | true |
 
 ## Methods
 
+### asData
+
+Return Type: [IData](/vanilla/api/data/IData)
+
+```zenscript
+MCResourceLocation.asData() as IData
+myMCResourceLocation.asData();
+```
 ### compareTo
 
 Return Type: int

@@ -88,7 +88,7 @@ BracketHandlers.getDirectionAxis("x");
 Gets the effect based on registry name. Throws an error if it can't find the effect.
 
 Returns: The found effect
-Return Type: [MCPotionEffect](/vanilla/api/potion/MCPotionEffect)
+Return Type: [MCPotionEffect](/vanilla/api/potions/MCPotionEffect)
 
 ```zenscript
 <effect:minecraft:haste>
@@ -165,7 +165,7 @@ BracketHandlers.getItem("minecraft:dirt");
 | tokens | string | The item's resource location |
 ### getPotion
 
-Return Type: [MCPotion](/vanilla/api/potion/MCPotion)
+Return Type: [MCPotion](/vanilla/api/potions/MCPotion)
 
 ```zenscript
 BracketHandlers.getPotion(tokens as string) as MCPotion

@@ -82,6 +82,22 @@
           "MCEntityEvent": "vanilla/api/event/MCEntityEvent.md",
           "MCEvent": "vanilla/api/event/MCEvent.md",
           "MCLivingEvent": "vanilla/api/event/MCLivingEvent.md",
+          "Entity": {
+            "Player": {
+              "MCItemCraftedEvent": "vanilla/api/event/entity/player/MCItemCraftedEvent.md",
+              "MCItemPickupEvent": "vanilla/api/event/entity/player/MCItemPickupEvent.md",
+              "MCItemSmeltedEvent": "vanilla/api/event/entity/player/MCItemSmeltedEvent.md",
+              "MCPlayerLoggedInEvent": "vanilla/api/event/entity/player/MCPlayerLoggedInEvent.md",
+              "MCPlayerLoggedOutEvent": "vanilla/api/event/entity/player/MCPlayerLoggedOutEvent.md",
+              "MCPlayerRespawnEvent": "vanilla/api/event/entity/player/MCPlayerRespawnEvent.md",
+              "Interact": {
+                "MCPlayerInteractEvent": "vanilla/api/event/entity/player/interact/MCPlayerInteractEvent.md",
+                "MCRightClickBlockEvent": "vanilla/api/event/entity/player/interact/MCRightClickBlockEvent.md",
+                "MCRightClickEmptyEvent": "vanilla/api/event/entity/player/interact/MCRightClickEmptyEvent.md",
+                "MCRightClickItemEvent": "vanilla/api/event/entity/player/interact/MCRightClickItemEvent.md"
+              }
+            }
+          },
           "Player": {
             "MCAnvilRepairEvent": "vanilla/api/event/player/MCAnvilRepairEvent.md",
             "MCPlayerEvent": "vanilla/api/event/player/MCPlayerEvent.md"
@@ -131,10 +147,10 @@
           "ModInfo": "vanilla/api/mods/ModInfo.md",
           "Mods": "vanilla/api/mods/Mods.md"
         },
-        "Potion": {
-          "MCPotion": "vanilla/api/potion/MCPotion.md",
-          "MCPotionEffect": "vanilla/api/potion/MCPotionEffect.md",
-          "MCPotionEffectInstance": "vanilla/api/potion/MCPotionEffectInstance.md"
+        "Potions": {
+          "MCPotion": "vanilla/api/potions/MCPotion.md",
+          "MCPotionEffect": "vanilla/api/potions/MCPotionEffect.md",
+          "MCPotionEffectInstance": "vanilla/api/potions/MCPotionEffectInstance.md"
         },
         "Recipe": {
           "RecipeFilter": "vanilla/api/recipe/RecipeFilter.md",

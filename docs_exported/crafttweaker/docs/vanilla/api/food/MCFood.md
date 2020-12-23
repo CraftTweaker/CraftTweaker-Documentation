@@ -32,7 +32,7 @@ MCFood.addEffect(effect as MCPotionEffectInstance, probability as float) as MCFo
 ```
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| effect | [MCPotionEffectInstance](/vanilla/api/potion/MCPotionEffectInstance) | No Description Provided |
+| effect | [MCPotionEffectInstance](/vanilla/api/potions/MCPotionEffectInstance) | No Description Provided |
 | probability | float | No Description Provided |
 ### clearEffects
 
@@ -51,7 +51,7 @@ MCFood.removeEffect(effect as MCPotionEffectInstance) as MCFood
 ```
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| effect | [MCPotionEffectInstance](/vanilla/api/potion/MCPotionEffectInstance) | No Description Provided |
+| effect | [MCPotionEffectInstance](/vanilla/api/potions/MCPotionEffectInstance) | No Description Provided |
 ### setCanEatWhenFull
 
 Return Type: [MCFood](/vanilla/api/food/MCFood)

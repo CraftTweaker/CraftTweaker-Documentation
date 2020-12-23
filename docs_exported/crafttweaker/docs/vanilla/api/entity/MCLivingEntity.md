@@ -25,7 +25,7 @@ MCLivingEntity.addPotionEffect(effectInstanceIn as MCPotionEffectInstance) as bo
 ```
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| effectInstanceIn | [MCPotionEffectInstance](/vanilla/api/potion/MCPotionEffectInstance) | No Description Provided |
+| effectInstanceIn | [MCPotionEffectInstance](/vanilla/api/potions/MCPotionEffectInstance) | No Description Provided |
 ### attackEntityAsMob
 
 Return Type: boolean
@@ -90,17 +90,17 @@ myMCLivingEntity.getAIMoveSpeed();
 ```
 ### getActivePotionEffect
 
-Return Type: [MCPotionEffectInstance](/vanilla/api/potion/MCPotionEffectInstance)
+Return Type: [MCPotionEffectInstance](/vanilla/api/potions/MCPotionEffectInstance)
 
 ```zenscript
 MCLivingEntity.getActivePotionEffect(potionIn as MCPotionEffect) as MCPotionEffectInstance
 ```
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| potionIn | [MCPotionEffect](/vanilla/api/potion/MCPotionEffect) | No Description Provided |
+| potionIn | [MCPotionEffect](/vanilla/api/potions/MCPotionEffect) | No Description Provided |
 ### getActivePotionEffects
 
-Return Type: Collection&lt;[MCPotionEffectInstance](/vanilla/api/potion/MCPotionEffectInstance)&gt;
+Return Type: Collection&lt;[MCPotionEffectInstance](/vanilla/api/potions/MCPotionEffectInstance)&gt;
 
 ```zenscript
 MCLivingEntity.getActivePotionEffects() as Collection<MCPotionEffectInstance>
@@ -108,7 +108,7 @@ myMCLivingEntity.getActivePotionEffects();
 ```
 ### getActivePotionMap
 
-Return Type: [MCPotionEffectInstance](/vanilla/api/potion/MCPotionEffectInstance)[[MCPotionEffect](/vanilla/api/potion/MCPotionEffect)]
+Return Type: [MCPotionEffectInstance](/vanilla/api/potions/MCPotionEffectInstance)[[MCPotionEffect](/vanilla/api/potions/MCPotionEffect)]
 
 ```zenscript
 MCLivingEntity.getActivePotionMap() as MCPotionEffectInstance[MCPotionEffect]
@@ -293,7 +293,7 @@ MCLivingEntity.isPotionActive(potionIn as MCPotionEffect) as boolean
 ```
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| potionIn | [MCPotionEffect](/vanilla/api/potion/MCPotionEffect) | No Description Provided |
+| potionIn | [MCPotionEffect](/vanilla/api/potions/MCPotionEffect) | No Description Provided |
 ### isPotionApplicable
 
 Return Type: boolean
@@ -303,7 +303,7 @@ MCLivingEntity.isPotionApplicable(potioneffectIn as MCPotionEffectInstance) as b
 ```
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| potioneffectIn | [MCPotionEffectInstance](/vanilla/api/potion/MCPotionEffectInstance) | No Description Provided |
+| potioneffectIn | [MCPotionEffectInstance](/vanilla/api/potions/MCPotionEffectInstance) | No Description Provided |
 ### isWaterSensitive
 
 Return Type: boolean
@@ -314,14 +314,14 @@ myMCLivingEntity.isWaterSensitive();
 ```
 ### removeActivePotionEffect
 
-Return Type: [MCPotionEffectInstance](/vanilla/api/potion/MCPotionEffectInstance)
+Return Type: [MCPotionEffectInstance](/vanilla/api/potions/MCPotionEffectInstance)
 
 ```zenscript
 MCLivingEntity.removeActivePotionEffect(potioneffectin as MCPotionEffect) as MCPotionEffectInstance
 ```
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| potioneffectin | [MCPotionEffect](/vanilla/api/potion/MCPotionEffect) | No Description Provided |
+| potioneffectin | [MCPotionEffect](/vanilla/api/potions/MCPotionEffect) | No Description Provided |
 ### removePotionEffect
 
 Return Type: boolean
@@ -331,7 +331,7 @@ MCLivingEntity.removePotionEffect(effectIn as MCPotionEffect) as boolean
 ```
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| effectIn | [MCPotionEffect](/vanilla/api/potion/MCPotionEffect) | No Description Provided |
+| effectIn | [MCPotionEffect](/vanilla/api/potions/MCPotionEffect) | No Description Provided |
 ### setAIMoveSpeed
 
 Return Type: void
