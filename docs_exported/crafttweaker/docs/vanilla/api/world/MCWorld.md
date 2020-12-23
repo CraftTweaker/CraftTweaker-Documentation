@@ -103,7 +103,7 @@ Return Type: boolean
 
 ```zenscript
 MCWorld.isRemote() as boolean
-myMCWorld.isRemote()
+myMCWorld.isRemote();
 ```
 ### setBlockState
 

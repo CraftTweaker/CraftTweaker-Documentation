@@ -54,7 +54,7 @@ Return Type: boolean
 
 ```zenscript
 MCTag.exists() as boolean
-myMCTag.exists()
+myMCTag.exists();
 ```
 ### getElements
 
@@ -62,7 +62,7 @@ Return Type: stdlib.List&lt;T&gt;
 
 ```zenscript
 MCTag.getElements() as stdlib.List<T>
-myMCTag.getElements()
+myMCTag.getElements();
 ```
 ### getId
 
@@ -70,7 +70,7 @@ Return Type: [MCResourceLocation](/vanilla/api/util/MCResourceLocation)
 
 ```zenscript
 MCTag.getId() as MCResourceLocation
-myMCTag.getId()
+myMCTag.getId();
 ```
 ### getManager
 
@@ -78,7 +78,7 @@ Return Type: [TagManager](/vanilla/api/tags/TagManager)&lt;T&gt;
 
 ```zenscript
 MCTag.getManager() as TagManager<T>
-myMCTag.getManager()
+myMCTag.getManager();
 ```
 ### remove
 

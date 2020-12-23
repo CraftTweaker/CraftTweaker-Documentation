@@ -22,7 +22,7 @@ Return Type: void
 
 ```zenscript
 ILogger.debug(message as string) as void
-logger.debug("message")
+logger.debug("message");
 ```
 | Parameter | Type | Description |
 |-----------|------|-------------|
@@ -35,7 +35,7 @@ Return Type: void
 
 ```zenscript
 ILogger.error(message as string) as void
-logger.error("message")
+logger.error("message");
 ```
 | Parameter | Type | Description |
 |-----------|------|-------------|
@@ -48,7 +48,7 @@ Return Type: void
 
 ```zenscript
 ILogger.info(message as string) as void
-logger.info("message")
+logger.info("message");
 ```
 | Parameter | Type | Description |
 |-----------|------|-------------|
@@ -61,7 +61,7 @@ Return Type: void
 
 ```zenscript
 ILogger.trace(message as string) as void
-logger.trace("message")
+logger.trace("message");
 ```
 | Parameter | Type | Description |
 |-----------|------|-------------|
@@ -74,7 +74,7 @@ Return Type: void
 
 ```zenscript
 ILogger.warning(message as string) as void
-logger.warning("message")
+logger.warning("message");
 ```
 | Parameter | Type | Description |
 |-----------|------|-------------|

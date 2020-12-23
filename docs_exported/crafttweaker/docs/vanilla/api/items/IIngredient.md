@@ -32,7 +32,7 @@ Return Type: [MCIngredientConditioned](/vanilla/api/items/MCIngredientConditione
 
 ```zenscript
 IIngredient.anyDamage() as MCIngredientConditioned<IIngredient>
-<tag:items:forge:ingots>.anyDamage()
+<tag:items:forge:ingots>.anyDamage();
 ```
 ### asVanillaIngredient
 
@@ -42,7 +42,7 @@ Return Type: [Ingredient](/vanilla/api/item/Ingredient)
 
 ```zenscript
 IIngredient.asVanillaIngredient() as Ingredient
-<tag:items:forge:ingots>.asVanillaIngredient()
+<tag:items:forge:ingots>.asVanillaIngredient();
 ```
 ### getRemainingItem
 
@@ -54,7 +54,7 @@ Return Type: [IItemStack](/vanilla/api/items/IItemStack)
 
 ```zenscript
 IIngredient.getRemainingItem(stack as IItemStack) as IItemStack
-<tag:items:forge:ingots>.getRemainingItem(<item:minecraft:iron_ingot>)
+<tag:items:forge:ingots>.getRemainingItem(<item:minecraft:iron_ingot>);
 ```
 | Parameter | Type | Description |
 |-----------|------|-------------|
@@ -67,7 +67,7 @@ Return Type: boolean
 
 ```zenscript
 IIngredient.matches(stack as IItemStack) as boolean
-<tag:items:forge:ingots>.matches(<item:minecraft:iron_ingot>)
+<tag:items:forge:ingots>.matches(<item:minecraft:iron_ingot>);
 ```
 | Parameter | Type | Description |
 |-----------|------|-------------|
@@ -89,7 +89,7 @@ Return Type: [MCIngredientConditioned](/vanilla/api/items/MCIngredientConditione
 
 ```zenscript
 IIngredient.onlyDamaged() as MCIngredientConditioned<IIngredient>
-<tag:items:forge:ingots>.onlyDamaged()
+<tag:items:forge:ingots>.onlyDamaged();
 ```
 ### onlyIf
 

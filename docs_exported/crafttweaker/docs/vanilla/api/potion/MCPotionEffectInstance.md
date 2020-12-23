@@ -42,7 +42,7 @@ Return Type: stdlib.List&lt;[IItemStack](/vanilla/api/items/IItemStack)&gt;
 
 ```zenscript
 MCPotionEffectInstance.getCurativeItems() as stdlib.List<IItemStack>
-myMCPotionEffectInstance.getCurativeItems()
+myMCPotionEffectInstance.getCurativeItems();
 ```
 ### isCurativeItem
 

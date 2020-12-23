@@ -39,7 +39,7 @@ Return Type: stdlib.List&lt;[MCTag](/vanilla/api/tags/MCTag)&lt;T&gt;&gt;
 
 ```zenscript
 TagManager.getAllTags() as stdlib.List<MCTag<T>>
-myTagManager.getAllTags()
+myTagManager.getAllTags();
 ```
 ### getAllTagsFor
 
@@ -79,7 +79,7 @@ Return Type: string
 
 ```zenscript
 TagManager.getTagFolder() as string
-myTagManager.getTagFolder()
+myTagManager.getTagFolder();
 ```
 
 ## Operators

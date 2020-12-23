@@ -34,7 +34,7 @@ Return Type: [MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)
 
 ```zenscript
 MCSuggestionContext.getParent() as MCCommandNode
-myMCSuggestionContext.getParent()
+myMCSuggestionContext.getParent();
 ```
 ### getStartPos
 
@@ -42,7 +42,7 @@ Return Type: int
 
 ```zenscript
 MCSuggestionContext.getStartPos() as int
-myMCSuggestionContext.getStartPos()
+myMCSuggestionContext.getStartPos();
 ```
 ### hashCode
 
@@ -50,7 +50,7 @@ Return Type: int
 
 ```zenscript
 MCSuggestionContext.hashCode() as int
-myMCSuggestionContext.hashCode()
+myMCSuggestionContext.hashCode();
 ```
 ### toString
 
@@ -58,7 +58,7 @@ Return Type: string
 
 ```zenscript
 MCSuggestionContext.toString() as string
-myMCSuggestionContext.toString()
+myMCSuggestionContext.toString();
 ```
 
 ## Operators

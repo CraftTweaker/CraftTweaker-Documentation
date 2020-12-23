@@ -21,7 +21,7 @@ ListData implements the following interfaces. That means all methods defined in 
 No Description Provided
 ```zenscript
 new ListData() as ListData
-new ListData()
+new ListData();
 ```
 No Description Provided
 ```zenscript

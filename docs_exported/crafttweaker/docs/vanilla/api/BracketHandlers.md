@@ -27,7 +27,7 @@ Return Type: [MCBlock](/vanilla/api/blocks/MCBlock)
 <block:minecraft:dirt>
 
 BracketHandlers.getBlock(tokens as string) as MCBlock
-BracketHandlers.getBlock("minecraft:dirt")
+BracketHandlers.getBlock("minecraft:dirt");
 ```
 | Parameter | Type | Description |
 |-----------|------|-------------|
@@ -43,7 +43,7 @@ Return Type: [MCMaterial](/vanilla/api/block/material/MCMaterial)
 <blockmaterial:earth>
 
 BracketHandlers.getBlockMaterial(tokens as string) as MCMaterial
-BracketHandlers.getBlockMaterial("earth")
+BracketHandlers.getBlockMaterial("earth");
 ```
 | Parameter | Type | Description |
 |-----------|------|-------------|
@@ -61,8 +61,8 @@ Return Type: [MCBlockState](/vanilla/api/blocks/MCBlockState)
 <blockstate:minecraft:furnace:facing=north,lit=false>
 
 BracketHandlers.getBlockState(tokens as string) as MCBlockState
-BracketHandlers.getBlockState("minecraft:acacia_planks")
-BracketHandlers.getBlockState("minecraft:furnace:facing=north,lit=false")
+BracketHandlers.getBlockState("minecraft:acacia_planks");
+BracketHandlers.getBlockState("minecraft:furnace:facing=north,lit=false");
 ```
 | Parameter | Type | Description |
 |-----------|------|-------------|
@@ -78,7 +78,7 @@ Return Type: [DirectionAxis](/vanilla/api/util/DirectionAxis)
 <directionaxis:x>
 
 BracketHandlers.getDirectionAxis(tokens as string) as DirectionAxis
-BracketHandlers.getDirectionAxis("x")
+BracketHandlers.getDirectionAxis("x");
 ```
 | Parameter | Type | Description |
 |-----------|------|-------------|
@@ -94,7 +94,7 @@ Return Type: [MCPotionEffect](/vanilla/api/potion/MCPotionEffect)
 <effect:minecraft:haste>
 
 BracketHandlers.getEffect(tokens as string) as MCPotionEffect
-BracketHandlers.getEffect("minecraft:haste")
+BracketHandlers.getEffect("minecraft:haste");
 ```
 | Parameter | Type | Description |
 |-----------|------|-------------|
@@ -110,7 +110,7 @@ Return Type: [MCEntityClassification](/vanilla/api/entity/MCEntityClassification
 <entityclassification:monster>
 
 BracketHandlers.getEntityClassification(tokens as string) as MCEntityClassification
-BracketHandlers.getEntityClassification("monster")
+BracketHandlers.getEntityClassification("monster");
 ```
 | Parameter | Type | Description |
 |-----------|------|-------------|
@@ -126,7 +126,7 @@ Return Type: [MCEntityType](/vanilla/api/entities/MCEntityType)
 <entitytype:minecraft:pig>
 
 BracketHandlers.getEntityType(tokens as string) as MCEntityType
-BracketHandlers.getEntityType("minecraft:pig")
+BracketHandlers.getEntityType("minecraft:pig");
 ```
 | Parameter | Type | Description |
 |-----------|------|-------------|
@@ -142,7 +142,7 @@ Return Type: [IFluidStack](/vanilla/api/fluid/IFluidStack)
 <fluid:minecraft:water>
 
 BracketHandlers.getFluidStack(tokens as string) as IFluidStack
-BracketHandlers.getFluidStack("minecraft:water")
+BracketHandlers.getFluidStack("minecraft:water");
 ```
 | Parameter | Type | Description |
 |-----------|------|-------------|
@@ -158,7 +158,7 @@ Return Type: [IItemStack](/vanilla/api/items/IItemStack)
 <item:minecraft:dirt>
 
 BracketHandlers.getItem(tokens as string) as IItemStack
-BracketHandlers.getItem("minecraft:dirt")
+BracketHandlers.getItem("minecraft:dirt");
 ```
 | Parameter | Type | Description |
 |-----------|------|-------------|
@@ -187,7 +187,7 @@ Return Type: [IRecipeManager](/vanilla/api/managers/IRecipeManager)
 
 ```zenscript
 BracketHandlers.getRecipeManager(tokens as string) as IRecipeManager
-BracketHandlers.getRecipeManager("minecraft:crafting")
+BracketHandlers.getRecipeManager("minecraft:crafting");
 ```
 | Parameter | Type | Description |
 |-----------|------|-------------|
@@ -204,7 +204,7 @@ Return Type: [MCResourceLocation](/vanilla/api/util/MCResourceLocation)
 <resource:minecraft:dirt>
 
 BracketHandlers.getResourceLocation(tokens as string) as MCResourceLocation
-BracketHandlers.getResourceLocation("minecraft:dirt")
+BracketHandlers.getResourceLocation("minecraft:dirt");
 ```
 | Parameter | Type | Description |
 |-----------|------|-------------|

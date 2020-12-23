@@ -28,7 +28,7 @@ Return Type: [MCLiteralArgumentBuilder](/vanilla/api/commands/custom/MCLiteralAr
 
 ```zenscript
 MCLiteralCommandNode.createBuilder() as MCLiteralArgumentBuilder
-myMCLiteralCommandNode.createBuilder()
+myMCLiteralCommandNode.createBuilder();
 ```
 ### equals
 
@@ -46,7 +46,7 @@ Return Type: string
 
 ```zenscript
 MCLiteralCommandNode.getLiteral() as string
-myMCLiteralCommandNode.getLiteral()
+myMCLiteralCommandNode.getLiteral();
 ```
 ### hashCode
 
@@ -54,7 +54,7 @@ Return Type: int
 
 ```zenscript
 MCLiteralCommandNode.hashCode() as int
-myMCLiteralCommandNode.hashCode()
+myMCLiteralCommandNode.hashCode();
 ```
 ### isValidInput
 
@@ -72,7 +72,7 @@ Return Type: string
 
 ```zenscript
 MCLiteralCommandNode.toString() as string
-myMCLiteralCommandNode.toString()
+myMCLiteralCommandNode.toString();
 ```
 
 ## Operators

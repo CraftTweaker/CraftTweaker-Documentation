@@ -22,7 +22,7 @@ Return Type: boolean
 
 ```zenscript
 MCPlayerEntity.canUseCommandBlock() as boolean
-myMCPlayerEntity.canUseCommandBlock()
+myMCPlayerEntity.canUseCommandBlock();
 ```
 ### drop
 
@@ -40,7 +40,7 @@ Return Type: float
 
 ```zenscript
 MCPlayerEntity.getLuck() as float
-myMCPlayerEntity.getLuck()
+myMCPlayerEntity.getLuck();
 ```
 ### getMaxInPortalTime
 
@@ -48,7 +48,7 @@ Return Type: int
 
 ```zenscript
 MCPlayerEntity.getMaxInPortalTime() as int
-myMCPlayerEntity.getMaxInPortalTime()
+myMCPlayerEntity.getMaxInPortalTime();
 ```
 ### getPortalCooldown
 
@@ -56,7 +56,7 @@ Return Type: int
 
 ```zenscript
 MCPlayerEntity.getPortalCooldown() as int
-myMCPlayerEntity.getPortalCooldown()
+myMCPlayerEntity.getPortalCooldown();
 ```
 ### getSleepTimer
 
@@ -64,7 +64,7 @@ Return Type: int
 
 ```zenscript
 MCPlayerEntity.getSleepTimer() as int
-myMCPlayerEntity.getSleepTimer()
+myMCPlayerEntity.getSleepTimer();
 ```
 ### isCreative
 
@@ -72,7 +72,7 @@ Return Type: boolean
 
 ```zenscript
 MCPlayerEntity.isCreative() as boolean
-myMCPlayerEntity.isCreative()
+myMCPlayerEntity.isCreative();
 ```
 ### isPushedByWater
 
@@ -80,7 +80,7 @@ Return Type: boolean
 
 ```zenscript
 MCPlayerEntity.isPushedByWater() as boolean
-myMCPlayerEntity.isPushedByWater()
+myMCPlayerEntity.isPushedByWater();
 ```
 ### isSecondaryUseActive
 
@@ -88,7 +88,7 @@ Return Type: boolean
 
 ```zenscript
 MCPlayerEntity.isSecondaryUseActive() as boolean
-myMCPlayerEntity.isSecondaryUseActive()
+myMCPlayerEntity.isSecondaryUseActive();
 ```
 ### isSpectator
 
@@ -96,7 +96,7 @@ Return Type: boolean
 
 ```zenscript
 MCPlayerEntity.isSpectator() as boolean
-myMCPlayerEntity.isSpectator()
+myMCPlayerEntity.isSpectator();
 ```
 ### isSwimming
 
@@ -104,7 +104,7 @@ Return Type: boolean
 
 ```zenscript
 MCPlayerEntity.isSwimming() as boolean
-myMCPlayerEntity.isSwimming()
+myMCPlayerEntity.isSwimming();
 ```
 ### isUser
 
@@ -112,7 +112,7 @@ Return Type: boolean
 
 ```zenscript
 MCPlayerEntity.isUser() as boolean
-myMCPlayerEntity.isUser()
+myMCPlayerEntity.isUser();
 ```
 ### unlockRecipes
 
@@ -130,6 +130,6 @@ Return Type: void
 
 ```zenscript
 MCPlayerEntity.wakeUp() as void
-myMCPlayerEntity.wakeUp()
+myMCPlayerEntity.wakeUp();
 ```
 

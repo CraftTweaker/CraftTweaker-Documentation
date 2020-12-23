@@ -26,7 +26,7 @@ Return Type: void
 
 ```zenscript
 IRecipeManager.addJSONRecipe(name as string, data as IData) as void
-craftingTable.addJSONRecipe("recipe_name", {ingredient:{item:<item:minecraft:gold_ore>.registryName},result:<item:minecraft:cooked_porkchop>.registryName,experience:0.35 as float, cookingtime:100})
+craftingTable.addJSONRecipe("recipe_name", {ingredient:{item:<item:minecraft:gold_ore>.registryName},result:<item:minecraft:cooked_porkchop>.registryName,experience:0.35 as float, cookingtime:100});
 ```
 | Parameter | Type | Description |
 |-----------|------|-------------|
@@ -38,7 +38,7 @@ Return Type: stdlib.List&lt;[WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)&g
 
 ```zenscript
 IRecipeManager.getAllRecipes() as stdlib.List<WrapperRecipe>
-craftingTable.getAllRecipes()
+craftingTable.getAllRecipes();
 ```
 ### getRecipeByName
 
@@ -68,7 +68,7 @@ Return Type: void
 
 ```zenscript
 IRecipeManager.removeAll() as void
-craftingTable.removeAll()
+craftingTable.removeAll();
 ```
 ### removeByModid
 
@@ -78,7 +78,7 @@ Return Type: void
 
 ```zenscript
 IRecipeManager.removeByModid(modid as string) as void
-craftingTable.removeByModid("minecraft")
+craftingTable.removeByModid("minecraft");
 ```
 | Parameter | Type | Description |
 |-----------|------|-------------|
@@ -89,7 +89,7 @@ Return Type: void
 
 ```zenscript
 IRecipeManager.removeByModid(modid as string, exclude as RecipeFilter) as void
-craftingTable.removeByModid("minecraft", (name as string) => {return name == "orange_wool";})
+craftingTable.removeByModid("minecraft", (name as string) => {return name == "orange_wool";});
 ```
 | Parameter | Type | Description |
 |-----------|------|-------------|
@@ -103,7 +103,7 @@ Return Type: void
 
 ```zenscript
 IRecipeManager.removeByName(name as string) as void
-craftingTable.removeByName("minecraft:furnace")
+craftingTable.removeByName("minecraft:furnace");
 ```
 | Parameter | Type | Description |
 |-----------|------|-------------|
@@ -116,7 +116,7 @@ Return Type: void
 
 ```zenscript
 IRecipeManager.removeByRegex(regex as string) as void
-craftingTable.removeByRegex("\\d_\\d")
+craftingTable.removeByRegex("\\d_\\d");
 ```
 | Parameter | Type | Description |
 |-----------|------|-------------|
@@ -129,7 +129,7 @@ Return Type: void
 
 ```zenscript
 IRecipeManager.removeRecipe(output as IItemStack) as void
-craftingTable.removeRecipe(<item:minecraft:glass>)
+craftingTable.removeRecipe(<item:minecraft:glass>);
 ```
 | Parameter | Type | Description |
 |-----------|------|-------------|

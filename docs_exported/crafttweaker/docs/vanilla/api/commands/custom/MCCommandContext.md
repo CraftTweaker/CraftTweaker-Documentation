@@ -54,7 +54,7 @@ Return Type: [MCCommandContext](/vanilla/api/commands/custom/MCCommandContext)
 
 ```zenscript
 MCCommandContext.getChild() as MCCommandContext
-myMCCommandContext.getChild()
+myMCCommandContext.getChild();
 ```
 ### getCommand
 
@@ -62,7 +62,7 @@ Return Type: [MCCommand](/vanilla/api/commands/custom/MCCommand)
 
 ```zenscript
 MCCommandContext.getCommand() as MCCommand
-myMCCommandContext.getCommand()
+myMCCommandContext.getCommand();
 ```
 ### getInput
 
@@ -70,7 +70,7 @@ Return Type: string
 
 ```zenscript
 MCCommandContext.getInput() as string
-myMCCommandContext.getInput()
+myMCCommandContext.getInput();
 ```
 ### getLastChild
 
@@ -78,7 +78,7 @@ Return Type: [MCCommandContext](/vanilla/api/commands/custom/MCCommandContext)
 
 ```zenscript
 MCCommandContext.getLastChild() as MCCommandContext
-myMCCommandContext.getLastChild()
+myMCCommandContext.getLastChild();
 ```
 ### getNodes
 
@@ -86,7 +86,7 @@ Return Type: stdlib.List&lt;[MCParsedCommandNode](/vanilla/api/commands/custom/M
 
 ```zenscript
 MCCommandContext.getNodes() as stdlib.List<MCParsedCommandNode>
-myMCCommandContext.getNodes()
+myMCCommandContext.getNodes();
 ```
 ### getRange
 
@@ -94,7 +94,7 @@ Return Type: [MCStringRange](/vanilla/api/commands/custom/MCStringRange)
 
 ```zenscript
 MCCommandContext.getRange() as MCStringRange
-myMCCommandContext.getRange()
+myMCCommandContext.getRange();
 ```
 ### getRedirectModifier
 
@@ -102,7 +102,7 @@ Return Type: [MCRedirectModifier](/vanilla/api/commands/custom/MCRedirectModifie
 
 ```zenscript
 MCCommandContext.getRedirectModifier() as MCRedirectModifier
-myMCCommandContext.getRedirectModifier()
+myMCCommandContext.getRedirectModifier();
 ```
 ### getRootNode
 
@@ -110,7 +110,7 @@ Return Type: [MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)
 
 ```zenscript
 MCCommandContext.getRootNode() as MCCommandNode
-myMCCommandContext.getRootNode()
+myMCCommandContext.getRootNode();
 ```
 ### getSource
 
@@ -118,7 +118,7 @@ Return Type: [MCCommandSource](/vanilla/api/commands/custom/MCCommandSource)
 
 ```zenscript
 MCCommandContext.getSource() as MCCommandSource
-myMCCommandContext.getSource()
+myMCCommandContext.getSource();
 ```
 ### hasNodes
 
@@ -126,7 +126,7 @@ Return Type: boolean
 
 ```zenscript
 MCCommandContext.hasNodes() as boolean
-myMCCommandContext.hasNodes()
+myMCCommandContext.hasNodes();
 ```
 ### hashCode
 
@@ -134,7 +134,7 @@ Return Type: int
 
 ```zenscript
 MCCommandContext.hashCode() as int
-myMCCommandContext.hashCode()
+myMCCommandContext.hashCode();
 ```
 ### isForked
 
@@ -142,7 +142,7 @@ Return Type: boolean
 
 ```zenscript
 MCCommandContext.isForked() as boolean
-myMCCommandContext.isForked()
+myMCCommandContext.isForked();
 ```
 ### toString
 
@@ -150,7 +150,7 @@ Return Type: string
 
 ```zenscript
 MCCommandContext.toString() as string
-myMCCommandContext.toString()
+myMCCommandContext.toString();
 ```
 
 ## Operators

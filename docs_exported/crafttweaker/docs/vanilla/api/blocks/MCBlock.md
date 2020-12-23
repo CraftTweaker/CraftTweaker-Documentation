@@ -24,7 +24,7 @@ Return Type: boolean
 
 ```zenscript
 MCBlock.canSpawnInBlock() as boolean
-myMCBlock.canSpawnInBlock()
+myMCBlock.canSpawnInBlock();
 ```
 ### getDefaultState
 
@@ -32,7 +32,7 @@ Return Type: [MCBlockState](/vanilla/api/blocks/MCBlockState)
 
 ```zenscript
 MCBlock.getDefaultState() as MCBlockState
-myMCBlock.getDefaultState()
+myMCBlock.getDefaultState();
 ```
 
 ## Properties

@@ -10,7 +10,7 @@ Return Type: [MCIngredientTransformed](/vanilla/api/items/MCIngredientTransforme
 
 ```zenscript
 IIngredient.reuse() as MCIngredientTransformed<IIngredient>
-<tag:items:forge:ingots>.reuse()
+<tag:items:forge:ingots>.reuse();
 ```
 ### transform
 

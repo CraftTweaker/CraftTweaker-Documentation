@@ -20,7 +20,7 @@ Return Type: boolean
 
 ```zenscript
 MCMaterial.blocksMovement() as boolean
-myMCMaterial.blocksMovement()
+myMCMaterial.blocksMovement();
 ```
 ### getColor
 
@@ -30,7 +30,7 @@ Return Type: [MCMaterialColor](/vanilla/api/block/material/MCMaterialColor)
 
 ```zenscript
 MCMaterial.getColor() as MCMaterialColor
-myMCMaterial.getColor()
+myMCMaterial.getColor();
 ```
 ### isFlammable
 
@@ -40,7 +40,7 @@ Return Type: boolean
 
 ```zenscript
 MCMaterial.isFlammable() as boolean
-myMCMaterial.isFlammable()
+myMCMaterial.isFlammable();
 ```
 ### isLiquid
 
@@ -50,7 +50,7 @@ Return Type: boolean
 
 ```zenscript
 MCMaterial.isLiquid() as boolean
-myMCMaterial.isLiquid()
+myMCMaterial.isLiquid();
 ```
 ### isOpaque
 
@@ -60,7 +60,7 @@ Return Type: boolean
 
 ```zenscript
 MCMaterial.isOpaque() as boolean
-myMCMaterial.isOpaque()
+myMCMaterial.isOpaque();
 ```
 ### isReplaceable
 
@@ -70,7 +70,7 @@ Return Type: boolean
 
 ```zenscript
 MCMaterial.isReplaceable() as boolean
-myMCMaterial.isReplaceable()
+myMCMaterial.isReplaceable();
 ```
 ### isSolid
 
@@ -80,7 +80,7 @@ Return Type: boolean
 
 ```zenscript
 MCMaterial.isSolid() as boolean
-myMCMaterial.isSolid()
+myMCMaterial.isSolid();
 ```
 
 ## Properties

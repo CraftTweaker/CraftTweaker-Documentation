@@ -34,7 +34,7 @@ Return Type: [MCStringRange](/vanilla/api/commands/custom/MCStringRange)
 
 ```zenscript
 MCParsedArgument.getRange() as MCStringRange
-myMCParsedArgument.getRange()
+myMCParsedArgument.getRange();
 ```
 ### hashCode
 
@@ -42,7 +42,7 @@ Return Type: int
 
 ```zenscript
 MCParsedArgument.hashCode() as int
-myMCParsedArgument.hashCode()
+myMCParsedArgument.hashCode();
 ```
 ### toString
 
@@ -50,7 +50,7 @@ Return Type: string
 
 ```zenscript
 MCParsedArgument.toString() as string
-myMCParsedArgument.toString()
+myMCParsedArgument.toString();
 ```
 
 ## Operators

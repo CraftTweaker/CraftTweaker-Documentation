@@ -42,7 +42,7 @@ Return Type: [IFluidStack](/vanilla/api/fluid/IFluidStack)
 
 ```zenscript
 IFluidStack.copy() as IFluidStack
-myIFluidStack.copy()
+myIFluidStack.copy();
 ```
 ### mutable
 
@@ -52,7 +52,7 @@ Return Type: [IFluidStack](/vanilla/api/fluid/IFluidStack)
 
 ```zenscript
 IFluidStack.mutable() as IFluidStack
-myIFluidStack.mutable()
+myIFluidStack.mutable();
 ```
 ### setAmount
 
@@ -62,7 +62,7 @@ Return Type: [IFluidStack](/vanilla/api/fluid/IFluidStack)
 
 ```zenscript
 IFluidStack.setAmount(amount as int) as IFluidStack
-myIFluidStack.setAmount(1000)
+myIFluidStack.setAmount(1000);
 ```
 | Parameter | Type | Description |
 |-----------|------|-------------|

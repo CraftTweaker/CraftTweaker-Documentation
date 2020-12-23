@@ -28,7 +28,7 @@ Return Type: [MCLiteralCommandNode](/vanilla/api/commands/custom/MCLiteralComman
 
 ```zenscript
 MCLiteralArgumentBuilder.build() as MCLiteralCommandNode
-myMCLiteralArgumentBuilder.build()
+myMCLiteralArgumentBuilder.build();
 ```
 ### equals
 
@@ -79,7 +79,7 @@ Return Type: string
 
 ```zenscript
 MCLiteralArgumentBuilder.getLiteral() as string
-myMCLiteralArgumentBuilder.getLiteral()
+myMCLiteralArgumentBuilder.getLiteral();
 ```
 ### getRequirement
 
@@ -87,7 +87,7 @@ Return Type: Predicate&lt;[MCCommandSource](/vanilla/api/commands/custom/MCComma
 
 ```zenscript
 MCLiteralArgumentBuilder.getRequirement() as Predicate<MCCommandSource>
-myMCLiteralArgumentBuilder.getRequirement()
+myMCLiteralArgumentBuilder.getRequirement();
 ```
 ### hashCode
 
@@ -95,7 +95,7 @@ Return Type: int
 
 ```zenscript
 MCLiteralArgumentBuilder.hashCode() as int
-myMCLiteralArgumentBuilder.hashCode()
+myMCLiteralArgumentBuilder.hashCode();
 ```
 ### redirect
 
@@ -142,7 +142,7 @@ Return Type: string
 
 ```zenscript
 MCLiteralArgumentBuilder.toString() as string
-myMCLiteralArgumentBuilder.toString()
+myMCLiteralArgumentBuilder.toString();
 ```
 
 ## Operators

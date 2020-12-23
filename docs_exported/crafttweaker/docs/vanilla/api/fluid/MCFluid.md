@@ -20,7 +20,7 @@ Return Type: [IFluidStack](/vanilla/api/fluid/IFluidStack)
 
 ```zenscript
 MCFluid.makeStack(amount as int) as IFluidStack
-myMCFluid.makeStack(1000)
+myMCFluid.makeStack(1000);
 ```
 | Parameter | Type | Description |
 |-----------|------|-------------|

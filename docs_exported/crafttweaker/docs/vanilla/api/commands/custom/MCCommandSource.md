@@ -18,7 +18,7 @@ Return Type: string
 
 ```zenscript
 MCCommandSource.getName() as string
-myMCCommandSource.getName()
+myMCCommandSource.getName();
 ```
 ### getPlayer
 
@@ -26,7 +26,7 @@ Return Type: [MCPlayerEntity](/vanilla/api/entity/MCPlayerEntity)
 
 ```zenscript
 MCCommandSource.getPlayer() as MCPlayerEntity
-myMCCommandSource.getPlayer()
+myMCCommandSource.getPlayer();
 ```
 ### getPlayerNames
 
@@ -34,7 +34,7 @@ Return Type: Collection&lt;string&gt;
 
 ```zenscript
 MCCommandSource.getPlayerNames() as Collection<string>
-myMCCommandSource.getPlayerNames()
+myMCCommandSource.getPlayerNames();
 ```
 ### getTargetedEntity
 
@@ -42,7 +42,7 @@ Return Type: Collection&lt;string&gt;
 
 ```zenscript
 MCCommandSource.getTargetedEntity() as Collection<string>
-myMCCommandSource.getTargetedEntity()
+myMCCommandSource.getTargetedEntity();
 ```
 ### getTeamNames
 
@@ -50,7 +50,7 @@ Return Type: Collection&lt;string&gt;
 
 ```zenscript
 MCCommandSource.getTeamNames() as Collection<string>
-myMCCommandSource.getTeamNames()
+myMCCommandSource.getTeamNames();
 ```
 ### hasPermissionLevel
 
@@ -68,7 +68,7 @@ Return Type: boolean
 
 ```zenscript
 MCCommandSource.isPlayer() as boolean
-myMCCommandSource.isPlayer()
+myMCCommandSource.isPlayer();
 ```
 ### sendErrorMessage
 
@@ -97,7 +97,7 @@ Return Type: [MCCommandSource](/vanilla/api/commands/custom/MCCommandSource)
 
 ```zenscript
 MCCommandSource.withFeedbackDisabled() as MCCommandSource
-myMCCommandSource.withFeedbackDisabled()
+myMCCommandSource.withFeedbackDisabled();
 ```
 ### withMinPermissionLevel
 

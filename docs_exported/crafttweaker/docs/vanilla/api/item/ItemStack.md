@@ -30,7 +30,7 @@ Return Type: [IIngredient](/vanilla/api/items/IIngredient)
 
 ```zenscript
 ItemStack.asIIngredient() as IIngredient
-myItemStack.asIIngredient()
+myItemStack.asIIngredient();
 ```
 ### asIItemStack
 
@@ -38,7 +38,7 @@ Return Type: [IItemStack](/vanilla/api/items/IItemStack)
 
 ```zenscript
 ItemStack.asIItemStack() as IItemStack
-myItemStack.asIItemStack()
+myItemStack.asIItemStack();
 ```
 ### print
 
@@ -48,6 +48,6 @@ Return Type: void
 
 ```zenscript
 ItemStack.print() as void
-myItemStack.print()
+myItemStack.print();
 ```
 

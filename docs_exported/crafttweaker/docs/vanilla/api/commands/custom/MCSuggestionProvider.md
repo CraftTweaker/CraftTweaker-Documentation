@@ -55,7 +55,7 @@ Return Type: int
 
 ```zenscript
 MCSuggestionProvider.hashCode() as int
-myMCSuggestionProvider.hashCode()
+myMCSuggestionProvider.hashCode();
 ```
 ### toString
 
@@ -63,7 +63,7 @@ Return Type: string
 
 ```zenscript
 MCSuggestionProvider.toString() as string
-myMCSuggestionProvider.toString()
+myMCSuggestionProvider.toString();
 ```
 
 ## Operators

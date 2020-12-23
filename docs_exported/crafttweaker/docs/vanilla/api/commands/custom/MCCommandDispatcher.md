@@ -114,7 +114,7 @@ Return Type: [MCRootCommandNode](/vanilla/api/commands/custom/MCRootCommandNode)
 
 ```zenscript
 MCCommandDispatcher.getRoot() as MCRootCommandNode
-myMCCommandDispatcher.getRoot()
+myMCCommandDispatcher.getRoot();
 ```
 ### getSmartUsage
 
@@ -133,7 +133,7 @@ Return Type: int
 
 ```zenscript
 MCCommandDispatcher.hashCode() as int
-myMCCommandDispatcher.hashCode()
+myMCCommandDispatcher.hashCode();
 ```
 ### parse
 
@@ -172,7 +172,7 @@ Return Type: string
 
 ```zenscript
 MCCommandDispatcher.toString() as string
-myMCCommandDispatcher.toString()
+myMCCommandDispatcher.toString();
 ```
 
 ## Operators

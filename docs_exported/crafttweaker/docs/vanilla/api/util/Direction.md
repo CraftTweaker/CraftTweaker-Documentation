@@ -31,7 +31,7 @@ Return Type: [Direction](/vanilla/api/util/Direction)
 
 ```zenscript
 Direction.rotateY() as Direction
-<direction:north>.rotateY()
+<direction:north>.rotateY();
 ```
 ### rotateYCCW
 
@@ -41,7 +41,7 @@ Return Type: [Direction](/vanilla/api/util/Direction)
 
 ```zenscript
 Direction.rotateYCCW() as Direction
-<direction:north>.rotateYCCW()
+<direction:north>.rotateYCCW();
 ```
 
 ## Properties

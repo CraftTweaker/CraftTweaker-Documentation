@@ -28,7 +28,7 @@ Return Type: [MCArgumentCommandNode](/vanilla/api/commands/custom/MCArgumentComm
 
 ```zenscript
 MCRequiredArgumentBuilder.build() as MCArgumentCommandNode
-myMCRequiredArgumentBuilder.build()
+myMCRequiredArgumentBuilder.build();
 ```
 ### equals
 
@@ -79,7 +79,7 @@ Return Type: Collection&lt;[MCCommandNode](/vanilla/api/commands/custom/MCComman
 
 ```zenscript
 MCRequiredArgumentBuilder.getArguments() as Collection<MCCommandNode>
-myMCRequiredArgumentBuilder.getArguments()
+myMCRequiredArgumentBuilder.getArguments();
 ```
 ### getName
 
@@ -87,7 +87,7 @@ Return Type: string
 
 ```zenscript
 MCRequiredArgumentBuilder.getName() as string
-myMCRequiredArgumentBuilder.getName()
+myMCRequiredArgumentBuilder.getName();
 ```
 ### getRequirement
 
@@ -95,7 +95,7 @@ Return Type: Predicate&lt;[MCCommandSource](/vanilla/api/commands/custom/MCComma
 
 ```zenscript
 MCRequiredArgumentBuilder.getRequirement() as Predicate<MCCommandSource>
-myMCRequiredArgumentBuilder.getRequirement()
+myMCRequiredArgumentBuilder.getRequirement();
 ```
 ### getSuggestionsProvider
 
@@ -103,7 +103,7 @@ Return Type: [MCSuggestionProvider](/vanilla/api/commands/custom/MCSuggestionPro
 
 ```zenscript
 MCRequiredArgumentBuilder.getSuggestionsProvider() as MCSuggestionProvider
-myMCRequiredArgumentBuilder.getSuggestionsProvider()
+myMCRequiredArgumentBuilder.getSuggestionsProvider();
 ```
 ### hashCode
 
@@ -111,7 +111,7 @@ Return Type: int
 
 ```zenscript
 MCRequiredArgumentBuilder.hashCode() as int
-myMCRequiredArgumentBuilder.hashCode()
+myMCRequiredArgumentBuilder.hashCode();
 ```
 ### redirect
 
@@ -168,7 +168,7 @@ Return Type: string
 
 ```zenscript
 MCRequiredArgumentBuilder.toString() as string
-myMCRequiredArgumentBuilder.toString()
+myMCRequiredArgumentBuilder.toString();
 ```
 
 ## Operators

@@ -62,7 +62,7 @@ Return Type: int
 
 ```zenscript
 MCStringRange.getEnd() as int
-myMCStringRange.getEnd()
+myMCStringRange.getEnd();
 ```
 ### getFrom
 
@@ -80,7 +80,7 @@ Return Type: int
 
 ```zenscript
 MCStringRange.getLength() as int
-myMCStringRange.getLength()
+myMCStringRange.getLength();
 ```
 ### getStart
 
@@ -88,7 +88,7 @@ Return Type: int
 
 ```zenscript
 MCStringRange.getStart() as int
-myMCStringRange.getStart()
+myMCStringRange.getStart();
 ```
 ### hashCode
 
@@ -96,7 +96,7 @@ Return Type: int
 
 ```zenscript
 MCStringRange.hashCode() as int
-myMCStringRange.hashCode()
+myMCStringRange.hashCode();
 ```
 ### isEmpty
 
@@ -104,7 +104,7 @@ Return Type: boolean
 
 ```zenscript
 MCStringRange.isEmpty() as boolean
-myMCStringRange.isEmpty()
+myMCStringRange.isEmpty();
 ```
 ### toString
 
@@ -112,6 +112,6 @@ Return Type: string
 
 ```zenscript
 MCStringRange.toString() as string
-myMCStringRange.toString()
+myMCStringRange.toString();
 ```
 

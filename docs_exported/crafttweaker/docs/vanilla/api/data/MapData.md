@@ -21,7 +21,7 @@ MapData implements the following interfaces. That means all methods defined in t
 No Description Provided
 ```zenscript
 new MapData() as MapData
-new MapData()
+new MapData();
 ```
 No Description Provided
 ```zenscript
@@ -47,7 +47,7 @@ Return Type: boolean
 
 ```zenscript
 MapData.contains(key as string) as boolean
-{Hello : "World", Somewhere: "Over the rainbow"}.contains("Hello")
+{Hello : "World", Somewhere: "Over the rainbow"}.contains("Hello");
 ```
 | Parameter | Type | Description |
 |-----------|------|-------------|
@@ -60,7 +60,7 @@ Return Type: [IData](/vanilla/api/data/IData)
 
 ```zenscript
 MapData.getAt(key as string) as IData
-{Hello : "World", Somewhere: "Over the rainbow"}.getAt("Hello")
+{Hello : "World", Somewhere: "Over the rainbow"}.getAt("Hello");
 ```
 | Parameter | Type | Description |
 |-----------|------|-------------|
@@ -75,7 +75,7 @@ Return Type: [MapData](/vanilla/api/data/MapData)
 
 ```zenscript
 MapData.merge(other as MapData) as MapData
-{Hello : "World", Somewhere: "Over the rainbow"}.merge({Doodle: "Do})
+{Hello : "World", Somewhere: "Over the rainbow"}.merge({Doodle: "Do});
 ```
 | Parameter | Type | Description |
 |-----------|------|-------------|
@@ -88,7 +88,7 @@ Return Type: [IData](/vanilla/api/data/IData)
 
 ```zenscript
 MapData.put(key as string, value as IData) as IData
-{Hello : "World", Somewhere: "Over the rainbow"}.put("Hello", "Goodbye")
+{Hello : "World", Somewhere: "Over the rainbow"}.put("Hello", "Goodbye");
 ```
 | Parameter | Type | Description |
 |-----------|------|-------------|
@@ -103,7 +103,7 @@ Return Type: void
 
 ```zenscript
 MapData.putAll(map as IData[string]) as void
-{Hello : "World", Somewhere: "Over the rainbow"}.putAll({Hello: "Goodbye", Item: "Bedrock"})
+{Hello : "World", Somewhere: "Over the rainbow"}.putAll({Hello: "Goodbye", Item: "Bedrock"});
 ```
 | Parameter | Type | Description |
 |-----------|------|-------------|
@@ -116,7 +116,7 @@ Return Type: void
 
 ```zenscript
 MapData.remove(key as string) as void
-{Hello : "World", Somewhere: "Over the rainbow"}.remove("Somewhere")
+{Hello : "World", Somewhere: "Over the rainbow"}.remove("Somewhere");
 ```
 | Parameter | Type | Description |
 |-----------|------|-------------|

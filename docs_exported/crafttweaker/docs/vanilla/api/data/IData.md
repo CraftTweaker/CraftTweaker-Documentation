@@ -24,7 +24,7 @@ Return Type: stdlib.List&lt;[IData](/vanilla/api/data/IData)&gt;
 
 ```zenscript
 IData.asList() as stdlib.List<IData>
-{Display: {lore: ["Hello", "World"]}}.asList()
+{Display: {lore: ["Hello", "World"]}}.asList();
 ```
 ### asMap
 
@@ -34,7 +34,7 @@ Return Type: [IData](/vanilla/api/data/IData)[string]
 
 ```zenscript
 IData.asMap() as IData[string]
-{Display: {lore: ["Hello", "World"]}}.asMap()
+{Display: {lore: ["Hello", "World"]}}.asMap();
 ```
 ### asString
 
@@ -44,7 +44,7 @@ Return Type: string
 
 ```zenscript
 IData.asString() as string
-{Display: {lore: ["Hello", "World"]}}.asString()
+{Display: {lore: ["Hello", "World"]}}.asString();
 ```
 ### contains
 
@@ -54,7 +54,7 @@ Return Type: boolean
 
 ```zenscript
 IData.contains(data as IData) as boolean
-{Display: {lore: ["Hello", "World"]}}.contains("Display")
+{Display: {lore: ["Hello", "World"]}}.contains("Display");
 ```
 | Parameter | Type | Description |
 |-----------|------|-------------|
@@ -69,7 +69,7 @@ Return Type: [IData](/vanilla/api/data/IData)
 
 ```zenscript
 IData.copy() as IData
-{Display: {lore: ["Hello", "World"]}}.copy()
+{Display: {lore: ["Hello", "World"]}}.copy();
 ```
 ### getId
 
@@ -81,7 +81,7 @@ Return Type: byte
 
 ```zenscript
 IData.getId() as byte
-{Display: {lore: ["Hello", "World"]}}.getId()
+{Display: {lore: ["Hello", "World"]}}.getId();
 ```
 ### getString
 
@@ -91,6 +91,6 @@ Return Type: string
 
 ```zenscript
 IData.getString() as string
-{Display: {lore: ["Hello", "World"]}}.getString()
+{Display: {lore: ["Hello", "World"]}}.getString();
 ```
 

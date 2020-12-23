@@ -24,7 +24,7 @@ Return Type: [MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)
 
 ```zenscript
 MCArgumentBuilder.build() as MCCommandNode
-myMCArgumentBuilder.build()
+myMCArgumentBuilder.build();
 ```
 ### equals
 
@@ -75,7 +75,7 @@ Return Type: Collection&lt;[MCCommandNode](/vanilla/api/commands/custom/MCComman
 
 ```zenscript
 MCArgumentBuilder.getArguments() as Collection<MCCommandNode>
-myMCArgumentBuilder.getArguments()
+myMCArgumentBuilder.getArguments();
 ```
 ### getCommand
 
@@ -83,7 +83,7 @@ Return Type: [MCCommand](/vanilla/api/commands/custom/MCCommand)
 
 ```zenscript
 MCArgumentBuilder.getCommand() as MCCommand
-myMCArgumentBuilder.getCommand()
+myMCArgumentBuilder.getCommand();
 ```
 ### getRedirect
 
@@ -91,7 +91,7 @@ Return Type: [MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)
 
 ```zenscript
 MCArgumentBuilder.getRedirect() as MCCommandNode
-myMCArgumentBuilder.getRedirect()
+myMCArgumentBuilder.getRedirect();
 ```
 ### getRedirectModifier
 
@@ -99,7 +99,7 @@ Return Type: [MCRedirectModifier](/vanilla/api/commands/custom/MCRedirectModifie
 
 ```zenscript
 MCArgumentBuilder.getRedirectModifier() as MCRedirectModifier
-myMCArgumentBuilder.getRedirectModifier()
+myMCArgumentBuilder.getRedirectModifier();
 ```
 ### getRequirement
 
@@ -107,7 +107,7 @@ Return Type: Predicate&lt;[MCCommandSource](/vanilla/api/commands/custom/MCComma
 
 ```zenscript
 MCArgumentBuilder.getRequirement() as Predicate<MCCommandSource>
-myMCArgumentBuilder.getRequirement()
+myMCArgumentBuilder.getRequirement();
 ```
 ### hashCode
 
@@ -115,7 +115,7 @@ Return Type: int
 
 ```zenscript
 MCArgumentBuilder.hashCode() as int
-myMCArgumentBuilder.hashCode()
+myMCArgumentBuilder.hashCode();
 ```
 ### isFork
 
@@ -123,7 +123,7 @@ Return Type: boolean
 
 ```zenscript
 MCArgumentBuilder.isFork() as boolean
-myMCArgumentBuilder.isFork()
+myMCArgumentBuilder.isFork();
 ```
 ### redirect
 
@@ -170,7 +170,7 @@ Return Type: string
 
 ```zenscript
 MCArgumentBuilder.toString() as string
-myMCArgumentBuilder.toString()
+myMCArgumentBuilder.toString();
 ```
 
 ## Operators

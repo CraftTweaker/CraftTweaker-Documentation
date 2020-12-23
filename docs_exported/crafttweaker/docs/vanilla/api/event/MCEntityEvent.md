@@ -22,7 +22,7 @@ Return Type: [MCEntity](/vanilla/api/entity/MCEntity)
 
 ```zenscript
 MCEntityEvent.getEntity() as MCEntity
-myMCEntityEvent.getEntity()
+myMCEntityEvent.getEntity();
 ```
 
 ## Properties

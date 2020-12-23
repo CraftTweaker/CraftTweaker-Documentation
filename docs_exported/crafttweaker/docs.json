@@ -78,7 +78,7 @@
           "MCPlayerEntity": "vanilla/api/entity/MCPlayerEntity.md"
         },
         "Event": {
-          "IEvent": "vanilla/api/event/IEvent.md",
+          "CTEventManager": "vanilla/api/event/CTEventManager.md",
           "MCEntityEvent": "vanilla/api/event/MCEntityEvent.md",
           "MCEvent": "vanilla/api/event/MCEvent.md",
           "MCLivingEvent": "vanilla/api/event/MCLivingEvent.md",

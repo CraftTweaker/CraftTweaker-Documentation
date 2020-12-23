@@ -38,7 +38,7 @@ Return Type: int
 
 ```zenscript
 MCRootCommandNode.hashCode() as int
-myMCRootCommandNode.hashCode()
+myMCRootCommandNode.hashCode();
 ```
 ### isValidInput
 
@@ -56,7 +56,7 @@ Return Type: string
 
 ```zenscript
 MCRootCommandNode.toString() as string
-myMCRootCommandNode.toString()
+myMCRootCommandNode.toString();
 ```
 
 ## Operators

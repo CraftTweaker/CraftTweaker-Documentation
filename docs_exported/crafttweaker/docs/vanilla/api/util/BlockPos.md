@@ -40,7 +40,7 @@ Return Type: [BlockPos](/vanilla/api/util/BlockPos)
 
 ```zenscript
 BlockPos.add(pos as BlockPos) as BlockPos
-new BlockPos(0, 1, 2).add(new BlockPos(3, 2, 1))
+new BlockPos(0, 1, 2).add(new BlockPos(3, 2, 1));
 ```
 | Parameter | Type | Description |
 |-----------|------|-------------|
@@ -51,7 +51,7 @@ Return Type: [BlockPos](/vanilla/api/util/BlockPos)
 
 ```zenscript
 BlockPos.add(x as double, y as double, z as double) as BlockPos
-new BlockPos(0, 1, 2).add(50.21, -20.8, -25.2)
+new BlockPos(0, 1, 2).add(50.21, -20.8, -25.2);
 ```
 | Parameter | Type | Description |
 |-----------|------|-------------|
@@ -66,7 +66,7 @@ Return Type: [BlockPos](/vanilla/api/util/BlockPos)
 
 ```zenscript
 BlockPos.crossProduct(pos as BlockPos) as BlockPos
-new BlockPos(0, 1, 2).crossProduct(new BlockPos(5, 8, 2);)
+new BlockPos(0, 1, 2).crossProduct(new BlockPos(5, 8, 2););
 ```
 | Parameter | Type | Description |
 |-----------|------|-------------|
@@ -79,7 +79,7 @@ Return Type: double
 
 ```zenscript
 BlockPos.distanceSq(to as BlockPos) as double
-new BlockPos(0, 1, 2).distanceSq(new BlockPos(256, 128, 10);)
+new BlockPos(0, 1, 2).distanceSq(new BlockPos(256, 128, 10););
 ```
 | Parameter | Type | Description |
 |-----------|------|-------------|
@@ -90,7 +90,7 @@ Return Type: double
 
 ```zenscript
 BlockPos.distanceSq(to as BlockPos, useCenter as boolean) as double
-new BlockPos(0, 1, 2).distanceSq(new BlockPos(256, 128, 10);, true)
+new BlockPos(0, 1, 2).distanceSq(new BlockPos(256, 128, 10);, true);
 ```
 | Parameter | Type | Description |
 |-----------|------|-------------|
@@ -102,7 +102,7 @@ Return Type: double
 
 ```zenscript
 BlockPos.distanceSq(x as double, y as double, z as double, useCenter as boolean) as double
-new BlockPos(0, 1, 2).distanceSq(500.25, 250.75, 100.20, false)
+new BlockPos(0, 1, 2).distanceSq(500.25, 250.75, 100.20, false);
 ```
 | Parameter | Type | Description |
 |-----------|------|-------------|
@@ -118,7 +118,7 @@ Return Type: [BlockPos](/vanilla/api/util/BlockPos)
 
 ```zenscript
 BlockPos.down() as BlockPos
-new BlockPos(0, 1, 2).down()
+new BlockPos(0, 1, 2).down();
 ```
 Creates a new BlockPos based on this BlockPos that is n block(s) lower than this BlockPos
 
@@ -138,7 +138,7 @@ Return Type: [BlockPos](/vanilla/api/util/BlockPos)
 
 ```zenscript
 BlockPos.east() as BlockPos
-new BlockPos(0, 1, 2).east()
+new BlockPos(0, 1, 2).east();
 ```
 Creates a new BlockPos based on this BlockPos that is n block(s) east of this BlockPos
 
@@ -146,7 +146,7 @@ Return Type: [BlockPos](/vanilla/api/util/BlockPos)
 
 ```zenscript
 BlockPos.east(n as int) as BlockPos
-new BlockPos(0, 1, 2).east(2)
+new BlockPos(0, 1, 2).east(2);
 ```
 | Parameter | Type | Description |
 |-----------|------|-------------|
@@ -159,7 +159,7 @@ Return Type: int
 
 ```zenscript
 BlockPos.manhattanDistance(other as BlockPos) as int
-new BlockPos(0, 1, 2).manhattanDistance(new BlockPos(4, 5, 6))
+new BlockPos(0, 1, 2).manhattanDistance(new BlockPos(4, 5, 6));
 ```
 | Parameter | Type | Description |
 |-----------|------|-------------|
@@ -172,7 +172,7 @@ Return Type: [BlockPos](/vanilla/api/util/BlockPos)
 
 ```zenscript
 BlockPos.north() as BlockPos
-new BlockPos(0, 1, 2).north()
+new BlockPos(0, 1, 2).north();
 ```
 Creates a new BlockPos based on this BlockPos that is n block(s) north of this BlockPos
 
@@ -180,7 +180,7 @@ Return Type: [BlockPos](/vanilla/api/util/BlockPos)
 
 ```zenscript
 BlockPos.north(n as int) as BlockPos
-new BlockPos(0, 1, 2).north(10)
+new BlockPos(0, 1, 2).north(10);
 ```
 | Parameter | Type | Description |
 |-----------|------|-------------|
@@ -193,7 +193,7 @@ Return Type: [BlockPos](/vanilla/api/util/BlockPos)
 
 ```zenscript
 BlockPos.offset(direction as Direction) as BlockPos
-new BlockPos(0, 1, 2).offset(<direction:east>)
+new BlockPos(0, 1, 2).offset(<direction:east>);
 ```
 | Parameter | Type | Description |
 |-----------|------|-------------|
@@ -204,7 +204,7 @@ Return Type: [BlockPos](/vanilla/api/util/BlockPos)
 
 ```zenscript
 BlockPos.offset(direction as Direction, n as int) as BlockPos
-new BlockPos(0, 1, 2).offset(<direction:south>, 3)
+new BlockPos(0, 1, 2).offset(<direction:south>, 3);
 ```
 | Parameter | Type | Description |
 |-----------|------|-------------|
@@ -218,7 +218,7 @@ Return Type: [BlockPos](/vanilla/api/util/BlockPos)
 
 ```zenscript
 BlockPos.south() as BlockPos
-new BlockPos(0, 1, 2).south()
+new BlockPos(0, 1, 2).south();
 ```
 Creates a new BlockPos based on this BlockPos that is n block(s) south of this BlockPos
 
@@ -226,7 +226,7 @@ Return Type: [BlockPos](/vanilla/api/util/BlockPos)
 
 ```zenscript
 BlockPos.south(n as int) as BlockPos
-new BlockPos(0, 1, 2).south(12)
+new BlockPos(0, 1, 2).south(12);
 ```
 | Parameter | Type | Description |
 |-----------|------|-------------|
@@ -239,7 +239,7 @@ Return Type: [BlockPos](/vanilla/api/util/BlockPos)
 
 ```zenscript
 BlockPos.subtract(pos as BlockPos) as BlockPos
-new BlockPos(0, 1, 2).subtract(new BlockPos(2, 1, 3))
+new BlockPos(0, 1, 2).subtract(new BlockPos(2, 1, 3));
 ```
 | Parameter | Type | Description |
 |-----------|------|-------------|
@@ -252,7 +252,7 @@ Return Type: [BlockPos](/vanilla/api/util/BlockPos)
 
 ```zenscript
 BlockPos.up() as BlockPos
-new BlockPos(0, 1, 2).up()
+new BlockPos(0, 1, 2).up();
 ```
 Creates a new BlockPos based on this BlockPos that is n block(s) higher than this BlockPos
 
@@ -260,7 +260,7 @@ Return Type: [BlockPos](/vanilla/api/util/BlockPos)
 
 ```zenscript
 BlockPos.up(n as int) as BlockPos
-new BlockPos(0, 1, 2).up(45)
+new BlockPos(0, 1, 2).up(45);
 ```
 | Parameter | Type | Description |
 |-----------|------|-------------|
@@ -273,7 +273,7 @@ Return Type: [BlockPos](/vanilla/api/util/BlockPos)
 
 ```zenscript
 BlockPos.west() as BlockPos
-new BlockPos(0, 1, 2).west()
+new BlockPos(0, 1, 2).west();
 ```
 Creates a new BlockPos based on this BlockPos that is n block(s) west of this BlockPos
 
@@ -281,7 +281,7 @@ Return Type: [BlockPos](/vanilla/api/util/BlockPos)
 
 ```zenscript
 BlockPos.west(n as int) as BlockPos
-new BlockPos(0, 1, 2).west(120)
+new BlockPos(0, 1, 2).west(120);
 ```
 | Parameter | Type | Description |
 |-----------|------|-------------|
@@ -294,7 +294,7 @@ Return Type: boolean
 
 ```zenscript
 BlockPos.withinDistance(pos as BlockPos, distance as double) as boolean
-new BlockPos(0, 1, 2).withinDistance(new BlockPos(80, 75, 54);, 10)
+new BlockPos(0, 1, 2).withinDistance(new BlockPos(80, 75, 54);, 10);
 ```
 | Parameter | Type | Description |
 |-----------|------|-------------|

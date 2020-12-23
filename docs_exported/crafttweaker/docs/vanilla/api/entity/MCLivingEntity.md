@@ -52,7 +52,7 @@ Return Type: boolean
 
 ```zenscript
 MCLivingEntity.canBeRiddenInWater() as boolean
-myMCLivingEntity.canBeRiddenInWater()
+myMCLivingEntity.canBeRiddenInWater();
 ```
 ### canBreatheUnderwater
 
@@ -60,7 +60,7 @@ Return Type: boolean
 
 ```zenscript
 MCLivingEntity.canBreatheUnderwater() as boolean
-myMCLivingEntity.canBreatheUnderwater()
+myMCLivingEntity.canBreatheUnderwater();
 ```
 ### canEquip
 
@@ -78,7 +78,7 @@ Return Type: boolean
 
 ```zenscript
 MCLivingEntity.clearActivePotions() as boolean
-myMCLivingEntity.clearActivePotions()
+myMCLivingEntity.clearActivePotions();
 ```
 ### getAIMoveSpeed
 
@@ -86,7 +86,7 @@ Return Type: float
 
 ```zenscript
 MCLivingEntity.getAIMoveSpeed() as float
-myMCLivingEntity.getAIMoveSpeed()
+myMCLivingEntity.getAIMoveSpeed();
 ```
 ### getActivePotionEffect
 
@@ -104,7 +104,7 @@ Return Type: Collection&lt;[MCPotionEffectInstance](/vanilla/api/potion/MCPotion
 
 ```zenscript
 MCLivingEntity.getActivePotionEffects() as Collection<MCPotionEffectInstance>
-myMCLivingEntity.getActivePotionEffects()
+myMCLivingEntity.getActivePotionEffects();
 ```
 ### getActivePotionMap
 
@@ -112,7 +112,7 @@ Return Type: [MCPotionEffectInstance](/vanilla/api/potion/MCPotionEffectInstance
 
 ```zenscript
 MCLivingEntity.getActivePotionMap() as MCPotionEffectInstance[MCPotionEffect]
-myMCLivingEntity.getActivePotionMap()
+myMCLivingEntity.getActivePotionMap();
 ```
 ### getArmorCoverPercentage
 
@@ -120,7 +120,7 @@ Return Type: float
 
 ```zenscript
 MCLivingEntity.getArmorCoverPercentage() as float
-myMCLivingEntity.getArmorCoverPercentage()
+myMCLivingEntity.getArmorCoverPercentage();
 ```
 ### getArmorInventoryList
 
@@ -128,7 +128,7 @@ Return Type: stdlib.Iterable&lt;[ItemStack](/vanilla/api/item/ItemStack)&gt;
 
 ```zenscript
 MCLivingEntity.getArmorInventoryList() as stdlib.Iterable<ItemStack>
-myMCLivingEntity.getArmorInventoryList()
+myMCLivingEntity.getArmorInventoryList();
 ```
 ### getArrowCountInEntity
 
@@ -136,7 +136,7 @@ Return Type: int
 
 ```zenscript
 MCLivingEntity.getArrowCountInEntity() as int
-myMCLivingEntity.getArrowCountInEntity()
+myMCLivingEntity.getArrowCountInEntity();
 ```
 ### getAttackingEntity
 
@@ -144,7 +144,7 @@ Return Type: [MCLivingEntity](/vanilla/api/entity/MCLivingEntity)
 
 ```zenscript
 MCLivingEntity.getAttackingEntity() as MCLivingEntity
-myMCLivingEntity.getAttackingEntity()
+myMCLivingEntity.getAttackingEntity();
 ```
 ### getBeeStingCount
 
@@ -152,7 +152,7 @@ Return Type: int
 
 ```zenscript
 MCLivingEntity.getBeeStingCount() as int
-myMCLivingEntity.getBeeStingCount()
+myMCLivingEntity.getBeeStingCount();
 ```
 ### getHealth
 
@@ -160,7 +160,7 @@ Return Type: float
 
 ```zenscript
 MCLivingEntity.getHealth() as float
-myMCLivingEntity.getHealth()
+myMCLivingEntity.getHealth();
 ```
 ### getHeldItemMainhand
 
@@ -168,7 +168,7 @@ Return Type: [ItemStack](/vanilla/api/item/ItemStack)
 
 ```zenscript
 MCLivingEntity.getHeldItemMainhand() as ItemStack
-myMCLivingEntity.getHeldItemMainhand()
+myMCLivingEntity.getHeldItemMainhand();
 ```
 ### getHeldItemOffhand
 
@@ -176,7 +176,7 @@ Return Type: [ItemStack](/vanilla/api/item/ItemStack)
 
 ```zenscript
 MCLivingEntity.getHeldItemOffhand() as ItemStack
-myMCLivingEntity.getHeldItemOffhand()
+myMCLivingEntity.getHeldItemOffhand();
 ```
 ### getIdleTime
 
@@ -184,7 +184,7 @@ Return Type: int
 
 ```zenscript
 MCLivingEntity.getIdleTime() as int
-myMCLivingEntity.getIdleTime()
+myMCLivingEntity.getIdleTime();
 ```
 ### getLastAttackedEntity
 
@@ -192,7 +192,7 @@ Return Type: [MCLivingEntity](/vanilla/api/entity/MCLivingEntity)
 
 ```zenscript
 MCLivingEntity.getLastAttackedEntity() as MCLivingEntity
-myMCLivingEntity.getLastAttackedEntity()
+myMCLivingEntity.getLastAttackedEntity();
 ```
 ### getLastAttackedEntityTime
 
@@ -200,7 +200,7 @@ Return Type: int
 
 ```zenscript
 MCLivingEntity.getLastAttackedEntityTime() as int
-myMCLivingEntity.getLastAttackedEntityTime()
+myMCLivingEntity.getLastAttackedEntityTime();
 ```
 ### getMaxHealth
 
@@ -208,7 +208,7 @@ Return Type: float
 
 ```zenscript
 MCLivingEntity.getMaxHealth() as float
-myMCLivingEntity.getMaxHealth()
+myMCLivingEntity.getMaxHealth();
 ```
 ### getRevengeTarget
 
@@ -216,7 +216,7 @@ Return Type: [MCLivingEntity](/vanilla/api/entity/MCLivingEntity)
 
 ```zenscript
 MCLivingEntity.getRevengeTarget() as MCLivingEntity
-myMCLivingEntity.getRevengeTarget()
+myMCLivingEntity.getRevengeTarget();
 ```
 ### getRevengeTimer
 
@@ -224,7 +224,7 @@ Return Type: int
 
 ```zenscript
 MCLivingEntity.getRevengeTimer() as int
-myMCLivingEntity.getRevengeTimer()
+myMCLivingEntity.getRevengeTimer();
 ```
 ### getShouldBeDead
 
@@ -232,7 +232,7 @@ Return Type: boolean
 
 ```zenscript
 MCLivingEntity.getShouldBeDead() as boolean
-myMCLivingEntity.getShouldBeDead()
+myMCLivingEntity.getShouldBeDead();
 ```
 ### getTotalArmorValue
 
@@ -240,7 +240,7 @@ Return Type: int
 
 ```zenscript
 MCLivingEntity.getTotalArmorValue() as int
-myMCLivingEntity.getTotalArmorValue()
+myMCLivingEntity.getTotalArmorValue();
 ```
 ### heal
 
@@ -258,7 +258,7 @@ Return Type: boolean
 
 ```zenscript
 MCLivingEntity.isAlive() as boolean
-myMCLivingEntity.isAlive()
+myMCLivingEntity.isAlive();
 ```
 ### isChild
 
@@ -266,7 +266,7 @@ Return Type: boolean
 
 ```zenscript
 MCLivingEntity.isChild() as boolean
-myMCLivingEntity.isChild()
+myMCLivingEntity.isChild();
 ```
 ### isEntityUndead
 
@@ -274,7 +274,7 @@ Return Type: boolean
 
 ```zenscript
 MCLivingEntity.isEntityUndead() as boolean
-myMCLivingEntity.isEntityUndead()
+myMCLivingEntity.isEntityUndead();
 ```
 ### isOnLadder
 
@@ -282,7 +282,7 @@ Return Type: boolean
 
 ```zenscript
 MCLivingEntity.isOnLadder() as boolean
-myMCLivingEntity.isOnLadder()
+myMCLivingEntity.isOnLadder();
 ```
 ### isPotionActive
 
@@ -310,7 +310,7 @@ Return Type: boolean
 
 ```zenscript
 MCLivingEntity.isWaterSensitive() as boolean
-myMCLivingEntity.isWaterSensitive()
+myMCLivingEntity.isWaterSensitive();
 ```
 ### removeActivePotionEffect
 

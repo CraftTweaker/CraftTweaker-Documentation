@@ -34,7 +34,7 @@ Return Type: [MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)
 
 ```zenscript
 MCParsedCommandNode.getNode() as MCCommandNode
-myMCParsedCommandNode.getNode()
+myMCParsedCommandNode.getNode();
 ```
 ### getRange
 
@@ -42,7 +42,7 @@ Return Type: [MCStringRange](/vanilla/api/commands/custom/MCStringRange)
 
 ```zenscript
 MCParsedCommandNode.getRange() as MCStringRange
-myMCParsedCommandNode.getRange()
+myMCParsedCommandNode.getRange();
 ```
 ### hashCode
 
@@ -50,7 +50,7 @@ Return Type: int
 
 ```zenscript
 MCParsedCommandNode.hashCode() as int
-myMCParsedCommandNode.hashCode()
+myMCParsedCommandNode.hashCode();
 ```
 ### toString
 
@@ -58,7 +58,7 @@ Return Type: string
 
 ```zenscript
 MCParsedCommandNode.toString() as string
-myMCParsedCommandNode.toString()
+myMCParsedCommandNode.toString();
 ```
 
 ## Operators

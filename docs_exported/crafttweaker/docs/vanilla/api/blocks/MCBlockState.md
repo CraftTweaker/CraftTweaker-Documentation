@@ -35,7 +35,7 @@ Return Type: string[string]
 
 ```zenscript
 MCBlockState.getProperties() as string[string]
-myMCBlockState.getProperties()
+myMCBlockState.getProperties();
 ```
 ### getPropertyNames
 
@@ -43,7 +43,7 @@ Return Type: stdlib.List&lt;string&gt;
 
 ```zenscript
 MCBlockState.getPropertyNames() as stdlib.List<string>
-myMCBlockState.getPropertyNames()
+myMCBlockState.getPropertyNames();
 ```
 ### getPropertyValue
 

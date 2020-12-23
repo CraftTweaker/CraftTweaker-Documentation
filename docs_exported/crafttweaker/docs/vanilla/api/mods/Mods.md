@@ -23,7 +23,7 @@ Return Type: [ModInfo](/vanilla/api/mods/ModInfo)
 
 ```zenscript
 Mods.getMod(modid as string) as ModInfo
-loadedMods.getMod("minecraft")
+loadedMods.getMod("minecraft");
 ```
 | Parameter | Type | Description |
 |-----------|------|-------------|
@@ -36,7 +36,7 @@ Return Type: boolean
 
 ```zenscript
 Mods.isModLoaded(modid as string) as boolean
-loadedMods.isModLoaded("minecraft")
+loadedMods.isModLoaded("minecraft");
 ```
 | Parameter | Type | Description |
 |-----------|------|-------------|

@@ -59,7 +59,7 @@ Return Type: string
 
 ```zenscript
 MCResourceLocation.getNamespace() as string
-myMCResourceLocation.getNamespace()
+myMCResourceLocation.getNamespace();
 ```
 ### getPath
 
@@ -67,7 +67,7 @@ Return Type: string
 
 ```zenscript
 MCResourceLocation.getPath() as string
-myMCResourceLocation.getPath()
+myMCResourceLocation.getPath();
 ```
 ### hashCode
 
@@ -75,7 +75,7 @@ Return Type: int
 
 ```zenscript
 MCResourceLocation.hashCode() as int
-myMCResourceLocation.hashCode()
+myMCResourceLocation.hashCode();
 ```
 ### toString
 
@@ -83,7 +83,7 @@ Return Type: string
 
 ```zenscript
 MCResourceLocation.toString() as string
-myMCResourceLocation.toString()
+myMCResourceLocation.toString();
 ```
 
 ## Properties

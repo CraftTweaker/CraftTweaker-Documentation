@@ -40,7 +40,7 @@ Return Type: void
 
 ```zenscript
 MCFood.clearEffects() as void
-myMCFood.clearEffects()
+myMCFood.clearEffects();
 ```
 ### removeEffect
 

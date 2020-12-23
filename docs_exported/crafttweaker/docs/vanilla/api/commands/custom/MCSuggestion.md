@@ -75,7 +75,7 @@ Return Type: [MCStringRange](/vanilla/api/commands/custom/MCStringRange)
 
 ```zenscript
 MCSuggestion.getRange() as MCStringRange
-myMCSuggestion.getRange()
+myMCSuggestion.getRange();
 ```
 ### getText
 
@@ -83,7 +83,7 @@ Return Type: string
 
 ```zenscript
 MCSuggestion.getText() as string
-myMCSuggestion.getText()
+myMCSuggestion.getText();
 ```
 ### getTooltip
 
@@ -91,7 +91,7 @@ Return Type: string
 
 ```zenscript
 MCSuggestion.getTooltip() as string
-myMCSuggestion.getTooltip()
+myMCSuggestion.getTooltip();
 ```
 ### hashCode
 
@@ -99,7 +99,7 @@ Return Type: int
 
 ```zenscript
 MCSuggestion.hashCode() as int
-myMCSuggestion.hashCode()
+myMCSuggestion.hashCode();
 ```
 ### toString
 
@@ -107,7 +107,7 @@ Return Type: string
 
 ```zenscript
 MCSuggestion.toString() as string
-myMCSuggestion.toString()
+myMCSuggestion.toString();
 ```
 
 ## Operators

@@ -40,7 +40,7 @@ Return Type: int
 
 ```zenscript
 DirectionAxis.getCoordinate(x as int, y as int, z as int) as int
-<directionaxis:x>.getCoordinate(1, 2, 3)
+<directionaxis:x>.getCoordinate(1, 2, 3);
 ```
 | Parameter | Type | Description |
 |-----------|------|-------------|
@@ -53,7 +53,7 @@ Return Type: int
 
 ```zenscript
 DirectionAxis.hashCode() as int
-<directionaxis:x>.hashCode()
+<directionaxis:x>.hashCode();
 ```
 
 ## Properties

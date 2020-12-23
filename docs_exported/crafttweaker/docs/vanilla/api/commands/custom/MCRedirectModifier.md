@@ -54,7 +54,7 @@ Return Type: int
 
 ```zenscript
 MCRedirectModifier.hashCode() as int
-myMCRedirectModifier.hashCode()
+myMCRedirectModifier.hashCode();
 ```
 ### toString
 
@@ -62,7 +62,7 @@ Return Type: string
 
 ```zenscript
 MCRedirectModifier.toString() as string
-myMCRedirectModifier.toString()
+myMCRedirectModifier.toString();
 ```
 
 ## Operators

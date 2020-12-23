@@ -56,7 +56,7 @@ Return Type: void
 
 ```zenscript
 IItemStack.clearCustomName() as void
-<item:minecraft:dirt>.clearCustomName()
+<item:minecraft:dirt>.clearCustomName();
 ```
 ### clearTooltip
 
@@ -64,7 +64,7 @@ Return Type: void
 
 ```zenscript
 IItemStack.clearTooltip() as void
-<item:minecraft:dirt>.clearTooltip()
+<item:minecraft:dirt>.clearTooltip();
 ```
 ### copy
 
@@ -74,7 +74,7 @@ Return Type: [IItemStack](/vanilla/api/items/IItemStack)
 
 ```zenscript
 IItemStack.copy() as IItemStack
-<item:minecraft:dirt>.copy()
+<item:minecraft:dirt>.copy();
 ```
 ### getDefinition
 
@@ -82,7 +82,7 @@ Return Type: [MCItemDefinition](/vanilla/api/item/MCItemDefinition)
 
 ```zenscript
 IItemStack.getDefinition() as MCItemDefinition
-<item:minecraft:dirt>.getDefinition()
+<item:minecraft:dirt>.getDefinition();
 ```
 ### getInternal
 
@@ -92,7 +92,7 @@ Return Type: [ItemStack](/vanilla/api/item/ItemStack)
 
 ```zenscript
 IItemStack.getInternal() as ItemStack
-<item:minecraft:dirt>.getInternal()
+<item:minecraft:dirt>.getInternal();
 ```
 ### modifyTooltip
 
@@ -110,7 +110,7 @@ Return Type: [IItemStack](/vanilla/api/items/IItemStack)
 
 ```zenscript
 IItemStack.mutable() as IItemStack
-<item:minecraft:dirt>.mutable()
+<item:minecraft:dirt>.mutable();
 ```
 ### removeTooltip
 
@@ -130,7 +130,7 @@ Return Type: [IItemStack](/vanilla/api/items/IItemStack)
 
 ```zenscript
 IItemStack.setDisplayName(name as string) as IItemStack
-<item:minecraft:dirt>.setDisplayName("totally not dirt")
+<item:minecraft:dirt>.setDisplayName("totally not dirt");
 ```
 | Parameter | Type | Description |
 |-----------|------|-------------|
@@ -153,7 +153,7 @@ Return Type: [IItemStack](/vanilla/api/items/IItemStack)
 
 ```zenscript
 IItemStack.withDamage(damage as int) as IItemStack
-<item:minecraft:dirt>.withDamage(10)
+<item:minecraft:dirt>.withDamage(10);
 ```
 | Parameter | Type | Description |
 |-----------|------|-------------|
@@ -166,7 +166,7 @@ Return Type: [IItemStack](/vanilla/api/items/IItemStack)
 
 ```zenscript
 IItemStack.withTag(tag as IData) as IItemStack
-<item:minecraft:dirt>.withTag({Display: {lore: ["Hello"]}})
+<item:minecraft:dirt>.withTag({Display: {lore: ["Hello"]}});
 ```
 | Parameter | Type | Description |
 |-----------|------|-------------|

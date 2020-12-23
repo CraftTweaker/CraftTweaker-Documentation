@@ -45,6 +45,6 @@ Return Type: [ByteData](/vanilla/api/data/ByteData)
 
 ```zenscript
 BoolData.getByteData() as ByteData
-true.getByteData()
+true.getByteData();
 ```
 

@@ -22,7 +22,7 @@ Return Type: [MCPlayerEntity](/vanilla/api/entity/MCPlayerEntity)
 
 ```zenscript
 MCPlayerEvent.getPlayer() as MCPlayerEntity
-myMCPlayerEvent.getPlayer()
+myMCPlayerEvent.getPlayer();
 ```
 
 ## Properties

@@ -22,31 +22,31 @@ Return Type: float
 
 ```zenscript
 MCAnvilRepairEvent.getBreakChance() as float
-myMCAnvilRepairEvent.getBreakChance()
+myMCAnvilRepairEvent.getBreakChance();
 ```
 ### getIngredientInput
 
-Return Type: [ItemStack](/vanilla/api/item/ItemStack)
+Return Type: [IItemStack](/vanilla/api/items/IItemStack)
 
 ```zenscript
-MCAnvilRepairEvent.getIngredientInput() as ItemStack
-myMCAnvilRepairEvent.getIngredientInput()
+MCAnvilRepairEvent.getIngredientInput() as IItemStack
+myMCAnvilRepairEvent.getIngredientInput();
 ```
 ### getItemInput
 
-Return Type: [ItemStack](/vanilla/api/item/ItemStack)
+Return Type: [IItemStack](/vanilla/api/items/IItemStack)
 
 ```zenscript
-MCAnvilRepairEvent.getItemInput() as ItemStack
-myMCAnvilRepairEvent.getItemInput()
+MCAnvilRepairEvent.getItemInput() as IItemStack
+myMCAnvilRepairEvent.getItemInput();
 ```
 ### getItemResult
 
-Return Type: [ItemStack](/vanilla/api/item/ItemStack)
+Return Type: [IItemStack](/vanilla/api/items/IItemStack)
 
 ```zenscript
-MCAnvilRepairEvent.getItemResult() as ItemStack
-myMCAnvilRepairEvent.getItemResult()
+MCAnvilRepairEvent.getItemResult() as IItemStack
+myMCAnvilRepairEvent.getItemResult();
 ```
 ### setBreakChance
 
@@ -64,7 +64,7 @@ MCAnvilRepairEvent.setBreakChance(breakChance as float) as void
 | Name | Type | Has Getter | Has Setter |
 |------|------|------------|------------|
 | breakChance | float | true | true |
-| ingredientInput | [ItemStack](/vanilla/api/item/ItemStack) | true | false |
-| itemInput | [ItemStack](/vanilla/api/item/ItemStack) | true | false |
-| itemResult | [ItemStack](/vanilla/api/item/ItemStack) | true | false |
+| ingredientInput | [IItemStack](/vanilla/api/items/IItemStack) | true | false |
+| itemInput | [IItemStack](/vanilla/api/items/IItemStack) | true | false |
+| itemResult | [IItemStack](/vanilla/api/items/IItemStack) | true | false |
 

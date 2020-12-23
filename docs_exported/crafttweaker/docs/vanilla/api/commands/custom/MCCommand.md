@@ -44,7 +44,7 @@ Return Type: int
 
 ```zenscript
 MCCommand.hashCode() as int
-myMCCommand.hashCode()
+myMCCommand.hashCode();
 ```
 ### run
 
@@ -62,7 +62,7 @@ Return Type: string
 
 ```zenscript
 MCCommand.toString() as string
-myMCCommand.toString()
+myMCCommand.toString();
 ```
 
 ## Operators

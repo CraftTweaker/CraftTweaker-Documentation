@@ -44,7 +44,7 @@ Return Type: [MCArgumentBuilder](/vanilla/api/commands/custom/MCArgumentBuilder)
 
 ```zenscript
 MCCommandNode.createBuilder() as MCArgumentBuilder
-myMCCommandNode.createBuilder()
+myMCCommandNode.createBuilder();
 ```
 ### equals
 
@@ -82,7 +82,7 @@ Return Type: Collection&lt;[MCCommandNode](/vanilla/api/commands/custom/MCComman
 
 ```zenscript
 MCCommandNode.getChildren() as Collection<MCCommandNode>
-myMCCommandNode.getChildren()
+myMCCommandNode.getChildren();
 ```
 ### getCommand
 
@@ -90,7 +90,7 @@ Return Type: [MCCommand](/vanilla/api/commands/custom/MCCommand)
 
 ```zenscript
 MCCommandNode.getCommand() as MCCommand
-myMCCommandNode.getCommand()
+myMCCommandNode.getCommand();
 ```
 ### getExamples
 
@@ -98,7 +98,7 @@ Return Type: Collection&lt;string&gt;
 
 ```zenscript
 MCCommandNode.getExamples() as Collection<string>
-myMCCommandNode.getExamples()
+myMCCommandNode.getExamples();
 ```
 ### getName
 
@@ -106,7 +106,7 @@ Return Type: string
 
 ```zenscript
 MCCommandNode.getName() as string
-myMCCommandNode.getName()
+myMCCommandNode.getName();
 ```
 ### getRedirect
 
@@ -114,7 +114,7 @@ Return Type: [MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)
 
 ```zenscript
 MCCommandNode.getRedirect() as MCCommandNode
-myMCCommandNode.getRedirect()
+myMCCommandNode.getRedirect();
 ```
 ### getRedirectModifier
 
@@ -122,7 +122,7 @@ Return Type: [MCRedirectModifier](/vanilla/api/commands/custom/MCRedirectModifie
 
 ```zenscript
 MCCommandNode.getRedirectModifier() as MCRedirectModifier
-myMCCommandNode.getRedirectModifier()
+myMCCommandNode.getRedirectModifier();
 ```
 ### getRelevantNodes
 
@@ -140,7 +140,7 @@ Return Type: Predicate&lt;[MCCommandSource](/vanilla/api/commands/custom/MCComma
 
 ```zenscript
 MCCommandNode.getRequirement() as Predicate<MCCommandSource>
-myMCCommandNode.getRequirement()
+myMCCommandNode.getRequirement();
 ```
 ### getUsageText
 
@@ -148,7 +148,7 @@ Return Type: string
 
 ```zenscript
 MCCommandNode.getUsageText() as string
-myMCCommandNode.getUsageText()
+myMCCommandNode.getUsageText();
 ```
 ### hashCode
 
@@ -156,7 +156,7 @@ Return Type: int
 
 ```zenscript
 MCCommandNode.hashCode() as int
-myMCCommandNode.hashCode()
+myMCCommandNode.hashCode();
 ```
 ### isFork
 
@@ -164,7 +164,7 @@ Return Type: boolean
 
 ```zenscript
 MCCommandNode.isFork() as boolean
-myMCCommandNode.isFork()
+myMCCommandNode.isFork();
 ```
 ### listSuggestions
 
@@ -194,7 +194,7 @@ Return Type: string
 
 ```zenscript
 MCCommandNode.toString() as string
-myMCCommandNode.toString()
+myMCCommandNode.toString();
 ```
 
 ## Operators

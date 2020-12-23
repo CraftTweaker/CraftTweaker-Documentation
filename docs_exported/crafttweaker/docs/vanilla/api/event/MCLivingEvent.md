@@ -22,7 +22,7 @@ Return Type: [MCLivingEntity](/vanilla/api/entity/MCLivingEntity)
 
 ```zenscript
 MCLivingEvent.getEntityLiving() as MCLivingEntity
-myMCLivingEvent.getEntityLiving()
+myMCLivingEvent.getEntityLiving();
 ```
 
 ## Properties

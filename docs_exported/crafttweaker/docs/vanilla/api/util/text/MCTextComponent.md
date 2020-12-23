@@ -75,7 +75,7 @@ Return Type: [MCTextComponent](/vanilla/api/util/text/MCTextComponent)
 
 ```zenscript
 MCTextComponent.copyRaw() as MCTextComponent
-myMCTextComponent.copyRaw()
+myMCTextComponent.copyRaw();
 ```
 ### deepCopy
 
@@ -83,7 +83,7 @@ Return Type: [MCTextComponent](/vanilla/api/util/text/MCTextComponent)
 
 ```zenscript
 MCTextComponent.deepCopy() as MCTextComponent
-myMCTextComponent.deepCopy()
+myMCTextComponent.deepCopy();
 ```
 ### getString
 
@@ -91,7 +91,7 @@ Return Type: string
 
 ```zenscript
 MCTextComponent.getString() as string
-myMCTextComponent.getString()
+myMCTextComponent.getString();
 ```
 ### getStringTruncated
 
@@ -109,7 +109,7 @@ Return Type: string
 
 ```zenscript
 MCTextComponent.getUnformattedComponentText() as string
-myMCTextComponent.getUnformattedComponentText()
+myMCTextComponent.getUnformattedComponentText();
 ```
 ### setStyle
 

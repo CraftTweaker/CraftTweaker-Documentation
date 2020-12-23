@@ -15,7 +15,7 @@ import crafttweaker.api.util.text.MCStyle;
 No Description Provided
 ```zenscript
 new MCStyle() as MCStyle
-new MCStyle()
+new MCStyle();
 ```
 
 ## Methods
@@ -36,7 +36,7 @@ Return Type: boolean
 
 ```zenscript
 MCStyle.getBold() as boolean
-myMCStyle.getBold()
+myMCStyle.getBold();
 ```
 ### getFontId
 
@@ -44,7 +44,7 @@ Return Type: [MCResourceLocation](/vanilla/api/util/MCResourceLocation)
 
 ```zenscript
 MCStyle.getFontId() as MCResourceLocation
-myMCStyle.getFontId()
+myMCStyle.getFontId();
 ```
 ### getInsertion
 
@@ -52,7 +52,7 @@ Return Type: string
 
 ```zenscript
 MCStyle.getInsertion() as string
-myMCStyle.getInsertion()
+myMCStyle.getInsertion();
 ```
 ### getItalic
 
@@ -60,7 +60,7 @@ Return Type: boolean
 
 ```zenscript
 MCStyle.getItalic() as boolean
-myMCStyle.getItalic()
+myMCStyle.getItalic();
 ```
 ### getObfuscated
 
@@ -68,7 +68,7 @@ Return Type: boolean
 
 ```zenscript
 MCStyle.getObfuscated() as boolean
-myMCStyle.getObfuscated()
+myMCStyle.getObfuscated();
 ```
 ### getStrikethrough
 
@@ -76,7 +76,7 @@ Return Type: boolean
 
 ```zenscript
 MCStyle.getStrikethrough() as boolean
-myMCStyle.getStrikethrough()
+myMCStyle.getStrikethrough();
 ```
 ### getUnderlined
 
@@ -84,7 +84,7 @@ Return Type: boolean
 
 ```zenscript
 MCStyle.getUnderlined() as boolean
-myMCStyle.getUnderlined()
+myMCStyle.getUnderlined();
 ```
 ### hashCode
 
@@ -92,7 +92,7 @@ Return Type: int
 
 ```zenscript
 MCStyle.hashCode() as int
-myMCStyle.hashCode()
+myMCStyle.hashCode();
 ```
 ### isEmpty
 
@@ -102,7 +102,7 @@ Return Type: boolean
 
 ```zenscript
 MCStyle.isEmpty() as boolean
-myMCStyle.isEmpty()
+myMCStyle.isEmpty();
 ```
 ### mergeStyle
 
@@ -212,6 +212,6 @@ Return Type: string
 
 ```zenscript
 MCStyle.toString() as string
-myMCStyle.toString()
+myMCStyle.toString();
 ```
 

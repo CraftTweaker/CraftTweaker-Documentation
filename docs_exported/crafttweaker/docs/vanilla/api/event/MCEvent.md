@@ -18,7 +18,7 @@ Return Type: boolean
 
 ```zenscript
 MCEvent.hasResult() as boolean
-myMCEvent.hasResult()
+myMCEvent.hasResult();
 ```
 ### isCancelable
 
@@ -26,7 +26,7 @@ Return Type: boolean
 
 ```zenscript
 MCEvent.isCancelable() as boolean
-myMCEvent.isCancelable()
+myMCEvent.isCancelable();
 ```
 ### isCanceled
 
@@ -34,7 +34,7 @@ Return Type: boolean
 
 ```zenscript
 MCEvent.isCanceled() as boolean
-myMCEvent.isCanceled()
+myMCEvent.isCanceled();
 ```
 ### setCanceled
 

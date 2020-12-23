@@ -34,7 +34,7 @@ Return Type: [MCSuggestions](/vanilla/api/commands/custom/MCSuggestions)
 
 ```zenscript
 MCSuggestionsBuilder.build() as MCSuggestions
-myMCSuggestionsBuilder.build()
+myMCSuggestionsBuilder.build();
 ```
 ### createOffset
 
@@ -62,7 +62,7 @@ Return Type: string
 
 ```zenscript
 MCSuggestionsBuilder.getInput() as string
-myMCSuggestionsBuilder.getInput()
+myMCSuggestionsBuilder.getInput();
 ```
 ### getRemaining
 
@@ -70,7 +70,7 @@ Return Type: string
 
 ```zenscript
 MCSuggestionsBuilder.getRemaining() as string
-myMCSuggestionsBuilder.getRemaining()
+myMCSuggestionsBuilder.getRemaining();
 ```
 ### getStart
 
@@ -78,7 +78,7 @@ Return Type: int
 
 ```zenscript
 MCSuggestionsBuilder.getStart() as int
-myMCSuggestionsBuilder.getStart()
+myMCSuggestionsBuilder.getStart();
 ```
 ### hashCode
 
@@ -86,7 +86,7 @@ Return Type: int
 
 ```zenscript
 MCSuggestionsBuilder.hashCode() as int
-myMCSuggestionsBuilder.hashCode()
+myMCSuggestionsBuilder.hashCode();
 ```
 ### restart
 
@@ -94,7 +94,7 @@ Return Type: [MCSuggestionsBuilder](/vanilla/api/commands/custom/MCSuggestionsBu
 
 ```zenscript
 MCSuggestionsBuilder.restart() as MCSuggestionsBuilder
-myMCSuggestionsBuilder.restart()
+myMCSuggestionsBuilder.restart();
 ```
 ### suggest
 
@@ -121,7 +121,7 @@ Return Type: string
 
 ```zenscript
 MCSuggestionsBuilder.toString() as string
-myMCSuggestionsBuilder.toString()
+myMCSuggestionsBuilder.toString();
 ```
 
 ## Operators

@@ -28,7 +28,7 @@ Return Type: [MCRequiredArgumentBuilder](/vanilla/api/commands/custom/MCRequired
 
 ```zenscript
 MCArgumentCommandNode.createBuilder() as MCRequiredArgumentBuilder
-myMCArgumentCommandNode.createBuilder()
+myMCArgumentCommandNode.createBuilder();
 ```
 ### equals
 
@@ -46,7 +46,7 @@ Return Type: [MCSuggestionProvider](/vanilla/api/commands/custom/MCSuggestionPro
 
 ```zenscript
 MCArgumentCommandNode.getCustomSuggestions() as MCSuggestionProvider
-myMCArgumentCommandNode.getCustomSuggestions()
+myMCArgumentCommandNode.getCustomSuggestions();
 ```
 ### hashCode
 
@@ -54,7 +54,7 @@ Return Type: int
 
 ```zenscript
 MCArgumentCommandNode.hashCode() as int
-myMCArgumentCommandNode.hashCode()
+myMCArgumentCommandNode.hashCode();
 ```
 ### toString
 
@@ -62,7 +62,7 @@ Return Type: string
 
 ```zenscript
 MCArgumentCommandNode.toString() as string
-myMCArgumentCommandNode.toString()
+myMCArgumentCommandNode.toString();
 ```
 
 ## Operators

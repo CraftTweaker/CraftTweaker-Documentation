@@ -50,7 +50,7 @@ Return Type: boolean
 
 ```zenscript
 MCEntity.canSwim() as boolean
-myMCEntity.canSwim()
+myMCEntity.canSwim();
 ```
 ### extinguish
 
@@ -58,7 +58,7 @@ Return Type: void
 
 ```zenscript
 MCEntity.extinguish() as void
-myMCEntity.extinguish()
+myMCEntity.extinguish();
 ```
 ### forceFireTicks
 
@@ -88,7 +88,7 @@ Return Type: float
 
 ```zenscript
 MCEntity.getBrightness() as float
-myMCEntity.getBrightness()
+myMCEntity.getBrightness();
 ```
 ### getDistance
 
@@ -126,7 +126,7 @@ Return Type: int
 
 ```zenscript
 MCEntity.getEntityId() as int
-myMCEntity.getEntityId()
+myMCEntity.getEntityId();
 ```
 ### getFireTimer
 
@@ -134,7 +134,7 @@ Return Type: int
 
 ```zenscript
 MCEntity.getFireTimer() as int
-myMCEntity.getFireTimer()
+myMCEntity.getFireTimer();
 ```
 ### getMaxInPortalTime
 
@@ -142,7 +142,7 @@ Return Type: int
 
 ```zenscript
 MCEntity.getMaxInPortalTime() as int
-myMCEntity.getMaxInPortalTime()
+myMCEntity.getMaxInPortalTime();
 ```
 ### getName
 
@@ -150,7 +150,7 @@ Return Type: string
 
 ```zenscript
 MCEntity.getName() as string
-myMCEntity.getName()
+myMCEntity.getName();
 ```
 ### getTags
 
@@ -158,7 +158,7 @@ Return Type: Set&lt;string&gt;
 
 ```zenscript
 MCEntity.getTags() as Set<string>
-myMCEntity.getTags()
+myMCEntity.getTags();
 ```
 ### getType
 
@@ -166,7 +166,7 @@ Return Type: [MCEntityType](/vanilla/api/entities/MCEntityType)
 
 ```zenscript
 MCEntity.getType() as MCEntityType
-myMCEntity.getType()
+myMCEntity.getType();
 ```
 ### hasNoGravity
 
@@ -174,7 +174,7 @@ Return Type: boolean
 
 ```zenscript
 MCEntity.hasNoGravity() as boolean
-myMCEntity.hasNoGravity()
+myMCEntity.hasNoGravity();
 ```
 ### isEntityInRange
 
@@ -193,7 +193,7 @@ Return Type: boolean
 
 ```zenscript
 MCEntity.isImmuneToFire() as boolean
-myMCEntity.isImmuneToFire()
+myMCEntity.isImmuneToFire();
 ```
 ### isInLava
 
@@ -201,7 +201,7 @@ Return Type: boolean
 
 ```zenscript
 MCEntity.isInLava() as boolean
-myMCEntity.isInLava()
+myMCEntity.isInLava();
 ```
 ### isInWater
 
@@ -209,7 +209,7 @@ Return Type: boolean
 
 ```zenscript
 MCEntity.isInWater() as boolean
-myMCEntity.isInWater()
+myMCEntity.isInWater();
 ```
 ### isInWaterOrBubbleColumn
 
@@ -217,7 +217,7 @@ Return Type: boolean
 
 ```zenscript
 MCEntity.isInWaterOrBubbleColumn() as boolean
-myMCEntity.isInWaterOrBubbleColumn()
+myMCEntity.isInWaterOrBubbleColumn();
 ```
 ### isInWaterRainOrBubbleColumn
 
@@ -225,7 +225,7 @@ Return Type: boolean
 
 ```zenscript
 MCEntity.isInWaterRainOrBubbleColumn() as boolean
-myMCEntity.isInWaterRainOrBubbleColumn()
+myMCEntity.isInWaterRainOrBubbleColumn();
 ```
 ### isOffsetPositionInLiquid
 
@@ -245,7 +245,7 @@ Return Type: boolean
 
 ```zenscript
 MCEntity.isOnGround() as boolean
-myMCEntity.isOnGround()
+myMCEntity.isOnGround();
 ```
 ### isSilent
 
@@ -253,7 +253,7 @@ Return Type: boolean
 
 ```zenscript
 MCEntity.isSilent() as boolean
-myMCEntity.isSilent()
+myMCEntity.isSilent();
 ```
 ### isSpectator
 
@@ -261,7 +261,7 @@ Return Type: boolean
 
 ```zenscript
 MCEntity.isSpectator() as boolean
-myMCEntity.isSpectator()
+myMCEntity.isSpectator();
 ```
 ### isWet
 
@@ -269,7 +269,7 @@ Return Type: boolean
 
 ```zenscript
 MCEntity.isWet() as boolean
-myMCEntity.isWet()
+myMCEntity.isWet();
 ```
 ### moveForced
 
@@ -299,7 +299,7 @@ Return Type: void
 
 ```zenscript
 MCEntity.onKillCommand() as void
-myMCEntity.onKillCommand()
+myMCEntity.onKillCommand();
 ```
 ### onLivingFall
 

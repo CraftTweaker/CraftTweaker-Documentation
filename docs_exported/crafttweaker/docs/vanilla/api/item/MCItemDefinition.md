@@ -24,7 +24,7 @@ Return Type: [IItemStack](/vanilla/api/items/IItemStack)
 
 ```zenscript
 MCItemDefinition.getDefaultInstance() as IItemStack
-myMCItemDefinition.getDefaultInstance()
+myMCItemDefinition.getDefaultInstance();
 ```
 
 ## Properties

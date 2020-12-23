@@ -26,7 +26,7 @@ Return Type: void
 
 ```zenscript
 ICollectionData.add(value as IData) as void
-new ListData(["Hello", "World"]).add("today")
+new ListData(["Hello", "World"]).add("today");
 ```
 | Parameter | Type | Description |
 |-----------|------|-------------|
@@ -37,7 +37,7 @@ Return Type: void
 
 ```zenscript
 ICollectionData.add(index as int, value as IData) as void
-new ListData(["Hello", "World"]).add(1, "beautiful")
+new ListData(["Hello", "World"]).add(1, "beautiful");
 ```
 | Parameter | Type | Description |
 |-----------|------|-------------|
@@ -51,7 +51,7 @@ Return Type: void
 
 ```zenscript
 ICollectionData.clear() as void
-new ListData(["Hello", "World"]).clear()
+new ListData(["Hello", "World"]).clear();
 ```
 ### getAt
 
@@ -61,7 +61,7 @@ Return Type: [IData](/vanilla/api/data/IData)
 
 ```zenscript
 ICollectionData.getAt(index as int) as IData
-new ListData(["Hello", "World"]).getAt(0)
+new ListData(["Hello", "World"]).getAt(0);
 ```
 | Parameter | Type | Description |
 |-----------|------|-------------|
@@ -74,7 +74,7 @@ Return Type: [IData](/vanilla/api/data/IData)
 
 ```zenscript
 ICollectionData.remove(index as int) as IData
-new ListData(["Hello", "World"]).remove(0)
+new ListData(["Hello", "World"]).remove(0);
 ```
 | Parameter | Type | Description |
 |-----------|------|-------------|
@@ -87,7 +87,7 @@ Return Type: [IData](/vanilla/api/data/IData)
 
 ```zenscript
 ICollectionData.setAt(index as int, value as IData) as IData
-new ListData(["Hello", "World"]).setAt(0, "Bye")
+new ListData(["Hello", "World"]).setAt(0, "Bye");
 ```
 | Parameter | Type | Description |
 |-----------|------|-------------|

@@ -29,7 +29,7 @@ Return Type: [MCSuggestions](/vanilla/api/commands/custom/MCSuggestions)
 
 ```zenscript
 MCSuggestions.empty() as MCSuggestions
-MCSuggestions.empty()
+MCSuggestions.empty();
 ```
 ### merge
 
@@ -66,7 +66,7 @@ Return Type: stdlib.List&lt;[MCSuggestion](/vanilla/api/commands/custom/MCSugges
 
 ```zenscript
 MCSuggestions.getList() as stdlib.List<MCSuggestion>
-myMCSuggestions.getList()
+myMCSuggestions.getList();
 ```
 ### getRange
 
@@ -74,7 +74,7 @@ Return Type: [MCStringRange](/vanilla/api/commands/custom/MCStringRange)
 
 ```zenscript
 MCSuggestions.getRange() as MCStringRange
-myMCSuggestions.getRange()
+myMCSuggestions.getRange();
 ```
 ### hashCode
 
@@ -82,7 +82,7 @@ Return Type: int
 
 ```zenscript
 MCSuggestions.hashCode() as int
-myMCSuggestions.hashCode()
+myMCSuggestions.hashCode();
 ```
 ### isEmpty
 
@@ -90,7 +90,7 @@ Return Type: boolean
 
 ```zenscript
 MCSuggestions.isEmpty() as boolean
-myMCSuggestions.isEmpty()
+myMCSuggestions.isEmpty();
 ```
 ### toString
 
@@ -98,7 +98,7 @@ Return Type: string
 
 ```zenscript
 MCSuggestions.toString() as string
-myMCSuggestions.toString()
+myMCSuggestions.toString();
 ```
 
 ## Operators

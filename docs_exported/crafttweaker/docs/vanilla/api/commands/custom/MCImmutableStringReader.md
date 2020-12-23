@@ -18,7 +18,7 @@ Return Type: boolean
 
 ```zenscript
 MCImmutableStringReader.canRead() as boolean
-myMCImmutableStringReader.canRead()
+myMCImmutableStringReader.canRead();
 ```
 Return Type: boolean
 
@@ -34,7 +34,7 @@ Return Type: int
 
 ```zenscript
 MCImmutableStringReader.getCursor() as int
-myMCImmutableStringReader.getCursor()
+myMCImmutableStringReader.getCursor();
 ```
 ### getRead
 
@@ -42,7 +42,7 @@ Return Type: string
 
 ```zenscript
 MCImmutableStringReader.getRead() as string
-myMCImmutableStringReader.getRead()
+myMCImmutableStringReader.getRead();
 ```
 ### getRemaining
 
@@ -50,7 +50,7 @@ Return Type: string
 
 ```zenscript
 MCImmutableStringReader.getRemaining() as string
-myMCImmutableStringReader.getRemaining()
+myMCImmutableStringReader.getRemaining();
 ```
 ### getRemainingLength
 
@@ -58,7 +58,7 @@ Return Type: int
 
 ```zenscript
 MCImmutableStringReader.getRemainingLength() as int
-myMCImmutableStringReader.getRemainingLength()
+myMCImmutableStringReader.getRemainingLength();
 ```
 ### getString
 
@@ -66,7 +66,7 @@ Return Type: string
 
 ```zenscript
 MCImmutableStringReader.getString() as string
-myMCImmutableStringReader.getString()
+myMCImmutableStringReader.getString();
 ```
 ### getTotalLength
 
@@ -74,7 +74,7 @@ Return Type: int
 
 ```zenscript
 MCImmutableStringReader.getTotalLength() as int
-myMCImmutableStringReader.getTotalLength()
+myMCImmutableStringReader.getTotalLength();
 ```
 ### peek
 
@@ -82,7 +82,7 @@ Return Type: char
 
 ```zenscript
 MCImmutableStringReader.peek() as char
-myMCImmutableStringReader.peek()
+myMCImmutableStringReader.peek();
 ```
 Return Type: char
 

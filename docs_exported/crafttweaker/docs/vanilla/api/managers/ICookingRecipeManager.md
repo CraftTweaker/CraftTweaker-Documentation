@@ -26,7 +26,7 @@ Return Type: void
 
 ```zenscript
 ICookingRecipeManager.addRecipe(name as string, output as IItemStack, input as IIngredient, xp as float, cookTime as int) as void
-furnace.addRecipe("wool2diamond", <item:diamond>, <tag:minecraft:wool>, 1.0, 0)
+furnace.addRecipe("wool2diamond", <item:diamond>, <tag:minecraft:wool>, 1.0, 0);
 ```
 | Parameter | Type | Description |
 |-----------|------|-------------|
@@ -43,7 +43,7 @@ Return Type: void
 
 ```zenscript
 ICookingRecipeManager.removeRecipe(output as IItemStack, input as IIngredient) as void
-furnace.removeRecipe(<item:minecraft:diamond>, <tag:minecraft:wool>)
+furnace.removeRecipe(<item:minecraft:diamond>, <tag:minecraft:wool>);
 ```
 | Parameter | Type | Description |
 |-----------|------|-------------|
