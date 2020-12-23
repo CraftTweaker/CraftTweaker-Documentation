@@ -19,6 +19,9 @@ Return Type: [MCStringRange](/vanilla/api/commands/custom/MCStringRange)
 ```zenscript
 MCStringRange.at(pos as int) as MCStringRange
 ```
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| pos | int | No Description Provided |
 ### between
 
 Return Type: [MCStringRange](/vanilla/api/commands/custom/MCStringRange)
@@ -26,6 +29,10 @@ Return Type: [MCStringRange](/vanilla/api/commands/custom/MCStringRange)
 ```zenscript
 MCStringRange.between(start as int, end as int) as MCStringRange
 ```
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| start | int | No Description Provided |
+| end | int | No Description Provided |
 ### encompassing
 
 Return Type: [MCStringRange](/vanilla/api/commands/custom/MCStringRange)
@@ -33,6 +40,10 @@ Return Type: [MCStringRange](/vanilla/api/commands/custom/MCStringRange)
 ```zenscript
 MCStringRange.encompassing(a as MCStringRange, b as MCStringRange) as MCStringRange
 ```
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| a | [MCStringRange](/vanilla/api/commands/custom/MCStringRange) | No Description Provided |
+| b | [MCStringRange](/vanilla/api/commands/custom/MCStringRange) | No Description Provided |
 ## Methods
 
 ### equals

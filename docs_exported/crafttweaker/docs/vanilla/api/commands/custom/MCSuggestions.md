@@ -19,13 +19,17 @@ Return Type: [MCSuggestions](/vanilla/api/commands/custom/MCSuggestions)
 ```zenscript
 MCSuggestions.create(command as String, suggestions as Collection) as MCSuggestions
 ```
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| command | String | No Description Provided |
+| suggestions | Collection | No Description Provided |
 ### empty
 
 Return Type: [MCSuggestions](/vanilla/api/commands/custom/MCSuggestions)
 
 ```zenscript
 MCSuggestions.empty() as MCSuggestions
-MCSuggestions()
+MCSuggestions.empty()
 ```
 ### merge
 
@@ -34,6 +38,10 @@ Return Type: [MCSuggestions](/vanilla/api/commands/custom/MCSuggestions)
 ```zenscript
 MCSuggestions.merge(command as String, input as Collection) as MCSuggestions
 ```
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| command | String | No Description Provided |
+| input | Collection | No Description Provided |
 ## Casters
 
 | Result type | Is Implicit |

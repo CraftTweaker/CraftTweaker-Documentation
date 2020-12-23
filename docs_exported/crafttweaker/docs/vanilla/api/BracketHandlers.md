@@ -23,8 +23,11 @@ Return Type: [MCBlock](/vanilla/api/blocks/MCBlock)
 <block:minecraft:dirt>
 
 BracketHandlers.getBlock(tokens as String) as MCBlock
-BracketHandlers("minecraft:dirt")
+BracketHandlers.getBlock("minecraft:dirt")
 ```
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| tokens | String | What you would write in the BEP call. |
 ### getBlockMaterial
 
 Gets the given [MCMaterial](/vanilla/api/block/material/MCMaterial). Throws an Exception if not found.
@@ -36,8 +39,11 @@ Return Type: [MCMaterial](/vanilla/api/block/material/MCMaterial)
 <blockmaterial:earth>
 
 BracketHandlers.getBlockMaterial(tokens as String) as MCMaterial
-BracketHandlers("earth")
+BracketHandlers.getBlockMaterial("earth")
 ```
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| tokens | String | What you would write in the BEP call. |
 ### getBlockState
 
 Creates a Blockstate based on the given inputs.
@@ -51,9 +57,12 @@ Return Type: [MCBlockState](/vanilla/api/blocks/MCBlockState)
 <blockstate:minecraft:furnace:facing=north,lit=false>
 
 BracketHandlers.getBlockState(tokens as String) as MCBlockState
-BracketHandlers("minecraft:acacia_planks")
-BracketHandlers("minecraft:furnace:facing=north,lit=false")
+BracketHandlers.getBlockState("minecraft:acacia_planks")
+BracketHandlers.getBlockState("minecraft:furnace:facing=north,lit=false")
 ```
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| tokens | String | The block's resource location and variants |
 ### getDirectionAxis
 
 Gets the direction Axis based on name. Throws an error if it can't find the direction Axis.
@@ -65,8 +74,11 @@ Return Type: [DirectionAxis](/vanilla/api/util/DirectionAxis)
 <directionaxis:x>
 
 BracketHandlers.getDirectionAxis(tokens as String) as DirectionAxis
-BracketHandlers("x")
+BracketHandlers.getDirectionAxis("x")
 ```
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| tokens | String | The direction Axis's resource location |
 ### getEffect
 
 Gets the effect based on registry name. Throws an error if it can't find the effect.
@@ -78,8 +90,11 @@ Return Type: [MCPotionEffect](/vanilla/api/potion/MCPotionEffect)
 <effect:minecraft:haste>
 
 BracketHandlers.getEffect(tokens as String) as MCPotionEffect
-BracketHandlers("minecraft:haste")
+BracketHandlers.getEffect("minecraft:haste")
 ```
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| tokens | String | The effect's resource location |
 ### getEntityClassification
 
 Gets the entityClassification based on registry name. Logs an error and returns `null` if it can't find the entityClassification.
@@ -91,8 +106,11 @@ Return Type: [MCEntityClassification](/vanilla/api/entity/MCEntityClassification
 <entityclassification:monster>
 
 BracketHandlers.getEntityClassification(tokens as String) as MCEntityClassification
-BracketHandlers("monster")
+BracketHandlers.getEntityClassification("monster")
 ```
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| tokens | String | The entityClassification's resource location |
 ### getEntityType
 
 Gets the entityType based on registry name. Logs an error and return `null` if it can't find the entityType.
@@ -104,8 +122,11 @@ Return Type: [MCEntityType](/vanilla/api/entities/MCEntityType)
 <entitytype:minecraft:pig>
 
 BracketHandlers.getEntityType(tokens as String) as MCEntityType
-BracketHandlers("minecraft:pig")
+BracketHandlers.getEntityType("minecraft:pig")
 ```
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| tokens | String | The entityType's resource location |
 ### getFluidStack
 
 Gets the fluid Stack based on registry name. Throws an error if it can't find the fluid.
@@ -117,8 +138,11 @@ Return Type: [IFluidStack](/vanilla/api/fluid/IFluidStack)
 <fluid:minecraft:water>
 
 BracketHandlers.getFluidStack(tokens as String) as IFluidStack
-BracketHandlers("minecraft:water")
+BracketHandlers.getFluidStack("minecraft:water")
 ```
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| tokens | String | The Fluid's resource location |
 ### getItem
 
 Gets the item based on registry name. Throws an error if it can't find the item.
@@ -130,8 +154,11 @@ Return Type: [IItemStack](/vanilla/api/items/IItemStack)
 <item:minecraft:dirt>
 
 BracketHandlers.getItem(tokens as String) as IItemStack
-BracketHandlers("minecraft:dirt")
+BracketHandlers.getItem("minecraft:dirt")
 ```
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| tokens | String | The item's resource location |
 ### getPotion
 
 Return Type: [MCPotion](/vanilla/api/potion/MCPotion)
@@ -139,6 +166,9 @@ Return Type: [MCPotion](/vanilla/api/potion/MCPotion)
 ```zenscript
 BracketHandlers.getPotion(tokens as String) as MCPotion
 ```
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| tokens | String | No Description Provided |
 ### getRecipeManager
 
 Gets the recipeManager based on registry name. Throws an error if it can't find the recipeManager.
@@ -153,8 +183,11 @@ Return Type: [IRecipeManager](/vanilla/api/managers/IRecipeManager)
 
 ```zenscript
 BracketHandlers.getRecipeManager(tokens as String) as IRecipeManager
-BracketHandlers("minecraft:crafting")
+BracketHandlers.getRecipeManager("minecraft:crafting")
 ```
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| tokens | String | The recipeManager's resource location |
 ### getResourceLocation
 
 Creates a Resource location based on the tokens.
@@ -167,8 +200,11 @@ Return Type: [MCResourceLocation](/vanilla/api/util/MCResourceLocation)
 <resource:minecraft:dirt>
 
 BracketHandlers.getResourceLocation(tokens as String) as MCResourceLocation
-BracketHandlers("minecraft:dirt")
+BracketHandlers.getResourceLocation("minecraft:dirt")
 ```
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| tokens | String | The resource location |
 ### getTextFormatting
 
 Return Type: [TextFormatting](/vanilla/api/util/text/TextFormatting)
@@ -176,3 +212,6 @@ Return Type: [TextFormatting](/vanilla/api/util/text/TextFormatting)
 ```zenscript
 BracketHandlers.getTextFormatting(tokens as String) as TextFormatting
 ```
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| tokens | String | No Description Provided |

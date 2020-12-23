@@ -19,6 +19,9 @@ Return Type: [MCTextComponent](/vanilla/api/util/text/MCTextComponent)
 ```zenscript
 MCTextComponent.createStringTextComponent(text as String) as MCTextComponent
 ```
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| text | String | No Description Provided |
 ### createTranslationTextComponent
 
 Return Type: [MCTextComponent](/vanilla/api/util/text/MCTextComponent)
@@ -26,11 +29,18 @@ Return Type: [MCTextComponent](/vanilla/api/util/text/MCTextComponent)
 ```zenscript
 MCTextComponent.createTranslationTextComponent(translationKey as String) as MCTextComponent
 ```
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| translationKey | String | No Description Provided |
 Return Type: [MCTextComponent](/vanilla/api/util/text/MCTextComponent)
 
 ```zenscript
 MCTextComponent.createTranslationTextComponent(translationKey as String, args as Object[]) as MCTextComponent
 ```
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| translationKey | String | No Description Provided |
+| args | Object[] | No Description Provided |
 ## Casters
 
 | Result type | Is Implicit |

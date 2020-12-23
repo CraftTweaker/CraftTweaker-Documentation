@@ -19,6 +19,9 @@ Return Type: [MCRequiredArgumentBuilder](/vanilla/api/commands/custom/MCRequired
 ```zenscript
 CustomCommands.argument(name as String) as MCRequiredArgumentBuilder
 ```
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| name | String | No Description Provided |
 ### literal
 
 Return Type: [MCLiteralArgumentBuilder](/vanilla/api/commands/custom/MCLiteralArgumentBuilder)
@@ -26,6 +29,9 @@ Return Type: [MCLiteralArgumentBuilder](/vanilla/api/commands/custom/MCLiteralAr
 ```zenscript
 CustomCommands.literal(name as String) as MCLiteralArgumentBuilder
 ```
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| name | String | No Description Provided |
 ### registerCommand
 
 Return Type: void
@@ -33,3 +39,6 @@ Return Type: void
 ```zenscript
 CustomCommands.registerCommand(builder as MCLiteralArgumentBuilder) as void
 ```
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| builder | [MCLiteralArgumentBuilder](/vanilla/api/commands/custom/MCLiteralArgumentBuilder) | No Description Provided |
