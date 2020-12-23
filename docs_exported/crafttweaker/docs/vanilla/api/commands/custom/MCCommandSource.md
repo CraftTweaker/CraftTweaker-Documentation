@@ -3,128 +3,120 @@
 This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
 
 ## Importing the class
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.  
+
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
 ```zenscript
-crafttweaker.api.commands.custom.MCCommandSource
+import crafttweaker.api.commands.custom.MCCommandSource;
 ```
+
 
 ## Methods
+
 ### getName
 
-Return type: String
+Return Type: String
 
 ```zenscript
-myMCCommandSource.getName();
+MCCommandSource.getName() as String
+myMCCommandSource.getName()
 ```
-
 ### getPlayer
 
-Return type: [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
+Return Type: [MCPlayerEntity](/vanilla/api/entity/MCPlayerEntity)
 
 ```zenscript
-myMCCommandSource.getPlayer();
+MCCommandSource.getPlayer() as MCPlayerEntity
+myMCCommandSource.getPlayer()
 ```
-
 ### getPlayerNames
 
-Return type: Collection&lt;String&gt;
+Return Type: Collection
 
 ```zenscript
-myMCCommandSource.getPlayerNames();
+MCCommandSource.getPlayerNames() as Collection
+myMCCommandSource.getPlayerNames()
 ```
-
 ### getTargetedEntity
 
-Return type: Collection&lt;String&gt;
+Return Type: Collection
 
 ```zenscript
-myMCCommandSource.getTargetedEntity();
+MCCommandSource.getTargetedEntity() as Collection
+myMCCommandSource.getTargetedEntity()
 ```
-
 ### getTeamNames
 
-Return type: Collection&lt;String&gt;
+Return Type: Collection
 
 ```zenscript
-myMCCommandSource.getTeamNames();
+MCCommandSource.getTeamNames() as Collection
+myMCCommandSource.getTeamNames()
 ```
-
 ### hasPermissionLevel
 
-Return type: boolean
+Return Type: boolean
 
 ```zenscript
-myMCCommandSource.hasPermissionLevel(p_197034_1_ as int);
+MCCommandSource.hasPermissionLevel(p_197034_1_ as int) as boolean
 ```
-
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| p_197034_1_ | int | No description provided |
-
-
+| p_197034_1_ | int | No Description Provided |
 ### isPlayer
 
-Return type: boolean
+Return Type: boolean
 
 ```zenscript
-myMCCommandSource.isPlayer();
+MCCommandSource.isPlayer() as boolean
+myMCCommandSource.isPlayer()
 ```
-
 ### sendErrorMessage
 
-```zenscript
-myMCCommandSource.sendErrorMessage(message as String);
-```
+Return Type: void
 
+```zenscript
+MCCommandSource.sendErrorMessage(message as String) as void
+```
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| message | String | No description provided |
-
-
+| message | String | No Description Provided |
 ### sendFeedback
 
-```zenscript
-myMCCommandSource.sendFeedback(feedback as String, allowLogging as boolean);
-```
+Return Type: void
 
+```zenscript
+MCCommandSource.sendFeedback(feedback as String, allowLogging as boolean) as void
+```
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| feedback | String | No description provided |
-| allowLogging | boolean | No description provided |
-
-
+| feedback | String | No Description Provided |
+| allowLogging | boolean | No Description Provided |
 ### withFeedbackDisabled
 
-Return type: [crafttweaker.api.commands.custom.MCCommandSource](/vanilla/api/commands/custom/MCCommandSource)
+Return Type: [MCCommandSource](/vanilla/api/commands/custom/MCCommandSource)
 
 ```zenscript
-myMCCommandSource.withFeedbackDisabled();
+MCCommandSource.withFeedbackDisabled() as MCCommandSource
+myMCCommandSource.withFeedbackDisabled()
 ```
-
 ### withMinPermissionLevel
 
-Return type: [crafttweaker.api.commands.custom.MCCommandSource](/vanilla/api/commands/custom/MCCommandSource)
+Return Type: [MCCommandSource](/vanilla/api/commands/custom/MCCommandSource)
 
 ```zenscript
-myMCCommandSource.withMinPermissionLevel(p_197026_1_ as int);
+MCCommandSource.withMinPermissionLevel(p_197026_1_ as int) as MCCommandSource
 ```
-
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| p_197026_1_ | int | No description provided |
-
-
+| p_197026_1_ | int | No Description Provided |
 ### withPermissionLevel
 
-Return type: [crafttweaker.api.commands.custom.MCCommandSource](/vanilla/api/commands/custom/MCCommandSource)
+Return Type: [MCCommandSource](/vanilla/api/commands/custom/MCCommandSource)
 
 ```zenscript
-myMCCommandSource.withPermissionLevel(p_197033_1_ as int);
+MCCommandSource.withPermissionLevel(p_197033_1_ as int) as MCCommandSource
 ```
-
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| p_197033_1_ | int | No description provided |
-
-
+| p_197033_1_ | int | No Description Provided |
 

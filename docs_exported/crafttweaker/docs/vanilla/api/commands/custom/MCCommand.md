@@ -3,79 +3,75 @@
 This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
 
 ## Importing the class
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.  
+
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
 ```zenscript
-crafttweaker.api.commands.custom.MCCommand
+import crafttweaker.api.commands.custom.MCCommand;
 ```
+
 
 ## Constructors
+
+No Description Provided
 ```zenscript
-new crafttweaker.api.commands.custom.MCCommand(fun as function.Function<crafttweaker.api.commands.custom.MCCommandContext, Integer>);
+new MCCommand(fun as Function<MCCommandContext,Integer>) as MCCommand
 ```
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| fun | function.Function&lt;[crafttweaker.api.commands.custom.MCCommandContext](/vanilla/api/commands/custom/MCCommandContext), Integer&gt; | No description provided |
-
-
-
-## Methods
-### equals
-
-Return type: boolean
-
-```zenscript
-myMCCommand.equals(o as Object);
-```
-
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| o | Object | No description provided |
-
-
-### hashCode
-
-Return type: int
-
-```zenscript
-myMCCommand.hashCode();
-```
-
-### run
-
-Return type: int
-
-```zenscript
-myMCCommand.run(context as crafttweaker.api.commands.custom.MCCommandContext);
-```
-
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| context | [crafttweaker.api.commands.custom.MCCommandContext](/vanilla/api/commands/custom/MCCommandContext) | No description provided |
-
-
-### toString
-
-Return type: String
-
-```zenscript
-myMCCommand.toString();
-```
-
-
-## Operators
-### EQUALS
-
-```zenscript
-myMCCommand == o as Object
-```
-
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| o | Object | No description provided |
+| fun | Function&lt;[MCCommandContext](/vanilla/api/commands/custom/MCCommandContext),Integer&gt; | No Description Provided |
 
 ## Casters
 
 | Result type | Is Implicit |
 |-------------|-------------|
 | String | true |
+
+## Methods
+
+### equals
+
+Return Type: boolean
+
+```zenscript
+MCCommand.equals(o as Object) as boolean
+```
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| o | Object | No Description Provided |
+### hashCode
+
+Return Type: int
+
+```zenscript
+MCCommand.hashCode() as int
+myMCCommand.hashCode()
+```
+### run
+
+Return Type: int
+
+```zenscript
+MCCommand.run(context as MCCommandContext) as int
+```
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| context | [MCCommandContext](/vanilla/api/commands/custom/MCCommandContext) | No Description Provided |
+### toString
+
+Return Type: String
+
+```zenscript
+MCCommand.toString() as String
+myMCCommand.toString()
+```
+
+## Operators
+
+### EQUALS
+
+```zenscript
+myMCCommand == o as Object
+```
+
+
 

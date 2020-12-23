@@ -3,91 +3,85 @@
 This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
 
 ## Importing the class
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.  
+
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
 ```zenscript
-crafttweaker.api.block.MCBlockState
+import crafttweaker.api.blocks.MCBlockState;
 ```
 
-## Implemented Interfaces
-MCBlockState implements the following interfaces. That means any method available to them can also be used on this class.  
-- [crafttweaker.api.brackets.CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
+
+## Casters
+
+| Result type | Is Implicit |
+|-------------|-------------|
+| [MCBlock](/vanilla/api/blocks/MCBlock) | true |
+| String | false |
 
 ## Methods
+
 ### getAllowedValuesForProperty
 
-Return type: List&lt;String&gt;
+Return Type: stdlib.List
 
 ```zenscript
-myMCBlockState.getAllowedValuesForProperty(name as String);
+MCBlockState.getAllowedValuesForProperty(name as String) as stdlib.List
 ```
-
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| name | String | No description provided |
-
-
+| name | String | No Description Provided |
 ### getProperties
 
-Return type: String[String]
+Return Type: String[String]
 
 ```zenscript
-myMCBlockState.getProperties();
+MCBlockState.getProperties() as String[String]
+myMCBlockState.getProperties()
 ```
-
 ### getPropertyNames
 
-Return type: List&lt;String&gt;
+Return Type: stdlib.List
 
 ```zenscript
-myMCBlockState.getPropertyNames();
+MCBlockState.getPropertyNames() as stdlib.List
+myMCBlockState.getPropertyNames()
 ```
-
 ### getPropertyValue
 
-Return type: String
+Return Type: String
 
 ```zenscript
-myMCBlockState.getPropertyValue(name as String);
+MCBlockState.getPropertyValue(name as String) as String
 ```
-
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| name | String | No description provided |
-
-
+| name | String | No Description Provided |
 ### hasProperty
 
-Return type: boolean
+Return Type: boolean
 
 ```zenscript
-myMCBlockState.hasProperty(name as String);
+MCBlockState.hasProperty(name as String) as boolean
 ```
-
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| name | String | No description provided |
-
-
+| name | String | No Description Provided |
 ### withProperty
 
-Return type: [crafttweaker.api.block.MCBlockState](/vanilla/api/blocks/MCBlockState)
+Return Type: [MCBlockState](/vanilla/api/blocks/MCBlockState)
 
 ```zenscript
-myMCBlockState.withProperty(name as String, value as String);
+MCBlockState.withProperty(name as String, value as String) as MCBlockState
 ```
-
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| name | String | No description provided |
-| value | String | No description provided |
-
-
+| name | String | No Description Provided |
+| value | String | No Description Provided |
 
 ## Properties
 
 | Name | Type | Has Getter | Has Setter |
 |------|------|------------|------------|
-| block | [crafttweaker.api.block.MCBlock](/vanilla/api/blocks/MCBlock) | true | false |
+| block | [MCBlock](/vanilla/api/blocks/MCBlock) | true | false |
 | canProvidePower | boolean | true | false |
 | commandString | String | true | false |
 | hasTileEntity | boolean | true | false |
@@ -95,11 +89,4 @@ myMCBlockState.withProperty(name as String, value as String);
 | isSticky | boolean | true | false |
 | lightLevel | int | true | false |
 | ticksRandomly | boolean | true | false |
-
-## Casters
-
-| Result type | Is Implicit |
-|-------------|-------------|
-| String | false |
-| [crafttweaker.api.block.MCBlock](/vanilla/api/blocks/MCBlock) | true |
 

@@ -3,230 +3,155 @@
 This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
 
 ## Importing the class
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.  
+
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
 ```zenscript
-crafttweaker.api.commands.custom.MCLiteralArgumentBuilder
-```
-
-## Implemented Interfaces
-MCLiteralArgumentBuilder implements the following interfaces. That means any method available to them can also be used on this class.  
-- [crafttweaker.api.commands.custom.MCArgumentBuilder](/vanilla/api/commands/custom/MCArgumentBuilder)
-
-## Methods
-### build
-
-Return type: [crafttweaker.api.commands.custom.MCLiteralCommandNode](/vanilla/api/commands/custom/MCLiteralCommandNode)
-
-```zenscript
-myMCLiteralArgumentBuilder.build();
-```
-
-### equals
-
-Return type: boolean
-
-```zenscript
-myMCLiteralArgumentBuilder.equals(o as Object);
-```
-
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| o | Object | No description provided |
-
-
-### executes
-
-Return type: [crafttweaker.api.commands.custom.MCLiteralArgumentBuilder](/vanilla/api/commands/custom/MCLiteralArgumentBuilder)
-
-```zenscript
-myMCLiteralArgumentBuilder.executes(command as crafttweaker.api.commands.custom.MCCommand);
-```
-
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| command | [crafttweaker.api.commands.custom.MCCommand](/vanilla/api/commands/custom/MCCommand) | No description provided |
-
-
-### fork
-
-Return type: [crafttweaker.api.commands.custom.MCLiteralArgumentBuilder](/vanilla/api/commands/custom/MCLiteralArgumentBuilder)
-
-```zenscript
-myMCLiteralArgumentBuilder.fork(target as crafttweaker.api.commands.custom.MCCommandNode, modifier as crafttweaker.api.commands.custom.MCRedirectModifier);
-```
-
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| target | [crafttweaker.api.commands.custom.MCCommandNode](/vanilla/api/commands/custom/MCCommandNode) | No description provided |
-| modifier | [crafttweaker.api.commands.custom.MCRedirectModifier](/vanilla/api/commands/custom/MCRedirectModifier) | No description provided |
-
-
-### forward
-
-Return type: [crafttweaker.api.commands.custom.MCLiteralArgumentBuilder](/vanilla/api/commands/custom/MCLiteralArgumentBuilder)
-
-```zenscript
-myMCLiteralArgumentBuilder.forward(target as crafttweaker.api.commands.custom.MCCommandNode, modifier as crafttweaker.api.commands.custom.MCRedirectModifier, fork as boolean);
-```
-
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| target | [crafttweaker.api.commands.custom.MCCommandNode](/vanilla/api/commands/custom/MCCommandNode) | No description provided |
-| modifier | [crafttweaker.api.commands.custom.MCRedirectModifier](/vanilla/api/commands/custom/MCRedirectModifier) | No description provided |
-| fork | boolean | No description provided |
-
-
-### getArguments
-
-Return type: Collection&lt;[crafttweaker.api.commands.custom.MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)&gt;
-
-```zenscript
-myMCLiteralArgumentBuilder.getArguments();
-```
-
-### getCommand
-
-Return type: [crafttweaker.api.commands.custom.MCCommand](/vanilla/api/commands/custom/MCCommand)
-
-```zenscript
-myMCLiteralArgumentBuilder.getCommand();
-```
-
-### getLiteral
-
-Return type: String
-
-```zenscript
-myMCLiteralArgumentBuilder.getLiteral();
-```
-
-### getRedirect
-
-Return type: [crafttweaker.api.commands.custom.MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)
-
-```zenscript
-myMCLiteralArgumentBuilder.getRedirect();
-```
-
-### getRedirectModifier
-
-Return type: [crafttweaker.api.commands.custom.MCRedirectModifier](/vanilla/api/commands/custom/MCRedirectModifier)
-
-```zenscript
-myMCLiteralArgumentBuilder.getRedirectModifier();
-```
-
-### getRequirement
-
-Return type: function.Predicate&lt;[crafttweaker.api.commands.custom.MCCommandSource](/vanilla/api/commands/custom/MCCommandSource)&gt;
-
-```zenscript
-myMCLiteralArgumentBuilder.getRequirement();
-```
-
-### hashCode
-
-Return type: int
-
-```zenscript
-myMCLiteralArgumentBuilder.hashCode();
-```
-
-### isFork
-
-Return type: boolean
-
-```zenscript
-myMCLiteralArgumentBuilder.isFork();
-```
-
-### redirect
-
-Return type: [crafttweaker.api.commands.custom.MCLiteralArgumentBuilder](/vanilla/api/commands/custom/MCLiteralArgumentBuilder)
-
-```zenscript
-myMCLiteralArgumentBuilder.redirect(target as crafttweaker.api.commands.custom.MCCommandNode);
-```
-
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| target | [crafttweaker.api.commands.custom.MCCommandNode](/vanilla/api/commands/custom/MCCommandNode) | No description provided |
-
-
-
-Return type: [crafttweaker.api.commands.custom.MCLiteralArgumentBuilder](/vanilla/api/commands/custom/MCLiteralArgumentBuilder)
-
-```zenscript
-myMCLiteralArgumentBuilder.redirect(target as crafttweaker.api.commands.custom.MCCommandNode, modifier as crafttweaker.api.commands.custom.MCSingleRedirectModifier);
-```
-
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| target | [crafttweaker.api.commands.custom.MCCommandNode](/vanilla/api/commands/custom/MCCommandNode) | No description provided |
-| modifier | [crafttweaker.api.commands.custom.MCSingleRedirectModifier](/vanilla/api/commands/custom/MCSingleRedirectModifier) | No description provided |
-
-
-### requires
-
-Return type: [crafttweaker.api.commands.custom.MCLiteralArgumentBuilder](/vanilla/api/commands/custom/MCLiteralArgumentBuilder)
-
-```zenscript
-myMCLiteralArgumentBuilder.requires(requirement as function.Predicate<crafttweaker.api.commands.custom.MCCommandSource>);
-```
-
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| requirement | function.Predicate&lt;[crafttweaker.api.commands.custom.MCCommandSource](/vanilla/api/commands/custom/MCCommandSource)&gt; | No description provided |
-
-
-### then
-
-Return type: [crafttweaker.api.commands.custom.MCLiteralArgumentBuilder](/vanilla/api/commands/custom/MCLiteralArgumentBuilder)
-
-```zenscript
-myMCLiteralArgumentBuilder.then(argument as crafttweaker.api.commands.custom.MCArgumentBuilder);
-```
-
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| argument | [crafttweaker.api.commands.custom.MCArgumentBuilder](/vanilla/api/commands/custom/MCArgumentBuilder) | No description provided |
-
-
-
-Return type: [crafttweaker.api.commands.custom.MCLiteralArgumentBuilder](/vanilla/api/commands/custom/MCLiteralArgumentBuilder)
-
-```zenscript
-myMCLiteralArgumentBuilder.then(argument as crafttweaker.api.commands.custom.MCCommandNode);
-```
-
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| argument | [crafttweaker.api.commands.custom.MCCommandNode](/vanilla/api/commands/custom/MCCommandNode) | No description provided |
-
-
-### toString
-
-Return type: String
-
-```zenscript
-myMCLiteralArgumentBuilder.toString();
+import crafttweaker.api.commands.custom.MCLiteralArgumentBuilder;
 ```
 
 
-## Operators
-### EQUALS
+## Extending MCArgumentBuilder
 
-```zenscript
-myMCLiteralArgumentBuilder == o as Object
-```
-
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| o | Object | No description provided |
+MCLiteralArgumentBuilder extends [MCArgumentBuilder](/vanilla/api/commands/custom/MCArgumentBuilder). That means all methods available in [MCArgumentBuilder](/vanilla/api/commands/custom/MCArgumentBuilder) are also available in MCLiteralArgumentBuilder
 
 ## Casters
 
 | Result type | Is Implicit |
 |-------------|-------------|
 | String | true |
+
+## Methods
+
+### build
+
+Return Type: [MCLiteralCommandNode](/vanilla/api/commands/custom/MCLiteralCommandNode)
+
+```zenscript
+MCLiteralArgumentBuilder.build() as MCLiteralCommandNode
+myMCLiteralArgumentBuilder.build()
+```
+### equals
+
+Return Type: boolean
+
+```zenscript
+MCLiteralArgumentBuilder.equals(o as Object) as boolean
+```
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| o | Object | No Description Provided |
+### executes
+
+Return Type: [MCLiteralArgumentBuilder](/vanilla/api/commands/custom/MCLiteralArgumentBuilder)
+
+```zenscript
+MCLiteralArgumentBuilder.executes(command as MCCommand) as MCLiteralArgumentBuilder
+```
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| command | [MCCommand](/vanilla/api/commands/custom/MCCommand) | No Description Provided |
+### fork
+
+Return Type: [MCLiteralArgumentBuilder](/vanilla/api/commands/custom/MCLiteralArgumentBuilder)
+
+```zenscript
+MCLiteralArgumentBuilder.fork(target as MCCommandNode, modifier as MCRedirectModifier) as MCLiteralArgumentBuilder
+```
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| target | [MCCommandNode](/vanilla/api/commands/custom/MCCommandNode) | No Description Provided |
+| modifier | [MCRedirectModifier](/vanilla/api/commands/custom/MCRedirectModifier) | No Description Provided |
+### forward
+
+Return Type: [MCLiteralArgumentBuilder](/vanilla/api/commands/custom/MCLiteralArgumentBuilder)
+
+```zenscript
+MCLiteralArgumentBuilder.forward(target as MCCommandNode, modifier as MCRedirectModifier, fork as boolean) as MCLiteralArgumentBuilder
+```
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| target | [MCCommandNode](/vanilla/api/commands/custom/MCCommandNode) | No Description Provided |
+| modifier | [MCRedirectModifier](/vanilla/api/commands/custom/MCRedirectModifier) | No Description Provided |
+| fork | boolean | No Description Provided |
+### getLiteral
+
+Return Type: String
+
+```zenscript
+MCLiteralArgumentBuilder.getLiteral() as String
+myMCLiteralArgumentBuilder.getLiteral()
+```
+### getRequirement
+
+Return Type: Predicate&lt;[MCCommandSource](/vanilla/api/commands/custom/MCCommandSource)&gt;
+
+```zenscript
+MCLiteralArgumentBuilder.getRequirement() as Predicate<MCCommandSource>
+myMCLiteralArgumentBuilder.getRequirement()
+```
+### hashCode
+
+Return Type: int
+
+```zenscript
+MCLiteralArgumentBuilder.hashCode() as int
+myMCLiteralArgumentBuilder.hashCode()
+```
+### redirect
+
+Return Type: [MCLiteralArgumentBuilder](/vanilla/api/commands/custom/MCLiteralArgumentBuilder)
+
+```zenscript
+MCLiteralArgumentBuilder.redirect(target as MCCommandNode) as MCLiteralArgumentBuilder
+```
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| target | [MCCommandNode](/vanilla/api/commands/custom/MCCommandNode) | No Description Provided |
+Return Type: [MCLiteralArgumentBuilder](/vanilla/api/commands/custom/MCLiteralArgumentBuilder)
+
+```zenscript
+MCLiteralArgumentBuilder.redirect(target as MCCommandNode, modifier as MCSingleRedirectModifier) as MCLiteralArgumentBuilder
+```
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| target | [MCCommandNode](/vanilla/api/commands/custom/MCCommandNode) | No Description Provided |
+| modifier | [MCSingleRedirectModifier](/vanilla/api/commands/custom/MCSingleRedirectModifier) | No Description Provided |
+### requires
+
+Return Type: [MCLiteralArgumentBuilder](/vanilla/api/commands/custom/MCLiteralArgumentBuilder)
+
+```zenscript
+MCLiteralArgumentBuilder.requires(requirement as Predicate<MCCommandSource>) as MCLiteralArgumentBuilder
+```
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| requirement | Predicate&lt;[MCCommandSource](/vanilla/api/commands/custom/MCCommandSource)&gt; | No Description Provided |
+### then
+
+Return Type: [MCLiteralArgumentBuilder](/vanilla/api/commands/custom/MCLiteralArgumentBuilder)
+
+```zenscript
+MCLiteralArgumentBuilder.then(argument as MCArgumentBuilder) as MCLiteralArgumentBuilder
+```
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| argument | [MCArgumentBuilder](/vanilla/api/commands/custom/MCArgumentBuilder) | No Description Provided |
+### toString
+
+Return Type: String
+
+```zenscript
+MCLiteralArgumentBuilder.toString() as String
+myMCLiteralArgumentBuilder.toString()
+```
+
+## Operators
+
+### EQUALS
+
+```zenscript
+myMCLiteralArgumentBuilder == o as Object
+```
+
+
 

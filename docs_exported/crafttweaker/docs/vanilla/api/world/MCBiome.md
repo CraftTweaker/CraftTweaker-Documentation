@@ -3,67 +3,57 @@
 This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
 
 ## Importing the class
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.  
+
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
 ```zenscript
-crafttweaker.api.world.MCBiome
+import crafttweaker.api.world.MCBiome;
 ```
+
 
 ## Methods
+
 ### doesSnowFreeze
 
-Return type: boolean
+Return Type: boolean
 
 ```zenscript
-myMCBiome.doesSnowFreeze(world as crafttweaker.api.world.MCWorld, pos as crafttweaker.api.util.BlockPos);
+MCBiome.doesSnowFreeze(world as MCWorld, pos as BlockPos) as boolean
 ```
-
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| world | [crafttweaker.api.world.MCWorld](/vanilla/api/world/MCWorld) | No description provided |
-| pos | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | No description provided |
-
-
+| world | [MCWorld](/vanilla/api/world/MCWorld) | No Description Provided |
+| pos | [BlockPos](/vanilla/api/util/BlockPos) | No Description Provided |
 ### doesWaterFreeze
 
-Return type: boolean
+Return Type: boolean
 
 ```zenscript
-myMCBiome.doesWaterFreeze(world as crafttweaker.api.world.MCWorld, pos as crafttweaker.api.util.BlockPos);
+MCBiome.doesWaterFreeze(world as MCWorld, pos as BlockPos) as boolean
 ```
-
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| world | [crafttweaker.api.world.MCWorld](/vanilla/api/world/MCWorld) | No description provided |
-| pos | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | No description provided |
-
-
-
-Return type: boolean
+| world | [MCWorld](/vanilla/api/world/MCWorld) | No Description Provided |
+| pos | [BlockPos](/vanilla/api/util/BlockPos) | No Description Provided |
+Return Type: boolean
 
 ```zenscript
-myMCBiome.doesWaterFreeze(world as crafttweaker.api.world.MCWorld, pos as crafttweaker.api.util.BlockPos, mustBeAtEdge as boolean);
+MCBiome.doesWaterFreeze(world as MCWorld, pos as BlockPos, mustBeAtEdge as boolean) as boolean
 ```
-
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| world | [crafttweaker.api.world.MCWorld](/vanilla/api/world/MCWorld) | No description provided |
-| pos | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | No description provided |
-| mustBeAtEdge | boolean | No description provided |
-
-
+| world | [MCWorld](/vanilla/api/world/MCWorld) | No Description Provided |
+| pos | [BlockPos](/vanilla/api/util/BlockPos) | No Description Provided |
+| mustBeAtEdge | boolean | No Description Provided |
 ### getTemperature
 
-Return type: float
+Return Type: float
 
 ```zenscript
-myMCBiome.getTemperature(pos as crafttweaker.api.util.BlockPos);
+MCBiome.getTemperature(pos as BlockPos) as float
 ```
-
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| pos | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | No description provided |
-
-
+| pos | [BlockPos](/vanilla/api/util/BlockPos) | No Description Provided |
 
 ## Properties
 

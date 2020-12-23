@@ -1,0 +1,103 @@
+# TagManager&LT;T : Object&GT;
+
+TagManagers are used to handle the different types of Tags within the game.
+ They can be retrieved directly with the TagManager BEP, and are also used indirectly when creating a tag with the Tag BEP.
+
+This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
+
+## Importing the class
+
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+```zenscript
+import crafttweaker.api.tag.TagManager;
+```
+
+
+## Implemented Interfaces
+TagManager implements the following interfaces. That means all methods defined in these interfaces are also available in TagManager
+
+- [CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
+## Methods
+
+### exists
+
+Checks if a tag already exists. Does the same as calling `.exists` on a tag directly
+
+Return Type: boolean
+
+```zenscript
+TagManager.exists(name as String) as boolean
+```
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| name | String | The resource location to check for |
+### getAllTags
+
+Retrieves a list of all tags currently registered.
+
+Return Type: stdlib.List
+
+```zenscript
+TagManager.getAllTags() as stdlib.List
+myTagManager.getAllTags()
+```
+### getAllTagsFor
+
+Retrieves all tags contain the provided element
+
+Return Type: stdlib.List
+
+```zenscript
+TagManager.getAllTagsFor(element as T) as stdlib.List
+```
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| element | T | The element whose tags should be returned |
+### getTag
+
+Retrieves a tag by its name.
+ Will also be called by the BEP.
+ <p>
+ Note that this method does _not_ yet create the tag if it does not exist.
+ Adding something to the object created by this tag will create it for the game.
+
+Return Type: [MCTag](/vanilla/api/tags/MCTag)&lt;T&gt;
+
+```zenscript
+TagManager.getTag(name as String) as MCTag<T>
+```
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| name | String | The Resource location of the tag |
+### getTagFolder
+
+Get the tag type. In a Bracket call, this will used to determine which TagManager to use.
+ <p>
+ {
+
+Return Type: String
+
+```zenscript
+TagManager.getTagFolder() as String
+myTagManager.getTagFolder()
+```
+
+## Operators
+
+### CONTAINS
+
+Checks if a tag already exists. Does the same as calling `.exists` on a tag directly
+
+```zenscript
+name as String in myTagManager
+```
+
+
+
+## Properties
+
+| Name | Type | Has Getter | Has Setter |
+|------|------|------------|------------|
+| all | stdlib.List | true | false |
+| tagType | String | true | false |
+
