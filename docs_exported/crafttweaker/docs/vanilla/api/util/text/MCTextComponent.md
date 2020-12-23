@@ -151,6 +151,6 @@ myMCTextComponent << component as MCTextComponent
 | Name | Type | Has Getter | Has Setter |
 |------|------|------------|------------|
 | formattedText | String | true | false |
-| siblings | stdlib.List | true | false |
+| siblings | stdlib.List&lt;[MCTextComponent](/vanilla/api/util/text/MCTextComponent)&gt; | true | false |
 | unformattedComponentText | String | true | false |
 

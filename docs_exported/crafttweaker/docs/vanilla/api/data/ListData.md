@@ -25,14 +25,14 @@ new ListData()
 ```
 No Description Provided
 ```zenscript
-new ListData(list as stdlib.List) as ListData
+new ListData(list as stdlib.List<IData>) as ListData
 ```
 | Parameter | Type | Description | Optional | DefaultValue |
 |-----------|------|-------------|----------|--------------|
-| list | stdlib.List | No Description Provided | true |  |
+| list | stdlib.List&lt;[IData](/vanilla/api/data/IData)&gt; | No Description Provided | true |  |
 ## Casters
 
 | Result type | Is Implicit |
 |-------------|-------------|
-| stdlib.List | true |
+| stdlib.List&lt;[IData](/vanilla/api/data/IData)&gt; | true |
 

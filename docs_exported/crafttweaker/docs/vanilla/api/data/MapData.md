@@ -139,6 +139,6 @@ myMapData + data as IData
 | Name | Type | Has Getter | Has Setter |
 |------|------|------------|------------|
 | isEmpty | boolean | true | false |
-| keySet | Set | true | false |
+| keySet | Set&lt;String&gt; | true | false |
 | size | int | true | false |
 

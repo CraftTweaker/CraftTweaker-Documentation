@@ -46,6 +46,6 @@ loadedMods.isModLoaded("minecraft")
 
 | Name | Type | Has Getter | Has Setter |
 |------|------|------------|------------|
-| mods | stdlib.List | true | false |
+| mods | stdlib.List&lt;[ModInfo](/vanilla/api/mods/ModInfo)&gt; | true | false |
 | size | int | true | false |
 

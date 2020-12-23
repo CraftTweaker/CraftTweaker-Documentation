@@ -154,10 +154,10 @@ myMCEntity.getName()
 ```
 ### getTags
 
-Return Type: Set
+Return Type: Set&lt;String&gt;
 
 ```zenscript
-MCEntity.getTags() as Set
+MCEntity.getTags() as Set<String>
 myMCEntity.getTags()
 ```
 ### getType

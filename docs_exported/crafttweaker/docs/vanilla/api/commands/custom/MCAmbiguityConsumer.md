@@ -17,12 +17,12 @@ import crafttweaker.api.commands.custom.MCAmbiguityConsumer;
 Return Type: void
 
 ```zenscript
-MCAmbiguityConsumer.ambiguous(parent as MCCommandNode, child as MCCommandNode, sibling as MCCommandNode, inputs as Collection) as void
+MCAmbiguityConsumer.ambiguous(parent as MCCommandNode, child as MCCommandNode, sibling as MCCommandNode, inputs as Collection<String>) as void
 ```
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | parent | [MCCommandNode](/vanilla/api/commands/custom/MCCommandNode) | No Description Provided |
 | child | [MCCommandNode](/vanilla/api/commands/custom/MCCommandNode) | No Description Provided |
 | sibling | [MCCommandNode](/vanilla/api/commands/custom/MCCommandNode) | No Description Provided |
-| inputs | Collection | No Description Provided |
+| inputs | Collection&lt;String&gt; | No Description Provided |
 

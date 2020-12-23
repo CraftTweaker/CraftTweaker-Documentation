@@ -30,26 +30,26 @@ myMCCommandSource.getPlayer()
 ```
 ### getPlayerNames
 
-Return Type: Collection
+Return Type: Collection&lt;String&gt;
 
 ```zenscript
-MCCommandSource.getPlayerNames() as Collection
+MCCommandSource.getPlayerNames() as Collection<String>
 myMCCommandSource.getPlayerNames()
 ```
 ### getTargetedEntity
 
-Return Type: Collection
+Return Type: Collection&lt;String&gt;
 
 ```zenscript
-MCCommandSource.getTargetedEntity() as Collection
+MCCommandSource.getTargetedEntity() as Collection<String>
 myMCCommandSource.getTargetedEntity()
 ```
 ### getTeamNames
 
-Return Type: Collection
+Return Type: Collection&lt;String&gt;
 
 ```zenscript
-MCCommandSource.getTeamNames() as Collection
+MCCommandSource.getTeamNames() as Collection<String>
 myMCCommandSource.getTeamNames()
 ```
 ### hasPermissionLevel

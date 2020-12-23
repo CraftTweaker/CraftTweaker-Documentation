@@ -32,13 +32,13 @@ MCGame.localize(translationKey as String) as String
 
 | Name | Type | Has Getter | Has Setter |
 |------|------|------------|------------|
-| directionAxises | Collection | true | false |
-| effects | Collection | true | false |
-| entityClassifications | Collection | true | false |
-| entityTypes | Collection | true | false |
-| fluids | Collection | true | false |
-| formattings | Collection | true | false |
-| items | Collection | true | false |
-| potions | Collection | true | false |
-| recipeTypes | Collection | true | false |
+| directionAxises | Collection&lt;[DirectionAxis](/vanilla/api/util/DirectionAxis)&gt; | true | false |
+| effects | Collection&lt;[MCPotionEffect](/vanilla/api/potion/MCPotionEffect)&gt; | true | false |
+| entityClassifications | Collection&lt;[MCEntityClassification](/vanilla/api/entity/MCEntityClassification)&gt; | true | false |
+| entityTypes | Collection&lt;[MCEntityType](/vanilla/api/entities/MCEntityType)&gt; | true | false |
+| fluids | Collection&lt;[MCFluid](/vanilla/api/fluid/MCFluid)&gt; | true | false |
+| formattings | Collection&lt;[TextFormatting](/vanilla/api/util/text/TextFormatting)&gt; | true | false |
+| items | Collection&lt;[IItemStack](/vanilla/api/items/IItemStack)&gt; | true | false |
+| potions | Collection&lt;[MCPotion](/vanilla/api/potion/MCPotion)&gt; | true | false |
+| recipeTypes | Collection&lt;[IRecipeManager](/vanilla/api/managers/IRecipeManager)&gt; | true | false |
 

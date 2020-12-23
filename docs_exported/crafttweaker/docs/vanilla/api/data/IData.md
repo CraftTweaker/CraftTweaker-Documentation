@@ -20,10 +20,10 @@ import crafttweaker.api.data.IData;
 
 Gets a List<IData> representation of this IData, returns null on anything but [ListData](/vanilla/api/data/ListData).
 
-Return Type: stdlib.List
+Return Type: stdlib.List&lt;[IData](/vanilla/api/data/IData)&gt;
 
 ```zenscript
-IData.asList() as stdlib.List
+IData.asList() as stdlib.List<IData>
 {Display: {lore: ["Hello", "World"]}}.asList()
 ```
 ### asMap

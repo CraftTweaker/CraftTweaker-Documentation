@@ -28,6 +28,6 @@ MCPotion.getNamePrefixed(name as String) as String
 | Name | Type | Has Getter | Has Setter |
 |------|------|------------|------------|
 | commandString | String | true | false |
-| effects | stdlib.List | true | false |
+| effects | stdlib.List&lt;[MCPotionEffectInstance](/vanilla/api/potion/MCPotionEffectInstance)&gt; | true | false |
 | hasInstantEffect | boolean | true | false |
 

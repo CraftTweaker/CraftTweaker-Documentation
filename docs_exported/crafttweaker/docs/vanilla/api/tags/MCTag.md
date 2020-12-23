@@ -58,10 +58,10 @@ myMCTag.exists()
 ```
 ### getElements
 
-Return Type: stdlib.List
+Return Type: stdlib.List&lt;T&gt;
 
 ```zenscript
-MCTag.getElements() as stdlib.List
+MCTag.getElements() as stdlib.List<T>
 myMCTag.getElements()
 ```
 ### getId
@@ -112,7 +112,7 @@ myMCTag == other as MCTag<T>
 
 | Name | Type | Has Getter | Has Setter |
 |------|------|------------|------------|
-| elements | stdlib.List | true | false |
+| elements | stdlib.List&lt;T&gt; | true | false |
 | exists | boolean | true | false |
 | id | [MCResourceLocation](/vanilla/api/util/MCResourceLocation) | true | false |
 | manager | [TagManager](/vanilla/api/tags/TagManager)&lt;T&gt; | true | false |

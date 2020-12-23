@@ -82,10 +82,10 @@ myMCCommandContext.getLastChild()
 ```
 ### getNodes
 
-Return Type: stdlib.List
+Return Type: stdlib.List&lt;[MCParsedCommandNode](/vanilla/api/commands/custom/MCParsedCommandNode)&gt;
 
 ```zenscript
-MCCommandContext.getNodes() as stdlib.List
+MCCommandContext.getNodes() as stdlib.List<MCParsedCommandNode>
 myMCCommandContext.getNodes()
 ```
 ### getRange

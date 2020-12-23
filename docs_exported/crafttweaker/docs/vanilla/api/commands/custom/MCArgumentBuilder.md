@@ -71,10 +71,10 @@ MCArgumentBuilder.forward(target as MCCommandNode, modifier as MCRedirectModifie
 | fork | boolean | No Description Provided |
 ### getArguments
 
-Return Type: Collection
+Return Type: Collection&lt;[MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)&gt;
 
 ```zenscript
-MCArgumentBuilder.getArguments() as Collection
+MCArgumentBuilder.getArguments() as Collection<MCCommandNode>
 myMCArgumentBuilder.getArguments()
 ```
 ### getCommand

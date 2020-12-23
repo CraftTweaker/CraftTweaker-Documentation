@@ -39,7 +39,7 @@ MCPotionEffect.newInstance(duration as int, amplifier as int) as MCPotionEffectI
 | Name | Type | Has Getter | Has Setter |
 |------|------|------------|------------|
 | commandString | String | true | false |
-| curativeItems | stdlib.List | true | false |
+| curativeItems | stdlib.List&lt;[IItemStack](/vanilla/api/items/IItemStack)&gt; | true | false |
 | displayName | String | true | false |
 | isBeneficial | boolean | true | false |
 | isInstant | boolean | true | false |

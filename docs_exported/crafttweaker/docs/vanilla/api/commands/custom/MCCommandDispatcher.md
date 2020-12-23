@@ -62,11 +62,11 @@ MCCommandDispatcher.findAmbiguities(consumer as MCAmbiguityConsumer) as void
 Return Type: [MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)
 
 ```zenscript
-MCCommandDispatcher.findNode(path as Collection) as MCCommandNode
+MCCommandDispatcher.findNode(path as Collection<String>) as MCCommandNode
 ```
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| path | Collection | No Description Provided |
+| path | Collection&lt;String&gt; | No Description Provided |
 ### getAllUsage
 
 Return Type: String[]
@@ -100,10 +100,10 @@ MCCommandDispatcher.getCompletionSuggestions(parse as MCParseResults, cursor as 
 | cursor | int | No Description Provided |
 ### getPath
 
-Return Type: Collection
+Return Type: Collection&lt;String&gt;
 
 ```zenscript
-MCCommandDispatcher.getPath(target as MCCommandNode) as Collection
+MCCommandDispatcher.getPath(target as MCCommandNode) as Collection<String>
 ```
 | Parameter | Type | Description |
 |-----------|------|-------------|

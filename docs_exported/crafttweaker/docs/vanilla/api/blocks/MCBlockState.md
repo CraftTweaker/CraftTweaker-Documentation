@@ -21,10 +21,10 @@ import crafttweaker.api.blocks.MCBlockState;
 
 ### getAllowedValuesForProperty
 
-Return Type: stdlib.List
+Return Type: stdlib.List&lt;String&gt;
 
 ```zenscript
-MCBlockState.getAllowedValuesForProperty(name as String) as stdlib.List
+MCBlockState.getAllowedValuesForProperty(name as String) as stdlib.List<String>
 ```
 | Parameter | Type | Description |
 |-----------|------|-------------|
@@ -39,10 +39,10 @@ myMCBlockState.getProperties()
 ```
 ### getPropertyNames
 
-Return Type: stdlib.List
+Return Type: stdlib.List&lt;String&gt;
 
 ```zenscript
-MCBlockState.getPropertyNames() as stdlib.List
+MCBlockState.getPropertyNames() as stdlib.List<String>
 myMCBlockState.getPropertyNames()
 ```
 ### getPropertyValue

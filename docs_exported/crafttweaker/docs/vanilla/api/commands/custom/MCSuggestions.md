@@ -17,12 +17,12 @@ import crafttweaker.api.commands.custom.MCSuggestions;
 Return Type: [MCSuggestions](/vanilla/api/commands/custom/MCSuggestions)
 
 ```zenscript
-MCSuggestions.create(command as String, suggestions as Collection) as MCSuggestions
+MCSuggestions.create(command as String, suggestions as Collection<MCSuggestion>) as MCSuggestions
 ```
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | command | String | No Description Provided |
-| suggestions | Collection | No Description Provided |
+| suggestions | Collection&lt;[MCSuggestion](/vanilla/api/commands/custom/MCSuggestion)&gt; | No Description Provided |
 ### empty
 
 Return Type: [MCSuggestions](/vanilla/api/commands/custom/MCSuggestions)
@@ -36,12 +36,12 @@ MCSuggestions.empty()
 Return Type: [MCSuggestions](/vanilla/api/commands/custom/MCSuggestions)
 
 ```zenscript
-MCSuggestions.merge(command as String, input as Collection) as MCSuggestions
+MCSuggestions.merge(command as String, input as Collection<MCSuggestions>) as MCSuggestions
 ```
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | command | String | No Description Provided |
-| input | Collection | No Description Provided |
+| input | Collection&lt;[MCSuggestions](/vanilla/api/commands/custom/MCSuggestions)&gt; | No Description Provided |
 ## Casters
 
 | Result type | Is Implicit |
@@ -62,10 +62,10 @@ MCSuggestions.equals(o as Object) as boolean
 | o | Object | No Description Provided |
 ### getList
 
-Return Type: stdlib.List
+Return Type: stdlib.List&lt;[MCSuggestion](/vanilla/api/commands/custom/MCSuggestion)&gt;
 
 ```zenscript
-MCSuggestions.getList() as stdlib.List
+MCSuggestions.getList() as stdlib.List<MCSuggestion>
 myMCSuggestions.getList()
 ```
 ### getRange

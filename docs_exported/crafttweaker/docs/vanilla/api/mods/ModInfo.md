@@ -16,11 +16,11 @@ import crafttweaker.api.mods.ModInfo;
 
 | Name | Type | Has Getter | Has Setter |
 |------|------|------------|------------|
-| blocks | stdlib.List | true | false |
+| blocks | stdlib.List&lt;[MCBlock](/vanilla/api/blocks/MCBlock)&gt; | true | false |
 | displayName | String | true | false |
-| entitytypes | stdlib.List | true | false |
-| fluids | stdlib.List | true | false |
-| items | stdlib.List | true | false |
+| entitytypes | stdlib.List&lt;[MCEntityType](/vanilla/api/entities/MCEntityType)&gt; | true | false |
+| fluids | stdlib.List&lt;[MCFluid](/vanilla/api/fluid/MCFluid)&gt; | true | false |
+| items | stdlib.List&lt;[IItemStack](/vanilla/api/items/IItemStack)&gt; | true | false |
 | modid | String | true | false |
 | namespace | String | true | false |
 | version | String | true | false |

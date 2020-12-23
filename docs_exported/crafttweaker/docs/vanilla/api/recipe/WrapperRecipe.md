@@ -32,6 +32,6 @@ WrapperRecipe.canFit(width as int, height as int) as boolean
 | group | String | true | false |
 | icon | [IItemStack](/vanilla/api/items/IItemStack) | true | false |
 | id | [MCResourceLocation](/vanilla/api/util/MCResourceLocation) | true | false |
-| ingredients | stdlib.List | true | false |
+| ingredients | stdlib.List&lt;[IIngredient](/vanilla/api/items/IIngredient)&gt; | true | false |
 | output | [IItemStack](/vanilla/api/items/IItemStack) | true | false |
 

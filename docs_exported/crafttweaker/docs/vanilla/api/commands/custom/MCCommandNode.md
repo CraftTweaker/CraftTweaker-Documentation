@@ -78,10 +78,10 @@ MCCommandNode.getChild(name as String) as MCCommandNode
 | name | String | No Description Provided |
 ### getChildren
 
-Return Type: Collection
+Return Type: Collection&lt;[MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)&gt;
 
 ```zenscript
-MCCommandNode.getChildren() as Collection
+MCCommandNode.getChildren() as Collection<MCCommandNode>
 myMCCommandNode.getChildren()
 ```
 ### getCommand
@@ -94,10 +94,10 @@ myMCCommandNode.getCommand()
 ```
 ### getExamples
 
-Return Type: Collection
+Return Type: Collection&lt;String&gt;
 
 ```zenscript
-MCCommandNode.getExamples() as Collection
+MCCommandNode.getExamples() as Collection<String>
 myMCCommandNode.getExamples()
 ```
 ### getName
@@ -126,10 +126,10 @@ myMCCommandNode.getRedirectModifier()
 ```
 ### getRelevantNodes
 
-Return Type: Collection
+Return Type: Collection&lt;[MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)&gt;
 
 ```zenscript
-MCCommandNode.getRelevantNodes(input as String) as Collection
+MCCommandNode.getRelevantNodes(input as String) as Collection<MCCommandNode>
 ```
 | Parameter | Type | Description |
 |-----------|------|-------------|

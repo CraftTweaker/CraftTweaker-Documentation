@@ -38,10 +38,10 @@ MCPotionEffectInstance.combine(effect as MCPotionEffectInstance) as boolean
 | effect | [MCPotionEffectInstance](/vanilla/api/potion/MCPotionEffectInstance) | No Description Provided |
 ### getCurativeItems
 
-Return Type: stdlib.List
+Return Type: stdlib.List&lt;[IItemStack](/vanilla/api/items/IItemStack)&gt;
 
 ```zenscript
-MCPotionEffectInstance.getCurativeItems() as stdlib.List
+MCPotionEffectInstance.getCurativeItems() as stdlib.List<IItemStack>
 myMCPotionEffectInstance.getCurativeItems()
 ```
 ### isCurativeItem

@@ -14,11 +14,11 @@ import crafttweaker.api.commands.custom.MCRedirectModifier;
 
 No Description Provided
 ```zenscript
-new MCRedirectModifier(fun as Function<MCCommandContext,Collection>) as MCRedirectModifier
+new MCRedirectModifier(fun as Function<MCCommandContext,Collection<MCCommandSource>>) as MCRedirectModifier
 ```
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| fun | Function&lt;[MCCommandContext](/vanilla/api/commands/custom/MCCommandContext),Collection&gt; | No Description Provided |
+| fun | Function&lt;[MCCommandContext](/vanilla/api/commands/custom/MCCommandContext),Collection&lt;[MCCommandSource](/vanilla/api/commands/custom/MCCommandSource)&gt;&gt; | No Description Provided |
 
 ## Casters
 
@@ -30,10 +30,10 @@ new MCRedirectModifier(fun as Function<MCCommandContext,Collection>) as MCRedire
 
 ### apply
 
-Return Type: Collection
+Return Type: Collection&lt;[MCCommandSource](/vanilla/api/commands/custom/MCCommandSource)&gt;
 
 ```zenscript
-MCRedirectModifier.apply(context as MCCommandContext) as Collection
+MCRedirectModifier.apply(context as MCCommandContext) as Collection<MCCommandSource>
 ```
 | Parameter | Type | Description |
 |-----------|------|-------------|

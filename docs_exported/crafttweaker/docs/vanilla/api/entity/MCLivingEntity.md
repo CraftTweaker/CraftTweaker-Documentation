@@ -100,10 +100,10 @@ MCLivingEntity.getActivePotionEffect(potionIn as MCPotionEffect) as MCPotionEffe
 | potionIn | [MCPotionEffect](/vanilla/api/potion/MCPotionEffect) | No Description Provided |
 ### getActivePotionEffects
 
-Return Type: Collection
+Return Type: Collection&lt;[MCPotionEffectInstance](/vanilla/api/potion/MCPotionEffectInstance)&gt;
 
 ```zenscript
-MCLivingEntity.getActivePotionEffects() as Collection
+MCLivingEntity.getActivePotionEffects() as Collection<MCPotionEffectInstance>
 myMCLivingEntity.getActivePotionEffects()
 ```
 ### getActivePotionMap
@@ -124,10 +124,10 @@ myMCLivingEntity.getArmorCoverPercentage()
 ```
 ### getArmorInventoryList
 
-Return Type: stdlib.Iterable
+Return Type: stdlib.Iterable&lt;[ItemStack](/vanilla/api/item/ItemStack)&gt;
 
 ```zenscript
-MCLivingEntity.getArmorInventoryList() as stdlib.Iterable
+MCLivingEntity.getArmorInventoryList() as stdlib.Iterable<ItemStack>
 myMCLivingEntity.getArmorInventoryList()
 ```
 ### getArrowCountInEntity

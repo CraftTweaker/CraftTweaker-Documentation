@@ -34,10 +34,10 @@ craftingTable.addJSONRecipe("recipe_name", {ingredient:{item:<item:minecraft:gol
 | data | [IData](/vanilla/api/data/IData) | data representing the json file |
 ### getAllRecipes
 
-Return Type: stdlib.List
+Return Type: stdlib.List&lt;[WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)&gt;
 
 ```zenscript
-IRecipeManager.getAllRecipes() as stdlib.List
+IRecipeManager.getAllRecipes() as stdlib.List<WrapperRecipe>
 craftingTable.getAllRecipes()
 ```
 ### getRecipeByName
@@ -52,10 +52,10 @@ IRecipeManager.getRecipeByName(name as String) as WrapperRecipe
 | name | String | No Description Provided |
 ### getRecipesByOutput
 
-Return Type: stdlib.List
+Return Type: stdlib.List&lt;[WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)&gt;
 
 ```zenscript
-IRecipeManager.getRecipesByOutput(output as IIngredient) as stdlib.List
+IRecipeManager.getRecipesByOutput(output as IIngredient) as stdlib.List<WrapperRecipe>
 ```
 | Parameter | Type | Description |
 |-----------|------|-------------|

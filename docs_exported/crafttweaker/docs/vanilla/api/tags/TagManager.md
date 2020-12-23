@@ -35,20 +35,20 @@ TagManager.exists(name as String) as boolean
 
 Retrieves a list of all tags currently registered.
 
-Return Type: stdlib.List
+Return Type: stdlib.List&lt;[MCTag](/vanilla/api/tags/MCTag)&lt;T&gt;&gt;
 
 ```zenscript
-TagManager.getAllTags() as stdlib.List
+TagManager.getAllTags() as stdlib.List<MCTag<T>>
 myTagManager.getAllTags()
 ```
 ### getAllTagsFor
 
 Retrieves all tags contain the provided element
 
-Return Type: stdlib.List
+Return Type: stdlib.List&lt;[MCTag](/vanilla/api/tags/MCTag)&lt;T&gt;&gt;
 
 ```zenscript
-TagManager.getAllTagsFor(element as T) as stdlib.List
+TagManager.getAllTagsFor(element as T) as stdlib.List<MCTag<T>>
 ```
 | Parameter | Type | Description |
 |-----------|------|-------------|
@@ -98,6 +98,6 @@ name as String in myTagManager
 
 | Name | Type | Has Getter | Has Setter |
 |------|------|------------|------------|
-| all | stdlib.List | true | false |
+| all | stdlib.List&lt;[MCTag](/vanilla/api/tags/MCTag)&lt;T&gt;&gt; | true | false |
 | tagType | String | true | false |
 
