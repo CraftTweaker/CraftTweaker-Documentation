@@ -2,6 +2,7 @@
   "nav": {
     "Vanilla": {
       "Api": {
+        "BracketHandlers": "vanilla/api/BracketHandlers.md",
         "Block": {
           "Material": {
             "MCMaterial": "vanilla/api/block/material/MCMaterial.md",
@@ -77,14 +78,14 @@
           "MCPlayerEntity": "vanilla/api/entity/MCPlayerEntity.md"
         },
         "Event": {
-          "Player": {
-            "MCAnvilRepairEvent": "vanilla/api/event/player/MCAnvilRepairEvent.md",
-            "MCPlayerEvent": "vanilla/api/event/player/MCPlayerEvent.md"
-          },
           "IEvent": "vanilla/api/event/IEvent.md",
           "MCEntityEvent": "vanilla/api/event/MCEntityEvent.md",
           "MCEvent": "vanilla/api/event/MCEvent.md",
-          "MCLivingEvent": "vanilla/api/event/MCLivingEvent.md"
+          "MCLivingEvent": "vanilla/api/event/MCLivingEvent.md",
+          "Player": {
+            "MCAnvilRepairEvent": "vanilla/api/event/player/MCAnvilRepairEvent.md",
+            "MCPlayerEvent": "vanilla/api/event/player/MCPlayerEvent.md"
+          }
         },
         "Fluid": {
           "IFluidStack": "vanilla/api/fluid/IFluidStack.md",
@@ -151,21 +152,20 @@
           "TagManagerItem": "vanilla/api/tags/TagManagerItem.md"
         },
         "Util": {
+          "BlockPos": "vanilla/api/util/BlockPos.md",
+          "Direction": "vanilla/api/util/Direction.md",
+          "DirectionAxis": "vanilla/api/util/DirectionAxis.md",
+          "MCResourceLocation": "vanilla/api/util/MCResourceLocation.md",
           "Text": {
             "MCStyle": "vanilla/api/util/text/MCStyle.md",
             "MCTextComponent": "vanilla/api/util/text/MCTextComponent.md",
             "TextFormatting": "vanilla/api/util/text/TextFormatting.md"
-          },
-          "BlockPos": "vanilla/api/util/BlockPos.md",
-          "Direction": "vanilla/api/util/Direction.md",
-          "DirectionAxis": "vanilla/api/util/DirectionAxis.md",
-          "MCResourceLocation": "vanilla/api/util/MCResourceLocation.md"
+          }
         },
         "World": {
           "MCBiome": "vanilla/api/world/MCBiome.md",
           "MCWorld": "vanilla/api/world/MCWorld.md"
-        },
-        "BracketHandlers": "vanilla/api/BracketHandlers.md"
+        }
       }
     }
   }
