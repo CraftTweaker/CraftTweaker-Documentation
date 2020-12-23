@@ -12,7 +12,7 @@ import crafttweaker.api.util.DirectionAxis;
 ```
 
 
-## Extending Enum<DirectionAxis>
+## Extending Enum&lt;DirectionAxis&gt;
 
 DirectionAxis extends Enum&lt;[DirectionAxis](/vanilla/api/util/DirectionAxis)&gt;. That means all methods available in Enum&lt;[DirectionAxis](/vanilla/api/util/DirectionAxis)&gt; are also available in DirectionAxis
 

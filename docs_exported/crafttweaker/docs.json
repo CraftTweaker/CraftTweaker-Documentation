@@ -103,7 +103,7 @@
           "MCItemDefinition": "vanilla/api/item/MCItemDefinition.md"
         },
         "Items": {
-          "/ExpandIIngredientTransformers": "vanilla/api/items/ExpandIIngredientTransformers.md",
+          "ExpandIIngredientTransformers": "vanilla/api/items/ExpandIIngredientTransformers.md",
           "IIngredient": "vanilla/api/items/IIngredient.md",
           "IIngredientTransformer": "vanilla/api/items/IIngredientTransformer.md",
           "IItemStack": "vanilla/api/items/IItemStack.md",
@@ -144,6 +144,7 @@
           "WrapperRecipe": "vanilla/api/recipe/WrapperRecipe.md"
         },
         "Tags": {
+          "ExpandItemTag": "vanilla/api/tags/ExpandItemTag.md",
           "MCTag": "vanilla/api/tags/MCTag.md",
           "TagManager": "vanilla/api/tags/TagManager.md",
           "TagManagerBlock": "vanilla/api/tags/TagManagerBlock.md",

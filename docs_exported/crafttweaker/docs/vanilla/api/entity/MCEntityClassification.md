@@ -10,7 +10,7 @@ import crafttweaker.api.entity.MCEntityClassification;
 ```
 
 
-## Extending Enum<MCEntityClassification>
+## Extending Enum&lt;MCEntityClassification&gt;
 
 MCEntityClassification extends Enum&lt;[MCEntityClassification](/vanilla/api/entity/MCEntityClassification)&gt;. That means all methods available in Enum&lt;[MCEntityClassification](/vanilla/api/entity/MCEntityClassification)&gt; are also available in MCEntityClassification
 

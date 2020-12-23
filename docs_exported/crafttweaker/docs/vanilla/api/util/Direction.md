@@ -12,7 +12,7 @@ import crafttweaker.api.util.Direction;
 ```
 
 
-## Extending Enum<Direction>
+## Extending Enum&lt;Direction&gt;
 
 Direction extends Enum&lt;[Direction](/vanilla/api/util/Direction)&gt;. That means all methods available in Enum&lt;[Direction](/vanilla/api/util/Direction)&gt; are also available in Direction
 
