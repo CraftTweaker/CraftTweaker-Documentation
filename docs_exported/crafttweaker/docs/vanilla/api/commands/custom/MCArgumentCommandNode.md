@@ -18,7 +18,7 @@ MCArgumentCommandNode extends [MCCommandNode](/vanilla/api/commands/custom/MCCom
 
 | Result type | Is Implicit |
 |-------------|-------------|
-| String | true |
+| string | true |
 
 ## Methods
 
@@ -58,10 +58,10 @@ myMCArgumentCommandNode.hashCode()
 ```
 ### toString
 
-Return Type: String
+Return Type: string
 
 ```zenscript
-MCArgumentCommandNode.toString() as String
+MCArgumentCommandNode.toString() as string
 myMCArgumentCommandNode.toString()
 ```
 

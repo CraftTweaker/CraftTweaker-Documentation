@@ -17,11 +17,11 @@ import crafttweaker.api.commands.custom.MCSuggestions;
 Return Type: [MCSuggestions](/vanilla/api/commands/custom/MCSuggestions)
 
 ```zenscript
-MCSuggestions.create(command as String, suggestions as Collection<MCSuggestion>) as MCSuggestions
+MCSuggestions.create(command as string, suggestions as Collection<MCSuggestion>) as MCSuggestions
 ```
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| command | String | No Description Provided |
+| command | string | No Description Provided |
 | suggestions | Collection&lt;[MCSuggestion](/vanilla/api/commands/custom/MCSuggestion)&gt; | No Description Provided |
 ### empty
 
@@ -36,17 +36,17 @@ MCSuggestions.empty()
 Return Type: [MCSuggestions](/vanilla/api/commands/custom/MCSuggestions)
 
 ```zenscript
-MCSuggestions.merge(command as String, input as Collection<MCSuggestions>) as MCSuggestions
+MCSuggestions.merge(command as string, input as Collection<MCSuggestions>) as MCSuggestions
 ```
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| command | String | No Description Provided |
+| command | string | No Description Provided |
 | input | Collection&lt;[MCSuggestions](/vanilla/api/commands/custom/MCSuggestions)&gt; | No Description Provided |
 ## Casters
 
 | Result type | Is Implicit |
 |-------------|-------------|
-| String | true |
+| string | true |
 
 ## Methods
 
@@ -94,10 +94,10 @@ myMCSuggestions.isEmpty()
 ```
 ### toString
 
-Return Type: String
+Return Type: string
 
 ```zenscript
-MCSuggestions.toString() as String
+MCSuggestions.toString() as string
 myMCSuggestions.toString()
 ```
 

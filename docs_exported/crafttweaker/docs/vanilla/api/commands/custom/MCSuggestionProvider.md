@@ -24,7 +24,7 @@ new MCSuggestionProvider(fun as BiFunction<MCCommandContext,MCSuggestionsBuilder
 
 | Result type | Is Implicit |
 |-------------|-------------|
-| String | true |
+| string | true |
 
 ## Methods
 
@@ -59,10 +59,10 @@ myMCSuggestionProvider.hashCode()
 ```
 ### toString
 
-Return Type: String
+Return Type: string
 
 ```zenscript
-MCSuggestionProvider.toString() as String
+MCSuggestionProvider.toString() as string
 myMCSuggestionProvider.toString()
 ```
 

@@ -25,12 +25,12 @@ Adds a recipe to the smithing table.
 Return Type: void
 
 ```zenscript
-SmithingManager.addRecipe(recipeName as String, result as IItemStack, base as IIngredient, addition as IIngredient) as void
+SmithingManager.addRecipe(recipeName as string, result as IItemStack, base as IIngredient, addition as IIngredient) as void
 smithing.addRecipe("recipe_name", <item:minecraft:golden_apple>, <item:minecraft:apple>, <tag:forge:ingots/gold>)
 ```
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| recipeName | String | Name of the recipe. |
+| recipeName | string | Name of the recipe. |
 | result | [IItemStack](/vanilla/api/items/IItemStack) | The item created by the recipe. |
 | base | [IIngredient](/vanilla/api/items/IIngredient) | The initial ingredient for the recipe. |
 | addition | [IIngredient](/vanilla/api/items/IIngredient) | The item added to the base item. |

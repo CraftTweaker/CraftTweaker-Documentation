@@ -14,7 +14,7 @@ import crafttweaker.api.commands.custom.MCCommandDispatcher;
 
 | Result type | Is Implicit |
 |-------------|-------------|
-| String | true |
+| string | true |
 
 ## Methods
 
@@ -41,11 +41,11 @@ MCCommandDispatcher.execute(parse as MCParseResults) as int
 Return Type: int
 
 ```zenscript
-MCCommandDispatcher.execute(input as String, source as MCCommandSource) as int
+MCCommandDispatcher.execute(input as string, source as MCCommandSource) as int
 ```
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| input | String | No Description Provided |
+| input | string | No Description Provided |
 | source | [MCCommandSource](/vanilla/api/commands/custom/MCCommandSource) | No Description Provided |
 ### findAmbiguities
 
@@ -62,17 +62,17 @@ MCCommandDispatcher.findAmbiguities(consumer as MCAmbiguityConsumer) as void
 Return Type: [MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)
 
 ```zenscript
-MCCommandDispatcher.findNode(path as Collection<String>) as MCCommandNode
+MCCommandDispatcher.findNode(path as Collection<string>) as MCCommandNode
 ```
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| path | Collection&lt;String&gt; | No Description Provided |
+| path | Collection&lt;string&gt; | No Description Provided |
 ### getAllUsage
 
-Return Type: String[]
+Return Type: string[]
 
 ```zenscript
-MCCommandDispatcher.getAllUsage(node as MCCommandNode, source as MCCommandSource, restricted as boolean) as String[]
+MCCommandDispatcher.getAllUsage(node as MCCommandNode, source as MCCommandSource, restricted as boolean) as string[]
 ```
 | Parameter | Type | Description |
 |-----------|------|-------------|
@@ -100,10 +100,10 @@ MCCommandDispatcher.getCompletionSuggestions(parse as MCParseResults, cursor as 
 | cursor | int | No Description Provided |
 ### getPath
 
-Return Type: Collection&lt;String&gt;
+Return Type: Collection&lt;string&gt;
 
 ```zenscript
-MCCommandDispatcher.getPath(target as MCCommandNode) as Collection<String>
+MCCommandDispatcher.getPath(target as MCCommandNode) as Collection<string>
 ```
 | Parameter | Type | Description |
 |-----------|------|-------------|
@@ -118,10 +118,10 @@ myMCCommandDispatcher.getRoot()
 ```
 ### getSmartUsage
 
-Return Type: String[[MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)]
+Return Type: string[[MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)]
 
 ```zenscript
-MCCommandDispatcher.getSmartUsage(node as MCCommandNode, source as MCCommandSource) as String[MCCommandNode]
+MCCommandDispatcher.getSmartUsage(node as MCCommandNode, source as MCCommandSource) as string[MCCommandNode]
 ```
 | Parameter | Type | Description |
 |-----------|------|-------------|
@@ -140,11 +140,11 @@ myMCCommandDispatcher.hashCode()
 Return Type: [MCParseResults](/vanilla/api/commands/custom/MCParseResults)
 
 ```zenscript
-MCCommandDispatcher.parse(command as String, source as MCCommandSource) as MCParseResults
+MCCommandDispatcher.parse(command as string, source as MCCommandSource) as MCParseResults
 ```
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| command | String | No Description Provided |
+| command | string | No Description Provided |
 | source | [MCCommandSource](/vanilla/api/commands/custom/MCCommandSource) | No Description Provided |
 ### register
 
@@ -168,10 +168,10 @@ MCCommandDispatcher.setConsumer(consumer as MCResultConsumer) as void
 | consumer | [MCResultConsumer](/vanilla/api/commands/custom/MCResultConsumer) | No Description Provided |
 ### toString
 
-Return Type: String
+Return Type: string
 
 ```zenscript
-MCCommandDispatcher.toString() as String
+MCCommandDispatcher.toString() as string
 myMCCommandDispatcher.toString()
 ```
 

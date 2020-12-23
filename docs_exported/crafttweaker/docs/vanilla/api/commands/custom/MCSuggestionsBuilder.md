@@ -14,7 +14,7 @@ import crafttweaker.api.commands.custom.MCSuggestionsBuilder;
 
 | Result type | Is Implicit |
 |-------------|-------------|
-| String | true |
+| string | true |
 
 ## Methods
 
@@ -58,18 +58,18 @@ MCSuggestionsBuilder.equals(o as Object) as boolean
 | o | Object | No Description Provided |
 ### getInput
 
-Return Type: String
+Return Type: string
 
 ```zenscript
-MCSuggestionsBuilder.getInput() as String
+MCSuggestionsBuilder.getInput() as string
 myMCSuggestionsBuilder.getInput()
 ```
 ### getRemaining
 
-Return Type: String
+Return Type: string
 
 ```zenscript
-MCSuggestionsBuilder.getRemaining() as String
+MCSuggestionsBuilder.getRemaining() as string
 myMCSuggestionsBuilder.getRemaining()
 ```
 ### getStart
@@ -101,26 +101,26 @@ myMCSuggestionsBuilder.restart()
 Return Type: [MCSuggestionsBuilder](/vanilla/api/commands/custom/MCSuggestionsBuilder)
 
 ```zenscript
-MCSuggestionsBuilder.suggest(text as String) as MCSuggestionsBuilder
+MCSuggestionsBuilder.suggest(text as string) as MCSuggestionsBuilder
 ```
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| text | String | No Description Provided |
+| text | string | No Description Provided |
 Return Type: [MCSuggestionsBuilder](/vanilla/api/commands/custom/MCSuggestionsBuilder)
 
 ```zenscript
-MCSuggestionsBuilder.suggest(text as String, tooltip as String) as MCSuggestionsBuilder
+MCSuggestionsBuilder.suggest(text as string, tooltip as string) as MCSuggestionsBuilder
 ```
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| text | String | No Description Provided |
-| tooltip | String | No Description Provided |
+| text | string | No Description Provided |
+| tooltip | string | No Description Provided |
 ### toString
 
-Return Type: String
+Return Type: string
 
 ```zenscript
-MCSuggestionsBuilder.toString() as String
+MCSuggestionsBuilder.toString() as string
 myMCSuggestionsBuilder.toString()
 ```
 

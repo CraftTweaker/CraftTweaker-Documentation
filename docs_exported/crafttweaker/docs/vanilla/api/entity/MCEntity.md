@@ -17,11 +17,11 @@ import crafttweaker.api.entity.MCEntity;
 Return Type: boolean
 
 ```zenscript
-MCEntity.addTag(tag as String) as boolean
+MCEntity.addTag(tag as string) as boolean
 ```
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| tag | String | No Description Provided |
+| tag | string | No Description Provided |
 ### addVelocity
 
 Return Type: void
@@ -146,18 +146,18 @@ myMCEntity.getMaxInPortalTime()
 ```
 ### getName
 
-Return Type: String
+Return Type: string
 
 ```zenscript
-MCEntity.getName() as String
+MCEntity.getName() as string
 myMCEntity.getName()
 ```
 ### getTags
 
-Return Type: Set&lt;String&gt;
+Return Type: Set&lt;string&gt;
 
 ```zenscript
-MCEntity.getTags() as Set<String>
+MCEntity.getTags() as Set<string>
 myMCEntity.getTags()
 ```
 ### getType
@@ -317,11 +317,11 @@ MCEntity.onLivingFall(distance as float, damageMultiplier as float) as boolean
 Return Type: boolean
 
 ```zenscript
-MCEntity.removeTag(tag as String) as boolean
+MCEntity.removeTag(tag as string) as boolean
 ```
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| tag | String | No Description Provided |
+| tag | string | No Description Provided |
 ### setEntityId
 
 Return Type: void
@@ -389,5 +389,5 @@ MCEntity.setSilent(isSilent as boolean) as void
 
 | Name | Type | Has Getter | Has Setter |
 |------|------|------------|------------|
-| name | String | true | false |
+| name | string | true | false |
 

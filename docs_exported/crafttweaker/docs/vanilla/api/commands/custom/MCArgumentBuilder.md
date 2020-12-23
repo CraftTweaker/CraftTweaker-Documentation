@@ -14,7 +14,7 @@ import crafttweaker.api.commands.custom.MCArgumentBuilder;
 
 | Result type | Is Implicit |
 |-------------|-------------|
-| String | true |
+| string | true |
 
 ## Methods
 
@@ -166,10 +166,10 @@ MCArgumentBuilder.then(argument as MCArgumentBuilder) as MCArgumentBuilder
 | argument | [MCArgumentBuilder](/vanilla/api/commands/custom/MCArgumentBuilder) | No Description Provided |
 ### toString
 
-Return Type: String
+Return Type: string
 
 ```zenscript
-MCArgumentBuilder.toString() as String
+MCArgumentBuilder.toString() as string
 myMCArgumentBuilder.toString()
 ```
 

@@ -25,12 +25,12 @@ Adds a recipe based on a provided IData. The provided IData should represent a D
 Return Type: void
 
 ```zenscript
-IRecipeManager.addJSONRecipe(name as String, data as IData) as void
+IRecipeManager.addJSONRecipe(name as string, data as IData) as void
 craftingTable.addJSONRecipe("recipe_name", {ingredient:{item:<item:minecraft:gold_ore>.registryName},result:<item:minecraft:cooked_porkchop>.registryName,experience:0.35 as float, cookingtime:100})
 ```
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| name | String | name of the recipe |
+| name | string | name of the recipe |
 | data | [IData](/vanilla/api/data/IData) | data representing the json file |
 ### getAllRecipes
 
@@ -45,11 +45,11 @@ craftingTable.getAllRecipes()
 Return Type: [WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)
 
 ```zenscript
-IRecipeManager.getRecipeByName(name as String) as WrapperRecipe
+IRecipeManager.getRecipeByName(name as string) as WrapperRecipe
 ```
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| name | String | No Description Provided |
+| name | string | No Description Provided |
 ### getRecipesByOutput
 
 Return Type: stdlib.List&lt;[WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)&gt;
@@ -77,23 +77,23 @@ Remove recipe based on Registry name modid
 Return Type: void
 
 ```zenscript
-IRecipeManager.removeByModid(modid as String) as void
+IRecipeManager.removeByModid(modid as string) as void
 craftingTable.removeByModid("minecraft")
 ```
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| modid | String | modid of the recipes to remove |
+| modid | string | modid of the recipes to remove |
 Remove recipe based on Registry name modid with an added exclusion check, so you can remove the whole mod besides a few specified.
 
 Return Type: void
 
 ```zenscript
-IRecipeManager.removeByModid(modid as String, exclude as RecipeFilter) as void
+IRecipeManager.removeByModid(modid as string, exclude as RecipeFilter) as void
 craftingTable.removeByModid("minecraft", (name as string) => {return name == "orange_wool";})
 ```
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| modid | String | modid of the recipes to remove |
+| modid | string | modid of the recipes to remove |
 | exclude | [RecipeFilter](/vanilla/api/recipe/RecipeFilter) | recipes to exlude from being removed. |
 ### removeByName
 
@@ -102,12 +102,12 @@ Remove recipe based on Registry name
 Return Type: void
 
 ```zenscript
-IRecipeManager.removeByName(name as String) as void
+IRecipeManager.removeByName(name as string) as void
 craftingTable.removeByName("minecraft:furnace")
 ```
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| name | String | registry name of recipe to remove |
+| name | string | registry name of recipe to remove |
 ### removeByRegex
 
 Remove recipe based on regex
@@ -115,12 +115,12 @@ Remove recipe based on regex
 Return Type: void
 
 ```zenscript
-IRecipeManager.removeByRegex(regex as String) as void
+IRecipeManager.removeByRegex(regex as string) as void
 craftingTable.removeByRegex("\\d_\\d")
 ```
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| regex | String | regex to match against |
+| regex | string | regex to match against |
 ### removeRecipe
 
 Remove a recipe based on it's output.

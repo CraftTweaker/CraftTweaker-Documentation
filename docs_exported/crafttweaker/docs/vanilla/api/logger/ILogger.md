@@ -21,12 +21,12 @@ Logs a debug message.
 Return Type: void
 
 ```zenscript
-ILogger.debug(message as String) as void
+ILogger.debug(message as string) as void
 logger.debug("message")
 ```
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| message | String | message to be logged. |
+| message | string | message to be logged. |
 ### error
 
 Logs an error message.
@@ -34,12 +34,12 @@ Logs an error message.
 Return Type: void
 
 ```zenscript
-ILogger.error(message as String) as void
+ILogger.error(message as string) as void
 logger.error("message")
 ```
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| message | String | message to be logged. |
+| message | string | message to be logged. |
 ### info
 
 Logs an info message.
@@ -47,12 +47,12 @@ Logs an info message.
 Return Type: void
 
 ```zenscript
-ILogger.info(message as String) as void
+ILogger.info(message as string) as void
 logger.info("message")
 ```
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| message | String | message to be logged. |
+| message | string | message to be logged. |
 ### trace
 
 Logs a trace message.
@@ -60,12 +60,12 @@ Logs a trace message.
 Return Type: void
 
 ```zenscript
-ILogger.trace(message as String) as void
+ILogger.trace(message as string) as void
 logger.trace("message")
 ```
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| message | String | message to be logged |
+| message | string | message to be logged |
 ### warning
 
 Logs a warning message.
@@ -73,10 +73,10 @@ Logs a warning message.
 Return Type: void
 
 ```zenscript
-ILogger.warning(message as String) as void
+ILogger.warning(message as string) as void
 logger.warning("message")
 ```
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| message | String | message to be logged. |
+| message | string | message to be logged. |
 

@@ -18,7 +18,7 @@ MCRootCommandNode extends [MCCommandNode](/vanilla/api/commands/custom/MCCommand
 
 | Result type | Is Implicit |
 |-------------|-------------|
-| String | true |
+| string | true |
 
 ## Methods
 
@@ -45,17 +45,17 @@ myMCRootCommandNode.hashCode()
 Return Type: boolean
 
 ```zenscript
-MCRootCommandNode.isValidInput(input as String) as boolean
+MCRootCommandNode.isValidInput(input as string) as boolean
 ```
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| input | String | No Description Provided |
+| input | string | No Description Provided |
 ### toString
 
-Return Type: String
+Return Type: string
 
 ```zenscript
-MCRootCommandNode.toString() as String
+MCRootCommandNode.toString() as string
 myMCRootCommandNode.toString()
 ```
 

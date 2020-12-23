@@ -14,7 +14,7 @@ import crafttweaker.api.commands.custom.MCCommandNode;
 
 | Result type | Is Implicit |
 |-------------|-------------|
-| String | true |
+| string | true |
 
 ## Methods
 
@@ -71,11 +71,11 @@ MCCommandNode.findAmbiguities(consumer as MCAmbiguityConsumer) as void
 Return Type: [MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)
 
 ```zenscript
-MCCommandNode.getChild(name as String) as MCCommandNode
+MCCommandNode.getChild(name as string) as MCCommandNode
 ```
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| name | String | No Description Provided |
+| name | string | No Description Provided |
 ### getChildren
 
 Return Type: Collection&lt;[MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)&gt;
@@ -94,18 +94,18 @@ myMCCommandNode.getCommand()
 ```
 ### getExamples
 
-Return Type: Collection&lt;String&gt;
+Return Type: Collection&lt;string&gt;
 
 ```zenscript
-MCCommandNode.getExamples() as Collection<String>
+MCCommandNode.getExamples() as Collection<string>
 myMCCommandNode.getExamples()
 ```
 ### getName
 
-Return Type: String
+Return Type: string
 
 ```zenscript
-MCCommandNode.getName() as String
+MCCommandNode.getName() as string
 myMCCommandNode.getName()
 ```
 ### getRedirect
@@ -129,11 +129,11 @@ myMCCommandNode.getRedirectModifier()
 Return Type: Collection&lt;[MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)&gt;
 
 ```zenscript
-MCCommandNode.getRelevantNodes(input as String) as Collection<MCCommandNode>
+MCCommandNode.getRelevantNodes(input as string) as Collection<MCCommandNode>
 ```
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| input | String | No Description Provided |
+| input | string | No Description Provided |
 ### getRequirement
 
 Return Type: Predicate&lt;[MCCommandSource](/vanilla/api/commands/custom/MCCommandSource)&gt;
@@ -144,10 +144,10 @@ myMCCommandNode.getRequirement()
 ```
 ### getUsageText
 
-Return Type: String
+Return Type: string
 
 ```zenscript
-MCCommandNode.getUsageText() as String
+MCCommandNode.getUsageText() as string
 myMCCommandNode.getUsageText()
 ```
 ### hashCode
@@ -182,18 +182,18 @@ MCCommandNode.listSuggestions(context as MCCommandContext, builder as MCSuggesti
 Return Type: void
 
 ```zenscript
-MCCommandNode.parse(input as String, contextBuilder as MCCommandContextBuilder) as void
+MCCommandNode.parse(input as string, contextBuilder as MCCommandContextBuilder) as void
 ```
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| input | String | No Description Provided |
+| input | string | No Description Provided |
 | contextBuilder | [MCCommandContextBuilder](/vanilla/api/commands/custom/MCCommandContextBuilder) | No Description Provided |
 ### toString
 
-Return Type: String
+Return Type: string
 
 ```zenscript
-MCCommandNode.toString() as String
+MCCommandNode.toString() as string
 myMCCommandNode.toString()
 ```
 

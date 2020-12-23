@@ -26,11 +26,11 @@ Checks if a tag already exists. Does the same as calling `.exists` on a tag dire
 Return Type: boolean
 
 ```zenscript
-TagManager.exists(name as String) as boolean
+TagManager.exists(name as string) as boolean
 ```
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| name | String | The resource location to check for |
+| name | string | The resource location to check for |
 ### getAllTags
 
 Retrieves a list of all tags currently registered.
@@ -64,21 +64,21 @@ Retrieves a tag by its name.
 Return Type: [MCTag](/vanilla/api/tags/MCTag)&lt;T&gt;
 
 ```zenscript
-TagManager.getTag(name as String) as MCTag<T>
+TagManager.getTag(name as string) as MCTag<T>
 ```
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| name | String | The Resource location of the tag |
+| name | string | The Resource location of the tag |
 ### getTagFolder
 
 Get the tag type. In a Bracket call, this will used to determine which TagManager to use.
  <p>
  {
 
-Return Type: String
+Return Type: string
 
 ```zenscript
-TagManager.getTagFolder() as String
+TagManager.getTagFolder() as string
 myTagManager.getTagFolder()
 ```
 
@@ -89,7 +89,7 @@ myTagManager.getTagFolder()
 Checks if a tag already exists. Does the same as calling `.exists` on a tag directly
 
 ```zenscript
-name as String in myTagManager
+name as string in myTagManager
 ```
 
 
@@ -99,5 +99,5 @@ name as String in myTagManager
 | Name | Type | Has Getter | Has Setter |
 |------|------|------------|------------|
 | all | stdlib.List&lt;[MCTag](/vanilla/api/tags/MCTag)&lt;T&gt;&gt; | true | false |
-| tagType | String | true | false |
+| tagType | string | true | false |
 

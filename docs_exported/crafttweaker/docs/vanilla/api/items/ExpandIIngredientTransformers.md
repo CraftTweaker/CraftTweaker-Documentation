@@ -29,11 +29,11 @@ IIngredient.transform(transformer as IIngredientTransformer<IIngredient>) as MCI
 Return Type: [MCIngredientTransformed](/vanilla/api/items/MCIngredientTransformed)&lt;[IIngredient](/vanilla/api/items/IIngredient)&gt;
 
 ```zenscript
-IIngredient.transformCustom(uid as String, function as Function<IItemStack,IItemStack>) as MCIngredientTransformed<IIngredient>
+IIngredient.transformCustom(uid as string, function as Function<IItemStack,IItemStack>) as MCIngredientTransformed<IIngredient>
 ```
 | Parameter | Type | Description | Optional | DefaultValue |
 |-----------|------|-------------|----------|--------------|
-| uid | String | No Description Provided | false |  |
+| uid | string | No Description Provided | false |  |
 | function | Function&lt;[IItemStack](/vanilla/api/items/IItemStack),[IItemStack](/vanilla/api/items/IItemStack)&gt; | No Description Provided | true |  |### transformDamage
 
 Return Type: [MCIngredientTransformed](/vanilla/api/items/MCIngredientTransformed)&lt;[IIngredient](/vanilla/api/items/IIngredient)&gt;

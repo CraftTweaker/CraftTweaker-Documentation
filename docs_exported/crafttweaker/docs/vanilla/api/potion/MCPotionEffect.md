@@ -38,11 +38,11 @@ MCPotionEffect.newInstance(duration as int, amplifier as int) as MCPotionEffectI
 
 | Name | Type | Has Getter | Has Setter |
 |------|------|------------|------------|
-| commandString | String | true | false |
+| commandString | string | true | false |
 | curativeItems | stdlib.List&lt;[IItemStack](/vanilla/api/items/IItemStack)&gt; | true | false |
-| displayName | String | true | false |
+| displayName | string | true | false |
 | isBeneficial | boolean | true | false |
 | isInstant | boolean | true | false |
 | liquidColor | int | true | false |
-| name | String | true | false |
+| name | string | true | false |
 

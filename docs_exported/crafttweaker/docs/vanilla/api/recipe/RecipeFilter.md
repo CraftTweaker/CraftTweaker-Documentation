@@ -17,9 +17,9 @@ import crafttweaker.api.recipe.RecipeFilter;
 Return Type: boolean
 
 ```zenscript
-RecipeFilter.test(name as String) as boolean
+RecipeFilter.test(name as string) as boolean
 ```
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| name | String | No Description Provided |
+| name | string | No Description Provided |
 

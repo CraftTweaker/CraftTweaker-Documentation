@@ -88,5 +88,5 @@ myMCMaterial.isSolid()
 | Name | Type | Has Getter | Has Setter |
 |------|------|------------|------------|
 | color | [MCMaterialColor](/vanilla/api/block/material/MCMaterialColor) | true | false |
-| commandString | String | true | false |
+| commandString | string | true | false |
 

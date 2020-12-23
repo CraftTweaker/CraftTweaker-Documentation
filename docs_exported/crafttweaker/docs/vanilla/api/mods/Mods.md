@@ -22,12 +22,12 @@ Gets a specific mod
 Return Type: [ModInfo](/vanilla/api/mods/ModInfo)
 
 ```zenscript
-Mods.getMod(modid as String) as ModInfo
+Mods.getMod(modid as string) as ModInfo
 loadedMods.getMod("minecraft")
 ```
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| modid | String | No Description Provided |
+| modid | string | No Description Provided |
 ### isModLoaded
 
 Checks if a mod is laoded
@@ -35,12 +35,12 @@ Checks if a mod is laoded
 Return Type: boolean
 
 ```zenscript
-Mods.isModLoaded(modid as String) as boolean
+Mods.isModLoaded(modid as string) as boolean
 loadedMods.isModLoaded("minecraft")
 ```
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| modid | String | modid to check |
+| modid | string | modid to check |
 
 ## Properties
 

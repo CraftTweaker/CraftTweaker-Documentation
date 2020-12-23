@@ -66,10 +66,10 @@ myMCStringRange.getEnd()
 ```
 ### getFrom
 
-Return Type: String
+Return Type: string
 
 ```zenscript
-MCStringRange.getFrom(reader as MCImmutableStringReader) as String
+MCStringRange.getFrom(reader as MCImmutableStringReader) as string
 ```
 | Parameter | Type | Description |
 |-----------|------|-------------|
@@ -108,10 +108,10 @@ myMCStringRange.isEmpty()
 ```
 ### toString
 
-Return Type: String
+Return Type: string
 
 ```zenscript
-MCStringRange.toString() as String
+MCStringRange.toString() as string
 myMCStringRange.toString()
 ```
 

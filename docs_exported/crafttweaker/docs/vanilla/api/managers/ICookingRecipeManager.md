@@ -25,12 +25,12 @@ Adds a recipe based on given params.
 Return Type: void
 
 ```zenscript
-ICookingRecipeManager.addRecipe(name as String, output as IItemStack, input as IIngredient, xp as float, cookTime as int) as void
+ICookingRecipeManager.addRecipe(name as string, output as IItemStack, input as IIngredient, xp as float, cookTime as int) as void
 furnace.addRecipe("wool2diamond", <item:diamond>, <tag:minecraft:wool>, 1.0, 0)
 ```
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| name | String | Name of the new recipe |
+| name | string | Name of the new recipe |
 | output | [IItemStack](/vanilla/api/items/IItemStack) | IItemStack output of the recipe |
 | input | [IIngredient](/vanilla/api/items/IIngredient) | IIngredient input of the recipe |
 | xp | float | how much xp the player gets |

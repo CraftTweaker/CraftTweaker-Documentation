@@ -17,35 +17,35 @@ import crafttweaker.api.util.text.MCTextComponent;
 Return Type: [MCTextComponent](/vanilla/api/util/text/MCTextComponent)
 
 ```zenscript
-MCTextComponent.createStringTextComponent(text as String) as MCTextComponent
+MCTextComponent.createStringTextComponent(text as string) as MCTextComponent
 ```
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| text | String | No Description Provided |
+| text | string | No Description Provided |
 ### createTranslationTextComponent
 
 Return Type: [MCTextComponent](/vanilla/api/util/text/MCTextComponent)
 
 ```zenscript
-MCTextComponent.createTranslationTextComponent(translationKey as String) as MCTextComponent
+MCTextComponent.createTranslationTextComponent(translationKey as string) as MCTextComponent
 ```
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| translationKey | String | No Description Provided |
+| translationKey | string | No Description Provided |
 Return Type: [MCTextComponent](/vanilla/api/util/text/MCTextComponent)
 
 ```zenscript
-MCTextComponent.createTranslationTextComponent(translationKey as String, args as Object[]) as MCTextComponent
+MCTextComponent.createTranslationTextComponent(translationKey as string, args as Object[]) as MCTextComponent
 ```
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| translationKey | String | No Description Provided |
+| translationKey | string | No Description Provided |
 | args | Object[] | No Description Provided |
 ## Casters
 
 | Result type | Is Implicit |
 |-------------|-------------|
-| String | false |
+| string | false |
 
 ## Methods
 
@@ -64,11 +64,11 @@ MCTextComponent.appendSibling(component as MCTextComponent) as MCTextComponent
 Return Type: [MCTextComponent](/vanilla/api/util/text/MCTextComponent)
 
 ```zenscript
-MCTextComponent.appendText(text as String) as MCTextComponent
+MCTextComponent.appendText(text as string) as MCTextComponent
 ```
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| text | String | No Description Provided |
+| text | string | No Description Provided |
 ### copyRaw
 
 Return Type: [MCTextComponent](/vanilla/api/util/text/MCTextComponent)
@@ -87,28 +87,28 @@ myMCTextComponent.deepCopy()
 ```
 ### getString
 
-Return Type: String
+Return Type: string
 
 ```zenscript
-MCTextComponent.getString() as String
+MCTextComponent.getString() as string
 myMCTextComponent.getString()
 ```
 ### getStringTruncated
 
-Return Type: String
+Return Type: string
 
 ```zenscript
-MCTextComponent.getStringTruncated(maxLen as int) as String
+MCTextComponent.getStringTruncated(maxLen as int) as string
 ```
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | maxLen | int | No Description Provided |
 ### getUnformattedComponentText
 
-Return Type: String
+Return Type: string
 
 ```zenscript
-MCTextComponent.getUnformattedComponentText() as String
+MCTextComponent.getUnformattedComponentText() as string
 myMCTextComponent.getUnformattedComponentText()
 ```
 ### setStyle
@@ -150,7 +150,7 @@ myMCTextComponent << component as MCTextComponent
 
 | Name | Type | Has Getter | Has Setter |
 |------|------|------------|------------|
-| formattedText | String | true | false |
+| formattedText | string | true | false |
 | siblings | stdlib.List&lt;[MCTextComponent](/vanilla/api/util/text/MCTextComponent)&gt; | true | false |
-| unformattedComponentText | String | true | false |
+| unformattedComponentText | string | true | false |
 

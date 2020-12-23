@@ -24,7 +24,7 @@ new MCRedirectModifier(fun as Function<MCCommandContext,Collection<MCCommandSour
 
 | Result type | Is Implicit |
 |-------------|-------------|
-| String | true |
+| string | true |
 
 ## Methods
 
@@ -58,10 +58,10 @@ myMCRedirectModifier.hashCode()
 ```
 ### toString
 
-Return Type: String
+Return Type: string
 
 ```zenscript
-MCRedirectModifier.toString() as String
+MCRedirectModifier.toString() as string
 myMCRedirectModifier.toString()
 ```
 

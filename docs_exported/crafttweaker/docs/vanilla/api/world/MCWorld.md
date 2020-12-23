@@ -122,9 +122,9 @@ MCWorld.setBlockState(pos as BlockPos, state as MCBlockState) as boolean
 | Name | Type | Has Getter | Has Setter |
 |------|------|------------|------------|
 | dayTime | boolean | true | false |
-| difficulty | String | true | false |
+| difficulty | string | true | false |
 | difficultyLocked | boolean | true | false |
-| dimension | String | true | false |
+| dimension | string | true | false |
 | gameTime | long | true | false |
 | hardcore | boolean | true | false |
 | nightTime | boolean | true | false |

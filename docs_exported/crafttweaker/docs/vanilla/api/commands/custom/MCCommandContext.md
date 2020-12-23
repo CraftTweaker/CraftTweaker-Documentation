@@ -14,7 +14,7 @@ import crafttweaker.api.commands.custom.MCCommandContext;
 
 | Result type | Is Implicit |
 |-------------|-------------|
-| String | true |
+| string | true |
 
 ## Methods
 
@@ -40,14 +40,14 @@ MCCommandContext.equals(o as Object) as boolean
 | o | Object | No Description Provided |
 ### getArgument
 
-Return Type: String
+Return Type: string
 
 ```zenscript
-MCCommandContext.getArgument(name as String) as String
+MCCommandContext.getArgument(name as string) as string
 ```
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| name | String | No Description Provided |
+| name | string | No Description Provided |
 ### getChild
 
 Return Type: [MCCommandContext](/vanilla/api/commands/custom/MCCommandContext)
@@ -66,10 +66,10 @@ myMCCommandContext.getCommand()
 ```
 ### getInput
 
-Return Type: String
+Return Type: string
 
 ```zenscript
-MCCommandContext.getInput() as String
+MCCommandContext.getInput() as string
 myMCCommandContext.getInput()
 ```
 ### getLastChild
@@ -146,10 +146,10 @@ myMCCommandContext.isForked()
 ```
 ### toString
 
-Return Type: String
+Return Type: string
 
 ```zenscript
-MCCommandContext.toString() as String
+MCCommandContext.toString() as string
 myMCCommandContext.toString()
 ```
 

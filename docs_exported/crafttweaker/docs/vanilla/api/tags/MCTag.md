@@ -24,7 +24,7 @@ MCTag implements the following interfaces. That means all methods defined in the
 
 | Result type | Is Implicit |
 |-------------|-------------|
-| String | true |
+| string | true |
 
 ## Methods
 

@@ -59,13 +59,13 @@ MCBiome.getTemperature(pos as BlockPos) as float
 
 | Name | Type | Has Getter | Has Setter |
 |------|------|------------|------------|
-| category | String | true | false |
+| category | string | true | false |
 | depth | float | true | false |
 | doesRain | boolean | true | false |
 | doesSnow | boolean | true | false |
 | downfall | float | true | false |
 | isHighHumidity | boolean | true | false |
-| rainType | String | true | false |
+| rainType | string | true | false |
 | scale | float | true | false |
 | waterColor | int | true | false |
 | waterFogColor | int | true | false |

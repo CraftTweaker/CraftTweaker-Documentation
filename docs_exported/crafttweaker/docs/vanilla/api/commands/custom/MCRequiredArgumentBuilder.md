@@ -18,7 +18,7 @@ MCRequiredArgumentBuilder extends [MCArgumentBuilder](/vanilla/api/commands/cust
 
 | Result type | Is Implicit |
 |-------------|-------------|
-| String | true |
+| string | true |
 
 ## Methods
 
@@ -83,10 +83,10 @@ myMCRequiredArgumentBuilder.getArguments()
 ```
 ### getName
 
-Return Type: String
+Return Type: string
 
 ```zenscript
-MCRequiredArgumentBuilder.getName() as String
+MCRequiredArgumentBuilder.getName() as string
 myMCRequiredArgumentBuilder.getName()
 ```
 ### getRequirement
@@ -164,10 +164,10 @@ MCRequiredArgumentBuilder.then(argument as MCRequiredArgumentBuilder) as MCRequi
 | argument | [MCRequiredArgumentBuilder](/vanilla/api/commands/custom/MCRequiredArgumentBuilder) | No Description Provided |
 ### toString
 
-Return Type: String
+Return Type: string
 
 ```zenscript
-MCRequiredArgumentBuilder.toString() as String
+MCRequiredArgumentBuilder.toString() as string
 myMCRequiredArgumentBuilder.toString()
 ```
 

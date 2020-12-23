@@ -18,18 +18,18 @@ MCResourceLocation implements the following interfaces. That means all methods d
 
 
 ```zenscript
-new MCResourceLocation(namespace as String, path as String) as MCResourceLocation
+new MCResourceLocation(namespace as string, path as string) as MCResourceLocation
 ```
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| namespace | String | Usually a ModId |
-| path | String | May only contain lower-cased alphanumeric values, as well as / and _ |
+| namespace | string | Usually a ModId |
+| path | string | May only contain lower-cased alphanumeric values, as well as / and _ |
 
 ## Casters
 
 | Result type | Is Implicit |
 |-------------|-------------|
-| String | true |
+| string | true |
 
 ## Methods
 
@@ -55,18 +55,18 @@ MCResourceLocation.equals(other as Object) as boolean
 | other | Object | No Description Provided |
 ### getNamespace
 
-Return Type: String
+Return Type: string
 
 ```zenscript
-MCResourceLocation.getNamespace() as String
+MCResourceLocation.getNamespace() as string
 myMCResourceLocation.getNamespace()
 ```
 ### getPath
 
-Return Type: String
+Return Type: string
 
 ```zenscript
-MCResourceLocation.getPath() as String
+MCResourceLocation.getPath() as string
 myMCResourceLocation.getPath()
 ```
 ### hashCode
@@ -79,10 +79,10 @@ myMCResourceLocation.hashCode()
 ```
 ### toString
 
-Return Type: String
+Return Type: string
 
 ```zenscript
-MCResourceLocation.toString() as String
+MCResourceLocation.toString() as string
 myMCResourceLocation.toString()
 ```
 
@@ -90,7 +90,7 @@ myMCResourceLocation.toString()
 
 | Name | Type | Has Getter | Has Setter |
 |------|------|------------|------------|
-| commandString | String | true | false |
-| namespace | String | true | false |
-| path | String | true | false |
+| commandString | string | true | false |
+| namespace | string | true | false |
+| path | string | true | false |
 

@@ -14,7 +14,7 @@ import crafttweaker.api.commands.custom.MCSuggestionContext;
 
 | Result type | Is Implicit |
 |-------------|-------------|
-| String | true |
+| string | true |
 
 ## Methods
 
@@ -54,10 +54,10 @@ myMCSuggestionContext.hashCode()
 ```
 ### toString
 
-Return Type: String
+Return Type: string
 
 ```zenscript
-MCSuggestionContext.toString() as String
+MCSuggestionContext.toString() as string
 myMCSuggestionContext.toString()
 ```
 

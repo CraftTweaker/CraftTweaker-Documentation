@@ -20,11 +20,11 @@ StringData implements the following interfaces. That means all methods defined i
 
 No Description Provided
 ```zenscript
-new StringData(internal as String) as StringData
+new StringData(internal as string) as StringData
 ```
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| internal | String | No Description Provided |
+| internal | string | No Description Provided |
 
 ## Operators
 

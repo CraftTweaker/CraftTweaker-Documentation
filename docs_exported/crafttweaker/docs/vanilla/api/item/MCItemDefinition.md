@@ -31,6 +31,6 @@ myMCItemDefinition.getDefaultInstance()
 
 | Name | Type | Has Getter | Has Setter |
 |------|------|------------|------------|
-| commandString | String | true | false |
+| commandString | string | true | false |
 | defaultInstance | [IItemStack](/vanilla/api/items/IItemStack) | true | false |
 

@@ -14,7 +14,7 @@ import crafttweaker.api.blocks.MCBlock;
 
 | Result type | Is Implicit |
 |-------------|-------------|
-| String | false |
+| string | false |
 
 ## Methods
 
@@ -39,7 +39,7 @@ myMCBlock.getDefaultState()
 
 | Name | Type | Has Getter | Has Setter |
 |------|------|------------|------------|
-| commandString | String | true | false |
-| lootTable | String | true | false |
-| translationKey | String | true | false |
+| commandString | string | true | false |
+| lootTable | string | true | false |
+| translationKey | string | true | false |
 

@@ -18,7 +18,7 @@ MCLiteralArgumentBuilder extends [MCArgumentBuilder](/vanilla/api/commands/custo
 
 | Result type | Is Implicit |
 |-------------|-------------|
-| String | true |
+| string | true |
 
 ## Methods
 
@@ -75,10 +75,10 @@ MCLiteralArgumentBuilder.forward(target as MCCommandNode, modifier as MCRedirect
 | fork | boolean | No Description Provided |
 ### getLiteral
 
-Return Type: String
+Return Type: string
 
 ```zenscript
-MCLiteralArgumentBuilder.getLiteral() as String
+MCLiteralArgumentBuilder.getLiteral() as string
 myMCLiteralArgumentBuilder.getLiteral()
 ```
 ### getRequirement
@@ -138,10 +138,10 @@ MCLiteralArgumentBuilder.then(argument as MCArgumentBuilder) as MCLiteralArgumen
 | argument | [MCArgumentBuilder](/vanilla/api/commands/custom/MCArgumentBuilder) | No Description Provided |
 ### toString
 
-Return Type: String
+Return Type: string
 
 ```zenscript
-MCLiteralArgumentBuilder.toString() as String
+MCLiteralArgumentBuilder.toString() as string
 myMCLiteralArgumentBuilder.toString()
 ```
 

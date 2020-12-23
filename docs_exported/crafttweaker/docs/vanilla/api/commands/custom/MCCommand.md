@@ -24,7 +24,7 @@ new MCCommand(fun as Function<MCCommandContext,Integer>) as MCCommand
 
 | Result type | Is Implicit |
 |-------------|-------------|
-| String | true |
+| string | true |
 
 ## Methods
 
@@ -58,10 +58,10 @@ MCCommand.run(context as MCCommandContext) as int
 | context | [MCCommandContext](/vanilla/api/commands/custom/MCCommandContext) | No Description Provided |
 ### toString
 
-Return Type: String
+Return Type: string
 
 ```zenscript
-MCCommand.toString() as String
+MCCommand.toString() as string
 myMCCommand.toString()
 ```
 

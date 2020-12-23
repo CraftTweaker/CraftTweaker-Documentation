@@ -14,10 +14,10 @@ import crafttweaker.api.commands.custom.MCCommandSource;
 
 ### getName
 
-Return Type: String
+Return Type: string
 
 ```zenscript
-MCCommandSource.getName() as String
+MCCommandSource.getName() as string
 myMCCommandSource.getName()
 ```
 ### getPlayer
@@ -30,26 +30,26 @@ myMCCommandSource.getPlayer()
 ```
 ### getPlayerNames
 
-Return Type: Collection&lt;String&gt;
+Return Type: Collection&lt;string&gt;
 
 ```zenscript
-MCCommandSource.getPlayerNames() as Collection<String>
+MCCommandSource.getPlayerNames() as Collection<string>
 myMCCommandSource.getPlayerNames()
 ```
 ### getTargetedEntity
 
-Return Type: Collection&lt;String&gt;
+Return Type: Collection&lt;string&gt;
 
 ```zenscript
-MCCommandSource.getTargetedEntity() as Collection<String>
+MCCommandSource.getTargetedEntity() as Collection<string>
 myMCCommandSource.getTargetedEntity()
 ```
 ### getTeamNames
 
-Return Type: Collection&lt;String&gt;
+Return Type: Collection&lt;string&gt;
 
 ```zenscript
-MCCommandSource.getTeamNames() as Collection<String>
+MCCommandSource.getTeamNames() as Collection<string>
 myMCCommandSource.getTeamNames()
 ```
 ### hasPermissionLevel
@@ -75,21 +75,21 @@ myMCCommandSource.isPlayer()
 Return Type: void
 
 ```zenscript
-MCCommandSource.sendErrorMessage(message as String) as void
+MCCommandSource.sendErrorMessage(message as string) as void
 ```
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| message | String | No Description Provided |
+| message | string | No Description Provided |
 ### sendFeedback
 
 Return Type: void
 
 ```zenscript
-MCCommandSource.sendFeedback(feedback as String, allowLogging as boolean) as void
+MCCommandSource.sendFeedback(feedback as string, allowLogging as boolean) as void
 ```
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| feedback | String | No Description Provided |
+| feedback | string | No Description Provided |
 | allowLogging | boolean | No Description Provided |
 ### withFeedbackDisabled
 

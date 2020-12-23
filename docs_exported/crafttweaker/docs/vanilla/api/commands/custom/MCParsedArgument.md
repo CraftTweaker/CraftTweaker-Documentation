@@ -14,7 +14,7 @@ import crafttweaker.api.commands.custom.MCParsedArgument;
 
 | Result type | Is Implicit |
 |-------------|-------------|
-| String | true |
+| string | true |
 
 ## Methods
 
@@ -46,10 +46,10 @@ myMCParsedArgument.hashCode()
 ```
 ### toString
 
-Return Type: String
+Return Type: string
 
 ```zenscript
-MCParsedArgument.toString() as String
+MCParsedArgument.toString() as string
 myMCParsedArgument.toString()
 ```
 

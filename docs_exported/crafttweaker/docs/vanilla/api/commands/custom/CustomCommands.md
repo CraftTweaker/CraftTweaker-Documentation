@@ -17,21 +17,21 @@ import crafttweaker.api.commands.custom.CustomCommands;
 Return Type: [MCRequiredArgumentBuilder](/vanilla/api/commands/custom/MCRequiredArgumentBuilder)
 
 ```zenscript
-CustomCommands.argument(name as String) as MCRequiredArgumentBuilder
+CustomCommands.argument(name as string) as MCRequiredArgumentBuilder
 ```
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| name | String | No Description Provided |
+| name | string | No Description Provided |
 ### literal
 
 Return Type: [MCLiteralArgumentBuilder](/vanilla/api/commands/custom/MCLiteralArgumentBuilder)
 
 ```zenscript
-CustomCommands.literal(name as String) as MCLiteralArgumentBuilder
+CustomCommands.literal(name as string) as MCLiteralArgumentBuilder
 ```
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| name | String | No Description Provided |
+| name | string | No Description Provided |
 ### registerCommand
 
 Return Type: void

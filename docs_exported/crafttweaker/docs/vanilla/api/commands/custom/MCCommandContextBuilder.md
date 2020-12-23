@@ -14,7 +14,7 @@ import crafttweaker.api.commands.custom.MCCommandContextBuilder;
 
 | Result type | Is Implicit |
 |-------------|-------------|
-| String | true |
+| string | true |
 
 ## Methods
 
@@ -23,11 +23,11 @@ import crafttweaker.api.commands.custom.MCCommandContextBuilder;
 Return Type: [MCCommandContext](/vanilla/api/commands/custom/MCCommandContext)
 
 ```zenscript
-MCCommandContextBuilder.build(input as String) as MCCommandContext
+MCCommandContextBuilder.build(input as string) as MCCommandContext
 ```
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| input | String | No Description Provided |
+| input | string | No Description Provided |
 ### copy
 
 Return Type: [MCCommandContextBuilder](/vanilla/api/commands/custom/MCCommandContextBuilder)
@@ -58,10 +58,10 @@ MCCommandContextBuilder.findSuggestionContext(cursor as int) as MCSuggestionCont
 | cursor | int | No Description Provided |
 ### getArguments
 
-Return Type: [MCParsedArgument](/vanilla/api/commands/custom/MCParsedArgument)[String]
+Return Type: [MCParsedArgument](/vanilla/api/commands/custom/MCParsedArgument)[string]
 
 ```zenscript
-MCCommandContextBuilder.getArguments() as MCParsedArgument[String]
+MCCommandContextBuilder.getArguments() as MCParsedArgument[string]
 myMCCommandContextBuilder.getArguments()
 ```
 ### getChild
@@ -138,10 +138,10 @@ myMCCommandContextBuilder.hashCode()
 ```
 ### toString
 
-Return Type: String
+Return Type: string
 
 ```zenscript
-MCCommandContextBuilder.toString() as String
+MCCommandContextBuilder.toString() as string
 myMCCommandContextBuilder.toString()
 ```
 ### withArgument
@@ -149,11 +149,11 @@ myMCCommandContextBuilder.toString()
 Return Type: [MCCommandContextBuilder](/vanilla/api/commands/custom/MCCommandContextBuilder)
 
 ```zenscript
-MCCommandContextBuilder.withArgument(name as String, argument as MCParsedArgument) as MCCommandContextBuilder
+MCCommandContextBuilder.withArgument(name as string, argument as MCParsedArgument) as MCCommandContextBuilder
 ```
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| name | String | No Description Provided |
+| name | string | No Description Provided |
 | argument | [MCParsedArgument](/vanilla/api/commands/custom/MCParsedArgument) | No Description Provided |
 ### withChild
 

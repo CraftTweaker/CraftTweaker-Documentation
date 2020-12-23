@@ -14,20 +14,20 @@ import crafttweaker.api.commands.custom.MCSuggestion;
 
 | Result type | Is Implicit |
 |-------------|-------------|
-| String | true |
+| string | true |
 
 ## Methods
 
 ### apply
 
-Return Type: String
+Return Type: string
 
 ```zenscript
-MCSuggestion.apply(input as String) as String
+MCSuggestion.apply(input as string) as string
 ```
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| input | String | No Description Provided |
+| input | string | No Description Provided |
 ### compareTo
 
 Return Type: int
@@ -63,11 +63,11 @@ MCSuggestion.equals(o as Object) as boolean
 Return Type: [MCSuggestion](/vanilla/api/commands/custom/MCSuggestion)
 
 ```zenscript
-MCSuggestion.expandWith(command as String, range as MCStringRange) as MCSuggestion
+MCSuggestion.expandWith(command as string, range as MCStringRange) as MCSuggestion
 ```
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| command | String | No Description Provided |
+| command | string | No Description Provided |
 | range | [MCStringRange](/vanilla/api/commands/custom/MCStringRange) | No Description Provided |
 ### getRange
 
@@ -79,18 +79,18 @@ myMCSuggestion.getRange()
 ```
 ### getText
 
-Return Type: String
+Return Type: string
 
 ```zenscript
-MCSuggestion.getText() as String
+MCSuggestion.getText() as string
 myMCSuggestion.getText()
 ```
 ### getTooltip
 
-Return Type: String
+Return Type: string
 
 ```zenscript
-MCSuggestion.getTooltip() as String
+MCSuggestion.getTooltip() as string
 myMCSuggestion.getTooltip()
 ```
 ### hashCode
@@ -103,10 +103,10 @@ myMCSuggestion.hashCode()
 ```
 ### toString
 
-Return Type: String
+Return Type: string
 
 ```zenscript
-MCSuggestion.toString() as String
+MCSuggestion.toString() as string
 myMCSuggestion.toString()
 ```
 

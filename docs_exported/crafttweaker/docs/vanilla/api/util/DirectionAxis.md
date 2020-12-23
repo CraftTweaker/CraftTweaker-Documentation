@@ -60,10 +60,10 @@ DirectionAxis.hashCode() as int
 
 | Name | Type | Has Getter | Has Setter |
 |------|------|------------|------------|
-| commandString | String | true | false |
+| commandString | string | true | false |
 | hashCode | int | true | false |
 | horizontal | boolean | true | false |
-| name | String | true | false |
+| name | string | true | false |
 | ordinal | int | true | false |
 | vertical | boolean | true | false |
 

@@ -25,17 +25,17 @@ new MapData()
 ```
 No Description Provided
 ```zenscript
-new MapData(map as IData[String]) as MapData
+new MapData(map as IData[string]) as MapData
 ```
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| map | [IData](/vanilla/api/data/IData)[String] | No Description Provided |
+| map | [IData](/vanilla/api/data/IData)[string] | No Description Provided |
 
 ## Casters
 
 | Result type | Is Implicit |
 |-------------|-------------|
-| [IData](/vanilla/api/data/IData)[String] | true |
+| [IData](/vanilla/api/data/IData)[string] | true |
 
 ## Methods
 
@@ -46,12 +46,12 @@ Checks if the Map contains the given key.
 Return Type: boolean
 
 ```zenscript
-MapData.contains(key as String) as boolean
+MapData.contains(key as string) as boolean
 {Hello : "World", Somewhere: "Over the rainbow"}.contains("Hello")
 ```
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| key | String | The key to search for |
+| key | string | The key to search for |
 ### getAt
 
 Retrieves the value associated with the key
@@ -59,12 +59,12 @@ Retrieves the value associated with the key
 Return Type: [IData](/vanilla/api/data/IData)
 
 ```zenscript
-MapData.getAt(key as String) as IData
+MapData.getAt(key as string) as IData
 {Hello : "World", Somewhere: "Over the rainbow"}.getAt("Hello")
 ```
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| key | String | The key to search for |
+| key | string | The key to search for |
 ### merge
 
 Merges this map and the other map.
@@ -87,12 +87,12 @@ Adds sets the value for the given key or creates a new entry if it did not exist
 Return Type: [IData](/vanilla/api/data/IData)
 
 ```zenscript
-MapData.put(key as String, value as IData) as IData
+MapData.put(key as string, value as IData) as IData
 {Hello : "World", Somewhere: "Over the rainbow"}.put("Hello", "Goodbye")
 ```
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| key | String | The key to set the value for. |
+| key | string | The key to set the value for. |
 | value | [IData](/vanilla/api/data/IData) | The value to set. |
 ### putAll
 
@@ -102,12 +102,12 @@ Adds all entries from the given map into this one.
 Return Type: void
 
 ```zenscript
-MapData.putAll(map as IData[String]) as void
+MapData.putAll(map as IData[string]) as void
 {Hello : "World", Somewhere: "Over the rainbow"}.putAll({Hello: "Goodbye", Item: "Bedrock"})
 ```
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| map | [IData](/vanilla/api/data/IData)[String] | The other entries to be added to this map |
+| map | [IData](/vanilla/api/data/IData)[string] | The other entries to be added to this map |
 ### remove
 
 Removes the entry with the given key from the Map
@@ -115,12 +115,12 @@ Removes the entry with the given key from the Map
 Return Type: void
 
 ```zenscript
-MapData.remove(key as String) as void
+MapData.remove(key as string) as void
 {Hello : "World", Somewhere: "Over the rainbow"}.remove("Somewhere")
 ```
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| key | String | The key of the entry to remove |
+| key | string | The key of the entry to remove |
 
 ## Operators
 
@@ -139,6 +139,6 @@ myMapData + data as IData
 | Name | Type | Has Getter | Has Setter |
 |------|------|------------|------------|
 | isEmpty | boolean | true | false |
-| keySet | Set&lt;String&gt; | true | false |
+| keySet | Set&lt;string&gt; | true | false |
 | size | int | true | false |
 

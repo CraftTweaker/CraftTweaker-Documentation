@@ -19,14 +19,14 @@ import crafttweaker.api.game.MCGame;
 
 
 
-Return Type: String
+Return Type: string
 
 ```zenscript
-MCGame.localize(translationKey as String) as String
+MCGame.localize(translationKey as string) as string
 ```
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| translationKey | String | No Description Provided |
+| translationKey | string | No Description Provided |
 
 ## Properties
 

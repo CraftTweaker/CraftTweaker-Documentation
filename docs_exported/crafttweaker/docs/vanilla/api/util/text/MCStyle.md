@@ -48,10 +48,10 @@ myMCStyle.getFontId()
 ```
 ### getInsertion
 
-Return Type: String
+Return Type: string
 
 ```zenscript
-MCStyle.getInsertion() as String
+MCStyle.getInsertion() as string
 myMCStyle.getInsertion()
 ```
 ### getItalic
@@ -161,11 +161,11 @@ Set a text to be inserted into Chat when the component is shift-clicked
 Return Type: [MCStyle](/vanilla/api/util/text/MCStyle)
 
 ```zenscript
-MCStyle.setInsertion(insertion as String) as MCStyle
+MCStyle.setInsertion(insertion as string) as MCStyle
 ```
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| insertion | String | No Description Provided |
+| insertion | string | No Description Provided |
 ### setItalic
 
 Return Type: [MCStyle](/vanilla/api/util/text/MCStyle)
@@ -208,10 +208,10 @@ MCStyle.setUnderlined(underlined as Boolean) as MCStyle
 | underlined | Boolean | No Description Provided |
 ### toString
 
-Return Type: String
+Return Type: string
 
 ```zenscript
-MCStyle.toString() as String
+MCStyle.toString() as string
 myMCStyle.toString()
 ```
 

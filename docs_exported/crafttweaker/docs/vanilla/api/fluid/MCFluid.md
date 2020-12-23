@@ -30,5 +30,5 @@ myMCFluid.makeStack(1000)
 
 | Name | Type | Has Getter | Has Setter |
 |------|------|------------|------------|
-| commandString | String | true | false |
+| commandString | string | true | false |
 

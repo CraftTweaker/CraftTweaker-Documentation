@@ -117,11 +117,11 @@ IItemStack.mutable() as IItemStack
 Return Type: void
 
 ```zenscript
-IItemStack.removeTooltip(regex as String) as void
+IItemStack.removeTooltip(regex as string) as void
 ```
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| regex | String | No Description Provided |
+| regex | string | No Description Provided |
 ### setDisplayName
 
 Sets the display name of the ItemStack
@@ -129,12 +129,12 @@ Sets the display name of the ItemStack
 Return Type: [IItemStack](/vanilla/api/items/IItemStack)
 
 ```zenscript
-IItemStack.setDisplayName(name as String) as IItemStack
+IItemStack.setDisplayName(name as string) as IItemStack
 <item:minecraft:dirt>.setDisplayName("totally not dirt")
 ```
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| name | String | New name of the stack. |
+| name | string | New name of the stack. |
 ### weight
 
 Return Type: [MCWeightedItemStack](/vanilla/api/items/MCWeightedItemStack)
@@ -202,7 +202,7 @@ myIItemStack * amount as int
 | damageable | boolean | true | false |
 | damaged | boolean | true | false |
 | definition | [MCItemDefinition](/vanilla/api/item/MCItemDefinition) | true | false |
-| displayName | String | true | false |
+| displayName | string | true | false |
 | empty | boolean | true | false |
 | food | [MCFood](/vanilla/api/food/MCFood) | true | true |
 | getOrCreate | [IData](/vanilla/api/data/IData) | true | false |
@@ -215,10 +215,10 @@ myIItemStack * amount as int
 | isEnchanted | boolean | true | false |
 | maxDamage | int | true | false |
 | maxStackSize | int | true | false |
-| owner | String | true | false |
+| owner | string | true | false |
 | registryName | [MCResourceLocation](/vanilla/api/util/MCResourceLocation) | true | false |
 | stackable | boolean | true | false |
 | tag | [IData](/vanilla/api/data/IData) | true | false |
-| translationKey | String | true | false |
+| translationKey | string | true | false |
 | useDuration | int | true | false |
 

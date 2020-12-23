@@ -19,13 +19,13 @@ MCEntityType implements the following interfaces. That means all methods defined
 | Name | Type | Has Getter | Has Setter |
 |------|------|------------|------------|
 | classification | [MCEntityClassification](/vanilla/api/entity/MCEntityClassification) | true | false |
-| commandString | String | true | false |
+| commandString | string | true | false |
 | height | float | true | false |
 | immuneToFire | boolean | true | false |
-| lootTable | String | true | false |
-| name | String | true | false |
+| lootTable | string | true | false |
+| name | string | true | false |
 | serializable | boolean | true | false |
 | summonable | boolean | true | false |
-| translationKey | String | true | false |
+| translationKey | string | true | false |
 | width | float | true | false |
 

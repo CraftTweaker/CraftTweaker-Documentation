@@ -16,5 +16,5 @@ import crafttweaker.api.brackets.CommandStringDisplayable;
 
 | Name | Type | Has Getter | Has Setter |
 |------|------|------------|------------|
-| commandString | String | true | false |
+| commandString | string | true | false |
 

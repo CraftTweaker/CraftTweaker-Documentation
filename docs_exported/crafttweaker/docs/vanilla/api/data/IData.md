@@ -30,20 +30,20 @@ IData.asList() as stdlib.List<IData>
 
 Gets a Map<String, IData> representation of this IData, returns null on anything but [MapData](/vanilla/api/data/MapData).
 
-Return Type: [IData](/vanilla/api/data/IData)[String]
+Return Type: [IData](/vanilla/api/data/IData)[string]
 
 ```zenscript
-IData.asMap() as IData[String]
+IData.asMap() as IData[string]
 {Display: {lore: ["Hello", "World"]}}.asMap()
 ```
 ### asString
 
 Gets the String representation of this IData
 
-Return Type: String
+Return Type: string
 
 ```zenscript
-IData.asString() as String
+IData.asString() as string
 {Display: {lore: ["Hello", "World"]}}.asString()
 ```
 ### contains
@@ -87,10 +87,10 @@ IData.getId() as byte
 
 Gets the String representation of the internal INBT tag
 
-Return Type: String
+Return Type: string
 
 ```zenscript
-IData.getString() as String
+IData.getString() as string
 {Display: {lore: ["Hello", "World"]}}.getString()
 ```
 

@@ -15,67 +15,67 @@ import crafttweaker.api.blocks.MCBlockState;
 | Result type | Is Implicit |
 |-------------|-------------|
 | [MCBlock](/vanilla/api/blocks/MCBlock) | true |
-| String | false |
+| string | false |
 
 ## Methods
 
 ### getAllowedValuesForProperty
 
-Return Type: stdlib.List&lt;String&gt;
+Return Type: stdlib.List&lt;string&gt;
 
 ```zenscript
-MCBlockState.getAllowedValuesForProperty(name as String) as stdlib.List<String>
+MCBlockState.getAllowedValuesForProperty(name as string) as stdlib.List<string>
 ```
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| name | String | No Description Provided |
+| name | string | No Description Provided |
 ### getProperties
 
-Return Type: String[String]
+Return Type: string[string]
 
 ```zenscript
-MCBlockState.getProperties() as String[String]
+MCBlockState.getProperties() as string[string]
 myMCBlockState.getProperties()
 ```
 ### getPropertyNames
 
-Return Type: stdlib.List&lt;String&gt;
+Return Type: stdlib.List&lt;string&gt;
 
 ```zenscript
-MCBlockState.getPropertyNames() as stdlib.List<String>
+MCBlockState.getPropertyNames() as stdlib.List<string>
 myMCBlockState.getPropertyNames()
 ```
 ### getPropertyValue
 
-Return Type: String
+Return Type: string
 
 ```zenscript
-MCBlockState.getPropertyValue(name as String) as String
+MCBlockState.getPropertyValue(name as string) as string
 ```
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| name | String | No Description Provided |
+| name | string | No Description Provided |
 ### hasProperty
 
 Return Type: boolean
 
 ```zenscript
-MCBlockState.hasProperty(name as String) as boolean
+MCBlockState.hasProperty(name as string) as boolean
 ```
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| name | String | No Description Provided |
+| name | string | No Description Provided |
 ### withProperty
 
 Return Type: [MCBlockState](/vanilla/api/blocks/MCBlockState)
 
 ```zenscript
-MCBlockState.withProperty(name as String, value as String) as MCBlockState
+MCBlockState.withProperty(name as string, value as string) as MCBlockState
 ```
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| name | String | No Description Provided |
-| value | String | No Description Provided |
+| name | string | No Description Provided |
+| value | string | No Description Provided |
 
 ## Properties
 
@@ -83,7 +83,7 @@ MCBlockState.withProperty(name as String, value as String) as MCBlockState
 |------|------|------------|------------|
 | block | [MCBlock](/vanilla/api/blocks/MCBlock) | true | false |
 | canProvidePower | boolean | true | false |
-| commandString | String | true | false |
+| commandString | string | true | false |
 | hasTileEntity | boolean | true | false |
 | isSolid | boolean | true | false |
 | isSticky | boolean | true | false |

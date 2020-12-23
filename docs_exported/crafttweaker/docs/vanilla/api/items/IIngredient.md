@@ -96,11 +96,11 @@ IIngredient.onlyDamaged() as MCIngredientConditioned<IIngredient>
 Return Type: [MCIngredientConditioned](/vanilla/api/items/MCIngredientConditioned)&lt;[IIngredient](/vanilla/api/items/IIngredient)&gt;
 
 ```zenscript
-IIngredient.onlyIf(uid as String, function as Predicate<IItemStack>) as MCIngredientConditioned<IIngredient>
+IIngredient.onlyIf(uid as string, function as Predicate<IItemStack>) as MCIngredientConditioned<IIngredient>
 ```
 | Parameter | Type | Description | Optional | DefaultValue |
 |-----------|------|-------------|----------|--------------|
-| uid | String | No Description Provided | false |  |
+| uid | string | No Description Provided | false |  |
 | function | Predicate&lt;[IItemStack](/vanilla/api/items/IItemStack)&gt; | No Description Provided | true |  |
 ## Operators
 
@@ -116,6 +116,6 @@ myIIngredient | other as IIngredient
 
 | Name | Type | Has Getter | Has Setter |
 |------|------|------------|------------|
-| commandString | String | true | false |
+| commandString | string | true | false |
 | items | [IItemStack](/vanilla/api/items/IItemStack)[] | true | false |
 

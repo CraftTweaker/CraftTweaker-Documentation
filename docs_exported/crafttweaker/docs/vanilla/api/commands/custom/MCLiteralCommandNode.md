@@ -18,7 +18,7 @@ MCLiteralCommandNode extends [MCCommandNode](/vanilla/api/commands/custom/MCComm
 
 | Result type | Is Implicit |
 |-------------|-------------|
-| String | true |
+| string | true |
 
 ## Methods
 
@@ -42,10 +42,10 @@ MCLiteralCommandNode.equals(o as Object) as boolean
 | o | Object | No Description Provided |
 ### getLiteral
 
-Return Type: String
+Return Type: string
 
 ```zenscript
-MCLiteralCommandNode.getLiteral() as String
+MCLiteralCommandNode.getLiteral() as string
 myMCLiteralCommandNode.getLiteral()
 ```
 ### hashCode
@@ -61,17 +61,17 @@ myMCLiteralCommandNode.hashCode()
 Return Type: boolean
 
 ```zenscript
-MCLiteralCommandNode.isValidInput(input as String) as boolean
+MCLiteralCommandNode.isValidInput(input as string) as boolean
 ```
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| input | String | No Description Provided |
+| input | string | No Description Provided |
 ### toString
 
-Return Type: String
+Return Type: string
 
 ```zenscript
-MCLiteralCommandNode.toString() as String
+MCLiteralCommandNode.toString() as string
 myMCLiteralCommandNode.toString()
 ```
 

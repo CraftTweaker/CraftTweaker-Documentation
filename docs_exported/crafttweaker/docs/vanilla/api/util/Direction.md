@@ -53,7 +53,7 @@ Direction.rotateYCCW() as Direction
 | horizontalAngle | float | true | false |
 | horizontalIndex | int | true | false |
 | index | int | true | false |
-| name | String | true | false |
+| name | string | true | false |
 | opposite | [Direction](/vanilla/api/util/Direction) | true | false |
 | xOffset | int | true | false |
 | yOffset | int | true | false |

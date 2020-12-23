@@ -18,7 +18,7 @@ TextFormatting implements the following interfaces. That means all methods defin
 
 | Result type | Is Implicit |
 |-------------|-------------|
-| String | true |
+| string | true |
 
 ## Properties
 
@@ -26,6 +26,6 @@ TextFormatting implements the following interfaces. That means all methods defin
 |------|------|------------|------------|
 | colorIndex | int | true | false |
 | fancyStyling | boolean | true | false |
-| friendlyName | String | true | false |
+| friendlyName | string | true | false |
 | isColor | boolean | true | false |
 

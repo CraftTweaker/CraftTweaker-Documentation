@@ -14,7 +14,7 @@ import crafttweaker.api.commands.custom.MCParseResults;
 
 | Result type | Is Implicit |
 |-------------|-------------|
-| String | true |
+| string | true |
 
 ## Methods
 
@@ -62,10 +62,10 @@ myMCParseResults.hashCode()
 ```
 ### toString
 
-Return Type: String
+Return Type: string
 
 ```zenscript
-MCParseResults.toString() as String
+MCParseResults.toString() as string
 myMCParseResults.toString()
 ```
 

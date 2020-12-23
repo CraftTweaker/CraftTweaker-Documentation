@@ -14,20 +14,20 @@ import crafttweaker.api.potion.MCPotion;
 
 ### getNamePrefixed
 
-Return Type: String
+Return Type: string
 
 ```zenscript
-MCPotion.getNamePrefixed(name as String) as String
+MCPotion.getNamePrefixed(name as string) as string
 ```
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| name | String | No Description Provided |
+| name | string | No Description Provided |
 
 ## Properties
 
 | Name | Type | Has Getter | Has Setter |
 |------|------|------------|------------|
-| commandString | String | true | false |
+| commandString | string | true | false |
 | effects | stdlib.List&lt;[MCPotionEffectInstance](/vanilla/api/potion/MCPotionEffectInstance)&gt; | true | false |
 | hasInstantEffect | boolean | true | false |
 

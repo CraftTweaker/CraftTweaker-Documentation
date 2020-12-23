@@ -38,18 +38,18 @@ myMCImmutableStringReader.getCursor()
 ```
 ### getRead
 
-Return Type: String
+Return Type: string
 
 ```zenscript
-MCImmutableStringReader.getRead() as String
+MCImmutableStringReader.getRead() as string
 myMCImmutableStringReader.getRead()
 ```
 ### getRemaining
 
-Return Type: String
+Return Type: string
 
 ```zenscript
-MCImmutableStringReader.getRemaining() as String
+MCImmutableStringReader.getRemaining() as string
 myMCImmutableStringReader.getRemaining()
 ```
 ### getRemainingLength
@@ -62,10 +62,10 @@ myMCImmutableStringReader.getRemainingLength()
 ```
 ### getString
 
-Return Type: String
+Return Type: string
 
 ```zenscript
-MCImmutableStringReader.getString() as String
+MCImmutableStringReader.getString() as string
 myMCImmutableStringReader.getString()
 ```
 ### getTotalLength

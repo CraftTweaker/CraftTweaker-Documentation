@@ -18,9 +18,9 @@ MCEntityClassification extends Enum&lt;[MCEntityClassification](/vanilla/api/ent
 
 | Name | Type | Has Getter | Has Setter |
 |------|------|------------|------------|
-| commandString | String | true | false |
+| commandString | string | true | false |
 | isAnimal | boolean | true | false |
 | isPeaceful | boolean | true | false |
 | maxNumberOfEntity | int | true | false |
-| name | String | true | false |
+| name | string | true | false |
 
