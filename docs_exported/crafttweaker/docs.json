@@ -119,6 +119,7 @@
         "Items": {
           "ExpandIIngredientTransformers": "vanilla/api/items/ExpandIIngredientTransformers.md",
           "IIngredient": "vanilla/api/items/IIngredient.md",
+          "IIngredientCondition": "vanilla/api/items/IIngredientCondition.md",
           "IIngredientTransformer": "vanilla/api/items/IIngredientTransformer.md",
           "IItemStack": "vanilla/api/items/IItemStack.md",
           "ITooltipFunction": "vanilla/api/items/ITooltipFunction.md",

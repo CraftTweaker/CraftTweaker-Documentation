@@ -1,4 +1,4 @@
-# IIngredientTransformer&LT;T : IIngredient&GT;
+# IIngredientCondition&LT;T : IIngredient&GT;
 
 This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
 
@@ -6,7 +6,7 @@ This class was added by a mod with mod-id `crafttweaker`. So you need to have th
 
 It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
 ```zenscript
-import crafttweaker.api.item.IIngredientTransformer;
+import crafttweaker.api.item.IIngredientCondition;
 ```
 
 
@@ -17,18 +17,18 @@ import crafttweaker.api.item.IIngredientTransformer;
 Return Type: string
 
 ```zenscript
-IIngredientTransformer.getCommandString(transformedIngredient as T) as string
+IIngredientCondition.getCommandString(ingredient as T) as string
 ```
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| transformedIngredient | T | No Description Provided |
+| ingredient | T | No Description Provided |
 
-### transform
+### matches
 
-Return Type: [IItemStack](/vanilla/api/items/IItemStack)
+Return Type: boolean
 
 ```zenscript
-IIngredientTransformer.transform(stack as IItemStack) as IItemStack
+IIngredientCondition.matches(stack as IItemStack) as boolean
 ```
 | Parameter | Type | Description |
 |-----------|------|-------------|

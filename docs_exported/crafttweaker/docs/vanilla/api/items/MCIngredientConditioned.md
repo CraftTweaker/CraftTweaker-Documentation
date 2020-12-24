@@ -41,6 +41,6 @@ MCIngredientConditioned.matches(stack as IItemStack, ignoreDamage as boolean) as
 | Name | Type | Has Getter | Has Setter |
 |------|------|------------|------------|
 | baseIngredient | T | true | false |
-| condition | [IIngredientTransformer](/vanilla/api/items/IIngredientTransformer)&lt;T&gt; | true | false |
+| condition | [IIngredientCondition](/vanilla/api/items/IIngredientCondition)&lt;T&gt; | true | false |
 | items | [IItemStack](/vanilla/api/items/IItemStack)[] | true | false |
 
