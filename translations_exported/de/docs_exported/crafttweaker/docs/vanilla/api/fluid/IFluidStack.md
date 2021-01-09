@@ -3,112 +3,101 @@
 This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
 
 ## Diese Klasse importieren
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
 ```zenscript
-crafttweaker.api.fluid.IFluidStack
+import crafttweaker.api.fluid.IFluidStack;
 ```
 
+
 ## Implemented Interfaces
-IFluidStack implementiert die folgenden Schnittstellen. That means any method available to them can also be used on this class.
-- [crafttweaker.api.brackets.CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
+IFluidStack implementiert die folgenden Schnittstellen. That means all methods defined in these interfaces are also available in IFluidStack
+
+- [CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
+## Casters
+
+| Result type                           | Is Implicit |
+| ------------------------------------- | ----------- |
+| [MCFluid](/vanilla/api/fluid/MCFluid) | true        |
 
 ## Methoden
+
 ### containsOther
 
 Checks if this IFluidStack, contains the given IFluidStack by checking if the fluids are the same, and if this fluid's amount is bigger than the given fluid's amount
 
- Returns: `true if this fluid contains the other fluid`
-
-Return type: boolean
+Return Type: boolean
 
 ```zenscript
-myIFluidStack.containsOther(other as crafttweaker.api.fluid.IFluidStack);
+IFluidStack.containsOther(other as IFluidStack) as boolean
 ```
-
-| Parameter | Type                                                                 | Beschreibung                         |
-| --------- | -------------------------------------------------------------------- | ------------------------------------ |
-| other     | [crafttweaker.api.fluid.IFluidStack](/vanilla/api/fluid/IFluidStack) | other IFluidStack to compare against |
-
+| Parameter | Type                                          | Beschreibung                         |
+| --------- | --------------------------------------------- | ------------------------------------ |
+| other     | [IFluidStack](/vanilla/api/fluid/IFluidStack) | other IFluidStack to compare against |
 
 ### copy
 
 Copies the stack. Only needed when mutable stacks are involved.
 
- Returns: `A new stack, that contains the same info as this one`
-
-Rückgabetyp: [crafttweaker.api.fluid.IFluidStack](/vanilla/api/fluid/IFluidStack)
+Return Type: [IFluidStack](/vanilla/api/fluid/IFluidStack)
 
 ```zenscript
+IFluidStack.copy() as IFluidStack
 myIFluidStack.copy();
 ```
-
 ### mutierbar
 
 Makes this stack mutable
 
- Returns: `A new Stack, that is mutable.`
-
-Rückgabetyp: [crafttweaker.api.fluid.IFluidStack](/vanilla/api/fluid/IFluidStack)
+Return Type: [IFluidStack](/vanilla/api/fluid/IFluidStack)
 
 ```zenscript
+IFluidStack.mutable() as IFluidStack
 myIFluidStack.mutable();
 ```
-
 ### setAmount
 
 Sets the fluid amount in MilliBuckets (mB)
 
- Gibt zurück: `Ein neuer Stapel oder dieser Stapel je nachdem, ob dieser Stapel veränderbar ist`
-
-Rückgabetyp: [crafttweaker.api.fluid.IFluidStack](/vanilla/api/fluid/IFluidStack)
+Return Type: [IFluidStack](/vanilla/api/fluid/IFluidStack)
 
 ```zenscript
-myIFluidStack.setAmount(amount as int);
+IFluidStack.setAmount(amount as int) as IFluidStack
 myIFluidStack.setAmount(1000);
 ```
-
 | Parameter | Type | Beschreibung                      |
 | --------- | ---- | --------------------------------- |
 | amount    | int  | The amount to multiply this stack |
 
 
-
-## Properties
-
-| Name          | Type                                                                             | Has Getter | Has Setter |
-| ------------- | -------------------------------------------------------------------------------- | ---------- | ---------- |
-| amount        | int                                                                              | true       | false      |
-| commandString | String                                                                           | true       | false      |
-| empty         | boolean                                                                          | true       | false      |
-| fluid         | [crafttweaker.api.fluid.MCFluid](/vanilla/api/fluid/MCFluid)                     | true       | false      |
-| registryName  | [crafttweaker.api.util.MCResourceLocation](/vanilla/api/util/MCResourceLocation) | true       | false      |
-
 ## Operatoren
+
+### CONTAINS
+
+Checks if this IFluidStack, contains the given IFluidStack by checking if the fluids are the same, and if this fluid's amount is bigger than the given fluid's amount
+
+```zenscript
+other as IFluidStack in myIFluidStack
+```
+
+
 ### MUL
 
 Sets the fluid amount in MilliBuckets (MB)
-
- Gibt zurück: `Ein neuer Stapel oder dieser Stapel je nachdem, ob dieser Stapel veränderbar ist`
 
 ```zenscript
 myIFluidStack * amount as int
 myIFluidStack * 1000
 ```
 
-| Parameter | Type | Beschreibung                      |
-| --------- | ---- | --------------------------------- |
-| amount    | int  | The amount to multiply this stack |
-### CONTAINS
 
-Checks if this IFluidStack, contains the given IFluidStack by checking if the fluids are the same, and if this fluid's amount is bigger than the given fluid's amount
 
- Returns: `true if this fluid contains the other fluid`
+## Properties
 
-```zenscript
-myIFluidStack in other as crafttweaker.api.fluid.IFluidStack
-```
-
-| Parameter | Type                                                                 | Beschreibung                         |
-| --------- | -------------------------------------------------------------------- | ------------------------------------ |
-| other     | [crafttweaker.api.fluid.IFluidStack](/vanilla/api/fluid/IFluidStack) | other IFluidStack to compare against |
+| Name         | Type                                                        | Has Getter | Has Setter |
+| ------------ | ----------------------------------------------------------- | ---------- | ---------- |
+| amount       | int                                                         | true       | false      |
+| empty        | boolean                                                     | true       | false      |
+| fluid        | [MCFluid](/vanilla/api/fluid/MCFluid)                       | true       | false      |
+| registryName | [MCResource-Standort](/vanilla/api/util/MCResourceLocation) | true       | false      |
 
