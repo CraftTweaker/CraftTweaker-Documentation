@@ -5,63 +5,81 @@ Represents a direction axis (X, Y, Z)
 Этот класс был добавлен модом с mod-id `crafttweaker`. Так что если вы хотите использовать эту функцию, вам нужно установить этот мод.
 
 ## Импорт класса
-Вам может потребоваться импортировать пакет, если вы столкнетесь с какими-либо проблемами (например, с заливкой массива), так что лучше быть в безопасности, чем извиняться и добавлять импорт.
+
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
 ```zenscript
-crafttweaker.api.util.DirectionAxis
+import crafttweaker.api.util.DirectionAxis;
 ```
 
-## Implemented Interfaces
-DirectionAxis implements the following interfaces. That means any method available to them can also be used on this class.
-- [crafttweaker.api.brackets.CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
 
+## Extending Enum&lt;DirectionAxis&gt;
+
+DirectionAxis extends Enum&lt;[DirectionAxis](/vanilla/api/util/DirectionAxis)&gt;. That means all methods available in Enum&lt;[DirectionAxis](/vanilla/api/util/DirectionAxis)&gt; are also available in DirectionAxis
+
+## Implemented Interfaces
+DirectionAxis implements the following interfaces. That means all methods defined in these interfaces are also available in DirectionAxis
+
+- Predicate
 ## Methods
+
+### equals
+
+Return Type: boolean
+
+```zenscript
+DirectionAxis.equals(o as Object) as boolean
+```
+| Параметр | Тип    | Description             |
+| -------- | ------ | ----------------------- |
+| o        | Object | No Description Provided |
+
 ### getCoordinate
 
 Gets the coordinate of this axis based on the given values, if this axis is "X", then it will return the value of the "x" parameter
 
- Возвращается: `значение координат`
-
-Тип возврата: двойной
+Return Type: double
 
 ```zenscript
-<directionaxis:x>.getCoordinate(x как двойный, y как двойный, z как двойный);
+DirectionAxis.getCoordinate(x as double, y as double, z as double) as double
 <directionaxis:x>.getCoordinate(1.2, 2.5, 3.87);
 ```
-
 | Параметр | Тип    | Description               |
 | -------- | ------ | ------------------------- |
 | x        | double | x value of the coordinate |
 | y        | double | y value of the coordinate |
 | z        | double | z value of the coordinate |
 
-
-
 Gets the coordinate of this axis based on the given values, if this axis is "X", then it will return the value of the "x" parameter
 
- Возвращается: `значение координат`
-
-Return type: int
+Return Type: int
 
 ```zenscript
-<directionaxis:x>.getCoordinate(x as int, y as int, z as int);
+DirectionAxis.getCoordinate(x as int, y as int, z as int) as int
 <directionaxis:x>.getCoordinate(1, 2, 3);
 ```
-
 | Параметр | Тип | Description               |
 | -------- | --- | ------------------------- |
 | x        | int | x value of the coordinate |
 | y        | int | y value of the coordinate |
 | z        | int | z value of the coordinate |
 
+### hashCode
 
+Return Type: int
+
+```zenscript
+DirectionAxis.hashCode() as int
+<directionaxis:x>.hashCode();
+```
 
 ## Свойства
 
 | Название      | Тип     | Имеет Getter | Имеет Setter |
 | ------------- | ------- | ------------ | ------------ |
-| commandString | String  | true         | false        |
+| commandString | string  | true         | false        |
+| hashCode      | int     | true         | false        |
 | horizontal    | boolean | true         | false        |
-| name          | String  | true         | false        |
+| name          | string  | true         | false        |
 | ordinal       | int     | true         | false        |
 | vertical      | boolean | true         | false        |
 
