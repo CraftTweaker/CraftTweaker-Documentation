@@ -1,38 +1,37 @@
-# IIngredientTransformer
+# IIngredientTransformer&LT;T : IIngredient&GT;
 
 Questa classe è stata aggiunta da una mod con ID `crafttweaker`. Perciò, è necessario avere questa mod installata per poter utilizzare questa funzione.
 
 ## Importing the class
-Potrebbe essere necessario importare il pacchetto, se si incontrano dei problemi (come castare un vettore), quindi meglio essere sicuri e aggiungere la direttiva di importazione.
+
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
 ```zenscript
-crafttweaker.api.item.IIngredientTransformer
+import crafttweaker.api.item.IIngredientTransformer;
 ```
+
 
 ## Methods
+
 ### getCommandString
 
-Return type: String
+Return Type: string
 
 ```zenscript
-myIIngredientTransformer.getCommandString(transformedIngredient as T);
+IIngredientTransformer.getCommandString(transformedIngredient as T) as string
 ```
-
-| Parameter             | Type | Description                 |
-| --------------------- | ---- | --------------------------- |
-| transformedIngredient | T    | Nessuna descrizione fornita |
-
+| Parameter             | Type | Description             |
+| --------------------- | ---- | ----------------------- |
+| transformedIngredient | T    | No Description Provided |
 
 ### transform
 
-Return type: [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
+Return Type: [IItemStack](/vanilla/api/items/IItemStack)
 
 ```zenscript
-myIIngredientTransformer.transform(stack as crafttweaker.api.item.IItemStack);
+IIngredientTransformer.transform(stack as IItemStack) as IItemStack
 ```
-
-| Parameter | Type                                                              | Description                 |
-| --------- | ----------------------------------------------------------------- | --------------------------- |
-| stack     | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | Nessuna descrizione fornita |
-
+| Parameter | Type                                        | Description             |
+| --------- | ------------------------------------------- | ----------------------- |
+| stack     | [IItemStack](/vanilla/api/items/IItemStack) | No Description Provided |
 
 
