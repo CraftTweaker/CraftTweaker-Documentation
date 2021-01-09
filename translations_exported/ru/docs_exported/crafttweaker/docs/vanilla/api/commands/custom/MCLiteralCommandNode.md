@@ -3,257 +3,87 @@
 Этот класс был добавлен модом с mod-id `crafttweaker`. Так что если вы хотите использовать эту функцию, вам нужно установить этот мод.
 
 ## Импорт класса
-Вам может потребоваться импортировать пакет, если вы столкнетесь с какими-либо проблемами (например, с заливкой массива), так что лучше быть в безопасности, чем извиняться и добавлять импорт.
+
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
 ```zenscript
-crafttweaker.api.commands.custom.MCLiteralCommandNode
+import crafttweaker.api.commands.custom.MCLiteralCommandNode;
 ```
 
-## Implemented Interfaces
-MCLiteralCommandNode реализует следующие интерфейсы. That means any method available to them can also be used on this class.
-- [crafttweaker.api.commands.custom.MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)
+
+## Extending MCCommandNode
+
+MCLiteralCommandNode extends [MCCommandNode](/vanilla/api/commands/custom/MCCommandNode). That means all methods available in [MCCommandNode](/vanilla/api/commands/custom/MCCommandNode) are also available in MCLiteralCommandNode
+
+## Утилиты
+
+| Тип результата | Является неявным |
+| -------------- | ---------------- |
+| string         | true             |
 
 ## Methods
-### addChild
-
-```zenscript
-myMCLiteralCommandNode.addChild(node as crafttweaker.api.commands.custom.MCCommandNode);
-```
-
-| Параметр | Тип                                                                                          | Description          |
-| -------- | -------------------------------------------------------------------------------------------- | -------------------- |
-| узел     | [crafttweaker.api.commands.custom.MCCommandNode](/vanilla/api/commands/custom/MCCommandNode) | Описание отсутствует |
-
-
-### canUse
-
-Return type: boolean
-
-```zenscript
-myMCLiteralCommandNode.canUse(source as crafttweaker.api.commands.custom.MCCommandSource);
-```
-
-| Параметр | Тип                                                                                              | Description          |
-| -------- | ------------------------------------------------------------------------------------------------ | -------------------- |
-| источник | [crafttweaker.api.commands.custom.MCCommandSource](/vanilla/api/commands/custom/MCCommandSource) | Описание отсутствует |
-
 
 ### createBuilder
 
-Тип возврата: [crafttweaker.api.commands.custom.MCLiteralArgumentBuilder](/vanilla/api/commands/custom/MCLiteralArgumentBuilder)
+Return Type: [MCLiteralArgumentBuilder](/vanilla/api/commands/custom/MCLiteralArgumentBuilder)
 
 ```zenscript
+MCLiteralCommandNode.createBuilder() as MCLiteralArgumentBuilder
 myMCLiteralCommandNode.createBuilder();
 ```
-
 ### equals
 
-Return type: boolean
+Return Type: boolean
 
 ```zenscript
-myMCLiteralCommandNode.equals(o as Object);
+MCLiteralCommandNode.equals(o as Object) as boolean
 ```
-
-| Параметр | Тип    | Description          |
-| -------- | ------ | -------------------- |
-| o        | Object | Описание отсутствует |
-
-
-### найти неясности
-
-```zenscript
-myMCLiteralCommandNode.findAmbiguities(consumer as crafttweaker.api.commands.custom.MCAmbiguityConsumer);
-```
-
-| Параметр    | Тип                                                                                                      | Description          |
-| ----------- | -------------------------------------------------------------------------------------------------------- | -------------------- |
-| потребитель | [crafttweaker.api.commands.custom.MCAmbiguityConsumer](/vanilla/api/commands/custom/MCAmbiguityConsumer) | Описание отсутствует |
-
-
-### getChild
-
-Возврат тип: [crafttweaker.api.commands.custom.MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)
-
-```zenscript
-myMCLiteralCommandNode.getChild(name as String);
-```
-
-| Параметр | Тип    | Description          |
-| -------- | ------ | -------------------- |
-| name     | String | Описание отсутствует |
-
-
-### getChildren
-
-Тип возврата: Коллекция&lt;[crafttweaker.api.commands.custom.MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)&gt;
-
-```zenscript
-myMCLiteralCommandNode.getChildren();
-```
-
-### getCommand
-
-Возврат типа: [crafttweaker.api.commands.custom.MCCommand](/vanilla/api/commands/custom/MCCommand)
-
-```zenscript
-myMCLiteralCommandNode.getCommand();
-```
-
-### getExamples
-
-Тип возврата: Коллекция&lt;String&gt;
-
-```zenscript
-myMCLiteralCommandNode.getExamples();
-```
+| Параметр | Тип    | Description             |
+| -------- | ------ | ----------------------- |
+| o        | Object | No Description Provided |
 
 ### getLiteral
 
-Return type: String
+Return Type: string
 
 ```zenscript
+MCLiteralCommandNode.getLiteral() as string
 myMCLiteralCommandNode.getLiteral();
 ```
-
-### getName
-
-Return type: String
-
-```zenscript
-myMCLiteralCommandNode.getName();
-```
-
-### getRedirect
-
-Возврат тип: [crafttweaker.api.commands.custom.MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)
-
-```zenscript
-myMCLiteralCommandNode.getRedirect();
-```
-
-### getRedirectModifier
-
-Тип возврата: [crafttweaker.api.commands.custom.MCRedirectModifier](/vanilla/api/commands/custom/MCRedirectModifier)
-
-```zenscript
-myMCLiteralCommandNode.getRedirectModifier();
-```
-
-### getRelevantNodes
-
-Тип возврата: Коллекция&lt;[crafttweaker.api.commands.custom.MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)&gt;
-
-```zenscript
-myMCLiteralCommandNode.getRelevantNodes(input as String);
-```
-
-| Параметр | Тип    | Description          |
-| -------- | ------ | -------------------- |
-| input    | String | Описание отсутствует |
-
-
-### getRequirement
-
-Тип возврата: function.Predicate&lt;[crafttweaker.api.commands.custom.MCCommandSource](/vanilla/api/commands/custom/MCCommandSource)&gt;
-
-```zenscript
-myMCLiteralCommandNode.getRequirement();
-```
-
-### getUsageText
-
-Return type: String
-
-```zenscript
-myMCLiteralCommandNode.getUsageText();
-```
-
 ### hashCode
 
-Return type: int
+Return Type: int
 
 ```zenscript
+MCLiteralCommandNode.hashCode() as int
 myMCLiteralCommandNode.hashCode();
 ```
-
-### isFork
-
-Return type: boolean
-
-```zenscript
-myMCLiteralCommandNode.isFork();
-```
-
 ### isValidInput
 
-Return type: boolean
+Return Type: boolean
 
 ```zenscript
-myMCLiteralCommandNode.isValidInput(input as String);
+MCLiteralCommandNode.isValidInput(input as string) as boolean
 ```
-
-| Параметр | Тип    | Description          |
-| -------- | ------ | -------------------- |
-| input    | String | Описание отсутствует |
-
-
-### listSuggestions
-
-Тип возврата: [crafttweaker.api.commands.custom.MCSuggestions](/vanilla/api/commands/custom/MCSuggestions)
-
-```zenscript
-myMCLiteralCommandNode.listSuggestions(context as crafttweaker.api.commands.custom.MCCommandContext, builder as crafttweaker.api.commands.custom.MCSuggestionsBuilder);
-```
-
-| Параметр    | Тип                                                                                                        | Description          |
-| ----------- | ---------------------------------------------------------------------------------------------------------- | -------------------- |
-| контекст    | [crafttweaker.api.commands.custom.MCCommandContext](/vanilla/api/commands/custom/MCCommandContext)         | Описание отсутствует |
-| конструктор | [crafttweaker.api.commands.custom.MCSuggestionsBuilder](/vanilla/api/commands/custom/MCSuggestionsBuilder) | Описание отсутствует |
-
-
-### parse
-
-```zenscript
-myMCLiteralCommandNode.parse(input as String, contextBuilder as crafttweaker.api.commands.custom.MCCommandContextBuilder);
-```
-
-| Параметр       | Тип                                                                                                              | Description          |
-| -------------- | ---------------------------------------------------------------------------------------------------------------- | -------------------- |
-| input          | String                                                                                                           | Описание отсутствует |
-| contextBuilder | [crafttweaker.api.commands.custom.MCCommandContextBuilder](/vanilla/api/commands/custom/MCCommandContextBuilder) | Описание отсутствует |
-
+| Параметр | Тип    | Description             |
+| -------- | ------ | ----------------------- |
+| input    | string | No Description Provided |
 
 ### toString
 
-Return type: String
+Return Type: string
 
 ```zenscript
+MCLiteralCommandNode.toString() as string
 myMCLiteralCommandNode.toString();
 ```
 
-
 ## Операторы
-### COMPARE
 
-```zenscript
-myMCCommandNode compare o as crafttweaker.api.commands.custom.MCCommandNode
-```
-
-| Параметр | Тип                                                                                          | Description          |
-| -------- | -------------------------------------------------------------------------------------------- | -------------------- |
-| o        | [crafttweaker.api.commands.custom.MCCommandNode](/vanilla/api/commands/custom/MCCommandNode) | Описание отсутствует |
 ### EQUALS
 
 ```zenscript
 myMCLiteralCommandNode == o as Object
 ```
 
-| Параметр | Тип    | Description          |
-| -------- | ------ | -------------------- |
-| o        | Object | Описание отсутствует |
 
-## Утилиты
-
-| Тип результата | Является неявным |
-| -------------- | ---------------- |
-| String         | true             |
 
