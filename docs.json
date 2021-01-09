@@ -1,6 +1,9 @@
 {
   "nav": {
     "Home": "index.md",
+    "Migrations": {
+      "7.1.0": "migrations/migration_7_1_0.md"
+    },
     "Getting Started With Scripts": "getting_started.md",
     "Commands": "commands.md",
     "Examples": "examples.md",
