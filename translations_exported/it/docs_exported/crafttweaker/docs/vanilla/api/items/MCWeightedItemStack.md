@@ -5,83 +5,74 @@ Un ItemStack con una possibilità, di solito usato per gli output delle ricette.
 Questa classe è stata aggiunta da una mod con ID `crafttweaker`. Perciò, è necessario avere questa mod installata per poter utilizzare questa funzione.
 
 ## Importing the class
-Potrebbe essere necessario importare il pacchetto, se si incontrano dei problemi (come castare un vettore), quindi meglio essere sicuri e aggiungere la direttiva di importazione.
+
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
 ```zenscript
-crafttweaker.api.item.MCWeightedItemStack
+import crafttweaker.api.item.MCWeightedItemStack;
 ```
+
 
 ## Interfacce Implementate
-MCWeightedItemStack implementa le seguenti interfacce. Ciò significa che ogni metodo presente nell'interfaccia può essere usato anche per questa classe.
-- [crafttweaker.api.brackets.CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
+MCWeightedItemStack implementa le seguenti interfacce. That means all methods defined in these interfaces are also available in MCWeightedItemStack
 
+- [CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
 ## Constructors
+
 Crea manualmente il weightedItemStack. Di solito è possibile utilizzare l'operatore o il metodo `.weight(weight)` di IItemStack, anche se
 ```zenscript
-new crafttweaker.api.item.MCWeightedItemStack(itemStack as crafttweaker.api.item.IItemStack, weight as double);
-new crafttweaker.api.item.MCWeightedItemStack(<item:minecraft:bedrock>, 0.5D);
+new MCWeightedItemStack(itemStack as IItemStack, weight as double) as MCWeightedItemStack
+new MCWeightedItemStack(<item:minecraft:bedrock>, 0.5D);
 ```
-| Parameter | Type                                                              | Description                           |
-| --------- | ----------------------------------------------------------------- | ------------------------------------- |
-| itemStack | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | La Pila                               |
-| weight    | double                                                            | La possibilità, tra 0 (0%) e 1 (100%) |
-
+| Parameter | Type                                        | Description                           |
+| --------- | ------------------------------------------- | ------------------------------------- |
+| itemStack | [IItemStack](/vanilla/api/items/IItemStack) | La Pila                               |
+| weight    | double                                      | La possibilità, tra 0 (0%) e 1 (100%) |
 
 
 ## Methods
+
 ### weight
 
 Crea una nuova pila ponderata con il peso dato
 
- Restituisce: `Un nuovo pesi oggettoStack`
-
-Tipo di restituzione: [crafttweaker.api.item.MCWeightedItemStack](/vanilla/api/items/MCWeightedItemStack)
+Return Type: [MCWeightedItemStack](/vanilla/api/items/MCWeightedItemStack)
 
 ```zenscript
-<item:minecraft:bedrock>.weight(0.5D).weight(newWeight as double);
+MCWeightedItemStack.weight(newWeight as double) as MCWeightedItemStack
 <item:minecraft:bedrock>.weight(0.5D).weight(0.75D);
 ```
-
 | Parameter | Type   | Description    |
 | --------- | ------ | -------------- |
 | NuovoPeso | double | La percentuale |
 
 
-
-## Properties
-
-| Name          | Type                                                              | Ha Getter | Ha Setter |
-| ------------- | ----------------------------------------------------------------- | --------- | --------- |
-| commandString | String                                                            | true      | false     |
-| stack         | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | true      | false     |
-| weight        | double                                                            | true      | false     |
-
 ## Operators
+
+### MOD
+
+Creates a new Weighted Stack with the given percentage
+
+```zenscript
+myMCWeightedItemStack % newWeight as int
+<item:minecraft:bedrock>.weight(0.5D) % 75
+```
+
+
 ### MUL
 
 Imposta l'importo dell'oggettoStack. <p> Se lo Stack originale era mutabile, muta anche la dimensione dello stack originale.
 
- Restituisce: `Un nuovo pesi oggettoStack`
-
 ```zenscript
-<item:minecraft:bedrock>.weight(0.5D) * newAmount as int
+myMCWeightedItemStack * newAmount as int
 <item:minecraft:bedrock>.weight(0.5D) * 5
 ```
 
-| Parameter    | Type | Description                     |
-| ------------ | ---- | ------------------------------- |
-| nuovoImporto | int  | La nuova dimensione dello stack |
-### MOD
 
-Crea una nuova pila ponderata con la percentuale data
 
- Restituisce: `Un nuovo pesi oggettoStack`
+## Properties
 
-```zenscript
-<item:minecraft:bedrock>.weight(0.5D) % newWeight as int
-<item:minecraft:bedrock>.weight(0.5D) % 75
-```
-
-| Parameter | Type | Description    |
-| --------- | ---- | -------------- |
-| NuovoPeso | int  | La percentuale |
+| Name   | Type                                        | Ha Getter | Ha Setter |
+| ------ | ------------------------------------------- | --------- | --------- |
+| stack  | [IItemStack](/vanilla/api/items/IItemStack) | true      | false     |
+| weight | double                                      | true      | false     |
 
