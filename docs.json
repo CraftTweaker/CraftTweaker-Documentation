@@ -35,6 +35,9 @@
         "Millstone": "mods/StoneAge/MillstoneManager.md",
         "Tanning Rack": "mods/StoneAge/TanningRackManager.md",
         "Tree Stump": "mods/StoneAge/TreeStumpManager.md"
+      },
+      "Thermal Series": {
+        "Redstone Furnace": "mods/ThermalSeries/Redstone_Furnace.md"
       }
     }
   }
