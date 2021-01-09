@@ -3,138 +3,127 @@
 这个类由mod-id为`crafttweaker`的模组添加. 因此，如果要使用此功能，则需要安装此mod。
 
 ## 导入相关包
-如果遇到任何问题（例如强制转换数组），则可能需要导入软件包，因此，最好的方式就是导入包支持。
+
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
 ```zenscript
-crafttweaker.api.world.MCWorld
+import crafttweaker.api.world.MCWorld;
 ```
 
+
+## 已实现的接口
+MCWorld implements the following interfaces. That means all methods defined in these interfaces are also available in MCWorld
+
+- AutoCloseable
 ## 方法
+
 ### getBiome
 
-Return type: [crafttweaker.api.world.MCBiome](/vanilla/api/world/MCBiome)
+Return Type: [MCBiome](/vanilla/api/world/MCBiome)
 
 ```zenscript
-myMCWorld.getBiome(pos as crafttweaker.api.util.BlockPos);
+MCWorld.getBiome(pos as BlockPos) as MCBiome
 ```
-
-| 参数 | 类型                                                           | 描述                      |
-| -- | ------------------------------------------------------------ | ----------------------- |
-| 点  | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | No description provided |
-
+| 参数 | 类型                                     | 描述                      |
+| -- | -------------------------------------- | ----------------------- |
+| 点  | [BlockPos](/vanilla/api/util/BlockPos) | No Description Provided |
 
 ### getBlockState
 
-返回类型： [craftbiner.api.block.MCBlockState](/vanilla/api/blocks/MCBlockState)
+Return Type: [MCBlockState](/vanilla/api/blocks/MCBlockState)
 
 ```zenscript
-myMCWorld.getBlockState(pos as crafttweaker.api.util.BlockPos);
+MCWorld.getBlockState(pos as BlockPos) as MCBlockState
 ```
-
-| 参数 | 类型                                                           | 描述                      |
-| -- | ------------------------------------------------------------ | ----------------------- |
-| 点  | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | No description provided |
-
+| 参数 | 类型                                     | 描述                      |
+| -- | -------------------------------------- | ----------------------- |
+| 点  | [BlockPos](/vanilla/api/util/BlockPos) | No Description Provided |
 
 ### getRedstonePower
 
-Return type: int
+Return Type: int
 
 ```zenscript
-myMCWorld.getRedstonePower(pos as crafttweaker.api.util.BlockPos, direction as crafttweaker.api.util.Direction);
+MCWorld.getRedstonePower(pos as BlockPos, direction as Direction) as int
 ```
-
-| 参数        | 类型                                                             | 描述                      |
-| --------- | -------------------------------------------------------------- | ----------------------- |
-| 点         | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos)   | No description provided |
-| direction | [crafttweaker.api.util.Direction](/vanilla/api/util/Direction) | No description provided |
-
+| 参数        | 类型                                       | 描述                      |
+| --------- | ---------------------------------------- | ----------------------- |
+| 点         | [BlockPos](/vanilla/api/util/BlockPos)   | No Description Provided |
+| direction | [Direction](/vanilla/api/util/Direction) | No Description Provided |
 
 ### getRedstonePowerFromNeighbors
 
-Return type: int
+Return Type: int
 
 ```zenscript
-myMCWorld.getRedstonePowerFromNeighbors(pos as crafttweaker.api.util.BlockPos);
+MCWorld.getRedstonePowerFromNeighbors(pos as BlockPos) as int
 ```
-
-| 参数 | 类型                                                           | 描述                      |
-| -- | ------------------------------------------------------------ | ----------------------- |
-| 点  | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | No description provided |
-
+| 参数 | 类型                                     | 描述                      |
+| -- | -------------------------------------- | ----------------------- |
+| 点  | [BlockPos](/vanilla/api/util/BlockPos) | No Description Provided |
 
 ### getStrongPower
 
-Return type: int
+Return Type: int
 
 ```zenscript
-myMCWorld.getStrongPower(pos as crafttweaker.api.util.BlockPos);
+MCWorld.getStrongPower(pos as BlockPos) as int
 ```
-
-| 参数 | 类型                                                           | 描述                      |
-| -- | ------------------------------------------------------------ | ----------------------- |
-| 点  | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | No description provided |
-
+| 参数 | 类型                                     | 描述                      |
+| -- | -------------------------------------- | ----------------------- |
+| 点  | [BlockPos](/vanilla/api/util/BlockPos) | No Description Provided |
 
 ### getTileData
 
-返回类型： [craftbiner.api.data.IData](/vanilla/api/data/IData)
+Return Type: [IData](/vanilla/api/data/IData)
 
 ```zenscript
-myMCWorld.getTileData(pos as crafttweaker.api.util.BlockPos);
+MCWorld.getTileData(pos as BlockPos) as IData
 ```
-
-| 参数 | 类型                                                           | 描述                      |
-| -- | ------------------------------------------------------------ | ----------------------- |
-| 点  | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | No description provided |
-
+| 参数 | 类型                                     | 描述                      |
+| -- | -------------------------------------- | ----------------------- |
+| 点  | [BlockPos](/vanilla/api/util/BlockPos) | No Description Provided |
 
 ### isBlockPowered
 
-Return type: boolean
+Return Type: boolean
 
 ```zenscript
-myMCWorld.isBlockPowered(pos as crafttweaker.api.util.BlockPos);
+MCWorld.isBlockPowered(pos as BlockPos) as boolean
 ```
-
-| 参数 | 类型                                                           | 描述                      |
-| -- | ------------------------------------------------------------ | ----------------------- |
-| 点  | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | No description provided |
-
+| 参数 | 类型                                     | 描述                      |
+| -- | -------------------------------------- | ----------------------- |
+| 点  | [BlockPos](/vanilla/api/util/BlockPos) | No Description Provided |
 
 ### isRainingAt
 
-Return type: boolean
+Return Type: boolean
 
 ```zenscript
-myMCWorld.isRainingAt(pos as crafttweaker.api.util.BlockPos);
+MCWorld.isRainingAt(pos as BlockPos) as boolean
 ```
-
-| 参数 | 类型                                                           | 描述                      |
-| -- | ------------------------------------------------------------ | ----------------------- |
-| 点  | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | No description provided |
-
+| 参数 | 类型                                     | 描述                      |
+| -- | -------------------------------------- | ----------------------- |
+| 点  | [BlockPos](/vanilla/api/util/BlockPos) | No Description Provided |
 
 ### isRemote
 
-Return type: boolean
+Return Type: boolean
 
 ```zenscript
+MCWorld.isRemote() as boolean
 myMCWorld.isRemote();
 ```
-
 ### setBlockState
 
-Return type: boolean
+Return Type: boolean
 
 ```zenscript
-myMCWorld.setBlockState(pos as crafttweaker.api.util.BlockPos, state as crafttweaker.api.block.MCBlockState);
+MCWorld.setBlockState(pos as BlockPos, state as MCBlockState) as boolean
 ```
-
-| 参数    | 类型                                                                      | 描述                      |
-| ----- | ----------------------------------------------------------------------- | ----------------------- |
-| 点     | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos)            | No description provided |
-| state | [crafttweaker.api.block.MCBlockState](/vanilla/api/blocks/MCBlockState) | No description provided |
-
+| 参数    | 类型                                                       | 描述                      |
+| ----- | -------------------------------------------------------- | ----------------------- |
+| 点     | [BlockPos](/vanilla/api/util/BlockPos)                   | No Description Provided |
+| state | [MCBlockState #MC方块状态](/vanilla/api/blocks/MCBlockState) | No Description Provided |
 
 
 ## 参数
@@ -142,9 +131,9 @@ myMCWorld.setBlockState(pos as crafttweaker.api.util.BlockPos, state as crafttwe
 | 名称               | 类型      | 可获得  | 可设置   |
 | ---------------- | ------- | ---- | ----- |
 | dayTime          | boolean | true | false |
-| difficulty       | String  | true | false |
+| difficulty       | string  | true | false |
 | difficultyLocked | boolean | true | false |
-| dimension        | String  | true | false |
+| dimension        | string  | true | false |
 | gameTime         | long    | true | false |
 | hardcore         | boolean | true | false |
 | nightTime        | boolean | true | false |
