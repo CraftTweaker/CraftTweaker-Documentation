@@ -3,138 +3,127 @@
 Questa classe è stata aggiunta da una mod con ID `crafttweaker`. Perciò, è necessario avere questa mod installata per poter utilizzare questa funzione.
 
 ## Importing the class
-Potrebbe essere necessario importare il pacchetto, se si incontrano dei problemi (come castare un vettore), quindi meglio essere sicuri e aggiungere la direttiva di importazione.
+
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
 ```zenscript
-crafttweaker.api.world.MCWorld
+import crafttweaker.api.world.MCWorld;
 ```
 
+
+## Interfacce Implementate
+MCWorld implements the following interfaces. That means all methods defined in these interfaces are also available in MCWorld
+
+- AutoCloseable
 ## Methods
+
 ### getBiome
 
-Return type: [crafttweaker.api.world.MCBiome](/vanilla/api/world/MCBiome)
+Return Type: [MCBiome](/vanilla/api/world/MCBiome)
 
 ```zenscript
-myMCWorld.getBiome(pos as crafttweaker.api.util.BlockPos);
+MCWorld.getBiome(pos as BlockPos) as MCBiome
 ```
-
-| Parameter | Type                                                         | Description                 |
-| --------- | ------------------------------------------------------------ | --------------------------- |
-| pos       | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | Nessuna descrizione fornita |
-
+| Parameter | Type                                   | Description             |
+| --------- | -------------------------------------- | ----------------------- |
+| pos       | [BlockPos](/vanilla/api/util/BlockPos) | No Description Provided |
 
 ### getBlockState
 
-Tipo di restituzione: [crafttweaker.api.block.MCBlockState](/vanilla/api/blocks/MCBlockState)
+Return Type: [MCBlockState](/vanilla/api/blocks/MCBlockState)
 
 ```zenscript
-myMCWorld.getBlockState(pos as crafttweaker.api.util.BlockPos);
+MCWorld.getBlockState(pos as BlockPos) as MCBlockState
 ```
-
-| Parameter | Type                                                         | Description                 |
-| --------- | ------------------------------------------------------------ | --------------------------- |
-| pos       | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | Nessuna descrizione fornita |
-
+| Parameter | Type                                   | Description             |
+| --------- | -------------------------------------- | ----------------------- |
+| pos       | [BlockPos](/vanilla/api/util/BlockPos) | No Description Provided |
 
 ### getRedstonePower
 
-Return type: int
+Return Type: int
 
 ```zenscript
-myMCWorld.getRedstonePower(pos as crafttweaker.api.util.BlockPos, direction as crafttweaker.api.util.Direction);
+MCWorld.getRedstonePower(pos as BlockPos, direction as Direction) as int
 ```
-
-| Parameter | Type                                                           | Description                 |
-| --------- | -------------------------------------------------------------- | --------------------------- |
-| pos       | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos)   | Nessuna descrizione fornita |
-| direction | [crafttweaker.api.util.Direction](/vanilla/api/util/Direction) | Nessuna descrizione fornita |
-
+| Parameter | Type                                     | Description             |
+| --------- | ---------------------------------------- | ----------------------- |
+| pos       | [BlockPos](/vanilla/api/util/BlockPos)   | No Description Provided |
+| direction | [Direction](/vanilla/api/util/Direction) | No Description Provided |
 
 ### getRedstonePowerFromNeighbors
 
-Return type: int
+Return Type: int
 
 ```zenscript
-myMCWorld.getRedstonePowerFromNeighbors(pos as crafttweaker.api.util.BlockPos);
+MCWorld.getRedstonePowerFromNeighbors(pos as BlockPos) as int
 ```
-
-| Parameter | Type                                                         | Description                 |
-| --------- | ------------------------------------------------------------ | --------------------------- |
-| pos       | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | Nessuna descrizione fornita |
-
+| Parameter | Type                                   | Description             |
+| --------- | -------------------------------------- | ----------------------- |
+| pos       | [BlockPos](/vanilla/api/util/BlockPos) | No Description Provided |
 
 ### getStrongPower
 
-Return type: int
+Return Type: int
 
 ```zenscript
-myMCWorld.getStrongPower(pos as crafttweaker.api.util.BlockPos);
+MCWorld.getStrongPower(pos as BlockPos) as int
 ```
-
-| Parameter | Type                                                         | Description                 |
-| --------- | ------------------------------------------------------------ | --------------------------- |
-| pos       | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | Nessuna descrizione fornita |
-
+| Parameter | Type                                   | Description             |
+| --------- | -------------------------------------- | ----------------------- |
+| pos       | [BlockPos](/vanilla/api/util/BlockPos) | No Description Provided |
 
 ### getTileData
 
-Tipo restituito: [crafttweaker.api.data.IData](/vanilla/api/data/IData)
+Return Type: [IData](/vanilla/api/data/IData)
 
 ```zenscript
-myMCWorld.getTileData(pos as crafttweaker.api.util.BlockPos);
+MCWorld.getTileData(pos as BlockPos) as IData
 ```
-
-| Parameter | Type                                                         | Description                 |
-| --------- | ------------------------------------------------------------ | --------------------------- |
-| pos       | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | Nessuna descrizione fornita |
-
+| Parameter | Type                                   | Description             |
+| --------- | -------------------------------------- | ----------------------- |
+| pos       | [BlockPos](/vanilla/api/util/BlockPos) | No Description Provided |
 
 ### isBlockPowered
 
-Return type: boolean
+Return Type: boolean
 
 ```zenscript
-myMCWorld.isBlockPowered(pos as crafttweaker.api.util.BlockPos);
+MCWorld.isBlockPowered(pos as BlockPos) as boolean
 ```
-
-| Parameter | Type                                                         | Description                 |
-| --------- | ------------------------------------------------------------ | --------------------------- |
-| pos       | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | Nessuna descrizione fornita |
-
+| Parameter | Type                                   | Description             |
+| --------- | -------------------------------------- | ----------------------- |
+| pos       | [BlockPos](/vanilla/api/util/BlockPos) | No Description Provided |
 
 ### isRainingAt
 
-Return type: boolean
+Return Type: boolean
 
 ```zenscript
-myMCWorld.isRainingAt(pos as crafttweaker.api.util.BlockPos);
+MCWorld.isRainingAt(pos as BlockPos) as boolean
 ```
-
-| Parameter | Type                                                         | Description                 |
-| --------- | ------------------------------------------------------------ | --------------------------- |
-| pos       | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | Nessuna descrizione fornita |
-
+| Parameter | Type                                   | Description             |
+| --------- | -------------------------------------- | ----------------------- |
+| pos       | [BlockPos](/vanilla/api/util/BlockPos) | No Description Provided |
 
 ### isRemote
 
-Return type: boolean
+Return Type: boolean
 
 ```zenscript
+MCWorld.isRemote() as boolean
 myMCWorld.isRemote();
 ```
-
 ### setBlockState
 
-Return type: boolean
+Return Type: boolean
 
 ```zenscript
-myMCWorld.setBlockState(pos as crafttweaker.api.util.BlockPos, state as crafttweaker.api.block.MCBlockState);
+MCWorld.setBlockState(pos as BlockPos, state as MCBlockState) as boolean
 ```
-
-| Parameter | Type                                                                    | Description                 |
-| --------- | ----------------------------------------------------------------------- | --------------------------- |
-| pos       | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos)            | Nessuna descrizione fornita |
-| state     | [crafttweaker.api.block.MCBlockState](/vanilla/api/blocks/MCBlockState) | Nessuna descrizione fornita |
-
+| Parameter | Type                                             | Description             |
+| --------- | ------------------------------------------------ | ----------------------- |
+| pos       | [BlockPos](/vanilla/api/util/BlockPos)           | No Description Provided |
+| state     | [MCBlockState](/vanilla/api/blocks/MCBlockState) | No Description Provided |
 
 
 ## Properties
@@ -142,9 +131,9 @@ myMCWorld.setBlockState(pos as crafttweaker.api.util.BlockPos, state as crafttwe
 | Name             | Type    | Ha Getter | Ha Setter |
 | ---------------- | ------- | --------- | --------- |
 | dayTime          | boolean | true      | false     |
-| difficulty       | String  | true      | false     |
+| difficulty       | string  | true      | false     |
 | difficultyLocked | boolean | true      | false     |
-| dimension        | String  | true      | false     |
+| dimension        | string  | true      | false     |
 | gameTime         | long    | true      | false     |
 | hardcore         | boolean | true      | false     |
 | nightTime        | boolean | true      | false     |
