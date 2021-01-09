@@ -1,38 +1,37 @@
-# Иингредиентный трансформатор
+# IIngredientTransformer&LT;T : IIngredient&GT;
 
 Этот класс был добавлен модом с mod-id `crafttweaker`. Так что если вы хотите использовать эту функцию, вам нужно установить этот мод.
 
 ## Импорт класса
-Вам может потребоваться импортировать пакет, если вы столкнетесь с какими-либо проблемами (например, с заливкой массива), так что лучше быть в безопасности, чем извиняться и добавлять импорт.
+
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
 ```zenscript
-crafttweaker.api.item.IIngredientTransform
+import crafttweaker.api.item.IIngredientTransformer;
 ```
+
 
 ## Methods
+
 ### getCommandString
 
-Return type: String
+Return Type: string
 
 ```zenscript
-myIIngredientTransformer.getCommandString(transformedIngredient as T);
+IIngredientTransformer.getCommandString(transformedIngredient as T) as string
 ```
-
-| Параметр              | Тип | Description          |
-| --------------------- | --- | -------------------- |
-| transformedIngredient | T   | Описание отсутствует |
-
+| Параметр              | Тип | Description             |
+| --------------------- | --- | ----------------------- |
+| transformedIngredient | T   | No Description Provided |
 
 ### transform
 
-Return type: [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
+Return Type: [IItemStack](/vanilla/api/items/IItemStack)
 
 ```zenscript
-myIIngredientTransformer.transform(stack as crafttweaker.api.item.IItemStack);
+IIngredientTransformer.transform(stack as IItemStack) as IItemStack
 ```
-
-| Параметр | Тип                                                               | Description          |
-| -------- | ----------------------------------------------------------------- | -------------------- |
-| stack    | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | Описание отсутствует |
-
+| Параметр | Тип                                         | Description             |
+| -------- | ------------------------------------------- | ----------------------- |
+| stack    | [IItemStack](/vanilla/api/items/IItemStack) | No Description Provided |
 
 
