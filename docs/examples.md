@@ -1,5 +1,8 @@
 # Examples
-Script examples can be found here:
+
+You can use the `/ct examples` command to get some commented scripts in your scripts/examples  directory
+
+More script examples can be found here:
 
 [Examples](https://github.com/CraftTweaker/CraftTweaker-Examples/tree/master/1.14)
 
