@@ -210,7 +210,7 @@ myMCCommandNode.toString();
 ### COMPARE
 
 ```zenscript
-myMCCommandNode compare o as MCCommandNode
+myMCCommandNode < o as MCCommandNode
 ```
 
 
