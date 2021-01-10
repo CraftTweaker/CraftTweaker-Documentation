@@ -1,280 +1,214 @@
 # BlockBuilder
 
-The blockbuilder is used to... build blocks (you totally didn't see that one coming, right... right?).<br> Once you created it you can set various properties which will be outlined by the separate methods. <p> You can also change the block's type to create a more specialized form of block (e.g. stairs or Blocks that can be rotated in the same way logs can). 要告诉Cot, 你想要方块显示正在生成的名称, 你需要调用 [mods.contenttweeper.block.BlockBuilder#build(String)](/mods/contenttweaker/API/block/BlockBuilder/#build) 并指定一个有效的资源位置路径。
+The blockbuilder is used to... build blocks (you totally didn't see that one coming, right... right?).<br> Once you created it you can set various properties which will be outlined by the separate methods. <p> You can also change the block's type to create a more specialized form of block (e.g. stairs or Blocks that can be rotated in the same way logs can). To tell CoT that you want the block to appear ingame you need to call [this](.)#build(String) and specify a valid resource location path.
 
 This class was added by a mod with mod-id `contenttweaker`. 因此，如果要使用此功能，则需要安装此mod。
 
 ## 导入相关包
-如果遇到任何问题（例如强制转换数组），则可能需要导入软件包，因此，最好的方式就是导入包支持。
+
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
 ```zenscript
-mods.contenttweeper.block.BlockBuilder
+import mods.contenttweaker.block.BlockBuilder;
 ```
+
 
 ## 已实现的接口
-BlockBuilder implements the following interfaces. 这意味着对这个接口可用的任何方法也可以在此类上使用。
-- [mods.contenttweaker.api.IIsBuilder](/mods/contenttweaker/API/api/IIsBuilder)
+BlockBuilder implements the following interfaces. That means all methods defined in these interfaces are also available in BlockBuilder
 
+- [IIsBuilder](/mods/contenttweaker/API/api/IIsBuilder)
 ## Constructor #构造函数
-Creates a new BlockBuilder. 请记住，这将 _不是_ 在游戏中创建一个新的块，为此你需要调用 [mods.contenttweaker.block.BlockBuilder#build(String)](/mods/contenttweaker/API/block/BlockBuilder/#build)。
+
+Creates a new BlockBuilder. Remember that this will _not_ create a new block in the game, you need to call [this](.)#build(String) for that.
 ```zenscript
-新mods.contenttweeper.block.BlockBuilder(materials as craftmilever.api.block.material.MCMaterial);
-new mods.contenttweeper.block.BlockBuilder();
-new mods.contenttweeper.block.BlockBuilder(<blockmaterial:earth>);
+new BlockBuilder(material as MCMaterial) as BlockBuilder
+new BlockBuilder(<blockmaterial:earth>);
 ```
-| 参数       | 类型                                                                                                                                            | 描述                                | 可选的  | Default Value                |
-| -------- | --------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------- | ---- | ---------------------------- |
-| material | [crafttweaker.api.block.material.MCMaterial #导入方式为 import crafttweaker.api.block.material.MCMaterial](/vanilla/api/block/material/MCMaterial) | The material this block will have | true | `<blockmaterial:iron>` |
-
-
+| 参数       | 类型                                                         | 描述                                | 可选   | DefaultValue         |
+| -------- | ---------------------------------------------------------- | --------------------------------- | ---- | -------------------- |
+| material | [MCMaterial #MC材料](/vanilla/api/block/material/MCMaterial) | The material this block will have | true | <blockmaterial:iron> |
 
 ## 方法
-### build
-
-Instructs CoT to actually build whatever this builder is supposed to be building.
-
-```zenscript
-myBlockBuilder.build(resourceLocation as String);
-myBlockBuilder.build("my_awesome_block");
-```
-
-| 参数               | 类型     | 描述                                   |
-| ---------------- | ------ | ------------------------------------ |
-| resourceLocation | String | The resource path to give this block |
-
 
 ### notSolid
 
-指示CoT此方块不是坚固的。
+Instructs CoT that this block is not solid. <p> This is required if your model is not a full block (16x16x16). It is also required if your model is see-through (like glass). Set this if your block creates some X-Ray effects when it's placed.
 
- 如果您的模型不是一个完整的块(16x16x16)，这是必需的。 如果您的模型被穿过(例如玻璃)也是必需的。 如果您的方块在放置时创建一些X光效果，请设置此项。
-
- Returns: `This builder, used for chaining`
-
-返回类型： [mods.contenttweeper.block.BlockBuilder](/mods/contenttweaker/API/block/BlockBuilder)
+Return Type: [BlockBuilder](/mods/contenttweaker/API/block/BlockBuilder)
 
 ```zenscript
+BlockBuilder.notSolid() as BlockBuilder
 myBlockBuilder.notSolid();
 ```
-
 ### withHardnessAndResistance
 
 Sets the block's hardness and resistance levels. Unlike the other method, this one only accepts one parameter and will use that value for both properties.
 
- Returns: `This builder, used for method chaining`
-
-返回类型： [mods.contenttweeper.block.BlockBuilder](/mods/contenttweaker/API/block/BlockBuilder)
+Return Type: [BlockBuilder](/mods/contenttweaker/API/block/BlockBuilder)
 
 ```zenscript
-myBlockBuilder.withHardnessAndResistance(hardnessAndResistance as float);
+BlockBuilder.withHardnessAndResistance(hardnessAndResistance as float) as BlockBuilder
 myBlockBuilder.withHardnessAndResistance(0.5f);
 ```
-
 | 参数                    | 类型    | 描述                                                |
 | --------------------- | ----- | ------------------------------------------------- |
 | hardnessAndResistance | float | The value to set for hardness and for resistance. |
 
-
-
 Sets the block's hardness and resistance levels. Unlike the other method, this one allows you to set each property one to a separate value.
 
- Returns: `This builder, used for method chaining`
-
-返回类型： [mods.contenttweeper.block.BlockBuilder](/mods/contenttweaker/API/block/BlockBuilder)
+Return Type: [BlockBuilder](/mods/contenttweaker/API/block/BlockBuilder)
 
 ```zenscript
-myBlockBuilder.withHardnessAndResistance(hardnessIn as float, resistanceIn as float);
+BlockBuilder.withHardnessAndResistance(hardnessIn as float, resistanceIn as float) as BlockBuilder
 myBlockBuilder.withHardnessAndResistance(0.5f, 0.5f);
 ```
-
 | 参数           | 类型    | 描述                               |
 | ------------ | ----- | -------------------------------- |
 | hardnessIn   | float | The value to set for hardness    |
 | resistanceIn | float | The value to set for resistance. |
 
-
 ### withHarvestLevel
 
 Sets the mining level required to mine this block
 
- Returns: `This builder, used for method chaining`
-
-返回类型： [mods.contenttweeper.block.BlockBuilder](/mods/contenttweaker/API/block/BlockBuilder)
+Return Type: [BlockBuilder](/mods/contenttweaker/API/block/BlockBuilder)
 
 ```zenscript
-myBlockBuilder.withHarvestLevel(harvestLevel as int);
+BlockBuilder.withHarvestLevel(harvestLevel as int) as BlockBuilder
 myBlockBuilder.withHarvestLevel(3);
 ```
-
 | 参数           | 类型  | 描述                         |
 | ------------ | --- | -------------------------- |
 | harvestLevel | int | The harvest level requried |
-
 
 ### withHarvestTool
 
 Sets the tool required to harvest this block
 
- Returns: `This builder, used for method chaining`
-
-返回类型： [mods.contenttweeper.block.BlockBuilder](/mods/contenttweaker/API/block/BlockBuilder)
+Return Type: [BlockBuilder](/mods/contenttweaker/API/block/BlockBuilder)
 
 ```zenscript
-myBlockBuilder.withHarvestTool(harvestTool as mods.contenttweaker.item.MCToolType);
+BlockBuilder.withHarvestTool(harvestTool as MCToolType) as BlockBuilder
 myBlockBuilder.withHarvestTool(<tooltype:shovel>);
 ```
-
-| 参数          | 类型                                                                              | 描述            |
-| ----------- | ------------------------------------------------------------------------------- | ------------- |
-| harvestTool | [mods.contenttweaker.item.MCToolType](/mods/contenttweaker/API/item/MCToolType) | The tool type |
-
+| 参数          | 类型                                                     | 描述            |
+| ----------- | ------------------------------------------------------ | ------------- |
+| harvestTool | [MCToolType](/mods/contenttweaker/API/item/MCToolType) | The tool type |
 
 ### withItemGroup
 
 Sets the item group in which this block will appear
 
- Returns: `This builder, used for method chaining`
-
-返回类型： [mods.contenttweeper.block.BlockBuilder](/mods/contenttweaker/API/block/BlockBuilder)
+Return Type: [BlockBuilder](/mods/contenttweaker/API/block/BlockBuilder)
 
 ```zenscript
-myBlockBuilder.withItemGroup(group as mods.contenttweaker.item.MCItemGroup);
+BlockBuilder.withItemGroup(group as MCItemGroup) as BlockBuilder
 myBlockBuilder.withItemGroup(<itemgroup:building_blocks>);
 ```
-
-| 参数    | 类型                                                                                | 描述               |
-| ----- | --------------------------------------------------------------------------------- | ---------------- |
-| group | [mods.contenttweaker.item.MCItemGroup](/mods/contenttweaker/API/item/MCItemGroup) | The group to set |
-
+| 参数    | 类型                                                       | 描述               |
+| ----- | -------------------------------------------------------- | ---------------- |
+| group | [MCItemGroup](/mods/contenttweaker/API/item/MCItemGroup) | The group to set |
 
 ### withLightValue
 
 Sets the block's light value.
 
- Returns: `This builder, used for method chaining`
-
-返回类型： [mods.contenttweeper.block.BlockBuilder](/mods/contenttweaker/API/block/BlockBuilder)
+Return Type: [BlockBuilder](/mods/contenttweaker/API/block/BlockBuilder)
 
 ```zenscript
-myBlockBuilder.withLightValue(lightValueIn as int);
+BlockBuilder.withLightValue(lightValueIn as int) as BlockBuilder
 myBlockBuilder.withLightValue(15);
 ```
-
 | 参数           | 类型  | 描述                     |
 | ------------ | --- | ---------------------- |
 | lightValueIn | int | The light level to set |
-
 
 ### withLootFrom
 
 Will instruct CoT to override this block's loot table with the one of the block Provided. Currently this will still create a loot table entry, though it will be ignored by the game.
 
- Returns: `This builder, used for method chaining`
-
-返回类型： [mods.contenttweeper.block.BlockBuilder](/mods/contenttweaker/API/block/BlockBuilder)
+Return Type: [BlockBuilder](/mods/contenttweaker/API/block/BlockBuilder)
 
 ```zenscript
-myBlockBuilder.withLootFrom(blockIn as crafttweaker.api.block.MCBlock);
+BlockBuilder.withLootFrom(blockIn as MCBlock) as BlockBuilder
 myBlockBuilder.withLootFrom(<block:minecraft:diamond>);
 ```
-
-| 参数      | 类型                                                            | 描述                                           |
-| ------- | ------------------------------------------------------------- | -------------------------------------------- |
-| blockIn | [crafttweaker.api.block.MCBlock](/vanilla/api/blocks/MCBlock) | The block whose loot table should be applied |
-
+| 参数      | 类型                                           | 描述                                           |
+| ------- | -------------------------------------------- | -------------------------------------------- |
+| blockIn | [MCBlock #MC方块](/vanilla/api/blocks/MCBlock) | The block whose loot table should be applied |
 
 ### withMaxStackSize
 
 Sets the maximum Stack size that this block can have when in your inventory. Will be 64 if unchanged.
 
- Returns: `This builder, used for chaining`
-
-返回类型： [mods.contenttweeper.block.BlockBuilder](/mods/contenttweaker/API/block/BlockBuilder)
+Return Type: [BlockBuilder](/mods/contenttweaker/API/block/BlockBuilder)
 
 ```zenscript
-myBlockBuilder.withMaxStackSize(size as int);
+BlockBuilder.withMaxStackSize(size as int) as BlockBuilder
 myBlockBuilder.withMaxStackSize(16);
 ```
-
 | 参数   | 类型  | 描述               |
 | ---- | --- | ---------------- |
 | size | int | The size to set. |
-
 
 ### withRarity
 
 Allows you to set the rarity of this block.
 
- Returns: `This builder, used for method chaining`
-
-返回类型： [mods.contenttweeper.block.BlockBuilder](/mods/contenttweaker/API/block/BlockBuilder)
+Return Type: [BlockBuilder](/mods/contenttweaker/API/block/BlockBuilder)
 
 ```zenscript
-myBlockBuilder.withRarity(rarity as String);
+BlockBuilder.withRarity(rarity as string) as BlockBuilder
 myBlockBuilder.withRarity("UNCOMMON");
 ```
-
 | 参数     | 类型     | 描述         |
 | ------ | ------ | ---------- |
-| rarity | String | The rarity |
-
+| rarity | string | The rarity |
 
 ### withSlipperiness
 
 Sets the slipperiness.
 
- Returns: `This builder, used for method chaining`
-
-返回类型： [mods.contenttweeper.block.BlockBuilder](/mods/contenttweaker/API/block/BlockBuilder)
+Return Type: [BlockBuilder](/mods/contenttweaker/API/block/BlockBuilder)
 
 ```zenscript
-myBlockBuilder.withSlipperiness(slipperinessIn as float);
+BlockBuilder.withSlipperiness(slipperinessIn as float) as BlockBuilder
 myBlockBuilder.withSlipperiness(0.5f);
 ```
-
 | 参数             | 类型    | 描述               |
 | -------------- | ----- | ---------------- |
 | slipperinessIn | float | The value to set |
-
 
 ### withType
 
 Sets the specific type of this block. After this method is called the builder's context will switch to the more provided type builder. That means that the methods of this builder will no longer be available, so any properties you wish to set should be set before you call this method.
 
- Returns: `A builder with the given block.`
-
-Return type: T
+Return Type: T
 
 ```zenscript
-myBlockBuilder.withType<T>();
-myBlockBuilder.withType<mods.contenttweaker.block.pillar.BlockBuilderPillarRotatable>();
+BlockBuilder.withType<T : BlockTypeBuilder>() as T
 ```
-
-| ParameterName | Bounds                                                                                        |
-| ------------- | --------------------------------------------------------------------------------------------- |
-| T             | [mods.contenttweeper.block.BlockTypeBuilder](/mods/contenttweaker/API/block/BlockTypeBuilder) |
+| 参数 | 类型                                                                  | 描述                                        |
+| -- | ------------------------------------------------------------------- | ----------------------------------------- |
+| T  | [BlockTypeBuilder](/mods/contenttweaker/API/block/BlockTypeBuilder) | The Type of block that this should become |
 
 ### withoutDrops
 
 Will instruct CoT that this block will not have any loot entries. Currently this will still create a loot table entry, though it will be ignored by the game.
 
- Returns: `This builder, used for method chaining`
-
-返回类型： [mods.contenttweeper.block.BlockBuilder](/mods/contenttweaker/API/block/BlockBuilder)
+Return Type: [BlockBuilder](/mods/contenttweaker/API/block/BlockBuilder)
 
 ```zenscript
+BlockBuilder.withoutDrops() as BlockBuilder
 myBlockBuilder.withoutDrops();
 ```
-
 ### withoutMovementBlocking
 
-Instructs CoT that this block will does not block movement. 也会将方块设置为 [mods.contenttweeper.block.BlockBuilder#notSolid()](/mods/contenttweaker/API/block/BlockBuilder/#notsolid)
+Instructs CoT that this block will does not block movement. Will also set the block as [this](.)#notSolid()
 
- Returns: `This builder, used for chaining`
-
-返回类型： [mods.contenttweeper.block.BlockBuilder](/mods/contenttweaker/API/block/BlockBuilder)
+Return Type: [BlockBuilder](/mods/contenttweaker/API/block/BlockBuilder)
 
 ```zenscript
+BlockBuilder.withoutMovementBlocking() as BlockBuilder
 myBlockBuilder.withoutMovementBlocking();
 ```
-
 
