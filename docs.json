@@ -265,6 +265,7 @@
       "World": {
         "IBlockAccess": "Vanilla/World/IBlockAccess.md",
         "IBlockPos": "Vanilla/World/IBlockPos.md",
+        "IExplosion": "Vanilla/World/IExplosion.md",
         "IFacing": "Vanilla/World/IFacing.md",
         "IRayTraceResult": "Vanilla/World/IRayTraceResult.md",
         "IVector3d": "Vanilla/World/IVector3d.md",
