@@ -8,7 +8,7 @@
 
 ```zenscript
 //<recipetype:thermal:numismatic_fuel>.addFuel(String name, IIngredient ingredient, int energy);
-<recipetype:thermal:numismatic_fuel>.addFuel("lapidary_test", <item:minecraft:dirt>, 1000);
+<recipetype:thermal:numismatic_fuel>.addFuel("numismatic_test", <item:minecraft:dirt>, 1000);
 ```
 
 ## Remove Fuel
