@@ -14,6 +14,6 @@
 ## Removal
 
 ```zenscript
-//<recipetype:thermal:chiller>.removeRecipe(IItemStack output);
+//<recipetype:thermal:chiller>.removeRecipe(IItemStack... output);
 <recipetype:thermal:chiller>.removeRecipe(<item:minecraft:ice>);
 ```
