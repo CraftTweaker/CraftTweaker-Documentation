@@ -37,7 +37,26 @@
         "Tree Stump": "mods/StoneAge/TreeStumpManager.md"
       },
       "Thermal Series": {
-        "Redstone Furnace": "mods/ThermalSeries/Redstone_Furnace.md"
+        "Dynamos": {
+          "Compression Dynamo": "mods/ThermalSeries/Dynamos/Compression_Dynamo.md",
+          "Lapidary Dynamo": "mods/ThermalSeries/Dynamos/Lapidary_Dynamo.md",
+          "Magmatic Dynamo": "mods/ThermalSeries/Dynamos/Magmatic_Dynamo.md",
+          "Numismatic Dynamo": "mods/ThermalSeries/Dynamos/Numismatic_Dynamo.md",
+          "Stirling Dynamo": "mods/ThermalSeries/Dynamos/Stirling_Dynamo.md"
+          },
+        "Alchemical Imbuer": "mods/ThermalSeries/Alchemical_Imbuer.md",
+        "Blast Chiller": "mods/ThermalSeries/Blast_Chiller.md",
+        "Centrifugal Separator": "mods/ThermalSeries/Centrifugal_Separator.md",
+        "Fluid Encapsulator": "mods/ThermalSeries/Fluid_Encapsulator.md",
+        "Fractionating Still (Refinery)": "mods/ThermalSeries/Fractionating_Still.md",
+        "Induction Smelter": "mods/ThermalSeries/Induction_Smelter.md",
+        "Magma Crucible": "mods/ThermalSeries/Magma_Crucible.md",
+        "Multiservo Press": "mods/ThermalSeries/Multiservo_Press.md",
+        "Phytogenic Insolator": "mods/ThermalSeries/Phytogenic_Insolator.md",
+        "Pulverizer": "mods/ThermalSeries/Pulverizer.md",
+        "Pyrolyzer": "mods/ThermalSeries/Pyrolyzer.md",
+        "Redstone Furnace": "mods/ThermalSeries/Redstone_Furnace.md",
+        "Sawmill": "mods/ThermalSeries/Sawmill.md"
       }
     }
   }
