@@ -17,3 +17,23 @@
 //<recipetype:thermal:smelter>.removeRecipe(IItemStack... output);
 <recipetype:thermal:smelter>.removeRecipe(<item:minecraft:diamond>, <item:thermal:rich_slag>);
 ```
+
+# Catalysts
+
+## Package
+
+`mods.thermal.SmelterCatalyst`
+
+## Catalyst Addition
+
+```zenscript
+//<recipetype:thermal:smelter_catalyst>.addCatalyst(String name, IIngredient ingredient, float primaryMod, float secondaryMod, float energyMod, float minChance, float useChance);
+<recipetype:thermal:smelter_catalyst>.addCatalyst("smelter_catalyst_test", <item:minecraft:diamond>, 5, 5, 0, 0.1, 30);
+```
+## Catalyst Removal
+
+```zenscript
+//<recipetype:thermal:smelter_catalyst>.removeCatalyst(IItemStack input);
+<recipetype:thermal:smelter_catalyst>.removeCatalyst(<item:minecraft:sand>);
+```
+
