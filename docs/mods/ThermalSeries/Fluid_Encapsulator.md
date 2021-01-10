@@ -14,6 +14,6 @@
 ## Removal
 
 ```zenscript
-//<recipetype:thermal:bottler>.removeRecipe(IItemStack output);
+//<recipetype:thermal:bottler>.removeRecipe(IItemStack... output);
 <recipetype:thermal:bottler>.removeRecipe(<item:minecraft:honey_bottle>);
 ```
