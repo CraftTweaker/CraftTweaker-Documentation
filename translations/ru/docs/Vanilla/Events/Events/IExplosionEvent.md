@@ -8,10 +8,11 @@ It might be required to [import](/AdvancedFunctions/Import/) the class to avoid 
 
 ## Геттеры
 
-| name     | type                                   |
-| -------- | -------------------------------------- |
-| world    | [IWorld](/Vanilla/World/IWorld/)       |
-| position | [IBlockPos](/Vanilla/World/IBlockPos/) |
-| x        | double                                 |
-| y        | double                                 |
-| z        | double                                 |
+| name      | type                                    |
+| --------- | --------------------------------------- |
+| world     | [IWorld](/Vanilla/World/IWorld/)        |
+| explosion | [IExplosion](/Vanilla/World/IExplosion) |
+| position  | [IBlockPos](/Vanilla/World/IBlockPos/)  |
+| x         | double                                  |
+| y         | double                                  |
+| z         | double                                  |
