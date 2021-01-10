@@ -14,6 +14,6 @@
 ## Removal
 
 ```zenscript
-//<recipetype:thermal:furnace>.removeRecipe(IItemStack output);
+//<recipetype:thermal:furnace>.removeRecipe(IItemStack... output);
 <recipetype:thermal:furnace>.removeRecipe(<item:minecraft:gold_ore>);
 ```
