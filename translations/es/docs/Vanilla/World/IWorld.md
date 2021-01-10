@@ -109,3 +109,35 @@ Obtiene el ItemStack que se obtendría escogiendo el bloque en la posición.
 ```zenscript
 worldObj.getPickedBlock(IBlockPos pos, IRayTraceResult rayTraceResult, IPlayer player);
 ```
+
+### Create an explosion object
+
+Use an [IEntity](/Vanilla/Entities/IEntity/), three doubles, a float, and two booleans. Returns an [IExplosion](/Vanilla/World/IExplosion/).
+
+Creates an IExplosion in the world at the given coordinates. The explosion will have the specified placer (can be null), as well as the size of the explosion and whether it should cause fire and/or cause terrain damage, respectively.
+
+```zenscript
+worldObj.createExplosion(IEntity exploder, double x, double y, double z, float size, bool causesFire, bool damagesTerrain);
+```
+
+### Perform an explosion in the world
+
+#### Create & perform in the same method
+
+Use an [IEntity](/Vanilla/Entities/IEntity/), three doubles, a float, and two booleans. Returns the created and performed [IExplosion](/Vanilla/World/IExplosion/).
+
+Creates and performs an IExplosion in the world at the given coordinates. The explosion will have the specified placer (can be null), as well as the size of the explosion and whether it should cause fire and/or cause terrain damage, respectively.
+
+```zenscript
+worldObj.performExplosion(IEntity exploder, double x, double y, double z, float size, bool causesFire, bool damagesTerrain);
+```
+
+#### Only perform an existing explosion
+
+Use an [IExplosion](/Vanilla/World/IExplosion/). Returns the performed [IExplosion](/Vanilla/World/IExplosion/).
+
+Performs the IExplosion in the world.
+
+```zenscript
+worldObj.performExplosion(IExplosion explosion);
+```
