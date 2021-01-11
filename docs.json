@@ -29,6 +29,9 @@
       "JEITweaker": {
         "JEITweaker": "mods/JEITweaker/JEITweaker.md"
       },
+      "RecipeStages": {
+        "RecipeStages": "mods/RecipeStages/RecipeStages.md"
+      },
       "StoneAge": {
         "Drying Rack": "mods/StoneAge/DryingRackManager.md",
         "Flint Workbench": "mods/StoneAge/FlintWorkbenchManager.md",
