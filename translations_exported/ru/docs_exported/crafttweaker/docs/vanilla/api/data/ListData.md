@@ -27,9 +27,10 @@ No Description Provided
 ```zenscript
 new ListData(list as stdlib.List<IData>) as ListData
 ```
-| Параметр | Тип                                                             | Description             | Optional | DefaultValue |
-| -------- | --------------------------------------------------------------- | ----------------------- | -------- | ------------ |
-| list     | stdlib.List&lt;[IData](/vanilla/api/data/IData)&gt; | No Description Provided | true     |              |
+| Параметр | Тип                                                             | Description             |
+| -------- | --------------------------------------------------------------- | ----------------------- |
+| list     | stdlib.List&lt;[IData](/vanilla/api/data/IData)&gt; | No Description Provided |
+
 
 ## Утилиты
 
