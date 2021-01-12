@@ -27,9 +27,10 @@ No Description Provided
 ```zenscript
 new ListData(list as stdlib.List<IData>) as ListData
 ```
-| 参数   | 类型                                                              | 描述                      | 可选   | DefaultValue |
-| ---- | --------------------------------------------------------------- | ----------------------- | ---- | ------------ |
-| list | stdlib.List&lt;[IData](/vanilla/api/data/IData)&gt; | No Description Provided | true |              |
+| 参数   | 类型                                                              | 描述                      |
+| ---- | --------------------------------------------------------------- | ----------------------- |
+| list | stdlib.List&lt;[IData](/vanilla/api/data/IData)&gt; | No Description Provided |
+
 
 ## Casters
 
