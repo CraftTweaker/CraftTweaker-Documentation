@@ -1,9 +1,5 @@
 # Blast Chiller
 
-## Package
-
-`mods.thermal.Chiller`
-
 ## Addition
 
 ```zenscript
