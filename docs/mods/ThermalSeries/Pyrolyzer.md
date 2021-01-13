@@ -1,9 +1,5 @@
 # Pyrolyzer
 
-## Package
-
-`mods.thermal.Pyrolyzer`
-
 ## Addition
 
 ```zenscript
