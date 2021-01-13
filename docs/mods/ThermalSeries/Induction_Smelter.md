@@ -1,9 +1,5 @@
 # Induction Smelter
 
-## Package
-
-`mods.thermal.Smelter`
-
 ## Addition
 
 ```zenscript
