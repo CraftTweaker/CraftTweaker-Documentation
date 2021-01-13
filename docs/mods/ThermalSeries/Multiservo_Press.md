@@ -1,9 +1,5 @@
 # Multiservo Press
 
-## Package
-
-`mods.thermal.Press`
-
 ## Addition
 
 ```zenscript
