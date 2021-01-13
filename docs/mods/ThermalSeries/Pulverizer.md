@@ -1,9 +1,5 @@
 # Pulverizer
 
-## Package
-
-`mods.thermal.Pulverizer`
-
 ## Addition
 
 ```zenscript
@@ -19,10 +15,6 @@
 ```
 
 # Catalysts
-
-## Package
-
-`mods.thermal.PulverizerCatalyst`
 
 ## Catalyst Addition
 
