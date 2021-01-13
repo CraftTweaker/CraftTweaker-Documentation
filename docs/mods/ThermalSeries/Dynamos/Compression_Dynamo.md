@@ -1,9 +1,5 @@
 # Compression Dynamo
 
-## Package
-
-`mods.thermal.CompressionFuel`
-
 ## Add Fuel
 
 ```zenscript
