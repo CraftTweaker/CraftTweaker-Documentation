@@ -1,9 +1,5 @@
 # Phytogenic Insolator
 
-## Package
-
-`mods.thermal.Insolator`
-
 ## Addition
 
 ```zenscript
@@ -19,10 +15,6 @@
 ```
 
 # Catalysts
-
-## Package
-
-`mods.thermal.InsolatorCatalyst`
 
 ## Catalyst Addition
 
