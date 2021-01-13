@@ -1,9 +1,5 @@
 # Centrifugal Separator
 
-## Package
-
-`mods.thermal.Centrifuge`
-
 ## Addition
 
 ```zenscript
