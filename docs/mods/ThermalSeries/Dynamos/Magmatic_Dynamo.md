@@ -1,9 +1,5 @@
 # Magmatic Dynamo
 
-## Package
-
-`mods.thermal.MagmaticFuel`
-
 ## Add Fuel
 
 ```zenscript
