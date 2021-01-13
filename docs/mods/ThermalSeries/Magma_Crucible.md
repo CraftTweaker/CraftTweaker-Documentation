@@ -1,9 +1,5 @@
 # Magma Crucible
 
-## Package
-
-`mods.thermal.Crucible`
-
 ## Addition
 
 ```zenscript
