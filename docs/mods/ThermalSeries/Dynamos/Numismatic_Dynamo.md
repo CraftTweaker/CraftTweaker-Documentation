@@ -1,9 +1,5 @@
 # Numismatic Dynamo
 
-## Package
-
-`mods.thermal.NumismaticFuel`
-
 ## Add Fuel
 
 ```zenscript
