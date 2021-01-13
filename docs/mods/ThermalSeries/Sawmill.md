@@ -1,9 +1,5 @@
 # Sawmill
 
-## Package
-
-`mods.thermal.Sawmill`
-
 ## Addition
 
 ```zenscript
