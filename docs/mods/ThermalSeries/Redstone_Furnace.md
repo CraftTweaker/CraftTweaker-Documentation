@@ -1,9 +1,5 @@
 # Redstone Furnace
 
-## Package
-
-`mods.thermal.Furnace`
-
 ## Addition
 
 ```zenscript
