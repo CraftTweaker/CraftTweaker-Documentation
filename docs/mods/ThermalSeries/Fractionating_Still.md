@@ -1,9 +1,5 @@
 # Fractionating Still
 
-## Package
-
-`mods.thermal.Refinery`
-
 ## Addition
 
 ```zenscript
