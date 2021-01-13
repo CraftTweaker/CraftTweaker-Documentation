@@ -1,9 +1,5 @@
 # Lapidary Dynamo
 
-## Package
-
-`mods.thermal.LapidaryFuel`
-
 ## Add Fuel
 
 ```zenscript
