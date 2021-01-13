@@ -1,9 +1,5 @@
 # Alchemical Imbuer
 
-## Package
-
-`mods.thermal.Brewer`
-
 ## Addition
 
 ```zenscript
