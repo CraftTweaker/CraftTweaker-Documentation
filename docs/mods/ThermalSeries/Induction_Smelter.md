@@ -16,10 +16,6 @@
 
 # Catalysts
 
-## Package
-
-`mods.thermal.SmelterCatalyst`
-
 ## Catalyst Addition
 
 ```zenscript
