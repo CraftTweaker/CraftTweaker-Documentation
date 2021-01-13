@@ -1,9 +1,5 @@
 # Stirling Dynamo
 
-## Package
-
-`mods.thermal.StirlingFuel`
-
 ## Add Fuel
 
 ```zenscript
