@@ -1,9 +1,5 @@
 # Fluid Encapsulator
 
-## Package
-
-`mods.thermal.Bottler`
-
 ## Addition
 
 ```zenscript
