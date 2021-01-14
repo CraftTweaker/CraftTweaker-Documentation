@@ -20,10 +20,14 @@ nav:
         On Preprocessors: 'AdvancedFunctions/Preprocessors/On_Preprocessors.md'
         Debug: 'AdvancedFunctions/Preprocessors/DebugPreprocessor.md'
         Ignore Bracket Errors: 'AdvancedFunctions/Preprocessors/IgnoreBracketErrorPreprocessor.md'
+        IKWID: 'AdvancedFunctions/Preprocessors/IKWIDPreprocessor.md'
         Loader: 'AdvancedFunctions/Preprocessors/LoaderPreprocessor.md'
         Mod Loaded: 'AdvancedFunctions/Preprocessors/ModLoadedPreprocessor.md'
         No Run: 'AdvancedFunctions/Preprocessors/NoRunPreprocessor.md'
+        No Warn: 'AdvancedFunctions/Preprocessors/NoWarnPreprocessor.md'
         Priority: 'AdvancedFunctions/Preprocessors/PriorityPreprocessor.md'
+        Profile: 'AdvancedFunctions/Preprocessors/ProfilePreprocessor.md'
+        SideOnly: 'AdvancedFunctions/Preprocessors/SideOnlyPreprocessor.md'
     Tips and Tricks:
         Foreword: 'Tips_Tricks/Foreword.md'
         Items:
