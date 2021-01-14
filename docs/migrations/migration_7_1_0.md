@@ -11,9 +11,10 @@ We replaced Tags with a generic system that is more extensible and will work bet
 That change will break existing scripts in two ways: 
 
 1) The specialized addition and removal methods have been removed. <br>You now use `add` and `remove` instead of `addItems`, `addFluids` and the like.
-2) The syntax of the Bracket handlers now requires the tag type as an additional parameter. <br>So `<tag:forge:gems>` becomes `<tag:item:forge:gems>`
+2) The syntax of the Bracket handlers now requires the tag type as an additional parameter. <br>So `<tag:forge:gems>` becomes `<tag:items:forge:gems>`
 
-The `/ct dump tags` and `/ct hand` commands have been updated to reflect this change.
+The `/ct dump tags` and `/ct hand` commands have been updated to reflect this change.  
+If you need to use any of IIngredient's expansion methods from an item tag, you need to call `.asIIngredient()` first.
 
 Migration example
 ```zenscript
@@ -35,6 +36,11 @@ myGemTagOld.removeItems(<item:minecraft:diamond>);
 var myGemTagNew = <tag:items:forge:gems>;
 myGemTagNew.add(<item:minecraft:bedrock>);
 myGemTagNew.remove(<item:minecraft:diamond>);
+
+
+//IIngredient expansins
+var reuseOld = <tag:forge:gems>.reuse();
+var reuseNew = <tag:items:forge:gems>.asIIngredient().reuse();
 ```
 
 
