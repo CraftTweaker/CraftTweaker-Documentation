@@ -65,6 +65,24 @@ VillagerTrades.addTrade(profession as MCVillagerProfession, villagerLevel as int
 | maxTrades | int | How many times can this trade be done. | false |  |
 | xp | int | How much Experience is given by trading. | false |  |
 | priceMult | float | When this trade is discounted, how much should it be discounted by. | true | 1.0 |
+### addWanderingTrade
+
+Adds a Wandering Trader Trade for emeralds for an Item. An example being, giving a Wandering Trader 2 emeralds for an arrow.
+
+Return Type: void
+
+```zenscript
+VillagerTrades.addWanderingTrade(rarity as int, emeralds as int, forSale as ItemStack, maxTrades as int, xp as int) as void
+villagerTrades.addWanderingTrade(1, 16, <item:minecraft:diamond>, 16, 2);
+```
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| rarity | int | The rarity of the Trade. Valid options are `1` or `2`. A Wandering Trader can only spawn with a single trade of rarity `2`. |
+| emeralds | int | The amount of Emeralds. |
+| forSale | [ItemStack](/vanilla/api/item/ItemStack) | What Itemstack is being sold (by the Wandering Trader). |
+| maxTrades | int | How many times can this trade be done. |
+| xp | int | How much Experience is given by trading. |
+
 ### removeDyedArmorForEmeraldsTrade
 
 Removes a Villager trade for Items for Dyed leather armor. An example being, giving a villager a diamond and getting a Blue Dyed Leather clestplate.
@@ -207,5 +225,20 @@ villagerTrades.removeSuspiciousStewForEmeraldTrade(<profession:minecraft:farmer>
 |-----------|------|-------------|
 | profession | [MCVillagerProfession](/vanilla/api/villager/MCVillagerProfession) | What profession this trade should be for. |
 | villagerLevel | int | The level the Villager needs to be. |
+
+### removeWanderingTrade
+
+Removes a Wandering Trader trade for Emeralds for Items. An example being, giving a Wandering Trader  2 Emaralds for an Arrow.
+
+Return Type: void
+
+```zenscript
+VillagerTrades.removeWanderingTrade(rarity as int, tradeFor as IItemStack) as void
+villagerTrades.removeWanderingTrade(2, <item:minecraft:arrow>);
+```
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| rarity | int | The rarity of the Trade. Valid options are `1` or `2`. A Wandering Trader can only spawn with a single trade of rarity `2`. |
+| tradeFor | [IItemStack](/vanilla/api/items/IItemStack) | What Itemstack is being sold (by the Villager). |
 
 
