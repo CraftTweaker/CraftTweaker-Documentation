@@ -15,3 +15,9 @@
 ```zenscript
 <recipetype:exnihilosequentia:hammer>.create("hammer_test").setInput(<item:minecraft:cobblestone>).addOutput(<item:minecraft:gravel>).addOutput(<item:minecraft:diamond>, 0.01);
 ```
+
+## Addition
+
+```zenscript
+<recipetype:exnihilosequentia:hammer>.removeAll();
+```
