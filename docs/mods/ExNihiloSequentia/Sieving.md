@@ -6,7 +6,7 @@
 ## Methods
 - **create(String name)** 
 - **setInput(IIngredient input)** the block that drops the output
-- **addDrop((IItemStack drop, float chance))** the item that drops from the block
+- **addDrop(IItemStack drop)** the item that drops from the block
 - **addRoll(String mesh, float chance)** the sieve mesh and its chance
 - **setWaterlogged()** if the sieve must be waterlogged for the recipe
 
