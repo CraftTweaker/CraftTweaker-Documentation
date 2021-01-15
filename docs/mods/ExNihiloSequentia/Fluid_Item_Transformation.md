@@ -13,7 +13,7 @@
 ## Addition
 
 ```zenscript
-<recipetype:exnihilosequentia:fluid_item>.create("fluiditem_test").setFluidInTank(<fluid:minecraft:water>).setInputItem(<item:minecraft:diamond>).setResult(<item:minecraft:dirt>);
+<recipetype:exnihilosequentia:fluid_item>.create("fluid_item_test").setFluidInTank(<fluid:minecraft:water>).setInputItem(<item:minecraft:diamond>).setResult(<item:minecraft:dirt>);
 ```
 
 ## Removal
