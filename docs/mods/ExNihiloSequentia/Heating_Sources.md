@@ -15,3 +15,9 @@
 ```zenscript
 <recipetype:exnihilosequentia:heat>.create("heat_test").setBlock(<block:minecraft:cobblestone>).setAmount(100);
 ```
+
+## Removal
+
+```zenscript
+<recipetype:exnihilosequentia:heat>.removeAll();
+```
