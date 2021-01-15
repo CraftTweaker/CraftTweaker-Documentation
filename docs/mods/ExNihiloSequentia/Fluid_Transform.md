@@ -1,4 +1,4 @@
-# Barrel Fluid Transforming
+# Fluid Transform
 
 ## Package
 `import mods.exnihilosequentia.ZenFluidTransformRecipe;`
