@@ -15,7 +15,7 @@
 <recipetype:exnihilosequentia:compost>.create("compost_test").setInput(<item:minecraft:oak_leaves>).setAmount(100);
 ```
 
-## Addition
+## Removal
 
 ```zenscript
 <recipetype:exnihilosequentia:compost>.removeRecipe(<item:minecraft:melon_slice>);
