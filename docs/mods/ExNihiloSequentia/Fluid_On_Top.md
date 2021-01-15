@@ -1,4 +1,4 @@
-# Barrel Fluid on Top
+# Fluid On Top
 
 ## Package
 `import mods.exnihilosequentia.ZenFluidOnTopRecipe;`
