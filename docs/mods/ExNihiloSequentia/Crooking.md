@@ -6,7 +6,7 @@
 ## Methods
 - **create(String name)** 
 - **setInput(IIngredient input)** the input
-- **addDrop(IItemStack drop, float chance)** the item that drops and its chance
+- **addDrop(IItemStack drop, float chance)** the item that drops and its chance to drop
 
 
 ## Addition
