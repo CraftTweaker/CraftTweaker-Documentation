@@ -1,4 +1,4 @@
-# Barrel Fluid to Item
+# Barrel Fluid Item Transformation
 
 ## Package
 `import mods.exnihilosequentia.ZenFluidItemRecipe;`
@@ -14,4 +14,10 @@
 
 ```zenscript
 <recipetype:exnihilosequentia:fluid_item>.create("fluidtoitem_test").setFluidInTank(<fluid:minecraft:water>).setInputItem(<item:minecraft:diamond>).setResult(<item:minecraft:dirt>);
+```
+
+## Removal
+
+```zenscript
+<recipetype:exnihilosequentia:fluid_item>.removeRecipe(<item:minecraft:brain_coral_block>);
 ```
