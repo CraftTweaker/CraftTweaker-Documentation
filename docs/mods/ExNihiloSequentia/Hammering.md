@@ -7,7 +7,7 @@
 - **create(String name)** 
 - **setInput(IIngredient input)** the block that needs to be broken
 - **addOutput(IItemStack drop)** the item the block drops when broken
-- **addOutput(IItemStack drop, float chance)** the other item the blocks drops when broken and its chance
+- **addOutput(IItemStack drop, float chance)** the other item the blocks drops when broken and its chance to drop
 
 
 ## Addition
