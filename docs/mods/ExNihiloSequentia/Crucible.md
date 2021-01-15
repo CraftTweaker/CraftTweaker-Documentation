@@ -6,9 +6,9 @@
 ## Methods
 - **create(String name)** 
 - **setInput(IIngredient input)** the input
-- **setAmount(int amount)** amount of fluid produced
-- **setCrucibleType(String crucibleType)** crucible type
-- **setResultFluid(IFluidStack fluid)** resulting fluid
+- **setAmount(int amount)** the amount of fluid produced
+- **setCrucibleType(String crucibleType)** the crucible type
+- **setResultFluid(IFluidStack fluid)** the resulting fluid
 
 
 ## Addition
