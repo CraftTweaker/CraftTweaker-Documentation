@@ -6,7 +6,7 @@
 ## Methods
 - **create(String name)** 
 - **setFluidInTank(IFluidStack fluidInTank)** the fluid in the tank
-- **setCatalyst(IIngredient catalyst)** block to be placed below or item to be inserted
+- **setCatalyst(IIngredient catalyst)** the item to be inserted
 - **setResult(IFluidStack result)** the result of the recipe
 
 
