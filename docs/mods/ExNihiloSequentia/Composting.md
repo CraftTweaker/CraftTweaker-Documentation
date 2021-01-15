@@ -6,7 +6,7 @@
 ## Methods
 - **create(String name)** 
 - **setInput(IIngredient input)** the input
-- **setAmount(int amount)** chance for an item to add a level of compost
+- **setAmount(int amount)** the chance for an item to add a level of compost
 
 
 ## Addition
