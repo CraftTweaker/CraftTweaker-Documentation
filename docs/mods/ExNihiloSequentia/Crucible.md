@@ -14,5 +14,12 @@
 ## Addition
 
 ```zenscript
-<recipetype:exnihilosequentia:heat>.create("heat_test").setBlock(<block:minecraft:cobblestone>).setAmount(100);
+<recipetype:exnihilosequentia:crucible>.create("crucible_test").setInput(<item:minecraft:cobblestone>).setAmount(100).setCrucibleType("fired").setResutFluid(<fluid:minecraft:lava>);
 ```
+
+## Removal
+
+```zenscript
+<recipetype:exnihilosequentia:crucible>.removeAll();
+```
+
