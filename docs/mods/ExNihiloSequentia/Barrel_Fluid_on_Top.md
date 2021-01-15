@@ -15,3 +15,9 @@
 ```zenscript
 <recipetype:exnihilosequentia:fluid_on_top>.create("fluidontop_test").setFluidInTank(<fluid:minecraft:lava>).setFluidOnTop(<fluid:minecraft:water>).setResult(<item:minecraft:netherrack>);
 ```
+
+## Removal
+
+```zenscript
+<recipetype:exnihilosequentia:fluid_on_top>.removeRecipe(<item:minecraft:obsidian>);
+```
