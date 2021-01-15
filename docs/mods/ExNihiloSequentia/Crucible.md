@@ -14,7 +14,7 @@
 ## Addition
 
 ```zenscript
-<recipetype:exnihilosequentia:crucible>.create("crucible_test").setInput(<item:minecraft:cobblestone>).setAmount(100).setCrucibleType("fired").setResutFluid(<fluid:minecraft:lava>);
+<recipetype:exnihilosequentia:crucible>.create("crucible_test").setInput(<item:minecraft:cobblestone>).setAmount(100).setCrucibleType("fired").setResultFluid(<fluid:minecraft:lava>);
 ```
 
 ## Removal
