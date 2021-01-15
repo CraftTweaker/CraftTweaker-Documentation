@@ -20,6 +20,17 @@
       "Botany Pots": {
         "Botany Pots": "mods/BotanyPots/BotanyPots.md"
       },
+      "Ex Nihilo Sequentia": {
+        "Composting": "mods/ExNihiloSequentia/Composting.md",
+        "Crooking": "mods/ExNihiloSequentia/Crooking.md",
+        "Crucible": "mods/ExNihiloSequentia/Crucible.md",
+        "Fluid Item Transformation": "mods/ExNihiloSequentia/Fluid_Item_Transformation.md",
+        "Fluid On Top": "mods/ExNihiloSequentia/Fluid_On_Top.md",
+        "Fluid Transform": "mods/ExNihiloSequentia/Fluid_Transform.md",
+        "Hammering": "mods/ExNihiloSequentia/Hammering.md",
+        "Heating Sources": "mods/ExNihiloSequentia/Heating_Sources.md",
+        "Sieving": "mods/ExNihiloSequentia/Sieving.md"
+      },
       "ContentTweaker": {
         "Simple Walkthrough": "mods/contenttweaker/SimpleWalkthrough.md"
       },
