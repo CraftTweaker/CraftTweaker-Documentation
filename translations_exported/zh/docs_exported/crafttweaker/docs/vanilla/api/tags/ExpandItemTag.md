@@ -32,7 +32,7 @@ Return Type: [IData](/vanilla/api/data/IData)
 
 ```zenscript
 MCTag.asIData() as IData
-myMCTag.asIData();
+<tag:items:forge:gems>.asIData();
 ```
 ### asIIngredient
 
@@ -40,6 +40,6 @@ Return Type: [IIngredient](/vanilla/api/items/IIngredient)
 
 ```zenscript
 MCTag.asIIngredient() as IIngredient
-myMCTag.asIIngredient();
+<tag:items:forge:gems>.asIIngredient();
 ```
 
