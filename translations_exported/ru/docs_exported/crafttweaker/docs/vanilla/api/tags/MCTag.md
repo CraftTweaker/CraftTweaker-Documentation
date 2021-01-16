@@ -26,23 +26,30 @@ MCTag implements the following interfaces. That means all methods defined in the
 
 ### add
 
+Adds the given items to the tag. Creates the tag if it does not exist.
+
 Return Type: void
 
 ```zenscript
 MCTag.add(items as stdlib.List<T>) as void
 ```
-| Параметр | Тип                              | Description             |
-| -------- | -------------------------------- | ----------------------- |
-| items    | stdlib.List&lt;T&gt; | No Description Provided |
+| Параметр | Тип                              | Description                         |
+| -------- | -------------------------------- | ----------------------------------- |
+| items    | stdlib.List&lt;T&gt; | The items to add. Provided as list. |
+
+Adds the given items to the tag. Creates the tag if it does not exist.
 
 Return Type: void
 
 ```zenscript
 MCTag.add(items as T[]) as void
+<tag:items:forge:gems>.add(<item:minecraft:bedrock>);
+<tag:items:forge:gems>.add(<item:minecraft:iron_ingot>, <item:minecraft:gold_ingot>);
+<tag:items:forge:gems>.add([<item:minecraft:iron_ingot>, <item:minecraft:gold_ingot>]);
 ```
-| Параметр | Тип | Description             |
-| -------- | --- | ----------------------- |
-| items    | T[] | No Description Provided |
+| Параметр | Тип | Description                                 |
+| -------- | --- | ------------------------------------------- |
+| items    | T[] | The items to add. Can be one or more items. |
 
 ### contains
 
@@ -61,7 +68,7 @@ Return Type: boolean
 
 ```zenscript
 MCTag.exists() as boolean
-myMCTag.exists();
+<tag:items:forge:gems>.exists();
 ```
 ### getElements
 
@@ -69,7 +76,7 @@ Return Type: stdlib.List&lt;T&gt;
 
 ```zenscript
 MCTag.getElements() as stdlib.List<T>
-myMCTag.getElements();
+<tag:items:forge:gems>.getElements();
 ```
 ### getId
 
@@ -77,7 +84,7 @@ Return Type: [MCResourceLocation](/vanilla/api/util/MCResourceLocation)
 
 ```zenscript
 MCTag.getId() as MCResourceLocation
-myMCTag.getId();
+<tag:items:forge:gems>.getId();
 ```
 ### getManager
 
@@ -85,7 +92,7 @@ Return Type: [TagManager](/vanilla/api/tags/TagManager)&lt;T&gt;
 
 ```zenscript
 MCTag.getManager() as TagManager<T>
-myMCTag.getManager();
+<tag:items:forge:gems>.getManager();
 ```
 ### remove
 
