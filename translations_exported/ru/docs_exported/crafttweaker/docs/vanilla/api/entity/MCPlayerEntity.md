@@ -115,6 +115,17 @@ Return Type: boolean
 MCPlayerEntity.isUser() as boolean
 myMCPlayerEntity.isUser();
 ```
+### sendMessage
+
+Return Type: void
+
+```zenscript
+MCPlayerEntity.sendMessage(text as MCTextComponent) as void
+```
+| Параметр | Тип                                                                 | Description             |
+| -------- | ------------------------------------------------------------------- | ----------------------- |
+| текст    | [Компонент MCTextcomponent](/vanilla/api/util/text/MCTextComponent) | No Description Provided |
+
 ### unlockRecipes
 
 Return Type: void
