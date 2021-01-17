@@ -20,6 +20,9 @@
       "Botany Pots": {
         "Botany Pots": "mods/BotanyPots/BotanyPots.md"
       },
+      "ContentTweaker": {
+        "Simple Walkthrough": "mods/contenttweaker/SimpleWalkthrough.md"
+      },
       "Ex Nihilo Sequentia": {
         "Composting": "mods/ExNihiloSequentia/Composting.md",
         "Crooking": "mods/ExNihiloSequentia/Crooking.md",
@@ -30,9 +33,6 @@
         "Hammering": "mods/ExNihiloSequentia/Hammering.md",
         "Heating Sources": "mods/ExNihiloSequentia/Heating_Sources.md",
         "Sieving": "mods/ExNihiloSequentia/Sieving.md"
-      },
-      "ContentTweaker": {
-        "Simple Walkthrough": "mods/contenttweaker/SimpleWalkthrough.md"
       },
       "InitialInventory": {
         "InitialInventory": "mods/InitialInventory/InitialInventory.md"
