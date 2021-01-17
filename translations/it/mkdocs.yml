@@ -1,4 +1,4 @@
-# If you add a page, you must add it to the index here
+# Se viene aggiunta una pagina, deve essere aggiunta anche in questo indice
 nav:
     Home: 'index.md'
     Getting Started With Scripts: 'Getting_Started.md'
