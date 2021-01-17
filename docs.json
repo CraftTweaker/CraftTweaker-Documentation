@@ -17,6 +17,13 @@
       }
     },
     "Mods": {
+      "Blood Magic": {
+        "Alchemical Reaction Chamber": "mods/BloodMagic/AlchemicalReactionChamber.md",
+        "Alchemy Array": "mods/BloodMagic/AlchemyArray.md",
+        "Alchemy Table": "mods/BloodMagic/AlchemyTable.md",
+        "Blood Altar": "mods/BloodMagic/BloodAltar.md",
+        "Tartaric Forge": "mods/BloodMagic/TartaricForge.md"
+      },
       "Botany Pots": {
         "Botany Pots": "mods/BotanyPots/BotanyPots.md"
       },
