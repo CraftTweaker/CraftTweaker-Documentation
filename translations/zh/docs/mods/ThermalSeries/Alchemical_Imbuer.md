@@ -10,6 +10,6 @@
 ## Removal
 
 ```zenscript
-//<recipetype:thermal:furnace>.removeRecipe(IFluidStack output);
+//<recipetype:thermal:brewer>.removeRecipe(IFluidStack output);
 <recipetype:thermal:brewer>.removeRecipe(<fluid:minecraft:water>);
 ```
