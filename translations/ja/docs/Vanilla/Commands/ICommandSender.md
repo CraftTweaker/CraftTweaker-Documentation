@@ -19,10 +19,18 @@ It might be required for you to import the package if you encounter any issues (
 
 ## ZenMethods
 
-#### Send Message
+### Send Message
 
-Takes a String. Returns void (nothing).
+Takes a String Returns void (nothing).
 
 ```zenscript
 sender.sendMessage(String text);
+```
+
+### Send Rich Text Message
+
+Takes an [ITextComponent](/Vanilla/Text/ITextComponent/) Returns void (nothing).
+
+```zenscript
+sender.sendRichTextMessage(ITextComponent textComponent);
 ```
