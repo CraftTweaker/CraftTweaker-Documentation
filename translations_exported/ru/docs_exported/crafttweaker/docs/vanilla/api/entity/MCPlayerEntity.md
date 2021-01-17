@@ -75,6 +75,14 @@ Return Type: boolean
 MCPlayerEntity.isCreative() as boolean
 myMCPlayerEntity.isCreative();
 ```
+### isFake
+
+Return Type: boolean
+
+```zenscript
+MCPlayerEntity.isFake() as boolean
+myMCPlayerEntity.isFake();
+```
 ### isPushedByWater
 
 Return Type: boolean
@@ -145,4 +153,10 @@ Return Type: void
 MCPlayerEntity.wakeUp() as void
 myMCPlayerEntity.wakeUp();
 ```
+
+## Свойства
+
+| Название | Тип     | Имеет Getter | Имеет Setter |
+| -------- | ------- | ------------ | ------------ |
+| fake     | boolean | true         | false        |
 
