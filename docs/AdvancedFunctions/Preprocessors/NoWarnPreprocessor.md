@@ -4,7 +4,7 @@ This preprocessor will make it that all logger warnings aren't printed to the pl
 
 ## Call
 
-You call the debug Preprocessor by adding `#nowarn` to your script file.
+You call the no warn Preprocessor by adding `#nowarn` to your script file.
 
 ## What it does
 

@@ -4,7 +4,7 @@ This preprocessor will make it that all logger warnings and errors aren't printe
 
 ## Call
 
-You call the debug Preprocessor by adding `#ikwid` to your script file.
+You call the IKWID Preprocessor by adding `#ikwid` to your script file.
 
 ## What it does
 

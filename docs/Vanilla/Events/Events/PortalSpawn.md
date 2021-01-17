@@ -1,6 +1,6 @@
 # PortalSpawn
 
-The PortalSpawn Event is fired when an attempt is made to spawn a nether portal from. If cancelled, the portal will not be spawned.
+The PortalSpawn Event is fired when an attempt is made to spawn a nether portal. If cancelled, the portal will not be spawned.
 
 ## Event Class
 
@@ -17,8 +17,8 @@ BlockNeighborNotify Events implement the following interfaces and are able to ca
 
 ## ZenGetters
 
-| ZenGetter | Type | Description                  |
-|-----------|------|------------------------------|
-| valid     | bool |If the size of portal is valid|
-| height    | int  |The height of portal          |
-| width     | int  |The width of portal           |
+| ZenGetter | Type | Description                    |
+|-----------|------|--------------------------------|
+| valid     | bool | If the size of portal is valid |
+| height    | int  | The height of portal           |
+| width     | int  | The width of portal            |
