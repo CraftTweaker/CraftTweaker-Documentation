@@ -30,6 +30,7 @@ new BlockPos(x as int, y as int, z as int) as BlockPos
 | Tipo Risultato | Implicito |
 | -------------- | --------- |
 | long           | false     |
+| string         | true      |
 
 ## Methods
 
