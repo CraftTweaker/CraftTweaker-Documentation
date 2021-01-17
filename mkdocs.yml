@@ -227,6 +227,9 @@ nav:
           Furnace Recipes: 'Vanilla/Recipes/Furnace/Recipes_Furnace.md'
           IFurnaceRecipe: 'Vanilla/Recipes/Furnace/IFurnaceRecipe.md'
         Seed Drops: 'Vanilla/Recipes/Seeds.md'
+      Text:
+        IStyle: 'Vanilla/Text/IStyle.md'
+        ITextComponent: 'Vanilla/Text/ITextComponent.md'
       Tile-Entity:
         IMobSpawnerBaseLogic: 'Vanilla/TileEntity/IMobSpawnerBaseLogic.md'
       Utils:
