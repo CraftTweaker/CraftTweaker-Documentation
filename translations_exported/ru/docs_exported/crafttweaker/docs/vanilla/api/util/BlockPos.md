@@ -30,6 +30,7 @@ new BlockPos(x as int, y as int, z as int) as BlockPos
 | Тип результата | Является неявным |
 | -------------- | ---------------- |
 | long           | false            |
+| string         | true             |
 
 ## Methods
 
