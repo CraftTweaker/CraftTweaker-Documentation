@@ -13,6 +13,8 @@ You can, of course, also [import](/AdvancedFunctions/Import/) the class before a
 PlayerPickupItem Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
 
 - [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
+- [IEventHasResult](/Vanilla/Events/Events/IEventHasResult)
+- [IEventCancelable](/Vanilla/Events/Events/IEventCancelable)
 
 ## ZenGetter
 
