@@ -20,10 +20,14 @@
         "On Preprocessors": "AdvancedFunctions/Preprocessors/On_Preprocessors.md",
         "Debug": "AdvancedFunctions/Preprocessors/DebugPreprocessor.md",
         "Ignore Bracket Errors": "AdvancedFunctions/Preprocessors/IgnoreBracketErrorPreprocessor.md",
+        "IKWID": "AdvancedFunctions/Preprocessors/IKWIDPreprocessor.md",
         "Loader": "AdvancedFunctions/Preprocessors/LoaderPreprocessor.md",
         "Mod Loaded": "AdvancedFunctions/Preprocessors/ModLoadedPreprocessor.md",
         "No Run": "AdvancedFunctions/Preprocessors/NoRunPreprocessor.md",
-        "Priority": "AdvancedFunctions/Preprocessors/PriorityPreprocessor.md"
+        "No Warn": "AdvancedFunctions/Preprocessors/NoWarnPreprocessor.md",
+        "Priority": "AdvancedFunctions/Preprocessors/PriorityPreprocessor.md",
+        "Profile": "AdvancedFunctions/Preprocessors/ProfilePreprocessor.md",
+        "SideOnly": "AdvancedFunctions/Preprocessors/SideOnlyPreprocessor.md"
       }
     },
     "Tips and Tricks": {
@@ -123,6 +127,7 @@
           "AnimalTameEvent": "Vanilla/Events/Events/AnimalTame.md",
           "BlockBreakEvent": "Vanilla/Events/Events/BlockBreak.md",
           "BlockHarvestDropsEvent": "Vanilla/Events/Events/BlockHarvestDrops.md",
+          "BlockNeighborNotifyEvent": "Vanilla/Events/Events/BlockNeighborNotify.md",
           "BlockPlaceEvent": "Vanilla/Events/Events/BlockPlace.md",
           "ClientTickEvent": "Vanilla/Events/Events/ClientTick.md",
           "CommandEvent": "Vanilla/Events/Events/CommandEvent.md",
@@ -186,6 +191,7 @@
           "PlayerTickEvent": "Vanilla/Events/Events/PlayerTick.md",
           "PlayerUseHoeEvent": "Vanilla/Events/Events/PlayerUseHoe.md",
           "PlayerVisibilityEvent": "Vanilla/Events/Events/PlayerVisibility.md",
+          "PortalSpawnEvent": "Vanilla/Events/Events/PortalSpawn.md",
           "PotionBrewPostEvent": "Vanilla/Events/Events/PotionBrewPost.md",
           "PotionBrewPreEvent": "Vanilla/Events/Events/PotionBrewPre.md",
           "ProjectileImpactArrowEvent": "Vanilla/Events/Events/ProjectileImpactArrow.md",
@@ -246,6 +252,10 @@
           "IFurnaceRecipe": "Vanilla/Recipes/Furnace/IFurnaceRecipe.md"
         },
         "Seed Drops": "Vanilla/Recipes/Seeds.md"
+      },
+      "Text": {
+        "IStyle": "Vanilla/Text/IStyle.md",
+        "ITextComponent": "Vanilla/Text/ITextComponent.md"
       },
       "Tile-Entity": {
         "IMobSpawnerBaseLogic": "Vanilla/TileEntity/IMobSpawnerBaseLogic.md"
