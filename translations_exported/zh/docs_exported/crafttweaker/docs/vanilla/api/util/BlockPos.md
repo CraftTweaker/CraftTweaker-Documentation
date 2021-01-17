@@ -27,9 +27,10 @@ new BlockPos(x as int, y as int, z as int) as BlockPos
 
 ## Casters
 
-| 结果类型 | 是否隐藏  |
-| ---- | ----- |
-| long | false |
+| 结果类型   | 是否隐藏  |
+| ------ | ----- |
+| long   | false |
+| string | true  |
 
 ## 方法
 
