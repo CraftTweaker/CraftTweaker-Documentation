@@ -19,10 +19,18 @@
 
 ## Методы
 
-#### sendMessage
+### Send Message
 
-Принимает строку. Ничего не возвращает.
+Takes a String Returns void (nothing).
 
 ```zenscript
 sender.sendMessage(String text);
+```
+
+### Send Rich Text Message
+
+Takes an [ITextComponent](/Vanilla/Text/ITextComponent/) Returns void (nothing).
+
+```zenscript
+sender.sendRichTextMessage(ITextComponent textComponent);
 ```
