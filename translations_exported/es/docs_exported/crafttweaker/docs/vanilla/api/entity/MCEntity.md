@@ -176,6 +176,14 @@ Return Type: [MCEntityType](/vanilla/api/entities/MCEntityType)
 MCEntity.getType() as MCEntityType
 myMCEntity.getType();
 ```
+### getWorld
+
+Return Type: [MCWorld](/vanilla/api/world/MCWorld)
+
+```zenscript
+MCEntity.getWorld() as MCWorld
+myMCEntity.getWorld();
+```
 ### hasNoGravity
 
 Return Type: boolean
@@ -407,7 +415,8 @@ MCEntity.setSilent(isSilent as boolean) as void
 
 ## Properties
 
-| Name | Type   | Has Getter | Has Setter |
-| ---- | ------ | ---------- | ---------- |
-| name | string | true       | false      |
+| Name  | Type                                  | Has Getter | Has Setter |
+| ----- | ------------------------------------- | ---------- | ---------- |
+| name  | string                                | true       | false      |
+| world | [MCWorld](/vanilla/api/world/MCWorld) | true       | false      |
 
