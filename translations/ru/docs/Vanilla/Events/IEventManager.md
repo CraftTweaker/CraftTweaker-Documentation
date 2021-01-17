@@ -41,6 +41,7 @@ The ZenMethods would be what you'll need to call on `events`, the Event Class wo
 | onAnimalTame                | [`crafttweaker.event.AnimalTameEvent`](/Vanilla/Events/Events/AnimalTame/)                               |
 | onBlockBreak                | [`crafttweaker.event.BlockBreak`](/Vanilla/Events/Events/BlockBreak/)                                    |
 | onBlockHarvestDrops         | [`crafttweaker.event.BlockHarvestDrops`](/Vanilla/Events/Events/BlockHarvestDrops/)                      |
+| onBlockNeighborNotify       | [`crafttweaker.event.BlockNeighborNotifyEvent`](/Vanilla/Events/Events/BlockNeighborNotify)              |
 | onBlockPlace                | [`crafttweaker.event.BlockPlaceEvent`](/Vanilla/Events/Events/BlockPlace/)                               |
 | onCheckSpawn                | [`crafttweaker.event.EntityLivingExtendedSpawnEvent`](/Vanilla/Events/Events/EntityLivingSpawn/)         |
 | onClientTick                | [`crafttweaker.event.ClientTickEvent`](/Vanilla/Events/Events/ClientTick/)                               |
@@ -108,6 +109,7 @@ The ZenMethods would be what you'll need to call on `events`, the Event Class wo
 | onPlayerTick                | [`crafttweaker.event.PlayerTickEvent`](/Vanilla/Events/Events/PlayerTick/)                               |
 | onPlayerUseHoe              | [`crafttweaker.event.PlayerUseHoeEvent`](/Vanilla/Events/Events/PlayerUseHoe/)                           |
 | onPlayerVisibility          | [`crafttweaker.event.PlayerVisibilityEvent`](/Vanilla/Events/Events/PlayerVisibility/)                   |
+| onPortalSpawn               | [`crafttweaker.event.PortalSpawnEvent`](/Vanilla/Events/Events/PortalSpawn)                              |
 | onPotionBrewPost            | [`crafttweaker.event.PotionBrewPostEvent`](/Vanilla/Events/Events/PotionBrewPost/)                       |
 | onPotionBrewPre             | [`crafttweaker.event.PotionBrewPreEvent`](/Vanilla/Events/Events/PotionBrewPre/)                         |
 | onProjectileImpactArrow     | [`crafttweaker.event.ProjectileImpactArrowEvent`](/Vanilla/Events/Events/ProjectileImpactArrow/)         |
