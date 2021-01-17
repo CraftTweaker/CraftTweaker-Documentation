@@ -11,5 +11,5 @@
 
 ```zenscript
 //<recipetype:thermal:press>.removeRecipe(IItemStack[] itemOutputs, IFluidStack[] fluidOutputs);
-//<recipetype:thermal:press>.removeRecipe([<item:minecraft:cobblestone>], [<fluid:minecraft:water>]);
+<recipetype:thermal:press>.removeRecipe([<item:minecraft:cobblestone>], [<fluid:minecraft:water>]);
 ```
