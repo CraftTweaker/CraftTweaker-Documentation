@@ -30,6 +30,20 @@
       "ContentTweaker": {
         "Simple Walkthrough": "mods/contenttweaker/SimpleWalkthrough.md"
       },
+      "Create": {
+        "Compacting": "mods/Create/Compacting.md",
+        "Crushing": "mods/Create/Crushing.md",
+        "Cutting": "mods/Create/Cutting.md",
+        "Emptying": "mods/Create/Emptying.md",
+        "Filling": "mods/Create/Filling.md",
+        "Mechanical Crafter": "mods/Create/MechanicalCrafter.md",
+        "Milling": "mods/Create/Milling.md",
+        "Mixing": "mods/Create/Mixing.md",
+        "Pressing": "mods/Create/Pressing.md",
+        "Sand Paper Polishing": "mods/Create/SandPaperPolishing.md",
+        "Splashing": "mods/Create/Splashing.md"
+
+      },
       "Ex Nihilo Sequentia": {
         "Composting": "mods/ExNihiloSequentia/Composting.md",
         "Crooking": "mods/ExNihiloSequentia/Crooking.md",
