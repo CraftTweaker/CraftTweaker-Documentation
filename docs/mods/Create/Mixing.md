@@ -10,7 +10,7 @@ The Mixing mechanic is a type of [IRecipeManager](/vanilla/api/managers/IRecipeM
 
 Create has three different "heat" types that are used in recipes. which are the following:
 
-```
+```plaintext
 none
 heated
 superheated
