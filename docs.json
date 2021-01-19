@@ -17,11 +17,29 @@
       }
     },
     "Mods": {
+      "Blood Magic": {
+        "Alchemical Reaction Chamber": "mods/BloodMagic/AlchemicalReactionChamber.md",
+        "Alchemy Array": "mods/BloodMagic/AlchemyArray.md",
+        "Alchemy Table": "mods/BloodMagic/AlchemyTable.md",
+        "Blood Altar": "mods/BloodMagic/BloodAltar.md",
+        "Tartaric Forge": "mods/BloodMagic/TartaricForge.md"
+      },
       "Botany Pots": {
         "Botany Pots": "mods/BotanyPots/BotanyPots.md"
       },
       "ContentTweaker": {
         "Simple Walkthrough": "mods/contenttweaker/SimpleWalkthrough.md"
+      },
+      "Ex Nihilo Sequentia": {
+        "Composting": "mods/ExNihiloSequentia/Composting.md",
+        "Crooking": "mods/ExNihiloSequentia/Crooking.md",
+        "Crucible": "mods/ExNihiloSequentia/Crucible.md",
+        "Fluid Item Transformation": "mods/ExNihiloSequentia/Fluid_Item_Transformation.md",
+        "Fluid On Top": "mods/ExNihiloSequentia/Fluid_On_Top.md",
+        "Fluid Transform": "mods/ExNihiloSequentia/Fluid_Transform.md",
+        "Hammering": "mods/ExNihiloSequentia/Hammering.md",
+        "Heating Sources": "mods/ExNihiloSequentia/Heating_Sources.md",
+        "Sieving": "mods/ExNihiloSequentia/Sieving.md"
       },
       "InitialInventory": {
         "InitialInventory": "mods/InitialInventory/InitialInventory.md"
@@ -38,6 +56,28 @@
         "Millstone": "mods/StoneAge/MillstoneManager.md",
         "Tanning Rack": "mods/StoneAge/TanningRackManager.md",
         "Tree Stump": "mods/StoneAge/TreeStumpManager.md"
+      },
+      "Thermal Series": {
+        "Dynamos": {
+          "Compression Dynamo": "mods/ThermalSeries/Dynamos/Compression_Dynamo.md",
+          "Lapidary Dynamo": "mods/ThermalSeries/Dynamos/Lapidary_Dynamo.md",
+          "Magmatic Dynamo": "mods/ThermalSeries/Dynamos/Magmatic_Dynamo.md",
+          "Numismatic Dynamo": "mods/ThermalSeries/Dynamos/Numismatic_Dynamo.md",
+          "Stirling Dynamo": "mods/ThermalSeries/Dynamos/Stirling_Dynamo.md"
+          },
+        "Alchemical Imbuer": "mods/ThermalSeries/Alchemical_Imbuer.md",
+        "Blast Chiller": "mods/ThermalSeries/Blast_Chiller.md",
+        "Centrifugal Separator": "mods/ThermalSeries/Centrifugal_Separator.md",
+        "Fluid Encapsulator": "mods/ThermalSeries/Fluid_Encapsulator.md",
+        "Fractionating Still": "mods/ThermalSeries/Fractionating_Still.md",
+        "Induction Smelter": "mods/ThermalSeries/Induction_Smelter.md",
+        "Magma Crucible": "mods/ThermalSeries/Magma_Crucible.md",
+        "Multiservo Press": "mods/ThermalSeries/Multiservo_Press.md",
+        "Phytogenic Insolator": "mods/ThermalSeries/Phytogenic_Insolator.md",
+        "Pulverizer": "mods/ThermalSeries/Pulverizer.md",
+        "Pyrolyzer": "mods/ThermalSeries/Pyrolyzer.md",
+        "Redstone Furnace": "mods/ThermalSeries/Redstone_Furnace.md",
+        "Sawmill": "mods/ThermalSeries/Sawmill.md"
       }
     }
   }
