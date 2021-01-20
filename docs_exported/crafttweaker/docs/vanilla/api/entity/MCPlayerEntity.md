@@ -75,6 +75,14 @@ Return Type: boolean
 MCPlayerEntity.isCreative() as boolean
 myMCPlayerEntity.isCreative();
 ```
+### isFake
+
+Return Type: boolean
+
+```zenscript
+MCPlayerEntity.isFake() as boolean
+myMCPlayerEntity.isFake();
+```
 ### isPushedByWater
 
 Return Type: boolean
@@ -115,6 +123,17 @@ Return Type: boolean
 MCPlayerEntity.isUser() as boolean
 myMCPlayerEntity.isUser();
 ```
+### sendMessage
+
+Return Type: void
+
+```zenscript
+MCPlayerEntity.sendMessage(text as MCTextComponent) as void
+```
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| text | [MCTextComponent](/vanilla/api/util/text/MCTextComponent) | No Description Provided |
+
 ### unlockRecipes
 
 Return Type: void
@@ -134,4 +153,10 @@ Return Type: void
 MCPlayerEntity.wakeUp() as void
 myMCPlayerEntity.wakeUp();
 ```
+
+## Properties
+
+| Name | Type | Has Getter | Has Setter |
+|------|------|------------|------------|
+| fake | boolean | true | false |
 

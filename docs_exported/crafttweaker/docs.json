@@ -178,8 +178,13 @@
             "TextFormatting": "vanilla/api/util/text/TextFormatting.md"
           }
         },
+        "Villager": {
+          "MCVillagerProfession": "vanilla/api/villager/MCVillagerProfession.md",
+          "VillagerTrades": "vanilla/api/villager/VillagerTrades.md"
+        },
         "World": {
           "MCBiome": "vanilla/api/world/MCBiome.md",
+          "MCServerWorld": "vanilla/api/world/MCServerWorld.md",
           "MCWorld": "vanilla/api/world/MCWorld.md"
         }
       }
