@@ -6,8 +6,8 @@
 
 The following script will add recipes that will:
 
-1) Output Coal 100% of the time by pyrolyzing a Cookie, consuming 500 RF.
-2) Output Coal 100% of the time and 250 mB of Refined Fuel by pyrolyzing a Cookie, consuming 500 RF.
+1) Output Coal 100% of the time by Pyrolyzing a Cookie, consuming 500 RF.
+2) Output Coal 100% of the time and 250 mB of Refined Fuel by Pyrolyzing a Cookie, consuming 500 RF.
 
 
 ```zenscript
