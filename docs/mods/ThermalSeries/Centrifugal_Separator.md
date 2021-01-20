@@ -2,7 +2,7 @@
 
 ## Methods
 
-#### Addition
+#### Add Recipe
 
 The following script will add recipes that will:
 
@@ -15,7 +15,7 @@ The following script will add recipes that will:
 <recipetype:thermal:centrifuge>.addRecipe("centrifuge_test_with_fluid", [<item:minecraft:diamond> % 100, <item:minecraft:emerald> %100], <fluid:minecraft:lava> *250, <item:minecraft:dirt>, 500);
 ```
 
-#### Removal
+#### Remove Recipes
 
 The following script will add recipes that will:
 
