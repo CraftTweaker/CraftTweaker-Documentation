@@ -6,9 +6,9 @@
 
 The following script will add recipes that will:
 
-1) Output a Diamond 100% of the time and an Emerald 100% of the time by centrifuging Dirt, consuming 500 RF.
-2) Output 250 mB of Resin by centrifuging a Diamond, consuming 500 RF.
-3) Output a Diamond 100% of the time, an Emerald 100% of the time and 250 mB of Lava by centrifuging Dirt, consuming 500 RF.
+1) Output a Diamond 100% of the time and an Emerald 100% of the time by Centrifuging Dirt, consuming 500 RF.
+2) Output 250 mB of Resin by Centrifuging a Diamond, consuming 500 RF.
+3) Output a Diamond 100% of the time, an Emerald 100% of the time and 250 mB of Lava by Centrifuging Dirt, consuming 500 RF.
 
 ```zenscript
 // <recipetype:thermal:centrifuge>.addRecipe(String name, MCWeightedItemStack[] outputs, IFluidStack outputFluid, IIngredient ingredient, int energy);
