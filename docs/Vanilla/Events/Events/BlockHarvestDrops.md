@@ -19,11 +19,11 @@ The following information can be retrieved from the event:
 
 | ZenGetter        | ZenSetter     | Type                                                               |
 |------------------|---------------|--------------------------------------------------------------------|
-| `player`         |               | [IPlayer](/Vanilla/Players/IPlayer/)                                |
+| `player`         |               | [IPlayer](/Vanilla/Players/IPlayer/)                               |
 | `isPlayer`       |               | bool                                                               |
 | `silkTouch`      |               | bool                                                               |
 | `fortuneLevel`   |               | int                                                                |
-| `drops`          | `drops`       | List<[WeightedItemStack](/Vanilla/Items/WeightedItemStack/)\>                     |
+| `drops`          | `drops`       | List<[WeightedItemStack](/Vanilla/Items/WeightedItemStack/)\>      |
 | `dropChance`     | `dropChance`  | float                                                              |
 
 

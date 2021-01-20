@@ -12,16 +12,26 @@ It might be required for you to import the package if you encounter any issues (
 | ZenGetter   | Return Type                           |
 |-------------|---------------------------------------|
 | displayName | string                                |
-| position    | [IBlockPos](/Vanilla/World/IBlockPos/) | 
+| position    | [IBlockPos](/Vanilla/World/IBlockPos/) |
 | world       | [IWorld](/Vanilla/World/IWorld/)       |
 | server      | [IServer](/Vanilla/Game/IServer/)      |
 
-
 ## ZenMethods
-#### Send Message
-Takes a String.
+
+### Send Message
+
+Takes a String
 Returns void (nothing).
 
 ```zenscript
 sender.sendMessage(String text);
+```
+
+### Send Rich Text Message
+
+Takes an [ITextComponent](/Vanilla/Text/ITextComponent/)
+Returns void (nothing).
+
+```zenscript
+sender.sendRichTextMessage(ITextComponent textComponent);
 ```

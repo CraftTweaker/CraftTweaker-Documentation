@@ -91,7 +91,7 @@ var MobStage as Stage = ZenStager.getMobStage("minecraft:skeleton");
 Get the TiC Material stage, if staged it will return the [Stage](/Mods/GameStages/ZenStages/Stage/) or null if not found. Requires [TinkerStages](/Mods/GameStages/TinkerStages/TinkerStages/) to be installed.
 ```zenscript
 // mods.zenstages.ZenStager.getTiCMaterialStage(string material);
-var MobStage as Stage = ZenStager.getTiCMaterialStage("bronze");
+var TiCMaterialStage as Stage = ZenStager.getTiCMaterialStage("bronze");
 ```
 ### Check if something is Staged
 

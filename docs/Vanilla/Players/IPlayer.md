@@ -45,6 +45,8 @@ ZenMethods are for doing things with other things, in this case with a player.
 | removeXP(XPtoRemove)     | int                                     | Removes the given experience levels from the player.                | `player.removeXP(1)`                     |
 | update(IData)            | [IData](/Vanilla/Data/IData/)           | Updates the playerdata to the provided IData.                       |                                          |
 | sendChat(Message)        | string OR IChatMessage                  | Sends the player a Chat Message.                                    | `player.sendChat("Hello my old friend")` |
+| sendStatusMessage(message, hotbar) | string OR [IFormattedText](/Vanilla/Utils/IFormattedText/) | Sends the player a status message, if the hotbar argument is true, the message will be displayed on player's hotbar, the default value is true | `player.sendStatusMessage("hello, world")` |
+| sendRichTextStatusMessage(message, hotbar) | [ITextComponent](/Vanilla/Text/ITextComponent/) | same as `sendStatusMessage`, but the message is an ITextComponent |               |
 | getHotbarStack(index)    | int                                     | Returns the item at the given index within the player's hotbar.     | `player.getHotbarStack(3)`               |
 | getInventoryStack(index) | int                                     | Returns the item at the given index within the player's inventory.  | `player.getInventoryStack(3)`            |
 | give(item)               | [IItemStack](/Vanilla/Items/IItemStack/)| Give the player the provided item. Item is an IItemStack.           | `player.give(<minecraft:gold_ingot>)`    | 
