@@ -4,7 +4,7 @@
 
 #### Add Recipe
 
-The following script will add a recipe that will output a Bone 100% of the time by pulverizing a Bone Block, creating 2 EXP and consuming 500 RF.
+The following script will add a recipe that will output a Bone 100% of the time by Pulverizing a Bone Block, creating 2 EXP and consuming 500 RF.
 
 ```zenscript
 // <recipetype:thermal:pulverizer>.addRecipe(String name, MCWeightedItemStack[] outputs, IIngredient ingredient, float experience, int energy);
@@ -24,7 +24,7 @@ The following script will remove all Pulverizer recipes that output Sand and Fli
 
 #### Add Catalyst
 
-The following script will add Cookies as a Smelter Catalyst
+The following script will add Cookies as a Pylverizer Catalyst
 
 ```zenscript
 //<recipetype:thermal:pulverizer_catalyst>.addCatalyst(String name, IIngredient ingredient, float primaryMod, float secondaryMod, float energyMod, float minChance, float useChance);
