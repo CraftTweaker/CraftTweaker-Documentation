@@ -4,7 +4,7 @@
 
 #### Add Recipe
 
-The following script will add a recipe that will output 250 mB of Lava by brewing 250 mB of Water, using a Cookie as a catalyst, and consuming 500 RF.
+The following script will add a recipe that will output 250 mB of Lava by Brewing 250 mB of Water, using a Cookie as a catalyst, and consuming 500 RF.
 
 ```zenscript
 // <recipetype:thermal:brewer>.addRecipe(String name, IFluidStack output, IIngredient ingredient, IFluidStack fluidInput, int energy);
@@ -15,6 +15,7 @@ The following script will add a recipe that will output 250 mB of Lava by brewin
 
 The following script will remove all Brewer recipes that output Water.
 As Thermal Expansion adds Brewer recipes after scripts run since they are based on potions, the following script will remove a recipe that doesn't exist.
+This method is mainly for other mods that add brewer recipes before scripts are ran.
 
 ```zenscript
 // <recipetype:thermal:brewer>.removeRecipe(IFluidStack output);
