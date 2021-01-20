@@ -15,7 +15,7 @@ import {
 const testLinks = (folder: string, useDocsDir: boolean = false) => {
 
     let fileList: string[] = [];
-    listFiles(folder, fileList);
+    listFiles(folder, fileList, true, ["md"]);
 
     let processor = unified().use(markdown, {});
     let linkError: boolean = false;
