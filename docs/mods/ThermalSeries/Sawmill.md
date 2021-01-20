@@ -4,7 +4,7 @@
 
 #### Add Recipe
 
-The following script will add a recipe that will output Oak Planks 200% of the time by sawing an Oak Door, consuming 500 RF.
+The following script will add a recipe that will output Oak Planks 200% of the time by Sawing an Oak Door, consuming 500 RF.
 
 ```zenscript
 //<recipetype:thermal:sawmill>.addRecipe(String name, MCWeightedItemStack[] outputs, IIngredient ingredient, int energy);
