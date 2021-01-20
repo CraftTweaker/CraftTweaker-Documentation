@@ -6,9 +6,9 @@
 
 The following script will add recipes that will:
 
-1) Output a Diamond by refining 500 mB of Water, consuming 500 RF.
-2) Output 100 mB of Lava by refining 500 mB of Water, consuming 500 RF.
-3) Output a Diamond, 100 mB of Lava and 100 mB of Resin by refining 500 mB of Water, consuming 500 RF.
+1) Output a Diamond by Refining 500 mB of Water, consuming 500 RF.
+2) Output 100 mB of Lava by Refining 500 mB of Water, consuming 500 RF.
+3) Output a Diamond, 100 mB of Lava and 100 mB of Resin by Refining 500 mB of Water, consuming 500 RF.
 
 ```zenscript
 // <recipetype:thermal:refinery>.addRecipe(String name, MCWeightedItemStack itemOutput, IFluidStack[] fluidsOutput, IFluidStack inputFluid, int energy);
