@@ -1,4 +1,4 @@
-# Compression Dynamo
+# Compression Dynamo / Compression Fuel
 
 ## Methods
 
