@@ -2,7 +2,7 @@
 
 ## Methods
 
-#### Addition
+#### Add Recipe
 
 The following script will add a recipe that will output 250 mB of Lava by brewing 250 mB of Water, using a Cookie as a catalyst, and consuming 500 RF.
 
@@ -11,7 +11,7 @@ The following script will add a recipe that will output 250 mB of Lava by brewin
 <recipetype:thermal:brewer>.addRecipe("brewer_test", <fluid:minecraft:lava> *250, <item:minecraft:cookie>, <fluid:minecraft:water> *250, 500);
 ```
 
-#### Removal
+#### Remove Recipes
 
 The following script will remove all Brewer recipes that output Water.
 
