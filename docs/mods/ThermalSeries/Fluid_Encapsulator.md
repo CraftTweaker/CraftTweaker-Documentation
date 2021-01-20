@@ -13,7 +13,7 @@ The following script will add a recipe that will output Magma by "bottling" Cobb
 
 #### Removal
 
-The follow script will remove all Bottler recipes that output a Honey Bottle.
+The following script will remove all Bottler recipes that output a Honey Bottle.
 
 ```zenscript
 // <recipetype:thermal:bottler>.removeRecipe(IItemStack... output);
