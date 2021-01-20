@@ -1,13 +1,19 @@
-# Numismatic Dynamo
+# Numismatic Dynamo / Numismatic Fuel
 
-## Add Fuel
+## Methods
+
+#### Add Fuel
+
+The following script will add Dirt as a fuel that produces 1000 RF.
 
 ```zenscript
 //<recipetype:thermal:numismatic_fuel>.addFuel(String name, IIngredient ingredient, int energy);
 <recipetype:thermal:numismatic_fuel>.addFuel("numismatic_test", <item:minecraft:dirt>, 1000);
 ```
 
-## Remove Fuel
+#### Remove Fuel
+
+The following script will remove Signalum Coins as a fuel.
 
 ```zenscript
 //<recipetype:thermal:numismatic_fuel>.removeFuel(IItemStack outputItem);
