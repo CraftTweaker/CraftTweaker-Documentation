@@ -35,7 +35,7 @@ The following script will add Cookies as a Pulverizer Catalyst with 5x Primary M
 The following script will remove Flint as a Pulverizer Catalyst.
 
 ```zenscript
-//<recipetype:thermal:pulverizer_catalyst>.removeCatalyst(IItemStack input);
+// <recipetype:thermal:pulverizer_catalyst>.removeCatalyst(IItemStack input);
 <recipetype:thermal:pulverizer_catalyst>.removeCatalyst(<item:minecraft:flint>);
 ```
 
