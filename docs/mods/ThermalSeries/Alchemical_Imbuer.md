@@ -4,7 +4,7 @@
 
 #### Addition
 
-The following script will add a recipe that will output 250 mB of Lava by brewing 250 mB of Water and using a Cookie as a catalyst.
+The following script will add a recipe that will output 250 mB of Lava by brewing 250 mB of Water, using a Cookie as a catalyst, and consuming 500 RF.
 
 ```zenscript
 //<recipetype:thermal:brewer>.addRecipe(String name, IFluidStack output, IIngredient ingredient, IFluidStack fluidInput, int energy);
