@@ -4,7 +4,7 @@
 
 #### Add Recipe
 
-The following script will add a recipe that will output Wheat 100% of the time by insolating a Stick, using 500 mB of Water and consumimg 500 RF.
+The following script will add a recipe that will output Wheat 100% of the time by Insolating a Stick, using 500 mB of Water and consumimg 500 RF.
 
 ```zenscript
 // <recipetype:thermal:insolator>.addRecipe(String name, MCWeightedItemStack[] outputs, IIngredient ingredient, int fluidAmount, int energy);
