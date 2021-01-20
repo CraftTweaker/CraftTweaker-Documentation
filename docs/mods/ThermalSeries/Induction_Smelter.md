@@ -2,7 +2,7 @@
 
 ## Methods
 
-#### Addition
+#### Add Recipe
 
 The following script will add a recipe that will output a Diamond 100% of the time and Slag 25% of the time by smelting Sand.
 
@@ -11,7 +11,7 @@ The following script will add a recipe that will output a Diamond 100% of the ti
 <recipetype:thermal:smelter>.addRecipe("smelter_test", [<item:minecraft:diamond> % 100, <item:thermal:slag> %25], [<item:minecraft:iron_ore>, <item:minecraft:sand>], 20, 500);
 ```
 
-#### Removal
+#### Remove Recipes
 
 The following script will remove all Smelter recipes that output Electrum Ingots.
 
@@ -22,7 +22,7 @@ The following script will remove all Smelter recipes that output Electrum Ingots
 
 # Catalysts
 
-#### Catalyst Addition
+#### Add Catalyst
 
 The following script will add Diamonds as a Smelter Catalyst 
 
@@ -30,7 +30,7 @@ The following script will add Diamonds as a Smelter Catalyst
 //<recipetype:thermal:smelter_catalyst>.addCatalyst(String name, IIngredient ingredient, float primaryMod, float secondaryMod, float energyMod, float minChance, float useChance);
 <recipetype:thermal:smelter_catalyst>.addCatalyst("smelter_catalyst_test", <item:minecraft:diamond>, 5, 5, 0, 0.1, 30);
 ```
-#### Catalyst Removal
+#### Remove Catalyst
 
 The following script will remove Sand as a Smelter Catalyst.
 
