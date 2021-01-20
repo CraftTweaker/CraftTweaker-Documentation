@@ -4,7 +4,7 @@
 
 #### Add Fuel
 
-The following script will add Dirt as a fuel that produces 1000 RF.
+The following script will add Dirt as a Fuel that produces 1000 RF.
 
 ```zenscript
 // <recipetype:thermal:stirling_fuel>.addFuel(String name, IIngredient ingredient, int energy);
@@ -13,7 +13,7 @@ The following script will add Dirt as a fuel that produces 1000 RF.
 
 #### Remove Fuel
 
-The following script will remove Coal Blocks as a fuel.
+The following script will remove Coal Blocks as a Fuel.
 
 ```zenscript
 // <recipetype:thermal:stirling_fuel>.removeFuel(IItemStack outputItem);
