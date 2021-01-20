@@ -2,7 +2,7 @@
 
 ## Methods
 
-#### Add Fuel
+#### Add Recipe
 
 The following script will add recipes that will:
 
