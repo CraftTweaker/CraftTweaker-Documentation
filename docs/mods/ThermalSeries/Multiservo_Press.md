@@ -21,7 +21,7 @@ The following script will add recipes that will:
 
 ### Press Dies
 
-Thermal Expansion has several press dies that are used in recipes (like the second example) which don't get consumed, they are the following:
+Thermal Expansion has several Press dies that are used in recipes (like the second example) which don't get consumed, they are the following:
 
 ```
 press_coin_die
