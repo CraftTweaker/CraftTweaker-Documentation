@@ -6,8 +6,8 @@
 
 The following script will add recipes that will:
 
-1) Output Glass when 250 mB of Resin are freezed, consuming 500 RF.
-2) Output Glass when 250 mB of Resin are freezed with a Ball Cast (which will not be consumed), consuming 500 RF.
+1) Output Glass by freezing 250 mB of Resin, consuming 500 RF.
+2) Output Glass by freezing 250 mB of Resin with a Ball Cast, consuming 500 RF.
 
 ```zenscript
 // <recipetype:thermal:chiller>.addRecipe(String name, IItemStack output, IIngredient ingredient, IFluidStack inputFluid, int energy);
