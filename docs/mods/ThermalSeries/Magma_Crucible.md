@@ -2,7 +2,7 @@
 
 ## Methods
 
-#### Addition
+#### Add Recipe
 
 The following script will add a recipe that will output 250 mB of Lava by melting a Diamond, consuming 500 RF.
 
@@ -11,7 +11,7 @@ The following script will add a recipe that will output 250 mB of Lava by meltin
 <recipetype:thermal:crucible>.addRecipe("crucible_test", <fluid:minecraft:lava> *250, <item:minecraft:diamond>, 500);
 ```
 
-#### Removal
+#### Remove Recipes
 
 The follow script will remove all Crucible recipes that output Lava.
 
