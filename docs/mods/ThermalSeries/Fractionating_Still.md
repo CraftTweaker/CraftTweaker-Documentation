@@ -2,7 +2,7 @@
 
 ## Methods
 
-#### Addition
+#### Add Recipe
 
 The following script will add recipes that will:
 
@@ -17,7 +17,7 @@ The following script will add recipes that will:
 <recipetype:thermal:refinery>.addRecipe("refinery_test_with_item_and_fluid", <item:minecraft:diamond>, [<fluid:minecraft:lava> *100, <fluid:thermal:resin> *100], <fluid:minecraft:water> *500, 500);
 ```
 
-#### Removal
+#### Remove Recipes
 
 The following script will remove all Refinery recipes that output Tar and Refined Fuel.
 
