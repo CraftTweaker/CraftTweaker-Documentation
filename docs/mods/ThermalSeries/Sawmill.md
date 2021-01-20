@@ -1,13 +1,19 @@
 # Sawmill
 
-## Addition
+## Methods
+
+#### Addition
+
+The following script will add a recipe that will output Oak Planks 200% of the time by sawing an Oak Door, consuming 500 RF.
 
 ```zenscript
 //<recipetype:thermal:sawmill>.addRecipe(String name, MCWeightedItemStack[] outputs, IIngredient ingredient, int energy);
-<recipetype:thermal:sawmill>.addRecipe("sawmill_test", [<item:minecraft:grass> % 100], <item:minecraft:dirt>, 500);
+<recipetype:thermal:sawmill>.addRecipe("sawmill_test", [<item:minecraft:oak_planks> % 200], <item:minecraft:oak_door>, 500);
 ```
 
-## Removal
+#### Removal
+
+The following script will remove all Sawmill recipes that output Acacia Planks and Sawdust.
 
 ```zenscript
 //<recipetype:thermal:sawmill>.removeRecipe(IItemStack... output);
