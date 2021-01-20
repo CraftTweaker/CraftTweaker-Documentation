@@ -4,7 +4,7 @@
 
 #### Add Recipe
 
-The following script will add a recipe that will output Magma by "bottling" Cobblestone with 500 mB of Lava, consuming 500 RF.
+The following script will add a recipe that will output Magma by "Bottling" Cobblestone with 500 mB of Lava, consuming 500 RF.
 
 ```zenscript
 // <recipetype:thermal:bottler>.addRecipe(String name, IItemStack output, IIngredient ingredient, IFluidStack fluidInput, int energy);
