@@ -184,6 +184,7 @@
         },
         "World": {
           "MCBiome": "vanilla/api/world/MCBiome.md",
+          "MCServerWorld": "vanilla/api/world/MCServerWorld.md",
           "MCWorld": "vanilla/api/world/MCWorld.md"
         }
       }
