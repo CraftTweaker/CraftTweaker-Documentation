@@ -2,7 +2,7 @@
 
 ## Methods
 
-#### Addition
+#### Add Recipe
 
 The following script will add a recipe that will output Magma by "bottling" Cobblestone with 500 mB of Lava, consuming 500 RF.
 
@@ -11,7 +11,7 @@ The following script will add a recipe that will output Magma by "bottling" Cobb
 <recipetype:thermal:bottler>.addRecipe("bottler_test", <item:minecraft:magma_block>, <item:minecraft:stone>, <fluid:minecraft:lava> *500, 500);
 ```
 
-#### Removal
+#### Remove Recipes
 
 The following script will remove all Bottler recipes that output a Honey Bottle.
 
