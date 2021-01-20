@@ -2,7 +2,7 @@
 
 ## Methods
 
-#### Addition
+#### Add Fuel
 
 The following script will add recipes that will:
 
@@ -16,7 +16,7 @@ The following script will add recipes that will:
 
 ```
 
-#### Removal
+#### Remove Recipes
 
 The following script will remove all Chiller recipes that output Ice.
 
