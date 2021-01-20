@@ -8,7 +8,7 @@ The following script will add recipes that will:
 
 1) Output Dirt 120% of the time by pressing Grass, consuming 500 RF.
 2) Output a Cake 120% of the time by pressing Dirt with a Numismatic Die, consuming 500 RF. 
-3) Output  250 mB of Resin by pressing a Diamond, consuming 500 RF.
+3) Output 250 mB of Resin by pressing a Diamond, consuming 500 RF.
 4) Output a Lily Pad 120% of the time and 2500 mB of Latex by pressing Dirt, consuming 500 RF.
 
 ```zenscript
