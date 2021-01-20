@@ -13,7 +13,7 @@ The following script will add a recipe that will output 250 mB of Lava by brewin
 
 #### Removal
 
-The follow script will remove all Brewer recipes that output Water.
+The following script will remove all Brewer recipes that output Water.
 
 ```zenscript
 //<recipetype:thermal:brewer>.removeRecipe(IFluidStack output);
