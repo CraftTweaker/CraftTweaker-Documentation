@@ -24,7 +24,7 @@ The following script will remove all Smelter recipes that output Electrum Ingots
 
 #### Add Catalyst
 
-The following script will add Diamonds as a Smelter Catalyst 
+The following script will add Diamonds as a Smelter Catalyst with 5x Primary Modifier, 5x Auxiliary Modifier, 0x Energy Modifier, 0.1x Minimum Chance, and 30x Use Chance.
 
 ```zenscript
 //<recipetype:thermal:smelter_catalyst>.addCatalyst(String name, IIngredient ingredient, float primaryMod, float secondaryMod, float energyMod, float minChance, float useChance);
