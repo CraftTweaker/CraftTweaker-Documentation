@@ -4,7 +4,7 @@
 
 #### Add Recipe
 
-The following script will add a recipe that will output 250 mB of Lava by melting a Diamond, consuming 500 RF.
+The following script will add a recipe that will output 250 mB of Lava by Melting a Diamond, consuming 500 RF.
 
 ```zenscript
 //<recipetype:thermal:crucible>.addRecipe(String name, IFluidStack output, IIngredient ingredient, int energy);
