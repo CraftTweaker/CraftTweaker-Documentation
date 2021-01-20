@@ -16,6 +16,15 @@ The following script will add recipes that will:
 
 ```
 
+### Chiller Casts
+
+Thermal Expansion has a Chiller cast that is used in recipes (like the second example) which doesn't get consumed, it is the following:
+
+```
+chiller_ball_cast
+```
+
+
 #### Remove Recipes
 
 The following script will remove all Chiller recipes that output Ice.
