@@ -4,7 +4,7 @@
 
 #### Add Fuel
 
-The following script will add 1000 mB of Water as a fuel that produces 1000 RF.
+The following script will add 1000 mB of Water as a Fuel that produces 1000 RF.
 
 ```zenscript
 // <recipetype:thermal:compression_fuel>.addFuel(String name, IFluidStack ingredient, int energy);
@@ -13,7 +13,7 @@ The following script will add 1000 mB of Water as a fuel that produces 1000 RF.
 
 #### Remove Fuel
 
-The following script will remove Tree Oil as a fuel.
+The following script will remove Tree Oil as a Fuel.
 
 ```zenscript
 // <recipetype:thermal:compression_fuel>.removeFuel(IFluidStack outputFluid);
