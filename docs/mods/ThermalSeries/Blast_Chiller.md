@@ -6,8 +6,8 @@
 
 The following script will add recipes that will:
 
-1) Output Glass when 250 mB of Resin are freezed.
-2) Output Glass when 250 mB of Resin are freezed with a Ball Cast (the cast will not be consumed by the recipe).
+1) Output Glass when 250 mB of Resin are freezed, consuming 500 RF.
+2) Output Glass when 250 mB of Resin are freezed with a Ball Cast (which will not be consumed), consuming 500 RF.
 
 ```zenscript
 // <recipetype:thermal:chiller>.addRecipe(String name, IItemStack output, IIngredient ingredient, IFluidStack inputFluid, int energy);
@@ -21,6 +21,6 @@ The following script will add recipes that will:
 The follow script will remove all Chiller recipes that output Ice.
 
 ```zenscript
-//<recipetype:thermal:chiller>.removeRecipe(IItemStack... output);
+// <recipetype:thermal:chiller>.removeRecipe(IItemStack... output);
 <recipetype:thermal:chiller>.removeRecipe(<item:minecraft:ice>);
 ```
