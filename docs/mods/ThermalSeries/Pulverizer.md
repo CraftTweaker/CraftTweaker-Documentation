@@ -24,10 +24,10 @@ The following script will remove all Pulverizer recipes that output Sand and Fli
 
 #### Add Catalyst
 
-The following script will add Cookies as a Pylverizer Catalyst
+The following script will add Cookies as a Pulverizer Catalyst with 5x Primary Modifier, 5x Auxiliary Modifier, 0x Energy Modifier, 0.1x Minimum Chance, and 30x Use Chance.
 
 ```zenscript
-//<recipetype:thermal:pulverizer_catalyst>.addCatalyst(String name, IIngredient ingredient, float primaryMod, float secondaryMod, float energyMod, float minChance, float useChance);
+// <recipetype:thermal:pulverizer_catalyst>.addCatalyst(String name, IIngredient ingredient, float primaryMod, float secondaryMod, float energyMod, float minChance, float useChance);
 <recipetype:thermal:pulverizer_catalyst>.addCatalyst("pulverizer_catalyst_test", <item:minecraft:cookie>, 5,5, 0, 0.1, 30);
 ```
 #### Remove Catalyst
