@@ -4,7 +4,7 @@
 
 #### Add Recipe
 
-The following script will add a recipe that will output a Diamond 100% of the time and Slag 25% of the time by smelting Sand.
+The following script will add a recipe that will output a Diamond 100% of the time and Slag 25% of the time by Smelting Sand.
 
 ```zenscript
 // <recipetype:thermal:smelter>.addRecipe(String name, MCWeightedItemStack[] outputs, IIngredient[] ingredients, float experience, int energy);
