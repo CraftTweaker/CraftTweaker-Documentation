@@ -33,9 +33,13 @@ press_unpacking_die
 
 #### Remove Recipes
 
-The following script will remove all Press recipes that output Nickel Coins.
+The following script will remove recipes that will:
+
+1) Output Nickel Coins.
+2) Output Honey.
 
 ```zenscript
 // <recipetype:thermal:press>.removeRecipe(IItemStack[] itemOutputs, IFluidStack[] fluidOutputs);
 <recipetype:thermal:press>.removeRecipe(<item:thermal:nickel_coin>);
+<recipetype:thermal:centrifuge>.removeRecipe([], [<fluid:cofh_core:honey>]);
 ```
