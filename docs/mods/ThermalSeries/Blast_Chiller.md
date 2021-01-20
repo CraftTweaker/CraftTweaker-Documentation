@@ -18,7 +18,7 @@ The following script will add recipes that will:
 
 #### Removal
 
-The follow script will remove all Chiller recipes that output Ice.
+The following script will remove all Chiller recipes that output Ice.
 
 ```zenscript
 // <recipetype:thermal:chiller>.removeRecipe(IItemStack... output);
