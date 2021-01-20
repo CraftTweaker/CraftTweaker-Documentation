@@ -2,7 +2,7 @@
 
 ## Methods
 
-#### Addition
+#### Add Recipe
 
 The following script will add recipes that will:
 
@@ -16,7 +16,7 @@ The following script will add recipes that will:
 <recipetype:thermal:pyrolyzer>.addRecipe("pyrolyzer_test_with_item_and_fluid", [<item:minecraft:coal> %100], <fluid:thermal:refined_fuel> *250, <item:minecraft:cookie>, 500);
 ```
 
-#### Removal
+#### Remove Recipes
 
 The following script will remove all Pyrolyzer recipes that output Charcoal and Creosote Oil.
 
