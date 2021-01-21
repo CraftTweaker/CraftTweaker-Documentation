@@ -285,6 +285,154 @@
       }
     },
     "Mods": {
+      "Modtweaker": {
+        "Modtweaker": "Mods/Modtweaker/Modtweaker.md",
+        "Actually Additions": {
+          "Atomic Reconstructor": "Mods/Modtweaker/ActuallyAdditions/AtomicReconstructor.md",
+          "Ball of Fur": "Mods/Modtweaker/ActuallyAdditions/BallOfFur.md",
+          "Compost": "Mods/Modtweaker/ActuallyAdditions/Compost.md",
+          "Crusher": "Mods/Modtweaker/ActuallyAdditions/Crusher.md",
+          "Empowerer": "Mods/Modtweaker/ActuallyAdditions/Empowerer.md",
+          "Mining Lens": "Mods/Modtweaker/ActuallyAdditions/Mining_Lens.md",
+          "Oil Generator": "Mods/Modtweaker/ActuallyAdditions/Oil_Generator.md",
+          "Treasure Chest": "Mods/Modtweaker/ActuallyAdditions/TreasureChest.md"
+        },
+        "BetterWithMods": {
+          "Anvil": "Mods/Modtweaker/BetterWithMods/Anvil.md",
+          "Bellows": "Mods/Modtweaker/BetterWithMods/Bellows.md",
+          "Buoyancy": "Mods/Modtweaker/BetterWithMods/Buoyancy.md",
+          "Cauldron": "Mods/Modtweaker/BetterWithMods/Cauldron.md",
+          "Crucible": "Mods/Modtweaker/BetterWithMods/Crucible.md",
+          "Filtered Hopper": "Mods/Modtweaker/BetterWithMods/FilteredHopper.md",
+          "HeatRegistry": "Mods/Modtweaker/BetterWithMods/HeatRegistry.md",
+          "HCFurnace": "Mods/Modtweaker/BetterWithMods/HCFurnace.md",
+          "HCMovement": "Mods/Modtweaker/BetterWithMods/HCMovement.md",
+          "Kiln": "Mods/Modtweaker/BetterWithMods/Kiln.md",
+          "Mill": "Mods/Modtweaker/BetterWithMods/Mill.md",
+          "Saw": "Mods/Modtweaker/BetterWithMods/Saw.md",
+          "Turntable": "Mods/Modtweaker/BetterWithMods/Turntable.md",
+          "MiniBlocks": "Mods/Modtweaker/BetterWithMods/MiniBlocks.md"
+        },
+        "Blood Magic": {
+          "Alchemy Array": "Mods/Modtweaker/BloodMagic/AlchemyArray.md",
+          "Alchemy Table": "Mods/Modtweaker/BloodMagic/AlchemyTable.md",
+          "Blood Altar": "Mods/Modtweaker/BloodMagic/BloodAltar.md",
+          "Tartaric Forge": "Mods/Modtweaker/BloodMagic/TartaricForge.md"
+        },
+        "Botania": {
+          "Commands": "Mods/Modtweaker/Botania/Commands.md",
+          "Lexica Botania": "Mods/Modtweaker/Botania/Lexicon.md",
+          "Recipes": {
+            "Brew": "Mods/Modtweaker/Botania/Recipes/Brew.md",
+            "Elven Trade": "Mods/Modtweaker/Botania/Recipes/ElvenTrade.md",
+            "Mana Infusions": "Mods/Modtweaker/Botania/Recipes/ManaInfusion.md",
+            "Orechid": "Mods/Modtweaker/Botania/Recipes/Orechid.md",
+            "Orechid Ignem": "Mods/Modtweaker/Botania/Recipes/OrechidIgnem.md",
+            "Petal Apothecary": "Mods/Modtweaker/Botania/Recipes/Apothecary.md",
+            "Pure Daisy": "Mods/Modtweaker/Botania/Recipes/PureDaisy.md",
+            "Rune Altar": "Mods/Modtweaker/Botania/Recipes/RuneAltar.md"
+          }
+        },
+        "Chisel": {
+          "Carving": "Mods/Modtweaker/Chisel/Carving.md"
+        },
+        "Extra Utilities 2": {
+          "Crusher": "Mods/Modtweaker/Extra_Utilities_2/Crusher.md",
+          "Resonator": "Mods/Modtweaker/Extra_Utilities_2/Resonator.md"
+        },
+        "Forestry": {
+          "Carpenter": "Mods/Modtweaker/Forestry/Carpenter.md",
+          "Centrifuge": "Mods/Modtweaker/Forestry/Centrifuge.md",
+          "Charcoal Pile": "Mods/Modtweaker/Forestry/Charcoal_Pile.md",
+          "Fermenter": "Mods/Modtweaker/Forestry/Fermenter.md",
+          "Moistener": "Mods/Modtweaker/Forestry/Moistener.md",
+          "Squeezer": "Mods/Modtweaker/Forestry/Squeezer.md",
+          "Still": "Mods/Modtweaker/Forestry/Still.md",
+          "Thermionic Fabricator": "Mods/Modtweaker/Forestry/Thermionic_Fabricator.md"
+        },
+        "Inspirations": {
+          "Inspirations": "Mods/Modtweaker/Inspirations/Inspirations.md",
+          "Handlers": {
+            "Cauldron": "Mods/Modtweaker/Inspirations/Handlers/Cauldron.md"
+          }
+        },
+        "Refined Storage": {
+          "Recipes": {
+            "Solderer": "Mods/Modtweaker/RefinedStorage/Recipes/Solderer.md"
+          }
+        },
+        "Tinkers' Construct": {
+          "Commands": "Mods/Modtweaker/TConstruct/Commands.md",
+          "Brackets": {
+            "Material Bracket Handler": "Mods/Modtweaker/TConstruct/Brackets/Bracket_Material.md"
+          },
+          "Alloying": "Mods/Modtweaker/TConstruct/Alloying.md",
+          "Casting": "Mods/Modtweaker/TConstruct/Casting.md",
+          "Drying": "Mods/Modtweaker/TConstruct/Drying.md",
+          "Materials": {
+            "ITICMaterial": "Mods/Modtweaker/TConstruct/Materials/ITICMaterial.md",
+            "ITICMaterialDefinition": "Mods/Modtweaker/TConstruct/Materials/ITICMaterialDefinition.md"
+          },
+          "Melting": "Mods/Modtweaker/TConstruct/Melting.md",
+          "Smeltery Fuel": "Mods/Modtweaker/TConstruct/Fuel.md"
+        },
+        "Tinkers' Complement": {
+          "TComplement": "Mods/Modtweaker/TComplement/TComplement.md",
+          "Handlers": {
+            "Blacklist": "Mods/Modtweaker/TComplement/Handlers/Blacklist.md",
+            "Overrides": "Mods/Modtweaker/TComplement/Handlers/Overrides.md",
+            "High Oven": "Mods/Modtweaker/TComplement/Handlers/HighOven.md",
+            "MixRecipeBuilder": "Mods/Modtweaker/TComplement/Handlers/MixRecipeBuilder.md",
+            "MixRecipeManager": "Mods/Modtweaker/TComplement/Handlers/MixRecipeManager.md"
+          }
+        },
+        "Thaumcraft": {
+          "Aspects": {
+            "CTAspect": "Mods/Modtweaker/Thaumcraft/Aspects/CTAspect.md",
+            "CTAspectStack": "Mods/Modtweaker/Thaumcraft/Aspects/CTAspectStack.md",
+            "Entity Aspects": "Mods/Modtweaker/Thaumcraft/Aspects/Entity_Aspects.md",
+            "Item Aspects": "Mods/Modtweaker/Thaumcraft/Aspects/Item_Aspects.md"
+          },
+          "Brackets": {
+            "Aspects": "Mods/Modtweaker/Thaumcraft/Brackets/Bracket_Aspect.md"
+          },
+          "Handlers": {
+            "Arcane Workbench": "Mods/Modtweaker/Thaumcraft/Handlers/ArcaneWorkbench.md",
+            "Crucible": "Mods/Modtweaker/Thaumcraft/Handlers/Crucible.md",
+            "Infusion": "Mods/Modtweaker/Thaumcraft/Handlers/Infusion.md",
+            "Loot": "Mods/Modtweaker/Thaumcraft/Handlers/Loot.md",
+            "Salis Mundus": "Mods/Modtweaker/Thaumcraft/Handlers/SalisMundus.md",
+            "Smelting Bonus": "Mods/Modtweaker/Thaumcraft/Handlers/SmeltingBonus.md",
+            "Warp": "Mods/Modtweaker/Thaumcraft/Handlers/Warp.md"
+          },
+          "Commands": "Mods/Modtweaker/Thaumcraft/Commands.md"
+        },
+        "Thermal Expansion": {
+          "Dynamos": {
+            "Compression Dynamo": "Mods/Modtweaker/ThermalExpansion/Dynamos/CompressionDynamo.md",
+            "Enervation Dynamo": "Mods/Modtweaker/ThermalExpansion/Dynamos/EnervationDynamo.md",
+            "Magmatic Dynamo": "Mods/Modtweaker/ThermalExpansion/Dynamos/MagmaticDynamo.md",
+            "Numistic Dynamo": "Mods/Modtweaker/ThermalExpansion/Dynamos/NumisticDynamo.md",
+            "Reactant Dynamo": "Mods/Modtweaker/ThermalExpansion/Dynamos/ReactantDynamo.md",
+            "Steam Dynamo": "Mods/Modtweaker/ThermalExpansion/Dynamos/SteamDynamo.md"
+          },
+          "Alchemical Imbuer": "Mods/Modtweaker/ThermalExpansion/Imbuer.md",
+          "Arcane Ensorcellator (Enchanter)": "Mods/Modtweaker/ThermalExpansion/Enchanter.md",
+          "Centrifugal Seperator": "Mods/Modtweaker/ThermalExpansion/Centrifugal_Seperator.md",
+          "Compactor": "Mods/Modtweaker/ThermalExpansion/Compactor.md",
+          "Coolant": "Mods/Modtweaker/ThermalExpansion/Coolant.md",
+          "Energetic Infuser": "Mods/Modtweaker/ThermalExpansion/Energetic_Infuser.md",
+          "Factorizer": "Mods/Modtweaker/ThermalExpansion/Factorizer.md",
+          "Fluid Transposer": "Mods/Modtweaker/ThermalExpansion/Fluid_Transposer.md",
+          "Fractionating Still (Refinery)": "Mods/Modtweaker/ThermalExpansion/Refinery.md",
+          "Induction Smelter": "Mods/Modtweaker/ThermalExpansion/InductionSmelter.md",
+          "Magma Crucible": "Mods/Modtweaker/ThermalExpansion/Crucible.md",
+          "Redstone Furnace": "Mods/Modtweaker/ThermalExpansion/Redstone_Furnace.md",
+          "Phytogenic Insolator": "Mods/Modtweaker/ThermalExpansion/Insolator.md",
+          "Pulverizer": "Mods/Modtweaker/ThermalExpansion/Pulverizer.md",
+          "Sawmill": "Mods/Modtweaker/ThermalExpansion/Sawmill.md"
+        }
+      },
       "Advanced Mortars": {
         "Advanced Mortars": "Mods/Advanced_Mortars/Advanced_Mortars.md",
         "CraftTweaker Support": "Mods/Advanced_Mortars/CraftTweaker_Support/Mortars.md"
@@ -812,154 +960,6 @@
         "Purification Chamber": "Mods/Mekanism/Purification_Chamber.md",
         "Solar Neutron Activator": "Mods/Mekanism/Solar_Neutron_Activator.md",
         "Thermal Evaporation": "Mods/Mekanism/Thermal_Evaporation.md"
-      },
-      "Modtweaker": {
-        "Modtweaker": "Mods/Modtweaker/Modtweaker.md",
-        "Actually Additions": {
-          "Atomic Reconstructor": "Mods/Modtweaker/ActuallyAdditions/AtomicReconstructor.md",
-          "Ball of Fur": "Mods/Modtweaker/ActuallyAdditions/BallOfFur.md",
-          "Compost": "Mods/Modtweaker/ActuallyAdditions/Compost.md",
-          "Crusher": "Mods/Modtweaker/ActuallyAdditions/Crusher.md",
-          "Empowerer": "Mods/Modtweaker/ActuallyAdditions/Empowerer.md",
-          "Mining Lens": "Mods/Modtweaker/ActuallyAdditions/Mining_Lens.md",
-          "Oil Generator": "Mods/Modtweaker/ActuallyAdditions/Oil_Generator.md",
-          "Treasure Chest": "Mods/Modtweaker/ActuallyAdditions/TreasureChest.md"
-        },
-        "BetterWithMods": {
-          "Anvil": "Mods/Modtweaker/BetterWithMods/Anvil.md",
-          "Bellows": "Mods/Modtweaker/BetterWithMods/Bellows.md",
-          "Buoyancy": "Mods/Modtweaker/BetterWithMods/Buoyancy.md",
-          "Cauldron": "Mods/Modtweaker/BetterWithMods/Cauldron.md",
-          "Crucible": "Mods/Modtweaker/BetterWithMods/Crucible.md",
-          "Filtered Hopper": "Mods/Modtweaker/BetterWithMods/FilteredHopper.md",
-          "HeatRegistry": "Mods/Modtweaker/BetterWithMods/HeatRegistry.md",
-          "HCFurnace": "Mods/Modtweaker/BetterWithMods/HCFurnace.md",
-          "HCMovement": "Mods/Modtweaker/BetterWithMods/HCMovement.md",
-          "Kiln": "Mods/Modtweaker/BetterWithMods/Kiln.md",
-          "Mill": "Mods/Modtweaker/BetterWithMods/Mill.md",
-          "Saw": "Mods/Modtweaker/BetterWithMods/Saw.md",
-          "Turntable": "Mods/Modtweaker/BetterWithMods/Turntable.md",
-          "MiniBlocks": "Mods/Modtweaker/BetterWithMods/MiniBlocks.md"
-        },
-        "Blood Magic": {
-          "Alchemy Array": "Mods/Modtweaker/BloodMagic/AlchemyArray.md",
-          "Alchemy Table": "Mods/Modtweaker/BloodMagic/AlchemyTable.md",
-          "Blood Altar": "Mods/Modtweaker/BloodMagic/BloodAltar.md",
-          "Tartaric Forge": "Mods/Modtweaker/BloodMagic/TartaricForge.md"
-        },
-        "Botania": {
-          "Commands": "Mods/Modtweaker/Botania/Commands.md",
-          "Lexica Botania": "Mods/Modtweaker/Botania/Lexicon.md",
-          "Recipes": {
-            "Brew": "Mods/Modtweaker/Botania/Recipes/Brew.md",
-            "Elven Trade": "Mods/Modtweaker/Botania/Recipes/ElvenTrade.md",
-            "Mana Infusions": "Mods/Modtweaker/Botania/Recipes/ManaInfusion.md",
-            "Orechid": "Mods/Modtweaker/Botania/Recipes/Orechid.md",
-            "Orechid Ignem": "Mods/Modtweaker/Botania/Recipes/OrechidIgnem.md",
-            "Petal Apothecary": "Mods/Modtweaker/Botania/Recipes/Apothecary.md",
-            "Pure Daisy": "Mods/Modtweaker/Botania/Recipes/PureDaisy.md",
-            "Rune Altar": "Mods/Modtweaker/Botania/Recipes/RuneAltar.md"
-          }
-        },
-        "Chisel": {
-          "Carving": "Mods/Modtweaker/Chisel/Carving.md"
-        },
-        "Extra Utilities 2": {
-          "Crusher": "Mods/Modtweaker/Extra_Utilities_2/Crusher.md",
-          "Resonator": "Mods/Modtweaker/Extra_Utilities_2/Resonator.md"
-        },
-        "Forestry": {
-          "Carpenter": "Mods/Modtweaker/Forestry/Carpenter.md",
-          "Centrifuge": "Mods/Modtweaker/Forestry/Centrifuge.md",
-          "Charcoal Pile": "Mods/Modtweaker/Forestry/Charcoal_Pile.md",
-          "Fermenter": "Mods/Modtweaker/Forestry/Fermenter.md",
-          "Moistener": "Mods/Modtweaker/Forestry/Moistener.md",
-          "Squeezer": "Mods/Modtweaker/Forestry/Squeezer.md",
-          "Still": "Mods/Modtweaker/Forestry/Still.md",
-          "Thermionic Fabricator": "Mods/Modtweaker/Forestry/Thermionic_Fabricator.md"
-        },
-        "Inspirations": {
-          "Inspirations": "Mods/Modtweaker/Inspirations/Inspirations.md",
-          "Handlers": {
-            "Cauldron": "Mods/Modtweaker/Inspirations/Handlers/Cauldron.md"
-          }
-        },
-        "Refined Storage": {
-          "Recipes": {
-            "Solderer": "Mods/Modtweaker/RefinedStorage/Recipes/Solderer.md"
-          }
-        },
-        "Tinkers' Construct": {
-          "Commands": "Mods/Modtweaker/TConstruct/Commands.md",
-          "Brackets": {
-            "Material Bracket Handler": "Mods/Modtweaker/TConstruct/Brackets/Bracket_Material.md"
-          },
-          "Alloying": "Mods/Modtweaker/TConstruct/Alloying.md",
-          "Casting": "Mods/Modtweaker/TConstruct/Casting.md",
-          "Drying": "Mods/Modtweaker/TConstruct/Drying.md",
-          "Materials": {
-            "ITICMaterial": "Mods/Modtweaker/TConstruct/Materials/ITICMaterial.md",
-            "ITICMaterialDefinition": "Mods/Modtweaker/TConstruct/Materials/ITICMaterialDefinition.md"
-          },
-          "Melting": "Mods/Modtweaker/TConstruct/Melting.md",
-          "Smeltery Fuel": "Mods/Modtweaker/TConstruct/Fuel.md"
-        },
-        "Tinkers' Complement": {
-          "TComplement": "Mods/Modtweaker/TComplement/TComplement.md",
-          "Handlers": {
-            "Blacklist": "Mods/Modtweaker/TComplement/Handlers/Blacklist.md",
-            "Overrides": "Mods/Modtweaker/TComplement/Handlers/Overrides.md",
-            "High Oven": "Mods/Modtweaker/TComplement/Handlers/HighOven.md",
-            "MixRecipeBuilder": "Mods/Modtweaker/TComplement/Handlers/MixRecipeBuilder.md",
-            "MixRecipeManager": "Mods/Modtweaker/TComplement/Handlers/MixRecipeManager.md"
-          }
-        },
-        "Thaumcraft": {
-          "Aspects": {
-            "CTAspect": "Mods/Modtweaker/Thaumcraft/Aspects/CTAspect.md",
-            "CTAspectStack": "Mods/Modtweaker/Thaumcraft/Aspects/CTAspectStack.md",
-            "Entity Aspects": "Mods/Modtweaker/Thaumcraft/Aspects/Entity_Aspects.md",
-            "Item Aspects": "Mods/Modtweaker/Thaumcraft/Aspects/Item_Aspects.md"
-          },
-          "Brackets": {
-            "Aspects": "Mods/Modtweaker/Thaumcraft/Brackets/Bracket_Aspect.md"
-          },
-          "Handlers": {
-            "Arcane Workbench": "Mods/Modtweaker/Thaumcraft/Handlers/ArcaneWorkbench.md",
-            "Crucible": "Mods/Modtweaker/Thaumcraft/Handlers/Crucible.md",
-            "Infusion": "Mods/Modtweaker/Thaumcraft/Handlers/Infusion.md",
-            "Loot": "Mods/Modtweaker/Thaumcraft/Handlers/Loot.md",
-            "Salis Mundus": "Mods/Modtweaker/Thaumcraft/Handlers/SalisMundus.md",
-            "Smelting Bonus": "Mods/Modtweaker/Thaumcraft/Handlers/SmeltingBonus.md",
-            "Warp": "Mods/Modtweaker/Thaumcraft/Handlers/Warp.md"
-          },
-          "Commands": "Mods/Modtweaker/Thaumcraft/Commands.md"
-        },
-        "Thermal Expansion": {
-          "Dynamos": {
-            "Compression Dynamo": "Mods/Modtweaker/ThermalExpansion/Dynamos/CompressionDynamo.md",
-            "Enervation Dynamo": "Mods/Modtweaker/ThermalExpansion/Dynamos/EnervationDynamo.md",
-            "Magmatic Dynamo": "Mods/Modtweaker/ThermalExpansion/Dynamos/MagmaticDynamo.md",
-            "Numistic Dynamo": "Mods/Modtweaker/ThermalExpansion/Dynamos/NumisticDynamo.md",
-            "Reactant Dynamo": "Mods/Modtweaker/ThermalExpansion/Dynamos/ReactantDynamo.md",
-            "Steam Dynamo": "Mods/Modtweaker/ThermalExpansion/Dynamos/SteamDynamo.md"
-          },
-          "Alchemical Imbuer": "Mods/Modtweaker/ThermalExpansion/Imbuer.md",
-          "Arcane Ensorcellator (Enchanter)": "Mods/Modtweaker/ThermalExpansion/Enchanter.md",
-          "Centrifugal Seperator": "Mods/Modtweaker/ThermalExpansion/Centrifugal_Seperator.md",
-          "Compactor": "Mods/Modtweaker/ThermalExpansion/Compactor.md",
-          "Coolant": "Mods/Modtweaker/ThermalExpansion/Coolant.md",
-          "Energetic Infuser": "Mods/Modtweaker/ThermalExpansion/Energetic_Infuser.md",
-          "Factorizer": "Mods/Modtweaker/ThermalExpansion/Factorizer.md",
-          "Fluid Transposer": "Mods/Modtweaker/ThermalExpansion/Fluid_Transposer.md",
-          "Fractionating Still (Refinery)": "Mods/Modtweaker/ThermalExpansion/Refinery.md",
-          "Induction Smelter": "Mods/Modtweaker/ThermalExpansion/InductionSmelter.md",
-          "Magma Crucible": "Mods/Modtweaker/ThermalExpansion/Crucible.md",
-          "Redstone Furnace": "Mods/Modtweaker/ThermalExpansion/Redstone_Furnace.md",
-          "Phytogenic Insolator": "Mods/Modtweaker/ThermalExpansion/Insolator.md",
-          "Pulverizer": "Mods/Modtweaker/ThermalExpansion/Pulverizer.md",
-          "Sawmill": "Mods/Modtweaker/ThermalExpansion/Sawmill.md"
-        }
       },
       "Modular Machinery": {
         "Modular Machinery": "Mods/ModularMachinery/ModularMachinery.md",
