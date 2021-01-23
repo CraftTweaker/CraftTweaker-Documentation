@@ -2,7 +2,36 @@
 
 This expansion was added by a mod with mod-id `crafttweaker`. Так что если вы хотите использовать эту функцию, вам нужно установить этот мод.
 
+## Утилиты
+
+| Тип результата                                                    | Является неявным |
+| ----------------------------------------------------------------- | ---------------- |
+| [IIngredientWithAmount](/vanilla/api/items/IIngredientWithAmount) | true             |
+
 ## Methods
+
+### asIIngredientWithAmount
+
+Used implicitly when a machine can accept more than one item but you only provide one.
+
+Return Type: [IIngredientWithAmount](/vanilla/api/items/IIngredientWithAmount)
+
+```zenscript
+IIngredient.asIIngredientWithAmount() as IIngredientWithAmount
+<tag:items:forge:ingots>.asIIngredientWithAmount();
+```
+### mul
+
+Use this in contexts where machines accept more than one item to state that fact.
+
+Return Type: [IIngredientWithAmount](/vanilla/api/items/IIngredientWithAmount)
+
+```zenscript
+IIngredient.mul(amount as int) as IIngredientWithAmount
+```
+| Параметр | Тип | Description             |
+| -------- | --- | ----------------------- |
+| amount   | int | No Description Provided |
 
 ### reuse
 
