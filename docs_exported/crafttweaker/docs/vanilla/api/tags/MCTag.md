@@ -24,6 +24,7 @@ MCTag implements the following interfaces. That means all methods defined in the
 
 | Result type | Is Implicit |
 |-------------|-------------|
+| [MCTagWithAmount](/vanilla/api/tags/MCTag)&lt;T&gt; | true |
 | string | true |
 
 ## Methods
@@ -55,6 +56,14 @@ MCTag.add(items as T[]) as void
 |-----------|------|-------------|
 | items | T[] | The items to add. Can be one or more items. |
 
+### asTagWithAmount
+
+Return Type: [MCTagWithAmount](/vanilla/api/tags/MCTag)&lt;T&gt;
+
+```zenscript
+MCTag.asTagWithAmount() as MCTagWithAmount<T>
+<tag:items:forge:gems>.asTagWithAmount();
+```
 ### contains
 
 Return Type: boolean
@@ -118,6 +127,17 @@ MCTag.remove(items as T[]) as void
 |-----------|------|-------------|
 | items | T[] | No Description Provided |
 
+### withAmount
+
+Return Type: [MCTagWithAmount](/vanilla/api/tags/MCTag)&lt;T&gt;
+
+```zenscript
+MCTag.withAmount(amount as int) as MCTagWithAmount<T>
+```
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| amount | int | No Description Provided |
+
 
 ## Operators
 
@@ -132,6 +152,13 @@ element as T in myMCTag
 
 ```zenscript
 myMCTag == other as MCTag<T>
+```
+
+
+### MUL
+
+```zenscript
+myMCTag * amount as int
 ```
 
 
