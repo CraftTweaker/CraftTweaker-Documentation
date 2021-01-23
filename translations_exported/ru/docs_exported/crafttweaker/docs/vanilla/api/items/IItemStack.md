@@ -16,6 +16,7 @@ import crafttweaker.api.item.IItemStack;
 IItemStack implements the following interfaces. That means all methods defined in these interfaces are also available in IItemStack
 
 - [IIngredient](/vanilla/api/items/IIngredient)
+- [IIngredientWithAmount](/vanilla/api/items/IIngredientWithAmount)
 ## Утилиты
 
 | Тип результата                                                | Является неявным |
