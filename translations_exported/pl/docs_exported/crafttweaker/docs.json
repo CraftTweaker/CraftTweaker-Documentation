@@ -121,6 +121,7 @@
           "IIngredient": "vanilla/api/items/IIngredient.md",
           "IIngredientCondition": "vanilla/api/items/IIngredientCondition.md",
           "IIngredientTransformer": "vanilla/api/items/IIngredientTransformer.md",
+          "IIngredientWithAmount": "vanilla/api/items/IIngredientWithAmount.md",
           "IItemStack": "vanilla/api/items/IItemStack.md",
           "ITooltipFunction": "vanilla/api/items/ITooltipFunction.md",
           "IngredientList": "vanilla/api/items/IngredientList.md",
@@ -160,7 +161,8 @@
         },
         "Tags": {
           "ExpandItemTag": "vanilla/api/tags/ExpandItemTag.md",
-          "MCTag": "vanilla/api/tags/MCTag.md",
+          "ExpandItemTagWithAmount": "vanilla/api/tags/ExpandItemTagWithAmount.md",
+          "MCTagWithAmount": "vanilla/api/tags/MCTag.md",
           "TagManager": "vanilla/api/tags/TagManager.md",
           "TagManagerBlock": "vanilla/api/tags/TagManagerBlock.md",
           "TagManagerEntityType": "vanilla/api/tags/TagManagerEntityType.md",
