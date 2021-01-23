@@ -2,7 +2,36 @@
 
 This expansion was added by a mod with mod-id `crafttweaker`. 因此，如果要使用此功能，则需要安装此mod。
 
+## Casters
+
+| 结果类型                                                              | 是否隐藏 |
+| ----------------------------------------------------------------- | ---- |
+| [IIngredientWithAmount](/vanilla/api/items/IIngredientWithAmount) | true |
+
 ## 方法
+
+### asIIngredientWithAmount
+
+Used implicitly when a machine can accept more than one item but you only provide one.
+
+Return Type: [IIngredientWithAmount](/vanilla/api/items/IIngredientWithAmount)
+
+```zenscript
+IIngredient.asIIngredientWithAmount() as IIngredientWithAmount
+<tag:items:forge:ingots>.asIIngredientWithAmount();
+```
+### mul
+
+Use this in contexts where machines accept more than one item to state that fact.
+
+Return Type: [IIngredientWithAmount](/vanilla/api/items/IIngredientWithAmount)
+
+```zenscript
+IIngredient.mul(amount as int) as IIngredientWithAmount
+```
+| 参数     | 类型  | 描述                      |
+| ------ | --- | ----------------------- |
+| amount | int | No Description Provided |
 
 ### reuse
 
