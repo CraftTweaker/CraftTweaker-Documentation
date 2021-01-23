@@ -19,11 +19,12 @@ IItemStack implements the following interfaces. That means all methods defined i
 - [IIngredientWithAmount](/vanilla/api/items/IIngredientWithAmount)
 ## Casters
 
-| 结果类型                                                          | 是否隐藏 |
-| ------------------------------------------------------------- | ---- |
-| [物品应用](/vanilla/api/item/ItemStack)                           | true |
-| [MCItemDefinition](/vanilla/api/item/MCItemDefinition)        | true |
-| [MCWeightedItemStack](/vanilla/api/items/MCWeightedItemStack) | true |
+| 结果类型                                                              | 是否隐藏 |
+| ----------------------------------------------------------------- | ---- |
+| [IIngredientWithAmount](/vanilla/api/items/IIngredientWithAmount) | true |
+| [物品应用](/vanilla/api/item/ItemStack)                               | true |
+| [MCItemDefinition](/vanilla/api/item/MCItemDefinition)            | true |
+| [MCWeightedItemStack](/vanilla/api/items/MCWeightedItemStack)     | true |
 
 ## 方法
 
@@ -49,6 +50,14 @@ IItemStack.addTooltip(content as MCTextComponent) as void
 | -- | -------------------------------------------------- | ----------------------- |
 | 内容 | [MCText组件](/vanilla/api/util/text/MCTextComponent) | No Description Provided |
 
+### asIIngredientWithAmount
+
+Return Type: [IIngredientWithAmount](/vanilla/api/items/IIngredientWithAmount)
+
+```zenscript
+IItemStack.asIIngredientWithAmount() as IIngredientWithAmount
+<item:minecraft:dirt>.asIIngredientWithAmount();
+```
 ### clearCustomName
 
 Clears any custom name set for this ItemStack
