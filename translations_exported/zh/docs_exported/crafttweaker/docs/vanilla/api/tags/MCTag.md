@@ -18,9 +18,10 @@ MCTag implements the following interfaces. That means all methods defined in the
 - [CommandStringDisplayable #命令字符串可显示](/vanilla/api/brackets/CommandStringDisplayable)
 ## Casters
 
-| 结果类型   | 是否隐藏 |
-| ------ | ---- |
-| string | true |
+| 结果类型                                                            | 是否隐藏 |
+| --------------------------------------------------------------- | ---- |
+| [MCTagWithAmount](/vanilla/api/tags/MCTag)&lt;T&gt; | true |
+| string                                                          | true |
 
 ## 方法
 
@@ -51,6 +52,14 @@ MCTag.add(items as T[]) as void
 | ----- | --- | ------------------------------------------- |
 | items | T[] | The items to add. Can be one or more items. |
 
+### asTagWithAmount
+
+Return Type: [MCTagWithAmount](/vanilla/api/tags/MCTag)&lt;T&gt;
+
+```zenscript
+MCTag.asTagWithAmount() as MCTagWithAmount<T>
+<tag:items:forge:gems>.asTagWithAmount();
+```
 ### contains #容器
 
 Return Type: boolean
@@ -114,6 +123,17 @@ MCTag.remove(items as T[]) as void
 | ----- | --- | ----------------------- |
 | items | T[] | No Description Provided |
 
+### withAmount
+
+Return Type: [MCTagWithAmount](/vanilla/api/tags/MCTag)&lt;T&gt;
+
+```zenscript
+MCTag.withAmount(amount as int) as MCTagWithAmount<T>
+```
+| 参数     | 类型  | 描述                      |
+| ------ | --- | ----------------------- |
+| amount | int | No Description Provided |
+
 
 ## 运算符
 
@@ -128,6 +148,13 @@ element as T in myMCTag
 
 ```zenscript
 myMCTag == other as MCTag<T>
+```
+
+
+### MUL
+
+```zenscript
+myMCTag * amount as int
 ```
 
 
