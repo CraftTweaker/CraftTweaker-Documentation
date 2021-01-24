@@ -1,3 +1,5 @@
+::requiredMod[Yanny's Stone Age]{builtIn=true modLink=https://www.curseforge.com/minecraft/mc-mods/stone-age-by-yanny}
+
 # Drying Rack
 
 ## Package
