@@ -7,12 +7,12 @@ While most of the docs are written in GitHub Flavoured Markdown, we use the [Rem
 To show that a mod is required for certain pages, we use the following syntax:
 
 ```
-::requiredMod[Create]{buildIn=false modLink=https://www.curseforge.com/minecraft/mc-mods/create requiredMod=CreateTweaker requiredModLink=https://www.curseforge.com/minecraft/mc-mods/createtweaker}
+::requiredMod[Create]{builtIn=false modLink=https://www.curseforge.com/minecraft/mc-mods/create requiredMod=CreateTweaker requiredModLink=https://www.curseforge.com/minecraft/mc-mods/createtweaker}
 
-::requiredMod[Immersive Engineering]{buildIn=true}
+::requiredMod[Immersive Engineering]{builtIn=true}
 ```
 
-`buildIn` defines whether the support is added by the mod in question (Like Thermal Series having the support be in their mod), or if an addon mod is required (Like CreateTweaker being required to add support for Create).
+`builtIn` defines whether the support is added by the mod in question (Like Thermal Series having the support be in their mod), or if an addon mod is required (Like CreateTweaker being required to add support for Create).
 
 `modLink` is a link to the mod's project page.
 

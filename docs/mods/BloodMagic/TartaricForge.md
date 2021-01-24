@@ -1,4 +1,4 @@
-::requiredMod[Blood Magic]{buildIn=true modLink=https://www.curseforge.com/minecraft/mc-mods/blood-magic}
+::requiredMod[Blood Magic]{builtIn=true modLink=https://www.curseforge.com/minecraft/mc-mods/botania}
 
 # Blood Magic Tartaric Forge / Hell Forge
 
