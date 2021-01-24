@@ -1,3 +1,5 @@
+::requiredMod[Blood Magic]{buildIn=true modLink=https://www.curseforge.com/minecraft/mc-mods/blood-magic}
+
 # Blood Magic Tartaric Forge / Hell Forge
 
 The Tartaric Forge / Hell Forge is a type of [IRecipeManager](/vanilla/api/managers/IRecipeManager) and implements all the methods that are available to IRecipeManager's, such as `removeRecipe()` and `removeAll()`.
