@@ -83,11 +83,19 @@
           "Entity": {
             "MCEntityEvent": "vanilla/api/event/entity/MCEntityEvent.md",
             "MCLivingEvent": "vanilla/api/event/entity/MCLivingEvent.md",
+            "Living": {
+              "MCLivingDeathEvent": "vanilla/api/event/entity/living/MCLivingDeathEvent.md",
+              "MCLivingHealEvent": "vanilla/api/event/entity/living/MCLivingHealEvent.md",
+              "MCLivingHurtEvent": "vanilla/api/event/entity/living/MCLivingHurtEvent.md"
+            },
             "Player": {
+              "MCAdvancementEvent": "vanilla/api/event/entity/player/MCAdvancementEvent.md",
               "MCAnvilRepairEvent": "vanilla/api/event/entity/player/MCAnvilRepairEvent.md",
               "MCItemCraftedEvent": "vanilla/api/event/entity/player/MCItemCraftedEvent.md",
+              "MCItemFishedEvent": "vanilla/api/event/entity/player/MCItemFishedEvent.md",
               "MCItemPickupEvent": "vanilla/api/event/entity/player/MCItemPickupEvent.md",
               "MCItemSmeltedEvent": "vanilla/api/event/entity/player/MCItemSmeltedEvent.md",
+              "MCPlayerDestroyItemEvent": "vanilla/api/event/entity/player/MCPlayerDestroyItemEvent.md",
               "MCPlayerEvent": "vanilla/api/event/entity/player/MCPlayerEvent.md",
               "MCPlayerLoggedInEvent": "vanilla/api/event/entity/player/MCPlayerLoggedInEvent.md",
               "MCPlayerLoggedOutEvent": "vanilla/api/event/entity/player/MCPlayerLoggedOutEvent.md",
@@ -97,6 +105,10 @@
                 "MCRightClickBlockEvent": "vanilla/api/event/entity/player/interact/MCRightClickBlockEvent.md",
                 "MCRightClickEmptyEvent": "vanilla/api/event/entity/player/interact/MCRightClickEmptyEvent.md",
                 "MCRightClickItemEvent": "vanilla/api/event/entity/player/interact/MCRightClickItemEvent.md"
+              },
+              "Xp": {
+                "MCLevelChangeEvent": "vanilla/api/event/entity/player/xp/MCLevelChangeEvent.md",
+                "MCXpChangeEvent": "vanilla/api/event/entity/player/xp/MCXpChangeEvent.md"
               }
             }
           }
@@ -171,6 +183,7 @@
         },
         "Util": {
           "BlockPos": "vanilla/api/util/BlockPos.md",
+          "DamageSource": "vanilla/api/util/DamageSource.md",
           "Direction": "vanilla/api/util/Direction.md",
           "DirectionAxis": "vanilla/api/util/DirectionAxis.md",
           "MCResourceLocation": "vanilla/api/util/MCResourceLocation.md",
