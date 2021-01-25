@@ -174,7 +174,7 @@
         "Tags": {
           "ExpandItemTag": "vanilla/api/tags/ExpandItemTag.md",
           "ExpandItemTagWithAmount": "vanilla/api/tags/ExpandItemTagWithAmount.md",
-          "MCTagWithAmount": "vanilla/api/tags/MCTag.md",
+          "MCTag": "vanilla/api/tags/MCTag.md",
           "TagManager": "vanilla/api/tags/TagManager.md",
           "TagManagerBlock": "vanilla/api/tags/TagManagerBlock.md",
           "TagManagerEntityType": "vanilla/api/tags/TagManagerEntityType.md",
