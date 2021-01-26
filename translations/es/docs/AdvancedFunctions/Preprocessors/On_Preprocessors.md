@@ -13,4 +13,4 @@ Un preprocesador se usa con ` #nombreDelPreprocesador </0>. Como # también se u
 
 `</pre> 
 
-↑ Would enable debug mode as `#debug` is found. If you really want to ensure such a rare case doesn't happen, use `//` for comments.
+↑ Activaría el modo de depuración. Probablemente no te pase a ti, pero podría pasar. Para estar 100% seguro de que esto nunca llegue a pasar, usa ` // o /* */ ` para comentarios de una o más de una líneas.
