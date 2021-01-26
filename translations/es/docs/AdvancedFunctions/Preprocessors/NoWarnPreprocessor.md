@@ -1,11 +1,11 @@
-# NoWarnPreprocessor
+# Preprocesador "Sin Errores"
 
-This preprocessor will make it that all logger warnings aren't printed to the player chat.
+Este preprocesador elimina los avisos que puedan aparecer en el chat del jugador.
 
 ## Uso
 
-You call the no warn Preprocessor by adding `#nowarn` to your script file.
+Puedes usar el procesador añadiendo ` #nowarn ` a tu archivo zs.
 
 ## Lo que hace:
 
-It globally suppresses warnings to send to players' chat. The only thing that differs from [`#ikwid`](/AdvancedFunctions/Preprocessors/IKWIDPreprocessor) is that it doesn't suppress errors.
+Suprime para todos los archivos los avisos que se podrán enviar en un futuro al chat de un jugador. La diferencia entre este preprocesador y el preprocesador "Sé lo que estoy haciendo" es que este no elimina los errores, solo los avisos.
