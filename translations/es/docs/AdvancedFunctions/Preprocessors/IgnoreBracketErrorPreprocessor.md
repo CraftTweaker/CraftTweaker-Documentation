@@ -1,12 +1,10 @@
-# Ignore Bracket Errors Preprocessor
+# Ignorar Errores De Paréntesis
 
-This Preprocessor sets your script to ignore backet errors.  
-This DOES NOT in any way, shape or form magically correct your script, it supresses the error log.
+Este preprocesador hace que tu archivo ignore errores de paréntesis (<>). ESTO NO CORRIGE TU ARCHIVO DE CUALQUIER FORMA. Los errores simplemente son eliminados.
 
 ## Uso
 
-You can call the IgnoreBracketErrors Preprocessor by placing `#ignoreBracketErrors` inside your script file.  
-This Preprocessor is file-specific, so calling it on one file doesn't affect the others (at least not for what the processor's concerned.
+Puedes usar este preprocesador escribiendo ` #ignoreBracketErrors` dentro de tu archivo zs. Este preprocesador solo afecta al archivo en el que lo usas.
 
 ## Lo que hace:
 
