@@ -1,3 +1,5 @@
+::requiredMod[Initial Inventory]{builtIn=true modLink=https://www.curseforge.com/minecraft/mc-mods/initial-inventory}
+
 # JEITweaker
 
 ## 描述
@@ -10,19 +12,31 @@
 
 ## 隐藏物品
 
-这会将给定项目隐藏在JEI中 在给出的示例中,泥土块会在JEI列表中被隐藏
+The following script will hide Dirt from JEI when looking at the item list.
 
 ```zenscript
-//mods.jei.JEI.hideItem(IItemStack stack);
+// mods.jei.JEI.hideItem(IItemStack stack);
+
 mods.jei.JEI.hideItem(<item:minecraft:dirt>);
+```
+
+## Fluid Hiding
+
+The following script will hide Lava from JEI when looking at the item list, this is just the actual Fluid, and not the Bucket Item or other Items that have the Fluid (like a Tank)
+
+```zenscript
+// mods.jei.JEI.hideFluid(IFluidStack stack);
+
+mods.jei.JEI.hideFluid(<fluid:minecraft:lava>);
 ```
 
 ## 隐藏类别
 
-这会将给定类别隐藏在JEI中 在给出的示例中,熔炉所属的类别将会在JEI列表中隐藏
+The following script will hide the Furnace category from JEI. It essentially hiding all the recipes in the category.
 
 ```zenscript
-//mods.jei.JEI.hideCategory(String category);
+// mods.jei.JEI.hideCategory(String category);
+
 mods.jei.JEI.hideCategory("minecraft:furnace");
 ```
 
@@ -43,15 +57,35 @@ mods.jei.JEI.hideCategory("minecraft:furnace");
 
 ## 添加信息
 
-这会将描述或者信息添加到在JEI中查看用法时将显示的项目!
+The following script will add any custom information to an Item or a Fluid when looking at their usages in JEI.
 
-在以下实例中将会为钻石添加3条描述.
+### Item Info
+
+The following script will add three lines to the JEI Information tab when looking at a Diamond.
 
 ```zenscript
-//mods.jei.JEI.addInfo(IItemStack stack, String[] information);
+// mods.jei.JEI.addInfo(IItemStack stack, String[] information);
+
 mods.jei.JEI.addInfo(<item:minecraft:diamond>, ["This is the first line!", "This is the second!", "third"]);
 ```
 
+
 上面的代码将会显示出如下效果![填写完的提交框](https://blamejared.com/docsImages/JEITweakerAddInfo.png)
+
+
+### Fluid Info
+
+Adding Fluid Info is very similar to adding Item Info, the only difference is that the Fluid has a size.
+
+Using `<fluid:minecraft:water>` will show a single layer of Water in JEI. Using `<fluid:minecraft:water> * 1000` will show a full block worth of Water in JEI.
+
+The following script will add three lines to the JEI Information tab when looking at Water and the Water will show as a full block.
+
+```zenscript
+// mods.jei.JEI.addInfo(IFluidStack stack, String[] information);
+
+mods.jei.JEI.addInfo(<fluid:minecraft:water> * 1000, ["This is the first line!", "This is the second!", "third"]);
+```
+
 
 
