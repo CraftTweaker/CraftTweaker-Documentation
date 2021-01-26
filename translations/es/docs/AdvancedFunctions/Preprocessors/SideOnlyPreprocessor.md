@@ -1,15 +1,15 @@
-# SideOnlyPreprocessor
+# Preprocesador de lado
 
-The preprocessor can set what side the scripts are loaded.
+Este preprocesador selecciona en que lado (Cliente o Servidor) se ejecuta el archivo.
 
 ## Uso
 
-It can be used as follows:
+Se usa así:
 
-`#sideonly sidename`
+`<code> #sideonly nombreDeLado </0>`
 
-Example: `#sideonly client` or `#sideonly server`
+` #sideonly client ` O `#sideonly server ` </br>  </br>
 
 ## Lo que hace:
 
-This will make scripts only load when the execution side is the specified side of the network. Leaving the loader out will cause the script to load on both sides (the default).
+Esto hará que los archivos solo se carguen cuando el lado especificado coincida con el de carga (Cliente O Servidor). El lado predeterminado es los dos a la vez.
