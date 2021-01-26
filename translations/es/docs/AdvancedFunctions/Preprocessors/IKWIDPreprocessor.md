@@ -1,11 +1,11 @@
-# IKWID Preprocessor
+# Preprocesador "Sé lo que estoy haciendo"
 
-This preprocessor will make it that all logger warnings and errors aren't printed to the player chat.
+Este preprocesador elimina todos los avisos y errores que puedan aparecer al jugador.
 
 ## Uso
 
-You call the IKWID Preprocessor by adding `#ikwid` to your script file.
+Puedes usar este preprocesador añadiendo `#ikwid` (las siglas de I Know What Im Doing), "Sé Lo Que Estoy Haciendo) a tu archivo zs.
 
 ## Lo que hace:
 
-It globally suppresses errors and warnings to send to players' chat. It is only supposed to be used when you are already done with development and want to suppress false positive errors from the user.
+Suprime para todos los archivos los errores y avisos que se podrán enviar en un futuro al chat de un jugador. Se supone que deberías usarlo cuando ya has terminado con el desarrollo de tu modpack y quieres que los jugadores no se asusten con errores que no son realmente errores.
