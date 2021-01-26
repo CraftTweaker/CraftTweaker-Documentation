@@ -2,7 +2,7 @@
 
 The preprocessor can set what side the scripts are loaded.
 
-## Call
+## Uso
 
 It can be used as follows:
 
@@ -10,6 +10,6 @@ It can be used as follows:
 
 Example: `#sideonly client` or `#sideonly server`
 
-## What it does
+## Lo que hace:
 
 This will make scripts only load when the execution side is the specified side of the network. Leaving the loader out will cause the script to load on both sides (the default).
