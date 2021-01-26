@@ -8,5 +8,4 @@ Puedes usar este preprocesador escribiendo ` #ignoreBracketErrors` dentro de tu 
 
 ## Lo que hace:
 
-When the preprocessor is called on a file, all error logging on bracket errors will be supressed.  
-This doesn't change the affected lines in any way, instead the only change is that your log won't contain the regarding lines.
+Cuando se usa el preprocesador, todos los errores que tengan algo que ver con cosas dentro de paréntesis de ZenScript (<>), ya sean objetos, bloques, entidades, serán eliminados y no aparecerán en ninguna parte. Esto no cambia las líneas de código en tu archivo, solo hace que los errores de paréntesis de ese archivo en cuestión no aparecerán en el archivo <0>crafttweaker.log</0> .
