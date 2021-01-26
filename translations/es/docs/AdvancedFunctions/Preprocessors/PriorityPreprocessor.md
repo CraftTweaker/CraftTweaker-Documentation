@@ -1,12 +1,16 @@
-# PriorityPreprocessor
+# Preprocesador de Prioridad
 
-The Priority Preprocessor allows you to give your scripts a loading priority.
+Este preprocesador te permite ordenar tus archivos según orden de prioridad.
 
 ## Uso
 
-You call the Priority Preprocessor by adding `#priority number` to your script with `number` being the priority number you want to set.
+Puedes usar el preprocesador de prioridad añadiendo ` #priority X ` a tu archivo zs. ` X ` debería la prioridad de ese archivo.
 
 ## Lo que hace:
 
-The higher a script's priority the earlier it is getting executed.  
-Scripts with the same priority will be sorted alphabetically using their pathname.
+Como más grande sea la prioridad de un archivo, antes se ejecutará. Si dos archivos tienen la misma prioridad, se ordenaran como de forma predeterminada, es decir, de forma alfabética. =========================================================================== Archivo 1  #priority 1000 
+print("Este archivo se carga antes que el otro");
+</0>
+
+
+</p>
