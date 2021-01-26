@@ -4,7 +4,7 @@ Este procesador activa el modo de depuración
 
 ## Uso
 
-Puedes usar el prepocesador añadiendo `#debug` a tu archivo zs>.
+Puedes usar el prepocesador añadiendo `#debug` a tu archivo zs.
 
 ## Lo que hace:
 
