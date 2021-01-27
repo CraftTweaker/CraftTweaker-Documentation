@@ -18,11 +18,11 @@ This does not mean that changes are applied twice however, changes made by scrip
 When joining a server, the server sends their scripts to the client, and the client runs those scripts. This does mean that a client without any scripts, can join a server and get the changes (useful if you need to disable an item on the server but don't want to force clients to download extra files!)
 
 
-### Writing your first script
+### Escribiendo tu primer archivo.
 
 To get started with Scripts, you can create a very basic file, called `hello.zs` in the `<gamedir>/scripts>` folder; If you aren't sure where the folder is, just run `/ct scripts` and it should open!
 
-In `hello.zs` put the following line
+Dentro de ` hola.zs ` pon la siguiente línea:
 
 ```zenscript
 println("Hello world!");
@@ -38,19 +38,18 @@ When choosing a program to use to edit scripts, take a look at what Syntax highl
 
 
 
-### The crafttweaker.log file
+### El archivo ` crafttweaker.log </0></h3>
 
-The `crafttweaker.log` file uses a specific syntax in it's output, that syntax is:
+<p spaces-before="0">El archivo <code> crafttweaker.log ` usa una sintaxis muy specifica en la salida de información, que es:</p>
 
 ```
 [HH:MM:SS.ms][LOADERSTAGE][SIDE][TYPE] <message>
 ```
 
-Using the example above, the output would be:
+Mirando el ejemplo de arriba, nuestra salida para el fichero ` hola.zs </0> sería:</p>
 
-```
-[14:58:06.697][DONE][SERVER][INFO] Hello world!
-```
+<pre><code>[14:58:06.697][DONE][SERVER][INFO] Hello world!
+`</pre>
 
 The syntax is used for debug purposes and the only time the syntax is not used, is for command dumps, in which case it just prints the message, this is done so copy pasting the dumped information is easier.
 
