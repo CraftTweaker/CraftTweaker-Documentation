@@ -6,43 +6,44 @@ CraftTweaker usa su propio lenguaje de programación llamado ` ZenScript `. Este
 
 ## Introducción
 
-¿Alguna vez has comenzado un modpack y te has sentido que juntar varios mods no te da algo sólido? Como la mayoría de mods se desarrollan independientemente uno del otro, es muy posible que uno parezca muy fácil o mucho más útil que otro mod parecido. O quizás crees que debería haber una receta mejor para algunos de los items de estos mods. O incluso quieres eliminar un item del juego sin tener que eliminar el mod entero. Or you may discover that some ore dictionary entries have too many or too few items. Now you can do all of that - each with just a single instruction to MineTweaker.
+¿Alguna vez has comenzado un modpack y te has sentido que juntar varios mods no te da algo sólido? Como la mayoría de mods se desarrollan independientemente uno del otro, es muy posible que uno parezca muy fácil o mucho más útil que otro mod parecido. O quizás crees que debería haber una receta mejor para algunos de los items de estos mods. O incluso quieres eliminar un item del juego sin tener que eliminar el mod entero. También sería posible que encuentres que un grupo de items oreDict tenga demasiados items, o falte alguno. Ahora puedes hacer todo eso, con una sola instrucción con CrafttTweaker.
 
-In addition to the core functionality provided to support Vanilla minecraft, mod integration libraries are provided with the mod to enable you to not only modify vanilla recipes, but also the mod machine recipes and mod behavior.
+A parte de las características básicas de modificar Minecraft sin mods, también existen librarias con integración para la modificación de recetas de bloques añadidos por mods y el comportamiento de los mods.
 
-## Scripts
+## Archivos
 
-Scripts are stored in `<minecraftdir>/scripts` and are loaded in the `PreInitialization` phase of Minecraft, unlike previous versions of CraftTweaker, Scripts cannot be reloaded, this is due to changes that Mojang have made in 1.12 and there is no workaround. Also, Scripts need to be on **both, the server AND the client instance** to work
+Los archivos se almacenan en ` /scripts ` y se cargan durante la fase de ` PreInicialización ` de Minecraft. A diferencia de otras versiones de CrafttTweaker, los archivos no pueden ser recargados una vez en partida, debido a unos cambios que Mojang hizo en 1.12.2 a los que no se puede hacer nada al respeto. Los archivos TIENEN que estar en el ` SERVIDOR y CLIENTE </strong> para funcionar.</p>
 
-Script files have the `.zs` prefix and can be compressed into a `.zip` that will also be read.
+<p>Archivos tienen la extensión <code> .zs ` y pueden ser comprimidos dentro de un archivo ` .zip `, que será leído igual. 
 
-### Writing your first script
+### Escribiendo tu primer archivo.
 
-To get started with Scripts, you can create a very basic file, called `hello.zs` in the `<minecraftdir>/scripts>` folder.
+Para empezar con tus archivos, crearemos un archivo muy basico, llamado ` hola.zs ` en el directorio ` /scripts `.
 
-In `hello.zs` put the following line
+Dentro de ` hola.zs ` pon la siguiente línea:
 
 ```zenscript
-print("Hello world!");
+<code> print ("Hello world!");
+
 ```
 
-Now load up Minecraft and and take a look at the `crafttweaker.log` file.
+Ahora carga Minecraft y abre el archivo ` crafttweaker.log`.
 
-The `crafttweaker.log` file is located in `<minecraftdir>` and can be read by any program that can read plaintext files.
+El archivo ` crafttweaker.log ` debería estar dentro de tu directorio de Minecraft y puede ser leído por cualquier programa que pueda leer archivos de texto (VSC, Notepad ++ , Bloc de Notas).
 
-It is recommended to use Notepad++ or Sublime Text to edit script files, however any program will do.
+Se recomenda usar Notepad ++ o Sublime Text para editar tus archivos, pero cualquiera valdrá.
 
-### The crafttweaker.log file
+### El archivo ` crafttweaker.log </0></h3>
 
-The `crafttweaker.log` file uses a specific syntax in it's output, that syntax is:
+<p>El archivo <code> crafttweaker.log ` usa una sintaxis muy specifica en la salida de información, que es:</p> 
 
-    [LOADERSTAGE][SIDE][TYPE] <message>
+    <code> [ETAPADECARGADO][LADO][TIPO] </0>
     
 
-Using the example above, the output would be:
+Mirando el ejemplo de arriba, nuestra salida para el fichero ` hola.zs </0> sería:</p>
 
-    [PREINITIALIZATION][CLIENT][INFO] Hello world!
-    
+<pre><code>[PREINITIALIZATION][CLIENT][INFO] Hello world!
+`</pre> 
 
 The syntax is used for debug purposes and the only time the syntax is not used, is for command dumps, in which case it just prints the message, this is done so copy pasting the dumps is easier.
 
