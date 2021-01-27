@@ -6,7 +6,7 @@ CraftTweaker usa su propio lenguaje de programación llamado ` ZenScript `. Este
 
 ## Introducción
 
-¿Alguna vez has comenzado un modpack y te has sentido que juntar varios mods no te da algo sólido? As mods are developed relatively independently from each other, one may feel overpowered in comparison to the other. Or you may believe that there would be a better recipe for some of the items. Or perhaps you'd want to remove an item from the game without having to remove the entire mod. Or you may discover that some ore dictionary entries have too many or too few items. Now you can do all of that - each with just a single instruction to MineTweaker.
+¿Alguna vez has comenzado un modpack y te has sentido que juntar varios mods no te da algo sólido? Como la mayoría de mods se desarrollan independientemente uno del otro, es muy posible que uno parezca muy fácil o mucho más útil que otro mod parecido. O quizás crees que debería haber una receta mejor para algunos de los items de estos mods. O incluso quieres eliminar un item del juego sin tener que eliminar el mod entero. Or you may discover that some ore dictionary entries have too many or too few items. Now you can do all of that - each with just a single instruction to MineTweaker.
 
 In addition to the core functionality provided to support Vanilla minecraft, mod integration libraries are provided with the mod to enable you to not only modify vanilla recipes, but also the mod machine recipes and mod behavior.
 
