@@ -8,10 +8,11 @@ The Pressing mechanic is a type of [IRecipeManager](/vanilla/api/managers/IRecip
 
 #### Add Recipe
 
-The following script will add a recipe that will output a Diamond and an Apple 45% of the time when a piece of Dirt is Pressed.
+The following script will add a recipe that will output a Diamond and an Apple 45% of the time when a piece of Dirt is Pressed with a duration of 100.
 
 ```zenscript
-// <recipetype:create:pressing>.addRecipe(String name, MCWeightedItemStack[] output, IIngredient input)
+// <recipetype:create:pressing>.addRecipe(String name, MCWeightedItemStack[] output, IIngredient input, @Optional(100) int duration)
+
 <recipetype:create:pressing>.addRecipe("pressing_test", [<item:minecraft:diamond>, <item:minecraft:apple> % 45], <item:minecraft:dirt>);
 ```
 
@@ -20,7 +21,8 @@ The following script will add a recipe that will output a Diamond and an Apple 4
 The follow script will remove all Pressing recipes that output Paper.
 
 ```zenscript
-// <recipetype:create:pressing>.removeRecipe(IItemStack output);
+// <recipetype:create:pressing>.removeRecipe(IItemStack output)
+
 <recipetype:create:pressing>.removeRecipe(<item:minecraft:paper>);
 ```
 
