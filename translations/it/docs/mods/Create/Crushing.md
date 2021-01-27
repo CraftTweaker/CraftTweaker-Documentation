@@ -1,4 +1,4 @@
-::requiredMod[Create]{buildIn=false modLink=https://www.curseforge.com/minecraft/mc-mods/create requiredMod=CreateTweaker requiredModLink=https://www.curseforge.com/minecraft/mc-mods/createtweaker}
+::requiredMod[Create]{builtIn=false modLink=https://www.curseforge.com/minecraft/mc-mods/create requiredMod=CreateTweaker requiredModLink=https://www.curseforge.com/minecraft/mc-mods/createtweaker}
 
 # Create Crushing
 
@@ -8,10 +8,11 @@ The Crushing mechanic is a type of [IRecipeManager](/vanilla/api/managers/IRecip
 
 #### Add Recipe
 
-The following script will add a recipe that will output a Diamond 10% of the time when a piece of Dirt is crushed.
+The following script will add a recipe that will output a Diamond 10% of the time when a piece of Dirt is crushed with a duration of 100.
 
 ```zenscript
-// <recipetype:create:crushing>.addRecipe(String name, MCWeightedItemStack[] output, IIngredient input)
+// <recipetype:create:crushing>.addRecipe(String name, MCWeightedItemStack[] output, IIngredient input, @Optional(100) int duration)
+
 <recipetype:create:crushing>.addRecipe("hopes_and_dreams", [<item:minecraft:diamond> % 10], <item:minecraft:dirt>);
 ```
 
@@ -20,6 +21,7 @@ The following script will add a recipe that will output a Diamond 10% of the tim
 The follow script will remove all Crushing recipes that output a Crushed Zinc Ore.
 
 ```zenscript
-// <recipetype:create:crushing>.removeRecipe(IItemStack output);
+// <recipetype:create:crushing>.removeRecipe(IItemStack output)
+
 <recipetype:create:crushing>.removeRecipe(<item:create:crushed_zinc_ore>);
 ```
