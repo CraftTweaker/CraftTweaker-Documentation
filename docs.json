@@ -63,6 +63,22 @@
         "Heating Sources": "mods/ExNihiloSequentia/Heating_Sources.md",
         "Sieving": "mods/ExNihiloSequentia/Sieving.md"
       },
+      "Immersive Engineering": {
+        "Alloy Kiln": "mods/ImmersiveEngineering/AlloyKiln.md",
+        "Arc Furnace": "mods/ImmersiveEngineering/ArcFurnace.md",
+        "Blast Furnace": "mods/ImmersiveEngineering/BlastFurnace.md",
+        "Blueprint": "mods/ImmersiveEngineering/Blueprint.md",
+        "Bottling Machine": "mods/ImmersiveEngineering/BottlingMachine.md",
+        "Cloche": "mods/ImmersiveEngineering/Cloche.md",
+        "Coke Oven": "mods/ImmersiveEngineering/CokeOven.md",
+        "Crusher": "mods/ImmersiveEngineering/Crusher.md",
+        "Fermenter": "mods/ImmersiveEngineering/Fermenter.md",
+        "Metal Press": "mods/ImmersiveEngineering/MetalPress.md",
+        "Mixer": "mods/ImmersiveEngineering/Mixer.md",
+        "Refinery": "mods/ImmersiveEngineering/Refinery.md",
+        "Sawmill": "mods/ImmersiveEngineering/Sawmill.md",
+        "Squeezer": "mods/ImmersiveEngineering/Squeezer.md"
+      },
       "InitialInventory": {
         "InitialInventory": "mods/InitialInventory/InitialInventory.md"
       },
