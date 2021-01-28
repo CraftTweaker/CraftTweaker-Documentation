@@ -53,21 +53,20 @@ Mirando el ejemplo de arriba, nuestra salida para el fichero ` hola.zs </0> ser�
 
 The syntax is used for debug purposes and the only time the syntax is not used, is for command dumps, in which case it just prints the message, this is done so copy pasting the dumped information is easier.
 
-### Comments
+### Comentarios
 
-Comments can be used to make your script files more readable and easier to understand!
+Los comentarios se acostumbran a usar para hacer tus archivos más comprensibles y fáciles de entender para ti y para otra persona que lo pueda leer.
 
-ZenScript supports 3 types of comments, being:
+Zenscript ofrece 3 tipos de comentarios, que son:
 
-Single line: `// I'm a single line comment!`
+Comentario de una línea : ` //Soy un comentario `
 
-Alternate Single Line: `# I'm also a single line comment!`
+Comentario de una línea alternativo: ` #Yo también `
 
-Multiline:
+Comentario de más de una línea
 ```
-/* I'm 
-a
-multiline comment! */
+<code> /*  Soy </br> un comentario </br> multilinear!
+ */
 ```
 
 Just note, that `#` comments are also used for PreProcessors (TODO link to PreProcessors when they are documented), so while they are still valid comments, they could cause unwanted side effects. 
