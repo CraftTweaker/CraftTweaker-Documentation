@@ -1,15 +1,14 @@
 # Usando esta wiki
 
-This wiki is meant to provide you an outline on which Types exist in crafttweaker and what their uses are.  
-There also are some examples in certain entries to provide further clarity.
+El objetivo de esta wiki es darte una idea general de que Tipos existen dentro de CraftTweaker y sus usos. </br> También hay ejemplos en ciertas entradas para reforzar lo que se explica para que la wiki no sea puramente teórica.
 
-# Terms
+# Términos
 
-Before we start, there are some terms you might want to get used to:
+Antes de empezar, estos términos van a aparecer a menudo, así que aquí tienes una pequeña explicación: 
 
 ## ZenGetter
 
-A ZenGetter is a way of retrieving information from a certain object. For example [IItemStack](/Vanilla/Items/IItemStack/) has a ZenGetter called "displayName".  
+Un ZenGetter es un método para conseguir información de un objeto. For example [IItemStack](/Vanilla/Items/IItemStack/) has a ZenGetter called "displayName".  
 We use the ZenGetter like this:
 
 ```zenscript
