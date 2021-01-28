@@ -45,7 +45,7 @@ Mirando el ejemplo de arriba, nuestra salida para el fichero ` hola.zs </0> ser�
 <pre><code>[PREINITIALIZATION][CLIENT][INFO] Hello world!
 `</pre> 
 
-The syntax is used for debug purposes and the only time the syntax is not used, is for command dumps, in which case it just prints the message, this is done so copy pasting the dumps is easier.
+La sintaxis se usa para depuración y la única vez en la que no sea usa es durante líneas que salen al archivo a causa de un comando, para que sea más fácil copiar y pegar la información que haya sido añadida al archivo como puede ser por ejemplo una lista de objetos. 
 
 ### Comentarios
 
