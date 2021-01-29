@@ -8,15 +8,14 @@ Antes de empezar, estos términos van a aparecer a menudo, así que aquí tienes
 
 ## ZenGetter
 
-Un ZenGetter es un método para conseguir información de un objeto. For example [IItemStack](/Vanilla/Items/IItemStack/) has a ZenGetter called "displayName".  
-We use the ZenGetter like this:
+Un ZenGetter es un método para conseguir información de un objeto. Por ejemplo, el tipo ` IItemStack </a> tiene un <code> ZenGetter </0> llamado "displayName". </br>
+Este ZenGetter se usa así:</p>
 
-```zenscript
-//object.zenGetter;
+<pre><code class="zenscript">//object.zenGetter;
 <minecraft:iron_ingot>.displayName;
-```
+`</pre> 
 
-A ZenGetter will always return something, in this case a string representing the item's name ("Iron Ingot").
+Un ZenGetter devuelve un algo, en este caso un string que representa el nombre que se verá cuando aguantes el objeto en tu inventario ("Lingote de Hierro").
 
 ## ZenSetter
 
