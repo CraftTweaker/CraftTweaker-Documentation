@@ -2,8 +2,6 @@
 
 Contiene informazioni su tutte le mod registrate. È possibile accedere usando la parola chiave globale `caricata.Mods`
 
-Questa classe è stata aggiunta da una mod con ID `crafttweaker`. Perciò, è necessario avere questa mod installata per poter utilizzare questa funzione.
-
 ## Importing the class
 
 It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
@@ -16,7 +14,7 @@ import crafttweaker.api.mods.Mods;
 
 ### getMod
 
-Ottiene una mod specifica
+Gets a specific mod
 
 Return Type: [ModInfo](/vanilla/api/mods/ModInfo)
 
