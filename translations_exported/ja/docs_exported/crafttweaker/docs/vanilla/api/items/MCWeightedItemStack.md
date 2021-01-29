@@ -2,8 +2,6 @@
 
 ItemStack は、通常レシピ出力に使用されます。 <p> WeightedStack を作成するために使用されたスタックが変更可能であれば、サイズ設定者は元のスタックも変更します!
 
-This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
-
 ## Importing the class
 
 It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
@@ -13,12 +11,12 @@ import crafttweaker.api.item.MCWeightedItemStack;
 
 
 ## Implemented Interfaces
-MCWeightedItemStack は、以下のインターフェイスを実装しています。 That means all methods defined in these interfaces are also available in MCWeightedItemStack
+MCWeightedItemStack implements the following interfaces. That means all methods defined in these interfaces are also available in MCWeightedItemStack
 
 - [CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
 ## Constructors
 
-weightedItemStackを手動で作成します。 通常、IItemStackの演算子または `.weight(weight)` メソッドを使用できますが、
+Manually creates the weightedItemStack. Usually you can use the operator or `.weight(weight)` method of IItemStack, though
 ```zenscript
 new MCWeightedItemStack(itemStack as IItemStack, weight as double) as MCWeightedItemStack
 new MCWeightedItemStack(<item:minecraft:bedrock>, 0.5D);
@@ -33,7 +31,7 @@ new MCWeightedItemStack(<item:minecraft:bedrock>, 0.5D);
 
 ### weight
 
-指定された重みを持つ新しい重み付きスタックを作成します
+Creates a new Weighted Stack with the given weight
 
 Return Type: [MCWeightedItemStack](/vanilla/api/items/MCWeightedItemStack)
 
@@ -60,7 +58,7 @@ myMCWeightedItemStack % newWeight as int
 
 ### MUL
 
-アイテムスタックの量を設定します。 <p> 元のスタックが変更可能であれば、元のスタックのサイズも変更されます。
+Sets the itemStack's amount. <p> If the original Stack was mutable, also mutates the original stack's size.
 
 ```zenscript
 myMCWeightedItemStack * newAmount as int
