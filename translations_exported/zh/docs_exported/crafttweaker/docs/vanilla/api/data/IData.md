@@ -2,8 +2,6 @@
 
 IData接口是处理NBT等数据的通用接口。 您可以将所有原始数据 (短数据, 双精度数据, 字符串数据, 整型数据, ...) 以及某些数组转换为IData。 Remember that while they offer similar features, IData and their counterparts are NOT the same, which is why they will be referred to as DataTypes (e.g. [ByteData](/vanilla/api/data/ByteData)).
 
-这个类由mod-id为`crafttweaker`的模组添加. 因此，如果要使用此功能，则需要安装此mod。
-
 ## 导入相关包
 
 It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
