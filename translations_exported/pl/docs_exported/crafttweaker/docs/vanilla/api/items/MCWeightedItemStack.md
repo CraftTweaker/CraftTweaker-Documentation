@@ -2,8 +2,6 @@
 
 [PLACEHOLDER] ItemStack with a przypadek, zwykle used for recipe outputs. <p> Ostrożnie, jeśli stos użyty do utworzenia Wagi Stack był zmienny, to ustawnik rozmiaru zmusza również oryginalny stos!
 
-This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
-
 ## Importing the class
 
 It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
@@ -13,12 +11,12 @@ import crafttweaker.api.item.MCWeightedItemStack;
 
 
 ## Implemented Interfaces
-MCWeweightedItemStack implementuje następujące interfejsy. That means all methods defined in these interfaces are also available in MCWeightedItemStack
+MCWeightedItemStack implements the following interfaces. That means all methods defined in these interfaces are also available in MCWeightedItemStack
 
 - [CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
 ## Constructors
 
-Ręcznie tworzy ważony ItemStack. Zazwyczaj możesz użyć operatora lub `.weight (waga)` metody IItemStack, choć
+Manually creates the weightedItemStack. Usually you can use the operator or `.weight(weight)` method of IItemStack, though
 ```zenscript
 new MCWeightedItemStack(itemStack as IItemStack, weight as double) as MCWeightedItemStack
 new MCWeightedItemStack(<item:minecraft:bedrock>, 0.5D);
@@ -33,7 +31,7 @@ new MCWeightedItemStack(<item:minecraft:bedrock>, 0.5D);
 
 ### weight
 
-Tworzy nowy ważony stos o podanej wadze
+Creates a new Weighted Stack with the given weight
 
 Return Type: [MCWeightedItemStack](/vanilla/api/items/MCWeightedItemStack)
 
@@ -60,7 +58,7 @@ myMCWeightedItemStack % newWeight as int
 
 ### MUL
 
-Ustawia ilość itemStack. <p> Jeśli oryginalny Stack był zmienny, również mutuje rozmiar oryginalnego stacka.
+Sets the itemStack's amount. <p> If the original Stack was mutable, also mutates the original stack's size.
 
 ```zenscript
 myMCWeightedItemStack * newAmount as int
