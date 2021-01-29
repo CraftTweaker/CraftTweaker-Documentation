@@ -2,8 +2,6 @@
 
 This event is fired every time the player fishes up an item. It can be used to add or remove drops, change the durability damage, do other effects, and even prevent the fishing by canceling the event.
 
-Questa classe è stata aggiunta da una mod con ID `crafttweaker`. Perciò, è necessario avere questa mod installata per poter utilizzare questa funzione.
-
 ## Importing the class
 
 It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
