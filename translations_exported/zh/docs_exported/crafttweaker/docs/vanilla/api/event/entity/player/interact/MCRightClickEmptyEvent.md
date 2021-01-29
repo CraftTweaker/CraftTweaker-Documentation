@@ -2,8 +2,6 @@
 
 The rightClickEmpty event is fired whenever the player right clicks with an empty hand. It does not offer any special getters, but you can still access all members from [MCPlayerInteractEvent](/vanilla/api/event/entity/player/interact/MCPlayerInteractEvent)
 
-这个类由mod-id为`crafttweaker`的模组添加. 因此，如果要使用此功能，则需要安装此mod。
-
 ## 导入相关包
 
 It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
