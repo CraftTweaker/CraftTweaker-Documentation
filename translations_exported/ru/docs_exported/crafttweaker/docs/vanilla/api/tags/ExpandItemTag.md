@@ -2,8 +2,6 @@
 
 This expansion specifically targets itemTags. It adds implicit casters to IIngredient and IData, so that you can use them wherever you can use IIngredient. <p> Only downside is that if you want to use Ingredient Transformers, you will need to call `asIIngredient()` first.
 
-This expansion was added by a mod with mod-id `crafttweaker`. Так что если вы хотите использовать эту функцию, вам нужно установить этот мод.
-
 ## Утилиты
 
 | Тип результата                                                    | Является неявным |
