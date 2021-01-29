@@ -1,7 +1,5 @@
 # Expansion for MCTagWithAmount&lt;MCItemDefinition&gt;
 
-This expansion was added by a mod with mod-id `crafttweaker`. Perciò, è necessario avere questa mod installata per poter utilizzare questa funzione.
-
 ## Caster
 
 | Tipo Risultato                                                    | Implicito |
