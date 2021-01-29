@@ -2,8 +2,6 @@
 
 This event is fired every time the player earns an advancement. This happens after the advancement has already been earned so it can not be prevented.
 
-Этот класс был добавлен модом с mod-id `crafttweaker`. Так что если вы хотите использовать эту функцию, вам нужно установить этот мод.
-
 ## Импорт класса
 
 It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
