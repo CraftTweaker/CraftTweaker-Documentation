@@ -2,8 +2,6 @@
 
 ItemStack с шансом, обычно используется для вывода рецептов. <p> Будьте осторожны, если стек был использован для создания WeightedStack, то набор размеров будет мутировать оригинальную стеку!
 
-Этот класс был добавлен модом с mod-id `crafttweaker`. Так что если вы хотите использовать эту функцию, вам нужно установить этот мод.
-
 ## Импорт класса
 
 It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
@@ -13,12 +11,12 @@ import crafttweaker.api.item.MCWeightedItemStack;
 
 
 ## Implemented Interfaces
-MCWeightedItemStack реализует следующие интерфейсы. That means all methods defined in these interfaces are also available in MCWeightedItemStack
+MCWeightedItemStack implements the following interfaces. That means all methods defined in these interfaces are also available in MCWeightedItemStack
 
 - [CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
 ## Constructors
 
-Вручную создает взвешенный ItemStack. Обычно вы можете использовать оператор или `.weight(вес)` метод IItemStack, хотя
+Manually creates the weightedItemStack. Usually you can use the operator or `.weight(weight)` method of IItemStack, though
 ```zenscript
 new MCWeightedItemStack(itemStack as IItemStack, weight as double) as MCWeightedItemStack
 new MCWeightedItemStack(<item:minecraft:bedrock>, 0.5D);
@@ -33,7 +31,7 @@ new MCWeightedItemStack(<item:minecraft:bedrock>, 0.5D);
 
 ### weight
 
-Создает новый взвешенный стек с заданным весом
+Creates a new Weighted Stack with the given weight
 
 Return Type: [MCWeightedItemStack](/vanilla/api/items/MCWeightedItemStack)
 
@@ -60,7 +58,7 @@ myMCWeightedItemStack % newWeight as int
 
 ### MUL
 
-Устанавливает кол-во предметов Stack. <p> Если оригинальный стек был мутирован, также мутирует размер оригинала.
+Sets the itemStack's amount. <p> If the original Stack was mutable, also mutates the original stack's size.
 
 ```zenscript
 myMCWeightedItemStack * newAmount as int
