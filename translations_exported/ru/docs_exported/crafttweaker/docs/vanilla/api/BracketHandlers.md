@@ -2,8 +2,6 @@
 
 This class contains the "simple" Bracket handlers from CraftTweaker. However, some Bracket handlers, like for recipeTypes, tags, tagManagers, won't be shown here as they use a different internal structure.
 
-Этот класс был добавлен модом с mod-id `crafttweaker`. Так что если вы хотите использовать эту функцию, вам нужно установить этот мод.
-
 ## Импорт класса
 
 It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
@@ -82,7 +80,7 @@ BracketHandlers.getDirectionAxis("x");
 
 ### getEffect
 
-Получает эффект, основанный на имени реестра. Бросает ошибку, если она не может найти эффект.
+Gets the effect based on registry name. Throws an error if it can't find the effect.
 
 Returns: The found effect Return Type: [MCPotionEffect](/vanilla/api/potions/MCPotionEffect)
 
