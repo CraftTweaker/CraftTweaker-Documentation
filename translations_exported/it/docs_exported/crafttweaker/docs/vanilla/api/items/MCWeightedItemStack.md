@@ -2,8 +2,6 @@
 
 Un ItemStack con una possibilità, di solito usato per gli output delle ricette. <p> Attenzione, se lo stack che è stato utilizzato per creare il WeightedStack era mutabile, allora il setter di dimensioni muterà anche lo stack originale!
 
-Questa classe è stata aggiunta da una mod con ID `crafttweaker`. Perciò, è necessario avere questa mod installata per poter utilizzare questa funzione.
-
 ## Importing the class
 
 It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
@@ -13,12 +11,12 @@ import crafttweaker.api.item.MCWeightedItemStack;
 
 
 ## Interfacce Implementate
-MCWeightedItemStack implementa le seguenti interfacce. That means all methods defined in these interfaces are also available in MCWeightedItemStack
+MCWeightedItemStack implements the following interfaces. That means all methods defined in these interfaces are also available in MCWeightedItemStack
 
 - [CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
 ## Constructors
 
-Crea manualmente il weightedItemStack. Di solito è possibile utilizzare l'operatore o il metodo `.weight(weight)` di IItemStack, anche se
+Manually creates the weightedItemStack. Usually you can use the operator or `.weight(weight)` method of IItemStack, though
 ```zenscript
 new MCWeightedItemStack(itemStack as IItemStack, weight as double) as MCWeightedItemStack
 new MCWeightedItemStack(<item:minecraft:bedrock>, 0.5D);
@@ -33,7 +31,7 @@ new MCWeightedItemStack(<item:minecraft:bedrock>, 0.5D);
 
 ### weight
 
-Crea una nuova pila ponderata con il peso dato
+Creates a new Weighted Stack with the given weight
 
 Return Type: [MCWeightedItemStack](/vanilla/api/items/MCWeightedItemStack)
 
@@ -60,7 +58,7 @@ myMCWeightedItemStack % newWeight as int
 
 ### MUL
 
-Imposta l'importo dell'oggettoStack. <p> Se lo Stack originale era mutabile, muta anche la dimensione dello stack originale.
+Sets the itemStack's amount. <p> If the original Stack was mutable, also mutates the original stack's size.
 
 ```zenscript
 myMCWeightedItemStack * newAmount as int
