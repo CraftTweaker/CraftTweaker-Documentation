@@ -2,8 +2,6 @@
 
 Default interface for Registry based handlers as they can all remove recipes by ResourceLocation.
 
-Этот класс был добавлен модом с mod-id `crafttweaker`. Так что если вы хотите использовать эту функцию, вам нужно установить этот мод.
-
 ## Импорт класса
 
 It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
@@ -87,7 +85,7 @@ craftingTable.removeByModid("minecraft");
 | -------- | ------ | ------------------------------ |
 | modid    | string | modid of the recipes to remove |
 
-Удалите рецепт на основе мода названия реестра с добавленной проверкой исключения, так что вы можете удалить весь мод кроме нескольких указанных модификаций.
+Remove recipe based on Registry name modid with an added exclusion check, so you can remove the whole mod besides a few specified.
 
 Return Type: void
 
