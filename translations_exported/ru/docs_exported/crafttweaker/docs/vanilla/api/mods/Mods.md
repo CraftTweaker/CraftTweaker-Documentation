@@ -2,8 +2,6 @@
 
 Зацепка информации обо всех зарегистрированных модах. Можно получить доступ с помощью `загруженных модов` глобального ключевого слова
 
-Этот класс был добавлен модом с mod-id `crafttweaker`. Так что если вы хотите использовать эту функцию, вам нужно установить этот мод.
-
 ## Импорт класса
 
 It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
@@ -16,7 +14,7 @@ import crafttweaker.api.mods.Mods;
 
 ### getMod
 
-Получает определенный мод
+Gets a specific mod
 
 Return Type: [ModInfo](/vanilla/api/mods/ModInfo)
 
