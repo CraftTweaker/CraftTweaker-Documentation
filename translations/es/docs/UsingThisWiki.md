@@ -19,15 +19,13 @@ Un ZenGetter devuelve un algo, en este caso un string que representa el nombre q
 
 ## ZenSetter
 
-A ZenSetter works almost the same way as a ZenGetter does, the only difference is that a ZenSetter sets, a ZenGetter gets.  
-Let's stay with our [IItemStack](/Vanilla/Items/IItemStack/), since it also has a ZenSetter called "displayName". We know from the entry that it is of type string.
+Un ZenSetter es lo mismo que un ZenGetter, pero un ZenSetter establece un valor mientras que un ZenGetter obtiene esa misma información. </br> Nos quedaremos con nuestro tipo `ItemStack </0>, ya que también tiene el ZenSetter "displayName". Sabemos por el tipo de ZenMethod que devolvera un tipo String.</p>
 
-We use the ZenSetter like this:
+<p>We use the ZenSetter like this:</p>
 
-```zenscript
-//object.zenSetter = newValue;
+<pre><code class="zenscript">//object.zenSetter = newValue;
 <minecraft:iron_ingot>.displayName = "Unsuspecting Ingot";
-```
+`</pre> 
 
 A ZenSetter will never return something, since it is meant to set, not to get.
 
