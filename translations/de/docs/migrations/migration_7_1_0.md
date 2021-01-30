@@ -1,21 +1,19 @@
-# Migrating Scrips to CraftTweaker 7.1
+# Migriere Scripts zu CraftTweaker 7.1
 
-CraftTweaker version 7.1 has some changes that break backwards compatibility.  
-These breaking changes are in the API that addons use as well as in the types that scripts use.  
-This document should give an overview of the most important changes and how pack developers can get their scripts working again.
+CraftTweaker 7.1 hat einige Änderungen, die nicht abwärtskompatibel sind. Diese Änderungen sind sowohl in der API als auch in den Skripten zu sehen.
 
 
-## MCTag becomes MCTag&LT;T&GT;
+## MCTag wird zu MCTag&LT;T&GT;
 
-We replaced Tags with a generic system that is more extensible and will work better with future updates.  
-That change will break existing scripts in two ways:
+Wir haben Tags durch ein generisches System ersetzt, das erweiterbar ist und mit zukünftigen Updates besser funktionieren wird.  
+Diese Änderung wird bestehende Skripte auf zwei Arten nicht funktionstüchtig machen:
 
-1) The specialized addition and removal methods have been removed. <br>You now use `add` and `remove` instead of `addItems`, `addFluids` and the like. 2) The syntax of the Bracket handlers now requires the tag type as an additional parameter. <br>So `<tag:forge:gems>` becomes `<tag:items:forge:gems>`
+1) Die spezialisierten Zusatz- und Entnahmemethoden wurden entfernt. <br>Du verwendest jetzt `add` und `remove` anstelle von `addItems` und `addFluids` sowie die "remove" Varianten. 2) Die Syntax der Bracket-Handler benötigt nun den Tag-Typ als zusätzlichen Parameter. <br>Also wird `<tag:forge:gems>` zu `<tag:items:forge:gems>`
 
-The `/ct dump tags` and `/ct hand` commands have been updated to reflect this change.  
-If you need to use any of IIngredient's expansion methods from an item tag, you need to call `.asIIngredient()` first.
+Die `/ct dump tags` und `/ct hand` Befehle wurden aktualisiert, um diese Änderung wiederzugeben.  
+Wenn Sie eine der Erweiterungsmethoden von IIngredient von einem Item-Tag verwenden müssen, müssen Sie diese mit `.asIIngredient()` abrufen.
 
-Migration example
+Migrationsbeispiel
 ```zenscript
 import crafttweaker.api.tag.MCTag;
 import crafttweaker.api.item.MCItemDefinition;
