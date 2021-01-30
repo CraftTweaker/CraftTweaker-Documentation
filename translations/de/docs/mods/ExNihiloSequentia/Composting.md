@@ -4,9 +4,9 @@
 `import mods.exnihilosequentia.ZenCompostRecipe;`
 
 ## Methoden
-- **create(String name)**
-- **setInput(IIngredient input)** the input
-- **setAmount(int amount)** the chance for an item to add a level of compost
+- **create(String name) // Name des Skripts **
+- **setInput(IIngredient input)** // Der Input
+- **setAmount(int amount)** // Die Höhe des Kompostlevels für ein Item (1000 = 1 Block)
 
 
 ## Addition
