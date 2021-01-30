@@ -4,11 +4,11 @@
 `import mods.exnihilosequentia.ZenCrucibleRecipe;`
 
 ## Methoden
-- **create(String name)**
-- **setInput(IIngredient input)** the input
-- **setAmount(int amount)** the amount of fluid produced
-- **setCrucibleType(String crucibleType)** the crucible type
-- **setResultFluid(IFluidStack fluid)** the resulting fluid
+- **create(String name) // Name des Skripts **
+- **setInput(IIngredient input)** // Der Input
+- **setAmount(int amount)** // die Menge der erzeugten Flüssigkeit
+- **setCrucibleType(String crucibleType)** // Der Crucible Typ
+- **setResultFluid(IFluidStack fluid)** // die resultierende Flüssigkeit
 
 
 ## Addition
