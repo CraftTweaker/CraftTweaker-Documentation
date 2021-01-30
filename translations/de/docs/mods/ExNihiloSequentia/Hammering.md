@@ -4,10 +4,10 @@
 `import mods.exnihilosequentia.ZenHammerRecipe;`
 
 ## Methoden
-- **create(String name)**
-- **setInput(IIngredient input)** the block that needs to be broken
-- **addOutput(IItemStack drop)** the item the block drops when broken
-- **addOutput(IItemStack drop, float chance)** the other item the blocks drops when broken and its chance to drop
+- **create(String name) // Name des Skripts **
+- **setInput(IIngredient input)** // der Block, der zerstört werden soll
+- **addOutput(IItemStack drop)** // das Item, wenn der Block zerstört wurde
+- **addOutput(IItemStack drop, float chance)** // ein anderes Item und die Drop-Chance, wenn der Block zerstört wurde
 
 
 ## Addition
