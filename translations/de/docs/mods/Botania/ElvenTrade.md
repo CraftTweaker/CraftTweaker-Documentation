@@ -1,4 +1,4 @@
-# Botania Elven Trade
+# Botania Elfenhandel
 
 Elven Trade is a type of [IRecipeManager](/vanilla/api/managers/IRecipeManager) and implements all the methods that are available to IRecipeManager's, such as `removeRecipe()` and `removeAll()`.
 
