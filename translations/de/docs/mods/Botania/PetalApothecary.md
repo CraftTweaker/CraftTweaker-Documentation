@@ -1,12 +1,12 @@
 # Botania Petal Apothecary
 
-The Petal Apothecary is a type of [IRecipeManager](/vanilla/api/managers/IRecipeManager) and implements all the methods that are available to IRecipeManager's, such as `removeRecipe()` and `removeAll()`.
+Die Petal-Apotheke ist vom Typ  [IRecipeManager](/vanilla/api/managers/IRecipeManager) und implementiert alle Methoden, die IRecipeManager zur Verfügung stehen wie `removeRecipe()` und `removeAll()`.
 
 ## Methoden
 
 #### Rezept hinzufügen
 
-The follow script will add a recipe to the Petal Apothecary that will give a Diamond when a piece of Dirt is given to the Petal Apothecary (You will still need to complete the recipe by throwing Wheat Seeds into the Petal Apothecary).
+Das folgende Skript fügt dem Petal-Apothecary ein Rezept hinzu, das einen Diamanten gibt, wenn der Petal-Apothecary ein Stück Erde gegeben wird (du musst das Rezept trotzdem vervollständigen, indem du Weizensamen in die Petal-Apothecary wirfst).
 
 ```zenscript
 // <recipetype:botania:petal_apothecary>.addRecipe(String name, IItemStack output, IIngredient... inputs)
@@ -16,7 +16,7 @@ The follow script will add a recipe to the Petal Apothecary that will give a Dia
 
 #### Remove Recipes
 
-The follow script will remove all Petal Apothecary recipes that output a Hydroangeas
+Das folgende Skript wird alle Petal-Apothecary-Rezepte entfernen, die eine Hydroangeas ausgeben
 
 ```zenscript
 // <recipetype:botania:petal_apothecary>.removeRecipe(IItemStack output);
