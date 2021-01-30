@@ -4,9 +4,9 @@
 `import mods.exnihilosequentia.ZenCrookRecipe;`
 
 ## Methoden
-- **create(String name)**
-- **setInput(IIngredient input)** the input
-- **addDrop(IItemStack drop, float chance)** the item that drops and its chance to drop
+- **create(String name) // Name des Skripts **
+- **setInput(IIngredient input)** // Der Input
+- **addDrop(IItemStack drop, float chance)** // Das Item und die Drop-Chance
 
 
 ## Addition
