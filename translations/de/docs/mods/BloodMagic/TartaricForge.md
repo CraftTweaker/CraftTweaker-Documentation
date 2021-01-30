@@ -1,14 +1,14 @@
 ::requiredMod[Blood Magic]{buildIn=true modLink=https://www.curseforge.com/minecraft/mc-mods/blood-magic}
 
-# Blood Magic Tartaric Forge / Hell Forge
+# Blood Magic Tartarik Schmiede / Höllenschmiede
 
-The Tartaric Forge / Hell Forge is a type of [IRecipeManager](/vanilla/api/managers/IRecipeManager) and implements all the methods that are available to IRecipeManager's, such as `removeRecipe()` and `removeAll()`.
+Die Tartaric Forge / Höllenschmiede ist vom Typ [IRecipeManager](/vanilla/api/managers/IRecipeManager) und implementiert alle Methoden, die für IRecipeManager verfügbar sind wie `removeRecipe()` und `removeAll()`.
 
 ## Methoden
 
 #### Rezept hinzufügen
 
-The following script will add a recipe that will output a Diamond when Coal is given to a Tartaric Forge / Hell Forge. The Forge requires a minimum of 0 souls and will drain 500 souls.
+Das folgende Skript fügt ein Rezept hinzu, das Diamanten ausgibt, wenn Kohle einer Tartaric Schmiede / Höllenschmiede gegeben wird. Die Schmiede benötigt mindestens 0 Seelen und wird 500 Seelen entziehen.
 
 ```zenscript
 // <recipetype:bloodmagic:altar>.addRecipe(String name, IItemStack output, IIngredient[] input, double minimumSouls, double soulDrain)
@@ -17,9 +17,9 @@ The following script will add a recipe that will output a Diamond when Coal is g
 
 #### Remove Recipes
 
-The follow script will remove all recipes from the Tartaric Forge / Hell Forge that output a Soul Axe
+Das folgende Skript wird alle Rezepte aus der Tartarien Schmiede / Höllenschmiede entfernen, die eine Seelenaxt ausgibt
 
 ```zenscript
-<recipetype:bloodmagic:soulforge>.removeRecipe(IItemStack output);
+//<recipetype:bloodmagic:soulforge>.removeRecipe(IItemStack output);
 <recipetype:bloodmagic:soulforge>.removeRecipe(<item:bloodmagic:soulaxe>);
 ```
