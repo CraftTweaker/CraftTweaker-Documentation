@@ -4,10 +4,10 @@
 `import mods.exnihilosequentia.ZenSieveRecipe;`
 
 ## Methoden
-- **create(String name)**
-- **setInput(IIngredient input)** the input
-- **addDrop(IItemStack drop)** the item that drops from the block
-- **addRoll(String mesh, float chance)** the mesh type and the chance for an additional item to drop
+- **create(String name) // Name des Skripts **
+- **setInput(IIngredient input)** // Der Input
+- **addDrop(IItemStack drop)** // das Item, das von dem Block gedroppt werden soll
+- **addRoll(String mesh, float chance)** // der Netztyp und die Drop-Chance
 - **setWaterlogged()** if the sieve must be waterlogged for the recipe
 
 
