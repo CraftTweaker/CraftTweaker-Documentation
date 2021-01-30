@@ -2,13 +2,13 @@
 
 # Create Mechanical Crafter
 
-The Mechanical Crafter is a type of [IRecipeManager](/vanilla/api/managers/IRecipeManager) and implements all the methods that are available to IRecipeManager's, such as `removeRecipe()` and `removeAll()`.
+Der Mechanical Crafter ist vom Typ [IRecipeManager](/vanilla/api/managers/IRecipeManager) und implementiert alle Methoden, die IRecipeManager's zur Verfügung stehen wie `removeRecipe()` und `removeAll()`.
 
 ## Methoden
 
 #### Rezept hinzufügen
 
-The following script will add a recipe that will output a Diamond when 3 sticks are put in the given pattern in the Mechanical Crafter.
+Das folgende Skript fügt ein Rezept hinzu, das einen Diamanten ausgibt, wenn 3 Stöcke in das angegebene Muster des Mechanical Crafters gelegt werden.
 
 ```zenscript
 // <recipetype:create:mechanical_crafting>.addRecipe(String name, IItemStack output, IIngredient[][] ingredients)
@@ -18,7 +18,7 @@ The following script will add a recipe that will output a Diamond when 3 sticks 
 
 #### Remove Recipes
 
-The follow script will remove all Mechanical Crafter recipes that output a Flywheel.
+Das folgende Skript wird alle Rezepte des Mechanical Cratfter entfernen, die ein Flywheel ausgeben.
 
 ```zenscript
 // <recipetype:create:mechanical_crafting>.removeRecipe(IItemStack output)
