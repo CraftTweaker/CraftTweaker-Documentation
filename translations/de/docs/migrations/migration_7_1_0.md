@@ -1,4 +1,4 @@
-# Migrating Scripts to CraftTweaker 7.1
+# Migriere Skripts zu CraftTweaker 7.1
 
 CraftTweaker 7.1 hat einige Änderungen, die nicht abwärtskompatibel sind. Diese Änderungen sind sowohl in der API als auch in den Skripten zu sehen.
 
