@@ -25,7 +25,7 @@ var itemTagOld = <tag:forge:gems> as MCTag;
 var fluidTagNew = <tag:fluids:minecraft:water> as MCTag<MCFluid>;
 var itemTagNew = <tag:items:forge:gems> as MCTag<MCItemDefinition>;
 
-//How to interact
+//Wie man nun interagiert
 var myGemTagOld = <tag:forge:gems>;
 myGemTagOld.addItems(<item:minecraft:bedrock>);
 myGemTagOld.removeItems(<item:minecraft:diamond>);
@@ -35,31 +35,31 @@ myGemTagNew.add(<item:minecraft:bedrock>);
 myGemTagNew.remove(<item:minecraft:diamond>);
 
 
-//IIngredient expansins
+//IIngredient Erweiterung
 var reuseOld = <tag:forge:gems>.reuse();
 var reuseNew = <tag:items:forge:gems>.asIIngredient().reuse();
 ```
 
 
-## Wrapper types become vanilla types
+## Wrapper-Typen werden zu Vanilla-Typen
 
-We changed some internals workings of CraftTweaker to directly use minecraft types.  
-This change should not affect your existing scripts directly, but will break some of the integrations added by other mods.
+Wir haben einige interne Funktionen von CraftTweaker geändert, um Minecraft-Typen direkt zu verwenden.  
+Diese Änderung sollte Ihre existierenden Skripte nicht direkt beeinflussen, wird aber einige der Integrationen, die von anderen Mods hinzugefügt wurden, zerstören.
 
-The broken classes will be logged in the crafttweaker log. If you find some of your scripts breaking, check if they use one of the broken classes.
+Die kaputten Klassen werden im crafttweaker.log angezeigt. Wenn Sie feststellen, dass einige Ihrer Skripte kaputt gehen, überprüfen Sie, ob sie eine der kaputten Klassen verwenden.
 
 
-## Method to register EventHandlers changed signature
+## Methode zum Registrieren von EventHandlers abgeänderte Signatur
 
-Event listeners no longer have the consumer in a custom constructor.  
-Instead, the registitration method was changed to be generic.
+Event Listeners haben nicht mehr den Verbraucher in einem benutzerdefinierten Konstruktor.  
+Stattdessen wurde die Registrierung generisch geändert.
 
-Migration example:
+Migrationsbeispiel:
 ```zenscript
 import crafttweaker.api.events.CTEventManager;
 import crafttweaker.api.event.entity.player.MCAnvilRepairEvent;
 
-//Old way:
+//Alter Weg:
 CTEventManager.register(new MCAnvilRepairEvent((event) => {
      var player = event.player;
      var result = event.itemResult;
@@ -67,7 +67,7 @@ CTEventManager.register(new MCAnvilRepairEvent((event) => {
  }));
 
 
-//New way
+//Neuer Weg:
 CTEventManager.register<MCAnvilRepairEvent>((event) => {
      var player = event.player;
      var result = event.itemResult;
@@ -76,13 +76,13 @@ CTEventManager.register<MCAnvilRepairEvent>((event) => {
 ```
 
 
-## ZenCode: Storage tags are gone
+## ZenCode: Speicher-Tags sind verschwunden
 
-We removed Storage tags from the ZenCode language Specifications for now.  
-They are not required for CraftTweaker and made debugging harder.  
-Most people did not need to use storage tags so we don't expect you to need to pursue this migration step.
+Wir haben Speicher-Tags von den ZenCode-Sprachspezifikationen entfernt.  
+Sie sind nicht für CraftTweaker erforderlich und haben das Debuggen erschwert.  
+Die meisten Leute mussten keine Speicher-Tags verwenden, so dass wir nicht erwarten, dass Sie diesen Migrationsschritt fortsetzen müssen.
 
-Migration example:
+Migrationsbeispiel:
 ```zenscript
 var before = {} as string`static[string`static]`unique
 
