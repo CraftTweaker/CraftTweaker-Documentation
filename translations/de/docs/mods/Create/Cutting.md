@@ -2,13 +2,13 @@
 
 # Create Cutting
 
-The Cutting mechanic is a type of [IRecipeManager](/vanilla/api/managers/IRecipeManager) and implements all the methods that are available to IRecipeManager's, such as `removeRecipe()` and `removeAll()`.
+Die Cutting Mechanik ist vom Typ [IRecipeManager](/vanilla/api/managers/IRecipeManager) und implementiert alle Methoden, die IRecipeManager zur Verfügung stehen wie `removeRecipe()` und `removeAll()`.
 
 ## Methoden
 
 #### Rezept hinzufügen
 
-The following script will add a recipe that will output a Diamond when a piece of Glass is cut with a duration of 100.
+Das folgende Skript fügt ein Rezept hinzu, das einen Diamanten ausgibt, wenn ein Glasstück mit einer Dauer von 100 Ticks geschnitten wird.
 
 ```zenscript
 // <recipetype:create:cutting>.addRecipe(String name, IItemStack output, IIngredient input, @Optional(100) int duration)
@@ -18,7 +18,7 @@ The following script will add a recipe that will output a Diamond when a piece o
 
 #### Remove Recipes
 
-The follow script will remove all Cutting recipes that output a Stripped Jungle Wood.
+Das folgende Skript wird alle Schneidrezepte entfernen, die ein gestreiftes Dschungelholz ausgeben.
 
 ```zenscript
 // <recipetype:create:cutting>.removeRecipe(IItemStack output)
