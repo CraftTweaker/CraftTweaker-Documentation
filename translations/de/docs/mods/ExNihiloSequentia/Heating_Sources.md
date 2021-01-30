@@ -4,9 +4,9 @@
 `import mods.exnihilosequentia.ZenHeatRecipe;`
 
 ## Methoden
-- **create(String name)**
-- **setBlock(MCBlock input)** the block to add as a heat source
-- **setAmount(int amount)** the heat source strenght
+- **create(String name) // Name des Skripts **
+- **setBlock(MCBlock input)** // der Block, der als Wärmequelle hinzugefügt werden soll
+- **setAmount(int amount)** // die Stärke der Hitzequelle
 
 
 
