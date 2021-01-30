@@ -1,14 +1,14 @@
 ::requiredMod[Blood Magic]{buildIn=true modLink=https://www.curseforge.com/minecraft/mc-mods/blood-magic}
 
-# Blood Magic Alchemy Table
+# Blood Magic Alchemietisch
 
-The Alchemy Table is a type of [IRecipeManager](/vanilla/api/managers/IRecipeManager) and implements all the methods that are available to IRecipeManager's, such as `removeRecipe()` and `removeAll()`.
+Der Alchemietisch ist vom Typ [IRecipeManager](/vanilla/api/managers/IRecipeManager) und implementiert alle Methoden, die IRecipeManager's zur Verfügung stehen wie `removeRecipe()` und `removeAll()`.
 
 ## Methoden
 
 #### Rezept hinzufügen
 
-The following script will add a recipe that will output a Diamond when Coal is given to an Alchemy Table. The table will take 5 seconds to craft, requires a minimum tier of 0 and will drain (syphon) 0 LP from the player.
+Das folgende Skript fügt ein Rezept hinzu, das einen Diamanten ausgibt, wenn Kohle an einen Alchemietisch übergeben wird. Der Tisch braucht 5 Sekunden, um es zu fertigen, benötigt eine Mindestebene von 0 und wird vom Spieler 0 Lebenspunkte abziehen.
 
 ```zenscript
 // <recipetype:bloodmagic:alchemytable>.addRecipe(String name, IItemStack output, IIngredient[] input, int syphon, int ticks, int minimumTier)
@@ -17,9 +17,9 @@ The following script will add a recipe that will output a Diamond when Coal is g
 
 #### Remove Recipes
 
-The follow script will remove all recipes from the Alchemy Table that output a clay ball.
+Das folgende Skript entfernt alle Rezepte aus der Alchemie-Tabelle, die Lehm ausgeben.
 
 ```zenscript
-<recipetype:bloodmagic:alchemytable>.removeRecipe(IItemStack output);
+//<recipetype:bloodmagic:alchemytable>.removeRecipe(IItemStack output);
 <recipetype:bloodmagic:alchemytable>.removeRecipe(<item:minecraft:clay_ball>);
 ```
