@@ -2,13 +2,13 @@
 
 # Create Crushing
 
-The Crushing mechanic is a type of [IRecipeManager](/vanilla/api/managers/IRecipeManager) and implements all the methods that are available to IRecipeManager's, such as `removeRecipe()` and `removeAll()`.
+Die Crushing Mechanik ist vom Typ [IRecipeManager](/vanilla/api/managers/IRecipeManager) und implementiert alle Methoden, die IRecipeManager zur Verfügung stehen wie `removeRecipe()` und `removeAll()`.
 
 ## Methoden
 
 #### Rezept hinzufügen
 
-The following script will add a recipe that will output a Diamond 10% of the time when a piece of Dirt is crushed with a duration of 100.
+Das folgende Skript fügt ein Rezept hinzu, das einen Diamanten mit einer Chance von 10% ausgibt, in der ein Stück Erde mit einer Dauer von 100 Ticks zerkleinert wird.
 
 ```zenscript
 // <recipetype:create:crushing>.addRecipe(String name, MCWeightedItemStack[] output, IIngredient input, @Optional(100) int duration)
@@ -18,7 +18,7 @@ The following script will add a recipe that will output a Diamond 10% of the tim
 
 #### Remove Recipes
 
-The follow script will remove all Crushing recipes that output a Crushed Zinc Ore.
+Das folgende Skript wird alle Crushing Rezepte entfernen, die ein zerkleinertes Zinc Ore ausgeben.
 
 ```zenscript
 // <recipetype:create:crushing>.removeRecipe(IItemStack output)
