@@ -26,9 +26,9 @@ Das folgende Skript wird dem ARC mehrere Rezepte hinzufügen. Hier sollten alle 
 
 #### Remove Recipes
 
-The follow script will remove all recipes from the ARC that output a Weak Blood Shard.
+Das folgende Skript wird alle Rezepte aus dem ARC entfernen, die einen Schwachen Blutsplitter ausgeben.
 
 ```zenscript
-<recipetype:bloodmagic:arc>.removeRecipe(IItemStack output);
+//<recipetype:bloodmagic:arc>.removeRecipe(IItemStack output);
 <recipetype:bloodmagic:arc>.removeRecipe(<item:bloodmagic:weakbloodshard>);
 ```
