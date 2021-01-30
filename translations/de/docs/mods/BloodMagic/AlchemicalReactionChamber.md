@@ -1,14 +1,14 @@
 ::requiredMod[Blood Magic]{buildIn=true modLink=https://www.curseforge.com/minecraft/mc-mods/blood-magic}
 
-# Blood Magic Alchemical Reaction Chamber / ARC
+# Blood Magic Alchemie Reaktionskammer / ARC
 
-The Alchemical Reaction Chamber or ARC is a type of [IRecipeManager](/vanilla/api/managers/IRecipeManager) and implements all the methods that are available to IRecipeManager's, such as `removeRecipe()` and `removeAll()`.
+Die Alchemistische Reaktionskammer oder ARC ist vom Typ [IRecipeManager](/vanilla/api/managers/IRecipeManager) und implementiert alle Methoden, die IRecipeManager zur Verfügung stehen wie `removeRecipe()` und `removeAll()`.
 
 ## Methoden
 
 #### Rezept hinzufügen
 
-The following script will add multiple recipes to the ARC, it should cover all the bases of what is possible
+Das folgende Skript wird dem ARC mehrere Rezepte hinzufügen. Hier sollten alle Grundlagen beschrieben sein.
 
 ```zenscript
 // <recipetype:bloodmagic:arc>addRecipe(String name, IItemStack output, IFluidStack outputFluid, IIngredient input, IFluidStack inputFluid, IIngredient arcTool, boolean consumeIngredient, @Optional MCWeightedItemStack[] addedItems)
