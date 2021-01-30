@@ -2,13 +2,13 @@
 
 # Create Splashing
 
-The Splashing mechanic is a type of [IRecipeManager](/vanilla/api/managers/IRecipeManager) and implements all the methods that are available to IRecipeManager's, such as `removeRecipe()` and `removeAll()`.
+Die Splashing Mechanik ist vom Typ [IRecipeManager](/vanilla/api/managers/IRecipeManager) und implementiert alle Methoden, die IRecipeManager zur Verfügung stehen wie `removeRecipe()` und `removeAll()`.
 
 ## Methoden
 
 #### Rezept hinzufügen
 
-The following script will add a recipe that will output a Diamond and an Apple 45% of the time when a piece of Dirt is Splashed with a duration of 100.
+Das folgende Skript fügt ein Rezept hinzu, das einen Diamanten und einen Apfel mit einer Chance von 45% ausgibt, in der ein Stück Erde mit einer Dauer von 100 Ticks bespritzt wird.
 
 ```zenscript
 // <recipetype:create:splashing>.addRecipe(String name, MCWeightedItemStack[] output, IIngredient input, @Optional(100) int duration)
@@ -18,7 +18,7 @@ The following script will add a recipe that will output a Diamond and an Apple 4
 
 #### Remove Recipes
 
-The follow script will remove all Splashing recipes that output Yellow Concrete.
+Das folgende Skript wird alle Splashing-Rezepte entfernen, die Gelben Beton ausgeben.
 
 ```zenscript
 // <recipetype:create:splashing>.removeRecipe(IItemStack output)
