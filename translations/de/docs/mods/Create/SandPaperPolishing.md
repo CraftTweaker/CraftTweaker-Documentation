@@ -2,13 +2,13 @@
 
 # Create Sand Paper Polishing
 
-The Sand Paper Polishing mechanic is a type of [IRecipeManager](/vanilla/api/managers/IRecipeManager) and implements all the methods that are available to IRecipeManager's, such as `removeRecipe()` and `removeAll()`.
+Die Sand Paper Polishing Mechanik ist vom Typ [IRecipeManager](/vanilla/api/managers/IRecipeManager) und implementiert alle Methoden, die IRecipeManager zur Verfügung stehen wie `removeRecipe()` und `removeAll()`.
 
 ## Methoden
 
 #### Rezept hinzufügen
 
-The following script will add a recipe that will output a Diamond when a piece of Glass is Polished with a duration of 100.
+Das folgende Skript fügt ein Rezept hinzu, das einen Diamanten ausgibt, wenn ein Glasstück mit einer Dauer von 100 Ticks poliert wird.
 
 ```zenscript
 // <recipetype:create:sandpaper_polishing>.addRecipe(String name, IItemStack output, IIngredient input, @Optional(100) int duration)
@@ -18,7 +18,7 @@ The following script will add a recipe that will output a Diamond when a piece o
 
 #### Remove Recipes
 
-The follow script will remove all Sand Paper Polishing recipes that output Polished Rose Quartz.
+Das folgende Skript wird alle Rezepte für das Polieren mit Sandpapier entfernen, die poliertes Rose Quartz ausgeben.
 
 ```zenscript
 // <recipetype:create:pressing>.removeRecipe(IItemStack output)
