@@ -2,13 +2,13 @@
 
 # Create Compacting
 
-The Compacting mechanic is a type of [IRecipeManager](/vanilla/api/managers/IRecipeManager) and implements all the methods that are available to IRecipeManager's, such as `removeRecipe()` and `removeAll()`.
+Die Compacting Mechanik ist vom Typ [IRecipeManager](/vanilla/api/managers/IRecipeManager) und implementiert alle Methoden, die IRecipeManager zur Verfügung stehen wie `removeRecipe()` und `removeAll()`.
 
 ## Methoden
 
-### Heat Types
+### Wärmetypen
 
-Create has three different "heat" types that are used in recipes. which are the following:
+Create hat drei verschiedene "Wärme"-Typen, die in Rezepten verwendet werden können. Das wären wie folgt:
 
 ```plaintext
 none
@@ -16,13 +16,13 @@ heated
 superheated
 ```
 
-You can use any of those heat values when the recipe calls for "heat"
+Du kannst jeden dieser Wärmewerte verwenden, wenn das Rezept "Hitze" erfordert
 
-#### Add Recipe with an Item output
+#### Rezept mit Itemausgabe hinzufügen
 
 The following script will add recipes that will:
 
-1) Output an Arrow when a Diamond and an Apple are Compacted with no heat and a duration of 200. 2) Output a Brick when a Diamond, Dirt and Lava (fluid) are Compacted with "heated" heat and a duration of 1000. 3) Output Paper when Glass, Dirt and Lava (fluid) are Compacted with "superheated" heat and a duration of 100.
+1) Ein Pfeil ausgeben, wenn ein Diamant und ein Apfel ohne Wärme Kompakt gemacht wird mit einer Dauer von 200 Ticks. 2) Ausgabe eines Ziegels, wenn ein Diamant, Erde und Lava (Flüssigkeit) mit "heated" Wärme und einer Dauer von 1000 Ticks komprimiert werden. 3) Gibt Papier aus, wenn Glas, Schmutz und Lava (Flüssigkeit) mit "superheated" Wärme und einer Dauer von 100 Ticks komprimiert werden.
 
 ```zenscript
 // <recipetype:create:compacting>.addRecipe(String name, String heat, IItemStack output, IIngredient[] itemInputs, @Optional IFluidStack[] fluidInputs, @Optional(100) int duration)
@@ -32,9 +32,9 @@ The following script will add recipes that will:
 <recipetype:create:compacting>.addRecipe("compacting_test_3", "superheated", <item:minecraft:paper>, [<item:minecraft:glass>, <item:minecraft:dirt>], [<fluid:minecraft:lava>]);
 ```
 
-#### Add Recipe with a Fluid output
+#### Rezept mit Flüssigkeitsausgabe hinzufügen
 
-The following script will add recipes that will output Water (fluid) when Paper, a Stick and Lava are Compacted with a duration of 500.
+Das folgende Skript fügt Rezepte hinzu, die Wasser (Flüssigkeit) ausgeben, wenn Papier, ein Stick und Lava mit einer Dauer von 500 Ticks komprimiert werden.
 
 ```zenscript
 // <recipetype:create:compacting>.addRecipe(String name, String heat, IItemStack output, IIngredient[] itemInputs, @Optional IFluidStack[] fluidInputs, @Optional(100) int duration)
@@ -44,7 +44,7 @@ The following script will add recipes that will output Water (fluid) when Paper,
 
 #### Remove Recipes
 
-The follow script will remove all Compacting recipes that output a Bar Of Chocolate.
+Das folgende Skript wird alle kompatiblen Rezepte entfernen, die eine Schokoladentafel ausgeben.
 
 ```zenscript
 // <recipetype:create:compacting>.removeRecipe(IItemStack output)
