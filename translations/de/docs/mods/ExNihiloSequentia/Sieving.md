@@ -8,7 +8,7 @@
 - **setInput(IIngredient input)** // Der Input
 - **addDrop(IItemStack drop)** // das Item, das von dem Block gedroppt werden soll
 - **addRoll(String mesh, float chance)** // der Netztyp und die Drop-Chance
-- **setWaterlogged()** if the sieve must be waterlogged for the recipe
+- **setWaterlogged()** // soll das Sieb waterlogged sein?
 
 
 ## Addition
