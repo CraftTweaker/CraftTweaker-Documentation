@@ -1,12 +1,12 @@
 # Botania Terra Plate
 
-The Terra Plate is a type of [IRecipeManager](/vanilla/api/managers/IRecipeManager) and implements all the methods that are available to IRecipeManager's, such as `removeRecipe()` and `removeAll()`.
+Die Terra-Plate ist vom Typ [IRecipeManager](/vanilla/api/managers/IRecipeManager) und implementiert alle Methoden, die IRecipeManager zur Verfügung stehen wie `removeRecipe()` und `removeAll()`.
 
 ## Methoden
 
 #### Rezept hinzufügen
 
-The follow script will add a recipe to the Terra plate that will use 2000 Mana, and output a Diamond after giving the Terra Plate a piece of Dirt.
+Das folgende Skript wird ein Rezept zur Terra-Plate hinzufügen, das 2000 Mana verwendet und einen Diamanten dazu gibt, nachdem er der Terraplate ein Erde gegeben hat.
 
 ```zenscript
 // <recipetype:botania:terra_plate>.addRecipe(String name, IItemStack output, int mana, IIngredient... inputs)
@@ -16,7 +16,7 @@ The follow script will add a recipe to the Terra plate that will use 2000 Mana, 
 
 #### Remove Recipes
 
-The follow script will remove all Terra Plate recipes that output a Terrasteel Ingot.
+Das folgende Skript wird alle Rezepte der Terraplate entfernen, die einen Terrastahlbarren ausgeben.
 
 ```zenscript
 // <recipetype:botania:terra_plate>.removeRecipe(IItemStack output);
