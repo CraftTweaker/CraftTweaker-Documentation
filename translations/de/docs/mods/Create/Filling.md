@@ -2,13 +2,13 @@
 
 # Create Filling
 
-The Filling mechanic is a type of [IRecipeManager](/vanilla/api/managers/IRecipeManager) and implements all the methods that are available to IRecipeManager's, such as `removeRecipe()` and `removeAll()`.
+Die Filling Mechanik ist vom Typ [IRecipeManager](/vanilla/api/managers/IRecipeManager) und implementiert alle Methoden, die IRecipeManager zur Verfügung stehen wie `removeRecipe()` und `removeAll()`.
 
 ## Methoden
 
 #### Rezept hinzufügen
 
-The following script will add a recipe that will output a Diamond when a piece of Dirt is Filled with Lava (fluid) with a duration of 100.
+Das folgende Skript fügt ein Rezept hinzu, das einen Diamanten ausgibt, wenn ein Stück Erde mit Lava (Flüssigkeit) mit einer Dauer von 100 Ticks gefüllt wird.
 
 ```zenscript
 // <recipetype:create:filling>.addRecipe(String name, IItemStack output, IIngredient inputContainer, IFluidStack inputFluid, @Optional(100) int duration)
@@ -18,7 +18,7 @@ The following script will add a recipe that will output a Diamond when a piece o
 
 #### Remove Recipes
 
-The follow script will remove all Filling recipes that output Redstone.
+Das folgende Skript wird alle Befüllrezepte entfernen, die Redstone ausgeben.
 
 ```zenscript
 // <recipetype:create:filling>.removeRecipe(IItemStack output)
