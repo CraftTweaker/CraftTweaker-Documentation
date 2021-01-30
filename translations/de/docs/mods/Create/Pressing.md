@@ -2,13 +2,13 @@
 
 # Create Pressing
 
-The Pressing mechanic is a type of [IRecipeManager](/vanilla/api/managers/IRecipeManager) and implements all the methods that are available to IRecipeManager's, such as `removeRecipe()` and `removeAll()`.
+Die Pressing Mechanik ist vom Typ [IRecipeManager](/vanilla/api/managers/IRecipeManager) und implementiert alle Methoden, die IRecipeManager zur Verfügung stehen wie `removeRecipe()` und `removeAll()`.
 
 ## Methoden
 
 #### Rezept hinzufügen
 
-The following script will add a recipe that will output a Diamond and an Apple 45% of the time when a piece of Dirt is Pressed with a duration of 100.
+Das folgende Skript fügt ein Rezept hinzu, das einen Diamanten und einen Apfel mit einer Chance von 45% ausgibt, in der ein Stück Erde mit einer Dauer von 100 Ticks zerdrückt wird.
 
 ```zenscript
 // <recipetype:create:pressing>.addRecipe(String name, MCWeightedItemStack[] output, IIngredient input, @Optional(100) int duration)
@@ -18,7 +18,7 @@ The following script will add a recipe that will output a Diamond and an Apple 4
 
 #### Remove Recipes
 
-The follow script will remove all Pressing recipes that output Paper.
+Das folgende Skript entfernt alle Druckrezepte, die Papier ausgeben.
 
 ```zenscript
 // <recipetype:create:pressing>.removeRecipe(IItemStack output)
