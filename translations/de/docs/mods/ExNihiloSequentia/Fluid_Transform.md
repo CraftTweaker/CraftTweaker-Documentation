@@ -4,10 +4,10 @@
 `import mods.exnihilosequentia.ZenFluidTransformRecipe;`
 
 ## Methoden
-- **create(String name)**
-- **setFluidInTank(IFluidStack fluidInTank)** the fluid in the tank
-- **setCatalyst(IIngredient catalyst)** the item to be inserted
-- **setResult(IFluidStack result)** the result of the recipe
+- **create(String name) // Name des Skripts **
+- **setFluidInTank(IFluidStack fluidInTank)** // die Flüssigkeit im Tank
+- **setCatalyst(IIngredient catalyst)** // das hinzuzufügende Item
+- **setResult(IFluidStack result)** // das Ergebnis des Rezepts
 
 
 ## Addition
