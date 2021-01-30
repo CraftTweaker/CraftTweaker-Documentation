@@ -2,13 +2,13 @@
 
 # Create Mixing
 
-The Mixing mechanic is a type of [IRecipeManager](/vanilla/api/managers/IRecipeManager) and implements all the methods that are available to IRecipeManager's, such as `removeRecipe()` and `removeAll()`.
+Die Mixing Mechanik ist vom Typ [IRecipeManager](/vanilla/api/managers/IRecipeManager) und implementiert alle Methoden, die IRecipeManager zur Verfügung stehen wie `removeRecipe()` und `removeAll()`.
 
 ## Methoden
 
-### Heat Types
+### Wärmetypen
 
-Create has three different "heat" types that are used in recipes. which are the following:
+Create hat drei verschiedene "Wärme"-Typen, die in Rezepten verwendet werden können. Das wären wie folgt:
 
 ```plaintext
 none
@@ -16,13 +16,13 @@ heated
 superheated
 ```
 
-You can use any of those heat values when the recipe calls for "heat"
+Du kannst jeden dieser Wärmewerte verwenden, wenn das Rezept "Hitze" erfordert
 
-#### Add Recipe with an Item output
+#### Rezept mit Itemausgabe hinzufügen
 
 The following script will add recipes that will:
 
-1) Output an Arrow when a Diamond and an Apple are Mixed with no heat with a duration of 100. 2) Output a Brick when a Diamond, Dirt and Lava (fluid) are Mixed with "heated" heat with a duration of 100. 3) Output Water (fluid) when Glass, Dirt and Lava (fluid) are Mixed with "superheated" heat with a duration of 100.
+1) Ein Pfeil ausgeben, wenn ein Diamant und ein Apfel ohne Wärme mit einer Dauer von 100 Ticks gemischt werden. 2) Ziegel ausgeben, wenn ein Diamant, Erde und Lava (Flüssigkeit) mit "heated" Wärme mit einer Dauer von 100 Ticks gemischt werden. 3) Gibt Wasser (Flüssigkeit) aus, wenn Glas, Erde und Lava (Flüssigkeit) mit "superheated" Wärme gemischt werden und eine Dauer von 100 Ticks.
 
 ```zenscript
 // <recipetype:create:mixing>.addRecipe(String name, String heat, IItemStack output, IIngredient[] itemInputs, @Optional IFluidStack[] fluidInputs, @Optional(100) int duration)
@@ -36,7 +36,7 @@ The following script will add recipes that will:
 
 #### Remove Recipes
 
-The follow script will remove all Mixing recipes that output Andesite Alloy.
+Das folgende Skript wird alle Mixing-Rezepte entfernen, die Andesite Legierungen ausgeben.
 
 ```zenscript
 // <recipetype:create:mixing>.removeRecipe(IItemStack output)
