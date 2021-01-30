@@ -5,6 +5,18 @@
     "Getting Started With Scripts": "getting_started.md",
     "Commands": "commands.md",
     "Examples": "examples.md",
+    "Tutorials": {
+      "Introduction To Scripting": {
+        "What Are Scripts": "tutorial/IntroductionToScripting/WhatAreScripts.md",
+        "The CraftTweaker Log File": "tutorial/IntroductionToScripting/TheCraftTweakerLogFile.md",
+        "Writing Your First Script": "tutorial/IntroductionToScripting/WritingYourFirstScript.md",
+        "What Are Bracket Handlers": "tutorial/IntroductionToScripting/WhatAreBracketHandlers.md"
+      },
+      "Recipes": {
+        "Recipe Managers": "tutorial/Recipes/RecipeManagers.md"
+      },
+      "Software": "tutorial/Software.md"
+    },
     "Migrations": {
       "7.1.0": "migrations/migration_7_1_0.md"
     },
@@ -50,7 +62,6 @@
         "Pressing": "mods/Create/Pressing.md",
         "Sand Paper Polishing": "mods/Create/SandPaperPolishing.md",
         "Splashing": "mods/Create/Splashing.md"
-
       },
       "Ex Nihilo Sequentia": {
         "Composting": "mods/ExNihiloSequentia/Composting.md",
@@ -102,7 +113,7 @@
           "Magmatic Dynamo": "mods/ThermalSeries/Dynamos/Magmatic_Dynamo.md",
           "Numismatic Dynamo": "mods/ThermalSeries/Dynamos/Numismatic_Dynamo.md",
           "Stirling Dynamo": "mods/ThermalSeries/Dynamos/Stirling_Dynamo.md"
-          },
+        },
         "Alchemical Imbuer": "mods/ThermalSeries/Alchemical_Imbuer.md",
         "Blast Chiller": "mods/ThermalSeries/Blast_Chiller.md",
         "Centrifugal Separator": "mods/ThermalSeries/Centrifugal_Separator.md",
