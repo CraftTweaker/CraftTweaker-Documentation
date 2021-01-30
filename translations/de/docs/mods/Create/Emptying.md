@@ -2,13 +2,13 @@
 
 # Create Emptying
 
-The Emptying mechanic is a type of [IRecipeManager](/vanilla/api/managers/IRecipeManager) and implements all the methods that are available to IRecipeManager's, such as `removeRecipe()` and `removeAll()`.
+Die Emptying Mechanik ist vom Typ [IRecipeManager](/vanilla/api/managers/IRecipeManager) und implementiert alle Methoden, die IRecipeManager zur Verfügung stehen wie `removeRecipe()` und `removeAll()`.
 
 ## Methoden
 
 #### Rezept hinzufügen
 
-The following script will add a recipe that will output a Diamond and Lava (fluid) when a piece of Dirt is Emptied with a duration of 100.
+Das folgende Skript fügt ein Rezept hinzu, das einen Diamanten und Lava (Flüssigkeit) ausgibt, wenn ein Stück Erde mit einer Dauer von 100 Ticks geleert wird.
 
 ```zenscript
 // <recipetype:create:emptying>.addRecipe(String name, IItemStack outputItem, IFluidStack outputFluid, IIngredient inputContainer, @Optional(100) int duration)
@@ -18,7 +18,7 @@ The following script will add a recipe that will output a Diamond and Lava (flui
 
 #### Remove Recipes
 
-The follow script will remove all Emptying recipes that output a Bucket.
+Das folgende Skript wird alle Rezepte entfernen, die einen Eimer ausgeben.
 
 ```zenscript
 // <recipetype:create:emptying>.removeRecipe(IItemStack output)
