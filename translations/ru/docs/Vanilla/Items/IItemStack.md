@@ -93,6 +93,7 @@ That means all functionality that is available to [IIngredient](/Vanilla/Variabl
 | hasCustomEntity       |              | bool                                                        |
 | enchantments          |              | List<[IEnchantment](/Vanilla/Enchantments/IEnchantment/)\> |
 | совпадающий Тег Точно |              | bool                                                        |
+| maxItemUseDuration    |              | int                                                         |
 
 #### Количество
 
