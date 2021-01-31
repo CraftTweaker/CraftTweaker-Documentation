@@ -64,7 +64,7 @@ Return Type: boolean
 MCLivingEntity.canBeRiddenInWater() as boolean
 myMCLivingEntity.canBeRiddenInWater();
 ```
-### canBreatheUnderwater
+### canBreatheUnderwater #可以水下呼吸
 
 Return Type: boolean
 
