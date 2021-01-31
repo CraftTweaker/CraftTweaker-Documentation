@@ -10,13 +10,13 @@ Importante: siempre * DEBES * inicializar un array a un tipo, aunque este vacio.
 
 `var floatArray as float [];` no dará errores de sintaxis, pero al volver a cargar tu juego, obtendrás un error y tu archivo no funcionará.
 
-Instead, initialize empty arrays like this `var floatArray as float [] = [];`
+Para inicializar un array vacío hazlo así: ` var floatArray as float[] = []; `
 
 ```zenscript
-//Array containing "Hello" and "World"
+//Array que contiene "Hello" y "World"
 val stringArray = ["Hello", "World"] as string[];
 
-//Array containing 1-3
+//Array que contiene 1-3
 val intArray = [1,2,3] as int[];
 ```
 
