@@ -9,22 +9,23 @@ IBiomeインターフェースを利用すると、登録されたBiomeについ
 
 ## IBiomeを呼び出す
 
-すべての登録されたBiomeを[IGame](/Vanilla/Game/IGame/)から`game.biomes`を利用して習得することができます。 それが現在唯一の方法です。
+You can get a list of all registered Biomes using `game.biomes` from [IGame](/Vanilla/Game/IGame/)
 
 ## ZenGetters
 
 IBiomeを使ってできることは、そこから情報を取得することだけです。
 
-| ZenGetter                    | 戻り値      |
-| ---------------------------- | -------- |
-| name                         | string   |
-| canRain                      | boolean型 |
-| isSnowyBiome                 | boolean型 |
-| highHumidity                 | boolean型 |
-| spawningChance               | float型   |
-| baseHeight                   | float型   |
-| heightVariation              | float型   |
-| rainfall                     | float型   |
-| waterColorMultiplier         | int型     |
-| ignorePlayerSpawnSuitability | boolean型 |
-| temperature                  | float型   |
+| ZenGetter                    | 戻り値                                            |
+| ---------------------------- | ---------------------------------------------- |
+| name                         | string                                         |
+| canRain                      | boolean型                                       |
+| isSnowyBiome                 | boolean型                                       |
+| highHumidity                 | boolean型                                       |
+| spawningChance               | float型                                         |
+| baseHeight                   | float型                                         |
+| heightVariation              | float型                                         |
+| rainfall                     | float型                                         |
+| waterColorMultiplier         | int型                                           |
+| ignorePlayerSpawnSuitability | boolean型                                       |
+| temperature                  | float型                                         |
+| types                        | List<[IBiomeType](/Vanilla/Biomes/IBiomeType/) |
