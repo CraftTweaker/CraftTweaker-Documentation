@@ -35,7 +35,7 @@ IEntity extends [ICommandSender](/Vanilla/Commands/ICommandSender/). That means 
 | canRiderInteract            |                     | boolean                                      |
 | controllingPassenger        |                     | *IEntity*                                    |
 | customName                  | getCustomName()     | string                                       |
-| definition                  |                     | *[IEntityDefinition](/Vanilla/Entities/IEntityDefinition/)*     |
+| definition                  |                     | [IEntityDefinition](/Vanilla/Entities/IEntityDefinition/)    |
 | dimension                   | getDimension()      | int                                          |
 | doesTriggerPressurePlate    |                     | boolean                                      |
 | equipmentAndArmor           |                     | List<[IItemStack](/Vanilla/Items/IItemStack/) |
@@ -55,6 +55,7 @@ IEntity extends [ICommandSender](/Vanilla/Commands/ICommandSender/). That means 
 | isInvisible                 |                     | boolean                                      |
 | isInvulnerable              |                     | boolean                                      |
 | isInWater                   |                     | boolean                                      |
+| isLightningbolt             |                     | boolean                                      |
 | isOutsideBorder             |                     | boolean                                      |
 | isOverWater                 |                     | boolean                                      |
 | isPushedByWater             |                     | boolean                                      |
@@ -65,6 +66,7 @@ IEntity extends [ICommandSender](/Vanilla/Commands/ICommandSender/). That means 
 | lowestRidingEntity          |                     | *IEntity*                                    |
 | maxFallHeight               |                     | int                                          |
 | maxInPortalTime             |                     | int                                          |
+| onGround                    | onGround()          | boolean                                      |
 | parts                       |                     | IEntity[]                                    |
 | passengers                  | getPassengers()     | List<IEntity\>                               |
 | passengersRecursive         |                     | List<IEntity\>                               |
@@ -73,7 +75,7 @@ IEntity extends [ICommandSender](/Vanilla/Commands/ICommandSender/). That means 
 | ridingEntity                | getRidingEntity()   | *IEntity*                                    |
 | shouldRiderSit              |                     | boolean                                      |
 | tags                        |                     | List<string\>                                |
-| team                        |                     | *[ITeam](/Vanilla/Game/ITeam/)*               |
+| team                        |                     | [ITeam](/Vanilla/Game/ITeam/)               |
 | wet                         | isWet()             | boolean                                      |
 | world                       |                     | [IWorld](/Vanilla/World/IWorld/)              |
 | x                           | getX()              | double                                       |
@@ -88,6 +90,7 @@ IEntity extends [ICommandSender](/Vanilla/Commands/ICommandSender/). That means 
 | rotationYaw                 |                     | float                                        |
 | rotationPitch               |                     | float                                        |
 | lookingDirection            |                     | [IVector3d](/Vanilla/World/IVector3d/)        |
+| nbt                         | getNBT()            | [IData](/Vanilla/Data/IData/)                  |
 
 
 ## ZenSetters
@@ -116,6 +119,7 @@ IEntity extends [ICommandSender](/Vanilla/Commands/ICommandSender/). That means 
 | posX                        |                     | double                                       |
 | posY                        |                     | double                                       |
 | posZ                        |                     | double                                       |
+| nbt                         | setNBT()            | [IData](/Vanilla/Data/IData/)                  |
 
 
 ## More ZenMethods
@@ -124,7 +128,6 @@ IEntity extends [ICommandSender](/Vanilla/Commands/ICommandSender/). That means 
 - boolean canTrample([IWorld](/Vanilla/World/IWorld/) world, [IBlockDefinition](/Vanilla/Blocks/IBlockDefinition/) block, [IBlockPos](/Vanilla/World/IBlockPos/) pos, float fall);
 - boolean isInsideOfMaterial([IMaterial](/Vanilla/Blocks/IMaterial/) material);
 - double getDistanceSqToEntity(entity); → Returns the distance to the given Entity
-- [IData](/Vanilla/Data/IData/) getNBT();
 - [IItemStack](/Vanilla/Items/IItemStack/) getPickedResult(); → Returns the [item](/Vanilla/Items/IItemStack/) that picking up the entity would return (e.g. the item id the entity is an item or the minecart item)
 - void addTag(String tag);
 - void extinguish(); → Extinguishes the entity, if on fire
@@ -144,5 +147,3 @@ IEntity extends [ICommandSender](/Vanilla/Commands/ICommandSender/). That means 
 - boolean boolean isPassenger(IEntity entity);
 - boolean isRidingSameEntity(IEntity other);
 - [IRayTraceResult](/Vanilla/World/IRayTraceResult/) getRayTrace(double blockReachDistance, float partialTicks, @Optional boolean stopOnLiquid, @Optional boolean ignoreBlockWithoutBoundingBox, @Optional(valueBoolean = true) boolean returnLastUncollidableBlock);
-- void update([IData](/Vanilla/Data/IData/) data);
-- boolean onGround(); → Returns true if the entity is on the ground, and false when in the air
