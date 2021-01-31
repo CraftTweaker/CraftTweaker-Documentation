@@ -5,32 +5,34 @@ An IDamageSource object is the source of damage to an entity.
 ## Importing the class
 
 It might be required to [import](/AdvancedFunctions/Import/) the class to avoid errors.  
-`import crafttweaker.damage.IDamageSource`
+`import crafttweaker.damage.IDamageSource;`
 
 ## Zengetters and ZenMethods without parameters
 
-| ZenGetter        | ZenMethod                         | Return Type                           |
-| ---------------- | --------------------------------- | ------------------------------------- |
-| harmInCreative   | canHarmInCreative();              | bool型                                 |
-| damageType       | getDamageType();                  | string                                |
-| hunderDamage     | getHungerDamage();                | float型                                |
-| immediateSource  | getImmediateSource();             | [IEntity](/Vanilla/Entities/IEntity/) |
-| trueSource       | getTrueSource();                  | [IEntity](/Vanilla/Entities/IEntity/) |
-| creativePlayer   | isCreativePlayer();               | bool                                  |
-| damageAbsolute   | isDamageAbsolute();               | bool                                  |
-| difficultyScaled | isDifficultyScaled();             | bool                                  |
-| explosion        | isExplosion();                    | bool                                  |
-| fireDamage       | isFireDamage();                   | bool                                  |
-| magicDamage      | isMagicDamage();                  | bool                                  |
-| projectile       | isProjectile();                   | bool                                  |
-|                  | setDamageAllowedInCreativeMode(); | IDamageSource                         |
-|                  | setDamageBypassesArmor();         | IDamageSource                         |
-|                  | setDamageIsAbsolute();            | IDamageSource                         |
-|                  | setDifficultyScaled();            | IDamageSource                         |
-|                  | setExplosion();                   | IDamageSource                         |
-|                  | setFireDamage();                  | IDamageSource                         |
-|                  | setMagicDamage();                 | IDamageSource                         |
-|                  | setProjectile();                  | IDamageSource                         |
+| ZenGetter         | ZenMethod                         | Return Type                            |
+| ----------------- | --------------------------------- | -------------------------------------- |
+| harmInCreative    | canHarmInCreative();              | bool型                                  |
+| damageType        | getDamageType();                  | string                                 |
+| hungerDamage      | getHungerDamage();                | float型                                 |
+| immediateSource   | getImmediateSource();             | [IEntity](/Vanilla/Entities/IEntity/)  |
+| trueSource        | getTrueSource();                  | [IEntity](/Vanilla/Entities/IEntity/)  |
+| creativePlayer    | isCreativePlayer();               | bool                                   |
+| damageLocation    | getDamageLocation();              | [IVector3d](/Vanilla/World/IVector3d/) |
+| damageAbsolute    | isDamageAbsolute();               | bool                                   |
+| damageUnblockable | isDamageUnblockable();            | bool                                   |
+| difficultyScaled  | isDifficultyScaled();             | bool                                   |
+| explosion         | isExplosion();                    | bool                                   |
+| fireDamage        | isFireDamage();                   | bool                                   |
+| magicDamage       | isMagicDamage();                  | bool                                   |
+| projectile        | isProjectile();                   | bool                                   |
+|                   | setDamageAllowedInCreativeMode(); | IDamageSource                          |
+|                   | setDamageBypassesArmor();         | IDamageSource                          |
+|                   | setDamageIsAbsolute();            | IDamageSource                          |
+|                   | setDifficultyScaled();            | IDamageSource                          |
+|                   | setExplosion();                   | IDamageSource                          |
+|                   | setFireDamage();                  | IDamageSource                          |
+|                   | setMagicDamage();                 | IDamageSource                          |
+|                   | setProjectile();                  | IDamageSource                          |
 
 ## ZenMethod with Parameters
 
@@ -42,13 +44,15 @@ You can either use these methods or the [Damage Source Bracket Handler](/Vanilla
 
 ```zenscript
 crafttweaker.damage.IDamageSource.createMobDamage(IEntityLivingBase mob)
-crafttweaker.damage.IDamageSource.createIndirectDamage(IEntity source, IEntityLivingBase indirectEntityIn)
+crafttweaker.damage.IDamageSource.createIndirectDamage(IEntity trueSource, IEntityLivingBase immediateSource)
 crafttweaker.damage.IDamageSource.createPlayerDamage(IPlayer player)
-crafttweaker.damage.IDamageSource.createThrownDamage(IEntity source, @Optional IEntity indirectEntityIn)
-crafttweaker.damage.IDamageSource.createIndirectMagicDamage(IEntity source, @Optional IEntity indirectEntityIn)
+crafttweaker.damage.IDamageSource.createThrownDamage(IEntity trueSource, @Optional IEntity immediateSource)
+crafttweaker.damage.IDamageSource.createIndirectMagicDamage(IEntity trueSource, @Optional IEntity immediateSource)
 crafttweaker.damage.IDamageSource.createThornsDamage(IEntity source)
-crafttweaker.damage.IDamageSource.createExplosionDamage(@Optional IEntityLivingBase entityLivingBaseIn)
+crafttweaker.damage.IDamageSource.createExplosionDamage(@Optional IEntityLivingBase trueSource)
 crafttweaker.damage.IDamageSource.createOfType(String type)
+crafttweaker.damage.IDamageSource.createEntityDamage(String type, IEntity source)
+crafttweaker.damage.IDamageSource.createIndirectDamage(String type, IEntity trueSource, @Optional IEntity immediateSource)
 
 //Preregistered Damage Types
 crafttweaker.damage.IDamageSource.IN_FIRE()
