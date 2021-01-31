@@ -10,8 +10,23 @@ import crafttweaker.api.data.IData;
 ```
 
 
+## Casters
+
+| 结果类型                                                        | 是否隐藏  |
+| ----------------------------------------------------------- | ----- |
+| [ICollectionData #所收集数据](/vanilla/api/data/ICollectionData) | false |
+| [INumberData #编号数据](/vanilla/api/data/INumberData)          | false |
+
 ## 方法
 
+### asCollection
+
+Return Type: [ICollectionData](/vanilla/api/data/ICollectionData)
+
+```zenscript
+IData.asCollection() as ICollectionData
+{Display: {lore: ["Hello", "World"]}}.asCollection();
+```
 ### asList #作为列表
 
 获取列表<IData> representation of this IData, returns null on anything but [ListData](/vanilla/api/data/ListData).
@@ -31,6 +46,14 @@ Return Type: [IData](/vanilla/api/data/IData)[string]
 ```zenscript
 IData.asMap() as IData[string]
 {Display: {lore: ["Hello", "World"]}}.asMap();
+```
+### asNumber
+
+Return Type: [INumberData](/vanilla/api/data/INumberData)
+
+```zenscript
+IData.asNumber() as INumberData
+{Display: {lore: ["Hello", "World"]}}.asNumber();
 ```
 ### asString #作为字符串
 
