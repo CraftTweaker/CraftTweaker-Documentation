@@ -33,14 +33,13 @@ Un ZenSetter nunca devolvera información, ya que está hecho para establecer el
 
 Si un objeto tiene tanto un ZenGetter como un ZenSetter con el mismo nombre (por ejemplo: un tipo </code> IItemStack </a> tiene "displayName"), puedes usar otros operadores de asignación que no sean </code> = </0>. 
 
-Depending on the type you can use these: `&=`, `|=`, `+=`, `-=`, `*=`, `/=`, `%=`, `~=`.  
-Let's see what they do:
+Dependiendo del tipo puedes usar uno de esta lista: </code> &=, |=, +=, -=. *=. /=, %=, ~=. </code>
 
 ```zenscript
-//Since we have a ZenGetter and a ZenSetter with the same name, the first does the same as the second:
-//object.zenSetter += value;
-//object.zenSetter = object.zenGetter + value;
+Como tenemos un ZenGetter y un ZenSetter con el mismo nombre, la primera línea hace lo mismo que la segunda:
+//objecto.zenSetter += valor;
+//objecto.zenSetter = objecto.zenGetter + valor;
 
-<minecraft:iron_ingot>.displayName += " of Doom";
-<minecraft:iron_ingot>.displayName = <minecraft:iron_ingot>.displayName + " of Doom";
+<minecraft:iron_ingot>.displayName += " de la Muerte";
+<minecraft:iron_ingot>.displayName = <minecraft:iron_ingot>.displayName + " de la Muerte";
 ```
