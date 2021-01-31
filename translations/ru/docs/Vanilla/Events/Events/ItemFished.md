@@ -8,7 +8,7 @@ Additional damage can be done to the rod by setting `event.additionalDamage`. A 
 
 ## Класс события
 You will need to cast the event in the function header as this class:  
-`crafttweaker.event.ItemFishedEvent`  
+`import crafttweaker.event.ItemFishedEvent;`  
 You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
 
 ## Наследование от интерфейсов событий
@@ -21,8 +21,9 @@ ItemFished Events implement the following interfaces and are able to call all of
 ## Геттеры/сеттеры
 The following information can be retrieved/set during the event:
 
-| ZenGetter | ZenSetter          | Тип                                        |
-| --------- | ------------------ | ------------------------------------------ |
-| `damage`  |                    | int                                        |
-|           | `additionalDamage` | int                                        |
-| `drops`   |                    | [IItemStack](/Vanilla/Items/IItemStack/)[] |
+| ZenGetter  | ZenSetter          | Тип                                                   |
+| ---------- | ------------------ | ----------------------------------------------------- |
+| `damage`   |                    | int                                                   |
+|            | `additionalDamage` | int                                                   |
+| `drops`    |                    | [IItemStack](/Vanilla/Items/IItemStack/)[]            |
+| `fishHook` |                    | [IEntityFishHook](/Vanilla/Entities/IEntityFishHook/) |
