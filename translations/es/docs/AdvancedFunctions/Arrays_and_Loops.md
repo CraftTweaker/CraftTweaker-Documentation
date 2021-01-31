@@ -1,8 +1,8 @@
 # Arrays
 
-An array is a List containing several items of the same kind.
+Un array es una Lista de varios elementos DEL MISMO TIPO.
 
-## Declaring Arrays
+## Declarando Arrays
 
 It is declared using ```[``` and ```]```.
 
