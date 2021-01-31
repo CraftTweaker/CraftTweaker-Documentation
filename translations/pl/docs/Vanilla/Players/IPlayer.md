@@ -16,21 +16,25 @@ IPlayer also extends [IUser](/Vanilla/Players/IUser/). That means all functions 
 
 Zengetters are for retrieving information. Usually either assigned to a variable or used in a method/function.
 
-| Zengetter     | What does it do                                                                            | Return Type                                | Usage                  |
-| ------------- | ------------------------------------------------------------------------------------------ | ------------------------------------------ | ---------------------- |
-| uuid          | zwraca UUID gracza                                                                         | string                                     | `ID gracza`            |
-| name          | returns the player's name                                                                  | string                                     | `player.name`          |
-| data          | returns the player's data                                                                  | [IData](/Vanilla/Data/IData/)              | `player.data`          |
-| xp            | returns the player's experience level. Can also be used to set a player's experience level | int                                        | `player.xp`            |
-| hotbarSize    | returns the player's hotbar size                                                           | int                                        | `player.hotbarSize`    |
-| inventorySize | returns the player's inventory size                                                        | int                                        | `player.inventorySize` |
-| currentItem   | returns the item the player is currently holding                                           | [IItemStack](/Vanilla/Items/IItemStack/)   | `player.currentItem`   |
-| creative      | returns if the player is currently in creative mode (a.k.a gamemode 1)                     | bool                                       | `player.creative`      |
-| adventure     | returns if the player is currently in adventure mode (a.k.a gamemode 2)                    | bool                                       | `player.adventure`     |
-| x             | returns the player's current X position in the world                                       | double                                     | `player.x`             |
-| y             | returns the player's current y position in the world                                       | double                                     | `player.y`             |
-| z             | returns the player's current z position in the world                                       | double                                     | `player.z`             |
-| foodStats     | returns the player's foodstats.                                                            | [IFoodStats](/Vanilla/Players/IFoodStats/) | `player.foodStats`     |
+| Zengetter     | What does it do                                                                            | Return Type                                             | Usage                  |
+| ------------- | ------------------------------------------------------------------------------------------ | ------------------------------------------------------- | ---------------------- |
+| uuid          | zwraca UUID gracza                                                                         | string                                                  | `ID gracza`            |
+| name          | returns the player's name                                                                  | string                                                  | `player.name`          |
+| data          | returns the player's data                                                                  | [IData](/Vanilla/Data/IData/)                           | `player.data`          |
+| xp            | returns the player's experience level. Can also be used to set a player's experience level | int                                                     | `player.xp`            |
+| hotbarSize    | returns the player's hotbar size                                                           | int                                                     | `player.hotbarSize`    |
+| inventorySize | returns the player's inventory size                                                        | int                                                     | `player.inventorySize` |
+| currentItem   | returns the item the player is currently holding                                           | [IItemStack](/Vanilla/Items/IItemStack/)                | `player.currentItem`   |
+| creative      | returns if the player is currently in creative mode (a.k.a gamemode 1)                     | bool                                                    | `player.creative`      |
+| adventure     | returns if the player is currently in adventure mode (a.k.a gamemode 2)                    | bool                                                    | `player.adventure`     |
+| x             | returns the player's current X position in the world                                       | double                                                  | `player.x`             |
+| y             | returns the player's current y position in the world                                       | double                                                  | `player.y`             |
+| z             | returns the player's current z position in the world                                       | double                                                  | `player.z`             |
+| position      | returns the player's current position. Can also be used to set a player's position         | [Position3f](/Vanilla/Utils/Position3f/)                | `player.position`      |
+| foodStats     | returns the player's foodstats.                                                            | [IFoodStats](/Vanilla/Players/IFoodStats/)              | `player.foodStats`     |
+| bedLocation   | returns the location of the player's bed.                                                  | [IBlockPos](/Vanilla/World/IBlockPos/)                  | `player.bedLocation`   |
+| fishHook      | returns the player's fishingrod entity.                                                    | [IEntityFishHook ](/Vanilla/Entities/IEntityFishHook /) | `player.fishHook`      |
+| foodStats     | returns the player's foodstats.                                                            | [IFoodStats](/Vanilla/Players/IFoodStats/)              | `player.foodStats`     |
 
 ## ZenMethods
 
