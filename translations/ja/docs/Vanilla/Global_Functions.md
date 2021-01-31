@@ -47,6 +47,14 @@ isNull(<minecraft:dirt>);
 
 返り値は真偽値型です。 注意: 思ったとおりに動かない場合、次の方法で真偽値型にキャストしてみてください。`<minecraft:dirt>as bool`
 
+## instanceof
+
+```zenscript
+entity instanceof IEntity;
+```
+
+Returns a boolean
+
 ## max
 
 ```zenscript
@@ -54,7 +62,7 @@ isNull(<minecraft:dirt>);
 max(10, 11);
 ```
 
-戻り値はint型です。
+Returns the larger number
 
 ## min
 
@@ -63,7 +71,7 @@ max(10, 11);
 min(10, 11);
 ```
 
-戻り値はint型です。
+Returns the lower number
 
 ## pow
 
@@ -72,9 +80,9 @@ min(10, 11);
 pow(2.0, 4.0);
 ```
 
-戻り値はdouble型です。
+Returns a double
 
-## グローバルフィールド
+## Global Fields
 
 | フィールド      | 説明                                                                                      |
 | ---------- | --------------------------------------------------------------------------------------- |
