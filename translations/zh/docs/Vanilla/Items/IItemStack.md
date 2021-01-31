@@ -93,6 +93,7 @@ Read how to use them [here](/UsingThisWiki/). Also, check out the examples below
 | hasCustomEntity     |                     | bool                                                        |
 | enchantments        |                     | List<[IEnchantment](/Vanilla/Enchantments/IEnchantment/)\> |
 | 匹配标签精度              |                     | bool                                                        |
+| maxItemUseDuration  |                     | int                                                         |
 
 #### Amount
 
