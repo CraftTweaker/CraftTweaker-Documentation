@@ -9,7 +9,7 @@ It might be required to [import](/AdvancedFunctions/Import/) the class to avoid 
 
 ## 继承自 IBlockProperties
 
-IBlockState extends [IBlockAccess](/Vanilla/World/IBlockAccess/). That means that all methods that are available to [IBlockAccess](/Vanilla/World/IBlockAccess/) objects are also available to IBlockState objects.
+IWorld extends [IBlockAccess](/Vanilla/World/IBlockAccess/). That means that all methods that are available to [IBlockAccess](/Vanilla/World/IBlockAccess/) objects are also available to IWorld.
 
 ## Creating an IWorld object
 
@@ -36,6 +36,7 @@ crafttweaker.world.IWorld.getFromID(int id);
 | getWorldType()     | worldType     | String                                           | Returns the world's type name.                                                                                                                                                          |
 | getWorldInfo()     | worldInfo     | [IWorldInfo](/Vanilla/World/IWorldInfo/)         | Returns the world's information. Can be used to retrieve even more info on the world.                                                                                                   |
 | getProvider()      | provider      | [IWorldProvider](/Vanilla/World/IWorldProvider/) | Returns the world's provider. Can be used to retrieve even more info on the world.                                                                                                      |
+| getSeaLevel()      | seaLevel      | int                                              | Returns the world's sea level.                                                                                                                                                          |
 
 ## ZenMethods with parameters
 
@@ -77,13 +78,39 @@ worldObj.setBlockState(IBlockState state, IBlockPos pos);
 worldObj.setBlockState(IBlockState state, IData tileEntityData, IBlockPos pos);
 ```
 
-### Spawn entity
+### Spawn Entity
 
 Use an [IEntity](/Vanilla/Entities/IEntity/) object.  
 Returns a bool that states if the spawn was successful.
 
 ```zenscript
 worldObj.spawnEntity(IEntity entity);
+```
+
+### Create Lightningbolt
+
+Returns the Lightningbolt as an [IEntity](/Vanilla/Entities/IEntity/) object.
+
+```zenscript
+worldObj.createLightningBolt(double x, double y, double z, @Optional boolean effectOnly);
+```
+
+### Add a Weather Effect
+
+Use an [IEntity](/Vanilla/Entities/IEntity/) object.  
+Returns a bool that states if the spawn was successful.
+
+```zenscript
+worldObj.addWeatherEffect(IEntity entity);
+```
+
+### Remove Entity
+
+Use an [IEntity](/Vanilla/Entities/IEntity/) object.  
+Returns a bool that states if the spawn was successful.
+
+```zenscript
+worldObj.removeEntity(IEntity entity);
 ```
 
 ### Get a raytrace result
@@ -98,16 +125,32 @@ Only the last parameter is true by default.
 worldObj.rayTraceBlocks(IVector3d begin, IVector3d ray, @Optional boolean stopOnLiquid, @Optional boolean ignoreBlockWithoutBoundingBox, @Optional(true) boolean returnLastUncollidableBlock)
 ```
 
-### 获取选中的块
+### Get the picked block
 
-使用 [IBlockPos](/Vanilla/World/IBlockPos/), [IRayTraceResults 结果](/Vanilla/World/IRayTraceResult/) 和 [IPlayer](/Vanilla/Players/IPlayer/).  
-返回 [ItemStack](/Vanilla/Items/IItemStack/)。  
-**可以为空**
+Use an [IBlockPos](/Vanilla/World/IBlockPos/), an [IRayTraceResult](/Vanilla/World/IRayTraceResult/) and an [IPlayer](/Vanilla/Players/IPlayer/).  
+Returns an [IItemStack](/Vanilla/Items/IItemStack/).  
+**Can be null**
 
-获取可以通过在位置选择方块获取的IItemStack。
+Gets the IItemStack that would be obtained by picking the block at the position.
 
 ```zenscript
-worldObj.getPickedBlock(IBlockPos pos，IRayTraceResult RayTraceResult，IPlayer player player)；
+worldObj.getPickedBlock(IBlockPos pos, IRayTraceResult rayTraceResult, IPlayer player);
+```
+
+### Check if a position is a spawn chunk
+
+Returns a bool that states if the position is a spawn chunk.
+
+```zenscript
+worldObj.isSpawnChunk(int x, int z);
+```
+
+### Extinguish Fire
+
+Returns a bool.
+
+```zenscript
+worldObj.extinguishFire(IPlayer player, IBlockPos pos, IFacing side);
 ```
 
 ### Create an explosion object
