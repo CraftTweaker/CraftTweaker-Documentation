@@ -14,35 +14,41 @@ IEntityLivingBase extends [IEntity](/Vanilla/Entities/IEntity/). That means all 
 
 ## ZenGetters
 
-| ZenGetter              | Return Type (*can be null*)                            |
-| ---------------------- | ------------------------------------------------------ |
-| activePotionEffects    | List<[IPotionEffect](/Vanilla/Potions/IPotionEffect/)> |
-| AIMovementSpeed        | float                                                  |
-| arrowsInEntity         | int                                                    |
-| attackingEntity        | *IEntityLivingBase*                                    |
-| canBreatheUnderwater   | boolean                                                |
-| health                 | float                                                  |
-| isChild                | boolean                                                |
-| isOnLadder             | boolean                                                |
-| isUndead               | boolean                                                |
-| lastAttackedEntity     | *IEntityLivingBase*                                    |
-| lastAttackedEntityTime | int                                                    |
-| lastDamageSource       | [IDamageSource](/Vanilla/Damage/IDamageSource/)        |
-| mainHandHeldItem       | [IItemStack](/Vanilla/Items/IItemStack/)               |
-| maxHealth              | float                                                  |
-| offHandHeldItem        | [IItemStack](/Vanilla/Items/IItemStack/)               |
-| revengeTarget          | *IEntityLivingBase*                                    |
-| totalArmorValue        | int                                                    |
+| ZenGetter                 | Return Type (*can be null*)                                     |
+| ------------------------- | --------------------------------------------------------------- |
+| activeHand                | [IEntityEquipmentSlot](/Vanilla/Entities/IEntityEquipmentSlot/) |
+| activeItemStack           | [IItemStack](/Vanilla/Items/IItemStack/)                        |
+| activePotionEffects       | List<[IPotionEffect](/Vanilla/Potions/IPotionEffect/)>          |
+| AIMovementSpeed           | float                                                           |
+| arrowsInEntity            | int                                                             |
+| attackingEntity           | [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/)       |
+| canBreatheUnderwater      | boolean                                                         |
+| health                    | float                                                           |
+| isActiveItemStackBlocking | boolean                                                         |
+| isChild                   | boolean                                                         |
+| isElytraFlying            | boolean                                                         |
+| isOnLadder                | boolean                                                         |
+| isUndead                  | boolean                                                         |
+| lastAttackedEntity        | [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/)       |
+| lastAttackedEntityTime    | int                                                             |
+| lastDamageSource          | [IDamageSource](/Vanilla/Damage/IDamageSource/)                 |
+| mainHandHeldItem          | [IItemStack](/Vanilla/Items/IItemStack/)                        |
+| maxHealth                 | float                                                           |
+| offHandHeldItem           | [IItemStack](/Vanilla/Items/IItemStack/)                        |
+| revengeTarget             | [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/)       |
+| swingInProgress           | boolean                                                         |
+| totalArmorValue           | int                                                             |
 
 ## ZenSetters
 
-| ZenSetter          | Parameter Type (*can be null*) |
-| ------------------ | ------------------------------ |
-| AIMovementSpeed    | float                          |
-| arrowsInEntity     | int                            |
-| health             | float                          |
-| lastAttackedEntity | *IEntityLivingBase*            |
-| revengeTarget      | *IEntityLivingBase*            |
+| ZenSetter          | Parameter Type (*can be null*)                            |
+| ------------------ | --------------------------------------------------------- |
+| AIMovementSpeed    | float                                                     |
+| arrowsInEntity     | int                                                       |
+| health             | float                                                     |
+| lastAttackedEntity | [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) |
+| revengeTarget      | [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) |
+| swingProgress      | int                                                       |
 
 ## More ZenMethods
 
@@ -58,7 +64,9 @@ IEntityLivingBase extends [IEntity](/Vanilla/Entities/IEntity/). That means all 
 - void addPotionEffect([IPotionEffect](/Vanilla/Potions/IPotionEffect/) potionEffect);
 - void removePotionEffect([IPotion](/Vanilla/Potions/IPotion/) poion);
 - void clearActivePotions() → Rimuove tutte le [pozioni attive](/Vanilla/Potions/IPotion/) dall'entità
-- void knockBack([entità IEntity](/Vanilla/Entities/IEntity/) , float one, double due, double tre);
+- void knockBack([IEntity](/Vanilla/Entities/IEntity/) source, float strength, double xRatio, double zRatio);
 - void suDeath();
 - void onLivingUpdate();
 - void setItemToSlot([IEntityEquipmentSlot](/Vanilla/Entities/IEntityEquipmentSlot/) slot, [IItemStack](/Vanilla/Items/IItemStack/) itemStack);
+- void resetActiveHand();
+- void stopActiveHand();
