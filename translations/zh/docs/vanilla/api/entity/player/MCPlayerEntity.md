@@ -218,7 +218,7 @@ myMCPlayerEntity.canBePushed();
 myMCPlayerEntity.canBeRiddenInWater();
 ```
 
-### canBreatheUnderwater
+### canBreatheUnderwater #可以水下呼吸
 
 返回为布尔值
 
