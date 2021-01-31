@@ -9,22 +9,23 @@ IBiome 인터페이스를 사용하여 등록되어 있는 바이옴에 대한 �
 
 ## IBiome 호출
 
-[IGame](/Vanilla/Game/IGame/)의 `game.biomes`을 사용하면 등록되어 있는 모든 바이옴의 목록을 얻을 수 있고 현재 유일한 방법이기도 합니다. 
+You can get a list of all registered Biomes using `game.biomes` from [IGame](/Vanilla/Game/IGame/)
 
 ## ZenGetters
 
 IBiome 객체로 수행할 수 있는 작업은 정보를 가져오는 일입니다. 
 
-| ZenGetter                    | 반환 타입   |
-| ---------------------------- | ------- |
-| name                         | string  |
-| canRain                      | boolean |
-| isSnowyBiome                 | boolean |
-| highHumidity                 | boolean |
-| spawningChance               | float   |
-| baseHeight                   | float   |
-| heightVariation              | float   |
-| rainfall                     | float   |
-| waterColorMultiplier         | int     |
-| ignorePlayerSpawnSuitability | boolean |
-| temperature                  | float   |
+| ZenGetter                    | 반환 타입                                          |
+| ---------------------------- | ---------------------------------------------- |
+| name                         | string                                         |
+| canRain                      | boolean                                        |
+| isSnowyBiome                 | boolean                                        |
+| highHumidity                 | boolean                                        |
+| spawningChance               | float                                          |
+| baseHeight                   | float                                          |
+| heightVariation              | float                                          |
+| rainfall                     | float                                          |
+| waterColorMultiplier         | int                                            |
+| ignorePlayerSpawnSuitability | boolean                                        |
+| temperature                  | float                                          |
+| types                        | List<[IBiomeType](/Vanilla/Biomes/IBiomeType/) |
