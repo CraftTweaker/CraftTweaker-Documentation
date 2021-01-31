@@ -4,11 +4,11 @@ Un array es una Lista de varios elementos DEL MISMO TIPO.
 
 ## Declarando Arrays
 
-It is declared using ```[``` and ```]```.
+Se declara como una variable y usando ```</code> [ </0>``` y ```</code> ] </0>```.
 
-**Imortant**: you *must* initialize arrays to something, even if it's an empty array.
+Importante: siempre * DEBES * inicializar un array a un tipo, aunque este vacio.
 
-`var floatArray as float [];` won't give syntax errors, but upon reloading your game, you will get an error and your script won't work.
+`var floatArray as float [];` no dará errores de sintaxis, pero al volver a cargar tu juego, obtendrás un error y tu archivo no funcionará.
 
 Instead, initialize empty arrays like this `var floatArray as float [] = [];`
 
