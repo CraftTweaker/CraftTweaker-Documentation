@@ -29,9 +29,9 @@ Un ZenSetter es lo mismo que un ZenGetter, pero un ZenSetter establece un valor 
 
 Un ZenSetter nunca devolvera información, ya que está hecho para establecer el valor de algo, no para obtenerlo.
 
-## Assign operators
+## Asignar operadores
 
-If an item has both, a ZenGetter and a ZenSetter with the same name (e.g. [IItemStack's](/Vanilla/Items/IItemStack/) "displayName"), you can use the assign operators other than `=`:
+Si un objeto tiene tanto un ZenGetter como un ZenSetter con el mismo nombre (por ejemplo: un tipo </code> IItemStack </a> tiene "displayName"), puedes usar otros operadores de asignación que no sean </code> = </0>. 
 
 Depending on the type you can use these: `&=`, `|=`, `+=`, `-=`, `*=`, `/=`, `%=`, `~=`.  
 Let's see what they do:
