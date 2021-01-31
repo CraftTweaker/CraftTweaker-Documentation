@@ -11,7 +11,7 @@ Importiere die Klasse mit `import mods.botanypots.Soil;` am Anfang deines Skript
 `Soil.create(id, ingredient, displayState, tickRate, categories);`
 
 - `id` &lt;String> Die ID der neuen Erde. Dies ist die ID für den Namensraum und muss im Format `namensraum:pfad` sein.
-- `ingredient` <[IIngredient](/vanilla/api/items/IIngredient)> The ingredient used to determine which items/blocks are used to put the soil in a pot.
+- `ingredient` <[Ingredient](/vanilla/api/items/IIngredient)> Die Zutat, die verwendet wird, um zu bestimmen, welche Elemente/Blöcke verwendet werden, um den Boden in einen Topf zu legen.
 - `displayState` <[MCBlockState](/vanilla/api/blocks/MCBlockState)> Der Blockstatus, der im Topf angezeigt werden soll
 - `tickRate` &lt;int> Die Tickrate der Erde
 - `categories` &lt;string[]> Eine Auswahl an Kategorien, die der Erde hinzugefügt werden kann
@@ -52,7 +52,7 @@ Bsp.: Soil.setTicks("botanypots:soil/grass", 1300);
 `Soil.setIngredient(id, ingredient);`
 
 - `id` &lt;String> Die ID der Erde. Dies ist die ID für den Namensraum und muss im Format `namensraum:pfad` sein.
-- `ingredient` <[IIngredient](/vanilla/api/items/IIngredient)> The ingredient used to determine which items/blocks are used to put the soil in a pot.
+- `ingredient` <[Ingredient](/vanilla/api/items/IIngredient)> Die Zutat, die verwendet wird, um zu bestimmen, welche Elemente/Blöcke verwendet werden, um den Boden in einen Topf zu legen.
 
 Ändert den Gegenstand, der verwendet wird, um die Erde in den Botany Pot zu legen.
 
