@@ -22,71 +22,74 @@ IEntity extends [ICommandSender](/Vanilla/Commands/ICommandSender/). That means 
 
 ## ZenGetters
 
-| GetterName               | GetterMethod      | Return Type (*can be null*)                                 |
-| ------------------------ | ----------------- | ----------------------------------------------------------- |
-| air                      | getAir()          | int型                                                        |
-| alive                    | isAlive()         | boolean型                                                    |
-| alwaysRenderNameTag      |                   | boolean型                                                    |
-| armorInventory           |                   | List<[IItemStack](/Vanilla/Items/IItemStack/)               |
-| canBeAttackedWithItem    |                   | boolean型                                                    |
-| canBeCollidedWith        |                   | boolean型                                                    |
-| canPassengerSteer        |                   | boolean型                                                    |
-| canRiderInteract         |                   | boolean型                                                    |
-| controllingPassenger     |                   | *IEntity*                                                   |
-| customName               | getCustomName()   | 文字列型                                                        |
-| definition               |                   | *[IEntityDefinition](/Vanilla/Entities/IEntityDefinition/)* |
-| dimension                | getDimension()    | int                                                         |
-| doesTriggerPressurePlate |                   | boolean型                                                    |
-| equipmentAndArmor        |                   | List<[IItemStack](/Vanilla/Items/IItemStack/)               |
-| eyeHeight                |                   | float                                                       |
-| hasCustomName            |                   | boolean型                                                    |
-| hasNoGravity             |                   | boolean型                                                    |
-| heldEquipment            |                   | List<[IItemStack](/Vanilla/Items/IItemStack/)               |
-| id                       |                   | int型                                                        |
-| immuneToFire             | isImmuneToFire()  | boolean型                                                    |
-| isBeingRidden            |                   | boolean型                                                    |
-| isBoss                   |                   | boolean型                                                    |
-| isBurning                |                   | boolean型                                                    |
-| isGlowing                |                   | boolean型                                                    |
-| isImmuneToExplosions     |                   | boolean型                                                    |
-| isInLava                 |                   | boolean型                                                    |
-| isInsideOpaqueBlock      |                   | boolean型                                                    |
-| isInvisible              |                   | boolean型                                                    |
-| isInvulnerable           |                   | boolean型                                                    |
-| isInWater                |                   | boolean型                                                    |
-| isOutsideBorder          |                   | boolean型                                                    |
-| isOverWater              |                   | boolean型                                                    |
-| isPushedByWater          |                   | boolean型                                                    |
-| isRiding                 |                   | boolean型                                                    |
-| isSilent                 |                   | boolean型                                                    |
-| isSneaking               |                   | boolean型                                                    |
-| isSprinting              |                   | boolean型                                                    |
-| lowestRidingEntity       |                   | *IEntity*                                                   |
-| maxFallHeight            |                   | int                                                         |
-| maxInPortalTime          |                   | int                                                         |
-| parts                    |                   | IEntity[]                                                   |
-| passengers               | getPassengers()   | List<IEntity\>                                             |
-| passengersRecursive      |                   | List<IEntity\>                                             |
-| portalCooldowne          |                   | int                                                         |
-| position3f               | getPosition3f()   | [Position3f](/Vanilla/Utils/Position3f/)                    |
-| ridingEntity             | getRidingEntity() | *IEntity*                                                   |
-| shouldRiderSit           |                   | boolean型                                                    |
-| tags                     |                   | List<string\>                                              |
-| team                     |                   | *[ITeam](/Vanilla/Game/ITeam/)*                             |
-| wet                      | isWet()           | boolean型                                                    |
-| world                    |                   | [IWorld](/Vanilla/World/IWorld/)                            |
-| x                        | getX()            | double                                                      |
-| y                        | getY()            | double                                                      |
-| z                        | getZ()            | double                                                      |
-| motionX                  |                   | double                                                      |
-| motionY                  |                   | double                                                      |
-| motionZ                  |                   | double                                                      |
-| posX                     |                   | double                                                      |
-| posY                     |                   | double                                                      |
-| posZ                     |                   | double                                                      |
-| rotationYaw              |                   | float                                                       |
-| rotationPitch            |                   | float                                                       |
-| lookingDirection         |                   | [IVector3d](/Vanilla/World/IVector3d/)                      |
+| GetterName               | GetterMethod      | Return Type (*can be null*)                               |
+| ------------------------ | ----------------- | --------------------------------------------------------- |
+| air                      | getAir()          | int型                                                      |
+| alive                    | isAlive()         | boolean型                                                  |
+| alwaysRenderNameTag      |                   | boolean型                                                  |
+| armorInventory           |                   | List<[IItemStack](/Vanilla/Items/IItemStack/)             |
+| canBeAttackedWithItem    |                   | boolean型                                                  |
+| canBeCollidedWith        |                   | boolean型                                                  |
+| canPassengerSteer        |                   | boolean型                                                  |
+| canRiderInteract         |                   | boolean型                                                  |
+| controllingPassenger     |                   | *IEntity*                                                 |
+| customName               | getCustomName()   | 文字列型                                                      |
+| definition               |                   | [IEntityDefinition](/Vanilla/Entities/IEntityDefinition/) |
+| dimension                | getDimension()    | int                                                       |
+| doesTriggerPressurePlate |                   | boolean型                                                  |
+| equipmentAndArmor        |                   | List<[IItemStack](/Vanilla/Items/IItemStack/)             |
+| eyeHeight                |                   | float                                                     |
+| hasCustomName            |                   | boolean型                                                  |
+| hasNoGravity             |                   | boolean型                                                  |
+| heldEquipment            |                   | List<[IItemStack](/Vanilla/Items/IItemStack/)             |
+| id                       |                   | int型                                                      |
+| immuneToFire             | isImmuneToFire()  | boolean型                                                  |
+| isBeingRidden            |                   | boolean型                                                  |
+| isBoss                   |                   | boolean型                                                  |
+| isBurning                |                   | boolean型                                                  |
+| isGlowing                |                   | boolean型                                                  |
+| isImmuneToExplosions     |                   | boolean型                                                  |
+| isInLava                 |                   | boolean型                                                  |
+| isInsideOpaqueBlock      |                   | boolean型                                                  |
+| isInvisible              |                   | boolean型                                                  |
+| isInvulnerable           |                   | boolean型                                                  |
+| isInWater                |                   | boolean型                                                  |
+| isLightningbolt          |                   | boolean型                                                  |
+| isOutsideBorder          |                   | boolean型                                                  |
+| isOverWater              |                   | boolean型                                                  |
+| isPushedByWater          |                   | boolean型                                                  |
+| isRiding                 |                   | boolean型                                                  |
+| isSilent                 |                   | boolean型                                                  |
+| isSneaking               |                   | boolean型                                                  |
+| isSprinting              |                   | boolean型                                                  |
+| lowestRidingEntity       |                   | *IEntity*                                                 |
+| maxFallHeight            |                   | int                                                       |
+| maxInPortalTime          |                   | int                                                       |
+| onGround                 | onGround()        | boolean型                                                  |
+| parts                    |                   | IEntity[]                                                 |
+| passengers               | getPassengers()   | List<IEntity\>                                           |
+| passengersRecursive      |                   | List<IEntity\>                                           |
+| portalCooldowne          |                   | int                                                       |
+| position3f               | getPosition3f()   | [Position3f](/Vanilla/Utils/Position3f/)                  |
+| ridingEntity             | getRidingEntity() | *IEntity*                                                 |
+| shouldRiderSit           |                   | boolean型                                                  |
+| tags                     |                   | List<string\>                                            |
+| team                     |                   | [ITeam](/Vanilla/Game/ITeam/)                             |
+| wet                      | isWet()           | boolean型                                                  |
+| world                    |                   | [IWorld](/Vanilla/World/IWorld/)                          |
+| x                        | getX()            | double                                                    |
+| y                        | getY()            | double                                                    |
+| z                        | getZ()            | double                                                    |
+| motionX                  |                   | double                                                    |
+| motionY                  |                   | double                                                    |
+| motionZ                  |                   | double                                                    |
+| posX                     |                   | double                                                    |
+| posY                     |                   | double                                                    |
+| posZ                     |                   | double                                                    |
+| rotationYaw              |                   | float                                                     |
+| rotationPitch            |                   | float                                                     |
+| lookingDirection         |                   | [IVector3d](/Vanilla/World/IVector3d/)                    |
+| nbt                      | getNBT()          | [IData](/Vanilla/Data/IData/)                             |
 
 ## ZenSetters
 
@@ -114,6 +117,7 @@ IEntity extends [ICommandSender](/Vanilla/Commands/ICommandSender/). That means 
 | posX                |                     | double                                 |
 | posY                |                     | double                                 |
 | posZ                |                     | double                                 |
+| nbt                 | setNBT()            | [IData](/Vanilla/Data/IData/)          |
 
 ## More ZenMethods
 
@@ -121,7 +125,6 @@ IEntity extends [ICommandSender](/Vanilla/Commands/ICommandSender/). That means 
 - boolean canTrample([IWorld](/Vanilla/World/IWorld/) world, [IBlockDefinition](/Vanilla/Blocks/IBlockDefinition/) block, [IBlockPos](/Vanilla/World/IBlockPos/) pos, float fall);
 - boolean isInsideOfMaterial([IMaterial](/Vanilla/Blocks/IMaterial/) material);
 - double getDistanceSqToEntity(entity); → Returns the distance to the given Entity
-- [IData](/Vanilla/Data/IData/) getNBT();
 - [IItemStack](/Vanilla/Items/IItemStack/) getPickedResult(); → Returns the [item](/Vanilla/Items/IItemStack/) that picking up the entity would return (e.g. the item id the entity is an item or the minecart item)
 - void addTag(String tag);
 - void extinguish(); → Extinguishes the entity, if on fire
@@ -141,5 +144,3 @@ IEntity extends [ICommandSender](/Vanilla/Commands/ICommandSender/). That means 
 - boolean boolean isPassenger(IEntity entity);
 - boolean isRidingSameEntity(IEntity other);
 - [IRayTraceResult](/Vanilla/World/IRayTraceResult/) getRayTrace(double blockReachDistance, float partialTicks, @Optional boolean stopOnLiquid, @Optional boolean ignoreBlockWithoutBoundingBox, @Optional(valueBoolean = true) boolean returnLastUncollidableBlock);
-- void update([IData](/Vanilla/Data/IData/) data);
-- boolean onGround(); → Returns true if the entity is on the ground, and false when in the air
