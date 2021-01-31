@@ -47,6 +47,14 @@ isNull(<minecraft:dirt>);
 
 Returns a boolean Note: If this does not work for you, try casting the object to bool `<minecraft:dirt> as bool`
 
+## instanceof
+
+```zenscript
+entity instanceof IEntity;
+```
+
+Returns a boolean
+
 ## max
 
 ```zenscript
@@ -54,7 +62,7 @@ Returns a boolean Note: If this does not work for you, try casting the object to
 max(10, 11);
 ```
 
-Returns an int
+Returns the larger number
 
 ## min
 
@@ -63,7 +71,7 @@ Returns an int
 min(10, 11);
 ```
 
-Returns an int
+Returns the lower number
 
 ## pow
 
@@ -72,7 +80,7 @@ Returns an int
 pow(2.0, 4.0);
 ```
 
-返回double型数据
+Returns a double
 
 ## Global Fields
 
