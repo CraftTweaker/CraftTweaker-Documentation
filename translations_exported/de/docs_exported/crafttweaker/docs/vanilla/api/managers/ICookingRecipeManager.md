@@ -24,7 +24,7 @@ Return Type: void
 
 ```zenscript
 ICookingRecipeManager.addRecipe(name as string, output as IItemStack, input as IIngredient, xp as float, cookTime as int) as void
-furnace.addRecipe("wool2diamond", <item:diamond>, <tag:minecraft:wool>, 1.0, 0);
+furnace.addRecipe("wool2diamond", <item:minecraft:diamond>, <tag:minecraft:wool>, 1.0, 0);
 ```
 | Parameter | Type                                          | Beschreibung                    |
 | --------- | --------------------------------------------- | ------------------------------- |
