@@ -17,9 +17,11 @@ Return Type: string
 ```zenscript
 MCPotion.getNamePrefixed(name as string) as string
 ```
+
 | Параметр | Тип    | Description             |
 | -------- | ------ | ----------------------- |
 | name     | string | No Description Provided |
+
 
 
 ## Свойства
