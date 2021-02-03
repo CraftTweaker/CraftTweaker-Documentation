@@ -23,9 +23,11 @@ Return Type: string
 ```zenscript
 MCSuggestion.apply(input as string) as string
 ```
+
 | Parameter | Type   | Description             |
 | --------- | ------ | ----------------------- |
 | input     | string | No Description Provided |
+
 
 ### confrontaA
 
@@ -34,9 +36,11 @@ Return Type: int
 ```zenscript
 MCSuggestion.compareTo(o as MCSuggestion) as int
 ```
+
 | Parameter | Type                                                      | Description             |
 | --------- | --------------------------------------------------------- | ----------------------- |
 | o         | [MCSuggestion](/vanilla/api/commands/custom/MCSuggestion) | No Description Provided |
+
 
 ### confrontaToIgnoreCase
 
@@ -45,9 +49,11 @@ Return Type: int
 ```zenscript
 MCSuggestion.compareToIgnoreCase(b as MCSuggestion) as int
 ```
+
 | Parameter | Type                                                      | Description             |
 | --------- | --------------------------------------------------------- | ----------------------- |
 | b         | [MCSuggestion](/vanilla/api/commands/custom/MCSuggestion) | No Description Provided |
+
 
 ### equals
 
@@ -56,9 +62,11 @@ Return Type: boolean
 ```zenscript
 MCSuggestion.equals(o as Object) as boolean
 ```
+
 | Parameter | Type   | Description             |
 | --------- | ------ | ----------------------- |
 | o         | Object | No Description Provided |
+
 
 ### expandWith
 
@@ -67,10 +75,12 @@ Return Type: [MCSuggestion](/vanilla/api/commands/custom/MCSuggestion)
 ```zenscript
 MCSuggestion.expandWith(command as string, range as MCStringRange) as MCSuggestion
 ```
+
 | Parameter | Type                                                        | Description             |
 | --------- | ----------------------------------------------------------- | ----------------------- |
 | command   | string                                                      | No Description Provided |
 | range     | [MCStringRange](/vanilla/api/commands/custom/MCStringRange) | No Description Provided |
+
 
 ### getRange
 
@@ -80,6 +90,7 @@ Return Type: [MCStringRange](/vanilla/api/commands/custom/MCStringRange)
 MCSuggestion.getRange() as MCStringRange
 myMCSuggestion.getRange();
 ```
+
 ### getText
 
 Return Type: string
@@ -88,6 +99,7 @@ Return Type: string
 MCSuggestion.getText() as string
 myMCSuggestion.getText();
 ```
+
 ### getTooltip
 
 Return Type: string
@@ -96,6 +108,7 @@ Return Type: string
 MCSuggestion.getTooltip() as string
 myMCSuggestion.getTooltip();
 ```
+
 ### hashCode
 
 Return Type: int
@@ -104,6 +117,7 @@ Return Type: int
 MCSuggestion.hashCode() as int
 myMCSuggestion.hashCode();
 ```
+
 ### toString
 
 Return Type: string
@@ -113,6 +127,7 @@ MCSuggestion.toString() as string
 myMCSuggestion.toString();
 ```
 
+
 ## Operators
 
 ### EQUALS
@@ -120,6 +135,7 @@ myMCSuggestion.toString();
 ```zenscript
 myMCSuggestion == o come oggetto
 ```
+
 
 
 
