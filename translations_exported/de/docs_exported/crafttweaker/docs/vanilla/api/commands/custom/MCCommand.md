@@ -14,9 +14,11 @@ No Description Provided
 ```zenscript
 new MCCommand(fun as Function<MCCommandContext,Integer>) as MCCommand
 ```
+
 | Parameter | Type                                                                                                  | Beschreibung            |
 | --------- | ----------------------------------------------------------------------------------------------------- | ----------------------- |
 | lustig    | Function&lt;[MCCommandContext](/vanilla/api/commands/custom/MCCommandContext),Integer&gt; | No Description Provided |
+
 
 
 ## Casters
@@ -34,9 +36,11 @@ Return Type: boolean
 ```zenscript
 MCCommand.equals(o as Object) as boolean
 ```
+
 | Parameter | Type   | Beschreibung            |
 | --------- | ------ | ----------------------- |
 | o         | Object | No Description Provided |
+
 
 ### hashCode
 
@@ -46,6 +50,7 @@ Return Type: int
 MCCommand.hashCode() as int
 myMCCommand.hashCode();
 ```
+
 ### laufen
 
 Return Type: int
@@ -53,9 +58,11 @@ Return Type: int
 ```zenscript
 MCCommand.run(context as MCCommandContext) as int
 ```
+
 | Parameter | Type                                                              | Beschreibung            |
 | --------- | ----------------------------------------------------------------- | ----------------------- |
 | kontext   | [MCCommandContext](/vanilla/api/commands/custom/MCCommandContext) | No Description Provided |
+
 
 ### toString
 
@@ -66,6 +73,7 @@ MCCommand.toString() as string
 myMCCommand.toString();
 ```
 
+
 ## Operatoren
 
 ### EQUALS
@@ -73,6 +81,7 @@ myMCCommand.toString();
 ```zenscript
 myMCCommand == o als Objekt
 ```
+
 
 
 
