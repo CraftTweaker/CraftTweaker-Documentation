@@ -23,6 +23,7 @@ MCLivingEvent.getEntityLiving() as MCLivingEntity
 myMCLivingEvent.getEntityLiving();
 ```
 
+
 ## Свойства
 
 | Название     | Тип                                                  | Имеет Getter | Имеет Setter |
