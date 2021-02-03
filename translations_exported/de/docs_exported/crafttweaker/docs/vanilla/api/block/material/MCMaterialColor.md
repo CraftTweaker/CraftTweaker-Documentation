@@ -17,8 +17,10 @@ Return Type: int
 ```zenscript
 MCMaterialColor.getMapColor(index as int) as int
 ```
+
 | Parameter | Type | Beschreibung            |
 | --------- | ---- | ----------------------- |
 | index     | int  | No Description Provided |
+
 
 
