@@ -20,8 +20,10 @@ No Description Provided
 ```zenscript
 new ByteArrayData(internal as byte[]) as ByteArrayData
 ```
+
 | Параметр | Тип    | Description             |
 | -------- | ------ | ----------------------- |
 | internal | byte[] | No Description Provided |
+
 
 
