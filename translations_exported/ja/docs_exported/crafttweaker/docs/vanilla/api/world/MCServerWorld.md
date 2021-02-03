@@ -26,9 +26,11 @@ Return Type: boolean
 MCServerWorld.isRaid(pos as BlockPos) as boolean
 world as MCServerWorld.isRaid(new BlockPos(0, 1, 2));
 ```
+
 | Parameter | Type                                   | Description              |
 | --------- | -------------------------------------- | ------------------------ |
 | pos       | [BlockPos](/vanilla/api/util/BlockPos) | The position to look up. |
+
 
 ### isSlimeChunk
 
@@ -40,9 +42,11 @@ Return Type: boolean
 MCServerWorld.isSlimeChunk(pos as BlockPos) as boolean
 world as MCServerWorld.isSlimeChunk(new BlockPos(0, 1, 2));
 ```
+
 | Parameter | Type                                   | Description              |
 | --------- | -------------------------------------- | ------------------------ |
 | pos       | [BlockPos](/vanilla/api/util/BlockPos) | The position to look up. |
+
 
 ### isVillage
 
@@ -53,9 +57,11 @@ Return Type: boolean
 ```zenscript
 MCServerWorld.isVillage(pos as BlockPos) as boolean
 ```
+
 | Parameter | Type                                   | Description              |
 | --------- | -------------------------------------- | ------------------------ |
 | pos       | [BlockPos](/vanilla/api/util/BlockPos) | The position to look up. |
+
 
 ### setTimeToDay
 
@@ -67,6 +73,7 @@ Return Type: void
 MCServerWorld.setTimeToDay() as void
 world as MCServerWorld.setTimeToDay();
 ```
+
 ### setTimeToMidnight
 
 Sets the time of the Minecraft day to midnight. This is like using the "time set midnight" command or setting the time to 18000.
@@ -77,6 +84,7 @@ Return Type: void
 MCServerWorld.setTimeToMidnight() as void
 world as MCServerWorld.setTimeToMidnight();
 ```
+
 ### setTimeToNight
 
 Sets the time of the Minecraft day to night. This is like using the "time set night" command or setting the time to 13000.
@@ -87,6 +95,7 @@ Return Type: void
 MCServerWorld.setTimeToNight() as void
 world as MCServerWorld.setTimeToNight();
 ```
+
 ### setTimeToNoon
 
 Sets the time of the Minecraft day to noon. This is like using the "time set noon" command or setting the time to 6000.
@@ -97,6 +106,7 @@ Return Type: void
 MCServerWorld.setTimeToNoon() as void
 world as MCServerWorld.setTimeToNoon();
 ```
+
 
 ## Properties
 
