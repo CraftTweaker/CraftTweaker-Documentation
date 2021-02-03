@@ -17,10 +17,12 @@ Return Type: boolean
 ```zenscript
 MCPotionEffect.isReady(duration as int, amplifier as int) as boolean
 ```
+
 | Параметр  | Тип | Description             |
 | --------- | --- | ----------------------- |
 | duration  | int | No Description Provided |
 | amplifier | int | No Description Provided |
+
 
 ### newInstance
 
@@ -29,10 +31,12 @@ Return Type: [MCPotionEffectInstance](/vanilla/api/potions/MCPotionEffectInstanc
 ```zenscript
 MCPotionEffect.newInstance(duration as int, amplifier as int) as MCPotionEffectInstance
 ```
+
 | Параметр  | Тип | Description             | Optional | DefaultValue |
 | --------- | --- | ----------------------- | -------- | ------------ |
 | duration  | int | No Description Provided | false    |              |
 | amplifier | int | No Description Provided | true     | 0            |
+
 
 ## Свойства
 
