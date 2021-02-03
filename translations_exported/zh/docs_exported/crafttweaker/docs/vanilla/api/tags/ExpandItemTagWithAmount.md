@@ -17,3 +17,4 @@ MCTagWithAmount.asIngredient() as IIngredientWithAmount
 myMCTagWithAmount.asIngredient();
 ```
 
+
