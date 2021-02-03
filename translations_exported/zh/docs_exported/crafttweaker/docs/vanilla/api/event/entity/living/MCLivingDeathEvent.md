@@ -27,6 +27,7 @@ MCLivingDeathEvent.getSource() as DamageSource
 event.getSource();
 ```
 
+
 ## 参数
 
 | 名称 | 类型                                             | 可获得  | 可设置   |
