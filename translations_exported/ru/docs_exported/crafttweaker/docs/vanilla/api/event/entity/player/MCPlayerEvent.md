@@ -23,6 +23,7 @@ MCPlayerEvent.getPlayer() as MCPlayerEntity
 myMCPlayerEvent.getPlayer();
 ```
 
+
 ## Свойства
 
 | Название | Тип                                                  | Имеет Getter | Имеет Setter |
