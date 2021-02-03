@@ -26,10 +26,12 @@ Return Type: void
 StoneCutterManager.addRecipe(recipeName as string, output as IItemStack, input as IIngredient) as void
 stoneCutter.addRecipe("recipe_name", <item:minecraft:grass>, <tag:minecraft:wool>);
 ```
+
 | 参数         | 类型                                                | 描述                                                  |
 | ---------- | ------------------------------------------------- | --------------------------------------------------- |
 | recipeName | string                                            | name of the recipe                                  |
 | output（输出） | [IItemStack](/vanilla/api/items/IItemStack)       | output [IItemStack](/vanilla/api/items/IItemStack)  |
 | input（输入）  | [材料（IIngredient）](/vanilla/api/items/IIngredient) | input [IIngredient](/vanilla/api/items/IIngredient) |
+
 
 
