@@ -27,6 +27,7 @@ MCPlayerRespawnEvent.isEndConquered() as boolean
 myMCPlayerRespawnEvent.isEndConquered();
 ```
 
+
 ## 参数
 
 | 名称           | 类型      | 可获得  | 可设置   |
