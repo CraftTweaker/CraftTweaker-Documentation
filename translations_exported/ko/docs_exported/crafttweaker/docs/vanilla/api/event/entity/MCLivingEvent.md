@@ -23,6 +23,7 @@ MCLivingEvent.getEntityLiving() as MCLivingEntity
 myMCLivingEvent.getEntityLiving();
 ```
 
+
 ## Properties
 
 | 이름           | Type                                                 | Has Getter | Has Setter |
