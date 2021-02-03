@@ -27,6 +27,7 @@ MCPlayerDestroyItemEvent.getDestroyedItem() as IItemStack
 event.getDestroyedItem();
 ```
 
+
 ## Properties
 
 | 名称            | Type                                        | Has Getter | Has Setter |
