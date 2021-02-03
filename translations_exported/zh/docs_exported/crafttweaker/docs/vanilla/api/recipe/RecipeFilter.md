@@ -17,8 +17,10 @@ Return Type: boolean
 ```zenscript
 RecipeFilter.test(name as string) as boolean
 ```
+
 | 参数   | 类型     | 描述                      |
 | ---- | ------ | ----------------------- |
 | name | string | No Description Provided |
+
 
 
