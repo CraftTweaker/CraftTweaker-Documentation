@@ -23,6 +23,7 @@ MCItemCraftedEvent.getCrafting() as IItemStack
 myMCItemCraftedEvent.getCrafting();
 ```
 
+
 ## Properties
 
 | 이름       | Type                                        | Has Getter | Has Setter |
