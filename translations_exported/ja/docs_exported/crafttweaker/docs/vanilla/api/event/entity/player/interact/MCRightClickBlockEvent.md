@@ -25,6 +25,7 @@ MCRightClickBlockEvent.getFace() as Direction
 myMCRightClickBlockEvent.getFace();
 ```
 
+
 ## Properties
 
 | 名称   | Type                                     | Has Getter | Has Setter |
