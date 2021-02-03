@@ -17,10 +17,12 @@ Return Type: boolean
 ```zenscript
 MCBiome.doesSnowFreeze(world as MCWorld, pos as BlockPos) as boolean
 ```
+
 | Parameter | Type                                   | Description             |
 | --------- | -------------------------------------- | ----------------------- |
 | world     | [MCWorld](/vanilla/api/world/MCWorld)  | No Description Provided |
 | pos       | [BlockPos](/vanilla/api/util/BlockPos) | No Description Provided |
+
 
 ### doesWaterFreeze
 
@@ -29,21 +31,25 @@ Return Type: boolean
 ```zenscript
 MCBiome.doesWaterFreeze(world as MCWorld, pos as BlockPos) as boolean
 ```
+
 | Parameter | Type                                   | Description             |
 | --------- | -------------------------------------- | ----------------------- |
 | world     | [MCWorld](/vanilla/api/world/MCWorld)  | No Description Provided |
 | pos       | [BlockPos](/vanilla/api/util/BlockPos) | No Description Provided |
+
 
 Return Type: boolean
 
 ```zenscript
 MCBiome.doesWaterFreeze(world as MCWorld, pos as BlockPos, mustBeAtEdge as boolean) as boolean
 ```
+
 | Parameter    | Type                                   | Description             |
 | ------------ | -------------------------------------- | ----------------------- |
 | world        | [MCWorld](/vanilla/api/world/MCWorld)  | No Description Provided |
 | pos          | [BlockPos](/vanilla/api/util/BlockPos) | No Description Provided |
 | mustBeAtEdge | boolean                                | No Description Provided |
+
 
 ### getTemperature
 
@@ -52,9 +58,11 @@ Return Type: float
 ```zenscript
 MCBiome.getTemperature(pos as BlockPos) as float
 ```
+
 | Parameter | Type                                   | Description             |
 | --------- | -------------------------------------- | ----------------------- |
 | pos       | [BlockPos](/vanilla/api/util/BlockPos) | No Description Provided |
+
 
 
 ## Properties
