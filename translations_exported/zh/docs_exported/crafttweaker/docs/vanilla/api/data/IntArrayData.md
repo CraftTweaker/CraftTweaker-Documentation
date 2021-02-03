@@ -20,8 +20,10 @@ No Description Provided
 ```zenscript
 new IntArrayData(internal as int[]) as IntArrayData
 ```
+
 | 参数       | 类型    | 描述                      |
 | -------- | ----- | ----------------------- |
 | internal | int[] | No Description Provided |
+
 
 
