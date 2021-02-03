@@ -26,11 +26,13 @@ Return Type: void
 SmithingManager.addRecipe(recipeName as string, result as IItemStack, base as IIngredient, addition as IIngredient) as void
 smithing.addRecipe("recipe_name", <item:minecraft:golden_apple>, <item:minecraft:apple>, <tag:forge:ingots/gold>);
 ```
+
 | Параметр   | Тип                                           | Description                            |
 | ---------- | --------------------------------------------- | -------------------------------------- |
 | recipeName | string                                        | Name of the recipe.                    |
 | result     | [IItemStack](/vanilla/api/items/IItemStack)   | The item created by the recipe.        |
 | base       | [IIngredient](/vanilla/api/items/IIngredient) | The initial ingredient for the recipe. |
 | addition   | [IIngredient](/vanilla/api/items/IIngredient) | The item added to the base item.       |
+
 
 
