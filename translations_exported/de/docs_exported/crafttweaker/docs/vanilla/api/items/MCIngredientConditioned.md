@@ -28,10 +28,12 @@ Return Type: boolean
 ```zenscript
 MCIngredientConditioned.matches(stack as IItemStack, ignoreDamage as boolean) as boolean
 ```
+
 | Parameter     | Type                                        | Beschreibung            |
 | ------------- | ------------------------------------------- | ----------------------- |
 | stack         | [IItemStack](/vanilla/api/items/IItemStack) | No Description Provided |
 | ignoreSchaden | boolean                                     | No Description Provided |
+
 
 
 ## Properties
