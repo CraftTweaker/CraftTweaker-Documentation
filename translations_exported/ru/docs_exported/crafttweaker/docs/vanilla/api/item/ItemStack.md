@@ -27,6 +27,7 @@ Return Type: [IIngredient](/vanilla/api/items/IIngredient)
 ItemStack.asIIngredient() as IIngredient
 myItemStack.asIIngredient();
 ```
+
 ### asIItemStack
 
 Return Type: [IItemStack](/vanilla/api/items/IItemStack)
@@ -35,6 +36,7 @@ Return Type: [IItemStack](/vanilla/api/items/IItemStack)
 ItemStack.asIItemStack() as IItemStack
 myItemStack.asIItemStack();
 ```
+
 ### print
 
 Debug method, expect this to be removed anytime!
@@ -45,4 +47,5 @@ Return Type: void
 ItemStack.print() as void
 myItemStack.print();
 ```
+
 
