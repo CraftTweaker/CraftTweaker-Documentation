@@ -17,10 +17,12 @@ Return Type: boolean
 ```zenscript
 MCBiome.doesSnowFreeze(world as MCWorld, pos as BlockPos) as boolean
 ```
+
 | 参数    | 类型                                     | 描述                      |
 | ----- | -------------------------------------- | ----------------------- |
 | world | [MCWorld](/vanilla/api/world/MCWorld)  | No Description Provided |
 | 点     | [BlockPos](/vanilla/api/util/BlockPos) | No Description Provided |
+
 
 ### doesWaterFreeze
 
@@ -29,21 +31,25 @@ Return Type: boolean
 ```zenscript
 MCBiome.doesWaterFreeze(world as MCWorld, pos as BlockPos) as boolean
 ```
+
 | 参数    | 类型                                     | 描述                      |
 | ----- | -------------------------------------- | ----------------------- |
 | world | [MCWorld](/vanilla/api/world/MCWorld)  | No Description Provided |
 | 点     | [BlockPos](/vanilla/api/util/BlockPos) | No Description Provided |
+
 
 Return Type: boolean
 
 ```zenscript
 MCBiome.doesWaterFreeze(world as MCWorld, pos as BlockPos, mustBeAtEdge as boolean) as boolean
 ```
+
 | 参数           | 类型                                     | 描述                      |
 | ------------ | -------------------------------------- | ----------------------- |
 | world        | [MCWorld](/vanilla/api/world/MCWorld)  | No Description Provided |
 | 点            | [BlockPos](/vanilla/api/util/BlockPos) | No Description Provided |
 | mustBeAtEdge | boolean                                | No Description Provided |
+
 
 ### getTemperature
 
@@ -52,9 +58,11 @@ Return Type: float
 ```zenscript
 MCBiome.getTemperature(pos as BlockPos) as float
 ```
+
 | 参数 | 类型                                     | 描述                      |
 | -- | -------------------------------------- | ----------------------- |
 | 点  | [BlockPos](/vanilla/api/util/BlockPos) | No Description Provided |
+
 
 
 ## 参数
