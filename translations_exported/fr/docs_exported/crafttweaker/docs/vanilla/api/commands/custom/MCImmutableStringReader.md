@@ -18,14 +18,17 @@ Return Type: boolean
 MCImmutableStringReader.canRead() as boolean
 myMCImmutableStringReader.canRead();
 ```
+
 Return Type: boolean
 
 ```zenscript
 MCImmutableStringReader.canRead(arg0 as int) as boolean
 ```
+
 | Parameter | Type | Description             |
 | --------- | ---- | ----------------------- |
 | arg0      | int  | No Description Provided |
+
 
 ### getCursor
 
@@ -35,6 +38,7 @@ Return Type: int
 MCImmutableStringReader.getCursor() as int
 myMCImmutableStringReader.getCursor();
 ```
+
 ### getRead
 
 Return Type: string
@@ -43,6 +47,7 @@ Return Type: string
 MCImmutableStringReader.getRead() as string
 myMCImmutableStringReader.getRead();
 ```
+
 ### Rester en cours
 
 Return Type: string
@@ -51,6 +56,7 @@ Return Type: string
 MCImmutableStringReader.getRemaining() as string
 myMCImmutableStringReader.getRemaining();
 ```
+
 ### Obtenir la longueur restante
 
 Return Type: int
@@ -59,6 +65,7 @@ Return Type: int
 MCImmutableStringReader.getRemainingLength() as int
 myMCImmutableStringReader.getRemainingLength();
 ```
+
 ### getString
 
 Return Type: string
@@ -67,6 +74,7 @@ Return Type: string
 MCImmutableStringReader.getString() as string
 myMCImmutableStringReader.getString();
 ```
+
 ### Durée totale de lecture
 
 Return Type: int
@@ -75,6 +83,7 @@ Return Type: int
 MCImmutableStringReader.getTotalLength() as int
 myMCImmutableStringReader.getTotalLength();
 ```
+
 ### coup d'œil
 
 Return Type: char
@@ -83,13 +92,16 @@ Return Type: char
 MCImmutableStringReader.peek() as char
 myMCImmutableStringReader.peek();
 ```
+
 Return Type: char
 
 ```zenscript
 MCImmutableStringReader.peek(arg0 as int) as char
 ```
+
 | Parameter | Type | Description             |
 | --------- | ---- | ----------------------- |
 | arg0      | int  | No Description Provided |
+
 
 
