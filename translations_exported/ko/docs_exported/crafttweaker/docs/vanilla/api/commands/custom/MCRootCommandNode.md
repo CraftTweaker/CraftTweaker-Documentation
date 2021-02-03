@@ -27,9 +27,11 @@ Return Type: boolean
 ```zenscript
 MCRootCommandNode.equals(o as Object) as boolean
 ```
+
 | Parameter | Type   | Description             |
 | --------- | ------ | ----------------------- |
 | o         | Object | No Description Provided |
+
 
 ### hashCode
 
@@ -39,6 +41,7 @@ Return Type: int
 MCRootCommandNode.hashCode() as int
 myMCRootCommandNode.hashCode();
 ```
+
 ### isValidInput
 
 Return Type: boolean
@@ -46,9 +49,11 @@ Return Type: boolean
 ```zenscript
 MCRootCommandNode.isValidInput(input as string) as boolean
 ```
+
 | Parameter | Type   | Description             |
 | --------- | ------ | ----------------------- |
 | input     | string | No Description Provided |
+
 
 ### toString
 
@@ -59,6 +64,7 @@ MCRootCommandNode.toString() as string
 myMCRootCommandNode.toString();
 ```
 
+
 ## 연산자
 
 ### EQUALS
@@ -66,6 +72,7 @@ myMCRootCommandNode.toString();
 ```zenscript
 myMCRootCommandNode == o as Object
 ```
+
 
 
 
