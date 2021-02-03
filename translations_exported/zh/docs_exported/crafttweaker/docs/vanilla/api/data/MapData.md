@@ -21,13 +21,16 @@ No Description Provided
 new MapData() as MapData
 new MapData();
 ```
+
 No Description Provided
 ```zenscript
 new MapData(map as IData[string]) as MapData
 ```
+
 | 参数  | 类型                                       | 描述                      |
 | --- | ---------------------------------------- | ----------------------- |
 | map | [IData](/vanilla/api/data/IData)[string] | No Description Provided |
+
 
 
 ## Casters
@@ -48,9 +51,11 @@ Return Type: boolean
 MapData.contains(key as string) as boolean
 {Hello : "World", Somewhere: "Over the rainbow"}.contains("Hello");
 ```
+
 | 参数  | 类型     | 描述     |
 | --- | ------ | ------ |
 | key | string | 要搜索的密钥 |
+
 
 ### getAt
 
@@ -62,9 +67,11 @@ Return Type: [IData](/vanilla/api/data/IData)
 MapData.getAt(key as string) as IData
 {Hello : "World", Somewhere: "Over the rainbow"}.getAt("Hello");
 ```
+
 | 参数  | 类型     | 描述     |
 | --- | ------ | ------ |
 | key | string | 要搜索的密钥 |
+
 
 ### merge #合并
 
@@ -76,9 +83,11 @@ Return Type: [MapData](/vanilla/api/data/MapData)
 MapData.merge(other as MapData) as MapData
 {Hello : "World", Somewhere: "Over the rainbow"}.merge({Doodle: "Do});
 ```
+
 | 参数    | 类型                                         | 描述     |
 | ----- | ------------------------------------------ | ------ |
 | other | [MapData #地图数据](/vanilla/api/data/MapData) | 另一张地图。 |
+
 
 ### put #放置
 
@@ -90,10 +99,12 @@ Return Type: [IData](/vanilla/api/data/IData)
 MapData.put(key as string, value as IData) as IData
 {Hello : "World", Somewhere: "Over the rainbow"}.put("Hello", "Goodbye");
 ```
+
 | 参数    | 类型                               | 描述       |
 | ----- | -------------------------------- | -------- |
 | key   | string                           | 要设置值的密钥。 |
 | value | [IData](/vanilla/api/data/IData) | 要设置的值    |
+
 
 ### putAll #放置全部
 
@@ -105,9 +116,11 @@ Return Type: void
 MapData.putAll(map as IData[string]) as void
 {Hello : "World", Somewhere: "Over the rainbow"}.putAll({Hello: "Goodbye", Item: "Bedrock"});
 ```
+
 | 参数  | 类型                                       | 描述           |
 | --- | ---------------------------------------- | ------------ |
 | map | [IData](/vanilla/api/data/IData)[string] | 要添加到此地图的其他条目 |
+
 
 ### remove
 
@@ -119,9 +132,11 @@ Return Type: void
 MapData.remove(key as string) as void
 {Hello : "World", Somewhere: "Over the rainbow"}.remove("Somewhere");
 ```
+
 | 参数  | 类型     | 描述        |
 | --- | ------ | --------- |
 | key | string | 要删除的条目的密钥 |
+
 
 
 ## 运算符
@@ -133,6 +148,7 @@ MapData.remove(key as string) as void
 ```zenscript
 myMapData + data as IData
 ```
+
 
 
 
