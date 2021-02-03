@@ -16,6 +16,7 @@ new MCStyle() as MCStyle
 new MCStyle();
 ```
 
+
 ## 方法
 
 ### equals #等于
@@ -25,9 +26,11 @@ Return Type: boolean
 ```zenscript
 MCStyle.equals(other as Object) as boolean
 ```
+
 | 参数    | 类型     | 描述                      |
 | ----- | ------ | ----------------------- |
 | other | Object | No Description Provided |
+
 
 ### getBold
 
@@ -37,6 +40,7 @@ Return Type: boolean
 MCStyle.getBold() as boolean
 myMCStyle.getBold();
 ```
+
 ### getFontId
 
 Return Type: [MCResourceLocation](/vanilla/api/util/MCResourceLocation)
@@ -45,6 +49,7 @@ Return Type: [MCResourceLocation](/vanilla/api/util/MCResourceLocation)
 MCStyle.getFontId() as MCResourceLocation
 myMCStyle.getFontId();
 ```
+
 ### 获取插入
 
 Return Type: string
@@ -53,6 +58,7 @@ Return Type: string
 MCStyle.getInsertion() as string
 myMCStyle.getInsertion();
 ```
+
 ### getItalic
 
 Return Type: boolean
@@ -61,6 +67,7 @@ Return Type: boolean
 MCStyle.getItalic() as boolean
 myMCStyle.getItalic();
 ```
+
 ### getObfuscated
 
 Return Type: boolean
@@ -69,6 +76,7 @@ Return Type: boolean
 MCStyle.getObfuscated() as boolean
 myMCStyle.getObfuscated();
 ```
+
 ### getStrikefe
 
 Return Type: boolean
@@ -77,6 +85,7 @@ Return Type: boolean
 MCStyle.getStrikethrough() as boolean
 myMCStyle.getStrikethrough();
 ```
+
 ### 获取下划线
 
 Return Type: boolean
@@ -85,6 +94,7 @@ Return Type: boolean
 MCStyle.getUnderlined() as boolean
 myMCStyle.getUnderlined();
 ```
+
 ### hashCode
 
 Return Type: int
@@ -93,6 +103,7 @@ Return Type: int
 MCStyle.hashCode() as int
 myMCStyle.hashCode();
 ```
+
 ### isEmpty
 
 Whether or not this style is empty (inherits everything from the parent).
@@ -103,6 +114,7 @@ Return Type: boolean
 MCStyle.isEmpty() as boolean
 myMCStyle.isEmpty();
 ```
+
 ### 合并样式
 
 Return Type: [MCStyle](/vanilla/api/util/text/MCStyle)
@@ -110,9 +122,11 @@ Return Type: [MCStyle](/vanilla/api/util/text/MCStyle)
 ```zenscript
 MCStyle.mergeStyle(style as MCStyle) as MCStyle
 ```
+
 | 参数 | 类型                                     | 描述                      |
 | -- | -------------------------------------- | ----------------------- |
 | 样式 | [MC样式](/vanilla/api/util/text/MCStyle) | No Description Provided |
+
 
 ### 设置粗体
 
@@ -121,9 +135,11 @@ Return Type: [MCStyle](/vanilla/api/util/text/MCStyle)
 ```zenscript
 MCStyle.setBold(boldIn as Boolean) as MCStyle
 ```
+
 | 参数     | 类型      | 描述                      |
 | ------ | ------- | ----------------------- |
 | boldIn | Boolean | No Description Provided |
+
 
 ### 设置颜色
 
@@ -132,18 +148,22 @@ Return Type: [MCStyle](/vanilla/api/util/text/MCStyle)
 ```zenscript
 MCStyle.setColor(colour as int) as MCStyle
 ```
+
 | 参数     | 类型  | 描述                      |
 | ------ | --- | ----------------------- |
 | colour | int | No Description Provided |
+
 
 Return Type: [MCStyle](/vanilla/api/util/text/MCStyle)
 
 ```zenscript
 MCStyle.setColor(formatting as TextFormatting) as MCStyle
 ```
+
 | 参数  | 类型                                                      | 描述                      |
 | --- | ------------------------------------------------------- | ----------------------- |
 | 格式化 | [TextFormatting](/vanilla/api/util/text/TextFormatting) | No Description Provided |
+
 
 ### setFontId
 
@@ -152,9 +172,11 @@ Return Type: [MCStyle](/vanilla/api/util/text/MCStyle)
 ```zenscript
 MCStyle.setFontId(location as MCResourceLocation) as MCStyle
 ```
+
 | 参数 | 类型                                                         | 描述                      |
 | -- | ---------------------------------------------------------- | ----------------------- |
 | 位置 | [MCResourceLocation](/vanilla/api/util/MCResourceLocation) | No Description Provided |
+
 
 ### 设置格式
 
@@ -163,9 +185,11 @@ Return Type: [MCStyle](/vanilla/api/util/text/MCStyle)
 ```zenscript
 MCStyle.setFormatting(formatting as TextFormatting) as MCStyle
 ```
+
 | 参数  | 类型                                                      | 描述                      |
 | --- | ------------------------------------------------------- | ----------------------- |
 | 格式化 | [TextFormatting](/vanilla/api/util/text/TextFormatting) | No Description Provided |
+
 
 ### 设置插入
 
@@ -176,9 +200,11 @@ Return Type: [MCStyle](/vanilla/api/util/text/MCStyle)
 ```zenscript
 MCStyle.setInsertion(insertion as string) as MCStyle
 ```
+
 | 参数 | 类型     | 描述                      |
 | -- | ------ | ----------------------- |
 | 插入 | string | No Description Provided |
+
 
 ### setItalic
 
@@ -187,9 +213,11 @@ Return Type: [MCStyle](/vanilla/api/util/text/MCStyle)
 ```zenscript
 MCStyle.setItalic(italic as Boolean) as MCStyle
 ```
+
 | 参数     | 类型      | 描述                      |
 | ------ | ------- | ----------------------- |
 | italic | Boolean | No Description Provided |
+
 
 ### setObfused
 
@@ -198,9 +226,11 @@ Return Type: [MCStyle](/vanilla/api/util/text/MCStyle)
 ```zenscript
 MCStyle.setObfuscated(obfuscated as Boolean) as MCStyle
 ```
+
 | 参数         | 类型      | 描述                      |
 | ---------- | ------- | ----------------------- |
 | obfuscated | Boolean | No Description Provided |
+
 
 ### 设置删除线
 
@@ -209,9 +239,11 @@ Return Type: [MCStyle](/vanilla/api/util/text/MCStyle)
 ```zenscript
 MCStyle.setStrikethrough(strikethrough as Boolean) as MCStyle
 ```
+
 | 参数            | 类型      | 描述                      |
 | ------------- | ------- | ----------------------- |
 | strikethrough | Boolean | No Description Provided |
+
 
 ### 下划线
 
@@ -220,9 +252,11 @@ Return Type: [MCStyle](/vanilla/api/util/text/MCStyle)
 ```zenscript
 MCStyle.setUnderlined(underlined as Boolean) as MCStyle
 ```
+
 | 参数  | 类型      | 描述                      |
 | --- | ------- | ----------------------- |
 | 下划线 | Boolean | No Description Provided |
+
 
 ### toString
 
@@ -232,4 +266,5 @@ Return Type: string
 MCStyle.toString() as string
 myMCStyle.toString();
 ```
+
 
