@@ -23,9 +23,11 @@ Return Type: boolean
 ```zenscript
 MCParsedArgument.equals(o as Object) as boolean
 ```
+
 | Parameter | Type   | Description             |
 | --------- | ------ | ----------------------- |
 | o         | Object | No Description Provided |
+
 
 ### getRange
 
@@ -35,6 +37,7 @@ Return Type: [MCStringRange](/vanilla/api/commands/custom/MCStringRange)
 MCParsedArgument.getRange() as MCStringRange
 myMCParsedArgument.getRange();
 ```
+
 ### hashCode
 
 Return Type: int
@@ -43,6 +46,7 @@ Return Type: int
 MCParsedArgument.hashCode() as int
 myMCParsedArgument.hashCode();
 ```
+
 ### toString
 
 Return Type: string
@@ -52,6 +56,7 @@ MCParsedArgument.toString() as string
 myMCParsedArgument.toString();
 ```
 
+
 ## 演算子
 
 ### EQUALS
@@ -59,6 +64,7 @@ myMCParsedArgument.toString();
 ```zenscript
 myMCParsedArgument == o as Object
 ```
+
 
 
 
