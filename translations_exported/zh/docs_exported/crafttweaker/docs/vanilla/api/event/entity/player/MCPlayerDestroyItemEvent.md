@@ -27,6 +27,7 @@ MCPlayerDestroyItemEvent.getDestroyedItem() as IItemStack
 event.getDestroyedItem();
 ```
 
+
 ## 参数
 
 | 名称            | 类型                                          | 可获得  | 可设置   |
