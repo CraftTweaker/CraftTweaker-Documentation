@@ -27,6 +27,7 @@ MCLivingDeathEvent.getSource() as DamageSource
 event.getSource();
 ```
 
+
 ## Свойства
 
 | Название | Тип                                            | Имеет Getter | Имеет Setter |
