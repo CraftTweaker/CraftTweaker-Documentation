@@ -17,9 +17,11 @@ Return Type: boolean
 ```zenscript
 MCEntity.addTag(tag as string) as boolean
 ```
+
 | 参数  | 类型     | 描述                      |
 | --- | ------ | ----------------------- |
 | tag | string | No Description Provided |
+
 
 ### addVelocity #增加速度
 
@@ -28,11 +30,13 @@ Return Type: void
 ```zenscript
 MCEntity.addVelocity(x as double, y as double, z as double) as void
 ```
+
 | 参数 | 类型     | 描述                      |
 | -- | ------ | ----------------------- |
 | x  | double | No Description Provided |
 | y  | double | No Description Provided |
 | z  | double | No Description Provided |
+
 
 ### applyEntityCollision
 
@@ -41,9 +45,11 @@ Return Type: void
 ```zenscript
 MCEntity.applyEntityCollision(entityIn as MCEntity) as void
 ```
+
 | 参数       | 类型                                       | 描述                      |
 | -------- | ---------------------------------------- | ----------------------- |
 | entityIn | [MCEntity](/vanilla/api/entity/MCEntity) | No Description Provided |
+
 
 ### canSwim #是否可以游泳
 
@@ -53,6 +59,7 @@ Return Type: boolean
 MCEntity.canSwim() as boolean
 myMCEntity.canSwim();
 ```
+
 ### extinguish
 
 Return Type: void
@@ -61,6 +68,7 @@ Return Type: void
 MCEntity.extinguish() as void
 myMCEntity.extinguish();
 ```
+
 ### forceFireTicks
 
 Return Type: void
@@ -68,9 +76,11 @@ Return Type: void
 ```zenscript
 MCEntity.forceFireTicks(ticks as int) as void
 ```
+
 | 参数    | 类型  | 描述                      |
 | ----- | --- | ----------------------- |
 | ticks | int | No Description Provided |
+
 
 ### forceSetPosition
 
@@ -79,11 +89,13 @@ Return Type: void
 ```zenscript
 MCEntity.forceSetPosition(x as double, y as double, z as double) as void
 ```
+
 | 参数 | 类型     | 描述                      |
 | -- | ------ | ----------------------- |
 | x  | double | No Description Provided |
 | y  | double | No Description Provided |
 | z  | double | No Description Provided |
+
 
 ### getBrightness
 
@@ -93,6 +105,7 @@ Return Type: float
 MCEntity.getBrightness() as float
 myMCEntity.getBrightness();
 ```
+
 ### getDistance
 
 Return Type: float
@@ -100,9 +113,11 @@ Return Type: float
 ```zenscript
 MCEntity.getDistance(entityIn as MCEntity) as float
 ```
+
 | 参数       | 类型                                       | 描述                      |
 | -------- | ---------------------------------------- | ----------------------- |
 | entityIn | [MCEntity](/vanilla/api/entity/MCEntity) | No Description Provided |
+
 
 ### getDistanceSq
 
@@ -111,20 +126,24 @@ Return Type: double
 ```zenscript
 MCEntity.getDistanceSq(entityIn as MCEntity) as double
 ```
+
 | 参数       | 类型                                       | 描述                      |
 | -------- | ---------------------------------------- | ----------------------- |
 | entityIn | [MCEntity](/vanilla/api/entity/MCEntity) | No Description Provided |
+
 
 Return Type: double
 
 ```zenscript
 MCEntity.getDistanceSq(x as double, y as double, z as double) as double
 ```
+
 | 参数 | 类型     | 描述                      |
 | -- | ------ | ----------------------- |
 | x  | double | No Description Provided |
 | y  | double | No Description Provided |
 | z  | double | No Description Provided |
+
 
 ### getEntityId
 
@@ -134,6 +153,7 @@ Return Type: int
 MCEntity.getEntityId() as int
 myMCEntity.getEntityId();
 ```
+
 ### getFireTimer
 
 Return Type: int
@@ -142,6 +162,7 @@ Return Type: int
 MCEntity.getFireTimer() as int
 myMCEntity.getFireTimer();
 ```
+
 ### getMaxInPortalTime
 
 Return Type: int
@@ -150,6 +171,7 @@ Return Type: int
 MCEntity.getMaxInPortalTime() as int
 myMCEntity.getMaxInPortalTime();
 ```
+
 ### getName
 
 Return Type: string
@@ -158,6 +180,7 @@ Return Type: string
 MCEntity.getName() as string
 myMCEntity.getName();
 ```
+
 ### getTags
 
 Return Type: Set&lt;string&gt;
@@ -166,6 +189,7 @@ Return Type: Set&lt;string&gt;
 MCEntity.getTags() as Set<string>
 myMCEntity.getTags();
 ```
+
 ### getType
 
 Return Type: [MCEntityType](/vanilla/api/entities/MCEntityType)
@@ -174,6 +198,7 @@ Return Type: [MCEntityType](/vanilla/api/entities/MCEntityType)
 MCEntity.getType() as MCEntityType
 myMCEntity.getType();
 ```
+
 ### getWorld
 
 Return Type: [MCWorld](/vanilla/api/world/MCWorld)
@@ -182,6 +207,7 @@ Return Type: [MCWorld](/vanilla/api/world/MCWorld)
 MCEntity.getWorld() as MCWorld
 myMCEntity.getWorld();
 ```
+
 ### hasNoGravity
 
 Return Type: boolean
@@ -190,6 +216,7 @@ Return Type: boolean
 MCEntity.hasNoGravity() as boolean
 myMCEntity.hasNoGravity();
 ```
+
 ### isEntityInRange
 
 Return Type: boolean
@@ -197,10 +224,12 @@ Return Type: boolean
 ```zenscript
 MCEntity.isEntityInRange(entity as MCEntity, distance as double) as boolean
 ```
+
 | 参数       | 类型                                       | 描述                      |
 | -------- | ---------------------------------------- | ----------------------- |
 | entity   | [MCEntity](/vanilla/api/entity/MCEntity) | No Description Provided |
 | distance | double                                   | No Description Provided |
+
 
 ### isImmuneToFire
 
@@ -210,6 +239,7 @@ Return Type: boolean
 MCEntity.isImmuneToFire() as boolean
 myMCEntity.isImmuneToFire();
 ```
+
 ### isInLava
 
 Return Type: boolean
@@ -218,6 +248,7 @@ Return Type: boolean
 MCEntity.isInLava() as boolean
 myMCEntity.isInLava();
 ```
+
 ### isInWater
 
 Return Type: boolean
@@ -226,6 +257,7 @@ Return Type: boolean
 MCEntity.isInWater() as boolean
 myMCEntity.isInWater();
 ```
+
 ### isInWaterOrBubbleColumn
 
 Return Type: boolean
@@ -234,6 +266,7 @@ Return Type: boolean
 MCEntity.isInWaterOrBubbleColumn() as boolean
 myMCEntity.isInWaterOrBubbleColumn();
 ```
+
 ### isInWaterRainOrBubbleColumn
 
 Return Type: boolean
@@ -242,6 +275,7 @@ Return Type: boolean
 MCEntity.isInWaterRainOrBubbleColumn() as boolean
 myMCEntity.isInWaterRainOrBubbleColumn();
 ```
+
 ### isOffsetPositionInLiquid
 
 Return Type: boolean
@@ -249,11 +283,13 @@ Return Type: boolean
 ```zenscript
 MCEntity.isOffsetPositionInLiquid(x as double, y as double, z as double) as boolean
 ```
+
 | 参数 | 类型     | 描述                      |
 | -- | ------ | ----------------------- |
 | x  | double | No Description Provided |
 | y  | double | No Description Provided |
 | z  | double | No Description Provided |
+
 
 ### isOnGround
 
@@ -263,6 +299,7 @@ Return Type: boolean
 MCEntity.isOnGround() as boolean
 myMCEntity.isOnGround();
 ```
+
 ### isSilent
 
 Return Type: boolean
@@ -271,6 +308,7 @@ Return Type: boolean
 MCEntity.isSilent() as boolean
 myMCEntity.isSilent();
 ```
+
 ### isSpectator
 
 Return Type: boolean
@@ -279,6 +317,7 @@ Return Type: boolean
 MCEntity.isSpectator() as boolean
 myMCEntity.isSpectator();
 ```
+
 ### isWet
 
 Return Type: boolean
@@ -287,6 +326,7 @@ Return Type: boolean
 MCEntity.isWet() as boolean
 myMCEntity.isWet();
 ```
+
 ### moveForced
 
 Return Type: void
@@ -294,11 +334,13 @@ Return Type: void
 ```zenscript
 MCEntity.moveForced(x as double, y as double, z as double) as void
 ```
+
 | 参数 | 类型     | 描述                      |
 | -- | ------ | ----------------------- |
 | x  | double | No Description Provided |
 | y  | double | No Description Provided |
 | z  | double | No Description Provided |
+
 
 ### onCollideWithPlayer
 
@@ -307,9 +349,11 @@ Return Type: void
 ```zenscript
 MCEntity.onCollideWithPlayer(entityIn as MCPlayerEntity) as void
 ```
+
 | 参数       | 类型                                                           | 描述                      |
 | -------- | ------------------------------------------------------------ | ----------------------- |
 | entityIn | [MCPlayerEntity #MC玩家实体](/vanilla/api/entity/MCPlayerEntity) | No Description Provided |
+
 
 ### onKillCommand
 
@@ -319,6 +363,7 @@ Return Type: void
 MCEntity.onKillCommand() as void
 myMCEntity.onKillCommand();
 ```
+
 ### onLivingFall
 
 Return Type: boolean
@@ -326,10 +371,12 @@ Return Type: boolean
 ```zenscript
 MCEntity.onLivingFall(distance as float, damageMultiplier as float) as boolean
 ```
+
 | 参数               | 类型    | 描述                      |
 | ---------------- | ----- | ----------------------- |
 | distance         | float | No Description Provided |
 | damageMultiplier | float | No Description Provided |
+
 
 ### removeTag
 
@@ -338,9 +385,11 @@ Return Type: boolean
 ```zenscript
 MCEntity.removeTag(tag as string) as boolean
 ```
+
 | 参数  | 类型     | 描述                      |
 | --- | ------ | ----------------------- |
 | tag | string | No Description Provided |
+
 
 ### setEntityId
 
@@ -349,9 +398,11 @@ Return Type: void
 ```zenscript
 MCEntity.setEntityId(id as int) as void
 ```
+
 | 参数 | 类型  | 描述                      |
 | -- | --- | ----------------------- |
 | id | int | No Description Provided |
+
 
 ### setFire
 
@@ -360,9 +411,11 @@ Return Type: void
 ```zenscript
 MCEntity.setFire(seconds as int) as void
 ```
+
 | 参数      | 类型  | 描述                      |
 | ------- | --- | ----------------------- |
 | seconds | int | No Description Provided |
+
 
 ### setNoGravity
 
@@ -371,9 +424,11 @@ Return Type: void
 ```zenscript
 MCEntity.setNoGravity(noGravity as boolean) as void
 ```
+
 | 参数        | 类型      | 描述                      |
 | --------- | ------- | ----------------------- |
 | noGravity | boolean | No Description Provided |
+
 
 ### setOnGround
 
@@ -382,9 +437,11 @@ Return Type: void
 ```zenscript
 MCEntity.setOnGround(grounded as boolean) as void
 ```
+
 | 参数       | 类型      | 描述                      |
 | -------- | ------- | ----------------------- |
 | grounded | boolean | No Description Provided |
+
 
 ### setPosition
 
@@ -393,11 +450,13 @@ Return Type: void
 ```zenscript
 MCEntity.setPosition(x as double, y as double, z as double) as void
 ```
+
 | 参数 | 类型     | 描述                      |
 | -- | ------ | ----------------------- |
 | x  | double | No Description Provided |
 | y  | double | No Description Provided |
 | z  | double | No Description Provided |
+
 
 ### setSilent
 
@@ -406,9 +465,11 @@ Return Type: void
 ```zenscript
 MCEntity.setSilent(isSilent as boolean) as void
 ```
+
 | 参数       | 类型      | 描述                      |
 | -------- | ------- | ----------------------- |
 | isSilent | boolean | No Description Provided |
+
 
 
 ## 参数
