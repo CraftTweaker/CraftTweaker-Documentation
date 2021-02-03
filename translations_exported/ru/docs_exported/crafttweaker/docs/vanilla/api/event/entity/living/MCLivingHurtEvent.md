@@ -26,6 +26,7 @@ Return Type: float
 MCLivingHurtEvent.getAmount() as float
 event.getAmount();
 ```
+
 ### getSource
 
 Gets the source of the damage.
@@ -36,6 +37,7 @@ Return Type: [DamageSource](/vanilla/api/util/DamageSource)
 MCLivingHurtEvent.getSource() as DamageSource
 event.getSource();
 ```
+
 ### setAmount
 
 Sets the amount of damage.
@@ -46,9 +48,11 @@ Return Type: void
 MCLivingHurtEvent.setAmount(amount as float) as void
 event.setAmount(0.5);
 ```
+
 | Параметр | Тип   | Description           |
 | -------- | ----- | --------------------- |
 | amount   | float | The amount of damage. |
+
 
 
 ## Свойства
