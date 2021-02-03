@@ -20,8 +20,10 @@ No Description Provided
 ```zenscript
 new LongArrayData(internal as long[]) as LongArrayData
 ```
+
 | 参数       | 类型     | 描述                      |
 | -------- | ------ | ----------------------- |
 | internal | long[] | No Description Provided |
+
 
 
