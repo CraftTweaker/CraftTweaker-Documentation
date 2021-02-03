@@ -26,9 +26,11 @@ Return Type: void
 ICollectionData.add(value as IData) as void
 new ListData(["Hello", "World"]).add("today");
 ```
+
 | 参数    | 类型                               | 描述       |
 | ----- | -------------------------------- | -------- |
 | value | [IData](/vanilla/api/data/IData) | 要添加到列表的值 |
+
 
 
 
@@ -38,10 +40,12 @@ Return Type: void
 ICollectionData.add(index as int, value as IData) as void
 new ListData(["Hello", "World"]).add(1, "beautiful");
 ```
+
 | 参数    | 类型                               | 描述                   |
 | ----- | -------------------------------- | -------------------- |
 | index | int                              | 要添加的索引。 后续项目将会上移一个索引 |
 | value | [IData](/vanilla/api/data/IData) | 要添加到列表的值             |
+
 
 ### clear #清除
 
@@ -53,6 +57,7 @@ Return Type: void
 ICollectionData.clear() as void
 new ListData(["Hello", "World"]).clear();
 ```
+
 ### getAt
 
 Retrieves the [IData](/vanilla/api/data/IData) stored at the given index.
@@ -63,9 +68,11 @@ Return Type: [IData](/vanilla/api/data/IData)
 ICollectionData.getAt(index as int) as IData
 new ListData(["Hello", "World"]).getAt(0);
 ```
+
 | 参数    | 类型  | 描述               |
 | ----- | --- | ---------------- |
 | index | int | The index (从0开始) |
+
 
 ### remove
 
@@ -77,9 +84,11 @@ Return Type: [IData](/vanilla/api/data/IData)
 ICollectionData.remove(index as int) as IData
 new ListData(["Hello", "World"]).remove(0);
 ```
+
 | 参数    | 类型  | 描述               |
 | ----- | --- | ---------------- |
 | index | int | The index (从0开始) |
+
 
 ### setAt
 
@@ -91,10 +100,12 @@ Return Type: [IData](/vanilla/api/data/IData)
 ICollectionData.setAt(index as int, value as IData) as IData
 new ListData(["Hello", "World"]).setAt(0, "Bye");
 ```
+
 | 参数    | 类型                               | 描述            |
 | ----- | -------------------------------- | ------------- |
 | index | int                              | 要设置的索引 (从0开始) |
 | value | [IData](/vanilla/api/data/IData) | 新值            |
+
 
 
 ## 参数
