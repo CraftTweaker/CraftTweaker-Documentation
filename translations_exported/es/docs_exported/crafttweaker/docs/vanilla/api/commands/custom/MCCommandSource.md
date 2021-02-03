@@ -18,6 +18,7 @@ Return Type: string
 MCCommandSource.getName() as string
 myMCCommandSource.getName();
 ```
+
 ### getPlayer
 
 Return Type: [MCPlayerEntity](/vanilla/api/entity/MCPlayerEntity)
@@ -26,6 +27,7 @@ Return Type: [MCPlayerEntity](/vanilla/api/entity/MCPlayerEntity)
 MCCommandSource.getPlayer() as MCPlayerEntity
 myMCCommandSource.getPlayer();
 ```
+
 ### Nombre del jugador
 
 Return Type: Collection&lt;string&gt;
@@ -34,6 +36,7 @@ Return Type: Collection&lt;string&gt;
 MCCommandSource.getPlayerNames() as Collection<string>
 myMCCommandSource.getPlayerNames();
 ```
+
 ### Entidad objetivo
 
 Return Type: Collection&lt;string&gt;
@@ -42,6 +45,7 @@ Return Type: Collection&lt;string&gt;
 MCCommandSource.getTargetedEntity() as Collection<string>
 myMCCommandSource.getTargetedEntity();
 ```
+
 ### obtener nombres de equipo
 
 Return Type: Collection&lt;string&gt;
@@ -50,6 +54,7 @@ Return Type: Collection&lt;string&gt;
 MCCommandSource.getTeamNames() as Collection<string>
 myMCCommandSource.getTeamNames();
 ```
+
 ### hasPermissionLevel
 
 Return Type: boolean
@@ -57,9 +62,11 @@ Return Type: boolean
 ```zenscript
 MCCommandSource.hasPermissionLevel(p_197034_1_ as int) as boolean
 ```
+
 | Parameter     | Type | Description             |
 | ------------- | ---- | ----------------------- |
 | y 197034_1_ | int  | No Description Provided |
+
 
 ### isPlayer
 
@@ -69,6 +76,7 @@ Return Type: boolean
 MCCommandSource.isPlayer() as boolean
 myMCCommandSource.isPlayer();
 ```
+
 ### enviar mensaje de error
 
 Return Type: void
@@ -76,9 +84,11 @@ Return Type: void
 ```zenscript
 MCCommandSource.sendErrorMessage(message as string) as void
 ```
+
 | Parameter | Type   | Description             |
 | --------- | ------ | ----------------------- |
 | message   | string | No Description Provided |
+
 
 ### sendFeedback
 
@@ -87,10 +97,12 @@ Return Type: void
 ```zenscript
 MCCommandSource.sendFeedback(feedback as string, allowLogging as boolean) as void
 ```
+
 | Parameter    | Type    | Description             |
 | ------------ | ------- | ----------------------- |
 | comentarios  | string  | No Description Provided |
 | allowLogging | boolean | No Description Provided |
+
 
 ### con FeedbackDeshabilitado
 
@@ -100,6 +112,7 @@ Return Type: [MCCommandSource](/vanilla/api/commands/custom/MCCommandSource)
 MCCommandSource.withFeedbackDisabled() as MCCommandSource
 myMCCommandSource.withFeedbackDisabled();
 ```
+
 ### con nivel de MinPermiso
 
 Return Type: [MCCommandSource](/vanilla/api/commands/custom/MCCommandSource)
@@ -107,9 +120,11 @@ Return Type: [MCCommandSource](/vanilla/api/commands/custom/MCCommandSource)
 ```zenscript
 MCCommandSource.withMinPermissionLevel(p_197026_1_ as int) as MCCommandSource
 ```
+
 | Parameter | Type | Description             |
 | --------- | ---- | ----------------------- |
 | 1_        | int  | No Description Provided |
+
 
 ### sin nivel de permiso
 
@@ -118,8 +133,10 @@ Return Type: [MCCommandSource](/vanilla/api/commands/custom/MCCommandSource)
 ```zenscript
 MCCommandSource.withPermissionLevel(p_197033_1_ as int) as MCCommandSource
 ```
+
 | Parameter     | Type | Description             |
 | ------------- | ---- | ----------------------- |
 | a 197033_1_ | int  | No Description Provided |
+
 
 
