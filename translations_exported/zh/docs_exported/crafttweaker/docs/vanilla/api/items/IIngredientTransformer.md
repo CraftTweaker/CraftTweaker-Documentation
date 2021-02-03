@@ -17,9 +17,11 @@ Return Type: string
 ```zenscript
 IIngredientTransformer.getCommandString(transformedIngredient as T) as string
 ```
+
 | 参数                    | 类型 | 描述                      |
 | --------------------- | -- | ----------------------- |
 | transformedIngredient | T  | No Description Provided |
+
 
 ### transform
 
@@ -28,8 +30,10 @@ Return Type: [IItemStack](/vanilla/api/items/IItemStack)
 ```zenscript
 IIngredientTransformer.transform(stack as IItemStack) as IItemStack
 ```
+
 | 参数    | 类型                                          | 描述                      |
 | ----- | ------------------------------------------- | ----------------------- |
 | stack | [IItemStack](/vanilla/api/items/IItemStack) | No Description Provided |
+
 
 
