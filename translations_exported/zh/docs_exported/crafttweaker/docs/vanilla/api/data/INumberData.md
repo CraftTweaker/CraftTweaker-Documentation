@@ -37,6 +37,7 @@ Return Type: byte
 INumberData.getByte() as byte
 1.getByte();
 ```
+
 ### getDouble
 
 Gets the value of this [IData](/vanilla/api/data/IData) as a double
@@ -47,6 +48,7 @@ Return Type: double
 INumberData.getDouble() as double
 1.getDouble();
 ```
+
 ### getFloat
 
 Gets the value of this [IData](/vanilla/api/data/IData) as a float
@@ -57,6 +59,7 @@ Return Type: float
 INumberData.getFloat() as float
 1.getFloat();
 ```
+
 ### getInt
 
 Gets the value of this [IData](/vanilla/api/data/IData) as an int
@@ -67,6 +70,7 @@ Return Type: int
 INumberData.getInt() as int
 1.getInt();
 ```
+
 ### getLong
 
 Gets the value of this [IData](/vanilla/api/data/IData) as a long
@@ -77,6 +81,7 @@ Return Type: long
 INumberData.getLong() as long
 1.getLong();
 ```
+
 ### getShort
 
 Gets the value of this [IData](/vanilla/api/data/IData) as a short
@@ -87,4 +92,5 @@ Return Type: short
 INumberData.getShort() as short
 1.getShort();
 ```
+
 
