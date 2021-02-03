@@ -17,9 +17,11 @@ Return Type: [MCRequiredArgumentBuilder](/vanilla/api/commands/custom/MCRequired
 ```zenscript
 CustomCommands.argument(name as string) as MCRequiredArgumentBuilder
 ```
+
 | 参数   | 类型     | 描述                      |
 | ---- | ------ | ----------------------- |
 | name | string | No Description Provided |
+
 
 ### 纯文本
 
@@ -28,9 +30,11 @@ Return Type: [MCLiteralArgumentBuilder](/vanilla/api/commands/custom/MCLiteralAr
 ```zenscript
 CustomCommands.literal(name as string) as MCLiteralArgumentBuilder
 ```
+
 | 参数   | 类型     | 描述                      |
 | ---- | ------ | ----------------------- |
 | name | string | No Description Provided |
+
 
 ### 注册命令
 
@@ -39,7 +43,9 @@ Return Type: void
 ```zenscript
 CustomCommands.registerCommand(builder as MCLiteralArgumentBuilder) as void
 ```
+
 | 参数  | 类型                                                                                | 描述                      |
 | --- | --------------------------------------------------------------------------------- | ----------------------- |
 | 生成器 | [MCLiteralArgumentBuilder](/vanilla/api/commands/custom/MCLiteralArgumentBuilder) | No Description Provided |
+
 
