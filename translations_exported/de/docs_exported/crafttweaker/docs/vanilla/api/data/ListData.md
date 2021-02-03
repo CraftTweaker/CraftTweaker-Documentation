@@ -21,13 +21,16 @@ No Description Provided
 new ListData() as ListData
 new ListData();
 ```
+
 No Description Provided
 ```zenscript
 new ListData(list as stdlib.List<IData>) as ListData
 ```
+
 | Parameter | Type                                                            | Beschreibung            |
 | --------- | --------------------------------------------------------------- | ----------------------- |
 | list      | stdlib.List&lt;[IData](/vanilla/api/data/IData)&gt; | No Description Provided |
+
 
 
 ## Casters
