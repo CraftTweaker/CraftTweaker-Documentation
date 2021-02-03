@@ -20,8 +20,10 @@ No Description Provided
 ```zenscript
 new LongData(internal as long) as LongData
 ```
+
 | 参数       | 类型   | 描述                      |
 | -------- | ---- | ----------------------- |
 | internal | long | No Description Provided |
+
 
 
