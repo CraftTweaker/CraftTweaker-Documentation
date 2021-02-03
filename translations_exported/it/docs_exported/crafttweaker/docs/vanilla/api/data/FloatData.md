@@ -20,8 +20,10 @@ No Description Provided
 ```zenscript
 new FloatData(internal as float) as FloatData
 ```
+
 | Parameter | Type  | Description             |
 | --------- | ----- | ----------------------- |
 | internal  | float | No Description Provided |
+
 
 
