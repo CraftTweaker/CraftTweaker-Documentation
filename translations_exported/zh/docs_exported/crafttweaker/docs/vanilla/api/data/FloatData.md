@@ -20,8 +20,10 @@ No Description Provided
 ```zenscript
 new FloatData(internal as float) as FloatData
 ```
+
 | 参数       | 类型    | 描述                      |
 | -------- | ----- | ----------------------- |
 | internal | float | No Description Provided |
+
 
 
