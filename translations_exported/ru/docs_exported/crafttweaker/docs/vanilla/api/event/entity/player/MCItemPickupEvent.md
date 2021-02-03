@@ -23,6 +23,7 @@ MCItemPickupEvent.getStack() as IItemStack
 myMCItemPickupEvent.getStack();
 ```
 
+
 ## Свойства
 
 | Название | Тип                                         | Имеет Getter | Имеет Setter |
