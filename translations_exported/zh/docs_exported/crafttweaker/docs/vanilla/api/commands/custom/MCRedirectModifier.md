@@ -14,9 +14,11 @@ No Description Provided
 ```zenscript
 new MCRedirectModifier(fun as Function<MCCommandContext,Collection<MCCommandSource>>) as MCRedirectModifier
 ```
+
 | 参数  | 类型                                                                                                                                                                                          | 描述                      |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------- |
 | 有趣的 | Function&lt;[MCCommandContext](/vanilla/api/commands/custom/MCCommandContext),Collection&lt;[MCCommandSource](/vanilla/api/commands/custom/MCCommandSource)&gt;&gt; | No Description Provided |
+
 
 
 ## Casters
@@ -34,9 +36,11 @@ Return Type: Collection&lt;[MCCommandSource](/vanilla/api/commands/custom/MCComm
 ```zenscript
 MCRedirectModifier.apply(context as MCCommandContext) as Collection<MCCommandSource>
 ```
+
 | 参数   | 类型                                                                | 描述                      |
 | ---- | ----------------------------------------------------------------- | ----------------------- |
 | 上下文： | [MCCommandContext](/vanilla/api/commands/custom/MCCommandContext) | No Description Provided |
+
 
 ### equals #等于
 
@@ -45,9 +49,11 @@ Return Type: boolean
 ```zenscript
 MCRedirectModifier.equals(o as Object) as boolean
 ```
+
 | 参数 | 类型     | 描述                      |
 | -- | ------ | ----------------------- |
 | o  | Object | No Description Provided |
+
 
 ### hashCode
 
@@ -57,6 +63,7 @@ Return Type: int
 MCRedirectModifier.hashCode() as int
 myMCRedirectModifier.hashCode();
 ```
+
 ### toString
 
 Return Type: string
@@ -66,6 +73,7 @@ MCRedirectModifier.toString() as string
 myMCRedirectModifier.toString();
 ```
 
+
 ## 运算符
 
 ### EQUALS
@@ -73,6 +81,7 @@ myMCRedirectModifier.toString();
 ```zenscript
 myMCRedctModifier == o 为对象
 ```
+
 
 
 
