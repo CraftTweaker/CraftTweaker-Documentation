@@ -30,6 +30,7 @@ Return Type: [MCServerWorld](/vanilla/api/world/MCServerWorld)
 MCWorld.asServerWorld() as MCServerWorld
 world.asServerWorld();
 ```
+
 ### destroyBlock
 
 Destroys a block within the world.
@@ -40,10 +41,12 @@ Return Type: boolean
 MCWorld.destroyBlock(pos as BlockPos, doDrops as boolean) as boolean
 world.destroyBlock(new BlockPos(0, 1, 2), true);
 ```
+
 | Параметр | Тип                                    | Description                                          |
 | -------- | -------------------------------------- | ---------------------------------------------------- |
 | pos      | [BlockPos](/vanilla/api/util/BlockPos) | The position of the block.                           |
 | doDrops  | boolean                                | Whether or not the block drops itself and it's loot. |
+
 
 Destroys a block within the world.
 
@@ -53,11 +56,13 @@ Return Type: boolean
 MCWorld.destroyBlock(pos as BlockPos, doDrops as boolean, breaker as MCEntity) as boolean
 world.destroyBlock(new BlockPos(0, 1, 2), true, player);
 ```
+
 | Параметр | Тип                                      | Description                                          |
 | -------- | ---------------------------------------- | ---------------------------------------------------- |
 | pos      | [BlockPos](/vanilla/api/util/BlockPos)   | The position of the block.                           |
 | doDrops  | boolean                                  | Whether or not the block drops itself and it's loot. |
 | breaker  | [MCEntity](/vanilla/api/entity/MCEntity) | The entity to break the block.                       |
+
 
 ### getBiome
 
@@ -69,9 +74,11 @@ Return Type: [MCBiome](/vanilla/api/world/MCBiome)
 MCWorld.getBiome(pos as BlockPos) as MCBiome
 world.getBiome(new BlockPos(0, 1, 2));
 ```
+
 | Параметр | Тип                                    | Description              |
 | -------- | -------------------------------------- | ------------------------ |
 | pos      | [BlockPos](/vanilla/api/util/BlockPos) | The position to look up. |
+
 
 ### getBlockState
 
@@ -83,9 +90,11 @@ Return Type: [MCBlockState](/vanilla/api/blocks/MCBlockState)
 MCWorld.getBlockState(pos as BlockPos) as MCBlockState
 world.getBlockState(new BlockPos(0, 1, 2));
 ```
+
 | Параметр | Тип                                    | Description              |
 | -------- | -------------------------------------- | ------------------------ |
 | pos      | [BlockPos](/vanilla/api/util/BlockPos) | The position to look up. |
+
 
 ### getRedstonePower
 
@@ -97,10 +106,12 @@ Return Type: int
 MCWorld.getRedstonePower(pos as BlockPos, direction as Direction) as int
 world.getRedstonePower(new BlockPos(0, 1, 2), <direction:north>);
 ```
+
 | Параметр  | Тип                                      | Description             |
 | --------- | ---------------------------------------- | ----------------------- |
 | pos       | [BlockPos](/vanilla/api/util/BlockPos)   | The position to check.  |
 | direction | [Direction](/vanilla/api/util/Direction) | The direction to query. |
+
 
 ### getRedstonePowerFromNeighbors
 
@@ -112,9 +123,11 @@ Return Type: int
 MCWorld.getRedstonePowerFromNeighbors(pos as BlockPos) as int
 world.getRedstonePowerFromNeighbors(new BlockPos(0, 1, 2));
 ```
+
 | Параметр | Тип                                    | Description            |
 | -------- | -------------------------------------- | ---------------------- |
 | pos      | [BlockPos](/vanilla/api/util/BlockPos) | The position to check. |
+
 
 ### getStrongPower
 
@@ -126,9 +139,11 @@ Return Type: int
 MCWorld.getStrongPower(pos as BlockPos) as int
 world.getStrongPower(new BlockPos(0, 1, 2));
 ```
+
 | Параметр | Тип                                    | Description            |
 | -------- | -------------------------------------- | ---------------------- |
 | pos      | [BlockPos](/vanilla/api/util/BlockPos) | The position to check. |
+
 
 ### getTileData
 
@@ -140,9 +155,11 @@ Return Type: [IData](/vanilla/api/data/IData)
 MCWorld.getTileData(pos as BlockPos) as IData
 world.getTileData(new BlockPos(0, 1, 2));
 ```
+
 | Параметр | Тип                                    | Description                      |
 | -------- | -------------------------------------- | -------------------------------- |
 | pos      | [BlockPos](/vanilla/api/util/BlockPos) | The position of the tile entity. |
+
 
 ### isAir
 
@@ -154,9 +171,11 @@ Return Type: boolean
 MCWorld.isAir(pos as BlockPos) as boolean
 world.isAir(new BlockPos(0, 1, 2));
 ```
+
 | Параметр | Тип                                    | Description              |
 | -------- | -------------------------------------- | ------------------------ |
 | pos      | [BlockPos](/vanilla/api/util/BlockPos) | The position to look up. |
+
 
 ### isBlockPowered
 
@@ -168,9 +187,11 @@ Return Type: boolean
 MCWorld.isBlockPowered(pos as BlockPos) as boolean
 world.isBlockPowered(new BlockPos(0, 1, 2));
 ```
+
 | Параметр | Тип                                    | Description            |
 | -------- | -------------------------------------- | ---------------------- |
 | pos      | [BlockPos](/vanilla/api/util/BlockPos) | The position to check. |
+
 
 ### isLoaded
 
@@ -182,9 +203,11 @@ Return Type: boolean
 MCWorld.isLoaded(pos as BlockPos) as boolean
 world.isLoaded(new BlockPos(0, 1, 2));
 ```
+
 | Параметр | Тип                                    | Description              |
 | -------- | -------------------------------------- | ------------------------ |
 | pos      | [BlockPos](/vanilla/api/util/BlockPos) | The position to look up. |
+
 
 ### isRainingAt
 
@@ -196,9 +219,11 @@ Return Type: boolean
 MCWorld.isRainingAt(pos as BlockPos) as boolean
 world.isRainingAt(new BlockPos(0, 1, 2));
 ```
+
 | Параметр | Тип                                    | Description            |
 | -------- | -------------------------------------- | ---------------------- |
 | pos      | [BlockPos](/vanilla/api/util/BlockPos) | The position to check. |
+
 
 ### isRemote
 
@@ -210,6 +235,7 @@ Return Type: boolean
 MCWorld.isRemote() as boolean
 world.isRemote();
 ```
+
 ### playEvent
 
 Triggers a predetermined event on the client. Using this on a server or integrated server will send the event to all nearby players.
@@ -220,12 +246,14 @@ Return Type: void
 MCWorld.playEvent(eventId as int, pos as BlockPos, data as int) as void
 world.playEvent(2005, new BlockPos(0, 1, 2), 0);
 ```
+
 | Параметр | Тип                                    | Description                                               |
 | -------- | -------------------------------------- | --------------------------------------------------------- |
 | eventId  | int                                    | The ID of the event to play.                              |
 | pos      | [BlockPos](/vanilla/api/util/BlockPos) | The position of the event.                                |
 | data     | int                                    | Four bytes of additional data encoded as an integer. This |
  is generally unused. |
+
 
 Triggers a predetermined event on the client. Using this on a server or integrated server will send the event to all nearby players.
 
@@ -235,6 +263,7 @@ Return Type: void
 MCWorld.playEvent(excluded as MCPlayerEntity, eventId as int, pos as BlockPos, data as int) as void
 world.playEvent(player, 2005, new BlockPos(0, 1, 2), 0);
 ```
+
 | Параметр | Тип                                                  | Description                                               |
 | -------- | ---------------------------------------------------- | --------------------------------------------------------- |
 | excluded | [MCPlayerEntity](/vanilla/api/entity/MCPlayerEntity) | An excluded player who will not receive the event.        |
@@ -242,6 +271,7 @@ world.playEvent(player, 2005, new BlockPos(0, 1, 2), 0);
 | pos      | [BlockPos](/vanilla/api/util/BlockPos)               | The position of the event.                                |
 | data     | int                                                  | Four bytes of additional data encoded as an integer. This |
  is generally unused. |
+
 
 ### setBlockState
 
@@ -253,10 +283,12 @@ Return Type: boolean
 MCWorld.setBlockState(pos as BlockPos, state as MCBlockState) as boolean
 world.setBlockState(new BlockPos(0, 1, 2), <blockstate:minecraft:iron_block>);
 ```
+
 | Параметр | Тип                                              | Description                       |
 | -------- | ------------------------------------------------ | --------------------------------- |
 | pos      | [BlockPos](/vanilla/api/util/BlockPos)           | The position to set the block at. |
 | state    | [MCBlockState](/vanilla/api/blocks/MCBlockState) | The new state of the block.       |
+
 
 
 ## Свойства
