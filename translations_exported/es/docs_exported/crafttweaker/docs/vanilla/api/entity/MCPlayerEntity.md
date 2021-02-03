@@ -22,6 +22,7 @@ Return Type: boolean
 MCPlayerEntity.canUseCommandBlock() as boolean
 myMCPlayerEntity.canUseCommandBlock();
 ```
+
 ### drop
 
 Return Type: boolean
@@ -29,9 +30,11 @@ Return Type: boolean
 ```zenscript
 MCPlayerEntity.drop(p_225609_1_ as boolean) as boolean
 ```
+
 | Parameter     | Type    | Description             |
 | ------------- | ------- | ----------------------- |
 | p_225609_1_ | boolean | No Description Provided |
+
 
 ### getLuck
 
@@ -41,6 +44,7 @@ Return Type: float
 MCPlayerEntity.getLuck() as float
 myMCPlayerEntity.getLuck();
 ```
+
 ### getMaxInPortalTime
 
 Return Type: int
@@ -49,6 +53,7 @@ Return Type: int
 MCPlayerEntity.getMaxInPortalTime() as int
 myMCPlayerEntity.getMaxInPortalTime();
 ```
+
 ### getPortalCooldown
 
 Return Type: int
@@ -57,6 +62,7 @@ Return Type: int
 MCPlayerEntity.getPortalCooldown() as int
 myMCPlayerEntity.getPortalCooldown();
 ```
+
 ### getSleepTimer
 
 Return Type: int
@@ -65,6 +71,7 @@ Return Type: int
 MCPlayerEntity.getSleepTimer() as int
 myMCPlayerEntity.getSleepTimer();
 ```
+
 ### isCreative
 
 Return Type: boolean
@@ -73,6 +80,7 @@ Return Type: boolean
 MCPlayerEntity.isCreative() as boolean
 myMCPlayerEntity.isCreative();
 ```
+
 ### isFake
 
 Return Type: boolean
@@ -81,6 +89,7 @@ Return Type: boolean
 MCPlayerEntity.isFake() as boolean
 myMCPlayerEntity.isFake();
 ```
+
 ### isPushedByWater
 
 Return Type: boolean
@@ -89,6 +98,7 @@ Return Type: boolean
 MCPlayerEntity.isPushedByWater() as boolean
 myMCPlayerEntity.isPushedByWater();
 ```
+
 ### isSecondaryUseActive
 
 Return Type: boolean
@@ -97,6 +107,7 @@ Return Type: boolean
 MCPlayerEntity.isSecondaryUseActive() as boolean
 myMCPlayerEntity.isSecondaryUseActive();
 ```
+
 ### isSpectator
 
 Return Type: boolean
@@ -105,6 +116,7 @@ Return Type: boolean
 MCPlayerEntity.isSpectator() as boolean
 myMCPlayerEntity.isSpectator();
 ```
+
 ### isSwimming
 
 Return Type: boolean
@@ -113,6 +125,7 @@ Return Type: boolean
 MCPlayerEntity.isSwimming() as boolean
 myMCPlayerEntity.isSwimming();
 ```
+
 ### isUser
 
 Return Type: boolean
@@ -121,6 +134,7 @@ Return Type: boolean
 MCPlayerEntity.isUser() as boolean
 myMCPlayerEntity.isUser();
 ```
+
 ### sendMessage
 
 Return Type: void
@@ -128,9 +142,11 @@ Return Type: void
 ```zenscript
 MCPlayerEntity.sendMessage(text as MCTextComponent) as void
 ```
+
 | Parameter | Type                                                      | Description             |
 | --------- | --------------------------------------------------------- | ----------------------- |
 | texto     | [MCTextComponent](/vanilla/api/util/text/MCTextComponent) | No Description Provided |
+
 
 ### unlockRecipes
 
@@ -139,9 +155,11 @@ Return Type: void
 ```zenscript
 MCPlayerEntity.unlockRecipes(p_193102_1_ as MCResourceLocation[]) as void
 ```
+
 | Parameter     | Type                                                         | Description             |
 | ------------- | ------------------------------------------------------------ | ----------------------- |
 | p_193102_1_ | [MCResourceLocation](/vanilla/api/util/MCResourceLocation)[] | No Description Provided |
+
 
 ### wakeUp
 
@@ -151,6 +169,7 @@ Return Type: void
 MCPlayerEntity.wakeUp() as void
 myMCPlayerEntity.wakeUp();
 ```
+
 
 ## Properties
 
