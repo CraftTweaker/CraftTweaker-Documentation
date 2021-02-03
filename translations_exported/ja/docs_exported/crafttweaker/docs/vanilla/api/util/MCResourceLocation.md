@@ -18,10 +18,12 @@ MCResourceLocation implements the following interfaces. That means all methods d
 ```zenscript
 new MCResourceLocation(namespace as string, path as string) as MCResourceLocation
 ```
+
 | Parameter | Type   | Description                                                          |
 | --------- | ------ | -------------------------------------------------------------------- |
 | 名前空間      | string | Usually a ModId                                                      |
 | path      | string | May only contain lower-cased alphanumeric values, as well as / and _ |
+
 
 
 ## Casters
@@ -41,6 +43,7 @@ Return Type: [IData](/vanilla/api/data/IData)
 MCResourceLocation.asData() as IData
 myMCResourceLocation.asData();
 ```
+
 ### compareTo
 
 Return Type: int
@@ -48,9 +51,11 @@ Return Type: int
 ```zenscript
 MCResourceLocation.compareTo(other as MCResourceLocation) as int
 ```
+
 | Parameter | Type                                                       | Description             |
 | --------- | ---------------------------------------------------------- | ----------------------- |
 | other     | [MCResourceLocation](/vanilla/api/util/MCResourceLocation) | No Description Provided |
+
 
 ### equals
 
@@ -59,9 +64,11 @@ Return Type: boolean
 ```zenscript
 MCResourceLocation.equals(other as Object) as boolean
 ```
+
 | Parameter | Type   | Description             |
 | --------- | ------ | ----------------------- |
 | other     | Object | No Description Provided |
+
 
 ### getNamespace
 
@@ -71,6 +78,7 @@ Return Type: string
 MCResourceLocation.getNamespace() as string
 myMCResourceLocation.getNamespace();
 ```
+
 ### getPath
 
 Return Type: string
@@ -79,6 +87,7 @@ Return Type: string
 MCResourceLocation.getPath() as string
 myMCResourceLocation.getPath();
 ```
+
 ### hashCode
 
 Return Type: int
@@ -87,6 +96,7 @@ Return Type: int
 MCResourceLocation.hashCode() as int
 myMCResourceLocation.hashCode();
 ```
+
 ### toString
 
 Return Type: string
@@ -95,6 +105,7 @@ Return Type: string
 MCResourceLocation.toString() as string
 myMCResourceLocation.toString();
 ```
+
 
 ## Properties
 
