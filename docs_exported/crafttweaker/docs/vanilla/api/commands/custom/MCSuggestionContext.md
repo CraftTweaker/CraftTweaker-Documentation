@@ -23,9 +23,11 @@ Return Type: boolean
 ```zenscript
 MCSuggestionContext.equals(o as Object) as boolean
 ```
+
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | o | Object | No Description Provided |
+
 
 ### getParent
 
@@ -35,6 +37,7 @@ Return Type: [MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)
 MCSuggestionContext.getParent() as MCCommandNode
 myMCSuggestionContext.getParent();
 ```
+
 ### getStartPos
 
 Return Type: int
@@ -43,6 +46,7 @@ Return Type: int
 MCSuggestionContext.getStartPos() as int
 myMCSuggestionContext.getStartPos();
 ```
+
 ### hashCode
 
 Return Type: int
@@ -51,6 +55,7 @@ Return Type: int
 MCSuggestionContext.hashCode() as int
 myMCSuggestionContext.hashCode();
 ```
+
 ### toString
 
 Return Type: string
@@ -60,6 +65,7 @@ MCSuggestionContext.toString() as string
 myMCSuggestionContext.toString();
 ```
 
+
 ## Operators
 
 ### EQUALS
@@ -67,6 +73,7 @@ myMCSuggestionContext.toString();
 ```zenscript
 myMCSuggestionContext == o as Object
 ```
+
 
 
 

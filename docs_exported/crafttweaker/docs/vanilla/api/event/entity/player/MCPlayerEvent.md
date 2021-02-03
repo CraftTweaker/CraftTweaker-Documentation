@@ -23,6 +23,7 @@ MCPlayerEvent.getPlayer() as MCPlayerEntity
 myMCPlayerEvent.getPlayer();
 ```
 
+
 ## Properties
 
 | Name | Type | Has Getter | Has Setter |

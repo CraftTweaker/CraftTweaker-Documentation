@@ -24,9 +24,11 @@ Return Type: stdlib.List&lt;string&gt;
 ```zenscript
 MCBlockState.getAllowedValuesForProperty(name as string) as stdlib.List<string>
 ```
+
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | name | string | No Description Provided |
+
 
 ### getProperties
 
@@ -36,6 +38,7 @@ Return Type: string[string]
 MCBlockState.getProperties() as string[string]
 myMCBlockState.getProperties();
 ```
+
 ### getPropertyNames
 
 Return Type: stdlib.List&lt;string&gt;
@@ -44,6 +47,7 @@ Return Type: stdlib.List&lt;string&gt;
 MCBlockState.getPropertyNames() as stdlib.List<string>
 myMCBlockState.getPropertyNames();
 ```
+
 ### getPropertyValue
 
 Return Type: string
@@ -51,9 +55,11 @@ Return Type: string
 ```zenscript
 MCBlockState.getPropertyValue(name as string) as string
 ```
+
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | name | string | No Description Provided |
+
 
 ### hasProperty
 
@@ -62,9 +68,11 @@ Return Type: boolean
 ```zenscript
 MCBlockState.hasProperty(name as string) as boolean
 ```
+
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | name | string | No Description Provided |
+
 
 ### withProperty
 
@@ -73,10 +81,12 @@ Return Type: [MCBlockState](/vanilla/api/blocks/MCBlockState)
 ```zenscript
 MCBlockState.withProperty(name as string, value as string) as MCBlockState
 ```
+
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | name | string | No Description Provided |
 | value | string | No Description Provided |
+
 
 
 ## Properties

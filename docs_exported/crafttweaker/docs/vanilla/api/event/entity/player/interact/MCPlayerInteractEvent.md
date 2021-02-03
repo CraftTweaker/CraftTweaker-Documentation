@@ -29,6 +29,7 @@ Return Type: [BlockPos](/vanilla/api/util/BlockPos)
 MCPlayerInteractEvent.getBlockPos() as BlockPos
 myMCPlayerInteractEvent.getBlockPos();
 ```
+
 ### getFace
 
 The face involved in this interaction.
@@ -40,6 +41,7 @@ Return Type: [Direction](/vanilla/api/util/Direction)
 MCPlayerInteractEvent.getFace() as Direction
 myMCPlayerInteractEvent.getFace();
 ```
+
 ### getItemStack
 
 The stack involved in this interaction.
@@ -51,6 +53,7 @@ Return Type: [IItemStack](/vanilla/api/items/IItemStack)
 MCPlayerInteractEvent.getItemStack() as IItemStack
 myMCPlayerInteractEvent.getItemStack();
 ```
+
 
 ## Properties
 

@@ -23,9 +23,11 @@ Return Type: [ModInfo](/vanilla/api/mods/ModInfo)
 Mods.getMod(modid as string) as ModInfo
 loadedMods.getMod("minecraft");
 ```
+
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | modid | string | No Description Provided |
+
 
 ### isModLoaded
 
@@ -37,9 +39,11 @@ Return Type: boolean
 Mods.isModLoaded(modid as string) as boolean
 loadedMods.isModLoaded("minecraft");
 ```
+
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | modid | string | modid to check |
+
 
 
 ## Properties

@@ -27,9 +27,11 @@ Return Type: [MCBlock](/vanilla/api/blocks/MCBlock)
 BracketHandlers.getBlock(tokens as string) as MCBlock
 BracketHandlers.getBlock("minecraft:dirt");
 ```
+
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | tokens | string | What you would write in the BEP call. |
+
 
 ### getBlockMaterial
 
@@ -44,9 +46,11 @@ Return Type: [MCMaterial](/vanilla/api/block/material/MCMaterial)
 BracketHandlers.getBlockMaterial(tokens as string) as MCMaterial
 BracketHandlers.getBlockMaterial("earth");
 ```
+
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | tokens | string | What you would write in the BEP call. |
+
 
 ### getBlockState
 
@@ -64,9 +68,11 @@ BracketHandlers.getBlockState(tokens as string) as MCBlockState
 BracketHandlers.getBlockState("minecraft:acacia_planks");
 BracketHandlers.getBlockState("minecraft:furnace:facing=north,lit=false");
 ```
+
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | tokens | string | The block's resource location and variants |
+
 
 ### getDirectionAxis
 
@@ -81,9 +87,11 @@ Return Type: [DirectionAxis](/vanilla/api/util/DirectionAxis)
 BracketHandlers.getDirectionAxis(tokens as string) as DirectionAxis
 BracketHandlers.getDirectionAxis("x");
 ```
+
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | tokens | string | The direction Axis's resource location |
+
 
 ### getEffect
 
@@ -98,9 +106,11 @@ Return Type: [MCPotionEffect](/vanilla/api/potions/MCPotionEffect)
 BracketHandlers.getEffect(tokens as string) as MCPotionEffect
 BracketHandlers.getEffect("minecraft:haste");
 ```
+
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | tokens | string | The effect's resource location |
+
 
 ### getEntityClassification
 
@@ -115,9 +125,11 @@ Return Type: [MCEntityClassification](/vanilla/api/entity/MCEntityClassification
 BracketHandlers.getEntityClassification(tokens as string) as MCEntityClassification
 BracketHandlers.getEntityClassification("monster");
 ```
+
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | tokens | string | The entityClassification's resource location |
+
 
 ### getEntityType
 
@@ -132,9 +144,11 @@ Return Type: [MCEntityType](/vanilla/api/entities/MCEntityType)
 BracketHandlers.getEntityType(tokens as string) as MCEntityType
 BracketHandlers.getEntityType("minecraft:pig");
 ```
+
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | tokens | string | The entityType's resource location |
+
 
 ### getFluidStack
 
@@ -149,9 +163,11 @@ Return Type: [IFluidStack](/vanilla/api/fluid/IFluidStack)
 BracketHandlers.getFluidStack(tokens as string) as IFluidStack
 BracketHandlers.getFluidStack("minecraft:water");
 ```
+
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | tokens | string | The Fluid's resource location |
+
 
 ### getItem
 
@@ -166,9 +182,11 @@ Return Type: [IItemStack](/vanilla/api/items/IItemStack)
 BracketHandlers.getItem(tokens as string) as IItemStack
 BracketHandlers.getItem("minecraft:dirt");
 ```
+
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | tokens | string | The item's resource location |
+
 
 ### getPotion
 
@@ -177,9 +195,11 @@ Return Type: [MCPotion](/vanilla/api/potions/MCPotion)
 ```zenscript
 BracketHandlers.getPotion(tokens as string) as MCPotion
 ```
+
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | tokens | string | No Description Provided |
+
 
 ### getProfession
 
@@ -194,9 +214,11 @@ Return Type: [MCVillagerProfession](/vanilla/api/villager/MCVillagerProfession)
 BracketHandlers.getProfession(tokens as string) as MCVillagerProfession
 BracketHandlers.getProfession("minecraft:armorer");
 ```
+
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | tokens | string | The profession's resource location |
+
 
 ### getRecipeManager
 
@@ -214,9 +236,11 @@ Return Type: [IRecipeManager](/vanilla/api/managers/IRecipeManager)
 BracketHandlers.getRecipeManager(tokens as string) as IRecipeManager
 BracketHandlers.getRecipeManager("minecraft:crafting");
 ```
+
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | tokens | string | The recipeManager's resource location |
+
 
 ### getResourceLocation
 
@@ -232,9 +256,11 @@ Return Type: [MCResourceLocation](/vanilla/api/util/MCResourceLocation)
 BracketHandlers.getResourceLocation(tokens as string) as MCResourceLocation
 BracketHandlers.getResourceLocation("minecraft:dirt");
 ```
+
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | tokens | string | The resource location |
+
 
 ### getTextFormatting
 
@@ -243,7 +269,9 @@ Return Type: [TextFormatting](/vanilla/api/util/text/TextFormatting)
 ```zenscript
 BracketHandlers.getTextFormatting(tokens as string) as TextFormatting
 ```
+
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | tokens | string | No Description Provided |
+
 

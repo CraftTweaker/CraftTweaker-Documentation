@@ -33,8 +33,10 @@ CTEventManager.register<crafttweaker.api.event.MCEvent>((event) => {
      println("Some Event was captured");
  });
 ```
+
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | consumer | Consumer&lt;T&gt; | The event handler as consumer |
 | T | [MCEvent](/vanilla/api/event/MCEvent) | The type of the event |
+
 

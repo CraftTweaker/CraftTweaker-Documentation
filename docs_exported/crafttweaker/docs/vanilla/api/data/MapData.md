@@ -21,13 +21,16 @@ No Description Provided
 new MapData() as MapData
 new MapData();
 ```
+
 No Description Provided
 ```zenscript
 new MapData(map as IData[string]) as MapData
 ```
+
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | map | [IData](/vanilla/api/data/IData)[string] | No Description Provided |
+
 
 
 ## Casters
@@ -48,9 +51,11 @@ Return Type: boolean
 MapData.contains(key as string) as boolean
 {Hello : "World", Somewhere: "Over the rainbow"}.contains("Hello");
 ```
+
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | key | string | The key to search for |
+
 
 ### getAt
 
@@ -62,9 +67,11 @@ Return Type: [IData](/vanilla/api/data/IData)
 MapData.getAt(key as string) as IData
 {Hello : "World", Somewhere: "Over the rainbow"}.getAt("Hello");
 ```
+
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | key | string | The key to search for |
+
 
 ### merge
 
@@ -78,9 +85,11 @@ Return Type: [MapData](/vanilla/api/data/MapData)
 MapData.merge(other as MapData) as MapData
 {Hello : "World", Somewhere: "Over the rainbow"}.merge({Doodle: "Do});
 ```
+
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | other | [MapData](/vanilla/api/data/MapData) | The other map. |
+
 
 ### put
 
@@ -92,10 +101,12 @@ Return Type: [IData](/vanilla/api/data/IData)
 MapData.put(key as string, value as IData) as IData
 {Hello : "World", Somewhere: "Over the rainbow"}.put("Hello", "Goodbye");
 ```
+
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | key | string | The key to set the value for. |
 | value | [IData](/vanilla/api/data/IData) | The value to set. |
+
 
 ### putAll
 
@@ -108,9 +119,11 @@ Return Type: void
 MapData.putAll(map as IData[string]) as void
 {Hello : "World", Somewhere: "Over the rainbow"}.putAll({Hello: "Goodbye", Item: "Bedrock"});
 ```
+
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | map | [IData](/vanilla/api/data/IData)[string] | The other entries to be added to this map |
+
 
 ### remove
 
@@ -122,9 +135,11 @@ Return Type: void
 MapData.remove(key as string) as void
 {Hello : "World", Somewhere: "Over the rainbow"}.remove("Somewhere");
 ```
+
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | key | string | The key of the entry to remove |
+
 
 
 ## Operators
@@ -136,6 +151,7 @@ Adds all entries from the given IData to this entry
 ```zenscript
 myMapData + data as IData
 ```
+
 
 
 

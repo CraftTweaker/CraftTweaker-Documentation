@@ -36,9 +36,11 @@ Return Type: void
 ```zenscript
 MCTag.add(items as stdlib.List<T>) as void
 ```
+
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | items | stdlib.List&lt;T&gt; | The items to add. Provided as list. |
+
 
 Adds the given items to the tag. Creates the tag if it does not exist.
 
@@ -50,9 +52,11 @@ MCTag.add(items as T[]) as void
 <tag:items:forge:gems>.add(<item:minecraft:iron_ingot>, <item:minecraft:gold_ingot>);
 <tag:items:forge:gems>.add([<item:minecraft:iron_ingot>, <item:minecraft:gold_ingot>]);
 ```
+
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | items | T[] | The items to add. Can be one or more items. |
+
 
 ### asTagWithAmount
 
@@ -62,6 +66,7 @@ Return Type: [MCTagWithAmount](/vanilla/api/tags/MCTagWithAmount)&lt;T&gt;
 MCTag.asTagWithAmount() as MCTagWithAmount<T>
 <tag:items:forge:gems>.asTagWithAmount();
 ```
+
 ### contains
 
 Return Type: boolean
@@ -69,9 +74,11 @@ Return Type: boolean
 ```zenscript
 MCTag.contains(element as T) as boolean
 ```
+
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | element | T | No Description Provided |
+
 
 ### exists
 
@@ -81,6 +88,7 @@ Return Type: boolean
 MCTag.exists() as boolean
 <tag:items:forge:gems>.exists();
 ```
+
 ### getElements
 
 Return Type: stdlib.List&lt;T&gt;
@@ -89,6 +97,7 @@ Return Type: stdlib.List&lt;T&gt;
 MCTag.getElements() as stdlib.List<T>
 <tag:items:forge:gems>.getElements();
 ```
+
 ### getId
 
 Return Type: [MCResourceLocation](/vanilla/api/util/MCResourceLocation)
@@ -97,6 +106,7 @@ Return Type: [MCResourceLocation](/vanilla/api/util/MCResourceLocation)
 MCTag.getId() as MCResourceLocation
 <tag:items:forge:gems>.getId();
 ```
+
 ### getManager
 
 Return Type: [TagManager](/vanilla/api/tags/TagManager)&lt;T&gt;
@@ -105,6 +115,7 @@ Return Type: [TagManager](/vanilla/api/tags/TagManager)&lt;T&gt;
 MCTag.getManager() as TagManager<T>
 <tag:items:forge:gems>.getManager();
 ```
+
 ### remove
 
 Return Type: void
@@ -112,18 +123,22 @@ Return Type: void
 ```zenscript
 MCTag.remove(items as stdlib.List<T>) as void
 ```
+
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | items | stdlib.List&lt;T&gt; | No Description Provided |
+
 
 Return Type: void
 
 ```zenscript
 MCTag.remove(items as T[]) as void
 ```
+
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | items | T[] | No Description Provided |
+
 
 ### withAmount
 
@@ -132,9 +147,11 @@ Return Type: [MCTagWithAmount](/vanilla/api/tags/MCTagWithAmount)&lt;T&gt;
 ```zenscript
 MCTag.withAmount(amount as int) as MCTagWithAmount<T>
 ```
+
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | amount | int | No Description Provided |
+
 
 
 ## Operators
@@ -146,6 +163,7 @@ element as T in myMCTag
 ```
 
 
+
 ### EQUALS
 
 ```zenscript
@@ -153,11 +171,13 @@ myMCTag == other as MCTag<T>
 ```
 
 
+
 ### MUL
 
 ```zenscript
 myMCTag * amount as int
 ```
+
 
 
 

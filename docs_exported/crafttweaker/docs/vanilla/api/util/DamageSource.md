@@ -20,6 +20,7 @@ Return Type: boolean
 DamageSource.canBypassCreative() as boolean
 myDamageSource.canBypassCreative();
 ```
+
 ### getDamageType
 
 Gets the type of damage.
@@ -30,6 +31,7 @@ Return Type: string
 DamageSource.getDamageType() as string
 myDamageSource.getDamageType();
 ```
+
 ### getHungerDamage
 
 Gets the amount of exhaustion to add to the player's hunger bar if they
@@ -41,6 +43,7 @@ Return Type: float
 DamageSource.getHungerDamage() as float
 myDamageSource.getHungerDamage();
 ```
+
 ### getImmediateSource
 
 Gets the immediate source of the damage, like an arrow.
@@ -51,6 +54,7 @@ Return Type: [MCEntity](/vanilla/api/entity/MCEntity)
 DamageSource.getImmediateSource() as MCEntity
 myDamageSource.getImmediateSource();
 ```
+
 ### getTrueSource
 
 Gets the true source of the damage, like the player who shot the arrow.
@@ -61,6 +65,7 @@ Return Type: [MCEntity](/vanilla/api/entity/MCEntity)
 DamageSource.getTrueSource() as MCEntity
 myDamageSource.getTrueSource();
 ```
+
 ### isAbsoluteDamage
 
 Checks if the damage is absolute.
@@ -71,6 +76,7 @@ Return Type: boolean
 DamageSource.isAbsoluteDamage() as boolean
 myDamageSource.isAbsoluteDamage();
 ```
+
 ### isExplosionDamage
 
 Checks if the damage is caused by an explosion.
@@ -81,6 +87,7 @@ Return Type: boolean
 DamageSource.isExplosionDamage() as boolean
 myDamageSource.isExplosionDamage();
 ```
+
 ### isFireDamage
 
 Checks if the damage is caused by fire or burning.
@@ -91,6 +98,7 @@ Return Type: boolean
 DamageSource.isFireDamage() as boolean
 myDamageSource.isFireDamage();
 ```
+
 ### isMagicDamage
 
 Checks if the damage is caused by magic.
@@ -101,6 +109,7 @@ Return Type: boolean
 DamageSource.isMagicDamage() as boolean
 myDamageSource.isMagicDamage();
 ```
+
 ### isProjectileDamage
 
 Checks if the damage is caused by a projectile.
@@ -111,6 +120,7 @@ Return Type: boolean
 DamageSource.isProjectileDamage() as boolean
 myDamageSource.isProjectileDamage();
 ```
+
 ### isUnblockableDamage
 
 Checks if the damage can be blocked.
@@ -121,6 +131,7 @@ Return Type: boolean
 DamageSource.isUnblockableDamage() as boolean
 myDamageSource.isUnblockableDamage();
 ```
+
 
 ## Properties
 

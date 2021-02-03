@@ -26,9 +26,11 @@ Return Type: boolean
 ```zenscript
 TagManager.exists(location as MCResourceLocation) as boolean
 ```
+
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | location | [MCResourceLocation](/vanilla/api/util/MCResourceLocation) | The resource location to check for |
+
 
 Checks if a tag already exists. Does the same as calling `.exists` on a tag directly
 
@@ -37,9 +39,11 @@ Return Type: boolean
 ```zenscript
 TagManager.exists(name as string) as boolean
 ```
+
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | name | string | The resource location to check for |
+
 
 ### getAllTags
 
@@ -51,6 +55,7 @@ Return Type: stdlib.List&lt;[MCTag](/vanilla/api/tags/MCTag)&lt;T&gt;&gt;
 TagManager.getAllTags() as stdlib.List<MCTag<T>>
 myTagManager.getAllTags();
 ```
+
 ### getAllTagsFor
 
 Retrieves all tags contain the provided element
@@ -60,9 +65,11 @@ Return Type: stdlib.List&lt;[MCTag](/vanilla/api/tags/MCTag)&lt;T&gt;&gt;
 ```zenscript
 TagManager.getAllTagsFor(element as T) as stdlib.List<MCTag<T>>
 ```
+
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | element | T | The element whose tags should be returned |
+
 
 ### getTag
 
@@ -77,9 +84,11 @@ Return Type: [MCTag](/vanilla/api/tags/MCTag)&lt;T&gt;
 ```zenscript
 TagManager.getTag(location as MCResourceLocation) as MCTag<T>
 ```
+
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | location | [MCResourceLocation](/vanilla/api/util/MCResourceLocation) | The Resource location of the tag |
+
 
 Retrieves a tag by its name.
  Will also be called by the BEP.
@@ -92,9 +101,11 @@ Return Type: [MCTag](/vanilla/api/tags/MCTag)&lt;T&gt;
 ```zenscript
 TagManager.getTag(name as string) as MCTag<T>
 ```
+
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | name | string | The Resource location of the tag |
+
 
 ### getTagFolder
 
@@ -109,6 +120,7 @@ TagManager.getTagFolder() as string
 myTagManager.getTagFolder();
 ```
 
+
 ## Operators
 
 ### CONTAINS
@@ -118,6 +130,7 @@ Checks if a tag already exists. Does the same as calling `.exists` on a tag dire
 ```zenscript
 name as string in myTagManager
 ```
+
 
 
 

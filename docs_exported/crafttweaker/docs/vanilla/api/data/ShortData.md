@@ -20,8 +20,10 @@ No Description Provided
 ```zenscript
 new ShortData(internal as short) as ShortData
 ```
+
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | internal | short | No Description Provided |
+
 
 

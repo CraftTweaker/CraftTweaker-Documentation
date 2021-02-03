@@ -24,10 +24,12 @@ Manually creates the weightedItemStack.
 new MCWeightedItemStack(itemStack as IItemStack, weight as double) as MCWeightedItemStack
 new MCWeightedItemStack(<item:minecraft:bedrock>, 0.5D);
 ```
+
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | itemStack | [IItemStack](/vanilla/api/items/IItemStack) | The Stack |
 | weight | double | The chance, between 0 (0%) and 1 (100%) |
+
 
 
 ## Methods
@@ -42,9 +44,11 @@ Return Type: [MCWeightedItemStack](/vanilla/api/items/MCWeightedItemStack)
 MCWeightedItemStack.weight(newWeight as double) as MCWeightedItemStack
 <item:minecraft:bedrock>.weight(0.5D).weight(0.75D);
 ```
+
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | newWeight | double | The percentage |
+
 
 
 ## Operators
@@ -59,6 +63,7 @@ myMCWeightedItemStack % newWeight as int
 ```
 
 
+
 ### MUL
 
 Sets the itemStack's amount.
@@ -69,6 +74,7 @@ Sets the itemStack's amount.
 myMCWeightedItemStack * newAmount as int
 <item:minecraft:bedrock>.weight(0.5D) * 5
 ```
+
 
 
 

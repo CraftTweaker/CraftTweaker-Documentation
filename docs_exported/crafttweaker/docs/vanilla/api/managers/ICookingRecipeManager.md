@@ -26,6 +26,7 @@ Return Type: void
 ICookingRecipeManager.addRecipe(name as string, output as IItemStack, input as IIngredient, xp as float, cookTime as int) as void
 furnace.addRecipe("wool2diamond", <item:minecraft:diamond>, <tag:minecraft:wool>, 1.0, 0);
 ```
+
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | name | string | Name of the new recipe |
@@ -33,6 +34,7 @@ furnace.addRecipe("wool2diamond", <item:minecraft:diamond>, <tag:minecraft:wool>
 | input | [IIngredient](/vanilla/api/items/IIngredient) | IIngredient input of the recipe |
 | xp | float | how much xp the player gets |
 | cookTime | int | how long it takes to cook |
+
 
 ### removeRecipe
 
@@ -44,9 +46,11 @@ Return Type: void
 ICookingRecipeManager.removeRecipe(output as IItemStack, input as IIngredient) as void
 furnace.removeRecipe(<item:minecraft:diamond>, <tag:minecraft:wool>);
 ```
+
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | output | [IItemStack](/vanilla/api/items/IItemStack) | IItemStack output of the recipe. |
 | input | [IIngredient](/vanilla/api/items/IIngredient) | IIngredient of the recipe to remove. |
+
 
 

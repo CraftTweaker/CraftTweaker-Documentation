@@ -35,10 +35,12 @@ Return Type: void
 ```zenscript
 IItemStack.addShiftTooltip(content as MCTextComponent, showMessage as MCTextComponent) as void
 ```
+
 | Parameter | Type | Description | Optional | DefaultValue |
 |-----------|------|-------------|----------|--------------|
 | content | [MCTextComponent](/vanilla/api/util/text/MCTextComponent) | No Description Provided | false |  |
 | showMessage | [MCTextComponent](/vanilla/api/util/text/MCTextComponent) | No Description Provided | true |  |
+
 ### addTooltip
 
 Return Type: void
@@ -46,9 +48,11 @@ Return Type: void
 ```zenscript
 IItemStack.addTooltip(content as MCTextComponent) as void
 ```
+
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | content | [MCTextComponent](/vanilla/api/util/text/MCTextComponent) | No Description Provided |
+
 
 ### asIIngredientWithAmount
 
@@ -58,6 +62,7 @@ Return Type: [IIngredientWithAmount](/vanilla/api/items/IIngredientWithAmount)
 IItemStack.asIIngredientWithAmount() as IIngredientWithAmount
 <item:minecraft:dirt>.asIIngredientWithAmount();
 ```
+
 ### clearCustomName
 
 Clears any custom name set for this ItemStack
@@ -68,6 +73,7 @@ Return Type: void
 IItemStack.clearCustomName() as void
 <item:minecraft:dirt>.clearCustomName();
 ```
+
 ### clearTooltip
 
 Return Type: void
@@ -76,6 +82,7 @@ Return Type: void
 IItemStack.clearTooltip() as void
 <item:minecraft:dirt>.clearTooltip();
 ```
+
 ### copy
 
 Creates a copy
@@ -86,6 +93,7 @@ Return Type: [IItemStack](/vanilla/api/items/IItemStack)
 IItemStack.copy() as IItemStack
 <item:minecraft:dirt>.copy();
 ```
+
 ### getDefinition
 
 Return Type: [MCItemDefinition](/vanilla/api/item/MCItemDefinition)
@@ -94,6 +102,7 @@ Return Type: [MCItemDefinition](/vanilla/api/item/MCItemDefinition)
 IItemStack.getDefinition() as MCItemDefinition
 <item:minecraft:dirt>.getDefinition();
 ```
+
 ### getInternal
 
 Gets the internal [ItemStack](/vanilla/api/item/ItemStack) for this IItemStack.
@@ -104,6 +113,7 @@ Return Type: [ItemStack](/vanilla/api/item/ItemStack)
 IItemStack.getInternal() as ItemStack
 <item:minecraft:dirt>.getInternal();
 ```
+
 ### modifyTooltip
 
 Return Type: void
@@ -111,9 +121,11 @@ Return Type: void
 ```zenscript
 IItemStack.modifyTooltip(function as ITooltipFunction) as void
 ```
+
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | function | [ITooltipFunction](/vanilla/api/items/ITooltipFunction) | No Description Provided |
+
 
 ### mutable
 
@@ -123,6 +135,7 @@ Return Type: [IItemStack](/vanilla/api/items/IItemStack)
 IItemStack.mutable() as IItemStack
 <item:minecraft:dirt>.mutable();
 ```
+
 ### removeTooltip
 
 Return Type: void
@@ -130,9 +143,11 @@ Return Type: void
 ```zenscript
 IItemStack.removeTooltip(regex as string) as void
 ```
+
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | regex | string | No Description Provided |
+
 
 ### setDisplayName
 
@@ -144,9 +159,11 @@ Return Type: [IItemStack](/vanilla/api/items/IItemStack)
 IItemStack.setDisplayName(name as string) as IItemStack
 <item:minecraft:dirt>.setDisplayName("totally not dirt");
 ```
+
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | name | string | New name of the stack. |
+
 
 ### weight
 
@@ -155,9 +172,11 @@ Return Type: [MCWeightedItemStack](/vanilla/api/items/MCWeightedItemStack)
 ```zenscript
 IItemStack.weight(weight as double) as MCWeightedItemStack
 ```
+
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | weight | double | No Description Provided |
+
 
 ### withDamage
 
@@ -169,9 +188,11 @@ Return Type: [IItemStack](/vanilla/api/items/IItemStack)
 IItemStack.withDamage(damage as int) as IItemStack
 <item:minecraft:dirt>.withDamage(10);
 ```
+
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | damage | int | the new damage value |
+
 
 ### withTag
 
@@ -183,9 +204,11 @@ Return Type: [IItemStack](/vanilla/api/items/IItemStack)
 IItemStack.withTag(tag as IData) as IItemStack
 <item:minecraft:dirt>.withTag({Display: {lore: ["Hello"]}});
 ```
+
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | tag | [IData](/vanilla/api/data/IData) | The tag to set. |
+
 
 
 ## Operators
@@ -197,6 +220,7 @@ myIItemStack % percentage as int
 ```
 
 
+
 ### MUL
 
 Sets the amount of the ItemStack
@@ -205,6 +229,7 @@ Sets the amount of the ItemStack
 myIItemStack * amount as int
 <item:minecraft:dirt> * 3
 ```
+
 
 
 

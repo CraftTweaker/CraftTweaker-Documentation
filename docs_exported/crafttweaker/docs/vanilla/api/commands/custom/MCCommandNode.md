@@ -23,9 +23,11 @@ Return Type: void
 ```zenscript
 MCCommandNode.addChild(node as MCCommandNode) as void
 ```
+
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | node | [MCCommandNode](/vanilla/api/commands/custom/MCCommandNode) | No Description Provided |
+
 
 ### canUse
 
@@ -34,9 +36,11 @@ Return Type: boolean
 ```zenscript
 MCCommandNode.canUse(source as MCCommandSource) as boolean
 ```
+
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | source | [MCCommandSource](/vanilla/api/commands/custom/MCCommandSource) | No Description Provided |
+
 
 ### createBuilder
 
@@ -46,6 +50,7 @@ Return Type: [MCArgumentBuilder](/vanilla/api/commands/custom/MCArgumentBuilder)
 MCCommandNode.createBuilder() as MCArgumentBuilder
 myMCCommandNode.createBuilder();
 ```
+
 ### equals
 
 Return Type: boolean
@@ -53,9 +58,11 @@ Return Type: boolean
 ```zenscript
 MCCommandNode.equals(o as Object) as boolean
 ```
+
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | o | Object | No Description Provided |
+
 
 ### findAmbiguities
 
@@ -64,9 +71,11 @@ Return Type: void
 ```zenscript
 MCCommandNode.findAmbiguities(consumer as MCAmbiguityConsumer) as void
 ```
+
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | consumer | [MCAmbiguityConsumer](/vanilla/api/commands/custom/MCAmbiguityConsumer) | No Description Provided |
+
 
 ### getChild
 
@@ -75,9 +84,11 @@ Return Type: [MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)
 ```zenscript
 MCCommandNode.getChild(name as string) as MCCommandNode
 ```
+
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | name | string | No Description Provided |
+
 
 ### getChildren
 
@@ -87,6 +98,7 @@ Return Type: Collection&lt;[MCCommandNode](/vanilla/api/commands/custom/MCComman
 MCCommandNode.getChildren() as Collection<MCCommandNode>
 myMCCommandNode.getChildren();
 ```
+
 ### getCommand
 
 Return Type: [MCCommand](/vanilla/api/commands/custom/MCCommand)
@@ -95,6 +107,7 @@ Return Type: [MCCommand](/vanilla/api/commands/custom/MCCommand)
 MCCommandNode.getCommand() as MCCommand
 myMCCommandNode.getCommand();
 ```
+
 ### getExamples
 
 Return Type: Collection&lt;string&gt;
@@ -103,6 +116,7 @@ Return Type: Collection&lt;string&gt;
 MCCommandNode.getExamples() as Collection<string>
 myMCCommandNode.getExamples();
 ```
+
 ### getName
 
 Return Type: string
@@ -111,6 +125,7 @@ Return Type: string
 MCCommandNode.getName() as string
 myMCCommandNode.getName();
 ```
+
 ### getRedirect
 
 Return Type: [MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)
@@ -119,6 +134,7 @@ Return Type: [MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)
 MCCommandNode.getRedirect() as MCCommandNode
 myMCCommandNode.getRedirect();
 ```
+
 ### getRedirectModifier
 
 Return Type: [MCRedirectModifier](/vanilla/api/commands/custom/MCRedirectModifier)
@@ -127,6 +143,7 @@ Return Type: [MCRedirectModifier](/vanilla/api/commands/custom/MCRedirectModifie
 MCCommandNode.getRedirectModifier() as MCRedirectModifier
 myMCCommandNode.getRedirectModifier();
 ```
+
 ### getRelevantNodes
 
 Return Type: Collection&lt;[MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)&gt;
@@ -134,9 +151,11 @@ Return Type: Collection&lt;[MCCommandNode](/vanilla/api/commands/custom/MCComman
 ```zenscript
 MCCommandNode.getRelevantNodes(input as string) as Collection<MCCommandNode>
 ```
+
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | input | string | No Description Provided |
+
 
 ### getRequirement
 
@@ -146,6 +165,7 @@ Return Type: Predicate&lt;[MCCommandSource](/vanilla/api/commands/custom/MCComma
 MCCommandNode.getRequirement() as Predicate<MCCommandSource>
 myMCCommandNode.getRequirement();
 ```
+
 ### getUsageText
 
 Return Type: string
@@ -154,6 +174,7 @@ Return Type: string
 MCCommandNode.getUsageText() as string
 myMCCommandNode.getUsageText();
 ```
+
 ### hashCode
 
 Return Type: int
@@ -162,6 +183,7 @@ Return Type: int
 MCCommandNode.hashCode() as int
 myMCCommandNode.hashCode();
 ```
+
 ### isFork
 
 Return Type: boolean
@@ -170,6 +192,7 @@ Return Type: boolean
 MCCommandNode.isFork() as boolean
 myMCCommandNode.isFork();
 ```
+
 ### listSuggestions
 
 Return Type: [MCSuggestions](/vanilla/api/commands/custom/MCSuggestions)
@@ -177,10 +200,12 @@ Return Type: [MCSuggestions](/vanilla/api/commands/custom/MCSuggestions)
 ```zenscript
 MCCommandNode.listSuggestions(context as MCCommandContext, builder as MCSuggestionsBuilder) as MCSuggestions
 ```
+
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | context | [MCCommandContext](/vanilla/api/commands/custom/MCCommandContext) | No Description Provided |
 | builder | [MCSuggestionsBuilder](/vanilla/api/commands/custom/MCSuggestionsBuilder) | No Description Provided |
+
 
 ### parse
 
@@ -189,10 +214,12 @@ Return Type: void
 ```zenscript
 MCCommandNode.parse(input as string, contextBuilder as MCCommandContextBuilder) as void
 ```
+
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | input | string | No Description Provided |
 | contextBuilder | [MCCommandContextBuilder](/vanilla/api/commands/custom/MCCommandContextBuilder) | No Description Provided |
+
 
 ### toString
 
@@ -203,6 +230,7 @@ MCCommandNode.toString() as string
 myMCCommandNode.toString();
 ```
 
+
 ## Operators
 
 ### COMPARE
@@ -212,11 +240,13 @@ myMCCommandNode < o as MCCommandNode
 ```
 
 
+
 ### EQUALS
 
 ```zenscript
 myMCCommandNode == o as Object
 ```
+
 
 
 

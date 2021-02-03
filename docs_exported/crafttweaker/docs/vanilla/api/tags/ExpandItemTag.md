@@ -22,9 +22,11 @@ Return Type: void
 ```zenscript
 MCTag.add(items as stdlib.List<IItemStack>) as void
 ```
+
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | items | stdlib.List&lt;[IItemStack](/vanilla/api/items/IItemStack)&gt; | No Description Provided |
+
 
 ### asIData
 
@@ -34,6 +36,7 @@ Return Type: [IData](/vanilla/api/data/IData)
 MCTag.asIData() as IData
 <tag:items:forge:gems>.asIData();
 ```
+
 ### asIIngredient
 
 Return Type: [IIngredient](/vanilla/api/items/IIngredient)
@@ -42,6 +45,7 @@ Return Type: [IIngredient](/vanilla/api/items/IIngredient)
 MCTag.asIIngredient() as IIngredient
 <tag:items:forge:gems>.asIIngredient();
 ```
+
 ### asIIngredientWithAmount
 
 Return Type: [IIngredientWithAmount](/vanilla/api/items/IIngredientWithAmount)
@@ -50,4 +54,5 @@ Return Type: [IIngredientWithAmount](/vanilla/api/items/IIngredientWithAmount)
 MCTag.asIIngredientWithAmount() as IIngredientWithAmount
 <tag:items:forge:gems>.asIIngredientWithAmount();
 ```
+
 
