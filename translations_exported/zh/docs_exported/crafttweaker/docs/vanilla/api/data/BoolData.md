@@ -20,9 +20,11 @@ No Description Provided
 ```zenscript
 new BoolData(internal as boolean) as BoolData
 ```
+
 | 参数       | 类型      | 描述                      |
 | -------- | ------- | ----------------------- |
 | internal | boolean | No Description Provided |
+
 
 
 ## Casters
@@ -43,4 +45,5 @@ Return Type: [ByteData](/vanilla/api/data/ByteData)
 BoolData.getByteData() as ByteData
 true.getByteData();
 ```
+
 
