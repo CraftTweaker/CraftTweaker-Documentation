@@ -17,10 +17,12 @@ Return Type: boolean
 ```zenscript
 WrapperRecipe.canFit(width as int, height as int) as boolean
 ```
+
 | 参数     | 类型  | 描述                      |
 | ------ | --- | ----------------------- |
 | width  | int | No Description Provided |
 | height | int | No Description Provided |
+
 
 
 ## 参数
