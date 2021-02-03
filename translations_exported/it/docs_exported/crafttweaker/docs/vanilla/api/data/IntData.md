@@ -20,8 +20,10 @@ No Description Provided
 ```zenscript
 new IntData(internal as int) as IntData
 ```
+
 | Parameter | Type | Description             |
 | --------- | ---- | ----------------------- |
 | internal  | int  | No Description Provided |
+
 
 
