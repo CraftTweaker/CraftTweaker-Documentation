@@ -27,6 +27,7 @@ MCPlayerRespawnEvent.isEndConquered() as boolean
 myMCPlayerRespawnEvent.isEndConquered();
 ```
 
+
 ## Свойства
 
 | Название     | Тип     | Имеет Getter | Имеет Setter |
