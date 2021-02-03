@@ -23,6 +23,7 @@ MCItemCraftedEvent.getCrafting() as IItemStack
 myMCItemCraftedEvent.getCrafting();
 ```
 
+
 ## 参数
 
 | 名称       | 类型                                          | 可获得  | 可设置   |
