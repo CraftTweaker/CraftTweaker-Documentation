@@ -21,6 +21,7 @@ MCVillagerProfession.getName() as string
 <profession:minecraft:fletcher>.getName();
 ```
 
+
 ## Properties
 
 | 名称   | Type   | Has Getter | Has Setter |
