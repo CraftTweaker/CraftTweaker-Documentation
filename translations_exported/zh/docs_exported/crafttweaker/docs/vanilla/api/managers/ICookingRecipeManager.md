@@ -26,6 +26,7 @@ Return Type: void
 ICookingRecipeManager.addRecipe(name as string, output as IItemStack, input as IIngredient, xp as float, cookTime as int) as void
 furnace.addRecipe("wool2diamond", <item:minecraft:diamond>, <tag:minecraft:wool>, 1.0, 0);
 ```
+
 | 参数             | 类型                                                | 描述         |
 | -------------- | ------------------------------------------------- | ---------- |
 | name           | string                                            | 新的合成表名称    |
@@ -33,6 +34,7 @@ furnace.addRecipe("wool2diamond", <item:minecraft:diamond>, <tag:minecraft:wool>
 | input（输入）      | [材料（IIngredient）](/vanilla/api/items/IIngredient) | 合成表的输入成分   |
 | xp             | float                                             | 玩家获得多少经验   |
 | cookTime #烧制时间 | int                                               | 烧制需要多长时间   |
+
 
 ### 删除合成表
 
@@ -44,9 +46,11 @@ Return Type: void
 ICookingRecipeManager.removeRecipe(output as IItemStack, input as IIngredient) as void
 furnace.removeRecipe(<item:minecraft:diamond>, <tag:minecraft:wool>);
 ```
+
 | 参数         | 类型                                                | 描述          |
 | ---------- | ------------------------------------------------- | ----------- |
 | output（输出） | [IItemStack](/vanilla/api/items/IItemStack)       | 合成表的输出物品id. |
 | input（输入）  | [材料（IIngredient）](/vanilla/api/items/IIngredient) | 要移除的配方的成分。  |
+
 
 
