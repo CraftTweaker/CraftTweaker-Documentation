@@ -14,10 +14,12 @@ No Description Provided
 ```zenscript
 new MCFood(healing as int, saturation as float) as MCFood
 ```
+
 | Parameter  | Type  | Beschreibung            |
 | ---------- | ----- | ----------------------- |
 | healing    | int   | No Description Provided |
 | saturation | float | No Description Provided |
+
 
 
 ## Methoden
@@ -29,10 +31,12 @@ Return Type: [MCFood](/vanilla/api/food/MCFood)
 ```zenscript
 MCFood.addEffect(effect as MCPotionEffectInstance, probability as float) as MCFood
 ```
+
 | Parameter   | Type                                                                  | Beschreibung            |
 | ----------- | --------------------------------------------------------------------- | ----------------------- |
 | effect      | [MCPotionEffectInstance](/vanilla/api/potions/MCPotionEffectInstance) | No Description Provided |
 | probability | float                                                                 | No Description Provided |
+
 
 ### clearEffects
 
@@ -42,6 +46,7 @@ Return Type: void
 MCFood.clearEffects() as void
 myMCFood.clearEffects();
 ```
+
 ### removeEffect
 
 Return Type: [MCFood](/vanilla/api/food/MCFood)
@@ -49,9 +54,11 @@ Return Type: [MCFood](/vanilla/api/food/MCFood)
 ```zenscript
 MCFood.removeEffect(effect as MCPotionEffectInstance) as MCFood
 ```
+
 | Parameter | Type                                                                  | Beschreibung            |
 | --------- | --------------------------------------------------------------------- | ----------------------- |
 | effect    | [MCPotionEffectInstance](/vanilla/api/potions/MCPotionEffectInstance) | No Description Provided |
+
 
 ### setCanEatWhenFull
 
@@ -60,9 +67,11 @@ Return Type: [MCFood](/vanilla/api/food/MCFood)
 ```zenscript
 MCFood.setCanEatWhenFull(canEatWhenFull as boolean) as MCFood
 ```
+
 | Parameter      | Type    | Beschreibung            |
 | -------------- | ------- | ----------------------- |
 | canEatWhenFull | boolean | No Description Provided |
+
 
 ### setFastEating
 
@@ -71,9 +80,11 @@ Return Type: [MCFood](/vanilla/api/food/MCFood)
 ```zenscript
 MCFood.setFastEating(fastEating as boolean) as MCFood
 ```
+
 | Parameter  | Type    | Beschreibung            |
 | ---------- | ------- | ----------------------- |
 | fastEating | boolean | No Description Provided |
+
 
 ### setHealing
 
@@ -82,9 +93,11 @@ Return Type: [MCFood](/vanilla/api/food/MCFood)
 ```zenscript
 MCFood.setHealing(healing as int) as MCFood
 ```
+
 | Parameter | Type | Beschreibung            |
 | --------- | ---- | ----------------------- |
 | healing   | int  | No Description Provided |
+
 
 ### setMeat
 
@@ -93,9 +106,11 @@ Return Type: [MCFood](/vanilla/api/food/MCFood)
 ```zenscript
 MCFood.setMeat(meat as boolean) as MCFood
 ```
+
 | Parameter | Type    | Beschreibung            |
 | --------- | ------- | ----------------------- |
 | meat      | boolean | No Description Provided |
+
 
 ### setSaturation
 
@@ -104,9 +119,11 @@ Return Type: [MCFood](/vanilla/api/food/MCFood)
 ```zenscript
 MCFood.setSaturation(saturation as float) as MCFood
 ```
+
 | Parameter  | Type  | Beschreibung            |
 | ---------- | ----- | ----------------------- |
 | saturation | float | No Description Provided |
+
 
 
 ## Properties
