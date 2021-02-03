@@ -26,6 +26,7 @@ Return Type: float
 MCLivingHealEvent.getAmount() as float
 event.getAmount();
 ```
+
 ### setAmount
 
 Sets the amount of healing.
@@ -36,9 +37,11 @@ Return Type: void
 MCLivingHealEvent.setAmount(amount as float) as void
 event.setAmount(0.5);
 ```
+
 | Параметр | Тип   | Description                   |
 | -------- | ----- | ----------------------------- |
 | amount   | float | The amount of damage to heal. |
+
 
 
 ## Свойства
