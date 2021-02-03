@@ -32,6 +32,7 @@ Return Type: [MCIngredientConditioned](/vanilla/api/items/MCIngredientConditione
 IIngredient.anyDamage() as MCIngredientConditioned<IIngredient>
 <tag:items:forge:ingots>.anyDamage();
 ```
+
 ### asVanillaIngredient
 
 Create a Vanilla ingredient matching this one.
@@ -42,6 +43,7 @@ Return Type: [Ingredient](/vanilla/api/item/Ingredient)
 IIngredient.asVanillaIngredient() as Ingredient
 <tag:items:forge:ingots>.asVanillaIngredient();
 ```
+
 ### getRemainingItem
 
 When this ingredient stack is crafted, what will remain in the grid? Does not check if the stack matches though! Used e.g. in Crafting Table recipes.
@@ -52,9 +54,11 @@ Return Type: [IItemStack](/vanilla/api/items/IItemStack)
 IIngredient.getRemainingItem(stack as IItemStack) as IItemStack
 <tag:items:forge:ingots>.getRemainingItem(<item:minecraft:iron_ingot>);
 ```
+
 | Parameter | Type                                        | Description                               |
 | --------- | ------------------------------------------- | ----------------------------------------- |
 | stack     | [IItemStack](/vanilla/api/items/IItemStack) | The stack to provide for this ingredient. |
+
 
 ### matches
 
@@ -66,9 +70,11 @@ Return Type: boolean
 IIngredient.matches(stack as IItemStack) as boolean
 <tag:items:forge:ingots>.matches(<item:minecraft:iron_ingot>);
 ```
+
 | Parameter | Type                                        | Description        |
 | --------- | ------------------------------------------- | ------------------ |
 | stack     | [IItemStack](/vanilla/api/items/IItemStack) | The stack to check |
+
 
 Does the given stack match the ingredient?
 
@@ -77,10 +83,12 @@ Return Type: boolean
 ```zenscript
 IIngredient.matches(stack as IItemStack, ignoreDamage as boolean) as boolean
 ```
+
 | Parameter             | Type                                        | Description                     |
 | --------------------- | ------------------------------------------- | ------------------------------- |
 | stack                 | [IItemStack](/vanilla/api/items/IItemStack) | The stack to check              |
 | zignorowano obrażenia | boolean                                     | Czy należy sprawdzić obrażenia? |
+
 
 ### onlyDamaged
 
@@ -90,6 +98,7 @@ Return Type: [MCIngredientConditioned](/vanilla/api/items/MCIngredientConditione
 IIngredient.onlyDamaged() as MCIngredientConditioned<IIngredient>
 <tag:items:forge:ingots>.onlyDamaged();
 ```
+
 ### onlyIf
 
 Return Type: [MCIngredientConditioned](/vanilla/api/items/MCIngredientConditioned)&lt;[IIngredient](/vanilla/api/items/IIngredient)&gt;
@@ -97,10 +106,12 @@ Return Type: [MCIngredientConditioned](/vanilla/api/items/MCIngredientConditione
 ```zenscript
 IIngredient.onlyIf(uid as string, function as Predicate<IItemStack>) as MCIngredientConditioned<IIngredient>
 ```
+
 | Parameter | Type                                                                     | Description             | Optional | DefaultValue |
 | --------- | ------------------------------------------------------------------------ | ----------------------- | -------- | ------------ |
 | uid       | string                                                                   | No Description Provided | false    |              |
 | function  | Predicate&lt;[IItemStack](/vanilla/api/items/IItemStack)&gt; | No Description Provided | true     |              |
+
 
 ## Operators
 
@@ -109,6 +120,7 @@ IIngredient.onlyIf(uid as string, function as Predicate<IItemStack>) as MCIngred
 ```zenscript
 myIIngredient | other as IIngredient
 ```
+
 
 
 
