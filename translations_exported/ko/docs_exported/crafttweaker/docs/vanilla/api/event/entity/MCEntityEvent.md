@@ -23,6 +23,7 @@ MCEntityEvent.getEntity() as MCEntity
 myMCEntityEvent.getEntity();
 ```
 
+
 ## Properties
 
 | 이름     | Type                                     | Has Getter | Has Setter |
