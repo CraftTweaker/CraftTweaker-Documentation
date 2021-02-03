@@ -23,6 +23,7 @@ MCEntityEvent.getEntity() as MCEntity
 myMCEntityEvent.getEntity();
 ```
 
+
 ## Свойства
 
 | Название | Тип                                      | Имеет Getter | Имеет Setter |
