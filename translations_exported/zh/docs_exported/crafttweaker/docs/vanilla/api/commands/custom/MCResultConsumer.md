@@ -17,10 +17,12 @@ Return Type: void
 ```zenscript
 MCResultConsumer.onCommandComplete(commandContext as MCCommandContext, success as boolean, result as int) as void
 ```
+
 | 参数      | 类型                                                                | 描述                      |
 | ------- | ----------------------------------------------------------------- | ----------------------- |
 | 命令内容    | [MCCommandContext](/vanilla/api/commands/custom/MCCommandContext) | No Description Provided |
 | success | boolean                                                           | No Description Provided |
 | result  | int                                                               | No Description Provided |
+
 
 
