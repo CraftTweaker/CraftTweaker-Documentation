@@ -28,10 +28,12 @@ Return Type: boolean
 ```zenscript
 MCIngredientTransformed.matches(stack as IItemStack, ignoreDamage as boolean) as boolean
 ```
+
 | 参数    | 类型                                          | 描述                      |
 | ----- | ------------------------------------------- | ----------------------- |
 | stack | [IItemStack](/vanilla/api/items/IItemStack) | No Description Provided |
 | 忽略伤害  | boolean                                     | No Description Provided |
+
 
 
 ## 参数
