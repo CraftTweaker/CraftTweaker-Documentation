@@ -17,9 +17,11 @@ Return Type: string
 ```zenscript
 IIngredientCondition.getCommandString(ingredient as T) as string
 ```
+
 | Parameter  | Type | Beschreibung            |
 | ---------- | ---- | ----------------------- |
 | ingredient | T    | No Description Provided |
+
 
 ### matches
 
@@ -28,8 +30,10 @@ Return Type: boolean
 ```zenscript
 IIngredientCondition.matches(stack as IItemStack) as boolean
 ```
+
 | Parameter | Type                                        | Beschreibung            |
 | --------- | ------------------------------------------- | ----------------------- |
 | stack     | [IItemStack](/vanilla/api/items/IItemStack) | No Description Provided |
+
 
 
