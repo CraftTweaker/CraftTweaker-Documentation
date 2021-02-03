@@ -27,6 +27,7 @@ MCLivingDeathEvent.getSource() as DamageSource
 event.getSource();
 ```
 
+
 ## Properties
 
 | Name  | Type                                           | Has Getter | Has Setter |
