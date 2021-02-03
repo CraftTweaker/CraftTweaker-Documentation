@@ -21,9 +21,11 @@ Return Type: string
 ```zenscript
 MCGame.localize(translationKey as string) as string
 ```
+
 | 参数             | 类型     | 描述                      |
 | -------------- | ------ | ----------------------- |
 | translationKey | string | No Description Provided |
+
 
 
 ## 参数
