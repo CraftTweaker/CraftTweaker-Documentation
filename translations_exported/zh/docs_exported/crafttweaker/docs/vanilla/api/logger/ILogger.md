@@ -22,9 +22,11 @@ Return Type: void
 ILogger.debug(message as string) as void
 logger.debug("message");
 ```
+
 | 参数      | 类型     | 描述                    |
 | ------- | ------ | --------------------- |
 | message | string | message to be logged. |
+
 
 ### error
 
@@ -36,9 +38,11 @@ Return Type: void
 ILogger.error(message as string) as void
 logger.error("message");
 ```
+
 | 参数      | 类型     | 描述                    |
 | ------- | ------ | --------------------- |
 | message | string | message to be logged. |
+
 
 ### info
 
@@ -50,9 +54,11 @@ Return Type: void
 ILogger.info(message as string) as void
 logger.info("message");
 ```
+
 | 参数      | 类型     | 描述                    |
 | ------- | ------ | --------------------- |
 | message | string | message to be logged. |
+
 
 ### trace
 
@@ -64,9 +70,11 @@ Return Type: void
 ILogger.trace(message as string) as void
 logger.trace("message");
 ```
+
 | 参数      | 类型     | 描述                   |
 | ------- | ------ | -------------------- |
 | message | string | message to be logged |
+
 
 ### warning
 
@@ -78,8 +86,10 @@ Return Type: void
 ILogger.warning(message as string) as void
 logger.warning("message");
 ```
+
 | 参数      | 类型     | 描述                    |
 | ------- | ------ | --------------------- |
 | message | string | message to be logged. |
+
 
 
