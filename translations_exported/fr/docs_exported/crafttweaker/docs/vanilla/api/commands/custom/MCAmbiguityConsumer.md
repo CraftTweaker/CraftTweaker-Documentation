@@ -17,11 +17,13 @@ Return Type: void
 ```zenscript
 MCAmbiguityConsumer.ambiguous(parent as MCCommandNode, child as MCCommandNode, sibling as MCCommandNode, inputs as Collection<string>) as void
 ```
+
 | Parameter  | Type                                                    | Description             |
 | ---------- | ------------------------------------------------------- | ----------------------- |
 | parent     | [Noeud MC:](/vanilla/api/commands/custom/MCCommandNode) | No Description Provided |
 | enfant     | [Noeud MC:](/vanilla/api/commands/custom/MCCommandNode) | No Description Provided |
 | fraternité | [Noeud MC:](/vanilla/api/commands/custom/MCCommandNode) | No Description Provided |
 | inputs     | Collection&lt;string&gt;                    | No Description Provided |
+
 
 
