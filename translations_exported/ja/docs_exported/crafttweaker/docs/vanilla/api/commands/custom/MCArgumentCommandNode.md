@@ -28,6 +28,7 @@ Return Type: [MCRequiredArgumentBuilder](/vanilla/api/commands/custom/MCRequired
 MCArgumentCommandNode.createBuilder() as MCRequiredArgumentBuilder
 myMCArgumentCommandNode.createBuilder();
 ```
+
 ### equals
 
 Return Type: boolean
@@ -35,9 +36,11 @@ Return Type: boolean
 ```zenscript
 MCArgumentCommandNode.equals(o as Object) as boolean
 ```
+
 | Parameter | Type   | Description             |
 | --------- | ------ | ----------------------- |
 | o         | Object | No Description Provided |
+
 
 ### getCustomSuggestions
 
@@ -47,6 +50,7 @@ Return Type: [MCSuggestionProvider](/vanilla/api/commands/custom/MCSuggestionPro
 MCArgumentCommandNode.getCustomSuggestions() as MCSuggestionProvider
 myMCArgumentCommandNode.getCustomSuggestions();
 ```
+
 ### hashCode
 
 Return Type: int
@@ -55,6 +59,7 @@ Return Type: int
 MCArgumentCommandNode.hashCode() as int
 myMCArgumentCommandNode.hashCode();
 ```
+
 ### toString
 
 Return Type: string
@@ -64,6 +69,7 @@ MCArgumentCommandNode.toString() as string
 myMCArgumentCommandNode.toString();
 ```
 
+
 ## 演算子
 
 ### EQUALS
@@ -71,6 +77,7 @@ myMCArgumentCommandNode.toString();
 ```zenscript
 myMCArgumentCommandNode == o as Object
 ```
+
 
 
 
