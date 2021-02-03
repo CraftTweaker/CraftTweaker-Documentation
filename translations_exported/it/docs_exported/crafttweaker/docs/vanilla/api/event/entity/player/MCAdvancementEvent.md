@@ -27,6 +27,7 @@ MCAdvancementEvent.getId() as MCResourceLocation
 event.getId();
 ```
 
+
 ## Properties
 
 | Name | Type                                                       | Ha Getter | Ha Setter |
