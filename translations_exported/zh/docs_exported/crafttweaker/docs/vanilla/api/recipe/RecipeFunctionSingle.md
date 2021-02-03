@@ -17,9 +17,11 @@ Return Type: [IItemStack](/vanilla/api/items/IItemStack)
 ```zenscript
 RecipeFunctionSingle.process(usualOut as IItemStack, inputs as IItemStack) as IItemStack
 ```
+
 | 参数       | 类型                                          | 描述                      |
 | -------- | ------------------------------------------- | ----------------------- |
 | usualOut | [IItemStack](/vanilla/api/items/IItemStack) | No Description Provided |
 | inputs   | [IItemStack](/vanilla/api/items/IItemStack) | No Description Provided |
+
 
 
