@@ -25,6 +25,7 @@ MCItemDefinition.getDefaultInstance() as IItemStack
 myMCItemDefinition.getDefaultInstance();
 ```
 
+
 ## Свойства
 
 | Название        | Тип                                         | Имеет Getter | Имеет Setter |
