@@ -23,6 +23,7 @@ MCItemPickupEvent.getStack() as IItemStack
 myMCItemPickupEvent.getStack();
 ```
 
+
 ## 参数
 
 | 名称    | 类型                                          | 可获得  | 可设置   |
