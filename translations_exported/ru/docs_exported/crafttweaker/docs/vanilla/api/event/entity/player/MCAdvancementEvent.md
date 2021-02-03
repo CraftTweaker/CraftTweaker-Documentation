@@ -27,6 +27,7 @@ MCAdvancementEvent.getId() as MCResourceLocation
 event.getId();
 ```
 
+
 ## Свойства
 
 | Название | Тип                                                                      | Имеет Getter | Имеет Setter |
