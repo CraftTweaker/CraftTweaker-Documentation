@@ -26,9 +26,11 @@ Return Type: void
 ICollectionData.add(value as IData) as void
 new ListData(["Hello", "World"]).add("today");
 ```
+
 | Parameter | Type                             | Description                  |
 | --------- | -------------------------------- | ---------------------------- |
 | value     | [IData](/vanilla/api/data/IData) | The value to add to the list |
+
 
 
 
@@ -38,10 +40,12 @@ Return Type: void
 ICollectionData.add(index as int, value as IData) as void
 new ListData(["Hello", "World"]).add(1, "beautiful");
 ```
+
 | Parameter | Type                             | Description                                                          |
 | --------- | -------------------------------- | -------------------------------------------------------------------- |
 | index     | int                              | The index to add to. Subsequent items will be moved one index higher |
 | value     | [IData](/vanilla/api/data/IData) | The value to add to the list                                         |
+
 
 ### clear
 
@@ -53,6 +57,7 @@ Return Type: void
 ICollectionData.clear() as void
 new ListData(["Hello", "World"]).clear();
 ```
+
 ### getAt
 
 Retrieves the [IData](/vanilla/api/data/IData) stored at the given index.
@@ -63,9 +68,11 @@ Return Type: [IData](/vanilla/api/data/IData)
 ICollectionData.getAt(index as int) as IData
 new ListData(["Hello", "World"]).getAt(0);
 ```
+
 | Parameter | Type | Description         |
 | --------- | ---- | ------------------- |
 | index     | int  | The index (0-based) |
+
 
 ### remove
 
@@ -77,9 +84,11 @@ Return Type: [IData](/vanilla/api/data/IData)
 ICollectionData.remove(index as int) as IData
 new ListData(["Hello", "World"]).remove(0);
 ```
+
 | Parameter | Type | Description         |
 | --------- | ---- | ------------------- |
 | index     | int  | The index (0-based) |
+
 
 ### setAt
 
@@ -91,10 +100,12 @@ Return Type: [IData](/vanilla/api/data/IData)
 ICollectionData.setAt(index as int, value as IData) as IData
 new ListData(["Hello", "World"]).setAt(0, "Bye");
 ```
+
 | Parameter | Type                             | Description                |
 | --------- | -------------------------------- | -------------------------- |
 | index     | int                              | The index to set (0-based) |
 | value     | [IData](/vanilla/api/data/IData) | The new Value              |
+
 
 
 ## Properties
