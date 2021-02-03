@@ -28,6 +28,7 @@ Return Type: [MCArgumentCommandNode](/vanilla/api/commands/custom/MCArgumentComm
 MCRequiredArgumentBuilder.build() as MCArgumentCommandNode
 myMCRequiredArgumentBuilder.build();
 ```
+
 ### equals #等于
 
 Return Type: boolean
@@ -35,9 +36,11 @@ Return Type: boolean
 ```zenscript
 MCRequiredArgumentBuilder.equals(o as Object) as boolean
 ```
+
 | 参数 | 类型     | 描述                      |
 | -- | ------ | ----------------------- |
 | o  | Object | No Description Provided |
+
 
 ### 执行
 
@@ -46,9 +49,11 @@ Return Type: [MCRequiredArgumentBuilder](/vanilla/api/commands/custom/MCRequired
 ```zenscript
 MCRequiredArgumentBuilder.executes(command as MCCommand) as MCRequiredArgumentBuilder
 ```
+
 | 参数      | 类型                                             | 描述                      |
 | ------- | ---------------------------------------------- | ----------------------- |
 | command | [MC命令](/vanilla/api/commands/custom/MCCommand) | No Description Provided |
+
 
 ### fork
 
@@ -57,10 +62,12 @@ Return Type: [MCRequiredArgumentBuilder](/vanilla/api/commands/custom/MCRequired
 ```zenscript
 MCRequiredArgumentBuilder.fork(target as MCCommandNode, modifier as MCRedirectModifier) as MCRequiredArgumentBuilder
 ```
+
 | 参数       | 类型                                                          | 描述                      |
 | -------- | ----------------------------------------------------------- | ----------------------- |
 | target   | [MCCommand节点](/vanilla/api/commands/custom/MCCommandNode)   | No Description Provided |
 | modifier | [MC重定向修改器](/vanilla/api/commands/custom/MCRedirectModifier) | No Description Provided |
+
 
 ### 向前
 
@@ -69,11 +76,13 @@ Return Type: [MCRequiredArgumentBuilder](/vanilla/api/commands/custom/MCRequired
 ```zenscript
 MCRequiredArgumentBuilder.forward(target as MCCommandNode, modifier as MCRedirectModifier, fork as boolean) as MCRequiredArgumentBuilder
 ```
+
 | 参数       | 类型                                                          | 描述                      |
 | -------- | ----------------------------------------------------------- | ----------------------- |
 | target   | [MCCommand节点](/vanilla/api/commands/custom/MCCommandNode)   | No Description Provided |
 | modifier | [MC重定向修改器](/vanilla/api/commands/custom/MCRedirectModifier) | No Description Provided |
 | fork     | boolean                                                     | No Description Provided |
+
 
 ### 获取参数
 
@@ -83,6 +92,7 @@ Return Type: Collection&lt;[MCCommandNode](/vanilla/api/commands/custom/MCComman
 MCRequiredArgumentBuilder.getArguments() as Collection<MCCommandNode>
 myMCRequiredArgumentBuilder.getArguments();
 ```
+
 ### getName
 
 Return Type: string
@@ -91,6 +101,7 @@ Return Type: string
 MCRequiredArgumentBuilder.getName() as string
 myMCRequiredArgumentBuilder.getName();
 ```
+
 ### getRequirement
 
 Return Type: Predicate&lt;[MCCommandSource](/vanilla/api/commands/custom/MCCommandSource)&gt;
@@ -99,6 +110,7 @@ Return Type: Predicate&lt;[MCCommandSource](/vanilla/api/commands/custom/MCComma
 MCRequiredArgumentBuilder.getRequirement() as Predicate<MCCommandSource>
 myMCRequiredArgumentBuilder.getRequirement();
 ```
+
 ### getSuggestionsProvider
 
 Return Type: [MCSuggestionProvider](/vanilla/api/commands/custom/MCSuggestionProvider)
@@ -107,6 +119,7 @@ Return Type: [MCSuggestionProvider](/vanilla/api/commands/custom/MCSuggestionPro
 MCRequiredArgumentBuilder.getSuggestionsProvider() as MCSuggestionProvider
 myMCRequiredArgumentBuilder.getSuggestionsProvider();
 ```
+
 ### hashCode
 
 Return Type: int
@@ -115,6 +128,7 @@ Return Type: int
 MCRequiredArgumentBuilder.hashCode() as int
 myMCRequiredArgumentBuilder.hashCode();
 ```
+
 ### 重定向
 
 Return Type: [MCRequiredArgumentBuilder](/vanilla/api/commands/custom/MCRequiredArgumentBuilder)
@@ -122,19 +136,23 @@ Return Type: [MCRequiredArgumentBuilder](/vanilla/api/commands/custom/MCRequired
 ```zenscript
 MCRequiredArgumentBuilder.redirect(target as MCCommandNode) as MCRequiredArgumentBuilder
 ```
+
 | 参数     | 类型                                                        | 描述                      |
 | ------ | --------------------------------------------------------- | ----------------------- |
 | target | [MCCommand节点](/vanilla/api/commands/custom/MCCommandNode) | No Description Provided |
+
 
 Return Type: [MCRequiredArgumentBuilder](/vanilla/api/commands/custom/MCRequiredArgumentBuilder)
 
 ```zenscript
 MCRequiredArgumentBuilder.redirect(target as MCCommandNode, modifier as MCSingleRedirectModifier) as MCRequiredArgumentBuilder
 ```
+
 | 参数       | 类型                                                                              | 描述                      |
 | -------- | ------------------------------------------------------------------------------- | ----------------------- |
 | target   | [MCCommand节点](/vanilla/api/commands/custom/MCCommandNode)                       | No Description Provided |
 | modifier | [MCSingleRirectModifier](/vanilla/api/commands/custom/MCSingleRedirectModifier) | No Description Provided |
+
 
 ### 要求
 
@@ -143,9 +161,11 @@ Return Type: [MCRequiredArgumentBuilder](/vanilla/api/commands/custom/MCRequired
 ```zenscript
 MCRequiredArgumentBuilder.requires(requirement as Predicate<MCCommandSource>) as MCRequiredArgumentBuilder
 ```
+
 | 参数 | 类型                                                                                           | 描述                      |
 | -- | -------------------------------------------------------------------------------------------- | ----------------------- |
 | 要求 | Predicate&lt;[MCCommandSource](/vanilla/api/commands/custom/MCCommandSource)&gt; | No Description Provided |
+
 
 ### suggests
 
@@ -154,9 +174,11 @@ Return Type: [MCRequiredArgumentBuilder](/vanilla/api/commands/custom/MCRequired
 ```zenscript
 MCRequiredArgumentBuilder.suggests(provider as MCSuggestionProvider) as MCRequiredArgumentBuilder
 ```
+
 | 参数       | 类型                                                                        | 描述                      |
 | -------- | ------------------------------------------------------------------------- | ----------------------- |
 | provider | [MCSuggestionProvider](/vanilla/api/commands/custom/MCSuggestionProvider) | No Description Provided |
+
 
 ### 然后，
 
@@ -165,18 +187,22 @@ Return Type: [MCRequiredArgumentBuilder](/vanilla/api/commands/custom/MCRequired
 ```zenscript
 MCRequiredArgumentBuilder.then(argument as MCCommandNode) as MCRequiredArgumentBuilder
 ```
+
 | 参数 | 类型                                                        | 描述                      |
 | -- | --------------------------------------------------------- | ----------------------- |
 | 参数 | [MCCommand节点](/vanilla/api/commands/custom/MCCommandNode) | No Description Provided |
+
 
 Return Type: [MCRequiredArgumentBuilder](/vanilla/api/commands/custom/MCRequiredArgumentBuilder)
 
 ```zenscript
 MCRequiredArgumentBuilder.then(argument as MCRequiredArgumentBuilder) as MCRequiredArgumentBuilder
 ```
+
 | 参数 | 类型                                                                                   | 描述                      |
 | -- | ------------------------------------------------------------------------------------ | ----------------------- |
 | 参数 | [MCRequireedArgumentBuilder](/vanilla/api/commands/custom/MCRequiredArgumentBuilder) | No Description Provided |
+
 
 ### toString
 
@@ -187,6 +213,7 @@ MCRequiredArgumentBuilder.toString() as string
 myMCRequiredArgumentBuilder.toString();
 ```
 
+
 ## 运算符
 
 ### EQUALS
@@ -194,6 +221,7 @@ myMCRequiredArgumentBuilder.toString();
 ```zenscript
 myMCRequiredArgumentBuilder == o as Object
 ```
+
 
 
 
