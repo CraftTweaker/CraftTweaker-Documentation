@@ -27,6 +27,7 @@ MCPlayerRespawnEvent.isEndConquered() as boolean
 myMCPlayerRespawnEvent.isEndConquered();
 ```
 
+
 ## Properties
 
 | 이름           | Type    | Has Getter | Has Setter |
