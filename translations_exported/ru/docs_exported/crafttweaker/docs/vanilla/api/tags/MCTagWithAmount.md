@@ -22,6 +22,7 @@ Return Type: int
 MCTagWithAmount.getAmount() as int
 myMCTagWithAmount.getAmount();
 ```
+
 ### getTag
 
 Return Type: [MCTag](/vanilla/api/tags/MCTag)&lt;T&gt;
@@ -30,6 +31,7 @@ Return Type: [MCTag](/vanilla/api/tags/MCTag)&lt;T&gt;
 MCTagWithAmount.getTag() as MCTag<T>
 myMCTagWithAmount.getTag();
 ```
+
 ### setAmount
 
 Return Type: [MCTagWithAmount](/vanilla/api/tags/MCTagWithAmount)&lt;T&gt;
@@ -37,9 +39,11 @@ Return Type: [MCTagWithAmount](/vanilla/api/tags/MCTagWithAmount)&lt;T&gt;
 ```zenscript
 MCTagWithAmount.setAmount(amount as int) as MCTagWithAmount<T>
 ```
+
 | Параметр | Тип | Description             |
 | -------- | --- | ----------------------- |
 | amount   | int | No Description Provided |
+
 
 
 ## Свойства
