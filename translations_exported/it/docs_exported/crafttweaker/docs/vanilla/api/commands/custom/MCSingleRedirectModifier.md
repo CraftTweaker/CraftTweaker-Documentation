@@ -14,9 +14,11 @@ No Description Provided
 ```zenscript
 new MCSingleRedirectModifier(fun as Function<MCCommandContext,MCCommandSource>) as MCSingleRedirectModifier
 ```
+
 | Parameter  | Type                                                                                                                                                          | Description             |
 | ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------- |
 | divertente | Function&lt;[MCCommandContext](/vanilla/api/commands/custom/MCCommandContext),[MCCommandSource](/vanilla/api/commands/custom/MCCommandSource)&gt; | No Description Provided |
+
 
 
 ## Caster
@@ -34,9 +36,11 @@ Return Type: [MCCommandSource](/vanilla/api/commands/custom/MCCommandSource)
 ```zenscript
 MCSingleRedirectModifier.apply(context as MCCommandContext) as MCCommandSource
 ```
+
 | Parameter | Type                                                              | Description             |
 | --------- | ----------------------------------------------------------------- | ----------------------- |
 | contesto  | [MCCommandContext](/vanilla/api/commands/custom/MCCommandContext) | No Description Provided |
+
 
 ### equals
 
@@ -45,9 +49,11 @@ Return Type: boolean
 ```zenscript
 MCSingleRedirectModifier.equals(o as Object) as boolean
 ```
+
 | Parameter | Type   | Description             |
 | --------- | ------ | ----------------------- |
 | o         | Object | No Description Provided |
+
 
 ### hashCode
 
@@ -57,6 +63,7 @@ Return Type: int
 MCSingleRedirectModifier.hashCode() as int
 myMCSingleRedirectModifier.hashCode();
 ```
+
 ### toString
 
 Return Type: string
@@ -66,6 +73,7 @@ MCSingleRedirectModifier.toString() as string
 myMCSingleRedirectModifier.toString();
 ```
 
+
 ## Operators
 
 ### EQUALS
@@ -73,6 +81,7 @@ myMCSingleRedirectModifier.toString();
 ```zenscript
 myMCSingleRedirectModifier == o come oggetto
 ```
+
 
 
 
