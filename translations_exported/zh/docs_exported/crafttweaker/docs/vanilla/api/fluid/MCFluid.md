@@ -20,9 +20,11 @@ Return Type: [IFluidStack](/vanilla/api/fluid/IFluidStack)
 MCFluid.makeStack(amount as int) as IFluidStack
 myMCFluid.makeStack(1000);
 ```
+
 | 参数     | 类型  | 描述                      |
 | ------ | --- | ----------------------- |
 | amount | int | No Description Provided |
+
 
 
 ## 参数
