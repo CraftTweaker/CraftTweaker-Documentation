@@ -22,9 +22,11 @@ Return Type: [ModInfo](/vanilla/api/mods/ModInfo)
 Mods.getMod(modid as string) as ModInfo
 loadedMods.getMod("minecraft");
 ```
+
 | 参数    | 类型     | 描述                      |
 | ----- | ------ | ----------------------- |
 | modid | string | No Description Provided |
+
 
 ### isModLoaded
 
@@ -36,9 +38,11 @@ Return Type: boolean
 Mods.isModLoaded(modid as string) as boolean
 loadedMods.isModLoaded("minecraft");
 ```
+
 | 参数    | 类型     | 描述    |
 | ----- | ------ | ----- |
 | modid | string | 摩托车检查 |
+
 
 
 ## 参数
