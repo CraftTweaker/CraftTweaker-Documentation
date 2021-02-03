@@ -26,6 +26,7 @@ Return Type: [BlockPos](/vanilla/api/util/BlockPos)
 MCPlayerInteractEvent.getBlockPos() as BlockPos
 myMCPlayerInteractEvent.getBlockPos();
 ```
+
 ### getFace
 
 The face involved in this interaction. For all non-block interactions, this will return null
@@ -36,6 +37,7 @@ Return Type: [Direction](/vanilla/api/util/Direction)
 MCPlayerInteractEvent.getFace() as Direction
 myMCPlayerInteractEvent.getFace();
 ```
+
 ### getItemStack
 
 The stack involved in this interaction. May be empty, but will never be null.
@@ -46,6 +48,7 @@ Return Type: [IItemStack](/vanilla/api/items/IItemStack)
 MCPlayerInteractEvent.getItemStack() as IItemStack
 myMCPlayerInteractEvent.getItemStack();
 ```
+
 
 ## Свойства
 
