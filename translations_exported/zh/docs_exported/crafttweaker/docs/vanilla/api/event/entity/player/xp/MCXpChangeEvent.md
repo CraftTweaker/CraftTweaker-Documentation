@@ -22,6 +22,7 @@ Return Type: int
 MCXpChangeEvent.getXp() as int
 event.getXp();
 ```
+
 ### setXp
 
 Sets the amount of xp to change the player's xp counter by.
@@ -31,9 +32,11 @@ Return Type: void
 ```zenscript
 MCXpChangeEvent.setXp(amount as int) as void
 ```
+
 | 参数     | 类型  | 描述                      |
 | ------ | --- | ----------------------- |
 | amount | int | No Description Provided |
+
 
 
 ## 参数
