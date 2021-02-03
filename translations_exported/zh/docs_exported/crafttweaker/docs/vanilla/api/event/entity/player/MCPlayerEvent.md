@@ -23,6 +23,7 @@ MCPlayerEvent.getPlayer() as MCPlayerEntity
 myMCPlayerEvent.getPlayer();
 ```
 
+
 ## 参数
 
 | 名称     | 类型                                                           | 可获得  | 可设置   |
