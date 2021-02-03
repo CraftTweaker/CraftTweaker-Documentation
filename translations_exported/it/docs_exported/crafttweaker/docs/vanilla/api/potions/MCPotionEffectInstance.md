@@ -21,9 +21,11 @@ Return Type: void
 ```zenscript
 MCPotionEffectInstance.addCurativeItem(stack as IItemStack) as void
 ```
+
 | Parameter | Type                                        | Description             |
 | --------- | ------------------------------------------- | ----------------------- |
 | stack     | [IItemStack](/vanilla/api/items/IItemStack) | No Description Provided |
+
 
 ### combine
 
@@ -32,9 +34,11 @@ Return Type: boolean
 ```zenscript
 MCPotionEffectInstance.combine(effect as MCPotionEffectInstance) as boolean
 ```
+
 | Parameter | Type                                                                  | Description             |
 | --------- | --------------------------------------------------------------------- | ----------------------- |
 | effect    | [MCPotionEffectInstance](/vanilla/api/potions/MCPotionEffectInstance) | No Description Provided |
+
 
 ### getCurativeItems
 
@@ -44,6 +48,7 @@ Return Type: stdlib.List&lt;[IItemStack](/vanilla/api/items/IItemStack)&gt;
 MCPotionEffectInstance.getCurativeItems() as stdlib.List<IItemStack>
 myMCPotionEffectInstance.getCurativeItems();
 ```
+
 ### isCurativeItem
 
 Return Type: boolean
@@ -51,9 +56,11 @@ Return Type: boolean
 ```zenscript
 MCPotionEffectInstance.isCurativeItem(stack as IItemStack) as boolean
 ```
+
 | Parameter | Type                                        | Description             |
 | --------- | ------------------------------------------- | ----------------------- |
 | stack     | [IItemStack](/vanilla/api/items/IItemStack) | No Description Provided |
+
 
 ### setCurativeItems
 
@@ -62,9 +69,11 @@ Return Type: void
 ```zenscript
 MCPotionEffectInstance.setCurativeItems(items as IItemStack[]) as void
 ```
+
 | Parameter | Type                                          | Description             |
 | --------- | --------------------------------------------- | ----------------------- |
 | items     | [IItemStack](/vanilla/api/items/IItemStack)[] | No Description Provided |
+
 
 
 ## Properties
