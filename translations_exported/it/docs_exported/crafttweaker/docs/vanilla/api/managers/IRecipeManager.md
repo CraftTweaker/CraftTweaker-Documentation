@@ -26,10 +26,12 @@ Return Type: void
 IRecipeManager.addJSONRecipe(name as string, data as IData) as void
 craftingTable.addJSONRecipe("recipe_name", {ingredient:{item:<item:minecraft:gold_ore>.registryName},result:<item:minecraft:cooked_porkchop>.registryName,experience:0.35 as float, cookingtime:100});
 ```
+
 | Parameter | Type                             | Description                     |
 | --------- | -------------------------------- | ------------------------------- |
 | name      | string                           | name of the recipe              |
 | data      | [IData](/vanilla/api/data/IData) | data representing the json file |
+
 
 ### getAllRecipes
 
@@ -39,6 +41,7 @@ Return Type: stdlib.List&lt;[WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)&g
 IRecipeManager.getAllRecipes() as stdlib.List<WrapperRecipe>
 craftingTable.getAllRecipes();
 ```
+
 ### getRecipeByName
 
 Return Type: [WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)
@@ -46,9 +49,11 @@ Return Type: [WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)
 ```zenscript
 IRecipeManager.getRecipeByName(name as string) as WrapperRecipe
 ```
+
 | Parameter | Type   | Description             |
 | --------- | ------ | ----------------------- |
 | name      | string | No Description Provided |
+
 
 ### getRecipesByOutput
 
@@ -57,9 +62,11 @@ Return Type: stdlib.List&lt;[WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)&g
 ```zenscript
 IRecipeManager.getRecipesByOutput(output as IIngredient) as stdlib.List<WrapperRecipe>
 ```
+
 | Parameter | Type                                          | Description             |
 | --------- | --------------------------------------------- | ----------------------- |
 | output    | [IIngredient](/vanilla/api/items/IIngredient) | No Description Provided |
+
 
 ### removeAll
 
@@ -71,6 +78,7 @@ Return Type: void
 IRecipeManager.removeAll() as void
 craftingTable.removeAll();
 ```
+
 ### removeByModid
 
 Remove recipe based on Registry name modid
@@ -81,9 +89,11 @@ Return Type: void
 IRecipeManager.removeByModid(modid as string) as void
 craftingTable.removeByModid("minecraft");
 ```
+
 | Parameter | Type   | Description                    |
 | --------- | ------ | ------------------------------ |
 | modid     | string | modid of the recipes to remove |
+
 
 Remove recipe based on Registry name modid with an added exclusion check, so you can remove the whole mod besides a few specified.
 
@@ -93,10 +103,12 @@ Return Type: void
 IRecipeManager.removeByModid(modid as string, exclude as RecipeFilter) as void
 craftingTable.removeByModid("minecraft", (name as string) => {return name == "orange_wool";});
 ```
+
 | Parameter | Type                                             | Description                           |
 | --------- | ------------------------------------------------ | ------------------------------------- |
 | modid     | string                                           | modid of the recipes to remove        |
 | esclude   | [RecipeFilter](/vanilla/api/recipe/RecipeFilter) | ricette da evitare di essere rimosse. |
+
 
 ### removeByName
 
@@ -108,9 +120,11 @@ Return Type: void
 IRecipeManager.removeByName(name as string) as void
 craftingTable.removeByName("minecraft:furnace");
 ```
+
 | Parameter | Type   | Description                       |
 | --------- | ------ | --------------------------------- |
 | name      | string | registry name of recipe to remove |
+
 
 ### removeByRegex
 
@@ -122,9 +136,11 @@ Return Type: void
 IRecipeManager.removeByRegex(regex as string) as void
 craftingTable.removeByRegex("\\d_\\d");
 ```
+
 | Parameter | Type   | Description            |
 | --------- | ------ | ---------------------- |
 | regex     | string | regex to match against |
+
 
 ### removeRecipe
 
@@ -136,8 +152,10 @@ Return Type: void
 IRecipeManager.removeRecipe(output as IItemStack) as void
 craftingTable.removeRecipe(<item:minecraft:glass>);
 ```
+
 | Parameter | Type                                        | Description          |
 | --------- | ------------------------------------------- | -------------------- |
 | output    | [IItemStack](/vanilla/api/items/IItemStack) | output of the recipe |
+
 
 
