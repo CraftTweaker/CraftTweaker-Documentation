@@ -31,6 +31,7 @@ Return Type: [Direction](/vanilla/api/util/Direction)
 Direction.rotateY() as Direction
 <direction:north>.rotateY();
 ```
+
 ### rotateYCCW
 
 Rotates this direction counter-clock wise on the Y axis
@@ -41,6 +42,7 @@ Return Type: [Direction](/vanilla/api/util/Direction)
 Direction.rotateYCCW() as Direction
 <direction:north>.rotateYCCW();
 ```
+
 
 ## Свойства
 
