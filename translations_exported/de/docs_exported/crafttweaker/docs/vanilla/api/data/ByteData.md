@@ -20,8 +20,10 @@ No Description Provided
 ```zenscript
 new ByteData(internal as byte) as ByteData
 ```
+
 | Parameter | Type | Beschreibung            |
 | --------- | ---- | ----------------------- |
 | internal  | byte | No Description Provided |
+
 
 
