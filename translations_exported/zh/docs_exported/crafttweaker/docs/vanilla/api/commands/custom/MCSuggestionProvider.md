@@ -14,9 +14,11 @@ No Description Provided
 ```zenscript
 new MCSuggestionProvider(fun as BiFunction<MCCommandContext,MCSuggestionsBuilder,MCSuggestions>) as MCSuggestionProvider
 ```
+
 | 参数  | 类型                                                                                                                                                                                                                                    | 描述                      |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------- |
 | 有趣的 | BiFunction&lt;[MCCommandContext](/vanilla/api/commands/custom/MCCommandContext),[MCSuggestionsBuilder](/vanilla/api/commands/custom/MCSuggestionsBuilder),[MCSuggestions](/vanilla/api/commands/custom/MCSuggestions)&gt; | No Description Provided |
+
 
 
 ## Casters
@@ -34,9 +36,11 @@ Return Type: boolean
 ```zenscript
 MCSuggestionProvider.equals(o as Object) as boolean
 ```
+
 | 参数 | 类型     | 描述                      |
 | -- | ------ | ----------------------- |
 | o  | Object | No Description Provided |
+
 
 ### 获取建议
 
@@ -45,10 +49,12 @@ Return Type: [MCSuggestions](/vanilla/api/commands/custom/MCSuggestions)
 ```zenscript
 MCSuggestionProvider.getSuggestions(context as MCCommandContext, builder as MCSuggestionsBuilder) as MCSuggestions
 ```
+
 | 参数   | 类型                                                                        | 描述                      |
 | ---- | ------------------------------------------------------------------------- | ----------------------- |
 | 上下文： | [MCCommandContext](/vanilla/api/commands/custom/MCCommandContext)         | No Description Provided |
 | 生成器  | [MCSuggestionsBuilder](/vanilla/api/commands/custom/MCSuggestionsBuilder) | No Description Provided |
+
 
 ### hashCode
 
@@ -58,6 +64,7 @@ Return Type: int
 MCSuggestionProvider.hashCode() as int
 myMCSuggestionProvider.hashCode();
 ```
+
 ### toString
 
 Return Type: string
@@ -67,6 +74,7 @@ MCSuggestionProvider.toString() as string
 myMCSuggestionProvider.toString();
 ```
 
+
 ## 运算符
 
 ### EQUALS
@@ -74,6 +82,7 @@ myMCSuggestionProvider.toString();
 ```zenscript
 myMCSuggestionProvider == o 为对象
 ```
+
 
 
 
