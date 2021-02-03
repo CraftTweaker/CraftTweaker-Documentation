@@ -20,9 +20,11 @@ No Description Provided
 ```zenscript
 new StringData(internal as string) as StringData
 ```
+
 | 参数       | 类型     | 描述                      |
 | -------- | ------ | ----------------------- |
 | internal | string | No Description Provided |
+
 
 
 ## 运算符
@@ -35,6 +37,7 @@ new StringData(internal as string) as StringData
 myStringData + data as StringData
 new StringData("Hello") + new StringData("World")
 ```
+
 
 
 
