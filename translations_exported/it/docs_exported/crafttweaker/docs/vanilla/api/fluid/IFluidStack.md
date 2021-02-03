@@ -29,9 +29,11 @@ Return Type: boolean
 ```zenscript
 IFluidStack.containsOther(other as IFluidStack) as boolean
 ```
+
 | Parameter | Type                                          | Description                          |
 | --------- | --------------------------------------------- | ------------------------------------ |
 | other     | [IFluidStack](/vanilla/api/fluid/IFluidStack) | other IFluidStack to compare against |
+
 
 ### copy
 
@@ -43,6 +45,7 @@ Return Type: [IFluidStack](/vanilla/api/fluid/IFluidStack)
 IFluidStack.copy() as IFluidStack
 myIFluidStack.copy();
 ```
+
 ### mutabile
 
 Makes this stack mutable
@@ -53,6 +56,7 @@ Return Type: [IFluidStack](/vanilla/api/fluid/IFluidStack)
 IFluidStack.mutable() as IFluidStack
 myIFluidStack.mutable();
 ```
+
 ### setAmount
 
 Sets the fluid amount in MilliBuckets (mB)
@@ -63,9 +67,11 @@ Return Type: [IFluidStack](/vanilla/api/fluid/IFluidStack)
 IFluidStack.setAmount(amount as int) as IFluidStack
 myIFluidStack.setAmount(1000);
 ```
+
 | Parameter | Type | Description                       |
 | --------- | ---- | --------------------------------- |
 | amount    | int  | The amount to multiply this stack |
+
 
 
 ## Operators
@@ -79,6 +85,7 @@ other as IFluidStack in myIFluidStack
 ```
 
 
+
 ### MUL
 
 Sets the fluid amount in MilliBuckets (MB)
@@ -87,6 +94,7 @@ Sets the fluid amount in MilliBuckets (MB)
 myIFluidStack * amount as int
 myIFluidStack * 1000
 ```
+
 
 
 
