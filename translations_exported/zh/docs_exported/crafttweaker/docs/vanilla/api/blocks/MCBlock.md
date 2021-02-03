@@ -24,6 +24,7 @@ Return Type: boolean
 MCBlock.canSpawnInBlock() as boolean
 myMCBlock.canSpawnInBlock();
 ```
+
 ### getDefaultState #获取默认状态
 
 Return Type: [MCBlockState](/vanilla/api/blocks/MCBlockState)
@@ -32,6 +33,7 @@ Return Type: [MCBlockState](/vanilla/api/blocks/MCBlockState)
 MCBlock.getDefaultState() as MCBlockState
 myMCBlock.getDefaultState();
 ```
+
 
 ## 参数
 
