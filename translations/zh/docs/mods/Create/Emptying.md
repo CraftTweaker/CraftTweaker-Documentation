@@ -16,7 +16,7 @@ The following script will add a recipe that will output a Diamond and Lava (flui
 <recipetype:create:emptying>.addRecipe("emptying_test", <item:minecraft:diamond>, <fluid:minecraft:lava>, <item:minecraft:dirt>);
 ```
 
-#### Remove Recipes
+#### Remove Recipes for Items
 
 The follow script will remove all Emptying recipes that output a Bucket.
 
@@ -26,5 +26,12 @@ The follow script will remove all Emptying recipes that output a Bucket.
 <recipetype:create:emptying>.removeRecipe(<item:minecraft:bucket>);
 ```
 
+#### Remove Recipes for Fluids
 
+The follow script will remove all Compacting recipes that output Honey (Fluid)
 
+```zenscript
+// <recipetype:create:emptying>.removeRecipe(IFluidStack output)
+
+<recipetype:create:emptying>.removeRecipe(<fluid:create:honey>);
+```
