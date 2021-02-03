@@ -42,7 +42,7 @@ The following script will add recipes that will output Water (fluid) when Paper,
 <recipetype:create:compacting>.addRecipe("compacting_test_4", "superheated", <fluid:minecraft:water>, [<item:minecraft:paper>, <item:minecraft:stick>], [<fluid:minecraft:lava>], 500);
 ```
 
-#### Remove Recipes
+#### Remove Recipes for Items
 
 The follow script will remove all Compacting recipes that output a Bar Of Chocolate.
 
@@ -50,4 +50,15 @@ The follow script will remove all Compacting recipes that output a Bar Of Chocol
 // <recipetype:create:compacting>.removeRecipe(IItemStack output)
 
 <recipetype:create:compacting>.removeRecipe(<item:create:bar_of_chocolate>);
+```
+
+
+#### Remove Recipes for Fluids
+
+The follow script will remove all Compacting recipes that output Water (Fluid)
+
+```zenscript
+// <recipetype:create:compacting>.removeRecipe(IFluidStack output)
+
+<recipetype:create:compacting>.removeRecipe(<fluid:minecraft:water>);
 ```
