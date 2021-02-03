@@ -25,6 +25,7 @@ MCItemDefinition.getDefaultInstance() as IItemStack
 myMCItemDefinition.getDefaultInstance();
 ```
 
+
 ## 参数
 
 | 名称              | 类型                                          | 可获得  | 可设置   |
