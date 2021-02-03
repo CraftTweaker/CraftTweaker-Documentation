@@ -23,9 +23,11 @@ Return Type: boolean
 ```zenscript
 MCParsedCommandNode.equals(o as Object) as boolean
 ```
+
 | Parameter | Type   | Description             |
 | --------- | ------ | ----------------------- |
 | o         | Object | No Description Provided |
+
 
 ### getNode
 
@@ -35,6 +37,7 @@ Return Type: [MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)
 MCParsedCommandNode.getNode() as MCCommandNode
 myMCParsedCommandNode.getNode();
 ```
+
 ### Zakres getRange
 
 Return Type: [MCStringRange](/vanilla/api/commands/custom/MCStringRange)
@@ -43,6 +46,7 @@ Return Type: [MCStringRange](/vanilla/api/commands/custom/MCStringRange)
 MCParsedCommandNode.getRange() as MCStringRange
 myMCParsedCommandNode.getRange();
 ```
+
 ### hashCode
 
 Return Type: int
@@ -51,6 +55,7 @@ Return Type: int
 MCParsedCommandNode.hashCode() as int
 myMCParsedCommandNode.hashCode();
 ```
+
 ### toString
 
 Return Type: string
@@ -60,6 +65,7 @@ MCParsedCommandNode.toString() as string
 myMCParsedCommandNode.toString();
 ```
 
+
 ## Operators
 
 ### EQUALS
@@ -67,6 +73,7 @@ myMCParsedCommandNode.toString();
 ```zenscript
 myMCParsedCommandNode == o jako obiekt
 ```
+
 
 
 
