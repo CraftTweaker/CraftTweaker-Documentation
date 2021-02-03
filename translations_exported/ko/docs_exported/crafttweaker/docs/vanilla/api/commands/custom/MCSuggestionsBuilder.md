@@ -23,9 +23,11 @@ Return Type: [MCSuggestionsBuilder](/vanilla/api/commands/custom/MCSuggestionsBu
 ```zenscript
 MCSuggestionsBuilder.add(other as MCSuggestionsBuilder) as MCSuggestionsBuilder
 ```
+
 | Parameter | Type                                                                      | Description             |
 | --------- | ------------------------------------------------------------------------- | ----------------------- |
 | other     | [MCSuggestionsBuilder](/vanilla/api/commands/custom/MCSuggestionsBuilder) | No Description Provided |
+
 
 ### build
 
@@ -35,6 +37,7 @@ Return Type: [MCSuggestions](/vanilla/api/commands/custom/MCSuggestions)
 MCSuggestionsBuilder.build() as MCSuggestions
 myMCSuggestionsBuilder.build();
 ```
+
 ### createOffset
 
 Return Type: [MCSuggestionsBuilder](/vanilla/api/commands/custom/MCSuggestionsBuilder)
@@ -42,9 +45,11 @@ Return Type: [MCSuggestionsBuilder](/vanilla/api/commands/custom/MCSuggestionsBu
 ```zenscript
 MCSuggestionsBuilder.createOffset(start as int) as MCSuggestionsBuilder
 ```
+
 | Parameter | Type | Description             |
 | --------- | ---- | ----------------------- |
 | start     | int  | No Description Provided |
+
 
 ### equals
 
@@ -53,9 +58,11 @@ Return Type: boolean
 ```zenscript
 MCSuggestionsBuilder.equals(o as Object) as boolean
 ```
+
 | Parameter | Type   | Description             |
 | --------- | ------ | ----------------------- |
 | o         | Object | No Description Provided |
+
 
 ### getInput
 
@@ -65,6 +72,7 @@ Return Type: string
 MCSuggestionsBuilder.getInput() as string
 myMCSuggestionsBuilder.getInput();
 ```
+
 ### getRemaining
 
 Return Type: string
@@ -73,6 +81,7 @@ Return Type: string
 MCSuggestionsBuilder.getRemaining() as string
 myMCSuggestionsBuilder.getRemaining();
 ```
+
 ### getStart
 
 Return Type: int
@@ -81,6 +90,7 @@ Return Type: int
 MCSuggestionsBuilder.getStart() as int
 myMCSuggestionsBuilder.getStart();
 ```
+
 ### hashCode
 
 Return Type: int
@@ -89,6 +99,7 @@ Return Type: int
 MCSuggestionsBuilder.hashCode() as int
 myMCSuggestionsBuilder.hashCode();
 ```
+
 ### restart
 
 Return Type: [MCSuggestionsBuilder](/vanilla/api/commands/custom/MCSuggestionsBuilder)
@@ -97,6 +108,7 @@ Return Type: [MCSuggestionsBuilder](/vanilla/api/commands/custom/MCSuggestionsBu
 MCSuggestionsBuilder.restart() as MCSuggestionsBuilder
 myMCSuggestionsBuilder.restart();
 ```
+
 ### suggest
 
 Return Type: [MCSuggestionsBuilder](/vanilla/api/commands/custom/MCSuggestionsBuilder)
@@ -104,38 +116,46 @@ Return Type: [MCSuggestionsBuilder](/vanilla/api/commands/custom/MCSuggestionsBu
 ```zenscript
 MCSuggestionsBuilder.suggest(text as string) as MCSuggestionsBuilder
 ```
+
 | Parameter | Type   | Description             |
 | --------- | ------ | ----------------------- |
 | text      | string | No Description Provided |
+
 
 Return Type: [MCSuggestionsBuilder](/vanilla/api/commands/custom/MCSuggestionsBuilder)
 
 ```zenscript
 MCSuggestionsBuilder.suggest(value as int) as MCSuggestionsBuilder
 ```
+
 | Parameter | Type | Description             |
 | --------- | ---- | ----------------------- |
 | value     | int  | No Description Provided |
+
 
 Return Type: [MCSuggestionsBuilder](/vanilla/api/commands/custom/MCSuggestionsBuilder)
 
 ```zenscript
 MCSuggestionsBuilder.suggest(text as string, tooltip as string) as MCSuggestionsBuilder
 ```
+
 | Parameter | Type   | Description             |
 | --------- | ------ | ----------------------- |
 | text      | string | No Description Provided |
 | tooltip   | string | No Description Provided |
+
 
 Return Type: [MCSuggestionsBuilder](/vanilla/api/commands/custom/MCSuggestionsBuilder)
 
 ```zenscript
 MCSuggestionsBuilder.suggest(value as int, tooltip as string) as MCSuggestionsBuilder
 ```
+
 | Parameter | Type   | Description             |
 | --------- | ------ | ----------------------- |
 | value     | int    | No Description Provided |
 | tooltip   | string | No Description Provided |
+
 
 ### toString
 
@@ -146,6 +166,7 @@ MCSuggestionsBuilder.toString() as string
 myMCSuggestionsBuilder.toString();
 ```
 
+
 ## 연산자
 
 ### EQUALS
@@ -153,6 +174,7 @@ myMCSuggestionsBuilder.toString();
 ```zenscript
 myMCSuggestionsBuilder == o as Object
 ```
+
 
 
 
