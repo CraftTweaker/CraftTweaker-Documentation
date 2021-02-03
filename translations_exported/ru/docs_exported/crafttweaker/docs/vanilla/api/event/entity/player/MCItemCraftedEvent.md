@@ -23,6 +23,7 @@ MCItemCraftedEvent.getCrafting() as IItemStack
 myMCItemCraftedEvent.getCrafting();
 ```
 
+
 ## Свойства
 
 | Название | Тип                                         | Имеет Getter | Имеет Setter |
