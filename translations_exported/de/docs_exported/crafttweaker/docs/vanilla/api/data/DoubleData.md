@@ -20,8 +20,10 @@ No Description Provided
 ```zenscript
 new DoubleData(internal as double) as DoubleData
 ```
+
 | Parameter | Type   | Beschreibung            |
 | --------- | ------ | ----------------------- |
 | internal  | double | No Description Provided |
+
 
 
