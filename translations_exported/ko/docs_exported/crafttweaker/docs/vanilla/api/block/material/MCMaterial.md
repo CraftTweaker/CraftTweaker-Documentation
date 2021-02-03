@@ -20,6 +20,7 @@ Return Type: boolean
 MCMaterial.blocksMovement() as boolean
 myMCMaterial.blocksMovement();
 ```
+
 ### getColor
 
 Retrieves the color index of the block. This is is the same color used by vanilla maps to represent this block.
@@ -30,6 +31,7 @@ Return Type: [MCMaterialColor](/vanilla/api/block/material/MCMaterialColor)
 MCMaterial.getColor() as MCMaterialColor
 myMCMaterial.getColor();
 ```
+
 ### isFlammable
 
 Returns if the block can burn or not.
@@ -40,6 +42,7 @@ Return Type: boolean
 MCMaterial.isFlammable() as boolean
 myMCMaterial.isFlammable();
 ```
+
 ### isLiquid
 
 Returns if blocks of these materials are liquids.
@@ -50,6 +53,7 @@ Return Type: boolean
 MCMaterial.isLiquid() as boolean
 myMCMaterial.isLiquid();
 ```
+
 ### isOpaque
 
 Indicate if the material is opaque
@@ -60,6 +64,7 @@ Return Type: boolean
 MCMaterial.isOpaque() as boolean
 myMCMaterial.isOpaque();
 ```
+
 ### isReplaceable
 
 Returns whether the material can be replaced by other blocks when placed - eg snow, vines and tall grass.
@@ -70,6 +75,7 @@ Return Type: boolean
 MCMaterial.isReplaceable() as boolean
 myMCMaterial.isReplaceable();
 ```
+
 ### isSolid
 
 Returns true if the block is a considered solid. This is true by default.
@@ -80,6 +86,7 @@ Return Type: boolean
 MCMaterial.isSolid() as boolean
 myMCMaterial.isSolid();
 ```
+
 
 ## Properties
 
