@@ -20,6 +20,7 @@ Return Type: boolean
 MCMaterial.blocksMovement() as boolean
 myMCMaterial.blocksMovement();
 ```
+
 ### getColor #获取颜色
 
 获取方块的颜色索引。 输出与原版地图表示此方块的相同颜色
@@ -30,6 +31,7 @@ Return Type: [MCMaterialColor](/vanilla/api/block/material/MCMaterialColor)
 MCMaterial.getColor() as MCMaterialColor
 myMCMaterial.getColor();
 ```
+
 ### isFlammable #是否为可燃物
 
 判断方块是否为可燃物
@@ -40,6 +42,7 @@ Return Type: boolean
 MCMaterial.isFlammable() as boolean
 myMCMaterial.isFlammable();
 ```
+
 ### isLiquid #是否为液体
 
 判断方块是否为液体
@@ -50,6 +53,7 @@ Return Type: boolean
 MCMaterial.isLiquid() as boolean
 myMCMaterial.isLiquid();
 ```
+
 ### isOpaque #是否为不透明方块
 
 判断方块是否为不透明方块
@@ -60,6 +64,7 @@ Return Type: boolean
 MCMaterial.isOpaque() as boolean
 myMCMaterial.isOpaque();
 ```
+
 ### isReplaceable #是否可替换
 
 返回是否在放置时可以用其他方块替换该材料，例如雪，藤蔓和高草丛
@@ -70,6 +75,7 @@ Return Type: boolean
 MCMaterial.isReplaceable() as boolean
 myMCMaterial.isReplaceable();
 ```
+
 ### isSolid #是否为固体
 
 判断方块是否为固体 默认情况下返回为true
@@ -80,6 +86,7 @@ Return Type: boolean
 MCMaterial.isSolid() as boolean
 myMCMaterial.isSolid();
 ```
+
 
 ## 参数
 
