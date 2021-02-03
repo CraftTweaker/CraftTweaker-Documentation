@@ -14,9 +14,11 @@ No Description Provided
 ```zenscript
 new MCCommand(fun as Function<MCCommandContext,Integer>) as MCCommand
 ```
+
 | 参数  | 类型                                                                                                    | 描述                      |
 | --- | ----------------------------------------------------------------------------------------------------- | ----------------------- |
 | 有趣的 | Function&lt;[MCCommandContext](/vanilla/api/commands/custom/MCCommandContext),Integer&gt; | No Description Provided |
+
 
 
 ## Casters
@@ -34,9 +36,11 @@ Return Type: boolean
 ```zenscript
 MCCommand.equals(o as Object) as boolean
 ```
+
 | 参数 | 类型     | 描述                      |
 | -- | ------ | ----------------------- |
 | o  | Object | No Description Provided |
+
 
 ### hashCode
 
@@ -46,6 +50,7 @@ Return Type: int
 MCCommand.hashCode() as int
 myMCCommand.hashCode();
 ```
+
 ### 运行
 
 Return Type: int
@@ -53,9 +58,11 @@ Return Type: int
 ```zenscript
 MCCommand.run(context as MCCommandContext) as int
 ```
+
 | 参数   | 类型                                                                | 描述                      |
 | ---- | ----------------------------------------------------------------- | ----------------------- |
 | 上下文： | [MCCommandContext](/vanilla/api/commands/custom/MCCommandContext) | No Description Provided |
+
 
 ### toString
 
@@ -66,6 +73,7 @@ MCCommand.toString() as string
 myMCCommand.toString();
 ```
 
+
 ## 运算符
 
 ### EQUALS
@@ -73,6 +81,7 @@ myMCCommand.toString();
 ```zenscript
 myMCCommand == o 为对象
 ```
+
 
 
 
