@@ -25,6 +25,7 @@ MCItemSmeltedEvent.getSmelted() as IItemStack
 myMCItemSmeltedEvent.getSmelted();
 ```
 
+
 ## Свойства
 
 | Название | Тип                                         | Имеет Getter | Имеет Setter |
