@@ -25,6 +25,7 @@ MCItemSmeltedEvent.getSmelted() as IItemStack
 myMCItemSmeltedEvent.getSmelted();
 ```
 
+
 ## Properties
 
 | 이름      | Type                                        | Has Getter | Has Setter |
