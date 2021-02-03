@@ -23,9 +23,11 @@ Return Type: boolean
 ```zenscript
 MCParseResults.equals(o as Object) as boolean
 ```
+
 | Parameter | Type   | Description             |
 | --------- | ------ | ----------------------- |
 | o         | Object | No Description Provided |
+
 
 ### getContext
 
@@ -35,6 +37,7 @@ Return Type: [MCCommandContextBuilder](/vanilla/api/commands/custom/MCCommandCon
 MCParseResults.getContext() as MCCommandContextBuilder
 myMCParseResults.getContext();
 ```
+
 ### getWyjątki
 
 Return Type: Exception[[MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)]
@@ -43,6 +46,7 @@ Return Type: Exception[[MCCommandNode](/vanilla/api/commands/custom/MCCommandNod
 MCParseResults.getExceptions() as Exception[MCCommandNode]
 myMCParseResults.getExceptions();
 ```
+
 ### getReader
 
 Return Type: [MCImmutableStringReader](/vanilla/api/commands/custom/MCImmutableStringReader)
@@ -51,6 +55,7 @@ Return Type: [MCImmutableStringReader](/vanilla/api/commands/custom/MCImmutableS
 MCParseResults.getReader() as MCImmutableStringReader
 myMCParseResults.getReader();
 ```
+
 ### hashCode
 
 Return Type: int
@@ -59,6 +64,7 @@ Return Type: int
 MCParseResults.hashCode() as int
 myMCParseResults.hashCode();
 ```
+
 ### toString
 
 Return Type: string
@@ -68,6 +74,7 @@ MCParseResults.toString() as string
 myMCParseResults.toString();
 ```
 
+
 ## Operators
 
 ### EQUALS
@@ -75,6 +82,7 @@ myMCParseResults.toString();
 ```zenscript
 myMCParseResults == o jako obiekt
 ```
+
 
 
 
