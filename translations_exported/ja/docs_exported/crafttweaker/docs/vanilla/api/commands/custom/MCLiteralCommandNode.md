@@ -28,6 +28,7 @@ Return Type: [MCLiteralArgumentBuilder](/vanilla/api/commands/custom/MCLiteralAr
 MCLiteralCommandNode.createBuilder() as MCLiteralArgumentBuilder
 myMCLiteralCommandNode.createBuilder();
 ```
+
 ### equals
 
 Return Type: boolean
@@ -35,9 +36,11 @@ Return Type: boolean
 ```zenscript
 MCLiteralCommandNode.equals(o as Object) as boolean
 ```
+
 | Parameter | Type   | Description             |
 | --------- | ------ | ----------------------- |
 | o         | Object | No Description Provided |
+
 
 ### getLiteral
 
@@ -47,6 +50,7 @@ Return Type: string
 MCLiteralCommandNode.getLiteral() as string
 myMCLiteralCommandNode.getLiteral();
 ```
+
 ### hashCode
 
 Return Type: int
@@ -55,6 +59,7 @@ Return Type: int
 MCLiteralCommandNode.hashCode() as int
 myMCLiteralCommandNode.hashCode();
 ```
+
 ### isValidInput
 
 Return Type: boolean
@@ -62,9 +67,11 @@ Return Type: boolean
 ```zenscript
 MCLiteralCommandNode.isValidInput(input as string) as boolean
 ```
+
 | Parameter | Type   | Description             |
 | --------- | ------ | ----------------------- |
 | input     | string | No Description Provided |
+
 
 ### toString
 
@@ -75,6 +82,7 @@ MCLiteralCommandNode.toString() as string
 myMCLiteralCommandNode.toString();
 ```
 
+
 ## 演算子
 
 ### EQUALS
@@ -82,6 +90,7 @@ myMCLiteralCommandNode.toString();
 ```zenscript
 myMCLiteralCommandNode == o as Object
 ```
+
 
 
 
