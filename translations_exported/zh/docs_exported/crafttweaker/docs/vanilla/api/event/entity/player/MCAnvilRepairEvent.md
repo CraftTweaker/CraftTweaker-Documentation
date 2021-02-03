@@ -22,6 +22,7 @@ Return Type: float
 MCAnvilRepairEvent.getBreakChance() as float
 myMCAnvilRepairEvent.getBreakChance();
 ```
+
 ### getIngredientInput
 
 Return Type: [IItemStack](/vanilla/api/items/IItemStack)
@@ -30,6 +31,7 @@ Return Type: [IItemStack](/vanilla/api/items/IItemStack)
 MCAnvilRepairEvent.getIngredientInput() as IItemStack
 myMCAnvilRepairEvent.getIngredientInput();
 ```
+
 ### getItemInput
 
 Return Type: [IItemStack](/vanilla/api/items/IItemStack)
@@ -38,6 +40,7 @@ Return Type: [IItemStack](/vanilla/api/items/IItemStack)
 MCAnvilRepairEvent.getItemInput() as IItemStack
 myMCAnvilRepairEvent.getItemInput();
 ```
+
 ### getItemResult
 
 Return Type: [IItemStack](/vanilla/api/items/IItemStack)
@@ -46,6 +49,7 @@ Return Type: [IItemStack](/vanilla/api/items/IItemStack)
 MCAnvilRepairEvent.getItemResult() as IItemStack
 myMCAnvilRepairEvent.getItemResult();
 ```
+
 ### setBreakChance
 
 Return Type: void
@@ -53,9 +57,11 @@ Return Type: void
 ```zenscript
 MCAnvilRepairEvent.setBreakChance(breakChance as float) as void
 ```
+
 | 参数          | 类型    | 描述                      |
 | ----------- | ----- | ----------------------- |
 | breakChance | float | No Description Provided |
+
 
 
 ## 参数
