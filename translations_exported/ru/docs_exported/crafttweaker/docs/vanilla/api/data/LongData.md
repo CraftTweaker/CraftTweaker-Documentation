@@ -20,8 +20,10 @@ No Description Provided
 ```zenscript
 new LongData(internal as long) as LongData
 ```
+
 | Параметр | Тип  | Description             |
 | -------- | ---- | ----------------------- |
 | internal | long | No Description Provided |
+
 
 
