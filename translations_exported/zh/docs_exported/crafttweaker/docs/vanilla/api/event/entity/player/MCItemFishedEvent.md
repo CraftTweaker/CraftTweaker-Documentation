@@ -26,6 +26,7 @@ Return Type: stdlib.List&lt;[ItemStack](/vanilla/api/item/ItemStack)&gt;
 MCItemFishedEvent.getDrops() as stdlib.List<ItemStack>
 event.getDrops();
 ```
+
 ### getItemDamage
 
 Gets the amount of durability damage to inflict on the fishing rod.
@@ -36,6 +37,7 @@ Return Type: int
 MCItemFishedEvent.getItemDamage() as int
 event.getItemDamage();
 ```
+
 ### setItemDamage
 
 Sets the amount of durability damage to inflict on the fishing rod.
@@ -46,9 +48,11 @@ Return Type: void
 MCItemFishedEvent.setItemDamage(damage as int) as void
 event.setItemDamage(5);
 ```
+
 | 参数     | 类型  | 描述                               |
 | ------ | --- | -------------------------------- |
 | damage | int | The amount of durability damage. |
+
 
 
 ## 参数
