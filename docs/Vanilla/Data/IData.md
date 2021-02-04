@@ -11,7 +11,7 @@ It might be required for you to import the package if you encounter any issues (
 
 ## Overview
 
-| Binary Operators                  | `+` | `-` | `*` | `/` | `%` | `&` | &#124; | `^` | `in` | `==` | `<, >, <=, >=` |
+| Binary Operators                  | `+` | `-` | `*` | `/` | `%` | `&` | <code>&#124;</code> | `^` | `in` | `==` | `<, >, <=, >=` |
 |-----------------------------------|-----|-----|-----|-----|-----|-----|-----|-----|------|------|----------------|
 | DataBool                          | ✘  | ✘  | ✘   | ✘  | ✘  | ✔   | ✔  | ✔  | ✔    | ✔   | ✘             |
 | DataByte                          | ✔  | ✔  | ✔   | ✔  | ✔  | ✔   | ✔  | ✔  | ✔    | ✔   | ✔             |
