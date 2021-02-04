@@ -97,6 +97,15 @@ MCEntity.forceSetPosition(x as double, y as double, z as double) as void
 | z         | double | No Description Provided |
 
 
+### getAir
+
+Return Type: int
+
+```zenscript
+MCEntity.getAir() as int
+myMCEntity.getAir();
+```
+
 ### getBrightness
 
 Return Type: float
@@ -391,6 +400,19 @@ MCEntity.removeTag(tag as string) as boolean
 | tag       | string | No Description Provided |
 
 
+### setAir
+
+Return Type: void
+
+```zenscript
+MCEntity.setAir(air as int) as void
+```
+
+| Parameter | Type | Description             |
+| --------- | ---- | ----------------------- |
+| air       | int  | No Description Provided |
+
+
 ### setEntityId
 
 Return Type: void
@@ -476,6 +498,7 @@ MCEntity.setSilent(isSilent as boolean) as void
 
 | Name  | Type                                  | Has Getter | Has Setter |
 | ----- | ------------------------------------- | ---------- | ---------- |
+| air   | int                                   | true       | true       |
 | name  | string                                | true       | false      |
 | world | [MCWorld](/vanilla/api/world/MCWorld) | true       | false      |
 
