@@ -111,6 +111,10 @@
                 "MCXpChangeEvent": "vanilla/api/event/entity/player/xp/MCXpChangeEvent.md"
               }
             }
+          },
+          "Tick": {
+            "MCPlayerTickEvent": "vanilla/api/event/tick/MCPlayerTickEvent.md",
+            "MCTickEvent": "vanilla/api/event/tick/MCTickEvent.md"
           }
         },
         "Fluid": {
