@@ -53,14 +53,67 @@ The reason that not all Recipe Managers are given Global Variables is that there
 
 ## Methods
 
+### getRecipeByName
+
+This method gets a recipe by it's name, and returns a [WrapperRecipe](/vanilla/api/recipe/WrapperRecipe).
+
+```zenscript
+getRecipeByName(String name);
+```
+
+You could use this method to get the `ingredients` of a recipe and print the `commandString` of each ingredient.
+
+```zenscript
+for ingredient in craftingTable.getRecipeByName("minecraft:boat").ingredients {
+    println(ingredient.commandString);
+}
+```
+
+### getRecipesByFrom
+
+This method gets a list of recipes based on their outputs, and returns a list of [WrapperRecipe](/vanilla/api/recipe/WrapperRecipe).
+
+```zenscript
+getRecipesByOutput(IIngredient name);
+```
+
+You could use this method to get the `ingredients` of all the recipes that output a certain item and print the `commandString` of each ingredient of each recipe.
+
+```zenscript
+for recipe in craftingTable.getRecipeByName(<item:minecraft:stick>) {
+    println("> " + recipe.id);
+    for ingredient in recipe.ingredients {
+        println(ingredient.commandString);
+    }
+}
+```
+
+### getAllRecipes
+
+This method gets a list of all the recipes for the Recipe Manager and returns a list of [WrapperRecipe](/vanilla/api/recipe/WrapperRecipe).
+
+```zenscript
+getAllRecipes();
+```
+
+You could use this method to get the `ingredients` of all the recipes and print the `commandString` of each ingredient of each recipe.
+
+```zenscript
+for recipe in furnace.getAllRecipes() {
+    println("> " + recipe.id);
+    for ingredient in recipe.ingredients {
+        println(ingredient.commandString);
+    }
+}
+```
 
 ### removeRecipe
+
+This method allows you to remove recipes from this Recipe Manager by the recipe's output item.
 
 ```zenscript
 removeRecipe(IItemStack output);
 ```
-
-This method allows you to remove recipes from this Recipe Manager by the recipe's output item.
 
 An example use case for this method is removing the recipe for Sticks from the Crafting Table:
 
@@ -74,8 +127,73 @@ Another example of this method would be removing the Diamond Ore to Diamond reci
 furnace.removeRecipe(<item:minecraft:diamond>);
 ```
 
+### removeByName
 
-<br/>
-<br/>
+This method allows you to remove recipes from this Recipe Manager by the recipe's name.
 
-***More Docs To Be Added Soon***
+```zenscript
+removeByName(String name);
+```
+
+An example use case for this method is removing the recipe for a Boat from the Crafting Table:
+
+```zenscript
+craftingTable.removeByName("minecraft:boat");
+```
+
+### removeByModid
+
+This method allows you to remove recipes from this Recipe Manager based on the the recipe name's modid.  
+There is an optional parameter that is used to exclude recipes from being removed.   
+Note: The name given to the RecipeFilter is just the path of the recipe id.  
+For example, if the recipe id is `minecraft:orage_wool`, the name given will be `orange_wool`. Another example would be the recipe id `modid:path/name`, the name given will be `path/name`
+
+```zenscript
+removeByModid(String modid);
+
+or
+
+removeByModid(String modid, RecipeFilter exclude);
+```
+
+An example use case for this method is removing all the recipe from "minecraft" from the Crafting Table:
+
+```zenscript
+craftingTable.removeByModid("minecraft");
+```
+
+Another use case would be removing all the recipes from "minecraft" excluding the recipe for Orange Wool.
+
+```zenscript
+craftingTable.removeByModid("minecraft", (name as string) => {
+    return name == "orange_wool";
+});
+```
+
+### removeByRegex
+
+This method allows you to remove recipes from this Recipe Manager by testing the recipe's id against a regex pattern.
+
+```zenscript
+removeByRegex(String regex);
+```
+
+An example use case for this method is removing all recipes who's id matches `.*wool.*` (anything that has the work `wool` in it).
+
+```zenscript
+craftingTable.removeByRegex(".*wool.*");
+```
+
+### removeAll
+
+This method allows you to remove all the recipes from the Recipe Manager.
+
+```zenscript
+removeAll(String regex);
+```
+
+An example use case for this method is removing all the Blast Furnace recipes.
+
+```zenscript
+blastFurnace.removeAll();
+```
