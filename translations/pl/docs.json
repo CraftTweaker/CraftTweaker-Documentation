@@ -42,7 +42,8 @@
     },
     "Vanilla": {
       "Biomes": {
-        "IBiome": "Vanilla/Biomes/IBiome.md"
+        "IBiome": "Vanilla/Biomes/IBiome.md",
+        "IBiomeType": "Vanilla/Biomes/IBiomeType.md"
       },
       "Blocks": {
         "IBlock": "Vanilla/Blocks/IBlock.md",
@@ -63,7 +64,8 @@
         "Entities": "Vanilla/Brackets/Bracket_Entity.md",
         "Liquids": "Vanilla/Brackets/Bracket_Liquid.md",
         "Ores": "Vanilla/Brackets/Bracket_Ore.md",
-        "Potions": "Vanilla/Brackets/Bracket_Potion.md"
+        "Potions": "Vanilla/Brackets/Bracket_Potion.md",
+        "PotionTypes": "Vanilla/Brackets/Bracket_PotionType.md"
       },
       "Commands": {
         "ICommandManager": "Vanilla/Commands/ICommandManager.md",
@@ -96,11 +98,14 @@
         "IEntity": "Vanilla/Entities/IEntity.md",
         "IEntityAgeable": "Vanilla/Entities/IEntityAgeable.md",
         "IEntityAnimal": "Vanilla/Entities/IEntityAnimal.md",
+        "IEntityArrow": "Vanilla/Entities/IEntityArrow.md",
+        "IEntityArrowTipped": "Vanilla/Entities/IEntityArrowTipped.md",
         "IEntityCreature": "Vanilla/Entities/IEntityCreature.md",
         "IEntityDefinition": "Vanilla/Entities/IEntityDefinition.md",
         "IEntityDrop": "Vanilla/Entities/IEntityDrop.md",
         "IEntityDropFunction": "Vanilla/Entities/IEntityDropFunction.md",
         "IEntityEquipmentSlot": "Vanilla/Entities/IEntityEquipmentSlot.md",
+        "IEntityFishHook": "Vanilla/Entities/IEntityFishHook.md",
         "IEntityItem": "Vanilla/Entities/IEntityItem.md",
         "IEntityLiving": "Vanilla/Entities/IEntityLiving.md",
         "IEntityLivingBase": "Vanilla/Entities/IEntityLivingBase.md",
@@ -125,6 +130,8 @@
           "IPlayerEvent": "Vanilla/Events/Events/IPlayerEvent.md",
           "ITickEvent": "Vanilla/Events/Events/ITickEvent.md",
           "AnimalTameEvent": "Vanilla/Events/Events/AnimalTame.md",
+          "ArrowLooseEvent": "Vanilla/Events/Events/ArrowLoose.md",
+          "ArrowNockEvent": "Vanilla/Events/Events/ArrowNock.md",
           "BlockBreakEvent": "Vanilla/Events/Events/BlockBreak.md",
           "BlockHarvestDropsEvent": "Vanilla/Events/Events/BlockHarvestDrops.md",
           "BlockNeighborNotifyEvent": "Vanilla/Events/Events/BlockNeighborNotify.md",
@@ -136,13 +143,18 @@
           "CropGrowPreEvent": "Vanilla/Events/Events/CropGrowPre.md",
           "EnchantmentLevelSetEvent": "Vanilla/Events/Events/EnchantmentLevelSet.md",
           "EnderTeleportEvent": "Vanilla/Events/Events/EnderTeleport.md",
+          "EntityJoinWorldEvent": "Vanilla/Events/Events/EntityJoinWorld.md",
           "EntityLivingAttackedEvent": "Vanilla/Events/Events/EntityLivingAttacked.md",
-          "EntityLivingDeathDropsEvent": "Vanilla/Events/Events/EntityLivingDeathDrops.md",
+          "EntityLivingDamageEvent": "Vanilla/Events/Events/EntityLivingDamage.md",
           "EntityLivingDeathEvent": "Vanilla/Events/Events/EntityLivingDeath.md",
+          "EntityLivingDeathDropsEvent": "Vanilla/Events/Events/EntityLivingDeathDrops.md",
+          "EntityLivingEquipmentChangeEvent": "Vanilla/Events/Events/EntityLivingEquimentChange.md",
           "EntityLivingFallEvent": "Vanilla/Events/Events/EntityLivingFall.md",
+          "EntityLivingHealEvent": "Vanilla/Events/Events/EntityLivingHeal.md",
           "EntityLivingHurtEvent": "Vanilla/Events/Events/EntityLivingHurt.md",
           "EntityLivingJumpEvent": "Vanilla/Events/Events/EntityLivingJump.md",
           "EntityLivingSpawnEvent": "Vanilla/Events/Events/EntityLivingSpawn.md",
+          "EntityLivingUpdateEvent": "Vanilla/Events/Events/EntityLivingUpdate.md",
           "EntityMountEvent": "Vanilla/Events/Events/EntityMount.md",
           "EntityStruckByLightningEvent": "Vanilla/Events/Events/EntityStruckByLightning.md",
           "EntityTravelToDimensionEvent": "Vanilla/Events/Events/EntityTravelToDimension.md",
@@ -168,6 +180,7 @@
           "PlayerBreakSpeedEvent": "Vanilla/Events/Events/PlayerBreakSpeed.md",
           "PlayerBrewedPotionEvent": "Vanilla/Events/Events/PlayerBrewedPotion.md",
           "PlayerChangedDimensionEvent": "Vanilla/Events/Events/PlayerChangedDimension.md",
+          "PlayerCloneEvent": "Vanilla/Events/Events/PlayerClone.md",
           "PlayerCloseContainerEvent": "Vanilla/Events/Events/PlayerCloseContainer.md",
           "PlayerCraftedEvent": "Vanilla/Events/Events/PlayerCrafted.md",
           "PlayerDeathDropsEvent": "Vanilla/Events/Events/PlayerDeathDrops.md",
@@ -236,7 +249,8 @@
       },
       "Potions": {
         "IPotion": "Vanilla/Potions/IPotion.md",
-        "IPotionEffect": "Vanilla/Potions/IPotionEffect.md"
+        "IPotionEffect": "Vanilla/Potions/IPotionEffect.md",
+        "IPotionType": "Vanilla/Potions/IPotionType.md"
       },
       "Recipes": {
         "Brewing Recipes": "Vanilla/Recipes/Recipes_Brewing_Stand.md",
@@ -261,6 +275,7 @@
         "IMobSpawnerBaseLogic": "Vanilla/TileEntity/IMobSpawnerBaseLogic.md"
       },
       "Utils": {
+        "IAxisAlignedBB" : "Vanilla/Utils/IAxisAlignedBB.md",
         "IFormattedText": "Vanilla/Utils/IFormattedText.md",
         "IFormatter": "Vanilla/Utils/IFormatter.md",
         "ItemUtils": "Vanilla/Utils/IItemUtils.md",
