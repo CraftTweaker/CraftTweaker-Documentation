@@ -14,11 +14,11 @@ You can cast an [IFormattedText](/Vanilla/Utils/IFormattedText/) as ITextCompone
 ```zenscript
 import crafttweaker.text.ITextComponent;
 
-ITextComponet.fromString(String s);
-ITextComponet.fromTranslation(String translationKey);
-ITextComponet.fromTranslation(String translationKey, Object... args);
+ITextComponent.fromString(String s);
+ITextComponent.fromTranslation(String translationKey);
+ITextComponent.fromTranslation(String translationKey, Object... args);
 
-ITextComponet.fromData(IData data);
+ITextComponent.fromData(IData data);
 ```
 
 Note: the argument of `fromData` method is [raw JSON text format](https://minecraft.gamepedia.com/Raw_JSON_text_format).
