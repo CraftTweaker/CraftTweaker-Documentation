@@ -16,6 +16,25 @@ ICollectionData实现了以下接口。 That means all methods defined in these 
 - [IData](/vanilla/api/data/IData)
 ## 方法
 
+### getFromMembers
+
+Creates the most specific ICollectionData form possible for the provided members.
+
+ Tries to return (in order) [ByteArrayData](/vanilla/api/data/ByteArrayData), [IntArrayData](/vanilla/api/data/IntArrayData), [LongArrayData](/vanilla/api/data/LongArrayData) or if neither is applicable [ListData](/vanilla/api/data/ListData)
+
+Return Type: [ICollectionData](/vanilla/api/data/ICollectionData)
+
+```zenscript
+ICollectionData.getFromMembers(members as IData[]) as ICollectionData
+```
+
+| 参数      | 类型                                 | 描述                      |
+| ------- | ---------------------------------- | ----------------------- |
+| members | [IData](/vanilla/api/data/IData)[] | No Description Provided |
+
+
+## 方法
+
 ### add
 
 
