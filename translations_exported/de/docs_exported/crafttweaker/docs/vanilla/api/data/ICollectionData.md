@@ -16,6 +16,25 @@ ICollectionData implements the following interfaces. That means all methods defi
 - [IData](/vanilla/api/data/IData)
 ## Methoden
 
+### getFromMembers
+
+Creates the most specific ICollectionData form possible for the provided members.
+
+ Tries to return (in order) [ByteArrayData](/vanilla/api/data/ByteArrayData), [IntArrayData](/vanilla/api/data/IntArrayData), [LongArrayData](/vanilla/api/data/LongArrayData) or if neither is applicable [ListData](/vanilla/api/data/ListData)
+
+Return Type: [ICollectionData](/vanilla/api/data/ICollectionData)
+
+```zenscript
+ICollectionData.getFromMembers(members as IData[]) as ICollectionData
+```
+
+| Parameter | Type                               | Beschreibung            |
+| --------- | ---------------------------------- | ----------------------- |
+| members   | [IData](/vanilla/api/data/IData)[] | No Description Provided |
+
+
+## Methoden
+
 ### add
 
 
