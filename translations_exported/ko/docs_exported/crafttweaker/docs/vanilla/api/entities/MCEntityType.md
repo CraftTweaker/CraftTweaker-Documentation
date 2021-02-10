@@ -12,6 +12,7 @@ import crafttweaker.api.entity.MCEntityType;
 MCEntityType implements the following interfaces. That means all methods defined in these interfaces are also available in MCEntityType
 
 - [CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
+
 ## Properties
 
 | 이름             | Type                                                                 | Has Getter | Has Setter |
