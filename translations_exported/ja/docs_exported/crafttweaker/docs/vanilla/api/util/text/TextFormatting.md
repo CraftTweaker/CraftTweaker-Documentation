@@ -12,6 +12,7 @@ import crafttweaker.api.text.TextFormatting;
 TextFormatting implements the following interfaces. That means all methods defined in these interfaces are also available in TextFormatting
 
 - [CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
+
 ## Casters
 
 | Result type | Is Implicit |
