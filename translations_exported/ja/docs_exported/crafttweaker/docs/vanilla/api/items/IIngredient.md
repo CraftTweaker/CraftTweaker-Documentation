@@ -14,6 +14,7 @@ import crafttweaker.api.item.IIngredient;
 IIngredientのimplementsでは、以下のようなインターフェースで実装されています。 That means all methods defined in these interfaces are also available in IIngredient
 
 - [CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
+
 ## Casters
 
 | Result type                                | Is Implicit |
