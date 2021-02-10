@@ -12,6 +12,7 @@ import crafttweaker.api.potion.MCPotionEffectInstance;
 MCPotionEffectInstance implements the following interfaces. That means all methods defined in these interfaces are also available in MCPotionEffectInstance
 
 - Comparable&lt;[MCPotionEffectInstance](/vanilla/api/potions/MCPotionEffectInstance)&gt;
+
 ## Methods
 
 ### addCurativeItem
