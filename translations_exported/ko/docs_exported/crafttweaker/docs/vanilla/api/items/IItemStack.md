@@ -15,12 +15,16 @@ IItemStack implements the following interfaces. That means all methods defined i
 
 - [IIngredient](/vanilla/api/items/IIngredient)
 - [IIngredientWithAmount](/vanilla/api/items/IIngredientWithAmount)
+
 ## Casters
 
 | Result type                                                       | Is Implicit |
 | ----------------------------------------------------------------- | ----------- |
+| [IData](/vanilla/api/data/IData)                                  | true        |
 | [IIngredientWithAmount](/vanilla/api/items/IIngredientWithAmount) | true        |
+| [Ingredient](/vanilla/api/item/Ingredient)                        | true        |
 | [ItemStack](/vanilla/api/item/ItemStack)                          | true        |
+| [MapData](/vanilla/api/data/MapData)                              | true        |
 | [MCItemDefinition](/vanilla/api/item/MCItemDefinition)            | true        |
 | [MCWeightedItemStack](/vanilla/api/items/MCWeightedItemStack)     | true        |
 
@@ -52,6 +56,15 @@ IItemStack.addTooltip(content as MCTextComponent) as void
 | content   | [MCTextComponent](/vanilla/api/util/text/MCTextComponent) | No Description Provided |
 
 
+### anyDamage
+
+Return Type: [MCIngredientConditioned](/vanilla/api/items/MCIngredientConditioned)&lt;[IIngredient](/vanilla/api/items/IIngredient)&gt;
+
+```zenscript
+IItemStack.anyDamage() as MCIngredientConditioned<IIngredient>
+<item:minecraft:dirt>.anyDamage();
+```
+
 ### asIIngredientWithAmount
 
 Return Type: [IIngredientWithAmount](/vanilla/api/items/IIngredientWithAmount)
@@ -59,6 +72,17 @@ Return Type: [IIngredientWithAmount](/vanilla/api/items/IIngredientWithAmount)
 ```zenscript
 IItemStack.asIIngredientWithAmount() as IIngredientWithAmount
 <item:minecraft:dirt>.asIIngredientWithAmount();
+```
+
+### asVanillaIngredient
+
+Create a Vanilla ingredient matching this one.
+
+Return Type: [Ingredient](/vanilla/api/item/Ingredient)
+
+```zenscript
+IItemStack.asVanillaIngredient() as Ingredient
+<item:minecraft:dirt>.asVanillaIngredient();
 ```
 
 ### clearCustomName
@@ -112,6 +136,38 @@ IItemStack.getInternal() as ItemStack
 <item:minecraft:dirt>.getInternal();
 ```
 
+### getRemainingItem
+
+When this ingredient stack is crafted, what will remain in the grid? Does not check if the stack matches though! Used e.g. in Crafting Table recipes.
+
+Return Type: [IItemStack](/vanilla/api/items/IItemStack)
+
+```zenscript
+IItemStack.getRemainingItem(stack as IItemStack) as IItemStack
+<item:minecraft:dirt>.getRemainingItem(<item:minecraft:iron_ingot>);
+```
+
+| Parameter | Type                                        | Description                               |
+| --------- | ------------------------------------------- | ----------------------------------------- |
+| stack     | [IItemStack](/vanilla/api/items/IItemStack) | The stack to provide for this ingredient. |
+
+
+### matches
+
+Does the given stack match the ingredient?
+
+Return Type: boolean
+
+```zenscript
+IItemStack.matches(stack as IItemStack) as boolean
+<item:minecraft:dirt>.matches(<item:minecraft:iron_ingot>);
+```
+
+| Parameter | Type                                        | Description        |
+| --------- | ------------------------------------------- | ------------------ |
+| stack     | [IItemStack](/vanilla/api/items/IItemStack) | The stack to check |
+
+
 ### modifyTooltip
 
 Return Type: void
@@ -133,6 +189,28 @@ Return Type: [IItemStack](/vanilla/api/items/IItemStack)
 IItemStack.mutable() as IItemStack
 <item:minecraft:dirt>.mutable();
 ```
+
+### onlyDamaged
+
+Return Type: [MCIngredientConditioned](/vanilla/api/items/MCIngredientConditioned)&lt;[IIngredient](/vanilla/api/items/IIngredient)&gt;
+
+```zenscript
+IItemStack.onlyDamaged() as MCIngredientConditioned<IIngredient>
+<item:minecraft:dirt>.onlyDamaged();
+```
+
+### onlyIf
+
+Return Type: [MCIngredientConditioned](/vanilla/api/items/MCIngredientConditioned)&lt;[IIngredient](/vanilla/api/items/IIngredient)&gt;
+
+```zenscript
+IItemStack.onlyIf(uid as string, function as Predicate<IItemStack>) as MCIngredientConditioned<IIngredient>
+```
+
+| Parameter | Type                                                                     | Description             | Optional | DefaultValue |
+| --------- | ------------------------------------------------------------------------ | ----------------------- | -------- | ------------ |
+| uid       | string                                                                   | No Description Provided | false    |              |
+| function  | Predicate&lt;[IItemStack](/vanilla/api/items/IItemStack)&gt; | No Description Provided | true     |              |
 
 ### removeTooltip
 
@@ -230,6 +308,14 @@ myIItemStack * amount as int
 
 
 
+### OR
+
+```zenscript
+myIItemStack | other as IIngredient
+```
+
+
+
 
 ## Properties
 
@@ -237,6 +323,7 @@ myIItemStack * amount as int
 | -------------- | ---------------------------------------------------------- | ---------- | ---------- |
 | amount         | int                                                        | true       | false      |
 | burnTime       | int                                                        | true       | true       |
+| commandString  | string                                                     | true       | false      |
 | damage         | int                                                        | true       | false      |
 | damageable     | boolean                                                    | true       | false      |
 | damaged        | boolean                                                    | true       | false      |
@@ -252,6 +339,7 @@ myIItemStack * amount as int
 | isCrossbow     | boolean                                                    | true       | false      |
 | isEnchantable  | boolean                                                    | true       | false      |
 | isEnchanted    | boolean                                                    | true       | false      |
+| items          | [IItemStack](/vanilla/api/items/IItemStack)[]              | true       | false      |
 | maxDamage      | int                                                        | true       | false      |
 | maxStackSize   | int                                                        | true       | false      |
 | owner          | string                                                     | true       | false      |
