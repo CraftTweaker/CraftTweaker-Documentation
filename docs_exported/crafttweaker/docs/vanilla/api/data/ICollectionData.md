@@ -14,6 +14,7 @@ import crafttweaker.api.data.ICollectionData;
 ICollectionData implements the following interfaces. That means all methods defined in these interfaces are also available in ICollectionData
 
 - [IData](/vanilla/api/data/IData)
+
 ## Methods
 
 ### getFromMembers
@@ -32,6 +33,13 @@ ICollectionData.getFromMembers(members as IData[]) as ICollectionData
 |-----------|------|-------------|
 | members | [IData](/vanilla/api/data/IData)[] | No Description Provided |
 
+
+## Casters
+
+| Result type | Is Implicit |
+|-------------|-------------|
+| [ICollectionData](/vanilla/api/data/ICollectionData) | false |
+| [INumberData](/vanilla/api/data/INumberData) | false |
 
 ## Methods
 
@@ -66,6 +74,57 @@ new ListData(["Hello", "World"]).add(1, "beautiful");
 | value | [IData](/vanilla/api/data/IData) | The value to add to the list |
 
 
+### asCollection
+
+Return Type: [ICollectionData](/vanilla/api/data/ICollectionData)
+
+```zenscript
+ICollectionData.asCollection() as ICollectionData
+new ListData(["Hello", "World"]).asCollection();
+```
+
+### asList
+
+Gets a List<IData> representation of this IData, returns null on anything but [ListData](/vanilla/api/data/ListData).
+
+Return Type: stdlib.List&lt;[IData](/vanilla/api/data/IData)&gt;
+
+```zenscript
+ICollectionData.asList() as stdlib.List<IData>
+new ListData(["Hello", "World"]).asList();
+```
+
+### asMap
+
+Gets a Map<String, IData> representation of this IData, returns null on anything but [MapData](/vanilla/api/data/MapData).
+
+Return Type: [IData](/vanilla/api/data/IData)[string]
+
+```zenscript
+ICollectionData.asMap() as IData[string]
+new ListData(["Hello", "World"]).asMap();
+```
+
+### asNumber
+
+Return Type: [INumberData](/vanilla/api/data/INumberData)
+
+```zenscript
+ICollectionData.asNumber() as INumberData
+new ListData(["Hello", "World"]).asNumber();
+```
+
+### asString
+
+Gets the String representation of this IData
+
+Return Type: string
+
+```zenscript
+ICollectionData.asString() as string
+new ListData(["Hello", "World"]).asString();
+```
+
 ### clear
 
 Removes every element in the list
@@ -75,6 +134,35 @@ Return Type: void
 ```zenscript
 ICollectionData.clear() as void
 new ListData(["Hello", "World"]).clear();
+```
+
+### contains
+
+Checks if this IData contains another IData, mainly used in subclasses of [ICollectionData](/vanilla/api/data/ICollectionData), is the same as an equals check on other IData types
+
+Return Type: boolean
+
+```zenscript
+ICollectionData.contains(data as IData) as boolean
+new ListData(["Hello", "World"]).contains("Display");
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| data | [IData](/vanilla/api/data/IData) | data to check if it is contained |
+
+
+### copy
+
+Makes a copy of this IData.
+
+ IData is immutable by default, use this to create a proper copy of the object.
+
+Return Type: [IData](/vanilla/api/data/IData)
+
+```zenscript
+ICollectionData.copy() as IData
+new ListData(["Hello", "World"]).copy();
 ```
 
 ### getAt
@@ -92,6 +180,30 @@ new ListData(["Hello", "World"]).getAt(0);
 |-----------|------|-------------|
 | index | int | The index (0-based) |
 
+
+### getId
+
+Gets the ID of the internal NBT tag.
+
+ Used to determine what NBT type is stored (in a list for example)
+
+Return Type: byte
+
+```zenscript
+ICollectionData.getId() as byte
+new ListData(["Hello", "World"]).getId();
+```
+
+### getString
+
+Gets the String representation of the internal INBT tag
+
+Return Type: string
+
+```zenscript
+ICollectionData.getString() as string
+new ListData(["Hello", "World"]).getString();
+```
 
 ### remove
 

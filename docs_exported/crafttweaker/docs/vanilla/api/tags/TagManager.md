@@ -15,6 +15,7 @@ import crafttweaker.api.tag.TagManager;
 TagManager implements the following interfaces. That means all methods defined in these interfaces are also available in TagManager
 
 - [CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
+
 ## Methods
 
 ### exists

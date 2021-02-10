@@ -14,6 +14,7 @@ import crafttweaker.api.data.MapData;
 MapData implements the following interfaces. That means all methods defined in these interfaces are also available in MapData
 
 - [IData](/vanilla/api/data/IData)
+
 ## Constructors
 
 No Description Provided
@@ -37,9 +38,40 @@ new MapData(map as IData[string]) as MapData
 
 | Result type | Is Implicit |
 |-------------|-------------|
+| [ICollectionData](/vanilla/api/data/ICollectionData) | false |
 | [IData](/vanilla/api/data/IData)[string] | true |
+| [INumberData](/vanilla/api/data/INumberData) | false |
 
 ## Methods
+
+### asCollection
+
+Return Type: [ICollectionData](/vanilla/api/data/ICollectionData)
+
+```zenscript
+MapData.asCollection() as ICollectionData
+{Hello : "World", Somewhere: "Over the rainbow"}.asCollection();
+```
+
+### asList
+
+Gets a List<IData> representation of this IData, returns null on anything but [ListData](/vanilla/api/data/ListData).
+
+Return Type: stdlib.List&lt;[IData](/vanilla/api/data/IData)&gt;
+
+```zenscript
+MapData.asList() as stdlib.List<IData>
+{Hello : "World", Somewhere: "Over the rainbow"}.asList();
+```
+
+### asNumber
+
+Return Type: [INumberData](/vanilla/api/data/INumberData)
+
+```zenscript
+MapData.asNumber() as INumberData
+{Hello : "World", Somewhere: "Over the rainbow"}.asNumber();
+```
 
 ### contains
 
@@ -72,6 +104,30 @@ MapData.getAt(key as string) as IData
 |-----------|------|-------------|
 | key | string | The key to search for |
 
+
+### getId
+
+Gets the ID of the internal NBT tag.
+
+ Used to determine what NBT type is stored (in a list for example)
+
+Return Type: byte
+
+```zenscript
+MapData.getId() as byte
+{Hello : "World", Somewhere: "Over the rainbow"}.getId();
+```
+
+### getString
+
+Gets the String representation of the internal INBT tag
+
+Return Type: string
+
+```zenscript
+MapData.getString() as string
+{Hello : "World", Somewhere: "Over the rainbow"}.getString();
+```
 
 ### merge
 
