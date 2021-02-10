@@ -14,6 +14,7 @@ import crafttweaker.api.world.MCWorld;
 MCWorld implements the following interfaces. That means all methods defined in these interfaces are also available in MCWorld
 
 - AutoCloseable
+
 ## Casters
 
 | Result type                                       | Is Implicit |
