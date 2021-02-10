@@ -20,6 +20,41 @@ MCRootCommandNode extends [MCCommandNode](/vanilla/api/commands/custom/MCCommand
 
 ## Methods
 
+### addChild
+
+Return Type: void
+
+```zenscript
+MCRootCommandNode.addChild(node as MCCommandNode) as void
+```
+
+| Parameter | Type                                                        | Description             |
+| --------- | ----------------------------------------------------------- | ----------------------- |
+| węzeł     | [MCCommandNode](/vanilla/api/commands/custom/MCCommandNode) | No Description Provided |
+
+
+### canUse
+
+Return Type: boolean
+
+```zenscript
+MCRootCommandNode.canUse(source as MCCommandSource) as boolean
+```
+
+| Parameter | Type                                                                       | Description             |
+| --------- | -------------------------------------------------------------------------- | ----------------------- |
+| źródło    | [Źródło polecenia MCCommand](/vanilla/api/commands/custom/MCCommandSource) | No Description Provided |
+
+
+### createBuilder
+
+Return Type: [MCArgumentBuilder](/vanilla/api/commands/custom/MCArgumentBuilder)
+
+```zenscript
+MCRootCommandNode.createBuilder() as MCArgumentBuilder
+myMCRootCommandNode.createBuilder();
+```
+
 ### equals
 
 Return Type: boolean
@@ -33,6 +68,117 @@ MCRootCommandNode.equals(o as Object) as boolean
 | o         | Object | No Description Provided |
 
 
+### Rozmiary wyników
+
+Return Type: void
+
+```zenscript
+MCRootCommandNode.findAmbiguities(consumer as MCAmbiguityConsumer) as void
+```
+
+| Parameter | Type                                                                    | Description             |
+| --------- | ----------------------------------------------------------------------- | ----------------------- |
+| konsument | [MCAmbiguityConsumer](/vanilla/api/commands/custom/MCAmbiguityConsumer) | No Description Provided |
+
+
+### getChild
+
+Return Type: [MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)
+
+```zenscript
+MCRootCommandNode.getChild(name as string) as MCCommandNode
+```
+
+| Parameter | Type   | Description             |
+| --------- | ------ | ----------------------- |
+| name      | string | No Description Provided |
+
+
+### getChildren
+
+Return Type: Collection&lt;[MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)&gt;
+
+```zenscript
+MCRootCommandNode.getChildren() as Collection<MCCommandNode>
+myMCRootCommandNode.getChildren();
+```
+
+### getCommand
+
+Return Type: [MCCommand](/vanilla/api/commands/custom/MCCommand)
+
+```zenscript
+MCRootCommandNode.getCommand() as MCCommand
+myMCRootCommandNode.getCommand();
+```
+
+### getExamples
+
+Return Type: Collection&lt;string&gt;
+
+```zenscript
+MCRootCommandNode.getExamples() as Collection<string>
+myMCRootCommandNode.getExamples();
+```
+
+### getName
+
+Return Type: string
+
+```zenscript
+MCRootCommandNode.getName() as string
+myMCRootCommandNode.getName();
+```
+
+### getRedirect
+
+Return Type: [MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)
+
+```zenscript
+MCRootCommandNode.getRedirect() as MCCommandNode
+myMCRootCommandNode.getRedirect();
+```
+
+### getRedirectModifier
+
+Return Type: [MCRedirectModifier](/vanilla/api/commands/custom/MCRedirectModifier)
+
+```zenscript
+MCRootCommandNode.getRedirectModifier() as MCRedirectModifier
+myMCRootCommandNode.getRedirectModifier();
+```
+
+### getRelevantNodes
+
+Return Type: Collection&lt;[MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)&gt;
+
+```zenscript
+MCRootCommandNode.getRelevantNodes(input as string) as Collection<MCCommandNode>
+```
+
+| Parameter | Type   | Description             |
+| --------- | ------ | ----------------------- |
+| input     | string | No Description Provided |
+
+
+### Wymaganie pobierania
+
+Return Type: Predicate&lt;[MCCommandSource](/vanilla/api/commands/custom/MCCommandSource)&gt;
+
+```zenscript
+MCRootCommandNode.getRequirement() as Predicate<MCCommandSource>
+myMCRootCommandNode.getRequirement();
+```
+
+### getUsageText
+
+Return Type: string
+
+```zenscript
+MCRootCommandNode.getUsageText() as string
+myMCRootCommandNode.getUsageText();
+```
+
 ### hashCode
 
 Return Type: int
@@ -40,6 +186,15 @@ Return Type: int
 ```zenscript
 MCRootCommandNode.hashCode() as int
 myMCRootCommandNode.hashCode();
+```
+
+### isFork
+
+Return Type: boolean
+
+```zenscript
+MCRootCommandNode.isFork() as boolean
+myMCRootCommandNode.isFork();
 ```
 
 ### isValidInput
@@ -55,6 +210,34 @@ MCRootCommandNode.isValidInput(input as string) as boolean
 | input     | string | No Description Provided |
 
 
+### listSuggestions
+
+Return Type: [MCSuggestions](/vanilla/api/commands/custom/MCSuggestions)
+
+```zenscript
+MCRootCommandNode.listSuggestions(context as MCCommandContext, builder as MCSuggestionsBuilder) as MCSuggestions
+```
+
+| Parameter   | Type                                                                      | Description             |
+| ----------- | ------------------------------------------------------------------------- | ----------------------- |
+| kontekst    | [MCCommandContext](/vanilla/api/commands/custom/MCCommandContext)         | No Description Provided |
+| konstruktor | [MCSuggestionsBuilder](/vanilla/api/commands/custom/MCSuggestionsBuilder) | No Description Provided |
+
+
+### parse
+
+Return Type: void
+
+```zenscript
+MCRootCommandNode.parse(input as string, contextBuilder as MCCommandContextBuilder) as void
+```
+
+| Parameter      | Type                                                                            | Description             |
+| -------------- | ------------------------------------------------------------------------------- | ----------------------- |
+| input          | string                                                                          | No Description Provided |
+| contextBuilder | [MCCommandContextBuilder](/vanilla/api/commands/custom/MCCommandContextBuilder) | No Description Provided |
+
+
 ### toString
 
 Return Type: string
@@ -66,6 +249,14 @@ myMCRootCommandNode.toString();
 
 
 ## Operators
+
+### COMPARE
+
+```zenscript
+myMCRootCommandNode < o as MCCommandNode
+```
+
+
 
 ### EQUALS
 
