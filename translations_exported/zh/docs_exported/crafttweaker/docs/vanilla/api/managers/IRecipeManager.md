@@ -14,6 +14,7 @@ import crafttweaker.api.registries.IRecipeManager;
 IRecipeManager implements the following interfaces. That means all methods defined in these interfaces are also available in IRecipeManager
 
 - [CommandStringDisplayable #命令字符串可显示](/vanilla/api/brackets/CommandStringDisplayable)
+
 ## 方法
 
 ### addJSONRecipe #添加JSON配方
