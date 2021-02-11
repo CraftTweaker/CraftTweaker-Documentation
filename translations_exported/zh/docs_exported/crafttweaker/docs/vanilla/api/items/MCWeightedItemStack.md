@@ -14,6 +14,7 @@ import crafttweaker.api.item.MCWeightedItemStack;
 MCWeightedItemStack implements the following interfaces. That means all methods defined in these interfaces are also available in MCWeightedItemStack
 
 - [CommandStringDisplayable #命令字符串可显示](/vanilla/api/brackets/CommandStringDisplayable)
+
 ## Constructor #构造函数
 
 Manually creates the weightedItemStack. Usually you can use the operator or `.weight(weight)` method of IItemStack, though
