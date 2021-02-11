@@ -93,6 +93,15 @@ MCRequiredArgumentBuilder.getArguments() as Collection<MCCommandNode>
 myMCRequiredArgumentBuilder.getArguments();
 ```
 
+### getCommand
+
+Return Type: [MCCommand](/vanilla/api/commands/custom/MCCommand)
+
+```zenscript
+MCRequiredArgumentBuilder.getCommand() as MCCommand
+myMCRequiredArgumentBuilder.getCommand();
+```
+
 ### getName
 
 Return Type: string
@@ -100,6 +109,24 @@ Return Type: string
 ```zenscript
 MCRequiredArgumentBuilder.getName() as string
 myMCRequiredArgumentBuilder.getName();
+```
+
+### getUmleitung
+
+Return Type: [MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)
+
+```zenscript
+MCRequiredArgumentBuilder.getRedirect() as MCCommandNode
+myMCRequiredArgumentBuilder.getRedirect();
+```
+
+### getRedirectModifizierer
+
+Return Type: [MCRedirectModifier](/vanilla/api/commands/custom/MCRedirectModifier)
+
+```zenscript
+MCRequiredArgumentBuilder.getRedirectModifier() as MCRedirectModifier
+myMCRequiredArgumentBuilder.getRedirectModifier();
 ```
 
 ### getAnforderung
@@ -127,6 +154,15 @@ Return Type: int
 ```zenscript
 MCRequiredArgumentBuilder.hashCode() as int
 myMCRequiredArgumentBuilder.hashCode();
+```
+
+### isFork
+
+Return Type: boolean
+
+```zenscript
+MCRequiredArgumentBuilder.isFork() as boolean
+myMCRequiredArgumentBuilder.isFork();
 ```
 
 ### umleiten
@@ -181,6 +217,17 @@ MCRequiredArgumentBuilder.suggests(provider as MCSuggestionProvider) as MCRequir
 
 
 ### dann
+
+Return Type: [MCArgumentBuilder](/vanilla/api/commands/custom/MCArgumentBuilder)
+
+```zenscript
+MCRequiredArgumentBuilder.then(argument as MCArgumentBuilder) as MCArgumentBuilder
+```
+
+| Parameter | Type                                                                | Beschreibung            |
+| --------- | ------------------------------------------------------------------- | ----------------------- |
+| argument  | [MCArgumentBuilder](/vanilla/api/commands/custom/MCArgumentBuilder) | No Description Provided |
+
 
 Return Type: [MCRequiredArgumentBuilder](/vanilla/api/commands/custom/MCRequiredArgumentBuilder)
 
