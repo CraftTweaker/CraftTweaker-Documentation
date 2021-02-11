@@ -14,7 +14,25 @@ import crafttweaker.api.registries.ICookingRecipeManager;
 ICookingRecipeManager implements the following interfaces. That means all methods defined in these interfaces are also available in ICookingRecipeManager
 
 - [IRecipeManager](/vanilla/api/managers/IRecipeManager)
+
 ## Methoden
+
+### addJSONRecipe
+
+Adds a recipe based on a provided IData. The provided IData should represent a DataPack JSON, this effectively allows you to register recipes for any DataPack supporting IRecipeType systems.
+
+Return Type: void
+
+```zenscript
+ICookingRecipeManager.addJSONRecipe(name as string, data as IData) as void
+furnace.addJSONRecipe("recipe_name", {ingredient:{item:<item:minecraft:gold_ore>.registryName},result:<item:minecraft:cooked_porkchop>.registryName,experience:0.35 as float, cookingtime:100});
+```
+
+| Parameter | Type                             | Beschreibung                    |
+| --------- | -------------------------------- | ------------------------------- |
+| name      | string                           | name of the recipe              |
+| data      | [IData](/vanilla/api/data/IData) | data representing the json file |
+
 
 ### addRecipe
 
@@ -36,7 +54,130 @@ furnace.addRecipe("wool2diamond", <item:minecraft:diamond>, <tag:minecraft:wool>
 | cookTime  | int                                           | how long it takes to cook       |
 
 
+### getAllRecipes
+
+Return Type: stdlib.List&lt;[WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)&gt;
+
+```zenscript
+ICookingRecipeManager.getAllRecipes() as stdlib.List<WrapperRecipe>
+furnace.getAllRecipes();
+```
+
+### getRecipeByName
+
+Return Type: [WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)
+
+```zenscript
+ICookingRecipeManager.getRecipeByName(name as string) as WrapperRecipe
+```
+
+| Parameter | Type   | Beschreibung            |
+| --------- | ------ | ----------------------- |
+| name      | string | No Description Provided |
+
+
+### getRecipesByAusgabe
+
+Return Type: stdlib.List&lt;[WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)&gt;
+
+```zenscript
+ICookingRecipeManager.getRecipesByOutput(output as IIngredient) as stdlib.List<WrapperRecipe>
+```
+
+| Parameter | Type                                          | Beschreibung            |
+| --------- | --------------------------------------------- | ----------------------- |
+| output    | [IIngredient](/vanilla/api/items/IIngredient) | No Description Provided |
+
+
+### removeAll
+
+Remove all recipes in this registry
+
+Return Type: void
+
+```zenscript
+ICookingRecipeManager.removeAll() as void
+furnace.removeAll();
+```
+
+### removeByModid
+
+Remove recipe based on Registry name modid
+
+Return Type: void
+
+```zenscript
+ICookingRecipeManager.removeByModid(modid as string) as void
+furnace.removeByModid("minecraft");
+```
+
+| Parameter | Type   | Beschreibung                   |
+| --------- | ------ | ------------------------------ |
+| modid     | string | modid of the recipes to remove |
+
+
+Remove recipe based on Registry name modid with an added exclusion check, so you can remove the whole mod besides a few specified.
+
+Return Type: void
+
+```zenscript
+ICookingRecipeManager.removeByModid(modid as string, exclude as RecipeFilter) as void
+furnace.removeByModid("minecraft", (name as string) => {return name == "orange_wool";});
+```
+
+| Parameter    | Type                                             | Beschreibung                   |
+| ------------ | ------------------------------------------------ | ------------------------------ |
+| modid        | string                                           | modid of the recipes to remove |
+| ausschließen | [RecipeFilter](/vanilla/api/recipe/RecipeFilter) | zu entfernende Rezepte.        |
+
+
+### removeByName
+
+Remove recipe based on Registry name
+
+Return Type: void
+
+```zenscript
+ICookingRecipeManager.removeByName(name as string) as void
+furnace.removeByName("minecraft:furnace");
+```
+
+| Parameter | Type   | Beschreibung                      |
+| --------- | ------ | --------------------------------- |
+| name      | string | registry name of recipe to remove |
+
+
+### removeByRegex
+
+Remove recipe based on regex
+
+Return Type: void
+
+```zenscript
+ICookingRecipeManager.removeByRegex(regex as string) as void
+furnace.removeByRegex("\\d_\\d");
+```
+
+| Parameter | Type   | Beschreibung           |
+| --------- | ------ | ---------------------- |
+| regex     | string | regex to match against |
+
+
 ### removeRecipe
+
+Remove a recipe based on it's output.
+
+Return Type: void
+
+```zenscript
+ICookingRecipeManager.removeRecipe(output as IItemStack) as void
+furnace.removeRecipe(<item:minecraft:glass>);
+```
+
+| Parameter | Type                                        | Beschreibung         |
+| --------- | ------------------------------------------- | -------------------- |
+| output    | [IItemStack](/vanilla/api/items/IItemStack) | output of the recipe |
+
 
 Removes a recipe based on it's output and input.
 
