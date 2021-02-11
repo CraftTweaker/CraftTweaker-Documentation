@@ -12,3 +12,88 @@ import crafttweaker.api.item.IngredientList;
 IngredientList implements the following interfaces. That means all methods defined in these interfaces are also available in IngredientList
 
 - [材料（IIngredient）](/vanilla/api/items/IIngredient)
+
+## Casters
+
+| 结果类型                                       | 是否隐藏 |
+| ------------------------------------------ | ---- |
+| [IData](/vanilla/api/data/IData)           | true |
+| [MapData #地图数据](/vanilla/api/data/MapData) | true |
+
+## 方法
+
+### anyDamage
+
+Return Type: [MCIngredientConditioned](/vanilla/api/items/MCIngredientConditioned)&lt;[IIngredient](/vanilla/api/items/IIngredient)&gt;
+
+```zenscript
+IngredientList.anyDamage() as MCIngredientConditioned<IIngredient>
+myIngredientList.anyDamage();
+```
+
+### getRemainingItem
+
+When this ingredient stack is crafted, what will remain in the grid? Does not check if the stack matches though! Used e.g. in Crafting Table recipes.
+
+Return Type: [IItemStack](/vanilla/api/items/IItemStack)
+
+```zenscript
+IngredientList.getRemainingItem(stack as IItemStack) as IItemStack
+myIngredientList.getRemainingItem(<item:minecraft:iron_ingot>);
+```
+
+| 参数    | 类型                                          | 描述                                        |
+| ----- | ------------------------------------------- | ----------------------------------------- |
+| stack | [IItemStack](/vanilla/api/items/IItemStack) | The stack to provide for this ingredient. |
+
+
+### matches
+
+Does the given stack match the ingredient?
+
+Return Type: boolean
+
+```zenscript
+IngredientList.matches(stack as IItemStack) as boolean
+myIngredientList.matches(<item:minecraft:iron_ingot>);
+```
+
+| 参数    | 类型                                          | 描述                 |
+| ----- | ------------------------------------------- | ------------------ |
+| stack | [IItemStack](/vanilla/api/items/IItemStack) | The stack to check |
+
+
+### onlyDamaged
+
+Return Type: [MCIngredientConditioned](/vanilla/api/items/MCIngredientConditioned)&lt;[IIngredient](/vanilla/api/items/IIngredient)&gt;
+
+```zenscript
+IngredientList.onlyDamaged() as MCIngredientConditioned<IIngredient>
+myIngredientList.onlyDamaged();
+```
+
+### onlyIf
+
+Return Type: [MCIngredientConditioned](/vanilla/api/items/MCIngredientConditioned)&lt;[IIngredient](/vanilla/api/items/IIngredient)&gt;
+
+```zenscript
+IngredientList.onlyIf(uid as string, function as Predicate<IItemStack>) as MCIngredientConditioned<IIngredient>
+```
+
+| 参数       | 类型                                                                       | 描述                      | 可选    | DefaultValue |
+| -------- | ------------------------------------------------------------------------ | ----------------------- | ----- | ------------ |
+| uid      | string                                                                   | No Description Provided | false |              |
+| function | Predicate&lt;[IItemStack](/vanilla/api/items/IItemStack)&gt; | No Description Provided | true  |              |
+
+
+## 运算符
+
+### OR
+
+```zenscript
+myIngredientList | other as IIngredient
+```
+
+
+
+
