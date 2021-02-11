@@ -14,6 +14,7 @@ import crafttweaker.api.data.ByteData;
 ByteData实现了以下接口。 That means all methods defined in these interfaces are also available in ByteData
 
 - [INumberData #编号数据](/vanilla/api/data/INumberData)
+
 ## Constructor #构造函数
 
 No Description Provided
@@ -25,5 +26,151 @@ new ByteData(internal as byte) as ByteData
 | -------- | ---- | ----------------------- |
 | internal | byte | No Description Provided |
 
+
+
+## Casters
+
+| 结果类型                                                        | 是否隐藏  |
+| ----------------------------------------------------------- | ----- |
+| byte                                                        | false |
+| double                                                      | false |
+| float                                                       | false |
+| [ICollectionData #所收集数据](/vanilla/api/data/ICollectionData) | false |
+| int                                                         | false |
+| [INumberData #编号数据](/vanilla/api/data/INumberData)          | false |
+| long                                                        | false |
+| short                                                       | false |
+
+## 方法
+
+### asCollection
+
+Return Type: [ICollectionData](/vanilla/api/data/ICollectionData)
+
+```zenscript
+ByteData.asCollection() as ICollectionData
+4.asCollection();
+```
+
+### asList #作为列表
+
+获取列表<IData> representation of this IData, returns null on anything but [ListData](/vanilla/api/data/ListData).
+
+Return Type: stdlib.List&lt;[IData](/vanilla/api/data/IData)&gt;
+
+```zenscript
+ByteData.asList() as stdlib.List<IData>
+4.asList();
+```
+
+### asMap #作为地图数据
+
+Gets a Map<String, IData> representation of this IData, returns null on anything but [MapData](/vanilla/api/data/MapData).
+
+Return Type: [IData](/vanilla/api/data/IData)[string]
+
+```zenscript
+ByteData.asMap() as IData[string]
+4.asMap();
+```
+
+### asNumber
+
+Return Type: [INumberData](/vanilla/api/data/INumberData)
+
+```zenscript
+ByteData.asNumber() as INumberData
+4.asNumber();
+```
+
+### getByte
+
+Gets the value of this [IData](/vanilla/api/data/IData) as a byte
+
+Return Type: byte
+
+```zenscript
+ByteData.getByte() as byte
+4.getByte();
+```
+
+### getDouble
+
+Gets the value of this [IData](/vanilla/api/data/IData) as a double
+
+Return Type: double
+
+```zenscript
+ByteData.getDouble() as double
+4.getDouble();
+```
+
+### getFloat
+
+Gets the value of this [IData](/vanilla/api/data/IData) as a float
+
+Return Type: float
+
+```zenscript
+ByteData.getFloat() as float
+4.getFloat();
+```
+
+### getId #获取id
+
+获取内部NBT标签的 ID。
+
+ 用来确定哪些NBT类型被存储(例如在列表中)
+
+Return Type: byte
+
+```zenscript
+ByteData.getId() as byte
+4.getId();
+```
+
+### getInt
+
+Gets the value of this [IData](/vanilla/api/data/IData) as an int
+
+Return Type: int
+
+```zenscript
+ByteData.getInt() as int
+4.getInt();
+```
+
+### getLong
+
+Gets the value of this [IData](/vanilla/api/data/IData) as a long
+
+Return Type: long
+
+```zenscript
+ByteData.getLong() as long
+4.getLong();
+```
+
+### getShort
+
+Gets the value of this [IData](/vanilla/api/data/IData) as a short
+
+Return Type: short
+
+```zenscript
+ByteData.getShort() as short
+4.getShort();
+```
+
+### getString #获取字符串
+
+获取内部INBT标记的字符串表示形式
+
+Return Type: string
+
+```zenscript
+ByteData.getString() as string
+4.getString();
+```
 
 
