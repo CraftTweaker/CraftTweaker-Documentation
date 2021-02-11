@@ -12,6 +12,7 @@ import crafttweaker.api.fluid.IFluidStack;
 IFluidStack implements the following interfaces. That means all methods defined in these interfaces are also available in IFluidStack
 
 - [CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
+
 ## Casters
 
 | Result type                           | Is Implicit |
@@ -100,10 +101,11 @@ myIFluidStack * 1000
 
 ## Properties
 
-| Name         | Type                                                                  | Has Getter | Has Setter |
-| ------------ | --------------------------------------------------------------------- | ---------- | ---------- |
-| amount       | int                                                                   | true       | false      |
-| empty        | boolean                                                               | true       | false      |
-| fluid        | [MCFluid](/vanilla/api/fluid/MCFluid)                                 | true       | false      |
-| registryName | [format@@0 MCRessourceLocation](/vanilla/api/util/MCResourceLocation) | true       | false      |
+| Name          | Type                                                                  | Has Getter | Has Setter |
+| ------------- | --------------------------------------------------------------------- | ---------- | ---------- |
+| amount        | int                                                                   | true       | false      |
+| commandString | string                                                                | true       | false      |
+| empty         | boolean                                                               | true       | false      |
+| fluid         | [MCFluid](/vanilla/api/fluid/MCFluid)                                 | true       | false      |
+| registryName  | [format@@0 MCRessourceLocation](/vanilla/api/util/MCResourceLocation) | true       | false      |
 
