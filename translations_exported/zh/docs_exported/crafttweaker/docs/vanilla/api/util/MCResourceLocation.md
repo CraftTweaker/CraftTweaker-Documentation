@@ -12,6 +12,7 @@ import crafttweaker.api.util.MCResourceLocation;
 MCResourceLocation implements the following interfaces. That means all methods defined in these interfaces are also available in MCResourceLocation
 
 - Comparable&lt;[MCResourceLocation](/vanilla/api/util/MCResourceLocation)&gt;
+
 ## Constructor #构造函数
 
 
