@@ -12,6 +12,7 @@ import crafttweaker.api.item.MCIngredientTransformed;
 MCIngredientTransformed implements the following interfaces. That means all methods defined in these interfaces are also available in MCIngredientTransformed
 
 - [材料（IIngredient）](/vanilla/api/items/IIngredient)
+
 ## Casters
 
 | 结果类型                                       | 是否隐藏 |
@@ -21,7 +22,30 @@ MCIngredientTransformed implements the following interfaces. That means all meth
 
 ## 方法
 
+### anyDamage
+
+Return Type: [MCIngredientConditioned](/vanilla/api/items/MCIngredientConditioned)&lt;[IIngredient](/vanilla/api/items/IIngredient)&gt;
+
+```zenscript
+MCIngredientTransformed.anyDamage() as MCIngredientConditioned<IIngredient>
+myMCIngredientTransformed.anyDamage();
+```
+
 ### matches
+
+Does the given stack match the ingredient?
+
+Return Type: boolean
+
+```zenscript
+MCIngredientTransformed.matches(stack as IItemStack) as boolean
+myMCIngredientTransformed.matches(<item:minecraft:iron_ingot>);
+```
+
+| 参数    | 类型                                          | 描述                 |
+| ----- | ------------------------------------------- | ------------------ |
+| stack | [IItemStack](/vanilla/api/items/IItemStack) | The stack to check |
+
 
 Return Type: boolean
 
@@ -33,6 +57,39 @@ MCIngredientTransformed.matches(stack as IItemStack, ignoreDamage as boolean) as
 | ----- | ------------------------------------------- | ----------------------- |
 | stack | [IItemStack](/vanilla/api/items/IItemStack) | No Description Provided |
 | 忽略伤害  | boolean                                     | No Description Provided |
+
+
+### onlyDamaged
+
+Return Type: [MCIngredientConditioned](/vanilla/api/items/MCIngredientConditioned)&lt;[IIngredient](/vanilla/api/items/IIngredient)&gt;
+
+```zenscript
+MCIngredientTransformed.onlyDamaged() as MCIngredientConditioned<IIngredient>
+myMCIngredientTransformed.onlyDamaged();
+```
+
+### onlyIf
+
+Return Type: [MCIngredientConditioned](/vanilla/api/items/MCIngredientConditioned)&lt;[IIngredient](/vanilla/api/items/IIngredient)&gt;
+
+```zenscript
+MCIngredientTransformed.onlyIf(uid as string, function as Predicate<IItemStack>) as MCIngredientConditioned<IIngredient>
+```
+
+| 参数       | 类型                                                                       | 描述                      | 可选    | DefaultValue |
+| -------- | ------------------------------------------------------------------------ | ----------------------- | ----- | ------------ |
+| uid      | string                                                                   | No Description Provided | false |              |
+| function | Predicate&lt;[IItemStack](/vanilla/api/items/IItemStack)&gt; | No Description Provided | true  |              |
+
+
+## 运算符
+
+### OR
+
+```zenscript
+myMCIngredientTransformed | other as IIngredient
+```
+
 
 
 
