@@ -12,6 +12,7 @@ import crafttweaker.api.tag.MCTagWithAmount;
 MCTagWithAmount implements the following interfaces. That means all methods defined in these interfaces are also available in MCTagWithAmount
 
 - [CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
+
 ## Methoden
 
 ### getAmount
