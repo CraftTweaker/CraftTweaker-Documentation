@@ -14,6 +14,7 @@ import crafttweaker.api.tag.MCTag;
 MCTag implements the following interfaces. That means all methods defined in these interfaces are also available in MCTag
 
 - [CommandStringDisplayable #命令字符串可显示](/vanilla/api/brackets/CommandStringDisplayable)
+
 ## Casters
 
 | 结果类型                                                                      | 是否隐藏 |
