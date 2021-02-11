@@ -12,6 +12,7 @@ import crafttweaker.api.entity.MCEntityType;
 MCEntityType实现了以下接口。 That means all methods defined in these interfaces are also available in MCEntityType
 
 - [CommandStringDisplayable #命令字符串可显示](/vanilla/api/brackets/CommandStringDisplayable)
+
 ## 参数
 
 | 名称                 | 类型                                                                           | 可获得  | 可设置   |
