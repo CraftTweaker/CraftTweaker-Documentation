@@ -16,6 +16,7 @@ import crafttweaker.api.item.Ingredient;
 Ingredient implements the following interfaces. That means all methods defined in these interfaces are also available in Ingredient
 
 - Predicate&lt;[ItemStack](/vanilla/api/item/ItemStack)&gt;
+
 ## Утилиты
 
 | Тип результата                                | Является неявным |
