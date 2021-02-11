@@ -14,10 +14,12 @@ import crafttweaker.api.item.IIngredientWithAmount;
 IIngredientWithAmount implements the following interfaces. That means all methods defined in these interfaces are also available in IIngredientWithAmount
 
 - [CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
+
 ## Свойства
 
-| Название   | Тип                                           | Имеет Getter | Имеет Setter |
-| ---------- | --------------------------------------------- | ------------ | ------------ |
-| amount     | int                                           | true         | false        |
-| ingredient | [IIngredient](/vanilla/api/items/IIngredient) | true         | false        |
+| Название      | Тип                                           | Имеет Getter | Имеет Setter |
+| ------------- | --------------------------------------------- | ------------ | ------------ |
+| amount        | int                                           | true         | false        |
+| commandString | string                                        | true         | false        |
+| ingredient    | [IIngredient](/vanilla/api/items/IIngredient) | true         | false        |
 
