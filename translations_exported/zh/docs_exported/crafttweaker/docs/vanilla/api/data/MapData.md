@@ -14,6 +14,7 @@ import crafttweaker.api.data.MapData;
 mapData实现了以下接口。 That means all methods defined in these interfaces are also available in MapData
 
 - [IData](/vanilla/api/data/IData)
+
 ## Constructor #构造函数
 
 No Description Provided
@@ -35,11 +36,42 @@ new MapData(map as IData[string]) as MapData
 
 ## Casters
 
-| 结果类型                                     | 是否隐藏 |
-| ---------------------------------------- | ---- |
-| [IData](/vanilla/api/data/IData)[string] | true |
+| 结果类型                                                        | 是否隐藏  |
+| ----------------------------------------------------------- | ----- |
+| [ICollectionData #所收集数据](/vanilla/api/data/ICollectionData) | false |
+| [IData](/vanilla/api/data/IData)[string]                    | true  |
+| [INumberData #编号数据](/vanilla/api/data/INumberData)          | false |
 
 ## 方法
+
+### asCollection
+
+Return Type: [ICollectionData](/vanilla/api/data/ICollectionData)
+
+```zenscript
+MapData.asCollection() as ICollectionData
+{Hello : "World", Somewhere: "Over the rainbow"}.asCollection();
+```
+
+### asList #作为列表
+
+获取列表<IData> representation of this IData, returns null on anything but [ListData](/vanilla/api/data/ListData).
+
+Return Type: stdlib.List&lt;[IData](/vanilla/api/data/IData)&gt;
+
+```zenscript
+MapData.asList() as stdlib.List<IData>
+{Hello : "World", Somewhere: "Over the rainbow"}.asList();
+```
+
+### asNumber
+
+Return Type: [INumberData](/vanilla/api/data/INumberData)
+
+```zenscript
+MapData.asNumber() as INumberData
+{Hello : "World", Somewhere: "Over the rainbow"}.asNumber();
+```
 
 ### contains #容器
 
@@ -72,6 +104,30 @@ MapData.getAt(key as string) as IData
 | --- | ------ | ------ |
 | key | string | 要搜索的密钥 |
 
+
+### getId #获取id
+
+获取内部NBT标签的 ID。
+
+ 用来确定哪些NBT类型被存储(例如在列表中)
+
+Return Type: byte
+
+```zenscript
+MapData.getId() as byte
+{Hello : "World", Somewhere: "Over the rainbow"}.getId();
+```
+
+### getString #获取字符串
+
+获取内部INBT标记的字符串表示形式
+
+Return Type: string
+
+```zenscript
+MapData.getString() as string
+{Hello : "World", Somewhere: "Over the rainbow"}.getString();
+```
 
 ### merge #合并
 
