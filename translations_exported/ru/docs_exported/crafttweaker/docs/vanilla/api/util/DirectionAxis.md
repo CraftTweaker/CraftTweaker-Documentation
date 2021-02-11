@@ -18,6 +18,7 @@ DirectionAxis extends Enum&lt;[DirectionAxis](/vanilla/api/util/DirectionAxis)&g
 DirectionAxis implements the following interfaces. That means all methods defined in these interfaces are also available in DirectionAxis
 
 - Predicate
+
 ## Methods
 
 ### equals
