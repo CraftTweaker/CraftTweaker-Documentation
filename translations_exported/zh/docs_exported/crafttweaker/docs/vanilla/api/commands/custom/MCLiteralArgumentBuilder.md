@@ -84,6 +84,24 @@ MCLiteralArgumentBuilder.forward(target as MCCommandNode, modifier as MCRedirect
 | fork     | boolean                                                     | No Description Provided |
 
 
+### 获取参数
+
+Return Type: Collection&lt;[MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)&gt;
+
+```zenscript
+MCLiteralArgumentBuilder.getArguments() as Collection<MCCommandNode>
+myMCLiteralArgumentBuilder.getArguments();
+```
+
+### getCommand
+
+Return Type: [MCCommand](/vanilla/api/commands/custom/MCCommand)
+
+```zenscript
+MCLiteralArgumentBuilder.getCommand() as MCCommand
+myMCLiteralArgumentBuilder.getCommand();
+```
+
 ### getLiteral
 
 Return Type: string
@@ -91,6 +109,24 @@ Return Type: string
 ```zenscript
 MCLiteralArgumentBuilder.getLiteral() as string
 myMCLiteralArgumentBuilder.getLiteral();
+```
+
+### 获取重定向
+
+Return Type: [MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)
+
+```zenscript
+MCLiteralArgumentBuilder.getRedirect() as MCCommandNode
+myMCLiteralArgumentBuilder.getRedirect();
+```
+
+### 获取重定向修改器
+
+Return Type: [MCRedirectModifier](/vanilla/api/commands/custom/MCRedirectModifier)
+
+```zenscript
+MCLiteralArgumentBuilder.getRedirectModifier() as MCRedirectModifier
+myMCLiteralArgumentBuilder.getRedirectModifier();
 ```
 
 ### getRequirement
@@ -109,6 +145,15 @@ Return Type: int
 ```zenscript
 MCLiteralArgumentBuilder.hashCode() as int
 myMCLiteralArgumentBuilder.hashCode();
+```
+
+### isFork
+
+Return Type: boolean
+
+```zenscript
+MCLiteralArgumentBuilder.isFork() as boolean
+myMCLiteralArgumentBuilder.isFork();
 ```
 
 ### 重定向
