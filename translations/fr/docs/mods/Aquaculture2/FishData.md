@@ -7,14 +7,14 @@ Requires Aquaculture 2 version 2.1.14 or newer.
 Fish Data is what handles the amount of fish fillet's you get, when filleting a fish. Additional, it handles the min and max weight of fish. (If the config option is enabled)
 
 ## Package
-`mods.aquuaculture.FishData`
+`mods.aquaculture.FishData`
 
 ## Adding Fish Data
 
 ```zenscript
-// mods.aquuaculture.FishData.add(fishStack, minWeight, maxWeight, filletAmount);
+// mods.aquaculture.FishData.add(fishStack, minWeight, maxWeight, filletAmount);
 
-mods.aquuaculture.FishData.add(<item:aquuaculture:atlantic_cod>, 10.0, 211.0, 6);
+mods.aquaculture.FishData.add(<item:aquuaculture:atlantic_cod>, 10.0, 211.0, 6);
 ```
 
 - `fishStack` [IItemStack](/vanilla/api/items/IItemStack)
