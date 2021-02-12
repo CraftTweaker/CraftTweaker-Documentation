@@ -185,7 +185,7 @@ Return Type: void
 
 ```zenscript
 BlastFurnaceManager.removeRecipe(output as IItemStack, input as IIngredient) as void
-blastFurnace.removeRecipe(<item:minecraft:diamond>, <tag:minecraft:wool>);
+blastFurnace.removeRecipe(<item:minecraft:diamond>, <tag:items:minecraft:wool>);
 ```
 
 | Параметр | Тип                                           | Description                          |
