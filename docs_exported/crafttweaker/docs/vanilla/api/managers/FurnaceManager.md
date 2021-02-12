@@ -185,7 +185,7 @@ Return Type: void
 
 ```zenscript
 FurnaceManager.removeRecipe(output as IItemStack, input as IIngredient) as void
-furnace.removeRecipe(<item:minecraft:diamond>, <tag:minecraft:wool>);
+furnace.removeRecipe(<item:minecraft:diamond>, <tag:items:minecraft:wool>);
 ```
 
 | Parameter | Type | Description |
