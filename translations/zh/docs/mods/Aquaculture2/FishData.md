@@ -17,8 +17,19 @@ Fish Data is what handles the amount of fish fillet's you get, when filleting a 
 mods.aquaculture.FishData.add(<item:aquuaculture:atlantic_cod>, 10.0, 211.0, 6);
 ```
 
-- `fishStack` [IItemStack](/vanilla/api/items/IItemStack)
+- `fishStack` [MCItemDefinition](/vanilla/api/item/MCItemDefinition)
 - `minWeight` Double number (Only used if weight config is enabled)
 - `maxWeight` Double number (Only used if weight config is enabled)
 - `filletAmount` Integer number (Used when weight config is disabled)
+
+
+## Removing Fish Data
+
+```zenscript
+// mods.aquaculture.FishData.remove(fishStack);
+
+mods.aquaculture.FishData.add(<item:aquuaculture:atlantic_cod>);
+```
+
+- `fishStack` [MCItemDefinition](/vanilla/api/item/MCItemDefinition)
 
