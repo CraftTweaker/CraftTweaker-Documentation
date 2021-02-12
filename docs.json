@@ -29,6 +29,9 @@
       }
     },
     "Mods": {
+      "Aquaculture 2": {
+        "Fish Data": "mods/Aquaculture2/FishData.md
+      },
       "Blood Magic": {
         "Alchemical Reaction Chamber": "mods/BloodMagic/AlchemicalReactionChamber.md",
         "Alchemy Array": "mods/BloodMagic/AlchemyArray.md",
