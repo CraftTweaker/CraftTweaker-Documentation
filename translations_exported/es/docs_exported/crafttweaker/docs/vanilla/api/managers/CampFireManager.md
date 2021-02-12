@@ -185,7 +185,7 @@ Return Type: void
 
 ```zenscript
 CampFireManager.removeRecipe(output as IItemStack, input as IIngredient) as void
-campfire.removeRecipe(<item:minecraft:diamond>, <tag:minecraft:wool>);
+campfire.removeRecipe(<item:minecraft:diamond>, <tag:items:minecraft:wool>);
 ```
 
 | Parameter | Type                                          | Description                          |
