@@ -4,7 +4,7 @@ You can use any text editor that you prefer, however it is generally advised to 
 Here are some great ones that should be perfect for general scripting
 * [Visual Studio Code](https://code.visualstudio.com/)
 * [Sublime Text](https://www.sublimetext.com/)
-* [Nodepad++](https://notepad-plus-plus.org/) (Windows only)
+* [Notepad++](https://notepad-plus-plus.org/) (Windows only)
 
 ## Plugins
 Plugins aren't required to write scripts, but they do help by adding small niceties such as Syntax Highlighting.
