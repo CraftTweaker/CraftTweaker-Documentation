@@ -185,7 +185,7 @@ Return Type: void
 
 ```zenscript
 SmokerManager.removeRecipe(output as IItemStack, input as IIngredient) as void
-smoker.removeRecipe(<item:minecraft:diamond>, <tag:minecraft:wool>);
+smoker.removeRecipe(<item:minecraft:diamond>, <tag:items:minecraft:wool>);
 ```
 
 | Parameter | Type                                          | Beschreibung                         |
