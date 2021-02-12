@@ -42,7 +42,7 @@ Return Type: void
 
 ```zenscript
 StoneCutterManager.addRecipe(recipeName as string, output as IItemStack, input as IIngredient) as void
-stoneCutter.addRecipe("recipe_name", <item:minecraft:grass>, <tag:minecraft:wool>);
+stoneCutter.addRecipe("recipe_name", <item:minecraft:grass>, <tag:items:minecraft:wool>);
 ```
 
 | Parameter  | Type                                          | Beschreibung                                        |
