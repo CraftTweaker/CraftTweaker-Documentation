@@ -940,6 +940,12 @@
         "Squeezer": "Mods/IntegratedDynamics/Squeezer.md",
         "MechanicalSqueezer": "Mods/IntegratedDynamics/MechanicalSqueezer.md"
       },
+      "Integration Foregoing": {
+        "Integration Foregoing": "Mods/Integration_Foregoing/Integration_Foregoing.md",
+        "Washing Factory": "Mods/Integration_Foregoing/WashingFactory.md",
+        "Fermentation Station": "Mods/Integration_Foregoing/FermentationStation.md",
+        "Fluid Sieving Machine": "Mods/Integration_Foregoing/FluidSievingMachine.md"
+      },
       "InWorldCrafting": {
         "InWorldCrafting": "Mods/InWorldCrafting/InWorldCrafting.md"
       },
