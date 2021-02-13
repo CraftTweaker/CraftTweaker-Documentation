@@ -94,6 +94,7 @@ That means all functionality that is available to [IIngredient](/Vanilla/Variabl
 | enchantments          |              | List<[IEnchantment](/Vanilla/Enchantments/IEnchantment/)\> |
 | совпадающий Тег Точно |              | bool                                                        |
 | maxItemUseDuration    |              | int                                                         |
+| capNBT                |              | [IData](/Vanilla/Data/IData/)                               |
 
 #### Количество
 
@@ -145,6 +146,15 @@ That means all functionality that is available to [IIngredient](/Vanilla/Variabl
 | `stack.withDisplayName(String name)` | A new IItemStack with the changed property. Unlike the displayName setter, this only applies to this single item. | string (supports color codes with "§")   |
 | `stack.withLore(String[] lore)`      | A new IItemStack with the changed property.                                                                       | string[] (supports color codes with "§") |
 | `stack.clearCustomName()`            | void                                                                                                              |                                          |
+
+#### Cap NBT
+
+Gets or Sets an item's forge capability data. In most cases, the tag of the stack has what you need, this is mainly for advanced use cases.
+
+| Вызов метода                   | Возвращает                              |
+| ------------------------------ | --------------------------------------- |
+| `stack.getCapNBT()`            | [IData](/Vanilla/Data/IData/)           |
+| `stack.withCapNBT(IData data)` | Новый IItemStack с измененным свойством |
 
 #### Enchantments
 
