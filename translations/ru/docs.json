@@ -148,7 +148,7 @@
           "EntityLivingDamageEvent": "Vanilla/Events/Events/EntityLivingDamage.md",
           "EntityLivingDeathEvent": "Vanilla/Events/Events/EntityLivingDeath.md",
           "EntityLivingDeathDropsEvent": "Vanilla/Events/Events/EntityLivingDeathDrops.md",
-          "EntityLivingEquipmentChangeEvent": "Vanilla/Events/Events/EntityLivingEquimentChange.md",
+          "EntityLivingEquipmentChangeEvent": "Vanilla/Events/Events/EntityLivingEquipmentChange.md",
           "EntityLivingFallEvent": "Vanilla/Events/Events/EntityLivingFall.md",
           "EntityLivingHealEvent": "Vanilla/Events/Events/EntityLivingHeal.md",
           "EntityLivingHurtEvent": "Vanilla/Events/Events/EntityLivingHurt.md",
