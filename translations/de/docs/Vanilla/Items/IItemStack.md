@@ -94,6 +94,7 @@ Read how to use them [here](/UsingThisWiki/). Also, check out the examples below
 | enchantments        |                     | List<[IEnchantment](/Vanilla/Enchantments/IEnchantment/)\> |
 | matchTagExact       |                     | bool                                                        |
 | maxItemUseDuration  |                     | int                                                         |
+| capNBT              |                     | [IData](/Vanilla/Data/IData/)                               |
 
 #### Amount
 
@@ -145,6 +146,15 @@ Read how to use them [here](/UsingThisWiki/). Also, check out the examples below
 | `stack.withDisplayName(String name)` | A new IItemStack with the changed property. Unlike the displayName setter, this only applies to this single item. | string (supports color codes with "§")   |
 | `stack.withLore(String[] lore)`      | A new IItemStack with the changed property.                                                                       | string[] (supports color codes with "§") |
 | `stack.clearCustomName()`            | void (nothing)                                                                                                    |                                          |
+
+#### Cap NBT
+
+Gets or Sets an item's forge capability data. In most cases, the tag of the stack has what you need, this is mainly for advanced use cases.
+
+| Methodenaufruf                 | Rückgabewert                               |
+| ------------------------------ | ------------------------------------------ |
+| `stack.getCapNBT()`            | [IData](/Vanilla/Data/IData/)              |
+| `stack.withCapNBT(IData data)` | A new IItemStack with the changed property |
 
 #### Enchantments
 
