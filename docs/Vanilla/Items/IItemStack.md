@@ -156,7 +156,7 @@ Read how to use them [here](/UsingThisWiki/). Also, check out the examples below
 
 #### Cap NBT
 
-get or set item's forge capability data. In most cases, stack tags already have done almost everything. You basically don't need this.
+Gets or Sets an item's forge capability data. In most cases, the tag of the stack has what you need, this is mainly for advanced use cases.
 
 | Method call                    | Returns                                                        |
 |-----------------------         | ------------------------------                                 |
