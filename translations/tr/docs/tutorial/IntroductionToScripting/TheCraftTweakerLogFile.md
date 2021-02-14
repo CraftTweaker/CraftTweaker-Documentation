@@ -19,7 +19,7 @@ The `crafttweaker.log` file uses a specific format in it's output, that format i
 An example of how this may look would be:
 
 ```plaintext
-[14:58:06.697][DONE][SERVER][INFO] Hello world!
+[14:58:06.697][DONE][SERVER][INFO] Merhaba Dünya!
 ```
 
 The format is used for debugging purposes and the only time the format is not used is when printing command dumps, where it just prints the message so it is easier to copy and paste it.
