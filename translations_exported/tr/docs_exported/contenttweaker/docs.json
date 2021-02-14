@@ -1,0 +1,44 @@
+{
+  "nav": {
+    "Mods": {
+      "Contenttweaker": {
+        "API": {
+          "BracketDumpers": "mods/contenttweaker/API/BracketDumpers.md",
+          "BracketHandlers": "mods/contenttweaker/API/BracketHandlers.md",
+          "BracketValidators": "mods/contenttweaker/API/BracketValidators.md",
+          "Api": {
+            "IIsBuilder": "mods/contenttweaker/API/api/IIsBuilder.md"
+          },
+          "Block": {
+            "BlockBuilder": "mods/contenttweaker/API/block/BlockBuilder.md",
+            "BlockTypeBuilder": "mods/contenttweaker/API/block/BlockTypeBuilder.md",
+            "Basic": {
+              "BlockBuilderBasic": "mods/contenttweaker/API/block/basic/BlockBuilderBasic.md"
+            },
+            "Pillar": {
+              "BlockBuilderPillarRotatable": "mods/contenttweaker/API/block/pillar/BlockBuilderPillarRotatable.md"
+            },
+            "Slab": {
+              "BlockBuilderSlab": "mods/contenttweaker/API/block/slab/BlockBuilderSlab.md"
+            },
+            "Stairs": {
+              "BlockBuilderStairs": "mods/contenttweaker/API/block/stairs/BlockBuilderStairs.md"
+            }
+          },
+          "Item": {
+            "ItemBuilder": "mods/contenttweaker/API/item/ItemBuilder.md",
+            "ItemTypeBuilder": "mods/contenttweaker/API/item/ItemTypeBuilder.md",
+            "MCItemGroup": "mods/contenttweaker/API/item/MCItemGroup.md",
+            "MCToolType": "mods/contenttweaker/API/item/MCToolType.md",
+            "Basic": {
+              "ItemBuilderBasic": "mods/contenttweaker/API/item/basic/ItemBuilderBasic.md"
+            },
+            "Tool": {
+              "ItemBuilderTool": "mods/contenttweaker/API/item/tool/ItemBuilderTool.md"
+            }
+          }
+        }
+      }
+    }
+  }
+}
