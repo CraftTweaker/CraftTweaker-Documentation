@@ -15,24 +15,24 @@ Script dosyaları bir dünyaya giriş yapıldığında iki kez yüklenir. Birinc
 
 Bu yaptığınız her değişikliğin iki kez çalışacağı anlamına gelmiyor. Script tarafından yapılan değişiklikler sunucu tarafında veya istemci tarafında çalışabilirler. Örneğin lokalizasyon ayarlama sadece istemci tarafında çalışırken yeni bir tarif(recipe) ekleme işlemi ise sadece sunucu tarafında çalışır.
 
-Bir sunucuya girdiğinizde, o sunucu istemcinize kendi script dosyalarını gönderir. Böylelikle istemci de bu script dosyalarını çalıştırabilir. This does mean that a client without any scripts, can join a server and get the changes (useful if you need to disable an item on the server but don't want to force clients to download extra files!)
+Bir sunucuya girdiğinizde, o sunucu istemcinize kendi script dosyalarını gönderir. Böylelikle istemci de bu script dosyalarını çalıştırabilir. Bu, hiçbir script dosyasına sahip olmayan bir istemcinin bir sunucuya katılabileceği ve yapılan değişiklikleri (örneğin sunucuda bir eşyayı devre dışı bırakmak istiyorsanız ve kullanıcıların da fazladan dosya indirmesini istemiyorsanız bu tür değişiklikler kullanışlı olabilir) alabileceği anlamına gelmez.
 
 
 ### Writing your first script
 
-To get started with Scripts, you can create a very basic file, called `hello.zs` in the `<gamedir>/scripts>` folder; If you aren't sure where the folder is, just run `/ct scripts` and it should open!
+Script dosyalarını kullanmaya başlamak için  `<gamedir>/scripts` klasörü içerisinde ` hello.zs` adında basit bir script dosyası oluşturabilirsiniz. Eğer bu klasörün nerede olduğunu bilmiyorsanız `/ct scripts` komutunu oyundayken çalıştırırsanız klasör açılacaktır.
 
 In `hello.zs` put the following line
 
 ```zenscript
-println("Hello world!");
+println("Merhaba Dünya!");
 ```
 
-Now load up Minecraft and and take a look at the `<gamedir>/logs/crafttweaker.log` file (or run `/ct log` to have the file open in your default text editor).
+Şimdi Minecraft'ı tekrar açın ve  `<gamedir>/logs/crafttweaker.log` dosyasına bir göz atın (bu dosyayı varsayılan metin editörünüzde açmak için oyundayken `/ct log` komutunu da çalıştırabilirsiniz).
 
-The `crafttweaker.log` file is located in `<gamedir>/logs` and can be read by any program that can read plaintext files.
+`crafttweaker.log`  dosyası, `<gamedir>/logs` içerisinde bulunur ve herhangi bir metin okuyabilen program tarafından kolay bir şekilde görüntülenebilir.
 
-It is recommended to use Notepad++, Sublime Text or VSCode to edit script files, however any program will do.
+Script dosyalarını düzenlemek için Notepad++, Sublime Text veya VSCode kullanabilirsiniz. İsterseniz başka programlar da kullanabilirsiniz.
 
 When choosing a program to use to edit scripts, take a look at what Syntax highlighters are available, most common text editors have ZenScript highlighting support through the use of a plugin.
 
