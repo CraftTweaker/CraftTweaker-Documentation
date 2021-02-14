@@ -1,6 +1,6 @@
 # Commands
 
-Here are the commands that matter:
+Bazı önemli komutlar:
 ```
 /ct hand
 ```
