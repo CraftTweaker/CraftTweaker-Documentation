@@ -1,5 +1,5 @@
 # Examples
-Script examples can be found here:
+Script örneklerine buradan ulaşabilirsiniz:
 
 [Examples](https://github.com/CraftTweaker/CraftTweaker-Examples/tree/master/1.14)
 
