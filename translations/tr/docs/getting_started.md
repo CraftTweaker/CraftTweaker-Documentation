@@ -71,4 +71,4 @@ a
 multiline comment! */
 ```
 
-Just note, that `#` comments are also used for PreProcessors (TODO link to PreProcessors when they are documented), so while they are still valid comments, they could cause unwanted side effects. 
+Ayrıca `#` sembolünü kullanarak önişlemciler için de yorum satırı oluşturabilirsiniz. Bu nedenle bunlar hala geçerli yorum satırları olsa da istenmeyen yan etkilere yol açabilirler. 
