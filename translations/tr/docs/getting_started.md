@@ -52,7 +52,7 @@ Using the example above, the output would be:
 [14:58:06.697][DONE][SERVER][INFO] Merhaba Dünya!
 ```
 
-The syntax is used for debug purposes and the only time the syntax is not used, is for command dumps, in which case it just prints the message, this is done so copy pasting the dumped information is easier.
+Bilgileri bu şekilde görmek, hata ayıklamak için daha kullanışlıdır. Bu söz diziminin kullanılmadığı tek yer çıktı komutlarıdır. Yukarıdaki durumda mesajı ekrana bastırdı ve bitti. Böylelikle ekrana bastırılan bilgileri kopyalayıp yapıştırmak daha kolay olacaktır.
 
 ### Comments
 
