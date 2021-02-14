@@ -1,0 +1,209 @@
+{
+  "nav": {
+    "Vanilla": {
+      "Api": {
+        "BracketHandlers": "vanilla/api/BracketHandlers.md",
+        "Block": {
+          "Material": {
+            "MCMaterial": "vanilla/api/block/material/MCMaterial.md",
+            "MCMaterialColor": "vanilla/api/block/material/MCMaterialColor.md"
+          }
+        },
+        "Blocks": {
+          "MCBlock": "vanilla/api/blocks/MCBlock.md",
+          "MCBlockState": "vanilla/api/blocks/MCBlockState.md"
+        },
+        "Brackets": {
+          "CommandStringDisplayable": "vanilla/api/brackets/CommandStringDisplayable.md"
+        },
+        "Commands": {
+          "Custom": {
+            "CustomCommands": "vanilla/api/commands/custom/CustomCommands.md",
+            "MCAmbiguityConsumer": "vanilla/api/commands/custom/MCAmbiguityConsumer.md",
+            "MCArgumentBuilder": "vanilla/api/commands/custom/MCArgumentBuilder.md",
+            "MCArgumentCommandNode": "vanilla/api/commands/custom/MCArgumentCommandNode.md",
+            "MCCommand": "vanilla/api/commands/custom/MCCommand.md",
+            "MCCommandContext": "vanilla/api/commands/custom/MCCommandContext.md",
+            "MCCommandContextBuilder": "vanilla/api/commands/custom/MCCommandContextBuilder.md",
+            "MCCommandDispatcher": "vanilla/api/commands/custom/MCCommandDispatcher.md",
+            "MCCommandNode": "vanilla/api/commands/custom/MCCommandNode.md",
+            "MCCommandSource": "vanilla/api/commands/custom/MCCommandSource.md",
+            "MCImmutableStringReader": "vanilla/api/commands/custom/MCImmutableStringReader.md",
+            "MCLiteralArgumentBuilder": "vanilla/api/commands/custom/MCLiteralArgumentBuilder.md",
+            "MCLiteralCommandNode": "vanilla/api/commands/custom/MCLiteralCommandNode.md",
+            "MCParseResults": "vanilla/api/commands/custom/MCParseResults.md",
+            "MCParsedArgument": "vanilla/api/commands/custom/MCParsedArgument.md",
+            "MCParsedCommandNode": "vanilla/api/commands/custom/MCParsedCommandNode.md",
+            "MCRedirectModifier": "vanilla/api/commands/custom/MCRedirectModifier.md",
+            "MCRequiredArgumentBuilder": "vanilla/api/commands/custom/MCRequiredArgumentBuilder.md",
+            "MCResultConsumer": "vanilla/api/commands/custom/MCResultConsumer.md",
+            "MCRootCommandNode": "vanilla/api/commands/custom/MCRootCommandNode.md",
+            "MCSingleRedirectModifier": "vanilla/api/commands/custom/MCSingleRedirectModifier.md",
+            "MCStringRange": "vanilla/api/commands/custom/MCStringRange.md",
+            "MCSuggestion": "vanilla/api/commands/custom/MCSuggestion.md",
+            "MCSuggestionContext": "vanilla/api/commands/custom/MCSuggestionContext.md",
+            "MCSuggestionProvider": "vanilla/api/commands/custom/MCSuggestionProvider.md",
+            "MCSuggestions": "vanilla/api/commands/custom/MCSuggestions.md",
+            "MCSuggestionsBuilder": "vanilla/api/commands/custom/MCSuggestionsBuilder.md"
+          }
+        },
+        "Data": {
+          "BoolData": "vanilla/api/data/BoolData.md",
+          "ByteArrayData": "vanilla/api/data/ByteArrayData.md",
+          "ByteData": "vanilla/api/data/ByteData.md",
+          "DoubleData": "vanilla/api/data/DoubleData.md",
+          "FloatData": "vanilla/api/data/FloatData.md",
+          "ICollectionData": "vanilla/api/data/ICollectionData.md",
+          "IData": "vanilla/api/data/IData.md",
+          "INumberData": "vanilla/api/data/INumberData.md",
+          "IntArrayData": "vanilla/api/data/IntArrayData.md",
+          "IntData": "vanilla/api/data/IntData.md",
+          "ListData": "vanilla/api/data/ListData.md",
+          "LongArrayData": "vanilla/api/data/LongArrayData.md",
+          "LongData": "vanilla/api/data/LongData.md",
+          "MapData": "vanilla/api/data/MapData.md",
+          "ShortData": "vanilla/api/data/ShortData.md",
+          "StringData": "vanilla/api/data/StringData.md"
+        },
+        "Enchantment": {
+          "MCEnchantment": "vanilla/api/enchantment/MCEnchantment.md"
+        },
+        "Entities": {
+          "MCEntityType": "vanilla/api/entities/MCEntityType.md"
+        },
+        "Entity": {
+          "MCEntity": "vanilla/api/entity/MCEntity.md",
+          "MCEntityClassification": "vanilla/api/entity/MCEntityClassification.md",
+          "MCLivingEntity": "vanilla/api/entity/MCLivingEntity.md",
+          "MCPlayerEntity": "vanilla/api/entity/MCPlayerEntity.md"
+        },
+        "Event": {
+          "CTEventManager": "vanilla/api/event/CTEventManager.md",
+          "MCEvent": "vanilla/api/event/MCEvent.md",
+          "Entity": {
+            "MCEntityEvent": "vanilla/api/event/entity/MCEntityEvent.md",
+            "MCLivingEvent": "vanilla/api/event/entity/MCLivingEvent.md",
+            "Living": {
+              "MCLivingDeathEvent": "vanilla/api/event/entity/living/MCLivingDeathEvent.md",
+              "MCLivingHealEvent": "vanilla/api/event/entity/living/MCLivingHealEvent.md",
+              "MCLivingHurtEvent": "vanilla/api/event/entity/living/MCLivingHurtEvent.md"
+            },
+            "Player": {
+              "MCAdvancementEvent": "vanilla/api/event/entity/player/MCAdvancementEvent.md",
+              "MCAnvilRepairEvent": "vanilla/api/event/entity/player/MCAnvilRepairEvent.md",
+              "MCItemCraftedEvent": "vanilla/api/event/entity/player/MCItemCraftedEvent.md",
+              "MCItemFishedEvent": "vanilla/api/event/entity/player/MCItemFishedEvent.md",
+              "MCItemPickupEvent": "vanilla/api/event/entity/player/MCItemPickupEvent.md",
+              "MCItemSmeltedEvent": "vanilla/api/event/entity/player/MCItemSmeltedEvent.md",
+              "MCPlayerDestroyItemEvent": "vanilla/api/event/entity/player/MCPlayerDestroyItemEvent.md",
+              "MCPlayerEvent": "vanilla/api/event/entity/player/MCPlayerEvent.md",
+              "MCPlayerLoggedInEvent": "vanilla/api/event/entity/player/MCPlayerLoggedInEvent.md",
+              "MCPlayerLoggedOutEvent": "vanilla/api/event/entity/player/MCPlayerLoggedOutEvent.md",
+              "MCPlayerRespawnEvent": "vanilla/api/event/entity/player/MCPlayerRespawnEvent.md",
+              "Interact": {
+                "MCPlayerInteractEvent": "vanilla/api/event/entity/player/interact/MCPlayerInteractEvent.md",
+                "MCRightClickBlockEvent": "vanilla/api/event/entity/player/interact/MCRightClickBlockEvent.md",
+                "MCRightClickEmptyEvent": "vanilla/api/event/entity/player/interact/MCRightClickEmptyEvent.md",
+                "MCRightClickItemEvent": "vanilla/api/event/entity/player/interact/MCRightClickItemEvent.md"
+              },
+              "Xp": {
+                "MCLevelChangeEvent": "vanilla/api/event/entity/player/xp/MCLevelChangeEvent.md",
+                "MCXpChangeEvent": "vanilla/api/event/entity/player/xp/MCXpChangeEvent.md"
+              }
+            }
+          }
+        },
+        "Fluid": {
+          "IFluidStack": "vanilla/api/fluid/IFluidStack.md",
+          "MCFluid": "vanilla/api/fluid/MCFluid.md"
+        },
+        "Food": {
+          "MCFood": "vanilla/api/food/MCFood.md"
+        },
+        "Game": {
+          "MCGame": "vanilla/api/game/MCGame.md"
+        },
+        "Item": {
+          "Ingredient": "vanilla/api/item/Ingredient.md",
+          "ItemStack": "vanilla/api/item/ItemStack.md",
+          "MCItemDefinition": "vanilla/api/item/MCItemDefinition.md"
+        },
+        "Items": {
+          "ExpandIIngredientTransformers": "vanilla/api/items/ExpandIIngredientTransformers.md",
+          "IIngredient": "vanilla/api/items/IIngredient.md",
+          "IIngredientCondition": "vanilla/api/items/IIngredientCondition.md",
+          "IIngredientTransformer": "vanilla/api/items/IIngredientTransformer.md",
+          "IIngredientWithAmount": "vanilla/api/items/IIngredientWithAmount.md",
+          "IItemStack": "vanilla/api/items/IItemStack.md",
+          "ITooltipFunction": "vanilla/api/items/ITooltipFunction.md",
+          "IngredientList": "vanilla/api/items/IngredientList.md",
+          "MCIngredientConditioned": "vanilla/api/items/MCIngredientConditioned.md",
+          "MCIngredientTransformed": "vanilla/api/items/MCIngredientTransformed.md",
+          "MCWeightedItemStack": "vanilla/api/items/MCWeightedItemStack.md"
+        },
+        "Logger": {
+          "ILogger": "vanilla/api/logger/ILogger.md"
+        },
+        "Managers": {
+          "BlastFurnaceManager": "vanilla/api/managers/BlastFurnaceManager.md",
+          "CampFireManager": "vanilla/api/managers/CampFireManager.md",
+          "CraftingTableManager": "vanilla/api/managers/CraftingTableManager.md",
+          "FurnaceManager": "vanilla/api/managers/FurnaceManager.md",
+          "ICookingRecipeManager": "vanilla/api/managers/ICookingRecipeManager.md",
+          "IRecipeManager": "vanilla/api/managers/IRecipeManager.md",
+          "SmithingManager": "vanilla/api/managers/SmithingManager.md",
+          "SmokerManager": "vanilla/api/managers/SmokerManager.md",
+          "StoneCutterManager": "vanilla/api/managers/StoneCutterManager.md"
+        },
+        "Mods": {
+          "ModInfo": "vanilla/api/mods/ModInfo.md",
+          "Mods": "vanilla/api/mods/Mods.md"
+        },
+        "Potions": {
+          "MCPotion": "vanilla/api/potions/MCPotion.md",
+          "MCPotionEffect": "vanilla/api/potions/MCPotionEffect.md",
+          "MCPotionEffectInstance": "vanilla/api/potions/MCPotionEffectInstance.md"
+        },
+        "Recipe": {
+          "RecipeFilter": "vanilla/api/recipe/RecipeFilter.md",
+          "RecipeFunctionArray": "vanilla/api/recipe/RecipeFunctionArray.md",
+          "RecipeFunctionMatrix": "vanilla/api/recipe/RecipeFunctionMatrix.md",
+          "RecipeFunctionSingle": "vanilla/api/recipe/RecipeFunctionSingle.md",
+          "WrapperRecipe": "vanilla/api/recipe/WrapperRecipe.md"
+        },
+        "Tags": {
+          "ExpandItemTag": "vanilla/api/tags/ExpandItemTag.md",
+          "ExpandItemTagWithAmount": "vanilla/api/tags/ExpandItemTagWithAmount.md",
+          "MCTag": "vanilla/api/tags/MCTag.md",
+          "MCTagWithAmount": "vanilla/api/tags/MCTagWithAmount.md",
+          "TagManager": "vanilla/api/tags/TagManager.md",
+          "TagManagerBlock": "vanilla/api/tags/TagManagerBlock.md",
+          "TagManagerEntityType": "vanilla/api/tags/TagManagerEntityType.md",
+          "TagManagerFluid": "vanilla/api/tags/TagManagerFluid.md",
+          "TagManagerItem": "vanilla/api/tags/TagManagerItem.md"
+        },
+        "Util": {
+          "BlockPos": "vanilla/api/util/BlockPos.md",
+          "DamageSource": "vanilla/api/util/DamageSource.md",
+          "Direction": "vanilla/api/util/Direction.md",
+          "DirectionAxis": "vanilla/api/util/DirectionAxis.md",
+          "MCResourceLocation": "vanilla/api/util/MCResourceLocation.md",
+          "Text": {
+            "MCStyle": "vanilla/api/util/text/MCStyle.md",
+            "MCTextComponent": "vanilla/api/util/text/MCTextComponent.md",
+            "TextFormatting": "vanilla/api/util/text/TextFormatting.md"
+          }
+        },
+        "Villager": {
+          "MCVillagerProfession": "vanilla/api/villager/MCVillagerProfession.md",
+          "VillagerTrades": "vanilla/api/villager/VillagerTrades.md"
+        },
+        "World": {
+          "MCBiome": "vanilla/api/world/MCBiome.md",
+          "MCServerWorld": "vanilla/api/world/MCServerWorld.md",
+          "MCWorld": "vanilla/api/world/MCWorld.md"
+        }
+      }
+    }
+  }
+}
