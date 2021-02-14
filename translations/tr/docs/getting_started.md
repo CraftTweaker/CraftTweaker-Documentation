@@ -34,7 +34,7 @@ println("Merhaba Dünya!");
 
 Script dosyalarını düzenlemek için Notepad++, Sublime Text veya VSCode kullanabilirsiniz. İsterseniz başka programlar da kullanabilirsiniz.
 
-When choosing a program to use to edit scripts, take a look at what Syntax highlighters are available, most common text editors have ZenScript highlighting support through the use of a plugin.
+Script dosyalarını düzenlemek için bir program seçerken, o program içerisindeki söz dizimi vurgulayıcılarına(syntax highlighter) bir göz atın. Çoğu yaygın metin editörleri ZenScript için highlighting eklentilerine sahiptir.
 
 
 
@@ -49,10 +49,10 @@ The `crafttweaker.log` file uses a specific syntax in it's output, that syntax i
 Using the example above, the output would be:
 
 ```
-[14:58:06.697][DONE][SERVER][INFO] Hello world!
+[14:58:06.697][DONE][SERVER][INFO] Merhaba Dünya!
 ```
 
-The syntax is used for debug purposes and the only time the syntax is not used, is for command dumps, in which case it just prints the message, this is done so copy pasting the dumped information is easier.
+Bilgileri bu şekilde görmek, hata ayıklamak için daha kullanışlıdır. Bu söz diziminin kullanılmadığı tek yer çıktı komutlarıdır. Yukarıdaki durumda mesajı ekrana bastırdı ve bitti. Böylelikle ekrana bastırılan bilgileri kopyalayıp yapıştırmak daha kolay olacaktır.
 
 ### Comments
 
