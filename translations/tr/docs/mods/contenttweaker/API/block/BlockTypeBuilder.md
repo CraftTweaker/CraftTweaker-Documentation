@@ -1,6 +1,6 @@
 # BlockTypeBuilder
 
-Denotes a special builder that is used for building special block types. Used in [mods.contenttweaker.block.BlockTypeBuilder#withType](/mods/contenttweaker/API/block/BlockTypeBuilder/#withtype)
+Denotes a special builder that is used for building special block types. [mods.contenttweaker.block.BlockTypeBuilder#withType](/mods/contenttweaker/API/block/BlockTypeBuilder/#withtype) içerisinde kullanılır.
 
 This class was added by a mod with mod-id `contenttweaker`. So you need to have this mod installed if you want to use this feature.
 
