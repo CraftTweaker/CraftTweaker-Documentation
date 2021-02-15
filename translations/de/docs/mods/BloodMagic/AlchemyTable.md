@@ -1,4 +1,4 @@
-::requiredMod[Blood Magic]{buildIn=true modLink=https://www.curseforge.com/minecraft/mc-mods/blood-magic}
+::requiredMod[Blood Magic]{builtIn=true modLink=https://www.curseforge.com/minecraft/mc-mods/blood-magic}
 
 # Blood Magic Alchemietisch
 
@@ -12,6 +12,7 @@ Das folgende Skript fügt ein Rezept hinzu, das einen Diamanten ausgibt, wenn Ko
 
 ```zenscript
 // <recipetype:bloodmagic:alchemytable>.addRecipe(String name, IItemStack output, IIngredient[] input, int syphon, int ticks, int minimumTier)
+
 <recipetype:bloodmagic:alchemytable>.addRecipe("alchemytable_test", <item:minecraft:diamond>, [<item:minecraft:coal>], 0, 100, 0);
 ```
 
@@ -20,6 +21,7 @@ Das folgende Skript fügt ein Rezept hinzu, das einen Diamanten ausgibt, wenn Ko
 Das folgende Skript entfernt alle Rezepte aus der Alchemie-Tabelle, die Lehm ausgeben.
 
 ```zenscript
-//<recipetype:bloodmagic:alchemytable>.removeRecipe(IItemStack output);
+// <recipetype:bloodmagic:alchemytable>.removeRecipe(IItemStack output);
+
 <recipetype:bloodmagic:alchemytable>.removeRecipe(<item:minecraft:clay_ball>);
 ```
