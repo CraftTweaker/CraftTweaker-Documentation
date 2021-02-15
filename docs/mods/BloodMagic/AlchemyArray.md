@@ -12,7 +12,8 @@ The following script will add a recipe that will output a Diamond when Dirt and 
 
 ```zenscript
 // <recipetype:bloodmagic:array>.addRecipe(String name, IItemStack output, IIngredient baseInput, IIngredient addedInput, ResourceLocation texture)
-<recipetype:bloodmagic:array>.addRecipe("alchemy_array_test", <item:minecraft:diamond>, <item:minecraft:dirt>, <item:minecraft:glass>, <resource:textures/item/diamond.png>)
+
+<recipetype:bloodmagic:array>.addRecipe("alchemy_array_test", <item:minecraft:diamond>, <item:minecraft:dirt>, <item:minecraft:glass>, <resource:textures/item/diamond.png>);
 ```
 
 The `ResourceLocation texture` can be any texture in the game and is used when the `baseInput` has been added to the Alchemy Array.
@@ -44,6 +45,7 @@ The default values that Blood Magic themselves use are as follows, but you can u
 The follow script will remove all recipes from the Alchemy Array that output a Divination Sigil.
 
 ```zenscript
-<recipetype:bloodmagic:array>>.removeRecipe(IItemStack output);
+// <recipetype:bloodmagic:array>>.removeRecipe(IItemStack output);
+
 <recipetype:bloodmagic:array>.removeRecipe(<item:bloodmagic:divinationsigil>);
 ```

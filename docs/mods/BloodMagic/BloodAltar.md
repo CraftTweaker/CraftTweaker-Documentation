@@ -12,6 +12,7 @@ The following script will add a recipe that will output a Diamond when Coal is g
 
 ```zenscript
 // <recipetype:bloodmagic:altar>.addRecipe(String name, IItemStack output, IIngredient input, int minimumTier, int syphon, int consumeRate, int drainRate)
+
 <recipetype:bloodmagic:altar>.addRecipe("altar_test", <item:minecraft:diamond>, <item:minecraft:coal>, 0, 500, 1, 1);
 ```
 
@@ -20,6 +21,7 @@ The following script will add a recipe that will output a Diamond when Coal is g
 The follow script will remove all recipes from the Blood Altar that output a Reinforced Slate.
 
 ```zenscript
-<recipetype:bloodmagic:altar>.removeRecipe(IItemStack output);
+// <recipetype:bloodmagic:altar>.removeRecipe(IItemStack output);
+
 <recipetype:bloodmagic:altar>.removeRecipe(<item:bloodmagic:reinforcedslate>);
 ```

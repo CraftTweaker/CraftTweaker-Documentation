@@ -29,6 +29,7 @@ The following script will add multiple recipes to the ARC, it should cover all t
 The follow script will remove all recipes from the ARC that output a Weak Blood Shard.
 
 ```zenscript
-<recipetype:bloodmagic:arc>.removeRecipe(IItemStack output);
+// <recipetype:bloodmagic:arc>.removeRecipe(IItemStack output);
+
 <recipetype:bloodmagic:arc>.removeRecipe(<item:bloodmagic:weakbloodshard>);
 ```

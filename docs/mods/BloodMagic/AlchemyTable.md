@@ -12,6 +12,7 @@ The following script will add a recipe that will output a Diamond when Coal is g
 
 ```zenscript
 // <recipetype:bloodmagic:alchemytable>.addRecipe(String name, IItemStack output, IIngredient[] input, int syphon, int ticks, int minimumTier)
+
 <recipetype:bloodmagic:alchemytable>.addRecipe("alchemytable_test", <item:minecraft:diamond>, [<item:minecraft:coal>], 0, 100, 0);
 ```
 
@@ -20,6 +21,7 @@ The following script will add a recipe that will output a Diamond when Coal is g
 The follow script will remove all recipes from the Alchemy Table that output a clay ball.
 
 ```zenscript
-<recipetype:bloodmagic:alchemytable>.removeRecipe(IItemStack output);
+// <recipetype:bloodmagic:alchemytable>.removeRecipe(IItemStack output);
+
 <recipetype:bloodmagic:alchemytable>.removeRecipe(<item:minecraft:clay_ball>);
 ```
