@@ -11,7 +11,7 @@
 - `output` [IItemStack](/vanilla/api/items/IItemStack)
 - `rotations` Any number above 0
 
-Adds a recipe with the specified input & output, that takes the specified rotations to complete the recipe
+Girilen input ve output değerlerine göre bir tarif oluşturur. Verilen rotation değerine göre tarifi tamamlar.
 
 ```zenscript
 mods.atum.SpinningWheel.addRecipe(<item:atum:scroll>, <item:minecraft:string>, 3);
