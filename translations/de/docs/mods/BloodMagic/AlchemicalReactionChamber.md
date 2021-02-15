@@ -1,4 +1,4 @@
-::requiredMod[Blood Magic]{buildIn=true modLink=https://www.curseforge.com/minecraft/mc-mods/blood-magic}
+::requiredMod[Blood Magic]{builtIn=true modLink=https://www.curseforge.com/minecraft/mc-mods/blood-magic}
 
 # Blood Magic Alchemie Reaktionskammer / ARC
 
@@ -29,6 +29,7 @@ Das folgende Skript wird dem ARC mehrere Rezepte hinzufügen. Hier sollten alle 
 Das folgende Skript wird alle Rezepte aus dem ARC entfernen, die einen Schwachen Blutsplitter ausgeben.
 
 ```zenscript
-//<recipetype:bloodmagic:arc>.removeRecipe(IItemStack output);
+// <recipetype:bloodmagic:arc>.removeRecipe(IItemStack output);
+
 <recipetype:bloodmagic:arc>.removeRecipe(<item:bloodmagic:weakbloodshard>);
 ```
