@@ -1,4 +1,4 @@
-::requiredMod[Blood Magic]{buildIn=true modLink=https://www.curseforge.com/minecraft/mc-mods/blood-magic}
+::requiredMod[Blood Magic]{builtIn=true modLink=https://www.curseforge.com/minecraft/mc-mods/blood-magic}
 
 # Blood Magic Alchemie Array
 
@@ -12,7 +12,8 @@ Das folgende Skript fügt ein Rezept hinzu, das einen Diamanten ausgibt, wenn Er
 
 ```zenscript
 // <recipetype:bloodmagic:array>.addRecipe(String name, IItemStack output, IIngredient baseInput, IIngredient addedInput, ResourceLocation texture)
-<recipetype:bloodmagic:array>.addRecipe("alchemy_array_test", <item:minecraft:diamond>, <item:minecraft:dirt>, <item:minecraft:glass>, <resource:textures/item/diamond.png>)
+
+<recipetype:bloodmagic:array>.addRecipe("alchemy_array_test", <item:minecraft:diamond>, <item:minecraft:dirt>, <item:minecraft:glass>, <resource:textures/item/diamond.png>);
 ```
 
 Die `ResourceLocation-Textur` kann jede Textur im Spiel sein und wird verwendet, wenn der `baseInput</ß> dem Alchemie Array hinzugefügt wurde.</p>
@@ -44,6 +45,7 @@ Die `ResourceLocation-Textur` kann jede Textur im Spiel sein und wird verwendet,
 Das folgende Skript wird alle Rezepte aus dem Alchemie-Array entfernen, die ein Göttliches Siegel ausgeben.
 
 ```zenscript
-//<recipetype:bloodmagic:array>.removeRecipe(IItemStack output);
+// <recipetype:bloodmagic:array>>.removeRecipe(IItemStack output);
+
 <recipetype:bloodmagic:array>.removeRecipe(<item:bloodmagic:divinationsigil>);
 ```
