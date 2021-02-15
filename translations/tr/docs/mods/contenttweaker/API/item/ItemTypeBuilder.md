@@ -1,6 +1,6 @@
 # ItemTypeBuilder
 
-Denotes a special builder that is used for builing special item types. Used in [mods.contenttweaker.item.ItemTypeBuilder#withType](/mods/contenttweaker/API/item/ItemTypeBuilder/#withtype)
+Denotes a special builder that is used for builing special item types. [mods.contenttweaker.item.ItemTypeBuilder#withType](/mods/contenttweaker/API/item/ItemTypeBuilder/#withtype) içerisinde kullanılır.
 
 This class was added by a mod with mod-id `contenttweaker`. So you need to have this mod installed if you want to use this feature.
 
