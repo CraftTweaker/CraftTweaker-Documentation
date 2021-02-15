@@ -38,13 +38,10 @@ import mods.contenttweaker.block.basic.BlockBuilderBasic;
 import mods.contenttweaker.block.pillar.BlockBuilderPillarRotatable;
 
 
-//The simplest way, uses blockamterial IRON
+//blockmaterial IRON'ın kolay bir kullanımı
 new BlockBuilder()
-    //Will delegate to the Basic Builder
+    //Basic Builder'ı temsil eder
     .build("generic_block");
-
-
-//Sets a different block material.
 new BlockBuilder(<blockmaterial:earth>)
     .withType<BlockBuilderBasic>()
     .build("earth_like_block");
@@ -81,7 +78,7 @@ Enough spoken, you want a copy/paste example, do you?
 import mods.contenttweaker.item.ItemBuilder;
 import mods.contenttweaker.item.tool.ItemBuilderTool;
 
-//The simplest way of creating items.
+//Eşya oluşturmanın en kolay yolu
 new ItemBuilder().build("generic_item");
 new ItemBuilder().build("generic_item_2");
 new ItemBuilder().build("generic_item_3");
