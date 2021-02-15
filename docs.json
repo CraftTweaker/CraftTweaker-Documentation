@@ -32,6 +32,10 @@
       "Aquaculture 2": {
         "Fish Data": "mods/Aquaculture2/FishData.md"
       },
+      "Ars-Nouveau": {
+        "Enchanting Apparatus": "mods/ArsNouveau/EnchantingApparatus.md",
+        "Glyph Press": "mods/ArsNouveau/GlyphPress.md"
+      },
       "Blood Magic": {
         "Alchemical Reaction Chamber": "mods/BloodMagic/AlchemicalReactionChamber.md",
         "Alchemy Array": "mods/BloodMagic/AlchemyArray.md",
