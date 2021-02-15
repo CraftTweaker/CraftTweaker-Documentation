@@ -1,4 +1,4 @@
-::requiredMod[Blood Magic]{buildIn=true modLink=https://www.curseforge.com/minecraft/mc-mods/blood-magic}
+::requiredMod[Blood Magic]{builtIn=true modLink=https://www.curseforge.com/minecraft/mc-mods/blood-magic}
 
 # Blood Magic Blutaltar
 
@@ -12,6 +12,7 @@ Das folgende Skript fügt ein Rezept hinzu, das einen Diamanten ausgibt, wenn Ko
 
 ```zenscript
 // <recipetype:bloodmagic:altar>.addRecipe(String name, IItemStack output, IIngredient input, int minimumTier, int syphon, int consumeRate, int drainRate)
+
 <recipetype:bloodmagic:altar>.addRecipe("altar_test", <item:minecraft:diamond>, <item:minecraft:coal>, 0, 500, 1, 1);
 ```
 
@@ -20,6 +21,7 @@ Das folgende Skript fügt ein Rezept hinzu, das einen Diamanten ausgibt, wenn Ko
 Das folgende Skript entfernt alle Rezepte aus dem Blutaltar, die Reinforced Slate ausgeben.
 
 ```zenscript
-//<recipetype:bloodmagic:altar>.removeRecipe(IItemStack output);
+// <recipetype:bloodmagic:altar>.removeRecipe(IItemStack output);
+
 <recipetype:bloodmagic:altar>.removeRecipe(<item:bloodmagic:reinforcedslate>);
 ```
