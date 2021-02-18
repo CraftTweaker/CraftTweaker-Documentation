@@ -1,14 +1,11 @@
-# Ignore Bracket Errors Preprocessor
+# Ignorar Errores De Paréntesis
 
-This Preprocessor sets your script to ignore backet errors.  
-This DOES NOT in any way, shape or form magically correct your script, it supresses the error log.
+Este preprocesador hace que tu archivo ignore errores de paréntesis (<>). ESTO NO CORRIGE TU ARCHIVO DE CUALQUIER FORMA. Los errores simplemente son eliminados.
 
-## Call
+## Uso
 
-You can call the IgnoreBracketErrors Preprocessor by placing `#ignoreBracketErrors` inside your script file.  
-This Preprocessor is file-specific, so calling it on one file doesn't affect the others (at least not for what the processor's concerned.
+Puedes usar este preprocesador escribiendo ` #ignoreBracketErrors` dentro de tu archivo zs. Este preprocesador solo afecta al archivo en el que lo usas.
 
-## What it does
+## Lo que hace:
 
-When the preprocessor is called on a file, all error logging on bracket errors will be supressed.  
-This doesn't change the affected lines in any way, instead the only change is that your log won't contain the regarding lines.
+Cuando se usa el preprocesador, todos los errores que tengan algo que ver con cosas dentro de paréntesis de ZenScript (<>), ya sean objetos, bloques, entidades, serán eliminados y no aparecerán en ninguna parte. Esto no cambia las líneas de código en tu archivo, solo hace que los errores de paréntesis de ese archivo en cuestión no aparecerán en el archivo <0>crafttweaker.log</0> .
