@@ -1,25 +1,67 @@
 # MCBiome
 
-这个类由mod-id为`crafttweaker`的模组添加. 因此，如果要使用此功能，则需要安装此mod。
-
 ## 导入相关包
-如果遇到任何问题（例如强制转换数组），则可能需要导入软件包，因此，最好的方式就是导入包支持。
+
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
 ```zenscript
-crafttweaker.api.world.MCBiome
+import crafttweaker.api.world.MCBiome;
 ```
+
 
 ## 方法
-### getTemperature
 
-返回类型：浮点数
+### doesSnowFreeze
+
+Return Type: boolean
 
 ```zenscript
-myMCBiome.getTemperature(pos as crafttweaker.api.util.BlockPos);
+MCBiome.doesSnowFreeze(world as MCWorld, pos as BlockPos) as boolean
 ```
 
-| 参数 | 类型                                                           | 描述                      |
-| -- | ------------------------------------------------------------ | ----------------------- |
-| 点  | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | No description provided |
+| 参数    | 类型                                     | 描述                      |
+| ----- | -------------------------------------- | ----------------------- |
+| world | [MCWorld](/vanilla/api/world/MCWorld)  | No Description Provided |
+| 点     | [BlockPos](/vanilla/api/util/BlockPos) | No Description Provided |
+
+
+### doesWaterFreeze
+
+Return Type: boolean
+
+```zenscript
+MCBiome.doesWaterFreeze(world as MCWorld, pos as BlockPos) as boolean
+```
+
+| 参数    | 类型                                     | 描述                      |
+| ----- | -------------------------------------- | ----------------------- |
+| world | [MCWorld](/vanilla/api/world/MCWorld)  | No Description Provided |
+| 点     | [BlockPos](/vanilla/api/util/BlockPos) | No Description Provided |
+
+
+Return Type: boolean
+
+```zenscript
+MCBiome.doesWaterFreeze(world as MCWorld, pos as BlockPos, mustBeAtEdge as boolean) as boolean
+```
+
+| 参数           | 类型                                     | 描述                      |
+| ------------ | -------------------------------------- | ----------------------- |
+| world        | [MCWorld](/vanilla/api/world/MCWorld)  | No Description Provided |
+| 点            | [BlockPos](/vanilla/api/util/BlockPos) | No Description Provided |
+| mustBeAtEdge | boolean                                | No Description Provided |
+
+
+### getTemperature
+
+Return Type: float
+
+```zenscript
+MCBiome.getTemperature(pos as BlockPos) as float
+```
+
+| 参数 | 类型                                     | 描述                      |
+| -- | -------------------------------------- | ----------------------- |
+| 点  | [BlockPos](/vanilla/api/util/BlockPos) | No Description Provided |
 
 
 
@@ -27,13 +69,13 @@ myMCBiome.getTemperature(pos as crafttweaker.api.util.BlockPos);
 
 | 名称             | 类型      | 可获得  | 可设置   |
 | -------------- | ------- | ---- | ----- |
-| category       | String  | true | false |
+| category       | string  | true | false |
 | depth          | float   | true | false |
 | doesRain       | boolean | true | false |
 | doesSnow       | boolean | true | false |
 | downfall       | float   | true | false |
 | isHighHumidity | boolean | true | false |
-| rainType       | String  | true | false |
+| rainType       | string  | true | false |
 | scale          | float   | true | false |
 | waterColor     | int     | true | false |
 | waterFogColor  | int     | true | false |
