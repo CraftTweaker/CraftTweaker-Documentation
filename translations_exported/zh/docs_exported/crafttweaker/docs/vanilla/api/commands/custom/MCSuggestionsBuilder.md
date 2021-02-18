@@ -1,175 +1,180 @@
 # MCSuggestionsBuilder
 
-这个类由mod-id为`crafttweaker`的模组添加. 因此，如果要使用此功能，则需要安装此mod。
-
 ## 导入相关包
-如果遇到任何问题（例如强制转换数组），则可能需要导入软件包，因此，最好的方式就是导入包支持。
+
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
 ```zenscript
-crafttweeper.api.commands.custom.MCSuggestionsBuilder
+import crafttweaker.api.commands.custom.MCSuggestionsBuilder;
 ```
+
+
+## Casters
+
+| 结果类型   | 是否隐藏 |
+| ------ | ---- |
+| string | true |
 
 ## 方法
+
 ### add
 
-返回类型： [craftbiner.api.commands.custom.MCSuggesBuilder](/vanilla/api/commands/custom/MCSuggestionsBuilder)
+Return Type: [MCSuggestionsBuilder](/vanilla/api/commands/custom/MCSuggestionsBuilder)
 
 ```zenscript
-myMCSuggestionsBuilder.add(其他 craftweeper.api.commands.custom.MCSuggesBuilder);
+MCSuggestionsBuilder.add(other as MCSuggestionsBuilder) as MCSuggestionsBuilder
 ```
 
-| 参数    | 类型                                                                                                         | 描述                      |
-| ----- | ---------------------------------------------------------------------------------------------------------- | ----------------------- |
-| other | [crafttweeper.api.commands.custom.MCSuggestionsBuilder](/vanilla/api/commands/custom/MCSuggestionsBuilder) | No description provided |
+| 参数    | 类型                                                                        | 描述                      |
+| ----- | ------------------------------------------------------------------------- | ----------------------- |
+| other | [MCSuggestionsBuilder](/vanilla/api/commands/custom/MCSuggestionsBuilder) | No Description Provided |
 
 
 ### build
 
-返回类型： [craftbiner.api.commands.custom.MCSuggestions](/vanilla/api/commands/custom/MCSuggestions)
+Return Type: [MCSuggestions](/vanilla/api/commands/custom/MCSuggestions)
 
 ```zenscript
+MCSuggestionsBuilder.build() as MCSuggestions
 myMCSuggestionsBuilder.build();
 ```
 
 ### 创建偏移
 
-返回类型： [craftbiner.api.commands.custom.MCSuggesBuilder](/vanilla/api/commands/custom/MCSuggestionsBuilder)
+Return Type: [MCSuggestionsBuilder](/vanilla/api/commands/custom/MCSuggestionsBuilder)
 
 ```zenscript
-myMCSuggestionsBuilder.createOffset(起点为int)；
+MCSuggestionsBuilder.createOffset(start as int) as MCSuggestionsBuilder
 ```
 
 | 参数 | 类型  | 描述                      |
 | -- | --- | ----------------------- |
-| 开始 | int | No description provided |
+| 开始 | int | No Description Provided |
 
 
 ### equals #等于
 
-Return type: boolean
+Return Type: boolean
 
 ```zenscript
-myMCSuggestionsBuilder.equals(ao as Object);
+MCSuggestionsBuilder.equals(o as Object) as boolean
 ```
 
 | 参数 | 类型     | 描述                      |
 | -- | ------ | ----------------------- |
-| o  | Object | No description provided |
+| o  | Object | No Description Provided |
 
 
 ### getInput
 
-Return type: String
+Return Type: string
 
 ```zenscript
+MCSuggestionsBuilder.getInput() as string
 myMCSuggestionsBuilder.getInput();
 ```
 
 ### 剩余时间
 
-Return type: String
+Return Type: string
 
 ```zenscript
+MCSuggestionsBuilder.getRemaining() as string
 myMCSuggestionsBuilder.getRemaining();
 ```
 
 ### getStart
 
-Return type: int
+Return Type: int
 
 ```zenscript
+MCSuggestionsBuilder.getStart() as int
 myMCSuggestionsBuilder.getStart();
 ```
 
 ### hashCode
 
-Return type: int
+Return Type: int
 
 ```zenscript
+MCSuggestionsBuilder.hashCode() as int
 myMCSuggestionsBuilder.hashCode();
 ```
 
 ### 重启
 
-返回类型： [craftbiner.api.commands.custom.MCSuggesBuilder](/vanilla/api/commands/custom/MCSuggestionsBuilder)
+Return Type: [MCSuggestionsBuilder](/vanilla/api/commands/custom/MCSuggestionsBuilder)
 
 ```zenscript
-myMCSuggestionsBuilder.rest();
+MCSuggestionsBuilder.restart() as MCSuggestionsBuilder
+myMCSuggestionsBuilder.restart();
 ```
 
 ### 建议
 
-返回类型： [craftbiner.api.commands.custom.MCSuggesBuilder](/vanilla/api/commands/custom/MCSuggestionsBuilder)
+Return Type: [MCSuggestionsBuilder](/vanilla/api/commands/custom/MCSuggestionsBuilder)
 
 ```zenscript
-myMCSuggestionsBuilder.sinest(文本作为字符串)；
+MCSuggestionsBuilder.suggest(text as string) as MCSuggestionsBuilder
 ```
 
 | 参数 | 类型     | 描述                      |
 | -- | ------ | ----------------------- |
-| 文本 | String | No description provided |
+| 文本 | string | No Description Provided |
 
 
-
-返回类型： [craftbiner.api.commands.custom.MCSuggesBuilder](/vanilla/api/commands/custom/MCSuggestionsBuilder)
+Return Type: [MCSuggestionsBuilder](/vanilla/api/commands/custom/MCSuggestionsBuilder)
 
 ```zenscript
-myMCSuggestionsBuilder.sinest(值为int)；
+MCSuggestionsBuilder.suggest(value as int) as MCSuggestionsBuilder
 ```
 
 | 参数    | 类型  | 描述                      |
 | ----- | --- | ----------------------- |
-| value | int | No description provided |
+| value | int | No Description Provided |
 
 
-
-返回类型： [craftbiner.api.commands.custom.MCSuggesBuilder](/vanilla/api/commands/custom/MCSuggestionsBuilder)
+Return Type: [MCSuggestionsBuilder](/vanilla/api/commands/custom/MCSuggestionsBuilder)
 
 ```zenscript
-myMCSuggestionsBuilder.sinest(文本作为字符串，工具提示作为字符串)；
+MCSuggestionsBuilder.suggest(text as string, tooltip as string) as MCSuggestionsBuilder
 ```
 
 | 参数   | 类型     | 描述                      |
 | ---- | ------ | ----------------------- |
-| 文本   | String | No description provided |
-| 工具提示 | String | No description provided |
+| 文本   | string | No Description Provided |
+| 工具提示 | string | No Description Provided |
 
 
-
-返回类型： [craftbiner.api.commands.custom.MCSuggesBuilder](/vanilla/api/commands/custom/MCSuggestionsBuilder)
+Return Type: [MCSuggestionsBuilder](/vanilla/api/commands/custom/MCSuggestionsBuilder)
 
 ```zenscript
-myMCSuggestionsBuilder.sinest(作为整数值、工具提示作为字符串)；
+MCSuggestionsBuilder.suggest(value as int, tooltip as string) as MCSuggestionsBuilder
 ```
 
 | 参数    | 类型     | 描述                      |
 | ----- | ------ | ----------------------- |
-| value | int    | No description provided |
-| 工具提示  | String | No description provided |
+| value | int    | No Description Provided |
+| 工具提示  | string | No Description Provided |
 
 
 ### toString
 
-Return type: String
+Return Type: string
 
 ```zenscript
+MCSuggestionsBuilder.toString() as string
 myMCSuggestionsBuilder.toString();
 ```
 
 
 ## 运算符
+
 ### EQUALS
 
 ```zenscript
 myMCSuggestionsBuilder == o 为对象
 ```
 
-| 参数 | 类型     | 描述                      |
-| -- | ------ | ----------------------- |
-| o  | Object | No description provided |
 
-## Casters
 
-| 结果类型   | 是否隐藏 |
-| ------ | ---- |
-| String | true |
 
