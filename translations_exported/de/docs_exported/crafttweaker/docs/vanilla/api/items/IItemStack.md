@@ -1,212 +1,267 @@
 # IItemStack
 
-This represents an item. It can be retrieved using an Item BEP. Is an [crafttweaker.api.item.IIngredient](/vanilla/api/items/IIngredient)
-
-This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
+This represents an item. It can be retrieved using an Item BEP. Is an [IIngredient](/vanilla/api/items/IIngredient)
 
 ## Diese Klasse importieren
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
 ```zenscript
-crafttweaker.api.item.IItemStack
+import crafttweaker.api.item.IItemStack;
 ```
+
 
 ## Implemented Interfaces
-IItemStack implements the following interfaces. That means any method available to them can also be used on this class.
-- [crafttweaker.api.brackets.CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
-- [crafttweaker.api.item.IIngredient](/vanilla/api/items/IIngredient)
+IItemStack implements the following interfaces. That means all methods defined in these interfaces are also available in IItemStack
+
+- [IIngredient](/vanilla/api/items/IIngredient)
+- [IIngredientWithAmount](/vanilla/api/items/IIngredientWithAmount)
+
+## Casters
+
+| Result type                                                       | Is Implicit |
+| ----------------------------------------------------------------- | ----------- |
+| [IData](/vanilla/api/data/IData)                                  | true        |
+| [IIngredientWithAmount](/vanilla/api/items/IIngredientWithAmount) | true        |
+| [Ingredient](/vanilla/api/item/Ingredient)                        | true        |
+| [Artikel-Stack](/vanilla/api/item/ItemStack)                      | true        |
+| [MapData](/vanilla/api/data/MapData)                              | true        |
+| [MCItemDefinition](/vanilla/api/item/MCItemDefinition)            | true        |
+| [MCWeightedItemStack](/vanilla/api/items/MCWeightedItemStack)     | true        |
 
 ## Methoden
+
 ### addShiftTooltip
 
+Return Type: void
+
 ```zenscript
-<item:minecraft:dirt>.addShiftTooltip(Inhalt als crafttweaker.api.util.text.MCTextComponent, showMessage als crafttweaker.api.util.text.MCTextComponent);
+IItemStack.addShiftTooltip(content as MCTextComponent, showMessage as MCTextComponent) as void
 ```
 
-| Parameter       | Type                                                                                 | Beschreibung            | IsOptional | Standardwert |
-| --------------- | ------------------------------------------------------------------------------------ | ----------------------- | ---------- | ------------ |
-| inhalt          | [crafttweaker.api.util.text.MCTextComponent](/vanilla/api/util/text/MCTextComponent) | No description provided | false      | `null`       |
-| zeige Nachricht | [crafttweaker.api.util.text.MCTextComponent](/vanilla/api/util/text/MCTextComponent) | No description provided | true       | `null`       |
-
+| Parameter   | Type                                                       | Beschreibung            | Optional | DefaultValue |
+| ----------- | ---------------------------------------------------------- | ----------------------- | -------- | ------------ |
+| inhalt      | [MCTextkomponente](/vanilla/api/util/text/MCTextComponent) | No Description Provided | false    |              |
+| showMessage | [MCTextkomponente](/vanilla/api/util/text/MCTextComponent) | No Description Provided | true     |              |
 
 ### addTooltip
 
+Return Type: void
+
 ```zenscript
-<item:minecraft:dirt>.addTooltip(Inhalt als crafttweaker.api.util.text.MCTextComponent);
+IItemStack.addTooltip(content as MCTextComponent) as void
 ```
 
-| Parameter | Type                                                                                 | Beschreibung            |
-| --------- | ------------------------------------------------------------------------------------ | ----------------------- |
-| inhalt    | [crafttweaker.api.util.text.MCTextComponent](/vanilla/api/util/text/MCTextComponent) | No description provided |
+| Parameter | Type                                                       | Beschreibung            |
+| --------- | ---------------------------------------------------------- | ----------------------- |
+| inhalt    | [MCTextkomponente](/vanilla/api/util/text/MCTextComponent) | No Description Provided |
 
 
 ### anyDamage
 
-Retourentyp: [crafttweaker.api.item.MCIngredientConditioned](/vanilla/api/items/MCIngredientConditioned)&lt;[crafttweaker.api.item.IIngredient](/vanilla/api/items/IIngredient)&gt;
+Return Type: [MCIngredientConditioned](/vanilla/api/items/MCIngredientConditioned)&lt;[IIngredient](/vanilla/api/items/IIngredient)&gt;
 
 ```zenscript
-<item:minecraft:dirt>.anySchaden();
+IItemStack.anyDamage() as MCIngredientConditioned<IIngredient>
+<item:minecraft:dirt>.anyDamage();
+```
+
+### asIIngredientWithAmount
+
+Return Type: [IIngredientWithAmount](/vanilla/api/items/IIngredientWithAmount)
+
+```zenscript
+IItemStack.asIIngredientWithAmount() as IIngredientWithAmount
+<item:minecraft:dirt>.asIIngredientWithAmount();
+```
+
+### asVanillaIngredient
+
+Create a Vanilla ingredient matching this one.
+
+Return Type: [Ingredient](/vanilla/api/item/Ingredient)
+
+```zenscript
+IItemStack.asVanillaIngredient() as Ingredient
+<item:minecraft:dirt>.asVanillaIngredient();
 ```
 
 ### clearCustomName
 
 Clears any custom name set for this ItemStack
 
+Return Type: void
+
 ```zenscript
+IItemStack.clearCustomName() as void
 <item:minecraft:dirt>.clearCustomName();
 ```
 
 ### clearTooltip
 
+Return Type: void
+
 ```zenscript
+IItemStack.clearTooltip() as void
 <item:minecraft:dirt>.clearTooltip();
 ```
 
 ### copy
 
-Erstellt eine Kopie
+Creates a copy
 
-Return type: [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
+Return Type: [IItemStack](/vanilla/api/items/IItemStack)
 
 ```zenscript
+IItemStack.copy() as IItemStack
 <item:minecraft:dirt>.copy();
+```
+
+### getDefinition
+
+Return Type: [MCItemDefinition](/vanilla/api/item/MCItemDefinition)
+
+```zenscript
+IItemStack.getDefinition() as MCItemDefinition
+<item:minecraft:dirt>.getDefinition();
+```
+
+### getInternal
+
+Gets the internal [ItemStack](/vanilla/api/item/ItemStack) for this IItemStack.
+
+Return Type: [ItemStack](/vanilla/api/item/ItemStack)
+
+```zenscript
+IItemStack.getInternal() as ItemStack
+<item:minecraft:dirt>.getInternal();
 ```
 
 ### getRemainingItem
 
-When this ingredient stack is crafted, what will remain in the grid? Does not check if the stack matches though! Used e.g. in CrT's net.minecraft.item.crafting.ICraftingRecipe
+When this ingredient stack is crafted, what will remain in the grid? Does not check if the stack matches though! Used e.g. in Crafting Table recipes.
 
-Return type: [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
+Return Type: [IItemStack](/vanilla/api/items/IItemStack)
 
 ```zenscript
-<item:minecraft:dirt>.getRemainingItem(stack as crafttweaker.api.item.IItemStack);
+IItemStack.getRemainingItem(stack as IItemStack) as IItemStack
 <item:minecraft:dirt>.getRemainingItem(<item:minecraft:iron_ingot>);
 ```
 
-| Parameter | Type                                                              | Beschreibung                              |
-| --------- | ----------------------------------------------------------------- | ----------------------------------------- |
-| stack     | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | The stack to provide for this ingredient. |
+| Parameter | Type                                        | Beschreibung                              |
+| --------- | ------------------------------------------- | ----------------------------------------- |
+| stack     | [IItemStack](/vanilla/api/items/IItemStack) | The stack to provide for this ingredient. |
 
 
 ### matches
 
 Does the given stack match the ingredient?
 
-Return type: boolean
+Return Type: boolean
 
 ```zenscript
-<item:minecraft:dirt>.matches(stack as crafttweaker.api.item.IItemStack);
+IItemStack.matches(stack as IItemStack) as boolean
 <item:minecraft:dirt>.matches(<item:minecraft:iron_ingot>);
 ```
 
-| Parameter | Type                                                              | Beschreibung       |
-| --------- | ----------------------------------------------------------------- | ------------------ |
-| stack     | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | The stack to check |
-
-
-
-Does the given stack match the ingredient?
-
-Return type: boolean
-
-```zenscript
-<item:minecraft:dirt>.matches(Stapel als crafttweaker.api.item.IItemStack, ignoreSchaden als boolean);
-```
-
-| Parameter     | Type                                                              | Beschreibung                       |
-| ------------- | ----------------------------------------------------------------- | ---------------------------------- |
-| stack         | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | The stack to check                 |
-| ignoreSchaden | boolean                                                           | Soll der Schaden überprüft werden? |
+| Parameter | Type                                        | Beschreibung       |
+| --------- | ------------------------------------------- | ------------------ |
+| stack     | [IItemStack](/vanilla/api/items/IItemStack) | The stack to check |
 
 
 ### modifyTooltip
 
+Return Type: void
+
 ```zenscript
-<item:minecraft:dirt>.modifyTooltip(Funktion als crafttweaker.api.item.tooltip.ITooltipFunktion);
+IItemStack.modifyTooltip(function as ITooltipFunction) as void
 ```
 
-| Parameter | Type                                                                                  | Beschreibung            |
-| --------- | ------------------------------------------------------------------------------------- | ----------------------- |
-| function  | [crafttweaker.api.item.tooltip.ITooltipFunction](/vanilla/api/items/ITooltipFunction) | No description provided |
+| Parameter | Type                                                    | Beschreibung            |
+| --------- | ------------------------------------------------------- | ----------------------- |
+| function  | [ITooltipFunction](/vanilla/api/items/ITooltipFunction) | No Description Provided |
 
 
 ### mutierbar
 
-Return type: [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
+Return Type: [IItemStack](/vanilla/api/items/IItemStack)
 
 ```zenscript
+IItemStack.mutable() as IItemStack
 <item:minecraft:dirt>.mutable();
 ```
 
 ### onlyDamaged
 
-Retourentyp: [crafttweaker.api.item.MCIngredientConditioned](/vanilla/api/items/MCIngredientConditioned)&lt;[crafttweaker.api.item.IIngredient](/vanilla/api/items/IIngredient)&gt;
+Return Type: [MCIngredientConditioned](/vanilla/api/items/MCIngredientConditioned)&lt;[IIngredient](/vanilla/api/items/IIngredient)&gt;
 
 ```zenscript
+IItemStack.onlyDamaged() as MCIngredientConditioned<IIngredient>
 <item:minecraft:dirt>.onlyDamaged();
 ```
 
 ### onlyIf
 
-Retourentyp: [crafttweaker.api.item.MCIngredientConditioned](/vanilla/api/items/MCIngredientConditioned)&lt;[crafttweaker.api.item.IIngredient](/vanilla/api/items/IIngredient)&gt;
+Return Type: [MCIngredientConditioned](/vanilla/api/items/MCIngredientConditioned)&lt;[IIngredient](/vanilla/api/items/IIngredient)&gt;
 
 ```zenscript
-<item:minecraft:dirt>.onlyIf(uid as String, function as function.Predicate<crafttweaker.api.item.IItemStack>);
+IItemStack.onlyIf(uid as string, function as Predicate<IItemStack>) as MCIngredientConditioned<IIngredient>
 ```
 
-| Parameter | Type                                                                                                    | Beschreibung            | IsOptional | Standardwert |
-| --------- | ------------------------------------------------------------------------------------------------------- | ----------------------- | ---------- | ------------ |
-| uid       | String                                                                                                  | No description provided | false      | `null`       |
-| function  | function.Predicate&lt;[crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)&gt; | No description provided | true       | `null`       |
-
+| Parameter | Type                                                                     | Beschreibung            | Optional | DefaultValue |
+| --------- | ------------------------------------------------------------------------ | ----------------------- | -------- | ------------ |
+| uid       | string                                                                   | No Description Provided | false    |              |
+| function  | Predicate&lt;[IItemStack](/vanilla/api/items/IItemStack)&gt; | No Description Provided | true     |              |
 
 ### removeTooltip
 
+Return Type: void
+
 ```zenscript
-<item:minecraft:dirt>.removeTooltip(regex als String);
+IItemStack.removeTooltip(regex as string) as void
 ```
 
 | Parameter | Type   | Beschreibung            |
 | --------- | ------ | ----------------------- |
-| regex     | String | No description provided |
+| regex     | string | No Description Provided |
 
 
 ### setDisplayName
 
 Sets the display name of the ItemStack
 
-Return type: [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
+Return Type: [IItemStack](/vanilla/api/items/IItemStack)
 
 ```zenscript
-<item:minecraft:dirt>.setDisplayName(name as String);
+IItemStack.setDisplayName(name as string) as IItemStack
 <item:minecraft:dirt>.setDisplayName("totally not dirt");
 ```
 
 | Parameter | Type   | Beschreibung           |
 | --------- | ------ | ---------------------- |
-| name      | String | New name of the stack. |
+| name      | string | New name of the stack. |
 
 
 ### weight
 
-Rückgabetyp: [crafttweaker.api.item.MCWeightedItemStack](/vanilla/api/items/MCWeightedItemStack)
+Return Type: [MCWeightedItemStack](/vanilla/api/items/MCWeightedItemStack)
 
 ```zenscript
-<item:minecraft:dirt>.weight(Gewicht als Doppel);
+IItemStack.weight(weight as double) as MCWeightedItemStack
 ```
 
 | Parameter | Type   | Beschreibung            |
 | --------- | ------ | ----------------------- |
-| weight    | double | No description provided |
+| weight    | double | No Description Provided |
 
 
 ### withDamage
 
 Sets the damage of the ItemStack
 
-Return type: [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
+Return Type: [IItemStack](/vanilla/api/items/IItemStack)
 
 ```zenscript
-<item:minecraft:dirt>.withDamage(damage as int);
+IItemStack.withDamage(damage as int) as IItemStack
 <item:minecraft:dirt>.withDamage(10);
 ```
 
@@ -219,89 +274,78 @@ Return type: [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
 
 Sets the tag for the ItemStack.
 
- Gibt `diesen Gegenstandstapel zurück, wenn er veränderbar ist, andernfalls ein neuer mit der geänderten Eigenschaft`
-
-Return type: [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
+Return Type: [IItemStack](/vanilla/api/items/IItemStack)
 
 ```zenscript
-<item:minecraft:dirt>.withTag(tag as crafttweaker.api.data.IData);
+IItemStack.withTag(tag as IData) as IItemStack
 <item:minecraft:dirt>.withTag({Display: {lore: ["Hello"]}});
 ```
 
-| Parameter | Type                                                   | Beschreibung    |
-| --------- | ------------------------------------------------------ | --------------- |
-| tag       | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | The tag to set. |
+| Parameter | Type                             | Beschreibung    |
+| --------- | -------------------------------- | --------------- |
+| tag       | [IData](/vanilla/api/data/IData) | The tag to set. |
 
 
-
-## Properties
-
-| Name           | Type                                                                | Has Getter | Has Setter |
-| -------------- | ------------------------------------------------------------------- | ---------- | ---------- |
-| amount         | int                                                                 | true       | false      |
-| burnTime       | int                                                                 | true       | true       |
-| commandString  | String                                                              | true       | false      |
-| damage         | int                                                                 | true       | false      |
-| damageable     | boolean                                                             | true       | false      |
-| damaged        | boolean                                                             | true       | false      |
-| displayName    | String                                                              | true       | false      |
-| empty          | boolean                                                             | true       | false      |
-| food           | [crafttweaker.api.food.MCFood](/vanilla/api/food/MCFood)            | true       | true       |
-| getOrCreate    | [crafttweaker.api.data.IData](/vanilla/api/data/IData)              | true       | false      |
-| getRepairCost  | int                                                                 | true       | false      |
-| hasDisplayName | boolean                                                             | true       | false      |
-| hasEffect      | boolean                                                             | true       | false      |
-| hasTag         | boolean                                                             | true       | false      |
-| isCrossbow     | boolean                                                             | true       | false      |
-| isEnchantable  | boolean                                                             | true       | false      |
-| isEnchanted    | boolean                                                             | true       | false      |
-| items          | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)[] | true       | false      |
-| maxDamage      | int                                                                 | true       | false      |
-| maxStackSize   | int                                                                 | true       | false      |
-| owner          | String                                                              | true       | false      |
-| registryName   | String                                                              | true       | false      |
-| stackable      | boolean                                                             | true       | false      |
-| tag            | [crafttweaker.api.data.IData](/vanilla/api/data/IData)              | true       | false      |
-| translationKey | String                                                              | true       | false      |
-| useDuration    | int                                                                 | true       | false      |
 
 ## Operatoren
+
+### MOD
+
+```zenscript
+myIItemStack % percentage as int
+```
+
+
+
 ### MUL
 
 Sets the amount of the ItemStack
 
 ```zenscript
-<item:minecraft:dirt> * amount as int
+myIItemStack * amount as int
 <item:minecraft:dirt> * 3
 ```
 
-| Parameter | Type | Beschreibung |
-| --------- | ---- | ------------ |
-| amount    | int  | new amount   |
-### MOD
 
-```zenscript
-<item:minecraft:dirt> % Prozentsatz als Int
-```
 
-| Parameter  | Type | Beschreibung            |
-| ---------- | ---- | ----------------------- |
-| prozentual | int  | No description provided |
 ### OR (ODER)
 
 ```zenscript
-<tag:ingotIron> | Andere als crafttweaker.api.item.IIngredient
+myIItemStack | other as IIngredient
 ```
 
-| Parameter | Type                                                                | Beschreibung            |
-| --------- | ------------------------------------------------------------------- | ----------------------- |
-| other     | [crafttweaker.api.item.IIngredient](/vanilla/api/items/IIngredient) | No description provided |
 
-## Casters
 
-| Result type                                                                         | Is Implicit |
-| ----------------------------------------------------------------------------------- | ----------- |
-| [crafttweaker.api.data.IData](/vanilla/api/data/IData)                              | true        |
-| [crafttweaker.api.data.MapData](/vanilla/api/data/MapData)                          | true        |
-| [crafttweaker.api.item.MCWeightedItemStack](/vanilla/api/items/MCWeightedItemStack) | true        |
+
+## Properties
+
+| Name           | Type                                                        | Has Getter | Has Setter |
+| -------------- | ----------------------------------------------------------- | ---------- | ---------- |
+| amount         | int                                                         | true       | false      |
+| burnTime       | int                                                         | true       | true       |
+| commandString  | string                                                      | true       | false      |
+| damage         | int                                                         | true       | false      |
+| damageable     | boolean                                                     | true       | false      |
+| damaged        | boolean                                                     | true       | false      |
+| definition     | [MCItemDefinition](/vanilla/api/item/MCItemDefinition)      | true       | false      |
+| displayName    | string                                                      | true       | false      |
+| empty          | boolean                                                     | true       | false      |
+| food           | [MCFood](/vanilla/api/food/MCFood)                          | true       | true       |
+| getOrCreate    | [IData](/vanilla/api/data/IData)                            | true       | false      |
+| getRepairCost  | int                                                         | true       | false      |
+| hasDisplayName | boolean                                                     | true       | false      |
+| hasEffect      | boolean                                                     | true       | false      |
+| hasTag         | boolean                                                     | true       | false      |
+| isCrossbow     | boolean                                                     | true       | false      |
+| isEnchantable  | boolean                                                     | true       | false      |
+| isEnchanted    | boolean                                                     | true       | false      |
+| items          | [IItemStack](/vanilla/api/items/IItemStack)[]               | true       | false      |
+| maxDamage      | int                                                         | true       | false      |
+| maxStackSize   | int                                                         | true       | false      |
+| owner          | string                                                      | true       | false      |
+| registryName   | [MCResource-Standort](/vanilla/api/util/MCResourceLocation) | true       | false      |
+| stackable      | boolean                                                     | true       | false      |
+| tag            | [IData](/vanilla/api/data/IData)                            | true       | false      |
+| translationKey | string                                                      | true       | false      |
+| useDuration    | int                                                         | true       | false      |
 
