@@ -4,13 +4,13 @@
 
 ## If
 
-if 语句是条件语句的第一部分。 它用于声明接下来的代码块只有在判定条件为 true 才会执行。 注意！两个等号才是比较运算符（一个等号是赋值运算符！）
+if 语句是条件语句的第一部分。 它用于声明接下来的代码块只有在判定条件为 true 才会执行。 **Be careful, you need TWO EQUALS when comparing values! (That's because one equal is for declaring values!)**
 
 ```zenscript
 val test = 0;
 
-if(test == 0){ //结果为 true
-    print("Test 等于零！");
+if (test == 0) { //true
+    print("Test is zero!");
 }
 ```
 
@@ -21,21 +21,21 @@ Else 语句需要加在条件语句的后，用于声明当 if 语句的条件�
 ```zenscript
 var test = 0;
 
-if(test == 0){//结果为true
-    //当 test 等于 0 时执行的代码块
-    print("test 等于 0！");
+if (test == 0) { //true
+    //will be executed when test is equal to 0
+    print("Test is zero!");
 } else {
-    //当 test 不等于 0 时执行的代码块
-    print("test 不等于 0！");
+    //will be executed when test is not equal to 0
+    print("Test is NOT zero!");
 }
 
-test = 1
-if(test == 0){//结果为false
-    //当 test 等于 0 时执行的代码块
-    print("现在，test 等于 0！");
-} else
-    //当 test 不等于 0 时执行的代码块
-    print("现在，test 不等于 0！");
+test = 1;
+if (test == 0) { //false
+    //will be executed when test is equal to 0
+    print("Now, test is zero!");
+} else {
+    //will be executed when test is not equal to 0
+    print("Now, test is NOT zero!");
 }
 
 ```
@@ -44,40 +44,40 @@ if(test == 0){//结果为false
 
 支持`+`、`-`、`*`、`/`、`mod`和`链接字符串(~)`运算符
 
-也支持`或(|)`、`与(&)`和`异或(^)`逻辑运算符
+Supported Operands are `Logical OR(||)`, `Logical AND(&&)`, `Bitwise OR(|)`, `Bitwise AND(&)`, and `Bitwise XOR(^)`
 
 ```zenscript
-//可以判断的类型包括：
+//You can check for:
 
 
-//数值
+//Number values
 val a = 0 as int;
-if(a==0){print("NumVal");}
+if (a == 0) { print("NumVal"); }
 
-//运算结果
+//Calculated number values
 val b = 1;
 val c = 5;
-//一下所有结果均为 true
-if(b+c==6){print("Num1!");}
-if(b*c==5){print("Num2!");}
-if(b/c==0.2){print("Num3!");}
+//All evaluate to true
+if (b+c == 6) { print("Num1!"); }
+if (b*c == 5) { print("Num2!"); }
+if (b/c == 0.2) { print("Num3!"); }
 
-//或、异或和与逻辑
-val d = "你好";
-val e = "世界";
-val f = d~e; //f = "你好世界"，波浪号只起到链接字符串的作用
+//OR, XOR, AND
+val d = "Hello";
+val e = "World";
+val f = d~e; //f = "HelloWorld", the Tilde just concatenates one thing to another
 
-//|(或) 逻辑判断，两个条件的判断结果只要一个为 true，输出就为 true
-if(d=="你好" | e == "你好"){print("OR1!");}       //true
-if(d=="你好" | e == "世界"){print("OR2!");}       //true
+//||(OR) means, as long as one of the criteria is met, it evaluates to true
+if (d == "Hello" || e == "Hello") { print("OR1!"); }        //true
+if (d == "Hello" || e == "World") { print("OR2!"); }        //true
 
-//^(异或)逻辑判断，有且仅有一个条件的判断结果为 true 时输出结果才为 true，否则输出结果为 false
-if(d=="你好" ^ e == "你好"){print("XOR1!");}      //true
-if(d=="你好" ^ e == "世界"){print("XOR2!");}      //false
+//^(XOR) means, ONLY ONE criteria may be met, otherwise it evaluates to false
+if (d == "Hello" ^ e == "Hello") { print("XOR1!"); }        //true
+if (d == "Hello" ^ e == "World") { print("XOR2!"); }        //false
 
-//&(与)逻辑判断，只有两个条件的判断结果都为 true 时输出结果才为 true，否则结果为 false
-if(d=="你好" & e == "你好"){print("AND1!");}      //false
-if(d=="世界" & e == "世界"){print("AND2!");}      //true
+//&&(AND) means, both criteria need to be met, otherwise it evaluates to false
+if (d == "Hello" && e == "Hello") { print("AND1!"); }       //false
+if (d == "Hello" && e == "World") { print("AND2!"); }       //true
 ```
 
 ## ? 运算符
@@ -106,72 +106,105 @@ switchy ? print("再见") : print("你好");
 
 你可以使用下面的操作符。 所有的例子结果都为 true。
 
-| 名称   | 运算符      | 解释                                                       | 例子            |
-| ---- | -------- | -------------------------------------------------------- | ------------- |
-| 非    | `!`      | 反转布尔值                                                    | !false        |
-| 不等于  | `!=`     | 判断符号前的值是否不等于符号后的值                                        | 1 != 2        |
-| 等于   | `==`     | 判断符号前的值是否等于符号后的值                                         | 1 == 1        |
-| 大于   | `>`   | 判断符号前的值是否大于符号后的值                                         | 1 > 2         |
-| 大于等于 | `>=`  | 判断符号前的值是否大于等于符号后的值                                       | 1 >= 1        |
-| 小于   | `<`   | 判断符号前的值是否小于符号后的值                                         | 1 < 2         |
-| 小于等于 | `<=`  | 判断符号前的值是否小于等于符号后的值                                       | 1 <= 1        |
-| 与    | `&`  | 判断符号前的值与符号后的值是否同时为 true；有一个为 false，或者全为 false 则会输出 false | true & true   |
-| 或    | `&#124;` | 判断符号前的值与符号后的值是否有一个为 true； 如果有一个为 true 则 结果为 true         | true \| true |
-| 异或   | `^`      | 判断符号前的值与符号后的值是否为 true；全为 false，或者全为 true 则会输出 false      | true ^ false  |
+| 名称          | 运算符          | 解释                                                                                                                                                                           | 例子                |
+| ----------- | ------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------- |
+| 非           | `!`          | 反转布尔值                                                                                                                                                                        | !false            |
+| 不等于         | `!=`         | 判断符号前的值是否不等于符号后的值                                                                                                                                                            | 1 != 2            |
+| 等于          | `==`         | 判断符号前的值是否等于符号后的值                                                                                                                                                             | 1 == 1            |
+| 大于          | `>`       | 判断符号前的值是否大于符号后的值                                                                                                                                                             | 1 > 2             |
+| 大于等于        | `>=`      | 判断符号前的值是否大于等于符号后的值                                                                                                                                                           | 1 >= 1            |
+| Lesser than | `<`       | 判断符号前的值是否小于符号后的值                                                                                                                                                             | 1 < 2             |
+| 小于等于        | `<=`      | 判断符号前的值是否小于等于符号后的值                                                                                                                                                           | 1 <= 1            |
+| Logical AND | `&&` | Checks if both before and after values are true, false if one or both are false                                                                                              | true && true      |
+| Logical OR  | `\|\|`     | Checks if either the value before or after are true, false if neither are true                                                                                               | false \|\| true |
+| Bitwise XOR | `^`          | Checks if exactly one of the before or after values is true, false if both or none are true                                                                                  | true ^ false      |
+| Bitwise AND | `&`      | Performs a bitwise AND operation on the before and after values. See [this](https://stackoverflow.com/questions/4014535/differences-in-boolean-operators-vs-and-vs) for more | true && true      |
+| Bitwise OR  | `\|`        | Performs a bitwise OR operation on the before and after values. See [this](https://stackoverflow.com/questions/4014535/differences-in-boolean-operators-vs-and-vs) for more  | false \|\| true |
+
+### Difference between `|` and `||` (and `&` and `&&`)
+
+The main difference between the single and the double, with semantics aside, is that the double performs a check after each condition and exits early - this is called short-circuiting. However, the single goes through the entire chain of conditions, even if the first one would have cancelled the entire condition. This not only saves resources, but also allows for easier scripting such as **null checks** and chained conditions.
+
+```zenscript
+var a = 5;
+var item = ... as IItemStack;
+
+// Even though a is 5, it still goes through all of the conditions listed
+if (a == 5 | a == 3 | a == 10 | a == -1) {
+    ...
+}
+
+// Even though a is 5 and the condition is impossible (a variable can't be both 3 and 5), it still goes through all of the conditions listed
+if (a == 3 & a < 2 & a > 8 & a == 5) {
+    ... 
+}
+
+// Checks if item is not null before accessing variables from item
+if (!isNull(item) && item.amount == 1) {
+    ...
+}
+
+// Checks if item is not null while accessing variables from a potentially null item, throwing an error if the item is null
+if (!isNull(item) & item.amount == 1) {
+    ...
+}
+```
 
 ## In/has 操作符
 
-`in `和` has `操作符用来检查某个东西是否存在于某个东西中。  
-首先需要一个先要检索的列表，接下来使用` in `/` has `操作符来检查给定数值是否存在。 对于 Zenscript 而言，`in `和` has `操作符没有任何区别，但人们通常在检测一个物品是否属于一个集合以及 for 循环中使用 `has`，因为这更加符合英语语法。
+The `in` and the `has` operator check if something is in something.  
+First you need the list you want to check in, then the `in`/`has` then the value you want to check for. `in` and `has` are the same keyword for ZS, but in most cases people use `has` for checking if a collection contains an item and in for loops as this represents the English grammar.
 
-### in/has loadedMods（检测加载模组）
+### in/has loadedMods
 
-你可以检测某个指定模组是否在 loadedMods 列表中
+You can check, if a mod is loaded by checking if it's in the loadedMods list
 
 ```zenscript
-//尽管可以使用 in
-if(loadedMods in "mcp"){
-    print("已加载 Minecraft Coder Pack");
+//While contains checks can use in
+if (loadedMods in "mcp") {
+    print("Minecraft Coder Pack loaded");
 }
 
-//大多数人倾向于使用 has
-if(loadedMods has "mcp"){
-    print("已加载 Minecraft Coder Pack");
+//Most people prefer using has
+if (loadedMods has "mcp") {
+    print("Minecraft Coder Pack loaded");
 }
 ```
 
-### in/has IIngredient（检测材料）
+### in/has IIngredient
 
-你也可以通过对比两个 IIngredients 对象，来检查一个物品是否满足定义。  
-注意不要混淆两个条目：  
-只有在` in `之后的条件语句对象包含于` in `时，判断结果才为真。  
-在大部分情况下你会使用` has `关键字，因为 has 比 in 更容易理解且功能完全相同。
+You can also check if an item matches a definition by comparing two IIngredients.  
+With this one you need to be a bit careful as not to confuse the two entries:  
+This is only true when the IIngredient AFTER the `in` can also be found completely in the one BEFORE the `in`.  
+In most cases you will use the `has` keyword instead as it's intention is more clear and it does exactly the same.
 
 ```zenscript
-if(<ore:ingotIron> in <minecraft:iron_ingot>){
-    print("铁锭的矿物词典是正确的");
+// Checks if the iron ingot is in the oreDict "ingotIron"
+if (<ore:ingotIron> in <minecraft:iron_ingot>) {
+    print("Iron ingots are in the right oreDict");
 }
 
-if(<ore:ingotIron> has <minecraft:iron_ingot>){
-    print("铁锭的矿物词典是正确的");
+// Preferred, same function as previous
+if (<ore:ingotIron> has <minecraft:iron_ingot>) { 
+    print("Iron ingots are in the right oreDict");
 }
 ```
 
-只有在` has `之前的材料对象包含于`has`之后的材料对象时，结果才为真： 假设有一个包含所有粉状物品的材料对象（包括红石（redstone）和荧石（glowstone））：
+This is only true when ALL matching items from the IIngredient AFTER the `has` can also be found in the IIngredient BEFORE `has`: Say we have an IIngredient that contains all dusts (e.g. redstone and glowstone dust):
 
 ```zenscript
 val redstone = <minecraft:redstone>;
-val glowstone = <minecraft:glowstone>
+val glowstone = <minecraft:glowstone>;
 val allDusts = <ore:dustAll>;
 allDusts.add(redstone, glowstone);
 
-//结果为 true，因为 redstone 属于 alldusts
-if(allDusts has redstone) {
+//True as redstone is a part of alldusts
+if (allDusts has redstone) {
 
 }
 
-//结果为 false，因为 allDusts 包含 redstone 和 glowstone，但 redstone 只包含 redstone.
-if(redstone has allDusts) {
+//False as allDusts consists of redstone and glowstone, and redstone only consists of redstone.
+if (redstone has allDusts) {
 
 }
 ```
