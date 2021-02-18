@@ -1,220 +1,228 @@
 # MCArgumentBuilder
 
-Этот класс был добавлен модом с mod-id `crafttweaker`. Так что если вы хотите использовать эту функцию, вам нужно установить этот мод.
-
 ## Импорт класса
-Вам может потребоваться импортировать пакет, если вы столкнетесь с какими-либо проблемами (например, с заливкой массива), так что лучше быть в безопасности, чем извиняться и добавлять импорт.
+
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
 ```zenscript
-crafttweaker.api.commands.custom.MCArgumentBuilder
+import crafttweaker.api.commands.custom.MCArgumentBuilder;
 ```
 
+
+## Утилиты
+
+| Тип результата | Является неявным |
+| -------------- | ---------------- |
+| string         | true             |
+
 ## Methods
+
 ### build
 
-Возврат тип: [crafttweaker.api.commands.custom.MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)
+Return Type: [MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)
 
 ```zenscript
+MCArgumentBuilder.build() as MCCommandNode
 myMCArgumentBuilder.build();
 ```
 
 ### equals
 
-Return type: boolean
+Return Type: boolean
 
 ```zenscript
-myMCArgumentBuilder.equals(o as Object);
+MCArgumentBuilder.equals(o as Object) as boolean
 ```
 
-| Параметр | Тип    | Description          |
-| -------- | ------ | -------------------- |
-| o        | Object | Описание отсутствует |
+| Параметр | Тип    | Description             |
+| -------- | ------ | ----------------------- |
+| o        | Object | No Description Provided |
 
 
 ### выполняет
 
-Тип возврата: [crafttweaker.api.commands.custom.MCArgumentBuilder](/vanilla/api/commands/custom/MCArgumentBuilder)
+Return Type: [MCArgumentBuilder](/vanilla/api/commands/custom/MCArgumentBuilder)
 
 ```zenscript
-myMCArgumentBuilder.executes(команда как crafttweaker.api.commands.custom.MCCommand);
+MCArgumentBuilder.executes(command as MCCommand) as MCArgumentBuilder
 ```
 
-| Параметр | Тип                                                                                  | Description          |
-| -------- | ------------------------------------------------------------------------------------ | -------------------- |
-| command  | [crafttweaker.api.commands.custom.MCCommand](/vanilla/api/commands/custom/MCCommand) | Описание отсутствует |
+| Параметр | Тип                                                 | Description             |
+| -------- | --------------------------------------------------- | ----------------------- |
+| command  | [MCCommand](/vanilla/api/commands/custom/MCCommand) | No Description Provided |
 
 
 ### fork
 
-Тип возврата: [crafttweaker.api.commands.custom.MCArgumentBuilder](/vanilla/api/commands/custom/MCArgumentBuilder)
+Return Type: [MCArgumentBuilder](/vanilla/api/commands/custom/MCArgumentBuilder)
 
 ```zenscript
-myMCArgumentBuilder.fork(цель как crafttweaker.api.commands.custom.MCCommandNode, модификатор как crafttweaker.api.commands.custom.MCRedirectModifier);
+MCArgumentBuilder.fork(target as MCCommandNode, modifier as MCRedirectModifier) as MCArgumentBuilder
 ```
 
-| Параметр | Тип                                                                                                    | Description          |
-| -------- | ------------------------------------------------------------------------------------------------------ | -------------------- |
-| target   | [crafttweaker.api.commands.custom.MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)           | Описание отсутствует |
-| modifier | [crafttweaker.api.commands.custom.MCRedirectModifier](/vanilla/api/commands/custom/MCRedirectModifier) | Описание отсутствует |
+| Параметр | Тип                                                                      | Description             |
+| -------- | ------------------------------------------------------------------------ | ----------------------- |
+| target   | [MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)              | No Description Provided |
+| modifier | [МCRedirectМодификатор](/vanilla/api/commands/custom/MCRedirectModifier) | No Description Provided |
 
 
 ### вперёд
 
-Тип возврата: [crafttweaker.api.commands.custom.MCArgumentBuilder](/vanilla/api/commands/custom/MCArgumentBuilder)
+Return Type: [MCArgumentBuilder](/vanilla/api/commands/custom/MCArgumentBuilder)
 
 ```zenscript
-myMCArgumentBuilder.forward(цель как crafttweaker.api.commands.custom.MCCommandNode, модификатор как crafttweaker.api.commands.custom.MCRedirectModifier, форк как boolean);
+MCArgumentBuilder.forward(target as MCCommandNode, modifier as MCRedirectModifier, fork as boolean) as MCArgumentBuilder
 ```
 
-| Параметр | Тип                                                                                                    | Description          |
-| -------- | ------------------------------------------------------------------------------------------------------ | -------------------- |
-| target   | [crafttweaker.api.commands.custom.MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)           | Описание отсутствует |
-| modifier | [crafttweaker.api.commands.custom.MCRedirectModifier](/vanilla/api/commands/custom/MCRedirectModifier) | Описание отсутствует |
-| fork     | boolean                                                                                                | Описание отсутствует |
+| Параметр | Тип                                                                      | Description             |
+| -------- | ------------------------------------------------------------------------ | ----------------------- |
+| target   | [MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)              | No Description Provided |
+| modifier | [МCRedirectМодификатор](/vanilla/api/commands/custom/MCRedirectModifier) | No Description Provided |
+| fork     | boolean                                                                  | No Description Provided |
 
 
 ### getАргументы
 
-Тип возврата: Коллекция&lt;[crafttweaker.api.commands.custom.MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)&gt;
+Return Type: Collection&lt;[MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)&gt;
 
 ```zenscript
+MCArgumentBuilder.getArguments() as Collection<MCCommandNode>
 myMCArgumentBuilder.getArguments();
 ```
 
 ### getCommand
 
-Возврат типа: [crafttweaker.api.commands.custom.MCCommand](/vanilla/api/commands/custom/MCCommand)
+Return Type: [MCCommand](/vanilla/api/commands/custom/MCCommand)
 
 ```zenscript
+MCArgumentBuilder.getCommand() as MCCommand
 myMCArgumentBuilder.getCommand();
 ```
 
 ### getRedirect
 
-Возврат тип: [crafttweaker.api.commands.custom.MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)
+Return Type: [MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)
 
 ```zenscript
+MCArgumentBuilder.getRedirect() as MCCommandNode
 myMCArgumentBuilder.getRedirect();
 ```
 
 ### getRedirectModifier
 
-Тип возврата: [crafttweaker.api.commands.custom.MCRedirectModifier](/vanilla/api/commands/custom/MCRedirectModifier)
+Return Type: [MCRedirectModifier](/vanilla/api/commands/custom/MCRedirectModifier)
 
 ```zenscript
+MCArgumentBuilder.getRedirectModifier() as MCRedirectModifier
 myMCArgumentBuilder.getRedirectModifier();
 ```
 
 ### getRequirement
 
-Тип возврата: function.Predicate&lt;[crafttweaker.api.commands.custom.MCCommandSource](/vanilla/api/commands/custom/MCCommandSource)&gt;
+Return Type: Predicate&lt;[MCCommandSource](/vanilla/api/commands/custom/MCCommandSource)&gt;
 
 ```zenscript
+MCArgumentBuilder.getRequirement() as Predicate<MCCommandSource>
 myMCArgumentBuilder.getRequirement();
 ```
 
 ### hashCode
 
-Return type: int
+Return Type: int
 
 ```zenscript
+MCArgumentBuilder.hashCode() as int
 myMCArgumentBuilder.hashCode();
 ```
 
 ### isFork
 
-Return type: boolean
+Return Type: boolean
 
 ```zenscript
+MCArgumentBuilder.isFork() as boolean
 myMCArgumentBuilder.isFork();
 ```
 
 ### перенаправление
 
-Тип возврата: [crafttweaker.api.commands.custom.MCArgumentBuilder](/vanilla/api/commands/custom/MCArgumentBuilder)
+Return Type: [MCArgumentBuilder](/vanilla/api/commands/custom/MCArgumentBuilder)
 
 ```zenscript
-myMCArgumentBuilder.redirect(цель как crafttweaker.api.commands.custom.MCCommandNode);
+MCArgumentBuilder.redirect(target as MCCommandNode) as MCArgumentBuilder
 ```
 
-| Параметр | Тип                                                                                          | Description          |
-| -------- | -------------------------------------------------------------------------------------------- | -------------------- |
-| target   | [crafttweaker.api.commands.custom.MCCommandNode](/vanilla/api/commands/custom/MCCommandNode) | Описание отсутствует |
+| Параметр | Тип                                                         | Description             |
+| -------- | ----------------------------------------------------------- | ----------------------- |
+| target   | [MCCommandNode](/vanilla/api/commands/custom/MCCommandNode) | No Description Provided |
 
 
-
-Тип возврата: [crafttweaker.api.commands.custom.MCArgumentBuilder](/vanilla/api/commands/custom/MCArgumentBuilder)
+Return Type: [MCArgumentBuilder](/vanilla/api/commands/custom/MCArgumentBuilder)
 
 ```zenscript
-myMCArgumentBuilder.redirect(цель как crafttweaker.api.commands.custom.MCCommandNode, модификатор как crafttweaker.api.commands.custom.MCSingleRedirectModifier);
+MCArgumentBuilder.redirect(target as MCCommandNode, modifier as MCSingleRedirectModifier) as MCArgumentBuilder
 ```
 
-| Параметр | Тип                                                                                                                | Description          |
-| -------- | ------------------------------------------------------------------------------------------------------------------ | -------------------- |
-| target   | [crafttweaker.api.commands.custom.MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)                       | Описание отсутствует |
-| modifier | [crafttweaker.api.commands.custom.MCSingleRedirectModifier](/vanilla/api/commands/custom/MCSingleRedirectModifier) | Описание отсутствует |
+| Параметр | Тип                                                                                                           | Description             |
+| -------- | ------------------------------------------------------------------------------------------------------------- | ----------------------- |
+| target   | [MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)                                                   | No Description Provided |
+| modifier | [Модификатор перенаправления MCSingleRedirectModifier](/vanilla/api/commands/custom/MCSingleRedirectModifier) | No Description Provided |
 
 
 ### требуется
 
-Тип возврата: [crafttweaker.api.commands.custom.MCArgumentBuilder](/vanilla/api/commands/custom/MCArgumentBuilder)
+Return Type: [MCArgumentBuilder](/vanilla/api/commands/custom/MCArgumentBuilder)
 
 ```zenscript
-myMCArgumentBuilder.requires(requirement as function.Predicate<crafttweaker.api.commands.custom.MCCommandSource>);
+MCArgumentBuilder.requires(requirement as Predicate<MCCommandSource>) as MCArgumentBuilder
 ```
 
-| Параметр   | Тип                                                                                                                                    | Description          |
-| ---------- | -------------------------------------------------------------------------------------------------------------------------------------- | -------------------- |
-| требование | function.Predicate&lt;[crafttweaker.api.commands.custom.MCCommandSource](/vanilla/api/commands/custom/MCCommandSource)&gt; | Описание отсутствует |
+| Параметр   | Тип                                                                                          | Description             |
+| ---------- | -------------------------------------------------------------------------------------------- | ----------------------- |
+| требование | Predicate&lt;[MCCommandSource](/vanilla/api/commands/custom/MCCommandSource)&gt; | No Description Provided |
 
 
 ### затем
 
-Тип возврата: [crafttweaker.api.commands.custom.MCArgumentBuilder](/vanilla/api/commands/custom/MCArgumentBuilder)
+Return Type: [MCArgumentBuilder](/vanilla/api/commands/custom/MCArgumentBuilder)
 
 ```zenscript
-myMCArgumentBuilder.then(аргумент как crafttweaker.api.commands.custom.MCArgumentBuilder);
+MCArgumentBuilder.then(argument as MCArgumentBuilder) as MCArgumentBuilder
 ```
 
-| Параметр | Тип                                                                                                  | Description          |
-| -------- | ---------------------------------------------------------------------------------------------------- | -------------------- |
-| аргумент | [crafttweaker.api.commands.custom.MCArgumentBuilder](/vanilla/api/commands/custom/MCArgumentBuilder) | Описание отсутствует |
+| Параметр | Тип                                                                 | Description             |
+| -------- | ------------------------------------------------------------------- | ----------------------- |
+| аргумент | [MCArgumentBuilder](/vanilla/api/commands/custom/MCArgumentBuilder) | No Description Provided |
 
 
-
-Тип возврата: [crafttweaker.api.commands.custom.MCArgumentBuilder](/vanilla/api/commands/custom/MCArgumentBuilder)
+Return Type: [MCArgumentBuilder](/vanilla/api/commands/custom/MCArgumentBuilder)
 
 ```zenscript
-myMCArgumentBuilder.then(аргумент как crafttweaker.api.commands.custom.MCCommandNode);
+MCArgumentBuilder.then(argument as MCCommandNode) as MCArgumentBuilder
 ```
 
-| Параметр | Тип                                                                                          | Description          |
-| -------- | -------------------------------------------------------------------------------------------- | -------------------- |
-| аргумент | [crafttweaker.api.commands.custom.MCCommandNode](/vanilla/api/commands/custom/MCCommandNode) | Описание отсутствует |
+| Параметр | Тип                                                         | Description             |
+| -------- | ----------------------------------------------------------- | ----------------------- |
+| аргумент | [MCCommandNode](/vanilla/api/commands/custom/MCCommandNode) | No Description Provided |
 
 
 ### toString
 
-Return type: String
+Return Type: string
 
 ```zenscript
+MCArgumentBuilder.toString() as string
 myMCArgumentBuilder.toString();
 ```
 
 
 ## Операторы
+
 ### EQUALS
 
 ```zenscript
 myMCArgumentBuilder == o как объект
 ```
 
-| Параметр | Тип    | Description          |
-| -------- | ------ | -------------------- |
-| o        | Object | Описание отсутствует |
 
-## Утилиты
 
-| Тип результата | Является неявным |
-| -------------- | ---------------- |
-| String         | true             |
 
