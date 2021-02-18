@@ -38,7 +38,7 @@ This Annotation can have these arguments:
 You can even omit the getter/setter method alltogether if you use `@ZenProperty`.  
 If you do use those methods, however, you will need to add `@ZenMethod` should you want this functionality, if you omit the methods, they will be generated automatically.
 
-## Examples
+## Ejemplos 
 
 ### ZenGetters Example
 
