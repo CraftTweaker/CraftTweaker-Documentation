@@ -1,15 +1,15 @@
 # PlayerLeftClickBlock
 
-L'evento PlayerLeftClickBlock viene sparato ogni volta che un giocatore fa clic su un blocco.  
-Può essere annullato per impedire che si verifichino altri eventi. Se il giocatore tiene premuto il tasto sinistro, l'evento sparerà di nuovo anche se è stato annullato. Annullare questo evento impedirà che il clic sinistro venga registrato, impedendo la rottura del blocco (anche se non in modalità creativa). Se l'evento viene annullato, può essere fornito un risultato specifico del successo, del fallimento o del passaggio. Per impostazione predefinita, il risultato è passato.
+The PlayerLeftClickBlock Event is fired whenever a player left clicks a block.  
+It can be canceled to prevent any other events from taking place. If the player holds down the left click, the event will fire again even if it has been canceled. Canceling this event will prevent the left click from being registered, preventing block breaking (although not in creative mode). If the event is canceled, a specific result of success, fail or pass can be provided. By default, the result is pass.
 
 ## Event Class
-Dovrai lanciare l'evento nell'intestazione della funzione come questa classe:  
-`crafttweaker.event. layerLeftClickBlockEvent`  
-È possibile, naturalmente, anche [importare](/AdvancedFunctions/Import/) la classe prima e utilizzare quel nome allora.
+You will need to cast the event in the function header as this class:  
+`crafttweaker.event.PlayerLeftClickBlockEvent`  
+You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
 
 ## Event interface extensions
-PlayerLeftClickBlock Events implementare le seguenti interfacce e sono in grado di chiamare tutti i loro metodi/getters/setters pure:
+PlayerLeftClickBlock Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
 
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 - [PlayerInteract](/Vanilla/Events/Events/PlayerInteract/)
@@ -19,12 +19,12 @@ PlayerLeftClickBlock Events implementare le seguenti interfacce e sono in grado 
 ## ZenGetters & ZenSetters
 The following information can be retrieved from the event:
 
-| ZenGetter                | ZenSetter                | type                                   |
-| ------------------------ | ------------------------ | -------------------------------------- |
-| `hitvector`              |                          | [IVector3d](/Vanilla/World/IVector3d/) |
-| `useblock`               | `useblock`               | string ("allow" / "deny" / "default")  |
-| `useitem`                | `useitem`                | string ("allow" / "deny" / "default")  |
-| `cancellazioneRisultato` | `cancellazioneRisultato` | string ("success" / "pass" / "fail")   |
+| ZenGetter            | ZenSetter            | type                                   |
+| -------------------- | -------------------- | -------------------------------------- |
+| `hitvector`          |                      | [IVector3d](/Vanilla/World/IVector3d/) |
+| `useblock`           | `useblock`           | string ("allow" / "deny" / "default")  |
+| `useitem`            | `useitem`            | string ("allow" / "deny" / "default")  |
+| `cancellationResult` | `cancellationResult` | string ("success" / "pass" / "fail")   |
 
 ## ZenMethods
 
