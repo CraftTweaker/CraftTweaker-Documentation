@@ -2,30 +2,47 @@
 
 Represents a direction axis (X, Y, Z)
 
-这个类由mod-id为`crafttweaker`的模组添加. 因此，如果要使用此功能，则需要安装此mod。
-
 ## 导入相关包
-如果遇到任何问题（例如强制转换数组），则可能需要导入软件包，因此，最好的方式就是导入包支持。
+
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
 ```zenscript
-crafttweaker.api.util.DirectionAxis
+import crafttweaker.api.util.DirectionAxis;
 ```
 
+
+## Extending Enum&lt;DirectionAxis&gt;
+
+DirectionAxis extends Enum&lt;[DirectionAxis](/vanilla/api/util/DirectionAxis)&gt;. That means all methods available in Enum&lt;[DirectionAxis](/vanilla/api/util/DirectionAxis)&gt; are also available in DirectionAxis
+
 ## 已实现的接口
-DirectionAxis implements the following interfaces. 这意味着对这个接口可用的任何方法也可以在此类上使用。
-- [crafttweaker.api.brackets.CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
+DirectionAxis implements the following interfaces. That means all methods defined in these interfaces are also available in DirectionAxis
+
+- Predicate
 
 ## 方法
+
+### equals #等于
+
+Return Type: boolean
+
+```zenscript
+DirectionAxis.equals(o as Object) as boolean
+```
+
+| 参数 | 类型     | 描述                      |
+| -- | ------ | ----------------------- |
+| o  | Object | No Description Provided |
+
+
 ### getCoordinate
 
 Gets the coordinate of this axis based on the given values, if this axis is "X", then it will return the value of the "x" parameter
 
- 返回： `坐标值`
-
-返回类型：双倍数
+Return Type: double
 
 ```zenscript
-<directionaxis:x>.getCoordinate(x 双倍，y 双倍，z 双倍)；
-<directionaxis:x>.getCoordinate(1.2、2.5、3.87)；
+DirectionAxis.getCoordinate(x as double, y as double, z as double) as double
+<directionaxis:x>.getCoordinate(1.2, 2.5, 3.87);
 ```
 
 | 参数 | 类型     | 描述                        |
@@ -35,15 +52,12 @@ Gets the coordinate of this axis based on the given values, if this axis is "X",
 | z  | double | z value of the coordinate |
 
 
-
 Gets the coordinate of this axis based on the given values, if this axis is "X", then it will return the value of the "x" parameter
 
- 返回： `坐标值`
-
-Return type: int
+Return Type: int
 
 ```zenscript
-<directionaxis:x>.getCoordinate(x as int, y as int, z as int);
+DirectionAxis.getCoordinate(x as int, y as int, z as int) as int
 <directionaxis:x>.getCoordinate(1, 2, 3);
 ```
 
@@ -54,14 +68,24 @@ Return type: int
 | z  | int | z value of the coordinate |
 
 
+### hashCode
+
+Return Type: int
+
+```zenscript
+DirectionAxis.hashCode() as int
+<directionaxis:x>.hashCode();
+```
+
 
 ## 参数
 
 | 名称            | 类型      | 可获得  | 可设置   |
 | ------------- | ------- | ---- | ----- |
-| commandString | String  | true | false |
+| commandString | string  | true | false |
+| hashCode      | int     | true | false |
 | horizontal    | boolean | true | false |
-| name          | String  | true | false |
+| name          | string  | true | false |
 | ordinal       | int     | true | false |
 | vertical      | boolean | true | false |
 
