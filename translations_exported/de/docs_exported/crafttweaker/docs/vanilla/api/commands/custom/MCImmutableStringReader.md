@@ -1,100 +1,107 @@
 # MCImmutableStringReader
 
-This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
-
 ## Diese Klasse importieren
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
 ```zenscript
-crafttweaker.api.commands.custom.MCImmutableStringReader
+import crafttweaker.api.commands.custom.MCImmutableStringReader;
 ```
 
+
 ## Methoden
+
 ### canRead
 
-Return type: boolean
+Return Type: boolean
 
 ```zenscript
+MCImmutableStringReader.canRead() as boolean
 myMCImmutableStringReader.canRead();
 ```
 
-
-Return type: boolean
+Return Type: boolean
 
 ```zenscript
-myMCImmutableStringReader.canRead(arg0 als int);
+MCImmutableStringReader.canRead(arg0 as int) as boolean
 ```
 
 | Parameter | Type | Beschreibung            |
 | --------- | ---- | ----------------------- |
-| arg0      | int  | No description provided |
+| arg0      | int  | No Description Provided |
 
 
 ### getCursor
 
-Return type: int
+Return Type: int
 
 ```zenscript
+MCImmutableStringReader.getCursor() as int
 myMCImmutableStringReader.getCursor();
 ```
 
 ### getRead
 
-Return type: String
+Return Type: string
 
 ```zenscript
-myMCImmutableStringReader.getRead ();
+MCImmutableStringReader.getRead() as string
+myMCImmutableStringReader.getRead();
 ```
 
 ### Verbleibend
 
-Return type: String
+Return Type: string
 
 ```zenscript
-myMCImmutableStringReader.getVerbleibend();
+MCImmutableStringReader.getRemaining() as string
+myMCImmutableStringReader.getRemaining();
 ```
 
 ### getVerbleibende Länge
 
-Return type: int
+Return Type: int
 
 ```zenscript
+MCImmutableStringReader.getRemainingLength() as int
 myMCImmutableStringReader.getRemainingLength();
 ```
 
 ### getString
 
-Return type: String
+Return Type: string
 
 ```zenscript
+MCImmutableStringReader.getString() as string
 myMCImmutableStringReader.getString();
 ```
 
 ### getTotalLänge
 
-Return type: int
+Return Type: int
 
 ```zenscript
+MCImmutableStringReader.getTotalLength() as int
 myMCImmutableStringReader.getTotalLength();
 ```
 
 ### spitzen
 
-Rückgabetyp: Zeichen
+Return Type: char
 
 ```zenscript
+MCImmutableStringReader.peek() as char
 myMCImmutableStringReader.peek();
 ```
 
-
-Rückgabetyp: Zeichen
+Return Type: char
 
 ```zenscript
-myMCImmutableStringReader.peek(arg0 als int);
+MCImmutableStringReader.peek(arg0 as int) as char
 ```
 
 | Parameter | Type | Beschreibung            |
 | --------- | ---- | ----------------------- |
-| arg0      | int  | No description provided |
+| arg0      | int  | No Description Provided |
 
 
 
