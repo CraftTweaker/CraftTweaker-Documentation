@@ -33,7 +33,7 @@ void addRecipeBlock(
 
 * * *
 
-### Examples
+### Ejemplos 
 
 ```zenscript
 import mods.roots.FlowerGrowth;
