@@ -1,175 +1,180 @@
 # MCSuggestionsBuilder
 
-This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
-
 ## Importing the class
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
 ```zenscript
-crafttweaker.api.commands.custom.MCSuggestionsBuilder
+import crafttweaker.api.commands.custom.MCSuggestionsBuilder;
 ```
+
+
+## Casters
+
+| Result type | Is Implicit |
+| ----------- | ----------- |
+| string      | true        |
 
 ## Methods
+
 ### add
 
-Typ zwrotu: [crafttweaker.api.commands.custom.MCSuggestionsBuilder](/vanilla/api/commands/custom/MCSuggestionsBuilder)
+Return Type: [MCSuggestionsBuilder](/vanilla/api/commands/custom/MCSuggestionsBuilder)
 
 ```zenscript
-myMCSuggestionsBuilder.add(inne jak crafttweaker.api.commands.custom.MCSuggestionsBuilder);
+MCSuggestionsBuilder.add(other as MCSuggestionsBuilder) as MCSuggestionsBuilder
 ```
 
-| Parameter | Type                                                                                                       | Description             |
-| --------- | ---------------------------------------------------------------------------------------------------------- | ----------------------- |
-| other     | [crafttweaker.api.commands.custom.MCSuggestionsBuilder](/vanilla/api/commands/custom/MCSuggestionsBuilder) | No description provided |
+| Parameter | Type                                                                      | Description             |
+| --------- | ------------------------------------------------------------------------- | ----------------------- |
+| other     | [MCSuggestionsBuilder](/vanilla/api/commands/custom/MCSuggestionsBuilder) | No Description Provided |
 
 
 ### build
 
-Typ zwrotu: [crafttweaker.api.commands.custom.MCSuggestions](/vanilla/api/commands/custom/MCSuggestions)
+Return Type: [MCSuggestions](/vanilla/api/commands/custom/MCSuggestions)
 
 ```zenscript
+MCSuggestionsBuilder.build() as MCSuggestions
 myMCSuggestionsBuilder.build();
 ```
 
 ### utwórz Offset
 
-Typ zwrotu: [crafttweaker.api.commands.custom.MCSuggestionsBuilder](/vanilla/api/commands/custom/MCSuggestionsBuilder)
+Return Type: [MCSuggestionsBuilder](/vanilla/api/commands/custom/MCSuggestionsBuilder)
 
 ```zenscript
-myMCSuggestionsBuilder.createOffset(start as int);
+MCSuggestionsBuilder.createOffset(start as int) as MCSuggestionsBuilder
 ```
 
 | Parameter | Type | Description             |
 | --------- | ---- | ----------------------- |
-| początek  | int  | No description provided |
+| początek  | int  | No Description Provided |
 
 
 ### equals
 
-Return type: boolean
+Return Type: boolean
 
 ```zenscript
-myMCSuggestionsBuilder.equals(o jako obiekt);
+MCSuggestionsBuilder.equals(o as Object) as boolean
 ```
 
 | Parameter | Type   | Description             |
 | --------- | ------ | ----------------------- |
-| o         | Object | No description provided |
+| o         | Object | No Description Provided |
 
 
 ### getInput
 
-Return type: String
+Return Type: string
 
 ```zenscript
+MCSuggestionsBuilder.getInput() as string
 myMCSuggestionsBuilder.getInput();
 ```
 
 ### Pozostało
 
-Return type: String
+Return Type: string
 
 ```zenscript
+MCSuggestionsBuilder.getRemaining() as string
 myMCSuggestionsBuilder.getRemaining();
 ```
 
 ### getStart
 
-Return type: int
+Return Type: int
 
 ```zenscript
+MCSuggestionsBuilder.getStart() as int
 myMCSuggestionsBuilder.getStart();
 ```
 
 ### hashCode
 
-Return type: int
+Return Type: int
 
 ```zenscript
+MCSuggestionsBuilder.hashCode() as int
 myMCSuggestionsBuilder.hashCode();
 ```
 
 ### zrestartuj
 
-Typ zwrotu: [crafttweaker.api.commands.custom.MCSuggestionsBuilder](/vanilla/api/commands/custom/MCSuggestionsBuilder)
+Return Type: [MCSuggestionsBuilder](/vanilla/api/commands/custom/MCSuggestionsBuilder)
 
 ```zenscript
+MCSuggestionsBuilder.restart() as MCSuggestionsBuilder
 myMCSuggestionsBuilder.restart();
 ```
 
 ### sugeruj
 
-Typ zwrotu: [crafttweaker.api.commands.custom.MCSuggestionsBuilder](/vanilla/api/commands/custom/MCSuggestionsBuilder)
+Return Type: [MCSuggestionsBuilder](/vanilla/api/commands/custom/MCSuggestionsBuilder)
 
 ```zenscript
-myMCSuggestionsBuilder.suggest(tekst jako String);
+MCSuggestionsBuilder.suggest(text as string) as MCSuggestionsBuilder
 ```
 
 | Parameter | Type   | Description             |
 | --------- | ------ | ----------------------- |
-| tekst     | String | No description provided |
+| tekst     | string | No Description Provided |
 
 
-
-Typ zwrotu: [crafttweaker.api.commands.custom.MCSuggestionsBuilder](/vanilla/api/commands/custom/MCSuggestionsBuilder)
+Return Type: [MCSuggestionsBuilder](/vanilla/api/commands/custom/MCSuggestionsBuilder)
 
 ```zenscript
-myMCSuggestionsBuilder.suggest(wartość jak int);
+MCSuggestionsBuilder.suggest(value as int) as MCSuggestionsBuilder
 ```
 
 | Parameter | Type | Description             |
 | --------- | ---- | ----------------------- |
-| value     | int  | No description provided |
+| value     | int  | No Description Provided |
 
 
-
-Typ zwrotu: [crafttweaker.api.commands.custom.MCSuggestionsBuilder](/vanilla/api/commands/custom/MCSuggestionsBuilder)
+Return Type: [MCSuggestionsBuilder](/vanilla/api/commands/custom/MCSuggestionsBuilder)
 
 ```zenscript
-myMCSuggestionsBuilder.suggest(tekst jako String, tooltip jako String);
+MCSuggestionsBuilder.suggest(text as string, tooltip as string) as MCSuggestionsBuilder
 ```
 
 | Parameter  | Type   | Description             |
 | ---------- | ------ | ----------------------- |
-| tekst      | String | No description provided |
-| podpowiedź | String | No description provided |
+| tekst      | string | No Description Provided |
+| podpowiedź | string | No Description Provided |
 
 
-
-Typ zwrotu: [crafttweaker.api.commands.custom.MCSuggestionsBuilder](/vanilla/api/commands/custom/MCSuggestionsBuilder)
+Return Type: [MCSuggestionsBuilder](/vanilla/api/commands/custom/MCSuggestionsBuilder)
 
 ```zenscript
-myMCSuggestionsBuilder.suggest(wartość jako int, tooltip jako String);
+MCSuggestionsBuilder.suggest(value as int, tooltip as string) as MCSuggestionsBuilder
 ```
 
 | Parameter  | Type   | Description             |
 | ---------- | ------ | ----------------------- |
-| value      | int    | No description provided |
-| podpowiedź | String | No description provided |
+| value      | int    | No Description Provided |
+| podpowiedź | string | No Description Provided |
 
 
 ### toString
 
-Return type: String
+Return Type: string
 
 ```zenscript
+MCSuggestionsBuilder.toString() as string
 myMCSuggestionsBuilder.toString();
 ```
 
 
 ## Operators
+
 ### EQUALS
 
 ```zenscript
 myMCSuggestionsBuilder == o jako obiekt
 ```
 
-| Parameter | Type   | Description             |
-| --------- | ------ | ----------------------- |
-| o         | Object | No description provided |
 
-## Casters
 
-| Result type | Is Implicit |
-| ----------- | ----------- |
-| String      | true        |
 
