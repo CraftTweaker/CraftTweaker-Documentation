@@ -34,7 +34,7 @@ void addBlockToItemRecipe(
 
 * * *
 
-### Examples
+### Ejemplos 
 
 ```zenscript
 import mods.roots.Transmutation;
