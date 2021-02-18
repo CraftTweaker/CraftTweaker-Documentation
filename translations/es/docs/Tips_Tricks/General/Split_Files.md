@@ -2,7 +2,7 @@
 
 It is a good idea to split your script into multiple files
 
-## Problem
+## El problema 
 
 - When writing scripts for bigger modpacks, your script might soon become pretty long and confusing.
 - Debugging a long script might take really long, especially if you have an error that doesn't point out a specific line in your script.
@@ -13,7 +13,7 @@ It is a good idea to split your script into multiple files
 - CraftTweaker can even load files in subfolders.
 - Also, CraftTweaker can load .zip files that contain .zs scripts inside them, as long as the .zip file is not password protected.
 
-## Solution
+## La solución
 
 - Split your large scripts into multiple smaller ones.
 - You could for example create one script for each mod, or each mod handler.
@@ -34,13 +34,13 @@ scripts
     oreDict.zs
 ```
 
-## Advantages
+## Ventajas:
 
 - Your script files become easier to debug.
 - An error won't stop your whole script from working but instead only a small part of it.
 - People checking your script files can easier orient themselves
 
-## Disadvantages
+## Desventajas:
 
 - You need to be careful with the loading order of the scripts (especially if one script removes a recipe and another one adds it). Check the [Priority Preprocessor](/AdvancedFunctions/Preprocessors/PriorityPreprocessor/) if your script loading order is a problem
 - There are many ways to categorize your scripts after and yours may be confusing for outsiders.
