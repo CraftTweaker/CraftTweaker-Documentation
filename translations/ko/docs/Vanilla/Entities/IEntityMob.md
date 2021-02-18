@@ -1,6 +1,6 @@
-# IEntityMod
+# IEntityMob
 
-A Mod.
+A Mob.
 
 ## 패키지 임포트하기
 
