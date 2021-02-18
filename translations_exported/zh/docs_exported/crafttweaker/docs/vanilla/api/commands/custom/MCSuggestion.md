@@ -1,135 +1,141 @@
 # MCSuggestion
 
-这个类由mod-id为`crafttweaker`的模组添加. 因此，如果要使用此功能，则需要安装此mod。
-
 ## 导入相关包
-如果遇到任何问题（例如强制转换数组），则可能需要导入软件包，因此，最好的方式就是导入包支持。
+
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
 ```zenscript
-crafttbiner.api.commands.custom.MCSuggestion
+import crafttweaker.api.commands.custom.MCSuggestion;
 ```
 
+
+## Casters
+
+| 结果类型   | 是否隐藏 |
+| ------ | ---- |
+| string | true |
+
 ## 方法
+
 ### 应用
 
-Return type: String
+Return Type: string
 
 ```zenscript
-myMCSuggestion.apply(输入为字符串)；
+MCSuggestion.apply(input as string) as string
 ```
 
 | 参数        | 类型     | 描述                      |
 | --------- | ------ | ----------------------- |
-| input（输入） | String | No description provided |
+| input（输入） | string | No Description Provided |
 
 
 ### 比较到
 
-Return type: int
+Return Type: int
 
 ```zenscript
-myMCSuggestion.compareTo(o as craftwiner.api.commands.custom.MCSuggestion);
+MCSuggestion.compareTo(o as MCSuggestion) as int
 ```
 
-| 参数 | 类型                                                                                        | 描述                      |
-| -- | ----------------------------------------------------------------------------------------- | ----------------------- |
-| o  | [crafttbiner.api.commands.custom.MCSuggestion](/vanilla/api/commands/custom/MCSuggestion) | No description provided |
+| 参数 | 类型                                                        | 描述                      |
+| -- | --------------------------------------------------------- | ----------------------- |
+| o  | [MCSuggestion](/vanilla/api/commands/custom/MCSuggestion) | No Description Provided |
 
 
 ### 对比的 ToIgnoreCase
 
-Return type: int
+Return Type: int
 
 ```zenscript
-myMCSuggestion.compareToIgnoreCase(Bb as craftbiner.api.commands.custom.MCSuggestion);
+MCSuggestion.compareToIgnoreCase(b as MCSuggestion) as int
 ```
 
-| 参数 | 类型                                                                                        | 描述                      |
-| -- | ----------------------------------------------------------------------------------------- | ----------------------- |
-| b  | [crafttbiner.api.commands.custom.MCSuggestion](/vanilla/api/commands/custom/MCSuggestion) | No description provided |
+| 参数 | 类型                                                        | 描述                      |
+| -- | --------------------------------------------------------- | ----------------------- |
+| b  | [MCSuggestion](/vanilla/api/commands/custom/MCSuggestion) | No Description Provided |
 
 
 ### equals #等于
 
-Return type: boolean
+Return Type: boolean
 
 ```zenscript
-myMCSuggestion.equals(o as Object);
+MCSuggestion.equals(o as Object) as boolean
 ```
 
 | 参数 | 类型     | 描述                      |
 | -- | ------ | ----------------------- |
-| o  | Object | No description provided |
+| o  | Object | No Description Provided |
 
 
-### 扩展
+### expandWith
 
-返回类型： [craftbiner.api.commands.custom.MCSuggestion](/vanilla/api/commands/custom/MCSuggestion)
+Return Type: [MCSuggestion](/vanilla/api/commands/custom/MCSuggestion)
 
 ```zenscript
-myMCSuggestion.extension (命令字符串，范围为 craftbiner.api.commands.custom.MCStringRange);
+MCSuggestion.expandWith(command as string, range as MCStringRange) as MCSuggestion
 ```
 
-| 参数      | 类型                                                                                            | 描述                      |
-| ------- | --------------------------------------------------------------------------------------------- | ----------------------- |
-| command | String                                                                                        | No description provided |
-| range   | [craftminstrer.api.commands.custom.MCStringrange](/vanilla/api/commands/custom/MCStringRange) | No description provided |
+| 参数      | 类型                                                          | 描述                      |
+| ------- | ----------------------------------------------------------- | ----------------------- |
+| command | string                                                      | No Description Provided |
+| range   | [MCStringRange](/vanilla/api/commands/custom/MCStringRange) | No Description Provided |
 
 
 ### getRange
 
-返回类型： [craftbiner.api.commands.custom.MCStringrange](/vanilla/api/commands/custom/MCStringRange)
+Return Type: [MCStringRange](/vanilla/api/commands/custom/MCStringRange)
 
 ```zenscript
+MCSuggestion.getRange() as MCStringRange
 myMCSuggestion.getRange();
 ```
 
 ### getText
 
-Return type: String
+Return Type: string
 
 ```zenscript
+MCSuggestion.getText() as string
 myMCSuggestion.getText();
 ```
 
 ### 获取工具提示
 
-Return type: String
+Return Type: string
 
 ```zenscript
+MCSuggestion.getTooltip() as string
 myMCSuggestion.getTooltip();
 ```
 
 ### hashCode
 
-Return type: int
+Return Type: int
 
 ```zenscript
+MCSuggestion.hashCode() as int
 myMCSuggestion.hashCode();
 ```
 
 ### toString
 
-Return type: String
+Return Type: string
 
 ```zenscript
+MCSuggestion.toString() as string
 myMCSuggestion.toString();
 ```
 
 
 ## 运算符
+
 ### EQUALS
 
 ```zenscript
 myMCSuggestion == o 为对象
 ```
 
-| 参数 | 类型     | 描述                      |
-| -- | ------ | ----------------------- |
-| o  | Object | No description provided |
 
-## Casters
 
-| 结果类型   | 是否隐藏 |
-| ------ | ---- |
-| String | true |
 
