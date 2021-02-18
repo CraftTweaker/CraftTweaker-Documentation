@@ -31,6 +31,7 @@ crafttweaker.world.IVector3d.create(0.0D, 0.0D, 0.0D);
 - double dotProduct(IVector3d other);
 - IVector3d crossProduct(IVector3d other);
 - IVector3d subtract(IVector3d other);
+- IVector3d subtractReverse(IVector3d other);
 - IVector3d add(IVector3d other);
 - double distanceTo(IVector3d other);
 - IVector3d scale(double factor);
