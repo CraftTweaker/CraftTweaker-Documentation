@@ -19,14 +19,14 @@ BlockHarvestDropsEvent реализует следующие интерфейс�
 
 Следующая информация может быть получена от события:
 
-| Геттер         | Сеттер       | Тип                                              |
-| -------------- | ------------ | ------------------------------------------------ |
-| `player`       |              | [IPlayer](/Vanilla/Players/IPlayer/)             |
-| `isPlayer`     |              | bool                                             |
-| `silkTouch`    |              | bool                                             |
-| `fortuneLevel` |              | int                                              |
-| `drops`        | `drops`      | List<[IItemStack](/Vanilla/Items/IItemStack/)\> |
-| `dropChance`   | `dropChance` | float                                            |
+| Геттер         | Сеттер       | Тип                                                            |
+| -------------- | ------------ | -------------------------------------------------------------- |
+| `player`       |              | [IPlayer](/Vanilla/Players/IPlayer/)                           |
+| `isPlayer`     |              | bool                                                           |
+| `silkTouch`    |              | bool                                                           |
+| `fortuneLevel` |              | int                                                            |
+| `drops`        | `drops`      | List<[WeightedItemStack](/Vanilla/Items/WeightedItemStack/)\> |
+| `dropChance`   | `dropChance` | float                                                          |
 
 ## Добавление предмета в список
 
