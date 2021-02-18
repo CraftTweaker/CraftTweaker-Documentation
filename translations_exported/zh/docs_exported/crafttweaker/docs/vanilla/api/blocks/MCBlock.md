@@ -1,27 +1,36 @@
 # MCBlock #MC方块
 
-这个类由mod-id为`crafttweaker`的模组添加. 因此，如果要使用此功能，则需要安装此mod。
-
 ## 导入相关包
-如果遇到任何问题（例如强制转换数组），则可能需要导入软件包，因此，最好的方式就是导入包支持。
+
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
 ```zenscript
-crafttweaker.api.block.MCBlock
+import crafttweaker.api.blocks.MCBlock;
 ```
 
+
+## Casters
+
+| 结果类型   | 是否隐藏  |
+| ------ | ----- |
+| string | false |
+
 ## 方法
+
 ### canSpawnInBlock
 
-Return type: boolean
+Return Type: boolean
 
 ```zenscript
+MCBlock.canSpawnInBlock() as boolean
 myMCBlock.canSpawnInBlock();
 ```
 
 ### getDefaultState #获取默认状态
 
-返回类型： [craftbiner.api.block.MCBlockState](/vanilla/api/blocks/MCBlockState)
+Return Type: [MCBlockState](/vanilla/api/blocks/MCBlockState)
 
 ```zenscript
+MCBlock.getDefaultState() as MCBlockState
 myMCBlock.getDefaultState();
 ```
 
@@ -30,12 +39,7 @@ myMCBlock.getDefaultState();
 
 | 名称             | 类型     | 可获得  | 可设置   |
 | -------------- | ------ | ---- | ----- |
-| lootTable      | String | true | false |
-| translationKey | String | true | false |
-
-## Casters
-
-| 结果类型   | 是否隐藏  |
-| ------ | ----- |
-| String | false |
+| commandString  | string | true | false |
+| lootTable      | string | true | false |
+| translationKey | string | true | false |
 
