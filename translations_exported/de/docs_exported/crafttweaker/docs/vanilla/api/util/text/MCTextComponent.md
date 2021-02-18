@@ -1,139 +1,182 @@
 # MCTextkomponente
 
-This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
-
 ## Diese Klasse importieren
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
 ```zenscript
-crafttweaker.api.util.text.MCTextComponent
+import crafttweaker.api.util.text.MCTextComponent;
 ```
+
 
 ## Methoden
-### append-Sibling
 
-Rückgabetyp: [crafttweaker.api.util.text.MCTextComponent](/vanilla/api/util/text/MCTextComponent)
+### createStringTextComponent
 
-```zenscript
-myMCTextComponent.appendSibling(Komponente als crafttweaker.api.util.text.MCTextComponent);
-```
-
-| Parameter  | Type                                                                                 | Beschreibung            |
-| ---------- | ------------------------------------------------------------------------------------ | ----------------------- |
-| komponente | [crafttweaker.api.util.text.MCTextComponent](/vanilla/api/util/text/MCTextComponent) | No description provided |
-
-
-### appendText
-
-Rückgabetyp: [crafttweaker.api.util.text.MCTextComponent](/vanilla/api/util/text/MCTextComponent)
+Return Type: [MCTextComponent](/vanilla/api/util/text/MCTextComponent)
 
 ```zenscript
-myMCTextComponent.appendText(Text als String);
+MCTextComponent.createStringTextComponent(text as string) as MCTextComponent
 ```
 
 | Parameter | Type   | Beschreibung            |
 | --------- | ------ | ----------------------- |
-| text      | String | No description provided |
+| text      | string | No Description Provided |
 
 
-### kopiere Rohe
+### createTranslationTextComponent
 
-Rückgabetyp: [crafttweaker.api.util.text.MCTextComponent](/vanilla/api/util/text/MCTextComponent)
-
-```zenscript
-myMCTextComponent.copyRaw();
-```
-
-### deepCopy
-
-Rückgabetyp: [crafttweaker.api.util.text.MCTextComponent](/vanilla/api/util/text/MCTextComponent)
+Return Type: [MCTextComponent](/vanilla/api/util/text/MCTextComponent)
 
 ```zenscript
-myMCTextComponent.deepCopy();
+MCTextComponent.createTranslationTextComponent(translationKey as string) as MCTextComponent
 ```
 
-### getString
+| Parameter      | Type   | Beschreibung            |
+| -------------- | ------ | ----------------------- |
+| translationKey | string | No Description Provided |
 
-Return type: String
+
+Return Type: [MCTextComponent](/vanilla/api/util/text/MCTextComponent)
 
 ```zenscript
-myMCTextComponent.getString();
+MCTextComponent.createTranslationTextComponent(translationKey as string, args as Object[]) as MCTextComponent
 ```
 
-### getStringTruncated
+| Parameter      | Type     | Beschreibung            |
+| -------------- | -------- | ----------------------- |
+| translationKey | string   | No Description Provided |
+| args           | Object[] | No Description Provided |
 
-Return type: String
-
-```zenscript
-myMCTextComponent.getStringTruncated(maxLen als int);
-```
-
-| Parameter | Type | Beschreibung            |
-| --------- | ---- | ----------------------- |
-| maxLen    | int  | No description provided |
-
-
-### getUnformattedComponentText
-
-Return type: String
-
-```zenscript
-myMCTextComponent.getUnformattedComponentText();
-```
-
-### setStyle
-
-Rückgabetyp: [crafttweaker.api.util.text.MCTextComponent](/vanilla/api/util/text/MCTextComponent)
-
-```zenscript
-myMCTextComponent.setStyle(style as crafttweaker.api.util.text.MCStyle);
-```
-
-| Parameter | Type                                                                 | Beschreibung            |
-| --------- | -------------------------------------------------------------------- | ----------------------- |
-| stile     | [crafttweaker.api.util.text.MCStyle](/vanilla/api/util/text/MCStyle) | No description provided |
-
-
-
-## Properties
-
-| Name                     | Type                                                                                                          | Has Getter | Has Setter |
-| ------------------------ | ------------------------------------------------------------------------------------------------------------- | ---------- | ---------- |
-| formatierter Text        | String                                                                                                        | true       | false      |
-| Geschwister              | Liste&lt;[crafttweaker.api.util.text.MCTextComponent](/vanilla/api/util/text/MCTextComponent)&gt; | true       | false      |
-| unformattedComponentText | String                                                                                                        | true       | false      |
-
-## Operatoren
-### ADD
-
-```zenscript
-myMCTextComponent + Komponente als crafttweaker.api.util.text.MCTextComponent
-```
-
-| Parameter  | Type                                                                                 | Beschreibung            |
-| ---------- | ------------------------------------------------------------------------------------ | ----------------------- |
-| komponente | [crafttweaker.api.util.text.MCTextComponent](/vanilla/api/util/text/MCTextComponent) | No description provided |
-### CAT
-
-```zenscript
-myMCTextComponent ~ Komponente als crafttweaker.api.util.text.MCTextComponent
-```
-
-| Parameter  | Type                                                                                 | Beschreibung            |
-| ---------- | ------------------------------------------------------------------------------------ | ----------------------- |
-| komponente | [crafttweaker.api.util.text.MCTextComponent](/vanilla/api/util/text/MCTextComponent) | No description provided |
-### SHL
-
-```zenscript
-myMCTextComponent << Komponente als crafttweaker.api.util.text.MCTextComponent
-```
-
-| Parameter  | Type                                                                                 | Beschreibung            |
-| ---------- | ------------------------------------------------------------------------------------ | ----------------------- |
-| komponente | [crafttweaker.api.util.text.MCTextComponent](/vanilla/api/util/text/MCTextComponent) | No description provided |
 
 ## Casters
 
 | Result type | Is Implicit |
 | ----------- | ----------- |
-| String      | false       |
+| string      | false       |
+
+## Methoden
+
+### appendSibling
+
+Return Type: [MCTextComponent](/vanilla/api/util/text/MCTextComponent)
+
+```zenscript
+MCTextComponent.appendSibling(component as MCTextComponent) as MCTextComponent
+```
+
+| Parameter | Type                                                       | Beschreibung            |
+| --------- | ---------------------------------------------------------- | ----------------------- |
+| component | [MCTextkomponente](/vanilla/api/util/text/MCTextComponent) | No Description Provided |
+
+
+### appendText
+
+Return Type: [MCTextComponent](/vanilla/api/util/text/MCTextComponent)
+
+```zenscript
+MCTextComponent.appendText(text as string) as MCTextComponent
+```
+
+| Parameter | Type   | Beschreibung            |
+| --------- | ------ | ----------------------- |
+| text      | string | No Description Provided |
+
+
+### copyRaw
+
+Return Type: [MCTextComponent](/vanilla/api/util/text/MCTextComponent)
+
+```zenscript
+MCTextComponent.copyRaw() as MCTextComponent
+myMCTextComponent.copyRaw();
+```
+
+### deepCopy
+
+Return Type: [MCTextComponent](/vanilla/api/util/text/MCTextComponent)
+
+```zenscript
+MCTextComponent.deepCopy() as MCTextComponent
+myMCTextComponent.deepCopy();
+```
+
+### getString
+
+Return Type: string
+
+```zenscript
+MCTextComponent.getString() as string
+myMCTextComponent.getString();
+```
+
+### getStringTruncated
+
+Return Type: string
+
+```zenscript
+MCTextComponent.getStringTruncated(maxLen as int) as string
+```
+
+| Parameter | Type | Beschreibung            |
+| --------- | ---- | ----------------------- |
+| maxLen    | int  | No Description Provided |
+
+
+### getUnformattedComponentText
+
+Return Type: string
+
+```zenscript
+MCTextComponent.getUnformattedComponentText() as string
+myMCTextComponent.getUnformattedComponentText();
+```
+
+### setStyle
+
+Return Type: [MCTextComponent](/vanilla/api/util/text/MCTextComponent)
+
+```zenscript
+MCTextComponent.setStyle(style as MCStyle) as MCTextComponent
+```
+
+| Parameter | Type                                      | Beschreibung            |
+| --------- | ----------------------------------------- | ----------------------- |
+| stile     | [MCStyle](/vanilla/api/util/text/MCStyle) | No Description Provided |
+
+
+
+## Operatoren
+
+### ADD
+
+```zenscript
+myMCTextComponent + component as MCTextComponent
+```
+
+
+
+### CAT
+
+```zenscript
+myMCTextComponent ~ component as MCTextComponent
+```
+
+
+
+### SHL
+
+```zenscript
+myMCTextComponent << component as MCTextComponent
+```
+
+
+
+
+## Properties
+
+| Name                     | Type                                                                                     | Has Getter | Has Setter |
+| ------------------------ | ---------------------------------------------------------------------------------------- | ---------- | ---------- |
+| formattedText            | string                                                                                   | true       | false      |
+| siblings                 | stdlib.List&lt;[MCTextComponent](/vanilla/api/util/text/MCTextComponent)&gt; | true       | false      |
+| unformattedComponentText | string                                                                                   | true       | false      |
 
