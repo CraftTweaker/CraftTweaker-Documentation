@@ -1,4 +1,4 @@
-# Bracket Handlers
+# Paréntesis de ZS
 
 Bracket Handlers or BracketExpressionParser (BEP for short) are pieces of code that reference game objects (or create new objects) such as Items, Blocks or Resource Locations.
 
