@@ -9,22 +9,23 @@
 
 ## Вызов IBiome
 
-Вы можете получить список всех зарегистрированных биомов с помощью `game.biomes` из [IGame](/Vanilla/Game/IGame/). Пока что это единственный способ.
+You can get a list of all registered Biomes using `game.biomes` from [IGame](/Vanilla/Game/IGame/)
 
 ## Геттеры
 
 Эмм, все что вы можете сделать с объектом IBiome &mdash; получить некоторую информацию из него:
 
-| Геттер                       | Возвращаемый тип |
-| ---------------------------- | ---------------- |
-| name                         | string           |
-| canRain                      | boolean          |
-| isSnowyBiome                 | boolean          |
-| highHumidity                 | boolean          |
-| spawningChance               | float            |
-| baseHeight                   | float            |
-| heightVariation              | float            |
-| rainfall                     | float            |
-| waterColorMultiplier         | int              |
-| ignorePlayerSpawnSuitability | boolean          |
-| temperature                  | float            |
+| Геттер                       | Возвращаемый тип                               |
+| ---------------------------- | ---------------------------------------------- |
+| name                         | string                                         |
+| canRain                      | boolean                                        |
+| isSnowyBiome                 | boolean                                        |
+| highHumidity                 | boolean                                        |
+| spawningChance               | float                                          |
+| baseHeight                   | float                                          |
+| heightVariation              | float                                          |
+| rainfall                     | float                                          |
+| waterColorMultiplier         | int                                            |
+| ignorePlayerSpawnSuitability | boolean                                        |
+| temperature                  | float                                          |
+| types                        | List<[IBiomeType](/Vanilla/Biomes/IBiomeType/) |

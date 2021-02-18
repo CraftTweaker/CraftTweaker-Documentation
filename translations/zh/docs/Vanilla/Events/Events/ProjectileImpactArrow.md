@@ -11,7 +11,7 @@ It might be required to [import](/AdvancedFunctions/Import/) the class to avoid 
 ## Extending IEntityEvent
 ProjectileImpactArrow Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
 
-- [IProjectileEvent](/Vanilla/Events/Events/IProjectileEvent/)
+- [IProjectileImpactEvent](/Vanilla/Events/Events/IProjectileImpactEvent/)
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 
 ## ZenGetters and ZenSetters

@@ -1,12 +1,11 @@
-# DebugPreprocessor
+# Procesador de Depuración
 
-The debugPreprocessor enables debug mode.
+Este procesador activa el modo de depuración
 
-## Call
+## Uso
 
-You call the debug Preprocessor by adding `#debug` to your script file.
+Puedes usar el prepocesador añadiendo `#debug` a tu archivo zs.
 
-## What it does
+## Lo que hace:
 
-It globally enables debug mode. This mode outputs the parsed script files.  
-You most likely will never need them.
+Activa el modo de depuración globalmente. Éste guarda los archivos que ya han sido compilados en una carpeta. Es muy probable que nunca sea usado.

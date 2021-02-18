@@ -1,12 +1,11 @@
-# NoRun Preprocessor
+# Preprocesador "Apaga y vámonos"
 
-The NoRun Preprocessor disables the script from being loaded COMPLETELY.
+Este preprocesador desactiva el archivo de ser cargado completamente.
 
-## Call
+## Uso
 
-You call the NoRun Preprocessor by adding `#norun` to your script file.
+Puedes usar el procesador añadiendo ` #norun ` a tu archivo zs.
 
-## What it does
+## Lo que hace:
 
-It completely disables the script it's added to from being loaded into the game.  
-Though `/ct syntax` will still show script issues in that file!
+Elimina el archivo a ojos del compilador, aunque no hace el archivo invisible al comando  /ct syntax </0> que revisa errores de sintaxis en tu archivo.</p>

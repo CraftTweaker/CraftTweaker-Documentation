@@ -12,8 +12,8 @@ These are internal tokens only listed so I have a place to list them somewhere f
 | 4           | T_STRINGVALUE       | `"([^"\\]|\\(['"\\/bfnrt]|u[0-9a-fA-F]{4}))*"`        |
 | 5           | T_AOPEN             | `{`                                                         |
 | 6           | T_ACLOSE            | `}`                                                         |
-| 7           | T_SQBROPEN          | `[`                                                         |
-| 8           | T_SQBRCLOSE         | `]`                                                         |
+| 7           | T_SQBROPEN          | `` [ </0></code>                                            |
+| 8           | T_SQBRCLOSE         | `` ] </0></code>                                            |
 | 9           | T_DOT2              | `..`                                                        |
 | 10          | T_DOT               | `.`                                                         |
 | 11          | T_COMMA             | `,`                                                         |

@@ -1,17 +1,18 @@
-# ModLoaderPreprocessor
+# Preprocesador de ModCargado
 
-The modLoaded Preprocessor only executes a script, if a certain mod is present.
+Este preprocesador sólo carga un archivo si detecta un mod X en la lista de mods. 
 
-## Call
+## Uso
 
-You call the modLoaded Preprocessor by adding `#modloaded modID` to your script file, with `modID` being the modId you want to check for:  
-Example: `#modloaded minecraft`
+Puedes usar el preprocesador añadiendo ` #modloaded idDeMod ` a tu archivo zs, siendo el ` idDeMod ` el modId que quieres comprobar que exista. Un ejemplo de esto seria ` #modloaded tconstruct `.
 
-You can also provide multiple modID's:  
-`#modloaded minecraft tconstruct` will only be executed if minecraft AND tconstruct are loaded.
+Si listas más de un mod el archivo solo se ejecutará si todos los mods están presentes. Ejemplo: ` #modloaded tconstruct immersiveengineering </0>.</p>
 
-You can also invert a mod condition so that the mod is only loaded if the mod is NOT loaded: `#modloaded !tconstruct minecraft` will only be executed if minecraft is present and tconstruct is NOT present
+<p>También puedes invertir la condición con el operador <code> ! ` que representa NO en programación. Un ejemplo de esto sería:  #modloaded !tconstruct immersiveengineering </0>
 
-## What it does
+El archivo sólo se ejecutaría si <code> immersiveengineering </0> se encontrara presente y <code> tconstruct </0> NO ESTUVIERA en la lista de mods.
+</p>
 
-If you added this preprocessor to a script, it will only be executed if the provided modID's are present, in other words if the respecting mods are loaded.
+<h2>Lo que hace:</h2>
+
+<p>Añadir este preprocesador a un archivo hace que el archivo en cuestión solo se execute en el caso de que los idsDeMods que se tengan que comprobar existan en el juego, es decir estén cargados en el juego.</p>

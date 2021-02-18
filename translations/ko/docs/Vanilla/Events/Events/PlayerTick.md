@@ -1,6 +1,6 @@
 # PlayerTick
 
-The PlayerTick Event is fired each tick for each player.
+The PlayerTick Event is fired each tick for each player on both client and server.
 
 ## Event Class
 
@@ -13,12 +13,8 @@ You can, of course, also [import](/AdvancedFunctions/Import/) the class before a
 PlayerTick Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
 
 - [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
+- [ITickEvent](/Vanilla/Events/Events/ITickEvent/)
 
 ## ZenGetters
 
-다음 정보들은 이벤트를 통해서 얻을 수 있습니다.
-
-| ZenGetter | 반환 타입                                |
-| --------- | ------------------------------------ |
-| `player`  | [IPlayer](/Vanilla/Players/IPlayer/) |
-| `phase`   | string                               |
+There is no additional information provided that is not already in the interfaces above.

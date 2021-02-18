@@ -1,6 +1,6 @@
-# IEntityMod
+# IEntityMob
 
-A Mod.
+A Mob.
 
 ## Dieses Paket importieren
 

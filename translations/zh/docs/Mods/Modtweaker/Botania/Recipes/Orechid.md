@@ -12,7 +12,7 @@ You can find all registered Orechid recipes using [`/ct botorechid`](/Mods/Modtw
 
 ## 添加配方
 
-You can either add recipes using the returned [IOreDictEntry](/Vanilla/OreDict/IOreDictEntry/) as output parameter, or the name of said oreDictEntry as string.
+You can either add recipes using the returned [IOreDictEntry](/Vanilla/OreDict/IOreDictEntry/) as output parameter, or the name of said oreDictEntry as string. Note, than having two recipes with same weight will crash the game.
 
 ```zenscript
 //mods.botania.Orechid.addOre(IOreDictEntry oreDict, int weight);

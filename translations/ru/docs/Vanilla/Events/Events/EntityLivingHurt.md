@@ -22,3 +22,9 @@ PlayerDeathDrops реализует следующие интерфейсы и �
 | ------------ | ----------------------------------------------- |
 | damageSource | [IDamageSource](/Vanilla/Damage/IDamageSource/) |
 | amount       | float                                           |
+
+## ZenSetters
+
+| ZenSetter | Тип   |
+| --------- | ----- |
+| amount    | float |

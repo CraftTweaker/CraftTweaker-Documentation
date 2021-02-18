@@ -20,11 +20,12 @@ Warnung: Es ist nur mit der zweiten Methode möglich für `Daten` ZenGetter eine
 
 ## ZenGetter
 
-| Getter     | What does it do                | Rückgabetyp                                           |
-| ---------- | ------------------------------ | ----------------------------------------------------- |
-| definition | Returns the Block's definition | [IBlockDefinition](/Vanilla/Blocks/IBlockDefinition/) |
-| meta       | Returns the Block's metadata   | int                                                   |
-| data       | Returns the Block's tileData   | [IData](/Vanilla/Data/IData/)                         |
+| Getter     | What does it do                | Rückgabetyp                                              |
+| ---------- | ------------------------------ | -------------------------------------------------------- |
+| definition | Returns the Block's definition | [IBlockDefinition](/Vanilla/Blocks/IBlockDefinition/)    |
+| meta       | Returns the Block's metadata   | int                                                      |
+| data       | Returns the Block's tileData   | [IData](/Vanilla/Data/IData/)                            |
+| fluid      | Returns the Block's fluid      | [ILiquidDefinition](/Vanilla/Liquids/ILiquidDefinition/) |
 
 # IBlockPattern
 

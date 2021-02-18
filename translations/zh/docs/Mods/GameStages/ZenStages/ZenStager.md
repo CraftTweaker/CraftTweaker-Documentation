@@ -123,7 +123,7 @@ Get the TiC Material stage, if staged it will return the [Stage](/Mods/GameStage
 
 ```zenscript
 // mods.zenstages.ZenStager.getTiCMaterialStage(string material);
-var MobStage as Stage = ZenStager.getTiCMaterialStage("bronze");
+var TiCMaterialStage as Stage = ZenStager.getTiCMaterialStage("bronze");
 ```
 
 ### Check if something is Staged

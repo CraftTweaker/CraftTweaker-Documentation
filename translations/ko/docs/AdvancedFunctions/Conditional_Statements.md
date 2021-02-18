@@ -4,13 +4,13 @@
 
 ## If
 
-if문은 조건문의 첫 파트입니다. 선언된 조건이 true일때 if문 내의 코드가 수행되도록 합니다. 두 값이 같은지 비교하기 위해선 '==' 연산자를 사용하는 것에 유의하세요. (=이 한 개인 '=' 연산자는 값을 선언할 때 쓰는 대입 연산자입니다!)
+if문은 조건문의 첫 파트입니다. 선언된 조건이 true일때 if문 내의 코드가 수행되도록 합니다. **Be careful, you need TWO EQUALS when comparing values! (That's because one equal is for declaring values!)**
 
 ```zenscript
 val test = 0;
 
-if(test == 0) {    // true여야 수행, 즉 test가 0일 때 수행
-     print("Test is zero!");
+if (test == 0) { //true
+    print("Test is zero!");
 }
 ```
 
@@ -21,20 +21,20 @@ Else문은 조건문의 끝에 붙일 수 있습니다. if문의 조건이 false
 ```zenscript
 var test = 0;
 
-if (test == 0) { // true
-    // test의 값이 0일때 실행
+if (test == 0) { //true
+    //will be executed when test is equal to 0
     print("Test is zero!");
 } else {
-    // test의 값이 0이 아닐때 실행
+    //will be executed when test is not equal to 0
     print("Test is NOT zero!");
 }
 
-test = -1;
-if (test == 0) { // false
-    // test의 값이 0일때 실행
+test = 1;
+if (test == 0) { //false
+    //will be executed when test is equal to 0
     print("Now, test is zero!");
-} else { 
-    // test의 값이 0이 아닐때 실행
+} else {
+    //will be executed when test is not equal to 0
     print("Now, test is NOT zero!");
 }
 
@@ -44,39 +44,40 @@ if (test == 0) { // false
 
 지원되는 산술 연산자는 덧셈(`+`), 뺄셈(`-`), 곱셈(`*`), 나눗셈(`/`), 나머지(`mod`), 문자열 간 결합(`~`)이 있습니다.
 
-지원되는 논리 연산자는 AND(`&`), OR(`|`), XOR(`^`)가 있습니다. (비트 연산은 지원되지 않습니다.)
+Supported Operands are `Logical OR(||)`, `Logical AND(&&)`, `Bitwise OR(|)`, `Bitwise AND(&)`, and `Bitwise XOR(^)`
 
 ```zenscript
-// 정수형(int) 상수 선언
-val a = 0 as int;
-if (a == 0) {
-    print("NumVal");}
+//You can check for:
 
-// 숫자 연산
+
+//Number values
+val a = 0 as int;
+if (a == 0) { print("NumVal"); }
+
+//Calculated number values
 val b = 1;
 val c = 5;
-// 모두 true
-if (b + c == 6) { print("Num1!");}
-if (b * c == 5) { print("Num2!");}
-if (b / c == 0.2) { print("Num3!");}
+//All evaluate to true
+if (b+c == 6) { print("Num1!"); }
+if (b*c == 5) { print("Num2!"); }
+if (b/c == 0.2) { print("Num3!"); }
 
-// 문자열 간 결합 (Concatenation)
+//OR, XOR, AND
 val d = "Hello";
 val e = "World";
-val f = d ~ e; // f = "HelloWorld", 물결표(~) 는 두 값을 하나의 문자열로 이어줍니다.
+val f = d~e; //f = "HelloWorld", the Tilde just concatenates one thing to another
 
-// OR, XOR, AND
-// |(OR) 는 둘 중 하나라도 조건을 만족하면 true입니다.
-if (d == "Hello" | e == "Hello") { print("OR1!");}       //true
-if (d == "Hello" | e == "World") { print("OR2!");}       //true
+//||(OR) means, as long as one of the criteria is met, it evaluates to true
+if (d == "Hello" || e == "Hello") { print("OR1!"); }        //true
+if (d == "Hello" || e == "World") { print("OR2!"); }        //true
 
-// ^(XOR) 는 두 조건의 상태가 서로 달라야만 true입니다.
-if (d == "Hello" ^ e == "Hello") { print("XOR1!");}      //true
-if (d == "Hello" ^ e == "World") { print("XOR2!");}      //false
+//^(XOR) means, ONLY ONE criteria may be met, otherwise it evaluates to false
+if (d == "Hello" ^ e == "Hello") { print("XOR1!"); }        //true
+if (d == "Hello" ^ e == "World") { print("XOR2!"); }        //false
 
-// &(AND) 는 두 조건을 모두 만족해야 true입니다.
-if (d == "Hello" & e == "Hello") { print("AND1!");}      //false
-if (d == "Hello" & e == "World") { print("AND2!");}      //true
+//&&(AND) means, both criteria need to be met, otherwise it evaluates to false
+if (d == "Hello" && e == "Hello") { print("AND1!"); }       //false
+if (d == "Hello" && e == "World") { print("AND2!"); }       //true
 ```
 
 ## 삼항 연산자
@@ -105,71 +106,105 @@ switchy ? print("Bye") : print("Hello");
 
 아래와 같은 연산자를 사용하실 수 있습니다. 모든 예시는 true의 값을 가집니다.
 
-| 이름               | 토큰       | 설명                                                            | 예시            |
-| ---------------- | -------- | ------------------------------------------------------------- | ------------- |
-| Not              | `!`      | boolean 타입의 논리값을 반대로 바꿉니다.                                    | !false        |
-| Not Equal        | `!=`     | 두 값이 다른지 확인합니다.                                               | 1 != 2        |
-| Equal            | `==`     | 두 값이 같은지 확인합니다.                                               | 1 == 1        |
-| Greater than     | `>`   | 왼쪽이 오른쪽보다 큰지 확인합니다.                                           | 1 > 2         |
-| Greater or Equal | `>=`  | 왼쪽이 오른쪽보다 크거나 같은지 확인합니다.                                      | 1 >= 1        |
-| Lesser then      | `<`   | 왼쪽이 오른쪽보다 작은지 확인합니다.                                          | 1 < 2         |
-| Lesser or Equal  | `<=`  | 왼쪽이 오른쪽보다 작거나 같은지 확인합니다.                                      | 1 <= 1        |
-| AND              | `&`  | 두 논리값이 전부 true일 경우 true를 반환합니다.                               | true & true   |
-| OR               | `&#124;` | 두 논리값 중 하나라도 true일 경우 true를 반환합니다. 물론 둘 다 true여도 true를 반환합니다. | true \| true |
-| XOR              | `^`      | 두 논리값이 서로 다를 경우 true를 반환합니다.                                  | true ^ false  |
+| 이름               | 토큰           | 설명                                                                                                                                                                           | 예시                |
+| ---------------- | ------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------- |
+| Not              | `!`          | boolean 타입의 논리값을 반대로 바꿉니다.                                                                                                                                                   | !false            |
+| Not Equal        | `!=`         | 두 값이 다른지 확인합니다.                                                                                                                                                              | 1 != 2            |
+| Equal            | `==`         | 두 값이 같은지 확인합니다.                                                                                                                                                              | 1 == 1            |
+| Greater than     | `>`       | 왼쪽이 오른쪽보다 큰지 확인합니다.                                                                                                                                                          | 1 > 2             |
+| Greater or Equal | `>=`      | 왼쪽이 오른쪽보다 크거나 같은지 확인합니다.                                                                                                                                                     | 1 >= 1            |
+| Lesser than      | `<`       | 왼쪽이 오른쪽보다 작은지 확인합니다.                                                                                                                                                         | 1 < 2             |
+| Lesser or Equal  | `<=`      | 왼쪽이 오른쪽보다 작거나 같은지 확인합니다.                                                                                                                                                     | 1 <= 1            |
+| Logical AND      | `&&` | Checks if both before and after values are true, false if one or both are false                                                                                              | true && true      |
+| Logical OR       | `\|\|`     | Checks if either the value before or after are true, false if neither are true                                                                                               | false \|\| true |
+| Bitwise XOR      | `^`          | Checks if exactly one of the before or after values is true, false if both or none are true                                                                                  | true ^ false      |
+| Bitwise AND      | `&`      | Performs a bitwise AND operation on the before and after values. See [this](https://stackoverflow.com/questions/4014535/differences-in-boolean-operators-vs-and-vs) for more | true && true      |
+| Bitwise OR       | `\|`        | Performs a bitwise OR operation on the before and after values. See [this](https://stackoverflow.com/questions/4014535/differences-in-boolean-operators-vs-and-vs) for more  | false \|\| true |
+
+### Difference between `|` and `||` (and `&` and `&&`)
+
+The main difference between the single and the double, with semantics aside, is that the double performs a check after each condition and exits early - this is called short-circuiting. However, the single goes through the entire chain of conditions, even if the first one would have cancelled the entire condition. This not only saves resources, but also allows for easier scripting such as **null checks** and chained conditions.
+
+```zenscript
+var a = 5;
+var item = ... as IItemStack;
+
+// Even though a is 5, it still goes through all of the conditions listed
+if (a == 5 | a == 3 | a == 10 | a == -1) {
+    ...
+}
+
+// Even though a is 5 and the condition is impossible (a variable can't be both 3 and 5), it still goes through all of the conditions listed
+if (a == 3 & a < 2 & a > 8 & a == 5) {
+    ... 
+}
+
+// Checks if item is not null before accessing variables from item
+if (!isNull(item) && item.amount == 1) {
+    ...
+}
+
+// Checks if item is not null while accessing variables from a potentially null item, throwing an error if the item is null
+if (!isNull(item) & item.amount == 1) {
+    ...
+}
+```
 
 ## in/has 연산자
 
-`in` 연산자와 `has` 연산자는 배열이나 리스트같은 컬렉션 자료에 특정 원소가 있는지 확인합니다. 특정 원소가 들어있는지 확인할 컬렉션을 먼저 쓰고, 그 다음 `in` 또는 `has` 연산자를 쓴 다음 확인할 원소를 작성합니다. `in`과 `has`은 ZenScript에서 동일한 키워드지만, 대부분 영문법에 따라 if문의 조건에서 사용할 때는 `has`를 선호하고, for 반복문 안에 사용할 때는 `in`을 선호합니다. 
+The `in` and the `has` operator check if something is in something.  
+First you need the list you want to check in, then the `in`/`has` then the value you want to check for. `in` and `has` are the same keyword for ZS, but in most cases people use `has` for checking if a collection contains an item and in for loops as this represents the English grammar.
 
-### loadedMods 리스트
+### in/has loadedMods
 
-`in` 연산자와 `has` 연산자를 통해 loadedMods 리스트에서 어떤 모드가 로드되었는지 확인할 수 있습니다.
+You can check, if a mod is loaded by checking if it's in the loadedMods list
 
 ```zenscript
-// in도 사용할 수 있습니다.
-if(loadedMods in "mcp"){
+//While contains checks can use in
+if (loadedMods in "mcp") {
     print("Minecraft Coder Pack loaded");
 }
 
-// 하지만 has가 사용하기에 더 자연스럽습니다.
-if(loadedMods has "mcp"){
+//Most people prefer using has
+if (loadedMods has "mcp") {
     print("Minecraft Coder Pack loaded");
 }
 ```
 
-### IIngredient에서의 in/has 사용
+### in/has IIngredient
 
-in/has 연산자로 아이템이 특정 IIngredients(보통 Ore Dictionary)의 포함되는지 확인할 수도 있습니다.   
-이때 혼동하지 말아야 할 것은 `in` 연산자는 '원소 in 컬렉션'이 언뜻 맞아 보이지만 반드시 컬렉션이 연산자의 앞에 위치해야 합니다. 즉 '컬렉션 in 원소'가 적합한 표현입니다.   
-대신에 `has` 연산자를 사용하는 것을 권장합니다. '컬렉션 has 원소'와 같은 형태로 사용하면 훨씬 더 자연스러운 코드를 작성하실 수 있습니다.
+You can also check if an item matches a definition by comparing two IIngredients.  
+With this one you need to be a bit careful as not to confuse the two entries:  
+This is only true when the IIngredient AFTER the `in` can also be found completely in the one BEFORE the `in`.  
+In most cases you will use the `has` keyword instead as it's intention is more clear and it does exactly the same.
 
 ```zenscript
-if(<ore:ingotIron> in <minecraft:iron_ingot>){
-    print("Iron ingots are in the right oreDic");
+// Checks if the iron ingot is in the oreDict "ingotIron"
+if (<ore:ingotIron> in <minecraft:iron_ingot>) {
+    print("Iron ingots are in the right oreDict");
 }
 
-if(<ore:ingotIron> has <minecraft:iron_ingot>){
-    print("Iron ingots are in the right oreDic");
+// Preferred, same function as previous
+if (<ore:ingotIron> has <minecraft:iron_ingot>) { 
+    print("Iron ingots are in the right oreDict");
 }
 ```
 
-단일 원소가 아닌 IIngredients도 컬렉션에 포함되는지 확인할 수 있습니다. 이 경우엔 오른쪽에 올 IIngredients의 모든 원소가 왼쪽의 컬렉션에 포함된다면 true를 반환합니다. 물론 이 경우에도 컬렉션은 왼쪽, 들어있는지 확인할 원소는 오른쪽에 위치해야 합니다.   
-아래의 예제에서 `allDusts`가 레드스톤이나 발광석 등의 가루 아이템을 모두 포함한다고 가정해봅시다.
+This is only true when ALL matching items from the IIngredient AFTER the `has` can also be found in the IIngredient BEFORE `has`: Say we have an IIngredient that contains all dusts (e.g. redstone and glowstone dust):
 
 ```zenscript
 val redstone = <minecraft:redstone>;
-val glowstone = <minecraft:glowstone>
+val glowstone = <minecraft:glowstone>;
 val allDusts = <ore:dustAll>;
 allDusts.add(redstone, glowstone);
 
-// allDusts가 레드스톤을 포함하고 있다면 true를 반환합니다.
-if(allDusts has redstone) {
+//True as redstone is a part of alldusts
+if (allDusts has redstone) {
 
 }
 
-// allDusts의 모든 원소가 레드스톤으로 구성되어 있으면 true를 반환하지만, 이 경우에선 발광석이 있으므로 false를 반환합니다.
-if(redstone has allDusts) {
+//False as allDusts consists of redstone and glowstone, and redstone only consists of redstone.
+if (redstone has allDusts) {
 
 }
 ```

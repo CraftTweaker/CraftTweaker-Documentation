@@ -20,21 +20,24 @@ PlayerInteract Events implement the following interfaces and are able to call al
 
 The following information can be retrieved from the event:
 
-| ZenGetter    | 返回值类型                                |
-| ------------ | ------------------------------------ |
-| `canceled`   | boolean                              |
-| `usingItem`  | boolean                              |
-| `usingBlock` | boolean                              |
-| `x`          | int                                  |
-| `y`          | int                                  |
-| `z`          | int                                  |
-| `player`     | [IPlayer](/Vanilla/Players/IPlayer/) |
-| `world`      | [IWorld](/Vanilla/World/IWorld/)     |
-| `block`      | [IBlock](/Vanilla/Blocks/IBlock/)    |
-| `dimension`  | int                                  |
+| ZenGetter    | 返回值类型                                    |
+| ------------ | ---------------------------------------- |
+| `canceled`   | boolean                                  |
+| `usingItem`  | boolean                                  |
+| `usingBlock` | boolean                                  |
+| `x`          | int                                      |
+| `y`          | int                                      |
+| `z`          | int                                      |
+| `face`       | [IFacing](/Vanilla/World/IFacing/)       |
+| `player`     | [IPlayer](/Vanilla/Players/IPlayer/)     |
+| `world`      | [IWorld](/Vanilla/World/IWorld/)         |
+| `block`      | [IBlock](/Vanilla/Blocks/IBlock/)        |
+| `item`       | [IItemStack](/Vanilla/Items/IItemStack/) |
+| `dimension`  | int                                      |
 
 ## ZenMethods
 
 - `event.cancel()` sets the event as cancelled
-- `event.useBlock()` sets Block to true
-- `event.useItem()` sets Item to true
+- `event.useBlock()` sets usingBlock to true
+- `event.useItem()` sets usingItem to true
+- `event.damageItem(int amount)` damages the item by the specified amount
