@@ -2,90 +2,99 @@
 
 
 
-Questa classe è stata aggiunta da una mod con ID `crafttweaker`. Perciò, è necessario avere questa mod installata per poter utilizzare questa funzione.
-
 ## Importing the class
-Potrebbe essere necessario importare il pacchetto, se si incontrano dei problemi (come castare un vettore), quindi meglio essere sicuri e aggiungere la direttiva di importazione.
+
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
 ```zenscript
-crafttweaker.api.StoneCutterManager
+import crafttweaker.api.StoneCutterManager;
 ```
 
+
 ## Interfacce Implementate
-StoneCutterManager implements the following interfaces. Ciò significa che ogni metodo presente nell'interfaccia può essere usato anche per questa classe.
-- [crafttweaker.api.brackets.CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
-- [crafttweaker.api.registries.IRecipeManager](/vanilla/api/managers/IRecipeManager)
+StoneCutterManager implements the following interfaces. That means all methods defined in these interfaces are also available in StoneCutterManager
+
+- [IRecipeManager](/vanilla/api/managers/IRecipeManager)
 
 ## Methods
+
 ### addJSONRecipe
 
 Adds a recipe based on a provided IData. The provided IData should represent a DataPack JSON, this effectively allows you to register recipes for any DataPack supporting IRecipeType systems.
 
+Return Type: void
+
 ```zenscript
-stoneCutter.addJSONRecipe(name as String, data as crafttweaker.api.data.IData);
+StoneCutterManager.addJSONRecipe(name as string, data as IData) as void
 stoneCutter.addJSONRecipe("recipe_name", {ingredient:{item:<item:minecraft:gold_ore>.registryName},result:<item:minecraft:cooked_porkchop>.registryName,experience:0.35 as float, cookingtime:100});
 ```
 
-| Parameter | Type                                                   | Description                     |
-| --------- | ------------------------------------------------------ | ------------------------------- |
-| name      | String                                                 | name of the recipe              |
-| data      | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | data representing the json file |
+| Parameter | Type                             | Description                     |
+| --------- | -------------------------------- | ------------------------------- |
+| name      | string                           | name of the recipe              |
+| data      | [IData](/vanilla/api/data/IData) | data representing the json file |
 
 
 ### addRecipe
 
 Adds a recipe to the stone cutter
 
+Return Type: void
+
 ```zenscript
-stoneCutter.addRecipe(recipeName as String, output as crafttweaker.api.item.IItemStack, input as crafttweaker.api.item.IIngredient);
-stoneCutter.addRecipe("recipe_name", <item:minecraft:grass>, <tag:minecraft:wool>);
+StoneCutterManager.addRecipe(recipeName as string, output as IItemStack, input as IIngredient) as void
+stoneCutter.addRecipe("recipe_name", <item:minecraft:grass>, <tag:items:minecraft:wool>);
 ```
 
-| Parameter  | Type                                                                | Description                                                               |
-| ---------- | ------------------------------------------------------------------- | ------------------------------------------------------------------------- |
-| recipeName | String                                                              | name of the recipe                                                        |
-| output     | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)   | output [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)  |
-| input      | [crafttweaker.api.item.IIngredient](/vanilla/api/items/IIngredient) | input [crafttweaker.api.item.IIngredient](/vanilla/api/items/IIngredient) |
+| Parameter  | Type                                          | Description                                         |
+| ---------- | --------------------------------------------- | --------------------------------------------------- |
+| recipeName | string                                        | name of the recipe                                  |
+| output     | [IItemStack](/vanilla/api/items/IItemStack)   | output [IItemStack](/vanilla/api/items/IItemStack)  |
+| input      | [IIngredient](/vanilla/api/items/IIngredient) | input [IIngredient](/vanilla/api/items/IIngredient) |
 
 
 ### getAllRecipes
 
-Return type: List&lt;[crafttweaker.api.recipes.WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)&gt;
+Return Type: stdlib.List&lt;[WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)&gt;
 
 ```zenscript
+StoneCutterManager.getAllRecipes() as stdlib.List<WrapperRecipe>
 stoneCutter.getAllRecipes();
 ```
 
 ### getRecipeByName
 
-Return type: [crafttweaker.api.recipes.WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)
+Return Type: [WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)
 
 ```zenscript
-stoneCutter.getRecipeByName(name as String);
+StoneCutterManager.getRecipeByName(name as string) as WrapperRecipe
 ```
 
-| Parameter | Type   | Description                 |
-| --------- | ------ | --------------------------- |
-| name      | String | Nessuna descrizione fornita |
+| Parameter | Type   | Description             |
+| --------- | ------ | ----------------------- |
+| name      | string | No Description Provided |
 
 
 ### getRecipesByOutput
 
-Return type: List&lt;[crafttweaker.api.recipes.WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)&gt;
+Return Type: stdlib.List&lt;[WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)&gt;
 
 ```zenscript
-stoneCutter.getRecipesByOutput(output as crafttweaker.api.item.IIngredient);
+StoneCutterManager.getRecipesByOutput(output as IIngredient) as stdlib.List<WrapperRecipe>
 ```
 
-| Parameter | Type                                                                | Description                 |
-| --------- | ------------------------------------------------------------------- | --------------------------- |
-| output    | [crafttweaker.api.item.IIngredient](/vanilla/api/items/IIngredient) | Nessuna descrizione fornita |
+| Parameter | Type                                          | Description             |
+| --------- | --------------------------------------------- | ----------------------- |
+| output    | [IIngredient](/vanilla/api/items/IIngredient) | No Description Provided |
 
 
 ### removeAll
 
 Remove all recipes in this registry
 
+Return Type: void
+
 ```zenscript
+StoneCutterManager.removeAll() as void
 stoneCutter.removeAll();
 ```
 
@@ -93,76 +102,79 @@ stoneCutter.removeAll();
 
 Remove recipe based on Registry name modid
 
+Return Type: void
+
 ```zenscript
-stoneCutter.removeByModid(modid as String);
+StoneCutterManager.removeByModid(modid as string) as void
 stoneCutter.removeByModid("minecraft");
 ```
 
 | Parameter | Type   | Description                    |
 | --------- | ------ | ------------------------------ |
-| modid     | String | modid of the recipes to remove |
+| modid     | string | modid of the recipes to remove |
 
 
+Remove recipe based on Registry name modid with an added exclusion check, so you can remove the whole mod besides a few specified.
 
-Rimuovere la ricetta in base al nome del Registro di sistema con un controllo di esclusione aggiunto, in modo da poter rimuovere l'intera mod oltre a alcuni specificati.
+Return Type: void
 
 ```zenscript
-stoneCutter.removeByModid(modid as String, exclude as crafttweaker.api.recipe.RecipeFilter);
+StoneCutterManager.removeByModid(modid as string, exclude as RecipeFilter) as void
 stoneCutter.removeByModid("minecraft", (name as string) => {return name == "orange_wool";});
 ```
 
-| Parameter | Type                                                                     | Description                           |
-| --------- | ------------------------------------------------------------------------ | ------------------------------------- |
-| modid     | String                                                                   | modid of the recipes to remove        |
-| esclude   | [crafttweaker.api.recipe.RecipeFilter](/vanilla/api/recipe/RecipeFilter) | ricette da evitare di essere rimosse. |
+| Parameter | Type                                             | Description                           |
+| --------- | ------------------------------------------------ | ------------------------------------- |
+| modid     | string                                           | modid of the recipes to remove        |
+| esclude   | [RecipeFilter](/vanilla/api/recipe/RecipeFilter) | ricette da evitare di essere rimosse. |
 
 
 ### removeByName
 
 Remove recipe based on Registry name
 
+Return Type: void
+
 ```zenscript
-stoneCutter.removeByName(name as String);
+StoneCutterManager.removeByName(name as string) as void
 stoneCutter.removeByName("minecraft:furnace");
 ```
 
 | Parameter | Type   | Description                       |
 | --------- | ------ | --------------------------------- |
-| name      | String | registry name of recipe to remove |
+| name      | string | registry name of recipe to remove |
 
 
 ### removeByRegex
 
 Remove recipe based on regex
 
+Return Type: void
+
 ```zenscript
-stoneCutter.removeByRegex(regex as String);
+StoneCutterManager.removeByRegex(regex as string) as void
 stoneCutter.removeByRegex("\\d_\\d");
 ```
 
 | Parameter | Type   | Description            |
 | --------- | ------ | ---------------------- |
-| regex     | String | regex to match against |
+| regex     | string | regex to match against |
 
 
 ### removeRecipe
 
 Remove a recipe based on it's output.
 
+Return Type: void
+
 ```zenscript
-stoneCutter.removeRecipe(output as crafttweaker.api.item.IItemStack);
+StoneCutterManager.removeRecipe(output as IItemStack) as void
 stoneCutter.removeRecipe(<item:minecraft:glass>);
 ```
 
-| Parameter | Type                                                              | Description          |
-| --------- | ----------------------------------------------------------------- | -------------------- |
-| output    | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | output of the recipe |
+| Parameter | Type                                        | Description          |
+| --------- | ------------------------------------------- | -------------------- |
+| output    | [IItemStack](/vanilla/api/items/IItemStack) | output of the recipe |
 
 
-
-## Properties
-
-| Name          | Type   | Ha Getter | Ha Setter |
-| ------------- | ------ | --------- | --------- |
-| commandString | String | true      | false     |
 
