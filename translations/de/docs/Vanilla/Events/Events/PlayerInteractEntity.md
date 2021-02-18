@@ -1,6 +1,6 @@
 # PlayerInteractEntity
 
-The PlayerInteractEntity Event is fired whenever a player interacts with an Entity. It can be canceled to prevent the interaction from taking place. Wird die Veranstaltung abgebrochen, kann ein bestimmtes Erfolgsergebnis angegeben werden. Standardmäßig wird das Ergebnis übergeben.
+The PlayerInteractEntity Event is fired whenever a player interacts with an Entity. It can be canceled to prevent the interaction from taking place. If the event is canceled, a specific result of success, fail or pass can be provided. By default, the result is pass.
 
 ## Event-Klasse
 
@@ -20,11 +20,11 @@ PlayerInteractEntity Events implement the following interfaces and are able to c
 
 Die folgenden Informationen lassen sich von diesem Event (Ereignis) abrufen:
 
-| ZenGetter              | ZenSetters             | Rückgabetyp                           |
-| ---------------------- | ---------------------- | ------------------------------------- |
-| `player`               |                        | [IPlayer](/Vanilla/Players/IPlayer/)  |
-| `target`               |                        | [IEntity](/Vanilla/Entities/IEntity/) |
-| `Stornierungsresultat` | `Stornierungsresultat` | string ("success" / "pass" / "fail")  |
+| ZenGetter            | ZenSetters           | Rückgabetyp                           |
+| -------------------- | -------------------- | ------------------------------------- |
+| `player`             |                      | [IPlayer](/Vanilla/Players/IPlayer/)  |
+| `target`             |                      | [IEntity](/Vanilla/Entities/IEntity/) |
+| `cancellationResult` | `cancellationResult` | string ("success" / "pass" / "fail")  |
 
 ## ZenMethods
 
