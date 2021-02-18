@@ -20,11 +20,12 @@ IBlock 对象由 [IBlockDefinition](/Vanilla/Blocks/IBlockDefinition/)，元数�
 
 ## Zengetters
 
-| Getter     | 功能             | 返回值类型                                                 |
-| ---------- | -------------- | ----------------------------------------------------- |
-| definition | 返回方块的定义        | [IBlockDefinition](/Vanilla/Blocks/IBlockDefinition/) |
-| meta       | 返回方块的元数据       | int                                                   |
-| data       | 返回方块的 TileData | [IData](/Vanilla/Data/IData/)                         |
+| Getter     | 功能                        | 返回值类型                                                    |
+| ---------- | ------------------------- | -------------------------------------------------------- |
+| definition | 返回方块的定义                   | [IBlockDefinition](/Vanilla/Blocks/IBlockDefinition/)    |
+| meta       | 返回方块的元数据                  | int                                                      |
+| data       | 返回方块的 TileData            | [IData](/Vanilla/Data/IData/)                            |
+| fluid      | Returns the Block's fluid | [ILiquidDefinition](/Vanilla/Liquids/ILiquidDefinition/) |
 
 # IBlockPattern
 
