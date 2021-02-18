@@ -8,6 +8,6 @@ import mods.aether_legacy.Accessory;Accessory;
 ## Usage
 
 ```zenscript
-Accessory.registerAccessory(IItemStack input, String accessory);
+// Possible types are "ring", "pendant", "cape", "shield", "gloves", and "miscellaneous" (case insensitive)
+Accessory.registerAccessory(IItemStack input, String type); // Registers an item as an Aether accessory
 ```
-- Accesory string can be "Ring", "Pendant", "Cape", "Shield", "Gloves", "Miscellaneous"
