@@ -1,27 +1,36 @@
 # MCBlock
 
-Questa classe è stata aggiunta da una mod con ID `crafttweaker`. Perciò, è necessario avere questa mod installata per poter utilizzare questa funzione.
-
 ## Importing the class
-Potrebbe essere necessario importare il pacchetto, se si incontrano dei problemi (come castare un vettore), quindi meglio essere sicuri e aggiungere la direttiva di importazione.
+
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
 ```zenscript
-crafttweaker.api.block.MCBlock
+import crafttweaker.api.blocks.MCBlock;
 ```
 
+
+## Caster
+
+| Tipo Risultato | Implicito |
+| -------------- | --------- |
+| string         | false     |
+
 ## Methods
+
 ### canSpawnInBlock
 
-Return type: boolean
+Return Type: boolean
 
 ```zenscript
+MCBlock.canSpawnInBlock() as boolean
 myMCBlock.canSpawnInBlock();
 ```
 
 ### getDefaultState
 
-Tipo di restituzione: [crafttweaker.api.block.MCBlockState](/vanilla/api/blocks/MCBlockState)
+Return Type: [MCBlockState](/vanilla/api/blocks/MCBlockState)
 
 ```zenscript
+MCBlock.getDefaultState() as MCBlockState
 myMCBlock.getDefaultState();
 ```
 
@@ -30,12 +39,7 @@ myMCBlock.getDefaultState();
 
 | Name           | Type   | Ha Getter | Ha Setter |
 | -------------- | ------ | --------- | --------- |
-| lootTable      | String | true      | false     |
-| translationKey | String | true      | false     |
-
-## Caster
-
-| Tipo Risultato | Implicito |
-| -------------- | --------- |
-| String         | false     |
+| commandString  | string | true      | false     |
+| lootTable      | string | true      | false     |
+| translationKey | string | true      | false     |
 
