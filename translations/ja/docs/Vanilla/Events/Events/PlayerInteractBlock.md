@@ -1,18 +1,17 @@
 # PlayerInteractBlock
 
-PlayerInteractBlock イベントは、プレイヤーがブロックを右クリックするたびに発生します。  
-他のイベントの発生を防ぐためにキャンセルすることができます。 イベントがキャンセルされた場合、特定の成功の結果、失敗またはパスを提供できます。 デフォルトでは、結果はパスです。
+The PlayerInteractBlock Event is fired whenever a player right clicks a block.  
+It can be canceled to prevent any other events from taking place. If the event is canceled, a specific result of success, fail or pass can be provided. By default, the result is pass.
 
 ## Event Class
 
-関数ヘッダーのイベントをこのクラスとしてキャストする必要があります:  
-`crafttweaker.event. layerInteractBlockEvent <br /> 
- <code>`  
-もちろん、 [インポート](/AdvancedFunctions/Import/) 前にクラスをインポートし、その名前を使用することもできます。
+You will need to cast the event in the function header as this class:  
+`crafttweaker.event.PlayerInteractBlockEvent`  
+You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
 
 ## Event interface extensions
 
-PlayerInteractBlock Eventsは、以下のインターフェイスを実装し、それらのメソッド/getters/setters/settersをすべて呼び出すことができます。
+PlayerInteractBlock Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
 
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 - [PlayerInteract](/Vanilla/Events/Events/PlayerInteract/)
@@ -22,12 +21,12 @@ PlayerInteractBlock Eventsは、以下のインターフェイスを実装し、
 
 The following information can be retrieved from the event:
 
-| zengetter           | ツェンセッター             | type                                   |
-| ------------------- | ------------------- | -------------------------------------- |
-| `hitvector`         |                     | [IVector3d](/Vanilla/World/IVector3d/) |
-| `useblock`          | `useblock`          | 文字列 ("allow" / "deny" / "default")     |
-| `useitem`           | `useitem`           | 文字列 ("allow" / "deny" / "default")     |
-| `cancelationResult` | `cancelationResult` | 文字列 ("success" / "pass" / "fail")      |
+| zengetter            | zensetter            | type                                   |
+| -------------------- | -------------------- | -------------------------------------- |
+| `hitvector`          |                      | [IVector3d](/Vanilla/World/IVector3d/) |
+| `useblock`           | `useblock`           | string ("allow" / "deny" / "default")  |
+| `useitem`            | `useitem`            | string ("allow" / "deny" / "default")  |
+| `cancellationResult` | `cancellationResult` | string ("success" / "pass" / "fail")   |
 
 ## ZenMethods
 
