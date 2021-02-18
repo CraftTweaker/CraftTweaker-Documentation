@@ -9,19 +9,19 @@ It might be required for you to import the package if you encounter any issues, 
 
 ## Enumerations
 
-The facing Interface has 7 static Methods, each returning the said direction.  
-The last one takes the direction as String input (e.g. `"NORTH"`)
+The Facing interface has 6 static methods that return the said direction.  
+It also has one more that takes the direction as String input (e.g. `"NORTH"`)
 
 ```zenscript
-crafttweaker.world.Facing.north()
-crafttweaker.world.Facing.east()
-crafttweaker.world.Facing.south()
-crafttweaker.world.Facing.west()
-crafttweaker.world.Facing.down()
-crafttweaker.world.Facing.up()
+crafttweaker.world.IFacing.north()
+crafttweaker.world.IFacing.east()
+crafttweaker.world.IFacing.south()
+crafttweaker.world.IFacing.west()
+crafttweaker.world.IFacing.down()
+crafttweaker.world.IFacing.up()
 
 
-crafttweaker.world.Facing.fromString(String name);
+crafttweaker.world.IFacing.fromString(String name);
 ```
 
 ## 不带参数的 ZenGetters/ZenMethods
