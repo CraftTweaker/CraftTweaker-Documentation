@@ -20,11 +20,12 @@ It refers to a block in the game.
 
 ## Геттеры
 
-| Геттер     | Что он делает                      | Возвращаемый тип                                      |
-| ---------- | ---------------------------------- | ----------------------------------------------------- |
-| definition | Возвращает определение этого блока | [IBlockDefinition](/Vanilla/Blocks/IBlockDefinition/) |
-| meta       | Возвращает метаданные этого блока  | int                                                   |
-| data       | Возвращает tileData этого блока    | [IData](/Vanilla/Data/IData/)                         |
+| Геттер     | Что он делает                      | Возвращаемый тип                                         |
+| ---------- | ---------------------------------- | -------------------------------------------------------- |
+| definition | Возвращает определение этого блока | [IBlockDefinition](/Vanilla/Blocks/IBlockDefinition/)    |
+| meta       | Возвращает метаданные этого блока  | int                                                      |
+| data       | Возвращает tileData этого блока    | [IData](/Vanilla/Data/IData/)                            |
+| fluid      | Returns the Block's fluid          | [ILiquidDefinition](/Vanilla/Liquids/ILiquidDefinition/) |
 
 # IBlockPattern
 
