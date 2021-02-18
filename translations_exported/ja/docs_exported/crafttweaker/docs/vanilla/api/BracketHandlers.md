@@ -1,259 +1,256 @@
 # BracketHandlers
 
-This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
+This class contains the "simple" Bracket handlers from CraftTweaker. However, some Bracket handlers, like for recipeTypes, tags, tagManagers, won't be shown here as they use a different internal structure.
 
 ## Importing the class
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
 ```zenscript
-crafttweaker.api.BracketHandlers
+import crafttweaker.api.BracketHandlers;
 ```
 
+
 ## Methods
-### getBlockMaterial
 
-指定された [crafttweaker.api.block.material.MCMaterial](/vanilla/api/block/material/MCMaterial) を取得します。 例外が見つからない場合はスローします。
+### getBlock
 
- 戻り値: ` [crafttweaker.api.block.material.MCMaterial](/vanilla/api/block/material/MCMaterial)`
+Gets the give [MCBlock](/vanilla/api/blocks/MCBlock). Throws an Exception if not found
 
-戻り値の型: [crafttweaker.api.block.material.MCMaterial](/vanilla/api/block/material/MCMaterial)
+Returns: The found [MCBlock](/vanilla/api/blocks/MCBlock) Return Type: [MCBlock](/vanilla/api/blocks/MCBlock)
 
 ```zenscript
-<blockmaterial:earth>
+<block:minecraft:dirt>
 
-crafttweaker.api.BracketHandlers.getBlockMaterial(tokens as String);
-crafttweaker.api.BracketHandlers.getBlockMaterial("earth");
+BracketHandlers.getBlock(tokens as string) as MCBlock
+BracketHandlers.getBlock("minecraft:dirt");
 ```
 
 | Parameter | Type   | Description    |
 | --------- | ------ | -------------- |
-| tokens    | String | BEP呼び出しで何を書くか。 |
+| tokens    | string | BEP呼び出しで何を書くか。 |
+
+
+### getBlockMaterial
+
+Gets the given [MCMaterial](/vanilla/api/block/material/MCMaterial). Throws an Exception if not found.
+
+Returns: The found [MCMaterial](/vanilla/api/block/material/MCMaterial) Return Type: [MCMaterial](/vanilla/api/block/material/MCMaterial)
+
+```zenscript
+<blockmaterial:earth>
+
+BracketHandlers.getBlockMaterial(tokens as string) as MCMaterial
+BracketHandlers.getBlockMaterial("earth");
+```
+
+| Parameter | Type   | Description    |
+| --------- | ------ | -------------- |
+| tokens    | string | BEP呼び出しで何を書くか。 |
 
 
 ### getBlockState
 
-指定された入力に基づいてブロック状態を作成します。 戻り値 `null` ブロックが見つからない場合は、無効なバリエーションは無視されました
+Creates a Blockstate based on the given inputs. Returns `null` if it cannot find the block, ignored invalid variants
 
- 戻り値: `見つかったBlockState`
-
-戻り値の型: [crafttweaker.api.block.MCBlockState](/vanilla/api/blocks/MCBlockState)
+Returns: The found BlockState Return Type: [MCBlockState](/vanilla/api/blocks/MCBlockState)
 
 ```zenscript
 <blockstate:minecraft:acacia_planks>
 <blockstate:minecraft:furnace:facing=north,lit=false>
 
-crafttweaker.api.BracketHandlers.getBlockState(tokens as String);
-crafttweaker.api.BracketHandlers.getBlockState("minecraft:acia_planks");
+BracketHandlers.getBlockState(tokens as string) as MCBlockState
+BracketHandlers.getBlockState("minecraft:acacia_planks");
+BracketHandlers.getBlockState("minecraft:furnace:facing=north,lit=false");
 ```
 
-| Parameter | Type   | Description          |
-| --------- | ------ | -------------------- |
-| tokens    | String | ブロックのリソースの場所とバリエーション |
+| Parameter | Type   | Description                                |
+| --------- | ------ | ------------------------------------------ |
+| tokens    | string | The block's resource location and variants |
 
 
 ### getDirectionAxis
 
-名前に基づいて方向軸を取得します。 軸方向が見つからない場合はエラーをスローします。
+Gets the direction Axis based on name. Throws an error if it can't find the direction Axis.
 
- 戻り値: `見つかった方向軸`
-
-戻り値の型: [crafttweaker.api.util.DirectionAxis](/vanilla/api/util/DirectionAxis)
+Returns: The found direction Axis Return Type: [DirectionAxis](/vanilla/api/util/DirectionAxis)
 
 ```zenscript
 <directionaxis:x>
 
-crafttweaker.api.BracketHandlers.getDirectionAxis(tokens as String);
-crafttweaker.api.BracketHandlers.getDirectionAxis("x");
+BracketHandlers.getDirectionAxis(tokens as string) as DirectionAxis
+BracketHandlers.getDirectionAxis("x");
 ```
 
-| Parameter | Type   | Description |
-| --------- | ------ | ----------- |
-| tokens    | String | 軸のリソースの場所   |
+| Parameter | Type   | Description                            |
+| --------- | ------ | -------------------------------------- |
+| tokens    | string | The direction Axis's resource location |
 
 
 ### getEffect
 
-レジストリ名に基づいて効果を取得します。 効果が見つからない場合はエラーをスローします。
+Gets the effect based on registry name. Throws an error if it can't find the effect.
 
- 戻り値: `発見された効果`
-
-戻り値の型: [crafttweaker.api.potion.MCPotionEffect](/vanilla/api/potions/MCPotionEffect)
+Returns: The found effect Return Type: [MCPotionEffect](/vanilla/api/potions/MCPotionEffect)
 
 ```zenscript
 <effect:minecraft:haste>
 
-crafttweaker.api.BracketHandlers.getEffect(tokens as String);
-crafttweaker.api.BracketHandlers.getEffect("minecraft:haste");
+BracketHandlers.getEffect(tokens as string) as MCPotionEffect
+BracketHandlers.getEffect("minecraft:haste");
 ```
 
-| Parameter | Type   | Description |
-| --------- | ------ | ----------- |
-| tokens    | String | 効果のリソースの場所  |
+| Parameter | Type   | Description                    |
+| --------- | ------ | ------------------------------ |
+| tokens    | string | The effect's resource location |
 
 
 ### getEntityClassification
 
-レジストリ名に基づいてエンティティ分類を取得します。 エラーをログに記録し、entityClassificationが見つからない場合は `null` を返します。
+Gets the entityClassification based on registry name. Logs an error and returns `null` if it can't find the entityClassification.
 
- 戻り値: `見つかったentityClassification`
-
-戻り値の型: [crafttweaker.api.entity.MCEntityClassification](/vanilla/api/entities/MCEntityClassification)
+Returns: The found entityClassification Return Type: [MCEntityClassification](/vanilla/api/entity/MCEntityClassification)
 
 ```zenscript
 <entityclassification:monster>
 
-crafttweaker.api.BracketHandlers.getEntityClassification(tokens as String);
-crafttweaker.api.BracketHandlers.getEntityClassification("monster');
+BracketHandlers.getEntityClassification(tokens as string) as MCEntityClassification
+BracketHandlers.getEntityClassification("monster");
 ```
 
-| Parameter | Type   | Description                  |
-| --------- | ------ | ---------------------------- |
-| tokens    | String | entityClassificationのリソースの場所 |
+| Parameter | Type   | Description                                  |
+| --------- | ------ | -------------------------------------------- |
+| tokens    | string | The entityClassification's resource location |
 
 
 ### getEntityType
 
-レジストリ名に基づいて entityType を取得します。 エラーをログに記録し、entityType が見つからない場合は `null` を返します。
+Gets the entityType based on registry name. Logs an error and return `null` if it can't find the entityType.
 
- 戻り値: `見つかったエンティティタイプ`
-
-戻り値の型: [crafttweaker.api.entity.MCEntityType](/vanilla/api/entities/MCEntityType)
+Returns: The found entityType Return Type: [MCEntityType](/vanilla/api/entities/MCEntityType)
 
 ```zenscript
 <entitytype:minecraft:pig>
 
-crafttweaker.api.BracketHandlers.getEntityType(tokens as String);
-crafttweaker.api.BracketHandlers.getEntityType("minecraft:pig');
+BracketHandlers.getEntityType(tokens as string) as MCEntityType
+BracketHandlers.getEntityType("minecraft:pig");
 ```
 
-| Parameter | Type   | Description       |
-| --------- | ------ | ----------------- |
-| tokens    | String | エンティティタイプのリソースの場所 |
+| Parameter | Type   | Description                        |
+| --------- | ------ | ---------------------------------- |
+| tokens    | string | The entityType's resource location |
 
 
 ### getFluidStack
 
-レジストリ名に基づいて流体スタックを取得します。 流体が見つからない場合はエラーをスローします。
+Gets the fluid Stack based on registry name. Throws an error if it can't find the fluid.
 
- 戻り値: `a stack of the liquid with amount == 1mb`
-
-戻り値の型: [crafttweaker.api.fluid.IFluidStack](/vanilla/api/fluid/IFluidStack)
+Returns: A stack of the liquid with amount == 1mb Return Type: [IFluidStack](/vanilla/api/fluid/IFluidStack)
 
 ```zenscript
 <fluid:minecraft:water>
 
-crafttweaker.api.BracketHandlers.getFluidStack(tokens as String);
-crafttweaker.api.BracketHandlers.getFluidStack("minecraft:water");
+BracketHandlers.getFluidStack(tokens as string) as IFluidStack
+BracketHandlers.getFluidStack("minecraft:water");
 ```
 
-| Parameter | Type   | Description   |
-| --------- | ------ | ------------- |
-| tokens    | String | Fluidのリソースの場所 |
+| Parameter | Type   | Description                   |
+| --------- | ------ | ----------------------------- |
+| tokens    | string | The Fluid's resource location |
 
 
 ### getItem
 
-レジストリ名に基づいてアイテムを取得します。 アイテムが見つからない場合はエラーをスローします。
+Gets the item based on registry name. Throws an error if it can't find the item.
 
- 戻り値: `見つかった項目`
-
-Return type: [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
+Returns: The found item Return Type: [IItemStack](/vanilla/api/items/IItemStack)
 
 ```zenscript
 <item:minecraft:dirt>
 
-crafttweaker.api.BracketHandlers.getItem(token as String);
-crafttweaker.api.BracketHandlers.getItem("minecraft:dirt");
+BracketHandlers.getItem(tokens as string) as IItemStack
+BracketHandlers.getItem("minecraft:dirt");
 ```
 
-| Parameter | Type   | Description |
-| --------- | ------ | ----------- |
-| tokens    | String | アイテムのリソース位置 |
+| Parameter | Type   | Description                  |
+| --------- | ------ | ---------------------------- |
+| tokens    | string | The item's resource location |
 
 
 ### getPotion
 
-戻り値の型: [crafttweaker.api.potion.MCPotion](/vanilla/api/potions/MCPotion)
+Return Type: [MCPotion](/vanilla/api/potions/MCPotion)
 
 ```zenscript
-<potion:tokens>
-crafttweaker.api.BracketHandlers.getPotion(tokens as String);
+BracketHandlers.getPotion(tokens as string) as MCPotion
 ```
 
 | Parameter | Type   | Description             |
 | --------- | ------ | ----------------------- |
-| tokens    | String | No description provided |
+| tokens    | string | No Description Provided |
+
+
+### getProfession
+
+Gets the villager profession based on registry name. Logs an error and return `null` if it can't find the profession.
+
+Returns: The found profession Return Type: [MCVillagerProfession](/vanilla/api/villager/MCVillagerProfession)
+
+```zenscript
+<profession:minecraft:armorer>
+
+BracketHandlers.getProfession(tokens as string) as MCVillagerProfession
+BracketHandlers.getProfession("minecraft:armorer");
+```
+
+| Parameter | Type   | Description                        |
+| --------- | ------ | ---------------------------------- |
+| tokens    | string | The profession's resource location |
 
 
 ### getRecipeManager
 
-レジストリ名に基づいてrecipeManagerを取得します。 レシピマネージャが見つからない場合はエラーをスローします。 指定されたレシピタイプが見つからない場合は、促進をスローします。 <p> これは常にIRecipeManagerを返します。<br> BEPもありますが、動作が異なるため、ここでは自動的にドキュメントに追加することはできません。 しかし、BEPは他のBEPと同じに見えます: `<recipetype:minecraft:crafting>`
+Gets the recipeManager based on registry name. Throws an error if it can't find the recipeManager. Throws an expcetion if the given recipeType is not found. <p> This will always return IRecipeManager.<br> There is also a BEP for that but that works differently so it can't be automatically added to the docs here. But the BEP looks the same as the other ones: `<recipetype:minecraft:crafting>`
 
- 戻り値: `見つかったrecipeManager`
-
-戻り値の型: [crafttweaker.api.registrries.IRecipeManager](/vanilla/api/managers/IRecipeManager)
+Returns: The found recipeManager Return Type: [IRecipeManager](/vanilla/api/managers/IRecipeManager)
 
 ```zenscript
-crafttweaker.api.BracketHandlers.getRecipeManager(tokens as String);
-crafttweaker.api.BracketHandlers.getRecipeManager("minecraft:craft");
+BracketHandlers.getRecipeManager(tokens as string) as IRecipeManager
+BracketHandlers.getRecipeManager("minecraft:crafting");
 ```
 
-| Parameter | Type   | Description    |
-| --------- | ------ | -------------- |
-| tokens    | String | レシピ管理者のリソースの場所 |
+| Parameter | Type   | Description                           |
+| --------- | ------ | ------------------------------------- |
+| tokens    | string | The recipeManager's resource location |
 
 
 ### getResourceLocation
 
-トークンに基づいてリソースの場所を作成します。 トークンが有効な場所でない場合はエラーをスローします。
+Creates a Resource location based on the tokens. Throws an error if the tokens are not a valid location.
 
- 戻り値: `場所`
-
-戻り値の型: [crafttweaker.api.util.MCResourceLocation](/vanilla/api/util/MCResourceLocation)
+Returns: The location Return Type: [MCResourceLocation](/vanilla/api/util/MCResourceLocation)
 
 ```zenscript
 <resource:minecraft:dirt>
 
-crafttweaker.api.BracketHandlers.getResourceLocation(token as String);
-crafttweaker.api.BracketHandlers.getResourceLocation("minecraft:dirt");
+BracketHandlers.getResourceLocation(tokens as string) as MCResourceLocation
+BracketHandlers.getResourceLocation("minecraft:dirt");
 ```
 
-| Parameter | Type   | Description |
-| --------- | ------ | ----------- |
-| tokens    | String | リソースの場所     |
-
-
-### getTag
-
-レジストリ名に基づいてタグを取得します。 何も見つからない場合、空のタグが作成されます。<br> ただし、そのような場合は、そのタグを適切なタイプとして登録する必要があります。
-
- 戻り値: `見つかったタグ、または新しく作成されたタグ`
-
-戻り値の型: [crafttweaker.api.tag.MCTag](/vanilla/api/tags/MCTag)
-
-```zenscript
-<tag:tag:minecraft:wool>
-
-crafttweaker.api.BracketHandlers.getTag(tokens as String);
-craftweaker.api.BracketHandlers.getTag("tag:minecraft:wool");
-```
-
-| Parameter | Type   | Description |
-| --------- | ------ | ----------- |
-| tokens    | String | タグのリソースの場所  |
+| Parameter | Type   | Description           |
+| --------- | ------ | --------------------- |
+| tokens    | string | The resource location |
 
 
 ### getTextFormatting
 
-Return type: [crafttweaker.api.text.TextFormatting](/vanilla/api/util/text/TextFormatting)
+Return Type: [TextFormatting](/vanilla/api/util/text/TextFormatting)
 
 ```zenscript
-<formatting:tokens>
-crafttweaker.api.BracketHandlers.getTextFormating(tokens as String);
+BracketHandlers.getTextFormatting(tokens as string) as TextFormatting
 ```
 
 | Parameter | Type   | Description             |
 | --------- | ------ | ----------------------- |
-| tokens    | String | No description provided |
-
+| tokens    | string | No Description Provided |
 
 
