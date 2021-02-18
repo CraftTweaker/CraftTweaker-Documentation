@@ -2,119 +2,133 @@
 
 This is IIngredient!!!
 
-Questa classe è stata aggiunta da una mod con ID `crafttweaker`. Perciò, è necessario avere questa mod installata per poter utilizzare questa funzione.
-
 ## Importing the class
-Potrebbe essere necessario importare il pacchetto, se si incontrano dei problemi (come castare un vettore), quindi meglio essere sicuri e aggiungere la direttiva di importazione.
+
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
 ```zenscript
-crafttweaker.api.item.IIngredient
+import crafttweaker.api.item.IIngredient;
 ```
 
+
 ## Interfacce Implementate
-IIngredient implements the following interfaces. Ciò significa che ogni metodo presente nell'interfaccia può essere usato anche per questa classe.
-- [crafttweaker.api.brackets.CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
+IIngredient implements the following interfaces. That means all methods defined in these interfaces are also available in IIngredient
+
+- [CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
+
+## Caster
+
+| Tipo Risultato                             | Implicito |
+| ------------------------------------------ | --------- |
+| [IData](/vanilla/api/data/IData)           | true      |
+| [Ingredient](/vanilla/api/item/Ingredient) | true      |
+| [MapData](/vanilla/api/data/MapData)       | true      |
 
 ## Methods
+
 ### anyDamage
 
-Tipo di restituzione: [crafttweaker.api.item.MCIngredientConditioned](/vanilla/api/items/MCIngredientConditioned)&lt;[crafttweaker.api.item.IIngredient](/vanilla/api/items/IIngredient)&gt;
+Return Type: [MCIngredientConditioned](/vanilla/api/items/MCIngredientConditioned)&lt;[IIngredient](/vanilla/api/items/IIngredient)&gt;
 
 ```zenscript
-<tag:ingotIron>.anyDamage();
+IIngredient.anyDamage() as MCIngredientConditioned<IIngredient>
+<tag:items:forge:ingots>.anyDamage();
+```
+
+### asVanillaIngredient
+
+Create a Vanilla ingredient matching this one.
+
+Return Type: [Ingredient](/vanilla/api/item/Ingredient)
+
+```zenscript
+IIngredient.asVanillaIngredient() as Ingredient
+<tag:items:forge:ingots>.asVanillaIngredient();
 ```
 
 ### getRemainingItem
 
-When this ingredient stack is crafted, what will remain in the grid? Does not check if the stack matches though! Used e.g. in CrT's net.minecraft.item.crafting.ICraftingRecipe
+When this ingredient stack is crafted, what will remain in the grid? Does not check if the stack matches though! Used e.g. in Crafting Table recipes.
 
-Return type: [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
+Return Type: [IItemStack](/vanilla/api/items/IItemStack)
 
 ```zenscript
-<tag:ingotIron>.getRemainingItem(stack as crafttweaker.api.item.IItemStack);
-<tag:ingotIron>.getRemainingItem(<item:minecraft:iron_ingot>);
+IIngredient.getRemainingItem(stack as IItemStack) as IItemStack
+<tag:items:forge:ingots>.getRemainingItem(<item:minecraft:iron_ingot>);
 ```
 
-| Parameter | Type                                                              | Description                               |
-| --------- | ----------------------------------------------------------------- | ----------------------------------------- |
-| stack     | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | The stack to provide for this ingredient. |
+| Parameter | Type                                        | Description                               |
+| --------- | ------------------------------------------- | ----------------------------------------- |
+| stack     | [IItemStack](/vanilla/api/items/IItemStack) | The stack to provide for this ingredient. |
 
 
 ### matches
 
 Does the given stack match the ingredient?
 
-Return type: boolean
+Return Type: boolean
 
 ```zenscript
-<tag:ingotIron>.matches(stack as crafttweaker.api.item.IItemStack);
-<tag:ingotIron>.matches(<item:minecraft:iron_ingot>);
+IIngredient.matches(stack as IItemStack) as boolean
+<tag:items:forge:ingots>.matches(<item:minecraft:iron_ingot>);
 ```
 
-| Parameter | Type                                                              | Description        |
-| --------- | ----------------------------------------------------------------- | ------------------ |
-| stack     | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | The stack to check |
-
+| Parameter | Type                                        | Description        |
+| --------- | ------------------------------------------- | ------------------ |
+| stack     | [IItemStack](/vanilla/api/items/IItemStack) | The stack to check |
 
 
 Does the given stack match the ingredient?
 
-Return type: boolean
+Return Type: boolean
 
 ```zenscript
-<tag:ingotIron>.matches(stack as crafttweaker.api.item.IItemStack, ignoreDamage as boolean);
+IIngredient.matches(stack as IItemStack, ignoreDamage as boolean) as boolean
 ```
 
-| Parameter   | Type                                                              | Description                            |
-| ----------- | ----------------------------------------------------------------- | -------------------------------------- |
-| stack       | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | The stack to check                     |
-| ignoreDanno | boolean                                                           | I danni dovrebbero essere controllati? |
+| Parameter   | Type                                        | Description                            |
+| ----------- | ------------------------------------------- | -------------------------------------- |
+| stack       | [IItemStack](/vanilla/api/items/IItemStack) | The stack to check                     |
+| ignoreDanno | boolean                                     | I danni dovrebbero essere controllati? |
 
 
 ### onlyDamaged
 
-Tipo di restituzione: [crafttweaker.api.item.MCIngredientConditioned](/vanilla/api/items/MCIngredientConditioned)&lt;[crafttweaker.api.item.IIngredient](/vanilla/api/items/IIngredient)&gt;
+Return Type: [MCIngredientConditioned](/vanilla/api/items/MCIngredientConditioned)&lt;[IIngredient](/vanilla/api/items/IIngredient)&gt;
 
 ```zenscript
-<tag:ingotIron>.onlyDamaged();
+IIngredient.onlyDamaged() as MCIngredientConditioned<IIngredient>
+<tag:items:forge:ingots>.onlyDamaged();
 ```
 
 ### onlyIf
 
-Tipo di restituzione: [crafttweaker.api.item.MCIngredientConditioned](/vanilla/api/items/MCIngredientConditioned)&lt;[crafttweaker.api.item.IIngredient](/vanilla/api/items/IIngredient)&gt;
+Return Type: [MCIngredientConditioned](/vanilla/api/items/MCIngredientConditioned)&lt;[IIngredient](/vanilla/api/items/IIngredient)&gt;
 
 ```zenscript
-<tag:ingotIron>.onlyIf(uid as String, function as function.Predicate<crafttweaker.api.item.IItemStack>);
+IIngredient.onlyIf(uid as string, function as Predicate<IItemStack>) as MCIngredientConditioned<IIngredient>
 ```
 
-| Parameter | Type                                                                                                    | Description                 | IsOptional | Default Value |
-| --------- | ------------------------------------------------------------------------------------------------------- | --------------------------- | ---------- | ------------- |
-| uid       | String                                                                                                  | Nessuna descrizione fornita | false      | `null`        |
-| function  | function.Predicate&lt;[crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)&gt; | Nessuna descrizione fornita | true       | `null`        |
+| Parameter | Type                                                                     | Description             | Optional | DefaultValue |
+| --------- | ------------------------------------------------------------------------ | ----------------------- | -------- | ------------ |
+| uid       | string                                                                   | No Description Provided | false    |              |
+| function  | Predicate&lt;[IItemStack](/vanilla/api/items/IItemStack)&gt; | No Description Provided | true     |              |
+
+
+## Operators
+
+### OR
+
+```zenscript
+myIIngredient | other as IIngredient
+```
+
 
 
 
 ## Properties
 
-| Name          | Type                                                                | Ha Getter | Ha Setter |
-| ------------- | ------------------------------------------------------------------- | --------- | --------- |
-| commandString | String                                                              | true      | false     |
-| items         | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)[] | true      | false     |
-
-## Operators
-### OR
-
-```zenscript
-<tag:ingotIron> <unk> altro come crafttweaker.api.item.IIngredient
-```
-
-| Parameter | Type                                                                | Description                 |
-| --------- | ------------------------------------------------------------------- | --------------------------- |
-| other     | [crafttweaker.api.item.IIngredient](/vanilla/api/items/IIngredient) | Nessuna descrizione fornita |
-
-## Caster
-
-| Tipo Risultato                                             | Implicito |
-| ---------------------------------------------------------- | --------- |
-| [crafttweaker.api.data.IData](/vanilla/api/data/IData)     | true      |
-| [crafttweaker.api.data.MapData](/vanilla/api/data/MapData) | true      |
+| Name          | Type                                          | Ha Getter | Ha Setter |
+| ------------- | --------------------------------------------- | --------- | --------- |
+| commandString | string                                        | true      | false     |
+| items         | [IItemStack](/vanilla/api/items/IItemStack)[] | true      | false     |
 
