@@ -2,56 +2,53 @@
 
 Contiene informazioni su tutte le mod registrate. È possibile accedere usando la parola chiave globale `caricata.Mods`
 
-Questa classe è stata aggiunta da una mod con ID `crafttweaker`. Perciò, è necessario avere questa mod installata per poter utilizzare questa funzione.
-
 ## Importing the class
-Potrebbe essere necessario importare il pacchetto, se si incontrano dei problemi (come castare un vettore), quindi meglio essere sicuri e aggiungere la direttiva di importazione.
+
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
 ```zenscript
-crafttweaker.api.mods.Mods
+import crafttweaker.api.mods.Mods;
 ```
 
+
 ## Methods
+
 ### getMod
 
-Ottiene una mod specifica
+Gets a specific mod
 
- Restituisce: `uno specifico MCModInfo`
-
-Tipo restituito: [crafttweaker.api.mods.ModInfo](/vanilla/api/mods/ModInfo)
+Return Type: [ModInfo](/vanilla/api/mods/ModInfo)
 
 ```zenscript
-loadedMods.getMod(modid as String);
+Mods.getMod(modid as string) as ModInfo
 loadedMods.getMod("minecraft");
 ```
 
-| Parameter | Type   | Description                 |
-| --------- | ------ | --------------------------- |
-| modid     | String | Nessuna descrizione fornita |
+| Parameter | Type   | Description             |
+| --------- | ------ | ----------------------- |
+| modid     | string | No Description Provided |
 
 
 ### isModLoaded
 
-Controlla se una mod è bloccata
+Checks if a mod is laoded
 
- Restituisce: `true se la mod è caricata`
-
-Return type: boolean
+Return Type: boolean
 
 ```zenscript
-loadedMods.isModLoaded(modid as String);
+Mods.isModLoaded(modid as string) as boolean
 loadedMods.isModLoaded("minecraft");
 ```
 
 | Parameter | Type   | Description           |
 | --------- | ------ | --------------------- |
-| modid     | String | modid per controllare |
+| modid     | string | modid per controllare |
 
 
 
 ## Properties
 
-| Name | Type                                                                                 | Ha Getter | Ha Setter |
-| ---- | ------------------------------------------------------------------------------------ | --------- | --------- |
-| mod  | Elenco&lt;[crafttweaker.api.mods.ModInfo](/vanilla/api/mods/ModInfo)&gt; | true      | false     |
-| size | int                                                                                  | true      | false     |
+| Name | Type                                                                | Ha Getter | Ha Setter |
+| ---- | ------------------------------------------------------------------- | --------- | --------- |
+| mod  | stdlib.List&lt;[ModInfo](/vanilla/api/mods/ModInfo)&gt; | true      | false     |
+| size | int                                                                 | true      | false     |
 
