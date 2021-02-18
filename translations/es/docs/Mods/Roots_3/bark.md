@@ -24,7 +24,7 @@ void removeRecipe(
 
 * * *
 
-### Examples
+### Ejemplos 
 
 ```zenscript
 import mods.roots.Bark;
