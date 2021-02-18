@@ -40,7 +40,7 @@ void removeFish(
 
 * * *
 
-### Examples
+### Ejemplos 
 
 ```zenscript
 import mods.roots.AnimalHarvest;
