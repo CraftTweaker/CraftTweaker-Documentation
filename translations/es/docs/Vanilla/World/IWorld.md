@@ -9,7 +9,7 @@ It might be required to [import](/AdvancedFunctions/Import/) the class to avoid 
 
 ## Extending IBlockProperties
 
-IBlockState extends [IBlockAccess](/Vanilla/World/IBlockAccess/). That means that all methods that are available to [IBlockAccess](/Vanilla/World/IBlockAccess/) objects are also available to IBlockState objects.
+IWorld extends [IBlockAccess](/Vanilla/World/IBlockAccess/). That means that all methods that are available to [IBlockAccess](/Vanilla/World/IBlockAccess/) objects are also available to IWorld.
 
 ## Creating an IWorld object
 
@@ -36,6 +36,7 @@ crafttweaker.world.IWorld.getFromID(int id);
 | getWorldType()     | worldType     | String                                           | Returns the world's type name.                                                                                                                                                          |
 | getWorldInfo()     | worldInfo     | [IWorldInfo](/Vanilla/World/IWorldInfo/)         | Returns the world's information. Can be used to retrieve even more info on the world.                                                                                                   |
 | getProvider()      | provider      | [IWorldProvider](/Vanilla/World/IWorldProvider/) | Returns the world's provider. Can be used to retrieve even more info on the world.                                                                                                      |
+| getSeaLevel()      | seaLevel      | int                                              | Returns the world's sea level.                                                                                                                                                          |
 
 ## ZenMethods with parameters
 
@@ -77,13 +78,39 @@ worldObj.setBlockState(IBlockState state, IBlockPos pos);
 worldObj.setBlockState(IBlockState state, IData tileEntityData, IBlockPos pos);
 ```
 
-### Spawn entity
+### Spawn Entity
 
 Use an [IEntity](/Vanilla/Entities/IEntity/) object.  
 Returns a bool that states if the spawn was successful.
 
 ```zenscript
 worldObj.spawnEntity(IEntity entity);
+```
+
+### Create Lightningbolt
+
+Returns the Lightningbolt as an [IEntity](/Vanilla/Entities/IEntity/) object.
+
+```zenscript
+worldObj.createLightningBolt(double x, double y, double z, @Optional boolean effectOnly);
+```
+
+### Add a Weather Effect
+
+Use an [IEntity](/Vanilla/Entities/IEntity/) object.  
+Returns a bool that states if the spawn was successful.
+
+```zenscript
+worldObj.addWeatherEffect(IEntity entity);
+```
+
+### Remove Entity
+
+Use an [IEntity](/Vanilla/Entities/IEntity/) object.  
+Returns a bool that states if the spawn was successful.
+
+```zenscript
+worldObj.removeEntity(IEntity entity);
 ```
 
 ### Get a raytrace result
@@ -98,14 +125,62 @@ Only the last parameter is true by default.
 worldObj.rayTraceBlocks(IVector3d begin, IVector3d ray, @Optional boolean stopOnLiquid, @Optional boolean ignoreBlockWithoutBoundingBox, @Optional(true) boolean returnLastUncollidableBlock)
 ```
 
-### Consigue el bloque elegido
+### Get the picked block
 
-Utilice un [IBlockPos](/Vanilla/World/IBlockPos/), un [IRayTraceResult](/Vanilla/World/IRayTraceResult/) y un [IPlayer](/Vanilla/Players/IPlayer/).  
-Devuelve un [ItemStack](/Vanilla/Items/IItemStack/).  
-**Puede ser nulo**
+Use an [IBlockPos](/Vanilla/World/IBlockPos/), an [IRayTraceResult](/Vanilla/World/IRayTraceResult/) and an [IPlayer](/Vanilla/Players/IPlayer/).  
+Returns an [IItemStack](/Vanilla/Items/IItemStack/).  
+**Can be null**
 
-Obtiene el ItemStack que se obtendría escogiendo el bloque en la posición.
+Gets the IItemStack that would be obtained by picking the block at the position.
 
 ```zenscript
 worldObj.getPickedBlock(IBlockPos pos, IRayTraceResult rayTraceResult, IPlayer player);
+```
+
+### Check if a position is a spawn chunk
+
+Returns a bool that states if the position is a spawn chunk.
+
+```zenscript
+worldObj.isSpawnChunk(int x, int z);
+```
+
+### Extinguish Fire
+
+Returns a bool.
+
+```zenscript
+worldObj.extinguishFire(IPlayer player, IBlockPos pos, IFacing side);
+```
+
+### Create an explosion object
+
+Use an [IEntity](/Vanilla/Entities/IEntity/), three doubles, a float, and two booleans. Returns an [IExplosion](/Vanilla/World/IExplosion/).
+
+Creates an IExplosion in the world at the given coordinates. The explosion will have the specified placer (can be null), as well as the size of the explosion and whether it should cause fire and/or cause terrain damage, respectively.
+
+```zenscript
+worldObj.createExplosion(IEntity exploder, double x, double y, double z, float size, bool causesFire, bool damagesTerrain);
+```
+
+### Perform an explosion in the world
+
+#### Create & perform in the same method
+
+Use an [IEntity](/Vanilla/Entities/IEntity/), three doubles, a float, and two booleans. Returns the created and performed [IExplosion](/Vanilla/World/IExplosion/).
+
+Creates and performs an IExplosion in the world at the given coordinates. The explosion will have the specified placer (can be null), as well as the size of the explosion and whether it should cause fire and/or cause terrain damage, respectively.
+
+```zenscript
+worldObj.performExplosion(IEntity exploder, double x, double y, double z, float size, bool causesFire, bool damagesTerrain);
+```
+
+#### Only perform an existing explosion
+
+Use an [IExplosion](/Vanilla/World/IExplosion/). Returns the performed [IExplosion](/Vanilla/World/IExplosion/).
+
+Performs the IExplosion in the world.
+
+```zenscript
+worldObj.performExplosion(IExplosion explosion);
 ```
