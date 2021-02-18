@@ -1,234 +1,252 @@
 # MCCommand节点
 
-这个类由mod-id为`crafttweaker`的模组添加. 因此，如果要使用此功能，则需要安装此mod。
-
 ## 导入相关包
-如果遇到任何问题（例如强制转换数组），则可能需要导入软件包，因此，最好的方式就是导入包支持。
+
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
 ```zenscript
-craftminstrer.api.commands.custom.MCCommandNode
+import crafttweaker.api.commands.custom.MCCommandNode;
 ```
+
+
+## Casters
+
+| 结果类型   | 是否隐藏 |
+| ------ | ---- |
+| string | true |
 
 ## 方法
+
 ### addChild
 
+Return Type: void
+
 ```zenscript
-myMCCommandNode.addChild(node as crafttweaker.api.commands.custom.MCCommandNode);
+MCCommandNode.addChild(node as MCCommandNode) as void
 ```
 
-| 参数 | 类型                                                                                            | 描述                      |
-| -- | --------------------------------------------------------------------------------------------- | ----------------------- |
-| 节点 | [craftminstrer.api.commands.custom.MCCommandNode](/vanilla/api/commands/custom/MCCommandNode) | No description provided |
+| 参数 | 类型                                                        | 描述                      |
+| -- | --------------------------------------------------------- | ----------------------- |
+| 节点 | [MCCommand节点](/vanilla/api/commands/custom/MCCommandNode) | No Description Provided |
 
 
 ### canUse
 
-Return type: boolean
+Return Type: boolean
 
 ```zenscript
-myMCCommandNode.canUse(source as crafttweaker.api.commands.custom.MCCommandSource);
+MCCommandNode.canUse(source as MCCommandSource) as boolean
 ```
 
-| 参数 | 类型                                                                                                | 描述                      |
-| -- | ------------------------------------------------------------------------------------------------- | ----------------------- |
-| 来源 | [craftminstrer.api.commands.custom.MCCommandSource](/vanilla/api/commands/custom/MCCommandSource) | No description provided |
+| 参数 | 类型                                                    | 描述                      |
+| -- | ----------------------------------------------------- | ----------------------- |
+| 来源 | [MC命令源](/vanilla/api/commands/custom/MCCommandSource) | No Description Provided |
 
 
 ### createBuilder
 
-返回类型： [craftbiner.api.commands.custom.MCArgumentBuilder](/vanilla/api/commands/custom/MCArgumentBuilder)
+Return Type: [MCArgumentBuilder](/vanilla/api/commands/custom/MCArgumentBuilder)
 
 ```zenscript
+MCCommandNode.createBuilder() as MCArgumentBuilder
 myMCCommandNode.createBuilder();
 ```
 
 ### equals #等于
 
-Return type: boolean
+Return Type: boolean
 
 ```zenscript
-myMCCommandNode.equals(o as Object);
+MCCommandNode.equals(o as Object) as boolean
 ```
 
 | 参数 | 类型     | 描述                      |
 | -- | ------ | ----------------------- |
-| o  | Object | No description provided |
+| o  | Object | No Description Provided |
 
 
 ### 查找模糊性
 
+Return Type: void
+
 ```zenscript
-myMCCommandNode.findAmbiguities(consumer as crafttweaker.api.commands.custom.MCAmbiguityConsumer);
+MCCommandNode.findAmbiguities(consumer as MCAmbiguityConsumer) as void
 ```
 
-| 参数  | 类型                                                                                                        | 描述                      |
-| --- | --------------------------------------------------------------------------------------------------------- | ----------------------- |
-| 消费者 | [craftminstrer.api.commands.custom.MCAmbiguityConsumer](/vanilla/api/commands/custom/MCAmbiguityConsumer) | No description provided |
+| 参数  | 类型                                                                      | 描述                      |
+| --- | ----------------------------------------------------------------------- | ----------------------- |
+| 消费者 | [MCAmbiguityConsumer](/vanilla/api/commands/custom/MCAmbiguityConsumer) | No Description Provided |
 
 
 ### getChild
 
-返回类型： [crafttweeper.api.commands.custom.MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)
+Return Type: [MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)
 
 ```zenscript
-myMCCommandNode.getChild(name as String);
+MCCommandNode.getChild(name as string) as MCCommandNode
 ```
 
 | 参数   | 类型     | 描述                      |
 | ---- | ------ | ----------------------- |
-| name | String | No description provided |
+| name | string | No Description Provided |
 
 
 ### getChildren
 
-返回类型：集合&lt;[craftminstrer.api.commands.custom.MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)&gt;
+Return Type: Collection&lt;[MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)&gt;
 
 ```zenscript
+MCCommandNode.getChildren() as Collection<MCCommandNode>
 myMCCommandNode.getChildren();
 ```
 
 ### getCommand
 
-返回类型： [craftmiliter.api.commands.custom.MCCommand](/vanilla/api/commands/custom/MCCommand)
+Return Type: [MCCommand](/vanilla/api/commands/custom/MCCommand)
 
 ```zenscript
+MCCommandNode.getCommand() as MCCommand
 myMCCommandNode.getCommand();
 ```
 
 ### getExamples
 
-返回类型：收藏&lt;String&gt;
+Return Type: Collection&lt;string&gt;
 
 ```zenscript
+MCCommandNode.getExamples() as Collection<string>
 myMCCommandNode.getExamples();
 ```
 
 ### getName
 
-Return type: String
+Return Type: string
 
 ```zenscript
+MCCommandNode.getName() as string
 myMCCommandNode.getName();
 ```
 
 ### 获取重定向
 
-返回类型： [crafttweeper.api.commands.custom.MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)
+Return Type: [MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)
 
 ```zenscript
+MCCommandNode.getRedirect() as MCCommandNode
 myMCCommandNode.getRedirect();
 ```
 
 ### 获取重定向修改器
 
-返回类型： [craftmilower.api.commands.custom.MCRedirectModifier](/vanilla/api/commands/custom/MCRedirectModifier)
+Return Type: [MCRedirectModifier](/vanilla/api/commands/custom/MCRedirectModifier)
 
 ```zenscript
+MCCommandNode.getRedirectModifier() as MCRedirectModifier
 myMCCommandNode.getRedirectModifier();
 ```
 
 ### getRelevantNodes
 
-返回类型：集合&lt;[craftminstrer.api.commands.custom.MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)&gt;
+Return Type: Collection&lt;[MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)&gt;
 
 ```zenscript
-myMCCommandNode.getRelevantNodes(input as String);
+MCCommandNode.getRelevantNodes(input as string) as Collection<MCCommandNode>
 ```
 
 | 参数        | 类型     | 描述                      |
 | --------- | ------ | ----------------------- |
-| input（输入） | String | No description provided |
+| input（输入） | string | No Description Provided |
 
 
 ### getRequirement
 
-返回类型：函数。预测&lt;[craftminstrer.api.commands.custom.MCCommandSource](/vanilla/api/commands/custom/MCCommandSource)&gt;
+Return Type: Predicate&lt;[MCCommandSource](/vanilla/api/commands/custom/MCCommandSource)&gt;
 
 ```zenscript
+MCCommandNode.getRequirement() as Predicate<MCCommandSource>
 myMCCommandNode.getRequirement();
 ```
 
 ### getUsageText
 
-Return type: String
+Return Type: string
 
 ```zenscript
+MCCommandNode.getUsageText() as string
 myMCCommandNode.getUsageText();
 ```
 
 ### hashCode
 
-Return type: int
+Return Type: int
 
 ```zenscript
+MCCommandNode.hashCode() as int
 myMCCommandNode.hashCode();
 ```
 
 ### isFork
 
-Return type: boolean
+Return Type: boolean
 
 ```zenscript
+MCCommandNode.isFork() as boolean
 myMCCommandNode.isFork();
 ```
 
 ### listSuggestions
 
-返回类型： [craftbiner.api.commands.custom.MCSuggestions](/vanilla/api/commands/custom/MCSuggestions)
+Return Type: [MCSuggestions](/vanilla/api/commands/custom/MCSuggestions)
 
 ```zenscript
-myMCCommandNode.listSuggestions(context as crafttweaker.api.commands.custom.MCCommandContext, builder as crafttweaker.api.commands.custom.MCSuggestionsBuilder);
+MCCommandNode.listSuggestions(context as MCCommandContext, builder as MCSuggestionsBuilder) as MCSuggestions
 ```
 
-| 参数   | 类型                                                                                                         | 描述                      |
-| ---- | ---------------------------------------------------------------------------------------------------------- | ----------------------- |
-| 上下文： | [craftminstrer.api.commands.custom.MCCommandContext](/vanilla/api/commands/custom/MCCommandContext)        | No description provided |
-| 生成器  | [crafttweeper.api.commands.custom.MCSuggestionsBuilder](/vanilla/api/commands/custom/MCSuggestionsBuilder) | No description provided |
+| 参数   | 类型                                                                        | 描述                      |
+| ---- | ------------------------------------------------------------------------- | ----------------------- |
+| 上下文： | [MCCommandContext](/vanilla/api/commands/custom/MCCommandContext)         | No Description Provided |
+| 生成器  | [MCSuggestionsBuilder](/vanilla/api/commands/custom/MCSuggestionsBuilder) | No Description Provided |
 
 
 ### parse
 
+Return Type: void
+
 ```zenscript
-myMCCommandNode.parse(input as String, contextBuilder as crafttweaker.api.commands.custom.MCCommandContextBuilder);
+MCCommandNode.parse(input as string, contextBuilder as MCCommandContextBuilder) as void
 ```
 
-| 参数             | 类型                                                                                                              | 描述                      |
-| -------------- | --------------------------------------------------------------------------------------------------------------- | ----------------------- |
-| input（输入）      | String                                                                                                          | No description provided |
-| contextBuilder | [crafttbower.api.commands.custom.MCCommandContextBuilder](/vanilla/api/commands/custom/MCCommandContextBuilder) | No description provided |
+| 参数             | 类型                                                                              | 描述                      |
+| -------------- | ------------------------------------------------------------------------------- | ----------------------- |
+| input（输入）      | string                                                                          | No Description Provided |
+| contextBuilder | [MCCommandContextBuilder](/vanilla/api/commands/custom/MCCommandContextBuilder) | No Description Provided |
 
 
 ### toString
 
-Return type: String
+Return Type: string
 
 ```zenscript
+MCCommandNode.toString() as string
 myMCCommandNode.toString();
 ```
 
 
 ## 运算符
+
 ### COMPARE
 
 ```zenscript
-myMCCommandNode compare o as crafttweaker.api.commands.custom.MCCommandNode
+myMCCommandNode < o as MCCommandNode
 ```
 
-| 参数 | 类型                                                                                            | 描述                      |
-| -- | --------------------------------------------------------------------------------------------- | ----------------------- |
-| o  | [craftminstrer.api.commands.custom.MCCommandNode](/vanilla/api/commands/custom/MCCommandNode) | No description provided |
+
+
 ### EQUALS
 
 ```zenscript
 myMCCommandNode == o as Object
 ```
 
-| 参数 | 类型     | 描述                      |
-| -- | ------ | ----------------------- |
-| o  | Object | No description provided |
 
-## Casters
 
-| 结果类型   | 是否隐藏 |
-| ------ | ---- |
-| String | true |
 
