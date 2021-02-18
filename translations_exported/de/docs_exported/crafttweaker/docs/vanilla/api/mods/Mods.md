@@ -2,56 +2,53 @@
 
 Haltet Informationen über alle registrierten Mods bereit. Kann mit dem globalen Schlüsselwort `loadedMods` erreicht werden
 
-This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
-
 ## Diese Klasse importieren
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
 ```zenscript
-crafttweaker.api.mods.Mods
+import crafttweaker.api.mods.Mods;
 ```
 
+
 ## Methoden
+
 ### getMod
 
-Ruft einen bestimmten Mod ab
+Gets a specific mod
 
- Gibt `eine bestimmte MCModInfo`
-
-Rückgabetyp: [craftweaker.api.mods.ModInfo](/vanilla/api/mods/ModInfo)
+Return Type: [ModInfo](/vanilla/api/mods/ModInfo)
 
 ```zenscript
-loadedMods.getMod(modid as String);
+Mods.getMod(modid as string) as ModInfo
 loadedMods.getMod("minecraft");
 ```
 
 | Parameter | Type   | Beschreibung            |
 | --------- | ------ | ----------------------- |
-| modid     | String | No description provided |
+| modid     | string | No Description Provided |
 
 
 ### isModLoaded
 
-Prüft, ob ein Mod abgelegt ist
+Checks if a mod is laoded
 
- Gibt `zurück, wenn die Mod geladen wurde`
-
-Return type: boolean
+Return Type: boolean
 
 ```zenscript
-loadedMods.isModLoaded(modid as String);
+Mods.isModLoaded(modid as string) as boolean
 loadedMods.isModLoaded("minecraft");
 ```
 
 | Parameter | Type   | Beschreibung    |
 | --------- | ------ | --------------- |
-| modid     | String | modid zu prüfen |
+| modid     | string | modid zu prüfen |
 
 
 
 ## Properties
 
-| Name | Type                                                                               | Has Getter | Has Setter |
-| ---- | ---------------------------------------------------------------------------------- | ---------- | ---------- |
-| mods | Liste&lt;[craftweaker.api.mods.ModInfo](/vanilla/api/mods/ModInfo)&gt; | true       | false      |
-| size | int                                                                                | true       | false      |
+| Name | Type                                                                | Has Getter | Has Setter |
+| ---- | ------------------------------------------------------------------- | ---------- | ---------- |
+| mods | stdlib.List&lt;[ModInfo](/vanilla/api/mods/ModInfo)&gt; | true       | false      |
+| size | int                                                                 | true       | false      |
 
