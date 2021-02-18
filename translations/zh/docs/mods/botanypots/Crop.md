@@ -1,4 +1,4 @@
-# Crops
+# 作物
 
 Class path: `mods.botanypots.Crop`
 
