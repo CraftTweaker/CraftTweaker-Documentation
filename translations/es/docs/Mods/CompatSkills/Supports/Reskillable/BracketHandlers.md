@@ -1,6 +1,6 @@
-# Bracket Handlers
+# Paréntesis de ZS
 
-## Bracket Handlers
+## Paréntesis de ZS
 
 ### Skill Bracket Handler:
 
