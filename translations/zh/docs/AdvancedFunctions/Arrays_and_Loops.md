@@ -8,7 +8,7 @@
 
 **Imortant**: you *must* initialize arrays to something, even if it's an empty array.
 
-`var floatArray as float [];` won't give syntax errors, but upon reloading your game, you will get an error and your script won't work.
+`浮点数组为浮点[]；` 不会给出语法错误，但在重新加载您的游戏时，您将会遇到一个错误，您的脚本将无法工作。
 
 Instead, initialize empty arrays like this `var floatArray as float [] = [];`
 
