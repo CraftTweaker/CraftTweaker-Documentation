@@ -1,4 +1,4 @@
-# ItemBuilderTool
+# ItemBuilderBasic implements the following interfaces.
 
 A special builder that allows you to create items that can be used as tools. You should have set the item's max damage before changing to this builder. <p> Has special methods that allow you to set the mining level for several tool types as well as the attack damage.
 
@@ -7,7 +7,7 @@ This class was added by a mod with mod-id `contenttweaker`. Perciò, è necessar
 ## Importing the class
 Potrebbe essere necessario importare il pacchetto, se si incontrano dei problemi (come castare un vettore), quindi meglio essere sicuri e aggiungere la direttiva di importazione.
 ```zenscript
-mods.contenttweaker.item.tool.ItemBuilderTool
+mods.contenttweaker.item.tool.ItemBuilderBasic implements the following interfaces.
 ```
 
 ## Interfacce Implementate
@@ -34,7 +34,7 @@ new ItemBuilder().withMaxDamage(150).withType<ItemBuilderTool>().build("my_aweso
 
 Allows you to set the attack damage bonus that you get when holding this item
 
- Returns: `This builder, used for method chaining`
+ Restituisce: `Questo builder, usato per l'incatenamento del metodo`
 
 Return type: [mods.contenttweaker.item.tool.ItemBuilderTool](/mods/contenttweaker/API/item/tool/ItemBuilderTool)
 
@@ -70,7 +70,7 @@ new ItemBuilder().withMaxDamage(150).withType<ItemBuilderTool>().withAttackSpeed
 
 Allows you to set the amount of damage that this item will receive when hitting enemies. By default this is `0`
 
- Returns: `This builder, used for method chaining`
+ Restituisce: `Questo builder, usato per l'incatenamento del metodo`
 
 Return type: [mods.contenttweaker.item.tool.ItemBuilderTool](/mods/contenttweaker/API/item/tool/ItemBuilderTool)
 
@@ -88,7 +88,7 @@ new ItemBuilder().withMaxDamage(150).withType<ItemBuilderTool>().withDurabilityC
 
 Allows you to set the amount of damage that this item will receive when mining blocks. By default this is `0`
 
- Returns: `This builder, used for method chaining`
+ Restituisce: `Questo builder, usato per l'incatenamento del metodo`
 
 Return type: [mods.contenttweaker.item.tool.ItemBuilderTool](/mods/contenttweaker/API/item/tool/ItemBuilderTool)
 
@@ -106,7 +106,7 @@ new ItemBuilder().withMaxDamage(150).withType<ItemBuilderTool>().withDurabilityC
 
 Allows you to add a tool type to this tool. You can specify the type, the mining level and optionally the mining speed when this type is hit as well.
 
- Returns: `This builder, used for method chaining`
+ Restituisce: `Questo builder, usato per l'incatenamento del metodo`
 
 Return type: [mods.contenttweaker.item.tool.ItemBuilderTool](/mods/contenttweaker/API/item/tool/ItemBuilderTool)
 
