@@ -1,49 +1,51 @@
 # CustomCommands
 
-This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
-
 ## Importing the class
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
 ```zenscript
-crafttweaker.api.commands.custom.CustomCommands
+import crafttweaker.api.commands.custom.CustomCommands;
 ```
 
+
 ## Methods
+
 ### argument
 
-Return type: [crafttweaker.api.commands.custom.MCRequiredArgumentBuilder](/vanilla/api/commands/custom/MCRequiredArgumentBuilder)
+Return Type: [MCRequiredArgumentBuilder](/vanilla/api/commands/custom/MCRequiredArgumentBuilder)
 
 ```zenscript
-crafttweaker.api.commands.custom.CustomCommands.argument(name as String);
+CustomCommands.argument(name as string) as MCRequiredArgumentBuilder
 ```
 
 | Parameter | Type   | Description             |
 | --------- | ------ | ----------------------- |
-| name      | String | No description provided |
+| name      | string | No Description Provided |
 
 
 ### literal
 
-Return type: [crafttweaker.api.commands.custom.MCLiteralArgumentBuilder](/vanilla/api/commands/custom/MCLiteralArgumentBuilder)
+Return Type: [MCLiteralArgumentBuilder](/vanilla/api/commands/custom/MCLiteralArgumentBuilder)
 
 ```zenscript
-crafttweaker.api.commands.custom.CustomCommands.literal(name as String);
+CustomCommands.literal(name as string) as MCLiteralArgumentBuilder
 ```
 
 | Parameter | Type   | Description             |
 | --------- | ------ | ----------------------- |
-| name      | String | No description provided |
+| name      | string | No Description Provided |
 
 
 ### registerCommand
 
+Return Type: void
+
 ```zenscript
-crafttweaker.api.commands.custom.CustomCommands.registerCommand(builder as crafttweaker.api.commands.custom.MCLiteralArgumentBuilder);
+CustomCommands.registerCommand(builder as MCLiteralArgumentBuilder) as void
 ```
 
-| Parameter | Type                                                                                                               | Description             |
-| --------- | ------------------------------------------------------------------------------------------------------------------ | ----------------------- |
-| builder   | [crafttweaker.api.commands.custom.MCLiteralArgumentBuilder](/vanilla/api/commands/custom/MCLiteralArgumentBuilder) | No description provided |
-
+| Parameter | Type                                                                              | Description             |
+| --------- | --------------------------------------------------------------------------------- | ----------------------- |
+| builder   | [MCLiteralArgumentBuilder](/vanilla/api/commands/custom/MCLiteralArgumentBuilder) | No Description Provided |
 
 
