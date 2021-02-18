@@ -1,81 +1,87 @@
 # MCSingleRedirectModifier
 
-This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
-
 ## Importing the class
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
 ```zenscript
-crafttweaker.api.commands.custom.MCSingleRedirectModifier
+import crafttweaker.api.commands.custom.MCSingleRedirectModifier;
 ```
+
 
 ## Constructors
+
+No Description Provided
 ```zenscript
-new crafttweaker.api.commands.custom.MCSingleRedirectModifier(fun as function.Function<crafttweaker.api.commands.custom.MCCommandContext, crafttweaker.api.commands.custom.MCCommandSource>);
+new MCSingleRedirectModifier(fun as Function<MCCommandContext,MCCommandSource>) as MCSingleRedirectModifier
 ```
-| Parameter | Type                                                                                                                                                                                                                                      | Description             |
-| --------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------- |
-| fun       | function.Function&lt;[crafttweaker.api.commands.custom.MCCommandContext](/vanilla/api/commands/custom/MCCommandContext), [crafttweaker.api.commands.custom.MCCommandSource](/vanilla/api/commands/custom/MCCommandSource)&gt; | No description provided |
+
+| Parameter | Type                                                                                                                                                          | Description             |
+| --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------- |
+| fun       | Function&lt;[MCCommandContext](/vanilla/api/commands/custom/MCCommandContext),[MCCommandSource](/vanilla/api/commands/custom/MCCommandSource)&gt; | No Description Provided |
 
 
+
+## Casters
+
+| Result type | Is Implicit |
+| ----------- | ----------- |
+| string      | true        |
 
 ## Methods
+
 ### apply
 
-Return type: [crafttweaker.api.commands.custom.MCCommandSource](/vanilla/api/commands/custom/MCCommandSource)
+Return Type: [MCCommandSource](/vanilla/api/commands/custom/MCCommandSource)
 
 ```zenscript
-myMCSingleRedirectModifier.apply(context as crafttweaker.api.commands.custom.MCCommandContext);
+MCSingleRedirectModifier.apply(context as MCCommandContext) as MCCommandSource
 ```
 
-| Parameter | Type                                                                                               | Description             |
-| --------- | -------------------------------------------------------------------------------------------------- | ----------------------- |
-| context   | [crafttweaker.api.commands.custom.MCCommandContext](/vanilla/api/commands/custom/MCCommandContext) | No description provided |
+| Parameter | Type                                                              | Description             |
+| --------- | ----------------------------------------------------------------- | ----------------------- |
+| context   | [MCCommandContext](/vanilla/api/commands/custom/MCCommandContext) | No Description Provided |
 
 
 ### equals
 
-Return type: boolean
+Return Type: boolean
 
 ```zenscript
-myMCSingleRedirectModifier.equals(o as Object);
+MCSingleRedirectModifier.equals(o as Object) as boolean
 ```
 
 | Parameter | Type   | Description             |
 | --------- | ------ | ----------------------- |
-| o         | Object | No description provided |
+| o         | Object | No Description Provided |
 
 
 ### hashCode
 
-Return type: int
+Return Type: int
 
 ```zenscript
+MCSingleRedirectModifier.hashCode() as int
 myMCSingleRedirectModifier.hashCode();
 ```
 
 ### toString
 
-Return type: String
+Return Type: string
 
 ```zenscript
+MCSingleRedirectModifier.toString() as string
 myMCSingleRedirectModifier.toString();
 ```
 
 
 ## 연산자
+
 ### EQUALS
 
 ```zenscript
 myMCSingleRedirectModifier == o as Object
 ```
 
-| Parameter | Type   | Description             |
-| --------- | ------ | ----------------------- |
-| o         | Object | No description provided |
 
-## Casters
 
-| Result type | Is Implicit |
-| ----------- | ----------- |
-| String      | true        |
 
