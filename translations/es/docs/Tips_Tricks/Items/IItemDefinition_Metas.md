@@ -1,6 +1,6 @@
 # Using IItemDefinitions to save a lot of time when referring meta-items
 
-## Problem
+## El problema 
 
 Let's say we want to remove the recipes of some specific colors of wool.  
 White wool has the metadata 0, all colors range from meta 1 to meta 15, so there are 16 in total.
@@ -15,7 +15,7 @@ While in this example this would totally work, in large scale this becomes prett
 - An [IItemStack](/Vanilla/Items/IItemStack/) can be used as [IIngredient](/Vanilla/Variable_Types/IIngredient/) as [IItemstack](/Vanilla/Items/IItemStack/) extends [IIngredient](/Vanilla/Variable_Types/IIngredient/)
 - We can use [IItemDefinitions](/Vanilla/Items/IItemDefinition/) to create [IItemStacks](/Vanilla/Items/IItemStack/)
 
-## Solution
+## La solución
 
 We use [IItemDefinitions](/Vanilla/Items/IItemDefinition/) and an Integer Range and iterate through latter.  
 If we can't use an int range we can also use a number array, but that would require you to type in all required numbers.  
