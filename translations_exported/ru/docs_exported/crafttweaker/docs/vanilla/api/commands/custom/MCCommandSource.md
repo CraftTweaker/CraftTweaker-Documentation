@@ -1,130 +1,142 @@
 # Источник MCCommandSource
 
-Этот класс был добавлен модом с mod-id `crafttweaker`. Так что если вы хотите использовать эту функцию, вам нужно установить этот мод.
-
 ## Импорт класса
-Вам может потребоваться импортировать пакет, если вы столкнетесь с какими-либо проблемами (например, с заливкой массива), так что лучше быть в безопасности, чем извиняться и добавлять импорт.
+
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
 ```zenscript
-crafttweaker.api.commands.custom.MCCommandSource
+import crafttweaker.api.commands.custom.MCCommandSource;
 ```
 
+
 ## Methods
+
 ### getName
 
-Return type: String
+Return Type: string
 
 ```zenscript
+MCCommandSource.getName() as string
 myMCCommandSource.getName();
 ```
 
 ### getPlayer
 
-Return type: [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
+Return Type: [MCPlayerEntity](/vanilla/api/entity/MCPlayerEntity)
 
 ```zenscript
+MCCommandSource.getPlayer() as MCPlayerEntity
 myMCCommandSource.getPlayer();
 ```
 
 ### getPlayerNames
 
-Тип возврата: Коллекция&lt;String&gt;
+Return Type: Collection&lt;string&gt;
 
 ```zenscript
+MCCommandSource.getPlayerNames() as Collection<string>
 myMCCommandSource.getPlayerNames();
 ```
 
 ### Целевая сущность
 
-Тип возврата: Коллекция&lt;String&gt;
+Return Type: Collection&lt;string&gt;
 
 ```zenscript
+MCCommandSource.getTargetedEntity() as Collection<string>
 myMCCommandSource.getTargetedEntity();
 ```
 
 ### getTeamNames
 
-Тип возврата: Коллекция&lt;String&gt;
+Return Type: Collection&lt;string&gt;
 
 ```zenscript
+MCCommandSource.getTeamNames() as Collection<string>
 myMCCommandSource.getTeamNames();
 ```
 
 ### hasPermissionLevel
 
-Return type: boolean
+Return Type: boolean
 
 ```zenscript
-myMCCommandSource.hasPermissionLevel(p_197034_1_ как int);
+MCCommandSource.hasPermissionLevel(p_197034_1_ as int) as boolean
 ```
 
-| Параметр      | Тип | Description          |
-| ------------- | --- | -------------------- |
-| p_197034_1_ | int | Описание отсутствует |
+| Параметр      | Тип | Description             |
+| ------------- | --- | ----------------------- |
+| p_197034_1_ | int | No Description Provided |
 
 
 ### isPlayer
 
-Return type: boolean
+Return Type: boolean
 
 ```zenscript
+MCCommandSource.isPlayer() as boolean
 myMCCommandSource.isPlayer();
 ```
 
 ### отправить сообщение об ошибке
 
+Return Type: void
+
 ```zenscript
-myMCCommandSource.sendErrorMessage(сообщение как строка);
+MCCommandSource.sendErrorMessage(message as string) as void
 ```
 
-| Параметр | Тип    | Description          |
-| -------- | ------ | -------------------- |
-| message  | String | Описание отсутствует |
+| Параметр | Тип    | Description             |
+| -------- | ------ | ----------------------- |
+| message  | string | No Description Provided |
 
 
 ### sendFeedback
 
+Return Type: void
+
 ```zenscript
-myMCCommandSource.sendFeedback(обратная связь как String, allowLogging как boolean);
+MCCommandSource.sendFeedback(feedback as string, allowLogging as boolean) as void
 ```
 
-| Параметр       | Тип     | Description          |
-| -------------- | ------- | -------------------- |
-| обратная связь | String  | Описание отсутствует |
-| allowLogging   | boolean | Описание отсутствует |
+| Параметр       | Тип     | Description             |
+| -------------- | ------- | ----------------------- |
+| обратная связь | string  | No Description Provided |
+| allowLogging   | boolean | No Description Provided |
 
 
 ### обратная связь отключена
 
-Возврат тип: [crafttweaker.api.commands.custom.MCCommandSource](/vanilla/api/commands/custom/MCCommandSource)
+Return Type: [MCCommandSource](/vanilla/api/commands/custom/MCCommandSource)
 
 ```zenscript
+MCCommandSource.withFeedbackDisabled() as MCCommandSource
 myMCCommandSource.withFeedbackDisabled();
 ```
 
 ### с уровнем разрешений
 
-Возврат тип: [crafttweaker.api.commands.custom.MCCommandSource](/vanilla/api/commands/custom/MCCommandSource)
+Return Type: [MCCommandSource](/vanilla/api/commands/custom/MCCommandSource)
 
 ```zenscript
-myMCCommandSource.withMinPermissionLevel(p_197026_1_ как int);
+MCCommandSource.withMinPermissionLevel(p_197026_1_ as int) as MCCommandSource
 ```
 
-| Параметр      | Тип | Description          |
-| ------------- | --- | -------------------- |
-| p_197026_1_ | int | Описание отсутствует |
+| Параметр      | Тип | Description             |
+| ------------- | --- | ----------------------- |
+| p_197026_1_ | int | No Description Provided |
 
 
 ### уровень снятия
 
-Возврат тип: [crafttweaker.api.commands.custom.MCCommandSource](/vanilla/api/commands/custom/MCCommandSource)
+Return Type: [MCCommandSource](/vanilla/api/commands/custom/MCCommandSource)
 
 ```zenscript
-myMCCommandSource.withPermissionLevel(p_197033_1_ как int);
+MCCommandSource.withPermissionLevel(p_197033_1_ as int) as MCCommandSource
 ```
 
-| Параметр      | Тип | Description          |
-| ------------- | --- | -------------------- |
-| p_197033_1_ | int | Описание отсутствует |
+| Параметр      | Тип | Description             |
+| ------------- | --- | ----------------------- |
+| p_197033_1_ | int | No Description Provided |
 
 
 
