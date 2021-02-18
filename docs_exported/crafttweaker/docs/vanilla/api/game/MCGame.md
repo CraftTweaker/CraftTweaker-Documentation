@@ -21,6 +21,7 @@ Return Type: string
 
 ```zenscript
 MCGame.localize(translationKey as string) as string
+game.localize("gui.up");
 ```
 
 | Parameter | Type | Description |
