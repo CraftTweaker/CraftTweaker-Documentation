@@ -1,138 +1,146 @@
 # MCStringRange
 
-这个类由mod-id为`crafttweaker`的模组添加. 因此，如果要使用此功能，则需要安装此mod。
-
 ## 导入相关包
-如果遇到任何问题（例如强制转换数组），则可能需要导入软件包，因此，最好的方式就是导入包支持。
+
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
 ```zenscript
-craftminstrer.api.commands.custom.MCStringrange
+import crafttweaker.api.commands.custom.MCStringRange;
 ```
 
+
 ## 方法
+
 ### 在
 
-返回类型： [craftbiner.api.commands.custom.MCStringrange](/vanilla/api/commands/custom/MCStringRange)
+Return Type: [MCStringRange](/vanilla/api/commands/custom/MCStringRange)
 
 ```zenscript
-crafttbiner.api.commands.custom.MCStringRange.at(pos as int)；
+MCStringRange.at(pos as int) as MCStringRange
 ```
 
 | 参数 | 类型  | 描述                      |
 | -- | --- | ----------------------- |
-| 点  | int | No description provided |
+| 点  | int | No Description Provided |
 
 
 ### 之间
 
-返回类型： [craftbiner.api.commands.custom.MCStringrange](/vanilla/api/commands/custom/MCStringRange)
+Return Type: [MCStringRange](/vanilla/api/commands/custom/MCStringRange)
 
 ```zenscript
-crafttminstrer.api.commands.custom.MCStringRange.interenen(开始为整数，结束为整数)；
+MCStringRange.between(start as int, end as int) as MCStringRange
 ```
 
 | 参数 | 类型  | 描述                      |
 | -- | --- | ----------------------- |
-| 开始 | int | No description provided |
-| 结束 | int | No description provided |
+| 开始 | int | No Description Provided |
+| 结束 | int | No Description Provided |
 
 
 ### 包含
 
-返回类型： [craftbiner.api.commands.custom.MCStringrange](/vanilla/api/commands/custom/MCStringRange)
+Return Type: [MCStringRange](/vanilla/api/commands/custom/MCStringRange)
 
 ```zenscript
-crafttmilower.api.commands.custom.MCStringRange.inclusing(as crafttweer.api.commands.custom.MCStringRange, b as craftminstruer.api.commands.custom.MCStringRange);
+MCStringRange.encompassing(a as MCStringRange, b as MCStringRange) as MCStringRange
 ```
 
-| 参数 | 类型                                                                                            | 描述                      |
-| -- | --------------------------------------------------------------------------------------------- | ----------------------- |
-| a  | [craftminstrer.api.commands.custom.MCStringrange](/vanilla/api/commands/custom/MCStringRange) | No description provided |
-| b  | [craftminstrer.api.commands.custom.MCStringrange](/vanilla/api/commands/custom/MCStringRange) | No description provided |
+| 参数 | 类型                                                          | 描述                      |
+| -- | ----------------------------------------------------------- | ----------------------- |
+| a  | [MCStringRange](/vanilla/api/commands/custom/MCStringRange) | No Description Provided |
+| b  | [MCStringRange](/vanilla/api/commands/custom/MCStringRange) | No Description Provided |
 
+
+## 方法
 
 ### equals #等于
 
-Return type: boolean
+Return Type: boolean
 
 ```zenscript
-myMCStringrange.equals(o as Object);
+MCStringRange.equals(o as Object) as boolean
 ```
 
 | 参数 | 类型     | 描述                      |
 | -- | ------ | ----------------------- |
-| o  | Object | No description provided |
-
-
-### get #获取
-
-Return type: String
-
-```zenscript
-myMCStringRange.get(字符串为字符串)；
-```
-
-| 参数     | 类型     | 描述                      |
-| ------ | ------ | ----------------------- |
-| string | String | No description provided |
-
-
-
-Return type: String
-
-```zenscript
-myMCStringRange.get(reader as craftweeper.api.commands.custom.MCImmutableStringReader);
-```
-
-| 参数  | 类型                                                                                                                 | 描述                      |
-| --- | ------------------------------------------------------------------------------------------------------------------ | ----------------------- |
-| 阅读器 | [craftminstruer.api.commands.custom.MCImmutableStringReader](/vanilla/api/commands/custom/MCImmutableStringReader) | No description provided |
+| o  | Object | No Description Provided |
 
 
 ### getEnd
 
-Return type: int
+Return Type: int
 
 ```zenscript
+MCStringRange.getEnd() as int
 myMCStringRange.getEnd();
 ```
 
-### getLength
+### getFrom
 
-Return type: int
+Return Type: string
 
 ```zenscript
+MCStringRange.getFrom(reader as MCImmutableStringReader) as string
+```
+
+| 参数     | 类型                                                                              | 描述                      |
+| ------ | ------------------------------------------------------------------------------- | ----------------------- |
+| reader | [MCImmutableStringReader](/vanilla/api/commands/custom/MCImmutableStringReader) | No Description Provided |
+
+
+Return Type: string
+
+```zenscript
+MCStringRange.getFrom(string as string) as string
+```
+
+| 参数     | 类型     | 描述                      |
+| ------ | ------ | ----------------------- |
+| string | string | No Description Provided |
+
+
+### getLength
+
+Return Type: int
+
+```zenscript
+MCStringRange.getLength() as int
 myMCStringRange.getLength();
 ```
 
 ### getStart
 
-Return type: int
+Return Type: int
 
 ```zenscript
+MCStringRange.getStart() as int
 myMCStringRange.getStart();
 ```
 
 ### hashCode
 
-Return type: int
+Return Type: int
 
 ```zenscript
+MCStringRange.hashCode() as int
 myMCStringRange.hashCode();
 ```
 
 ### isEmpty
 
-Return type: boolean
+Return Type: boolean
 
 ```zenscript
+MCStringRange.isEmpty() as boolean
 myMCStringRange.isEmpty();
 ```
 
 ### toString
 
-Return type: String
+Return Type: string
 
 ```zenscript
+MCStringRange.toString() as string
 myMCStringRange.toString();
 ```
 

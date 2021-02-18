@@ -1,25 +1,23 @@
 # MCMaterial
 
-This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
-
 ## Importing the class
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
 ```zenscript
-crafttweaker.api.block.material.MCMaterial
+import crafttweaker.api.block.material.MCMaterial;
 ```
 
-## Implemented Interfaces
-MCMaterial implementuje następujące interfejsy. That means any method available to them can also be used on this class.
-- [crafttweaker.api.brackets.CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
 
 ## Methods
+
 ### blocksMovement
 
 Returns if this material is considered solid or not
 
-Return type: boolean
+Return Type: boolean
 
 ```zenscript
+MCMaterial.blocksMovement() as boolean
 myMCMaterial.blocksMovement();
 ```
 
@@ -27,9 +25,10 @@ myMCMaterial.blocksMovement();
 
 Retrieves the color index of the block. This is is the same color used by vanilla maps to represent this block.
 
-Return type: [crafttweaker.api.block.material.MCMaterialColor](/vanilla/api/block/material/MCMaterialColor)
+Return Type: [MCMaterialColor](/vanilla/api/block/material/MCMaterialColor)
 
 ```zenscript
+MCMaterial.getColor() as MCMaterialColor
 myMCMaterial.getColor();
 ```
 
@@ -37,9 +36,10 @@ myMCMaterial.getColor();
 
 Returns if the block can burn or not.
 
-Return type: boolean
+Return Type: boolean
 
 ```zenscript
+MCMaterial.isFlammable() as boolean
 myMCMaterial.isFlammable();
 ```
 
@@ -47,9 +47,10 @@ myMCMaterial.isFlammable();
 
 Returns if blocks of these materials are liquids.
 
-Return type: boolean
+Return Type: boolean
 
 ```zenscript
+MCMaterial.isLiquid() as boolean
 myMCMaterial.isLiquid();
 ```
 
@@ -57,9 +58,10 @@ myMCMaterial.isLiquid();
 
 Indicate if the material is opaque
 
-Return type: boolean
+Return Type: boolean
 
 ```zenscript
+MCMaterial.isOpaque() as boolean
 myMCMaterial.isOpaque();
 ```
 
@@ -67,9 +69,10 @@ myMCMaterial.isOpaque();
 
 Returns whether the material can be replaced by other blocks when placed - eg snow, vines and tall grass.
 
-Return type: boolean
+Return Type: boolean
 
 ```zenscript
+MCMaterial.isReplaceable() as boolean
 myMCMaterial.isReplaceable();
 ```
 
@@ -77,16 +80,18 @@ myMCMaterial.isReplaceable();
 
 Returns true if the block is a considered solid. This is true by default.
 
-Return type: boolean
+Return Type: boolean
 
 ```zenscript
+MCMaterial.isSolid() as boolean
 myMCMaterial.isSolid();
 ```
 
 
 ## Properties
 
-| Name          | Type   | Has Getter | Has Setter |
-| ------------- | ------ | ---------- | ---------- |
-| commandString | String | true       | false      |
+| Name          | Type                                                           | Has Getter | Has Setter |
+| ------------- | -------------------------------------------------------------- | ---------- | ---------- |
+| color         | [MCMaterialColor](/vanilla/api/block/material/MCMaterialColor) | true       | false      |
+| commandString | string                                                         | true       | false      |
 

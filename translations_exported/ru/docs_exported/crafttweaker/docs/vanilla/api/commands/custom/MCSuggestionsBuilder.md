@@ -1,175 +1,180 @@
 # MCSuggessBuilder
 
-Этот класс был добавлен модом с mod-id `crafttweaker`. Так что если вы хотите использовать эту функцию, вам нужно установить этот мод.
-
 ## Импорт класса
-Вам может потребоваться импортировать пакет, если вы столкнетесь с какими-либо проблемами (например, с заливкой массива), так что лучше быть в безопасности, чем извиняться и добавлять импорт.
+
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
 ```zenscript
-crafttweaker.api.commands.custom.MCSuggestionsBuilder
+import crafttweaker.api.commands.custom.MCSuggestionsBuilder;
 ```
+
+
+## Утилиты
+
+| Тип результата | Является неявным |
+| -------------- | ---------------- |
+| string         | true             |
 
 ## Methods
+
 ### add
 
-Тип возврата: [crafttweaker.api.commands.custom.MCSuggestionsBuilder](/vanilla/api/commands/custom/MCSuggestionsBuilder)
+Return Type: [MCSuggestionsBuilder](/vanilla/api/commands/custom/MCSuggestionsBuilder)
 
 ```zenscript
-myMCSuggestionsBuilder.add(другой как crafttweaker.api.commands.custom.MCSuggestionsBuilder);
+MCSuggestionsBuilder.add(other as MCSuggestionsBuilder) as MCSuggestionsBuilder
 ```
 
-| Параметр | Тип                                                                                                        | Description          |
-| -------- | ---------------------------------------------------------------------------------------------------------- | -------------------- |
-| other    | [crafttweaker.api.commands.custom.MCSuggestionsBuilder](/vanilla/api/commands/custom/MCSuggestionsBuilder) | Описание отсутствует |
+| Параметр | Тип                                                                   | Description             |
+| -------- | --------------------------------------------------------------------- | ----------------------- |
+| other    | [MCSuggessBuilder](/vanilla/api/commands/custom/MCSuggestionsBuilder) | No Description Provided |
 
 
 ### build
 
-Тип возврата: [crafttweaker.api.commands.custom.MCSuggestions](/vanilla/api/commands/custom/MCSuggestions)
+Return Type: [MCSuggestions](/vanilla/api/commands/custom/MCSuggestions)
 
 ```zenscript
+MCSuggestionsBuilder.build() as MCSuggestions
 myMCSuggestionsBuilder.build();
 ```
 
 ### создать смещение
 
-Тип возврата: [crafttweaker.api.commands.custom.MCSuggestionsBuilder](/vanilla/api/commands/custom/MCSuggestionsBuilder)
+Return Type: [MCSuggestionsBuilder](/vanilla/api/commands/custom/MCSuggestionsBuilder)
 
 ```zenscript
-myMCSuggestionsBuilder.createOffset(стартовать как int);
+MCSuggestionsBuilder.createOffset(start as int) as MCSuggestionsBuilder
 ```
 
-| Параметр | Тип | Description          |
-| -------- | --- | -------------------- |
-| старт    | int | Описание отсутствует |
+| Параметр | Тип | Description             |
+| -------- | --- | ----------------------- |
+| старт    | int | No Description Provided |
 
 
 ### equals
 
-Return type: boolean
+Return Type: boolean
 
 ```zenscript
-myMCSuggestionsBuilder.equals(o as Object);
+MCSuggestionsBuilder.equals(o as Object) as boolean
 ```
 
-| Параметр | Тип    | Description          |
-| -------- | ------ | -------------------- |
-| o        | Object | Описание отсутствует |
+| Параметр | Тип    | Description             |
+| -------- | ------ | ----------------------- |
+| o        | Object | No Description Provided |
 
 
 ### getInput
 
-Return type: String
+Return Type: string
 
 ```zenscript
+MCSuggestionsBuilder.getInput() as string
 myMCSuggestionsBuilder.getInput();
 ```
 
 ### получить оставшееся
 
-Return type: String
+Return Type: string
 
 ```zenscript
+MCSuggestionsBuilder.getRemaining() as string
 myMCSuggestionsBuilder.getRemaining();
 ```
 
 ### getStart
 
-Return type: int
+Return Type: int
 
 ```zenscript
+MCSuggestionsBuilder.getStart() as int
 myMCSuggestionsBuilder.getStart();
 ```
 
 ### hashCode
 
-Return type: int
+Return Type: int
 
 ```zenscript
+MCSuggestionsBuilder.hashCode() as int
 myMCSuggestionsBuilder.hashCode();
 ```
 
 ### перезапустить
 
-Тип возврата: [crafttweaker.api.commands.custom.MCSuggestionsBuilder](/vanilla/api/commands/custom/MCSuggestionsBuilder)
+Return Type: [MCSuggestionsBuilder](/vanilla/api/commands/custom/MCSuggestionsBuilder)
 
 ```zenscript
+MCSuggestionsBuilder.restart() as MCSuggestionsBuilder
 myMCSuggestionsBuilder.restart();
 ```
 
 ### предложить
 
-Тип возврата: [crafttweaker.api.commands.custom.MCSuggestionsBuilder](/vanilla/api/commands/custom/MCSuggestionsBuilder)
+Return Type: [MCSuggestionsBuilder](/vanilla/api/commands/custom/MCSuggestionsBuilder)
 
 ```zenscript
-myMCSuggestionsBuilder.proposest(текст как строка);
+MCSuggestionsBuilder.suggest(text as string) as MCSuggestionsBuilder
 ```
 
-| Параметр | Тип    | Description          |
-| -------- | ------ | -------------------- |
-| текст    | String | Описание отсутствует |
+| Параметр | Тип    | Description             |
+| -------- | ------ | ----------------------- |
+| текст    | string | No Description Provided |
 
 
-
-Тип возврата: [crafttweaker.api.commands.custom.MCSuggestionsBuilder](/vanilla/api/commands/custom/MCSuggestionsBuilder)
+Return Type: [MCSuggestionsBuilder](/vanilla/api/commands/custom/MCSuggestionsBuilder)
 
 ```zenscript
-myMCSuggestionsBuilder.proposest(value as int);
+MCSuggestionsBuilder.suggest(value as int) as MCSuggestionsBuilder
 ```
 
-| Параметр | Тип | Description          |
-| -------- | --- | -------------------- |
-| value    | int | Описание отсутствует |
+| Параметр | Тип | Description             |
+| -------- | --- | ----------------------- |
+| value    | int | No Description Provided |
 
 
-
-Тип возврата: [crafttweaker.api.commands.custom.MCSuggestionsBuilder](/vanilla/api/commands/custom/MCSuggestionsBuilder)
+Return Type: [MCSuggestionsBuilder](/vanilla/api/commands/custom/MCSuggestionsBuilder)
 
 ```zenscript
-myMCSuggestionsBuilder.proposest(text as String, tooltip as String);
+MCSuggestionsBuilder.suggest(text as string, tooltip as string) as MCSuggestionsBuilder
 ```
 
-| Параметр  | Тип    | Description          |
-| --------- | ------ | -------------------- |
-| текст     | String | Описание отсутствует |
-| подсказка | String | Описание отсутствует |
+| Параметр  | Тип    | Description             |
+| --------- | ------ | ----------------------- |
+| текст     | string | No Description Provided |
+| подсказка | string | No Description Provided |
 
 
-
-Тип возврата: [crafttweaker.api.commands.custom.MCSuggestionsBuilder](/vanilla/api/commands/custom/MCSuggestionsBuilder)
+Return Type: [MCSuggestionsBuilder](/vanilla/api/commands/custom/MCSuggestionsBuilder)
 
 ```zenscript
-myMCSuggestionsBuilder.proposest(value as int, tooltip as String);
+MCSuggestionsBuilder.suggest(value as int, tooltip as string) as MCSuggestionsBuilder
 ```
 
-| Параметр  | Тип    | Description          |
-| --------- | ------ | -------------------- |
-| value     | int    | Описание отсутствует |
-| подсказка | String | Описание отсутствует |
+| Параметр  | Тип    | Description             |
+| --------- | ------ | ----------------------- |
+| value     | int    | No Description Provided |
+| подсказка | string | No Description Provided |
 
 
 ### toString
 
-Return type: String
+Return Type: string
 
 ```zenscript
+MCSuggestionsBuilder.toString() as string
 myMCSuggestionsBuilder.toString();
 ```
 
 
 ## Операторы
+
 ### EQUALS
 
 ```zenscript
 myMCSuggestionsBuilder == o как объект
 ```
 
-| Параметр | Тип    | Description          |
-| -------- | ------ | -------------------- |
-| o        | Object | Описание отсутствует |
 
-## Утилиты
 
-| Тип результата | Является неявным |
-| -------------- | ---------------- |
-| String         | true             |
 

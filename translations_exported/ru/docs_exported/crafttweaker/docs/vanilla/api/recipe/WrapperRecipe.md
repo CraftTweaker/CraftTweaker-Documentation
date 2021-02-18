@@ -1,37 +1,38 @@
 # WrapperRecipe
 
-Этот класс был добавлен модом с mod-id `crafttweaker`. Так что если вы хотите использовать эту функцию, вам нужно установить этот мод.
-
 ## Импорт класса
-Вам может потребоваться импортировать пакет, если вы столкнетесь с какими-либо проблемами (например, с заливкой массива), так что лучше быть в безопасности, чем извиняться и добавлять импорт.
+
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
 ```zenscript
-crafttweaker.api.recipes.WrapperRecipe
+import crafttweaker.api.recipes.WrapperRecipe;
 ```
+
 
 ## Methods
+
 ### canFit
 
-Return type: boolean
+Return Type: boolean
 
 ```zenscript
-myWrapperRecipe.canFit(width as int, height as int);
+WrapperRecipe.canFit(width as int, height as int) as boolean
 ```
 
-| Параметр | Тип | Description          |
-| -------- | --- | -------------------- |
-| width    | int | Описание отсутствует |
-| height   | int | Описание отсутствует |
+| Параметр | Тип | Description             |
+| -------- | --- | ----------------------- |
+| width    | int | No Description Provided |
+| height   | int | No Description Provided |
 
 
 
 ## Свойства
 
-| Название    | Тип                                                                                         | Имеет Getter | Имеет Setter |
-| ----------- | ------------------------------------------------------------------------------------------- | ------------ | ------------ |
-| dynamic     | boolean                                                                                     | true         | false        |
-| group       | String                                                                                      | true         | false        |
-| icon        | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)                           | true         | false        |
-| id          | [crafttweaker.api.util.MCResourceLocation](/vanilla/api/util/MCResourceLocation)            | true         | false        |
-| ingredients | List&lt;[crafttweaker.api.item.IIngredient](/vanilla/api/items/IIngredient)&gt; | true         | false        |
-| output      | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)                           | true         | false        |
+| Название    | Тип                                                                          | Имеет Getter | Имеет Setter |
+| ----------- | ---------------------------------------------------------------------------- | ------------ | ------------ |
+| dynamic     | boolean                                                                      | true         | false        |
+| group       | string                                                                       | true         | false        |
+| icon        | [IItemStack](/vanilla/api/items/IItemStack)                                  | true         | false        |
+| id          | [Расположение MCResource-ресурсов](/vanilla/api/util/MCResourceLocation)     | true         | false        |
+| ingredients | stdlib.List&lt;[IIngredient](/vanilla/api/items/IIngredient)&gt; | true         | false        |
+| output      | [IItemStack](/vanilla/api/items/IItemStack)                                  | true         | false        |
 

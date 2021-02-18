@@ -1,274 +1,241 @@
 # ICollectionData #所收集数据
 
-ICollection数据用于像列表一样表示
-
- crafttweaker.api.data.IData </ 0>的集合<IData></p> 
-
-这个类由mod-id为`crafttweaker`的模组添加. 因此，如果要使用此功能，则需要安装此mod。
-
-
+The ICollection data is used to represent a collection of [IData](/vanilla/api/data/IData) like a List<IData>
 
 ## 导入相关包
 
-如果遇到任何问题（例如强制转换数组），则可能需要导入软件包，因此，最好的方式就是导入包支持。  
-
-
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
 ```zenscript
-crafttweaker.api.data.ICollectionData
+import crafttweaker.api.data.ICollectionData;
 ```
 
 
-
-
 ## 已实现的接口
+ICollectionData实现了以下接口。 That means all methods defined in these interfaces are also available in ICollectionData
 
-ICollectionData实现了以下接口。 这意味着对这个接口可用的任何方法也可以在此类上使用。  
-
-- [crafttweaker.api.data.IData](/vanilla/api/data/IData)
-
-
+- [IData](/vanilla/api/data/IData)
 
 ## 方法
 
+### getFromMembers
+
+Creates the most specific ICollectionData form possible for the provided members.
+
+ Tries to return (in order) [ByteArrayData](/vanilla/api/data/ByteArrayData), [IntArrayData](/vanilla/api/data/IntArrayData), [LongArrayData](/vanilla/api/data/LongArrayData) or if neither is applicable [ListData](/vanilla/api/data/ListData)
+
+Return Type: [ICollectionData](/vanilla/api/data/ICollectionData)
+
+```zenscript
+ICollectionData.getFromMembers(members as IData[]) as ICollectionData
+```
+
+| 参数      | 类型                                 | 描述                      |
+| ------- | ---------------------------------- | ----------------------- |
+| members | [IData](/vanilla/api/data/IData)[] | No Description Provided |
+
+
+## Casters
+
+| 结果类型                                                        | 是否隐藏  |
+| ----------------------------------------------------------- | ----- |
+| [ICollectionData #所收集数据](/vanilla/api/data/ICollectionData) | false |
+| [INumberData #编号数据](/vanilla/api/data/INumberData)          | false |
+
+## 方法
 
 ### add
 
 
 
+Return Type: void
+
 ```zenscript
-new ListData(["Hello", "World"]).add(value as crafttweaker.api.data.IData);
+ICollectionData.add(value as IData) as void
 new ListData(["Hello", "World"]).add("today");
 ```
 
-
-| 参数    | 类型                                                     | 描述       |
-| ----- | ------------------------------------------------------ | -------- |
-| value | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | 要添加到列表的值 |
-
+| 参数    | 类型                               | 描述       |
+| ----- | -------------------------------- | -------- |
+| value | [IData](/vanilla/api/data/IData) | 要添加到列表的值 |
 
 
 
 
+Return Type: void
 
 ```zenscript
-new ListData(["Hello", "World"]).add(index as int, value as crafttweaker.api.data.IData);
+ICollectionData.add(index as int, value as IData) as void
 new ListData(["Hello", "World"]).add(1, "beautiful");
 ```
 
-
-| 参数    | 类型                                                     | 描述                   |
-| ----- | ------------------------------------------------------ | -------------------- |
-| index | int                                                    | 要添加的索引。 后续项目将会上移一个索引 |
-| value | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | 要添加到列表的值             |
-
+| 参数    | 类型                               | 描述                   |
+| ----- | -------------------------------- | -------------------- |
+| index | int                              | 要添加的索引。 后续项目将会上移一个索引 |
+| value | [IData](/vanilla/api/data/IData) | 要添加到列表的值             |
 
 
+### asCollection
 
+Return Type: [ICollectionData](/vanilla/api/data/ICollectionData)
+
+```zenscript
+ICollectionData.asCollection() as ICollectionData
+new ListData(["Hello", "World"]).asCollection();
+```
 
 ### asList #作为列表
 
-获取列表<IData> IData的表示形式，对 crafttweaker.api.data.ListData </ 0>以外的任何内容返回null。</p> 
+获取列表<IData> representation of this IData, returns null on anything but [ListData](/vanilla/api/data/ListData).
 
-如果IData值不是一个列表的话则返回值null
-
-返回类型：列表&lt;[craftminstrer.api.data.IData](/vanilla/api/data/IData)&gt;
-
-
+Return Type: stdlib.List&lt;[IData](/vanilla/api/data/IData)&gt;
 
 ```zenscript
+ICollectionData.asList() as stdlib.List<IData>
 new ListData(["Hello", "World"]).asList();
 ```
 
-
-
-
 ### asMap #作为地图数据
 
-获取此IData的Map <String, IData>表示形式，对 crafttweaker.api.data.MapData </ 1>以外的任何内容返回null。</p> 
+Gets a Map<String, IData> representation of this IData, returns null on anything but [MapData](/vanilla/api/data/MapData).
 
-如果IData值不是一个地图数据的话则返回值null
-
-返回类型： [craftbiner.api.data.IData](/vanilla/api/data/IData)[String]
-
-
+Return Type: [IData](/vanilla/api/data/IData)[string]
 
 ```zenscript
+ICollectionData.asMap() as IData[string]
 new ListData(["Hello", "World"]).asMap();
 ```
 
+### asNumber
 
+Return Type: [INumberData](/vanilla/api/data/INumberData)
 
+```zenscript
+ICollectionData.asNumber() as INumberData
+new ListData(["Hello", "World"]).asNumber();
+```
 
 ### asString #作为字符串
 
 获取此IData的字符串表示形式
 
-返回：`表示此IData（值和类型）的字符串。</ 0></p>
+Return Type: string
 
-<p spaces-before="0">Return type: String</p>
-
-<pre><code class="zenscript">new ListData(["Hello", "World"]).asString();
-`</pre> 
-
-
+```zenscript
+ICollectionData.asString() as string
+new ListData(["Hello", "World"]).asString();
+```
 
 ### clear #清除
 
 删除列表中的每个元素
 
-
+Return Type: void
 
 ```zenscript
+ICollectionData.clear() as void
 new ListData(["Hello", "World"]).clear();
 ```
 
-
-
-
 ### contains #容器
 
-检查这个IData是否包含另一个IData，主要用于[craftminstruer.api.data.ICollectionData](/vanilla/api/data/ICollectionData)的子类，与其他IData类型的同等检查
+Checks if this IData contains another IData, mainly used in subclasses of [ICollectionData](/vanilla/api/data/ICollectionData), is the same as an equals check on other IData types
 
-返回: `true 如果给定的 IData 包含在此 IData 中`
-
-Return type: boolean
-
-
+Return Type: boolean
 
 ```zenscript
-new ListData(["Hello", "World"]).contains(data as crafttweaker.api.data.IData);
+ICollectionData.contains(data as IData) as boolean
 new ListData(["Hello", "World"]).contains("Display");
 ```
 
-
-| 参数   | 类型                                                     | 描述          |
-| ---- | ------------------------------------------------------ | ----------- |
-| data | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | 要检查是否有包含的数据 |
-
-
-
+| 参数   | 类型                               | 描述          |
+| ---- | -------------------------------- | ----------- |
+| data | [IData](/vanilla/api/data/IData) | 要检查是否有包含的数据 |
 
 
 ### copy #复制
 
 制作此IData的副本。
 
-IData默认情况下是不可变的，使用它可以创建对象的正确副本。
+ IData默认情况下是不可变的，使用它可以创建对象的正确副本。
 
-返回：`此IData的副本`
-
-返回类型： [craftbiner.api.data.IData](/vanilla/api/data/IData)
-
-
+Return Type: [IData](/vanilla/api/data/IData)
 
 ```zenscript
+ICollectionData.copy() as IData
 new ListData(["Hello", "World"]).copy();
 ```
 
+### getAt
 
+Retrieves the [IData](/vanilla/api/data/IData) stored at the given index.
 
-
-### get #获取
-
-检索存储在给定索引中的[craftminstrer.api.data](/vanilla/api/data/IData)。 返回： ` [crafttweaker.api.data.IData](/vanilla/api/data/IData)`
-
-返回类型： [craftbiner.api.data.IData](/vanilla/api/data/IData)
-
-
+Return Type: [IData](/vanilla/api/data/IData)
 
 ```zenscript
-new ListData(["Hello", "World"]).get(index as int);
-new ListData(["Hello", "World"]).get(0);
+ICollectionData.getAt(index as int) as IData
+new ListData(["Hello", "World"]).getAt(0);
 ```
-
 
 | 参数    | 类型  | 描述               |
 | ----- | --- | ---------------- |
 | index | int | The index (从0开始) |
 
 
-
-
-
-### getId #获取id 
+### getId #获取id
 
 获取内部NBT标签的 ID。
 
-用来确定哪些NBT类型被存储(例如在列表中)
+ 用来确定哪些NBT类型被存储(例如在列表中)
 
-返回：`此数据代表的 NBT 标签ID。`
-
-返回类型：字节
-
-
+Return Type: byte
 
 ```zenscript
+ICollectionData.getId() as byte
 new ListData(["Hello", "World"]).getId();
 ```
-
-
-
 
 ### getString #获取字符串
 
 获取内部INBT标记的字符串表示形式
 
-返回：`表示此 IData 内部INBT 的字符串。`
-
-Return type: String
-
-
+Return Type: string
 
 ```zenscript
+ICollectionData.getString() as string
 new ListData(["Hello", "World"]).getString();
 ```
 
-
-
-
 ### remove
 
-移除存储在给定索引中的[craftminstrer.api.data](/vanilla/api/data/IData)。 返回： `已删除的 [crafttweaker.api.data.IData](/vanilla/api/data/IData)`
+Removes the [IData](/vanilla/api/data/IData) stored at the given index.
 
-返回类型： [craftbiner.api.data.IData](/vanilla/api/data/IData)
-
-
+Return Type: [IData](/vanilla/api/data/IData)
 
 ```zenscript
-new ListData(["Hello", "World"]).remove(index as int);
+ICollectionData.remove(index as int) as IData
 new ListData(["Hello", "World"]).remove(0);
 ```
-
 
 | 参数    | 类型  | 描述               |
 | ----- | --- | ---------------- |
 | index | int | The index (从0开始) |
 
 
+### setAt
 
+在给定值的索引处设置项目
 
-
-### set #设置
-
-将项目设定为给定的值 返回： `替换的值`
-
-返回类型： [craftbiner.api.data.IData](/vanilla/api/data/IData)
-
-
+Return Type: [IData](/vanilla/api/data/IData)
 
 ```zenscript
-new ListData(["Hello", "World"]).set(index as int, value as crafttweaker.api.data.IData);
-new ListData(["Hello", "World"]).set(0, "Bye");
+ICollectionData.setAt(index as int, value as IData) as IData
+new ListData(["Hello", "World"]).setAt(0, "Bye");
 ```
 
-
-| 参数    | 类型                                                     | 描述            |
-| ----- | ------------------------------------------------------ | ------------- |
-| index | int                                                    | 要设置的索引 (从0开始) |
-| value | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | 新值            |
-
-
-
+| 参数    | 类型                               | 描述            |
+| ----- | -------------------------------- | ------------- |
+| index | int                              | 要设置的索引 (从0开始) |
+| value | [IData](/vanilla/api/data/IData) | 新值            |
 
 
 

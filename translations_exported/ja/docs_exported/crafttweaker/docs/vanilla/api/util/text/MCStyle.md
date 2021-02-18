@@ -1,267 +1,269 @@
 # MCStyle
 
-This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
-
 ## Importing the class
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
 ```zenscript
-crafttweaker.api.util.text.MCStyle
+import crafttweaker.api.util.text.MCStyle;
 ```
+
 
 ## Constructors
+
+No Description Provided
 ```zenscript
-new crafttweaker.api.util.text.MCStyle();
+new MCStyle() as MCStyle
+new MCStyle();
 ```
 
+
 ## Methods
+
 ### equals
 
-Return type: boolean
+Return Type: boolean
 
 ```zenscript
-myMCStyle.equals(other as Object);
+MCStyle.equals(other as Object) as boolean
 ```
 
 | Parameter | Type   | Description             |
 | --------- | ------ | ----------------------- |
-| other     | Object | No description provided |
+| other     | Object | No Description Provided |
 
 
 ### getBold
 
-Return type: boolean
+Return Type: boolean
 
 ```zenscript
+MCStyle.getBold() as boolean
 myMCStyle.getBold();
 ```
 
 ### getFontId
 
-戻り値の型: [crafttweaker.api.util.MCResourceLocation](/vanilla/api/util/MCResourceLocation)
+Return Type: [MCResourceLocation](/vanilla/api/util/MCResourceLocation)
 
 ```zenscript
+MCStyle.getFontId() as MCResourceLocation
 myMCStyle.getFontId();
 ```
 
 ### getInsertion
 
-Return type: String
+Return Type: string
 
 ```zenscript
+MCStyle.getInsertion() as string
 myMCStyle.getInsertion();
 ```
 
 ### getItalic
 
-Return type: boolean
+Return Type: boolean
 
 ```zenscript
+MCStyle.getItalic() as boolean
 myMCStyle.getItalic();
 ```
 
 ### getObfuscated
 
-Return type: boolean
+Return Type: boolean
 
 ```zenscript
-myMCStyle.get難読化();
+MCStyle.getObfuscated() as boolean
+myMCStyle.getObfuscated();
 ```
 
 ### getStrikethrough
 
-Return type: boolean
+Return Type: boolean
 
 ```zenscript
-myMCStyle.getStrikethrough ();
+MCStyle.getStrikethrough() as boolean
+myMCStyle.getStrikethrough();
 ```
 
 ### getUnderlined
 
-Return type: boolean
+Return Type: boolean
 
 ```zenscript
+MCStyle.getUnderlined() as boolean
 myMCStyle.getUnderlined();
 ```
 
 ### hashCode
 
-Return type: int
+Return Type: int
 
 ```zenscript
+MCStyle.hashCode() as int
 myMCStyle.hashCode();
 ```
 
 ### isEmpty
 
-このスタイルが空であるかどうか(親からすべてを継承します)。
+Whether or not this style is empty (inherits everything from the parent).
 
-Return type: boolean
+Return Type: boolean
 
 ```zenscript
+MCStyle.isEmpty() as boolean
 myMCStyle.isEmpty();
 ```
 
 ### mergeStyle
 
-戻り値の型: [crafttweaker.api.util.text.MCStyle](/vanilla/api/util/text/MCStyle)
+Return Type: [MCStyle](/vanilla/api/util/text/MCStyle)
 
 ```zenscript
-myMCStyle.mergeStyle(crafttweaker.api.util.text.MCStyle);
+MCStyle.mergeStyle(style as MCStyle) as MCStyle
 ```
 
-| Parameter | Type                                                                 | Description             |
-| --------- | -------------------------------------------------------------------- | ----------------------- |
-| スタイル      | [crafttweaker.api.util.text.MCStyle](/vanilla/api/util/text/MCStyle) | No description provided |
+| Parameter | Type                                      | Description             |
+| --------- | ----------------------------------------- | ----------------------- |
+| スタイル      | [MCStyle](/vanilla/api/util/text/MCStyle) | No Description Provided |
 
 
 ### setBold
 
-戻り値の型: [crafttweaker.api.util.text.MCStyle](/vanilla/api/util/text/MCStyle)
+Return Type: [MCStyle](/vanilla/api/util/text/MCStyle)
 
 ```zenscript
-myMCStyle.setBold(boldIn as Boolean);
+MCStyle.setBold(boldIn as Boolean) as MCStyle
 ```
 
 | Parameter | Type    | Description             |
 | --------- | ------- | ----------------------- |
-| boldIn    | Boolean | No description provided |
+| boldIn    | Boolean | No Description Provided |
 
 
 ### setColor
 
-戻り値の型: [crafttweaker.api.util.text.MCStyle](/vanilla/api/util/text/MCStyle)
+Return Type: [MCStyle](/vanilla/api/util/text/MCStyle)
 
 ```zenscript
-myMCStyle.setColor(crafttweaker.api.text.TextFormating);
-```
-
-| Parameter | Type                                                                          | Description             |
-| --------- | ----------------------------------------------------------------------------- | ----------------------- |
-| 書式設定      | [crafttweaker.api.text.TextFormatting](/vanilla/api/util/text/TextFormatting) | No description provided |
-
-
-
-戻り値の型: [crafttweaker.api.util.text.MCStyle](/vanilla/api/util/text/MCStyle)
-
-```zenscript
-myMCStyle.setColor(color as int);
+MCStyle.setColor(colour as int) as MCStyle
 ```
 
 | Parameter | Type | Description             |
 | --------- | ---- | ----------------------- |
-| 色         | int  | No description provided |
+| colour    | int  | No Description Provided |
+
+
+Return Type: [MCStyle](/vanilla/api/util/text/MCStyle)
+
+```zenscript
+MCStyle.setColor(formatting as TextFormatting) as MCStyle
+```
+
+| Parameter | Type                                                    | Description             |
+| --------- | ------------------------------------------------------- | ----------------------- |
+| 書式設定      | [TextFormatting](/vanilla/api/util/text/TextFormatting) | No Description Provided |
 
 
 ### setFontId
 
-戻り値の型: [crafttweaker.api.util.text.MCStyle](/vanilla/api/util/text/MCStyle)
+Return Type: [MCStyle](/vanilla/api/util/text/MCStyle)
 
 ```zenscript
-myMCStyle.setFontId(location as crafttweaker.api.util.MCResourceLocation);
+MCStyle.setFontId(location as MCResourceLocation) as MCStyle
 ```
 
-| Parameter | Type                                                                             | Description             |
-| --------- | -------------------------------------------------------------------------------- | ----------------------- |
-| 場所        | [crafttweaker.api.util.MCResourceLocation](/vanilla/api/util/MCResourceLocation) | No description provided |
+| Parameter | Type                                                       | Description             |
+| --------- | ---------------------------------------------------------- | ----------------------- |
+| 場所        | [MCResourceLocation](/vanilla/api/util/MCResourceLocation) | No Description Provided |
 
 
 ### 設定フォーマット
 
-戻り値の型: [crafttweaker.api.util.text.MCStyle](/vanilla/api/util/text/MCStyle)
+Return Type: [MCStyle](/vanilla/api/util/text/MCStyle)
 
 ```zenscript
-myMCStyle.setFormatting(crafttweaker.api.text.TextFormating);
+MCStyle.setFormatting(formatting as TextFormatting) as MCStyle
 ```
 
-| Parameter | Type                                                                          | Description             |
-| --------- | ----------------------------------------------------------------------------- | ----------------------- |
-| 書式設定      | [crafttweaker.api.text.TextFormatting](/vanilla/api/util/text/TextFormatting) | No description provided |
+| Parameter | Type                                                    | Description             |
+| --------- | ------------------------------------------------------- | ----------------------- |
+| 書式設定      | [TextFormatting](/vanilla/api/util/text/TextFormatting) | No Description Provided |
 
 
 ### setInsertion
 
-コンポーネントがシフトクリックされたときにチャットに挿入するテキストを設定します
+Set a text to be inserted into Chat when the component is shift-clicked
 
-戻り値の型: [crafttweaker.api.util.text.MCStyle](/vanilla/api/util/text/MCStyle)
+Return Type: [MCStyle](/vanilla/api/util/text/MCStyle)
 
 ```zenscript
-myMCStyle.setInsertion(insertion as String);
+MCStyle.setInsertion(insertion as string) as MCStyle
 ```
 
 | Parameter | Type   | Description             |
 | --------- | ------ | ----------------------- |
-| 挿入        | String | No description provided |
+| 挿入        | string | No Description Provided |
 
 
 ### setItalic
 
-戻り値の型: [crafttweaker.api.util.text.MCStyle](/vanilla/api/util/text/MCStyle)
+Return Type: [MCStyle](/vanilla/api/util/text/MCStyle)
 
 ```zenscript
-myMCStyle.setItalic(italic as Boolean);
+MCStyle.setItalic(italic as Boolean) as MCStyle
 ```
 
 | Parameter | Type    | Description             |
 | --------- | ------- | ----------------------- |
-| italic    | Boolean | No description provided |
+| italic    | Boolean | No Description Provided |
 
 
 ### setObfuscated
 
-戻り値の型: [crafttweaker.api.util.text.MCStyle](/vanilla/api/util/text/MCStyle)
+Return Type: [MCStyle](/vanilla/api/util/text/MCStyle)
 
 ```zenscript
-myMCStyle.setObfuscated(obfuscated as Boolean);
+MCStyle.setObfuscated(obfuscated as Boolean) as MCStyle
 ```
 
 | Parameter  | Type    | Description             |
 | ---------- | ------- | ----------------------- |
-| obfuscated | Boolean | No description provided |
+| obfuscated | Boolean | No Description Provided |
 
 
 ### setStrikethrough
 
-戻り値の型: [crafttweaker.api.util.text.MCStyle](/vanilla/api/util/text/MCStyle)
+Return Type: [MCStyle](/vanilla/api/util/text/MCStyle)
 
 ```zenscript
-myMCStyle.setStrikethrough(Booleanとしての取り消し);
+MCStyle.setStrikethrough(strikethrough as Boolean) as MCStyle
 ```
 
 | Parameter     | Type    | Description             |
 | ------------- | ------- | ----------------------- |
-| strikethrough | Boolean | No description provided |
+| strikethrough | Boolean | No Description Provided |
 
 
 ### setUnderlined
 
-戻り値の型: [crafttweaker.api.util.text.MCStyle](/vanilla/api/util/text/MCStyle)
+Return Type: [MCStyle](/vanilla/api/util/text/MCStyle)
 
 ```zenscript
-myMCStyle.setUnderlined(Booleanとして下線を引く);
+MCStyle.setUnderlined(underlined as Boolean) as MCStyle
 ```
 
 | Parameter | Type    | Description             |
 | --------- | ------- | ----------------------- |
-| 下線付き      | Boolean | No description provided |
-
-
-
-戻り値の型: [crafttweaker.api.util.text.MCStyle](/vanilla/api/util/text/MCStyle)
-
-```zenscript
-myMCStyle.setUnderlined(underlined)
-```
-
-| Parameter | Type     | Description             |
-| --------- | -------- | ----------------------- |
-| 下線付き      | boolean型 | No description provided |
+| 下線付き      | Boolean | No Description Provided |
 
 
 ### toString
 
-Return type: String
+Return Type: string
 
 ```zenscript
+MCStyle.toString() as string
 myMCStyle.toString();
 ```
 

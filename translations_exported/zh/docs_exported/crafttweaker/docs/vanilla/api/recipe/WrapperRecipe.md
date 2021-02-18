@@ -1,37 +1,38 @@
 # WrapperRecipe
 
-这个类由mod-id为`crafttweaker`的模组添加. 因此，如果要使用此功能，则需要安装此mod。
-
 ## 导入相关包
-如果遇到任何问题（例如强制转换数组），则可能需要导入软件包，因此，最好的方式就是导入包支持。
+
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
 ```zenscript
-crafttweaker.api.recipes.WrapperRecipe
+import crafttweaker.api.recipes.WrapperRecipe;
 ```
 
+
 ## 方法
+
 ### canFit
 
-Return type: boolean
+Return Type: boolean
 
 ```zenscript
-myWrapperRecipe.canFit(width as int, height as int);
+WrapperRecipe.canFit(width as int, height as int) as boolean
 ```
 
 | 参数     | 类型  | 描述                      |
 | ------ | --- | ----------------------- |
-| width  | int | No description provided |
-| height | int | No description provided |
+| width  | int | No Description Provided |
+| height | int | No Description Provided |
 
 
 
 ## 参数
 
-| 名称          | 类型                                                                                          | 可获得  | 可设置   |
-| ----------- | ------------------------------------------------------------------------------------------- | ---- | ----- |
-| dynamic     | boolean                                                                                     | true | false |
-| group       | String                                                                                      | true | false |
-| icon        | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)                           | true | false |
-| id          | [crafttweaker.api.util.MCResourceLocation](/vanilla/api/util/MCResourceLocation)            | true | false |
-| ingredients | List&lt;[crafttweaker.api.item.IIngredient](/vanilla/api/items/IIngredient)&gt; | true | false |
-| output（输出）  | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)                           | true | false |
+| 名称          | 类型                                                                           | 可获得  | 可设置   |
+| ----------- | ---------------------------------------------------------------------------- | ---- | ----- |
+| dynamic     | boolean                                                                      | true | false |
+| group       | string                                                                       | true | false |
+| icon        | [IItemStack](/vanilla/api/items/IItemStack)                                  | true | false |
+| id          | [MCResourceLocation](/vanilla/api/util/MCResourceLocation)                   | true | false |
+| ingredients | stdlib.List&lt;[IIngredient](/vanilla/api/items/IIngredient)&gt; | true | false |
+| output（输出）  | [IItemStack](/vanilla/api/items/IItemStack)                                  | true | false |
 

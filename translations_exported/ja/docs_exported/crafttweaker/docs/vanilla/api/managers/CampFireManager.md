@@ -2,93 +2,101 @@
 
 
 
-This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
-
 ## Importing the class
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
 ```zenscript
-crafttweaker.api.CampFireManager
+import crafttweaker.api.CampFireManager;
 ```
 
+
 ## Implemented Interfaces
-CampFireManager implements the following interfaces. That means any method available to them can also be used on this class.
-- [crafttweaker.api.brackets.CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
-- [crafttweaker.api.registries.ICookingRecipeManager](/vanilla/api/managers/ICookingRecipeManager)
-- [crafttweaker.api.registries.IRecipeManager](/vanilla/api/managers/IRecipeManager)
+CampFireManager implements the following interfaces. That means all methods defined in these interfaces are also available in CampFireManager
+
+- [ICookingRecipeManager](/vanilla/api/managers/ICookingRecipeManager)
 
 ## Methods
+
 ### addJSONRecipe
 
 Adds a recipe based on a provided IData. The provided IData should represent a DataPack JSON, this effectively allows you to register recipes for any DataPack supporting IRecipeType systems.
 
+Return Type: void
+
 ```zenscript
-campfire.addJSONRecipe(name as String, data as crafttweaker.api.data.IData);
-campfire.addJSONRecipe("recipe_name", {item:<item:minecraft:gold_ore>.registryName},result:<item:minecraft:cooked_porkchop>.registryName,experience:0.35 as float, cookingtime:100});
+CampFireManager.addJSONRecipe(name as string, data as IData) as void
+campfire.addJSONRecipe("recipe_name", {ingredient:{item:<item:minecraft:gold_ore>.registryName},result:<item:minecraft:cooked_porkchop>.registryName,experience:0.35 as float, cookingtime:100});
 ```
 
-| Parameter | Type                                                   | Description                     |
-| --------- | ------------------------------------------------------ | ------------------------------- |
-| name      | String                                                 | name of the recipe              |
-| data      | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | data representing the json file |
+| Parameter | Type                             | Description                     |
+| --------- | -------------------------------- | ------------------------------- |
+| name      | string                           | name of the recipe              |
+| data      | [IData](/vanilla/api/data/IData) | data representing the json file |
 
 
 ### addRecipe
 
 Adds a recipe based on given params.
 
+Return Type: void
+
 ```zenscript
-campfire.addRecipe(name as String, output as crafttweaker.api.item.IItemStack, input as crafttweaker.api.item.IIngredient, xp as float, cookTime as int);
-campfire.addRecipe("wool2diamond", <item:diamond>, <tag:minecraft:wool>, 1.0, 0);
+CampFireManager.addRecipe(name as string, output as IItemStack, input as IIngredient, xp as float, cookTime as int) as void
+campfire.addRecipe("wool2diamond", <item:minecraft:diamond>, <tag:minecraft:wool>, 1.0, 0);
 ```
 
-| Parameter | Type                                                                | Description                     |
-| --------- | ------------------------------------------------------------------- | ------------------------------- |
-| name      | String                                                              | Name of the new recipe          |
-| output    | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)   | IItemStack output of the recipe |
-| input     | [crafttweaker.api.item.IIngredient](/vanilla/api/items/IIngredient) | IIngredient input of the recipe |
-| xp        | float                                                               | how much xp the player gets     |
-| cookTime  | int                                                                 | how long it takes to cook       |
+| Parameter | Type                                          | Description                     |
+| --------- | --------------------------------------------- | ------------------------------- |
+| name      | string                                        | Name of the new recipe          |
+| output    | [IItemStack](/vanilla/api/items/IItemStack)   | IItemStack output of the recipe |
+| input     | [IIngredient](/vanilla/api/items/IIngredient) | IIngredient input of the recipe |
+| xp        | float                                         | how much xp the player gets     |
+| cookTime  | int                                           | how long it takes to cook       |
 
 
 ### getAllRecipes
 
-Return type: List&lt;[crafttweaker.api.recipes.WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)&gt;
+Return Type: stdlib.List&lt;[WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)&gt;
 
 ```zenscript
+CampFireManager.getAllRecipes() as stdlib.List<WrapperRecipe>
 campfire.getAllRecipes();
 ```
 
 ### getRecipeByName
 
-Return type: [crafttweaker.api.recipes.WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)
+Return Type: [WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)
 
 ```zenscript
-campfire.getRecipeByName(name as String);
+CampFireManager.getRecipeByName(name as string) as WrapperRecipe
 ```
 
 | Parameter | Type   | Description             |
 | --------- | ------ | ----------------------- |
-| name      | String | No description provided |
+| name      | string | No Description Provided |
 
 
 ### getRecipesByOutput
 
-Return type: List&lt;[crafttweaker.api.recipes.WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)&gt;
+Return Type: stdlib.List&lt;[WrapperRecipe](/vanilla/api/recipe/WrapperRecipe)&gt;
 
 ```zenscript
-campfire.getRecipesByOutput(output as crafttweaker.api.item.IIngredient);
+CampFireManager.getRecipesByOutput(output as IIngredient) as stdlib.List<WrapperRecipe>
 ```
 
-| Parameter | Type                                                                | Description             |
-| --------- | ------------------------------------------------------------------- | ----------------------- |
-| output    | [crafttweaker.api.item.IIngredient](/vanilla/api/items/IIngredient) | No description provided |
+| Parameter | Type                                          | Description             |
+| --------- | --------------------------------------------- | ----------------------- |
+| output    | [IIngredient](/vanilla/api/items/IIngredient) | No Description Provided |
 
 
 ### removeAll
 
 Remove all recipes in this registry
 
+Return Type: void
+
 ```zenscript
+CampFireManager.removeAll() as void
 campfire.removeAll();
 ```
 
@@ -96,90 +104,94 @@ campfire.removeAll();
 
 Remove recipe based on Registry name modid
 
+Return Type: void
+
 ```zenscript
-campfire.removeByModid(modid as String);
+CampFireManager.removeByModid(modid as string) as void
 campfire.removeByModid("minecraft");
 ```
 
 | Parameter | Type   | Description                    |
 | --------- | ------ | ------------------------------ |
-| modid     | String | modid of the recipes to remove |
+| modid     | string | modid of the recipes to remove |
 
 
+Remove recipe based on Registry name modid with an added exclusion check, so you can remove the whole mod besides a few specified.
 
-追加された除外チェック付きのレジストリ名modidに基づいてレシピを削除すると、いくつか指定された以外のMod全体を削除できます。
+Return Type: void
 
 ```zenscript
-campfire.removeByModid(modid as String, exclude as crafttweaker.api.recipe.RecipeFilter);
+CampFireManager.removeByModid(modid as string, exclude as RecipeFilter) as void
 campfire.removeByModid("minecraft", (name as string) => {return name == "orange_wool";});
 ```
 
-| Parameter | Type                                                                     | Description                    |
-| --------- | ------------------------------------------------------------------------ | ------------------------------ |
-| modid     | String                                                                   | modid of the recipes to remove |
-| 除外する      | [crafttweaker.api.recipe.RecipeFilter](/vanilla/api/recipe/RecipeFilter) | 排除されるレシピを教えてくれます               |
+| Parameter | Type                                             | Description                    |
+| --------- | ------------------------------------------------ | ------------------------------ |
+| modid     | string                                           | modid of the recipes to remove |
+| 除外する      | [RecipeFilter](/vanilla/api/recipe/RecipeFilter) | 排除されるレシピを教えてくれます               |
 
 
 ### removeByName
 
 Remove recipe based on Registry name
 
+Return Type: void
+
 ```zenscript
-campfire.removeByName(name as String);
+CampFireManager.removeByName(name as string) as void
 campfire.removeByName("minecraft:furnace");
 ```
 
 | Parameter | Type   | Description                       |
 | --------- | ------ | --------------------------------- |
-| name      | String | registry name of recipe to remove |
+| name      | string | registry name of recipe to remove |
 
 
 ### removeByRegex
 
 Remove recipe based on regex
 
+Return Type: void
+
 ```zenscript
-campfire.removeByRegex(regex as String);
+CampFireManager.removeByRegex(regex as string) as void
 campfire.removeByRegex("\\d_\\d");
 ```
 
 | Parameter | Type   | Description            |
 | --------- | ------ | ---------------------- |
-| regex     | String | regex to match against |
+| regex     | string | regex to match against |
 
 
 ### removeRecipe
 
 Remove a recipe based on it's output.
 
+Return Type: void
+
 ```zenscript
-campfire.removeRecipe(output as crafttweaker.api.item.IItemStack);
+CampFireManager.removeRecipe(output as IItemStack) as void
 campfire.removeRecipe(<item:minecraft:glass>);
 ```
 
-| Parameter | Type                                                              | Description          |
-| --------- | ----------------------------------------------------------------- | -------------------- |
-| output    | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | output of the recipe |
-
+| Parameter | Type                                        | Description          |
+| --------- | ------------------------------------------- | -------------------- |
+| output    | [IItemStack](/vanilla/api/items/IItemStack) | output of the recipe |
 
 
 Removes a recipe based on it's output and input.
 
+Return Type: void
+
 ```zenscript
-campfire.removeRecipe(output as crafttweaker.api.item.IItemStack, input as crafttweaker.api.item.IIngredient);
-campfire.removeRecipe(<item:minecraft:diamond>, <tag:minecraft:wool>);
+CampFireManager.removeRecipe(output as IItemStack, input as IIngredient) as void
+campfire.removeRecipe(<item:minecraft:diamond>, <tag:items:minecraft:wool>);
 ```
 
-| Parameter | Type                                                                | Description                          |
-| --------- | ------------------------------------------------------------------- | ------------------------------------ |
-| output    | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)   | IItemStack output of the recipe.     |
-| input     | [crafttweaker.api.item.IIngredient](/vanilla/api/items/IIngredient) | IIngredient of the recipe to remove. |
+| Parameter | Type                                          | Description                          |
+| --------- | --------------------------------------------- | ------------------------------------ |
+| output    | [IItemStack](/vanilla/api/items/IItemStack)   | IItemStack output of the recipe.     |
+| input     | [IIngredient](/vanilla/api/items/IIngredient) | IIngredient of the recipe to remove. |
 
 
-
-## Properties
-
-| 名称            | Type   | Has Getter | Has Setter |
-| ------------- | ------ | ---------- | ---------- |
-| commandString | String | true       | false      |
 

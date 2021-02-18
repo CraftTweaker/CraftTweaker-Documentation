@@ -1,100 +1,107 @@
 # MCImmutableStringReader
 
-这个类由mod-id为`crafttweaker`的模组添加. 因此，如果要使用此功能，则需要安装此mod。
-
 ## 导入相关包
-如果遇到任何问题（例如强制转换数组），则可能需要导入软件包，因此，最好的方式就是导入包支持。
+
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
 ```zenscript
-craftminstruer.api.commands.custom.MCImmutableStringReader
+import crafttweaker.api.commands.custom.MCImmutableStringReader;
 ```
 
+
 ## 方法
+
 ### canRead
 
-Return type: boolean
+Return Type: boolean
 
 ```zenscript
+MCImmutableStringReader.canRead() as boolean
 myMCImmutableStringReader.canRead();
 ```
 
-
-Return type: boolean
+Return Type: boolean
 
 ```zenscript
-myMCImmutableStringReader.canReader.myMCenRetable(含有500个)；
+MCImmutableStringReader.canRead(arg0 as int) as boolean
 ```
 
 | 参数   | 类型  | 描述                      |
 | ---- | --- | ----------------------- |
-| arg0 | int | No description provided |
+| arg0 | int | No Description Provided |
 
 
 ### getCursor
 
-Return type: int
+Return Type: int
 
 ```zenscript
+MCImmutableStringReader.getCursor() as int
 myMCImmutableStringReader.getCursor();
 ```
 
 ### getRead
 
-Return type: String
+Return Type: string
 
 ```zenscript
+MCImmutableStringReader.getRead() as string
 myMCImmutableStringReader.getRead();
 ```
 
 ### 剩余时间
 
-Return type: String
+Return Type: string
 
 ```zenscript
+MCImmutableStringReader.getRemaining() as string
 myMCImmutableStringReader.getRemaining();
 ```
 
 ### getRemaining长度
 
-Return type: int
+Return Type: int
 
 ```zenscript
+MCImmutableStringReader.getRemainingLength() as int
 myMCImmutableStringReader.getRemainingLength();
 ```
 
 ### getString #获取字符串
 
-Return type: String
+Return Type: string
 
 ```zenscript
+MCImmutableStringReader.getString() as string
 myMCImmutableStringReader.getString();
 ```
 
 ### getTotalLength
 
-Return type: int
+Return Type: int
 
 ```zenscript
+MCImmutableStringReader.getTotalLength() as int
 myMCImmutableStringReader.getTotalLength();
 ```
 
 ### 宠物
 
-返回类型：字符
+Return Type: char
 
 ```zenscript
+MCImmutableStringReader.peek() as char
 myMCImmutableStringReader.peek();
 ```
 
-
-返回类型：字符
+Return Type: char
 
 ```zenscript
-myMCImmutableStringReader.peek(包含)
+MCImmutableStringReader.peek(arg0 as int) as char
 ```
 
 | 参数   | 类型  | 描述                      |
 | ---- | --- | ----------------------- |
-| arg0 | int | No description provided |
+| arg0 | int | No Description Provided |
 
 
 

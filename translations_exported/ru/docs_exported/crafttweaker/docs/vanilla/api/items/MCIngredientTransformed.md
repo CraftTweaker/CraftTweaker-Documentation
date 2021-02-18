@@ -1,119 +1,103 @@
-# MCIngredientпреобразован
-
-Этот класс был добавлен модом с mod-id `crafttweaker`. Так что если вы хотите использовать эту функцию, вам нужно установить этот мод.
+# MCIngredientTransformed&LT;T : IIngredient&GT;
 
 ## Импорт класса
-Вам может потребоваться импортировать пакет, если вы столкнетесь с какими-либо проблемами (например, с заливкой массива), так что лучше быть в безопасности, чем извиняться и добавлять импорт.
+
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
 ```zenscript
-crafttweaker.api.item.MCIngredientTransformed
+import crafttweaker.api.item.MCIngredientTransformed;
 ```
+
 
 ## Implemented Interfaces
-MCIngredientTransformed реализует следующие интерфейсы. That means any method available to them can also be used on this class.
-- [crafttweaker.api.brackets.CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
-- [crafttweaker.api.item.IIngredient](/vanilla/api/items/IIngredient)
+MCIngredientTransformed implements the following interfaces. That means all methods defined in these interfaces are also available in MCIngredientTransformed
+
+- [IIngredient](/vanilla/api/items/IIngredient)
+
+## Утилиты
+
+| Тип результата                       | Является неявным |
+| ------------------------------------ | ---------------- |
+| [IData](/vanilla/api/data/IData)     | true             |
+| [MapData](/vanilla/api/data/MapData) | true             |
 
 ## Methods
+
 ### anyDamage
 
-Тип возврата: [crafttweaker.api.item.MCIngredientConditioned](/vanilla/api/items/MCIngredientConditioned)&lt;[crafttweaker.api.item.IIngredient](/vanilla/api/items/IIngredient)&gt;
+Return Type: [MCIngredientConditioned](/vanilla/api/items/MCIngredientConditioned)&lt;[IIngredient](/vanilla/api/items/IIngredient)&gt;
 
 ```zenscript
-null.anyDamage();
+MCIngredientTransformed.anyDamage() as MCIngredientConditioned<IIngredient>
+myMCIngredientTransformed.anyDamage();
 ```
-
-### getRemainingItem
-
-When this ingredient stack is crafted, what will remain in the grid? Does not check if the stack matches though! Used e.g. in CrT's net.minecraft.item.crafting.ICraftingRecipe
-
-Return type: [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
-
-```zenscript
-null.getRemainingItem(стек как crafttweaker.api.item.IItemStack);
-null.getRemainingItem(<item:minecraft:iron_ingot>);
-```
-
-| Параметр | Тип                                                               | Description                               |
-| -------- | ----------------------------------------------------------------- | ----------------------------------------- |
-| stack    | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | The stack to provide for this ingredient. |
-
 
 ### matches
 
 Does the given stack match the ingredient?
 
-Return type: boolean
+Return Type: boolean
 
 ```zenscript
-null.matches(стек как crafttweaker.api.item.IItemStack);
-null.matches(<item:minecraft:iron_ingot>);
+MCIngredientTransformed.matches(stack as IItemStack) as boolean
+myMCIngredientTransformed.matches(<item:minecraft:iron_ingot>);
 ```
 
-| Параметр | Тип                                                               | Description        |
-| -------- | ----------------------------------------------------------------- | ------------------ |
-| stack    | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | The stack to check |
+| Параметр | Тип                                         | Description        |
+| -------- | ------------------------------------------- | ------------------ |
+| stack    | [IItemStack](/vanilla/api/items/IItemStack) | The stack to check |
 
 
-
-Return type: boolean
+Return Type: boolean
 
 ```zenscript
-myMCIngredientTransformed.matches(стек как crafttweaker.api.item.IItemStack, игнорировать как boolean);
+MCIngredientTransformed.matches(stack as IItemStack, ignoreDamage as boolean) as boolean
 ```
 
-| Параметр      | Тип                                                               | Description          |
-| ------------- | ----------------------------------------------------------------- | -------------------- |
-| stack         | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | Описание отсутствует |
-| Игнорирование | boolean                                                           | Описание отсутствует |
+| Параметр      | Тип                                         | Description             |
+| ------------- | ------------------------------------------- | ----------------------- |
+| stack         | [IItemStack](/vanilla/api/items/IItemStack) | No Description Provided |
+| Игнорирование | boolean                                     | No Description Provided |
 
 
 ### onlyDamaged
 
-Тип возврата: [crafttweaker.api.item.MCIngredientConditioned](/vanilla/api/items/MCIngredientConditioned)&lt;[crafttweaker.api.item.IIngredient](/vanilla/api/items/IIngredient)&gt;
+Return Type: [MCIngredientConditioned](/vanilla/api/items/MCIngredientConditioned)&lt;[IIngredient](/vanilla/api/items/IIngredient)&gt;
 
 ```zenscript
-null.onlyDamaged();
+MCIngredientTransformed.onlyDamaged() as MCIngredientConditioned<IIngredient>
+myMCIngredientTransformed.onlyDamaged();
 ```
 
 ### onlyIf
 
-Тип возврата: [crafttweaker.api.item.MCIngredientConditioned](/vanilla/api/items/MCIngredientConditioned)&lt;[crafttweaker.api.item.IIngredient](/vanilla/api/items/IIngredient)&gt;
+Return Type: [MCIngredientConditioned](/vanilla/api/items/MCIngredientConditioned)&lt;[IIngredient](/vanilla/api/items/IIngredient)&gt;
 
 ```zenscript
-null.onlyIf(uid как строка, функционировать как функция.Predicate<crafttweaker.api.item.IItemStack>);
+MCIngredientTransformed.onlyIf(uid as string, function as Predicate<IItemStack>) as MCIngredientConditioned<IIngredient>
 ```
 
-| Параметр | Тип                                                                                                     | Description          | IsOptional | Default Value |
-| -------- | ------------------------------------------------------------------------------------------------------- | -------------------- | ---------- | ------------- |
-| uid      | String                                                                                                  | Описание отсутствует | false      | `null`        |
-| function | function.Predicate&lt;[crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)&gt; | Описание отсутствует | true       | `null`        |
+| Параметр | Тип                                                                      | Description             | Optional | DefaultValue |
+| -------- | ------------------------------------------------------------------------ | ----------------------- | -------- | ------------ |
+| uid      | string                                                                   | No Description Provided | false    |              |
+| function | Predicate&lt;[IItemStack](/vanilla/api/items/IItemStack)&gt; | No Description Provided | true     |              |
+
+
+## Операторы
+
+### OR
+
+```zenscript
+myMCIngredientTransformed | other as IIngredient
+```
+
 
 
 
 ## Свойства
 
-| Название       | Тип                                                                                                            | Имеет Getter | Имеет Setter |
-| -------------- | -------------------------------------------------------------------------------------------------------------- | ------------ | ------------ |
-| baseIngredient | T                                                                                                              | true         | false        |
-| commandString  | String                                                                                                         | true         | false        |
-| items          | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)[]                                            | true         | false        |
-| трансформатор  | [crafttweaker.api.item.IIngredientTransformer](/vanilla/api/items/IIngredientTransformer)&lt;T&gt; | true         | false        |
-
-## Операторы
-### OR
-
-```zenscript
-<tag:ingotIron> | Другое как crafttweaker.api.item.IIngredient
-```
-
-| Параметр | Тип                                                                 | Description          |
-| -------- | ------------------------------------------------------------------- | -------------------- |
-| other    | [crafttweaker.api.item.IIngredient](/vanilla/api/items/IIngredient) | Описание отсутствует |
-
-## Утилиты
-
-| Тип результата                                             | Является неявным |
-| ---------------------------------------------------------- | ---------------- |
-| [crafttweaker.api.data.IData](/vanilla/api/data/IData)     | true             |
-| [crafttweaker.api.data.MapData](/vanilla/api/data/MapData) | true             |
+| Название       | Тип                                                                                      | Имеет Getter | Имеет Setter |
+| -------------- | ---------------------------------------------------------------------------------------- | ------------ | ------------ |
+| baseIngredient | T                                                                                        | true         | false        |
+| items          | [IItemStack](/vanilla/api/items/IItemStack)[]                                            | true         | false        |
+| трансформатор  | [IIngredientTransformer](/vanilla/api/items/IIngredientTransformer)&lt;T&gt; | true         | false        |
 

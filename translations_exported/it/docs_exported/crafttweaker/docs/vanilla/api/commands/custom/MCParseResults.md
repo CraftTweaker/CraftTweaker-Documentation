@@ -1,82 +1,88 @@
 # MCParseResults
 
-Questa classe è stata aggiunta da una mod con ID `crafttweaker`. Perciò, è necessario avere questa mod installata per poter utilizzare questa funzione.
-
 ## Importing the class
-Potrebbe essere necessario importare il pacchetto, se si incontrano dei problemi (come castare un vettore), quindi meglio essere sicuri e aggiungere la direttiva di importazione.
+
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
 ```zenscript
-crafttweaker.api.commands.custom.MCParseResults
+import crafttweaker.api.commands.custom.MCParseResults;
 ```
+
+
+## Caster
+
+| Tipo Risultato | Implicito |
+| -------------- | --------- |
+| string         | true      |
 
 ## Methods
+
 ### equals
 
-Return type: boolean
+Return Type: boolean
 
 ```zenscript
-myMCParseResults.equals(o come oggetto);
+MCParseResults.equals(o as Object) as boolean
 ```
 
-| Parameter | Type   | Description                 |
-| --------- | ------ | --------------------------- |
-| o         | Object | Nessuna descrizione fornita |
+| Parameter | Type   | Description             |
+| --------- | ------ | ----------------------- |
+| o         | Object | No Description Provided |
 
 
 ### getContext
 
-Tipo restituito: [crafttweaker.api.commands.custom.MCCommandContextBuilder](/vanilla/api/commands/custom/MCCommandContextBuilder)
+Return Type: [MCCommandContextBuilder](/vanilla/api/commands/custom/MCCommandContextBuilder)
 
 ```zenscript
+MCParseResults.getContext() as MCCommandContextBuilder
 myMCParseResults.getContext();
 ```
 
 ### getExceptions
 
-Tipo di restituzione: Eccezione[[crafttweaker.api.commands.custom.MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)]
+Return Type: Exception[[MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)]
 
 ```zenscript
+MCParseResults.getExceptions() as Exception[MCCommandNode]
 myMCParseResults.getExceptions();
 ```
 
 ### getReader
 
-Tipo restituito: [crafttweaker.api.commands.custom.MCImmutableStringReader](/vanilla/api/commands/custom/MCImmutableStringReader)
+Return Type: [MCImmutableStringReader](/vanilla/api/commands/custom/MCImmutableStringReader)
 
 ```zenscript
+MCParseResults.getReader() as MCImmutableStringReader
 myMCParseResults.getReader();
 ```
 
 ### hashCode
 
-Return type: int
+Return Type: int
 
 ```zenscript
+MCParseResults.hashCode() as int
 myMCParseResults.hashCode();
 ```
 
 ### toString
 
-Return type: String
+Return Type: string
 
 ```zenscript
+MCParseResults.toString() as string
 myMCParseResults.toString();
 ```
 
 
 ## Operators
+
 ### EQUALS
 
 ```zenscript
 myMCParseResults == o come oggetto
 ```
 
-| Parameter | Type   | Description                 |
-| --------- | ------ | --------------------------- |
-| o         | Object | Nessuna descrizione fornita |
 
-## Caster
 
-| Tipo Risultato | Implicito |
-| -------------- | --------- |
-| String         | true      |
 

@@ -1,25 +1,67 @@
 # MCBiome
 
-Этот класс был добавлен модом с mod-id `crafttweaker`. Так что если вы хотите использовать эту функцию, вам нужно установить этот мод.
-
 ## Импорт класса
-Вам может потребоваться импортировать пакет, если вы столкнетесь с какими-либо проблемами (например, с заливкой массива), так что лучше быть в безопасности, чем извиняться и добавлять импорт.
+
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
 ```zenscript
-crafttweaker.api.world.MCBiome
+import crafttweaker.api.world.MCBiome;
 ```
+
 
 ## Methods
-### getTemperature
 
-Тип возврата: число с плавающей точкой
+### doesSnowFreeze
+
+Return Type: boolean
 
 ```zenscript
-myMCBiome.getTemperature(pos as crafttweaker.api.util.BlockPos);
+MCBiome.doesSnowFreeze(world as MCWorld, pos as BlockPos) as boolean
 ```
 
-| Параметр | Тип                                                          | Description          |
-| -------- | ------------------------------------------------------------ | -------------------- |
-| pos      | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | Описание отсутствует |
+| Параметр | Тип                                    | Description             |
+| -------- | -------------------------------------- | ----------------------- |
+| world    | [MCWorld](/vanilla/api/world/MCWorld)  | No Description Provided |
+| pos      | [BlockPos](/vanilla/api/util/BlockPos) | No Description Provided |
+
+
+### doesWaterFreeze
+
+Return Type: boolean
+
+```zenscript
+MCBiome.doesWaterFreeze(world as MCWorld, pos as BlockPos) as boolean
+```
+
+| Параметр | Тип                                    | Description             |
+| -------- | -------------------------------------- | ----------------------- |
+| world    | [MCWorld](/vanilla/api/world/MCWorld)  | No Description Provided |
+| pos      | [BlockPos](/vanilla/api/util/BlockPos) | No Description Provided |
+
+
+Return Type: boolean
+
+```zenscript
+MCBiome.doesWaterFreeze(world as MCWorld, pos as BlockPos, mustBeAtEdge as boolean) as boolean
+```
+
+| Параметр     | Тип                                    | Description             |
+| ------------ | -------------------------------------- | ----------------------- |
+| world        | [MCWorld](/vanilla/api/world/MCWorld)  | No Description Provided |
+| pos          | [BlockPos](/vanilla/api/util/BlockPos) | No Description Provided |
+| mustBeAtEdge | boolean                                | No Description Provided |
+
+
+### getTemperature
+
+Return Type: float
+
+```zenscript
+MCBiome.getTemperature(pos as BlockPos) as float
+```
+
+| Параметр | Тип                                    | Description             |
+| -------- | -------------------------------------- | ----------------------- |
+| pos      | [BlockPos](/vanilla/api/util/BlockPos) | No Description Provided |
 
 
 
@@ -27,13 +69,13 @@ myMCBiome.getTemperature(pos as crafttweaker.api.util.BlockPos);
 
 | Название       | Тип     | Имеет Getter | Имеет Setter |
 | -------------- | ------- | ------------ | ------------ |
-| category       | String  | true         | false        |
+| category       | string  | true         | false        |
 | depth          | float   | true         | false        |
 | doesRain       | boolean | true         | false        |
 | doesSnow       | boolean | true         | false        |
 | downfall       | float   | true         | false        |
 | isHighHumidity | boolean | true         | false        |
-| rainType       | String  | true         | false        |
+| rainType       | string  | true         | false        |
 | scale          | float   | true         | false        |
 | waterColor     | int     | true         | false        |
 | waterFogColor  | int     | true         | false        |

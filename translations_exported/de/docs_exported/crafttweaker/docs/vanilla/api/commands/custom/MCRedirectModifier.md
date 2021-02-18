@@ -1,81 +1,87 @@
 # MCRedirectModifizierer
 
-This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
-
 ## Diese Klasse importieren
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
 ```zenscript
-crafttweaker.api.commands.custom.MCRedirectModifier
+import crafttweaker.api.commands.custom.MCRedirectModifier;
 ```
+
 
 ## Constructors
+
+No Description Provided
 ```zenscript
-new crafttweaker.api.commands.custom.MCRedirectModifier(fun as function.Function<crafttweaker.api.commands.custom.MCCommandContext, Collection<crafttweaker.api.commands.custom.MCCommandSource>>);
+new MCRedirectModifier(fun as Function<MCCommandContext,Collection<MCCommandSource>>) as MCRedirectModifier
 ```
-| Parameter | Type                                                                                                                                                                                                                                                                  | Beschreibung            |
-| --------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------- |
-| lustig    | function.Function&lt;[crafttweaker.api.commands.custom.MCCommandContext](/vanilla/api/commands/custom/MCCommandContext), Sammlung&lt;[crafttweaker.api.commands.custom.MCCommandSource](/vanilla/api/commands/custom/MCCommandSource)&gt;&gt; | No description provided |
+
+| Parameter | Type                                                                                                                                                                                        | Beschreibung            |
+| --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------- |
+| lustig    | Function&lt;[MCCommandContext](/vanilla/api/commands/custom/MCCommandContext),Collection&lt;[MCCommandSource](/vanilla/api/commands/custom/MCCommandSource)&gt;&gt; | No Description Provided |
 
 
+
+## Casters
+
+| Result type | Is Implicit |
+| ----------- | ----------- |
+| string      | true        |
 
 ## Methoden
+
 ### bewerben
 
-Typ zurückgeben: Sammlung&lt;[crafttweaker.api.commands.custom.MCCommandSource](/vanilla/api/commands/custom/MCCommandSource)&gt;
+Return Type: Collection&lt;[MCCommandSource](/vanilla/api/commands/custom/MCCommandSource)&gt;
 
 ```zenscript
-myMCRedirectModifier.apply(Kontext als crafttweaker.api.commands.custom.MCCommandContext);
+MCRedirectModifier.apply(context as MCCommandContext) as Collection<MCCommandSource>
 ```
 
-| Parameter | Type                                                                                               | Beschreibung            |
-| --------- | -------------------------------------------------------------------------------------------------- | ----------------------- |
-| kontext   | [crafttweaker.api.commands.custom.MCCommandContext](/vanilla/api/commands/custom/MCCommandContext) | No description provided |
+| Parameter | Type                                                              | Beschreibung            |
+| --------- | ----------------------------------------------------------------- | ----------------------- |
+| kontext   | [MCCommandContext](/vanilla/api/commands/custom/MCCommandContext) | No Description Provided |
 
 
 ### equals
 
-Return type: boolean
+Return Type: boolean
 
 ```zenscript
-myMCRedirectModifier.equals(o als Objekt);
+MCRedirectModifier.equals(o as Object) as boolean
 ```
 
 | Parameter | Type   | Beschreibung            |
 | --------- | ------ | ----------------------- |
-| o         | Object | No description provided |
+| o         | Object | No Description Provided |
 
 
 ### hashCode
 
-Return type: int
+Return Type: int
 
 ```zenscript
+MCRedirectModifier.hashCode() as int
 myMCRedirectModifier.hashCode();
 ```
 
 ### toString
 
-Return type: String
+Return Type: string
 
 ```zenscript
+MCRedirectModifier.toString() as string
 myMCRedirectModifier.toString();
 ```
 
 
 ## Operatoren
+
 ### EQUALS
 
 ```zenscript
 myMCRedirectModifier == o als Objekt
 ```
 
-| Parameter | Type   | Beschreibung            |
-| --------- | ------ | ----------------------- |
-| o         | Object | No description provided |
 
-## Casters
 
-| Result type | Is Implicit |
-| ----------- | ----------- |
-| String      | true        |
 

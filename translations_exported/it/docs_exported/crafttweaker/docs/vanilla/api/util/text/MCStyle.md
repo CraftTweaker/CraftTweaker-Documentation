@@ -1,267 +1,269 @@
 # MCStyle
 
-Questa classe è stata aggiunta da una mod con ID `crafttweaker`. Perciò, è necessario avere questa mod installata per poter utilizzare questa funzione.
-
 ## Importing the class
-Potrebbe essere necessario importare il pacchetto, se si incontrano dei problemi (come castare un vettore), quindi meglio essere sicuri e aggiungere la direttiva di importazione.
+
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
 ```zenscript
-crafttweaker.api.util.text.MCStyle
+import crafttweaker.api.util.text.MCStyle;
 ```
+
 
 ## Constructors
+
+No Description Provided
 ```zenscript
-new crafttweaker.api.util.text.MCStyle();
+new MCStyle() as MCStyle
+new MCStyle();
 ```
+
 
 ## Methods
+
 ### equals
 
-Return type: boolean
+Return Type: boolean
 
 ```zenscript
-myMCStyle.equals(altro come oggetto);
+MCStyle.equals(other as Object) as boolean
 ```
 
-| Parameter | Type   | Description                 |
-| --------- | ------ | --------------------------- |
-| other     | Object | Nessuna descrizione fornita |
+| Parameter | Type   | Description             |
+| --------- | ------ | ----------------------- |
+| other     | Object | No Description Provided |
 
 
 ### getBold
 
-Return type: boolean
+Return Type: boolean
 
 ```zenscript
+MCStyle.getBold() as boolean
 myMCStyle.getBold();
 ```
 
 ### getFontId
 
-Tipo di restituzione: [crafttweaker.api.util.MCResourceLocation](/vanilla/api/util/MCResourceLocation)
+Return Type: [MCResourceLocation](/vanilla/api/util/MCResourceLocation)
 
 ```zenscript
+MCStyle.getFontId() as MCResourceLocation
 myMCStyle.getFontId();
 ```
 
 ### getInserzione
 
-Return type: String
+Return Type: string
 
 ```zenscript
+MCStyle.getInsertion() as string
 myMCStyle.getInsertion();
 ```
 
 ### getItalic
 
-Return type: boolean
+Return Type: boolean
 
 ```zenscript
+MCStyle.getItalic() as boolean
 myMCStyle.getItalic();
 ```
 
 ### getObfuscated
 
-Return type: boolean
+Return Type: boolean
 
 ```zenscript
+MCStyle.getObfuscated() as boolean
 myMCStyle.getObfuscated();
 ```
 
 ### getStrikethrough
 
-Return type: boolean
+Return Type: boolean
 
 ```zenscript
+MCStyle.getStrikethrough() as boolean
 myMCStyle.getStrikethrough();
 ```
 
 ### ottoSottolineato
 
-Return type: boolean
+Return Type: boolean
 
 ```zenscript
+MCStyle.getUnderlined() as boolean
 myMCStyle.getUnderlined();
 ```
 
 ### hashCode
 
-Return type: int
+Return Type: int
 
 ```zenscript
+MCStyle.hashCode() as int
 myMCStyle.hashCode();
 ```
 
 ### isEmpty
 
-Se questo stile è vuoto (eredita tutto dal genitore).
+Whether or not this style is empty (inherits everything from the parent).
 
-Return type: boolean
+Return Type: boolean
 
 ```zenscript
+MCStyle.isEmpty() as boolean
 myMCStyle.isEmpty();
 ```
 
 ### mergeStyle
 
-Tipo di restituzione: [crafttweaker.api.util.text.MCStyle](/vanilla/api/util/text/MCStyle)
+Return Type: [MCStyle](/vanilla/api/util/text/MCStyle)
 
 ```zenscript
-myMCStyle.mergeStyle(stile come crafttweaker.api.util.text.MCStyle);
+MCStyle.mergeStyle(style as MCStyle) as MCStyle
 ```
 
-| Parameter | Type                                                                 | Description                 |
-| --------- | -------------------------------------------------------------------- | --------------------------- |
-| stile     | [crafttweaker.api.util.text.MCStyle](/vanilla/api/util/text/MCStyle) | Nessuna descrizione fornita |
+| Parameter | Type                                      | Description             |
+| --------- | ----------------------------------------- | ----------------------- |
+| stile     | [MCStyle](/vanilla/api/util/text/MCStyle) | No Description Provided |
 
 
 ### setGrassetto
 
-Tipo di restituzione: [crafttweaker.api.util.text.MCStyle](/vanilla/api/util/text/MCStyle)
+Return Type: [MCStyle](/vanilla/api/util/text/MCStyle)
 
 ```zenscript
-myMCStyle.setBold(boldIn come Boolean);
+MCStyle.setBold(boldIn as Boolean) as MCStyle
 ```
 
-| Parameter | Type    | Description                 |
-| --------- | ------- | --------------------------- |
-| boldIn    | Boolean | Nessuna descrizione fornita |
+| Parameter | Type    | Description             |
+| --------- | ------- | ----------------------- |
+| boldIn    | Boolean | No Description Provided |
 
 
 ### setColor
 
-Tipo di restituzione: [crafttweaker.api.util.text.MCStyle](/vanilla/api/util/text/MCStyle)
+Return Type: [MCStyle](/vanilla/api/util/text/MCStyle)
 
 ```zenscript
-myMCStyle.setColor(formattazione come crafttweaker.api.text.TextFormatting);
+MCStyle.setColor(colour as int) as MCStyle
 ```
 
-| Parameter     | Type                                                                          | Description                 |
-| ------------- | ----------------------------------------------------------------------------- | --------------------------- |
-| formattazione | [crafttweaker.api.text.TextFormatting](/vanilla/api/util/text/TextFormatting) | Nessuna descrizione fornita |
+| Parameter | Type | Description             |
+| --------- | ---- | ----------------------- |
+| colour    | int  | No Description Provided |
 
 
-
-Tipo di restituzione: [crafttweaker.api.util.text.MCStyle](/vanilla/api/util/text/MCStyle)
+Return Type: [MCStyle](/vanilla/api/util/text/MCStyle)
 
 ```zenscript
-myMCStyle.setColor(colore come int);
+MCStyle.setColor(formatting as TextFormatting) as MCStyle
 ```
 
-| Parameter | Type | Description                 |
-| --------- | ---- | --------------------------- |
-| colore    | int  | Nessuna descrizione fornita |
+| Parameter     | Type                                                    | Description             |
+| ------------- | ------------------------------------------------------- | ----------------------- |
+| formattazione | [TextFormatting](/vanilla/api/util/text/TextFormatting) | No Description Provided |
 
 
 ### setFontId
 
-Tipo di restituzione: [crafttweaker.api.util.text.MCStyle](/vanilla/api/util/text/MCStyle)
+Return Type: [MCStyle](/vanilla/api/util/text/MCStyle)
 
 ```zenscript
-myMCStyle.setFontId(posizione come crafttweaker.api.util.MCResourceLocation);
+MCStyle.setFontId(location as MCResourceLocation) as MCStyle
 ```
 
-| Parameter | Type                                                                             | Description                 |
-| --------- | -------------------------------------------------------------------------------- | --------------------------- |
-| posizione | [crafttweaker.api.util.MCResourceLocation](/vanilla/api/util/MCResourceLocation) | Nessuna descrizione fornita |
+| Parameter | Type                                                       | Description             |
+| --------- | ---------------------------------------------------------- | ----------------------- |
+| posizione | [MCResourceLocation](/vanilla/api/util/MCResourceLocation) | No Description Provided |
 
 
 ### setFormatting
 
-Tipo di restituzione: [crafttweaker.api.util.text.MCStyle](/vanilla/api/util/text/MCStyle)
+Return Type: [MCStyle](/vanilla/api/util/text/MCStyle)
 
 ```zenscript
-myMCStyle.setFormatting(formattazione come crafttweaker.api.text.TextFormatting);
+MCStyle.setFormatting(formatting as TextFormatting) as MCStyle
 ```
 
-| Parameter     | Type                                                                          | Description                 |
-| ------------- | ----------------------------------------------------------------------------- | --------------------------- |
-| formattazione | [crafttweaker.api.text.TextFormatting](/vanilla/api/util/text/TextFormatting) | Nessuna descrizione fornita |
+| Parameter     | Type                                                    | Description             |
+| ------------- | ------------------------------------------------------- | ----------------------- |
+| formattazione | [TextFormatting](/vanilla/api/util/text/TextFormatting) | No Description Provided |
 
 
 ### setInserzione
 
-Imposta un testo da inserire nella chat quando si fa clic su un componente
+Set a text to be inserted into Chat when the component is shift-clicked
 
-Tipo di restituzione: [crafttweaker.api.util.text.MCStyle](/vanilla/api/util/text/MCStyle)
+Return Type: [MCStyle](/vanilla/api/util/text/MCStyle)
 
 ```zenscript
-myMCStyle.setInsertion(inserzione come stringa);
+MCStyle.setInsertion(insertion as string) as MCStyle
 ```
 
-| Parameter   | Type   | Description                 |
-| ----------- | ------ | --------------------------- |
-| inserimento | String | Nessuna descrizione fornita |
+| Parameter   | Type   | Description             |
+| ----------- | ------ | ----------------------- |
+| inserimento | string | No Description Provided |
 
 
 ### setItalic
 
-Tipo di restituzione: [crafttweaker.api.util.text.MCStyle](/vanilla/api/util/text/MCStyle)
+Return Type: [MCStyle](/vanilla/api/util/text/MCStyle)
 
 ```zenscript
-myMCStyle.setItalic(corsivo come Boolean);
+MCStyle.setItalic(italic as Boolean) as MCStyle
 ```
 
-| Parameter | Type    | Description                 |
-| --------- | ------- | --------------------------- |
-| italic    | Boolean | Nessuna descrizione fornita |
+| Parameter | Type    | Description             |
+| --------- | ------- | ----------------------- |
+| italic    | Boolean | No Description Provided |
 
 
 ### setObfuscato
 
-Tipo di restituzione: [crafttweaker.api.util.text.MCStyle](/vanilla/api/util/text/MCStyle)
+Return Type: [MCStyle](/vanilla/api/util/text/MCStyle)
 
 ```zenscript
-myMCStyle.setObfuscated(offuscato come Boolean);
+MCStyle.setObfuscated(obfuscated as Boolean) as MCStyle
 ```
 
-| Parameter  | Type    | Description                 |
-| ---------- | ------- | --------------------------- |
-| obfuscated | Boolean | Nessuna descrizione fornita |
+| Parameter  | Type    | Description             |
+| ---------- | ------- | ----------------------- |
+| obfuscated | Boolean | No Description Provided |
 
 
 ### setStrikethrough
 
-Tipo di restituzione: [crafttweaker.api.util.text.MCStyle](/vanilla/api/util/text/MCStyle)
+Return Type: [MCStyle](/vanilla/api/util/text/MCStyle)
 
 ```zenscript
-myMCStyle.setStrikethrough(strikethrough come Boolean);
+MCStyle.setStrikethrough(strikethrough as Boolean) as MCStyle
 ```
 
-| Parameter     | Type    | Description                 |
-| ------------- | ------- | --------------------------- |
-| strikethrough | Boolean | Nessuna descrizione fornita |
+| Parameter     | Type    | Description             |
+| ------------- | ------- | ----------------------- |
+| strikethrough | Boolean | No Description Provided |
 
 
 ### setSottolineato
 
-Tipo di restituzione: [crafttweaker.api.util.text.MCStyle](/vanilla/api/util/text/MCStyle)
+Return Type: [MCStyle](/vanilla/api/util/text/MCStyle)
 
 ```zenscript
-myMCStyle.setUnderlined(sottolineato come Boolean);
+MCStyle.setUnderlined(underlined as Boolean) as MCStyle
 ```
 
-| Parameter    | Type    | Description                 |
-| ------------ | ------- | --------------------------- |
-| sottolineato | Boolean | Nessuna descrizione fornita |
-
-
-
-Tipo di restituzione: [crafttweaker.api.util.text.MCStyle](/vanilla/api/util/text/MCStyle)
-
-```zenscript
-myMCStyle.setUnderlined(sottolineato come boolean);
-```
-
-| Parameter    | Type    | Description                 |
-| ------------ | ------- | --------------------------- |
-| sottolineato | boolean | Nessuna descrizione fornita |
+| Parameter    | Type    | Description             |
+| ------------ | ------- | ----------------------- |
+| sottolineato | Boolean | No Description Provided |
 
 
 ### toString
 
-Return type: String
+Return Type: string
 
 ```zenscript
+MCStyle.toString() as string
 myMCStyle.toString();
 ```
 

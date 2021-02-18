@@ -1,257 +1,189 @@
-# MCTag
+# MCTag&LT;T : Object&GT;
 
-Questa classe è stata aggiunta da una mod con ID `crafttweaker`. Perciò, è necessario avere questa mod installata per poter utilizzare questa funzione.
+A reference to a Tag object. Note that this tag may not exist in the game already, such as when you create new tags. See the [MCTag](/vanilla/api/tags/MCTag)&lt;T&gt;#exists() Method on whether or not this tag already exists. <p> A tag will be created as soon as you add
 
 ## Importing the class
-Potrebbe essere necessario importare il pacchetto, se si incontrano dei problemi (come castare un vettore), quindi meglio essere sicuri e aggiungere la direttiva di importazione.
+
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
 ```zenscript
-crafttweaker.api.tag.MCTag
+import crafttweaker.api.tag.MCTag;
 ```
+
 
 ## Interfacce Implementate
-MCTag implements the following interfaces. Ciò significa che ogni metodo presente nell'interfaccia può essere usato anche per questa classe.
-- [crafttweaker.api.brackets.CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
-- [crafttweaker.api.item.IIngredient](/vanilla/api/items/IIngredient)
+MCTag implements the following interfaces. That means all methods defined in these interfaces are also available in MCTag
+
+- [CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
+
+## Caster
+
+| Tipo Risultato                                                            | Implicito |
+| ------------------------------------------------------------------------- | --------- |
+| [MCTagWithAmount](/vanilla/api/tags/MCTagWithAmount)&lt;T&gt; | true      |
+| string                                                                    | true      |
 
 ## Methods
-### addBlocks
+
+### add
+
+Adds the given items to the tag. Creates the tag if it does not exist.
+
+Return Type: void
 
 ```zenscript
-myMCTag.addBlocks(blocks as crafttweaker.api.block.MCBlock[]);
+MCTag.add(items as stdlib.List<T>) as void
 ```
 
-| Parameter | Type                                                            | Description                 |
-| --------- | --------------------------------------------------------------- | --------------------------- |
-| blocks    | [crafttweaker.api.block.MCBlock](/vanilla/api/blocks/MCBlock)[] | Nessuna descrizione fornita |
+| Parameter | Type                             | Description                         |
+| --------- | -------------------------------- | ----------------------------------- |
+| items     | stdlib.List&lt;T&gt; | The items to add. Provided as list. |
 
 
-### addEntityTypes
+Adds the given items to the tag. Creates the tag if it does not exist.
+
+Return Type: void
 
 ```zenscript
-myMCTag.addEntityTypes(entities as crafttweaker.api.entity.MCEntityType[]);
+MCTag.add(items as T[]) as void
+<tag:items:forge:gems>.add(<item:minecraft:bedrock>);
+<tag:items:forge:gems>.add(<item:minecraft:iron_ingot>, <item:minecraft:gold_ingot>);
+<tag:items:forge:gems>.add([<item:minecraft:iron_ingot>, <item:minecraft:gold_ingot>]);
 ```
 
-| Parameter | Type                                                                         | Description                 |
-| --------- | ---------------------------------------------------------------------------- | --------------------------- |
-| entities  | [crafttweaker.api.entity.MCEntityType](/vanilla/api/entities/MCEntityType)[] | Nessuna descrizione fornita |
+| Parameter | Type | Description                                 |
+| --------- | ---- | ------------------------------------------- |
+| items     | T[]  | The items to add. Can be one or more items. |
 
 
-### addFluids
+### asTagWithAmount
+
+Return Type: [MCTagWithAmount](/vanilla/api/tags/MCTagWithAmount)&lt;T&gt;
 
 ```zenscript
-myMCTag.addFluids(fluidi come crafttweaker.api.fluid.MCFluid[]);
+MCTag.asTagWithAmount() as MCTagWithAmount<T>
+<tag:items:forge:gems>.asTagWithAmount();
 ```
 
-| Parameter | Type                                                           | Description                 |
-| --------- | -------------------------------------------------------------- | --------------------------- |
-| fluids    | [crafttweaker.api.fluid.MCFluid](/vanilla/api/fluid/MCFluid)[] | Nessuna descrizione fornita |
+### contains
 
-
-### addItems
-
-Aggiunge elementi a questo tag, fallirà se questo non è un tag che può contenere oggetti
+Return Type: boolean
 
 ```zenscript
-myMCTag.addItems(items as crafttweaker.api.item.IItemStack[]);
-myMCTag.addItems(<item:minecraft:dirt>);
+MCTag.contains(element as T) as boolean
 ```
 
-| Parameter | Type                                                                | Description                   |
-| --------- | ------------------------------------------------------------------- | ----------------------------- |
-| items     | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)[] | Elementi da aggiungere al tag |
+| Parameter | Type | Description             |
+| --------- | ---- | ----------------------- |
+| element   | T    | No Description Provided |
 
 
-### anyDamage
+### exists
 
-Tipo di restituzione: [crafttweaker.api.item.MCIngredientConditioned](/vanilla/api/items/MCIngredientConditioned)&lt;[crafttweaker.api.item.IIngredient](/vanilla/api/items/IIngredient)&gt;
+Return Type: boolean
 
 ```zenscript
-null.anyDamage();
+MCTag.exists() as boolean
+<tag:items:forge:gems>.exists();
 ```
 
-### createBlockTag
+### getElements
 
-Tipo di restituzione: [crafttweaker.api.tag.MCTag](/vanilla/api/tags/MCTag)
+Return Type: stdlib.List&lt;T&gt;
 
 ```zenscript
-myMCTag.createBlockTag();
+MCTag.getElements() as stdlib.List<T>
+<tag:items:forge:gems>.getElements();
 ```
 
-### createEntityTypeTag
+### getId
 
-Tipo di restituzione: [crafttweaker.api.tag.MCTag](/vanilla/api/tags/MCTag)
+Return Type: [MCResourceLocation](/vanilla/api/util/MCResourceLocation)
 
 ```zenscript
-myMCTag.createEntityTypeTag();
+MCTag.getId() as MCResourceLocation
+<tag:items:forge:gems>.getId();
 ```
 
-### createFluidTag
+### getManager
 
-Tipo di restituzione: [crafttweaker.api.tag.MCTag](/vanilla/api/tags/MCTag)
+Return Type: [TagManager](/vanilla/api/tags/TagManager)&lt;T&gt;
 
 ```zenscript
-myMCTag.createFluidTag();
+MCTag.getManager() as TagManager<T>
+<tag:items:forge:gems>.getManager();
 ```
 
-### createItemTag
+### remove
 
-Tipo di restituzione: [crafttweaker.api.tag.MCTag](/vanilla/api/tags/MCTag)
+Return Type: void
 
 ```zenscript
-myMCTag.createItemTag();
+MCTag.remove(items as stdlib.List<T>) as void
 ```
 
-### getRemainingItem
+| Parameter | Type                             | Description             |
+| --------- | -------------------------------- | ----------------------- |
+| items     | stdlib.List&lt;T&gt; | No Description Provided |
 
-When this ingredient stack is crafted, what will remain in the grid? Does not check if the stack matches though! Used e.g. in CrT's net.minecraft.item.crafting.ICraftingRecipe
 
-Return type: [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
+Return Type: void
 
 ```zenscript
-null.getRemainingItem(stack as crafttweaker.api.item.IItemStack);
-null.getRemainingItem(<item:minecraft:iron_ingot>);
+MCTag.remove(items as T[]) as void
 ```
 
-| Parameter | Type                                                              | Description                               |
-| --------- | ----------------------------------------------------------------- | ----------------------------------------- |
-| stack     | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | The stack to provide for this ingredient. |
+| Parameter | Type | Description             |
+| --------- | ---- | ----------------------- |
+| items     | T[]  | No Description Provided |
 
 
-### matches
+### withAmount
 
-Does the given stack match the ingredient?
-
-Return type: boolean
+Return Type: [MCTagWithAmount](/vanilla/api/tags/MCTagWithAmount)&lt;T&gt;
 
 ```zenscript
-null.matches(stack as crafttweaker.api.item.IItemStack);
-null.matches(<item:minecraft:iron_ingot>);
+MCTag.withAmount(amount as int) as MCTagWithAmount<T>
 ```
 
-| Parameter | Type                                                              | Description        |
-| --------- | ----------------------------------------------------------------- | ------------------ |
-| stack     | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | The stack to check |
+| Parameter | Type | Description             |
+| --------- | ---- | ----------------------- |
+| amount    | int  | No Description Provided |
 
 
 
-Does the given stack match the ingredient?
+## Operators
 
-Return type: boolean
+### CONTAINS
 
 ```zenscript
-null.matches(stack as crafttweaker.api.item.IItemStack, ignoreDamage as boolean);
+element as T in myMCTag
 ```
 
-| Parameter   | Type                                                              | Description                            |
-| ----------- | ----------------------------------------------------------------- | -------------------------------------- |
-| stack       | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | The stack to check                     |
-| ignoreDanno | boolean                                                           | I danni dovrebbero essere controllati? |
 
 
-### onlyDamaged
-
-Tipo di restituzione: [crafttweaker.api.item.MCIngredientConditioned](/vanilla/api/items/MCIngredientConditioned)&lt;[crafttweaker.api.item.IIngredient](/vanilla/api/items/IIngredient)&gt;
+### EQUALS
 
 ```zenscript
-null.onlyDamaged();
+myMCTag == other as MCTag<T>
 ```
 
-### onlyIf
 
-Tipo di restituzione: [crafttweaker.api.item.MCIngredientConditioned](/vanilla/api/items/MCIngredientConditioned)&lt;[crafttweaker.api.item.IIngredient](/vanilla/api/items/IIngredient)&gt;
+
+### MUL
 
 ```zenscript
-null.onlyIf(uid as String, function as function.Predicate<crafttweaker.api.item.IItemStack>);
+myMCTag * amount as int
 ```
 
-| Parameter | Type                                                                                                    | Description                 | IsOptional | Default Value |
-| --------- | ------------------------------------------------------------------------------------------------------- | --------------------------- | ---------- | ------------- |
-| uid       | String                                                                                                  | Nessuna descrizione fornita | false      | `null`        |
-| function  | function.Predicate&lt;[crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)&gt; | Nessuna descrizione fornita | true       | `null`        |
-
-
-### removeBlocks
-
-```zenscript
-myMCTag.removeBlocks(blocks as crafttweaker.api.block.MCBlock[]);
-```
-
-| Parameter | Type                                                            | Description                 |
-| --------- | --------------------------------------------------------------- | --------------------------- |
-| blocks    | [crafttweaker.api.block.MCBlock](/vanilla/api/blocks/MCBlock)[] | Nessuna descrizione fornita |
-
-
-### removeEntityTypes
-
-```zenscript
-myMCTag.removeEntityTypes(entities as crafttweaker.api.entity.MCEntityType[]);
-```
-
-| Parameter | Type                                                                         | Description                 |
-| --------- | ---------------------------------------------------------------------------- | --------------------------- |
-| entities  | [crafttweaker.api.entity.MCEntityType](/vanilla/api/entities/MCEntityType)[] | Nessuna descrizione fornita |
-
-
-### removeFluidi
-
-```zenscript
-myMCTag.removeFluidi(fluidi come crafttweaker.api.fluid.MCFluid[]);
-```
-
-| Parameter | Type                                                           | Description                 |
-| --------- | -------------------------------------------------------------- | --------------------------- |
-| fluids    | [crafttweaker.api.fluid.MCFluid](/vanilla/api/fluid/MCFluid)[] | Nessuna descrizione fornita |
-
-
-### removeItems
-
-rimuove gli elementi da questo tag, fallirà se questo non è un tag che può contenere oggetti
-
-```zenscript
-myMCTag.removeItems(items as crafttweaker.api.item.IItemStack[]);
-myMCTag.removeItems(<item:minecraft:dirt>);
-```
-
-| Parameter | Type                                                                | Description                  |
-| --------- | ------------------------------------------------------------------- | ---------------------------- |
-| items     | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)[] | Oggetti da rimuovere dal tag |
 
 
 
 ## Properties
 
-| Name            | Type                                                                             | Ha Getter | Ha Setter |
-| --------------- | -------------------------------------------------------------------------------- | --------- | --------- |
-| blocks          | [crafttweaker.api.block.MCBlock](/vanilla/api/blocks/MCBlock)[]                  | true      | false     |
-| commandString   | String                                                                           | true      | false     |
-| entityTypes     | [crafttweaker.api.entity.MCEntityType](/vanilla/api/entities/MCEntityType)[]     | true      | false     |
-| firstBlock      | [crafttweaker.api.block.MCBlock](/vanilla/api/blocks/MCBlock)                    | true      | false     |
-| firstEntityType | [crafttweaker.api.entity.MCEntityType](/vanilla/api/entities/MCEntityType)       | true      | false     |
-| primaFluido     | [crafttweaker.api.fluid.MCFluid](/vanilla/api/fluid/MCFluid)                     | true      | false     |
-| firstItem       | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)                | true      | false     |
-| fluids          | [crafttweaker.api.fluid.MCFluid](/vanilla/api/fluid/MCFluid)[]                   | true      | false     |
-| id              | [crafttweaker.api.util.MCResourceLocation](/vanilla/api/util/MCResourceLocation) | true      | false     |
-| isBlockTag      | boolean                                                                          | true      | false     |
-| isEntityTypeTag | boolean                                                                          | true      | false     |
-| isFluidTag      | boolean                                                                          | true      | false     |
-| isItemTag       | boolean                                                                          | true      | false     |
-| items           | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)[]              | true      | false     |
-
-## Operators
-### OR
-
-```zenscript
-<tag:ingotIron> <unk> altro come crafttweaker.api.item.IIngredient
-```
-
-| Parameter | Type                                                                | Description                 |
-| --------- | ------------------------------------------------------------------- | --------------------------- |
-| other     | [crafttweaker.api.item.IIngredient](/vanilla/api/items/IIngredient) | Nessuna descrizione fornita |
-
-## Caster
-
-| Tipo Risultato                                             | Implicito |
-| ---------------------------------------------------------- | --------- |
-| [crafttweaker.api.data.IData](/vanilla/api/data/IData)     | true      |
-| [crafttweaker.api.data.MapData](/vanilla/api/data/MapData) | true      |
+| Name     | Type                                                            | Ha Getter | Ha Setter |
+| -------- | --------------------------------------------------------------- | --------- | --------- |
+| elements | stdlib.List&lt;T&gt;                                | true      | false     |
+| exists   | boolean                                                         | true      | false     |
+| id       | [MCResourceLocation](/vanilla/api/util/MCResourceLocation)      | true      | false     |
+| manager  | [TagManager](/vanilla/api/tags/TagManager)&lt;T&gt; | true      | false     |
 

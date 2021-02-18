@@ -1,147 +1,126 @@
 # IData
 
-IData接口是处理NBT等数据的通用接口。 您可以将所有原始数据 (短数据, 双精度数据, 字符串数据, 整型数据, ...) 以及某些数组转换为IData。 请记住，尽管它们提供相似的功能，但IData及其对应的对象却并不相同，这就是为什么将其称为DataType（例如 crafttweaker.api.data.ByteData </ 0>）。</p> 
-
-这个类由mod-id为`crafttweaker`的模组添加. 因此，如果要使用此功能，则需要安装此mod。
-
-
+IData接口是处理NBT等数据的通用接口。 您可以将所有原始数据 (短数据, 双精度数据, 字符串数据, 整型数据, ...) 以及某些数组转换为IData。 Remember that while they offer similar features, IData and their counterparts are NOT the same, which is why they will be referred to as DataTypes (e.g. [ByteData](/vanilla/api/data/ByteData)).
 
 ## 导入相关包
 
-如果遇到任何问题（例如强制转换数组），则可能需要导入软件包，因此，最好的方式就是导入包支持。  
-
-
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
 ```zenscript
-crafttweaker.api.data.IData
+import crafttweaker.api.data.IData;
 ```
 
 
+## Casters
 
+| 结果类型                                                        | 是否隐藏  |
+| ----------------------------------------------------------- | ----- |
+| [ICollectionData #所收集数据](/vanilla/api/data/ICollectionData) | false |
+| [INumberData #编号数据](/vanilla/api/data/INumberData)          | false |
 
 ## 方法
 
+### asCollection
+
+Return Type: [ICollectionData](/vanilla/api/data/ICollectionData)
+
+```zenscript
+IData.asCollection() as ICollectionData
+{Display: {lore: ["Hello", "World"]}}.asCollection();
+```
 
 ### asList #作为列表
 
-获取列表<IData> IData的表示形式，对 crafttweaker.api.data.ListData </ 0>以外的任何内容返回null。</p> 
+获取列表<IData> representation of this IData, returns null on anything but [ListData](/vanilla/api/data/ListData).
 
-如果IData值不是一个列表的话则返回值null
-
-返回类型：列表&lt;[craftminstrer.api.data.IData](/vanilla/api/data/IData)&gt;
-
-
+Return Type: stdlib.List&lt;[IData](/vanilla/api/data/IData)&gt;
 
 ```zenscript
-myIData.asList();
+IData.asList() as stdlib.List<IData>
+{Display: {lore: ["Hello", "World"]}}.asList();
 ```
-
-
-
 
 ### asMap #作为地图数据
 
-获取此IData的Map <String, IData>表示形式，对 crafttweaker.api.data.MapData </ 1>以外的任何内容返回null。</p> 
+Gets a Map<String, IData> representation of this IData, returns null on anything but [MapData](/vanilla/api/data/MapData).
 
-如果IData值不是一个地图数据的话则返回值null
-
-返回类型： [craftbiner.api.data.IData](/vanilla/api/data/IData)[String]
-
-
+Return Type: [IData](/vanilla/api/data/IData)[string]
 
 ```zenscript
-myIData.asMap();
+IData.asMap() as IData[string]
+{Display: {lore: ["Hello", "World"]}}.asMap();
 ```
 
+### asNumber
 
+Return Type: [INumberData](/vanilla/api/data/INumberData)
 
+```zenscript
+IData.asNumber() as INumberData
+{Display: {lore: ["Hello", "World"]}}.asNumber();
+```
 
 ### asString #作为字符串
 
 获取此IData的字符串表示形式
 
-返回：`表示此IData（值和类型）的字符串。</ 0></p>
+Return Type: string
 
-<p spaces-before="0">Return type: String</p>
-
-<pre><code class="zenscript">myIData.asString();
-`</pre> 
-
-
+```zenscript
+IData.asString() as string
+{Display: {lore: ["Hello", "World"]}}.asString();
+```
 
 ### contains #容器
 
-检查这个IData是否包含另一个IData，主要用于[craftminstruer.api.data.ICollectionData](/vanilla/api/data/ICollectionData)的子类，与其他IData类型的同等检查
+Checks if this IData contains another IData, mainly used in subclasses of [ICollectionData](/vanilla/api/data/ICollectionData), is the same as an equals check on other IData types
 
-返回: `true 如果给定的 IData 包含在此 IData 中`
-
-Return type: boolean
-
-
+Return Type: boolean
 
 ```zenscript
-myIData.contains(data as crafttweeper.api.data.IData);
-myIData.contains("Display");
+IData.contains(data as IData) as boolean
+{Display: {lore: ["Hello", "World"]}}.contains("Display");
 ```
 
-
-| 参数   | 类型                                                     | 描述          |
-| ---- | ------------------------------------------------------ | ----------- |
-| data | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | 要检查是否有包含的数据 |
-
-
-
+| 参数   | 类型                               | 描述          |
+| ---- | -------------------------------- | ----------- |
+| data | [IData](/vanilla/api/data/IData) | 要检查是否有包含的数据 |
 
 
 ### copy #复制
 
 制作此IData的副本。
 
-IData默认情况下是不可变的，使用它可以创建对象的正确副本。
+ IData默认情况下是不可变的，使用它可以创建对象的正确副本。
 
-返回：`此IData的副本`
-
-返回类型： [craftbiner.api.data.IData](/vanilla/api/data/IData)
-
-
+Return Type: [IData](/vanilla/api/data/IData)
 
 ```zenscript
-myIData.copy();
+IData.copy() as IData
+{Display: {lore: ["Hello", "World"]}}.copy();
 ```
 
-
-
-
-### getId #获取id 
+### getId #获取id
 
 获取内部NBT标签的 ID。
 
-用来确定哪些NBT类型被存储(例如在列表中)
+ 用来确定哪些NBT类型被存储(例如在列表中)
 
-返回：`此数据代表的 NBT 标签ID。`
-
-返回类型：字节
-
-
+Return Type: byte
 
 ```zenscript
-myIData.getId();
+IData.getId() as byte
+{Display: {lore: ["Hello", "World"]}}.getId();
 ```
-
-
-
 
 ### getString #获取字符串
 
 获取内部INBT标记的字符串表示形式
 
-返回：`表示此 IData 内部INBT 的字符串。`
-
-Return type: String
-
-
+Return Type: string
 
 ```zenscript
-myIData.getString();
+IData.getString() as string
+{Display: {lore: ["Hello", "World"]}}.getString();
 ```
 
 

@@ -1,37 +1,34 @@
 # MCPotion
 
-Этот класс был добавлен модом с mod-id `crafttweaker`. Так что если вы хотите использовать эту функцию, вам нужно установить этот мод.
-
 ## Импорт класса
-Вам может потребоваться импортировать пакет, если вы столкнетесь с какими-либо проблемами (например, с заливкой массива), так что лучше быть в безопасности, чем извиняться и добавлять импорт.
+
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
 ```zenscript
-crafttweaker.api.potion.MCPotion
+import crafttweaker.api.potion.MCPotion;
 ```
 
-## Implemented Interfaces
-MCPotion implements the following interfaces. That means any method available to them can also be used on this class.
-- [crafttweaker.api.brackets.CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
 
 ## Methods
+
 ### getNamePrefixed
 
-Return type: String
+Return Type: string
 
 ```zenscript
-myMCPotion.getNamePrefixed(name as String);
+MCPotion.getNamePrefixed(name as string) as string
 ```
 
-| Параметр | Тип    | Description          |
-| -------- | ------ | -------------------- |
-| name     | String | Описание отсутствует |
+| Параметр | Тип    | Description             |
+| -------- | ------ | ----------------------- |
+| name     | string | No Description Provided |
 
 
 
 ## Свойства
 
-| Название         | Тип                                                                                                                     | Имеет Getter | Имеет Setter |
-| ---------------- | ----------------------------------------------------------------------------------------------------------------------- | ------------ | ------------ |
-| commandString    | String                                                                                                                  | true         | false        |
-| effects          | Список&lt;[crafttweaker.api.potion.MCPotionEffectInstance](/vanilla/api/potions/MCPotionEffectInstance)&gt; | true         | false        |
-| hasInstantEffect | boolean                                                                                                                 | true         | false        |
+| Название         | Тип                                                                                                  | Имеет Getter | Имеет Setter |
+| ---------------- | ---------------------------------------------------------------------------------------------------- | ------------ | ------------ |
+| commandString    | string                                                                                               | true         | false        |
+| effects          | stdlib.List&lt;[MCPotionEffectInstance](/vanilla/api/potions/MCPotionEffectInstance)&gt; | true         | false        |
+| hasInstantEffect | boolean                                                                                              | true         | false        |
 

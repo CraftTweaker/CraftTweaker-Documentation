@@ -1,265 +1,274 @@
 # MCRequiredArgumentBuilder
 
-This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
-
 ## Diese Klasse importieren
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
 ```zenscript
-crafttweaker.api.commands.custom.MCRequiredArgumentBuilder
-```
-
-## Implemented Interfaces
-MCRequiredArgumentBuilder implementiert die folgenden Schnittstellen. That means any method available to them can also be used on this class.
-- [crafttweaker.api.commands.custom.MCArgumentBuilder](/vanilla/api/commands/custom/MCArgumentBuilder)
-
-## Methoden
-### build
-
-Rückgabetyp: [crafttweaker.api.commands.custom.MCArgumentCommandNode](/vanilla/api/commands/custom/MCArgumentCommandNode)
-
-```zenscript
-myMCRequiredArgumentBuilder.build();
-```
-
-### equals
-
-Return type: boolean
-
-```zenscript
-myMCRequiredArgumentBuilder.equals(o als Objekt);
-```
-
-| Parameter | Type   | Beschreibung            |
-| --------- | ------ | ----------------------- |
-| o         | Object | No description provided |
-
-
-### ausgeführt
-
-Rückgabetyp: [crafttweaker.api.commands.custom.MCRequiredArgumentBuilder](/vanilla/api/commands/custom/MCRequiredArgumentBuilder)
-
-```zenscript
-myMCRequiredArgumentBuilder.executes(Befehl als crafttweaker.api.commands.custom.MCCommand);
-```
-
-| Parameter | Type                                                                                 | Beschreibung            |
-| --------- | ------------------------------------------------------------------------------------ | ----------------------- |
-| command   | [crafttweaker.api.commands.custom.MCCommand](/vanilla/api/commands/custom/MCCommand) | No description provided |
-
-
-### fork
-
-Rückgabetyp: [crafttweaker.api.commands.custom.MCRequiredArgumentBuilder](/vanilla/api/commands/custom/MCRequiredArgumentBuilder)
-
-```zenscript
-myMCRequiredArgumentBuilder.fork(Ziel als crafttweaker.api.commands.custom.MCCommandNode, Modifikator als crafttweaker.api.commands.custom.MCRedirectModifier);
-```
-
-| Parameter | Type                                                                                                   | Beschreibung            |
-| --------- | ------------------------------------------------------------------------------------------------------ | ----------------------- |
-| target    | [crafttweaker.api.commands.custom.MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)           | No description provided |
-| modifier  | [crafttweaker.api.commands.custom.MCRedirectModifier](/vanilla/api/commands/custom/MCRedirectModifier) | No description provided |
-
-
-### vorwärts
-
-Rückgabetyp: [crafttweaker.api.commands.custom.MCRequiredArgumentBuilder](/vanilla/api/commands/custom/MCRequiredArgumentBuilder)
-
-```zenscript
-myMCRequiredArgumentBuilder.forward(Ziel als crafttweaker.api.commands.custom.MCCommandNode, Modifikator als crafttweaker.api.commands.custom.MCRedirectModifier, fork as boolean);
-```
-
-| Parameter | Type                                                                                                   | Beschreibung            |
-| --------- | ------------------------------------------------------------------------------------------------------ | ----------------------- |
-| target    | [crafttweaker.api.commands.custom.MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)           | No description provided |
-| modifier  | [crafttweaker.api.commands.custom.MCRedirectModifier](/vanilla/api/commands/custom/MCRedirectModifier) | No description provided |
-| fork      | boolean                                                                                                | No description provided |
-
-
-### getArgumente
-
-Typ zurückgeben: Sammlung&lt;[crafttweaker.api.commands.custom.MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)&gt;
-
-```zenscript
-myMCRequiredArgumentBuilder.getArguments();
-```
-
-### getCommand
-
-Rückgabetyp: [craftweaker.api.commands.custom.MCCommand](/vanilla/api/commands/custom/MCCommand)
-
-```zenscript
-myMCRequiredArgumentBuilder.getCommand();
-```
-
-### getName
-
-Return type: String
-
-```zenscript
-myMCRequiredArgumentBuilder.getName();
-```
-
-### getUmleitung
-
-Rückgabetyp: [craftweaker.api.commands.custom.MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)
-
-```zenscript
-myMCRequiredArgumentBuilder.getRedirect();
-```
-
-### getRedirectModifizierer
-
-Rückgabetyp: [craftweaker.api.commands.custom.MCRedirectModifier](/vanilla/api/commands/custom/MCRedirectModifier)
-
-```zenscript
-myMCRequiredArgumentBuilder.getRedirectModifier();
-```
-
-### getAnforderung
-
-Typ zurückgeben: function.Predicate&lt;[crafttweaker.api.commands.custom.MCCommandSource](/vanilla/api/commands/custom/MCCommandSource)&gt;
-
-```zenscript
-myMCRequiredArgumentBuilder.getRequirement();
-```
-
-### getSuggestionsProvider
-
-Rückgabetyp: [craftweaker.api.commands.custom.MCSuggestionProvider](/vanilla/api/commands/custom/MCSuggestionProvider)
-
-```zenscript
-myMCRequiredArgumentBuilder.getSuggestionsProvider();
-```
-
-### hashCode
-
-Return type: int
-
-```zenscript
-myMCRequiredArgumentBuilder.hashCode();
-```
-
-### isFork
-
-Return type: boolean
-
-```zenscript
-myMCRequiredArgumentBuilder.isFork();
-```
-
-### umleiten
-
-Rückgabetyp: [crafttweaker.api.commands.custom.MCRequiredArgumentBuilder](/vanilla/api/commands/custom/MCRequiredArgumentBuilder)
-
-```zenscript
-myMCRequiredArgumentBuilder.redirect(Ziel als crafttweaker.api.commands.custom.MCCommandNode);
-```
-
-| Parameter | Type                                                                                         | Beschreibung            |
-| --------- | -------------------------------------------------------------------------------------------- | ----------------------- |
-| target    | [crafttweaker.api.commands.custom.MCCommandNode](/vanilla/api/commands/custom/MCCommandNode) | No description provided |
-
-
-
-Rückgabetyp: [crafttweaker.api.commands.custom.MCRequiredArgumentBuilder](/vanilla/api/commands/custom/MCRequiredArgumentBuilder)
-
-```zenscript
-myMCRequiredArgumentBuilder.redirect(Ziel als crafttweaker.api.commands.custom.MCCommandNode, Modifikator als crafttweaker.api.commands.custom.MCSingleRedirectModifier);
-```
-
-| Parameter | Type                                                                                                               | Beschreibung            |
-| --------- | ------------------------------------------------------------------------------------------------------------------ | ----------------------- |
-| target    | [crafttweaker.api.commands.custom.MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)                       | No description provided |
-| modifier  | [crafttweaker.api.commands.custom.MCSingleRedirectModifier](/vanilla/api/commands/custom/MCSingleRedirectModifier) | No description provided |
-
-
-### benötigt
-
-Rückgabetyp: [crafttweaker.api.commands.custom.MCRequiredArgumentBuilder](/vanilla/api/commands/custom/MCRequiredArgumentBuilder)
-
-```zenscript
-myMCRequiredArgumentBuilder.requires(Anforderung als Funktion.Predicate<crafttweaker.api.commands.custom.MCCommandSource>);
-```
-
-| Parameter     | Type                                                                                                                                   | Beschreibung            |
-| ------------- | -------------------------------------------------------------------------------------------------------------------------------------- | ----------------------- |
-| voraussetzung | function.Predicate&lt;[crafttweaker.api.commands.custom.MCCommandSource](/vanilla/api/commands/custom/MCCommandSource)&gt; | No description provided |
-
-
-### suggeriert
-
-Rückgabetyp: [crafttweaker.api.commands.custom.MCRequiredArgumentBuilder](/vanilla/api/commands/custom/MCRequiredArgumentBuilder)
-
-```zenscript
-myMCRequiredArgumentBuilder.suggests(Provider als crafttweaker.api.commands.custom.MCSuggestionProvider);
-```
-
-| Parameter | Type                                                                                                       | Beschreibung            |
-| --------- | ---------------------------------------------------------------------------------------------------------- | ----------------------- |
-| provider  | [crafttweaker.api.commands.custom.MCSuggestionProvider](/vanilla/api/commands/custom/MCSuggestionProvider) | No description provided |
-
-
-### dann
-
-Rückgabetyp: [craftweaker.api.commands.custom.MCArgumentBuilder](/vanilla/api/commands/custom/MCArgumentBuilder)
-
-```zenscript
-myMCRequiredArgumentBuilder.then(Argument als crafttweaker.api.commands.custom.MCArgumentBuilder);
-```
-
-| Parameter | Type                                                                                                 | Beschreibung            |
-| --------- | ---------------------------------------------------------------------------------------------------- | ----------------------- |
-| argument  | [crafttweaker.api.commands.custom.MCArgumentBuilder](/vanilla/api/commands/custom/MCArgumentBuilder) | No description provided |
-
-
-
-Rückgabetyp: [crafttweaker.api.commands.custom.MCRequiredArgumentBuilder](/vanilla/api/commands/custom/MCRequiredArgumentBuilder)
-
-```zenscript
-myMCRequiredArgumentBuilder.then(Argument als crafttweaker.api.commands.custom.MCCommandNode);
-```
-
-| Parameter | Type                                                                                         | Beschreibung            |
-| --------- | -------------------------------------------------------------------------------------------- | ----------------------- |
-| argument  | [crafttweaker.api.commands.custom.MCCommandNode](/vanilla/api/commands/custom/MCCommandNode) | No description provided |
-
-
-
-Rückgabetyp: [crafttweaker.api.commands.custom.MCRequiredArgumentBuilder](/vanilla/api/commands/custom/MCRequiredArgumentBuilder)
-
-```zenscript
-myMCRequiredArgumentBuilder.then(Argument als crafttweaker.api.commands.custom.MCRequiredArgumentBuilder);
-```
-
-| Parameter | Type                                                                                                                 | Beschreibung            |
-| --------- | -------------------------------------------------------------------------------------------------------------------- | ----------------------- |
-| argument  | [crafttweaker.api.commands.custom.MCRequiredArgumentBuilder](/vanilla/api/commands/custom/MCRequiredArgumentBuilder) | No description provided |
-
-
-### toString
-
-Return type: String
-
-```zenscript
-myMCRequiredArgumentBuilder.toString();
+import crafttweaker.api.commands.custom.MCRequiredArgumentBuilder;
 ```
 
 
-## Operatoren
-### EQUALS
+## Extending MCArgumentBuilder
 
-```zenscript
-myMCRequiredArgumentBuilder == o als Objekt
-```
-
-| Parameter | Type   | Beschreibung            |
-| --------- | ------ | ----------------------- |
-| o         | Object | No description provided |
+MCRequiredArgumentBuilder extends [MCArgumentBuilder](/vanilla/api/commands/custom/MCArgumentBuilder). That means all methods available in [MCArgumentBuilder](/vanilla/api/commands/custom/MCArgumentBuilder) are also available in MCRequiredArgumentBuilder
 
 ## Casters
 
 | Result type | Is Implicit |
 | ----------- | ----------- |
-| String      | true        |
+| string      | true        |
+
+## Methoden
+
+### build
+
+Return Type: [MCArgumentCommandNode](/vanilla/api/commands/custom/MCArgumentCommandNode)
+
+```zenscript
+MCRequiredArgumentBuilder.build() as MCArgumentCommandNode
+myMCRequiredArgumentBuilder.build();
+```
+
+### equals
+
+Return Type: boolean
+
+```zenscript
+MCRequiredArgumentBuilder.equals(o as Object) as boolean
+```
+
+| Parameter | Type   | Beschreibung            |
+| --------- | ------ | ----------------------- |
+| o         | Object | No Description Provided |
+
+
+### ausgeführt
+
+Return Type: [MCRequiredArgumentBuilder](/vanilla/api/commands/custom/MCRequiredArgumentBuilder)
+
+```zenscript
+MCRequiredArgumentBuilder.executes(command as MCCommand) as MCRequiredArgumentBuilder
+```
+
+| Parameter | Type                                                | Beschreibung            |
+| --------- | --------------------------------------------------- | ----------------------- |
+| command   | [MCCommand](/vanilla/api/commands/custom/MCCommand) | No Description Provided |
+
+
+### fork
+
+Return Type: [MCRequiredArgumentBuilder](/vanilla/api/commands/custom/MCRequiredArgumentBuilder)
+
+```zenscript
+MCRequiredArgumentBuilder.fork(target as MCCommandNode, modifier as MCRedirectModifier) as MCRequiredArgumentBuilder
+```
+
+| Parameter | Type                                                                      | Beschreibung            |
+| --------- | ------------------------------------------------------------------------- | ----------------------- |
+| target    | [MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)               | No Description Provided |
+| modifier  | [MCRedirectModifizierer](/vanilla/api/commands/custom/MCRedirectModifier) | No Description Provided |
+
+
+### vorwärts
+
+Return Type: [MCRequiredArgumentBuilder](/vanilla/api/commands/custom/MCRequiredArgumentBuilder)
+
+```zenscript
+MCRequiredArgumentBuilder.forward(target as MCCommandNode, modifier as MCRedirectModifier, fork as boolean) as MCRequiredArgumentBuilder
+```
+
+| Parameter | Type                                                                      | Beschreibung            |
+| --------- | ------------------------------------------------------------------------- | ----------------------- |
+| target    | [MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)               | No Description Provided |
+| modifier  | [MCRedirectModifizierer](/vanilla/api/commands/custom/MCRedirectModifier) | No Description Provided |
+| fork      | boolean                                                                   | No Description Provided |
+
+
+### getArgumente
+
+Return Type: Collection&lt;[MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)&gt;
+
+```zenscript
+MCRequiredArgumentBuilder.getArguments() as Collection<MCCommandNode>
+myMCRequiredArgumentBuilder.getArguments();
+```
+
+### getCommand
+
+Return Type: [MCCommand](/vanilla/api/commands/custom/MCCommand)
+
+```zenscript
+MCRequiredArgumentBuilder.getCommand() as MCCommand
+myMCRequiredArgumentBuilder.getCommand();
+```
+
+### getName
+
+Return Type: string
+
+```zenscript
+MCRequiredArgumentBuilder.getName() as string
+myMCRequiredArgumentBuilder.getName();
+```
+
+### getUmleitung
+
+Return Type: [MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)
+
+```zenscript
+MCRequiredArgumentBuilder.getRedirect() as MCCommandNode
+myMCRequiredArgumentBuilder.getRedirect();
+```
+
+### getRedirectModifizierer
+
+Return Type: [MCRedirectModifier](/vanilla/api/commands/custom/MCRedirectModifier)
+
+```zenscript
+MCRequiredArgumentBuilder.getRedirectModifier() as MCRedirectModifier
+myMCRequiredArgumentBuilder.getRedirectModifier();
+```
+
+### getAnforderung
+
+Return Type: Predicate&lt;[MCCommandSource](/vanilla/api/commands/custom/MCCommandSource)&gt;
+
+```zenscript
+MCRequiredArgumentBuilder.getRequirement() as Predicate<MCCommandSource>
+myMCRequiredArgumentBuilder.getRequirement();
+```
+
+### getSuggestionsProvider
+
+Return Type: [MCSuggestionProvider](/vanilla/api/commands/custom/MCSuggestionProvider)
+
+```zenscript
+MCRequiredArgumentBuilder.getSuggestionsProvider() as MCSuggestionProvider
+myMCRequiredArgumentBuilder.getSuggestionsProvider();
+```
+
+### hashCode
+
+Return Type: int
+
+```zenscript
+MCRequiredArgumentBuilder.hashCode() as int
+myMCRequiredArgumentBuilder.hashCode();
+```
+
+### isFork
+
+Return Type: boolean
+
+```zenscript
+MCRequiredArgumentBuilder.isFork() as boolean
+myMCRequiredArgumentBuilder.isFork();
+```
+
+### umleiten
+
+Return Type: [MCRequiredArgumentBuilder](/vanilla/api/commands/custom/MCRequiredArgumentBuilder)
+
+```zenscript
+MCRequiredArgumentBuilder.redirect(target as MCCommandNode) as MCRequiredArgumentBuilder
+```
+
+| Parameter | Type                                                        | Beschreibung            |
+| --------- | ----------------------------------------------------------- | ----------------------- |
+| target    | [MCCommandNode](/vanilla/api/commands/custom/MCCommandNode) | No Description Provided |
+
+
+Return Type: [MCRequiredArgumentBuilder](/vanilla/api/commands/custom/MCRequiredArgumentBuilder)
+
+```zenscript
+MCRequiredArgumentBuilder.redirect(target as MCCommandNode, modifier as MCSingleRedirectModifier) as MCRequiredArgumentBuilder
+```
+
+| Parameter | Type                                                                                  | Beschreibung            |
+| --------- | ------------------------------------------------------------------------------------- | ----------------------- |
+| target    | [MCCommandNode](/vanilla/api/commands/custom/MCCommandNode)                           | No Description Provided |
+| modifier  | [MCSingleRedirectModifizierer](/vanilla/api/commands/custom/MCSingleRedirectModifier) | No Description Provided |
+
+
+### benötigt
+
+Return Type: [MCRequiredArgumentBuilder](/vanilla/api/commands/custom/MCRequiredArgumentBuilder)
+
+```zenscript
+MCRequiredArgumentBuilder.requires(requirement as Predicate<MCCommandSource>) as MCRequiredArgumentBuilder
+```
+
+| Parameter     | Type                                                                                         | Beschreibung            |
+| ------------- | -------------------------------------------------------------------------------------------- | ----------------------- |
+| voraussetzung | Predicate&lt;[MCCommandSource](/vanilla/api/commands/custom/MCCommandSource)&gt; | No Description Provided |
+
+
+### suggests
+
+Return Type: [MCRequiredArgumentBuilder](/vanilla/api/commands/custom/MCRequiredArgumentBuilder)
+
+```zenscript
+MCRequiredArgumentBuilder.suggests(provider as MCSuggestionProvider) as MCRequiredArgumentBuilder
+```
+
+| Parameter | Type                                                                      | Beschreibung            |
+| --------- | ------------------------------------------------------------------------- | ----------------------- |
+| provider  | [MCSuggestionProvider](/vanilla/api/commands/custom/MCSuggestionProvider) | No Description Provided |
+
+
+### dann
+
+Return Type: [MCArgumentBuilder](/vanilla/api/commands/custom/MCArgumentBuilder)
+
+```zenscript
+MCRequiredArgumentBuilder.then(argument as MCArgumentBuilder) as MCArgumentBuilder
+```
+
+| Parameter | Type                                                                | Beschreibung            |
+| --------- | ------------------------------------------------------------------- | ----------------------- |
+| argument  | [MCArgumentBuilder](/vanilla/api/commands/custom/MCArgumentBuilder) | No Description Provided |
+
+
+Return Type: [MCRequiredArgumentBuilder](/vanilla/api/commands/custom/MCRequiredArgumentBuilder)
+
+```zenscript
+MCRequiredArgumentBuilder.then(argument as MCCommandNode) as MCRequiredArgumentBuilder
+```
+
+| Parameter | Type                                                        | Beschreibung            |
+| --------- | ----------------------------------------------------------- | ----------------------- |
+| argument  | [MCCommandNode](/vanilla/api/commands/custom/MCCommandNode) | No Description Provided |
+
+
+Return Type: [MCRequiredArgumentBuilder](/vanilla/api/commands/custom/MCRequiredArgumentBuilder)
+
+```zenscript
+MCRequiredArgumentBuilder.then(argument as MCRequiredArgumentBuilder) as MCRequiredArgumentBuilder
+```
+
+| Parameter | Type                                                                                | Beschreibung            |
+| --------- | ----------------------------------------------------------------------------------- | ----------------------- |
+| argument  | [MCRequiredArgumentBuilder](/vanilla/api/commands/custom/MCRequiredArgumentBuilder) | No Description Provided |
+
+
+### toString
+
+Return Type: string
+
+```zenscript
+MCRequiredArgumentBuilder.toString() as string
+myMCRequiredArgumentBuilder.toString();
+```
+
+
+## Operatoren
+
+### EQUALS
+
+```zenscript
+myMCRequiredArgumentBuilder == o as Object
+```
+
+
+
 

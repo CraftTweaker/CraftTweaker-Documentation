@@ -1,81 +1,87 @@
 # MCCommand
 
-This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
-
 ## Diese Klasse importieren
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
 ```zenscript
-crafttweaker.api.commands.custom.MCCommand
+import crafttweaker.api.commands.custom.MCCommand;
 ```
+
 
 ## Constructors
+
+No Description Provided
 ```zenscript
-neue crafttweaker.api.commands.custom.MCCommand(Spaß als Funktion.Funktion<crafttweaker.api.commands.custom.MCCommandContext, Integer>);
+new MCCommand(fun as Function<MCCommandContext,Integer>) as MCCommand
 ```
-| Parameter | Type                                                                                                                                             | Beschreibung            |
-| --------- | ------------------------------------------------------------------------------------------------------------------------------------------------ | ----------------------- |
-| lustig    | function.Function&lt;[crafttweaker.api.commands.custom.MCCommandContext](/vanilla/api/commands/custom/MCCommandContext), Integer&gt; | No description provided |
+
+| Parameter | Type                                                                                                  | Beschreibung            |
+| --------- | ----------------------------------------------------------------------------------------------------- | ----------------------- |
+| lustig    | Function&lt;[MCCommandContext](/vanilla/api/commands/custom/MCCommandContext),Integer&gt; | No Description Provided |
 
 
+
+## Casters
+
+| Result type | Is Implicit |
+| ----------- | ----------- |
+| string      | true        |
 
 ## Methoden
+
 ### equals
 
-Return type: boolean
+Return Type: boolean
 
 ```zenscript
-myMCCommand.equals(o als Objekt);
+MCCommand.equals(o as Object) as boolean
 ```
 
 | Parameter | Type   | Beschreibung            |
 | --------- | ------ | ----------------------- |
-| o         | Object | No description provided |
+| o         | Object | No Description Provided |
 
 
 ### hashCode
 
-Return type: int
+Return Type: int
 
 ```zenscript
+MCCommand.hashCode() as int
 myMCCommand.hashCode();
 ```
 
 ### laufen
 
-Return type: int
+Return Type: int
 
 ```zenscript
-myMCCommand.run(Kontext als crafttweaker.api.commands.custom.MCCommandContext);
+MCCommand.run(context as MCCommandContext) as int
 ```
 
-| Parameter | Type                                                                                               | Beschreibung            |
-| --------- | -------------------------------------------------------------------------------------------------- | ----------------------- |
-| kontext   | [crafttweaker.api.commands.custom.MCCommandContext](/vanilla/api/commands/custom/MCCommandContext) | No description provided |
+| Parameter | Type                                                              | Beschreibung            |
+| --------- | ----------------------------------------------------------------- | ----------------------- |
+| kontext   | [MCCommandContext](/vanilla/api/commands/custom/MCCommandContext) | No Description Provided |
 
 
 ### toString
 
-Return type: String
+Return Type: string
 
 ```zenscript
+MCCommand.toString() as string
 myMCCommand.toString();
 ```
 
 
 ## Operatoren
+
 ### EQUALS
 
 ```zenscript
 myMCCommand == o als Objekt
 ```
 
-| Parameter | Type   | Beschreibung            |
-| --------- | ------ | ----------------------- |
-| o         | Object | No description provided |
 
-## Casters
 
-| Result type | Is Implicit |
-| ----------- | ----------- |
-| String      | true        |
 

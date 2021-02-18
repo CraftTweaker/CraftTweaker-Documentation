@@ -1,130 +1,142 @@
 # MC命令源
 
-这个类由mod-id为`crafttweaker`的模组添加. 因此，如果要使用此功能，则需要安装此mod。
-
 ## 导入相关包
-如果遇到任何问题（例如强制转换数组），则可能需要导入软件包，因此，最好的方式就是导入包支持。
+
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
 ```zenscript
-craftminstrer.api.commands.custom.MCCommandSource
+import crafttweaker.api.commands.custom.MCCommandSource;
 ```
 
+
 ## 方法
+
 ### getName
 
-Return type: String
+Return Type: string
 
 ```zenscript
+MCCommandSource.getName() as string
 myMCCommandSource.getName();
 ```
 
 ### getPlayer
 
-Return type: [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
+Return Type: [MCPlayerEntity](/vanilla/api/entity/MCPlayerEntity)
 
 ```zenscript
+MCCommandSource.getPlayer() as MCPlayerEntity
 myMCCommandSource.getPlayer();
 ```
 
 ### getPlayer名称
 
-返回类型：收藏&lt;String&gt;
+Return Type: Collection&lt;string&gt;
 
 ```zenscript
+MCCommandSource.getPlayerNames() as Collection<string>
 myMCCommandSource.getPlayerNames();
 ```
 
 ### getTargetEntity
 
-返回类型：收藏&lt;String&gt;
+Return Type: Collection&lt;string&gt;
 
 ```zenscript
+MCCommandSource.getTargetedEntity() as Collection<string>
 myMCCommandSource.getTargetedEntity();
 ```
 
 ### 获取团队名称
 
-返回类型：收藏&lt;String&gt;
+Return Type: Collection&lt;string&gt;
 
 ```zenscript
+MCCommandSource.getTeamNames() as Collection<string>
 myMCCommandSource.getTeamNames();
 ```
 
 ### hasPermissionLevel
 
-Return type: boolean
+Return Type: boolean
 
 ```zenscript
-myMCCommandSource.hasPermissionLevel(p_197034_1_int)；
+MCCommandSource.hasPermissionLevel(p_197034_1_ as int) as boolean
 ```
 
 | 参数            | 类型  | 描述                      |
 | ------------- | --- | ----------------------- |
-| p_197034_1_ | int | No description provided |
+| p_197034_1_ | int | No Description Provided |
 
 
 ### isPlayer
 
-Return type: boolean
+Return Type: boolean
 
 ```zenscript
+MCCommandSource.isPlayer() as boolean
 myMCCommandSource.isPlayer();
 ```
 
 ### 发送错误消息
 
+Return Type: void
+
 ```zenscript
-myMCCommandSource.sendErrorMessage(message as String);
+MCCommandSource.sendErrorMessage(message as string) as void
 ```
 
 | 参数      | 类型     | 描述                      |
 | ------- | ------ | ----------------------- |
-| message | String | No description provided |
+| message | string | No Description Provided |
 
 
 ### sendFeedback
 
+Return Type: void
+
 ```zenscript
-myMCCommandSource.send反馈(作为字符串反馈，允许日志作为布尔值)；
+MCCommandSource.sendFeedback(feedback as string, allowLogging as boolean) as void
 ```
 
 | 参数                   | 类型      | 描述                      |
 | -------------------- | ------- | ----------------------- |
-| 反馈                   | String  | No description provided |
-| allowLogging #允许记录日志 | boolean | No description provided |
+| 反馈                   | string  | No Description Provided |
+| allowLogging #允许记录日志 | boolean | No Description Provided |
 
 
 ### 反馈已禁用
 
-返回类型： [craftbiner.api.commands.custom.MCCommandSource](/vanilla/api/commands/custom/MCCommandSource)
+Return Type: [MCCommandSource](/vanilla/api/commands/custom/MCCommandSource)
 
 ```zenscript
-myMCCommandSource.with反馈已禁用();
+MCCommandSource.withFeedbackDisabled() as MCCommandSource
+myMCCommandSource.withFeedbackDisabled();
 ```
 
 ### withMin权限级别
 
-返回类型： [craftbiner.api.commands.custom.MCCommandSource](/vanilla/api/commands/custom/MCCommandSource)
+Return Type: [MCCommandSource](/vanilla/api/commands/custom/MCCommandSource)
 
 ```zenscript
-myMCCommandSource.withMinPermissionLevel(p_197026_1_int)；
+MCCommandSource.withMinPermissionLevel(p_197026_1_ as int) as MCCommandSource
 ```
 
 | 参数            | 类型  | 描述                      |
 | ------------- | --- | ----------------------- |
-| p_197026_1_ | int | No description provided |
+| p_197026_1_ | int | No Description Provided |
 
 
 ### 拒绝权限级别
 
-返回类型： [craftbiner.api.commands.custom.MCCommandSource](/vanilla/api/commands/custom/MCCommandSource)
+Return Type: [MCCommandSource](/vanilla/api/commands/custom/MCCommandSource)
 
 ```zenscript
-myMCCommandSource.withPermissionLevel(p_197033_1_int)；
+MCCommandSource.withPermissionLevel(p_197033_1_ as int) as MCCommandSource
 ```
 
 | 参数            | 类型  | 描述                      |
 | ------------- | --- | ----------------------- |
-| p_197033_1_ | int | No description provided |
+| p_197033_1_ | int | No Description Provided |
 
 
 

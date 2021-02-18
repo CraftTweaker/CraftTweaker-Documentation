@@ -1,119 +1,99 @@
 # 成分列表
 
-这个类由mod-id为`crafttweaker`的模组添加. 因此，如果要使用此功能，则需要安装此mod。
-
 ## 导入相关包
-如果遇到任何问题（例如强制转换数组），则可能需要导入软件包，因此，最好的方式就是导入包支持。
+
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
 ```zenscript
-制造商.api.item.IngredientList
+import crafttweaker.api.item.IngredientList;
 ```
 
+
 ## 已实现的接口
-IngredientList 实现以下接口。 这意味着对这个接口可用的任何方法也可以在此类上使用。
-- [crafttweaker.api.brackets.CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
-- [crafttweaker.api.item.IIngredient](/vanilla/api/items/IIngredient)
+IngredientList implements the following interfaces. That means all methods defined in these interfaces are also available in IngredientList
+
+- [材料（IIngredient）](/vanilla/api/items/IIngredient)
+
+## Casters
+
+| 结果类型                                       | 是否隐藏 |
+| ------------------------------------------ | ---- |
+| [IData](/vanilla/api/data/IData)           | true |
+| [MapData #地图数据](/vanilla/api/data/MapData) | true |
 
 ## 方法
+
 ### anyDamage
 
-返回类型： [craftbiner.api.item.MCIngredientConditioned](/vanilla/api/items/MCIngredientConditioned)&lt;[craftbiner.api.item.IIngredient](/vanilla/api/items/IIngredient)&gt;
+Return Type: [MCIngredientConditioned](/vanilla/api/items/MCIngredientConditioned)&lt;[IIngredient](/vanilla/api/items/IIngredient)&gt;
 
 ```zenscript
-空.任何损害();
+IngredientList.anyDamage() as MCIngredientConditioned<IIngredient>
+myIngredientList.anyDamage();
 ```
 
 ### getRemainingItem
 
-When this ingredient stack is crafted, what will remain in the grid? Does not check if the stack matches though! Used e.g. in CrT's net.minecraft.item.crafting.ICraftingRecipe
+When this ingredient stack is crafted, what will remain in the grid? Does not check if the stack matches though! Used e.g. in Crafting Table recipes.
 
-Return type: [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
+Return Type: [IItemStack](/vanilla/api/items/IItemStack)
 
 ```zenscript
-null.getRemainingItem(stack as craftbiner.api.item.IItemStack);
-null.getRemainingItem(<item:minecraft:iron_ingot>);
+IngredientList.getRemainingItem(stack as IItemStack) as IItemStack
+myIngredientList.getRemainingItem(<item:minecraft:iron_ingot>);
 ```
 
-| 参数    | 类型                                                                | 描述                                        |
-| ----- | ----------------------------------------------------------------- | ----------------------------------------- |
-| stack | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | The stack to provide for this ingredient. |
+| 参数    | 类型                                          | 描述                                        |
+| ----- | ------------------------------------------- | ----------------------------------------- |
+| stack | [IItemStack](/vanilla/api/items/IItemStack) | The stack to provide for this ingredient. |
 
 
 ### matches
 
 Does the given stack match the ingredient?
 
-Return type: boolean
+Return Type: boolean
 
 ```zenscript
-null.matches(堆栈为 craftbiner.api.item.IItemStack)；
-null.matches(<item:minecraft:iron_ingot>)；
+IngredientList.matches(stack as IItemStack) as boolean
+myIngredientList.matches(<item:minecraft:iron_ingot>);
 ```
 
-| 参数    | 类型                                                                | 描述                 |
-| ----- | ----------------------------------------------------------------- | ------------------ |
-| stack | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | The stack to check |
-
-
-
-Does the given stack match the ingredient?
-
-Return type: boolean
-
-```zenscript
-null.matches(堆栈为 craftminstrer.api.item.IItemStack, 忽略损害为 boolean);
-```
-
-| 参数    | 类型                                                                | 描述                 |
-| ----- | ----------------------------------------------------------------- | ------------------ |
-| stack | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | The stack to check |
-| 忽略伤害  | boolean                                                           | 是否检查损坏？            |
+| 参数    | 类型                                          | 描述                 |
+| ----- | ------------------------------------------- | ------------------ |
+| stack | [IItemStack](/vanilla/api/items/IItemStack) | The stack to check |
 
 
 ### onlyDamaged
 
-返回类型： [craftbiner.api.item.MCIngredientConditioned](/vanilla/api/items/MCIngredientConditioned)&lt;[craftbiner.api.item.IIngredient](/vanilla/api/items/IIngredient)&gt;
+Return Type: [MCIngredientConditioned](/vanilla/api/items/MCIngredientConditioned)&lt;[IIngredient](/vanilla/api/items/IIngredient)&gt;
 
 ```zenscript
-null.onlyDamaged();
+IngredientList.onlyDamaged() as MCIngredientConditioned<IIngredient>
+myIngredientList.onlyDamaged();
 ```
 
 ### onlyIf
 
-返回类型： [craftbiner.api.item.MCIngredientConditioned](/vanilla/api/items/MCIngredientConditioned)&lt;[craftbiner.api.item.IIngredient](/vanilla/api/items/IIngredient)&gt;
+Return Type: [MCIngredientConditioned](/vanilla/api/items/MCIngredientConditioned)&lt;[IIngredient](/vanilla/api/items/IIngredient)&gt;
 
 ```zenscript
-null.onlyIf(uid as String, function as function.Predicate<crafttweaker.api.item.IItemStack>);
+IngredientList.onlyIf(uid as string, function as Predicate<IItemStack>) as MCIngredientConditioned<IIngredient>
 ```
 
-| 参数       | 类型                                                                                       | 描述                      | 可选的   | Default Value |
-| -------- | ---------------------------------------------------------------------------------------- | ----------------------- | ----- | ------------- |
-| uid      | String                                                                                   | No description provided | false | `null`        |
-| function | 预测&lt;[craftminstrer.api.item.IItemStack](/vanilla/api/items/IItemStack)&gt; | No description provided | true  | `null`        |
+| 参数       | 类型                                                                       | 描述                      | 可选    | DefaultValue |
+| -------- | ------------------------------------------------------------------------ | ----------------------- | ----- | ------------ |
+| uid      | string                                                                   | No Description Provided | false |              |
+| function | Predicate&lt;[IItemStack](/vanilla/api/items/IItemStack)&gt; | No Description Provided | true  |              |
 
-
-
-## 参数
-
-| 名称            | 类型                                                                  | 可获得  | 可设置   |
-| ------------- | ------------------------------------------------------------------- | ---- | ----- |
-| commandString | String                                                              | true | false |
-| items         | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)[] | true | false |
 
 ## 运算符
+
 ### OR
 
 ```zenscript
-<tag:ingotIron> | 其他为 craftbiner.api.item.IIngredient
+myIngredientList | other as IIngredient
 ```
 
-| 参数    | 类型                                                                  | 描述                      |
-| ----- | ------------------------------------------------------------------- | ----------------------- |
-| other | [crafttweaker.api.item.IIngredient](/vanilla/api/items/IIngredient) | No description provided |
 
-## Casters
 
-| 结果类型                                                        | 是否隐藏 |
-| ----------------------------------------------------------- | ---- |
-| [crafttweaker.api.data.IData](/vanilla/api/data/IData)      | true |
-| [craftminstrer.api.data.MapData](/vanilla/api/data/MapData) | true |
 

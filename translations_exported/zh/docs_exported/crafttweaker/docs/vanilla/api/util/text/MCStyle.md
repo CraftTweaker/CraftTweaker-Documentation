@@ -1,267 +1,269 @@
 # MC样式
 
-这个类由mod-id为`crafttweaker`的模组添加. 因此，如果要使用此功能，则需要安装此mod。
-
 ## 导入相关包
-如果遇到任何问题（例如强制转换数组），则可能需要导入软件包，因此，最好的方式就是导入包支持。
+
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
 ```zenscript
-craftminstrer.api.util.text.MCStyle
+import crafttweaker.api.util.text.MCStyle;
 ```
+
 
 ## Constructor #构造函数
+
+No Description Provided
 ```zenscript
-新手工艺.api.util.text.MCStyle();
+new MCStyle() as MCStyle
+new MCStyle();
 ```
 
+
 ## 方法
+
 ### equals #等于
 
-Return type: boolean
+Return Type: boolean
 
 ```zenscript
-myMCStyle.equals(其它作为对象)；
+MCStyle.equals(other as Object) as boolean
 ```
 
 | 参数    | 类型     | 描述                      |
 | ----- | ------ | ----------------------- |
-| other | Object | No description provided |
+| other | Object | No Description Provided |
 
 
 ### getBold
 
-Return type: boolean
+Return Type: boolean
 
 ```zenscript
+MCStyle.getBold() as boolean
 myMCStyle.getBold();
 ```
 
 ### getFontId
 
-返回类型： [craftbiner.api.util.MCResourceLocation](/vanilla/api/util/MCResourceLocation)
+Return Type: [MCResourceLocation](/vanilla/api/util/MCResourceLocation)
 
 ```zenscript
+MCStyle.getFontId() as MCResourceLocation
 myMCStyle.getFontId();
 ```
 
 ### 获取插入
 
-Return type: String
+Return Type: string
 
 ```zenscript
-myMCStyle.get插入();
+MCStyle.getInsertion() as string
+myMCStyle.getInsertion();
 ```
 
 ### getItalic
 
-Return type: boolean
+Return Type: boolean
 
 ```zenscript
+MCStyle.getItalic() as boolean
 myMCStyle.getItalic();
 ```
 
 ### getObfuscated
 
-Return type: boolean
+Return Type: boolean
 
 ```zenscript
+MCStyle.getObfuscated() as boolean
 myMCStyle.getObfuscated();
 ```
 
 ### getStrikefe
 
-Return type: boolean
+Return Type: boolean
 
 ```zenscript
-a. myMCStyle.getStrikethrough();
+MCStyle.getStrikethrough() as boolean
+myMCStyle.getStrikethrough();
 ```
 
 ### 获取下划线
 
-Return type: boolean
+Return Type: boolean
 
 ```zenscript
+MCStyle.getUnderlined() as boolean
 myMCStyle.getUnderlined();
 ```
 
 ### hashCode
 
-Return type: int
+Return Type: int
 
 ```zenscript
+MCStyle.hashCode() as int
 myMCStyle.hashCode();
 ```
 
 ### isEmpty
 
-此样式是否为空(继承父类的一切)。
+Whether or not this style is empty (inherits everything from the parent).
 
-Return type: boolean
+Return Type: boolean
 
 ```zenscript
+MCStyle.isEmpty() as boolean
 myMCStyle.isEmpty();
 ```
 
 ### 合并样式
 
-返回类型： [craftmiliter.api.util.text.MCStyle](/vanilla/api/util/text/MCStyle)
+Return Type: [MCStyle](/vanilla/api/util/text/MCStyle)
 
 ```zenscript
-myMCStyle.mergeStyle(样式为 craftminstrer.api.util.text.MCStyle);
+MCStyle.mergeStyle(style as MCStyle) as MCStyle
 ```
 
-| 参数 | 类型                                                                    | 描述                      |
-| -- | --------------------------------------------------------------------- | ----------------------- |
-| 样式 | [craftminstrer.api.util.text.MCStyle](/vanilla/api/util/text/MCStyle) | No description provided |
+| 参数 | 类型                                     | 描述                      |
+| -- | -------------------------------------- | ----------------------- |
+| 样式 | [MC样式](/vanilla/api/util/text/MCStyle) | No Description Provided |
 
 
 ### 设置粗体
 
-返回类型： [craftmiliter.api.util.text.MCStyle](/vanilla/api/util/text/MCStyle)
+Return Type: [MCStyle](/vanilla/api/util/text/MCStyle)
 
 ```zenscript
-myMCStyle.setBold(作为布尔值)
+MCStyle.setBold(boldIn as Boolean) as MCStyle
 ```
 
 | 参数     | 类型      | 描述                      |
 | ------ | ------- | ----------------------- |
-| boldIn | Boolean | No description provided |
+| boldIn | Boolean | No Description Provided |
 
 
 ### 设置颜色
 
-返回类型： [craftmiliter.api.util.text.MCStyle](/vanilla/api/util/text/MCStyle)
+Return Type: [MCStyle](/vanilla/api/util/text/MCStyle)
 
 ```zenscript
-myMCStyle.setColor(格式化为 craftminstrer.api.text.TextFormating);
+MCStyle.setColor(colour as int) as MCStyle
 ```
 
-| 参数  | 类型                                            | 描述                      |
-| --- | --------------------------------------------- | ----------------------- |
-| 格式化 | [文本格式](/vanilla/api/util/text/TextFormatting) | No description provided |
+| 参数     | 类型  | 描述                      |
+| ------ | --- | ----------------------- |
+| colour | int | No Description Provided |
 
 
-
-返回类型： [craftmiliter.api.util.text.MCStyle](/vanilla/api/util/text/MCStyle)
+Return Type: [MCStyle](/vanilla/api/util/text/MCStyle)
 
 ```zenscript
-myMCStyle.setColor(颜色为原样)；
+MCStyle.setColor(formatting as TextFormatting) as MCStyle
 ```
 
-| 参数 | 类型  | 描述                      |
-| -- | --- | ----------------------- |
-| 颜色 | int | No description provided |
+| 参数  | 类型                                                      | 描述                      |
+| --- | ------------------------------------------------------- | ----------------------- |
+| 格式化 | [TextFormatting](/vanilla/api/util/text/TextFormatting) | No Description Provided |
 
 
 ### setFontId
 
-返回类型： [craftmiliter.api.util.text.MCStyle](/vanilla/api/util/text/MCStyle)
+Return Type: [MCStyle](/vanilla/api/util/text/MCStyle)
 
 ```zenscript
-myMCStyle.setFontId(位置为 craftweeper.api.util.MCResourceLocation);
+MCStyle.setFontId(location as MCResourceLocation) as MCStyle
 ```
 
-| 参数 | 类型                                                                               | 描述                      |
-| -- | -------------------------------------------------------------------------------- | ----------------------- |
-| 位置 | [crafttweaker.api.util.MCResourceLocation](/vanilla/api/util/MCResourceLocation) | No description provided |
+| 参数 | 类型                                                         | 描述                      |
+| -- | ---------------------------------------------------------- | ----------------------- |
+| 位置 | [MCResourceLocation](/vanilla/api/util/MCResourceLocation) | No Description Provided |
 
 
 ### 设置格式
 
-返回类型： [craftmiliter.api.util.text.MCStyle](/vanilla/api/util/text/MCStyle)
+Return Type: [MCStyle](/vanilla/api/util/text/MCStyle)
 
 ```zenscript
-myMCStyle.setFormating(格式化为 craftbiner.api.text.TextFormating);
+MCStyle.setFormatting(formatting as TextFormatting) as MCStyle
 ```
 
-| 参数  | 类型                                            | 描述                      |
-| --- | --------------------------------------------- | ----------------------- |
-| 格式化 | [文本格式](/vanilla/api/util/text/TextFormatting) | No description provided |
+| 参数  | 类型                                                      | 描述                      |
+| --- | ------------------------------------------------------- | ----------------------- |
+| 格式化 | [TextFormatting](/vanilla/api/util/text/TextFormatting) | No Description Provided |
 
 
 ### 设置插入
 
-当组件被shift-点击时，设置要插入聊天的文本
+Set a text to be inserted into Chat when the component is shift-clicked
 
-返回类型： [craftmiliter.api.util.text.MCStyle](/vanilla/api/util/text/MCStyle)
+Return Type: [MCStyle](/vanilla/api/util/text/MCStyle)
 
 ```zenscript
-myMCStyle.set插入(插入为字符串)；
+MCStyle.setInsertion(insertion as string) as MCStyle
 ```
 
 | 参数 | 类型     | 描述                      |
 | -- | ------ | ----------------------- |
-| 插入 | String | No description provided |
+| 插入 | string | No Description Provided |
 
 
 ### setItalic
 
-返回类型： [craftmiliter.api.util.text.MCStyle](/vanilla/api/util/text/MCStyle)
+Return Type: [MCStyle](/vanilla/api/util/text/MCStyle)
 
 ```zenscript
-myMCStyle.setItalic(斜体为 Boolean)；
+MCStyle.setItalic(italic as Boolean) as MCStyle
 ```
 
 | 参数     | 类型      | 描述                      |
 | ------ | ------- | ----------------------- |
-| italic | Boolean | No description provided |
+| italic | Boolean | No Description Provided |
 
 
 ### setObfused
 
-返回类型： [craftmiliter.api.util.text.MCStyle](/vanilla/api/util/text/MCStyle)
+Return Type: [MCStyle](/vanilla/api/util/text/MCStyle)
 
 ```zenscript
-myMCStyle.setObfuscated(混淆为 Boolean)；
+MCStyle.setObfuscated(obfuscated as Boolean) as MCStyle
 ```
 
 | 参数         | 类型      | 描述                      |
 | ---------- | ------- | ----------------------- |
-| obfuscated | Boolean | No description provided |
+| obfuscated | Boolean | No Description Provided |
 
 
 ### 设置删除线
 
-返回类型： [craftmiliter.api.util.text.MCStyle](/vanilla/api/util/text/MCStyle)
+Return Type: [MCStyle](/vanilla/api/util/text/MCStyle)
 
 ```zenscript
-myMCStyle.setStrike-through (strikefy as Boolean)
+MCStyle.setStrikethrough(strikethrough as Boolean) as MCStyle
 ```
 
 | 参数            | 类型      | 描述                      |
 | ------------- | ------- | ----------------------- |
-| strikethrough | Boolean | No description provided |
+| strikethrough | Boolean | No Description Provided |
 
 
 ### 下划线
 
-返回类型： [craftmiliter.api.util.text.MCStyle](/vanilla/api/util/text/MCStyle)
+Return Type: [MCStyle](/vanilla/api/util/text/MCStyle)
 
 ```zenscript
-myMCStyle.setUnlined(下划线为 Boolean)；
+MCStyle.setUnderlined(underlined as Boolean) as MCStyle
 ```
 
 | 参数  | 类型      | 描述                      |
 | --- | ------- | ----------------------- |
-| 下划线 | Boolean | No description provided |
-
-
-
-返回类型： [craftmiliter.api.util.text.MCStyle](/vanilla/api/util/text/MCStyle)
-
-```zenscript
-myMCStyle.setUnlined(下划线为布尔值)；
-```
-
-| 参数  | 类型      | 描述                      |
-| --- | ------- | ----------------------- |
-| 下划线 | boolean | No description provided |
+| 下划线 | Boolean | No Description Provided |
 
 
 ### toString
 
-Return type: String
+Return Type: string
 
 ```zenscript
+MCStyle.toString() as string
 myMCStyle.toString();
 ```
 

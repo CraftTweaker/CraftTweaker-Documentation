@@ -1,84 +1,109 @@
 # Ubicación MCResource
 
-This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
-
 ## Importing the class
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
 ```zenscript
-crafttweaker.api.util.MCResourceLocation
+import crafttweaker.api.util.MCResourceLocation;
 ```
+
 
 ## Implemented Interfaces
-MCResourceLocation implementa las siguientes interfaces. That means any method available to them can also be used on this class.
-- [crafttweaker.api.brackets.CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
+MCResourceLocation implements the following interfaces. That means all methods defined in these interfaces are also available in MCResourceLocation
+
+- Comparable&lt;[MCResourceLocation](/vanilla/api/util/MCResourceLocation)&gt;
 
 ## Constructors
+
+
 ```zenscript
-nuevo crafttweaker.api.util.MCResourceLocation(namespace as String, path as String);
+new MCResourceLocation(namespace as string, path as string) as MCResourceLocation
 ```
-| Parameter | Type   | Description             |
-| --------- | ------ | ----------------------- |
-| namespace | String | No description provided |
-| path      | String | No description provided |
+
+| Parameter | Type   | Description                                                          |
+| --------- | ------ | -------------------------------------------------------------------- |
+| namespace | string | Usually a ModId                                                      |
+| path      | string | May only contain lower-cased alphanumeric values, as well as / and _ |
 
 
+
+## Casters
+
+| Result type                      | Is Implicit |
+| -------------------------------- | ----------- |
+| [IData](/vanilla/api/data/IData) | true        |
+| string                           | true        |
 
 ## Methods
-### comparar con
 
-Return type: int
+### asData
+
+Return Type: [IData](/vanilla/api/data/IData)
 
 ```zenscript
-myMCResourceLocation.compareTo(p_compareTo_1_ como crafttweaker.api.util.MCResourceLocation);
+MCResourceLocation.asData() as IData
+myMCResourceLocation.asData();
 ```
 
-| Parameter     | Type                                                                             | Description             |
-| ------------- | -------------------------------------------------------------------------------- | ----------------------- |
-| comparar_1_ | [crafttweaker.api.util.MCResourceLocation](/vanilla/api/util/MCResourceLocation) | No description provided |
+### comparar con
+
+Return Type: int
+
+```zenscript
+MCResourceLocation.compareTo(other as MCResourceLocation) as int
+```
+
+| Parameter | Type                                                         | Description             |
+| --------- | ------------------------------------------------------------ | ----------------------- |
+| other     | [Ubicación MCResource](/vanilla/api/util/MCResourceLocation) | No Description Provided |
 
 
 ### equals
 
-Return type: boolean
+Return Type: boolean
 
 ```zenscript
-myMCResourceLocation.equals(otro como objeto);
+MCResourceLocation.equals(other as Object) as boolean
 ```
 
 | Parameter | Type   | Description             |
 | --------- | ------ | ----------------------- |
-| other     | Object | No description provided |
+| other     | Object | No Description Provided |
 
 
 ### getNamespace
 
-Return type: String
+Return Type: string
 
 ```zenscript
+MCResourceLocation.getNamespace() as string
 myMCResourceLocation.getNamespace();
 ```
 
 ### getPath
 
-Return type: String
+Return Type: string
 
 ```zenscript
+MCResourceLocation.getPath() as string
 myMCResourceLocation.getPath();
 ```
 
 ### hashCode
 
-Return type: int
+Return Type: int
 
 ```zenscript
+MCResourceLocation.hashCode() as int
 myMCResourceLocation.hashCode();
 ```
 
 ### toString
 
-Return type: String
+Return Type: string
 
 ```zenscript
+MCResourceLocation.toString() as string
 myMCResourceLocation.toString();
 ```
 
@@ -87,7 +112,7 @@ myMCResourceLocation.toString();
 
 | Name          | Type   | Has Getter | Has Setter |
 | ------------- | ------ | ---------- | ---------- |
-| commandString | String | true       | false      |
-| namespace     | String | true       | false      |
-| path          | String | true       | false      |
+| commandString | string | true       | false      |
+| namespace     | string | true       | false      |
+| path          | string | true       | false      |
 
