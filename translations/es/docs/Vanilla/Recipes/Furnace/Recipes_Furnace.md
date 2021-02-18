@@ -69,7 +69,7 @@ furnace.getFuel(IItemStack item);
 
 This will return the burn value as an Integer
 
-## Examples
+## Ejemplos 
 
 ### Removal
 
