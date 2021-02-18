@@ -1,31 +1,28 @@
 # MCResultConsumer
 
-Questa classe è stata aggiunta da una mod con ID `crafttweaker`. Perciò, è necessario avere questa mod installata per poter utilizzare questa funzione.
-
 ## Importing the class
-Potrebbe essere necessario importare il pacchetto, se si incontrano dei problemi (come castare un vettore), quindi meglio essere sicuri e aggiungere la direttiva di importazione.
+
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
 ```zenscript
-crafttweaker.api.commands.custom.MCResultConsumer
+import crafttweaker.api.commands.custom.MCResultConsumer;
 ```
 
-## Functional Interface
 
-This class is a functional interface. This means that you can use the lambda notation to create an instance of it. The lambda notation looks like:
-```zenscript
-(commandContext, successo, risultato) =>{}
-```
 ## Methods
+
 ### onCommandComplete
 
+Return Type: void
+
 ```zenscript
-myMCResultConsumer.onCommandComplete(commandContext as crafttweaker.api.commands.custom.MCCommandContext, success as boolean, result as int);
+MCResultConsumer.onCommandComplete(commandContext as MCCommandContext, success as boolean, result as int) as void
 ```
 
-| Parameter      | Type                                                                                               | Description                 |
-| -------------- | -------------------------------------------------------------------------------------------------- | --------------------------- |
-| commandContext | [crafttweaker.api.commands.custom.MCCommandContext](/vanilla/api/commands/custom/MCCommandContext) | Nessuna descrizione fornita |
-| success        | boolean                                                                                            | Nessuna descrizione fornita |
-| result         | int                                                                                                | Nessuna descrizione fornita |
+| Parameter      | Type                                                              | Description             |
+| -------------- | ----------------------------------------------------------------- | ----------------------- |
+| commandContext | [MCCommandContext](/vanilla/api/commands/custom/MCCommandContext) | No Description Provided |
+| success        | boolean                                                           | No Description Provided |
+| result         | int                                                               | No Description Provided |
 
 
 
