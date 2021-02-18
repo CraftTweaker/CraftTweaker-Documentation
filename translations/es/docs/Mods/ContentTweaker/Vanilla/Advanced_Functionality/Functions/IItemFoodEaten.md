@@ -15,7 +15,7 @@ The IItemFoodEaten is a function with the following parameters (In this order):
 - [IWorld](/Mods/ContentTweaker/Vanilla/Types/World/IWorld/) world → The world the player is in
 - [CTPlayer](/Mods/ContentTweaker/Vanilla/Types/Player/ICTPlayer/) player → The player eating the food.
 
-## Examples
+## Ejemplos 
 
 ```zenscript
 #loader contenttweaker
