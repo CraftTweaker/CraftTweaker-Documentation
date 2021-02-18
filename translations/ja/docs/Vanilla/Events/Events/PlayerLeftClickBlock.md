@@ -1,16 +1,15 @@
 # PlayerLeftClickBlock
 
-PlayerLeftClickBlock イベントは、プレイヤーがブロックをクリックするたびに発生します。  
-他のイベントの発生を防ぐためにキャンセルすることができます。 プレイヤーが左クリックを押し続けた場合、イベントはキャンセルされた場合でも再び発生します。 このイベントをキャンセルすると、左クリックが登録されるのを防ぎ、ブロック破壊を防止します (クリエイティブモードではありませんが)。 イベントがキャンセルされた場合、特定の成功の結果、失敗またはパスを提供できます。 デフォルトでは、結果はパスです。
+The PlayerLeftClickBlock Event is fired whenever a player left clicks a block.  
+It can be canceled to prevent any other events from taking place. If the player holds down the left click, the event will fire again even if it has been canceled. Canceling this event will prevent the left click from being registered, preventing block breaking (although not in creative mode). If the event is canceled, a specific result of success, fail or pass can be provided. By default, the result is pass.
 
 ## Event Class
-関数ヘッダーのイベントをこのクラスとしてキャストする必要があります:  
-`crafttweaker.event. layerLeftClickBlockEvent <br x-id="2" /> 
- <code>`  
-もちろん、 [前にクラスをインポート](/AdvancedFunctions/Import/) して、その名前を使用することもできます。
+You will need to cast the event in the function header as this class:  
+`crafttweaker.event.PlayerLeftClickBlockEvent`  
+You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
 
 ## Event interface extensions
-PlayerLeftClickBlock イベントは、以下のインターフェイスを実装し、それらのメソッド/getter/setters/setterをすべて呼び出すこともできます。
+PlayerLeftClickBlock Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
 
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 - [PlayerInteract](/Vanilla/Events/Events/PlayerInteract/)
@@ -20,12 +19,12 @@ PlayerLeftClickBlock イベントは、以下のインターフェイスを実�
 ## ZenGetters & ZenSetters
 The following information can be retrieved from the event:
 
-| ZenGetter           | ZenSetter           | type                                   |
-| ------------------- | ------------------- | -------------------------------------- |
-| `hitvector`         |                     | [IVector3d](/Vanilla/World/IVector3d/) |
-| `useblock`          | `useblock`          | 文字列 ("allow" / "deny" / "default")     |
-| `useitem`           | `useitem`           | 文字列 ("allow" / "deny" / "default")     |
-| `cancelationResult` | `cancelationResult` | 文字列 ("success" / "pass" / "fail")      |
+| ZenGetter            | ZenSetter            | type                                   |
+| -------------------- | -------------------- | -------------------------------------- |
+| `hitvector`          |                      | [IVector3d](/Vanilla/World/IVector3d/) |
+| `useblock`           | `useblock`           | string ("allow" / "deny" / "default")  |
+| `useitem`            | `useitem`            | string ("allow" / "deny" / "default")  |
+| `cancellationResult` | `cancellationResult` | string ("success" / "pass" / "fail")   |
 
 ## ZenMethods
 
