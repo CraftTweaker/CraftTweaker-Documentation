@@ -1,31 +1,30 @@
 # Arrays
 
-An array is a List containing several items of the same kind.
+Un array es una Lista de varios elementos DEL MISMO TIPO.
 
-## Declaring Arrays
+## Declarando Arrays
 
-It is declared using ```[``` and ```]```.
+Se declara como una variable y usando ```</code> [ </0>``` y ```</code> ] </0>```.
 
-**Imortant**: you *must* initialize arrays to something, even if it's an empty array.
+Importante: siempre * DEBES * inicializar un array a un tipo, aunque este vacio.
 
-`var floatArray as float [];` won't give syntax errors, but upon reloading your game, you will get an error and your script won't work.
+`var floatArray as float [];` no dará errores de sintaxis, pero al volver a cargar tu juego, obtendrás un error y tu archivo no funcionará.
 
-Instead, initialize empty arrays like this `var floatArray as float [] = [];`
+Para inicializar un array vacío hazlo así: ` var floatArray as float[] = []; `
 
 ```zenscript
-//Array containing "Hello" and "World"
+//Array que contiene "Hello" y "World"
 val stringArray = ["Hello", "World"] as string[];
 
-//Array containing 1-3
+//Array que contiene 1-3
 val intArray = [1,2,3] as int[];
 ```
 
-If you now think "wait, haven't I seen these brackets before?", you have. Remember ```recipes.add(out,[[],[],[]]);```? This uses three arrays with each containing up to three entries to define a crafting table recipe.
+Si ahora estas pensando: "Espera, ¿no he visto estos parentesis antes?", es porque si que los has visto antes. </br> </br> Recuerda ```recipes.add(out,[[],[],[]]);```? Esto usa 3 arrays con cada uno conteniendo hasta un máximo de tres entradas para definir lo que es una receta en la craftingTable.
 
-## Casting Arrays
+## Dando un tipo a un Array (Inicializar)
 
-You surely have noticed that all arrays here have the `as` statement appended.  
-Why you ask? This is because ZenScript sometimes cannot predict what type the items in the array are. This can be the cause of strange conversion error logs!  
+Seguramente te habrás dado cuenta que todos los arrays tiene la palabra clave </code> as [tipo] </code> en alguna parte. ¿Por qué? Esto es porque ZenScript a veces no puede predecir que tipo de cosas habrá en los miembros de un array. This can be the cause of strange conversion error logs!  
 Better be safe than sorry and cast the Arrays to their correct types!  
 Also, if you cast to non-primitive types (everything except strings, ints and the same) be sure to [import](/AdvancedFunctions/Import/) the corresponding package and be sure to do so at the TOP of the script:
 
