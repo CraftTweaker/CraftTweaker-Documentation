@@ -1,30 +1,30 @@
 # TextFormatting
 
-Questa classe è stata aggiunta da una mod con ID `crafttweaker`. Perciò, è necessario avere questa mod installata per poter utilizzare questa funzione.
-
 ## Importing the class
-Potrebbe essere necessario importare il pacchetto, se si incontrano dei problemi (come castare un vettore), quindi meglio essere sicuri e aggiungere la direttiva di importazione.
+
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
 ```zenscript
-crafttweaker.api.text.TextFormatting
+import crafttweaker.api.text.TextFormatting;
 ```
 
+
 ## Interfacce Implementate
-TextFormatting implements the following interfaces. Ciò significa che ogni metodo presente nell'interfaccia può essere usato anche per questa classe.
-- [crafttweaker.api.brackets.CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
+TextFormatting implements the following interfaces. That means all methods defined in these interfaces are also available in TextFormatting
 
-## Properties
-
-| Name          | Type    | Ha Getter | Ha Setter |
-| ------------- | ------- | --------- | --------- |
-| colorIndex    | int     | true      | false     |
-| commandString | String  | true      | false     |
-| fancyStyling  | boolean | true      | false     |
-| friendlyName  | String  | true      | false     |
-| isColor       | boolean | true      | false     |
+- [CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
 
 ## Caster
 
 | Tipo Risultato | Implicito |
 | -------------- | --------- |
-| String         | true      |
+| string         | true      |
+
+## Properties
+
+| Name         | Type    | Ha Getter | Ha Setter |
+| ------------ | ------- | --------- | --------- |
+| colorIndex   | int     | true      | false     |
+| fancyStyling | boolean | true      | false     |
+| friendlyName | string  | true      | false     |
+| isColor      | boolean | true      | false     |
 
