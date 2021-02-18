@@ -15,7 +15,7 @@ void modifyRitual(
 
 * * *
 
-### Examples
+### Ejemplos 
 
 ```zenscript
 import mods.roots.Ritual;
