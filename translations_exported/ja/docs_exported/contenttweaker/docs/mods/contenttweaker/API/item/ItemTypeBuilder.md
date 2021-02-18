@@ -1,32 +1,18 @@
 # ItemTypeBuilder
 
-Denotes a special builder that is used for builing special item types. [mods.contenttweaker.item.ItemTypeBuilder#withType](/mods/contenttweaker/API/item/ItemTypeBuilder/#withtype) で使用する
+Denotes a special builder that is used for builing special item types. Used in [ItemBuilder](/mods/contenttweaker/API/item/ItemBuilder)#withType
 
 This class was added by a mod with mod-id `contenttweaker`. So you need to have this mod installed if you want to use this feature.
 
 ## Importing the class
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
 ```zenscript
-mods.contenttweaker.item.ItemTypeBuilder
+import mods.contenttweaker.item.ItemTypeBuilder;
 ```
+
 
 ## Implemented Interfaces
-ItemTypeBuilder implements the following interfaces. That means any method available to them can also be used on this class.
-- [mods.contenttweaker.api.IIsBuilder](/mods/contenttweaker/API/api/IIsBuilder)
+ItemTypeBuilder implements the following interfaces. That means all methods defined in these interfaces are also available in ItemTypeBuilder
 
-## Methods
-### build
-
-Instructs CoT to actually build whatever this builder is supposed to be building.
-
-```zenscript
-new ItemBuilder().withType<ItemBuilderBasic>().build(resourceLocation as String);
-new ItemBuilder().withType<ItemBuilderBasic>().build("my_awesome_block");
-```
-
-| Parameter        | Type   | Description                          |
-| ---------------- | ------ | ------------------------------------ |
-| resourceLocation | String | The resource path to give this block |
-
-
-
+- [IIsBuilder](/mods/contenttweaker/API/api/IIsBuilder)
